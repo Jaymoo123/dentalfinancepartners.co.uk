@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${siteConfig.url}/glossary/${slug}`;
 
-  // Truncate title to <=62 chars: "<Term> | Glossary | Trade Tax Specialists"
+  // Truncate title to <=62 chars: "<Term> | Glossary | <site name>"
   const baseTitle = `${entry.term} | Glossary | ${siteConfig.name}`;
   const title =
     baseTitle.length <= 62 ? baseTitle : `${entry.term} | Glossary`;

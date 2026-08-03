@@ -687,7 +687,7 @@ function buildDetailCaptureConfig(): LeadNurtureConfig {
   };
 }
 
-export function buildCisLeadNurtureConfig(
+export function buildLeadNurtureConfig(
   variant: LeadSequenceVariant = "contactability",
 ): LeadNurtureConfig {
   return variant === "detail_capture"
@@ -695,7 +695,7 @@ export function buildCisLeadNurtureConfig(
     : buildContactabilityConfig();
 }
 
-export function buildCisLeadNurtureConfigs(): LeadNurtureConfig[] {
+export function buildLeadNurtureConfigs(): LeadNurtureConfig[] {
   return [buildContactabilityConfig(), buildDetailCaptureConfig()];
 }
 

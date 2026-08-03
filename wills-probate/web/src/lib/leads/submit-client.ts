@@ -1,5 +1,5 @@
 /**
- * Client-side helper: submit a Trade Tax Specialists lead through the server
+ * Client-side helper: submit a lead through the server
  * chokepoint (/api/leads/submit) rather than inserting directly from the
  * browser. The server validates, deduplicates, stores with the service-role
  * key, and fires estate notifications.

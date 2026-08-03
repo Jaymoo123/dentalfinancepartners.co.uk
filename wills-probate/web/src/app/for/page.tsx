@@ -58,7 +58,7 @@ export default function ForIndexPage() {
         </div>
       </section>
 
-      {/* Construction businesses grid — hidden when empty */}
+      {/* Business-owner segments grid, hidden when empty */}
       {businessSegment.length > 0 && (
         <section className="bg-neutral-800 py-12 sm:py-16 lg:py-20">
           <div className={siteContainerLg}>

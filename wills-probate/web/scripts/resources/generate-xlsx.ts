@@ -1,5 +1,5 @@
 /**
- * Excel model generator for the Trade Tax Specialists gated resources system.
+ * Excel model generator for the wills-probate gated resources system.
  *
  * Loops the builders registry (builders/index.ts) and writes one .xlsx per
  * category to public/resources/<topic>/<filename>. Run manually:

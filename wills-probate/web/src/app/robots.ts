@@ -4,9 +4,8 @@ import { siteConfig } from "@/config/site";
 /**
  * robots.txt with an explicit allow-list for every major AI and search engine
  * crawler we want courting us. Explicit named rules beat the wildcard because
- * some bots only honour their own entry. Mirrors the contractors-ir35 surface
- * so Trade Tax Specialists is fully crawlable by answer engines (ChatGPT,
- * Claude, Perplexity, Google AI, etc.).
+ * some bots only honour their own entry. The site is fully crawlable by answer
+ * engines (ChatGPT, Claude, Perplexity, Google AI, etc.).
  */
 export default function robots(): MetadataRoute.Robots {
   const base = siteConfig.url.replace(/\/$/, "");

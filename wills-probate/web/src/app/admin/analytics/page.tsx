@@ -1,5 +1,5 @@
 /**
- * Trade Tax Specialists analytics console — main dashboard.
+ * Analytics console, main dashboard.
  *
  * Cookie-gated (OB-01): credential travels in an HttpOnly session cookie, never
  * the URL. Every console route checks the cookie via checkAuth(). noindex on all
@@ -760,7 +760,7 @@ export default async function AdminAnalyticsPage({
       />
       <NotOperatedPanel
         feature="Nurture engine"
-        reason="Not operated on this site. No newsletter surface on Trade Tax Specialists."
+        reason="Not operated on this site. No newsletter surface here."
       />
       <CtaPerformancePanel rows={ctaPerformance} />
       <FormDropoffPanel rows={formDropoff} />

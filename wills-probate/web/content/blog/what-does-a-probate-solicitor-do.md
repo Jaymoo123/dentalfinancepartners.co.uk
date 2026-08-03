@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@giamboscaro"
 category: "Probate Process"
 metaTitle: "What Does a Probate Solicitor Do? Full Task List"
-metaDescription: "What a probate solicitor actually does: estate valuation, IHT forms, the grant application, collecting assets, paying debts, distribution and estate accounts."
+metaDescription: "What a probate solicitor actually does: estate valuation, IHT forms, grant application, collecting assets, paying debts, distribution and estate accounts."
 h1: "What does a probate solicitor do?"
 summary: "A probate solicitor takes on the legal and administrative work of winding up an estate: valuing everything the person owned, preparing inheritance tax forms, applying for the grant of probate, collecting in assets, settling debts, distributing what is left and preparing estate accounts. This guide walks through each task, what executors still have to do themselves, the difference between full-service and grant-only help, and why professional support can protect executors from personal liability. It covers England and Wales."
 keyTakeaways:
@@ -22,7 +22,7 @@ keyTakeaways:
   - "Wills work is a separate discipline. Solicitors who practise in this area also draft wills, advise on updating them and store them, which is why many firms describe themselves as wills and probate solicitors."
   - "You can instruct a solicitor for the full estate administration or for a grant-only service, where they secure the grant of probate and hand the rest back to you."
   - "Executors are personally liable for mistakes such as paying beneficiaries before debts or missing an inheritance tax deadline. Professional handling shifts much of that risk onto an insured specialist."
-  - "The probate application fee is £526 for estates over £5,000, and grants of probate are issued in around 5 weeks on average, or about 2 weeks where the application is not stopped for queries, though waits vary."
+  - "The probate application fee is £526 for estates over £5,000, and most digital applications are processed in around 4.5 weeks, though waits vary."
 sourcesVerifiedAt: "2026-07-24"
 faqs:
   - question: "What is the difference between a probate solicitor and a probate specialist?"
@@ -36,7 +36,7 @@ faqs:
   - question: "Can a probate solicitor be the executor?"
     answer: "Yes, a will can appoint a solicitor or a firm as executor, and some people choose this where family conflict is likely or no suitable executor exists. The trade-off is cost, because the firm charges for every stage of the administration. More commonly, family executors are appointed in the will and then instruct a solicitor to act for them, which keeps decision-making in the family while the paperwork is handled professionally."
   - question: "How long does a solicitor take to get probate?"
-    answer: "The solicitor's preparation time depends on how quickly valuations come in and whether inheritance tax forms are needed, typically a few weeks to a few months. The court stage then added a mean of around 5 weeks for a grant of probate in the January to March 2026 official statistics, about 2 weeks where the application was not stopped for queries and 14 weeks on average where it was. Full administration of the whole estate commonly takes 6 to 12 months."
+    answer: "The solicitor's preparation time depends on how quickly valuations come in and whether inheritance tax forms are needed, typically a few weeks to a few months. The court stage then added a mean of 6.4 weeks in the January to March 2026 official statistics, or 4.5 weeks for digital applications. Full administration of the whole estate commonly takes 6 to 12 months."
 ---
 <p>A probate solicitor takes on the legal and administrative work of winding up someone's estate after they die. In a full-service instruction that means valuing everything the person owned, preparing the inheritance tax paperwork for HMRC, applying to the Probate Registry for the grant of probate, collecting in the money and property, paying the debts, distributing what is left to the beneficiaries under the will (or the intestacy rules if there is no will), and producing estate accounts that show where every pound went.</p>
 
@@ -60,7 +60,7 @@ faqs:
 
 <h3>4. Applying for the grant</h3>
 
-<p>The grant of probate (or letters of administration where there is no will) is the court document that proves the executor's authority. The solicitor prepares and submits the <a href="https://www.gov.uk/applying-for-probate">application to the Probate Registry</a>, pays the £526 application fee for estates over £5,000 (nothing at or below £5,000, plus £2 per sealed copy ordered alongside), and deals with any stops, requisitions or queries the registry raises. That last part is where the money earns itself: in the January to March 2026 official statistics, applications that were not stopped reached grant in about 2 weeks, while stopped ones took 14 weeks on average, against an overall mean of around 5 weeks for grants of probate. What the timeline looks like end to end is a separate question, covered in <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a>.</p>
+<p>The grant of probate (or letters of administration where there is no will) is the court document that proves the executor's authority. The solicitor prepares and submits the <a href="https://www.gov.uk/applying-for-probate">application to the Probate Registry</a>, pays the £526 application fee for estates over £5,000 (nothing at or below £5,000, plus £2 per sealed copy ordered alongside), and deals with any stops, requisitions or queries the registry raises. Once submitted, a digital application typically reached grant in 4.5 weeks in the January to March 2026 official statistics, against 16.5 weeks on paper. What the timeline looks like end to end is a separate question, covered in <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a>.</p>
 
 <h3>5. Collecting in the assets</h3>
 

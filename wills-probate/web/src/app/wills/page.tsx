@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "How much does it cost to make a will?",
     answer:
-      "Roughly: DIY under £30, online services £30 to £150, professionally drafted wills £150 to £650 depending on complexity, at the time of writing. Trust based wills cost more.",
+      "Roughly: DIY under £30, online services £50 to £150, professionally drafted wills £300 to £1,000 or more depending on complexity, at the time of writing. Trust based wills cost more.",
   },
   {
     question: "What happens to my estate if I die without a will?",
@@ -146,7 +146,7 @@ export default function WillsPage() {
               </p>
             </div>
             <div className="border border-neutral-200 border-l-4 border-l-orange-500 bg-neutral-50 p-6 sm:p-8">
-              <h3 className="text-lg font-bold text-neutral-900">2. Online will services (roughly £30 to £150 for a single will)</h3>
+              <h3 className="text-lg font-bold text-neutral-900">2. Online will services (roughly £50 to £150 for a single will)</h3>
               <p className="mt-3 text-base leading-relaxed text-neutral-600">
                 Online services guide you through structured questions and generate a will from tested
                 wording, which removes most drafting errors. Many include a review by a professional and
@@ -161,13 +161,13 @@ export default function WillsPage() {
               </p>
             </div>
             <div className="border border-neutral-200 border-l-4 border-l-orange-500 bg-neutral-50 p-6 sm:p-8">
-              <h3 className="text-lg font-bold text-neutral-900">3. Specialist drafted will (roughly £150 to £650 or more)</h3>
+              <h3 className="text-lg font-bold text-neutral-900">3. Specialist drafted will (roughly £300 to £1,000 or more)</h3>
               <p className="mt-3 text-base leading-relaxed text-neutral-600">
                 A professionally drafted will costs more because you are paying for judgement, not typing. A
                 specialist will spot the issues you did not know you had, draft around them, and carry
                 insurance if something is still wrong. Typical prices at the time of writing run from around
-                £150 to £300 for a simple single will, £250 to £650 for mirror wills or moderately complex
-                estates, and more where trusts are involved.
+                £300 to £1,000 for a simple single will, with mirror wills for couples usually priced below
+                double the single fee, and more where trusts are involved.
               </p>
               <p className="mt-3 text-base leading-relaxed text-neutral-600">
                 Some charities also offer free will drafting schemes through participating firms, usually in

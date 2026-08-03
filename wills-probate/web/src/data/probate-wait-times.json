@@ -4,7 +4,7 @@
     "latest_period": "2026-Q1",
     "series_start": "2019-Q2",
     "geography": "England and Wales",
-    "scope": "All grants of representation (grants of probate, letters of administration and letters of administration with will), all applicant types. Timeliness is measured from application submission to grant issue and includes stopped and not-stopped cases.",
+    "scope": "All grants of representation (grants of probate, letters of administration and letters of administration with will), all applicant types. Timeliness is measured from application submission to grant issue and includes stopped and not-stopped cases. The quarterly series and headline cover all grant types combined; a separate latest-quarter breakdown splits the same measures by grant type, because letters of administration are materially slower than grants of probate and the combined figure is dominated by probate.",
     "sources": [
       {
         "name": "Family Court Statistics Quarterly: January to March 2026 (probate CSVs: CSV Probate National, CSV Probate timeliness)",
@@ -16,7 +16,7 @@
         "attribution": "Contains public sector information licensed under the Open Government Licence v3.0."
       }
     ],
-    "notes": "Volumes (applications, grants) are published from 2019-Q3 onward; timeliness from 2019-Q2. 2019-Q2 volume fields are null because they are not published in the source CSV, not because they are zero. Mean and median weeks are rounded to one decimal place from the published values. Nothing is estimated or interpolated.",
+    "notes": "Volumes (applications, grants) are published from 2019-Q3 onward; timeliness from 2019-Q2. 2019-Q2 volume fields are null because they are not published in the source CSV, not because they are zero. Mean and median weeks are rounded to one decimal place from the published values. Nothing is estimated or interpolated. All timeliness figures are the submission-to-issue measure (SUB_TO_ISS_MEAN, SUB_TO_ISS_MEDIAN) of CSV Probate timeliness 2026 Q1, on the STOPPED = All cut except the two fields named _stopped and _not_stopped, which are the STOPPED and NOT STOPPED cuts of the same rows across all channels. All volumes are the APPLICANT TYPE = All cut of CSV Probate National 2026 Q1. The mean and the median differ sharply for some grant types because stopped applications sit in a long tail, so both are published rather than one.",
     "provisional": false
   },
   "headline": {
@@ -49,6 +49,63 @@
       "quarter": "2024-Q1",
       "mean_weeks_paper": 23.6
     }
+  },
+  "by_grant_type": {
+    "quarter": "2026-Q1",
+    "note": "Latest quarter only. The source publishes timeliness by grant type from 2026-Q1 back through the series, but only the latest quarter is compiled here. Grant type labels follow the source: the timeliness CSV uses \"Probate\", \"Letter of Administration\" and \"Letter of Administration with will annexed\"; the volumes CSV uses \"Grant of Probate\", \"Grant of Administration\" and \"Grant of Administration with Will annexed\". The three types sum exactly to the all-grants applications and grants totals in the headline. Standing searches and revoked grants are excluded, as they are in the all-grants total.",
+    "types": [
+      {
+        "grant_type": "probate",
+        "label": "Grant of probate",
+        "applies_when": "There is a valid will naming executors.",
+        "applications": 65254,
+        "grants": 62261,
+        "applications_digital": 60424,
+        "applications_paper": 4830,
+        "mean_weeks_all": 5.0,
+        "median_weeks_all": 1.3,
+        "mean_weeks_digital": 4.3,
+        "median_weeks_digital": 1.3,
+        "mean_weeks_paper": 15.3,
+        "median_weeks_paper": 5.0,
+        "mean_weeks_all_stopped": 13.8,
+        "mean_weeks_all_not_stopped": 1.8
+      },
+      {
+        "grant_type": "letters_of_administration",
+        "label": "Letters of administration",
+        "applies_when": "There is no will and the estate passes under the intestacy rules.",
+        "applications": 13615,
+        "grants": 11559,
+        "applications_digital": 6173,
+        "applications_paper": 7442,
+        "mean_weeks_all": 10.5,
+        "median_weeks_all": 11.0,
+        "mean_weeks_digital": 5.1,
+        "median_weeks_digital": 0.6,
+        "mean_weeks_paper": 15.6,
+        "median_weeks_paper": 11.7,
+        "mean_weeks_all_stopped": 19.1,
+        "mean_weeks_all_not_stopped": 4.6
+      },
+      {
+        "grant_type": "letters_of_administration_with_will",
+        "label": "Letters of administration with will annexed",
+        "applies_when": "There is a valid will but no executor able or willing to act.",
+        "applications": 2200,
+        "grants": 2610,
+        "applications_digital": 378,
+        "applications_paper": 1822,
+        "mean_weeks_all": 20.4,
+        "median_weeks_all": 17.0,
+        "mean_weeks_digital": 16.4,
+        "median_weeks_digital": 7.6,
+        "mean_weeks_paper": 21.1,
+        "median_weeks_paper": 17.6,
+        "mean_weeks_all_stopped": 29.2,
+        "mean_weeks_all_not_stopped": 12.6
+      }
+    ]
   },
   "series": [
     {

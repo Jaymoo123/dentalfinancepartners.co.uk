@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/photos/a-suburban-house-sits-under-a-bright-blue-sky-kJB-yYcJsvk"
 category: "Probate Process"
 metaTitle: "Do You Need Probate When a Spouse Dies? UK Guide"
-metaDescription: "When a husband, wife or civil partner dies, probate is often not needed. Learn when jointly owned homes and accounts pass automatically, and when it is required."
+metaDescription: "When a husband, wife or civil partner dies, probate is often not needed. See when joint homes and accounts pass automatically and when a grant is required."
 h1: "Do you need probate when a spouse dies?"
 summary: "When a husband, wife or civil partner dies, probate is often not needed at all, because jointly owned homes and joint bank accounts pass automatically to the survivor and most gifts between spouses are free of inheritance tax. But probate can still be required where the person who died held accounts, investments, ISAs, property or life policies in their sole name. This guide explains, gently and in plain English, how to tell which situation you are in and what to do first."
 keyTakeaways:
@@ -22,7 +22,7 @@ keyTakeaways:
   - "Property owned in the sole name of the person who died, or held as tenants in common, normally requires a grant of probate (or letters of administration) before it can be sold or transferred."
   - "ISAs are always held in one name, so a sole name ISA above the provider's threshold often triggers probate, although the surviving spouse can usually claim an additional permitted subscription to keep the tax free status of the money."
   - "Assets left to a spouse or civil partner are generally exempt from inheritance tax, and any unused nil-rate band and residence nil-rate band can be transferred, giving many couples a combined threshold of up to £1,000,000 on the second death."
-  - "The probate application fee is £526 for estates over £5,000 (no fee at or below £5,000), and grants of probate currently take around 5 weeks on average, or about 2 weeks where the application is not stopped for queries, although waits vary."
+  - "The probate application fee is £526 for estates over £5,000 (no fee at or below £5,000), and digital applications currently take around 4.5 weeks on average, although waits vary."
 sourcesVerifiedAt: "2026-07-24"
 faqs:
   - question: "Do I need probate if my husband or wife dies and everything was in joint names?"
@@ -34,7 +34,7 @@ faqs:
   - question: "What happens if my spouse died without a will?"
     answer: "The joint asset rules are unchanged: anything held jointly still passes to you automatically. Where a grant is needed for sole name assets, you apply for letters of administration instead of probate, and as the surviving spouse or civil partner you are normally entitled to apply. Under the intestacy rules you inherit everything if there are no children; if there are children, you receive the personal possessions, the first £322,000 and half of the rest, with the remainder shared between the children."
   - question: "How long does probate take when a spouse dies?"
-    answer: "If probate is needed at all, official HMCTS statistics for January to March 2026 show grants of probate issued in a mean of around 5 weeks from submission, with a median of 1 week. Applications that were not stopped for queries took about 2 weeks, while those that were stopped averaged 14 weeks, so the quality of the paperwork matters far more than anything else you control. In practice the slow part is usually beforehand: collecting date-of-death valuations from each institution tends to take longer than the court stage itself."
+    answer: "If probate is needed at all, official HMCTS statistics for January to March 2026 show a mean wait of 6.4 weeks from submission to grant across all channels, with digital applications (82.6% of the total) averaging 4.5 weeks and paper applications 16.5 weeks. In practice the slow part is usually beforehand: collecting date-of-death valuations from each institution tends to take longer than the court stage itself."
   - question: "What happens to a joint mortgage when my spouse dies?"
     answer: "The property itself, if owned as joint tenants, passes to you automatically. The mortgage debt does not disappear: you become solely responsible for the repayments. Tell the lender promptly. Many couples have a life insurance policy designed to clear the mortgage on death, so check for one. If the policy was written in trust or has a nominated beneficiary, it pays out without probate; if it was in your spouse's sole name with no trust, the insurer may ask for a grant before paying."
   - question: "Do I need probate if my spouse left a will leaving everything to me?"
@@ -119,7 +119,7 @@ faqs:
 
 <h2>If you do need probate: fees, timescales and first steps</h2>
 
-<p>Where a grant is needed, the process is the same as for any estate. The application fee is <a href="https://www.gov.uk/applying-for-probate/fees">£526 for estates over £5,000</a> (the level set on 13 July 2026); estates at or below £5,000 pay nothing, and each sealed copy of the grant ordered alongside the application adds £2. On timing, the <a href="https://www.gov.uk/government/statistics/family-court-statistics-quarterly-january-to-march-2026/family-court-statistics-quarterly-january-to-march-2026">Family Court Statistics Quarterly</a> for January to March 2026 records grants of probate issued in a mean of around 5 weeks from submission, with a median of 1 week, falling to about 2 weeks where the application is not stopped for queries and rising to 14 weeks on average where it is. Waits vary, and the valuation work before you apply often takes longer than the court stage; our guide to <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a> sets out the full timeline.</p>
+<p>Where a grant is needed, the process is the same as for any estate. The application fee is <a href="https://www.gov.uk/applying-for-probate/fees">£526 for estates over £5,000</a> (the level set on 13 July 2026); estates at or below £5,000 pay nothing, and each sealed copy of the grant ordered alongside the application adds £2. On timing, the <a href="https://www.gov.uk/government/collections/family-court-statistics-quarterly">Family Court Statistics Quarterly</a> for January to March 2026 records a mean wait of 6.4 weeks from submission to grant, falling to 4.5 weeks for the 82.6% of applications made digitally (paper: 16.5 weeks). Waits vary, and the valuation work before you apply often takes longer than the court stage; our guide to <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a> sets out the full timeline.</p>
 
 <p>Whether or not probate turns out to be necessary, these first steps cover almost every situation:</p>
 

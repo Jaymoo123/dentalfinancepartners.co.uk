@@ -35,6 +35,27 @@ export type ProbateWaitTimesSnapshot = {
     best_quarter: { quarter: string; mean_weeks_all: number };
     worst_paper_quarter: { quarter: string; mean_weeks_paper: number };
   };
+  by_grant_type: {
+    quarter: string;
+    note: string;
+    types: {
+      grant_type: string;
+      label: string;
+      applies_when: string;
+      applications: number;
+      grants: number;
+      applications_digital: number;
+      applications_paper: number;
+      mean_weeks_all: number;
+      median_weeks_all: number;
+      mean_weeks_digital: number;
+      median_weeks_digital: number;
+      mean_weeks_paper: number;
+      median_weeks_paper: number;
+      mean_weeks_all_stopped: number;
+      mean_weeks_all_not_stopped: number;
+    }[];
+  };
   series: {
     quarter: string;
     applications: number | null;

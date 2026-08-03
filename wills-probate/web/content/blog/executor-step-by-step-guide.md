@@ -21,7 +21,7 @@ keyTakeaways:
   - "Register the death within 5 days in England and Wales, then use the free Tell Us Once service to notify most government bodies in one go."
   - "Not every estate needs probate. Small estates and assets passing to a surviving joint owner can often be dealt with without a grant, so check before applying."
   - "Applying costs £526 where the estate is worth more than £5,000, nothing below that, plus £2 for each sealed copy ordered alongside the application."
-  - "On the courts' January to March 2026 figures, a grant of probate took around 5 weeks on average, but about 2 weeks where the application was not stopped for queries against 14 weeks where it was."
+  - "On the courts' January to March 2026 figures, the average grant took 6.4 weeks overall and 4.5 weeks digitally, with individual waits varying either side."
   - "Executors can claim reasonable out-of-pocket expenses from the estate, but lay executors cannot charge for their time unless the will says so."
 sourcesVerifiedAt: "2026-07-24"
 faqs:
@@ -86,7 +86,7 @@ faqs:
 
 <p>Most executors now apply online through the <a href="https://www.gov.uk/applying-for-probate">gov.uk probate service</a>; paper applications use form PA1P. Estates worth £5,000 or less pay no application fee; above that, the fee is <strong>£526</strong> (the level set on 13 July 2026). Order sealed copies of the grant at <strong>£2 each</strong> with the application, one per institution that will need it is a good rule of thumb.</p>
 
-<p>How long does the grant take? Going by the courts' own figures for January to March 2026, a grant of probate took <strong>around 5 weeks on average</strong> and a median of just 1 week. The split behind that is what matters: applications that were not stopped for queries came through in <strong>about 2 weeks</strong>, while stopped ones took <strong>14 weeks</strong>. Letters of administration are slower again at around 11 weeks, or around 20 weeks with a will annexed. Treat these as central estimates rather than promises. Our <a href="/blog/probate-process/how-long-does-probate-take">guide to probate timescales</a> breaks the figures down stage by stage.</p>
+<p>How long does the grant take? Going by the courts' own figures for January to March 2026, a digital application (as 82.6% now are) took <strong>4.5 weeks on average</strong>, a paper one 16.5 weeks, and the mean across every channel was <strong>6.4 weeks</strong>. Complexity of the estate and registry queries push individual cases either side of those averages, so treat them as central estimates rather than promises. Our <a href="/blog/probate-process/how-long-does-probate-take">guide to probate timescales</a> breaks the figures down stage by stage.</p>
 
 <h2>Step 7 (months 3 to 9): administer the estate</h2>
 

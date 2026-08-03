@@ -38,10 +38,10 @@ export const siteConfig = {
   footer: niche.footer_links,
   locations: niche.locations,
   // Registered company / legal entity. Single source of truth = niche.config.json.
-  // Trade Tax Specialists (and every estate brand) is a trading name of Ashfield Trading Ltd.
+  // Every estate brand is a trading name of Ashfield Trading Ltd.
   company: {
     legalName: niche.legal_name, // "Ashfield Trading Ltd"
-    tradingName: niche.display_name, // brand, e.g. "Trade Tax Specialists"
+    tradingName: niche.display_name, // brand, e.g. "Probate Compass"
     number: niche.company!.number,
     placeOfRegistration: niche.company!.place_of_registration,
     registeredOffice: niche.company!.registered_office,

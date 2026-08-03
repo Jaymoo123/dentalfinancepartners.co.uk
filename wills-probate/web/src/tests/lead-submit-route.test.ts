@@ -1,5 +1,5 @@
 /**
- * Smoke tests for the Trade Tax Specialists /api/leads/submit route module.
+ * Smoke tests for the /api/leads/submit route module.
  *
  * Verifies:
  *  - The module can be imported without errors.

@@ -39,13 +39,13 @@ export const probateTimelineEstimator: GenericTool = {
       ],
     },
     {
-      id: "applicationStopped",
-      label: "Risk of the application being stopped for queries",
+      id: "applicationType",
+      label: "Grant application method",
       type: "select",
-      default: "no",
+      default: "digital",
       options: [
-        { value: "no", label: "Low: complete, accurate application with every document enclosed" },
-        { value: "yes", label: "Higher: missing paperwork, a damaged will or IHT figures that may not match" },
+        { value: "digital", label: "Online (digital) application" },
+        { value: "paper", label: "Paper application" },
       ],
       advanced: true,
     },
@@ -54,7 +54,7 @@ export const probateTimelineEstimator: GenericTool = {
     const willExists = Boolean(v.willExists);
     const ihtPayable = v.ihtPayable as string;
     const complexity = v.complexity as string;
-    const stopped = v.applicationStopped === "yes";
+    const applicationType = v.applicationType as string;
 
     const gatherRange: [number, number] =
       complexity === "simple" ? [4, 6] : complexity === "average" ? [6, 10] : [10, 16];
@@ -62,13 +62,15 @@ export const probateTimelineEstimator: GenericTool = {
     const ihtFormsRange: [number, number] =
       ihtPayable === "none" ? [0, 2] : ihtPayable === "excepted" ? [2, 6] : [6, 12];
 
-    // FCSQ Jan-Mar 2026 (published 25 Jun 2026): grants of probate took a mean of about
-    // 5 weeks from submission to issue and a median of 1 week. Applications that were not
-    // stopped took about 2 weeks; stopped ones took 14 weeks on average. Letters of
-    // administration ran to about 11 weeks, or about 20 weeks with a will annexed.
-    const grantWaitRange: [number, number] = stopped
-      ? willExists ? [10, 18] : [14, 24]
-      : willExists ? [1, 4] : [3, 8];
+    // FCSQ Jan-Mar 2026: mean submission-to-grant 6.4 weeks all channels, digital 4.5, paper 16.5.
+    // ponytail: not split by grant type, because once the channel is known the gap is small
+    // (digital: probate 4.3 vs letters of administration 5.1; paper: 15.3 vs 15.6) and these
+    // ranges already bracket both. The big all-channel gap (5.0 vs 10.5) is channel mix, which
+    // this calculator asks for directly. Split the ranges only if a future quarter diverges.
+    const grantWaitRange: [number, number] =
+      applicationType === "digital"
+        ? complexity === "complex" ? [6, 12] : [4, 8]
+        : complexity === "complex" ? [18, 26] : [14, 20];
 
     const adminRange: [number, number] =
       complexity === "simple" ? [8, 12] : complexity === "average" ? [12, 18] : [18, 24];
@@ -91,12 +93,12 @@ export const probateTimelineEstimator: GenericTool = {
         ...(!willExists ? [{ label: "No will: extra time for letters of administration", value: `${willDelay[0]} to ${willDelay[1]} weeks` }] : []),
         { label: "Gather and value the estate", value: `${gatherRange[0]} to ${gatherRange[1]} weeks` },
         { label: "Prepare and submit IHT forms", value: `${ihtFormsRange[0]} to ${ihtFormsRange[1]} weeks` },
-        { label: `HMCTS grant of ${willExists ? "probate" : "administration"} wait (${stopped ? "assuming it is stopped for queries" : "assuming it is not stopped"})`, value: `${grantWaitRange[0]} to ${grantWaitRange[1]} weeks` },
+        { label: `HMCTS grant of ${willExists ? "probate" : "administration"} wait (${applicationType})`, value: `${grantWaitRange[0]} to ${grantWaitRange[1]} weeks` },
         { label: "Collect assets, pay debts, distribute estate", value: `${adminRange[0]} to ${adminRange[1]} weeks` },
         { label: "Total", value: `${lowWeeks} to ${highWeeks} weeks`, strong: true },
       ],
       note:
-        "The grant-wait stage reflects the latest published HMCTS figures (Family Court Statistics Quarterly, January to March 2026). Grants of probate took a mean of around 5 weeks from submission to issue, with a median of 1 week. What separates a fast application from a slow one is whether it gets stopped for queries: applications that were not stopped took about 2 weeks, while stopped ones took 14 weeks on average. Letters of administration take longer again, around 11 weeks where there is no will and around 20 weeks where a will is annexed. Waits vary quarter to quarter and can be longer at busy periods, so check the latest published figures on gov.uk before relying on any specific date. These are typical ranges, not guarantees, and disputed applications take considerably longer.",
+        "The grant-wait stage reflects the latest published HMCTS figures (January to March 2026): a mean of 6.4 weeks from submission across all channels, 4.5 weeks for digital applications and 16.5 for paper. By grant type, grants of probate averaged 5.0 weeks and letters of administration 10.5 weeks, but that gap is mostly channel mix rather than the grant itself: on the digital channel the means were 4.3 and 5.1 weeks, which is why this estimator asks how you are applying. Waits vary quarter to quarter and can be longer at busy periods, so check the latest published figures on gov.uk before relying on any specific date. These are typical ranges, not guarantees, and complex, stopped or disputed applications take considerably longer.",
       workedExamples: [
         {
           title: "Simple estate, will exists, no IHT due",
@@ -104,8 +106,8 @@ export const probateTimelineEstimator: GenericTool = {
           result: { note: "Fastest realistic path, typically under six months" },
         },
         {
-          title: "Complex estate, IHT400 required, application stopped for queries",
-          inputs: { willExists: "Yes", ihtPayable: "IHT400 needed", complexity: "Complex", applicationStopped: "Higher risk" },
+          title: "Complex estate, IHT400 required, paper application",
+          inputs: { willExists: "Yes", ihtPayable: "IHT400 needed", complexity: "Complex", applicationType: "Paper" },
           result: { note: "Can extend well beyond a year once HMRC clearance and asset sales are factored in" },
         },
       ],
@@ -115,7 +117,7 @@ export const probateTimelineEstimator: GenericTool = {
     heading: "What determines how long probate takes",
     paragraphs: [
       "Probate has several distinct stages, and delays in any one of them push the whole process back. First, the estate has to be gathered and valued, contacting every bank, pension provider, insurer and asset holder for a date-of-death valuation. Only once that is complete can the IHT forms be prepared, whether that is a short-form excepted estate return or the full IHT400 account.",
-      "Where inheritance tax is due, HMRC must issue clearance before the grant application can usually proceed, and this step alone can take several weeks to months depending on the complexity of the estate and current HMRC workloads. Once the forms are settled, the application for the grant of probate (or letters of administration if there is no will) goes to HMCTS. In the latest published figures (January to March 2026), grants of probate took a mean of around 5 weeks from submission to issue, with a median of just 1 week. The gap between those two numbers is the whole story: applications that were not stopped for queries came through in about 2 weeks, while stopped ones averaged 14 weeks. Grant type matters too, with letters of administration taking around 11 weeks and around 20 weeks where a will is annexed. Almost all of this now happens online, with 93% of applications made digitally and 94% of grants issued that way, so the practical question is no longer whether to apply online but whether the application is complete enough to avoid being stopped.",
+      "Where inheritance tax is due, HMRC must issue clearance before the grant application can usually proceed, and this step alone can take several weeks to months depending on the complexity of the estate and current HMRC workloads. Once the forms are settled, the application for the grant of probate (or letters of administration if there is no will) goes to HMCTS. In the latest published figures (January to March 2026), the mean wait from submission to grant was 6.4 weeks across all channels, around 4.5 weeks for the 82.6% of applications made digitally and 16.5 weeks for paper applications. Split by grant type, grants of probate averaged 5.0 weeks and letters of administration 10.5 weeks, so budget against the higher figure if there is no will. Waits vary and stopped applications take much longer.",
       "After the grant is issued, the personal representatives still need to collect in the assets, settle any debts and the final tax position, and distribute what remains, often waiting out a statutory notice period to protect against later claims. Complex estates, those with a property to sell, foreign assets, a business, or a dispute between beneficiaries, routinely take well over a year from start to finish.",
     ],
   },
@@ -133,12 +135,12 @@ export const probateTimelineEstimator: GenericTool = {
     {
       question: "Does having no will make probate slower?",
       answer:
-        "Yes, at both ends. Without a will, the person entitled to apply for letters of administration has to be established under the intestacy rules, which can take longer to sort out, particularly for blended families or where the next of kin is not straightforward. The court stage is slower too: in the January to March 2026 figures, letters of administration took around 11 weeks from submission to issue against around 5 weeks for grants of probate.",
+        "Yes, typically, and at both ends. Without a will, the person entitled to apply for letters of administration has to be established under the intestacy rules first, which can take longer to sort out, particularly for blended families or where the next of kin is not straightforward. The court stage is slower too: in January to March 2026, letters of administration averaged 10.5 weeks from submission to grant against 5.0 weeks for grants of probate, largely because far fewer of them are submitted online.",
     },
     {
       question: "Can probate be sped up?",
       answer:
-        "Yes, and the lever that matters most is avoiding a stop. In the January to March 2026 figures, applications that were not stopped for queries were dealt with in about 2 weeks, against 14 weeks for those that were. Submitting complete and accurate paperwork the first time, enclosing every document, making sure names and inheritance tax figures match across the forms, and getting professional help with complex valuations all reduce the chance of a stop. Nothing removes HMCTS's own processing time, though.",
+        "Applying online where eligible, submitting complete and accurate paperwork the first time, and getting professional help with complex valuations all reduce the chance of delays caused by queries or rejected applications. Nothing removes HMCTS's own processing time, though.",
     },
     {
       question: "What happens if beneficiaries disagree during probate?",

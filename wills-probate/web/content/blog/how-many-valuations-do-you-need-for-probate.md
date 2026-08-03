@@ -71,7 +71,7 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <h2>A worked count</h2>
 
-<p>Priya and Dev are joint executors for their father, a retired engineer in Derby. His estate contains eleven things: a house, two current accounts, a cash ISA, premium bonds, a small portfolio of listed shares, a workplace pension, a car, general household contents, a wedding ring left to Priya, and a quarter share in a holiday cottage he owned with his brother.</p>
+<p>Priya and Anand are joint executors for their father, a retired engineer in Derby. His estate contains eleven things: a house, two current accounts, a cash ISA, premium bonds, a small portfolio of listed shares, a workplace pension, a car, general household contents, a wedding ring left to Priya, and a quarter share in a holiday cottage he owned with his brother.</p>
 
 <p>Nine of those eleven produce an exact figure on request, from the bank, NS&amp;I, the registrar and the pension scheme, with the car checked against trade guides and the contents estimated as a batch. That leaves the house and the cottage share, which need genuine valuations, and the ring, which needs one only if it looks worth more than about £1,500. Eleven assets, one or two invoices. The answer to "how many valuations" was never three.</p>
 

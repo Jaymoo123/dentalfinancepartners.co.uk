@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/photos/person-reviewing-documents-with-calculator-and-laptop-0oZpRxG5Hkk"
 category: "Probate Process"
 metaTitle: "How Much Does a Probate Solicitor Cost? (2026)"
-metaDescription: "What a probate solicitor charges in 2026: fixed fees, hourly rates of £150 to £350, percentage fees of 1% to 5%, VAT, disbursements and how to compare quotes."
+metaDescription: "What a probate solicitor charges in 2026: fixed fees, hourly rates of £150 to £350, percentage fees of 1% to 5%, VAT, disbursements and comparing quotes."
 h1: "How much does a probate solicitor cost?"
 summary: "Probate solicitors typically charge in one of three ways: a fixed fee, an hourly rate (often £150 to £350 plus VAT), or a percentage of the estate (commonly 1% to 5%). What you actually pay depends on how much of the estate administration you hand over and how complex the estate is. This guide explains each fee model, what pushes the price up, the questions to ask before instructing anyone, and when paying a solicitor is genuinely worth it."
 keyTakeaways:
@@ -41,7 +41,7 @@ faqs:
     answer: "Because firms price differently (fixed, hourly or percentage), staff work at different seniority levels with different rates, and each firm makes its own judgement about how complex your estate looks. Location matters too: hourly rates in central London are typically well above rates elsewhere. Solicitors' firms regulated in England and Wales must publish probate price information on their websites, which makes it easier to compare before you make contact."
 generator: "claude-fable-5 | manual | 2026-07-24"
 ---
-<h2>The short answer</h2>
+<h2>What you can expect to pay</h2>
 
 <p>A probate solicitor in England and Wales will usually charge you in one of three ways: a fixed fee agreed up front, an hourly rate (typically £150 to £350 plus VAT, depending on the seniority of the person doing the work and where the firm is based), or a percentage of the estate, commonly between 1% and 5%. What that translates to in pounds depends almost entirely on two things: how much of the work you hand over, and how complicated the estate is. A grant-only service for a simple estate might cost £500 to £1,500 plus VAT. Full administration of a typical estate with a house, several accounts and an inheritance tax form often lands somewhere in the low thousands. A large, taxable or disputed estate can run well beyond that.</p>
 
@@ -138,7 +138,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <p>The full version of that decision, including the risk factors that should push you towards professional help even on a modest estate, lives in our sibling guide <a href="/blog/probate-process/do-you-need-a-solicitor-for-probate">do you need a solicitor for probate</a>. If you want a quick structured comparison first, the <a href="/calculators/probate-diy-vs-solicitor">DIY versus solicitor tool</a> weighs your estate's features and shows which route fits. And if you are unsure what you would actually be paying for, our guide to <a href="/blog/probate-process/what-does-a-probate-solicitor-do">what a probate solicitor does</a> breaks the job down task by task.</p>
 
-<p>One more cost dimension worth knowing: time. A grant of probate currently arrives in a mean of around 5 weeks from submission, with a median of 1 week, but an application that is stopped for queries takes 14 weeks on average against about 2 weeks for one that is not (<a href="https://www.gov.uk/government/statistics/family-court-statistics-quarterly-january-to-march-2026/family-court-statistics-quarterly-january-to-march-2026">Family Court Statistics Quarterly</a>, January to March 2026), though waits vary. A good professional will not usually make the court move faster, but they can keep you out of the stopped pile, which is where the longest delays live. For the full picture on timing, see <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a>.</p>
+<p>One more cost dimension worth knowing: time. A grant currently arrives in a mean of 6.4 weeks from submission, or 4.5 weeks digitally (<a href="https://www.gov.uk/government/collections/family-court-statistics-quarterly">Family Court Statistics Quarterly</a>, January to March 2026), though waits vary. A good professional will not usually make the court move faster, but they can prevent the errors and requisitions that cause the longest delays. For the full picture on timing, see <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a>.</p>
 
 <h2>Getting a number you can trust</h2>
 

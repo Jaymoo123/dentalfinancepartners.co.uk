@@ -83,7 +83,7 @@ export default function RootLayout({
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link.
-         * storagePrefix "wpc" FROZEN (Trade Tax Specialists, Phase 2 adoption).
+         * storagePrefix "wpc" FROZEN (wills-probate, Phase 2 adoption).
          * PF-07: siteKey sourced from niche config, never a literal.
          * ConsentedScripts gates GA4 behind consent state.
          * GA id is currently empty — ConsentedScripts renders nothing when empty.

@@ -64,12 +64,12 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <h2>The copies arithmetic, worked through</h2>
 
-<p>Dermot Kavanagh, a retired teacher, agreed years ago to act as executor for a neighbour and found himself doing it this spring. The estate came to about £310,000: a flat, a building society account, an ISA and a small holding of privatisation-era shares.</p>
+<p>Fergal Kavanagh, a retired teacher, agreed years ago to act as executor for a neighbour and found himself doing it this spring. The estate came to about £268,000: a terraced house, a current account and Premium Bonds.</p>
 
 <ul>
 <li>Application fee: <strong>£526</strong></li>
-<li>Two sealed copies ordered with the application, one for the building society and one for the ISA provider: <strong>£4</strong></li>
-<li>Four further copies ordered six weeks later, once the share registrar, HM Land Registry, a dormant account and a second registrar all surfaced: <strong>£64</strong></li>
+<li>Two sealed copies ordered with the application, one for the bank and one for NS&amp;I: <strong>£4</strong></li>
+<li>Four further copies ordered six weeks later, once HM Land Registry, a dormant savings account, an old workplace pension and a life insurer all surfaced: <strong>£64</strong></li>
 <li><strong>Total court fees: £594</strong></li>
 </ul>
 

@@ -86,7 +86,7 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <ul>
 <li>£2,100,000 estate: £100,000 over, £50,000 of allowance lost, £125,000 left.</li>
-<li>£2,200,000 estate: £100,000 left.</li>
+<li>£2,200,000 estate: £75,000 left.</li>
 <li>£2,350,000 estate: the allowance is gone entirely for one person.</li>
 <li>£2,700,000 estate: gone entirely for a couple using two full residence bands.</li>
 </ul>
@@ -140,6 +140,6 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <h2>Where to go from here</h2>
 
-<p>These figures are stable until at least April 2031, which makes the planning question practical rather than speculative: which allowances does your estate actually qualify for, and what would tip it over the £2 million line. The <a href="/calculators/iht-threshold-calculator">IHT threshold calculator</a> gives you that arithmetic in a couple of minutes, and the <a href="/inheritance-tax">inheritance tax pillar guide</a> maps the wider system these numbers sit inside.</p>
+<p>These figures are stable until at least April 2031, which makes the planning question practical rather than speculative: which allowances does your estate actually qualify for, and what would tip it over the £2 million line. The <a href="/calculators/iht-threshold-calculator">IHT threshold calculator</a> runs that arithmetic for you, and the <a href="/inheritance-tax">inheritance tax pillar guide</a> maps the wider system these numbers sit inside.</p>
 
 <p>Where the answer lands close to a threshold, a taper line or a relief cap, the detail stops being arithmetic and starts being drafting. How a home is left, how allowances are claimed from a first death, whether a business genuinely qualifies: those points move a bill by six figures. We can introduce you to an estate planning solicitor who will work from your actual figures, and anything touching pensions or investments should also go to an FCA authorised adviser.</p>

@@ -16,7 +16,7 @@ import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
 import { runLeadNurtureCron, type LeadCronResult } from "@accounting-network/web-shared/lead-nurture/cron";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
-import { buildCisLeadNurtureConfigs, buildLeadMessageContext } from "@/config/lead-nurture";
+import { buildLeadNurtureConfigs, buildLeadMessageContext } from "@/config/lead-nurture";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
 import { isNurturePaused, recordCronHeartbeat } from "@/lib/leads/nurture-control";
 import { runNurtureGuardrails } from "@/lib/leads/nurture-health";
@@ -55,7 +55,7 @@ async function run(req: NextRequest): Promise<NextResponse> {
     console.error("[lead-nurture-cron/probate] heartbeat write failed", err);
   }
 
-  const configs = buildCisLeadNurtureConfigs();
+  const configs = buildLeadNurtureConfigs();
   const senderForLead = (lead: NurtureLead) =>
     buildLeadChannelSender({ live: lead.source !== "test" });
   const cronArmed = leadNurtureArmed();

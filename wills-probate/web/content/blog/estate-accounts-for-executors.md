@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@craftedbygc"
 category: "Executors"
 metaTitle: "Estate Accounts for Executors: UK Guide + Example"
-metaDescription: "How executors prepare estate accounts in England and Wales: what to include, a model structure, a worked example, beneficiary sign-off and interim accounts."
+metaDescription: "How executors prepare estate accounts in England and Wales: what to include, a model structure, worked example, beneficiary sign-off and interim accounts."
 h1: "Estate accounts for executors: what to prepare and how"
 summary: "Estate accounts are the executor's formal record of everything the estate started with, everything received and spent during administration, and exactly how the remainder was distributed. This guide explains what the accounts must contain, sets out a model structure with a worked numeric example, covers who is entitled to see them and when, and shows how beneficiary sign-off protects executors from later claims. It covers England and Wales."
 keyTakeaways:
@@ -102,7 +102,7 @@ faqs:
 
 <p>The final accounts are produced once at the end of the administration, when everything has been collected, paid and distributed. But administration can take a year or more, and beneficiaries are not obliged to wait in silence. A residuary beneficiary can reasonably ask for an interim summary part way through: what has been collected so far, what is still outstanding, what has been paid out and roughly when distribution is expected.</p>
 
-<p>An interim summary is not a formal set of accounts and does not need the three-account structure. A one page schedule is fine. Providing one promptly is the cheapest dispute prevention available to an executor, because most estate account disputes begin as a simple information vacuum. If beneficiaries are pressing because the whole process feels slow, it usually helps to share objective timescales: the current official statistics put the grant stage alone at a mean of around 5 weeks for grants of probate, and the wider process commonly runs six to twelve months, as our guide to <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a> explains.</p>
+<p>An interim summary is not a formal set of accounts and does not need the three-account structure. A one page schedule is fine. Providing one promptly is the cheapest dispute prevention available to an executor, because most estate account disputes begin as a simple information vacuum. If beneficiaries are pressing because the whole process feels slow, it usually helps to share objective timescales: the current official statistics put the grant stage alone at a mean of 6.4 weeks, and the wider process commonly runs six to twelve months, as our guide to <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a> explains.</p>
 
 <h2>Who is entitled to see the accounts, and when</h2>
 

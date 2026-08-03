@@ -13,7 +13,11 @@ import type { ProbateWaitTimesSnapshot } from "@/lib/research/types";
 import snapshot from "@/data/probate-wait-times.json";
 
 const data = snapshot as unknown as ProbateWaitTimesSnapshot;
-const { meta, headline, series } = data;
+const { meta, headline, series, by_grant_type: byGrantType } = data;
+
+const loa = byGrantType.types.find((t) => t.grant_type === "letters_of_administration")!;
+const probateOnly = byGrantType.types.find((t) => t.grant_type === "probate")!;
+const loaWithWill = byGrantType.types.find((t) => t.grant_type === "letters_of_administration_with_will")!;
 
 const PAGE_PATH = "/research/uk-probate-wait-times-index";
 
@@ -47,6 +51,11 @@ const faqs = [
     question: "Why do paper probate applications take so much longer than digital ones?",
     answer:
       "The published data does not state a cause, but the pattern is consistent: in every recent quarter, paper applications have taken two to three times as long as digital ones on the mean measure. Paper applications are also a shrinking share of the workload, at around 17 per cent of applications in the latest quarter, and their mean wait has lengthened over the past year while digital waits have held steady.",
+  },
+  {
+    question: "Does it take longer to get letters of administration than a grant of probate?",
+    answer:
+      "Yes. In January to March 2026, grants of probate took a mean of 5.0 weeks from submission to grant, while letters of administration, the grant used when someone dies without a will, took a mean of 10.5 weeks. Letters of administration with will annexed, used where there is a will but no executor able to act, took 20.4 weeks. The published headline of 6.4 weeks covers all grant types together and is dominated by grants of probate, which were 80.5% of applications. Channel mix explains most of the gap: 45.3% of letters of administration applications were made digitally, against 92.6% of probate applications.",
   },
   {
     question: "Where does this data come from?",
@@ -94,7 +103,7 @@ const datasetSchema = {
   "@type": "Dataset",
   name: "UK Probate Wait Times Index: grant of representation timeliness by quarter",
   description:
-    "Quarterly mean and median weeks from probate application to grant, split by digital and paper channel, plus application and grant volumes, England and Wales.",
+    "Quarterly mean and median weeks from probate application to grant, split by digital and paper channel, plus application and grant volumes, England and Wales. Includes a latest-quarter split by grant type: grants of probate, letters of administration and letters of administration with will annexed.",
   inLanguage: "en-GB",
   license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
   creator: {
@@ -120,6 +129,8 @@ const datasetSchema = {
     "Median weeks from application to grant, all applications",
     "Mean and median weeks from application to grant, digital channel",
     "Mean and median weeks from application to grant, paper channel",
+    "Mean and median weeks from application to grant by grant type, latest quarter",
+    "Applications and grants by grant type, latest quarter",
   ],
 };
 
@@ -176,8 +187,8 @@ export default function UKProbateWaitTimesIndexPage() {
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-neutral-300">
             A sourced, quarterly read on how long HM Courts and Tribunals Service takes to issue a
-            grant of representation in England and Wales, split by digital and paper applications.
-            Covers every quarter from mid 2019 to {quarterLabel(headline.latest_quarter)}.
+            grant of representation in England and Wales, split by digital and paper applications and
+            by grant type. Covers every quarter from mid 2019 to {quarterLabel(headline.latest_quarter)}.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -222,6 +233,12 @@ export default function UKProbateWaitTimesIndexPage() {
                   {fmtSignedWeeks(headline.yoy.mean_weeks_paper_change)} weeks.
                 </li>
                 <li>
+                  The headline figures cover all grant types together, and that total is dominated by
+                  grants of probate. Split by grant type, grants of probate averaged{" "}
+                  {fmtWeeks(probateOnly.mean_weeks_all)} while letters of administration, the grant used
+                  when someone dies without a will, averaged {fmtWeeks(loa.mean_weeks_all)}.
+                </li>
+                <li>
                   The worst quarter on record was {quarterLabel(headline.worst_quarter.quarter)}, at a
                   mean of {fmtWeeks(headline.worst_quarter.mean_weeks_all)} across all applications. The
                   best was {quarterLabel(headline.best_quarter.quarter)}, at {fmtWeeks(headline.best_quarter.mean_weeks_all)}.
@@ -255,6 +272,73 @@ export default function UKProbateWaitTimesIndexPage() {
                 Compared with the same quarter a year earlier, the overall mean wait rose by 0.2 weeks,
                 the digital mean fell by 0.2 weeks, and the paper mean rose by 3.3 weeks. The service is
                 holding steady for digital applicants while paper applications are drifting slower.
+              </p>
+            </Section>
+
+            <Section
+              id="grant-type"
+              title={`By grant type (${quarterLabel(byGrantType.quarter)})`}
+            >
+              <p>
+                Every figure above covers all grants of representation together, and that population is
+                dominated by grants of probate, which were{" "}
+                {((probateOnly.applications / headline.applications_latest) * 100).toFixed(1)}% of
+                applications in the quarter. Splitting the same measures by grant type shows the headline
+                is not a safe guide to every route.
+              </p>
+              <p>
+                Where there is no will, the estate passes under the intestacy rules and the applicant
+                asks for letters of administration rather than probate. Those took a mean of{" "}
+                {fmtWeeks(loa.mean_weeks_all)} against {fmtWeeks(probateOnly.mean_weeks_all)} for grants
+                of probate, roughly twice as long. The main reason is channel mix: only{" "}
+                {((loa.applications_digital / loa.applications) * 100).toFixed(1)}% of letters of
+                administration applications were made digitally, against{" "}
+                {((probateOnly.applications_digital / probateOnly.applications) * 100).toFixed(1)}% of
+                probate applications, and paper is the slow route for every grant type.
+              </p>
+              <div className="not-prose mt-6 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-300 text-left">
+                      <th className="py-2 pr-4 font-bold text-neutral-900">Grant type</th>
+                      <th className="py-2 pr-4 text-right font-bold text-neutral-900">Applications</th>
+                      <th className="py-2 pr-4 text-right font-bold text-neutral-900">Mean (all)</th>
+                      <th className="py-2 pr-4 text-right font-bold text-neutral-900">Median (all)</th>
+                      <th className="py-2 pr-4 text-right font-bold text-neutral-900">Mean (digital)</th>
+                      <th className="py-2 text-right font-bold text-neutral-900">Mean (paper)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {byGrantType.types.map((t) => (
+                      <tr key={t.grant_type} className="border-b border-neutral-200">
+                        <td className="py-2 pr-4 text-neutral-700">{t.label}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(t.applications)}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{t.mean_weeks_all.toFixed(1)}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{t.median_weeks_all.toFixed(1)}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{t.mean_weeks_digital.toFixed(1)}</td>
+                        <td className="py-2 text-right text-neutral-900">{t.mean_weeks_paper.toFixed(1)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <p className="mt-3 text-xs text-neutral-500">
+                  Mean and median weeks from submission to grant, {quarterLabel(byGrantType.quarter)},
+                  England and Wales. Includes stopped and not-stopped cases.
+                </p>
+              </div>
+              <p>
+                Read the mean and the median together here, because they say different things. Letters of
+                administration have a digital mean of {fmtWeeks(loa.mean_weeks_digital)} but a digital
+                median of only {fmtWeeks(loa.median_weeks_digital)}, so a clean digital application is
+                usually issued very quickly and it is the stopped minority that lifts the average. On the
+                all-channel measure the median is {fmtWeeks(loa.median_weeks_all)}, which is what a paper
+                heavy grant type looks like.
+              </p>
+              <p>
+                Letters of administration with will annexed, used where there is a valid will but no
+                executor able or willing to act, are the slowest route of the three at a mean of{" "}
+                {fmtWeeks(loaWithWill.mean_weeks_all)}. They are also the smallest, at{" "}
+                {fmtNumber(loaWithWill.applications)} applications in the quarter.
               </p>
             </Section>
 

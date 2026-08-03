@@ -1,5 +1,5 @@
 /**
- * Tests for Trade Tax Specialists extras-qualifiers contract.
+ * Tests for the extras-qualifiers contract.
  *
  * The LeadForm moves trade + subbieCount qualifiers out of the message
  * string and into extras.{trade, subbie_count} on the lead payload.

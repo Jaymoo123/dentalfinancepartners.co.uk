@@ -114,7 +114,7 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <h2>Worked example: a large but excepted estate in Dundee</h2>
 
-<p>Rhona and Callum Strachan are named jointly in their mother Elspeth's will, so both are executors nominate. Elspeth was widowed and domiciled in Dundee. Her estate:</p>
+<p>Mhairi and Ewan Strachan are named jointly in their mother Elspeth's will, so both are executors nominate. Elspeth was widowed and domiciled in Dundee. Her estate:</p>
 
 <ul>
 <li>Flat in Broughty Ferry: £215,000</li>

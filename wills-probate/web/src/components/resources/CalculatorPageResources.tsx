@@ -1,5 +1,5 @@
 /**
- * Additive resource-gate island for Trade Tax Specialists calculator pages.
+ * Additive resource-gate island for calculator pages.
  *
  * Resolves the topic from the calculator slug, then renders the ResourceGate
  * (if an asset is enabled) directly below the existing calculator. The existing

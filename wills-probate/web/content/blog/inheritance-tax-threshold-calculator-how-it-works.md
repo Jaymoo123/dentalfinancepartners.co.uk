@@ -60,7 +60,7 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <h2>Worked example: how far the inputs move the answer</h2>
 
-<p>Callum is 61, divorced, and lives in Bristol. His estate is worth <strong>£1,150,000</strong>: a flat valued at £420,000, a rental property at £310,000, pensions aside, plus savings, investments and possessions making up the rest. The flat goes to his two adult children. Here is the same £1,150,000 run through the calculator four ways.</p>
+<p>Martyn is 61, divorced, and lives in Bristol. His estate is worth <strong>£1,150,000</strong>: a flat valued at £420,000, a rental property at £310,000, pensions aside, plus savings, investments and possessions making up the rest. The flat goes to his two adult children. Here is the same £1,150,000 run through the calculator four ways.</p>
 
 <table>
 <thead>
@@ -76,7 +76,7 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <p>Two things stand out. Changing who inherits the flat, and nothing else, costs <strong>£70,000</strong>, which is 40% of the £175,000 residence allowance that disappears. And the transferable allowance is not a footnote: the gap between 50% and 100% is <strong>£100,000</strong> of tax on an identical estate. That percentage is a matter of record from the first spouse's estate, not a guess, and executors who assume 100% because it is the default have sometimes been wrong. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-married-couples-rnrb">married couples' threshold and the RNRB</a> covers how the transfer is established and claimed.</p>
 
-<p>If Callum left 10% or more of the net estate to charity, the advanced toggle drops the rate on the taxable slice from 40% to 36%. On the first row that is £234,000 instead of £260,000. The mechanics of the 10% test are covered in our piece on <a href="/blog/inheritance-tax/leaving-10-percent-to-charity-36-rate-iht">leaving 10% to charity and the 36% rate</a>, and there is a catch in the tool worth naming: the toggle takes your word for it. It does not compute the baseline amount the 10% is measured against, which is the estate after reliefs, exemptions and the nil-rate band, not 10% of the gross value.</p>
+<p>If Martyn left 10% or more of the net estate to charity, the advanced toggle drops the rate on the taxable slice from 40% to 36%. On the first row that is £234,000 instead of £260,000. The mechanics of the 10% test are covered in our piece on <a href="/blog/inheritance-tax/leaving-10-percent-to-charity-36-rate-iht">leaving 10% to charity and the 36% rate</a>, and there is a catch in the tool worth naming: the toggle takes your word for it. It does not compute the baseline amount the 10% is measured against, which is the estate after reliefs, exemptions and the nil-rate band, not 10% of the gross value.</p>
 
 <h2>Four things the calculator cannot see</h2>
 
@@ -84,7 +84,7 @@ generator: "claude-opus-5 | manual | 2026-08-03"
 
 <h3>1. Gifts made in the last seven years</h3>
 
-<p>There is no gifts box. Under <a href="https://www.gov.uk/inheritance-tax/gifts">GOV.UK's guidance on gifts</a>, gifts made within seven years of death are brought back in and set against the nil-rate band before the death estate touches it. Say Callum gave a daughter £200,000 three years before he died. The natural thing to type into any calculator is the estate as it stands afterwards, £950,000, which returns a £500,000 threshold and <strong>£180,000</strong> of tax. The real position is that £200,000 of nil-rate band has already gone, leaving £125,000 plus £175,000, so £650,000 is taxable and the bill is <strong>£260,000</strong>. An £80,000 gap, produced entirely by a field that does not exist.</p>
+<p>There is no gifts box. Under <a href="https://www.gov.uk/inheritance-tax/gifts">GOV.UK's guidance on gifts</a>, gifts made within seven years of death are brought back in and set against the nil-rate band before the death estate touches it. Say Martyn gave a daughter £200,000 three years before he died. The natural thing to type into any calculator is the estate as it stands afterwards, £950,000, which returns a £500,000 threshold and <strong>£180,000</strong> of tax. The real position is that £200,000 of nil-rate band has already gone, leaving £125,000 plus £175,000, so £650,000 is taxable and the bill is <strong>£260,000</strong>. An £80,000 gap, produced entirely by a field that does not exist.</p>
 
 <p>There is a counterintuitive detail here too. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm46023">Inheritance Tax Manual at IHTM46023</a> confirms the £2,000,000 taper test uses the estate after liabilities but <em>before</em> exemptions and reliefs, and it excludes lifetime gifts within seven years. So those gifts eat the nil-rate band without reducing the value tested for taper. Our guide to the <a href="/blog/inheritance-tax/7-year-rule-gifts-inheritance-tax">7 year rule on gifts</a> sets out the taper relief bands that apply to tax on the gifts themselves, which is a different taper again and also not modelled here.</p>
 

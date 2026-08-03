@@ -254,7 +254,7 @@ export default function ProbatePage() {
           </p>
           <ul className="mt-5 space-y-3 text-base leading-relaxed text-neutral-600 sm:text-lg list-disc pl-6">
             <li><strong className="text-neutral-900">Before applying:</strong> gathering valuations and completing tax forms typically takes 4 to 12 weeks, longer if there is property or foreign assets to value.</li>
-            <li><strong className="text-neutral-900">The grant itself:</strong> in the latest published HMCTS figures (January to March 2026), grants of probate took a mean of around 5 weeks from submission, with a median of just 1 week. What decides your wait is whether the application gets &ldquo;stopped&rdquo; for queries: those that were not stopped took about 2 weeks, while stopped ones took 14 weeks on average. Letters of administration run longer, around 11 weeks, or around 20 weeks with a will annexed. Waits vary quarter to quarter.</li>
+            <li><strong className="text-neutral-900">The grant itself:</strong> in the latest published HMCTS figures (January to March 2026), grants took a mean of 6.4 weeks from submission across all channels, around 4.5 weeks for digital applications (82.6% of the total) and 16.5 weeks for paper ones. Waits vary quarter to quarter, and applications that get &ldquo;stopped&rdquo; for queries take considerably longer.</li>
             <li><strong className="text-neutral-900">Full administration:</strong> collecting assets, selling property and distributing the estate commonly takes 6 to 12 months in total. Estates with a property sale, an IHT bill or a dispute can run well beyond a year.</li>
           </ul>
           <p className="mt-6 text-base leading-relaxed text-neutral-600 sm:text-lg">

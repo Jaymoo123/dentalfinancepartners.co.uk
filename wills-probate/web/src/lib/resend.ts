@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+import { siteConfig } from "@/config/site";
 
 let cached: Resend | null = null;
 
@@ -13,7 +14,7 @@ export function getResend(): Resend {
 }
 
 export function getFromAddress(): string {
-  const name = process.env.RESEND_FROM_NAME || "Trade Tax Specialists";
+  const name = process.env.RESEND_FROM_NAME || siteConfig.name;
   const email = process.env.RESEND_FROM_EMAIL || "leads@propertytaxpartners.co.uk";
   return `${name} <${email}>`;
 }

@@ -1,5 +1,5 @@
 /**
- * Shared lead-nurture enrolment for the Trade Tax Specialists (CIS) site.
+ * Shared lead-nurture enrolment for the wills-probate site.
  *
  * Idempotent per (lead_id, sequence). No-ops while LEAD_NURTURE_ENABLED is
  * unset, returning {enrolled:false, reason:"dormant"} so enrolment is always
@@ -8,7 +8,7 @@
 import { adminInsert, adminUpdate, adminSelect } from "@/lib/supabase/admin";
 import { buildLeadChannelSender, leadNurtureArmed } from "@/lib/leads/channels";
 import {
-  buildCisLeadNurtureConfig,
+  buildLeadNurtureConfig,
   buildLeadMessageContext,
   routePrimarySequence,
   LEAD_SEQUENCE_NAMES,
@@ -67,7 +67,7 @@ export async function enrollLead(
   if (deferFirstTouch) {
     const variant =
       sequenceName === LEAD_SEQUENCE_NAMES.detail_capture ? "detail_capture" : "contactability";
-    const config = buildCisLeadNurtureConfig(variant);
+    const config = buildLeadNurtureConfig(variant);
     const step0 = config.steps[0];
     const hasSms = step0
       ? (step0.channels ?? []).some((ch: string) => ch === "sms" || ch === "whatsapp")
@@ -108,7 +108,7 @@ export async function enrollLead(
 
   const variant =
     sequenceName === LEAD_SEQUENCE_NAMES.detail_capture ? "detail_capture" : "contactability";
-  const config = buildCisLeadNurtureConfig(variant);
+  const config = buildLeadNurtureConfig(variant);
   const sender = buildLeadChannelSender({ live });
   const stateRow = {
     lead_id: lead.id,

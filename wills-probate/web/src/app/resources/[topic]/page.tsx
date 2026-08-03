@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guide = getGuideByTopic(topic);
   if (!guide) return {};
   return {
-    title: `${guide.title} | Trade Tax Specialists`,
+    title: `${guide.title} | ${siteConfig.name}`,
     description: guide.summary || guide.title,
     alternates: {
       canonical: `${siteConfig.url}/resources/${topic}`,
@@ -55,7 +55,7 @@ export default async function ResourceGuidePage({ params }: Props) {
         style={{ background: "#1e293b" }}
       >
         <p className="mb-1 text-xs font-semibold uppercase tracking-wide" style={{ color: "#f97316" }}>
-          Trade Tax Specialists guide
+          {siteConfig.name} guide
         </p>
         <h1 className="text-xl font-bold leading-snug text-white sm:text-2xl">
           {guide.title}
