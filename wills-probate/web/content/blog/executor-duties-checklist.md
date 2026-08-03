@@ -19,7 +19,7 @@ summary: "This is a complete, stage-gated checklist of everything an executor ha
 keyTakeaways:
   - "Executor duties fall into six stages: register the death and secure the estate, notify organisations, value the estate, apply for probate and deal with inheritance tax, collect assets and pay debts, then distribute and account."
   - "You must register the death within 5 days in England and Wales (8 days in Scotland). The Tell Us Once service then notifies most government bodies in one go."
-  - "Budget £526 for the probate application where the estate is worth over £5,000; smaller estates pay nothing. HMCTS data shows digital applications averaging 4.5 weeks to grant."
+  - "Budget £526 for the probate application where the estate is worth over £5,000; smaller estates pay nothing. HMCTS data shows grants of probate averaging around 5 weeks, or about 2 weeks where the application is not stopped for queries."
   - "Any inheritance tax must be paid by the end of the sixth month after the month of death, before the grant is issued in most cases. The standard rate is 40% above the £325,000 nil-rate band."
   - "A section 27 Trustee Act 1925 notice in The Gazette, left open for two months, protects you from personal liability to unknown creditors. Distributing early without one is the classic executor mistake."
   - "Beneficiaries generally cannot demand payment within the executor's year, so work steadily through the stages rather than rushing distribution."
@@ -82,7 +82,7 @@ faqs:
 <li><strong>List every debt:</strong> mortgage, loans, credit cards, utilities owed, and the funeral account.</li>
 <li><strong>Identify jointly owned assets.</strong> Property and accounts held as joint tenants pass automatically to the survivor and sit outside the grant, though their value can still matter for inheritance tax.</li>
 <li><strong>Check whether you need a grant at all.</strong> Small cash estates and estates passing wholly by survivorship often do not. Our free <a href="/calculators/do-i-need-probate-checker">do I need probate checker</a> gives you an answer in a couple of minutes, and our guide to <a href="/blog/probate-process/do-you-need-probate">whether you need probate</a> explains the thresholds banks apply.</li>
-<li><strong>Check the inheritance tax position.</strong> The nil-rate band is £325,000 (frozen until April 2030), with a residence nil-rate band of up to £175,000 where a home passes to direct descendants, tapered £1 for every £2 above £2,000,000. Tax is 40% above the available thresholds, reduced to 36% where 10% or more of the net estate goes to charity. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-uk">inheritance tax threshold</a> works through the details.</li>
+<li><strong>Check the inheritance tax position.</strong> The nil-rate band is £325,000 (frozen until 5 April 2031), with a residence nil-rate band of up to £175,000 where a home passes to direct descendants, tapered £1 for every £2 above £2,000,000. Tax is 40% above the available thresholds, reduced to 36% where 10% or more of the net estate goes to charity. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-uk">inheritance tax threshold</a> works through the details.</li>
 </ul>
 
 <h2>Stage 4: months 2 to 3 (inheritance tax and the probate application)</h2>
@@ -91,7 +91,7 @@ faqs:
 <li><strong>Work out whether the estate is excepted or needs a full IHT400 account.</strong> Most estates with no tax to pay are excepted and report values within the probate application itself; taxable and complex estates file the IHT400 with HMRC first. See <a href="https://www.gov.uk/valuing-estate-of-someone-who-died">gov.uk: valuing the estate</a>.</li>
 <li><strong>Pay any inheritance tax due.</strong> The deadline is the end of the sixth month after the month of death, after which interest runs. Tax on property can be paid in instalments; tax on most other assets is due before HMRC issues the reference the probate application needs.</li>
 <li><strong>Apply for the grant of probate</strong>, online where possible. The court fee, set at £526 on 13 July 2026, applies to estates over £5,000; smaller estates pay nothing. Order sealed copies at £2 each with the application, one per institution holding assets.</li>
-<li><strong>Wait for the grant.</strong> In the most recent HMCTS quarter (January to March 2026), digital applications averaged 4.5 weeks and paper ones 16.5, with an overall mean of 6.4 weeks; your own wait may differ. Our <a href="/blog/probate-process/how-long-does-probate-take">probate timeline guide</a> covers what drives the wait and what can stall an application.</li>
+<li><strong>Wait for the grant.</strong> In the most recent HMCTS quarter (January to March 2026), grants of probate averaged around 5 weeks with a median of 1 week, but applications that were not stopped for queries took about 2 weeks against 14 weeks for those that were; your own wait may differ. Our <a href="/blog/probate-process/how-long-does-probate-take">probate timeline guide</a> covers what drives the wait and what can stall an application.</li>
 </ul>
 
 <h2>Stage 5: months 3 to 6 (collect assets and settle debts)</h2>

@@ -73,12 +73,12 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 <ul>
 <li><strong>Your family is blended.</strong> Second marriages, stepchildren (who do not inherit automatically) and children from earlier relationships need deliberate drafting to avoid accidentally disinheriting someone.</li>
 <li><strong>You are cohabiting.</strong> An unmarried partner inherits nothing under the intestacy rules, so a mistake that invalidates a DIY will can leave them with no entitlement at all.</li>
-<li><strong>Your estate may face inheritance tax.</strong> The nil-rate band is <a href="https://www.gov.uk/inheritance-tax">£325,000</a>, frozen until April 2030, and estate planning around it belongs in professionally drafted documents. Our <a href="/wills">wills pillar guide</a> explains where wills and tax planning meet.</li>
+<li><strong>Your estate may face inheritance tax.</strong> The nil-rate band is <a href="https://www.gov.uk/inheritance-tax">£325,000</a>, frozen until 5 April 2031, and estate planning around it belongs in professionally drafted documents. Our <a href="/wills">wills pillar guide</a> explains where wills and tax planning meet.</li>
 <li><strong>You own a business, farmland or overseas property</strong>, or want to set up a trust, exclude a close relative, or provide for a vulnerable beneficiary.</li>
 <li><strong>Capacity might later be questioned.</strong> A solicitor's file note about your understanding at the time is powerful evidence if the will is ever challenged.</li>
 </ul>
 
-<p>For a full walkthrough of the whole process, from deciding what goes in a will to choosing executors, see our complete guide to <a href="/blog/making-a-will/how-to-make-a-will-in-the-uk">how to make a will in the UK</a>, and for a realistic picture of paid options our page on <a href="/blog/probate-process/how-much-does-it-cost-to-make-a-will">what a will costs</a> sets out typical fees.</p>
+<p>For a full walkthrough of the whole process, from deciding what goes in a will to choosing executors, see our complete guide to <a href="/blog/making-a-will/how-to-make-a-will-in-the-uk">how to make a will in the UK</a>, and for a realistic picture of paid options our page on <a href="/blog/making-a-will/how-much-does-it-cost-to-make-a-will">what a will costs</a> sets out typical fees.</p>
 
 <h2>Choosing your route</h2>
 

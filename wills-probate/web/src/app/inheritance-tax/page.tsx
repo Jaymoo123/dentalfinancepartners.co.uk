@@ -95,8 +95,8 @@ export default function InheritanceTaxPage() {
           </ul>
           <p className="mt-6 text-base leading-relaxed text-neutral-600 sm:text-lg">
             Both bands have been frozen for years and remain frozen, which is why rising house prices keep
-            pulling ordinary family estates into scope. The freeze is currently legislated to run until April
-            2030.
+            pulling ordinary family estates into scope. The freeze, which also covers the £2 million taper
+            threshold, is currently legislated to run to the end of the 2030/31 tax year, so 5 April 2031.
           </p>
           <h3 className="mt-8 text-lg font-bold text-neutral-900">The £2 million taper</h3>
           <p className="mt-3 text-base leading-relaxed text-neutral-600 sm:text-lg">

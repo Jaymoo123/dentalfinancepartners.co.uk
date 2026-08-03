@@ -78,7 +78,7 @@ faqs:
 
 <h2>21 July 2025: the consultation response and a major design change</h2>
 
-<p>The government listened. In its July 2025 response and accompanying <a href="https://www.gov.uk/government/publications/inheritance-tax-on-pensions-liability-reporting-and-payment">policy paper</a>, it confirmed the 6 April 2027 start date but changed who carries the administrative burden. Under the final design:</p>
+<p>The government listened. In its July 2025 response and accompanying <a href="https://www.gov.uk/government/publications/inheritance-tax-unused-pension-funds-and-death-benefits">policy paper</a>, it confirmed the 6 April 2027 start date but changed who carries the administrative burden. Under the final design:</p>
 
 <ul>
 <li><strong>Personal representatives</strong> (the executors named in the will, or administrators where there is no will) are legally responsible for reporting and paying any inheritance tax due on unused pension funds and death benefits, alongside the rest of the estate.</li>

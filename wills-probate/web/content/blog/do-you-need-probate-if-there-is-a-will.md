@@ -22,7 +22,7 @@ keyTakeaways:
   - "Probate is usually needed where the estate includes property in the deceased's sole name, or accounts and investments above a bank's own threshold. It is often not needed for small estates or jointly owned assets."
   - "The original signed will must be sent to the probate registry with the application. Photocopies are not normally accepted, and a lost original triggers a special, slower procedure."
   - "The probate application fee is £526 for estates over £5,000 (since 13 July 2026), with no fee at or below £5,000. Sealed copies of the grant cost £2 each when ordered with the application."
-  - "Digital probate applications were granted in a mean of 4.5 weeks in January to March 2026, against 16.5 weeks for paper, though waits vary."
+  - "Grants of probate were issued in a mean of around 5 weeks in January to March 2026, with a median of 1 week. Applications not stopped for queries took about 2 weeks, against 14 weeks for those that were, though waits vary."
 sourcesVerifiedAt: "2026-07-24"
 faqs:
   - question: "Does having a will mean my family can avoid probate?"
@@ -91,7 +91,7 @@ faqs:
 
 <p>The application fee is identical whether the estate has a will or not: <strong>£526</strong> where the estate is over £5,000 (the fee rose to this level on 13 July 2026), and <strong>no fee</strong> where the estate is £5,000 or less, per the official <a href="https://www.gov.uk/applying-for-probate/fees">probate fees guidance</a>. Sealed copies of the grant cost £2 each when ordered with the application; order several, because each bank, registrar and broker will want to see one.</p>
 
-<p>On timing, the latest official <a href="https://www.gov.uk/government/collections/family-court-statistics-quarterly">Family Court and probate statistics</a> (January to March 2026) put the mean at 6.4 weeks from submission to grant; applying digitally, as 82.6% of applicants now do, brought that down to 4.5 weeks, against 16.5 weeks on paper. Waits vary, and an estate with a lost will or an inheritance tax account to file will take longer. Our <a href="/calculators/probate-timeline-estimator">probate timeline estimator</a> gives a personalised estimate, and <a href="/blog/probate-process/how-long-does-probate-take">how long does probate take</a> covers the full journey from death to distribution.</p>
+<p>On timing, the latest official <a href="https://www.gov.uk/government/statistics/family-court-statistics-quarterly-january-to-march-2026/family-court-statistics-quarterly-january-to-march-2026">Family Court and probate statistics</a> (January to March 2026) put grants of probate at a mean of around 5 weeks from submission, with a median of just 1 week. The thing that decides which end of that you land on is whether the application is stopped for queries: those that were not took about 2 weeks, those that were took 14 weeks on average. Waits vary, and an estate with a lost will or an inheritance tax account to file will take longer. Our <a href="/calculators/probate-timeline-estimator">probate timeline estimator</a> gives a personalised estimate, and <a href="/blog/probate-process/how-long-does-probate-take">how long does probate take</a> covers the full journey from death to distribution.</p>
 
 <h2>Will versus no will: a side-by-side summary</h2>
 

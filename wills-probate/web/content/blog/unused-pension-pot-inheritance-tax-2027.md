@@ -73,7 +73,7 @@ faqs:
 <p>From 6 April 2027, that discretion no longer shields the funds from inheritance tax. The pension value is aggregated with the rest of the estate, and the estate's allowances are applied across the whole:</p>
 
 <ul>
-<li>The nil-rate band of £325,000 per person, frozen until April 2030.</li>
+<li>The nil-rate band of £325,000 per person, frozen until 5 April 2031.</li>
 <li>The residence nil-rate band of up to £175,000 where a home passes to direct descendants, tapered by £1 for every £2 of estate value above £2,000,000. Because pension funds now count towards that £2,000,000 measure, some estates will lose residence nil-rate band purely because a pension has been added to the total.</li>
 <li>Transferable allowances between spouses and civil partners, giving a couple up to £1,000,000 combined.</li>
 </ul>

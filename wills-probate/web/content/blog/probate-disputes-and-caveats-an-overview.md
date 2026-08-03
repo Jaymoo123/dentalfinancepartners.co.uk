@@ -19,7 +19,7 @@ summary: "A caveat is the formal mechanism for pausing a probate application in 
 keyTakeaways:
   - "A caveat stops a grant of probate or letters of administration being issued in England and Wales while a dispute is investigated. It does not decide the dispute itself."
   - "Entering a caveat costs £4 and can be done online through GOV.UK or by post on form PA8A to the Leeds District Probate Registry. You must be 18 or over."
-  - "A caveat lasts 6 months and can be extended for further 6-month periods, at £4 each time, using form PA8B in the final month before it expires."
+  - "A caveat lasts 6 months and can be extended for further 6-month periods using form PA8B in the final month before it expires, each extension attracting the application fee again."
   - "The probate applicant can challenge a caveat by issuing a 'warning'. The person who entered the caveat then has 14 days, including weekends and bank holidays, to respond."
   - "Responding to a warning with an 'appearance' requires a contrary interest, such as a belief the will is invalid. If accepted, the caveat becomes permanent and can only be removed by a court order."
   - "Caveats suit disputes about a will's validity or about who is entitled to a grant. Entering one can lead to legal action and costs, so disputes are best taken to a contentious probate specialist early."
@@ -30,7 +30,7 @@ faqs:
   - question: "How long does a caveat last?"
     answer: "A caveat lasts 6 months from the date it is entered. It can be extended for a further 6 months by applying on form PA8B in the last month before it expires, and there is no set limit on the number of extensions, although each renewal must be actively applied for. If a caveat is allowed to lapse, the probate application can proceed and a grant can be issued."
   - question: "How much does it cost to lodge a caveat?"
-    answer: "The fee is £4 to enter a caveat and £4 for each 6-month extension, according to GOV.UK guidance current at July 2026. The fee itself is modest, but the wider costs are not: if the caveat is challenged and the dispute escalates, court proceedings can follow, and a caveat entered without proper grounds can expose the person who entered it to an adverse costs order."
+    answer: "GOV.UK states that it costs £4 to enter a caveat. An extension is applied for on form PA8B and attracts the same application fee, though GOV.UK does not publish a separate figure for it, so check the current fee before you apply. The fee itself is modest, but the wider costs are not: if the caveat is challenged and the dispute escalates, court proceedings can follow, and a caveat entered without proper grounds can expose the person who entered it to an adverse costs order."
   - question: "Can a caveat be challenged or removed?"
     answer: "Yes. The person applying for probate can issue a formal 'warning' through the Leeds District Probate Registry, stating their interest in the estate. The person who entered the caveat then has 14 days to respond. If they do nothing, the applicant files a statement of service and the caveat is removed. If they enter an 'appearance' based on a contrary interest and the registrar accepts it, the caveat becomes permanent and can only be removed by order of a District Probate Registrar, High Court Judge or District Judge."
   - question: "Can anyone enter a caveat?"
@@ -78,7 +78,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 <tbody>
 <tr><td>Fee to enter</td><td>£4</td></tr>
 <tr><td>Duration</td><td>6 months from entry</td></tr>
-<tr><td>Extension</td><td>Form PA8B, £4, applied for in the last month before expiry</td></tr>
+<tr><td>Extension</td><td>Form PA8B, applied for in the last month before expiry, application fee payable again</td></tr>
 <tr><td>Who can enter one</td><td>Anyone aged 18 or over (personally or via a solicitor or licensed provider)</td></tr>
 <tr><td>Where</td><td>Online via GOV.UK, or by post to Leeds District Probate Registry on form PA8A</td></tr>
 <tr><td>Effect</td><td>Probate applications stopped one working day after the caveat application is received</td></tr>

@@ -102,7 +102,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 <p>Beyond the ordinary hazards of any chain, probate conveyancing has its own failure points worth anticipating:</p>
 
 <ul>
-<li><strong>Inheritance tax before probate.</strong> Where IHT is due, some or all of it must be paid before the grant is issued, which is awkward when the main asset is the very house being sold. The Direct Payment Scheme and instalment options help; our guide to <a href="/blog/probate-process/paying-inheritance-tax-before-probate-direct-payment-scheme">paying inheritance tax before probate</a> explains the mechanics.</li>
+<li><strong>Inheritance tax before probate.</strong> Where IHT is due, some or all of it must be paid before the grant is issued, which is awkward when the main asset is the very house being sold. The Direct Payment Scheme and instalment options help; our guide to <a href="/blog/inheritance-tax/paying-inheritance-tax-before-probate-direct-payment-scheme">paying inheritance tax before probate</a> explains the mechanics.</li>
 <li><strong>Unregistered title.</strong> If the deeds are missing for an unregistered property, reconstructing title can add months. Flag this to the conveyancer on day one.</li>
 <li><strong>Registry queries ("stops").</strong> Errors or gaps in the probate application pause the 12-week clock. Getting the application right first time, or using a professional, protects the sale timetable.</li>
 <li><strong>Executor logistics.</strong> All executors on the grant must sign; one living abroad or slow to return documents delays exchange. Consider power reserved or renunciation before applying if an executor will not realistically take part.</li>

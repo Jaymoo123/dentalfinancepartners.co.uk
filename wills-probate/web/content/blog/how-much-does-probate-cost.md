@@ -21,7 +21,7 @@ keyTakeaways:
   - "Sealed copies of the grant cost £2 each when ordered with the application. Order several, because banks and other institutions often want their own copy."
   - "Valuation costs vary from nothing (free estate agent appraisals) to several hundred pounds for a RICS Red Book property valuation, which is worth paying for where inheritance tax may be due."
   - "Doing probate yourself can cost under £600 all in. Full professional administration of a complex estate can run to 1% to 5% of the estate value."
-  - "Other common disbursements include bankruptcy searches at £2 per name and statutory notices in The Gazette and a local paper, typically £150 to £300 combined."
+  - "Other common disbursements include bankruptcy searches at £7 per name by post or £6 through the HM Land Registry portal, and statutory notices in The Gazette and a local paper, typically £150 to £300 combined."
   - "All legitimate probate costs are paid by the estate. Executors who pay upfront are entitled to reimbursement before anything is distributed to beneficiaries."
 sourcesVerifiedAt: "2026-07-24"
 faqs:
@@ -69,7 +69,7 @@ faqs:
 
 <ul>
 <li><strong>Free:</strong> estate agent appraisals. Getting two or three and taking a sensible mid point is common practice for estates comfortably below the inheritance tax threshold.</li>
-<li><strong>£250 to £900:</strong> a formal RICS Red Book valuation from a chartered surveyor. Worth paying for where inheritance tax may be due, because HMRC can challenge valuations and a professional report carries far more weight. It also protects against capital gains complications if the property later sells for more than the probate value.</li>
+<li><strong>£200 to £600 for a standard home, rising towards £900 or more for large, tenanted or unusual property:</strong> a formal RICS Red Book valuation from a chartered surveyor. Worth paying for where inheritance tax may be due, because HMRC can challenge valuations and a professional report carries far more weight. It also protects against capital gains complications if the property later sells for more than the probate value.</li>
 </ul>
 
 <h3>Chattels and other assets</h3>
@@ -85,7 +85,7 @@ faqs:
 <p>Disbursements are third party costs paid out during the administration. The common ones:</p>
 
 <ul>
-<li><strong>Bankruptcy searches: £2 per name.</strong> A search against each beneficiary before distributing, because paying a bankrupt beneficiary directly can leave the executor personally liable to their trustee in bankruptcy.</li>
+<li><strong>Bankruptcy searches: £7 per name by post or DX, £6 per name through the <a href="https://www.gov.uk/guidance/hm-land-registry-land-charges-fees">HM Land Registry portal</a>.</strong> A search against each beneficiary before distributing, because paying a bankrupt beneficiary directly can leave the executor personally liable to their trustee in bankruptcy.</li>
 <li><strong>Statutory notices: roughly £150 to £300 combined.</strong> A notice in <a href="https://www.thegazette.co.uk/wills-and-probate/placing-a-deceased-estates-notice">The Gazette</a> plus a local newspaper notice under section 27 of the Trustee Act 1925. These protect the executor from personal liability to unknown creditors who surface after distribution. Optional, but cheap insurance on any estate with the slightest chance of unknown debts.</li>
 <li><strong>Extra death certificates: £12.50 each</strong> from the General Register Office. Ordering several at registration is cheaper and faster than chasing them later.</li>
 <li><strong>Land Registry fees:</strong> £7 for title documents, and a transfer fee (commonly £20 to £305 depending on property value) if a property is transferred to a beneficiary rather than sold.</li>
@@ -132,7 +132,7 @@ faqs:
 
 <h2>DIY floor versus assisted: what the gap really buys</h2>
 
-<p>The cheapest realistic route through probate on an estate over £5,000 is around £550 to £600: the £526 fee, a handful of £2 copies, £2 bankruptcy searches per beneficiary, and postage. Add statutory notices and a couple of extra death certificates and a careful DIY executor still lands under £900.</p>
+<p>The cheapest realistic route through probate on an estate over £5,000 is around £550 to £600: the £526 fee, a handful of £2 copies, a £6 or £7 bankruptcy search per beneficiary, and postage. Add statutory notices and a couple of extra death certificates and a careful DIY executor still lands under £900.</p>
 
 <p>What paying more buys is not the grant itself (the court fee is identical) but time, liability cover and expertise: someone else chasing institutions, preparing inheritance tax forms correctly, and carrying professional responsibility for mistakes. Whether that trade is worth it depends on the estate and on you, and our <a href="/calculators/probate-diy-vs-solicitor">DIY versus solicitor tool</a> is built for exactly that decision. Bear in mind the money cost is only half the equation; the other half is time, and <a href="/blog/probate-process/how-long-does-probate-take">how long probate takes</a> is a question with its own answer.</p>
 

@@ -229,7 +229,7 @@ describe("Tool - probate-timeline-estimator", () => {
       willExists: true,
       ihtPayable: "none",
       complexity: "average",
-      applicationType: "digital",
+      applicationStopped: "no",
     });
     expect(r.headline.value).toMatch(/\d+(\.\d+)? to \d+(\.\d+)?\s*months/);
     expectFiniteRows(r.rows);
@@ -240,7 +240,7 @@ describe("Tool - probate-timeline-estimator", () => {
       willExists: false,
       ihtPayable: "iht400",
       complexity: "complex",
-      applicationType: "paper",
+      applicationStopped: "yes",
     });
     const delayRow = r.rows!.find((row) => row.label.includes("No will"));
     expect(delayRow).toBeDefined();

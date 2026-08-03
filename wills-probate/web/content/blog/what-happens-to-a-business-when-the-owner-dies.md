@@ -85,7 +85,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 <li><strong>HMRC obligations continue.</strong> VAT returns, PAYE and self assessment deadlines do not wait for probate, though HMRC can be asked for time once notified of the death.</li>
 </ul>
 
-<p>Executors should contact the bank, the accountant and any co-owners in the first days, not after the grant. Some banks will make limited payments before probate for urgent business preservation, and an accountant who already knows the business is usually the fastest route to a realistic picture of what it is worth and whether it can be sold. Our <a href="/blog/probate-basics/first-30-days-for-executors">first 30 days guide for executors</a> covers the wider sequence, and the <a href="/for/business-owners">business owners hub</a> collects the planning-side reading.</p>
+<p>Executors should contact the bank, the accountant and any co-owners in the first days, not after the grant. Some banks will make limited payments before probate for urgent business preservation, and an accountant who already knows the business is usually the fastest route to a realistic picture of what it is worth and whether it can be sold. Our <a href="/blog/executors/first-30-days-for-executors">first 30 days guide for executors</a> covers the wider sequence, and the <a href="/for/business-owners">business owners hub</a> collects the planning-side reading.</p>
 
 <h2>Inheritance tax: Business Relief and the new £2.5 million cap</h2>
 
@@ -113,7 +113,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <h2>Business LPAs: the gap before death</h2>
 
-<p>Death is not the only event that can decapitate a business. If an owner loses mental capacity through illness or accident, every problem described above arrives early, and no will or probate process can help because the owner is still alive. A <a href="https://www.gov.uk/power-of-attorney">lasting power of attorney</a> for property and financial affairs lets a chosen attorney step in, and business owners can make a <strong>separate business LPA</strong> appointing someone with commercial experience to handle only business decisions, while a different attorney handles personal finances. Without one, the family faces a Court of Protection deputyship application, which commonly takes months, during which nobody can lawfully pay staff or sign for the business. Our guide to <a href="/blog/probate-basics/power-of-attorney-vs-probate">power of attorney versus probate</a> explains where each tool starts and stops.</p>
+<p>Death is not the only event that can decapitate a business. If an owner loses mental capacity through illness or accident, every problem described above arrives early, and no will or probate process can help because the owner is still alive. A <a href="https://www.gov.uk/power-of-attorney">lasting power of attorney</a> for property and financial affairs lets a chosen attorney step in, and business owners can make a <strong>separate business LPA</strong> appointing someone with commercial experience to handle only business decisions, while a different attorney handles personal finances. Without one, the family faces a Court of Protection deputyship application, which commonly takes months, during which nobody can lawfully pay staff or sign for the business. Our guide to <a href="/blog/power-of-attorney/power-of-attorney-vs-probate">power of attorney versus probate</a> explains where each tool starts and stops.</p>
 
 <h2>Putting a plan in place</h2>
 

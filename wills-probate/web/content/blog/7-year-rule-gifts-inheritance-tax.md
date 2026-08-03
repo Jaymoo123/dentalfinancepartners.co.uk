@@ -67,7 +67,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <ol>
 <li><strong>All gifts made in the 7 years before death are lined up chronologically, oldest first.</strong></li>
-<li><strong>Each gift is set against the £325,000 nil-rate band in turn.</strong> Gifts within the band generate no tax of their own, but they consume the band. Only whatever band is left after the gifts passes to the estate. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-uk">UK inheritance tax threshold</a> covers the band itself, which is frozen at £325,000 until April 2030.</li>
+<li><strong>Each gift is set against the £325,000 nil-rate band in turn.</strong> Gifts within the band generate no tax of their own, but they consume the band. Only whatever band is left after the gifts passes to the estate. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-uk">UK inheritance tax threshold</a> covers the band itself, which is frozen at £325,000 until 5 April 2031.</li>
 <li><strong>Any gift value above the available band is taxed</strong>, normally with the recipient asked to pay, at 40% reduced by taper relief where the gift was made more than 3 years before death.</li>
 </ol>
 

@@ -26,7 +26,7 @@ keyTakeaways:
 sourcesVerifiedAt: "2026-07-24"
 faqs:
   - question: Is the inheritance tax threshold different in Scotland?
-    answer: "No. Inheritance tax is a reserved tax set by the UK Parliament, so the threshold is identical across the whole UK: a £325,000 nil-rate band per person, frozen until April 2030, plus a residence nil-rate band of up to £175,000 where a home passes to direct descendants. Scottish income tax bands differ from the rest of the UK, which is why people often assume IHT differs too, but it does not."
+    answer: "No. Inheritance tax is a reserved tax set by the UK Parliament, so the threshold is identical across the whole UK: a £325,000 nil-rate band per person, frozen until 5 April 2031, plus a residence nil-rate band of up to £175,000 where a home passes to direct descendants. Scottish income tax bands differ from the rest of the UK, which is why people often assume IHT differs too, but it does not."
   - question: Does Scotland have probate?
     answer: "Not by that name. The Scottish equivalent is confirmation. The executor completes form C1, an inventory of everything in the estate, and applies to the sheriff court. Confirmation gives the executor legal authority to gather in and distribute the estate, just as a grant of probate does in England and Wales. Estates worth £36,000 or less qualify as small estates, and sheriff clerks can help with the paperwork for those."
   - question: What are legal rights in Scotland?
@@ -52,7 +52,7 @@ faqs:
 
 <table>
 <tr><th>Allowance or rate</th><th>Amount</th><th>Notes</th></tr>
-<tr><td>Nil-rate band</td><td>£325,000</td><td>Per person, frozen until April 2030</td></tr>
+<tr><td>Nil-rate band</td><td>£325,000</td><td>Per person, frozen until 5 April 2031</td></tr>
 <tr><td>Residence nil-rate band</td><td>Up to £175,000</td><td>Home passing to children or grandchildren; stepchildren and adopted children count</td></tr>
 <tr><td>RNRB taper</td><td>£1 lost per £2 over £2,000,000</td><td>Fully lost at £2.35m (single) or £2.7m (couple)</td></tr>
 <tr><td>Combined couple threshold</td><td>Up to £1,000,000</td><td>Married couples and civil partners, with unused allowances transferable</td></tr>

@@ -45,7 +45,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 <p>Under <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/check-type-of-estate">gov.uk's excepted estates guidance</a>, an estate for a death on or after 1 January 2022 usually qualifies as excepted if any of these applies:</p>
 
 <ul>
-<li>Its value is below the £325,000 inheritance tax threshold (the nil-rate band, frozen until April 2030).</li>
+<li>Its value is below the £325,000 inheritance tax threshold (the nil-rate band, frozen until 5 April 2031).</li>
 <li>It is worth £650,000 or less and the unused threshold of a late spouse or civil partner is being transferred to cover it.</li>
 <li>Everything above the threshold passes to a surviving UK spouse or civil partner, or to a qualifying charity, and the estate is worth under £3 million.</li>
 </ul>

@@ -1,15 +1,25 @@
 # wills-probate (Probate Compass) site state
 
-Last updated 2026-07-28 (CONTENT BUILD COMPLETE, pre-deploy).
+Last updated 2026-08-03 (CONTENT BUILD INCOMPLETE, 23 wave-4 posts outstanding).
 
 brand_locked: true
 
 Placeholder brand "Probate Compass"; all content bodies brand-agnostic (zero
 brand-name mentions); real brand and domain decided at G1 pre-deploy. Site
-scaffolded + calculators + pillars + research assets + waves 1-4 (~123 posts)
-all built and committed on `expansion/phase-0` (unpushed). One stray untracked
-post `how-much-does-it-cost-to-make-a-will.md` pending commit. Deploy still
-gated on owner G1 (brand + domain), which owner has NOT yet released.
+scaffolded + calculators + pillars + research assets committed on
+`expansion/phase-0` (unpushed). Content: **waves 1-3 complete (54 posts); wave 4
+is 69 of 92.** Batches B1-B4 shipped; **B5 (cost + IHT + Scotland) and B6
+(do-i-need) were never written, so 23 cards in
+`docs/wills-probate/briefs/wave4/_cards/` have no post.** Verified by filesystem
+count 2026-08-03; the earlier "waves 1-4 complete, ~123 posts" claim was wrong.
+One stray untracked post `how-much-does-it-cost-to-make-a-will.md`, Opus-rewritten
+2026-08-03, ready to commit. Provenance: 89 of 123 posts tag
+`generator: claude-fable-5` and the other 34 carry no generator field at all, so
+they are NOT verified Opus. An audit of the Fable corpus found it meets the
+quality bar (primary paragraph-level citations, arithmetic correct, zero
+fabricated statistics), so this is a policy question for the owner under the
+Opus-only rule, not a quality remediation. Deploy still gated on owner G1
+(brand + domain), which owner has NOT yet released.
 
 ## Identity
 
@@ -27,7 +37,7 @@ Topic pool ranked and wave-bucketed: wave1=14, wave2=13, wave3=28, wave4=64.
       CI build matrix entry
 - [x] wills-probate/web scaffold
 - [x] Topic pool -> blog_topics seed (site_key=wills-probate)
-- [x] Waves 1-4 content generation (~123 posts committed; nurture sequences done)
+- [~] Waves 1-3 complete (54 posts); wave 4 at 69/92, 23 cards unwritten (B5, B6)
 - [x] Calculators + pillar pages + research assets build
 - [ ] Commit stray post `how-much-does-it-cost-to-make-a-will.md`
 - [ ] Vercel project + domain (gated on real brand/domain decision at G1 — HELD by owner 2026-07-28)

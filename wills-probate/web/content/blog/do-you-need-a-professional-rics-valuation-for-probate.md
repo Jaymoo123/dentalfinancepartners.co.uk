@@ -56,7 +56,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 <tr><th></th><th>Estate agent appraisal</th><th>RICS Red Book valuation</th></tr>
 </thead>
 <tbody>
-<tr><td>Cost</td><td>Usually free</td><td>Typically £200 to £600 for a standard home</td></tr>
+<tr><td>Cost</td><td>Usually free</td><td>Typically £200 to £600 for a standard home, rising towards £900 or more for large, tenanted or unusual property</td></tr>
 <tr><td>What it is</td><td>An opinion of likely asking or sale price, often pitched to win the selling instruction</td><td>A formal opinion of open market value by a qualified surveyor, prepared to the RICS valuation standard</td></tr>
 <tr><td>Basis</td><td>No prescribed standard</td><td>Written report on the section 160 open market basis, with comparable evidence</td></tr>
 <tr><td>Weight with HMRC</td><td>Accepted on non-taxable estates; limited evidential weight if queried</td><td>The standard evidence in a valuation dispute; strong support for a reasonable-care defence</td></tr>

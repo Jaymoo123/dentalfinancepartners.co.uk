@@ -36,7 +36,7 @@ faqs:
   - question: "Does the RNRB taper apply per person or per estate?"
     answer: "The taper is applied to each estate on each death. Each person has their own RNRB of up to £175,000, and each estate is tested against the £2 million threshold when that person dies. Unused RNRB can be transferred to a surviving spouse or civil partner, but the transferred amount is also reduced if the first estate exceeded £2 million, and the survivor's combined allowance is tapered again if their own estate is over the threshold when they die."
   - question: "What is the difference between the nil-rate band and the residence nil-rate band?"
-    answer: "The nil-rate band is the standard £325,000 allowance that every estate gets, whoever inherits, and it is frozen until April 2030. The residence nil-rate band is a separate allowance of up to £175,000 that only applies where a qualifying home passes to direct descendants, and only in full where the estate is worth £2 million or less. The nil-rate band never tapers with estate size; the residence nil-rate band does. Keeping the two distinct matters because the 2027 pension change threatens the RNRB specifically."
+    answer: "The nil-rate band is the standard £325,000 allowance that every estate gets, whoever inherits, and it is frozen until 5 April 2031. The residence nil-rate band is a separate allowance of up to £175,000 that only applies where a qualifying home passes to direct descendants, and only in full where the estate is worth £2 million or less. The nil-rate band never tapers with estate size; the residence nil-rate band does. Keeping the two distinct matters because the 2027 pension change threatens the RNRB specifically."
 generator: "claude-fable-5 | manual | 2026-07-24"
 ---
 <h2>The short answer</h2>
@@ -47,7 +47,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <h2>A quick recap: two allowances, only one of them tapers</h2>
 
-<p>Every estate gets the standard <strong>nil-rate band of £325,000</strong>, frozen until April 2030. It applies whoever inherits and it never reduces with the size of the estate. The <strong>residence nil-rate band of up to £175,000</strong> is different in two ways. First, it only applies where a qualifying home (or downsized equivalent) passes to direct descendants: children, stepchildren, adopted children, grandchildren and their spouses. Second, it is means-tested against the whole estate. Both allowances can transfer between spouses and civil partners, which is how a couple can reach a combined threshold of up to £1,000,000. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-married-couples-rnrb">married couples' threshold and the RNRB</a> covers the full qualifying rules; this article stays focused on the taper and what pensions do to it from 2027.</p>
+<p>Every estate gets the standard <strong>nil-rate band of £325,000</strong>, frozen until 5 April 2031. It applies whoever inherits and it never reduces with the size of the estate. The <strong>residence nil-rate band of up to £175,000</strong> is different in two ways. First, it only applies where a qualifying home (or downsized equivalent) passes to direct descendants: children, stepchildren, adopted children, grandchildren and their spouses. Second, it is means-tested against the whole estate. Both allowances can transfer between spouses and civil partners, which is how a couple can reach a combined threshold of up to £1,000,000. Our guide to the <a href="/blog/inheritance-tax/inheritance-tax-threshold-married-couples-rnrb">married couples' threshold and the RNRB</a> covers the full qualifying rules; this article stays focused on the taper and what pensions do to it from 2027.</p>
 
 <p>The taper itself is simple arithmetic. <a href="https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band">GOV.UK's RNRB guidance</a> puts it this way: where the estate immediately before death is worth more than £2,000,000, the RNRB is reduced by £1 for every £2 of the excess. So:</p>
 
@@ -78,7 +78,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <h2>What exactly changes on 6 April 2027</h2>
 
-<p>Under the government's <a href="https://www.gov.uk/government/publications/inheritance-tax-on-pensions-liability-reporting-and-payment">policy on inheritance tax and pensions</a>, from 6 April 2027 most unused pension funds and death benefits are brought into the estate for inheritance tax. The key features:</p>
+<p>Under the government's <a href="https://www.gov.uk/government/publications/inheritance-tax-unused-pension-funds-and-death-benefits">policy on inheritance tax and pensions</a>, from 6 April 2027 most unused pension funds and death benefits are brought into the estate for inheritance tax. The key features:</p>
 
 <ul>
 <li><strong>Personal representatives (the executors or administrators) become legally responsible</strong> for reporting and paying any inheritance tax due on the pension element, not the pension scheme.</li>

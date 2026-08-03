@@ -44,7 +44,7 @@ faqs:
 
 <h2>What changes on 6 April 2027</h2>
 
-<p>For deaths on or after 6 April 2027, unused pension funds and death benefits from registered pension schemes (and equivalent overseas arrangements) are brought into the estate for inheritance tax. The government's <a href="https://www.gov.uk/government/publications/inheritance-tax-on-pensions-liability-reporting-and-payment">policy paper on IHT and pensions</a> confirms the design settled after consultation: rather than making pension scheme administrators liable, as first proposed, the final rules place responsibility for reporting and paying the IHT on the <strong>personal representatives</strong>.</p>
+<p>For deaths on or after 6 April 2027, unused pension funds and death benefits from registered pension schemes (and equivalent overseas arrangements) are brought into the estate for inheritance tax. The government's <a href="https://www.gov.uk/government/publications/inheritance-tax-unused-pension-funds-and-death-benefits">policy paper on IHT and pensions</a> confirms the design settled after consultation: rather than making pension scheme administrators liable, as first proposed, the final rules place responsibility for reporting and paying the IHT on the <strong>personal representatives</strong>.</p>
 
 <p>Three carve-outs matter for executors:</p>
 

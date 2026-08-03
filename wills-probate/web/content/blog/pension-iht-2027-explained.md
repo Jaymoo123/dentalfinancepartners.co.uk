@@ -48,7 +48,7 @@ faqs:
 
 <p>When someone dies, everything they owned is added up. The house, savings, car, investments, minus any debts. That total is called the <strong>estate</strong>.</p>
 
-<p><strong>Inheritance tax (IHT)</strong> is a tax on estates above a certain size. Everyone gets a tax-free allowance of <strong>£325,000</strong>, called the nil-rate band, which is frozen until April 2030. If you leave your home to children or grandchildren there can be an extra allowance of up to <strong>£175,000</strong>, the residence nil-rate band. Married couples and civil partners can pass unused allowances to each other, which is how the combined figure of up to <strong>£1,000,000</strong> arises. Anything above the allowances is taxed at <strong>40%</strong> (or 36% where 10% or more of the net estate goes to charity), per <a href="https://www.gov.uk/inheritance-tax">gov.uk's inheritance tax guidance</a>. Our <a href="/blog/inheritance-tax/inheritance-tax-threshold-uk">plain guide to the inheritance tax threshold</a> walks through the allowances properly.</p>
+<p><strong>Inheritance tax (IHT)</strong> is a tax on estates above a certain size. Everyone gets a tax-free allowance of <strong>£325,000</strong>, called the nil-rate band, which is frozen until 5 April 2031. If you leave your home to children or grandchildren there can be an extra allowance of up to <strong>£175,000</strong>, the residence nil-rate band. Married couples and civil partners can pass unused allowances to each other, which is how the combined figure of up to <strong>£1,000,000</strong> arises. Anything above the allowances is taxed at <strong>40%</strong> (or 36% where 10% or more of the net estate goes to charity), per <a href="https://www.gov.uk/inheritance-tax">gov.uk's inheritance tax guidance</a>. Our <a href="/blog/inheritance-tax/inheritance-tax-threshold-uk">plain guide to the inheritance tax threshold</a> walks through the allowances properly.</p>
 
 <p>The key point for this article: for years, one big asset has been left out of that adding-up exercise entirely. The pension.</p>
 
@@ -62,7 +62,7 @@ faqs:
 
 <h2>Exactly what changes on 6 April 2027</h2>
 
-<p>For deaths on or after <strong>6 April 2027</strong>, most <strong>unused pension funds and death benefits</strong> will be included in the value of the estate for inheritance tax, under the framework in HMRC's policy paper <a href="https://www.gov.uk/government/publications/inheritance-tax-on-pensions-liability-reporting-and-payment">Inheritance Tax on pensions: liability, reporting and payment</a>. "Unused" simply means money still sitting in the pension that you had not spent. There is no new tax rate and no separate pension tax. The pension is simply added to the pile before the ordinary inheritance tax sums are done.</p>
+<p>For deaths on or after <strong>6 April 2027</strong>, most <strong>unused pension funds and death benefits</strong> will be included in the value of the estate for inheritance tax, under the framework in HMRC's policy paper <a href="https://www.gov.uk/government/publications/inheritance-tax-unused-pension-funds-and-death-benefits">Inheritance Tax: unused pension funds and death benefits</a>. "Unused" simply means money still sitting in the pension that you had not spent. There is no new tax rate and no separate pension tax. The pension is simply added to the pile before the ordinary inheritance tax sums are done.</p>
 
 <p>Here is the before and after at a glance:</p>
 

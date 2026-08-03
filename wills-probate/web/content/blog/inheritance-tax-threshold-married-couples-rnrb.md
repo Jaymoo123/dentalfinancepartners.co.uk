@@ -47,7 +47,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <h2>The four building blocks of the £1,000,000</h2>
 
-<p>Every individual estate starts with the standard <strong>nil-rate band of £325,000</strong>, frozen until April 2030. Tax at 40% (or 36% where 10% or more of the net estate goes to charity) only applies above the available threshold. On top of that sits the <strong>residence nil-rate band (RNRB) of £175,000</strong>, an extra allowance introduced in April 2017 that applies only where a home passes to direct descendants, as set out in <a href="https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band">HMRC's residence nil-rate band guidance</a>.</p>
+<p>Every individual estate starts with the standard <strong>nil-rate band of £325,000</strong>, frozen until 5 April 2031. Tax at 40% (or 36% where 10% or more of the net estate goes to charity) only applies above the available threshold. On top of that sits the <strong>residence nil-rate band (RNRB) of £175,000</strong>, an extra allowance introduced in April 2017 that applies only where a home passes to direct descendants, as set out in <a href="https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band">HMRC's residence nil-rate band guidance</a>.</p>
 
 <table>
 <tr><th>Allowance</th><th>Amount</th><th>Key condition</th></tr>
@@ -104,7 +104,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <p>Here is the trap for wealthier couples. If the estate on death exceeds <strong>£2,000,000</strong>, the residence nil-rate band is reduced by <strong>£1 for every £2 above</strong> that line. For a single person with one RNRB, the allowance is fully lost at £2.35 million. For a surviving spouse claiming two RNRBs (£350,000 combined), the allowance is fully extinguished once the estate reaches <strong>£2.7 million</strong>.</p>
 
-<p>The taper is measured against the estate before reliefs and exemptions, so business or agricultural property can push an estate over the line even where those assets themselves end up relieved. And because everything is stacked into the survivor's estate, the couple structure that saves tax below £2 million can worsen the taper above it. From 6 April 2027, unused pension funds and death benefits will also enter estates for inheritance tax under the <a href="https://www.gov.uk/government/publications/inheritance-tax-on-pensions-liability-reporting-and-payment">pension changes legislated for 2027</a>, which will push more second estates towards and past the taper line. You can estimate that effect with our <a href="/calculators/pensions-iht-2027-estimator">pensions IHT 2027 estimator</a>.</p>
+<p>The taper is measured against the estate before reliefs and exemptions, so business or agricultural property can push an estate over the line even where those assets themselves end up relieved. And because everything is stacked into the survivor's estate, the couple structure that saves tax below £2 million can worsen the taper above it. From 6 April 2027, unused pension funds and death benefits will also enter estates for inheritance tax under the <a href="https://www.gov.uk/government/publications/inheritance-tax-unused-pension-funds-and-death-benefits">pension changes legislated for 2027</a>, which will push more second estates towards and past the taper line. You can estimate that effect with our <a href="/calculators/pensions-iht-2027-estimator">pensions IHT 2027 estimator</a>.</p>
 
 <h2>Worked example: a widow's estate at the second death</h2>
 

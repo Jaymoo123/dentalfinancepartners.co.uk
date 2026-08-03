@@ -62,7 +62,7 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <ol>
 <li><strong>Start with the chargeable value.</strong> Take the value of the estate that is chargeable to inheritance tax: assets minus liabilities, minus reliefs such as business or agricultural relief, minus exemptions, including the charitable gift itself at this stage.</li>
-<li><strong>Deduct the nil-rate band.</strong> Take off the appropriate share of the available nil-rate band, currently £325,000 and frozen until April 2030, adjusted for any transferable nil-rate band from a late spouse and reduced by chargeable lifetime gifts. Note one trap inside the trap: the <strong>residence nil-rate band is not deducted</strong> at this step, so an estate using the RNRB has a higher baseline amount than intuition suggests.</li>
+<li><strong>Deduct the nil-rate band.</strong> Take off the appropriate share of the available nil-rate band, currently £325,000 and frozen until 5 April 2031, adjusted for any transferable nil-rate band from a late spouse and reduced by chargeable lifetime gifts. Note one trap inside the trap: the <strong>residence nil-rate band is not deducted</strong> at this step, so an estate using the RNRB has a higher baseline amount than intuition suggests.</li>
 <li><strong>Add the charitable gift back.</strong> The amount deducted for the charity exemption at step 1 is added back in. The result is the baseline amount, and the gift must be at least 10% of it.</li>
 </ol>
 
