@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/photos/pink-pig-coin-bank-on-brown-wooden-table-5OUMf1Mr5pU"
 category: "Probate Process"
 metaTitle: "Probate Court Fees: The Full 2026 Fee Schedule"
-metaDescription: "The probate application fee in England and Wales is £526 for estates over £5,000 since 13 July 2026. Every court fee listed, plus help with fees and refunds."
+metaDescription: "The probate application fee in England and Wales is £526 for estates over £5,000 since 13 July 2026. Every court fee, plus help with fees and refunds."
 h1: "How much do probate court fees cost?"
 summary: "Probate court fees in England and Wales are fixed and published: £526 to apply where the estate is worth more than £5,000, nothing at or below £5,000, £2 for each extra sealed copy ordered with the application and £16 for copies ordered later. This page sets out the whole non-contentious probate fee schedule, explains the increase that took effect on 13 July 2026, covers help with fees for applicants on low incomes, and shows how Scotland and Northern Ireland charge on a completely different basis."
 keyTakeaways:

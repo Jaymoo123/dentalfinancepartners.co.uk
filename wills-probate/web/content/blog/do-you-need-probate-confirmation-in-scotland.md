@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/photos/historic-edinburgh-castle-perched-on-volcanic-rock-w6BYlhVFrlI"
 category: "Probate Process"
 metaTitle: "Do You Need Confirmation in Scotland? £36,000 Test"
-metaDescription: "Confirmation is only needed if a fund holder asks for it. Why the £36,000 small estate line is a simpler route, not an exemption, and what survivorship changes."
+metaDescription: "Confirmation is needed only when a fund holder asks. Why the £36,000 small estate line is a simpler route, not an exemption, and what survivorship changes."
 h1: "Do you need probate (confirmation) in Scotland?"
 summary: "Scotland does not use probate. The equivalent authority is confirmation, granted by the sheriff court, and the Scottish Government's bereavement guidance is explicit that it need only be obtained if a fund holder such as a bank asks for it. The £36,000 small estate figure is widely misread as a threshold below which nothing is needed; it is not. It marks a simpler route to confirmation, with sheriff clerk help, no bond of caution and no court fee for issuing it. This page sets out when confirmation is genuinely required, when an estate can be settled without it, and why survivorship destinations in Scottish titles work differently from English joint tenancy."
 keyTakeaways:
