@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-20",
+    "generated_at": "2026-08-03",
     "data_through": "2026-04",
     "coverage": "2016-04/2026-04",
     "baseline_period": "2019/20 (Apr 2019 to Mar 2020)",
@@ -11,18 +11,28 @@
         "publisher": "NHS Business Services Authority (NHSBSA)",
         "portal": "https://opendata.nhsbsa.net/dataset/english-contractor-monthly-general-dental-activity",
         "licence": "Open Government Licence v3.0",
-        "retrieved": "2026-07-20",
+        "retrieved": "2026-08-03",
         "attribution": "Data sourced from NHS Business Services Authority under the Open Government Licence v3.0. Free to cite with attribution to Dental Finance Partners."
       }
     ],
-    "notes": "UDA = Unit of Dental Activity. Courses of treatment (COT) are the sum of Band 1, Band 2 (2a+2b+2c), Band 3 and Urgent bands. Recovery Index = monthly UDA / average monthly UDA in 2019/20 * 100 (100 = full pre-Covid baseline). Regional figures use ICB commissioner groupings as at each monthly submission. Data cover NHS England contracted dental activity only; private dentistry is not included."
+    "latest_month": "2026-04",
+    "last_settled_month": "2026-03",
+    "provisional_months": [
+      "2026-04"
+    ],
+    "regional_window": [
+      "2025-04",
+      "2026-03"
+    ],
+    "notes": "UDA = Unit of Dental Activity. Courses of treatment (COT) are the sum of the Band 1, Band 2, Band 3 and Urgent bands. NHSBSA reported Band 2 as a single column up to March 2023 and as 2A + 2B + 2C from April 2023; both forms are read and summed to one Band 2 total. Recovery Index = monthly UDA / average monthly UDA in 2019/20 * 100 (100 = full pre-Covid baseline). Headline figures use the most recent SETTLED month. NHSBSA also publishes the current in-year month as a separate provisional file, which is included in the charted series but flagged provisional and excluded from the headline. Regional figures use ICB commissioner groupings as at each monthly submission and cover the trailing twelve SETTLED months (see regional_window). Data cover NHS England contracted dental activity only; private dentistry is not included."
   },
   "headline": {
-    "last_settled_month": "2026-04",
-    "last_month_uda": 6420500,
-    "last_month_cot": 2792195,
-    "last_month_recovery_index": 100.3,
-    "yoy_pct_uda": 15.5,
+    "last_settled_month": "2026-03",
+    "last_month_uda": 6621885,
+    "last_month_cot": 3062029,
+    "last_month_recovery_index": 103.5,
+    "yoy_pct_uda": 4.7,
+    "yoy_basis": "Rolling 12 settled months (April 2025 to March 2026) against the preceding 12 (April 2024 to March 2025).",
     "baseline_monthly_avg_uda": 6399632,
     "months_below_90": 50,
     "regions_above_90": 0,
@@ -33,9 +43,9 @@
       {
         "month": "2016-04",
         "uda": 6469668,
-        "cot": 2298478,
+        "cot": 3147414,
         "band1": 1885291,
-        "band2": 0,
+        "band2": 848936,
         "band3": 140701,
         "urgent": 272486,
         "recovery_index": 101.1
@@ -43,9 +53,9 @@
       {
         "month": "2016-05",
         "uda": 6364706,
-        "cot": 2116540,
+        "cot": 2936185,
         "band1": 1699815,
-        "band2": 0,
+        "band2": 819645,
         "band3": 155899,
         "urgent": 260826,
         "recovery_index": 99.5
@@ -53,9 +63,9 @@
       {
         "month": "2016-06",
         "uda": 6855795,
-        "cot": 2253221,
+        "cot": 3144149,
         "band1": 1815665,
-        "band2": 0,
+        "band2": 890928,
         "band3": 168493,
         "urgent": 269063,
         "recovery_index": 107.1
@@ -63,9 +73,9 @@
       {
         "month": "2016-07",
         "uda": 6355647,
-        "cot": 2111096,
+        "cot": 2915838,
         "band1": 1694387,
-        "band2": 0,
+        "band2": 804742,
         "band3": 159753,
         "urgent": 256956,
         "recovery_index": 99.3
@@ -73,9 +83,9 @@
       {
         "month": "2016-08",
         "uda": 6636251,
-        "cot": 2395984,
+        "cot": 3236668,
         "band1": 1977109,
-        "band2": 0,
+        "band2": 840684,
         "band3": 149193,
         "urgent": 269682,
         "recovery_index": 103.7
@@ -83,9 +93,9 @@
       {
         "month": "2016-09",
         "uda": 6721130,
-        "cot": 2253114,
+        "cot": 3130322,
         "band1": 1817008,
-        "band2": 0,
+        "band2": 877208,
         "band3": 159746,
         "urgent": 276360,
         "recovery_index": 105.0
@@ -93,9 +103,9 @@
       {
         "month": "2016-10",
         "uda": 6920504,
-        "cot": 2360504,
+        "cot": 3237042,
         "band1": 1929899,
-        "band2": 0,
+        "band2": 876538,
         "band3": 168614,
         "urgent": 261991,
         "recovery_index": 108.1
@@ -103,9 +113,9 @@
       {
         "month": "2016-11",
         "uda": 7238984,
-        "cot": 2331589,
+        "cot": 3274756,
         "band1": 1870951,
-        "band2": 0,
+        "band2": 943167,
         "band3": 181603,
         "urgent": 279035,
         "recovery_index": 113.1
@@ -113,9 +123,9 @@
       {
         "month": "2016-12",
         "uda": 6158049,
-        "cot": 2010020,
+        "cot": 2784394,
         "band1": 1566798,
-        "band2": 0,
+        "band2": 774374,
         "band3": 158661,
         "urgent": 284561,
         "recovery_index": 96.2
@@ -123,9 +133,9 @@
       {
         "month": "2017-01",
         "uda": 6650771,
-        "cot": 2254235,
+        "cot": 3173230,
         "band1": 1828954,
-        "band2": 0,
+        "band2": 918995,
         "band3": 141739,
         "urgent": 283542,
         "recovery_index": 103.9
@@ -133,9 +143,9 @@
       {
         "month": "2017-02",
         "uda": 7321688,
-        "cot": 2429256,
+        "cot": 3360288,
         "band1": 1996226,
-        "band2": 0,
+        "band2": 931032,
         "band3": 184231,
         "urgent": 248799,
         "recovery_index": 114.4
@@ -143,9 +153,9 @@
       {
         "month": "2017-03",
         "uda": 8295310,
-        "cot": 2464957,
+        "cot": 3515496,
         "band1": 1943850,
-        "band2": 0,
+        "band2": 1050539,
         "band3": 235879,
         "urgent": 285228,
         "recovery_index": 129.6
@@ -153,9 +163,9 @@
       {
         "month": "2017-04",
         "uda": 5615352,
-        "cot": 2109643,
+        "cot": 2817062,
         "band1": 1748127,
-        "band2": 0,
+        "band2": 707419,
         "band3": 119652,
         "urgent": 241864,
         "recovery_index": 87.7
@@ -163,9 +173,9 @@
       {
         "month": "2017-05",
         "uda": 6587593,
-        "cot": 2265586,
+        "cot": 3121258,
         "band1": 1839230,
-        "band2": 0,
+        "band2": 855672,
         "band3": 153128,
         "urgent": 273228,
         "recovery_index": 102.9
@@ -173,9 +183,9 @@
       {
         "month": "2017-06",
         "uda": 6670557,
-        "cot": 2213004,
+        "cot": 3074130,
         "band1": 1785624,
-        "band2": 0,
+        "band2": 861126,
         "band3": 163983,
         "urgent": 263397,
         "recovery_index": 104.2
@@ -183,9 +193,9 @@
       {
         "month": "2017-07",
         "uda": 6424775,
-        "cot": 2189592,
+        "cot": 3002224,
         "band1": 1771937,
-        "band2": 0,
+        "band2": 812632,
         "band3": 157298,
         "urgent": 260357,
         "recovery_index": 100.4
@@ -193,9 +203,9 @@
       {
         "month": "2017-08",
         "uda": 6630306,
-        "cot": 2438159,
+        "cot": 3279087,
         "band1": 2019546,
-        "band2": 0,
+        "band2": 840928,
         "band3": 145280,
         "urgent": 273333,
         "recovery_index": 103.6
@@ -203,9 +213,9 @@
       {
         "month": "2017-09",
         "uda": 6406622,
-        "cot": 2208909,
+        "cot": 3044082,
         "band1": 1791123,
-        "band2": 0,
+        "band2": 835173,
         "band3": 147370,
         "urgent": 270416,
         "recovery_index": 100.1
@@ -213,9 +223,9 @@
       {
         "month": "2017-10",
         "uda": 7220722,
-        "cot": 2477092,
+        "cot": 3400046,
         "band1": 2032507,
-        "band2": 0,
+        "band2": 922954,
         "band3": 172811,
         "urgent": 271774,
         "recovery_index": 112.8
@@ -223,9 +233,9 @@
       {
         "month": "2017-11",
         "uda": 7196766,
-        "cot": 2357667,
+        "cot": 3294321,
         "band1": 1902188,
-        "band2": 0,
+        "band2": 936654,
         "band3": 177894,
         "urgent": 277585,
         "recovery_index": 112.5
@@ -233,9 +243,9 @@
       {
         "month": "2017-12",
         "uda": 5702866,
-        "cot": 1868944,
+        "cot": 2584193,
         "band1": 1452448,
-        "band2": 0,
+        "band2": 715249,
         "band3": 147123,
         "urgent": 269373,
         "recovery_index": 89.1
@@ -243,9 +253,9 @@
       {
         "month": "2018-01",
         "uda": 6944883,
-        "cot": 2403952,
+        "cot": 3359654,
         "band1": 1965283,
-        "band2": 0,
+        "band2": 955702,
         "band3": 144912,
         "urgent": 293757,
         "recovery_index": 108.5
@@ -253,9 +263,9 @@
       {
         "month": "2018-02",
         "uda": 7175239,
-        "cot": 2422785,
+        "cot": 3337755,
         "band1": 2000073,
-        "band2": 0,
+        "band2": 914970,
         "band3": 175977,
         "urgent": 246735,
         "recovery_index": 112.1
@@ -263,9 +273,9 @@
       {
         "month": "2018-03",
         "uda": 7696539,
-        "cot": 2312623,
+        "cot": 3270466,
         "band1": 1821217,
-        "band2": 0,
+        "band2": 957843,
         "band3": 221217,
         "urgent": 270189,
         "recovery_index": 120.3
@@ -273,9 +283,9 @@
       {
         "month": "2018-04",
         "uda": 6046399,
-        "cot": 2307046,
+        "cot": 3088227,
         "band1": 1927853,
-        "band2": 0,
+        "band2": 781181,
         "band3": 120615,
         "urgent": 258578,
         "recovery_index": 94.5
@@ -283,9 +293,9 @@
       {
         "month": "2018-05",
         "uda": 6642458,
-        "cot": 2315521,
+        "cot": 3158588,
         "band1": 1887507,
-        "band2": 0,
+        "band2": 843067,
         "band3": 156701,
         "urgent": 271313,
         "recovery_index": 103.8
@@ -293,9 +303,9 @@
       {
         "month": "2018-06",
         "uda": 6336382,
-        "cot": 2146598,
+        "cot": 2963941,
         "band1": 1735984,
-        "band2": 0,
+        "band2": 817343,
         "band3": 151528,
         "urgent": 259086,
         "recovery_index": 99.0
@@ -303,9 +313,9 @@
       {
         "month": "2018-07",
         "uda": 6672174,
-        "cot": 2299164,
+        "cot": 3137462,
         "band1": 1869134,
-        "band2": 0,
+        "band2": 838298,
         "band3": 162360,
         "urgent": 267670,
         "recovery_index": 104.3
@@ -313,9 +323,9 @@
       {
         "month": "2018-08",
         "uda": 6473103,
-        "cot": 2438612,
+        "cot": 3245520,
         "band1": 2025626,
-        "band2": 0,
+        "band2": 806908,
         "band3": 140035,
         "urgent": 272951,
         "recovery_index": 101.1
@@ -323,9 +333,9 @@
       {
         "month": "2018-09",
         "uda": 6126010,
-        "cot": 2159747,
+        "cot": 2953289,
         "band1": 1757623,
-        "band2": 0,
+        "band2": 793542,
         "band3": 137674,
         "urgent": 264450,
         "recovery_index": 95.7
@@ -333,9 +343,9 @@
       {
         "month": "2018-10",
         "uda": 7526374,
-        "cot": 2636716,
+        "cot": 3590776,
         "band1": 2168723,
-        "band2": 0,
+        "band2": 954060,
         "band3": 177001,
         "urgent": 290992,
         "recovery_index": 117.6
@@ -343,9 +353,9 @@
       {
         "month": "2018-11",
         "uda": 7091219,
-        "cot": 2397382,
+        "cot": 3309743,
         "band1": 1939458,
-        "band2": 0,
+        "band2": 912361,
         "band3": 171000,
         "urgent": 286924,
         "recovery_index": 110.8
@@ -353,9 +363,9 @@
       {
         "month": "2018-12",
         "uda": 5610092,
-        "cot": 1874840,
+        "cot": 2573941,
         "band1": 1450627,
-        "band2": 0,
+        "band2": 699101,
         "band3": 142206,
         "urgent": 282007,
         "recovery_index": 87.7
@@ -363,9 +373,9 @@
       {
         "month": "2019-01",
         "uda": 6910006,
-        "cot": 2476077,
+        "cot": 3410952,
         "band1": 2033514,
-        "band2": 0,
+        "band2": 934875,
         "band3": 140610,
         "urgent": 301953,
         "recovery_index": 108.0
@@ -373,9 +383,9 @@
       {
         "month": "2019-02",
         "uda": 7196415,
-        "cot": 2491188,
+        "cot": 3396579,
         "band1": 2062773,
-        "band2": 0,
+        "band2": 905391,
         "band3": 174212,
         "urgent": 254203,
         "recovery_index": 112.5
@@ -383,9 +393,9 @@
       {
         "month": "2019-03",
         "uda": 7576153,
-        "cot": 2344749,
+        "cot": 3293205,
         "band1": 1861865,
-        "band2": 0,
+        "band2": 948456,
         "band3": 209804,
         "urgent": 273080,
         "recovery_index": 118.4
@@ -393,9 +403,9 @@
       {
         "month": "2019-04",
         "uda": 6164057,
-        "cot": 2378959,
+        "cot": 3144983,
         "band1": 1979405,
-        "band2": 0,
+        "band2": 766024,
         "band3": 128619,
         "urgent": 270935,
         "recovery_index": 96.3
@@ -403,9 +413,9 @@
       {
         "month": "2019-05",
         "uda": 6406325,
-        "cot": 2323519,
+        "cot": 3137158,
         "band1": 1895046,
-        "band2": 0,
+        "band2": 813639,
         "band3": 142421,
         "urgent": 286052,
         "recovery_index": 100.1
@@ -413,9 +423,9 @@
       {
         "month": "2019-06",
         "uda": 6031358,
-        "cot": 2098995,
+        "cot": 2870928,
         "band1": 1694446,
-        "band2": 0,
+        "band2": 771933,
         "band3": 140520,
         "urgent": 264029,
         "recovery_index": 94.2
@@ -423,9 +433,9 @@
       {
         "month": "2019-07",
         "uda": 6916595,
-        "cot": 2431254,
+        "cot": 3294492,
         "band1": 1976087,
-        "band2": 0,
+        "band2": 863238,
         "band3": 165310,
         "urgent": 289857,
         "recovery_index": 108.1
@@ -433,9 +443,9 @@
       {
         "month": "2019-08",
         "uda": 6141648,
-        "cot": 2372506,
+        "cot": 3123199,
         "band1": 1972434,
-        "band2": 0,
+        "band2": 750693,
         "band3": 131545,
         "urgent": 268527,
         "recovery_index": 96.0
@@ -443,9 +453,9 @@
       {
         "month": "2019-09",
         "uda": 6335581,
-        "cot": 2287974,
+        "cot": 3094589,
         "band1": 1865478,
-        "band2": 0,
+        "band2": 806615,
         "band3": 141054,
         "urgent": 281442,
         "recovery_index": 99.0
@@ -453,9 +463,9 @@
       {
         "month": "2019-10",
         "uda": 7350044,
-        "cot": 2661657,
+        "cot": 3577341,
         "band1": 2199850,
-        "band2": 0,
+        "band2": 915684,
         "band3": 169144,
         "urgent": 292663,
         "recovery_index": 114.9
@@ -463,9 +473,9 @@
       {
         "month": "2019-11",
         "uda": 6630197,
-        "cot": 2301201,
+        "cot": 3142142,
         "band1": 1863988,
-        "band2": 0,
+        "band2": 840941,
         "band3": 157610,
         "urgent": 279603,
         "recovery_index": 103.6
@@ -473,9 +483,9 @@
       {
         "month": "2019-12",
         "uda": 5678611,
-        "cot": 1956795,
+        "cot": 2656118,
         "band1": 1522459,
-        "band2": 0,
+        "band2": 699323,
         "band3": 140931,
         "urgent": 293405,
         "recovery_index": 88.7
@@ -483,9 +493,9 @@
       {
         "month": "2020-01",
         "uda": 6822695,
-        "cot": 2509108,
+        "cot": 3414246,
         "band1": 2063261,
-        "band2": 0,
+        "band2": 905138,
         "band3": 137720,
         "urgent": 308127,
         "recovery_index": 106.6
@@ -493,9 +503,9 @@
       {
         "month": "2020-02",
         "uda": 7168060,
-        "cot": 2531792,
+        "cot": 3422346,
         "band1": 2097148,
-        "band2": 0,
+        "band2": 890554,
         "band3": 171814,
         "urgent": 262830,
         "recovery_index": 112.0
@@ -503,9 +513,9 @@
       {
         "month": "2020-03",
         "uda": 5150410,
-        "cot": 1584306,
+        "cot": 2205188,
         "band1": 1205166,
-        "band2": 0,
+        "band2": 620882,
         "band3": 149011,
         "urgent": 230129,
         "recovery_index": 80.5
@@ -513,9 +523,9 @@
       {
         "month": "2020-04",
         "uda": 44367,
-        "cot": 21257,
+        "cot": 24107,
         "band1": 4816,
-        "band2": 0,
+        "band2": 2850,
         "band3": 1024,
         "urgent": 15417,
         "recovery_index": 0.7
@@ -523,9 +533,9 @@
       {
         "month": "2020-05",
         "uda": 49736,
-        "cot": 34455,
+        "cot": 36168,
         "band1": 2341,
-        "band2": 0,
+        "band2": 1713,
         "band3": 355,
         "urgent": 31759,
         "recovery_index": 0.8
@@ -533,9 +543,9 @@
       {
         "month": "2020-06",
         "uda": 477662,
-        "cot": 265893,
+        "cot": 302518,
         "band1": 45275,
-        "band2": 0,
+        "band2": 36625,
         "band3": 5170,
         "urgent": 215448,
         "recovery_index": 7.5
@@ -543,9 +553,9 @@
       {
         "month": "2020-07",
         "uda": 1296491,
-        "cot": 610302,
+        "cot": 734277,
         "band1": 198520,
-        "band2": 0,
+        "band2": 123975,
         "band3": 21100,
         "urgent": 390682,
         "recovery_index": 20.3
@@ -553,9 +563,9 @@
       {
         "month": "2020-08",
         "uda": 1617353,
-        "cot": 712063,
+        "cot": 882019,
         "band1": 340989,
-        "band2": 0,
+        "band2": 169956,
         "band3": 29262,
         "urgent": 341812,
         "recovery_index": 25.3
@@ -563,9 +573,9 @@
       {
         "month": "2020-09",
         "uda": 2025344,
-        "cot": 830149,
+        "cot": 1056505,
         "band1": 399531,
-        "band2": 0,
+        "band2": 226356,
         "band3": 39425,
         "urgent": 391193,
         "recovery_index": 31.6
@@ -573,9 +583,9 @@
       {
         "month": "2020-10",
         "uda": 2256824,
-        "cot": 877467,
+        "cot": 1142905,
         "band1": 452107,
-        "band2": 0,
+        "band2": 265438,
         "band3": 45272,
         "urgent": 380088,
         "recovery_index": 35.3
@@ -583,9 +593,9 @@
       {
         "month": "2020-11",
         "uda": 2314674,
-        "cot": 809706,
+        "cot": 1105128,
         "band1": 396947,
-        "band2": 0,
+        "band2": 295422,
         "band3": 49281,
         "urgent": 363478,
         "recovery_index": 36.2
@@ -593,9 +603,9 @@
       {
         "month": "2020-12",
         "uda": 2153708,
-        "cot": 775712,
+        "cot": 1045340,
         "band1": 375018,
-        "band2": 0,
+        "band2": 269628,
         "band3": 44672,
         "urgent": 356022,
         "recovery_index": 33.7
@@ -603,9 +613,9 @@
       {
         "month": "2021-01",
         "uda": 3537228,
-        "cot": 1101438,
+        "cot": 1616522,
         "band1": 712180,
-        "band2": 0,
+        "band2": 515084,
         "band3": 74199,
         "urgent": 315059,
         "recovery_index": 55.3
@@ -613,9 +623,9 @@
       {
         "month": "2021-02",
         "uda": 3998832,
-        "cot": 1343590,
+        "cot": 1863905,
         "band1": 981972,
-        "band2": 0,
+        "band2": 520315,
         "band3": 93722,
         "urgent": 267896,
         "recovery_index": 62.5
@@ -623,9 +633,9 @@
       {
         "month": "2021-03",
         "uda": 3326267,
-        "cot": 1156645,
+        "cot": 1588733,
         "band1": 803225,
-        "band2": 0,
+        "band2": 432088,
         "band3": 73521,
         "urgent": 279899,
         "recovery_index": 52.0
@@ -633,9 +643,9 @@
       {
         "month": "2021-04",
         "uda": 4624481,
-        "cot": 1526066,
+        "cot": 2111954,
         "band1": 1115241,
-        "band2": 0,
+        "band2": 585888,
         "band3": 115476,
         "urgent": 295349,
         "recovery_index": 72.3
@@ -643,9 +653,9 @@
       {
         "month": "2021-05",
         "uda": 4057795,
-        "cot": 1272962,
+        "cot": 1806304,
         "band1": 901998,
-        "band2": 0,
+        "band2": 533342,
         "band3": 101835,
         "urgent": 269129,
         "recovery_index": 63.4
@@ -653,9 +663,9 @@
       {
         "month": "2021-06",
         "uda": 4662915,
-        "cot": 1490042,
+        "cot": 2094849,
         "band1": 1085390,
-        "band2": 0,
+        "band2": 604807,
         "band3": 117397,
         "urgent": 287255,
         "recovery_index": 72.9
@@ -663,9 +673,9 @@
       {
         "month": "2021-07",
         "uda": 4303286,
-        "cot": 1361922,
+        "cot": 1908381,
         "band1": 974124,
-        "band2": 0,
+        "band2": 546459,
         "band3": 112556,
         "urgent": 275242,
         "recovery_index": 67.2
@@ -673,9 +683,9 @@
       {
         "month": "2021-08",
         "uda": 3957108,
-        "cot": 1408381,
+        "cot": 1900686,
         "band1": 1051760,
-        "band2": 0,
+        "band2": 492305,
         "band3": 91738,
         "urgent": 264883,
         "recovery_index": 61.8
@@ -683,9 +693,9 @@
       {
         "month": "2021-09",
         "uda": 3786447,
-        "cot": 1305661,
+        "cot": 1789528,
         "band1": 945746,
-        "band2": 0,
+        "band2": 483867,
         "band3": 87890,
         "urgent": 272025,
         "recovery_index": 59.2
@@ -693,9 +703,9 @@
       {
         "month": "2021-10",
         "uda": 4963326,
-        "cot": 1662991,
+        "cot": 2288738,
         "band1": 1251118,
-        "band2": 0,
+        "band2": 625747,
         "band3": 122959,
         "urgent": 288914,
         "recovery_index": 77.6
@@ -703,9 +713,9 @@
       {
         "month": "2021-11",
         "uda": 4903474,
-        "cot": 1600089,
+        "cot": 2242088,
         "band1": 1182016,
-        "band2": 0,
+        "band2": 641999,
         "band3": 118666,
         "urgent": 299407,
         "recovery_index": 76.6
@@ -713,9 +723,9 @@
       {
         "month": "2021-12",
         "uda": 3660216,
-        "cot": 1227078,
+        "cot": 1692360,
         "band1": 855669,
-        "band2": 0,
+        "band2": 465282,
         "band3": 88400,
         "urgent": 283009,
         "recovery_index": 57.2
@@ -723,9 +733,9 @@
       {
         "month": "2022-01",
         "uda": 4907830,
-        "cot": 1620815,
+        "cot": 2298453,
         "band1": 1208461,
-        "band2": 0,
+        "band2": 677638,
         "band3": 107247,
         "urgent": 305107,
         "recovery_index": 76.7
@@ -733,9 +743,9 @@
       {
         "month": "2022-02",
         "uda": 5325837,
-        "cot": 1781735,
+        "cot": 2476278,
         "band1": 1373732,
-        "band2": 0,
+        "band2": 694543,
         "band3": 126305,
         "urgent": 281698,
         "recovery_index": 83.2
@@ -743,9 +753,9 @@
       {
         "month": "2022-03",
         "uda": 5829541,
-        "cot": 1816159,
+        "cot": 2575548,
         "band1": 1343554,
-        "band2": 0,
+        "band2": 759389,
         "band3": 150626,
         "urgent": 321979,
         "recovery_index": 91.1
@@ -753,9 +763,9 @@
       {
         "month": "2022-04",
         "uda": 4791255,
-        "cot": 1696141,
+        "cot": 2301866,
         "band1": 1320182,
-        "band2": 0,
+        "band2": 605725,
         "band3": 110586,
         "urgent": 265373,
         "recovery_index": 74.9
@@ -763,9 +773,9 @@
       {
         "month": "2022-05",
         "uda": 5332307,
-        "cot": 1808286,
+        "cot": 2512467,
         "band1": 1395516,
-        "band2": 0,
+        "band2": 704181,
         "band3": 121789,
         "urgent": 290981,
         "recovery_index": 83.3
@@ -773,9 +783,9 @@
       {
         "month": "2022-06",
         "uda": 4992381,
-        "cot": 1634899,
+        "cot": 2287728,
         "band1": 1241493,
-        "band2": 0,
+        "band2": 652829,
         "band3": 121047,
         "urgent": 272359,
         "recovery_index": 78.0
@@ -783,9 +793,9 @@
       {
         "month": "2022-07",
         "uda": 4962702,
-        "cot": 1659167,
+        "cot": 2299076,
         "band1": 1273846,
-        "band2": 0,
+        "band2": 639909,
         "band3": 119920,
         "urgent": 265401,
         "recovery_index": 77.5
@@ -793,9 +803,9 @@
       {
         "month": "2022-08",
         "uda": 5260562,
-        "cot": 1937983,
+        "cot": 2607647,
         "band1": 1552823,
-        "band2": 0,
+        "band2": 669664,
         "band3": 113408,
         "urgent": 271752,
         "recovery_index": 82.2
@@ -803,9 +813,9 @@
       {
         "month": "2022-09",
         "uda": 5242876,
-        "cot": 1828950,
+        "cot": 2515950,
         "band1": 1426563,
-        "band2": 0,
+        "band2": 687000,
         "band3": 116714,
         "urgent": 285673,
         "recovery_index": 81.9
@@ -813,9 +823,9 @@
       {
         "month": "2022-10",
         "uda": 5595338,
-        "cot": 1974635,
+        "cot": 2700921,
         "band1": 1575743,
-        "band2": 0,
+        "band2": 726286,
         "band3": 124818,
         "urgent": 274074,
         "recovery_index": 87.4
@@ -823,9 +833,9 @@
       {
         "month": "2022-11",
         "uda": 5990249,
-        "cot": 1998365,
+        "cot": 2782608,
         "band1": 1563681,
-        "band2": 0,
+        "band2": 784243,
         "band3": 140160,
         "urgent": 294524,
         "recovery_index": 93.6
@@ -833,9 +843,9 @@
       {
         "month": "2022-12",
         "uda": 4989321,
-        "cot": 1611903,
+        "cot": 2228257,
         "band1": 1212599,
-        "band2": 0,
+        "band2": 616354,
         "band3": 115483,
         "urgent": 283821,
         "recovery_index": 78.0
@@ -843,9 +853,9 @@
       {
         "month": "2023-01",
         "uda": 5920530,
-        "cot": 1966424,
+        "cot": 2741578,
         "band1": 1555676,
-        "band2": 0,
+        "band2": 775154,
         "band3": 110190,
         "urgent": 300558,
         "recovery_index": 92.5
@@ -853,9 +863,9 @@
       {
         "month": "2023-02",
         "uda": 6411325,
-        "cot": 2074646,
+        "cot": 2859441,
         "band1": 1672916,
-        "band2": 0,
+        "band2": 784795,
         "band3": 137097,
         "urgent": 264633,
         "recovery_index": 100.2
@@ -863,9 +873,9 @@
       {
         "month": "2023-03",
         "uda": 7395279,
-        "cot": 2150728,
+        "cot": 3048740,
         "band1": 1663530,
-        "band2": 0,
+        "band2": 898012,
         "band3": 179509,
         "urgent": 307689,
         "recovery_index": 115.6
@@ -1238,32 +1248,33 @@
         "band2": 764051,
         "band3": 98818,
         "urgent": 11773,
-        "recovery_index": 100.3
+        "recovery_index": 100.3,
+        "provisional": true
       }
     ],
     "regional": [
       {
         "commissioner": "Greater Manchester ICB",
-        "uda_ttm": 4921852,
-        "cot_ttm": 2409939,
+        "uda_ttm": 4522272,
+        "cot_ttm": 2234239,
         "recovery_index": null
       },
       {
         "commissioner": "North East and North Cumbria ICB",
-        "uda_ttm": 4265023,
-        "cot_ttm": 2102333,
+        "uda_ttm": 3942183,
+        "cot_ttm": 1960946,
         "recovery_index": null
       },
       {
         "commissioner": "Cheshire and Merseyside ICB",
-        "uda_ttm": 4091620,
-        "cot_ttm": 1989472,
+        "uda_ttm": 3775464,
+        "cot_ttm": 1852250,
         "recovery_index": null
       },
       {
         "commissioner": "West Yorkshire ICB",
-        "uda_ttm": 3793144,
-        "cot_ttm": 1940224,
+        "uda_ttm": 3495646,
+        "cot_ttm": 1801491,
         "recovery_index": null
       },
       {
@@ -1274,32 +1285,32 @@
       },
       {
         "commissioner": "South East London ICB",
-        "uda_ttm": 2812325,
-        "cot_ttm": 1096257,
+        "uda_ttm": 2585268,
+        "cot_ttm": 1015491,
         "recovery_index": null
       },
       {
         "commissioner": "North East London ICB",
-        "uda_ttm": 2689722,
-        "cot_ttm": 1073345,
+        "uda_ttm": 2469761,
+        "cot_ttm": 993319,
         "recovery_index": null
       },
       {
         "commissioner": "Lancashire and South Cumbria ICB",
-        "uda_ttm": 2678457,
-        "cot_ttm": 1302728,
+        "uda_ttm": 2460909,
+        "cot_ttm": 1207390,
         "recovery_index": null
       },
       {
         "commissioner": "Kent And Medway ICB",
-        "uda_ttm": 2556309,
-        "cot_ttm": 1240594,
+        "uda_ttm": 2349769,
+        "cot_ttm": 1150399,
         "recovery_index": null
       },
       {
         "commissioner": "South Yorkshire ICB",
-        "uda_ttm": 2500176,
-        "cot_ttm": 1242090,
+        "uda_ttm": 2299034,
+        "cot_ttm": 1151949,
         "recovery_index": null
       },
       {
@@ -1309,21 +1320,15 @@
         "recovery_index": null
       },
       {
+        "commissioner": "Hampshire and Isle Of Wight ICB",
+        "uda_ttm": 2132012,
+        "cot_ttm": 1060139,
+        "recovery_index": null
+      },
+      {
         "commissioner": "Humber and North Yorkshire ICB",
-        "uda_ttm": 2207004,
-        "cot_ttm": 1165861,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Birmingham and Solihull ICB",
-        "uda_ttm": 2169193,
-        "cot_ttm": 950293,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Black Country ICB",
-        "uda_ttm": 2106412,
-        "cot_ttm": 928890,
+        "uda_ttm": 2034301,
+        "cot_ttm": 1083371,
         "recovery_index": null
       },
       {
@@ -1333,27 +1338,21 @@
         "recovery_index": null
       },
       {
+        "commissioner": "Birmingham and Solihull ICB",
+        "uda_ttm": 1976949,
+        "cot_ttm": 875757,
+        "recovery_index": null
+      },
+      {
         "commissioner": "Buckinghamshire, Oxfordshire and Berkshire West ICB",
         "uda_ttm": 1954004,
         "cot_ttm": 1040609,
         "recovery_index": null
       },
       {
-        "commissioner": "Staffordshire and Stoke-on-Trent ICB",
-        "uda_ttm": 1829307,
-        "cot_ttm": 891415,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "South West London ICB",
-        "uda_ttm": 1824590,
-        "cot_ttm": 785451,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Nottingham and Nottinghamshire ICB",
-        "uda_ttm": 1824182,
-        "cot_ttm": 888099,
+        "commissioner": "Black Country ICB",
+        "uda_ttm": 1917614,
+        "cot_ttm": 856303,
         "recovery_index": null
       },
       {
@@ -1369,33 +1368,39 @@
         "recovery_index": null
       },
       {
-        "commissioner": "Leicester, Leicestershire and Rutland ICB",
-        "uda_ttm": 1630101,
-        "cot_ttm": 845402,
+        "commissioner": "Nottingham and Nottinghamshire ICB",
+        "uda_ttm": 1677312,
+        "cot_ttm": 822682,
         "recovery_index": null
       },
       {
-        "commissioner": "Hampshire and Isle Of Wight ICB",
-        "uda_ttm": 1581663,
-        "cot_ttm": 786127,
+        "commissioner": "South West London ICB",
+        "uda_ttm": 1676571,
+        "cot_ttm": 726912,
+        "recovery_index": null
+      },
+      {
+        "commissioner": "Staffordshire and Stoke-on-Trent ICB",
+        "uda_ttm": 1668140,
+        "cot_ttm": 820508,
+        "recovery_index": null
+      },
+      {
+        "commissioner": "Leicester, Leicestershire and Rutland ICB",
+        "uda_ttm": 1494249,
+        "cot_ttm": 781880,
         "recovery_index": null
       },
       {
         "commissioner": "Derby and Derbyshire ICB",
-        "uda_ttm": 1473861,
-        "cot_ttm": 768243,
+        "uda_ttm": 1351700,
+        "cot_ttm": 711306,
         "recovery_index": null
       },
       {
         "commissioner": "Coventry and Warwickshire ICB",
-        "uda_ttm": 1467024,
-        "cot_ttm": 734338,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Bristol, North Somerset and South Gloucestershire ICB",
-        "uda_ttm": 1232039,
-        "cot_ttm": 650712,
+        "uda_ttm": 1333122,
+        "cot_ttm": 675531,
         "recovery_index": null
       },
       {
@@ -1408,6 +1413,12 @@
         "commissioner": "Bedfordshire, Luton and Milton Keynes ICB",
         "uda_ttm": 1162860,
         "cot_ttm": 598334,
+        "recovery_index": null
+      },
+      {
+        "commissioner": "Bristol, North Somerset and South Gloucestershire ICB",
+        "uda_ttm": 1132174,
+        "cot_ttm": 603223,
         "recovery_index": null
       },
       {
@@ -1424,26 +1435,8 @@
       },
       {
         "commissioner": "Herefordshire and Worcestershire ICB",
-        "uda_ttm": 997709,
-        "cot_ttm": 493466,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Bath and North East Somerset, Swindon And Wiltshire ICB",
-        "uda_ttm": 984757,
-        "cot_ttm": 538675,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Lincolnshire ICB",
-        "uda_ttm": 916050,
-        "cot_ttm": 484515,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "Northamptonshire ICB",
-        "uda_ttm": 915869,
-        "cot_ttm": 461229,
+        "uda_ttm": 914483,
+        "cot_ttm": 457471,
         "recovery_index": null
       },
       {
@@ -1453,15 +1446,27 @@
         "recovery_index": null
       },
       {
-        "commissioner": "Devon ICB",
-        "uda_ttm": 902926,
-        "cot_ttm": 451330,
+        "commissioner": "Bath and North East Somerset, Swindon And Wiltshire ICB",
+        "uda_ttm": 905091,
+        "cot_ttm": 497939,
         "recovery_index": null
       },
       {
-        "commissioner": "Dorset ICB",
-        "uda_ttm": 866889,
-        "cot_ttm": 442880,
+        "commissioner": "Lincolnshire ICB",
+        "uda_ttm": 840269,
+        "cot_ttm": 447743,
+        "recovery_index": null
+      },
+      {
+        "commissioner": "Northamptonshire ICB",
+        "uda_ttm": 839970,
+        "cot_ttm": 427256,
+        "recovery_index": null
+      },
+      {
+        "commissioner": "Devon ICB",
+        "uda_ttm": 829623,
+        "cot_ttm": 418240,
         "recovery_index": null
       },
       {
@@ -1471,69 +1476,33 @@
         "recovery_index": null
       },
       {
-        "commissioner": "NHS Hampshire and Isle Of Wight ICB",
-        "uda_ttm": 775725,
-        "cot_ttm": 371362,
+        "commissioner": "Dorset ICB",
+        "uda_ttm": 801524,
+        "cot_ttm": 412515,
         "recovery_index": null
       },
       {
         "commissioner": "Shropshire, Telford and Wrekin ICB",
-        "uda_ttm": 748682,
-        "cot_ttm": 381417,
+        "uda_ttm": 684382,
+        "cot_ttm": 351473,
         "recovery_index": null
       },
       {
         "commissioner": "Gloucestershire ICB",
-        "uda_ttm": 639327,
-        "cot_ttm": 329445,
+        "uda_ttm": 588339,
+        "cot_ttm": 305754,
         "recovery_index": null
       },
       {
         "commissioner": "Cornwall and the Isles Of Scilly ICB",
-        "uda_ttm": 491271,
-        "cot_ttm": 260807,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "NHS West and North London ICB",
-        "uda_ttm": 416710,
-        "cot_ttm": 144014,
+        "uda_ttm": 455574,
+        "cot_ttm": 243640,
         "recovery_index": null
       },
       {
         "commissioner": "Somerset ICB",
-        "uda_ttm": 397009,
-        "cot_ttm": 206605,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "NHS Central East ICB",
-        "uda_ttm": 332444,
-        "cot_ttm": 159204,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "NHS Surrey and Sussex ICB",
-        "uda_ttm": 295707,
-        "cot_ttm": 134877,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "NHS Essex ICB",
-        "uda_ttm": 226158,
-        "cot_ttm": 98942,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "NHS Thames Valley ICB",
-        "uda_ttm": 222882,
-        "cot_ttm": 104696,
-        "recovery_index": null
-      },
-      {
-        "commissioner": "NHS Norfolk and Suffolk ICB",
-        "uda_ttm": 150636,
-        "cot_ttm": 73437,
+        "uda_ttm": 360549,
+        "cot_ttm": 189402,
         "recovery_index": null
       }
     ]

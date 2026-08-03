@@ -15,6 +15,7 @@ import {
 import {
   fmtNumber,
   fmtIndex,
+  fmtPercent,
   monthLabel,
   type DentalActivitySnapshot,
 } from "@/lib/research/dental-activity-index";
@@ -27,7 +28,7 @@ const PAGE_PATH = "/research/nhs-dental-activity-index";
 
 export const metadata: Metadata = {
   title: "NHS Dental Activity Recovery Index | Dental Finance Partners",
-  description: `Track monthly NHS dental UDA delivery and recovery vs the pre-Covid 2019/20 baseline. England national and regional data from NHSBSA open data. Updated ${monthLabel(meta.data_through)}.`,
+  description: `Track monthly NHS dental UDA delivery and recovery vs the pre-Covid 2019/20 baseline. England national and regional data from NHSBSA open data. Settled to ${monthLabel(meta.last_settled_month)}.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
     title: "NHS Dental Activity Recovery Index | Dental Finance Partners",
@@ -56,7 +57,7 @@ const faqs = [
   {
     question: "Which ICB areas deliver the most NHS dental activity?",
     answer:
-      "Per-ICB recovery indices cannot be calculated from public NHSBSA data because ICB boundaries changed in 2022 and no pre-2022 per-ICB baseline is available. The regional chart on this page instead ranks the 49 ICBs by trailing-twelve-month UDA volume. Greater Manchester, North East and North Cumbria, and Cheshire and Merseyside are the highest-volume ICBs. Areas with fewer contracted NHS dentists relative to population deliver lower total UDA volumes, which is the clearest public-data measure of relative NHS dental capacity.",
+      "Per-ICB recovery indices cannot be calculated from public NHSBSA data because ICB boundaries changed in 2022 and no pre-2022 per-ICB baseline is available. The regional chart on this page instead ranks commissioner areas by UDA volume over the trailing twelve settled months. Greater Manchester, North East and North Cumbria, and Cheshire and Merseyside are the highest-volume ICBs. Areas with fewer contracted NHS dentists relative to population deliver lower total UDA volumes, which is the clearest public-data measure of relative NHS dental capacity.",
   },
   {
     question: "What does this mean for NHS dentists' finances?",
@@ -173,8 +174,12 @@ export default function NHSDentalActivityIndexPage() {
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-neutral-300">
             A monthly index of NHS dental UDA delivery in England, benchmarked against the 2019/20
-            average (= 100). National and regional data from NHSBSA open data. Updated{" "}
-            {monthLabel(lastMonth)}.
+            average (= 100). National and regional data from NHSBSA open data. Settled to{" "}
+            {monthLabel(lastMonth)}
+            {meta.provisional_months.length > 0
+              ? `, with ${monthLabel(meta.latest_month)} shown as provisional`
+              : ""}
+            .
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -188,7 +193,7 @@ export default function NHSDentalActivityIndexPage() {
             />
             <Stat
               value={`${headline.months_below_90} months`}
-              label="England spent below 90% recovery (Apr 2020 – recovery)"
+              label={`below 90 on the Recovery Index since ${monthLabel(series.national[0].month)}`}
             />
           </div>
         </div>
@@ -222,6 +227,13 @@ export default function NHSDentalActivityIndexPage() {
                   {fmtNumber(headline.baseline_monthly_avg_uda)} UDAs across all England NHS
                   dental contracts. This baseline is used as 100 in the Recovery Index.
                 </li>
+                {headline.yoy_pct_uda !== null && (
+                  <li>
+                    UDA delivery is{" "}
+                    <strong>{fmtPercent(headline.yoy_pct_uda)}</strong> year on year.{" "}
+                    {headline.yoy_basis}
+                  </li>
+                )}
                 <li>
                   Recovery is uneven: some ICBs have exceeded pre-Covid levels while others
                   remain well below. Regions with structural dentist shortages showed the slowest
@@ -262,7 +274,7 @@ export default function NHSDentalActivityIndexPage() {
 
             <Section id="regional" title="UDA volume by ICB commissioner area">
               <p>
-                The chart ranks all 49 ICB commissioner areas by their trailing-twelve-month (TTM) contracted UDA volume. Per-ICB recovery indices against a 2019/20 baseline cannot be calculated from public data because ICB boundaries changed in 2022, making pre-ICB baselines unavailable. UDA volume is the correct measure of relative NHS dental capacity by area.
+                The chart ranks all {series.regional.length} ICB commissioner areas by their contracted UDA volume over the trailing twelve settled months ({monthLabel(meta.regional_window[0])} to {monthLabel(meta.regional_window[1])}). Per-ICB recovery indices against a 2019/20 baseline cannot be calculated from public data because ICB boundaries changed in 2022, making pre-ICB baselines unavailable. UDA volume is the correct measure of relative NHS dental capacity by area.
               </p>
               <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
                 <RegionalRecoveryChart regional={series.regional} />
@@ -284,13 +296,18 @@ export default function NHSDentalActivityIndexPage() {
                 means delivery matches the pre-Covid average; below 100 means under-recovery.
               </p>
               <p>
-                <strong>Regional series.</strong> Regional figures aggregate trailing-twelve-month UDA volume per ICB commissioner. ICB boundaries changed in 2022 (from CCG to ICB); because no consistent pre-2022 per-ICB baseline exists, per-ICB recovery indices cannot be calculated and are not shown. UDA volume by ICB is the appropriate public-data measure of relative NHS dental capacity by area.
+                <strong>Regional series.</strong> Regional figures aggregate UDA volume per ICB commissioner across the trailing twelve settled months ({monthLabel(meta.regional_window[0])} to {monthLabel(meta.regional_window[1])}); provisional in-year months are excluded. ICB boundaries changed in 2022 (from CCG to ICB); because no consistent pre-2022 per-ICB baseline exists, per-ICB recovery indices cannot be calculated and are not shown. UDA volume by ICB is the appropriate public-data measure of relative NHS dental capacity by area.
               </p>
               <p>
                 <strong>Caveats.</strong> UDA counts measure contracted NHS activity only. Private
                 dental activity is excluded. The 2020/21 data is not comparable to other years due
                 to mandatory practice closures. Some months may be subject to late submission
-                revisions. Updated {monthLabel(meta.data_through)}. Generated {meta.generated_at}.
+                revisions. The series is settled to {monthLabel(meta.last_settled_month)}; any later
+                month comes from the NHSBSA in-year file, is marked provisional in the data, and is
+                excluded from the headline figures above. Courses of treatment sum the Band 1,
+                Band 2, Band 3 and urgent bands; NHSBSA reported Band 2 as a single column to March
+                2023 and as 2A, 2B and 2C from April 2023, and both forms are read. Generated{" "}
+                {meta.generated_at}.
               </p>
               <ul className="not-prose mt-2 space-y-1 text-sm">
                 {meta.sources.map((s) => (

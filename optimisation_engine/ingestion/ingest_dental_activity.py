@@ -36,11 +36,21 @@ COL_YEAR_MONTH      = "YEAR_MONTH"
 COL_COMMISSIONER    = "COMMISSIONER_NAME"
 COL_UDA_DELIVERED   = "UDA_DELIVERED"
 COL_BAND1           = "BAND_1_DELIVERED"
+# NHSBSA split Band 2 into 2A/2B/2C from the April 2023 file onward. Files up to and
+# including March 2023 carry a single BAND_2_DELIVERED column instead. Read whichever
+# the file actually has; reading only the 2A/2B/2C set silently zeroes Band 2 for the
+# 84 months from April 2016 to March 2023.
+COL_BAND2           = "BAND_2_DELIVERED"
 COL_BAND2A          = "BAND_2A_DELIVERED"
 COL_BAND2B          = "BAND_2B_DELIVERED"
 COL_BAND2C          = "BAND_2C_DELIVERED"
 COL_BAND3           = "BAND_3_DELIVERED"
 COL_URGENT          = "BAND_URGENT_DELIVERED"
+
+# Resources named UDA_CONTRACTOR_YYYYMM are the settled contractor series. NHSBSA also
+# publishes the current in-year month as a standalone MONTHLY_DATA_UDA_YYYYMMDD file,
+# which is provisional and subject to revision before it joins the settled series.
+SETTLED_RESOURCE_PREFIX = "UDA_CONTRACTOR_"
 
 # Pre-Covid baseline period: April 2019 -- March 2020 (NHS financial year 2019/20)
 BASELINE_START = 201904
@@ -65,6 +75,16 @@ def get_csv_resources() -> list[dict]:
     return csvs
 
 
+_MONTHS = ["January", "February", "March", "April", "May", "June",
+           "July", "August", "September", "October", "November", "December"]
+
+
+def month_name(ym: str) -> str:
+    """'2026-03' -> 'March 2026'"""
+    y, _, m = ym.partition("-")
+    return f"{_MONTHS[int(m) - 1]} {y}" if m.isdigit() else ym
+
+
 def parse_ym(raw: str) -> str:
     """202604 -> '2026-04'"""
     s = str(raw).strip()
@@ -73,7 +93,7 @@ def parse_ym(raw: str) -> str:
     return s
 
 
-def aggregate_csv(content: bytes) -> dict:
+def aggregate_csv(content: bytes, settled: bool = True) -> dict:
     """
     Aggregate one monthly CSV into:
       national: {ym, uda, band1, band2, band3, urgent, cot}
@@ -96,6 +116,11 @@ def aggregate_csv(content: bytes) -> dict:
     ym_raw = rows[0].get(COL_YEAR_MONTH, "")
     ym = parse_ym(ym_raw)
 
+    fields = set(reader.fieldnames or [])
+    band2_split = COL_BAND2A in fields
+    if not band2_split and COL_BAND2 not in fields:
+        raise ValueError(f"{ym}: no Band 2 column found (neither {COL_BAND2} nor {COL_BAND2A})")
+
     nat_uda = 0.0
     nat_band1 = 0.0
     nat_band2 = 0.0
@@ -114,15 +139,15 @@ def aggregate_csv(content: bytes) -> dict:
         try:
             uda    = _f(row, COL_UDA_DELIVERED)
             b1     = _f(row, COL_BAND1)
-            b2a    = _f(row, COL_BAND2A)
-            b2b    = _f(row, COL_BAND2B)
-            b2c    = _f(row, COL_BAND2C)
+            if band2_split:
+                b2 = _f(row, COL_BAND2A) + _f(row, COL_BAND2B) + _f(row, COL_BAND2C)
+            else:
+                b2 = _f(row, COL_BAND2)
             b3     = _f(row, COL_BAND3)
             urgent = _f(row, COL_URGENT)
         except (ValueError, TypeError):
             continue
 
-        b2 = b2a + b2b + b2c
         cot = b1 + b2 + b3 + urgent
 
         nat_uda    += uda
@@ -132,6 +157,11 @@ def aggregate_csv(content: bytes) -> dict:
         nat_urgent += urgent
 
         comm = (row.get(COL_COMMISSIONER) or row.get(" " + COL_COMMISSIONER) or "Unknown").strip()
+        # NHSBSA renamed a commissioner mid-2025/26 ("Hampshire and Isle Of Wight ICB"
+        # became "NHS Hampshire and Isle Of Wight ICB"). Strip the prefix so both halves
+        # of the year aggregate to one geography instead of splitting its TTM total.
+        if comm.startswith("NHS ") and comm.endswith("ICB"):
+            comm = comm[4:]
         regional[comm]["uda"] += uda
         regional[comm]["cot"] += cot
 
@@ -140,6 +170,8 @@ def aggregate_csv(content: bytes) -> dict:
     return {
         "ym": ym,
         "ym_int": int(ym_raw[:6]) if ym_raw else 0,
+        "settled": settled,
+        "band2_split": band2_split,
         "national": {
             "uda": round(nat_uda),
             "cot": round(nat_cot),
@@ -169,7 +201,7 @@ def compute_recovery_index(monthly: list[dict]) -> list[dict]:
         idx = None
         if baseline_avg and baseline_avg > 0:
             idx = round(m["national"]["uda"] / baseline_avg * 100, 1)
-        result.append({
+        row = {
             "month": m["ym"],
             "uda": m["national"]["uda"],
             "cot": m["national"]["cot"],
@@ -178,26 +210,34 @@ def compute_recovery_index(monthly: list[dict]) -> list[dict]:
             "band3": m["national"]["band3"],
             "urgent": m["national"]["urgent"],
             "recovery_index": idx,
-        })
+        }
+        if not m["settled"]:
+            row["provisional"] = True
+        result.append(row)
     return result, baseline_avg
 
 
-def compute_regional_series(monthly: list[dict]) -> list[dict]:
-    """Aggregate UDA and COT by commissioner across all months in the latest year available."""
-    if not monthly:
-        return []
-    latest_ym = max(m["ym_int"] for m in monthly)
-    latest_year = latest_ym // 100
+def compute_regional_series(monthly: list[dict]) -> tuple[list[dict], list[str]]:
+    """
+    Aggregate UDA and COT by commissioner over the trailing TWELVE settled months.
 
-    # Use April of latest year back 12 months
+    Returns (rows, window) where window is the [first_month, last_month] the totals cover,
+    so callers can label the figures with the period they actually describe.
+    """
+    if not monthly:
+        return [], []
+    # Provisional months are excluded: they are revised before they join the settled series.
+    settled = sorted((m for m in monthly if m["settled"]), key=lambda m: m["ym_int"])
+    window = settled[-12:]
+    if not window:
+        return [], []
+
     by_comm = defaultdict(lambda: {"uda": 0.0, "cot": 0.0, "months": 0})
-    for m in monthly:
-        y = m["ym_int"] // 100
-        if y == latest_year or (y == latest_year - 1 and (m["ym_int"] % 100) >= 4):
-            for comm, vals in m["regional"].items():
-                by_comm[comm]["uda"] += vals["uda"]
-                by_comm[comm]["cot"] += vals["cot"]
-                by_comm[comm]["months"] += 1
+    for m in window:
+        for comm, vals in m["regional"].items():
+            by_comm[comm]["uda"] += vals["uda"]
+            by_comm[comm]["cot"] += vals["cot"]
+            by_comm[comm]["months"] += 1
 
     # Also compute baseline for regional (2019/20)
     baseline_by_comm = defaultdict(lambda: {"uda": 0.0, "count": 0})
@@ -222,7 +262,7 @@ def compute_regional_series(monthly: list[dict]) -> list[dict]:
             "cot_ttm": round(vals["cot"]),
             "recovery_index": ridx,
         })
-    return rows
+    return rows, [window[0]["ym"], window[-1]["ym"]]
 
 
 def main():
@@ -240,7 +280,7 @@ def main():
         print(f"  Downloading {name} ...", file=sys.stderr, end="\r")
         try:
             content = fetch_url(url)
-            agg = aggregate_csv(content)
+            agg = aggregate_csv(content, settled=name.upper().startswith(SETTLED_RESOURCE_PREFIX))
             if agg:
                 monthly_raw.append(agg)
                 downloaded_urls.append(url)
@@ -254,17 +294,34 @@ def main():
     monthly_raw.sort(key=lambda m: m["ym_int"])
 
     national_series, baseline_avg = compute_recovery_index(monthly_raw)
-    regional_series = compute_regional_series(monthly_raw)
+    regional_series, regional_window = compute_regional_series(monthly_raw)
 
     last = national_series[-1] if national_series else {}
-    prev_year = next(
-        (m for m in reversed(national_series) if m["month"][:4] == str(int(last.get("month", "0000")[:4]) - 1)),
-        None,
-    )
 
+    # Headline figures come from the last SETTLED month. The most recent month is often the
+    # provisional in-year file, which is revised before it joins the settled series.
+    settled_series = [m for m in national_series if not m.get("provisional")]
+    last_settled = settled_series[-1] if settled_series else {}
+    provisional_months = [m["month"] for m in national_series if m.get("provisional")]
+
+    # Year on year on a rolling 12-month basis: the 12 settled months ending at the last
+    # settled month, against the 12 months before them. Single-month comparisons swing wildly
+    # on working-day counts and on where a month sat in the post-Covid recovery, so they are
+    # not a defensible headline.
     yoy_pct = None
-    if prev_year and prev_year["uda"] and last.get("uda"):
-        yoy_pct = round((last["uda"] - prev_year["uda"]) / prev_year["uda"] * 100, 1)
+    yoy_basis = None
+    if len(settled_series) >= 24:
+        recent = settled_series[-12:]
+        prior = settled_series[-24:-12]
+        recent_uda = sum(m["uda"] for m in recent)
+        prior_uda = sum(m["uda"] for m in prior)
+        if prior_uda:
+            yoy_pct = round((recent_uda - prior_uda) / prior_uda * 100, 1)
+            yoy_basis = (
+                f"Rolling 12 settled months ({month_name(recent[0]['month'])} to "
+                f"{month_name(recent[-1]['month'])}) against the preceding 12 "
+                f"({month_name(prior[0]['month'])} to {month_name(prior[-1]['month'])})."
+            )
 
     # Baseline months for provenance
     baseline_months = [m for m in monthly_raw if BASELINE_START <= m["ym_int"] <= BASELINE_END]
@@ -286,19 +343,26 @@ def main():
                     "attribution": "Data sourced from NHS Business Services Authority under the Open Government Licence v3.0. Free to cite with attribution to Dental Finance Partners.",
                 }
             ],
+            "latest_month": last.get("month", ""),
+            "last_settled_month": last_settled.get("month", ""),
+            "provisional_months": provisional_months,
+            "regional_window": regional_window,
             "notes": (
-                "UDA = Unit of Dental Activity. Courses of treatment (COT) are the sum of Band 1, Band 2 (2a+2b+2c), Band 3 and Urgent bands. "
+                "UDA = Unit of Dental Activity. Courses of treatment (COT) are the sum of the Band 1, Band 2, Band 3 and Urgent bands. "
+                "NHSBSA reported Band 2 as a single column up to March 2023 and as 2A + 2B + 2C from April 2023; both forms are read and summed to one Band 2 total. "
                 "Recovery Index = monthly UDA / average monthly UDA in 2019/20 * 100 (100 = full pre-Covid baseline). "
-                "Regional figures use ICB commissioner groupings as at each monthly submission. "
+                "Headline figures use the most recent SETTLED month. NHSBSA also publishes the current in-year month as a separate provisional file, which is included in the charted series but flagged provisional and excluded from the headline. "
+                "Regional figures use ICB commissioner groupings as at each monthly submission and cover the trailing twelve SETTLED months (see regional_window). "
                 "Data cover NHS England contracted dental activity only; private dentistry is not included."
             ),
         },
         "headline": {
-            "last_settled_month": last.get("month", ""),
-            "last_month_uda": last.get("uda", 0),
-            "last_month_cot": last.get("cot", 0),
-            "last_month_recovery_index": last.get("recovery_index"),
+            "last_settled_month": last_settled.get("month", ""),
+            "last_month_uda": last_settled.get("uda", 0),
+            "last_month_cot": last_settled.get("cot", 0),
+            "last_month_recovery_index": last_settled.get("recovery_index"),
             "yoy_pct_uda": yoy_pct,
+            "yoy_basis": yoy_basis,
             "baseline_monthly_avg_uda": round(baseline_avg) if baseline_avg else None,
             "months_below_90": sum(1 for m in national_series if m["recovery_index"] is not None and m["recovery_index"] < 90),
             "regions_above_90": sum(1 for r in regional_series if r["recovery_index"] is not None and r["recovery_index"] >= 90),
@@ -322,6 +386,14 @@ def main():
     assert len(national_series) > 0, "No national series entries"
     assert all(m["uda"] >= 0 for m in national_series), "Negative UDA values found"
     assert last.get("recovery_index") is not None, "Recovery index not computed for latest month"
+    # Every month must carry a Band 2 count; a zero means the column mapping missed the
+    # BAND_2_DELIVERED / BAND_2A_DELIVERED switch again.
+    zero_band2 = [m["month"] for m in national_series if not m["band2"]]
+    assert not zero_band2, f"Band 2 is zero for {len(zero_band2)} months, first {zero_band2[:3]}"
+    assert all(m["cot"] == m["band1"] + m["band2"] + m["band3"] + m["urgent"] for m in national_series), \
+        "COT does not reconcile to the sum of its bands"
+    assert last_settled.get("month"), "No settled month found"
+    assert len(regional_window) == 2, "Regional window not recorded"
     print("Self-check PASSED", file=sys.stderr)
 
 

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-20",
+    "generated_at": "2026-08-03",
     "cqc_data_date": "2026-07-15",
     "coverage": "England (CQC-registered dental locations only)",
     "population_reference": "ONS Mid-2024 Population Estimates (published Sep 2025)",
@@ -19,8 +19,9 @@
         "publisher": "Office for National Statistics",
         "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2024",
         "portal": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2024",
+        "extracted_via": "nomis API dataset NM_2002_1 (date=2024, gender=0, c_age=200, measures=20100)",
         "licence": "Open Government Licence v3.0",
-        "retrieved": "2025-09-26",
+        "retrieved": "2026-08-03",
         "attribution": "Source: Office for National Statistics licensed under the Open Government Licence v3.0."
       }
     ],
@@ -28,19 +29,19 @@
   },
   "headline": {
     "total_dental_locations": 12035,
-    "england_per_100k": 20.83,
-    "england_population": 57753000,
+    "england_per_100k": 20.53,
+    "england_population": 58607170,
     "highest_density_region": "London",
-    "highest_density_per_100k": 24.59,
-    "lowest_density_region": "East Midlands",
-    "lowest_density_per_100k": 17.24
+    "highest_density_per_100k": 26.2,
+    "lowest_density_region": "North East",
+    "lowest_density_per_100k": 16.77
   },
   "regions": [
     {
       "region": "London",
       "dental_locations": 2397,
-      "population": 9748000,
-      "per_100k": 24.59,
+      "population": 9149646,
+      "per_100k": 26.2,
       "top_local_authorities": [
         {
           "local_authority": "Westminster",
@@ -67,8 +68,8 @@
     {
       "region": "South East",
       "dental_locations": 2220,
-      "population": 9263000,
-      "per_100k": 23.97,
+      "population": 9638645,
+      "per_100k": 23.03,
       "top_local_authorities": [
         {
           "local_authority": "Kent",
@@ -95,8 +96,8 @@
     {
       "region": "North West",
       "dental_locations": 1522,
-      "population": 7480000,
-      "per_100k": 20.35,
+      "population": 7716106,
+      "per_100k": 19.72,
       "top_local_authorities": [
         {
           "local_authority": "Lancashire",
@@ -121,38 +122,10 @@
       ]
     },
     {
-      "region": "East of England",
-      "dental_locations": 1258,
-      "population": 6370000,
-      "per_100k": 19.75,
-      "top_local_authorities": [
-        {
-          "local_authority": "Essex",
-          "count": 307
-        },
-        {
-          "local_authority": "Hertfordshire",
-          "count": 289
-        },
-        {
-          "local_authority": "Norfolk",
-          "count": 162
-        },
-        {
-          "local_authority": "Suffolk",
-          "count": 134
-        },
-        {
-          "local_authority": "Cambridgeshire",
-          "count": 122
-        }
-      ]
-    },
-    {
       "region": "South West",
       "dental_locations": 1139,
-      "population": 5778000,
-      "per_100k": 19.71,
+      "population": 5884551,
+      "per_100k": 19.36,
       "top_local_authorities": [
         {
           "local_authority": "Devon",
@@ -177,10 +150,38 @@
       ]
     },
     {
+      "region": "East of England",
+      "dental_locations": 1258,
+      "population": 6571030,
+      "per_100k": 19.14,
+      "top_local_authorities": [
+        {
+          "local_authority": "Essex",
+          "count": 307
+        },
+        {
+          "local_authority": "Hertfordshire",
+          "count": 289
+        },
+        {
+          "local_authority": "Norfolk",
+          "count": 162
+        },
+        {
+          "local_authority": "Suffolk",
+          "count": 134
+        },
+        {
+          "local_authority": "Cambridgeshire",
+          "count": 122
+        }
+      ]
+    },
+    {
       "region": "West Midlands",
       "dental_locations": 1141,
-      "population": 5950000,
-      "per_100k": 19.18,
+      "population": 6181633,
+      "per_100k": 18.46,
       "top_local_authorities": [
         {
           "local_authority": "Birmingham",
@@ -207,8 +208,8 @@
     {
       "region": "Yorkshire & Humberside",
       "dental_locations": 1039,
-      "population": 5547000,
-      "per_100k": 18.73,
+      "population": 5656571,
+      "per_100k": 18.37,
       "top_local_authorities": [
         {
           "local_authority": "Leeds",
@@ -233,38 +234,10 @@
       ]
     },
     {
-      "region": "North East",
-      "dental_locations": 461,
-      "population": 2657000,
-      "per_100k": 17.35,
-      "top_local_authorities": [
-        {
-          "local_authority": "County Durham",
-          "count": 86
-        },
-        {
-          "local_authority": "Newcastle upon Tyne",
-          "count": 69
-        },
-        {
-          "local_authority": "Northumberland",
-          "count": 55
-        },
-        {
-          "local_authority": "Stockton-on-Tees",
-          "count": 42
-        },
-        {
-          "local_authority": "Gateshead",
-          "count": 40
-        }
-      ]
-    },
-    {
       "region": "East Midlands",
       "dental_locations": 855,
-      "population": 4960000,
-      "per_100k": 17.24,
+      "population": 5060240,
+      "per_100k": 16.9,
       "top_local_authorities": [
         {
           "local_authority": "Derbyshire",
@@ -285,6 +258,34 @@
         {
           "local_authority": "Leicester",
           "count": 78
+        }
+      ]
+    },
+    {
+      "region": "North East",
+      "dental_locations": 461,
+      "population": 2748748,
+      "per_100k": 16.77,
+      "top_local_authorities": [
+        {
+          "local_authority": "County Durham",
+          "count": 86
+        },
+        {
+          "local_authority": "Newcastle upon Tyne",
+          "count": 69
+        },
+        {
+          "local_authority": "Northumberland",
+          "count": 55
+        },
+        {
+          "local_authority": "Stockton-on-Tees",
+          "count": 42
+        },
+        {
+          "local_authority": "Gateshead",
+          "count": 40
         }
       ]
     },

@@ -38,16 +38,16 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What is the average NHS dentist salary in 2023/24?",
+    question: `What is the average NHS dentist salary in ${headline.reference_year}?`,
     answer:
-      `NHS Digital reports that the average income before tax for self-employed primary-care NHS dentists in England was ${fmtGBP(headline.avg_net_income_england)} in ${headline.reference_year}. This is average net income -- gross earnings minus expenses -- before income tax and national insurance. The median net income (the midpoint, less influenced by high earners) was ${fmtGBP(headline.median_net_income_england)}. These figures cover dentists who derive the majority of their income from NHS dental contracts.`,
+      `NHS England Digital reports that the average income before tax for self-employed primary-care NHS dentists in England was ${fmtGBP(headline.avg_net_income_england)} in ${headline.reference_year}. This is average net income, meaning gross earnings minus expenses, before income tax and national insurance. The median net income (the midpoint, less influenced by high earners) was ${fmtGBP(headline.median_net_income_england)}. These figures cover dentists who derive the majority of their income from NHS dental contracts.`,
   },
   {
     question: "What expenses can NHS dentists deduct?",
     answer:
-      "Self-employed NHS dentists can deduct legitimate business expenses from their gross earnings before calculating taxable income. Common allowable expenses include practice costs (premises, rates, utilities), clinical staff wages (nurses, receptionists), laboratory fees, equipment and instruments, professional indemnity insurance, professional body subscriptions, continuing professional development costs, clinical supplies and materials, and motor expenses for business travel. The NHS Digital data shows average expenses of " +
+      "Self-employed NHS dentists can deduct legitimate business expenses from their gross earnings before calculating taxable income. Common allowable expenses include practice costs (premises, rates, utilities), clinical staff wages (nurses, receptionists), laboratory fees, equipment and instruments, professional indemnity insurance, professional body subscriptions, continuing professional development costs, clinical supplies and materials, and motor expenses for business travel. The NHS England Digital data shows average expenses of " +
       fmtGBP(headline.avg_expenses_england) +
-      " in 2023/24, representing roughly 50% of gross earnings. Associates working from a principal's practice have a different expense profile, primarily limited to indemnity, CPD and equipment they personally own.",
+      ` in ${headline.reference_year}, representing roughly half of gross earnings. Associates working from a principal's practice have a different expense profile, primarily limited to indemnity, CPD and equipment they personally own.`,
   },
   {
     question: "How do NHS dentist earnings compare with private dentistry?",
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: "Where does this data come from?",
     answer:
-      "The earnings and expenses figures come from the NHS Digital Dental Earnings and Expenses Estimates publication, produced annually from HMRC self-assessment records and NHS payment data. The latest edition covers 2023/24 and was published in July 2025. The data is published under the Open Government Licence v3.0. The time series extends back to 2009/10 and allows trends to be tracked over more than 15 years.",
+      `The earnings and expenses figures come from the NHS England Digital Dental Earnings and Expenses Estimates publication, produced annually from HMRC self-assessment records and NHS payment data. The edition used here covers ${meta.reference_year} and was published on 30 July 2026. The data is published under the Open Government Licence v3.0. The England time series runs from ${meta.timeseries_coverage}: earlier years exist in the workbook for the UK as a whole, but England is marked 'Not applicable' before 2017/18, so no England figures are shown for those years.`,
   },
 ];
 
@@ -88,8 +88,7 @@ const datasetSchema = {
   "@context": "https://schema.org",
   "@type": "Dataset",
   name: "NHS Dentist Earnings and Expenses Tracker: annual earnings data for self-employed NHS dentists",
-  description:
-    "Annual average and median gross earnings, expenses and net income before tax for self-employed primary-care NHS dentists in England, with UK country breakdown. Time series 2009/10 to 2023/24, compiled from NHS Digital open data.",
+  description: `Annual average and median gross earnings, expenses and net income before tax for self-employed primary-care NHS dentists in England, with a UK country breakdown. England time series ${meta.timeseries_coverage}, compiled from NHS England Digital open data.`,
   inLanguage: "en-GB",
   license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
   creator: {
@@ -98,7 +97,7 @@ const datasetSchema = {
     name: siteConfig.name,
   },
   dateModified: meta.generated_at,
-  temporalCoverage: "2009-04/2024-03",
+  temporalCoverage: "2017-04/2025-03",
   isAccessibleForFree: true,
   distribution: [
     {
@@ -138,7 +137,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
 
 export default function NHSDentistEarningsPage() {
   const ts = data.timeseries_england;
-  const cs = data.cross_sectional_2324;
+  const cs = data.cross_sectional_latest;
   const byCountry = cs.by_country ?? [];
 
   return (
@@ -175,8 +174,8 @@ export default function NHSDentistEarningsPage() {
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-neutral-300">
             Annual gross earnings, expenses and net income for self-employed primary-care NHS
-            dentists in England, from NHS Digital open data. Time series from 2009/10 onwards.
-            Published under the Open Government Licence v3.0.
+            dentists in England, from NHS England Digital open data. England time series{" "}
+            {meta.timeseries_coverage}. Published under the Open Government Licence v3.0.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -218,7 +217,7 @@ export default function NHSDentistEarningsPage() {
                 </li>
                 <li>
                   The median net income was {fmtGBP(headline.median_net_income_england)}, below the
-                  average -- reflecting that a smaller number of high-earning dentists (typically
+                  average, reflecting that a smaller number of high-earning dentists (typically
                   large practice principals) pulls the average upward.
                 </li>
                 {headline.net_income_change_yoy !== null && (
@@ -235,28 +234,32 @@ export default function NHSDentistEarningsPage() {
                 </li>
               </ul>
               <p className="mt-4 text-xs text-neutral-500">
-                Source: NHS Digital, Dental Earnings and Expenses Estimates {headline.reference_year},
-                under the Open Government Licence v3.0. Figures may be cited with attribution to
+                Source: NHS England Digital, {meta.edition}, under the Open Government Licence v3.0. Figures may be cited with attribution to
                 Dental Finance Partners.
               </p>
             </div>
 
-            <Section id="timeseries" title="Earnings trend: 2009/10 to 2023/24">
+            <Section id="timeseries" title={`Earnings trend: ${meta.timeseries_coverage}`}>
               <p>
                 The chart shows average gross earnings, expenses and net income before tax for
-                self-employed NHS dentists in England over more than 15 years. The 2020/21 figures
-                are affected by NHS Covid support payments to dental contractors and are not
-                directly comparable with adjacent years.
+                self-employed NHS dentists in England. The series begins at 2017/18 because the
+                published UK time series marks England as not applicable for 2008/09 to 2016/17,
+                so no England figures exist for those years. The 2020/21 figures are affected by
+                NHS Covid support payments to dental contractors and are not directly comparable
+                with adjacent years.
               </p>
               <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
                 <EarningsTimeSeriesChart series={ts} />
               </div>
             </Section>
 
-            <Section id="breakdown" title="Gross earnings, expenses and net income (2023/24)">
+            <Section
+              id="breakdown"
+              title={`Gross earnings, expenses and net income (${headline.reference_year})`}
+            >
               <p>
-                The chart below shows the earnings breakdown for 2023/24. Expenses represent
-                roughly half of gross earnings. Net income is what remains before income tax and
+                The chart below shows the earnings breakdown for {headline.reference_year}.
+                Expenses represent roughly half of gross earnings. Net income is what remains before income tax and
                 national insurance contributions.
               </p>
               <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
@@ -265,11 +268,15 @@ export default function NHSDentistEarningsPage() {
             </Section>
 
             {byCountry.length > 0 && (
-              <Section id="by-country" title="Earnings by UK country (2023/24)">
+              <Section
+                id="by-country"
+                title={`Earnings by UK country (${headline.reference_year})`}
+              >
                 <p>
-                  The table below shows average net income by UK country. England and Scotland
-                  typically show the highest averages; Wales and Northern Ireland reflect different
-                  NHS contract structures and local market conditions.
+                  The table below shows average net income by UK country. Only England and Wales
+                  report a comparable all-dental-types, all-contract-types figure. Scotland and
+                  Northern Ireland run different NHS contract structures and are broken down on
+                  different categories in the source data, so they are not shown here.
                 </p>
                 <div className="not-prose mt-4 overflow-x-auto">
                   <table className="w-full border-collapse text-sm">
@@ -310,8 +317,8 @@ export default function NHSDentistEarningsPage() {
 
             <Section id="methodology" title="Methodology and sources">
               <p>
-                <strong>Data source.</strong> Figures come from the NHS Digital Dental Earnings and
-                Expenses Estimates publication, produced annually from HMRC self-assessment records
+                <strong>Data source.</strong> Figures come from the {meta.edition} publication,
+                released on 30 July 2026, produced annually from HMRC self-assessment records
                 and NHS payment data. The survey covers self-employed dentists who derive a
                 significant proportion of their income from primary-care NHS dental contracts (GDS
                 and PDS). Employed dentists (salaried dental officers in community services) are
@@ -328,7 +335,8 @@ export default function NHSDentistEarningsPage() {
                 payments (dentists received income without delivering normal activity). The dataset
                 covers dentists primarily on NHS contracts; those working mostly in private practice
                 are under-represented. Average figures are influenced by a small number of very
-                high-earning principals. Generated {meta.generated_at}.
+                high-earning principals. The headline and time series are England only; the country
+                table adds Wales. Generated {meta.generated_at}.
               </p>
               <ul className="not-prose mt-2 space-y-1 text-sm">
                 {meta.sources.slice(0, 1).map((s) => (

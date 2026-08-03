@@ -5,8 +5,10 @@ Source:  CQC Care Directory CSV (all CQC-registered locations), monthly release.
          https://www.cqc.org.uk/sites/default/files/2026-07/15_July_2026_CQC_directory.csv
          Open Government Licence v3.0.
 
-Population: ONS Mid-2023 population estimates for England regions (embedded constants;
-            avoids xlsx dependency). Updated to mid-2024 values from ONS bulletin Sep 2025.
+Population: ONS Mid-2024 population estimates for England regions (embedded constants;
+            avoids an xlsx dependency). Values pulled from the nomis API dataset NM_2002_1
+            (date=2024, gender=0, c_age=200, measures=20100) and pasted into
+            ONS_REGION_POPULATION below.
             Source: https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/
                     populationestimates/bulletins/annualmidyearpopulationestimates/mid2024
             Licence: OGL v3.0.
@@ -41,26 +43,34 @@ OUT_PATH = (
     / "Dentists" / "web" / "src" / "data" / "dental-practice-density.json"
 )
 
-# ONS Mid-2024 population estimates for England regions (thousands of people).
-# Source: ONS "Mid-2024 Population Estimates for UK", published 26 Sep 2025.
+# ONS Mid-2024 population estimates for England regions, all ages, both sexes.
+# Pulled from the nomis API (the machine-readable form of the ONS mid-year estimates)
+# and pasted here verbatim so the build has no runtime dependency on nomis:
+#   https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv
+#     ?geography=2013265921...2013265929,2092957699
+#     &date=2024&gender=0&c_age=200&measures=20100
+# Underlying publication: ONS "Population estimates for the UK, England, Wales,
+# Scotland and Northern Ireland: mid-2024", released 26 September 2025.
 # URL: https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/
 #      populationestimates/bulletins/annualmidyearpopulationestimates/mid2024
-# Figures are total persons (all ages), in thousands -- we store raw here.
-# Region labels match the CQC "Region" column values.
+# The nine region values sum exactly to the ONS England total of 58,607,170.
+# Region labels match the CQC "Region" column values (see REGION_NORMALISE below).
 ONS_REGION_POPULATION: dict[str, int] = {
-    "East Midlands":            4_960_000,
-    "East of England":          6_370_000,
-    "London":                  9_748_000,
-    "North East":               2_657_000,
-    "North West":               7_480_000,
-    "South East":              9_263_000,
-    "South West":               5_778_000,
-    "West Midlands":            5_950_000,
-    "Yorkshire & Humberside":   5_547_000,
-    # ONS uses "Yorkshire and The Humber"; CQC uses "Yorkshire & Humberside" -- normalised above.
-    # "Yorkshire and The Humber" kept here as fallback if normalisation map ever misses it.
-    "Yorkshire and The Humber": 5_547_000,
+    "East Midlands":            5_060_240,  # E12000004
+    "East of England":          6_571_030,  # E12000006 ("East" in ONS labelling)
+    "London":                   9_149_646,  # E12000007
+    "North East":               2_748_748,  # E12000001
+    "North West":               7_716_106,  # E12000002
+    "South East":               9_638_645,  # E12000008
+    "South West":               5_884_551,  # E12000009
+    "West Midlands":            6_181_633,  # E12000005
+    "Yorkshire & Humberside":   5_656_571,  # E12000003 ("Yorkshire and The Humber" in ONS)
+    # CQC uses "Yorkshire & Humberside"; kept as a fallback if normalisation ever misses it.
+    "Yorkshire and The Humber": 5_656_571,
 }
+
+# ONS mid-2024 England total, used to assert the regional table has not drifted.
+ONS_ENGLAND_POPULATION = 58_607_170
 
 # CQC region label normalisation (CQC sometimes uses variant spellings)
 REGION_NORMALISE: dict[str, str] = {
@@ -214,8 +224,9 @@ def build_snapshot(parsed: dict) -> dict:
                     "publisher": "Office for National Statistics",
                     "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2024",
                     "portal": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2024",
+                    "extracted_via": "nomis API dataset NM_2002_1 (date=2024, gender=0, c_age=200, measures=20100)",
                     "licence": "Open Government Licence v3.0",
-                    "retrieved": "2025-09-26",
+                    "retrieved": "2026-08-03",
                     "attribution": "Source: Office for National Statistics licensed under the Open Government Licence v3.0.",
                 },
             ],
@@ -255,6 +266,12 @@ def self_check(snap: dict) -> list[str]:
             failures.append(f"region {r['region']} has count <= 0")
         if r["population"] is not None and r["per_100k"] is None:
             failures.append(f"region {r['region']} has population but per_100k is None")
+    # The nine regional denominators must still reconcile to the published England total.
+    if snap["headline"]["england_population"] != ONS_ENGLAND_POPULATION:
+        failures.append(
+            f"england_population {snap['headline']['england_population']:,} does not match the "
+            f"ONS mid-2024 England total {ONS_ENGLAND_POPULATION:,}"
+        )
     return failures
 
 

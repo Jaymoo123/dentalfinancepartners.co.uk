@@ -20,7 +20,8 @@ export function GET() {
 
   const csv = [
     "# NHS Dentist Earnings and Expenses Tracker: annual earnings time series (England)",
-    "# Self-employed primary-care NHS dentists. Source: NHS Digital, Dental Earnings and Expenses Estimates.",
+    `# Self-employed primary-care NHS dentists, England only. Source: NHS England Digital, ${data.meta.edition}, published ${data.meta.edition_published}.`,
+    `# Table 1.1, Country = England, Dental Type = All, Contract Type = All. Coverage ${data.meta.timeseries_coverage}; England is not applicable before 2017/18.`,
     "# Open Government Licence v3.0. Generated " + data.meta.generated_at,
     "# Free to reuse with attribution to Dental Finance Partners (dentalfinancepartners.co.uk).",
     header,

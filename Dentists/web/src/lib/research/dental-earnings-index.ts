@@ -35,6 +35,11 @@ export interface DentalEarningsSnapshot {
   meta: {
     generated_at: string;
     reference_year: string;
+    /** e.g. "Dental Earnings and Expenses Estimates, 2024/25" */
+    edition: string;
+    edition_published: string;
+    /** e.g. "2017/18 to 2024/25" */
+    timeseries_coverage: string;
     sources: {
       name: string;
       publisher: string;
@@ -57,7 +62,7 @@ export interface DentalEarningsSnapshot {
     prior_year: string | null;
     prior_year_avg_net_income: number | null;
   };
-  cross_sectional_2324: {
+  cross_sectional_latest: {
     national: CountryRow;
     by_country: CountryRow[];
     by_region_england: RegionalRow[];

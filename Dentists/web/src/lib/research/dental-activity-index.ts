@@ -15,6 +15,8 @@ export interface NationalMonth {
   band3: number;
   urgent: number;
   recovery_index: number | null;
+  /** True for the current in-year NHSBSA file, which is revised before it settles. */
+  provisional?: boolean;
 }
 
 export interface RegionalRow {
@@ -31,6 +33,13 @@ export interface DentalActivitySnapshot {
     coverage: string;
     baseline_period: string;
     baseline_monthly_avg_uda: number | null;
+    /** Most recent month present in the series, settled or not. */
+    latest_month: string;
+    /** Most recent month drawn from the settled NHSBSA contractor series. */
+    last_settled_month: string;
+    provisional_months: string[];
+    /** [first, last] settled month the regional totals cover, e.g. ["2025-04", "2026-03"]. */
+    regional_window: string[];
     sources: {
       name: string;
       publisher: string;
@@ -47,6 +56,8 @@ export interface DentalActivitySnapshot {
     last_month_cot: number;
     last_month_recovery_index: number | null;
     yoy_pct_uda: number | null;
+    /** Plain-English statement of exactly what yoy_pct_uda compares. */
+    yoy_basis: string | null;
     baseline_monthly_avg_uda: number | null;
     months_below_90: number;
     regions_above_90: number;

@@ -47,7 +47,7 @@ export interface DentalPracticeDensitySnapshot {
   regions: DensityRegion[];
 }
 
-/** "24.59" -> "24.6" */
+/** 26.2 -> "26.2" (one decimal place) */
 export function fmtDensity(n: number | null | undefined): string {
   if (n === null || n === undefined) return "n/a";
   return n.toFixed(1);

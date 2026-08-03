@@ -53,10 +53,10 @@ const reports = [
   {
     href: "/research/nhs-dentist-earnings-index",
     title: "NHS Dentist Earnings and Expenses Tracker",
-    blurb: `Average NHS dentist net income was ${fmtGBP(earnings.headline.avg_net_income_england)} in ${earnings.headline.reference_year}. Time series of gross earnings, expenses and net income from 2009/10 to 2023/24.`,
+    blurb: `Average NHS dentist net income in England was ${fmtGBP(earnings.headline.avg_net_income_england)} in ${earnings.headline.reference_year}. Time series of gross earnings, expenses and net income, ${earnings.meta.timeseries_coverage}.`,
     stat: fmtGBP(earnings.headline.avg_net_income_england),
     statLabel: `average net income before tax (${earnings.headline.reference_year})`,
-    updated: `NHS Digital ${earnings.headline.reference_year} edition`,
+    updated: `NHS England Digital ${earnings.headline.reference_year} edition`,
   },
   {
     href: "/research/dental-practice-density",

@@ -179,7 +179,7 @@ export function RecoveryIndexChart({ monthly }: { monthly: NationalMonth[] }) {
 
 // ---------------------------------------------------------------------------
 // Regional bar chart: top 20 ICBs by UDA volume (recovery_index is null for
-// all 49 ICBs — no pre-2022 per-ICB baseline exists due to boundary change)
+// every ICB: no pre-2022 per-ICB baseline exists due to the boundary change)
 // ---------------------------------------------------------------------------
 
 export function RegionalRecoveryChart({ regional }: { regional: RegionalRow[] }) {
