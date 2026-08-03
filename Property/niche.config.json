@@ -108,7 +108,8 @@
       "Property Accountant Services",
       "Landlord Tax Essentials",
       "Property Types & Specialist Tax",
-      "Non-Resident Landlord Tax"
+      "Non-Resident Landlord Tax",
+      "Property Finance"
     ],
     "supabase_table": "blog_topics",
     "site_key": "property",

@@ -33,6 +33,11 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Portfolio profitability calculator (per-property yield, cash flow, and ROI)
 - Capital allowances calculator (estimate embedded fixtures relief on a commercial property purchase or fit-out by sector)
 - R&D tax credit calculator (estimate merged-scheme and ERIS benefit from qualifying spend)
+- Buy-to-let mortgage calculator (monthly BTL mortgage payments, interest-only versus capital repayment)
+- Buy-to-let stress test calculator (maximum indicative loan a rent supports at a lender's ICR and stress rate)
+- Commercial mortgage calculator (monthly commercial mortgage payments and the debt service cover ratio)
+- Bridging loan calculator (total cost of a bridging loan from the monthly rate, term, and fees)
+- Development finance calculator (maximum facility from gross development value and loan-to-cost, and profit on cost)
 
 ## Blog Categories
 
@@ -44,6 +49,7 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Property Accountant Services: https://www.propertytaxpartners.co.uk/blog/property-accountant-services
 - Landlord Tax Essentials: https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials
 - Property Types and Specialist Tax: https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax
+- Property Finance: https://www.propertytaxpartners.co.uk/blog/property-finance
 
 ## City Pages (LocalBusiness schema)
 
@@ -71,6 +77,7 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Capital allowances on commercial property: embedded fixtures and integral features, the section 198 election and fixtures pooling requirement, and applied sector claims (hotels, offices, industrial units, care homes, GP and dental surgeries, student accommodation, pubs and restaurants, hospitality)
 - Land Remediation Relief: the 150% corporation-tax deduction and 16% payable credit for contaminated or derelict land, alongside SBA and full expensing on brownfield schemes
 - Capital allowances rates for 2026/27: main-pool WDA reduced to 14% from April 2026, the new 40% first-year allowance from 1 January 2026, AIA £1m, and 100% full expensing for companies
+- Property finance, as education alongside the tax (unregulated business lending, not regulated consumer mortgages, not a financial promotion): how buy-to-let and limited-company (SPV) mortgages are stress-tested on ICR and LTV, commercial mortgages, bridging finance for auctions and refurbishments, development finance on GDV and loan-to-cost, and the tax treatment of finance costs (Section 24, allowable interest, trading versus investment)
 
 ## Schema And Discovery
 
