@@ -57,8 +57,8 @@ faqs:
 </thead>
 <tbody>
 <tr><td>Basic</td><td>up to £37,700 of taxable income</td><td>20%</td><td>22%</td></tr>
-<tr><td>Higher</td><td>£37,700 to £112,570 of taxable income</td><td>40%</td><td>42%</td></tr>
-<tr><td>Additional</td><td>above £112,570 of taxable income</td><td>45%</td><td>47%</td></tr>
+<tr><td>Higher</td><td>£37,700 to £125,140 of taxable income</td><td>40%</td><td>42%</td></tr>
+<tr><td>Additional</td><td>above £125,140 of taxable income</td><td>45%</td><td>47%</td></tr>
 </tbody>
 </table>
 
@@ -141,16 +141,16 @@ faqs:
 <li>Taxable rental profit (after non-finance expenses but before Section 24 add-back): £85,000 − £15,000 = £70,000</li>
 <li>Mortgage interest of £35,000 generates a Section 24 basic-rate credit at the new 22% property basic rate: 22% × £35,000 = £7,700</li>
 <li>Total income: £40,000 + £70,000 = £110,000</li>
-<li>Personal allowance: £12,570 (used against consultancy income first)</li>
-<li>Consultancy tax: (£40,000 − £12,570) at 20% = £5,486</li>
-<li>Property profit allocation: £10,270 in basic-rate band (the remaining slice up to £50,270) at 22% = £2,259, then £59,730 in higher-rate band at 42% = £25,087</li>
-<li>Property tax before credit: £27,346</li>
+<li>Personal allowance: £7,570. Her £110,000 of total income is £10,000 above £100,000, so £5,000 of allowance is withdrawn (£1 for every £2), and what is left is used against consultancy income first</li>
+<li>Consultancy tax: (£40,000 − £7,570) at 20% = £6,486</li>
+<li>Property profit allocation: £5,270 in basic-rate band (the remaining slice up to £45,270 of total income, her tapered allowance plus the £37,700 basic-rate band) at 22% = £1,159, then £64,730 in higher-rate band at 42% = £27,187. She does not reach the additional rate: that starts at £125,140 of total income, which is also £125,140 of taxable income because the allowance is gone by then</li>
+<li>Property tax before credit: £28,346</li>
 <li>Less Section 24 credit (22% × £35,000): £7,700</li>
-<li>Net property tax: £19,646</li>
-<li>Combined tax: £25,132</li>
+<li>Net property tax: £20,646</li>
+<li>Combined tax: £27,132</li>
 </ul>
 
-<p>For comparison in 2026/27 (property profit at 20%/40% rather than 22%/42%, and the Section 24 credit at 20% rather than 22%): property tax would be £10,270 × 20% + £59,730 × 40% = £2,054 + £23,892 = £25,946 less £7,000 credit = £18,946. Plus consultancy tax £5,486 = £24,432.</p>
+<p>For comparison in 2026/27 (property profit at 20%/40% rather than 22%/42%, and the Section 24 credit at 20% rather than 22%): property tax would be £5,270 × 20% + £64,730 × 40% = £1,054 + £25,892 = £26,946 less £7,000 credit = £19,946. Plus consultancy tax £6,486 = £26,432.</p>
 
 <p>The 2027/28 increase for Priya is £700. The 2 percentage point rate uplift adds £1,400 on the £70,000 of property profit (£70,000 × 2%), but the Section 24 credit also rises from 20% to 22%, giving £700 more relief on the £35,000 of mortgage interest (£35,000 × 2%), so the net increase is £700. The wedge between her 42% rate and the credit is unchanged at 20 percentage points.</p>
 
