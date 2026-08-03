@@ -16,7 +16,7 @@ keyTakeaways:
   - "Section 162 TCGA 1992 incorporation relief is for transfers to a COMPANY in exchange for shares. It has no role in a partnership-to-LLP conversion, because an LLP issues no shares and is not a company for CGT."
   - "Work in progress transfers at market value, so any excess over book value (such as £40,000 above £100,000 cost) is taxed as income."
   - "Transferring firm-owned premises to the LLP can trigger SDLT, and the partnership's VAT registration cannot transfer."
-  - "Elections such as incorporation relief have strict deadlines, typically 31 January after the conversion tax year."
+  - "Incorporation relief is now a claim, not an election: for transfers on or after 6 April 2026 (Finance Act 2026 s.39) it must be claimed by the first anniversary of the 31 January following the tax year of the transfer."
 schema: ""
 canonical: "https://www.accountsforlawyers.co.uk/blog/structure-incorporation/llp-conversion-tax-guide-uk-law-firms"
 faqs:
@@ -70,7 +70,7 @@ faqs:
 
 <ul>
 <li>Choosing the conversion date to align with year-end planning</li>
-<li>Making incorporation relief elections within required timeframes</li>
+<li>Making any later incorporation relief claim in time (for transfers on or after 6 April 2026, by the first anniversary of the 31 January following the tax year of the transfer)</li>
 <li>Coordinating with Basis Period Reform changes for partnerships</li>
 <li>Managing the transition to align with Making Tax Digital requirements</li>
 </ul>

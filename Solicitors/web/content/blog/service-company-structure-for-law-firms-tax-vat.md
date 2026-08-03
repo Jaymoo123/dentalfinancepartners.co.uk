@@ -120,7 +120,7 @@ faqs:
 
 <p>Where a partially exempt entity spends <strong>£250,000 or more</strong> (VAT-exclusive) on land or a building, the <strong>Capital Goods Scheme</strong> spreads the input-VAT recovery over a 10-interval adjustment period (5 intervals for a single computer item costing £50,000 or more), recalculating recovery as the taxable-use mix changes.</p>
 
-<p>On fit-out and IT the company can claim the usual <strong>capital allowances</strong>: the Annual Investment Allowance of £1m, the special-rate pool at 6% (for integral features), and the main-rate writing-down allowance at 18% (reducing to 14% from 1 April 2026 for corporation tax under Finance Act 2026 s.28). Full expensing (100% on new main-rate plant) is available to companies. The detailed mechanics of the option to tax and the allowances sit in our separate VAT and capital-allowances guides.</p>
+<p>On fit-out and IT the company can claim the usual <strong>capital allowances</strong>: the Annual Investment Allowance of £1m, the special-rate pool at 6% (for integral features), and the main-rate writing-down allowance at 14% (reduced from 18% with effect from 1 April 2026 for corporation tax under Finance Act 2026 s.28). Full expensing (100% on new main-rate plant) is available to companies. The detailed mechanics of the option to tax and the allowances sit in our separate VAT and capital-allowances guides.</p>
 
 <h2>SRA and Practical Governance</h2>
 

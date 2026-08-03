@@ -48,7 +48,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Annual Investment Allowance (AIA):</strong> 100% relief on the first £1 million of qualifying plant and machinery expenditure per year. You deduct the full cost in the year you spend it.</li>
-<li><strong>Writing Down Allowances (WDA):</strong> For assets that don’t qualify for AIA, or if you’ve used your AIA cap elsewhere. Typically 18% or 6% per year on a reducing balance basis.</li>
+<li><strong>Writing Down Allowances (WDA):</strong> For assets that don’t qualify for AIA, or if you’ve used your AIA cap elsewhere. Typically 14% (main pool) or 6% (special rate pool) per year on a reducing balance basis. The main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax.</li>
 <li><strong>Structures and Buildings Allowance (SBA):</strong> 3% straight-line relief per year on the cost of the physical building structure itself. This applies to new builds or major renovations, not standard fit-outs.</li>
 </ul>
 

@@ -144,7 +144,7 @@ faqs:
 
 <h3>CGT side</h3>
 
-<p>The transfer of property from an individual to a wholly-owned company is a deemed disposal at market value for CGT (TCGA 1992 s.17). Section 162 incorporation relief defers the gain by rolling it into the base cost of the shares received, provided the entire business (not selected assets) is transferred and the consideration is wholly or partly shares. The relief is automatic but must be claimed correctly and the conditions in s.162(1)-(4) must be met. The HMRC reference is <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700p" rel="external nofollow noopener" target="_blank">CG65700+ of the Capital Gains Manual</a>.</p>
+<p>The transfer of property from an individual to a wholly-owned company is a deemed disposal at market value for CGT (TCGA 1992 s.17). Section 162 incorporation relief defers the gain by rolling it into the base cost of the shares received, provided the entire business (not selected assets) is transferred and the consideration is wholly or partly shares. For transfers on or after 6 April 2026 the relief must be claimed (FA 2026 s.39 inserted s.162(1)(b)), by the first anniversary of the 31 January following the tax year of the transfer, and the conditions in s.162 must be met. The HMRC reference is <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700p" rel="external nofollow noopener" target="_blank">CG65700+ of the Capital Gains Manual</a>.</p>
 
 <h3>SDLT side</h3>
 

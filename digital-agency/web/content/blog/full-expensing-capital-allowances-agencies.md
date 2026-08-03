@@ -152,7 +152,7 @@ imageCredit:
 
 <p><strong>Claiming as a sole trader or partnership.</strong> Full expensing is for companies only <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you are unincorporated, you cannot use it. Incorporate first, or use the AIA.</p>
 
-<p><strong>Claiming on cars.</strong> Cars are explicitly excluded <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. No full expensing, no 50% first-year allowance. Cars go through the special rate pool at 6% or main rate at 18%, depending on CO2 emissions.</p>
+<p><strong>Claiming on cars.</strong> Cars are explicitly excluded <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. No full expensing, no 50% first-year allowance. Cars go through the special rate pool at 6% or main rate at 14%, depending on CO2 emissions (the main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax).</p>
 
 <p><strong>Forgetting the disposal charge.</strong> When you sell an asset on which you claimed full expensing, the balancing charge is 100% of the proceeds <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. That can create a tax liability in the year of sale. Factor that into your cash flow planning.</p>
 

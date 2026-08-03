@@ -88,7 +88,7 @@ keyTakeaways:
 
 <p>Take a limited company in Manchester's Northern Quarter that turns over £420,000. The director buys £85,000 of new computer equipment and office fit-out in July 2025. The company's taxable profit for the year is £140,000.</p>
 
-<p>The AIA allowance covers the full £85,000. The company deducts that from profit, leaving £55,000 taxable. Because £55,000 sits in the marginal-relief band (profits between £50,000 and £250,000), the 25% main rate applies less marginal relief: 25% x £55,000 minus (£250,000 - £55,000) x 3/200 = £13,750 minus £2,925 = £10,825. Without the AIA, the equipment would go into the main pool at 18% writing-down allowance, giving relief of just £15,300 in year one, leaving £124,700 taxable and a CT bill of approximately £29,296 (25% x £124,700 minus (£250,000 - £124,700) x 3/200 = £31,175 minus £1,880). The AIA saves the company over £18,000 in tax in the first year.</p>
+<p>The AIA allowance covers the full £85,000. The company deducts that from profit, leaving £55,000 taxable. Because £55,000 sits in the marginal-relief band (profits between £50,000 and £250,000), the 25% main rate applies less marginal relief: 25% x £55,000 minus (£250,000 - £55,000) x 3/200 = £13,750 minus £2,925 = £10,825. Without the AIA, the equipment would go into the main pool at the 18% writing-down allowance that applied to that 2025/26 period, giving relief of just £15,300 in year one, leaving £124,700 taxable and a CT bill of approximately £29,296 (25% x £124,700 minus (£250,000 - £124,700) x 3/200 = £31,175 minus £1,880). The AIA saves the company over £18,000 in tax in the first year.</p>
 
 <h2>AIA vs Full Expensing</h2>
 

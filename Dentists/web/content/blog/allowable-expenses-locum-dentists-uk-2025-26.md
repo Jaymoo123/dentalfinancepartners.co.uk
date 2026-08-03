@@ -155,7 +155,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>No mileage log</strong>: Without a contemporaneous log, HMRC may disallow the entire mileage claim. A spreadsheet updated weekly is acceptable. A retrospective estimate is not.</li>
 <li><strong>Claiming mileage to the same practice for over 24 months</strong>: After 24 months at one practice, it becomes a permanent workplace. Travel to it is no longer allowable.</li>
 <li><strong>Mixing business and personal use of a vehicle</strong>: If you use the same car for personal and business journeys, you must apportion. HMRC will look at your MOT mileage and compare it to your claimed business mileage.</li>
-<li><strong>Claiming capital allowances on a car used for business</strong>: Cars do not qualify for AIA. You claim writing-down allowances at 18% or 6% per year depending on CO2 emissions. The simplified mileage rate avoids this complexity.</li>
+<li><strong>Claiming capital allowances on a car used for business</strong>: Cars do not qualify for AIA. You claim writing-down allowances at 14% or 6% per year depending on CO2 emissions (the main-pool rate was 18% before April 2026 and was cut to 14% by Finance Act 2026 section 28). The simplified mileage rate avoids this complexity.</li>
 </ul>
 
 <h2>Should You Be a Sole Trader or Use a Limited Company?</h2>

@@ -7,17 +7,17 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Writing Down Allowance Rates: A Guide for UK Agency Founders'
-metaDescription: Writing down allowance rates changed from April 2026. Learn how the main rate drop to 14% and special rate cut to 4% affect your agency's capital
+metaDescription: Writing down allowance rates changed from April 2026. Learn how the main rate drop from 18% to 14% affects your agency's capital allowance claims.
 altText: Agency founder reviewing capital allowance calculations on a laptop in a modern UK office with computers and office furniture visible
 image: https://images.pexels.com/photos/7821473/pexels-photo-7821473.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Writing Down Allowance Rates: What UK Agency Founders Need to Know'
-summary: Writing down allowance rates changed from April 2026. The main pool rate dropped from 18% to 14%, and the special rate pool fell from 6% to 4%. This guide explains what agency founders need to know about claiming capital allowances on equipment, computers, office furniture, and integral features.
+summary: Writing down allowance rates changed from April 2026. The main pool rate dropped from 18% to 14%, while the special rate pool stayed at 6%. This guide explains what agency founders need to know about claiming capital allowances on equipment, computers, office furniture, and integral features.
 schema: ''
 faqs:
 - question: What is the writing down allowance rate for the main pool from April 2026?
   answer: From April 2026, the main pool writing down allowance rate is 14%. It was 18% before that date. The change took effect on 1 April 2026 for Corporation Tax and 6 April 2026 for Income Tax. This rate applies to most plant and machinery, including computers, office furniture, and equipment used in your agency.
 - question: What is the special rate pool writing down allowance from April 2026?
-  answer: The special rate pool writing down allowance dropped from 6% to 4% from April 2026. This pool covers integral features like air conditioning, lifts, and electrical systems, as well as long-life assets where the total cost exceeds £100,000 in an accounting period. The rate change applies from 1 April 2026 for companies and 6 April 2026 for sole traders.
+  answer: The special rate pool writing down allowance is unchanged at 6%. Finance Act 2026 cut only the main pool rate, from 18% to 14%. The special rate pool covers integral features like air conditioning, lifts, and electrical systems, as well as long-life assets where the total cost exceeds £100,000 in an accounting period.
 - question: Can I still claim 100% relief on equipment purchases for my agency?
   answer: Yes, in most cases. The Annual Investment Allowance remains at £1 million for 2026/27, so you can claim 100% relief on qualifying plant and machinery purchases up to that limit. Writing down allowances only apply to expenditure that exceeds the AIA limit or to assets that do not qualify for AIA, such as cars.
 - question: What qualifies as a long-life asset for the special rate pool?
@@ -37,7 +37,7 @@ imageCredit:
 ---
 <p>If you own a marketing agency, digital agency, or creative agency, you have likely spent money on computers, office furniture, software, or leasehold improvements. Those costs do not simply disappear in your accounts. Through capital allowances, you can claim tax relief on them. But the rates at which you claim that relief have changed.</p>
 
-<p>Writing down allowance rates determine how much of your capital expenditure you can deduct from your profits each year. From April 2026, the main rate dropped from 18% to 14%, and the special rate pool fell from 6% to 4% <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you are planning a significant equipment purchase or a studio fit-out, these changes matter.</p>
+<p>Writing down allowance rates determine how much of your capital expenditure you can deduct from your profits each year. From April 2026, the main rate dropped from 18% to 14%, while the special rate pool stayed at 6% <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you are planning a significant equipment purchase or a studio fit-out, these changes matter.</p>
 
 <p>This article covers what writing down allowances are, how the rates work, what qualifies for each pool, and what the recent changes mean for your agency. Working exclusively with agency founders, we see these rules misapplied more often than you would expect. Let us fix that.</p>
 
@@ -67,7 +67,7 @@ imageCredit:
 
 <p>Before 1 April 2026 (for Corporation Tax) and 6 April 2026 (for Income Tax), the main rate was 18%. It is now 14% <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. That means you claim 14% of the pool value each year on a reducing balance basis.</p>
 
-<h3>Special Rate Pool (6% before April 2026, 4% from April 2026)</h3>
+<h3>Special Rate Pool (6%, unchanged)</h3>
 
 <p>The special rate pool covers assets with a longer useful life or those considered integral to a building. This includes:</p>
 
@@ -78,20 +78,20 @@ imageCredit:
 <li>Solar panels</li>
 </ul>
 
-<p>The special rate was 6% before April 2026. It dropped to 4% from April 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>The special rate is 6% and did not change in April 2026. Finance Act 2026 cut the main pool rate only <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <p>If the value of all long-life items you buy in an accounting period is more than £100,000, put the costs in the special rate pool. If it totals £100,000 or less, put the costs in the main rate pool unless there is another factor that would qualify it as special rate <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
 <h2>How the Rates Changed in 2026</h2>
 
-<p>The government announced the rate changes in the Spring Statement 2022, intending to increase the main rate from 18% to 20% and the special rate from 6% to 8% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. That did not happen. Instead, from April 2026, the main rate dropped to 14% and the special rate dropped to 4% <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>The government announced the rate changes in the Spring Statement 2022, intending to increase the main rate from 18% to 20% and the special rate from 6% to 8% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. That did not happen. Instead, from April 2026, the main rate dropped to 14% and the special rate stayed at 6% <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <p>Here is the summary:</p>
 
 <table>
 <tr><th>Pool</th><th>Rate before April 2026</th><th>Rate from April 2026</th></tr>
 <tr><td>Main rate pool</td><td>18%</td><td>14%</td></tr>
-<tr><td>Special rate pool</td><td>6%</td><td>4%</td></tr>
+<tr><td>Special rate pool</td><td>6%</td><td>6% (unchanged)</td></tr>
 </table>
 
 <p>For Corporation Tax, the change took effect on 1 April 2026. For Income Tax (sole traders and partnerships), it took effect on 6 April 2026 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
@@ -106,9 +106,9 @@ imageCredit:
 
 <p><strong>Scenario 1: You have a large pool balance with no new purchases.</strong> If your agency bought heavily in previous years and is now in a quieter investment phase, your pool balance may be substantial. At 18%, that pool would have reduced relatively quickly. At 14%, it takes longer. Your tax relief is spread over more years.</p>
 
-<p><strong>Scenario 2: You are buying integral features for a studio or office fit-out.</strong> If you are renovating a space in Shoreditch or Bristol Harbourside, you might spend £150,000 on air conditioning, lighting, and electrical systems. Those are special rate assets. At 6%, you would have claimed £9,000 in year one. At 4%, you claim £6,000. The difference is £3,000 of tax relief lost in the first year.</p>
+<p><strong>Scenario 2: You are fitting out a studio or office and have already used your AIA.</strong> If you are renovating a space in Shoreditch or Bristol Harbourside, the integral features (air conditioning, lighting, electrical systems) go into the special rate pool, which stayed at 6%, so those are unaffected by the change. It is the main-pool element that moved. On £150,000 of main-pool fit-out spend sitting above the AIA cap, you would have claimed £27,000 in year one at 18%. At 14% you claim £21,000. The difference is £6,000 of tax relief pushed into later years.</p>
 
-<p>For a 12-person digital agency billing £800k per year, that £3,000 difference is not catastrophic. But it adds up over the life of the asset.</p>
+<p>For a 12-person digital agency billing £800k per year, that £6,000 difference is not catastrophic. But it adds up over the life of the asset.</p>
 
 <h2>Structures and Buildings Allowance</h2>
 
@@ -150,7 +150,7 @@ imageCredit:
 
 <h2>Final Thoughts</h2>
 
-<p>Writing down allowance rates have changed. The main rate is now 14%, and the special rate is 4%. For most agency founders, the impact is manageable because the AIA still covers the first £1 million of qualifying expenditure. But if you have a large pool balance or are investing in integral features, the rate drop will slow your tax relief.</p>
+<p>Writing down allowance rates have changed. The main rate is now 14%, and the special rate is unchanged at 6%. For most agency founders, the impact is manageable because the AIA still covers the first £1 million of qualifying expenditure. But if you have a large main pool balance, the rate drop will slow your tax relief.</p>
 
 <p>Review your fixed asset register. Check your pool classifications. And if you are planning capital expenditure, factor the new rates into your cash flow projections.</p>
 

@@ -135,7 +135,7 @@ keyTakeaways:
 
 <p><strong>Full Expensing</strong> is available for limited companies on most main-rate plant and machinery. It is effectively a 100% first-year allowance with no cap. It applies to new assets only, not second-hand. This is more generous than the AIA for companies buying expensive new equipment.</p>
 
-<p>For cars, the rules differ. Only new zero-emission cars (0 g/km CO2) qualify for the 100% first-year allowance. Cars emitting 1 to 50 g/km go into the main pool at 18% writing-down allowance. Cars emitting over 50 g/km go into the special-rate pool at 6%.</p>
+<p>For cars, the rules differ. Only new zero-emission cars (0 g/km CO2) qualify for the 100% first-year allowance. Cars emitting 1 to 50 g/km go into the main pool at 14% writing-down allowance (Finance Act 2026 s.28 cut the main-pool rate from 18% to 14% for chargeable periods beginning on or after 1 April 2026 for corporation tax and 6 April 2026 for income tax). Cars emitting over 50 g/km go into the special-rate pool at 6%.</p>
 
 <h3>R&D Tax Credits</h3>
 <p>If your company undertakes research and development in science or technology, you can claim R&D tax credits. For accounting periods starting on or after 1 April 2024, the merged scheme applies. Loss-making companies spending more than 30% of their total costs on R&D can use the <strong>Enhanced R&D Intensive Scheme (ERIS)</strong>.</p>

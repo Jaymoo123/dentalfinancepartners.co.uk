@@ -108,7 +108,7 @@ faqs:
 <p>As a locum solicitor, you may need to buy your own laptop, printer, phone, or legal software. The tax treatment depends on the cost:</p>
 <ul>
 <li><strong>Items costing less than £2,000:</strong> Claimed as an allowable expense in full in the year of purchase (using the Annual Investment Allowance if you are a sole trader).</li>
-<li><strong>Items costing £2,000 or more:</strong> Capital allowances claimed over several years (typically 18% per year on a reducing balance basis for most IT equipment).</li>
+<li><strong>Items costing £2,000 or more:</strong> Capital allowances claimed over several years (14% per year on a reducing balance basis for most IT equipment in the main pool from April 2026, down from 18%).</li>
 </ul>
 
 <p>Software subscriptions (e.g., case management systems, cloud storage) are revenue expenses and fully deductible in the year paid.</p>

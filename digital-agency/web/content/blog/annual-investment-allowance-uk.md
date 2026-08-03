@@ -19,9 +19,9 @@ faqs:
 - question: Can I claim the AIA on a laptop I use for my agency?
   answer: Yes, laptops qualify as plant and machinery under the AIA. You can claim 100% relief on the cost in the year you buy it, up to the £1 million limit. If you use the laptop partly for personal purposes, you can only claim the business-use proportion. Keep a record of your business use percentage in case HMRC asks.
 - question: What happens if I spend more than £1 million on equipment in one year?
-  answer: If you are a limited company, you may be able to use full expensing instead of the AIA. Full expensing gives 100% relief on most plant and machinery with no cap. It applies to main pool assets only. If you are a sole trader or partnership, any spending above the £1 million AIA limit goes into the general capital allowance pool and attracts writing-down allowances at 18% or 6% per year.
+  answer: If you are a limited company, you may be able to use full expensing instead of the AIA. Full expensing gives 100% relief on most plant and machinery with no cap. It applies to main pool assets only. If you are a sole trader or partnership, any spending above the £1 million AIA limit goes into the general capital allowance pool and attracts writing-down allowances at 14% or 6% per year.
 - question: Can I claim the AIA on a car for my agency?
-  answer: No, cars do not qualify for the Annual Investment Allowance. They have their own capital allowance rules based on CO2 emissions. Low-emission cars (under 50g/km) qualify for 100% first-year allowances. Other cars attract writing-down allowances at 18% or 6% per year. If you buy a car through your agency, speak to your accountant about the correct treatment.
+  answer: No, cars do not qualify for the Annual Investment Allowance. They have their own capital allowance rules based on CO2 emissions. Only new, unused zero-emission cars (0g/km) qualify for 100% first-year allowances. Other cars attract writing-down allowances at 14% or 6% per year. If you buy a car through your agency, speak to your accountant about the correct treatment.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
@@ -82,7 +82,7 @@ imageCredit:
 
 <p>The £1 million limit is an annual figure. If your accounting period is shorter or longer, you must adjust it proportionally <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
-<p>For example, if you start a new company and your first accounting period is 9 months, your AIA limit is 9/12 x £1,000,000 = £750,000. If you buy £800,000 of equipment in that period, only £750,000 qualifies for immediate relief. The remaining £50,000 goes into the general capital allowance pool and attracts relief at 18% or 6% per year.</p>
+<p>For example, if you start a new company and your first accounting period is 9 months, your AIA limit is 9/12 x £1,000,000 = £750,000. If you buy £800,000 of equipment in that period, only £750,000 qualifies for immediate relief. The remaining £50,000 goes into the general capital allowance pool and attracts relief at 14% or 6% per year (the main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax).</p>
 
 <p>This matters most for new agencies or companies changing their year-end. Check your accounting period length before making large purchases.</p>
 
@@ -126,7 +126,7 @@ imageCredit:
 
 <h2>Common Mistakes Agency Founders Make</h2>
 
-<p><strong>Claiming on cars.</strong> Cars do not qualify for the AIA. They have separate capital allowance rules based on CO2 emissions. If you buy a car through your agency, expect 18% or 6% writing-down allowances, not 100% relief.</p>
+<p><strong>Claiming on cars.</strong> Cars do not qualify for the AIA. They have separate capital allowance rules based on CO2 emissions. If you buy a car through your agency, expect 14% or 6% writing-down allowances, not 100% relief.</p>
 
 <p><strong>Forgetting the connected companies rule.</strong> If you own multiple agencies, check whether they are under common control. If they are, the £1 million limit is shared. Plan purchases across the group accordingly.</p>
 

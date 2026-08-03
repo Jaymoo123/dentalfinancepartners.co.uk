@@ -126,7 +126,7 @@ editorialNote: "Wave 4 C1 (IHT). The negative-case anchor for the pure-BTL cohor
 <li><strong>Charitable legacy on second death.</strong> Where at least 10% of the relevant component of the estate passes to a qualifying charity, the IHT rate on the chargeable estate drops from 40% to 36% under Schedule 1A IHTA 1984. For portfolios above approximately £2m, the maths often makes the charity gift self-funding in net terms.</li>
 </ul>
 
-<p>Combining these routes against your own facts (current age, portfolio composition, mortgage position, projected April 2027 pension-IHT inclusion, expected nil-rate band freezes through to 2030) is the work of <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords: 2026 Onwards</a>. For the underlying mechanics (NRB and RNRB, the £2m taper, and the cross-cutting interactions), see <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance Tax on UK Rental Property</a>.</p>
+<p>Combining these routes against your own facts (current age, portfolio composition, mortgage position, projected April 2027 pension-IHT inclusion, expected nil-rate band freezes through to 5 April 2031) is the work of <a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords: 2026 Onwards</a>. For the underlying mechanics (NRB and RNRB, the £2m taper, and the cross-cutting interactions), see <a href="/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide">Inheritance Tax on UK Rental Property</a>.</p>
 
 <h2>The single planning sentence to take away</h2>
 

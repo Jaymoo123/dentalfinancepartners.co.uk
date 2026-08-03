@@ -112,9 +112,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li>AIA claim: £1,000,000 (100% relief)</li>
-<li>Remaining £400,000 goes into the main pool at 18% writing down allowance: £72,000 relief in year one</li>
+<li>Remaining £400,000 goes into the main pool at the 18% writing down allowance that applied to that pre-April 2026 period: £72,000 relief in year one</li>
 <li>Total first-year relief: £1,072,000</li>
 </ul>
+
+<p>The same spend in the year to 31 March 2027 would attract the 14% rate instead, so the £400,000 would give £56,000 of relief in year one and total first-year relief of £1,056,000.</p>
 
 <p>The remaining balance in the main pool continues to attract writing down allowances in future years.</p>
 
@@ -185,7 +187,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>We see the same errors repeatedly when reviewing capital allowance claims.</p>
 
-<p><strong>Claiming AIA on cars.</strong> Most cars are excluded. Only vans, lorries, and specialist vehicles (like hearses or mobile workshops) qualify. If you buy a car for your business, it goes into the main pool at 18% or the special rate pool at 6%, depending on CO2 emissions.</p>
+<p><strong>Claiming AIA on cars.</strong> Most cars are excluded. Only vans, lorries, and specialist vehicles (like hearses or mobile workshops) qualify. If you buy a car for your business, it goes into the main pool at 14% from April 2026 (18% for earlier periods) or the special rate pool at 6%, depending on CO2 emissions.</p>
 
 <p><strong>Forgetting the associated company rules.</strong> Business owners often set up a second company without realising the AIA limit is shared. The result is an overclaimed AIA and a tax bill plus interest when HMRC catches it.</p>
 

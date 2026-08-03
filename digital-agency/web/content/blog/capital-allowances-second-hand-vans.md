@@ -7,21 +7,21 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'Capital Allowances on Second Hand Vans: Agency Tax Guide'
-metaDescription: Learn how capital allowances on second hand vans work for UK agencies. Claim AIA or 18% writing-down allowances. Practical examples for agency owners.
+metaDescription: Learn how capital allowances on second hand vans work for UK agencies. Claim AIA or 14% writing-down allowances. Practical examples for agency owners.
 altText: Agency founder reviewing paperwork for a second-hand van purchase, with a van visible through the office window.
 image: https://images.pexels.com/photos/33623771/pexels-photo-33623771.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Capital Allowances on Second Hand Vans for UK Agencies: What You Can Claim'
-summary: Second-hand vans qualify for capital allowances, but the rules differ from new vans. You can claim 100% relief through the Annual Investment Allowance (AIA) up to £1m, or 18% writing-down allowances each year. This guide explains the options for UK agency founders.
+summary: Second-hand vans qualify for capital allowances, but the rules differ from new vans. You can claim 100% relief through the Annual Investment Allowance (AIA) up to £1m, or 14% writing-down allowances each year. This guide explains the options for UK agency founders.
 schema: ''
 faqs:
 - question: Can I claim AIA on a second-hand van?
-  answer: Yes, you can claim the Annual Investment Allowance (AIA) on a second-hand van, provided it is unused and not previously owned by you. The AIA gives 100% relief on the cost up to £1 million per year. If you have already used your AIA limit on other assets, you claim 18% writing-down allowances instead. According to gov.uk guidance, vans qualify for AIA because they are not treated as cars for capital allowances purposes.
+  answer: Yes, you can claim the Annual Investment Allowance (AIA) on a second-hand van, provided it is unused and not previously owned by you. The AIA gives 100% relief on the cost up to £1 million per year. If you have already used your AIA limit on other assets, you claim 14% writing-down allowances instead. According to gov.uk guidance, vans qualify for AIA because they are not treated as cars for capital allowances purposes.
 - question: What is the difference between full expensing and AIA for vans?
   answer: Full expensing gives a 100% first-year allowance on new and unused plant and machinery only. It does not apply to second-hand vans. The Annual Investment Allowance (AIA) also gives 100% relief, but it applies to both new and second-hand assets, including vans. So for a second-hand van, AIA is your route to full relief in year one. Full expensing is not available for used assets.
 - question: Do I need to restrict my capital allowance claim if I use the van privately?
   answer: Yes. If you use the van partly for private journeys, you must restrict your capital allowance claim to the business-use proportion. For example, if you use the van 70% for business and 30% for personal trips, you claim capital allowances on 70% of the cost. Keep a mileage log to support your calculation. HMRC can ask for evidence of business versus private use.
 - question: What happens if I buy a second-hand electric van?
-  answer: Second-hand electric vans bought from April 2021 qualify for main rate allowances, not the 100% first-year allowances available on new electric vans. You can claim AIA on a second-hand electric van, giving 100% relief in year one. If you cannot claim AIA, you claim 18% writing-down allowances on the reducing balance. The rules are the same as for petrol or diesel vans.
+  answer: Second-hand electric vans bought from April 2021 qualify for main rate allowances, not the 100% first-year allowances available on new electric vans. You can claim AIA on a second-hand electric van, giving 100% relief in year one. If you cannot claim AIA, you claim 14% writing-down allowances on the reducing balance. The rules are the same as for petrol or diesel vans.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
@@ -57,7 +57,7 @@ imageCredit:
 
 <p>For capital allowances, a car is defined as a vehicle that is suitable for private use and was not built primarily for transporting goods <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Vans, by contrast, are built for carrying goods. Motorcycles, lorries, vans, and trucks do not count as cars for capital allowances purposes <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
-<p>This distinction matters because vans qualify for more generous relief than cars. Specifically, vans qualify for the Annual Investment Allowance (AIA) and, in some cases, first-year allowances. Cars generally do not qualify for AIA and are restricted to writing-down allowances at either 18% (main rate) or 6% (special rate) depending on CO2 emissions.</p>
+<p>This distinction matters because vans qualify for more generous relief than cars. Specifically, vans qualify for the Annual Investment Allowance (AIA) and, in some cases, first-year allowances. Cars generally do not qualify for AIA and are restricted to writing-down allowances at either 14% (main rate) or 6% (special rate) depending on CO2 emissions.</p>
 
 <p>If you run a digital agency in Manchester Northern Quarter and you buy a second-hand van to transport equipment to client shoots, that van is a van for tax purposes. If you buy a second-hand SUV and use it to visit clients, HMRC may treat it as a car. The distinction is factual, not based on what the manufacturer calls it.</p>
 
@@ -67,7 +67,7 @@ imageCredit:
 
 <p>There is a catch. The AIA applies to second-hand vans only if they are unused and not previously owned by the claimant <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. In practice, this means a genuinely second-hand van that you buy from a dealer or private seller qualifies for AIA. A van that you previously owned personally and then transferred into your company does not qualify for AIA on that transfer.</p>
 
-<p>If you cannot claim AIA, or if you have already used your £1m AIA limit for the year on other assets, you claim writing-down allowances instead. For second-hand vans, the main rate writing-down allowance of 18% per annum applies <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. You claim 18% of the cost each year on a reducing balance basis.</p>
+<p>If you cannot claim AIA, or if you have already used your £1m AIA limit for the year on other assets, you claim writing-down allowances instead. For second-hand vans, the main rate writing-down allowance of 14% per annum applies <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. You claim 14% of the cost each year on a reducing balance basis (the main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax).</p>
 
 <p>Full expensing, which gives a 100% first-year allowance, is available for new and unused plant and machinery only <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. It does not apply to second-hand vans. So do not confuse full expensing with AIA. AIA is your route to 100% relief on second-hand vans.</p>
 
@@ -81,7 +81,7 @@ imageCredit:
 
 <p>Same van, same agency. But you have already used your £1m AIA allowance on new office equipment and software. You cannot claim AIA on the van.</p>
 
-<p>You claim 18% writing-down allowance instead. In year one, you claim £2,646 (18% of £14,700). The remaining value carried forward is £12,054. In year two, you claim £2,170 (18% of £12,054). And so on.</p>
+<p>You claim 14% writing-down allowance instead. In year one, you claim £2,058 (14% of £14,700). The remaining value carried forward is £12,642. In year two, you claim £1,770 (14% of £12,642). And so on.</p>
 
 <p>This is slower than AIA, but it still gives relief over time. If you expect to buy significant assets in future years, you might choose to save your AIA for those and use writing-down allowances on the van instead.</p>
 
@@ -105,7 +105,7 @@ imageCredit:
 
 <p>Electric vans are treated more generously. New and unused electric vans with CO2 emissions of 0g/km bought from April 2021 qualify for 100% first-year allowances <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. That means full relief in year one, regardless of AIA.</p>
 
-<p>Second-hand electric vans bought from April 2021 qualify for main rate allowances, not 100% first-year allowances <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. So the same rules apply as for second-hand petrol or diesel vans: AIA or 18% writing-down allowances.</p>
+<p>Second-hand electric vans bought from April 2021 qualify for main rate allowances, not 100% first-year allowances <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. So the same rules apply as for second-hand petrol or diesel vans: AIA or 14% writing-down allowances.</p>
 
 <p>If you are considering an electric van for your agency, the tax position is better on a new one. But second-hand electric vans still give you relief through AIA, which is still 100% in year one.</p>
 

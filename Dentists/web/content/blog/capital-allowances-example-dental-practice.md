@@ -17,7 +17,7 @@ faqs:
 - question: Can I claim capital allowances on second-hand dental equipment?
   answer: Yes, second-hand equipment qualifies for capital allowances under the Annual Investment Allowance (AIA) up to £1 million. The equipment must be plant and machinery used in your dental practice. You need a valid invoice and proof of purchase. The AIA covers both new and used assets, unlike full expensing which is for new assets only. If you buy a practice as a going concern, agree a value for the equipment with the seller using a Section 198 election to secure your claim.
 - question: What is the difference between AIA and writing-down allowances?
-  answer: The Annual Investment Allowance (AIA) gives 100% tax relief in the year you buy the equipment, up to £1 million per year. Writing-down allowances give relief over several years at 18% per year for most plant and machinery (main rate pool) or 6% per year for integral features and long-life assets (special rate pool). You use AIA first on qualifying items, then any remaining expenditure goes into the relevant pool for writing-down allowances.
+  answer: The Annual Investment Allowance (AIA) gives 100% tax relief in the year you buy the equipment, up to £1 million per year. Writing-down allowances give relief over several years at 14% per year for most plant and machinery (main rate pool), down from 18% before April 2026, or 6% per year for integral features and long-life assets (special rate pool). You use AIA first on qualifying items, then any remaining expenditure goes into the relevant pool for writing-down allowances.
 - question: Do dental chairs qualify for the Annual Investment Allowance?
   answer: Yes, dental chairs are plant and machinery and qualify for the AIA. This includes the chair itself, the delivery system, the overhead light, and any integrated equipment. If you buy a new chair for £14,000, you can claim the full £14,000 as a capital allowance in the year of purchase, provided your total AIA-eligible spend for the year does not exceed £1 million. Keep the invoice and a description of the chair for your records.
 - question: Can I claim capital allowances on a practice building?
@@ -69,9 +69,9 @@ imageCredit:
 
 <h2>What Happens When You Spend More Than the AIA Limit?</h2>
 
-<p>If Dr Patel had spent £1.2 million on equipment in the same year, the AIA would cover the first £1 million. The remaining £200,000 would go into the main rate pool and qualify for writing-down allowances at 18% per year on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>If Dr Patel had spent £1.2 million on equipment in the same year, the AIA would cover the first £1 million. The remaining £200,000 would go into the main rate pool and qualify for writing-down allowances at 14% per year on a reducing balance basis, the rate set by Finance Act 2026 section 28 from 1 April 2026 for corporation tax and 6 April 2026 for income tax (it was 18% before then) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
-<p>In year one, she would claim £1 million under AIA plus £36,000 (18% of £200,000) as a writing-down allowance. The remaining £164,000 carries forward to the next year, when she claims 18% of that balance, and so on.</p>
+<p>In year one, she would claim £1 million under AIA plus £28,000 (14% of £200,000) as a writing-down allowance. The remaining £172,000 carries forward to the next year, when she claims 14% of that balance, and so on.</p>
 
 <p>For most dental practices, spending over £1 million on equipment in a single year is rare. The AIA limit is generous enough to cover even a full practice fit-out. But if you buy a practice that includes existing equipment, the rules differ.</p>
 

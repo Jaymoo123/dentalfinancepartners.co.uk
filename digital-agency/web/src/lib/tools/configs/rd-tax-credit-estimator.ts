@@ -1,6 +1,6 @@
 /**
  * R&D Tax Credit Estimator — GenericTool config.
- * Post-April 2023 merged scheme. 2025/26.
+ * Post-April 2023 merged scheme. 2026/27.
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -16,11 +16,11 @@ export const rdTaxCreditTool: GenericTool = {
   category: "Tax planning",
   oneLiner:
     "Directional estimate of your R&D tax credit under the post-April 2023 merged scheme, including the R&D-intensive enhanced rate.",
-  metaTitle: "R&D Tax Credit Estimator 2025/26 | Free UK Calculator",
+  metaTitle: "R&D Tax Credit Estimator 2026/27 | Free UK Calculator",
   metaDescription:
     "Free R&D tax credit estimator for UK agencies. Post-April 2023 merged scheme. Standard 20% and intensive 27% rates. No sign-up.",
   intro:
-    "Estimate your R&D tax credit under HMRC's merged scheme. Standard rate is 20%; R&D-intensive SMEs (40%+ of total expenditure on qualifying R&D) get 27%. This is a directional estimate only.",
+    "Estimate your R&D tax credit under HMRC's merged scheme. Standard rate is 20%; R&D-intensive SMEs (30%+ of total expenditure on qualifying R&D) get 27%. This is a directional estimate only.",
   embedHeight: 420,
   fields: [
     {
@@ -102,7 +102,7 @@ export const rdTaxCreditTool: GenericTool = {
   explainer: {
     heading: "How R&D tax credits work",
     paragraphs: [
-      "Under the merged RDEC scheme (April 2023+), companies get an above-the-line credit of 20% on qualifying expenditure. For R&D-intensive SMEs (where qualifying R&D is 40%+ of total spend), the rate rises to 27%. The credit is taxable income, so the net benefit is approximately 75% of the gross credit for a company paying 25% corporation tax.",
+      "Under the merged RDEC scheme (April 2023+), companies get an above-the-line credit of 20% on qualifying expenditure. For R&D-intensive SMEs (where qualifying R&D is 30%+ of total spend, lowered from 40% for accounting periods beginning on or after 1 April 2024), the rate rises to 27%. The credit is taxable income, so the net benefit is approximately 75% of the gross credit for a company paying 25% corporation tax.",
       "Qualifying expenditure includes staff time on R&D, 65% of subcontractor costs, consumables and software/cloud used for R&D. Actual claims involve detailed scoping and HMRC-specific rules not fully modelled here.",
     ],
   },
@@ -110,7 +110,7 @@ export const rdTaxCreditTool: GenericTool = {
     {
       question: "What is the merged RDEC scheme?",
       answer:
-        "From April 2023, HMRC merged the SME and RDEC schemes into a single scheme for most companies. The headline rate is 20% above-the-line credit on qualifying expenditure. R&D-intensive SMEs (40%+ intensity) get a higher 27% rate.",
+        "From April 2023, HMRC merged the SME and RDEC schemes into a single scheme for most companies. The headline rate is 20% above-the-line credit on qualifying expenditure. R&D-intensive SMEs (30%+ intensity) get a higher 27% rate.",
     },
     {
       question: "Why is only 65% of subcontractor cost claimable?",

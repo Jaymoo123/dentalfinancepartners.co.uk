@@ -75,7 +75,7 @@ imageCredit:
 <p>AIA cannot be claimed on cars, assets used for leasing, or assets that are not plant and machinery <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. For a dental practice, the main exclusions are:</p>
 
 <ul>
-<li><strong>Cars</strong>, Business cars do not qualify for AIA. You claim writing-down allowances instead, at 18% or 6% per year depending on CO2 emissions.</li>
+<li><strong>Cars</strong>, Business cars do not qualify for AIA. You claim writing-down allowances instead, at 14% or 6% per year depending on CO2 emissions (the main-pool rate fell from 18% to 14% from April 2026 under Finance Act 2026 section 28).</li>
 <li><strong>Assets used for leasing</strong>, If you buy equipment to lease to another practice, you cannot claim AIA on it.</li>
 <li><strong>Buildings and land</strong>, The cost of the practice building itself does not qualify for AIA. However, you may be able to claim Structures and Buildings Allowance at 3% per year on qualifying construction costs.</li>
 <li><strong>Assets acquired from a connected person</strong>, AIA is not available on assets acquired from a connected person, even if the asset is second-hand <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This includes purchases from a spouse, business partner, or a company you control.</li>
@@ -110,7 +110,7 @@ imageCredit:
 
 <p>If Dr. Patel is a limited company paying corporation tax at 19%, the tax saving is £3,800. If she is a sole trader paying higher-rate income tax at 40%, the saving is £8,000. The AIA makes a significant difference to cash flow in the year of investment.</p>
 
-<p>Now consider a different scenario. Dr. Patel buys a practice from a seller who has claimed AIA on all the equipment. She pays £500,000 for the practice, with £100,000 allocated to equipment in the sale agreement. She cannot claim AIA on that £100,000 because the equipment is not "unused" for capital allowance purposes. Instead, she claims writing-down allowances at 18% per year on the reducing balance, giving her £18,000 relief in year one, then £14,760 in year two, and so on.</p>
+<p>Now consider a different scenario. Dr. Patel buys a practice from a seller who has claimed AIA on all the equipment. She pays £500,000 for the practice, with £100,000 allocated to equipment in the sale agreement. She cannot claim AIA on that £100,000 because the equipment is not "unused" for capital allowance purposes. Instead, she claims writing-down allowances at the main-pool rate of 14% per year on the reducing balance, giving her £14,000 relief in year one, then £12,040 in year two, and so on. The main-pool rate was 18% for periods before April 2026.</p>
 
 <h2>What If You Use the Asset Partly for Business and Partly for Private Use?</h2>
 

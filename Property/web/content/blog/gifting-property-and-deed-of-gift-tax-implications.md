@@ -147,7 +147,7 @@ faqs:
 
 <p>A gift of property to an individual is a potentially exempt transfer (PET) under <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/3A" rel="nofollow noopener" target="_blank">IHTA 1984 s.3A</a>. No IHT is payable at the date of gift. The gift becomes fully exempt if the donor survives 7 years from the date of the PET. The 7-year clock starts on the date the deed of gift is executed and legal title passes.</p>
 
-<p>If the donor dies within 7 years, the PET becomes chargeable. The value brought into the IHT computation is the value of the gift at the date it was made (not the value at death). That value is set against the donor's available nil-rate band (£325,000, frozen to April 2030). Any excess above the NRB is charged at 40%. Taper relief under <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/7" rel="nofollow noopener" target="_blank">IHTA 1984 s.7(4)</a> reduces the IHT tax charge (not the gift value and not the amount using up the NRB) where the donor survives at least 3 years.</p>
+<p>If the donor dies within 7 years, the PET becomes chargeable. The value brought into the IHT computation is the value of the gift at the date it was made (not the value at death). That value is set against the donor's available nil-rate band (£325,000, frozen to 5 April 2031). Any excess above the NRB is charged at 40%. Taper relief under <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/7" rel="nofollow noopener" target="_blank">IHTA 1984 s.7(4)</a> reduces the IHT tax charge (not the gift value and not the amount using up the NRB) where the donor survives at least 3 years.</p>
 
 <h3>Taper relief: what it reduces and what it does not</h3>
 

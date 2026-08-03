@@ -19,9 +19,9 @@ faqs:
 - question: Does the AIA apply to practice management software?
   answer: Yes, practice management software and other computer software used in your dental business qualifies as plant and machinery for capital allowances purposes. You can claim AIA on the purchase cost of the software licence if it is a capital purchase (not a monthly subscription). If you pay an annual subscription, that is a revenue expense and is deductible as a normal trading cost, not through capital allowances.
 - question: What happens if I spend more than £1 million on equipment in one year?
-  answer: If your qualifying expenditure exceeds the £1 million AIA cap, the excess goes into your main pool and attracts writing-down allowances at 18% per year on a reducing balance basis. For limited companies, full expensing may be available on the excess, giving 100% relief without a cap. For sole traders and partnerships, the excess is written down at 18% per year. Plan your purchases across tax years if you expect to exceed the cap.
+  answer: If your qualifying expenditure exceeds the £1 million AIA cap, the excess goes into your main pool and attracts writing-down allowances at 14% per year on a reducing balance basis, down from 18% before April 2026 (Finance Act 2026 section 28). For limited companies, full expensing may be available on the excess, giving 100% relief without a cap. For sole traders and partnerships, the excess is written down at 14% per year. Plan your purchases across tax years if you expect to exceed the cap.
 - question: Can I claim AIA on a car used for my dental practice?
-  answer: No, cars do not qualify for the AIA. They are treated separately under capital allowances rules. Business cars go into a special pool and attract writing-down allowances at either 6% or 18% per year depending on their CO2 emissions. If you use the car partly for private purposes, you must restrict the claim to the business-use proportion. For most dentists, leasing or using a mileage claim may be more tax-efficient than buying a car through the practice.
+  answer: No, cars do not qualify for the AIA. They are treated separately under capital allowances rules. Business cars go into a separate pool and attract writing-down allowances at either 6% or 14% per year depending on their CO2 emissions (the main-pool rate was 18% before April 2026). If you use the car partly for private purposes, you must restrict the claim to the business-use proportion. For most dentists, leasing or using a mileage claim may be more tax-efficient than buying a car through the practice.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
@@ -76,7 +76,7 @@ imageCredit:
 <h2>What Does Not Qualify for AIA?</h2>
 <p>Several common practice costs do not qualify for the AIA:</p>
 <ul>
-<li><strong>Cars</strong>, these go into a separate pool and attract writing-down allowances at 6% or 18% depending on CO2 emissions.</li>
+<li><strong>Cars</strong>, these go into a separate pool and attract writing-down allowances at 6% or 14% depending on CO2 emissions (the main-pool rate was 18% before April 2026).</li>
 <li><strong>Buildings and land</strong>, the structure of the practice building itself does not qualify. However, fixtures that are integral to the building (such as electrical systems, air conditioning, and lifts) may qualify as special rate pool assets.</li>
 <li><strong>Assets used for leasing</strong>, if you lease equipment to another practice, you cannot claim AIA on it.</li>
 <li><strong>Assets with a life of more than 100 years</strong>, this is rare in dentistry but includes items like antique furniture.</li>

@@ -147,7 +147,7 @@ export const GUIDES: Record<string, Guide> = {
 <h3>4.3 What does not qualify?</h3>
 <ul>
 <li>Buildings and land</li>
-<li>Cars (they qualify for writing-down allowances at 6% or 18% depending on CO2 emissions)</li>
+<li>Cars (they qualify for writing-down allowances at 6% or 14% depending on CO2 emissions; the main-pool rate was 18% before Finance Act 2026 s.28 cut it from April 2026)</li>
 <li>Items used partly for private purposes (you can only claim the business proportion)</li>
 </ul>
 

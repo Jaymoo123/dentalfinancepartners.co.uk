@@ -16,7 +16,7 @@ export const badrCgtTool: GenericTool = {
   category: "Growth and exit",
   oneLiner:
     "Work out your CGT bill on an agency sale under Business Asset Disposal Relief. Models the 2025/26 14% rate and 2026/27 18% rate.",
-  metaTitle: "BADR CGT Calculator 2025/26 | Business Asset Disposal Relief",
+  metaTitle: "BADR CGT Calculator 2026/27 | Business Asset Disposal Relief",
   metaDescription:
     "Free BADR CGT calculator for UK agency founders. Models 14% (2025/26) and 18% (2026/27) rates with £1m lifetime allowance. No sign-up.",
   intro:

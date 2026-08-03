@@ -21,7 +21,7 @@ faqs:
 - question: Does the annual investment allowance apply to software?
   answer: It depends on the type of software. A one-off perpetual licence purchase typically qualifies as plant and machinery, so you can claim AIA. Monthly subscription fees are revenue expenditure and are deducted through your profit and loss account instead. Check with your accountant if you are unsure about a specific licence.
 - question: What happens if I spend more than £1 million on equipment in one year?
-  answer: The excess over £1 million does not qualify for AIA. It goes into your main pool (18% writing down allowance) or special rate pool (6% WDA), depending on the asset type. You still get tax relief, just spread over several years. Full expensing may also be available for limited companies on main pool assets, with no cap.
+  answer: The excess over £1 million does not qualify for AIA. It goes into your main pool (14% writing down allowance) or special rate pool (6% WDA), depending on the asset type. You still get tax relief, just spread over several years. Full expensing may also be available for limited companies on main pool assets, with no cap.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
@@ -59,7 +59,7 @@ imageCredit:
 <li>Servers, networking equipment, and data storage</li>
 <li>Telephone systems and video conferencing equipment</li>
 <li>Air conditioning, heating, and ventilation systems</li>
-<li>Company cars (with some restrictions on CO2 emissions)</li>
+<li>Vans, lorries and other commercial vehicles (these are plant, not cars)</li>
 <li>Tools and equipment used by your team</li>
 <li>Certain building fixtures (solar panels, lifts, fire alarms)</li>
 </ul>
@@ -72,7 +72,7 @@ imageCredit:
 
 <ul>
 <li><strong>Buildings and land</strong>, you cannot claim AIA on the cost of buying or constructing a building</li>
-<li><strong>Cars with high CO2 emissions</strong>, cars over 50g/km CO2 do not qualify for AIA; they go into the main or special rate pools instead</li>
+<li><strong>Cars, all of them</strong>, no car qualifies for AIA regardless of CO2 emissions (CAA 2001 s.38B). Cars up to 50g/km go into the main pool (14% writing down allowance) and cars over 50g/km into the special rate pool (6%). The one exception is a first-year allowance, not AIA: a new and unused zero-emission car (0g/km) gets a 100% first-year allowance, available to 31 March 2027 for corporation tax and 5 April 2027 for income tax. Vans and other commercial vehicles are not cars and do qualify for AIA</li>
 <li><strong>Items used partly for business</strong>, if you use a laptop 60% for business and 40% personally, you can only claim AIA on the business proportion</li>
 <li><strong>Gifts and items you already owned</strong>, you cannot claim AIA on something you owned before starting your business; you use market value instead <sup><a href="#ref-3" id="cite-3">[3]</a></sup></li>
 <li><strong>Items bought in the final accounting period before your business closes</strong>, no AIA is available in that period <sup><a href="#ref-1" id="cite-1">[1]</a></sup></li>
@@ -84,7 +84,7 @@ imageCredit:
 
 <p>For example, if your accounting period is 9 months, the AIA will be 9/12 x £1,000,000 = £750,000 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
-<p>If you spend more than the AIA limit in a period, the excess goes into your main pool (18% writing down allowance) or special rate pool (6% writing down allowance), depending on the asset type. You get tax relief, just spread over several years instead of immediately.</p>
+<p>If you spend more than the AIA limit in a period, the excess goes into your main pool (14% writing down allowance, reduced from 18% by Finance Act 2026 section 28 with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax) or special rate pool (6% writing down allowance), depending on the asset type. You get tax relief, just spread over several years instead of immediately.</p>
 
 <h2>When Is the Equipment 'Bought' for AIA Purposes?</h2>
 
@@ -106,14 +106,14 @@ imageCredit:
 
 <ul>
 <li><strong>Sole traders and partnerships</strong> cannot use full expensing. AIA is their main route to immediate relief.</li>
-<li><strong>Special rate assets</strong> (long-life assets, integral features, cars over 50g/km CO2) qualify for a 50% first-year allowance under full expensing, but only 6% writing down allowance in the main pool. AIA gives 100% relief on these assets up to the £1 million limit.</li>
+<li><strong>Special rate assets</strong> (long-life assets, integral features) qualify for a 50% first-year allowance under full expensing, and otherwise only 6% writing down allowance in the special rate pool. AIA gives 100% relief on these assets up to the £1 million limit.</li>
 </ul>
 
 <p>For most limited company agencies, full expensing is simpler and more generous than AIA for main pool assets. But AIA remains useful for special rate assets and for sole traders.</p>
 
 <h2>Worked Example: A Digital Agency Buying Equipment</h2>
 
-<p>Let us run through a realistic scenario. You run a 12-person digital agency in Manchester's Northern Quarter. Your accounting period runs 1 April 2025 to 31 March 2026. Your taxable profit before capital allowances is £400,000.</p>
+<p>Let us run through a realistic scenario. You run a 12-person digital agency in Manchester's Northern Quarter. Your accounting period runs 1 April 2026 to 31 March 2027. Your taxable profit before capital allowances is £400,000.</p>
 
 <p>During the year, you buy:</p>
 
@@ -125,11 +125,13 @@ imageCredit:
 <li>A Tesla Model 3 (company car, 0g/km CO2): £42,000</li>
 </ul>
 
-<p>Total qualifying expenditure: £90,100. All of it qualifies for AIA (the Tesla is electric, so it qualifies).</p>
+<p>Total spend is £90,100, but only £48,100 of that goes into the AIA claim: the laptops, the monitors, the server and the furniture. The Tesla does not, because cars are excluded from AIA outright, and being electric does not change that.</p>
 
-<p>You claim the full £90,100 as an AIA deduction. Your taxable profit reduces to £309,900. At 25% corporation tax (assuming profits exceed £250k), you save £22,525 in tax. That is a real cash saving.</p>
+<p>The car is not lost relief, it just uses a different allowance. A new and unused zero-emission car gets a 100% first-year allowance, so the full £42,000 still comes off this year's profit. Had you bought the same car second-hand, there would be no first-year allowance and it would go into your main pool at 14% writing down allowance instead, giving £5,880 in year one rather than £42,000.</p>
 
-<p>If you had not claimed AIA, the equipment would go into your main pool at 18% writing down allowance. You would get £16,218 relief in year one, not £90,100. The difference is significant.</p>
+<p>So you claim £48,100 of AIA plus a £42,000 first-year allowance on the car. Your taxable profit reduces to £309,900. At 25% corporation tax (assuming profits exceed £250k), you save £22,525 in tax. That is a real cash saving.</p>
+
+<p>If you had not claimed AIA on the equipment, that £48,100 would go into your main pool at 14% writing down allowance. You would get £6,734 relief in year one, not £48,100. The difference is significant.</p>
 
 <h2>How to Claim the AIA</h2>
 
@@ -154,7 +156,7 @@ imageCredit:
 
 <p><strong>Mistake 3: Forgetting the private use adjustment.</strong> If you buy a laptop you use 70% for business and 30% for personal, you can only claim AIA on 70% of the cost. HMRC will adjust this on enquiry.</p>
 
-<p><strong>Mistake 4: Assuming all cars qualify.</strong> Cars with CO2 emissions over 50g/km do not qualify for AIA. They go into the main pool (18% WDA) or special rate pool (6% WDA). Electric cars (0g/km) qualify fully.</p>
+<p><strong>Mistake 4: Putting a car in the AIA claim.</strong> No car qualifies for AIA, whatever its emissions. Cars up to 50g/km go into the main pool (14% WDA), cars over 50g/km into the special rate pool (6% WDA), and a new and unused zero-emission car gets a 100% first-year allowance instead. Electric cars are the most common version of this mistake, because founders assume 0g/km means AIA. It does not, it means a first-year allowance, which is a different claim on the tax computation.</p>
 
 <p><strong>Mistake 5: Not planning purchases across accounting periods.</strong> If you are close to the £1 million limit, consider timing your purchases to maximise relief across two periods.</p>
 

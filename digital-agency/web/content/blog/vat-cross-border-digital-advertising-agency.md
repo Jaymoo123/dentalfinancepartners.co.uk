@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'UK agency VAT on cross-border digital ads: guide'
-metaDescription: 'UK agencies buying or selling digital ads across borders: place of supply rules, reverse charge, VAT registration traps. Practical examples from a specialist agency accountant.'
+metaDescription: 'VAT on cross-border digital advertising for UK agencies: place of supply rules, reverse charge and registration traps, with practical worked examples.'
 altText: UK agency founder reviewing VAT invoices for cross-border digital advertising services at a desk in a modern London office
 image: /blog/vat-cross-border-digital-advertising-agency.jpg
 imageCredit:

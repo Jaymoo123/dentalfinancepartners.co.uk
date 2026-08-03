@@ -16,12 +16,12 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/a-man-in-black-suit-sitting-near-the-wooden-table-while-typing-on-laptop-7567312/"
   source: "Pexels"
 h1: "How to Transfer a Sole Trader Business to a Limited Company Without Triggering a CGT Bill"
-summary: "Incorporation relief allows you to transfer your sole trader business assets to a new limited company without an immediate capital gains tax charge. The relief is automatic if certain conditions are met, but the paperwork matters. We explain how the mechanics work, what qualifies, and the traps that catch people out."
+summary: "Incorporation relief allows you to transfer your sole trader business assets to a new limited company without an immediate capital gains tax charge. For transfers on or after 6 April 2026 the relief has to be claimed (Finance Act 2026 s.39), so the paperwork matters more than ever. We explain how the mechanics work, what qualifies, and the traps that catch people out."
 schema: ""
 faqs: []
 keyTakeaways:
   - "Incorporation relief under TCGA 1992 s.162 defers CGT when a sole trader transfers a business as a going concern to a limited company in exchange for shares."
-  - "The relief applies automatically when all conditions are met, but you can elect out in writing within two years of the transfer if paying CGT now is preferable."
+  - "For transfers on or after 6 April 2026 the relief must be claimed (Finance Act 2026 s.39), on or before the first anniversary of the 31 January following the tax year of the transfer; the old s.162A election to disapply it has been repealed, so if paying CGT now is preferable you simply do not claim."
   - "If any consideration is taken as cash or loan account credit, only the share proportion of the gain is deferred; the cash proportion is immediately chargeable to CGT."
   - "All business assets except cash must be transferred to the company; retaining any asset such as a freehold or goodwill breaks the relief on the entire transfer."
   - "Business Asset Disposal Relief applies 14% for 2025/26 disposals, rising to 18% from 6 April 2026, on the first £1 million of lifetime gains including any deferred incorporation gain."
@@ -53,11 +53,11 @@ howToSteps:
 
 <h2>What Is Incorporation Relief?</h2>
 
-<p>Incorporation relief is a statutory relief that applies automatically when you transfer a business as a going concern to a limited company in exchange for shares in that company. The relief defers the capital gain. You do not pay CGT on the transfer. Instead, the gain is rolled into the base cost of the shares you receive.</p>
+<p>Incorporation relief is a statutory relief that applies when you transfer a business as a going concern to a limited company in exchange for shares in that company and, for transfers on or after 6 April 2026, only if you claim it. The relief defers the capital gain. You do not pay CGT on the transfer. Instead, the gain is rolled into the base cost of the shares you receive.</p>
 
 <p>Think of it as HMRC saying: "You have not really disposed of the business. You have just changed the legal wrapper. So we will treat the gain as if it has not happened yet." The gain is frozen until you sell the shares or the company sells the assets.</p>
 
-<p>The relief is not optional in the sense that you elect into it. If the conditions are met, it applies automatically. But you can elect out of it if you want to pay CGT now (for example, if you have brought-forward losses that would wipe out the gain). That election must be made in writing to HMRC within two years of the transfer.</p>
+<p>For transfers on or after 6 April 2026 the relief is opt-in. Finance Act 2026 s.39 added a claim requirement to TCGA 1992 s.162, so meeting the conditions is no longer enough on its own: you must claim, on or before the first anniversary of the 31 January following the tax year of the transfer (so a transfer in 2026/27 must be claimed by 31 January 2029). The same section repealed s.162A, the old election to disapply the relief, so if you would rather pay CGT now (for example, because you have brought-forward losses that would wipe out the gain) you achieve that simply by not claiming. For transfers before 6 April 2026 the old position still applies: the relief was automatic where the conditions were met, and you had to elect out in writing within two years of the transfer.</p>
 
 <h2>The Conditions for Incorporation Relief</h2>
 
@@ -185,7 +185,7 @@ howToSteps:
 
 <p>Incorporation relief is one of the most valuable tax reliefs available to sole traders who want to move into a limited company structure. It allows you to transfer your business without an immediate CGT bill, deferring the gain until you sell the shares or the company sells the assets.</p>
 
-<p>The relief is automatic if you meet the conditions. But the conditions are strict, and the traps are real. Taking cash, retaining assets, or overvaluing goodwill can cost you the relief or trigger an HMRC enquiry.</p>
+<p>For transfers on or after 6 April 2026 you have to claim the relief, and claim it in time. The conditions are strict too, and the traps are real. Taking cash, retaining assets, or overvaluing goodwill can cost you the relief or trigger an HMRC enquiry.</p>
 
 <p>If you are considering incorporating your sole trader business, talk to an accountant before you do anything. We are <a href="/about">experienced accountants</a> with years of experience in incorporations across every sector. We will help you structure the transfer correctly, value the assets properly, and file the right paperwork.</p>
 

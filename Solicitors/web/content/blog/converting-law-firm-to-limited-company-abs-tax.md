@@ -102,7 +102,7 @@ faqs:
 
 <h2>Capital allowances on fixtures and fit-out</h2>
 
-<p>If the firm owns premises or fixtures, the capital allowances position needs handling on transfer. A <strong>CAA 2001 section 198 election</strong> fixes the value of fixtures as between the old firm and the new company, and it carries a <strong>two-year limit</strong>; missing it can forfeit allowances. Going forward, the company can claim the Annual Investment Allowance (£1 million per year) on qualifying plant and machinery, with writing-down allowances at the main rate of 18%, <strong>reducing to 14% from 1 April 2026</strong> for corporation tax (Finance Act 2026 section 28), and the special rate of 6% on integral features. Keep the fixtures election on the conversion checklist; it is a preventable loss if overlooked.</p>
+<p>If the firm owns premises or fixtures, the capital allowances position needs handling on transfer. A <strong>CAA 2001 section 198 election</strong> fixes the value of fixtures as between the old firm and the new company, and it carries a <strong>two-year limit</strong>; missing it can forfeit allowances. Going forward, the company can claim the Annual Investment Allowance (£1 million per year) on qualifying plant and machinery, with writing-down allowances at the main rate of <strong>14%, reduced from 18% with effect from 1 April 2026</strong> for corporation tax (Finance Act 2026 section 28), and the special rate of 6% on integral features. Keep the fixtures election on the conversion checklist; it is a preventable loss if overlooked.</p>
 
 <h2>After incorporation: how owners are taxed</h2>
 

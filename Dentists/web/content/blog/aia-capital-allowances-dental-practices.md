@@ -15,9 +15,9 @@ summary: The Annual Investment Allowance (AIA) lets dental practices claim 100% 
 schema: ''
 faqs:
 - question: Can I claim AIA on a car used for my dental practice?
-  answer: No. Business cars are specifically excluded from the Annual Investment Allowance. You must claim writing-down allowances on cars instead, at 18% per year on the reducing balance for most cars, or 6% for those with higher CO2 emissions. Vans, lorries, and motorcycles do qualify for AIA, so if you use a van to transport equipment between practices, that can be claimed.
+  answer: No. Business cars are specifically excluded from the Annual Investment Allowance. You must claim writing-down allowances on cars instead, at 14% per year on the reducing balance for main-rate cars (18% before April 2026), or 6% for those with higher CO2 emissions. Vans, lorries, and motorcycles do qualify for AIA, so if you use a van to transport equipment between practices, that can be claimed.
 - question: What happens if my AIA claim exceeds £1 million in a year?
-  answer: If your qualifying expenditure exceeds the £1 million AIA limit, the excess goes into your main pool or special rate pool and attracts writing-down allowances at 18% or 6% per year respectively. You can choose which assets to allocate to the AIA claim, so it is usually best to allocate the highest-value or shortest-life assets to the AIA to maximise the upfront relief.
+  answer: If your qualifying expenditure exceeds the £1 million AIA limit, the excess goes into your main pool or special rate pool and attracts writing-down allowances at 14% or 6% per year respectively, the main-pool rate having been cut from 18% to 14% from April 2026. You can choose which assets to allocate to the AIA claim, so it is usually best to allocate the highest-value or shortest-life assets to the AIA to maximise the upfront relief.
 - question: Do I need a section 198 election when buying a dental practice?
   answer: Yes, if the practice you are buying includes fixtures such as dental chairs, X-ray equipment, or compressors. Without a joint election under section 198 of the Capital Allowances Act 2001, the seller retains the right to capital allowances on those fixtures, and you as the buyer cannot claim them. The election must be made within two years of the sale and should specify the value of each qualifying fixture.
 - question: Can I claim AIA on computer software for my dental practice?
@@ -121,7 +121,7 @@ imageCredit:
 
 <p>All of these items qualify as plant and machinery. Dr. Patel can claim AIA on the full £45,000, reducing her taxable profit by that amount in the 2025/26 tax year. If she is a higher-rate taxpayer, this saves her £18,000 in income tax (40% of £45,000) plus Class 4 National Insurance at 2% on the amount above £50,270.</p>
 
-<p>If Dr. Patel had instead bought a car for £30,000, that would not qualify for AIA. She would need to claim writing-down allowances at 18% per year on the reducing balance instead.</p>
+<p>If Dr. Patel had instead bought a car for £30,000, that would not qualify for AIA. She would need to claim writing-down allowances at 14% per year on the reducing balance instead.</p>
 
 <h2>Common Mistakes Dental Practices Make with AIA</h2>
 
@@ -156,7 +156,7 @@ imageCredit:
 <p>The AIA is not the only capital allowance available to dental practices. You can also claim:</p>
 
 <ul>
-<li><strong>Writing-down allowances</strong>, 18% per year on main-rate pool assets, 6% on special-rate pool assets</li>
+<li><strong>Writing-down allowances</strong>, 14% per year on main-rate pool assets from April 2026 (18% before), 6% on special-rate pool assets</li>
 <li><strong>First-year allowances</strong>, available for certain energy-efficient and environmentally beneficial equipment, and for companies using full expensing</li>
 <li><strong>Structures and Buildings Allowance</strong>, 3% per year on qualifying building costs</li>
 </ul>

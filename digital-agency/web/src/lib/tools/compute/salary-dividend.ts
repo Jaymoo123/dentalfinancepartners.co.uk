@@ -1,7 +1,7 @@
 /**
  * Salary vs dividend optimiser — pure compute, no React, no window/document/fetch.
- * 2025/26 UK tax rates.
- * Employer NI: 15% / £5,000 secondary threshold / £10,500 EA (from 6 Apr 2025).
+ * 2026/27 UK tax rates.
+ * Employer NI: 15% / £5,000 secondary threshold / £10,500 EA (unchanged since 6 Apr 2025).
  * Dividend tax: 10.75% / 35.75% / 39.35% (FA 2026, from 6 Apr 2026).
  *
  * TL-03: zero client/server dependencies; safe to import in golden tests or

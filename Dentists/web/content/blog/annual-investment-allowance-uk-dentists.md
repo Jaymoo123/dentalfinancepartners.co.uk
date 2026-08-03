@@ -17,7 +17,7 @@ faqs:
 - question: Can I claim AIA on a dental chair I bought second-hand?
   answer: Yes, you can claim AIA on second-hand dental chairs and other used equipment, provided they qualify as plant and machinery. The AIA applies to the cost you pay, not the original value. Keep the invoice or receipt as evidence. The same £1 million limit applies to both new and used assets. However, if you buy a practice and the seller has already claimed capital allowances on the chairs, you need a section 198 election to establish your qualifying cost.
 - question: What happens if I spend more than £1 million on equipment in one year?
-  answer: If your qualifying expenditure exceeds the £1 million AIA limit, the excess goes into the main pool (18% writing down allowance) or the special rate pool (6% writing down allowance), depending on the asset type. Limited companies may also use full expensing for expenditure above the AIA limit, which gives 100% relief with no cap. Sole traders and partnerships cannot use full expensing, so they must rely on writing down allowances for the excess.
+  answer: If your qualifying expenditure exceeds the £1 million AIA limit, the excess goes into the main pool (14% writing down allowance from April 2026, 18% before) or the special rate pool (6% writing down allowance), depending on the asset type. Limited companies may also use full expensing for expenditure above the AIA limit, which gives 100% relief with no cap. Sole traders and partnerships cannot use full expensing, so they must rely on writing down allowances for the excess.
 - question: Does the AIA apply to building renovations for my dental practice?
   answer: The AIA does not apply to the cost of the building itself or structural renovations. However, integral building fixtures such as electrical systems, plumbing, air conditioning, and lifts may qualify for the special rate pool at 6% per year. You can claim AIA on plant and machinery installed within the building, such as dental chairs, X-ray units, and compressors. For new buildings or major extensions, the Structures and Buildings Allowance gives 3% per year on qualifying construction costs.
 - question: Can I claim AIA if I use the cash basis for my dental practice accounts?
@@ -80,7 +80,7 @@ imageCredit:
 <li>Record the cost of each qualifying item in your fixed asset register</li>
 <li>In the capital allowances section of your tax computation, enter the total qualifying expenditure</li>
 <li>Apply the AIA deduction up to the £1 million limit</li>
-<li>Any expenditure above the AIA limit goes into the main pool at 18% per year or the special rate pool at 6% per year</li>
+<li>Any expenditure above the AIA limit goes into the main pool at 14% per year (cut from 18% by Finance Act 2026 section 28 from April 2026) or the special rate pool at 6% per year</li>
 </ul>
 
 <p>If you buy something under a hire purchase contract, you can claim AIA when you start using the item, for all payments you will make under the contract <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is useful for dentists who finance equipment through HP rather than paying upfront. You do not need to wait until you have made all the payments.</p>
@@ -103,7 +103,7 @@ imageCredit:
 
 <p><strong>Mistake 1: Not identifying fixtures in a practice purchase.</strong> When you buy an existing practice, the seller may have already claimed capital allowances on fixtures. Without a section 198 election, you cannot claim AIA on those fixtures again. You need a formal apportionment of the purchase price between goodwill, property, and plant. Our <a href="/services/practice-valuation">practice valuation services</a> include capital allowances analysis as part of the due diligence process.</p>
 
-<p><strong>Mistake 2: Claiming AIA on cars.</strong> Cars are specifically excluded from the AIA. You must use the main pool (18%) or special rate pool (6%) depending on CO2 emissions. A common error is treating a practice vehicle as qualifying plant.</p>
+<p><strong>Mistake 2: Claiming AIA on cars.</strong> Cars are specifically excluded from the AIA. You must use the main pool (14%) or special rate pool (6%) depending on CO2 emissions. A common error is treating a practice vehicle as qualifying plant.</p>
 
 <p><strong>Mistake 3: Forgetting the AIA in a short accounting period.</strong> If you change your year-end, the AIA limit reduces proportionally. Dentists who incorporate their practice mid-year often miss this and over-claim.</p>
 
@@ -119,7 +119,7 @@ imageCredit:
 
 <p>Business investment in the UK accounts for around 10% of GDP <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Following the EU referendum in June 2016, there was little growth in investment over the following four years <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. In 2020, investment fell by more than 20% as the Covid pandemic hit <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. The £1 million AIA was introduced partly to stimulate investment, and its future depends on economic conditions.</p>
 
-<p>For dentists planning a practice purchase or major refurbishment, the AIA should be a central part of your financial modelling. The ability to claim 100% relief in year one significantly improves cash flow compared to writing down allowances at 18% per year over six years.</p>
+<p>For dentists planning a practice purchase or major refurbishment, the AIA should be a central part of your financial modelling. The ability to claim 100% relief in year one significantly improves cash flow compared to writing down allowances at 14% per year, which spread the relief over a decade or more on a reducing balance.</p>
 
 <h2>AIA for Associate Dentists and Locums</h2>
 

@@ -11,7 +11,7 @@ metaDescription: Learn how writing down allowance cars works for UK agency owner
 altText: Agency founder reviewing car capital allowance calculations on a laptop in a modern UK office
 image: https://images.pexels.com/photos/7063771/pexels-photo-7063771.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Writing Down Allowance for Cars: A Guide for UK Agency Founders'
-summary: A practical guide to writing down allowances for cars used by agency founders. Covers main rate and special rate pools, electric vehicle first-year allowances, and the upcoming rate changes from April 2026. Includes worked examples for a typical digital agency.
+summary: A practical guide to writing down allowances for cars used by agency founders. Covers main rate and special rate pools, electric vehicle first-year allowances, and the rate changes that took effect from April 2026. Includes worked examples for a typical digital agency.
 schema: ''
 faqs:
 - question: What is the writing down allowance for cars in 2025/26?
@@ -19,7 +19,7 @@ faqs:
 - question: Can I claim writing down allowance on a used car?
   answer: Yes, you can claim writing down allowances on used cars. The car goes into the main rate or special rate pool based on its CO2 emissions. Used cars do not qualify for the 100% first-year allowance available on new electric cars. You claim the appropriate percentage of the purchase cost each year on the reducing balance.
 - question: What happens to writing down allowances from April 2026?
-  answer: From April 2026, the main rate writing down allowance reduces from 18% to 14% for cars bought after that date. A new 40% first-year allowance for main-rate assets is introduced from January 2026. The special rate of 6% remains unchanged. Electric car 100% first-year allowances are extended to March 2027 for corporation tax.
+  answer: From April 2026, the main rate writing down allowance fell from 18% to 14%. A new 40% first-year allowance for main-rate plant and machinery applies to expenditure from January 2026, but cars are excluded from it. The special rate of 6% remains unchanged. Electric car 100% first-year allowances are extended to March 2027 for corporation tax.
 - question: Do I need to restrict my claim if I use the car privately?
   answer: Yes. If you use a company car for both business and private journeys, you must restrict your capital allowance claim to the business use percentage only. You also need to report the private use benefit on form P11D. Keep a mileage log to support your business use percentage in case HMRC asks for evidence.
 dateModified: '2026-05-20'
@@ -52,10 +52,10 @@ imageCredit:
 
 <p>Cars are split into two pools for writing down allowances. The pool determines the rate at which you can claim relief.</p>
 
-<h3>Main Rate Pool (18% per year, reducing to 14% from April 2026)</h3>
-<p>Cars with CO2 emissions of 50g/km or less go into the main rate pool <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This includes most plug-in hybrid cars and all electric cars. The annual writing down allowance is 18% of the car's value on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<h3>Main Rate Pool (14% per year from April 2026, previously 18%)</h3>
+<p>Cars with CO2 emissions of 50g/km or less go into the main rate pool <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This includes most plug-in hybrid cars and all electric cars. The annual writing down allowance is 14% of the car's value on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
-<p>From 1 April 2026 for corporation tax and 6 April 2026 for income tax, this main rate will reduce to 14% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. That means slower tax relief on new main-rate cars bought after that date.</p>
+<p>The main rate was 18% until 1 April 2026 for corporation tax and 6 April 2026 for income tax, when it reduced to 14% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. That means slower tax relief on main-rate cars than under the old rate, with a time-apportioned hybrid rate for periods straddling the change.</p>
 
 <h3>Special Rate Pool (6% per year)</h3>
 <p>Cars with CO2 emissions above 50g/km go into the special rate pool. The writing down allowance is 6% of the car's value each year on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
@@ -72,11 +72,11 @@ imageCredit:
 
 <h2>What Changes From April 2026?</h2>
 
-<p>Several changes are coming that affect agency founders who use cars for business.</p>
+<p>Several changes affect agency founders who use cars for business.</p>
 
-<p><strong>Main rate writing down allowance reduces from 18% to 14%</strong> from 1 April 2026 (corporation tax) and 6 April 2026 (income tax) <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This applies to cars in the main rate pool bought after those dates.</p>
+<p><strong>Main rate writing down allowance fell from 18% to 14%</strong> from 1 April 2026 (corporation tax) and 6 April 2026 (income tax) <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This applies to cars in the main rate pool.</p>
 
-<p><strong>A new 40% first-year allowance for main-rate assets</strong> is introduced from 1 January 2026 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This is designed to preserve the incentive to invest in lower-emission cars that do not qualify for the 100% electric car allowance.</p>
+<p><strong>A new 40% first-year allowance for main-rate plant and machinery</strong> applies to expenditure incurred from 1 January 2026 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Cars are excluded from it, so for a car purchase the choice remains the 100% first-year allowance on a new zero-emission car or the relevant pool rate.</p>
 
 <p><strong>Electric Vehicle Excise Duty (eVED)</strong> is introduced from April 2028 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Electric cars will pay half the equivalent fuel duty rate for petrol and diesel cars. Plug-in hybrids will pay a reduced rate equivalent to half the electric car rate <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 
@@ -134,7 +134,7 @@ And so on, reducing each year.</p>
 
 <ul>
 <li><strong>Buy an electric car before April 2027</strong> to benefit from the 100% first-year allowance. After that date, the rules may change.</li>
-<li><strong>Check your current car pool.</strong> If you have cars in the main rate pool, the rate drops from 18% to 14% in April 2026. The timing of purchases matters.</li>
+<li><strong>Check your current car pool.</strong> If you have cars in the main rate pool, the rate dropped from 18% to 14% in April 2026. The timing of purchases matters.</li>
 <li><strong>Review your agency's car policy.</strong> If you have multiple cars, consider whether switching to electric makes financial sense for your tax position.</li>
 <li><strong>Keep accurate records.</strong> CO2 emissions, purchase date, and business use percentage are all essential for correct claims.</li>
 </ul>

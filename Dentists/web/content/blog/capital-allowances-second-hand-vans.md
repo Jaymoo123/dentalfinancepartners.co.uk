@@ -17,11 +17,11 @@ faqs:
 - question: Can I claim capital allowances on a second hand van if I am a dental associate?
   answer: Yes, if you are a self-employed dental associate using the accruals basis, you can claim capital allowances on a second hand van used for practice visits. The Annual Investment Allowance (AIA) gives 100% relief on the cost up to £1 million per year. If you use the cash basis, you cannot claim capital allowances on vans, only on business cars. Most associates use the accruals basis, but check your accounting method first.
 - question: What is the difference between AIA and writing-down allowances for a second hand van?
-  answer: The Annual Investment Allowance (AIA) gives 100% tax relief on the van's cost in the year of purchase, up to £1 million. Writing-down allowances give 18% relief each year on the reducing balance. For a van costing £18,000, AIA saves £7,200 in tax at 40%, while the first year's writing-down allowance saves only £1,296. AIA is almost always better if you have headroom.
+  answer: The Annual Investment Allowance (AIA) gives 100% tax relief on the van's cost in the year of purchase, up to £1 million. Main-pool writing-down allowances give 14% relief each year on the reducing balance (18% before April 2026). For a van costing £18,000, AIA saves £7,200 in tax at 40%, while the first year's writing-down allowance saves only £1,008. AIA is almost always better if you have headroom.
 - question: Do I need to keep a mileage log for a practice van?
   answer: Yes, HMRC expects you to keep a mileage log or other records to support the business-use percentage of the van. If you use the van 70% for practice visits and 30% for personal trips, you claim 70% of the capital allowance. Without a log, HMRC may restrict your claim or disallow it entirely. Keep records for at least three months to establish a reasonable estimate.
 - question: Can I claim capital allowances on a second hand electric van?
-  answer: Yes, second hand electric vans qualify for main rate writing-down allowances at 18% per annum. They do not qualify for the 100% first-year allowance available for new electric vans. However, they do qualify for the Annual Investment Allowance (AIA), giving 100% relief in the year of purchase if you have headroom. This makes second hand electric vans a tax-efficient choice for dentists.
+  answer: Yes, second hand electric vans qualify for main rate writing-down allowances at 14% per annum from April 2026 (18% before that date). They do not qualify for the 100% first-year allowance available for new electric vans. However, they do qualify for the Annual Investment Allowance (AIA), giving 100% relief in the year of purchase if you have headroom. This makes second hand electric vans a tax-efficient choice for dentists.
 dateModified: '2026-05-20'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
@@ -59,11 +59,11 @@ imageCredit:
 
 <h2>Writing-Down Allowances for Second Hand Vans</h2>
 
-<p>If you do not use the AIA, or if your AIA allowance is already used up on other assets, second hand vans fall into the main rate pool for plant and machinery. The main rate writing-down allowance is 18% per annum on a reducing balance basis <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This means you claim 18% of the van's value each year, with the remaining balance carried forward.</p>
+<p>If you do not use the AIA, or if your AIA allowance is already used up on other assets, second hand vans fall into the main rate pool for plant and machinery. The main rate writing-down allowance is 14% per annum on a reducing balance basis, cut from 18% by Finance Act 2026 section 28 with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This means you claim 14% of the van's value each year, with the remaining balance carried forward.</p>
 
-<p>For a van costing £18,000, the first year's allowance would be £3,240 (18% of £18,000). The next year, you claim 18% of the remaining £14,760, and so on. This is less generous than the AIA but still provides ongoing relief.</p>
+<p>For a van costing £18,000, the first year's allowance would be £2,520 (14% of £18,000). The next year, you claim 14% of the remaining £15,480, and so on. This is less generous than the AIA but still provides ongoing relief.</p>
 
-<p>Note that the main rate for cars is 14% (or 18% before April 2026) <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. Vans are treated more favourably than cars in the capital allowances system, which is one reason dentists often prefer vans for business use.</p>
+<p>Main-rate cars sit in the same main pool and are written down at the same 14% (18% before April 2026), while cars above 50g/km CO2 go into the special rate pool at 6% <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The van advantage is not the pool rate, it is that vans qualify for the AIA and cars do not, which is one reason dentists often prefer vans for business use.</p>
 
 <h2>Private Use of a Practice Van</h2>
 
@@ -78,9 +78,9 @@ imageCredit:
 <p>The capital allowances treatment of vans is more favourable than for cars in several ways:</p>
 <ul>
 <li><strong>AIA eligibility:</strong> Vans qualify for AIA; cars generally do not (except electric cars with 0g/km CO2 emissions, which qualify for 100% first-year allowances if new) <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</li>
-<li><strong>Writing-down rates:</strong> Vans attract 18% main rate; cars attract 14% main rate (or 6% special rate for high-emission cars) <sup><a href="#ref-3" id="cite-3">[3]</a></sup><sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
+<li><strong>Writing-down rates:</strong> Vans and main-rate cars both attract the 14% main rate from April 2026 (18% before that date), while cars above 50g/km CO2 attract the 6% special rate <sup><a href="#ref-3" id="cite-3">[3]</a></sup><sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
 <li><strong>Private use:</strong> Both require apportionment, but the van benefit charge for employees is lower than the car benefit charge.</li>
-<li><strong>Second hand electric vans:</strong> Second hand electric vans qualify for main rate allowances (18%), not the 100% first-year allowance available for new electric vans <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</li>
+<li><strong>Second hand electric vans:</strong> Second hand electric vans qualify for main rate allowances (14% from April 2026, 18% before), not the 100% first-year allowance available for new electric vans <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</li>
 </ul>
 <p>For a dentist who needs to carry equipment, a van is often the more tax-efficient choice compared to a car. However, if the vehicle is primarily for personal travel with occasional business use, a car may be more appropriate.</p>
 

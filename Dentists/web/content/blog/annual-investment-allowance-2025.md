@@ -15,13 +15,13 @@ summary: The Annual Investment Allowance (AIA) lets UK dentists claim 100% tax r
 schema: ''
 faqs:
 - question: Can I claim AIA on a car used for my dental practice?
-  answer: No. The AIA is not available for cars. This applies to all cars, whether used for practice visits, home visits, or commuting. However, you may be able to claim writing-down allowances on a car at 18% or 6% per year depending on its CO2 emissions. For a practice-owned car used partly personally, there is also a benefit-in-kind charge. Speak to your accountant about the most tax-efficient way to structure car use for your practice.
+  answer: No. The AIA is not available for cars. This applies to all cars, whether used for practice visits, home visits, or commuting. However, you may be able to claim writing-down allowances on a car at the main-pool rate of 18% (14% from April 2026) or 6% per year depending on its CO2 emissions. For a practice-owned car used partly personally, there is also a benefit-in-kind charge. Speak to your accountant about the most tax-efficient way to structure car use for your practice.
 - question: What happens if I buy equipment before my dental practice opens?
-  answer: The AIA is not available for expenditure incurred before the business starts to trade. If you buy a dental chair, X-ray machine, or other equipment before your first patient, you cannot claim AIA in that period. Instead, the expenditure is treated as pre-trading capital expenditure. You can claim writing-down allowances once trading begins. The expenditure is added to the main pool at the start of trading, and you claim 18% WDA in the first period of trading.
+  answer: The AIA is not available for expenditure incurred before the business starts to trade. If you buy a dental chair, X-ray machine, or other equipment before your first patient, you cannot claim AIA in that period. Instead, the expenditure is treated as pre-trading capital expenditure. You can claim writing-down allowances once trading begins. The expenditure is added to the main pool at the start of trading, and you claim the main-pool WDA in the first period of trading, at 18% for periods before April 2026 and 14% from April 2026 under Finance Act 2026 section 28.
 - question: Can I claim AIA on a dental practice purchase?
   answer: Yes, but only on the element of the purchase price allocated to qualifying plant and machinery. When you buy a dental practice, the price typically includes goodwill, property, and fixtures. The fixtures (dental chairs, compressors, X-ray equipment, etc.) can qualify for AIA if you and the seller agree a capital allowances election under CAA 2001 section 198. Without this election, HMRC may restrict your claim. The allocation must be realistic and supported by a professional valuation.
 - question: Do I need to claim AIA in the same year I buy the equipment?
-  answer: Yes. You can only claim AIA in the period you bought the item. If you do not claim it in that period, you cannot go back and claim it later. The expenditure will instead attract writing-down allowances at 18% per year on the reducing balance. This is less generous than the 100% immediate relief from AIA. Always review your capital expenditure before your year-end to ensure you claim AIA on qualifying purchases in the correct period.
+  answer: Yes. You can only claim AIA in the period you bought the item. If you do not claim it in that period, you cannot go back and claim it later. The expenditure will instead attract main-pool writing-down allowances on the reducing balance, at 18% per year for periods before April 2026 and 14% from April 2026. This is less generous than the 100% immediate relief from AIA. Always review your capital expenditure before your year-end to ensure you claim AIA on qualifying purchases in the correct period.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
@@ -83,7 +83,7 @@ imageCredit:
 
 <p>Dr. Patel owns a single-handed NHS and private practice. In June 2025, she buys a new dental chair for £25,000, an OPG machine for £40,000, and a compressor for £8,000. Total spend: £73,000. Her practice has a 12-month accounting period ending 5 April 2026. She can claim the full £73,000 as AIA, reducing her taxable profit by that amount. At a 40% income tax rate, this saves her £29,200 in tax.</p>
 
-<p>If Dr. Patel instead spent £1.2 million on equipment in the same period, only the first £1 million would qualify for AIA. The remaining £200,000 would go into the main pool and attract writing-down allowances at 18% per year.</p>
+<p>If Dr. Patel instead spent £1.2 million on equipment in the same period, only the first £1 million would qualify for AIA. The remaining £200,000 would go into the main pool and attract writing-down allowances at 18% per year, falling to 14% from April 2026.</p>
 
 <h2>AIA and Practice Purchase: Buying a Dental Practice</h2>
 
@@ -106,7 +106,7 @@ imageCredit:
 <p>The AIA is not the only capital allowance available to dentists. Other reliefs include:</p>
 
 <ul>
-<li>Writing-down allowances (WDA): 18% per year on the main pool for plant and machinery not covered by AIA</li>
+<li>Writing-down allowances (WDA): 18% per year on the main pool for plant and machinery not covered by AIA, falling to 14% from 1 April 2026 for corporation tax and 6 April 2026 for income tax under Finance Act 2026 section 28</li>
 <li>Special rate pool: 6% per year for integral features (e.g., electrical systems, lifts, air conditioning) and long-life assets</li>
 <li>Structures and Buildings Allowance (SBA): 3% per year on qualifying construction or acquisition costs of commercial buildings post-29 October 2018</li>
 </ul>
