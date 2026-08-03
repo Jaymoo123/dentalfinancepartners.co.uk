@@ -6,8 +6,8 @@
 |---|---|
 | **Controller carrying out this assessment** | Ashfield Trading Limited (company number 16358723), trading as Property Tax Partners ("we" / "the Supplier") |
 | **Completed by** | Mohammed Junayd Moughal, Director |
-| **Date** | 22 June 2026 |
-| **Review date** | 22 June 2027, or earlier on any material change to the sharing, the data, the lawful basis or the law |
+| **Date** | 22 June 2026 (revised 28 July 2026 to reflect category-level transparency at collection with partner self-identification at first contact) |
+| **Review date** | 28 July 2027, or earlier on any material change to the sharing, the data, the lawful basis or the law |
 | **Processing assessed** | Sharing the personal data of people who submit a property-tax enquiry through our website with a specialist accountancy and tax firm to which we refer enquiries under a written data sharing agreement (the "Partner Firm"), so that the Partner Firm can respond to and advise the enquirer. An independent controller-to-controller share, one direction only. |
 | **Lawful basis assessed** | Legitimate interests, Article 6(1)(f) UK GDPR, relied on together with Article 6(1)(b) (steps taken at the request of the data subject) where the sharing is necessary to act on the enquiry |
 | **Personal data involved** | The enquirer's name; email address and/or telephone number; and any free-text enquiry message they choose to provide (which may include their property and tax circumstances). No special category data is intended to be collected or shared. |
@@ -24,7 +24,7 @@
 
 **1.3 Are these interests legitimate?** Yes. Both a commercial interest in a lead-referral arrangement and the interest in responding to a person's request for help are recognised legitimate interests. They are real and specific, not speculative.
 
-**1.4 Is the processing lawful, and what must the Partner Firm be?** The data is ordinary contact and enquiry data, not special category data. In each case the Partner Firm is a reputable and appropriately regulated or professionally qualified specialist firm, engaged under a written controller-to-controller data sharing agreement, and named to the enquirer in our transparency information. The Partner Firm's first contact is a response to the enquiry, not direct marketing; neither party carries out other electronic marketing without a lawful basis under PECR.
+**1.4 Is the processing lawful, and what must the Partner Firm be?** The data is ordinary contact and enquiry data, not special category data. In each case the Partner Firm is a reputable and appropriately regulated or professionally qualified specialist firm, engaged under a written controller-to-controller data sharing agreement. At the point of collection we tell the enquirer, in plain language, that their details will be shared with a specialist partner firm from our network; the receiving Partner Firm then identifies itself to the enquirer in its own Article 14 notice when it first makes contact. The Partner Firm's first contact is a response to the enquiry, not direct marketing; neither party carries out other electronic marketing without a lawful basis under PECR.
 
 ## Part 2 - Necessity test (is the processing necessary?)
 
@@ -38,14 +38,14 @@
 
 **3.1 Nature of the data.** Ordinary identification and contact data, plus a free-text enquiry that may include the enquirer's property and tax circumstances. It is not special category data and not criminal-offence data. The service is aimed at adults seeking tax advice, not children. We design the enquiry form to avoid special category data and to minimise free-text sensitive detail.
 
-**3.2 Reasonable expectations.** The enquirer actively completes and submits an enquiry seeking specialist property-tax help and expects to be contacted as a result. At the point of submission we tell them, in plain language, that their details will be shared with our specialist partner firm (named in the notice), an independent controller that will contact them, with a link to that firm's privacy policy. Sharing their details with that firm is therefore squarely within their reasonable expectations.
+**3.2 Reasonable expectations.** The enquirer actively completes and submits an enquiry seeking specialist property-tax help and expects to be contacted as a result. At the point of submission we tell them, in plain language, that their details will be shared with a specialist partner firm from our network, an independent controller that will contact them. That firm then identifies itself, and provides a link to its own privacy policy, in the Article 14 notice it gives when it first makes contact. Sharing their details with a specialist firm so it can answer the enquiry they submitted is therefore squarely within their reasonable expectations.
 
 **3.3 Likely impact on the individual.** Low, and positive. They receive a response from a specialist firm about the matter they raised, which is what they asked for. The data is not used for unrelated purposes; the Partner Firm's first contact is a response, not marketing; we and the Partner Firm each retain the data only as long as needed (we delete or anonymise our copy within 3 months of referring it); and the transfer is made by a secure method (encrypted in transit).
 
 **3.4 Would the individual object, and can they?** Most enquirers are unlikely to object, having asked to be contacted. Even so, we tell them of, and provide a route to exercise, the right to object under Article 21, and we will not share (or will stop sharing) where a person objects, withdraws any consent relied on, or where the required basis is absent. We and the Partner Firm each maintain a suppression list and tell the other promptly of any objection or opt-out.
 
 **3.5 Safeguards in place to reduce any impact.**
-- Transparency: a clear notice at the point of collection naming the actual Partner Firm, plus a privacy notice naming that firm as a recipient and explaining the share, with a link to its privacy policy.
+- Transparency: a clear notice at the point of collection telling the enquirer their details will be shared with a specialist partner firm from our network, plus a privacy notice explaining the share; the receiving Partner Firm then identifies itself, and links to its own privacy policy, in the Article 14 notice it gives at first contact.
 - Data minimisation: only name, contact details and any optional message are shared; no special category data.
 - One recipient, one direction.
 - The right to object and to withdraw, honoured by both parties.

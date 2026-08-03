@@ -1,30 +1,33 @@
-# Property Tax Partners - Lead Generation & Data Sharing Agreement (draft pack)
+# Lead Generation & Data Sharing Agreement pack
 
-First-draft contract pack for the exclusive lead arrangement between **Ashfield Trading Limited** (trading as Property Tax Partners) and **DJH Business Advisers Limited**. Drafted as an aid, in British English, under the law of **England and Wales**. **Not legal advice** - have a qualified solicitor and a data protection specialist review before signing.
+Controller-to-controller lead-referral contract pack for **Ashfield Trading Limited** (trading as Property Tax Partners). British English, law of **England and Wales**. **Not legal advice** - have a qualified solicitor and a data protection specialist review before signing.
 
-## Contents
+## How this is structured (read this first)
+
+The **data-sharing agreement is separate from the commercial deal**. The DSA (data-protection layer) is firm-agnostic and never changes per prospect; the commercial terms (fee, selection, trial, credits) are agreed by email. This means there is **one standing DSA you send to everyone** - no per-prospect redraft.
 
 | File | What it is |
 |---|---|
-| **Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.docx** | **The operative signing copy for DocuSign / Word — send this to DJH.** Lean version (~13-14pp): comments stripped, figures finalised, optional extras condensed, only genuine signing blanks left (date, DJH signatory, DJH inbox/email). Built from the `_FOR_SIGNATURE.md` source. |
-| **Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.md** | Markdown source of the lean signing copy (edit this, then rebuild the .docx). This is the authoritative version of the terms. |
-| **build_signing_docx.py** | Rebuilds the signing-copy `.docx` from the `.md` using python-docx (no pandoc needed). After editing the `.md`, run `python build_signing_docx.py` in this folder. Matches the original look (US Letter, Calibri 11, Heading 1/2 styles, the three tables, page breaks before each Schedule). `*.bak-YYYY-MM-DD` files are pre-edit backups. |
-| **[Lead_Generation_and_Data_Sharing_Agreement.md](Lead_Generation_and_Data_Sharing_Agreement.md)** | The **long-form annotated reference** with full `<!-- LAW: -->` legal-reasoning comments — internal only, NOT for sending. It is more verbose and carries a few optional clauses the lean signing copy condenses or drops (see Review Checklist Part I); rely on the lean version for the actual terms. |
-| **[Plain_English_Summary.md](Plain_English_Summary.md)** | One-page plain-English summary of the key terms. |
-| **[Review_Checklist_and_Placeholders.md](Review_Checklist_and_Placeholders.md)** | What to have a professional review (prioritised), plus a checklist of every `[PLACEHOLDER]` to complete. |
-| **[Questions_for_Supplier.md](Questions_for_Supplier.md)** | What I still need from you to finish the draft. |
+| **DSA_TEMPLATE.md** | The single standing Data Sharing Agreement. Data protection only. Supplier side fully pre-filled and signed by you; the only blanks are the Recipient's own details block and their signature. Firm-agnostic - the same file goes to every prospect. **The send-and-return artifact.** |
+| **build_pdf.py** | Renders any `.md` to a clean black-text A4 PDF (reportlab). Strips HTML comments and warns if `{{` or `[INSERT` survives. Usage: `python build_pdf.py DSA_TEMPLATE.md out.pdf`. |
+| **Legitimate_Interests_Assessment.md** | Standing, firm-agnostic LIA covering the referral of enquiries to any Partner Firm meeting its section 1.4 criteria. One document covers all. |
+| **Combined_Agreement_REFERENCE.md** | The old all-in-one draft (DSA + full commercial contract in one document, with `{{TOKENS}}`). Kept only as a reference in case a formal signed commercial contract is ever wanted instead of email terms. Not the thing you send. |
+| **DSA_HainesWatts_2026-07.md** | The combined DSA+commercial instance drafted for Shazin / Haines Watts before this split. Already negotiated by email; kept as-is. Going forward, new prospects get `DSA_TEMPLATE.md` + email terms instead. |
+| **Plain_English_Summary.md** | One-page plain-English summary of the key terms. |
+| **Lead_Generation_and_Data_Sharing_Agreement*.md/.docx** | Historical DJH-era pack (executed 2026-06-22). Kept as history; do not reuse. |
 
-## Legal grounding (researched 20 June 2026)
-- **UK GDPR + Data Protection Act 2018**, as amended by the **Data (Use and Access) Act 2025** (main provisions in force 5 Feb 2026; new controller complaints-handling duty in force 19 June 2026). **PECR 2003** for electronic marketing.
-- **ICO Data Sharing Code of Practice** (s.121 DPA 2018) - controller-to-controller sharing.
-- **Data Protection (Charges and Information) Regulations 2018** - ICO registration fee.
-- **Late Payment of Commercial Debts (Interest) Act 1998** - interest and fixed compensation.
-- **Unfair Contract Terms Act 1977** - B2B limitation/exclusion enforceability.
-- **Companies House** register checked for DJH (no. 03451690): Active; incorporated 17 Oct 1997; registered office confirmed; formerly Mitten Clarke Limited / DJH Mitten Clarke Limited.
+## The prospect flow (the point of all this)
 
-This is **draft v2**, revised after a five-lens adversarial legal review (data protection, UCTA/enforceability, internal consistency, commercial balance, completeness). See Review Checklist Part C for what changed.
+1. Prospect asks for the DSA.
+2. You send `DSA_STANDARD_REVIEW.pdf` (or a `.docx` if they prefer to type into it) - already filled and signed on your side.
+3. They complete the four-line Recipient details block, sign, and send it back. Done.
+4. The commercial terms (fee, how selection works, trial length, credits) are whatever you agreed in the email thread. That email exchange is itself a binding contract in English law once both sides agree - keep the thread.
 
-## Three things to decide first
-1. **Lawful basis for the share (the biggest call):** consent vs "necessary to act on the enquiry" (Art 6(1)(b)/(f)). Left as a documented choice for your DP adviser in Schedule 2, para 3, with frozen wording to settle in Annex B. See Review Checklist Part A, item 1.
-2. **Liability cap:** drafted as a **mutual** cap at "greater of £floor or **12 months'** fees" rather than the 3 months you mentioned (a 3-month, one-way cap risks being struck down under UCTA, leaving you *uncapped*). Plus set the £ floor, super-cap and insurance limit together. See Review Checklist Part A, item 3.
-3. **Your entity details:** likely Ashfield Trading Ltd (16358723) trading as Property Tax Partners - confirm so I can fill the party block, plus your ICO registration number.
+Nothing to redraft per prospect. If a clause ever needs improving, edit `DSA_TEMPLATE.md` and rebuild; git is the version history. Already-signed copies are frozen.
+
+## Legal grounding
+- **UK GDPR + Data Protection Act 2018**, as amended by the **Data (Use and Access) Act 2025** (controller complaints-handling duty in force 19 June 2026). **PECR 2003** for electronic marketing.
+- **ICO Data Sharing Code of Practice** - controller-to-controller sharing; documented Legitimate Interests Assessment.
+- **Late Payment of Commercial Debts (Interest) Act 1998**; **Unfair Contract Terms Act 1977** (B2B limitation enforceability).
+
+Each firm's DSA is executed bilaterally and separately; each firm sees only its own agreement.

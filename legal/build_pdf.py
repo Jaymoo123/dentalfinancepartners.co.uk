@@ -65,7 +65,12 @@ def is_sep(line):
 def main():
     src = pathlib.Path(sys.argv[1])
     out = pathlib.Path(sys.argv[2]) if len(sys.argv) > 2 else src.with_suffix(".pdf")
-    lines = src.read_text(encoding="utf-8").splitlines()
+    text = src.read_text(encoding="utf-8")
+    text = re.sub(r"<!--.*?-->\n?", "", text, flags=re.DOTALL)  # never render internal notes
+    for marker in ("{{", "[INSERT"):  # warn: unfilled placeholder reaching a PDF
+        if marker in text:
+            print(f"WARNING: {src.name} still contains '{marker}' - not a final signing copy.")
+    lines = text.splitlines()
     usable = A4[0] - 36 * mm
     story = []
     bullets = []

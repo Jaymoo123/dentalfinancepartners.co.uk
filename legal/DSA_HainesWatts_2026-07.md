@@ -4,20 +4,6 @@
 
 Dated [INSERT DATE]
 
-<!--
-REUSE NOTE (delete before signing). This is a bilateral controller-to-controller
-template executed separately with each receiving firm. Each firm sees only its own
-agreement. To reuse for a new firm, change ONLY the firm-specific fields — everything
-else, including the Site-facing wording in Annex B, is firm-agnostic and stays constant:
-  • Party (2) — firm name / signatory (currently: Shazin Tayub, a director of Haines Watts)
-  • Schedule 1 — commercial terms (fee, option, trial length, credits) for that firm
-  • Schedule 1 ¶17 — firm contact, notices email, DP contact, privacy-policy URL
-  • Annex A / Signature block — firm name, breach contact
-The Site's lead-form and privacy notice name the recipient only as a CATEGORY
-("a firm from our specialist partner network"), never the individual firm, so a
-declined Lead can be routed to another firm without any change to the Site or to
-this Annex B. This is the values filled for the first execution (Haines Watts).
--->
 
 ## PARTIES
 
