@@ -62,7 +62,7 @@ Coverage: UK-wide, serving founders in London, Manchester, Birmingham, Leeds, Br
 - R&D Tax Relief Usage Index (annual R&D tax credit claims, cost and qualifying expenditure by sector and region, from HMRC official statistics, covering the post-clampdown claim collapse): https://${niche.domain}/research/rd-tax-relief-index
 - UK Tech Startup Survival Curves (cohort survival by year after birth, tech vs all-industry baseline, from ONS Business Demography official statistics): https://${niche.domain}/research/tech-startup-survival-index
 - UK Tech Formations Index (monthly new tech company formation trend and tax-year seasonality by SIC code, from Companies House official data): https://${niche.domain}/research/uk-tech-formations-index
-- UK Startup Formation Survival Index (cohort survival analysis of UK tech company formations, built from Companies House bulk data): https://${niche.domain}/research/startup-formation-survival-index
+- UK Startup Formation Survival Index (active and dissolved register counts, annual formations and quarterly churn across 8 tech SIC codes, from live Companies House Advanced Search API queries; a register snapshot, not a cohort survival curve): https://${niche.domain}/research/startup-formation-survival-index
 - Research index: https://${niche.domain}/research
 
 ## Blog Categories

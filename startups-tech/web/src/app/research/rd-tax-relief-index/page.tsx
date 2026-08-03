@@ -45,7 +45,7 @@ const faqs = [
   {
     question: "Is the tech sector still a major claimant of R&D relief?",
     answer:
-      `Yes. Information & Communication is the largest single sector by number of claims (${fmtNumber(headline.infoCommsClaims)} claims, ${fmtPercent0(headline.infoCommsClaimsSharePct)} of the UK total) and the second-largest by cost (${fmtGBPm(headline.infoCommsCostM)}, ${fmtPercent0(headline.infoCommsCostSharePct)} of the total). Together with Manufacturing and Professional, Scientific & Technical services, these three sectors account for ${fmtPercent0(headline.top3SectorsClaimsSharePct)} of all claims and ${fmtPercent0(headline.top3SectorsCostSharePct)} of all relief paid.`,
+      `Yes. Information & Communication is the largest single sector by number of claims (${fmtNumber(headline.infoCommsClaims)} claims, ${fmtPercent0(headline.infoCommsClaimsSharePct)} of the UK total) and the third-largest by cost (${fmtGBPm(headline.infoCommsCostM)}, ${fmtPercent0(headline.infoCommsCostSharePct)} of the total). Together with Manufacturing and Professional, Scientific & Technical services, these three sectors account for ${fmtPercent0(headline.top3SectorsClaimsSharePct)} of all claims and ${fmtPercent0(headline.top3SectorsCostSharePct)} of all relief paid.`,
   },
   {
     question: "What is the difference between the SME scheme, RDEC and the merged scheme?",
@@ -168,7 +168,7 @@ export default function RdTaxReliefIndexPage() {
               <li>
                 Information &amp; Communication is the largest sector by number of claims (
                 {fmtNumber(headline.infoCommsClaims)}, {fmtPercent0(headline.infoCommsClaimsSharePct)}{" "}
-                of the total) and the second-largest by cost ({fmtGBPm(headline.infoCommsCostM)},{" "}
+                of the total) and the third-largest by cost ({fmtGBPm(headline.infoCommsCostM)},{" "}
                 {fmtPercent0(headline.infoCommsCostSharePct)}).
               </li>
               <li>

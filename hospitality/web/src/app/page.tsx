@@ -624,8 +624,8 @@ export default function HomePage() {
                 A regularly updated index of UK hospitality company registrations and
                 dissolutions, drawn from Companies House SIC 55/56 data (accommodation
                 and food service activities). SIC codes are self-reported at incorporation;
-                the index carries this caveat prominently. Dissolutions are cross-referenced
-                against Insolvency Service statistics.
+                the index carries this caveat prominently. Dissolutions are counted from the
+                Companies House register, so they cover strike-off as well as insolvency.
               </p>
               <div className="mt-6">
                 <Link

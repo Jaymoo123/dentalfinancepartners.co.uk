@@ -139,4 +139,4 @@ faqs:
 
 <p>The correct frame: platform reporting changes HMRC's visibility. Your tax obligations are determined by trading status, income levels and your filing history, which remain unchanged by whether a platform sends a report or not.</p>
 
-<p>If you sell at meaningful scale on any marketplace and have not taken advice on your position, the <a href="/for/marketplace-sellers">marketplace sellers hub</a> is a good starting point, or see the <a href="/research/online-seller-index">online seller research index</a> for data on how sellers in different revenue bands are typically structured.</p>
+<p>If you sell at meaningful scale on any marketplace and have not taken advice on your position, the <a href="/for/marketplace-sellers">marketplace sellers hub</a> is a good starting point, or see the <a href="/research/online-seller-index">online seller research index</a> for register data on how many UK online retail companies form, dissolve and survive.</p>

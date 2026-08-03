@@ -158,8 +158,13 @@ def _load_inspection_cache(site_key: str, page_urls: list[str]) -> dict[str, dic
         f"{SUPABASE_URL}/rest/v1/gsc_url_inspection",
         headers=h,
         params={
+            # raw_response carries coverageState / robotsTxtState / pageFetchState,
+            # which have no columns of their own. index_coverage._bucket needs
+            # coverageState to tell "unknown to Google" from "excluded"; without it
+            # every cached row silently fell into the excluded_or_redirect catch-all.
             "select": "page_url,index_status,last_crawl_time,canonical_google,"
-                      "canonical_declared,mobile_issues,rich_result_types,checked_at",
+                      "canonical_declared,mobile_issues,rich_result_types,checked_at,"
+                      "raw_response",
             "site_key": f"eq.{site_key}",
             "checked_at": f"gte.{cutoff}",
         },

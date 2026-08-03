@@ -419,9 +419,9 @@ export default function HomePage() {
                 Care Provider Business Index.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Sector data for UK care operators: Companies House SIC 87/88 provider counts, workforce figures from the{" "}
-                <a href="https://www.skillsforcare.org.uk/Adult-Social-Care-Workforce-Data/Workforce-intelligence/publications/national-information/The-state-of-the-adult-social-care-sector-and-workforce-in-England.aspx" className="underline underline-offset-2 hover:text-[#7d6b9e]">Skills for Care state-of-the-sector report</a>
-                , and the finance benchmarks that operators and commissioners use.
+                Sector data for UK care operators: quarterly{" "}
+                <a href="https://developer.company-information.service.gov.uk/api/docs/" className="underline underline-offset-2 hover:text-[#7d6b9e]">Companies House</a>{" "}
+                incorporation and dissolution counts for SIC 87/88 companies by sub-segment from Q1 2021, net movement in residential, nursing and domiciliary care, and CQC registered-location counts alongside them. Company counts and register movement, not fee rates or margins.
               </p>
               <div className="mt-6">
                 <Link

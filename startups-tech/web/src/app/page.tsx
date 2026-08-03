@@ -601,16 +601,18 @@ export default function HomePage() {
                 Startup Formation and Survival Index.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                A data-led analysis of UK technology company formation and early-stage survival rates,
-                built from{" "}
+                How many UK tech and software companies are on the register, how many have been
+                dissolved, and how formations have moved year by year across eight software and IT
+                SIC codes, from live{" "}
                 <a
-                  href="https://download.companieshouse.gov.uk/en_output.html"
+                  href="https://developer.company-information.service.gov.uk/api/docs/"
                   className="underline underline-offset-2 text-neutral-800 hover:text-[#4f46e5]"
                 >
-                  Companies House bulk data
-                </a>
-                . The methodology and limitations are stated prominently. It is a compliance-awareness
-                resource for founders, not a regulatory filing or investment advice.
+                  Companies House Advanced Search API
+                </a>{" "}
+                counts. It is a snapshot of the register rather than a cohort survival curve, and the
+                page says so. The methodology and limitations are stated prominently. It is a
+                compliance-awareness resource for founders, not a regulatory filing or investment advice.
               </p>
               <div className="mt-6">
                 <Link

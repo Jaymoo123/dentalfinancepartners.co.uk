@@ -12,7 +12,7 @@ export function GET() {
 Ashfield Trading Ltd (company no. 16358723, registered in England and Wales,
 registered office 20 Ashfield Avenue, Shipley, Bradford BD18 3AL) builds and
 operates a network of 15 specialist UK accounting lead-generation websites,
-backed by 49 proprietary research assets built from official open data (ONS,
+backed by 43 proprietary research assets built from official open data (ONS,
 Companies House; Open Government Licence v3.0 attribution where used).
 
 Ashfield Trading is the parent company, not an accountancy practice. It sells

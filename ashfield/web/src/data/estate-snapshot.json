@@ -235,76 +235,48 @@
     },
     {
       "brand": "dentists",
-      "finding": "Avg net income at 78200 in 2023/24, +53.0% vs 2009/10.",
+      "finding": "Avg net income at 83000 in 2024/25, +21.2% vs 2017/18.",
       "id": "dentists/nhs-dental-earnings-index",
-      "latest": 78200,
+      "latest": 83000,
       "licence": "Open Government Licence v3.0",
       "name": "Nhs Dental Earnings Index",
       "report_url": "https://www.dentalfinancepartners.co.uk/research/nhs-dentist-earnings-index",
       "series": [
         {
-          "period": "2009/10",
-          "value": 51100
-        },
-        {
-          "period": "2010/11",
-          "value": 52800
-        },
-        {
-          "period": "2011/12",
-          "value": 54500
-        },
-        {
-          "period": "2012/13",
-          "value": 56400
-        },
-        {
-          "period": "2013/14",
-          "value": 56800
-        },
-        {
-          "period": "2014/15",
-          "value": 57300
-        },
-        {
-          "period": "2015/16",
-          "value": 57700
-        },
-        {
-          "period": "2016/17",
-          "value": 57600
-        },
-        {
           "period": "2017/18",
-          "value": 58400
+          "value": 68500
         },
         {
           "period": "2018/19",
-          "value": 59400
+          "value": 68600
         },
         {
           "period": "2019/20",
-          "value": 59300
+          "value": 68600
         },
         {
           "period": "2020/21",
-          "value": 61400
+          "value": 72500
         },
         {
           "period": "2021/22",
-          "value": 68100
+          "value": 77900
         },
         {
           "period": "2022/23",
-          "value": 71300
+          "value": 75800
         },
         {
           "period": "2023/24",
           "value": 78200
+        },
+        {
+          "period": "2024/25",
+          "value": 83000
         }
       ],
-      "source": "Dental Earnings and Expenses Estimates, 2023/24 (CSV)",
-      "source_url": "https://files.digital.nhs.uk/DB/6E7A10/dentearexp_202324_csv.csv",
+      "source": "Dental Earnings and Expenses Estimates, 2024/25 (CSV)",
+      "source_url": "https://files.digital.nhs.uk/EC/30B458/dentearexp_202425_csv.csv",
       "unit": "avg_net_income"
     },
     {
@@ -3439,16 +3411,16 @@
   "leads": {
     "forecast": [
       {
-        "high": 79,
-        "low": 50,
-        "mid": 64,
-        "month": "2026-08"
+        "high": 98,
+        "low": 67,
+        "mid": 82,
+        "month": "2026-09"
       },
       {
-        "high": 79,
-        "low": 50,
-        "mid": 64,
-        "month": "2026-09"
+        "high": 98,
+        "low": 67,
+        "mid": 82,
+        "month": "2026-10"
       }
     ],
     "monthly": [
@@ -3465,19 +3437,23 @@
         "month": "2026-06"
       },
       {
-        "count": 56,
+        "count": 83,
         "month": "2026-07"
+      },
+      {
+        "count": 7,
+        "month": "2026-08"
       }
     ],
     "trend": {
-      "fitted_latest": 39.4,
+      "fitted_latest": 86.0,
       "model": "poisson_log_linear",
-      "monthly_growth_pct": 199.0,
-      "months_fitted": 3
+      "monthly_growth_pct": 149.0,
+      "months_fitted": 4
     }
   },
   "meta": {
-    "generated_at": "2026-07-23T19:34:31+00:00",
+    "generated_at": "2026-08-03T18:42:03+00:00",
     "sources": [
       "Business Demography 2024 reference tables",
       "Business Demography 2024 reference tables (Table 5.2a-5.2e)",
@@ -3491,7 +3467,7 @@
       "Companies House Advanced Search API",
       "Company Insolvency Statistics -- Industry Tables (Table A1a)",
       "Company Insolvency Statistics -- Record-Level Data",
-      "Dental Earnings and Expenses Estimates, 2023/24 (CSV)",
+      "Dental Earnings and Expenses Estimates, 2024/25 (CSV)",
       "English Contractor Monthly General Dental Activity",
       "Food Standards Agency Ratings API (FHRS/FHIS)",
       "Incorporated companies in the UK (quarterly)",

@@ -35,7 +35,7 @@ Founder Tax Partners is a UK accountancy practice focused exclusively on funded 
 - [R&D Tax Relief Usage Index](https://www.foundertaxpartners.co.uk/research/rd-tax-relief-index): Annual R&D tax credit claims, cost and qualifying expenditure by sector and region, from HMRC official statistics. Covers the post-clampdown claim collapse.
 - [UK Tech Startup Survival Curves](https://www.foundertaxpartners.co.uk/research/tech-startup-survival-index): Cohort survival by year after birth, tech vs all-industry baseline, from ONS Business Demography official statistics.
 - [UK Tech Formations Index](https://www.foundertaxpartners.co.uk/research/uk-tech-formations-index): Monthly new tech company formation trend and tax-year seasonality by SIC code, from Companies House official data.
-- [UK Startup Formation Survival Index](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index): Cohort survival analysis of UK technology company formations by year and sector, built from Companies House bulk data.
+- [UK Startup Formation Survival Index](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index): Formation and register status of UK tech and software companies across eight SIC codes, from live Companies House Advanced Search API counts: active and dissolved companies on the register, annual formations, and quarterly churn. It is a register snapshot, not a cohort survival curve, and the page states that limit.
 
 ## Key facts (current UK startup and founder tax figures, 2026/27)
 

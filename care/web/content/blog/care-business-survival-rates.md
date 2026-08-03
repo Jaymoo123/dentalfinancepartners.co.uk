@@ -145,7 +145,7 @@ faqs:
 
 <h2>Related research</h2>
 
-<p>This survival data sits alongside two other proprietary indexes built from public sector data: the <a href="/research/uk-care-density-quality-index">UK Care Home Density and Quality Index</a>, which maps CQC-registered locations and ratings, and the <a href="/research/care-provider-business-index">Care Provider Business Index</a>, which tracks sector-level financial and formation data. The full birth-cohort dataset behind this article, including every sub-segment and cohort year referenced above, is published at the <a href="/research/uk-care-business-survival-index">UK Care Business Survival Index</a>.</p>
+<p>This survival data sits alongside two other proprietary indexes built from public sector data: the <a href="/research/uk-care-density-quality-index">UK Care Home Density and Quality Index</a>, which maps CQC-registered locations and ratings, and the <a href="/research/care-provider-business-index">Care Provider Business Index</a>, which tracks quarterly formation and dissolution counts by care sub-segment. The full birth-cohort dataset behind this article, including every sub-segment and cohort year referenced above, is published at the <a href="/research/uk-care-business-survival-index">UK Care Business Survival Index</a>.</p>
 
 <h2>Sources</h2>
 <ol>

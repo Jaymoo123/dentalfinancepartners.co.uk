@@ -437,7 +437,7 @@ export default function UKDivorceFinancialRemedyIndexPage() {
                 when a marriage or civil partnership ends. Applications reached{" "}
                 {fmtNumber(headline.fr_applications)} in 2025, up{" "}
                 {headline.fr_applications_yoy_pct.toFixed(0)} percent on 2024 and the highest
-                figure in the series back to 2006. Around three quarters were uncontested consent
+                figure since 2010. Around three quarters were uncontested consent
                 order applications, where the couple asks the court to approve terms already
                 agreed; the rest began as contested cases, though the disposal figures show a
                 meaningful share of those concluded by consent after starting contested.

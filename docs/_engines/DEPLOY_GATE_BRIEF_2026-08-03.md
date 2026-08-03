@@ -1,5 +1,19 @@
 # Deploy gate brief — 2026-08-03
 
+> **SUPERSEDED IN LARGE PART, same day.** This brief was compiled before the
+> deploy round of 2026-08-03, in which the owner LIFTED the Property freeze and
+> **seven sites shipped** from committed HEAD `8c2fbcdf`: Dentists, generalist,
+> Property, startups-tech, construction-cis, Solicitors and digital-agency.
+> Medical was deliberately held on the MED-F7 judgement call. That round closed
+> most of the undeployed backlog described below, and it also fixed the live
+> lead-consent wording that this brief flags as its highest risk: DJH is no
+> longer named on Property /contact.
+>
+> Read the deploy record for what actually shipped before relying on anything
+> here. The risk framing and the four risk classes remain useful; the specific
+> "not deployed" statuses mostly do not. Do not treat this document as the
+> current state of production.
+
 One decision, not five. This is the **evidence layer only**. It contains no recommendation.
 
 Everything below was established from the repository: git history, git tags, `docs/`, and the

@@ -172,7 +172,7 @@ faqs:
   </tbody>
 </table>
 
-<p>Use our <a href="/calculators/true-cost-care-hour-calculator">true cost of care calculator</a> to build the staffing component of this pack, and the <a href="/calculators/care-staffing-cost-margin-calculator">staffing cost and margin calculator</a> for the margin modelling. The <a href="/research/care-provider-business-index">care provider business index</a> provides sector-level benchmarks you can reference in your submission.</p>
+<p>Use our <a href="/calculators/true-cost-care-hour-calculator">true cost of care calculator</a> to build the staffing component of this pack, and the <a href="/calculators/care-staffing-cost-margin-calculator">staffing cost and margin calculator</a> for the margin modelling. The <a href="/research/care-provider-business-index">care provider business index</a> gives you quarterly formation and dissolution counts for the sector, which are useful evidence of market pressure but are not fee benchmarks.</p>
 
 <h2>Scotland, Wales and Northern Ireland: different regimes</h2>
 <p>The FNC rates, CHC framework and Care Act statutory guidance described in this post apply in <strong>England only</strong>. Scotland, Wales and Northern Ireland operate separate funding and regulatory regimes for nursing care contributions and continuing healthcare. The nursing-payment mechanics, rates and the frameworks governing local authority fee-setting all differ. If your home operates in Scotland, Wales or Northern Ireland, the England figures in this post do not apply, and you should seek advice specific to the relevant devolved regime.</p>

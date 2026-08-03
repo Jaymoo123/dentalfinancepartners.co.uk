@@ -438,9 +438,10 @@ export default function OnlineSellerIndexPage() {
             </table>
           </div>
           <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
-            The 2020 peak (27.9%) reflects lockdown-driven online spending. The subsequent
-            partial reversal reflects in-store recovery. 2025 at 27.4% shows internet retail
-            holding just below the 2020 peak as a share of all retail sales.
+            The 2021 peak (30.7%) reflects lockdown-driven online spending, after the jump to
+            28.1% in 2020. The subsequent partial reversal reflects in-store recovery. 2025 at
+            27.4% shows internet retail settling a few points below that peak as a share of all
+            retail sales.
           </p>
         </div>
       </section>

@@ -658,7 +658,8 @@ export default function HomePage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
                 A regularly updated index tracking community pharmacy openings and closures across
-                England, drawing on NHS Business Services Authority data and NHS Digital records.
+                England, drawing on NHS Business Services Authority openings and closures data and
+                Companies House register records.
                 The index carries its methodology and limitations prominently. It is a
                 market-awareness resource for pharmacy buyers, sellers, and operators, not a
                 regulatory filing or investment advice.
