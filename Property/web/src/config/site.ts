@@ -17,7 +17,7 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 // Recipient of shared enquiries is disclosed to enquirers as a CATEGORY only
 // ("a firm from our specialist partner network"), never as a named firm. This lets a
 // lead a firm declines be routed to another firm in the network without any site change.
-// niche.config.json holds only that category label — no individual firm is named anywhere
+// niche.config.json holds only that category label, no individual firm is named anywhere
 // in the live tree (the former named-firm details were removed 2026-07-27 when that deal ended).
 //
 // PARTNER_DISCLOSURE_PAUSED is retained infrastructure. Even when false it now surfaces
@@ -29,11 +29,13 @@ const disclosePartner = !PARTNER_DISCLOSURE_PAUSED && Boolean(configuredPartner)
 
 // Lead-form enquiry wording (each form appends "See our Privacy Policy."). Both branches
 // disclose the recipient as the partner-network CATEGORY only; the receiving firm names
-// itself in its own Article 14 notice at first contact. Matches the Privacy Policy and the
-// Data Sharing Agreement Annex B (category-based disclosure).
+// itself in its own Article 14 notice at first contact. Both also disclose the onward
+// re-referral (a firm that cannot help passes the enquiry to another firm in the network).
+// The paused branch below is the exact Data Sharing Agreement Annex B.2 wording, minus the
+// trailing "See our Privacy Policy." that each form appends.
 const leadConsentText = disclosePartner
-  ? `To answer your enquiry, your details will be shared with ${configuredPartner!.name}, an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`
-  : `To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. By submitting this enquiry you confirm you understand this.`;
+  ? `To answer your enquiry, your details will be shared with ${configuredPartner!.name}, an independent data controller that will contact you and use your details under its own privacy policy. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`
+  : `To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
 // Email-only sign-ups (resource downloads) are NOT shared with the partner firm
 // (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."
@@ -51,7 +53,7 @@ export const siteConfig = {
   },
   publisherLogoUrl: niche.brand.publisher_logo_url,
   // NOTE: contact.email is an internal-routing value only (e.g. nurture reply-to).
-  // It is intentionally NOT displayed publicly — public contact goes via /contact.
+  // It is intentionally NOT displayed publicly (public contact goes via /contact).
   contact: niche.contact,
   nav: niche.navigation,
   footer: niche.footer_links,

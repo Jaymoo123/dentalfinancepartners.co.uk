@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 22 June 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 3 August 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -115,8 +115,7 @@ export default function PrivacyPolicyPage() {
           {partner
             ? " to handle your enquiry and to share it with our specialist partner firm, so that you can be connected with the specialist property tax help you have asked for"
             : " to handle it, so that we can respond and provide the help you have asked for"}
-          . Where we need to take steps at your request to deal with your enquiry, we also rely on{" "}
-          <strong>Article 6(1)(b)</strong>. You have the <strong>right to object</strong> to this processing at any time,
+          . You have the <strong>right to object</strong> to this processing at any time,
           under Article 21 (see your rights in section 7).
         </p>
         <p>
@@ -148,7 +147,7 @@ export default function PrivacyPolicyPage() {
             relevant publicly available information about your business, and any call time you book. We do this
             on the basis of our <strong>legitimate interests</strong> (see section 4), and you can object at any time (see
             section 7). {partner.name} acts as an <strong>independent data controller</strong> of the information it
-            receives, may share it within its own group of companies for the same purpose, and uses it under its own{" "}
+            receives, and uses it under its own{" "}
             {partner.privacyPolicyUrl ? (
               <a
                 href={partner.privacyPolicyUrl}
@@ -169,6 +168,17 @@ export default function PrivacyPolicyPage() {
             the service providers listed below only as our processors, acting on our instructions.
           </p>
         )}
+        {partner ? (
+          <p>
+            <strong>Our partner network and re-referral.</strong> We work with a network of specialist accountancy and
+            tax firms rather than a single firm, and we do not name the individual firms on this website. Your enquiry
+            goes to one firm in that network at a time. If that firm is unable to help, for example because it has no
+            capacity or your matter is outside its specialism, we may pass your enquiry to another firm in the same
+            network for the same purpose, so that you still get an answer. Whichever firm contacts you will tell you who
+            it is and give you its own privacy information at that point. We will not pass your enquiry on if you have
+            objected or asked us to stop, and you can ask us to stop at any time (see section 7).
+          </p>
+        ) : null}
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>

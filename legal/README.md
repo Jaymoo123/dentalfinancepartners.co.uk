@@ -8,7 +8,7 @@ The **data-sharing agreement is separate from the commercial deal**. The DSA (da
 
 | File | What it is |
 |---|---|
-| **DSA_TEMPLATE.md** | The single standing Data Sharing Agreement. Data protection only. Supplier side fully pre-filled and signed by you; the only blanks are the Recipient's own details block and their signature. Firm-agnostic - the same file goes to every prospect. **The send-and-return artifact.** |
+| **DSA_TEMPLATE.md** | The single standing Data Sharing Agreement. Data protection only. Supplier side pre-filled, **except the Supplier signature and date, which are still blank and are yours to apply**; the other blanks are the Recipient's own details block and their signature. Firm-agnostic - the same file goes to every prospect. **The send-and-return artifact** (rendered as `Property Tax Partners - Data Sharing Agreement.pdf`). |
 | **build_pdf.py** | Renders any `.md` to a clean black-text A4 PDF (reportlab). Strips HTML comments and warns if `{{` or `[INSERT` survives. Usage: `python build_pdf.py DSA_TEMPLATE.md out.pdf`. |
 | **Legitimate_Interests_Assessment.md** | Standing, firm-agnostic LIA covering the referral of enquiries to any Partner Firm meeting its section 1.4 criteria. One document covers all. |
 | **Combined_Agreement_REFERENCE.md** | The old all-in-one draft (DSA + full commercial contract in one document, with `{{TOKENS}}`). Kept only as a reference in case a formal signed commercial contract is ever wanted instead of email terms. Not the thing you send. |
@@ -19,7 +19,7 @@ The **data-sharing agreement is separate from the commercial deal**. The DSA (da
 ## The prospect flow (the point of all this)
 
 1. Prospect asks for the DSA.
-2. You send `DSA_STANDARD_REVIEW.pdf` (or a `.docx` if they prefer to type into it) - already filled and signed on your side.
+2. You sign and date the Supplier signature block (both are blank in the template), then send `Property Tax Partners - Data Sharing Agreement.pdf` (or a `.docx` if they prefer to type into it). Everything else on the Supplier side is already filled in.
 3. They complete the four-line Recipient details block, sign, and send it back. Done.
 4. The commercial terms (fee, how selection works, trial length, credits) are whatever you agreed in the email thread. That email exchange is itself a binding contract in English law once both sides agree - keep the thread.
 
