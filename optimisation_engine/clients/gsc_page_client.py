@@ -128,6 +128,7 @@ class GSCPageFetcher:
             return 0
 
         inserted = 0
+        rejected = 0
         chunk_size = 500
         for i in range(0, len(records), chunk_size):
             chunk = records[i: i + chunk_size]
@@ -153,7 +154,16 @@ class GSCPageFetcher:
                 _mgmt_sql(sql)
                 inserted += len(chunk)
             except Exception as exc:
+                rejected += len(chunk)
                 print(f"[GSC-P] {self.site_key} chunk {i} upsert failed: {exc}")
 
         print(f"[GSC-P] {self.site_key} upserted {inserted} rows to gsc_page_performance")
+        if rejected:
+            # Never report a silent zero. A rejected write means this site is
+            # invisible to every aggregate that reads gsc_page_performance, and
+            # that stayed hidden for months behind a printed "upserted 0 rows".
+            raise RuntimeError(
+                f"gsc_page_performance: {rejected}/{len(records)} rows rejected for "
+                f"niche={self.site_key!r} (check the niche CHECK constraint covers this site)"
+            )
         return inserted
