@@ -12,12 +12,12 @@
 #  1. INVOICE HEADER  (change every month)
 # ------------------------------------------------------------
 
-invoice_number = "DJH-001"      # Client-specific reference. Bump each month for this
+invoice_number = "DJH-002"      # Client-specific reference. Bump each month for this
                                 # client: DJH-001, DJH-002, DJH-003 ... For a different
                                 # client use their own prefix, e.g. ABC-001.
-invoice_date   = "2026-07-01"   # Format is YYYY-MM-DD (year-month-day).
+invoice_date   = "2026-08-03"   # Format is YYYY-MM-DD (year-month-day).
                                 # The "Due" date is worked out for you: invoice date + 14 days.
-billing_period = "June 2026"    # The period the work covers (raised 1 July for June's leads).
+billing_period = "July 2026"    # The period the work covers (raised 1 August for July's leads).
                                 # Optional label shown on the invoice. Set to "" to hide it.
 
 
@@ -40,8 +40,8 @@ email   = "Michael.Winniczuk@djh.co.uk"
 # ------------------------------------------------------------
 
 [leads]
-enabled          = true                    # true = read the CSV and count the leads. false = ignore it.
-path             = "leads/leads-2026-06.csv"
+enabled          = false                   # true = read the CSV and count the leads. false = ignore it.
+path             = "leads/leads-2026-07.csv"
 date_column      = "date"                  # column that holds the lead date (only used if you set "period")
 period           = ""                      # e.g. "2026-07" to count only July rows. "" = count every row.
 reference_column = "reference"             # column that holds a lead reference (only used if itemise = true)
@@ -58,7 +58,7 @@ itemise          = false                   # true = print a plain list of the le
 
 [[line_items]]
 description = "Property Leads"
-quantity    = "auto"
+quantity    = 11
 unit_price  = 85.00
 
 # --- Example of a second line (delete the "#" at the start of each line to use it) ---
