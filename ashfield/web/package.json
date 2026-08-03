@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@accounting-network/web-shared": "*",
-    "@microsoft/clarity": "^1.0.2",
     "@vercel/speed-insights": "^2.0.0",
     "next": "^15.5.14",
     "react": "^19.1.0",

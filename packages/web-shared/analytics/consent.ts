@@ -4,7 +4,7 @@
  * Decision: track by DEFAULT (legitimate-interest posture) for opt-out sites,
  * no blocking banner. Everything runs unless the visitor explicitly opts out via
  * the quiet "Do not track me" control (which calls setConsent("denied")). The SDK
- * and the GA/Clarity loaders read isTrackingAllowed()/getConsent().
+ * and the GA loader read isTrackingAllowed()/getConsent().
  *
  * For opt-in sites (posture: "opt-in"), mount <ConsentBanner /> and tracking
  * only begins after the visitor explicitly accepts.

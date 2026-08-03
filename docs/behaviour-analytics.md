@@ -3,8 +3,8 @@
 Every real-user action on the Property site is captured as a structured event in
 **our own Supabase**, bot-filtered, and fed to conversion-rate (CRO) opportunity
 detection through the existing `optimisation_opportunities` machinery. This is the
-**system of record** for on-site behaviour. GA4 and Microsoft Clarity still run as
-secondary/optional layers; we do not read from them.
+**system of record** for on-site behaviour. GA4 still runs as a
+secondary/optional layer; we do not read from it.
 
 Built and deployed live to `www.propertytaxpartners.co.uk` on 2026-06-05.
 
@@ -99,7 +99,7 @@ calc_copy, calc_share, embed_cta_click, exit_intent_shown`.
 No blocking banner. Analytics runs by default under a legitimate-interest posture;
 visitors opt out via the **"Do not track me"** link in the footer
 (`ConsentToggle`), which sets `"denied"` in localStorage and immediately stops the
-first-party pipeline, GA4 and Clarity on that device. Disclosed in
+first-party pipeline and GA4 on that device. Disclosed in
 `/cookie-policy`. To revert to opt-in: change `isTrackingAllowed()` in
 `consent.ts` back to `read() === "granted"` and re-mount `<ConsentBanner/>` in
 `ConsentProvider`.
@@ -120,7 +120,6 @@ Vercel env vars on the **property-tax-partners** project (Production):
   Without it, `/api/track` fails safe (returns 204, writes nothing).
 - `ADMIN_DASHBOARD_KEY` — required to view the dashboard. Any secret string; visit
   `/admin/analytics?k=<that string>`. Wrong/missing key 404s.
-- `NEXT_PUBLIC_CLARITY_ID` — optional; enables Microsoft Clarity session replays.
 
 `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` already exist (lead
 forms) and are not used by the tracking endpoint.

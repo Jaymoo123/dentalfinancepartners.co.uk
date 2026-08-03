@@ -108,7 +108,6 @@
     "./components/StatsBar": "./components/StatsBar.tsx"
   },
   "optionalPeerDependencies": {
-    "@microsoft/clarity": ">=1",
     "botid": ">=1",
     "web-vitals": ">=3"
   },

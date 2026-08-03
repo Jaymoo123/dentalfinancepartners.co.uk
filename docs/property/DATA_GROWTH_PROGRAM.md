@@ -8,7 +8,7 @@ delivery. Built local-first, deployed phase by phase to the Property project
 
 | Phase | Commit | What |
 |---|---|---|
-| 1a | `69b6e62d` | web_sessions city/region/timezone; real-user Web Vitals (`@vercel/speed-insights` + first-party `web_vital`); Clarity cohort tags (`visitor_id`/`visit_class`/`topic`) |
+| 1a | `69b6e62d` | web_sessions city/region/timezone; real-user Web Vitals (`@vercel/speed-insights` + first-party `web_vital`) |
 | 2 | `f6cc7d90` | `vw_channel_conversion_geo` + `vw_visits_to_conversion`; "Acquisition by value" + "Visits to conversion" panels on Overview |
 | 1b | `e41a41f4` | Vercel BotID (`botid`) server verdict on `/api/track` (fail-open) + `botid_verified` tri-state |
 | 3 | `7ebbca58` | Nurture engine: `subscribers`/`nurture_state`/`nurture_sends` (RLS-locked), SubscribeForm (blog footer), `/api/subscribe`, 5-step drip, `/api/nurture/send` cron, `/api/nurture/events` webhook, `/api/unsubscribe`. See `NURTURE_ENGINE.md` |
@@ -29,8 +29,7 @@ trigger (`000009`) is installed live (mirrors the notify endpoint+secret).
 
 ## Operator config still needed (unblocks activation)
 Vercel → Property project env (Production):
-- `NEXT_PUBLIC_CLARITY_ID` (Clarity replays) · `CRON_SECRET` (enables nurture
-  sending) · `NURTURE_WEBHOOK_SECRET` (Resend webhook) · `COMPANIES_HOUSE_API_KEY`
+- `CRON_SECRET` (enables nurture sending) · `NURTURE_WEBHOOK_SECRET` (Resend webhook) · `COMPANIES_HOUSE_API_KEY`
   (CH enrichment) · `NURTURE_FROM_EMAIL`/`NURTURE_REPLY_TO` (optional; defaults fine)
 - Enable **AI Gateway** on the project (lead classification; OIDC, no key)
 - Resend webhook → `https://www.propertytaxpartners.co.uk/api/nurture/events?key=<NURTURE_WEBHOOK_SECRET>` (opened/clicked/bounced/complained)

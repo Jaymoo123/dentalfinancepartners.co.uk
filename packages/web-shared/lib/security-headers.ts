@@ -20,8 +20,6 @@ export interface SecurityHeaderOpts {
   ga?: boolean;
   /** Emit Supabase connect-src entry. */
   supabase?: boolean;
-  /** Emit Microsoft Clarity script-src entry. */
-  clarity?: boolean;
   /**
    * When set, returns TWO header blocks: one for /<embedPrefix>/:path* with
    * frame-ancestors open (SEC-03 scoped embed exception), and one locked-down
@@ -47,7 +45,6 @@ function buildCsp(opts: SecurityHeaderOpts, isEmbed: boolean): string {
     "'unsafe-inline'",
     ...(!isProd ? ["'unsafe-eval'"] : []),
     ...(opts.ga ? ["https://www.googletagmanager.com", "https://www.google-analytics.com"] : []),
-    ...(opts.clarity ? ["https://www.clarity.ms"] : []),
     ...(opts.extraScriptSrc ?? []),
   ];
 

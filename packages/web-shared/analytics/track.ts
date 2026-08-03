@@ -83,31 +83,6 @@ export function scrubProps(props: EventProps): EventProps {
   return out;
 }
 
-const CLARITY_EVENTS: ReadonlySet<string> = new Set([
-  "calc_computed",
-  "calc_result_viewed",
-  "form_start",
-  "form_submit",
-  "lead_submitted",
-  "resource_unlocked",
-  "rage_click",
-  "exit_intent_shown",
-  "subscribe_submitted",
-  "experiment_action",
-]);
-const CLARITY_UPGRADE: ReadonlySet<string> = new Set([
-  "form_start",
-  "lead_submitted",
-  "rage_click",
-]);
-
-function forwardToClarity(eventName: string): void {
-  const w = window as unknown as { clarity?: (...args: unknown[]) => void };
-  if (typeof w.clarity !== "function") return;
-  if (CLARITY_EVENTS.has(eventName)) w.clarity("event", eventName);
-  if (CLARITY_UPGRADE.has(eventName)) w.clarity("upgrade", eventName);
-}
-
 function currentPath(): { path: string; query: string } {
   if (typeof window === "undefined") return { path: "", query: "" };
   return {
@@ -158,7 +133,6 @@ export function track(eventName: EventName, props: EventProps = {}): void {
   };
 
   queue.push(event);
-  forwardToClarity(eventName);
   // Fan out to in-app subscribers (journey model, proactive assistant). Synchronous,
   // post consent/config gate, isolated from delivery. Raw props so subscribers get
   // the semantic fields (section_id, error_kind, calculator_slug, ...).

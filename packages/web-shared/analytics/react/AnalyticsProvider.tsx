@@ -16,7 +16,7 @@ import { useEffect, useRef } from "react";
 import { configureAnalytics, track } from "../track";
 import { initAnalytics, getSdkConfig, type AnalyticsInitOptions } from "../init";
 import { installAutoCapture, resetForNavigation } from "../autoCapture";
-import { isNewSession, getVisitorId } from "../ids";
+import { isNewSession } from "../ids";
 import { bumpVisits, isReturning, recordEntryTopic, recordTopicVisit } from "../visitMemory";
 import { useConsent } from "./ConsentProvider";
 import { WebVitals } from "./WebVitals";
@@ -127,14 +127,6 @@ export function AnalyticsProvider({
     if (isEntry) props.entry_topic = topic ?? "";
     props.visit_class = isReturning() ? "returning" : "new";
     track("page_view", props);
-
-    const w = window as unknown as { clarity?: (...args: unknown[]) => void };
-    if (typeof w.clarity === "function") {
-      w.clarity("set", "visitor_id", getVisitorId() || "");
-      w.clarity("set", "visit_class", isReturning() ? "returning" : "new");
-      w.clarity("set", "device", deviceType());
-      if (topic) w.clarity("set", "topic", topic);
-    }
   }, [pathname, granted]);
 
   return (

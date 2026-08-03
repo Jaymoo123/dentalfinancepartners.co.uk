@@ -2,7 +2,7 @@
 
 /**
  * Consent context (track-by-default model: no blocking banner by default).
- * Holds the React-side consent state, exposes useConsent() to the GA/Clarity
+ * Holds the React-side consent state, exposes useConsent() to the GA
  * loader and the opt-out toggle, and stays in sync with the quiet
  * "Do not track me" control. The underlying source of truth is
  * analytics/consent.ts (which the plain-TS SDK also reads).

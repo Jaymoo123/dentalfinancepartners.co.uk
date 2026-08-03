@@ -31,12 +31,10 @@ const nextConfig: NextConfig = {
     // W2: shared builder. embedPrefix: "embed" keeps live embeds frameable (SEC-03).
     // ga: true adds GTM/GA script-src + connect-src.
     // supabase: true adds Supabase connect-src.
-    // clarity: true adds clarity.ms script-src.
     // SEC-02 documented exception applies as-is (see security-headers.ts).
     return buildSecurityHeaders({
       ga: true,
       supabase: true,
-      clarity: true,
       embedPrefix: "embed",
     });
   },

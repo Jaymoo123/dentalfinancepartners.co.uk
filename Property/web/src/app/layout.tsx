@@ -97,10 +97,7 @@ export default function RootLayout({
             siteKey={niche.content_strategy.source_identifier}
             siteName={niche.display_name}
           >
-            <ConsentedScripts
-              gaMeasurementId={niche.seo.google_analytics_id}
-              clarityProjectId={process.env.NEXT_PUBLIC_CLARITY_ID}
-            />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             <IntentProvider>
               <PageShell>{children}</PageShell>
               <ReturningBar />
