@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Choose an Accountant for Your Agency | Expert Guide
 metaDescription: A practical guide for UK agency founders on selecting the right accountant. Covers agency-specific expertise, IR35, R&D, and what to ask before signing.
-altText: Agency founder reviewing financial documents with an specialist agency accountant in a modern UK office
+altText: Agency founder reviewing financial documents with a specialist agency accountant in a modern UK office
 image: /blog/how-to-choose-accountant-agency.jpg
 imageCredit:
   photographer: Nataliya Vaitkevich

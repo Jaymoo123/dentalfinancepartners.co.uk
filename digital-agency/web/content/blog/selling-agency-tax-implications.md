@@ -93,7 +93,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you have issued different classes of shares to investors or employees, check whether they qualify as ordinary shares for BADR. Some agency founders inadvertently create share structures that disqualify them from relief.</p>
 
-<p>This is where working with an specialist agency accountant who understands agency exits is critical. We see founders who set up alphabet shares for tax planning purposes, only to discover at exit that those shares do not meet the BADR conditions.</p>
+<p>This is where working with a specialist agency accountant who understands agency exits is critical. We see founders who set up alphabet shares for tax planning purposes, only to discover at exit that those shares do not meet the BADR conditions.</p>
 
 <h2>Earn-Outs and Deferred Consideration</h2>
 

@@ -82,7 +82,7 @@ keyTakeaways:
 <li><strong>Use a corporate service provider (CSP) that specialises in agency founders.</strong> A good CSP knows which banks are currently processing applications fastest and which free zones are most efficient. A bad CSP will take your money and hand you a generic checklist.</li>
 </ul>
 
-<p>As an specialist agency accountant working with agency founders, I see the same mistakes repeatedly. Founders underestimate the bank account timeline. They assume the 2 to 4 week figure is real. It is not. Plan for 10 weeks and you will be pleasantly surprised if it comes in at 8. Plan for 4 weeks and you will be scrambling.</p>
+<p>As a specialist agency accountant working with agency founders, I see the same mistakes repeatedly. Founders underestimate the bank account timeline. They assume the 2 to 4 week figure is real. It is not. Plan for 10 weeks and you will be pleasantly surprised if it comes in at 8. Plan for 4 weeks and you will be scrambling.</p>
 
 <h2>What Delays the Process Most?</h2>
 <p>The single biggest delay is the bank account. Second is the medical fitness test if you have a condition that requires additional checks. Third is document translation. If your UK documents (proof of address, company formation certificate) are not in English or Arabic, you need certified translations. That adds a week.</p>

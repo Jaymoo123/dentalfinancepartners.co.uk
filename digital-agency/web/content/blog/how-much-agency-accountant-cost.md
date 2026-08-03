@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: 'Agency Accountant Cost 2025/26: UK Pricing Guide'
 metaDescription: What does an agency accountant cost in 2025/26? £120-£400+ per month. See real pricing by agency size and what you actually get for your money.
-altText: Agency founder reviewing monthly management accounts with an specialist agency accountant in a Manchester office
+altText: Agency founder reviewing monthly management accounts with a specialist agency accountant in a Manchester office
 image: /blog/how-much-agency-accountant-cost.jpg
 imageCredit:
   photographer: Monstera Production

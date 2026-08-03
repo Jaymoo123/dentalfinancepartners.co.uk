@@ -84,7 +84,7 @@ keyTakeaways:
 
 <p>You must issue an SDS to the contractor before they start. This document sets out your conclusion on whether the engagement is inside or outside IR35, and the reasons for that conclusion. HMRC can request to see these statements in an investigation. If you cannot produce them, you are already behind.</p>
 
-<p>Use the CEST tool (Check Employment Status for Tax) as a starting point. It is free and gives you a reference number. But CEST is directional, not definitive. For complex arrangements, get a professional contract review from a specialist employment solicitor or an specialist agency accountant who works with agencies.</p>
+<p>Use the CEST tool (Check Employment Status for Tax) as a starting point. It is free and gives you a reference number. But CEST is directional, not definitive. For complex arrangements, get a professional contract review from a specialist employment solicitor or a specialist agency accountant who works with agencies.</p>
 
 <h3>2. A Contract That Reflects the Reality</h3>
 

@@ -30,7 +30,7 @@ keyTakeaways:
 ---
 <p>If you are a UK agency founder looking at Dubai, the first number you see on a free zone website is usually the licence fee. Something like AED 15,000 for a freelance permit, or AED 30,000 for a full company licence. Those numbers look manageable. But the <strong>Dubai free zone company setup cost 2025</strong> is never just the licence fee. You need a realistic budget that includes visas, office space, PRO (Public Relations Officer) fees, and several mandatory extras that the brochure often leaves out.</p>
 
-<p>This article is a practical breakdown of what you will actually spend. I am writing it from the perspective of an specialist accountant who works with agency founders moving to or expanding into Dubai. Not a property developer. Not a visa agent. An accountant who has seen the hidden costs catch people out.</p>
+<p>This article is a practical breakdown of what you will actually spend. I am writing it from the perspective of a specialist accountant who works with agency founders moving to or expanding into Dubai. Not a property developer. Not a visa agent. An accountant who has seen the hidden costs catch people out.</p>
 
 <h2>Why Free Zones Exist and Which One Fits an Agency</h2>
 

@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'Agency Exit Planning: The Accountant''s Role and Timing'
 metaDescription: When should you involve an accountant in agency exit planning? Here's what a specialist accountant does before, during, and after a sale. agency-specialist
-altText: Two agency founders meeting with an specialist agency accountant in a modern UK office, discussing exit planning documents and valuation reports
+altText: Two agency founders meeting with a specialist agency accountant in a modern UK office, discussing exit planning documents and valuation reports
 image: /blog/accountants-role-agency-exit-planning.jpg
 imageCredit:
   photographer: Nataliya Vaitkevich

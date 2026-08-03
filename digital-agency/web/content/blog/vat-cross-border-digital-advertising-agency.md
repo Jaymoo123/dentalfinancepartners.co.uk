@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/pin-on-uk-on-europe-map-19963850/
   source: Pexels
 h1: How Should UK Agencies Handle VAT on Cross-Border Digital Advertising Services?
-summary: Cross-border digital advertising creates VAT traps that catch agencies off guard. This guide covers place of supply rules, the reverse charge mechanism, and when you need to register for VAT in another country. Written for UK agency founders by an specialist accountant.
+summary: Cross-border digital advertising creates VAT traps that catch agencies off guard. This guide covers place of supply rules, the reverse charge mechanism, and when you need to register for VAT in another country. Written for UK agency founders by a specialist accountant.
 schema: ''
 faqs: []
 authorSlug: james-whitfield
@@ -155,7 +155,7 @@ keyTakeaways:
 
 <h2>When to Get Professional Help</h2>
 
-<p>This article covers the standard rules. But every agency is different. If any of the following apply to your situation, speak to an specialist agency accountant before making changes:</p>
+<p>This article covers the standard rules. But every agency is different. If any of the following apply to your situation, speak to a specialist agency accountant before making changes:</p>
 
 <ul>
 <li>You operate through a holding company structure with multiple subsidiaries.</li>

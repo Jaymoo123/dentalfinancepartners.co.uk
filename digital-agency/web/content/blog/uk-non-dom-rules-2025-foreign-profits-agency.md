@@ -70,7 +70,7 @@ keyTakeaways:
 <h3>1. You may need to restructure your agency</h3>
 <p>If you have a UK company that invoices overseas clients, those profits are already subject to UK corporation tax. The non-dom rules primarily affect personal income, not corporate profits. But if you earn foreign income personally, through a foreign company, or through a partnership, the new rules bring that income into the UK tax net.</p>
 
-<p>Some founders hold their agency through a foreign company. Under the new rules, the foreign company's profits could be attributed to you personally if you control it and are UK resident. That is a complex area called the "transparent entity" rules, and it requires specific advice from an specialist agency accountant who understands both UK and international tax.</p>
+<p>Some founders hold their agency through a foreign company. Under the new rules, the foreign company's profits could be attributed to you personally if you control it and are UK resident. That is a complex area called the "transparent entity" rules, and it requires specific advice from a specialist agency accountant who understands both UK and international tax.</p>
 
 <h3>2. You may need to consider relocation</h3>
 <p>If your 4-year window has expired or is about to expire, and you have substantial foreign income, relocating outside the UK for a period may be the only way to protect those profits from UK tax. Be clear about the timescales, though: 5 full years abroad only clears the temporary non-residence anti-avoidance rules. To qualify for the 4-year exemption again on return, you need at least 10 consecutive tax years of non-UK residence.</p>

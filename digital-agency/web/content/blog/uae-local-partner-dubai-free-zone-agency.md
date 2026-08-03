@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Local Partner Requirement Dubai Free Zone: Agency Founder'
 metaDescription: Dubai free zones do not require a local partner for 100% foreign ownership. We explain the rules, costs, and why mainland setup might still be relevant
-altText: Agency founder reviewing Dubai free zone setup documents with an specialist agency accountant in a modern office
+altText: Agency founder reviewing Dubai free zone setup documents with a specialist agency accountant in a modern office
 image: /blog/uae-local-partner-dubai-free-zone-agency.jpg
 imageCredit:
   photographer: Eslam Mohammed Abdelmaksoud

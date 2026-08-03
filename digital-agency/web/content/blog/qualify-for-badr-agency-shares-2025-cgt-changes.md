@@ -74,7 +74,7 @@ keyTakeaways:
 
 <p>If you have diluted your holding through investment rounds or an EMI scheme, check your current percentage. If you are at 4.8%, you cannot rely on BADR. You need to restructure or accept the higher rate.</p>
 
-<p>If you are close to the threshold, speak to an specialist agency accountant before you do anything. There are ways to reorganise share structures, but they need to be done well before the sale.</p>
+<p>If you are close to the threshold, speak to a specialist agency accountant before you do anything. There are ways to reorganise share structures, but they need to be done well before the sale.</p>
 
 <h3>3. The Shares Must Be Held for at Least 24 Months</h3>
 

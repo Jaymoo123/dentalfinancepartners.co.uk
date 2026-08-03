@@ -142,7 +142,7 @@ keyTakeaways:
 <li>Issuing the SDS before day one</li>
 </ul>
 
-<p>If you are unsure, take professional advice. The cost of a 30-minute call with an specialist agency accountant is a fraction of the cost of an HMRC investigation.</p>
+<p>If you are unsure, take professional advice. The cost of a 30-minute call with a specialist agency accountant is a fraction of the cost of an HMRC investigation.</p>
 
 <h3>Step 3: Consider Using an Umbrella Company for Inside IR35 Engagements</h3>
 

@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: What to Look for in an Accountant Specialises Creative
 metaDescription: Hiring an accountant specialises creative agencies? Here are the 7 criteria we use ourselves. agency-specialist, agency-focused, and practical.
-altText: Creative agency founder reviewing financial reports with an specialist agency accountant in a modern London office
+altText: Creative agency founder reviewing financial reports with a specialist agency accountant in a modern London office
 image: /blog/what-to-look-for-in-an-accountant-specialises-creative-agencies.jpg
 imageCredit:
   photographer: Pavel Danilyuk
@@ -21,7 +21,7 @@ schema: ''
 faqs:
 - question: What is the difference between a general accountant and one who specialises in creative agencies?
   answer: 'A general accountant can handle compliance work like filing tax returns and processing payroll. An accountant who specialises in creative agencies understands the specific financial dynamics of agencies: retainer billing, project-based revenue, contractor IR35 determinations, utilisation rates, gross margin analysis, and exit planning. They proactively advise on structure, tax efficiency, and cash flow, rather than just reporting on what already happened.'
-- question: Do I need an specialist agency accountant for my creative agency?
+- question: Do I need a specialist agency accountant for my creative agency?
   answer: You do not legally need a specialist agency accountant, but agency specialism is a strong indicator of relevant technical depth. For agency-specific issues like IR35, R&D tax credits, BADR planning, and director's loan account management, you want someone with that background. A bookkeeper or general-practice accountant may not have the expertise to handle complex agency tax planning.
 - question: How much should I expect to pay for an accountant who works with creative agencies?
   answer: Fees vary widely depending on the scope of work and the size of your agency. A fixed monthly fee for a small agency (turnover up to £500k) typically ranges from £200 to £500 per month. This should cover year-end accounts, corporation tax, personal tax, payroll, VAT returns, and ongoing advice. Always ask for a detailed breakdown of what is included. Avoid firms that charge per phone call or email.
@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Look for an accountant with genuine agency experience, not just a website page claiming to serve creative businesses.
-- An specialist accountant is essential for handling technical complexities like IR35, R&D claims, and BADR planning.
+- A specialist accountant is essential for handling technical complexities like IR35, R&D claims, and BADR planning.
 - Your accountant must understand agency-specific finances, including retainer billing, utilisation rates, and variable gross margins.
 - A qualified accountant can help improve gross margins, as seen with agencies moving from 45% to 62% through contractor restructuring.
 - Ask direct questions about agency clients, turnover ranges, and past margin improvements to verify an accountant's expertise.

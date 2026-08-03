@@ -8,7 +8,7 @@ author: "Agency Founder Finance Editorial Team"
 category: "Agency Accountant Services"
 metaTitle: "Agency Accountant Cost: What's Included vs What's Extra"
 metaDescription: "What does a typical agency accountant fee cover? We break down the included services and the chargeable extras. No hidden costs, just clarity for UK"
-altText: "Agency founder reviewing a fee breakdown with an specialist agency accountant in a modern London office"
+altText: "Agency founder reviewing a fee breakdown with a specialist agency accountant in a modern London office"
 image: "/blog/what-is-included-in-typical-agency-accountant-fee.jpg"
 imageCredit:
   photographer: "Jakub Zerdzicki"
