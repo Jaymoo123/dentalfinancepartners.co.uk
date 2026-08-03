@@ -8,7 +8,7 @@ sourcesVerifiedAt: "2026-08-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
 metaTitle: "NHS Dental Activity England: Recovery & Regional Gaps 2026"
-metaDescription: "England's NHS dental UDA delivery reached 103.5 in March 2026, above pre-Covid output, and rose 4.7% over the year. ICB-level data shows a wide regional spread."
+metaDescription: "England's NHS dental UDA delivery hit 103.5 in March 2026, above pre-Covid output, up 4.7% on the year. ICB data shows a wide regional spread."
 altText: "NHS dental practice interior showing dental chair and treatment equipment"
 image: "https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
 imageCredit:
