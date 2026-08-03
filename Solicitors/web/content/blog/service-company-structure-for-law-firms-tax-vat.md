@@ -7,7 +7,7 @@ generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "Service Company for Law Firms: Tax and VAT Explained"
-metaDescription: "How a law firm service company works: VAT on staff and premises recharges, the VATA 1994 s.43 group disregard, arm's-length pricing and the s.850C boundary."
+metaDescription: "How a law firm service company works: VAT on staff and premises recharges, the VATA 1994 s.43 group disregard, arm's-length pricing and s.850C boundary."
 altText: "Law firm back-office team working in a service company office environment"
 image: ""
 h1: "Service Company Structure for Law Firms: Tax and VAT"

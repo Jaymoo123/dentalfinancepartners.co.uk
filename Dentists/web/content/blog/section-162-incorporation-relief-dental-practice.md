@@ -6,7 +6,7 @@ date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Buying a Practice"
-metaTitle: "Section 162 Incorporation Relief for Dental Practice Incorporation"
+metaTitle: "Section 162 Incorporation Relief for Dental Practices"
 metaDescription: "Learn how TCGA s162 incorporation relief defers CGT when transferring a dental practice to a company. Rules, conditions, and pitfalls for UK dentists."
 altText: "Dental practice owner reviewing incorporation documents with an accountant in a UK dental surgery office"
 image: ""

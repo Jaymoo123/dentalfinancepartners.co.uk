@@ -7,7 +7,7 @@ generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Locum Solicitor Expenses: Allowable UK Claims 2025/26"
-metaDescription: "UK locum solicitors: which expenses are tax-deductible? SRA fees, PII excess, training costs, travel, and home office claims explained with worked examples for 2025/26."
+metaDescription: "UK locum solicitors: which expenses are tax-deductible? SRA fees, PII excess, training, travel and home office claims, with worked examples for 2025/26."
 altText: "UK locum solicitor reviewing expense receipts and tax records at a desk with laptop and calculator"
 image: ""
 h1: "What Expenses Can a Locum Solicitor Claim in the UK for 2025/26?"

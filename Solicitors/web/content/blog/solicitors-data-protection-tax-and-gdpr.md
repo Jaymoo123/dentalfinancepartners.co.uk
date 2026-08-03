@@ -6,7 +6,7 @@ date: "2026-05-18"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
-metaTitle: "GDPR Tax Relief for Law Firms: Solicitor Data Protection Costs"
+metaTitle: "GDPR Tax Relief for Law Firms: Data Protection Costs"
 metaDescription: "Can a law firm claim tax relief on GDPR compliance costs? We explain what data protection costs are deductible for solicitors and what HMRC looks for."
 altText: "Solicitor reviewing GDPR data protection documents in a law firm office"
 image: ""

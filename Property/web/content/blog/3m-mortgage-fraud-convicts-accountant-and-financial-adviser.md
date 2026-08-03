@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Mortgage Fraud Convicting Accountants and Advisers: UK Cordon"
+metaTitle: "Mortgage Fraud Convicting Accountants and Advisers: AML"
 metaDescription: "Fraud Act 2006 s.2, POCA s.330 SAR reflex, s.333A tipping-off and MLR 2017 reg 8: the AML cordon around your UK property accountant explained."
 altText: "A UK property investor reviews a remortgage application with a chartered accountant during a customer due diligence onboarding conversation in a Cambridge office"
 image: "https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

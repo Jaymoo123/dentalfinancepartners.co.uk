@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Succession & Sale"
 metaTitle: "Goodwill tax on a law firm sale: BADR rate, s.162, CGT"
-metaDescription: "How goodwill is taxed when a UK law firm is sold: capital disposal not income, BADR by date band, the buyer's 6.5% relief and its conditions, and section 162."
+metaDescription: "How goodwill is taxed when a UK law firm is sold: capital disposal not income, BADR by date band, the buyer's 6.5% relief and its conditions, and s.162."
 altText: "Solicitor reviewing law firm sale documents with goodwill valuation report on desk"
 image: ""
 h1: "How Is Goodwill Taxed When a Law Firm Is Sold? A Solicitor's Guide to Capital Disposal, BADR and Section 162"
