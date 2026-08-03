@@ -60,7 +60,7 @@ Coverage: UK-wide, online-first. All tax content is current to 2026/27 UK figure
 
 ## Original Research
 
-- UK Crypto Tax Gap and Compliance Index: https://${niche.domain}/research/crypto-tax-gap-index
+- UK Crypto Tax Compliance Index: https://${niche.domain}/research/crypto-tax-gap-index (HMRC publishes no crypto-specific tax gap, and none is stated here; the index gives FCA-sourced UK ownership levels, the CARF reporting timeline counting down to the 31 May 2027 first-report deadline, current CGT parameters for crypto disposals, and HMRC's 4, 6 and 20-year assessment windows by behaviour, each cited to a primary source)
 
 ## Blog Categories
 

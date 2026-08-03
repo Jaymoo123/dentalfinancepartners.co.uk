@@ -132,6 +132,6 @@ faqs:
 
 <p>If you have unreported gains or income from crypto, whether from sales, crypto-to-crypto swaps, staking rewards, or mining, the practical window to get ahead of the data is now. The <a href="/calculators/crypto-disclosure-estimator">crypto disclosure estimator</a> gives you a rough sense of what tax exposure and penalty exposure might look like based on the facts you input. It ends at an estimate, not a filing-ready figure; the actual calculation requires the full transaction history and correct application of the pooling and override rules.</p>
 
-<p>For an overview of the research behind how much tax the sector may owe collectively, see the <a href="/research/crypto-tax-gap-index">crypto tax gap index</a>.</p>
+<p>For the wider picture of how many UK adults hold cryptoassets and when CARF data starts reaching HMRC, see the <a href="/research/crypto-tax-gap-index">UK Crypto Tax Compliance Index</a>. HMRC publishes no crypto-specific tax gap, so the index states none; it sets out the verified ownership and reporting timeline instead.</p>
 
 <p>If you want to understand the scope of disclosure required and get the calculation right, the <a href="/services/hmrc-disclosure">HMRC disclosure service</a> is the right starting point. The goal is always the same: voluntary, accurate, before first contact, to minimise both the tax owed (by correctly claiming all allowable costs and losses) and the penalty exposure.</p>

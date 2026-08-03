@@ -199,7 +199,7 @@ faqs:
 
 <h3>Research</h3>
 <ul>
-  <li><a href="/research/crypto-tax-gap-index">Crypto tax gap index</a> · the scale of unreported UK crypto tax, by cohort</li>
+  <li><a href="/research/crypto-tax-gap-index">UK Crypto Tax Compliance Index</a> · UK ownership levels, the CARF reporting timeline, and current CGT and disclosure parameters</li>
 </ul>
 
 <p>For a position specific to your portfolio, speak to the firm directly. Use the contact form to describe your situation and we will assess the complexity.</p>

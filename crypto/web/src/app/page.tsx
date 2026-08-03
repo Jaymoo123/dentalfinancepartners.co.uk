@@ -575,21 +575,22 @@ export default function HomePage() {
             <div>
               <div className="section-label mb-4">Data asset</div>
               <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                UK Crypto Tax Gap and Compliance Index.
+                UK Crypto Tax Compliance Index.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                A regularly updated index modelling the estimated gap between cryptoasset CGT
-                and income tax theoretically due and the tax actually reported, drawing on HMRC
-                compliance data, CARF timelines, and reported disposal volumes. The index carries
-                its methodology and limitations prominently; it is a compliance-awareness
-                resource, not a regulatory filing.
+                HMRC publishes no crypto-specific tax gap, so we do not invent one. The index
+                sets out what can be verified: how many UK adults hold cryptoassets, on FCA
+                consumer research; the CARF reporting timeline counting down to the 31 May 2027
+                deadline; and the CGT rates and disclosure windows that apply when that data
+                reaches HMRC. Every figure is cited to a primary source and refreshed as those
+                sources update. It is a compliance-awareness resource, not a tax estimate.
               </p>
               <div className="mt-6">
                 <Link
                   href="/research/crypto-tax-gap-index"
                   className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#0e1a3a] hover:text-[#0e1a3a] transition-all ${focusRing}`}
                 >
-                  View the UK Crypto Tax Gap Index
+                  View the UK Crypto Tax Compliance Index
                   <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
