@@ -264,7 +264,7 @@ def build_survival_index(rows: list[dict]) -> dict:
                 "Cohort survival rate = charities from that registration year that are still "
                 "registered, divided by the total from that cohort (active + removed). "
                 "Income at removal is each charity's last reported latest_income before removal "
-                "— this is not necessarily income in the removal year. "
+                "(this is not necessarily income in the removal year). "
                 "Cohorts from 1980 to " + str(max_year) + " shown (earlier records incomplete; "
                 "recent cohorts excluded as <10 years for meaningful survival measurement). "
                 "Main charities only (linked charities excluded)."
@@ -347,7 +347,12 @@ def build_cliff_edge(rows: list[dict]) -> dict:
                 "Income is latest_income; charities without a reported income are excluded. "
                 "Thresholds: independent examination £25,000; accruals/qualified examiner "
                 "£250,000; statutory audit £1,000,000 (income test; asset test not available "
-                "in this extract). Main charities only (linked charities excluded)."
+                "in this extract). Main charities only (linked charities excluded). "
+                "These thresholds apply to financial years ending before 30 September 2026. "
+                "For financial years ending on or after 30 September 2026 the gates rise to "
+                "£40,000 (independent examination), £500,000 (accruals/qualified examiner) and "
+                "£1,500,000 (audit income test; asset trigger £5,000,000), per "
+                "https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting."
             ),
         },
         "headline": {
