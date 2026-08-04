@@ -25,7 +25,7 @@ _POST_CATEGORIES = [
     "Process and Costs",
 ]
 
-# All live posts (waves 1-3, 32 posts) + the 3 commercial hubs. Paths are used
+# All live posts (waves 1-4, 45 posts) + the 3 commercial hubs. Paths are used
 # verbatim as hrefs by append_related_posts_if_needed; blog posts follow
 # canonical_format /blog/{category_slug}/{slug}. Refresh when a wave ships.
 _INTERNAL_LINK_SLUGS: list[str] = [
@@ -67,6 +67,20 @@ _INTERNAL_LINK_SLUGS: list[str] = [
     "/blog/the-family-home/who-gets-the-house-divorce",
     "/blog/the-family-home/joint-mortgage-after-divorce",
     "/blog/maintenance-and-support/school-fees-schedule-1-divorce",
+    # Wave 4 (2026-08-04)
+    "/blog/financial-settlements/divorce-and-joint-debts",
+    "/blog/financial-settlements/stay-at-home-parent-divorce-settlement",
+    "/blog/financial-settlements/divorce-settlement-examples-uk",
+    "/blog/financial-settlements/adultery-divorce-financial-settlement",
+    "/blog/financial-settlements/inheritance-and-divorce-settlements",
+    "/blog/financial-settlements/divorce-finances-scotland",
+    "/blog/financial-settlements/financial-abuse-divorce-settlements",
+    "/blog/the-family-home/who-pays-mortgage-during-separation",
+    "/blog/process-and-costs/litigant-in-person-financial-remedy",
+    "/blog/process-and-costs/divorce-financial-settlement-checklist",
+    "/blog/process-and-costs/legal-aid-divorce-costs",
+    "/blog/process-and-costs/expert-costs-divorce-forensic-accountants",
+    "/blog/maintenance-and-support/money-after-divorce-rebuilding",
 ]
 
 _ANCHOR_TERMS = [

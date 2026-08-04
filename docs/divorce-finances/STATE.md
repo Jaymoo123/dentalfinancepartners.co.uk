@@ -1,6 +1,6 @@
 # divorce-finances (placeholder brand) site state
 
-Last updated 2026-08-03 (waves 1-3 written; Phase 6 = deploy plumbing remaining).
+Last updated 2026-08-04 (waves 1-4 written, content COMPLETE; Phase 6 = deploy plumbing remaining).
 
 brand_locked: true
 
@@ -20,10 +20,11 @@ hubs. Phase 6 approved by owner 2026-07-28.
 
 - Wave 1: 8 spokes, committed (Phase 5)
 - Wave 2: 4 spokes, committed `3c0b8f99` (earlier "5 wave-2 spokes UNTRACKED" note is stale; resolved as 4 committed)
-- Wave 3: 16 spokes written 2026-08-03, in QA/commit
+- Wave 3: 16 spokes, committed `e35d6d11`
 - Table backfill on the 12 legacy (wave 1 + 2) posts: DONE
-- Live blog corpus: 32 posts in `divorce-finances/web/content/blog/` (4 pillars + 28 spokes)
-- `optimisation_engine/blog_generator/site_configs/divorce_finances.py` `_INTERNAL_LINK_SLUGS` populated 2026-08-03 (32 posts + 3 hubs); refresh when the next wave ships
+- Wave 4: 13 spokes written 2026-08-04 (joint debts, mortgage-during-separation, stay-at-home parent, litigant in person, settlement examples, checklist, adultery, inheritance, legal aid, Scotland, expert costs, money after divorce, financial abuse). Content build COMPLETE; no wave 5 planned.
+- Live blog corpus: 45 posts in `divorce-finances/web/content/blog/` (4 pillars + 41 spokes)
+- `optimisation_engine/blog_generator/site_configs/divorce_finances.py` `_INTERNAL_LINK_SLUGS` refreshed 2026-08-04 (45 posts + 3 hubs)
 
 ## Phase 6 remaining
 
