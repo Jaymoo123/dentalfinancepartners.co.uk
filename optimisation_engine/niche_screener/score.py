@@ -16,6 +16,7 @@ from optimisation_engine.niche_screener.common import (
     cache_get,
     cache_put,
 )
+from optimisation_engine.niche_screener.domain_viability import is_beatable
 
 CALC_PATTERNS = re.compile(r"\b(calculator|checker|how much|estimate|work out)\b")
 
@@ -179,9 +180,27 @@ def score_niche(spec: dict, run_id: str) -> dict:
         comp["weighted"] = round(-10 * pen_norm, 4)
         components["aio_exposure"] = comp
 
-    # --- new_domain_viability ------------------------------------------------
-    components["new_domain_viability"] = _null(
-        WEIGHTS["new_domain_viability"], "needs bulk_ranks/whois - not yet wired")
+    # --- new_domain_viability --------------------------------------------
+    # Share of this run's cached SERP domains that are "beatable" - young
+    # (RDAP/whois age) or weak (DataForSEO bulk_ranks authority) - see
+    # domain_viability.py module docstring for the full reading of the
+    # prereg. Sourced from a separate cached stage (domain_viability.json)
+    # so rescore stays pure (no network): fetch_domain_viability() is run
+    # once via `cli viability`, same shape as serps/volumes/classify.
+    w = WEIGHTS["new_domain_viability"]
+    dv = cache_get(run_id, niche, "domain_viability") or {"domains": {}, "coverage": 0.0}
+    dom_data = dv.get("domains", {})
+    dv_coverage = float(dv.get("coverage", 0.0))
+    if not dom_data or dv_coverage < 0.5:
+        components["new_domain_viability"] = _null(
+            w, f"domain_viability coverage {dv_coverage:.2f} < 0.5", inputs_n=len(dom_data))
+    else:
+        beatable = [d for d, info in dom_data.items() if is_beatable(info)]
+        norm = _clip(len(beatable) / len(dom_data))
+        components["new_domain_viability"] = _component(
+            {"beatable": len(beatable), "total": len(dom_data)}, norm, w,
+            inputs_n=len(dom_data),
+            note=f"beatable_share={norm:.2f} ({len(beatable)}/{len(dom_data)})")
 
     # --- totals --------------------------------------------------------------
     total = sum(c["weighted"] for c in components.values() if not c["is_null"])
@@ -274,6 +293,24 @@ if __name__ == "__main__":
     assert res2["components"]["diy_pain_demand"]["is_null"]
     assert res2["components"]["calculator_demand"]["is_null"]
     assert res2["components"]["rule_churn"]["is_null"]
+
+    # new_domain_viability: coverage gate + weighting, driven from the
+    # separately-cached domain_viability stage (never network in score.py).
+    put(rid, niche, "domain_viability", {
+        "domains": {"a.co.uk": {"age_days": 100, "rank": 900},   # beatable (young)
+                    "b.co.uk": {"age_days": 5000, "rank": 50},    # beatable (weak)
+                    "c.co.uk": {"age_days": 5000, "rank": 900},   # not beatable
+                    "d.co.uk": {"age_days": None, "rank": None}}, # no data
+        "total_domains": 4, "coverage": 0.75})
+    res3 = score_niche(spec, rid)
+    nd3 = res3["components"]["new_domain_viability"]
+    assert not nd3["is_null"] and nd3["raw"] == {"beatable": 2, "total": 4}
+    assert abs(nd3["normalised"] - 0.5) < 1e-6 and abs(nd3["weighted"] - 2.5) < 1e-6
+
+    put(rid, niche, "domain_viability", {"domains": {"a.co.uk": {"age_days": 1, "rank": None}},
+                                          "total_domains": 1, "coverage": 0.3})
+    res4 = score_niche(spec, rid)
+    assert res4["components"]["new_domain_viability"]["is_null"]  # coverage < 0.5 gate
 
     shutil.rmtree(CACHE_DIR / rid, ignore_errors=True)
     print("score.py self-check OK")

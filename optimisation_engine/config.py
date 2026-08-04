@@ -82,6 +82,11 @@ DATAFORSEO_COSTS: dict[str, dict[str, Any]] = {
     # SERP organic live advanced (niche_screener long-tail sampling; Serper is primary,
     # this is the fallback). Verified pricing 2026: ~$0.002/request at depth 10.
     "serp/google/organic/live/advanced": {"base": 0.002, "per_row": 0.0},
+    # Backlinks bulk domain-rank score for niche_screener new_domain_viability.
+    # UNVERIFIED estimate (mirrors bulk_keyword_difficulty's flat-per-task
+    # shape) - sanity-check against get_account_balance()/pricing page before
+    # a real batch, same as every other unverified row in this table.
+    "backlinks/bulk_ranks/live": {"base": 0.01, "per_row": 0.0001},
     # Free endpoints (used for credential check + balance read)
     "appendix/user_data":       {"base": 0.0,  "per_row": 0.0},
 }

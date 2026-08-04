@@ -2,6 +2,7 @@
 Niche screener CLI.
 
   python -m optimisation_engine.niche_screener.cli screen specs/<niche>.json [--run-id X] [--stage2]
+  python -m optimisation_engine.niche_screener.cli viability --run-id X --spec specs/<niche>.json
   python -m optimisation_engine.niche_screener.cli rescore --run-id X --spec specs/<niche>.json
   python -m optimisation_engine.niche_screener.cli report  --run-id X --spec specs/<niche>.json
 
@@ -63,6 +64,7 @@ def cmd_screen(args) -> None:
     if args.stage2 and overall == "PASS":
         from optimisation_engine.niche_screener.serps import fetch_serps
         from optimisation_engine.niche_screener.classify import classify_domains
+        from optimisation_engine.niche_screener.domain_viability import fetch_domain_viability
         from optimisation_engine.niche_screener.score import score_niche
         from optimisation_engine.niche_screener import tripwires
 
@@ -75,6 +77,8 @@ def cmd_screen(args) -> None:
                 context.setdefault(o["domain"], {"title": o.get("title"), "snippet": o.get("snippet")})
         cls = classify_domains(domains, spec, run_id, context=context)
         print(f"[screen] classified {len(cls['classes'])} domains, unknown_rate={cls['unknown_rate']:.2f}")
+        dv = fetch_domain_viability(spec, run_id)
+        print(f"[screen] domain_viability coverage={dv['coverage']:.2f} ({dv['total_domains']} domains)")
         score = score_niche(spec, run_id)
         trips = tripwires.evaluate(run_id, niche)
         print(f"[screen] total={score['total']} range=[{score['total_min']},{score['total_max']}] "
@@ -90,6 +94,20 @@ def cmd_screen(args) -> None:
 
     write_manifest(run_id, niche, {"stages": summaries})
     print(f"[screen] manifest written")
+
+
+def cmd_viability(args) -> None:
+    """Standalone paid fetch of new_domain_viability data (whois + bulk_ranks)
+    over an existing run's cached serps.json, for runs that predate this
+    component. Not called by `rescore` (which must stay network-free)."""
+    from optimisation_engine.niche_screener.domain_viability import fetch_domain_viability
+
+    spec = load_spec(args.spec)
+    niche = spec["name"]
+    if cache_get(args.run_id, niche, "serps") is None:
+        raise SystemExit(f"no cached serps for {args.run_id}/{niche}; run screen --stage2 first")
+    dv = fetch_domain_viability(spec, args.run_id)
+    print(f"[viability] coverage={dv['coverage']:.2f} domains={dv['total_domains']}")
 
 
 def cmd_rescore(args) -> None:
@@ -188,6 +206,11 @@ def main(argv=None) -> None:
     s.add_argument("--run-id", default=None)
     s.add_argument("--stage2", action="store_true")
     s.set_defaults(fn=cmd_screen)
+
+    v = sub.add_parser("viability", help="paid: fetch new_domain_viability data (whois+bulk_ranks) for a run")
+    v.add_argument("--run-id", required=True)
+    v.add_argument("--spec", required=True)
+    v.set_defaults(fn=cmd_viability)
 
     r = sub.add_parser("rescore", help="pure rescore from cache, no network")
     r.add_argument("--run-id", required=True)

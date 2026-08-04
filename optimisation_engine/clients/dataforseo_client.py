@@ -381,6 +381,21 @@ class DataForSEOClient:
             seed_keyword=f"bulk_kd:{len(keywords)}kw",
         )
 
+    def bulk_ranks(self, *, site_key: str, targets: list[str]) -> dict:
+        """Backlinks bulk domain-rank score (0-1000-ish authority proxy) for
+        up to 1000 domains per call. Used by niche_screener's
+        new_domain_viability component."""
+        if len(targets) > 1000:
+            raise ValueError("bulk_ranks supports max 1000 targets per call")
+        payload = [{"targets": targets}]
+        return self._post_paid(
+            "backlinks/bulk_ranks/live",
+            payload,
+            site_key=site_key,
+            expected_rows=len(targets),
+            seed_keyword=f"bulk_ranks:{len(targets)}dom",
+        )
+
 
 # ----- Persistence helpers -------------------------------------------------
 
