@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@giamboscaro"
 category: "Inheritance Tax"
 metaTitle: "Inheritance Tax on Trusts: The 10-Year Charge"
-metaDescription: "Discretionary trusts face an inheritance tax charge of up to 6% every 10 years, plus entry and exit charges. See how the calculation works, with a worked example."
+metaDescription: "Discretionary trusts face an inheritance tax charge of up to 6% every 10 years, plus entry and exit charges. How the calculation works, with a worked example."
 h1: "Inheritance tax on trusts: the 10-year charge explained"
 summary: "Most discretionary trusts sit inside the relevant property regime, which replaces the usual death-based inheritance tax with its own three charges: a 20% entry charge on amounts settled above the nil-rate band, a periodic charge of up to 6% at every 10-year anniversary, and exit charges when assets leave the trust. The 6% ceiling comes from applying 30% of the 20% lifetime rate to the trust's value above the nil-rate band. This guide explains who the regime catches, how the charges fit together, and what trustees have to do as an anniversary approaches, with a simplified worked example."
 keyTakeaways:

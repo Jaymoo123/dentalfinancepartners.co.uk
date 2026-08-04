@@ -1,25 +1,34 @@
 # wills-probate (Probate Compass) site state
 
-Last updated 2026-08-03 (CONTENT BUILD INCOMPLETE, 23 wave-4 posts outstanding).
+Last updated 2026-08-04 (CONTENT BUILD COMPLETE, 146 posts; Phase-6 code prep
+DONE; remaining = owner externals at G1).
 
 brand_locked: true
 
 Placeholder brand "Probate Compass"; all content bodies brand-agnostic (zero
 brand-name mentions); real brand and domain decided at G1 pre-deploy. Site
 scaffolded + calculators + pillars + research assets committed on
-`expansion/phase-0` (unpushed). Content: **waves 1-3 complete (54 posts); wave 4
-is 69 of 92.** Batches B1-B4 shipped; **B5 (cost + IHT + Scotland) and B6
-(do-i-need) were never written, so 23 cards in
-`docs/wills-probate/briefs/wave4/_cards/` have no post.** Verified by filesystem
-count 2026-08-03; the earlier "waves 1-4 complete, ~123 posts" claim was wrong.
-One stray untracked post `how-much-does-it-cost-to-make-a-will.md`, Opus-rewritten
-2026-08-03, ready to commit. Provenance: 89 of 123 posts tag
-`generator: claude-fable-5` and the other 34 carry no generator field at all, so
-they are NOT verified Opus. An audit of the Fable corpus found it meets the
-quality bar (primary paragraph-level citations, arithmetic correct, zero
-fabricated statistics), so this is a policy question for the owner under the
-Opus-only rule, not a quality remediation. Deploy still gated on owner G1
-(brand + domain), which owner has NOT yet released.
+`expansion/phase-0`. Content: **complete, 146 posts** across all 7 categories
+(Probate Process, Making a Will, Inheritance Tax, Executors, Intestacy,
+Pensions and IHT 2027, Power of Attorney); wave 4 batches B5/B6 plus QA and
+figure-reconciliation fixes landed `fb66e0bd` through `3319bfc4`. The earlier
+"23 cards unwritten" / "stray untracked post" state is stale: everything is
+committed, tree clean. Provenance: 89 of 146 posts tag
+`generator: claude-fable-5`; the other 57 carry no generator field. A quality
+audit found the untagged posts meet the same bar (correct arithmetic,
+primary paragraph-level citations, zero fabricated statistics, zero
+em-dashes), so this is a policy question for the owner under the Opus-only
+rule (see `PHASE6_G1_RUNBOOK_2026-08-04.md` section (d)), not a quality
+remediation. Deploy still gated on owner G1 (brand + domain), which owner has
+NOT yet released.
+
+**Phase-6 code prep done 2026-08-04** (mirrors the divorce-finances pass):
+migration verified apply-ready and storage-prefix-safe (`wpc`, not `bfp`);
+`blog_generator` internal-link slug list was stale/empty, regenerated from
+the full 146-post corpus; `tsc --noEmit` and `npm run build` both clean (210
+static pages); 4 posts with `metaDescription` over 160 chars trimmed; nurture
+confirmed fail-closed without `CRON_SECRET`. Full detail and G1 runbook:
+`docs/wills-probate/PHASE6_G1_RUNBOOK_2026-08-04.md`.
 
 ## Identity
 
@@ -37,10 +46,15 @@ Topic pool ranked and wave-bucketed: wave1=14, wave2=13, wave3=28, wave4=64.
       CI build matrix entry
 - [x] wills-probate/web scaffold
 - [x] Topic pool -> blog_topics seed (site_key=wills-probate)
-- [~] Waves 1-3 complete (54 posts); wave 4 at 69/92, 23 cards unwritten (B5, B6)
+- [x] All waves complete: 146 posts, all committed, tree clean
 - [x] Calculators + pillar pages + research assets build
-- [ ] Commit stray post `how-much-does-it-cost-to-make-a-will.md`
+- [x] Phase-6 code prep (2026-08-04): migration verified, blog_generator
+      internal-link slugs regenerated, build verified, corpus spot-guard
+      clean, runbook written
+- [ ] Migration apply (owner / SQL editor)
 - [ ] Vercel project + domain (gated on real brand/domain decision at G1 — HELD by owner 2026-07-28)
+- [ ] Fable-authorship policy decision (owner, see PHASE6_G1_RUNBOOK section (d))
+- [ ] Test-lead cycle end to end
 - [ ] Request Indexing / GSC + Bing verification (post real-domain attach)
 
 ## Notes

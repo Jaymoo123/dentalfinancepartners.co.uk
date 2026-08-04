@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/@tingeyinjurylawfirm"
 category: "Inheritance Tax"
 metaTitle: "Inheritance Tax Threshold in Scotland Explained"
-metaDescription: "The inheritance tax threshold in Scotland is the same as the rest of the UK: £325,000, up to £1m for couples. What differs is confirmation, legal rights and intestacy."
+metaDescription: "The inheritance tax threshold in Scotland is the same as the rest of the UK: £325,000. What differs is confirmation, legal rights and intestacy rules."
 h1: "Inheritance tax threshold in Scotland explained"
 summary: "Inheritance tax is a UK-wide tax, so the threshold in Scotland is exactly the same as in England, Wales and Northern Ireland: £325,000 per person, up to £500,000 with the residence nil-rate band, and up to £1,000,000 for married couples and civil partners. What genuinely differs in Scotland is everything around the tax: confirmation instead of probate, legal rights that stop a spouse or children being fully disinherited, and a very different set of intestacy rules. This guide covers both halves."
 keyTakeaways:

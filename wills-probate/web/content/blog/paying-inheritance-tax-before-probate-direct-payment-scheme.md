@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/photos/fMD_Cru6OTk"
 category: "Inheritance Tax"
 metaTitle: "Paying Inheritance Tax Before Probate: IHT423 and DPS"
-metaDescription: "IHT is usually due before probate, within 6 months of death. How the Direct Payment Scheme (IHT423), 10 annual instalments and grant on credit unlock the estate."
+metaDescription: "IHT is due before probate, within 6 months of death. How the Direct Payment Scheme (IHT423), 10 annual instalments and grant on credit unlock the estate."
 h1: "Paying inheritance tax before probate: the Direct Payment Scheme and every other route out"
 summary: "Inheritance tax usually has to be paid, at least in part, before the probate registry will issue a grant, yet the money to pay it is often frozen in the very accounts the grant would unlock. This chicken-and-egg problem has four established exits: the Direct Payment Scheme (form IHT423), under which banks, building societies and NS&I pay HMRC directly from the deceased's own accounts; the instalment option, which spreads tax on property and business assets over 10 annual payments; a grant on credit from HMRC as a last resort; and life insurance written in trust, which pays out without waiting for probate. This guide explains which route fits which estate, with a worked example."
 keyTakeaways:

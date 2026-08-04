@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://unsplash.com/photos/well-lit-hospital-hallway-with-doors-at-the-end-of-the-corridor-jhSkpyCwJI0"
 category: "Probate Process"
 metaTitle: "How to Fill In Probate Forms PA1P and PA1A Correctly"
-metaDescription: "Most people now apply for probate online, not on paper. The 6 errors that stop PA1P and PA1A applications, the £526 fee, and how to avoid a 12-week wait becoming longer."
+metaDescription: "Most people now apply for probate online. The 6 errors that stop PA1P and PA1A applications, the £526 fee, and how to avoid a 12-week wait becoming longer."
 h1: "How to fill in the probate application form correctly"
 summary: "For most estates in England and Wales the probate application is now made online through GOV.UK, with the paper forms PA1P (where there is a will) and PA1A (where there is not) reserved for cases the online service cannot handle. The questions are the same either way, and so are the mistakes: picking the wrong form, entering the wrong estate values, applying before HMRC has issued its code, or sending a copy of the will instead of the original. This guide walks through the errors that most often stop an application."
 keyTakeaways:
