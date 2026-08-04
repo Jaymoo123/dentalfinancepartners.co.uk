@@ -133,7 +133,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>The following are all allowable expenses for a locum dentist:</p>
 
 <ul>
-<li>GDC annual retention fee (currently £978 for dentists in 2025)</li>
+<li>GDC annual retention fee (£620 for the 2025 retention year, rising to £698 for 2026)</li>
 <li>BDA membership fees</li>
 <li>Dental defence organisation subscriptions (indemnity, covered above)</li>
 <li>Practice insurance (if you pay for your own public liability or equipment insurance)</li>
