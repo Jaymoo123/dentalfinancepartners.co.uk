@@ -202,6 +202,9 @@ def score_niche(spec: dict, run_id: str) -> dict:
         "total_max": round(total_max, 2),
         "complete": all(not c["is_null"] for c in components.values()),
     }
+    unknown_rate = float(classify.get("unknown_rate", 0.0))
+    if unknown_rate > 0.2:
+        print(f"[score] PROVISIONAL (unknown_rate={unknown_rate:.2f}): total={out['total']} is not league-comparable")
     cache_put(run_id, niche, "score", out)
     return out
 

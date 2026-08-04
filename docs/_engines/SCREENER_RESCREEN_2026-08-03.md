@@ -152,6 +152,18 @@ the cost path was changed, and the default is untouched on disk.
 - **dental-implants is the one live new candidate**, pending a classification pass to score it.
   Note it is not accounting-adjacent (`accounting_adjacent: false`), so it would not reuse the
   estate's tax-content muscle the way wills and divorce do.
+
+  **2026-08-04 ADDENDUM: classification pass done, verdict = KILL.** All 139 unknown domains
+  classified (112 SPECIALIST, 12 INFO, 9 GENERALIST, 3 GOV_EDU, 2 UGC; 11 ambiguous cases
+  homepage-verified) and merged into `classify_data.json` (220→359 hand_labels). Re-score:
+  `total=20.83 range=[20.83, 60.83] unknown_rate=0.0`. The 0.87 unknown rate was masking a
+  SERP saturated with implant clinics (mean thinness 0.4356): the gates pass on volume, but
+  the results pages are already owned by providers, which is the losing shape. Two components
+  (`diy_pain_demand`, `calculator_demand`) remain NULL on a separate pre-existing defect
+  (volumes coverage 0.24 &lt; 0.30), so 60.83 is not a real ceiling; the honest floor sits ~35
+  points below every build candidate. Combined with `accounting_adjacent: false`, dental-implants
+  is removed from the candidate list. Instrument patch shipped alongside: `score.py` now prints
+  a `PROVISIONAL (unknown_rate=...)` warning when unknown_rate &gt; 0.2 (defect 2 above).
 - The unbuilt league below the two finished sites (leasehold 57.1, older-driver 56.3, solar
   56.2) is unchanged and all three sit within 1 point of the anchor, not above it by the margin
   wills and divorce showed.
