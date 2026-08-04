@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "ATED 2026/27 Strategic Overview for Property Companies"
-metaDescription: "ATED 2026/27 strategic overview for non-natural persons holding UK residential property: scope, the SDLT 15% and IHT Schedule A1 interlock"
+metaDescription: "ATED 2026/27 strategic overview for non-natural persons holding UK residential property: scope, the SDLT 17% and IHT Schedule A1 interlock"
 altText: "Georgian stucco-front townhouses with black ironwork in South Kensington, representing high-value London residential property held through corporate envelopes"
 image: "https://images.pexels.com/photos/35940687/pexels-photo-35940687.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -15,15 +15,15 @@ imageCredit:
   source: Pexels
   source_url: https://www.pexels.com/photo/35940687/
 h1: "ATED 2026/27: A Strategic Overview for Companies Holding UK Residential Property"
-summary: "ATED catches a narrower population than most directors realise, but it locks together with the 15% flat-rate SDLT and IHT Schedule A1 in ways that decide the right corporate posture for years. The strategic entry-point page for the 2026/27 chargeable period: who is in, who is out, what is changing, and where to go for depth."
+summary: "ATED catches a narrower population than most directors realise, but it locks together with the 17% flat-rate SDLT and IHT Schedule A1 in ways that decide the right corporate posture for years. The strategic entry-point page for the 2026/27 chargeable period: who is in, who is out, what is changing, and where to go for depth."
 schema: ""
 faqs:
   - question: "My UK Ltd holds a single buy-to-let worth £620,000. Are we in ATED at all in 2026/27?"
     answer: "Yes, the company sits within the ATED charging population. Any UK or overseas company holding a single UK residential dwelling worth more than £500,000 on 1 April 2026 (or on acquisition during 2026/27) is a chargeable person for the period. Whether you actually pay the £4,600 bottom-band charge is a separate question: if the property is let to an unconnected tenant on commercial terms, Property Rental Business Relief reduces the bill to nil, but you still file the return. A claim-only return is still a return, and missing the 30 April 2026 filing date carries the same £100 immediate penalty as a tax-due return."
-  - question: "Is ATED the same as the 15% flat-rate SDLT charged when the company bought the property?"
-    answer: "No. They are two charges in the same statutory family. Schedule 4A Finance Act 2003 imposes a 15% flat SDLT rate when a non-natural person acquires a single dwelling for more than £500,000. ATED, under Part 3 Finance Act 2013, then sits on top as an annual charge on the holding period. The reliefs are deliberately aligned, so a property let commercially typically escapes both, but the two charges are tested at different moments and on different events. The SDLT clawback window also outlives the SDLT return itself: a Sch 4A relief claimed at acquisition can be unwound by a non-qualifying use occurring up to three years later."
+  - question: "Is ATED the same as the 17% flat-rate SDLT charged when the company bought the property?"
+    answer: "No. They are two charges in the same statutory family. Schedule 4A Finance Act 2003 imposes a 17% flat SDLT rate (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53) when a non-natural person acquires a single dwelling for more than £500,000. ATED, under Part 3 Finance Act 2013, then sits on top as an annual charge on the holding period. The reliefs are deliberately aligned, so a property let commercially typically escapes both, but the two charges are tested at different moments and on different events. The SDLT clawback window also outlives the SDLT return itself: a Sch 4A relief claimed at acquisition can be unwound by a non-qualifying use occurring up to three years later."
   - question: "Does inheritance tax still touch UK residential property held inside an overseas company envelope?"
-    answer: "Yes. Schedule A1 IHTA 1984, enacted in 2017, looks through corporate, partnership, and trust envelopes for UK residential property. The shares in an overseas company holding a UK dwelling are treated as UK situs assets to the extent of the residential property value, and the non-domiciled individual shareholder's death produces a UK IHT charge. Combined with ATED on the annual hold and the 15% SDLT on acquisition, the three taxes lock onto company-held UK residential property in a way that often pushes the strategic conversation toward dis-enveloping high-value family homes."
+    answer: "Yes. Schedule A1 IHTA 1984, enacted in 2017, looks through corporate, partnership, and trust envelopes for UK residential property. The shares in an overseas company holding a UK dwelling are treated as UK situs assets to the extent of the residential property value, and the non-domiciled individual shareholder's death produces a UK IHT charge. Combined with ATED on the annual hold and the 17% SDLT on acquisition, the three taxes lock onto company-held UK residential property in a way that often pushes the strategic conversation toward dis-enveloping high-value family homes."
   - question: "We are a UK-resident Ltd, not an overseas company. Does ATED still apply to us?"
     answer: "Yes. ATED applies to non-natural persons regardless of residence. A UK-incorporated, UK-resident, UK-trading Ltd holding a single dwelling worth more than £500,000 is squarely in scope. The regime was originally targeted at offshore corporate envelopes, but the legislation never carved UK companies out, and the HMRC ATED Manual is explicit that residence does not displace the charge."
   - question: "What is materially different between 2025/26 and 2026/27 ATED?"
@@ -50,10 +50,10 @@ dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
-editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside the pillar (`ated-complete-guide-2026-27`) which carries the deep operational mechanics; this page handles the chargeable-persons positioning, the three-tax interlock with SDLT 15% and IHT Sch A1, and the 2026/27 strategic posture choices. Links out to the rates table, valuation guide, relief mechanics, penalty appeal, and overseas-OTM guides for depth."
+editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside the pillar (`ated-complete-guide-2026-27`) which carries the deep operational mechanics; this page handles the chargeable-persons positioning, the three-tax interlock with SDLT 17% and IHT Sch A1, and the 2026/27 strategic posture choices. Links out to the rates table, valuation guide, relief mechanics, penalty appeal, and overseas-OTM guides for depth."
 ---
 
-<p>Most directors of UK property companies have heard of ATED, and most have a vague sense that it is "the annual tax on company-held London houses". That description is right in spirit and wrong in nearly every detail that matters for a 2026/27 strategic decision. ATED catches a narrower population than most expect (a single residential dwelling worth more than £500,000, held by a non-natural person), it interlocks with the 15% flat-rate SDLT at acquisition and Schedule A1 IHTA 1984 at death in ways that decide corporate posture for years, and it is moving through three pressures in 2026/27 that make this the natural year for boards to take a fresh look.</p>
+<p>Most directors of UK property companies have heard of ATED, and most have a vague sense that it is "the annual tax on company-held London houses". That description is right in spirit and wrong in nearly every detail that matters for a 2026/27 strategic decision. ATED catches a narrower population than most expect (a single residential dwelling worth more than £500,000, held by a non-natural person), it interlocks with the 17% flat-rate SDLT at acquisition and Schedule A1 IHTA 1984 at death in ways that decide corporate posture for years, and it is moving through three pressures in 2026/27 that make this the natural year for boards to take a fresh look.</p>
 
 <p>This page is the strategic overview, not the operational walkthrough. The <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">2026/27 pillar guide</a> carries the mechanics: every band, every relief, the full return procedure, the valuation rules, and the penalty cascade. Here, the focus is one level up: the cohort map of who is actually in scope, the three-tax interlock, what has moved between 2025/26 and 2026/27, and the strategic posture choices a board has when the property sits inside a corporate envelope.</p>
 
@@ -126,11 +126,11 @@ editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside t
 
 <p>ATED is best understood not as a standalone charge but as the middle member of a three-charge regime that the legislature built around corporate envelopes for UK residential property. The three charges run at different moments, attach to different events, and use deliberately aligned relief lists. Reading them together is how a strategic posture decision actually gets made.</p>
 
-<h3>SDLT 15% on Acquisition: Schedule 4A Finance Act 2003</h3>
+<h3>SDLT 17% on Acquisition: Schedule 4A Finance Act 2003</h3>
 
-<p>When a non-natural person buys a single UK dwelling for more than £500,000, Schedule 4A FA 2003 imposes a flat 15 per cent SDLT rate on the entire consideration, displacing the standard residential SDLT slice rates. A £1.5m purchase by a Ltd that does not qualify for a Sch 4A relief produces £225,000 of SDLT, against roughly £100,000 under the standard residential schedule and around £75,000 if an individual buyer benefits from any first-time-buyer or other relief.</p>
+<p>When a non-natural person buys a single UK dwelling for more than £500,000, Schedule 4A FA 2003 imposes a flat 17 per cent SDLT rate on the entire consideration (raised from 15 per cent for effective dates on or after 31 October 2024, FA 2025 s.53), displacing the standard residential SDLT slice rates. A £1.5m purchase by a Ltd that does not qualify for a Sch 4A relief produces £255,000 of SDLT, against roughly £100,000 under the standard residential schedule and around £75,000 if an individual buyer benefits from any first-time-buyer or other relief.</p>
 
-<p>The Sch 4A relief list is deliberately aligned with the ATED relief list: rental property let commercially, property developer trade, property trader, employee accommodation, charitable use, and so on. A property bought for commercial letting typically qualifies for SDLT relief at acquisition and ATED relief annually thereafter. The trap is the three-year clawback window: a Sch 4A SDLT relief claimed at acquisition can be unwound by a non-qualifying use within three years of completion, which is a longer tail than the annual ATED claim cycle. The <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">15% SDLT and ATED interaction guide</a> walks through the clawback mechanic in detail.</p>
+<p>The Sch 4A relief list is deliberately aligned with the ATED relief list: rental property let commercially, property developer trade, property trader, employee accommodation, charitable use, and so on. A property bought for commercial letting typically qualifies for SDLT relief at acquisition and ATED relief annually thereafter. The trap is the three-year clawback window: a Sch 4A SDLT relief claimed at acquisition can be unwound by a non-qualifying use within three years of completion, which is a longer tail than the annual ATED claim cycle. The <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">17% SDLT and ATED interaction guide</a> walks through the clawback mechanic in detail.</p>
 
 <h3>ATED Annually: Part 3 Finance Act 2013</h3>
 
@@ -140,14 +140,14 @@ editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside t
 
 <p>Schedule A1 IHTA 1984, enacted in the Finance (No. 2) Act 2017 with effect from 6 April 2017, looks through corporate, partnership, and trust envelopes that hold UK residential property. For a non-domiciled (or, after the April 2025 reforms, non-long-term-resident) individual who owns shares in an overseas company holding a UK dwelling, the shares are treated as UK situs assets to the extent of the dwelling's value. Death produces a UK IHT charge at 40 per cent on that value (less the nil-rate band and any reliefs), even though the legal title sits in a non-UK company.</p>
 
-<p>Schedule A1 was the regime change that ended the historic motive for overseas-company envelopes around UK residential property for non-domiciled owners. The envelope no longer shelters the property from IHT, ATED bites annually inside the envelope, and the 15% SDLT bit at acquisition. The three-tax interlock is what drives the strategic conversation for any overseas-company-held London residential property.</p>
+<p>Schedule A1 was the regime change that ended the historic motive for overseas-company envelopes around UK residential property for non-domiciled owners. The envelope no longer shelters the property from IHT, ATED bites annually inside the envelope, and the 17% SDLT bit at acquisition. The three-tax interlock is what drives the strategic conversation for any overseas-company-held London residential property.</p>
 
 <h3>Reading the Three Together</h3>
 
 <p>For a board reviewing a corporate-held UK residential property in 2026/27, the three taxes interlock in this sequence:</p>
 
 <ul>
-  <li><strong>Acquisition:</strong> 15% SDLT was paid (or a Sch 4A relief was claimed) at the time of purchase. The clawback window may or may not still be open.</li>
+  <li><strong>Acquisition:</strong> 17% SDLT was paid (or a Sch 4A relief was claimed) at the time of purchase. The clawback window may or may not still be open.</li>
   <li><strong>Annual holding period:</strong> ATED is due each 30 April. Whether a relief is claimed depends on use during the period. A change of use within the year (let then occupied, or vice versa) produces day-apportionment in the relief calculation.</li>
   <li><strong>Disposal or death:</strong> a sale produces a non-resident CGT charge (for overseas companies) or a CT-on-gains charge (for UK companies); a death of a non-long-term-resident shareholder produces Schedule A1 IHT exposure on the residential value.</li>
 </ul>
@@ -233,7 +233,7 @@ editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside t
 <ul>
   <li><a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">ATED 2026/27 Complete Guide</a>, the operational pillar covering bands, valuation, every relief, return mechanics, and the penalty cascade in detail.</li>
   <li><a href="/blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics">ATED Property Rental Business Relief: Mechanics</a>, the deep dive on the most-claimed relief with the s.1122 connected-person test.</li>
-  <li><a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">ATED and the 15% Flat-Rate SDLT</a>, the acquisition-charge companion guide with the three-year clawback mechanic.</li>
+  <li><a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">ATED and the 17% Flat-Rate SDLT</a>, the acquisition-charge companion guide with the three-year clawback mechanic.</li>
   <li><a href="/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics">ATED Late-Filing Penalties</a>, the penalty cascade with reasonable-excuse appeal grounds.</li>
   <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let Limited Company: Complete Guide</a>, the upstream corporate-versus-individual decision framework.</li>
   <li><a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a Property Portfolio: 2026 Guide</a>, the pre-incorporation context for new corporate property holders.</li>
@@ -247,7 +247,7 @@ editorialNote: "Strategic entry-point page for the ATED bucket. Sits alongside t
   <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics" rel="external">HMRC ATED Manual (gov.uk Internal Manuals)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/part/3" rel="external">Finance Act 2013, Part 3 (sections 94 to 174): the ATED statutory framework</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/1984/51/schedule/A1" rel="external">Inheritance Tax Act 1984, Schedule A1: look-through for enveloped UK residential property</a></li>
-  <li><a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A" rel="external">Finance Act 2003, Schedule 4A: the 15% flat-rate SDLT on corporate residential acquisitions</a></li>
+  <li><a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A" rel="external">Finance Act 2003, Schedule 4A: the 17% flat-rate SDLT on corporate residential acquisitions (raised from 15% on 31 October 2024)</a></li>
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/55" rel="external">Finance Act 2009, Schedule 55: penalties for failure to make returns</a></li>
   <li><a href="https://www.gov.uk/guidance/register-an-overseas-entity" rel="external">Register of Overseas Entities (gov.uk)</a>, the parallel transparency regime</li>
 </ul>

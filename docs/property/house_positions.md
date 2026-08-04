@@ -10,13 +10,15 @@ If you (Session A/B/C) hit a factual conflict between a competitor source and a 
 
 **Residential SDLT bands (England + NI), from 1 April 2025:**
 
-| Band | Rate (no surcharge) | Rate + 5% additional dwellings surcharge | Rate for non-natural persons over £500k (Sch 4A FA 2003) |
+| Band | Rate (no surcharge) | Rate + 5% additional dwellings surcharge | Rate for non-natural persons over £500k (Sch 4A FA 2003, raised from 15% for effective dates on or after 31 Oct 2024, FA 2025 s.53) |
 |---|---|---|---|
-| £0 to £125,000 | 0% | 5% | 15% |
-| £125,001 to £250,000 | 2% | 7% | 15% |
-| £250,001 to £925,000 | 5% | 10% | 15% (if dwelling >£500k) |
-| £925,001 to £1,500,000 | 10% | 15% | 15% |
-| Above £1,500,000 | 12% | 17% | 15% |
+| £0 to £125,000 | 0% | 5% | 17% |
+| £125,001 to £250,000 | 2% | 7% | 17% |
+| £250,001 to £925,000 | 5% | 10% | 17% (if dwelling >£500k) |
+| £925,001 to £1,500,000 | 10% | 15% | 17% |
+| Above £1,500,000 | 12% | 17% | 17% |
+
+Sch 4A flat rate synced with `docs/solicitors/house_positions.md` §7.B, verified 2026-08-04.
 
 **Key dates and changes:**
 - 0% nil band returned to £125,000 from **1 April 2025** (it had been temporarily £250,000 from 23 September 2022).
@@ -745,7 +747,7 @@ ATED does **not** apply to:
 - Trustees (provided no corporate trustee structure produces a non-natural-person owner).
 - Charities holding the dwelling on charitable trusts (subject to the §18.3 charitable-use relief mechanics).
 
-Statutory basis: **Part 3 FA 2013** (ss.94-174) introduced ATED, with the relief structure at sections referenced through the Act itself. Sessions citing the SDLT 15% rate schedule should cite **Schedule 4A FA 2003**; ATED itself sits in Part 3 FA 2013.
+Statutory basis: **Part 3 FA 2013** (ss.94-174) introduced ATED, with the relief structure at sections referenced through the Act itself. Sessions citing the SDLT flat-rate schedule (17% from 31 Oct 2024, raised from 15%, FA 2025 s.53) should cite **Schedule 4A FA 2003**; ATED itself sits in Part 3 FA 2013.
 
 ### 18.3 The relief catalogue
 
@@ -1351,7 +1353,7 @@ Source: `https://www.gov.wales/higher-rates-land-transaction-tax-overview`, `htt
 
 **When higher rates apply:** the buyer (or any joint buyer) owns another dwelling **anywhere in the world** at the effective date of the transaction with a market value of £40,000 or more. The £40,000 minor-interest threshold mirrors the SDLT Schedule 4ZA pattern (§1 / §24.5).
 
-**Corporate buyers:** Welsh LTT does NOT replicate the SDLT 15% rate for non-natural-persons buying a >£500,000 dwelling (Sch 4A FA 2003). Wales applies the higher residential rates table above to corporate buyers; there is no separate corporate flat rate.
+**Corporate buyers:** Welsh LTT does NOT replicate the SDLT 17% rate for non-natural-persons buying a >£500,000 dwelling (Sch 4A FA 2003, raised from 15% for effective dates on or after 31 Oct 2024). Wales applies the higher residential rates table above to corporate buyers; there is no separate corporate flat rate.
 
 **Replacement-of-main-residence rule:** a buyer replacing their main residence within the prescribed window pays the main residential rates (§23.1), not the higher rates, even if they own another dwelling. The Welsh rule mirrors the SDLT 3-year replacement window (LTTA 2017 Sch 5 paras 8-11). Where the previous main residence is sold AFTER the effective date of the new purchase, the buyer pays higher rates initially and claims a repayment within the 3-year window via the Welsh Revenue Authority repayment mechanism.
 
@@ -1480,7 +1482,7 @@ The 4-nation comparison must be precise. Sessions writing on Welsh or Scottish p
 | MDR status | Abolished 1 June 2024 | Retained, subsidiary-dwelling carve-out 7 Feb 2025, min rate 3% from 13 Feb 2026 | Retained, no carve-outs |
 | Six-dwellings non-residential | s.116(7) FA 2003 (automatic) | None | s.59(8) LBTT(S)A 2013 (automatic) |
 | Surcharge refund on sale of old main residence | 3 years (36 months) | 3 years (36 months) | 3 years (36 months) |
-| Corporate / non-natural-person flat rate | 15% above £500k (Sch 4A FA 2003) | None (uses higher rates table) | None (uses ADS) |
+| Corporate / non-natural-person flat rate | 17% above £500k (Sch 4A FA 2003, raised from 15% for effective dates on or after 31 Oct 2024, FA 2025 s.53) | None (uses higher rates table) | None (uses ADS) |
 
 **Cross-border transactions involving land in two jurisdictions:**
 - FA 2003 s.48A (England) + LTTA 2017 Sch 22 (Wales) + LBTT(S)A 2013 Sch 14 (Scotland) provide apportionment rules where a single transaction includes land in two jurisdictions.

@@ -15,7 +15,7 @@ imageCredit:
   source: "Pexels"
   source_url: "https://www.pexels.com/photo/brown-leather-duffel-bag-1058959/"
 h1: "Non-Resident SDLT 2% Surcharge: The Test, the Stack and the Refund"
-summary: "The 2% non-resident SDLT surcharge in Schedule 9A FA 2003 catches buyers who have spent fewer than 183 days in the UK in a defined 365-day window. The test is SDLT-specific and differs from the income tax statutory residence test. This page covers the residence test, how the surcharge stacks with HRAD and the 15% rate, the joint purchaser trap, the company residence rules, and the refund route."
+summary: "The 2% non-resident SDLT surcharge in Schedule 9A FA 2003 catches buyers who have spent fewer than 183 days in the UK in a defined 365-day window. The test is SDLT-specific and differs from the income tax statutory residence test. This page covers the residence test, how the surcharge stacks with HRAD and the 17% rate, the joint purchaser trap, the company residence rules, and the refund route."
 schema: ""
 faqs:
   - question: "What is the SDLT residence test for the 2% non-resident surcharge?"
@@ -23,7 +23,7 @@ faqs:
   - question: "If I become UK-resident after the purchase, can I reclaim the 2%?"
     answer: "Yes. Where the buyer was non-resident at the effective date but becomes UK-resident within the 365-day window starting one year before completion and ending one year after, the surcharge is reclaimable. The retrospective look applies a 730-day window centred on the effective date. If, at any point in that window, the buyer spends 183 or more days in the UK in any continuous 365-day stretch, they qualify. The claim is filed through the standard gov.uk online SDLT refund service within 2 years of the effective date."
   - question: "How does the 2% stack with other surcharges?"
-    answer: "The 2% non-resident surcharge applies on top of standard residential SDLT and on top of every residential-specific surcharge in turn. On a £600,000 residential second home bought by a non-resident company: 5% standard rate (£30,000) + 5% HRAD (£30,000) + 2% non-resident (£12,000) = £72,000 SDLT. Where the 15% flat rate for non-natural persons over £500,000 applies (Schedule 4A), the 2% non-resident surcharge sits on top, giving an effective 17% rate. The surcharges are additive, not alternative."
+    answer: "The 2% non-resident surcharge applies on top of standard residential SDLT and on top of every residential-specific surcharge in turn. On a £600,000 residential second home bought by a non-resident company: 5% standard rate (£30,000) + 5% HRAD (£30,000) + 2% non-resident (£12,000) = £72,000 SDLT. Where the 17% flat rate for non-natural persons over £500,000 applies (Schedule 4A, raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53), the 2% non-resident surcharge sits on top, giving an effective 19% rate. The surcharges are additive, not alternative."
   - question: "Does the surcharge apply to limited companies?"
     answer: "Yes, with a specific test. A company is non-UK resident for SDLT purposes if either: (a) it is not UK-resident for corporation tax (using the standard CT residence test, broadly central management and control), or (b) it is a close company within the meaning of section 439 CTA 2010 and is controlled by non-UK resident participators (using the SDLT day-count test for those participators). The close-company carve-in catches UK-incorporated companies controlled by non-UK resident shareholders, which would otherwise escape under the headline residence test."
   - question: "Joint purchasers: do all need to be UK-resident for the surcharge to be avoided?"
@@ -37,7 +37,7 @@ faqs:
   - question: "How does the SDLT residence test interact with the income tax statutory residence test (SRT)?"
     answer: "They are entirely separate. The SDLT test in Schedule 9A is a single 183-day count over a defined 365-day window ending on the effective date. The income tax SRT in Schedule 45 FA 2013 has automatic UK tests, automatic overseas tests and the sufficient ties test, each layered. A buyer can satisfy the income tax SRT (and pay UK income tax on global income) while still being non-UK resident for SDLT purposes if their UK day count over the relevant 365-day window falls below 183. The SRT determines income tax / CGT; only the SDLT test determines the 2% surcharge."
   - question: "Does the 2% apply to commercial property?"
-    answer: "No. The surcharge is residential-property-specific. Commercial property and mixed-use property taxed at non-residential rates are outside the surcharge. Where a transaction crosses the six-dwellings threshold and is automatically treated as non-residential under section 116(7) FA 2003, the 2% does not apply to that transaction either. Six-or-more bulk acquisitions are therefore one of the few routes that simultaneously deal with the HRAD, the non-resident surcharge and the 15% non-natural-person rate by displacing residential characterisation altogether."
+    answer: "No. The surcharge is residential-property-specific. Commercial property and mixed-use property taxed at non-residential rates are outside the surcharge. Where a transaction crosses the six-dwellings threshold and is automatically treated as non-residential under section 116(7) FA 2003, the 2% does not apply to that transaction either. Six-or-more bulk acquisitions are therefore one of the few routes that simultaneously deal with the HRAD, the non-resident surcharge and the 17% non-natural-person rate by displacing residential characterisation altogether."
   - question: "How is the 2% surcharge claimed back on becoming UK-resident?"
     answer: "The refund is claimed through the same gov.uk online SDLT refund service used for HRAD claims. The buyer applies once they have spent 183 days in the UK in any 365-day window starting up to one year before the effective date and ending up to one year after. The 2-year claim deadline runs from the effective date. The application requires the original UTRN from the SDLT return, evidence of UK presence (passport stamps, employer records, tenancy agreements, utility bills), and the refund amount. HMRC typically processes refunds within 4 to 12 weeks; complex cases involving overseas evidence can run longer."
 dateModified: "2026-05-22"
@@ -49,7 +49,7 @@ editorialNote: "Mechanics page for the 2% non-resident SDLT surcharge under Sche
 
 <p>The 2% non-resident SDLT surcharge under Schedule 9A FA 2003 catches a buyer who, on a residential UK property purchase, fails a SDLT-specific 183-day residence test. The test is not the income tax statutory residence test; it is its own simpler day-count rule, and it produces results that do not always align with how the buyer might describe their tax residency in conversation. A buyer who is UK-resident for income tax and CGT can still be caught by the 2% surcharge for SDLT, and vice versa.</p>
 
-<p>This page covers the residence test itself, how the 2% stacks with the 5% HRAD surcharge and the 15% non-natural-person rate, the company residence rules (including the close-company carve-in), the joint purchaser trap, the Crown-employee exception, and the refund route available where the buyer becomes UK-resident within the post-completion window. For surcharge stacking on standard purchases see our <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT rates pillar</a>.</p>
+<p>This page covers the residence test itself, how the 2% stacks with the 5% HRAD surcharge and the 17% non-natural-person rate, the company residence rules (including the close-company carve-in), the joint purchaser trap, the Crown-employee exception, and the refund route available where the buyer becomes UK-resident within the post-completion window. For surcharge stacking on standard purchases see our <a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT rates pillar</a>.</p>
 
 <h2>The Schedule 9A residence test, in one paragraph</h2>
 
@@ -63,19 +63,19 @@ editorialNote: "Mechanics page for the 2% non-resident SDLT surcharge under Sche
 
 <table>
 <thead>
-<tr><th>Buyer profile</th><th>Standard rate</th><th>+ HRAD</th><th>+ Non-resident</th><th>+ 15% (NNP)</th><th>Effective top-band rate</th></tr>
+<tr><th>Buyer profile</th><th>Standard rate</th><th>+ HRAD</th><th>+ Non-resident</th><th>+ 17% (NNP)</th><th>Effective top-band rate</th></tr>
 </thead>
 <tbody>
 <tr><td>UK-resident individual, main residence</td><td>Up to 12%</td><td>,</td><td>,</td><td>,</td><td>12%</td></tr>
 <tr><td>UK-resident individual, additional dwelling</td><td>Up to 12%</td><td>5%</td><td>,</td><td>,</td><td>17%</td></tr>
 <tr><td>Non-resident individual, additional dwelling</td><td>Up to 12%</td><td>5%</td><td>2%</td><td>,</td><td>19%</td></tr>
-<tr><td>UK-resident close company, dwelling > £500k, no relief</td><td>,</td><td>,</td><td>,</td><td>15%</td><td>15%</td></tr>
-<tr><td>Non-resident close company, dwelling > £500k, no relief</td><td>,</td><td>,</td><td>2%</td><td>15%</td><td>17%</td></tr>
-<tr><td>Non-resident company, additional dwelling (relief from 15% claimed)</td><td>Up to 12%</td><td>5%</td><td>2%</td><td>,</td><td>19%</td></tr>
+<tr><td>UK-resident close company, dwelling > £500k, no relief</td><td>,</td><td>,</td><td>,</td><td>17%</td><td>17%</td></tr>
+<tr><td>Non-resident close company, dwelling > £500k, no relief</td><td>,</td><td>,</td><td>2%</td><td>17%</td><td>19%</td></tr>
+<tr><td>Non-resident company, additional dwelling (relief from 17% claimed)</td><td>Up to 12%</td><td>5%</td><td>2%</td><td>,</td><td>19%</td></tr>
 </tbody>
 </table>
 
-<p>On a £600,000 second home bought by a non-resident company that does not claim the 15% non-natural-person rate relief, the effective top-band rate is 19%. On £600,000 the SDLT bill is therefore around £88,000, against £30,000 for a UK-resident individual replacing their main residence. The 2% is a marginal contribution to that total but a real one; on bigger purchases it compounds.</p>
+<p>On a £600,000 second home bought by a non-resident company that does not claim the 17% non-natural-person rate relief (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53), the effective top-band rate is 19%. On £600,000 the SDLT bill is therefore around £114,000, against £30,000 for a UK-resident individual replacing their main residence. The 2% is a marginal contribution to that total but a real one; on bigger purchases it compounds.</p>
 
 <h2>Companies: residence test plus the close-company carve-in</h2>
 

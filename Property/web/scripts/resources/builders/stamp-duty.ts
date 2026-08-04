@@ -283,7 +283,7 @@ export function build(): ExcelJS.Workbook {
     "",
     "• NOT modelled: mixed-use property, deals of six or more dwellings (s.116(7) non-residential treatment),",
     "  uninhabitable property, linked transactions, leasehold premiums and net-present-value rent, and the",
-    "  15% Schedule 4A rate for certain corporate purchases over £500,000. Multiple Dwellings Relief was",
+    "  17% Schedule 4A rate for certain corporate purchases over £500,000 (raised from 15% on 31 October 2024). Multiple Dwellings Relief was",
     "  abolished for transactions on or after 1 June 2024 and is not available.",
     "",
     "• Figures are rounded to whole pounds and use current rates. This is general guidance, not advice for your",

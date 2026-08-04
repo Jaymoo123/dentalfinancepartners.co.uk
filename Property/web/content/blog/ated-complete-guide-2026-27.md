@@ -32,8 +32,8 @@ faqs:
   answer: Value is set at the most recent ATED revaluation date or the date of acquisition if later. The current revaluation date is 1 April 2022, used for the five chargeable periods from 2023/24 to 2027/28. The next revaluation date is 1 April 2027, which will be used from 2028/29 onwards. You can request a Pre-Return Banding Check from HMRC if your value is within 10% of a band boundary.
 - question: Can a property developer or trader avoid ATED?
   answer: Yes. Property Developer Relief is available where the dwelling is held as trading stock by a property development trade, and Property Trader Relief covers dwellings acquired in the course of a property trading business with a view to resale. Both reliefs reduce the charge to nil but must be claimed on the return. Any non-qualifying use during the period (for example, personal occupation by a director) clawbacks the relief.
-- question: How does ATED interact with the 15% flat-rate SDLT on company purchases?
-  answer: When a non-natural person buys a single dwelling worth more than £500,000, Schedule 4A FA 2003 imposes a flat 15% SDLT rate unless a qualifying relief (broadly the same ones available for ATED) is claimed. The ATED reliefs and the SDLT 15% reliefs are aligned, so a property let commercially typically escapes both. The interaction is covered in more detail in our guide to the 15% flat-rate SDLT and ATED.
+- question: How does ATED interact with the 17% flat-rate SDLT on company purchases?
+  answer: When a non-natural person buys a single dwelling worth more than £500,000, Schedule 4A FA 2003 imposes a flat 17% SDLT rate (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53) unless a qualifying relief (broadly the same ones available for ATED) is claimed. The ATED reliefs and the SDLT 17% reliefs are aligned, so a property let commercially typically escapes both. The interaction is covered in more detail in our guide to the 17% flat-rate SDLT and ATED.
 - question: Has ATED-related CGT been abolished?
   answer: Yes. ATED-related CGT, which previously applied to gains on the disposal of ATED-charged property, was abolished from 6 April 2019. Gains on UK residential property held by non-resident companies are now within the standard non-resident company corporation tax on chargeable gains regime, and gains held by UK-resident companies fall within ordinary corporation tax.
 - question: What if the company only acquires the property part-way through the year?
@@ -48,15 +48,15 @@ dateModified: '2026-05-22'
 reviewedBy: Property Tax Partners Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-05-22'
-editorialNote: Pillar reference for the ATED bucket. Daughter pages on rental relief mechanics, the 15% SDLT interaction, and the penalty cascade link back here.
+editorialNote: Pillar reference for the ATED bucket. Daughter pages on rental relief mechanics, the 17% SDLT interaction, and the penalty cascade link back here.
 metaTitle_prev: 'ATED 2026/27: Complete Guide for Property Companies'
 metaDescription_prev: 'Annual Tax on Enveloped Dwellings 2026/27: who pays, the six bands and charges, reliefs for rental and developer property, 30 April return deadline.'
 ---
-<p>The Annual Tax on Enveloped Dwellings (ATED) is the yearly charge that catches limited companies, partnerships with corporate members, and collective investment schemes when they hold a UK residential dwelling worth more than £500,000. It was introduced in 2013 to deter the use of corporate "envelopes" to escape stamp duty on high-value London homes, and the regime has expanded steadily since: the entry threshold dropped from £2 million to £500,000 over its first three years, the annual charges have risen with inflation, and the linked 15% flat-rate SDLT on corporate purchases has stayed in place.</p>
+<p>The Annual Tax on Enveloped Dwellings (ATED) is the yearly charge that catches limited companies, partnerships with corporate members, and collective investment schemes when they hold a UK residential dwelling worth more than £500,000. It was introduced in 2013 to deter the use of corporate "envelopes" to escape stamp duty on high-value London homes, and the regime has expanded steadily since: the entry threshold dropped from £2 million to £500,000 over its first three years, the annual charges have risen with inflation, and the linked flat-rate SDLT on corporate purchases has risen too, from 15% to 17% for effective dates on or after 31 October 2024.</p>
 
 <p>For 2026/27, the headline figures matter to anyone holding a single dwelling above the threshold in a non-natural person: the smallest band pays £4,600 a year and the largest pays £303,450. Both numbers can be reduced to nil by claiming the right relief on the return, but the return itself is not optional. Missing the 30 April filing deadline produces an immediate £100 penalty even where no tax is owed, and the cascade gets sharply worse from there.</p>
 
-<p>This guide is the pillar reference for the regime. It walks through who is caught, the 2026/27 bands, valuation and the five-year revaluation cycle, every available relief and exemption, how ATED interacts with SDLT, the annual return mechanics, the late-filing and late-payment penalty cascade, and the strategic question of whether to keep a property enveloped at all. Where a topic deserves its own dedicated guide (rental relief mechanics, the 15% SDLT interaction, penalty appeals) we link through to it.</p>
+<p>This guide is the pillar reference for the regime. It walks through who is caught, the 2026/27 bands, valuation and the five-year revaluation cycle, every available relief and exemption, how ATED interacts with SDLT, the annual return mechanics, the late-filing and late-payment penalty cascade, and the strategic question of whether to keep a property enveloped at all. Where a topic deserves its own dedicated guide (rental relief mechanics, the 17% SDLT interaction, penalty appeals) we link through to it.</p>
 
 <h2>Who Has to Pay ATED</h2>
 
@@ -119,13 +119,13 @@ metaDescription_prev: 'Annual Tax on Enveloped Dwellings 2026/27: who pays, the 
 
 <p>Valuation is the holder's responsibility, not HMRC's. If your value is within 10% of a band boundary you can request a <strong>Pre-Return Banding Check</strong> from HMRC, which gives confirmation of the band without committing HMRC to a specific value. The check is free and is generally recommended where being one band higher or lower would change the annual charge by more than the cost of a professional valuation (which it usually will at the larger bands). For the full mechanic on the 1 April 2027 revaluation, the acquisition-date rule, and the PRBC procedure see our <a href="/blog/incorporation-and-company-structures/ated-valuation-date-rules-2027-revaluation">ATED valuation date rules and 2027 revaluation guide</a>.</p>
 
-<h2>The 15% Flat-Rate SDLT on Acquisition</h2>
+<h2>The 17% Flat-Rate SDLT on Acquisition</h2>
 
-<p>ATED is the annual cost of holding an enveloped dwelling. The acquisition cost is governed separately by <strong>Schedule 4A FA 2003</strong>, which imposes a flat 15% SDLT charge when a non-natural person buys a single dwelling for more than £500,000. The 15% rate replaces the ordinary slab rates (and the 5% additional dwellings surcharge, and the 2% non-resident surcharge) for that transaction.</p>
+<p>ATED is the annual cost of holding an enveloped dwelling. The acquisition cost is governed separately by <strong>Schedule 4A FA 2003</strong>, which imposes a flat 17% SDLT charge when a non-natural person buys a single dwelling for more than £500,000 (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53). The 17% rate replaces the ordinary slab rates and the 5% additional dwellings surcharge for that transaction; the 2% non-resident surcharge still applies on top where the buyer is also non-UK-resident.</p>
 
-<p>The Schedule 4A reliefs broadly mirror the ATED reliefs: a property bought as commercial rental stock, as developer trading stock, or as part of a property trade is taxed at the standard SDLT rates instead of 15%. If the relief is lost within three years of acquisition (for example, a director moves into the property), HMRC can claw back the SDLT difference.</p>
+<p>The Schedule 4A reliefs broadly mirror the ATED reliefs: a property bought as commercial rental stock, as developer trading stock, or as part of a property trade is taxed at the standard SDLT rates instead of 17%. If the relief is lost within three years of acquisition (for example, a director moves into the property), HMRC can claw back the SDLT difference.</p>
 
-<p>The interaction is critical at the planning stage: forming a company to buy a £1.5 million London house in 2026/27, without any qualifying relief, costs 15% SDLT (£225,000) on acquisition plus £9,450 a year ATED, before any consideration of corporation tax or extraction costs. Our dedicated guide to the <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">15% flat-rate SDLT and ATED interaction</a> walks through the worked numbers.</p>
+<p>The interaction is critical at the planning stage: forming a company to buy a £1.5 million London house in 2026/27, without any qualifying relief, costs 17% SDLT (£255,000) on acquisition plus £9,450 a year ATED, before any consideration of corporation tax or extraction costs. Our dedicated guide to the <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">17% flat-rate SDLT and ATED interaction</a> walks through the worked numbers.</p>
 
 <h2>Reliefs Available on the ATED Return</h2>
 
@@ -241,7 +241,7 @@ metaDescription_prev: 'Annual Tax on Enveloped Dwellings 2026/27: who pays, the 
 
 <h3>Claim a Relief and File a Nil Return</h3>
 
-<p>If the property is or can be put into <strong>commercial use</strong> by an unconnected third party, Property Rental Business Relief reduces the ATED charge to nil and the Schedule 4A 15% SDLT issue is irrelevant going forward. This is the standard outcome for a Ltd Co buy-to-let portfolio above the £500,000 threshold per property.</p>
+<p>If the property is or can be put into <strong>commercial use</strong> by an unconnected third party, Property Rental Business Relief reduces the ATED charge to nil and the Schedule 4A 17% SDLT issue is irrelevant going forward. This is the standard outcome for a Ltd Co buy-to-let portfolio above the £500,000 threshold per property.</p>
 
 <h3>Pay the ATED Charge</h3>
 
@@ -258,7 +258,7 @@ metaDescription_prev: 'Annual Tax on Enveloped Dwellings 2026/27: who pays, the 
 <p>ATED is one of four UK tax charges that can apply to high-value residential property held by a non-natural person:</p>
 
 <ul>
-  <li><strong>SDLT</strong> on acquisition (the 15% flat rate under Schedule 4A FA 2003, plus the 2% non-resident surcharge where the buyer is non-UK-resident).</li>
+  <li><strong>SDLT</strong> on acquisition (the 17% flat rate under Schedule 4A FA 2003, raised from 15% on 31 October 2024, plus the 2% non-resident surcharge where the buyer is non-UK-resident).</li>
   <li><strong>Corporation tax</strong> on rental profits (covered in our guide to <a href="/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27">corporation tax rates for property companies in 2026/27</a>).</li>
   <li><strong>ATED</strong>, annually, on the value of the dwelling.</li>
   <li><strong>Corporation tax on chargeable gains</strong> on eventual disposal (replacing the abolished ATED-related CGT for both UK and non-UK-resident companies).</li>

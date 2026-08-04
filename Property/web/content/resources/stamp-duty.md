@@ -103,9 +103,9 @@ lastReviewed: "2026-06-06"
 
 <p>A building so derelict that it is not "suitable for use as a dwelling" at the effective date can fall outside residential treatment (the <em>Bewley</em> principle), meaning non-residential rates and no surcharge. The bar is high — a property needing modernisation is still a dwelling; this is about genuine structural dereliction or contamination — and HMRC routinely challenges these claims. Contemporaneous surveyor evidence is essential.</p>
 
-<h3>The 15% corporate rate</h3>
+<h3>The 17% corporate rate</h3>
 
-<p>A "non-natural person" (broadly a company) buying a single dwelling worth more than £500,000 can face a flat <strong>15% rate</strong> on the whole price under Schedule 4A FA 2003, unless a relief applies. A genuine property-rental business is relieved from the 15% rate and instead pays the standard rates plus the 5% surcharge — which is what our model assumes — but the 15% trap is real for purchases that are not genuine lettings (for example, a property held for an occupant connected with the company).</p>
+<p>A "non-natural person" (broadly a company) buying a single dwelling worth more than £500,000 can face a flat <strong>17% rate</strong> on the whole price under Schedule 4A FA 2003 (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53), unless a relief applies. A genuine property-rental business is relieved from the 17% rate and instead pays the standard rates plus the 5% surcharge — which is what our model assumes — but the 17% trap is real for purchases that are not genuine lettings (for example, a property held for an occupant connected with the company).</p>
 
 <h3>Linked transactions and leases</h3>
 
@@ -129,7 +129,7 @@ lastReviewed: "2026-06-06"
 <li><strong>Get the classification right.</strong> The biggest legitimate savings come from correctly identifying mixed-use, six-or-more-dwellings, or genuinely uninhabitable property — not from a clever structure. These are evidence-based factual questions, and worth proper advice when the facts support them.</li>
 <li><strong>Claim what you are owed.</strong> The replacement-main-residence reclaim (sell the old home within 36 months) and the non-resident reclaim are commonly missed. If you paid a surcharge you should not have, you can reclaim it within the time limit.</li>
 <li><strong>Plan the timing of ownership.</strong> For couples and joint buyers, who is on the title and whether anyone already owns a dwelling affects the additional-property test. This needs to be decided before exchange, not after.</li>
-<li><strong>Company purchases are not an SDLT saving.</strong> Buying through a company does not avoid the 5% surcharge — a company always pays it (and risks the 15% rate above £500,000). The case for a company is about income tax and Corporation Tax, not SDLT; the SDLT is a cost of that decision, not a benefit. Model it before incorporating.</li>
+<li><strong>Company purchases are not an SDLT saving.</strong> Buying through a company does not avoid the 5% surcharge — a company always pays it (and risks the 17% rate above £500,000, raised from 15% on 31 October 2024). The case for a company is about income tax and Corporation Tax, not SDLT; the SDLT is a cost of that decision, not a benefit. Model it before incorporating.</li>
 </ul>
 
 <p>What does <em>not</em> work: artificial sub-sales, "SDLT mitigation schemes" sold as products, and retrofit "partnership" structures slapped together just before completion to access reliefs. HMRC has a general anti-avoidance rule (s.75A) aimed squarely at these, and the schemes routinely fail. Treat anything that promises to make the surcharge disappear with deep suspicion.</p>
@@ -140,7 +140,7 @@ lastReviewed: "2026-06-06"
 <p>Yes. The surcharge applies because, at the end of the day of the purchase, you own two residential properties (your home and the buy-to-let) and you are not replacing your main residence. Owning your own home plus one investment property is the most common surcharge case.</p>
 
 <h3>Can I avoid the surcharge by buying through a limited company?</h3>
-<p>No. A company always pays the 5% additional-dwelling surcharge on residential property, and a company buying a single dwelling over £500,000 can face the 15% rate unless it is a genuine letting business. Incorporation is an income-tax and Corporation-Tax decision; the SDLT is a cost of it.</p>
+<p>No. A company always pays the 5% additional-dwelling surcharge on residential property, and a company buying a single dwelling over £500,000 can face the 17% rate (raised from 15% for effective dates on or after 31 October 2024) unless it is a genuine letting business. Incorporation is an income-tax and Corporation-Tax decision; the SDLT is a cost of it.</p>
 
 <h3>Does first-time-buyer relief apply to a buy-to-let?</h3>
 <p>No. The relief is only for someone who has never owned a residential property and is buying their first home to live in. A buy-to-let is an additional/investment property, so the relief cannot apply, and the surcharge will.</p>
