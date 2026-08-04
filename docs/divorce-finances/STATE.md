@@ -28,10 +28,17 @@ hubs. Phase 6 approved by owner 2026-07-28.
 
 ## Phase 6 remaining
 
-- [ ] Supabase migration APPLY (owner / SQL editor)
-- [ ] Vercel project
+Full owner runbook: `docs/divorce-finances/PHASE6_G1_RUNBOOK_2026-08-04.md`
+(mirrors `docs/wills-probate/PHASE6_G1_RUNBOOK_2026-08-04.md`). All items
+below verified code-ready 2026-08-04; nothing executed yet.
+
+- [ ] Supabase migration APPLY (owner / SQL editor) — file exists:
+      `supabase/migrations/20260803000002_add_divorce_finances_to_leads_and_sites.sql`
+- [ ] Vercel project (Root Directory `divorce-finances/web`, org
+      `team_XF9WAygZX7SGk9Fo4tOAnihH`)
 - [ ] Test-lead cycle end to end
-- [ ] G1: real brand + domain decision, metadata swap, deploy
+- [ ] G1: real brand + domain decision (shortlist ready, see below),
+      MoneyHelper/FMCA external-link allowlist call, metadata swap, deploy
 
 ## Notes
 
