@@ -5,24 +5,24 @@ date: "2026-07-20"
 author: "Trustee Tax Editorial Team"
 category: "Charity Finance"
 metaTitle: "How Much Should a Charity Hold in Reserves? By Cause"
-metaDescription: "Register data on charity reserves: religious charities hold a median 19 months, community development just 5.6. Which causes are most under-reserved, and why."
+metaDescription: "Register data on charity reserves: animal welfare charities hold a median 8.8 months, recreation charities just 3.3. Which causes are most under-reserved, and why."
 h1: "How Much Should a Charity Hold in Reserves? Reserves Health by Cause"
-summary: "Analysis of the Charity Commission full register extract shows median free reserves range from 19.0 months for religious activities charities down to 5.6 months for economic and community development charities. Nearly a third of charities in some causes hold under three months of reserves. This article sets out reserves health by cause, explains what a healthy level looks like, and what trustees should do about a thin reserves position."
+summary: "Analysis of the Charity Commission full register extract shows median free reserves range from 8.8 months for animal welfare charities down to 3.3 months for recreation charities. Close to half of charities in some causes hold under three months of reserves. This article sets out reserves health by cause, explains what a healthy level looks like, and what trustees should do about a thin reserves position."
 keyTakeaways:
-  - "Religious activities charities hold the most, at a median 19.0 months of free reserves, followed by armed forces and emergency services (18.3 months) and animal welfare (17.5 months)."
-  - "Economic and community development charities hold the least, at a median 5.6 months, with human rights, equality and diversity (5.7 months) close behind."
-  - "Economic and community development charities are also the most under-reserved: 31.0% hold under three months of free reserves."
+  - "Animal welfare charities hold the most, at a median 8.8 months of free reserves, followed by armed forces and emergency services (7.8 months) and religious activities (5.4 months)."
+  - "Recreation charities hold the least, at a median 3.3 months, with economic and community development (3.5 months) and arts, culture, heritage and science (3.5 months) close behind."
+  - "Recreation charities are also the most under-reserved: 47.1% hold under three months of free reserves."
   - "A low reserves figure is not automatically a problem. What matters is a written reserves policy the trustees can justify, which the Charity Commission expects from most charities."
   - "Reserves health is measured as free reserves divided by annual expenditure, converted to months, using the most recent annual return."
 faqs:
   - question: "How much should a charity hold in reserves?"
-    answer: "There is no single correct figure. The Charity Commission expects most charities to set a written reserves policy that explains the level they hold and why. Across the register, median free reserves range from 5.6 months for economic and community development charities to 19.0 months for religious activities charities, so the right level depends heavily on the cause and funding model. A common informal marker for a thin position is fewer than three months of reserves, but even that is acceptable if the trustees can justify it."
+    answer: "There is no single correct figure. The Charity Commission expects most charities to set a written reserves policy that explains the level they hold and why. Across the register, median free reserves range from 3.3 months for recreation charities to 8.8 months for animal welfare charities, so the right level depends heavily on the cause and funding model. A common informal marker for a thin position is fewer than three months of reserves, but even that is acceptable if the trustees can justify it."
   - question: "Which charitable causes hold the most reserves?"
-    answer: "Religious activities charities hold the most, at a median 19.0 months of free reserves. Armed forces and emergency services charities hold 18.3 months and animal welfare charities 17.5 months. These causes tend to have stable, recurring income and long-established balances, which supports higher reserves."
+    answer: "Animal welfare charities hold the most, at a median 8.8 months of free reserves. Armed forces and emergency services charities hold 7.8 months and religious activities charities 5.4 months. These causes tend to have stable, recurring income and long-established balances, which supports higher reserves."
   - question: "Which charitable causes are most under-reserved?"
-    answer: "Economic and community development charities are the most stretched: 31.0% hold under three months of free reserves, and their median is just 5.6 months. Recreation charities (30.8% under three months) and human rights, equality and diversity charities (30.5%) are close behind. These causes often rely on restricted grant funding, which limits how much unrestricted reserve they can build."
+    answer: "Recreation charities are the most stretched: 47.1% hold under three months of free reserves, and their median is just 3.3 months. Arts, culture, heritage and science charities (45.5% under three months) and economic and community development charities (44.8%) are close behind. These causes often rely on restricted grant funding, which limits how much unrestricted reserve they can build."
   - question: "How is reserves health measured?"
-    answer: "We take each charity's free reserves from its most recent annual return (part B) and divide by its latest annual expenditure, then convert to months. A charity with reserves equal to three months of expenditure could keep operating for roughly three months if all income stopped. We report the median months for each cause plus the share of charities holding under three months."
+    answer: "We take each charity's free reserves, the trustees' own declared figure from its most recent annual return (part B), and divide by its latest annual expenditure, then convert to months. A charity with reserves equal to three months of expenditure could keep operating for roughly three months if all income stopped. We report the median months for each cause plus the share of charities holding under three months."
   - question: "Is a low reserves figure a warning sign?"
     answer: "Not on its own. Many grant-funded and community charities deliberately run lean, because holding large unrestricted balances would be inconsistent with their funding or their charitable purpose. The real warning sign is a low reserves level with no written policy explaining it. Trustees should be able to state their target reserve range and the reasoning behind it."
   - question: "Where can I find the full data?"
@@ -34,9 +34,9 @@ schema:
   "author":
     "@type": "Organization"
     "name": "Trustee Tax Editorial Team"
-sourcesVerifiedAt: "2026-07-20"
+sourcesVerifiedAt: "2026-08-04"
 ---
-<p>Reserves are the question trustees most often get wrong in both directions: some hold far too little to weather a lost grant, others sit on balances so large that funders start to ask why. Analysis of the Charity Commission full register extract shows just how much the norm varies by cause. The typical religious activities charity holds 19.0 months of free reserves, while the typical economic and community development charity holds just 5.6 months.<sup><a href="#ref-1">[1]</a></sup></p>
+<p>Reserves are the question trustees most often get wrong in both directions: some hold far too little to weather a lost grant, others sit on balances so large that funders start to ask why. Analysis of the Charity Commission full register extract shows just how much the norm varies by cause. The typical animal welfare charity holds 8.8 months of free reserves, while the typical recreation charity holds just 3.3 months.<sup><a href="#ref-1">[1]</a></sup></p>
 
 <p>This article sets out reserves health across every charitable cause, explains what the figures mean, and gives trustees a practical way to decide whether their own level is defensible. The full dataset is in our <a href="/research/uk-charity-cause-income">UK Charity Cause Income and Reserves Health Index</a>.<sup><a href="#ref-1">[1]</a></sup></p>
 
@@ -51,9 +51,9 @@ sourcesVerifiedAt: "2026-07-20"
 <p>At the top of the reserves ranking are causes with stable, recurring income and long-established balances:<sup><a href="#ref-1">[1]</a></sup></p>
 
 <ul>
-  <li><strong>Religious activities</strong> charities hold the most, at a median 19.0 months of free reserves. Only 17.5% hold under three months.</li>
-  <li><strong>Armed forces and emergency services</strong> charities hold 18.3 months, with 17.0% under three months, the lowest under-reserved share of any cause.</li>
-  <li><strong>Animal welfare</strong> charities hold 17.5 months, with just 16.4% under three months.</li>
+  <li><strong>Animal welfare</strong> charities hold the most, at a median 8.8 months of free reserves. Only 26.7% hold under three months, the lowest under-reserved share of any cause.</li>
+  <li><strong>Armed forces and emergency services</strong> charities hold 7.8 months, with 29.8% under three months.</li>
+  <li><strong>Religious activities</strong> charities hold 5.4 months, with 38.3% under three months.</li>
 </ul>
 
 <p>These causes tend to draw on regular giving, legacies and membership income, which is more predictable than one-off grants and lets them build a deeper buffer.</p>
@@ -63,19 +63,19 @@ sourcesVerifiedAt: "2026-07-20"
 <p>At the other end are causes that lean heavily on restricted grant funding, which limits how much unrestricted reserve they can accumulate:<sup><a href="#ref-1">[1]</a></sup></p>
 
 <ul>
-  <li><strong>Economic and community development</strong> charities hold the least, at a median 5.6 months, and are the most under-reserved: 31.0% hold under three months of free reserves.</li>
-  <li><strong>Human rights, equality and diversity</strong> charities hold a median 5.7 months, with 30.5% under three months.</li>
-  <li><strong>Recreation</strong> charities hold 6.2 months, with 30.8% under three months, the second-highest under-reserved share.</li>
-  <li><strong>People of a particular ethnic or racial origin</strong> charities hold 6.7 months, with 27.9% under three months.</li>
+  <li><strong>Recreation</strong> charities hold the least, at a median 3.3 months, and are the most under-reserved: 47.1% hold under three months of free reserves.</li>
+  <li><strong>Economic and community development</strong> charities hold a median 3.5 months, with 44.8% under three months.</li>
+  <li><strong>Arts, culture, heritage and science</strong> charities hold 3.5 months, with 45.5% under three months, the second-highest under-reserved share.</li>
+  <li><strong>Human rights, equality and diversity</strong> charities hold 3.7 months, with 43.7% under three months.</li>
 </ul>
 
 <p>A low figure here reflects the funding model, not mismanagement. Grant-funded charities often cannot build large unrestricted reserves, because their income arrives earmarked for specific projects.</p>
 
 <h2>Where the biggest causes sit</h2>
 
-<p>The largest and most familiar cause groups cluster in the middle of the reserves range. Health and saving of lives charities hold a median 7.8 months, with 23.3% under three months. Disability charities hold 7.0 months (24.9% under three months), and children and young people charities, the single largest group, hold 7.2 months with 25.7% under three months.<sup><a href="#ref-1">[1]</a></sup></p>
+<p>The largest and most familiar cause groups cluster in the middle of the reserves range. Health and saving of lives charities hold a median 4.9 months, with 35.5% under three months. Disability charities hold 4.3 months (38.7% under three months), and children and young people charities, the single largest group, hold 4.0 months with 41.4% under three months.<sup><a href="#ref-1">[1]</a></sup></p>
 
-<p>Overseas aid and famine relief charities hold a median 9.5 months but have a high under-reserved share of 29.5%, reflecting a wide spread between well-funded international bodies and small volunteer-led groups. Accommodation and housing charities, the highest earners on the register, hold 8.9 months with 21.6% under three months.<sup><a href="#ref-1">[1]</a></sup></p>
+<p>Overseas aid and famine relief charities hold a median 4.1 months but have a high under-reserved share of 43.9%, reflecting a wide spread between well-funded international bodies and small volunteer-led groups. Accommodation and housing charities, the highest earners on the register, hold 4.5 months with 39.6% under three months.<sup><a href="#ref-1">[1]</a></sup></p>
 
 <p>The full table for all 24 causes is in the <a href="/research/uk-charity-cause-income">UK Charity Cause Income and Reserves Health Index</a>.</p>
 
@@ -109,5 +109,5 @@ sourcesVerifiedAt: "2026-07-20"
 <h2>Sources</h2>
 
 <ol>
-  <li id="ref-1">Charity Commission for England and Wales, full register extract, published under the Open Government Licence v3.0. <a href="https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download" rel="noopener noreferrer">register-of-charities.charitycommission.gov.uk</a>. Data processed and presented in the <a href="/research/uk-charity-cause-income">UK Charity Cause Income and Reserves Health Index</a> (Trustee Tax, generated 2026-07-20). Reserves health = free reserves (from the most recent annual return, part B) divided by latest expenditure, expressed in months. "Under 3 months" is the share of charities in that cause with fewer than three months of free reserves. A charity may carry more than one cause classification, so counts describe charities with that code, not unique organisations. Registered, main charities only.</li>
+  <li id="ref-1">Charity Commission for England and Wales, full register extract, published under the Open Government Licence v3.0. <a href="https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download" rel="noopener noreferrer">register-of-charities.charitycommission.gov.uk</a>. Data processed and presented in the <a href="/research/uk-charity-cause-income">UK Charity Cause Income and Reserves Health Index</a> (Trustee Tax, generated 2026-08-04). Reserves health = free reserves, the trustees' own declared reserves figure from the most recent annual return (part B), divided by latest expenditure, expressed in months. "Under 3 months" is the share of charities in that cause with fewer than three months of free reserves. A charity may carry more than one cause classification, so counts describe charities with that code, not unique organisations. Registered, main charities only.</li>
 </ol>

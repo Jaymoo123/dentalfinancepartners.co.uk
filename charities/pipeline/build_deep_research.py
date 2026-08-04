@@ -9,7 +9,11 @@ This script handles the three deeper datasets:
   2. charity-scrutiny-cliff.json      — cliff-edge cohort: charities within 10% below
                                         each statutory threshold
   3. charity-cause-income.json        — median income + reserves health by cause
-                                        classification (classification + annual_return_partb)
+                                        classification (classification + annual_return_partb).
+                                        Reserves health uses the `reserves` field (trustees'
+                                        declared free reserves, CC19 definition), not
+                                        funds_unrestricted (which includes fixed assets and
+                                        designated funds and overstates reserves health).
 
 Sources: Charity Commission full-register extract (OGL v3.0), daily ZIP.
 Base URL pattern:
@@ -396,9 +400,10 @@ def build_cause_income(
                 pass
 
     # Index free reserves from partb (take the most recent row per charity).
-    # Field names vary; try several candidates.
     reserves_by_number: dict[int, float] = {}
-    # partb actual field names: funds_unrestricted, expenditure_total, fin_period_end_date.
+    # partb actual field names: reserves, expenditure_total, fin_period_end_date.
+    # `reserves` is the trustees' self-declared free reserves figure (CC19 definition:
+    # unrestricted funds excluding fixed assets held for charity use and designated funds).
     # Group by charity number, keep the latest submitted row.
     partb_latest: dict[int, dict] = {}
     for r in partb_rows:
@@ -425,8 +430,9 @@ def build_cause_income(
                     partb_latest[num] = r
 
     for num, r in partb_latest.items():
-        # Use funds_unrestricted as free reserves proxy (per SORP: unrestricted funds are free reserves)
-        val = r.get("funds_unrestricted")
+        # Use the trustees' self-declared `reserves` figure (CC19 free reserves definition),
+        # not funds_unrestricted (includes fixed assets and designated funds, overstates reserves).
+        val = r.get("reserves")
         if val is not None:
             try:
                 reserves_by_number[num] = float(val)
@@ -459,7 +465,7 @@ def build_cause_income(
         if not incomes:
             continue
 
-        # Reserves health: free_reserves / annual_expenditure (months of reserves)
+        # Reserves health: reserves / annual_expenditure (months of reserves)
         reserve_months: list[float] = []
         for n in nums:
             res = reserves_by_number.get(n)
@@ -499,8 +505,10 @@ def build_cause_income(
             "sources": [OGL_SOURCE],
             "notes": (
                 "Median income is each registered charity's latest reported gross income (latest_income). "
-                "Reserves health uses free_reserves from charity_annual_return_partb (most recent return), "
-                "divided by latest_expenditure to produce months of reserves. "
+                "Reserves health uses the reserves field from charity_annual_return_partb (most recent "
+                "return), the trustees' own declared free reserves figure under the CC19 definition: "
+                "unrestricted funds excluding fixed assets held for charity use and designated funds. "
+                "This is divided by latest_expenditure to produce months of reserves. "
                 "A charity can appear under multiple cause classifications; the charity count per cause "
                 "reflects charities with that classification code, not unique charities. "
                 "Only registered, main charities included. 'Under 3 months reserves' is the share of "

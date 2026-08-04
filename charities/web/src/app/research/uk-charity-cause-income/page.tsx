@@ -297,9 +297,9 @@ export default function CharityCauseIncomePage() {
             </div>
             <p className="text-sm text-[var(--muted)]">
               Source: Charity Commission full-register extract (OGL v3.0), {generatedDate}. Free
-              reserves are taken from the most recent annual return (part B) and divided by latest
-              expenditure. &quot;Under 3 months&quot; is the share of charities in that cause with
-              fewer than three months of free reserves.
+              reserves are the trustees&apos; own declared reserves figure from the most recent
+              annual return (part B), divided by latest expenditure. &quot;Under 3 months&quot; is
+              the share of charities in that cause with fewer than three months of free reserves.
             </p>
           </Section>
 
