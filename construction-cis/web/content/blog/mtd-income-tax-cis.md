@@ -17,9 +17,9 @@ metaDescription: "MTD for Income Tax applies from April 2026 if gross CIS income
 h1: "Making Tax Digital and CIS: what subcontractors must do from 2026"
 summary: 'Making Tax Digital for Income Tax (MTD ITSA) became live for sole traders earning over £50,000 from 6 April 2026. For CIS subcontractors, the threshold trap is critical: HMRC tests your gross income, not the money you actually bank after deductions. This guide explains who is in scope now, who joins in April 2027, what quarterly updates require, and how to keep your CIS records in a way that feeds straight into MTD-compatible software.'
 keyTakeaways:
-  - "MTD ITSA is live from April 2026 for sole traders and partnerships with gross income over £50,000. The £30,000 threshold follows in April 2027."
+  - "MTD ITSA is live from April 2026 for sole traders (and landlords) with gross income over £50,000. The £30,000 threshold follows in April 2027 and £20,000 in April 2028. Partnerships are not yet in scope."
   - "For CIS subcontractors, the threshold is tested on gross income, not money banked after deductions. A subcontractor with £60,000 gross (£48,000 received after 20% CIS) is in scope from April 2026."
-  - "You must keep digital records and submit quarterly updates via MTD-compatible software plus an annual end-of-period statement replacing the old SA return."
+  - "You must keep digital records and submit quarterly updates via MTD-compatible software, then file your year-end tax return through that software by 31 January (the separate end-of-period statement step was scrapped before launch)."
   - "HMRC will not issue penalty points for late quarterly updates in 2026/27 (year-1 grace), but late annual returns and late-payment penalties still apply in full."
   - "CIS deduction statements from your contractors become part of your digital record and must reconcile with your quarterly income figures."
 sourcesVerifiedAt: '2026-06-12'
@@ -32,7 +32,7 @@ faqs:
 - question: What software do I need for MTD?
   answer: You need HMRC-recognised MTD-compatible software that can hold digital records, calculate quarterly figures and submit updates directly to HMRC. Most construction-focused accounting packages (QuickBooks, Xero, FreeAgent and others) now have MTD for Income Tax modules. Spreadsheets on their own are only compliant if they are connected to a bridging tool that can submit the data to HMRC.
 - question: What are quarterly updates under MTD?
-  answer: Four times a year you submit a summary of your income and expenses for that quarter directly to HMRC via your software. The quarters run to 5 April, 5 July, 5 October and 5 January. These are not mini tax returns; they are cumulative data submissions. The annual end-of-period statement, submitted after the tax year ends, confirms the final figures and replaces the old Self Assessment return.
+  answer: Four times a year you submit a summary of your income and expenses for that quarter directly to HMRC via your software. The quarters run to 5 April, 5 July, 5 October and 5 January. These are not mini tax returns; they are cumulative data submissions. After the tax year ends you file your tax return through your MTD software by 31 January, confirming the final figures with reliefs and other income added (HMRC scrapped the separately named end-of-period statement before launch).
 - question: Is there a penalty grace period in the first year?
   answer: Yes, but it is narrow. HMRC has confirmed it will not issue late-filing penalty points for quarterly updates submitted late during 2026/27 (the first year). However, this covers quarterly-update points only. Late annual return penalties and late-payment penalties apply in full from day one. Do not treat the grace as a reason to ignore MTD entirely.
 - question: How do CIS deduction statements fit into MTD records?
@@ -40,9 +40,9 @@ faqs:
 - question: What if I have both CIS income and other self-employment income?
   answer: Both streams are added together for the MTD threshold test. If your CIS turnover is £35,000 and you also have £20,000 from a separate non-CIS trade, your total income is £55,000 and you are in scope from April 2026. Each income source is reported as a separate business within your MTD software, but the threshold is assessed on the combined total.
 - question: Do partnerships need to comply with MTD for Income Tax?
-  answer: Yes. Partnerships with total income over £50,000 come into MTD from April 2026, dropping to £30,000 from April 2027. The thresholds are assessed at the partnership level. Each partner then has their individual MTD obligations for their share of the profit.
+  answer: Not yet. HMRC has confirmed that partnerships do not currently need to use MTD for Income Tax, and the timeline for bringing them in will be set out later. The April 2026, 2027 and 2028 phases apply to sole traders and landlords only. If you trade through a partnership, keep filing Self Assessment as normal and watch for HMRC announcing the partnership start date.
 - question: What happens if I miss the April 2026 start date?
-  answer: Get set up as soon as possible. HMRC's year-1 grace means you will not receive penalty points for late quarterly updates during 2026/27, but the underlying obligation to keep digital records and submit quarterly is still live. Starting late also means less time to get your software set up and reconcile your CIS statements before the end-of-period submission.
+  answer: Get set up as soon as possible. HMRC's year-1 grace means you will not receive penalty points for late quarterly updates during 2026/27, but the underlying obligation to keep digital records and submit quarterly is still live. Starting late also means less time to get your software set up and reconcile your CIS statements before the year-end return.
 ---
 <h2>MTD is live now and CIS subcontractors are caught by a threshold most guides miss</h2>
 
@@ -56,11 +56,12 @@ faqs:
 
 <table>
 <tr><th>Start date</th><th>Gross income threshold</th><th>Who is affected</th></tr>
-<tr><td>6 April 2026</td><td>Over £50,000</td><td>Sole traders and partnerships with annual gross income above £50,000</td></tr>
-<tr><td>6 April 2027</td><td>Over £30,000</td><td>Sole traders and partnerships with annual gross income above £30,000</td></tr>
+<tr><td>6 April 2026</td><td>Over £50,000</td><td>Sole traders and landlords with annual gross income above £50,000</td></tr>
+<tr><td>6 April 2027</td><td>Over £30,000</td><td>Sole traders and landlords with annual gross income above £30,000</td></tr>
+<tr><td>6 April 2028</td><td>Over £20,000</td><td>Sole traders and landlords with annual gross income above £20,000</td></tr>
 </table>
 
-<p>Limited companies are not currently in scope for MTD ITSA (they have their own Corporation Tax obligations). MTD ITSA applies to individuals and partnerships filing Self Assessment. For sole-trader CIS subcontractors, that means checking whether your gross income crosses these thresholds now or in the next tax year.</p>
+<p>Neither limited companies nor partnerships are currently in scope for MTD ITSA: companies have their own Corporation Tax obligations, and HMRC has said the timeline for partnerships will be set out later. MTD ITSA applies to individuals filing Self Assessment. For sole-trader CIS subcontractors, that means checking whether your gross income crosses these thresholds now or in the next tax year.</p>
 
 <h2>The threshold trap: gross income, not net receipts</h2>
 
@@ -109,9 +110,9 @@ faqs:
 
 <p>These are not four mini tax returns with payments attached. They are cumulative data submissions. HMRC uses them to build a running picture of your income position, but no tax is calculated or paid at the quarterly stage. Tax is still settled through the annual process.</p>
 
-<h3>3. End-of-period statement and final declaration</h3>
+<h3>3. Year-end tax return through your software</h3>
 
-<p>After the tax year ends (after 5 April), you submit an end-of-period statement through your software confirming your final income and expense figures. You then make a final declaration, replacing what was previously the SA100 Self Assessment return. The deadline for the final declaration is 31 January following the end of the tax year, the same date as the old SA return and the payment-on-account deadline.</p>
+<p>After the tax year ends (after 5 April), you finalise the year through your software: confirm the quarterly figures, add any accounting adjustments, reliefs and other income, and file your tax return. This replaces the old SA100 route (HMRC originally planned a separate end-of-period statement step but scrapped it before launch). The deadline is 31 January following the end of the tax year, the same date as the old SA return and the payment-on-account deadline.</p>
 
 <h2>The year-1 penalty grace and what it does NOT cover</h2>
 
@@ -120,7 +121,7 @@ faqs:
 <p>However, the grace is narrower than it sounds. It covers only the quarterly-update penalty points. It does not cover:</p>
 
 <ul>
-<li><strong>Late annual returns.</strong> The end-of-period statement and final declaration must still be filed by 31 January 2027. Missing that deadline attracts the existing SA late-filing penalty structure.</li>
+<li><strong>Late annual returns.</strong> The year-end return must still be filed by 31 January 2027. Missing that deadline attracts the existing SA late-filing penalty structure.</li>
 <li><strong>Late payment.</strong> Payments on account (31 January and 31 July) and balancing payments (31 January) still incur late-payment interest and surcharges if missed.</li>
 <li><strong>Incorrect returns.</strong> Careless or deliberate errors in quarterly data are still subject to inaccuracy penalties.</li>
 </ul>
@@ -168,7 +169,7 @@ faqs:
 <li>Choose and set up MTD-compatible software. Link it to your HMRC account.</li>
 <li>Gather your CIS payment and deduction statements from April 2026 onwards and enter them as digital records.</li>
 <li>Submit your Q1 update as soon as your software is set up. The grace covers penalty points, not the underlying obligation.</li>
-<li>Confirm your end-of-period statement deadline is 31 January 2027 and note the payment-on-account dates.</li>
+<li>Confirm your year-end return deadline is 31 January 2027 and note the payment-on-account dates.</li>
 </ul>
 
 <p>If you are approaching the £30,000 threshold and will be in scope from April 2027, now is a good time to start using MTD-compatible software voluntarily so the process is familiar before it becomes mandatory.</p>

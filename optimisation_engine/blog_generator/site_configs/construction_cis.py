@@ -38,6 +38,22 @@ _INTERNAL_LINK_SLUGS = [
     "what-is-a-cis-accountant",
     "cis-vs-paye",
     "cis-nil-return-explained",
+    # Salvage wave 2026-08-04 (MTD + bookkeeping + electrician clusters)
+    "how-to-sign-up-for-making-tax-digital-cis",
+    "do-i-need-accountant-for-mtd",
+    "mtd-deadline-extended-what-changed",
+    "mtd-compatible-software-cis",
+    "bookkeeper-cost-self-employed-tradesperson",
+    "cis-bookkeeping-template",
+    "does-tradesperson-need-bookkeeper",
+    "do-bookkeepers-need-registration",
+    "vat-cis-record-keeping-requirements",
+    "self-employed-electrician-rates",
+    "pricing-house-rewire-electrician",
+    "eicr-certificates-pricing-guide",
+    "landlord-electrical-safety-checks-pricing",
+    "cost-to-qualify-electrician-self-employment",
+    "consumer-unit-replacement-pricing",
 ]
 
 _ANCHOR_TERMS = [
@@ -108,7 +124,11 @@ _HALLUCINATION_ZONES = [
         " Late filing triggers the nil return penalty structure (above)."
     ),
     (
-        "MTD ITSA and CIS: from April 2026, sole traders/partnerships with annual income over £50,000"
+        "MTD ITSA and CIS: from April 2026, sole traders (and landlords) with annual income over £50,000;"
+        " £30,000 from April 2027; £20,000 from April 2028. Qualifying income is tested on the return two"
+        " tax years before each phase (2024/25 return decides April 2026). Partnerships and limited"
+        " companies are NOT yet in scope (HMRC timeline to be set out later)."
+        " Original phase line kept for context: from April 2026, sole traders with annual income over £50,000"
         " must comply with MTD ITSA (quarterly digital reporting). From April 2027 the threshold drops"
         " to £30,000. For CIS subcontractors, 'income' for MTD purposes is GROSS income (turnover before"
         " expenses), not net after CIS deductions. A subcontractor receiving £48,000 after 20% deductions"
