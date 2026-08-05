@@ -6,7 +6,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 
 export const metadata: Metadata = {
-  title: `Thank you | ${siteConfig.name}`,
+  title: `Thank you`,
   description: "Your enquiry has been received.",
   robots: { index: false, follow: true },
 };

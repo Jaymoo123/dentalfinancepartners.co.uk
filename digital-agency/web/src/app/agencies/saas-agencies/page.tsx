@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for SaaS & Software Agencies | ${siteConfig.name}`,
+  title: `Accountants for SaaS & Software Agencies`,
   description: "Specialist accountants for UK SaaS and software agency founders. Product vs services revenue split, R&D credits, deferred revenue, exit valuations. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/saas-agencies` },
   openGraph: {

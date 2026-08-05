@@ -12,7 +12,7 @@ const categoryName = "Tax & Compliance";
 const categorySlug = "tax-and-compliance";
 
 export const metadata: Metadata = {
-  title: `Tax & Compliance for Agency Founders | ${siteConfig.name}`,
+  title: `Tax & Compliance for Agency Founders`,
   description: `Corporation tax, VAT, PAYE and HMRC deadlines explained for agency founders. Practical compliance guidance from specialist agency accountants.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

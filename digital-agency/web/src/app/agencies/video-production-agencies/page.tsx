@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for Video Production Agencies | ${siteConfig.name}`,
+  title: `Accountants for Video Production Agencies`,
   description: "Specialist accountants for UK video and film production agency founders. Capital allowances on kit, project accounting, talent costs, IR35 for crew. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/video-production-agencies` },
   openGraph: {

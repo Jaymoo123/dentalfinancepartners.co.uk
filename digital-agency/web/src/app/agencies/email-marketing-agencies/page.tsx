@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for Email Marketing Agencies | ${siteConfig.name}`,
+  title: `Accountants for Email Marketing Agencies`,
   description: "Specialist accountants for UK email marketing agency founders. Klaviyo and HubSpot partner commissions, retainer income, R&D credits for automation. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/email-marketing-agencies` },
   openGraph: {

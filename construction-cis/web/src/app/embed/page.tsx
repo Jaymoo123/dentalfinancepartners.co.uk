@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/calculators/registry";
 
 export const metadata: Metadata = {
-  title: `Embed Our Free CIS Calculators | ${siteConfig.name}`,
+  title: `Embed Our Free CIS Calculators`,
   description:
     "Add our free, always-current UK CIS calculators to your own website. CIS refund, take-home pay, gross payment status, and more. One iframe, mobile-friendly, no cost.",
   alternates: { canonical: `${siteConfig.url}/embed` },

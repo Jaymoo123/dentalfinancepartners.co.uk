@@ -24,7 +24,7 @@ const { meta, headline, regions } = data;
 const PAGE_PATH = "/research/dental-practice-density";
 
 export const metadata: Metadata = {
-  title: "Dental Practice Density by Region | England | Dental Finance Partners",
+  title: "Dental Practice Density by Region | England",
   description: `There are ${headline.total_dental_locations.toLocaleString("en-GB")} CQC-registered dental locations in England (${fmtDensity(headline.england_per_100k)} per 100,000 population). London has the highest density (${fmtDensity(headline.highest_density_per_100k)}/100k); ${headline.lowest_density_region} the lowest (${fmtDensity(headline.lowest_density_per_100k)}/100k). CQC open data.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {

@@ -23,7 +23,7 @@ const accruals_edge = cliff_edges.find((e) => e.key === "accruals_gate")!;
 const audit_edge = cliff_edges.find((e) => e.key === "audit_gate")!;
 
 export const metadata: Metadata = {
-  title: `UK Charity Scrutiny Cliff-Edge Monitor | ${site.name}`,
+  title: `UK Charity Scrutiny Cliff-Edge Monitor`,
   description: `${fmtNumber(ie_edge.charities_in_cliff)} charities sit within 10% below the £25,000 independent examination threshold; ${fmtNumber(accruals_edge.charities_in_cliff)} are within 10% of the £250,000 accruals gate. Live counts, plus the higher gates that apply to financial years ending on or after 30 September 2026.`,
   alternates: { canonical: `${site.url}${PAGE_PATH}` },
   openGraph: {

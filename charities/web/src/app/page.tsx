@@ -25,7 +25,7 @@ import { buildFaqJsonLd, buildOrganizationJsonLd } from "@/lib/schema";
 
 export function generateMetadata(): Metadata {
   return {
-    title: `Specialist Charity Accountants UK | ${siteConfig.name}`,
+    title: `Specialist Charity Accountants UK`,
     description:
       `Specialist accountants for UK charities, CIOs, CICs and social enterprises. Independent examination, SORP-compliant accounts, Gift Aid, charity VAT and trustee compliance.`,
     alternates: { canonical: siteConfig.url },

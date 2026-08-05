@@ -19,7 +19,7 @@ const PAGE_PATH = "/research/uk-charity-survival-index";
 const generatedDate = meta.generated_at.slice(0, 10);
 
 export const metadata: Metadata = {
-  title: `UK Charity Survival and Longevity Index | ${site.name}`,
+  title: `UK Charity Survival and Longevity Index`,
   description: `Only around one third of charities registered before 1990 are still active. The median age at which a charity is removed from the register is ${headline.median_age_at_removal_years} years. Cohort survival analysis of ${fmtNumber(headline.total_removed)} removed England and Wales charities, from the Charity Commission register.`,
   alternates: { canonical: `${site.url}${PAGE_PATH}` },
   openGraph: {

@@ -9,7 +9,7 @@ import { packages } from "@/config/packages";
 import { buildBreadcrumbJsonLd, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
-  title: `Dental Accountant Pricing and Packages | ${siteConfig.name}`,
+  title: "Dental Accountant Pricing and Packages",
   description:
     "Fixed monthly accounting packages for dental associates and practice owners. Clear pricing, no fixed term.",
   alternates: {

@@ -27,7 +27,7 @@ const { meta, headline, series } = data;
 const PAGE_PATH = "/research/nhs-dental-activity-index";
 
 export const metadata: Metadata = {
-  title: "NHS Dental Activity Recovery Index | Dental Finance Partners",
+  title: "NHS Dental Activity Recovery Index",
   description: `Track monthly NHS dental UDA delivery and recovery vs the pre-Covid 2019/20 baseline. England national and regional data from NHSBSA open data. Settled to ${monthLabel(meta.last_settled_month)}.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {

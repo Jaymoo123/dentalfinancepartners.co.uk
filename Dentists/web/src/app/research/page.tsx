@@ -35,7 +35,7 @@ const density = densitySnapshot as unknown as DentalPracticeDensitySnapshot;
 const formation = formationSnapshot as unknown as DentalCompanyFormationSnapshot;
 
 export const metadata: Metadata = {
-  title: "NHS dental data and research | Dental Finance Partners",
+  title: "NHS dental data and research",
   description:
     "Original, sourced data on NHS dental activity, dentist earnings, practice density and company formation trends, built from official open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },

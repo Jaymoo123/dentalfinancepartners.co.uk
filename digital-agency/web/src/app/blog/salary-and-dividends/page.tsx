@@ -12,7 +12,7 @@ const categoryName = "Salary, Dividends & Profit";
 const categorySlug = "salary-and-dividends";
 
 export const metadata: Metadata = {
-  title: `Salary and Dividends for Agency Founders | ${siteConfig.name}`,
+  title: `Salary and Dividends for Agency Founders`,
   description: `How to pay yourself as an agency founder. Optimal salary and dividend splits, dividend tax rates, pension contributions and income extraction strategies for limited company agency directors.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

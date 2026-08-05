@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Pharmacy Finance Calculators | ${site.name}`,
+  title: `Pharmacy Finance Calculators`,
   description: "Free scenario tools for UK community pharmacy owners: estimate the tax on a pharmacy sale, model goodwill, and plan incorporation. Built on current HMRC rules.",
   alternates: { canonical: `${site.url}/calculators` },
 };

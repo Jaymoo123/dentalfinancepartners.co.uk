@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Locations | ${siteConfig.name}`,
+  title: `Locations`,
   description:
     "Specialist agency accountants serving founders across the UK. London, Manchester and Birmingham focus with national and UAE coverage.",
   alternates: { canonical: `${siteConfig.url}/locations` },

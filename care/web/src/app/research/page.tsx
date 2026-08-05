@@ -15,7 +15,7 @@ const survival = survivalSnapshot as unknown as CareSurvivalIndexSnapshot;
 const combined5yr = survival.headline.combined_5yr_curve.find((p) => p.year === 5)?.survival_pct ?? null;
 
 export const metadata: Metadata = {
-  title: `UK care sector data and research | ${siteConfig.name}`,
+  title: `UK care sector data and research`,
   description:
     "Original, sourced data on UK care home bed density, CQC rating quality, closure churn and care company formations, built entirely from official open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },

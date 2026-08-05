@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Free Charity Finance Calculators | ${site.name}`,
+  title: `Free Charity Finance Calculators`,
   description:
     "Free calculators for UK charities and CICs: Gift Aid, the Gift Aid Small Donations Scheme, and the independent examination vs audit thresholds. Built on current gov.uk rules.",
   alternates: { canonical: `${site.url}/calculators` },

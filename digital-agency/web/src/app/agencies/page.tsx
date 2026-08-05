@@ -7,7 +7,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Agency Types We Work With | ${siteConfig.name}`,
+  title: `Agency Types We Work With`,
   description: `Specialist accounting for all agency types: marketing, creative, digital, advertising, PR, web design, SEO and recruitment agencies across the UK and UAE.`,
   alternates: { canonical: `${siteConfig.url}/agencies` },
   openGraph: {

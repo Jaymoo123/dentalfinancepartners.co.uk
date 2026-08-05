@@ -57,7 +57,7 @@ const seasonalityData: SeasonalityPoint[] = (() => {
 const { decade } = headline;
 
 export const metadata: Metadata = {
-  title: "Dental Company Formation Index (SIC 86230) | Dental Finance Partners",
+  title: "Dental Company Formation Index (SIC 86230)",
   description: `New dental company incorporations (SIC 86230) rose ${fmtPercent(decade.change_pct, false)} between ${decade.from_year} and ${decade.to_year}. Monthly index compiled from Companies House open data. Updated ${monthLabel(meta.incorporations_settled_through)}.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {

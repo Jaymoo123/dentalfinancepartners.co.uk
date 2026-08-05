@@ -21,7 +21,7 @@ const domiciliary5yr = headline.sic_88_5yr_curve.find((p) => p.year === 5)?.surv
 const HEADLINE_SENTENCE = `${fmtPct(combined5yr)} of UK care businesses born in 2019 were still trading five years later`;
 
 export const metadata: Metadata = {
-  title: `UK Care Business Survival Index | ${siteConfig.name}`,
+  title: `UK Care Business Survival Index`,
   description: `${HEADLINE_SENTENCE}. A 1 to 5-year survival curve for UK care businesses (SIC 87 residential care, SIC 88 social work without accommodation), built from ONS Business Demography birth-cohort data.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {

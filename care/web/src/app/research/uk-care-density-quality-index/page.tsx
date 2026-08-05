@@ -24,7 +24,7 @@ const PAGE_PATH = "/research/uk-care-density-quality-index";
 const HEADLINE_SENTENCE = `England has ${fmtPct(national.beds_per_100_over65)} care home beds for every 100 people aged 65 and over`;
 
 export const metadata: Metadata = {
-  title: `UK Care Home Density & Quality Index | ${siteConfig.name}`,
+  title: `UK Care Home Density & Quality Index`,
   description: `${HEADLINE_SENTENCE}. A region-by-region and local-authority map of care home beds, CQC rating quality and closure churn, built from CQC open data and ONS mid-2024 population estimates. Updated ${fmtDate(meta.generated_at)}.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {

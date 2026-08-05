@@ -14,7 +14,7 @@ import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
-  title: `Free Calculators for Agency Founders | ${siteConfig.name}`,
+  title: `Free Calculators for Agency Founders`,
   description:
     "Free tax and finance calculators for UK agency founders. Salary vs dividend, R&D credits, agency valuation, BADR CGT and more. 2025/26 rates. No sign-up.",
   alternates: { canonical: `${siteConfig.url}/calculators` },

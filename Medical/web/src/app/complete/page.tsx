@@ -13,7 +13,7 @@ import DetailsForm from "@/components/forms/DetailsForm";
  */
 
 export const metadata: Metadata = {
-  title: `Complete your details | ${siteConfig.name}`,
+  title: `Complete your details`,
   description:
     "Add the last detail we need to arrange your free review with a specialist medical accountant.",
   robots: { index: false, follow: false },

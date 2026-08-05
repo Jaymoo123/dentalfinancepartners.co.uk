@@ -25,7 +25,7 @@ const { meta, headline } = data;
 const PAGE_PATH = "/research/nhs-dentist-earnings-index";
 
 export const metadata: Metadata = {
-  title: "NHS Dentist Earnings and Expenses Tracker | Dental Finance Partners",
+  title: "NHS Dentist Earnings and Expenses Tracker",
   description: `NHS dentist average net income was ${fmtGBP(headline.avg_net_income_england)} in ${headline.reference_year}. Track gross earnings, expenses and net income for NHS dentists in England from NHS Digital open data.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {

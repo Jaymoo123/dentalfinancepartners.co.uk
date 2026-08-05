@@ -7,7 +7,7 @@ import { getAllGuides } from "@/lib/dental-guides";
 import { buildBreadcrumbJsonLd, buildCollectionPage, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
-  title: `Pillar Guides for UK Dentists | ${siteConfig.name}`,
+  title: "Pillar Guides for UK Dentists",
   description:
     "Long-form pillar guides on the decisions UK dentists actually face. NHS contracts, associate tax, practice purchase, goodwill valuation, profit extraction, NHS Pension.",
   alternates: {

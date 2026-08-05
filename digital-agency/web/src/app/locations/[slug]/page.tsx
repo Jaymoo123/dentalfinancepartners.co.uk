@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${siteConfig.url}/locations/${city.slug}`;
   return {
-    title: `Agency Accountants in ${city.name} | ${siteConfig.name}`,
+    title: `Agency Accountants in ${city.name}`,
     description: `Specialist accountants for ${city.name} agency founders. Tax planning, management accounts, IR35, R&D credits and exit planning. Agency-only focus, fixed fees, free initial call.`,
     alternates: {
       canonical: url,

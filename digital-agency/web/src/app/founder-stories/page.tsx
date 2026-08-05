@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { STORIES } from "./[slug]/data";
 
 export const metadata: Metadata = {
-  title: `Founder Stories | ${siteConfig.name}`,
+  title: `Founder Stories`,
   description:
     "Composite case studies based on patterns across our UK and UAE agency clients. Real financial mechanics, anonymised subjects. BADR exits, R&D claims, incorporation, IR35, relocation.",
   alternates: { canonical: `${siteConfig.url}/founder-stories` },

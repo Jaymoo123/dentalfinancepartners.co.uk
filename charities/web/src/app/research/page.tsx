@@ -20,7 +20,7 @@ const ie_cliff = cliff.cliff_edges.find((e) => e.key === "ie_gate")!;
 const causeTopIncome = [...cause.cause_income].sort((a, b) => b.median_income - a.median_income)[0];
 
 export const metadata: Metadata = {
-  title: `Charity finance research and data | ${siteConfig.name}`,
+  title: `Charity finance research and data`,
   description:
     "Original, sourced data on England and Wales charity finances, survival rates, and compliance thresholds. Built entirely from Charity Commission open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },

@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for Influencer Marketing Agencies | ${siteConfig.name}`,
+  title: `Accountants for Influencer Marketing Agencies`,
   description: "Specialist accountants for UK influencer marketing agency founders. Cross-border creator payments, IR35 risk, VAT on international fees. Agency-only specialists.",
   alternates: { canonical: `${siteConfig.url}/agencies/influencer-marketing-agencies` },
   openGraph: {

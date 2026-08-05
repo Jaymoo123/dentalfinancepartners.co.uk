@@ -8,7 +8,7 @@ import { adminSelect } from "@/lib/supabase/admin";
 import DetailsForm from "@/components/forms/DetailsForm";
 
 export const metadata: Metadata = {
-  title: `Complete your details | ${siteConfig.name}`,
+  title: `Complete your details`,
   description: "Add the last detail we need to arrange your free CIS tax review.",
   robots: { index: false, follow: false },
 };

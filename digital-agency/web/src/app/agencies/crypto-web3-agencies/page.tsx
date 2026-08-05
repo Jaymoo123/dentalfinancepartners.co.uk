@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for Crypto & Web3 Agencies | ${siteConfig.name}`,
+  title: `Accountants for Crypto & Web3 Agencies`,
   description: "Specialist accountants for UK crypto and Web3 agency founders. Token payments, stablecoin invoicing, smart contract IP, regulatory edge cases. Agency-only specialists.",
   alternates: { canonical: `${siteConfig.url}/agencies/crypto-web3-agencies` },
   openGraph: {

@@ -21,7 +21,7 @@ const generatedDate = meta.generated_at.slice(0, 10);
 const HEADLINE = `${fmtPct(charities.headline_shares.ie_band_pct)} of England and Wales charities sit in the independent examination band`;
 
 export const metadata: Metadata = {
-  title: `UK Small Charity Finance Index | ${site.name}`,
+  title: `UK Small Charity Finance Index`,
   description: `${HEADLINE}. Median charity income is ${fmtGbp(charities.income.median)}. A sourced index of charity finances compiled from the Charity Commission register, updated ${generatedDate}.`,
   alternates: { canonical: `${site.url}${PAGE_PATH}` },
   openGraph: {

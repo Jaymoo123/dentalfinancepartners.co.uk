@@ -12,7 +12,7 @@ const categoryName = "Growing & Exiting Your Agency";
 const categorySlug = "growth-and-exit";
 
 export const metadata: Metadata = {
-  title: `Growing and Exiting Your Agency | ${siteConfig.name}`,
+  title: `Growing and Exiting Your Agency`,
   description: `How to scale an agency profitably, prepare for sale, and exit tax-efficiently. BADR, goodwill valuation, earn-outs and MBO structures explained for agency founders.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

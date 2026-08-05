@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Complete Dental Practice Finance Guide | Dental Finance Partners",
+  title: "Complete Dental Practice Finance Guide",
   description:
     "Comprehensive guide to dental practice finance, including cash flow management, profitability analysis, practice loans, equipment finance, and financial planning for UK dental practices.",
   alternates: { canonical: `${siteConfig.url}/blog/practice-finance` },

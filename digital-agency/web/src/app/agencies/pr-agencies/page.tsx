@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `Accountants for PR Agencies | ${siteConfig.name}`,
+  title: `Accountants for PR Agencies`,
   description: `Specialist accounting and tax advice for PR and communications agency founders. Salary and dividend planning, incorporation and exit planning for UK and UAE PR agencies.`,
   alternates: { canonical: `${siteConfig.url}/agencies/pr-agencies` },
   openGraph: {

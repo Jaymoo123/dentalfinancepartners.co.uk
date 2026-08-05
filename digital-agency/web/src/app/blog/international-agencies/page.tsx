@@ -12,7 +12,7 @@ const categoryName = "International & UAE Agencies";
 const categorySlug = "international-agencies";
 
 export const metadata: Metadata = {
-  title: `International and UAE Agency Tax | ${siteConfig.name}`,
+  title: `International and UAE Agency Tax`,
   description: `Tax and accounting for UK agencies operating internationally and agency founders relocating to the UAE. Cross-border structures, residency rules, UAE free zones and dual territory tax planning.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./[slug]/data";
 
 export const metadata: Metadata = {
-  title: `CIS Glossary | ${siteConfig.name}`,
+  title: `CIS Glossary`,
   description:
     "Plain-English definitions of CIS, tax and construction accounting terms. Deduction rates, gross payment status, self assessment, VAT and more. Verified for 2025/26.",
   alternates: { canonical: `${siteConfig.url}/glossary` },

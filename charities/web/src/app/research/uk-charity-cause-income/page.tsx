@@ -29,7 +29,7 @@ const mostUnderReserved = byUnderReserved[0];
 const maxIncome = topIncome.median_income;
 
 export const metadata: Metadata = {
-  title: `UK Charity Cause Income and Reserves Health Index | ${site.name}`,
+  title: `UK Charity Cause Income and Reserves Health Index`,
   description: `Median income ranges from ${fmtGbp(bottomIncome.median_income)} (${bottomIncome.cause_label}) to ${fmtGbp(topIncome.median_income)} (${topIncome.cause_label}) across ${cause_income.length} cause groups. Reserves health by charitable cause, from the Charity Commission full-register extract.`,
   alternates: { canonical: `${site.url}${PAGE_PATH}` },
   openGraph: {

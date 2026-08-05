@@ -29,7 +29,7 @@ import { buildFaqJsonLd, buildOrganizationJsonLd } from "@/lib/schema";
 
 export function generateMetadata(): Metadata {
   return {
-    title: `Specialist Hospitality Accountants UK | ${siteConfig.name}`,
+    title: `Specialist Hospitality Accountants UK`,
     description:
       `Specialist accountants for UK restaurants, pubs, hotels, takeaways, cafes and caterers. Tronc and tips compliance, food VAT, hospitality payroll, TOMS and business rates advice.`,
     alternates: { canonical: siteConfig.url },

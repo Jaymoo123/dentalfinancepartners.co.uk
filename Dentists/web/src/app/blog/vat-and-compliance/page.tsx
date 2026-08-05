@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Complete VAT & Compliance Guide for Dental Practices | Dental Finance Partners",
+  title: "Complete VAT & Compliance Guide for Dental Practices",
   description:
     "Comprehensive guide to VAT registration, compliance, exemptions, and Making Tax Digital for UK dental practices. Understand when to register, what to charge, and how to comply.",
   alternates: { canonical: `${siteConfig.url}/blog/vat-and-compliance` },
