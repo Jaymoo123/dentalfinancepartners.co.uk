@@ -16,8 +16,14 @@ import { ArrowRight } from "lucide-react";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { siteStats } from "@/config/service-tiers";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
 import { generalistRegistry } from "@accounting-network/web-shared/experiments/registries/generalist";
 import { packages } from "@/config/packages";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
+const packagesMode = isPackagesMode(niche);
 
 const META_TITLE = "Small Business Accountants UK | Holloway Davies";
 const META_DESC =
@@ -321,12 +327,24 @@ export default function HomePage() {
               delivery, and fixed fees agreed up front.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row gap-3">
-              <Link href="/contact" className={btnPrimary}>
-                Book a free call
+              <Link
+                href={activeCta.hero_primary.href}
+                className={btnPrimary}
+                data-cta="hero_primary" data-cta-placement="hero"
+                data-cta-variant={niche.cta.variant}
+              >
+                {activeCta.hero_primary.label}
               </Link>
-              <Link href="/services" className={btnSecondary}>
-                What we cover
-              </Link>
+              {activeCta.hero_secondary ? (
+                <Link
+                  href={activeCta.hero_secondary.href}
+                  className={btnSecondary}
+                  data-cta="hero_secondary" data-cta-placement="hero"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.hero_secondary.label}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>
@@ -378,6 +396,9 @@ export default function HomePage() {
             Fixed fees for limited companies and sole traders. No hourly billing, no surprises.
           </p>
           <PackagesSection config={packages} registry={generalistRegistry} compact />
+          {packagesMode ? (
+            <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
+          ) : null}
           <p className="mt-8 text-center">
             <Link href="/pricing" className="text-sm font-medium text-orange-600 hover:text-orange-700">
               See full pricing details and common questions
@@ -673,22 +694,32 @@ export default function HomePage() {
                 Get started
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl text-balance">
-                Talk to an accountant. Free, no obligation.
+                {activeCta.home_cta.heading}
               </h2>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-600">
-                Tell us briefly where the business sits today. We&apos;ll come back
-                with a short note on what the engagement would look like and what it
-                would cost. No pitch deck, no follow-up sequence.
+                {activeCta.home_cta.body}
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-              <Link href="/contact" className={btnPrimary}>
-                Book a free call
+              <Link
+                href={activeCta.home_cta.primary.href}
+                className={btnPrimary}
+                data-cta="home_cta_primary" data-cta-placement="home_cta"
+                data-cta-variant={niche.cta.variant}
+              >
+                {activeCta.home_cta.primary.label}
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
               </Link>
-              <Link href="/pricing" className={btnSecondary}>
-                View pricing
-              </Link>
+              {activeCta.home_cta.secondary ? (
+                <Link
+                  href={activeCta.home_cta.secondary.href}
+                  className={btnSecondary}
+                  data-cta="home_cta_secondary" data-cta-placement="home_cta"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.home_cta.secondary.label}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>

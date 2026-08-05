@@ -1,5 +1,35 @@
 import nicheConfigJson from "../../../niche.config.json";
 
+export interface CtaLink {
+  label: string;
+  href: string;
+}
+
+/** Mirrors web-shared CtaVariantConfig (packages experiment). Type-only, no validator. */
+export interface CtaVariantConfig {
+  header_primary: CtaLink;
+  header_secondary?: CtaLink;
+  hero_primary: CtaLink;
+  hero_secondary?: CtaLink;
+  sticky: {
+    primary: string;
+    secondary: string;
+    button: string;
+    href: string;
+  };
+  blog: {
+    cta_heading: string;
+    cta_body: string;
+    cta_button: string;
+  };
+  home_cta: {
+    heading: string;
+    body: string;
+    primary: CtaLink;
+    secondary?: CtaLink;
+  };
+}
+
 export interface NicheConfig {
   niche_id: string;
   display_name: string;
@@ -35,6 +65,8 @@ export interface NicheConfig {
   navigation: Array<{
     label: string;
     href: string;
+    /** Hidden from nav while cta.variant === "packages" (route stays live for SEO). */
+    hide_in_packages?: boolean;
     children?: Array<{ label: string; href: string }>;
   }>;
   footer_links: Array<{ label: string; href: string }>;
@@ -65,6 +97,13 @@ export interface NicheConfig {
     };
   };
   cta: {
+    /** Active CTA model; reversal = flip this one value + redeploy. */
+    variant?: "packages" | "leadgen";
+    variants?: {
+      packages: CtaVariantConfig;
+      leadgen: CtaVariantConfig;
+    };
+    /** Flat legacy keys kept for estate typing; not read at render on variant sites. */
     sticky_primary: string;
     sticky_secondary: string;
     sticky_button: string;
@@ -79,6 +118,24 @@ export interface NicheConfig {
 }
 
 export const niche = nicheConfigJson as NicheConfig;
+
+// Local equivalents of web-shared niche-config helpers. Property's NicheConfig
+// is not structurally compatible with the shared type (optional site_key,
+// different seo/partner shapes), so the shared helpers do not typecheck here.
+export function getActiveCta(n: NicheConfig = niche): CtaVariantConfig {
+  const variants = n.cta.variants;
+  if (!variants) throw new Error(`getActiveCta: "${n.niche_id}" has no cta.variants block`);
+  return variants[n.cta.variant === "packages" ? "packages" : "leadgen"];
+}
+
+export function isPackagesMode(n: NicheConfig = niche): boolean {
+  return n.cta.variant === "packages" && n.cta.variants != null;
+}
+
+export function getActiveNav(n: NicheConfig = niche): NicheConfig["navigation"] {
+  if (!isPackagesMode(n)) return n.navigation;
+  return n.navigation.filter((item) => !item.hide_in_packages);
+}
 
 export function getSiteUrl(): string {
   return (

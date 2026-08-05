@@ -10,8 +10,14 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema/index";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { buildAccountingService } from "@accounting-network/web-shared/schema";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
 import { dentistsRegistry } from "@accounting-network/web-shared/experiments/registries/dentists";
 import { packages } from "@/config/packages";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
+const packagesMode = isPackagesMode(niche);
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
@@ -264,15 +270,24 @@ export default function HomePage() {
             Trusted by dental professionals across London, Manchester, and the UK.
           </p>
           <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
-            <Link href="/contact" className={`${btnPrimary} min-w-0`}>
-              Speak to a dental accountant
-            </Link>
             <Link
-              href="#how-we-work"
-              className={`inline-flex min-h-12 items-center text-sm font-semibold text-white/90 underline decoration-[var(--gold)] decoration-2 underline-offset-4 transition-colors hover:text-white ${focusRing} rounded-full px-2`}
+              href={activeCta.hero_primary.href}
+              className={`${btnPrimary} min-w-0`}
+              data-cta="hero_primary" data-cta-placement="hero"
+              data-cta-variant={niche.cta.variant}
             >
-              How we work →
+              {activeCta.hero_primary.label}
             </Link>
+            {activeCta.hero_secondary ? (
+              <Link
+                href={activeCta.hero_secondary.href}
+                className={`inline-flex min-h-12 items-center text-sm font-semibold text-white/90 underline decoration-[var(--gold)] decoration-2 underline-offset-4 transition-colors hover:text-white ${focusRing} rounded-full px-2`}
+                data-cta="hero_secondary" data-cta-placement="hero"
+                data-cta-variant={niche.cta.variant}
+              >
+                {activeCta.hero_secondary.label}
+              </Link>
+            ) : null}
           </div>
         </div>
       </section>
@@ -507,6 +522,9 @@ export default function HomePage() {
           </p>
           <div className="mt-10">
             <PackagesSection config={packages} registry={dentistsRegistry} compact />
+            {packagesMode ? (
+              <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
+            ) : null}
           </div>
           <p className="mt-8 text-center">
             <Link href="/pricing" className={`text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}>
@@ -516,6 +534,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      {packagesMode ? (
+      <section className="bg-[var(--surface)]">
+        <div className={siteContainerLg}>
+          <div className={`${sectionYLoose} grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16`}>
+            <div className="min-w-0">
+              <p className="section-label">Get started</p>
+              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
+                {activeCta.home_cta.heading}
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+                {activeCta.home_cta.body}
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href={activeCta.home_cta.primary.href}
+                  className={`${btnPrimary}`}
+                  data-cta="home_cta_primary" data-cta-placement="home_cta"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.home_cta.primary.label}
+                </Link>
+                {activeCta.home_cta.secondary ? (
+                  <Link
+                    href={activeCta.home_cta.secondary.href}
+                    className={btnMailOutline}
+                    data-cta="home_cta_secondary" data-cta-placement="home_cta"
+                    data-cta-variant={niche.cta.variant}
+                  >
+                    {activeCta.home_cta.secondary.label}
+                  </Link>
+                ) : null}
+              </div>
+              <p className="mt-10 text-sm font-medium text-[var(--ink)]">Prefer us to contact you?</p>
+              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+                Leave a few details in the form and one of our dental accountants will come back within one working day to recommend the right plan for your situation.
+              </p>
+            </div>
+            <div className="card-flat p-6 sm:p-8 lg:p-10">
+              <LeadForm submitLabel="Send enquiry" />
+            </div>
+          </div>
+        </div>
+      </section>
+      ) : (
       <section className="bg-[var(--surface)]">
         <div className={siteContainerLg}>
           <div className={`${sectionYLoose} grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16`}>
@@ -553,6 +615,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      )}
 
       <section className="border-t border-[var(--border)] bg-[var(--navy)] text-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
@@ -564,6 +627,7 @@ export default function HomePage() {
             Free calculators, pillar guides, and a 10-minute practice health check. All UK 2025/26 rates, all dental-specific.
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {!packagesMode ? (
             <Link
               href="/free-practice-health-check"
               className={`group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-[var(--gold)] hover:bg-white/10 ${focusRing}`}
@@ -576,6 +640,7 @@ export default function HomePage() {
                 Six-step wizard with 20+ dental-specific rules. Flags the items worth reviewing across structure, NHS Pension, IR35, BADR, and goodwill.
               </p>
             </Link>
+            ) : null}
             <Link
               href="/calculators"
               className={`group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-[var(--gold)] hover:bg-white/10 ${focusRing}`}

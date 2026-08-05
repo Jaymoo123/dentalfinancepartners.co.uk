@@ -3,6 +3,8 @@ import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { niche } from "@/config/niche-loader";
 import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { generalistRegistry } from "@accounting-network/web-shared/experiments/registries/generalist";
 
@@ -46,6 +48,7 @@ export default function PricingPage() {
       <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
           <PackagesSection config={packages} registry={generalistRegistry} />
+          <PlanAssistStrip dataCta="pricing_assist_call" ctaVariant={niche.cta.variant} />
         </div>
       </section>
     </>

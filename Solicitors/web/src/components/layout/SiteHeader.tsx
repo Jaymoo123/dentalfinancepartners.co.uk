@@ -6,6 +6,10 @@ import { useEffect, useId, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
 import { btnPrimary, focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -84,12 +88,25 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
+          {activeCta.header_secondary ? (
+            <Link
+              href={activeCta.header_secondary.href}
+              className={`hidden px-2 text-sm font-medium tracking-tight text-[var(--muted)] transition-colors hover:text-[var(--primary)] md:inline-flex ${focusRing}`}
+              data-cta="header_nav_secondary" data-cta-goal="contact" data-cta-placement="header"
+              data-cta-variant={niche.cta.variant}
+            >
+              {activeCta.header_secondary.label}
+            </Link>
+          ) : null}
           <Link
-            href="/contact"
+            href={activeCta.header_primary.href}
             data-cta="header-book-call"
+            data-cta-placement="header"
+            data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}
+            data-cta-variant={niche.cta.variant}
             className="hidden min-h-11 min-w-0 px-5 sm:inline-flex md:min-h-12 items-center justify-center rounded-full border-2 border-[var(--primary)] bg-white text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
           >
-            Book a call
+            {activeCta.header_primary.label}
           </Link>
 
           <button
@@ -163,13 +180,27 @@ export function SiteHeader() {
             </nav>
             <div className="border-t border-[var(--border)] p-3">
               <Link
-                href="/contact"
+                href={activeCta.header_primary.href}
                 data-cta="mobile-menu-book-call"
+                data-cta-placement="header_mobile"
+                data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}
+                data-cta-variant={niche.cta.variant}
                 className="w-full inline-flex items-center justify-center rounded-full border-2 border-[var(--primary)] bg-white px-6 py-3 text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
                 onClick={() => setOpen(false)}
               >
-                Book a call
+                {activeCta.header_primary.label}
               </Link>
+              {activeCta.header_secondary ? (
+                <Link
+                  href={activeCta.header_secondary.href}
+                  className={`mt-3 block text-center text-sm font-medium text-[var(--muted)] hover:text-[var(--primary)] ${focusRing}`}
+                  onClick={() => setOpen(false)}
+                  data-cta="header_mobile_secondary" data-cta-goal="contact" data-cta-placement="header_mobile"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.header_secondary.label}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>

@@ -11,6 +11,12 @@ import { siteStats } from "@/config/service-tiers";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
 import { solicitorsRegistry } from "@accounting-network/web-shared/experiments/registries/solicitors";
 import { packages } from "@/config/packages";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
+const packagesMode = isPackagesMode(niche);
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
@@ -165,12 +171,25 @@ export default function HomePage() {
               SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. We understand the unique challenges facing legal practices.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link href="/contact" className={btnPrimary} style={{ background: "white", borderColor: "white", color: "var(--primary)" }}>
-                Book free consultation
+              <Link
+                href={activeCta.hero_primary.href}
+                className={btnPrimary}
+                style={{ background: "white", borderColor: "white", color: "var(--primary)" }}
+                data-cta="hero_primary" data-cta-placement="hero"
+                data-cta-variant={niche.cta.variant}
+              >
+                {activeCta.hero_primary.label}
               </Link>
-              <Link href="/services" className={btnMailOutline}>
-                Our services
-              </Link>
+              {activeCta.hero_secondary ? (
+                <Link
+                  href={activeCta.hero_secondary.href}
+                  className={btnMailOutline}
+                  data-cta="hero_secondary" data-cta-placement="hero"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.hero_secondary.label}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>
@@ -449,6 +468,9 @@ export default function HomePage() {
             </p>
           </div>
           <PackagesSection config={packages} registry={solicitorsRegistry} compact />
+          {packagesMode ? (
+            <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
+          ) : null}
           <p className="mt-8 text-center">
             <Link href="/pricing" className="text-sm font-semibold text-[var(--primary)] hover:underline">
               See full pricing details and common questions
@@ -467,13 +489,15 @@ export default function HomePage() {
             Free calculators, pillar guides, a tax-rates reference, and a 10-minute firm health check. All UK 2025/26 rates and current SRA Accounts Rules.
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <Link href="/free-firm-health-check" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
-              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Diagnostic · 10 min</p>
-              <h3 className="font-serif text-base font-semibold text-white">Free firm health check</h3>
-              <p className="mt-2 text-xs leading-relaxed text-white/75">
-                15+ solicitor-specific rules across SRA, FA 2014, BADR, structure, MTD.
-              </p>
-            </Link>
+            {!packagesMode ? (
+              <Link href="/free-firm-health-check" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Diagnostic · 10 min</p>
+                <h3 className="font-serif text-base font-semibold text-white">Free firm health check</h3>
+                <p className="mt-2 text-xs leading-relaxed text-white/75">
+                  15+ solicitor-specific rules across SRA, FA 2014, BADR, structure, MTD.
+                </p>
+              </Link>
+            ) : null}
             <Link href="/calculators" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">6 calculators</p>
               <h3 className="font-serif text-base font-semibold text-white">Law firm calculators</h3>
@@ -499,34 +523,81 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl">
-            <div className="text-center">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-                Get started
-              </p>
-              <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-                Book your free consultation
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-                Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs.
-              </p>
-            </div>
+      {packagesMode ? (
+        <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+          <div className={siteContainerLg}>
+            <div className="mx-auto max-w-3xl">
+              <div className="text-center">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
+                  Get started
+                </p>
+                <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+                  {activeCta.home_cta.heading}
+                </h2>
+                <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
+                  {activeCta.home_cta.body}
+                </p>
+                <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                  <Link
+                    href={activeCta.home_cta.primary.href}
+                    className={btnPrimary}
+                    data-cta="home_cta_primary" data-cta-placement="home_cta"
+                    data-cta-variant={niche.cta.variant}
+                  >
+                    {activeCta.home_cta.primary.label}
+                  </Link>
+                  {activeCta.home_cta.secondary ? (
+                    <Link
+                      href={activeCta.home_cta.secondary.href}
+                      className={`inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[var(--primary)] bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white ${focusRing}`}
+                      data-cta="home_cta_secondary" data-cta-placement="home_cta"
+                      data-cta-variant={niche.cta.variant}
+                    >
+                      {activeCta.home_cta.secondary.label}
+                    </Link>
+                  ) : null}
+                </div>
+              </div>
 
-            <div className="mt-10">
-              <LeadForm />
+              <p className="mt-12 text-center text-sm text-[var(--ink-soft)]">
+                Or send us a note and we will come back within one working day.
+              </p>
+              <div className="mt-6">
+                <LeadForm />
+              </div>
             </div>
-
-            <p className="mt-6 text-center text-sm text-[var(--ink-soft)]">
-              Prefer to see fixed prices first?{" "}
-              <Link href="/pricing" className="font-semibold text-[var(--primary)] hover:underline">
-                View pricing
-              </Link>
-            </p>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+          <div className={siteContainerLg}>
+            <div className="mx-auto max-w-3xl">
+              <div className="text-center">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
+                  Get started
+                </p>
+                <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+                  Book your free consultation
+                </h2>
+                <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
+                  Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs.
+                </p>
+              </div>
+
+              <div className="mt-10">
+                <LeadForm />
+              </div>
+
+              <p className="mt-6 text-center text-sm text-[var(--ink-soft)]">
+                Prefer to see fixed prices first?{" "}
+                <Link href="/pricing" className="font-semibold text-[var(--primary)] hover:underline">
+                  View pricing
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
 
 
       <section className={sectionY}>
@@ -542,7 +613,7 @@ export default function HomePage() {
                   Legal practices face unique accounting challenges that generalist accountants often don't understand. SRA Accounts Rules require strict client money handling, 5-week reconciliations, and annual Accountant's Reports. Partnership and LLP taxation involves complex profit allocations, drawings, and Basis Period Reform implications. VAT on legal services has specific rules around disbursements and counsel fees.
                 </p>
                 <p>
-                  A specialist solicitor accountant understands these nuances, ensures regulatory compliance, and provides strategic advice on practice structure, succession planning, and tax optimization. With 26.2% of SRA firm closures due to accounting breaches, having specialist support isn't just helpful—it's essential for protecting your practicing certificate and optimizing your practice finances.
+                  A specialist solicitor accountant understands these nuances, ensures regulatory compliance, and provides strategic advice on practice structure, succession planning, and tax optimization. With 26.2% of SRA firm closures due to accounting breaches, having specialist support isn't just helpful, it's essential for protecting your practicing certificate and optimizing your practice finances.
                 </p>
               </div>
             </details>

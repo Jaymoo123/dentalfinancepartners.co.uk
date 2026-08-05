@@ -6,6 +6,8 @@ import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
 import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { solicitorsRegistry } from "@accounting-network/web-shared/experiments/registries/solicitors";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { niche } from "@/config/niche-loader";
 
 const TITLE = "Accountancy Pricing for Solicitors and Law Firms";
 const DESCRIPTION =
@@ -52,6 +54,7 @@ export default function PricingPage() {
       <section className={sectionYLoose}>
         <div className={siteContainerLg}>
           <PackagesSection config={packages} registry={solicitorsRegistry} />
+          <PlanAssistStrip dataCta="pricing_assist_call" ctaVariant={niche.cta.variant} />
         </div>
       </section>
     </>

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
+import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
 export const metadata: Metadata = {
-  title: "Contact | Book a Free CIS Accountant Call",
+  // Unconditionally neutral: no free-call framing in the tab title regardless of variant.
+  title: "Contact | CIS Accountants for Trades",
   description:
     "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. We respond within one working day.",
 };
@@ -20,6 +24,21 @@ export default function ContactPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             Talk through your CIS position, your refund history, or any construction tax question. No hard sell, no obligation.
           </p>
+          {isPackagesMode(niche) ? (
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-300">
+              Already know what you need? Our fixed monthly plans start at £24 a month for subbies and you can{" "}
+              <Link
+                href="/pricing"
+                className="font-medium text-orange-400 hover:text-orange-300"
+                data-cta="contact_pricing_link"
+                data-cta-placement="contact"
+                data-cta-variant={niche.cta.variant}
+              >
+                pick a plan online in a couple of minutes
+              </Link>
+              .
+            </p>
+          ) : null}
         </div>
       </section>
 

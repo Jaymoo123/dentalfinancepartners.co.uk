@@ -294,6 +294,51 @@
     }
   },
   "cta": {
+    "variant": "packages",
+    "variants": {
+      "packages": {
+        "header_primary": { "label": "Plans from £24/mo", "href": "/pricing" },
+        "header_secondary": { "label": "Talk to us", "href": "/contact" },
+        "hero_primary": { "label": "Plans from £24/mo", "href": "/pricing" },
+        "sticky": {
+          "primary": "Fixed monthly plans from £24",
+          "secondary": "CIS refunds claimed, returns filed, contractors covered. No fixed term.",
+          "button": "See pricing",
+          "href": "/pricing"
+        },
+        "blog": {
+          "cta_heading": "CIS accounting sorted for a fixed monthly fee.",
+          "cta_body": "Plans start at £24 a month for subbies, £49 for CIS contractors and £79 for trade limited companies. Your refund claimed, your returns filed on time, no surprises on the bill. Not sure which plan fits your setup? Send an enquiry below and we will point you at the right one.",
+          "cta_button": "Send enquiry"
+        },
+        "home_cta": {
+          "heading": "Pick a plan today. No fixed term.",
+          "body": "Fixed monthly fees for subbies, contractors and trade limited companies, agreed up front. If you would rather talk it through first, a free 15-minute call sorts the right plan in one go.",
+          "primary": { "label": "See plans and pricing", "href": "/pricing" },
+          "secondary": { "label": "Book a free 15-min call", "href": "/contact" }
+        }
+      },
+      "leadgen": {
+        "header_primary": { "label": "Book a free call", "href": "/contact" },
+        "hero_primary": { "label": "View pricing", "href": "/pricing" },
+        "sticky": {
+          "primary": "Check your CIS refund",
+          "secondary": "Most CIS subcontractors are owed money back. Speak to a specialist.",
+          "button": "Book a free call",
+          "href": "/contact"
+        },
+        "blog": {
+          "cta_heading": "Most CIS subcontractors are owed money back.",
+          "cta_body": "The average CIS subcontractor overpays around £2,000 a year in tax deductions. Book a free call with a specialist CIS accountant. We will review your deductions, identify what you are owed, and handle the reclaim. Plain English, no jargon.",
+          "cta_button": "Book a free call"
+        },
+        "home_cta": {
+          "heading": "Find out what you are owed",
+          "body": "Book a free call. We will review your CIS deductions, identify what you are owed, and explain your options. No hard sell, no obligation.",
+          "primary": { "label": "Book a free call", "href": "/contact" }
+        }
+      }
+    },
     "sticky_primary": "Check your CIS refund",
     "sticky_secondary": "Most CIS subcontractors are owed money back. Speak to a specialist.",
     "sticky_button": "Book a free call"

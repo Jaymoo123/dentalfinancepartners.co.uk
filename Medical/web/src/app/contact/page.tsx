@@ -4,20 +4,23 @@ import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import Link from "next/link";
+import { niche } from "@/config/niche-loader";
+import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
 export const metadata: Metadata = {
-  title: "Contact Medical Accountants UK | Book Free Consultation",
+  title: { absolute: "Contact Medical Accountants UK | Speak to a Specialist" },
   description: `Contact ${siteConfig.name} for GP accounting and medical tax enquiries. NHS pension planning, locum tax, private practice advice. 24-hour response.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: "Contact Medical Accountants UK",
+    title: "Contact Medical Accountants UK | Speak to a Specialist",
     description: "Book free consultation for GP accounting and medical tax advice. 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Medical Accountants UK",
+    title: "Contact Medical Accountants UK | Speak to a Specialist",
     description: "Book free consultation for GP accounting and medical tax advice. 24-hour response time.",
   },
 };
@@ -42,7 +45,23 @@ export default function ContactPage() {
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         Whether you're a GP partner navigating NHS pension complexities, a locum doctor managing multiple income streams, or a consultant considering private practice incorporation, we're here to help. Fill in the form below or contact us directly.
       </p>
-      
+
+      {isPackagesMode(niche) ? (
+        <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+          Already know what you need? Our fixed monthly plans start at £29 a month and you can{" "}
+          <Link
+            href="/pricing"
+            className="font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4"
+            data-cta="contact_pricing_link"
+            data-cta-placement="contact"
+            data-cta-variant={niche.cta.variant}
+          >
+            compare plans and sign up online
+          </Link>
+          .
+        </p>
+      ) : null}
+
       <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
         <div className="space-y-6">
           <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
@@ -83,7 +102,9 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 sm:p-8">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Book your free consultation</h2>
+          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+            {isPackagesMode(niche) ? "Speak to a medical accountant" : "Book your free consultation"}
+          </h2>
           <p className="mt-3 text-sm text-[var(--muted)]">
             Tell us about your situation and we'll arrange a short call to discuss how we can help.
           </p>

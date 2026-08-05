@@ -3,6 +3,7 @@
  * This allows centralized management while keeping niche-specific settings.
  */
 import { niche, getSiteUrl } from "./niche-loader";
+import { getActiveNav } from "@accounting-network/web-shared/lib/niche-config";
 
 const office = niche.company.registered_office;
 const registeredOfficeLine = [office.line1, office.line2, office.city, office.postcode]
@@ -34,7 +35,7 @@ export const siteConfig = {
   // (e.g. nurture reply-to / placeholder). Neither is displayed publicly and
   // contact.phone is never emitted in JSON-LD — public contact goes via /contact.
   contact: niche.contact,
-  nav: niche.navigation,
+  nav: getActiveNav(niche),
   footer: niche.footer_links,
   locations: niche.locations,
   // Registered company / legal entity. Single source of truth = niche.config.json.

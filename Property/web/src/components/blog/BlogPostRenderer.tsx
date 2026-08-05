@@ -4,7 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { niche } from "@/config/niche-loader";
+import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
@@ -128,11 +128,19 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     earlySplit && hasGate ? splitRemainderForGate(earlySplit.after) : null;
   const fallbackSplit = showPremiumIslands ? null : splitContentAtMidScroll(decoratedHtml);
 
-  const ctaCopy: CTACopy = CTA_BY_CATEGORY[post.category] ?? {
-    heading: niche.blog.cta_heading,
-    body: niche.blog.cta_body,
-    button: niche.blog.cta_button,
-  };
+  // Packages mode bypasses the per-category consultation copy: one pricing-led
+  // CTA from the active variant. Leadgen keeps the category map.
+  const ctaCopy: CTACopy = isPackagesMode(niche)
+    ? {
+        heading: getActiveCta(niche).blog.cta_heading,
+        body: getActiveCta(niche).blog.cta_body,
+        button: getActiveCta(niche).blog.cta_button,
+      }
+    : (CTA_BY_CATEGORY[post.category] ?? {
+        heading: getActiveCta(niche).blog.cta_heading,
+        body: getActiveCta(niche).blog.cta_body,
+        button: getActiveCta(niche).blog.cta_button,
+      });
 
   const isMTDPost = post.category === "Making Tax Digital (MTD)";
 

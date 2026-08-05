@@ -54,6 +54,52 @@ Enquiry-side isolation: classic lead forms all carry their own `form_id`s and
 `data-cta` ids, so excluding pricing is always `props->>'form_id' <>
 'package_signup'` (events) or the extras filter above (leads).
 
+## CTA variant switch (packages-first chrome, added 2026-08-05)
+
+Phase 2 of the experiment flips the whole chrome pricing-first. Every surface
+below branches on ONE config key per site: `niche.config.json` ->
+`cta.variant: "packages" | "leadgen"`, with both variants' full copy stored in
+`cta.variants.{packages,leadgen}` (schema + validator + `getActiveCta` /
+`isPackagesMode` / `getActiveNav` helpers in
+`packages/web-shared/lib/niche-config.ts`; Property mirrors the type in its own
+`config/niche-loader.ts`).
+
+**Reversal = set `"variant": "leadgen"` in the site's niche.config.json and
+redeploy that site. No code changes.** The leadgen variant is today's copy
+lifted verbatim, so the flip restores the pre-change chrome.
+
+Variant-driven surfaces per site: header primary/secondary CTA (desktop +
+mobile), hero CTA pair, StickyCTA copy + href (suppressed on /pricing in
+packages mode; intent-offer personalisation disabled in packages mode), the
+homepage closing CTA section (`home_cta`), PlanAssistStrip
+(`packages/web-shared/pricing/PlanAssistStrip.tsx`) below PackagesSection
+(homepage, packages mode) and on /pricing (both modes), blog end-of-article
+CTA copy (Property: bypasses `CTA_BY_CATEGORY` in packages mode), contact-page
+packages paragraph, and nav items flagged `hide_in_packages: true` (the
+free-health-check items on Dentists/Medical/Solicitors; routes + sitemap
+entries stay live, other internal links retained, SEO untouched).
+
+Deliberately NOT reverted by the flip: contact-page `<title>`s were
+neutralised once (free-consultation framing removed) on Medical, Solicitors,
+Property, construction-cis; titles never flip-flop for SEO reasons.
+
+New data-cta ids: header_nav_secondary, header_mobile_secondary, hero_primary,
+hero_secondary, home_cta_primary, home_cta_secondary, home_assist_call,
+pricing_assist_call, contact_pricing_link. All variant-driven CTAs also stamp
+`data-cta-variant`.
+
+**Measurement**: 28-day clock re-dated to the chrome-flip deploy date. Read:
+`vw_package_funnel` signups per site/tier; lead volume before/after (total
+leads + signups vs baseline); CTR per data-cta segmented by data-cta-variant;
+assist funnel (home_assist_call / pricing_assist_call -> contact submissions).
+Decision rule: flip any site back to leadgen where 28d package signups do not
+offset the lead-volume loss.
+
+Keep-list addition: `PlanAssistStrip.tsx` + its package.json export line +
+the `cta.variants` schema block in `lib/niche-config.ts` survive a full
+experiment reversal only if the variant switch is being kept; otherwise remove
+with step 4 below.
+
 ## Full reversal (kill the experiment cleanly)
 
 Order matters only for builds; data is untouched throughout (leads keep their

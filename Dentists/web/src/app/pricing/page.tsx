@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { niche } from "@/config/niche-loader";
 import { dentistsRegistry } from "@accounting-network/web-shared/experiments/registries/dentists";
 import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -62,6 +64,7 @@ export default function PricingPage() {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <PackagesSection config={packages} registry={dentistsRegistry} />
+          <PlanAssistStrip dataCta="pricing_assist_call" ctaVariant={niche.cta.variant} />
         </div>
       </section>
     </>

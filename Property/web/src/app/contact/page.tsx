@@ -3,22 +3,24 @@ import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche, isPackagesMode } from "@/config/niche-loader";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: `Contact Us | Book Free Consultation`,
+  title: `Contact Us`,
   description: `Contact ${siteConfig.name} for landlord accounting enquiries: Section 24, MTD, incorporation, portfolio management. 24-hour response via our form.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
-    description: "Book free consultation for landlord accounting. 24-hour response time.",
+    description: "Contact us about landlord accounting. 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `Contact ${siteConfig.name}`,
-    description: "Book free consultation for landlord accounting. 24-hour response time.",
+    description: "Contact us about landlord accounting. 24-hour response time.",
   },
 };
 
@@ -58,6 +60,21 @@ export default function ContactPage() {
                 <p className="text-base text-slate-700 leading-relaxed">
                   Fill in the form and we&apos;ll get back to you within 24 hours, usually same day. We&apos;ll text and email you straight away, and a quick reply to that locks in your callback.
                 </p>
+                {isPackagesMode(niche) ? (
+                  <p className="mt-4 text-base text-slate-700 leading-relaxed">
+                    Looking for ongoing accounting? Our fixed monthly plans start at £29 a month.{" "}
+                    <Link
+                      href="/pricing"
+                      data-cta="contact_pricing_link"
+                      data-cta-placement="contact"
+                      data-cta-goal="pricing"
+                      data-cta-variant={niche.cta.variant}
+                      className="font-bold text-emerald-700 underline hover:text-emerald-800"
+                    >
+                      See plans and pricing
+                    </Link>
+                  </p>
+                ) : null}
               </div>
 
               <div className="bg-slate-900 p-6 sm:p-8 text-white">
@@ -84,7 +101,9 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white border-2 border-slate-200 p-6 sm:p-8 lg:p-10">
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free consultation</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">
+                {isPackagesMode(niche) ? "Send your enquiry" : "Book your free consultation"}
+              </h2>
               <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
             </div>
           </div>

@@ -6,6 +6,8 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
@@ -291,6 +293,9 @@ export default function HomePage() {
     categorySlug: getCategorySlug(post),
   }));
 
+  const activeCta = getActiveCta(niche);
+  const packagesMode = isPackagesMode(niche);
+
   return (
     <>
       <StickyCTA />
@@ -326,8 +331,8 @@ export default function HomePage() {
               Property tax sorted, your way. Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact" data-cta="hero_book" data-cta-placement="hero" data-cta-goal="form" className={`${btnPrimary} bg-blue-600 border-blue-800 hover:bg-blue-700 hover:border-blue-900 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
-                Book free consultation
+              <Link href={activeCta.hero_primary.href} data-cta="hero_book" data-cta-placement="hero" data-cta-goal={packagesMode ? "pricing" : "form"} data-cta-variant={niche.cta.variant} className={`${btnPrimary} bg-blue-600 border-blue-800 hover:bg-blue-700 hover:border-blue-900 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+                {activeCta.hero_primary.label}
               </Link>
               <Link href="#calculators" data-cta="hero_calculators" data-cta-placement="hero" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
                 Try free calculators
@@ -438,6 +443,9 @@ export default function HomePage() {
               See full pricing details and common questions
             </Link>
           </p>
+          {packagesMode ? (
+            <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
+          ) : null}
         </div>
       </section>
 
@@ -674,18 +682,55 @@ export default function HomePage() {
               <div className="inline-block bg-emerald-600 px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-bold text-white uppercase tracking-wider mb-4 sm:mb-6">
                 Get started
               </div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-                Get your property tax sorted today
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
-                Book a free consultation. We&apos;ll discuss your situation, model the numbers, and give you clear
-                recommendations.
-              </p>
-              <p className="mt-4">
-                <Link href="/pricing" className="text-emerald-400 hover:text-emerald-300 font-semibold underline">
-                  Prefer to see fixed monthly pricing first? View pricing
-                </Link>
-              </p>
+              {packagesMode ? (
+                <>
+                  <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
+                    {activeCta.home_cta.heading}
+                  </h2>
+                  <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
+                    {activeCta.home_cta.body}
+                  </p>
+                  <div className="mt-6 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                    <Link
+                      href={activeCta.home_cta.primary.href}
+                      data-cta="home_cta_primary"
+                      data-cta-placement="home_cta"
+                      data-cta-goal={activeCta.home_cta.primary.href.startsWith("/contact") ? "form" : "pricing"}
+                      data-cta-variant={niche.cta.variant}
+                      className={`${btnPrimary} text-base px-6 py-3 text-center`}
+                    >
+                      {activeCta.home_cta.primary.label}
+                    </Link>
+                    {activeCta.home_cta.secondary ? (
+                      <Link
+                        href={activeCta.home_cta.secondary.href}
+                        data-cta="home_cta_secondary"
+                        data-cta-placement="home_cta"
+                        data-cta-goal={activeCta.home_cta.secondary.href.startsWith("/contact") ? "form" : "pricing"}
+                        data-cta-variant={niche.cta.variant}
+                        className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base px-6 py-3 text-center`}
+                      >
+                        {activeCta.home_cta.secondary.label}
+                      </Link>
+                    ) : null}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
+                    Get your property tax sorted today
+                  </h2>
+                  <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
+                    Book a free consultation. We&apos;ll discuss your situation, model the numbers, and give you clear
+                    recommendations.
+                  </p>
+                  <p className="mt-4">
+                    <Link href="/pricing" className="text-emerald-400 hover:text-emerald-300 font-semibold underline">
+                      Prefer to see fixed monthly pricing first? View pricing
+                    </Link>
+                  </p>
+                </>
+              )}
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-4 text-slate-200">
                   <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
@@ -718,7 +763,16 @@ export default function HomePage() {
             </div>
 
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free consultation</h3>
+              {packagesMode ? (
+                <>
+                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Send us an enquiry</h3>
+                  <p className="text-sm text-slate-600 mb-4 sm:mb-6">
+                    Tell us about your portfolio and we will reply within 24 hours.
+                  </p>
+                </>
+              ) : (
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free consultation</h3>
+              )}
               <LeadForm submitLabel="Request callback" />
             </div>
           </div>

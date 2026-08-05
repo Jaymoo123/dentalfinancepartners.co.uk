@@ -6,8 +6,13 @@ import { useEffect, useId, useRef, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
 import { btnPrimary, focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche, getActiveCta, getActiveNav } from "@/config/niche-loader";
 
 type NavItem = (typeof siteConfig.nav)[number];
+
+const activeCta = getActiveCta(niche);
+const activeNav = getActiveNav(niche);
+const ctaVariant = niche.cta.variant;
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -156,7 +161,7 @@ export function SiteHeader() {
           aria-label="Primary"
           className="hidden min-w-0 items-center gap-1 md:flex"
         >
-          {siteConfig.nav.map((item) =>
+          {activeNav.map((item) =>
             item.children?.length ? (
               <DesktopDropdown key={item.href} item={item} pathname={pathname} />
             ) : (
@@ -176,27 +181,32 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
+          {activeCta.header_secondary ? (
+            <Link
+              href={activeCta.header_secondary.href}
+              data-cta="header_contact"
+              data-cta-placement="header"
+              data-cta-goal={activeCta.header_secondary.href.startsWith("/contact") ? "form" : "pricing"}
+              data-cta-variant={ctaVariant}
+              className={`hidden px-3 py-2 text-sm font-bold transition-colors border-b-2 lg:inline-flex ${focusRing} ${
+                pathname === activeCta.header_secondary.href ||
+                pathname.startsWith(`${activeCta.header_secondary.href}/`)
+                  ? "border-emerald-600 text-emerald-700"
+                  : "border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300"
+              }`}
+            >
+              {activeCta.header_secondary.label}
+            </Link>
+          ) : null}
           <Link
-            href="/contact"
-            data-cta="header_contact"
-            data-cta-placement="header"
-            data-cta-goal="form"
-            className={`hidden px-3 py-2 text-sm font-bold transition-colors border-b-2 lg:inline-flex ${focusRing} ${
-              pathname === "/contact" || pathname.startsWith("/contact/")
-                ? "border-emerald-600 text-emerald-700"
-                : "border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300"
-            }`}
-          >
-            Contact
-          </Link>
-          <Link
-            href="/contact"
+            href={activeCta.header_primary.href}
             data-cta="header_book"
             data-cta-placement="header"
-            data-cta-goal="form"
+            data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "form" : "pricing"}
+            data-cta-variant={ctaVariant}
             className={`${btnPrimary} hidden min-h-10 min-w-0 px-6 py-2 text-sm sm:inline-flex`}
           >
-            Book consultation
+            {activeCta.header_primary.label}
           </Link>
 
           <button
@@ -250,7 +260,7 @@ export function SiteHeader() {
               <BrandWordmarkHomeLink />
             </div>
             <nav aria-label="Mobile" className="flex flex-1 flex-col gap-1 overflow-y-auto p-3">
-              {siteConfig.nav.map((item) => {
+              {activeNav.map((item) => {
                 if (item.children?.length) {
                   return (
                     <div key={item.href} className="mb-1">
@@ -308,14 +318,15 @@ export function SiteHeader() {
             </nav>
             <div className="border-t border-slate-200 p-3">
               <Link
-                href="/contact"
+                href={activeCta.header_primary.href}
                 data-cta="header_book_mobile"
                 data-cta-placement="mobile_menu"
-                data-cta-goal="form"
+                data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "form" : "pricing"}
+                data-cta-variant={ctaVariant}
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
               >
-                Book consultation
+                {activeCta.header_primary.label}
               </Link>
             </div>
           </div>

@@ -5,6 +5,8 @@ import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
 import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { medicalRegistry } from "@accounting-network/web-shared/experiments/registries/medical";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { niche } from "@/config/niche-loader";
 
 export const metadata: Metadata = {
   title: `Medical Accountant Pricing for Locums, GPs and Consultants`,
@@ -44,6 +46,7 @@ export default function PricingPage() {
       <section className={`${sectionY} bg-[var(--background)] border-t border-[var(--border)]`}>
         <div className={siteContainerLg}>
           <PackagesSection config={packages} registry={medicalRegistry} />
+          <PlanAssistStrip dataCta="pricing_assist_call" ctaVariant={niche.cta.variant} />
         </div>
       </section>
     </>

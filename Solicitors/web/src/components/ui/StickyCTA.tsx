@@ -21,6 +21,7 @@ import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
 
 const DISMISS_KEY = "afl_sticky_dismissed";
@@ -34,11 +35,14 @@ interface StickyOffer {
   label: string;
 }
 
+const activeSticky = getActiveCta(niche).sticky;
+const packagesMode = isPackagesMode(niche);
+
 const defaultOffer: StickyOffer = {
-  primary: niche.cta.sticky_primary,
-  secondary: niche.cta.sticky_secondary,
-  href: "/contact",
-  label: niche.cta.sticky_button,
+  primary: activeSticky.primary,
+  secondary: activeSticky.secondary,
+  href: activeSticky.href,
+  label: activeSticky.button,
 };
 
 export function StickyCTA() {
@@ -85,9 +89,12 @@ export function StickyCTA() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [mounted]);
 
-  // Suppress on specific route prefixes.
+  // Suppress on specific route prefixes. In packages mode the bar's target is
+  // /pricing, so it must never overlay the pricing page itself.
   const isExcludedRoute =
-    pathname.startsWith("/admin") || pathname.startsWith("/embed");
+    pathname.startsWith("/admin") ||
+    pathname.startsWith("/embed") ||
+    (packagesMode && pathname.startsWith("/pricing"));
 
   // Count the personalised impression exactly once per rule, and only while the
   // bar is actually painted (DeepScrollModal/ReturningBar fire "shown" the same
@@ -96,7 +103,7 @@ export function StickyCTA() {
   const painted =
     mounted && !isExcludedRoute && !dismissed && visible && !isConverted();
   useEffect(() => {
-    if (!painted || !intentAction) return;
+    if (!painted || !intentAction || packagesMode) return;
     if (shownRuleRef.current === intentAction.ruleId) return;
     shownRuleRef.current = intentAction.ruleId;
     trackPersonalization("shown", intentAction);
@@ -112,7 +119,9 @@ export function StickyCTA() {
   // Use the behaviour-matched personalised offer when available (treatment arm
   // with a clear topic); fall back to the static default offer for the control
   // arm, visitors with no topic, or the pre-mount render.
-  const offer: StickyOffer = intentAction
+  // Packages mode disables intent offers: they resurface free-guide/free-call
+  // framing that competes with the pricing CTA.
+  const offer: StickyOffer = !packagesMode && intentAction
     ? {
         primary: intentAction.offer.title,
         secondary: intentAction.offer.blurb,
@@ -157,8 +166,9 @@ export function StickyCTA() {
           href={offer.href}
           data-cta="sticky_cta"
           data-cta-placement="sticky"
+          data-cta-variant={niche.cta.variant}
           data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
-          onClick={() => { if (intentAction) trackPersonalization("clicked", intentAction); }}
+          onClick={() => { if (!packagesMode && intentAction) trackPersonalization("clicked", intentAction); }}
           className={`${btnPrimary} shrink-0 whitespace-nowrap`}
         >
           {offer.label}

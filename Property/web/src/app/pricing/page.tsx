@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
 import { propertyRegistry } from "@accounting-network/web-shared/experiments/registries/property";
 import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
 import { packages } from "@/config/packages";
+import { niche } from "@/config/niche-loader";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
@@ -54,6 +56,7 @@ export default function PricingPage() {
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <PackagesSection config={packages} registry={propertyRegistry} />
+          <PlanAssistStrip dataCta="pricing_assist_call" ctaVariant={niche.cta.variant} />
         </div>
       </section>
     </>

@@ -6,6 +6,7 @@ import { buildBlogPostingJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
 import { TableOfContents } from "@accounting-network/web-shared/content/TableOfContents";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
@@ -25,6 +26,7 @@ import { PricingPromoCard } from "@accounting-network/web-shared/pricing/Pricing
 import { packages } from "@/config/packages";
 
 const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
+const activeBlogCta = getActiveCta(niche).blog;
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -303,13 +305,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <div className="mt-16 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-white p-8 sm:p-10 rounded-2xl">
                 <h2 className="text-2xl font-bold text-orange-900 sm:text-3xl">
-                  {niche.blog.cta_heading}
+                  {activeBlogCta.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                  {niche.blog.cta_body}
+                  {activeBlogCta.cta_body}
                 </p>
                 <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+                  <LeadForm redirectOnSuccess={false} submitLabel={activeBlogCta.cta_button} />
                 </div>
               </div>
 

@@ -19,8 +19,11 @@ import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { MiniCapture } from "@/components/forms/MiniCapture";
 import { PricingPromoCard } from "@accounting-network/web-shared/pricing/PricingPromoCard";
 import { packages } from "@/config/packages";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
 const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
+const activeCta = getActiveCta(niche);
+const packagesMode = isPackagesMode(niche);
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -90,6 +93,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
+
+  // In packages mode the pricing promo must render BEFORE the mid-article
+  // "free specialist review" capture; in leadgen mode it keeps its original
+  // post-article slot. Same element, one placement per variant.
+  const pricingPromo = (
+    <PricingPromoCard
+      fromPrice={cheapestTier.price}
+      blurb="Locum, GP and consultant tax handled for a fixed monthly fee. No hourly billing, cancel with 1 month's notice."
+    />
+  );
 
   return (
     // TopicOverrideProvider injects the category-resolved topic into IntentProvider.
@@ -219,6 +232,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
+                    {packagesMode ? pricingPromo : null}
                     {/* Mid-article qualified lead capture (free review, medical voice). */}
                     <MiniCapture
                       formId="blog_mid_resource"
@@ -242,6 +256,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
+                    {packagesMode ? pricingPromo : null}
                     <MiniCapture
                       formId="blog_short_resource"
                       messagePrefix={`[Blog short: ${categorySlug}] `}
@@ -254,10 +269,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 )}
               </div>
 
-              <PricingPromoCard
-                fromPrice={cheapestTier.price}
-                blurb="Locum, GP and consultant tax handled for a fixed monthly fee. No hourly billing, cancel with 1 month's notice."
-              />
+              {!packagesMode ? pricingPromo : null}
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">
@@ -295,13 +307,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <div className="mt-16 bg-[var(--navy)] p-8 sm:p-10 text-white rounded-2xl">
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                  {niche.blog.cta_heading}
+                  {activeCta.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-white/90">
-                  {niche.blog.cta_body}
+                  {activeCta.blog.cta_body}
                 </p>
                 <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+                  <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
                 </div>
               </div>
 

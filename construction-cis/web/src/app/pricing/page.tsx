@@ -3,6 +3,8 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { niche } from "@/config/niche-loader";
 import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { siteRegistries } from "@accounting-network/web-shared/experiments/registries";
 
@@ -35,6 +37,7 @@ export default function PricingPage() {
       <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <PackagesSection config={packages} registry={siteRegistries["construction-cis"]} />
+          <PlanAssistStrip dataCta="pricing_assist_call" ctaVariant={niche.cta.variant} />
         </div>
       </section>
     </>
