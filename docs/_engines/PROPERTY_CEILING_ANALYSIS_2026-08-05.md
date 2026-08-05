@@ -79,6 +79,14 @@ line already in the Property growth plan; it has not been executed.
 
 July 2026, human sessions (`is_bot=false`, `is_embed=false`):
 
+> **Correction 2026-08-05:** an earlier version of this document cited Bing at
+> 3,120 impressions / 19.7% CTR. That came from `GetQueryStats`, a truncated top-N
+> query slice. Bing site totals (`GetRankAndTrafficStats`) for July are **67,141
+> impressions / 1,692 clicks / 2.52% CTR**. Bing still beats Google (77,466 / 811 /
+> 1.05%) on clicks and leads, but by ~2.4x on CTR, not an order of magnitude. See
+> `PROPERTY_COMMERCIAL_CAPTURE_SCOPE_2026-08-05.md` §1a for the corrected reading:
+> CTR is weak on BOTH engines, so query mix, not AI Overviews alone, is the cause.
+
 | Source | Sessions | Leads (Jul) |
 |---|---:|---:|
 | www.bing.com | 1,907 | 16 |

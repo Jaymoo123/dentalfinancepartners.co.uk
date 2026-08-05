@@ -12,24 +12,45 @@ that Google impressions and Bing impressions are not the same asset.**
 
 ## 1. What we are seeing
 
-### 1a. Bing converts 19x better than Google, per impression
+### 1a. Bing converts ~2.4x better than Google, and BOTH engines are low
 
-| Engine | Impressions | Clicks | CTR | Avg pos | Leads (Jul) |
-|---|---:|---:|---:|---:|---:|
-| Google (Jul) | 77,466 | 811 | **1.05%** | ~6-8 | 11 |
-| Bing (latest snapshot) | 3,120 | 615 | **19.7%** | 4.6 | 16 |
+> **Corrected 2026-08-05 after owner challenge.** An earlier version of this
+> document claimed Bing ran at 19.7% CTR and converted 19x better. That figure was
+> computed from `GetQueryStats`, which returns a **truncated top-N query slice**
+> biased toward high-CTR queries, not site totals. The site-level aggregate is
+> `GetRankAndTrafficStats`. This is the same undercount class as
+> [[gsc_query_sum_undercount]]; treat any Bing query-level sum the same way.
 
-Bing position buckets: pos 1-3 = 856 impressions / 382 clicks (**44.6% CTR**);
-pos 4-10 = 2,238 / 227 (10.1%). Those are *normal* search CTRs.
+Site totals, `GetRankAndTrafficStats` (2026-05-17 .. 2026-08-03, 79 days):
+**139,458 impressions / 3,497 clicks / 2.51% CTR.**
 
-This is the most important number in the analysis. Property's content converts
-perfectly well when it is presented as a blue link. Google shows 77k impressions
-and delivers 1%. The content is not the problem, and the rankings are not the
-problem. **Google is not passing the clicks on.**
+| Month | Bing impr | Bing clicks | Bing CTR | Google impr | Google clicks | Google CTR |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-05 | 15,543 | 396 | 2.55% | 26,747 | 74 | 0.28% |
+| 2026-06 | 51,966 | 1,280 | 2.46% | 55,335 | 318 | 0.57% |
+| 2026-07 | 67,141 | 1,692 | **2.52%** | 77,466 | 811 | **1.05%** |
 
-Bing's queries are also long and conversational (`can uk landlords claim cost of
-mortgage product fee as an expense`, `does mortgage interest go into finance cost
-for self assessment`), which is Copilot-shaped querying rather than keyword search.
+Bing delivers roughly **double Google's clicks on slightly fewer impressions**, and
+more leads (16 vs 11 in July). That advantage is real and worth acting on, but it is
+~2.4x, not an order of magnitude.
+
+**The more important reading: Bing's CTR is also low.** 2.52% at an average
+impression position of 4-6, where 6-9% would be normal. Low CTR appears on *both*
+engines. So this is not primarily an AI Overview effect, and the earlier conclusion
+that "the content converts fine as a blue link and Google is uniquely broken" does
+not survive the corrected data.
+
+The likelier explanation is **query mix**: a large share of impressions on both
+engines are form-code and informational queries where the searcher is satisfied by
+the snippet or wants gov.uk rather than an accountant. That makes W3 (separating
+winnable from unwinnable impressions) the central diagnostic task, not a tidy-up.
+
+`GetPageStats` (1,015 pages, 89,116 impr, 2,302 clicks, 2.58% CTR) is the reliable
+per-page source and tracks the site aggregate closely. Use it, not `GetQueryStats`.
+
+Bing's queries are long and conversational (`can uk landlords claim cost of mortgage
+product fee as an expense`, `does mortgage interest go into finance cost for self
+assessment`), which is Copilot-shaped querying rather than keyword search.
 
 ### 1b. Local commercial terms have essentially no search volume
 
@@ -124,9 +145,11 @@ before optimising hard against them; it does not block the work.
 
 ## 2. What this indicates we are missing
 
-1. **We have been optimising for the wrong engine.** Every content and meta decision
-   has been made against Google, which delivers 1% CTR. Bing delivers 19.7% and more
-   leads, and has never had a programme pointed at it.
+1. **We have been optimising for the weaker engine.** Every content and meta decision
+   has been made against Google (1.05% CTR). Bing delivers 2.52%, about double the
+   clicks and more leads, and has never had a programme pointed at it.
+1b. **But CTR is weak on both engines**, so an engine switch alone does not fix it.
+   The shared cause is query mix, addressed in W3.
 2. **We have never targeted the money terms.** 720/mo at £17.55 CPC, and the site
    sits at position 25 with no dedicated page. The content programme has produced
    ~800 informational posts and no serious commercial page.
@@ -180,10 +203,13 @@ Do not chase site-wide CTR. Split the impression base first:
   not chosen. Rewrite titles/descriptions for these only, using the SERP meta engine
   that already exists.
 
-### W4. Bing-first programme (new, and the biggest under-exploited asset)
-Bing is the best channel in the estate and has no programme. Scope:
-- Make Bing the **primary** optimisation target for commercial pages, with Google
-  as the secondary read.
+### W4. Bing-first programme (under-exploited, but a ~2.4x edge not a 19x one)
+Bing is the better-converting channel and has no programme. Scope:
+- Make Bing a **co-primary** optimisation target for commercial pages alongside
+  Google. (Earlier draft said "primary"; that was resting on the withdrawn 19x
+  figure. At 2.4x, Bing earns equal billing, not sole priority.)
+- Always read Bing volume from `GetRankAndTrafficStats` (site) and `GetPageStats`
+  (per page). `GetQueryStats` is a top-N slice and must never be summed as a total.
 - Full IndexNow coverage for Property (the tooling already exists estate-wide;
   confirm Property is wired and submitting on publish).
 - Pull `GetPageQueryStats` per page, not just site-level, to get a page-level Bing
