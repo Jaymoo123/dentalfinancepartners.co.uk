@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
 import { propertyRegistry } from "@accounting-network/web-shared/experiments/registries/property";
+import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { packages } from "@/config/packages";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Landlord Accountant Pricing and Packages",
   description:
     "Fixed monthly accounting packages for landlords and property companies. Clear pricing, no fixed term.",
   alternates: {
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Pricing",
+    title: "Landlord Accountant Pricing and Packages",
     description:
       "Fixed monthly accounting packages for landlords and property companies. Clear pricing, no fixed term.",
     url: `${siteConfig.url}/pricing`,
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing",
+    title: "Landlord Accountant Pricing and Packages",
     description:
       "Fixed monthly accounting packages for landlords and property companies. Clear pricing, no fixed term.",
   },
@@ -35,6 +36,10 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildPricingFaqJsonLd(packages)) }}
+      />
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Pricing" }]} />
