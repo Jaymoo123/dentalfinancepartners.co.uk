@@ -77,7 +77,7 @@ const processSteps = [
   {
     n: "03",
     title: "Decision and implementation",
-    body: "If you decide to proceed, we coordinate with your solicitor, set up the company, handle the property transfer, and ensure all filings are correct. If you decide not to proceed, that's fine, you have the analysis for future reference.",
+    body: "If you decide to proceed, we coordinate with your solicitor, set up the company, handle the property transfer, and ensure all filings are correct. If you decide not to proceed, that's fine. You have the analysis for future reference.",
   },
 ];
 

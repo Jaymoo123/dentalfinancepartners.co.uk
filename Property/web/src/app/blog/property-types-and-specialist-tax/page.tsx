@@ -102,7 +102,7 @@ export default function PropertyTypesPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Commercial Property</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Commercial property investment operates under a different tax framework from residential. Section 24 mortgage interest restrictions do not apply to commercial property held personally, full interest deductions remain available. Capital allowances on plant and machinery, structures and buildings allowance (SBA), and the treatment of business rates create additional planning opportunities that residential landlords do not have.
+              Commercial property investment operates under a different tax framework from residential. Section 24 mortgage interest restrictions do not apply to commercial property held personally, so full interest deductions remain available. Capital allowances on plant and machinery, structures and buildings allowance (SBA), and the treatment of business rates create additional planning opportunities that residential landlords do not have.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               VAT is a critical consideration for commercial property. Most commercial rents are exempt from VAT unless the landlord has opted to tax the property, which locks in for 20 years but allows recovery of input VAT on costs. The decision to opt to tax should be made carefully, considering the VAT status of tenants and the long-term implications.
@@ -123,7 +123,7 @@ export default function PropertyTypesPage() {
               Property development profits are typically treated as trading income rather than capital gains. This distinction is critical: trading profits are subject to income tax (or corporation tax for companies) at marginal rates, with no annual exempt amount and no access to CGT reliefs. HMRC applies the &ldquo;badges of trade&rdquo; tests to determine whether an activity constitutes development trading or property investment.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Developers may need to register for the Construction Industry Scheme (CIS), account for VAT on new-build sales, and consider whether profits should flow through a company or personal structure. The correct classification of each project, investment, development, or mixed, determines which tax regime applies and which deductions are available.
+              Developers may need to register for the Construction Industry Scheme (CIS), account for VAT on new-build sales, and consider whether profits should flow through a company or personal structure. The correct classification of each project (investment, development, or mixed) determines which tax regime applies and which deductions are available.
             </p>
           </section>
           <section>

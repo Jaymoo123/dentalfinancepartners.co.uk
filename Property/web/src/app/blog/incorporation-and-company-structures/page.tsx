@@ -133,7 +133,7 @@ export default function IncorporationCompanyStructuresPage() {
               The right structure depends on your portfolio size, mortgage levels, income needs, and long-term plans. Landlords building a portfolio to pass to the next generation may benefit from a family investment company (FIC), which offers flexible share classes and inheritance tax planning. Those focused on short-term cash flow may prefer to remain as individuals and use other Section 24 mitigation strategies.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              There is no one-size-fits-all answer. A specialist property tax accountant can model the scenarios, personal ownership, SPV, trading company, partnership, or FIC, against your actual numbers and help you choose the structure that delivers the best outcome over the life of your portfolio.
+              There is no one-size-fits-all answer. A specialist property tax accountant can model the scenarios (personal ownership, SPV, trading company, partnership, or FIC) against your actual numbers and help you choose the structure that delivers the best outcome over the life of your portfolio.
             </p>
           </section>
         </div>

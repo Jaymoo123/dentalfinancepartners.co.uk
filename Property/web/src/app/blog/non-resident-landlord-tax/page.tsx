@@ -96,7 +96,7 @@ export default function NonResidentLandlordTaxPage() {
               The Non-Resident Landlord (NRL) scheme requires UK letting agents and tenants to deduct basic rate tax (20%) from rental payments to landlords whose usual place of abode is outside the UK. The deduction is made at source and paid to HMRC quarterly, unless the landlord has applied to receive rent gross through HMRC&apos;s NRL1 approval process.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Obtaining NRL approval to receive rent without deduction does not remove the tax liability, it simply shifts the payment obligation to self-assessment. Most non-resident landlords with good compliance history can obtain approval, which improves cash flow and simplifies rent collection. The landlord must still file a UK self-assessment return declaring the rental income and any allowable deductions.
+              Obtaining NRL approval to receive rent without deduction does not remove the tax liability. It simply shifts the payment obligation to self-assessment. Most non-resident landlords with good compliance history can obtain approval, which improves cash flow and simplifies rent collection. The landlord must still file a UK self-assessment return declaring the rental income and any allowable deductions.
             </p>
           </section>
           <section>

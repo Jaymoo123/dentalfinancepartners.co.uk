@@ -58,7 +58,7 @@ SUPABASE_URL = "https://api.supabase.com/v1/projects/dhlxwmvmkrfnmcgjbntk/databa
 # accuracy 73/100, every error is real commercial/form leaking into the
 # informational residue. Fix applied here per that doc's recommendation:
 # widen FORMCODE for devolved/official rate lookups (Revenue Scotland, LBTT,
-# ATED, bare "rates YYYY", annual exempt amount, allowance), pluralise the
+# ATED, bare "rates YYYY", annual exempt amount), pluralise the
 # COMMERCIAL service tokens, add "software" as a commercial (buying-intent)
 # token, and test FORMCODE first. Closes 25 of the 27 sample errors.
 COMMERCIAL_RE = re.compile(
@@ -68,7 +68,11 @@ COMMERCIAL_RE = re.compile(
 FORMCODE_RE = re.compile(
     r"\b(sa\d{3}|nrl\d?|ct\d{3}|p\d{2}d?|is\d+\w*|form|hmrc|gov\.?uk|helpline|"
     r"login|sign in|deadline|manual|revenue scotland|lbtt|ated|"
-    r"annual exempt|allowance)\b|\brates?\b.*20\d\d", re.I)
+    r"annual exempt)\b|\brates?\b.*20\d\d", re.I)
+# Refinement 2026-08-05 (post-review): bare "allowance" dropped (it swallowed
+# winnable informational queries like "property allowance explained"), and
+# COMMERCIAL now wins when both regexes match, so the rates catch-all cannot
+# steal "cgt rates accountant 2027"-shaped queries.
 
 
 def _sql(query: str) -> list[dict]:
@@ -117,8 +121,9 @@ def section_gsc() -> dict:
     qrows = _gsc(svc, ["query"], 90)
     buckets: dict[str, list] = collections.defaultdict(lambda: [0, 0, 0, 0.0])
     for r in qrows:
-        b = ("form_hmrc_lookup" if FORMCODE_RE.search(r["keys"][0])
-             else "commercial" if COMMERCIAL_RE.search(r["keys"][0])
+        q0 = r["keys"][0]
+        b = ("commercial" if COMMERCIAL_RE.search(q0)
+             else "form_hmrc_lookup" if FORMCODE_RE.search(q0)
              else "informational")
         buckets[b][0] += 1
         buckets[b][1] += r["impressions"]
@@ -276,10 +281,10 @@ def main() -> None:
 def _selftest() -> None:
     """ponytail: smallest check that fails if the bucket regexes regress."""
     def bucket(q: str) -> str:
-        if FORMCODE_RE.search(q):
-            return "form_hmrc_lookup"
         if COMMERCIAL_RE.search(q):
             return "commercial"
+        if FORMCODE_RE.search(q):
+            return "form_hmrc_lookup"
         return "informational"
 
     assert bucket("revenue scotland non-residential lbtt rates 2026") == "form_hmrc_lookup"
@@ -287,6 +292,8 @@ def _selftest() -> None:
     assert bucket("uk cgt rates residential property 2026") == "form_hmrc_lookup"
     assert bucket("property accounting software uk") == "commercial"
     assert bucket("property tax specialists in london") == "commercial"
+    assert bucket("cgt rates accountant 2027") == "commercial"
+    assert bucket("property allowance explained") == "informational"
     assert bucket("how much rent do i need to declare") == "informational"
     print("[baseline] selftest: ok")
 

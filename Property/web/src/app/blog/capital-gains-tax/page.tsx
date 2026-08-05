@@ -112,7 +112,7 @@ export default function CapitalGainsTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Lettings Relief</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Lettings relief applies where a property that qualifies for PPR relief has also been let as residential accommodation. Since April 2020, lettings relief is only available if you shared occupation of the property with your tenant, simply letting out a former home no longer qualifies.
+              Lettings relief applies where a property that qualifies for PPR relief has also been let as residential accommodation. Since April 2020, lettings relief is only available if you shared occupation of the property with your tenant. Simply letting out a former home no longer qualifies.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Where it does apply, the relief is capped at the lower of: £40,000, the amount of PPR relief given, or the gain attributable to the letting period. In practice, this relief now benefits very few landlords, but it remains relevant for those who let rooms in their own home or live in part of a property they also let.

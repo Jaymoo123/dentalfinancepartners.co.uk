@@ -112,7 +112,7 @@ export default function MakingTaxDigitalMTDPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Compatible Software for Property Landlords</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              HMRC maintains a list of MTD-compatible software that can connect to their systems via API. Options range from full accounting packages like Xero, QuickBooks, and FreeAgent to dedicated landlord tools like Hammock and GoSimpleTax. Spreadsheets alone are not sufficient, you need bridging software or a native MTD application.
+              HMRC maintains a list of MTD-compatible software that can connect to their systems via API. Options range from full accounting packages like Xero, QuickBooks, and FreeAgent to dedicated landlord tools like Hammock and GoSimpleTax. Spreadsheets alone are not sufficient. You need bridging software or a native MTD application.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               When choosing software, consider whether it handles multiple properties, tracks expenses by property, supports the quarterly submission format, and integrates with your accountant&apos;s systems. Many landlords find that starting with MTD-ready software well before the mandatory date reduces stress and errors during the transition.
