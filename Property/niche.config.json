@@ -37,6 +37,10 @@
       "href": "/services"
     },
     {
+      "label": "Pricing",
+      "href": "/pricing"
+    },
+    {
       "label": "Incorporation",
       "href": "/incorporation"
     },
@@ -69,6 +73,10 @@
     {
       "label": "Property tax advice",
       "href": "/services/property-tax-advice"
+    },
+    {
+      "label": "Pricing",
+      "href": "/pricing"
     },
     {
       "label": "Non-resident landlords",

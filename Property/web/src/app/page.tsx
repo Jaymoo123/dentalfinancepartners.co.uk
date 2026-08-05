@@ -674,6 +674,11 @@ export default function HomePage() {
                 Book a free consultation. We&apos;ll discuss your situation, model the numbers, and give you clear
                 recommendations.
               </p>
+              <p className="mt-4">
+                <Link href="/pricing" className="text-emerald-400 hover:text-emerald-300 font-semibold underline">
+                  Prefer to see fixed monthly pricing first? View pricing
+                </Link>
+              </p>
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-4 text-slate-200">
                   <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">

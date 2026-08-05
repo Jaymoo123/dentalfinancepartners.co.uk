@@ -238,6 +238,17 @@ export async function POST(req: Request) {
     }
   }
 
+  // Package signups (self-serve pricing page, pkg_pricing_v1) stop here: the
+  // row is saved and the AFTER INSERT notify/enrich triggers have fired, but
+  // verification, nurture enrolment and the booking token are the enquiry
+  // pipeline, not the signup pipeline. Onboarding is a manual 1-working-day
+  // callback from the owner inbox email.
+  const isPackageSignup =
+    String((baseRow.extras as Record<string, unknown> | null)?.form_id ?? "") === "package_signup";
+  if (isPackageSignup) {
+    return NextResponse.json({ success: true, leadId });
+  }
+
   // 4. Real-time verification (best-effort, never blocks).
   let verifyPhone: string | undefined;
   let verifyEmail: string | undefined;
