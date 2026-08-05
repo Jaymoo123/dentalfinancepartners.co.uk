@@ -106,6 +106,14 @@ export default function ServicesPage() {
           We work exclusively with medical professionals. Every client is a GP, consultant, locum doctor, or practice owner. This concentrated focus means our accountants have deep experience with medical sector financial challenges, from NHS superannuation annual allowance calculations to locum IR35 compliance, medical expense claims, and practice partnership structures.
         </p>
 
+        <p className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-5 py-4 text-sm leading-relaxed text-[var(--ink)] sm:text-base">
+          Prefer a fixed monthly package?{" "}
+          <Link href="/pricing" className="font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4">
+            See our pricing
+          </Link>
+          .
+        </p>
+
         <ol className="mt-10 list-none space-y-10 pl-0 sm:mt-12 sm:space-y-12">
           {sections.map((s, i) => (
             <li key={s.title}>

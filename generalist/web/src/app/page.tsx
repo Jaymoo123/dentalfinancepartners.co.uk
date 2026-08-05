@@ -671,10 +671,13 @@ export default function HomePage() {
                 would cost. No pitch deck, no follow-up sequence.
               </p>
             </div>
-            <div className="flex lg:justify-end">
+            <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
               <Link href="/contact" className={btnPrimary}>
                 Book a free call
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
+              </Link>
+              <Link href="/pricing" className={btnSecondary}>
+                View pricing
               </Link>
             </div>
           </div>

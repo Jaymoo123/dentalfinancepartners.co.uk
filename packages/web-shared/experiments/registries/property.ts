@@ -23,6 +23,10 @@ import type { SiteExperimentRegistry } from "../types";
 
 export const propertyRegistry: SiteExperimentRegistry = {
   experiments: [
+    // Self-serve packages painted-door (estate-wide, launched 2026-08-05).
+    // Single arm at 100%: absolute demand test; registering stamps props.exp.
+    { key: "pkg_pricing_v1", status: "running", variants: [{ id: "on", weight: 100 }] },
+
     // Behaviour-driven personalisation vs the plain generic experience.
     //  - control   (~25%): personalisation suppressed (IntentProvider yields no
     //               actions / useIntent returns null) -> the generic site.
@@ -77,6 +81,16 @@ export const propertyRegistry: SiteExperimentRegistry = {
   ],
 
   meta: {
+    pkg_pricing_v1: {
+      label: "Self-serve packages (pricing page)",
+      controlDesc: "No control arm (single-arm demand test)",
+      treatmentDesc: "Priced packages page live at /pricing",
+      primary: {
+        metricLabel: "Chose a package",
+        exposureLabel: "saw the pricing page",
+        actionLabel: "clicked a package CTA",
+      },
+    },
     personalization: {
       label: "Personalisation (behaviour-driven offers)",
       controlDesc: "Plain generic site (no tailored offers)",

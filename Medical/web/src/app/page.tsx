@@ -477,6 +477,9 @@ export default function HomePage() {
                 <Link href="/contact" className={btnMailOutline}>
                   Contact us
                 </Link>
+                <Link href="/pricing" className={btnMailOutline}>
+                  View pricing
+                </Link>
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">

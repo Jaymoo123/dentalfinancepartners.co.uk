@@ -219,6 +219,17 @@ export default function ServicesPage() {
         <StatsBar stats={siteStats} />
       </div>
 
+      {/* Pricing banner */}
+      <div className={`${siteContainerLg} pb-8`}>
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--gold-soft)] px-6 py-4 text-center text-sm font-medium text-[var(--ink)]">
+          Prefer a fixed monthly package?{" "}
+          <Link href="/pricing" className="font-semibold text-[var(--gold-strong)] underline hover:text-[var(--gold)]">
+            See our pricing
+          </Link>
+          .
+        </div>
+      </div>
+
       {/* Service tiers */}
       <section className="bg-[var(--surface)] border-b border-[var(--border)]">
         <div className={`${siteContainerLg} ${sectionY}`}>

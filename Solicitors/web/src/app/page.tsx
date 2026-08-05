@@ -507,6 +507,13 @@ export default function HomePage() {
             <div className="mt-10">
               <LeadForm />
             </div>
+
+            <p className="mt-6 text-center text-sm text-[var(--ink-soft)]">
+              Prefer to see fixed prices first?{" "}
+              <Link href="/pricing" className="font-semibold text-[var(--primary)] hover:underline">
+                View pricing
+              </Link>
+            </p>
           </div>
         </div>
       </section>

@@ -195,6 +195,12 @@ export default function HomePage() {
                 >
                   Gross payment status
                 </Link>
+                <Link
+                  href="/pricing"
+                  className={`inline-flex min-h-12 items-center justify-center text-base sm:text-lg font-medium text-orange-300 hover:text-orange-200 transition-colors text-center underline underline-offset-4 ${focusRing}`}
+                >
+                  View pricing
+                </Link>
               </div>
               <div className="mt-8 flex items-center gap-2.5 text-sm text-neutral-400">
                 <ShieldCheck className="h-4 w-4 text-orange-400 flex-shrink-0" aria-hidden />

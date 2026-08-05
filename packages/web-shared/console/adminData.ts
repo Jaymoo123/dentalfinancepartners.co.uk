@@ -510,6 +510,28 @@ export async function getResultGateLeads(siteKey: string): Promise<FormLeadCount
   return rows[0] ?? null;
 }
 
+export interface PackageFunnelRow {
+  package_id: string | null;
+  pricing_view_sessions: number;
+  cta_click_sessions: number;
+  form_start_sessions: number;
+  signup_sessions: number;
+  signup_events: number;
+}
+
+/**
+ * Self-serve packages funnel (pkg_pricing_v1) from vw_package_funnel.
+ * One row per package_id plus a package_id=NULL row carrying the page-level
+ * pricing_view_sessions denominator. Empty array until the page ships/gets traffic.
+ */
+export function getPackageFunnel(siteKey: string): Promise<PackageFunnelRow[]> {
+  return rest<PackageFunnelRow>("vw_package_funnel", {
+    site_key: `eq.${siteKey}`,
+    select:
+      "package_id,pricing_view_sessions,cta_click_sessions,form_start_sessions,signup_sessions,signup_events",
+  });
+}
+
 export function getLeadsPage(siteKey: string, offset: number, limit: number) {
   // Paginated ledger: keep fresh (ttl 0) so paging never serves a stale page.
   return rest<LeadInfo>("leads", {

@@ -33,6 +33,10 @@
       "href": "/services"
     },
     {
+      "label": "Pricing",
+      "href": "/pricing"
+    },
+    {
       "label": "Guides",
       "href": "/medical-guides"
     },
@@ -69,6 +73,10 @@
     {
       "label": "For junior doctors",
       "href": "/for-junior-doctors"
+    },
+    {
+      "label": "Pricing",
+      "href": "/pricing"
     },
     {
       "label": "Medical guides",

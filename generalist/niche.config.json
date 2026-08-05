@@ -33,6 +33,10 @@
       "href": "/services"
     },
     {
+      "label": "Pricing",
+      "href": "/pricing"
+    },
+    {
       "label": "Calculators",
       "href": "/calculators"
     },
@@ -85,6 +89,10 @@
     {
       "label": "Services",
       "href": "/services"
+    },
+    {
+      "label": "Pricing",
+      "href": "/pricing"
     },
     {
       "label": "Calculators",

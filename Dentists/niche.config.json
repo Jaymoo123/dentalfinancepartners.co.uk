@@ -33,6 +33,10 @@
       "href": "/services"
     },
     {
+      "label": "Pricing",
+      "href": "/pricing"
+    },
+    {
       "label": "Pillar Guides",
       "href": "/dental-guides"
     },
@@ -54,6 +58,10 @@
     }
   ],
   "footer_links": [
+    {
+      "label": "Pricing",
+      "href": "/pricing"
+    },
     {
       "label": "Locations",
       "href": "/locations"

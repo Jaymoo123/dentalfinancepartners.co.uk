@@ -33,6 +33,10 @@
       "href": "/services"
     },
     {
+      "label": "Pricing",
+      "href": "/pricing"
+    },
+    {
       "label": "CIS Refund",
       "href": "/cis-refund"
     },
@@ -61,6 +65,10 @@
     {
       "label": "Services",
       "href": "/services"
+    },
+    {
+      "label": "Pricing",
+      "href": "/pricing"
     },
     {
       "label": "CIS Refund",
