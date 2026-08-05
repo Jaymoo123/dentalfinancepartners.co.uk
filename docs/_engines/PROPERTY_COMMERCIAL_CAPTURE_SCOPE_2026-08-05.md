@@ -286,6 +286,111 @@ to a market where you would hold no buyer relationship.
 
 ---
 
+## 5b. Commercial page architecture (added 2026-08-05, DataForSEO keyword universe)
+
+### The homepage is not competing at all
+Homepage, 90 days: **42 impressions, 1 click, 10 distinct queries.** It ranks for
+`property tax partners` (brand) and essentially nothing else. For `landlord tax
+accountant` it sits at **position 82**.
+
+Worse, the page Google currently serves for the head term `property accountant` is
+`/blog/property-accountant-services/how-to-become-property-accountant` — **a careers
+article**, at position 24.8. There is a whole jobs cluster (`property accountant
+jobs`, `vacancies`, `positions`, `jobs in london`, ~400/mo combined) sitting inside
+the commercial category and outranking everything commercial.
+
+And `landlord tax` (**2,900/mo**, the largest term in the UK set) returns **no
+impressions at all**. Property is invisible for it.
+
+The owner instinct that the homepage should be the money page is correct. It is
+currently not in contention for any commercial term.
+
+### Target architecture
+
+| Page | Primary terms | Combined vol/mo |
+|---|---|---:|
+| **Homepage** | property accountant(s) / accountant for property (720), property tax accountant (210), specialist property accountant (170), property accountant near me (170) | **~1,270** |
+| **Landlord tax hub** | landlord tax (2,900), rental property tax (590), property tax advice (320) | **~3,810** |
+| **Landlord accountant** | landlord accountant (390), accountant for landlords (260), landlord tax accountant (70, £22.02 CPC), landlord accountant near me (70) | **~790** |
+| **Property investor** | property investment accountant / accountant for property investors (320), investment property accountant (50) | **~370** |
+| **Property management** | accountant for property management (210, **£26.15 CPC** — highest in set) | **210** |
+| **Rental property** | rental property accountant (110, £15.24) | **110** |
+
+Two cleanups fall out of this:
+- **Quarantine the careers/jobs cluster.** It is the single biggest cause of the head
+  term being mis-served. Noindex or relocate out of `/blog/property-accountant-services/`.
+- **`landlord tax` at 2,900/mo with zero impressions is the largest single gap found
+  anywhere in this analysis**, larger than the head term itself.
+
+### Correction to §4: informational content is NOT the problem
+
+Lead entry pages (Property, all time, session-attributed):
+
+| Entry page type | Leads |
+|---|---:|
+| **blog (informational)** | **52** |
+| homepage | 32 |
+| other | 14 |
+| services | 1 |
+
+Informational blog pages are the **primary** lead source. The earlier "do not
+commission more informational content" line was too blunt and is withdrawn.
+
+The real split is **decision-stage vs reference-stage**, not informational vs
+commercial. Top lead-producing posts are decision-stage:
+`how-to-transfer-property-into-limited-company-uk` (8 leads), MTD quarterly
+reporting, penalties for not declaring rental income, Section 24 finance costs,
+CGT on transfer to spouse, buy-to-let limited company guide. Every one is
+"I have a decision to make, what do I do".
+
+Reference-stage content (`sa105`, `nrl6`, form codes, rate lookups) produces the
+bad numbers: near-zero CTR on both engines and zero leads. This also explains the
+cross-engine CTR weakness in §1a — reference queries are satisfied by the snippet
+or belong to gov.uk.
+
+**Revised rule: commission decision-stage content, stop commissioning
+reference-stage content.** The distinction is testable from the lead data above,
+so it can be applied to the commissioning brief directly.
+
+## 5c. Geography: measured, four markets
+
+Same 15 commercial terms, DataForSEO Google Ads volume, monthly:
+
+| Keyword | UK vol / CPC | US vol / CPC | AU vol / CPC | CA vol / CPC |
+|---|---:|---:|---:|---:|
+| property accountant(s) | 720 / £17.55 | 720 / $32.32 | 390 / $2.64 | 210 / $3.21 |
+| real estate accountant | 140 / £11.06 | **1,300 / $34.03** | 140 / $2.63 | **590 / $12.13** |
+| rental property tax | 590 / £2.30 | 1,000 / $13.05 | 110 / $1.84 | 110 / $11.63 |
+| landlord tax | **2,900 / £3.87** | 140 / $0.07 | 50 / – | 20 / – |
+| rental property accountant | 110 / £15.24 | 260 / **$87.15** | 40 / $8.84 | 50 / $1.22 |
+| real estate tax accountant | 10 / £5.94 | 320 / $36.01 | 30 / $13.71 | 50 / $10.15 |
+| property tax accountant | 210 / £9.41 | 260 / $41.57 | 210 / $6.09 | 20 / $10.98 |
+| property tax specialist | 210 / £11.42 | 140 / $24.74 | **260 / $4.20** | 10 / – |
+| investment property accountant | 50 / – | 20 / – | **170 / $6.16** | 10 / – |
+| landlord accountant | 390 / £11.87 | 210 / $20.16 | 10 / $20.43 | 10 / – |
+| **TOTAL (15 terms)** | **6,840 / £10.42** | **5,240 / $34.26** | **1,850 / $8.15** | **1,320 / $7.50** |
+
+Reading:
+- **US is the value outlier.** Comparable volume to the UK but **~3x the CPC**
+  (~2.4x after currency). `rental property accountant` at $87.15 CPC is the single
+  most valuable term found in any market. High CPC also signals fierce paid
+  competition, and it is the market where content transfers least: US "property tax"
+  is a state-level ad valorem levy, an entirely different subject, across 50 regimes.
+  The transferable vocabulary is `real estate accountant`, not `property accountant`.
+- **Australia is the best content fit** (negative gearing, CGT discount, land tax map
+  onto the existing model) but the market is ~27% of UK volume at a lower CPC. Note
+  the AU vocabulary shift: `investment property accountant` (170) and `property tax
+  specialist` (260) lead, not `landlord accountant` (10).
+- **Canada is weakest on both** volume and fit; `real estate accountant` (590) carries
+  it almost alone.
+- **The UK is not the small market.** It has the highest total volume of the four, and
+  `landlord tax` at 2,900/mo is bigger than any single term in any other market — and
+  Property currently earns zero impressions for it.
+
+This last point is the decisive one for sequencing: the largest single untapped term
+found across four countries is in the market where we already have the domain, the
+authority, the content system and the buyer.
+
 ## 6. Open questions for the owner
 
 1. **W2 consolidation approval.** Per-cluster sign-off is required before redirects.
