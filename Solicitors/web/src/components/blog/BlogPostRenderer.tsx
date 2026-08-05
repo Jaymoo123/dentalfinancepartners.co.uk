@@ -20,6 +20,10 @@ import { ResourceGate } from "@/components/resources/ResourceGate";
 import { hasPremiumTool } from "@/lib/tools/premium/registry";
 import { resourceForTopic } from "@/lib/tools/premium/resources";
 import { splitContentEarly, splitRemainderForGate, splitContentAtMidScroll } from "@accounting-network/web-shared/content/blog-splits";
+import { PricingPromoCard } from "@accounting-network/web-shared/pricing/PricingPromoCard";
+import { packages } from "@/config/packages";
+
+const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
 
 type RelatedItem = {
   slug: string;
@@ -247,6 +251,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </>
                 )}
               </div>
+
+              <PricingPromoCard
+                fromPrice={cheapestTier.price}
+                blurb="Firm compliance and SRA support handled for a fixed monthly fee. No hourly billing, cancel with 1 month's notice."
+              />
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">

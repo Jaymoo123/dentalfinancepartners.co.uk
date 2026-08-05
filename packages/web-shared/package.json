@@ -107,6 +107,7 @@
     "./components/ServiceTiers": "./components/ServiceTiers.tsx",
     "./pricing/types": "./pricing/types.ts",
     "./pricing/PackagesSection": "./pricing/PackagesSection.tsx",
+    "./pricing/PricingPromoCard": "./pricing/PricingPromoCard.tsx",
     "./components/StatsBar": "./components/StatsBar.tsx"
   },
   "optionalPeerDependencies": {

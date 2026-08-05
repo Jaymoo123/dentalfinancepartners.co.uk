@@ -25,6 +25,10 @@ import {
   splitRemainderForGate,
   splitContentAtMidScroll,
 } from "@accounting-network/web-shared/content/blog-splits";
+import { PricingPromoCard } from "@accounting-network/web-shared/pricing/PricingPromoCard";
+import { packages } from "@/config/packages";
+
+const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -276,6 +280,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </>
                 )}
               </div>
+
+              <PricingPromoCard
+                fromPrice={cheapestTier.price}
+                blurb="Self assessment and limited company compliance handled for a fixed monthly fee. No hourly billing, cancel with 1 month's notice."
+              />
 
               <InlinePrompt
                 source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}

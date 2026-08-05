@@ -34,6 +34,23 @@ export interface PackagesFaqItem {
   a: string;
 }
 
+export interface PackagesQualifierOption {
+  value: string;
+  label: string;
+  /** Tier id (from tiers[].id) this answer recommends. */
+  recommend: string;
+}
+
+/**
+ * Optional situation selector rendered above the tier grid ("How many
+ * properties do you have?"). Choosing an option highlights the recommended
+ * tier and the answer is stored on the signup lead (extras.qualifier).
+ */
+export interface PackagesQualifier {
+  label: string;
+  options: PackagesQualifierOption[];
+}
+
 export interface PackagesConfig {
   /** Consent notice text, same one the site's lead forms use. */
   consentText: string;
@@ -45,4 +62,6 @@ export interface PackagesConfig {
   advisory: AdvisoryProjectConfig;
   /** Extra site-specific FAQ items appended to the shared defaults. */
   faq?: PackagesFaqItem[];
+  /** Optional situation selector above the tiers (see PackagesQualifier). */
+  qualifier?: PackagesQualifier;
 }

@@ -17,6 +17,10 @@ import { TopicOverrideProvider } from "@/components/intent/IntentProvider";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { MiniCapture } from "@/components/forms/MiniCapture";
+import { PricingPromoCard } from "@accounting-network/web-shared/pricing/PricingPromoCard";
+import { packages } from "@/config/packages";
+
+const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -249,6 +253,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </>
                 )}
               </div>
+
+              <PricingPromoCard
+                fromPrice={cheapestTier.price}
+                blurb="Locum, GP and consultant tax handled for a fixed monthly fee. No hourly billing, cancel with 1 month's notice."
+              />
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">

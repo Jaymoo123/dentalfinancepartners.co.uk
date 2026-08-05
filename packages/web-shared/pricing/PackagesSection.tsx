@@ -85,6 +85,10 @@ export function PackagesSection({
   compact?: boolean;
 }) {
   const [selected, setSelected] = useState<SelectedPackage | null>(null);
+  const [qualifier, setQualifier] = useState<string | null>(null);
+  const recommendedTierId = qualifier
+    ? (config.qualifier?.options.find((o) => o.value === qualifier)?.recommend ?? null)
+    : null;
 
   // Bind the single-arm experiment so props.exp = "pkg_pricing_v1:on" stamps
   // every event this visitor fires (same mechanics as makeUseExperiment).
@@ -111,10 +115,43 @@ export function PackagesSection({
 
   return (
     <div ref={viewRef}>
+      {/* Situation qualifier */}
+      {config.qualifier && (
+        <div className="mb-8 sm:mb-10 text-center">
+          <p className="text-sm font-bold text-slate-900">{config.qualifier.label}</p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            {config.qualifier.options.map((opt) => (
+              <button
+                key={opt.value}
+                type="button"
+                aria-pressed={qualifier === opt.value}
+                onClick={() => {
+                  setQualifier(opt.value);
+                  track("custom_interaction", { kind: "pricing_qualifier", value: opt.value });
+                }}
+                className={`rounded-full border-2 px-4 py-2 text-sm font-semibold transition-colors min-h-[40px] ${
+                  qualifier === opt.value
+                    ? "border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white"
+                    : "border-slate-300 bg-white text-slate-700 hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Tier cards */}
       <div className="grid gap-6 sm:gap-8 md:grid-cols-3 items-start">
         {config.tiers.map((tier) => (
-          <TierCard key={tier.id} tier={tier} onChoose={choose} />
+          <TierCard
+            key={tier.id}
+            tier={tier}
+            onChoose={choose}
+            recommended={recommendedTierId === tier.id}
+            dimmed={recommendedTierId !== null && recommendedTierId !== tier.id}
+          />
         ))}
       </div>
       {config.addOnNote && (
@@ -189,7 +226,12 @@ export function PackagesSection({
       )}
 
       {selected && (
-        <SignupModal config={config} pkg={selected} onClose={() => setSelected(null)} />
+        <SignupModal
+          config={config}
+          pkg={selected}
+          qualifier={qualifier}
+          onClose={() => setSelected(null)}
+        />
       )}
     </div>
   );
@@ -198,22 +240,33 @@ export function PackagesSection({
 function TierCard({
   tier,
   onChoose,
+  recommended = false,
+  dimmed = false,
 }: {
   tier: PackageTier;
   onChoose: (pkg: SelectedPackage) => void;
+  /** Highlighted by the situation qualifier. */
+  recommended?: boolean;
+  /** Another tier is recommended; soften this one. */
+  dimmed?: boolean;
 }) {
+  const badge = recommended ? "Recommended for you" : tier.featured ? "Most popular" : null;
   return (
     <div
       className={`relative flex flex-col bg-white border-2 transition-all h-full ${
-        tier.featured
-          ? "border-[var(--brand-primary)] shadow-lg md:scale-105"
-          : "border-slate-200 hover:border-[var(--brand-primary)] hover:shadow-md"
+        recommended
+          ? "border-[var(--brand-primary)] shadow-lg ring-2 ring-[var(--brand-primary)]/30"
+          : tier.featured && !dimmed
+            ? "border-[var(--brand-primary)] shadow-lg md:scale-105"
+            : dimmed
+              ? "border-slate-200 opacity-70 hover:opacity-100 hover:border-[var(--brand-primary)]"
+              : "border-slate-200 hover:border-[var(--brand-primary)] hover:shadow-md"
       }`}
     >
-      {tier.featured && (
+      {badge && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
           <div className="bg-[var(--brand-primary)] px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
-            Most popular
+            {badge}
           </div>
         </div>
       )}
@@ -263,10 +316,12 @@ type Status = "idle" | "loading" | "success" | "error";
 function SignupModal({
   config,
   pkg,
+  qualifier,
   onClose,
 }: {
   config: PackagesConfig;
   pkg: SelectedPackage;
+  qualifier: string | null;
   onClose: () => void;
 }) {
   const [status, setStatus] = useState<Status>("idle");
@@ -344,6 +399,7 @@ function SignupModal({
             package_id: pkg.id,
             ...(pkg.priceValue !== null ? { package_price: pkg.priceValue } : {}),
             ...(pkg.advisory && projectType ? { project_type: projectType } : {}),
+            ...(qualifier ? { qualifier } : {}),
             ...(isQaMode() ? { qa: true } : {}),
           },
         }),
