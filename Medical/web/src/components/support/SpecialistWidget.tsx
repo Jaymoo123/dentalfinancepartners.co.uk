@@ -26,8 +26,8 @@
  *
  * Chip: "Book a free call" -> /contact (no /book path on Medical).
  * Widget capture: email + message via email_only captureMode through submitMedicalLead.
- * Consent: uses siteConfig.leadConsentText (the Reflex-aware line; the widget
- *   IS an enquiry, so this is correct; no "Reflex" added in copy beyond that line).
+ * Consent: uses siteConfig.leadConsentText (the partner-network-aware line; the widget
+ *   IS an enquiry, so this is correct; no partner firm named in copy beyond that line).
  *
  * Storage prefix: ma_ (FROZEN; never dfp_/hd_/ptp_).
  */
@@ -324,7 +324,7 @@ export function SpecialistWidget() {
     ft.onSubmit(2);
     setStatus("loading");
     const topicTag = topic ? ` (${topic.key})` : "";
-    // The widget IS an enquiry, so the Reflex-aware leadConsentText is correct here.
+    // The widget IS an enquiry, so the partner-network-aware leadConsentText is correct here.
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
     const payload = {
       full_name: "",

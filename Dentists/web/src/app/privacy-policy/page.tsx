@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
           <li>
             <strong>To respond to your enquiry:</strong>{" "}
             {partner
-              ? `to deal with your enquiry and to pass it to ${partner.name} so that they can provide the advice you have requested.`
+              ? "to deal with your enquiry and to pass it to a specialist partner firm in our network so that they can provide the advice you have requested."
               : "to deal with your enquiry and provide the advice you have requested."}
           </li>
           <li>
@@ -110,7 +110,7 @@ export default function PrivacyPolicyPage() {
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Our lawful basis</h2>
         <p>
           We rely on your <strong>consent</strong> to process the personal data you provide through our enquiry forms and
-          email sign-ups{partner ? ", and to share your enquiry with our specialist partner firm as described below" : ""}.
+          email sign-ups{partner ? ", and to share your enquiry with our specialist partner network as described below" : ""}.
           You can withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
           processing that took place before you withdrew it.
         </p>
@@ -122,10 +122,11 @@ export default function PrivacyPolicyPage() {
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
         {partner ? (
           <p>
-            When you submit an enquiry, we share the details you provide with our specialist partner firm,{" "}
-            <strong>{partner.name}</strong>, so that they can respond and provide the advice you asked for. {partner.name}{" "}
-            acts as an <strong>independent data controller</strong> of the information it receives, and its own use of your
-            data is governed by its own privacy policy. We share your enquiry only for the purpose of responding to it.
+            When you submit an enquiry, we share the details you provide with a specialist partner firm from our{" "}
+            <strong>specialist partner network</strong>, so that they can respond and provide the advice you asked for. The
+            receiving firm acts as an <strong>independent data controller</strong> of the information it receives, and its
+            own use of your data is governed by its own privacy policy. We share your enquiry only for the purpose of
+            responding to it.
           </p>
         ) : (
           <p>

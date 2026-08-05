@@ -16,7 +16,7 @@ const partner = niche.partner;
 // (each form appends that). Driven by `partner` so the policy and the forms can
 // never drift, and so re-adding a partner later is a one-line config change.
 const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
+  ? `I agree to my details being shared by ${niche.display_name} with its specialist partner network, and to ${niche.display_name} and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
   : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
 
 export const siteConfig = {
@@ -63,7 +63,7 @@ export const siteConfig = {
   leadConsentText,
   // In-house resource-gate consent text. Derived from the display name ONLY (never
   // the partner branch). Resource downloads are NOT shared with the partner firm.
-  // Used by ResourceGate; must NOT contain the partner name "Reflex Accounting".
+  // Used by ResourceGate; must NOT contain any partner firm name.
   resourceConsentText: `I agree to Agency Founder Finance using my details to send me the free resource I have requested and to respond to any enquiry I submit.`,
 } as const;
 

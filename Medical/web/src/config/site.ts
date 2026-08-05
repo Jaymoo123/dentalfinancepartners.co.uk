@@ -16,7 +16,7 @@ const partner = niche.partner;
 // (each form appends that).
 // Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
 const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
+  ? `I agree to my details being shared by ${niche.display_name} with its specialist partner network, and to ${niche.display_name} and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
   : "I agree to be contacted about my enquiry. I understand that Medical Accountants UK may follow up by email and phone over the next 11 days to arrange a free call. I can opt out at any time by replying STOP to any message.";
 
 export const siteConfig = {

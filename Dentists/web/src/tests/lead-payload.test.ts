@@ -3,8 +3,9 @@
  *
  * Verifies:
  *  - calculatorMessagePrefix and exitIntentMessagePrefix produce correct output.
- *  - The consent text includes "Reflex" (the partner name per data-sharing agreement)
- *    and never "DJH" (internal name; must not appear in user-facing copy).
+ *  - The consent text names a generic "specialist partner network" (no named partner
+ *    firm) and never "DJH" or "Reflex" (internal/former names; must not appear in
+ *    user-facing copy).
  *
  * TL-03: pure Node.js module tests only -- no React, no window, no fetch.
  */
@@ -56,20 +57,20 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text includes 'Reflex' (partner name required by data-sharing agreement)", async () => {
-    // The niche.config.json partner is "Reflex Accounting". The siteConfig
-    // leadConsentText must mention the partner so the disclosure is accurate.
-    // We import the site config here rather than duplicating the string in tests
-    // so this test fails immediately when the config changes.
+  it("consent text names a generic 'specialist partner network' (no named partner firm)", async () => {
+    // The consent text must disclose data sharing without naming a specific
+    // partner firm. We import the site config here rather than duplicating the
+    // string in tests so this test fails immediately when the config changes.
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("Reflex");
+    expect(consentText).toContain("partner network");
   });
 
-  it("consent text never contains 'DJH' (copy discipline: internal name must not appear)", async () => {
+  it("consent text never contains 'DJH' or 'Reflex' (copy discipline: no internal/named-partner mentions)", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
     expect(consentText).not.toContain("DJH");
+    expect(consentText).not.toContain("Reflex");
   });
 
   it("consent text mentions 'Dental Finance Partners' brand", async () => {

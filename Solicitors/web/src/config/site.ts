@@ -17,7 +17,7 @@ const partner = niche.partner;
 // never drift, and so re-adding a partner later is a one-line config change.
 // Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
 const leadConsentText = partner
-  ? `I agree to my details being shared by Accounts for Lawyers with our specialist partner firm ${partner.name}, and to both Accounts for Lawyers and ${partner.name} contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
+  ? `I agree to my details being shared by Accounts for Lawyers with its specialist partner network, and to Accounts for Lawyers and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
   : `I agree to Accounts for Lawyers using my details to respond to my enquiry and provide the advice I have requested, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`;
 
 export const siteConfig = {

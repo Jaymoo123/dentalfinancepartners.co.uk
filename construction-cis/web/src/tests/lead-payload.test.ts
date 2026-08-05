@@ -2,8 +2,8 @@
  * Tests for the Trade Tax Specialists lead consent text and payload helpers.
  *
  * Verifies:
- *  - The consent text includes the partner name ("Reflex") per the data-sharing
- *    agreement (owner decision: partner = "Reflex Accounting").
+ *  - The consent text names a generic "specialist partner network" per the
+ *    data-sharing agreement (owner decision: no named partner firm).
  *  - The consent text never contains "DJH" (internal name; must not appear in
  *    user-facing copy on non-Property sites, per estate rule).
  *  - The consent text includes the brand name "Trade Tax Specialists".
@@ -19,10 +19,11 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text includes 'Reflex' (partner name required by data-sharing agreement)", async () => {
+  it("consent text names a generic 'specialist partner network', never 'Reflex'", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("Reflex");
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).not.toContain("Reflex");
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {
@@ -39,7 +40,7 @@ describe("consent text wiring", () => {
 
 // ── Extras qualifiers (moved out of message) ─────────────────────────────────
 
-describe("extras qualifiers — not in message string", () => {
+describe("extras qualifiers - not in message string", () => {
   it("composeLeadMessage with no trade or subbieCount returns just the user message", () => {
     const msg = composeLeadMessage({ message: "I need help with my CIS refund." });
     expect(msg).toBe("I need help with my CIS refund.");

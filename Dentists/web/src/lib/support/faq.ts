@@ -3,7 +3,7 @@
  *
  * 11 Q&As: 3 GENERIC (shown when no topic) + 8 BY_TOPIC.
  * Every answer is short, accurate, HP-traced with tax-year tags, and points
- * to the matching calculator. No em-dashes. No Reflex/DJH mention.
+ * to the matching calculator. No em-dashes. No named partner firm or DJH mention.
  * No chartered/qualified claim. The firm is not a named qualified expert.
  *
  * HP references:

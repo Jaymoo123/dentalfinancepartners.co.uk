@@ -3,7 +3,7 @@
  *
  * Verifies:
  *  - composeLeadMessage and composeHealthCheckSummary produce correct output.
- *  - The consent text includes "Reflex" (the partner name) and never "DJH".
+ *  - The consent text describes a specialist partner network and never names "DJH".
  *
  * TL-03: pure Node.js module tests only -- no React, no window, no fetch.
  */
@@ -130,14 +130,15 @@ describe("composeHealthCheckSummary", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text includes 'Reflex' (partner name required by data-sharing agreement)", async () => {
-    // The niche.config.json partner is "Reflex Accounting". The siteConfig
-    // leadConsentText must mention the partner so the disclosure is accurate.
+  it("consent text describes a specialist partner network (not a named partner)", async () => {
+    // The niche.config.json partner has no firm name. The siteConfig
+    // leadConsentText must describe a generic partner network, never naming a firm.
     // We import the site config here rather than duplicating the string in tests
     // so this test fails immediately when the config changes.
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("Reflex");
+    expect(consentText).not.toContain("Reflex");
+    expect(consentText).toContain("partner network");
   });
 
   it("consent text never contains 'DJH' (copy discipline: internal name must not appear)", async () => {

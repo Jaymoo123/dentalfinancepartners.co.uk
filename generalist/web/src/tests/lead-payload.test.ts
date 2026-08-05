@@ -55,16 +55,17 @@ describe("lead consent text", () => {
 
   // Replicates the partner-path derivation in site.ts.
   const consentText = partner
-    ? `I agree to my details being shared by ${displayName} with our specialist partner firm ${partnerName}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
+    ? `I agree to my details being shared by ${displayName} with its specialist partner network, and to ${displayName} and its partner firms contacting me about my enquiry.`
     : `I agree to ${displayName} using my details to respond to my enquiry and provide the advice I have requested.`;
 
-  it("partner firm is Reflex Accounting", () => {
+  it("partner sharing stays enabled with no named firm", () => {
     expect(partner).not.toBeNull();
-    expect(partner?.name).toBe("Reflex Accounting");
+    expect(partnerName).toBe("");
   });
 
-  it("consent text includes the partner firm name (Reflex)", () => {
-    expect(consentText).toContain("Reflex");
+  it("consent text references the specialist partner network, not a named firm", () => {
+    expect(consentText).toContain("partner network");
+    expect(consentText).not.toContain("Reflex");
   });
 
   it("consent text does NOT contain the string DJH", () => {

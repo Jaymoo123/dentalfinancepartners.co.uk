@@ -71,20 +71,21 @@ describe("lead consent text", () => {
 
   // Replicates the partner-path derivation in site.ts.
   const consentText = partner
-    ? `I agree to my details being shared by ${displayName} with our specialist partner firm ${partnerName}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
+    ? `I agree to my details being shared by ${displayName} with its specialist partner network, and to ${displayName} and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
     : `I agree to ${displayName} using my details to respond to my enquiry and provide the advice I have requested.`;
 
   it("site display name is Agency Founder Finance", () => {
     expect(displayName).toBe("Agency Founder Finance");
   });
 
-  it("partner firm is Reflex Accounting (not DJH)", () => {
+  it("partner is present but unnamed (generic partner network, not DJH)", () => {
     expect(partner).not.toBeNull();
-    expect(partner?.name).toBe("Reflex Accounting");
+    expect(partnerName).toBe("");
   });
 
-  it("consent text includes the partner firm name (Reflex)", () => {
-    expect(consentText).toContain("Reflex");
+  it("consent text references a generic specialist partner network, not a named firm", () => {
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).not.toContain("Reflex");
   });
 
   it("consent text does NOT contain the string DJH", () => {

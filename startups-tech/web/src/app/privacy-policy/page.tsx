@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
           <li>
             <strong>To respond to your enquiry:</strong>{" "}
             {partner
-              ? `to deal with your enquiry and to pass it to ${partner.name} so that they can provide the advice you have requested.`
+              ? "to deal with your enquiry and to pass it to a specialist partner firm in our network so that they can provide the advice you have requested."
               : "to deal with your enquiry and provide the advice you have requested."}
           </li>
           <li>
@@ -125,13 +125,13 @@ export default function PrivacyPolicyPage() {
         <h2 className="text-xl font-semibold text-neutral-900">5. Who we share your information with</h2>
         {partner ? (
           <p>
-            When you submit an enquiry, we share information about you and your enquiry with{" "}
-            <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. As well as the
+            When you submit an enquiry, we share information about you and your enquiry with a specialist partner firm in{" "}
+            our specialist partner network, so that they can contact you and provide the advice you asked for. As well as the
             details you give us (your name, contact details and your enquiry), this includes the result of our checks to
             confirm your contact details are valid, a short summary and priority rating we prepare to help route your enquiry,
             any messages you send us in response, a note of how you used our website in connection with your enquiry, and any
             call time you book. We do this on the basis of our <strong>legitimate interests</strong> (see section 4), and you
-            can object at any time (see section 7). {partner.name} acts as an <strong>independent data controller</strong> of
+            can object at any time (see section 7). The partner firm acts as an <strong>independent data controller</strong> of
             the information it receives, may share it within its own group of companies for the same purpose, and uses it under
             its own{" "}
             {partner.privacyPolicyUrl ? (
