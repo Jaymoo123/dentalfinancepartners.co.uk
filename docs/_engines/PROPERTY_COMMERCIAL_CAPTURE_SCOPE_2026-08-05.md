@@ -1,0 +1,273 @@
+# Property commercial capture: scope, 2026-08-05
+
+Scoping brief for the work identified in `PROPERTY_CEILING_ANALYSIS_2026-08-05.md`.
+All figures pulled fresh 2026-08-05: GSC API, Bing Webmaster API, Supabase
+`web_sessions`/`leads`, DataForSEO Google Ads search volume + SERP advanced.
+
+**Headline: the local-page instinct is wrong, and the data says so clearly. The
+commercial opportunity is national head terms, and the biggest single finding is
+that Google impressions and Bing impressions are not the same asset.**
+
+---
+
+## 1. What we are seeing
+
+### 1a. Bing converts 19x better than Google, per impression
+
+| Engine | Impressions | Clicks | CTR | Avg pos | Leads (Jul) |
+|---|---:|---:|---:|---:|---:|
+| Google (Jul) | 77,466 | 811 | **1.05%** | ~6-8 | 11 |
+| Bing (latest snapshot) | 3,120 | 615 | **19.7%** | 4.6 | 16 |
+
+Bing position buckets: pos 1-3 = 856 impressions / 382 clicks (**44.6% CTR**);
+pos 4-10 = 2,238 / 227 (10.1%). Those are *normal* search CTRs.
+
+This is the most important number in the analysis. Property's content converts
+perfectly well when it is presented as a blue link. Google shows 77k impressions
+and delivers 1%. The content is not the problem, and the rankings are not the
+problem. **Google is not passing the clicks on.**
+
+Bing's queries are also long and conversational (`can uk landlords claim cost of
+mortgage product fee as an expense`, `does mortgage interest go into finance cost
+for self assessment`), which is Copilot-shaped querying rather than keyword search.
+
+### 1b. Local commercial terms have essentially no search volume
+
+DataForSEO Google Ads volumes (UK):
+
+| Keyword | Volume/mo | CPC | Property's pos |
+|---|---:|---:|---:|
+| property accountant / accountants | **720** | **£17.55** | 25.2 |
+| landlord accountant / accountants | **390** | £11.87 | - |
+| accountant for landlords | **260** | £8.63 | - |
+| property tax accountant | 210 | £9.41 | 34.0 |
+| property tax specialist | 210 | £11.42 | - |
+| buy to let accountant | 110 | £13.72 | - |
+| property accountant london | 50 | £16.06 | ~30 |
+| property accountant manchester | 20 | £7.23 | 9.2 |
+| property accountants leeds | **0** | - | 14.8 |
+| landlord tax advice leeds | **0** | - | 12.7 |
+| landlord tax accountant nottingham | **0** | - | 10.4 |
+| rental accountant leeds | **0** | - | 12.6 |
+
+The city terms Property already ranks for have **zero measured volume**. The GSC
+impressions on them (Nottingham 335, Headingley 121, Leicester 117 over 90d) are
+long-tail scatter across many near-zero variants, not a local market.
+
+The volume, and the £17.55 CPC that signals what a lead is worth, sits on the
+**national** head terms. Property ranks 25th for the biggest one.
+
+### 1c. Severe cannibalisation on exactly these commercial terms
+
+Pages competing for local/commercial property-accountant intent:
+
+| Page | Impr (90d) | Queries | Clicks |
+|---|---:|---:|---:|
+| /locations/leeds | 455 | 18 | 1 |
+| /blog/property-tax-accountant-london | 436 | 13 | 0 |
+| /blog/property-accountant-services/property-accountant-nottingham-landlords | 331 | 8 | 0 |
+| /blog/property-accountant-services/manchester-property-accountant | 177 | 8 | 0 |
+| /blog/property-accountant-services/leeds-property-accountant-specialist-tax-se... | 169 | 1 | 0 |
+| /blog/property-accountant-services/property-specialist-accountant-london | 148 | 18 | 0 |
+| /blog/property-accountant-services/london-property-accountant | 125 | 22 | 0 |
+| /blog/property-accountant-services/property-accountant-oxford-guide-local-land... | 113 | 3 | 0 |
+| /blog/property-accountant-services/property-accountant-leicester | 91 | 1 | 0 |
+| /blog/property-accountant-services/peterborough-property-accountant-specialist | 84 | 1 | 0 |
+| /locations/birmingham | 69 | 9 | 0 |
+| /blog/property-accountant-services/best-property-accountant-london | 58 | 6 | 0 |
+| /blog/london-property-accountant | 40 | 9 | 0 |
+| /blog/property-accountant-services/bristol-property-accountant | 25 | 3 | 0 |
+| /blog/property-tax-accountant-manchester | 15 | 3 | 0 |
+| /blog/portfolio-management/property-accountant-london-expert-services | 7 | 3 | 0 |
+
+**London alone has six pages** competing for the same intent (`/blog/property-tax-
+accountant-london`, `.../property-specialist-accountant-london`, `.../london-
+property-accountant`, `.../best-property-accountant-london`, `/blog/london-
+property-accountant`, `/blog/portfolio-management/property-accountant-london-
+expert-services`) plus `/locations/london`. Every one of them earns zero clicks.
+
+There are two parallel systems: `/locations/[slug]` (5 cities, config-driven,
+proper `AccountingService` JSON-LD) and a set of blog posts doing the same job.
+They were never reconciled.
+
+### 1d. Canonicalisation defect: www and non-www both indexed
+
+GSC reports both hostnames as separate ranking URLs:
+
+| URL | Impr | Pos |
+|---|---:|---:|
+| https://www.propertytaxpartners.co.uk/locations/leeds | 805 | 24.1 |
+| https://propertytaxpartners.co.uk/locations/leeds | 140 | 24.7 |
+| https://propertytaxpartners.co.uk/locations/london | 80 | 33.4 |
+| https://propertytaxpartners.co.uk/locations/manchester | 6 | 24.8 |
+
+Signals are being split across two hostnames. This is a live technical defect,
+cheap to fix, and it is suppressing exactly the pages under discussion.
+
+### 1e. The national SERP is winnable, and has no local pack on the main term
+
+`property accountant` (720/mo), SERP composition: 1 AI overview, 19 organic,
+PAA, knowledge graph. **No local pack.** Ranking 1-9: thepropertyaccountant.co.uk,
+ukpropertyaccountants.co.uk, fhpaccounting.co.uk, hwfisher.co.uk, nrla.org.uk,
+**djh.co.uk (rank 6)**, bhp.co.uk, andrewpasser.com, mccaccountants.co.uk.
+
+These are ordinary accountancy firm sites, not media giants. This is beatable.
+
+`landlord accountant` and `accountant for landlords` **do** carry a 3-result local
+pack (ukpropertyaccountants, gorillaaccounting, taxspace/taxd), which caps the
+achievable share on those two but leaves the organic block open.
+
+Note: **DJH, the lead buyer, ranks 6th for the head term.** Worth a conversation
+before optimising hard against them; it does not block the work.
+
+---
+
+## 2. What this indicates we are missing
+
+1. **We have been optimising for the wrong engine.** Every content and meta decision
+   has been made against Google, which delivers 1% CTR. Bing delivers 19.7% and more
+   leads, and has never had a programme pointed at it.
+2. **We have never targeted the money terms.** 720/mo at £17.55 CPC, and the site
+   sits at position 25 with no dedicated page. The content programme has produced
+   ~800 informational posts and no serious commercial page.
+3. **We built a local layer for demand that does not exist**, then duplicated it in
+   blog form, and the two now suppress each other.
+4. **Informational content has hit diminishing returns.** 0.26% CTR at average
+   position 29.8 across 3,049 queries. That is the AI Overview squeeze in first-party
+   data, and it is estate-wide, not Property-specific.
+5. **AI assistants already convert and nothing is aimed at them.** ChatGPT produced
+   4 leads in June and 4 in July from 43 sessions. Copilot, Perplexity, Claude and
+   Gemini all appear in session referrers.
+
+---
+
+## 3. The work
+
+Ordered by expected value per unit of effort. W1-W3 are cheap and high-confidence;
+W4-W5 are the growth bets; W6 makes the rest measurable.
+
+### W1. Fix the canonicalisation split (hours, no content)
+Force a single hostname. Verify canonical tags, `siteConfig.url`, sitemap entries
+and any absolute links all use `www.`; confirm the non-www 301s at the edge. Then
+re-submit affected URLs. This is a defect fix, not a growth play, but it is
+currently splitting signal on the exact pages W2 depends on.
+
+### W2. Consolidate the commercial cluster (the single highest-value action)
+Sixteen pages, ~2,300 impressions, **1 click**. Collapse to a small, strong set:
+
+- **One national money page** targeting `property accountant` / `property accountants`
+  / `property tax accountant` (720 + 210/mo). This is the page that does not exist.
+- **One landlord-facing money page** targeting `landlord accountant` / `accountant
+  for landlords` / `buy to let accountant` (390 + 260 + 110/mo).
+- **Keep `/locations/[slug]` for the five configured cities only.** Do not expand.
+- **Retire or merge the ~11 city blog posts** into the above, redirecting.
+
+**Governance gate:** the locked estate rule is rewrite-only, never collapse
+([[feedback_rewrite_only_no_collapse]]), with consolidation gated behind fresh
+GSC + Bing + guard + Bing veto + per-cluster owner approval
+([[feedback_data_gated_consolidation]]). This scope now satisfies the data half of
+that gate (fresh GSC and Bing are in this document). **Owner approval is still
+required per cluster before any redirect is written.** The Bing veto matters here:
+check each candidate page's Bing position before retiring it, because Bing is the
+converting engine and a page that is dead on Google may be live on Bing.
+
+### W3. Separate winnable from unwinnable impressions, then fix titles
+Do not chase site-wide CTR. Split the impression base first:
+- **Unwinnable**: form-code and HMRC-seeking queries (`sa105` 275 impr pos 7.8 0
+  clicks, `nrl6`, `is230tnrlh1e`). The searcher wants gov.uk. No meta rewrite
+  recovers these; stop counting them as headroom.
+- **Winnable**: commercial and decision-stage queries where Property is present and
+  not chosen. Rewrite titles/descriptions for these only, using the SERP meta engine
+  that already exists.
+
+### W4. Bing-first programme (new, and the biggest under-exploited asset)
+Bing is the best channel in the estate and has no programme. Scope:
+- Make Bing the **primary** optimisation target for commercial pages, with Google
+  as the secondary read.
+- Full IndexNow coverage for Property (the tooling already exists estate-wide;
+  confirm Property is wired and submitting on publish).
+- Pull `GetPageQueryStats` per page, not just site-level, to get a page-level Bing
+  ranking picture equivalent to the GSC one.
+- Bing's conversational query shape argues for question-formed H2s and direct
+  answer blocks, which is the same work as W5.
+
+### W5. AI/GEO programme (already converting, currently accidental)
+ChatGPT is producing ~4 leads/month with zero investment. Scope:
+- Wire `GetAiPerformance` from the Bing client to get Copilot citation counts per
+  page. Note the client's own ASSUMPTION FLAG: the method name is inferred and may
+  need correcting against the live endpoint.
+- Instrument AI referrers as a first-class channel in the analytics layer, so
+  ChatGPT/Perplexity/Claude/Gemini sessions and leads are reportable, not
+  reconstructed by hand as they were for this document.
+- Extend answer-block structure on the commercial and high-intent pages. This is
+  also what Bing rewards, so W4 and W5 share most of their delivery.
+- Existing `llms-full.txt` should be re-checked against the consolidated commercial
+  pages once W2 lands.
+
+### W6. Measurement
+- A repeatable version of the queries in this document, so the commercial-capture
+  position is a dashboard rather than a one-off investigation.
+- Baseline to hold: commercial-bucket impressions/clicks/CTR, Bing CTR by position
+  bucket, AI-referrer sessions and leads, and lead volume by referrer host.
+- Re-read at 28 days. Per [[feedback_time_segmented_analysis_and_qa]], segment by
+  the intervention date rather than comparing raw before/after.
+
+---
+
+## 4. What NOT to do
+
+- **Do not build a local page factory.** The city terms measure zero volume. Twenty
+  more city pages would add twenty more cannibalising near-duplicates chasing traffic
+  that does not exist.
+- **Do not commission more informational blog volume for Property.** 0.26% CTR at
+  average position 29.8. The marginal post is worth close to nothing on Google. If
+  posts are written, write them for Bing/AI answerability, not for Google impressions.
+- **Do not optimise site-wide CTR as a single metric.** It mixes unwinnable form-code
+  impressions with genuinely lost commercial clicks and will produce false progress.
+- **Do not treat Google impression growth as success.** It has been growing steeply
+  while contributing 11 leads.
+
+---
+
+## 5. Geography, revisited
+
+The point that a new market would not start from zero authority is **half right, and
+the half that is wrong is decisive.**
+
+- **Domain authority does transfer within a domain**, so a `/us/` or `/au/` subfolder
+  would inherit it. But `propertytaxpartners.co.uk` is a **ccTLD**. Google hard-geotargets
+  `.co.uk` to the United Kingdom, and this cannot be overridden in Search Console. A
+  US or AU subfolder on a `.co.uk` will not rank in those markets. So the authority you
+  would be leveraging is precisely the authority you cannot use.
+- The alternatives both cost the thing you were trying to save: a **new gTLD domain**
+  starts at zero authority; a **new ccTLD** (`.com.au`) likewise.
+- **What does transfer** regardless of domain: the entire build system, the CRO
+  machinery at full parity, the calculator fleet, the screener, the content pipeline,
+  and cross-linking. That is a real head start, but it is an *operational* one, not a
+  ranking one. It shortens time-to-build, not time-to-rank.
+- **Content transferability differs sharply by market.** US "property tax" is a
+  state-level levy on real estate, an entirely different subject from UK rental income
+  taxation; almost nothing carries over, and it is 50 regimes. Australia is much closer
+  in shape (negative gearing, CGT discount, land tax, a strong landlord-investor
+  segment) and is the better candidate if this is revisited.
+
+**Recommendation: hold geography until W1-W3 have run and been measured.** They are
+cheap, they are high-confidence, and they directly test the thesis that Property's
+commercial capture is broken rather than exhausted. If commercial capture moves, the
+same playbook is worth far more applied to the seven existing sites than to a new
+country. If it does not move, that is important evidence to have *before* committing
+to a market where you would hold no buyer relationship.
+
+---
+
+## 6. Open questions for the owner
+
+1. **W2 consolidation approval.** Per-cluster sign-off is required before redirects.
+   Recommend starting with the London cluster (6 pages, 814 impressions, 0 clicks) as
+   a single gated release, measured before touching the others.
+2. **DJH ranks 6th for the head term.** Optimising hard against your own lead buyer is
+   a commercial question, not a technical one.
+3. **No Google Business Profile, ever** is a standing rule. It is not a blocker for
+   `property accountant` (no local pack) but it does cap `landlord accountant` and
+   `accountant for landlords`, which carry a 3-result pack. Confirm the rule still
+   holds now that it has a measurable cost attached.
