@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/calculators/registry";
-import { LOCATION_TO_BLOG } from "@/lib/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -10,6 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "/services",
+    "/services/property-accountant",
+    "/services/landlord-accountant",
+    "/services/property-tax-advice",
+    "/services/non-resident-landlord",
+    "/landlord-tax",
+    "/section-24",
+    "/making-tax-digital-landlords",
     "/about",
     "/contact",
     "/incorporation",
@@ -41,9 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   for (const loc of siteConfig.locations) {
-    // Skip slugs that 301 to a blog post (already emitted in the posts loop) so
-    // the sitemap lists only 200 canonicals.
-    if (LOCATION_TO_BLOG[loc.slug]) continue;
+    // Every configured city renders live at /locations/<slug> since the city
+    // blog posts were merged in and reversed to 301 here.
     const url = `${base}/locations/${loc.slug}`;
     entries.push({
       url,

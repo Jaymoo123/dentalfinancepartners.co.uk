@@ -1,6 +1,17 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { LOCATION_TO_BLOG } from "@/lib/locations";
+
+// City consolidation 2026-08-05: the five city blog posts were merged into their
+// /locations/<slug> pages and deleted. Their URLs 301 to the location page.
+// These are spread into DUPLICATE_REDIRECTS below, which is already applied to
+// both the flat /blog/<slug> and nested /blog/<category>/<slug> forms.
+const BLOG_TO_LOCATION: Record<string, string> = {
+  "london-property-accountant": "/locations/london",
+  "manchester-property-accountant": "/locations/manchester",
+  "birmingham-property-accountant": "/locations/birmingham",
+  "bristol-property-accountant": "/locations/bristol",
+  "leeds-property-accountant-specialist-tax-services": "/locations/leeds",
+};
 
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "accountant-accounting-services": "property-accountant-services",
@@ -349,8 +360,8 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "landlord-expenses-allowable-uk-2026": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
   // Track 2 CityService cluster-collapse (2026-05-29): 8 weak/duplicate pages merged
   // into 2 canonicals after their query coverage was lifted in first (lossless merge).
-  "property-specialist-accountant-london": "/blog/property-accountant-services/london-property-accountant",
-  "best-property-accountant-london": "/blog/property-accountant-services/london-property-accountant",
+  "property-specialist-accountant-london": "/locations/london",
+  "best-property-accountant-london": "/locations/london",
   "what-services-buy-to-let-accountant": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "online-property-accountant-remote-accounting": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-accountant-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -360,7 +371,7 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "accountants-that-specialise-in-property": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "average-accountant-salary-manchester": "/blog/property-accountant-services/property-accountant-salary-complete-guide",
   "best-property-accountant-near-me": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
-  "best-property-accountants-london": "/blog/property-accountant-services/london-property-accountant",
+  "best-property-accountants-london": "/locations/london",
   "best-property-accountants-uk": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   "buy-to-let-limited-company-mortgage": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options",
   "capital-gains-tax-property-sale-uk-2026": "/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances",
@@ -382,12 +393,12 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "landlord-tax-accountant-when-you-need-professional-help": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   "landlord-tax-return-self-assessment": "/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026",
   "local-property-accountant-expert-services": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
-  "london-property-accountants-expert-services": "/blog/property-accountant-services/london-property-accountant",
+  "london-property-accountants-expert-services": "/locations/london",
   "making-tax-digital-landlords-april-2026": "/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline",
   "mortgage-interest-tax-relief-changes-landlords": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
   "property-accountant-advice-complete-guide": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accountant-birmingham": "/blog/property-accountant-services/birmingham-property-accountant",
-  "property-accountant-bristol": "/blog/property-accountant-services/bristol-property-accountant",
+  "property-accountant-birmingham": "/locations/birmingham",
+  "property-accountant-bristol": "/locations/bristol",
   "property-accountant-cost-complete-guide": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
   "property-accountant-cost-guide": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
   "property-accountant-fees-complete-guide": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
@@ -399,17 +410,17 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "property-accountant-jobs-manchester": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "property-accountant-jobs-near-me": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "property-accountant-jobs-remote": "/blog/property-accountant-services/property-accountant-jobs-uk",
-  "property-accountant-london-expert-services": "/blog/property-accountant-services/london-property-accountant",
+  "property-accountant-london-expert-services": "/locations/london",
   "property-accountant-london-jobs": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "property-accountant-responsibilities-complete-guide": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-accountant-salary-london": "/blog/property-accountant-services/property-accountant-salary-complete-guide",
   "property-accountant-salary-uk-guide": "/blog/property-accountant-services/property-accountant-salary-complete-guide",
   "property-accountant-services-expert-solutions": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accountants-manchester": "/blog/property-accountant-services/manchester-property-accountant",
+  "property-accountants-manchester": "/locations/manchester",
   "property-accountants-near-me": "/blog/property-accountant-services/property-accountant-near-me",
   "property-accounting-course-uk-expert-services": "/blog/property-accountant-services/how-to-become-property-accountant",
   "property-accounting-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accounting-services-london": "/blog/property-accountant-services/london-property-accountant",
+  "property-accounting-services-london": "/locations/london",
   "property-bookkeeping-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-disposal-tax-planning-minimize-cgt": "/blog/capital-gains-tax/reduce-cgt-property-disposal-uk",
   "property-financial-planning-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -420,9 +431,9 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "property-self-assessment-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-specialist-accountant-near-me": "/blog/property-accountant-services/property-accountant-near-me",
   "property-specialist-tax-accountant-uk": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-tax-accountant-birmingham": "/blog/property-accountant-services/birmingham-property-accountant",
-  "property-tax-accountant-london": "/blog/property-accountant-services/london-property-accountant",
-  "property-tax-accountant-manchester": "/blog/property-accountant-services/manchester-property-accountant",
+  "property-tax-accountant-birmingham": "/locations/birmingham",
+  "property-tax-accountant-london": "/locations/london",
+  "property-tax-accountant-manchester": "/locations/manchester",
   "property-tax-accountant-near-me": "/blog/property-accountant-services/property-accountant-near-me",
   "property-tax-advice-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-tax-planning-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -437,7 +448,7 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "section-24-vs-incorporation-tax-savings": "/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax",
   "senior-property-accountant-london": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "stamp-duty-buy-to-let-surcharge-explained": "/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge",
-  "uk-property-accountants-london-expert-services": "/blog/property-accountant-services/london-property-accountant",
+  "uk-property-accountants-london-expert-services": "/locations/london",
   "when-to-incorporate-property-portfolio-timing": "/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio",
   "why-do-we-need-accountants-property-investors": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   // Consolidated dead posts → keepers
@@ -465,6 +476,7 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "report-property-sale-hmrc-60-days-guide": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
   // Track 2 Phase 3 REDIRECT bundle (2026-05-24) — B2-A3 single-page collapse to BTL CGT calculation canonical (Cannib Index §6 cross-source pair)
   "capital-gains-tax-selling-rental-property-uk": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide",
+  ...BLOG_TO_LOCATION,
 };
 
 const CANONICAL_HOST = "www.propertytaxpartners.co.uk";
@@ -481,16 +493,6 @@ export function middleware(request: NextRequest) {
     url.host = CANONICAL_HOST;
     url.protocol = "https";
     return NextResponse.redirect(url, 308);
-  }
-
-  // Redirect /locations/[city] to corresponding blog post
-  const locationMatch = pathname.match(/^\/locations\/([^\/]+)$/);
-  if (locationMatch) {
-    const city = locationMatch[1];
-    const blogTarget = LOCATION_TO_BLOG[city];
-    if (blogTarget) {
-      return NextResponse.redirect(new URL(blogTarget, request.url), 301);
-    }
   }
 
   // Redirect old flat /blog/[slug] to nested /blog/[category]/[slug]

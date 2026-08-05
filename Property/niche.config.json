@@ -59,6 +59,22 @@
   ],
   "footer_links": [
     {
+      "label": "Landlord tax guide",
+      "href": "/landlord-tax"
+    },
+    {
+      "label": "Section 24 explained",
+      "href": "/section-24"
+    },
+    {
+      "label": "Making Tax Digital",
+      "href": "/making-tax-digital-landlords"
+    },
+    {
+      "label": "Property tax rates",
+      "href": "/property-tax-rates"
+    },
+    {
       "label": "Locations",
       "href": "/locations"
     },

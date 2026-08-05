@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -7,9 +8,9 @@ import { siteConfig } from "@/config/site";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
 
 export const metadata: Metadata = {
-  title: "Property Accountant Services UK | Specialist Tax Advice for Landlords",
+  title: "Property Accounting Services | Property Tax Partners",
   description:
-    "Specialist property accountant for UK landlords: Section 24 planning, MTD compliance, incorporation analysis and portfolio reporting. Fixed fees.",
+    "The services we offer: accounting and tax for landlords and property investors, incorporation analysis, non-resident landlord returns and free calculators.",
   alternates: {
     canonical: `${siteConfig.url}/services`,
     languages: {
@@ -18,16 +19,72 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Property Accountant Services UK | Specialist Tax Advice for Landlords",
-    description: "Specialist property accountant for UK landlords. Section 24, MTD, incorporation. Fixed fees, free consultation.",
+    title: "Property Accounting Services | Property Tax Partners",
+    description: "Everything we do, in one place: services for landlords and investors, incorporation analysis, non-resident returns and free calculators.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Property Accountant Services UK | Tax Advice for Landlords",
-    description: "Specialist property accountant for UK landlords. Section 24, MTD, incorporation. Fixed fees, free consultation.",
+    title: "Property Accounting Services | Property Tax Partners",
+    description: "Everything we do, in one place: services for landlords and investors, incorporation analysis, non-resident returns and free calculators.",
   },
+};
+
+const hub = [
+  {
+    href: "/services/property-accountant",
+    title: "Property accountant",
+    description: "Accounts, returns and year-round tax work for people whose income comes from property.",
+  },
+  {
+    href: "/services/landlord-accountant",
+    title: "Landlord accountant",
+    description: "Rental accounts, Self Assessment and MTD for landlords holding property personally.",
+  },
+  {
+    href: "/services/property-tax-advice",
+    title: "Property tax advice",
+    description: "One-off advice on a decision: a purchase, a disposal, a restructure or a Section 24 problem.",
+  },
+  {
+    href: "/services/non-resident-landlord",
+    title: "Non-resident landlord",
+    description: "NRL scheme registration, UK returns and disposals for landlords living outside the UK.",
+  },
+  {
+    href: "/incorporation",
+    title: "Incorporation analysis",
+    description: "Whether moving your portfolio into a company pays, with the CGT and SDLT costs modelled.",
+  },
+  {
+    href: "/calculators",
+    title: "Free calculators",
+    description: "Run the numbers yourself first: Section 24, incorporation cost, MTD, yield and more.",
+  },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      name: "Property accounting services",
+      itemListElement: hub.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.title,
+        url: `${siteConfig.url}${item.href}`,
+      })),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+        { "@type": "ListItem", position: 2, name: "Services", item: `${siteConfig.url}/services` },
+      ],
+    },
+  ],
 };
 
 const services = [
@@ -72,6 +129,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="relative h-[300px] sm:h-[350px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=85"
@@ -89,16 +147,41 @@ export default function ServicesPage() {
               ]}
             />
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
-              Property accounting services for UK landlords
+              Our services
             </h1>
             <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
-              From free calculators to full-service accounting. Choose your level of support.
+              Everything we do, in one place. Start with a free calculator or go straight to the service you need.
             </p>
           </div>
         </div>
       </section>
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">Where to start</h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+              Each page below explains what the work covers, who it suits and how an engagement runs. If you are not
+              sure which fits, book a call and we will point you at the right one.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {hub.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block bg-white border-2 border-slate-200 p-8 transition-all hover:border-emerald-600 hover:shadow-md"
+              >
+                <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+                <p className="mt-3 text-base leading-relaxed text-slate-600">{item.description}</p>
+                <span className="mt-6 inline-block text-sm font-bold text-emerald-700">Read more</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pb-12 sm:pb-16 lg:pb-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">Choose your service tier</h2>
@@ -115,7 +198,7 @@ export default function ServicesPage() {
       <section className="bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">What we specialise in</h2>
+            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">What the work covers</h2>
             <p className="mt-4 text-lg text-slate-600">
               Property-only focus means we understand Section 24, MTD, and incorporation inside out.
             </p>
