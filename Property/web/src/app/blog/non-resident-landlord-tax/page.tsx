@@ -8,7 +8,7 @@ const categoryName = "Non-Resident Landlord Tax";
 const categorySlug = "non-resident-landlord-tax";
 
 export const metadata: Metadata = {
-  title: `${categoryName}`,
+  title: "Non-Resident Landlord Tax Guides",
   description: "UK tax for non-resident landlords and overseas property investors: NRL scheme, withholding tax, non-resident CGT, double taxation, ATED and compliance.",
   alternates: {
     canonical: `${siteConfig.url}/blog/${categorySlug}`,
@@ -96,13 +96,13 @@ export default function NonResidentLandlordTaxPage() {
               The Non-Resident Landlord (NRL) scheme requires UK letting agents and tenants to deduct basic rate tax (20%) from rental payments to landlords whose usual place of abode is outside the UK. The deduction is made at source and paid to HMRC quarterly, unless the landlord has applied to receive rent gross through HMRC&apos;s NRL1 approval process.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Obtaining NRL approval to receive rent without deduction does not remove the tax liability — it simply shifts the payment obligation to self-assessment. Most non-resident landlords with good compliance history can obtain approval, which improves cash flow and simplifies rent collection. The landlord must still file a UK self-assessment return declaring the rental income and any allowable deductions.
+              Obtaining NRL approval to receive rent without deduction does not remove the tax liability, it simply shifts the payment obligation to self-assessment. Most non-resident landlords with good compliance history can obtain approval, which improves cash flow and simplifies rent collection. The landlord must still file a UK self-assessment return declaring the rental income and any allowable deductions.
             </p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Non-Resident Capital Gains Tax</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Since April 2015, non-UK residents have been liable to CGT on disposals of UK residential property. From April 2019, this was extended to all UK property — including commercial property and indirect disposals through shares in property-rich companies. The gain is calculated from the date of acquisition or from 5 April 2015 (whichever is later), unless the taxpayer elects to use the original acquisition cost.
+              Since April 2015, non-UK residents have been liable to CGT on disposals of UK residential property. From April 2019, this was extended to all UK property, including commercial property and indirect disposals through shares in property-rich companies. The gain is calculated from the date of acquisition or from 5 April 2015 (whichever is later), unless the taxpayer elects to use the original acquisition cost.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Non-resident CGT must be reported within 60 days of completion using the same CGT on UK property service as UK residents. Non-residents can claim the annual exempt amount (£3,000 for 2026/27) and most of the same reliefs as UK residents, including principal private residence relief where the property was their main home during a period of UK residence.
@@ -111,7 +111,7 @@ export default function NonResidentLandlordTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Double Taxation and Treaty Relief</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Non-resident landlords may face tax on the same rental income in both the UK and their country of residence. The UK has double taxation agreements with over 130 countries, most of which give the UK the primary right to tax income from UK property. The landlord&apos;s country of residence then provides relief — either by exempting the UK income or by giving a credit for UK tax paid.
+              Non-resident landlords may face tax on the same rental income in both the UK and their country of residence. The UK has double taxation agreements with over 130 countries, most of which give the UK the primary right to tax income from UK property. The landlord&apos;s country of residence then provides relief, either by exempting the UK income or by giving a credit for UK tax paid.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               The mechanism varies by country. Some treaties use the exemption method (the income is simply excluded from the home country tax base), while others use the credit method (the income is included but a credit is given for UK tax already paid). Understanding which treaty applies and how relief is claimed in both jurisdictions is essential to avoid paying tax twice on the same income.

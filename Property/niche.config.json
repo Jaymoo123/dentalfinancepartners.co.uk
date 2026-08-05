@@ -41,6 +41,10 @@
       "href": "/incorporation"
     },
     {
+      "label": "Landlord Tax",
+      "href": "/landlord-tax"
+    },
+    {
       "label": "Calculators",
       "href": "/calculators"
     },
@@ -59,6 +63,22 @@
   ],
   "footer_links": [
     {
+      "label": "Property accountant",
+      "href": "/services/property-accountant"
+    },
+    {
+      "label": "Landlord accountant",
+      "href": "/services/landlord-accountant"
+    },
+    {
+      "label": "Property tax advice",
+      "href": "/services/property-tax-advice"
+    },
+    {
+      "label": "Non-resident landlords",
+      "href": "/services/non-resident-landlord"
+    },
+    {
       "label": "Landlord tax guide",
       "href": "/landlord-tax"
     },
@@ -73,6 +93,10 @@
     {
       "label": "Property tax rates",
       "href": "/property-tax-rates"
+    },
+    {
+      "label": "Landlord tax index",
+      "href": "/research/landlord-tax-index"
     },
     {
       "label": "Locations",

@@ -11,7 +11,7 @@ const URL = `${siteConfig.url}${PATH}`;
 const BLOG = "/blog/making-tax-digital-mtd";
 
 export const metadata: Metadata = {
-  title: "Making Tax Digital for Landlords: 2026 Rules and Deadlines",
+  title: "Making Tax Digital for Landlords: Rules and Deadlines",
   description:
     "MTD for Income Tax for UK landlords: the £50,000 threshold from April 2026, £30,000 from April 2027, quarterly updates, digital records, penalties and what to do now.",
   alternates: { canonical: URL },
@@ -346,9 +346,13 @@ export default function MakingTaxDigitalLandlordsPage() {
                 <Link href="/blog/section-24-and-tax-relief" className="text-emerald-700 font-semibold underline">
                   Section 24 finance cost restriction
                 </Link>{" "}
-                and your capital allowances all work exactly as before. MTD changes when HMRC sees your numbers and how
-                you submit them. The quarterly updates are categorised summaries of income and expenses, not tax
-                calculations, so nothing becomes payable four times a year. Payment dates are untouched.
+                and your capital allowances all work exactly as before, all covered in our{" "}
+                <Link href="/landlord-tax" className="text-emerald-700 font-semibold underline">
+                  landlord tax guide
+                </Link>
+                . MTD changes when HMRC sees your numbers and how you submit them. The quarterly updates are
+                categorised summaries of income and expenses, not tax calculations, so nothing becomes payable four
+                times a year. Payment dates are untouched.
               </p>
               <p>
                 The practical shift is that bookkeeping stops being an annual January job. A landlord who reconciles

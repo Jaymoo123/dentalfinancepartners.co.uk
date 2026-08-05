@@ -172,7 +172,7 @@ const whySpecialist = [
   "Most high street accountants see one or two non-resident landlords a year. The gross approval process, the NRL6 reconciliation and the disregarded income calculation are the parts they get wrong most often.",
   "The 60-day disposal return sits outside the normal Self Assessment cycle, which is why it is the single most missed deadline for overseas owners.",
   "Treaty credit only works if both filings are prepared with knowledge of the other. We work with your overseas adviser rather than around them.",
-  "Section 24 still restricts mortgage interest relief to a basic rate reduction, currently 20% and rising to 22% from April 2027. Where the personal allowance is not available, the interaction pushes effective rates higher than most people expect.",
+  "Section 24 still restricts mortgage interest relief to a basic rate reduction, currently 20% and rising to 22% from April 2027, when property income also moves to separate rates of 22%, 42% and 47%. Where the personal allowance is not available, the interaction pushes effective rates higher than most people expect.",
 ];
 
 export default function NonResidentLandlordPage() {
@@ -375,7 +375,8 @@ export default function NonResidentLandlordPage() {
               <p>
                 Mortgage interest relief is the other item that bites. Since Section 24 finished phasing in, interest is
                 not deductible from rental profit at all. It gives a basic rate tax reduction instead, currently{" "}
-                <strong>20%</strong> and rising to <strong>22% from April 2027</strong>. Where you have no personal
+                <strong>20%</strong> and rising to <strong>22% from April 2027</strong>, when property income itself
+                is taxed at <strong>22%, 42% and 47%</strong>. Where you have no personal
                 allowance and a geared portfolio, the effective rate on your UK rent can be higher than a landlord at
                 home would pay on the same property. Our{" "}
                 <Link href="/calculators/section-24-calculator" className="text-emerald-700 underline underline-offset-2 hover:text-emerald-800">

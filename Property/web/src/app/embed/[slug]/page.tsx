@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: tool.name,
     description: tool.oneLiner,
-    // Embed surface — do not index (the canonical, indexable version lives at
+    // Embed surface, do not index (the canonical, indexable version lives at
     // /calculators/<slug>).
     robots: { index: false, follow: false },
     alternates: { canonical: `${siteConfig.url}/calculators/${tool.slug}` },

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const whoItHits = [
   {
     title: "Higher and additional-rate taxpayers",
-    body: "If your total income takes you past £50,270, you pay 40% or 45% on the top of your rental profit but only get relief on finance costs at 20%. That 20 to 25 point gap is the whole of Section 24. From April 2027 the gap narrows to 18 or 23 points as the reducer rises to 22%.",
+    body: "If your total income takes you past £50,270, you pay 40% or 45% on the top of your rental profit but only get relief on finance costs at 20%. That 20 to 25 point gap is the whole of Section 24. It does not narrow in April 2027: the reducer rises to 22%, but property income moves to its own 22%, 42% and 47% rates at the same time, so the gap stays 20 or 25 points.",
   },
   {
     title: "Leveraged portfolios on interest-only debt",
@@ -75,7 +75,7 @@ const faqs = [
   {
     question: "What is the Section 24 tax reducer worth in 2026/27?",
     answer:
-      "20% of your allowable finance costs, applied as a credit against your income tax liability. From April 2027 the reducer rises to 22% under Finance Act 2026, which was enacted on 18 March 2026. The reducer is capped at 20% of the lowest of your finance costs, your property profits, and your adjusted total income above the personal allowance.",
+      "20% of your allowable finance costs, applied as a credit against your income tax liability. From April 2027 the reducer rises to 22% under Finance Act 2026, which was enacted on 18 March 2026, because it tracks the new 22% basic rate on property income (property income is taxed at 22%, 42% and 47% from 6 April 2027 in England, Wales and Northern Ireland). The reducer is capped at 20% of the lowest of your finance costs, your property profits, and your adjusted total income above the personal allowance, and at 22% of that lowest figure from 2027/28.",
   },
   {
     question: "Does Section 24 apply to limited companies?",
@@ -90,7 +90,7 @@ const faqs = [
   {
     question: "Is Section 24 being repealed or reversed?",
     answer:
-      "No repeal has been announced. Finance Act 2026 raises the reducer from 20% to 22% from April 2027, which softens the effect for higher-rate taxpayers but keeps the mechanism intact. Plan on the restriction staying, not on it being withdrawn.",
+      "No repeal has been announced. Finance Act 2026 raises the reducer from 20% to 22% from April 2027, but only because property income moves to separate 22%, 42% and 47% rates on the same day, so a higher-rate landlord is worse off overall, not better. The mechanism is intact. Plan on the restriction staying, not on it being withdrawn.",
   },
   {
     question: "What happens if my finance costs are more than my rental profit?",
@@ -176,7 +176,8 @@ export default function Section24Page() {
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl leading-relaxed text-white">
               You pay tax on rent you never keep. Section 24 taxes your rental income before your mortgage interest,
-              then hands back relief at 20%, rising to 22% in April 2027.
+              then hands back relief at 20%, rising to 22% in April 2027 when property income gets its own 22%, 42%
+              and 47% rates.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
@@ -218,7 +219,11 @@ export default function Section24Page() {
               <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
                 Repairs, insurance, letting agent fees, ground rent, service charges, accountancy and the replacement
                 of domestic items relief are untouched. They still come off rental income in the ordinary way. Only
-                the finance side moved.
+                the finance side moved. Section 24 is one part of a wider picture, our{" "}
+                <Link href="/landlord-tax" className="text-emerald-700 font-semibold underline">
+                  landlord tax guide
+                </Link>{" "}
+                covers every tax that touches a let property.
               </p>
             </div>
 
@@ -228,9 +233,13 @@ export default function Section24Page() {
               </h2>
               <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
                 For 2026/27 the reducer is <strong>20%</strong> of your allowable finance costs. From April 2027 it
-                rises to <strong>22%</strong> under Finance Act 2026, enacted on 18 March 2026. That is the first
-                real softening of the regime since it was introduced, and it is worth 2% of your annual interest bill
-                every year.
+                rises to <strong>22%</strong> under Finance Act 2026, enacted on 18 March 2026. Read that on its own
+                and it looks like the first softening of the regime since it was introduced. It is not. The reducer
+                rises because property income itself moves to separate rates of <strong>22%, 42% and 47%</strong>
+                from 6 April 2027 in England, Wales and Northern Ireland, and the reducer is fixed to the property
+                basic rate. A basic-rate landlord is neutral, 22% relief against 22% tax. A higher-rate landlord
+                gains 2% of the interest bill and loses 2% of the whole property profit, which is a net cost
+                wherever profit before finance costs exceeds the interest.
               </p>
               <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
                 The reducer is capped. It is calculated on the lowest of three figures: your finance costs for the
@@ -253,7 +262,7 @@ export default function Section24Page() {
                       <tr>
                         <th className="py-2 pr-4">Step</th>
                         <th className="py-2 pr-4">2026/27 (20%)</th>
-                        <th className="py-2">2027/28 (22%)</th>
+                        <th className="py-2">2027/28 (22/42/47, reducer 22%)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200">
@@ -265,7 +274,7 @@ export default function Section24Page() {
                       <tr>
                         <td className="py-2 pr-4">Income tax before the reducer</td>
                         <td className="py-2 pr-4">£20,232</td>
-                        <td className="py-2">£20,232</td>
+                        <td className="py-2">£21,072</td>
                       </tr>
                       <tr>
                         <td className="py-2 pr-4">Finance cost reducer</td>
@@ -275,16 +284,24 @@ export default function Section24Page() {
                       <tr className="font-bold text-slate-900">
                         <td className="py-2 pr-4">Income tax payable</td>
                         <td className="py-2 pr-4">£16,632</td>
-                        <td className="py-2">£16,272</td>
+                        <td className="py-2">£17,112</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
-                  Under the old rules the same landlord would have declared £24,000 of profit, total income of
-                  £64,000 and a tax bill of £13,032. Section 24 costs £3,600 a year in 2026/27 and £3,240 in
-                  2027/28, on identical cash flows. The figures use England and Northern Ireland rates with the
-                  standard personal allowance and no other reliefs, and Scottish rate bands change the arithmetic.
+                  The 2027/28 column is higher because the £42,000 of restricted profit is taxed at the property
+                  rates: £10,270 of it fills what is left of the basic band at 22% (£2,259) and £31,730 falls at 42%
+                  (£13,327), while the salary is still taxed at 20%. The reducer rises by £360 and the tax on the
+                  property rises by £840, so the bill goes up £480.
+                </p>
+                <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
+                  Under the old rules the same landlord would have declared £24,000 of profit and paid £13,032 in
+                  2026/27, or £13,512 in 2027/28 at the property rates. Section 24 costs <strong>£3,600 a year in
+                  both</strong>, on identical cash flows: the 20 point wedge between the 42% rate and the 22%
+                  reducer is exactly the wedge between 40% and 20% today. The figures use England, Wales and
+                  Northern Ireland rates with the standard personal allowance and no other reliefs. Scotland is
+                  outside the new property rates and Scottish bands change the arithmetic.
                 </p>
               </div>
               <p className="mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
@@ -387,7 +404,12 @@ export default function Section24Page() {
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
               There is no way to opt out of the restriction while holding residential property personally. What you
               can change is the rate applied to the profit, who receives that profit, and the structure holding the
-              asset. Four routes do most of the work.
+              asset. Four routes do most of the work. If you want the options modelled against your own figures
+              rather than worked through here in general terms, our{" "}
+              <Link href="/services/property-tax-advice" className="text-emerald-700 font-semibold underline">
+                property tax advice service
+              </Link>{" "}
+              reviews and prices them.
             </p>
 
             <div className="mt-8 space-y-8">
@@ -485,13 +507,18 @@ export default function Section24Page() {
               What changes in April 2027, and should you wait for it?
             </h2>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
-              Finance Act 2026 lifts the reducer from 20% to 22% for tax years from April 2027. Nothing else about
-              the mechanism changes: the interest is still added back, the cap still applies, and the carry-forward
-              still works the same way. On a £20,000 annual interest bill the change is worth £400 a year.
+              Finance Act 2026 gives property income its own rates of 22%, 42% and 47% from 6 April 2027 in England,
+              Wales and Northern Ireland, and lifts the reducer to the new 22% basic rate at the same time. Scotland
+              is carved out for 2027/28 and Scottish taxpayers keep Holyrood-set rates. Nothing else about the
+              mechanism changes: the interest is still added back, the cap still applies, and the carry-forward still
+              works the same way. On a £20,000 annual interest bill the higher reducer is worth £400, but a
+              higher-rate landlord also pays 2% more on every pound of restricted property profit, so unless your
+              profit before finance costs is smaller than your interest bill you end up paying more.
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
-              That is real money and it is not a reason to defer a structural decision. If incorporation stacked up
-              at a 20% reducer, a 22% reducer moves the break-even by a matter of months, not years. The larger
+              So there is nothing to wait for. If incorporation stacked up at a 20% reducer it stacks up slightly
+              harder from April 2027, because the wedge is unchanged at 20 points while the rate on retained
+              property profit rises. The larger
               variables are your marginal rate, your loan to value, how long you intend to hold, and the capital
               gains and stamp duty cost of moving. Our{" "}
               <Link
@@ -540,7 +567,10 @@ export default function Section24Page() {
             <ul className="mt-8 space-y-3 sm:space-y-4 text-sm sm:text-base text-slate-200">
               <li className="flex items-start gap-3 sm:gap-4">
                 <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
-                <span>The actual annual cost of the restriction to you, at 20% now and 22% from April 2027</span>
+                <span>
+                  The actual annual cost of the restriction to you, at 20% now and 22% from April 2027 against the
+                  new 22/42/47 property rates
+                </span>
               </li>
               <li className="flex items-start gap-3 sm:gap-4">
                 <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>

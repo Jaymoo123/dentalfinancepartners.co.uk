@@ -94,7 +94,7 @@ export default function CapitalGainsTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">CGT on Property Disposals</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              When you sell a residential property that is not your main home, capital gains tax applies to the profit — the difference between the sale price and your acquisition cost (including allowable purchase costs, improvement expenditure, and selling fees). For the 2026/27 tax year, residential property gains are taxed at 18% for basic-rate taxpayers and 24% for higher and additional-rate taxpayers.
+              When you sell a residential property that is not your main home, capital gains tax applies to the profit, the difference between the sale price and your acquisition cost (including allowable purchase costs, improvement expenditure, and selling fees). For the 2026/27 tax year, residential property gains are taxed at 18% for basic-rate taxpayers and 24% for higher and additional-rate taxpayers.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               The rate that applies depends on your total taxable income in the year of disposal. If the gain, when added to your other income, falls within the basic-rate band, the portion within that band is taxed at 18% and the remainder at 24%. Timing a disposal to fall in a lower-income year can therefore reduce the effective CGT rate.
@@ -103,7 +103,7 @@ export default function CapitalGainsTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Principal Private Residence Relief</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Principal private residence (PPR) relief exempts gains on the sale of your main home from CGT entirely. If you have lived in the property as your only or main residence for the entire period of ownership, the full gain is exempt. Where you lived in the property for part of the ownership period, the gain is apportioned — and the final nine months of ownership are always treated as deemed occupation, regardless of whether you lived there.
+              Principal private residence (PPR) relief exempts gains on the sale of your main home from CGT entirely. If you have lived in the property as your only or main residence for the entire period of ownership, the full gain is exempt. Where you lived in the property for part of the ownership period, the gain is apportioned, and the final nine months of ownership are always treated as deemed occupation, regardless of whether you lived there.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Nominating which property is your main residence is critical for landlords who own multiple properties. HMRC allows a nomination within two years of acquiring a second property. Strategic nomination can maximise PPR relief on the property with the largest expected gain.
@@ -112,7 +112,7 @@ export default function CapitalGainsTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Lettings Relief</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Lettings relief applies where a property that qualifies for PPR relief has also been let as residential accommodation. Since April 2020, lettings relief is only available if you shared occupation of the property with your tenant — simply letting out a former home no longer qualifies.
+              Lettings relief applies where a property that qualifies for PPR relief has also been let as residential accommodation. Since April 2020, lettings relief is only available if you shared occupation of the property with your tenant, simply letting out a former home no longer qualifies.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Where it does apply, the relief is capped at the lower of: £40,000, the amount of PPR relief given, or the gain attributable to the letting period. In practice, this relief now benefits very few landlords, but it remains relevant for those who let rooms in their own home or live in part of a property they also let.
@@ -121,7 +121,7 @@ export default function CapitalGainsTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Annual Exempt Amount and Tax-Free Allowance</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Every individual has an annual exempt amount (AEA) for capital gains — currently £3,000 for the 2026/27 tax year. Gains up to this threshold are tax-free. The AEA cannot be carried forward to future years, so if you do not use it, it is lost.
+              Every individual has an annual exempt amount (AEA) for capital gains, currently £3,000 for the 2026/27 tax year. Gains up to this threshold are tax-free. The AEA cannot be carried forward to future years, so if you do not use it, it is lost.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               For couples who jointly own investment properties, each person has their own £3,000 AEA, giving a combined £6,000 exemption. Transferring a share of a property to a spouse before sale (which is a no-gain, no-loss event) can therefore double the tax-free allowance available on the disposal.
@@ -130,7 +130,7 @@ export default function CapitalGainsTaxPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">CGT Reporting and the 60-Day Rule</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Since April 2020, UK residents who sell a residential property at a gain must report the disposal and make a payment on account of CGT within 60 days of completion. This applies to all residential property disposals where CGT is due — including buy-to-let sales, inherited properties, and second homes.
+              Since April 2020, UK residents who sell a residential property at a gain must report the disposal and make a payment on account of CGT within 60 days of completion. This applies to all residential property disposals where CGT is due, including buy-to-let sales, inherited properties, and second homes.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               The 60-day report is submitted through HMRC&apos;s online CGT on UK property service, separate from the self-assessment system. Failure to report within 60 days triggers late filing penalties under the same points-based regime used for other HMRC obligations. The disposal must still be included on your self-assessment return for the relevant tax year, with credit given for any payment on account already made.
@@ -185,7 +185,7 @@ export default function CapitalGainsTaxPage() {
             Need CGT Planning Advice?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
-            Capital gains tax on property requires careful planning — from timing disposals to maximising reliefs. Our specialist property tax accountants can calculate your exact liability, identify available reliefs, and help you structure disposals tax-efficiently.
+            Capital gains tax on property requires careful planning, from timing disposals to maximising reliefs. Our specialist property tax accountants can calculate your exact liability, identify available reliefs, and help you structure disposals tax-efficiently.
           </p>
           <div className="mt-8">
             <LeadForm redirectOnSuccess={false} submitLabel="Request CGT Consultation" />

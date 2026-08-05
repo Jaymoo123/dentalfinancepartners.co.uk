@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "How much tax do I pay on rental income?",
     answer:
-      "You pay income tax at your normal rate on your rental profit, which is rent received less allowable expenses. There is no separate landlord tax rate. For 2026/27 that means 20% within the basic-rate band, 40% between £50,270 and £125,140, and 45% above that, after your £12,570 personal allowance. Mortgage interest is not an expense: it is relieved separately as a 20% tax credit, rising to 22% from April 2027, so your effective rate on cash profit can be far higher than your headline band.",
+      "You pay income tax at your normal rate on your rental profit, which is rent received less allowable expenses. For 2026/27 rental profit is taxed alongside your other income at 20% within the basic-rate band, 40% between £50,270 and £125,140, and 45% above that, after your £12,570 personal allowance. From 6 April 2027 property income has its own rates of 22%, 42% and 47% (England, Wales and Northern Ireland; Scottish taxpayers pay Holyrood-set rates), and the Section 24 reducer rises from 20% to the new 22% property basic rate at the same time. Mortgage interest is not an expense: it is relieved separately as that tax credit, so your effective rate on cash profit can be far higher than your headline band.",
   },
   {
     question: "Do I have to declare rental income under £1,000?",
@@ -41,12 +41,12 @@ const faqs = [
   {
     question: "Is mortgage interest tax deductible for landlords?",
     answer:
-      "Not as a deduction. Individual landlords cannot deduct mortgage interest from rental income. Instead you get a basic-rate tax reducer worth 20% of the finance costs for 2026/27, rising to 22% from 6 April 2027. The restriction, known as Section 24, applies to interest, arrangement fees and the interest element of most finance. Limited companies are outside it and deduct finance costs in full.",
+      "Not as a deduction. Individual landlords cannot deduct mortgage interest from rental income. Instead you get a basic-rate tax reducer worth 20% of the finance costs for 2026/27, rising to 22% from 6 April 2027 because the reducer tracks the new property basic rate that applies once property income is taxed at 22%, 42% and 47%. The restriction, known as Section 24, applies to interest, arrangement fees and the interest element of most finance. Limited companies are outside it and deduct finance costs in full.",
   },
   {
     question: "How much landlord tax do I pay if I am a higher-rate taxpayer?",
     answer:
-      "Your rental profit is taxed at 40%, and because mortgage interest only attracts a 20% credit for 2026/27 you effectively pay tax on income you never keep. A higher-rate landlord with £20,000 of profit before finance costs and £9,000 of mortgage interest keeps £11,000 in cash and pays about £5,146 in tax on it, an effective rate near 47%. The gap narrows slightly when the reducer rises to 22% in April 2027.",
+      "Your rental profit is taxed at 40%, and because mortgage interest only attracts a 20% credit for 2026/27 you effectively pay tax on income you never keep. A higher-rate landlord with £20,000 of profit before finance costs and £9,000 of mortgage interest keeps £11,000 in cash and pays about £5,146 in tax on it, an effective rate near 47%. It does not improve in 2027/28: the reducer rises to 22%, but property income is taxed at 42% in the higher band from 6 April 2027, so the same landlord pays about £5,366, closer to 49% of the cash.",
   },
   {
     question: "What expenses can landlords claim?",
@@ -92,9 +92,14 @@ const faqs = [
 
 const changes = [
   {
+    item: "Rates on property income",
+    now: "20% / 40% / 45%, taxed with other income",
+    next: "Separate property rates of 22% / 42% / 47% from 6 April 2027 (England, Wales and NI; Scotland sets its own)",
+  },
+  {
     item: "Section 24 finance cost reducer",
     now: "20% basic-rate credit",
-    next: "22% from 6 April 2027",
+    next: "22% from 6 April 2027, tracking the new property basic rate",
   },
   {
     item: "Making Tax Digital for Income Tax",
@@ -329,6 +334,7 @@ export default function LandlordTaxPage() {
               id="section-24"
               title="What is Section 24 and how much mortgage interest relief do you get?"
               links={[
+                { href: "/section-24", label: "Full Section 24 guide" },
                 { href: "/calculators/section-24-calculator", label: "Section 24 calculator" },
                 {
                   href: "/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide",
@@ -353,8 +359,11 @@ export default function LandlordTaxPage() {
               <p>
                 The restriction covers mortgage interest, interest on loans to buy furnishings, overdrafts and
                 arrangement or broker fees. It does not apply to companies, to furnished holiday lets before the
-                regime ended, or to commercial property. The 2027 rise to 22% softens the gap slightly, and it is the
-                first movement in the reducer since the phase-in completed.
+                regime ended, or to commercial property. The 2027 rise to 22% is the first movement in the reducer since the
+                phase-in completed, but it does not soften the gap: it happens because property income itself moves
+                to 22%, 42% and 47% on the same day, so the shortfall for a higher-rate landlord stays 20 percentage
+                points (42 less 22) and 25 points (47 less 22) for an additional-rate landlord. A basic-rate
+                landlord sees no new wedge, since 22% relief matches 22% tax.
               </p>
             </Section>
 
@@ -407,9 +416,12 @@ export default function LandlordTaxPage() {
                 Section 24 in one number.
               </p>
               <p>
-                Run the same figures under the 22% reducer that applies from April 2027 and the credit rises to
-                £1,980, cutting the tax to £4,966 on the same profit, assuming thresholds are unchanged. Useful,
-                but not a solution on its own.
+                Run the same figures under the 2027/28 rules and the answer moves the wrong way. The £20,000 of
+                property profit is taxed at the separate property rates: £5,270 of it falls in the basic band at 22%
+                (£1,159) and the remaining £14,730 at 42% (£6,187), so £7,346 before relief. The reducer rises to 22%
+                of £9,000, or £1,980, leaving £5,366 attributable to the property against £5,146 for 2026/27. On the
+                same £11,000 of cash that is an effective rate near 49%. The extra 2% of relief is worth £180; the
+                extra 2% on the property income costs £400.
               </p>
               <p>
                 Push the mortgage interest to £15,000 and the picture turns: profit before finance costs is still
@@ -536,8 +548,9 @@ export default function LandlordTaxPage() {
               ]}
             >
               <p>
-                Two changes matter more than the rest: Making Tax Digital arriving for landlords, and the Section 24
-                reducer moving for the first time in years.
+                Two changes matter more than the rest: Making Tax Digital arriving for landlords, and property income
+                getting its own tax rates from 6 April 2027, which is also why the Section 24 reducer moves for the
+                first time in years.
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse text-sm">
@@ -564,7 +577,14 @@ export default function LandlordTaxPage() {
                 property income exceeds £50,000, and from April 2027 above £30,000. The threshold looks at gross
                 income, not profit, so a portfolio with thin margins can be caught while producing very little
                 taxable income. Quarterly updates and digital records replace the single annual return, and
-                spreadsheets only work if bridged by compatible software.
+                spreadsheets only work if bridged by compatible software. Our{" "}
+                <Link
+                  href="/making-tax-digital-landlords"
+                  className="font-semibold text-emerald-700 hover:text-emerald-800"
+                >
+                  Making Tax Digital for landlords guide
+                </Link>{" "}
+                sets out who is in scope and when.
               </p>
               <p>
                 Capital allowances also moved: the main-pool writing down allowance fell from 18% to 14%, the special
@@ -601,7 +621,15 @@ export default function LandlordTaxPage() {
               <p>
                 The rough rule: companies suit geared higher-rate landlords who are building a portfolio and can
                 leave profit in the business. Personal ownership suits lower gearing, basic-rate taxpayers, and
-                anyone who needs the income now or expects to sell within a few years.
+                anyone who needs the income now or expects to sell within a few years. For how incorporation activity
+                has actually moved since Section 24, see our{" "}
+                <Link
+                  href="/research/landlord-tax-index"
+                  className="font-semibold text-emerald-700 hover:text-emerald-800"
+                >
+                  landlord tax index research
+                </Link>
+                .
               </p>
             </Section>
 
@@ -650,7 +678,14 @@ export default function LandlordTaxPage() {
               </p>
               <p>
                 What that costs depends on the size of the portfolio and how much of it is structuring rather than
-                filing. It is a conversation, not a price list, and the first one is free.
+                filing. It is a conversation, not a price list, and the first one is free. Our{" "}
+                <Link
+                  href="/services/landlord-accountant"
+                  className="font-semibold text-emerald-700 hover:text-emerald-800"
+                >
+                  landlord accounting service
+                </Link>{" "}
+                covers the ongoing compliance side of that.
               </p>
             </Section>
 

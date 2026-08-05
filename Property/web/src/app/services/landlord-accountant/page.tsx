@@ -42,7 +42,7 @@ const included = [
   },
   {
     title: "Section 24 planning",
-    body: "The basic rate reducer is 20% of finance costs now and rises to 22% from April 2027. Where that pushes you into a higher band, we model the alternatives before you commit to any of them.",
+    body: "The basic rate reducer is 20% of finance costs now and rises to 22% from April 2027, when property income also moves to its own rates of 22%, 42% and 47%, so higher-rate landlords pay more overall rather than less. Where that pushes you into a higher band, we model the alternatives before you commit to any of them.",
   },
   {
     title: "Making Tax Digital",
@@ -310,8 +310,9 @@ export default function LandlordAccountantPage() {
             </h2>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
               A geared buy to let is where the finance cost restriction bites hardest. Your taxable profit is calculated
-              before mortgage interest, then a basic rate credit is given back. At 20% now, rising to 22% from April
-              2027, the gap between the interest you pay and the relief you receive is real cash, and it can drag total
+              before mortgage interest, then a basic rate credit is given back. At 20% now, and 22% from April 2027 when
+              property income itself is taxed at 22%, 42% and 47%, the gap between the interest you pay and the relief
+              you receive is real cash, and it can drag total
               income across a threshold you were nowhere near on a cash basis.
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">

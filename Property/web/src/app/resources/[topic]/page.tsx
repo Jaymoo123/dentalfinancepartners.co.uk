@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: guide ? `${guide.title} (free guide)` : "Free guide",
     description: guide?.summary,
-    // Gated, value-behind-the-email asset — never indexed so it cannot compete
+    // Gated, value-behind-the-email asset, never indexed so it cannot compete
     // with the ranking blog/calculator pages.
     robots: { index: false, follow: false },
   };

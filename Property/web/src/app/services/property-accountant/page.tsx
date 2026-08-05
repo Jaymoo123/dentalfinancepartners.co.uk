@@ -87,7 +87,7 @@ const audiences = [
 const specialistReasons = [
   {
     title: "The finance cost restriction is a rate change, not a footnote",
-    body: "Mortgage interest on residential lettings held personally is relieved as a basic rate tax reducer, currently 20%, rising to 22% from April 2027. A generalist who deducts interest as an ordinary expense produces a return that is wrong on its face. Getting the calculation right also means spotting the years where the reducer is capped by the profit or income limits and carried forward.",
+    body: "Mortgage interest on residential lettings held personally is relieved as a basic rate tax reducer, currently 20%, rising to 22% from April 2027 alongside the new separate property income rates of 22%, 42% and 47%, which leaves higher-rate landlords no better off. A generalist who deducts interest as an ordinary expense produces a return that is wrong on its face. Getting the calculation right also means spotting the years where the reducer is capped by the profit or income limits and carried forward.",
   },
   {
     title: "Capital versus revenue is where the money sits",
@@ -498,8 +498,8 @@ export default function PropertyAccountantPage() {
               >
                 <h3 className="text-lg font-bold text-slate-900">Section 24 calculator</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                  What the finance cost restriction costs you this year, and what it costs when the reducer moves to
-                  22% in April 2027.
+                  What the finance cost restriction costs you this year, and what it costs from April 2027 when the
+                  reducer moves to 22% and property income moves to 22%, 42% and 47%.
                 </p>
               </Link>
               <Link

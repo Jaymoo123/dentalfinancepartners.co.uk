@@ -106,13 +106,13 @@ export default function MakingTaxDigitalMTDPage() {
               Landlords with qualifying income over £50,000 must comply from April 2026. Those with income between £30,000 and £50,000 join from April 2027. HMRC has indicated that the threshold may be lowered further in future, potentially capturing all landlords with property income above £20,000.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Quarterly updates are due by the 7th of the month following the end of each quarter — so for a standard April-to-April tax year, deadlines fall on 7 August, 7 November, 7 February, and 7 May. A final end-of-period statement and crystallisation declaration replace the traditional self-assessment return.
+              Quarterly updates are due by the 7th of the month following the end of each quarter, so for a standard April-to-April tax year, deadlines fall on 7 August, 7 November, 7 February, and 7 May. A final end-of-period statement and crystallisation declaration replace the traditional self-assessment return.
             </p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Compatible Software for Property Landlords</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              HMRC maintains a list of MTD-compatible software that can connect to their systems via API. Options range from full accounting packages like Xero, QuickBooks, and FreeAgent to dedicated landlord tools like Hammock and GoSimpleTax. Spreadsheets alone are not sufficient — you need bridging software or a native MTD application.
+              HMRC maintains a list of MTD-compatible software that can connect to their systems via API. Options range from full accounting packages like Xero, QuickBooks, and FreeAgent to dedicated landlord tools like Hammock and GoSimpleTax. Spreadsheets alone are not sufficient, you need bridging software or a native MTD application.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               When choosing software, consider whether it handles multiple properties, tracks expenses by property, supports the quarterly submission format, and integrates with your accountant&apos;s systems. Many landlords find that starting with MTD-ready software well before the mandatory date reduces stress and errors during the transition.
@@ -130,7 +130,7 @@ export default function MakingTaxDigitalMTDPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Penalties and Enforcement</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              HMRC&apos;s new points-based penalty regime applies to MTD submissions. Each late quarterly update earns a penalty point. Once you accumulate a threshold number of points (four for quarterly obligations), a £200 penalty is charged — and every subsequent late submission also triggers a £200 fine until the points are reset.
+              HMRC&apos;s new points-based penalty regime applies to MTD submissions. Each late quarterly update earns a penalty point. Once you accumulate a threshold number of points (four for quarterly obligations), a £200 penalty is charged, and every subsequent late submission also triggers a £200 fine until the points are reset.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Late payment penalties are separate: 2% of the tax owed at 15 days late, a further 2% at 30 days, and then 4% per annum on any balance outstanding after 30 days. Interest also accrues from the due date. These penalties make timely compliance significantly more important than under the old self-assessment regime.

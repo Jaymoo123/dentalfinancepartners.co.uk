@@ -45,7 +45,7 @@ const adviceAreas = [
   },
   {
     title: "Section 24 mitigation",
-    body: "The finance cost reducer is 20% now and rises to 22% from April 2027. Advice here covers what actually reduces your exposure: pension contributions, spouse allocation, deductible expense discipline, refinancing decisions, and whether incorporation is proportionate to the saving.",
+    body: "The finance cost reducer is 20% now and rises to 22% from April 2027, in step with the new property income rates of 22%, 42% and 47%, so the wedge for a higher-rate landlord stays 20 points. Advice here covers what actually reduces your exposure: pension contributions, spouse allocation, deductible expense discipline, refinancing decisions, and whether incorporation is proportionate to the saving.",
   },
   {
     title: "Capital allowances on commercial and mixed property",
@@ -502,8 +502,19 @@ export default function PropertyTaxAdvicePage() {
                 </thead>
                 <tbody>
                   <tr className="border-b border-slate-200 bg-white align-top">
+                    <td className="p-4 font-semibold text-slate-900">Rates on property income</td>
+                    <td className="p-4 text-slate-700">
+                      Separate rates of 22%, 42% and 47% replace 20%, 40% and 45% in England, Wales and Northern
+                      Ireland. Scotland is not affected for 2027/28
+                    </td>
+                    <td className="p-4 text-slate-700">6 April 2027</td>
+                  </tr>
+                  <tr className="border-b border-slate-200 bg-white align-top">
                     <td className="p-4 font-semibold text-slate-900">Section 24 finance cost reducer</td>
-                    <td className="p-4 text-slate-700">Rises from 20% to 22%</td>
+                    <td className="p-4 text-slate-700">
+                      Rises from 20% to 22%, tracking the new property basic rate, so the higher-rate wedge stays
+                      20 points
+                    </td>
                     <td className="p-4 text-slate-700">April 2027</td>
                   </tr>
                   <tr className="border-b border-slate-200 bg-white align-top">

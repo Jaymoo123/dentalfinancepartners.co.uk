@@ -94,7 +94,7 @@ export default function LandlordTaxEssentialsPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Income Tax for Landlords</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Rental income in the UK is taxed as part of your total income, meaning it&apos;s added to employment earnings, pensions, and other sources before tax bands are applied. Basic-rate taxpayers pay 20% on rental profits, higher-rate taxpayers pay 40%, and additional-rate taxpayers pay 45%. Understanding where your rental income pushes you within these bands is critical for planning — even a modest portfolio can tip you from basic to higher rate.
+              Rental income in the UK is taxed as part of your total income, meaning it&apos;s added to employment earnings, pensions, and other sources before tax bands are applied. Basic-rate taxpayers pay 20% on rental profits, higher-rate taxpayers pay 40%, and additional-rate taxpayers pay 45%. Understanding where your rental income pushes you within these bands is critical for planning, even a modest portfolio can tip you from basic to higher rate.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Since April 2020, Section 24 has fully restricted mortgage interest relief for individual landlords to a basic-rate tax credit (20%), regardless of your actual tax band. This means higher and additional-rate landlords effectively lose part of their interest deduction, which can turn a cash-flow-positive property into a tax-loss scenario on paper. Incorporation into a limited company is one strategy some landlords use to restore full interest deductibility, though it involves SDLT costs and CGT on transfer.
@@ -103,7 +103,7 @@ export default function LandlordTaxEssentialsPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Allowable Expenses and Deductions</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              HMRC allows landlords to deduct a wide range of expenses from rental income before calculating taxable profit. These include letting agent fees, insurance premiums, maintenance and repair costs, ground rent, service charges, accountancy fees, and the cost of advertising for tenants. For furnished properties, you can claim the replacement of domestic items relief — covering like-for-like replacement of furniture, appliances, and kitchenware.
+              HMRC allows landlords to deduct a wide range of expenses from rental income before calculating taxable profit. These include letting agent fees, insurance premiums, maintenance and repair costs, ground rent, service charges, accountancy fees, and the cost of advertising for tenants. For furnished properties, you can claim the replacement of domestic items relief, covering like-for-like replacement of furniture, appliances, and kitchenware.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               The distinction between repairs (deductible) and improvements (capital expenditure, not deductible against income) is one of the most common areas of dispute with HMRC. Replacing a broken boiler with a modern equivalent is a repair; upgrading from a standard boiler to a premium system with additional radiators is likely an improvement. Keeping detailed records and photographs of the condition before and after work is the best way to support your claim if HMRC enquires.
@@ -130,10 +130,10 @@ export default function LandlordTaxEssentialsPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Joint Ownership and Tax Implications</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              When a property is jointly owned — most commonly by married couples or civil partners — HMRC&apos;s default position is to split rental income and expenses 50/50, regardless of the actual ownership split. However, couples can file a Form 17 declaration with HMRC to be taxed according to their actual beneficial ownership. This is a powerful planning tool: if one partner is a basic-rate taxpayer and the other is higher rate, shifting a greater share of income to the lower earner reduces the overall tax bill.
+              When a property is jointly owned, most commonly by married couples or civil partners, HMRC&apos;s default position is to split rental income and expenses 50/50, regardless of the actual ownership split. However, couples can file a Form 17 declaration with HMRC to be taxed according to their actual beneficial ownership. This is a powerful planning tool: if one partner is a basic-rate taxpayer and the other is higher rate, shifting a greater share of income to the lower earner reduces the overall tax bill.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Form 17 must be accompanied by evidence of unequal beneficial ownership, such as a deed of trust. The declaration remains in force until ownership proportions genuinely change. For unmarried joint owners, HMRC taxes each person on their actual share by default, so Form 17 is not required. Understanding these rules before purchase — and structuring ownership accordingly — can save significant tax over the life of the investment.
+              Form 17 must be accompanied by evidence of unequal beneficial ownership, such as a deed of trust. The declaration remains in force until ownership proportions genuinely change. For unmarried joint owners, HMRC taxes each person on their actual share by default, so Form 17 is not required. Understanding these rules before purchase, and structuring ownership accordingly, can save significant tax over the life of the investment.
             </p>
           </section>
         </div>

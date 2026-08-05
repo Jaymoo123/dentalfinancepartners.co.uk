@@ -48,14 +48,27 @@ BING_SITE = "https://propertytaxpartners.co.uk/"
 BING_BASE = "https://ssl.bing.com/webmaster/api.svc/json"
 SUPABASE_URL = "https://api.supabase.com/v1/projects/dhlxwmvmkrfnmcgjbntk/database/query"
 
-# Intent buckets. COMMERCIAL wants a provider; FORMCODE wants gov.uk and is
-# structurally unwinnable, so it must never be counted as headroom.
+# Intent buckets. COMMERCIAL wants a provider; FORMCODE wants gov.uk (or an
+# official rate table) and is structurally unwinnable, so it must never be
+# counted as headroom. FORMCODE is tested first so a rate-table query cannot
+# be claimed as commercial (precedence swapped 2026-08-05).
+#
+# 2026-08-05 validation (expansion_research/_prop_audit_2026_08_05/
+# bucket_validation.md, 100-query hand classification against GSC 90d):
+# accuracy 73/100, every error is real commercial/form leaking into the
+# informational residue. Fix applied here per that doc's recommendation:
+# widen FORMCODE for devolved/official rate lookups (Revenue Scotland, LBTT,
+# ATED, bare "rates YYYY", annual exempt amount, allowance), pluralise the
+# COMMERCIAL service tokens, add "software" as a commercial (buying-intent)
+# token, and test FORMCODE first. Closes 25 of the 27 sample errors.
 COMMERCIAL_RE = re.compile(
-    r"\b(accountant|accountants|accountancy|advisor|adviser|advice|specialist|"
-    r"firm|service|services|help|near me|cost|fee|fees|price|quote|hire|best)\b", re.I)
+    r"\b(accountant|accountants|accountancy|advisor|advisors|adviser|advisers|advice|"
+    r"specialist|specialists|firm|service|services|help|near me|cost|fee|fees|price|"
+    r"quote|hire|best|software)\b", re.I)
 FORMCODE_RE = re.compile(
     r"\b(sa\d{3}|nrl\d?|ct\d{3}|p\d{2}d?|is\d+\w*|form|hmrc|gov\.?uk|helpline|"
-    r"login|sign in|deadline|manual)\b", re.I)
+    r"login|sign in|deadline|manual|revenue scotland|lbtt|ated|"
+    r"annual exempt|allowance)\b|\brates?\b.*20\d\d", re.I)
 
 
 def _sql(query: str) -> list[dict]:
@@ -104,8 +117,8 @@ def section_gsc() -> dict:
     qrows = _gsc(svc, ["query"], 90)
     buckets: dict[str, list] = collections.defaultdict(lambda: [0, 0, 0, 0.0])
     for r in qrows:
-        b = ("commercial" if COMMERCIAL_RE.search(r["keys"][0])
-             else "form_hmrc_lookup" if FORMCODE_RE.search(r["keys"][0])
+        b = ("form_hmrc_lookup" if FORMCODE_RE.search(r["keys"][0])
+             else "commercial" if COMMERCIAL_RE.search(r["keys"][0])
              else "informational")
         buckets[b][0] += 1
         buckets[b][1] += r["impressions"]
@@ -260,5 +273,26 @@ def main() -> None:
               f"{b['total']['clicks']} clicks, {b['total']['ctr_pct']}% CTR")
 
 
+def _selftest() -> None:
+    """ponytail: smallest check that fails if the bucket regexes regress."""
+    def bucket(q: str) -> str:
+        if FORMCODE_RE.search(q):
+            return "form_hmrc_lookup"
+        if COMMERCIAL_RE.search(q):
+            return "commercial"
+        return "informational"
+
+    assert bucket("revenue scotland non-residential lbtt rates 2026") == "form_hmrc_lookup"
+    assert bucket("ated rates 2026/27") == "form_hmrc_lookup"
+    assert bucket("uk cgt rates residential property 2026") == "form_hmrc_lookup"
+    assert bucket("property accounting software uk") == "commercial"
+    assert bucket("property tax specialists in london") == "commercial"
+    assert bucket("how much rent do i need to declare") == "informational"
+    print("[baseline] selftest: ok")
+
+
 if __name__ == "__main__":
-    main()
+    if "--selftest" in sys.argv:
+        _selftest()
+    else:
+        main()

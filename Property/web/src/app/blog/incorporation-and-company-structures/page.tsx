@@ -94,7 +94,7 @@ export default function IncorporationCompanyStructuresPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">When Incorporation Makes Sense for Landlords</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Incorporating a property portfolio into a limited company is most beneficial for higher-rate taxpayers with significant mortgage debt. Since Section 24 removed individual landlords&apos; ability to deduct mortgage interest, companies — which still deduct finance costs before corporation tax at 25% — can offer substantial annual savings.
+              Incorporating a property portfolio into a limited company is most beneficial for higher-rate taxpayers with significant mortgage debt. Since Section 24 removed individual landlords&apos; ability to deduct mortgage interest, companies, which still deduct finance costs before corporation tax at 25%, can offer substantial annual savings.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Incorporation tends to work best for landlords who plan to retain profits within the company rather than extract them immediately. If you rely on rental income for day-to-day living expenses, the additional costs of extracting funds via salary or dividends may reduce the advantage. A detailed tax comparison modelling at least 10 years of projected income is essential before committing.
@@ -112,7 +112,7 @@ export default function IncorporationCompanyStructuresPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Holdover Relief and Stamp Duty on Transfer</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Transferring properties from personal ownership to a company is a disposal for capital gains tax purposes, triggering CGT on any gains at 18% or 24%. However, HMRC incorporation relief under TCGA 1992 s162 may apply if the portfolio qualifies as a business — typically requiring active management of multiple properties rather than passive holding.
+              Transferring properties from personal ownership to a company is a disposal for capital gains tax purposes, triggering CGT on any gains at 18% or 24%. However, HMRC incorporation relief under TCGA 1992 s162 may apply if the portfolio qualifies as a business, typically requiring active management of multiple properties rather than passive holding.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Stamp duty land tax (SDLT) applies on the market value of the transferred properties, including the 3% additional dwelling supplement. For large portfolios this can represent a significant upfront cost. Some landlords phase incorporations or use partnership structures as an intermediate step to manage these costs.
@@ -121,7 +121,7 @@ export default function IncorporationCompanyStructuresPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Director Loan Accounts and Dividend Extraction</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              When you transfer properties to your company, the market value less any mortgages creates a director&apos;s loan account — money the company owes you. You can withdraw this balance tax-free over time, providing a useful source of income in the early years of incorporation without triggering additional tax.
+              When you transfer properties to your company, the market value less any mortgages creates a director&apos;s loan account, money the company owes you. You can withdraw this balance tax-free over time, providing a useful source of income in the early years of incorporation without triggering additional tax.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Once the loan account is exhausted, profits are typically extracted via a combination of salary (up to the NIC threshold) and dividends. For the 2026/27 tax year, the dividend allowance is £500 and rates are 10.75% (basic), 35.75% (higher), and 39.35% (additional). Planning the mix of salary and dividends each year is critical to minimising the overall tax burden.
@@ -133,7 +133,7 @@ export default function IncorporationCompanyStructuresPage() {
               The right structure depends on your portfolio size, mortgage levels, income needs, and long-term plans. Landlords building a portfolio to pass to the next generation may benefit from a family investment company (FIC), which offers flexible share classes and inheritance tax planning. Those focused on short-term cash flow may prefer to remain as individuals and use other Section 24 mitigation strategies.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              There is no one-size-fits-all answer. A specialist property tax accountant can model the scenarios — personal ownership, SPV, trading company, partnership, or FIC — against your actual numbers and help you choose the structure that delivers the best outcome over the life of your portfolio.
+              There is no one-size-fits-all answer. A specialist property tax accountant can model the scenarios, personal ownership, SPV, trading company, partnership, or FIC, against your actual numbers and help you choose the structure that delivers the best outcome over the life of your portfolio.
             </p>
           </section>
         </div>

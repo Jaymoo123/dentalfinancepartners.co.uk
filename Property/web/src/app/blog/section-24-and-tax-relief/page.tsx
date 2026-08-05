@@ -103,10 +103,10 @@ export default function Section24TaxReliefPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Impact on Higher-Rate Taxpayers</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Higher-rate taxpayers at 40% only receive a 20% tax credit, effectively doubling the cost of mortgage interest. Additional-rate taxpayers at 45% fare even worse. Section 24 can also push basic-rate taxpayers into the higher-rate band because gross rental income — without the mortgage deduction — inflates total taxable income.
+              Higher-rate taxpayers at 40% only receive a 20% tax credit, effectively doubling the cost of mortgage interest. Additional-rate taxpayers at 45% fare even worse. Section 24 can also push basic-rate taxpayers into the higher-rate band because gross rental income, without the mortgage deduction, inflates total taxable income.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              This knock-on effect can reduce eligibility for child benefit, erode the personal savings allowance, and remove access to marriage allowance — making the real cost of Section 24 far greater than the headline figures suggest.
+              This knock-on effect can reduce eligibility for child benefit, erode the personal savings allowance, and remove access to marriage allowance, making the real cost of Section 24 far greater than the headline figures suggest.
             </p>
           </section>
           <section>

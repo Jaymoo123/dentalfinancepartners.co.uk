@@ -97,13 +97,13 @@ export default function PropertyAccountantServicesPage() {
               Property taxation in the UK is significantly more complex than standard self-assessment. Between Section 24 finance cost restrictions, Capital Gains Tax reliefs, Stamp Duty surcharges, and the distinct rules for furnished holiday lets, a general high-street accountant can easily miss savings or, worse, file incorrectly. A specialist property accountant works with landlord clients day in, day out and understands the nuances that directly affect your bottom line.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Specialist firms also stay ahead of regulatory changes — such as Making Tax Digital for Income Tax, which will require quarterly digital reporting from landlords with qualifying income above £50,000 from April 2026. Proactive advice on structuring purchases, timing disposals, and choosing the right ownership vehicle can save thousands over a portfolio&apos;s lifetime.
+              Specialist firms also stay ahead of regulatory changes, such as Making Tax Digital for Income Tax, which will require quarterly digital reporting from landlords with qualifying income above £50,000 from April 2026. Proactive advice on structuring purchases, timing disposals, and choosing the right ownership vehicle can save thousands over a portfolio&apos;s lifetime.
             </p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Services a Property Accountant Provides</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              A dedicated property accountant typically handles annual self-assessment tax returns, rental income schedules, and year-end accounts for landlords operating through limited companies. Beyond compliance, they advise on tax planning — including incorporation analysis, capital allowances claims, and loss relief strategies across your portfolio.
+              A dedicated property accountant typically handles annual self-assessment tax returns, rental income schedules, and year-end accounts for landlords operating through limited companies. Beyond compliance, they advise on tax planning, including incorporation analysis, capital allowances claims, and loss relief strategies across your portfolio.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               Many firms also offer bookkeeping support, VAT registration and returns for commercial landlords, mortgage and refinancing projections, and CGT computations on disposals. If you hold property jointly or through a trust, your accountant should prepare the partnership or trust returns and advise on profit-sharing ratios that reflect each party&apos;s actual economic interest.
@@ -112,10 +112,10 @@ export default function PropertyAccountantServicesPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Choosing the Right Accountant</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Look for a firm with demonstrable property sector experience — not just a handful of landlord clients but a genuine specialism. Check whether they are ACCA, ICAEW, or CIOT qualified and hold professional indemnity insurance. Client testimonials and case studies specific to property investors are more meaningful than generic reviews.
+              Look for a firm with demonstrable property sector experience, not just a handful of landlord clients but a genuine specialism. Check whether they are ACCA, ICAEW, or CIOT qualified and hold professional indemnity insurance. Client testimonials and case studies specific to property investors are more meaningful than generic reviews.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              Communication matters as much as technical skill. Your accountant should be accessible when you need them — especially around the 31 January self-assessment deadline or when you&apos;re mid-way through a purchase. Ask about their technology stack: cloud accounting (Xero, FreeAgent, QuickBooks) and digital record-keeping are essential for MTD compliance and real-time visibility of your portfolio finances.
+              Communication matters as much as technical skill. Your accountant should be accessible when you need them, especially around the 31 January self-assessment deadline or when you&apos;re mid-way through a purchase. Ask about their technology stack: cloud accounting (Xero, FreeAgent, QuickBooks) and digital record-keeping are essential for MTD compliance and real-time visibility of your portfolio finances.
             </p>
           </section>
           <section>

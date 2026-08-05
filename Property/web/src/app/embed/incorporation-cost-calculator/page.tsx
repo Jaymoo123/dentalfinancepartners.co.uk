@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Incorporation Cost Calculator",
   description:
     "Free calculator: the upfront CGT + SDLT cost of incorporating a rental property, and the break-even timeline.",
-  // Embed surface — do not index (the canonical, indexable version lives at
+  // Embed surface, do not index (the canonical, indexable version lives at
   // /calculators/incorporation-cost-calculator).
   robots: { index: false, follow: false },
   alternates: { canonical: "https://www.propertytaxpartners.co.uk/calculators/incorporation-cost-calculator" },

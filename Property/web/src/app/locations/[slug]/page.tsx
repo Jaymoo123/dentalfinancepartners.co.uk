@@ -805,7 +805,18 @@ export default async function LocationPage({ params }: Props) {
   }
 
   const city = cityName(slug);
-  const posts = getAllPosts().slice(0, 5);
+  const cityLower = city.toLowerCase();
+  const indexablePosts = getAllPosts().filter((p) => !p.noindex);
+  const cityPosts = indexablePosts.filter(
+    (p) =>
+      p.title.toLowerCase().includes(cityLower) ||
+      p.slug.toLowerCase().includes(slug) ||
+      getCategorySlug(p).includes(slug),
+  );
+  const fallbackPosts = indexablePosts.filter(
+    (p) => getCategorySlug(p) === "landlord-tax-essentials",
+  );
+  const posts = [...cityPosts, ...fallbackPosts.filter((p) => !cityPosts.includes(p))].slice(0, 5);
 
   const localBusinessSchema = buildCityLocalBusinessJsonLd({
     name: siteConfig.name,

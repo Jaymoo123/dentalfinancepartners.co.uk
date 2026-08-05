@@ -9,9 +9,9 @@ export const capitalGainsTaxCalculator: GenericTool = {
   category: "Capital gains tax",
   oneLiner:
     "Estimate the CGT on selling a buy-to-let or second property, at 18% / 24% with the £3,000 allowance.",
-  metaTitle: "Capital Gains Tax Calculator (Property) | 18% / 24% (UK 2026/27)",
+  metaTitle: "Capital Gains Tax Calculator: Property Gains Tax UK 2026/27",
   metaDescription:
-    "Free CGT calculator for UK property. Estimate Capital Gains Tax on a buy-to-let or second home, with the £3,000 allowance, 18%/24% rates and 60-day rule.",
+    "Work out the property gains tax on a UK buy-to-let or second home: 18% and 24% residential CGT rates, the £3,000 annual exempt amount and the 60-day reporting deadline.",
   intro:
     "Estimate the Capital Gains Tax on selling a residential investment property, based on your gain and your other income.",
   ctaLabel: "Selling a property? We'll handle the CGT →",
@@ -91,6 +91,21 @@ export const capitalGainsTaxCalculator: GenericTool = {
       question: "When do I have to pay CGT on a property sale?",
       answer:
         "You must report the disposal and pay the Capital Gains Tax within 60 days of completion, using HMRC's CGT on UK property service. This is separate from, and earlier than, your Self Assessment return.",
+    },
+    {
+      question: "How much Capital Gains Tax will I pay on a property sale?",
+      answer:
+        "Take the sale price, deduct the original purchase price, the buying and selling costs (legal fees, agent fees, the SDLT you paid) and the cost of any capital improvements. Deduct your £3,000 annual exempt amount if it is still available. The rest is taxed at 18% or 24% depending on how much of your basic-rate band your other income has already used. On a £120,000 gain with a higher-rate income, the bill is close to £28,000.",
+    },
+    {
+      question: "Can I transfer property to my spouse before selling to cut the tax?",
+      answer:
+        "Transfers between spouses and civil partners who live together happen at no gain and no loss, so the transfer itself is not taxed and your spouse inherits your original base cost. Putting a share into joint names before a sale means two annual exempt amounts and potentially some of the gain taxed at 18% in a lower-earning spouse's basic-rate band. The transfer has to be a genuine outright gift and must complete before you exchange contracts on the sale.",
+    },
+    {
+      question: "What happens if I miss the 60-day CGT deadline?",
+      answer:
+        "HMRC charges a late filing penalty once the return is more than 60 days overdue, with further penalties at six and twelve months, and interest runs on the unpaid tax from day 61. The return is still required even if you also report the disposal on your Self Assessment, so filing the tax return later does not remove the earlier obligation.",
     },
   ],
 };
