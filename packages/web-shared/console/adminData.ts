@@ -533,6 +533,142 @@ export interface PackageFunnelRow {
   signup_events: number;
 }
 
+export interface EstatePricingInterest {
+  pricing_view_sessions: number;
+  cta_click_sessions: number;
+  form_start_sessions: number;
+  package_signups: number;
+  quote_requests: number;
+}
+
+/**
+ * Estate-wide pricing interest (pkg_pricing_v1), all sites summed, since
+ * launch. Views come from the package_id=NULL rows (page-level denominator);
+ * signups split package vs advisory_project (quote requests).
+ */
+export async function getEstatePricingInterest(): Promise<EstatePricingInterest> {
+  const rows = await rest<PackageFunnelRow & { site_key: string }>("vw_package_funnel", {
+    select:
+      "site_key,package_id,pricing_view_sessions,cta_click_sessions,form_start_sessions,signup_sessions",
+  });
+  const out: EstatePricingInterest = {
+    pricing_view_sessions: 0,
+    cta_click_sessions: 0,
+    form_start_sessions: 0,
+    package_signups: 0,
+    quote_requests: 0,
+  };
+  for (const r of rows) {
+    if (r.package_id === null) out.pricing_view_sessions += r.pricing_view_sessions;
+    out.cta_click_sessions += r.cta_click_sessions;
+    out.form_start_sessions += r.form_start_sessions;
+    if (r.package_id === "advisory_project") out.quote_requests += r.signup_sessions;
+    else if (r.package_id !== null) out.package_signups += r.signup_sessions;
+  }
+  return out;
+}
+
+export interface SitePricingInterest {
+  site_key: string;
+  pricing_view_sessions: number;
+  cta_click_sessions: number;
+  form_start_sessions: number;
+  package_signups: number;
+  quote_requests: number;
+  avg_engaged_s: number | null;
+  median_engaged_s: number | null;
+  avg_scroll_pct: number | null;
+}
+
+export interface PricingTierInterest {
+  package_id: string;
+  cta_click_sessions: number;
+  form_start_sessions: number;
+  signup_sessions: number;
+}
+
+/**
+ * Per-site pricing interest (pkg_pricing_v1) with engagement depth, plus a
+ * per-tier rollup across sites. Funnel counts from vw_package_funnel; dwell
+ * (engaged seconds, scroll) from vw_pricing_engagement — whole-session values
+ * for sessions that viewed /pricing, not time-on-/pricing alone.
+ */
+export async function getPricingInterestBySite(): Promise<{
+  sites: SitePricingInterest[];
+  tiers: PricingTierInterest[];
+}> {
+  const [funnel, engagement] = await Promise.all([
+    rest<PackageFunnelRow & { site_key: string }>("vw_package_funnel", {
+      select:
+        "site_key,package_id,pricing_view_sessions,cta_click_sessions,form_start_sessions,signup_sessions",
+    }),
+    rest<{
+      site_key: string;
+      avg_engaged_s: number | null;
+      median_engaged_s: number | null;
+      avg_scroll_pct: number | null;
+    }>("vw_pricing_engagement", {
+      select: "site_key,avg_engaged_s,median_engaged_s,avg_scroll_pct",
+    }),
+  ]);
+
+  const bySite = new Map<string, SitePricingInterest>();
+  const site = (key: string): SitePricingInterest => {
+    let s = bySite.get(key);
+    if (!s) {
+      s = {
+        site_key: key,
+        pricing_view_sessions: 0,
+        cta_click_sessions: 0,
+        form_start_sessions: 0,
+        package_signups: 0,
+        quote_requests: 0,
+        avg_engaged_s: null,
+        median_engaged_s: null,
+        avg_scroll_pct: null,
+      };
+      bySite.set(key, s);
+    }
+    return s;
+  };
+
+  const byTier = new Map<string, PricingTierInterest>();
+  for (const r of funnel) {
+    const s = site(r.site_key);
+    if (r.package_id === null) s.pricing_view_sessions += r.pricing_view_sessions;
+    s.cta_click_sessions += r.cta_click_sessions;
+    s.form_start_sessions += r.form_start_sessions;
+    if (r.package_id === "advisory_project") s.quote_requests += r.signup_sessions;
+    else if (r.package_id !== null) s.package_signups += r.signup_sessions;
+
+    if (r.package_id !== null) {
+      const t = byTier.get(r.package_id) ?? {
+        package_id: r.package_id,
+        cta_click_sessions: 0,
+        form_start_sessions: 0,
+        signup_sessions: 0,
+      };
+      t.cta_click_sessions += r.cta_click_sessions;
+      t.form_start_sessions += r.form_start_sessions;
+      t.signup_sessions += r.signup_sessions;
+      byTier.set(r.package_id, t);
+    }
+  }
+  for (const e of engagement) {
+    const s = site(e.site_key);
+    s.avg_engaged_s = e.avg_engaged_s;
+    s.median_engaged_s = e.median_engaged_s;
+    s.avg_scroll_pct = e.avg_scroll_pct;
+  }
+
+  return {
+    sites: [...bySite.values()].sort(
+      (a, b) => b.pricing_view_sessions - a.pricing_view_sessions,
+    ),
+    tiers: [...byTier.values()].sort((a, b) => b.cta_click_sessions - a.cta_click_sessions),
+  };
+}
+
 /**
  * Self-serve packages funnel (pkg_pricing_v1) from vw_package_funnel.
  * One row per package_id plus a package_id=NULL row carrying the page-level
