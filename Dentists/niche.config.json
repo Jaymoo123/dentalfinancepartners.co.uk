@@ -14,7 +14,10 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "", "privacy_policy_url": null },
+  "partner": {
+    "name": "",
+    "privacy_policy_url": null
+  },
   "domain": "www.dentalfinancepartners.co.uk",
   "tagline": "Accounting for UK dentists — nothing else",
   "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions — we only work with dentists.",
@@ -148,10 +151,18 @@
     "variant": "packages",
     "variants": {
       "packages": {
-        "header_primary": { "label": "Plans from £29/mo", "href": "/pricing" },
-        "header_secondary": { "label": "Talk to us", "href": "/contact" },
-        "hero_primary": { "label": "See plans from £29/mo", "href": "/pricing" },
-        "hero_secondary": { "label": "Not sure? Book a free 15-min call", "href": "/contact" },
+        "header_primary": {
+          "label": "See pricing",
+          "href": "/pricing"
+        },
+        "hero_primary": {
+          "label": "See plans from £29/mo",
+          "href": "/pricing"
+        },
+        "hero_secondary": {
+          "label": "Not sure? Book a free 15-min call",
+          "href": "/contact"
+        },
         "sticky": {
           "primary": "Fixed monthly plans from £29",
           "secondary": "Self assessment and limited company compliance for dentists, handled. Cancel with one month's notice.",
@@ -166,14 +177,29 @@
         "home_cta": {
           "heading": "Pick a plan today. Cancel with one month's notice.",
           "body": "Fixed monthly fees for associates, practice owners and dental groups, agreed up front. If you would rather talk it through first, a free 15-minute call sorts the right plan in one go.",
-          "primary": { "label": "See plans and pricing", "href": "/pricing" },
-          "secondary": { "label": "Book a free 15-min call", "href": "/contact" }
+          "primary": {
+            "label": "See plans and pricing",
+            "href": "/pricing"
+          },
+          "secondary": {
+            "label": "Book a free 15-min call",
+            "href": "/contact"
+          }
         }
       },
       "leadgen": {
-        "header_primary": { "label": "Book a call", "href": "/contact" },
-        "hero_primary": { "label": "Speak to a dental accountant", "href": "/contact" },
-        "hero_secondary": { "label": "How we work →", "href": "#how-we-work" },
+        "header_primary": {
+          "label": "Book a call",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "Speak to a dental accountant",
+          "href": "/contact"
+        },
+        "hero_secondary": {
+          "label": "How we work →",
+          "href": "#how-we-work"
+        },
         "sticky": {
           "primary": "Ready to work with a specialist dental accountant?",
           "secondary": "Book your free consultation today",
@@ -188,8 +214,14 @@
         "home_cta": {
           "heading": "Ready to work with a dental accountant who understands your practice?",
           "body": "Whether you're an associate looking to optimize your tax position, or a practice owner who needs proper financial visibility, the first conversation is straightforward and without obligation. Book your free consultation today.",
-          "primary": { "label": "Book your free consultation", "href": "/contact" },
-          "secondary": { "label": "View pricing", "href": "/pricing" }
+          "primary": {
+            "label": "Book your free consultation",
+            "href": "/contact"
+          },
+          "secondary": {
+            "label": "View pricing",
+            "href": "/pricing"
+          }
         }
       }
     },

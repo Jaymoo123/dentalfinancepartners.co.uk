@@ -14,7 +14,10 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "", "privacy_policy_url": null },
+  "partner": {
+    "name": "",
+    "privacy_policy_url": null
+  },
   "domain": "www.tradetaxspecialists.co.uk",
   "tagline": "Specialist CIS accountants for UK construction trades",
   "description": "Trade Tax Specialists. Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status applications, sole trader and limited company compliance. The average CIS subcontractor overpays around £2,000 a year. We claim it back, then keep you compliant. Fixed fees, plain English.",
@@ -41,7 +44,7 @@
       "href": "/cis-refund"
     },
     {
-      "label": "Gross Payment Status",
+      "label": "Gross Payment",
       "href": "/gross-payment-status"
     },
     {
@@ -297,9 +300,14 @@
     "variant": "packages",
     "variants": {
       "packages": {
-        "header_primary": { "label": "Plans from £24/mo", "href": "/pricing" },
-        "header_secondary": { "label": "Talk to us", "href": "/contact" },
-        "hero_primary": { "label": "Plans from £24/mo", "href": "/pricing" },
+        "header_primary": {
+          "label": "See pricing",
+          "href": "/pricing"
+        },
+        "hero_primary": {
+          "label": "Plans from £24/mo",
+          "href": "/pricing"
+        },
         "sticky": {
           "primary": "Fixed monthly plans from £24",
           "secondary": "CIS refunds claimed, returns filed, contractors covered. No fixed term.",
@@ -314,13 +322,25 @@
         "home_cta": {
           "heading": "Pick a plan today. No fixed term.",
           "body": "Fixed monthly fees for subbies, contractors and trade limited companies, agreed up front. If you would rather talk it through first, a free 15-minute call sorts the right plan in one go.",
-          "primary": { "label": "See plans and pricing", "href": "/pricing" },
-          "secondary": { "label": "Book a free 15-min call", "href": "/contact" }
+          "primary": {
+            "label": "See plans and pricing",
+            "href": "/pricing"
+          },
+          "secondary": {
+            "label": "Book a free 15-min call",
+            "href": "/contact"
+          }
         }
       },
       "leadgen": {
-        "header_primary": { "label": "Book a free call", "href": "/contact" },
-        "hero_primary": { "label": "View pricing", "href": "/pricing" },
+        "header_primary": {
+          "label": "Book a free call",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "View pricing",
+          "href": "/pricing"
+        },
         "sticky": {
           "primary": "Check your CIS refund",
           "secondary": "Most CIS subcontractors are owed money back. Speak to a specialist.",
@@ -335,7 +355,10 @@
         "home_cta": {
           "heading": "Find out what you are owed",
           "body": "Book a free call. We will review your CIS deductions, identify what you are owed, and explain your options. No hard sell, no obligation.",
-          "primary": { "label": "Book a free call", "href": "/contact" }
+          "primary": {
+            "label": "Book a free call",
+            "href": "/contact"
+          }
         }
       }
     },

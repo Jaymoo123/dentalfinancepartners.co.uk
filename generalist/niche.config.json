@@ -14,7 +14,10 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "", "privacy_policy_url": null },
+  "partner": {
+    "name": "",
+    "privacy_policy_url": null
+  },
   "domain": "www.hollowaydavies.co.uk",
   "tagline": "Accountants for UK businesses of every shape",
   "description": "Holloway Davies. Fixed-fee accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",
@@ -227,10 +230,18 @@
     "variant": "packages",
     "variants": {
       "packages": {
-        "header_primary": { "label": "Plans from £24/mo", "href": "/pricing" },
-        "header_secondary": { "label": "Talk to us", "href": "/contact" },
-        "hero_primary": { "label": "See plans from £24/mo", "href": "/pricing" },
-        "hero_secondary": { "label": "Not sure? Book a free 15-min call", "href": "/contact" },
+        "header_primary": {
+          "label": "See pricing",
+          "href": "/pricing"
+        },
+        "hero_primary": {
+          "label": "See plans from £24/mo",
+          "href": "/pricing"
+        },
+        "hero_secondary": {
+          "label": "Not sure? Book a free 15-min call",
+          "href": "/contact"
+        },
         "sticky": {
           "primary": "Fixed monthly plans from £24",
           "secondary": "Self assessment and limited company compliance handled. Cancel with 1 month's notice.",
@@ -245,14 +256,29 @@
         "home_cta": {
           "heading": "Pick a plan today. Cancel with one month's notice.",
           "body": "Fixed monthly fees for sole traders and limited companies, agreed up front. If you would rather talk it through first, a free 15-minute call sorts the right plan in one go.",
-          "primary": { "label": "See plans and pricing", "href": "/pricing" },
-          "secondary": { "label": "Book a free 15-min call", "href": "/contact" }
+          "primary": {
+            "label": "See plans and pricing",
+            "href": "/pricing"
+          },
+          "secondary": {
+            "label": "Book a free 15-min call",
+            "href": "/contact"
+          }
         }
       },
       "leadgen": {
-        "header_primary": { "label": "Book a free call", "href": "/contact" },
-        "hero_primary": { "label": "Book a free call", "href": "/contact" },
-        "hero_secondary": { "label": "What we cover", "href": "/services" },
+        "header_primary": {
+          "label": "Book a free call",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "Book a free call",
+          "href": "/contact"
+        },
+        "hero_secondary": {
+          "label": "What we cover",
+          "href": "/services"
+        },
         "sticky": {
           "primary": "Free business finance health check",
           "secondary": "60-min review with a senior accountant. No obligation.",
@@ -267,8 +293,14 @@
         "home_cta": {
           "heading": "Talk to an accountant. Free, no obligation.",
           "body": "Tell us briefly where the business sits today. We'll come back with a short note on what the engagement would look like and what it would cost. No pitch deck, no follow-up sequence.",
-          "primary": { "label": "Book a free call", "href": "/contact" },
-          "secondary": { "label": "View pricing", "href": "/pricing" }
+          "primary": {
+            "label": "Book a free call",
+            "href": "/contact"
+          },
+          "secondary": {
+            "label": "View pricing",
+            "href": "/pricing"
+          }
         }
       }
     },

@@ -62,14 +62,14 @@ export function SiteHeader() {
       <div className={`${siteContainerLg} flex min-h-14 items-center justify-between gap-3 py-3 sm:min-h-16 sm:gap-6`}>
         <BrandWordmarkHomeLink />
 
-        <nav aria-label="Primary" className="hidden min-w-0 items-center gap-8 md:flex">
+        <nav aria-label="Primary" className="hidden min-w-0 items-center gap-4 lg:flex xl:gap-6">
           {nav.map((item) => {
             const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium tracking-tight transition-colors ${focusRing} ${
+                className={`whitespace-nowrap text-sm font-medium tracking-tight transition-colors ${focusRing} ${
                   active ? "text-orange-600" : "text-neutral-600 hover:text-neutral-900"
                 }`}
               >
@@ -83,7 +83,7 @@ export function SiteHeader() {
           {activeCta.header_secondary ? (
             <Link
               href={activeCta.header_secondary.href}
-              className={`hidden text-sm font-medium tracking-tight text-neutral-600 transition-colors hover:text-neutral-900 md:inline-flex ${focusRing}`}
+              className={`hidden whitespace-nowrap text-sm font-medium tracking-tight text-neutral-600 transition-colors hover:text-neutral-900 xl:inline-flex ${focusRing}`}
               data-cta="header_nav_secondary" data-cta-goal="contact" data-cta-placement="header"
               data-cta-variant={niche.cta.variant}
             >
@@ -102,7 +102,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className={`flex h-11 w-11 touch-manipulation items-center justify-center border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50 md:hidden ${focusRing}`}
+            className={`flex h-11 w-11 touch-manipulation items-center justify-center border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50 lg:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}

@@ -188,7 +188,7 @@ export function SiteHeader() {
               data-cta-placement="header"
               data-cta-goal={activeCta.header_secondary.href.startsWith("/contact") ? "form" : "pricing"}
               data-cta-variant={ctaVariant}
-              className={`hidden px-3 py-2 text-sm font-bold transition-colors border-b-2 lg:inline-flex ${focusRing} ${
+              className={`hidden whitespace-nowrap px-3 py-2 text-sm font-bold transition-colors border-b-2 xl:inline-flex ${focusRing} ${
                 pathname === activeCta.header_secondary.href ||
                 pathname.startsWith(`${activeCta.header_secondary.href}/`)
                   ? "border-emerald-600 text-emerald-700"
@@ -204,7 +204,7 @@ export function SiteHeader() {
             data-cta-placement="header"
             data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "form" : "pricing"}
             data-cta-variant={ctaVariant}
-            className={`${btnPrimary} hidden min-h-10 min-w-0 px-6 py-2 text-sm sm:inline-flex`}
+            className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm sm:inline-flex`}
           >
             {activeCta.header_primary.label}
           </Link>
