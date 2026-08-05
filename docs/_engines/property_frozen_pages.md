@@ -26,8 +26,11 @@ Format: `- <canonical URL> | <reason> | signoff: none`
 - https://propertytaxpartners.co.uk/thank-you | conversion flow | signoff: none
 - https://propertytaxpartners.co.uk/complete | conversion flow | signoff: none
 - https://propertytaxpartners.co.uk/calculators | calculator hub (lead capture) | signoff: none
-- https://propertytaxpartners.co.uk/calculators/section-24 | calculator | signoff: none
-- https://propertytaxpartners.co.uk/calculators/stamp-duty | calculator | signoff: none
-- https://propertytaxpartners.co.uk/calculators/incorporation-cost | calculator | signoff: none
-- https://propertytaxpartners.co.uk/calculators/portfolio-profitability | calculator | signoff: none
+- https://propertytaxpartners.co.uk/calculators/section-24-calculator | calculator | signoff: none
+- https://propertytaxpartners.co.uk/calculators/stamp-duty-calculator | calculator | signoff: owner 2026-08-05, scoped: metaTitle, H1, schema and internal links only; calculator logic and lead form untouched (Decision 6, PROPERTY_ARCHITECTURE_RECOMMENDATIONS_2026-08-05.md)
+- https://propertytaxpartners.co.uk/calculators/incorporation-cost-calculator | calculator | signoff: none
+- https://propertytaxpartners.co.uk/calculators/portfolio-profitability-calculator | calculator | signoff: none
 - https://propertytaxpartners.co.uk/calculators/mtd-checker | calculator | signoff: none
+
+<!-- Slugs corrected 2026-08-05: four entries previously omitted the -calculator suffix and matched no live route (audit amendment A8). -->
+

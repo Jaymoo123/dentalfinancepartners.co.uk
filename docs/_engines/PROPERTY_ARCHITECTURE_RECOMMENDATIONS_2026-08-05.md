@@ -714,7 +714,16 @@ win beneath a pack at all.
 
 ## 5. Owner decisions
 
-Restated with corrected numbers. Decision 6 is new and follows from amendment A8.
+**ALL SIX ANSWERED by the owner, 2026-08-05 (this session):**
+
+1. Money tier at `/services/*`: APPROVED. Owner note: be comprehensive, build as many money pages as demand warrants (not capped at four), with zero bleed between them. Homepage stays frozen.
+2. `/services` narrows to hub: APPROVED.
+3. City consolidation: APPROVED for ALL cities in one comprehensive release, no London-first 90-day gate. Owner reasoning: locations produce ~1 click and ~0 leads today, nothing material to protect, so the staged read buys nothing. Canonicalisation fix remains a prerequisite. Title/meta quality is folded into each merged survivor rather than run as a separate prior test.
+4. DJH: compete openly on the head terms.
+5. No-GBP rule HOLDS; accept the organic-block cap on the six packed clusters.
+6. Stamp duty calculator rescue: APPROVED both halves (fix the four stale slugs in `property_frozen_pages.md`, scoped sign-off for the metaTitle/H1/schema/internal-link change on the stamp duty calculator; calculator logic and lead form untouched).
+
+Original decision briefs kept below for the record. Restated with corrected numbers. Decision 6 is new and follows from amendment A8.
 
 **Decision 1: the money tier at `/services/*`, and the homepage stays frozen for now.**
 Recommended. Four new nav-linked pages own the four largest commercial clusters. The homepage
