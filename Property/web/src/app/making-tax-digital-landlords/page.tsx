@@ -11,7 +11,7 @@ const URL = `${siteConfig.url}${PATH}`;
 const BLOG = "/blog/making-tax-digital-mtd";
 
 export const metadata: Metadata = {
-  title: "Making Tax Digital for Landlords: 2026 Rules and Deadlines | Property Tax Partners",
+  title: "Making Tax Digital for Landlords: 2026 Rules and Deadlines",
   description:
     "MTD for Income Tax for UK landlords: the £50,000 threshold from April 2026, £30,000 from April 2027, quarterly updates, digital records, penalties and what to do now.",
   alternates: { canonical: URL },

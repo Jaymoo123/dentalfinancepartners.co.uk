@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 
 export const metadata: Metadata = {
-  title: "Stamp Duty Calculator UK 2026: SDLT for Home Buyers and Landlords | Property Tax Partners",
+  title: "Stamp Duty Calculator UK 2026: SDLT for Home Buyers and Landlords",
   description:
     "Free UK stamp duty calculator. Work out SDLT on your purchase in England and Northern Ireland, including the 5% second home and buy-to-let surcharge, first-time buyer relief and the 2% non-resident surcharge.",
   alternates: { canonical: `${siteConfig.url}/calculators/stamp-duty-calculator` },

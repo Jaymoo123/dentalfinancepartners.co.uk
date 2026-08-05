@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 
 export const metadata: Metadata = {
-  title: "Landlord Tax Explained: What UK Landlords Pay in 2026/27 | Property Tax Partners",
+  title: "Landlord Tax Explained: What UK Landlords Pay in 2026/27",
   description:
     "What tax you pay as a UK landlord in 2026/27: income tax on rental profit, the Section 24 restriction, allowable expenses, CGT, the SDLT surcharge and IHT, with worked examples.",
   alternates: { canonical: `${siteConfig.url}/landlord-tax` },

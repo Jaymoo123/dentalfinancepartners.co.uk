@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 const PAGE_PATH = "/services/property-accountant";
 
 export const metadata: Metadata = {
-  title: "Property Accountant for UK Landlords and Investors | Property Tax Partners",
+  title: "Property Accountant for UK Landlords and Investors",
   description:
     "A property accountant for UK landlords and investors: rental accounts, Self Assessment, SPV company accounts, MTD quarterly filing and year-round tax planning.",
   alternates: {

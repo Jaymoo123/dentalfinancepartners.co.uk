@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
 
 export const metadata: Metadata = {
-  title: "Property Accounting Services | Property Tax Partners",
+  title: "Property Accounting Services",
   description:
     "The services we offer: accounting and tax for landlords and property investors, incorporation analysis, non-resident landlord returns and free calculators.",
   alternates: {
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Property Accounting Services | Property Tax Partners",
+    title: "Property Accounting Services",
     description: "Everything we do, in one place: services for landlords and investors, incorporation analysis, non-resident returns and free calculators.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Property Accounting Services | Property Tax Partners",
+    title: "Property Accounting Services",
     description: "Everything we do, in one place: services for landlords and investors, incorporation analysis, non-resident returns and free calculators.",
   },
 };

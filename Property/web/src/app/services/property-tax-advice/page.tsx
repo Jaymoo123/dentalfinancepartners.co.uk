@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 const pageUrl = `${siteConfig.url}/services/property-tax-advice`;
 
 export const metadata: Metadata = {
-  title: "Property Tax Advice from Specialist Advisors | Property Tax Partners",
+  title: "Property Tax Advice from Specialist Advisors",
   description:
     "Specialist property tax advice for UK landlords and investors: one-off consultations on structuring, CGT timing, capital allowances and portfolio IHT. Written advice, no ongoing tie-in.",
   alternates: {

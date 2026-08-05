@@ -7,7 +7,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 const PAGE_PATH = "/section-24";
-const TITLE = "Section 24 Explained: Mortgage Interest Relief for Landlords | Property Tax Partners";
+const TITLE = "Section 24 Explained: Mortgage Interest Relief for Landlords";
 const DESCRIPTION =
   "How Section 24 restricts landlord mortgage interest relief, the 20% tax reducer now and 22% from April 2027, who it hits, worked examples and the ways to cut the cost.";
 

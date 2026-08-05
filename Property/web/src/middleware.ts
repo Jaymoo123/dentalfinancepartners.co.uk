@@ -484,11 +484,12 @@ const CANONICAL_HOST = "www.propertytaxpartners.co.uk";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Enforce canonical host: non-www (and any other host) 308s to www, preserving
-  // path + query. GSC showed both hosts serving the same pages split traffic
-  // (e.g. /locations/leeds 805 www / 140 non-www) — this is the load-bearing fix.
+  // Enforce canonical host: the bare apex 308s to www, preserving path + query.
+  // GSC showed both hosts serving the same pages split traffic (e.g.
+  // /locations/leeds 805 www / 140 non-www). Scoped to the apex only so
+  // localhost and Vercel preview hosts are never redirected.
   const host = request.headers.get("host");
-  if (host && host !== CANONICAL_HOST) {
+  if (host === "propertytaxpartners.co.uk") {
     const url = new URL(request.url);
     url.host = CANONICAL_HOST;
     url.protocol = "https";
