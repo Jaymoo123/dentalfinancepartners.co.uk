@@ -467,8 +467,21 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "capital-gains-tax-selling-rental-property-uk": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide",
 };
 
+const CANONICAL_HOST = "www.propertytaxpartners.co.uk";
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Enforce canonical host: non-www (and any other host) 308s to www, preserving
+  // path + query. GSC showed both hosts serving the same pages split traffic
+  // (e.g. /locations/leeds 805 www / 140 non-www) — this is the load-bearing fix.
+  const host = request.headers.get("host");
+  if (host && host !== CANONICAL_HOST) {
+    const url = new URL(request.url);
+    url.host = CANONICAL_HOST;
+    url.protocol = "https";
+    return NextResponse.redirect(url, 308);
+  }
 
   // Redirect /locations/[city] to corresponding blog post
   const locationMatch = pathname.match(/^\/locations\/([^\/]+)$/);
@@ -520,5 +533,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/blog/:path*", "/locations/:path*"],
+  // Broadened from /blog + /locations only so the host redirect above applies
+  // site-wide; excludes static assets and Next internals per standard pattern.
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };

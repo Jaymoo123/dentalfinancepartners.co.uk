@@ -2,6 +2,7 @@
 title: "Property Accountant Salary: Complete UK Career Guide"
 slug: "property-accountant-salary-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-salary-complete-guide"
+noindex: true
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"

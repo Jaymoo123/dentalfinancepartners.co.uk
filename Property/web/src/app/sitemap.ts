@@ -78,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const post of getAllPosts()) {
+    if (post.noindex) continue;
     const categorySlug = getCategorySlug(post);
     const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({

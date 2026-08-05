@@ -26,6 +26,8 @@ export type BlogFrontmatter = {
   reviewedAt?: string;
   dateModified?: string;
   howToSteps?: { name: string; text: string }[];
+  /** True to noindex this post (e.g. off-topic careers/jobs content kept for internal linking only). */
+  noindex?: boolean;
 };
 
 export type BlogPost = BlogFrontmatter & {

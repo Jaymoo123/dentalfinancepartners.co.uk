@@ -36,6 +36,7 @@ function parsePostFile(filePath: string): BlogPost {
     reviewedAt: fm.reviewedAt,
     dateModified: fm.dateModified,
     howToSteps: fm.howToSteps,
+    noindex: fm.noindex,
     contentHtml: contentWithIds,
   };
 }
