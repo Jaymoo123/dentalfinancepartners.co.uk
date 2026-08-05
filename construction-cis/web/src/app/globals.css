@@ -1,9 +1,10 @@
-/* Tailwind source("..") scans from src/ relative to this file */
+﻿/* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+@source "../../../../packages/web-shared";
 @import "tw-animate-css";
 
 /* ============================================================
-   DESIGN SYSTEM — Trade Tax Specialists
+   DESIGN SYSTEM â€” Trade Tax Specialists
    Construction orange (#f97316) with slate-900 anchor, off-white surfaces, deep ink type.
    Geist Sans + Geist Mono. Typographic-first, generous whitespace.
    ============================================================ */
@@ -49,9 +50,9 @@
 
   /* shadcn chart palette (Recharts ChartContainer resolves --color-* from these).
      Brand-aligned: orange primary for incorporations, amber/slate accents. */
-  --chart-1: #f97316; /* orange-500 — primary brand */
+  --chart-1: #f97316; /* orange-500 â€” primary brand */
   --chart-2: #fb923c; /* orange-400 */
-  --chart-3: #fdba74; /* orange-300 — provisional tail */
+  --chart-3: #fdba74; /* orange-300 â€” provisional tail */
   --chart-4: #1e293b; /* slate-800 */
   --chart-5: #ea6c07; /* orange-600 */
 

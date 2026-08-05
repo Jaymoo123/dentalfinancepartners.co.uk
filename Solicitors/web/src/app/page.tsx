@@ -7,8 +7,10 @@ import { siteConfig } from "@/config/site";
 import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
-import { siteStats, serviceTiers } from "@/config/service-tiers";
+import { siteStats } from "@/config/service-tiers";
+import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { solicitorsRegistry } from "@accounting-network/web-shared/experiments/registries/solicitors";
+import { packages } from "@/config/packages";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
@@ -437,13 +439,21 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl text-center mb-10">
             <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              How we can help
+              Pricing
             </p>
             <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-              Choose the level of support that fits your firm
+              Simple monthly pricing
             </h2>
+            <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
+              Fixed fees for solicitors and law firms. No hourly billing, no surprises.
+            </p>
           </div>
-          <ServiceTiers tiers={serviceTiers} featuredBadge="Most chosen" />
+          <PackagesSection config={packages} registry={solicitorsRegistry} compact />
+          <p className="mt-8 text-center">
+            <Link href="/pricing" className="text-sm font-semibold text-[var(--primary)] hover:underline">
+              See full pricing details and common questions
+            </Link>
+          </p>
         </div>
       </section>
 

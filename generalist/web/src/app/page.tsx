@@ -13,9 +13,11 @@ import {
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { SignupForm } from "@/components/newsletter/SignupForm";
 import { ArrowRight } from "lucide-react";
-import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { siteStats } from "@/config/service-tiers";
+import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { generalistRegistry } from "@accounting-network/web-shared/experiments/registries/generalist";
+import { packages } from "@/config/packages";
 
 const META_TITLE = "Small Business Accountants UK | Holloway Davies";
 const META_DESC =
@@ -363,16 +365,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2c. HOW WE CAN HELP — service tiers */}
+      {/* 2c. PRICING */}
       <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
           <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
-            How we can help
+            Pricing
           </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl mb-10">
-            From self-serve tools to a full annual engagement.
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl mb-2">
+            Simple monthly pricing.
           </h2>
-          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
+          <p className="mb-10 max-w-2xl text-base leading-relaxed text-neutral-600">
+            Fixed fees for limited companies and sole traders. No hourly billing, no surprises.
+          </p>
+          <PackagesSection config={packages} registry={generalistRegistry} compact />
+          <p className="mt-8 text-center">
+            <Link href="/pricing" className="text-sm font-medium text-orange-600 hover:text-orange-700">
+              See full pricing details and common questions
+            </Link>
+          </p>
         </div>
       </section>
 

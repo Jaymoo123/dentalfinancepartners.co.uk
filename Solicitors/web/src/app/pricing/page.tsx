@@ -44,7 +44,11 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <PackagesSection config={packages} registry={solicitorsRegistry} />
+      <section className={sectionYLoose}>
+        <div className={siteContainerLg}>
+          <PackagesSection config={packages} registry={solicitorsRegistry} />
+        </div>
+      </section>
     </>
   );
 }

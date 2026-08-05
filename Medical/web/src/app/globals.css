@@ -1,11 +1,12 @@
-/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+﻿/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
 @import "tailwindcss" source("..");
+@source "../../../../packages/web-shared";
 @import "tw-animate-css";
 
 /*
-  UI ground rules (mobile-first) — Medical Accountants UK
+  UI ground rules (mobile-first) â€” Medical Accountants UK
   - Teal + coral brand; clean clinical aesthetic, high-contrast type.
-  - Touch targets ≥44px; no horizontal bleed; form inputs 16px on mobile.
+  - Touch targets â‰¥44px; no horizontal bleed; form inputs 16px on mobile.
   - Professional, clinical aesthetic for medical sector
 */
 
@@ -101,7 +102,7 @@ main {
   min-width: 0;
 }
 
-/* Hero — sophisticated navy gradient (professional, authoritative) */
+/* Hero â€” sophisticated navy gradient (professional, authoritative) */
 .hero-brand {
   position: relative;
   overflow: hidden;
@@ -134,7 +135,7 @@ main {
   z-index: 1;
 }
 
-/* Transform-only motion — no opacity keyframes (avoids invisible hero on first paint / SSR). */
+/* Transform-only motion â€” no opacity keyframes (avoids invisible hero on first paint / SSR). */
 @media (prefers-reduced-motion: no-preference) {
   .hero-reveal,
   .hero-reveal-delay {

@@ -1,5 +1,6 @@
-/* Tailwind source("..") scans from src/ relative to this file */
+﻿/* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+@source "../../../../packages/web-shared";
 @import "tw-animate-css";
 
 /* ============================================================

@@ -77,9 +77,12 @@ function isQaMode(): boolean {
 export function PackagesSection({
   config,
   registry,
+  compact = false,
 }: {
   config: PackagesConfig;
   registry: SiteExperimentRegistry;
+  /** Homepage embed: tiers + project-work card only (no trust strip / FAQ). */
+  compact?: boolean;
 }) {
   const [selected, setSelected] = useState<SelectedPackage | null>(null);
 
@@ -147,7 +150,7 @@ export function PackagesSection({
                   advisory: true,
                 })
               }
-              className="mt-3 w-full md:w-auto px-6 py-3 text-sm font-bold bg-white border-2 border-[var(--brand-primary)] text-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white transition-all min-h-[44px]"
+              className="mt-3 w-full md:w-auto px-6 py-3 text-sm font-bold rounded-lg bg-white border-2 border-[var(--brand-primary)] text-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white transition-all min-h-[48px] shadow-sm"
             >
               Request a fixed quote
             </button>
@@ -156,6 +159,7 @@ export function PackagesSection({
       </div>
 
       {/* Trust strip */}
+      {!compact && (
       <div className="mt-10 grid gap-4 sm:grid-cols-3 text-center">
         {[
           "No fixed term. Cancel with 1 month's notice.",
@@ -167,8 +171,10 @@ export function PackagesSection({
           </div>
         ))}
       </div>
+      )}
 
       {/* FAQ */}
+      {!compact && (
       <div className="mt-12 sm:mt-16 max-w-3xl mx-auto">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 text-center">Common questions</h2>
         <dl className="mt-6 space-y-6">
@@ -180,6 +186,7 @@ export function PackagesSection({
           ))}
         </dl>
       </div>
+      )}
 
       {selected && (
         <SignupModal config={config} pkg={selected} onClose={() => setSelected(null)} />
@@ -238,10 +245,10 @@ function TierCard({
               advisory: false,
             })
           }
-          className={`w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all border-t-4 mt-auto min-h-[44px] flex items-center justify-center ${
+          className={`w-full text-center px-6 py-3 sm:px-8 sm:py-3.5 text-sm sm:text-base font-bold rounded-lg transition-all mt-auto min-h-[48px] flex items-center justify-center shadow-sm ${
             tier.featured
-              ? "bg-[var(--brand-primary)] border-black/25 text-white hover:opacity-90 active:border-t-2 active:translate-y-0.5"
-              : "bg-slate-50 border-slate-300 text-slate-900 hover:bg-slate-100 hover:border-[var(--brand-primary)] active:border-t-2 active:translate-y-0.5"
+              ? "bg-[var(--brand-primary)] text-white hover:opacity-90 active:translate-y-0.5"
+              : "bg-white border-2 border-slate-300 text-slate-900 hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)] active:translate-y-0.5"
           }`}
         >
           Get started
@@ -380,7 +387,7 @@ function SignupModal({
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="w-full sm:max-w-lg max-h-[92vh] overflow-y-auto bg-white p-6 sm:p-8 sm:rounded-lg shadow-xl">
+      <div className="w-full sm:max-w-md max-h-[92vh] overflow-y-auto bg-white p-6 sm:p-8 rounded-t-2xl sm:rounded-xl shadow-xl">
         <div className="flex items-start justify-between gap-4">
           <div>
             <h2

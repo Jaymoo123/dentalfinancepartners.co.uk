@@ -23,9 +23,11 @@ import { tradeTypes } from "@/data/trade-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { UnionJack } from "@/components/brand/UnionJack";
 import { HeroOffer } from "@/components/intent/HeroOffer";
-import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { siteStats } from "@/config/service-tiers";
+import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { siteRegistries } from "@accounting-network/web-shared/experiments/registries";
+import { packages } from "@/config/packages";
 
 export const metadata: Metadata = {
   title: "CIS Accountants & Construction Tax Specialists | UK",
@@ -336,19 +338,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Service tiers */}
+      {/* Pricing */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">How we work</div>
+            <div className="section-label mb-4">Pricing</div>
             <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
-              From free tools to full CIS accounting.
+              Simple monthly pricing
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
-              Start with our free calculators or speak to us directly. Fixed fees, no surprises.
+              Fixed fees for CIS subcontractors, contractors and trade companies. No hourly billing, no surprises.
             </p>
           </div>
-          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
+          <PackagesSection config={packages} registry={siteRegistries["construction-cis"]} compact />
+          <p className="mt-8 text-center">
+            <Link href="/pricing" className="text-sm font-semibold text-orange-600 hover:text-orange-700">
+              See full pricing details and common questions
+            </Link>
+          </p>
         </div>
       </section>
 

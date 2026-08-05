@@ -9,6 +9,9 @@ import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
 import { JsonLd, buildService, buildFaqPage } from "@/lib/schema/index";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { buildAccountingService } from "@accounting-network/web-shared/schema";
+import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { dentistsRegistry } from "@accounting-network/web-shared/experiments/registries/dentists";
+import { packages } from "@/config/packages";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
@@ -490,6 +493,26 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[var(--border)] bg-[var(--background)]">
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <p className="section-label">Pricing</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
+            Simple monthly pricing.
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+            Fixed fees for associates, practice owners and dental groups. No hourly billing, no surprises.
+          </p>
+          <div className="mt-10">
+            <PackagesSection config={packages} registry={dentistsRegistry} compact />
+          </div>
+          <p className="mt-8 text-center">
+            <Link href="/pricing" className={`text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}>
+              See full pricing details and common questions
+            </Link>
+          </p>
         </div>
       </section>
 
