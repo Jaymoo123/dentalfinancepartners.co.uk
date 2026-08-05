@@ -34,19 +34,59 @@
   "navigation": [
     {
       "label": "Services",
-      "href": "/services"
+      "href": "/services",
+      "children": [
+        {
+          "label": "Property accountant",
+          "href": "/services/property-accountant"
+        },
+        {
+          "label": "Landlord accountant",
+          "href": "/services/landlord-accountant"
+        },
+        {
+          "label": "Non-resident landlords",
+          "href": "/services/non-resident-landlord"
+        },
+        {
+          "label": "Property tax advice",
+          "href": "/services/property-tax-advice"
+        },
+        {
+          "label": "Incorporation",
+          "href": "/incorporation"
+        }
+      ]
     },
     {
       "label": "Pricing",
       "href": "/pricing"
     },
     {
-      "label": "Incorporation",
-      "href": "/incorporation"
-    },
-    {
-      "label": "Landlord Tax",
-      "href": "/landlord-tax"
+      "label": "Resources",
+      "href": "/landlord-tax",
+      "children": [
+        {
+          "label": "Landlord tax guide",
+          "href": "/landlord-tax"
+        },
+        {
+          "label": "Section 24 explained",
+          "href": "/section-24"
+        },
+        {
+          "label": "Making Tax Digital",
+          "href": "/making-tax-digital-landlords"
+        },
+        {
+          "label": "Property tax rates",
+          "href": "/property-tax-rates"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        }
+      ]
     },
     {
       "label": "Calculators",
@@ -55,10 +95,6 @@
     {
       "label": "About",
       "href": "/about"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
     }
   ],
   "footer_links": [

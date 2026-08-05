@@ -1,5 +1,6 @@
-/* Tailwind source("..") scans from src/ relative to this file */
+﻿/* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+@source "../../../../packages/web-shared";
 @import "tw-animate-css";
 
 /* ============================================================
@@ -215,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Prose link styling applies to in-text links only. Tracked CTA buttons
-   (anything carrying data-cta) keep their own colours — without the :not()
+   (anything carrying data-cta) keep their own colours â€” without the :not()
    this rule painted emerald text onto emerald button backgrounds. */
 .prose-blog a:not([data-cta]) {
   color: var(--emerald-700);

@@ -32,7 +32,11 @@ export interface NicheConfig {
     email: string;
     phone: string;
   };
-  navigation: Array<{ label: string; href: string }>;
+  navigation: Array<{
+    label: string;
+    href: string;
+    children?: Array<{ label: string; href: string }>;
+  }>;
   footer_links: Array<{ label: string; href: string }>;
   locations: Array<{ slug: string; title: string }>;
   content_strategy: {

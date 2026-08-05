@@ -11,7 +11,9 @@ import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
-import { ServiceTiers } from "@/components/property/ServiceTiers";
+import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { propertyRegistry } from "@accounting-network/web-shared/experiments/registries/property";
+import { packages } from "@/config/packages";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { locationHref } from "@/lib/locations";
 import { essentialGuides } from "@/lib/essential-guides";
@@ -419,18 +421,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Service Tiers */}
+      {/* Packages / pricing */}
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-              Choose your level of support
+              Simple monthly pricing
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              From free calculators to full-service accounting. Start with DIY tools, upgrade when you need expert help.
+              Fixed fees for landlords and property companies. No hourly billing, no surprises.
             </p>
           </div>
-          <ServiceTiers />
+          <PackagesSection config={packages} registry={propertyRegistry} compact />
+          <p className="mt-8 text-center">
+            <Link href="/pricing" className="text-sm font-bold text-emerald-700 underline hover:text-emerald-800">
+              See full pricing details and common questions
+            </Link>
+          </p>
         </div>
       </section>
 

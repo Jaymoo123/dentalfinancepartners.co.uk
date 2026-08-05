@@ -46,7 +46,11 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-      <PackagesSection config={packages} registry={propertyRegistry} />
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <PackagesSection config={packages} registry={propertyRegistry} />
+        </div>
+      </section>
     </>
   );
 }

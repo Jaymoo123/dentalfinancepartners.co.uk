@@ -60,6 +60,16 @@ export const packages: PackagesConfig = {
     },
   ],
   addOnNote: "Extra self assessments for joint owners +£10 per month each.",
+  qualifier: {
+    label: "How many properties do you have?",
+    options: [
+      { value: "1-3", label: "1 to 3", recommend: "landlord_sa" },
+      { value: "4-10", label: "4 to 10", recommend: "portfolio" },
+      { value: "11+", label: "More than 10", recommend: "portfolio" },
+      { value: "non_resident", label: "I live abroad", recommend: "portfolio" },
+      { value: "company", label: "In a limited company", recommend: "property_ltd" },
+    ],
+  },
   advisory: {
     fromPrice: "from £495",
     blurb:
