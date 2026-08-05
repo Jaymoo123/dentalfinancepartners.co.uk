@@ -19,6 +19,13 @@ export type LeadRow = {
   confidence: string | null;
   rationale: string | null;
   snippet: string;
+  /** Origin surface: classic enquiry vs pkg_pricing_v1 package signup / quote request. */
+  kind: "enquiry" | "package" | "quote";
+};
+
+const KIND_BADGE: Record<string, { label: string; cls: string }> = {
+  package: { label: "package", cls: "bg-emerald-100 text-emerald-800" },
+  quote: { label: "quote", cls: "bg-violet-100 text-violet-800" },
 };
 
 const TIER_BADGE: Record<string, string> = {
@@ -89,7 +96,14 @@ export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
           ) : (
             sorted.map((r) => (
               <tr key={r.id} className="border-t border-slate-100" title={r.rationale ?? undefined}>
-                <td className="px-3 py-2 font-medium text-slate-800">{r.name || "-"}</td>
+                <td className="px-3 py-2 font-medium text-slate-800">
+                  {r.name || "-"}
+                  {KIND_BADGE[r.kind] && (
+                    <span className={`ml-2 inline-block rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide ${KIND_BADGE[r.kind].cls}`}>
+                      {KIND_BADGE[r.kind].label}
+                    </span>
+                  )}
+                </td>
                 <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-400">{r.date.slice(0, 10)}</td>
                 <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-500">{r.site}</td>
                 <td className="hidden px-3 py-2 text-xs text-slate-500 md:table-cell">{r.role || "-"}</td>

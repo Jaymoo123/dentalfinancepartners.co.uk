@@ -11,6 +11,7 @@ import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/con
 import {
   getAllLeads,
   getLeadValueScores,
+  leadKind,
   type LeadValueScore,
 } from "@accounting-network/web-shared/console/adminData";
 import { getSitesRegistry } from "@accounting-network/web-shared/console/estateData";
@@ -46,6 +47,7 @@ export default async function EstateLeadsPage() {
       confidence: s?.confidence ?? null,
       rationale: s?.rationale ?? null,
       snippet: (l.message || "").replace(/\s+/g, " ").slice(0, 80),
+      kind: leadKind(l.extras),
     };
   });
 

@@ -202,6 +202,7 @@ export type LeadInfo = {
   created_at: string;
   visitor_id: string | null;
   session_id: string | null;
+  extras: Record<string, unknown> | null;
 };
 
 export type FormFieldDropoff = {
@@ -328,7 +329,20 @@ export type PersonalizationResult = {
 // ── Query functions ───────────────────────────────────────────────────────
 
 const LEAD_COLS =
-  "id,full_name,email,phone,role,source,message,created_at,visitor_id,session_id";
+  "id,full_name,email,phone,role,source,message,created_at,visitor_id,session_id,extras";
+
+/**
+ * Classify a lead row by its origin surface (pkg_pricing_v1 isolation):
+ *  - "package": self-serve package signup (extras.form_id=package_signup)
+ *  - "quote":   project-work fixed-quote request (package_id=advisory_project)
+ *  - "enquiry": everything else (the classic lead-gen funnel)
+ */
+export function leadKind(
+  extras: Record<string, unknown> | null | undefined,
+): "package" | "quote" | "enquiry" {
+  if (extras?.form_id !== "package_signup") return "enquiry";
+  return extras.package_id === "advisory_project" ? "quote" : "package";
+}
 
 export function getFunnelDaily(siteKey: string, country?: string) {
   return rest<FunnelDay>(
@@ -530,6 +544,25 @@ export function getPackageFunnel(siteKey: string): Promise<PackageFunnelRow[]> {
     select:
       "package_id,pricing_view_sessions,cta_click_sessions,form_start_sessions,signup_sessions,signup_events",
   });
+}
+
+export interface LeadKindCounts {
+  enquiry: number;
+  package: number;
+  quote: number;
+}
+
+/** Lead-table split by origin surface (enquiry vs package signup vs quote request). */
+export async function getLeadKindCounts(siteKey: string): Promise<LeadKindCounts> {
+  const rows = await rest<{ extras: Record<string, unknown> | null; is_test: boolean }>("leads", {
+    source: `eq.${siteKey}`,
+    is_test: "eq.false",
+    select: "extras,is_test",
+    limit: "10000",
+  });
+  const out: LeadKindCounts = { enquiry: 0, package: 0, quote: 0 };
+  for (const r of rows) out[leadKind(r.extras)] += 1;
+  return out;
 }
 
 export function getLeadsPage(siteKey: string, offset: number, limit: number) {

@@ -45,6 +45,8 @@ import {
   type FormLeadCount,
   getPackageFunnel,
   type PackageFunnelRow,
+  getLeadKindCounts,
+  type LeadKindCounts,
   getPersonalizationResults,
   getNurtureFunnel,
   getLeadIntentMix,
@@ -1251,7 +1253,7 @@ export default async function SitePage({
   const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
 
   // Capability-conditional data fetches (only fetch if capability is on)
-  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent, resultGateLeads, packageFunnel] = await Promise.all([
+  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent, resultGateLeads, packageFunnel, leadKindCounts] = await Promise.all([
     caps.experiments ? getExperimentResults(siteKey) : Promise.resolve([] as ExperimentResult[]),
     caps.experiments ? getExperimentArms(siteKey) : Promise.resolve({} as Record<string, ExperimentArms>),
     caps.experiments ? getExperimentFunnel(siteKey) : Promise.resolve({} as Record<string, ExperimentFunnelArms>),
@@ -1260,6 +1262,9 @@ export default async function SitePage({
     caps.leadIntent ? getLeadIntentMix(siteKey) : Promise.resolve([]),
     caps.experiments ? getResultGateLeads(siteKey) : Promise.resolve(null as FormLeadCount | null),
     caps.experiments ? getPackageFunnel(siteKey) : Promise.resolve([] as PackageFunnelRow[]),
+    caps.experiments
+      ? getLeadKindCounts(siteKey)
+      : Promise.resolve({ enquiry: 0, package: 0, quote: 0 } as LeadKindCounts),
   ]);
 
   // Property-only: contactability pipeline data + nurture observability
@@ -1370,6 +1375,10 @@ export default async function SitePage({
                 <p className="mt-1 text-xs text-slate-500">
                   Painted-door pricing test: /pricing views, package CTA clicks, signup form starts, and completed
                   signups. Signups land in the leads ledger tagged package_signup.
+                </p>
+                <p className="mt-1 text-xs font-semibold text-slate-600">
+                  Leads table split: {leadKindCounts.enquiry} enquiries · {leadKindCounts.package} package signups ·{" "}
+                  {leadKindCounts.quote} quote requests
                 </p>
                 <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                   <SnapshotCard label="Pricing page views" value={String(pageRow?.pricing_view_sessions ?? 0)} sub="sessions" />

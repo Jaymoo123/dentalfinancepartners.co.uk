@@ -28,6 +28,32 @@ fixed-quote card per site, signup = normal lead-form fill tagged
 9. DB: view `public.vw_package_funnel` (`supabase/migrations/20260805000001_package_funnel_view.sql`)
 10. Property submit route: `isPackageSignup` early-return block in `Property/web/src/app/api/leads/submit/route.ts`
 
+## Isolation keys (differentiating pricing traffic from the lead-gen funnel)
+
+Every pricing surface is keyed; nothing shares an identifier with the classic
+enquiry funnel:
+
+| Signal | Key | Where |
+|---|---|---|
+| Tier CTA click | `cta_click` with `props.cta = 'package_signup'` + `package_id` | web_events, vw_cta_performance (own row per cta id) |
+| Blog promo click | `cta_click` with `props.cta = 'pricing_promo'` | web_events |
+| Signup form lifecycle | `form_start/form_field_focus/form_submit/lead_submitted` with `props.form_id = 'package_signup'` | web_events, vw_form_lead_counts (own row per form_id) |
+| Qualifier answer | `custom_interaction` with `props.kind = 'pricing_qualifier'` | web_events |
+| Page traffic | `page_view` with `page_path = '/pricing'` | web_events |
+| Experiment stamp | `props.exp = 'pkg_pricing_v1:on'` | every event from an exposed visitor |
+| Lead rows | `extras.form_id = 'package_signup'`; `extras.package_id = 'advisory_project'` = quote request | leads table; `leadKind()` in console adminData |
+
+Console: leads ledger badges package/quote rows; the site Experiments tab
+package card shows the enquiry vs package vs quote lead-table split
+(`getLeadKindCounts`). CAVEAT: the headline `estate_kpis` RPC counts ALL leads
+rows (package signups included) in `leads_all` / conversion KPIs; read the
+split line or filter `extras->>'form_id' IS DISTINCT FROM 'package_signup'`
+when the distinction matters. Deliberately unchanged to keep the RPC stable.
+
+Enquiry-side isolation: classic lead forms all carry their own `form_id`s and
+`data-cta` ids, so excluding pricing is always `props->>'form_id' <>
+'package_signup'` (events) or the extras filter above (leads).
+
 ## Full reversal (kill the experiment cleanly)
 
 Order matters only for builds; data is untouched throughout (leads keep their
