@@ -55,10 +55,6 @@
     {
       "label": "Blog",
       "href": "/blog"
-    },
-    {
-      "label": "Contact",
-      "href": "/contact"
     }
   ],
   "footer_links": [

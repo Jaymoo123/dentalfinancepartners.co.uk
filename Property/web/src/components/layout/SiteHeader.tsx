@@ -71,7 +71,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-4 py-2 text-sm font-bold transition-colors border-b-2 ${focusRing} ${
+                className={`px-3 py-2 text-sm font-bold transition-colors border-b-2 ${focusRing} ${
                   active
                     ? "border-emerald-600 text-emerald-700"
                     : "border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300"
