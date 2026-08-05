@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
 import { dentistsRegistry } from "@accounting-network/web-shared/experiments/registries/dentists";
+import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
@@ -8,7 +9,7 @@ import { packages } from "@/config/packages";
 import { buildBreadcrumbJsonLd, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
-  title: `Pricing | ${siteConfig.name}`,
+  title: `Dental Accountant Pricing and Packages | ${siteConfig.name}`,
   description:
     "Fixed monthly accounting packages for dental associates and practice owners. Clear pricing, no fixed term.",
   alternates: {
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `Pricing | ${siteConfig.name}`,
+    title: `Dental Accountant Pricing and Packages | ${siteConfig.name}`,
     description:
       "Fixed monthly accounting packages for dental associates and practice owners. Clear pricing, no fixed term.",
     url: `${siteConfig.url}/pricing`,
@@ -33,10 +34,11 @@ export default function PricingPage() {
     { label: "Pricing" },
   ];
   const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  const faqSchema = buildPricingFaqJsonLd(packages);
 
   return (
     <>
-      <JsonLd data={[breadcrumbSchema]} />
+      <JsonLd data={[breadcrumbSchema, faqSchema]} />
 
       {/* Hero */}
       <section className="bg-[var(--navy)] text-white">

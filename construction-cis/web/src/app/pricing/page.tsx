@@ -3,6 +3,7 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { siteRegistries } from "@accounting-network/web-shared/experiments/registries";
 
 export const metadata: Metadata = {
@@ -15,6 +16,10 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildPricingFaqJsonLd(packages)) }}
+      />
       <section className="border-b border-neutral-200 bg-[#1e293b] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="section-label mb-6">Pricing</div>

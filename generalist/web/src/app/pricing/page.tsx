@@ -3,15 +3,16 @@ import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { generalistRegistry } from "@accounting-network/web-shared/experiments/registries/generalist";
 
 export const metadata: Metadata = {
-  title: `Pricing`,
+  title: `Accountant Pricing for Sole Traders and Limited Companies`,
   description:
     "Fixed monthly accounting packages for sole traders and limited companies. Clear pricing, no fixed term, cancel with 1 month's notice.",
   alternates: { canonical: `${siteConfig.url}/pricing` },
   openGraph: {
-    title: `Pricing | ${siteConfig.name}`,
+    title: `Accountant Pricing for Sole Traders and Limited Companies | ${siteConfig.name}`,
     description:
       "Fixed monthly accounting packages for sole traders and limited companies. Clear pricing, no fixed term, cancel with 1 month's notice.",
     url: `${siteConfig.url}/pricing`,
@@ -22,6 +23,10 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildPricingFaqJsonLd(packages)) }}
+      />
       <section className={`${sectionY} bg-[#fafaf7]`}>
         <div className={siteContainerLg}>
           <div className="max-w-4xl">

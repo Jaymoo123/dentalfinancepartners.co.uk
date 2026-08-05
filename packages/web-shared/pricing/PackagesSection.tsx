@@ -39,24 +39,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const inputClass =
   "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]/25 transition-colors";
 
-const DEFAULT_FAQ = [
-  {
-    q: "What exactly is included?",
-    a: "Each package covers the statutory compliance work listed on the card: the returns, accounts and filings named there, the software to keep your records straight, and answers to compliance questions by email. Tax planning and advisory work is scoped separately as project work with a fixed quote.",
-  },
-  {
-    q: "How does onboarding work?",
-    a: "Choose a package and complete the short signup form. No payment is taken today. We contact you within 1 working day to confirm scope, collect what we need, and get you set up. If you are switching accountants we handle the professional handover letter for you.",
-  },
-  {
-    q: "Is there a contract or minimum term?",
-    a: "No fixed term. You can cancel with 1 month's notice. If you join partway through your accounting year we will agree any catch-up work and price it before you commit.",
-  },
-  {
-    q: "Do prices include VAT?",
-    a: "Prices are shown exclusive of VAT. Where VAT applies it is added at the standard rate and shown clearly before you confirm anything.",
-  },
-];
+import { PRICING_DEFAULT_FAQ as DEFAULT_FAQ } from "./faq-schema";
 
 interface SelectedPackage {
   id: string;

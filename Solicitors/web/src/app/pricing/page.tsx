@@ -4,9 +4,10 @@ import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { solicitorsRegistry } from "@accounting-network/web-shared/experiments/registries/solicitors";
 
-const TITLE = "Pricing | Fixed Monthly Accounting Packages for Solicitors";
+const TITLE = "Accountancy Pricing for Solicitors and Law Firms";
 const DESCRIPTION =
   "Fixed monthly accounting packages for solicitors and law firms. Clear pricing, no fixed term.";
 
@@ -28,6 +29,10 @@ export default function PricingPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildPricingFaqJsonLd(packages)) }}
+      />
       {/* Hero */}
       <section className="bg-[var(--primary)] text-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>

@@ -3,15 +3,16 @@ import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { packages } from "@/config/packages";
 import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
+import { buildPricingFaqJsonLd } from "@accounting-network/web-shared/pricing/faq-schema";
 import { medicalRegistry } from "@accounting-network/web-shared/experiments/registries/medical";
 
 export const metadata: Metadata = {
-  title: `Pricing`,
+  title: `Medical Accountant Pricing for Locums, GPs and Consultants`,
   description:
     "Fixed monthly accounting packages for locums, GPs and consultants. Clear pricing, no fixed term.",
   alternates: { canonical: `${siteConfig.url}/pricing` },
   openGraph: {
-    title: `Pricing | ${siteConfig.name}`,
+    title: `Medical Accountant Pricing for Locums, GPs and Consultants | ${siteConfig.name}`,
     description:
       "Fixed monthly accounting packages for locums, GPs and consultants. Clear pricing, no fixed term.",
     url: `${siteConfig.url}/pricing`,
@@ -22,6 +23,10 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildPricingFaqJsonLd(packages)) }}
+      />
       <section className={`${sectionY} bg-[var(--background)]`}>
         <div className={siteContainerLg}>
           <div className="max-w-4xl">
