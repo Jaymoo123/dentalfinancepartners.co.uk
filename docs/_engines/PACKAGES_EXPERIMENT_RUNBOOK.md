@@ -88,7 +88,8 @@ hero_secondary, home_cta_primary, home_cta_secondary, home_assist_call,
 pricing_assist_call, contact_pricing_link. All variant-driven CTAs also stamp
 `data-cta-variant`.
 
-**Measurement**: 28-day clock re-dated to the chrome-flip deploy date. Read:
+**Measurement**: 28-day clock re-dated to the chrome-flip deploy: **2026-08-05
+(evening), read due ~2026-09-02**. Read:
 `vw_package_funnel` signups per site/tier; lead volume before/after (total
 leads + signups vs baseline); CTR per data-cta segmented by data-cta-variant;
 assist funnel (home_assist_call / pricing_assist_call -> contact submissions).
