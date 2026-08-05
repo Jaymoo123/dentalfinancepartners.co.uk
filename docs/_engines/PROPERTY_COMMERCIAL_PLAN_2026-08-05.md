@@ -324,3 +324,9 @@ and it is deliberately last and slowest.
 5. **No-GBP rule**: confirmed to still hold. It does not block `property accountant`
    (no local pack) but caps `landlord accountant` and `accountant for landlords`, which
    both carry a 3-result pack.
+
+---
+
+## AUDIT NOTE (2026-08-05, Fable session)
+
+This document was audited against same-day re-pulls. Verdict: directionally right, materially wrong in specific numbers and two conclusions. Before acting on any figure or conclusion here, read docs/_engines/PROPERTY_ANALYSIS_AUDIT_2026-08-05.md (verdict ledger, 13 decision-changing corrections, corrected fact base) and docs/_engines/PROPERTY_ARCHITECTURE_RECOMMENDATIONS_2026-08-05.md (amended plan). Headline corrections: query-mix CTR argument refuted; Phase 4 reference-content ban refuted; city 301 direction reversed (consolidate within city, never into national pages); city denominator is 19 posts + 5 routes; landlord tax zero is Google-exact only (Bing serves it 1,064 impr / 121 clicks); local pack IS present on property accountant, so no-GBP caps 6 clusters; Bing 6-9% CTR norm unsupported.

@@ -1,0 +1,342 @@
+{
+  "property accountant": {
+    "us": {
+      "volume": 720,
+      "cpc": 32.32,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 390,
+      "cpc": 2.64,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 210,
+      "cpc": 3.21,
+      "competition": "LOW"
+    }
+  },
+  "property accountants": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 390,
+      "cpc": 2.64,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 210,
+      "cpc": 3.21,
+      "competition": "LOW"
+    }
+  },
+  "property tax accountant": {
+    "us": {
+      "volume": 260,
+      "cpc": 41.57,
+      "competition": "MEDIUM"
+    },
+    "au": {
+      "volume": 210,
+      "cpc": 6.09,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 20,
+      "cpc": 10.98,
+      "competition": "MEDIUM"
+    }
+  },
+  "landlord accountant": {
+    "us": {
+      "volume": 210,
+      "cpc": 20.16,
+      "competition": "HIGH"
+    },
+    "au": {
+      "volume": 10,
+      "cpc": 20.43,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "MEDIUM"
+    }
+  },
+  "accountant for landlords": {
+    "us": {
+      "volume": 10,
+      "cpc": 51.65,
+      "competition": "HIGH"
+    },
+    "au": {
+      "volume": 10,
+      "cpc": 3.39,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    }
+  },
+  "landlord tax": {
+    "us": {
+      "volume": 140,
+      "cpc": 0.07,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 50,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 20,
+      "cpc": null,
+      "competition": "LOW"
+    }
+  },
+  "landlord tax advice": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "HIGH"
+    },
+    "au": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "HIGH"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    }
+  },
+  "buy to let accountant": {
+    "us": {
+      "volume": 90,
+      "cpc": null,
+      "competition": null
+    },
+    "au": {
+      "volume": 0,
+      "cpc": null,
+      "competition": null
+    },
+    "ca": {
+      "volume": 0,
+      "cpc": null,
+      "competition": null
+    }
+  },
+  "rental property accountant": {
+    "us": {
+      "volume": 260,
+      "cpc": 87.15,
+      "competition": "MEDIUM"
+    },
+    "au": {
+      "volume": 40,
+      "cpc": 8.84,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 50,
+      "cpc": 1.22,
+      "competition": "MEDIUM"
+    }
+  },
+  "property investment accountant": {
+    "us": {
+      "volume": 170,
+      "cpc": 31.2,
+      "competition": "MEDIUM"
+    },
+    "au": {
+      "volume": 210,
+      "cpc": 8.16,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "HIGH"
+    }
+  },
+  "accountant for property management": {
+    "us": {
+      "volume": 590,
+      "cpc": 74.58,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 20,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 70,
+      "cpc": 16.61,
+      "competition": "LOW"
+    }
+  },
+  "property tax advisor": {
+    "us": {
+      "volume": 90,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 20,
+      "cpc": 9.97,
+      "competition": "MEDIUM"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "MEDIUM"
+    }
+  },
+  "property tax specialist": {
+    "us": {
+      "volume": 140,
+      "cpc": 24.74,
+      "competition": "MEDIUM"
+    },
+    "au": {
+      "volume": 260,
+      "cpc": 4.2,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    }
+  },
+  "non resident landlord tax": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    }
+  },
+  "property incorporation": {
+    "us": {
+      "volume": 210,
+      "cpc": 4.79,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 320,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 20,
+      "cpc": null,
+      "competition": "LOW"
+    }
+  },
+  "section 24 tax": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    },
+    "au": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    }
+  },
+  "making tax digital landlords": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    }
+  },
+  "capital gains tax property": {
+    "us": {
+      "volume": 720,
+      "cpc": 3.4,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 880,
+      "cpc": 0.07,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 140,
+      "cpc": null,
+      "competition": "LOW"
+    }
+  },
+  "stamp duty advice": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    },
+    "au": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    }
+  },
+  "landlord tax return": {
+    "us": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "au": {
+      "volume": 10,
+      "cpc": null,
+      "competition": "LOW"
+    },
+    "ca": {
+      "volume": 10,
+      "cpc": null,
+      "competition": null
+    }
+  }
+}
