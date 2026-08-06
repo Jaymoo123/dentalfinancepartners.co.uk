@@ -229,6 +229,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         source: string | null;
       }>("leads", {
         select: "id,full_name,email,phone,source",
+        source: "eq.property",
         id: `in.(${leadIds.join(",")})`,
       });
       const leadsById = new Map(leadsRes.data.map((l) => [l.id, l]));
@@ -420,6 +421,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
             source: string | null;
           }>("leads", {
             select: "id,full_name,phone,source",
+            source: "eq.property",
             id: `in.(${eligibleIds.join(",")})`,
           });
 
