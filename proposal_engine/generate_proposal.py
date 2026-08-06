@@ -30,7 +30,12 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 sys.path.insert(0, os.path.dirname(__file__))
-from config_prospect import PROSPECT
+if "--prospect" in sys.argv:  # load proposal_engine/prospects/<ref>.py instead of config_prospect
+    import importlib
+    _ref = sys.argv[sys.argv.index("--prospect") + 1]
+    PROSPECT = importlib.import_module(f"prospects.{_ref}").PROSPECT
+else:
+    from config_prospect import PROSPECT
 import analysis as an
 try:
     from message_overrides import OVERRIDES  # id 8-char prefix -> final redacted message

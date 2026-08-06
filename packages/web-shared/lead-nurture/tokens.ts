@@ -17,7 +17,7 @@
 
 import crypto from "crypto";
 
-export type LeadTokenIntent = "confirm" | "optout" | "book" | "forwarded" | "profile";
+export type LeadTokenIntent = "confirm" | "optout" | "book" | "forwarded" | "profile" | "offer";
 
 type Payload = { l: string; i: LeadTokenIntent; x: number };
 
@@ -51,6 +51,9 @@ const FORWARDED_TTL_SECONDS = 90 * 24 * 60 * 60; // 90 days (operator confirms t
 // bucket so a late click on a week-old capture email still resolves (a fresh token
 // is also minted on every send, so this only matters for stale email opens).
 const PROFILE_TTL_SECONDS = 30 * 24 * 60 * 60; // 30 days
+// "offer" = the owner's "offer this lead to buyers" action link in the internal
+// notify email. Short-lived: a stale lead should be re-reviewed, not offered.
+const OFFER_TTL_SECONDS = 48 * 60 * 60; // 48 hours
 
 export function mintLeadToken(leadId: string, intent: LeadTokenIntent): string {
   const secret = getLeadTokenSecret();
@@ -64,7 +67,9 @@ export function mintLeadToken(leadId: string, intent: LeadTokenIntent): string {
         ? FORWARDED_TTL_SECONDS
         : intent === "profile"
           ? PROFILE_TTL_SECONDS
-          : CONFIRM_TTL_SECONDS;
+          : intent === "offer"
+            ? OFFER_TTL_SECONDS
+            : CONFIRM_TTL_SECONDS;
   const payload: Payload = {
     l: leadId,
     i: intent,

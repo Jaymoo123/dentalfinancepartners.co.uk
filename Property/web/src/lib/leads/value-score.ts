@@ -85,8 +85,15 @@ function deriveChannel(lead: LeadLike): "form" | "widget" {
   return "form";
 }
 
-export async function scoreLeadValue(lead: LeadLike): Promise<void> {
-  if (!lead.id || !anthropicConfigured()) return;
+export type LeadValueScore = z.infer<typeof ScoreSchema>;
+
+/**
+ * Returns the score so callers (the offer pipeline) can act on it; the classic
+ * fire-and-forget usage (`void scoreLeadValue(...)`) is unchanged. Returns null
+ * on any failure path.
+ */
+export async function scoreLeadValue(lead: LeadLike): Promise<LeadValueScore | null> {
+  if (!lead.id || !anthropicConfigured()) return null;
 
   const result = await generateJson({
     model: "sonnet",
@@ -103,7 +110,7 @@ export async function scoreLeadValue(lead: LeadLike): Promise<void> {
     maxTokens: 512,
     cacheSystem: true,
   });
-  if (!result) return; // generateJson already logged
+  if (!result) return null; // generateJson already logged
 
   // ignoreDuplicates: duplicate webhook delivery hits unique(lead_id) — a no-op.
   const res = await adminInsert(
@@ -121,4 +128,5 @@ export async function scoreLeadValue(lead: LeadLike): Promise<void> {
   if (!res.ok) {
     console.error("leads/value-score: insert failed", res.status);
   }
+  return result;
 }

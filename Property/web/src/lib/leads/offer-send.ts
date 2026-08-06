@@ -1,0 +1,200 @@
+/**
+ * Offer-send: creates lead_offers rows for every matching buyer and emails
+ * each buyer the anonymised teaser with their own Accept link.
+ *
+ * Idempotent by construction: offers insert with onConflict (lead_id, buyer_id)
+ * ignoreDuplicates, and emails go only to buyers whose insert succeeded, so a
+ * double-click on the owner's "Offer to buyers" button sends nothing twice.
+ *
+ * Used by the owner-triggered offer route (Increment 3) and by auto mode
+ * (Increment 7). Buyer emails send under a neutral partner-network identity,
+ * never a site brand.
+ */
+import { getResend } from "@/lib/resend";
+import { adminInsert } from "@/lib/supabase/admin";
+import { matchingBuyers, tierPrice, type LeadBuyer } from "@/lib/leads/offer-config";
+import { tierLabel, type TeaserJson } from "@/lib/leads/offer-teaser";
+import { escapeHtml } from "@/lib/leads/notify-email";
+
+const FONT = "-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+
+export function offerBaseUrl(): string {
+  return (process.env.LEAD_OFFER_BASE_URL || "https://www.propertytaxpartners.co.uk").replace(
+    /\/+$/,
+    "",
+  );
+}
+
+function offerFromAddress(): string {
+  return process.env.LEAD_OFFER_FROM || "Ashfield Partner Network <leads@propertytaxpartners.co.uk>";
+}
+
+// ---------------------------------------------------------------------------
+// Teaser rendering (shared by buyer emails, owner notify email, confirm pages)
+// ---------------------------------------------------------------------------
+
+type TeaserRow = { label: string; value: string };
+
+function teaserRows(t: TeaserJson, priceGbp?: number | null): TeaserRow[] {
+  const rows: TeaserRow[] = [];
+  if (t.site) rows.push({ label: "Vertical", value: t.site });
+  if (t.tier) rows.push({ label: "Tier", value: tierLabel(t.tier) });
+  if (typeof priceGbp === "number") rows.push({ label: "Price (exclusive)", value: `£${priceGbp}` });
+  if (t.est_band) rows.push({ label: "Est. first-year value", value: t.est_band });
+  if (t.intent && t.intent !== "unknown") rows.push({ label: "Topic", value: t.intent });
+  if (t.work_type && t.work_type !== "unknown") rows.push({ label: "Work type", value: t.work_type });
+  if (t.role) rows.push({ label: "Enquirer", value: t.role });
+  if (t.surface) rows.push({ label: "Came via", value: t.surface });
+  if (t.submitted_date) rows.push({ label: "Submitted", value: t.submitted_date });
+  if (t.backlog) rows.push({ label: "Note", value: "Backlog lead (date above is accurate)" });
+  return rows;
+}
+
+export function renderTeaserHtml(t: TeaserJson, priceGbp?: number | null): string {
+  const rows = teaserRows(t, priceGbp)
+    .map(
+      (r) => `<tr>
+        <td style="padding:8px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:13px;font-weight:600;vertical-align:top;">${escapeHtml(r.label)}</td>
+        <td style="padding:8px 0 8px 16px;border-bottom:1px solid #f1f5f9;color:#0f172a;font-size:14px;font-weight:500;vertical-align:top;">${escapeHtml(r.value)}</td>
+      </tr>`,
+    )
+    .join("");
+  const situation = (t.situation ?? "").trim();
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
+      <colgroup><col style="width:150px;" /><col /></colgroup>${rows}
+    </table>${
+      situation
+        ? `<p style="margin:16px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Situation</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+      <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;color:#334155;font-size:14px;line-height:1.6;">${escapeHtml(situation)}</td></tr>
+    </table>`
+        : ""
+    }`;
+}
+
+export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): string {
+  const lines = teaserRows(t, priceGbp).map((r) => `${r.label}: ${r.value}`);
+  const situation = (t.situation ?? "").trim();
+  if (situation) lines.push("", "SITUATION", situation);
+  return lines.join("\n");
+}
+
+// ---------------------------------------------------------------------------
+// Buyer offer email
+// ---------------------------------------------------------------------------
+
+function buyerOfferEmail(
+  buyer: LeadBuyer,
+  teaser: TeaserJson,
+  priceGbp: number,
+  claimUrl: string,
+  expiresHours: number,
+): { subject: string; html: string; text: string } {
+  const subject = `New ${teaser.site || "specialist"} enquiry available, ${tierLabel(teaser.tier)} tier, £${priceGbp} exclusive`;
+  const greetingName = (buyer.contact_name || "").split(/\s+/)[0] || buyer.firm_name;
+  const html = `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"></head>
+<body style="margin:0;padding:0;background:#f1f5f9;font-family:${FONT};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;background:#f1f5f9;">
+<tr><td align="center" style="padding:24px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;">
+<tr><td style="background:#0f172a;padding:22px 28px;">
+<p style="margin:0 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Lead available · exclusive</p>
+<h1 style="margin:0;color:#ffffff;font-size:19px;font-weight:700;line-height:1.3;">${escapeHtml(teaser.site || "Specialist")} enquiry · ${escapeHtml(tierLabel(teaser.tier))} tier</h1>
+</td></tr>
+<tr><td style="padding:24px 28px 28px;color:#334155;font-size:15px;line-height:1.6;">
+<p style="margin:0 0 16px;">Hi ${escapeHtml(greetingName)}, a new enquiry matching your subscription is available. Details below are anonymised; full contact details release to you the moment you accept.</p>
+${renderTeaserHtml(teaser, priceGbp)}
+<table role="presentation" cellpadding="0" cellspacing="0" style="margin:22px 0 8px;"><tr><td style="border-radius:6px;background-color:#0f172a;">
+<a href="${escapeHtml(claimUrl)}" style="display:inline-block;font-family:${FONT};font-size:16px;font-weight:700;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:6px;">Accept this lead · £${priceGbp}</a>
+</td></tr></table>
+<p style="margin:8px 0 0;color:#64748b;font-size:13px;">First firm to accept gets the lead exclusively. This offer expires in ${expiresHours} hours. Accepting adds £${priceGbp} to your monthly invoice under the agreed terms (credit policy applies).</p>
+</td></tr>
+<tr><td style="padding:16px 28px 20px;border-top:1px solid #e2e8f0;">
+<p style="margin:0;color:#94a3b8;font-size:12px;">Ashfield Partner Network · you receive these because your firm has a signed data-sharing agreement with Ashfield Trading Ltd. Reply to pause or change your subscription.</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body></html>`;
+  const text = [
+    `New ${teaser.site || "specialist"} enquiry available (${tierLabel(teaser.tier)} tier, £${priceGbp} exclusive)`,
+    "",
+    renderTeaserText(teaser, priceGbp),
+    "",
+    `Accept this lead: ${claimUrl}`,
+    "",
+    `First firm to accept gets the lead exclusively. Expires in ${expiresHours} hours.`,
+    `Accepting adds £${priceGbp} to your monthly invoice under the agreed terms.`,
+  ].join("\n");
+  return { subject, html, text };
+}
+
+// ---------------------------------------------------------------------------
+// Send
+// ---------------------------------------------------------------------------
+
+const OFFER_EXPIRY_HOURS = 24;
+
+export type SendOffersResult = {
+  matched: number;
+  offered: number;
+  buyers: string[];
+};
+
+type OfferRow = { id: string; token: string; buyer_id: string };
+
+export async function sendOffers(
+  leadId: string,
+  source: string,
+  teaser: TeaserJson,
+): Promise<SendOffersResult> {
+  const price = tierPrice(teaser.tier);
+  if (price === null) return { matched: 0, offered: 0, buyers: [] };
+
+  const buyers = await matchingBuyers(source, teaser.tier);
+  if (buyers.length === 0) return { matched: 0, offered: 0, buyers: [] };
+
+  const expiresAt = new Date(Date.now() + OFFER_EXPIRY_HOURS * 3600_000).toISOString();
+  const offeredTo: string[] = [];
+
+  for (const buyer of buyers) {
+    // ignoreDuplicates: re-offering the same lead to the same buyer is a no-op,
+    // and no email goes out when the insert returns no row.
+    const res = await adminInsert<OfferRow>(
+      "lead_offers",
+      [
+        {
+          lead_id: leadId,
+          buyer_id: buyer.id,
+          teaser,
+          expires_at: expiresAt,
+          price_gbp: price,
+        },
+      ],
+      { onConflict: "lead_id,buyer_id", ignoreDuplicates: true },
+    );
+    if (!res.ok || res.data.length === 0) continue;
+
+    const claimUrl = `${offerBaseUrl()}/api/leads/claim/${res.data[0].token}`;
+    const email = buyerOfferEmail(buyer, teaser, price, claimUrl, OFFER_EXPIRY_HOURS);
+    try {
+      const { error } = await getResend().emails.send({
+        from: offerFromAddress(),
+        to: buyer.email,
+        subject: email.subject,
+        html: email.html,
+        text: email.text,
+      });
+      if (error) {
+        console.error("leads/offer-send: resend error", buyer.ref, error);
+        continue;
+      }
+      offeredTo.push(buyer.firm_name);
+    } catch (err) {
+      console.error("leads/offer-send: send threw", buyer.ref, err);
+    }
+  }
+
+  return { matched: buyers.length, offered: offeredTo.length, buyers: offeredTo };
+}

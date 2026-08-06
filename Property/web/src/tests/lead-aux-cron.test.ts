@@ -20,11 +20,13 @@ const db = {
   lead_contact_events:  [] as Row[],
   lead_nurture_state:   [] as Row[],
   lead_nurture_sends:   [] as Row[],
+  lead_offers:          [] as Row[],
   reset() {
     this.leads               = [];
     this.lead_contact_events = [];
     this.lead_nurture_state  = [];
     this.lead_nurture_sends  = [];
+    this.lead_offers         = [];
   },
 };
 
@@ -40,6 +42,8 @@ function matches(row: Row, params: Record<string, string>): boolean {
       if (String(row[k]) < raw.slice(4)) return false;
     } else if (raw.startsWith("lte.")) {
       if (String(row[k]) > raw.slice(4)) return false;
+    } else if (raw.startsWith("lt.")) {
+      if (!(String(row[k]) < raw.slice(3))) return false;
     }
   }
   return true;
@@ -619,6 +623,24 @@ describe("Scan B: abandoned-booking nudge", () => {
 });
 
 // ── QA gate: reminder copy ────────────────────────────────────────────────────
+
+describe("Scan C: buyer offer expiry sweep", () => {
+  it("flips only overdue offered rows to expired", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-07T12:00:00.000Z"));
+    db.lead_offers.push(
+      { id: "o1", status: "offered", expires_at: "2026-08-07T10:00:00.000Z" }, // overdue
+      { id: "o2", status: "offered", expires_at: "2026-08-08T10:00:00.000Z" }, // still open
+      { id: "o3", status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" }, // claimed, untouched
+    );
+
+    await runLeadAuxScans();
+
+    expect(db.lead_offers.find((o) => o.id === "o1")?.status).toBe("expired");
+    expect(db.lead_offers.find((o) => o.id === "o2")?.status).toBe("offered");
+    expect(db.lead_offers.find((o) => o.id === "o3")?.status).toBe("claimed");
+  });
+});
 
 describe("QA gate: reminder copy", () => {
   const BOOKING_URL = `${SITE_URL}/book?t=tok-${LEAD_ID}-book`;

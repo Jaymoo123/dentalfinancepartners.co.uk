@@ -464,5 +464,19 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
     console.error("[lead-aux-cron] unexpected top-level error", err);
   }
 
+  // ── Scan C: buyer offer expiry ───────────────────────────────────────────
+  // Estate-wide sweep (lives in Property only, like the notify route): any
+  // offer still 'offered' past its expires_at flips to 'expired'. No emails;
+  // the lead simply falls back to normal routing.
+  try {
+    await adminUpdate(
+      "lead_offers",
+      { status: "eq.offered", expires_at: `lt.${new Date().toISOString()}` },
+      { status: "expired" },
+    );
+  } catch (err) {
+    console.error("[lead-aux-cron] offer expiry sweep error", err);
+  }
+
   return { reminders, nudges };
 }
