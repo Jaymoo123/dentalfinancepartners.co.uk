@@ -208,6 +208,14 @@ describe("offerQualifies", () => {
     expect(offerQualifies(lead("generalist"), score("high"))).toBe(false);
     expect(offerQualifies(lead(""), score("high"))).toBe(false);
   });
+  it("READY-gates sources listed in LEAD_OFFER_READY_GATED_SOURCES (property always)", () => {
+    process.env.LEAD_OFFER_READY_GATED_SOURCES = "dentists";
+    expect(offerQualifies(lead("dentists"), score("high"))).toBe(false);
+    expect(offerQualifies(lead("property"), score("high"))).toBe(false); // implicit, always
+    expect(offerQualifies(lead("solicitors"), score("high"))).toBe(true);
+    delete process.env.LEAD_OFFER_READY_GATED_SOURCES;
+  });
+
   it("respects a raised min tier", () => {
     process.env.LEAD_OFFER_MIN_TIER = "high";
     expect(offerQualifies(lead("dentists"), score("medium"))).toBe(false);

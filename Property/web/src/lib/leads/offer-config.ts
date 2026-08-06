@@ -49,6 +49,22 @@ export function offerMinTier(): string {
   return (process.env.LEAD_OFFER_MIN_TIER || "medium").trim();
 }
 
+/**
+ * Sources whose leads are offered only at the nurture READY/handoff stage,
+ * never immediately on arrival (owner decision: READY-stage everywhere is the
+ * end state; a site joins this list the day its nurture stack is armed).
+ * Property is always READY-gated regardless of the env value.
+ */
+export function readyGatedSources(): string[] {
+  const raw = process.env.LEAD_OFFER_READY_GATED_SOURCES ?? "property";
+  const list = raw
+    .split(",")
+    .map((s) => s.trim().toLowerCase())
+    .filter(Boolean);
+  if (!list.includes("property")) list.push("property");
+  return list;
+}
+
 /** Fully automatic offer sends (Increment 7). Ships dark. */
 export function offerAutoMode(): boolean {
   const v = (process.env.LEAD_OFFER_AUTO || "").trim().toLowerCase();
@@ -65,7 +81,7 @@ type ScoreLike = { tier?: string } | null | undefined;
 export function offerQualifies(lead: LeadLike, score: ScoreLike): boolean {
   if (lead.is_test) return false;
   const source = (lead.source ?? "").toLowerCase();
-  if (!source || source === "property") return false;
+  if (!source || readyGatedSources().includes(source)) return false;
   if (!offeredSources().includes(source)) return false;
   const tier = score?.tier ?? "";
   if (!tierAtLeast(tier, offerMinTier())) return false;
