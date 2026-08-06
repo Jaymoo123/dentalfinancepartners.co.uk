@@ -18,10 +18,6 @@ import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
 import { splitContentEarly, splitRemainderForGate, splitContentAtMidScroll } from "@accounting-network/web-shared/content/blog-splits";
-import { PricingPromoCard } from "@accounting-network/web-shared/pricing/PricingPromoCard";
-import { packages } from "@/config/packages";
-
-const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -297,11 +293,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </>
                 )}
               </div>
-
-              <PricingPromoCard
-                fromPrice={cheapestTier.price}
-                blurb="Landlord self assessment, portfolio returns and property company accounts, all for a fixed monthly fee. Cancel with 1 month's notice."
-              />
 
               {isMTDPost ? (
                 <div className="mt-12">

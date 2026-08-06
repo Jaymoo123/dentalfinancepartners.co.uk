@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "/services",
-    "/pricing",
     "/services/property-accountant",
     "/services/landlord-accountant",
     "/services/property-tax-advice",

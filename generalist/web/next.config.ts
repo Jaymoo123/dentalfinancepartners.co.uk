@@ -31,6 +31,11 @@ const nextConfig: NextConfig = {
     // loser markdown removed.
     return [
       {
+        source: "/pricing",
+        destination: "/services",
+        permanent: true,
+      },
+      {
         source: "/blog/limited-company-tax/director-loan-write-off-tax-implications",
         destination: "/blog/limited-company-tax/directors-loan-written-off-tax-implications",
         permanent: true,

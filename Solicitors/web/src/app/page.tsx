@@ -7,11 +7,8 @@ import { siteConfig } from "@/config/site";
 import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { siteStats } from "@/config/service-tiers";
-import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
-import { solicitorsRegistry } from "@accounting-network/web-shared/experiments/registries/solicitors";
-import { packages } from "@/config/packages";
-import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { siteStats, serviceTiers } from "@/config/service-tiers";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { niche } from "@/config/niche-loader";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
@@ -458,24 +455,13 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl text-center mb-10">
             <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Pricing
+              How we can help
             </p>
             <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-              Simple monthly pricing
+              Choose the level of support that fits your firm
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-              Fixed fees for solicitors and law firms. No hourly billing, no surprises.
-            </p>
           </div>
-          <PackagesSection config={packages} registry={solicitorsRegistry} compact />
-          {packagesMode ? (
-            <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
-          ) : null}
-          <p className="mt-8 text-center">
-            <Link href="/pricing" className="text-sm font-semibold text-[var(--primary)] hover:underline">
-              See full pricing details and common questions
-            </Link>
-          </p>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most chosen" />
         </div>
       </section>
 
@@ -587,13 +573,6 @@ export default function HomePage() {
               <div className="mt-10">
                 <LeadForm />
               </div>
-
-              <p className="mt-6 text-center text-sm text-[var(--ink-soft)]">
-                Prefer to see fixed prices first?{" "}
-                <Link href="/pricing" className="font-semibold text-[var(--primary)] hover:underline">
-                  View pricing
-                </Link>
-              </p>
             </div>
           </div>
         </section>

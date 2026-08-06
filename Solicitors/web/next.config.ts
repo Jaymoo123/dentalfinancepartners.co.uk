@@ -54,6 +54,12 @@ const nextConfig: NextConfig = {
         destination: "/blog/vat-compliance",
         permanent: true,
       },
+      // 2026-08-06: packages/pricing experiment removed; /pricing page deleted.
+      {
+        source: "/pricing",
+        destination: "/services",
+        permanent: true,
+      },
     ];
   },
   async headers() {

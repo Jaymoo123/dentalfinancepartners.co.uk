@@ -8,12 +8,9 @@ import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
 import { buildFaqPage } from "@/lib/schema";
 import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { siteStats } from "@/config/service-tiers";
-import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
-import { medicalRegistry } from "@accounting-network/web-shared/experiments/registries/medical";
-import { packages } from "@/config/packages";
-import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { niche } from "@/config/niche-loader";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
@@ -466,24 +463,13 @@ export default function HomePage() {
 
       <section className="border-t border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <p className="section-label">Pricing</p>
+          <p className="section-label">How we work with you</p>
           <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-            Simple monthly pricing.
+            Choose how much support you need.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Fixed fees for GPs, consultants and locum doctors. No hourly billing, no surprises.
-          </p>
           <div className="mt-10">
-            <PackagesSection config={packages} registry={medicalRegistry} compact />
-            {packagesMode ? (
-              <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
-            ) : null}
+            <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
           </div>
-          <p className="mt-8 text-center">
-            <Link href="/pricing" className="text-sm font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4">
-              See full pricing details and common questions
-            </Link>
-          </p>
         </div>
       </section>
 
@@ -539,9 +525,6 @@ export default function HomePage() {
                 </Link>
                 <Link href="/contact" className={btnMailOutline}>
                   Contact us
-                </Link>
-                <Link href="/pricing" className={btnMailOutline}>
-                  View pricing
                 </Link>
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>

@@ -14,16 +14,12 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { SignupForm } from "@/components/newsletter/SignupForm";
 import { ArrowRight } from "lucide-react";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { siteStats } from "@/config/service-tiers";
-import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
-import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
-import { generalistRegistry } from "@accounting-network/web-shared/experiments/registries/generalist";
-import { packages } from "@/config/packages";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { niche } from "@/config/niche-loader";
-import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
 
 const activeCta = getActiveCta(niche);
-const packagesMode = isPackagesMode(niche);
 
 const META_TITLE = "Small Business Accountants UK | Holloway Davies";
 const META_DESC =
@@ -383,27 +379,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2c. PRICING */}
+      {/* 2c. HOW WE CAN HELP — service tiers */}
       <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
           <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
-            Pricing
+            How we can help
           </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl mb-2">
-            Simple monthly pricing.
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl mb-10">
+            From self-serve tools to a full annual engagement.
           </h2>
-          <p className="mb-10 max-w-2xl text-base leading-relaxed text-neutral-600">
-            Fixed fees for limited companies and sole traders. No hourly billing, no surprises.
-          </p>
-          <PackagesSection config={packages} registry={generalistRegistry} compact />
-          {packagesMode ? (
-            <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
-          ) : null}
-          <p className="mt-8 text-center">
-            <Link href="/pricing" className="text-sm font-medium text-orange-600 hover:text-orange-700">
-              See full pricing details and common questions
-            </Link>
-          </p>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
         </div>
       </section>
 

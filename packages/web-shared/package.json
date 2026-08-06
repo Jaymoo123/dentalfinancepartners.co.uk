@@ -105,11 +105,6 @@
     "./leads/MobileToolSlot": "./leads/MobileToolSlot.tsx",
     "./content/blog-splits": "./content/blog-splits.ts",
     "./components/ServiceTiers": "./components/ServiceTiers.tsx",
-    "./pricing/types": "./pricing/types.ts",
-    "./pricing/PackagesSection": "./pricing/PackagesSection.tsx",
-    "./pricing/PricingPromoCard": "./pricing/PricingPromoCard.tsx",
-    "./pricing/PlanAssistStrip": "./pricing/PlanAssistStrip.tsx",
-    "./pricing/faq-schema": "./pricing/faq-schema.ts",
     "./components/StatsBar": "./components/StatsBar.tsx"
   },
   "optionalPeerDependencies": {

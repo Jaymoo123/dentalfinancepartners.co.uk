@@ -22,6 +22,10 @@ const nextConfig: NextConfig = {
     // X-Frame-Options DENY + frame-ancestors 'none' everywhere, breaking embeds.
     return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
+  async redirects() {
+    // Packages experiment removed: /pricing page deleted, send traffic to /services.
+    return [{ source: "/pricing", destination: "/services", permanent: true }];
+  },
 };
 
 export default nextConfig;

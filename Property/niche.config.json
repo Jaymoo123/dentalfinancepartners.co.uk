@@ -59,10 +59,6 @@
       ]
     },
     {
-      "label": "Pricing",
-      "href": "/pricing"
-    },
-    {
       "label": "Resources",
       "href": "/landlord-tax",
       "children": [
@@ -109,10 +105,6 @@
     {
       "label": "Property tax advice",
       "href": "/services/property-tax-advice"
-    },
-    {
-      "label": "Pricing",
-      "href": "/pricing"
     },
     {
       "label": "Non-resident landlords",
@@ -241,7 +233,7 @@
     }
   },
   "cta": {
-    "variant": "packages",
+    "variant": "leadgen",
     "variants": {
       "packages": {
         "header_primary": {
@@ -316,8 +308,8 @@
           "heading": "Get your property tax sorted today",
           "body": "Book a free consultation. We'll discuss your situation, model the numbers, and give you clear recommendations.",
           "primary": {
-            "label": "View pricing",
-            "href": "/pricing"
+            "label": "Book free consultation",
+            "href": "/contact"
           }
         }
       }

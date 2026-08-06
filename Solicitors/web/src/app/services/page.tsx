@@ -258,19 +258,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Self-serve pricing banner */}
-      <section className="bg-[var(--surface)] border-b border-[var(--border)]">
-        <div className={`${siteContainerLg} py-4`}>
-          <p className="text-center text-sm text-[var(--ink-soft)]">
-            Prefer a fixed monthly package?{" "}
-            <Link href="/pricing" className="font-semibold text-[var(--primary)] hover:underline">
-              See our pricing
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
-
       {/* Pricing tiers */}
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionY}`}>

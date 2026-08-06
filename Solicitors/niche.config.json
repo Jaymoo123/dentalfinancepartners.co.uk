@@ -37,10 +37,6 @@
       "href": "/services"
     },
     {
-      "label": "Pricing",
-      "href": "/pricing"
-    },
-    {
       "label": "Pillar Guides",
       "href": "/solicitor-guides"
     },
@@ -63,10 +59,6 @@
     }
   ],
   "footer_links": [
-    {
-      "label": "Pricing",
-      "href": "/pricing"
-    },
     {
       "label": "Locations",
       "href": "/locations"
@@ -180,7 +172,7 @@
     }
   },
   "cta": {
-    "variant": "packages",
+    "variant": "leadgen",
     "variants": {
       "packages": {
         "header_primary": {
@@ -249,10 +241,6 @@
           "primary": {
             "label": "Book your free consultation",
             "href": "/contact"
-          },
-          "secondary": {
-            "label": "View pricing",
-            "href": "/pricing"
           }
         }
       }

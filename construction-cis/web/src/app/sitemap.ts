@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/pricing`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/cis-refund`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/gross-payment-status`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/cis-invoice-template`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },

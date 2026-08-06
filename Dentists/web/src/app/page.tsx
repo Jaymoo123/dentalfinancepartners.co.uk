@@ -9,10 +9,6 @@ import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
 import { JsonLd, buildService, buildFaqPage } from "@/lib/schema/index";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { buildAccountingService } from "@accounting-network/web-shared/schema";
-import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
-import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
-import { dentistsRegistry } from "@accounting-network/web-shared/experiments/registries/dentists";
-import { packages } from "@/config/packages";
 import { niche } from "@/config/niche-loader";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
@@ -511,29 +507,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-[var(--border)] bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Pricing</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            Simple monthly pricing.
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Fixed fees for associates, practice owners and dental groups. No hourly billing, no surprises.
-          </p>
-          <div className="mt-10">
-            <PackagesSection config={packages} registry={dentistsRegistry} compact />
-            {packagesMode ? (
-              <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
-            ) : null}
-          </div>
-          <p className="mt-8 text-center">
-            <Link href="/pricing" className={`text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}>
-              See full pricing details and common questions
-            </Link>
-          </p>
-        </div>
-      </section>
-
       {packagesMode ? (
       <section className="bg-[var(--surface)]">
         <div className={siteContainerLg}>
@@ -595,9 +568,6 @@ export default function HomePage() {
                 </Link>
                 <Link href="/contact" className={btnMailOutline}>
                   Get in touch
-                </Link>
-                <Link href="/pricing" className={btnMailOutline}>
-                  View pricing
                 </Link>
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>

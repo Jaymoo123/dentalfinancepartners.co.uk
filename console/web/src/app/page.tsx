@@ -40,8 +40,6 @@ import {
 import {
   getTimeseries,
   getFunnelDaily,
-  getEstatePricingInterest,
-  getPricingInterestBySite,
 } from "@accounting-network/web-shared/console/adminData";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
@@ -108,7 +106,7 @@ export default async function EstatePage() {
   const startOfTodayUTC = new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   );
-  const [sites, overview, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily, pricingInterest, pricingBySite] =
+  const [sites, overview, channels, errors, leads, kpi7, kpiAll, estate30d, kpiToday, kpi30, estateAllDaily] =
     await Promise.all([
       getSitesRegistry(),
       getEstateOverview(7),
@@ -121,8 +119,6 @@ export default async function EstatePage() {
       getEstateKpis(startOfTodayUTC.toISOString(), now.toISOString()),
       getEstateKpis(new Date(now.getTime() - 30 * 86400_000).toISOString(), now.toISOString()),
       getEstateTimeseries("1 day", new Date("2000-01-01").toISOString(), now.toISOString()),
-      getEstatePricingInterest(),
-      getPricingInterestBySite(),
     ]);
 
   // KPI reducer: sum SiteKpis[] into estate totals
@@ -274,142 +270,6 @@ export default async function EstatePage() {
             status={totalErrors > 0 ? "warn" : "ok"}
             compact
           />
-        </div>
-
-        {/* Pricing interest — self-serve packages experiment (pkg_pricing_v1) */}
-        <h2 className="mt-10 text-lg font-bold text-slate-900">Pricing interest</h2>
-        <p className="mt-1 text-xs text-slate-500">
-          Self-serve packages experiment, all sites combined, since launch (5 Aug 2026). Human sessions only.
-          Signups and quote requests also appear in the leads ledger tagged package / quote.
-        </p>
-        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-          <SnapshotCard
-            label="Pricing page visits"
-            value={pricingInterest.pricing_view_sessions.toLocaleString("en-GB")}
-            sub="sessions on /pricing"
-            accent="sky"
-            compact
-          />
-          <SnapshotCard
-            label="Package clicks"
-            value={pricingInterest.cta_click_sessions.toLocaleString("en-GB")}
-            sub="chose a package"
-            compact
-          />
-          <SnapshotCard
-            label="Signup forms started"
-            value={pricingInterest.form_start_sessions.toLocaleString("en-GB")}
-            sub="opened and typed"
-            compact
-          />
-          <SnapshotCard
-            label="Package signups"
-            value={String(pricingInterest.package_signups)}
-            accent="emerald"
-            compact
-          />
-          <SnapshotCard
-            label="Quote requests"
-            value={String(pricingInterest.quote_requests)}
-            sub="project work"
-            accent="emerald"
-            compact
-          />
-        </div>
-
-        {/* Per-site pricing interest + engagement depth */}
-        <div className="mt-4 grid gap-4 lg:grid-cols-[2fr_1fr]">
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-              By site
-            </h3>
-            <p className="mt-1 text-xs text-slate-500">
-              Engaged time and scroll are whole-session values for sessions that viewed /pricing
-              (not time on the pricing page alone).
-            </p>
-            <div className="mt-2 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-              <table className="w-full text-sm">
-                <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                  <tr>
-                    <th className="px-3 py-2">Site</th>
-                    <th className="px-3 py-2 text-right">Visits</th>
-                    <th className="px-3 py-2 text-right">Clicks</th>
-                    <th className="px-3 py-2 text-right">Forms</th>
-                    <th className="px-3 py-2 text-right">Signups</th>
-                    <th className="px-3 py-2 text-right">Quotes</th>
-                    <th className="px-3 py-2 text-right">Engaged (avg/med)</th>
-                    <th className="px-3 py-2 text-right">Scroll</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricingBySite.sites.length === 0 ? (
-                    <tr>
-                      <td colSpan={8} className="px-3 py-4 text-center text-slate-400">
-                        No pricing traffic yet.
-                      </td>
-                    </tr>
-                  ) : (
-                    pricingBySite.sites.map((r) => (
-                      <tr key={r.site_key} className="border-t border-slate-100">
-                        <td className="px-3 py-2 font-medium text-slate-800">
-                          <Link href={`/site/${r.site_key}`} className="hover:underline whitespace-nowrap">
-                            {sites.find((s) => s.site_key === r.site_key)?.display_name ?? r.site_key}
-                          </Link>
-                        </td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-700">{r.pricing_view_sessions}</td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-700">{r.cta_click_sessions}</td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-700">{r.form_start_sessions}</td>
-                        <td className="px-3 py-2 text-right font-mono text-emerald-700">{r.package_signups}</td>
-                        <td className="px-3 py-2 text-right font-mono text-emerald-700">{r.quote_requests}</td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-500">
-                          {r.avg_engaged_s != null ? `${r.avg_engaged_s}s / ${r.median_engaged_s ?? "-"}s` : "-"}
-                        </td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-500">
-                          {r.avg_scroll_pct != null ? `${r.avg_scroll_pct}%` : "-"}
-                        </td>
-                      </tr>
-                    ))
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-              By package
-            </h3>
-            <p className="mt-1 text-xs text-slate-500">All sites combined, since launch.</p>
-            <div className="mt-2 overflow-hidden rounded-xl border border-slate-200 bg-white">
-              <table className="w-full text-sm">
-                <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                  <tr>
-                    <th className="px-3 py-2">Package</th>
-                    <th className="px-3 py-2 text-right">Clicks</th>
-                    <th className="px-3 py-2 text-right">Forms</th>
-                    <th className="px-3 py-2 text-right">Signups</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricingBySite.tiers.length === 0 ? (
-                    <tr>
-                      <td colSpan={4} className="px-3 py-4 text-center text-slate-400">
-                        No package engagement yet.
-                      </td>
-                    </tr>
-                  ) : (
-                    pricingBySite.tiers.map((t) => (
-                      <tr key={t.package_id} className="border-t border-slate-100">
-                        <td className="px-3 py-2 font-medium text-slate-800">{t.package_id}</td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-700">{t.cta_click_sessions}</td>
-                        <td className="px-3 py-2 text-right font-mono text-slate-700">{t.form_start_sessions}</td>
-                        <td className="px-3 py-2 text-right font-mono text-emerald-700">{t.signup_sessions}</td>
-                      </tr>
-                    ))
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </div>
         </div>
 
         {/* Estate trends */}

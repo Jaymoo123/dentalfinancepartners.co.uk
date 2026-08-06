@@ -24,11 +24,8 @@ import { buildFaqJsonLd } from "@/lib/schema";
 import { UnionJack } from "@/components/brand/UnionJack";
 import { HeroOffer } from "@/components/intent/HeroOffer";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { siteStats } from "@/config/service-tiers";
-import { PackagesSection } from "@accounting-network/web-shared/pricing/PackagesSection";
-import { PlanAssistStrip } from "@accounting-network/web-shared/pricing/PlanAssistStrip";
-import { siteRegistries } from "@accounting-network/web-shared/experiments/registries";
-import { packages } from "@/config/packages";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { niche } from "@/config/niche-loader";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
@@ -206,7 +203,7 @@ export default function HomePage() {
                 <Link
                   href={activeCta.hero_primary.href}
                   className={`inline-flex min-h-12 items-center justify-center text-base sm:text-lg font-medium text-orange-300 hover:text-orange-200 transition-colors text-center underline underline-offset-4 ${focusRing}`}
-                  data-cta="hero_primary" data-cta-placement="hero" data-cta-goal="pricing"
+                  data-cta="hero_primary" data-cta-placement="hero" data-cta-goal="lead"
                   data-cta-variant={niche.cta.variant}
                 >
                   {activeCta.hero_primary.label}
@@ -346,27 +343,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Service tiers */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Pricing</div>
+            <div className="section-label mb-4">How we work</div>
             <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
-              Simple monthly pricing
+              From free tools to full CIS accounting.
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
-              Fixed fees for CIS subcontractors, contractors and trade companies. No hourly billing, no surprises.
+              Start with our free calculators or speak to us directly. Fixed fees, no surprises.
             </p>
           </div>
-          <PackagesSection config={packages} registry={siteRegistries["construction-cis"]} compact />
-          {packagesMode ? (
-            <PlanAssistStrip dataCta="home_assist_call" ctaVariant={niche.cta.variant} />
-          ) : null}
-          <p className="mt-8 text-center">
-            <Link href="/pricing" className="text-sm font-semibold text-orange-600 hover:text-orange-700">
-              See full pricing details and common questions
-            </Link>
-          </p>
+          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
         </div>
       </section>
 
@@ -509,7 +498,7 @@ export default function HomePage() {
                     <Link
                       href={activeCta.home_cta.primary.href}
                       className={btnPrimary}
-                      data-cta="home_cta_primary" data-cta-placement="home_cta" data-cta-goal="pricing"
+                      data-cta="home_cta_primary" data-cta-placement="home_cta" data-cta-goal="lead"
                       data-cta-variant={niche.cta.variant}
                     >
                       {activeCta.home_cta.primary.label}

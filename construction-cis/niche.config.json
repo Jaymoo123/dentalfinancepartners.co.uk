@@ -36,10 +36,6 @@
       "href": "/services"
     },
     {
-      "label": "Pricing",
-      "href": "/pricing"
-    },
-    {
       "label": "CIS Refund",
       "href": "/cis-refund"
     },
@@ -68,10 +64,6 @@
     {
       "label": "Services",
       "href": "/services"
-    },
-    {
-      "label": "Pricing",
-      "href": "/pricing"
     },
     {
       "label": "CIS Refund",
@@ -297,7 +289,7 @@
     }
   },
   "cta": {
-    "variant": "packages",
+    "variant": "leadgen",
     "variants": {
       "packages": {
         "header_primary": {
@@ -338,8 +330,8 @@
           "href": "/contact"
         },
         "hero_primary": {
-          "label": "View pricing",
-          "href": "/pricing"
+          "label": "Book a free call",
+          "href": "/contact"
         },
         "sticky": {
           "primary": "Check your CIS refund",

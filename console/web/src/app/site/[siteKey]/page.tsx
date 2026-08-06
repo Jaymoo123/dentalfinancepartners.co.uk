@@ -43,10 +43,6 @@ import {
   getExperimentFunnel,
   getResultGateLeads,
   type FormLeadCount,
-  getPackageFunnel,
-  type PackageFunnelRow,
-  getLeadKindCounts,
-  type LeadKindCounts,
   getPersonalizationResults,
   getNurtureFunnel,
   getLeadIntentMix,
@@ -1253,7 +1249,7 @@ export default async function SitePage({
   const newVsReturning: Array<[string, number]> = [["Returning", returningCount], ["New", newCount]];
 
   // Capability-conditional data fetches (only fetch if capability is on)
-  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent, resultGateLeads, packageFunnel, leadKindCounts] = await Promise.all([
+  const [experimentResults, experimentArms, experimentFunnel, personalisationResults, nurtureFunnel, leadIntent, resultGateLeads] = await Promise.all([
     caps.experiments ? getExperimentResults(siteKey) : Promise.resolve([] as ExperimentResult[]),
     caps.experiments ? getExperimentArms(siteKey) : Promise.resolve({} as Record<string, ExperimentArms>),
     caps.experiments ? getExperimentFunnel(siteKey) : Promise.resolve({} as Record<string, ExperimentFunnelArms>),
@@ -1261,10 +1257,6 @@ export default async function SitePage({
     caps.nurture ? getNurtureFunnel(siteKey) : Promise.resolve([]),
     caps.leadIntent ? getLeadIntentMix(siteKey) : Promise.resolve([]),
     caps.experiments ? getResultGateLeads(siteKey) : Promise.resolve(null as FormLeadCount | null),
-    caps.experiments ? getPackageFunnel(siteKey) : Promise.resolve([] as PackageFunnelRow[]),
-    caps.experiments
-      ? getLeadKindCounts(siteKey)
-      : Promise.resolve({ enquiry: 0, package: 0, quote: 0 } as LeadKindCounts),
   ]);
 
   // Property-only: contactability pipeline data + nurture observability
@@ -1356,63 +1348,6 @@ export default async function SitePage({
     <div className="space-y-8">
       {caps.experiments ? (
         <>
-          {packageFunnel.length > 0 && (() => {
-            const pageRow = packageFunnel.find((r) => r.package_id === null);
-            const pkgRows = packageFunnel
-              .filter((r): r is PackageFunnelRow & { package_id: string } => r.package_id !== null)
-              .sort((a, b) => b.signup_sessions - a.signup_sessions || b.cta_click_sessions - a.cta_click_sessions);
-            const totals = pkgRows.reduce(
-              (acc, r) => ({
-                cta: acc.cta + r.cta_click_sessions,
-                starts: acc.starts + r.form_start_sessions,
-                signups: acc.signups + r.signup_sessions,
-              }),
-              { cta: 0, starts: 0, signups: 0 },
-            );
-            return (
-              <div>
-                <h2 className="text-lg font-bold text-slate-900">Self-serve packages (pkg_pricing_v1)</h2>
-                <p className="mt-1 text-xs text-slate-500">
-                  Painted-door pricing test: /pricing views, package CTA clicks, signup form starts, and completed
-                  signups. Signups land in the leads ledger tagged package_signup.
-                </p>
-                <p className="mt-1 text-xs font-semibold text-slate-600">
-                  Leads table split: {leadKindCounts.enquiry} enquiries · {leadKindCounts.package} package signups ·{" "}
-                  {leadKindCounts.quote} quote requests
-                </p>
-                <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                  <SnapshotCard label="Pricing page views" value={String(pageRow?.pricing_view_sessions ?? 0)} sub="sessions" />
-                  <SnapshotCard label="Package CTA clicks" value={String(totals.cta)} sub="sessions" />
-                  <SnapshotCard label="Signup form starts" value={String(totals.starts)} sub="sessions" />
-                  <SnapshotCard label="Signups" value={String(totals.signups)} accent="emerald" />
-                </div>
-                {pkgRows.length > 0 && (
-                  <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-                    <table className="w-full text-sm">
-                      <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
-                        <tr>
-                          <th className="px-3 py-2">Package</th>
-                          <th className="px-3 py-2">CTA clicks</th>
-                          <th className="px-3 py-2">Form starts</th>
-                          <th className="px-3 py-2">Signups</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {pkgRows.map((r) => (
-                          <tr key={r.package_id} className="border-t border-slate-100">
-                            <td className="px-3 py-2 font-medium text-slate-900">{r.package_id}</td>
-                            <td className="px-3 py-2">{r.cta_click_sessions}</td>
-                            <td className="px-3 py-2">{r.form_start_sessions}</td>
-                            <td className="px-3 py-2 font-semibold">{r.signup_sessions}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-              </div>
-            );
-          })()}
           {resultGateLeads && (
             <div>
               <h2 className="text-lg font-bold text-slate-900">Result gate (shipped default)</h2>

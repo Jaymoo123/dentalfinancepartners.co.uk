@@ -165,15 +165,6 @@ export default function ServicesPage() {
               sure which fits, book a call and we will point you at the right one.
             </p>
           </div>
-          <Link
-            href="/pricing"
-            className="mb-8 sm:mb-12 flex items-center justify-between gap-4 bg-emerald-50 border-2 border-emerald-200 px-6 py-4 transition-colors hover:border-emerald-600"
-          >
-            <span className="text-base font-semibold text-slate-900">
-              Prefer a fixed monthly package? See our pricing.
-            </span>
-            <span className="text-sm font-bold text-emerald-700 whitespace-nowrap">View pricing →</span>
-          </Link>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {hub.map((item) => (
               <Link

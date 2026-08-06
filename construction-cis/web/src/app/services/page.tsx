@@ -164,19 +164,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Pricing banner */}
-      <section className="border-t border-neutral-200 bg-orange-50 py-6">
-        <div className={siteContainerLg}>
-          <p className="text-sm font-medium text-neutral-800">
-            Prefer a fixed monthly package?{" "}
-            <Link href="/pricing" className="font-semibold text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
-              See our pricing
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
-
       {/* Service tiers */}
       <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>

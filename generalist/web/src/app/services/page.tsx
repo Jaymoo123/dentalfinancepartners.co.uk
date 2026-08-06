@@ -174,16 +174,6 @@ export default function ServicesPage() {
                 Try the calculators
               </Link>
             </div>
-            <p className="mt-6 text-sm text-neutral-500">
-              Prefer a fixed monthly package?{" "}
-              <Link
-                href="/pricing"
-                className="font-medium text-orange-600 underline underline-offset-4 hover:text-orange-700"
-              >
-                See our pricing
-              </Link>
-              .
-            </p>
           </div>
         </div>
       </section>

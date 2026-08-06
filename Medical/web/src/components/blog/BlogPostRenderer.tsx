@@ -17,13 +17,9 @@ import { TopicOverrideProvider } from "@/components/intent/IntentProvider";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { PremiumUpgrade } from "@/components/tools/premium/PremiumUpgrade";
 import { MiniCapture } from "@/components/forms/MiniCapture";
-import { PricingPromoCard } from "@accounting-network/web-shared/pricing/PricingPromoCard";
-import { packages } from "@/config/packages";
-import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
 
-const cheapestTier = packages.tiers.reduce((a, b) => (b.priceValue < a.priceValue ? b : a));
 const activeCta = getActiveCta(niche);
-const packagesMode = isPackagesMode(niche);
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -93,16 +89,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const verified = post.sourcesVerifiedAt ? formatUkDate(post.sourcesVerifiedAt) : "";
 
   const midSplit = splitContentAtMidScroll(post.contentHtml);
-
-  // In packages mode the pricing promo must render BEFORE the mid-article
-  // "free specialist review" capture; in leadgen mode it keeps its original
-  // post-article slot. Same element, one placement per variant.
-  const pricingPromo = (
-    <PricingPromoCard
-      fromPrice={cheapestTier.price}
-      blurb="Locum, GP and consultant tax handled for a fixed monthly fee. No hourly billing, cancel with 1 month's notice."
-    />
-  );
 
   return (
     // TopicOverrideProvider injects the category-resolved topic into IntentProvider.
@@ -232,7 +218,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {packagesMode ? pricingPromo : null}
                     {/* Mid-article qualified lead capture (free review, medical voice). */}
                     <MiniCapture
                       formId="blog_mid_resource"
@@ -256,7 +241,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {packagesMode ? pricingPromo : null}
                     <MiniCapture
                       formId="blog_short_resource"
                       messagePrefix={`[Blog short: ${categorySlug}] `}
@@ -268,8 +252,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </>
                 )}
               </div>
-
-              {!packagesMode ? pricingPromo : null}
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">

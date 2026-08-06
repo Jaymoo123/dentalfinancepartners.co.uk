@@ -27,6 +27,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    // pkg_pricing_v1 self-serve packages experiment removed; /pricing had no
+    // replacement page, so send it to the nearest live equivalent.
+    return [
+      { source: "/pricing", destination: "/services", permanent: true },
+    ];
+  },
   async headers() {
     // W2: shared builder. embedPrefix: "embed" keeps live embeds frameable (SEC-03).
     // ga: true adds GTM/GA script-src + connect-src.

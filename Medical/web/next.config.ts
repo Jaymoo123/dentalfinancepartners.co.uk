@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         destination: "https://www.medicalaccounts.co.uk/:path*",
         permanent: true,
       },
+      {
+        source: "/pricing",
+        destination: "/services",
+        permanent: true,
+      },
     ];
   },
   async headers() {

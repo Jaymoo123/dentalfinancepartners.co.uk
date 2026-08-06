@@ -36,10 +36,6 @@
       "href": "/services"
     },
     {
-      "label": "Pricing",
-      "href": "/pricing"
-    },
-    {
       "label": "Guides",
       "href": "/medical-guides"
     },
@@ -77,10 +73,6 @@
     {
       "label": "For junior doctors",
       "href": "/for-junior-doctors"
-    },
-    {
-      "label": "Pricing",
-      "href": "/pricing"
     },
     {
       "label": "Medical guides",
@@ -203,7 +195,7 @@
     }
   },
   "cta": {
-    "variant": "packages",
+    "variant": "leadgen",
     "variants": {
       "packages": {
         "header_primary": {
@@ -272,10 +264,6 @@
           "primary": {
             "label": "Book your free consultation",
             "href": "/contact"
-          },
-          "secondary": {
-            "label": "View pricing",
-            "href": "/pricing"
           }
         }
       }
