@@ -162,6 +162,26 @@ const EMAIL_STRONG_REGEXES: ReadonlyArray<RegExp> =
 /** A stripped body at or under this length is classified like an SMS. */
 const SHORT_EMAIL_BODY_CHARS = 80;
 
+// A professional's mail client appends a signature block (name, company, phone
+// numbers), so a bare "STOP" reply arrives as a LONG body and the short-body
+// tier never fires: exactly this promoted + acked an opted-out lead on
+// 2026-08-07. The typed reply is the FIRST PARAGRAPH: lines up to the first
+// blank line or signature marker after some content, so it is classified on
+// its own, signature excluded.
+const SIG_MARKER_RE =
+  /^(--+|__+|(kind|best|warm)\s+regards\b.*|regards\b.*|(many\s+)?thanks\b.*|thank\s+you\b.*|cheers\b.*|sent\s+from\s.*)$/i;
+
+/** The part of the reply the person actually typed: first paragraph, pre-signature. */
+function firstParagraph(body: string): string {
+  const lines = body.split(/\r?\n/).map((l) => l.trim());
+  const kept: string[] = [];
+  for (const line of lines) {
+    if (kept.length > 0 && (line === '' || SIG_MARKER_RE.test(line))) break;
+    if (line !== '') kept.push(line);
+  }
+  return kept.join(' ');
+}
+
 export type EmailReplyIntent = 'opt_out' | 'genuine';
 
 /**
@@ -180,6 +200,23 @@ export function classifyEmailReplyIntent(strippedBody: string, subject = ''): Em
   }
   if (bodyNorm.length <= SHORT_EMAIL_BODY_CHARS && classifyReplyIntent(cleaned) === 'opt_out') {
     return 'opt_out';
+  }
+  // Signature-aware tier: a short typed reply above a signature block must be
+  // honoured exactly like a short whole body ("STOP" + signature = opt out).
+  // The first line alone is also checked, covering signatures that follow with
+  // no blank line or sign-off marker.
+  const firstLine = cleaned
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .find((l) => l !== '') ?? '';
+  for (const candidate of [firstParagraph(cleaned), firstLine]) {
+    if (
+      candidate.length > 0 &&
+      normalise(candidate).length <= SHORT_EMAIL_BODY_CHARS &&
+      classifyReplyIntent(candidate) === 'opt_out'
+    ) {
+      return 'opt_out';
+    }
   }
   return 'genuine';
 }
