@@ -1,7 +1,7 @@
 """Buyer-side demand research: who searches to BUY leads we already produce.
 
 Two DataForSEO calls: keywords_for_keywords (expand) then search_volume (price it).
-UK / en. Writes expanded.csv.
+UK / en. Usage: python pull.py [seeds5.json] -> writes <seedsfile>.csv
 """
 from __future__ import annotations
 
@@ -10,12 +10,15 @@ import csv
 import json
 import os
 import re
+import sys
 from pathlib import Path
 
 import httpx
 
 HERE = Path(__file__).parent
-SEEDS = json.loads((HERE / "seeds.json").read_text(encoding="utf-8"))["buckets"]
+# ponytail: seeds file picked by argv so successive runs don't clobber each other's CSV
+SEEDS_PATH = HERE / (sys.argv[1] if len(sys.argv) > 1 else "seeds.json")
+SEEDS = json.loads(SEEDS_PATH.read_text(encoding="utf-8"))["buckets"]
 _ADS_RE = re.compile(r"[^a-z0-9 ']")
 
 
@@ -102,7 +105,9 @@ def main() -> None:
             "source": "seed" if kw in bucket_of else "expanded",
         })
     rows.sort(key=lambda r: -r["value_index"])
-    with (HERE / "expanded.csv").open("w", newline="", encoding="utf-8") as f:
+    # ponytail: filename from the seeds file so successive runs don't clobber each other
+    out_name = f"{SEEDS_PATH.stem}.csv"
+    with (HERE / out_name).open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
