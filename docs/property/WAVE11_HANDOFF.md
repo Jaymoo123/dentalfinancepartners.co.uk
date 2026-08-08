@@ -26,12 +26,31 @@ the wave machinery does not build them.
 
 The system is mature and documented. Read these before touching anything:
 
-1. `.claude/commands/run-wave.md` — the conductor skill you are running (Stages 0-14)
+1. `.claude/commands/run-wave.md` — the conductor skill you are running (Stages 0-14).
+   It is a **slash command, not a SKILL.md**. No SKILL.md exists in this repo.
 2. `docs/_engines/NETNEW_PROGRAM.md` — the site-agnostic engine (phases, artefacts, quality gates,
    drift patterns). §5.2 six-check floor and §5.3 Bill-vs-enacted-Act discipline are non-negotiable.
-3. `docs/property/NETNEW_PROGRAM.md` — §3 heartbeat (current state), §7 workflow, §16 lessons
-4. `docs/property/house_positions.md` — the tie-breaker doc; this wave adds to it
-5. `sites/property.json` — paths, wave sizing, voice config
+3. `docs/property/STATE.md` — current Property state (the WHAT for this site)
+4. `docs/property/_archive/NETNEW_PROGRAM.md` — **the §16.x lessons the skill cites live here now**
+5. `docs/property/house_positions.md` — the tie-breaker doc; this wave adds to it
+6. `sites/property.json` — paths, wave sizing, voice config
+
+### DEAD PATH WARNING — you will hit this in the first five minutes
+
+`docs/property/NETNEW_PROGRAM.md` **no longer exists.** Commit `9c7a84ac` archived it to
+`docs/property/_archive/NETNEW_PROGRAM.md` and split it into `docs/_engines/NETNEW_PROGRAM.md`
+(the HOW) plus `docs/property/STATE.md` (the WHAT).
+
+**Two places still point at the dead path** and neither has been fixed:
+- `run-wave.md`'s read-first list, item 1
+- `sites/property.json` → `paths.netnewProgram`
+
+When the skill tells you to read `docs/property/NETNEW_PROGRAM.md` §16 lessons, read
+`docs/property/_archive/NETNEW_PROGRAM.md` instead. Same for the Stage 14 heartbeat update — the
+heartbeat now lives in `docs/property/STATE.md`.
+
+Do not silently repoint `paths.netnewProgram` in the site config; other `-Site` scripts read it and
+the correct target is a judgment call. Raise it with the owner as a separate fix.
 
 ---
 
@@ -201,9 +220,40 @@ because `Property/web/src/app/services/` is four hardcoded folders, not `[slug]`
 (The third pillar, `/cost-of-selling-a-property`, belongs to Wave 12 — see §7.)
 
 ### 6.2 Calculator — `lease-extension-premium-calculator`
-Registers in `Property/web/src/lib/calculators/` (5 premium in `registry.ts`, 19 generic in `tools/`).
 Estimates the premium **including marriage value where the term is under 80 years**. Nothing accurate
 exists free, and stating that marriage value still applies is the differentiator.
+
+Adding a generic tool is two steps: create
+`Property/web/src/lib/calculators/tools/lease-extension-premium-calculator.ts` exporting a
+`GenericTool`, then import it in `registry.ts` and append to the `GENERIC: GenericTool[]` array.
+Nothing else — the gallery, sitemap, nav and dynamic `/calculators/[slug]` route all read `TOOLS`.
+
+```ts
+import type { GenericTool } from "../types";
+import { gbp } from "../format";
+
+export const leaseExtensionPremiumCalculator: GenericTool = {
+  kind: "generic",
+  slug: "lease-extension-premium-calculator",   // = /calculators/<slug>
+  name: "…", category: "…", oneLiner: "…", embedHeight: 640,
+  metaTitle: "…", metaDescription: "…", intro: "…",
+  fields: [ { id: "…", label: "…", type: "currency", default: 0, step: 1000 } ],
+  //   type: "currency" | "number" | "select" | "toggle"
+  //   optional: options[{value,label}], help, step, min, max, advanced, suffix
+  compute: (v) => ({
+    headline: { label: "…", value: gbp(x) },     // + optional sub, tone: "default"|"warn"|"good"
+    rows: [{ label: "…", value: gbp(y), strong: true }],
+    note: "…",                                   // honest disclaimer, required by the house bar
+  }),
+  explainer: { heading: "…", paragraphs: ["…"] },
+  faqs: [], related: [], workedExamples: [],
+};
+```
+
+Registry quality bar: every figure traces to `docs/property/house_positions.md` or HMRC, no pricing
+or fees on-page, honest `note` on each tool. The 5 bespoke tools (stamp-duty, section-24,
+incorporation-cost, mtd-checker, portfolio-profitability) have hand-built pages but still register a
+`{ kind: "bespoke", … }` stub.
 
 ### 6.3 Resource hubs
 Add `content/resources/landlord-compliance.md` and `content/resources/leasehold.md` to match the
@@ -245,12 +295,25 @@ From the engine and the estate-wide conventions. A sub-agent prompt that omits t
 - **Six-check floor** (§5.2): 0 em-dashes; 0 utility CSS classes (semantic HTML only); FAQ schema
   count in built HTML == frontmatter `faqs:` length (10-14 FAQs); metaTitle ≤62 chars;
   metaDescription ≤158 chars; every internal link resolves. Body 2,800-3,500 words non-pillar.
-- **Body is raw HTML inside frontmatter**, not markdown. Copy the shape from
-  `Property/web/content/blog/gas-safety-certificates.md`. Required fields: `title`, `slug`,
-  `canonical`, `date`, `author`, `category`, `metaTitle`, `metaDescription`, `altText`, `image`,
-  `imageCredit`, `h1`, `summary`, `schema`, `faqs`.
-- `canonical` follows `https://www.propertytaxpartners.co.uk/blog/<category-slug>/<slug>`.
-- **Opus writes every body.** Sonnet does mechanical work only.
+- **Body is raw HTML directly after the frontmatter**, not markdown. `<p>`, `<h2>`, `<ul>/<li>`;
+  internal links `<a href="/blog/<category-slug>/<slug>">`; external
+  `<a href="…" rel="nofollow noopener" target="_blank">`.
+- **Required frontmatter**, all values double-quoted (an unquoted `colon-space` breaks the build):
+  `title` · `slug` · `canonical` · `date` · `generator` · `author` · `reviewedBy` ·
+  `reviewerCredentials` · `reviewedAt` · `category` · `metaTitle` (≤62) · `metaDescription` (≤158) ·
+  `altText` · `image` (may be `""`) · `h1` · `summary` · `schema` (may be `""`) · `faqs` (10-14).
+  Copy the shape from a Wave 10 page, e.g.
+  `Property/web/content/blog/business-asset-disposal-relief-residential-property-qualification.md`.
+  **Do not** copy `gas-safety-certificates.md` — it predates the `reviewedBy`/`generator` fields.
+- Wave pages stamp `generator: "opus-4.8/netnew-wave"`.
+- `canonical` = `https://www.propertytaxpartners.co.uk/blog/<category-slug>/<slug>`.
+- **Every new slug needs a `SLUG_TO_CATEGORY_MAP` entry in `Property/web/src/middleware.ts`.**
+  The content dir is flat; category routing comes from frontmatter plus that map. Miss it and the
+  canonical URL 404s.
+- **Opus writes every body**, via Claude Code sub-agents in the wave. Sonnet does mechanical work only.
+- **Do NOT use the blog generator CLI for this wave.**
+  `python -m optimisation_engine.blog_generator --site property` is the *topic-queue* path, it runs
+  `claude-sonnet-4-6`, and it stamps a different `generator` value. Wave bodies come from sub-agents.
 - **Sub-agent autonomy clause is mandatory** in every dispatch prompt — see run-wave.md. Without it
   sub-agents pause ~70% of the time.
 - Tracker, flags and Q&A are written to `main` by **absolute path**, regardless of cwd.
@@ -261,6 +324,58 @@ From the engine and the estate-wide conventions. A sub-agent prompt that omits t
 
 ---
 
+## 8b. QA gates — two of these are HARD and will block your deploy
+
+`deploy-and-index.ps1` runs `predeploy_gate.py` as step 0. It fails the deploy on:
+
+- **internal `/blog` link 404s — HARD**, floor is zero
+- **independent QA verdicts — HARD**, sha256-keyed per page; a page with no recorded verdict blocks
+- brand consistency — HARD
+- em-dashes and service pricing — warn only, unless you pass `--strict`
+
+The QA verdict cache is the one that surprises people. Verdicts live in
+`optimisation_engine/.cache/qa_verdict_<batch>.json` and are keyed by content hash, so **editing a
+page after its verdict is recorded invalidates it**. Record verdicts last.
+
+```bash
+# from repo root
+python scripts/frontmatter_lint.py --check --site property
+python scripts/track2_link_audit.py --site property          # authoritative 0-HARD-404 check
+python scripts/word_count_gate.py --site property
+
+# independent QA verdicts (verdict source workflow: scripts/track2_independent_qa.wf.js)
+python scripts/qa_verdict.py pending --site property --batch wave11 --slugs <slug> ...
+python scripts/qa_verdict.py record  --site property --batch wave11 --verdicts <return.json>
+
+# the gate itself
+python scripts/predeploy_gate.py --site property --qa-batch wave11
+```
+
+**Register the batch in `monitored_pages`** so the regression detector watches these 19 pages for the
+90-day window (engine §1 requires it, and `deploy-and-index.ps1 -QaBatch` does it for you):
+
+```bash
+python scripts/register_monitored_batch.py --batch wave11            # dry run first
+python scripts/register_monitored_batch.py --batch wave11 --commit
+```
+
+So the real Stage 13 command for this wave is:
+
+```
+./scripts/deploy-and-index.ps1 -Site property -QaBatch wave11
+```
+
+That chains: predeploy gate → swap `Property/.vercel/project.json` into repo root →
+`vercel deploy --prod --yes --archive=tgz` from repo root → restore → register monitored batch →
+IndexNow submit. The project swap exists because Property's Vercel Root Directory is `Property/web`,
+so deploying from inside `Property/` resolves to `Property/Property/web` and fails.
+Verify after: `curl -sI https://www.propertytaxpartners.co.uk/sitemap.xml`.
+
+**Stage 5 caveat.** `scaffold-launch-prompts.ps1` generates from the previous wave's templates, but
+`docs/sessions/property/` only holds prompts up to **Wave 9** — Wave 10 ran single-lane without a
+launch-prompt set. Expect to author the Wave 11 prompts by hand from the Wave 9 templates rather than
+having them scaffolded cleanly.
+
 ## 9. Sequence
 
 1. `/run-wave 11` → Stage 0 pause → paste §3 picks.yaml
@@ -269,10 +384,12 @@ From the engine and the estate-wide conventions. A sub-agent prompt that omits t
 4. Stage 4: full briefs → Stage 2b drift triage
 5. Stages 5-8: scaffold prompts, PREP, LAUNCH, RUN (~2-6h), attend Q&A watcher
 6. Stages 9-11: validate, HP corrections, audit, merge, build, back-patches
-7. Stage 12: **deploy gate — explicit owner approval required**
-8. Stage 13-14: `deploy-and-index.ps1 -Site property`, then §3 heartbeat
-9. Then §6 out-of-band: 2 pillars, 1 calculator, 2 resource hubs, internal-link sweep
-10. Then Wave 12, **only after the §7 brand-fit decision**
+7. **§8b QA gates** — middleware map entries, frontmatter lint, link audit, record QA verdicts LAST
+8. Stage 12: **deploy gate — explicit owner approval required**
+9. Stage 13-14: `./scripts/deploy-and-index.ps1 -Site property -QaBatch wave11`,
+   then heartbeat in `docs/property/STATE.md` (NOT the archived NETNEW_PROGRAM.md)
+10. Then §6 out-of-band: 2 pillars, 1 calculator, 2 resource hubs, internal-link sweep
+11. Then Wave 12, **only after the §7 brand-fit decision**
 
 ---
 
