@@ -15,7 +15,8 @@
     "enquiry_retention_months": 24
   },
   "partner": {
-    "name": "",
+    "name": "a firm from our specialist partner network",
+    "descriptor": "",
     "privacy_policy_url": null
   },
   "domain": "www.tradetaxspecialists.co.uk",

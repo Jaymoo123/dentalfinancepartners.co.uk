@@ -26,6 +26,16 @@ describe("consent text wiring", () => {
     expect(consentText).not.toContain("Reflex");
   });
 
+  it("consent text discloses onward re-referral within the network (notice-only pool model)", async () => {
+    const { siteConfig } = await import("@/config/site");
+    expect(siteConfig.leadConsentText).toContain(
+      "may be passed to another firm in the network for the same purpose"
+    );
+    expect(siteConfig.leadConsentText).toContain(
+      "By submitting this enquiry you confirm you understand this"
+    );
+  });
+
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
