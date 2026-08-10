@@ -4,9 +4,9 @@
  * Reusable QUALIFIED lead capture used across conversion surfaces (calculator
  * result, resource block, mobile tool, exit-intent, blog inline). Collects name +
  * phone + email + message, all required, for callable / named / contextful leads
- * fit for follow-up. Topic-aware, consent-gated, honeypot-protected, and fully
- * stitched to the first-party journey (visitor_id/session_id) so it fires
- * form_start / form_submit / lead_submitted.
+ * fit for follow-up. Topic-aware, notice-only acknowledgement (legitimate
+ * interests), honeypot-protected, and fully stitched to the first-party journey
+ * (visitor_id/session_id) so it fires form_start / form_submit / lead_submitted.
  *
  * Honeypot: enquiry_ref is passed to the server chokepoint which stores it
  * flagged and returns success. Client NEVER silently drops a submission.
@@ -85,7 +85,6 @@ export function MiniCapture({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
   // Honeypot value — tracked in state so bots that fill it are detected server-side.
   const [honeypotValue, setHoneypotValue] = useState("");
   const ft = useFormTracking(formId);
@@ -120,7 +119,6 @@ export function MiniCapture({
         const wordCount = msg.split(/\s+/).filter(Boolean).length;
         if (wordCount < messageMinWords) errs.message = "A couple of sentences works best, please add a little more detail.";
       }
-      if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
       return errs;
     },
     [messageMinLength, messageMinWords],
@@ -155,7 +153,10 @@ export function MiniCapture({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl,
       submitted_at: new Date().toISOString(),
-      consent_given: consent,
+      // Legitimate-interests acknowledgement: submitting the form IS the affirmative
+      // act, so this is always true; consent_text records the exact wording shown
+      // as the audit trail.
+      consent_given: true,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
@@ -174,7 +175,6 @@ export function MiniCapture({
     ft.onLead({ source: payload.source, role: formId });
     setStatus("success");
     form.reset();
-    setConsent(false);
     setHoneypotValue("");
     onSuccess?.();
   }
@@ -315,32 +315,16 @@ export function MiniCapture({
             )}
           </div>
 
-          <div>
-            <label htmlFor={`${formId}-consent`} className="flex items-start gap-3 text-xs leading-relaxed text-slate-600">
-              <input
-                type="checkbox"
-                id={`${formId}-consent`}
-                name="consent"
-                checked={consent}
-                onChange={(e) => setConsent(e.target.checked)}
-                className="mt-0.5 h-4 w-4 shrink-0 accent-indigo-600"
-                aria-invalid={!!fieldErrors.consent}
-                aria-describedby={fieldErrors.consent ? `${formId}-consent-error` : undefined}
-              />
-              <span>
-                {siteConfig.leadConsentText} See our{" "}
-                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-700 underline">
-                  Privacy Policy
-                </a>
-                .
-              </span>
-            </label>
-            {fieldErrors.consent && (
-              <p id={`${formId}-consent-error`} className="mt-1.5 text-xs font-medium text-red-600">
-                {fieldErrors.consent}
-              </p>
-            )}
-          </div>
+          {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
+              the enquiry is the affirmative act, so this is shown as a notice, not a
+              tick-box. */}
+          <p className="text-xs leading-relaxed text-slate-600">
+            {siteConfig.leadConsentText} See our{" "}
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-700 underline">
+              Privacy Policy
+            </a>
+            .
+          </p>
 
           {errorMessage && (
             <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
@@ -350,7 +334,7 @@ export function MiniCapture({
 
           <button
             type="submit"
-            disabled={status === "loading" || !consent}
+            disabled={status === "loading"}
             className={`${btnPrimary} w-full`}
           >
             {status === "loading" ? "Sending..." : submitLabel}

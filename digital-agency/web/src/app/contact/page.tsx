@@ -84,7 +84,8 @@ export default function ContactPage() {
               <div className="border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Get in touch</h2>
                 <p className="text-base text-slate-700 leading-relaxed">
-                  Fill in the form and we will get back to you within 24 hours, usually same day.
+                  Fill in the form and you will hear back within 24 hours, usually same day. A
+                  specialist firm from our partner network may contact you directly.
                 </p>
               </div>
 
@@ -93,7 +94,7 @@ export default function ContactPage() {
                 <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-slate-200">
                   <li className="flex items-start gap-2 sm:gap-3">
                     <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>We will respond within 24 hours to confirm receipt</span>
+                    <span>You hear back within 24 hours, from us or a specialist partner firm</span>
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>

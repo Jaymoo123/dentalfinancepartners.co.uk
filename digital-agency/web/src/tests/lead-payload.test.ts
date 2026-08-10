@@ -69,23 +69,28 @@ describe("lead consent text", () => {
   const displayName = nicheConfig.display_name;
   const partnerName = partner?.name ?? "";
 
-  // Replicates the partner-path derivation in site.ts.
-  const consentText = partner
-    ? `I agree to my details being shared by ${displayName} with its specialist partner network, and to ${displayName} and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
-    : `I agree to ${displayName} using my details to respond to my enquiry and provide the advice I have requested.`;
+  // Replicates the static notice-only acknowledgement in site.ts (pool model,
+  // legitimate interests, re-referral disclosed).
+  const consentText =
+    "Agency Founder Finance will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
 
   it("site display name is Agency Founder Finance", () => {
     expect(displayName).toBe("Agency Founder Finance");
   });
 
-  it("partner is present but unnamed (generic partner network, not DJH)", () => {
+  it("partner is present as a category label (generic partner network, not DJH)", () => {
     expect(partner).not.toBeNull();
-    expect(partnerName).toBe("");
+    expect(partnerName).toBe("a firm from our specialist partner network");
   });
 
   it("consent text references a generic specialist partner network, not a named firm", () => {
     expect(consentText).toContain("specialist partner network");
     expect(consentText).not.toContain("Reflex");
+  });
+
+  it("consent text discloses onward re-referral within the network (notice-only pool model)", () => {
+    expect(consentText).toContain("may be passed to another firm in the network for the same purpose");
+    expect(consentText).toContain("By submitting this enquiry you confirm you understand this");
   });
 
   it("consent text does NOT contain the string DJH", () => {
