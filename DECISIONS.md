@@ -51,6 +51,20 @@ Judgement calls made during the build, per the brief's ground rule 5. Owner deci
 33. **`profession_lane: "adjacent"` renders the Adjacent + Raw pricing view**; the accounting lane renders Advisory/Standard/Essential/Raw. Raw is never a price card, only a row + prose.
 34. **SOURCE_META specialism labels for the 8 non-property sources are engine-authored best labels**; owner should glance at them before the first multi-source proposal is sent.
 
+### Property site branch (WS5)
+
+35. **DJH restore path retired on `lead-engine/site-property`**: `PARTNER_DISCLOSURE_PAUSED`, the disclosed-DJH branch and the "never removed" guard comments deleted; partner block scrubbed to the canonical category shape. This re-applies the owner-approved 2026-07-27 scrub that was left uncommitted and lost, extended to the estate-standard notice. Rendered output unchanged from the wording-alignment commit.
+
+### In-house site conversions (WS5)
+
+36. **Privacy clauses only describe processing that exists.** Pharmacies' adapted sharing clause drops "result of our checks to confirm your contact details" and "any call time you book" because those sites have no verification or booking machinery yet; re-add at the live-bridge phase when `verify.ts`/booking are wired. Cookie-policy "we do not sell or share this data" lines scoped to anonymous analytics were left intact (compatible, true).
+37. **Duplicate consent-string sources aligned, not re-plumbed**: `web/src/lib/calculators/site.ts` on ecommerce/hospitality/pharmacies carried its own consent string (live source for their MiniCaptures); aligned to the new notice with a keep-in-step comment rather than refactoring imports (minimal diff). Future cleanup: make config/site.ts the single source.
+
+### Legacy purge (WS6)
+
+38. **Guard tests and guard-explaining comments kept** (~28 files): suites asserting DJH must never appear enforce the purge and stay. Competitor/SERP research data mentioning djh.co.uk (~230 refs) is market data, not partner references, untouched. Historical compliance records (executed-DSA continuity notes, delivery-log template) retained as records with the SOP marked SUPERSEDED.
+39. **Stored event value `kind: "forwarded_to_djh"` kept** for historic-row compatibility with an explanatory comment; renaming it would orphan existing delivery-log rows.
+
 ### Legal pack (WS4)
 
 21. **Referral definition made claim-shaped**: a Referral occurs only after the Recipient accepts the enquiry; offer/acceptance mechanics are expressly a commercial matter outside the DSA (keeps the DSA pure DP and slot-count neutral).
