@@ -6,11 +6,11 @@
 
 ## 1. Programme overview
 
-The nurture programme is a server-side, multi-channel follow-up system that runs after a lead submits the enquiry form on propertytaxpartners.co.uk. Its job is to turn a web enquiry into a contactable, warm lead before any human effort is spent by DJH. It is entirely service-communication (non-marketing), runs dormant behind environment flags, and contains no auto-commit or auto-deploy.
+The nurture programme is a server-side, multi-channel follow-up system that runs after a lead submits the enquiry form on propertytaxpartners.co.uk. Its job is to turn a web enquiry into a contactable, warm lead before any human effort is spent by the receiving partner firm. It is entirely service-communication (non-marketing), runs dormant behind environment flags, and contains no auto-commit or auto-deploy.
 
-The problem it solves: before this system, only 3 of 9 consecutive leads were contactable when DJH called. Most had dead or mistyped numbers; none had been followed up with. The programme adds phone/email verification at the point of submission, an escalating multi-channel chase sequence, a contactability gate, and an evidence-rich handoff.
+The problem it solves: before this system, only 3 of 9 consecutive leads were contactable when the partner firm called. Most had dead or mistyped numbers; none had been followed up with. The programme adds phone/email verification at the point of submission, an escalating multi-channel chase sequence, a contactability gate, and an evidence-rich handoff.
 
-The psychology and UX layer (built 2026-07-02) sits on top of the core system and adds per-lead AI copy personalisation, engagement-reactive variants, a bounded SMS concierge, booked-slot reminders, and a call brief for DJH. All of this is dormant by default and subject to explicit arming gates.
+The psychology and UX layer (built 2026-07-02) sits on top of the core system and adds per-lead AI copy personalisation, engagement-reactive variants, a bounded SMS concierge, booked-slot reminders, and a call brief for the partner firm. All of this is dormant by default and subject to explicit arming gates.
 
 ---
 
@@ -106,7 +106,7 @@ The sequence builder calls `parseEnquiryEchoes` to recover the three parts and `
 
 ### Psychology rationale
 
-Asking three specific questions (situation, trigger, goal) produces structured, actionable data instead of a freeform note. Each field serves a distinct purpose in the nurture copy: situation grounds the dossier for DJH, triggered surfaces urgency, and call goal provides the "commitment echo" that every touch mirrors back.
+Asking three specific questions (situation, trigger, goal) produces structured, actionable data instead of a freeform note. Each field serves a distinct purpose in the nurture copy: situation grounds the dossier for the partner firm, triggered surfaces urgency, and call goal provides the "commitment echo" that every touch mirrors back.
 
 ### Key validation parameters (from `Property/web/src/lib/leads/enquiry-message.ts`)
 
@@ -403,7 +403,7 @@ When the concierge is enabled, `handleInboundReply` in `concierge.ts` handles th
 
 ### Psychology rationale
 
-Speed-to-reply is the strongest predictor of conversion in inbound lead management. A lead who replies and hears nothing for hours or days interprets the silence as disorganisation or disinterest. The single ack eliminates that gap without over-messaging. Asking for best call time and portfolio size in the same message pre-qualifies the handoff and gives DJH richer context without a separate step.
+Speed-to-reply is the strongest predictor of conversion in inbound lead management. A lead who replies and hears nothing for hours or days interprets the silence as disorganisation or disinterest. The single ack eliminates that gap without over-messaging. Asking for best call time and portfolio size in the same message pre-qualifies the handoff and gives the partner firm richer context without a separate step.
 
 ---
 
@@ -429,13 +429,13 @@ A hand-over can be re-sent for a `contactable` or `forwarded` lead via `POST /ap
 
 ---
 
-## 12. DJH call brief
+## 12. Partner call brief
 
 ### What it does
 
 `buildCallBrief` in `Property/web/src/lib/leads/call-brief.ts` generates a four-field structured brief to include in the internal ops email. It uses the lead's verbatim enquiry text, enrichment data, best call window, booking slot label (if any), top pages read, and verbatim reply transcript (up to 3 replies).
 
-Four fields, each max 300 chars: `opening` (natural first sentence for DJH to say), `theirGoal` (one sentence), `suggestedAngle` (tone and focus, no advice), `bestWindow` (when to call and why).
+Four fields, each max 300 chars: `opening` (natural first sentence for the partner firm to say), `theirGoal` (one sentence), `suggestedAngle` (tone and focus, no advice), `bestWindow` (when to call and why).
 
 Inputs: verbatim enquiry text, enrichment data (intent category, quality score, summary), best call window, booking slot label (if any), top pages read, and verbatim reply excerpts (up to 3 replies).
 
@@ -445,7 +445,7 @@ Inputs: verbatim enquiry text, enrichment data (intent category, quality score, 
 
 ### Decisions and tradeoffs
 
-The brief uses the verbatim `enquiryMessage` (the three labelled answers) rather than only the AI enrichment summary. This is deliberate: the enrichment summary is a lossy paraphrase. The verbatim text lets the opening line reflect the lead's exact words, which DJH can use to signal "I have read your enquiry" in the first seconds of the call.
+The brief uses the verbatim `enquiryMessage` (the three labelled answers) rather than only the AI enrichment summary. This is deliberate: the enrichment summary is a lossy paraphrase. The verbatim text lets the opening line reflect the lead's exact words, which the partner firm can use to signal "I have read your enquiry" in the first seconds of the call.
 
 The brief is best-effort. A null brief does not block the handoff.
 
@@ -477,7 +477,7 @@ The following were explicitly considered and rejected. Do not re-propose them wi
 
 **Voicemail drops**
 
-Ruled out under PECR regulation 19, which prohibits automated recorded calls to residential numbers without prior consent. Even if the lead has submitted an enquiry, a voicemail drop is a separate regulated act. The phone channel is reserved for live calls by DJH.
+Ruled out under PECR regulation 19, which prohibits automated recorded calls to residential numbers without prior consent. Even if the lead has submitted an enquiry, a voicemail drop is a separate regulated act. The phone channel is reserved for live calls by the partner firm.
 
 **Multiple-messages-per-day cadence**
 

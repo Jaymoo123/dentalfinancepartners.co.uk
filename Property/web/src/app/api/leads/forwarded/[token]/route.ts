@@ -1,12 +1,13 @@
 /**
  * Operator "mark as forwarded to the partner firm" one-click route (AN-2 forwarded writer).
  *
- * The READY-FOR-PARTNER handoff email (handoff.ts) carries a link here. When the
- * operator has actually forwarded the lead to the partner firm, they click it and confirm,
- * which flips leads.status 'contactable' -> 'forwarded' so the contactability
- * funnel / console / digest reflect the real hand-over (and give a timestamp
- * for the 24-month Delivery Log). 'forwarded' therefore means the operator
- * genuinely sent it to the partner firm, not merely that our brief email was delivered.
+ * The handoff email (handoff.ts) carries a link here. When the operator has
+ * actually forwarded the lead to the receiving partner firm, they click it and
+ * confirm, which flips leads.status 'contactable' -> 'forwarded' so the
+ * contactability funnel / console / digest reflect the real hand-over (and give
+ * a timestamp for the 24-month Delivery Log). 'forwarded' therefore means the
+ * operator genuinely sent it to the partner firm, not merely that our brief
+ * email was delivered.
  *
  * GET  renders a small confirmation page (a button that POSTs) so an email
  *      security scanner in the operator's inbox cannot mark leads forwarded on a
@@ -66,7 +67,7 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   const actionUrl = new URL(_req.url).pathname;
   return page(
     "Mark as forwarded to the partner firm?",
-    `<h1>Mark this lead as forwarded to the partner firm?</h1><p>Click the button once you have forwarded this enquiry to the partner firm. This records the hand-over for our data-sharing log.</p><form method="POST" action="${actionUrl}"><button type="submit">Yes, I have forwarded it to the partner firm</button></form>`,
+    `<h1>Mark this lead as forwarded to the partner firm?</h1><p>Click the button once you have forwarded this enquiry to the receiving partner firm. This records the hand-over for our data-sharing log.</p><form method="POST" action="${actionUrl}"><button type="submit">Yes, I have forwarded it</button></form>`,
   );
 }
 
@@ -86,6 +87,8 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
       );
       if (flip.data.length > 0) {
         await recordLeadContactEvent(v.leadId, "operator_update", "system", {
+          // Legacy event kind kept for row compatibility (historic rows and
+          // delivery-log queries filter on this exact value).
           kind: "forwarded_to_djh",
         });
       }

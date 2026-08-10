@@ -239,7 +239,7 @@ describe("resumeNurture", () => {
 
   it("upserts id=1 with paused=false, clears pause_reason and paused_at, records paused_by", async () => {
     mockAdminInsert.mockResolvedValueOnce({ ok: true, status: 201, data: [] });
-    await resumeNurture("djh@example.com");
+    await resumeNurture("partner@example.com");
     const call = mockAdminInsert.mock.calls[0];
     const table = call[0] as string;
     const payload = call[1] as Record<string, unknown>;
@@ -248,7 +248,7 @@ describe("resumeNurture", () => {
     expect(payload.paused).toBe(false);
     expect(payload.paused_reason).toBeNull();
     expect(payload.paused_at).toBeNull();
-    expect(payload.paused_by).toBe("djh@example.com");
+    expect(payload.paused_by).toBe("partner@example.com");
     expect(typeof payload.updated_at).toBe("string");
   });
 

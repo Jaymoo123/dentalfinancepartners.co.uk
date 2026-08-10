@@ -1,10 +1,10 @@
 /**
  * Native callback booking: the domain logic for our own "pick a time for your
  * call" flow (replaces Cal.com — nobody on our side attends a calendar; the
- * booking is a commitment signal plus a call window the partner firm should aim for).
+ * booking is a commitment signal plus a call window the receiving partner firm should aim for).
  *
  * A slot is a WEEKDAY within the next 21 days plus one of three call windows.
- * No availability logic: the partner firm calls the lead, the window just tells them when the
+ * No availability logic: the receiving partner firm calls the lead, the window just tells them when the
  * lead said they would pick up.
  *
  * Everything here is pure and shared by the /book page (client picker), the

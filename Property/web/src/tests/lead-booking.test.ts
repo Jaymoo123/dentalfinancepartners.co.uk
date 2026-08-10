@@ -1,6 +1,6 @@
 /**
  * Native booking flow tests: slot validation, the day generator the picker
- * renders, the human slot label DJH sees, and the "book" token round-trip.
+ * renders, the human slot label the partner firm sees, and the "book" token round-trip.
  * All pure — no DB, no network.
  */
 
@@ -68,7 +68,7 @@ describe("isValidBookingDate", () => {
 });
 
 describe("bookingLabel / windows", () => {
-  it("builds the human slot label DJH sees", () => {
+  it("builds the human slot label the partner firm sees", () => {
     expect(bookingLabel("2026-07-14", "morning")).toBe("Tue 14 Jul, morning (9am to 12pm)");
     expect(bookingLabel("2026-07-14", "late_afternoon")).toBe(
       "Tue 14 Jul, late afternoon (3pm to 5:30pm)",

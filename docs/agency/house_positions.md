@@ -200,7 +200,7 @@ The wave must fix these existing defects; new pages must never reproduce them.
 - **No named-expert authority / no quotes.** Authority is off-site and faceless (data, tools, calculators, citations, GEO), not a named individual. Do not invent an author persona with credentials.
 - **No pricing, no client names.** Lead-gen site: anonymised social proof only, no fee figures, no named clients.
 - **Form-first contact.** Route every call-to-action to the **`/contact` form**. Do NOT surface `hello@agencyfounderfinance.co.uk` as a monitored channel (it is unmonitored per the Ashfield entity memory). The firm is a trading brand of **Ashfield Trading Ltd** (company 16358723, England and Wales); the footer/legal disclosure names Ashfield Trading Ltd. Not VAT-registered.
-- **No DJH references** in user-facing copy (DJH is the downstream lead recipient, not a public-facing brand).
+- **No DJH references** in user-facing copy (the receiving partner firm is not a public-facing brand).
 - **No em-dashes** anywhere in user-facing copy (commas, parentheses, full stops, middle dots only; em-dashes read as AI-generated).
 - **Tax-year and jurisdiction tags mandatory.** Every volatile rate carries its effective date; devolved taxes and Scotland caveats where relevant (agency tax is largely UK-wide, but flag Scotland for income-tax bands if a Scotland-specific page is written).
 - **UAE = hedged, specialist-referred.** State only the site's published UAE numbers, always with a "get UAE specialist advice" hedge; never present UAE figures as this firm's own primary-verified guidance (§8.C).

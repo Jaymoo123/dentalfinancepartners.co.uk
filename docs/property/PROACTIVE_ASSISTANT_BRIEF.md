@@ -96,7 +96,7 @@ first-party journey data. Tensions to design around:
   (qualifying answers, pathway chosen, quality signal). Auto-fires `/api/leads/notify`
   (operator email) + `/api/leads/enrich` (Opus classification).
 - **Routing:** `Property/web/src/lib/lead-routing.ts` — Property leads → `junayd@ashfieldtrading.com`;
-  **partner (DJH/Reflex) is CC-excluded on Property** (and on `source="test"`). If adding
+  **partner CC is excluded on Property** (and on `source="test"`). If adding
   `source="assistant"`, decide whether to add it to the CC-exclusion set.
 - **LLM (already wired):** `Property/web/src/lib/ai.ts` `classifyLead()` — **Opus 4.8 via
   Vercel AI Gateway** (OIDC on Vercel; `AI_GATEWAY_API_KEY` local). Single-turn classify

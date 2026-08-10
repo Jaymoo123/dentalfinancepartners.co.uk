@@ -1,6 +1,6 @@
 /**
  * The contactability gate: the rule that decides whether a lead is genuinely
- * reachable AND has actively responded, so it is safe to hand to the partner firm. This is
+ * reachable AND has actively responded, so it is safe to hand to the receiving partner firm. This is
  * the direct fix for "only 3 of 9 were contactable".
  *
  * Rule table (strict, per owner decision):
@@ -88,7 +88,7 @@ export async function evaluateContactability(leadId: string): Promise<Contactabi
   const responded = repliedViaPhone || repliedViaEmail || confirmed || booked;
 
   const phoneStatus = verRes.data[0]?.phone_status ?? null;
-  // 'invalid' and 'voip' are both not-callable-by-partner: a booking/confirm on one
+  // 'invalid' and 'voip' both mean the partner firm cannot call: a booking/confirm on one
   // is held for manual review. A live SMS/WhatsApp reply still proves the number.
   const phoneKnownBad = phoneStatus === "invalid" || phoneStatus === "voip";
   const phoneGood = phoneStatus === "valid_mobile" || phoneStatus === "valid_landline";
@@ -163,7 +163,7 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
       // it happens when the operator clicks "I have forwarded this to the partner firm" in the
       // handoff email (POST /api/leads/forwarded/[token]), so 'forwarded' means a
-      // real the partner firm hand-over, not merely that our brief email was delivered.
+      // real partner hand-over, not merely that our brief email was delivered.
     } else {
       // Real send failure after retries: audit it, then alert the operator.
       // leads.status remains 'contactable' so the handoff can be re-attempted later.
@@ -195,8 +195,8 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
             from: getFromAddress(),
             to: handoff.to,
             subject: `Handoff email failed: ${alertName}`,
-            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the READY-FOR-PARTNER handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
-            text: `${alertName} has passed the contactability gate (status: contactable) but the READY-FOR-PARTNER handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
+            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
+            text: `${alertName} has passed the contactability gate (status: contactable) but the handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
           });
         }
       } catch (alertErr) {
