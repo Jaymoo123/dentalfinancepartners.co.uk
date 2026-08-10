@@ -1,9 +1,10 @@
 /**
  * Unit tests for lead-message helpers and the consent text guard.
  *
- * The consent guard asserts the partner firm name is present and that the
- * string "DJH" (an internal firm identifier that must never appear in
- * user-facing copy) is absent.
+ * The consent guard asserts the notice-only acknowledgement names the
+ * specialist partner network, discloses re-referral, and that the string
+ * "DJH" (an internal firm identifier that must never appear in user-facing
+ * copy) is absent.
  */
 import { describe, it, expect } from "vitest";
 import { calculatorMessagePrefix, exitIntentMessagePrefix } from "@/lib/lead-message";
@@ -49,22 +50,18 @@ describe("exitIntentMessagePrefix", () => {
 // text derivation from generalist/web/src/config/site.ts.
 // ---------------------------------------------------------------------------
 describe("lead consent text", () => {
-  const partner = nicheConfig.partner;
   const displayName = nicheConfig.display_name;
-  const partnerName = partner?.name ?? "";
 
-  // Replicates the partner-path derivation in site.ts.
-  const consentText = partner
-    ? `I agree to my details being shared by ${displayName} with our specialist partner firm ${partnerName}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-    : `I agree to ${displayName} using my details to respond to my enquiry and provide the advice I have requested.`;
+  // Replicates the notice-only derivation in site.ts (pool model).
+  const consentText = `${displayName} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
 
-  it("partner firm is Reflex Accounting", () => {
-    expect(partner).not.toBeNull();
-    expect(partner?.name).toBe("Reflex Accounting");
+  it("partner config carries the network category label, never a named firm", () => {
+    expect(nicheConfig.partner?.name).toBe("a firm from our specialist partner network");
   });
 
-  it("consent text includes the partner firm name (Reflex)", () => {
-    expect(consentText).toContain("Reflex");
+  it("consent notice names the specialist partner network and discloses re-referral", () => {
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).toContain("passed to another firm in the network");
   });
 
   it("consent text does NOT contain the string DJH", () => {
