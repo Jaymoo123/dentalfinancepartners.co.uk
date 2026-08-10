@@ -2,8 +2,8 @@
  * Tests for Medical Accountants UK lead payload contract.
  *
  * Verifies: consent text never contains "DJH" (the firm name must not appear);
- * consent wording references a partner name only when the niche config has one;
- * the site source identifier matches the chokepoint.
+ * the notice-only acknowledgement names the specialist partner network and
+ * discloses re-referral; the site source identifier matches the chokepoint.
  */
 
 import { describe, it, expect } from "vitest";
@@ -23,8 +23,8 @@ describe("lead payload — consent text contract", () => {
 
   it("consent text is non-empty and references the site", () => {
     expect(siteConfig.leadConsentText.length).toBeGreaterThan(20);
-    // Should reference the display name or use 'I agree'
-    expect(siteConfig.leadConsentText).toMatch(/I agree/i);
+    // Notice-only acknowledgement: must reference the display name.
+    expect(siteConfig.leadConsentText).toContain(niche.display_name);
   });
 
   it("source identifier is 'medical'", () => {
@@ -39,15 +39,11 @@ describe("lead payload — consent text contract", () => {
 });
 
 describe("lead payload — partner consent wording", () => {
-  it("when a partner exists, consent mentions the partner name", () => {
-    if (siteConfig.partner) {
-      expect(siteConfig.leadConsentText).toContain(siteConfig.partner.name);
-    }
+  it("consent notice names the specialist partner network (never a single firm)", () => {
+    expect(siteConfig.leadConsentText).toContain("specialist partner network");
   });
 
-  it("when no partner, consent does not mention 'shared with'", () => {
-    if (!siteConfig.partner) {
-      expect(siteConfig.leadConsentText.toLowerCase()).not.toContain("shared with");
-    }
+  it("consent notice discloses onward re-referral within the network", () => {
+    expect(siteConfig.leadConsentText).toContain("passed to another firm in the network");
   });
 });

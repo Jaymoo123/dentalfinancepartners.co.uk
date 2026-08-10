@@ -14,10 +14,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": {
-    "name": "",
-    "privacy_policy_url": null
-  },
+  "partner": { "name": "a firm from our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.medicalaccounts.co.uk",
   "tagline": "Specialist accountants for UK medical professionals",
   "description": "Expert accounting for GPs, consultants and medical practices. NHS pension advice, locum tax planning, private practice incorporation and expense claims.",
