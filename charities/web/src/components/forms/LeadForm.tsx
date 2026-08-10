@@ -5,7 +5,8 @@
  * (no flag: this site launches straight on the winner).
  *
  *   Step 1 "About you": role + optional message (low-friction qualifier).
- *   Step 2 "Your details": name, email, phone + mandatory data-sharing consent.
+ *   Step 2 "Your details": name, email, phone + data-sharing notice
+ *   (legitimate interests, acknowledgement-by-submission, not a tick-box).
  *
  * LD-03: honeypot uses the NON-SEMANTIC name `enquiry_ref` (shipped fix — never
  * a real-looking field name like company/website, which browsers autofill).
@@ -53,7 +54,6 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
 
   // Step-1 values persist across the step switch (step 1 fields unmount).
   const [role, setRole] = useState("");
@@ -97,7 +97,6 @@ export function LeadForm({
     } else if (phone.replace(/\D/g, "").length < 10) {
       errs.phone = "Enter at least 10 digits.";
     }
-    if (!consent) errs.consent = "Please tick the box to continue.";
     return errs;
   }
 
@@ -148,7 +147,7 @@ export function LeadForm({
     setStatus("loading");
 
     const completedCount =
-      [role, message, fullName, email, phone].filter((v) => v.trim()).length + (consent ? 1 : 0);
+      [role, message, fullName, email, phone].filter((v) => v.trim()).length;
     trackFormSubmit(completedCount);
     track("form_step_complete", { form_id: FORM_ID, step: 2, step_id: "your_details" });
 
@@ -168,7 +167,10 @@ export function LeadForm({
         source: niche.content_strategy.source_identifier,
         source_url: sourceUrl,
         submitted_at: new Date().toISOString(),
-        consent_given: consent,
+        // Legitimate-interests acknowledgement: submitting the form IS the
+        // affirmative act, so this is always true; consent_text records the
+        // exact wording shown (LD-04) as the audit trail.
+        consent_given: true,
         consent_text: consentText,
         consent_at: new Date().toISOString(),
         visitor_id: getVisitorId() ?? undefined,
@@ -405,30 +407,16 @@ export function LeadForm({
             </div>
           </div>
 
-          <div>
-            <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-neutral-600">
-              <input
-                type="checkbox"
-                id="consent"
-                name="consent"
-                checked={consent}
-                onChange={(e) => setConsent(e.target.checked)}
-                className="mt-0.5 h-4 w-4 shrink-0 accent-[#1a5c4a]"
-                aria-invalid={!!fieldErrors.consent}
-                aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
-              />
-              <span>
-                {siteConfig.leadConsentText} See our{" "}
-                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
-                  Privacy Policy
-                </a>
-                .
-              </span>
-            </label>
-            {fieldErrors.consent && (
-              <p id="consent-error" className={errorClass}>{fieldErrors.consent}</p>
-            )}
-          </div>
+          {/* Data-sharing acknowledgement (legitimate interests, not consent):
+              submitting the enquiry is the affirmative act, so this is shown
+              as a notice, not a tick-box. */}
+          <p className="text-xs leading-relaxed text-neutral-600">
+            {siteConfig.leadConsentText} See our{" "}
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+              Privacy Policy
+            </a>
+            .
+          </p>
 
           {errorMessage && (
             <div role="alert" className="rounded-md border border-red-200 bg-red-50 p-4">
@@ -447,7 +435,7 @@ export function LeadForm({
           <div className="flex flex-col gap-3">
             <button
               type="submit"
-              disabled={status === "loading" || status === "success" || !consent}
+              disabled={status === "loading" || status === "success"}
               className={btnClass}
             >
               {status === "loading" ? "Sending..." : status === "success" ? "Sent" : submitLabel}
