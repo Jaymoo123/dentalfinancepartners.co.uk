@@ -63,7 +63,10 @@ export default async function ThankYouPage({
             Thank you. We have your message.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
-            We will reply within two working days. If you asked to be connected with a specialist firm, we will match you with a vetted firm and they will contact you directly, usually within a few working days. You are under no obligation at any point, and you can change your mind at any time by replying to any message from us.
+            We will reply within two working days. If you asked to be connected with a specialist firm, a vetted regulated firm from our partner network will contact you directly, usually within a few working days. If that firm is unable to help, your enquiry may be passed to another firm in the network for the same purpose. You are under no obligation at any point, and you can change your mind at any time by replying to any message from us.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            We may receive a fee from the firm we introduce you to if you use their services. It does not change what you pay.
           </p>
 
           {bookingToken ? (

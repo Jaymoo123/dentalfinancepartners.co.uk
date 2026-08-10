@@ -32,7 +32,7 @@ export default function ContactPage() {
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
                 <li>We read every message and aim to reply within two working days.</li>
                 <li>
-                  If you have asked to be connected with a specialist, we will match you with a vetted firm suited to your situation and they will contact you directly, usually within a few working days.
+                  If you have asked to be connected with a specialist, a vetted regulated firm from our partner network suited to your situation will contact you directly, usually within a few working days. If that firm is unable to help, your enquiry may be passed to another firm in the network for the same purpose.
                 </li>
                 <li>
                   We cannot answer questions about your personal legal or tax position. That is what the specialist connection is for.
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   .
                 </p>
                 <p className="mt-1 text-xs text-neutral-500">
-                  By submitting the form you agree to us using your details to respond to your enquiry. If you ask to be connected with a specialist firm, you agree to us sharing your details with that firm so they can contact you, and we may receive a fee if you use their services. We never share your details for any other purpose. See our privacy policy for full details.
+                  By submitting the form you agree to us using your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated professional firm from our specialist partner network, who may contact you directly. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. We may receive a fee from the firm we introduce you to. We do not share your details for any other purpose. See our privacy policy for full details.
                 </p>
               </div>
             </div>

@@ -9,15 +9,13 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner firm that enquiries are shared with. Single source of truth.
-// null = enquiries are handled in-house and NOT shared with any third-party firm.
+// Partner-network category label (never a named firm). Single source of truth.
 const partner = niche.partner ?? null;
 // Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that).
-// Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-  : `I agree to be contacted about my enquiry. I understand that ${niche.display_name} may follow up by email and SMS over the next 11 days to arrange a free call. I can opt out at any time by replying STOP to any message.`;
+// (each form appends that). Adjacent-professions lane: sharing, re-referral and
+// referral-fee disclosure are MANDATORY and must all be kept in this notice.
+const leadConsentText =
+  `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated professional firm from our specialist partner network (for example a specialist probate firm), who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. ${niche.display_name} may receive a fee from the firm it introduces you to. By submitting this enquiry you confirm you understand this.`;
 
 export const siteConfig = {
   name: niche.display_name,
@@ -56,7 +54,7 @@ export const siteConfig = {
       `${niche.company!.place_of_registration} (company no. ${niche.company!.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Specialist partner firm enquiries are shared with (null = handled in-house).
+  // Partner-network category label enquiries are shared under (never a named firm).
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,
