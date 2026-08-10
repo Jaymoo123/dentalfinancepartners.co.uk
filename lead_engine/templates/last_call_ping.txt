@@ -1,0 +1,13 @@
+LAST CALL | {{TIER_LABEL}} | now {{PRICE}} (was {{ORIGINAL_PRICE}})
+
+** LAST CALL: reduced price, this lead closes shortly **
+
+Tier:      {{TIER_LABEL}}
+Case type: {{CASE_TYPE}}
+Area:      {{AREA}}
+Intent:    {{INTENT_LINE}}
+Price:     {{PRICE}} per claimed lead (reduced from {{ORIGINAL_PRICE}})
+
+Claim this lead: {{CLAIM_URL}}
+
+First firms to claim receive the lead. No commitment. You only pay for leads you claim.

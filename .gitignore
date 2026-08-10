@@ -120,3 +120,8 @@ optimisation_engine/niche_screener/generators/raw_reg_churn/
 
 # session scratch
 /tmp/
+
+# Lead engine dry-run artefacts (rendered pings/deliveries/invoices; regenerable)
+lead_engine/outbox/*
+lead_engine/invoices/*
+!**/.gitkeep

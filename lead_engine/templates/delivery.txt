@@ -1,0 +1,25 @@
+LEAD DELIVERY | {{LEAD_ID}} | {{TIER_LABEL}} | {{PRICE}}
+
+You claimed this lead. Full verified details below.
+
+Source site:  {{SOURCE_SITE}}
+Tier:         {{TIER_LABEL}}
+Case type:    {{CASE_TYPE}}
+Intent:       {{INTENT_LINE}}
+Area:         {{AREA}}
+Price:        {{PRICE}}
+
+CONTACT
+Name:   {{NAME}}
+Phone:  {{PHONE}}
+Email:  {{EMAIL}}
+
+FULL MESSAGE
+{{MESSAGE}}
+
+Verified:      {{VERIFIED}}
+Verified at:   {{VERIFIED_AT}}
+Delivered at:  {{DELIVERED_AT}}
+
+STANDARD TERMS
+{{TERMS}}

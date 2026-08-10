@@ -1,0 +1,11 @@
+NEW LEAD | {{TIER_LABEL}} | {{PRICE}}
+
+Tier:      {{TIER_LABEL}}
+Case type: {{CASE_TYPE}}
+Area:      {{AREA}}
+Intent:    {{INTENT_LINE}}
+Price:     {{PRICE}} per claimed lead
+
+Claim this lead: {{CLAIM_URL}}
+
+First firms to claim receive the lead. No commitment. You only pay for leads you claim.
