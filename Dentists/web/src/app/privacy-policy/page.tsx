@@ -5,7 +5,6 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 const company = siteConfig.company;
-const partner = siteConfig.partner;
 
 export const metadata: Metadata = {
   title: "Privacy policy",
@@ -92,10 +91,8 @@ export default function PrivacyPolicyPage() {
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>To respond to your enquiry:</strong>{" "}
-            {partner
-              ? "to deal with your enquiry and to pass it to a specialist partner firm in our network so that they can provide the advice you have requested."
-              : "to deal with your enquiry and provide the advice you have requested."}
+            <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to a relevant
+            regulated firm from our specialist partner network so that it can provide the advice you have requested.
           </li>
           <li>
             <strong>To send you updates you asked for:</strong> if you signed up to our email updates, to send you general
@@ -109,10 +106,15 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Our lawful basis</h2>
         <p>
-          We rely on your <strong>consent</strong> to process the personal data you provide through our enquiry forms and
-          email sign-ups{partner ? ", and to share your enquiry with our specialist partner network as described below" : ""}.
-          You can withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
-          processing that took place before you withdrew it.
+          When you submit an enquiry, we rely on our <strong>legitimate interests</strong> to handle it and to share it
+          with a relevant regulated firm from our specialist partner network, so that the firm can respond and provide
+          the advice you asked for. You have the <strong>right to object</strong> to this processing at any time (see
+          your rights in section 7).
+        </p>
+        <p>
+          For our email sign-ups, we rely on your <strong>consent</strong>. You can withdraw your consent at any time
+          (see your rights in section 7); withdrawing consent does not affect any processing that took place before you
+          withdrew it.
         </p>
         <p>
           For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>,
@@ -120,20 +122,15 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
-        {partner ? (
-          <p>
-            When you submit an enquiry, we share the details you provide with a specialist partner firm from our{" "}
-            <strong>specialist partner network</strong>, so that they can respond and provide the advice you asked for. The
-            receiving firm acts as an <strong>independent data controller</strong> of the information it receives, and its
-            own use of your data is governed by its own privacy policy. We share your enquiry only for the purpose of
-            responding to it.
-          </p>
-        ) : (
-          <p>
-            Your enquiry is handled by us; we do <strong>not</strong> share it with any third-party advisory firm. We use
-            the service providers listed below only as our processors, acting on our instructions.
-          </p>
-        )}
+        <p>
+          When you submit an enquiry, we share the details you provide with a relevant regulated firm from our{" "}
+          <strong>specialist partner network</strong>, so that it can respond and provide the advice you asked for. The
+          receiving firm acts as an <strong>independent data controller</strong> of the information it receives, will
+          tell you who it is when it first contacts you, and its own use of your data is governed by its own privacy
+          policy. If that firm is unable to help, we may pass your enquiry to another firm in the network for the same
+          purpose. We share your enquiry only for the purpose of responding to it, on the basis of our{" "}
+          <strong>legitimate interests</strong> (see section 4), and you can object at any time (see section 7).
+        </p>
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>

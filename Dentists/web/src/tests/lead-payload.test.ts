@@ -3,9 +3,8 @@
  *
  * Verifies:
  *  - calculatorMessagePrefix and exitIntentMessagePrefix produce correct output.
- *  - The consent text names a generic "specialist partner network" (no named partner
- *    firm) and never "DJH" or "Reflex" (internal/former names; must not appear in
- *    user-facing copy).
+ *  - The consent notice names the specialist partner network, discloses re-referral,
+ *    and never "DJH" (internal name; must not appear in user-facing copy).
  *
  * TL-03: pure Node.js module tests only -- no React, no window, no fetch.
  */
@@ -57,13 +56,15 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text names a generic 'specialist partner network' (no named partner firm)", async () => {
-    // The consent text must disclose data sharing without naming a specific
-    // partner firm. We import the site config here rather than duplicating the
-    // string in tests so this test fails immediately when the config changes.
+  it("consent notice names the specialist partner network and discloses re-referral", async () => {
+    // Notice-only acknowledgement (pool model): must name the network category,
+    // never a single firm, and must disclose onward re-referral. We import the
+    // site config here rather than duplicating the string in tests so this test
+    // fails immediately when the config changes.
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("partner network");
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).toContain("passed to another firm in the network");
   });
 
   it("consent text never contains 'DJH' or 'Reflex' (copy discipline: no internal/named-partner mentions)", async () => {

@@ -92,8 +92,9 @@ export default async function CompletePage({
           <div className="border-2 border-[var(--gold)] bg-[var(--gold-soft)] p-6 text-center">
             <p className="text-lg font-bold text-[var(--navy)]">You are all set</p>
             <p className="mt-2 text-base text-[var(--navy)]/70">
-              We have everything we need. A dental accountant will be in touch shortly. If you would
-              like to pick a time that suits you, you can book a callback below.
+              We have everything we need. A specialist firm from our partner network may contact you
+              directly about your enquiry. If you would like to pick a time that suits you, you can
+              book a callback below.
             </p>
             {bookingToken && (
               <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
@@ -116,8 +117,8 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-[var(--navy)]/70">
-            Add the last detail we need and a dental accountant will be in touch to arrange your
-            free dental practice finance review, no obligation.
+            Add the last detail we need and a specialist firm from our partner network will be in
+            touch to arrange your free dental practice finance review, no obligation.
           </p>
           <div className="mt-10">{inner}</div>
         </div>
