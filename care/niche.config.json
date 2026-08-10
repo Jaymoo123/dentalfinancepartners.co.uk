@@ -2,7 +2,11 @@
   "niche_id": "care",
   "display_name": "Care Home Tax",
   "legal_name": "Ashfield Trading Ltd",
-  "partner": null,
+  "partner": {
+    "name": "a firm from our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
+  },
   "company": {
     "number": "16358723",
     "place_of_registration": "England and Wales",
