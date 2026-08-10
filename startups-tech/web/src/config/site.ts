@@ -7,9 +7,11 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 
 const partner = niche.partner;
 
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with its specialist partner network, and to ${niche.display_name} and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+// Lead-form acknowledgement wording (legitimate interests, notice-only) WITHOUT the
+// trailing "See our Privacy Policy." link (each form appends that). Static category
+// wording: pool model with onward re-referral disclosed, no named firm.
+const leadConsentText =
+  "Founder Tax Partners will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
 
 export const siteConfig = {
   name: niche.display_name,

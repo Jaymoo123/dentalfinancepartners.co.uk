@@ -4,7 +4,6 @@ import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 const company = siteConfig.company;
-const partner = siteConfig.partner;
 
 export const metadata: Metadata = {
   title: "Privacy policy",
@@ -27,7 +26,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
+      <p className="mt-4 text-sm text-neutral-500">Last updated: 10 August 2026</p>
       <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -86,10 +85,9 @@ export default function PrivacyPolicyPage() {
         <h2 className="text-xl font-semibold text-neutral-900">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>To respond to your enquiry:</strong>{" "}
-            {partner
-              ? "to deal with your enquiry and to pass it to a specialist partner firm in our network so that they can provide the advice you have requested."
-              : "to deal with your enquiry and provide the advice you have requested."}
+            <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to a
+            relevant regulated firm from our specialist partner network so that they can provide the advice
+            you have requested.
           </li>
           <li>
             <strong>To send you updates you asked for:</strong> if you signed up to our email updates, to send you general
@@ -104,11 +102,9 @@ export default function PrivacyPolicyPage() {
         <h2 className="text-xl font-semibold text-neutral-900">4. Our lawful basis</h2>
         <p>
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f) of the UK
-          GDPR)
-          {partner
-            ? ` to handle your enquiry and to share it with our specialist partner firm, so that you can be connected with the specialist startup tax help you have asked for`
-            : " to handle it, so that we can respond and provide the help you have asked for"}
-          . Where we need to take steps at your request to deal with your enquiry, we also rely on{" "}
+          GDPR) to handle your enquiry and to share it with our specialist partner network, so that you can be
+          connected with the specialist startup tax help you have asked
+          for. Where we need to take steps at your request to deal with your enquiry, we also rely on{" "}
           <strong>Article 6(1)(b)</strong>. You have the <strong>right to object</strong> to this processing at any time,
           under Article 21 (see your rights in section 7).
         </p>
@@ -123,37 +119,19 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <h2 className="text-xl font-semibold text-neutral-900">5. Who we share your information with</h2>
-        {partner ? (
-          <p>
-            When you submit an enquiry, we share information about you and your enquiry with a specialist partner firm in{" "}
-            our specialist partner network, so that they can contact you and provide the advice you asked for. As well as the
-            details you give us (your name, contact details and your enquiry), this includes the result of our checks to
-            confirm your contact details are valid, a short summary and priority rating we prepare to help route your enquiry,
-            any messages you send us in response, a note of how you used our website in connection with your enquiry, and any
-            call time you book. We do this on the basis of our <strong>legitimate interests</strong> (see section 4), and you
-            can object at any time (see section 7). The partner firm acts as an <strong>independent data controller</strong> of
-            the information it receives, may share it within its own group of companies for the same purpose, and uses it under
-            its own{" "}
-            {partner.privacyPolicyUrl ? (
-              <a
-                href={partner.privacyPolicyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-[#4f46e5] underline"
-              >
-                privacy policy
-              </a>
-            ) : (
-              "privacy policy"
-            )}
-            . We share this information only for the purpose of arranging and providing the advice you asked for.
-          </p>
-        ) : (
-          <p>
-            Your enquiry is handled by us; we do <strong>not</strong> share it with any third-party advisory firm. We use
-            the service providers listed below only as our processors, acting on our instructions.
-          </p>
-        )}
+        <p>
+          When you submit an enquiry, we share information about you and your enquiry with a relevant regulated firm from{" "}
+          our specialist partner network, so that they can contact you and provide the advice you asked for. As well as the
+          details you give us (your name, contact details and your enquiry), this includes the result of our checks to
+          confirm your contact details are valid, a short summary and priority rating we prepare to help route your enquiry,
+          any messages you send us in response, a note of how you used our website in connection with your enquiry, and any
+          call time you book. We do this on the basis of our <strong>legitimate interests</strong> (see section 4), and you
+          can object at any time (see section 7). The receiving firm acts as an <strong>independent data controller</strong> of
+          the information it receives, will tell you who it is when it first contacts you, may share it within its own group
+          of companies for the same purpose, and uses it under its own privacy
+          policy. If that firm is unable to help, we may pass your enquiry to another firm in the same network for the same
+          purpose. We share this information only for the purpose of arranging and providing the advice you asked for.
+        </p>
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
@@ -179,8 +157,8 @@ export default function PrivacyPolicyPage() {
           <li><strong>Restrict</strong> how we use your data in certain situations.</li>
           <li><strong>Data portability:</strong> receive a copy of your data in a machine-readable format.</li>
           <li>
-            <strong>Object</strong> to our processing that is based on legitimate interests
-            {partner ? ", including our sharing of your enquiry with our partner firm" : ""}, under Article 21.
+            <strong>Object</strong> to our processing that is based on legitimate interests, including our sharing of
+            your enquiry with our partner network, under Article 21.
           </li>
           <li><strong>Withdraw consent</strong> at any time, where we rely on your consent (for example, our email updates).</li>
         </ul>
