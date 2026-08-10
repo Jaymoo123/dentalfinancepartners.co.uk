@@ -7,9 +7,10 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 
 const partner = niche.partner;
 
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+// Lead-form data-sharing acknowledgement (legitimate interests, notice-only).
+// Static category wording, never a named firm; forms append "See our Privacy Policy."
+const leadConsentText =
+  "Hospitality Tax will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
 
 export const siteConfig = {
   name: niche.display_name,
