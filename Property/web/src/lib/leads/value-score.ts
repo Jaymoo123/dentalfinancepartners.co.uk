@@ -12,6 +12,7 @@ import { adminInsert } from "@/lib/supabase/admin";
 
 const ScoreSchema = z.object({
   tier: z.enum(["very_high", "high", "medium", "low"]),
+  case_tier: z.enum(["advisory", "standard", "essential"]),
   est_value_gbp: z.number().int().min(0).max(20000),
   intent: z.enum([
     "incorporation",
@@ -51,7 +52,25 @@ work_type: recurring = would become an ongoing client; project = large one-time 
 one_off = single piece of advisory; none = no billable work.
 confidence: low for thin/one-line/ambiguous messages, high only when the lead gives
 concrete facts (property counts, values, structures, deadlines).
-rationale: one short sentence quoting the decisive facts.`;
+rationale: one short sentence quoting the decisive facts.
+
+SEPARATELY, classify case_tier by the TYPE of professional work the enquiry describes,
+in the enquirer's own words. Grade only on what the enquiry evidences, never on inferred
+client value; case_tier is independent of tier/est_value_gbp.
+- advisory: incorporation; ownership restructuring (partnerships, spouse/company
+  transfers, Form 17); CGT planning (disposals, reliefs, timing); SDLT (surcharges,
+  reliefs, mixed use); non-resident or expat position; charity or CIO formation or
+  structuring; reconstruction of historic records or multi-year filings;
+  multi-property or multi-entity portfolio structuring.
+- standard: landlord self assessment with any complicating factor (multiple properties,
+  finance-cost restriction, jointly held income, first year letting); SME accounts and
+  company filings; compliance mixed with an advice question that does not itself reach
+  an advisory case type.
+- essential: a single straightforward return; basic bookkeeping or filing; enquiries
+  too vague to evidence anything more.
+When in doubt between two case tiers, output the LOWER one. A rental property with no
+complicating factor evidenced is essential, not standard; multiple properties with only
+a compliance ask is standard, not advisory (advisory needs a structural question).`;
 
 type LeadLike = {
   id?: string;

@@ -14,7 +14,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { verifyLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { adminSelect } from "@/lib/supabase/admin";
-import { matchingBuyers, tierPrice } from "@/lib/leads/offer-config";
+import { matchingBuyers, offerTierFor, tierPrice } from "@/lib/leads/offer-config";
 import { buildTeaser, tierLabel } from "@/lib/leads/offer-teaser";
 import { sendOffers, renderTeaserHtml } from "@/lib/leads/offer-send";
 import type { LeadRecord } from "@/lib/leads/notify-email";
@@ -48,7 +48,13 @@ function page(title: string, body: string): NextResponse {
   });
 }
 
-type ScoreRow = { tier: string; est_value_gbp: number; intent: string; work_type: string };
+type ScoreRow = {
+  tier: string;
+  case_tier: string | null;
+  est_value_gbp: number;
+  intent: string;
+  work_type: string;
+};
 
 async function loadLeadAndScore(
   leadId: string,
@@ -60,7 +66,7 @@ async function loadLeadAndScore(
   const lead = leadRes.ok ? leadRes.data[0] : undefined;
   if (!lead) return null;
   const scoreRes = await adminSelect<ScoreRow>("lead_value_scores", {
-    select: "tier,est_value_gbp,intent,work_type",
+    select: "tier,case_tier,est_value_gbp,intent,work_type",
     lead_id: `eq.${leadId}`,
   });
   const score = scoreRes.ok ? scoreRes.data[0] : undefined;
@@ -84,18 +90,19 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   if (lead.is_test) {
     return page("Test lead", `<h1>Test lead</h1><p>Test leads are never offered to buyers.</p>`);
   }
-  if (tierPrice(score.tier) === null) {
+  const offerTier = offerTierFor(score);
+  if (offerTier === null || tierPrice(offerTier) === null) {
     return page(
       "Not sellable",
-      `<h1>Not a sellable tier</h1><p>This lead is scored <strong>${tierLabel(score.tier)}</strong>, which is not on the price card.</p>`,
+      `<h1>Not a sellable tier</h1><p>This lead has no sellable case tier (scored <strong>${score.case_tier ?? score.tier}</strong>), so it is not on the price card.</p>`,
     );
   }
 
-  const buyers = await matchingBuyers((lead.source ?? "").toLowerCase(), score.tier);
+  const buyers = await matchingBuyers((lead.source ?? "").toLowerCase(), offerTier);
   if (buyers.length === 0) {
     return page(
       "No matching buyers",
-      `<h1>No active buyers for this lead</h1><p>No active buyer subscribes to the <strong>${lead.source ?? ""}</strong> vertical at tier <strong>${tierLabel(score.tier)}</strong>. Add or update a buyer row and reopen this link.</p>`,
+      `<h1>No active buyers for this lead</h1><p>No active buyer subscribes to the <strong>${lead.source ?? ""}</strong> vertical at tier <strong>${tierLabel(offerTier)}</strong>. Add or update a buyer row and reopen this link.</p>`,
     );
   }
 
@@ -105,7 +112,7 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
     "Offer to buyers?",
     `<h1>Offer this lead to ${buyers.length} buyer${buyers.length === 1 ? "" : "s"}?</h1>
      <p>Buyers will see exactly this, with an Accept link. First to accept claims exclusively; the offer expires after 24 hours.</p>
-     ${renderTeaserHtml(teaser, tierPrice(score.tier))}
+     ${renderTeaserHtml(teaser, tierPrice(offerTier))}
      <form method="POST" action="${actionUrl}" style="margin-top:24px"><input type="hidden" name="confirm" value="1"><button type="submit">Offer to buyers</button></form>`,
   );
 }
@@ -132,7 +139,8 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   }
 
   const loaded = await loadLeadAndScore(v.leadId);
-  if (!loaded || loaded.lead.is_test || tierPrice(loaded.score.tier) === null) {
+  const postTier = loaded ? offerTierFor(loaded.score) : null;
+  if (!loaded || loaded.lead.is_test || postTier === null || tierPrice(postTier) === null) {
     return page("Not available", `<h1>Lead not available</h1><p>This lead cannot be offered (missing score, test lead, or unsellable tier).</p>`);
   }
 

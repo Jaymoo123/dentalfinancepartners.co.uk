@@ -157,7 +157,7 @@ function seedBuyer(over: Row = {}): Row {
     email: `firm${idCounter}@buyers.test`,
     status: "active",
     sources: ["dentists"],
-    min_tier: "medium",
+    min_tier: "standard",
     ...over,
   };
   db.lead_buyers.push(buyer);
@@ -170,7 +170,7 @@ function seedOffer(over: Row = {}): Row {
     lead_id: "lead-1",
     buyer_id: "buyer-1",
     token: `aaaabbbbccccdddd${idCounter}`,
-    teaser: { site: "Dentists", tier: "high", est_band: "", intent: "structure", work_type: "recurring", role: "", surface: "", submitted_date: "2026-08-06" },
+    teaser: { site: "Dentists", tier: "advisory", est_band: "", intent: "structure", work_type: "recurring", role: "", surface: "", submitted_date: "2026-08-06" },
     status: "offered",
     expires_at: FUTURE,
     price_gbp: 85,
@@ -186,8 +186,8 @@ beforeEach(() => {
   contactEvents.length = 0;
   aiSituation = "Landlord with three properties weighing incorporation.";
   process.env.LEAD_OFFER_SOURCES = "dentists,solicitors,medical";
-  process.env.LEAD_OFFER_PRICES = "medium:40,high:85,very_high:150";
-  process.env.LEAD_OFFER_MIN_TIER = "medium";
+  process.env.LEAD_OFFER_PRICES = "essential:15,standard:40,advisory:85";
+  process.env.LEAD_OFFER_MIN_TIER = "essential";
   delete process.env.LEAD_OFFER_AUTO;
 });
 
@@ -195,56 +195,67 @@ beforeEach(() => {
 
 describe("offerQualifies", () => {
   const lead = (source: string, is_test = false) => ({ source, is_test });
-  const score = (tier: string) => ({ tier });
+  const score = (case_tier: string) => ({ tier: "medium", case_tier });
 
-  it("accepts a medium+ lead on an offered vertical", () => {
-    expect(offerQualifies(lead("dentists"), score("medium"))).toBe(true);
-    expect(offerQualifies(lead("solicitors"), score("very_high"))).toBe(true);
+  it("accepts an essential+ lead on an offered vertical", () => {
+    expect(offerQualifies(lead("dentists"), score("essential"))).toBe(true);
+    expect(offerQualifies(lead("dentists"), score("standard"))).toBe(true);
+    expect(offerQualifies(lead("solicitors"), score("advisory"))).toBe(true);
   });
-  it("rejects low tier, test leads, property, and unoffered sources", () => {
-    expect(offerQualifies(lead("dentists"), score("low"))).toBe(false);
-    expect(offerQualifies(lead("dentists", true), score("high"))).toBe(false);
-    expect(offerQualifies(lead("property"), score("very_high"))).toBe(false);
-    expect(offerQualifies(lead("generalist"), score("high"))).toBe(false);
-    expect(offerQualifies(lead(""), score("high"))).toBe(false);
+  it("rejects unsellable scores, test leads, property, and unoffered sources", () => {
+    expect(offerQualifies(lead("dentists"), { tier: "low" })).toBe(false);
+    expect(offerQualifies(lead("dentists", true), score("advisory"))).toBe(false);
+    expect(offerQualifies(lead("property"), score("advisory"))).toBe(false);
+    expect(offerQualifies(lead("generalist"), score("advisory"))).toBe(false);
+    expect(offerQualifies(lead(""), score("advisory"))).toBe(false);
   });
   it("READY-gates sources listed in LEAD_OFFER_READY_GATED_SOURCES (property always)", () => {
     process.env.LEAD_OFFER_READY_GATED_SOURCES = "dentists";
-    expect(offerQualifies(lead("dentists"), score("high"))).toBe(false);
-    expect(offerQualifies(lead("property"), score("high"))).toBe(false); // implicit, always
-    expect(offerQualifies(lead("solicitors"), score("high"))).toBe(true);
+    expect(offerQualifies(lead("dentists"), score("advisory"))).toBe(false);
+    expect(offerQualifies(lead("property"), score("advisory"))).toBe(false); // implicit, always
+    expect(offerQualifies(lead("solicitors"), score("advisory"))).toBe(true);
     delete process.env.LEAD_OFFER_READY_GATED_SOURCES;
   });
 
   it("respects a raised min tier", () => {
-    process.env.LEAD_OFFER_MIN_TIER = "high";
-    expect(offerQualifies(lead("dentists"), score("medium"))).toBe(false);
-    expect(offerQualifies(lead("dentists"), score("high"))).toBe(true);
+    process.env.LEAD_OFFER_MIN_TIER = "advisory";
+    expect(offerQualifies(lead("dentists"), score("standard"))).toBe(false);
+    expect(offerQualifies(lead("dentists"), score("advisory"))).toBe(true);
+  });
+
+  it("legacy rows without case_tier fall back through the owner-approved map", () => {
+    expect(offerQualifies(lead("dentists"), { tier: "very_high" })).toBe(true); // -> advisory
+    expect(offerQualifies(lead("dentists"), { tier: "high" })).toBe(true); // -> advisory
+    expect(offerQualifies(lead("dentists"), { tier: "medium" })).toBe(true); // -> standard
+    expect(offerQualifies(lead("dentists"), { tier: "low" })).toBe(false); // unmapped = unsellable
+    expect(offerQualifies(lead("dentists"), {})).toBe(false);
   });
 });
 
 describe("tierPrice / tierAtLeast", () => {
-  it("reads the price card and never sells low", () => {
-    expect(tierPrice("medium")).toBe(40);
-    expect(tierPrice("high")).toBe(85);
-    expect(tierPrice("very_high")).toBe(150);
+  it("reads the price card and never sells legacy ids", () => {
+    expect(tierPrice("essential")).toBe(15);
+    expect(tierPrice("standard")).toBe(40);
+    expect(tierPrice("advisory")).toBe(85);
     expect(tierPrice("low")).toBeNull();
+    expect(tierPrice("high")).toBeNull();
+    expect(tierPrice("very_high")).toBeNull();
     expect(tierPrice("nonsense")).toBeNull();
   });
   it("orders tiers correctly", () => {
-    expect(tierAtLeast("very_high", "medium")).toBe(true);
-    expect(tierAtLeast("medium", "high")).toBe(false);
-    expect(tierAtLeast("high", "high")).toBe(true);
+    expect(tierAtLeast("advisory", "essential")).toBe(true);
+    expect(tierAtLeast("essential", "standard")).toBe(false);
+    expect(tierAtLeast("standard", "standard")).toBe(true);
   });
 });
 
 describe("matchingBuyers", () => {
   it("filters by status, source subscription and tier floor", async () => {
-    seedBuyer({ id: "b1", sources: ["dentists"], min_tier: "medium" });
-    seedBuyer({ id: "b2", sources: ["dentists"], min_tier: "very_high" });
-    seedBuyer({ id: "b3", sources: ["solicitors"], min_tier: "medium" });
+    seedBuyer({ id: "b1", sources: ["dentists"], min_tier: "standard" });
+    seedBuyer({ id: "b2", sources: ["dentists"], min_tier: "advisory" });
+    seedBuyer({ id: "b3", sources: ["solicitors"], min_tier: "standard" });
     seedBuyer({ id: "b4", sources: ["dentists"], status: "paused" });
-    const hit = await matchingBuyers("dentists", "high");
+    const hit = await matchingBuyers("dentists", "standard");
     expect(hit.map((b) => b.id)).toEqual(["b1"]);
   });
 });
@@ -265,7 +276,7 @@ describe("teaser PII defence", () => {
     aiSituation = "Email them at leak@example.com";
     const teaser = await buildTeaser(
       { id: "lead-1", message: "help", source: "dentists", created_at: "2026-08-06T10:00:00Z" },
-      { tier: "high", est_value_gbp: 2000, intent: "structure", work_type: "recurring" },
+      { tier: "high", case_tier: "advisory", est_value_gbp: 2000, intent: "structure", work_type: "recurring" },
     );
     expect(teaser.situation).toBeUndefined();
     expect(JSON.stringify(teaser)).not.toContain("leak@example.com");
@@ -275,10 +286,24 @@ describe("teaser PII defence", () => {
     aiSituation = null;
     const teaser = await buildTeaser(
       { id: "lead-1", message: "help", source: "dentists" },
-      { tier: "medium", est_value_gbp: 500, intent: "cgt", work_type: "one_off" },
+      { tier: "medium", case_tier: "standard", est_value_gbp: 500, intent: "cgt", work_type: "one_off" },
     );
     expect(teaser.situation).toBeUndefined();
-    expect(teaser.tier).toBe("medium");
+    expect(teaser.tier).toBe("standard");
+  });
+
+  it("teaser tier is the case tier, mapped for legacy scores, never a legacy id", async () => {
+    aiSituation = null;
+    const legacy = await buildTeaser(
+      { id: "lead-1", message: "help", source: "dentists" },
+      { tier: "high", est_value_gbp: 2000, intent: "structure", work_type: "recurring" },
+    );
+    expect(legacy.tier).toBe("advisory");
+    const low = await buildTeaser(
+      { id: "lead-2", message: "help", source: "dentists" },
+      { tier: "low", est_value_gbp: 0 },
+    );
+    expect(low.tier).toBe("");
   });
 });
 
@@ -286,7 +311,7 @@ describe("teaser PII defence", () => {
 
 describe("sendOffers", () => {
   const teaser = {
-    site: "Dentists", tier: "high", est_band: "£1,000–£3,000", intent: "structure",
+    site: "Dentists", tier: "advisory", est_band: "£1,000–£3,000", intent: "structure",
     work_type: "recurring", role: "Practice owner", surface: "", submitted_date: "2026-08-06",
   };
 
@@ -299,9 +324,39 @@ describe("sendOffers", () => {
     expect(db.lead_offers).toHaveLength(2);
     expect(db.lead_offers.every((o) => o.price_gbp === 85 && o.status === "offered")).toBe(true);
     expect(sentEmails).toHaveLength(2);
+    expect(sentEmails[0].subject).toContain("Advisory tier, £85");
     expect(sentEmails[0].html).toContain("Accept this lead");
+    // Buyer-facing copy renders the new labels, never the old tier ids.
+    expect(sentEmails[0].html).not.toMatch(/very_high|Very high/);
     // Anonymised: buyer email must not contain a claimable lead id.
     expect(sentEmails[0].html).not.toContain("lead-1");
+  });
+
+  it("legacy fallback: a lead scored high with no case_tier offers as advisory at £85", async () => {
+    aiSituation = null;
+    seedBuyer({ id: "b1", email: "b1@buyers.test", min_tier: "standard" });
+    const legacyTeaser = await buildTeaser(
+      { id: "lead-9", message: "incorporation question", source: "dentists" },
+      { tier: "high", est_value_gbp: 2000, intent: "incorporation", work_type: "project" },
+    );
+    const result = await sendOffers("lead-9", "dentists", legacyTeaser);
+    expect(result.offered).toBe(1);
+    expect(db.lead_offers[0].price_gbp).toBe(85);
+    expect((db.lead_offers[0].teaser as { tier: string }).tier).toBe("advisory");
+    expect(sentEmails[0].subject).toContain("Advisory tier, £85");
+  });
+
+  it("legacy fallback: a low-only lead never offers", async () => {
+    aiSituation = null;
+    seedBuyer({ id: "b1", email: "b1@buyers.test", min_tier: "essential" });
+    const lowTeaser = await buildTeaser(
+      { id: "lead-10", message: "hi", source: "dentists" },
+      { tier: "low", est_value_gbp: 0 },
+    );
+    const result = await sendOffers("lead-10", "dentists", lowTeaser);
+    expect(result.matched).toBe(0);
+    expect(db.lead_offers).toHaveLength(0);
+    expect(sentEmails).toHaveLength(0);
   });
 
   it("is idempotent: re-offering inserts nothing and emails no one", async () => {

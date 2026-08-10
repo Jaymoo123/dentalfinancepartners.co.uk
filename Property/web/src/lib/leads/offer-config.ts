@@ -9,14 +9,31 @@
  * (the handoff email carries the same offer link).
  */
 import { adminSelect } from "@/lib/supabase/admin";
+import {
+  CASE_TIERS,
+  DEFAULT_PRICE_CARD,
+  LEGACY_TIER_MAP,
+  TIER_RANK,
+  type OfferTier,
+} from "@/lib/leads/tiers";
 
-export type OfferTier = "very_high" | "high" | "medium";
-
-/** Tier rank for >= comparisons (higher = more valuable). */
-const TIER_RANK: Record<string, number> = { low: 0, medium: 1, high: 2, very_high: 3 };
+export type { OfferTier };
 
 export function tierAtLeast(tier: string, floor: string): boolean {
-  return (TIER_RANK[tier] ?? 0) >= (TIER_RANK[floor] ?? 0);
+  return (
+    (TIER_RANK[tier as OfferTier] ?? 0) >= (TIER_RANK[floor as OfferTier] ?? 0)
+  );
+}
+
+/**
+ * Resolve the sellable case tier for a value-score row: case_tier when
+ * present, else the owner-approved legacy map for rows scored before the
+ * case-tier migration. Null = not sellable (legacy low, or unmapped).
+ */
+export function offerTierFor(score: ScoreLike): OfferTier | null {
+  const ct = score?.case_tier;
+  if (ct && ct in CASE_TIERS) return ct as OfferTier;
+  return LEGACY_TIER_MAP[score?.tier ?? ""] ?? null;
 }
 
 /** Sites whose leads are offered immediately on arrival. Default: none until armed. */
@@ -28,12 +45,11 @@ export function offeredSources(): string[] {
 }
 
 /**
- * Per-tier price card in whole GBP, e.g. "medium:40,high:85,very_high:150".
- * A tier missing from the card is not sellable. Low is never sellable.
+ * Per-tier price card in whole GBP, e.g. "essential:15,standard:40,advisory:85".
+ * A tier missing from the card is not sellable.
  */
 export function tierPrice(tier: string): number | null {
-  if (tier === "low") return null;
-  const raw = process.env.LEAD_OFFER_PRICES || "medium:40,high:85,very_high:150";
+  const raw = process.env.LEAD_OFFER_PRICES || DEFAULT_PRICE_CARD;
   for (const part of raw.split(",")) {
     const [k, v] = part.split(":").map((s) => s.trim());
     if (k === tier) {
@@ -44,9 +60,9 @@ export function tierPrice(tier: string): number | null {
   return null;
 }
 
-/** Minimum tier offered to buyers at all (owner decision: medium and up). */
+/** Minimum case tier offered to buyers at all (owner decision: every tier). */
 export function offerMinTier(): string {
-  return (process.env.LEAD_OFFER_MIN_TIER || "medium").trim();
+  return (process.env.LEAD_OFFER_MIN_TIER || "essential").trim();
 }
 
 /**
@@ -72,7 +88,7 @@ export function offerAutoMode(): boolean {
 }
 
 type LeadLike = { source?: string; is_test?: boolean };
-type ScoreLike = { tier?: string } | null | undefined;
+type ScoreLike = { tier?: string; case_tier?: string | null } | null | undefined;
 
 /**
  * Whether a freshly arrived lead qualifies for the immediate offer path.
@@ -83,7 +99,8 @@ export function offerQualifies(lead: LeadLike, score: ScoreLike): boolean {
   const source = (lead.source ?? "").toLowerCase();
   if (!source || readyGatedSources().includes(source)) return false;
   if (!offeredSources().includes(source)) return false;
-  const tier = score?.tier ?? "";
+  const tier = offerTierFor(score);
+  if (tier === null) return false;
   if (!tierAtLeast(tier, offerMinTier())) return false;
   return tierPrice(tier) !== null;
 }

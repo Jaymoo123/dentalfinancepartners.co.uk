@@ -17,6 +17,8 @@
 import { z } from "zod";
 import { generateJson, anthropicConfigured } from "@/lib/ai/anthropic";
 import { roleLabel, surfaceLabel } from "@/lib/leads/role-labels";
+import { offerTierFor } from "@/lib/leads/offer-config";
+import { CASE_TIERS, LEGACY_TIER_MAP, type OfferTier } from "@/lib/leads/tiers";
 
 export type TeaserJson = {
   site: string;
@@ -43,6 +45,7 @@ type LeadLike = {
 
 type ScoreLike = {
   tier: string;
+  case_tier?: string | null;
   est_value_gbp?: number;
   intent?: string;
   work_type?: string;
@@ -116,7 +119,9 @@ export async function buildTeaser(lead: LeadLike, score: ScoreLike): Promise<Tea
   const fid = typeof lead.extras?.form_id === "string" ? lead.extras.form_id : "";
   const teaser: TeaserJson = {
     site: prettySource(lead.source ?? undefined),
-    tier: score.tier,
+    // Buyer-facing tier is the case tier (legacy rows map via LEGACY_TIER_MAP);
+    // the internal value-score tier never reaches a buyer.
+    tier: offerTierFor(score) ?? "",
     est_band: estBand(score.est_value_gbp),
     intent: score.intent ?? "unknown",
     work_type: score.work_type ?? "unknown",
@@ -129,8 +134,12 @@ export async function buildTeaser(lead: LeadLike, score: ScoreLike): Promise<Tea
   return teaser;
 }
 
-/** Buyer-facing tier labels (DB uses very_high underscore form). */
+/**
+ * Buyer-facing tier labels. Legacy value-score ids (stored in old teaser
+ * jsonb) map through to their case-tier label so an old id never renders.
+ */
 export function tierLabel(tier: string): string {
-  if (tier === "very_high") return "Very high";
-  return tier ? tier[0].toUpperCase() + tier.slice(1) : "";
+  const resolved: OfferTier | undefined =
+    tier in CASE_TIERS ? (tier as OfferTier) : LEGACY_TIER_MAP[tier];
+  return resolved ? CASE_TIERS[resolved].label : "";
 }

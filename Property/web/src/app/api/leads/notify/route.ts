@@ -34,7 +34,7 @@ import {
   prettySource,
   type LeadRecord,
 } from "@/lib/leads/notify-email";
-import { offerQualifies, offerAutoMode, tierPrice } from "@/lib/leads/offer-config";
+import { offerQualifies, offerAutoMode, offerTierFor, tierPrice } from "@/lib/leads/offer-config";
 import { buildTeaser, tierLabel } from "@/lib/leads/offer-teaser";
 import {
   sendOffers,
@@ -80,7 +80,8 @@ async function buildOfferBlock(r: LeadRecord): Promise<OfferBlock | null> {
     if (!score || !offerQualifies(r, score)) return null;
 
     const teaser = await buildTeaser(r, score);
-    const price = tierPrice(score.tier);
+    const offerTier = offerTierFor(score) ?? "";
+    const price = tierPrice(offerTier);
 
     if (offerAutoMode()) {
       const result = await sendOffers(r.id!, (r.source ?? "").toLowerCase(), teaser);
@@ -99,12 +100,12 @@ async function buildOfferBlock(r: LeadRecord): Promise<OfferBlock | null> {
 
     const offerUrl = `${offerBaseUrl()}/api/leads/offer/${mintLeadToken(r.id!, "offer")}`;
     return {
-      html: `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Buyer teaser (${tierLabel(score.tier)}${price !== null ? ` · £${price}` : ""})</p>
+      html: `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Buyer teaser (${tierLabel(offerTier)}${price !== null ? ` · £${price}` : ""})</p>
              ${renderTeaserHtml(teaser, price)}
              <table role="presentation" cellpadding="0" cellspacing="0" style="margin:16px 0 0;"><tr><td style="border-radius:6px;background-color:#0f172a;">
                <a href="${offerUrl}" style="display:inline-block;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;padding:11px 22px;border-radius:6px;">Offer to buyers</a>
              </td></tr></table>`,
-      text: `BUYER TEASER (${tierLabel(score.tier)}${price !== null ? `, £${price}` : ""})\n${renderTeaserText(teaser, price)}\n\nOffer to buyers: ${offerUrl}`,
+      text: `BUYER TEASER (${tierLabel(offerTier)}${price !== null ? `, £${price}` : ""})\n${renderTeaserText(teaser, price)}\n\nOffer to buyers: ${offerUrl}`,
     };
   } catch (err) {
     console.error("leads/notify: offer block failed", err);

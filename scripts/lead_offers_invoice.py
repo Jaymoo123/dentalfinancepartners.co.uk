@@ -4,6 +4,10 @@ Usage (repo root):
   python scripts/lead_offers_invoice.py 2026-08
   python scripts/lead_offers_invoice.py 2026-08 --credit OFFER_ID REASON
 
+Amounts come from the price_gbp snapshot on each offer (case-tier price card,
+see docs/LEAD_PRICING.md). The tier column shows the case tier; legacy rows
+without case_tier display via the owner-approved map (very_high/high ->
+advisory, medium -> standard).
 Needs SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL) + SUPABASE_SERVICE_ROLE_KEY in .env.
 """
 import json
@@ -81,8 +85,10 @@ def main():
     lead_ids = ",".join(o["lead_id"] for o in offers)
     leads = {l["id"]: l for l in api(url, key,
              f"leads?select=id,created_at,source&id=in.({lead_ids})&limit=2000")}
-    tiers = {s["lead_id"]: s["tier"] for s in api(url, key,
-             f"lead_value_scores?select=lead_id,tier&lead_id=in.({lead_ids})&limit=2000")}
+    legacy = {"very_high": "advisory", "high": "advisory", "medium": "standard"}
+    tiers = {s["lead_id"]: s.get("case_tier") or legacy.get(s["tier"], s["tier"])
+             for s in api(url, key,
+             f"lead_value_scores?select=lead_id,tier,case_tier&lead_id=in.({lead_ids})&limit=2000")}
 
     by_buyer = defaultdict(list)
     for o in offers:
@@ -90,7 +96,7 @@ def main():
     grand_gross = grand_credit = 0
     for bid, rows in by_buyer.items():
         b = buyers.get(bid, {"ref": bid[:8], "firm_name": "(unknown buyer)"})
-        print(f"\n{b['firm_name']} ({b['ref']}) — {month}")
+        print(f"\n{b['firm_name']} ({b['ref']}) · {month}")
         gross = credit = 0
         for o in rows:
             l = leads.get(o["lead_id"], {})

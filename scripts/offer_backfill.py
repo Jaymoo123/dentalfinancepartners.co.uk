@@ -6,10 +6,13 @@ Readout (default): tier + price the historical unsold lead list, per source.
 Batch offer: insert lead_offers rows for one buyer (does NOT send emails).
   python scripts/offer_backfill.py --buyer <ref> --lead-ids id1,id2
   python scripts/offer_backfill.py --buyer <ref> --source property \\
-      --since 2026-06-01 --min-tier high
+      --since 2026-06-01 --min-tier advisory
 
-Prices from docs/LEAD_PRICING.md (proposed, owner sign-off pending).
-Needs SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL) + SUPABASE_SERVICE_ROLE_KEY in .env.
+Case-tier prices from config/tiers.json (canonical; see docs/LEAD_PRICING.md).
+Runs from the repo root. Legacy rows without case_tier fall back through the
+owner-approved map (very_high/high -> advisory, medium -> standard, low never
+sold). Needs SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL) +
+SUPABASE_SERVICE_ROLE_KEY in .env.
 """
 import json
 import os
@@ -18,8 +21,11 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
-PRICE = {"medium": 40, "high": 85, "very_high": 150}  # low never sold
-TIER_RANK = {"medium": 0, "high": 1, "very_high": 2}
+SELLABLE = ("advisory", "standard", "essential")
+with open("config/tiers.json", encoding="utf-8") as f:
+    PRICE = {t["id"]: t["price"] for t in json.load(f)["tiers"] if t["id"] in SELLABLE}
+TIER_RANK = {"essential": 0, "standard": 1, "advisory": 2}
+LEGACY_TIER_MAP = {"very_high": "advisory", "high": "advisory", "medium": "standard"}
 
 
 def env(*names):
@@ -62,7 +68,7 @@ def unsold_leads(url, key):
     leads = api(url, key, "leads?select=id,created_at,submitted_at,source,role"
                           "&is_test=eq.false&order=created_at.asc&limit=5000")
     scores = {s["lead_id"]: s for s in api(url, key,
-              "lead_value_scores?select=lead_id,tier,intent,work_type&limit=5000")}
+              "lead_value_scores?select=lead_id,tier,case_tier,intent,work_type&limit=5000")}
     try:  # table may not exist pre-migration; for the readout that just means nothing offered yet
         offered = {o["lead_id"] for o in api(url, key, "lead_offers?select=lead_id&limit=5000")}
     except SystemExit:
@@ -73,7 +79,11 @@ def unsold_leads(url, key):
     out = []
     for l in leads:
         s = scores.get(l["id"])
-        if s and s["tier"] in PRICE and l["id"] not in offered:
+        if not s or l["id"] in offered:
+            continue
+        tier = s.get("case_tier") or LEGACY_TIER_MAP.get(s["tier"])
+        if tier in PRICE:
+            s["offer_tier"] = tier
             out.append((l, s))
     return out
 
@@ -84,10 +94,10 @@ def readout(rows, include_property):
     for l, s in rows:
         if l.get("source") == "property" and not include_property:
             continue
-        table[l.get("source") or "unknown"][s["tier"]] += 1
-    tiers = ["very_high", "high", "medium"]
-    print("Unsold lead backlog at proposed price card "
-          "(medium £40, high £85, very_high £150; low excluded)")
+        table[l.get("source") or "unknown"][s["offer_tier"]] += 1
+    tiers = ["advisory", "standard", "essential"]
+    card = ", ".join(f"{t} £{PRICE[t]}" for t in tiers)
+    print(f"Unsold lead backlog at the case-tier price card ({card}; legacy low excluded)")
     if not include_property:
         print("source=property excluded (pass --include-property to include)\n")
     hdr = f"{'source':<16}" + "".join(f"{t:>12}" for t in tiers) + f"{'total £':>12}"
@@ -127,8 +137,8 @@ def batch_offer(url, key, rows):
             picked = [(l, s) for l, s in picked if l.get("source") == arg("--source")]
         if arg("--since"):
             picked = [(l, s) for l, s in picked if l["created_at"][:10] >= arg("--since")]
-        min_tier = arg("--min-tier") or "medium"
-        picked = [(l, s) for l, s in picked if TIER_RANK[s["tier"]] >= TIER_RANK[min_tier]]
+        min_tier = arg("--min-tier") or "essential"
+        picked = [(l, s) for l, s in picked if TIER_RANK[s["offer_tier"]] >= TIER_RANK[min_tier]]
 
     if not picked:
         sys.exit("nothing to offer after filters")
@@ -138,8 +148,8 @@ def batch_offer(url, key, rows):
         # teaser = minimal structured card, no free text, no PII
         inserts.append({
             "lead_id": l["id"], "buyer_id": buyer["id"],
-            "price_gbp": PRICE[s["tier"]], "expires_at": expires,
-            "teaser": {"tier": s["tier"], "intent": s.get("intent"),
+            "price_gbp": PRICE[s["offer_tier"]], "expires_at": expires,
+            "teaser": {"tier": s["offer_tier"], "intent": s.get("intent"),
                        "work_type": s.get("work_type"), "source": l.get("source"),
                        "role": l.get("role"),
                        "submitted_date": (l.get("submitted_at") or l["created_at"])[:10],
