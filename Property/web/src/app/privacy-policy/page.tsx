@@ -161,7 +161,9 @@ export default function PrivacyPolicyPage() {
             ) : (
               "privacy policy"
             )}
-            . We share this information only for the purpose of arranging and providing the advice you asked for.
+            . We share this information only for the purpose of arranging and providing the advice you asked for. If
+            that firm is unable to help, we may pass your enquiry to another firm in the network for the same purpose.
+            Any firm that receives your enquiry will identify itself to you when it first contacts you.
           </p>
         ) : (
           <p>

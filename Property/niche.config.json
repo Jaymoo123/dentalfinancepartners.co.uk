@@ -15,9 +15,9 @@
     "enquiry_retention_months": 3
   },
   "partner": {
-    "name": "DJH Business Advisers Limited",
-    "descriptor": "(part of the DJH group of companies)",
-    "privacy_policy_url": "https://www.djh.co.uk/privacy-policy/"
+    "name": "a firm from our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
   },
   "domain": "www.propertytaxpartners.co.uk",
   "tagline": "Get your property tax sorted",
