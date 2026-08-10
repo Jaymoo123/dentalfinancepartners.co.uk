@@ -14,10 +14,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": {
-    "name": "",
-    "privacy_policy_url": null
-  },
+  "partner": { "name": "a firm from our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.accountsforlawyers.co.uk",
   "tagline": "Specialist accounting for UK solicitors and law firms",
   "description": "Expert accountants for solicitors, law firms, and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
