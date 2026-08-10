@@ -5,7 +5,7 @@ import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-s
 import BookingPicker from "@/components/forms/BookingPicker";
 
 export const metadata: Metadata = {
-  title: "Thank you | We'll be in touch",
+  title: "Thank you | Your enquiry is on its way",
   description:
     "Thank you for contacting Contractor Tax Accountants. We have received your enquiry and a specialist contractor accountant will be in touch shortly.",
   robots: { index: false, follow: true },
@@ -59,7 +59,7 @@ export default async function ThankYouPage({
             Thank you.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-            We have received your enquiry and will come back to you within one working day. You will hear from a specialist contractor accountant, not a sales team.
+            We have received your enquiry and passed it to a specialist firm from our partner network, who may contact you directly within one working day. You will hear from a specialist contractor accountant, not a sales team.
           </p>
 
           {bookingToken ? (
