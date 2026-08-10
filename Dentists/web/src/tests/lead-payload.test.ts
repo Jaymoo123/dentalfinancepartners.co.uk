@@ -3,7 +3,7 @@
  *
  * Verifies:
  *  - calculatorMessagePrefix and exitIntentMessagePrefix produce correct output.
- *  - The consent text includes "Reflex" (the partner name per data-sharing agreement)
+ *  - The consent notice names the specialist partner network, discloses re-referral,
  *    and never "DJH" (internal name; must not appear in user-facing copy).
  *
  * TL-03: pure Node.js module tests only -- no React, no window, no fetch.
@@ -56,14 +56,15 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text includes 'Reflex' (partner name required by data-sharing agreement)", async () => {
-    // The niche.config.json partner is "Reflex Accounting". The siteConfig
-    // leadConsentText must mention the partner so the disclosure is accurate.
-    // We import the site config here rather than duplicating the string in tests
-    // so this test fails immediately when the config changes.
+  it("consent notice names the specialist partner network and discloses re-referral", async () => {
+    // Notice-only acknowledgement (pool model): must name the network category,
+    // never a single firm, and must disclose onward re-referral. We import the
+    // site config here rather than duplicating the string in tests so this test
+    // fails immediately when the config changes.
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("Reflex");
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).toContain("passed to another firm in the network");
   });
 
   it("consent text never contains 'DJH' (copy discipline: internal name must not appear)", async () => {

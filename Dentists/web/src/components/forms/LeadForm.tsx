@@ -41,7 +41,6 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
   const [situation, setSituation] = useState("");
   const [prompted, setPrompted] = useState("");
   const [callGoal, setCallGoal] = useState("");
@@ -81,8 +80,6 @@ export function LeadForm({
       errs.message = "If you add a note, a sentence or two is enough, but not just a word or two.";
     }
 
-    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
-
     return errs;
   }, []);
 
@@ -115,7 +112,7 @@ export function LeadForm({
     // LD-02: emit form_submit with count of completed fields
     const completedCount =
       (["fullName", "email", "phone", "role", "message"] as const)
-        .filter((f) => String(data.get(f) || "").trim()).length + (consent ? 1 : 0);
+        .filter((f) => String(data.get(f) || "").trim()).length;
     trackFormSubmit(completedCount);
 
     // LD-05: stitch visitor + session ids so each lead row links to its analytics events
@@ -133,7 +130,10 @@ export function LeadForm({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
-      consent_given: consent,
+      // Legitimate-interests acknowledgement: submitting the form IS the affirmative
+      // act, so this is always true; consent_text records the exact wording shown
+      // as the audit trail.
+      consent_given: true,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
@@ -167,7 +167,6 @@ export function LeadForm({
     }
 
     form.reset();
-    setConsent(false);
     setSituation("");
     setPrompted("");
     setCallGoal("");
@@ -406,40 +405,21 @@ export function LeadForm({
         </div>
       </details>
 
-      <div>
-        <label
-          htmlFor="consent"
-          className="flex items-start gap-3 text-xs leading-relaxed text-[var(--muted)]"
+      {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
+          the enquiry is the affirmative act, so this is shown as a notice, not a
+          tick-box. */}
+      <p className="text-xs leading-relaxed text-[var(--muted)]">
+        {siteConfig.leadConsentText} See our{" "}
+        <a
+          href="/privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-[var(--accent)] underline"
         >
-          <input
-            id="consent"
-            name="consent"
-            type="checkbox"
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--accent)]"
-            aria-invalid={fieldErrors.consent ? "true" : "false"}
-            aria-describedby={fieldErrors.consent ? "err-consent" : undefined}
-          />
-          <span>
-            {siteConfig.leadConsentText} See our{" "}
-            <a
-              href="/privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-[var(--accent)] underline"
-            >
-              Privacy Policy
-            </a>
-            .
-          </span>
-        </label>
-        {fieldErrors.consent ? (
-          <p id="err-consent" className="mt-1 text-sm text-red-700">
-            {fieldErrors.consent}
-          </p>
-        ) : null}
-      </div>
+          Privacy Policy
+        </a>
+        .
+      </p>
 
       {status === "error" && errorMessage ? (
         <div
@@ -452,7 +432,7 @@ export function LeadForm({
 
       <button
         type="submit"
-        disabled={status === "loading" || !consent}
+        disabled={status === "loading"}
         className={`${btnPrimary} w-full min-w-0 sm:min-w-[12rem]`}
       >
         {status === "loading" ? "Sending…" : submitLabel}

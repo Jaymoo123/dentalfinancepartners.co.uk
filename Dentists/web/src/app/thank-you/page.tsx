@@ -75,7 +75,7 @@ export default async function ThankYouPage({
             <CheckIcon />
             <h1 className="text-4xl font-bold text-[var(--navy)] sm:text-5xl">Confirmed</h1>
             <p className="mt-6 text-lg leading-relaxed text-[var(--navy)]/70">
-              Thanks, that is confirmed. A dental accountant will be in touch.
+              Thanks, that is confirmed. A specialist firm from our partner network will contact you directly.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Link href="/" className={`${btnPrimary} text-base px-8 py-3.5`}>
@@ -103,7 +103,7 @@ export default async function ThankYouPage({
                 We have just sent you a message to arrange your free dental practice finance review. Please check your email and phone, and confirm to lock in your callback slot.
               </p>
               <p className="mt-4 text-base text-[var(--navy)]/60">
-                Your message is with our team. We aim to respond within 24 hours, usually same day.
+                A specialist firm from our partner network may contact you directly about your enquiry. We aim to respond within 24 hours, usually same day.
               </p>
               <p className="mt-4 text-sm text-[var(--navy)]/50">
                 Cannot see our email? Please check your spam or junk folder, and mark it as not spam so our messages reach you.
@@ -111,7 +111,7 @@ export default async function ThankYouPage({
             </>
           ) : (
             <p className="mt-6 text-lg leading-relaxed text-[var(--navy)]/70">
-              Your enquiry is with our team. We will be in touch within one working day, usually the same day. You can also pick a callback time below.
+              Your enquiry has been received. A specialist firm from our partner network may contact you directly about your enquiry, within one working day, usually the same day. You can also pick a callback time below.
             </p>
           )}
 
