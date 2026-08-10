@@ -203,7 +203,7 @@ export function SignupForm({
       )}
       {variant !== "minimal" && (
         <p className="mt-3 text-xs text-slate-500">
-          No spam. Unsubscribe one click. We never share your email.
+          No spam. Unsubscribe one click. Your newsletter email stays with us.
         </p>
       )}
     </form>

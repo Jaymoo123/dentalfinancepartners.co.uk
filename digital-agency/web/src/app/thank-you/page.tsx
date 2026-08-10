@@ -26,7 +26,8 @@ export default function ThankYouPage() {
           </div>
           <h1 className="text-4xl font-bold text-slate-900 sm:text-5xl">Thank you</h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-700">
-            Your message is on its way to our team. We aim to respond within 24 hours, usually same day.
+            Your enquiry is on its way to a specialist firm from our partner network, who may contact
+            you directly. You should hear back within 24 hours, usually same day.
           </p>
           <p className="mt-4 text-base text-slate-600">
             If your matter is urgent, please call the number listed on the{" "}
