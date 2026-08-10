@@ -163,7 +163,7 @@ export function SignupForm({
       )}
       {variant !== "minimal" && (
         <p className="mt-4 text-xs text-neutral-500">
-          No spam. Unsubscribe one click. We never share your email.
+          We only use your email address to send you the newsletter. Unsubscribe at any time.
         </p>
       )}
     </form>
