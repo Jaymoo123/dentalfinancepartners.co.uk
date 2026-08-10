@@ -92,8 +92,8 @@ export default async function CompletePage({
           <div className="border border-cyan-200 bg-cyan-50 p-6 text-center">
             <p className="text-lg font-bold text-neutral-900">You are all set</p>
             <p className="mt-2 text-base text-neutral-700">
-              We have everything we need. An accountant will be in touch shortly. If you would like
-              to pick a time that suits you, you can book a callback below.
+              We have everything we need. An accountant from our partner network will be in touch
+              shortly. If you would like to pick a time that suits you, you can book a callback below.
             </p>
             {bookingToken && (
               <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
@@ -116,8 +116,8 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-neutral-700">
-            Add the last detail we need and an accountant will be in touch to arrange your free
-            IR35 review, no obligation.
+            Add the last detail we need and an accountant from our partner network will be in touch
+            to arrange your free IR35 review, no obligation.
           </p>
           <div className="mt-10">{inner}</div>
         </div>

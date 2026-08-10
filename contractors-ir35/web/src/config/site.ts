@@ -9,15 +9,13 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner firm that enquiries are shared with. Single source of truth.
-// null = enquiries are handled in-house and NOT shared with any third-party firm.
+// Specialist partner network that enquiries are shared with. Single source of truth.
 const partner = niche.partner;
-// Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that).
-// Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with its specialist partner network, and to ${niche.display_name} and its partner firms contacting me about my enquiry by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
-  : "I agree to be contacted about my enquiry. I understand that Contractor Tax Accountants may follow up by email and SMS over the next 11 days to arrange a free call. I can opt out at any time by replying STOP to any message.";
+// Lead-form acknowledgement wording (legitimate interests, notice-only) WITHOUT the
+// trailing "See our Privacy Policy." link (each form appends that). Static category
+// wording: pool model with onward re-referral disclosed, no named firm.
+const leadConsentText =
+  "Contractor Tax Accountants will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
 
 export const siteConfig = {
   name: niche.display_name,
@@ -55,11 +53,11 @@ export const siteConfig = {
       `${niche.company.place_of_registration} (company no. ${niche.company.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Specialist partner firm enquiries are shared with (null = handled in-house).
+  // Specialist partner network enquiries are shared with (category label, no named firm).
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,
-  // Canonical lead-form consent text (see derivation above). Forms append the link.
+  // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
   // In-house resource consent text. Used by the ResourceGate only (not the partner-aware lead path).
   // Derived in-house: never references a partner firm.
