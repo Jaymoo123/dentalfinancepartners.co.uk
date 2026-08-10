@@ -36,13 +36,15 @@ const disclosePartner = !PARTNER_DISCLOSURE_PAUSED && Boolean(configuredPartner)
 // disclosed this is the EXACT Annex B.1 point-of-collection acknowledgement required by
 // the executed Lead Generation & Data Sharing Agreement, naming DJH as the specialist
 // partner AT the point of collection (the rendered form text and stored consent_text row
-// both equal it verbatim once the trailing link is appended). When paused it is a generic
-// placeholder that names no firm and links no external policy, matching the Privacy Policy.
+// both equal it verbatim once the trailing link is appended). When paused it is the
+// estate-standard network notice: it names no firm, links no external policy, and its
+// wording mirrors DSA Annex B.2 (the DSA is being updated to this same wording in a
+// parallel workstream).
 const leadConsentText = disclosePartner
   ? `To answer your enquiry, your details will be shared with our specialist partner firm ${configuredPartner!.name}${configuredPartner!.descriptor ? ` ${configuredPartner!.descriptor}` : ""}, an independent data controller that will contact you and use your details under its own privacy policy. By submitting this enquiry you confirm you understand this.`
-  : `To answer your enquiry, your details may be shared with a specialist partner firm who will contact you. By submitting this enquiry you confirm you understand this.`;
+  : `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
 // Email-only sign-ups (resource downloads) are NOT shared with the partner firm
-// (agreement Annex B.2). They keep a tick-to-consent box with their own wording,
+// (executed DJH agreement Annex B.2). They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."
 const resourceConsentText = `I agree to ${niche.display_name} using my email to send me the resource I requested.`;
 
@@ -87,7 +89,7 @@ export const siteConfig = {
   // flag to surface DJH's real name + external privacy-policy link again.
   partner: disclosePartner
     ? { name: configuredPartner!.name, privacyPolicyUrl: configuredPartner!.privacy_policy_url ?? null }
-    : { name: "a specialist partner firm", privacyPolicyUrl: null },
+    : { name: "a firm from our specialist partner network", privacyPolicyUrl: null },
   // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
   // Consent text for email-only resource downloads (never names the partner). Forms append the link.
