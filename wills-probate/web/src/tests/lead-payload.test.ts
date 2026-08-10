@@ -2,8 +2,9 @@
  * Tests for the Probate Compass (wills-probate) lead consent text and payload helpers.
  *
  * Verifies:
- *  - partner is null (in-house), so the consent text never names a third-party
- *    partner firm.
+ *  - partner is the anonymous network category label, never a named firm.
+ *  - The consent text carries the mandatory sharing, re-referral and
+ *    referral-fee disclosures (adjacent-professions lane).
  *  - The consent text never contains "DJH" (internal name; must not appear in
  *    user-facing copy on non-Property sites, per estate rule).
  *  - The consent text includes the brand name "Probate Compass".
@@ -19,9 +20,16 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("partner is null (in-house, no third-party firm named)", async () => {
+  it("partner is the anonymous network category label, never a named firm", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.partner).toBeNull();
+    expect(siteConfig.partner?.name).toBe("a firm from our specialist partner network");
+  });
+
+  it("consent text carries sharing, re-referral and fee disclosures", async () => {
+    const { siteConfig } = await import("@/config/site");
+    expect(siteConfig.leadConsentText).toContain("specialist partner network");
+    expect(siteConfig.leadConsentText).toContain("passed to another firm in the network");
+    expect(siteConfig.leadConsentText).toContain("may receive a fee");
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {
