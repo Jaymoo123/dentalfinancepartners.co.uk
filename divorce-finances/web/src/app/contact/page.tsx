@@ -36,9 +36,11 @@ export default function ContactPage() {
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
                 <li>We read every message and aim to reply within two working days.</li>
                 <li>
-                  If you have asked to be connected with a specialist, we will match you with a
-                  vetted family law firm or accredited mediator suited to your situation, and they
-                  will contact you directly, usually within a few working days.
+                  If you have asked to be connected with a specialist, a vetted regulated family
+                  law firm or accredited mediator from our partner network suited to your
+                  situation will contact you directly, usually within a few working days. If that
+                  firm is unable to help, your enquiry may be passed to another firm in the
+                  network for the same purpose.
                 </li>
                 <li>
                   We cannot answer questions about your personal legal or financial position. That
@@ -66,12 +68,14 @@ export default function ContactPage() {
                 </p>
                 <p className="mt-4 text-xs leading-relaxed text-neutral-500">
                   By submitting the form you agree to us using your details to respond to your
-                  enquiry. If you ask to be connected with a specialist firm or mediator, you agree
-                  to us sharing your details with them so they can contact you. We may receive a
-                  fee from the firm we introduce you to if you use their services. This does not
-                  change what you pay, and the firm will confirm the arrangement to you directly.
-                  We never share your details for any other purpose. See our privacy policy for
-                  full details.
+                  enquiry. To answer it, your details may be shared with a relevant regulated
+                  professional firm from our specialist partner network (for example a specialist
+                  family law firm or accredited mediator), who may contact you directly. If that
+                  firm is unable to help, your details may be passed to another firm in the
+                  network for the same purpose. We may receive a fee from the firm we introduce
+                  you to if you use their services. This does not change what you pay, and the
+                  firm will confirm the arrangement to you directly. We do not share your details
+                  for any other purpose. See our privacy policy for full details.
                 </p>
               </div>
             </div>

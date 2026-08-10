@@ -4,7 +4,6 @@ import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 const company = siteConfig.company;
-const partner = siteConfig.partner;
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -16,7 +15,7 @@ export default function PrivacyPolicyPage() {
     <section className="bg-white">
       <div className={`${contentNarrow} ${sectionYLoose}`}>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Privacy policy</h1>
-        <p className="mt-4 text-sm text-neutral-500">Last updated: 18 June 2026</p>
+        <p className="mt-4 text-sm text-neutral-500">Last updated: 10 August 2026</p>
         <div className="prose-blog mt-10 space-y-6">
           <p>
             This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -74,10 +73,9 @@ export default function PrivacyPolicyPage() {
           <h2>3. Why we use your information</h2>
           <ul>
             <li>
-              <strong>To respond to your enquiry:</strong>{" "}
-              {partner
-                ? `to deal with your enquiry and to pass it to ${partner.name} so that they can provide the advice you have requested.`
-                : "to deal with your enquiry and provide the advice you have requested."}
+              <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to a relevant
+              regulated professional firm from our specialist partner network so that it can provide the advice you
+              have requested.
             </li>
             <li>
               <strong>To send you updates you asked for:</strong> if you signed up to our email updates, to send you
@@ -91,10 +89,16 @@ export default function PrivacyPolicyPage() {
 
           <h2>4. Our lawful basis</h2>
           <p>
-            We rely on your <strong>consent</strong> to process the personal data you provide through our enquiry forms
-            and email sign-ups{partner ? ", and to share your enquiry with our specialist partner firm as described below" : ""}. You can
-            withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
-            processing that took place before you withdrew it.
+            When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f) of the UK
+            GDPR) to handle your enquiry and to share it with a relevant regulated professional firm from our
+            specialist partner network, so that you can be connected with the specialist help you have asked for. You
+            have the <strong>right to object</strong> to this processing at any time, under Article 21 (see your rights
+            in section 7).
+          </p>
+          <p>
+            For our email sign-ups and updates, we rely on your <strong>consent</strong>. You can withdraw your consent
+            at any time (see your rights in section 7); withdrawing consent does not affect any processing that took
+            place before you withdrew it.
           </p>
           <p>
             For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>,
@@ -102,19 +106,21 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <h2>5. Who we share your information with</h2>
-          {partner ? (
-            <p>
-              When you submit an enquiry, we share the details you provide with our specialist partner firm,{" "}
-              <strong>{partner.name}</strong>, so that they can respond and provide the advice you asked for. {partner.name}{" "}
-              acts as an <strong>independent data controller</strong> of the information it receives, and its own use of your
-              data is governed by its own privacy policy. We share your enquiry only for the purpose of responding to it.
-            </p>
-          ) : (
-            <p>
-              Your enquiry is handled by us; we do <strong>not</strong> share it with any third-party advisory firm. We use
-              the service providers listed below only as our processors, acting on our instructions.
-            </p>
-          )}
+          <p>
+            When you submit an enquiry, we share the details you provide with a relevant regulated professional firm
+            from our specialist partner network (for example a specialist family law firm or accredited mediator), so
+            that it can respond and, if you want it, provide the advice you asked for. We do this on the basis of our{" "}
+            <strong>legitimate interests</strong> (see section 4), and you can object at any time (see section 7). The
+            receiving firm acts as an <strong>independent data controller</strong> of the information it receives, will
+            tell you who it is when it first contacts you, and uses your data under its own privacy policy.
+          </p>
+          <p>
+            <strong>Our partner network and re-referral.</strong> If the firm that receives your enquiry is unable to
+            help, we may pass your enquiry to another firm in the network for the same purpose, so that you still get
+            an answer. {siteConfig.name} may receive a fee from the firm it introduces you to. We share your enquiry
+            only for the purpose of responding to it, and we will not pass it on if you have objected or asked us to
+            stop (see section 7).
+          </p>
           <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
           <ul>
             <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
@@ -139,7 +145,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Erase</strong> your data in certain circumstances.</li>
             <li><strong>Restrict</strong> how we use your data in certain situations.</li>
             <li><strong>Data portability:</strong> receive a copy of your data in a machine-readable format.</li>
-            <li><strong>Object</strong> to certain processing.</li>
+            <li><strong>Object</strong> to processing based on our legitimate interests, including our sharing of your enquiry with our partner network.</li>
             <li><strong>Withdraw consent</strong> at any time, where we rely on your consent.</li>
           </ul>
           <p>

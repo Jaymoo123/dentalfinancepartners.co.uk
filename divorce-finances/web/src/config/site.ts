@@ -9,21 +9,19 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner firm that enquiries are shared with. Single source of truth.
-// null = enquiries are handled in-house and NOT shared with any third-party firm.
+// Partner-network category label (never a named firm). Single source of truth.
 const partner = niche.partner ?? null;
 // Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
 // (each form appends that).
-// Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
 // Divorce-finances runs a referral lead model: enquiries are passed to a vetted
-// specialist family law firm, and a referral fee may be received. The lead-gen
-// regulatory position (LASPO PI-only ban does not apply to family; FCA CMC regime
-// excludes family) permits this, CONDITIONAL on a fee disclosure sitting beside the
-// consent checkbox. That disclosure is mandatory and brand-neutral (no firm named
-// until G1). Do not revert to the generic in-house wording for this site.
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-    : `I agree to be contacted about my enquiry and to my details being shared with a vetted specialist family law firm so it can respond and, if I want it, provide advice. I understand ${niche.display_name} may receive a fee from the firm it introduces me to. ${niche.display_name} may follow up by email and SMS over the next 11 days to arrange a free call, and I can opt out at any time by replying STOP.`;
+// specialist family law firm or accredited mediator, and a referral fee may be
+// received. The lead-gen regulatory position (LASPO PI-only ban does not apply to
+// family; FCA CMC regime excludes family) permits this, CONDITIONAL on the fee
+// disclosure sitting inside this notice. That disclosure is mandatory and
+// brand-neutral (no firm named until G1). Do not revert to the generic in-house
+// wording for this site.
+const leadConsentText =
+  `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated professional firm from our specialist partner network (for example a specialist family law firm or accredited mediator), who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. ${niche.display_name} may receive a fee from the firm it introduces you to. By submitting this enquiry you confirm you understand this.`;
 
 export const siteConfig = {
   name: niche.display_name,
@@ -62,7 +60,7 @@ export const siteConfig = {
       `${niche.company!.place_of_registration} (company no. ${niche.company!.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Specialist partner firm enquiries are shared with (null = handled in-house).
+  // Partner-network category label enquiries are shared under (never a named firm).
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,
