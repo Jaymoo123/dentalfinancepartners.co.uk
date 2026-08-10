@@ -18,7 +18,7 @@ export interface NicheConfig {
   };
   /** Specialist partner firm enquiries are shared with, or null when handled in-house.
    *  `descriptor` is an optional suffix shown after the name (e.g. a group
-   *  disclosure like "(part of the DJH group of companies)"). */
+   *  disclosure like "(part of a wider group of companies)"). */
   partner: { name: string; descriptor?: string; privacy_policy_url: string | null } | null;
   domain: string;
   tagline: string;

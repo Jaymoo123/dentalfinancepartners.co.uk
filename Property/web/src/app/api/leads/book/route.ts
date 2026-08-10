@@ -4,7 +4,7 @@
  * submit / in every nurture message) identifies the lead, so there is nothing
  * to guess or enumerate. Recording the slot is a contactability signal: it runs
  * through the same gate as a reply, promotes the lead, and the slot label lands
- * in the DJH handoff dossier.
+ * in the partner handoff dossier.
  *
  * Re-booking is allowed (people change their mind); the dossier surfaces the
  * most recent slot. Replaces the former Cal.com webhook.

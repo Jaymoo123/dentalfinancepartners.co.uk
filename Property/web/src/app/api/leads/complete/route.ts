@@ -207,7 +207,7 @@ export async function POST(req: Request) {
   }
 
   // Full completion. If the newly verified phone is known-bad (invalid / VoIP),
-  // the lead is not callable by DJH: do NOT promote, flag for manual recheck, and
+  // the lead is not callable by the partner firm: do NOT promote, flag for manual recheck, and
   // stop the detail-capture chase so no further "add your details" emails fire.
   const phoneKnownBad = newPhoneStatus === "invalid" || newPhoneStatus === "voip";
   if (phoneKnownBad) {

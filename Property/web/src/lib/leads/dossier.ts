@@ -13,7 +13,7 @@ import { adminSelect } from "@/lib/supabase/admin";
 // ── Pure: best call window ───────────────────────────────────────────────────
 
 /**
- * Suggest when DJH should call, from the times the lead actually responded
+ * Suggest when the partner firm should call, from the times the lead actually responded
  * (their replies prove when they pick up their phone). London time.
  */
 export function bestCallWindow(responseTimes: Date[]): string | null {

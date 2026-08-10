@@ -2,7 +2,7 @@
  * Real-time lead verification: the "verifying your details" moment. Runs at
  * submit time (sub-second) to catch the biggest cause of "not contactable" —
  * dead / mistyped / non-mobile numbers and fat-fingered emails — BEFORE a lead
- * ever reaches DJH.
+ * ever reaches the partner firm.
  *
  *   Phone: Twilio Lookup v2 line-type intelligence (real, live, mobile?).
  *   Email: syntax + MX (in-house) with an optional mailbox-level API.
@@ -10,7 +10,7 @@
  * FAIL-SAFE: a provider outage never blocks a lead. On any error we return
  * status 'unknown' and let the lead through (verify_pass stays lenient); the
  * hard contactability gate is the two-way RESPONSE, which independently proves
- * reachability. verify_pass is a pre-filter + a signal for the DJH handoff, not
+ * reachability. verify_pass is a pre-filter + a signal for the partner handoff, not
  * the final word.
  */
 

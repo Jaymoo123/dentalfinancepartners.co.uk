@@ -26,7 +26,7 @@ export const DEFAULT_PARTNER_CC = "";
 export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
-// dedicated Ashfield Trading inbox (the DJH-deal inbox); every other site's leads
+// dedicated Ashfield Trading inbox (the partner-forwarding inbox); every other site's leads
 // keep going to the shared internal inbox, exactly as before. Both env-overridable.
 export const DEFAULT_NOTIFY_TO = "junaydmoughal@hotmail.co.uk";
 export const PROPERTY_NOTIFY_TO = "junayd@ashfieldtrading.com";

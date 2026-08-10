@@ -1,5 +1,7 @@
 # DJH Lead Forwarding SOP + Delivery Log (Property)
 
+> **SUPERSEDED**: the estate now runs the anonymous pool/claim model (Ashfield Partner Network); see `docs/BUYER_ONBOARDING.md`. Kept as the record of the DJH-era manual forward.
+
 *Created 2026-06-24 as Wave 0 of the Property process audit. Updated 2026-07-04 to reflect the current handover email. Purpose: make the manual DJH forward auditable so every billable lead is recorded, defensible, and easy to invoice on Tide. The manual review-then-forward step is a DELIBERATE quality gate and stays; this SOP just adds a record around it.*
 
 ## Why this exists

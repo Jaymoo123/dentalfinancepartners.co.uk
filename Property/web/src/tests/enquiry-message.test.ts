@@ -1,6 +1,6 @@
 /**
  * Tests for enquiry-message: validate + compose the structured message
- * that is stored in the leads table and forwarded to DJH.
+ * that is stored in the leads table and forwarded to the partner firm.
  * All pure — no DB, no network.
  */
 

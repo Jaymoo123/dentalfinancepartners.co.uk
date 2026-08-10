@@ -400,7 +400,7 @@ export function SpecialistWidget() {
         trigger: (lastPropsRef.current?.trigger as string) ?? "widget",
       },
       // Email + message only; the server routes this into the detail-capture
-      // sequence, which collects the missing name/phone before any DJH handoff.
+      // sequence, which collects the missing name/phone before any partner handoff.
       captureMode: "email_only" as const,
     };
     const result = await submitPropertyLead(payload, honeypot);
@@ -479,7 +479,7 @@ export function SpecialistWidget() {
         ...(buildRoleExtras(role, roleDetail) ?? {}),
       },
       // Email + message only; the server routes this into the detail-capture
-      // sequence, which collects the missing name/phone before any DJH handoff.
+      // sequence, which collects the missing name/phone before any partner handoff.
       captureMode: "email_only" as const,
     };
     const result = await submitPropertyLead(payload, honeypot);

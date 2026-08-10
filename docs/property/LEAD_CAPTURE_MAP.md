@@ -13,7 +13,7 @@ Many placements, few parts: every lead on the site is captured by one of **three
 | `LeadForm` | `src/components/forms/LeadForm.tsx` | The full qualified enquiry (role, 3-part guided message, contact details). The contact page and blog side panels. |
 | `MiniCapture` | `src/components/forms/MiniCapture.tsx` | THE shared mini-form. Six placements render it with different props; there is no per-placement form code. Two-step since 2026-07 (role + situation, then contact details). |
 | `SpecialistWidget` | `src/components/support/SpecialistWidget.tsx` | The floating assistant. Email-only capture by design; the nurture detail-capture sequence collects name/phone afterwards. |
-| `ResourceGate` (exception) | `src/components/resources/ResourceGate.tsx` | Download gate. Email + marketing consent only, `role="resource"`, direct insert, **never forwarded to DJH** (agreement Annex B.2) and excluded from nurture reconciliation. Deliberately outside the pipeline; leave it alone. |
+| `ResourceGate` (exception) | `src/components/resources/ResourceGate.tsx` | Download gate. Email + marketing consent only, `role="resource"`, direct insert, **never forwarded to any partner firm** (DSA Annex B.2) and excluded from nurture reconciliation. Deliberately outside the pipeline; leave it alone. |
 
 ## Placement inventory (what renders where)
 
