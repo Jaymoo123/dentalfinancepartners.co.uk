@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 3 August 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 10 August 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f) of the UK
           GDPR)
           {partner
-            ? " to handle your enquiry and to share it with our specialist partner firm, so that you can be connected with the specialist property tax help you have asked for"
+            ? " to handle your enquiry and to share it with a relevant regulated firm from our specialist partner network, so that you can be connected with the specialist property tax help you have asked for"
             : " to handle it, so that we can respond and provide the help you have asked for"}
           . You have the <strong>right to object</strong> to this processing at any time,
           under Article 21 (see your rights in section 7).
@@ -160,7 +160,9 @@ export default function PrivacyPolicyPage() {
             ) : (
               "privacy policy"
             )}
-            . We share this information only for the purpose of arranging and providing the advice you asked for.
+            . We share this information only for the purpose of arranging and providing the advice you asked for. If
+            that firm is unable to help, we may pass your enquiry to another firm in the network for the same purpose.
+            Any firm that receives your enquiry will identify itself to you when it first contacts you.
           </p>
         ) : (
           <p>
