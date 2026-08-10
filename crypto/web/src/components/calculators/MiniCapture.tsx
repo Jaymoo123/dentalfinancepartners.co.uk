@@ -32,7 +32,6 @@ export function MiniCapture({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
   const [honeypotValue, setHoneypotValue] = useState("");
 
   useEffect(() => {
@@ -52,7 +51,6 @@ export function MiniCapture({
     if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
     if (String(data.get("message") || "").trim().length < 10)
       errs.message = "Tell us a sentence or two about your business.";
-    if (!consent) errs.consent = "Please tick the box to continue.";
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
 
@@ -66,7 +64,9 @@ export function MiniCapture({
       source: site.sourceIdentifier,
       source_url: sourceUrl,
       submitted_at: new Date().toISOString(),
-      consent_given: consent,
+      // Legitimate-interests acknowledgement: submitting is the affirmative
+      // act; consent_text stores the exact notice rendered below.
+      consent_given: true,
       consent_text: site.leadConsentText,
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
@@ -83,7 +83,6 @@ export function MiniCapture({
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setStatus("success");
       form.reset();
-      setConsent(false);
       setHoneypotValue("");
     } catch {
       setStatus("error");
@@ -153,18 +152,11 @@ export function MiniCapture({
             />
           </div>
 
+          {/* Data-sharing acknowledgement (legitimate interests, not consent):
+              submitting is the affirmative act, so this is a notice, not a
+              tick-box. Rendered text is stored byte-identical as consent_text. */}
           <div className="sm:col-span-2">
-            <label className="flex items-start gap-2 text-xs leading-relaxed text-[var(--muted)]">
-              <input
-                type="checkbox"
-                name="consent"
-                checked={consent}
-                onChange={(e) => setConsent(e.target.checked)}
-                className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--brand-primary)]"
-              />
-              <span>{site.leadConsentText}</span>
-            </label>
-            {fieldErrors.consent && <p className="mt-1 text-xs text-red-600">{fieldErrors.consent}</p>}
+            <p className="text-xs leading-relaxed text-[var(--muted)]">{site.leadConsentText}</p>
           </div>
 
           <div className="sm:col-span-2">
