@@ -54,18 +54,24 @@ def main():
                            "&order=ts.asc&limit=10000")
     nstate = {n["lead_id"]: n["status"] for n in get(
         url, key, "lead_nurture_state?select=lead_id,status&limit=5000")}
+    sends = get(url, key, "lead_nurture_sends?select=lead_id,channel,step,sent_at,status"
+                          "&order=sent_at.asc&limit=10000")
 
     by_lead = defaultdict(list)
     for ev in events:
         by_lead[ev["lead_id"]].append(ev)
+    sends_by_lead = defaultdict(list)
+    for s in sends:
+        sends_by_lead[s["lead_id"]].append(s)
 
     def fmt_ts(ts):
         return datetime.fromisoformat(ts.replace("Z", "+00:00")).strftime("%d %b %Y %H:%M")
 
-    rows = []
+    rows, kept = [], []
     for l in leads:
         if l.get("is_test"):
             continue
+        kept.append(l)
         evs = by_lead[l["id"]]
         booked = "; ".join(ev["meta"].get("start") or ev["meta"].get("date", "")
                            for ev in evs if ev["event_type"] == "booked" and ev.get("meta"))
@@ -118,27 +124,61 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
 <table><thead><tr>{heads}</tr></thead><tbody>{cells}</tbody></table></body></html>""")
 
     # PDF: stacked per-lead blocks (the wide table does not fit a page), via
-    # headless Edge like generate_proposal.py.
-    def block(r):
-        def esc(k):
-            return html.escape(str(r[k]))
+    # headless Edge like generate_proposal.py. Layout mirrors the qualified
+    # handoff email: enquiry message first, then the chronological SMS/email
+    # trail with reply bodies. Tier/value deliberately omitted for readability.
+    CH = {"email": "email", "sms": "SMS", "whatsapp": "WhatsApp"}
+
+    def trail(l, evs):
+        tl = []
+        for s in sends_by_lead[l["id"]]:
+            if s["status"] == "sent":
+                tl.append((s["sent_at"], f"Our {CH.get(s['channel'], s['channel'])} (touch {s['step'] + 1})", None))
+        for ev in evs:
+            m = ev.get("meta") or {}
+            t = ev["event_type"]
+            if t == "ack_sent" and not m.get("skipped"):
+                tl.append((ev["ts"], f"Our auto-acknowledgement ({CH.get(ev['channel'], ev['channel'])})", None))
+            elif t == "verify_pass":
+                tl.append((ev["ts"], "Contact details verified", None))
+            elif t == "replied":
+                tl.append((ev["ts"], f"They replied by {CH.get(ev['channel'], ev['channel'])}", (m.get("body") or "").strip()))
+            elif t == "booked":
+                tl.append((ev["ts"], "They booked a callback", m.get("start") or m.get("date")))
+            elif t == "operator_update" and m.get("body"):
+                tl.append((ev["ts"], f"Operator note ({CH.get(ev['channel'], ev['channel'])})", m["body"].strip()))
+            elif t == "opted_out":
+                tl.append((ev["ts"], "THEY OPTED OUT", m.get("reason")))
+        tl.sort(key=lambda x: x[0])
+        return tl
+
+    def block(l, r):
+        evs = by_lead[l["id"]]
         flags = " · ".join(x for x in (
             "verified" if r["verified"] else "unverified",
             r["nurture_status"], r["opted_out"]) if x)
+        who = " · ".join(x for x in (
+            r["name"] or "(no name)", r["email"] or "(no email)", r["phone"] or "(no phone)",
+            r["role"], r["practice/company"]) if x)
         lines = [
             f'<div class="lead{" opted" if r["opted_out"] else ""}">',
-            f'<div class="head"><strong>{esc("received")}</strong> · {esc("source")} · '
-            f'tier: {esc("tier") or "n/a"} · est £{esc("est_value_gbp") or "n/a"} · {html.escape(flags)}</div>',
-            f'<div class="who">{esc("name") or "(no name)"} · {esc("email") or "(no email)"} · '
-            f'{esc("phone") or "(no phone)"}'
-            + (f' · {esc("role")}' if r["role"] else "")
-            + (f' · {esc("practice/company")}' if r["practice/company"] else "") + "</div>",
+            f'<div class="head"><strong>{html.escape(r["received"])}</strong> · '
+            f'{html.escape(r["source"])} · {html.escape(flags)}</div>',
+            f'<div class="who">{html.escape(who)}</div>',
         ]
         if r["booked_call_slots"]:
-            lines.append(f'<div class="booked">BOOKED CALL: {esc("booked_call_slots")}</div>')
-        if r["replies"]:
-            lines.append(f'<div class="replies">Replies: {esc("replies")}</div>')
-        lines.append(f'<div class="msg">{esc("message") or "(no message)"}</div></div>')
+            lines.append(f'<div class="booked">BOOKED CALL: {html.escape(r["booked_call_slots"])}</div>')
+        lines.append(f'<div class="msg">{html.escape(r["message"] or "(no message)")}</div>')
+        tl = trail(l, evs)
+        if tl:
+            items = []
+            for ts, label, body in tl:
+                row = f"<strong>{html.escape(fmt_ts(ts))}</strong> — {html.escape(label)}"
+                if body:
+                    row += f'<div class="body">{html.escape(body)}</div>'
+                items.append(f"<li>{row}</li>")
+            lines.append('<ul class="trail">' + "".join(items) + "</ul>")
+        lines.append("</div>")
         return "\n".join(lines)
 
     print_path = os.path.join(OUT, f"leads_raw_{stamp}_print.html")
@@ -147,14 +187,17 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
 <title>Raw lead export {stamp} (INTERNAL, UNREDACTED)</title>
 <style>@page{{size:A4;margin:14mm}}body{{font:10.5px/1.45 Segoe UI,sans-serif;color:#1a1a1a}}
 h1{{font-size:16px;border-bottom:2px solid #1a1a1a;padding-bottom:4px}}
-.lead{{border-bottom:1px solid #ddd;padding:7px 0;break-inside:avoid}}
-.head{{color:#333}}.who{{font-weight:600;margin:2px 0}}
-.booked{{color:#8a2b06;font-weight:700}}.replies{{color:#555}}
-.msg{{margin-top:3px;white-space:pre-wrap;background:#f7f6f3;padding:5px 7px}}
+.lead{{border-bottom:1px solid #ccc;padding:8px 0;break-inside:avoid}}
+.head{{color:#555}}.who{{font-weight:600;margin:2px 0;font-size:11.5px}}
+.booked{{color:#8a2b06;font-weight:700;margin:2px 0}}
+.msg{{margin:4px 0;white-space:pre-wrap;background:#f7f6f3;padding:6px 8px}}
+ul.trail{{margin:4px 0 0 0;padding-left:16px;color:#444}}
+ul.trail li{{margin:1px 0}}
+.body{{white-space:pre-wrap;background:#eef3f7;padding:3px 6px;margin:2px 0 2px 8px}}
 .opted{{opacity:.55}}.opted .who::after{{content:" — OPTED OUT, DO NOT CONTACT";color:#8a2b06}}</style>
 </head><body><h1>Raw lead export, {stamp} — INTERNAL AND UNREDACTED</h1>
 <p>{len(rows)} leads, newest first. Opted-out leads are greyed and must not be contacted.</p>
-{chr(10).join(block(r) for r in rows)}</body></html>""")
+{chr(10).join(block(l, r) for l, r in zip(kept, rows))}</body></html>""")
 
     pdf = os.path.join(OUT, f"leads_raw_{stamp}.pdf")
     edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
