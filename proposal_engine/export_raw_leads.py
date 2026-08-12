@@ -162,12 +162,14 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
             r["role"], r["practice/company"]) if x)
         lines = [
             f'<div class="lead{" opted" if r["opted_out"] else ""}">',
+            '<div class="keep">',
             f'<div class="head"><strong>{html.escape(r["received"])}</strong> · '
             f'{html.escape(r["source"])} · {html.escape(flags)}</div>',
             f'<div class="who">{html.escape(who)}</div>',
         ]
         if r["booked_call_slots"]:
             lines.append(f'<div class="booked">BOOKED CALL: {html.escape(r["booked_call_slots"])}</div>')
+        lines.append("</div>")
         lines.append(f'<div class="msg">{html.escape(r["message"] or "(no message)")}</div>')
         tl = trail(l, evs)
         if tl:
@@ -187,12 +189,13 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
 <title>Raw lead export {stamp} (INTERNAL, UNREDACTED)</title>
 <style>@page{{size:A4;margin:14mm}}body{{font:10.5px/1.45 Segoe UI,sans-serif;color:#1a1a1a}}
 h1{{font-size:16px;border-bottom:2px solid #1a1a1a;padding-bottom:4px}}
-.lead{{border-bottom:1px solid #ccc;padding:8px 0;break-inside:avoid}}
+.lead{{border-bottom:1px solid #ccc;padding:8px 0}}
+.keep{{break-inside:avoid;break-after:avoid}}
 .head{{color:#555}}.who{{font-weight:600;margin:2px 0;font-size:11.5px}}
 .booked{{color:#8a2b06;font-weight:700;margin:2px 0}}
 .msg{{margin:4px 0;white-space:pre-wrap;background:#f7f6f3;padding:6px 8px}}
 ul.trail{{margin:4px 0 0 0;padding-left:16px;color:#444}}
-ul.trail li{{margin:1px 0}}
+ul.trail li{{margin:1px 0;break-inside:avoid}}
 .body{{white-space:pre-wrap;background:#eef3f7;padding:3px 6px;margin:2px 0 2px 8px}}
 .opted{{opacity:.55}}.opted .who::after{{content:" — OPTED OUT, DO NOT CONTACT";color:#8a2b06}}</style>
 </head><body><h1>Raw lead export, {stamp} — INTERNAL AND UNREDACTED</h1>
