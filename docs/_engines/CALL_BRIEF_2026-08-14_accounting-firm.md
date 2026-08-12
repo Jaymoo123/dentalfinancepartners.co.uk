@@ -29,6 +29,13 @@ Operating name: **Ashfield Partner Network** (legal entity Ashfield Trading Ltd;
 
 Anchor if asked "is £85 a lot?": an advisory lead is a single-digit percentage of typical first-year fees for that work, and the firm pays nothing for leads it does not claim.
 
+## Live numbers to have in your head (pulled 12 Aug 2026)
+
+- **182 enquiries to date** across 9 site verticals; **103 in the last 30 days**, 29 in the last 7. Flow is growing, not flat.
+- Of the last 30 days: **80 verified by SMS and email (78%)**, **52 replied to follow-up**, and **32 booked a callback slot themselves**, i.e. roughly a third of recent enquirers are picking a time and waiting for a call.
+- Mix skews property/landlord (the largest lane), with medical, solicitors, care, contractors and small business behind it.
+- Say these as rounded truths ("about a hundred in the last month, around a third book a call slot themselves"). Never promise the future rate.
+
 ## Terms highlights (all in the standard terms, quote freely)
 
 - A billable lead is SMS and email verified with full contact details, a case description and a tier label, delivered in real time on claim. Enquirers who never respond to verification are never delivered and never charged.
@@ -78,3 +85,6 @@ Contrast lines that land:
 - The distribution engine is built and verified end to end but dry-run: pings, deliveries and invoices render locally; nothing sends email, GoCardless is stubbed, claim links do not exist yet. Manual operation via the runbook is fully workable for the first firms.
 - The live Property pipeline still delivers each lead to a single firm; the pool bridge for the other sites is an open build item.
 - The 20 lead-engine branches are merged locally on this line but not pushed; the Property SQL migration must be applied before the next Property deploy.
+- Current leads are being handled by an interim taker (raw export handed over 12 Aug). If Friday's firm signs, they enter the pool alongside, on the published terms; the interim arrangement is not exclusive and must not be presented as such.
+- Non-Property lead notifications still land in the legacy hotmail inbox until the next Property deploy flips the default to the Ashfield inbox.
+- A full-ledger proposal variant exists (`--all-leads`): every enquiry redacted and scored, useful when a prospect asks "show me everything, not a sample".
