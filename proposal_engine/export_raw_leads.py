@@ -117,6 +117,56 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
 <p><strong>INTERNAL AND UNREDACTED.</strong> {len(rows)} leads, newest first. Do not publish or commit.</p>
 <table><thead><tr>{heads}</tr></thead><tbody>{cells}</tbody></table></body></html>""")
 
+    # PDF: stacked per-lead blocks (the wide table does not fit a page), via
+    # headless Edge like generate_proposal.py.
+    def block(r):
+        def esc(k):
+            return html.escape(str(r[k]))
+        flags = " · ".join(x for x in (
+            "verified" if r["verified"] else "unverified",
+            r["nurture_status"], r["opted_out"]) if x)
+        lines = [
+            f'<div class="lead{" opted" if r["opted_out"] else ""}">',
+            f'<div class="head"><strong>{esc("received")}</strong> · {esc("source")} · '
+            f'tier: {esc("tier") or "n/a"} · est £{esc("est_value_gbp") or "n/a"} · {html.escape(flags)}</div>',
+            f'<div class="who">{esc("name") or "(no name)"} · {esc("email") or "(no email)"} · '
+            f'{esc("phone") or "(no phone)"}'
+            + (f' · {esc("role")}' if r["role"] else "")
+            + (f' · {esc("practice/company")}' if r["practice/company"] else "") + "</div>",
+        ]
+        if r["booked_call_slots"]:
+            lines.append(f'<div class="booked">BOOKED CALL: {esc("booked_call_slots")}</div>')
+        if r["replies"]:
+            lines.append(f'<div class="replies">Replies: {esc("replies")}</div>')
+        lines.append(f'<div class="msg">{esc("message") or "(no message)"}</div></div>')
+        return "\n".join(lines)
+
+    print_path = os.path.join(OUT, f"leads_raw_{stamp}_print.html")
+    with open(print_path, "w", encoding="utf-8") as f:
+        f.write(f"""<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">
+<title>Raw lead export {stamp} (INTERNAL, UNREDACTED)</title>
+<style>@page{{size:A4;margin:14mm}}body{{font:10.5px/1.45 Segoe UI,sans-serif;color:#1a1a1a}}
+h1{{font-size:16px;border-bottom:2px solid #1a1a1a;padding-bottom:4px}}
+.lead{{border-bottom:1px solid #ddd;padding:7px 0;break-inside:avoid}}
+.head{{color:#333}}.who{{font-weight:600;margin:2px 0}}
+.booked{{color:#8a2b06;font-weight:700}}.replies{{color:#555}}
+.msg{{margin-top:3px;white-space:pre-wrap;background:#f7f6f3;padding:5px 7px}}
+.opted{{opacity:.55}}.opted .who::after{{content:" — OPTED OUT, DO NOT CONTACT";color:#8a2b06}}</style>
+</head><body><h1>Raw lead export, {stamp} — INTERNAL AND UNREDACTED</h1>
+<p>{len(rows)} leads, newest first. Opted-out leads are greyed and must not be contacted.</p>
+{chr(10).join(block(r) for r in rows)}</body></html>""")
+
+    pdf = os.path.join(OUT, f"leads_raw_{stamp}.pdf")
+    edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+    if os.path.exists(edge):
+        import subprocess
+        subprocess.run([edge, "--headless", "--disable-gpu", "--no-pdf-header-footer",
+                        f"--print-to-pdf={pdf}", "file:///" + print_path.replace(os.sep, "/")],
+                       check=True, timeout=120)
+        print(f"wrote {pdf}")
+    else:
+        print(f"Edge not found; open {print_path} in a browser and print to PDF")
+
     n_booked = sum(1 for r in rows if r["booked_call_slots"])
     n_replied = sum(1 for r in rows if r["replies"])
     print(f"wrote {csv_path}")
