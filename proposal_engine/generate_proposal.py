@@ -599,8 +599,9 @@ def main():
     fig.tight_layout(w_pad=3)
     chart_timing = b64_fig(fig)
 
-    # --- sample table ---
-    sample = leads[:SAMPLE_SIZE]
+    # --- sample table (--all-leads = the full ledger instead of the recent sample) ---
+    full_ledger = "--all-leads" in sys.argv
+    sample = leads if full_ledger else leads[:SAMPLE_SIZE]
     rows, review = [], {}
     for l in sample:
         pid = l["id"][:8]
@@ -698,6 +699,9 @@ def main():
         intent_rows="\n    ".join(intent_rows),
         source_rows="\n    ".join(source_rows),
         sample_n=len(sample), sample_rows="\n    ".join(rows),
+        sample_heading="Complete lead ledger" if full_ledger else "Sample of recent leads",
+        sample_intro=("Every enquiry received to date" if full_ledger
+                      else "The $sample_n most recent enquiries".replace("$sample_n", str(len(sample)))),
         philosophy_html=philosophy_html(),
         tier_rows=tier_rows, override_note=override_note,
         price_cards=price_cards, n_cards=n_cards, decay_note=decay_note,

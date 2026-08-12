@@ -6,7 +6,9 @@
 export const DEFAULT_PARTNER_CC = "";
 export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
 
-export const DEFAULT_NOTIFY_TO = "junaydmoughal@hotmail.co.uk";
+// Consolidated 2026-08-12 (owner instruction): the shared internal inbox is now
+// the Ashfield Trading inbox; the legacy hotmail inbox is retired as a default.
+export const DEFAULT_NOTIFY_TO = "junayd@ashfieldtrading.com";
 export const PROPERTY_NOTIFY_TO = "junayd@ashfieldtrading.com";
 
 function parseList(value: string | undefined, fallback: string): string[] {

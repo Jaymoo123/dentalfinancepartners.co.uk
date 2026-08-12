@@ -77,7 +77,7 @@ describe("resolveLeadTo", () => {
     for (const source of ["dentists", "medical", "solicitors", "generalist", "agency", "contractors-ir35"]) {
       expect(resolveLeadTo(source, empty)).toBe(DEFAULT_NOTIFY_TO);
     }
-    expect(DEFAULT_NOTIFY_TO).toBe("junaydmoughal@hotmail.co.uk");
+    expect(DEFAULT_NOTIFY_TO).toBe("junayd@ashfieldtrading.com");
   });
 
   it("sends synthetic test leads only to the operator (never a vendor)", () => {
