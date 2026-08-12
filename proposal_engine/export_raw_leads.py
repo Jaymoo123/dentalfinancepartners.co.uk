@@ -16,8 +16,6 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
-sys.path.insert(0, HERE)
-from score_overrides import SCORE_OVERRIDES  # noqa: E402
 
 
 def env_load():
@@ -43,13 +41,6 @@ def main():
     key = e.get("SUPABASE_SERVICE_ROLE_KEY") or e.get("SUPABASE_KEY")
 
     leads = get(url, key, "leads?select=*&order=created_at.desc&limit=2000")
-    scores = {s["lead_id"]: s for s in get(
-        url, key, "lead_value_scores?select=lead_id,tier,est_value_gbp&limit=5000")}
-    for l in leads:
-        p = l["id"][:8]
-        if l["id"] not in scores and p in SCORE_OVERRIDES:
-            t, v = SCORE_OVERRIDES[p][0], SCORE_OVERRIDES[p][1]
-            scores[l["id"]] = {"tier": t, "est_value_gbp": v}
     events = get(url, key, "lead_contact_events?select=lead_id,event_type,channel,ts,meta"
                            "&order=ts.asc&limit=10000")
     nstate = {n["lead_id"]: n["status"] for n in get(
@@ -64,6 +55,31 @@ def main():
     for s in sends:
         sends_by_lead[s["lead_id"]].append(s)
 
+    CH = {"email": "email", "sms": "SMS", "whatsapp": "WhatsApp"}
+
+    def trail(l, evs):
+        tl = []
+        for s in sends_by_lead[l["id"]]:
+            if s["status"] == "sent":
+                tl.append((s["sent_at"], f"Our {CH.get(s['channel'], s['channel'])} (touch {s['step'] + 1})", None))
+        for ev in evs:
+            m = ev.get("meta") or {}
+            t = ev["event_type"]
+            if t == "ack_sent" and not m.get("skipped"):
+                tl.append((ev["ts"], f"Our auto-acknowledgement ({CH.get(ev['channel'], ev['channel'])})", None))
+            elif t == "verify_pass":
+                tl.append((ev["ts"], "Contact details verified", None))
+            elif t == "replied":
+                tl.append((ev["ts"], f"They replied by {CH.get(ev['channel'], ev['channel'])}", (m.get("body") or "").strip()))
+            elif t == "booked":
+                tl.append((ev["ts"], "They booked a callback", m.get("start") or m.get("date")))
+            elif t == "operator_update" and m.get("body"):
+                tl.append((ev["ts"], f"Operator note ({CH.get(ev['channel'], ev['channel'])})", m["body"].strip()))
+            elif t == "opted_out":
+                tl.append((ev["ts"], "THEY OPTED OUT", m.get("reason")))
+        tl.sort(key=lambda x: x[0])
+        return tl
+
     def fmt_ts(ts):
         return datetime.fromisoformat(ts.replace("Z", "+00:00")).strftime("%d %b %Y %H:%M")
 
@@ -75,28 +91,25 @@ def main():
         evs = by_lead[l["id"]]
         booked = "; ".join(ev["meta"].get("start") or ev["meta"].get("date", "")
                            for ev in evs if ev["event_type"] == "booked" and ev.get("meta"))
-        replies = " | ".join(
-            f"[{ev['channel']} {fmt_ts(ev['ts'])}] {(ev.get('meta') or {}).get('body', '').strip()}"
-            for ev in evs if ev["event_type"] == "replied")
+        replies = "\n".join(
+            f"[{fmt_ts(ts)}] {label}" + (f": {body}" if body else "")
+            for ts, label, body in trail(l, evs))
         verified = "yes" if any(ev["event_type"] == "verify_pass" for ev in evs) else ""
         opted_out = "OPTED OUT" if any(ev["event_type"] == "opted_out" for ev in evs) else ""
-        s = scores.get(l["id"])
         rows.append({
             "received": fmt_ts(l["created_at"]),
             "source": l.get("source") or "",
-            "tier": (s or {}).get("tier", ""),
-            "est_value_gbp": (s or {}).get("est_value_gbp", ""),
+            "verified": verified,
+            "nurture_status": nstate.get(l["id"], ""),
+            "opted_out": opted_out,
             "name": l.get("full_name") or "",
             "email": l.get("email") or "",
             "phone": l.get("phone") or "",
             "role": l.get("role") or "",
             "practice/company": l.get("practice_name") or "",
-            "verified": verified,
-            "nurture_status": nstate.get(l["id"], ""),
-            "opted_out": opted_out,
             "booked_call_slots": booked,
-            "replies": replies,
             "message": (l.get("message") or "").strip(),
+            "sms_email_trail": replies,
         })
 
     os.makedirs(OUT, exist_ok=True)
@@ -127,31 +140,6 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
     # headless Edge like generate_proposal.py. Layout mirrors the qualified
     # handoff email: enquiry message first, then the chronological SMS/email
     # trail with reply bodies. Tier/value deliberately omitted for readability.
-    CH = {"email": "email", "sms": "SMS", "whatsapp": "WhatsApp"}
-
-    def trail(l, evs):
-        tl = []
-        for s in sends_by_lead[l["id"]]:
-            if s["status"] == "sent":
-                tl.append((s["sent_at"], f"Our {CH.get(s['channel'], s['channel'])} (touch {s['step'] + 1})", None))
-        for ev in evs:
-            m = ev.get("meta") or {}
-            t = ev["event_type"]
-            if t == "ack_sent" and not m.get("skipped"):
-                tl.append((ev["ts"], f"Our auto-acknowledgement ({CH.get(ev['channel'], ev['channel'])})", None))
-            elif t == "verify_pass":
-                tl.append((ev["ts"], "Contact details verified", None))
-            elif t == "replied":
-                tl.append((ev["ts"], f"They replied by {CH.get(ev['channel'], ev['channel'])}", (m.get("body") or "").strip()))
-            elif t == "booked":
-                tl.append((ev["ts"], "They booked a callback", m.get("start") or m.get("date")))
-            elif t == "operator_update" and m.get("body"):
-                tl.append((ev["ts"], f"Operator note ({CH.get(ev['channel'], ev['channel'])})", m["body"].strip()))
-            elif t == "opted_out":
-                tl.append((ev["ts"], "THEY OPTED OUT", m.get("reason")))
-        tl.sort(key=lambda x: x[0])
-        return tl
-
     def block(l, r):
         evs = by_lead[l["id"]]
         flags = " · ".join(x for x in (
@@ -214,7 +202,7 @@ ul.trail li{{margin:1px 0;break-inside:avoid}}
         print(f"Edge not found; open {print_path} in a browser and print to PDF")
 
     n_booked = sum(1 for r in rows if r["booked_call_slots"])
-    n_replied = sum(1 for r in rows if r["replies"])
+    n_replied = sum(1 for r in rows if "They replied" in r["sms_email_trail"])
     print(f"wrote {csv_path}")
     print(f"wrote {html_path}")
     print(f"{len(rows)} leads ({n_booked} with self-booked call slots, {n_replied} with replies, "
