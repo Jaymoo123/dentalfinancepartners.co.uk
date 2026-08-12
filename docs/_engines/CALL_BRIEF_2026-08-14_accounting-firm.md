@@ -37,6 +37,21 @@ Anchor if asked "is £85 a lot?": an advisory lead is a single-digit percentage 
 - Leads are chargeable even if the enquirer has spoken to another adviser, unless they were formally engaged for that work before enquiring.
 - "No response" credits (exclusive only) need evidence of 7 to 9 contact attempts over 14 days.
 
+## Market context (where we sit vs what they may already use)
+
+Researched 2026-08-12; sources in `docs/_engines/CLAIM_SYSTEM_AND_MARKET_NOTES_2026-08-12.md`.
+
+- **Bark** (biggest UK generalist): prepaid credit packs (~£1.20 + VAT/credit), a lead costs roughly £7 to £40 to unlock, shared with up to 5 professionals, exclusivity only ~20% extra. Credits now expire after 3 months, non-refundable. Leads are not verified before sale; a widely cited test found only ~44% of purchased leads ever responded.
+- **Unbiased** (accounting-specific): redacted enquiry lands in the dashboard, accept-to-purchase from £33 + VAT, details released on acceptance. Nearest model to ours.
+- **US insurance/home-services ping sellers**: shared to 3 to 8 buyers, exclusive at a 2x to 4x premium.
+
+Contrast lines that land:
+
+- "Shared means three firms maximum, not five or eight."
+- "You never prepay and nothing expires. No credit packs. You pay in arrears, by Direct Debit, only for what you claimed."
+- "Every lead is SMS and email verified before you ever see it. The big marketplaces sell unverified enquiries and argue about refunds afterwards; we filter before the sale instead."
+- On our 3x exclusivity vs Bark's 20%: their exclusivity is priced as an afterthought; ours is literally the price of buying out all three slots. A 20% premium tells you the exclusivity isn't real.
+
 ## Likely objections, answers
 
 - **"Why would I pay for a lead two other firms also have?"** Because it costs a third of the exclusive price and speed decides these anyway; the firm that calls first usually wins the work. If you want certainty, take it exclusively, and you get the credit protection with it.
