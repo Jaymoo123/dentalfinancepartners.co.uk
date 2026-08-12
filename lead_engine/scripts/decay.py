@@ -1,9 +1,14 @@
-"""decay.py [--now ISO]: age unclaimed leads per the decay rules (dry run).
+"""decay.py [--now ISO]: age fully unclaimed leads per the decay rules (dry run).
 
 Thresholds and last-call prices come from each tier's decay block in
 config/tiers.json, never hardcoded. --now injects the clock for simulation.
 
-For leads with open claim slots, measured from last_ping_at (falling back to
+Decay applies ONLY to leads with zero claims (owner rule 2026-08-12): a lead's
+price is fixed at its first claim, so a partially claimed lead never re-prices,
+last-calls or cascades; its remaining shared slots stay open at the fixed
+price until the cap.
+
+For fully unclaimed leads, measured from last_ping_at (falling back to
 the lead timestamp if never pinged):
 - past cascade_after_hours: verified leads -> cascaded (offered to the
   adjacent professions lane), unverified -> raw_batch.
@@ -46,7 +51,8 @@ def main():
         if not decay:
             continue
         claimed = sum(1 for d in deliveries if d["lead_id"] == lead["id"])
-        if claimed >= cap:
+        if claimed:
+            # Price fixed at first claim: claimed leads never decay.
             continue
         ref = lead["last_ping_at"] or lead["timestamp"]
         hours = (now - tiers.parse_ts(ref)).total_seconds() / 3600
@@ -73,6 +79,8 @@ def main():
                 "INTENT_LINE": lead["intent_line"],
                 "PRICE": tiers.gbp(decay["last_call_price"]),
                 "ORIGINAL_PRICE": tiers.gbp(tier["price"]),
+                "EXCLUSIVE_PRICE": tiers.gbp(decay["last_call_price"] * cfg["exclusive_multiplier"]),
+                "CAP": cap,
             }
             for firm in pool:
                 for ext in ("txt", "html"):

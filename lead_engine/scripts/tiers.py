@@ -45,6 +45,10 @@ def claim_slots():
     return load_tiers()["claim_slots_per_lead"]
 
 
+def exclusive_multiplier():
+    return load_tiers()["exclusive_multiplier"]
+
+
 def gbp(n):
     return f"£{n}"
 

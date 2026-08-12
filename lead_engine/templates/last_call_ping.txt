@@ -6,8 +6,9 @@ Tier:      {{TIER_LABEL}}
 Case type: {{CASE_TYPE}}
 Area:      {{AREA}}
 Intent:    {{INTENT_LINE}}
-Price:     {{PRICE}} per claimed lead (reduced from {{ORIGINAL_PRICE}})
+Price:     {{PRICE}} per claimed lead (reduced from {{ORIGINAL_PRICE}}; shared, up to {{CAP}} firms)
+Exclusive: {{EXCLUSIVE_PRICE}} locks this lead to your firm
 
 Claim this lead: {{CLAIM_URL}}
 
-First firms to claim receive the lead. No commitment. You only pay for leads you claim.
+Shared leads go to the first {{CAP}} firms to claim; every claiming firm pays the same price. Exclusive is available only while no other firm has claimed. No commitment. You only pay for leads you claim.

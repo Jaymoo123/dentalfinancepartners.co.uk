@@ -41,6 +41,8 @@ def main():
         "AREA": lead["area"] or "Not stated",
         "INTENT_LINE": lead["intent_line"],
         "PRICE": tiers.gbp(tier["price"]),
+        "EXCLUSIVE_PRICE": tiers.gbp(tier["price"] * tiers.exclusive_multiplier()),
+        "CAP": tiers.claim_slots(),
     }
     for firm in pool:
         for ext in ("txt", "html"):

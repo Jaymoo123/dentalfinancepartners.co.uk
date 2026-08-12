@@ -1,8 +1,9 @@
-<!-- Tokens: LEAD_ID, TIER_LABEL, SOURCE_SITE, CASE_TYPE, INTENT_LINE, AREA, PRICE, NAME, PHONE, EMAIL, MESSAGE, VERIFIED, VERIFIED_AT, DELIVERED_AT, TERMS_HTML. TERMS_HTML is the standard terms reproduced verbatim from config/standard_terms.md. -->
+<!-- Tokens: LEAD_ID, BASIS, TIER_LABEL, SOURCE_SITE, CASE_TYPE, INTENT_LINE, AREA, PRICE, NAME, PHONE, EMAIL, MESSAGE, VERIFIED, VERIFIED_AT, DELIVERED_AT, TERMS_HTML. TERMS_HTML is the standard terms reproduced verbatim from config/standard_terms.md. -->
 <div style="font-family: Georgia, 'Times New Roman', serif; max-width: 620px; margin: 0 auto; color: #1a1a1a;">
   <h2 style="font-size: 18px; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px;">Lead delivery: {{LEAD_ID}} ({{TIER_LABEL}}, {{PRICE}})</h2>
   <p style="font-size: 14px;">You claimed this lead. Full verified details below.</p>
   <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Basis</td><td style="padding: 4px 0;"><strong>{{BASIS}}</strong></td></tr>
     <tr><td style="padding: 4px 12px 4px 0; color: #555;">Source site</td><td style="padding: 4px 0;">{{SOURCE_SITE}}</td></tr>
     <tr><td style="padding: 4px 12px 4px 0; color: #555;">Tier</td><td style="padding: 4px 0;"><strong>{{TIER_LABEL}}</strong></td></tr>
     <tr><td style="padding: 4px 12px 4px 0; color: #555;">Case type</td><td style="padding: 4px 0;">{{CASE_TYPE}}</td></tr>

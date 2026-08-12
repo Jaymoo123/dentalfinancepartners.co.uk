@@ -8,7 +8,13 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
-import { CASE_TIERS, DEFAULT_PRICE_CARD, TIER_RANK } from "@/lib/leads/tiers";
+import {
+  CASE_TIERS,
+  CLAIM_SLOTS_PER_LEAD,
+  DEFAULT_PRICE_CARD,
+  EXCLUSIVE_MULTIPLIER,
+  TIER_RANK,
+} from "@/lib/leads/tiers";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 // tests -> src -> web -> Property -> repo root
@@ -21,7 +27,11 @@ type JsonTier = {
   decay?: { last_call_price?: number };
 };
 
-const json = JSON.parse(readFileSync(CONFIG_PATH, "utf-8")) as { tiers: JsonTier[] };
+const json = JSON.parse(readFileSync(CONFIG_PATH, "utf-8")) as {
+  tiers: JsonTier[];
+  claim_slots_per_lead: number;
+  exclusive_multiplier: number;
+};
 const byId = new Map(json.tiers.map((t) => [t.id, t]));
 
 describe("tiers.ts matches config/tiers.json", () => {
@@ -47,6 +57,11 @@ describe("tiers.ts matches config/tiers.json", () => {
       standard: byId.get("standard")!.price,
       essential: byId.get("essential")!.price,
     });
+  });
+
+  it("carries the claim cap and exclusive multiplier", () => {
+    expect(CLAIM_SLOTS_PER_LEAD).toBe(json.claim_slots_per_lead);
+    expect(EXCLUSIVE_MULTIPLIER).toBe(json.exclusive_multiplier);
   });
 
   it("ranks tiers in price order", () => {

@@ -18,17 +18,24 @@ Tiers are assigned by case type under the published rubric in `docs/CLASSIFY.md`
 | Adjacent | £35 | n/a | Any lead offered to non-competing professions (brokers, IFAs, solicitors, consultants); additive to the accounting sale |
 | Raw | ~£5 per lead, sold in monthly batches of £75 to £125 | n/a | Unverified after the 7-day nurture window; sold as seen, no credits |
 
-Decay: unclaimed after 24 hours, re-offered at the last-call price; after 48 hours, cascaded to the adjacent lane or the raw batch. All figures in `config/tiers.json`.
+Decay: fully unclaimed after 24 hours, re-offered at the last-call price; after 48 hours, cascaded to the adjacent lane or the raw batch. Decay stops at the first claim: a lead's price is fixed when it is first claimed, and a partially claimed lead never re-prices or cascades. All figures in `config/tiers.json`.
+
+## Shared and exclusive claims (owner-locked 2026-08-12)
+
+- Leads are **shared by default**: up to `claim_slots_per_lead` (3) firms may claim each lead, first come, first served. The redacted ping goes to the whole pool; there is no cap on who may attempt a claim, only on how many claims succeed.
+- A lead's **price is fixed at its first claim**. Every firm claiming that lead pays the same price, whether it was the fresh or last-call price at that moment.
+- Any lead **not yet claimed** may be claimed **exclusively at `exclusive_multiplier` (3x) the current price**. An exclusive claim locks the lead: it is delivered to no one else and all slots are consumed. Rationale (stated in the terms): the shared price assumes up to 3 firms, so exclusivity is priced as buying out all three slots.
+- The **race decides**. If a shared claim lands first, exclusivity is gone for that lead; the would-be exclusive firm is offered a shared slot at the shared price instead, with no premium and no credit. The 3x price is only ever charged when the exclusive claim wins.
 
 ## Delivery and offer terms
 
-- Leads are offered to the buyer pool as redacted alerts (tier, case type, area, one-line intent, price) and delivered in full on claim.
-- Claim slots per lead are limited (`claim_slots_per_lead` in `config/tiers.json`). The current live pipeline delivers one claim per lead; buyer-facing documents state neither an exclusivity promise nor a slot count.
+- Leads are offered to the buyer pool as redacted alerts (tier, case type, area, one-line intent, shared price and exclusive price) and delivered in full on claim.
+- The shared/exclusive model above is now stated openly in buyer-facing documents (supersedes the 2026-08-10 neutral wording). The live Property pipeline still delivers each lead to a single firm until the pool goes live; the dry-run engine implements the full model.
 - Firms join the pool free, with no volume commitments or caps either way. A Direct Debit mandate is required before a firm's first claim, not at join.
 
 ## Credit terms
 
-Per the standard terms (`config/standard_terms.md`, reproduced verbatim on the price sheet, delivery footers and invoices): credits, never refunds, only for dead or unreachable contact details or an enquiry materially different from its description; "no response" credits require evidence of 7 to 9 contact attempts over 14 days; leads remain chargeable if the enquirer has spoken with another adviser unless formally engaged before enquiring; Raw is sold as seen.
+Per the standard terms (`config/standard_terms.md`, reproduced verbatim on the price sheet, delivery footers and invoices): credits, never refunds, **apply to exclusive claims only**; shared and Raw leads are sold as seen. A shared lead goes to multiple firms at a lower price, so a "dead lead" claim is neither verifiable nor refundable across several buyers; the credit protection is part of what the 3x exclusive price buys. Grounds are unchanged: dead or unreachable contact details or an enquiry materially different from its description; "no response" credits require evidence of 7 to 9 contact attempts over 14 days; leads remain chargeable if the enquirer has spoken with another adviser unless formally engaged before enquiring.
 
 (Credit reasons in the ledger: `spam_bot`, `duplicate_30d`, `wrong_category`, `dead_contact`.)
 

@@ -1,6 +1,6 @@
 # Lead engine (dry run)
 
-The distribution engine around the estate's verified enquiry flow. Classified leads are offered to the whole pool of buyer firms as redacted email pings; firms claim on a first come, first served basis up to the claim cap; unclaimed leads decay (24h last-call reprice, 48h cascade to the adjacent professions lane or the raw batch); every delivery is logged per firm and pivoted into per-firm invoices on the 1st of each month, collected by Direct Debit. Everything here is dry-run only: pings, deliveries and invoices are rendered to local files, and any action that would send an email or create a payment prints a `[STUB] would ...` line instead. Python 3 stdlib only, no network code anywhere.
+The distribution engine around the estate's verified enquiry flow. Classified leads are offered to the whole pool of buyer firms as redacted email pings; firms claim on a first come, first served basis up to the claim cap (shared), or exclusively at 3x the price, which locks the lead if no firm has claimed yet (the race decides; see docs/LEAD_PRICING.md). A lead's price is fixed at its first claim, so later shared claimants pay the same and claimed leads never decay. Fully unclaimed leads decay (24h last-call reprice, 48h cascade to the adjacent professions lane or the raw batch); every delivery is logged per firm and pivoted into per-firm invoices on the 1st of each month, collected by Direct Debit. Credits apply to exclusive claims only. Everything here is dry-run only: pings, deliveries and invoices are rendered to local files, and any action that would send an email or create a payment prints a `[STUB] would ...` line instead. Python 3 stdlib only, no network code anywhere.
 
 ## File map
 
@@ -35,8 +35,8 @@ All from the repo root. `--dry-run` is the default and only mode.
 |---|---|
 | `python lead_engine/scripts/classify_stub.py [--all] [--message "..."]` | prints the strict classification JSON (stub of the docs/CLASSIFY.md prompt) |
 | `python lead_engine/scripts/route.py <lead_id>` | renders redacted pings to outbox/ for every active firm, stamps last_ping_at |
-| `python lead_engine/scripts/claim.py <lead_id> <firm_id>` | enforces the claim cap, renders the full delivery email, appends the deliveries row |
-| `python lead_engine/scripts/decay.py [--now ISO]` | last-call at 24h, cascade/raw at 48h (thresholds from config) |
+| `python lead_engine/scripts/claim.py <lead_id> <firm_id> [--exclusive]` | shared claim up to the cap at the price fixed by the first claim; `--exclusive` locks the lead at 3x if no firm has claimed yet |
+| `python lead_engine/scripts/decay.py [--now ISO]` | fully unclaimed leads only: last-call at 24h, cascade/raw at 48h (thresholds from config) |
 | `python lead_engine/scripts/invoice_run.py YYYY-MM` | one invoice HTML per firm to invoices/YYYY-MM/, credits as negative lines, rows marked invoiced |
 | `python lead_engine/scripts/stats.py [--month YYYY-MM]` | leads by tier x status, claim rate per tier, revenue billed vs delivered |
 | `python lead_engine/scripts/build_price_sheet.py` | regenerates the price sheet from config + CLASSIFY.md |
@@ -49,26 +49,34 @@ Runs against the seed data as checked in. To re-run from scratch first reset the
 python lead_engine/scripts/classify_stub.py --all
 python lead_engine/scripts/route.py L001
 python lead_engine/scripts/claim.py L001 F001
+python lead_engine/scripts/claim.py L001 F002 --exclusive
 python lead_engine/scripts/claim.py L001 F002
 python lead_engine/scripts/claim.py L001 F003
 python lead_engine/scripts/claim.py L001 F004
+python lead_engine/scripts/claim.py L002 F001 --exclusive
+python lead_engine/scripts/claim.py L002 F002
 python lead_engine/scripts/decay.py --now 2026-08-10T11:00:00
+python lead_engine/scripts/claim.py L005 F001
+python lead_engine/scripts/claim.py L005 F002
 python lead_engine/scripts/decay.py --now 2026-08-11T11:00:00
 python lead_engine/scripts/invoice_run.py 2026-08
-python lead_engine/scripts/stats.py
+python lead_engine/scripts/stats.py --month 2026-08
 python lead_engine/scripts/build_price_sheet.py
 ```
 
-What each step proves:
+What each step proves (seeds: L004 carries two shared claims, one with an invalid shared-credit flag; L007 is exclusively delivered to F003 with a valid credit):
 
 1. `classify_stub --all`: strict JSON per lead matching the CLASSIFY.md output shape.
-2. `route L001`: three redacted pings (txt + html) land in outbox/, no contact details or message in any of them; L001 stamped fresh.
-3. `claim` x3: F001 and F002 accepted at £85; F003 accepted with the `[STUB] would block claim until Direct Debit mandate active` warning (mandate pending); third claim marks L001 delivered_full.
-4. `claim L001 F004`: rejected, "all 3 slots for L001 are taken", non-zero exit.
-5. `decay --now +25h`: L002 (verified, 25h, open slot) goes last_call at £25 with last-call pings rendered; L003 (unverified) skips last call; L004 (stale, one open slot) cascades to the adjacent lane at £35.
-6. `decay --now +49h`: L002 cascades to the adjacent lane; L003 (unverified) goes raw_batch.
-7. `invoice_run 2026-08`: F001 £165, F002 £125 (the £40 L004 credit netted as a negative line with its reason), F003 £85; rows marked invoiced with refs like `ATL-2026-08-F001`; `[STUB] would create GoCardless payment ...` per firm.
-8. `stats`: 4 leads by tier x status, claim rates (advisory 3/3, standard 4/6, essential 0/3), delivered £375 = billed £375 net of credits.
-9. `build_price_sheet`: docs/PRICE_SHEET.md and docs/price-sheet.html regenerate from config.
-
-The last-call price branch of `claim.py` is also verified: claiming a lead whose status is last_call charges the tier's `last_call_price` (L002 at £25 instead of £40) and says so.
+2. `route L001`: three redacted pings (txt + html) land in outbox/ showing both the shared price (£85) and the exclusive price (£255); no contact details or message in any of them; L001 stamped fresh.
+3. `claim L001 F001`: shared claim accepted at £85, slot 1 of 3.
+4. `claim L001 F002 --exclusive`: rejected, non-zero exit (a shared claim already exists, so exclusivity is gone); the message quotes the shared slot at £85 instead.
+5. `claim L001 F002` then `F003`: shared claims at the same £85 (price fixed at first claim); F003 carries the `[STUB] would block claim until Direct Debit mandate active` warning; third claim marks L001 delivered_full.
+6. `claim L001 F004`: rejected, "all 3 slots for L001 are taken", non-zero exit.
+7. `claim L002 F001 --exclusive`: the exclusive claim wins the race: charged £120 (3x £40), lead locked, delivered_full, delivery email carries `Basis: Exclusive (locked to your firm)`.
+8. `claim L002 F002`: rejected, "L002 is exclusively locked by F001", non-zero exit.
+9. `decay --now +25h`: L005 and L006 (verified, fully unclaimed) go last_call at £55/£25 with last-call pings rendered (exclusive shown at 3x the last-call price); L003 (unverified) skips last call; L001, L002 and L004 are skipped because claimed leads never decay.
+10. `claim L005 F001`: last-call price £55 applies; `claim L005 F002`: charged the same £55 ("Price fixed at first claim"), not the £85 card price and no repricing.
+11. `decay --now +49h`: L006 cascades to the adjacent lane at £35; L003 goes raw_batch; L005 (claimed) is skipped.
+12. `invoice_run 2026-08`: F001 £300 (L004 £40 + L001 £85 + L002 £120 exclusive + L005 £55), F002 £180 with a `WARNING: credit on shared claim L004/F002 ignored` (credits apply to exclusive claims only; the charge stands until the ledger row is fixed), F003 £85 (L007's £255 exclusive charge netted to zero by its credit line); refs like `ATL-2026-08-F001`; `[STUB] would create GoCardless payment ...` per firm.
+13. `stats --month 2026-08`: 7 leads by tier x status, claim rates counting an exclusive lock as all 3 slots (advisory 8/9, standard 5/9, essential 0/3), delivered £565 = billed £565 net of £255 exclusive credits.
+14. `build_price_sheet`: docs/PRICE_SHEET.md and docs/price-sheet.html regenerate with shared · exclusive prices per accounting tier.

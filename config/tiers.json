@@ -1,0 +1,65 @@
+{
+  "$comment": "Canonical lead tier configuration. Single source of truth consumed by lead_engine/ scripts, the price sheet builder, the proposal engine and Property/web/src/lib/leads/tiers.ts (drift-tested). Numbers and rules are fixed per the Lead Engine build brief; do not edit without owner sign-off.",
+  "currency": "GBP",
+  "claim_slots_per_lead": 3,
+  "exclusive_multiplier": 3,
+  "$exclusivity": "Owner-locked 2026-08-12. Leads are shared (up to claim_slots_per_lead firms). An exclusive claim at exclusive_multiplier x the lead's price locks the lead to the claiming firm, but only if no other firm has claimed it yet; once any firm holds a shared claim, only shared slots remain. A lead's price is fixed at its first claim (no decay repricing between claimants). Credits apply to exclusive claims only.",
+  "tiers": [
+    {
+      "id": "advisory",
+      "label": "Advisory",
+      "price": 85,
+      "decay": { "after_hours": 24, "last_call_price": 55, "cascade_after_hours": 48 },
+      "typical_monthly_volume": 25,
+      "examples": [
+        "incorporation",
+        "ownership restructuring",
+        "CGT planning",
+        "SDLT",
+        "non-resident",
+        "CIO formation / charity structure",
+        "historic records reconstruction"
+      ]
+    },
+    {
+      "id": "standard",
+      "label": "Standard",
+      "price": 40,
+      "decay": { "after_hours": 24, "last_call_price": 25, "cascade_after_hours": 48 },
+      "typical_monthly_volume": 45,
+      "examples": [
+        "landlord self assessment with complexity",
+        "SME accounts",
+        "mixed compliance + advice"
+      ]
+    },
+    {
+      "id": "essential",
+      "label": "Essential",
+      "price": 15,
+      "decay": { "after_hours": 24, "last_call_price": 10, "cascade_after_hours": 48 },
+      "typical_monthly_volume": 20,
+      "examples": [
+        "straightforward returns",
+        "basic compliance"
+      ]
+    },
+    {
+      "id": "adjacent",
+      "label": "Adjacent",
+      "price": 35,
+      "profession_lane": "non-accounting (brokers, IFAs, solicitors, consultants)",
+      "note": "same lead may be sold here in addition to accounting slots. Non-competing professions only."
+    },
+    {
+      "id": "raw",
+      "label": "Raw (unverified)",
+      "batch": true,
+      "price_per_lead_equiv": 5,
+      "batch_price_range": [75, 125],
+      "typical_monthly_volume": 20,
+      "eligibility": "unverified after 7-day nurture window only",
+      "credits": "none. Sold as seen."
+    }
+  ]
+}

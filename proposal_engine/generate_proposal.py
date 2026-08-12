@@ -270,6 +270,9 @@ def build_pricing(lane, overrides):
             if lc:
                 lis.append(f"<li>Unclaimed after {t['decay']['after_hours']} hours: "
                            f"last-call £{lc}</li>")
+            if t.get("decay"):  # accounting lanes carry the exclusive option
+                lis.append(f"<li>Exclusive claim: £{shown * cfg['exclusive_multiplier']}{mark} "
+                           "(locks the lead to your firm, includes the credit protection)</li>")
             cards.append(
                 '<div class="option">'
                 f'<div class="name">{t["label"]} tier</div>'
@@ -281,8 +284,15 @@ def build_pricing(lane, overrides):
     decay = next((t.get("decay") for t in sel if t.get("decay")), None)
     decay_bits = []
     if decay:
+        cap, mult = cfg["claim_slots_per_lead"], cfg["exclusive_multiplier"]
         decay_bits.append(
-            f"Any lead unclaimed after {decay['after_hours']} hours is re-offered at its "
+            f"Leads are shared: up to {cap} firms may claim each lead, first come, first "
+            "served, and a lead's price is fixed at its first claim, so every claiming firm "
+            f"pays the same. Any lead not yet claimed may be claimed exclusively at {mult} "
+            "times its current price, which locks the lead to the claiming firm; once another "
+            "firm has claimed, only shared slots remain. Credits apply to exclusive claims only.")
+        decay_bits.append(
+            f"Any lead fully unclaimed after {decay['after_hours']} hours is re-offered at its "
             f"last-call price; after {decay['cascade_after_hours']} hours it cascades to the "
             "adjacent professional lane or the raw batch.")
     if raw:

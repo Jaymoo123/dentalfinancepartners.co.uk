@@ -33,20 +33,25 @@ def main():
         row = [sum(1 for l in leads if l["tier"] == tid and l["status"] == s) for s in statuses]
         print(f"  {tid:<10}" + "".join(f"{n:>15}" for n in row))
 
-    print("\nClaim rate per tier (claimed slots / offered slots, this month's leads)")
+    print("\nClaim rate per tier (claimed slots / offered slots, this month's leads; exclusive = all slots)")
     for tid in tier_ids:
         tier_leads = [l for l in leads if l["tier"] == tid]
         offered = len(tier_leads) * cap
-        claimed = sum(1 for d in deliveries if lead_tier.get(d["lead_id"]) == tid)
+        claimed = sum(cap if d["exclusive"] == "true" else 1
+                      for d in deliveries if lead_tier.get(d["lead_id"]) == tid)
         rate = f"{100 * claimed / offered:.0f}%" if offered else "n/a"
         print(f"  {tid:<10} {claimed}/{offered} slots ({rate})")
 
+    def credited(d):
+        # Mirrors invoice_run.py: credits net off exclusive claims only.
+        return d["credit"] == "true" and d["exclusive"] == "true"
+
     def net(rows):
-        return sum(int(d["price_charged"]) * (0 if d["credit"] == "true" else 1) for d in rows)
+        return sum(int(d["price_charged"]) for d in rows if not credited(d))
 
     delivered = net(deliveries)
     billed = net([d for d in deliveries if d["invoiced"] == "true"])
-    credits = sum(int(d["price_charged"]) for d in deliveries if d["credit"] == "true")
+    credits = sum(int(d["price_charged"]) for d in deliveries if credited(d))
     print(f"\nRevenue ({args.month}, net of {tiers.gbp(credits)} credits)")
     print(f"  delivered: {tiers.gbp(delivered)}")
     print(f"  billed:    {tiers.gbp(billed)}")

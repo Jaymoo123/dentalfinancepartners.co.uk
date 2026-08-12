@@ -2,6 +2,7 @@ LEAD DELIVERY | {{LEAD_ID}} | {{TIER_LABEL}} | {{PRICE}}
 
 You claimed this lead. Full verified details below.
 
+Basis:        {{BASIS}}
 Source site:  {{SOURCE_SITE}}
 Tier:         {{TIER_LABEL}}
 Case type:    {{CASE_TYPE}}

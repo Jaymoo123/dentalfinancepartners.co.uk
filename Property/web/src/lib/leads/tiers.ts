@@ -19,6 +19,16 @@ export const CASE_TIERS: Record<
   essential: { id: "essential", label: "Essential", price: 15, lastCallPrice: 10 },
 };
 
+/**
+ * Shared-claim cap and exclusive price multiplier (owner-locked 2026-08-12).
+ * Leads are shared up to the cap; an exclusive claim at multiplier x price
+ * locks the lead if no firm has claimed yet. Not yet wired into the live
+ * pipeline (single-firm delivery until the pool launches); mirrored here so
+ * the drift test keeps the constants honest when it is.
+ */
+export const CLAIM_SLOTS_PER_LEAD = 3;
+export const EXCLUSIVE_MULTIPLIER = 3;
+
 /** Tier rank for >= comparisons (higher = more valuable). */
 export const TIER_RANK: Record<OfferTier, number> = {
   essential: 0,

@@ -1,7 +1,10 @@
 """invoice_run.py YYYY-MM: build per-firm monthly invoices from deliveries (dry run).
 
 Pivots deliveries claimed in the given month per firm: each delivery is a
-charge line; rows with credit=true also add a negative line with the reason.
+charge line (marked shared or exclusive); rows with credit=true add a negative
+line with the reason, but only on exclusive claims (credits apply to exclusive
+claims only per the standard terms; a credit flag on a shared row is ignored
+with a warning).
 Renders one printable A4 invoice per firm to lead_engine/invoices/YYYY-MM/
 from templates/invoice.html, marks the rows invoiced with the invoice ref, and
 prints a [STUB] line for the GoCardless payment it would create. No payment is
@@ -62,9 +65,15 @@ def main():
             lead = leads[d["lead_id"]]
             tier_label = tiers.tier_cfg(lead["tier"])["label"]
             amount = int(d["price_charged"])
-            rows.append(line(d, tier_label, "Claimed lead", amount))
+            exclusive = d["exclusive"] == "true"
+            rows.append(line(d, tier_label, "Claimed lead (exclusive)" if exclusive else "Claimed lead (shared)", amount))
             total += amount
             if d["credit"] == "true":
+                if not exclusive:
+                    # Standard terms: credits apply to exclusive claims only.
+                    print(f"WARNING: credit on shared claim {d['lead_id']}/{d['firm_id']} ignored "
+                          f"(credits apply to exclusive claims only); fix the ledger row.")
+                    continue
                 rows.append(line(d, tier_label, f"Credit: {d['credit_reason']}", -amount, credit=True))
                 total -= amount
         ref = f"ATL-{args.month}-{firm_id}"
