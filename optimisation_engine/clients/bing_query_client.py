@@ -112,10 +112,10 @@ class BingWebmasterClient:
         if not self.api_key:
             raise ValueError("BING_WEBMASTER_API_KEY not set in .env")
 
-    def _call(self, method: str, params: dict | None = None) -> Any:
+    def _call(self, method: str, params: dict | None = None, timeout: float = 60.0) -> Any:
         params = dict(params or {})
         params["apikey"] = self.api_key
-        r = httpx.get(f"{BING_BASE}/{method}", params=params, timeout=60.0)
+        r = httpx.get(f"{BING_BASE}/{method}", params=params, timeout=timeout)
         r.raise_for_status()
         data = r.json()
         # BWT wraps results in a {"d": ...} envelope.
@@ -153,6 +153,91 @@ class BingWebmasterClient:
         See AI_PERF_METHOD constant if the name needs changing.
         """
         return self._call(AI_PERF_METHOD, {"siteUrl": site_url}) or []
+
+    # -- Keyword-research endpoints (demand-research, NOT site analytics) -----
+    # These take q=/country=/language= (no siteUrl -- they are not scoped to a
+    # verified property) and are free on the same API key.
+
+    def get_keyword_stats(
+        self, query: str, country: str = "gb", language: str = "en-GB"
+    ) -> list[dict]:
+        """GetKeywordStats: weekly search-impression history for one keyword.
+
+        Response shape (list of dicts under the "d" envelope), one row per
+        week: {"Date": "...", "Query": "...", "Impressions": int}. Reflects
+        Bing's own impression volume for the term -- a demand-research signal,
+        not a ranking/traffic metric for any of our sites.
+        """
+        return self._call(
+            "GetKeywordStats", {"q": query, "country": country, "language": language}
+        ) or []
+
+    def get_related_keywords(
+        self,
+        query: str,
+        country: str = "gb",
+        language: str = "en-GB",
+        start_date: date | None = None,
+        end_date: date | None = None,
+    ) -> list[dict]:
+        """GetRelatedKeywords: keywords Bing associates with `query`, with each
+        one's own impression stats over the given date range (default: last
+        90 days).
+
+        Response shape (list of dicts under "d"): {"Query": "...",
+        "Impressions": int, ...}. Demand-research only -- these are Bing's
+        broader keyword universe, not queries any of our pages currently rank
+        for (that's GetPageQueryStats/GetQueryStats above).
+        """
+        end_date = end_date or date.today()
+        start_date = start_date or date.fromordinal(end_date.toordinal() - 90)
+        return self._call(
+            "GetRelatedKeywords",
+            {
+                "q": query,
+                "country": country,
+                "language": language,
+                "startDate": start_date.strftime("%m/%d/%Y"),
+                "endDate": end_date.strftime("%m/%d/%Y"),
+            },
+        ) or []
+
+    def get_keyword_ideas(self, query: str) -> list[dict]:
+        """GetKeywordIdeas: best-effort keyword-expansion call.
+
+        NOTE: unlike GetKeywordStats/GetRelatedKeywords, this method is not
+        confirmed present in the current BWT JSON API surface (may 404, may
+        be slow). Wrapped with a short 30s timeout; on ANY error (HTTP error,
+        timeout, bad JSON) this logs a warning and returns [] rather than
+        raising, so callers can treat it as always-best-effort. Demand-
+        research only, same caveat as the two methods above.
+        """
+        try:
+            return self._call("GetKeywordIdeas", {"q": query}, timeout=30.0) or []
+        except Exception as exc:
+            print(f"[BING-KW] GetKeywordIdeas({query!r}) failed (best-effort, ignored): "
+                  f"{type(exc).__name__}: {exc}")
+            return []
+
+
+# Module-level convenience wrappers (one-off keyword-research calls don't need
+# a fetcher/upsert object -- just a client instance).
+def get_keyword_stats(query: str, country: str = "gb", language: str = "en-GB") -> list[dict]:
+    return BingWebmasterClient().get_keyword_stats(query, country, language)
+
+
+def get_related_keywords(
+    query: str,
+    country: str = "gb",
+    language: str = "en-GB",
+    start_date: date | None = None,
+    end_date: date | None = None,
+) -> list[dict]:
+    return BingWebmasterClient().get_related_keywords(query, country, language, start_date, end_date)
+
+
+def get_keyword_ideas(query: str) -> list[dict]:
+    return BingWebmasterClient().get_keyword_ideas(query)
 
 
 def _as_url(stat: dict) -> str:

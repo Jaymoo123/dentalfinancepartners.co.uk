@@ -10,7 +10,7 @@ from __future__ import annotations
 import os
 from urllib.parse import urlparse
 
-from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
+from optimisation_engine.clients.serp_provider import fetch_serp
 
 
 # Keep total live calls modest (DDG bot-detection / rate-limit safety).
@@ -59,7 +59,14 @@ def collect_head_serps(cfg: dict, *, dry_run: bool = False) -> dict:
 
     for term in _probe_terms(cfg):
         probed.append(term)
-        results = fetch_organic_results(term, num=SERP_NUM, region="uk-en", site_key=cfg["site_key"])
+        # dry_run must stay zero-spend: force the free DDG path (dual mode makes a paid DFS call)
+        serp_result = fetch_serp(
+            term,
+            num=SERP_NUM,
+            site_key=cfg["site_key"],
+            mode="ddg_only" if dry_run else None,
+        )
+        results = serp_result["organic"]
 
         if not results and not dry_run and os.getenv("SERPER_API_KEY") and serper_used < MAX_SERPER_FALLBACKS:
             try:

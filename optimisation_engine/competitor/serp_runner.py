@@ -19,7 +19,7 @@ if ROOT not in sys.path:
 
 from optimisation_engine.competitor._db import _esc, _sql
 from optimisation_engine.competitor.page_parser import fetch_and_store
-from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
+from optimisation_engine.clients.serp_provider import fetch_serp
 
 
 # ---------------------------------------------------------------------------
@@ -170,11 +170,15 @@ def run_serps(
 
         # 2. Fetch SERP
         try:
-            serp_results = fetch_organic_results(query, num=n_competitors + 2, site_key=site_key)
+            serp_result = fetch_serp(query, num=n_competitors + 2, site_key=site_key)
         except Exception as exc:
             print(f"    CSE error: {exc}")
             summary["errors"].append({"query": query, "error": str(exc)})
             continue
+
+        serp_results = serp_result["organic"]
+        print(f"    provider={serp_result['provider_used']}" +
+              (f" divergence={serp_result['divergence']}" if serp_result["divergence"] is not None else ""))
 
         if not serp_results:
             print(f"    CSE returned no results")
@@ -186,6 +190,7 @@ def run_serps(
         competitor_results = [r for r in serp_results if our_domain not in (r.get("domain") or "")][:n_competitors]
 
         # 3. Store SERP rows
+        # TODO(discovery-v2): persist paa/serp_features once 20260815000001 migration applied
         serp_id = _upsert_serp(site_key, query, our_url, our_pos)
         if serp_id:
             _insert_competitor_pages(serp_id, competitor_results)

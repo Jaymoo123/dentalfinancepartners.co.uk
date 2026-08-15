@@ -15,6 +15,8 @@ Endpoints used in the first run:
   competitors_domain/live             - top competing domains
   ranked_keywords/live                - keywords a competitor ranks for
   bulk_keyword_difficulty/live        - KD for up to 1000 keywords per call
+  domain_intersection/live            - keywords two domains both rank for
+  keyword_ideas/live                  - keyword ideas seeded from up to 200 keywords
 """
 from __future__ import annotations
 
@@ -396,6 +398,57 @@ class DataForSEOClient:
             seed_keyword=f"bulk_ranks:{len(targets)}dom",
         )
 
+    def domain_intersection(
+        self,
+        domain1: str,
+        domain2: str,
+        *,
+        site_key: str,
+        limit: int = 500,
+    ) -> dict:
+        """Keywords both domains rank for, with each domain's SERP element per keyword."""
+        payload = [
+            {
+                "target1": domain1,
+                "target2": domain2,
+                "location_code": DATAFORSEO_LOCATION_CODE_UK,
+                "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
+                "limit": limit,
+                "include_serp_info": False,
+            }
+        ]
+        return self._post_paid(
+            "dataforseo_labs/google/domain_intersection/live",
+            payload,
+            site_key=site_key,
+            expected_rows=limit,
+            seed_keyword=f"intersect:{domain1}|{domain2}",
+        )
+
+    def keyword_ideas(
+        self,
+        keywords: list[str],
+        *,
+        site_key: str,
+        limit: int = 300,
+    ) -> dict:
+        """Keyword ideas seeded from up to 200 keywords (broader net than keyword_suggestions' single seed)."""
+        payload = [
+            {
+                "keywords": keywords,
+                "location_code": DATAFORSEO_LOCATION_CODE_UK,
+                "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
+                "limit": limit,
+            }
+        ]
+        return self._post_paid(
+            "dataforseo_labs/google/keyword_ideas/live",
+            payload,
+            site_key=site_key,
+            expected_rows=limit,
+            seed_keyword=f"ideas:{len(keywords)}kw",
+        )
+
 
 # ----- Persistence helpers -------------------------------------------------
 
@@ -585,6 +638,90 @@ def persist_ranked_keywords(
                     }
                 )
     return _bulk_insert("dataforseo_competitor_data", rows_out)
+
+
+def persist_domain_intersection(
+    *,
+    site_key: str,
+    domain1: str,
+    domain2: str,
+    response: dict,
+) -> int:
+    """Domain intersection items wrap one keyword_data block (keyword +
+    keyword_info) plus a SERP element per domain: first_domain_serp_element
+    (domain1's ranking for that keyword) and second_domain_serp_element
+    (domain2's). Unlike competitors_domain/ranked_keywords rows (one domain
+    per row), each intersecting keyword covers both domains at once, so this
+    emits two rows per item -- one per domain -- into the same
+    dataforseo_competitor_data shape persist_ranked_keywords uses.
+    """
+    rows_out: list[dict] = []
+    tasks = response.get("tasks", []) or []
+    for task in tasks:
+        for result in task.get("result", []) or []:
+            for item in result.get("items", []) or []:
+                kw_data = item.get("keyword_data", {}) or {}
+                ki = kw_data.get("keyword_info", {}) or {}
+                keyword = kw_data.get("keyword")
+                for domain, serp_key in (
+                    (domain1, "first_domain_serp_element"),
+                    (domain2, "second_domain_serp_element"),
+                ):
+                    serp = item.get(serp_key) or {}
+                    rows_out.append(
+                        {
+                            "site_key": site_key,
+                            "competitor_domain": domain,
+                            "ranked_keyword": keyword,
+                            "position": serp.get("rank_absolute"),
+                            "search_volume": ki.get("search_volume"),
+                            "cpc": ki.get("cpc"),
+                            "url": serp.get("url"),
+                            "raw_response": item,
+                        }
+                    )
+    return _bulk_insert("dataforseo_competitor_data", rows_out)
+
+
+def persist_keyword_ideas(
+    *,
+    site_key: str,
+    seed_keywords: list[str],
+    response: dict,
+) -> int:
+    """Flatten keyword_ideas response into dataforseo_keyword_data rows.
+
+    TRAP: keyword_ideas items are FLAT (keyword, keyword_info,
+    keyword_properties, search_intent_info all at the item's top level),
+    same as keyword_suggestions -- NOT wrapped in a keyword_data block like
+    related_keywords/ranked_keywords. Follows persist_keywords_for_site.
+    """
+    rows_out: list[dict] = []
+    tasks = response.get("tasks", []) or []
+    for task in tasks:
+        for result in task.get("result", []) or []:
+            for item in result.get("items", []) or []:
+                ki = item.get("keyword_info") or {}
+                kp = item.get("keyword_properties") or {}
+                si = item.get("search_intent_info") or {}
+                rows_out.append(
+                    {
+                        "site_key": site_key,
+                        "endpoint": "keyword_ideas/live",
+                        "seed_keyword": ",".join(seed_keywords[:5]),
+                        "location_code": DATAFORSEO_LOCATION_CODE_UK,
+                        "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
+                        "related_keyword": item.get("keyword"),
+                        "search_volume": ki.get("search_volume"),
+                        "cpc": ki.get("cpc"),
+                        "competition": ki.get("competition"),
+                        "competition_level": ki.get("competition_level"),
+                        "keyword_difficulty": kp.get("keyword_difficulty"),
+                        "search_intent": si.get("main_intent"),
+                        "raw_response": item,
+                    }
+                )
+    return _bulk_insert("dataforseo_keyword_data", rows_out)
 
 
 def _bulk_insert(table: str, rows: list[dict]) -> int:

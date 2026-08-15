@@ -23,6 +23,7 @@ import re
 import sys
 import time
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
@@ -30,7 +31,7 @@ from xml.etree import ElementTree as ET
 import httpx
 
 ROOT = Path(__file__).resolve().parent
-TODAY = "2026-05-29"
+TODAY = date.today().isoformat()
 
 SITEMAP_PATHS = [
     "/sitemap.xml",

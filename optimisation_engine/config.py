@@ -48,8 +48,11 @@ if not SUPABASE_URL or not SUPABASE_KEY:
 # Owner ruling 2026-07-11: the $0.85/day default exists for AUTOMATED runs;
 # interactive/manager-driven research may override via the env var. Sub-agents
 # still must never set it themselves.
-DATAFORSEO_CEILING_USD: float = 1.00
-DATAFORSEO_ABORT_AT: float = float(os.environ.get("DATAFORSEO_ABORT_AT", "0.85"))
+# Owner ruling 2026-08-15: approved raising the automated default to $5.00/day
+# to cover the dual-source SERP provider's DFS side (serp_provider.py). Env
+# override semantics unchanged.
+DATAFORSEO_CEILING_USD: float = 5.00
+DATAFORSEO_ABORT_AT: float = float(os.environ.get("DATAFORSEO_ABORT_AT", "5.00"))
 
 # Per-site allocations for the first run (priority order from the brief).
 # These are SOFT ceilings used by the planner; the abort-at value above is the

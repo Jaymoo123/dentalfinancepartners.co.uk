@@ -87,14 +87,17 @@ def _winnable(results: list[dict], our_domain: str) -> str:
     return "review"
 
 
-def _fetch_ddg(query: str, site_key: str) -> list[dict]:
-    from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
-    return fetch_organic_results(query, num=12, site_key=site_key)
+def _fetch_ddg(query: str, site_key: str) -> dict:
+    """Default path: dual-source provider (env SERP_PROVIDER_MODE, default dual)."""
+    from optimisation_engine.clients.serp_provider import fetch_serp
+    return fetch_serp(query, num=12, site_key=site_key)
 
 
-def _fetch_serper(query: str, site_key: str) -> list[dict]:
+def _fetch_serper(query: str, site_key: str) -> dict:
+    """--serper escape hatch: Serper only, bypasses the dual-source provider."""
     from optimisation_engine.clients.serper_client import fetch_top_organic_urls
-    return fetch_top_organic_urls(query, num=12, site_key=site_key)
+    organic = fetch_top_organic_urls(query, num=12, site_key=site_key)
+    return {"organic": organic, "divergence": None, "provider_used": "serper"}
 
 
 # ---------------------------------------------------------------------------
@@ -137,16 +140,21 @@ def verify(site_key: str, limit: int = CANDIDATE_LIMIT, use_serper: bool = False
 
         print(f"  [{i+1}/{len(candidates)}] checking: {q[:60]}")
         try:
-            results = fetcher(q, site_key)
+            fetched = fetcher(q, site_key)
         except Exception as exc:
             print(f"    error: {exc}")
-            results = []
+            fetched = {"organic": [], "divergence": None, "provider_used": None}
+
+        results = fetched["organic"]
+        provider_used = fetched.get("provider_used") or ("serper" if use_serper else "ddg")
+        print(f"    provider={provider_used}" +
+              (f" divergence={fetched['divergence']}" if fetched.get("divergence") is not None else ""))
 
         verdict = _winnable(results, our_domain)
         cache[q] = {
             "query": q,
             "checked_date": TODAY,
-            "source": "serper" if use_serper else "ddg",
+            "source": provider_used,
             "verdict": verdict,
             "results": results,
             "impressions": entry.get("impressions", 0),
