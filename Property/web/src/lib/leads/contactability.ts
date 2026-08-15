@@ -149,6 +149,14 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
       { status: "contactable" },
     );
+    // A failed WRITE is not "already promoted": before 2026-08-15 both returned
+    // alreadyPromoted:true, so a lost promotion looked like a duplicate and
+    // never retried. On !ok the lead keeps status new/nurturing, so the next
+    // evaluation retries the flip naturally.
+    if (!flip.ok) {
+      console.error(`[contactability] promote flip failed for ${leadId} (${flip.status})`);
+      return { promoted: false, alreadyPromoted: false, reason: "db-error" };
+    }
     if (flip.data.length === 0) {
       return { promoted: false, alreadyPromoted: true, reason: verdict.reason };
     }
@@ -156,9 +164,11 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
     // Fire the handoff first; the audit event is recorded only once we know the outcome.
     const handoff = await sendContactableHandoff(leadId, verdict.reason);
 
-    if (handoff.sent === true || handoff.skipped) {
+    if (handoff.sent === true || (handoff.skipped && handoff.skipped !== "db-error")) {
       // Sent successfully, or a known/expected skip (test, no-resend, no-lead):
-      // record the standard handed-off event.
+      // record the standard handed-off event. A "db-error" skip is NOT expected
+      // (the leads read failed, the email was never built) and falls through to
+      // the failure branch so the handoff is retried and the operator alerted.
       await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
       // it happens when the operator clicks "I have forwarded this to the partner firm" in the

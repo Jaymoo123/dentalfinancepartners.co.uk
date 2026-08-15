@@ -15,7 +15,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";
 import { classifyLead, AI_MODEL_ID } from "@/lib/ai";
 import { searchCompany } from "@/lib/companies-house";
-import { adminConfigured, adminInsert } from "@/lib/supabase/admin";
+import { adminConfigured, adminInsert, adminSelect } from "@/lib/supabase/admin";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -38,11 +38,21 @@ function secretsMatch(provided: string, expected: string): boolean {
 }
 
 export async function GET() {
+  // lastEnrichmentAt is the outcome truth. `aiReady` is config presence only
+  // and was a proven liar: VERCEL is always set in production, so it reported
+  // ready while classifyLead failed on every call and lead_enrichment sat at
+  // 0 rows forever. A probe must report the last real output, not the config.
+  const last = await adminSelect<{ created_at: string }>("lead_enrichment", {
+    select: "created_at",
+    order: "created_at.desc",
+    limit: "1",
+  });
   return NextResponse.json({
     ok: true,
     secretSet: Boolean(process.env.LEADS_ENRICH_SECRET || process.env.LEADS_NOTIFY_SECRET || process.env.LEADS_SYNC_SECRET),
     aiReady: Boolean(process.env.AI_GATEWAY_API_KEY || process.env.VERCEL),
     chReady: Boolean(process.env.COMPANIES_HOUSE_API_KEY),
+    lastEnrichmentAt: last.ok && last.data.length ? last.data[0].created_at : null,
   });
 }
 

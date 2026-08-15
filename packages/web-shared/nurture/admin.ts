@@ -10,14 +10,25 @@
  * (subscribers, nurture_state, nurture_sends) are reachable ONLY via this.
  */
 
-const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
-const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+// .trim() guards the known env-whitespace trap: a pasted value with a trailing
+// newline turns every fetch into "Invalid value" at request time.
+const SUPABASE_URL = (process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "").trim();
+const SERVICE_KEY = (process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
 
 export function adminConfigured(): boolean {
   return Boolean(SUPABASE_URL && SERVICE_KEY);
 }
 
-export type AdminResult<T> = { ok: boolean; status: number; data: T[] };
+export type AdminResult<T> = { ok: boolean; status: number; data: T[]; error?: string };
+
+/**
+ * Every failed call logs here, once, at the single choke point all ~30 callers
+ * route through. Before 2026-08-15 a non-2xx returned `{ok:false, data:[]}`
+ * silently; callers that only read `.data` rendered a DB outage as "no rows",
+ * which is how crons reported ok:true while their queries failed. Do not make
+ * this quiet again: this line is what Sentry's captureConsole picks up.
+ */
+let loggedUnconfigured = false;
 
 async function call<T>(
   table: string,
@@ -28,7 +39,13 @@ async function call<T>(
     prefer?: string;
   },
 ): Promise<AdminResult<T>> {
-  if (!adminConfigured()) return { ok: false, status: 0, data: [] };
+  if (!adminConfigured()) {
+    if (!loggedUnconfigured) {
+      loggedUnconfigured = true;
+      console.error("[admin] SUPABASE_URL/SUPABASE_SERVICE_ROLE_KEY not configured; every admin call returns empty");
+    }
+    return { ok: false, status: 0, data: [], error: "not_configured" };
+  }
   const qs = init.params ? "?" + new URLSearchParams(init.params).toString() : "";
   const headers: Record<string, string> = {
     apikey: SERVICE_KEY,
@@ -43,6 +60,7 @@ async function call<T>(
     cache: "no-store",
   });
   let data: T[] = [];
+  let error: string | undefined;
   if (res.ok) {
     const text = await res.text();
     if (text) {
@@ -53,8 +71,11 @@ async function call<T>(
         data = [];
       }
     }
+  } else {
+    error = (await res.text().catch(() => "")).slice(0, 300);
+    console.error(`[admin] ${init.method} ${table} -> ${res.status} ${error}`);
   }
-  return { ok: res.ok, status: res.status, data };
+  return { ok: res.ok, status: res.status, data, error };
 }
 
 export function adminSelect<T>(

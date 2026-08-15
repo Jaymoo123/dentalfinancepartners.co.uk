@@ -178,8 +178,11 @@ async function callIngest(
     },
     body: JSON.stringify({ p_session: session, p_events: events }),
   });
-  if (!res.ok && process.env.NODE_ENV === "development") {
-    console.error("[track] ingest failed", res.status, await res.text().catch(() => ""));
+  // Logs in EVERY environment. Until 2026-08-15 this was development-only, so
+  // production ingest failures were 100% invisible behind the 204 (the exact
+  // failure that silently killed a neighbour app's session tracking for a day).
+  if (!res.ok) {
+    console.error("[track] ingest failed", res.status, (await res.text().catch(() => "")).slice(0, 300));
   }
 }
 
@@ -205,9 +208,7 @@ export function createTrackHandler(opts: { siteKey: string }) {
     const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
 
     if (!SUPABASE_URL || !SERVICE_KEY) {
-      if (process.env.NODE_ENV === "development") {
-        console.error("[track] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY not configured");
-      }
+      console.error("[track] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY not configured");
       return NO_CONTENT;
     }
 
@@ -275,7 +276,7 @@ export function createTrackHandler(opts: { siteKey: string }) {
         }),
       );
     } catch (err) {
-      if (process.env.NODE_ENV === "development") console.error("[track] error", err);
+      console.error("[track] error", err);
     }
 
     return NO_CONTENT;

@@ -168,16 +168,20 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, skipped: "test-lead" });
   }
 
-  // Scoring + buyer offer preparation. buildOfferBlock awaits the score for
-  // potentially sellable leads; everything else keeps the old fire-and-forget
-  // behaviour so the value never blocks or fails the notification.
-  // ponytail: upgrade the fire-and-forget branch to waitUntil if Vercel kills it early.
+  // Scoring + buyer offer preparation. Both branches now AWAIT the score:
+  // the old fire-and-forget (`void scoreLeadValue(r).catch(() => {})`) is the
+  // proven cause of 193/193 leads being graded manually - the route returned
+  // before the promise settled, Vercel froze the invocation, and the catch
+  // swallowed the evidence. Scoring adds ~1-2s to a webhook nobody is waiting
+  // on; a loud failure here is Sentry-visible and the email still sends.
   const source = (r.source ?? "").toLowerCase();
   let offerBlock: OfferBlock | null = null;
   if (source && source !== "property" && source !== "test") {
     offerBlock = await buildOfferBlock(r);
   } else {
-    void scoreLeadValue(r).catch(() => {});
+    await scoreLeadValue(r).catch((err) =>
+      console.error("[notify] scoreLeadValue failed", err),
+    );
   }
 
   // Recipient is source-aware (this one route serves every site): Property's own

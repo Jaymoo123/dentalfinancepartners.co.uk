@@ -96,7 +96,7 @@ function responseStory(d: LeadDossier, fallback: string): string {
 export interface HandoffResult {
   sent: boolean;
   to: string;
-  skipped?: "test" | "no-resend" | "no-lead";
+  skipped?: "test" | "no-resend" | "no-lead" | "db-error";
   messageId?: string;
   reason?: string;
 }
@@ -229,6 +229,14 @@ export async function sendContactableHandoff(
     select: "id,full_name,email,phone,role,message,source,source_url,created_at,visitor_id,extras",
     limit: "1",
   });
+  // A failed read is NOT "no lead". Before 2026-08-15 both cases returned
+  // skipped:"no-lead", which contactability treated as expected and recorded
+  // the lead as handed_off - qualified-lead email never sent, system said it
+  // was. A db-error skip is loud and distinct so the caller can not conflate.
+  if (!leadRes.ok) {
+    console.error(`[handoff] leads read failed for ${leadId} (${leadRes.status})`);
+    return { sent: false, to: "", skipped: "db-error", reason: `leads read failed (${leadRes.status})` };
+  }
   const lead = leadRes.data[0];
   if (!lead) return { sent: false, to: "", skipped: "no-lead" };
 
