@@ -40,21 +40,29 @@ wheels/
 
 # Secrets (API keys, service accounts)
 secrets/
-*.json
-!package.json
-!package-lock.json
-!tsconfig.json
-!niche.config.json
-!components.json
-!sites/*.json
-!vercel.json
-# Committed data snapshots the research-index pages import at build time
-# (all sites; small non-secret JSONs, required for CI typecheck + Vercel builds)
-!*/web/src/data/*.json
-# Citation battery questions + results (non-secret docs record)
-!docs/_engines/citation_battery/**/*.json
-# Canonical lead tier config (single source of truth, non-secret, drift-tested)
-!config/tiers.json
+# Root-level scratch JSON only (2026-08-15: replaced a blanket `*.json` whose
+# 10-entry negation list silently swallowed every NEW legitimate JSON until
+# someone noticed and added an eleventh). Non-root JSON is tracked by default;
+# ignore specific scratch locations below instead.
+/*.json
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+# Research raw dumps (large, regenerable from source)
+/expansion_research/**/*.json
+# Brief-building bulk data (discovery packs + competitor dumps, regenerable);
+# the tiny wave _signals (sign-off flags, QA verdicts) stay tracked
+/briefs/**/*.json
+!/briefs/**/_signals/*.json
+/briefs/*/discovery_*/
+# Niche screener raw output (25 MB, regenerable)
+/optimisation_engine/niche_screener/**/*.json
+# Dead admin archive
+/Admin/**/*.json
+# Frozen 2026-06 audit interim dumps + archived script scratch (regenerable)
+/docs/property/opportunity_audit_2026-06-04/_*.json
+/scripts/_archive/*.json
+/docs/backups/
 
 # Logs
 *.log

@@ -1,0 +1,28 @@
+{
+  "batch_id": "M3-C-B2",
+  "phase": "RUN",
+  "lane": "C",
+  "bucket": "Various property-tax topics (C lane Stage 2b corrections applied at briefs C4 + C5 + C11)",
+  "agent_id": "manager-synth-post-stall",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave3-c",
+  "branch": "property-megawave3-c",
+  "completed_at": "2026-05-28T10:07:33Z",
+  "commit_shas": [
+    "8140a019a9e9bc9b108982e722860cf9e58cd41f",
+    "848f6ceeeb5e893140e5a3af92f79eb0c5ccd633",
+    "5235ba0a1da65c60eb054291b2143540a8d0130d",
+    "0b95dafb6d6ec2c914a6da2387d5b55a47a246b0",
+    "d0aad02f8211d8b5134af58f028b11fa62bfb75d",
+    "d14935da5dab66fd17eabd3478a9d2d8345e6eb2"
+  ],
+  "slugs_done": [
+    "are-rent-arrears-skyrocketing-and-squeezing-landlords",
+    "are-you-a-property-investor-or-developer",
+    "a-short-guide-planning-permission-in-uk",
+    "bed-and-breakfasting",
+    "booking-com-a-complete-guide-for-the-hosts",
+    "brief-introduction-to-commercial-property-service-charge-accounts"
+  ],
+  "output_dir": "Property/web/content/blog/",
+  "notes": "MANAGER-SYNTHESIZED post sub-agent stall. Sub-agent completed all 6 B2 picks on worktree branch property-megawave3-c but went idle before writing canonical marker. 5 of 6 page files were only on worktree branch at first merge attempt (manager merged at +60 min when only 1 B2 commit was visible); the other 5 were caught up via post-stall ff-merge. All 6 page files now verified present on main. Marker synthesized from worktree commit log + queue_C B2 slug order. F-104 + F-105 manager-Stage-2b brief corrections were respected by the sub-agent (verbatim s.80 / s.11C anchors used per the \u00a730.4 refinement)."
+}

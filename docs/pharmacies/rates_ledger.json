@@ -1,0 +1,236 @@
+[
+  {
+    "key": "vat_registration_threshold",
+    "value": "90000",
+    "unit": "£/year",
+    "note": "VAT registration threshold; largely irrelevant to pharmacies (NHS turnover forces registration; voluntary registration usually advantageous due to zero-rated outputs)",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/vat-registration",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "sdlt_nonresidential_top_rate",
+    "value": "5",
+    "unit": "%",
+    "note": "SDLT top rate on non-residential and mixed-use property; applies to asset (property) purchase of a pharmacy",
+    "applies_from": "2016-03-17",
+    "source_url": "https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-use-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "stamp_duty_shares_rate",
+    "value": "0.5",
+    "unit": "%",
+    "note": "stamp duty on the purchase of shares; applies to a share (company) purchase of a pharmacy",
+    "applies_from": "1986-10-27",
+    "source_url": "https://www.gov.uk/tax-buy-shares",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "badr_rate",
+    "value": "18",
+    "unit": "%",
+    "note": "Business Asset Disposal Relief rate 2026/27 (was 14% in 2025/26, 10% before); rose to 18% from 6 Apr 2026",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/business-asset-disposal-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "badr_lifetime_limit",
+    "value": "1000000",
+    "unit": "£",
+    "note": "BADR lifetime limit of qualifying gains per person",
+    "applies_from": "2020-03-11",
+    "source_url": "https://www.gov.uk/business-asset-disposal-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "cgt_rate_basic_within_band",
+    "value": "18",
+    "unit": "%",
+    "note": "standard CGT on gain within remaining basic-rate income tax band; pharmacy is a non-residential asset",
+    "applies_from": "2024-10-30",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "cgt_rate_above_basic_band",
+    "value": "24",
+    "unit": "%",
+    "note": "standard CGT on gain above the basic-rate band; and all gains for higher/additional-rate taxpayers",
+    "applies_from": "2024-10-30",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "cgt_annual_exempt_amount",
+    "value": "3000",
+    "unit": "£",
+    "note": "frozen; per individual per tax year",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/capital-gains-tax/allowances",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "basic_rate_band_ceiling",
+    "value": "37700",
+    "unit": "£",
+    "note": "taxable income ceiling of the basic-rate band 2026/27; boundary for the 18%/24% CGT split",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "aia_annual_limit",
+    "value": "1000000",
+    "unit": "£/year",
+    "note": "Annual Investment Allowance; 100% relief on qualifying plant and machinery (pharmacy fit-outs) up to this limit",
+    "applies_from": "2019-01-01",
+    "source_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "wda_main_rate",
+    "value": "14",
+    "unit": "%",
+    "note": "FA 2026 main-rate writing-down allowance (reduced from 18%)",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "fya_main_rate",
+    "value": "40",
+    "unit": "%",
+    "note": "FA 2026 new 40% first-year allowance for main-rate qualifying expenditure",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "wda_special_rate",
+    "value": "6",
+    "unit": "%",
+    "note": "special-rate pool writing-down allowance; unchanged by FA 2026",
+    "applies_from": "2019-04-01",
+    "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "sba_rate",
+    "value": "3",
+    "unit": "%",
+    "note": "Structures and Buildings Allowance, straight line, on qualifying works to the building itself",
+    "applies_from": "2020-04-01",
+    "source_url": "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "mtd_itsa_threshold",
+    "value": "50000",
+    "unit": "£/year",
+    "note": "MTD for Income Tax mandatory from April 2026 at £50,000+ qualifying income (then £30,000 from April 2027); hits sole-trader locums",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "employer_nic_rate",
+    "value": "15",
+    "unit": "%",
+    "note": "Class 1 secondary NIC on pharmacy staff pay above the secondary threshold (was 13.8%)",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "employer_nic_secondary_threshold",
+    "value": "5000",
+    "unit": "£/year",
+    "note": "secondary threshold from 6 Apr 2025 (was £9,100)",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "employment_allowance",
+    "value": "10500",
+    "unit": "£/year",
+    "note": "offsets employer secondary NIC for eligible employers; £5,000 cap and trade exclusions removed from 6 Apr 2025",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/claim-employment-allowance",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "corporation_tax_main_rate",
+    "value": "25",
+    "unit": "%",
+    "note": "profits over £250,000",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "corporation_tax_small_profits_rate",
+    "value": "19",
+    "unit": "%",
+    "note": "profits up to £50,000; Marginal Relief between £50,000 and £250,000; both limits divided by number of associated companies",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "corporation_tax_marginal_lower_limit",
+    "value": "50000",
+    "unit": "£",
+    "note": "lower profit limit of the marginal relief band; divided by number of associated companies",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "corporation_tax_marginal_upper_limit",
+    "value": "250000",
+    "unit": "£",
+    "note": "upper profit limit of the marginal relief band; divided by number of associated companies",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_rate_basic",
+    "value": "10.75",
+    "unit": "%",
+    "note": "FA 2026 s.4 basic-rate dividend tax 2026/27; profit extraction for pharmacy owners",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_rate_higher",
+    "value": "35.75",
+    "unit": "%",
+    "note": "FA 2026 s.4 higher-rate dividend tax 2026/27",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_rate_additional",
+    "value": "39.35",
+    "unit": "%",
+    "note": "FA 2026 s.4 additional-rate dividend tax 2026/27",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_allowance",
+    "value": "500",
+    "unit": "£/year",
+    "note": "tax-free dividend allowance",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  }
+]

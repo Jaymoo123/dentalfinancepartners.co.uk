@@ -1,0 +1,24 @@
+{
+  "batch_id": "M1-A-B1",
+  "stage": "RUN",
+  "agent_id": "MW1-RUN-A-B1",
+  "completed_at": "2026-05-26T20:30:00Z",
+  "branch": "property-megawave1-a",
+  "commit_shas": [
+    "e704b9d",
+    "a8d58a1",
+    "d8a9c5a",
+    "a9defb9",
+    "fa57608",
+    "0a9b681"
+  ],
+  "slugs_done": [
+    "a-complete-guide-to-stamp-duty-relief-for-probate-properties",
+    "a-complete-guide-to-stamp-duty-refund",
+    "a-complete-guide-to-5-sdlt-surcharge-refund-claims",
+    "a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits",
+    "abolition-of-multiple-dwellings-relief-mdr-raises-concerns",
+    "abolishment-of-multiple-dwelling-relief"
+  ],
+  "notes": "Marker synthesised post-hoc from commit log. Original sub-agent used commit-as-marker convention (commit eeec78d). F-11..F-14 raised."
+}

@@ -1,0 +1,28 @@
+{
+  "batch_id": "M3-A-B1",
+  "phase": "RUN",
+  "lane": "A",
+  "bucket": "MTD for ITSA + Penalties & enquiries + Penalties, enquiries & HMRC nudge letters + Let Property Campaign & HMRC voluntary disclosure + Self-assessment mechanics",
+  "agent_id": "MW3-RUN-a",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave3-a",
+  "branch": "property-megawave3-a",
+  "completed_at": "2026-05-28T08:31:36Z",
+  "commit_shas": [
+    "2b2d82a3",
+    "56782582",
+    "50d2a8a8",
+    "2b98a057",
+    "f4185a96",
+    "5df76ee3"
+  ],
+  "slugs_done": [
+    "paye-penalties-for-late-submission-and-filing",
+    "a-complete-guide-to-hmrcs-digital-disclosure-service",
+    "benefits-of-participating-in-the-let-property-campaign",
+    "comparing-online-and-paper-self-assessment-tax-returns",
+    "corporation-tax-deadlines-and-penalties",
+    "government-to-implement-mtd-for-it-with-lower-threshold"
+  ],
+  "output_dir": "Property/web/content/blog/",
+  "notes": "All 6 picks written as full published blog pages on the worktree branch property-megawave3-a. Per-page checks at write time: 0 em-dashes (Grep-verified each file), 0 Tailwind/className strings, metaTitle <= 62 chars, metaDescription <= 158 chars, 12-13 FAQs per page in YAML frontmatter array, HTML body (semantic only), anonymised personas per brief, statutory citations verbatim from brief authority lists. No build step run in worktree (manager runs npm build after merge to main). No tracker / monitored_pages updates from worktree (manager handles main-side flips per pickup doc). No site-wide flags raised this batch. Bug #7 fix observed: no pauses between picks after initial acknowledgment. Bug #6 fix observed: would have used ## [Q-N] bracket format had any Q&A been needed (none raised)."
+}

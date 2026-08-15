@@ -1,0 +1,506 @@
+{
+  "categories": {
+    "landlord_operations_lettings": {
+      "topics": [
+        {
+          "topic_title": "Buying a property with tenants in situ: UK landlord guide",
+          "search_intent": "Investor evaluating purchase of an already-tenanted property (sitting tenant / tenant-in-situ); wants to know rights inherited, SDLT/CGT treatment, AST continuation, due diligence",
+          "n_competitors": 94,
+          "verdict": "net-new",
+          "demand": [
+            {"query": "tax break for landlord who sells to tenants", "imp": 1}
+          ],
+          "closest_our_page": "landlords-considering-selling-portfolio-rra-2025-tax-implications",
+          "suggested_angle": "Buyer-side operational + tax guide: inheriting an existing AST, deposit re-protection on transfer, rent review limits, SDLT/CGT base cost, due-diligence checklist. No live page covers the buy-tenanted intent.",
+          "priority": 1
+        },
+        {
+          "topic_title": "OFF-MISSION: US/foreign property management company hiring guides",
+          "search_intent": "US-centric 'how to choose a property management company' listicles (NYC, Salt Lake City, DC)",
+          "n_competitors": 68,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: US property-management-firm selection content, off-brand for a UK landlord-tax brand.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Rental property management software / apps roundups",
+          "search_intent": "Landlords comparing US SaaS property-management software and apps",
+          "n_competitors": 57,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: software-review affiliate content, not aligned with UK tax/operations advisory brand.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Evicting a tenant in England and Wales: the possession process",
+          "search_intent": "Landlord needing the practical eviction route (grounds, notice, court order, bailiffs) post-Renters Rights Act",
+          "n_competitors": 53,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-possession-grounds-reform-section-8-landlords",
+          "suggested_angle": "Existing pages cover S21 abolition + S8 grounds reform at a policy level. Expand into an end-to-end operational 'how to evict' walkthrough (notice -> court -> bailiff timelines, costs, what is deductible). Many drops here are US eviction-law variants.",
+          "priority": 2
+        },
+        {
+          "topic_title": "Landlord insurance and tenant damage: what is covered",
+          "search_intent": "Landlord deciding whether to require tenant contents insurance / whether landlord policy covers tenant damage, plus rent guarantee insurance",
+          "n_competitors": 41,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "landlord-insurance-guide-types-costs-tax-deductible",
+          "suggested_angle": "Live insurance page is tax-deductibility focused. Expand to operational cover question: does landlord insurance cover tenant damage, rent guarantee insurance, requiring tenant contents insurance. US 'renters insurance' framing drops.",
+          "priority": 2
+        },
+        {
+          "topic_title": "Tenant not paying rent: what UK landlords can do",
+          "search_intent": "Landlord facing rent arrears wanting the practical recovery path (chasing, S8 ground 8, can a landlord refuse rent)",
+          "n_competitors": 41,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "are-rent-arrears-skyrocketing-and-squeezing-landlords",
+          "suggested_angle": "Live page is a market-commentary on arrears trends. Expand to an action guide: stages of dealing with non-payment, ground 8, refusing partial rent, bad-debt tax treatment. Decent unique UK intent.",
+          "priority": 2
+        },
+        {
+          "topic_title": "Tenant screening and referencing for UK landlords",
+          "search_intent": "Landlord wanting to vet prospective tenants (referencing, credit/affordability checks, what to ask, inspection checklist)",
+          "n_competitors": 35,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "No live page on screening/referencing. UK-framed guide: referencing process, affordability ratios, right-to-rent, guarantors. Strong competitor convergence and genuine gap.",
+          "priority": 1
+        },
+        {
+          "topic_title": "OFF-MISSION / DEAD: Coronavirus guidance for landlords and tenants",
+          "search_intent": "2020-era covid commercial rent-arrears guidance",
+          "n_competitors": 34,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: pandemic-era, time-expired, mostly commercial. No evergreen value.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Rental yield: how to calculate and improve it",
+          "search_intent": "Investor calculating gross/net rental yield and ways to increase it",
+          "n_competitors": 33,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "rental-yield-calculator-guide-uk-landlords",
+          "suggested_angle": "Well covered by rental-yield-calculator-guide, rental-yield-vs-roi, what-is-good-gross-yield, property-investment-benchmarks. Foreign-country yield slugs drop.",
+          "priority": 0
+        },
+        {
+          "topic_title": "HMO licensing and compliance for landlords (do I need a licence for 3 tenants)",
+          "search_intent": "Landlord checking HMO licence thresholds, Article 4, mandatory vs additional licensing",
+          "n_competitors": 32,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics",
+          "suggested_angle": "Covered across hmo-selective-licensing-compliance, hmo-licensing-fees-tax-deductible, hmo-landlord-accounting, hmo-tax-guide. '3 tenants' threshold angle could be folded in but no net-new page needed.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Reclaiming VAT on landlord expenses",
+          "search_intent": "Mostly generic UK business VAT-recovery-on-expenses; partial landlord overlap",
+          "n_competitors": 30,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "landlord-vat-recovery-professional-fees-capital-costs-commercial-property",
+          "suggested_angle": "VAT recovery is deeply covered (30+ VAT pages incl. landlord-vat-recovery-professional-fees, vat-on-rental-income, partial-exemption). Generic/foreign VAT slugs drop.",
+          "priority": 0
+        },
+        {
+          "topic_title": "The Renters Rights Bill: what landlords need to know",
+          "search_intent": "Landlord wanting plain-English summary of the Renters Rights Act and its operational impact",
+          "n_competitors": 30,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-2026-tax-implications-landlords",
+          "suggested_angle": "Comprehensively covered by the renters-rights-act-* cluster (6 pages: tax implications, periodic switch, S8 grounds, redress scheme, S13 rent increase, S21 abolition).",
+          "priority": 0
+        },
+        {
+          "topic_title": "Why are landlords selling up? (BTL exit trend)",
+          "search_intent": "Landlord reading market-sentiment commentary on landlords exiting BTL",
+          "n_competitors": 23,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "when-to-sell-rental-property-key-indicators-landlords",
+          "suggested_angle": "Intent met by when-to-sell-rental-property-key-indicators and landlords-considering-selling-portfolio-rra-2025. News-cycle topic, low evergreen value, no net-new.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Mould, damp and pests: landlord vs tenant responsibility",
+          "search_intent": "Landlord/tenant determining who is responsible for mould, damp, pests, nuisance in a rental",
+          "n_competitors": 20,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": "decent-homes-standard-prs-landlord-compliance-checklist",
+          "suggested_angle": "No live page on the mould/damp/pest responsibility split (Awaab's Law / Decent Homes hook). UK responsibility-allocation guide plus repair-cost tax treatment. Genuine gap with solid demand.",
+          "priority": 1
+        },
+        {
+          "topic_title": "Resolving landlord and tenant disputes",
+          "search_intent": "Landlord seeking to avoid/handle disputes (general dispute-resolution best practice)",
+          "n_competitors": 20,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-property-redress-scheme-mandatory-enrolment-landlords",
+          "suggested_angle": "Generic 'how to resolve disputes' partly served by the redress-scheme page. Low specificity, fold dispute-avoidance into redress/deposit content rather than a standalone net-new page.",
+          "priority": 3
+        },
+        {
+          "topic_title": "Landlord and Tenant Act 1985 s11 / LTA 1954 explained",
+          "search_intent": "Reader looking up specific Landlord & Tenant Act sections (repair obligations s11; commercial security of tenure 1954)",
+          "n_competitors": 20,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": "what-repairs-can-landlords-deduct-from-rental-income",
+          "suggested_angle": "No page explaining statutory repairing obligations (LTA 1985 s11) for residential landlords. Narrow but durable reference-intent gap; pair the legal duty with repair-cost deductibility. Hold as lower-priority net-new.",
+          "priority": 2
+        },
+        {
+          "topic_title": "Building a good landlord-tenant relationship",
+          "search_intent": "Soft-skills 'communication tips' best-practice content",
+          "n_competitors": 18,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: generic relationship/communication tips, thin and off-brand for a tax/operations advisory.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Landlord liability for tenant injury / tenant pets",
+          "search_intent": "Mixed: landlord liability for tenant injury (largely US tort) plus UK 'tenants with pets' angle",
+          "n_competitors": 15,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "pet-rights-tenancy-landlord-refusal-reasonable-grounds",
+          "suggested_angle": "Pet angle covered by pet-rights-tenancy page. US 'landlord liable for tenant injury' tort slugs drop. No net-new.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Tenancy / lease agreement essentials for landlords",
+          "search_intent": "Landlord wanting an AST/tenancy agreement, required clauses, lease vs licence",
+          "n_competitors": 15,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "tenancy-agreement-template-rra-2025-compliant-clauses",
+          "suggested_angle": "Covered by tenancy-agreement-template-rra-2025-compliant-clauses. US 'rental lease agreement' / rent-to-own variants drop.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Verifying tenant income / proof of income for screening",
+          "search_intent": "Landlord verifying applicant income (proof, self-employed, benefits, multiple sources)",
+          "n_competitors": 14,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Sub-topic of tenant screening. Fold income-verification into the proposed net-new tenant screening guide rather than a separate page.",
+          "priority": 3
+        },
+        {
+          "topic_title": "Landlord vs tenant repair responsibility (who pays for repairs)",
+          "search_intent": "Landlord/tenant determining who pays for repairs and when a landlord can charge the tenant",
+          "n_competitors": 13,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "what-repairs-can-landlords-deduct-from-rental-income",
+          "suggested_angle": "Repair-cost deductibility is covered; the responsibility-allocation question is not. Fold into the LTA 1985 s11 / mould-responsibility net-new pieces rather than a third page.",
+          "priority": 3
+        },
+        {
+          "topic_title": "Tenant breaking a lease early / tenant won't leave after lease ends",
+          "search_intent": "Mixed: tenant break-clause rights and landlord 'tenant won't leave' (overstayer) handling; many US/Canada variants",
+          "n_competitors": 13,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-section-21-abolition-landlord-operational-mechanics",
+          "suggested_angle": "UK overstayer/possession angle overlaps the eviction-process expansion. Break-clause mechanics minor. Roll into eviction-process and tenancy-agreement pages; heavy US/Canada drop.",
+          "priority": 3
+        },
+        {
+          "topic_title": "How to find and keep good tenants",
+          "search_intent": "Landlord wanting to attract/select the best tenants for a rental",
+          "n_competitors": 13,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Adjacent to tenant screening. Fold 'finding good tenants' into the proposed tenant-screening net-new guide; not a standalone page.",
+          "priority": 3
+        },
+        {
+          "topic_title": "Landlords fined over unlicensed HMOs (enforcement news)",
+          "search_intent": "News-style cautionary coverage of HMO fines/prosecutions",
+          "n_competitors": 12,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics",
+          "suggested_angle": "Enforcement risk is the consequence side of the covered HMO-licensing page. News-cycle, no evergreen net-new.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Tenant abandoned the property: what landlords should do",
+          "search_intent": "Landlord whose tenant has seemingly left without notice (abandonment procedure, implied surrender, belongings)",
+          "n_competitors": 12,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "No live page on abandonment. UK procedure: reasonable-belief test, abandonment vs unlawful eviction risk, dealing with left belongings, ending the tenancy. Niche but clean gap, lower priority.",
+          "priority": 2
+        },
+        {
+          "topic_title": "OFF-MISSION: Tenant improvement allowance (US commercial leasing)",
+          "search_intent": "US/commercial TI-allowance accounting and office-lease negotiation",
+          "n_competitors": 10,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: US commercial office-lease TI-allowance accounting, off-mission for UK residential landlords.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Average UK rents and tenant demand (market data)",
+          "search_intent": "Reader looking at UK rental market stats (average rent, regional yields, tenant demand)",
+          "n_competitors": 10,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "property-investment-benchmarks-uk-2026-good-yield",
+          "suggested_angle": "Market-data/news topic adjacent to yield pages. Ephemeral stats, no durable net-new.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Tenant eviction solicitors / Scotland & Wales eviction news",
+          "search_intent": "Solicitor-service-promo and devolved-nation eviction news (Scotland/Wales social housing)",
+          "n_competitors": 10,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-possession-grounds-reform-section-8-landlords",
+          "suggested_angle": "Mostly solicitor service pages (off-brand) and devolved-nation news. England eviction intent already folded into the eviction-process expansion; no separate page.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: US state landlord-tenant law (NJ, RI, CT, PA, ME)",
+          "search_intent": "US state-by-state landlord-tenant statutes",
+          "n_competitors": 9,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: US state law, irrelevant to UK brand.",
+          "priority": 0
+        },
+        {
+          "topic_title": "HMO / AST tenancy agreement templates (furnished flat, company let)",
+          "search_intent": "Landlord wanting specific tenancy agreement template variants (HMO AST, furnished, company let, contractual)",
+          "n_competitors": 8,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "tenancy-agreement-template-rra-2025-compliant-clauses",
+          "suggested_angle": "Template intent met by tenancy-agreement-template-rra-2025-compliant-clauses. Variant proliferation is one core; no net-new.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Scottish rent controls / rent freeze (policy)",
+          "search_intent": "Scottish landlord tracking rent-control and rent-freeze policy",
+          "n_competitors": 8,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-rent-increase-section-13-tribunal-route",
+          "suggested_angle": "Devolved policy news; rent-increase mechanics covered for E&W by the S13 page. Scotland-specific, news-cycle, no net-new.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Notice to quit (tenant to landlord / landlord to tenant)",
+          "search_intent": "Either party serving notice to end a tenancy; notice periods and validity",
+          "n_competitors": 8,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-section-21-abolition-landlord-operational-mechanics",
+          "suggested_angle": "Notice mechanics overlap S21-abolition and periodic-tenancy pages. Fold into eviction-process expansion; no separate page.",
+          "priority": 3
+        },
+        {
+          "topic_title": "How much can a landlord raise the rent (UK rent-increase rules)",
+          "search_intent": "Landlord/tenant on legal limits and notice for a rent increase in England/Wales",
+          "n_competitors": 7,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-rent-increase-section-13-tribunal-route",
+          "suggested_angle": "S13 tribunal-route page covers the mechanism. A plainer 'how much / how often can a landlord raise rent' operational framing could expand it; modest priority, no fresh page.",
+          "priority": 3
+        },
+        {
+          "topic_title": "OFF-MISSION: Furnished short-term apartment rentals (Canada)",
+          "search_intent": "Canadian furnished short-let listings (Montreal, Calgary, film professionals)",
+          "n_competitors": 6,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: Canadian short-let listing content.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Landlord-tenant lawyer/attorney service content",
+          "search_intent": "US/legal-service promo on hiring a landlord-tenant lawyer",
+          "n_competitors": 5,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: lawyer-hiring service content, off-brand.",
+          "priority": 0
+        },
+        {
+          "topic_title": "Understanding the Section 21 notice",
+          "search_intent": "Landlord/tenant understanding S21 no-fault notice and its abolition",
+          "n_competitors": 4,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "section-21-abolition-uk-landlord-possession-guide-2026",
+          "suggested_angle": "Fully covered by section-21-abolition-uk-landlord-possession-guide-2026 and renters-rights-act-section-21-abolition-landlord-operational-mechanics.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Hiring an eviction lawyer (US attorney promo)",
+          "search_intent": "US attorney-hiring promo for evictions",
+          "n_competitors": 4,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: US eviction-attorney service content.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Evicting a tenant without a lease (US state law)",
+          "search_intent": "US state-by-state 'evict without a lease' variants",
+          "n_competitors": 3,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: US state-law eviction variants.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Scottish live-in landlord / tenancy rights",
+          "search_intent": "Scotland-specific renter rights and live-in landlord rules",
+          "n_competitors": 2,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: very low competitor signal, devolved-nation tenant-rights content, off the E&W landlord-operations mission.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Evicting using specific possession grounds (ground 1-15 series)",
+          "search_intent": "Per-ground eviction how-to series (programmatic single-competitor set)",
+          "n_competitors": 2,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-possession-grounds-reform-section-8-landlords",
+          "suggested_angle": "Single-competitor programmatic series; the post-RRA grounds are covered at the S8 page. Not worth a per-ground build; fold the key grounds into the eviction-process expansion.",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: 'Rent coach' US column / Dr landlord FAQ series",
+          "search_intent": "US advice-column and FAQ-series noise (single competitor each)",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: single-competitor US advice-column noise (rent_coach_*, dr-landlord-and-tenant-faq).",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Tenant rights / eviction in the Philippines",
+          "search_intent": "Philippine eviction law",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: foreign (Philippines) law, single competitor.",
+          "priority": 0
+        }
+      ],
+      "counts": {
+        "net_new": 4,
+        "expand": 11,
+        "already_covered": 11,
+        "off_mission_dropped": 14
+      }
+    },
+    "tenancy_deposits": {
+      "topics": [
+        {
+          "topic_title": "Tenancy deposit protection schemes: a landlord's guide",
+          "search_intent": "Landlord needing to understand mandatory deposit protection (TDS/DPS/MyDeposits), the 30-day rule, prescribed information and penalties",
+          "n_competitors": 32,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "No live page on the statutory deposit-protection regime. UK guide: which scheme, 30-day deadline, prescribed information, non-compliance penalties (1-3x deposit) and the S21/possession knock-on. Strong competitor convergence, clear gap.",
+          "priority": 1
+        },
+        {
+          "topic_title": "Returning the deposit at end of tenancy (timing and disputes)",
+          "search_intent": "Mostly tenant-side 'landlord won't return my deposit / how long can they hold it', plus landlord deadlines; many US state variants",
+          "n_competitors": 25,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "UK deposit-return timing and the scheme dispute process. Fold into the proposed deposit-protection net-new page (return deadlines + adjudication). Heavy US state-deadline drop.",
+          "priority": 2
+        },
+        {
+          "topic_title": "What a landlord can lawfully deduct from a deposit",
+          "search_intent": "Landlord deciding valid deductions (rent arrears, cleaning, damage vs fair wear and tear) and tenant agreement",
+          "n_competitors": 15,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "No live page on deposit deductions. UK guide: lawful deduction categories, fair wear and tear, evidence/inventory, scheme adjudication, and tax treatment of retained deposit. Solid gap; could pair with the deposit-protection page or stand alone.",
+          "priority": 1
+        },
+        {
+          "topic_title": "Deposit deductions for cleaning and damage",
+          "search_intent": "Specific cleaning/damage deduction reasons and how to evidence them",
+          "n_competitors": 11,
+          "verdict": "expand-existing",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Sub-topic of deposit deductions. Fold the cleaning/damage specifics (and inventory evidence) into the deductions net-new page; not a separate build.",
+          "priority": 3
+        },
+        {
+          "topic_title": "OFF-MISSION: How much can a landlord charge for a deposit (US state series)",
+          "search_intent": "US state-by-state deposit-cap variants",
+          "n_competitors": 2,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: US state deposit-cap series. (UK 5-week cap could be a one-line note inside the deposit-protection page.)",
+          "priority": 0
+        },
+        {
+          "topic_title": "OFF-MISSION: Using deposit as last month's rent (US state series)",
+          "search_intent": "US state 'security deposit as last month rent' variants",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop: single-competitor US state-law series.",
+          "priority": 0
+        }
+      ],
+      "counts": {
+        "net_new": 2,
+        "expand": 2,
+        "already_covered": 0,
+        "off_mission_dropped": 2
+      }
+    }
+  }
+}

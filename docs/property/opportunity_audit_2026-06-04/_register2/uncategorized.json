@@ -1,0 +1,66 @@
+{
+  "categories": {
+    "rescued": {
+      "notes": "123 cores reviewed from _uncategorized.json (cores that keyword-matched no category). As expected the bundle is overwhelmingly off-mission noise: US/foreign tax (state income tax, SALT, Thailand/Philippines/Latvia/Lithuania, generation-skipping, documentary stamp), corporation/VAT/income/personal tax for general businesses, bookkeeping/accounting-practice services, US-county property-tax/transfer-tax/lease-law sets, real-estate listings/jobs/REIT-dividend/court-case dumps, programmatic templated junk (corporation-tax-return-N, capital-taxes-N, incorporate-company-X.htm, lease.htm, ofw-home-loan), control-systems/partnership-accounting homework, and lead-gen city-page sprawl. Only a handful of cores touch genuine UK property-tax/landlord intent, and every one of those is already covered by live pages except a marginal leasehold concept (ground rent).",
+      "topics": [
+        {
+          "topic_title": "Rent a Room Scheme - GBP 7,500 tax-free income",
+          "assigned_category": "Section 24 & Tax Relief",
+          "search_intent": "informational",
+          "n_competitors": 12,
+          "verdict": "already-covered",
+          "closest_our_page": "rent-a-room-relief-uk-landlords-lodgers-guide.md",
+          "suggested_angle": "Live page already covers the GBP 7,500 allowance, lodger/short-let mechanics and tax treatment. No new page needed.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Investing in HMO properties (is it a good investment / tax)",
+          "assigned_category": "HMO & Multi-let",
+          "search_intent": "commercial",
+          "n_competitors": 12,
+          "verdict": "already-covered",
+          "closest_our_page": "hmo-tax-guide-rental-income-deductions-multi-tenant.md / hmo-vs-standard-buy-to-let-tax-comparison.md / hmo-landlord-accounting-multi-tenant-property-tax.md",
+          "suggested_angle": "Deep HMO cluster already live (8+ pages incl. tax, accounting, licensing, incorporation). Investing-angle queries served by existing comparison and tax guides.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Beneficial ownership / Register of Overseas Entities owning UK property",
+          "assigned_category": "Overseas & Non-Resident Landlords",
+          "search_intent": "informational",
+          "n_competitors": 12,
+          "verdict": "already-covered",
+          "closest_our_page": "register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords.md / public-access-to-trust-data-on-the-uk-register-of-overseas-entities-expanded.md",
+          "suggested_angle": "ROE / overseas-entity disclosure already covered for non-resident landlords incl. annual update statement and public-register expansion.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "When overseas companies must register at Companies House (overseas property register)",
+          "assigned_category": "Overseas & Non-Resident Landlords",
+          "search_intent": "informational",
+          "n_competitors": 13,
+          "verdict": "already-covered",
+          "closest_our_page": "register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords.md",
+          "suggested_angle": "On-mission slice (overseas property register) overlaps ROE coverage; remainder of the core is generic company-registration noise. No new page.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "What is ground rent (leasehold ground rent / peppercorn / service charges)",
+          "assigned_category": "Leasehold & Service Charges",
+          "search_intent": "informational",
+          "n_competitors": 15,
+          "verdict": "expand-existing",
+          "closest_our_page": "commonhold-and-leasehold-reform-bill.md / brief-introduction-to-commercial-property-service-charge-accounts.md",
+          "suggested_angle": "No dedicated 'what is ground rent' page. Marginal: primarily a leasehold/conveyancing concept with only a thin landlord deductibility/peppercorn-reform tax angle. If pursued, fold a landlord-facing ground-rent + service-charge tax-treatment section into existing leasehold-reform coverage rather than a standalone page. Low value.",
+          "priority": "low"
+        }
+      ],
+      "counts": {
+        "net_new": 0,
+        "expand": 1,
+        "already_covered": 4,
+        "off_mission_dropped": 118,
+        "total_reviewed": 123
+      }
+    }
+  }
+}

@@ -1,0 +1,540 @@
+[
+  {
+    "file": "components/blog/BlogPostRenderer.tsx",
+    "shared_hash": "7a86280a",
+    "shared_mtime": "2026-03-29T14:55:21.867154",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 271,
+        "site_mtime": "2026-04-03T00:48:17.532458",
+        "shared_mtime": "2026-03-29T14:55:21.867154",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 279,
+        "site_mtime": "2026-04-02T18:23:49.858563",
+        "shared_mtime": "2026-03-29T14:55:21.867154",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 267,
+        "site_mtime": "2026-04-03T00:49:33.630541",
+        "shared_mtime": "2026-03-29T14:55:21.867154",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 275,
+        "site_mtime": "2026-04-03T00:48:55.196040",
+        "shared_mtime": "2026-03-29T14:55:21.867154",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 391,
+        "site_mtime": "2026-05-17T21:51:30.750894",
+        "shared_mtime": "2026-03-29T14:55:21.867154",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/forms/LeadForm.tsx",
+    "shared_hash": "5a7da9f4",
+    "shared_mtime": "2026-03-29T14:55:06.957217",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 323,
+        "site_mtime": "2026-03-29T21:53:12.006577",
+        "shared_mtime": "2026-03-29T14:55:06.957217",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "IDENTICAL"
+      },
+      "Solicitors": {
+        "status": "IDENTICAL"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 334,
+        "site_mtime": "2026-05-17T17:17:49.649214",
+        "shared_mtime": "2026-03-29T14:55:06.957217",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/layout/PageShell.tsx",
+    "shared_hash": "f0fcec9c",
+    "shared_mtime": "2026-03-27T16:51:06.872315",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 2,
+        "site_mtime": "2026-04-03T01:08:58.394002",
+        "shared_mtime": "2026-03-27T16:51:06.872315",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 4,
+        "site_mtime": "2026-04-03T01:08:56.883626",
+        "shared_mtime": "2026-03-27T16:51:06.872315",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 2,
+        "site_mtime": "2026-04-03T01:08:58.608929",
+        "shared_mtime": "2026-03-27T16:51:06.872315",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 2,
+        "site_mtime": "2026-04-03T01:09:01.348274",
+        "shared_mtime": "2026-03-27T16:51:06.872315",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 8,
+        "site_mtime": "2026-05-17T20:45:01.717651",
+        "shared_mtime": "2026-03-27T16:51:06.872315",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/layout/SiteFooter.tsx",
+    "shared_hash": "eba4e852",
+    "shared_mtime": "2026-03-27T17:33:50.591612",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 34,
+        "site_mtime": "2026-04-02T18:30:23.767177",
+        "shared_mtime": "2026-03-27T17:33:50.591612",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 68,
+        "site_mtime": "2026-04-09T20:35:32.504882",
+        "shared_mtime": "2026-03-27T17:33:50.591612",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 36,
+        "site_mtime": "2026-04-02T18:29:45.830192",
+        "shared_mtime": "2026-03-27T17:33:50.591612",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 49,
+        "site_mtime": "2026-04-02T18:30:16.126230",
+        "shared_mtime": "2026-03-27T17:33:50.591612",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 84,
+        "site_mtime": "2026-05-17T17:17:12.421316",
+        "shared_mtime": "2026-03-27T17:33:50.591612",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/layout/SiteHeader.tsx",
+    "shared_hash": "9e0b8184",
+    "shared_mtime": "2026-03-27T17:50:04.851008",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 40,
+        "site_mtime": "2026-03-29T16:28:53.661369",
+        "shared_mtime": "2026-03-27T17:50:04.851008",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 4,
+        "site_mtime": "2026-04-01T11:39:01.025472",
+        "shared_mtime": "2026-03-27T17:50:04.851008",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 22,
+        "site_mtime": "2026-04-01T14:16:07.349511",
+        "shared_mtime": "2026-03-27T17:50:04.851008",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 121,
+        "site_mtime": "2026-05-17T17:16:55.503726",
+        "shared_mtime": "2026-03-27T17:50:04.851008",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/ui/Breadcrumb.tsx",
+    "shared_hash": "543f8a8c",
+    "shared_mtime": "2026-03-28T16:20:30.034547",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 99,
+        "site_mtime": "2026-05-18T20:50:28.281724",
+        "shared_mtime": "2026-03-28T16:20:30.034547",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 78,
+        "site_mtime": "2026-03-29T16:21:43.702561",
+        "shared_mtime": "2026-03-28T16:20:30.034547",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "IDENTICAL"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 92,
+        "site_mtime": "2026-05-18T22:50:49.178552",
+        "shared_mtime": "2026-03-28T16:20:30.034547",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 108,
+        "site_mtime": "2026-05-17T20:45:01.719654",
+        "shared_mtime": "2026-03-28T16:20:30.034547",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/ui/CTASection.tsx",
+    "shared_hash": "dc42cee7",
+    "shared_mtime": "2026-03-29T21:22:56.596825",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 10,
+        "site_mtime": "2026-03-29T21:22:59.547168",
+        "shared_mtime": "2026-03-29T21:22:56.596825",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 4,
+        "site_mtime": "2026-04-01T11:39:18.044522",
+        "shared_mtime": "2026-03-29T21:22:56.596825",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 4,
+        "site_mtime": "2026-04-01T14:04:38.599017",
+        "shared_mtime": "2026-03-29T21:22:56.596825",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 10,
+        "site_mtime": "2026-03-29T21:22:59.547168",
+        "shared_mtime": "2026-03-29T21:22:56.596825",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/ui/layout-utils.ts",
+    "shared_hash": "d9680fc6",
+    "shared_mtime": "2026-03-27T17:49:52.244009",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 18,
+        "site_mtime": "2026-03-29T16:28:28.556838",
+        "shared_mtime": "2026-03-27T17:49:52.244009",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 12,
+        "site_mtime": "2026-04-01T11:37:44.188866",
+        "shared_mtime": "2026-03-27T17:49:52.244009",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 14,
+        "site_mtime": "2026-04-01T14:05:28.583842",
+        "shared_mtime": "2026-03-27T17:49:52.244009",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 33,
+        "site_mtime": "2026-05-17T23:18:31.417672",
+        "shared_mtime": "2026-03-27T17:49:52.244009",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "components/ui/StickyCTA.tsx",
+    "shared_hash": "b9cd0adc",
+    "shared_mtime": "2026-03-29T14:55:12.835410",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 12,
+        "site_mtime": "2026-04-01T16:44:34.934423",
+        "shared_mtime": "2026-03-29T14:55:12.835410",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 23,
+        "site_mtime": "2026-04-09T20:24:06.450383",
+        "shared_mtime": "2026-03-29T14:55:12.835410",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 3,
+        "site_mtime": "2026-04-01T11:39:19.186194",
+        "shared_mtime": "2026-03-29T14:55:12.835410",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 12,
+        "site_mtime": "2026-04-01T16:29:10.763943",
+        "shared_mtime": "2026-03-29T14:55:12.835410",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 65,
+        "site_mtime": "2026-05-17T17:15:25.574262",
+        "shared_mtime": "2026-03-29T14:55:12.835410",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "lib/blog.ts",
+    "shared_hash": "25db1151",
+    "shared_mtime": "2026-04-02T18:23:49.926176",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 16,
+        "site_mtime": "2026-04-03T01:13:24.775106",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 38,
+        "site_mtime": "2026-04-09T20:23:35.154600",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 24,
+        "site_mtime": "2026-04-03T01:13:26.360081",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 66,
+        "site_mtime": "2026-04-03T01:13:29.103791",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 42,
+        "site_mtime": "2026-05-17T11:14:32.487706",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "lib/local-business-schema.ts",
+    "shared_hash": "60c8013b",
+    "shared_mtime": "2026-03-29T21:26:08.791723",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "IDENTICAL"
+      },
+      "Medical": {
+        "status": "IDENTICAL"
+      },
+      "Solicitors": {
+        "status": "IDENTICAL"
+      },
+      "generalist": {
+        "status": "IDENTICAL"
+      }
+    }
+  },
+  {
+    "file": "lib/organization-schema.ts",
+    "shared_hash": "50b332e4",
+    "shared_mtime": "2026-03-29T11:57:31.642829",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "IDENTICAL"
+      },
+      "Medical": {
+        "status": "IDENTICAL"
+      },
+      "Solicitors": {
+        "status": "IDENTICAL"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 34,
+        "site_mtime": "2026-05-17T11:32:47.607467",
+        "shared_mtime": "2026-03-29T11:57:31.642829",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "lib/schema.ts",
+    "shared_hash": "37cbdfcf",
+    "shared_mtime": "2026-04-02T21:02:46.986394",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 6,
+        "site_mtime": "2026-04-16T20:04:29.140014",
+        "shared_mtime": "2026-04-02T21:02:46.986394",
+        "newer_side": "site"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 6,
+        "site_mtime": "2026-04-16T19:15:09.501673",
+        "shared_mtime": "2026-04-02T21:02:46.986394",
+        "newer_side": "site"
+      },
+      "Medical": {
+        "status": "DIVERGED",
+        "line_diffs": 6,
+        "site_mtime": "2026-04-16T20:04:49.641187",
+        "shared_mtime": "2026-04-02T21:02:46.986394",
+        "newer_side": "site"
+      },
+      "Solicitors": {
+        "status": "DIVERGED",
+        "line_diffs": 6,
+        "site_mtime": "2026-04-16T20:05:11.483284",
+        "shared_mtime": "2026-04-02T21:02:46.986394",
+        "newer_side": "site"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 108,
+        "site_mtime": "2026-05-17T11:25:51.778373",
+        "shared_mtime": "2026-04-02T21:02:46.986394",
+        "newer_side": "site"
+      }
+    }
+  },
+  {
+    "file": "lib/supabase-client.ts",
+    "shared_hash": "83e78eed",
+    "shared_mtime": "2026-03-29T21:23:39.610223",
+    "per_site": {
+      "Dentists": {
+        "status": "IDENTICAL"
+      },
+      "Property": {
+        "status": "IDENTICAL"
+      },
+      "Medical": {
+        "status": "IDENTICAL"
+      },
+      "Solicitors": {
+        "status": "IDENTICAL"
+      },
+      "generalist": {
+        "status": "IDENTICAL"
+      }
+    }
+  },
+  {
+    "file": "types/niche-config.ts",
+    "shared_hash": "f993f601",
+    "shared_mtime": "2026-04-02T18:23:49.926176",
+    "per_site": {
+      "Dentists": {
+        "status": "DIVERGED",
+        "line_diffs": 6,
+        "site_mtime": "2026-03-30T11:25:20.712069",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "shared"
+      },
+      "Property": {
+        "status": "DIVERGED",
+        "line_diffs": 6,
+        "site_mtime": "2026-03-29T16:10:36.567326",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "shared"
+      },
+      "Medical": {
+        "status": "MISSING"
+      },
+      "Solicitors": {
+        "status": "MISSING"
+      },
+      "generalist": {
+        "status": "DIVERGED",
+        "line_diffs": 7,
+        "site_mtime": "2026-05-16T20:06:47.619540",
+        "shared_mtime": "2026-04-02T18:23:49.926176",
+        "newer_side": "site"
+      }
+    }
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "batch_id": "M3-B-B2",
+  "agent_id": "MW3-Stage1-B-B2",
+  "completed_at": "2026-05-27T19:52:00+01:00",
+  "commit_shas": [
+    "4f35319973935763938d7a0af8f94e1c9a34e9a9",
+    "f4083617b0cc47f69efc5ca07d50a94a591ee374",
+    "4d382b5f0166f9dced2341da039b52979f7f67ab",
+    "cf0d3a629248bc5a37c116032d8ce498bfca78ba",
+    "0b94c3207a3b944be06b19f77e9e89be95a7d14f",
+    "e5da4597dd9c5da27de99d1c13c84dbed39a3397"
+  ],
+  "slugs_done": [
+    "arriving-in-the-uk",
+    "ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal",
+    "ated-penalties-and-appeals",
+    "ated-rates",
+    "ated-relief-clawback-occupation-by-a-non-qualifying-occupation",
+    "ated-relief-for-related-persons-and-market-rent-a-complete-guide"
+  ],
+  "tracker_flipped": ["B7", "B8", "B9", "B10", "B11", "B12"],
+  "flags_raised": [],
+  "questions_raised": [],
+  "notes": "All 6 seeds committed directly on main (avoiding the worktree-branch drift bug captured in MW2/MW3-A/MW3-C lane history). HP anchors covered: §17 + §17.8 + §17.9 + §17.10 + §22.X (expat/arrival cluster) and §18 + §18.1 + §18.3 + §18.4 + §18.8 + §21.5 (ATED cluster). New statutory verifications at write time: FA 2013 s.99 (rate table base), s.101 (CPI indexation), s.133 (two-condition rental relief architecture), s.135 (look-forward/look-back clawback mechanic), s.136 (eight-category non-qualifying-individual catalogue), s.139 (developer-exchange variant), s.159 (return), s.161 (self-assessment), s.166 (companies definition); FA 2009 Sch 55 para 16 (special reduction) + para 23 (reasonable excuse). No new HP-lock needed. No F-flags raised in F-50..F-99 range. No Q-questions raised. Sibling cannibalisation framing locked across B7-B12 and against B1-B6 priors and B13-B20 successors."
+}

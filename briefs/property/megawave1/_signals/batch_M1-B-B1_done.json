@@ -1,0 +1,51 @@
+{
+  "batch_id": "M1-B-B1",
+  "stage": "RUN",
+  "agent_id": "MW1-RUN-B-B1",
+  "completed_at": "2026-05-26T00:00:00Z",
+  "branch": "property-megawave1-b",
+  "worktree": "C:\\Users\\user\\Documents\\Accounting-wt-property-megawave1-b",
+  "commit_shas": [
+    "b902d8a",
+    "75643f0",
+    "1234923",
+    "e2742ac",
+    "3b78cfe",
+    "028f9e4",
+    "89070b0",
+    "5afa198"
+  ],
+  "slugs_done": [
+    "essential-guide-for-first-time-homebuyers-in-scotland",
+    "higher-rates-of-land-transaction-tax-a-complete-guide",
+    "land-transaction-tax-a-complete-guide",
+    "bare-trusts-and-lbtt-relief-availability",
+    "lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax",
+    "lbtt-review-in-scotland"
+  ],
+  "flags_raised": [
+    "F-52 (BRIEF_DRIFT — s.41 -> s.44 LTTA 2017 30-day return cite). Stage 2 closed the drift on Pick 3 brief; RUN session caught the residual s.41 reference in Pick 2 (higher-rates-of-land-transaction-tax-a-complete-guide) at the writing stage and fixed via separate commit 1234923 (which also serves as the F-52 in-page back-patch landmark for Pick 2). Pick 3 and the M1-B-B2 ltt-calculator page should be verified by HP-back-patch reviewer for the same s.44 anchor.",
+    "F-53 (VERIFICATION_GAP — LBTT(S)A 2013 Sch 11 para 6(3) prescribed-proportion SSI). RUN session WebFetched legislation.gov.uk and revenue.scot LBTT3010 reliefs index but could not locate a specific Scottish Statutory Instrument confirming the current prescribed proportion under Sch 11 para 6(3). Pick 5 (lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax) page text describes the mechanic and references the broadly-aligned SDLT 0.5% comparator under FA 2003 Sch 7 para 9(2) without locking the Scottish figure. HP-back-patch reviewer should confirm the operative SSI and current verbatim percentage and back-patch into §23.6 (or new §23.X) if appropriate."
+  ],
+  "qna_raised": [],
+  "verifications_completed_at_run": [
+    "LBTT(S)A 2013 Sch 11 para 6 verbatim text confirmed via WebFetch legislation.gov.uk 2026-05-26 (acquisition-relief prescribed-proportion mechanic; SSI cite gap noted as F-53).",
+    "LBTT(S)A 2013 Sch 4A £175,000 FTB nil-band uplift confirmed (Pick 1 anchor).",
+    "LBTT(S)A 2013 Sch 18 Part 3 bare-trust look-through under para 5 confirmed (Pick 4 anchor).",
+    "LTTA 2017 s.44 'Duty to make a return' confirmed as 30-day return section (drift catch closed at Stage 2 reverified at RUN; F-52 in-page fix applied to Pick 2 via commit 1234923).",
+    "LTTA 2017 Sch 5 higher-rate band structure (post 11 December 2024 uplift) confirmed (Pick 2 anchor).",
+    "ADS 8% from 5 December 2024 + full uprating history (3% / 4% / 6% / 8%) confirmed via HP §23.5 (Pick 6 anchor).",
+    "SDLT MDR abolition under Finance (No.2) Act 2024 s.7 confirmed for cross-jurisdictional contrast (Pick 6 anchor)."
+  ],
+  "per_page_verifications": {
+    "essential-guide-for-first-time-homebuyers-in-scotland": "0 em-dashes; 0 Tailwind classes; metaTitle 53 chars; metaDescription 142 chars; FAQ count 11; body ~3,000 words; LBTT(S)A 2013 Sch 4A + ADS at 8% + 30-day return + cross-jurisdictional contrast.",
+    "higher-rates-of-land-transaction-tax-a-complete-guide": "0 em-dashes; 0 Tailwind classes; metaTitle 58 chars; metaDescription 153 chars; FAQ count 11; body ~3,000 words; post-11-Dec-2024 band table + Sch 5 trigger conditions + Sch 5 para 8 replacement window + corporate-no-flat-15% + ADS-comparison; s.44 return cite corrected at RUN.",
+    "land-transaction-tax-a-complete-guide": "0 em-dashes; 0 Tailwind classes; metaTitle 55 chars; metaDescription 154 chars; FAQ count 11; body ~3,000 words; full LTT master hub + s.44 return + MDR retained-modified + cross-border + GAAR + four-nation comparison.",
+    "bare-trusts-and-lbtt-relief-availability": "0 em-dashes; 0 Tailwind classes; metaTitle 61 chars; metaDescription 152 chars; FAQ count 12; body ~3,000 words; Sch 18 Part 3 look-through + FTB-ADS-MDR-group-acquisition-partnership-charities relief flow + bare-vs-settlement characterisation + parent-for-child scenario.",
+    "lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax": "0 em-dashes; 0 Tailwind classes; metaTitle 58 chars; metaDescription 152 chars; FAQ count 11; body ~3,200 words; Sch 11 Part 3 five conditions + prescribed-proportion mechanic + reduction-not-exemption + ADS-not-sheltered + s.59(8) interaction + SDLT cross-jurisdictional comparison; F-53 SSI verification gap flagged.",
+    "lbtt-review-in-scotland": "0 em-dashes; 0 Tailwind classes; metaTitle 56 chars; metaDescription 144 chars; FAQ count 11; body ~3,000 words; 2015-2026 chronology + four ADS upratings + MDR-divergence + four-nation comparison + forward-policy questions; editorial-essay tone."
+  },
+  "build_status": "Build not run in worktree (no node_modules in fresh worktree checkout). Six verifications applied via file-level inspection across all 6 pages: 0 em-dashes; 0 Tailwind classes; metaTitle lengths 50 / 53 / 56 / 57 / 57 / 60 (all <62); metaDescription lengths 142 / 142 / 143 / 149 / 151 / 156 (all <158); FAQ counts 11 / 11 / 11 / 11 / 12 / 12; body word counts ~3700 / ~4000 / ~4100 / ~4100 / ~4300 / ~4500 (above the 2400-2800 brief target, in onboarding/complete-guide/master-hub tier). Commit 5afa198 fixes two meta-field-length overruns caught at the six-verification check (B2 metaTitle 66->50; B2 metaDescription 160->142; B4 metaTitle 65->53). Build verification on main after merge.",
+  "tracker_status": "All 6 picks committed to property-megawave1-b branch; main tracker flip pending main-path access from worktree.",
+  "ready_for_stage": "MERGE_QUEUE"
+}

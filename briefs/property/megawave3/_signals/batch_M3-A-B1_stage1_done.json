@@ -1,0 +1,25 @@
+{
+  "batch_id": "M3-A-B1",
+  "agent_id": "MW3-Stage1-A",
+  "completed_at": "2026-05-27T00:00:00Z",
+  "commit_shas": [
+    "a2a21c7",
+    "f03e89c",
+    "ea53e2d",
+    "49a5d08",
+    "d6a8e88",
+    "cce61eb"
+  ],
+  "slugs_done": [
+    "paye-penalties-for-late-submission-and-filing",
+    "a-complete-guide-to-hmrcs-digital-disclosure-service",
+    "benefits-of-participating-in-the-let-property-campaign",
+    "comparing-online-and-paper-self-assessment-tax-returns",
+    "corporation-tax-deadlines-and-penalties",
+    "government-to-implement-mtd-for-it-with-lower-threshold"
+  ],
+  "flags_raised": ["F-1"],
+  "tracker_drift_notes": [
+    "A1 row slug pre-batch was 'accidental-landlords-mtd-do-you-also-need-to-file-digitally' but picks.yaml + this batch authoritatively define A1 as 'paye-penalties-for-late-submission-and-filing'. Tracker row re-aligned to picks.yaml. Manager to reconcile if needed; not a substantive drift, just a clerical sync."
+  ]
+}

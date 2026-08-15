@@ -1,0 +1,13 @@
+{
+  "batch_id": "M3-C-B4",
+  "agent_id": "property-megawave3-c",
+  "completed_at": "2026-05-28T11:25:00Z",
+  "commit_shas": [
+    "abf9ee4431277ec05fc8482e5fb9c1148950dc25",
+    "80828cece87e71de3dfda5b14a973aeedefadc7c"
+  ],
+  "slugs_done": [
+    "cis-templates",
+    "commonhold-and-leasehold-reform-bill"
+  ]
+}

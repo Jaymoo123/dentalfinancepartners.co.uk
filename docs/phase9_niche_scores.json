@@ -1,0 +1,414 @@
+[
+  {
+    "candidate": {
+      "slug": "buy-to-let-specialist",
+      "name": "Buy-to-let landlord specialist (subset of property)",
+      "head_query": "buy to let landlord accountant uk",
+      "secondary": [
+        "section 24 landlord accountant",
+        "property portfolio accountant"
+      ],
+      "uk_audience_estimate": 2300000,
+      "audience_note": "~2.3M UK landlords (gov.uk landlord statistics)"
+    },
+    "score": {
+      "total": 18,
+      "search_volume": 0,
+      "search_score": 2,
+      "specialism_score": 5,
+      "audience_score": 5,
+      "comp_score": 4,
+      "cpc_score": 2,
+      "cpc": 0,
+      "competition": 0.5,
+      "n_specialist": 0,
+      "n_generalist": 0,
+      "n_directory": 0,
+      "top_domains": []
+    }
+  },
+  {
+    "candidate": {
+      "slug": "contractors-ir35",
+      "name": "Contractors / IR35",
+      "head_query": "contractor accountant uk",
+      "secondary": [
+        "ir35 specialist accountant",
+        "limited company contractor tax"
+      ],
+      "uk_audience_estimate": 2000000,
+      "audience_note": "~2M UK contractors (HMRC + ONS self-employment data)"
+    },
+    "score": {
+      "total": 17,
+      "search_volume": 110,
+      "search_score": 2,
+      "specialism_score": 2,
+      "audience_score": 5,
+      "comp_score": 3,
+      "cpc_score": 5,
+      "cpc": 28.12,
+      "competition": 0.6,
+      "n_specialist": 9,
+      "n_generalist": 0,
+      "n_directory": 0,
+      "top_domains": [
+        {
+          "position": 1,
+          "domain": "www.reddit.com",
+          "title": "Best UK accountants for contractor : r/ContractorUK",
+          "kind": "info"
+        },
+        {
+          "position": 2,
+          "domain": "www.contractoruk.com",
+          "title": "Accountancy Services Providers For IT Contractors",
+          "kind": "specialist"
+        },
+        {
+          "position": 3,
+          "domain": "www.itcontracting.com",
+          "title": "Contractor Accountants \u2013 compare fees and costs [2026]",
+          "kind": "specialist"
+        },
+        {
+          "position": 7,
+          "domain": "sg-accounting.co.uk",
+          "title": "SG Accounting | Contractor and small business accountants",
+          "kind": "specialist"
+        },
+        {
+          "position": 9,
+          "domain": "caroola.com",
+          "title": "Accountants for Contractors",
+          "kind": "specialist"
+        },
+        {
+          "position": 10,
+          "domain": "www.contracteye.co.uk",
+          "title": "Top 10 Contractor Accountants (2026) - Fees, Ratings ...",
+          "kind": "specialist"
+        },
+        {
+          "position": 11,
+          "domain": "accountingpeople.co.uk",
+          "title": "Contractor Accountants London",
+          "kind": "specialist"
+        },
+        {
+          "position": 12,
+          "domain": "www.contractorcalculator.co.uk",
+          "title": "Contractor Accountants Specialist Services",
+          "kind": "specialist"
+        },
+        {
+          "position": 13,
+          "domain": "wisaccountancy.co.uk",
+          "title": "Contractor Accountants | London",
+          "kind": "specialist"
+        },
+        {
+          "position": 14,
+          "domain": "www.contractoruk.com",
+          "title": "What is a contractor accountant?",
+          "kind": "specialist"
+        }
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "slug": "tradesmen",
+      "name": "Tradesmen (plumbers, electricians, builders)",
+      "head_query": "tradesman accountant uk",
+      "secondary": [
+        "plumber accountant uk",
+        "electrician accountant uk"
+      ],
+      "uk_audience_estimate": 600000,
+      "audience_note": "~600k UK self-employed tradespeople (Federation of Master Builders est.)"
+    },
+    "score": {
+      "total": 17,
+      "search_volume": 0,
+      "search_score": 2,
+      "specialism_score": 5,
+      "audience_score": 4,
+      "comp_score": 4,
+      "cpc_score": 2,
+      "cpc": 0,
+      "competition": 0.5,
+      "n_specialist": 0,
+      "n_generalist": 0,
+      "n_directory": 0,
+      "top_domains": []
+    }
+  },
+  {
+    "candidate": {
+      "slug": "construction-cis",
+      "name": "Construction / CIS contractors",
+      "head_query": "construction accountant uk",
+      "secondary": [
+        "cis subcontractor accountant",
+        "construction tax specialist uk"
+      ],
+      "uk_audience_estimate": 324000,
+      "audience_note": "~324k UK construction businesses + ~3.1M tradespeople (ONS)"
+    },
+    "score": {
+      "total": 14,
+      "search_volume": 0,
+      "search_score": 2,
+      "specialism_score": 2,
+      "audience_score": 4,
+      "comp_score": 4,
+      "cpc_score": 2,
+      "cpc": 0,
+      "competition": 0.5,
+      "n_specialist": 9,
+      "n_generalist": 0,
+      "n_directory": 0,
+      "top_domains": [
+        {
+          "position": 1,
+          "domain": "uk.indeed.com",
+          "title": "Construction Accountant jobs",
+          "kind": "specialist"
+        },
+        {
+          "position": 2,
+          "domain": "www.jamestoddandco.co.uk",
+          "title": "Specialist Construction Accountants | James Todd & Co",
+          "kind": "specialist"
+        },
+        {
+          "position": 4,
+          "domain": "www.numericaccounting.co.uk",
+          "title": "Specialist Construction Accountants for Builders ...",
+          "kind": "specialist"
+        },
+        {
+          "position": 8,
+          "domain": "uk.linkedin.com",
+          "title": "Construction Accounting jobs in United Kingdom - London",
+          "kind": "info"
+        },
+        {
+          "position": 9,
+          "domain": "chacc.co.uk",
+          "title": "UK Construction Accounting: A Complete Guide To ...",
+          "kind": "specialist"
+        },
+        {
+          "position": 10,
+          "domain": "majorsaccounts.com",
+          "title": "Construction Industry Accountants",
+          "kind": "specialist"
+        },
+        {
+          "position": 11,
+          "domain": "www.simplyhired.co.uk",
+          "title": "Construction Accountant jobs in London",
+          "kind": "specialist"
+        },
+        {
+          "position": 12,
+          "domain": "www.michaelpage.co.uk",
+          "title": "Construction jobs in Accounting",
+          "kind": "specialist"
+        },
+        {
+          "position": 13,
+          "domain": "www.rousepartners.co.uk",
+          "title": "Construction accountants - Rouse Partners",
+          "kind": "specialist"
+        },
+        {
+          "position": 14,
+          "domain": "www.reed.co.uk",
+          "title": "Construction Accountant Jobs in London",
+          "kind": "specialist"
+        }
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "slug": "ecommerce-amazon",
+      "name": "E-commerce / Amazon sellers",
+      "head_query": "amazon seller accountant uk",
+      "secondary": [
+        "ecommerce accountant uk",
+        "online seller tax uk"
+      ],
+      "uk_audience_estimate": 280000,
+      "audience_note": "~280k registered UK Amazon sellers + ~700k UK e-commerce businesses"
+    },
+    "score": {
+      "total": 13,
+      "search_volume": 0,
+      "search_score": 2,
+      "specialism_score": 2,
+      "audience_score": 3,
+      "comp_score": 4,
+      "cpc_score": 2,
+      "cpc": 0,
+      "competition": 0.5,
+      "n_specialist": 10,
+      "n_generalist": 0,
+      "n_directory": 0,
+      "top_domains": [
+        {
+          "position": 1,
+          "domain": "archimediaaccounts.co.uk",
+          "title": "Accountants & Bookkeeping for Amazon Sellers",
+          "kind": "specialist"
+        },
+        {
+          "position": 3,
+          "domain": "www.fusionaccountants.co.uk",
+          "title": "Accountant for Amazon sellers",
+          "kind": "specialist"
+        },
+        {
+          "position": 4,
+          "domain": "yourecommerceaccountant.co.uk",
+          "title": "UK Amazon Accountants | Expert Accounting for FBA Sellers",
+          "kind": "specialist"
+        },
+        {
+          "position": 5,
+          "domain": "jpaccountant.info",
+          "title": "VAT Services on Amazon",
+          "kind": "specialist"
+        },
+        {
+          "position": 7,
+          "domain": "www.a2xaccounting.com",
+          "title": "How to Find an Amazon Accountant in the UK",
+          "kind": "specialist"
+        },
+        {
+          "position": 8,
+          "domain": "www.e-accounts.co.uk",
+          "title": "Amazon FBA Accountants | Starting From \u00a329.00 Per Month",
+          "kind": "specialist"
+        },
+        {
+          "position": 9,
+          "domain": "aspreysuk.com",
+          "title": "Expert Amazon Accountants | FBA",
+          "kind": "specialist"
+        },
+        {
+          "position": 10,
+          "domain": "sellercentral.amazon.co.uk",
+          "title": "Recommend Amazon Accountants?",
+          "kind": "specialist"
+        },
+        {
+          "position": 11,
+          "domain": "a2zaccounting.co.uk",
+          "title": "Amazon FBA Accountants UK | VAT & Tax Support",
+          "kind": "specialist"
+        },
+        {
+          "position": 12,
+          "domain": "gmprofessionalaccountants.co.uk",
+          "title": "How to Get Trusted Amazon Accounting Support from UK ...",
+          "kind": "specialist"
+        }
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "slug": "restaurants-hospitality",
+      "name": "Restaurants / hospitality",
+      "head_query": "restaurant accountant uk",
+      "secondary": [
+        "hospitality accountant uk",
+        "pub accountant"
+      ],
+      "uk_audience_estimate": 150000,
+      "audience_note": "~150k UK hospitality businesses (UKHospitality)"
+    },
+    "score": {
+      "total": 13,
+      "search_volume": 0,
+      "search_score": 2,
+      "specialism_score": 2,
+      "audience_score": 3,
+      "comp_score": 4,
+      "cpc_score": 2,
+      "cpc": 0,
+      "competition": 0.5,
+      "n_specialist": 9,
+      "n_generalist": 0,
+      "n_directory": 0,
+      "top_domains": [
+        {
+          "position": 2,
+          "domain": "www.xeinadin.com",
+          "title": "Accounting for Restaurants | Expert Tax & Financial Advice",
+          "kind": "specialist"
+        },
+        {
+          "position": 3,
+          "domain": "perrysaccountants.co.uk",
+          "title": "Restaurant & Takeaway Accountants in London and Kent",
+          "kind": "specialist"
+        },
+        {
+          "position": 4,
+          "domain": "www.evansandco.uk",
+          "title": "Accountancy for Restaurants | The Hospo Accountant",
+          "kind": "specialist"
+        },
+        {
+          "position": 5,
+          "domain": "uk.indeed.com",
+          "title": "Restaurant Accountant jobs in London",
+          "kind": "specialist"
+        },
+        {
+          "position": 6,
+          "domain": "www.glassdoor.co.uk",
+          "title": "8 Restaurant accountant jobs in United Kingdom",
+          "kind": "specialist"
+        },
+        {
+          "position": 7,
+          "domain": "www.rsbc.uk",
+          "title": "Accountants for Hotels, Restaurants & Bars | RSBC UK",
+          "kind": "specialist"
+        },
+        {
+          "position": 8,
+          "domain": "uk.linkedin.com",
+          "title": "Restaurant Accountant jobs in United Kingdom",
+          "kind": "info"
+        },
+        {
+          "position": 9,
+          "domain": "corientbs.co.uk",
+          "title": "Restaurant Accounting Outsourcing Services | Corientbs",
+          "kind": "specialist"
+        },
+        {
+          "position": 10,
+          "domain": "hlwa.co.uk",
+          "title": "Accountant for Restaurant Businesses",
+          "kind": "specialist"
+        },
+        {
+          "position": 12,
+          "domain": "www.viewpointpartners.co.uk",
+          "title": "Hospitality Accountants | Viewpoint Partners | England",
+          "kind": "specialist"
+        }
+      ]
+    }
+  }
+]

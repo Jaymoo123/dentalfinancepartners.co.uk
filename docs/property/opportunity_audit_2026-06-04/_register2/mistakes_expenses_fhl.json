@@ -1,0 +1,287 @@
+{
+  "categories": {
+    "mistakes_myths_pitfalls": {
+      "topics": [
+        {
+          "topic_title": "Common Landlord Tax Mistakes That Trigger an HMRC Enquiry",
+          "search_intent": "Landlords fearful of the taxman want a plain-English list of the errors and red flags that get rental income flagged, plus how to stay clean. Brand-warmth / reassurance intent.",
+          "n_competitors": 282,
+          "verdict": "net_new",
+          "demand": [
+            { "query": "how to avoid capital gains tax on rental property", "imp": 3 }
+          ],
+          "closest_our_page": "hmrc-nudge-letter-response-playbook-landlords-property-income (reactive/disclosure-specific, not a preventative mistakes round-up)",
+          "suggested_angle": "Warmth round-up: the 10 most common rental-tax mistakes (under-declaring deposits/retained rent, wrong capital-vs-revenue split, missing the s24 restriction, claiming pre-letting costs incorrectly, forgetting jointly-owned splits) and the behaviours that draw HMRC attention. Internal-link out to nudge-letter playbook, Let Property Campaign, discovery-assessment pages.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "Landlord Tax Myths Debunked (What You've Been Told That Is Wrong)",
+          "search_intent": "Landlords acting on second-hand pub/forum advice want common misconceptions corrected (e.g. 'I can deduct all my mortgage', 'gifting to my spouse dodges CGT', 'I don't need to declare a one-room let'). High brand-warmth.",
+          "n_competitors": 282,
+          "verdict": "net_new",
+          "demand": [
+            { "query": "can i avoid capital gains tax if i give the money to my spouse", "imp": 3 }
+          ],
+          "closest_our_page": "fic-iht-treatment-bpr-myth (single niche FIC/BPR myth only; no broad landlord-myth hub)",
+          "suggested_angle": "Myth-vs-reality format covering the most repeated landlord tax myths. Pair the spouse/CGT myth (gift of money vs gift of asset, no-gain-no-loss interspousal transfer) with mortgage-interest, rent-a-room, and 'cash rent is invisible' myths. Strong internal linking to s24, CGT-spouse-transfer, and Let Property Campaign pages.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "HMRC Crackdown on Landlord Tax: Are You at Risk?",
+          "search_intent": "Landlords reacting to 'HMRC cracks down on landlords' headlines want to know if their arrangement is exposed and what to do (disclose, correct, defend).",
+          "n_competitors": 18,
+          "verdict": "expand",
+          "demand": [],
+          "closest_our_page": "let-property-campaign-why-voluntary-disclosure-makes-sense + hmrcs-otm-letters-campaign-directed-at-ated-avoidance (disclosure routes covered; the 'crackdown awareness / am-I-at-risk' framing is not)",
+          "suggested_angle": "Expand existing Let Property Campaign / nudge-letter cluster with one awareness-led hub page that aggregates the current HMRC landlord crackdowns (data-matching, deposit registers, agent reporting, offshore/letting schemes) and routes readers into the existing disclosure pages. Avoid duplicating the disclosure mechanics already live.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "[DROP] HMRC tax-investigation/compliance generic (non-landlord)",
+          "search_intent": "Generic accountancy-firm 'fear the taxman' / tax-investigation marketing content not specific to property income.",
+          "n_competitors": 282,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Bulk of the 721-slug core is generic SME/agency HMRC compliance noise. Keep only the landlord-specific cut (captured by the two net-new topics above); drop the rest.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] US expat tax",
+          "search_intent": "US expat tax filing (FEIE, foreign tax credit, country guides). US/expat, off-mission.",
+          "n_competitors": 46,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Drop entirely.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] Small-business / self-employed / individual tax-deductions round-ups (US)",
+          "search_intent": "Generic 'top tax deductions for small business / self-employed / overlooked individual deductions' listicles, predominantly US itemised-deduction framing.",
+          "n_competitors": 43,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Three cores (small-business-tax-deductions, tax-deductions-you-didnt-know, self-employed-tax-deductions) are US-style deduction listicles, not UK rental. Drop. UK landlord-expense intent is owned by allowable_expenses_repairs category.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] Tax aspects of selling/closing a (trading) business",
+          "search_intent": "BADR/sale-of-business tax planning for trading businesses, not property disposals.",
+          "n_competitors": 41,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Off-mission (trading-business M&A). Property disposal/CGT is its own category. Drop.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] VAT reliefs for charities / VAT bad-debt relief",
+          "search_intent": "Charity VAT reliefs and VAT bad-debt relief, much of it non-UK.",
+          "n_competitors": 15,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Two VAT cores (charity reliefs, bad-debt relief) off-mission for a landlord brand. Drop.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] HMRC crackdown on umbrella companies / trust accounting for law firms",
+          "search_intent": "Contractor umbrella-company warnings and law-firm client-account trust accounting.",
+          "n_competitors": 14,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Umbrella-company and legal-trust-accounting cores belong to other niches (contractors-ir35 / solicitors). Drop.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] Landlord EPC / energy-rating investment angle",
+          "search_intent": "EPC ratings affecting BTL investment decisions and property value (non-tax).",
+          "n_competitors": 12,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": "epc-c-2030-minimum-energy-efficiency-landlord-spending-cap; epc-improvement-grant-schemes-landlords-eco4-bus-gbis; energy-performance-certificates-epc (tax-angled EPC already owned)",
+          "suggested_angle": "Investment/valuation EPC angle is non-tax and our tax-relevant EPC pages already exist. Drop this core from the mistakes register (no new tax page needed).",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] Landlord fined for property safety / licensing breaches",
+          "search_intent": "News-style 'landlord fined £X for unsafe/unlicensed property' stories; housing-law enforcement, not tax.",
+          "n_competitors": 6,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": "hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics; decent-homes-standard-prs-landlord-compliance-checklist (compliance angle already covered where tax-adjacent)",
+          "suggested_angle": "Housing-safety fines are non-tax enforcement news. Off-mission for a tax brand. Drop.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] US state-by-state property-management tax deductions",
+          "search_intent": "US per-state property-management deduction listicles (Alaska, Connecticut, etc.).",
+          "n_competitors": 2,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "US/state spam. Drop.",
+          "priority": "drop"
+        }
+      ],
+      "counts": { "net_new": 2, "expand": 1, "already_covered": 0, "off_mission_dropped": 9 }
+    },
+    "allowable_expenses_repairs": {
+      "topics": [
+        {
+          "topic_title": "Rental Expenses Landlords Forget to Claim (Overlooked Allowable Deductions)",
+          "search_intent": "Landlords wanting to maximise deductions want a checklist of legitimate but commonly-missed allowable expenses (pre-letting costs, finance/arrangement fees, professional fees, travel/mileage, home-office, replacement of domestic items, void-period costs).",
+          "n_competitors": 15,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "landlord-tax-deductions-uk-2026-complete-list (a complete list, but framed as a reference; no 'commonly-missed / leaving money on the table' angle)",
+          "suggested_angle": "Warmth-led 'expenses you're probably not claiming' angle distinct from the existing complete-list reference page. Hub-link to pre-letting-expenses, mortgage-arrangement-fees, replacement-domestic-items, claim-home-office pages. This captures the 'overlooked deductions' demand the off-mission US listicles target, reframed for UK landlords.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "Normal Wear and Tear vs Tenant Damage: Tax and Deposit Treatment",
+          "search_intent": "Landlords want to know the line between fair wear and tear and chargeable damage, how deposit deductions work, and the tax treatment of repairs/dilapidations recoveries.",
+          "n_competitors": 14,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "what-repairs-can-landlords-deduct-from-rental-income + vat-dilapidations-payments... (repairs deductibility covered; the wear-tear-vs-damage decision and deposit/dilapidations recovery framing is not)",
+          "suggested_angle": "UK landlord guide to fair wear and tear vs damage: deposit-deduction rules (TDS/inventory), whether you can still claim repairs after recovering from a tenant/deposit, and where the now-abolished wear-and-tear allowance left landlords (replacement-of-domestic-items only). Link to repairs and replacement-domestic-items pages.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "What Counts as an Allowable Expense for Landlords (vs Disallowable)",
+          "search_intent": "Core 'allowable expenses for landlords' head term; landlords want the definitive list of what is and isn't deductible against rental income.",
+          "n_competitors": 15,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "landlord-tax-deductions-uk-2026-complete-list; capital-vs-revenue-expenditure-landlord-uk; what-repairs-can-landlords-deduct-from-rental-income",
+          "suggested_angle": "Head-term intent fully owned by three live pages (complete deductions list + capital-vs-revenue decision + repairs deductibility). No new page; ensure these three internally cross-link and target the head keyword cleanly.",
+          "priority": "covered"
+        },
+        {
+          "topic_title": "[DROP] Student/auto/credit-card loan interest deduction (US)",
+          "search_intent": "US personal interest deductions (student-loan, car-loan, credit-card).",
+          "n_competitors": 26,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "US personal-interest deductions. Off-mission. (UK landlord mortgage interest owned by the s24 cluster.) Drop.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] Limited-company / business / vehicle / educator / moving / medical expense deductions (generic & US)",
+          "search_intent": "Generic company and personal expense-deduction guides, largely US-framed (vehicle, educator, moving, medical, itemised business expenses).",
+          "n_competitors": 24,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Six cores (limited-company-expenses, business-expenses-deduction, vehicle, moving, educator, medical) are generic/US business and personal deductions, not UK rental. Drop. Landlord-via-company expense angle is owned by the property-SPV cluster.",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] 'Are property taxes deductible' (US property-tax / SALT)",
+          "search_intent": "US federal deductibility of state/local property taxes (SALT).",
+          "n_competitors": 9,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "US SALT deduction. Off-mission. Drop.",
+          "priority": "drop"
+        }
+      ],
+      "counts": { "net_new": 2, "expand": 0, "already_covered": 1, "off_mission_dropped": 4 }
+    },
+    "furnished_holiday_lets": {
+      "topics": [
+        {
+          "topic_title": "Does Your Airbnb / Short-Let Still Get FHL Tax Treatment After April 2025?",
+          "search_intent": "Owners of short-term/Airbnb lets that used to qualify (or thought they qualified) as FHLs want to know what changed at abolition and how their let is now taxed. Transition intent.",
+          "n_competitors": 21,
+          "verdict": "expand",
+          "demand": [
+            { "query": "furnished holiday lets fhl", "imp": 5 },
+            { "query": "fhl tax", "imp": 1 },
+            { "query": "fhl tax relief", "imp": 1 }
+          ],
+          "closest_our_page": "furnished-holiday-let-tax-rules-exemptions; serviced-accommodation-vs-buy-to-let-tax-comparison-2026; airbnb-tax-uk-short-term-rental-income-taxed (abolition + SA comparison covered; the specific 'did-my-Airbnb-qualify, now-what' eligibility-transition angle is thin)",
+          "suggested_angle": "Expand the existing FHL-abolition cluster with one eligibility-transition page: who used to qualify (70/105/210-day tests), what 'qualifying' even means now FHL is gone, and how former-FHL Airbnb/short-let income is taxed from 2025/26 onward. Heavy internal linking, no new abolition explainer (already have several).",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "FHL Tax Rules 2025/26: What Survived Abolition (Transition Reference)",
+          "search_intent": "Landlords searching live 'fhl rules 2025/26', 'fhl restrictions', 'section 24 fhl', 'fhl finance cost restriction' want the current-year position post-abolition.",
+          "n_competitors": 16,
+          "verdict": "already_covered",
+          "demand": [
+            { "query": "fhl tax regime", "imp": 8 },
+            { "query": "fhl corporation tax rate", "imp": 8 },
+            { "query": "fhl restrictions", "imp": 4 },
+            { "query": "fhl rules 2025/26", "imp": 4 },
+            { "query": "fhl rules for 2025/26", "imp": 2 },
+            { "query": "section 24 fhl", "imp": 1 },
+            { "query": "fhl finance cost restriction", "imp": 1 },
+            { "query": "fhl rules", "imp": 1 }
+          ],
+          "closest_our_page": "furnished-holiday-let-tax-rules-exemptions; end-of-the-furnished-holiday-letting-regime; abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know; understanding-the-taxation-of-fhls-in-a-company; fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+          "suggested_angle": "Demand is strong but fully served by 5+ live FHL pages covering rules/exemptions, abolition mechanics, finance-cost restriction now applying, company treatment and corporation-tax angle, and grandfathered capital allowances. No new page; confirm the rules page targets 'fhl rules 2025/26' and meta is refreshed for current year.",
+          "priority": "covered"
+        },
+        {
+          "topic_title": "MTD Qualifying Income for Former FHL / Property Landlords",
+          "search_intent": "Strong live demand around what counts as qualifying income for MTD ITSA (gross vs net, trusts, mortgage-credit interaction).",
+          "n_competitors": 1,
+          "verdict": "already_covered",
+          "demand": [
+            { "query": "what counts as qualifying income for mtd", "imp": 19 },
+            { "query": "mtd qualifying income gross or net", "imp": 2 },
+            { "query": "qualifying income for mtd calculation", "imp": 1 },
+            { "query": "if you receive rental income from a trust does that qualify fot mtd", "imp": 3 }
+          ],
+          "closest_our_page": "what-is-qualifying-income-for-mtd; mtd-itsa-qualifying-income-test-gross-vs-net; mtd-itsa-foreign-property-income-quarterly-reporting-rules; mtd-rental-income-threshold-exemptions",
+          "suggested_angle": "Highest-imp demand in the bundle (19) but already owned by a dedicated qualifying-income page plus the gross-vs-net test page and 30+ other MTD pages. No new page. (Cross-listed here because the bundle pulled MTD slugs into FHL; intent belongs to the MTD cluster.)",
+          "priority": "covered"
+        },
+        {
+          "topic_title": "Capital Allowances on Former-FHL Fixtures: What Still Qualifies (AIA, toilets, integral features)",
+          "search_intent": "Owners with grandfathered/legacy FHL capital-allowance pools ask granular qualification questions ('does a toilet qualify', 'does an iPad qualify for AIA', AIA-greater-than-expenditure warning).",
+          "n_competitors": 7,
+          "verdict": "already_covered",
+          "demand": [
+            { "query": "does a toilet qualify for capital allowances", "imp": 3 },
+            { "query": "does ipad qualify for aia", "imp": 1 },
+            { "query": "non trade aia claim main pool aia claimed is greather than qualifying expenditure warning", "imp": 6 }
+          ],
+          "closest_our_page": "fhl-capital-allowances-post-april-2025-grandfathered-claims-mechanics",
+          "suggested_angle": "Grandfathered-claims mechanics page already owns the post-abolition capital-allowance position. Granular item-level qualification (toilet/iPad/AIA-warning) could be a worked FAQ section added to that page rather than a new URL. No net-new.",
+          "priority": "covered"
+        },
+        {
+          "topic_title": "[DROP] Holiday-let management / mortgages / 'good investment' (non-tax operational)",
+          "search_intent": "Holiday-let management agencies, holiday-let mortgages, tenancy agreements, and 'is a holiday let a good investment' operational/finance content.",
+          "n_competitors": 50,
+          "verdict": "off_mission",
+          "demand": [
+            { "query": "fhl mortgage", "imp": 4 }
+          ],
+          "closest_our_page": null,
+          "suggested_angle": "Two large cores (holiday-let-management 50 comp, mortgages-for-holiday-let 43 comp) plus the FHL-mortgage-letter and yield-vs-BTL cores are operational/finance/lead-magnet content, not tax. Off-mission for a tax brand. Drop (note: 'fhl mortgage' imp4 is a mortgage-broker query, not ours).",
+          "priority": "drop"
+        },
+        {
+          "topic_title": "[DROP] Earned income tax credit / investment interest deduction (US)",
+          "search_intent": "US EITC/child-tax-credit eligibility and US investment-interest-expense deduction.",
+          "n_competitors": 19,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "US personal-tax cores. Off-mission. Drop.",
+          "priority": "drop"
+        }
+      ],
+      "counts": { "net_new": 0, "expand": 1, "already_covered": 3, "off_mission_dropped": 2 }
+    }
+  }
+}

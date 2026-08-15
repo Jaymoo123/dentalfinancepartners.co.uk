@@ -1,0 +1,21 @@
+{
+  "batch_id": "M3-C-B3",
+  "agent_id": "MW3-Stage1-C",
+  "completed_at": "2026-05-27T20:30:00Z",
+  "commit_shas": [
+    "75a76c18cdb6647a1a2afd3d765cda7020ca29bd",
+    "85d195780ddfb54fafe583f2c26ee22890dfbb7b",
+    "455d50922dcdda11ab0e94109657fa391b48bffd",
+    "2d64da5e49868f4d22b65cbec0aa8708194f4196",
+    "159290aa15bc0bc3bfe02f87734efb926f9304c4",
+    "65db75f8a2d660e06234c2111b10296e004e42b6"
+  ],
+  "slugs_done": [
+    "btl-investment-plymouth-cardiff-landlord-hotspots",
+    "buy-to-let-market-sees-record-high-returns",
+    "can-uk-landlords-still-use-llp-to-reduce-tax",
+    "case-laws",
+    "change-landlord-accountants",
+    "cis-deduction-by-contractors-in-the-uk"
+  ]
+}

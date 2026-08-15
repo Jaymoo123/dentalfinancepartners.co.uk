@@ -1,0 +1,247 @@
+{
+ "summary": "Solicitors Wave 3 independent QA 2026-07-09. QA link 'blockers' adjudicated FALSE POSITIVE (routes derive from slugifyCategory which drops ampersands; route-aware audit 0 HARD 404; the stale canonical FIELDS on legacy pages are a separate estate issue). Real fixes applied: A2 FAQ artefact, A4 promo/capability section, A5 comment, A8 h2+CGT timing clarifier, A9 h2 case.",
+ "pages": [
+  {
+   "slug": "finance-training-fee-earners-law-firm-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "ITTOIA s.34",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "CTA 2009 s.54",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "BIM42526/BIM35660",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "law-firm-financial-distress-restructuring-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "IA 1986 s.214A via SI 2001/1090 Sch 3",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "SA 1974 Sch 1 Pt I/II",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "SRA MTC run-off",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "forensic-accounting-litigation-law-firms-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "CPR r35.3/35.4(4)/35.6/35.7/35.8(5)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "PD 35",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "VTAXPER39000",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "what-does-a-legal-cashier-do-sra-requirements",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "SRA Rules 5/8.3/12.2 verified at sra.org.uk",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Rule 5.1(c) GBP500",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "outsourced-legal-cashiering-guide-uk-law-firms",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "SRA Code para 2.3",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Rule 11 TPMA",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "VATA Sch 9 standard-rating",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "employer NIC 15pc/5k",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "business-valuation-for-family-lawyers-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "TCGA s.58(1A)-(1D)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "MCA 1973 s.25/25A",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "FPR Part 25 + PD 25B",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Versteegh verified",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "accountant-for-barristers-chambers-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived (QA agents, post-polish bytes)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "ITTOIA s.24A default",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "FA 2013 Sch 4 para 51",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "SI 1995/2518 reg 92",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Notice 700/44 methods",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "NIC 2026/27",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  }
+ ]
+}

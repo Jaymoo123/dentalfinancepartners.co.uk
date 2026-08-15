@@ -1,0 +1,47 @@
+{
+  "batch_id": "M1-A-B2",
+  "stage": "RUN",
+  "agent_id": "MW1-RUN-A-B2",
+  "completed_at": "2026-05-26T22:35:00Z",
+  "branch": "property-megawave1-a",
+  "worktree": "C:\\Users\\user\\Documents\\Accounting-wt-property-megawave1-a",
+  "run_commit_shas": [
+    "0630da9",
+    "955dd74",
+    "5fd14a7",
+    "8596578",
+    "1d5c644",
+    "230b8da"
+  ],
+  "stage2_commit_shas_on_main": [
+    "e706c47",
+    "8eaeb3a",
+    "4977041",
+    "a50dcf9",
+    "ae2d9cc",
+    "99e7f31",
+    "beb382f"
+  ],
+  "stage1_commit_shas_on_main": [
+    "571f4e3",
+    "4fa9d92"
+  ],
+  "slugs_done": [
+    "applicable-sdlt-rates-for-first-time-buyers",
+    "archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt",
+    "averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way",
+    "first-time-buyer-relief-benefits-and-eligibility-requirements",
+    "first-time-buyer-relief-calculator",
+    "first-time-buyer-relief-overcome-down-payment"
+  ],
+  "tracker_state": "6 of 6 picks flipped to done on docs/property/megawave1_page_tracker.md (A7-A12) with body word counts, FAQ counts, and RUN-commit references",
+  "build_state": "Property/web npm run build PASSED after each pick",
+  "flags_raised": [],
+  "qa_raised": [],
+  "hp_lock_candidates_for_stage1b_conductor": [
+    "Sec 1.K First-Time Buyers Relief - FA 2003 s.57B + Sch 6ZA - £300k/£500k thresholds + 1 April 2025 reversion + joint-purchase + bare-trust mechanics (anchors A7+A10+A11+A12 FTB cluster)",
+    "Sec 1.L SDLT-to-LBTT transitional boundary for Scottish leases granted pre-1-April-2015 - Archer UK Limited [2025] FTSTC 10 principle (anchors A8)",
+    "Sec 1.M Public rights of way and the SDLT residential/mixed-use boundary - Averdieck [2022] TC 8623 principle (or extension of existing Sec 1.J mixed-use case-law trilogy lock; anchors A9)"
+  ],
+  "notes": "All 6 picks shipped clean. Cluster: FTB-relief cluster (A7 rates + A10 eligibility + A11 calculator + A12 deposit) plus 2 single-case-analysis pages (A8 Archer LBTT [2025] FTSTC 10 transitional decision; A9 Averdieck [2022] TC 8623 PROW mixed-use case). All statutory citations verified verbatim at write per Sec 16.35: FA 2003 s.57B + Sch 6ZA paras 1(3), 4 (Table A), 6, 6A-6D; F(No.2)A 2024 s.8; FA 2003 s.116(1)(a)-(c); FA 2003 Sch 4ZA; SSI 2014/377 Article 13 (LBTT transitional); LISA gov.uk parameters; Help to Buy ISA gov.uk parameters. Brief math errors corrected in A7 (£400k standard SDLT is £10k not £7.5k as brief said; max cash saving plateaus at £5,000). A8 case citation [2025] FTSTC 10 verified via Ross Martin's tax news article; canonical Averdieck spelling for A9 confirmed via Patrick Cannon + Cannon Chambers references (TC/2022/02324, [2022] TC 8623). A11 FTB React component build deferred per brief option B (calculation-walkthrough text shipped instead). No F-flags raised; no Q-N raised. Worktree note: npm install --workspace=property-web was run inside worktree to populate node_modules for build verification (node_modules not committed); not part of the 6 RUN commits."
+}

@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "generated_at": "2026-07-24",
+    "edition": "Child Maintenance Service statistics: data to March 2026",
+    "published": "2026-06-30",
+    "next_release": "2026-09-29",
+    "coverage": "Great Britain",
+    "notes": "All figures as published in the DWP quarterly bulletin. Caseload figures are rounded as published (nearest 10,000 or 1,000). Collect and Pay compliance figures relate to the quarter to March 2026. Cumulative arrears run from the start of the Child Maintenance Service in 2012. Values not published in the bulletin are stored as null, never estimated.",
+    "sources": [
+      {
+        "name": "Child Maintenance Service statistics: data to March 2026",
+        "publisher": "Department for Work and Pensions",
+        "url": "https://www.gov.uk/government/statistics/child-maintenance-service-statistics-data-to-march-2026/child-maintenance-service-statistics-data-to-march-2026",
+        "licence": "OGL v3.0"
+      }
+    ]
+  },
+  "headline": {
+    "quarter": "2026-Q1",
+    "quarter_label": "quarter to March 2026",
+    "arrangements_total": 810000,
+    "paying_parents": 730000,
+    "children_covered": 1100000,
+    "children_covered_yoy_change": 44000,
+    "direct_pay_share_pct": 55,
+    "direct_pay_arrangements": 450000,
+    "collect_and_pay_share_pct": 43,
+    "collect_and_pay_arrangements": 350000,
+    "unassigned_share_pct": 2,
+    "unassigned_arrangements": 13000,
+    "maintenance_due_total_gbp_m": 405.1,
+    "maintenance_due_direct_pay_gbp_m": 292.3,
+    "maintenance_due_collect_and_pay_gbp_m": 112.8,
+    "collect_and_pay_paid_gbp_m": 86.5,
+    "collect_and_pay_unpaid_gbp_m": 26.3,
+    "collect_and_pay_paid_some_pct": 77,
+    "collect_and_pay_paid_over_90pct_share_pct": 54,
+    "collect_and_pay_paid_up_to_90pct_share_pct": 23,
+    "cumulative_arrears_since_2012_gbp_m": 791.2,
+    "cumulative_arrears_share_of_due_pct": 7,
+    "applications_quarter": 38000,
+    "applications_year_to_march_2026": 150000,
+    "applications_yoy_pct": -1.0
+  },
+  "quarterly": [
+    {
+      "quarter": "2026-Q1",
+      "maintenance_due_total_gbp_m": 405.1,
+      "maintenance_due_direct_pay_gbp_m": 292.3,
+      "maintenance_due_collect_and_pay_gbp_m": 112.8,
+      "collect_and_pay_paid_gbp_m": 86.5,
+      "collect_and_pay_unpaid_gbp_m": 26.3,
+      "collect_and_pay_paid_some_pct": 77,
+      "applications": 38000,
+      "cumulative_arrears_since_2012_gbp_m": 791.2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "batch_id": "M3-C-B2",
+  "agent_id": "MW3-Stage1-C-B2",
+  "completed_at": "2026-05-27T20:30:00Z",
+  "commit_shas": [
+    "dac49ad",
+    "c2d706c",
+    "fd7a971",
+    "af1e3a6",
+    "b3660af",
+    "df57ad0"
+  ],
+  "slugs_done": [
+    "are-rent-arrears-skyrocketing-and-squeezing-landlords",
+    "are-you-a-property-investor-or-developer",
+    "a-short-guide-planning-permission-in-uk",
+    "bed-and-breakfasting",
+    "booking-com-a-complete-guide-for-the-hosts",
+    "brief-introduction-to-commercial-property-service-charge-accounts"
+  ],
+  "notes": [
+    "All 6 seeds anchored on pre-locked HP sections (§4 + §6 + §18 + §20 + §25 + §27 + §28 + §29 + §30 + §32 + §1.J + Wave 7 cap-vs-rev) — no NEW HP lock raised.",
+    "C7 RRA 2025 Sch 1 para 24 verified verbatim (Ground 8 threshold 8w→13w + notice 2w→3w + UC carve-out).",
+    "C8 §28 full architecture pre-locked from Wave 8; RPDT status IN FORCE per FA 2022 ss.31-53 reaffirmed.",
+    "C9 TCPA 1990 s.55(1) + s.55(2)(f) verified verbatim; GPDO 2015 SI 2015/596 + Class MA in-force confirmed via legislation.gov.uk.",
+    "C10 TCGA 1992 s.106A verified verbatim (30-day matching for securities); slug-cluster mismatch flagged for manager (Tenancies cluster ≠ CGT slug content).",
+    "C11 F-102 cannib watch held against C5 Airbnb sibling — Booking.com-distinct framing (reverse-charge VAT B.V. commission + Genius + channel-manager + no-show + cross-OTA reconciliation).",
+    "C12 commercial orientation hub — RICS 2018 Statement + LTA 1985 non-application + VAT-follows-Sch 10 + CRAR; possible §26 mini-extension recommended for Stage 1b."
+  ]
+}

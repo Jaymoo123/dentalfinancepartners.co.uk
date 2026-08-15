@@ -1,0 +1,2386 @@
+{
+ "generated": "2026-08-10",
+ "site_key": "leasehold",
+ "inputs": {
+  "screener_universe": 284,
+  "sweep5_rows": 389,
+  "merged_queries": 643,
+  "sampled_serps": 50,
+  "global_mean_thinness": 0.622,
+  "competitor_domains_harvested": 15,
+  "competitor_pages": 384,
+  "competitor_topic_candidates": 105
+ },
+ "totals": {
+  "topics": 130,
+  "wave1": 14,
+  "wave2": 36,
+  "wave3": 44,
+  "wave4": 36
+ },
+ "topics": [
+  {
+   "id": "lease-extension-cost-guide",
+   "title": "How much does a lease extension cost",
+   "wave": 1,
+   "origin": "demand",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "head; 1,300 x3 head variants; premium + fees + worked ranges",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "lease-extension-premium-calculated",
+   "title": "How a lease extension premium is calculated",
+   "wave": 1,
+   "origin": "strategic",
+   "family": "lease-extension-calculator",
+   "family_vol": 11530,
+   "family_score": 7247.3,
+   "example_queries": [
+    "lease extension calculator",
+    "lease extension estimate",
+    "cost lease extension calculator",
+    "flat lease extension calculator"
+   ],
+   "note": "calculator companion; term/reversion/marriage value maths, indicative-only framing",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "marriage-value-80-year-rule",
+   "title": "Marriage value and the 80-year rule explained",
+   "wave": 1,
+   "origin": "demand",
+   "family": "marriage-value",
+   "family_vol": 1940,
+   "family_score": 1256.4,
+   "example_queries": [
+    "lease marriage value",
+    "leasehold marriage value",
+    "leasehold reform marriage value",
+    "marriage value lease extension"
+   ],
+   "note": "calculator companion; NOT abolished, cite GROUND_TRUTH",
+   "covering_domains": [
+    "lease-extensions.org.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "extend-now-or-wait-reform",
+   "title": "Extend your lease now or wait for reform",
+   "wave": 1,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "calculator companion (wait-or-act tool); rates consultation closes 23 Sep 2026",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "hoa.org.uk",
+    "homehold.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "statutory-vs-informal-extension",
+   "title": "Statutory vs informal lease extension",
+   "wave": 1,
+   "origin": "demand",
+   "family": "lease-extension-process",
+   "family_vol": 1190,
+   "family_score": 839.7,
+   "example_queries": [
+    "statutory lease extension",
+    "statutory leasehold extension",
+    "statutory lease extension process",
+    "leasehold reform housing and urban development act 1993 section 42"
+   ],
+   "note": "480 statutory head; informal risks (ground rent, terms)",
+   "covering_domains": []
+  },
+  {
+   "id": "lease-extension-process",
+   "title": "Lease extension process step by step",
+   "wave": 1,
+   "origin": "demand",
+   "family": "lease-extension-process",
+   "family_vol": 1190,
+   "family_score": 839.7,
+   "example_queries": [
+    "statutory lease extension",
+    "statutory leasehold extension",
+    "statutory lease extension process",
+    "leasehold reform housing and urban development act 1993 section 42"
+   ],
+   "note": "s.42 route, timeline, who does what",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "lease-extension-solicitor-fees",
+   "title": "Lease extension solicitor and valuer fees",
+   "wave": 1,
+   "origin": "demand",
+   "family": "lease-extension-solicitors",
+   "family_vol": 3940,
+   "family_score": 2535.1,
+   "example_queries": [
+    "lease extension lawyers",
+    "lease extension solicitor",
+    "leasehold extension solicitors",
+    "lease extension solicitors near me"
+   ],
+   "note": "delegation head 1,000 x3; fee stack; choose-a-specialist close",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "buy-freehold-house",
+   "title": "Buying the freehold of a leasehold house",
+   "wave": 1,
+   "origin": "demand",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "1967 Act route; calculator companion",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "homehold.org",
+    "lease-advice.org",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "collective-enfranchisement-guide",
+   "title": "Collective enfranchisement: buying your block's freehold",
+   "wave": 1,
+   "origin": "demand",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "480 head; calculator companion",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "worth-buying-freehold",
+   "title": "Is it worth buying your freehold",
+   "wave": 1,
+   "origin": "demand",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "decision framing house + flat",
+   "covering_domains": []
+  },
+  {
+   "id": "right-to-manage-guide",
+   "title": "Right to manage: the complete guide",
+   "wave": 1,
+   "origin": "demand",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "head 1,000 @ KD 1; post-March-2025 law",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "rtm-eligibility",
+   "title": "Right to manage eligibility: do you qualify",
+   "wave": 1,
+   "origin": "strategic",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "calculator companion (RTM checker); 50% non-residential rule",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "ground-rent-explained",
+   "title": "Ground rent explained",
+   "wave": 1,
+   "origin": "demand",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "calculator companion; 2022 Act new-leases-only line",
+   "covering_domains": [
+    "bishopandsewell.co.uk"
+   ]
+  },
+  {
+   "id": "leasehold-reform-in-force",
+   "title": "Leasehold reform: what is actually in force",
+   "wave": 1,
+   "origin": "demand",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "head 'leasehold reform' 9,900; the commencement-status authority page",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "hoa.org.uk",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "section-42-notice",
+   "title": "Section 42 notice explained",
+   "wave": 2,
+   "origin": "demand",
+   "family": "lease-extension-process",
+   "family_vol": 1190,
+   "family_score": 839.7,
+   "example_queries": [
+    "statutory lease extension",
+    "statutory leasehold extension",
+    "statutory lease extension process",
+    "leasehold reform housing and urban development act 1993 section 42"
+   ],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bradysolicitors.com",
+    "homehold.org",
+    "lease-extensions.org.uk",
+    "leaseholdadvicecentre.co.uk",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "choose-lease-extension-solicitor",
+   "title": "How to choose a lease extension solicitor",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "lease-extension-solicitors",
+   "family_vol": 3940,
+   "family_score": 2535.1,
+   "example_queries": [
+    "lease extension lawyers",
+    "lease extension solicitor",
+    "leasehold extension solicitors",
+    "lease extension solicitors near me"
+   ],
+   "note": "delegation support",
+   "covering_domains": [
+    "extension.lease",
+    "freeholdcalculator.com",
+    "lease-extensions.org.uk"
+   ]
+  },
+  {
+   "id": "lease-extension-valuation",
+   "title": "Lease extension valuation: what the surveyor does",
+   "wave": 2,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "RICS valuer role; never a formula",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "lease-under-80-years",
+   "title": "Lease under 80 years: your options",
+   "wave": 2,
+   "origin": "demand",
+   "family": "marriage-value",
+   "family_vol": 1940,
+   "family_score": 1256.4,
+   "example_queries": [
+    "lease marriage value",
+    "leasehold marriage value",
+    "leasehold reform marriage value",
+    "marriage value lease extension"
+   ],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org"
+   ]
+  },
+  {
+   "id": "share-of-freehold-extension",
+   "title": "Extending a lease on a share of freehold flat",
+   "wave": 2,
+   "origin": "demand",
+   "family": "share-of-freehold-extension",
+   "family_vol": 420,
+   "family_score": 279.9,
+   "example_queries": [
+    "extending lease on share of freehold",
+    "extending lease with share of freehold",
+    "lease extension with share of freehold"
+   ],
+   "note": "420 family",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "hoa.org.uk",
+    "homehold.org",
+    "servicechargecalculator.co.uk"
+   ]
+  },
+  {
+   "id": "shared-ownership-extension",
+   "title": "Shared ownership lease extensions",
+   "wave": 2,
+   "origin": "demand",
+   "family": "shared-ownership-extension",
+   "family_vol": 130,
+   "family_score": 99.5,
+   "example_queries": [
+    "shared ownership lease extension",
+    "can i buy the freehold of my shared ownership property",
+    "right to manage shared ownership"
+   ],
+   "note": "staircasing interplay",
+   "covering_domains": [
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "lease-extension-mortgage",
+   "title": "Lease extensions and your mortgage",
+   "wave": 2,
+   "origin": "demand",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "lender consent; adding cost to mortgage",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "homehold.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "selling-short-lease-flat",
+   "title": "Selling a flat with a short lease",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "",
+   "covering_domains": [
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "buying-short-lease-flat",
+   "title": "Buying a flat with a short lease",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "2-year rule abolition changes the playbook",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "lease-extension-house",
+   "title": "Extending the lease on a house",
+   "wave": 2,
+   "origin": "demand",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "1967 Act; usually buy freehold instead",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "hoa.org.uk",
+    "homehold.org",
+    "servicechargecalculator.co.uk"
+   ]
+  },
+  {
+   "id": "90-vs-990-years",
+   "title": "90-year vs 990-year lease extensions",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "990 NOT in force",
+   "covering_domains": []
+  },
+  {
+   "id": "absent-freeholder",
+   "title": "Absent freeholder: extending or buying without a landlord",
+   "wave": 2,
+   "origin": "demand",
+   "family": "absent-freeholder",
+   "family_vol": 0,
+   "family_score": 0,
+   "example_queries": [],
+   "note": "vesting orders",
+   "covering_domains": [
+    "homehold.org",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "collective-enfranchisement-cost",
+   "title": "Collective enfranchisement costs",
+   "wave": 2,
+   "origin": "demand",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "freehold-vs-extension",
+   "title": "Buy the freehold or extend the lease",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "share-of-freehold-meaning",
+   "title": "Share of freehold: meaning, pros and cons",
+   "wave": 2,
+   "origin": "demand",
+   "family": "share-of-freehold-extension",
+   "family_vol": 420,
+   "family_score": 279.9,
+   "example_queries": [
+    "extending lease on share of freehold",
+    "extending lease with share of freehold",
+    "lease extension with share of freehold"
+   ],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "lease-advice.org"
+   ]
+  },
+  {
+   "id": "rtm-process",
+   "title": "Right to manage process and notices",
+   "wave": 2,
+   "origin": "demand",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "rtm-company",
+   "title": "RTM companies: formation, directors and accounts",
+   "wave": 2,
+   "origin": "demand",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "390 'right to manage company'",
+   "covering_domains": []
+  },
+  {
+   "id": "rtm-costs",
+   "title": "Right to manage costs",
+   "wave": 2,
+   "origin": "demand",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "post-2025 costs regime",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "rtm-vs-freehold",
+   "title": "Right to manage vs buying the freehold",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "rtm-mixed-use",
+   "title": "Right to manage for mixed-use buildings",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "25% to 50% change 3 Mar 2025; news hook",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "doubling-ground-rent",
+   "title": "Doubling ground rent clauses",
+   "wave": 2,
+   "origin": "demand",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "~400 sub-family",
+   "covering_domains": [
+    "homehold.org",
+    "lease-extensions.org.uk"
+   ]
+  },
+  {
+   "id": "peppercorn-ground-rent-2022-act",
+   "title": "Peppercorn rents and the Ground Rent Act 2022",
+   "wave": 2,
+   "origin": "demand",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "1,600 'ground rent a peppercorn'",
+   "covering_domains": []
+  },
+  {
+   "id": "ground-rent-cap-proposal",
+   "title": "The \u00a3250 ground rent cap: proposal status",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "draft Bill; PROPOSAL framing",
+   "covering_domains": []
+  },
+  {
+   "id": "service-charge-challenge",
+   "title": "How to challenge your service charge",
+   "wave": 2,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "head of the dispute family",
+   "covering_domains": []
+  },
+  {
+   "id": "section-20-consultation",
+   "title": "Section 20 consultation explained",
+   "wave": 2,
+   "origin": "demand",
+   "family": "section-20",
+   "family_vol": 930,
+   "family_score": 763.3,
+   "example_queries": [
+    "what is section 20 notice",
+    "what is a section 20 notice",
+    "section 20 notice template",
+    "section 20 notice template gov uk"
+   ],
+   "note": "780 what-is head",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com"
+   ]
+  },
+  {
+   "id": "lafra-tracker",
+   "title": "Leasehold and Freehold Reform Act 2024: provision-by-provision tracker",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "authority asset; update-driven",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "freeholdcalculator.com",
+    "lease-extensions.org.uk",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "commonhold-explained",
+   "title": "Commonhold explained and the draft Bill",
+   "wave": 2,
+   "origin": "demand",
+   "family": "commonhold",
+   "family_vol": 1610,
+   "family_score": 1115.5,
+   "example_queries": [
+    "commonhold and leasehold reform act",
+    "commonhold and leasehold reform act 2002",
+    "commonhold and leasehold reform act 2002 section 166",
+    "how does commonhold work"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "valuation-rates-consultation",
+   "title": "Enfranchisement valuation rates consultation explained",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "live to 23 Sep 2026; Sportelli",
+   "covering_domains": [
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "two-year-rule-abolished",
+   "title": "The two-year ownership rule is gone",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "SI 2025/57",
+   "covering_domains": []
+  },
+  {
+   "id": "bsa-leaseholder-protections",
+   "title": "Building Safety Act leaseholder protections overview",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "qualifying leases, Sch 8 caps",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "find-your-freeholder",
+   "title": "Who owns my freehold: finding your landlord",
+   "wave": 2,
+   "origin": "demand",
+   "family": "UNMATCHED",
+   "family_vol": 640,
+   "family_score": 634.4,
+   "example_queries": [
+    "do i need a solicitor to buy my freehold",
+    "how can i buy my freehold",
+    "how do i buy my freehold",
+    "how to buy my freehold"
+   ],
+   "note": "Land Registry route",
+   "covering_domains": []
+  },
+  {
+   "id": "leasehold-vs-freehold",
+   "title": "Leasehold vs freehold explained",
+   "wave": 2,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "foundation pillar support",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "freeholdcalculator.com",
+    "lease-extensions.org.uk",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "ftt-property-chamber",
+   "title": "First-tier Tribunal (Property Chamber): how it works",
+   "wave": 2,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "fees, process; supports disputes cluster",
+   "covering_domains": []
+  },
+  {
+   "id": "lease-extension-stamp-duty",
+   "title": "Stamp duty on lease extensions",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "SDLT on premium",
+   "covering_domains": [
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "lease-extension-tax",
+   "title": "Lease extension costs and tax",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "CGT/allowable expense queries",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "lease-extension-land-registry",
+   "title": "Registering a lease extension at the Land Registry",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "lease-extension-timescales",
+   "title": "How long does a lease extension take",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "freeholdcalculator.com",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk",
+    "servicechargecalculator.co.uk",
+    "startleaseextensions.co.uk",
+    "theadvisory.co.uk"
+   ]
+  },
+  {
+   "id": "counter-notice-negotiation",
+   "title": "Counter-notices and negotiating the premium",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-extension-process",
+   "family_vol": 1190,
+   "family_score": 839.7,
+   "example_queries": [
+    "statutory lease extension",
+    "statutory leasehold extension",
+    "statutory lease extension process",
+    "leasehold reform housing and urban development act 1993 section 42"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "lease-extension-tribunal",
+   "title": "Taking a lease extension premium to tribunal",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "section-60-costs",
+   "title": "Section 60 costs: what you pay the freeholder",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "still payable on 1993 Act claims",
+   "covering_domains": [
+    "bradysolicitors.com"
+   ]
+  },
+  {
+   "id": "right-of-first-refusal",
+   "title": "Right of first refusal (section 5 notices)",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "LTA 1987",
+   "covering_domains": [
+    "alep.org.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "freehold-company-nominee",
+   "title": "Setting up a company to buy your freehold",
+   "wave": 3,
+   "origin": "demand",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "nominee purchaser",
+   "covering_domains": []
+  },
+  {
+   "id": "estate-rentcharges-fleecehold",
+   "title": "Freehold estate charges and fleecehold",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "LAFRA estate management provisions uncommenced",
+   "covering_domains": [
+    "bradysolicitors.com"
+   ]
+  },
+  {
+   "id": "absent-freeholder-purchase",
+   "title": "Buying the freehold when the freeholder is missing",
+   "wave": 3,
+   "origin": "demand",
+   "family": "absent-freeholder",
+   "family_vol": 0,
+   "family_score": 0,
+   "example_queries": [],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "homehold.org",
+    "lease-advice.org",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "ground-rent-over-250-ast",
+   "title": "Ground rent over \u00a3250: the assured tenancy trap",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "current law; reform pending",
+   "covering_domains": []
+  },
+  {
+   "id": "ground-rent-arrears-forfeiture",
+   "title": "Ground rent arrears and forfeiture risk",
+   "wave": 3,
+   "origin": "demand",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "ground-rent-demands",
+   "title": "Ground rent demands and section 166 notices",
+   "wave": 3,
+   "origin": "demand",
+   "family": "commonhold",
+   "family_vol": 1610,
+   "family_score": 1115.5,
+   "example_queries": [
+    "commonhold and leasehold reform act",
+    "commonhold and leasehold reform act 2002",
+    "commonhold and leasehold reform act 2002 section 166",
+    "how does commonhold work"
+   ],
+   "note": "s.166 CLRA 2002 lookups",
+   "covering_domains": []
+  },
+  {
+   "id": "onerous-ground-rent-selling",
+   "title": "Selling or remortgaging with an onerous ground rent",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "",
+   "covering_domains": [
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "service-charge-reasonableness",
+   "title": "Service charge reasonableness and section 27A applications",
+   "wave": 3,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com",
+    "servicechargecalculator.co.uk"
+   ]
+  },
+  {
+   "id": "18-month-rule",
+   "title": "The 18-month rule (section 20B)",
+   "wave": 3,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "sinking-funds",
+   "title": "Sinking funds and reserve funds",
+   "wave": 3,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "managing-agent-complaints",
+   "title": "Managing agent problems and redress schemes",
+   "wave": 3,
+   "origin": "demand",
+   "family": "managing-agents",
+   "family_vol": 10,
+   "family_score": 22.4,
+   "example_queries": [
+    "managing agents for leasehold properties",
+    "managing agent for flat owners",
+    "managing agent for leaseholders"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "insurance-commissions",
+   "title": "Buildings insurance commissions and transparency",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "LAFRA s.60 uncommenced",
+   "covering_domains": []
+  },
+  {
+   "id": "lafra-service-charge-reforms",
+   "title": "LAFRA service charge reforms: what is coming",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "SIs from late 2026",
+   "covering_domains": []
+  },
+  {
+   "id": "commonhold-conversion",
+   "title": "Converting leasehold to commonhold",
+   "wave": 3,
+   "origin": "demand",
+   "family": "commonhold",
+   "family_vol": 1610,
+   "family_score": 1115.5,
+   "example_queries": [
+    "commonhold and leasehold reform act",
+    "commonhold and leasehold reform act 2002",
+    "commonhold and leasehold reform act 2002 section 166",
+    "how does commonhold work"
+   ],
+   "note": "screener reg-churn candidate",
+   "covering_domains": []
+  },
+  {
+   "id": "new-leasehold-flat-ban",
+   "title": "The proposed ban on new leasehold flats",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "consultation closed 24 Apr 2026",
+   "covering_domains": []
+  },
+  {
+   "id": "lrhuda-1993-explained",
+   "title": "Leasehold Reform, Housing and Urban Development Act 1993 explained",
+   "wave": 3,
+   "origin": "demand",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "act-lookup family",
+   "covering_domains": []
+  },
+  {
+   "id": "lra-1967-explained",
+   "title": "Leasehold Reform Act 1967 explained",
+   "wave": 3,
+   "origin": "demand",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "extension.lease",
+    "hoa.org.uk",
+    "homehold.org",
+    "lease-advice.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "myleasehold.co.uk"
+   ]
+  },
+  {
+   "id": "qualifying-lease-certificates",
+   "title": "Qualifying leases and leaseholder certificates",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "BSA 2022",
+   "covering_domains": []
+  },
+  {
+   "id": "cladding-service-charges",
+   "title": "Cladding, remediation and your service charge",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "Sch 8 caps",
+   "covering_domains": []
+  },
+  {
+   "id": "deed-of-variation",
+   "title": "Deeds of variation for leases",
+   "wave": 3,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "forfeiture-rights",
+   "title": "Forfeiture: what leaseholders need to know",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "cma-ground-rent-undertakings",
+   "title": "CMA action on doubling ground rents",
+   "wave": 3,
+   "origin": "strategic",
+   "family": "ground-rent-basics",
+   "family_vol": 5300,
+   "family_score": 3777.8,
+   "example_queries": [
+    "ground rent a peppercorn",
+    "leasehold reform ground rent",
+    "ground rent reform",
+    "leasehold reform ground rent act 2022"
+   ],
+   "note": "developer undertakings",
+   "covering_domains": []
+  },
+  {
+   "id": "deferment-rate-sportelli",
+   "title": "Deferment rates and Sportelli",
+   "wave": 4,
+   "origin": "demand",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "expert-tier",
+   "covering_domains": []
+  },
+  {
+   "id": "ground-rent-buyout-right",
+   "title": "Ground rent buyout: the uncommenced LAFRA right",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "leasehold-reform-status",
+   "family_vol": 14440,
+   "family_score": 9361.1,
+   "example_queries": [
+    "leasehold reform",
+    "leasehold reform act",
+    "leasehold reform act 2002",
+    "leasehold reform bill"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "participation-agreements",
+   "title": "Participation agreements in collective enfranchisement",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "non-participating-leaseholders",
+   "title": "Non-participating flats in a freehold purchase",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "intermediate-leases",
+   "title": "Head leases and intermediate landlords",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "development-hope-value",
+   "title": "Development value and hope value in enfranchisement",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "appointing-a-manager",
+   "title": "Appointing a manager (section 24) vs RTM",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "fault-based alternative",
+   "covering_domains": []
+  },
+  {
+   "id": "rtm-after-acquisition",
+   "title": "Running the building after RTM",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "handover, contracts, insurance",
+   "covering_domains": []
+  },
+  {
+   "id": "rtm-housing-association",
+   "title": "Right to manage and housing associations",
+   "wave": 4,
+   "origin": "demand",
+   "family": "right-to-manage",
+   "family_vol": 2540,
+   "family_score": 1835.3,
+   "example_queries": [
+    "right to manage",
+    "right to manage company",
+    "right to manage leasehold",
+    "right to manage process"
+   ],
+   "note": "",
+   "covering_domains": [
+    "alep.org.uk",
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "administration-charges",
+   "title": "Administration charges (Schedule 11)",
+   "wave": 4,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": [
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "service-charge-accounts",
+   "title": "Service charge accounts and summaries",
+   "wave": 4,
+   "origin": "demand",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com",
+    "lease-advice.org",
+    "leaseholdadvicecentre.co.uk",
+    "leaseholdknowledge.com",
+    "servicechargecalculator.co.uk"
+   ]
+  },
+  {
+   "id": "major-works-payment",
+   "title": "Major works bills: rights and payment options",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com"
+   ]
+  },
+  {
+   "id": "recognised-tenants-association",
+   "title": "Recognised tenants' associations",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "service-charge",
+   "family_vol": 440,
+   "family_score": 460.3,
+   "example_queries": [
+    "service charge dispute",
+    "service charge dispute solicitors",
+    "freehold service charge dispute",
+    "first tier tribunal service charge"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "leaseholdknowledge.com"
+   ]
+  },
+  {
+   "id": "licence-to-alter",
+   "title": "Licence to alter: flat alterations",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "homehold.org"
+   ]
+  },
+  {
+   "id": "lease-covenants",
+   "title": "Lease covenants: pets, subletting, alterations",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "bradysolicitors.com"
+   ]
+  },
+  {
+   "id": "btl-landlord-lease-extension",
+   "title": "Lease extensions for buy-to-let landlords",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "lease-extension-cost",
+   "family_vol": 11670,
+   "family_score": 8886.9,
+   "example_queries": [
+    "how much does a lease extension cost",
+    "how much does it cost to extend a lease",
+    "how much does lease extension cost",
+    "cost of lease extension"
+   ],
+   "note": "investor angle; tax cross-links",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "homehold.org",
+    "lease-extensions.org.uk",
+    "leaseholdknowledge.com",
+    "startleaseextensions.co.uk"
+   ]
+  },
+  {
+   "id": "retirement-leasehold",
+   "title": "Retirement leasehold: event fees and ground rent",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "2022 Act from 1 Apr 2023",
+   "covering_domains": []
+  },
+  {
+   "id": "enfranchisement-safety-issues",
+   "title": "Enfranchisement and RTM in buildings with safety issues",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "lease-general",
+   "family_vol": 1530,
+   "family_score": 1417.4,
+   "example_queries": [
+    "leasehold extension cost calculator",
+    "leasehold extension reform",
+    "lease extension premium calculator",
+    "stamp duty on lease extension"
+   ],
+   "note": "BSA interplay",
+   "covering_domains": []
+  },
+  {
+   "id": "freeholder-building-insurance",
+   "title": "Buildings insurance after buying your freehold",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "leaseback-arrangements",
+   "title": "Leasebacks in collective enfranchisement",
+   "wave": 4,
+   "origin": "strategic",
+   "family": "buy-freehold",
+   "family_vol": 2970,
+   "family_score": 2062.7,
+   "example_queries": [
+    "collective enfranchisement",
+    "buy the freehold calculator",
+    "buying a freehold cost",
+    "cost of buying freehold"
+   ],
+   "note": "",
+   "covering_domains": []
+  },
+  {
+   "id": "what-is-leasehold",
+   "title": "What is leasehold: the basics",
+   "wave": 2,
+   "family": "lease-general",
+   "note": "foundational; 3 competitor domains",
+   "covering_domains": [
+    "lease-advice.org",
+    "homehold.org",
+    "hoa.org.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "overpaying-negotiation-traps",
+   "title": "Lease extension traps: are you overpaying",
+   "wave": 2,
+   "family": "lease-extension-cost",
+   "note": "pro-consumer signature piece; homehold's editorial position",
+   "covering_domains": [
+    "homehold.org",
+    "lease-extensions.org.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "who-qualifies-lease-extension",
+   "title": "Who qualifies for a statutory lease extension",
+   "wave": 2,
+   "family": "lease-extension-process",
+   "note": "eligibility distinct from process",
+   "covering_domains": [
+    "lease-advice.org",
+    "homehold.org",
+    "extension.lease"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "understanding-your-lease",
+   "title": "Understanding your lease document",
+   "wave": 3,
+   "family": "lease-general",
+   "note": "clause-by-clause reading guide",
+   "covering_domains": [
+    "lease-advice.org",
+    "homehold.org"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "leaseholder-rights-responsibilities",
+   "title": "Leaseholder rights and responsibilities",
+   "wave": 3,
+   "family": "lease-general",
+   "note": "",
+   "covering_domains": [
+    "lease-advice.org",
+    "hoa.org.uk",
+    "bradysolicitors.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "informal-offer-from-freeholder",
+   "title": "Should you accept the freeholder's informal offer",
+   "wave": 3,
+   "family": "lease-extension-process",
+   "note": "they-got-a-letter intent; links statutory-vs-informal",
+   "covering_domains": [
+    "homehold.org",
+    "lease-extensions.org.uk",
+    "myleasehold.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "assigning-section-42-notice",
+   "title": "Assigning a section 42 notice when selling",
+   "wave": 3,
+   "family": "lease-extension-process",
+   "note": "mid-claim sale; still relevant post 2-year rule for chains",
+   "covering_domains": [
+    "extension.lease",
+    "startleaseextensions.co.uk",
+    "bishopandsewell.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "financing-the-premium",
+   "title": "How to pay for a lease extension you cannot afford",
+   "wave": 3,
+   "family": "lease-extension-cost",
+   "note": "remortgage/savings/staged options; no product advice",
+   "covering_domains": [
+    "homehold.org",
+    "myleasehold.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "lease-extension-value-uplift",
+   "title": "Does extending your lease increase the property value",
+   "wave": 3,
+   "family": "lease-extension-cost",
+   "note": "",
+   "covering_domains": [
+    "homehold.org",
+    "startleaseextensions.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "probate-lease-extension",
+   "title": "Lease extensions during probate",
+   "wave": 3,
+   "family": "lease-extension-process",
+   "note": "estate synergy with wills-probate site",
+   "covering_domains": [
+    "extension.lease",
+    "bishopandsewell.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "organising-fellow-leaseholders",
+   "title": "Organising your fellow leaseholders for a freehold purchase",
+   "wave": 3,
+   "family": "buy-freehold",
+   "note": "practical companion to participation agreements",
+   "covering_domains": [
+    "homehold.org",
+    "alep.org.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "rmc-vs-rtm",
+   "title": "Residents' management companies vs RTM companies",
+   "wave": 3,
+   "family": "right-to-manage",
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "leaseholdknowledge.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "withholding-service-charges",
+   "title": "Withholding service charges: the risks",
+   "wave": 3,
+   "family": "service-charge",
+   "note": "",
+   "covering_domains": [
+    "lease-advice.org",
+    "bradysolicitors.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "soaring-service-charges",
+   "title": "Soaring service charges: causes and what you can do",
+   "wave": 3,
+   "family": "service-charge",
+   "note": "news-cycle topic; selling with high charges",
+   "covering_domains": [
+    "leaseholdknowledge.com",
+    "hoa.org.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "lafra-judicial-review",
+   "title": "The freeholders' legal challenge to LAFRA",
+   "wave": 3,
+   "family": "leasehold-reform-status",
+   "note": "CoA appeal pending late 2026 to early 2027",
+   "covering_domains": [
+    "leaseholdknowledge.com",
+    "bishopandsewell.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "buying-leasehold-checks",
+   "title": "Buying a leasehold property: checks before you commit",
+   "wave": 3,
+   "family": "lease-general",
+   "note": "",
+   "covering_domains": [
+    "hoa.org.uk",
+    "homehold.org",
+    "lease-advice.org"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "template-letters-hub",
+   "title": "Template letters and forms for leaseholders",
+   "wave": 3,
+   "family": "service-charge",
+   "note": "lead-magnet asset; s.20 family has 'section 20 notice template' 90+30",
+   "covering_domains": [
+    "lease-advice.org",
+    "leaseholdknowledge.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "section-57-new-lease-terms",
+   "title": "Section 57: terms of the new lease",
+   "wave": 4,
+   "family": "lease-extension-process",
+   "note": "",
+   "covering_domains": [
+    "extension.lease",
+    "startleaseextensions.co.uk",
+    "bishopandsewell.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "competent-landlord",
+   "title": "Who is the competent landlord",
+   "wave": 4,
+   "family": "lease-extension-process",
+   "note": "intermediate-lease interplay",
+   "covering_domains": [
+    "extension.lease"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "arrears-blocking-extension",
+   "title": "Can arrears or disputes block a lease extension",
+   "wave": 4,
+   "family": "lease-extension-process",
+   "note": "",
+   "covering_domains": [
+    "startleaseextensions.co.uk",
+    "bradysolicitors.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "rmc-accounts-s21",
+   "title": "Flat management company accounts and section 21 reports",
+   "wave": 4,
+   "family": "service-charge",
+   "note": "accounting-estate synergy; RMC/RTM director audience",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "leaseholdknowledge.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "section-20-dispensation",
+   "title": "Section 20 dispensation applications",
+   "wave": 4,
+   "family": "section-20",
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "bishopandsewell.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "service-charge-demand-validity",
+   "title": "Service charge demand validity (sections 47 and 48)",
+   "wave": 4,
+   "family": "service-charge",
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "service-charge-arrears",
+   "title": "Service charge arrears and recovery",
+   "wave": 4,
+   "family": "service-charge",
+   "note": "both-sides framing kept leaseholder-first",
+   "covering_domains": [
+    "bradysolicitors.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "county-court-vs-tribunal",
+   "title": "County court or property tribunal for leasehold disputes",
+   "wave": 4,
+   "family": "service-charge",
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "lease-advice.org"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "leasehold-mediation",
+   "title": "Mediation for leasehold disputes",
+   "wave": 4,
+   "family": "service-charge",
+   "note": "",
+   "covering_domains": [
+    "lease-advice.org",
+    "bradysolicitors.com"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "serving-notices-correctly",
+   "title": "Serving notices on your landlord correctly",
+   "wave": 4,
+   "family": "lease-extension-process",
+   "note": "",
+   "covering_domains": [
+    "extension.lease",
+    "startleaseextensions.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "management-packs-lpe1",
+   "title": "Management packs (LPE1) when selling a flat",
+   "wave": 4,
+   "family": "lease-general",
+   "note": "",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "homehold.org"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "crown-estate-leases",
+   "title": "Crown Estate and excepted-area leases",
+   "wave": 4,
+   "family": "lease-extension-process",
+   "note": "expert tier",
+   "covering_domains": [
+    "extension.lease"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "prime-london-enfranchisement",
+   "title": "Enfranchisement on London's great estates",
+   "wave": 4,
+   "family": "buy-freehold",
+   "note": "high-value cases; ALEP territory",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "myleasehold.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "loft-roof-space-demise",
+   "title": "Loft and roof space: extending your demise",
+   "wave": 4,
+   "family": "lease-general",
+   "note": "",
+   "covering_domains": [
+    "bishopandsewell.co.uk",
+    "myleasehold.co.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "freeholder-received-notice",
+   "title": "Freeholders: you have received a section 42 or RTM notice",
+   "wave": 4,
+   "family": "lease-extension-process",
+   "note": "counterparty lead capture; freeholders also instruct solicitors and valuers",
+   "covering_domains": [
+    "bradysolicitors.com",
+    "bishopandsewell.co.uk",
+    "alep.org.uk"
+   ],
+   "origin": "competitor"
+  },
+  {
+   "id": "valuation-case-law",
+   "title": "Lease extension valuation case law that moves premiums",
+   "wave": 4,
+   "family": "lease-general",
+   "note": "expert authority piece",
+   "covering_domains": [
+    "myleasehold.co.uk",
+    "leaseholdknowledge.com"
+   ],
+   "origin": "competitor"
+  }
+ ]
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "key": "charity_registration_income_threshold",
+    "value": "5000",
+    "unit": "£/year",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/how-to-register-your-charity-cc21b",
+    "verified_at": "2026-07-11",
+    "notes": "Register with Charity Commission over £5,000 income; CIOs register whatever their income. HP position 1."
+  },
+  {
+    "key": "annual_return_deadline_months",
+    "value": "10",
+    "unit": "months",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/prepare-a-charity-annual-return",
+    "verified_at": "2026-07-11",
+    "notes": "Within 10 months of financial year end; content tiers at £10,000 and £25,000. HP position 2."
+  },
+  {
+    "key": "independent_examination_gate",
+    "value": "25000",
+    "unit": "£/year gross income",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31",
+    "verified_at": "2026-07-11",
+    "notes": "External scrutiny (IE or audit) required over £25,000. Applies to financial years ENDING before 2026-09-30; see independent_examination_gate_from_2026_09_30. HP position 3."
+  },
+  {
+    "key": "independent_examination_gate_from_2026_09_30",
+    "value": "40000",
+    "unit": "£/year gross income",
+    "applies_from": "financial years ending on/after 2026-09-30",
+    "source_url": "https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "verified_at": "2026-08-03",
+    "notes": "DCMS threshold uplift: IE gate £25,000 -> £40,000 for accounting years ending on or after 30 Sep 2026. HP position 3."
+  },
+  {
+    "key": "audit_threshold_income",
+    "value": "1000000",
+    "unit": "£/year gross income",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31",
+    "verified_at": "2026-07-11",
+    "notes": "Audit mandatory over £1m income, OR over £250,000 income AND gross assets over £3.26m. Applies to financial years ENDING before 2026-09-30; see audit_threshold_income_from_2026_09_30. HP position 4."
+  },
+  {
+    "key": "audit_threshold_income_from_2026_09_30",
+    "value": "1500000",
+    "unit": "£/year gross income",
+    "applies_from": "financial years ending on/after 2026-09-30",
+    "source_url": "https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "verified_at": "2026-08-03",
+    "notes": "DCMS threshold uplift: audit income gate £1m -> £1.5m for accounting years ending on or after 30 Sep 2026. HP position 4."
+  },
+  {
+    "key": "audit_threshold_assets_combined",
+    "value": "3260000",
+    "unit": "£ gross assets",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31",
+    "verified_at": "2026-07-11",
+    "notes": "Asset limb of the combined audit test (with income over £250,000). Applies to financial years ENDING before 2026-09-30; see audit_threshold_assets_combined_from_2026_09_30. HP position 4."
+  },
+  {
+    "key": "audit_threshold_assets_combined_from_2026_09_30",
+    "value": "5000000",
+    "unit": "£ gross assets",
+    "applies_from": "financial years ending on/after 2026-09-30",
+    "source_url": "https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "verified_at": "2026-08-03",
+    "notes": "DCMS threshold uplift: asset limb £3.26m -> £5m (with income over £500,000) for accounting years ending on or after 30 Sep 2026. HP position 4."
+  },
+  {
+    "key": "qualified_examiner_threshold",
+    "value": "250000",
+    "unit": "£/year gross income",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31",
+    "verified_at": "2026-07-11",
+    "notes": "Over £250,000 the examiner must belong to one of the 13 listed bodies; also the receipts-and-payments vs accruals boundary for non-company charities. Applies to financial years ENDING before 2026-09-30; see qualified_examiner_threshold_from_2026_09_30. HP positions 5-6."
+  },
+  {
+    "key": "qualified_examiner_threshold_from_2026_09_30",
+    "value": "500000",
+    "unit": "£/year gross income",
+    "applies_from": "financial years ending on/after 2026-09-30",
+    "source_url": "https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "verified_at": "2026-08-03",
+    "notes": "DCMS threshold uplift: qualified examiner + accruals/R&P boundary £250,000 -> £500,000 for accounting years ending on or after 30 Sep 2026. HP positions 5-6."
+  },
+  {
+    "key": "sorp_2026_application",
+    "value": "2026-01-01",
+    "unit": "accounting periods starting on/after",
+    "applies_from": "2026-01-01",
+    "source_url": "https://www.charitysorp.org/",
+    "verified_at": "2026-07-11",
+    "notes": "Date every SORP statement per accounting period. OPEN FLAG: tier thresholds not re-verified, do not state. HP position 7."
+  },
+  {
+    "key": "small_trading_exemption_tiers",
+    "value": "8000 / 25% / 80000",
+    "unit": "£ turnover caps by income band",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/charities-and-trading",
+    "verified_at": "2026-07-11",
+    "notes": "Income under £32,000 → £8,000 cap; £32,000-£320,000 → 25% of income; over £320,000 → £80,000. Exceeding taxes ALL trade profits. HP position 12."
+  },
+  {
+    "key": "gift_aid_claim_rate",
+    "value": "25",
+    "unit": "p per £1 donated",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/claim-gift-aid",
+    "verified_at": "2026-07-11",
+    "notes": "£100 gift → £125 gross → £25 claim. HP position 14."
+  },
+  {
+    "key": "gift_aid_declaration_retention_years",
+    "value": "6",
+    "unit": "years from end of accounting period",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/gift-aid-declarations-claiming-tax-back-on-donations",
+    "verified_at": "2026-07-11",
+    "notes": "Enduring declarations kept permanently. HP position 15."
+  },
+  {
+    "key": "donor_benefit_limits",
+    "value": "25% to £100; £25 + 5% above; £2,500 annual cap",
+    "unit": "benefit value tests",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/gift-aid-what-donations-charities-and-cascs-can-claim-on",
+    "verified_at": "2026-07-11",
+    "notes": "HP position 16."
+  },
+  {
+    "key": "gasds_donation_limit",
+    "value": "30",
+    "unit": "£ per donation",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/claim-gift-aid/small-donations-scheme",
+    "verified_at": "2026-07-11",
+    "notes": "Small cash/contactless donations. HP position 17."
+  },
+  {
+    "key": "gasds_annual_donations_cap",
+    "value": "8000",
+    "unit": "£/tax year",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/claiming-a-top-up-payment-on-small-charitable-donations",
+    "verified_at": "2026-07-11",
+    "notes": "Max £2,000 top-up per year; 10x Gift Aid matching rule; 2-year claim deadline. HP position 17."
+  },
+  {
+    "key": "vat_registration_threshold",
+    "value": "90000",
+    "unit": "£ taxable turnover",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/vat-charities",
+    "verified_at": "2026-07-11",
+    "notes": "No blanket charity VAT exemption; normal registration rules. HP position 20."
+  },
+  {
+    "key": "fundraising_events_exempt_limit",
+    "value": "15",
+    "unit": "events of same kind per financial year",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/how-vat-affects-charities-notice-7011",
+    "verified_at": "2026-07-11",
+    "notes": "One-off qualifying fundraising events VAT exemption. HP position 20."
+  },
+  {
+    "key": "charitable_rate_relief",
+    "value": "80",
+    "unit": "% mandatory relief",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/apply-for-business-rate-relief/charitable-rate-relief",
+    "verified_at": "2026-07-11",
+    "notes": "Discretionary top-up to 100%; cannot combine with small business rate relief. HP position 21."
+  },
+  {
+    "key": "employer_nic_rate",
+    "value": "15",
+    "unit": "%",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-11",
+    "notes": "Above secondary threshold; same rate for 2025-26 and 2026-27. HP position 27."
+  },
+  {
+    "key": "employer_nic_secondary_threshold_annual",
+    "value": "5000",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-11",
+    "notes": "£96/week, £417/month. HP position 27."
+  },
+  {
+    "key": "employment_allowance",
+    "value": "10500",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/claim-employment-allowance",
+    "verified_at": "2026-07-11",
+    "notes": "Charities including CASCs eligible. HP position 27."
+  }
+]

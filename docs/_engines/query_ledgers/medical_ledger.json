@@ -1,0 +1,1645 @@
+{
+  "metadata": {
+    "site_key": "medical",
+    "generated": "2026-07-17",
+    "gsc_max_date": "2026-07-15",
+    "gsc_lag_days": 2,
+    "pages": 13,
+    "action_counts": {
+      "healthy": 5,
+      "ambiguous": 4,
+      "hold": 4
+    },
+    "sampling_loss_pct": 41.2,
+    "expected_ctr_curve": {
+      "1": {
+        "expected_ctr": 0.00464,
+        "impressions": 359,
+        "interpolated": true
+      },
+      "2": {
+        "expected_ctr": 0.00464,
+        "impressions": 267,
+        "interpolated": true
+      },
+      "3": {
+        "expected_ctr": 0.00464,
+        "impressions": 646,
+        "interpolated": false
+      },
+      "4": {
+        "expected_ctr": 0.00429,
+        "impressions": 699,
+        "interpolated": false
+      },
+      "5": {
+        "expected_ctr": 0.00429,
+        "impressions": 963,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "6": {
+        "expected_ctr": 0.00094,
+        "impressions": 1060,
+        "interpolated": false
+      },
+      "7": {
+        "expected_ctr": 0.00094,
+        "impressions": 1016,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "8": {
+        "expected_ctr": 0.00066,
+        "impressions": 1506,
+        "interpolated": false
+      },
+      "9": {
+        "expected_ctr": 0.00066,
+        "impressions": 1663,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "10": {
+        "expected_ctr": 0.00066,
+        "impressions": 645,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "11-15": {
+        "expected_ctr": 0.00051,
+        "impressions": 1976,
+        "interpolated": false
+      },
+      "16-20": {
+        "expected_ctr": 0.0,
+        "impressions": 2652,
+        "interpolated": false
+      },
+      "21+": {
+        "expected_ctr": 0.0,
+        "impressions": 33508,
+        "interpolated": false,
+        "monotonic_clipped": true
+      }
+    },
+    "gap_wave_slugs": [],
+    "notes": [
+      "meta batch-2 hold source = optimisation_changes title_meta_rewrite rows shipped 2026-07-05..2026-07-12 (batch 2 = solicitors 19 / generalist 12 / dentists 10 per SERP_META_PROGRAM.md; property had no batch-2 pages).",
+      "property miniform hold covers conversion-surface routes ('/calculators', '/tools', '/resources', '/thank-you', '/contact') while the deploy_watch miniform gates are pending."
+    ]
+  },
+  "pages": [
+    {
+      "page": "https://medicalaccounts.co.uk/",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/"
+      ],
+      "impressions_90d": 2083,
+      "clicks_90d": 2,
+      "weighted_position_90d": 57.82,
+      "band_mix": {
+        "1": 0.0,
+        "6": 0.0,
+        "9": 0.0,
+        "11-15": 0.0,
+        "16-20": 0.005,
+        "21+": 0.993
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.099,
+      "top_queries": [
+        {
+          "query": "gp accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 92,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 336,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1295,
+            "clicks": 0,
+            "position": 53.34
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "medical accountants uk",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 26,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 47,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 200,
+            "clicks": 0,
+            "position": 64.09
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp practice accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 25,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 48,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 149,
+            "clicks": 0,
+            "position": 80.37
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "specialist medical accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 25,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 44,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 83,
+            "clicks": 0,
+            "position": 69.19
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp accountant",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 23,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 76,
+            "clicks": 0,
+            "position": 57.56
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "medical accounting",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 16,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 32,
+            "clicks": 0,
+            "position": 85.07
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accounting specialists for medical professionals",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 7,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 7,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 30,
+            "clicks": 0,
+            "position": 59.8
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "medical accountants birmingham",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 7,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 14,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 26,
+            "clicks": 0,
+            "position": 42.69
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "medical accountants",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 76.98
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp accounts specialists",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 18,
+            "clicks": 0,
+            "position": 30.83
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison",
+      "variants": [
+        "https://medicalaccounts.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison"
+      ],
+      "impressions_90d": 212,
+      "clicks_90d": 6,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [
+        {
+          "query": "hmrc how gp partners income",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "how much does a self employed gp pay in superannuation uk",
+          "impressions": 2,
+          "clicks": 1,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "gp partners returning as salaried employee",
+          "impressions": 2,
+          "clicks": 1,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "gp partner wage",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "gp vs salaried doctor meaning uk",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "gp salary with tax",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "gp partnership national insurance",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "gp patner income of 112k with pension paid equatea to how much without pension",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "salaried gp vs gp partner",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "how much does a self employed gp pay in superannuation uk when earning £200,000",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-21"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/becoming-gp-partner-financial-implications",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/blog/becoming-gp-partner-financial-implications"
+      ],
+      "impressions_90d": 77,
+      "clicks_90d": 0,
+      "weighted_position_90d": 46.65,
+      "band_mix": {
+        "1": 0.039,
+        "2": 0.026,
+        "3": 0.013,
+        "5": 0.013,
+        "16-20": 0.052,
+        "21+": 0.857
+      },
+      "trajectory": "dormant",
+      "trajectory_delta_pct": 0.2,
+      "top_queries": [
+        {
+          "query": "what is a gp partner",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 22,
+            "clicks": 0,
+            "position": 70.95
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accounting for gp partners",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 38.78
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much to buy into a gp partnership",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 39.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how to become a gp partner",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 45.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much does it cost to buy into a gp partnership",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 16.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp partner expenses",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 43.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "becoming a gp partner",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 46.38
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp partner",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 40.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "salaried gp vs gp partner",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "gp partnership goodwill valuation",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 42.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "how to find out more about gp partnership as a prospective gp partner uk",
+          "impressions": 5,
+          "clicks": 1,
+          "position": 10.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "can you become a gp partner by having increments taken out from your salary",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "can you become a gp partner by having increments taken out from your salary to go toeards buyingi a share",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-21"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/gp-accounting-guide",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/blog/gp-accounting-guide"
+      ],
+      "impressions_90d": 42,
+      "clicks_90d": 0,
+      "weighted_position_90d": 43.07,
+      "band_mix": {
+        "1": 0.024,
+        "11-15": 0.119,
+        "16-20": 0.024,
+        "21+": 0.833
+      },
+      "trajectory": "improving",
+      "trajectory_delta_pct": 1.25,
+      "top_queries": [
+        {
+          "query": "accounting for gp partners",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 45.85
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp practice accounting",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 43.39
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp practice accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 41.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp accountants",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 92.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp partner expenses",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 13.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "gp accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 11.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "what is gp accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "accounting gp",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 16.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gp practice accounting support",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 13.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "nhs gp accounting support",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 11.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "gp hmrc statement a",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "general practice accountancy",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "is enhanced access taxable and how much of it is taxed for a partnered gp",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "accounting for gp partners",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "incomeaccount that use for gp fund accounting",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 10.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/buying-into-gp-partnership-capital-parity-explained",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/blog/buying-into-gp-partnership-capital-parity-explained"
+      ],
+      "impressions_90d": 35,
+      "clicks_90d": 0,
+      "weighted_position_90d": 21.26,
+      "band_mix": {
+        "11-15": 0.457,
+        "16-20": 0.086,
+        "21+": 0.457
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.071,
+      "top_queries": [
+        {
+          "query": "gp partnership goodwill valuation",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 7,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 13.22
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "buying into a gp",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 26.83
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "broker for gp partnership buy in loan",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 45.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cost of buying into a gp partnership",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 19.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "buying into a gp partnership",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 22.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "buying gp",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 30.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "understand gp practice capital account uk",
+          "impressions": 2,
+          "clicks": 1,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "is the partner capital account a universal account?",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 10.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what is capital buying in?",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-04"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/locum-doctor-self-assessment-filing-guide",
+      "variants": [
+        "https://medicalaccounts.co.uk/blog/locum-doctor-self-assessment-filing-guide"
+      ],
+      "impressions_90d": 26,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [
+        {
+          "query": "locum 2026 taxation",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-25"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines"
+      ],
+      "impressions_90d": 17,
+      "clicks_90d": 0,
+      "weighted_position_90d": 46.53,
+      "band_mix": {
+        "4": 0.059,
+        "9": 0.059,
+        "21+": 0.882
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "nhs pension for doctors",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 48.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "nhs consultants pension scheme",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 51.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "nhs doctor pension",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 46.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much is a doctors pension",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 40.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "yes",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 9.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "doctors pensions annual allowance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 49.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "doctors pension",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 33.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "tax management",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 4.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00429,
+          "ctr_gap": -0.00429
+        },
+        {
+          "query": "nhs pension rates 2025/26",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 98.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "nhs pension tiers 2025/26",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 84.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-05"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/medico-legal-expert-witness-income-doctors-tax",
+      "variants": [
+        "https://medicalaccounts.co.uk/blog/medico-legal-expert-witness-income-doctors-tax"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-07-08 — ranking-maturation watch",
+          "window_close": "2026-08-19"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-07-08"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/gp-limited-company-tax-benefits-drawbacks",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/blog/gp-limited-company-tax-benefits-drawbacks"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 36.33,
+      "band_mix": {
+        "6": 0.333,
+        "21+": 0.667
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "gp pension tax",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 51.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what do you recomend?",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 6.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/consultant-directors-loan-account-s455-medical-company",
+      "variants": [
+        "https://medicalaccounts.co.uk/blog/consultant-directors-loan-account-s455-medical-company"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-07-08 — ranking-maturation watch",
+          "window_close": "2026-08-19"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-07-08"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/gp-partnership-mutual-assessment-period-what-to-check",
+      "variants": [
+        "https://www.medicalaccounts.co.uk/blog/gp-partnership-mutual-assessment-period-what-to-check"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 52.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "gp partnership exit and notice period",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 52.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-06"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/family-investment-company-doctors-consultants",
+      "variants": [
+        "https://medicalaccounts.co.uk/blog/family-investment-company-doctors-consultants"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-07-15 — ranking-maturation watch",
+          "window_close": "2026-08-26"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-07-15"
+    },
+    {
+      "page": "https://medicalaccounts.co.uk/blog/salary-vs-dividend-medical-limited-company-2026",
+      "variants": [
+        "https://medicalaccounts.co.uk/blog/salary-vs-dividend-medical-limited-company-2026"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-07-15 — ranking-maturation watch",
+          "window_close": "2026-08-26"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-07-15"
+    }
+  ],
+  "unowned_queries": [
+    {
+      "query": "gp accountants",
+      "impressions_90d": 1299,
+      "best_position": 49.5,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "medical accountants uk",
+      "impressions_90d": 200,
+      "best_position": 58.0,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "gp practice accountants",
+      "impressions_90d": 149,
+      "best_position": 77.8,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "specialist medical accountants",
+      "impressions_90d": 83,
+      "best_position": 63.3,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "gp accountant",
+      "impressions_90d": 76,
+      "best_position": 44.2,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "medical accounting",
+      "impressions_90d": 32,
+      "best_position": 78.2,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "accounting specialists for medical professionals",
+      "impressions_90d": 30,
+      "best_position": 49.8,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    }
+  ]
+}

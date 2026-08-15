@@ -1,0 +1,35 @@
+{
+  "batch_id": "M2-C-B1",
+  "agent_id": "stage2-sub-agent-M2-C-B1",
+  "completed_at": "2026-05-27T13:15:00Z",
+  "commit_shas": [
+    "534a16b",
+    "d09db94",
+    "6f25472",
+    "ba8af9d",
+    "b88eeb2",
+    "8ef4e85"
+  ],
+  "slugs_done": [
+    "a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers",
+    "agricultural-relief-for-inheritance-tax-key-benefits",
+    "comparison-of-discretionary-trusts",
+    "declaration-of-trust",
+    "ensuring-compliance-with-uk-payroll-reporting-regulations",
+    "essential-bookkeeping-tips-for-sole-traders"
+  ],
+  "flags_raised": [
+    {
+      "id": "F-102",
+      "type": "BRIEF_DRIFT / HOUSE_POSITION_REVISIT",
+      "severity": "HIGH",
+      "topic": "APR+BPR cap quantum: £1m (HP §15.4 + GOV.UK summary) vs £2.5m (FA 2026 s.124D enacted)",
+      "touched_picks": ["C2 agricultural-relief-for-inheritance-tax-key-benefits", "C3 comparison-of-discretionary-trusts (anti-fragmentation cross-impact)"],
+      "cross_bucket_impact": ["Wave 2 A4 iht-april-2026-bpr-apr-cap-property-impact (shipped)", "Wave 2 A10 agricultural-property-relief-mixed-estate-1m-cap (shipped)"]
+    }
+  ],
+  "drift_catches": 1,
+  "urls_verified_live": 28,
+  "urls_dead": 2,
+  "anti_templating_status": "PASS (6 distinct personas, 6 distinct opening framings, 6 distinct worked-example structures)"
+}

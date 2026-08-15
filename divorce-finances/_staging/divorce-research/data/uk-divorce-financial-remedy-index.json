@@ -1,0 +1,495 @@
+{
+ "meta": {
+  "generated_at": "2026-07-24",
+  "edition": "Family Court Statistics Quarterly, October to December 2025",
+  "published": "2026-03-26",
+  "coverage": "England and Wales",
+  "next_release": "FCSQ January to March 2026 (June 2026 cycle)",
+  "notes": "Divorce figures cover dissolution of marriage proceedings only (judicial separation and nullity excluded). Applications = petitions/applications issued; conditional orders include decrees nisi under the pre-2022 law; final orders include decrees absolute. Timeliness rows are annual means/medians across all case types and both legal regimes; blank source values are kept as null.",
+  "sources": [
+   {
+    "name": "Family Court Statistics Quarterly: October to December 2025",
+    "publisher": "Ministry of Justice",
+    "url": "https://www.gov.uk/government/statistics/family-court-statistics-quarterly-october-to-december-2025",
+    "licence": "OGL v3.0"
+   },
+   {
+    "name": "FCSQ Q4 2025 underlying data (CSV)",
+    "publisher": "Ministry of Justice",
+    "url": "https://assets.publishing.service.gov.uk/media/69c396303ed0546101e0dc2e/FCSQ_Q4_2025.zip",
+    "licence": "OGL v3.0"
+   }
+  ]
+ },
+ "headline": {
+  "year": 2025,
+  "divorce_applications": 109184,
+  "final_orders": 105704,
+  "conditional_orders": 117687,
+  "mean_weeks_to_final_order": 68.552,
+  "median_weeks_to_final_order": 42.0,
+  "mean_weeks_to_conditional_order": 40.811,
+  "median_weeks_to_conditional_order": 30.286,
+  "q4_2025_median_weeks_to_conditional_order": 28.0,
+  "q4_2025_median_weeks_to_final_order": 38.286,
+  "fr_applications": 49067,
+  "fr_applications_prev_year": 45563,
+  "fr_applications_yoy_pct": 7.7,
+  "fr_disposals": 46651,
+  "fr_uncontested_share_pct": 74.4
+ },
+ "divorce_annual": [
+  {
+   "year": 2003,
+   "applications": 170741,
+   "conditional_orders": 156210,
+   "final_orders": 152236,
+   "mean_weeks_to_conditional_order": 24.718,
+   "median_weeks_to_conditional_order": 17.143,
+   "mean_weeks_to_final_order": 42.541,
+   "median_weeks_to_final_order": 31.0
+  },
+  {
+   "year": 2004,
+   "applications": 165133,
+   "conditional_orders": 154305,
+   "final_orders": 152595,
+   "mean_weeks_to_conditional_order": 24.631,
+   "median_weeks_to_conditional_order": 16.857,
+   "mean_weeks_to_final_order": 43.922,
+   "median_weeks_to_final_order": 31.0
+  },
+  {
+   "year": 2005,
+   "applications": 149821,
+   "conditional_orders": 141803,
+   "final_orders": 141401,
+   "mean_weeks_to_conditional_order": 24.432,
+   "median_weeks_to_conditional_order": 16.286,
+   "mean_weeks_to_final_order": 45.104,
+   "median_weeks_to_final_order": 31.286
+  },
+  {
+   "year": 2006,
+   "applications": 146765,
+   "conditional_orders": 134705,
+   "final_orders": 132310,
+   "mean_weeks_to_conditional_order": 24.584,
+   "median_weeks_to_conditional_order": 16.571,
+   "mean_weeks_to_final_order": 45.727,
+   "median_weeks_to_final_order": 31.571
+  },
+  {
+   "year": 2007,
+   "applications": 135853,
+   "conditional_orders": 133113,
+   "final_orders": 128679,
+   "mean_weeks_to_conditional_order": 25.077,
+   "median_weeks_to_conditional_order": 16.857,
+   "mean_weeks_to_final_order": 46.122,
+   "median_weeks_to_final_order": 31.429
+  },
+  {
+   "year": 2008,
+   "applications": 128571,
+   "conditional_orders": 120537,
+   "final_orders": 122259,
+   "mean_weeks_to_conditional_order": 24.759,
+   "median_weeks_to_conditional_order": 16.143,
+   "mean_weeks_to_final_order": 47.561,
+   "median_weeks_to_final_order": 32.429
+  },
+  {
+   "year": 2009,
+   "applications": 131896,
+   "conditional_orders": 119347,
+   "final_orders": 115015,
+   "mean_weeks_to_conditional_order": 24.927,
+   "median_weeks_to_conditional_order": 16.714,
+   "mean_weeks_to_final_order": 48.004,
+   "median_weeks_to_final_order": 32.0
+  },
+  {
+   "year": 2010,
+   "applications": 133268,
+   "conditional_orders": 125277,
+   "final_orders": 120833,
+   "mean_weeks_to_conditional_order": 25.503,
+   "median_weeks_to_conditional_order": 16.857,
+   "mean_weeks_to_final_order": 48.193,
+   "median_weeks_to_final_order": 31.571
+  },
+  {
+   "year": 2011,
+   "applications": 129258,
+   "conditional_orders": 122234,
+   "final_orders": 119488,
+   "mean_weeks_to_conditional_order": 25.271,
+   "median_weeks_to_conditional_order": 16.714,
+   "mean_weeks_to_final_order": 48.624,
+   "median_weeks_to_final_order": 32.143
+  },
+  {
+   "year": 2012,
+   "applications": 124395,
+   "conditional_orders": 122337,
+   "final_orders": 120516,
+   "mean_weeks_to_conditional_order": 24.539,
+   "median_weeks_to_conditional_order": 15.857,
+   "mean_weeks_to_final_order": 48.961,
+   "median_weeks_to_final_order": 31.286
+  },
+  {
+   "year": 2013,
+   "applications": 117483,
+   "conditional_orders": 113286,
+   "final_orders": 114867,
+   "mean_weeks_to_conditional_order": 24.51,
+   "median_weeks_to_conditional_order": 15.571,
+   "mean_weeks_to_final_order": 49.937,
+   "median_weeks_to_final_order": 31.0
+  },
+  {
+   "year": 2014,
+   "applications": 112559,
+   "conditional_orders": 109656,
+   "final_orders": 111800,
+   "mean_weeks_to_conditional_order": 23.887,
+   "median_weeks_to_conditional_order": 15.143,
+   "mean_weeks_to_final_order": 49.227,
+   "median_weeks_to_final_order": 30.0
+  },
+  {
+   "year": 2015,
+   "applications": 114504,
+   "conditional_orders": 99082,
+   "final_orders": 102154,
+   "mean_weeks_to_conditional_order": 24.641,
+   "median_weeks_to_conditional_order": 16.143,
+   "mean_weeks_to_final_order": 49.106,
+   "median_weeks_to_final_order": 29.0
+  },
+  {
+   "year": 2016,
+   "applications": 114039,
+   "conditional_orders": 114123,
+   "final_orders": 108255,
+   "mean_weeks_to_conditional_order": 25.466,
+   "median_weeks_to_conditional_order": 17.714,
+   "mean_weeks_to_final_order": 50.05,
+   "median_weeks_to_final_order": 30.429
+  },
+  {
+   "year": 2017,
+   "applications": 109266,
+   "conditional_orders": 103120,
+   "final_orders": 102801,
+   "mean_weeks_to_conditional_order": 24.834,
+   "median_weeks_to_conditional_order": 16.571,
+   "mean_weeks_to_final_order": 49.981,
+   "median_weeks_to_final_order": 30.714
+  },
+  {
+   "year": 2018,
+   "applications": 118346,
+   "conditional_orders": 91991,
+   "final_orders": 91983,
+   "mean_weeks_to_conditional_order": 29.733,
+   "median_weeks_to_conditional_order": 22.286,
+   "mean_weeks_to_final_order": 55.118,
+   "median_weeks_to_final_order": 35.143
+  },
+  {
+   "year": 2019,
+   "applications": 116628,
+   "conditional_orders": 115240,
+   "final_orders": 107308,
+   "mean_weeks_to_conditional_order": 31.544,
+   "median_weeks_to_conditional_order": 24.429,
+   "mean_weeks_to_final_order": 56.581,
+   "median_weeks_to_final_order": 39.571
+  },
+  {
+   "year": 2020,
+   "applications": 113070,
+   "conditional_orders": 106649,
+   "final_orders": 103975,
+   "mean_weeks_to_conditional_order": 27.569,
+   "median_weeks_to_conditional_order": 18.857,
+   "mean_weeks_to_final_order": 50.874,
+   "median_weeks_to_final_order": 34.429
+  },
+  {
+   "year": 2021,
+   "applications": 108532,
+   "conditional_orders": 114077,
+   "final_orders": 113841,
+   "mean_weeks_to_conditional_order": 25.09,
+   "median_weeks_to_conditional_order": 13.286,
+   "mean_weeks_to_final_order": 51.439,
+   "median_weeks_to_final_order": 29.286
+  },
+  {
+   "year": 2022,
+   "applications": 122484,
+   "conditional_orders": 80234,
+   "final_orders": 80417,
+   "mean_weeks_to_conditional_order": 35.118,
+   "median_weeks_to_conditional_order": 26.143,
+   "mean_weeks_to_final_order": 60.548,
+   "median_weeks_to_final_order": 35.429
+  },
+  {
+   "year": 2023,
+   "applications": 113073,
+   "conditional_orders": 104942,
+   "final_orders": 103475,
+   "mean_weeks_to_conditional_order": 39.634,
+   "median_weeks_to_conditional_order": 28.857,
+   "mean_weeks_to_final_order": 64.284,
+   "median_weeks_to_final_order": 39.143
+  },
+  {
+   "year": 2024,
+   "applications": 110428,
+   "conditional_orders": 107024,
+   "final_orders": 105438,
+   "mean_weeks_to_conditional_order": 40.464,
+   "median_weeks_to_conditional_order": 29.286,
+   "mean_weeks_to_final_order": 65.643,
+   "median_weeks_to_final_order": 41.571
+  },
+  {
+   "year": 2025,
+   "applications": 109184,
+   "conditional_orders": 117687,
+   "final_orders": 105704,
+   "mean_weeks_to_conditional_order": 40.811,
+   "median_weeks_to_conditional_order": 30.286,
+   "mean_weeks_to_final_order": 68.552,
+   "median_weeks_to_final_order": 42.0
+  }
+ ],
+ "financial_remedy_annual": [
+  {
+   "year": 2006,
+   "applications_total": 69254,
+   "applications_contested": 26815,
+   "applications_uncontested": 42439,
+   "disposals_total": 74197,
+   "disposals_contested": 12818,
+   "disposals_initially_contested": 15676,
+   "disposals_uncontested": 45703,
+   "applications_uncontested_share_pct": 61.3
+  },
+  {
+   "year": 2007,
+   "applications_total": 65373,
+   "applications_contested": 25367,
+   "applications_uncontested": 40006,
+   "disposals_total": 70519,
+   "disposals_contested": 11539,
+   "disposals_initially_contested": 14640,
+   "disposals_uncontested": 44340,
+   "applications_uncontested_share_pct": 61.2
+  },
+  {
+   "year": 2008,
+   "applications_total": 58444,
+   "applications_contested": 22625,
+   "applications_uncontested": 35819,
+   "disposals_total": 63050,
+   "disposals_contested": 10901,
+   "disposals_initially_contested": 13264,
+   "disposals_uncontested": 38885,
+   "applications_uncontested_share_pct": 61.3
+  },
+  {
+   "year": 2009,
+   "applications_total": 52032,
+   "applications_contested": 20731,
+   "applications_uncontested": 31301,
+   "disposals_total": 56078,
+   "disposals_contested": 10070,
+   "disposals_initially_contested": 12090,
+   "disposals_uncontested": 33918,
+   "applications_uncontested_share_pct": 60.2
+  },
+  {
+   "year": 2010,
+   "applications_total": 51681,
+   "applications_contested": 19578,
+   "applications_uncontested": 32103,
+   "disposals_total": 57105,
+   "disposals_contested": 9674,
+   "disposals_initially_contested": 12492,
+   "disposals_uncontested": 34939,
+   "applications_uncontested_share_pct": 62.1
+  },
+  {
+   "year": 2011,
+   "applications_total": 46352,
+   "applications_contested": 15602,
+   "applications_uncontested": 30750,
+   "disposals_total": 54818,
+   "disposals_contested": 9731,
+   "disposals_initially_contested": 11724,
+   "disposals_uncontested": 33363,
+   "applications_uncontested_share_pct": 66.3
+  },
+  {
+   "year": 2012,
+   "applications_total": 47984,
+   "applications_contested": 16457,
+   "applications_uncontested": 31527,
+   "disposals_total": 53431,
+   "disposals_contested": 9334,
+   "disposals_initially_contested": 10205,
+   "disposals_uncontested": 33892,
+   "applications_uncontested_share_pct": 65.7
+  },
+  {
+   "year": 2013,
+   "applications_total": 47502,
+   "applications_contested": 17017,
+   "applications_uncontested": 30485,
+   "disposals_total": 51265,
+   "disposals_contested": 8831,
+   "disposals_initially_contested": 10086,
+   "disposals_uncontested": 32348,
+   "applications_uncontested_share_pct": 64.2
+  },
+  {
+   "year": 2014,
+   "applications_total": 42367,
+   "applications_contested": 13296,
+   "applications_uncontested": 29071,
+   "disposals_total": 47854,
+   "disposals_contested": 7557,
+   "disposals_initially_contested": 9437,
+   "disposals_uncontested": 30860,
+   "applications_uncontested_share_pct": 68.6
+  },
+  {
+   "year": 2015,
+   "applications_total": 42383,
+   "applications_contested": 13876,
+   "applications_uncontested": 28507,
+   "disposals_total": 43814,
+   "disposals_contested": 6504,
+   "disposals_initially_contested": 7738,
+   "disposals_uncontested": 29572,
+   "applications_uncontested_share_pct": 67.3
+  },
+  {
+   "year": 2016,
+   "applications_total": 46624,
+   "applications_contested": 14402,
+   "applications_uncontested": 32222,
+   "disposals_total": 45455,
+   "disposals_contested": 6346,
+   "disposals_initially_contested": 7508,
+   "disposals_uncontested": 31601,
+   "applications_uncontested_share_pct": 69.1
+  },
+  {
+   "year": 2017,
+   "applications_total": 46275,
+   "applications_contested": 14644,
+   "applications_uncontested": 31631,
+   "disposals_total": 47687,
+   "disposals_contested": 6954,
+   "disposals_initially_contested": 7979,
+   "disposals_uncontested": 32754,
+   "applications_uncontested_share_pct": 68.4
+  },
+  {
+   "year": 2018,
+   "applications_total": 43151,
+   "applications_contested": 14098,
+   "applications_uncontested": 29053,
+   "disposals_total": 47123,
+   "disposals_contested": 7317,
+   "disposals_initially_contested": 8660,
+   "disposals_uncontested": 31146,
+   "applications_uncontested_share_pct": 67.3
+  },
+  {
+   "year": 2019,
+   "applications_total": 42058,
+   "applications_contested": 13909,
+   "applications_uncontested": 28149,
+   "disposals_total": 48534,
+   "disposals_contested": 7039,
+   "disposals_initially_contested": 8136,
+   "disposals_uncontested": 33359,
+   "applications_uncontested_share_pct": 66.9
+  },
+  {
+   "year": 2020,
+   "applications_total": 39946,
+   "applications_contested": 12078,
+   "applications_uncontested": 27868,
+   "disposals_total": 46572,
+   "disposals_contested": 6372,
+   "disposals_initially_contested": 6057,
+   "disposals_uncontested": 34143,
+   "applications_uncontested_share_pct": 69.8
+  },
+  {
+   "year": 2021,
+   "applications_total": 49048,
+   "applications_contested": 12445,
+   "applications_uncontested": 36603,
+   "disposals_total": 48558,
+   "disposals_contested": 6628,
+   "disposals_initially_contested": 7147,
+   "disposals_uncontested": 34783,
+   "applications_uncontested_share_pct": 74.6
+  },
+  {
+   "year": 2022,
+   "applications_total": 40081,
+   "applications_contested": 11685,
+   "applications_uncontested": 28396,
+   "disposals_total": 36782,
+   "disposals_contested": 5928,
+   "disposals_initially_contested": 4349,
+   "disposals_uncontested": 26505,
+   "applications_uncontested_share_pct": 70.8
+  },
+  {
+   "year": 2023,
+   "applications_total": 44286,
+   "applications_contested": 12635,
+   "applications_uncontested": 31651,
+   "disposals_total": 41041,
+   "disposals_contested": 6175,
+   "disposals_initially_contested": 4024,
+   "disposals_uncontested": 30842,
+   "applications_uncontested_share_pct": 71.5
+  },
+  {
+   "year": 2024,
+   "applications_total": 45563,
+   "applications_contested": 11841,
+   "applications_uncontested": 33722,
+   "disposals_total": 47041,
+   "disposals_contested": 10171,
+   "disposals_initially_contested": 4119,
+   "disposals_uncontested": 32751,
+   "applications_uncontested_share_pct": 74.0
+  },
+  {
+   "year": 2025,
+   "applications_total": 49067,
+   "applications_contested": 12555,
+   "applications_uncontested": 36512,
+   "disposals_total": 46651,
+   "disposals_contested": 8913,
+   "disposals_initially_contested": 4313,
+   "disposals_uncontested": 33425,
+   "applications_uncontested_share_pct": 74.4
+  }
+ ]
+}

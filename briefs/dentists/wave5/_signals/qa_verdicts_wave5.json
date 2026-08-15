@@ -1,0 +1,189 @@
+{
+ "summary": "Wave 5 dentists independent QA 2026-07-09, verdicts against post-fix bytes (A3 B1/B2, A2 arithmetic+opener, A6 audience fixed manager-direct then re-checked)",
+ "pages": [
+  {
+   "slug": "dental-practice-succession-planning-family-transfer",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived post-fix",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "FA 2026 Sch 12 s.124D GBP2.5m",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "TCGA 1992 s.165 + (3)(ba)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "IHTA 1984 s.113A",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "TCGA 1992 s.62",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "wealth-management-for-dentists-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived post-fix",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "ISA GBP20k gov.uk",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "CGT 18/24 + AEA 3k",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "dividend 500 + FA 2026 s.4 rates",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "CTA 2010 s.18N",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "dental-hygienist-dcp-tax-employment-status",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived post-fix",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "SPT 7,105 / Class 4 6/2",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "ITTOIA Part 6A trading allowance",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "ESM0530/0543",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "buying-car-through-limited-company-dentist",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived post-fix",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "EIM24705 EV 4pc",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "EIM25580 29,200",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "AMAP 55p EIM31240",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "VAT Notice 700/64 50pc lease",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "vat-loan-dental-practices-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived post-fix",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "FA 2021 Sch 26 penalties 3/3/10",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "HMRC interest 7.75pc",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "VATA Sch 9 Grp 7",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "threshold 90k",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  }
+ ]
+}

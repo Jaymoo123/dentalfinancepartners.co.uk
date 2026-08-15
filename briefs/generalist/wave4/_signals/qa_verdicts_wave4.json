@@ -1,0 +1,371 @@
+{
+ "summary": "Generalist Wave 4 independent QA 2026-07-09 (4 QA agents + tone/GEO review). Catches fixed manager-direct: A3 QIP 4th-instalment 14 June->14 July + CT600-deadline boundary trim; A11 day-count parenthetical; A7 6 relative links -> absolute; A8 double-hyphen headings; A1/A6 GEO opener lifts. BlueCrest [2026] UKSC 18 conductor-verified.",
+ "pages": [
+  {
+   "slug": "cash-flow-management-small-business-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "HP SS7 cash accounting 1.35m",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "gov.uk late-payment pages",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "double-entry-bookkeeping-explained-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "CA 2006 s.386",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "corporation-tax-paying-early-or-in-instalments-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "HMRC interest rates (2.75/7.75/3.50/6.25)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "SI 1998/3175 QIP thresholds+schedule (4th instalment corrected to 14 July)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "do-i-need-a-separate-business-bank-account-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "TMA 1970 s.12B",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "CA 2006 s.386",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "s.455 date-banded per HP SS4.A",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "how-to-set-up-a-business-partnership-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "PA 1890 s.1(1)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "ITTOIA s.850",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "5 October deadline",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Class 4 2026/27",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "what-is-a-balance-sheet-uk-sme",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "CA 2006 s.382 15m/7.5m/50 (SI 2024/1303)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "s.455 per HP SS4.A",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "FRS 102 1A",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "unique-taxpayer-reference-utr-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "gov.uk find-utr-number",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "christmas-party-tax-rules-limited-company-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "ITEPA s.264",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "EIM21690/21691",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "VIT43600",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Class 1A/1B 15pc",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "how-to-complete-and-submit-vat-return-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "VAT Notice 700/12 boxes (live-verified F-91)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "1 month + 7 days",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "error thresholds conservative per F-291",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "high-income-child-benefit-charge-business-owners-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "HICBC 60k/80k + 1pc per 200",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "child benefit 27.05/17.90",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "dividend rates FA 2026 s.4",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "late-payment-rules-small-business-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "LPCDA 1998 s.5A 40/70/100",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "SI 2002/1675 8pc+base",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "base 3.75 independently verified (BoE Dec 2025)",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "VATA s.36",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  },
+  {
+   "slug": "personal-tax-for-llp-members-uk",
+   "all_clear": true,
+   "arithmetic_recomputed": [
+    {
+     "example": "all worked examples re-derived by QA agents (post-fix bytes; A3 QIP date + A11 day-count corrected)",
+     "agrees": true
+    }
+   ],
+   "statute_checks": [
+    {
+     "ref": "ITTOIA s.863/863A-G",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "BlueCrest [2026] UKSC 18 verified at national archives",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    },
+    {
+     "ref": "Class 4 2026/27",
+     "exists": true,
+     "content_supports_claim": true,
+     "royal_assent_ok": true
+    }
+   ],
+   "links_resolve": true,
+   "issues": []
+  }
+ ]
+}

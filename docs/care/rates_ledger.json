@@ -1,0 +1,284 @@
+[
+  {
+    "key": "nlw_rate_21_plus",
+    "value": "12.71",
+    "unit": "£/hour",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/national-minimum-wage-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "nmw_rate_18_to_20",
+    "value": "10.85",
+    "unit": "£/hour",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/national-minimum-wage-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "nmw_rate_under_18_and_apprentice",
+    "value": "8.00",
+    "unit": "£/hour",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/national-minimum-wage-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "employer_nic_rate",
+    "value": "15",
+    "unit": "%",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+    "verified_at": "2026-07-12",
+    "notes": "Rate above secondary threshold; same rate for 2025-26 and 2026-27"
+  },
+  {
+    "key": "employer_nic_secondary_threshold_annual",
+    "value": "5000",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "employer_nic_secondary_threshold_weekly",
+    "value": "96",
+    "unit": "£/week",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "employment_allowance",
+    "value": "10500",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/claim-employment-allowance",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "fnc_weekly_rate_standard",
+    "value": "267.68",
+    "unit": "£/week",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost",
+    "verified_at": "2026-07-12",
+    "notes": "Standard NHS-funded nursing care rate for England; higher rate is £368.24/week from same date"
+  },
+  {
+    "key": "fnc_weekly_rate_higher",
+    "value": "368.24",
+    "unit": "£/week",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/government/news/better-community-care-thanks-to-nursing-funding-boost",
+    "verified_at": "2026-07-12",
+    "notes": "Higher NHS-funded nursing care rate for England"
+  },
+  {
+    "key": "holiday_accrual_rate_irregular_hours",
+    "value": "12.07",
+    "unit": "%",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/holiday-entitlement-rights",
+    "verified_at": "2026-07-12",
+    "notes": "TODO-VERIFY: 12.07% (= 5.6/46.4) is the standard shorthand for statutory 5.6-week entitlement as a proportion of the working year; gov.uk page confirms accrual for irregular hours but does not state this percentage explicitly; checker to verify via Acas or Working Time Regulations 1998"
+  },
+  {
+    "key": "vat_welfare_exemption",
+    "value": "exempt",
+    "unit": "VAT status",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012",
+    "verified_at": "2026-07-12",
+    "notes": "Welfare services by CQC-registered state-regulated providers; exemption applies from date of CQC registration, not during application"
+  },
+  {
+    "key": "partial_exemption_de_minimis_monthly",
+    "value": "625",
+    "unit": "£/month average",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/guidance/partial-exemption-vat-notice-706",
+    "verified_at": "2026-07-12",
+    "notes": "De minimis: exempt input tax must not exceed £625/month average AND be less than half of total input tax"
+  },
+  {
+    "key": "vat_registration_threshold",
+    "value": "90000",
+    "unit": "£ taxable turnover",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/vat-registration/when-to-register",
+    "verified_at": "2026-07-12",
+    "notes": "Exempt care fees do not count toward this threshold"
+  },
+  {
+    "key": "wda_main_rate_plant_machinery",
+    "value": "14",
+    "unit": "%",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.legislation.gov.uk/ukpga/2026/11/section/28",
+    "verified_at": "2026-07-12",
+    "notes": "Finance Act 2026 c.11 s.28; reduced from 18%; CT from 1 April 2026, IT from 6 April 2026; blended rate for straddling periods"
+  },
+  {
+    "key": "fya_rate_main_pool",
+    "value": "40",
+    "unit": "%",
+    "applies_from": "2026-01-01",
+    "source_url": "https://www.legislation.gov.uk/ukpga/2026/11/section/29",
+    "verified_at": "2026-07-12",
+    "notes": "Finance Act 2026 c.11 s.29; new s.45U CAA 2001; new, unused main-pool plant only; anti-avoidance conditions apply"
+  },
+  {
+    "key": "aia_limit",
+    "value": "1000000",
+    "unit": "£/year",
+    "applies_from": "2019-01-01",
+    "source_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "sba_rate",
+    "value": "3",
+    "unit": "%",
+    "applies_from": "2020-04-01",
+    "source_url": "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings",
+    "verified_at": "2026-07-12",
+    "notes": "Structures and Buildings Allowance; straight-line over 33.33 years; CT from 1 April 2020, IT from 6 April 2020"
+  },
+  {
+    "key": "badr_rate_from_apr_2026",
+    "value": "18",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/business-asset-disposal-relief",
+    "verified_at": "2026-07-12",
+    "notes": "Rate for disposals from 6 April 2026; prior rate 14% (6 Apr 2025 to 5 Apr 2026); prior rate 10% (to 5 Apr 2025)"
+  },
+  {
+    "key": "cgt_higher_rate_from_apr_2026",
+    "value": "24",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-12",
+    "notes": "Standard CGT rate for higher/additional rate taxpayers from 6 April 2026; basic rate taxpayers pay 18%"
+  },
+  {
+    "key": "corporation_tax_small_profits_rate",
+    "value": "19",
+    "unit": "%",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to profits up to £50,000; associated company rules reduce threshold"
+  },
+  {
+    "key": "corporation_tax_main_rate",
+    "value": "25",
+    "unit": "%",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to profits above £250,000; marginal relief between £50,000 and £250,000"
+  },
+  {
+    "key": "dividend_rate_basic",
+    "value": "10.75",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_rate_higher",
+    "value": "35.75",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_rate_additional",
+    "value": "39.35",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_allowance",
+    "value": "500",
+    "unit": "£/year",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_apr_2026",
+    "value": "50000",
+    "unit": "£ annual income",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-12",
+    "notes": "Sole traders and landlords with combined self-employment and property income over £50,000"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_apr_2027",
+    "value": "30000",
+    "unit": "£ annual income",
+    "applies_from": "2027-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_apr_2028",
+    "value": "20000",
+    "unit": "£ annual income",
+    "applies_from": "2028-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "mileage_rate_cars_first_10k",
+    "value": "55",
+    "unit": "p/mile",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "mileage_rate_cars_above_10k",
+    "value": "25",
+    "unit": "p/mile",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "sbrr_full_relief_rv_ceiling",
+    "value": "12000",
+    "unit": "£ rateable value",
+    "applies_from": "2017-04-01",
+    "source_url": "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief",
+    "verified_at": "2026-07-12",
+    "notes": "100% relief; single property condition applies"
+  },
+  {
+    "key": "sbrr_taper_ceiling",
+    "value": "15000",
+    "unit": "£ rateable value",
+    "applies_from": "2017-04-01",
+    "source_url": "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief",
+    "verified_at": "2026-07-12",
+    "notes": "Relief tapers from 100% at £12,000 to 0% at £15,000"
+  },
+  {
+    "key": "cqc_registration_required",
+    "value": "mandatory before providing regulated activities",
+    "unit": "regulatory status",
+    "applies_from": "2010-04-01",
+    "source_url": "https://www.cqc.org.uk/guidance-providers/registration",
+    "verified_at": "2026-07-12",
+    "notes": "Health and Social Care Act 2008; trading before registration is a criminal offence"
+  }
+]

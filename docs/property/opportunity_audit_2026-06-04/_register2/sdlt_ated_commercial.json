@@ -1,0 +1,225 @@
+{
+  "categories": {
+    "stamp_duty_land_tax": {
+      "topics": [
+        {
+          "topic_title": "SDLT for limited companies buying residential property (connected-party / market-value rule)",
+          "search_intent": "transactional-advisory: landlords who have/are incorporating want to know the SDLT rate a company pays on residential purchases, the s.53 connected-company market-value charge, and the 5% (now corporate higher-rate) surcharge",
+          "n_competitors": 43,
+          "verdict": "net-new",
+          "demand": [
+            {"query": "sdlt transfer property to limited company connected party 2025", "imp": 6},
+            {"query": "sdlt rates for limited company buying residential property uk 2026", "imp": 2},
+            {"query": "uk sdlt rates for limited companies buying residential property 2026", "imp": 2},
+            {"query": "uk sdlt surcharge for companies buying residential property 2026", "imp": 2},
+            {"query": "i have transferred by home into al imited company and converted to a buy to let and i am now buyinga new home. do i pay additional rate sdlt on my new home", "imp": 3}
+          ],
+          "closest_our_page": "sdlt-incorporation-stamp-duty-twice",
+          "suggested_angle": "Dedicated company-purchase SDLT page: s.53 market-value charge on connected-party transfers, the flat higher-rate (3%/5%) every company purchase attracts regardless of first/replacement, ATED 17% interaction over £500k, and the partnership-incorporation relief escape route. Closest page covers double-charge framing only, not the company rate table.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "SDLT group relief and clawback for corporate landlord restructures",
+          "search_intent": "advisory: corporate groups moving property between companies want the Sch.7 75% group-relief conditions and the 3-year clawback triggers",
+          "n_competitors": 9,
+          "verdict": "already-covered",
+          "demand": [
+            {"query": "hmrc sdlt group relief 75% companies manual", "imp": 3},
+            {"query": "sdlt group relief clawback", "imp": 2},
+            {"query": "sdlt clawback", "imp": 2}
+          ],
+          "closest_our_page": "sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth",
+          "suggested_angle": "Already two dedicated pages (group-relief-for-corporate-landlord-portfolios + Sch.7 clawback depth). No new page; ensure clawback page surfaces the exact demand phrasing.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Scotland LBTT residential & non-residential rates/bands 2026-27 (incl. ADS, FTB relief)",
+          "search_intent": "rates-lookup: Scottish buyers/landlords want current LBTT bands, ADS rate, FTB relief threshold for 2026-27",
+          "n_competitors": 76,
+          "verdict": "already-covered",
+          "demand": [
+            {"query": "revenue scotland non-residential lbtt rates 2026", "imp": 19},
+            {"query": "lbtt rates scotland 2026", "imp": 12},
+            {"query": "scotland lbtt residential rates 2026", "imp": 11},
+            {"query": "scotland lbtt additional dwelling supplement rates 2026", "imp": 4},
+            {"query": "lbtt first time buyer relief scotland 2026", "imp": 3}
+          ],
+          "closest_our_page": "scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide",
+          "suggested_angle": "Residential rates, ADS and FTB relief all have dedicated pages. Only genuine micro-gap is a non-residential/commercial LBTT 2026-27 bands page (demand imp 19+8+4) - fold into commercial category if pursued; mission-edge (Scotland-only) so deprioritise.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "SDLT first-time buyer relief 2026 (eligibility, threshold, withdrawal)",
+          "search_intent": "informational-transactional: first-time buyers checking relief eligibility and the post-April-2025 lower thresholds",
+          "n_competitors": 17,
+          "verdict": "already-covered",
+          "demand": [
+            {"query": "sdlt first time buyer relief", "imp": 8}
+          ],
+          "closest_our_page": "applicable-sdlt-rates-for-first-time-buyers",
+          "suggested_angle": "Covered by applicable-sdlt-rates-for-first-time-buyers + first-time-buyer-relief-* cluster. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "SDLT on second homes / additional dwellings (how much, avoiding, 3-year replacement)",
+          "search_intent": "transactional: second-home buyers and landlords want the surcharge amount and refund/replacement routes",
+          "n_competitors": 18,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "stamp-duty-buy-to-let-surcharge",
+          "suggested_angle": "Surcharge, refund routes, joint-owner aggregation and BTL rates all have dedicated pages. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "SDLT on shared ownership property (staircasing, market-value election)",
+          "search_intent": "advisory: shared-ownership buyers want the SDLT election choice and staircasing charge points",
+          "n_competitors": 10,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "sdlt-shared-ownership-staircasing",
+          "suggested_angle": "Covered. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "HMRC SDLT investigations and avoidance-scheme clampdowns",
+          "search_intent": "informational-defensive: buyers/advisers worried about HMRC enquiries into SDLT-saving schemes and refund agents",
+          "n_competitors": 9,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "sdlt-refund-scams-how-to-avoid",
+          "suggested_angle": "Refund-scam page covers the chancers/agents angle. Marginal; no new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Multiple dwellings relief abolition (June 2024) impact for SDLT",
+          "search_intent": "advisory: bulk/portfolio buyers checking MDR is gone for SDLT and what survives",
+          "n_competitors": 43,
+          "verdict": "already-covered",
+          "demand": [
+            {"query": "multiple dwellings relief abolished june 2024 uk sdlt", "imp": 2}
+          ],
+          "closest_our_page": "abolition-of-multiple-dwellings-relief-mdr-raises-concerns",
+          "suggested_angle": "Multiple existing MDR-abolition pages plus Welsh-LTT MDR-survives page. No new page.",
+          "priority": "low"
+        }
+      ],
+      "counts": {
+        "net_new": 1,
+        "expand": 0,
+        "already_covered": 7,
+        "off_mission_dropped": 24
+      }
+    },
+    "ated_enveloped_dwellings": {
+      "topics": [
+        {
+          "topic_title": "ATED rates, charges and bands 2026-27 + filing/penalties",
+          "search_intent": "compliance-lookup: company directors/agents want the 2026-27 ATED charge bands, how to file the return, penalties for late filing",
+          "n_competitors": 124,
+          "verdict": "already-covered",
+          "demand": [
+            {"query": "ated penalties", "imp": 6},
+            {"query": "ated rates 2026/27", "imp": 4},
+            {"query": "file ated return", "imp": 4},
+            {"query": "ated charge 2026/27", "imp": 4},
+            {"query": "ated bands", "imp": 1},
+            {"query": "ated1 form", "imp": 1}
+          ],
+          "closest_our_page": "ated-rates-2026-27-bands-table-worked-examples",
+          "suggested_angle": "Fully covered by 24-page ATED cluster (rates, complete guide, late-filing penalties, return amendment, six-step compliance walkthrough). The 124-competitor 'core' is actually a VAT-helpline noise cluster, not ATED. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Furnished holiday let / Airbnb income tax return treatment",
+          "search_intent": "transactional: short-let owners asking how Airbnb/FHL income is reported and taxed post-FHL-abolition",
+          "n_competitors": 4,
+          "verdict": "expand-existing",
+          "demand": [
+            {"query": "how is tax return calculated for air bnb property", "imp": 3}
+          ],
+          "closest_our_page": "abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know",
+          "suggested_angle": "Thin standalone demand and adjacent to existing FHL-abolition content; if pursued, expand an FHL/Airbnb page with a worked self-assessment example rather than a new core. Not an ATED topic - bundle mislabelled.",
+          "priority": "low"
+        }
+      ],
+      "counts": {
+        "net_new": 0,
+        "expand": 1,
+        "already_covered": 1,
+        "off_mission_dropped": 17
+      }
+    },
+    "commercial_mixed_use_property": {
+      "topics": [
+        {
+          "topic_title": "Buying and selling commercial property: tax checklist for investors",
+          "search_intent": "transactional-advisory: first-time commercial buyers/sellers want an end-to-end tax view (SDLT, VAT/option-to-tax, capital allowances on fixtures, CGT on sale)",
+          "n_competitors": 17,
+          "verdict": "net-new",
+          "demand": [],
+          "closest_our_page": "commercial-property-tax-landlords-rates-reliefs-allowances",
+          "suggested_angle": "Buyer/seller-journey hub stitching the existing deep pieces (SDLT non-residential rates, option-to-tax, TOGC, s198 fixtures election, SBA, CGT) into one decision page. Strong competitor convergence (17) and zero direct equivalent - we have a landlord-rates pillar but no transaction-journey page. Conservative single net-new.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "VAT on commercial property and for property developers (option to tax, rent, TOGC)",
+          "search_intent": "advisory: developers/landlords navigating VAT on commercial deals, rent, and development",
+          "n_competitors": 21,
+          "verdict": "already-covered",
+          "demand": [
+            {"query": "how to calculate vat for a office business", "imp": 4}
+          ],
+          "closest_our_page": "vat-option-to-tax-commercial-property-mechanics-election-revocation",
+          "suggested_angle": "Deep cluster already: option-to-tax (x3 incl revocation + disapplication), TOGC (x2), VAT on rent, developer pre-registration input tax, mixed-use apportionment. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Capital allowances on commercial property + super-deduction/full-expensing successor",
+          "search_intent": "advisory: investors maximising plant-and-machinery/fixtures claims and understanding the post-super-deduction regime (full expensing, 50% FYA, SBA)",
+          "n_competitors": 32,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework",
+          "suggested_angle": "Pillar page plus AIA, integral features, SBA, full-expensing, s198 election, super-deduction transitional all exist. Super-deduction itself is a closed historic scheme - no fresh net-new. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "VAT on rent / lease for commercial landlords",
+          "search_intent": "advisory: commercial landlords deciding whether to charge VAT on rent and recover input tax",
+          "n_competitors": 18,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "vat-on-rental-income-residential-vs-commercial-landlord-vat-status-decision-framework",
+          "suggested_angle": "Covered by VAT-on-rental-income decision framework + option-to-tax pages. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Commercial property leases: tax treatment of lease terms / premiums",
+          "search_intent": "advisory: landlords and tenants on tax of lease grants, premiums, and assignments",
+          "n_competitors": 10,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "commercial-property-tax-landlords-rates-reliefs-allowances",
+          "suggested_angle": "Most lease-contract slugs are legal/template intent (off-mission for a tax brand); tax angle covered by landlord pillar + service-charge-accounts page. No new page.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "HMO property sourcing / management",
+          "search_intent": "commercial-service: investors seeking HMO sourcing/management services (largely lead-gen for property sourcers, not tax)",
+          "n_competitors": 16,
+          "verdict": "already-covered",
+          "demand": [],
+          "closest_our_page": "hmo-tax-guide-rental-income-deductions-multi-tenant",
+          "suggested_angle": "Sourcing/management intent is off-mission for a tax brand; the tax-relevant slice (HMO tax, capital allowances, licensing deductibility, incorporation) is already a deep cluster. No new page.",
+          "priority": "low"
+        }
+      ],
+      "counts": {
+        "net_new": 1,
+        "expand": 0,
+        "already_covered": 5,
+        "off_mission_dropped": 6
+      }
+    }
+  }
+}

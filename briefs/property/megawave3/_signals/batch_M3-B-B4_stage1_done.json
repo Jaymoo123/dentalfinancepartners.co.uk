@@ -1,0 +1,7 @@
+{
+  "batch_id": "M3-B-B4",
+  "agent_id": "MW3-Stage1-B",
+  "completed_at": "2026-05-27T19:18:07Z",
+  "commit_shas": ["b890495", "735bad7"],
+  "slugs_done": ["do-i-have-to-pay-uk-tax", "dont-pay-twice-an-introduction-to-tax-treaties"]
+}
