@@ -72,7 +72,7 @@ describe("lead consent text", () => {
   // Replicates the static notice-only acknowledgement in site.ts (pool model,
   // legitimate interests, re-referral disclosed).
   const consentText =
-    "Agency Founder Finance will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+    "Agency Founder Finance will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. Agency Founder Finance may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.";
 
   it("site display name is Agency Founder Finance", () => {
     expect(displayName).toBe("Agency Founder Finance");
@@ -88,9 +88,21 @@ describe("lead consent text", () => {
     expect(consentText).not.toContain("Reflex");
   });
 
-  it("consent text discloses onward re-referral within the network (notice-only pool model)", () => {
-    expect(consentText).toContain("may be passed to another firm in the network for the same purpose");
+  // The LIA balancing test is only made out if the enquirer is told, before submitting,
+  // that more than one firm may receive their details and how many at most. These are
+  // the conditions in DSA Annex B.2 and B.5, not stylistic preferences.
+  it("consent text discloses multiple recipients and the maximum (pool model)", () => {
+    expect(consentText).toContain("More than one firm");
+    expect(consentText).toContain("up to three firms in the profession you are asking about");
+    expect(consentText).toContain("up to three in related professions");
+    expect(consentText).toContain("may be paid a fee");
+    expect(consentText).toContain("object at any time");
     expect(consentText).toContain("By submitting this enquiry you confirm you understand this");
+  });
+
+  it("consent text does not promise single-firm handling", () => {
+    expect(consentText).not.toContain("one firm at a time");
+    expect(consentText).not.toContain("a relevant regulated firm");
   });
 
   it("consent text does NOT contain the string DJH", () => {

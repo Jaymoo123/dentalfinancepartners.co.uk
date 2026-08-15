@@ -1,3 +1,18 @@
+// ---------------------------------------------------------------------------
+// PRE-PUBLISH GATE (added 2026-08-14). This page sells a SUPERSEDED commercial
+// model: whole-site or niche exclusivity, routing to one firm at a time, a
+// £40 to £120 price band, £500/month retainers, trial batches, and grading
+// "from very high to low". None of that is the model the estate runs.
+//
+// Current model: case-type tiers (config/tiers.json), shared claims capped at
+// 3 per lane, exclusive at 3x, price fixed at the first claim, credits on
+// exclusive claims only, invoiced monthly by Direct Debit. See
+// docs/LEAD_PRICING.md and legal/PARTNER_AGREEMENT_TEMPLATE.md.
+//
+// The ashfieldtrading site is not published, so this is not live. REWRITE THIS
+// PAGE BEFORE THE SITE GOES LIVE: a buyer who reads it alongside the price
+// sheet gets two contradictory versions of the deal.
+// ---------------------------------------------------------------------------
 import type { Metadata } from "next";
 import {
   JsonLd,

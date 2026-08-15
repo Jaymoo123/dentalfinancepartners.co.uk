@@ -53,15 +53,27 @@ describe("lead consent text", () => {
   const displayName = nicheConfig.display_name;
 
   // Replicates the notice-only derivation in site.ts (pool model).
-  const consentText = `${displayName} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
+  const consentText = `${displayName} will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. ${displayName} may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.`;
 
   it("partner config carries the network category label, never a named firm", () => {
     expect(nicheConfig.partner?.name).toBe("a firm from our specialist partner network");
   });
 
-  it("consent notice names the specialist partner network and discloses re-referral", () => {
+  // The LIA balancing test is only made out if the enquirer is told, before submitting,
+  // that more than one firm may receive their details and how many at most. These are
+  // the conditions in DSA Annex B.2 and B.5, not stylistic preferences.
+  it("consent notice discloses the network, multiple recipients and the maximum", () => {
     expect(consentText).toContain("specialist partner network");
-    expect(consentText).toContain("passed to another firm in the network");
+    expect(consentText).toContain("More than one firm");
+    expect(consentText).toContain("up to three firms in the profession you are asking about");
+    expect(consentText).toContain("up to three in related professions");
+    expect(consentText).toContain("may be paid a fee");
+    expect(consentText).toContain("object at any time");
+  });
+
+  it("consent notice does not promise single-firm handling", () => {
+    expect(consentText).not.toContain("one firm at a time");
+    expect(consentText).not.toContain("a relevant regulated firm");
   });
 
   it("consent text does NOT contain the string DJH", () => {

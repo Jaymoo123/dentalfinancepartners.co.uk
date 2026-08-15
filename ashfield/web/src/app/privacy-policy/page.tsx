@@ -90,13 +90,16 @@ export default function PrivacyPolicyPage() {
 
           <h2>4. Our lawful basis</h2>
           <p>
-            We rely on your <strong>consent</strong> to process the personal data you provide through our enquiry forms
-            and email sign-ups. You can withdraw your consent at any time (see your rights in section 7); withdrawing
-            consent does not affect any processing that took place before you withdrew it.
+            We rely on your <strong>consent</strong> (Article 6(1)(a) of the UK GDPR) to process the personal data you
+            provide through our enquiry forms and email sign-ups. You can withdraw your consent at any time (see your
+            rights in section 7); withdrawing consent does not affect any processing that took place before you
+            withdrew it.
           </p>
           <p>
-            For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>,
-            specifically measuring and improving the Site and keeping it secure and protected against misuse.
+            For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>
+            (Article 6(1)(f) of the UK GDPR), specifically measuring and improving the Site and keeping it secure and
+            protected against misuse. You have the <strong>right to object</strong> to processing based on legitimate
+            interests at any time, under Article 21 (see your rights in section 7).
           </p>
 
           <h2>5. Who we share your information with</h2>
@@ -106,8 +109,8 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul>
             <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
-            <li><strong>Google Analytics:</strong> website analytics and performance measurement.</li>
             <li><strong>Vercel:</strong> website hosting and content delivery.</li>
+            <li><strong>Resend:</strong> sending the emails we use to respond to you.</li>
           </ul>
           <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 

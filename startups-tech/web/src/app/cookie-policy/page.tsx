@@ -5,18 +5,18 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Cookie policy",
-  description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+  description: `How ${siteConfig.name} uses cookies and similar technologies.`,
   alternates: { canonical: `${siteConfig.url}/cookie-policy` },
   openGraph: {
     title: `Cookie Policy | ${siteConfig.name}`,
-    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+    description: `How ${siteConfig.name} uses cookies and similar technologies.`,
     url: `${siteConfig.url}/cookie-policy`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Cookie policy",
-    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+    description: `How ${siteConfig.name} uses cookies and similar technologies.`,
   },
 };
 
@@ -45,23 +45,22 @@ export default function CookiePolicyPage() {
           This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data.
         </p>
 
-        <h3 className="mt-4 text-lg font-semibold text-neutral-900">Analytics cookies (Google Analytics)</h3>
+        <h3 className="mt-4 text-lg font-semibold text-neutral-900">First-party analytics</h3>
         <p>
-          We use Google Analytics to understand how visitors interact with our Site. This helps us improve content and user experience. Google Analytics sets the following cookies:
+          We run our own privacy-first analytics so we can understand how visitors use the Site and improve
+          it. To do this we store two random identifiers in your browser (a visitor identifier and a session
+          identifier) and record anonymous interaction events such as pages viewed, scrolling, clicks and
+          form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
         </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>_ga:</strong> Distinguishes unique users. Expires after 2 years.
-          </li>
-          <li>
-            <strong>_gid:</strong> Distinguishes unique users. Expires after 24 hours.
-          </li>
-          <li>
-            <strong>_gat_gtag_*:</strong> Used to throttle request rate. Expires after 1 minute.
-          </li>
-        </ul>
         <p>
-          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymised. Data is retained for 14 months.
+          This data is anonymous. We do not store your IP address (only a country derived from it), we do
+          not collect your name, email or phone number in these events, and we do not sell or share this
+          data.
+        </p>
+        <h3 className="mt-4 text-lg font-semibold text-neutral-900">Third-party analytics</h3>
+        <p>
+          This Site does not use Google Analytics or any other third-party analytics cookies. The only
+          analytics data collected is through our own first-party system described above.
         </p>
 
         <h2 className="text-xl font-semibold text-neutral-900">2. Purpose of cookies</h2>

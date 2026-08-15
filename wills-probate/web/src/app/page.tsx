@@ -165,7 +165,7 @@ export default function HomePage() {
             <Users className="h-8 w-8 text-orange-600" strokeWidth={1.75} aria-hidden />
             <h2 className="mt-4 text-xl font-bold text-neutral-900">Specialist help, when you want it</h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-              We are an information service, not a law firm. If your situation needs professional hands, we can connect you with vetted specialist firms for wills, probate and estate planning. You choose if and when. We never pass on your details without your consent.
+              We are an information service, not a law firm. If your situation needs professional hands, we can connect you with vetted specialist firms for wills, probate and estate planning. You only hear from anyone if you send us an enquiry, and you can tell us to stop at any time.
             </p>
           </div>
         </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
                 {[
                   { title: "You choose if and when", sub: "No pressure, no cold calls" },
                   { title: "Vetted specialist firms only", sub: "Matched to wills, probate or estate planning as needed" },
-                  { title: "Shared only with your consent", sub: "We never pass on your details otherwise" },
+                  { title: "Only if you ask us", sub: "Nothing is passed on unless you send an enquiry, and you can object at any time" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">
                     <div className="h-12 w-12 flex items-center justify-center bg-orange-500 text-white font-bold text-xl flex-shrink-0">

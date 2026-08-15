@@ -15,7 +15,7 @@ const partner = niche.partner ?? null;
 // (each form appends that). Adjacent-professions lane: sharing, re-referral and
 // referral-fee disclosure are MANDATORY and must all be kept in this notice.
 const leadConsentText =
-  `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated professional firm from our specialist partner network (for example a specialist probate firm), who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. ${niche.display_name} may receive a fee from the firm it introduces you to. By submitting this enquiry you confirm you understand this.`;
+  `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about (for example a specialist probate firm), and up to three in related professions such as brokers, solicitors and advisers. ${niche.display_name} may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.`;
 
 export const siteConfig = {
   name: niche.display_name,
