@@ -67,6 +67,14 @@ SNAP_PREFIX = "state_check_"
 # see whether the lane can find them itself instead.
 # --------------------------------------------------------------------------
 TWILIO_MIN_RUNWAY_DAYS = 30      # shout when the SMS account has less than this
+# Facts whose VALUE is a timestamp that must keep moving. The snapshot diff
+# only sees NEW/GONE/CHANGED, so a heartbeat that FREEZES (hourly cron dead,
+# stamp stops changing) produces nothing. This rule cures that blindness:
+# older than the tolerance -> ALARM; unparseable/absent -> BLIND.
+HEARTBEAT_MAX_AGE_HOURS = {
+    "nurture.last_cron_run_at": 3,     # hourly cron; frozen = cron dead
+    "nurture.last_digest_run_at": 30,  # daily 07:00 digest
+}
 FRESHNESS_TOLERANCE_DAYS = {     # how stale a feed may get before it is a problem
     "leads": 3,
     "web_sessions": 2,
@@ -379,7 +387,21 @@ def lane_jobs(ctx: Ctx) -> list[dict]:
                      " from lead_nurture_control limit 1")
         if hb:
             out.append(fact("jobs", "nurture.last_cron_run_at", (hb[0]["last_cron_run_at"] or "")[:16]))
+            out.append(fact("jobs", "nurture.last_digest_run_at", (hb[0]["last_digest_run_at"] or "")[:16]))
             out.append(fact("jobs", "nurture.paused", hb[0]["paused"]))
+    except Exception:
+        pass
+
+    # deploy_watch self-evidence: a pending gate past its due date means the
+    # cron ran without landing the verdict (or stopped running). The table
+    # already encodes "should have fired", so no extra stamping is needed.
+    try:
+        overdue = ctx.sql(
+            "select count(*) as n from deploy_watch"
+            " where status = 'pending'"
+            "   and now() > started_at + (gate_day + 1) * interval '1 day'"
+        )
+        out.append(fact("jobs", "deploy_watch.overdue_unsent", int(overdue[0]["n"])))
     except Exception:
         pass
 
@@ -443,6 +465,31 @@ def lane_leads(ctx: Ctx) -> list[dict]:
         out.append(fact("leads", f"{r['source']}.submitted_7d", int(r["w0"]),
                         note=f"prior 7d: {r['w1']}"))
         out.append(fact("leads", f"{r['source']}.contactable_7d", int(r["w0_contactable"])))
+
+    # Pipeline coverage: does the machinery that should run PER LEAD actually
+    # produce rows? These caught two live defects on day one (enrichment and
+    # auto-scoring both at 0 forever while their health probes said ready).
+    cov = ctx.sql(
+        """
+        select
+          (select count(*) from lead_enrichment
+            where enriched_at >= now() - interval '7 days')               as enrichment_7d,
+          (select count(*) from lead_value_scores
+            where scored_by = 'claude_auto'
+              and scored_at >= now() - interval '7 days')                 as auto_scored_7d,
+          (select count(*) from leads
+            where coalesce(is_test,false) = false
+              and submitted_at >= now() - interval '48 hours')            as leads_48h,
+          (select count(*) from leads
+            where coalesce(is_test,false) = false
+              and submitted_at >= now() - interval '96 hours')            as leads_96h
+        """
+    )[0]
+    out.append(fact("leads", "pipeline.enrichment_7d", int(cov["enrichment_7d"])))
+    out.append(fact("leads", "pipeline.auto_scored_7d", int(cov["auto_scored_7d"])))
+    out.append(fact("leads", "pipeline.total_48h", int(cov["leads_48h"]),
+                    note=f"96h: {cov['leads_96h']}"))
+    out.append(fact("leads", "pipeline.total_96h", int(cov["leads_96h"])))
     return out
 
 
@@ -523,6 +570,115 @@ def apply_rules(facts: list[dict]) -> list[dict]:
         findings.append({
             "status": "ALARM", "lane": "secrets", "name": "repo.missing",
             "detail": f"workflows reference but repo lacks: {', '.join(m['value'])}",
+        })
+
+    # Frozen-heartbeat rule: a timestamp fact that stopped moving is an
+    # incident the snapshot diff cannot see (no change = no CHANGED row).
+    # Only judged when the jobs lane actually produced facts: if the lane
+    # itself was blind, the lane-level BLIND finding already covers it.
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    jobs_ran = any(f["lane"] == "jobs" for f in facts)
+    for name, max_hours in (HEARTBEAT_MAX_AGE_HOURS.items() if jobs_ran else ()):
+        f = by_name.get(name)
+        if f is None or not f["value"]:
+            findings.append({
+                "status": "BLIND", "lane": "jobs", "name": name,
+                "detail": "heartbeat fact absent or empty; the thing that stamps it "
+                          "may be dead, or the lane could not read it",
+            })
+            continue
+        try:
+            stamp = dt.datetime.fromisoformat(str(f["value"])).replace(tzinfo=dt.timezone.utc)
+        except ValueError:
+            findings.append({
+                "status": "BLIND", "lane": "jobs", "name": name,
+                "detail": f"unparseable heartbeat value {f['value']!r}",
+            })
+            continue
+        age_h = (now_utc - stamp).total_seconds() / 3600
+        if age_h > max_hours:
+            findings.append({
+                "status": "ALARM", "lane": "jobs", "name": name,
+                "detail": f"frozen: last stamped {f['value']} ({age_h:.1f}h ago, "
+                          f"tolerance {max_hours}h). The cron behind it has stopped.",
+            })
+
+    # Scheduled-workflow rules: a failing or silently-stopped workflow is an
+    # incident (GitHub auto-disables schedules after 60 idle days; a monitor
+    # that dies this way is the proven rot mode this tool exists to kill).
+    for f in facts:
+        if f["lane"] != "jobs" or not f["name"].startswith("workflow."):
+            continue
+        state = str(f["value"]).split("|")[0].strip()
+        note = f.get("note") or ""
+        if state == "active" and note.startswith("last failure"):
+            findings.append({
+                "status": "ALARM", "lane": "jobs", "name": f["name"],
+                "detail": f"last scheduled run FAILED ({note}). Go and look.",
+            })
+        elif state == "active" and note == "no run recorded":
+            findings.append({
+                "status": "UNKNOWN", "lane": "jobs", "name": f["name"],
+                "detail": "active schedule but no run in the last 120 runs. "
+                          "New workflow, or scheduling silently stopped?",
+            })
+        elif state == "active" and note.startswith("last "):
+            # Backstop staleness: any active schedule (6-hourly, daily or
+            # weekly) should have run within 8 days. Older = the schedule
+            # has silently stopped (GitHub 60-day auto-disable, or worse).
+            m_date = re.search(r"(\d{4}-\d{2}-\d{2})$", note)
+            if m_date:
+                last_day = dt.datetime.fromisoformat(m_date.group(1)).replace(
+                    tzinfo=dt.timezone.utc)
+                if (now_utc - last_day).days > 8:
+                    findings.append({
+                        "status": "ALARM", "lane": "jobs", "name": f["name"],
+                        "detail": f"active schedule but last run was {m_date.group(1)} "
+                                  f"({(now_utc - last_day).days}d ago). Scheduling has "
+                                  "silently stopped.",
+                    })
+        elif state not in ("active", "unknown"):
+            findings.append({
+                "status": "UNKNOWN", "lane": "jobs", "name": f["name"],
+                "detail": f"declares a cron but workflow state is {state}. "
+                          "Delete the cron block or re-enable it.",
+            })
+
+    # Overdue deploy-watch gates: pending past due = verdicts silently not landing.
+    ow = by_name.get("deploy_watch.overdue_unsent")
+    if ow and isinstance(ow["value"], int) and ow["value"] > 0:
+        findings.append({
+            "status": "ALARM", "lane": "jobs", "name": "deploy_watch.overdue_unsent",
+            "detail": f"{ow['value']} watch gate(s) past due and unsent. The cron is "
+                      "running without landing verdicts, or has stopped.",
+        })
+
+    # Pipeline coverage: leads arriving but per-lead machinery producing nothing.
+    subs = sum(
+        f["value"] for f in facts
+        if f["lane"] == "leads" and f["name"].endswith(".submitted_7d")
+        and isinstance(f["value"], int)
+    )
+    for probe in ("pipeline.enrichment_7d", "pipeline.auto_scored_7d"):
+        p = by_name.get(probe)
+        if p is not None and subs > 0 and p["value"] == 0:
+            findings.append({
+                "status": "ALARM", "lane": "leads", "name": probe,
+                "detail": f"{subs} leads arrived in 7d but this per-lead pipeline "
+                          "produced 0 rows. It is broken, not quiet.",
+            })
+
+    # Business canary: zero leads for 48h is abnormal at current volume.
+    # Weekend-aware: on Mon/Tue the window widens to 96h so a quiet weekend
+    # does not page anyone.
+    canary = by_name.get(
+        "pipeline.total_96h" if now_utc.weekday() in (0, 1) else "pipeline.total_48h"
+    )
+    if canary is not None and canary["value"] == 0:
+        findings.append({
+            "status": "ALARM", "lane": "leads", "name": "pipeline.leads_flatline",
+            "detail": "0 leads across every site in the canary window. Form, DB "
+                      "write, bot-gate or deploy regression - go and look now.",
         })
     return findings
 

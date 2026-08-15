@@ -33,3 +33,14 @@ jobs:
           TRIPWIRE_NOTIFY_TO: ${{ secrets.TRIPWIRE_NOTIFY_TO }}
           RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
         run: python scripts/lead_capture_tripwire.py
+      - name: Dead-man ping (silence at Better Stack = this workflow died)
+        # Runs even when the tripwire TRIPS (a tripped check still proves the
+        # monitor is alive; the trip itself emails separately). Only a crashed
+        # or never-scheduled run stays silent - which is exactly the alert.
+        if: always()
+        env:
+          HEARTBEAT_TRIPWIRE: ${{ secrets.HEARTBEAT_TRIPWIRE }}
+        run: |
+          if [ -n "$HEARTBEAT_TRIPWIRE" ]; then
+            curl -fsS --max-time 10 "$HEARTBEAT_TRIPWIRE" || true
+          fi

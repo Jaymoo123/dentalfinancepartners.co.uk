@@ -56,7 +56,39 @@ jobs:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/state_check.py
+        # --json to out/run.json for the email step; the table reprint keeps the
+        # run log human-readable; the exit code still turns the run red on
+        # ALARM/BLIND so GitHub's own notification remains the backstop.
+        run: |
+          set +e
+          python scripts/state_check.py --json > out/run.json
+          code=$?
+          python - <<'PY'
+          import json
+          d = json.load(open("out/run.json"))
+          for f in d.get("findings", []):
+              print(f"{f['status']:8} {f.get('lane','-'):11} {f['name']:44} {f.get('detail','')}")
+          PY
+          exit $code
+
+      - name: Email when the alarm set changes (deduped, never a daily nag)
+        if: always()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+          TRIPWIRE_NOTIFY_TO: ${{ secrets.TRIPWIRE_NOTIFY_TO }}
+        run: python scripts/state_check_email.py
+
+      - name: Dead-man ping (silence at Better Stack = this workflow died)
+        if: always()
+        env:
+          HEARTBEAT_STATE_CHECK: ${{ secrets.HEARTBEAT_STATE_CHECK }}
+        # Pings only when the check actually produced output - a crashed run
+        # must NOT ping, that silence is exactly the alert.
+        run: |
+          if [ -s out/run.json ] && [ -n "$HEARTBEAT_STATE_CHECK" ]; then
+            curl -fsS --max-time 10 "$HEARTBEAT_STATE_CHECK" || true
+          fi
 
       - name: Keep the snapshot even when the check goes red
         if: always()
