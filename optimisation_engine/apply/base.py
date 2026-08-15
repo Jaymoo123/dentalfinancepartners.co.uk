@@ -213,6 +213,24 @@ def update_opportunity_to_shipped(opportunity_id: str, change_id: str) -> bool:
     return r.status_code < 300
 
 
+def _queue_for_indexnow(site_key: str, url: str) -> None:
+    """Queue an edited URL for the next IndexNow drain.
+
+    Edits applied outside a deploy (meta rewrites, schema, fact back-patches)
+    otherwise never notify Bing, which is the estate's largest click source and
+    the index that grounds Copilot and ChatGPT Search. Never fatal: an
+    unconfigured site or an unwritable queue must not fail an applied edit.
+    """
+    if not url:
+        return
+    try:
+        from optimisation_engine.indexing.submit_indexnow import enqueue
+
+        enqueue(site_key, url)
+    except Exception as exc:  # noqa: BLE001 - indexing is best-effort
+        print(f"[indexnow] skipped {site_key} {url}: {type(exc).__name__}: {exc}")
+
+
 def run_apply_lifecycle(
     *,
     brief: ChangeBrief,
@@ -287,6 +305,8 @@ def run_apply_lifecycle(
     # All good — clean up backups
     for bak, _ap in backups:
         cleanup_backup(bak)
+
+    _queue_for_indexnow(brief.site_key, brief.target_url)
 
     # Record audit row
     change_id = record_optimisation_change(
