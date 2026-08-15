@@ -365,33 +365,38 @@ def _write_report(
 # DB writes
 # ---------------------------------------------------------------------------
 
+INSERT_CHUNK = 500  # one statement per chunk; a baseline seed is 16k+ rows and a single INSERT blows the REST endpoint
+
+
 def _insert_new_urls(rows: list[dict]) -> int:
     if not rows:
         return 0
-    values = ", ".join(
-        f"({_esc(r['site_key'])}, {_esc(r['competitor_domain'])}, {_esc(r['url'])}, "
-        f"{_esc(r['slug'])}, {_esc(r['lastmod'])}, {_esc(r['title'])}, "
-        f"{_esc(r['mapped_query'])}, {_esc(r['our_coverage'])}, {_esc(r['lane'])}, {_esc(r['score'])})"
-        for r in rows
-    )
-    _sql(f"""
-        INSERT INTO competitor_urls_seen
-            (site_key, competitor_domain, url, slug, lastmod, title, mapped_query, our_coverage, lane, score)
-        VALUES {values}
-        ON CONFLICT (site_key, url) DO NOTHING
-    """)
+    for i in range(0, len(rows), INSERT_CHUNK):
+        values = ", ".join(
+            f"({_esc(r['site_key'])}, {_esc(r['competitor_domain'])}, {_esc(r['url'])}, "
+            f"{_esc(r['slug'])}, {_esc(r['lastmod'])}, {_esc(r['title'])}, "
+            f"{_esc(r['mapped_query'])}, {_esc(r['our_coverage'])}, {_esc(r['lane'])}, {_esc(r['score'])})"
+            for r in rows[i:i + INSERT_CHUNK]
+        )
+        _sql(f"""
+            INSERT INTO competitor_urls_seen
+                (site_key, competitor_domain, url, slug, lastmod, title, mapped_query, our_coverage, lane, score)
+            VALUES {values}
+            ON CONFLICT (site_key, url) DO NOTHING
+        """)
     return len(rows)
 
 
 def _insert_discovery_log(site_key: str, rows: list[dict]) -> int:
     if not rows:
         return 0
-    values = []
-    for r in rows:
-        kind = "defend_lane" if (r.get("our_coverage") or 0) >= DEFEND_THRESHOLD else "netnew_candidate"
-        payload = {k: v for k, v in r.items() if k != "method"}
-        values.append(f"({_esc(r['site_key'])}, {_esc(kind)}, {_jsonb(payload)})")
-    _sql(f"INSERT INTO discovery_log (site_key, kind, payload) VALUES {', '.join(values)}")
+    for i in range(0, len(rows), INSERT_CHUNK):
+        values = []
+        for r in rows[i:i + INSERT_CHUNK]:
+            kind = "defend_lane" if (r.get("our_coverage") or 0) >= DEFEND_THRESHOLD else "netnew_candidate"
+            payload = {k: v for k, v in r.items() if k != "method"}
+            values.append(f"({_esc(r['site_key'])}, {_esc(kind)}, {_jsonb(payload)})")
+        _sql(f"INSERT INTO discovery_log (site_key, kind, payload) VALUES {', '.join(values)}")
     return len(rows)
 
 
@@ -575,10 +580,18 @@ def run(
     defend = [r for r in all_new if r["our_coverage"] >= DEFEND_THRESHOLD]
     netnew = [r for r in all_new if r["our_coverage"] < DEFEND_THRESHOLD]
 
+    # Baseline mode: seen-table empty for this site means this run is seeding
+    # initial state, not detecting publications. Insert URLs, emit NO events
+    # (16k+ defend/netnew rows on a seed run would be pure alert noise).
+    baseline = not existing_by_domain
+
     inserted = logged = 0
     if not dry_run and table_ready:
         inserted = _insert_new_urls(all_new)
-        logged = _insert_discovery_log(site_key, all_new)
+        if baseline:
+            print(f"[competitor_watch] baseline seed: {inserted} URLs stored, discovery_log events skipped")
+        else:
+            logged = _insert_discovery_log(site_key, all_new)
     elif dry_run:
         print(f"[competitor_watch] DRY RUN: would insert {len(all_new)} rows "
               f"into competitor_urls_seen + discovery_log")
