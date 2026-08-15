@@ -1,0 +1,139 @@
+name: Caretaker
+
+# The weekly REASONING layer over the monitoring stack. state_check gathers
+# facts daily; this investigates them, runs the end-to-end probes, and on the
+# first run of each month audits the monitors themselves (which fired, which
+# watch something dead, which should be killed). Contract: .github/caretaker/PROMPT.md
+#
+# Read-only by contract. Emails only when the finding set changes - the dedup
+# exists because a monitor that emails every week gets ignored (risk-manager's
+# fate). Its own death is covered by the HEARTBEAT_CARETAKER dead-man switch.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # Mondays 07:00 UTC, an hour after state-check
+  workflow_dispatch: {}
+
+jobs:
+  caretaker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install deps
+        run: |
+          pip install --quiet httpx python-dotenv
+          npm install -g @anthropic-ai/claude-code
+
+      - name: Restore monitoring memory (state-check snapshots + dedup keys)
+        uses: actions/cache@v4
+        with:
+          path: out
+          key: state-check-caretaker-${{ github.run_id }}
+          restore-keys: state-check-
+
+      - name: Fresh state check (facts must be today's, not Friday's)
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/state_check.py --json > out/run.json || true
+
+      - name: End-to-end probes (money path + sitemap)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          LEAD_PROBE_SECRET: ${{ secrets.LEAD_PROBE_SECRET }}
+        run: |
+          mkdir -p out/probes
+          node scripts/property_synthetic_lead_check.mjs > out/probes/synthetic_lead.log 2>&1 || true
+          node scripts/property_health_sweep.mjs > out/probes/health_sweep.log 2>&1 || true
+          tail -5 out/probes/synthetic_lead.log
+          tail -5 out/probes/health_sweep.log
+
+      - name: Reason (claude -p, read-only tools)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          BETTERSTACK_API_TOKEN: ${{ secrets.BETTERSTACK_API_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          claude -p "$(cat .github/caretaker/PROMPT.md)" \
+            --allowedTools "Read,Grep,Glob,Bash" \
+            > out/verdict.md
+          echo "--- verdict head ---"
+          head -30 out/verdict.md
+
+      - name: Email verdict when its finding set changed
+        if: always()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+          TRIPWIRE_NOTIFY_TO: ${{ secrets.TRIPWIRE_NOTIFY_TO }}
+        run: |
+          python - <<'PY'
+          import json, os, sys, datetime as dt
+          from pathlib import Path
+          import httpx
+          v = Path("out/verdict.md")
+          if not v.exists():
+              print("no verdict (claude step failed); red run is the signal"); sys.exit(0)
+          lines = v.read_text(encoding="utf-8").splitlines()
+          send = any(l.strip() == "EMAIL: yes" for l in lines[:3])
+          key = next((l.split(":", 1)[1].strip() for l in lines[:3] if l.startswith("KEY:")), "")
+          state_p = Path("out/caretaker_last_key.json")
+          prev = {}
+          if state_p.exists():
+              try: prev = json.loads(state_p.read_text())
+              except Exception: pass
+          if not send:
+              print("caretaker: EMAIL: no"); sys.exit(0)
+          if key and key == prev.get("key"):
+              print("caretaker: same finding set as last email; suppressed"); sys.exit(0)
+          api, to, frm = (os.environ.get(k, "").strip() for k in
+                          ("RESEND_API_KEY", "TRIPWIRE_NOTIFY_TO", "RESEND_FROM_EMAIL"))
+          if not (api and to and frm):
+              print("caretaker: would email but Resend secrets missing"); sys.exit(0)
+          r = httpx.post("https://api.resend.com/emails",
+                         headers={"Authorization": f"Bearer {api}"},
+                         json={"from": frm, "to": [to],
+                               "subject": "[caretaker] weekly verdict",
+                               "text": v.read_text(encoding="utf-8")}, timeout=30)
+          print("send", r.status_code, r.text[:150])
+          if r.status_code < 300:
+              state_p.write_text(json.dumps(
+                  {"key": key, "at": dt.datetime.now(dt.timezone.utc).isoformat()}))
+          PY
+
+      - name: Dead-man ping (silence at Better Stack = caretaker died)
+        if: always()
+        env:
+          HEARTBEAT_CARETAKER: ${{ secrets.HEARTBEAT_CARETAKER }}
+        run: |
+          if [ -s out/verdict.md ] && [ -n "$HEARTBEAT_CARETAKER" ]; then
+            curl -fsS --max-time 10 "$HEARTBEAT_CARETAKER" || true
+          fi
+
+      - name: Keep the verdict
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: caretaker-verdict
+          path: |
+            out/verdict.md
+            out/probes/*.log
+          retention-days: 90
