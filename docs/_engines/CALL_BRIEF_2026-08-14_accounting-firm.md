@@ -1,4 +1,4 @@
-# Call brief: accounting firm, Friday 14 August 2026
+# Call brief: Rob (accounting firm), Friday 14 August 2026
 
 Everything below is consistent with the published price sheet (`docs/price-sheet.html`, print to PDF before the call), the standard terms (`config/standard_terms.md`) and the proposal engine. Say anything on this page freely; it all matches the documents you can send afterwards.
 
@@ -15,32 +15,32 @@ Operating name: **Ashfield Partner Network** (legal entity Ashfield Trading Ltd;
 3. **Exclusive is a paid upgrade, at 3x.** Any lead that no firm has claimed yet can be claimed exclusively at 3 times its current price. That locks the lead: it is delivered to nobody else. The logic is simple to say out loud: the shared price assumes up to 3 firms, so exclusivity is buying out all three slots.
 4. **The race decides, honestly.** Exclusivity is not a right of first refusal and there is no head start. If a shared claim lands first, exclusivity is gone for that lead and the firm that wanted it can still take a shared slot at the shared price. The 3x price is only ever charged when the exclusive claim actually wins.
 5. **Credits come with exclusivity, and only with it.** Dead number, bounced email, enquiry materially different from the description: an exclusive claim gets a credit. Shared leads are a third of the price and sold as seen, because a "dead lead" claim cannot be verified fairly across three buyers. This is a selling point, not a catch: the firm chooses the protection level per lead.
-6. **Unclaimed leads get cheaper, claimed leads never do.** A lead nobody claims re-offers at a last-call price after 24 hours and leaves the accounting pool after 48. Decay stops the moment anyone claims.
+6. **The price never drops.** A lead holds its price for as long as nobody claims it, and leaves the accounting pool after 48 hours. There is no last-call discount, so there is nothing to gain by waiting. (Changed 14 Aug: last call removed.)
 
 ## Price card (published, per claimed lead)
 
 | Tier | Typical work | Shared | Exclusive | Typical volume/mo* |
 |---|---|---|---|---|
-| Advisory | incorporation, restructuring, CGT/SDLT planning, non-resident, charity structure | £85 (last-call £55) | £255 | ~25 |
-| Standard | landlord self assessment with complexity, SME accounts, compliance plus advice | £40 (last-call £25) | £120 | ~45 |
-| Essential | straightforward returns, basic compliance | £15 (last-call £10) | £45 | ~20 |
+| Advisory | incorporation, restructuring, CGT/SDLT planning, non-resident, charity structure | £85 | £255 | ~25 |
+| Standard | landlord self assessment with complexity, SME accounts, compliance plus advice | £40 | £120 | ~45 |
+| Essential | straightforward returns, basic compliance | £15 | £45 | ~20 |
 
 \* Typical, not guaranteed. Never promise volumes on the call.
 
 Anchor if asked "is £85 a lot?": an advisory lead is a single-digit percentage of typical first-year fees for that work, and the firm pays nothing for leads it does not claim.
 
-## Live numbers to have in your head (pulled 12 Aug 2026)
+## Live numbers to have in your head (pulled 14 Aug 2026, morning of the call)
 
-- **182 enquiries to date** across 9 site verticals; **103 in the last 30 days**, 29 in the last 7. Flow is growing, not flat.
-- Of the last 30 days: **80 verified by SMS and email (78%)**, **52 replied to follow-up**, and **32 booked a callback slot themselves**, i.e. roughly a third of recent enquirers are picking a time and waiting for a call.
-- Mix skews property/landlord (the largest lane), with medical, solicitors, care, contractors and small business behind it.
+- **190 enquiries to date** across 9 site verticals; **100 in the last 30 days**, 27 in the last 7. Flow is steady at roughly 100/month.
+- Of the last 30 days: **77 verified by SMS and email (77%)**, **51 replied to follow-up**, and **34 booked a callback slot themselves**, i.e. roughly a third of recent enquirers are picking a time and waiting for a call.
+- Mix skews property/landlord (77 of the last 100), with medical, solicitors, dentists, care, charities, contractors and small business behind it.
 - Say these as rounded truths ("about a hundred in the last month, around a third book a call slot themselves"). Never promise the future rate.
 
 ## Terms highlights (all in the standard terms, quote freely)
 
 - A billable lead is SMS and email verified with full contact details, a case description and a tier label, delivered in real time on claim. Enquirers who never respond to verification are never delivered and never charged.
 - No volume commitments or minimums in either direction. Join free.
-- Invoiced on the 1st of each month for the previous month's claims, collected by Direct Debit (mandate set up before the first claim, not at join).
+- Invoiced on the 1st of each month for the previous month's claims, payable by bank transfer within 14 days. Nothing is payable on joining.
 - Leads are chargeable even if the enquirer has spoken to another adviser, unless they were formally engaged for that work before enquiring.
 - "No response" credits (exclusive only) need evidence of 7 to 9 contact attempts over 14 days.
 
@@ -55,7 +55,7 @@ Researched 2026-08-12; sources in `docs/_engines/CLAIM_SYSTEM_AND_MARKET_NOTES_2
 Contrast lines that land:
 
 - "Shared means three firms maximum, not five or eight."
-- "You never prepay and nothing expires. No credit packs. You pay in arrears, by Direct Debit, only for what you claimed."
+- "You never prepay and nothing expires. No credit packs. You pay in arrears, on invoice, only for what you claimed."
 - "Every lead is SMS and email verified before you ever see it. The big marketplaces sell unverified enquiries and argue about refunds afterwards; we filter before the sale instead."
 - On our 3x exclusivity vs Bark's 20%: their exclusivity is priced as an afterthought; ours is literally the price of buying out all three slots. A 20% premium tells you the exclusivity isn't real.
 
@@ -78,11 +78,11 @@ Contrast lines that land:
 
 - Their name and email is everything needed to generate a full branded proposal (live lead charts, statistical run-rate, their pricing) the same day: `python proposal_engine/generate_proposal.py --prospect <ref>` after copying `proposal_engine/prospects/example_prospect.py`.
 - Send: price sheet PDF, standard terms (they are on the price sheet already), then the proposal.
-- If they want in: firms.csv row, Direct Debit mandate before first claim, done.
+- If they want in: signed agreement back, firms.csv row with the signed date, billing contact noted, done.
 
 ## State of play (internal honesty, not for the call)
 
-- The distribution engine is built and verified end to end but dry-run: pings, deliveries and invoices render locally; nothing sends email, GoCardless is stubbed, claim links do not exist yet. Manual operation via the runbook is fully workable for the first firms.
+- The distribution engine is built and verified end to end but dry-run: pings, deliveries and invoices render locally; nothing sends email, invoices are rendered but not sent, claim links do not exist yet. Manual operation via the runbook is fully workable for the first firms.
 - The live Property pipeline still delivers each lead to a single firm; the pool bridge for the other sites is an open build item.
 - The 20 lead-engine branches are merged locally on this line but not pushed; the Property SQL migration must be applied before the next Property deploy.
 - Current leads are being handled by an interim taker (raw export handed over 12 Aug). If Friday's firm signs, they enter the pool alongside, on the published terms; the interim arrangement is not exclusive and must not be presented as such.

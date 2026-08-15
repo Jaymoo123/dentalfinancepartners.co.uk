@@ -32,16 +32,18 @@ Four rules make the system checkable:
 
 1. Join the pool free. No sign-up fee, no minimums, no caps.
 2. Leads arrive as redacted alerts: tier, case type, area, a one-line intent summary, the shared price and the exclusive price.
-3. Claim a lead to receive the full verified details instantly. Up to 3 firms share each lead, first come, first served; the price is fixed at the first claim.
+3. Claim a lead to receive the full verified details instantly. Up to 3 accountancy firms share each lead, first come, first served; the price is fixed at the first claim.
 4. Or claim exclusively at 3 times the price to lock the lead to your firm. Exclusive is available only while no other firm has claimed, and carries the credit protection.
-5. Claimed leads are invoiced monthly and collected by Direct Debit.
+5. The figures above describe the accountancy lane. The same enquiry may also be offered on the Adjacent lane to up to 3 non-accounting professions such as brokers, solicitors and surveyors, who do not compete with you for the work. Adjacent claims are separate from your slots and do not affect them, including on an exclusive claim.
+6. Claimed leads are invoiced monthly in arrears, payable by bank transfer within 14 days.
 
 ## Standard terms
 
+- Each lead is offered as a redacted alert: the tier, case type, area, price and the enquiry in the enquirer's own words, with names, phone numbers, email addresses, postcodes, web addresses and company names removed. You decide from that. The unredacted enquiry and the enquirer's contact details are sent only if you claim it.
 - A billable lead is SMS and email verified, with full contact details (name, phone, email), a case description and a tier label, delivered in real time on claim.
 - Leads are shared: up to 3 firms may claim each lead, first come, first served. A lead's price is fixed when it is first claimed; every firm claiming that lead pays the same price.
 - Any lead not yet claimed by another firm may be claimed exclusively, at 3 times its current price. An exclusive claim locks the lead to the claiming firm; it is delivered to no one else. Once any firm holds a shared claim on a lead, exclusivity is no longer available for that lead and it can only be claimed on shared terms.
 - No volume commitments or minimums, in either direction. Firms pay only for leads they claim.
 - Credits (never refunds) apply to exclusive claims only, and only to: dead or unreachable contact details, or an enquiry materially different from the description. "No response" credits require evidence of 7 to 9 contact attempts over 14 days. Shared and Raw leads are sold as seen, no credits. Leads are chargeable even if the enquirer has spoken with another adviser, unless formally engaged for that work before enquiring.
-- Claimed leads are invoiced on the 1st of each month and collected by Direct Debit. Delivery pauses on failed payment or invoices 14 or more days overdue.
+- Claimed leads are invoiced on the 1st of each month, in arrears, for the leads claimed in the previous month. Invoices are payable by bank transfer within 14 days of the invoice date. Delivery pauses on invoices 14 or more days overdue.
 - Prices are as published.

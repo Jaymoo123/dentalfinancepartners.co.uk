@@ -1,5 +1,7 @@
 # Agency Lead Attribution Read — 2026-07-08
 
+> **SUPERSEDED 2026-08-14 in part.** The CC-to-a-named-firm routing described here is retired; the estate runs the anonymous pool/claim model and names no firm. The attribution analysis stands.
+
 ## Numbers
 
 | Metric | Value |

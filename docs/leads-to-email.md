@@ -1,5 +1,7 @@
 # Leads → email notification
 
+> **PARTIALLY SUPERSEDED 2026-08-14.** "Forward it to the partner firm" describes the retired single-firm arrangement. A lead is now offered to the pool as a redacted alert and delivered to each firm that claims it, up to 3 per lane. The notify plumbing described below is still accurate.
+
 When a lead hits the shared Supabase `leads` table, an `INSERT` trigger POSTs the
 row to `/api/leads/notify` on the Property site, which emails a pre-formatted HTML
 table to the internal inbox. Open the email, forward it to the partner firm, done.

@@ -22,15 +22,27 @@ Live and building flow: property tax / landlord (largest), SME accounts, contrac
 7. **Estate agents (incl. probate sales desks)** — probate and "planning to sell" property leads.
 8. **Company formation / company secretarial agents** — startup and incorporation leads (also upstream partners).
 
-## Tier 2 — FCA-gated, do NOT outreach until the introducer question is cleared
+## Tier 2 — finance and regulated-firm buyers, outreach OPEN (owner decision 2026-08-13)
 
-Paid introductions to regulated firms (mortgages, insurance, investments, consumer credit) can require FCA authorisation or a specific exemption depending on what we pass and how we are paid. Estate policy has FCA verticals locked for site builds; the same caution applies to selling introductions. Get the solicitor review (already an open legal item) to rule on the introducer exemption before anyone on this list is contacted:
+Previously held pending the introducer-exemption ruling. Owner released it for outreach: list-building and contacting firms are not themselves regulated activities. The exemption question bites only at the point a fee is taken for passing a CONSUMER's details, so it must be resolved before the first invoice on a consumer introduction, not before outreach. Two of the five below are not gated at all.
 
-- Mortgage brokers (BTL, portfolio, contractor mortgages) — otherwise the single best fit for landlord leads.
-- IFAs / financial planners (IHT, pension sharing on divorce, practice-owner wealth).
-- Insurance brokers (landlord, PI, business).
-- Commercial / bridging / development finance brokers.
-- Umbrella companies (also reputational risk in the IR35 lane; treat separately even if cleared).
+1. **Mortgage brokers** — best fit for the largest lane (property tax / landlord).
+   - BTL / portfolio / limited-company SPV specialists; contractor mortgage specialists (contractors + IR35); expat / non-resident specialists.
+   - Sources: FCA Register filtered on home finance mediation permission, Unbiased, AMI members.
+   - Gate: applies to consumer-BTL and regulated mortgage introductions. Limited-company SPV introductions are cleaner.
+2. **Commercial / bridging / development finance brokers** — **NOT gated for limited-company borrowers** (RAO Art 36A: introducing a body corporate is not credit broking; same basis as the built Business Finance cluster). Company-gate the form.
+   - Feeds SME accounts, landlord commercial, construction/CIS, hospitality, ecommerce. Highest CPCs in the estate (£47-145).
+   - Sources: NACFB member directory, FIBA, ASTL (lender side).
+3. **IFAs / financial planners** — IHT (wills-probate), pension sharing (divorce-finances), practice-owner wealth (dentists, medical, pharmacy, solicitors).
+   - Sources: FCA Register, Unbiased, VouchedFor, Personal Finance Society directory, STEP for IHT-focused.
+   - Gate: applies. Highest value per lead in this tier.
+4. **Insurance brokers** — landlord/property, professional indemnity (solicitors, contractors), commercial.
+   - Sources: BIBA Find Insurance member directory, FCA Register.
+   - Gate: IDD, a separate question from the introducer exemption. Do not let it hold items 1-3.
+5. **Umbrella companies** — contractors + IR35 lane. Not an FCA question; the objection is reputational and part-competitive with contractor accounting.
+   - Sources: FCSA accredited members, Professional Passport accredited list.
+
+Outreach order: commercial finance brokers (NACFB) and BTL mortgage specialists first — cleanest position, biggest lane match.
 
 ## Excluded
 

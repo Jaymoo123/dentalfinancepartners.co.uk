@@ -1,5 +1,7 @@
 # Estate opportunity scope — 2026-08-03
 
+> **SUPERSEDED 2026-08-14 in part.** The commercial figures here describe the named-partner era (leads sold to DJH at a flat fee, a Haines Watts Option B trial at £150 per selected lead, capped at 15 leads or 3 months). None of that is the current model: see `docs/LEAD_PRICING.md` for the case-type card and the claim model. The strategic analysis is still useful; the deal terms are history.
+
 Scoping pass across the whole estate: what is open to us right now, on existing sites, on
 new sites, and per site. Written for a decision, not for execution. Nothing here was built
 or changed by this pass.

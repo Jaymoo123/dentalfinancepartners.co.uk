@@ -1,5 +1,7 @@
 # Estate CRO Parity Program — state doc (the continuity artifact)
 
+> **PARTIALLY SUPERSEDED 2026-08-14.** Lead routing described here (owner notify plus a named-firm CC on non-Property sites) is retired. Leads now go to the buyer pool under the claim model; no firm is named anywhere. The CRO and parity work itself stands. See `docs/BUYER_ONBOARDING.md`.
+
 > **If you are a fresh agent taking over: read this file top to bottom, then do the RESUME HERE step at the bottom. No conversation context is required.**
 > Full plan: `C:\Users\user\.claude\plans\okay-we-are-going-synchronous-peach.md` (this doc is self-sufficient for execution; the plan adds exploration detail).
 > Model tiering (locked): Sonnet sub-agents BUILD (parallel, non-overlapping file packages); Opus sub-agents write per-niche copy + adversarial QA; the manager/architect personally does ALL git, migrations, `packages/web-shared` edits, gates, deploys, rollbacks. Haiku: mechanical greps only.

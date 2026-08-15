@@ -1,5 +1,7 @@
 # Phase 0 audit — site inventory and consistency with the pool/claim model
 
+> **HISTORICAL, 10 August 2026.** This is the state of the estate *before* the 14 August alignment, and the consent strings quoted in its findings are no longer live. Every site now carries the multi-firm disclosure (DSA Annex B.2). Kept as the record of what was found. Do not read any quoted string here as current wording.
+
 Date: 10 August 2026. Read-only inventory of all 18 public sites (plus the ashfield corporate site) against the Lead Engine operating model: leads tiered by case type, shared with a specialist partner network, delivered on claim, onward re-referral disclosed. Target consent state = notice-only legitimate-interests acknowledgement mentioning partner sharing and re-referral (owner decision; Property is the reference implementation). Body-copy conflicts are listed but marked DO-NOT-EDIT (ranking content is out of scope for the messaging pass).
 
 ## Estate summary
