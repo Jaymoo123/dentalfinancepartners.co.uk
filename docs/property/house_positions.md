@@ -2209,6 +2209,7 @@ Cross-references §21.5 (FIC mechanics generic), §22.6 (FIC as IHT value-freeze
 - **Current legislative state (verified 2026-05-24):** The Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 (**SI 2015/962**) prohibit a landlord from letting a "sub-standard" domestic PR property (i.e. EPC F or G) without an exemption registered on the PRS Exemptions Register. This **EPC E floor has applied to new tenancies since 1 April 2018 and to all continuing lets since 1 April 2020** (domestic), and continuing non-domestic lets from 1 April 2023 (reg.27 covers the non-domestic chain). The **landlord cost cap is £3,500 (including VAT)** above which an exemption can be registered (reg.25(2) domestic / equivalent non-domestic provisions). Source: gov.uk MEES landlord guidance + SI 2015/962 verified 2026-05-24.
 - **EPC C 2030 trajectory — NOT enacted (critical drift catch at Wave 7 HP-lock).** The widely-cited "EPC C by 2030 for all PRS / 2028 for new tenancies / £10,000 cap" framing is **government policy aspiration only**, not enacted legislation. Verified at https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance on 2026-05-24: the guidance states the government has "committed to look at a long-term trajectory to improve the energy performance standards" with the "aim for as many of them as possible to be upgraded to EPC Band C or equivalent by 2030", and is "exploring policy design options following the 2026 consultation". **No amending Statutory Instrument has been laid** to give the EPC C trajectory statutory force as of 2026-05-24. The 2020 consultation, the 2026 consultation outcome, and various ministerial statements all stop short of legislating a new minimum band.
 - **Practical writing rule for sessions (Wave 7 A8 + A9):** write the EPC C 2030 trajectory as **government policy / proposed direction**, not as enacted statute. Use hedges: "government has proposed", "consultation closed 2026", "no Statutory Instrument yet laid", "landlords should plan on the assumption that an EPC C standard will be legislated for new tenancies before 2028 and for continuing tenancies before 2030, subject to commencement regulations not yet made". Do not assert "the cap rises to £10,000" or "EPC C is required from 2028" as live statute. The £3,500 cap and EPC E floor are the **enacted current state** sessions can assert.
+- **Non-domestic depth (Wave 11 Stage 1b):** see §26.3a for the commercial side: reg 27 prohibition chain, reg 28 seven-year payback test (NO £3,500 cap non-domestic), reg 41 rateable-value-linked penalties, and the consultation-only EPC C/B trajectory hedge.
 - **Grant schemes (Wave 7 A9).** ECO4 (Energy Company Obligation 4, Apr 2022 - Mar 2026 — successor scheme TBC), Great British Insulation Scheme (GBIS, formerly ECO+, running alongside ECO4), Boiler Upgrade Scheme (BUS — £7,500 grant for ASHP / GSHP / biomass replacements), and Home Upgrade Grant 2 (HUG2 — off-gas-grid homes, runs to March 2025 — verify replacement scheme status at write time). Eligibility is means-tested or property-tied (D/E/F/G band, off-gas-grid). Most schemes flow to owner-occupier + low-income households; landlord access is **partial** (ECO4 LA Flex route + GBIS general-eligibility route open to private landlords in some council areas).
 
 ### 26.4 Decent Homes Standard application to PRS
@@ -3363,7 +3364,7 @@ Closes F-101 from MW1 Stage 1b. Anchors lane A pick A8 (Archer UK case) + lane C
 | Provision | Status as at Aug 2026 | Operative consequence for pages |
 |---|---|---|
 | 2-year ownership rule abolished | **IN FORCE** (Jan 2025) | A buyer can extend immediately on completion — safe to state as current law |
-| Right to Manage reforms | **IN FORCE** (Mar 2025) | RTM pages use the amended regime |
+| Right to Manage reforms | **IN FORCE** (Mar 2025) | RTM pages use the amended regime (full lock: §31.C) |
 | Marriage value abolition | **NOT IN FORCE — marriage value REMAINS PAYABLE** | Extending a sub-80-year lease today pays marriage value in full. Most 2026 web content asserts abolition; **it is wrong** — this is the correction-of-record opportunity (Wave 11 A16) |
 | 990-year term at peppercorn | **NOT IN FORCE** | Extensions completed today are +90 years (flats, Ch II). Never state 990 as current |
 | Prescribed deferment/capitalisation rates | **NOT IN FORCE** — needs secondary legislation; consultation closes **23 Sep 2026** | Post-Sportelli 5% remains the working deferment rate; new rates could move premiums EITHER way |
@@ -4042,3 +4043,163 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 
 - **Dividend rates from 6 April 2026 (ITA 2007 s.8 as in force): ordinary 10.75%, upper 35.75%, additional 39.35%.** FA 2026 s.4 amended ONLY the ordinary (8.75%→10.75%) and upper (33.75%→35.75%) rates; the 39.35% additional rate was already in force (FA 2022). Do not attribute 39.35% to FA 2026.
 - **CIHC (CTA 2010 s.18N):** a close company letting land COMMERCIALLY TO UNCONNECTED persons exists for a permitted purpose and is NOT a close investment-holding company (small profits rate available). Letting to connected persons/their family falls outside the carve-out → CIHC → main rate. State the connectedness condition whenever citing the carve-out.
+
+---
+
+# Wave 11 Stage 1b lock extensions (locked 2026-08-15)
+
+Closes flags F-73 (four compliance mini-locks), F-76 (RTM), F-77 (service charges), F-78 (ground rent), and F-70 + F-79 together (non-domestic MEES). Source: Wave 11 Stage 1 seed briefs in `briefs/property/wave11/`, statutory hooks WebFetch-verified at legislation.gov.uk on 2026-08-15 by the seed sessions. Only seed-verified content is asserted below; anything a seed marked "Stage 2 verify" appears as an EXPLICIT verify-at-write item, never as an asserted position.
+
+**Numbering note:** the F-73 flag proposed "new §26.x mini-locks"; a fresh §33 block was considered and rejected because §33 is already taken (CIS, MW2 extension). The cluster B compliance mini-locks therefore continue §26 numbering as §26.10-§26.13, and the non-domestic MEES sub-position sits as §26.3a (mirroring the §31.3a lettering pattern, since it extends §26.3 directly). The leasehold locks take the §31.C/§31.D/§31.E slots the flags proposed (§31.B Commonhold precedent).
+
+## 26.10 EICR regime, SI 2020/312 duty cycle + reg 11 penalty (locked 2026-08-15, Wave 11 Stage 1b)
+
+- **Statutory hooks:** The Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020 (SI 2020/312).
+  - **reg 3 (duties of private landlords):** inspection and testing by a qualified person at intervals of **no more than 5 years**, or sooner if the last report specifies; copy of the report to each **existing tenant within 28 days** of inspection; to a **new tenant before occupation**; to the **local housing authority within 7 days** of written request; further investigative or remedial work completed **within 28 days** or any shorter period the report specifies. Verified at https://www.legislation.gov.uk/uksi/2020/312/regulation/3 on 2026-08-15.
+  - **reg 11 (financial penalty):** "must not exceed **£30,000**", and the cap is **PER BREACH**, multiple breaches can stack. Verified at https://www.legislation.gov.uk/uksi/2020/312/regulation/11 on 2026-08-15.
+  - Supporting: regs 4-10 (remedial action, urgent remedial action, local authority powers and cost recovery); reg 12 (penalty procedure + appeal to the First-tier Tribunal). BS 7671 (IET Wiring Regulations) is the referenced standard, not legislation.
+- **TWO-REGIME PENALTY DISCIPLINE (live SERP error we exploit).** The EICR cap is **£30,000 per breach under SI 2020/312 reg 11**. The Housing Act 2004 licensing civil penalty is **£40,000 per offence under s.249A** from 1 May 2026 (§26.9, SI 2026/319 uplift). These are separate regimes with separate caps and a landlord can face BOTH (unlicensed AND uncertified). Never merge them into one figure; the SERP confuses them constantly and our pages state the split explicitly.
+- **Terminology:** the EICR is the report; there is no separate "electrical safety certificate" document in law.
+- **Jurisdiction:** England-only SI. Scotland has required EICRs since 2015 under separate rules; Wales and NI differ. First-screen jurisdiction statement per §5.3.
+- **Verify at write (not asserted here):** the Sch 1 excluded-tenancy list (social landlords, lodgers, long leases etc.) was NOT verified at seed stage; verify against the SI text before it enters a page. Re-verify the £30,000 cap at write per standing rule.
+- **Tax side (mirrors §26.7 + §26.9):** report fee revenue-deductible (ITTOIA 2005 s.272, compulsory regulatory cost, including pre-letting under pre-trading rules); remedial split = like-for-like rewiring/consumer-unit repair revenue, first-time full rewire materially upgrading the installation can be capital (TCGA 1992 s.38(1)(b)); reg 11 penalties NOT deductible (BIM38500+).
+- **Pages anchored to this lock:** A1 `eicr-certificate-cost-landlords` (cost lane), A2 `landlord-electrical-safety-certificate` (obligation lane).
+- **Do not write:**
+  - "EICR penalty up to £40,000" (that is the HA 2004 s.249A licensing figure; the EICR cap is £30,000 per breach under SI 2020/312 reg 11).
+  - "Penalty capped at £30,000 in total" (per breach; breaches stack).
+  - "An electrical safety certificate is a separate document from the EICR" (the report IS the deliverable).
+  - "The EICR rules apply UK-wide" (England-only SI).
+
+## 26.11 Gas safety duty cycle, GSIUR 1998 reg 36 (locked 2026-08-15, Wave 11 Stage 1b)
+
+- **Statutory hook:** Gas Safety (Installation and Use) Regulations 1998 (SI 1998/2451), **reg 36 (duties of landlords)**: annual safety check of gas appliances and flues by a **Gas Safe registered engineer**, with record supply to tenants and record retention. Verified at https://www.legislation.gov.uk/uksi/1998/2451/contents (reg 36 "Duties of landlords" confirmed under Part F Maintenance) on 2026-08-15. Verification depth was contents-level: the reg 36 sub-provision detail is a verify-at-write item (below).
+- **Promotion note:** this regime was previously locked only in-page (existing `gas-safety-certificates.md` body, per HANDOFF §5.2). This HP lock is now canonical; the existing page and A5 must not diverge from it or from each other.
+- **Verify at write (not asserted here):**
+  - The specific supply and retention day-counts (28-day copy to existing tenants, before-occupation supply to new tenants, 2-year record retention) against the reg 36 text.
+  - The **reg 36(3A)** MOT-style 10-12 month renewal flexibility, including the amending SI citation (SI 2018/139 per seed, verify).
+  - Penalty framing: enforcement is HSE under the HSWA 1974 backdrop (unlimited fines on indictment); verify the framing against HSE guidance before writing any figure.
+- **Jurisdiction:** GSIUR 1998 is **GB-wide** (contrast the England-only EICR SI, state the contrast explicitly); NI has a parallel regime. First-screen statement per §5.3.
+- **Tax side (align EXACTLY with the existing page's tax section, do not contradict):** annual CP12 fee + any bundled boiler service = revenue-deductible (ITTOIA 2005 s.272); repairs found at the check revenue; boiler REPLACEMENT normally revenue as like-for-like modern equivalent, capital where part of a wider upgrade (§26.7 logic); penalties non-deductible (BIM38500+).
+- **Pages anchored to this lock:** A5 `gas-safety-certificate-cost` (cost lane) + existing `gas-safety-certificates` (canonical regulatory guide; its cost section forward-links A5 at the Stage 11 back-patch per F-74, do not edit pre-merge).
+- **Do not write:**
+  - Any specific gas-safety fine figure without an HSE-verified source at write time (the "£6,000 fine" style numbers circulating are unsourced).
+  - "Gas safety rules are England-only" (GB-wide; it is the EICR regime that is England-only).
+  - A5 restating the existing page's penalty or duty-cycle sections beyond one line (lane rule; the existing page is canonical for regulatory mechanics).
+
+## 26.12 Fire safety in residential lettings, RRFSO 2005 + SI 2022/547 layering (locked 2026-08-15, Wave 11 Stage 1b)
+
+- **Statutory hooks:**
+  - Regulatory Reform (Fire Safety) Order 2005 (SI 2005/1541): **art 3** (responsible person), **art 9** (duty to make a suitable and sufficient fire risk assessment), **art 26** (enforcement), **art 32** (offences). Verified at https://www.legislation.gov.uk/uksi/2005/1541/contents on 2026-08-15.
+  - Fire Safety (England) Regulations 2022 (SI 2022/547), regs 3-10: high-rise definition, secure information box, external walls, floor plans, lifts, wayfinding signage, information to residents, fire doors. Verified at https://www.legislation.gov.uk/uksi/2022/547/contents on 2026-08-15. The height thresholds attaching to each duty (11m/18m splits) = verify at write.
+- **Residential scope boundary (state in the first screen, this is the differentiator):** the RRFSO applies to the **common parts of blocks of flats and to HMOs**, NOT inside a single self-contained dwelling let to one household. A single-let house needs no RRFSO fire risk assessment; the smoke and CO alarm regulations apply instead (SI 2015/1693 citation = verify at write). Competitors blur this constantly.
+- **EXPLICIT verify-at-write items (flagged in the seed as Stage 2 tasks; NOT asserted positions of this lock):**
+  - **Fire Safety Act 2021** (scope clarification: structure, external walls, flat entrance doors). NOT verified at seed time; must be WebFetch-verified before the citation enters any page.
+  - **BSA 2022 s.156** (changes to art 9 recording duties / competence expectations). NOT verified at seed time; same rule.
+- **Cost-bearer trio (structures A3):** (1) HMO landlord = own compliance cost, revenue-deductible; (2) freeholder/block manager = recoverable through the service charge as a management cost, subject to LTA 1985 reasonableness (§31.D); (3) RTM company post-acquisition procures and recharges (§31.C).
+- **Jurisdiction:** England and Wales; Scotland and NI differ. First-screen statement per §5.3.
+- **Tax side:** assessment fee revenue (ITTOIA 2005 s.272); action-plan works split like-for-like fire door replacement/alarm servicing = revenue vs new alarm system/compartmentation upgrades = capital (§26.7 pattern); art 32 fines non-deductible (BIM38500+). BSA 2022 Sch 8 interaction per §26.2 for cladding-era blocks.
+- **Pages anchored to this lock:** A3 `fire-risk-assessment-cost`.
+- **Do not write:**
+  - "Every rental property needs a fire risk assessment" (false; single self-contained lets are outside the RRFSO, the duty sits on common parts/HMOs).
+  - Any FSA 2021 or BSA 2022 s.156 proposition without write-time WebFetch verification.
+  - Conflating the SI 2022/547 duty thresholds with the BSA 2022 s.65 HRB definition (18m OR 7 storeys, occupation-stage, §26.2); they are different regimes with different thresholds.
+
+## 26.13 EPC machinery, SI 2012/3118 regs 5/6/7/7A (locked 2026-08-15, Wave 11 Stage 1b)
+
+- **Statutory hooks:** Energy Performance of Buildings (England and Wales) Regulations 2012 (SI 2012/3118). Contents/structure verified at https://www.legislation.gov.uk/uksi/2012/3118/contents on 2026-08-15 (Part 2 EPCs regs 5-13, Part 3 DECs regs 14-16, Part 4 air-conditioning regs 17-21, Part 7 enforcement regs 34-40); regs 5 and 6 additionally verified at regulation level (A17 seed, 2026-08-15).
+  - **reg 6 (EPC on sale and rent):** the relevant person must make a valid EPC available **free of charge** to any prospective buyer or tenant at the earliest opportunity, and ensure one has been given to the person who ultimately buys or rents; reg 6(3) limited withholding grounds.
+  - **reg 5 (application of Part 2, exclusions):** places of worship; temporary buildings with planned use of 2 years or less; low-energy industrial sites/workshops/non-residential agricultural buildings; stand-alone buildings under 50m²; officially protected buildings where compliance would unacceptably alter character or appearance (the listed-building exemption is CONDITIONAL on that test, not automatic).
+  - **reg 7** (EPC before marketing) + **reg 7A** (construction). Supporting: reg 4 (recommendation reports), reg 8 (buildings to be demolished), regs 14-16 (DECs, public buildings only), regs 17-21 (air-conditioning inspection reports).
+- **Enforcement:** reg 34 (local weights and measures authorities), reg 36 (penalty charge notices), reg 38 (the penalty-amount provision). **PENALTY AMOUNTS: VERIFY AT WRITE, DO NOT ASSERT FROM MEMORY.** legislation.gov.uk returned 504 on the reg 38 text at seed time (three attempts); the contents fetch confirms only that reg 38 exists and is the amounts provision. Both the domestic fixed figure (A6) and the non-dwelling rateable-value formula (minimum/maximum/default, A17) must be Stage 2 source-verified before any number ships.
+- **Also verify at write:** the 10-year validity regulation number (reg 11 statement mechanics per the A17 seed; not confirmed from the contents fetch); the assessor-accreditation regulation numbers (reg 22 area, DEA/NDEA).
+- **MEES boundary (one paragraph per page, no more):** SI 2012/3118 answers "must an EPC exist for this transaction"; SI 2015/962 answers "is the band good enough to let" (§26.3 domestic, §26.3a non-domestic). Two statutes; never merge.
+- **Jurisdiction:** England and Wales. Scotland runs its own regime (Energy Performance of Buildings (Scotland) Regulations 2008 + s.63 action plans); NI separate. First-screen statement per §5.3.
+- **Pages anchored to this lock:** A6 `epc-certificate-cost-uk`, A7 `how-to-book-an-epc`, A17 `commercial-epc-requirements`, A18 `commercial-energy-performance-certificate-cost` (framework only). Existing `energy-performance-certificates-epc` general guide joins at the F-74/F-80 back-patch.
+- **Do not write:**
+  - Any reg 38 penalty figure without write-time source verification (the 504 block is why; figures from competitor packs do not count as sources).
+  - "You need a new EPC for every re-let" (false; 10-year validity, and a valid in-date EPC may already exist on the register; the register check comes first).
+  - "The listed-building exemption is automatic" (conditional on the unacceptably-alter test, reg 5).
+  - "EPC rules are UK-wide" (England and Wales SI).
+
+## 26.3a MEES non-domestic sub-position, SI 2015/962 Part 3 (locked 2026-08-15, Wave 11 Stage 1b; closes F-70 + F-79)
+
+§26.3 is domestic-centric (£3,500 cap, C-2030 hedge). This sub-position locks the non-domestic side before the A17/A19 Stage 2 briefs. All regulation citations below verified at legislation.gov.uk (SI 2015/962) on 2026-08-15 by the cluster D seed session; reg 41 via the Part 3 Chapter 6 fetch.
+
+- **Prohibition chain, reg 27:** no granting of new tenancies of sub-standard non-domestic PR property from **1 April 2018**, and no continuing to let from **1 April 2023**, unless reg 29 or a Chapter 4 exemption applies. reg 20 (non-domestic PR property definition); reg 22 (sub-standard = below band E).
+- **NO £3,500 COST CAP NON-DOMESTIC.** The £3,500 cap in §26.3 is DOMESTIC-ONLY (reg 25(2)). The non-domestic exemption logic is:
+  - **reg 28 seven-year simple-payback test** ("relevant energy efficiency improvements"): improvements that do not pay for themselves in energy savings within 7 years are not "relevant", which does the work the domestic cost cap does.
+  - **reg 29 route:** all relevant improvements made, or none can be made; exemption lasts **five years running from registration under reg 36(2)** on the PRS Exemptions Register.
+  - Supporting: regs 31-33 (third-party consent, devaluation, temporary/new-landlord exemptions); reg 36 (register).
+- **reg 41 penalties:** breach of **less than 3 months** = the greater of **£5,000 or 10% of rateable value, capped £50,000**; breach of **3 months or more** = the greater of **£10,000 or 20% of rateable value, capped £150,000**; false or misleading register information up to **£5,000**; plus the **reg 39 publication penalty**, minimum 12 months on the register.
+- **Trajectory hedge (mirror the §31.3a in-force-table discipline exactly).** "EPC C by 2027/2028" and "EPC B by 2030" for commercial are **CONSULTATION-STAGE ONLY; no SI has been made**. gov.uk non-domestic MEES landlord guidance (fetched 2026-08-15): "no statutory timeline or enacted provisions for EPC C or EPC B". The SERP disagrees with itself on the interim date (C by 2027: moorcrofts, businessclimatehub; C by 2028: cim.io, energyadvicehub, higgsllp). Our pages ARBITRATE with sourced hedging; they never pick a side and never write any interim date as operative law. The enacted current state sessions can assert is the E floor.
+- **Tax side:** improvement works capital/revenue per §26.7; plant within the works through the §38 FA 2026 capital allowances floor (14% WDA main pool, 6% special rate, 40% FYA s.45U, full expensing s.45S companies, £1m AIA, re-verify rates at write per standing rule); commercial property is OUTSIDE the CAA 2001 s.35 dwelling-house bar; s.198 fixtures election on later sale per §25.11. Frame CT-first (most sub-E commercial stock is corporate).
+- **Pages anchored to this lock:** A19 `commercial-property-mees-compliance` (primary), A17 `commercial-epc-requirements` (guarded, boundary paragraph only), A8 `mees-regulations-landlords` (domestic sibling; the domestic/non-domestic split must be stated on both sides per F-80).
+- **Do not write:**
+  - "The £3,500 cost cap applies to commercial property" (domestic-only; non-domestic uses the reg 28 payback test).
+  - "Commercial EPC C is required from 2027/2028" or "EPC B by 2030 is law" (consultation only, no SI made; same discipline as the §26.3 domestic C-2030 do-not-write).
+  - A single flat MEES penalty figure for commercial (the reg 41 structure is rateable-value-linked with the under/over 3-month split; quoting "£150,000 fine" without the formula misstates it).
+  - Importing domestic penalty levels into commercial pages or vice versa.
+
+## 31.C Right to Manage, CLRA 2002 Part 2 Ch 1 (ss.71-90) as amended by LFRA 2024 (locked 2026-08-15, Wave 11 Stage 1b)
+
+Closes F-76. §31 covered enfranchisement/extension only; this locks the RTM architecture behind the §31.3a "RTM reforms IN FORCE Mar 2025" row.
+
+- **Statutory architecture, CLRA 2002 (c. 15) Part 2 Chapter 1 (ss.71-90).** Verified at https://www.legislation.gov.uk/ukpga/2002/15/contents on 2026-08-15: s.71 (the right to manage); s.72 (premises to which the Chapter applies); s.73 (RTM company = **private company limited by guarantee**); s.74 (membership: qualifying tenants, and the landlord AFTER acquisition); s.75 (qualifying tenants); ss.76-77 (long leases); s.78 (notice inviting participation); s.79 (claim notice; membership at service = leases of **at least half the flats**); s.84 (counter-notices); s.87 (deemed withdrawal); s.90 (acquisition date).
+- **LFRA 2024 reforms: ALL IN FORCE 3 March 2025 via SI 2025/131 (Commencement No. 3).** Verified at https://www.legislation.gov.uk/uksi/2025/131/made on 2026-08-15. Commences ss.49-52 + s.64 (RTM scope): **s.49 non-residential limit raised from 25% to 50%**; s.50 (costs of RTM claims, changed recoverability); s.51 (compliance with Chapter 1 obligations); s.52 (**no first-instance High Court applications**, FTT first instance). RTM pages write the AMENDED regime as current law. Post-Mar-2025 currency is the SERP edge: LEASE and most agent content predates the changes.
+- **Model articles: SI 2009/2767** (RTM Companies (Model Articles) (England) Regulations 2009), prescribed for RTM companies (limited by guarantee, no share capital); they apply automatically and prevail over inconsistent bespoke articles. Verified at https://www.legislation.gov.uk/uksi/2009/2767/contents/made on 2026-08-15.
+- **Character of the right:** no-fault (no mismanagement to prove, unlike an LTA 1987 Part 2 manager appointment). Management functions transfer; ownership does NOT: the freeholder stays, lease terms, lease length and ground rent are unchanged.
+- **Trio lane discipline (highest sameness risk in the wave):** A11 = the DECISION page (what RTM is, qualifying tests, RTM vs alternatives); A12 = the COMPANY page (s.73/s.74, SI 2009/2767, CH filings, dormant-vs-active, s.42 trust money, mutual trading); A13 = the PROCESS page (s.78 → s.79 → s.84 → s.87/s.90 timeline, handover, amended s.50 costs). Exactly one forward-link sentence between lanes; the pages never converge.
+- **Verify at write (not asserted here):**
+  - Statutory **day-counts inside ss.78-90** (counter-notice windows, waiting periods, acquisition-date minimums): deliberately NOT asserted at seed stage; verify each against the section text. Competitor day-counts (e.g. the 35-day window in solicitor content) are claims, not sources.
+  - The precise amended **s.50 costs position** (who pays what, s.87A-87B architecture per the Shelter pack note).
+  - The current prescribed-form SI for s.78/s.79 notices and whether forms were updated post-LFRA.
+  - LTA 1987 **s.42** trust-money citation; HMRC mutual-trading/flat-management reference (CTM40145 area); Companies House fees and penalty bands.
+- **Pages anchored to this lock:** A11 `right-to-manage-explained`, A12 `right-to-manage-company-setup`, A13 `right-to-manage-process-steps` (+ the A16 in-force ledger row).
+- **Do not write:**
+  - "Buildings with more than 25% non-residential space cannot use RTM" (stale; **50%** since 3 Mar 2025, LFRA 2024 s.49 via SI 2025/131. Carry the corrected figure as the freshness signal).
+  - "RTM gives leaseholders ownership / changes the lease / removes ground rent" (management only).
+  - "RTM disputes go to court" as the first-instance route (s.52: FTT first instance since 3 Mar 2025).
+  - "You must prove mismanagement" (no-fault right).
+  - Any framing of an RTM company as an investment/property-holding vehicle (it holds no property and makes no profit; say so to kill the adjacency with the company-structure corpus).
+
+## 31.D Service charges, LTA 1985 machinery + SI 2003/1987 consultation thresholds (locked 2026-08-15, Wave 11 Stage 1b)
+
+Closes F-77. No HP section previously covered the residential service-charge statute.
+
+- **Statutory architecture, LTA 1985 (c. 70).** All section headings verified at https://www.legislation.gov.uk/ukpga/1985/70/contents on 2026-08-15: **s.18** (meaning of service charge and relevant costs); **s.19** (limitation of charges: reasonableness); **s.20** (consultation requirements); **s.20B** (18-month time limit on demands); **s.20C** (costs of proceedings protection application); **s.21** (service charge information); **s.22** (inspection of supporting accounts and invoices); **s.27A** (First-tier Tribunal jurisdiction on liability).
+- **Consultation thresholds, SI 2003/1987** (Service Charges (Consultation Requirements) (England) Regulations 2003). Verified at https://www.legislation.gov.uk/uksi/2003/1987/made on 2026-08-15: s.20 consultation triggers at **more than £250 per tenant** for qualifying works (reg 6) and **more than £100 per tenant per accounting period** for qualifying long term agreements (reg 4(1)). Both thresholds are PER TENANT, not per building.
+- **LFRA 2024 Part 4 transparency provisions: NOT COMMENCED as far as verified; VERIFY AT WRITE.** They exist on the statute book; the seed did not verify the commencement position. Any page touching them must state in-force vs not-in-force explicitly on the write date, §31.3a discipline. Stage 2 blocker if left unresolved.
+- **Boundaries:** ground rent is NOT a service charge (§31.E, one sentence + forward-link); the residential LTA 1985 regime is distinct from the commercial service-charge-accounts page (different statute base, different reader, one cross-link).
+- **Verify at write:** FTT (Property Chamber) application fees; the PIM reference for landlord-leaseholder deductibility (PIM2068/PIM2100 area); Daejan v Benson (s.20 dispensation) citation before use; LTA 1987 s.42 trust status when cited.
+- **Tax side:** service charges on a let flat revenue-deductible against rental income when incurred; disputed/withheld amounts and refunds follow the accruals treatment (Stage 2 verifies the PIM line before asserting mechanics).
+- **Pages anchored to this lock:** A14 `service-charge-disputes-leaseholders` (primary); A3 `fire-risk-assessment-cost` (who-pays section); A12 `right-to-manage-company-setup` (producing side).
+- **Do not write:**
+  - "£250 threshold per building/per project" (per tenant, reg 6; same for the £100 QLTA figure, reg 4(1)).
+  - "The landlord cannot recover costs incurred more than 18 months ago" as a flat rule (s.20B bars DEMANDS made more than 18 months after costs were incurred unless the tenant was notified within 18 months that costs had been incurred and a demand would follow; state the notification limb).
+  - "LFRA 2024 transparency reforms now require..." without write-date commencement verification (not verified in force; §31.3a discipline).
+  - Treating ground rent as challengeable under s.19/s.27A (different regime, §31.E).
+
+## 31.E Ground rent, LR(GR)A 2022 architecture + the three-state ledger (locked 2026-08-15, Wave 11 Stage 1b)
+
+Closes F-78. Extends §31.3a row 6 and the §31.9 do-not-write into a full position.
+
+- **Statutory architecture, Leasehold Reform (Ground Rent) Act 2022 (c. 1).** ss.1-8 all verified at https://www.legislation.gov.uk/ukpga/2022/1 on 2026-08-15: **s.1** (regulated leases); **s.2** (excepted leases, including statutory lease extensions); **s.3** (prohibited rent); **s.4** (permitted rent = **peppercorn**); **s.5** (shared ownership); **s.6** (replacement leases); **s.7** (prohibited term treated as peppercorn, automatic conversion); **s.8** (enforcement authorities).
+- **The three-state ledger (the lock; most consumer coverage collapses these and keeping them separate IS the page):**
+  1. **LAW for NEW leases:** new regulated (qualifying) residential long leases carry peppercorn ground rent only, commonly stated as applying from **30 June 2022** (retirement housing later). The exact commencement dates and SI numbers were NOT verified at seed stage: **verify at write against the commencement SI(s), do not trust secondary sources.**
+  2. **LAW for EXISTING leases:** the 2022 Act does NOT touch existing leases. Contractual ground rent, including doubling and RPI-linked escalation clauses, stands as drafted and is enforceable. The statutory escape routes are a lease extension (statutory extension takes effect at peppercorn, existing lease + 90 years, LRHUDA 1993 s.56 per §31.2) or negotiation.
+  3. **NOT LAW:** the **£250 cap is DRAFT ONLY**, in the Commonhold and Leasehold Reform Bill, and is not part of LFRA 2024 at all (a category error the SERP constantly makes). Matches §31.3a row 6. Never present as enacted.
+- **Verify at write (not asserted here):** s.8/enforcement penalty figures under the 2022 Act; the Housing Act 1988 **Sch 1 ground-rent AST trap** (long lease with ground rent over £250, over £1,000 in London, technically an assured tenancy), current position INCLUDING any Renters' Rights Act interaction, must be Stage 2 verified before it appears on-page.
+- **Tax fork (the call-out competitors cannot write):** ground rent paid on a let flat = revenue-deductible against rental income; the premium paid to extend the lease and remove the ground rent = capital. Freeholder side: ground rent received = taxable property income.
+- **Pages anchored to this lock:** A15 `ground-rent-rules-uk` (primary), A16 `leasehold-reform-act-2024-what-is-in-force` (ledger row), A9 `lease-extension-cost-uk` (boundary: extension is the escape route, premium maths lives there).
+- **Do not write:**
+  - "The £250 ground rent cap applies" / "ground rent is capped" (draft Bill only, §31.3a + §31.9).
+  - "Ground rent has been abolished" unqualified (peppercorn applies to NEW regulated leases only; existing leases keep their contractual rent).
+  - "The 2022 Act helps existing leaseholders reduce their ground rent" (it does not touch existing leases).
+  - Ground rent framed as a service charge or challengeable under LTA 1985 s.19/s.27A (§31.D boundary).
+  - Any 2022 Act commencement date or penalty figure sourced from secondary coverage (verify against the SI).
+
+---
+
+# Wave 11 Stage 1b sign-off (2026-08-15)
+
+Sections added this pass: §26.10 (EICR), §26.11 (gas), §26.12 (fire), §26.13 (EPC machinery), §26.3a (non-domestic MEES), §31.C (RTM), §31.D (service charges), §31.E (ground rent). Flags closed: F-73 (items 1-4 → §26.10-§26.13), F-70 + F-79 (→ §26.3a), F-76 (→ §31.C), F-77 (→ §31.D), F-78 (→ §31.E). A4 and A8 confirmed needing no new lock (existing §26.9 / §26.3 re-verified 2026-08-15 per F-73). Flag STATUS edits happen at wave-close step 4 (manager commit), not here.
