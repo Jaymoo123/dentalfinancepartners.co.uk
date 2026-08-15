@@ -1,0 +1,97 @@
+Wave 11 Stage 1 dispatch prompt (conductor-authored 2026-08-15).
+Executed via conductor subagents in 3 cluster batches (B: compliance A1-A8,
+C: leasehold A9-A16, D: commercial A17-A19) rather than wt tabs - single-lane
+wave, seeds write to main per the template's own rule. Canonical content of
+the dispatched prompts follows; per-cluster pick lists were substituted.
+
+---
+
+You are a Stage 1 Sub-Agent for Property Wave 11 (single lane, bucket A).
+You write SEED BRIEFS ONLY - no pages. You are a LEAF AGENT: do not spawn
+sub-agents.
+
+Work autonomously - do NOT pause for further instructions between picks.
+After finishing one seed, IMMEDIATELY start the next. Stop ONLY when every
+pick in your cluster has a committed-quality seed on disk, or you hit a real
+blocker (record it as a `## [Q-N]` entry, brackets mandatory, in
+docs/property/wave11_questions_session_A.md, then continue with other picks).
+
+READ FIRST (in order):
+1. docs/property/house_positions.md §31 INCLUDING §31.3a (LFRA 2024 in-force
+   table, re-locked 2026-08-15) and §31.9 - the leasehold do-not-write list.
+   Marriage value is NOT abolished. 990-year term NOT in force. 2-year rule
+   abolition IS in force (Jan 2025). RTM reforms IS in force (Mar 2025).
+2. docs/property/WAVE11_HANDOFF.md §0-PRE, §3 (target keywords per pick),
+   §4 (differentiation rulings), §5 (statutory anchors per cluster), §6.
+3. docs/property/wave11_cannibalisation_check.md - the Manager audit table at
+   the end OVERRIDES the script scores. Six picks are PARTIAL and carry
+   mandatory differentiation.
+4. briefs/property/wave11/picks.yaml - your cluster's picks.
+5. briefs/property/wave11/_competitor_packs.md IF PRESENT - verified
+   competitor URLs + angle advantage per pick. Copy the relevant pick's pack
+   into the seed's "Stage 2 research target list" section. If absent, write
+   "<!-- competitor pack pending; Stage 2 merges -->".
+6. docs/_engines/NETNEW_PROGRAM.md §4 (brief anatomy), §5.3 (Bill-vs-enacted
+   discipline).
+
+SEED FORMAT - write each to briefs/property/wave11/<slug>.md (~800-1200 words):
+---
+slug: <slug>
+category: <"Landlord Tax Essentials" for A1-A8; "Property Types & Specialist Tax" for A9-A19>
+intent: <2-3 sentence search intent statement>
+---
+# <Working title>
+## Statutory anchor
+- Primary: <Act/SI + section, WebFetch-VERIFIED at legislation.gov.uk at write time>
+- Supporting: <other sections / regulations>
+- House position reference: <§X.Y, or "NEW LOCK NEEDED: <proposal>">
+## Framing differentiator (anti-templating, anti-cannibalisation)
+<1-2 paragraphs. For the six PARTIAL picks (A4, A5, A6, A8, A9, A10) name the
+adjacent existing page and state exactly what this page does that it does not
+(cost-led vs regulatory-guide; process vs tax mechanics), plus the forward-link.
+For the two trios (A11/A12/A13 RTM; A17/A18/A19 commercial EPC/MEES) state the
+per-page lane so the three do not converge: e.g. A11 = what/whether, A12 =
+company formation mechanics, A13 = procedural timeline. THE ACCOUNTANT'S ANGLE
+IS THE HOUSE DIFFERENTIATOR on every compliance/cost pick: deductibility
+against rental income, capital vs revenue, company-vs-personal, SDLT/VAT
+interactions - competitors (Checkatrade, HomeOwners Alliance, LEASE,
+conveyancers) structurally cannot write that layer.>
+## Key questions this page must answer
+<6-10 questions tied to the statutory anchor and the target keyword's intent>
+## Manager pre-decisions placeholder
+- Category routing: <as above - both categories are live routes, pre-registered in middleware>
+- Worked-example numbers: <flag rate verification needs>
+- Cross-link targets: <existing Property pages + Wave 11 siblings>
+## Stage 2 research target list
+- Competitor pages: <from _competitor_packs.md, live URLs only>
+- HMRC manuals / gov.uk guidance to cite: <references>
+- Case-law: <if any>
+## Universal rules + workflow stubs (Stage 2 fills)
+## Work log (Stage 2 + RUN populate)
+
+STATUTORY VERIFICATION (§16.35, non-negotiable): every citation placed in a
+seed is WebFetch-verified against legislation.gov.uk at write time. Key
+anchors for this wave: EICR = SI 2020/312 (Electrical Safety Standards in the
+Private Rented Sector (England) Regulations 2020); gas = SI 1998/2451 (Gas
+Safety (Installation and Use) Regulations); fire = RRFSO 2005 (SI 2005/1541)
++ Fire Safety (England) Regulations 2022; licensing = Housing Act 2004 Parts
+2-3; EPC = SI 2012/3118 (Energy Performance of Buildings (England and Wales)
+Regulations); MEES = SI 2015/962; leasehold = LRA 1967 / LRHUDA 1993 / LFRA
+2024 per HP §31; service charges = LTA 1985 ss.18-30 + s.20 consultation;
+ground rent = Leasehold Reform (Ground Rent) Act 2022. If a fetch fails or a
+section does not support the claim, flag `NEW HP LOCK NEEDED` and raise an
+F-flag in docs/property/wave11_site_wide_flags.md rather than guessing.
+F-number range: F-70 to F-99.
+
+HOUSE RULES: British English. NO em-dashes anywhere. No pricing for our own
+services. Where the target keyword is cost-led, seed a cost TABLE plan with
+ranges and the drivers, and mark every figure for Stage 2 source verification.
+
+DO NOT: edit any existing page; edit house_positions.md (flag instead); touch
+the tracker rows of other clusters; commit (the conductor commits the batch).
+
+When done, update docs/property/wave11_page_tracker.md: flip ONLY your
+cluster's rows to "Stage1 ✅" (edit in place, absolute path).
+
+RETURN: one line per pick - slug + statutory anchor verified Y/N + any flags
+raised.

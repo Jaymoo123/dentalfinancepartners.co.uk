@@ -1,0 +1,51 @@
+---
+slug: commercial-property-mees-compliance
+category: "Property Types & Specialist Tax"
+intent: "A commercial landlord (often a company) asking whether their sub-E building can lawfully be let, what the MEES exemptions actually require, what enforcement looks like, and whether the rumoured EPC B deadline is real. The searcher needs the enacted E floor separated cleanly from the consulted-on B trajectory, plus the tax treatment of the improvement spend that compliance forces."
+---
+# Commercial property MEES compliance: the E floor, the exemptions, and paying for the works
+
+## Statutory anchor
+- Primary: Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015, SI 2015/962, Part 3 Chapter 3, reg 27 (WebFetch-VERIFIED at legislation.gov.uk 2026-08-15: prohibition on granting new tenancies of sub-standard non-domestic PR property from 1 April 2018 and on continuing to let from 1 April 2023, unless reg 29 or a Chapter 4 exemption applies). Reg 22 (sub-standard = below band E), reg 20 (non-domestic PR property definition), reg 28 (VERIFIED 2026-08-15: relevant energy efficiency improvements, the seven-year simple-payback test), reg 29 (VERIFIED 2026-08-15: all relevant improvements made or none can be made; five-year window running from registration under reg 36(2)).
+- Supporting: regs 31-33 (consent, devaluation, temporary exemptions), reg 36 (PRS Exemptions Register), reg 38 (penalty notices), reg 39 (publication penalty), reg 41 (VERIFIED 2026-08-15 via Part 3 Chapter 6 fetch: breach under 3 months = greater of £5,000 or 10% of rateable value capped £50,000; breach 3 months or more = greater of £10,000 or 20% of rateable value capped £150,000; false or misleading register information up to £5,000; publication penalty minimum 12 months on the register). EPC B trajectory: gov.uk non-domestic MEES landlord guidance VERIFIED 2026-08-15: the EPC B implementation material is CONSULTATION ONLY, "no statutory timeline or enacted provisions for EPC C or EPC B" - write as proposal, never as law.
+- House position reference: §26.3 (MEES current state + not-enacted trajectory discipline; its non-domestic line confirms the 2018/2023 chain). §38 (FA 2026 capital allowances floor: main-pool WDA 14%, special rate 6% unchanged, new 40% FYA under CAA 2001 s.45U from 1 January 2026, full expensing s.45S companies only, AIA £1m permanent). §26.7 (capital vs revenue on compliance spend), §25.11 (s.198 fixtures election on later sale). **NEW LOCK NEEDED: §26.3 non-domestic sub-position** - the current lock is domestic-centric (£3,500 cap, C-2030 hedge); the non-domestic regime has NO £3,500 cost cap (the seven-year payback test under reg 28 does that work), different penalties (reg 41), and its own not-enacted trajectory (B by 2030, consultation stage, with the SERP split between "C by 2027" and "C by 2028" interim claims that need sourced arbitration). Raised as F-79, supplying the verified substance for the conductor's F-70 lock demand; both close via one §26.3 extension at Stage 1b.
+
+## Framing differentiator (anti-templating, anti-cannibalisation)
+This is the MEES page of the A17/A18/A19 trio. Lane lock: A19 owns the letting STANDARD: the E floor, who is caught (reg 20/27 scope, tenancy types), the exemptions and the register, enforcement, and the B trajectory clearly marked as proposal. It does NOT cover when an EPC must be produced at all (A17, forward-link once) and does NOT price the certificate (A18, forward-link once). The one place the lanes touch: MEES bites only where there is (or should be) an EPC; one boundary paragraph, then move on.
+
+Two do-not-drift rails, both HP-locked: (1) never import the DOMESTIC £3,500 cost cap into the commercial regime; the non-domestic exemption logic is the reg 28 seven-year payback test plus the reg 29 all-improvements-made route, each needing registration and lasting five years; (2) the "EPC B by 2030" framing all over the commercial-agent SERP is consultation-stage policy, not law; hedge exactly as §26.3 does for the domestic C trajectory ("government has consulted", "no statutory instrument laid", "plan on the assumption, but no enacted deadline exists").
+
+The accountant's angle IS this page's reason to exist, and it is the layer LEASE, agents and assessor networks cannot write. The compliance question is really a spend question, and the spend has a tax architecture: improvement works that lift a building above the floor are typically capital (CGT/CT base-cost addition where they improve specification; like-for-like replacement is revenue repair per §26.7 logic); plant and machinery within the works goes through the FA 2026 capital allowances floor per §38: lighting, heating, air-conditioning and other integral features to the 6% special rate pool, main-rate plant at 14% WDA, with the £1m AIA, the new 40% FYA (s.45U, new and unused main-rate plant from 1 January 2026) and 100% full expensing (s.45S) for company landlords ordinarily doing the heavy lifting; commercial property is OUTSIDE the CAA 2001 s.35 dwelling-house bar, which is exactly why the commercial MEES spend story is richer than the domestic one. Close the loop with the exit angle: on a later sale of the improved building, the s.198 fixtures election (§25.11 two-gate test) determines whether the allowances survive the transaction. Company-vs-personal lens throughout: most sub-E commercial stock sits in companies; frame examples in CT terms first with an IT aside. Assessment and register costs themselves are revenue deductions (A17/A18 own the detail; one line here).
+
+First-screen jurisdiction statement mandatory: SI 2015/962 is England and Wales; Scotland and NI differ.
+
+## Key questions this page must answer
+1. Can I lawfully let (or keep letting) a commercial property with an EPC of F or G?
+2. Who is caught by non-domestic MEES: which tenancies, which buildings, which landlords (reg 20/27 scope)?
+3. What made 1 April 2023 different from 1 April 2018 (new lets vs continuing lets)?
+4. What is the seven-year payback test and how does it exempt uneconomic works (reg 28)?
+5. What is the "all improvements made" route (reg 29), how long does it last, and what must go on the PRS Exemptions Register?
+6. What are the consent, devaluation and temporary exemptions (regs 31-33)?
+7. What are the penalties, in pounds, for letting sub-standard commercial property (reg 41 figures + publication penalty)?
+8. Is "EPC B by 2030" law? What should a landlord actually plan for?
+9. How is MEES improvement spend treated for tax: capital vs revenue, and which capital allowances apply (14% WDA, 6% special rate, 40% FYA, full expensing, AIA)?
+10. What happens to those allowances when I sell the building (s.198 election, one paragraph, link out)?
+
+## Manager pre-decisions placeholder
+- Category routing: "Property Types & Specialist Tax" (live route, pre-registered in middleware Wave 11 block).
+- Worked-example numbers: capital allowances rates from HP §38 (14% / 6% / 40% FYA / 100% full expensing / £1m AIA), re-verify at write time per standing rule; reg 41 penalty figures verified 2026-08-15 but re-confirm at write time; any improvement-cost illustrations are market estimates marked for Stage 2 verification.
+- Cross-link targets: A17 and A18 (siblings), A8 `mees-regulations-landlords` (domestic MEES, cluster B sibling: the domestic/non-domestic split must be stated in both), existing `capital-allowances-commercial-property-what-can-claim` (primary tax-depth link; it currently has zero MEES/EPC mentions, clean handshake), `epc-c-2030-minimum-energy-efficiency-landlord-spending-cap` (domestic trajectory page; keep trajectories separated), `section-24-commercial-property-complete-guide`, `capital-allowances-for-offices`, `commercial-property-tax-landlords-rates-reliefs-allowances`, `buying-commercial-property-through-a-sipp` (SIPP landlords are commercial MEES landlords too).
+- Note for Stage 2: the epc-c-2030 page's FAQ "What about non-domestic (commercial) properties?" should back-link here post-merge (part of the F-80 lattice).
+
+## Stage 2 research target list
+- Competitor pages (verified pack, copied from `_competitor_packs.md` A19):
+  - https://www.higgsllp.co.uk/articles/mees-regulations-for-commercial-landlords-and-tenants - covers: current E floor, five exemption categories with evidence requirements, tenant negotiation and dilapidations angles; gap: NO penalty figures, no capital allowances/tax, weak on exemption-vs-lease-cycle interaction; depth: 2,800-3,000, Jan 2026.
+  - https://moorcrofts.com/mees-update-2025-stricter-rules-higher-standards-and-key-deadlines/ - covers: penalty structure (£10,000 or 20% rateable value), seven exemption types, seven-year-payback test, rent-review knock-ons; gap: states April 2027 C-rating as fact (contested - see energyadvicehub's 2028), no upgrade costings; depth: 1,400-1,500, March 2025.
+  - https://energyadvicehub.org/mees-regulations-for-commercial-properties-delayed-to-2028/ - covers: reports interim EPC C pushed 2027 to 2028, Propertymark advocacy, grant/retrofit funding; gap: 650 words, no penalties, no exemptions; depth: ~650. Useful mainly as the date-conflict source.
+  - gov.uk owns the underlying MEES guidance; law firms own the visible SERP. Angle advantage: the SERP's law firms do obligations, not money: model the comply-vs-exempt decision with numbers (retrofit cost vs £150,000 max penalty vs seven-year-payback exemption, FA 2026 capital allowances shrinking the net retrofit cost, who bears it under FRI leases including service-charge recoverability of improvements), and resolve the 2027-vs-2028 interim-date conflict with sourced hedging (F-79).
+- HMRC manuals / gov.uk guidance to cite: gov.uk "Non-domestic private rented property: minimum energy efficiency standard - landlord guidance" (fetched 2026-08-15); PRS Exemptions Register service page; CA22000+ / CA23000 (plant and machinery), CA22320/CA33500 area for integral features (verify exact paras at Stage 2), CA26450+ (s.198), BIM46900 (repairs vs improvements); the 2021 "EPC B implementation" consultation page for the trajectory hedge citation.
+- Case-law: none central; enforcement is administrative.
+
+## Universal rules + workflow stubs (Stage 2 fills)
+
+## Work log (Stage 2 + RUN populate)
