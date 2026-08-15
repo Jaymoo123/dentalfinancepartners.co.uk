@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f) of the UK
           GDPR)
           {partner
-            ? " to handle your enquiry and to share it with a relevant regulated firm from our specialist partner network, so that you can be connected with the specialist property tax help you have asked for"
+            ? " to handle your enquiry and to share it with regulated firms from our specialist partner network, so that you can be connected with the specialist property tax help you have asked for"
             : " to handle it, so that we can respond and provide the help you have asked for"}
           . You have the <strong>right to object</strong> to this processing at any time,
           under Article 21 (see your rights in section 7).
@@ -138,55 +138,62 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
         {partner ? (
-          <p>
-            When you submit an enquiry, we share information about you and your enquiry with{" "}
-            <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. As well as the
-            details you give us (your name, contact details and your enquiry), this includes the result of our checks to
-            confirm your contact details are valid, a short summary and priority rating we prepare to help route your enquiry,
-            any messages you send us in response, a note of how you used our website in connection with your enquiry, where
-            relevant publicly available information about your business, and any call time you book. We do this
-            on the basis of our <strong>legitimate interests</strong> (see section 4), and you can object at any time (see
-            section 7). {partner.name} acts as an <strong>independent data controller</strong> of the information it
-            receives, and uses it under its own{" "}
-            {partner.privacyPolicyUrl ? (
-              <a
-                href={partner.privacyPolicyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent-strong)] underline"
-              >
-                privacy policy
-              </a>
-            ) : (
-              "privacy policy"
-            )}
-            . We share this information only for the purpose of arranging and providing the advice you asked for. If
-            that firm is unable to help, we may pass your enquiry to another firm in the network for the same purpose.
-            Any firm that receives your enquiry will identify itself to you when it first contacts you.
-          </p>
-        ) : (
-          <p>
-            Your enquiry is handled by us; we do <strong>not</strong> share it with any third-party advisory firm. We use
-            the service providers listed below only as our processors, acting on our instructions.
-          </p>
-        )}
-        {partner ? (
-          <p>
-            <strong>Our partner network and re-referral.</strong> We work with a network of specialist accountancy and
-            tax firms rather than a single firm, and we do not name the individual firms on this website. Your enquiry
-            goes to one firm in that network at a time. If that firm is unable to help, for example because it has no
-            capacity or your matter is outside its specialism, we may pass your enquiry to another firm in the same
-            network for the same purpose, so that you still get an answer. Whichever firm contacts you will tell you who
-            it is and give you its own privacy information at that point. We will not pass your enquiry on if you have
-            objected or asked us to stop, and you can ask us to stop at any time (see section 7).
-          </p>
+          <>
+            <p>
+              When you submit an enquiry, we share information about you and your enquiry with{" "}
+              <strong>{partner.name}</strong>, so that they can contact you and provide the advice you asked for. What we
+              share is: your name, telephone number and email address; your enquiry message; the type of work it
+              describes, the grade we give it under our published grading rubric and a one-line summary of what you are
+              asking for; the role and any description of it you gave; your practice or company name if you gave one; the
+              rough area you are in; whether we were able to confirm your contact details and when; and the website, page
+              and form your enquiry came from, together with the notice you were shown. We do this on the basis of our{" "}
+              <strong>legitimate interests</strong> (see section 4), and you can object at any time (see section 7). Each
+              receiving firm acts as an <strong>independent data controller</strong> of the information it receives, and
+              uses it under its own privacy policy. We share this information only for the purpose of arranging and
+              providing the advice you asked for.
+            </p>
+            <p>
+              <strong>More than one firm may receive your enquiry.</strong> We work with a network of specialist firms
+              rather than a single firm, and we do not name the individual firms on this website. Firms are first shown a
+              short summary of your enquiry with your name and contact details removed, and only a firm that decides it
+              can help receives your details in full. Up to <strong>three</strong> accountancy and tax firms may take up
+              your enquiry that way. Separately, up to <strong>three</strong> firms in related professions, such as
+              mortgage and finance brokers, independent financial advisers, solicitors and specialist consultants, may
+              also take it up, because they answer a different part of the same question and do not compete for the same
+              work. So at most six firms may receive your details, and often fewer. Whichever firms contact you will each
+              tell you who they are and give you their own privacy information at that point.
+            </p>
+            <p>
+              <strong>If no firm takes up your enquiry.</strong> If no accountancy or tax firm takes it up within
+              48 hours, we may offer it instead to firms in the related professions above, so that you still get an
+              answer rather than none. If we cannot confirm your contact details and you do not reply to our follow-up
+              messages, your enquiry may be passed after seven days to a single firm as part of a batch, for the same
+              purpose. We will not pass your enquiry on at all if you have objected or asked us to stop, and you can ask
+              us to stop at any time (see section 7).
+            </p>
+            <p>
+              <strong>How we are paid.</strong> {company.legalName} may be paid a fee by a firm your enquiry is passed
+              to. This does not change what you pay that firm, and does not affect the advice they give you.
+            </p>
+          </>
         ) : null}
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
-          <li><strong>Google Analytics:</strong> website analytics and performance measurement.</li>
           <li><strong>Vercel:</strong> website hosting and content delivery.</li>
+          <li><strong>Google Analytics:</strong> website analytics and performance measurement.</li>
+          <li><strong>Resend:</strong> sending the emails we use to confirm your details and to respond to you.</li>
+          <li><strong>Twilio:</strong> sending the text messages we use to confirm your details.</li>
+          <li>
+            <strong>Anthropic, through the Vercel AI Gateway:</strong> reading your enquiry to grade the type of work it
+            describes and to write the one-line summary we show to firms.
+          </li>
+          <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
         </ul>
+        <p>
+          Some of these providers process data outside the United Kingdom. Where they do, we rely on a valid transfer
+          mechanism under the UK GDPR.
+        </p>
         <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">6. How long we keep your information</h2>

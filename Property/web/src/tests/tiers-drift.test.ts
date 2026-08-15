@@ -24,7 +24,7 @@ type JsonTier = {
   id: string;
   label: string;
   price?: number;
-  decay?: { last_call_price?: number };
+  decay?: { last_call_price?: number; cascade_after_hours?: number };
 };
 
 const json = JSON.parse(readFileSync(CONFIG_PATH, "utf-8")) as {
@@ -41,7 +41,9 @@ describe("tiers.ts matches config/tiers.json", () => {
       expect(j, `config/tiers.json is missing tier "${tier.id}"`).toBeDefined();
       expect(tier.label).toBe(j!.label);
       expect(tier.price).toBe(j!.price);
-      expect(tier.lastCallPrice).toBe(j!.decay?.last_call_price);
+      // Last call was removed on 2026-08-14. If a reduced price is ever added back
+      // to the config it must be mirrored deliberately, not inherited silently.
+      expect(j!.decay?.last_call_price).toBeUndefined();
     }
   });
 

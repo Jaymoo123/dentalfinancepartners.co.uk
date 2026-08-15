@@ -78,17 +78,17 @@ faqs:
 <p>The minimum filing pack for a non-resident individual landlord with UK rental income:</p>
 
 <ul>
-<li><strong>SA100</strong> – the main Self Assessment return covering personal details, all sources of UK income, and the tax calculation summary.</li>
-<li><strong>SA105</strong> – the UK Property supplement, showing rental income, allowable expenses (with the Section 24 mortgage interest restriction applied), and the property business profit or loss.</li>
-<li><strong>SA109</strong> – the Residence, Remittance basis supplement, declaring non-resident status and giving the basis on which the landlord is non-resident.</li>
+<li><strong>SA100</strong>: the main Self Assessment return covering personal details, all sources of UK income, and the tax calculation summary.</li>
+<li><strong>SA105</strong>: the UK Property supplement, showing rental income, allowable expenses (with the Section 24 mortgage interest restriction applied), and the property business profit or loss.</li>
+<li><strong>SA109</strong>: the Residence, Remittance basis supplement, declaring non-resident status and giving the basis on which the landlord is non-resident.</li>
 </ul>
 
 <p>Additional pages where relevant:</p>
 
 <ul>
-<li><strong>SA106</strong> – Foreign income. Where the landlord has other UK-source income subject to limited tax (interest, dividends), or where home-country income needs to interact with the UK calculation.</li>
-<li><strong>SA108</strong> – Capital gains. Required for property disposals (which are also separately reported through the 60-day CGT on UK property service).</li>
-<li><strong>SA101</strong> – Additional information. Used for non-standard items.</li>
+<li><strong>SA106</strong>: Foreign income. Where the landlord has other UK-source income subject to limited tax (interest, dividends), or where home-country income needs to interact with the UK calculation.</li>
+<li><strong>SA108</strong>: Capital gains. Required for property disposals (which are also separately reported through the 60-day CGT on UK property service).</li>
+<li><strong>SA101</strong>: Additional information. Used for non-standard items.</li>
 </ul>
 
 <p>Non-residents cannot use HMRC's free online filing service: the residence supplement (SA109) is not supported on the HMRC service. Filing options are either paper (deadline 31 October) or commercial filing software (deadline 31 January). This is the most common practical barrier non-resident landlords hit when trying to file themselves; many move to a UK accountant once they realise the free HMRC route is closed to them.</p>

@@ -16,17 +16,20 @@ import { describe, it, expect, beforeEach, vi } from "vitest";
 type Row = Record<string, unknown>;
 
 const db = {
-  leads:               [] as Row[],
-  lead_buyers:         [] as Row[],
-  lead_offers:         [] as Row[],
-  lead_value_scores:   [] as Row[],
-  lead_nurture_state:  [] as Row[],
+  leads:                [] as Row[],
+  lead_buyers:          [] as Row[],
+  lead_offers:          [] as Row[],
+  lead_value_scores:    [] as Row[],
+  lead_nurture_state:   [] as Row[],
+  // Read by the suppression check on both the offer and the claim path.
+  lead_contact_events:  [] as Row[],
   reset() {
-    this.leads              = [];
-    this.lead_buyers        = [];
-    this.lead_offers        = [];
-    this.lead_value_scores  = [];
-    this.lead_nurture_state = [];
+    this.leads               = [];
+    this.lead_buyers         = [];
+    this.lead_offers         = [];
+    this.lead_value_scores   = [];
+    this.lead_nurture_state  = [];
+    this.lead_contact_events = [];
   },
 };
 
@@ -40,6 +43,8 @@ function matches(row: Row, params: Record<string, string>): boolean {
       if (!set.includes(String(row[k]))) return false;
     } else if (raw.startsWith("lt.")) {
       if (!(String(row[k]) < raw.slice(3))) return false;
+    } else if (raw === "not.is.null") {
+      if (row[k] === null || row[k] === undefined || row[k] === "") return false;
     } else if (raw.startsWith("cs.")) {
       // array contains: cs.{value}
       const want = raw.slice(3).replace(/^\{|\}$/g, "");
@@ -122,7 +127,7 @@ vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
 }));
 
 import { offerQualifies, tierPrice, tierAtLeast, matchingBuyers } from "@/lib/leads/offer-config";
-import { scrubSituation, buildTeaser } from "@/lib/leads/offer-teaser";
+import { scrubSituation, buildTeaser, redactMessage } from "@/lib/leads/offer-teaser";
 import { sendOffers } from "@/lib/leads/offer-send";
 import { GET as claimGet, POST as claimPost } from "@/app/api/leads/claim/[token]/route";
 
@@ -158,6 +163,7 @@ function seedBuyer(over: Row = {}): Row {
     status: "active",
     sources: ["dentists"],
     min_tier: "standard",
+    dsa_signed_at: "2026-08-01T00:00:00.000Z",
     ...over,
   };
   db.lead_buyers.push(buyer);
@@ -170,7 +176,7 @@ function seedOffer(over: Row = {}): Row {
     lead_id: "lead-1",
     buyer_id: "buyer-1",
     token: `aaaabbbbccccdddd${idCounter}`,
-    teaser: { site: "Dentists", tier: "advisory", est_band: "", intent: "structure", work_type: "recurring", role: "", surface: "", submitted_date: "2026-08-06" },
+    teaser: { site: "Dentists", tier: "advisory", intent: "structure", work_type: "recurring", role: "", surface: "", submitted_date: "2026-08-06" },
     status: "offered",
     expires_at: FUTURE,
     price_gbp: 85,
@@ -258,11 +264,72 @@ describe("matchingBuyers", () => {
     const hit = await matchingBuyers("dentists", "standard");
     expect(hit.map((b) => b.id)).toEqual(["b1"]);
   });
+
+  // The lawful basis for sharing depends on every recipient being under the standing
+  // agreement before it receives anything, including a redacted alert. This was a
+  // manual runbook step until 2026-08-14 and is now enforced here.
+  it("excludes a buyer that has not signed the data sharing agreement", async () => {
+    seedBuyer({ id: "signed", sources: ["dentists"], min_tier: "standard" });
+    seedBuyer({ id: "unsigned", sources: ["dentists"], min_tier: "standard", dsa_signed_at: null });
+    const hit = await matchingBuyers("dentists", "standard");
+    expect(hit.map((b) => b.id)).toEqual(["signed"]);
+  });
+});
+
+// ── suppression ──────────────────────────────────────────────────────────────
+
+describe("objection suppression", () => {
+  it("does not offer a lead whose enquirer has opted out", async () => {
+    seedBuyer({ id: "b1", sources: ["dentists"], min_tier: "standard" });
+    db.lead_contact_events.push({
+      lead_id: "lead-1",
+      event_type: "opted_out",
+      ts: "2026-08-10T09:00:00.000Z",
+    });
+    const res = await sendOffers("lead-1", "dentists", {
+      site: "Dentists", tier: "advisory", intent: "structure", work_type: "recurring",
+      role: "", surface: "", submitted_date: "2026-08-06",
+    });
+    expect(res).toEqual({ matched: 0, offered: 0, buyers: [] });
+    expect(db.lead_offers).toHaveLength(0);
+  });
+
+  it("offers again after a later re-consent", async () => {
+    seedBuyer({ id: "b1", sources: ["dentists"], min_tier: "standard" });
+    db.lead_contact_events.push(
+      { lead_id: "lead-1", event_type: "opted_out", ts: "2026-08-10T09:00:00.000Z" },
+      { lead_id: "lead-1", event_type: "re_consented", ts: "2026-08-11T09:00:00.000Z" },
+    );
+    const res = await sendOffers("lead-1", "dentists", {
+      site: "Dentists", tier: "advisory", intent: "structure", work_type: "recurring",
+      role: "", surface: "", submitted_date: "2026-08-06",
+    });
+    expect(res.offered).toBe(1);
+  });
 });
 
 // ── teaser scrub ─────────────────────────────────────────────────────────────
 
 describe("teaser PII defence", () => {
+  // The alert now carries the enquiry itself, so redaction is what stands between a
+  // pre-claim alert and a disclosure of identity to firms that never pay.
+  it("redacts identifiers out of the enquiry shown before a claim", () => {
+    const out = redactMessage(
+      "I am Jane Doe, jane@example.com, 07700 900999, of Doe Holdings Ltd at LS1 4AB. See www.doe.co.uk",
+    );
+    for (const leaked of ["jane@example.com", "07700 900999", "LS1 4AB", "Doe Holdings", "www.doe.co.uk"]) {
+      expect(out).not.toContain(leaked);
+    }
+    for (const marker of ["[EMAIL]", "[PHONE]", "[POSTCODE]", "[COMPANY]", "[LINK]"]) {
+      expect(out).toContain(marker);
+    }
+  });
+
+  it("keeps the substance a firm needs to decide", () => {
+    const out = redactMessage("I have six buy to lets and want to incorporate before April.");
+    expect(out).toBe("I have six buy to lets and want to incorporate before April.");
+  });
+
   it("kills a situation line containing an email, phone or postcode", () => {
     expect(scrubSituation("Contact me at joe@foo.com about CGT")).toBe("");
     expect(scrubSituation("Call 07456 633 893 to discuss")).toBe("");

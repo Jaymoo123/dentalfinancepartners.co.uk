@@ -101,15 +101,15 @@ editorialNote: "Policy-update overlay for the LLP cluster, anchored on BlueCrest
 <p>HMRC's operative salaried-member guidance is in the Partnership Manual at PM250000+. (A common misattribution in earlier popular commentary cites PM276000, which is in fact HMRC's Construction Industry Scheme guidance and unrelated. The correct entry point is PM250000.) The PM250000 index lists nine operative sub-pages:</p>
 
 <ul>
-<li><strong>PM251000</strong> – Salaried member guidance overview.</li>
-<li><strong>PM253000</strong> – Who can be a salaried member? Confirms the regime applies to individuals performing services for the LLP in their capacity as members. Passive capital investors and corporate members are excluded. Professional qualifications are irrelevant; the key distinction is whether income varies with overall firm profitability (out of regime) or with individual or team performance (in regime).</li>
-<li><strong>PM254000</strong> – Tests to use.</li>
-<li><strong>PM255000</strong> – Condition A (disguised salary).</li>
-<li><strong>PM256000</strong> – Condition B (significant influence). LOAD-BEARING for the post-BlueCrest narrowing. 12 sub-pages PM256100+ cover LLP agreements, types of influence, FCA-regulated business functions, size considerations and member hierarchies, delegated powers, indirect influence mechanisms, group structures, and change-in-circumstances.</li>
-<li><strong>PM258000</strong> – Condition C (capital contributions).</li>
-<li><strong>PM259000</strong> – Anti-avoidance. Six sub-pages: PM259100 (Overview); PM259200 (Becoming a member); PM259300 (Financing arrangements, operative for round-trip-loan Condition C avoidance); PM259400 (Short-term appointments); PM259500 (Use of intermediaries); PM259600 (Interaction with mixed-membership partnership legislation).</li>
-<li><strong>PM260000</strong> – Implementation.</li>
-<li><strong>PM261000</strong> – Global structures.</li>
+<li><strong>PM251000</strong>: Salaried member guidance overview.</li>
+<li><strong>PM253000</strong>: Who can be a salaried member? Confirms the regime applies to individuals performing services for the LLP in their capacity as members. Passive capital investors and corporate members are excluded. Professional qualifications are irrelevant; the key distinction is whether income varies with overall firm profitability (out of regime) or with individual or team performance (in regime).</li>
+<li><strong>PM254000</strong>: Tests to use.</li>
+<li><strong>PM255000</strong>: Condition A (disguised salary).</li>
+<li><strong>PM256000</strong>: Condition B (significant influence). LOAD-BEARING for the post-BlueCrest narrowing. 12 sub-pages PM256100+ cover LLP agreements, types of influence, FCA-regulated business functions, size considerations and member hierarchies, delegated powers, indirect influence mechanisms, group structures, and change-in-circumstances.</li>
+<li><strong>PM258000</strong>: Condition C (capital contributions).</li>
+<li><strong>PM259000</strong>: Anti-avoidance. Six sub-pages: PM259100 (Overview); PM259200 (Becoming a member); PM259300 (Financing arrangements, operative for round-trip-loan Condition C avoidance); PM259400 (Short-term appointments); PM259500 (Use of intermediaries); PM259600 (Interaction with mixed-membership partnership legislation).</li>
+<li><strong>PM260000</strong>: Implementation.</li>
+<li><strong>PM261000</strong>: Global structures.</li>
 </ul>
 
 <p>The post-BlueCrest content is layered through the PM256000 series rather than concentrated in one update note. HMRC's reading favours a narrower interpretation of significant influence in matrix and silo'd LLP configurations; the PM256100-series sub-pages walk through specific scenarios (FCA-regulated functions, size considerations, delegated powers) with the post-October-2024 framework applied. Verify the current PM256000-series wording at the time of any client decision; the guidance moves.</p>

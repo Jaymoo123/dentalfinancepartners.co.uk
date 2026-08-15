@@ -213,11 +213,11 @@ editorialNote: Pillar rewrite covering full CGT framework with onward links to d
 <h2>Authoritative sources</h2>
 
 <ul>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual">HMRC Capital Gains Manual</a> – the authoritative operational reference</li>
-<li><a href="https://www.gov.uk/capital-gains-tax/rates">gov.uk Capital Gains Tax rates</a> – current rates, updated each tax year</li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1992/12">TCGA 1992</a> – the statutory framework on legislation.gov.uk</li>
-<li><a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax">HMRC CGT on UK property service</a> – the filing portal</li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual">HMRC Property Income Manual</a> – for the income/capital boundary</li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual">HMRC Capital Gains Manual</a>: the authoritative operational reference</li>
+<li><a href="https://www.gov.uk/capital-gains-tax/rates">gov.uk Capital Gains Tax rates</a>: current rates, updated each tax year</li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1992/12">TCGA 1992</a>: the statutory framework on legislation.gov.uk</li>
+<li><a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax">HMRC CGT on UK property service</a>: the filing portal</li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual">HMRC Property Income Manual</a>: for the income/capital boundary</li>
 </ul>
 
 <p>We update this pillar after each fiscal event. Daughter pages cover specific topics in depth: the <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">calculation walkthrough</a>, the <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day deadlines</a>, the <a href="/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step">PRR step-by-step</a>, the <a href="/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords">2027 changes</a>, the <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">£3,000 AEA</a>, and the <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">disposal mechanics</a>.</p>

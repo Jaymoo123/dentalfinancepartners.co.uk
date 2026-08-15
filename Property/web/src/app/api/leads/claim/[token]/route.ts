@@ -17,6 +17,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
+import { isSuppressed } from "@/lib/leads/suppression";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 import { buildLeadHtml, buildLeadText, prettySource, type LeadRecord } from "@/lib/leads/notify-email";
 import { renderTeaserHtml } from "@/lib/leads/offer-send";
@@ -148,6 +149,21 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   }
   if (offer.status !== "offered" || isExpired(offer)) {
     return offer.status === "lost" ? takenPage() : expiredPage();
+  }
+
+  // Checked again here, not only at offer time: an objection can land between the
+  // alert and the claim, and DSA clause 3.5 says a Referral must not then be made.
+  // The offer is withdrawn rather than left claimable.
+  if (await isSuppressed(offer.lead_id)) {
+    await adminUpdate(
+      "lead_offers",
+      { lead_id: `eq.${offer.lead_id}`, status: "eq.offered" },
+      { status: "lost" },
+    ).catch(() => {});
+    return page(
+      "No longer available",
+      `<h1>This lead is no longer available</h1><p>The enquirer asked us not to pass their details on. Nothing has been charged.</p>`,
+    );
   }
 
   // Atomic first-click-wins: only an 'offered' row can flip to 'claimed', and

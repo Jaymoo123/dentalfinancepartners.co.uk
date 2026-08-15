@@ -10,13 +10,15 @@
 
 export type OfferTier = "advisory" | "standard" | "essential";
 
+// No last-call price: owner decision 2026-08-14 removed the reduced price for an
+// unclaimed lead, so a lead holds its published price until it leaves the lane.
 export const CASE_TIERS: Record<
   OfferTier,
-  { id: OfferTier; label: string; price: number; lastCallPrice: number }
+  { id: OfferTier; label: string; price: number }
 > = {
-  advisory: { id: "advisory", label: "Advisory", price: 85, lastCallPrice: 55 },
-  standard: { id: "standard", label: "Standard", price: 40, lastCallPrice: 25 },
-  essential: { id: "essential", label: "Essential", price: 15, lastCallPrice: 10 },
+  advisory: { id: "advisory", label: "Advisory", price: 85 },
+  standard: { id: "standard", label: "Standard", price: 40 },
+  essential: { id: "essential", label: "Essential", price: 15 },
 };
 
 /**

@@ -12,6 +12,7 @@
  */
 import { getResend } from "@/lib/resend";
 import { adminInsert } from "@/lib/supabase/admin";
+import { isSuppressed } from "@/lib/leads/suppression";
 import { matchingBuyers, tierPrice, type LeadBuyer } from "@/lib/leads/offer-config";
 import { tierLabel, type TeaserJson } from "@/lib/leads/offer-teaser";
 import { escapeHtml } from "@/lib/leads/notify-email";
@@ -39,8 +40,9 @@ function teaserRows(t: TeaserJson, priceGbp?: number | null): TeaserRow[] {
   const rows: TeaserRow[] = [];
   if (t.site) rows.push({ label: "Vertical", value: t.site });
   if (t.tier) rows.push({ label: "Tier", value: tierLabel(t.tier) });
-  if (typeof priceGbp === "number") rows.push({ label: "Price (exclusive)", value: `£${priceGbp}` });
-  if (t.est_band) rows.push({ label: "Est. first-year value", value: t.est_band });
+  if (typeof priceGbp === "number") rows.push({ label: "Price (ex VAT)", value: `£${priceGbp}` });
+  // Est. first-year value row removed 2026-08-14: alerts carry the case tier and the
+  // price, never an estimate of what the enquirer might be worth.
   if (t.intent && t.intent !== "unknown") rows.push({ label: "Topic", value: t.intent });
   if (t.work_type && t.work_type !== "unknown") rows.push({ label: "Work type", value: t.work_type });
   if (t.role) rows.push({ label: "Enquirer", value: t.role });
@@ -60,14 +62,18 @@ export function renderTeaserHtml(t: TeaserJson, priceGbp?: number | null): strin
     )
     .join("");
   const situation = (t.situation ?? "").trim();
+  const enquiry = (t.redacted_message ?? "").trim();
+  const panel = (label: string, body: string) =>
+    `<p style="margin:16px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">${label}</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
+      <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;color:#334155;font-size:14px;line-height:1.6;">${escapeHtml(body)}</td></tr>
+    </table>`;
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
       <colgroup><col style="width:150px;" /><col /></colgroup>${rows}
-    </table>${
-      situation
-        ? `<p style="margin:16px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Situation</p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
-      <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;color:#334155;font-size:14px;line-height:1.6;">${escapeHtml(situation)}</td></tr>
-    </table>`
+    </table>${situation ? panel("Situation", situation) : ""}${
+      enquiry
+        ? panel("The enquiry, in their words", enquiry) +
+          `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">Names, phone numbers, email addresses, postcodes, web addresses and company names are removed above. You get the enquiry in full, unredacted, with the enquirer's contact details, only if you claim it.</p>`
         : ""
     }`;
 }
@@ -76,6 +82,18 @@ export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): strin
   const lines = teaserRows(t, priceGbp).map((r) => `${r.label}: ${r.value}`);
   const situation = (t.situation ?? "").trim();
   if (situation) lines.push("", "SITUATION", situation);
+  const enquiry = (t.redacted_message ?? "").trim();
+  if (enquiry) {
+    lines.push(
+      "",
+      "THE ENQUIRY, IN THEIR WORDS",
+      enquiry,
+      "",
+      "Names, phone numbers, email addresses, postcodes, web addresses and company " +
+        "names are removed above. You get the enquiry in full, unredacted, with the " +
+        "enquirer's contact details, only if you claim it.",
+    );
+  }
   return lines.join("\n");
 }
 
@@ -151,6 +169,12 @@ export async function sendOffers(
 ): Promise<SendOffersResult> {
   const price = tierPrice(teaser.tier);
   if (price === null) return { matched: 0, offered: 0, buyers: [] };
+
+  // An enquirer who has objected is never offered (DSA clause 3.5, LIA safeguard).
+  if (await isSuppressed(leadId)) {
+    console.warn("leads/offer-send: lead suppressed, not offering", leadId);
+    return { matched: 0, offered: 0, buyers: [] };
+  }
 
   const buyers = await matchingBuyers(source, teaser.tier);
   if (buyers.length === 0) return { matched: 0, offered: 0, buyers: [] };

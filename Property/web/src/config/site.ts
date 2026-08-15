@@ -23,7 +23,7 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
 // the estate-standard point-of-collection notice; its wording mirrors the standing
 // DSA_TEMPLATE Annex B.2. The rendered form text and stored consent_text row both
 // equal it verbatim once the trailing link is appended.
-const leadConsentText = `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with a relevant regulated firm from our specialist partner network, who may contact you directly about your enquiry. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
+const leadConsentText = `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. ${niche.display_name} may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.`;
 // Email-only sign-ups (resource downloads) are NOT shared with any partner firm.
 // They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."

@@ -114,15 +114,25 @@ export type LeadBuyer = {
   status: string;
   sources: string[];
   min_tier: string;
+  dsa_signed_at: string | null;
 };
 
-/** Active buyers subscribed to this source whose tier floor the lead meets. */
+/**
+ * Active buyers subscribed to this source whose tier floor the lead meets AND who
+ * have signed the data sharing agreement.
+ *
+ * The signature gate is not a nicety. The LIA and DSA clause 3 both state that a firm
+ * signs before it receives any enquiry or any alert, and the whole lawful basis for
+ * sharing rests on every recipient being under that agreement. It was previously a
+ * manual runbook step; `dsa_signed_at` existed but nothing filtered on it.
+ */
 export async function matchingBuyers(source: string, tier: string): Promise<LeadBuyer[]> {
   const res = await adminSelect<LeadBuyer>("lead_buyers", {
-    select: "id,ref,firm_name,contact_name,email,status,sources,min_tier",
+    select: "id,ref,firm_name,contact_name,email,status,sources,min_tier,dsa_signed_at",
     status: "eq.active",
     sources: `cs.{${(source || "").toLowerCase()}}`,
+    dsa_signed_at: "not.is.null",
   });
   if (!res.ok) return [];
-  return res.data.filter((b) => tierAtLeast(tier, b.min_tier));
+  return res.data.filter((b) => b.dsa_signed_at && tierAtLeast(tier, b.min_tier));
 }
