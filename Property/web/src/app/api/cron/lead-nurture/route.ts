@@ -16,6 +16,7 @@
  */
 
 import { NextResponse, type NextRequest } from "next/server";
+import { pingHeartbeat } from "@/lib/heartbeat";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
 import { runLeadNurtureCron, type LeadCronResult } from "@accounting-network/web-shared/lead-nurture/cron";
@@ -109,6 +110,8 @@ async function run(req: NextRequest): Promise<NextResponse> {
     }
   }
 
+  // Dead-man ping: fires only on a run that reached the end. Silence alerts.
+  await pingHeartbeat(process.env.HEARTBEAT_LEAD_NURTURE);
   return NextResponse.json({ ok: true, armed: cronArmed, dbPaused, processed, dispatched, perSequence, aux, guard });
 }
 

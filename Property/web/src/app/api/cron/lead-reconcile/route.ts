@@ -46,6 +46,7 @@
  */
 
 import { NextResponse, type NextRequest } from "next/server";
+import { pingHeartbeat } from "@/lib/heartbeat";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured, adminSelect } from "@/lib/supabase/admin";
 import { enrollLead } from "@/lib/leads/enroll";
@@ -335,6 +336,8 @@ async function run(req: NextRequest): Promise<NextResponse> {
   };
   console.log("[lead-reconcile] summary", summary);
 
+  // Dead-man ping: fires only on a run that reached the end. Silence alerts.
+  await pingHeartbeat(process.env.HEARTBEAT_RECONCILE);
   return NextResponse.json({
     ok: true,
     scanned,

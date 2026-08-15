@@ -42,9 +42,9 @@ export async function GET() {
   // and was a proven liar: VERCEL is always set in production, so it reported
   // ready while classifyLead failed on every call and lead_enrichment sat at
   // 0 rows forever. A probe must report the last real output, not the config.
-  const last = await adminSelect<{ created_at: string }>("lead_enrichment", {
-    select: "created_at",
-    order: "created_at.desc",
+  const last = await adminSelect<{ enriched_at: string }>("lead_enrichment", {
+    select: "enriched_at",
+    order: "enriched_at.desc",
     limit: "1",
   });
   return NextResponse.json({
@@ -52,7 +52,7 @@ export async function GET() {
     secretSet: Boolean(process.env.LEADS_ENRICH_SECRET || process.env.LEADS_NOTIFY_SECRET || process.env.LEADS_SYNC_SECRET),
     aiReady: Boolean(process.env.AI_GATEWAY_API_KEY || process.env.VERCEL),
     chReady: Boolean(process.env.COMPANIES_HOUSE_API_KEY),
-    lastEnrichmentAt: last.ok && last.data.length ? last.data[0].created_at : null,
+    lastEnrichmentAt: last.ok && last.data.length ? last.data[0].enriched_at : null,
   });
 }
 
