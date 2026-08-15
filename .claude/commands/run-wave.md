@@ -12,7 +12,7 @@ You are the **wave conductor** for Wave $1 of the Property net-new program. Your
 
 ## Read first (15 minutes)
 
-1. `docs/property/NETNEW_PROGRAM.md` — §0 read-first norms, §3 heartbeat (current state), §7 19-step workflow, §8.3 Q&A watcher spec, §13 manager instructions, §16 lessons (especially §16.14/15/27/30/32/35/36/37/38/41/42/43/45/46)
+1. `docs/_engines/NETNEW_PROGRAM.md` — the site-agnostic engine (§0 read-first norms, workflow, Q&A watcher spec, manager instructions). The §16.x lessons live in `docs/property/_archive/NETNEW_PROGRAM.md` (especially §16.14/15/27/30/32/35/36/37/38/41/42/43/45/46); the current-state heartbeat lives in `docs/property/STATE.md` §1
 2. `docs/property/house_positions.md` — recent locks; particularly anything Wave $1 needs anchoring
 3. `docs/property/wave$1_page_tracker.md` — IF EXISTS: current wave state (was Stage 1/2 already run?)
 4. `docs/property/wave$1_site_wide_flags.md` — IF EXISTS: any pre-existing flags
@@ -142,7 +142,7 @@ Surface to user: "Wave $1 close: {N} pages shipped + {M} post-merge back-patches
 Handles .vercel/project.json swap, `vercel deploy --prod --yes` from repo root, restore, IndexNow drain.
 
 ### Stage 14: heartbeat update
-Edit `docs/property/NETNEW_PROGRAM.md` §3 with Wave $1 close entry:
+Edit `docs/property/STATE.md` §1 with Wave $1 close entry:
 - Total pages shipped this wave
 - Flag count (within historical band 4-39?)
 - Autopilot timing (wall clock from launch to last commit)

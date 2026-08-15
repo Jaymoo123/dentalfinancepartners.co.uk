@@ -14,6 +14,30 @@ const BLOG_TO_LOCATION: Record<string, string> = {
 };
 
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  // --- Wave 11 (2026-08): landlord compliance + leasehold + commercial.
+  // Registered ahead of the wave (P6 precondition) so canonical URLs resolve
+  // the moment each page lands; dynamicParams=false 404s them until then,
+  // which is correct pre-publication behaviour.
+  "eicr-certificate-cost-landlords": "landlord-tax-essentials",
+  "landlord-electrical-safety-certificate": "landlord-tax-essentials",
+  "fire-risk-assessment-cost": "landlord-tax-essentials",
+  "landlord-licensing-explained": "landlord-tax-essentials",
+  "gas-safety-certificate-cost": "landlord-tax-essentials",
+  "epc-certificate-cost-uk": "landlord-tax-essentials",
+  "how-to-book-an-epc": "landlord-tax-essentials",
+  "mees-regulations-landlords": "landlord-tax-essentials",
+  "lease-extension-cost-uk": "property-types-and-specialist-tax",
+  "lease-extension-solicitor-what-they-do": "property-types-and-specialist-tax",
+  "right-to-manage-explained": "property-types-and-specialist-tax",
+  "right-to-manage-company-setup": "property-types-and-specialist-tax",
+  "right-to-manage-process-steps": "property-types-and-specialist-tax",
+  "service-charge-disputes-leaseholders": "property-types-and-specialist-tax",
+  "ground-rent-rules-uk": "property-types-and-specialist-tax",
+  "leasehold-reform-act-2024-what-is-in-force": "property-types-and-specialist-tax",
+  "commercial-epc-requirements": "property-types-and-specialist-tax",
+  "commercial-energy-performance-certificate-cost": "property-types-and-specialist-tax",
+  "commercial-property-mees-compliance": "property-types-and-specialist-tax",
+  // --- end Wave 11 block ---
   "accountant-accounting-services": "property-accountant-services",
   "accountant-corporation-tax-property-companies": "incorporation-and-company-structures",
   "accountant-payroll-services": "incorporation-and-company-structures",

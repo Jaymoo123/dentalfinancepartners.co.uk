@@ -6,6 +6,26 @@
 
 ---
 
+## 0-PRE. Preconditions cleared + A* additions (2026-08-15) — READ BEFORE STAGE 0
+
+**Already done, do not redo:**
+- `house_positions.md` §31 RE-LOCKED with the §31.3a in-force table (marriage value NOT abolished, 990-year NOT commenced, rates consultation closes 23 Sep 2026). The old §31.9 had these BACKWARDS. All leasehold picks (A9-A16) write against §31.3a.
+- The 4 live pages asserting marriage-value abolition back-patched (lease-extension-vs-freehold-purchase, commonhold-and-leasehold-reform-bill, lease-extensions surrender-and-regrant, sdlt-leasehold-extension-vs-fresh-purchase). A16 forward-links to them; they no longer contradict it.
+- All 19 slugs registered in `SLUG_TO_CATEGORY_MAP` (`Property/web/src/middleware.ts`, Wave 11 block at the top).
+- Dead paths fixed: `sites/property.json` `paths.netnewProgram` → `docs/_engines/NETNEW_PROGRAM.md`; `run-wave.md` read-first + Stage 14 heartbeat → `docs/property/STATE.md` §1.
+- Stale `.claude/worktrees/agent-*` purged. `VERCEL_BYPASS_FALLBACK_OVERSIZED_ERROR` verified set on prod/preview/dev.
+- Known gotchas re-confirmed: Stage 5 needs `-PriorWave 9` (no wave10 session prompts exist); picks bucket key is uppercase `A`; scripts already read `wave.buckets` so single-lane works without config change.
+
+**A* additions — the conductor MUST apply these (they close the three blind spots: competitive, editorial, voice):**
+1. **Competitor packs in briefs (Stage 0/2).** Pre-select + WebFetch-verify 2-4 live competitor URLs per pick into picks.yaml and briefs. WARNING: for EICR/EPC/leasehold/RTM the real SERP set is Checkatrade, HomeOwners Alliance, LEASE, conveyancers and energy assessors, NOT accountancy firms — do not reuse the accountancy competitor universe.
+2. **Anti-sameness writer spec.** Before dispatch, write `briefs/property/wave11/_WRITER_SPEC_WAVE11.md` modelled on `docs/wills-probate/briefs/wave4/_WRITER_SPEC_WAVE4.md` (banned openers, banned CTA phrasing, persona variation), with explicit differentiation matrices for the two near-identical trios: A11/A12/A13 (RTM) and A17/A18/A19 (commercial EPC/MEES).
+3. **Voice gate at WRAP.** `python scripts/voice_scan.py --site property --slug <slug>` on all 19; require band clean/minor before deploy.
+4. **Editorial track at WRAP.** One Opus helpful-content-rubric pass per page ALONGSIDE the factual `track2_independent_qa.wf.js` pass (2-track QA, standard on the other sites, historically skipped on Property).
+5. **Predeploy gate flags:** `--coverage` ON (targets in §3 table) and `--strict` scoped via `--files` to the 19 new pages only.
+6. Record QA verdicts LAST (content-hash invalidation).
+
+---
+
 ## 0. What this is
 
 The buyer-demand and lead-gen research (2026-08-08, `expansion_research/buyer_demand/`) produced a
