@@ -10,6 +10,7 @@ Usage:
     python build_signing_docx.py [input.md] [output.docx]
 Defaults to the FOR_SIGNATURE pair in this folder.
 """
+import os
 import re
 import sys
 
@@ -19,8 +20,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
-DEFAULT_IN = "Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.md"
-DEFAULT_OUT = "Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.docx"
+# The combined agreement produced by build_agreement.py. Both defaults pointed at
+# archived DJH-era filenames until 2026-08-14; run build_agreement.py first.
+DEFAULT_IN = "out/Lead_Generation_and_Data_Sharing_Agreement.md"
+DEFAULT_OUT = "out/Lead_Generation_and_Data_Sharing_Agreement.docx"
 
 INLINE_RE = re.compile(r"(\*\*.+?\*\*|\*.+?\*)")
 SEP_CELL_RE = re.compile(r"^:?-{2,}:?$")
@@ -190,7 +193,16 @@ def main():
     out = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_OUT
 
     with open(src, encoding="utf-8") as fh:
-        lines = fh.read().splitlines()
+        raw = fh.read()
+
+    # Same cleaner the PDF and the agreement build use. Until 2026-08-14 this builder
+    # passed HTML comments straight through, so the signing copy opened with four
+    # lines of build notes naming internal file paths, above the title.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import docprep
+    text = docprep.clean(raw)
+    docprep.assert_sendable(text, os.path.basename(src))
+    lines = text.splitlines()
 
     doc = Document()
 
