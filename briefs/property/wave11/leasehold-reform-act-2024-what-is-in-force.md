@@ -46,3 +46,81 @@ The body carries a visible "Last verified: <date>" line, and the work log schedu
 
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-15 Stage 1 seed written (cluster C session). LFRA 2024 sections and all three commencement SIs WebFetch-verified same day; Sch 13 prospective-repeal annotation independently confirmed. RE-CHECK SCHEDULED: after 23 Sep 2026 (consultation close), before any deploy touching this page.
+- 2026-08-15 Stage 2 extension written (cluster C Stage 2 session). Commencement-SI register re-exhausted (no No. 4), Part 4 transparency row added to the ledger (not commenced), s.64 RTM-only carve-out captured, JR case name + citation verified (R (ARC Time) [2025] EWHC 2751 (Admin)). Connaughtlaw pack URL 200. No blockers.
+
+## Stage 2 extensions
+
+### Verify-at-write items resolved (Stage 2, 2026-08-15)
+- **The commencement evidence class, re-exhausted (resolved for lock §31.3a):** legislation.gov.uk SI title search for "Leasehold and Freehold Reform Act 2024 (Commencement", 2026-08-15: exactly three SIs exist, "no Commencement No. 4 or later". SI 2024/1018 (No. 1): ss.114-116 + s.120 (building safety amendments to BSA 2022 Part 5) from 31 Oct 2024, explicitly nothing from Part 4. SI 2025/57 (No. 2 + transitional): s.27 from 31 Jan 2025. SI 2025/131 (No. 3): ss.49-52 + s.64 limited by reg 2 to "insofar as it inserts section 20J of the Landlord and Tenant Act 1985 as regards the right to manage" from 3 Mar 2025 (verbatim from https://www.legislation.gov.uk/uksi/2025/131/regulation/2/made).
+- **Judicial review case (resolved; seed required verified name + citation before use):** **R (ARC Time Freehold Income Authorised Fund and others) v Secretary of State for Housing, Communities and Local Government [2025] EWHC 2751 (Admin)**, Divisional Court (Holgate LJ and Foxton J), judgment 24 Oct 2025: A1P1 challenges to the marriage-value abolition, ground-rent and costs provisions dismissed. IMPORTANT UPDATE the pack's connaughtlaw page carries and the seed anticipated: the Court of Appeal has since given the freeholders permission to appeal ("round two", reported Apr 2026, Leasehold Knowledge Partnership). Page frames: dismissed at first instance, appeal pending, and NEITHER the dismissal nor the appeal commences or suspends anything; commencement remains a purely governmental act under s.124.
+- **Part 4 transparency row (NEW ledger row, resolved via A14's gate):** Part 4 "Regulation of leasehold" ss.53-71; service-charge transparency ss.53-58 (standardised demands, annual reports, information rights). No commencement SI touches them (s.64's narrow RTM-only exception aside). Row reads NOT IN FORCE.
+- **Costs-regime rows (resolved via A10/A13 gates):** LFRA 2024 s.50 (RTM costs, inserting CLRA 2002 ss.87A-87B, repealing ss.88-89) IN FORCE 3 Mar 2025 via SI 2025/131. LFRA 2024 ss.38-39 (enfranchisement/extension costs, including the s.39(8) repeal of LRHUDA 1993 s.60) in NO commencement SI; s.60 live text carries the repeal as "changes yet to be applied" (https://www.legislation.gov.uk/ukpga/1993/28/section/60, version 15 Aug 2026). Leaseholders today still pay s.60 costs on extension claims but NOT on RTM claims: the sharpest single illustration of phased commencement on the page.
+
+### THE IN-FORCE TABLE (flagship spec, row by row, commencement SI cited per row)
+Columns: Provision · LFRA 2024 section · Status · Since / evidence · What it means for you today.
+1. **2-year ownership rule abolished** · s.27 · IN FORCE · 31 Jan 2025, **SI 2025/57 reg 2** · a buyer can claim on completion day.
+2. **RTM: non-residential limit 25% to 50%** · s.49 · IN FORCE · 3 Mar 2025, **SI 2025/131 reg 2(a)** · more mixed-use blocks qualify.
+3. **RTM: freeholder costs no longer payable (ss.87A-87B)** · s.50 · IN FORCE · 3 Mar 2025, **SI 2025/131 reg 2(b)** · a clean RTM claim carries no freeholder-costs bill.
+4. **RTM: FTT first instance, obligations enforcement** · ss.51-52 (+ s.64 s.20J insertion as regards RTM only) · IN FORCE · 3 Mar 2025, **SI 2025/131 reg 2(c)-(e)** · no first-instance High Court applications.
+5. **Marriage value abolition** · s.36 + Sch 4 · **NOT IN FORCE** · no commencement SI exists (register exhausted 15 Aug 2026); LRHUDA 1993 Sch 13 repeal annotated "yet to be applied" · **marriage value remains payable in full on every sub-80-year claim today**.
+6. **990-year lease extensions** · s.33 · **NOT IN FORCE** · no commencement SI · extensions completed today are existing lease + 90 years at peppercorn.
+7. **Prescribed deferment/capitalisation rates** · ss.33-37 valuation package · **NOT IN FORCE** · requires secondary legislation; consultation closes **23 Sep 2026** · post-Sportelli 5% remains the working rate; new rates could move premiums either way.
+8. **Extension/enfranchisement costs reform (s.60 repeal)** · ss.38-39 · **NOT IN FORCE** · no commencement SI; s.60 repeal "yet to be applied" · you still pay the freeholder's reasonable non-litigation costs on a s.42 claim.
+9. **Service-charge transparency (standardised demands, annual reports, information rights)** · ss.53-58 (Part 4) · **NOT IN FORCE** · no commencement SI (SI 2024/1018 explicitly excludes Part 4) · LTA 1985 + SI 2003/1987 remain the operative regime.
+10. **Building-safety amendments** · ss.114-116, s.120 · IN FORCE · 31 Oct 2024, **SI 2024/1018 reg 2** · remediation-order machinery live (one line; forward-link the building-safety page).
+11. **£250 ground rent cap** · NOT IN THIS ACT · **DRAFT ONLY** · Commonhold and Leasehold Reform Bill (King's Speech, May 2026) · a Bill, not law; the SERP's category error, forward-link A15 + the Bill page.
+Body carries "Last verified: [write date]" directly above the table, and the how-to-check-for-yourself method (H2 #2) teaches the commencement-SI register as the only evidence class. Rows 2-4 may be merged into one visual row if the table runs wide; the SI citations stay per line. Table sits inside an overflow-x container per house HTML rules.
+
+### Competitor exploitation plan
+Spot-recheck: https://connaughtlaw.com/leasehold-and-freehold-reform-act-2024/ returns 200 (2026-08-15); confirmed it states marriage value "still payable on every sub-80-year extension completing in 2026" but cites NO commencement SIs by number. Pack stands.
+Beat-them elements:
+1. **The SI-cited ledger itself** (the table above): connaughtlaw has the right conclusions without the evidence; osbornes has the misleading "marriage value has gone" headline; theindependentlandlord is a year stale. Nobody cites SI numbers per row; we are the only checkable page.
+2. **The teach-the-method section** (H2 #2): show the reader how to verify commencement at legislation.gov.uk themselves (s.124 mechanism, what a commencement SI looks like); turns the page into the reference others cite.
+3. **The costs asymmetry** (table rows 3 + 8, expanded in H2 #4): RTM claims cost-free since Mar 2025, extension claims still carry s.60 costs; the cleanest proof that "the reforms" are not one event. No competitor draws the contrast.
+4. **Litigation truth-check with the verified citation** (H2 #5): R (ARC Time) [2025] EWHC 2751 (Admin) dismissed, CoA round two pending, neither commences anything; competitors either omit the JR or imply it froze the Act.
+5. **The decision layer** (H2 #6): extend-now-vs-wait with the marriage-value impact illustration (sub-80 premium with vs without, labelled illustrative), the 80-year cliff burning while you wait, and rate uncertainty cutting both ways; law-firm pages end at "seek advice".
+
+### Query coverage map
+- Primary: `leasehold and freehold reform act 2024 in force` / `is the leasehold reform act in force` → H1 + the table.
+- `has marriage value been abolished` → H2 #3 (flagship correction) + table row 5.
+- `990 year lease extension when` → table row 6 + H2 #3.
+- `leasehold reform act commencement dates` → H2 #2 + table.
+- `leasehold reform judicial review` → H2 #5.
+- `should I extend my lease now or wait` → H2 #6.
+- `£250 ground rent cap when` → table row 11 (forward-link A15).
+
+### Structure (H2 skeleton, 7 sections)
+1. What is actually in force today (open with the wrong-belief correction per spec: most of what you have read is about provisions that are not yet law; the three-state summary; "Last verified" line).
+2. How to check for yourself: enactment vs commencement (s.124; the commencement-SI register method; the three SIs named).
+3. The big three that are NOT in force: marriage value, 990 years, prescribed rates (safe formulation per §31.9; NEVER a predicted commencement date; 2027-28 earliest framing, consultation closes 23 Sep 2026).
+4. What IS in force and what it changed (2-year rule; the RTM package; the costs asymmetry against extension claims).
+5. Did the courts stop any of this? (R (ARC Time) [2025] EWHC 2751 (Admin); CoA appeal pending; commencement unaffected.)
+6. Extend now or wait: the decision framework (marriage-value impact illustration; the 80-year cliff; what waiting gambles on; forward-links A9 for cost detail).
+7. What this means for RTM claims, buyers who just completed, and service charge payers (one paragraph each; forward-links A11, A9, A14, A15).
+Worked example (1): **the marriage-value impact illustration** (H2 #6): one flat at 78 years unexpired, premium with marriage value vs the hypothetical without, both labelled illustrative, built from the §31.5 components; makes row 5 concrete in money.
+
+### FAQ list (12)
+1. Is marriage value abolished in 2026?
+2. Can I get a 990-year lease extension today?
+3. What parts of the Leasehold and Freehold Reform Act 2024 are in force?
+4. How do I check whether a provision is in force?
+5. When will the valuation reforms take effect?
+6. Why does most of the internet say marriage value is gone?
+7. Did the freeholders' court challenge stop the reforms?
+8. Is the £250 ground rent cap part of this Act?
+9. Do I still need to own my flat for two years before claiming?
+10. Do RTM claimants still pay the freeholder's costs?
+11. Do leaseholders extending still pay the freeholder's costs?
+12. Should I extend my lease now or wait for the reforms?
+
+### Internal links (exact paths; the four back-patched pages are mandatory)
+- `/blog/property-types-and-specialist-tax/lease-extension-vs-freehold-purchase`
+- `/blog/property-types-and-specialist-tax/commonhold-and-leasehold-reform-bill`
+- `/blog/property-types-and-specialist-tax/lease-extensions-in-the-uk-surrender-and-regrant`
+- `/blog/landlord-tax-essentials/sdlt-leasehold-extension-vs-fresh-purchase`
+- Wave 11 siblings: `/blog/property-types-and-specialist-tax/lease-extension-cost-uk` (A9), `/blog/property-types-and-specialist-tax/lease-extension-solicitor-what-they-do` (A10), `/blog/property-types-and-specialist-tax/right-to-manage-explained` (A11), `/blog/property-types-and-specialist-tax/ground-rent-rules-uk` (A15), `/blog/property-types-and-specialist-tax/service-charge-disputes-leaseholders` (A14, transparency row)
+- `/blog/property-types-and-specialist-tax/building-safety-act-2022-cladding-cost-recovery-leaseholder-protections-landlords` (table row 10)
+- Calculator: `/calculators/stamp-duty-calculator` (SDLT on extension premiums in the decision section)
+
+### Statutory cross-check (§16.36)
+Seed vs §31.3a/§31.9: fully consistent; Stage 2 adds three ledger rows the lock's table does not carry (Part 4 transparency, costs reform ss.38-39, building safety) and the s.64 RTM-only carve-out. All additions, no contradictions; noted in F-81 for the conductor's Stage 2b patch of §31.3a (add rows or cross-reference this brief). JR case name now verified; CoA-appeal-pending is NEW relative to the lock's "JR dismissed" context line (the lock is not wrong, just pre-appeal; F-81 notes it).

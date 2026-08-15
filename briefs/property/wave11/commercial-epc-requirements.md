@@ -45,6 +45,84 @@ Competitor read (from the verified pack): cim.io is the content ceiling (6,500+ 
 - HMRC manuals / gov.uk guidance to cite: gov.uk "Energy Performance Certificates for your business premises" guidance; PIM2120 (legal and professional costs, deductibility); VAT Notice 742A (option to tax, input-VAT recovery context); the Non-Domestic EPC Register (find-energy-certificate.service.gov.uk).
 - Case-law: none expected; enforcement is administrative (PCN + county court appeal, reg 40).
 
+## Stage 2 extensions
+
+### 1. Verify-at-write items RESOLVED (Stage 2, 2026-08-15)
+
+**reg 38 penalty amounts: RESOLVED (the Stage 1 504 blocker is cleared). Resolved for lock §26.13, both sides (domestic figure recorded here for cluster B / A6 per the conductor coordinate note).**
+- Sources: https://www.legislation.gov.uk/uksi/2012/3118/regulation/38/made (as-made text, fetched 2026-08-15) AND https://www.legislation.gov.uk/uksi/2012/3118/regulation/38 (current version, fetched 2026-08-15 on retry after one further 504; amendment notes F1-F5 present, latest a 16 Nov 2024 Wales rating-list definition change; the AMOUNTS are unamended).
+- **Dwellings (the cluster B / A6 figure):** £200 per breach of reg 6(2), 6(5), 7(2)-(5), 7A(2) or 7A(3). Verbatim: "in relation to a breach of a duty under regulation 6(2), 6(5), 7(2), 7(3), 7(4), or 7(5), or of the EPC construction duty - (i) where the building is a dwelling, £200".
+- **Non-dwellings (this page's figure):** 12.5% of the rateable value of the hereditament (reg 38(2)), subject to a minimum of £500 and a maximum of £5,000 (reg 38(3)). **Default £750** where the building is not, or does not form part of, a hereditament appearing on a local non-domestic rating list at the relevant time, or in the reg 38(2)(d) multi-building-hereditament case. Rateable value definitions track the Local Government Finance Act 1988.
+- **Other amounts (useful for the DEC/air-con boundary section):** reg 14(3)(a) DEC breach £1,000; reg 14(3)(b) £500; air-conditioning duties (regs 18(1), 20(1)-(2), 21) £300; reg 35(5) failure to produce documents £200.
+- Writer rule: quote the formula, never a single flat figure; "£500 to £5,000 depending on rateable value, £750 where no rateable value applies" is the honest sentence the SERP lacks.
+
+**10-year validity: RESOLVED, and the seed's regulation number was WRONG. It is reg 9(2), NOT reg 11.** Verified at https://www.legislation.gov.uk/uksi/2012/3118/regulation/9 on 2026-08-15: an EPC is valid for reg 6 purposes only if "it was entered on the register no more than 10 years before the date on which it is made available" (reg 9(2)(a)). Reg 11 is the statement-of-energy-performance-rating-in-advertisements duty (verified same date, https://www.legislation.gov.uk/uksi/2012/3118/regulation/11). Cite reg 9(2) for validity, reg 11 for the advertisement duty. **Resolved for lock §26.13** (the lock listed the validity regulation number as verify-at-write; this closes it).
+
+**Assessor accreditation: RESOLVED.** reg 22 verified at https://www.legislation.gov.uk/uksi/2012/3118/regulation/22 on 2026-08-15: "An energy assessor must be a member of an accreditation scheme approved by the Secretary of State" (reg 22(1)); scheme duties in reg 22(3) (independence, fit-and-proper, standard forms, code of conduct, member register). **Resolved for lock §26.13.**
+
+**Enforcement chain: RESOLVED at regulation level.** Part 7 fetched (https://www.legislation.gov.uk/uksi/2012/3118/part/7, 2026-08-15): reg 34 enforcement authorities (local weights and measures); reg 35 power to require production of documents; reg 36 penalty charge notices (recipient gets 28+ days to pay or request review); reg 37 defence where an EPC was unobtainable despite reasonable efforts; reg 39 review by the authority; reg 40 appeal to the county court within 28 days of the notice being confirmed. The seed's "PCN + county court appeal, reg 40" line is confirmed correct.
+
+Still verify-at-write (writer, not blocker): re-fetch reg 38 at write per the §26.13 standing rule; PIM2120 and VAT Notice 742A paragraph references before citing.
+
+### 2. Competitor exploitation plan
+
+Pack spot-recheck: https://www.cim.io/blog/epc-commercial-property returned 200 on 2026-08-15. Pack stands.
+
+Beat-them elements (where each sits):
+1. **The sourced penalty table with the real reg 38 formula** (enforcement H2). cim.io, the 6,500-word content ceiling, carries NO UK penalty amounts; businessclimatehub quotes "£500-£5,000 fines" with no formula, no £750 default, no dwelling/non-dwelling split. We publish the formula with the legislation.gov.uk citation.
+2. **The tax layer** (dedicated H2 near the close): deductibility of the fee (PIM2120) + the VAT/option-to-tax recovery point. No page in the pack touches either; assessor networks and law firms structurally cannot.
+3. **Sourced arbitration of the interim-date confusion** (inside the single MEES boundary paragraph): businessclimatehub says "C by 2027", cim.io hedges 2028. Per §26.3a the trajectory is consultation-only, no SI made; we name both claims, cite gov.uk, and rule "not law". Never pick a side.
+4. **The conditional listed-building exemption correction** (reg 5 exemptions H2): the SERP treats it as automatic; reg 5 conditions it on the "unacceptably alter character or appearance" test (§26.13 do-not-write).
+5. **The full enforcement procedure ledger with day-counts** (enforcement H2): PCN → 28 days → review (reg 39) → county court appeal within 28 days (reg 40), plus the reg 37 defence. porterdodson's thin legal treatment stops at "fines apply".
+
+### 3. Query coverage map
+
+Primary: `commercial epc` (1,300/mo, KD 0, £20.45 CPC, WAVE11_HANDOFF §3).
+| Query | Served at |
+|---|---|
+| commercial epc / commercial epc requirements | H1 + trigger-points H2 |
+| do I need an epc for my commercial property | trigger-points H2 + exemptions H2 |
+| commercial epc exemptions / listed building | exemptions H2 |
+| how long does a commercial epc last | validity H2 (reg 9(2), 10 years) |
+| commercial epc penalty / fine for no epc commercial | enforcement H2 |
+| mixed use property epc | mixed-use H2 |
+| epc or dec difference | EPC vs DEC vs air-con H2 |
+
+### 4. Structure + worked examples
+
+Opener: the legal trigger, not a cost figure (A18 owns cost). First screen carries the jurisdiction statement (England and Wales; Scotland 2008 Regs + s.63; NI separate) before the first trigger table.
+
+H2 skeleton (8):
+1. When the law requires a commercial EPC: sale, letting, marketing (regs 6 + 7)
+2. Sub-letting, assignment and lease renewal: who obtains the EPC
+3. Which buildings are exempt (reg 5), and the conditional listed-building test
+4. How long a commercial EPC lasts: reg 9(2), the register check, expiry mid-tenancy
+5. EPC, Display Energy Certificate or air-conditioning inspection: which regime applies (regs 14-21)
+6. Mixed-use buildings: domestic EPC, non-domestic EPC, or both
+7. Enforcement and penalties: the reg 38 formula, PCN procedure, review and appeal (regs 34-40)
+8. The tax position: is the fee deductible, and can you recover the VAT
+Closing boundary paragraph (not an H2 of its own or folded into H2 7/8): having an EPC vs being allowed to let, one paragraph, link A19.
+
+Worked examples (both trace to verified sources):
+1. **Penalty maths, three units** (persona: Priya, SPV owner of a small retail parade): unit with rateable value £22,000 marketed with no EPC → 12.5% = £2,750 PCN; kiosk RV £3,000 → 12.5% = £375, lifted to the £500 minimum; storage building not on the rating list → £750 default. All from reg 38 as verified above.
+2. **The VAT uplift** (persona: Marcus, company landlord letting exempt without an option to tax): £450 + VAT assessment quote = £540 true cost, against £450 net for his opted-to-tax neighbour; fee deductible in the CT computation either way. Label the £450 as an illustrative mid-band figure consistent with the A18 verified table; deep pricing routes to A18.
+
+FAQ list (12, from pack PAA-adjacent gaps): Do I need an EPC to sell a commercial property? · Do I need one to renew an existing lease? · Is a commercial EPC a legal requirement before marketing? · What buildings are exempt? · Are listed commercial buildings automatically exempt? · How long does a commercial EPC last? · Do I need a new EPC when a tenant assigns the lease? · What is the fine for not having a commercial EPC? · Who enforces commercial EPC rules? · What is the difference between an EPC and a DEC? · Does a shop with a flat above need one EPC or two? · Is the EPC fee tax deductible?
+
+Internal links (exact paths):
+- Siblings (trio, mandatory): `/blog/property-types-and-specialist-tax/commercial-energy-performance-certificate-cost` (A18, once, in the opener), `/blog/property-types-and-specialist-tax/commercial-property-mees-compliance` (A19, once, boundary paragraph).
+- Cluster B residential side: `/blog/landlord-tax-essentials/epc-certificate-cost-uk` (A6), `/blog/landlord-tax-essentials/how-to-book-an-epc` (A7).
+- Established adjacent: `/blog/landlord-tax-essentials/energy-performance-certificates-epc` (residential-side primer), `/blog/property-types-and-specialist-tax/commercial-property-tax-landlords-rates-reliefs-allowances`, `/blog/property-types-and-specialist-tax/section-24-commercial-property-complete-guide`, `/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim` (capital-allowances teaser paragraph).
+- Calculator: none of the five registry calculators fits an EPC-requirements page; per spec "if one fits", none linked. Do not force one.
+
+### 5. Statutory cross-check (§16.36)
+
+Seed citations re-read against §26.13 + §26.3a on 2026-08-15: reg 5, reg 6, reg 7/7A, regs 14-21, regs 34-38 all consistent with the lock. One seed error corrected above (validity = reg 9(2), not reg 11); the lock had it as verify-at-write, not asserted, so no drift and no F-flag. No mismatch between seed and any HP lock. No F-flags raised by this brief.
+
 ## Universal rules + workflow stubs (Stage 2 fills)
+- Six-check floor per `_WRITER_SPEC_WAVE11.md` (0 em-dashes, 0 utility classes, FAQ parity, metaTitle ≤62, metaDescription ≤158, links resolve).
+- Trio lane: this page never prices the certificate and never explains the E floor beyond the one boundary paragraph.
+- Every reg 38 mention must name SI 2012/3118: SI 2015/962 ALSO has a reg 38 (MEES penalty notices) and conflating the two statutes' reg 38s is a live confusion risk (see A19 extension).
 
 ## Work log (Stage 2 + RUN populate)
+- 2026-08-15 Stage 2 (cluster D): reg 38 amounts resolved (as-made + current version), validity corrected to reg 9(2), reg 22 + Part 7 enforcement chain verified, cim.io pack URL rechecked 200, extensions written. Resolutions flagged for §26.13 patch at Stage 2b.

@@ -38,5 +38,72 @@ THE ACCOUNTANT'S ANGLE: annual CP12 fee and any boiler service bundled with it =
 - Case-law: none expected.
 
 ## Universal rules + workflow stubs (Stage 2 fills)
+- Writer spec `_WRITER_SPEC_WAVE11.md` applies in full: category `Landlord Tax Essentials`, body 2,800-3,500 words raw HTML, 10-14 FAQs, metaTitle ≤62, metaDescription ≤158, 0 em-dashes, first-screen jurisdiction statement (GB-wide, contrast England-only EICR), cost-page opener = the headline range.
+- Ledger: house_positions.md §26.11 (gas lock). Lock wins. Hard lane rule: existing `gas-safety-certificates` page is canonical for regulatory mechanics; this page never restates its penalty or duty-cycle sections beyond one line each.
+
+## Stage 2 extensions (2026-08-15, cluster B session)
+
+### 1. Verify-at-write resolutions
+
+- **GSIUR reg 36 sub-provisions: RESOLVED (were the §26.11 verify-at-write items; resolved for lock §26.11).** Fetched https://www.legislation.gov.uk/uksi/1998/2451/regulation/36 on 2026-08-15:
+  - **12-month cycle, reg 36(3)(a):** each appliance and flue "checked for safety within 12 months of being installed and at intervals of not more than 12 months since it was last checked".
+  - **Record retention, reg 36(3)(c):** record retained "until there have been two further checks of the appliance or flue", or for a removed appliance/flue, 2 years from the date of the last check. (HSE guidance phrases the practical rule as "keep a record of the safety check for 2 years", verified at https://www.hse.gov.uk/gas/domestic/faqlandlord.htm on 2026-08-15; cite the SI, use HSE for the plain-English gloss.)
+  - **Supply deadlines, reg 36(6):** copy to each existing tenant within 28 days of the check (36(6)(a)); copy of the last record to any new tenant before that tenant occupies (36(6)(b)).
+  - **MOT-style flexibility: the correct citation is reg 36A, NOT reg 36(3A) as the seed had it.** Inserted by SI 2018/139 (verified at https://www.legislation.gov.uk/uksi/2018/139/made on 2026-08-15). reg 36A(1): a check "completed within the period of 2 months ending with the deadline date... is to be treated... as having been made on the deadline date", deadline date = last day of the 12-month period. So: check up to 2 months EARLY without losing the renewal date (the "10-12 month" shorthand); the next 12 months run from the deadline date. Seed citation corrected.
+- **Penalty framing: RESOLVED (per the §26.11 rule, no figure may be written).** HSE landlord FAQ (fetched 2026-08-15) quotes NO fine figure: enforcement is HSE prosecution ("substantial fine and/or a custodial sentence") under the HSWA 1974 backdrop, unlimited fines on indictment. The circulating "£6,000 fine" style numbers stay banned. One line only on this page anyway (lane rule); the canonical treatment lives on the existing page.
+- **Price-table figures:** pack figures below verified 2026-08-15; writer presents as dated verified market ranges or re-pulls live.
+
+### 2. Competitor exploitation plan
+
+Spot-recheck 2026-08-15: https://certnudge.co.uk/blog/cp12-certificate-explained-cost-whats-included-and-what-happens-during-a-gas-safety-check returns HTTP 200. Pack stands (2 verified survivors; writer may top up per pack note).
+
+Beat-them elements:
+1. **The bundle economics section** (gas + EICR + EPC): what the combined booking costs vs separates, when it makes sense, and the three different renewal clocks (gas annual, EICR 5-yearly, EPC 10-yearly) that make permanent bundling a false economy. Neither survivor touches bundling; the query `gas electric safety certificate` (320/mo) is served here. Sits as its own H2.
+2. **A national cost table with regional rows.** certnudge has no regional table; propertysafety is a London sales page. Sits first screen.
+3. **The tax layer**: CP12 + bundled boiler service deductible, repairs revenue, boiler replacement revenue-as-like-for-like vs capital-in-wider-upgrade, penalties non-deductible. Both survivors: zero tax. Sits after the bundle H2.
+4. **The reg 36A early-booking play** (verified above): book up to 2 months early, keep your renewal date, never drift into a void week between certificates. certnudge mentions timing loosely; we cite the actual mechanism. Sits in the "how often you pay" H2.
+5. **The agent-markup question** (agent-arranged certificates vs direct booking). Pack survivors skip it. Sits in the quote-drivers H2.
+
+### 3. Query coverage map
+
+| Query | Served at |
+|---|---|
+| `landlords certificate gas` / `landlord gas safety certificate cost` (480/mo, primary) | H1 + headline range + cost table H2 |
+| `gas electric safety certificate` (320/mo) | bundle economics H2 |
+| `cp12 cost` / `cp12 certificate price` | first-screen answer (name CP12 = the landlord gas safety record) |
+| `boiler service and gas safety certificate cost` | bundle rows + tax H2 |
+| `how often gas safety certificate` | duty-cycle recap H2 (one paragraph + reg 36A timing) |
+| `gas safety certificate cost hmo` | cost table HMO row |
+
+### 4. Structure, tables, examples, FAQs, links
+
+**H2 skeleton (8):**
+1. What a gas safety certificate costs (headline range; GB-wide jurisdiction line with the explicit England-only-EICR contrast; early mandatory forward-link to the canonical guide)
+2. Cost table by property and appliance count (spec below)
+3. The five quote drivers (appliance count, region, one-off vs contract, timing/urgency, agent-arranged markup)
+4. The bundles: gas + boiler service, gas + EICR, the triple (economics + the three clocks)
+5. What you are paying for, in one paragraph (compressed recap; what is NOT included: repairs, reissue, capped appliances)
+6. How often you pay, and the 2-months-early rule (annual cycle + reg 36A as verified; supply deadlines one line)
+7. Non-compliance in one line (HSE prosecution framing per §26.11, no figures; forward-link canonical page)
+8. The tax treatment + worked example (ITTOIA 2005 s.272; boiler replacement fork per §26.7; the compliance-calendar anchor line)
+
+**Cost-table spec:** rows = 1-appliance flat, 2-3 appliance house, multi-appliance/HMO, CP12 + boiler service combined, gas + EICR bundle. Columns = typical range, what is included, driver note. Sources: certnudge £60-£120 single-boiler + per-appliance add-ons (verified 2026-08-15, page current Jul 2026); propertysafety London pricing + CP12/CP42 split (verified 2026-08-15); bundle rows = writer verifies live or labels illustrative-range. No invented precision.
+
+**Worked examples (1-2):** (a) Saoirse, 3 flats via an agent: agent-arranged certificates vs direct booking across a year, the markup line, all deductible either way; (b) short boiler fork: mid-check the engineer condemns the boiler; like-for-like modern-equivalent replacement = revenue; the same boiler inside a full heating-system upgrade = capital (§26.7 logic, aligned exactly with the existing page's tax section).
+
+**FAQ list (12):** How much does a landlord gas safety certificate cost? · What is a CP12? · Is a combined gas and electrical certificate cheaper? · Does a boiler service plus CP12 save money? · How often do I need one? · Can I book early without losing my renewal date? · What does the check include? · What is not included in the price? · Who can carry out the check? · Is the fee tax-deductible? · Is a replacement boiler deductible? · Does this apply in Scotland and Wales?
+
+**Internal links (exact paths):**
+- /blog/landlord-tax-essentials/gas-safety-certificates (MANDATORY early forward-link, canonical regulatory guide)
+- /blog/landlord-tax-essentials/eicr-certificate-cost-landlords (A1, bundle partner)
+- /blog/landlord-tax-essentials/epc-certificate-cost-uk (A6, the third certificate)
+- /blog/landlord-tax-essentials/landlord-electrical-safety-certificate (A2)
+- /blog/landlord-tax-essentials/landlord-licensing-explained (A4, licence conditions)
+- /calculators/rental-income-tax-calculator (deductible-expense context)
+
+### 5. Statutory cross-check (§16.36)
+
+Seed vs §26.11: duty cycle, Gas Safe engineer requirement, GB-wide jurisdiction, tax alignment with the existing page, no-figure penalty rule: aligned. TWO seed corrections, both now resolved: (1) the flexibility provision is reg 36A (standalone, inserted by SI 2018/139), not reg 36(3A); (2) the flexibility is "up to 2 months before the deadline date", which is what the 10-12 month shorthand means; write it as the 2-month window, citing reg 36A. §26.11's three verify-at-write items (day-counts/retention, 36(3A) citation, penalty framing) are ALL resolved above; conductor patches the lock at Stage 2b, including the 36(3A)→36A citation fix in the lock's own verify-list wording. F-74 back-patch (existing page's cost section forward-links here) stays a Stage 11 item; do not edit the existing page pre-merge.
 
 ## Work log (Stage 2 + RUN populate)
+- 2026-08-15 Stage 2: reg 36(3)(a)/(3)(c)/(6)(a)-(b) + reg 36A (SI 2018/139) + HSE penalty framing all source-verified (resolved for lock §26.11, incl. 36(3A)→36A citation correction); pack URL 200; extensions appended. No blockers, no flags.

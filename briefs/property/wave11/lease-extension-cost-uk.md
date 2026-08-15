@@ -45,3 +45,72 @@ The correction-of-record hook is the differentiator against the consumer SERP (H
 
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-15 Stage 1 seed written (cluster C session). Statutory anchors WebFetch-verified same day. Sch 13 prospective-repeal annotation caught and documented above.
+- 2026-08-15 Stage 2 extension written (cluster C Stage 2 session). Commencement-SI register re-checked (3 SIs only), s.60 live text confirmed in force with repeal prospective, CG71141 + PIM2205 verified live, HOA pack URL 200 + fee figures extracted. No blockers; no invented premium figures (bands labelled illustrative, anchored to the HOA example).
+
+## Stage 2 extensions
+
+### Verify-at-write items resolved (Stage 2, 2026-08-15)
+- **Marriage value / in-force position (resolved for lock §31.3a):** re-confirmed via the commencement-SI register: only three commencement SIs exist for LFRA 2024 (SI 2024/1018, SI 2025/57, SI 2025/131; legislation.gov.uk SI title search, 2026-08-15, "no Commencement No. 4 or later"). None commences s.33 (990-year term) or Sch 4 (marriage value abolition). Marriage value REMAINS PAYABLE; Sch 13 remains the operative valuation schedule (prospective-repeal annotation per Stage 1 seed).
+- **s.60 costs stack (resolved for lock §31.3a discipline; full block in A10):** LRHUDA 1993 s.60 fetched 2026-08-15 (https://www.legislation.gov.uk/ukpga/1993/28/section/60, version dated 15 Aug 2026): repeal by LFRA 2024 s.39(8) is listed under "changes yet to be applied", i.e. PROSPECTIVE. The leaseholder still pays the freeholder's reasonable costs of (1) investigating the right, (2) valuation, (3) the grant of the new lease, but NOT tribunal proceedings costs.
+- **CGT base-cost reference (CG71141):** verified live 2026-08-15 at https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg71141, title "Short leases: disposal: allowable expenditure" (premium + enhancement expenditure, wasting rules for sub-50-year leases). Use for the premium-enters-base-cost point.
+- **Ground rent deduction fork (boundary sentence to A15):** PIM2205 "Rent paid out" verified 2026-08-15: "That treatment should apply to any ground rent, rent-charge, ground annual or feu duty." Ground rent paid = revenue; extension premium = capital.
+- **Cost-table anchor figures (HOA pack page, fetched 2026-08-15, returns 200):** own solicitor £800-£1,300; freeholder's solicitor £800-£1,300; own valuer £600-£900; freeholder's valuer £600-£900; Land Registry £65; worked example "85 years left, flat worth around £350,000 post-extension, £100/yr ground rent: premium £6,000-£8,000" plus around £2,000-£4,000 professional fees. These are the verified market ranges for the fee stack; premium bands below 80 years are illustrative ranges built from the §31.5 components and labelled as such.
+
+### Competitor exploitation plan
+Spot-recheck: https://hoa.org.uk/advice/guides-for-homeowners/for-owners/lease-extension-costs/ returns 200 (2026-08-15). Pack stands.
+Beat-them elements (and where each sits):
+1. **Premium decomposition with the 80-year cliff made numeric** (H2 #2 + #3): HOA gives one example and no marriage-value worked calculation; netlawman has the calc but is July 2023 vintage with zero LFRA 2024. We carry both, current to August 2026.
+2. **Correction-of-record row** (H2 #4): most 2026 calculators and guides assume abolition; we state marriage value is payable in full today, one summary row + link to A16 (A16 owns the ledger).
+3. **Full fee stack including the freeholder's s.60 liability** (H2 #5): HOA lists fees but never anchors the statutory why; we cite s.60 and its reasonableness limit with itemised ranges.
+4. **The accountant's layer** (H2 #7): premium + fees = capital, enters CGT base cost (CG71141), company-held flats get CT treatment, keep the completion statement for decades. Neither pack page touches tax.
+5. **Wait-or-act quantified** (H2 #8): rates consultation closes 23 Sep 2026, commencement unknowable (2027-28 earliest), a sub-80 lease keeps shortening. HOA gestures at timing; we run the decision as numbers.
+
+### Query coverage map (lane per F-72: informational cost cluster ONLY; solicitor terms = A10)
+- Primary: `lease extension cost` / `lease extension cost uk` → H1 + H2 #1.
+- `how much does a lease extension cost` → H2 #1 + cost table (H2 #6).
+- `lease extension calculator` adjacents → H2 #2 (what calculators assume) + H2 #4.
+- `marriage value lease extension` → H2 #3.
+- `lease extension under 80 years cost` → H2 #3 + band-table rows.
+- `freeholder costs lease extension` / `who pays freeholder legal fees` → H2 #5.
+- `is a lease extension tax deductible` → H2 #7.
+
+### Structure (H2 skeleton, 8 sections)
+1. What a lease extension costs in 2026, the all-in answer (open with figures: fee stack £2,600-£4,400 plus the premium; HOA anchor example).
+2. The statutory premium decomposed: term, reversion, marriage value (Sch 13; post-Sportelli 5% deferment per §31.5).
+3. The 80-year cliff: marriage value in full, split 50/50 (worked example 1 here).
+4. "But I read marriage value was abolished": what is actually in force (one-row summary, link A16; safe formulation per §31.9).
+5. The professional fee stack, including the freeholder's costs you pay (s.60; fee table here).
+6. Cost table by unexpired-term band (spec below).
+7. Tax treatment: capital not revenue, CGT base cost, company-held flats (CG71141; record-keeping call-out).
+8. Houses vs flats, and should you wait for the reforms (LRA 1967 one paragraph; SDLT one paragraph, forward-links only).
+
+### Cost-table spec (H2 #6)
+Rows = unexpired-term bands: 95+, 90-95, 85-90, 80-85, 79-70, under 70. Columns = typical premium range (illustrative, built from §31.5 components, anchored to the HOA 85-year example, labelled illustrative) · marriage value applies? (No for 80+; Yes below 80, rising steeply; plus a do-not-drift-below-80-mid-claim note on the 80-85 row) · typical all-in with fees (premium + £2,600-£4,400 fee stack) · main driver (reversion / marriage value / ground rent capitalisation). Separate fee-stack table in H2 #5: own solicitor £800-£1,300, own valuer £600-£900, freeholder's solicitor £800-£1,300 (s.60), freeholder's valuer £600-£900 (s.60), Land Registry £65 (all HOA, verified 2026-08-15), plus a VAT note.
+
+### Worked examples (2)
+1. **Priya, single-flat leaseholder, 84 years unexpired, £300,000 flat:** premium components shown separately, no marriage value; then the same flat at 79 years to show the cliff (marriage value roughly doubles the premium; both columns labelled illustrative ranges).
+2. **Marcus, BTL landlord via SPV, 72 years unexpired:** premium is company capital expenditure, fees follow it, no CT deduction, base cost yes; SDLT note where the premium exceeds £40,000 (one sentence, forward-link).
+
+### FAQ list (12)
+1. How much does it cost to extend a lease in the UK in 2026?
+2. Does marriage value still apply in 2026?
+3. What happens to the cost when my lease drops below 80 years?
+4. Do I have to pay the freeholder's legal costs?
+5. Do I still need to own the flat for two years before claiming? (No, abolished 31 Jan 2025, SI 2025/57.)
+6. Should I wait for the LFRA 2024 valuation reforms to cut the price?
+7. Is a lease extension tax deductible for a landlord?
+8. Is SDLT payable on a lease extension?
+9. How is extending a house lease different from a flat?
+10. What does the statutory extension actually give me? (+90 years at peppercorn.)
+11. Can the freeholder charge me anything they like in costs? (s.60 reasonableness.)
+12. What records should I keep after completing?
+
+### Internal links (exact paths)
+- `/blog/property-types-and-specialist-tax/lease-extension-vs-freehold-purchase` (route decision)
+- `/blog/property-types-and-specialist-tax/lease-extensions-in-the-uk-surrender-and-regrant` (SDLT mechanic, forward-link only)
+- `/blog/landlord-tax-essentials/sdlt-leasehold-extension-vs-fresh-purchase` (SDLT rates side)
+- Wave 11 siblings: `/blog/property-types-and-specialist-tax/lease-extension-solicitor-what-they-do` (A10), `/blog/property-types-and-specialist-tax/leasehold-reform-act-2024-what-is-in-force` (A16), `/blog/property-types-and-specialist-tax/ground-rent-rules-uk` (A15)
+- Calculator: `/calculators/stamp-duty-calculator` (premium at or above £40,000 SDLT check)
+
+### Statutory cross-check (§16.36)
+Seed citations re-read against §31 / §31.3a / §31.5 / §31.9 as re-locked 2026-08-15: no mismatch. Seed correctly states marriage value payable, +90 years current, 2-year rule gone. No F-flag needed.

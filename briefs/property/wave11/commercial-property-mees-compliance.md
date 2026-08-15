@@ -46,6 +46,76 @@ First-screen jurisdiction statement mandatory: SI 2015/962 is England and Wales;
 - HMRC manuals / gov.uk guidance to cite: gov.uk "Non-domestic private rented property: minimum energy efficiency standard - landlord guidance" (fetched 2026-08-15); PRS Exemptions Register service page; CA22000+ / CA23000 (plant and machinery), CA22320/CA33500 area for integral features (verify exact paras at Stage 2), CA26450+ (s.198), BIM46900 (repairs vs improvements); the 2021 "EPC B implementation" consultation page for the trajectory hedge citation.
 - Case-law: none central; enforcement is administrative.
 
+## Stage 2 extensions
+
+### 1. Verify-at-write items RESOLVED / CONFIRMED (Stage 2, 2026-08-15)
+
+- **reg 41 penalty figures:** seed-verified 2026-08-15 and now HP-asserted in §26.3a (breach under 3 months = greater of £5,000 or 10% of rateable value, capped £50,000; breach 3 months or more = greater of £10,000 or 20% of rateable value, capped £150,000; false/misleading register information up to £5,000; reg 39 publication penalty, minimum 12 months on the register). Writer re-confirms at write per the standing rule; no Stage 2 blocker.
+- **EPC B / C trajectory:** gov.uk non-domestic MEES landlord guidance verified 2026-08-15 ("no statutory timeline or enacted provisions for EPC C or EPC B"), now locked in §26.3a. Consultation only; the enacted state is the E floor. Confirmed unchanged.
+- **FA 2026 capital allowances angle: CHECKED against §38 ground truth, exact match.** WDA 14% main pool (FA 2026 s.28, CAA 2001 s.56(1)); special rate 6% UNCHANGED (never write 4%); 40% FYA (FA 2026 s.29 inserting CAA 2001 s.45U, new and unused main-rate plant, expenditure from 1 January 2026, cars excluded, NOT restricted by incorporation status: never write "unincorporated-only", frame as the practical route for those outside full expensing); 100% full expensing s.45S companies only; AIA £1m permanent (F(No.2)A 2023 s.8). Straddling chargeable periods use the hybrid time-apportioned WDA (FA 2026 s.28(2)-(6)): mention once if a worked example straddles April 2026, otherwise omit. Commercial property outside the CAA 2001 s.35 dwelling-house bar; s.198 election per §25.11.
+- **NEW TRAP RESOLVED FOR WRITERS (record for lock §26.3a / §26.13 at Stage 2b): two different "reg 38"s.** SI 2015/962 reg 38 = MEES penalty notices; SI 2012/3118 reg 38 = EPC penalty AMOUNTS (now resolved, see the A17 extension: non-dwelling 12.5% of rateable value, £500 min, £5,000 max, £750 default). Every reg 38 mention on any trio page must name its SI; a bare "reg 38" cross-contaminates the two regimes.
+- **Still verify-at-write (writer):** exact HMRC manual paragraph numbers (CA22320/CA33500 integral features area, CA26450+ s.198, BIM46900 repairs); PRS Exemptions Register service URL; CT rates if a worked example prints them (25% main rate per §21.A, small profits 19%).
+
+### 2. Competitor exploitation plan
+
+Pack spot-recheck: https://www.higgsllp.co.uk/articles/mees-regulations-for-commercial-landlords-and-tenants returned 200 on 2026-08-15. Pack stands.
+
+Beat-them elements (where each sits):
+1. **The reg 41 penalty table with the actual formula and worked rateable-value maths** (penalties H2). higgs (the SERP leader) has NO figures at all; moorcrofts quotes only the over-3-months limb. We publish both limbs, the caps, the "greater of" floors, the register-information penalty and the publication penalty, sourced.
+2. **The comply-vs-exempt decision model with numbers** (paying-for-the-works H2): retrofit cost vs penalty exposure vs a reg 28 payback exemption, with FA 2026 allowances shrinking the net retrofit cost. The law-firm SERP does obligations, not money; this is the page's reason to exist.
+3. **Sourced arbitration of the interim-date conflict** (is-EPC-B-law H2): moorcrofts states "April 2027 C-rating" as fact; energyadvicehub reports the 2027 date pushed to 2028; gov.uk says no statutory timeline exists. Exploit moorcrofts' as-fact claim precisely: name the disagreement, cite gov.uk, rule consultation-only. Never pick a side (§26.3a).
+4. **The domestic/non-domestic split declaration** (exemptions H2): no £3,500 cost cap in the commercial regime; the reg 28 seven-year payback test does that work. Competitors either import the domestic cap or never mention the difference; A8 states the same split from the domestic side (F-80).
+5. **FRI-lease cost-bearing and service-charge recoverability of improvements** (who-pays H2): higgs gestures at tenant negotiation; nobody models who actually funds the works across FRI terms, rent review and dilapidations. One section, practical, with the LTA 1985 residential regime explicitly out of scope (commercial service charges are contractual).
+
+### 3. Query coverage map
+
+Primary: `mees regulations commercial property` / `commercial property mees` (no volume data in WAVE11_HANDOFF §3; authority play, £20.45-CPC adjacency via the trio).
+| Query | Served at |
+|---|---|
+| mees regulations commercial property | H1 + E-floor H2 |
+| can I let a commercial property with an F rating | E-floor H2 + who-is-caught H2 |
+| mees exemptions commercial / seven year payback test | exemptions H2 |
+| mees penalties commercial property | penalties H2 |
+| epc b by 2030 commercial / mees 2027 2028 | is-EPC-B-law H2 |
+| commercial epc improvement costs tax treatment / capital allowances | paying-for-the-works H2 |
+
+### 4. Structure + worked examples
+
+Opener: the legal deadline pair (obligation page): new lets barred since 1 April 2018, ALL continuing lets since 1 April 2023, sub-standard = below E. First screen carries the jurisdiction statement (SI 2015/962 is England and Wales; Scotland and NI differ).
+
+H2 skeleton (9):
+1. The E floor: what is actually enacted (reg 27 prohibition chain, reg 22, 2018/2023 dates)
+2. Who is caught: buildings, tenancies, landlords (reg 20/27 scope)
+3. The exemptions: the seven-year payback test (reg 28), all-improvements-made (reg 29), consent, devaluation and temporary (regs 31-33), and the register (reg 36, five-year clock)
+4. Penalties in pounds: the reg 41 formula, worked (plus the publication penalty)
+5. Is "EPC C by 2027/2028" or "EPC B by 2030" law? What to plan for
+6. Paying for the works: capital vs revenue, and the FA 2026 capital allowances that shrink the bill
+7. Who bears the cost: FRI leases, rent review, dilapidations, service-charge recovery
+8. Selling the improved building: the s.198 fixtures election (one paragraph, link out)
+9. MEES vs the EPC duty: two statutes, one boundary paragraph (links A17, A18)
+
+Worked examples (numbers trace to verified sources as marked):
+1. **Comply vs exempt, CT-first** (persona: Delta Units Ltd, SPV holding a sub-E 1990s office, rateable value £40,000): continuing to let unlawfully for 3+ months risks the greater of £10,000 or 20% RV = £10,000 (the "greater of" floor bites at this RV; contrast a £600,000-RV block where 20% = £120,000, still under the £150,000 cap): reg 41, verified. Retrofit option: £60,000 LED lighting + HVAC package; integral features to the 6% special rate pool unless full expensing/AIA applies; as new, unused plant the company claims 100% full expensing (s.45S), saving £15,000 CT at the 25% main rate, net cash cost £45,000, plus the CGT/CT base-cost point for genuinely improving works. Retrofit cost = illustrative-range figure (label it); tax rates = §38/§21.A verified.
+2. **The payback-test exemption** (persona: Joan, individual landlord, IT aside, single industrial unit): quoted £28,000 for wall insulation projected to save £3,000/year in energy = 9.3-year simple payback, over 7 years, so not a "relevant" improvement (reg 28); if no relevant improvements remain she registers under reg 29, exemption runs five years from registration (reg 36(2)). Quote figures labelled illustrative; the test mechanics verified.
+
+FAQ list (12, PAA-adjacent gaps): Can I let a commercial property with an EPC rating of F or G? · Does MEES apply to existing leases or only new ones? · What does "sub-standard" mean under MEES? · Is there a cost cap for commercial MEES improvements? (no; £3,500 is domestic-only) · What is the seven-year payback rule? · How do I register a MEES exemption and how long does it last? · What are the penalties for breaching commercial MEES? · Can the council really fine me 20% of rateable value? · Is EPC B by 2030 the law? · Are MEES improvement works tax deductible? · Can I pass MEES upgrade costs to my tenant? · Do I lose the capital allowances when I sell the building?
+
+Internal links (exact paths):
+- Siblings: `/blog/property-types-and-specialist-tax/commercial-epc-requirements` (A17, boundary paragraph), `/blog/property-types-and-specialist-tax/commercial-energy-performance-certificate-cost` (A18, once).
+- Cluster B domestic sibling: `/blog/landlord-tax-essentials/mees-regulations-landlords` (A8; the domestic/non-domestic split stated on both sides per F-80).
+- Established adjacent: `/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim` (primary tax-depth link, clean handshake), `/blog/landlord-tax-essentials/epc-c-2030-minimum-energy-efficiency-landlord-spending-cap` (domestic trajectory page; keep the trajectories separated explicitly), `/blog/property-types-and-specialist-tax/section-24-commercial-property-complete-guide`, `/blog/property-types-and-specialist-tax/capital-allowances-for-offices`, `/blog/property-types-and-specialist-tax/commercial-property-tax-landlords-rates-reliefs-allowances`, `/blog/portfolio-management/buying-commercial-property-through-a-sipp` (SIPP landlords are commercial MEES landlords too).
+- Calculator: `/calculators/portfolio-profitability-calculator` is the only plausible fit (modelling retrofit spend against portfolio returns); weak fit, writer's call, spec permits none.
+- Post-merge (F-80 lattice, do not edit pre-merge): the epc-c-2030 page's non-domestic FAQ back-links here.
+
+### 5. Statutory cross-check (§16.36)
+
+Seed re-read against §26.3a, §26.3, §38, §26.7, §25.11 on 2026-08-15: every citation consistent; the seed's F-79 substance was promoted into §26.3a verbatim (reg 27/28/29 chain, reg 41 figures, trajectory hedge), and the seed's capital-allowances paragraph matches §38 exactly, including the s.45U/s.45S split and the 6%-unchanged special rate. No mismatches; the lock wins by default and nothing needed correcting. No F-flags raised.
+
 ## Universal rules + workflow stubs (Stage 2 fills)
+- Six-check floor per `_WRITER_SPEC_WAVE11.md`.
+- Two do-not-drift rails (HP-locked): no £3,500 cap on this page except to deny it; no interim date written as operative law.
+- Name the SI with every regulation number (the two-reg-38s trap, §1 above).
+- CT-first framing throughout; IT treatment as asides.
 
 ## Work log (Stage 2 + RUN populate)
+- 2026-08-15 Stage 2 (cluster D): reg 41 + trajectory confirmed now HP-locked (§26.3a); FA 2026 allowances cross-checked against §38 (exact match, s.45U nuance carried); two-reg-38s trap recorded for Stage 2b lock patch; higgsllp pack URL rechecked 200; extensions written.

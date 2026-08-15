@@ -46,3 +46,72 @@ Lane guards: RTM as a remedy gets one sentence and a forward-link to A11 (this p
 
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-15 Stage 1 seed written (cluster C session). LTA 1985 sections and SI 2003/1987 thresholds verified same day. F-77 HOUSE_POSITION_EXTENSION raised (no HP lock for service charge machinery). LFRA 2024 Part 4 transparency commencement = mandatory Stage 2 verification item.
+- 2026-08-15 Stage 2 extension written (cluster C Stage 2 session). GATING ITEM RESOLVED: LFRA 2024 Part 4 transparency NOT COMMENCED (commencement-SI register exhausted). FTT fees verified to the new July 2026 schedule. Daejan citation verified. PIM pointer corrected (F-81). Leaseholdknowledge pack URL 200. No blockers.
+
+## Stage 2 extensions
+
+### Verify-at-write items resolved (Stage 2, 2026-08-15)
+- **GATING: LFRA 2024 Part 4 transparency commencement (RESOLVED FOR LOCK §31.D; conductor patches the lock's "NOT COMMENCED as far as verified" line to a settled position at Stage 2b).** Verified 2026-08-15 at legislation.gov.uk:
+  1. Part 4 "Regulation of leasehold" = ss.53-71; the service-charge transparency block is ss.53-58 (s.53 fixed service charges; s.54 notice of future demands; s.55 standardised service charge demands; s.56 accounts and annual reports; s.57 right to information on request; s.58 enforcement of those duties). Source: https://www.legislation.gov.uk/ukpga/2024/22/contents.
+  2. Only three commencement SIs exist for LFRA 2024 (SI title search, "no Commencement No. 4 or later"): SI 2024/1018 commences ss.114-116 + s.120 (building safety) on 31 Oct 2024 and "does not bring any provisions of Part 4" into force (verified against the SI text); SI 2025/57 commences s.27; SI 2025/131 commences ss.49-52 and s.64 ONLY "insofar as it inserts section 20J of the Landlord and Tenant Act 1985 as regards the right to manage" (reg 2 verbatim).
+  3. CONCLUSION: **LFRA 2024 Part 4 service-charge transparency provisions (ss.53-58) are NOT IN FORCE as at 15 Aug 2026**, except the narrow s.64/s.20J RTM costs insertion. Page states: the transparency reforms (standardised demand forms, annual reports, information rights) are enacted but await commencement regulations; the operative regime remains LTA 1985 ss.18-30 + SI 2003/1987. Safe formulation mirrors §31.9: "LFRA 2024 provides for X, but that provision is not yet in force."
+- **FTT (Property Chamber) fees (resolved for lock §31.D verify list):** fee schedule REPLACED from 13 July 2026 by SI 2026/642 art 12 + Sch 6 (substituting Sch 1 to the 2013 Fees Order, SI 2013/1179). Verified at https://www.legislation.gov.uk/uksi/2026/642/schedule/6/made, 2026-08-15: an application under **LTA 1985 s.27A(1) or (3)** (leasehold management item 2.1) = **£114 application fee + £227 hearing fee**. General tiers: £114/£227 lower, £200/£300 higher. Do not use the old £100/£200 figures still quoted across the SERP; carry "fees changed 13 July 2026" as a freshness signal.
+- **Daejan v Benson (resolved for lock §31.D verify list):** citation verified 2026-08-15: **Daejan Investments Ltd v Benson [2013] UKSC 14; [2013] 1 WLR 854** (Supreme Court, 6 Mar 2013, 3-2). Holding for the page: dispensation from s.20 consultation under s.20ZA turns on the prejudice suffered by leaseholders, not the seriousness of the landlord's breach; dispensation can be granted on terms (Daejan got it on terms including a £50,000 reduction). Consequence: the £250 cap for non-consulted works is not a guaranteed windfall; argue prejudice.
+- **Landlord deductibility PIM reference (CORRECTION, part of F-81):** the seed's "PIM2068/PIM2100 area" is wrong in the specific: PIM2100 is "expenses for own home". PIM2068 is the "Deductions: main types of expense: contents" index; the relevant leaf pages are **PIM2078 "Costs due to common ownership"** (service-charge-type costs; writer verifies the leaf page at write) and **PIM2205 "Rent paid out"** (verified live 2026-08-15). Tax position for the page: service charges on a let flat are revenue-deductible when incurred (accruals); withheld-in-dispute amounts and later refunds adjust in the year they crystallise; describe the mechanic and cite PIM2078 after the writer's live check.
+- **LTA 1987 s.42 trust status (resolved):** confirmed via HMRC's own manual title, TSEM5710 "Trusts for particular purposes: flat management companies - S42 Landlord and Tenant Act 1987" (verified live 2026-08-15; detail in A12's block). Use for the your-money-on-trust point when reading reserve funds.
+
+### Competitor exploitation plan
+Spot-recheck: https://www.leaseholdknowledge.com/advice/service-charges/ returns 200 (2026-08-15); confirmed it does NOT cover LFRA 2024 Part 4 or its commencement. Pack stands.
+Beat-them elements:
+1. **How to actually read the accounts** (H2 #5): budget vs actuals, apportionment against the lease percentage, reserve-fund movements, management-fee layering, insurance commissions; LKP is sprawling and campaigning, coodes is 550 words; nobody teaches the evidence work a s.27A case is built on.
+2. **The transparency-reform truth-check** (H2 #7): enacted ss.53-58 vs not-in-force reality with the commencement-SI method; the SERP mostly bungles or ignores this; freshest possible correction hook, one summary row + link A16.
+3. **Verified 2026 tribunal economics** (H2 #6): £114 + £227 fees under the 13 Jul 2026 schedule, s.20C protection application, cost exposure in numbers; LKP and coodes carry no current fees.
+4. **Daejan realism on s.20** (H2 #4): the £250-cap-if-not-consulted rule stated WITH the dispensation counterweight; competitor content oversells the cap as automatic.
+5. **The BTL landlord layer** (H2 #8): deductibility of service charges, disputed amounts, refunds, and how a live dispute plays at sale (retentions, LPE1 answers); zero competitor coverage.
+
+### Query coverage map
+- Primary: `service charge disputes` / `challenging service charges` → H1 + H2 #1.
+- `are service charges unreasonable s19` / `service charge reasonableness` → H2 #2.
+- `section 20 consultation £250` → H2 #4.
+- `18 month rule service charges` / `section 20b` → H2 #3.
+- `first tier tribunal service charge application` / `service charge tribunal cost` → H2 #6.
+- `can I withhold service charges` → H2 #6 (risks sub-section).
+- `service charge accounts leaseholder rights` (ss.21-22) → H2 #5.
+
+### Structure (H2 skeleton, 8 sections)
+1. Your statutory toolkit at a glance (open with the legal hooks list: s.18 definition, s.19 reasonableness, s.20 consultation, s.20B time limit, ss.21-22 information, s.27A tribunal; what each is for).
+2. What counts as a service charge and what "reasonably incurred" means (s.18, s.19; ground rent is NOT a service charge, one sentence, forward-link A15).
+3. The 18-month rule (s.20B: bars DEMANDS more than 18 months after costs were incurred UNLESS notified within 18 months that costs had been incurred and a demand would follow; state the notification limb per §31.D do-not-write).
+4. Consultation: the per-tenant thresholds and the dispensation reality (s.20 + SI 2003/1987 reg 6 over £250 per tenant works, reg 4(1) over £100 per tenant per year QLTAs; Daejan v Benson [2013] UKSC 14).
+5. Extracting and reading the evidence (s.21 summary, s.22 inspection; the accountant's walkthrough of the accounts; s.42 trust status of reserve funds).
+6. Challenging at the tribunal, and whether to withhold (s.27A route; £114/£227 fees from 13 Jul 2026; s.20C costs protection; withholding risks: forfeiture threats, mortgage conditions, admissions).
+7. What the LFRA 2024 transparency reforms will change, and why they change nothing yet (ss.53-58 enacted, not commenced; link A16).
+8. The landlord-leaseholder's tax and sale angle (deductibility, disputes and refunds, LPE1/retentions at sale).
+Worked examples (2): **apportionment check, Dev, BTL leaseholder** with a 4.2% lease percentage against a £48,000 block budget (illustrative, labelled) finding a 6% charged share; **s.20B letter timeline** showing a demand issued 20 months after works with no notification, and the response that kills it.
+
+### FAQ list (13)
+1. What legally counts as a service charge?
+2. Who decides whether a service charge is reasonable?
+3. What is the 18-month rule and when does it not protect me?
+4. When must my landlord consult before charging for works?
+5. What happens to the bill if they did not consult?
+6. Can the landlord get dispensation for a botched consultation?
+7. What information can I demand about my service charges?
+8. Can I inspect the invoices behind the charge?
+9. How much does a tribunal challenge cost in 2026?
+10. Should I withhold payment while I dispute?
+11. Are the LFRA 2024 transparency reforms in force?
+12. Are service charges tax deductible for a landlord?
+13. How does a live dispute affect selling the flat?
+
+### Internal links (exact paths)
+- `/blog/property-types-and-specialist-tax/right-to-manage-explained` (A11, structural remedy, one sentence)
+- `/blog/property-types-and-specialist-tax/right-to-manage-company-setup` (A12, the accounts from the producing side)
+- `/blog/property-types-and-specialist-tax/ground-rent-rules-uk` (A15, not-a-service-charge boundary)
+- `/blog/property-types-and-specialist-tax/leasehold-reform-act-2024-what-is-in-force` (A16, transparency ledger row)
+- `/blog/property-types-and-specialist-tax/brief-introduction-to-commercial-property-service-charge-accounts` (commercial sibling, one cross-link; category path CONFIRMED Property Types & Specialist Tax, 2026-08-15)
+- `/blog/property-types-and-specialist-tax/building-safety-act-2022-cladding-cost-recovery-leaseholder-protections-landlords` (remediation-cost protections; category path CONFIRMED Property Types & Specialist Tax, 2026-08-15)
+- Calculator: `/calculators/portfolio-profitability-calculator` (service charges as a running cost in portfolio numbers)
+
+### Statutory cross-check (§16.36)
+Seed vs §31.D: consistent on all LTA 1985 sections and SI 2003/1987 thresholds. Two corrections recorded: PIM2068/PIM2100 pointer (seed + lock) superseded by PIM2078/PIM2205 (F-81); Part 4 commencement question answered (lock said "verify at write", now settled NOT in force, noted for the Stage 2b lock patch). No contradiction with the lock; no drift F-flag beyond F-81.

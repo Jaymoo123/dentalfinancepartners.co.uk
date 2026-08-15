@@ -19,35 +19,35 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 
 | Status | Pos | Slug | Category | Body words | FAQs | MP ID | Notes |
 |---|---|---|---|---|---|---|---|
-| Stage1 ✅ | A1 | eicr-certificate-cost-landlords | Landlord Tax Essentials | — | — | — | Seed done; cost lane vs A2; SI 2020/312 regs 3+11 verified; NEW HP LOCK (F-73) |
-| Stage1 ✅ | A2 | landlord-electrical-safety-certificate | Landlord Tax Essentials | — | — | — | Seed done; obligation lane vs A1; SI 2020/312 verified; shares F-73 lock |
-| Stage1 ✅ | A3 | fire-risk-assessment-cost | Landlord Tax Essentials | — | — | — | Seed done; RRFSO 2005 + SI 2022/547 verified; FSA 2021/BSA s.156 = Stage 2 verify; F-73 lock |
-| Stage1 ✅ | A4 | landlord-licensing-explained | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs hmo-selective-licensing mechanics page, decision-led lane; HA 2004 verified; anchors §26.9 |
-| Stage1 ✅ | A5 | gas-safety-certificate-cost | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs gas-safety-certificates, hard cost lane; SI 1998/2451 reg 36 verified; F-73 lock + F-74 back-patch |
-| Stage1 ✅ | A6 | epc-certificate-cost-uk | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs energy-performance-certificates-epc, cost-specific lane; SI 2012/3118 verified; F-73 lock |
-| Stage1 ✅ | A7 | how-to-book-an-epc | Landlord Tax Essentials | — | — | — | Seed done; process lane per F-71 reframe (long-tail, not head term); top-of-funnel router per HANDOFF §5.4 |
-| Stage1 ✅ | A8 | mees-regulations-landlords | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs epc-c-2030 page, operative-regime lane; SI 2015/962 verified; anchors §26.3 |
+| Stage2 ✅ | A1 | eicr-certificate-cost-landlords | Landlord Tax Essentials | — | — | — | Seed done; cost lane vs A2; SI 2020/312 regs 3+11 verified; NEW HP LOCK (F-73) |
+| Stage2 ✅ | A2 | landlord-electrical-safety-certificate | Landlord Tax Essentials | — | — | — | Seed done; obligation lane vs A1; SI 2020/312 verified; shares F-73 lock |
+| Stage2 ✅ | A3 | fire-risk-assessment-cost | Landlord Tax Essentials | — | — | — | Seed done; RRFSO 2005 + SI 2022/547 verified; FSA 2021/BSA s.156 = Stage 2 verify; F-73 lock |
+| Stage2 ✅ | A4 | landlord-licensing-explained | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs hmo-selective-licensing mechanics page, decision-led lane; HA 2004 verified; anchors §26.9 |
+| Stage2 ✅ | A5 | gas-safety-certificate-cost | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs gas-safety-certificates, hard cost lane; SI 1998/2451 reg 36 verified; F-73 lock + F-74 back-patch |
+| Stage2 ✅ | A6 | epc-certificate-cost-uk | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs energy-performance-certificates-epc, cost-specific lane; SI 2012/3118 verified; F-73 lock |
+| Stage2 ✅ | A7 | how-to-book-an-epc | Landlord Tax Essentials | — | — | — | Seed done; process lane per F-71 reframe (long-tail, not head term); top-of-funnel router per HANDOFF §5.4 |
+| Stage2 ✅ | A8 | mees-regulations-landlords | Landlord Tax Essentials | — | — | — | Seed done; PARTIAL vs epc-c-2030 page, operative-regime lane; SI 2015/962 verified; anchors §26.3 |
 
 ### Cluster C — leasehold (A9-A16)
 
 | Status | Pos | Slug | Category | Body words | FAQs | MP ID | Notes |
 |---|---|---|---|---|---|---|---|
-| Stage1 ✅ | A9 | lease-extension-cost-uk | Property Types & Specialist Tax | — | — | — | Seed done; PARTIAL vs 2 tax-angled lease pages, cost-architecture lane (F-72); LRHUDA 1993 + Sch 13 prospective-repeal annotation verified; anchors §31.3a/§31.5 |
-| Stage1 ✅ | A10 | lease-extension-solicitor-what-they-do | Property Types & Specialist Tax | — | — | — | Seed done; PARTIAL, process/role lane; s.42/s.56/s.60 verified; s.60 post-LFRA recoverability = Stage 2 verify |
-| Stage1 ✅ | A11 | right-to-manage-explained | Property Types & Specialist Tax | — | — | — | Seed done; RTM trio lane = what/whether decision page; CLRA 2002 ss.71-77 + SI 2025/131 (3 Mar 2025) verified; NEW HP LOCK F-76 (§31.C) |
-| Stage1 ✅ | A12 | right-to-manage-company-setup | Property Types & Specialist Tax | — | — | — | Seed done; RTM trio lane = company formation/accounts/CT; s.73-74 + SI 2009/2767 model articles verified; shares F-76 |
-| Stage1 ✅ | A13 | right-to-manage-process-steps | Property Types & Specialist Tax | — | — | — | Seed done; RTM trio lane = statutory timeline; ss.78/79/84/87/90 verified (day-counts = Stage 2 verify); shares F-76 |
-| Stage1 ✅ | A14 | service-charge-disputes-leaseholders | Property Types & Specialist Tax | — | — | — | Seed done; LTA 1985 ss.18-27A + SI 2003/1987 thresholds verified; NEW HP LOCK F-77 (§31.D); LFRA Part 4 commencement = Stage 2 verify |
-| Stage1 ✅ | A15 | ground-rent-rules-uk | Property Types & Specialist Tax | — | — | — | Seed done; three-state ledger (law new leases / law existing / draft cap); LR(GR)A 2022 ss.1-8 verified; NEW HP LOCK F-78 (§31.E) |
-| Stage1 ✅ | A16 | leasehold-reform-act-2024-what-is-in-force | Property Types & Specialist Tax | — | — | — | Seed done; correction-of-record flagship; LFRA 2024 + all 3 commencement SIs (2024/1018, 2025/57, 2025/131) verified; cross-links 4 back-patched pages; re-verify after 23 Sep 2026 |
+| Stage2 ✅ | A9 | lease-extension-cost-uk | Property Types & Specialist Tax | — | — | — | Seed done; PARTIAL vs 2 tax-angled lease pages, cost-architecture lane (F-72); LRHUDA 1993 + Sch 13 prospective-repeal annotation verified; anchors §31.3a/§31.5 |
+| Stage2 ✅ | A10 | lease-extension-solicitor-what-they-do | Property Types & Specialist Tax | — | — | — | Seed done; PARTIAL, process/role lane; s.42/s.56/s.60 verified; s.60 post-LFRA recoverability = Stage 2 verify |
+| Stage2 ✅ | A11 | right-to-manage-explained | Property Types & Specialist Tax | — | — | — | Seed done; RTM trio lane = what/whether decision page; CLRA 2002 ss.71-77 + SI 2025/131 (3 Mar 2025) verified; NEW HP LOCK F-76 (§31.C) |
+| Stage2 ✅ | A12 | right-to-manage-company-setup | Property Types & Specialist Tax | — | — | — | Seed done; RTM trio lane = company formation/accounts/CT; s.73-74 + SI 2009/2767 model articles verified; shares F-76 |
+| Stage2 ✅ | A13 | right-to-manage-process-steps | Property Types & Specialist Tax | — | — | — | Seed done; RTM trio lane = statutory timeline; ss.78/79/84/87/90 verified (day-counts = Stage 2 verify); shares F-76 |
+| Stage2 ✅ | A14 | service-charge-disputes-leaseholders | Property Types & Specialist Tax | — | — | — | Seed done; LTA 1985 ss.18-27A + SI 2003/1987 thresholds verified; NEW HP LOCK F-77 (§31.D); LFRA Part 4 commencement = Stage 2 verify |
+| Stage2 ✅ | A15 | ground-rent-rules-uk | Property Types & Specialist Tax | — | — | — | Seed done; three-state ledger (law new leases / law existing / draft cap); LR(GR)A 2022 ss.1-8 verified; NEW HP LOCK F-78 (§31.E) |
+| Stage2 ✅ | A16 | leasehold-reform-act-2024-what-is-in-force | Property Types & Specialist Tax | — | — | — | Seed done; correction-of-record flagship; LFRA 2024 + all 3 commencement SIs (2024/1018, 2025/57, 2025/131) verified; cross-links 4 back-patched pages; re-verify after 23 Sep 2026 |
 
 ### Cluster D — commercial (A17-A19)
 
 | Status | Pos | Slug | Category | Body words | FAQs | MP ID | Notes |
 |---|---|---|---|---|---|---|---|
-| Stage1 ✅ | A17 | commercial-epc-requirements | Property Types & Specialist Tax | — | — | — | Seed done; trio lane = when/whether legally required; SI 2012/3118 regs 5+6 verified (reg 38 amounts = Stage 2 verify, legislation.gov.uk 504); shares F-73(4) lock; F-70/F-79 hedge |
-| Stage1 ✅ | A18 | commercial-energy-performance-certificate-cost | Property Types & Specialist Tax | — | — | — | Seed done; trio lane = cost only, SBEM Level 3/4/5 banded table plan, all figures Stage 2-verify; competitor pack copied; F-80 back-patch |
-| Stage1 ✅ | A19 | commercial-property-mees-compliance | Property Types & Specialist Tax | — | — | — | Seed done; trio lane = E floor/exemptions/enforcement; SI 2015/962 regs 27/28/29/41 + gov.uk B-trajectory-not-law verified; NEW HP LOCK F-79 (feeds F-70); CA angle per §38 |
+| Stage2 ✅ | A17 | commercial-epc-requirements | Property Types & Specialist Tax | — | — | — | Stage 2 done; reg 38 amounts RESOLVED (dwelling £200; non-dwelling 12.5% RV, £500 min/£5,000 max/£750 default); validity = reg 9(2) NOT reg 11 (seed corrected); reg 22 + Part 7 verified; resolutions flagged for §26.13 patch |
+| Stage2 ✅ | A18 | commercial-energy-performance-certificate-cost | Property Types & Specialist Tax | — | — | — | Stage 2 done; cost bands verified vs 2 live sources (fast-epc + assessmenthive) + pack corroboration; seed £5,000 top end dropped; no per-Level price split exists in market (driver-column framing); validity = reg 9(2) |
+| Stage2 ✅ | A19 | commercial-property-mees-compliance | Property Types & Specialist Tax | — | — | — | Stage 2 done; reg 41 + trajectory now §26.3a-locked; CA angle exact-matched to §38 (s.45U/s.45S split, 6% unchanged); two-reg-38s SI-naming trap recorded for Stage 2b |
 ---
 
 ## Sequencing constraints

@@ -38,5 +38,70 @@ THE ACCOUNTANT'S ANGLE: §26.7 verbatim discipline: improvement spend to escape 
 - Case-law: none expected; Stage 2 may cite LA enforcement statistics if a dated source exists.
 
 ## Universal rules + workflow stubs (Stage 2 fills)
+- Writer spec `_WRITER_SPEC_WAVE11.md` applies in full: category `Landlord Tax Essentials`, body 2,800-3,500 words raw HTML, 10-14 FAQs, metaTitle ≤62, metaDescription ≤158, 0 em-dashes, first-screen jurisdiction statement (England and Wales), obligation-page opener = the operative rule (the E floor), not a trajectory tease.
+- Ledger: house_positions.md §26.3 (domestic MEES, existing lock re-verified 2026-08-15 per F-73) + §26.3a (non-domestic boundary: ONE line + forward-link A19, never import commercial penalties) + §26.7 (capital/revenue) + §26.8 do-not-writes (£10,000 never as a live cap; EPC C 2030 never as enacted). Lock wins.
+
+## Stage 2 extensions (2026-08-15, cluster B session)
+
+### 1. Verify-at-write resolutions
+
+- **Domestic penalty amounts, SI 2015/962 reg 40: RESOLVED (was the seed's Stage 2 verify item).** Fetched https://www.legislation.gov.uk/uksi/2015/962/regulation/40 on 2026-08-15: breach of reg 23 for less than 3 months = financial penalty not exceeding **£2,000** (reg 40(2)(a)); 3 months or more = not exceeding **£4,000** (reg 40(3)(a)); false or misleading register information = not exceeding **£1,000** (reg 40(4)(a)); failure to comply with a compliance notice = not exceeding **£2,000** (reg 40(5)(a)); **aggregate cap: total financial penalties "must be no more than £5,000"** (reg 40(6)). Each limb may also carry a publication penalty. Cross-checked against gov.uk domestic MEES landlord guidance (fetched 2026-08-15): figures match, including "the maximum amount you can be fined per property is £5,000 in total". The widely-quoted £5,000 is therefore the AGGREGATE cap, not a per-breach figure; state the structure, then the cap.
+- **£3,500 cost cap: re-verified.** gov.uk guidance (fetched 2026-08-15): "you are not currently required to spend more than £3,500 (including VAT) on energy efficiency improvements". Matches §26.3.
+- **Exemption classes and durations: re-verified against gov.uk guidance (fetched 2026-08-15):** all-relevant-improvements-made, high cost, wall insulation, third-party consent, property devaluation = 5 years each (third-party consent: or until the current tenancy ends/is assigned where tenant consent was the issue); **temporary "recently became a landlord" exemption = 6 MONTHS from becoming the landlord** (seed listed it among the classes without duration; it is 6 months, not 5 years). Writer confirms each exemption's SI regulation number (regs 24-33 span) when citing the SI rather than the guidance.
+- **Exemption transferability: STILL FLAGGED, hedge on-page.** gov.uk guidance is silent on succession; the SI reg 36 fetch (2026-08-15) contains no express cessation-on-sale wording. The WRITER must NOT assert "exemptions are non-transferable on sale" as a sourced rule. Safe verified formulation: an exemption is registered by and applies from the registering landlord's registration; a new landlord cannot simply inherit the registration and has the verified 6-month temporary exemption route instead. If the writer locates the express provision (check regs 24-33 + Sch), cite it; otherwise use the safe formulation.
+
+### 2. Competitor exploitation plan
+
+Spot-recheck 2026-08-15: https://www.purplefrogproperty.com/landlord-library/mees-regulations-guide returns HTTP 200. Pack stands.
+
+Beat-them elements:
+1. **The verified penalty table with the £5,000 aggregate-cap structure** (reg 40, above). purplefrog has a penalty matrix but unsourced; NRLA gates penalties behind membership. Sits in the enforcement H2.
+2. **Publish free what NRLA paywalls** (pack: everything of value on the NRLA page is member-gated, ~350 public words): the full exemptions register workflow with evidence per class and durations. Sits as the register H2, the deepest section of the page.
+3. **The £3,500 cap arithmetic worked example** (what spend counts, VAT-inclusive, grant interaction, what happens when the cap is spent short of E → high-cost exemption with three quotes as evidence). purplefrog gap line: "no cost context next to the £3,500 cap". Sits mid-page.
+4. **The sourced 2030 hedge in one paragraph** (policy aspiration, no SI laid, operative floor is E; purplefrog's 2028/2030 dates are hedged but unsourced). One paragraph ONLY + forward-link the 2030 page (lane rule).
+5. **The tax layer** (capital vs revenue on escape-the-floor spend, grants reduce base cost, cap is a compliance cap not a tax category, penalties non-deductible). Pack: no competitor carries tax or capital allowances. Sits as the closing substantive H2.
+
+### 3. Query coverage map
+
+| Query | Served at |
+|---|---|
+| `mees regulations` / `minimum energy efficiency standards` (primary) | H1 + operative-rule opener |
+| `epc e rating rental law` / `can i let a property with an epc f rating` | prohibition H2 |
+| `mees exemptions` / `prs exemptions register` | exemptions register H2 |
+| `mees penalties` | enforcement H2 |
+| `£3,500 cost cap epc` / `mees cost cap` | cap arithmetic H2 |
+| `is epc c by 2030 law` | hedged trajectory paragraph (+ link out) |
+
+### 4. Structure, tables, examples, FAQs, links
+
+**H2 skeleton (9):**
+1. The rule as it binds you today (EPC E floor; new domestic tenancies since 1 Apr 2018, all continuing lets since 1 Apr 2020; England-and-Wales line; one-line non-domestic pointer to A19 per §26.3a)
+2. What "sub-standard" means and when MEES bites (reg 22/reg 23; grant vs continuing lets)
+3. Your two lawful routes with an F or G: improve to E, or register an exemption (reg 25 relevant improvements route)
+4. The £3,500 cap arithmetic (worked example; what counts, VAT, grants)
+5. The exemption classes, evidence and durations (verified list above; 6-month new-landlord exemption)
+6. The PRS Exemptions Register in practice (public, self-certified, registration workflow; transferability per the safe formulation above)
+7. Enforcement and penalties (verified reg 40 table incl. £5,000 aggregate cap; publication penalty; who enforces)
+8. Is EPC C by 2030 the law? (No: one hedged sourced paragraph per §26.3; forward-link the 2030 page as canonical)
+9. The tax treatment of MEES spend (capital vs revenue per §26.7; ECO4/GBIS/BUS grants reduce base cost; cap ≠ tax category; penalties non-deductible BIM38500+; company vs personal same analysis)
+
+**Penalty-table spec (not a price table):** rows = the four reg 40 limbs + aggregate cap; columns = breach, maximum penalty, provision. Every figure from the verified reg 40 text above; re-verify at write per standing rule.
+
+**Worked examples (2):** (a) Ffion, F-rated terrace: quotes £5,200 for full works; spends £3,480 on loft + cavity insulation (capital, base cost; GBIS grant reduces base cost), reaches E, lets lawfully; alternate branch: works quoted cannot reach E within £3,500 → high-cost exemption registered with three installer quotes, lasts 5 years. (b) short penalty example: landlord lets an F-rated flat for 5 months and ignores a compliance notice; stack the limbs against the verified maxima, note the £5,000 aggregate cap, penalties non-deductible.
+
+**FAQ list (13):** What EPC rating does a rental property legally need? · Does MEES apply mid-tenancy or only to new lets? · What happens if my property is rated F or G? · How does the £3,500 cost cap work? · What counts toward the cap? · What if £3,500 cannot get me to an E? · What exemptions exist and how long do they last? · How does the PRS Exemptions Register work? · Does an exemption pass to the buyer when I sell? (safe formulation) · What are the penalties for breaching MEES? · Is EPC C by 2030 already law? · Is MEES improvement spend tax-deductible? · Do grants change the tax position?
+
+**Internal links (exact paths):**
+- /blog/landlord-tax-essentials/epc-c-2030-minimum-energy-efficiency-landlord-spending-cap (MANDATORY forward-link, canonical trajectory page)
+- /blog/landlord-tax-essentials/energy-performance-certificates-epc (EPC machinery)
+- /blog/landlord-tax-essentials/epc-certificate-cost-uk (A6) + /blog/landlord-tax-essentials/how-to-book-an-epc (A7, upstream siblings)
+- /blog/landlord-tax-essentials/epc-improvement-grant-schemes-landlords-eco4-bus-gbis (funding the improvements)
+- /blog/property-types-and-specialist-tax/commercial-property-mees-compliance (A19, one-line sibling link per §26.3a/F-80: state the domestic/non-domestic split on this side)
+- /calculators/capital-gains-tax-calculator (base-cost additions context)
+
+### 5. Statutory cross-check (§16.36)
+
+Seed vs §26.3/§26.3a/§26.7/§26.8: E floor dates, reg 22/23/25 machinery, £3,500 VAT-inclusive cap, EPC-C-2030-not-law discipline, £10,000 never-a-live-cap, tax analysis: aligned. Two seed refinements from verified sources: (1) domestic penalties are the reg 40 four-limb structure with a £5,000 AGGREGATE cap (not "regs 38-40 figures" loosely); (2) the new-landlord temporary exemption lasts 6 months, not 5 years. Transferability stays hedged as above (do not assert unsourced). No lock drift, no F-flag; conductor may note the reg 40 resolution against §26.3's verify list at Stage 2b.
 
 ## Work log (Stage 2 + RUN populate)
+- 2026-08-15 Stage 2: reg 40 penalty limbs + £5,000 aggregate cap source-verified (SI text + gov.uk cross-check); £3,500 cap + exemption durations re-verified via gov.uk (new-landlord = 6 months); transferability left hedged (no primary source found); pack URL 200; extensions appended. No blockers, no flags.
