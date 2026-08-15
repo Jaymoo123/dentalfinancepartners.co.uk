@@ -4,6 +4,9 @@ Writes proposal_engine/out/leads_raw_<date>.csv (and .html for reading): every
 lead with full contact details, message, tier, verification/nurture status,
 self-booked call slots and inbound replies. PII: out/ is gitignored; never
 commit or publish the output. Same env and tables as generate_proposal.py.
+
+With --wash, drops leads already handed to a partner or that must not be
+contacted, and writes leads_washed_<date>.* instead. Rules in WASH_NOTE.
 """
 import csv
 import html
@@ -16,6 +19,58 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
+
+# --wash: leads already sent to a firm under an earlier arrangement, or that must
+# not be contacted. Anchors are named leads, resolved to their created_at at run
+# time (no index or hard-coded date to go stale). The receiving firms are not named
+# here: this note renders into the export header, and the estate does not name firms
+# in any generated artefact.
+EARLIER_NONPROPERTY_ANCHOR = "ali fadlallah"   # non-property, this one and older -> already sent
+EARLIER_PROPERTY_FROM = "julie-anne casey"     # property, this one .. _TO -> already sent
+EARLIER_PROPERTY_TO = "greg todd"
+WASH_NOTE = ("Washed: non-property up to and including Ali Fadlallah, and property from "
+             "Julie-Anne Casey to Greg Todd, all already supplied under an earlier "
+             "arrangement; opted-out leads; older duplicate enquiries from the same person.")
+
+
+def wash(kept, rows):
+    """Return (kept, rows) with already-handled / do-not-contact leads dropped."""
+    def when(l):
+        return datetime.fromisoformat(l["created_at"].replace("Z", "+00:00"))
+
+    def anchor(name):
+        ts = [when(l) for l in kept
+              if (l.get("full_name") or "").strip().lower() == name]
+        if not ts:
+            sys.exit(f"wash: anchor lead '{name}' not found in export")
+        return ts[0]
+
+    reflex_cut = anchor(EARLIER_NONPROPERTY_ANCHOR)
+    djh_from, djh_to = anchor(EARLIER_PROPERTY_FROM), anchor(EARLIER_PROPERTY_TO)
+    seen, out_k, out_r, dropped = set(), [], [], defaultdict(int)
+    for l, r in zip(kept, rows):  # newest first
+        src, ts = r["source"], when(l)
+        key = r["email"].strip().lower() or r["phone"].strip()
+        if r["opted_out"]:
+            reason = "opted out"
+        elif src != "property" and ts <= reflex_cut:
+            reason = "already supplied (non-property, earlier arrangement)"
+        elif src == "property" and djh_from <= ts <= djh_to:
+            reason = "already supplied (property, earlier arrangement)"
+        elif key and key in seen:
+            reason = "duplicate (older enquiry, newer kept)"
+        else:
+            reason = None
+        if reason:
+            dropped[reason] += 1
+            continue
+        if key:
+            seen.add(key)
+        out_k.append(l)
+        out_r.append(r)
+    for reason, n in sorted(dropped.items()):
+        print(f"  washed out {n}: {reason}")
+    return out_k, out_r
 
 
 def env_load():
@@ -112,9 +167,15 @@ def main():
             "sms_email_trail": replies,
         })
 
+    washed = "--wash" in sys.argv
+    if washed:
+        kept, rows = wash(kept, rows)
+
     os.makedirs(OUT, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    csv_path = os.path.join(OUT, f"leads_raw_{stamp}.csv")
+    stem = f"leads_{'washed' if washed else 'raw'}_{stamp}"
+    subtitle = WASH_NOTE if washed else "Do not publish or commit."
+    csv_path = os.path.join(OUT, f"{stem}.csv")
     with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
@@ -124,16 +185,16 @@ def main():
         "<tr>" + "".join(f"<td>{html.escape(str(r[k]))}</td>" for k in rows[0]) + "</tr>"
         for r in rows)
     heads = "".join(f"<th>{html.escape(k)}</th>" for k in rows[0])
-    html_path = os.path.join(OUT, f"leads_raw_{stamp}.html")
+    html_path = os.path.join(OUT, f"{stem}.html")
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(f"""<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">
-<title>Raw lead export {stamp} (INTERNAL, UNREDACTED)</title>
+<title>Lead export {stamp} (INTERNAL, UNREDACTED)</title>
 <style>body{{font:12px/1.4 -apple-system,Segoe UI,sans-serif;margin:16px}}
 table{{border-collapse:collapse;width:100%}}th,td{{border:1px solid #ddd;padding:4px 6px;
 text-align:left;vertical-align:top;max-width:420px}}th{{background:#f2f2f2;position:sticky;top:0}}
 tr:nth-child(even){{background:#fafafa}}</style></head><body>
-<h1>Raw lead export, {stamp}</h1>
-<p><strong>INTERNAL AND UNREDACTED.</strong> {len(rows)} leads, newest first. Do not publish or commit.</p>
+<h1>Lead export, {stamp}</h1>
+<p><strong>INTERNAL AND UNREDACTED.</strong> {len(rows)} leads, newest first. {html.escape(subtitle)}</p>
 <table><thead><tr>{heads}</tr></thead><tbody>{cells}</tbody></table></body></html>""")
 
     # PDF: stacked per-lead blocks (the wide table does not fit a page), via
@@ -171,10 +232,10 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
         lines.append("</div>")
         return "\n".join(lines)
 
-    print_path = os.path.join(OUT, f"leads_raw_{stamp}_print.html")
+    print_path = os.path.join(OUT, f"{stem}_print.html")
     with open(print_path, "w", encoding="utf-8") as f:
         f.write(f"""<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">
-<title>Raw lead export {stamp} (INTERNAL, UNREDACTED)</title>
+<title>Lead export {stamp} (INTERNAL, UNREDACTED)</title>
 <style>@page{{size:A4;margin:14mm}}body{{font:10.5px/1.45 Segoe UI,sans-serif;color:#1a1a1a}}
 h1{{font-size:16px;border-bottom:2px solid #1a1a1a;padding-bottom:4px}}
 .lead{{border-bottom:1px solid #ccc;padding:8px 0}}
@@ -186,11 +247,11 @@ ul.trail{{margin:4px 0 0 0;padding-left:16px;color:#444}}
 ul.trail li{{margin:1px 0;break-inside:avoid}}
 .body{{white-space:pre-wrap;background:#eef3f7;padding:3px 6px;margin:2px 0 2px 8px}}
 .opted{{opacity:.55}}.opted .who::after{{content:" — OPTED OUT, DO NOT CONTACT";color:#8a2b06}}</style>
-</head><body><h1>Raw lead export, {stamp} — INTERNAL AND UNREDACTED</h1>
-<p>{len(rows)} leads, newest first. Opted-out leads are greyed and must not be contacted.</p>
+</head><body><h1>Lead export, {stamp} — INTERNAL AND UNREDACTED</h1>
+<p>{len(rows)} leads, newest first. {html.escape(subtitle)}</p>
 {chr(10).join(block(l, r) for l, r in zip(kept, rows))}</body></html>""")
 
-    pdf = os.path.join(OUT, f"leads_raw_{stamp}.pdf")
+    pdf = os.path.join(OUT, f"{stem}.pdf")
     edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
     if os.path.exists(edge):
         import subprocess

@@ -56,7 +56,7 @@ That is the whole setup. You only do it once.
 
 5. The tool prints a short summary so you can check the numbers, and saves the PDF
    to the `output` folder with a professional, email-ready name, for example
-   `output\Ashfield Trading Limited - Invoice DJH-001 - June 2026.pdf`.
+   `output\Ashfield Trading Limited - Invoice ABC-001 - June 2026.pdf`.
    (The name is built from your business name, the invoice number and the billing
    period. If you leave `billing_period` blank, it uses the invoice month instead.)
 6. Open the PDF, give it a final look, and send it to your client.
@@ -67,9 +67,9 @@ That is the whole setup. You only do it once.
 
 Open `invoice_config.toml` and edit these. Keep the quotes around text.
 
-- **Invoice number** - `invoice_number = "DJH-001"`. This is a client-specific
+- **Invoice number** - `invoice_number = "ABC-001"`. This is a client-specific
   reference so the invoice reads as being for that client, not a generic one.
-  Bump it each month for the same client: DJH-001, then DJH-002, and so on. For a
+  Bump it each month for the same client: ABC-001, then ABC-002, and so on. For a
   different client, use their own prefix (for example ABC-001). This reference is
   also used as the payment reference on the invoice, so when they pay with it you
   can see straight away which client it is.
@@ -209,7 +209,7 @@ The tool uses whichever config file you name. If you name none, it uses
 ## Quick reference: next month in 4 steps
 
 1. Save next month's leads as `leads/leads-2026-07.csv` (or reuse your export).
-2. In `invoice_config.toml`: bump `invoice_number` to `DJH-002` (or the next
+2. In `invoice_config.toml`: bump `invoice_number` to `ABC-002` (or the next
    number for whichever client you are billing), set the new `invoice_date`, set
    `billing_period` to `"July 2026"`, update the `path` in `[leads]`, and change
    the `[client]` if you are billing a different firm.

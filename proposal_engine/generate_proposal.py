@@ -50,10 +50,9 @@ try:
     from message_overrides import OVERRIDES  # id 8-char prefix -> final redacted message
 except ImportError:
     OVERRIDES = {}
-try:
-    from score_overrides import SCORE_OVERRIDES  # local scores for leads not in the table
-except ImportError:
-    SCORE_OVERRIDES = {}
+# score_overrides.py is no longer read. Grades come from lead_value_scores.case_tier,
+# written when the lead is graded, so the document and the live pipeline read the same
+# record. The file is retained as the history of the retired internal value scoring.
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -79,14 +78,38 @@ SOURCE_META = {
         },
         "nurture_sequence": "property_detail_capture",
     },
-    "dentists": {"specialism": "dental practice accounting and tax"},
-    "medical": {"specialism": "medical professional accounting and tax"},
-    "solicitors": {"specialism": "solicitor practice accounting and tax"},
-    "generalist": {"specialism": "small business accounting and tax"},
-    "care": {"specialism": "care sector accounting and tax"},
-    "charities": {"specialism": "charity and not-for-profit accounting"},
-    "contractors-ir35": {"specialism": "contractor and IR35 tax"},
-    "startups-tech": {"specialism": "startup and technology accounting"},
+    "dentists": {"specialism": "dental practice accounting and tax",
+                 "site_name": "Dental practice tax"},
+    "medical": {"specialism": "medical professional accounting and tax",
+                "site_name": "Medical professional tax"},
+    "solicitors": {"specialism": "solicitor practice accounting and tax",
+                   "site_name": "Solicitor practice tax"},
+    "generalist": {"specialism": "small business accounting and tax",
+                   "site_name": "Small business tax"},
+    "care": {"specialism": "care sector accounting and tax", "site_name": "Care sector tax"},
+    "charities": {"specialism": "charity and not-for-profit accounting",
+                  "site_name": "Charity and not-for-profit"},
+    "contractors-ir35": {"specialism": "contractor and IR35 tax",
+                         "site_name": "Contractor and IR35 tax"},
+    "startups-tech": {"specialism": "startup and technology accounting",
+                      "site_name": "Startup and technology"},
+    # Sites that have not yet produced a lead. Listed so a portfolio-wide run labels
+    # them properly the moment they do, instead of falling through to the raw key.
+    "construction-cis": {"specialism": "construction and CIS tax",
+                         "site_name": "Construction and CIS tax"},
+    "crypto": {"specialism": "cryptoasset tax", "site_name": "Cryptoasset tax"},
+    "digital-agency": {"specialism": "digital agency accounting",
+                       "site_name": "Digital agency finance"},
+    "ecommerce": {"specialism": "ecommerce accounting and tax", "site_name": "Ecommerce finance"},
+    "hospitality": {"specialism": "hospitality accounting and tax", "site_name": "Hospitality tax"},
+    "pharmacies": {"specialism": "pharmacy accounting and tax", "site_name": "Pharmacy tax"},
+    "property-standalone": {"specialism": "UK property tax", "site_name": "Property Tax Partners"},
+    # Adjacent lane sites: these disclose a referral fee on-site and feed the
+    # non-accounting lane, so they only appear in an adjacent-lane proposal.
+    "wills-probate": {"specialism": "wills, probate and estate planning",
+                      "site_name": "Wills and probate"},
+    "divorce-finances": {"specialism": "divorce and financial settlement",
+                         "site_name": "Divorce finances"},
 }
 
 
@@ -101,14 +124,43 @@ GREY_BAR = "#c9cdd3"
 GREY_MID = "#8a9099"
 INKC = "#2b2e34"
 
-# Historical grading used an internal value scale (lead_value_scores.tier).
-# Display maps it to the published case-type tiers until case_tier backfill
-# exists; the mapping is footnoted in the document's methodology note.
-DISPLAY_TIER = {"very_high": "advisory", "high": "advisory", "medium": "standard", "low": "unsold"}
-DTIER_ORDER = ["advisory", "standard", "unsold"]
-DTIER_LABEL = {"advisory": "Advisory", "standard": "Standard", "unsold": "Not sold"}
-DTIER_COLOR = {"advisory": ACCENT, "standard": "#9aa1a9", "unsold": "#d2d6db"}
-TOP_INTERNAL = {"very_high", "high"}  # maps to the Advisory display tier
+# Published case-type tiers (docs/CLASSIFY.md). Every lead is graded against the
+# rubric and the grade is stored on the lead, so nothing here is derived from the
+# internal value score: the rubric forbids pricing or grading on estimated value,
+# and this document must not imply otherwise.
+DTIER_ORDER = ["advisory", "standard", "essential"]
+DTIER_LABEL = {"advisory": "Advisory", "standard": "Standard", "essential": "Essential"}
+DTIER_COLOR = {"advisory": ACCENT, "standard": "#9aa1a9", "essential": "#d2d6db"}
+
+# Case-type tags to display labels. Unlisted tags fall back to a de-slugged form.
+CASE_TYPE_LABEL = {
+    "incorporation": "Incorporation",
+    "incorporation_admin": "Company formation admin",
+    "ownership_restructuring": "Ownership restructuring",
+    "multi_entity_portfolio": "Multi-property or multi-entity portfolio",
+    "cgt_planning": "Capital gains planning",
+    "cgt_computation": "Capital gains computation",
+    "sdlt": "Stamp duty",
+    "non_resident": "Non-resident or expat",
+    "historic_records_reconstruction": "Disclosures and historic records",
+    "charity_formation": "Charity formation",
+    "capital_allowances": "Capital allowances",
+    "llp_setup": "Partnership formation",
+    "self_assessment_complex": "Self assessment with complexity",
+    "sme_accounts": "Company accounts and filings",
+    "compliance_plus_advice": "Compliance with an advice question",
+    "basic_return": "Straightforward return",
+    "basic_compliance": "Basic compliance question",
+    "form_request": "Form or document request",
+    "too_vague": "Too vague to place (graded down)",
+    "other_tax_query": "Other tax query",
+    "other_query": "Outside scope",
+    "not_an_enquiry": "Not a client enquiry",
+}
+
+
+def case_type_label(tag):
+    return CASE_TYPE_LABEL.get(tag) or (tag or "unclassified").replace("_", " ").capitalize()
 
 
 def env(*names):
@@ -243,19 +295,15 @@ def build_pricing(lane, overrides):
             lo, hi = t["batch_price_range"]
             price_txt = (f"£{lo} to £{hi} per monthly batch "
                          f"(about £{t['price_per_lead_equiv']} per lead)")
-            lc_txt = "n/a (sold as seen)"
             ex = t.get("eligibility", "")
         else:
             price_txt, _ = price_cell(t)
-            lc = t.get("decay", {}).get("last_call_price")
-            lc_txt = f"£{lc}" if lc else "n/a"
             ex = ", ".join(t.get("examples", [])) or t.get("profession_lane", "")
         vol = t.get("typical_monthly_volume")
         rows.append(
             f'<tr><td class="tier tier-{t["id"]}">{t["label"]}</td>'
             f"<td>{ex}</td>"
             f'<td class="num">{price_txt}</td>'
-            f'<td class="num">{lc_txt}</td>'
             f'<td class="num">{f"~{vol}" if vol else "n/a"}</td></tr>')
 
         if not t.get("batch"):  # per-lead tiers become pricing cards; raw is prose
@@ -266,10 +314,6 @@ def build_pricing(lane, overrides):
             lis = [f"<li>{', '.join(t['examples'][:3])}</li>"] if t.get("examples") else []
             if t.get("profession_lane"):
                 lis.append(f"<li>Non-competing professions only ({t['profession_lane']})</li>")
-            lc = t.get("decay", {}).get("last_call_price")
-            if lc:
-                lis.append(f"<li>Unclaimed after {t['decay']['after_hours']} hours: "
-                           f"last-call £{lc}</li>")
             if t.get("decay"):  # accounting lanes carry the exclusive option
                 lis.append(f"<li>Exclusive claim: £{shown * cfg['exclusive_multiplier']}{mark} "
                            "(locks the lead to your firm, includes the credit protection)</li>")
@@ -292,9 +336,10 @@ def build_pricing(lane, overrides):
             "times its current price, which locks the lead to the claiming firm; once another "
             "firm has claimed, only shared slots remain. Credits apply to exclusive claims only.")
         decay_bits.append(
-            f"Any lead fully unclaimed after {decay['after_hours']} hours is re-offered at its "
-            f"last-call price; after {decay['cascade_after_hours']} hours it cascades to the "
-            "adjacent professional lane or the raw batch.")
+            "A lead holds its price for as long as it is unclaimed; there is no discount for "
+            f"waiting. After {decay['cascade_after_hours']} hours with no claim it leaves the "
+            "accounting lane and is offered to the adjacent professional lane, or becomes "
+            "eligible for the raw batch if it was never verified.")
     if raw:
         lo, hi = raw["batch_price_range"]
         decay_bits.append(
@@ -334,16 +379,18 @@ def main():
         sys.exit(f"no leads for sources {sources}")
     present = sorted({l.get("source") or "unknown" for l in leads})
     multi = len(present) > 1
+    # Only the published classification is read. The internal value score is not
+    # pulled at all, so it cannot leak into anything this document says.
     scores = {s["lead_id"]: s for s in get(url, key,
-              "lead_value_scores?select=lead_id,tier,est_value_gbp,intent,channel,rationale&limit=5000")}
-    for l in leads:  # local scores fill gaps; table rows win
-        p = l["id"][:8]
-        if l["id"] not in scores and p in SCORE_OVERRIDES:
-            t, v, i, w, ch, cf, ra = SCORE_OVERRIDES[p]
-            scores[l["id"]] = {"lead_id": l["id"], "tier": t, "est_value_gbp": v,
-                               "intent": i, "channel": ch, "rationale": ra}
-    print(f"pulled {len(leads)} leads (sources: {', '.join(present)}), {len(scores)} scores "
-          f"({sum(1 for l in leads if l['id'] in scores)} matched)")
+              "lead_value_scores?select=lead_id,case_tier,case_type,intent_line"
+              "&case_tier=not.is.null&limit=5000")}
+    matched = sum(1 for l in leads if l["id"] in scores)
+    print(f"pulled {len(leads)} leads (sources: {', '.join(present)}), {matched} graded")
+    ungraded = [l["id"][:8] for l in leads if l["id"] not in scores]
+    if ungraded:
+        sys.exit(f"{len(ungraded)} leads have no case-type grade: {', '.join(ungraded[:10])}"
+                 f"{'...' if len(ungraded) > 10 else ''}\n"
+                 "Grade them against docs/CLASSIFY.md and store case_tier before building.")
 
     # scope wording for the lede
     if multi or sources == ["*"]:
@@ -429,13 +476,11 @@ def main():
 
     scored = [(l, scores[l["id"]]) for l in leads if l["id"] in scores]
     if not scored:
-        sys.exit("no scored leads; nothing to analyse")
-    vtiers = Counter(s["tier"] for _, s in scored)
+        sys.exit("no graded leads; nothing to analyse")
+    tiers = Counter(s["case_tier"] for _, s in scored)
     n_scored = len(scored)
-    total_val = sum(s["est_value_gbp"] or 0 for _, s in scored) or 1
-    top_count = sum(vtiers[t] for t in TOP_INTERNAL)
-    top_val = sum((s["est_value_gbp"] or 0) for _, s in scored if s["tier"] in TOP_INTERNAL)
-    intents = Counter(s["intent"] for _, s in scored if s["intent"] not in ("unknown", None))
+    top_count = tiers["advisory"]
+    case_types = Counter(s["case_type"] for _, s in scored if s.get("case_type"))
 
     # --- statistical analysis ---
     weeks, wc, partial = an.weekly_counts(leads, now)
@@ -453,56 +498,46 @@ def main():
     run_rate, rr_lo, rr_hi = an.bootstrap_runrate(leads, now)
     fc4 = mu[FIT_W:FIT_W + 4].sum()  # implied next-4-week volume on trend
 
-    vals = [(s["est_value_gbp"], s["tier"]) for _, s in scored if s["est_value_gbp"]]
-    v_sorted, top_share, top_k, gini = an.value_concentration([v for v, _ in vals])
-    med_val = statistics.median(v for v, _ in vals)
     dows, blocks = an.arrival_profile(leads)
     biz_hours = sum(1 for l in leads if 9 <= an.parse_ts(l["created_at"]).hour < 17
                     and an.parse_ts(l["created_at"]).weekday() < 5)
     weekday_share = sum(dows[:5]) / len(leads)
 
-    # display-tier mix by month (scored leads)
+    # tier mix by month
     tier_by_month = defaultdict(Counter)
     for l, s in scored:
-        tier_by_month[l["created_at"][:7]][DISPLAY_TIER[s["tier"]]] += 1
+        tier_by_month[l["created_at"][:7]][s["case_tier"]] += 1
 
-    # intent x tier table
-    intent_rows = []
-    for intent, _ in intents.most_common(8):
-        grp = [(s["est_value_gbp"] or 0, s["tier"]) for _, s in scored if s["intent"] == intent]
-        n = len(grp)
-        topn = sum(1 for _, t in grp if t in TOP_INTERNAL)
-        medv = statistics.median(v for v, _ in grp if v) if any(v for v, _ in grp) else 0
-        label = {"structure": "Ownership structuring", "cgt": "Capital gains tax",
-                 "incorporation": "Incorporation", "compliance": "Compliance / returns",
-                 "sdlt": "Stamp duty land tax", "nrl_expat": "Non-resident / expat",
-                 "vat": "VAT", "other": "Other advisory"}.get(intent, intent)
-        intent_rows.append(
-            f"<tr><td>{label}</td><td class='num'>{n}</td>"
-            f"<td class='num'>{topn} ({topn/n:.0%})</td>"
-            f"<td class='num'>£{medv:,.0f}</td></tr>")
+    # case-type table: what the flow actually contains, checkable against the rubric
+    ct_rows = []
+    for ct, n in case_types.most_common(12):
+        grp = [s["case_tier"] for _, s in scored if s.get("case_type") == ct]
+        by_tier = Counter(grp)
+        split = ", ".join(f"{by_tier[t]} {DTIER_LABEL[t]}" for t in DTIER_ORDER if by_tier[t])
+        ct_rows.append(
+            f"<tr><td>{case_type_label(ct)}</td><td class='num'>{n}</td>"
+            f"<td class='num'>{n/n_scored:.0%}</td><td>{split}</td></tr>")
 
     # leads-by-source breakdown (multi-source runs only)
     source_rows = []
     if multi:
-        for src in present:
-            grp = [(l, s) for l, s in scored if (l.get("source") or "unknown") == src]
+        for src in sorted(present, key=lambda s: -sum(
+                1 for l in leads if (l.get("source") or "unknown") == s)):
+            grp = [s for l, s in scored if (l.get("source") or "unknown") == src]
             n_src = sum(1 for l in leads if (l.get("source") or "unknown") == src)
-            adv = sum(1 for _, s in grp if s["tier"] in TOP_INTERNAL)
-            gvals = [s["est_value_gbp"] for _, s in grp if s["est_value_gbp"]]
-            medv = statistics.median(gvals) if gvals else 0
+            by_tier = Counter(s["case_tier"] for s in grp)
             meta = source_meta(src)
             sp = meta["specialism"]
             label = meta.get("site_name", sp[0].upper() + sp[1:])
             source_rows.append(
                 f"<tr><td>{label}</td><td class='num'>{n_src}</td>"
-                f"<td class='num'>{adv}" + (f" ({adv/len(grp):.0%})" if grp else "") + "</td>"
-                f"<td class='num'>£{medv:,.0f}</td></tr>")
+                + "".join(f"<td class='num'>{by_tier[t]}</td>" for t in DTIER_ORDER)
+                + "</tr>")
 
-    # message substance by display tier
+    # message substance by tier
     msg_by_tier = defaultdict(list)
     for l, s in scored:
-        msg_by_tier[DISPLAY_TIER[s["tier"]]].append(len((l.get("message") or "").strip()))
+        msg_by_tier[s["case_tier"]].append(len((l.get("message") or "").strip()))
     detailed = sum(1 for l in leads if len((l.get("message") or "").strip()) >= 120)
 
     # --- charts ---
@@ -555,23 +590,30 @@ def main():
         bottoms += h
     for x, v in enumerate(bottoms):
         a1.annotate(f"{v:.0f}", (x, v), ha="center", va="bottom", fontsize=7.5, color=GREY_MID)
-    a1.legend(frameon=False, fontsize=7, ncol=2, loc="upper left", handlelength=1, handleheight=1)
-    a1.set_title("ASSESSED LEADS BY TIER AND MONTH", loc="left")
+    a1.legend(frameon=False, fontsize=7, ncol=3, loc="upper left", handlelength=1, handleheight=1)
+    a1.set_title("GRADED LEADS BY TIER AND MONTH", loc="left")
     a1.margins(y=0.3)
     style_ax(a1)
     a1.tick_params(axis="x", labelsize=7.5)
 
-    xi2 = np.arange(len(v_sorted))
-    a2.vlines(xi2, 0, v_sorted, color=[DTIER_COLOR[DISPLAY_TIER[t]] for v, t in
-              sorted(vals, key=lambda p: -p[0])], lw=2.2)
-    a2.axhline(med_val, color=GREY_MID, lw=0.8, ls=(0, (2, 2)))
-    a2.annotate(f"median £{med_val:,.0f}", (len(v_sorted) * 0.99, med_val), ha="right",
-                va="bottom", fontsize=7.5, color=GREY_MID)
-    a2.set_yscale("log")
-    a2.set_yticks([100, 500, 1000, 5000, 10000])
-    a2.set_yticklabels(["£100", "£500", "£1k", "£5k", "£10k"], fontsize=7.5)
-    a2.set_title("ESTIMATED FIRST-YEAR ENGAGEMENT VALUE PER LEAD, RANKED", loc="left")
+    # Right: the case types the flow actually contains, coloured by the tier each
+    # one grades to. This is the rubric applied to real enquiries, not a value estimate.
+    top_ct = case_types.most_common(10)[::-1]
+    ct_labels = [case_type_label(c) for c, _ in top_ct]
+    ct_counts = [n for _, n in top_ct]
+    ct_colors = [DTIER_COLOR[Counter(s["case_tier"] for _, s in scored
+                                     if s.get("case_type") == c).most_common(1)[0][0]]
+                 for c, _ in top_ct]
+    y = np.arange(len(top_ct))
+    a2.barh(y, ct_counts, color=ct_colors, height=0.62)
+    a2.set_yticks(y)
+    a2.set_yticklabels(ct_labels, fontsize=7.5)
+    for yy, v in zip(y, ct_counts):
+        a2.annotate(str(v), (v, yy), ha="left", va="center", fontsize=7.5,
+                    color=GREY_MID, xytext=(3, 0), textcoords="offset points")
+    a2.set_title("CASE TYPES IN THE FLOW, COLOURED BY TIER", loc="left")
     a2.set_xticks([])
+    a2.margins(x=0.12)
     for side in ("top", "right", "bottom"):
         a2.spines[side].set_visible(False)
     a2.spines["left"].set_color("#dfe2e6")
@@ -609,7 +651,7 @@ def main():
         if pid not in OVERRIDES:
             review[pid] = msg
         s = scores.get(l["id"])
-        dtier = DISPLAY_TIER[s["tier"]] if s else "unscored"
+        dtier = s["case_tier"] if s else "unscored"
         month = an.parse_ts(l["created_at"]).strftime("%#d %b, %H:%M")
         rec = l["id"] in recovered
         name_cell = ("[Populated]" if (l.get("full_name") or "").strip()
@@ -631,7 +673,8 @@ def main():
             f'<td>{name_cell}</td>'
             f'<td>{contact}</td>'
             f'<td>{role_map.get(l.get("role"), l.get("role") or "-")}</td>'
-            f'<td class="tier tier-{dtier}">{DTIER_LABEL.get(dtier, "Unscored")}</td>'
+            f'<td class="tier tier-{dtier}">{DTIER_LABEL.get(dtier, "Ungraded")}</td>'
+            f'<td>{case_type_label(s.get("case_type")) if s else "-"}</td>'
             f'<td>{msg}</td></tr>')
 
     os.makedirs(OUT, exist_ok=True)
@@ -653,17 +696,22 @@ def main():
         f"of {rr_lo} to {rr_hi} on a typical 30-day window at the current rate. On the fitted "
         f"trend the next four weeks imply roughly {fc4:.0f} leads, and with a short history the "
         f"interval band should carry more weight than any point estimate.")
+    top_ct_label = case_type_label(case_types.most_common(1)[0][0]) if case_types else "n/a"
+    top_ct_n = case_types.most_common(1)[0][1] if case_types else 0
     quality_commentary = (
-        f"Of the {n_scored} assessed leads, {top_count} ({pct(top_count)}) map to the Advisory "
-        f"tier, and those leads carry {top_val / total_val:.0%} of total estimated engagement "
-        f"value. Value is concentrated the way advisory work usually is: the top {top_k} leads "
-        f"(20% by count) account for {top_share:.0%} of estimated value (Gini {gini:.2f}). "
-        f"The median assessed lead is worth an estimated £{med_val:,.0f} in first-year fees. "
-        f"Message substance tracks tier: median message length is "
-        f"{statistics.median(msg_by_tier.get('advisory', [0])):.0f} "
-        f"characters in the Advisory tier against "
-        f"{statistics.median(msg_by_tier.get('unsold', [0])):.0f} among enquiries graded below "
-        f"the sellable line, and "
+        f"All {n_scored} leads are graded against the published rubric on the work the enquiry "
+        f"describes. {top_count} ({pct(top_count)}) grade to Advisory, {tiers['standard']} "
+        f"({pct(tiers['standard'])}) to Standard and {tiers['essential']} "
+        f"({pct(tiers['essential'])}) to Essential. The largest single case type is "
+        f"{top_ct_label.lower()} at {top_ct_n} enquiries. Note the mix is more advisory-weighted "
+        f"than the typical monthly volumes on the tier card, which are portfolio-wide planning "
+        f"figures: these sites publish structural and planning guidance, so they attract that "
+        f"kind of enquiry. Grading is on case type only and never on what we guess a client "
+        f"might be worth, and anything that sits between two tiers is graded down, which is why "
+        f"{tiers['essential']} enquiries carry the Essential grade rather than a higher one. "
+        f"Message substance tracks the grade: median message length is "
+        f"{statistics.median(msg_by_tier.get('advisory', [0])):.0f} characters in Advisory "
+        f"against {statistics.median(msg_by_tier.get('essential', [0])):.0f} in Essential, and "
         f"{detailed} of {len(leads)} enquiries arrive with a detailed written brief.")
     timing_commentary = (
         f"{weekday_share:.0%} of enquiries arrive Monday to Friday and {biz_hours} of {len(leads)} "
@@ -690,13 +738,13 @@ def main():
         data_pulled_date=PROSPECT["proposal_date"],
         total_leads=len(leads), run_rate=f"{run_rate}",
         run_rate_ci=f"{rr_lo}–{rr_hi}",
-        median_value=f"{med_val:,.0f}",
+        advisory_share=f"{top_count / n_scored:.0%}",
         n_weeks=len(wc), growth_pct=f"{growth:+.0%}",
         chart_flow=chart_flow, chart_quality=chart_quality, chart_timing=chart_timing,
         monthly_series=monthly_str,
         trend_commentary=trend_commentary, quality_commentary=quality_commentary,
         timing_commentary=timing_commentary,
-        intent_rows="\n    ".join(intent_rows),
+        case_type_rows="\n    ".join(ct_rows),
         source_rows="\n    ".join(source_rows),
         sample_n=len(sample), sample_rows="\n    ".join(rows),
         sample_heading="Complete lead ledger" if full_ledger else "Sample of recent leads",

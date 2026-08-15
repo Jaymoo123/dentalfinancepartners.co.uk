@@ -59,7 +59,6 @@
   .tier-essential { color: var(--ink-soft); }
   .tier-adjacent { color: var(--ink-soft); }
   .tier-raw { color: var(--muted); }
-  .tier-unsold { color: var(--muted); }
   .tier-unscored { color: var(--muted); }
   tr.nurture td:first-child { color: var(--accent-dark); font-weight: 500; white-space: nowrap; }
   td .band { display: block; color: var(--muted); font-size: 9px; margin-top: 1px; }
@@ -123,7 +122,7 @@
     <div class="kpi"><div class="num">$total_leads</div><div class="lbl">Leads to date</div></div>
     <div class="kpi"><div class="num">$run_rate</div><div class="lbl">Trailing 30-day volume<br>(90% CI $run_rate_ci)</div></div>
     <div class="kpi"><div class="num">$growth_pct<small> /wk</small></div><div class="lbl">Fitted weekly trend, recent 8 weeks</div></div>
-    <div class="kpi"><div class="num">£$median_value</div><div class="lbl">Median est. first-year value per assessed lead</div></div>
+    <div class="kpi"><div class="num">$advisory_share</div><div class="lbl">Graded Advisory under the published rubric</div></div>
   </div>
 
   <figure>
@@ -133,26 +132,26 @@
 
   <p>$trend_commentary</p>
 
-  <h2><span class="no">SECTION __</span>Quality and value of the flow</h2>
+  <h2><span class="no">SECTION __</span>What the flow contains</h2>
   <hr class="rule">
-  <p>Every lead is individually assessed (enquiry intent and an estimated first-year engagement value based on typical fees for the work described). The estimates are good-faith sizing, not guarantees; the distribution and its stability over time are the point.</p>
+  <p>Every lead is graded against the published rubric in the next section, on the type of work the enquiry describes, in the enquirer's own words. The grade is recorded against the lead when it is graded and travels with it to the alert, the delivery and the invoice line, so any lead you receive can be checked against the published list for its tier. Nothing below is derived from an estimate of what a client might be worth: the rubric does not price that way, and neither does this document.</p>
 
   <figure>
-    <img src="data:image/png;base64,$chart_quality" alt="Tier composition by month and ranked engagement values">
-    <figcaption><span class="fno">Figure 2.</span> Left: assessed leads by tier and month. Right: each assessed lead's estimated first-year engagement value, ranked, coloured by tier (log scale).</figcaption>
+    <img src="data:image/png;base64,$chart_quality" alt="Tier composition by month and the case types present in the flow">
+    <figcaption><span class="fno">Figure 2.</span> Left: graded leads by tier and month. Right: the case types the flow actually contains, each coloured by the tier it grades to.</figcaption>
   </figure>
 
   <p>$quality_commentary</p>
 
   <table>
-    <tr><th>Enquiry intent</th><th class="num">Leads</th><th class="num">Advisory tier</th><th class="num">Median est. value</th></tr>
-    $intent_rows
+    <tr><th>Case type</th><th class="num">Leads</th><th class="num">Share</th><th>Grades to</th></tr>
+    $case_type_rows
   </table>
 
 <!-- srcbreak:start -->
   <h3>The flow by source site</h3>
   <table>
-    <tr><th>Source site</th><th class="num">Leads</th><th class="num">Advisory tier</th><th class="num">Median est. value</th></tr>
+    <tr><th>Source site</th><th class="num">Leads</th><th class="num">Advisory</th><th class="num">Standard</th><th class="num">Essential</th></tr>
     $source_rows
   </table>
 <!-- srcbreak:end -->
@@ -185,7 +184,7 @@
   $philosophy_html
   <p>The published case-type card, the same for every partner firm:</p>
   <table>
-    <tr><th>Tier</th><th>Typical case types</th><th class="num">Price per claimed lead</th><th class="num">Last-call price</th><th class="num">Typical monthly volume</th></tr>
+    <tr><th>Tier</th><th>Typical case types</th><th class="num">Price per claimed lead</th><th class="num">Typical monthly volume</th></tr>
     $tier_rows
   </table>
   $override_note
@@ -194,7 +193,7 @@
   <hr class="rule">
   <p>$sample_intro, exactly as they arrived, with personal data redacted. Where the enquirer gave their name it is shown as [Populated]; the contact details column shows which channels each lead carries. Identifying details inside messages are replaced with [NAME], [EMAIL], [PHONE], [COMPANY] or [ADDRESS]. Unredacted versions are shared on execution of the data sharing agreement.$nurture_sample_note</p>
   <table>
-    <tr><th>Received</th><th>Name</th><th>Contact details</th><th>Role (self-selected)</th><th>Tier</th><th>Message (redacted)</th></tr>
+    <tr><th>Received</th><th>Name</th><th>Contact details</th><th>Role (self-selected)</th><th>Tier</th><th>Case type</th><th>Message (redacted)</th></tr>
     $sample_rows
   </table>
 
@@ -208,7 +207,11 @@
 
   <p>$decay_note</p>
 
-  <p><strong>How offers work.</strong> As each qualifying lead arrives you receive a redacted alert: tier, case type, a one-line summary of what the enquirer wants, rough area where given, and the fixed price, with a one-click claim link. On claim the lead is delivered in full to your nominated inbox in real time. Leads you do not claim are never charged. Prices are as published; the card is reviewed periodically and any change is notified in advance.</p>
+  <p><strong>How offers work.</strong> As each qualifying lead arrives you receive a redacted alert: tier, case type, rough area where given, the fixed price, and <strong>the enquiry in the enquirer's own words</strong>, with names, phone numbers, email addresses, postcodes, web addresses and company names taken out. You read what they actually wrote and decide from that. On claim the lead is delivered in full to your nominated inbox in real time, with the unredacted enquiry and the enquirer's contact details. Nothing identifying reaches you before that point, and leads you do not claim are never charged. Prices are as published; the card is reviewed periodically and any change is notified in advance, never retrospectively.</p>
+
+  <p><strong>The price does not drop.</strong> A lead holds its price for as long as nobody has claimed it, so there is nothing to gain by waiting. An enquiry that no firm takes leaves the accountancy lane after 48 hours.</p>
+
+  <p><strong>Who else may receive the same enquiry.</strong> Stated plainly, because it is what you are buying. Up to three accountancy firms may claim the same lead, first come first served, and the price is fixed at the first claim so no firm gets it cheaper than you. You can instead claim exclusively, which locks the lead to you alone and carries the credit protection. Separately, the same enquiry may be offered to up to three firms in non-competing professions, such as mortgage and finance brokers, independent financial advisers and solicitors: that lane is capped on its own account, never consumes one of your slots, and is unaffected by an exclusive claim. Those limits are fixed in our configuration and in the data sharing agreement, and enquirers are told about them before they submit.</p>
 
   <p><strong>Qualifying Lead.</strong> $qualifying_bullet Prices exclude VAT; none is currently chargeable as the supplier is not VAT registered.</p>
 
@@ -230,7 +233,7 @@
     <li><strong>Nominate an inbox.</strong> You give us a single delivery email address. Redacted alerts arrive there as leads qualify; each lead you claim is released to the same inbox in full, in real time.</li>
     <li><strong>Consent and data protection are handled at source.</strong> Every lead form carries an acknowledgement that details will be shared with the receiving firm. Data is shared controller-to-controller under UK GDPR and the Data Protection Act 2018 as amended by the Data (Use and Access) Act 2025. Once a lead lands in your inbox, you hold it as an independent controller.</li>
     <li><strong>Tiering on delivery</strong>: each lead arrives with its tier and case type, matching the redacted alert you claimed.</li>
-    <li><strong>Monthly billing in arrears.</strong> Claimed leads are invoiced on the 1st of each month, itemised against the previous month's deliveries, and collected by Direct Debit. Payment is due within $payment_days days; credits from the section above are netted off the same invoice.</li>
+    <li><strong>Monthly billing in arrears.</strong> Claimed leads are invoiced on the 1st of each month, itemised against the previous month's deliveries. Payment is by bank transfer within $payment_days days of the invoice date; credits from the section above are netted off the same invoice. Nothing is payable on joining.</li>
     <li><strong>No lock-in.</strong> Rolling arrangement, terminable by either side on short written notice.</li>
   </ol>
 
@@ -238,10 +241,10 @@
   <hr class="rule">
   <p>The suggested route is a short trial phase on the published card, allowing lead quality to be validated against your own conversion data, followed by execution of our standard Lead Generation and Data Sharing Agreement, which sets out in full the terms summarised here together with the data protection framework. The agreement is available for review on request.</p>
 
-  <p class="method"><strong>Methodology.</strong> Arrival trend: Poisson regression (log-linear) fitted to the most recent eight complete calendar weeks, excluding the launch ramp so the trend is not overstated; the shaded band in Figure 1 is a 90% interval on the trend mean via the delta method. Trailing 30-day interval: nonparametric bootstrap of daily arrival counts, 5,000 resamples. Engagement values: per-lead good-faith estimates of first-year fees based on the work described in each enquiry; concentration measured as the estimated value share of the top quintile of assessed leads. Tier display: historical leads were graded on an internal value scale; for this document those grades are mapped to the published case-type tiers (the top two internal grades shown as Advisory, the middle grade as Standard, the lowest not sold) until case-type grading is backfilled. The observed series is short ($n_weeks complete weeks), so interval estimates are reported alongside every point estimate.</p>
+  <p class="method"><strong>Methodology.</strong> Arrival trend: Poisson regression (log-linear) fitted to the most recent eight complete calendar weeks, excluding the launch ramp so the trend is not overstated; the shaded band in Figure 1 is a 90% interval on the trend mean via the delta method. Trailing 30-day interval: nonparametric bootstrap of daily arrival counts, 5,000 resamples. Tiers: every lead in this document has been graded individually against the published rubric on the work its enquiry describes, and the grade is stored against the lead. Enquiries that sit between two tiers are graded to the lower one, so the tier mix shown understates rather than overstates the flow. No tier in this document is derived from an estimated client value, and no estimated value is shown anywhere in it. The observed series is short ($n_weeks complete weeks), so interval estimates are reported alongside every point estimate.</p>
 
   <div class="footer">
-    The $brand_name is operated by $legal_entity. This proposal is indicative and not an offer capable of acceptance; terms are as set out in the executed Lead Generation and Data Sharing Agreement. Lead tier assessments and engagement values are good-faith estimates of engagement potential, not guarantees of conversion or value.
+    The $brand_name is operated by $legal_entity. This proposal is indicative and not an offer capable of acceptance; terms are as set out in the executed Lead Generation and Data Sharing Agreement. Tier grades describe the type of work an enquiry asks for; they are not a prediction that the enquirer will engage, or of what any engagement will be worth. Volumes shown are observed history, not a commitment to future volume.
   </div>
 
 </div>

@@ -12,12 +12,11 @@
 #  1. INVOICE HEADER  (change every month)
 # ------------------------------------------------------------
 
-invoice_number = "DJH-002"      # Client-specific reference. Bump each month for this
-                                # client: DJH-001, DJH-002, DJH-003 ... For a different
-                                # client use their own prefix, e.g. ABC-001.
-invoice_date   = "2026-08-03"   # Format is YYYY-MM-DD (year-month-day).
+invoice_number = "ABC-001"      # Client-specific reference. Use the firm's own prefix and
+                                # bump it each month: ABC-001, ABC-002, ABC-003 ...
+invoice_date   = "2026-08-01"   # Format is YYYY-MM-DD (year-month-day).
                                 # The "Due" date is worked out for you: invoice date + 14 days.
-billing_period = "July 2026"    # The period the work covers (raised 1 August for July's leads).
+billing_period = "July 2026"    # The period the work covers (raised 1 August for July's claims).
                                 # Optional label shown on the invoice. Set to "" to hide it.
 
 
@@ -26,11 +25,11 @@ billing_period = "July 2026"    # The period the work covers (raised 1 August fo
 # ------------------------------------------------------------
 
 [client]
-company = "DJH Accountants and Business Advisers"
-contact = "Michael Winniczuk"
-title   = "Head of Growth"
-address = ["Festival Way", "Stoke-on-Trent", "ST1 5SQ"]   # one item per line, inside quotes
-email   = "Michael.Winniczuk@djh.co.uk"
+company = "Example Accountancy Limited"
+contact = "A N Other"
+title   = "Director"
+address = ["1 Example Street", "Exampleton", "EX1 2YZ"]   # one item per line, inside quotes
+email   = "billing@example.invalid"
 
 
 # ------------------------------------------------------------
