@@ -68,8 +68,8 @@ type V = Record<string, number | string | boolean>;
 // 1. Registry contract (TL-01)
 // ============================================================
 describe("registry contract (TL-01)", () => {
-  it("total fleet = 16 tools (5 bespoke + 11 generic)", () => {
-    expect(TOOLS.length).toBe(16);
+  it("total fleet = 23 tools (5 bespoke + 18 generic)", () => {
+    expect(TOOLS.length).toBe(23);
   });
 
   it("5 bespoke tools", () => {
@@ -77,13 +77,13 @@ describe("registry contract (TL-01)", () => {
     expect(bespoke.length).toBe(5);
   });
 
-  it("11 generic tools", () => {
+  it("18 generic tools", () => {
     const generic = genericTools();
-    expect(generic.length).toBe(11);
+    expect(generic.length).toBe(18);
   });
 
-  it("allTools returns 16 tools", () => {
-    expect(allTools().length).toBe(16);
+  it("allTools returns 23 tools", () => {
+    expect(allTools().length).toBe(23);
   });
 
   it("getGenericTool finds by slug", () => {
