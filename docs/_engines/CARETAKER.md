@@ -56,6 +56,7 @@ workflow and env drift; L3 audits L0/L1/L2 monthly with reasoning.
 | `scripts/state_check.py` (8 lanes + rules) | L2 | money, exposure, env, schema, freshness, jobs, secrets, leads, pipeline coverage, canary | its heartbeat + red-run email |
 | `scripts/state_check_email.py` | L2 | deduped alarm delivery | red-run backstop |
 | `scripts/lead_capture_tripwire.py` (6-hourly) | L2 | bundle corruption + form-start-without-submit flatline | its heartbeat |
+| `optimisation_engine/discovery/competitor_watch.py` (weekly, `weekly_run.py` Step 1.6) | L2 | competitor sitemap diff -> `competitor_urls_seen`/`discovery_log`; free (no DFS spend on this path) | `scripts/competitor_watch_email.py` deduped digest |
 | nurture guardrails + autopause (`nurture-health.ts`, hourly in-app) | L1 | complaints, failed sends, bounces, stuck leads | state_check frozen-heartbeat rule |
 | `deploy-watch` cron + table | L1 | post-deploy metric gates | state_check overdue-gate rule |
 | Vercel built-ins (deploy-failure email, Error Anomaly, Observability Plus) | L0 | build failures, 5xx anomalies | caretaker |

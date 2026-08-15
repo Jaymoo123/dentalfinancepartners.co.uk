@@ -30,7 +30,7 @@ try:
 except ImportError:
     pass
 
-from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
+from optimisation_engine.clients.serp_provider import fetch_serp
 
 SUPABASE_ACCESS_TOKEN: str = os.getenv("SUPABASE_ACCESS_TOKEN", "")
 PROJECT_REF = "dhlxwmvmkrfnmcgjbntk"
@@ -83,6 +83,11 @@ EXCLUDE_DOMAINS = {
     "rcseng.ac.uk", "gdpuk.com", "dentalprotection.org", "the-dentist.co.uk",
     "quora.com", "reddit.com", "mumsnet.com", "moneyhelper.org.uk",
     "litrg.org.uk", "tax.org.uk", "icaew.com", "accaglobal.com",
+    # Gov subdomains + professional/practitioner publishers (reference works,
+    # not consumer SERP competitors) — 2026-08-15 v2 universe rebuild
+    "service.gov.uk", "publishing.service.gov.uk", "revenue.scot",
+    "croneri.co.uk", "tolley.co.uk", "lexisnexis.co.uk",
+    "accountingweb.co.uk", "taxadvisermagazine.com",
     # Own estate — must never appear as competitors
     "propertytaxpartners.co.uk",
     "hollowaydavies.co.uk",
@@ -100,6 +105,31 @@ def _load_discovery(site: str) -> tuple[Path, dict]:
     if not p.exists():
         raise FileNotFoundError(f"Discovery config missing: {p}")
     return p, json.loads(p.read_text(encoding="utf-8"))
+
+
+def fetch_head_queries(site: str, top_queries: int = 20, *, verbose: bool = True) -> list[str]:
+    """Top `top_queries` head queries for `site` by SUM(impressions), last 90d.
+
+    Extracted so other callers (e.g. competitor_watch.py's universe probe) can
+    reuse the exact same query logic instead of duplicating the SQL.
+    """
+    sql = f"""
+        SELECT query, SUM(impressions) AS imp
+        FROM gsc_query_data
+        WHERE site_key = '{site}'
+          AND date >= (CURRENT_DATE - INTERVAL '90 days')
+        GROUP BY query
+        ORDER BY imp DESC
+        LIMIT {top_queries}
+    """
+    rows = _mgmt_select(sql)
+    queries = [r["query"] for r in rows if r.get("query")]
+    if verbose:
+        print(f"Top {len(queries)} head queries for {site} (last 90d):")
+        for r in rows:
+            print(f"  {int(r['imp']):>6}  {r['query']}")
+        print()
+    return queries
 
 
 def main() -> int:
@@ -122,21 +152,7 @@ def main() -> int:
         exclude.add(own)
 
     # 1. Top head queries from GSC
-    sql = f"""
-        SELECT query, SUM(impressions) AS imp
-        FROM gsc_query_data
-        WHERE site_key = '{site}'
-          AND date >= (CURRENT_DATE - INTERVAL '90 days')
-        GROUP BY query
-        ORDER BY imp DESC
-        LIMIT {args.top_queries}
-    """
-    rows = _mgmt_select(sql)
-    queries = [r["query"] for r in rows if r.get("query")]
-    print(f"Top {len(queries)} head queries for {site} (last 90d):")
-    for r in rows:
-        print(f"  {int(r['imp']):>6}  {r['query']}")
-    print()
+    queries = fetch_head_queries(site, args.top_queries)
 
     if not queries:
         print("No GSC queries found — cannot derive competitors from SERP.")
@@ -146,7 +162,8 @@ def main() -> int:
     freq: Counter[str] = Counter()
     query_hits: dict[str, set[str]] = {}
     for q in queries:
-        results = fetch_organic_results(q, num=args.num, region="uk-en", site_key=site)
+        serp_result = fetch_serp(q, num=args.num, site_key=site)
+        results = serp_result["organic"]
         if not results:
             print(f"  [skip] no results for: {q!r}")
             continue
@@ -162,7 +179,8 @@ def main() -> int:
             seen_this_query.add(dom)
             freq[dom] += 1
             query_hits.setdefault(dom, set()).add(q)
-        print(f"  [{q!r}] -> {len(seen_this_query)} candidate domains")
+        print(f"  [{q!r}] -> {len(seen_this_query)} candidate domains "
+              f"(provider={serp_result['provider_used']})")
 
     if not freq:
         print("\nNo competitor domains derived (DDG returned nothing usable).")
