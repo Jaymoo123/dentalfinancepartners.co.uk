@@ -3326,7 +3326,7 @@ Lead with the statutory authority (LGFA 1992 + SI 1992/558). Specify jurisdictio
 
 ---
 
-## 31. Lease extension and enfranchisement — LRA 1967 + LRHUDA 1993 + LFRA 2024 architecture — MW1 extension (locked, 2026-05-26)
+## 31. Lease extension and enfranchisement — LRA 1967 + LRHUDA 1993 + LFRA 2024 architecture — MW1 extension (locked 2026-05-26; **RE-LOCKED 2026-08-15 with in-force table — the 05-26 version was drifting toward "reforms are live", which is false**)
 
 Closes F-101 from MW1 Stage 1b. Anchors lane A pick A8 (Archer UK case) + lane C picks C13 (lease extension vs freehold), C14 (surrender and regrant mechanics), C15 (lease variation and surrender). The HP file previously had no lease-extension section — this lock establishes the framework for the post-LFRA-2024 regime.
 
@@ -3345,18 +3345,31 @@ Closes F-101 from MW1 Stage 1b. Anchors lane A pick A8 (Archer UK case) + lane C
 - **Statute:** Leasehold Reform, Housing and Urban Development Act 1993 c. 28. Verified at https://www.legislation.gov.uk/ukpga/1993/28/contents on 2026-05-26.
 - **Two rights for qualifying flat-leaseholders:**
   - **Chapter I — Collective enfranchisement.** Group of qualifying tenants in a block buys the freehold. Sections: s.1 (right); s.13 (initial notice); s.32 (price determination + Sch 6 valuation formula). Requires at least 50% of qualifying tenants to participate — a coordination problem that often defeats the route in practice.
-  - **Chapter II — Individual lease extension.** Unilateral right; single qualifying tenant extends their lease against payment of a statutory premium. Sections: s.39 (right); s.42 (initial notice); s.56 (obligation to grant new lease). **Post-LFRA-2024:** term increases from existing-lease + 90 years (peppercorn) to fresh 990-year term (peppercorn).
+  - **Chapter II — Individual lease extension.** Unilateral right; single qualifying tenant extends their lease against payment of a statutory premium. Sections: s.39 (right); s.42 (initial notice); s.56 (obligation to grant new lease). **The CURRENT term is still existing-lease + 90 years at peppercorn.** LFRA 2024 legislates a fresh 990-year term but that provision is NOT commenced (see §31.3a) — an extension completed today is +90 years.
 
 ### 31.3 LFRA 2024 reform overlay
 
 - **Statute:** Leasehold and Freehold Reform Act 2024 c. 22 Part 2 "Leasehold enfranchisement and extension". Verified at https://www.legislation.gov.uk/ukpga/2024/22/contents on 2026-05-26.
-- **Four headline changes:**
+- **Four headline changes ON THE STATUTE BOOK** (in-force status per §31.3a — three of the four are NOT in force):
   1. **Abolishes the 2-year qualifying-ownership prerequisite.** A new buyer can extend or join an enfranchisement immediately on completion.
   2. **Extends LRHUDA 1993 Chapter II new-lease term** from existing-lease + 90 years to a fresh **990-year** term.
-  3. **Abolishes "marriage value"** — the historic valuation uplift triggered at the 80-year unexpired-term boundary. Materially reduces premiums on short-lease enfranchisements.
+  3. **Abolishes "marriage value"** — the historic valuation uplift triggered at the 80-year unexpired-term boundary. Would materially reduce premiums on short-lease enfranchisements once commenced.
   4. **Regulates deferment / capitalisation rates** — Secretary of State may set the statutory valuation rate; the post-Sportelli 5% rate is no longer the default unless re-confirmed.
-- **CRITICAL: commencement is phased.** Some Part 2 provisions are in force; some require secondary legislation and are not yet in force as of 2026-05-26. Stage 2 sub-agents MUST verify the in-force position on the write date against the gov.uk commencement-orders register. Pages written during the transition must distinguish: "pre-LFRA-2024 regime" / "current regime, post-commencement of provision X" / "future regime once provision Y commences".
+- **CRITICAL: commencement is phased.** Stage 2 sub-agents MUST verify the in-force position on the write date against the gov.uk commencement-orders register. Pages written during the transition must distinguish: "pre-LFRA-2024 regime" / "current regime, post-commencement of provision X" / "future regime once provision Y commences".
 - **Pre-LFRA-2024 valuation rules** continue to govern claims notified before the relevant commencement date. The "claim notified before" cut-off is the critical operative date for each set of provisions.
+
+### 31.3a LFRA 2024 in-force table — VERIFIED 2026-08-08 (BMV_FACTS.md, HomeOwners Alliance + Homehold cross-checked); RE-VERIFY after 23 Sep 2026 (valuation-rates consultation closes) and before any wave touching leasehold
+
+| Provision | Status as at Aug 2026 | Operative consequence for pages |
+|---|---|---|
+| 2-year ownership rule abolished | **IN FORCE** (Jan 2025) | A buyer can extend immediately on completion — safe to state as current law |
+| Right to Manage reforms | **IN FORCE** (Mar 2025) | RTM pages use the amended regime |
+| Marriage value abolition | **NOT IN FORCE — marriage value REMAINS PAYABLE** | Extending a sub-80-year lease today pays marriage value in full. Most 2026 web content asserts abolition; **it is wrong** — this is the correction-of-record opportunity (Wave 11 A16) |
+| 990-year term at peppercorn | **NOT IN FORCE** | Extensions completed today are +90 years (flats, Ch II). Never state 990 as current |
+| Prescribed deferment/capitalisation rates | **NOT IN FORCE** — needs secondary legislation; consultation closes **23 Sep 2026** | Post-Sportelli 5% remains the working deferment rate; new rates could move premiums EITHER way |
+| £250 ground rent cap | **DRAFT ONLY** (Commonhold and Leasehold Reform Bill, May 2026 King's Speech) | A Bill, not law. Never present as enacted |
+
+Context: freeholders' judicial review dismissed (High Court, Oct 2025) — the reforms survived challenge, but that did NOT commence them. Realistic commencement of the valuation provisions: **2027-28 at the earliest** (Homehold: late 2028 at the very earliest). Treat any specific commencement date found online as unreliable.
 
 ### 31.4 SDLT treatment
 
@@ -3372,8 +3385,8 @@ Both regimes operate three valuation components, discounted at the statutory def
 
 - **Term:** value of the freeholder's right to receive ground rent for the remaining unexpired term.
 - **Reversion:** deferred value of the freeholder's right to repossess on lease expiry.
-- **Marriage value (ABOLISHED post-LFRA-2024 commencement):** historic uplift triggered at the 80-year unexpired-term boundary.
-- **Hope value:** uplift achievable by combining the freehold with adjoining leases. ABOLISHED for collective enfranchisement post-LFRA-2024.
+- **Marriage value (STILL PAYABLE — abolition legislated by LFRA 2024 but NOT commenced, see §31.3a):** uplift triggered at the 80-year unexpired-term boundary. Live valuation component on every sub-80-year claim today.
+- **Hope value:** uplift achievable by combining the freehold with adjoining leases. LFRA 2024 abolishes it for collective enfranchisement — same commencement position as marriage value (NOT in force); verify on write date.
 
 LRA 1967 (houses) valuation: s.9.
 LRHUDA 1993 (flats — collective) valuation: Sch 6.
@@ -3400,14 +3413,16 @@ Leaseholder pays the freeholder's reasonable legal and valuation costs in additi
 - C14 `lease-extensions-in-the-uk-surrender-and-regrant` (FA 2003 Sch 17A para 9 mechanic)
 - C15 `lease-variation-and-lease-surrender` (voluntary / non-statutory deed-of-variation context)
 
-### 31.9 Do not write
+### 31.9 Do not write (REWRITTEN 2026-08-15 — the 05-26 list had the marriage-value and 990-year positions BACKWARDS; 8 leasehold pages would have shipped wrong)
 
-- "Marriage value still applies" (false post-LFRA-2024 commencement of the relevant provision — but verify which provisions are in force on write date).
-- "Lease extension requires 2 years of ownership" (false post-LFRA-2024 abolition of the qualifying period — but verify commencement).
-- "New lease term is 90 years" (false post-LFRA-2024; now 990 years for flats under LRHUDA 1993 — but verify commencement; existing claims notified pre-commencement use the old 90-year term).
+- "Marriage value has been abolished" / "no longer applies" (**FALSE — the abolition is on the statute book but NOT commenced; marriage value remains payable, §31.3a**). The safe formulation: "LFRA 2024 abolishes marriage value, but that provision is not yet in force — a claim made today still pays it."
+- "New lease term is 990 years" as current law (**FALSE — not commenced; extensions today are existing-lease + 90 years at peppercorn**).
+- "Lease extension requires 2 years of ownership" (false — the 2-year rule WAS abolished, in force Jan 2025; this one genuinely is current law).
+- "The £250 ground rent cap applies" (false — draft Bill only).
 - "Collective enfranchisement requires 100% participation" (false; 50%+ qualifying tenants required, not 100%).
 - "Statutory extension and freehold acquisition have the same SDLT treatment" (false; extension is surrender-and-regrant under Sch 17A para 9; collective enfranchisement uses the FA 2003 s.74 special calculation; house freehold uses standard SDLT).
-- "LFRA 2024 fully in force" (false at time of writing; phased commencement through 2026-2027).
+- "LFRA 2024 fully in force" (false; three of the four headline provisions are not commenced, §31.3a).
+- Any specific commencement date for the valuation provisions (unknowable; 2027-28 earliest, sourced dates online are unreliable).
 
 ### 31.10 Practical writing rule for sessions
 
