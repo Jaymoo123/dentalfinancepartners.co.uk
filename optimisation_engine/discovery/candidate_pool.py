@@ -340,12 +340,24 @@ def _page_age_days(content_dir: str, page_url: str) -> int | None:
     return (date.today() - page_date).days
 
 
+_GSC_JUNK = re.compile(r'(site:|-site:|inurl:|intitle:|filetype:|")')
+
+
+def _is_junk_gsc_query(q: str) -> bool:
+    """Search-operator queries (someone's research probes landing in our GSC)
+    are not demand: site:/quoted/boolean monsters, or absurd length."""
+    return bool(_GSC_JUNK.search(q)) or len(q) > 90
+
+
 def _ingest_gsc(site_key: str, content_dir: str) -> tuple[list[dict], dict]:
     results = triage(site_key)
     out: list[dict] = []
-    stats = {"immature_excluded": 0, "age_unknown": 0}
+    stats = {"immature_excluded": 0, "age_unknown": 0, "junk_queries": 0}
     for r in results:
         if r.get("class") not in ("WRONG_PAGE", "UNSERVED"):
+            continue
+        if _is_junk_gsc_query(r.get("query") or ""):
+            stats["junk_queries"] += 1
             continue
         page_url = r.get("page_url") or ""
         if page_url:
