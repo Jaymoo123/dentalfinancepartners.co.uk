@@ -15,6 +15,7 @@
     "@anthropic-ai/sdk": "^0.109.1",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-slot": "^1.2.4",
+    "@sentry/nextjs": "^10.70.0",
     "@vercel/speed-insights": "^2.0.0",
     "ai": "^6.0.198",
     "botid": "^1.5.11",
