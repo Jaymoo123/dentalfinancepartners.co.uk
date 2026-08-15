@@ -6,17 +6,27 @@ line with the reason, but only on exclusive claims (credits apply to exclusive
 claims only per the standard terms; a credit flag on a shared row is ignored
 with a warning).
 Renders one printable A4 invoice per firm to lead_engine/invoices/YYYY-MM/
-from templates/invoice.html, marks the rows invoiced with the invoice ref, and
-prints a [STUB] line for the GoCardless payment it would create. No payment is
-created and nothing is sent.
+from templates/invoice.html and marks the rows invoiced with the invoice ref.
+Invoices are payable by bank transfer within 14 days; there is no Direct Debit
+and the engine never touches a payment provider. Nothing is sent.
+
+Set BANK_DETAILS below before running for real: the script refuses to render an
+invoice that carries no payment instructions.
 """
 import argparse
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import tiers
+
+# Owner: fill this in before the first real invoice run. One line, printed on
+# every invoice under the payment instruction. Left empty deliberately so an
+# invoice can never go out asking for a transfer without saying where to.
+BANK_DETAILS = ""
+
+PAYMENT_DAYS = 14
 
 ROW = ('      <tr style="border-bottom: 1px solid #ddd;">'
        '<td style="padding: 5px 8px 5px 0;">{date}</td>'
@@ -37,7 +47,16 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("month", help="invoice period, YYYY-MM")
     p.add_argument("--dry-run", action="store_true", default=True, help="dry run (the only mode)")
+    p.add_argument("--allow-no-bank-details", action="store_true",
+                   help="render sample invoices without payment instructions (seed data only)")
     args = p.parse_args()
+
+    # An invoice that asks for a bank transfer without saying which account is
+    # worse than no invoice, so refuse rather than render a broken one.
+    if not BANK_DETAILS and not args.allow_no_bank_details:
+        sys.exit("BANK_DETAILS is empty in invoice_run.py. Set it to the account "
+                 "invoices should be paid into, or pass --allow-no-bank-details "
+                 "to render sample invoices without payment instructions.")
 
     deliveries = tiers.read_rows("deliveries.csv")
     leads = {l["id"]: l for l in tiers.read_rows("leads.csv")}
@@ -63,10 +82,15 @@ def main():
         rows, total = [], 0
         for d in sorted(by_firm[firm_id], key=lambda r: r["claimed_at"]):
             lead = leads[d["lead_id"]]
-            tier_label = tiers.tier_cfg(lead["tier"])["label"]
+            lane = tiers.lane_of(d)
+            # An adjacent claim is billed on the adjacent line, not the lead's accounting tier.
+            tier_label = tiers.tier_cfg("adjacent" if lane == tiers.ADJACENT else lead["tier"])["label"]
             amount = int(d["price_charged"])
             exclusive = d["exclusive"] == "true"
-            rows.append(line(d, tier_label, "Claimed lead (exclusive)" if exclusive else "Claimed lead (shared)", amount))
+            desc = ("Claimed lead (exclusive)" if exclusive
+                    else "Claimed lead (adjacent lane)" if lane == tiers.ADJACENT
+                    else "Claimed lead (shared)")
+            rows.append(line(d, tier_label, desc, amount))
             total += amount
             if d["credit"] == "true":
                 if not exclusive:
@@ -77,10 +101,13 @@ def main():
                 rows.append(line(d, tier_label, f"Credit: {d['credit_reason']}", -amount, credit=True))
                 total -= amount
         ref = f"ATL-{args.month}-{firm_id}"
+        issue = date.today()
         html = tiers.render("invoice.html", {
             "INVOICE_REF": ref,
             "PERIOD": args.month,
-            "ISSUE_DATE": date.today().isoformat(),
+            "ISSUE_DATE": issue.isoformat(),
+            "DUE_DATE": (issue + timedelta(days=PAYMENT_DAYS)).isoformat(),
+            "BANK_DETAILS": tiers.esc(BANK_DETAILS),
             "FIRM_NAME": tiers.esc(firm["firm_name"]),
             "CONTACT_NAME": tiers.esc(firm["contact_name"]),
             "LINE_ROWS": "\n".join(rows),
@@ -94,7 +121,8 @@ def main():
             d["invoice_ref"] = ref
         print(f"{ref}: {firm['firm_name']}, {len(by_firm[firm_id])} deliveries, total {tiers.gbp(total)} -> {path}")
         if total > 0:
-            print(f"[STUB] would create GoCardless payment of {tiers.gbp(total)} for firm {firm['firm_name']} ({firm_id})")
+            print(f"[STUB] would email {tiers.gbp(total)} invoice to {firm['firm_name']} ({firm_id}); "
+                  f"payable by bank transfer within {PAYMENT_DAYS} days")
         else:
             print(f"[STUB] no payment needed for {firm['firm_name']} ({firm_id}), net total {tiers.gbp(total)}")
 

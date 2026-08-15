@@ -1,21 +1,19 @@
 """decay.py [--now ISO]: age fully unclaimed leads per the decay rules (dry run).
 
-Thresholds and last-call prices come from each tier's decay block in
-config/tiers.json, never hardcoded. --now injects the clock for simulation.
+Thresholds come from each tier's decay block in config/tiers.json, never
+hardcoded. --now injects the clock for simulation.
+
+There is no last-call reprice (owner decision 2026-08-14). A lead holds its
+published price for as long as it is unclaimed. Decay is now a single step.
 
 Decay applies ONLY to leads with zero claims (owner rule 2026-08-12): a lead's
-price is fixed at its first claim, so a partially claimed lead never re-prices,
-last-calls or cascades; its remaining shared slots stay open at the fixed
-price until the cap.
+price is fixed at its first claim, so a partially claimed lead never cascades;
+its remaining shared slots stay open at the fixed price until the cap.
 
-For fully unclaimed leads, measured from last_ping_at (falling back to
-the lead timestamp if never pinged):
-- past cascade_after_hours: verified leads -> cascaded (offered to the
-  adjacent professions lane), unverified -> raw_batch.
-- past after_hours: render the last-call ping (reduced price, LAST CALL flag)
-  to lead_engine/outbox/ and set status last_call. Unverified leads are never
-  pinged individually (see docs/CLASSIFY.md), so they skip last call and wait
-  for the raw cascade.
+For fully unclaimed leads, measured from last_ping_at (falling back to the lead
+timestamp if never pinged), past cascade_after_hours: verified leads are
+cascaded (offered to the adjacent professions lane), unverified leads become
+raw_batch.
 """
 import argparse
 import sys
@@ -44,13 +42,15 @@ def main():
     changed = False
 
     for lead in leads:
-        if lead["status"] not in ("fresh", "last_call"):
+        if lead["status"] != "fresh":
             continue
         tier = tiers.tier_cfg(lead["tier"], cfg)
         decay = tier.get("decay")
         if not decay:
             continue
-        claimed = sum(1 for d in deliveries if d["lead_id"] == lead["id"])
+        # Decay is an accounting-lane concept: an adjacent claim must not stop the
+        # lead leaving the accounting lane when no accountant has taken it.
+        claimed = len(tiers.claims_in_lane(deliveries, lead["id"], tiers.ACCOUNTING))
         if claimed:
             # Price fixed at first claim: claimed leads never decay.
             continue
@@ -68,30 +68,6 @@ def main():
                 print(f"  {lead['id']} ({tier['label']}, {hours:.0f}h, unverified) -> raw_batch. "
                       f"Eligibility: {raw['eligibility']}. {raw['credits']}")
             changed = True
-        elif hours > decay["after_hours"] and lead["status"] == "fresh":
-            if lead["verified"] != "true":
-                print(f"  {lead['id']} ({hours:.0f}h, unverified): no last-call ping, awaiting raw cascade.")
-                continue
-            mapping = {
-                "TIER_LABEL": tier["label"],
-                "CASE_TYPE": lead["case_type"],
-                "AREA": lead["area"] or "Not stated",
-                "INTENT_LINE": lead["intent_line"],
-                "PRICE": tiers.gbp(decay["last_call_price"]),
-                "ORIGINAL_PRICE": tiers.gbp(tier["price"]),
-                "EXCLUSIVE_PRICE": tiers.gbp(decay["last_call_price"] * cfg["exclusive_multiplier"]),
-                "CAP": cap,
-            }
-            for firm in pool:
-                for ext in ("txt", "html"):
-                    tiers.write_outbox(f"last_call_ping_{lead['id']}_{firm['id']}.{ext}",
-                                       tiers.render(f"last_call_ping.{ext}", mapping))
-                print(f"  [STUB] would email last-call ping for {lead['id']} to {firm['email']}")
-            lead["status"] = "last_call"
-            print(f"  {lead['id']} ({tier['label']}, {hours:.0f}h, {open_slots} open slots) -> last_call "
-                  f"at {tiers.gbp(decay['last_call_price'])} (was {tiers.gbp(tier['price'])}).")
-            changed = True
-
     if changed:
         tiers.write_rows("leads.csv", leads)
     else:

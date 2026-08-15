@@ -24,11 +24,18 @@ def steps(cfg):
         "Join the pool free. No sign-up fee, no minimums, no caps.",
         "Leads arrive as redacted alerts: tier, case type, area, a one-line intent summary, "
         "the shared price and the exclusive price.",
-        f"Claim a lead to receive the full verified details instantly. Up to {cap} firms share "
-        f"each lead, first come, first served; the price is fixed at the first claim.",
+        f"Claim a lead to receive the full verified details instantly. Up to {cap} accountancy "
+        f"firms share each lead, first come, first served; the price is fixed at the first claim.",
         f"Or claim exclusively at {mult} times the price to lock the lead to your firm. "
         "Exclusive is available only while no other firm has claimed, and carries the credit protection.",
-        "Claimed leads are invoiced monthly and collected by Direct Debit.",
+        # The lane split makes the two claims above accounting-lane claims. Stating the
+        # adjacent lane here keeps "up to N firms" and "locked to your firm" true as written.
+        f"The figures above describe the accountancy lane. The same enquiry may also be offered "
+        f"on the Adjacent lane to up to {cfg['adjacent_claim_slots_per_lead']} non-accounting "
+        f"professions such as brokers, solicitors and surveyors, who do not compete with you for "
+        f"the work. Adjacent claims are separate from your slots and do not affect them, "
+        f"including on an exclusive claim.",
+        "Claimed leads are invoiced monthly in arrears, payable by bank transfer within 14 days.",
     ]
 
 

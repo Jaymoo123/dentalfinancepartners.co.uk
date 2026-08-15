@@ -1,5 +1,6 @@
-id,firm_name,contact_name,email,phone,professions,tiers_of_interest,joined_date,mandate_status,status,notes
-F001,Whitmore & Vale Accountants,Priya Raghavan,priya@whitmorevale.example,0113 496 0201,accounting,advisory;standard,2026-06-14,active,active,Prefers advisory and landlord work
-F002,Calderbeck Accounting Ltd,Tom Ellery,tom@calderbeck.example,0161 496 0733,accounting,standard;essential,2026-06-20,active,active,
-F003,Fenwick & Marsh,Sofia Marsh,sofia@fenwickmarsh.example,020 7946 0158,accounting;ifa,advisory,2026-07-02,pending,active,Direct Debit mandate pending; chase before first claim
-F004,Netherfield Mortgage & Wealth,Daniel Okafor,daniel@netherfield.example,0114 496 0522,broker;ifa,adjacent,2026-07-15,none,paused,Adjacent lane firm; paused at their request until September
+id,firm_name,contact_name,email,phone,professions,tiers_of_interest,joined_date,dsa_signed_date,status,notes
+F001,Whitmore & Vale Accountants,Priya Raghavan,priya@whitmorevale.example,0113 496 0201,accounting,advisory;standard,2026-06-14,2026-08-01,active,Prefers advisory and landlord work
+F002,Calderbeck Accounting Ltd,Tom Ellery,tom@calderbeck.example,0161 496 0733,accounting,standard;essential,2026-06-20,2026-08-04,active,
+F003,Fenwick & Marsh,Sofia Marsh,sofia@fenwickmarsh.example,020 7946 0158,accounting;ifa,advisory,2026-07-02,,active,Unsigned: alerts and claims both blocked until the agreement is back
+F004,Netherfield Mortgage & Wealth,Daniel Okafor,daniel@netherfield.example,0114 496 0522,broker;ifa,adjacent,2026-07-15,2026-07-20,paused,Adjacent lane firm; paused at their request until September
+F005,Ashgrove Tax Partners,Nadia Belhaj,nadia@ashgrovetax.example,0121 496 0344,accounting,advisory;standard;essential,2026-07-28,2026-08-06,active,Third signed accounting firm; lets the seed data reach the 3-claim cap

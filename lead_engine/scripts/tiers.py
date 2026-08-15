@@ -8,12 +8,16 @@ would send or charge prints a [STUB] line instead.
 import csv
 import html as _html
 import json
+import os
+import re
 from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]  # repo root
 ENGINE = ROOT / "lead_engine"
-DATA = ENGINE / "data"
+# LEAD_ENGINE_DATA points the CSV layer at a sandbox copy so scripts/test_lanes.py
+# can exercise the real claim path without writing to the tracked ledger.
+DATA = Path(os.environ["LEAD_ENGINE_DATA"]) if os.environ.get("LEAD_ENGINE_DATA") else ENGINE / "data"
 TEMPLATES = ENGINE / "templates"
 OUTBOX = ENGINE / "outbox"
 INVOICES = ENGINE / "invoices"
@@ -37,20 +41,87 @@ def price(tier_id):
     return tier_cfg(tier_id)["price"]
 
 
-def last_call_price(tier_id):
-    return tier_cfg(tier_id)["decay"]["last_call_price"]
-
-
 def claim_slots():
     return load_tiers()["claim_slots_per_lead"]
+
+
+def adjacent_claim_slots():
+    """Cap for the adjacent lane. None would mean uncapped; the owner set it to
+    3 on 2026-08-14 and the LIA balancing test depends on it staying capped."""
+    return load_tiers().get("adjacent_claim_slots_per_lead")
+
+
+def lane_cap(lane):
+    """Slot cap for a lane. None means uncapped."""
+    return claim_slots() if lane == ACCOUNTING else adjacent_claim_slots()
 
 
 def exclusive_multiplier():
     return load_tiers()["exclusive_multiplier"]
 
 
+# ---- lanes ----
+#
+# Claims run in two independent lanes (config/tiers.json $lanes). A delivery row
+# carries its lane, so counting one lane never sees the other: an adjacent claim
+# cannot consume an accounting slot, and an accounting exclusive lock closes the
+# accounting lane only.
+
+ACCOUNTING = "accounting"
+ADJACENT = "adjacent"
+
+
+def firm_professions(firm):
+    return {p.strip().lower() for p in (firm.get("professions") or "").split(";") if p.strip()}
+
+
+def firm_lane(firm, force_adjacent=False):
+    """Which lane this firm claims in. A firm that does no accounting can only
+    ever claim on the adjacent lane; a firm that does both defaults to
+    accounting and takes the adjacent lane with --adjacent."""
+    if force_adjacent or ACCOUNTING not in firm_professions(firm):
+        return ADJACENT
+    return ACCOUNTING
+
+
+def lane_of(delivery):
+    """Lane of an existing delivery row. Rows written before lanes existed have
+    no lane column and are all accounting claims."""
+    return delivery.get("lane") or ACCOUNTING
+
+
+def claims_in_lane(deliveries, lead_id, lane):
+    return [d for d in deliveries if d["lead_id"] == lead_id and lane_of(d) == lane]
+
+
 def gbp(n):
     return f"£{n}"
+
+
+# ---- redaction ----
+
+# The alert carries the enquiry in the enquirer's own words, with the identifying
+# parts taken out, so a firm decides on the substance rather than on a summary.
+# Everything here is stripped before an alert leaves: it is the only thing standing
+# between a redacted alert and a disclosure of identity.
+_REDACT = (
+    (re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+"), "[EMAIL]"),
+    (re.compile(r"(?<!\d)(?:\+44\s?|\(?0)\d[\d\s().-]{7,}\d"), "[PHONE]"),
+    (re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b"), "[POSTCODE]"),
+    (re.compile(r"\bhttps?://\S+|\bwww\.\S+"), "[LINK]"),
+    # Company names: a capitalised run ending in a company suffix.
+    (re.compile(r"\b(?:[A-Z][\w&'-]*\s+){1,4}(?:Ltd|Limited|LLP|PLC|Plc|plc)\b"), "[COMPANY]"),
+)
+
+
+def redact(message):
+    """An enquiry message with direct identifiers removed, for use in an alert."""
+    text = (message or "").strip()
+    if not text:
+        return "(no message)"
+    for rx, token in _REDACT:
+        text = rx.sub(token, text)
+    return " ".join(text.split())
 
 
 # ---- CSV util ----

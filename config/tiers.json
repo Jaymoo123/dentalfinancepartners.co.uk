@@ -2,14 +2,17 @@
   "$comment": "Canonical lead tier configuration. Single source of truth consumed by lead_engine/ scripts, the price sheet builder, the proposal engine and Property/web/src/lib/leads/tiers.ts (drift-tested). Numbers and rules are fixed per the Lead Engine build brief; do not edit without owner sign-off.",
   "currency": "GBP",
   "claim_slots_per_lead": 3,
+  "adjacent_claim_slots_per_lead": 3,
   "exclusive_multiplier": 3,
+  "$decay": "Owner-locked 2026-08-14. There is no last-call reprice. A lead holds its published price for as long as it is unclaimed, and after cascade_after_hours it leaves the accounting lane: verified leads are offered to the adjacent lane, unverified leads become eligible for the raw batch. Decay applies only while a lead is wholly unclaimed; the first claim fixes the price.",
   "$exclusivity": "Owner-locked 2026-08-12. Leads are shared (up to claim_slots_per_lead firms). An exclusive claim at exclusive_multiplier x the lead's price locks the lead to the claiming firm, but only if no other firm has claimed it yet; once any firm holds a shared claim, only shared slots remain. A lead's price is fixed at its first claim (no decay repricing between claimants). Credits apply to exclusive claims only.",
+  "$lanes": "Owner-locked 2026-08-13, capped 2026-08-14. Claims run in two INDEPENDENT lanes. The accounting lane is capped at claim_slots_per_lead and is where exclusivity, decay and delivered_full apply. The adjacent lane is additive: adjacent claims never consume an accounting slot. adjacent_claim_slots_per_lead was null (uncapped) until 2026-08-14, when the owner capped it at 3 so the total number of firms that can receive one enquirer's details is bounded at 6; the legitimate interests assessment relies on that bound, so it must not be raised or set back to null without redoing the LIA balancing test. An accounting exclusive lock closes the accounting lane only; it does not close the adjacent lane.",
   "tiers": [
     {
       "id": "advisory",
       "label": "Advisory",
       "price": 85,
-      "decay": { "after_hours": 24, "last_call_price": 55, "cascade_after_hours": 48 },
+      "decay": { "cascade_after_hours": 48 },
       "typical_monthly_volume": 25,
       "examples": [
         "incorporation",
@@ -25,7 +28,7 @@
       "id": "standard",
       "label": "Standard",
       "price": 40,
-      "decay": { "after_hours": 24, "last_call_price": 25, "cascade_after_hours": 48 },
+      "decay": { "cascade_after_hours": 48 },
       "typical_monthly_volume": 45,
       "examples": [
         "landlord self assessment with complexity",
@@ -37,7 +40,7 @@
       "id": "essential",
       "label": "Essential",
       "price": 15,
-      "decay": { "after_hours": 24, "last_call_price": 10, "cascade_after_hours": 48 },
+      "decay": { "cascade_after_hours": 48 },
       "typical_monthly_volume": 20,
       "examples": [
         "straightforward returns",
@@ -49,16 +52,19 @@
       "label": "Adjacent",
       "price": 35,
       "profession_lane": "non-accounting (brokers, IFAs, solicitors, consultants)",
-      "note": "same lead may be sold here in addition to accounting slots. Non-competing professions only."
+      "note": "same lead may be sold here in addition to accounting slots, in its own lane capped at adjacent_claim_slots_per_lead (see $lanes). Non-accounting professions only; an adjacent claim never consumes an accounting slot."
     },
     {
       "id": "raw",
       "label": "Raw (unverified)",
       "batch": true,
+      "supply_mode": "bulk",
+      "$supply_mode": "Bulk Supply, not a Referral. A raw batch is supplied as a whole to one firm without a per-enquiry alert, claim or acceptance step, so the claim cap, decay, exclusivity and lane rules do not apply to it. The legal pack defines Bulk Supply separately from Referral for this reason.",
       "price_per_lead_equiv": 5,
       "batch_price_range": [75, 125],
       "typical_monthly_volume": 20,
       "eligibility": "unverified after 7-day nurture window only",
+      "recipients_per_batch": 1,
       "credits": "none. Sold as seen."
     }
   ]

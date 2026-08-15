@@ -1,4 +1,4 @@
-lead_id,firm_id,claimed_at,exclusive,price_charged,credit,credit_reason,invoiced,invoice_ref
-L004,F001,2026-08-03T14:12:00,false,40,false,,false,
-L004,F002,2026-08-03T15:40:00,false,40,true,Phone dead and email bounced (unreachable contact details),false,
-L007,F003,2026-08-02T16:05:00,true,255,true,Enquiry materially different from the description,false,
+lead_id,firm_id,lane,claimed_at,exclusive,price_charged,credit,credit_reason,invoiced,invoice_ref
+L004,F001,accounting,2026-08-03T14:12:00,false,40,false,,false,
+L004,F002,accounting,2026-08-03T15:40:00,false,40,true,Phone dead and email bounced (unreachable contact details),false,
+L007,F003,accounting,2026-08-02T16:05:00,true,255,true,Enquiry materially different from the description,false,
