@@ -63,7 +63,7 @@ Shared context (applies to all 6 sites):
 - `Property\web\src\components\blog\InlineMiniLeadForm.tsx` — renders MiniCapture (no own consent code).
 - `Property\web\src\components\forms\DetailsForm.tsx` — phone top-up on `/complete`, POSTs `/api/leads/complete` (no consent text; original consent already captured).
 - `Property\web\src\components\support\SpecialistWidget.tsx` — "Ask a specialist" email-first widget; uses `leadConsentText` as notice, sends `consent_given: true`.
-- `Property\web\src\components\resources\ResourceGate.tsx` (+ `ResourceGateLazy.tsx`, `resources\GateOrForm.tsx`) — email-only downloads, tick-box with `resourceConsentText`; explicitly NOT shared with partner (Annex B.2).
+- `Property\web\src\components\resources\GateOrForm.tsx` — a MiniCapture "free review" block, so it rides the LEAD consent notice, not a resource checkbox. The email-gated download it replaced (`ResourceGate.tsx`, `ResourceGateLazy.tsx`, `/api/resources/deliver`, Annex B.2 `resourceConsentText`) lost its A/B on 2026-06-16 (`f90f6cca`, 154 views / 0 unlocks) and was deleted 2026-08-16. Property no longer has a resource-consent surface.
 - `Property\web\src\components\calculators\ResultGateModal.tsx` — calculator result gate (shared MiniCapture pattern).
 - `Property\web\src\components\forms\BookingPicker.tsx` — callback slot picker, `/api/leads/book`.
 

@@ -14,7 +14,6 @@ import { calculateReadTime } from "@/lib/blog";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
 import { hasPremiumTool } from "@/lib/calculators/premium/registry";
-import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
 import { splitContentEarly, splitRemainderForGate, splitContentAtMidScroll } from "@accounting-network/web-shared/content/blog-splits";
@@ -255,26 +254,14 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         {/* More content between the tool and the gate. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
                         {/* A STEP LATER: the email gate (ask). */}
-                        <GateOrForm
-                          topic={topic}
-                          copy={gateCopy(topic, post.title)}
-                          placement="blog"
-                          category={categorySlug}
-                        />
+                        <GateOrForm topic={topic} />
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
                       </>
                     ) : (
                       <>
                         {/* No later break: gate goes directly under the tool, then
                             the rest of the article. */}
-                        {hasGate ? (
-                          <GateOrForm
-                          topic={topic}
-                          copy={gateCopy(topic, post.title)}
-                          placement="blog"
-                          category={categorySlug}
-                        />
-                        ) : null}
+                        {hasGate ? <GateOrForm topic={topic} /> : null}
                         <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
                       </>
                     )}

@@ -4,20 +4,17 @@
  * Resource block. Shipped default (was the gate_to_form treatment): a topic-aware
  * qualified "free review" capture in the slot, replacing the email-gated Excel
  * download that nobody unlocked (50 views, 0 unlocks).
+ *
+ * The losing arm (ResourceGate + ResourceGateLazy + ExcelPreview + the
+ * /api/resources/deliver route) was deleted 2026-08-16, two months after
+ * f90f6cca hard-wired this winner and left it unreachable. The `copy`, `split`,
+ * `placement` and `category` props went with it: they only ever fed the gate,
+ * and callers were still computing gateCopy() for a value nothing read.
  */
 import { MiniCapture } from "@/components/forms/MiniCapture";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
-import type { GateCopy } from "@/lib/resources/copy";
 
-export function GateOrForm({
-  topic,
-}: {
-  topic: TopicKey;
-  copy: GateCopy;
-  split?: boolean;
-  placement?: string;
-  category?: string;
-}) {
+export function GateOrForm({ topic }: { topic: TopicKey }) {
   const t = getTopic(topic);
   return (
     <MiniCapture

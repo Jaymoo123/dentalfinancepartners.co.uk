@@ -9,12 +9,17 @@
  * calculator config lives separately in lib/calculators/premium/registry.ts so
  * the indexable calculator fleet / sitemap / gallery are never touched.
  *
- * FEATURE FLAGS (the whole point of Phase A): every asset carries `enabled`.
- * Nothing is ever rendered/linked/emailed for an asset whose `enabled` is false
- * (or whose underlying file does not yet exist). In Phase A every flag is false,
- * so resourceForTopic() reports "nothing enabled" for every topic and the live
- * site renders identically to today. Onboarding a category = author the asset,
- * drop the file in public/resources, then flip the single `enabled` flag.
+ * FEATURE FLAGS: every asset carries `enabled`. Nothing is rendered or linked
+ * for an asset whose `enabled` is false (or whose underlying file does not yet
+ * exist). Onboarding a category = author the asset, drop the file in
+ * public/resources, then flip the single `enabled` flag.
+ *
+ * NOT Phase A any more, whatever an older copy of this comment said: twelve
+ * assets are enabled and their .xlsx files are served publicly from
+ * /resources/<topic>, with no email gate in front of them since ResourceGate
+ * lost its A/B on 2026-06-16. Capture happens through the qualified
+ * GateOrForm/MiniCapture block instead. Whether an ungated download is the
+ * intended end state is an open product question, not a bug.
  */
 import type { TopicKey } from "@/lib/intent/taxonomy";
 

@@ -23,7 +23,6 @@ import {
   resourceForTopic,
 } from "@/lib/resources/registry";
 import { hasPremiumTool } from "@/lib/calculators/premium/registry";
-import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
 
@@ -56,12 +55,7 @@ export function CalculatorPageResources({
       </div>
       {hasPremium ? <PremiumUpgrade topic={topic} full placement="calculator" /> : null}
       {hasGate ? (
-        <GateOrForm
-          topic={topic}
-          copy={gateCopy(topic, pageTitle)}
-          split
-          placement="calculator"
-        />
+        <GateOrForm topic={topic} />
       ) : null}
     </div>
   );
