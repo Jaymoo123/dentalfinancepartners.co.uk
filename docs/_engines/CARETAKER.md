@@ -111,6 +111,19 @@ pharmacies, all importing `lucide-react` undeclared).
 dependency that will stop resolving without warning. Declare what you import,
 and assert it in CI rather than at deploy time.
 
+## PARKED: do not arm the scheduled emailers (owner, 2026-08-16)
+
+`state-check.yml` and `caretaker.yml` are built but exist only on
+`expansion/new-sites-2026-08`, so they have never run. **Leave it that way.**
+Scheduled workflows run from the default branch, so merging either to `main`
+arms a recurring emailer, and the owner has said he does not want one. Same for
+adding the Resend secrets that would let the tripwire or state_check mail him.
+
+This is not an oversight to be tidied up by a future session. Arming any of it
+needs an explicit yes, per the "never create anything that interrupts him
+without asking" rule in the `standard_terms` skill. Revisit deliberately, with a
+proposal for what the destination should be instead of email.
+
 ## Notification policy (owner, 2026-08-16)
 
 Set after a weekend in which the owner received four content-free GitHub failure
