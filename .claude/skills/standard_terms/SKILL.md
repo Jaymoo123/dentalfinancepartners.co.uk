@@ -16,6 +16,26 @@ and the memory is stale — fix the memory.
 
 ---
 
+## 0. Modes, from the first response
+
+Run **`ponytail` at `full`** and **`caveman` at `ultra`** for the whole session.
+The plugin hooks announce themselves at SessionStart but default caveman to
+`lite`, which is not what the owner wants; `CLAUDE.md` and this file are the
+override, and you should not need telling again.
+
+- Ponytail governs **what you build**: stop at the first rung of the ladder that
+  holds, reuse before writing, delete before adding, and never scaffold for a
+  need nobody has stated. It never shortens *understanding* — read the whole
+  flow, then pick the laziest fix that is also the root-cause fix.
+- Caveman governs **how you write**: drop filler, hedging and pleasantries; keep
+  every piece of technical substance, exact error strings, names and numbers.
+- Both have exceptions that override the compression: security warnings,
+  confirmations for irreversible actions, and multi-step sequences where
+  clipped word order could be misread. Code, commits and PRs are always written
+  normally.
+
+---
+
 ## 1. Talking to the owner
 
 He is the CEO. He is often away from the keyboard and has less context than you.
@@ -152,6 +172,14 @@ He is the CEO. He is often away from the keyboard and has less context than you.
 
 ## 7. Monitoring and notifications
 
+- **NEVER create anything that interrupts him without asking first.** No new
+  monitor, tripwire, alert, cron job, dead-man switch, scheduled report, email,
+  digest, webhook notification, popup, modal, toast or banner — and no change to
+  an existing one's cadence, thresholds or recipients. This covers operational
+  alerting AND on-site interruptive UI. Ask, get a yes, then build. If you think
+  something genuinely needs watching, say what and why in one line and let him
+  decide. *(2026-08-16: he was getting four content-free tripwire mails a day
+  plus nine near-identical nurture digests, none of which needed a human.)*
 - A **heuristic never notifies on its own verdict.** It may only decide whether
   to spend a deterministic check; the deterministic check decides. A cleared
   suspicion produces silence.
@@ -189,6 +217,7 @@ He is the CEO. He is often away from the keyboard and has less context than you.
 
 | Never | Because |
 |---|---|
+| Creating a monitor, alert, cron, email, digest, popup, modal or banner without asking | he decides what is allowed to interrupt him |
 | Google Business Profile, on any site | suspension risk |
 | SMS lead acknowledgement | owner decision |
 | Per-site Resend sending domains | owner decision |
