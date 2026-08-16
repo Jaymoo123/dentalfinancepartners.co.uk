@@ -53,10 +53,17 @@ SITE = os.environ.get("TRIPWIRE_SITE", "property")
 BASE = os.environ.get("TRIPWIRE_BASE_URL", "https://www.propertytaxpartners.co.uk").rstrip("/")
 WINDOW_HOURS = int(os.environ.get("TRIPWIRE_WINDOW_HOURS", "24"))
 FORM_START_FLOOR = int(os.environ.get("TRIPWIRE_FORM_START_FLOOR", "5"))
-# UTC hours in which the paid probe may run. The workflow fires at 00/06/12/18,
-# so {0} means once a day. Widen to {0,6,12,18} once the route stops charging
-# for test leads.
-PROBE_HOURS = {int(h) for h in os.environ.get("TRIPWIRE_PROBE_HOURS", "0").split(",") if h.strip()}
+# Empty (the default) = probe on every run. The probe was rate-limited to one
+# UTC hour a day while it still cost a verification credit per execution;
+# Property deployed the skip_verification route on 2026-08-16 and it was
+# confirmed live (no lead_verification row written, so nothing billed), so the
+# cap now buys nothing and only delays arbitration.
+#
+# Kept as an env knob rather than deleted, because it is the emergency brake if
+# a probe ever starts costing again. Hour-gating is deliberately NOT the default:
+# GitHub's scheduler drifts badly here (observed starts of 01:13, 06:36, 18:27
+# against a "0 */6" cron), so pinning to exact hours silently skips probes.
+PROBE_HOURS = {int(h) for h in os.environ.get("TRIPWIRE_PROBE_HOURS", "").split(",") if h.strip()}
 
 SUPABASE_URL = (os.environ.get("SUPABASE_URL") or f"https://{REF}.supabase.co").strip().rstrip("/")
 SERVICE_KEY = (os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or os.environ.get("SUPABASE_KEY") or "").strip()
@@ -152,9 +159,10 @@ def probe_submit():
     credit. A monitor that quietly spends money four times a day is its own
     incident, so the phone is deliberately unparseable by toE164UK (11 digits, no
     leading 0 or +, so `digits(phone) >= 10` still passes validation but the
-    lookup short-circuits before Twilio). The email still costs a credit until the
-    route-level is_test skip ships, which is why the probe is capped to once a day
-    below. Remove PROBE_HOURS once that deploy lands.
+    lookup short-circuits before Twilio) and `skip_verification` suppresses the
+    email check, which the route honours for test leads only. Both confirmed
+    against production on 2026-08-16: with the flag, no lead_verification row is
+    written; without it, one is. So a probe now costs nothing but a request.
     """
     payload = {
         "source": "test",
@@ -224,12 +232,9 @@ def main() -> None:
     else:
         out.append("- flatline: SKIPPED (no Supabase service key in env)")
 
-    # The probe only runs when the heuristic is suspicious AND at most once a day
-    # (see probe_submit: it still costs an email-verification credit until the
-    # route-level is_test skip is deployed). The 6-hourly bundle check already
-    # catches a dead route in between, so the cap only delays confirmation of the
-    # rarer "route answers but cannot insert" case.
-    probe_window = datetime.datetime.now(datetime.timezone.utc).hour in PROBE_HOURS
+    # The probe runs whenever the heuristic is suspicious. PROBE_HOURS is the
+    # opt-in brake described above and is empty by default.
+    probe_window = not PROBE_HOURS or datetime.datetime.now(datetime.timezone.utc).hour in PROBE_HOURS
     if not flat_ok and probe_window and os.environ.get("TRIPWIRE_NO_PROBE") != "1":
         probe_ok, probe_detail = probe_submit()
         out.append(f"- probe: {'OK' if probe_ok else 'FAIL'} - {probe_detail}")
@@ -242,7 +247,7 @@ def main() -> None:
             p0.append(f"Probe: {probe_detail} (flatline corroborated)")
     elif not flat_ok:
         why = "TRIPWIRE_NO_PROBE=1" if os.environ.get("TRIPWIRE_NO_PROBE") == "1" else (
-            f"outside the once-a-day probe window (UTC hours {sorted(PROBE_HOURS)})"
+            f"outside TRIPWIRE_PROBE_HOURS (UTC hours {sorted(PROBE_HOURS)})"
         )
         out.append(f"- probe: SKIPPED ({why}) - flatline unarbitrated, deferred")
 
