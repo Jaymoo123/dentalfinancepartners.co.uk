@@ -4,8 +4,14 @@
  * Reports real-user Core Web Vitals into our own first-party events (a passive
  * `web_vital` event), so performance can be joined to conversion in our own views.
  *
- * `web-vitals` is an OPTIONAL peer dependency. If the consuming site has not
- * installed it, this component is a no-op (the dynamic import fails silently).
+ * `web-vitals` is a REAL dependency of this package, not the optional peer this
+ * comment used to claim. The .catch() below only ever swallows RUNTIME failures:
+ * webpack resolves a dynamic import at BUILD time, so a consumer without the
+ * module gets "Module not found", a hard build failure, not a silent no-op. That
+ * bit every site except Property on 2026-08-16 (only Property declared it, and
+ * the others had been resolving it by accident through workspace hoisting until
+ * the .vercelignore allowlist stopped uploading Property's package.json to their
+ * builds). A package must declare what it imports.
  * CLS is stored ×1000 so every metric is a clean integer.
  * Mount only when tracking is granted (AnalyticsProvider gates it via WebVitals).
  */

@@ -2,7 +2,7 @@
   "name": "@accounting-network/web-shared",
   "version": "0.0.1",
   "private": true,
-  "description": "Shared web code (TypeScript + React) used across the niche-site Next.js apps. Pure source code \u2014 consumers compile via Next.js transpilePackages.",
+  "description": "Shared web code (TypeScript + React) used across the niche-site Next.js apps. Pure source code — consumers compile via Next.js transpilePackages.",
   "type": "module",
   "main": "./index.ts",
   "types": "./index.ts",
@@ -113,6 +113,9 @@
   },
   "scripts": {
     "test": "vitest run"
+  },
+  "dependencies": {
+    "web-vitals": "^5.3.0"
   },
   "peerDependencies": {
     "react": ">=18",
