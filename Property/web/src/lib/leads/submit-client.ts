@@ -10,7 +10,8 @@
  * Phone-bearing surfaces (the contact form + MiniCapture) submit in "full" mode.
  * The "Ask a specialist" widget submits in "email_only" mode (name/phone optional),
  * so it too flows through this chokepoint and enrols into the detail-capture
- * sequence. The ResourceGate download surface keeps the shared direct path.
+ * sequence. Nothing bypasses this any more: the ResourceGate download gate was
+ * the last direct-to-Supabase surface and is retired.
  */
 
 export interface PropertyLeadPayload {

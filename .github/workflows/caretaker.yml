@@ -58,10 +58,18 @@ jobs:
           LEAD_PROBE_SECRET: ${{ secrets.LEAD_PROBE_SECRET }}
         run: |
           mkdir -p out/probes
-          node scripts/property_synthetic_lead_check.mjs > out/probes/synthetic_lead.log 2>&1 || true
           node scripts/property_health_sweep.mjs > out/probes/health_sweep.log 2>&1 || true
-          tail -5 out/probes/synthetic_lead.log
+          # THE money-path probe. It submits a synthetic lead through
+          # /api/leads/submit, the route every live surface posts to, and deletes
+          # it. It replaced property_synthetic_lead_check.mjs (retired 2026-08-16),
+          # which inserted straight into PostgREST as the old ResourceGate did and
+          # so had been passing green on a path nothing uses since that gate was
+          # retired. The tripwire emails nobody and only goes red on a verified P0,
+          # so this log is also where a standing flatline gets a reader; its
+          # verdict line says whether the probe already cleared it as a false alarm.
+          python scripts/lead_capture_tripwire.py > out/probes/tripwire.log 2>&1 || true
           tail -5 out/probes/health_sweep.log
+          tail -12 out/probes/tripwire.log
 
       - name: Reason (claude -p, read-only tools)
         env:

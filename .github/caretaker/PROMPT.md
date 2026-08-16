@@ -15,8 +15,16 @@ files, never commit, never deploy, never call a mutating endpoint.
 
 - `out/run.json` — today's state_check facts + findings (ALARM/BLIND/UNKNOWN/
   GONE/CHANGED/NEW). `out/state_check_*.json` — recent snapshots for trends.
-- `out/probes/synthetic_lead.log` — end-to-end money-path probe output.
 - `out/probes/health_sweep.log` — full sitemap crawl output.
+- `out/probes/tripwire.log` — lead-capture tripwire, run fresh here, and THE
+  money-path probe: it submits a synthetic lead through `/api/leads/submit`, the
+  route every live surface posts to. It emails nobody, so this log is its only
+  reader. Its `verdict:` line is the answer: `FALSE ALARM` means the probe already
+  proved capture works and the flatline is a quiet period — say so in one line and
+  move on, do NOT re-litigate. Only `P0` is a real finding, and a P0 here is the
+  single most important finding possible: the money path is broken NOW.
+  (`synthetic_lead.log` is gone: `property_synthetic_lead_check.mjs` was retired
+  2026-08-16 for testing a direct-to-PostgREST path no live surface uses.)
 - The repository itself, checked out at HEAD.
 
 ## Every week
@@ -28,8 +36,8 @@ files, never commit, never deploy, never call a mutating endpoint.
 2. For each UNKNOWN: recommend the one-line decision that clears it (add a
    tolerance, add to ignore, or flag to the owner).
 3. For GONE findings: decide retired vs broken, with evidence.
-4. Check the two probe logs. A failed synthetic lead is the single most
-   important finding possible — it means the money path is broken NOW.
+4. Check both probe logs. A `P0` in `tripwire.log` is the single most important
+   finding possible — it means the money path is broken NOW.
 5. Scan for contradictions between what the monitors report and what the repo
    claims (stale docs, comments describing behaviour the code no longer has).
 

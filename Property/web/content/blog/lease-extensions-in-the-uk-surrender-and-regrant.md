@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specia
 date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
-metaTitle: "Lease Extensions UK: Surrender and Regrant Doctrine Explained"
+metaTitle: "Lease Extensions UK: Surrender and Regrant Explained"
 metaDescription: "How surrender-and-regrant drives SDLT on UK lease extensions: FA 2003 Sch 17A paras 9, 13, 15A explained with a worked overlap-relief example."
 altText: "UK lease extension document and statutory text showing the surrender-and-regrant doctrine and FA 2003 Sch 17A paragraph framework"
 image: ""

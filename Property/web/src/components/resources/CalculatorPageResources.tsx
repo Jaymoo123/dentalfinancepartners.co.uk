@@ -7,11 +7,11 @@
  * stays the indexable hero — this never touches its server-rendered
  * copy/H1/explainer/FAQ/schema.
  *
- * VISIBILITY FIX: the email gate renders as a normal SSR client component (via
- * ResourceGateLazy) so its form markup is in the page's server HTML and can't
- * silently vanish. The premium calculator stays client-dynamic (recharts is
- * heavy) but carries a sized loading placeholder. The whole block is clearly
- * labelled so it reads as an obvious "free tool + guide" card.
+ * The slot renders GateOrForm, which is a MiniCapture "free review" form. It is
+ * NOT the old email-gated Excel download (ResourceGate/ResourceGateLazy): that
+ * lost its A/B and is retired at 50 views, 0 unlocks. The premium calculator
+ * stays client-dynamic (recharts is heavy) but carries a sized loading
+ * placeholder. The whole block is clearly labelled as "free tool + guide".
  *
  * When neither a premium config nor an enabled asset exists for the topic, this
  * renders NOTHING, so calculator pages are unchanged until a category is

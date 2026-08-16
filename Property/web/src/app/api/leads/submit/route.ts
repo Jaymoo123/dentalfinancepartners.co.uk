@@ -10,8 +10,10 @@
  *     specialist" widget). Validation is relaxed to email + message; the lead is
  *     routed by its missing contact fields into the detail-capture sequence,
  *     which collects the missing name/phone before it can be forwarded.
- * The ResourceGate download surface keeps the shared direct-insert path (Annex
- * B.2 in-house consent, never forwarded, so intentionally not nurtured here).
+ * EVERY live lead surface posts here. The old ResourceGate download gate was the
+ * last direct-to-Supabase inserter and is retired (GateOrForm renders MiniCapture
+ * instead: "50 views, 0 unlocks"), so this route is now the single chokepoint and
+ * no client-side Supabase config is shipped at all.
  *
  * Flow:
  *   1. Honeypot -> store flagged (never silently lose a possible real lead) + skip.
@@ -160,7 +162,7 @@ export async function POST(req: Request) {
     try {
       // Adopt corrections: use the newly submitted value when non-empty, so a
       // resubmit can fix a wrong stored phone or populate an email-only prior
-      // row (SpecialistWidget/ResourceGate inserts full_name:"", phone:"").
+      // row (SpecialistWidget inserts full_name:"", phone:"").
       // Append messages: combine so no context is lost; cap at 4 000 chars,
       // trimming from the front so the most recent context is always retained.
       const MAX_MSG = 4_000;
@@ -239,34 +241,44 @@ export async function POST(req: Request) {
   }
 
   // 4. Real-time verification (best-effort, never blocks).
+  //    verifyLead spends a Twilio Lookup and, where EMAIL_VERIFY_API_KEY is set,
+  //    a ZeroBounce credit on EVERY call, so an automated prober hitting this
+  //    route on a schedule bills real money forever and invisibly. A caller can
+  //    opt out with skip_verification, honoured only for a test lead so no real
+  //    submission can ever dodge verification by setting a flag. Test leads still
+  //    verify by DEFAULT: QA exercising the whole path, verification included, is
+  //    the point of a synthetic lead.
+  const skipVerification = isTestLead && body.skip_verification === true;
   let verifyPhone: string | undefined;
   let verifyEmail: string | undefined;
-  try {
-    const v = await verifyLead({ email, phone });
-    verifyPhone = v.phone.status;
-    verifyEmail = v.email.status;
-    await adminInsert(
-      "lead_verification",
-      {
-        lead_id: leadId,
-        phone_status: v.phone.status,
-        phone_line_type: v.phone.line_type,
-        phone_carrier: v.phone.carrier,
-        phone_e164: v.phone.e164,
-        email_status: v.email.status,
-        email_domain: v.email.domain,
-        verify_pass: v.verify_pass,
-        provider: v.provider,
-        raw: v.raw,
-      },
-      { onConflict: "lead_id" },
-    );
-    await recordLeadContactEvent(leadId, v.verify_pass ? "verify_pass" : "verify_fail", "system", {
-      phone: v.phone.status,
-      email: v.email.status,
-    });
-  } catch (e) {
-    console.error("[leads/submit] verification failed", e);
+  if (!skipVerification) {
+    try {
+      const v = await verifyLead({ email, phone });
+      verifyPhone = v.phone.status;
+      verifyEmail = v.email.status;
+      await adminInsert(
+        "lead_verification",
+        {
+          lead_id: leadId,
+          phone_status: v.phone.status,
+          phone_line_type: v.phone.line_type,
+          phone_carrier: v.phone.carrier,
+          phone_e164: v.phone.e164,
+          email_status: v.email.status,
+          email_domain: v.email.domain,
+          verify_pass: v.verify_pass,
+          provider: v.provider,
+          raw: v.raw,
+        },
+        { onConflict: "lead_id" },
+      );
+      await recordLeadContactEvent(leadId, v.verify_pass ? "verify_pass" : "verify_fail", "system", {
+        phone: v.phone.status,
+        email: v.email.status,
+      });
+    } catch (e) {
+      console.error("[leads/submit] verification failed", e);
+    }
   }
 
   // 5. Enrol + fire the instant touch via the shared enrolment path. enrollLead

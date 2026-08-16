@@ -707,6 +707,20 @@ describe("test source isolation (source='test')", () => {
     expect(mockVerifyLead).toHaveBeenCalledOnce();
   });
 
+  it("skip_verification suppresses paid verification for a test lead", async () => {
+    stubSender();
+    await POST(makeReq({ ...VALID_BODY, source: "test", skip_verification: true }));
+    const leadInserts = mockAdminInsert.mock.calls.filter(([table]) => table === "leads");
+    expect(leadInserts).toHaveLength(1); // the lead still lands
+    expect(mockVerifyLead).not.toHaveBeenCalled(); // but Twilio/ZeroBounce are not billed
+  });
+
+  it("skip_verification is ignored on a real lead, so nothing can dodge verification", async () => {
+    stubSender();
+    await POST(makeReq({ ...VALID_BODY, email: "real@ashfieldtrading.com", skip_verification: true }));
+    expect(mockVerifyLead).toHaveBeenCalledOnce();
+  });
+
   it("test source still enrols and fires step 0 via processLeadStep", async () => {
     stubSender();
     await POST(makeReq({ ...VALID_BODY, source: "test" }));

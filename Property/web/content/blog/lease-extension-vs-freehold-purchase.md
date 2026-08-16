@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specia
 date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
-metaTitle: "Lease Extension vs Freehold Purchase: How to Choose (UK 2026)"
+metaTitle: "Lease Extension vs Freehold Purchase: How to Choose (2026)"
 metaDescription: "Compare statutory lease extension under LRHUDA 1993 / LRA 1967 with freehold acquisition. SDLT, premium calculation, LFRA 2024 reform, decision grid."
 altText: "UK leaseholder weighing the statutory lease extension route against freehold acquisition for a London flat and a regional house"
 image: ""
