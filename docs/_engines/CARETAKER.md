@@ -60,6 +60,7 @@ workflow and env drift; L3 audits L0/L1/L2 monthly with reasoning.
 | nurture guardrails + autopause (`nurture-health.ts`, hourly in-app) | L1 | complaints, failed sends, bounces, stuck leads. **The only nurture email channel**, deduped on breach-set change | state_check frozen-heartbeat rule |
 | `nurture-digest.ts` daily cron, 9 sites (07:00 UTC) | L1 | same metrics, **log + dashboard only, sends no email since 2026-08-16**; keeps stamping `lastDigestRunAt` | state_check frozen-heartbeat rule |
 | `deploy-watch` cron + table | L1 | post-deploy metric gates | state_check overdue-gate rule |
+| `scripts/check_dependency_closure.py` (every CI run, all 19 sites) | L2 | deployability: any site importing a package nothing installs | red CI on the PR that introduces it |
 | Vercel built-ins (deploy-failure email, Error Anomaly, Observability Plus) | L0 | build failures, 5xx anomalies | caretaker |
 | Caretaker agent (`caretaker.yml` + PROMPT.md, Mondays) | L3 | everything above, incl. this file | its heartbeat + state_check workflow rules |
 
@@ -75,6 +76,40 @@ Vercel (Property project): `SENTRY_DSN` `HEARTBEAT_LEAD_NURTURE`
 `HEARTBEAT_DEPLOY_WATCH`
 Missing secrets self-report: the `secrets` lane alarms on any of these a live
 workflow references but the repo lacks.
+
+## Incident 2026-08-16: the estate was undeployable for nine days and nothing said so
+
+Found by trying to deploy, which is the point. Property deployed first time.
+Every other site failed with `Module not found`, in three successive rounds:
+`web-vitals`, then `resend`, then `botid`.
+
+**Cause.** Sites imported packages they never declared, and npm workspace
+hoisting resolved them anyway out of a SIBLING site's `package.json`, because a
+deploy used to upload the whole monorepo. Only Property declared `resend`,
+`web-vitals` and `botid`; only generalist declared `geist`; nobody declared
+`zod`. On 2026-08-15 `.vercelignore` became an allowlist that narrows each
+upload to the site being built plus `/packages` — correct in itself, and it
+removed the accident that was hiding the missing declarations. Nothing had
+deployed since 08-07, so the estate sat broken and silent for nine days.
+
+**Why no monitor caught it.** Every layer was watching runtime. Nothing watched
+*deployability*. `ci-build-test.yml` only builds CHANGED sites, and the change
+that broke everything (`.vercelignore`) is not in any site's path filter. A
+green CI and a live site are both perfectly compatible with "nothing can ship".
+
+**Cure.** `scripts/check_dependency_closure.py`, wired into the cheap `changes`
+job of `ci-build-test.yml`. It models what Vercel actually installs
+(`npm ci --workspace=<site>/web --include-workspace-root`) and asserts that
+every bare import in a site's `src`, plus every import in `web-shared`, is
+declared by that site, by web-shared, or by the root. Whole estate, every run,
+about a second, no build required — because an undeclared import is introduced
+by editing site A and breaks whichever site deploys next. It immediately found
+four more sites nobody had tried to deploy (charities, crypto, hospitality,
+pharmacies, all importing `lucide-react` undeclared).
+
+**The generalisable rule:** a dependency that resolves by accident is a
+dependency that will stop resolving without warning. Declare what you import,
+and assert it in CI rather than at deploy time.
 
 ## Notification policy (owner, 2026-08-16)
 
