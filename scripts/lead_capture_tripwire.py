@@ -1,29 +1,37 @@
 #!/usr/bin/env python3
 """Lead-capture tripwire for the Property site (run on a schedule).
 
-Two independent checks, either of which emails an alert to the operator:
+SELF-TRIAGING BY DESIGN (2026-08-16). The heuristic alone fired 4 red runs a day
+across a normal quiet weekend (weekend submit rate is 0-1/day vs 3-6 on weekdays),
+so the heuristic no longer decides anything on its own: it only decides whether to
+spend a synthetic probe. The PROBE decides.
 
-  1) BUNDLE check (DETERMINISTIC, zero false positives): fetch the live production
-     page and confirm the inlined NEXT_PUBLIC_SUPABASE_URL is not corrupted with a
-     trailing CR/LF. This is the exact 2026-06-24 failure mode — a bad env paste
-     silently broke every client-side lead insert. The bundle is the ground truth.
+  1) BUNDLE check (DETERMINISTIC): fetch the live production page and confirm the
+     inlined NEXT_PUBLIC_SUPABASE_URL is not corrupted with a trailing CR/LF. The
+     exact 2026-06-24 failure mode — a bad env paste silently broke every
+     client-side lead insert.
 
-  2) FLATLINE check (HEURISTIC, tuned to avoid noise): if >= FORM_START_FLOOR
-     `form_start` events happened on the form in the last WINDOW_HOURS but ZERO
-     `lead_submitted` events landed, real people are reaching the form yet none
-     complete -> a likely broken submit path. (The base lead rate is low and lumpy,
-     so we key off form-STARTS-without-submits, not raw "0 leads", to avoid firing
-     on normal quiet periods.)
+  2) FLATLINE check (HEURISTIC, noisy on purpose): >= FORM_START_FLOOR form_starts
+     with ZERO lead_submitted in WINDOW_HOURS. Treated as a SUSPICION, never a
+     verdict.
 
-Read-only against Supabase (service role via PostgREST). Sends via Resend.
-Exit 1 if any check trips (so the CI run is visibly red too), else 0.
+  3) PROBE (DETERMINISTIC, only runs when 2 trips): submit a test-flagged lead
+     through the real server route the live form posts to, then delete the row.
+     Probe OK => the suspicion was a FALSE ALARM (quiet period, not breakage) and
+     the run stays green. Probe FAILS => capture is genuinely broken.
+
+Escalation: NO email from here, ever (4 uninformative mails/day is how a monitor
+gets ignored). The run goes red only on a genuine P0. Everything else is written
+to the GitHub step summary and re-run by the weekly caretaker, which is the layer
+that reasons about it and emails only when the finding set changes.
+
+Exit 1 only on P0 (bundle corrupted, or the probe cannot submit a lead). Exit 0 on
+a false alarm, a healthy run, or an inconclusive one.
 
 Env (GitHub Actions secrets / local .env):
-  SUPABASE_URL, SUPABASE_KEY (or SUPABASE_SERVICE_ROLE_KEY)  -- data queries
-  RESEND_API_KEY                                              -- alert email (optional; logs if unset)
-  TRIPWIRE_NOTIFY_TO (default operator inbox), RESEND_FROM_EMAIL
+  SUPABASE_URL, SUPABASE_KEY (or SUPABASE_SERVICE_ROLE_KEY)  -- data queries + probe cleanup
 Tunables: TRIPWIRE_WINDOW_HOURS (24), TRIPWIRE_FORM_START_FLOOR (5),
-          TRIPWIRE_SITE (property), TRIPWIRE_BASE_URL.
+          TRIPWIRE_SITE (property), TRIPWIRE_BASE_URL, TRIPWIRE_NO_PROBE (1 = skip).
 """
 import datetime
 import json
@@ -45,16 +53,13 @@ SITE = os.environ.get("TRIPWIRE_SITE", "property")
 BASE = os.environ.get("TRIPWIRE_BASE_URL", "https://www.propertytaxpartners.co.uk").rstrip("/")
 WINDOW_HOURS = int(os.environ.get("TRIPWIRE_WINDOW_HOURS", "24"))
 FORM_START_FLOOR = int(os.environ.get("TRIPWIRE_FORM_START_FLOOR", "5"))
+# UTC hours in which the paid probe may run. The workflow fires at 00/06/12/18,
+# so {0} means once a day. Widen to {0,6,12,18} once the route stops charging
+# for test leads.
+PROBE_HOURS = {int(h) for h in os.environ.get("TRIPWIRE_PROBE_HOURS", "0").split(",") if h.strip()}
 
 SUPABASE_URL = (os.environ.get("SUPABASE_URL") or f"https://{REF}.supabase.co").strip().rstrip("/")
 SERVICE_KEY = (os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or os.environ.get("SUPABASE_KEY") or "").strip()
-RESEND_API_KEY = (os.environ.get("RESEND_API_KEY") or "").strip()
-FROM_EMAIL = (os.environ.get("RESEND_FROM_EMAIL") or "leads@propertytaxpartners.co.uk").strip()
-NOTIFY_TO = (
-    os.environ.get("TRIPWIRE_NOTIFY_TO")
-    or os.environ.get("LEADS_NOTIFY_TO_PROPERTY")
-    or "junayd@ashfieldtrading.com"
-).strip()
 
 
 def _since_iso(hours: int) -> str:
@@ -100,11 +105,18 @@ def check_bundle():
                     return False, f"inlined Supabase URL is CORRUPTED (trailing {nxt!r}) -> client lead capture is BROKEN"
                 idx = t.find(marker, idx + 1)
         if not found:
-            # ponytail: leads now submit via the server route, not an inlined client
-            # Supabase URL — probe the API instead of failing on an absent marker.
+            # Expected, and it is the healthy state. Every lead surface posts to
+            # /api/leads/submit now, so no client-side Supabase config is shipped
+            # and the 2026-06-24 class (corrupted NEXT_PUBLIC_* paste breaking
+            # client inserts) is unreachable by construction. The scan is kept as a
+            # regression guard: if this marker ever comes BACK, a client insert path
+            # has been reintroduced and the corruption class is live again.
             r = httpx.post(BASE + "/api/leads/submit", json={}, timeout=30)
             if r.status_code == 400 and "error" in r.text:
-                return True, "no inlined Supabase URL (server-route capture); /api/leads/submit healthy (400 validation)"
+                return True, (
+                    "no client-side Supabase config shipped (server-route capture, as intended); "
+                    "/api/leads/submit healthy (400 validation)"
+                )
             return False, f"/api/leads/submit unhealthy: HTTP {r.status_code} {r.text[:120]!r}"
         return True, "inlined Supabase URL is clean"
     except Exception as e:
@@ -124,56 +136,132 @@ def check_flatline():
     return (not tripped), detail, stats
 
 
-def send_alert(subject: str, body: str) -> bool:
-    if not RESEND_API_KEY:
-        print(f"[tripwire] ALERT (email NOT sent — RESEND_API_KEY unset):\n  {subject}\n  {body}")
-        return False
-    r = httpx.post(
-        "https://api.resend.com/emails",
-        headers={"Authorization": f"Bearer {RESEND_API_KEY}", "Content-Type": "application/json"},
-        json={"from": f"Lead Tripwire <{FROM_EMAIL}>", "to": [NOTIFY_TO], "subject": subject, "text": body},
-        timeout=30,
-    )
-    ok = r.status_code in (200, 201)
-    print(f"[tripwire] email -> {NOTIFY_TO}: {r.status_code} {'OK' if ok else r.text[:200]}")
-    return ok
+def probe_submit():
+    """(ok, detail). Submit a test-flagged lead through the REAL server route the
+    live form posts to, then delete it. This is the arbiter: it distinguishes a
+    quiet period from a broken submit path, which no traffic statistic can.
+
+    Non-polluting: source='test' sets is_test, which the notify trigger skips and
+    the operator email/dashboard/billing exclude; the row is deleted (child rows
+    cascade) and the fixed probe email means the 24h dedupe caps the blast radius
+    at one row even if a delete ever fails.
+
+    Non-BILLING is a separate problem and the payload is chosen for it. The submit
+    route runs verifyLead on every lead: a parseable UK number costs a Twilio
+    Lookup and, where EMAIL_VERIFY_API_KEY is set, the address costs a ZeroBounce
+    credit. A monitor that quietly spends money four times a day is its own
+    incident, so the phone is deliberately unparseable by toE164UK (11 digits, no
+    leading 0 or +, so `digits(phone) >= 10` still passes validation but the
+    lookup short-circuits before Twilio). The email still costs a credit until the
+    route-level is_test skip ships, which is why the probe is capped to once a day
+    below. Remove PROBE_HOURS once that deploy lands.
+    """
+    payload = {
+        "source": "test",
+        "qa": True,
+        "skip_verification": True,  # honoured only for test leads; see the route
+        "full_name": "Tripwire Probe",
+        "email": "tripwire-probe@example.com",
+        "phone": "99999999999",
+        "role": "Landlord",
+        "message": "Automated lead-capture tripwire probe, please ignore.",
+    }
+    try:
+        r = httpx.post(f"{BASE}/api/leads/submit", json=payload, timeout=60)
+        body = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+    except Exception as e:
+        return False, f"probe POST to /api/leads/submit failed: {e}"
+
+    lead_id = body.get("leadId") if isinstance(body, dict) else None
+    if lead_id and SERVICE_KEY:
+        try:
+            httpx.delete(
+                f"{SUPABASE_URL}/rest/v1/leads",
+                params={"id": f"eq.{lead_id}"},
+                headers={"apikey": SERVICE_KEY, "Authorization": f"Bearer {SERVICE_KEY}"},
+                timeout=30,
+            )
+        except Exception as e:
+            print(f"[tripwire] probe cleanup failed (row is is_test, harmless): {e}")
+
+    if r.status_code == 200 and isinstance(body, dict) and body.get("success"):
+        return True, "synthetic lead accepted end-to-end (row written, then removed)"
+    return False, f"/api/leads/submit rejected a valid lead: HTTP {r.status_code} {r.text[:160]!r}"
+
+
+def summary(lines) -> None:
+    """Persist the verdict where it can be read later without an email: the run's
+    step summary (kept with the run for 90 days) and stdout for the caretaker."""
+    text = "\n".join(lines)
+    print(text)
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if path:
+        try:
+            with open(path, "a", encoding="utf-8") as fh:
+                fh.write(text + "\n")
+        except Exception:
+            pass
 
 
 def main() -> None:
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    alerts = []
+    out = [f"### {SITE} lead-capture tripwire — {now}"]
+    p0 = []
 
     bundle_ok, bundle_detail = check_bundle()
-    print(f"[tripwire] bundle: {'OK' if bundle_ok else 'FAIL'} -> {bundle_detail}")
+    out.append(f"- bundle: {'OK' if bundle_ok else 'FAIL'} - {bundle_detail}")
     if not bundle_ok:
-        alerts.append(("P0", f"Bundle: {bundle_detail}"))
+        p0.append(f"Bundle: {bundle_detail}")
 
     stats = {}
+    flat_ok = True
     if SERVICE_KEY:
         try:
             flat_ok, flat_detail, stats = check_flatline()
-            print(f"[tripwire] flatline: {'OK' if flat_ok else 'FAIL'} -> {flat_detail}")
-            if not flat_ok:
-                alerts.append(("P1", f"Flatline: {flat_detail}"))
+            out.append(f"- flatline: {'OK' if flat_ok else 'SUSPECT'} - {flat_detail}")
         except Exception as e:
-            print(f"[tripwire] flatline: SKIPPED (query error: {e})")
+            out.append(f"- flatline: SKIPPED (query error: {e})")
     else:
-        print("[tripwire] flatline: SKIPPED (no Supabase service key in env)")
+        out.append("- flatline: SKIPPED (no Supabase service key in env)")
 
-    if alerts:
-        sev = "P0" if any(a[0] == "P0" for a in alerts) else "P1"
-        subject = f"[{sev}] {SITE} lead-capture tripwire tripped"
-        body = (
-            f"The {SITE} lead-capture tripwire fired at {now} (UTC).\n\n"
-            + "\n".join(f"- [{a[0]}] {a[1]}" for a in alerts)
-            + (f"\n\nStats: {json.dumps(stats)}" if stats else "")
-            + f"\n\nNext: try submitting the form at {BASE}/contact, and check the Property Vercel env"
-            + " (NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY) for a trailing newline.\n"
+    # The probe only runs when the heuristic is suspicious AND at most once a day
+    # (see probe_submit: it still costs an email-verification credit until the
+    # route-level is_test skip is deployed). The 6-hourly bundle check already
+    # catches a dead route in between, so the cap only delays confirmation of the
+    # rarer "route answers but cannot insert" case.
+    probe_window = datetime.datetime.now(datetime.timezone.utc).hour in PROBE_HOURS
+    if not flat_ok and probe_window and os.environ.get("TRIPWIRE_NO_PROBE") != "1":
+        probe_ok, probe_detail = probe_submit()
+        out.append(f"- probe: {'OK' if probe_ok else 'FAIL'} - {probe_detail}")
+        if probe_ok:
+            out.append(
+                "- **verdict: FALSE ALARM** - capture verified working; the flatline is a"
+                " quiet period (weekend/overnight submit rate is 0-1/day). No action."
+            )
+        else:
+            p0.append(f"Probe: {probe_detail} (flatline corroborated)")
+    elif not flat_ok:
+        why = "TRIPWIRE_NO_PROBE=1" if os.environ.get("TRIPWIRE_NO_PROBE") == "1" else (
+            f"outside the once-a-day probe window (UTC hours {sorted(PROBE_HOURS)})"
         )
-        send_alert(subject, body)
-        sys.exit(1)
+        out.append(f"- probe: SKIPPED ({why}) - flatline unarbitrated, deferred")
 
-    print("[tripwire] all checks healthy")
+    if stats:
+        out.append(f"- stats: `{json.dumps(stats)}`")
+
+    if p0:
+        out.append("- **verdict: P0, lead capture is BROKEN**")
+        out += [f"  - {a}" for a in p0]
+        out.append(
+            f"- next: submit the form at {BASE}/contact, then check the Property Vercel env"
+            " (NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY) for a trailing newline."
+        )
+        summary(out)
+        sys.exit(1)  # the ONLY red run: a verified broken money path
+
+    if flat_ok:
+        out.append("- **verdict: healthy**")
+    summary(out)
     sys.exit(0)
 
 
