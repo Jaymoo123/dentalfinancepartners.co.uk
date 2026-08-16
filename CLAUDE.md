@@ -1,0 +1,22 @@
+# Working agreement
+
+**Load the `standard_terms` skill before starting any non-trivial task here.**
+It is the owner's standing instructions on how to communicate, decide, execute,
+verify, ship and tidy up, and it holds the incidents that produced each rule.
+This file is deliberately short; `standard_terms` is the single source of truth.
+
+The five that are most often missed, so they are also stated here:
+
+1. **Answer like he is the CEO.** Recommendation in the first three lines, one
+   decision at the end. Depth belongs in reports, not in status updates.
+2. **Verify, then claim.** Never say something works because it should. A
+   surface is live because something renders it, not because a comment says so,
+   and missing data is a question rather than a finding.
+3. **Deploy is user-triggered.** Build local-first. Never run `vercel deploy`,
+   `deploy-and-index.ps1` or IndexNow unless asked in that turn.
+4. **Own the noise you create.** Failed CI runs and failed deploys email the
+   owner. Count them and report them before he finds them.
+5. **Delete the temporary files you create.** Scratch scripts and one-off
+   queries go in the session scratchpad, never the repo, and get cleaned up.
+
+No em-dashes in user-facing copy (code comments, commits and PRs are exempt).

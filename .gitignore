@@ -93,6 +93,8 @@ Thumbs.db
 !.claude/settings.json
 !.claude/commands/
 .claude/commands/.local/
+# Skills are working agreements, not harness state - they must travel with the repo.
+!.claude/skills/
 
 # Per-site IndexNow queues (transient, drained on each --from-queue run)
 .indexnow_queue*
