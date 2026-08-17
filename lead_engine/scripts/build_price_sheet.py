@@ -81,11 +81,16 @@ def tier_rows(cfg):
             price = (f"{tiers.gbp(t['price'])} shared · "
                      f"{tiers.gbp(t['price'] * cfg['exclusive_multiplier'])} exclusive")
         elif "price" in t:
-            price = f"{tiers.gbp(t['price'])} per claimed lead"
+            # The adjacent lane is always shared: claim.py refuses an exclusive claim on
+            # it, so the price sheet and the agreement must not imply one is on offer.
+            price = f"{tiers.gbp(t['price'])} per claimed lead, shared only"
         else:  # raw batch pricing
             lo, hi = t["batch_price_range"]
-            price = (f"~{tiers.gbp(t['price_per_lead_equiv'])} per lead, sold as a monthly "
-                     f"batch ({tiers.gbp(lo)} to {tiers.gbp(hi)})")
+            # A determinable unit price, because a contract charges "the Raw price per
+            # lead". The range is the typical batch total, not the price itself.
+            price = (f"{tiers.gbp(t['price_per_lead_equiv'])} per lead in the batch, "
+                     f"invoiced monthly; a typical batch is "
+                     f"{tiers.gbp(lo)} to {tiers.gbp(hi)}")
         if "examples" in t:
             what = ", ".join(t["examples"])
         elif t["id"] == "adjacent":

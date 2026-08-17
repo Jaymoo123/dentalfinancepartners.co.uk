@@ -36,7 +36,7 @@ Buyer-facing consequence, stated on the price sheet: "up to 3 firms" and "locked
 
 - Leads are **shared by default**: up to `claim_slots_per_lead` (3) firms may claim each lead, first come, first served. The redacted ping goes to the whole pool; there is no cap on who may attempt a claim, only on how many claims succeed.
 - A lead's **price is fixed at its first claim**. Every firm claiming that lead pays the same price.
-- Any lead **not yet claimed** may be claimed **exclusively at `exclusive_multiplier` (3x) the current price**. An exclusive claim locks the lead: it is delivered to no one else and all slots are consumed. Rationale (stated in the terms): the shared price assumes up to 3 firms, so exclusivity is priced as buying out all three slots.
+- Any lead **not yet claimed** may be claimed **exclusively at `exclusive_multiplier` (3x) the current price**. Exclusivity exists on the accounting lane only (`claim.py` rejects `--exclusive` on the adjacent lane). An exclusive claim consumes all accounting slots, so no other accounting firm receives the lead, but it does not close the adjacent lane: up to `adjacent_claim_slots_per_lead` (3) non-competing firms may still claim it. Rationale (stated in the terms): the shared price assumes up to 3 firms, so exclusivity is priced as buying out all three accounting slots.
 - The **race decides**. If a shared claim lands first, exclusivity is gone for that lead; the would-be exclusive firm is offered a shared slot at the shared price instead, with no premium and no credit. The 3x price is only ever charged when the exclusive claim wins.
 
 ## Raw batch: Bulk Supply, not a Referral
@@ -57,7 +57,7 @@ The Raw tier is structurally different from every other tier and the legal pack 
 
 ## Credit terms
 
-Per the standard terms (`config/standard_terms.md`, reproduced verbatim on the price sheet, delivery footers and invoices): credits, never refunds, **apply to exclusive claims only**; shared and Raw leads are sold as seen. A shared lead goes to multiple firms at a lower price, so a "dead lead" claim is neither verifiable nor refundable across several buyers; the credit protection is part of what the 3x exclusive price buys. Grounds are unchanged: dead or unreachable contact details or an enquiry materially different from its description; "no response" credits require evidence of 7 to 9 contact attempts over 14 days; leads remain chargeable if the enquirer has spoken with another adviser unless formally engaged before enquiring.
+Per the standard terms (`config/standard_terms.md`, reproduced verbatim on the price sheet, on invoices and in Schedule 1 of the partner agreement): credits, never refunds, **apply to exclusive claims only**; shared and Raw leads are sold as seen. A shared lead goes to multiple firms at a lower price, so a "dead lead" claim is neither verifiable nor refundable across several buyers; the credit protection is part of what the 3x exclusive price buys. Grounds are unchanged: dead or unreachable contact details or an enquiry materially different from its description; "no response" credits require evidence of at least 7 genuine contact attempts across at least 5 separate days in the 14 days after delivery, the first within 2 working days, using every channel delivered (agreement clause 6.5(c) is the operative version); leads remain chargeable if the enquirer has spoken with another adviser unless formally engaged before enquiring.
 
 (Credit reasons in the ledger: `spam_bot`, `duplicate_30d`, `wrong_category`, `dead_contact`.)
 

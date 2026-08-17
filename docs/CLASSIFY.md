@@ -5,20 +5,20 @@ Canonical tiering rubric for every enquiry across the Ashfield portfolio. Prices
 <!-- philosophy:start -->
 ## How leads are tiered
 
-A lead's tier is determined by the type of professional work the enquiry describes, in the enquirer's own words. It is never based on our estimate of what the client might be worth, and it is never adjusted to suit a price.
+A lead's tier is determined by the type of professional work the enquiry describes, in the enquirer's own words. It is never based on the Supplier's estimate of what the client might be worth, and it is never adjusted to suit a price.
 
-Four rules make the system checkable:
+Four rules make the grading checkable:
 
 1. **Case type, not opinion.** Each tier is a fixed, published list of case types. An enquiry is graded by matching what it asks for against those lists. Any delivered lead can be checked against the list for its tier.
-2. **When in doubt, grade down.** An enquiry that sits between two tiers, or is too vague to place confidently, takes the lower tier. Ambiguity always prices in the buyer's favour, never ours.
+2. **When in doubt, grade down.** An enquiry that sits between two tiers, or is too vague to place confidently, takes the lower tier. Ambiguity always resolves in the claiming firm's favour, never the Supplier's.
 3. **Verification is separate from tier.** Tiering never rewards a lead for being verified. Unverified enquiries are not tiered or sold individually at all; they are only eligible for the Raw batch after the nurture window ends.
-4. **One rubric, applied everywhere.** The same rubric grades every enquiry from every site for every buyer, and the classification is recorded against the lead at the time it is graded.
+4. **One rubric, applied everywhere.** The same rubric grades every enquiry from every site for every receiving firm, and the classification is recorded against the lead at the time it is graded.
 <!-- philosophy:end -->
 
 <!-- rubric:start -->
 ## Tier signals
 
-Grade by the work the enquiry asks for. The lists below are the published case-type lists referred to in the rules above.
+A lead is graded by the work the enquiry asks for. The lists below are the published case-type lists referred to in the rules above.
 
 ### Advisory
 Structural or planning work where the adviser's judgement is the product:
@@ -44,7 +44,7 @@ Straightforward, single-issue compliance:
 - Verified enquiries too vague to evidence anything more (grade-down destination)
 
 ### Grey-zone rule
-If an enquiry could be read as either of two tiers, grade the lower one. Examples: "I have a rental property and need my return done" mentions no complicating factor, so it is Essential, not Standard. "Should I put my two rentals in a company?" asks a structural question, so it is Advisory; but "I have two rentals and need help with my taxes" evidences only multiple-property compliance, so it is Standard, not Advisory.
+If an enquiry could be read as either of two tiers, the lower tier applies. Examples: "I have a rental property and need my return done" mentions no complicating factor, so it is Essential, not Standard. "Should I put my two rentals in a company?" asks a structural question, so it is Advisory; but "I have two rentals and need help with my taxes" evidences only multiple-property compliance, so it is Standard, not Advisory.
 
 ### Out of scope for tiering
 - **Adjacent** is a delivery lane (the same lead offered to non-competing professions), not a grade; it never changes the accounting tier.

@@ -6,9 +6,9 @@ Dated: the date of the last signature below.
 
 (1) ASHFIELD TRADING LIMITED (company number 16358723), whose registered office is at 20 Ashfield Avenue, Shipley, BD18 3AL (the "Supplier"); and
 
-(2) the firm or practitioner identified in the Recipient column of the details table, and signing in the signature block, at the end of this agreement (the "Recipient"). The Recipient column must be completed in full on or before signature; until it is completed, no agreement is formed,
+(2) the firm or practitioner identified in the Recipient column of the details table, and signing in the signature block, at the end of this agreement (the "Recipient"),
 
-each a "party" and together the "parties".
+each a "party" and together the "parties". The Recipient column must be completed in full on or before signature; until it is completed, no agreement is formed.
 
 ## BACKGROUND
 
@@ -26,7 +26,7 @@ IT IS AGREED as follows.
 
 1.1 In this agreement:
 
-"Alert" has the meaning given in Schedule 2: a summary of an enquiry offered to firms in the Network, from which the enquirer's name, telephone number, email address and enquiry message have been removed.
+"Alert" has the meaning given in Schedule 2: a description of an enquiry offered to firms in the Network which carries the enquiry in the enquirer's own words with names, telephone numbers, email addresses, postcodes, web addresses and company names removed, and which carries no contact details and no unredacted enquiry.
 
 "Billing Period" means a calendar month.
 
@@ -57,8 +57,6 @@ IT IS AGREED as follows.
 "Shared Claim" means a Claim that is not an Exclusive Claim.
 
 "Shared Data" has the meaning given in Schedule 2 and is specified in Annex A.
-
-"Standard Terms" means the Supplier's published standard terms, reproduced verbatim in Schedule 1, on the Price Sheet, in every Delivery and on every invoice.
 
 1.2 Terms defined in Schedule 2, including "Working Day", have the same meaning in clauses 1 to 21 unless the context requires otherwise, and are defined once only. Clause headings are for convenience only. References to legislation include any amendment or replacement. "Including" is not limiting.
 
@@ -94,11 +92,11 @@ IT IS AGREED as follows.
 
 4.2 Claims run in separate Lanes, and the Lanes are independent of each other. A Claim on one Lane never consumes a slot on another. The Lanes, and the cap on each, are stated in Schedule 1. Firms on a different Lane are in a different profession and do not compete with the Recipient for the work the enquirer is asking about.
 
-4.3 A Lead which no firm has yet Claimed on the Recipient's Lane may be Claimed exclusively. An accepted Exclusive Claim locks that Lane: the Supplier will not Deliver that Lead to any other firm on that Lane. The price of an Exclusive Claim is the multiple of the Claim Price stated in Schedule 1.
+4.3 Exclusivity is available on the accounting Lane only, and the adjacent Lane is always shared. A Lead which no firm has yet Claimed on the accounting Lane may be Claimed exclusively by a Recipient claiming on that Lane. An accepted Exclusive Claim locks that Lane: the Supplier will not Deliver that Lead to any other firm on it. The price of an Exclusive Claim is the multiple of the Claim Price stated in Schedule 1.
 
 4.4 The race decides, and the Supplier will not manipulate it. If a Shared Claim on that Lane is accepted first, exclusivity is no longer available for that Lead; the Recipient may still take a Shared Claim at the Shared price, and the exclusive premium is not charged. The exclusive premium is charged only where the Exclusive Claim is the first accepted Claim on that Lane.
 
-4.5 An Exclusive Claim closes the Recipient's own Lane only. It does not prevent the Supplier offering or Delivering the same Lead on another Lane to a different profession, and the Recipient acknowledges this when making an Exclusive Claim.
+4.5 An Exclusive Claim closes the accounting Lane only. It does not prevent the Supplier offering or Delivering the same Lead on the adjacent Lane to a different profession, and the Recipient acknowledges this when making an Exclusive Claim.
 
 4.6 The Recipient is not told which other firms, if any, have Claimed a Lead, and the Supplier will not disclose the identity of any other firm in the Network to the Recipient.
 
@@ -132,7 +130,7 @@ IT IS AGREED as follows.
 
 (b) Materially different from the description. The Delivered Lead differs from the Alert the Recipient Claimed from in a way fundamental to the nature or subject of the enquiry, such that a reasonable specialist firm, shown that difference, would not have Claimed it. Immaterial variance, further detail consistent with the Alert, or the Lead proving less valuable than the Recipient hoped, is not a material difference.
 
-(c) No response after sustained pursuit. The contact details are functional but the enquirer does not engage at all, and the Recipient evidences a genuine, prompt and sustained pursuit, being all of: no fewer than 7 and ordinarily up to 9 genuine contact attempts within the 14 days following Delivery; the first attempt within 2 Working Days of Delivery; all attempts made to the details Delivered; attempts using every channel Delivered that is available for pursuit, including at least one telephone call and at least one written message where both were Delivered; and attempts spread across no fewer than 5 separate days within the period. Attempts clustered so as to manufacture the count do not qualify. The credit is not available if the enquirer engaged in any way during the period, including any reply by any channel, an answered call or a booking.
+(c) No response after sustained pursuit. The contact details are functional but the enquirer does not engage at all, and the Recipient evidences a genuine, prompt and sustained pursuit, being all of: no fewer than 7 genuine contact attempts within the 14 days following Delivery; the first attempt within 2 Working Days of Delivery; all attempts made to the details Delivered; attempts using every channel Delivered that is available for pursuit, including at least one telephone call and at least one written message where both were Delivered; and attempts spread across no fewer than 5 separate days within the period. Attempts clustered so as to manufacture the count do not qualify. The credit is not available if the enquirer engaged in any way during the period, including any reply by any channel, an answered call or a booking.
 
 (d) Not genuine. The enquiry is spam, bot-generated or fabricated and is not from a genuine human enquirer. A genuine human enquiry is not within this ground merely because the Recipient considers it low value or would prefer not to act on it.
 
@@ -140,7 +138,7 @@ IT IS AGREED as follows.
 
 6.6 Already engaged elsewhere. A Lead is credited where, before submitting the enquiry, the enquirer had already formally engaged another adviser to carry out the specific work the enquiry is about. It is not enough that the enquirer has an existing general accountant or adviser for other matters. An enquirer who engages another adviser at or after the time of enquiring, or has done so by the time the Recipient makes contact, is a matter of contact timing and not of Lead quality, and remains chargeable; the Recipient should respond promptly to minimise this. A flag under this clause requires the enquirer's own confirmation, volunteered unprompted, that the prior engagement pre-dates the enquiry. The Supplier will provide the enquiry date and time from the Delivery Log on request.
 
-6.7 Flag mechanics. A flag must be in writing to the Supplier's contact in the details table; must be made within 3 Working Days of Delivery for grounds (a), (b), (d) and (e), within the 14-day window for ground (c), and promptly on becoming aware and within 14 days of Delivery for clause 6.6; must identify the Lead by its Delivery Log reference; must state the single ground relied on; and must include the supporting evidence. Time is of the essence. A late, unevidenced or insufficiently evidenced flag is not valid and the Claim Price remains payable. A Lead may be credited on one ground only, and a Lead once credited is not also billable.
+6.7 Flag mechanics. A flag must be in writing to the Supplier's contact in the details table; must be made within 3 Working Days of Delivery for grounds (a), (b), (d) and (e), within 3 Working Days after the end of the 14-day pursuit period for ground (c), and promptly on becoming aware and within 14 days of Delivery for clause 6.6; must identify the Lead by its Delivery Log reference; must state the single ground relied on; and must include the supporting evidence. Time is of the essence. A late, unevidenced or insufficiently evidenced flag is not valid and the Claim Price remains payable. A Lead may be credited on one ground only, and a Lead once credited is not also billable.
 
 6.8 Review. The Supplier will review each valid, evidenced flag reasonably and in good faith and notify its determination within 10 Working Days. For ground (a) only, if the Supplier does not respond within 10 Working Days of a valid, evidenced flag, the flag is treated as accepted. For every other ground the Supplier's silence is not acceptance. An accepted flag is credited against the next invoice, or refunded within 30 days if no further invoice is due.
 
@@ -160,7 +158,7 @@ IT IS AGREED as follows.
 
 7.5 Reconciliation. Within 10 Working Days of each invoice the Recipient will notify the Supplier in writing of any discrepancy, identifying the affected Leads. The parties will reconcile in good faith and any agreed over-charge is credited or refunded. Absent a timely, substantiated notice, the Delivery Log is the agreed record for that Billing Period.
 
-7.6 Audit. No more than twice in any 12-month period, on reasonable written notice and under confidentiality, the Recipient or its auditors may inspect the Delivery Log and the Supplier's lawful-basis records for the preceding 12 months, to verify the invoiced Claims and the warranty in clause 11.3. The Recipient bears its own costs, unless a material discrepancy or non-compliance is found, in which case the Supplier bears the reasonable cost.
+7.6 Audit. No more than twice in any 12-month period, on reasonable written notice and under confidentiality, the Recipient or its auditors may inspect the extracts of the Delivery Log recording the Recipient's own Alerts, Claims and Deliveries, and the Supplier's lawful-basis records for those Leads, for the preceding 12 months, to verify the invoiced Claims and the warranty in clause 11.3. The audit does not extend to any other firm's Claims or identity, which clause 4.6 requires the Supplier not to disclose, and the Supplier may redact accordingly. The Recipient bears its own costs, unless a material discrepancy or non-compliance is found, in which case the Supplier bears the reasonable cost.
 
 ## 8. LATE PAYMENT AND SUSPENSION
 
@@ -216,7 +214,7 @@ IT IS AGREED as follows.
 
 12.4 Subject to clauses 12.2 and 12.5, each party's total aggregate liability under this agreement is limited to the greater of £10,000 and the total Charges paid by the Recipient in the 12 months before the claim first arose.
 
-12.5 The cap in clause 12.4 does not apply to liability under the data protection indemnity in clause 13. That liability is capped at £50,000 in aggregate, which is the same cap as paragraph 14.2 of Schedule 2 and is stated here so that the two layers cannot diverge.
+12.5 The cap in clause 12.4 does not apply to liability under the data protection indemnity in clause 13. That liability is capped at £50,000 in aggregate, which is the same cap as paragraph 14.2 of Schedule 2.
 
 12.6 Each party will use reasonable endeavours to mitigate its losses. The caps apply to the aggregate of all claims, and the parties agree the limitations in this clause are reasonable.
 
@@ -308,24 +306,25 @@ SIGNED for and on behalf of the parties:
 | Item | Supplier | Recipient |
 |---|---|---|
 | Firm, and registered number if a body corporate or LLP (for a sole practitioner, the individual's full name and any trading name) | Ashfield Trading Limited (company number 16358723), operating each Site under that Site's trading name, and the Network under the name Ashfield Partner Network | |
+| Lane the Recipient claims on, and the profession or professions it practises in. This fixes which Schedule 1 prices apply: the accounting and tax lane, or the adjacent lane | Not applicable | |
 | Nominated Address for Deliveries, which Schedule 2 calls Referrals (secure endpoint or email) | Not applicable; the Supplier does not receive Deliveries | |
 | Notices, flags and data protection contact | Mohammed Junayd Moughal, junayd@ashfieldtrading.com | |
-| Sites covered by this agreement | All specialist enquiry websites operated by the Supplier, unless a narrower list is stated here: | Not applicable |
+| Sites covered by this agreement | All specialist enquiry websites operated by the Supplier, unless a narrower list is agreed under paragraph 8 of Schedule 1 | Not applicable |
 <!-- schedule1 -->
 
 # SCHEDULE 2 - DATA SHARING AND DATA PROTECTION
 
-This Schedule is the data sharing agreement between the parties as independent Controllers. It is reproduced from the Supplier's standing Data Sharing Agreement without alteration, so that it says the same thing to every firm in the Network and can be reviewed on its own.
+This Schedule is the data sharing agreement between the parties as independent Controllers.
 
 How to read this Schedule.
 
-(i) A reference in this Schedule to a numbered clause or paragraph is to the correspondingly numbered provision of this Schedule, not of clauses 1 to 21, unless it says otherwise. This Schedule is reproduced from a standalone agreement in which its provisions were clauses, so it calls them clauses; where the rest of this agreement refers to them it calls them paragraphs. They are the same provisions.
+(i) A reference in this Schedule to a numbered clause or paragraph is to the correspondingly numbered provision of this Schedule, not of clauses 1 to 21, unless it says otherwise. Within this Schedule its provisions are called clauses; elsewhere in this agreement the same provisions are called paragraphs of Schedule 2. They are the same provisions.
 
 (ii) A reference in this Schedule to "this agreement" means the agreement as a whole, including clauses 1 to 21 and Schedule 1.
 
-(iii) Where this Schedule conflicts with clauses 1 to 21 on a data protection matter, this Schedule prevails (clause 9.1). On any other matter, clauses 1 to 21 prevail.
+(iii) Where this Schedule conflicts with clauses 1 to 21 on a data protection matter, this Schedule prevails, as clause 9.1 in the body of this agreement provides. On any other matter, clauses 1 to 21 prevail.
 
-(iv) This Schedule does not repeat the term, general or governing law provisions, because clauses 16, 17, 20 and 21 cover that ground once for the whole agreement. Its numbering therefore runs 1 to 12 and then 14. Paragraph 14 (liability) applies in full, and its £50,000 cap on data protection liability is the same cap stated at clause 12.5.
+(iv) This Schedule does not repeat the term, general or governing law provisions, which clauses 16, 17, 20 and 21 in the body of this agreement cover for the whole agreement. This Schedule contains no paragraph 13. Paragraph 14 (liability) applies in full, and its £50,000 cap on data protection liability is the same cap stated at clause 12.5 in the body of this agreement. Paragraph 14.1 and clause 13 in the body of this agreement indemnify the same ground: the conditions in clause 13.2 apply to a claim under either, and neither gives a second recovery for the same loss.
 
 (v) The parties' details are in the details table in the signature section above; this Schedule's references to a Details Block are to that party's column of it, and its references to the Nominated Address are to the address stated there.
 

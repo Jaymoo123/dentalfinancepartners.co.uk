@@ -7,14 +7,14 @@ Verified, specialist enquiries from a portfolio of UK tax and accounting informa
 
 ## How leads are tiered
 
-A lead's tier is determined by the type of professional work the enquiry describes, in the enquirer's own words. It is never based on our estimate of what the client might be worth, and it is never adjusted to suit a price.
+A lead's tier is determined by the type of professional work the enquiry describes, in the enquirer's own words. It is never based on the Supplier's estimate of what the client might be worth, and it is never adjusted to suit a price.
 
-Four rules make the system checkable:
+Four rules make the grading checkable:
 
 1. **Case type, not opinion.** Each tier is a fixed, published list of case types. An enquiry is graded by matching what it asks for against those lists. Any delivered lead can be checked against the list for its tier.
-2. **When in doubt, grade down.** An enquiry that sits between two tiers, or is too vague to place confidently, takes the lower tier. Ambiguity always prices in the buyer's favour, never ours.
+2. **When in doubt, grade down.** An enquiry that sits between two tiers, or is too vague to place confidently, takes the lower tier. Ambiguity always resolves in the claiming firm's favour, never the Supplier's.
 3. **Verification is separate from tier.** Tiering never rewards a lead for being verified. Unverified enquiries are not tiered or sold individually at all; they are only eligible for the Raw batch after the nurture window ends.
-4. **One rubric, applied everywhere.** The same rubric grades every enquiry from every site for every buyer, and the classification is recorded against the lead at the time it is graded.
+4. **One rubric, applied everywhere.** The same rubric grades every enquiry from every site for every receiving firm, and the classification is recorded against the lead at the time it is graded.
 
 ## Tiers and prices
 
@@ -23,8 +23,8 @@ Four rules make the system checkable:
 | Advisory | incorporation, ownership restructuring, CGT planning, SDLT, non-resident, CIO formation / charity structure, historic records reconstruction | £85 shared · £255 exclusive | ~25 |
 | Standard | landlord self assessment with complexity, SME accounts, mixed compliance + advice | £40 shared · £120 exclusive | ~45 |
 | Essential | straightforward returns, basic compliance | £15 shared · £45 exclusive | ~20 |
-| Adjacent | Any lead, offered to the non-accounting (brokers, IFAs, solicitors, consultants) lane in addition to accounting | £35 per claimed lead | varies |
-| Raw (unverified) | Unverified after 7-day nurture window only | ~£5 per lead, sold as a monthly batch (£75 to £125) | ~20 |
+| Adjacent | Any lead, offered to the non-accounting (brokers, IFAs, solicitors, consultants) lane in addition to accounting | £35 per claimed lead, shared only | varies |
+| Raw (unverified) | Unverified after 7-day nurture window only | £5 per lead in the batch, invoiced monthly; a typical batch is £75 to £125 | ~20 |
 
 \* Typical, not guaranteed.
 
@@ -39,11 +39,11 @@ Four rules make the system checkable:
 
 ## Standard terms
 
-- Each lead is offered as a redacted alert: the tier, case type, area, price and the enquiry in the enquirer's own words, with names, phone numbers, email addresses, postcodes, web addresses and company names removed. You decide from that. The unredacted enquiry and the enquirer's contact details are sent only if you claim it.
+- Each lead is offered as a redacted alert: the tier, case type, area, price and the enquiry in the enquirer's own words, with names, phone numbers, email addresses, postcodes, web addresses and company names removed. A claiming firm decides from that alone. The unredacted enquiry and the enquirer's contact details are sent only on a claim.
 - A billable lead is SMS and email verified, with full contact details (name, phone, email), a case description and a tier label, delivered in real time on claim.
-- Leads are shared: up to 3 firms may claim each lead on your lane, first come, first served. The same lead may also be claimed by up to 3 firms on the adjacent lane, which is a different profession that does not compete with you for the work, so at most 6 firms in total may receive it. A lead's price is fixed when it is first claimed; every firm claiming that lead pays the same price.
-- Any lead not yet claimed by another firm may be claimed exclusively, at 3 times its current price. An exclusive claim locks the lead to the claiming firm; it is delivered to no one else. Once any firm holds a shared claim on a lead, exclusivity is no longer available for that lead and it can only be claimed on shared terms.
+- Leads are shared: up to 3 firms may claim each lead on a claiming firm's own lane, first come, first served. The same lead may also be claimed by up to 3 firms on the adjacent lane, which is a different profession that does not compete for the same work, so at most 6 firms in total may receive it. A lead's price is fixed when it is first claimed, and every firm claiming that lead pays the same price.
+- Exclusivity is available on the accounting lane only; the adjacent lane is always shared. An accounting lead no firm has yet claimed on that lane may be claimed exclusively, at 3 times its current price. An exclusive claim locks the accounting lane, so no other accounting firm receives that lead. It does not close the adjacent lane, so the same lead may still go to up to 3 firms in a profession that does not compete for the same work. Once any firm holds a shared claim on the accounting lane, exclusivity is no longer available for that lead and it can only be claimed on shared terms.
 - No volume commitments or minimums, in either direction. Firms pay only for leads they claim.
-- Credits (never refunds) apply to exclusive claims only, on these grounds: dead or unreachable contact details; an enquiry materially different from the description; no response after sustained pursuit; an enquiry that is not genuine; a duplicate of a lead already billed to you in the previous 30 days; and an enquirer who had already formally engaged another adviser for that work before enquiring. A "no response" credit requires evidence of 7 to 9 contact attempts over 14 days. Merely having spoken to another adviser does not qualify: the lead is chargeable unless that adviser was formally engaged for the same work before the enquiry was made. Shared and Raw leads are sold as seen, no credits.
+- Credits (never refunds) apply to exclusive claims only, on these grounds: dead or unreachable contact details; an enquiry materially different from the description; no response after sustained pursuit; an enquiry that is not genuine; a duplicate of a lead already billed to the same firm in the previous 30 days; and an enquirer who had already formally engaged another adviser for that work before enquiring. A "no response" credit requires evidence of at least 7 genuine contact attempts across at least 5 separate days in the 14 days after delivery, the first within 2 working days, using every channel delivered; clause 6.5(c) of the agreement carries the conditions in full. Merely having spoken to another adviser does not qualify: the lead is chargeable unless that adviser was formally engaged for the same work before the enquiry was made. Shared and Raw leads are sold as seen, no credits.
 - Claimed leads are invoiced on the 1st of each month, in arrears, for the leads claimed in the previous month. Invoices are payable by bank transfer within 14 days of the invoice date. Delivery pauses on invoices 14 or more days overdue.
 - Prices are as published.

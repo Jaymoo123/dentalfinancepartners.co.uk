@@ -245,9 +245,9 @@ A.3 Not shared. For the avoidance of doubt, and because clause 7 limits the Shar
 
 B.1 Category-based, layered disclosure. Each Site identifies recipients only as a category, "our specialist partner network", and does not name any individual receiving firm. The disclosure is layered: the enquiry form carries a short notice which discloses on its face that the enquiry goes to firms in that network, and links to the Site's privacy policy, which carries the detail in B.4, including how many firms at most. The Supplier's LIA depends on both layers being present, and on the form notice conveying plural firms rather than a single nominated adviser.
 
-B.2 Enquiry-form acknowledgement. The lawful basis for the share is legitimate interests (clause 3), and submitting the enquiry is the affirmative act, so the wording is presented as an acknowledgement rather than a consent tick-box. On each enquiry form the Supplier will display the following, where {Brand} is the trading name of the Site on which the form appears:
+B.2 Enquiry-form acknowledgement. The lawful basis for the share is legitimate interests (clause 3), and submitting the enquiry is the affirmative act, so the wording is presented as an acknowledgement rather than a consent tick-box. On each enquiry form the Supplier will display the following, with the trading name of the Site on which the form appears in place of the words "This site":
 
-> "{Brand} will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time. See our Privacy Policy."
+> "This site will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time. See our Privacy Policy."
 
 Each receiving firm identifies itself to the enquirer in its own Article 14 notice at first contact (clause 5.2); the Site does not name it and does not link to any individual firm's privacy policy.
 
@@ -267,5 +267,5 @@ It will also state, in terms the enquirer can act on:
 
 (e) the processors the Supplier uses to operate the service, including hosting, email, SMS, an artificial-intelligence service used to grade and summarise enquiries, and a public-register lookup, and that processing is not exclusively within the United Kingdom.
 
-B.5 Condition. A Site whose enquiry form does not carry the disclosure and the privacy policy link in B.2, or whose privacy policy does not carry the disclosures in B.4 in full, must not have its enquiries entered into the partner network. Both layers are required. This mirrors the condition in the Supplier's LIA, which is not made out without them, and the second layer carries more of the weight under this wording than it did when the maximum number appeared on the form itself.
+B.5 Condition. A Site whose enquiry form does not carry the disclosure and the privacy policy link in B.2, or whose privacy policy does not carry the disclosures in B.4 in full, must not have its enquiries entered into the partner network. Both layers are required. This mirrors the condition in the Supplier's LIA, which is not made out without them.
 <!-- dsaannex:end -->

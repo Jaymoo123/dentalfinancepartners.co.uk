@@ -42,7 +42,7 @@ Anchor if asked "is £85 a lot?": an advisory lead is a single-digit percentage 
 - No volume commitments or minimums in either direction. Join free.
 - Invoiced on the 1st of each month for the previous month's claims, payable by bank transfer within 14 days. Nothing is payable on joining.
 - Leads are chargeable even if the enquirer has spoken to another adviser, unless they were formally engaged for that work before enquiring.
-- "No response" credits (exclusive only) need evidence of 7 to 9 contact attempts over 14 days.
+- "No response" credits (exclusive only) need evidence of at least 7 genuine contact attempts across at least 5 separate days in the 14 days after delivery, the first within 2 working days, using every channel delivered. Do not quote a lower bar on a call: clause 6.5(c) of the agreement is what they sign.
 
 ## Market context (where we sit vs what they may already use)
 

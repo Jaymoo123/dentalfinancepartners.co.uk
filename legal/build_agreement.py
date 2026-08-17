@@ -76,8 +76,8 @@ def schedule_1(cfg, rubric):
     return f"""# SCHEDULE 1 - COMMERCIAL TERMS
 
 The prices, caps and standard terms in this Schedule are the Supplier's published
-terms. They are the same terms shown on the price sheet, on every Delivery and on
-every invoice, and paragraph 6 reproduces them word for word.
+terms, and are the same terms shown on the Supplier's price sheet. In paragraphs 6 and
+7, a reference to a claiming firm or a receiving firm is a reference to the Recipient.
 
 ## 1. Prices (clause 5)
 
@@ -96,10 +96,11 @@ exclusive of VAT (clause 7.2) and may change on 30 days' notice, never retrospec
 | Accounting lane: maximum firms per lead | {acc_cap} |
 | Adjacent lane (non-accounting professions): maximum firms per lead | {adj_cap} |
 | Maximum firms that may receive any one enquiry | {acc_cap + adj_cap} |
-| Exclusive claim multiplier | {mult} times the lead's price at the time of the claim |
+| Exclusive claim multiplier, accounting lane only | {mult} times the lead's price at the time of the claim |
+| Exclusivity on the adjacent lane | Not available; that lane is always shared |
 
 The two lanes are independent: a claim on one never consumes a slot on the other
-(clause 4.2). An exclusive claim closes the claiming firm's own lane only (clause 4.5).
+(clause 4.2). An exclusive claim closes the accounting lane only (clause 4.5).
 The caps are also a data protection control and are fixed by paragraph 3.2 of Schedule 2.
 
 ## 3. Cascade (clause 5.3)
@@ -117,7 +118,8 @@ the raw batch.
 ## 4. Bulk Supply (Schedule 2, paragraph 3.6)
 
 Unverified enquiries which the Supplier was unable to verify become eligible, after the
-7-day follow-up window closes, for supply as a monthly batch at the Raw price above. A
+7-day follow-up window closes, for supply as a monthly batch at the Raw price per lead
+above, invoiced for each lead in the batch. A
 batch is supplied to one firm only, has no alert and no per-enquiry claim, and is sold as
 seen with no credits.
 
