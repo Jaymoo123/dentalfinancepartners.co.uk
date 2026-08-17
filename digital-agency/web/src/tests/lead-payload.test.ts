@@ -67,37 +67,24 @@ describe("healthCheckMessagePrefix", () => {
 describe("lead consent text", () => {
   const partner = nicheConfig.partner;
   const displayName = nicheConfig.display_name;
-  const partnerName = partner?.name ?? "";
 
-  // Replicates the static notice-only acknowledgement in site.ts (pool model,
-  // legitimate interests, re-referral disclosed).
+  // Replicates the in-house notice in site.ts.
   const consentText =
-    "Agency Founder Finance will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. Agency Founder Finance may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.";
+    "Agency Founder Finance will use your details to respond to your enquiry and to contact you about it. You can object at any time.";
 
   it("site display name is Agency Founder Finance", () => {
     expect(displayName).toBe("Agency Founder Finance");
   });
 
-  it("partner is present as a category label (generic partner network, not DJH)", () => {
-    expect(partner).not.toBeNull();
-    expect(partnerName).toBe("a firm from our specialist partner network");
+  it("no partner firm is configured (in-house since 2026-08-17)", () => {
+    expect(partner).toBeNull();
   });
 
-  it("consent text references a generic specialist partner network, not a named firm", () => {
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).not.toContain("Reflex");
-  });
-
-  // The LIA balancing test is only made out if the enquirer is told, before submitting,
-  // that more than one firm may receive their details and how many at most. These are
-  // the conditions in DSA Annex B.2 and B.5, not stylistic preferences.
-  it("consent text discloses multiple recipients and the maximum (pool model)", () => {
-    expect(consentText).toContain("More than one firm");
-    expect(consentText).toContain("up to three firms in the profession you are asking about");
-    expect(consentText).toContain("up to three in related professions");
-    expect(consentText).toContain("may be paid a fee");
+  it("consent text makes no third-party sharing claim", () => {
+    for (const banned of ["partner network", "shared with", "paid a fee", "passed to", "Reflex"]) {
+      expect(consentText).not.toContain(banned);
+    }
     expect(consentText).toContain("object at any time");
-    expect(consentText).toContain("By submitting this enquiry you confirm you understand this");
   });
 
   it("consent text does not promise single-firm handling", () => {

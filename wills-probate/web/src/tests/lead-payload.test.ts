@@ -20,16 +20,16 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("partner is the anonymous network category label, never a named firm", async () => {
+  it("no partner firm is configured (in-house since 2026-08-17)", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.partner?.name).toBe("a firm from our specialist partner network");
+    expect(siteConfig.partner).toBeNull();
   });
 
-  it("consent text carries sharing, re-referral and fee disclosures", async () => {
+  it("consent text makes no third-party sharing claim", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("specialist partner network");
-    expect(siteConfig.leadConsentText).toContain("passed to another firm in the network");
-    expect(siteConfig.leadConsentText).toContain("may receive a fee");
+    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
+      expect(siteConfig.leadConsentText).not.toContain(banned);
+    }
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {

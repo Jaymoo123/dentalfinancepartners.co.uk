@@ -19,21 +19,12 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text names a generic 'specialist partner network', never 'Reflex'", async () => {
+  it("consent text makes no third-party sharing claim (in-house since 2026-08-17)", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).not.toContain("Reflex");
-  });
-
-  it("consent text discloses onward re-referral within the network (notice-only pool model)", async () => {
-    const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain(
-      "may be passed to another firm in the network for the same purpose"
-    );
-    expect(siteConfig.leadConsentText).toContain(
-      "By submitting this enquiry you confirm you understand this"
-    );
+    for (const banned of ["partner network", "shared with", "paid a fee", "passed to", "Reflex"]) {
+      expect(consentText).not.toContain(banned);
+    }
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {

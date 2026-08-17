@@ -63,8 +63,7 @@ export default async function ThankYouPage({
             Thank you.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
-            Your enquiry is on its way to a specialist firm from our partner network, who may
-            contact you directly. You should hear back within one working day, usually the same day.
+            Your enquiry is with us and we will contact you directly. You should hear back within one working day, usually the same day.
           </p>
 
           {bookingToken ? (

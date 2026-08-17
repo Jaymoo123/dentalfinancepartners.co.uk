@@ -177,7 +177,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </>
         ) : null}
-        <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
+        <p>We use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
           <li><strong>Vercel:</strong> website hosting and content delivery.</li>
@@ -186,7 +186,7 @@ export default function PrivacyPolicyPage() {
           <li><strong>Twilio:</strong> sending the text messages we use to confirm your details.</li>
           <li>
             <strong>Anthropic, through the Vercel AI Gateway:</strong> reading your enquiry to grade the type of work it
-            describes and to write the one-line summary we show to firms.
+            describes and to write the one-line summary we use to triage it.
           </li>
           <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
         </ul>

@@ -52,22 +52,17 @@ describe("exitIntentMessagePrefix", () => {
 describe("lead consent text", () => {
   const displayName = nicheConfig.display_name;
 
-  // Replicates the notice-only derivation in site.ts (pool model).
-  const consentText = `${displayName} will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. ${displayName} may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.`;
+  // Replicates the in-house derivation in site.ts.
+  const consentText = `${displayName} will use your details to respond to your enquiry and to contact you about it. You can object at any time.`;
 
-  it("partner config carries the network category label, never a named firm", () => {
-    expect(nicheConfig.partner?.name).toBe("a firm from our specialist partner network");
+  it("no partner firm is configured (in-house since 2026-08-17)", () => {
+    expect(nicheConfig.partner).toBeNull();
   });
 
-  // The LIA balancing test is only made out if the enquirer is told, before submitting,
-  // that more than one firm may receive their details and how many at most. These are
-  // the conditions in DSA Annex B.2 and B.5, not stylistic preferences.
-  it("consent notice discloses the network, multiple recipients and the maximum", () => {
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).toContain("More than one firm");
-    expect(consentText).toContain("up to three firms in the profession you are asking about");
-    expect(consentText).toContain("up to three in related professions");
-    expect(consentText).toContain("may be paid a fee");
+  it("consent notice makes no third-party sharing claim", () => {
+    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
+      expect(consentText).not.toContain(banned);
+    }
     expect(consentText).toContain("object at any time");
   });
 

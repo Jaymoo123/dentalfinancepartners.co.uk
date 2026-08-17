@@ -10,13 +10,16 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner network that enquiries are shared with. Single source of truth.
+// Partner firm enquiries would be shared with. null estate-wide since 2026-08-17:
+// nothing is shared, and the privacy policy branches on this being null.
 const partner = niche.partner;
-// Lead-form acknowledgement wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that). Notice-only legitimate-interests acknowledgement: submitting
-// the enquiry is the affirmative act, so this is shown as a notice, not a tick-box
-// (pool model, 2026-08-10). Names the network category, never a single firm.
-const leadConsentText = `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. ${niche.display_name} may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.`;
+// Lead-form notice WITHOUT the trailing "See our Privacy Policy." link (each form
+// appends that). IN-HOUSE: enquiries are answered by us and are not shared with any
+// partner firm. Reverted estate-wide 2026-08-17 (owner instruction) from the
+// 2026-08-15 pool-model sharing notice; production had LEADS_NOTIFY_CC unset, so no
+// lead was ever routed under it. If sharing is ever switched back on, this notice AND
+// the privacy policy must disclose it BEFORE the first lead is routed.
+const leadConsentText = `${niche.display_name} will use your details to respond to your enquiry and to contact you about it. You can object at any time.`;
 
 export const siteConfig = {
   name: niche.display_name,
@@ -55,7 +58,7 @@ export const siteConfig = {
       `${niche.company.place_of_registration} (company no. ${niche.company.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Specialist partner network enquiries are shared with (category label, never a named firm).
+  // Partner firm, null estate-wide since 2026-08-17: enquiries are handled in-house.
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,

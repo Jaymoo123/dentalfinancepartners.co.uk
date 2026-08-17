@@ -174,7 +174,7 @@ describe("acknowledgeReply", () => {
     expect(msg.channel).toBe("sms");
     expect(msg.body).toBe(
       // Partner-firm wording (2026-08): the operator introduces, the partner firm calls.
-      "Great, thank you Sam. A specialist partner firm will call you shortly. Nothing to prepare. Speak soon.",
+      "Great, thank you Sam. We will call you shortly. Nothing to prepare. Speak soon.",
     );
     expect(msg.body.length).toBeLessThan(160); // single SMS segment
     expect(msg.body).not.toMatch(/STOP/); // no opt-out line, the lead just opted in

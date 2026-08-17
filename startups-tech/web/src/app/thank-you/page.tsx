@@ -13,7 +13,7 @@ export default function ThankYouPage() {
         Thanks, your enquiry is on its way.
       </h1>
       <p className="mt-4 text-neutral-600">
-        A specialist firm from our partner network may contact you directly. You will hear back
+        We will contact you directly. You will hear back
         within 24 hours.
       </p>
       <Link href="/" className="mt-8 inline-block font-medium underline">

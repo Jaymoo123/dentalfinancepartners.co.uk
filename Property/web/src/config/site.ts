@@ -14,16 +14,13 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// CATEGORY-ROUTING MODEL: partner recipients are disclosed as a category ("a firm
-// from our specialist partner network"), never named on-site. The receiving firm
-// identifies itself to the enquirer under its own Article 14 notice at first
-// contact. The canonical category shape lives in niche.config.json `partner`.
-
-// Lead-form enquiry wording (each form appends "See our Privacy Policy."). This is
-// the estate-standard point-of-collection notice; its wording mirrors the standing
-// DSA_TEMPLATE Annex B.2. The rendered form text and stored consent_text row both
-// equal it verbatim once the trailing link is appended.
-const leadConsentText = `${niche.display_name} will use your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about, and up to three in related professions such as brokers, solicitors and advisers. ${niche.display_name} may be paid a fee by a firm your enquiry is passed to. You can object at any time. By submitting this enquiry you confirm you understand this.`;
+// Lead-form notice WITHOUT the trailing "See our Privacy Policy." link (each form
+// appends that). IN-HOUSE: enquiries are answered by us and are not shared with any
+// partner firm. Reverted estate-wide 2026-08-17 (owner instruction) from the
+// 2026-08-15 pool-model sharing notice; production had LEADS_NOTIFY_CC unset, so no
+// lead was ever routed under it. If sharing is ever switched back on, this notice AND
+// the privacy policy must disclose it BEFORE the first lead is routed.
+const leadConsentText = `${niche.display_name} will use your details to respond to your enquiry and to contact you about it. You can object at any time.`;
 // Email-only sign-ups (resource downloads) are NOT shared with any partner firm.
 // They keep a tick-to-consent box with their own wording,
 // which must never mention the partner. Forms append "See our Privacy Policy."

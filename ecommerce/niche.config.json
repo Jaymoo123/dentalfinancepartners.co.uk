@@ -2,11 +2,7 @@
   "niche_id": "ecommerce",
   "display_name": "Ecommerce Finance",
   "legal_name": "Ashfield Trading Ltd",
-  "partner": {
-    "name": "a firm from our specialist partner network",
-    "descriptor": "",
-    "privacy_policy_url": null
-  },
+  "partner": null,
   "company": {
     "number": "16358723",
     "place_of_registration": "England and Wales",

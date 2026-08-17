@@ -56,15 +56,15 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent notice names the specialist partner network and discloses re-referral", async () => {
-    // Notice-only acknowledgement (pool model): must name the network category,
-    // never a single firm, and must disclose onward re-referral. We import the
-    // site config here rather than duplicating the string in tests so this test
-    // fails immediately when the config changes.
+  it("consent notice makes no third-party sharing claim (in-house since 2026-08-17)", async () => {
+    // Enquiries are answered in-house, so the notice must not promise a share,
+    // a referral fee or an onward pass. Imported from the config rather than
+    // duplicated here so this fails the moment the config changes.
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).toContain("passed to another firm in the network");
+    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
+      expect(consentText).not.toContain(banned);
+    }
   });
 
   it("consent text never contains 'DJH' or 'Reflex' (copy discipline: no internal/named-partner mentions)", async () => {

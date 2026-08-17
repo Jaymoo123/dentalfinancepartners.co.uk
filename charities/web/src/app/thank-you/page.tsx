@@ -13,8 +13,7 @@ export default function ThankYouPage() {
         Thanks, your enquiry is on its way.
       </h1>
       <p className="mt-4 text-neutral-600">
-        We&apos;ll come back to you within 24 hours. A specialist firm from our partner network may
-        contact you directly about your enquiry.
+        We&apos;ll come back to you within 24 hours. We will contact you directly about your enquiry.
       </p>
       <Link href="/" className="mt-8 inline-block font-medium underline">
         Back to the homepage

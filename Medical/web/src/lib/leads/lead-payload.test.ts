@@ -39,11 +39,9 @@ describe("lead payload — consent text contract", () => {
 });
 
 describe("lead payload — partner consent wording", () => {
-  it("consent notice names the specialist partner network (never a single firm)", () => {
-    expect(siteConfig.leadConsentText).toContain("specialist partner network");
-  });
-
-  it("consent notice discloses onward re-referral within the network", () => {
-    expect(siteConfig.leadConsentText).toContain("passed to another firm in the network");
+  it("consent notice makes no third-party sharing claim (in-house since 2026-08-17)", () => {
+    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
+      expect(siteConfig.leadConsentText).not.toContain(banned);
+    }
   });
 });

@@ -4,7 +4,7 @@
 // CONSENT_TEXT must equal the visible label text exactly.
 // LD-04: This text must match the visible rendered label in Step6 exactly.
 const CONSENT_TEXT =
-  "I agree that Agency Founder Finance may use the information I have provided to generate this report and contact me about relevant services, and that my details may be shared with regulated firms from its specialist partner network, who may contact me directly. More than one firm may take up my enquiry: up to three firms in the profession I am asking about, and up to three in related professions. Agency Founder Finance may be paid a fee by a firm my enquiry is passed to. I have read the privacy policy.";
+  "I agree that Agency Founder Finance may use the information I have provided to generate this report and contact me about relevant services. I have read the privacy policy.";
 
 import { useMemo, useRef, useState } from "react";
 import { submitAffLead } from "@/lib/leads/submit-client";
@@ -686,11 +686,7 @@ function Step6({
         <span className="text-sm text-slate-700">
           {/* CONSENT_TEXT must equal the text rendered here exactly. */}
           I agree that Agency Founder Finance may use the information I have provided to generate
-          this report and contact me about relevant services, and that my details may be shared with
-          regulated firms from its specialist partner network, who may contact me directly. More than
-          one firm may take up my enquiry: up to three firms in the profession I am asking about, and
-          up to three in related professions. Agency Founder Finance may be paid a fee by a firm my
-          enquiry is passed to. I have read the{" "}
+          this report and contact me about relevant services. I have read the{" "}
           <a href="/privacy-policy" className="underline text-indigo-600" target="_blank" rel="noopener noreferrer">
             privacy policy
           </a>

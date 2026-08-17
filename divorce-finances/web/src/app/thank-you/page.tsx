@@ -64,15 +64,8 @@ export default async function ThankYouPage({
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
             We read every message personally and aim to reply within two working days. If you
-            asked to be introduced to a specialist, a vetted regulated firm or accredited
-            mediator from our partner network will contact you directly, usually within a few
-            working days. If that firm is unable to help, your enquiry may be passed to another
-            firm in the network for the same purpose. There is nothing more you need to do right
-            now.
-          </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-500">
-            As we set out on the contact form, we may receive a fee from the firm we introduce you
-            to if you use their services. It does not change what you pay.
+            asked to be introduced to a specialist, we will contact you directly, usually within a
+            few working days. There is nothing more you need to do right now.
           </p>
 
           {bookingToken ? (
