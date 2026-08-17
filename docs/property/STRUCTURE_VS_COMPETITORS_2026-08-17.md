@@ -771,6 +771,16 @@ where they support rather than lead.
 
 # Appendix G: reconciliation with the 2026-08-16 research (read this before acting on anything above)
 
+> **PROVENANCE WARNING, added 2026-08-17 after owner review.** The owner flagged that the
+> 2026-08-16 internal-linking analysis went through repeated self-corrections during that session
+> and should not be relied on. Its internal-link null is NOT carried forward. Where this appendix
+> originally treated that result as settled, it is corrected below: the lever is recorded as
+> unproven, not falsified. The same caution applies to that session's other single-source
+> statistical claims (tables, slug matching, year in title, span of years): unverified, not
+> established. The descriptive SERP counts from that session (calculators holding the top slots) ARE
+> carried forward, because a live SERP pull and the competitor keyword data corroborate them
+> independently.
+
 Yesterday's `RESEARCH_2026-08-16.md` and `CLUSTER_TEARDOWN_SDLT_2026-08-16.md` ran statistical tests
 on a 135-page SDLT SERP corpus. Some of today's recommendations were already tested there. Where the
 two disagree, yesterday's evidence is stronger, because it is a within-SERP correlation across 135
@@ -784,12 +794,23 @@ corpus: rho -0.014, p=0.869, and competitor pages with 30 or fewer internal link
 position of 8, identical to pages with more. Our own fourth teardown then broke the pattern too:
 cruseburke funnels at 67% with near-total containment and holds zero top-10 slots.
 
-Corrected position: **internal linking is hygiene, not the lever.** Do it because it costs nothing
-and helps readers and crawl paths. Do NOT present it as the mechanism, and do not spend a batch on
-it alone.
+Corrected position after re-derivation: **internal linking is UNPROVEN, and stays hygiene until an
+isolated test says otherwise.** Yesterday's null is not relied on. The question was re-derived today
+from our own full-site crawls of four competitor domains: across the 58 competitor pages that both
+rank for SDLT terms and were crawled, inbound internal body links give rho -0.173 (p 0.190) against
+best position and rho -0.204 (p 0.118) against median position. Directionally in favour of linking,
+not significant, and underpowered, because inbound counts across the whole set run 0 to 12 with a
+median of 1. My own funnel-rate observation (98% and 100% against our 39%) also fails on the fourth
+domain, which funnels at 67% and holds zero top-10 slots.
 
-**Same applies to tables, word count and slug matching**, all tested yesterday and all null
-(rho -0.063, -0.019, and 62% against 60% respectively). Nothing in today's work re-opens them.
+So: do not spend a batch on internal linking and do not bill it as the mechanism, but do improve
+links where they genuinely help a reader. If we want the answer, it is a clean ten-page experiment
+through `monitored_pages` with a 28-day Bing read.
+
+**Word count is the one I can corroborate independently.** Competitor pages holding top-10 SDLT
+slots average 1,327 words against our 4,299, and provestor's winners run 274 to 985. Two methods,
+same answer: depth is not the lever. **Tables and slug matching remain single-source and
+unverified**, so treat them as open questions rather than settled nulls.
 
 ## Where the two days AGREE, and the case is now double-sourced
 
@@ -824,14 +845,16 @@ is our best Bing asset in the family.
 
 ## One more usable finding from yesterday, folded into the programme
 
-Span of years is the single significant correlation in the whole corpus (+0.228, p=0.007): pages
-citing several tax years side by side rank WORSE, and our SDLT blogs average four. Every rewrite
-under this programme therefore states one current year in the lead and moves historical rates into a
-clearly subordinate block.
+Span of years was reported there as the single significant correlation (+0.228, p=0.007): pages
+citing several tax years side by side rank worse, and our SDLT blogs average four. That statistic is
+single-source and unverified, so it does not drive the plan. The editorial rule stands on its own
+merits anyway: lead with one current year and subordinate historical rates, because it is better
+writing whether or not the correlation survives re-derivation.
 
 ## Net effect on the plan
 
-Priority order changes to: **1) phrase coverage and register on pages we already own, 2) tools at
-peer-winnable modified variants, 3) one-current-year discipline, 4) internal linking as free
-hygiene.** The programme design in `REWRITE_PROGRAM.md` §9 is unchanged; only the billing of
-internal linking as a lever is withdrawn.
+Priority order: **1) phrase coverage and register on pages we already own** (today's finding, no
+prior analysis touched it), **2) tools at peer-winnable modified variants** (corroborated twice),
+**3) one-current-year discipline** (editorial merit; statistic unverified), **4) internal linking as
+free hygiene and as a candidate for one isolated ten-page experiment.** The programme design in
+`REWRITE_PROGRAM.md` §9 is unchanged.

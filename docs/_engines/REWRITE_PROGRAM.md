@@ -503,24 +503,28 @@ pre-freeze). Doing it earlier means guessing who the winners are; doing it later
 pages are written blind.
 
 
-### §9.12 Falsified levers — do not re-sell these as the mechanism
+### §9.12 Lever status board (with provenance, because provenance is the point)
 
-Tested on a 135-page SDLT SERP corpus, 2026-08-16 (`docs/property/CLUSTER_TEARDOWN_SDLT_2026-08-16.md`),
-and not re-opened by the 2026-08-17 structural work:
+Do not cite a lever as settled without naming who derived it and whether anyone re-derived it. The
+owner flagged on 2026-08-17 that the 2026-08-16 internal-linking analysis went through repeated
+self-corrections during that session and is not trustworthy. That judgement is respected here: the
+number is not carried forward.
 
-| Lever | Result | Standing |
+| Lever | Status | Evidence and provenance |
 |---|---|---|
-| Internal link count | rho -0.014, p 0.869; pages with <=30 links hold a median position of 8 | hygiene only, never the mechanism |
-| Tables / table rows | rho -0.063, p 0.47; 34% of top-5 pages have zero tables | reader value and answer-engine extraction only |
-| Word count | rho -0.019, p 0.825 | not a lever; our pages already sit at the 96th to 100th percentile |
-| H2 count | rho -0.035 | not a lever |
-| Query modifier in slug | 62% of top-5 against 60% of positions 6-15 | no discriminating power |
-| Year in title | rho -0.004 | not a lever |
+| Word count / depth | **Not a lever** | Corroborated independently 2026-08-17: competitor pages holding top-10 SDLT slots average 1,327 words against our 4,299, and provestor's winners run 274 to 985. Two methods, same answer. |
+| Page shape (tool with a working form) | **Live lever** | 2026-08-16 SERP sample (41 of 44 top-5 slots), corroborated 2026-08-17 by a live SERP pull where the "stamp duty calculator" top ten is MoneyHelper, gov.uk, stampdutycalculator.org.uk, MSE, CBRE and Savills, and by one competitor calculator carrying 515 keywords. |
+| Vocabulary / phrase coverage | **Live lever, no prior analysis touched it** | 2026-08-17: 108 of the top 150 competitor SDLT keywords absent from 760 posts; the assigned page holds 0 of its cluster's 98 keywords. |
+| Register (statute density, direct address) | **Live lever, measured once** | 2026-08-17 probe: statute refs 12.3 per 1k against 0.1, jargon 3.3 against 0.1, direct address at half their rate. Sentence length and reading ease are NOT different. |
+| Internal linking | **UNPROVEN, hygiene only** | The 2026-08-16 null is withdrawn as untrustworthy per the owner. Independent re-derivation 2026-08-17 from our own full-site crawls of four competitor domains (n=58 pages that both rank for SDLT terms and were crawled, inbound body links counted from the full site graph): rho -0.173, p 0.190 against best position; rho -0.204, p 0.118 against median position. Directionally favourable, not significant, and underpowered because inbound counts run 0 to 12 with a median of 1. Neither proven nor disproven. |
+| Tables, slug matching, year in title | **Unverified single-source** | 2026-08-16 only, not re-derived. Open questions, not settled nulls. |
+| Span of years mentioned | **Unverified single-source, kept on editorial merit** | 2026-08-16 reported +0.228, p 0.007 (more tax years, worse position). Not re-derived. Leading with one current year and subordinating historical rates is better writing regardless, so the rule stands on that basis, not on the statistic. |
 
-The two that survive: **page shape** (41 of 44 sampled top-5 slots are a calculator URL or carry a
-form) and **span of years mentioned**, the only significant correlation in the corpus at +0.228,
-p=0.007, and it runs the wrong way: more tax years on a page means worse position. Hence the rule
-that every rewrite leads with one current year and subordinates historical rates.
+**Rule going forward.** Any lever that drives a batch of work must be either corroborated by two
+independent methods, or run as an isolated experiment through `monitored_pages` with a stated
+expectation and a revert trigger. A single correlation from a single session is a hypothesis.
 
-Anything this programme proposes must be checked against this table first. A proposal that reduces
-to "more links, more words, more tables" has already been tested and has already failed.
+**The internal-linking experiment, if we want the answer.** Ten pages with existing equity, add links
+from their topical siblings, change nothing else, read Bing at 14 and 28 days. One variable, one
+window, one tracker row per page. Until that runs, links get improved where they genuinely help a
+reader and are never billed as the mechanism.
