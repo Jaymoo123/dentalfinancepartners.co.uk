@@ -49,12 +49,18 @@ small-purchase threshold, and the stale FTB £6,250 -> £5,000 on the sibling re
 deterministic gate: `scripts/sdlt_equity_gate.py` (equity regression vs baseline, protected
 elements with pack-declared approved changes, ledger balance). All gates green: coverage 5/5,
 link audit 0/0, vitest 1166 incl. goldens 72/72, tsc, prod build, dependency closure, qa_verdict
-batch `sdlt1` all_clear + coverage manifest. **NOT deployed.** Remaining, all owner-gated:
-(1) resolve the pre-existing predeploy blocker, 11 cross-brand literals in
-`capital-allowances-for-care-homes.md` + `-dental-practices.md` (commit `3879b002`, not this batch);
-(2) deploy; (3) at deploy register `monitored_pages` for the 7 (the 2 calculator URLs need a URL
-override in `register_monitored_batch.py`, it builds blog URLs only); (4) Bing read at 14/28 days,
-Google 28/90, per-pack revert triggers. Sitewide nit found: header sr-only tagline carries an
+batch `sdlt1` all_clear + coverage manifest.
+
+**DEPLOYED TO PRODUCTION 2026-08-18** (owner-triggered): cross-brand predeploy blocker fixed
+(`bca5a721`, sister-brand literals neutralised), registrar gained `--page-urls` (`47da2856`),
+branch pushed (CI green), deployed from clean worktree at `ac2a7d8b` (deployment
+`dpl_Bzc6YK9Sw3EE8PKxj8VDcZYcYskZ`), all 7 URLs verified 200 with new content live, all 7 armed
+in `monitored_pages` (rewrite_date 2026-08-18, dual baselines, watch to 2026-11-16; 6 stale prior
+rows re-baselined in place), 7 URLs to IndexNow (HTTP 200; IndexNow is Bing's protocol).
+**Next reads: Bing ~2026-09-01 (14d) and ~2026-09-15 (28d), Google 28/90d; per-pack revert
+triggers stand.** Next-cluster scoping committed (`ac2a7d8b`,
+`briefs/property/CLUSTER_SCOPING_2026-08-18.md`): tools family 102k/mo peer-winnable (gated on
+the calculator experiment), CGT 31k, rental-income 12k; CGT recommended as cluster 2. Sitewide nit found: header sr-only tagline carries an
 em-dash (template-level, every page, pre-existing).
 
 ---
