@@ -64,7 +64,8 @@ export default async function ThankYouPage({
             Thank you.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-            Your enquiry has been received. We will contact you directly about your enquiry. We aim to reply within one working day,
+            Your enquiry has been received. A specialist firm from our partner network may
+            contact you directly about your enquiry. We aim to reply within one working day,
             usually the same day.
           </p>
 
@@ -74,7 +75,8 @@ export default async function ThankYouPage({
                 Pick a time for your free review call
               </p>
               <p className="mb-6 text-sm text-neutral-600">
-                Choose a day and window below. We will call you then, no obligation.
+                Choose a day and window below. A specialist accountant from our partner network
+                will call you then, no obligation.
               </p>
               <BookingPicker token={bookingToken} />
             </div>

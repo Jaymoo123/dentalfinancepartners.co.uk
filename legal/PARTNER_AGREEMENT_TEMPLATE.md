@@ -52,6 +52,8 @@ IT IS AGREED as follows.
 
 "Price Sheet" means the Supplier's published price sheet, the current version of which is reproduced in Schedule 1.
 
+"Rubric" means the Supplier's published lead classification rubric, the current version of which is reproduced in Schedule 1, and references in this agreement to the Supplier's published rubric are to it.
+
 "Shared Claim" means a Claim that is not an Exclusive Claim.
 
 "Shared Data" has the meaning given in Schedule 2 and is specified in Annex A.
@@ -120,7 +122,7 @@ IT IS AGREED as follows.
 
 6.2 Billable on Claim. The Claim Price is earned and payable on Delivery. It is not contingent on whether the enquirer responds to the Recipient, is contactable, engages, attends a meeting, accepts a proposal, becomes a client or generates revenue, except as provided by the credits in this clause 6. An enquirer who has spoken to another adviser is still chargeable unless that adviser was formally engaged for the same work before the enquiry was made (clause 6.6).
 
-6.3 Grading, and how it is checked. Every Lead is graded by case type against the Supplier's published rubric, on the work the enquiry describes and never on the Supplier's estimate of what the enquirer might be worth. Where an enquiry sits between two tiers it is graded to the lower one. The rubric is published, and the grading recorded against a Lead at the time it is graded, so that the Recipient can check any Delivered Lead against the list for its tier. The rubric is the reference for whether a Lead was "materially different" under clause 6.5(b).
+6.3 Grading, and how it is checked. Every Lead is graded by case type against the Rubric, on the work the enquiry describes and never on the Supplier's estimate of what the enquirer might be worth. Where an enquiry sits between two tiers it is graded to the lower one. The Rubric is set out in full in paragraph 7 of Schedule 1, and the grading is recorded against a Lead at the time it is graded, so that the Recipient can check any Delivered Lead against the case-type list for its tier. The Rubric is the reference for whether a Lead was "materially different" under clause 6.5(b). The Supplier may amend the Rubric on 30 days' written notice, and no amendment applies to a Lead already Delivered.
 
 6.4 Credits, not refunds, and on Exclusive Claims only. Credits are available on Exclusive Claims only. A Shared Claim, and anything supplied by Bulk Supply, is sold as seen and carries no credit. The Recipient acknowledges the reason and that it is reflected in the price: a Shared Claim costs a fraction of the Exclusive price, and a complaint that an enquirer could not be reached cannot be verified fairly when several firms hold the same Lead. The level of protection is the Recipient's choice, made Lead by Lead.
 
@@ -272,7 +274,7 @@ IT IS AGREED as follows.
 
 20.2 Entire agreement. This agreement, with its Schedules and Annexes, is the entire agreement between the parties about its subject matter and supersedes all prior arrangements. Neither party relies on any statement not set out in it, but nothing limits liability for fraud.
 
-20.3 Variation. No variation is effective unless in writing and signed by both parties, except that (a) published prices change under clause 5.4, and (b) invoicing and operational details in Schedule 1 may be updated by written agreement, including email, between the parties' nominated contacts.
+20.3 Variation. No variation is effective unless in writing and signed by both parties, except that (a) published prices change under clause 5.4, (b) the Rubric changes under clause 6.3, and (c) invoicing and operational details in Schedule 1 may be updated by written agreement, including email, between the parties' nominated contacts.
 
 20.4 Waiver and severance. A failure or delay in exercising a right is not a waiver of it. If any provision is or becomes invalid or unenforceable it will be changed only as much as needed to make it valid; if it cannot be made valid it is removed, and the rest of this agreement still applies. Each limitation in clause 12 and each restriction in clause 10 stands on its own.
 

@@ -32,7 +32,7 @@ export default function ContactPage() {
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
                 <li>We read every message and aim to reply within two working days.</li>
                 <li>
-                  If you have asked to be connected with a specialist, we will come back to you directly, usually within a few working days.
+                  If you have asked to be connected with a specialist, a vetted regulated firm from our partner network suited to your situation will contact you directly, usually within a few working days. If that firm is unable to help, your enquiry may be passed to another firm in the network for the same purpose.
                 </li>
                 <li>
                   We cannot answer questions about your personal legal or tax position. That is what the specialist connection is for.
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   .
                 </p>
                 <p className="mt-1 text-xs text-neutral-500">
-                  By submitting the form you agree to us using your details to respond to your enquiry and to contact you about it. We do not use your details for any other purpose, and you can object at any time. See our privacy policy for full details.
+                  By submitting the form you agree to us using your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about (for example a specialist probate firm), and up to three in related professions such as brokers, solicitors and advisers. We may be paid a fee by a firm your enquiry is passed to. We do not use your details for any other purpose, and you can object at any time. See our privacy policy for full details.
                 </p>
               </div>
             </div>

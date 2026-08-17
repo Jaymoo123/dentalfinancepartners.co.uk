@@ -9,17 +9,12 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Partner firm enquiries would be shared with. null estate-wide since 2026-08-17:
-// nothing is shared, and the privacy policy branches on this being null.
+// Specialist partner network that enquiries are shared with. Single source of truth.
 const partner = niche.partner;
-// Lead-form notice WITHOUT the trailing "See our Privacy Policy." link (each form
-// appends that). IN-HOUSE: enquiries are answered by us and are not shared with any
-// partner firm. Reverted estate-wide 2026-08-17 (owner instruction) from the
-// 2026-08-15 pool-model sharing notice; production had LEADS_NOTIFY_CC unset, so no
-// lead was ever routed under it. If sharing is ever switched back on, this notice AND
-// the privacy policy must disclose it BEFORE the first lead is routed.
-const leadConsentText =
-  "Agency Founder Finance will use your details to respond to your enquiry and to contact you about it. You can object at any time.";
+// Lead-form acknowledgement wording (legitimate interests, notice-only) WITHOUT the
+// trailing "See our Privacy Policy." link (each form appends that). Static category
+// wording: pool model with onward re-referral disclosed, no named firm.
+const leadConsentText = "Agency Founder Finance will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time.";
 
 export const siteConfig = {
   name: niche.display_name,
@@ -57,7 +52,7 @@ export const siteConfig = {
       `${niche.company.place_of_registration} (company no. ${niche.company.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Partner firm, null estate-wide since 2026-08-17: enquiries are handled in-house.
+  // Specialist partner network enquiries are shared with (category label, no named firm).
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,

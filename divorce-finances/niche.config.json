@@ -14,7 +14,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": null,
+  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "placeholder-divorce-domain.example",
   "tagline": "Clear, practical guidance on the money side of divorce and separation in the UK",
   "description": "Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon. We connect readers with specialist help when their situation needs it.",

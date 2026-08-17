@@ -20,16 +20,19 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("no partner firm is configured (in-house since 2026-08-17)", async () => {
+  it("partner is the anonymous network category label, never a named firm", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.partner).toBeNull();
+    expect(siteConfig.partner?.name).toBe("regulated firms in our specialist partner network");
   });
 
-  it("consent text makes no third-party sharing claim", async () => {
+  // Layer one of the layered notice (DSA Annex B.1). Cascade and the fee moved to
+  // layer two, the privacy policy, on 17 August 2026; plurality stayed here, because
+  // LIA section 3.2 needs it visible before the enquirer opens anything.
+  it("consent text discloses sharing with plural firms in the network", async () => {
     const { siteConfig } = await import("@/config/site");
-    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
-      expect(siteConfig.leadConsentText).not.toContain(banned);
-    }
+    expect(siteConfig.leadConsentText).toContain("specialist partner network");
+    expect(siteConfig.leadConsentText).toContain("regulated firms");
+    expect(siteConfig.leadConsentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {

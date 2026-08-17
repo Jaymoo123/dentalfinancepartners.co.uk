@@ -73,7 +73,7 @@ export default async function ThankYouPage({
             <CheckIcon />
             <h1 className="text-4xl font-bold text-[var(--ink)] sm:text-5xl">Confirmed</h1>
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-              Thanks, that is confirmed. We will contact you directly.
+              Thanks, that is confirmed. A specialist firm from our partner network will contact you directly.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Link href="/" className={`${btnPrimary} text-base px-8 py-3.5`}>
@@ -106,7 +106,7 @@ export default async function ThankYouPage({
                 email and phone, and confirm to lock in your callback slot.
               </p>
               <p className="mt-4 text-base text-[var(--muted)]">
-                We will contact you directly about your
+                A specialist firm from our partner network may contact you directly about your
                 enquiry. We aim to respond within 24 hours, usually the same day.
               </p>
               <p className="mt-4 text-sm text-[var(--muted)]">
@@ -116,7 +116,8 @@ export default async function ThankYouPage({
             </>
           ) : (
             <p className="mt-6 text-lg leading-relaxed text-[var(--muted)]">
-              Your enquiry has been received. We will contact you directly about your enquiry, within one working day, usually the same
+              Your enquiry has been received. A specialist firm from our partner network may
+              contact you directly about your enquiry, within one working day, usually the same
               day. You can also pick a callback time below.
             </p>
           )}

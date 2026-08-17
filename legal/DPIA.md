@@ -6,7 +6,7 @@ Supplier-side DPIA for the Ashfield Partner Network lead distribution model, req
 |---|---|
 | Controller | Ashfield Trading Limited (company number 16358723) |
 | Completed by | Mohammed Junayd Moughal, Director |
-| Date | 14 August 2026 |
+| Date | 14 August 2026, revised 17 August 2026 to reflect the layered transparency structure and to re-rate risk R1 accordingly |
 | Review | 14 August 2027, or on any material change to the processing, and before any increase to either claim cap |
 | Status | First DPIA for this processing. None existed previously; clause 11.3 has required one since the DSA was first issued. |
 
@@ -82,7 +82,7 @@ Likelihood and severity are scored low, medium or high; residual risk is after t
 
 | # | Risk | Likelihood | Severity | Measure | Residual |
 |---|---|---|---|---|---|
-| R1 | Enquirer is contacted by more firms than they expected and experiences it as spam. The single most likely complaint. | Medium | Medium | Cap of 3 per lane, 6 total, enforced in code and tested. The number is disclosed at the point of collection and in the privacy notice. Firms self-select from a redacted alert, so in practice most enquiries are taken by fewer than the maximum. Objection route on every message. | Low to medium. Accepted, and monitored through complaint volume. |
+| R1 | Enquirer is contacted by more firms than they expected and experiences it as spam. The single most likely complaint. | Medium | Medium | Cap of 3 per lane, 6 total, enforced in code and tested. Sharing with plural firms in the network is disclosed at the point of collection; the maximum number is disclosed in the privacy notice the form links to (layered, see LIA section 3.2). Firms self-select from a redacted alert, so in practice most enquiries are taken by fewer than the maximum, which matters more under the layered notice than it did when the number appeared on the form. Objection route on every message. | Medium. Raised from low to medium on 17 August 2026 when the number moved to the second layer. Accepted, and monitored through complaint volume; if complaints on this ground appear, the number goes back on the form. |
 | R2 | Enquirer was not adequately told the enquiry goes to several firms, because a site still carries single-firm wording. | High if unaddressed | High | The LIA makes the disclosure a condition of the lawful basis; a site without it must not be routed into the pool. The estate-wide wording sweep is the remedy. | Low once the sweep is complete. Until then this is the live risk in the model and the reason enquiries from un-swept sites must not enter the pool. |
 | R3 | A firm misuses the data: markets unrelated services, sells it on, or retains it indefinitely. | Low | High | DSA clauses 12.1 to 12.3 bar onward disclosure, sale and list-broking; clause 6 restricts contact to a response, not marketing; clause 11.2 limits retention; clause 10 gives audit and complaint routes; every firm is regulated or professionally qualified and signs before receiving anything. | Low. Contractual rather than technical, which is inherent to controller-to-controller sharing. |
 | R4 | Data delivered to a firm that has not signed the agreement. | Medium | High | Currently a manual runbook check only. `lead_buyers.dsa_signed_at` exists but nothing filters on it. Action R4: enforce in code before the first live claim. | Medium until the code gate lands, then low. |

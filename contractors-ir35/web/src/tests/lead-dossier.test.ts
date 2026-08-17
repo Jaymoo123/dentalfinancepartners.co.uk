@@ -173,7 +173,7 @@ describe("acknowledgeReply", () => {
     const msg = senderSpy.mock.calls[0][0] as unknown as { channel: string; body: string };
     expect(msg.channel).toBe("sms");
     expect(msg.body).toBe(
-      "Great, thank you Sam. We will call you shortly. Nothing to prepare. Speak soon.",
+      "Great, thank you Sam. A specialist partner firm will call you shortly. Nothing to prepare. Speak soon.",
     );
     expect(msg.body.length).toBeLessThan(160); // single SMS segment
     expect(msg.body).not.toMatch(/STOP/); // no opt-out line, the lead just opted in

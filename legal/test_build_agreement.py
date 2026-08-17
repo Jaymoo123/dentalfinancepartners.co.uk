@@ -5,7 +5,9 @@ Asserts the properties the build step exists to guarantee:
   1. every price in Schedule 1 comes from config/tiers.json, not from prose
   2. the caps in Schedule 1 match the caps the engine enforces
   3. Schedule 2 carries the whole data protection layer, all 16 clauses
-  4. Schedule 2 is byte-identical to legal/DSA_TEMPLATE.md, so the DP layer cannot fork
+  4. Schedule 2 is byte-identical to legal/DSA_TEMPLATE.md, so the DP layer cannot fork,
+     and Schedule 1 paragraph 7 is byte-identical to the rubric in docs/CLASSIFY.md, so
+     the rubric the contract warrants against is the one we actually grade by
   5. no placeholder survives into a document that gets signed
   6. the retired commercial model cannot reappear in a document sent to a buyer
   7. the document is fit to send: no em-dashes, horizontal rules, bold, HTML
@@ -79,6 +81,23 @@ def main():
         block = docprep.clean(block).strip()
         assert block in doc, f"the {name} block is not reproduced verbatim in the agreement"
     print("  ok: the data protection layer is reproduced verbatim from the standing DSA")
+
+    # 4b: clauses 6.1, 6.3 and 11.3 warrant grading "under the published rubric", and
+    # a credit under 6.5(b) is judged against it. Until 2026-08-17 nothing in the signed
+    # document said what it was, so there was no agreed reference to cite in a dispute.
+    # Schedule 1 paragraph 7 now reproduces it verbatim from the operative rubric.
+    rubric = build.marker_block(
+        build.CLASSIFY.read_text(encoding="utf-8"), "rubric", build.CLASSIFY.name)
+    assert docprep.clean(build.demote(rubric)).strip() in sched1, (
+        "Schedule 1 does not reproduce docs/CLASSIFY.md verbatim; the rubric the "
+        "agreement warrants against would differ from the one we grade by")
+    for t in cfg["tiers"]:
+        if t.get("batch") or t["id"] == "adjacent":
+            continue  # a delivery lane and an eligibility state, not grades
+        assert re.search(rf"^#### {t['label']}$", sched1, re.M), (
+            f"Schedule 1 rubric has no {t['label']} tier heading")
+    assert '"Rubric" means' in doc, "Rubric is used in the clauses but never defined"
+    print("  ok: Schedule 1 reproduces the grading rubric and every graded tier")
 
     # 5: build() already exits on these; assert the built text really is clean.
     for token in ("{{", "[INSERT", "<!-- schedule1 -->", "<!-- schedule2 -->", "<!-- annexes -->"):

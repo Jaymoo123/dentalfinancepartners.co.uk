@@ -7,5 +7,5 @@ export const site = {
   // (kept in this env-free module for calculator surfaces). Forms append the
   // "See our Privacy Policy." link sentence.
   leadConsentText:
-    "Founder Tax Partners will use your details to respond to your enquiry and to contact you about it. You can object at any time.",
+    "Founder Tax Partners will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time.",
 } as const;

@@ -9,17 +9,18 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Partner firm enquiries would be shared with. null estate-wide since 2026-08-17:
-// nothing is shared, and the privacy policy branches on this being null.
+// Partner-network category label (never a named firm). Single source of truth.
 const partner = niche.partner ?? null;
-// Lead-form notice WITHOUT the trailing "See our Privacy Policy." link (each form
-// appends that). IN-HOUSE: enquiries are answered by us and are not shared with any
-// partner firm. Reverted estate-wide 2026-08-17 (owner instruction) from the
-// 2026-08-15 pool-model sharing notice; production had LEADS_NOTIFY_CC unset, so no
-// lead was ever routed under it. If sharing is ever switched back on, this notice AND
-// the privacy policy must disclose it BEFORE the first lead is routed.
-const leadConsentText =
-  `${niche.display_name} will use your details to respond to your enquiry and to contact you about it. You can object at any time.`;
+// Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
+// (each form appends that).
+// Divorce-finances runs a referral lead model: enquiries are passed to a vetted
+// specialist family law firm or accredited mediator, and a referral fee may be
+// received. The lead-gen regulatory position (LASPO PI-only ban does not apply to
+// family; FCA CMC regime excludes family) permits this, CONDITIONAL on the fee
+// disclosure sitting inside this notice. That disclosure is mandatory and
+// brand-neutral (no firm named until G1). Do not revert to the generic in-house
+// wording for this site.
+const leadConsentText = `${niche.display_name} will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time.`;
 
 export const siteConfig = {
   name: niche.display_name,

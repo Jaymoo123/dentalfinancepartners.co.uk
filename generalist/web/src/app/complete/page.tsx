@@ -96,7 +96,8 @@ export default async function CompletePage({
           <div className="border border-orange-200 bg-orange-50 p-6 text-center">
             <p className="text-lg font-bold text-neutral-900">You are all set</p>
             <p className="mt-2 text-base text-neutral-700">
-              We have everything we need. We will contact you directly about your enquiry. If you would like to pick a time that suits you,
+              We have everything we need. A specialist firm from our partner network may contact
+              you directly about your enquiry. If you would like to pick a time that suits you,
               you can book a callback below.
             </p>
             {bookingToken && (
@@ -120,7 +121,7 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-neutral-700">
-            Add the last detail we need and we will be in
+            Add the last detail we need and a specialist firm from our partner network will be in
             touch to arrange your free review, no obligation.
           </p>
           <div className="mt-10">{inner}</div>

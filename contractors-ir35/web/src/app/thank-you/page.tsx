@@ -59,7 +59,7 @@ export default async function ThankYouPage({
             Thank you.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-            We have received your enquiry and will contact you directly within one working day. You will hear from a specialist contractor accountant, not a sales team.
+            We have received your enquiry and passed it to a specialist firm from our partner network, who may contact you directly within one working day. You will hear from a specialist contractor accountant, not a sales team.
           </p>
 
           {bookingToken ? (

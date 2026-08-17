@@ -46,7 +46,7 @@ function hasRealFirstName(firstName: string): boolean {
 /** Post-YES SMS/WhatsApp ack. Under 160 chars, no STOP line (the lead just opted in). */
 function buildAckBody(firstName: string): string {
   const name = hasRealFirstName(firstName) ? ` ${firstName}` : "";
-  return `Great, thank you${name}. We will call you shortly. Nothing to prepare. Speak soon.`;
+  return `Great, thank you${name}. A specialist partner firm will call you shortly. Nothing to prepare. Speak soon.`;
 }
 
 async function fetchLead(leadId: string): Promise<LeadRow | null> {
@@ -171,11 +171,11 @@ export async function acknowledgeEmailReply(opts: { leadId: string }): Promise<b
       : "Got your reply";
 
     const { html, text } = renderLeadServiceEmail({
-      preheader: "Thanks, that is everything we need. We will call you.",
+      preheader: "Thanks, that is everything we need. A specialist firm will call you.",
       greeting: `Hi ${ctx.firstName},`,
       paragraphs: [
         "Got your reply, thank you. That is everything we need.",
-        "We will call you, and if you mentioned a day or time that suits, we will aim for it.",
+        "The partner firm we introduce you to will call you, and if you mentioned a day or time that suits, we will aim for it.",
         "There is nothing else for you to do. If anything changes in the meantime, just reply here and I will pick it up.",
       ],
       // No cta/secondary: this is a reply-only service email, nothing to click.

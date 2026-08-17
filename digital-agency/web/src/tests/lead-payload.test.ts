@@ -13,6 +13,7 @@ import {
   exitIntentMessagePrefix,
   healthCheckMessagePrefix,
 } from "@/lib/lead-message";
+import { siteConfig } from "@/config/site";
 import nicheConfig from "../../../niche.config.json";
 
 // ---------------------------------------------------------------------------
@@ -67,29 +68,39 @@ describe("healthCheckMessagePrefix", () => {
 describe("lead consent text", () => {
   const partner = nicheConfig.partner;
   const displayName = nicheConfig.display_name;
+  const partnerName = partner?.name ?? "";
 
-  // Replicates the in-house notice in site.ts.
-  const consentText =
-    "Agency Founder Finance will use your details to respond to your enquiry and to contact you about it. You can object at any time.";
+  // The real constant, not a copy of it. A replica here passed no matter what the
+  // site actually rendered, which is the opposite of what this guard is for.
+  const consentText = siteConfig.leadConsentText;
 
   it("site display name is Agency Founder Finance", () => {
     expect(displayName).toBe("Agency Founder Finance");
   });
 
-  it("no partner firm is configured (in-house since 2026-08-17)", () => {
-    expect(partner).toBeNull();
+  it("partner is present as a category label (generic partner network, not DJH)", () => {
+    expect(partner).not.toBeNull();
+    expect(partnerName).toBe("regulated firms in our specialist partner network");
   });
 
-  it("consent text makes no third-party sharing claim", () => {
-    for (const banned of ["partner network", "shared with", "paid a fee", "passed to", "Reflex"]) {
-      expect(consentText).not.toContain(banned);
-    }
+  it("consent text references a generic specialist partner network, not a named firm", () => {
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).not.toContain("Reflex");
+  });
+
+  // Transparency is layered (DSA Annex B.1). This is layer one: it must disclose on
+  // its face that the recipients are FIRMS, plural, in a network, and link to the
+  // privacy policy. The maximum number lives in layer two, the privacy policy.
+  it("consent text discloses sharing with plural firms in the network", () => {
+    expect(consentText).toContain("regulated firms");
     expect(consentText).toContain("object at any time");
   });
 
-  it("consent text does not promise single-firm handling", () => {
+  // LIA section 3.2 turns on plurality being visible without opening the policy.
+  // "a firm" singular here would collapse the layered argument.
+  it("consent text never describes the recipient as a single firm", () => {
+    expect(consentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
     expect(consentText).not.toContain("one firm at a time");
-    expect(consentText).not.toContain("a relevant regulated firm");
   });
 
   it("consent text does NOT contain the string DJH", () => {

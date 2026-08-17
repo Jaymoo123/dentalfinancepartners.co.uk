@@ -6,7 +6,7 @@ Controller-to-controller data-sharing pack for **Ashfield Trading Limited** (com
 
 There are **two layers and two ways to send them**.
 
-The **data protection layer** is `DSA_TEMPLATE.md`: firm-agnostic, never redrafted per prospect, and the single place the data protection wording exists. The **commercial layer** is `PARTNER_AGREEMENT_TEMPLATE.md` plus a Schedule 1 generated from `config/tiers.json` and `config/standard_terms.md`.
+The **data protection layer** is `DSA_TEMPLATE.md`: firm-agnostic, never redrafted per prospect, and the single place the data protection wording exists. The **commercial layer** is `PARTNER_AGREEMENT_TEMPLATE.md` plus a Schedule 1 generated from `config/tiers.json`, `config/standard_terms.md` and the classification rubric in `docs/CLASSIFY.md`.
 
 `build_agreement.py` assembles the two into **one combined document** that a firm signs once. It lifts the DSA in verbatim rather than copying it, so the data protection layer physically cannot fork between the standalone document and the combined one. `test_build_agreement.py` proves that on every build.
 
@@ -14,11 +14,11 @@ Send the combined agreement by default. Send the standalone DSA where a firm, or
 
 | File | What it is |
 |---|---|
-| **PARTNER_AGREEMENT_TEMPLATE.md** | The commercial layer, clauses 1 to 21 (version 14 August 2026). Firm-agnostic. Carries three markers that `build_agreement.py` fills. **Never paste prices, caps or the DSA into this file by hand.** |
+| **PARTNER_AGREEMENT_TEMPLATE.md** | The commercial layer, clauses 1 to 21 (version 17 August 2026). Firm-agnostic. Carries three markers that `build_agreement.py` fills. **Never paste prices, caps, the rubric or the DSA into this file by hand.** |
 | **DSA_TEMPLATE.md** | The single standing Data Sharing Agreement (version 14 August 2026). Data protection only. Also the source of Schedule 2 and Annexes A and B of the combined agreement, extracted between its `dsa:` and `dsaannex:` markers. Keep those markers in place. |
 | **Legitimate_Interests_Assessment.md** | Standing, firm-agnostic LIA (**complete reassessment, 14 August 2026**, review 14 August 2027). Assesses the pool model as it actually runs. Its conclusion is expressly conditional: see "The conditions the LIA imposes" below. |
 | **build_agreement.py** | Assembles the combined agreement into `out/`. Run this first. |
-| **test_build_agreement.py** | Self-check: prices trace to config, caps match the engine, Schedule 2 reproduces the DSA verbatim and repeats none of the commercial clauses, no placeholders, no retired model wording, and the result is fit to send. Run after any change to either template. |
+| **test_build_agreement.py** | Self-check: prices trace to config, caps match the engine, Schedule 2 reproduces the DSA verbatim and Schedule 1 paragraph 7 reproduces the rubric verbatim, neither repeats the commercial clauses, no placeholders, no retired model wording, and the result is fit to send. Run after any change to either template or to the rubric. |
 | **build_pdf.py** | Renders any `.md` to a clean black-text A4 PDF (reportlab). |
 | **docprep.py** | The house rules for anything that leaves this repo: no em-dashes, horizontal rules, bold, HTML comments, internal file paths, bracket placeholders or duplicated sentences. Both builders clean the source through it and refuse to write a file that still breaks a rule. |
 | **build_signing_docx.py** | Renders a `.md` to a `.docx` for recipients who prefer to type into a document. Defaults now point at the built combined agreement. |
@@ -29,7 +29,7 @@ Send the combined agreement by default. Send the standalone DSA where a firm, or
 
 Owner-locked 12 to 14 August 2026. Recorded here because every document in the pack depends on it.
 
-- Enquiries come from the whole website portfolio, not one site. Each site collects under the estate-standard on-site notice in Annex B of the DSA: recipients disclosed as a **category**, never named on-site, but with the number of firms disclosed.
+- Enquiries come from the whole website portfolio, not one site. Each site collects under the estate-standard on-site notice in Annex B of the DSA: recipients disclosed as a **category**, never named on-site, with the sharing itself disclosed on the form and the number of firms disclosed one layer down, in the privacy policy the form links to.
 - A verified enquiry is graded by case type under `docs/CLASSIFY.md` and offered to the network as a **redacted alert**. The alert carries the enquiry in the enquirer's own words with names, phone numbers, email addresses, postcodes, links and company names stripped, and no contact details. A firm decides from that; the unredacted enquiry and the contact details go out only on claim.
 - A firm **claims** an enquiry to receive it in full. Claims run in two independent, capped lanes: **up to 3 accounting firms** and **up to 3 firms in other professions**. The maximum number of firms that can receive one enquirer's details is therefore **6**.
 - A firm may instead claim **exclusively**, at 3 times the price, which locks its own lane. Exclusivity is per enquiry only; no firm is ever promised a site's flow.
@@ -42,8 +42,9 @@ Owner-locked 12 to 14 August 2026. Recorded here because every document in the p
 The LIA's conclusion is conditional, and the conditions are operational, not drafting flourishes. If any fails, the lawful basis for the sharing fails with it.
 
 1. **The caps stay at 3 and 3.** Raising either, or setting the adjacent lane back to uncapped, requires the LIA balancing test to be redone **first**. `lead_engine/scripts/test_lanes.py` fails if a lane is uncapped.
-2. **A site discloses the multi-firm position before its enquiries enter the pool.** The site's enquiry form and privacy policy must carry the disclosures in DSA Annex B.2 and B.4, including that more than one firm may receive the enquiry and the maximum number. A site without them must not be routed into the network.
-3. **Bulk Supply goes to one firm per batch and excludes anyone who has objected.**
+2. **Both layers of the transparency are live on a site before its enquiries enter the pool.** Layer one is the enquiry form, which must disclose that details are shared with regulated firms in the partner network and must link to the privacy policy (DSA Annex B.2). Layer two is that privacy policy, which must carry the full detail in Annex B.4: more than one firm, both professions, the maximum number, cascade, bulk supply, the fee and the right to object. A site missing either layer must not be routed into the network. Revised 17 August 2026; before that the maximum number sat on the form itself.
+3. **The redacted-alert step stays.** A firm learns the enquirer's identity only after claiming. This is what keeps the real number of recipients below the disclosed ceiling, and the LIA leans on it harder under the layered notice.
+4. **Bulk Supply goes to one firm per batch and excludes anyone who has objected.**
 
 ## The prospect flow
 
@@ -58,7 +59,7 @@ Nothing to redraft per prospect. A price agreed differently from the published c
 ## Owner items (before first pool delivery)
 
 - [ ] Complete ICO registration and record the reference in the Supplier details block ("Available on request" is a placeholder).
-- [ ] Carry out and document the Supplier DPIA required by DSA clause 11.3. See `DPIA.md`.
+- [x] Carry out and document the Supplier DPIA required by DSA clause 11.3. Done 14 August 2026, `DPIA.md`, review 14 August 2027.
 - [ ] Solicitor review of the set as a whole: the combined agreement (which contains both layers) plus `Legitimate_Interests_Assessment.md` and the on-site notice wording, reviewed together, before the first delivery to a pool recipient. The commercial layer is new drafting as of 14 August 2026 and the LIA is a complete reassessment, so this review matters more than it did.
 - [x] Signed-agreement gate enforced in code, not just in the runbook: `matchingBuyers` filters on `dsa_signed_at`, and the dry-run engine refuses to ping or accept a claim from a firm with no `dsa_signed_date`.
 

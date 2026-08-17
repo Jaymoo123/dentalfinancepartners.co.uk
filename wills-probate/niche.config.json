@@ -14,7 +14,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": null,
+  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.probate-compass-placeholder.co.uk",
   "tagline": "Clear, practical guidance on probate, wills and inheritance tax in the UK",
   "description": "Probate Compass. Plain-English guidance on probate, wills and inheritance tax for UK executors, administrators and people planning their estates. Free calculators, no jargon. We connect readers with specialist help when the estate needs it.",

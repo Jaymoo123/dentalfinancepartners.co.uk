@@ -19,12 +19,22 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text makes no third-party sharing claim (in-house since 2026-08-17)", async () => {
+  it("consent text names a generic 'specialist partner network', never 'Reflex'", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    for (const banned of ["partner network", "shared with", "paid a fee", "passed to", "Reflex"]) {
-      expect(consentText).not.toContain(banned);
-    }
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).not.toContain("Reflex");
+  });
+
+  // Layer one of the layered notice (DSA Annex B.1). Cascade, the maximum number, the
+  // fee and the acknowledgement sentence moved to layer two, the privacy policy, on
+  // 17 August 2026. Plurality stayed here: LIA section 3.2 turns on the enquirer
+  // seeing that the recipients are firms in a network, not one nominated adviser.
+  it("consent text discloses sharing with plural firms in the network", async () => {
+    const { siteConfig } = await import("@/config/site");
+    expect(siteConfig.leadConsentText).toContain("specialist partner network");
+    expect(siteConfig.leadConsentText).toContain("regulated firms");
+    expect(siteConfig.leadConsentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {

@@ -12,9 +12,13 @@
       "postcode": "BD18 3AL"
     },
     "vat_number": null,
-    "enquiry_retention_months": 3
+    "enquiry_retention_months": 24
   },
-  "partner": null,
+  "partner": {
+    "name": "regulated firms in our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
+  },
   "domain": "www.propertytaxpartners.co.uk",
   "tagline": "Get your property tax sorted",
   "description": "Specialist property accountants for UK landlords. Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response. Free calculators.",

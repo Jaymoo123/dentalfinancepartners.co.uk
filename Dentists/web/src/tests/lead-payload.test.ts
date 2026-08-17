@@ -56,15 +56,18 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent notice makes no third-party sharing claim (in-house since 2026-08-17)", async () => {
-    // Enquiries are answered in-house, so the notice must not promise a share,
-    // a referral fee or an onward pass. Imported from the config rather than
-    // duplicated here so this fails the moment the config changes.
+  it("consent notice names the network and discloses plural firms", async () => {
+    // Layer one of the layered notice (DSA Annex B.1). It must name the network
+    // category and disclose that the recipients are FIRMS, plural, never a single
+    // nominated adviser: LIA section 3.2 turns on that being visible without opening
+    // the privacy policy. The maximum number, cascade and fee are layer two and are
+    // asserted against the privacy policy, not here. We import the site config rather
+    // than duplicating the string so this fails the moment the config changes.
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
-      expect(consentText).not.toContain(banned);
-    }
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).toContain("regulated firms");
+    expect(consentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
   });
 
   it("consent text never contains 'DJH' or 'Reflex' (copy discipline: no internal/named-partner mentions)", async () => {

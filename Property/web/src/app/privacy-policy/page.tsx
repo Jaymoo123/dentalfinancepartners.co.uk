@@ -177,7 +177,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </>
         ) : null}
-        <p>We use the following service providers, who process data on our instructions only (as our processors):</p>
+        <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
           <li><strong>Vercel:</strong> website hosting and content delivery.</li>
@@ -186,7 +186,7 @@ export default function PrivacyPolicyPage() {
           <li><strong>Twilio:</strong> sending the text messages we use to confirm your details.</li>
           <li>
             <strong>Anthropic, through the Vercel AI Gateway:</strong> reading your enquiry to grade the type of work it
-            describes and to write the one-line summary we use to triage it.
+            describes and to write the one-line summary we show to firms.
           </li>
           <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
         </ul>
@@ -200,8 +200,7 @@ export default function PrivacyPolicyPage() {
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
           after which it is deleted. If you subscribe to our email updates, we keep your email address until you
-          unsubscribe. Our records of what you were shown and any consent you gave are kept for as long as we hold the
-          related personal data, so that we can demonstrate the lawful basis for using it.
+          unsubscribe. Our records of what you were shown and any consent you gave are kept for up to six years, under access controls, so that we can demonstrate the lawful basis for using it.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">7. Your rights</h2>

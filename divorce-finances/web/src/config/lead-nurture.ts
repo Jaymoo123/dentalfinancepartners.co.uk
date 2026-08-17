@@ -296,7 +296,7 @@ const STEPS: LeadNurtureStep[] = [
           [
             "Thanks for your enquiry, it has just come through to us and we are ready to help.",
             `The call is a free conversation about your situation, around 20 minutes, with no charge and no obligation. ${callScopeLine(role)}`,
-            "Where formal legal advice is needed, we will tell you plainly and point you to the right kind of regulated professional.",
+            "Where advice is needed, it comes from the partner firm we introduce you to, a vetted, SRA-regulated family law firm. We may receive a fee from the firm we introduce you to, and that never changes what you pay.",
             "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
           ],
           "t0_email",

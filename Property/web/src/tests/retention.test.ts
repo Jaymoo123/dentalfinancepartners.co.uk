@@ -26,7 +26,7 @@ vi.mock("@/lib/supabase/admin", () => ({
 }));
 
 vi.mock("@/config/site", () => ({
-  siteConfig: { company: { enquiryRetentionMonths: 3 } },
+  siteConfig: { company: { enquiryRetentionMonths: 24 } },
 }));
 
 // ---------------------------------------------------------------------------
@@ -120,8 +120,8 @@ describe("retentionCutoffIso", () => {
 const RET_LEAD_ID = "lead-ret-001";
 const RET_NOW_MS = Date.UTC(2026, 6, 7, 12, 0, 0); // 2026-07-07T12:00:00.000Z
 const RET_NOW_ISO = new Date(RET_NOW_MS).toISOString();
-// Well past the 3-month period Property publishes.
-const RET_OLD_ISO = "2026-01-05T09:00:00.000Z";
+// Well past the 24-month period Property publishes (3 months until 2026-08-17).
+const RET_OLD_ISO = "2024-01-05T09:00:00.000Z";
 
 describe("runLeadRetentionPurge extras scrub", () => {
   beforeEach(() => {

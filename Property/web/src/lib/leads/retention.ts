@@ -3,9 +3,10 @@
  *
  * The privacy notice promises: "We keep enquiry data for
  * {company.enquiryRetentionMonths} months from the date of your enquiry,
- * after which it is deleted." The data-sharing agreement requires
- * deletion/anonymisation of contact details and message content within 3
- * months of the enquiry date.
+ * after which it is deleted." DSA clause 11.1 requires deletion or anonymisation
+ * no later than the period that site publishes, and in any event no later than
+ * 24 months from the enquiry. The published figure is therefore the operative
+ * promise and this mirror exists to keep the purge matching it.
  *
  * We ANONYMISE rather than hard-delete so the consent record and audit trail
  * survive (consent_text, consent_at, status, source, created_at are never
@@ -37,7 +38,10 @@ const BATCH_LIMIT = 500;
  * period in use: an unknown site gets the strictest treatment, not the loosest.
  */
 export const RETENTION_MONTHS_BY_SOURCE: Record<string, number> = {
-  property: 3,
+  // Property was 3 months, set when the DJH deal required it. That deal ended and the
+  // pool-model DSA defers to whatever the site publishes, so it moved to 24 on
+  // 2026-08-17 with the rest of the estate (owner instruction).
+  property: 24,
   ashfield: 3,
   dentists: 24,
   medical: 24,

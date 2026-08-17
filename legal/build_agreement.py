@@ -5,8 +5,9 @@
 The commercial layer lives in legal/PARTNER_AGREEMENT_TEMPLATE.md and carries three
 markers. This script fills them:
 
-  <!-- schedule1 -->  Schedule 1, generated from config/tiers.json plus the standard
-                      terms block of config/standard_terms.md, verbatim.
+  <!-- schedule1 -->  Schedule 1, generated from config/tiers.json, plus the standard
+                      terms block of config/standard_terms.md and the classification
+                      rubric of docs/CLASSIFY.md, both verbatim.
   <!-- schedule2 -->  Schedule 2, the DSA clauses lifted verbatim from
                       legal/DSA_TEMPLATE.md between its dsa:start/end markers.
   <!-- annexes -->    Annexes A and B, likewise, between dsaannex:start/end.
@@ -38,6 +39,7 @@ STANDALONE_ONLY = re.compile(
 
 TEMPLATE = ROOT / "legal" / "PARTNER_AGREEMENT_TEMPLATE.md"
 DSA = ROOT / "legal" / "DSA_TEMPLATE.md"
+CLASSIFY = ROOT / "docs" / "CLASSIFY.md"
 DEFAULT_OUT = ROOT / "legal" / "out" / "Lead_Generation_and_Data_Sharing_Agreement.md"
 
 
@@ -52,7 +54,13 @@ def marker_block(text, name, source, drop_standalone=False):
     return block.strip()
 
 
-def schedule_1(cfg):
+def demote(md):
+    """Push every heading down one level, so a lifted block nests under its
+    Schedule 1 paragraph instead of sitting as a sibling of it."""
+    return re.sub(r"^(#{1,5}) ", r"#\1 ", md, flags=re.M)
+
+
+def schedule_1(cfg, rubric):
     """Commercial schedule. Every number comes from config/tiers.json."""
     acc_cap = cfg["claim_slots_per_lead"]
     adj_cap = cfg["adjacent_claim_slots_per_lead"]
@@ -130,7 +138,18 @@ seen with no credits.
 
 {tiers.terms_text()}
 
-## 7. Agreed variations
+## 7. The Rubric (clause 6.3)
+
+This is the Supplier's published lead classification rubric in full, as it stands at
+the date of this agreement. It is the reference against which the Recipient may check
+the tier of any Delivered Lead, and against which a "materially different" flag under
+clause 6.5(b) is judged.
+
+{demote(sheet.philosophy_md())}
+
+{demote(rubric)}
+
+## 8. Agreed variations
 
 Any term agreed between the parties that differs from the published position is recorded
 here. Where nothing is stated, the published terms above apply in full.
@@ -147,7 +166,8 @@ def build():
     template = TEMPLATE.read_text(encoding="utf-8")
     dsa = DSA.read_text(encoding="utf-8")
 
-    out = template.replace("<!-- schedule1 -->", schedule_1(cfg))
+    rubric = marker_block(CLASSIFY.read_text(encoding="utf-8"), "rubric", CLASSIFY.name)
+    out = template.replace("<!-- schedule1 -->", schedule_1(cfg, rubric))
     out = out.replace("<!-- schedule2 -->",
                       marker_block(dsa, "dsa", DSA.name, drop_standalone=True))
     out = out.replace("<!-- annexes -->", marker_block(dsa, "dsaannex", DSA.name))

@@ -39,9 +39,16 @@ describe("lead payload — consent text contract", () => {
 });
 
 describe("lead payload — partner consent wording", () => {
-  it("consent notice makes no third-party sharing claim (in-house since 2026-08-17)", () => {
-    for (const banned of ["partner network", "shared with", "paid a fee", "passed to"]) {
-      expect(siteConfig.leadConsentText).not.toContain(banned);
-    }
+  it("consent notice names the specialist partner network (never a single firm)", () => {
+    expect(siteConfig.leadConsentText).toContain("specialist partner network");
+  });
+
+  // Layer one of the layered notice (DSA Annex B.1). Cascade, the maximum number and
+  // the fee moved to layer two, the privacy policy, on 17 August 2026. What layer one
+  // still has to carry is plurality: LIA section 3.2 turns on the enquirer seeing that
+  // the recipients are firms in a network, not one nominated adviser.
+  it("consent notice discloses plural firms, never a single firm", () => {
+    expect(siteConfig.leadConsentText).toContain("regulated firms");
+    expect(siteConfig.leadConsentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
   });
 });

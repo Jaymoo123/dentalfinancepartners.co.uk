@@ -67,20 +67,26 @@ describe("retention mirror", () => {
 
   it("scans with the SHORTEST period so short-promise leads are not missed", () => {
     // Direction guard for the 2026-08 bug: the purge scan filtered on the
-    // LONGEST period (24mo), so a 4-month-old property lead (3-month promise)
-    // was never even fetched, while isPastRetention correctly said "purge".
+    // LONGEST period (24mo), so a 4-month-old lead on a 3-month promise was
+    // never even fetched, while isPastRetention correctly said "purge".
     // The scan cutoff must be at least as inclusive as every site's own cutoff.
+    // The short-promise fixture is ashfield: property carried the 3-month promise
+    // until 2026-08-17, when it moved to 24 with the rest of the estate.
     const nowMs = Date.parse("2026-08-15T00:00:00Z");
     const scanCutoff = retentionCutoffIso(nowMs, MIN_RETENTION_MONTHS);
 
-    // A 4-month-old property lead IS past its 3-month promise and MUST pass
-    // the scan filter (created_at < scanCutoff)...
-    const propertyLead = "2026-04-15T00:00:00.000Z";
-    expect(isPastRetention("property", propertyLead, nowMs)).toBe(true);
-    expect(propertyLead < scanCutoff).toBe(true);
+    const shortest = Object.entries(RETENTION_MONTHS_BY_SOURCE)
+      .reduce((a, b) => (b[1] < a[1] ? b : a));
+    expect(shortest[1]).toBe(MIN_RETENTION_MONTHS);
+
+    // A 4-month-old lead on the shortest promise IS past it and MUST pass the
+    // scan filter (created_at < scanCutoff)...
+    const fourMonthsOld = "2026-04-15T00:00:00.000Z";
+    expect(isPastRetention(shortest[0], fourMonthsOld, nowMs)).toBe(true);
+    expect(fourMonthsOld < scanCutoff).toBe(true);
 
     // ...while a 4-month-old dentists lead (24-month promise) passes the scan
     // but is correctly rejected by the per-lead check.
-    expect(isPastRetention("dentists", propertyLead, nowMs)).toBe(false);
+    expect(isPastRetention("dentists", fourMonthsOld, nowMs)).toBe(false);
   });
 });

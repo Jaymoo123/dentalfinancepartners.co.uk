@@ -305,7 +305,7 @@ export default function HomePage() {
               <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Get connected with a specialist</h3>
               <LeadForm submitLabel="Get connected with a specialist" />
               <p className="mt-4 text-xs leading-relaxed text-neutral-500">
-                By sending your details you agree to us using them to respond to your enquiry and to contact you about it. Full details in our privacy policy.
+                By sending your details you agree to us sharing them with a relevant specialist firm so they can contact you. We may receive a fee if you go on to use their services. Full details in our privacy policy.
               </p>
             </div>
           </div>

@@ -15,9 +15,10 @@ Four rules make the system checkable:
 4. **One rubric, applied everywhere.** The same rubric grades every enquiry from every site for every buyer, and the classification is recorded against the lead at the time it is graded.
 <!-- philosophy:end -->
 
+<!-- rubric:start -->
 ## Tier signals
 
-Grade by the work the enquiry asks for. The lists below are the published case-type lists referred to in the rules above; `config/tiers.json` carries the same examples in machine-readable form.
+Grade by the work the enquiry asks for. The lists below are the published case-type lists referred to in the rules above.
 
 ### Advisory
 Structural or planning work where the adviser's judgement is the product:
@@ -48,6 +49,7 @@ If an enquiry could be read as either of two tiers, grade the lower one. Example
 ### Out of scope for tiering
 - **Adjacent** is a delivery lane (the same lead offered to non-competing professions), not a grade; it never changes the accounting tier.
 - **Raw** is an eligibility state (unverified after the 7-day nurture window), not a grade.
+<!-- rubric:end -->
 
 ## Classification prompt
 

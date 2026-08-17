@@ -8,5 +8,5 @@ export const site = {
   sourceIdentifier: "ecommerce",
   // Static pool-model acknowledgement; must stay in step with web/src/config/site.ts.
   leadConsentText:
-    "Ecommerce Finance will use your details to respond to your enquiry and to contact you about it. You can object at any time. See our Privacy Policy.",
+    "Ecommerce Finance will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time. See our Privacy Policy.",
 } as const;
