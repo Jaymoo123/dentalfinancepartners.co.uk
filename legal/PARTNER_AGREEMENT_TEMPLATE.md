@@ -6,7 +6,7 @@ Dated: the date of the last signature below.
 
 (1) ASHFIELD TRADING LIMITED (company number 16358723), whose registered office is at 20 Ashfield Avenue, Shipley, BD18 3AL (the "Supplier"); and
 
-(2) the firm or practitioner identified in the Recipient details block, and signing in the signature block, at the end of this agreement (the "Recipient"). The Recipient details block must be completed in full on or before signature; until it is completed, no agreement is formed,
+(2) the firm or practitioner identified in the Recipient column of the details table, and signing in the signature block, at the end of this agreement (the "Recipient"). The Recipient column must be completed in full on or before signature; until it is completed, no agreement is formed,
 
 each a "party" and together the "parties".
 
@@ -140,7 +140,7 @@ IT IS AGREED as follows.
 
 6.6 Already engaged elsewhere. A Lead is credited where, before submitting the enquiry, the enquirer had already formally engaged another adviser to carry out the specific work the enquiry is about. It is not enough that the enquirer has an existing general accountant or adviser for other matters. An enquirer who engages another adviser at or after the time of enquiring, or has done so by the time the Recipient makes contact, is a matter of contact timing and not of Lead quality, and remains chargeable; the Recipient should respond promptly to minimise this. A flag under this clause requires the enquirer's own confirmation, volunteered unprompted, that the prior engagement pre-dates the enquiry. The Supplier will provide the enquiry date and time from the Delivery Log on request.
 
-6.7 Flag mechanics. A flag must be in writing to the Supplier's contact in Schedule 1; must be made within 3 Working Days of Delivery for grounds (a), (b), (d) and (e), within the 14-day window for ground (c), and promptly on becoming aware and within 14 days of Delivery for clause 6.6; must identify the Lead by its Delivery Log reference; must state the single ground relied on; and must include the supporting evidence. Time is of the essence. A late, unevidenced or insufficiently evidenced flag is not valid and the Claim Price remains payable. A Lead may be credited on one ground only, and a Lead once credited is not also billable.
+6.7 Flag mechanics. A flag must be in writing to the Supplier's contact in the details table; must be made within 3 Working Days of Delivery for grounds (a), (b), (d) and (e), within the 14-day window for ground (c), and promptly on becoming aware and within 14 days of Delivery for clause 6.6; must identify the Lead by its Delivery Log reference; must state the single ground relied on; and must include the supporting evidence. Time is of the essence. A late, unevidenced or insufficiently evidenced flag is not valid and the Claim Price remains payable. A Lead may be credited on one ground only, and a Lead once credited is not also billable.
 
 6.8 Review. The Supplier will review each valid, evidenced flag reasonably and in good faith and notify its determination within 10 Working Days. For ground (a) only, if the Supplier does not respond within 10 Working Days of a valid, evidenced flag, the flag is treated as accepted. For every other ground the Supplier's silence is not acceptance. An accepted flag is credited against the next invoice, or refunded within 30 days if no further invoice is due.
 
@@ -282,7 +282,7 @@ IT IS AGREED as follows.
 
 20.6 Third party rights. A person who is not a party has no right under the Contracts (Rights of Third Parties) Act 1999 to enforce this agreement, except that this does not affect any right of a data subject that exists apart from that Act.
 
-20.7 Notices. Notices must be in writing and sent to the email in Schedule 1 or the Recipient details block, or as updated in writing. A notice by email is deemed received on transmission, or, if sent after 5pm on a Working Day or on a non-Working Day, at 9am on the next Working Day. This does not apply to the service of court proceedings.
+20.7 Notices. Notices must be in writing and sent to that party's contact in the details table, or as updated in writing. A notice by email is deemed received on transmission, or, if sent after 5pm on a Working Day or on a non-Working Day, at 9am on the next Working Day. This does not apply to the service of court proceedings.
 
 20.8 Counterparts. This agreement may be signed in counterparts, including by electronic signature, which together form one agreement.
 
@@ -296,35 +296,21 @@ IT IS AGREED as follows.
 
 SIGNED for and on behalf of the parties:
 
-| Supplier: Ashfield Trading Limited | Recipient (the firm or practitioner named in the Recipient details block) |
+| Supplier: Ashfield Trading Limited | Recipient (the firm or practitioner named below) |
 |---|---|
 | Signature: ............................................ | Signature: ............................................ |
 | Name: Mohammed Junayd Moughal | Name: ............................................ |
 | Title: Director | Title: ............................................ |
 | Date: ............................................ | Date: ............................................ |
 
-### Recipient details
+### Details
 
-| Item | Recipient |
-|---|---|
-| Full legal name and, if a body corporate or LLP, its registered number (for a sole practitioner, the individual's full name and any trading name) | |
-| Professions and services the Recipient provides (this determines the Lane it Claims on) | |
-| Nominated Address (secure endpoint or email for receiving Deliveries) | |
-| Notices and data protection contact email | |
-| Published privacy policy URL | |
-| Regulatory or professional body and membership number, if any | |
-| ICO registration reference | |
-
-### Supplier details
-
-| Item | Supplier |
-|---|---|
-| Firm | Ashfield Trading Limited (company number 16358723), operating each Site under that Site's trading name, and the Network under the name Ashfield Partner Network |
-| Sites covered by this agreement | All specialist enquiry websites operated by the Supplier, unless a narrower list is stated here: |
-| Commercial and flag contact | Mohammed Junayd Moughal, junayd@ashfieldtrading.com |
-| Data protection contact | Mohammed Junayd Moughal, junayd@ashfieldtrading.com |
-| Published privacy policy URL | Each Site publishes its own privacy policy at /privacy-policy on that Site |
-| ICO registration reference | Available on request |
+| Item | Supplier | Recipient |
+|---|---|---|
+| Firm, and registered number if a body corporate or LLP (for a sole practitioner, the individual's full name and any trading name) | Ashfield Trading Limited (company number 16358723), operating each Site under that Site's trading name, and the Network under the name Ashfield Partner Network | |
+| Nominated Address for Deliveries, which Schedule 2 calls Referrals (secure endpoint or email) | Not applicable; the Supplier does not receive Deliveries | |
+| Notices, flags and data protection contact | Mohammed Junayd Moughal, junayd@ashfieldtrading.com | |
+| Sites covered by this agreement | All specialist enquiry websites operated by the Supplier, unless a narrower list is stated here: | Not applicable |
 <!-- schedule1 -->
 
 # SCHEDULE 2 - DATA SHARING AND DATA PROTECTION
@@ -341,7 +327,7 @@ How to read this Schedule.
 
 (iv) This Schedule does not repeat the term, general or governing law provisions, because clauses 16, 17, 20 and 21 cover that ground once for the whole agreement. Its numbering therefore runs 1 to 12 and then 14. Paragraph 14 (liability) applies in full, and its £50,000 cap on data protection liability is the same cap stated at clause 12.5.
 
-(v) The parties' details are in the Recipient details block and Supplier details block in the signature section above; this Schedule's references to a Details Block and to the Nominated Address are to those tables.
+(v) The parties' details are in the details table in the signature section above; this Schedule's references to a Details Block are to that party's column of it, and its references to the Nominated Address are to the address stated there.
 
 <!-- schedule2 -->
 <!-- annexes -->

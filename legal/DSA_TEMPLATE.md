@@ -6,7 +6,7 @@ Dated: the date of the last signature below.
 
 (1) ASHFIELD TRADING LIMITED (company number 16358723), whose registered office is at 20 Ashfield Avenue, Shipley, BD18 3AL (the "Supplier"); and
 
-(2) the recipient firm or practitioner identified in the Recipient details block, and signing in the signature block, at the end of this agreement (the "Recipient"). The Recipient details block must be completed in full on or before signature; until it is completed, no agreement is formed,
+(2) the recipient firm or practitioner identified in the Recipient column of the details table, and signing in the signature block, at the end of this agreement (the "Recipient"). The Recipient column must be completed in full on or before signature; until it is completed, no agreement is formed,
 
 each a "party" and together the "parties".
 
@@ -32,7 +32,7 @@ IT IS AGREED as follows.
 
 "Data Protection Legislation" means the UK GDPR, the Data Protection Act 2018 (as amended by the Data (Use and Access) Act 2025), and the Privacy and Electronic Communications (EC Directive) Regulations 2003 ("PECR"), in each case as amended or replaced from time to time. "Controller", "Processor", "Personal Data", "Personal Data Breach", "process" and related terms have the meanings given in the Data Protection Legislation.
 
-"Details Block" means a party's completed details table in the signature section of this agreement.
+"Details Block" means a party's completed column of the details table in the signature section of this agreement.
 
 "Nominated Address" means the address or secure endpoint the Recipient states in its Details Block for receiving Referrals.
 
@@ -193,32 +193,21 @@ This agreement and any dispute or claim arising out of it (including non-contrac
 
 SIGNED for and on behalf of the parties:
 
-| Supplier: Ashfield Trading Limited | Recipient (the firm or practitioner named in the Recipient details block) |
+| Supplier: Ashfield Trading Limited | Recipient (the firm or practitioner named below) |
 |---|---|
 | Signature: ............................................ | Signature: ............................................ |
 | Name: Mohammed Junayd Moughal | Name: ............................................ |
 | Title: Director | Title: ............................................ |
 | Date: ............................................ | Date: ............................................ |
 
-### Recipient details
+### Details
 
-| Item | Recipient |
-|---|---|
-| Full legal name and, if a body corporate or LLP, its registered number (for a sole practitioner, the individual's full name and any trading name) | |
-| Nominated Address (secure endpoint or email for receiving Referrals) | |
-| Notices and data protection contact email | |
-| Published privacy policy URL | |
-| ICO registration reference | |
-
-### Supplier details
-
-| Item | Supplier |
-|---|---|
-| Firm | Ashfield Trading Limited (company number 16358723), operating each Site under that Site's trading name |
-| Sites covered by this agreement | All specialist enquiry websites operated by the Supplier, unless a narrower list is stated here: |
-| Data protection contact | Mohammed Junayd Moughal, junayd@ashfieldtrading.com |
-| Published privacy policy URL | Each Site publishes its own privacy policy at /privacy-policy on that Site |
-| ICO registration reference | Available on request |
+| Item | Supplier | Recipient |
+|---|---|---|
+| Firm, and registered number if a body corporate or LLP (for a sole practitioner, the individual's full name and any trading name) | Ashfield Trading Limited (company number 16358723), operating each Site under that Site's trading name | |
+| Nominated Address for Referrals (secure endpoint or email) | Not applicable; the Supplier does not receive Referrals | |
+| Notices and data protection contact | Mohammed Junayd Moughal, junayd@ashfieldtrading.com | |
+| Sites covered by this agreement | All specialist enquiry websites operated by the Supplier, unless a narrower list is stated here: | Not applicable |
 
 <!-- dsaannex:start -->
 
