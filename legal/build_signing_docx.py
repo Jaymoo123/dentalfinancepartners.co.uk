@@ -236,6 +236,20 @@ def main():
     h2.paragraph_format.space_after = Pt(3)
     h2.paragraph_format.keep_with_next = True
 
+    # Levels 3 and 4 are used by the signature details blocks and by the rubric in
+    # Schedule 1. Until 2026-08-17 only "# " and "## " were handled, so "### Recipient
+    # details" and "#### Advisory" rendered as literal hashes in the signing copy.
+    for level, size in ((3, 11), (4, 10.5)):
+        h = doc.styles[f"Heading {level}"]
+        h.font.name = "Calibri"
+        h.font.size = Pt(size)
+        h.font.bold = True
+        h.font.italic = False
+        h.font.color.rgb = INK
+        h.paragraph_format.space_before = Pt(8)
+        h.paragraph_format.space_after = Pt(2)
+        h.paragraph_format.keep_with_next = True
+
     _footer(sec, "Lead Generation and Data Sharing Agreement")
 
     table_buf = []
@@ -273,9 +287,15 @@ def main():
                 h = doc.add_heading(level=1)
                 add_inline(h, text)
                 _bottom_border(h)
-        elif stripped.startswith("## "):
-            h = doc.add_heading(level=2)
-            add_inline(h, stripped[3:].strip())
+        elif re.match(r"#{2,6} ", stripped):
+            hashes = len(stripped) - len(stripped.lstrip("#"))
+            h = doc.add_heading(level=min(hashes, 4))
+            add_inline(h, stripped[hashes:].strip())
+        elif stripped.startswith("- "):
+            # The standard terms in Schedule 1 are a bullet list. These rendered as
+            # paragraphs beginning with a literal hyphen until 2026-08-17.
+            p = doc.add_paragraph(style="List Bullet")
+            add_inline(p, stripped[2:].strip())
         elif stripped.startswith(">"):
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.3)
@@ -292,6 +312,13 @@ def main():
 
     if table_buf:
         flush_table(doc, [r for r in table_buf if not is_separator_row(r)])
+
+    # Refuse to write a signing copy that still shows its markup. An unhandled
+    # heading level does not fail loudly, it just prints "#### Advisory" to the
+    # counterparty, which is how it survived into a document that was ready to send.
+    leaked = [p.text for p in doc.paragraphs if re.match(r"#{1,6} |\*\*|^- ", p.text.strip())]
+    if leaked:
+        sys.exit("unrendered markdown reached the docx: " + "; ".join(leaked[:5]))
 
     doc.save(out)
     print(f"Wrote {out} ({len(doc.paragraphs)} paragraphs, {len(doc.tables)} tables)")
