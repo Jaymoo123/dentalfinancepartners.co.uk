@@ -4,7 +4,9 @@ The shared context for the stamp duty cluster. Every agent working this cluster 
 first and adds no scope that is not in it. Method: `docs/_engines/REWRITE_PROGRAM.md` §9.
 Findings behind it: `docs/property/STRUCTURE_VS_COMPETITORS_2026-08-17.md`.
 
-**Status: paperwork only. Nothing has been written, changed or deployed.**
+**Status: BATCH EXECUTED 2026-08-17, commit `f7794767` (all 7 pages written, QA'd, gates green).
+NOT deployed; deploy and monitored_pages registration remain owner-triggered. See
+`docs/property/STATE.md` §0.10 for the full post-batch state.**
 
 ## 1. Scope declaration
 

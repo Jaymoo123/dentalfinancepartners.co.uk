@@ -32,7 +32,30 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 
 **[`STRUCTURE_VS_COMPETITORS_2026-08-17.md`](STRUCTURE_VS_COMPETITORS_2026-08-17.md)** — why peers rank for 20 to 100x more keywords, answered with live data. Headlines: page count is NOT the variable (we publish 798 URLs, uklandlordtax publishes 401 and ranks for 35x more); depth is not either (ours 3,000-4,300 words against their 1,967-2,297); **domain trust is the biggest single factor** (17 referring domains, first backlink 2026-06-12, DataForSEO rank 87 against 208-298 for peers aged 2019-2022) and their winning pages carry 0 to 8 referring domains of their own, so it is domain-level not page-level. **The additive finding is vocabulary**: 108 of the top 150 competitor SDLT keywords appear nowhere in 760 posts, and our assigned limited-company page holds 0 of its cluster's 98 keywords, saying "SDLT" throughout and "stamp duty" twice in 3,530 words. Appendices: B the 41-topic SDLT consensus map with per-page actions; C the scope statement (263 of our pages, 7 competitor domains, 2,539 queries from three sources, because competitor data alone drops 937 queries we already earn impressions on); D2 four full-domain competitor teardowns, every page; F the measured register gap (statute references 12.3 per 1k against 0.1, direct address at half their rate, while sentence length, reading ease and question-heading share are NOT different); **G the reconciliation with 2026-08-16, which withdraws internal linking as a lever** (rho -0.014, p 0.869 there) and double-sources the tool-shape finding.
 
-Programme design lives in [`../_engines/REWRITE_PROGRAM.md`](../_engines/REWRITE_PROGRAM.md) §9.1 to §9.12: cluster coverage input, research-pack spec, tracker reuse (`monitored_pages` + `blog_optimizations`, both already carry Bing baselines), scope contract and reconciliation ledger, dossier freeze, four new deterministic gates including equity preservation, the cluster-level language pass, and the falsified-lever table. Specimen research pack: `briefs/property/sdlt/PACK_sdlt-transfer-property-company-cost.md`. **Status: designed, nothing built, nothing deployed. Open decisions: sign off the SDLT scope statement as the pilot, and top up DataForSEO (balance $6.70, about $0.50 per uncapped cluster harvest).**
+Programme design lives in [`../_engines/REWRITE_PROGRAM.md`](../_engines/REWRITE_PROGRAM.md) §9.1 to §9.12: cluster coverage input, research-pack spec, tracker reuse (`monitored_pages` + `blog_optimizations`, both already carry Bing baselines), scope contract and reconciliation ledger, dossier freeze, four new deterministic gates including equity preservation, the cluster-level language pass, and the falsified-lever table. Specimen research pack: `briefs/property/sdlt/PACK_sdlt-transfer-property-company-cost.md`.
+
+**UPDATE 2026-08-17 (second session): VERIFIED, CORRECTED, then BUILT.** A four-way independent
+verification pass (fresh GSC+Bing pulls, corpus re-measurement, ledger recompute, live competitor
+fetches; record in the findings doc Appendix I and DOSSIER §7b, commit `d33b51ad`) confirmed every
+directional conclusion, corrected the pre-union cluster numbers (`sdlt rates` peer-winnable 13,400
+-> 5,130; phrase gap worse than published at 139/150), propagated the manager adjudications into
+`ledger.csv` (reconciliation 1,773/353/207/79/36 of 2,448), and REFUTED the cruseburke 404-decay
+note live. Owner then approved the full 7-page work order in one batch, executed and committed as
+**`f7794767`** (5 blog extends/reframes + FTB tool copy + head-calculator reframe surfacing the
+existing second-home toggle as the stated tool experiment). QA (two Opus tracks) corrected en route:
+the Sch 15 **para 10 -> para 18** incorporation miscite (page, FAQs and `house_positions.md` line 32,
+which self-contradicted), an invented HMRC refund-timescale attribution, the Sch 4ZA £40k
+small-purchase threshold, and the stale FTB £6,250 -> £5,000 on the sibling relief page. New
+deterministic gate: `scripts/sdlt_equity_gate.py` (equity regression vs baseline, protected
+elements with pack-declared approved changes, ledger balance). All gates green: coverage 5/5,
+link audit 0/0, vitest 1166 incl. goldens 72/72, tsc, prod build, dependency closure, qa_verdict
+batch `sdlt1` all_clear + coverage manifest. **NOT deployed.** Remaining, all owner-gated:
+(1) resolve the pre-existing predeploy blocker, 11 cross-brand literals in
+`capital-allowances-for-care-homes.md` + `-dental-practices.md` (commit `3879b002`, not this batch);
+(2) deploy; (3) at deploy register `monitored_pages` for the 7 (the 2 calculator URLs need a URL
+override in `register_monitored_batch.py`, it builds blog URLs only); (4) Bing read at 14/28 days,
+Google 28/90, per-pack revert triggers. Sitewide nit found: header sr-only tagline carries an
+em-dash (template-level, every page, pre-existing).
 
 ---
 
