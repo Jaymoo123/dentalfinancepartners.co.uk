@@ -153,7 +153,12 @@ def slugify_category(cat: str) -> str:
     return re.sub(r"-+", "-", s).strip("-")
 
 
+PAGE_URL_OVERRIDES: dict[str, str] = {}
+
+
 def page_url_for(slug: str) -> str:
+    if slug in PAGE_URL_OVERRIDES:
+        return PAGE_URL_OVERRIDES[slug]
     f = BLOG_DIR / f"{slug}.md"
     cat = "uncategorised"
     if f.exists():
@@ -219,7 +224,17 @@ def main():
     ap.add_argument("--commit", action="store_true")
     ap.add_argument("--print-urls", action="store_true",
                     help="print the full canonical URL for each batch slug and exit (no DB writes); for IndexNow")
+    ap.add_argument("--page-urls", nargs="+", metavar="SLUG=PATH", default=[],
+                    help="per-slug URL overrides for non-blog pages, e.g. "
+                         "stamp-duty-calculator=/calculators/stamp-duty-calculator "
+                         "(the default builder assumes /blog/<category>/<slug>)")
     a = ap.parse_args()
+
+    for pair in a.page_urls:
+        slug, _, path = pair.partition("=")
+        if not path.startswith("/"):
+            raise SystemExit(f"--page-urls entry must be SLUG=/path, got: {pair}")
+        PAGE_URL_OVERRIDES[slug] = path
 
     if a.batch and not a.slugs:
         slugs = slugs_from_manifest(a.batch)
