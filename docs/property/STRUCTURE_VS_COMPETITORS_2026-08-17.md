@@ -858,3 +858,89 @@ prior analysis touched it), **2) tools at peer-winnable modified variants** (cor
 **3) one-current-year discipline** (editorial merit; statistic unverified), **4) internal linking as
 free hygiene and as a candidate for one isolated ten-page experiment.** The programme design in
 `REWRITE_PROGRAM.md` §9 is unchanged.
+
+
+---
+
+# Appendix H: the enrichment audit, and does adding coverage actually rank? (2026-08-17)
+
+Two questions asked late in the session. First: if we stop calling this a rewrite programme and call it
+enrichment, what is actually wrong with our pages? Second: why would enrichment NOT be a ranking play?
+
+## H1. What is measurably wrong, across all 760 posts
+
+| Flag | Pages | Share |
+|---|---|---|
+| Multi-year (4+ different tax years on the page) | 572 | 75% |
+| Very long (over 4,000 words; winners run 777 to 1,900) | 494 | 65% |
+| Cold (direct address under 10 per 1,000 words; winners run 28.8) | 468 | 62% |
+| Jargon-heavy (over 2 per 1,000 words) | 437 | 58% |
+| Statute-heavy (over 8 refs per 1,000 words; winners run 0.1) | 416 | 55% |
+| Near-invisible (under 10 impressions in 90 days) | 92 | 12% |
+| No internal links at all | 36 | 5% |
+| Invisible (zero impressions on both engines) | 32 | 4% |
+| Pipeline artefacts in source | 5 | 1% |
+| Em-dashes (house rule breach) | 10 | 1% |
+
+Median page: 4,350 words, 9.3 statute references per 1,000 words, 5.8 instances of "you" per 1,000
+words, and **five different tax years mentioned**.
+
+**The check that matters: none of the register flags predicts visibility.** Median total impressions
+for flagged pages against the rest: statute-heavy 54 against 54, jargon-heavy 54 against 55, cold 52
+against 58, multi-year 53 against 57, very long 53 against 55. Flat across the board. So the
+enrichment case cannot be made on rankings from this evidence, and anyone who claims it can is
+guessing.
+
+Traffic is concentrated: the top 100 posts hold 78% of all impressions, the top 200 hold 91%. An
+enrichment programme should touch those, not all 760.
+
+## H2. Does having the phrase on the page associate with ranking for it?
+
+Tested on our own corpus: every page-query pair we have impression data for, split by where (if
+anywhere) the query string appears on that page.
+
+**Google, 5,137 pairs**
+
+| Query appears | Pairs | Median position | Mean position | Impressions per pair |
+|---|---|---|---|---|
+| In title / metaTitle | 210 | 14.2 | 26.6 | 16.3 |
+| In a heading | 65 | 7.5 | 19.9 | 10.9 |
+| In body only | 329 | 6.9 | 20.2 | 5.8 |
+| **Not on the page at all** | 4,533 | 11.0 | 29.2 | 5.5 |
+
+**Bing, 2,454 pairs**
+
+| Query appears | Pairs | Median position | Mean position | Impressions per pair |
+|---|---|---|---|---|
+| In title / metaTitle | 54 | 6.0 | 6.7 | 17.9 |
+| In a heading | 8 | 8.0 | 7.6 | 4.5 |
+| In body only | 69 | 6.5 | 6.4 | 7.9 |
+| **Not on the page at all** | 2,323 | **5.0** | **5.4** | 2.6 |
+
+**Reading it honestly.** On Google, pairs where the phrase is present sit at a median position of 7
+against 11, and a mean of 20 against 29. That is a large gap on 5,137 pairs, and it is the first
+positive signal of the day for the coverage idea. On Bing, the effect is absent or reversed: queries
+NOT on the page sit at median 5.0, better than any present-phrase group, and 314 of our 327 Bing
+clicks in this sample come from queries that appear nowhere on the page.
+
+**Two caveats that stop this being a green light.** The causation is unproven and probably runs the
+other way for the most part: a page contains the phrase because the page is about that subject, so
+this may be measuring subject match rather than word insertion. And queries matched in the TITLE rank
+WORSE on Google (median 14.2) than body-only matches (6.9), which is the opposite of what a naive
+keyword theory predicts, most likely because title-matched queries are head terms with harder SERPs.
+
+## H3. Where that leaves enrichment
+
+Split the idea in two, because they have different evidence:
+
+1. **Adding an answer the page does not currently give** (a sub-question it never addresses). This is
+   a necessity argument, not a correlation: a page that does not answer a question cannot rank for
+   it. The Google table above is consistent with it. This is a legitimate ranking play and it is the
+   one worth testing.
+2. **Adding phrasings to a page that already covers the subject.** Not supported. Competitor winners
+   carry 2 or 3 of a 98-keyword cluster, our best Bing pages rank for thousands of queries that
+   appear nowhere on them, and the register flags do not predict visibility.
+
+Everything else in the enrichment list (statute density, jargon, coldness, length, multi-year) is
+justified on reader quality, conversion and answer-engine extraction. Those are real reasons. They
+are not ranking reasons, and the programme should not be sold as one.
