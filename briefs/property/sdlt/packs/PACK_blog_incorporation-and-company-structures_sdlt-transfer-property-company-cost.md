@@ -8,7 +8,8 @@ competitor pages named below. Read `../DOSSIER.md` first for scope and the langu
 
 - Page: `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost`
 - Owns cluster(s): 'sdlt rates'
-- Combined volume 28,610/mo, peer-winnable 13,400/mo
+- Combined volume 6,240/mo, peer-winnable 5,130/mo (corrected 2026-08-17 second session from the
+  frozen ledger; the originally published 28,610/13,400 were pre-union figures)
 - Grade: **EXTEND-BING**
 - Permitted: ADDITIVE ONLY. New H2 blocks, new FAQ entries, new table rows, new body paragraphs.
 - Forbidden: metaTitle, H1 and existing H2 order must stay byte-identical. This page is a live Bing asset.
@@ -51,7 +52,9 @@ Every query above must still match after the rewrite. The equity gate blocks the
 
 ## 3. The market's keyword set for this page
 
-98 keywords. 63 have a specialist firm in the top ten. 0 appear verbatim in our current copy, **98 do not**.
+107 keywords in the frozen ledger (table below shows the 60 competitor-sourced ones by volume).
+35 have a specialist firm in the top ten. 0 appear verbatim in our current copy, **107 do not**
+(re-verified against the corpus 2026-08-17, second session).
 
 | Keyword | Vol/mo | Best peer pos | Holder | In our copy |
 |---|---|---|---|---|

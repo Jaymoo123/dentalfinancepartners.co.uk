@@ -369,6 +369,12 @@ the cluster's demand.
 
 # Appendix B: what the framework produces on SDLT (worked map, 2026-08-17)
 
+> **SUPERSEDED FOR NUMBERS.** The topic sizes and scope figures in Appendices B and C are the
+> pre-union working set. The frozen artefacts in `briefs/property/sdlt/` (DOSSIER.md and the CSVs,
+> corrected in the 2026-08-17 second session) are the citable versions: 272 pages, 2,448 queries,
+> reconciliation 1,773/353/207/79/36, `sdlt rates` peer-winnable 5,130 not 13,400. Read this
+> appendix for the method and the qualitative findings only. Verification record: Appendix I.
+
 Method is `docs/_engines/REWRITE_PROGRAM.md` §9. Inputs: 1,600 competitor SDLT keywords across 8
 domains (DataForSEO, 2026-08-17), our GSC 2026-05-19 to 2026-08-15, our Bing 91-day page stats.
 
@@ -944,3 +950,37 @@ Split the idea in two, because they have different evidence:
 Everything else in the enrichment list (statute density, jargon, coldness, length, multi-year) is
 justified on reader quality, conversion and answer-engine extraction. Those are real reasons. They
 are not ranking reasons, and the programme should not be sold as one.
+
+
+---
+
+# Appendix I: independent verification pass (2026-08-17, second session)
+
+The owner flagged the sessions behind this document as having self-corrected repeatedly. A separate
+session therefore re-verified every load-bearing claim through four independent checks before any
+decision: fresh GSC and Bing API pulls (data through 2026-08-15), full local corpus re-measurement,
+recomputation of the frozen ledger, and live fetches of the competitor pages. Detail lives in
+`briefs/property/sdlt/DOSSIER.md` §7b. The scoreboard:
+
+| Claim | Verdict |
+|---|---|
+| Flagship SDLT calculator zero on both engines (drives its REFRAME grade) | CONFIRMED, every source |
+| All 7 work-order pages' equity figures | CONFIRMED exactly on fresh pulls |
+| Bing control (2x Google clicks from 2/3 impressions, Aug 1-15) | CONFIRMED exactly |
+| Google ramp not plateaued; 763/798 sitemap URLs drawing impressions | CONFIRMED |
+| Top-150 competitor phrases missing from corpus | CONFIRMED and WORSE: 139/150, not 108 |
+| `sdlt-transfer` page: 0 cluster phrases, "stamp duty" twice, SDLT-register prose | CONFIRMED |
+| No page owns second-home stamp duty as subject; phrase absent from all 760 posts | CONFIRMED |
+| Hub/calculator internal-link counts (0/0/0/0 hubs, 3 to flagship calculator) | CONFIRMED to the digit |
+| Competitor winner page shapes (provestor, uklandlordtax; question-form H2s) | CONFIRMED live, word counts within 8% |
+| ukpropertyaccountants uncrawlable (HTTP 202 stub) | CONFIRMED live (captcha/WAF stub) |
+| Appendix B/C topic sizes, `sdlt rates` 13,400 peer-winnable | CORRECTED: pre-union; frozen ledger says 5,130; artefacts patched |
+| Ledger carrying the manager adjudications | CORRECTED: overrides propagated, reconciliation now balances at 1,773/353/207/79/36 |
+| Register magnitudes (you/your, statute rates in Appendix F/H) | DIRECTIONAL ONLY; magnitudes do not fully reproduce, treat as ordinal |
+| cruseburke 310-URL 404 decay | REFUTED live: 0 of 30 sampled URLs 404 on 2026-08-17 |
+| Live SERP positions for individual queries | UNVERIFIED: Serper out of credits; DataForSEO snapshots uncorroborated |
+
+Standing conclusions after verification, unchanged in direction: the losses are domain trust
+(slow workstream), missing primer-layer subjects, and no owner set per topic; the lever is subject
+match, not phrase insertion, word count, register simplification or internal-link mechanics; the
+calculator is a tool-shape experiment, not a rewrite; and Bing remains the fast read on every change.

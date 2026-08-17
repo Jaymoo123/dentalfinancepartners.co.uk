@@ -8,7 +8,8 @@ competitor pages named below. Read `../DOSSIER.md` first for scope and the langu
 
 - Page: `/calculators/stamp-duty-calculator`
 - Owns cluster(s): 'calculate stamp duty', 'uk stamp tax'
-- Combined volume 1,655,320/mo, peer-winnable 286,130/mo
+- Combined volume 1,616,020/mo, peer-winnable 280,500/mo (corrected 2026-08-17 second session from
+  the frozen ledger; originally published 1,655,320/286,130 were pre-union figures)
 - Grade: **REFRAME**
 - Permitted: Full rewrite permitted: metaTitle, H1, H2s, body, FAQ.
 - Forbidden: URL and slug never change. No redirect, no collapse.

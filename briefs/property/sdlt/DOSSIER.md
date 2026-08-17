@@ -43,42 +43,57 @@ reach the pre-deploy gate.
 
 | Bucket | Queries | Meaning |
 |---|---|---|
-| assigned | 1,885 | mapped to a page, and that page's pack carries it |
+| assigned | 1,773 | mapped to a page, and that page's pack carries it |
 | already-covered | 353 | we already earn impressions, no market cluster, protected by the equity gate |
-| gap-no-page | 95 | real demand, no page of ours is close |
+| gap-no-page | 207 | real demand, no page of ours is close |
 | excluded-news | 79 | named politicians, budget speculation, abolition rumours |
 | deferred-longtail | 36 | our own zero-volume tail, no action |
 | **TOTAL** | **2,448** | balances against the universe of 2,448 |
+
+Corrected 2026-08-17 (second session): the manager adjudications in §4c were originally applied to
+`cluster_map.csv` and the packs but never propagated to `ledger.csv`. That is fixed: the 741
+"calculate stamp duty" rows and 49 "uk stamp tax" rows now point at `/calculators/stamp-duty-calculator`,
+and the 112 rows for the two NO-PAGE clusters ("stamp duty on a second house", "what is stamp duty")
+moved from assigned to gap-no-page, which is why assigned is 1,773 not the originally published 1,885.
+Ledger and cluster map now reconcile with zero disagreements.
 
 ## 4. Cluster map, ordered by peer-winnable volume
 
 Peer-winnable volume counts only keywords where a specialist firm holds a top-10 slot. It is the
 honest prize; raw volume is not, because the biggest terms belong to gov.uk, MoneyHelper and MSE.
 
+Numbers below corrected 2026-08-17 (second session): the originally published table carried
+pre-union cluster sizes (competitor keywords only). This table is recomputed from the frozen
+`ledger.csv` (post-union, post-adjudication) and now matches `cluster_map.csv` exactly.
+
 | Cluster | Vol/mo | Peer-winnable | Kw | Our queries | Action | Page |
 |---|---|---|---|---|---|---|
-| calculate stamp duty | 1,543,570 | 275,050 | 730 | 11 | REFRAME | `/calculators/stamp-duty-calculator` |
-| sdlt rates | 28,610 | 13,400 | 98 | 75 | EXTEND-BING | `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` |
-| uk stamp tax | 111,750 | 11,080 | 84 | 3 | REFRAME | `/calculators/stamp-duty-calculator` |
-| stamp duty first time buyer | 145,860 | 3,950 | 159 | 108 | EXTEND-GOOGLE | `/calculators/first-time-buyer-stamp-duty-calculator` |
-| stamp duty tax return | 26,100 | 1,470 | 85 | 22 | EXTEND-GOOGLE | `/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-refund` |
+| calculate stamp duty | 1,543,570 | 275,050 | 741 | 38 | REFRAME | `/calculators/stamp-duty-calculator` |
+| uk stamp tax | 72,450 | 5,450 | 49 | 5 | REFRAME | `/calculators/stamp-duty-calculator` |
+| sdlt rates | 6,240 | 5,130 | 107 | 61 | EXTEND-BING | `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` |
+| stamp duty first time buyer | 142,880 | 3,950 | 202 | 83 | EXTEND-GOOGLE | `/calculators/first-time-buyer-stamp-duty-calculator` |
 | andy burnham stamp duty | 2,060 | 1,470 | 3 | 0 | EXCLUDE-NEWS | (none) |
-| gifting a property stamp duty | 3,900 | 1,400 | 22 | 6 | REFRAME | `/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications` |
+| gifting a property stamp duty | 3,760 | 1,400 | 26 | 6 | REFRAME | `/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications` |
+| stamp duty tax return | 23,790 | 1,210 | 98 | 34 | EXTEND-GOOGLE | `/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-refund` |
 | abolishment of stamp duty | 3,110 | 1,000 | 9 | 0 | NO-PAGE | (none) |
-| stamp duty and property tax | 14,920 | 600 | 65 | 89 | EXTEND-BING | `/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice` |
-| stamp duty on holiday home | 1,470 | 420 | 7 | 0 | REFRAME | `/blog/property-types-and-specialist-tax/sdlt-furnished-holiday-let-2025-abolition` |
-| stamp duty change | 22,270 | 380 | 63 | 79 | EXTEND-BING | `/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` |
-| stamp duty on second property | 6,220 | 320 | 16 | 0 | NO-PAGE | (none) |
-| sdlt group relief | 980 | 320 | 7 | 0 | NO-PAGE | (none) |
-| transfer property to limited company without stamp duty | 740 | 320 | 5 | 0 | NO-PAGE | (none) |
-| stamp duty refund uninhabitable property | 510 | 300 | 9 | 0 | NO-PAGE | (none) |
-| stamp duty land tax return | 20,440 | 210 | 45 | 182 | EXTEND-GOOGLE | `/blog/landlord-tax-essentials/sdlt-leasehold-extension-vs-fresh-purchase` |
-| mixed use stamp duty calculator | 520 | 210 | 5 | 0 | EXTEND-GOOGLE | `/calculators/first-time-buyer-stamp-duty-calculator` |
+| stamp duty and property tax | 7,150 | 360 | 93 | 60 | EXTEND-BING | `/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice` |
+| sdlt group relief | 980 | 320 | 7 | 2 | NO-PAGE | (none) |
+| transfer property to limited company without stamp duty | 630 | 320 | 3 | 1 | NO-PAGE | (none) |
+| stamp duty refund uninhabitable property | 460 | 300 | 8 | 0 | NO-PAGE | (none) |
+| stamp duty on holiday home | 1,260 | 210 | 6 | 1 | REFRAME | `/blog/property-types-and-specialist-tax/sdlt-furnished-holiday-let-2025-abolition` |
+| mixed use stamp duty calculator | 260 | 210 | 4 | 0 | EXTEND-GOOGLE | `/calculators/first-time-buyer-stamp-duty-calculator` |
 | sdlt16 | 270 | 170 | 3 | 0 | NO-PAGE | (none) |
-| stamp duty if one person is a first time buyer | 290 | 150 | 6 | 0 | REFRAME | `/blog/property-types-and-specialist-tax/first-time-buyer-relief-benefits-and-eligibility-requirements` |
-| wales stamp duty calculator | 19,980 | 120 | 38 | 66 | EXTEND-BING | `/blog/landlord-tax-essentials/land-transaction-tax-a-complete-guide` |
+| stamp duty if one person is a first time buyer | 240 | 150 | 5 | 0 | REFRAME | `/blog/property-types-and-specialist-tax/first-time-buyer-relief-benefits-and-eligibility-requirements` |
+| wales stamp duty calculator | 18,680 | 120 | 97 | 72 | EXTEND-BING | `/blog/landlord-tax-essentials/land-transaction-tax-a-complete-guide` |
 | stamp duty budget 2025 | 1,610 | 120 | 6 | 0 | EXCLUDE-NEWS | `/calculators/first-time-buyer-stamp-duty-calculator` |
+| stamp duty change | 20,520 | 70 | 113 | 61 | EXTEND-BING | `/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` |
 | news on stamp duty | 4,320 | 50 | 20 | 0 | NO-PAGE | (none) |
+| stamp duty on second property | 2,750 | 0 | 12 | 0 | NO-PAGE | (none) |
+| stamp duty land tax return | 12,350 | 0 | 95 | 60 | EXTEND-GOOGLE | `/blog/landlord-tax-essentials/sdlt-leasehold-extension-vs-fresh-purchase` |
+
+Material moves in the correction: `sdlt rates` peer-winnable 13,400 to 5,130 (still the top prose
+cluster), `uk stamp tax` 11,080 to 5,450, `stamp duty change` 380 to 70, and `stamp duty land tax
+return` plus `stamp duty on second property` fall to zero peer-winnable.
 
 Full map with competitor domains and decision flags: `cluster_map.csv`.
 
@@ -129,15 +144,18 @@ nobody should be told a calculator rewrite will move the number.
 Seven packs written, ordered by peer-winnable volume. One page may own more than one cluster; that is
 consolidation working as intended, not an error.
 
+Peer-winnable figures corrected 2026-08-17 (second session) from the frozen ledger; the originally
+published numbers were pre-union. Ordering by prize is unchanged.
+
 | # | Page | Grade | Clusters | Peer-winnable | Google 90d | Bing 91d |
 |---|---|---|---|---|---|---|
-| 1 | `/calculators/stamp-duty-calculator` | REFRAME | 2 | 286,130 | 0i / 0c / pos 0 | 0i / 0c / pos 0 |
-| 2 | `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` | EXTEND-BING | 1 | 13,400 | 981i / 1c / pos 8.4 | 443i / 60c / pos 5.0 |
-| 3 | `/calculators/first-time-buyer-stamp-duty-calculator` | EXTEND-GOOGLE | 3 | 4,160 | 1311i / 0c / pos 81.1 | 0i / 0c / pos 0 |
-| 4 | `/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-refund` | EXTEND-GOOGLE | 2 | 1,470 | 314i / 1c / pos 39.8 | 29i / 1c / pos 7.7 |
+| 1 | `/calculators/stamp-duty-calculator` | REFRAME | 2 | 280,500 | 0i / 0c / pos 0 | 0i / 0c / pos 0 |
+| 2 | `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` | EXTEND-BING | 1 | 5,130 | 981i / 1c / pos 8.4 | 443i / 60c / pos 5.0 |
+| 3 | `/calculators/first-time-buyer-stamp-duty-calculator` | EXTEND-GOOGLE | 4 | 4,280 (120 of it news-excluded) | 1311i / 0c / pos 81.1 | 0i / 0c / pos 0 |
+| 4 | `/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-refund` | EXTEND-GOOGLE | 2 | 1,210 | 314i / 1c / pos 39.8 | 29i / 1c / pos 7.7 |
 | 5 | `/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications` | REFRAME | 1 | 1,400 | 49i / 0c / pos 13.1 | 0i / 0c / pos 0 |
-| 6 | `/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice` | EXTEND-BING | 1 | 600 | 273i / 4c / pos 22.7 | 61i / 7c / pos 5.9 |
-| 7 | `/blog/property-types-and-specialist-tax/sdlt-furnished-holiday-let-2025-abolition` | REFRAME | 2 | 420 | 0i / 0c / pos 0 | 3i / 0c / pos 7.7 |
+| 6 | `/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice` | EXTEND-BING | 1 | 360 | 273i / 4c / pos 22.7 | 61i / 7c / pos 5.9 |
+| 7 | `/blog/property-types-and-specialist-tax/sdlt-furnished-holiday-let-2025-abolition` | REFRAME | 2 | 210 | 0i / 0c / pos 0 | 3i / 0c / pos 7.7 |
 
 Grades: REFRAME means no equity to protect, full rewrite permitted. EXTEND means additive only,
 protected elements byte-identical. Packs are in `packs/`.
@@ -149,8 +167,9 @@ calculator as a separate experiment about tool shape, not a writing job.
 
 Revised sequence:
 
-1. `sdlt-transfer-property-company-cost` (EXTEND-BING, 13,400 peer-winnable, and the clearest
-   subject-match gap in the cluster: 0 of 98 phrases anywhere against winners at 2 to 3).
+1. `sdlt-transfer-property-company-cost` (EXTEND-BING, 5,130 peer-winnable on corrected numbers,
+   still the top prose cluster, and the clearest subject-match gap: 0 of the cluster's 107 phrases
+   anywhere against winners at 2 to 3).
 2. `a-complete-guide-to-stamp-duty-refund` (EXTEND-GOOGLE, 1,470).
 3. `/calculators/first-time-buyer-stamp-duty-calculator` (EXTEND-GOOGLE, 3,950, but the same caveat
    as the head calculator applies: it is a tool, so expect the copy lever to be weak).
@@ -209,6 +228,40 @@ years on the page. Two of the four domains torn down rank badly and their habits
   are directional; the live SERP is the arbiter for any single decision.
 - Volume figures sum close variants, so cluster totals overstate unique demand. Peer-winnable volume
   is the number to steer by.
+
+## 7b. Independent verification pass (2026-08-17, second session)
+
+A separate session re-verified every load-bearing claim before the owner decision, after the owner
+flagged the earlier sessions as untrustworthy. Method: four independent checks (fresh GSC and Bing
+API pulls; local corpus re-measurement; ledger recomputation; live competitor fetches).
+
+**Confirmed on fresh data (data through 2026-08-15):** the flagship `stamp-duty-calculator` really
+is zero on both engines by every source checked, so REFRAME is safe. All seven work-order pages'
+equity figures reproduce exactly. The Bing control holds exactly (Aug 1-15: Bing 996 clicks from
+36,551 impressions vs Google 493 from 54,971). 763 of 798 sitemap URLs draw impressions. The
+1,689-vs-443 Bing discrepancy on `sdlt-transfer-property-company-cost` is two endpoints:
+`GetPageStats` (page total, 1,689i/65c) vs `GetPageQueryStats` (top-slice undercount, 443i/60c);
+both real, use `GetPageStats` for totals.
+
+**Confirmed on the corpus, stronger than published:** the top-150 phrase gap is 139 of 150 missing,
+not 108. The `sdlt-transfer` page carries 0 of its cluster's phrases and says "stamp duty" twice in
+3,444 words. No page has second-home stamp duty as its subject and the literal phrase appears in
+zero posts. The hub-link counts (0 authored links to all four commercial hubs, 3 to the flagship
+calculator) reproduce to the digit.
+
+**Confirmed live on competitors:** provestor and uklandlordtax page shapes, word counts within 8%,
+and the question-form-H2 pattern (their H1s are technical; the searcher phrasing sits in the first
+H2). ukpropertyaccountants serves an HTTP 202 captcha stub, still uncrawlable.
+
+**Corrected (this file already reflects it):** cluster_map and §4/§5 numbers were pre-union;
+ledger adjudications propagated; reconciliation now 1,773/353/207/79/36.
+
+**Refuted or unverifiable, do not rely on:** cruseburke's 310-URL 404 decay does not reproduce live
+(0 of 30 sampled URLs 404 on 2026-08-17; site fixed or original crawl wrong), so drop the
+"rival decay opportunity" note. Register magnitudes (you/your per 1,000 words) reproduce only
+directionally, not in magnitude; treat Appendix F rates as ordinal. Live SERP positions are
+UNVERIFIED this pass: Serper is out of credits ("Not enough credits"), so DataForSEO position
+snapshots stand uncorroborated for individual queries.
 
 ## 8. What happens next
 
