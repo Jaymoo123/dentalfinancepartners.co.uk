@@ -82,6 +82,48 @@ honest prize; raw volume is not, because the biggest terms belong to gov.uk, Mon
 
 Full map with competitor domains and decision flags: `cluster_map.csv`.
 
+## 4b. CORRECTION, same day: the calculator ordering does not survive testing
+
+The owner asked whether the winning calculators carry text and keywords, and whether that is what we
+are missing. Tested directly on the head cluster's 730 keywords:
+
+| Page | Words | Inputs | Cluster phrases present | Of the top 50 by volume | Keywords it ranks for |
+|---|---|---|---|---|---|
+| uklandlordtax buy-to-let SDLT calculator | 1,430 | 9 | **7 of 730** | 3 | **515** |
+| landlordstudio SDLT calculator | 1,903 | 11 | 23 of 730 | 8 | 211 |
+| provestor SDLT calculator | 274 | 0 | 3 of 730 | 2 | 16 |
+| **ours** | 1,199 | 22 | **7 of 730** | 4 | **0** |
+
+Our calculator has the same phrase coverage as the page that outranks it 515 keywords to nothing,
+comparable length, and more inputs. **Copy is not what separates them on this cluster**, so rewriting
+our calculator has no evidential basis and it drops out of first place.
+
+The same test on the prose cluster ('sdlt rates', 98 keywords, 63 with a peer in the top ten):
+
+| Page | Position | Words | Cluster phrases in body | Phrases placed in URL/title/H1/headings |
+|---|---|---|---|---|
+| uklandlordtax rates-for-limited-companies | 2 | 777 | 2 | **2** (exact phrase in URL, title and H1) |
+| provestor stamp-duty/limited-company | 3 | 985 | 3 | **0** |
+| cruseburke do-limited-company-pay-stamp-duty | 32 | 1,088 | 2 | 1 |
+| optimise knwbase SDLT limited companies | 38 | 808 | 2 | 1 |
+| **ours** sdlt-transfer-property-company-cost | not ranking | 3,530 | **0** | **0** |
+
+Nobody stuffs phrases. The winners carry two or three. What they have that we do not is a page whose
+WHOLE SUBJECT is the question, at 777 to 985 words, titled as the subject. Ours is a 3,530-word
+technical treatment of a narrower mechanism ("SDLT on transferring property to a limited company
+(connected party)"), and it carries none of the cluster's phrasing anywhere, body or headings.
+
+**What this changes.** The lever is not phrase insertion and it is not the calculator's copy. It is
+subject match: does a page exist whose subject IS the question, at the length that subject deserves.
+That is a harder and more honest finding, and it partly cuts against the "no new pages" constraint,
+because for some clusters the answer is a short dedicated page rather than another section bolted
+onto a 3,500-word essay.
+
+**Open question, not yet answered:** why uklandlordtax's calculator holds 515 keywords when its copy
+is unremarkable. Candidates are domain age, usage signals, and the SERP treating an established tool
+as the entity for that intent. None of them is fixed by writing, and none is tested. Until it is,
+nobody should be told a calculator rewrite will move the number.
+
 ## 5. Work order
 
 Seven packs written, ordered by peer-winnable volume. One page may own more than one cluster; that is
@@ -99,6 +141,20 @@ consolidation working as intended, not an error.
 
 Grades: REFRAME means no equity to protect, full rewrite permitted. EXTEND means additive only,
 protected elements byte-identical. Packs are in `packs/`.
+
+**ORDER CORRECTED after the 4b test.** Item 1 (`/calculators/stamp-duty-calculator`) is demoted from
+first place: its prize is the largest but there is no evidence that a copy change moves it. Start
+instead with the prose pages where the subject-match gap is visible and measurable, and treat the
+calculator as a separate experiment about tool shape, not a writing job.
+
+Revised sequence:
+
+1. `sdlt-transfer-property-company-cost` (EXTEND-BING, 13,400 peer-winnable, and the clearest
+   subject-match gap in the cluster: 0 of 98 phrases anywhere against winners at 2 to 3).
+2. `a-complete-guide-to-stamp-duty-refund` (EXTEND-GOOGLE, 1,470).
+3. `/calculators/first-time-buyer-stamp-duty-calculator` (EXTEND-GOOGLE, 3,950, but the same caveat
+   as the head calculator applies: it is a tool, so expect the copy lever to be weak).
+4. The head calculator, as a tool experiment with a stated hypothesis, not as a rewrite.
 
 ### Manager adjudications on this map
 
