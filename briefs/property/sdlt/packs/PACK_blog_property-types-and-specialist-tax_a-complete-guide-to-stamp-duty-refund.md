@@ -8,7 +8,8 @@ competitor pages named below. Read `../DOSSIER.md` first for scope and the langu
 
 - Page: `/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-refund`
 - Owns cluster(s): 'stamp duty tax return', 'how to reduce stamp duty'
-- Combined volume 26,800/mo, peer-winnable 1,470/mo
+- Combined volume 24,490/mo, peer-winnable 1,210/mo (corrected 2026-08-17 second session from the
+  frozen ledger; originally published 26,800/1,470 were pre-union figures)
 - Grade: **EXTEND-GOOGLE**
 - Permitted: ADDITIVE ONLY. New H2 blocks, new FAQ entries, new table rows, new body paragraphs.
 - Forbidden: metaTitle and H1 must stay byte-identical. Existing H2s may be reordered only with a stated reason.
@@ -175,7 +176,11 @@ Every query above must still match after the rewrite. The equity gate blocks the
 
 1. Every query in section 2 still matches in metaTitle, H1, an H2, an FAQ or body prose.
 2. Protected elements unchanged per the grade above (EXTEND-GOOGLE).
-3. These phrasings appear in natural sentences, in an H2, an FAQ question or body prose:
+3. (Softened 2026-08-17 second session, per DOSSIER §4b: winners carry only 2 or 3 cluster phrases;
+   the lever is subject match, not phrase quotas.) Each distinct sub-question below is ANSWERED
+   under a searcher-worded heading or FAQ entry, with the number or the yes/no in the first
+   sentence. The list is the demand map, not an insertion checklist: use a phrasing verbatim only
+   where it reads naturally, and never force every variant into copy:
    - `stamp duty tax return` (2,400/mo, peer at position 13)
    - `hm revenue stamp duty` (1,000/mo, peer at position 19)
    - `sdlt hmrc` (720/mo, peer at position 20)

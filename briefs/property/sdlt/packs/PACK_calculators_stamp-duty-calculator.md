@@ -13,6 +13,17 @@ competitor pages named below. Read `../DOSSIER.md` first for scope and the langu
 - Grade: **REFRAME**
 - Permitted: Full rewrite permitted: metaTitle, H1, H2s, body, FAQ.
 - Forbidden: URL and slug never change. No redirect, no collapse.
+- **Tool experiment hypothesis (added 2026-08-17 second session, owner-approved).** DOSSIER §4b
+  showed copy does not separate winning calculators from ours, so this is NOT a writing job with a
+  writing expectation. The stated hypothesis: the page fails because its subjects are unnamed, not
+  because the tool is missing anything. The calculator ALREADY computes second-home/additional
+  surcharge (the additional-property toggle in `StampDutyCalculator.tsx`; math in `src/lib/sdlt.ts`,
+  both UNTOUCHED by this change). The change: name and surface what the tool does. A dedicated
+  "Stamp duty on a second home" H2 section pointing at the toggle (the 90,980/mo cluster no
+  specialist firm owns), a rates-table section for the 'uk stamp tax' cluster, and answer-block
+  sections for estimator/how-much intents. Measured as an experiment: any Bing impression on the
+  named subjects within 28 days is signal; no movement means tool shape needs more than naming, and
+  the next candidate is a distinct second-home calculator page, not more copy.
 - Revert: single-file git revert, then redeploy. Backup path recorded in `blog_optimizations.content_backup_path`.
 - Manager adjudication on 'calculate stamp duty': Head tool intent belongs on the named head tool. The scorer preferred the first-time-buyer calculator only because the head tool is invisible (0 impressions on both engines), which is the defect being fixed, not evidence of ownership.
 - Manager adjudication on 'uk stamp tax': Rates and thresholds sit with the head tool, matching how the winning competitor pairs a calculator with a rates table. The scorer's pick was a first-time-buyer page, too narrow for generic rate queries. Landlord-specific rates stay on sdlt-buy-to-let-rates-surcharge-guide-2025.
@@ -157,7 +168,11 @@ Every query above must still match after the rewrite. The equity gate blocks the
 
 1. Every query in section 2 still matches in metaTitle, H1, an H2, an FAQ or body prose.
 2. Protected elements unchanged per the grade above (REFRAME).
-3. These phrasings appear in natural sentences, in an H2, an FAQ question or body prose:
+3. (Softened 2026-08-17 second session, per DOSSIER §4b: winners carry only 2 or 3 cluster phrases;
+   the lever is subject match, not phrase quotas.) Each distinct sub-question below is ANSWERED
+   under a searcher-worded heading or FAQ entry, with the number or the yes/no in the first
+   sentence. The list is the demand map, not an insertion checklist: use a phrasing verbatim only
+   where it reads naturally, and never force every variant into copy:
    - `stamp duty estimator` (246,000/mo, peer at position 10)
    - `uk stamp tax` (12,100/mo, peer at position 19)
    - `stamp duty rates in england` (5,400/mo, peer at position 18)

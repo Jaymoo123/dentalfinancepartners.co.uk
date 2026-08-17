@@ -8,7 +8,8 @@ competitor pages named below. Read `../DOSSIER.md` first for scope and the langu
 
 - Page: `/calculators/first-time-buyer-stamp-duty-calculator`
 - Owns cluster(s): 'stamp duty first time buyer', 'mixed use stamp duty calculator', 'stamp duty calculator ni'
-- Combined volume 150,710/mo, peer-winnable 4,160/mo
+- Combined volume 147,210/mo, peer-winnable 4,160/mo (volume corrected 2026-08-17 second session
+  from the frozen ledger)
 - Grade: **EXTEND-GOOGLE**
 - Permitted: ADDITIVE ONLY. New H2 blocks, new FAQ entries, new table rows, new body paragraphs.
 - Forbidden: metaTitle and H1 must stay byte-identical. Existing H2s may be reordered only with a stated reason.
@@ -163,7 +164,11 @@ Every query above must still match after the rewrite. The equity gate blocks the
 
 1. Every query in section 2 still matches in metaTitle, H1, an H2, an FAQ or body prose.
 2. Protected elements unchanged per the grade above (EXTEND-GOOGLE).
-3. These phrasings appear in natural sentences, in an H2, an FAQ question or body prose:
+3. (Softened 2026-08-17 second session, per DOSSIER §4b: winners carry only 2 or 3 cluster phrases;
+   the lever is subject match, not phrase quotas.) Each distinct sub-question below is ANSWERED
+   under a searcher-worded heading or FAQ entry, with the number or the yes/no in the first
+   sentence. The list is the demand map, not an insertion checklist: use a phrasing verbatim only
+   where it reads naturally, and never force every variant into copy:
    - `stamp duty exemption for first time buyers` (1,600/mo, peer at position 19)
    - `stamp duty calculator ni` (1,300/mo, peer at position 14)
    - `relief from stamp duty` (720/mo, peer at position 14)

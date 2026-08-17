@@ -7,53 +7,77 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
+import { STANDARD_SDLT_BANDS } from "@/lib/sdlt";
 
 export const metadata: Metadata = {
-  title: "Stamp Duty Calculator UK 2026: SDLT for Home Buyers and Landlords",
+  title: "Stamp Duty Calculator UK (2026/27): How Much You Pay",
   description:
-    "Free UK stamp duty calculator. Work out SDLT on your purchase in England and Northern Ireland, including the 5% second home and buy-to-let surcharge, first-time buyer relief and the 2% non-resident surcharge.",
+    "Free stamp duty calculator for 2026/27. Work out how much stamp duty you pay in England and Northern Ireland, including the 5% second-home surcharge.",
   alternates: { canonical: `${siteConfig.url}/calculators/stamp-duty-calculator` },
   openGraph: {
-    title: "Stamp Duty (SDLT) Calculator for UK Property",
-    description: "Work out your stamp duty, including the buy-to-let and second-home surcharge.",
+    title: "Stamp Duty Calculator UK (2026/27)",
+    description: "Work out how much stamp duty you pay, including the 5% second-home surcharge.",
     url: `${siteConfig.url}/calculators/stamp-duty-calculator`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stamp Duty (SDLT) Calculator",
-    description: "Work out your stamp duty, including the buy-to-let and second-home surcharge.",
+    title: "Stamp Duty Calculator UK (2026/27)",
+    description: "Work out how much stamp duty you pay, including the 5% second-home surcharge.",
   },
 };
 
+const gbp = (n: number) => "£" + n.toLocaleString("en-GB");
+
+// Rate table rows derived from the same bands the calculator uses, so the copy
+// and the tool can never disagree. ponytail: derived, not retyped.
+const bandRows = STANDARD_SDLT_BANDS.map((b, i, arr) => {
+  const from = i === 0 ? 0 : arr[i - 1].upTo;
+  const pct = Math.round(b.rate * 100);
+  return {
+    band:
+      i === 0
+        ? `Up to ${gbp(b.upTo)}`
+        : b.upTo === Infinity
+          ? `Above ${gbp(from)}`
+          : `${gbp(from + 1)} to ${gbp(b.upTo)}`,
+    rate: `${pct}%`,
+    withSurcharge: `${pct + 5}%`,
+  };
+});
+
 const faqs = [
   {
-    q: "How much stamp duty will I pay in the UK?",
-    a: "Stamp duty is charged in slices. On a standard residential purchase in England or Northern Ireland you pay nothing up to £125,000, 2% from £125,001 to £250,000, 5% from £250,001 to £925,000, 10% from £925,001 to £1.5 million and 12% above that. Enter your price in the calculator above for the exact figure.",
+    q: "How much stamp duty will I pay?",
+    a: "On a standard home in England or Northern Ireland you pay nothing on the first £125,000, 2% on the slice from £125,001 to £250,000, 5% from £250,001 to £925,000, 10% from £925,001 to £1,500,000 and 12% above that. Enter your price in the calculator above and it gives you the figure and the effective rate.",
   },
   {
-    q: "What is the stamp duty surcharge on a second home or buy-to-let?",
-    a: "A 5% surcharge applies on top of every band when you buy an additional residential property, so a £350,000 buy-to-let carries £17,500 of surcharge before the standard rates are added.",
+    q: "How much is stamp duty on a second home?",
+    a: "You pay a 5% surcharge on the whole price on top of the standard rates. On a £300,000 second home that is £5,000 of standard stamp duty plus £15,000 of surcharge, so £20,000 in total. Tick the additional property box in the calculator and it adds the surcharge for you.",
   },
   {
     q: "Do first-time buyers pay stamp duty?",
-    a: "First-time buyers pay nothing on the first £300,000 and 5% on the portion between £300,000 and £500,000. Above £500,000 the relief is lost entirely and standard rates apply to the whole price.",
+    a: "Not on the first £300,000. First-time buyers pay 0% up to £300,000 and 5% on the slice from £300,000 to £500,000. Once the price passes £500,000 the relief is withdrawn completely and you pay standard rates on the whole price.",
   },
   {
-    q: "Is SDLT the same as stamp duty?",
-    a: "Yes. Stamp Duty Land Tax (SDLT) is the formal name for the tax on property purchases in England and Northern Ireland. Scotland charges LBTT and Wales charges LTT instead, at different rates and thresholds.",
+    q: "What are the stamp duty thresholds for 2026/27?",
+    a: "The nil-rate threshold is £125,000 for a standard purchase and £300,000 for a first-time buyer. The other thresholds are £250,000, £925,000 and £1,500,000, and each rate applies only to the slice of the price inside its band.",
+  },
+  {
+    q: "Is stamp duty different in Scotland and Wales?",
+    a: "Yes. Scotland charges Land and Buildings Transaction Tax and Wales charges Land Transaction Tax, both with their own bands and their own additional-property rules. This calculator covers England and Northern Ireland only, so use the LBTT or LTT calculator if you are buying there.",
+  },
+  {
+    q: "Can I use this as an SDLT calculator for a limited company?",
+    a: "Yes, for a normal buy-to-let purchase by a property-letting company. Tick the additional property box, because a company pays the 5% surcharge on every residential purchase with no starting allowance. The calculator does not model the 17% flat rate that can hit a company buying a dwelling over £500,000 where no letting relief applies.",
   },
   {
     q: "Do non-UK residents pay extra stamp duty?",
-    a: "Yes. A further 2% surcharge applies to buyers who are not UK resident for SDLT purposes, on top of the standard rates and any additional-dwelling surcharge.",
+    a: "Yes, a further 2% on the whole price on top of the standard rates and any second-home surcharge. Tick the non-UK resident box and the calculator adds it.",
   },
   {
-    q: "Can I get a stamp duty refund on a second home?",
-    a: "If you paid the additional-dwelling surcharge because you had not yet sold your previous main residence, you can usually reclaim it if you sell that former home within three years. Claims are time limited, so check the dates before you assume the window is open.",
-  },
-  {
-    q: "When is stamp duty due?",
-    a: "The return and the payment are both due within 14 days of completion. Your conveyancer normally files it, but the legal responsibility sits with you as the buyer.",
+    q: "When do you pay stamp duty?",
+    a: "The return and the payment are both due within 14 days of completion. Your conveyancer normally files it, but the responsibility for getting it right sits with you as the buyer.",
   },
 ];
 
@@ -95,11 +119,12 @@ export default function StampDutyCalculatorPage() {
             ]}
           />
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Stamp duty calculator (SDLT) for UK buyers and landlords
+            Stamp Duty Calculator UK (2026/27)
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-300">
-            Work out the Stamp Duty Land Tax on a property purchase in England &amp; Northern Ireland,
-            including the 5% surcharge on buy-to-lets and second homes.
+            Work out how much stamp duty you pay on a property in England &amp; Northern Ireland. Put in
+            your price, tick the boxes for an additional property, a first-time buyer or a non-UK
+            resident, and the calculator gives you the figure and your effective rate.
           </p>
         </div>
       </section>
@@ -116,32 +141,138 @@ export default function StampDutyCalculatorPage() {
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-              How stamp duty works on a buy-to-let or second home
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">How much is stamp duty?</h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
+              <p>
+                On a standard home you pay nothing on the first £125,000, then 2%, 5%, 10% and 12% on the
+                slices above it. These are the 2026/27 rates for England and Northern Ireland.
+              </p>
+            </div>
+            <div className="mt-6 overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b-2 border-slate-300 text-left">
+                    <th className="py-2 pr-4 font-bold text-slate-900">Portion of the price</th>
+                    <th className="py-2 pr-4 font-bold text-slate-900">You pay</th>
+                    <th className="py-2 font-bold text-slate-900">With the 5% surcharge</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {bandRows.map((r) => (
+                    <tr key={r.band} className="border-b border-slate-200">
+                      <td className="py-2 pr-4 text-slate-700">{r.band}</td>
+                      <td className="py-2 pr-4 font-semibold text-slate-900">{r.rate}</td>
+                      <td className="py-2 font-semibold text-slate-900">{r.withSurcharge}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
+              The calculator applies exactly these bands slice by slice, adds any surcharge you tick, and
+              shows you the total and the effective rate across the whole price.
+            </p>
+
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+              Stamp duty on a second home
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
               <p>
-                Stamp Duty Land Tax (SDLT) is charged on property purchases in England and Northern Ireland.
-                The standard residential rates are 0% up to £125,000, 2% on the portion from £125,001 to £250,000,
-                5% from £250,001 to £925,000, 10% from £925,001 to £1.5 million, and 12% above £1.5 million. Each
-                rate applies only to the slice of the price within that band.
+                You pay <strong>5% extra on the whole price</strong> when you buy an additional residential
+                property, on top of the standard rates in the table above. It applies to a second home, a
+                holiday home and a buy-to-let alike, and it starts from the first pound rather than from
+                £125,000.
               </p>
               <p>
-                If you are buying an <strong>additional residential property</strong> (a buy-to-let or a second
-                home), a <strong>5% surcharge</strong> applies on top of every band (raised from 3% on 31 October
-                2024). On a £350,000 buy-to-let that surcharge alone adds £17,500.
+                <strong>Tick the &ldquo;additional property&rdquo; box in the calculator</strong> and it works the
+                surcharge out for you, showing it as a separate line under the total so you can see what the
+                second home is costing you.
               </p>
               <p>
-                <strong>First-time buyers</strong> pay nothing on the first £300,000 and 5% on the portion from
-                £300,000 to £500,000, with no relief once the price exceeds £500,000. <strong>Non-UK residents</strong>{" "}
-                pay a further 2% surcharge.
+                On a <strong>£300,000 second home</strong> you pay £5,000 of standard stamp duty (2% of the
+                £125,000 between £125,000 and £250,000, then 5% of the £50,000 above it) plus £15,000 of
+                surcharge, so <strong>£20,000 in total</strong>, an effective rate of 6.7%.
               </p>
               <p>
-                Scotland and Wales have their own taxes (LBTT and LTT) with different rates and thresholds, so this
-                calculator covers England and Northern Ireland only. The figure is an estimate, because reliefs and edge cases
-                (mixed-use, six-or-more dwellings, uninhabitable property) can change it.
+                If you bought the new home before selling your old one, you may be able to claim the surcharge
+                back when the old home sells, provided that happens within three years.
               </p>
             </div>
+
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+              Stamp duty rates in England and Northern Ireland
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
+              <p>
+                The SDLT rates above are the current UK stamp duty rates for England and Northern Ireland,
+                and they have applied since 1 April 2025. Northern Ireland is not devolved for this tax, so a
+                buyer in Belfast uses the same table as a buyer in Birmingham.
+              </p>
+              <p>
+                Scotland and Wales are different. Scotland charges Land and Buildings Transaction Tax with an
+                8% additional dwelling supplement, and Wales charges Land Transaction Tax with its own higher
+                rates rather than a flat surcharge. Use the{" "}
+                <Link className="text-emerald-700 underline" href="/calculators/lbtt-calculator-scotland">
+                  LBTT calculator for Scotland
+                </Link>{" "}
+                or the{" "}
+                <Link className="text-emerald-700 underline" href="/calculators/ltt-calculator-wales">
+                  LTT calculator for Wales
+                </Link>{" "}
+                if you are buying there, because this tool will give you the wrong number.
+              </p>
+              <p>
+                Buying from abroad adds another 2% on the whole price. That non-resident surcharge stacks on
+                top of the standard rates and the second-home surcharge, so a non-resident buying a second
+                home in England pays the standard bands plus 7%.
+              </p>
+            </div>
+
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+              Stamp duty for limited companies and non-residential property
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
+              <p>
+                A limited company pays the standard bands plus the 5% surcharge on every residential purchase,
+                with no starting allowance, so tick the additional property box when you price a company deal.
+                A company buying a single dwelling for more than £500,000 can instead face a 17% flat rate,
+                though a genuine property-letting business is relieved from it and pays the normal bands plus
+                the surcharge. The calculator does not model that flat rate.
+              </p>
+              <p>
+                Stamp duty on non-residential property runs on a different table entirely: 0% up to £150,000,
+                2% from £150,001 to £250,000 and 5% above £250,000, with no additional-property surcharge. That
+                table covers shops, offices, land and mixed-use buildings, so a purchase of business property
+                will not match the figure this calculator gives you.
+              </p>
+              <p>
+                Moving a property you already own into your own company is a purchase for stamp duty, charged
+                on market value rather than on what you pay yourself. The cost of that move is set out in our{" "}
+                <Link
+                  className="text-emerald-700 underline"
+                  href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost"
+                >
+                  guide to SDLT on transferring property to a limited company
+                </Link>
+                .
+              </p>
+            </div>
+
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+              Stamp duty for first-time buyers
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
+              You pay nothing on the first £300,000 and 5% on the slice from £300,000 to £500,000, and you lose
+              the relief entirely once the price passes £500,000. Tick the first-time buyer box above, or use
+              the{" "}
+              <Link
+                className="text-emerald-700 underline"
+                href="/calculators/first-time-buyer-stamp-duty-calculator"
+              >
+                first-time buyer stamp duty calculator
+              </Link>{" "}
+              if that is the only figure you need.
+            </p>
 
             <div
               id="get-expert-help"
@@ -212,6 +343,11 @@ export default function StampDutyCalculatorPage() {
                 .
               </li>
             </ul>
+            <p className="mt-8 text-sm leading-relaxed text-slate-500">
+              Stamp Duty Land Tax is charged under the Finance Act 2003. The figure here is an estimate:
+              reliefs and edge cases (mixed-use, six or more dwellings, uninhabitable property) can change it,
+              and we can confirm your exact position before you exchange.
+            </p>
           </div>
         </div>
       </section>

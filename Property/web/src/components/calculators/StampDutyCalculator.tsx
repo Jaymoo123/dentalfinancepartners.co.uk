@@ -111,7 +111,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
               />
               <span className="text-sm leading-snug text-slate-800">
-                <span className="font-bold">Additional property</span> (buy-to-let or second home) —
+                <span className="font-bold">Additional property</span> (buy-to-let or second home),
                 adds the <span className="font-semibold">5% surcharge</span>
               </span>
             </label>
@@ -124,7 +124,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
               />
               <span className="text-sm leading-snug text-slate-800">
-                <span className="font-bold">First-time buyer</span> — relief on the first £300,000 (price up to £500,000)
+                <span className="font-bold">First-time buyer</span>, relief on the first £300,000 (price up to £500,000)
               </span>
             </label>
 
@@ -136,7 +136,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
               />
               <span className="text-sm leading-snug text-slate-800">
-                <span className="font-bold">Non-UK resident</span> — adds the <span className="font-semibold">2% surcharge</span>
+                <span className="font-bold">Non-UK resident</span>, adds the <span className="font-semibold">2% surcharge</span>
               </span>
             </label>
           </fieldset>
@@ -198,7 +198,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
             </a>
             <p className="mt-3 text-xs text-slate-400 leading-relaxed">
               An estimate based on current rates. Reliefs and edge cases (mixed-use, six-or-more dwellings,
-              uninhabitable property) can change the figure — we can confirm your exact position.
+              uninhabitable property) can change the figure. We can confirm your exact position.
             </p>
           </div>
         </div>

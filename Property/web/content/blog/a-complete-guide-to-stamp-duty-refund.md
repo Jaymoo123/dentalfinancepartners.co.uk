@@ -50,7 +50,13 @@ faqs:
     answer: "Act quickly. The four-year time limit at FA 2003 Schedule 10 paragraph 34B runs from the effective date of the transaction (not the filing date), so older transactions running into the four-year boundary need careful timing scoping. The claim does not need to be perfect at first filing; an incomplete claim filed before the deadline that is later supplemented with further evidence is in time, whereas a complete claim filed after the deadline is out of time. The procedural mechanism is a letter to HMRC's Birmingham SDLT office under paragraph 34, identifying the original return, the basis of the overpayment claim, and the refund computation. Where the timing is tight, file a holding claim with the available evidence and identify follow-on evidence to be provided after the deadline. Specialist advice on the timing and the procedural framing is usually worthwhile where the refund value is material."
   - question: "Where can I find the dedicated guides for each refund family?"
     answer: "For Family 1 (additional dwellings surcharge), our surcharge refund decision tree works through all six sub-routes, and the dominant one (replacement of main residence) has its own step-by-step at our replacement-route mechanics page. For Family 4 (MDR transitional retrospective), our MDR eligibility and benefits historical reference page goes through the pre-abolition Schedule 6B conditions paragraph by paragraph, the abolition rules are at our F(No.2)A 2024 section 7 page, and the plain-language version is at our abolishment of multiple dwelling relief page. Probate-specific refund scenarios are at our probate-properties relief guide. The claims-firm warning signs are at our SDLT refund scams page. Use the four-question diagnostic to find your family, then open the matching guide."
-dateModified: "2026-05-26"
+  - question: "Can I claim stamp duty back?"
+    answer: "Yes, if your transaction falls into one of the eight refund families. The two most common are the second home surcharge refund and a relief you qualified for but never claimed. You have 12 months from the filing date to amend the return, and four years from the effective date after that."
+  - question: "What is the deadline for a second home stamp duty refund?"
+    answer: "Sell your previous main residence within three years of buying the new one, then claim within 12 months of that sale or 12 months of the original return's filing date, whichever is later. HMRC extends the selling period only for exceptional circumstances, and a slow market does not qualify."
+  - question: "How do I contact HMRC about a stamp duty refund?"
+    answer: "Chase it through the route you used to claim. An in-time amendment goes through HMRC's online SDLT service; an out-of-time overpayment relief claim goes by letter to HMRC's SDLT office. Have the original return reference and the effective date to hand, and take current helpline numbers and addresses from HMRC's own published guidance."
+dateModified: "2026-08-17"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"
@@ -73,6 +79,26 @@ editorialNote: "MegaWave 1 batch M1-A-B1 pick A5. Whole-landscape umbrella acros
 </ul>
 
 <p>The deadline architecture has four windows. FA 2003 <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/11A">Schedule 11A</a> read with FA 2003 <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/10">Schedule 10 paragraph 6</a> sets the 12-month return amendment window from the filing date; this is the standard in-time correction route. <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/10">FA 2003 Schedule 10 paragraph 34</a> opens the overpayment-relief gateway for out-of-amendment-window claims, subject to the four-year time limit at paragraph 34B (four years from the effective date). FA 2003 Schedule 4ZA paragraph 3(7) sets the three-year window for the replacement-of-main-residence surcharge refund (extended in narrow cases by the SDLTM09807 exceptional-circumstances framework). FA 2003 Schedule 9A paragraph 19 sets the two-year window for the non-UK resident surcharge requalification refund.</p>
+
+<h2>Can you claim stamp duty back?</h2>
+
+<p>Yes, in defined circumstances, and two routes account for most of the money. First, the second home surcharge, 5% on top of the standard rates for 2026/27, where the new purchase turns out to be a replacement of your only or main residence: the home you sell has to have been your only or main residence, the new one has to become it, and the sale has to happen within three years of the purchase. Meet all three and that 5% comes back. Second, a relief you were entitled to but never claimed, first-time buyer relief above all. Two deadlines govern nearly everything: 12 months to amend the return, then four years from the effective date. Run the four questions above to find your family.</p>
+
+<h2>How do I claim back stamp duty on a second home?</h2>
+
+<p>Sell your previous main residence within three years of the new purchase, then amend your SDLT return to reclaim the 5% surcharge. The claim has its own clock: 12 months from that sale, or 12 months from the filing date of the original return, whichever falls later. HMRC agrees a longer selling period only where exceptional circumstances stopped you, and a slow market does not count. Keep the completion statement, the SDLT5 certificate and proof the home you sold was your main residence. This is the Schedule 4ZA route; Family 1 below covers all six sub-routes.</p>
+
+<h2>How long does a stamp duty refund take?</h2>
+
+<p>Four to six weeks is common experience on a straightforward amendment, but treat that as observed practice rather than a promise: HMRC does not publish a fixed SDLT refund timescale. That range assumes the clean case, with right figures, evidence attached and nothing queried. A claim made outside the 12-month window travels by letter rather than the online service, so it sits in a slower queue, and an enquiry stops the clock altogether. If you are well past six weeks, chase it with your original return reference to hand rather than filing again, because a duplicate claim is the usual reason a refund goes backwards.</p>
+
+<h2>How much do you get back, and is there a stamp duty refund calculator?</h2>
+
+<p>On a surcharge refund you get back exactly what the surcharge cost you, which is 5% of the whole purchase price. Buy a £400,000 second home and the surcharge turns a £10,000 standard bill into £30,000, so selling your old main home inside three years brings £20,000 back. Put the price through our <a href="/calculators/stamp-duty-calculator">stamp duty calculator</a> twice, once with the additional-property setting and once without: the gap is your refund. For the other families the refund is the difference between the tax charged and the tax that should have been charged.</p>
+
+<h2>Do you amend the SDLT return, or send a separate claim?</h2>
+
+<p>Inside 12 months of the filing date you amend the original stamp duty land tax return; after that you make a standalone claim by letter instead. The amendment is easier: it runs through HMRC's online SDLT service, recomputes the charge and pays out to the bank details you give. The standalone claim is a written claim rather than a return, so it carries its own evidence pack, computation and explanation of why the original return overstated the tax. Same money, but the later claim gets read more closely.</p>
 
 <h2>Family 1: additional dwellings surcharge refunds (Schedule 4ZA)</h2>
 

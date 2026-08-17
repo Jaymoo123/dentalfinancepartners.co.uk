@@ -8,10 +8,16 @@ competitor pages named below. Read `../DOSSIER.md` first for scope and the langu
 
 - Page: `/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice`
 - Owns cluster(s): 'stamp duty and property tax'
-- Combined volume 14,920/mo, peer-winnable 600/mo
+- Combined volume 7,150/mo, peer-winnable 360/mo (corrected 2026-08-17 second session from the
+  frozen ledger; originally published 14,920/600 were pre-union figures)
 - Grade: **EXTEND-BING**
 - Permitted: ADDITIVE ONLY. New H2 blocks, new FAQ entries, new table rows, new body paragraphs.
 - Forbidden: metaTitle, H1 and existing H2 order must stay byte-identical. This page is a live Bing asset.
+- Approved protected-element change (2026-08-17, adversarial QA statute correction; the A* quality
+  rule outranks the freeze): H2 `The Partnership Route (FA 2003 Sch 15 Para 10)` -> `The Partnership Route (FA 2003 Sch 15)`.
+  Verified at legislation.gov.uk: para 10 governs transfers INTO a partnership; the incorporation
+  transfer out to a connected company is charged under para 18 (SLP at para 20). The equity gate
+  reads this line and permits exactly this change.
 - Revert: single-file git revert, then redeploy. Backup path recorded in `blog_optimizations.content_backup_path`.
 
 ## 2. Equity register: what this page earns today and must not lose
@@ -160,7 +166,11 @@ Every query above must still match after the rewrite. The equity gate blocks the
 
 1. Every query in section 2 still matches in metaTitle, H1, an H2, an FAQ or body prose.
 2. Protected elements unchanged per the grade above (EXTEND-BING).
-3. These phrasings appear in natural sentences, in an H2, an FAQ question or body prose:
+3. (Softened 2026-08-17 second session, per DOSSIER §4b: winners carry only 2 or 3 cluster phrases;
+   the lever is subject match, not phrase quotas.) Each distinct sub-question below is ANSWERED
+   under a searcher-worded heading or FAQ entry, with the number or the yes/no in the first
+   sentence. The list is the demand map, not an insertion checklist: use a phrasing verbatim only
+   where it reads naturally, and never force every variant into copy:
    - `stamp duty on main residence if you own another property` (320/mo, peer at position 9)
    - `stamp duty for rental` (210/mo, peer at position 15)
    - `how to avoid stamp duty on buy-to let` (90/mo, peer at position 19)
