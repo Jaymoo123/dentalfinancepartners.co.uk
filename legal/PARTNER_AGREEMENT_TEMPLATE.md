@@ -176,7 +176,7 @@ IT IS AGREED as follows.
 
 9.2 The Supplier is the Controller of an enquiry up to Delivery. The Recipient becomes an independent Controller on Delivery. Neither party is the other's Processor.
 
-9.3 The Recipient acknowledges that the same enquiry may be Delivered to other firms within the limits in Schedule 2, that this is disclosed to enquirers at the point of collection, and that it is not entitled to be told which other firms received it.
+9.3 The Recipient acknowledges that the same enquiry may be Delivered to other firms within the limits in Schedule 2, that this is disclosed to enquirers in the transparency information described in paragraph 3.2 of Schedule 2, and that it is not entitled to be told which other firms received it.
 
 ## 10. INTELLECTUAL PROPERTY, NON-CIRCUMVENTION AND NO RESALE
 
@@ -333,7 +333,7 @@ This Schedule is the data sharing agreement between the parties as independent C
 
 How to read this Schedule.
 
-(i) Paragraph references within this Schedule are to this Schedule.
+(i) A reference in this Schedule to a numbered clause or paragraph is to the correspondingly numbered provision of this Schedule, not of clauses 1 to 21, unless it says otherwise. This Schedule is reproduced from a standalone agreement in which its provisions were clauses, so it calls them clauses; where the rest of this agreement refers to them it calls them paragraphs. They are the same provisions.
 
 (ii) A reference in this Schedule to "this agreement" means the agreement as a whole, including clauses 1 to 21 and Schedule 1.
 
