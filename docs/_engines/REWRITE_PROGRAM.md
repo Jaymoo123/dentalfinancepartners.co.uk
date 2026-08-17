@@ -181,3 +181,346 @@ The single most recurrent risk family is **Bill-vs-enacted-Act / statute-citatio
 - The writer/engine workflows take a `cluster` arg and operate on the site's blog dir; the per-site blog path and Vercel project/org IDs are the site-specific config the scripts read.
 - The Python tooling reads `SUPABASE_ACCESS_TOKEN` from `.env` and queries the per-site GSC/Bing/GA4 tables; the gate and link-audit resolve against the site's `web/content/blog` + route config (`dynamicParams=false`, `slugifyCategory`, redirect maps).
 - Confirm `slug_resolver.py` / `track2_link_audit.py` / `blog.ts slugifyCategory` / `middleware.ts` maps stay identical for the new site (the resolver's `selftest()` asserts 0 invented slugs against the live corpus).
+
+
+---
+
+## §9 Cluster coverage input — rewriting against the MARKET's query set, not ours
+
+**Status: designed 2026-08-17, not yet built.** Origin: a Property structural audit
+(`docs/property/STRUCTURE_VS_COMPETITORS_2026-08-17.md`) found that our corpus outranks nobody
+on the plain-language layer of a topic while covering the specialist layer better than any
+competitor. On SDLT, 108 of the 150 highest-volume competitor keywords appear nowhere in 760
+posts. The pages exist; the phrasings do not.
+
+### §9.1 Why the existing coverage floor is not enough
+
+The query-coverage floor (§4.1) proves a rewrite does not DROP the demand a page already had.
+Its input is our own GSC + Bing history plus free/cached adjacent ideas. By construction it can
+only ever protect what we already rank for, so a page that was written against the wrong
+vocabulary stays written against the wrong vocabulary, forever, and passes every gate.
+
+The fix is an additional input, not a new pipeline: the union of the keyword sets that the
+whole competitor set ranks for in that cluster. We can see all of them at once, which no single
+competitor can. That union is the market's definition of the topic.
+
+### §9.2 The six steps
+
+**1. Harvest.** For one cluster, pull `dataforseo_labs/google/ranked_keywords/live` per competitor
+domain, filtered to the cluster's term family, NO volume floor, and persist to the existing
+`dataforseo_competitor_data` table (columns already carry `ranked_keyword`, `position`,
+`search_volume`, `url`). The `DataForSEOClient.ranked_keywords()` method already exists.
+Cost measured on SDLT across 8 domains: 1,600 keywords for about $0.50.
+
+RULE: no volume floor. The sub-100 variants carry the phrasing, which is the whole point. The
+existing stored pulls used a 30-50 floor and a 500-row cap per domain, which is why they missed it.
+
+**2. Cluster, using the competitors' own page groupings as the signal.** Each competitor URL with
+3+ keywords is a node carrying its keyword set. Merge nodes across domains when the overlap is
+30% or more of the smaller set. The result is a consensus topic map: for each topic, the union
+keyword set, its combined volume, and the number of independent domains that treat it as one page.
+Domain count IS the confidence score. A topic that 5 domains give a page to is a real topic; one
+that a single domain covers is that domain's idiosyncrasy or a news spike.
+
+**3. Screen.** Drop news-cycle clusters (named politicians, "budget", "abolished", "scrapped"),
+off-niche clusters, and anything whose SERP is owned end-to-end by gov.uk or a national brand.
+State every exclusion with its volume; never drop silently.
+
+**4. Assign, one cluster to one page, uniquely.** Score each of our existing pages in that cluster
+against the topic's top keyword tokens (title + slug). Highest scorer above threshold takes the
+topic and is then unavailable to other topics. Unique assignment is what surfaces the real gaps:
+without it, four topics all "match" the same page and the map lies.
+
+Three outcomes: a page of ours owns the topic; no page of ours is close (NO-PAGE); or a page of
+ours matches nothing in the map at all (our specialist tail, which the market does not group).
+
+**5. Grade by equity, and let equity decide how much we are allowed to change.** Join per-page
+Google (GSC 90d) and Bing (`GetRankAndTrafficStats` / page stats) figures onto the assignment:
+
+| Grade | Test | What is allowed |
+|---|---|---|
+| REFRAME | Google impressions < 300 AND Bing clicks = 0 AND Bing impressions < 300 | metaTitle, H1, H2s, body, FAQ. Full rewrite against the topic's keyword set. |
+| EXTEND | Bing clicks >= 3 OR Bing impressions >= 300 OR Google clicks >= 1 OR Google impressions >= 300 | ADDITIVE ONLY. Keep metaTitle, H1 and existing H2 order. Add new H2 blocks and FAQ entries carrying the missing phrasings. |
+| NO-PAGE | no page scores above threshold | Attach the cluster to the nearest hub as a new section, or queue a single new page. Never a page per keyword. |
+
+Bing is graded FIRST and more conservatively than Google. On Property, Bing returns roughly twice
+Google's clicks from two thirds of the impressions, and the pages carrying it sit at positions 4
+to 8 where a title change is a real risk. Google impressions at position 40+ are not equity.
+
+**6. Execute through the existing chain.** The topic's keyword set becomes the target-query set
+for `track2_query_coverage.py` on that page. Nothing else in §2 changes. That converts the new
+input into the fifth deterministic floor:
+
+**Cluster-coverage floor.** A rewritten page must place, in metaTitle/H1/H2/FAQ or body, the
+topic's consensus keywords above a stated volume floor, where "consensus" means at least N of the
+harvested domains rank a page for it. The gate output names every phrase not placed. LLM judgement
+never decides whether coverage happened; the matcher does.
+
+### §9.3 Rules
+
+- **Coverage is additive to the specialist layer, never a replacement.** The specialist pages are
+  the differentiator and the reason the corpus is defensible. The primer layer is what makes them
+  findable. Never delete depth to make room for a plain-English section.
+- **One page per consensus topic, not per keyword.** The corpus is already over-fragmented; the
+  map exists to consolidate demand onto fewer pages, not to justify more.
+- **Prioritise by peer-winnable volume, not raw volume.** For each cluster compute the volume of
+  keywords where a peer-authority domain (a specialist firm, not gov.uk / MSE / a bank / a
+  national brand) holds a top-10 position. That number, not the headline volume, is the
+  addressable prize. (Example, Property SDLT: the calculator cluster is 1.54M raw but 275k
+  peer-winnable, and the peer-held slots are all modified variants such as "buy to let stamp duty
+  calculator", never the naked head term.)
+- **One change per page, then measure.** Bing re-crawls in days and is the faster read; Google
+  takes weeks. Do not stack a reframe and an internal-link change on the same page in the same
+  batch or attribution is lost.
+- **Rewrite-only still applies.** No URL changes, no redirects, no collapses (§5).
+
+### §9.4 What this costs and what it does not need
+
+Needs: one harvest script (the client method exists), one clustering + assignment script, and one
+extra input path into `track2_query_coverage.py`. It does NOT need a new engine, new tables
+(`dataforseo_competitor_data` already has the schema), new agents, or new content. Per-cluster API
+cost is about $0.50 at 8 competitor domains with no volume floor.
+
+
+### §9.5 The research pack (what the Opus writer actually receives)
+
+One file per target page, assembled from live data, never from memory. Eight sections, in this
+order, because the order is the reading order:
+
+1. **Target and permission level.** Page, cluster, grade (REFRAME / EXTEND / NO-PAGE), what may be
+   changed, what may not, and the revert path in one line. The constraint comes FIRST so the writer
+   reads it before forming a plan.
+2. **Equity register.** Every query the page already earns, on both engines, with impressions,
+   clicks and position. Google from GSC page+query; Bing from `GetPageQueryStats` per URL, which
+   returns far more rows than GSC does (specimen: 2 Google rows against 262 Bing queries on the
+   same page). This section is the "do not lose this" list.
+3. **The market's keyword set.** Every keyword in the cluster with volume, the best position any
+   peer holds, which domain holds it, and whether the phrase appears verbatim in our current copy.
+   Sorted by volume. Peer-held-top-10 count stated, because that is the addressable prize.
+4. **Competitor teardown, all of them, not the best one.** For every competitor page in the
+   cluster: URL, title, word count, full H2/H3 list, tables, whether it has a calculator, whether
+   it has an FAQ block. Any page that fails to fetch is listed as a flagged gap, never silently
+   dropped. The union of their headings minus ours is the coverage checklist.
+5. **Ours, side by side.** Title, metaTitle, word count, current heading list.
+6. **Whitespace.** What our page covers that no competitor does. Explicitly marked KEEP. The pack
+   adds a plain-language layer above the depth; it never trades the depth away.
+7. **Acceptance criteria.** Deterministic and gate-checkable: equity queries still match, protected
+   elements byte-identical, the named phrasings present in an H2/FAQ/body, plus the four existing
+   floors (arithmetic, statute, links, coverage).
+8. **Expectation.** Stated before the work, not after.
+
+Specimen: `briefs/property/sdlt/PACK_sdlt-transfer-property-company-cost.md` (hand-assembled
+2026-08-17 to fix the format; the generator is not built).
+
+**Why section 3 matters more than it looks.** On the specimen page, 0 of the cluster's 98 keywords
+appear verbatim in 3,530 words. The page says "stamp duty" twice and "SDLT" everywhere else. The
+market searches the words. No amount of writer talent finds that without the pack putting the list
+in front of it.
+
+### §9.6 Tracker and expectations — reuse, do not build
+
+Both tables already exist and already carry Bing:
+
+- **`monitored_pages`** (946 rows): `slug`, `rewrite_date`, `monitor_until`, `rewrite_type`,
+  `status`, and baselines for BOTH engines (`baseline_clicks/impressions/position` plus
+  `baseline_bing_*`). One row per page at rewrite time. This is the register of what is in flight.
+- **`blog_optimizations`** (111 rows): baseline block, `impact_*_week1..week4` for impressions,
+  clicks, position and CTR, `impact_verdict`, `confidence_level`, `rolled_back`,
+  `rollback_reason`, `content_backup_path`, `supersedes` / `superseded_by`. This is the outcome
+  ledger, including the revert trail.
+
+What is missing is not a table, it is three fields' worth of discipline:
+
+1. `target_keywords` on `blog_optimizations` must be populated with the cluster's MISSING phrases,
+   not with what the page already ranked for. Otherwise the measurement re-measures the past.
+2. The verdict must be read against **phrase coverage**, not total traffic. Success is impressions
+   appearing on the named missing phrases. Total impressions rising while the missing list stays
+   missing is drift, and must be recorded as a fail.
+3. The **failure trigger is written before the rewrite**, in the pack, as a number. Specimen: "if
+   Bing average position falls below 8 or clicks drop under 40 in a 28-day window, revert."
+
+**Cadence.** Bing re-crawls in days and is the early read at 14 to 28 days. Google is the 28 to 90
+day read. One change per page per window, or attribution is lost (§9.3).
+
+**No new notification.** Reading the tracker is a pull, not a push: the console renders it. Nothing
+in this program emails anyone without an explicit request (see `CARETAKER.md`).
+
+
+### §9.7 Scope contract, source union and the reconciliation ledger
+
+The failure this section exists to prevent: a cluster is worked, the writer does good work, and
+nobody can say afterwards whether anything was missed, because nothing ever defined what "all of
+it" was. Caps and volume floors are how that happens quietly.
+
+**Rule: no caps, no floors, ever, at harvest.** `ranked_keywords` is paginated to exhaustion per
+domain. No `search_volume` minimum. No row limit per domain. The stored pulls that predate this
+section used a 500-row cap and a 30-to-50 volume floor and are therefore NOT a valid input; they
+are a sample, and a sample cannot support a completeness claim. Measured cost of an uncapped
+cluster harvest: about $0.50 for 1,600 keywords across 7 domains.
+
+**Rule: the universe is a union of named sources, never one source.** Measured on SDLT, 2026-08-17:
+
+| Source | Keywords in family | Unique to that source |
+|---|---|---|
+| Competitor ranked keywords (7 domains, uncapped) | 1,602 | 1,602 |
+| Our GSC queries, 90d | 493 | 399 (81% of them) |
+| Our Bing page-query stats, 91d, across our 26 pages with Bing data | 594 | 538 |
+
+Any single source misses between a fifth and four fifths of the universe. Competitor data alone
+would have dropped 937 queries we already earn impressions on, which is precisely the "queries we
+rank for get removed" risk. Both of our own engines are mandatory inputs, and Bing is the biggest
+single contributor of phrasings nobody else can see, because it reports queries GSC anonymises.
+
+Add, where the cluster's head terms justify it, the free expansions already in the repo
+(autocomplete, PAA, `keyword_ideas`). Every source used is named in the dossier with its pull date
+and row count. A source not named was not used, and that is a stated limitation, not a silence.
+
+**Rule: our page scope is defined by body signal, not by slug.** Measured on SDLT: 69 posts carry
+the term family in slug or title. A further **190 posts** mention it five or more times in the
+body. Scoping by slug alone would have rewritten 69 pages and left 190 pages carrying the same
+terminology, competing for the same queries, unreviewed. Page scope is therefore:
+`slug/title match UNION body-frequency match at a stated threshold`, plus every tool page in the
+family. All of them are in scope and accounted for; triage then decides which are worked, which
+are left, and which are only checked for conflict.
+
+**The reconciliation ledger (the deterministic completeness floor).** Every member of the query
+universe lands in exactly one bucket, and the counts must balance to the total or the gate fails:
+
+| Bucket | Meaning |
+|---|---|
+| `assigned` | mapped to exactly one page, and that page's pack carries it |
+| `already-covered` | present in our copy and we already rank; protected by the equity gate |
+| `excluded` | with a reason code: news-cycle, off-niche, brand, SERP owned by gov.uk or a national brand |
+| `deferred` | real but out of this cluster's scope, named with the cluster it belongs to |
+
+`assigned + already-covered + excluded + deferred == universe`. No fifth bucket, no silent drop.
+The same balance rule applies to competitor pages: every page carrying a cluster keyword is either
+torn down or listed as fetch-failed with its status code.
+
+### §9.8 The cluster dossier, and the order of work
+
+**One dossier per cluster, frozen before any page is written.** It is the shared context every
+agent reads, and no agent may add scope that is not in it:
+
+1. Scope declaration: term family, our page count and list, competitor domains, competitor pages,
+   query universe with per-source counts and pull dates.
+2. The consensus topic map (§9.2) with per-topic volume, domain count and peer-winnable volume.
+3. The assignment table: topic to page, unique, with each page's grade (§9.5) and equity figures.
+4. The reconciliation ledger.
+5. Audience and voice: who the page is for, reading level, the register to write in, per
+   `VOICE_STANDARD.md`. Stated once for the cluster so twenty pages do not drift into twenty voices.
+6. Ground truth: which `house_positions.md` sections govern this cluster.
+
+Order of work, and the freeze point matters:
+
+```
+declare scope -> harvest (uncapped, all sources) -> map -> triage + bucket -> DOSSIER FREEZE
+   -> per-page packs (derived from the dossier ONLY) -> writer -> QA -> gate -> commit
+```
+
+Anything discovered after the freeze goes into a named delta list and is worked in a later pass. It
+does not get quietly folded in, because a moving scope cannot be reconciled.
+
+### §9.9 QA additions (all deterministic, all blocking)
+
+The four existing floors (§4) stay exactly as they are. Four more, specific to this program:
+
+5. **Equity preservation.** Build the page's pre-rewrite query set from GSC (any impression, 90d)
+   and Bing page-query stats (any impression, 91d). After the rewrite, every query in that set must
+   still be matchable in metaTitle, H1, an H2, an FAQ or body prose. Any query that stops matching
+   is a BLOCK, listed by name, with the diff line that removed it. This is the gate that makes
+   "nothing we rank for gets removed" a fact rather than an intention.
+6. **Cluster coverage.** Every keyword the dossier assigned to this page is placed, and the checker
+   names each one that is not. Same matcher as floor 1, different input.
+7. **Reconciliation balance.** The ledger sums to the universe. A cluster whose ledger does not
+   balance cannot reach the pre-deploy gate.
+8. **Competitor re-read.** Every heading theme present on any competitor page in the cluster is
+   marked covered, deliberately-declined-with-reason, or belongs-to-another-page. The deterministic
+   part is that the count of undecided themes must be zero. Judgement decides which; the gate only
+   enforces that a decision exists and is recorded.
+
+Plus the two human-readable passes already in the chain: adversarial factual QA against house
+positions, and the editorial pass, which here also checks audience fit and that the plain-language
+layer reads as prose rather than as inserted keywords.
+
+**On the writer.** The pack is the writer's whole world: scope, constraints, equity register,
+keyword set, competitor teardown, whitespace, acceptance criteria. It does not get to decide scope
+and it does not need to. Anything it believes is missing goes back as a delta, not into the page.
+
+
+### §9.10 Competitor domain teardown (one domain at a time, every page)
+
+Run before the dossier freezes, one domain per pass. Purpose: learn how a domain HANDLES a term
+family across its whole corpus, which the keyword data cannot show.
+
+Seed the crawl from **sitemap UNION known ranking URLs (from the keyword harvest) UNION crawl
+discovery**. Sitemaps under-declare: one competitor declared 53 URLs and a breadth-first crawl found
+195, including the silo carrying its rankings. Strip nav, header and footer before counting text or
+classifying links, or every page looks like it links to everything.
+
+Per page record: status, title, H1, word count, term-family mentions, family-in-URL, family-in-title,
+and body-only internal links. Then compute, for the domain: pages mentioning the family, pages with
+5+ mentions, owner pages, non-owner-heavy pages, and **the share of non-owner-heavy pages that link
+to an owner**. That last number is the one that separates the models (measured: 98% and 100% for two
+competitors, 39% for us).
+
+Domains that block crawling (HTTP 202 with an empty body, no reachable sitemap) are recorded as
+keyword-data-only, with the limitation stated in the dossier. Never substitute a guess.
+
+
+### §9.11 The language pass (cluster level, once, before any page is written)
+
+**Decision, 2026-08-17: do it per cluster, not per page, and never leave it to the page writer.**
+Voice is a property of the cluster. If twenty per-page writers each derive the register from raw
+competitor pages, twenty interpretations ship and the corpus drifts. It is also cheap to get wrong
+by intuition: measuring first killed three plausible assumptions in one pass (see
+`docs/property/STRUCTURE_VS_COMPETITORS_2026-08-17.md` Appendix F, where our sentences turned out
+SHORTER than the winners', our reading ease identical, and our question-heading rate higher).
+
+Two halves, in this order:
+
+**1. Quantitative probe, automated, no judgement.** Fetch every competitor page that holds a top-10
+position in the cluster, plus a matched set of ours (our best performers and our invisible ones),
+strip nav/header/footer, and measure: words, sentence length, Flesch reading ease, share of
+question-form headings, second-person rate per 1,000 words, first-person rate, statute references
+per 1,000 words, jargon-noun rate, tables. Output is a table, not a conclusion. Winners are defined
+by top-10 density, never by brand impression, because two of the four domains torn down for Property
+rank badly and their habits must not be copied.
+
+**2. Written analysis, one Opus pass over the same pages.** What the probe cannot count: how they
+open an answer (direct answer first, or context first), how a question becomes a heading, where the
+number goes, how they handle "it depends", how they hand off to a CTA, what they leave out. Quote
+real sentences from real pages. Include a matched pair per pattern: their sentence, our sentence on
+the same point.
+
+**Output: an answer-pattern spec in the dossier**, one page, carrying the measured targets (with our
+current numbers beside them), the answer patterns with examples, and the explicit do-not-copy list.
+Every per-page pack inherits it by reference. The editorial QA pass then checks the page against the
+spec, not against the reviewer's taste.
+
+**Order matters:** the spec is written once the cluster's winners are known (post-harvest,
+pre-freeze). Doing it earlier means guessing who the winners are; doing it later means the first
+pages are written blind.
+
+
+### §9.12 Falsified levers — do not re-sell these as the mechanism
+
+Tested on a 135-page SDLT SERP corpus, 2026-08-16 (`docs/property/CLUSTER_TEARDOWN_SDLT_2026-08-16.md`),
+and not re-opened by the 2026-08-17 structural work:
+
+| Lever | Result | Standing |
+|---|---|---|
+| Internal link count | rho -0.014, p 0.869; pages with <=30 links hold a median position of 8 | hygiene only, never the mechanism |
+| Tables / table rows | rho -0.063, p 0.47; 34% of top-5 pages have zero tables | reader value and answer-engine extraction only |
+| Word count | rho -0.019, p 0.825 | not a lever; our pages already sit at the 96th to 100th percentile |
+| H2 count | rho -0.035 | not a lever |
+| Query modifier in slug | 62% of top-5 against 60% of positions 6-15 | no discriminating power |
+| Year in title | rho -0.004 | not a lever |
+
+The two that survive: **page shape** (41 of 44 sampled top-5 slots are a calculator URL or carry a
+form) and **span of years mentioned**, the only significant correlation in the corpus at +0.228,
+p=0.007, and it runs the wrong way: more tax years on a page means worse position. Hence the rule
+that every rewrite leads with one current year and subordinates historical rates.
+
+Anything this programme proposes must be checked against this table first. A proposal that reduces
+to "more links, more words, more tables" has already been tested and has already failed.
