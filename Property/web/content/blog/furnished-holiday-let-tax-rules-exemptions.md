@@ -5,7 +5,7 @@ canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/
 date: '2026-05-21'
 author: Property Tax Partners Editorial Team
 category: Section 24 & Tax Relief
-metaTitle: 'Furnished Holiday Let Tax: FHL Abolished April 2025 (Now What)'
+metaTitle: 'Furnished Holiday Let Tax: Abolished April 2025, Now What'
 metaDescription: 'FHL regime abolished 6 April 2025. Holiday lets now face Section 24, no capital allowances, no BADR. Transitional rules, SDLT (now 5%), and what to do.'
 altText: UK holiday cottage with tax documents showing furnished holiday let regulations
 image: ''

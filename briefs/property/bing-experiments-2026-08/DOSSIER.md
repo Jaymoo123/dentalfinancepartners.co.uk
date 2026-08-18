@@ -118,3 +118,14 @@ separate corrective pass so experiment attribution stays clean)
    table omits the Advanced rate band; shows 47 top rate.
 6. schedule-24 page: FAQ line ~21 vs body line ~87 disagree on para 14(6) trigger
    (further para 1 penalty vs further careless); body is the narrow one.
+## Post-deploy note (2026-08-18, CI)
+
+The content push turned the CI Content Quality Check red: two treatment posts
+(a-complete-guide-to-periodic-tenancy, furnished-holiday-let-tax-rules-exemptions)
+carried pre-existing 62-char metaTitles that the validator waives only for
+unchanged files; touching their bodies promoted the warnings to errors. Fixed by
+trimming both metaTitles to 58/57 chars in the repo. NOT redeployed for this alone:
+production still serves the old titles, so the live experiment snippet is unchanged;
+the trims ride the next deploy, at which point those 2 of 14 exp3 pages carry a
+minor meta covariate. Treat accordingly at the 28d read. One red CI run
+(32151136828) emailed the owner; the rerun after the fix should be green.

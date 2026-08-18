@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/a
 date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Periodic Tenancy: Complete Guide After the Renters' Rights Act"
+metaTitle: "Periodic Tenancy: Full Guide After the Renters' Rights Act"
 metaDescription: "Periodic from grant since 1 May 2026. Four routes, monthly rent period, Section 13 rises, advance rent ban and tax recognition for landlords."
 altText: "A UK landlord and tenant signing a new periodic tenancy agreement under the Renters Rights Act 2025 at a kitchen table with key paperwork visible"
 image: "https://images.pexels.com/photos/8293744/pexels-photo-8293744.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
