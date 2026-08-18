@@ -65,6 +65,32 @@ em-dash (template-level, every page, pre-existing).
 
 ---
 
+## 0.11 Bing experiments batch (BUILT 2026-08-18, NOT deployed)
+
+Estate Bing deep dive ([`../_engines/BING_DEEP_DIVE_2026-08-18.md`](../_engines/BING_DEEP_DIVE_2026-08-18.md))
+produced three property-only isolated experiments, built through the §9 machine
+(dossier + packs + Opus writers + two QA tracks + deterministic gates):
+[`briefs/property/bing-experiments-2026-08/DOSSIER.md`](../../briefs/property/bing-experiments-2026-08/DOSSIER.md).
+
+- **Exp 1, CTR repair:** `/calculators/lbtt-calculator-scotland` metaTitle+metaDescription
+  only (registry `src/lib/calculators/tools/lbtt-calculator.ts`). Baseline Bing 2,571 impr /
+  21 clicks / wpos 7.5; success = 28d Bing CTR >= 1.5% at held position; revert if wpos > 9.5.
+- **Exp 2, tables:** 5 treatment posts each gained ONE comparison table (insert-only),
+  5 matched controls untouched. Lever provenance: rho -0.30 (2026-08-18, second derivation
+  of the 2026-08-16 direction). n=5/arm detects large effects only, stated.
+- **Exp 3, conversational coverage:** 14 treatment posts each gained ONE H2 answering
+  their Bing-only question queries (from per-page GetPageQueryStats), 14 controls.
+  Success = a targeted question gains an impression on >= 7 of 14 pages at 28d.
+- Selection protections: 452 active monitored slugs and all 57 lead-generating entry
+  pages EXCLUDED from both arms; every treatment page has <5 Google clicks/28d and 0
+  attributed leads/90d. No treatment page is a Google money page.
+- QA found 4 must-fix factual defects in drafts (fixed pre-commit) and a legacy-defect
+  delta list (rent-a-room Method A/B inversion page-wide, FHL abolition statute miscite,
+  and 4 more) recorded in the dossier for a separate corrective pass.
+- AT DEPLOY (owner-triggered): register all 20 treatment pages in monitored_pages +
+  blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
+  Controls are never edited.
+
 ## 0.08 Discovery engine v2 (NEW 2026-08-15)
 
 Built + migration `20260815000001_discovery_engine_v2.sql` applied (`discovery_candidates`, `competitor_urls_seen`, `discovery_log`, + `paa`/`serp_features` columns on `competitor_serps`). Engine doc: [`docs/_engines/DISCOVERY_ENGINE_V2.md`](../_engines/DISCOVERY_ENGINE_V2.md).

@@ -120,6 +120,20 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A17. Worldwide-property-ownership 
 
 <p>The non-resident surcharge adds £8,000 on the £400,000 transaction. The combined uplift attributable to overseas-property ownership plus non-residence is £28,000 over the standard residential figure.</p>
 
+<p>The same £400,000 purchase, set out band by band across the three positions above:</p>
+
+<table>
+<thead>
+<tr><th>Band</th><th>No other dwelling, UK resident</th><th>Overseas dwelling over £40,000 (Sch 4ZA)</th><th>Overseas dwelling and non-resident (Sch 4ZA + Sch 9A)</th></tr>
+</thead>
+<tbody>
+<tr><td>First £125,000</td><td>0% (£0)</td><td>5% (£6,250)</td><td>7% (£8,750)</td></tr>
+<tr><td>Next £125,000</td><td>2% (£2,500)</td><td>7% (£8,750)</td><td>9% (£11,250)</td></tr>
+<tr><td>Next £150,000</td><td>5% (£7,500)</td><td>10% (£15,000)</td><td>12% (£18,000)</td></tr>
+<tr><td>Total SDLT on £400,000</td><td><strong>£10,000</strong></td><td><strong>£30,000</strong></td><td><strong>£38,000</strong></td></tr>
+</tbody>
+</table>
+
 <h2>The spouse and civil partner aggregation trap</h2>
 
 <p>FA 2003 Schedule 4ZA paragraph 9 attributes the worldwide-property ownership of one spouse or civil partner to the other for the additional dwellings surcharge test. The attribution applies where the couple are married or in a civil partnership and are not separated in circumstances likely to be permanent (the separation carve-out is at paragraph 9(3)). The most common trap: a UK-resident buyer with a UK-only background marries a partner who owns a family home in the partner's country of origin; the UK buyer's subsequent UK home purchase attracts the 5% surcharge on the basis of the partner's overseas property.</p>

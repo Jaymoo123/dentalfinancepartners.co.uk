@@ -230,6 +230,28 @@ faqs:
 <li><strong>Existing personally-owned portfolio with built-in CGT.</strong> Transferring established personally-held property into an SPV triggers CGT at market value (unless section 162 incorporation relief defers it) and SDLT including the 5% surcharge. The crystallisation cost often outweighs years of subsequent SPV tax savings.</li>
 </ul>
 
+<h2>Set-up Detail: Reasons, Articles and Share Classes</h2>
+
+<h3>Why is a property SPV used, and what are the reasons to set one up?</h3>
+
+<p>The main reason is that Section 24 does not apply inside a company, so mortgage interest and other finance costs stay fully deductible against rental profit. Three further reasons recur:</p>
+
+<ul>
+<li><strong>Corporation tax instead of income tax.</strong> Profits are taxed at 19% (small profits), 25% (main rate) or a marginal rate between the two, rather than at the property income tax rates of 22/42/47% that apply personally from 6 April 2027.</li>
+<li><strong>Retained profit for reinvestment.</strong> Profit left inside the SPV bears corporation tax only, with dividend tax deferred until extraction, which compounds faster for a landlord who is still buying.</li>
+<li><strong>Lender expectation.</strong> Specialist buy-to-let lenders underwrite company lending around SPV status and a recognised SIC code, and treat other codes as a red flag.</li>
+</ul>
+
+<p>The flip side is the section immediately above: at low leverage, for a basic-rate taxpayer extracting everything, or over a short hold, the SPV route often costs more than personal ownership.</p>
+
+<h3>What articles of association does a buy-to-let SPV need?</h3>
+
+<p>Most buy-to-let SPVs use the model articles for a private company limited by shares, unamended, and that is enough for a single shareholder or several shareholders with identical rights. Bespoke articles earn their cost in two situations: where the company has more than one class of share, because each class's dividend and voting rights have to be set out, and where unconnected co-investors want director powers and meeting mechanics documented beyond the model. Lenders look at the SIC code and the trading profile rather than at bespoke drafting, so unamended model articles are not a barrier to an SPV mortgage.</p>
+
+<h3>Can a property SPV have multiple share classes?</h3>
+
+<p>Yes, and multi-shareholder SPVs commonly do. Alphabet shares (classes A, B and C with identical rights save for the right to receive dividends at the board's discretion) allow dividends to be directed between shareholders year by year, which matters most where spouses sit at different marginal rates. Growth shares, carrying future value only, are used in freezer structures so later capital growth accrues to a separate class held by the next generation while current value stays with the ordinary shares. The rights of each class have to be reflected in the articles, and HMRC has scrutinised aggressive splits under the settlements legislation, so the arrangement must be commercial and properly documented.</p>
+
 <h2>Where SPV-structuring decisions usually land</h2>
 
 <p>For a higher-rate landlord planning to grow a leveraged portfolio over a 10-plus-year horizon, the SPV route is usually the right answer, and the April 2027 income tax change has widened the gap further. For a basic-rate landlord with a single low-leverage property held for income, the SPV is usually unnecessary. The decision is portfolio-specific and turns on leverage, marginal rate, growth plans and extraction timing.</p>

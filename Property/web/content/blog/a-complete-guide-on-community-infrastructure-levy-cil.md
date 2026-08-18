@@ -56,6 +56,21 @@ reviewedAt: "2026-05-26"
 <li><strong>CIL</strong> is created by Part 11 of the Planning Act 2008 and operationalised by SI 2010/948. It is a one-off charge on development, paid by the party that has assumed liability (or the landowner-at-commencement as default) to the local planning authority. The trigger is commencement of development under a planning permission.</li>
 </ul>
 
+<p>The table below sets the three regimes side by side.</p>
+
+<table>
+<thead>
+<tr><th>Feature</th><th>CIL</th><th>SDLT</th><th>Council tax</th></tr>
+</thead>
+<tbody>
+<tr><td>Statute</td><td>Planning Act 2008 Part 11 + SI 2010/948</td><td>Finance Act 2003 Part 4</td><td>Local Government Finance Act 1992 Part I</td></tr>
+<tr><td>Type of charge</td><td>One-off charge on development</td><td>Tax on a chargeable land transaction</td><td>Annual occupation charge on dwellings</td></tr>
+<tr><td>Trigger</td><td>Commencement of development under a planning permission</td><td>Acquisition</td><td>An occupied or potentially occupiable dwelling on the valuation list</td></tr>
+<tr><td>Paid by</td><td>The party that has assumed liability, or the landowner at commencement</td><td>The buyer</td><td>The resident, or the owner where no resident exists</td></tr>
+<tr><td>Paid to</td><td>The local planning authority as charging authority</td><td>HMRC</td><td>The billing authority</td></tr>
+</tbody>
+</table>
+
 <p>A buyer who acquires a development site, secures planning permission, and then builds will routinely trigger all three regimes at different stages. There is no statutory offset between them. The SDLT calculation does not deduct CIL. The CIL calculation does not deduct SDLT. The council tax band on the completed dwelling does not deduct either. Cost-modelling has to treat them as three separate liability events.</p>
 
 <h2>The statutory architecture in one read</h2>

@@ -53,6 +53,21 @@ editorialNote: "Generic UK pillar / explainer for director's loan accounts. Symm
 
 <p>This page is the generic UK pillar and explainer. It covers both directions of the DLA, the four statutory anchors (s.455, s.464A, s.453, and the ITEPA beneficial-loan BIK framework), and the HMRC official rate of interest. For property-specific applications, read our companion pages on <a href="/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics">director loan account property company mechanics</a> and <a href="/blog/incorporation-and-company-structures/btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction">BTL SPV director loan repayment strategy</a>.</p>
 
+<p>The rates and thresholds that drive every DLA calculation on this page are set out below.</p>
+
+<table>
+<thead>
+<tr><th>Charge or rate</th><th>2026/27</th><th>What it applies to</th></tr>
+</thead>
+<tbody>
+<tr><td>CTA 2010 s.455 charge</td><td>35.75%</td><td>Overdrawn DLA unpaid 9 months and 1 day after the accounting period end (33.75% for loans made before 6 April 2026)</td></tr>
+<tr><td>CTA 2010 s.464A charge</td><td>35.75%</td><td>Arrangements conferring a benefit on a participator</td></tr>
+<tr><td>HMRC official rate of interest</td><td>3.75%</td><td>Beneficial-loan BIK measure, unchanged from the 6 April 2025 to 5 April 2026 period</td></tr>
+<tr><td>Qualifying-loans threshold</td><td>£10,000</td><td>No beneficial-loan BIK where total loans stay at or below this at every point in the tax year</td></tr>
+<tr><td>Credit-balance DLA repayment</td><td>Nil</td><td>Return of capital to the director, not income</td></tr>
+</tbody>
+</table>
+
 <h2>The two directions of a DLA</h2>
 
 <h3>Credit balance: company owes director</h3>

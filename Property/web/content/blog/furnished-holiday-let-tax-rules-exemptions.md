@@ -91,6 +91,24 @@ faqs:
 <li><strong>Anti-forestalling rules.</strong> HMRC introduced specific rules to block taxpayers from artificially crystallising disposals or restructuring to bank the old reliefs in the 12 months before abolition. If you did any pre-abolition restructuring, get advice on whether the anti-forestalling provisions catch your transaction.</li>
 </ul>
 
+<h2>When the FHL rules changed, and how holiday lets are taxed now</h2>
+
+<h3>When did the furnished holiday let rules change?</h3>
+
+<p>The rules changed on 6 April 2025 for Income Tax and Capital Gains Tax, and on 1 April 2025 for Corporation Tax. There is no phase-in and no grandfathering for properties already let, so 2025-26 is the first tax year taxed under the new rules and the return covering it is the first one where the old treatment is unavailable. The day-count tests (210 days available, 105 days actually let, no single occupation over 31 days) no longer decide anything, because there is no separate regime left to qualify for.</p>
+
+<h3>How did the tax on furnished holiday homes change?</h3>
+
+<p>Four reliefs went at once on that date. Full deduction of mortgage interest was replaced by the Section 24 20% basic-rate reducer for individually-held properties. Capital allowances on new plant and machinery stopped, leaving Replacement of Domestic Items Relief on like-for-like replacements. Business Asset Disposal Relief at 10%, rollover relief and gift relief were withdrawn, so disposals now use the standard 18% and 24% residential rates. And FHL profit stopped counting as relevant UK earnings for pension contributions. SDLT is the one thing the abolition did not touch: a holiday let counted as an additional dwelling before and still does, and that surcharge rose separately from 3% to 5% on 31 October 2024.</p>
+
+<h3>After April 2025, how are FHLs shown on the tax return?</h3>
+
+<p>As ordinary UK property income on the SA105 property pages, with no separate holiday-let section to complete. Combine the holiday let rent with your other UK rental income rather than reporting it apart, claim cleaning, insurance, agent and booking-platform commission and the rest through the normal expense boxes, and put mortgage interest in the residential finance-costs box so it produces the 20% reducer instead of a deduction. Overseas holiday lets go on the foreign property pages (SA106). If you are in MTD for Income Tax, the same income sits in your quarterly updates for the UK property business.</p>
+
+<h3>What are the anti-avoidance rules on the abolition of furnished holiday lettings?</h3>
+
+<p>The anti-forestalling rule blocks arrangements made purely to lock in the old reliefs before abolition. It bites on disposals and restructuring between the 6 March 2024 announcement and the 5 April 2025 abolition date where the conditions are met, the obvious target being an unconditional contract entered into to secure Business Asset Disposal Relief at 10% ahead of the deadline. Ordinary commercial sales in that window are unaffected, but if you exchanged contracts or reorganised ownership then, the treatment turns on whether the arrangement was genuine, so get the contract dates and the commercial reasoning documented before you file.</p>
+
 <aside>
 <p>Holding a former FHL and unsure what to do next?</p>
 <p>We model the personal-versus-company position, the cost of incorporation including the 5% SDLT surcharge, and the AST-versus-short-stay yield comparison using your actual figures. Send your last self assessment and current booking platform statements using the form below.</p>

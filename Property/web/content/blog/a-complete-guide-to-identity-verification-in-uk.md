@@ -79,6 +79,22 @@ editorialNote: "MW2 Bucket B B2: definitional on-ramp to the UK identity verific
 
 <p><strong>Transition window for existing roles, through approximately November 2026.</strong> Directors and PSCs in office on 18 November 2025 are not retrospectively forced to verify on that date. Each company's existing roles must be verified by the next confirmation statement that falls within the twelve-month transition window. A company whose confirmation statement falls in March 2026 verifies its existing roles by that filing; a company whose confirmation statement falls in October 2026 verifies its existing roles by that filing. The effective end of the transition window is around November 2026; companies that have not actioned their existing roles by the second confirmation statement after 18 November 2025 are in non-compliance.</p>
 
+<p>The rollout stages, and the groups each one bites on:</p>
+
+<table>
+<thead>
+<tr><th>Who is in scope</th><th>When verification is required</th></tr>
+</thead>
+<tbody>
+<tr><td>Any director or PSC choosing to verify early</td><td>Voluntary from 8 April 2025</td></tr>
+<tr><td>Newly appointed directors and newly notified PSCs</td><td>Legal precondition to appointment or notification from 18 November 2025</td></tr>
+<tr><td>Directors and PSCs already in office on 18 November 2025</td><td>By the next confirmation statement in the twelve-month transition window, ending around November 2026</td></tr>
+<tr><td>Filers and corporate officers</td><td>Not yet commenced, and no earlier than November 2026</td></tr>
+</tbody>
+</table>
+
+<p>The statutory hooks all sit in Part 1 of ECCTA 2023: s.64 is the identity-verification provision for persons with significant control, ss.40 to 45 carry the director-side mechanics, and s.65 is the generic procedure provision governing how verification is done for both groups.</p>
+
 <p>The exact transition mechanics, including any extensions or transitional reliefs announced by Companies House, are published on the official campaign page at <a href="https://changestoukcompanylaw.campaign.gov.uk/" rel="nofollow">changestoukcompanylaw.campaign.gov.uk</a>. Verify the current state of the rollout against that page before relying on the headline dates in any third-party article (including this one): commencement detail can move.</p>
 
 <h2>How Do I Verify, and What Are the Two Routes?</h2>

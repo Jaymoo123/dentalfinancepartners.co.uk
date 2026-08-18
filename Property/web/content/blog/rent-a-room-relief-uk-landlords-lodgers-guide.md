@@ -225,6 +225,24 @@ faqs:
 <p>The choice between Method A and Method B is a one-line decision on the tax return, but it can be worth £1,000 to £2,000 a year for a typical two-lodger household. We will model both treatments for your 2026/27 figures alongside any Section 24 exposure on the rest of the portfolio. Scroll to the form below for a free 20-minute review.</p>
 </aside>
 
+<h2>Rent a Room questions for 2026/27</h2>
+
+<h3>Is the Rent a Room tax free allowance still £7,500 in 2026?</h3>
+
+<p>Yes. The Rent a Room allowance is £7,500 for the 2026/27 tax year, frozen at that level since 6 April 2016 and not index-linked, so it does not rise with inflation. It is one allowance per person receiving the income, not one per room or per lodger: two lodgers paying £5,000 each produce £10,000 of gross receipts against a single £7,500 allowance, so £2,500 is taxable if you elect for the rent-a-room basis. Where two people receive the lodger income from the same property, each gets £3,750 rather than £7,500.</p>
+
+<h3>Does the Rent a Room allowance include bill money?</h3>
+
+<p>It does, and that is the trap. Anything the lodger pays you towards bills and services counts towards the £7,500, because the limit is measured on gross receipts rather than profit. That includes utilities recharged, cleaning, meals and laundry, on top of the rent itself. Refundable deposits held against damage do not count. The arithmetic catches people out: rent of £600 a month is £7,200 a year and comfortably inside the limit, but a £50 monthly contribution to bills takes the receipts to £7,800 and puts you over it, which means a return, a choice between the two ways of being taxed, and tax on the excess.</p>
+
+<h3>Do you have to live in the property to claim Rent a Room relief?</h3>
+
+<p>Yes. The accommodation has to be in your only or main residence for at least part of the tax year, and the lodger has to share living space with you or another permitted occupier. That rules out the common travelling scenario: if you let your only house while you are backpacking or working abroad and the tenant has the run of the whole property, the scheme does not apply, however briefly you are away and whether or not you own anywhere else. The income is ordinary property income on the property pages of your return, with the Section 24 finance cost restriction applying to any mortgage interest. Letting a furnished room while you continue to live in the house and share the kitchen and bathroom is the arrangement the scheme is built for.</p>
+
+<h3>How do you deduct utility expenses from the £7,500 Rent a Room allowance?</h3>
+
+<p>You cannot, and that is the point of the trade-off. Once receipts pass £7,500 the default treatment is the normal property rules, taxing your actual profit: gross receipts less the allowable expenses apportioned to the let part of the home, which is where utilities, cleaning and repairs get their relief. The rent-a-room basis is the alternative, and it applies only if you elect for it. Elect, and the taxable figure is gross receipts minus £7,500 and nothing else, with no deduction for bills or any other expense. The election has to be made within one year of the 31 January following the tax year, so by 31 January 2029 for 2026/27, and it is only worth making where the apportioned expenses come to less than £7,500. Staying on the normal rules is the better answer where expenses run above that, or where you need to claim a loss, because the rent-a-room basis cannot produce one.</p>
+
 <h2>When professional advice pays for itself</h2>
 
 <p>The Rent a Room rules are short on the face of it but interact with several larger frameworks: Section 24, MTD for ITSA, PPR on sale, the property allowance, and (for joint owners) Form 17 income-split declarations. The cases where it makes sense to involve a property tax specialist rather than file the return yourself are:</p>

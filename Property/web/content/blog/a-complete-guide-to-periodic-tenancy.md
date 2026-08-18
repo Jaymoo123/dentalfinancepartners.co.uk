@@ -161,6 +161,30 @@ editorialNote: "MW3 Bucket C C3: definitional orientation guide for the periodic
 
 <p>The tax architecture is, in other words, broadly indifferent to the move from AST-with-statutory-periodic-on-expiry to periodic-from-grant. The shift matters for compliance and operational reasons. It is not a tax restructuring in itself.</p>
 
+<h2>Practical Questions Landlords Ask About Periodic Tenancies</h2>
+
+<p>Five questions come up repeatedly once the conversion has landed and the theory is out of the way.</p>
+
+<h3>Can you add additional tenants to a periodic tenancy?</h3>
+
+<p>Yes, with your written consent, but adding a tenant is not a paperwork amendment. At law it is normally a surrender of the existing tenancy and the grant of a new one to the enlarged group, which means that from 1 May 2026 the replacement tenancy is a fresh assured tenancy, periodic from grant. Treat it as a new let rather than a variation: issue a new agreement naming every tenant, re-protect the deposit in the names of all of them in an authorised scheme and re-serve the prescribed information within 30 days under Housing Act 2004 ss.212-215, and run a Right to Rent check on the incoming tenant before they move in. Where the incoming person is a partner or family member who does not need tenancy rights, a permitted-occupier clause is the lighter alternative: they can live there, they are not a tenant, and nothing is surrendered or regranted.</p>
+
+<h3>What was the notice period for periodic tenancies before the Renters' Rights reform?</h3>
+
+<p>Before 1 May 2026 the landlord route was two months' notice under Section 21, with no grounds required, and the tenant route was a notice to quit of at least four weeks in writing under Protection from Eviction Act 1977 s.5(1), in practice timed to expire at the end of a rent period. Both have gone. Section 21 is abolished by RRA 2025 s.2, so a landlord now needs a reformed Section 8 ground with a notice period between 2 weeks and 4 months depending on which ground is used. The tenant now gives a flat 2 months' written notice under PEA 1977 s.5(1ZA), inserted by RRA 2025 s.5, at any point and with no end-of-period timing requirement. The practical direction of travel is that tenant notice got longer and landlord notice got harder.</p>
+
+<h3>Is rent on a periodic tenancy paid monthly or annually, and what are the rent periods?</h3>
+
+<p>Monthly. The rent period on a new assured tenancy in England is capped at one month, so annual, six-monthly and quarterly rent contracts are unenforceable in the assured regime. A tenant can choose to pay early within a rent period, but the tenancy cannot require rent more than one period in advance: HA 1988 s.4B, inserted by RRA 2025 s.8, makes any such term of no effect, subject only to the 'initial 28-day period' and 'permitted pre-tenancy period' carve-outs. If you are used to an annual rent cycle at the top end of the market, the change is to your cashflow rhythm rather than to your total income, and under the cash basis at ITTOIA 2005 s.271A it generally spreads rental-income recognition more evenly across the tax year.</p>
+
+<h3>Does a new periodic tenancy have a term length, or a minimum for the landlord?</h3>
+
+<p>No, on both counts. A periodic tenancy has no fixed term and no end date in the contract; it rolls from rent period to rent period until one side ends it. There is no minimum tenancy length the tenant must serve, so a tenant can give their 2 months' notice on day one, and there is no minimum period the landlord is locked in for either. What the landlord does not have is a free exit: possession requires a reformed Section 8 ground and the notice period attached to it, so the landlord-sale and landlord-occupation grounds carry 4 months' notice plus the 12-month re-letting restriction under HA 1988 s.16E. The absence of a term cuts both ways. It removes the fixed-term lock-in the landlord used to rely on for certainty, and it removes the fixed-term barrier the tenant used to be held to.</p>
+
+<h3>How do you calculate a rent refund when a tenant leaves part-way through a rent period?</h3>
+
+<p>Apportion the rent on a daily basis, because the tenancy is monthly rather than weekly. Take the monthly rent, multiply by twelve, divide by 365 for a daily rate, then multiply by the number of days between the day the tenancy ended and the end of the period the tenant had already paid for. On a rent of £1,200 a month the daily rate is (£1,200 x 12) / 365 = £39.45, so a tenancy ending 10 days into a paid 30-day month leaves 20 unused days and a refund of about £789. Refund the balance rather than holding it against the deposit; the deposit is a separate fund under the Tenant Fees Act 2019 cap and any dispute over it goes through the scheme's adjudication. For tax, a refunded overpayment is simply not rental income, and under the cash basis it is easiest to record the receipt and the refund in the same period they actually happen.</p>
+
 <h2>Does This Apply in Wales or Scotland?</h2>
 
 <p>No. The Renters' Rights Act 2025 substantive reform applies to England only. Wales operates under the Renting Homes (Wales) Act 2016 (occupation contracts; different terminology and a different commencement timeline). Scotland operates under the Private Housing (Tenancies) (Scotland) Act 2016 (private residential tenancies; different tenant-notice and rent-increase mechanics). Each devolved regime uses different statutory language and different operational mechanics. The framework on this page applies to England-only assured tenancies; do not collapse the three positions.</p>
