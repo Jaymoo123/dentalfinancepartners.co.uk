@@ -86,7 +86,9 @@ company-uk 10, about 9, contact 7, capital-gains-tax-property-complete-guide-uk 
 excluded, most doubly so as active monitored pages.
 
 ## Status
-- Built local-first. NOT deployed. monitored_pages/blog_optimizations registration happens at deploy.
+- DEPLOYED 2026-08-18 (owner-triggered), dpl_4c5BJeZLCA1DFWpDJjonTKmnAiQ7, live verified.
+- All 20 treatment pages armed in monitored_pages (11 inserted, 9 re-baselined in place),
+  watch to 2026-11-16. 20 URLs to IndexNow (HTTP 200). Reads: Bing 14d ~09-01, 28d ~09-15.
 - Control pages are never edited.
 ## QA record (2026-08-18)
 
