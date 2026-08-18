@@ -65,7 +65,16 @@ em-dash (template-level, every page, pre-existing).
 
 ---
 
-## 0.11 Bing experiments batch (BUILT 2026-08-18, NOT deployed)
+## 0.11 Bing experiments batch (DEPLOYED 2026-08-18, owner-triggered)
+
+**DEPLOYED TO PRODUCTION 2026-08-18** from clean worktree at pushed `06195d7d`
+(deployment `dpl_4c5BJeZLCA1DFWpDJjonTKmnAiQ7`, aliased www.propertytaxpartners.co.uk,
+847 pages). 5 spot-checked URLs verified 200 with new content markers live. All 20
+treatment pages armed in `monitored_pages` (rewrite_date 2026-08-18, dual G+Bing
+baselines, watch to 2026-11-16; 11 inserted, 9 stale prior rows re-baselined in
+place). 20 URLs to IndexNow (HTTP 200). **Next reads: Bing ~2026-09-01 (14d) and
+~2026-09-15 (28d), Google 28/90d; per-experiment success/failure triggers in the
+dossier.** Controls are never edited.
 
 Estate Bing deep dive ([`../_engines/BING_DEEP_DIVE_2026-08-18.md`](../_engines/BING_DEEP_DIVE_2026-08-18.md))
 produced three property-only isolated experiments, built through the §9 machine
