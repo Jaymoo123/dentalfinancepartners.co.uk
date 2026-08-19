@@ -303,6 +303,51 @@ export async function stopNurture(
     { status: "closed" },
   );
 
+  // The person opted out, not the row. A resubmitter has SIBLING lead rows
+  // under the same phone/email, and suppression is per lead id, so without
+  // this their other rows stay contactable, offerable and remindable (found
+  // live 2026-08-19: a STOP landed on an enquirer's older row while his newer
+  // row kept a booked reminder pending). Mirror the opt-out onto every
+  // sibling. Best-effort: a failure here never blocks the primary opt-out.
+  try {
+    const self = await adminSelect<{ phone: string | null; email: string | null }>("leads", {
+      id: `eq.${leadId}`,
+      select: "phone,email",
+      limit: "1",
+    });
+    const { phone, email } = self.data[0] ?? {};
+    const orFilters = [
+      phone ? `phone.eq.${phone}` : null,
+      email ? `email.eq.${email}` : null,
+    ].filter(Boolean);
+    if (orFilters.length > 0) {
+      const siblings = await adminSelect<{ id: string }>("leads", {
+        select: "id",
+        or: `(${orFilters.join(",")})`,
+        id: `neq.${leadId}`,
+        limit: "20",
+      });
+      for (const sib of siblings.ok ? siblings.data : []) {
+        await recordLeadContactEvent(sib.id, "opted_out", channel, {
+          mirrored_from: leadId,
+          reason: "same person (matching phone/email) opted out",
+        });
+        await adminUpdate(
+          "lead_nurture_state",
+          { lead_id: `eq.${sib.id}` },
+          { status: "stopped", next_action_at: null, updated_at: nowIso },
+        ).catch(() => {});
+        await adminUpdate(
+          "leads",
+          { id: `eq.${sib.id}`, status: "in.(new,nurturing)" },
+          { status: "closed" },
+        ).catch(() => {});
+      }
+    }
+  } catch (err) {
+    console.error("[contactability] sibling opt-out mirror failed", err);
+  }
+
   // Detect post-handoff opt-outs and alert the operator so the partner firm can be notified
   // of the objection within 2 working days, as required by the data-sharing agreement.
   // Wrapped entirely in try/catch so it can never throw out of this webhook path.
