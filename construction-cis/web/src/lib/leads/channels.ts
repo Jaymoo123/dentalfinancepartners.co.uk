@@ -7,13 +7,14 @@
  * sender returns { skipped: true } so the state machine still advances without
  * ever touching a real provider.
  *
- * Shared Property Resend domain: leads@propertytaxpartners.co.uk /
- * inbound.propertytaxpartners.co.uk. No CIS-specific sending domain.
+ * Mirrors Property/web/src/lib/leads/channels.ts with Trade Tax Specialists
+ * from-address defaults.
  */
 
 import type { ChannelSender } from "@accounting-network/web-shared/lead-nurture/config";
 import { PermanentSendError } from "@accounting-network/web-shared/lead-nurture/config";
 import { getResend } from "@/lib/resend";
+import { siteConfig } from "@/config/site";
 
 function flagOn(name: string): boolean {
   const v = (process.env[name] || "").trim().toLowerCase();
@@ -36,12 +37,14 @@ function channelEnabled(channel: "email" | "sms" | "whatsapp"): boolean {
 
 function serviceFrom(): string {
   const name = process.env.LEAD_SERVICE_FROM_NAME || "Trade Tax Specialists";
-  const email = process.env.LEAD_SERVICE_FROM_EMAIL || "leads@propertytaxpartners.co.uk";
+  // Fallback derives from THIS site's domain: a missing env var must never
+  // send this brand's chase from another site's sending domain.
+  const email = process.env.LEAD_SERVICE_FROM_EMAIL || `team@${siteConfig.domain}`;
   return `${name} <${email}>`;
 }
 
 function serviceReplyTo(): string {
-  return process.env.LEAD_SERVICE_REPLY_TO || "inbound@inbound.propertytaxpartners.co.uk";
+  return process.env.LEAD_SERVICE_REPLY_TO || `team@${siteConfig.domain}`;
 }
 
 async function sendEmail(params: {

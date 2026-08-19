@@ -132,7 +132,10 @@ export async function POST(req: NextRequest) {
       const sequenceName = routePrimarySequence(lead);
       await enrollLead(lead, {
         sequenceName,
-        live: source !== "test",
+        // A valid probe (LEAD_PROBE_SECRET) is stored as source "test" by the
+        // factory, but the route-local source is still the site literal, so
+        // gate live sends on the probe marker and the test heuristics too.
+        live: source !== "test" && !isTest && body.probe_secret === undefined,
         visitorId,
       });
     } catch (e) {

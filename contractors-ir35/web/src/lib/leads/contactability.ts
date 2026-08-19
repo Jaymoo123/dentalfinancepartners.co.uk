@@ -28,6 +28,7 @@
 
 import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
+import { mirrorOptOutToSiblings } from "@accounting-network/web-shared/lead-nurture/opt-out";
 import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
@@ -149,16 +150,47 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
       { status: "contactable" },
     );
+    // A failed WRITE is not "already promoted": before 2026-08-15 both returned
+    // alreadyPromoted:true, so a lost promotion looked like a duplicate and
+    // never retried. On !ok the lead keeps status new/nurturing, so the next
+    // evaluation retries the flip naturally.
+    if (!flip.ok) {
+      console.error(`[contactability] promote flip failed for ${leadId} (${flip.status})`);
+      return { promoted: false, alreadyPromoted: false, reason: "db-error" };
+    }
     if (flip.data.length === 0) {
       return { promoted: false, alreadyPromoted: true, reason: verdict.reason };
+    }
+
+    // Telegram lead-ops ping via the estate host (additive, never load-bearing):
+    // grading + the verified ping run on Property's single bot instance through
+    // its internal pool-intake endpoint. The handoff email below still fires
+    // regardless and carries the "Offer to buyers" link, so a bridge failure
+    // costs nothing but convenience. Best-effort by design.
+    try {
+      const base = process.env.LEAD_OFFER_BASE_URL || "https://www.propertytaxpartners.co.uk";
+      const secret =
+        process.env.LEAD_INTERNAL_SECRET || process.env.LEAD_NURTURE_TOKEN_SECRET || "";
+      if (secret) {
+        await fetch(`${base}/api/leads/pool-intake`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-internal-token": secret },
+          body: JSON.stringify({ leadId }),
+          signal: AbortSignal.timeout(5000),
+        });
+      }
+    } catch (err) {
+      console.error("[contactability] pool-intake bridge failed (handoff email still sent)", err);
     }
 
     // Fire the handoff first; the audit event is recorded only once we know the outcome.
     const handoff = await sendContactableHandoff(leadId, verdict.reason);
 
-    if (handoff.sent === true || handoff.skipped) {
+    if (handoff.sent === true || (handoff.skipped && handoff.skipped !== "db-error")) {
       // Sent successfully, or a known/expected skip (test, no-resend, no-lead):
-      // record the standard handed-off event.
+      // record the standard handed-off event. A "db-error" skip is NOT expected
+      // (the leads read failed, the email was never built) and falls through to
+      // the failure branch so the handoff is retried and the operator alerted.
       await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
       // it happens when the operator clicks "I have forwarded this to the partner firm" in the
@@ -261,6 +293,11 @@ export async function stopNurture(
     { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
     { status: "closed" },
   );
+
+  // The person opted out, not the row: mirror onto every same-person sibling
+  // lead row, estate-wide. Shared implementation (web-shared/lead-nurture/opt-out)
+  // so every site's stopNurture behaves identically. Best-effort by contract.
+  await mirrorOptOutToSiblings(leadId, channel);
 
   // Detect post-handoff opt-outs and alert the operator so the partner firm can be notified
   // of the objection within 2 working days, as required by the data-sharing agreement.
