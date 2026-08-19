@@ -165,6 +165,16 @@ Enquiry: "I have a rental property, need help with my taxes."
 Output: {"tier": "essential", "intent_line": "Landlord with one property wants help with tax affairs.", "case_type": "basic_return", "area": ""}`;
 
 /**
+ * Tier-classifier model override. The AI Gateway free tier gates Anthropic
+ * and DeepSeek models behind paid credits; LEAD_TIER_MODEL lets grading run
+ * on a free-tier model (e.g. openai/gpt-oss-120b) until the account is topped
+ * up, at which point unsetting it restores the module default (Opus).
+ */
+function caseTierModel(): string {
+  return (process.env.LEAD_TIER_MODEL || "").trim() || MODEL;
+}
+
+/**
  * Grade one enquiry against the published rubric. Returns null on any failure
  * (module convention); callers fall back to the deterministic stub or to the
  * owner's own tier pick, never to an unattended guess.
@@ -178,7 +188,7 @@ export async function classifyCaseTier(input: {
   if (!message) return null;
   try {
     const { object } = await generateObject({
-      model: MODEL,
+      model: caseTierModel(),
       schema: caseSchema,
       system: `${CASE_TIER_PROMPT}\n\n${CASE_TIER_EXAMPLES}`,
       prompt: `Enquiry message:\n"""${message.slice(0, 4000)}"""\n\nSource site: ${input.source ?? "unknown"}\nRole given: ${input.role ?? "unknown"}\n\nGrade this enquiry.`,

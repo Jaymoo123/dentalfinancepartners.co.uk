@@ -13,7 +13,7 @@
  */
 import { adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
 import { classifyCaseTier, type CaseTier } from "@/lib/ai";
-import { scrubSituation } from "@/lib/leads/offer-teaser";
+import { redactMessage, scrubSituation } from "@/lib/leads/offer-teaser";
 
 // ponytail: crude keyword heuristic ported from lead_engine/scripts/classify_stub.py,
 // stands in for the CLASSIFY.md prompt only when the gateway is down. A drift
@@ -157,8 +157,12 @@ export async function ensureCaseTier(leadId: string): Promise<GradeResult | null
   const lead = leadRes.ok ? leadRes.data[0] : undefined;
   if (!lead) return null;
 
+  // Data minimisation: the model grades the REDACTED enquiry (same text a
+  // buyer sees pre-claim), never the raw message. Tier signals survive
+  // redaction; names, numbers and postcodes never reach any provider. The
+  // kill-switch "" case simply falls through to the stub.
   const ai = await classifyCaseTier({
-    message: lead.message ?? "",
+    message: redactMessage(lead.message),
     source: lead.source ?? undefined,
     role: lead.role ?? undefined,
   });
