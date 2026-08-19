@@ -23,6 +23,7 @@ import { submitSiteLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 
 const fieldClass =
   "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand,#1a5c4a)] focus:outline-none";
@@ -190,7 +191,16 @@ export function LeadForm({
     onLead({ role });
 
     if (redirectOnSuccess) {
-      setTimeout(() => router.push(successRedirect), 800);
+      // Carry the signed booking token to the thank-you page so the inline slot
+      // picker can render at the highest-intent moment, plus the page they came
+      // from so they can get back to it.
+      const dest = result.bookingToken
+        ? buildThankYouUrl(
+            result.bookingToken,
+            window.location.pathname + window.location.search + window.location.hash,
+          )
+        : successRedirect;
+      setTimeout(() => router.push(dest), 800);
     }
   }
 

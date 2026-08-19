@@ -1,16 +1,18 @@
 /**
- * Native booking endpoint for Medical Accountants UK: a lead picks a callback
- * slot (weekday + call window) on /book or the thank-you page. The signed token
- * (intent "book") identifies the lead. Recording the slot is a contactability
- * signal and promotes the lead for handoff.
+ * Native booking endpoint: a lead picks a callback slot (weekday + call window)
+ * on /book or the thank-you page. The signed token (intent "book", minted at
+ * submit / in every nurture message) identifies the lead, so there is nothing
+ * to guess or enumerate. Recording the slot is a contactability signal: it runs
+ * through the same gate as a reply, promotes the lead, and the slot label lands
+ * in the partner handoff dossier.
  *
- * Slim adaptation: no phone-verify tree. Promote is scoped to token's leadId only.
+ * Re-booking is allowed (people change their mind); the dossier surfaces the
+ * most recent slot. Replaces the former Cal.com webhook.
  */
 
 import { type NextRequest, NextResponse } from "next/server";
 import { verifyLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
-import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { adminUpdate } from "@/lib/supabase/admin";
+import { recordResponseAndEvaluate } from "@/lib/leads/contactability";
 import { isValidBookingDate, windowByKey, bookingLabel } from "@/lib/leads/booking";
 
 export const runtime = "nodejs";
@@ -18,8 +20,8 @@ export const dynamic = "force-dynamic";
 
 interface BookBody {
   token?: string;
-  date?: string;
-  window?: string;
+  date?: string; // YYYY-MM-DD
+  window?: string; // CALL_WINDOWS key
 }
 
 export async function POST(req: NextRequest) {
@@ -43,10 +45,8 @@ export async function POST(req: NextRequest) {
   }
 
   const label = bookingLabel(date, windowKey);
-  const leadId = verdict.leadId;
-
   try {
-    await recordLeadContactEvent(leadId, "booked", "web", {
+    await recordResponseAndEvaluate(verdict.leadId, "booked", "web", {
       start: label,
       date,
       window: windowKey,
@@ -54,26 +54,6 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("[leads/book] recording failed", err);
     return NextResponse.json({ success: false, error: "server" }, { status: 500 });
-  }
-
-  // Promote scoped to this lead's ID only (no mass-assignment).
-  try {
-    await adminUpdate(
-      "lead_nurture_state",
-      { lead_id: `eq.${leadId}` },
-      { status: "contactable", next_action_at: null },
-    );
-  } catch (e) {
-    console.error("[leads/book] nurture state promote failed (non-fatal)", e);
-  }
-  try {
-    await adminUpdate(
-      "leads",
-      { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
-      { status: "contactable" },
-    );
-  } catch (e) {
-    console.error("[leads/book] lead status promote failed (non-fatal)", e);
   }
 
   return NextResponse.json({ success: true, label });
