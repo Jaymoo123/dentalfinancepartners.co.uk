@@ -60,6 +60,14 @@ export async function enrollLead(
     return { enrolled: false, newlyEnrolled: false, sequenceName, reason: "dormant" };
   }
 
+  // Annex B.2 resource downloads carry in-house consent and are intentionally
+  // never nurtured. Guarded here, at the ONE enrolment chokepoint, so the
+  // submit hook, retro-enrol route and reconcile repair path all refuse alike
+  // (a downloader was chased live on 2026-08-19 because only reconcile checked).
+  if ((lead.role ?? "") === "resource") {
+    return { enrolled: false, newlyEnrolled: false, sequenceName, reason: "resource" };
+  }
+
   const live = opts.live ?? lead.source !== "test";
   const bestSendHour = opts.bestSendHour ?? (await deriveBestSendHour(opts.visitorId));
   const nowMs = Date.now();

@@ -72,21 +72,24 @@ async function fetchFullLead(leadId: string): Promise<FullLeadRow | null> {
 
 async function resolveLeadId(e164: string): Promise<string | null> {
   // Primary: lead_verification table has a phone_e164 column indexed for lookup.
+  // Estate-wide (the shared number serves every site's chase), so the same
+  // phone can hold one verification row per site's lead: newest wins.
   const verRes = await adminSelect<LeadIdRow>("lead_verification", {
     select: "lead_id",
     phone_e164: `eq.${e164}`,
+    order: "verified_at.desc",
     limit: "1",
   });
   if (verRes.ok && verRes.data.length > 0) {
     return verRes.data[0].lead_id;
   }
 
-  // Fallback: match the last 9 digits in leads.phone (handles formatting variation).
+  // Fallback: match the last 9 digits in leads.phone (handles formatting
+  // variation), any source: sibling sites' chases send from this same number.
   const last9 = e164.slice(-9);
   const leadsRes = await adminSelect<LeadRow>("leads", {
     select: "id",
     phone: `ilike.*${last9}`,
-    source: "eq.property",
     order: "created_at.desc",
     limit: "1",
   });

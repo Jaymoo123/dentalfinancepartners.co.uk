@@ -94,6 +94,7 @@
     "./lead-nurture/config": "./lead-nurture/config.ts",
     "./lead-nurture/tokens": "./lead-nurture/tokens.ts",
     "./lead-nurture/send": "./lead-nurture/send.ts",
+    "./lead-nurture/opt-out": "./lead-nurture/opt-out.ts",
     "./lead-nurture/cron": "./lead-nurture/cron.ts",
     "./lead-nurture/t0": "./lead-nurture/t0.ts",
     "./lead-nurture/lead-nurture-shared": "./lead-nurture/lead-nurture-shared.ts",
