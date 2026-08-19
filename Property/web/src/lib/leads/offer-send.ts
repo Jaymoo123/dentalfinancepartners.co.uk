@@ -16,7 +16,7 @@ import { isSuppressed } from "@/lib/leads/suppression";
 import { matchingBuyers, tierPrice, type LeadBuyer } from "@/lib/leads/offer-config";
 import { tierLabel, type TeaserJson } from "@/lib/leads/offer-teaser";
 import { escapeHtml } from "@/lib/leads/notify-email";
-import { offerFromAddress } from "@/lib/leads/offer-release";
+import { offerFromAddress, offerReplyTo } from "@/lib/leads/offer-release";
 
 const FONT = "-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 
@@ -124,6 +124,7 @@ ${renderTeaserHtml(teaser, priceGbp)}
 <a href="${escapeHtml(claimUrl)}" style="display:inline-block;font-family:${FONT};font-size:16px;font-weight:700;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:6px;">Accept this lead · £${priceGbp}</a>
 </td></tr></table>
 <p style="margin:8px 0 0;color:#64748b;font-size:13px;">First firm to accept gets the lead exclusively. This offer expires in ${expiresHours} hours. Accepting adds £${priceGbp} to your monthly invoice under the agreed terms (credit policy applies).</p>
+<p style="margin:8px 0 0;color:#64748b;font-size:13px;">Prefer email? Just reply to this message to accept and we will take care of the rest.</p>
 </td></tr>
 <tr><td style="padding:16px 28px 20px;border-top:1px solid #e2e8f0;">
 <p style="margin:0;color:#94a3b8;font-size:12px;">Ashfield Partner Network · you receive these because your firm has a signed data-sharing agreement with Ashfield Trading Ltd. Reply to pause or change your subscription.</p>
@@ -141,6 +142,8 @@ ${renderTeaserHtml(teaser, priceGbp)}
     "",
     `First firm to accept gets the lead exclusively. Expires in ${expiresHours} hours.`,
     `Accepting adds £${priceGbp} to your monthly invoice under the agreed terms.`,
+    "",
+    "Prefer email? Just reply to this message to accept and we will take care of the rest.",
   ].join("\n");
   return { subject, html, text };
 }
@@ -260,6 +263,7 @@ export async function sendOffers(
       const { error } = await getResend().emails.send({
         from: offerFromAddress(),
         to: buyer.email,
+        replyTo: offerReplyTo(),
         subject: email.subject,
         html: email.html,
         text: email.text,
@@ -346,6 +350,7 @@ export async function reofferExpired(offerId: string): Promise<ReofferResult> {
     const { error } = await getResend().emails.send({
       from: offerFromAddress(),
       to: buyer.email,
+      replyTo: offerReplyTo(),
       subject: email.subject,
       html: email.html,
       text: email.text,

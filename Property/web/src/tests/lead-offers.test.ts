@@ -434,6 +434,10 @@ describe("sendOffers", () => {
     expect(sentEmails).toHaveLength(2);
     expect(sentEmails[0].subject).toContain("Advisory tier, £85");
     expect(sentEmails[0].html).toContain("Accept this lead");
+    // Reply-to-claim path: replies must land on the inbound capture subdomain
+    // so the webhook surfaces them in Telegram, and the copy offers it.
+    expect((sentEmails[0] as { replyTo?: string }).replyTo).toContain("@inbound.");
+    expect(sentEmails[0].html).toContain("Just reply to this message to accept");
     // Buyer-facing copy renders the new labels, never the old tier ids.
     expect(sentEmails[0].html).not.toMatch(/very_high|Very high/);
     // Anonymised: buyer email must not contain a claimable lead id.

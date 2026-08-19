@@ -41,6 +41,20 @@ export function offerFromAddress(): string {
   return process.env.LEAD_OFFER_FROM || "Ashfield Partner Network <leads@propertytaxpartners.co.uk>";
 }
 
+/**
+ * Replies to buyer emails must land on the Resend inbound subdomain (any
+ * address there hits the /api/leads/inbound/email webhook), so a firm that
+ * replies instead of clicking Accept surfaces in Telegram with a
+ * [Claim & release for them] button. Owner-preferred first-firm path
+ * (concierge reply-to-claim, settled 2026-08-12): without this, replies died
+ * in the root-domain mailbox.
+ */
+export function offerReplyTo(): string {
+  return (
+    process.env.LEAD_OFFER_REPLY_TO || "partners@inbound.propertytaxpartners.co.uk"
+  );
+}
+
 export type ClaimOutcome =
   | "claimed"
   | "lost"
@@ -184,6 +198,7 @@ export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResul
       const { error } = await getResend().emails.send({
         from: offerFromAddress(),
         to: buyer.email,
+        replyTo: offerReplyTo(),
         subject,
         html: buildLeadHtml(lead),
         text: buildLeadText(lead),
