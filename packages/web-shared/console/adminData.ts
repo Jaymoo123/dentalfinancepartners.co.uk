@@ -431,8 +431,11 @@ export function getVisitorEvents(siteKey: string, visitorId: string) {
 }
 
 export function getLeadsForSite(siteKey: string, limit = 200) {
+  // Test traffic never reaches an operator surface: excludes both the reserved
+  // source and rows flagged is_test (real-shaped walk/QA leads).
   return rest<LeadInfo>("leads", {
     source: `eq.${siteKey}`,
+    is_test: "not.is.true",
     select: LEAD_COLS,
     order: "created_at.desc",
     limit: String(limit),
@@ -441,6 +444,8 @@ export function getLeadsForSite(siteKey: string, limit = 200) {
 
 export function getAllLeads(limit = 2000) {
   return rest<LeadInfo>("leads", {
+    source: "neq.test",
+    is_test: "not.is.true",
     select: LEAD_COLS,
     order: "created_at.desc",
     limit: String(limit),
