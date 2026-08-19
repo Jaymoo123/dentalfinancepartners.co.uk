@@ -118,6 +118,9 @@ MIGRATIONS = [
     # Claim-race port: shared cap 3, exclusive 3x lock, test buyers exempt
     # from allocation; atomic claim_lead_offer() replaces the one-claim index.
     "20260819000002_claim_race.sql",
+    # Dashboard KPI functions exclude test leads (source='test' OR is_test):
+    # real-shaped walk/QA leads were counting in the console lead tiles.
+    "20260819000003_test_leads_excluded_from_kpis.sql",
 ]
 
 
