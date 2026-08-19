@@ -15,6 +15,7 @@
 import { roleLabel, surfaceLabel } from "@/lib/leads/role-labels";
 import { escapeHtml, prettySource, formatTimestamp, type LeadRecord } from "@/lib/leads/notify-email";
 import { tierLabel } from "@/lib/leads/offer-teaser";
+import { formatLatency, type TimelineEntry } from "@/lib/leads/dossier";
 
 export type ReleaseExtras = {
   /** e.g. "valid_mobile" -> shown as verified; detail levels never shared. */
@@ -27,6 +28,9 @@ export type ReleaseExtras = {
   caseType?: string | null;
   intentLine?: string | null;
   priceGbp: number;
+  /** "Conversation so far" sequence (owner instruction 2026-08-19). */
+  timeline?: TimelineEntry[];
+  responseLatencyMs?: number | null;
 };
 
 const PHONE_VERIFIED = new Set(["valid_mobile", "valid_landline"]);
@@ -96,6 +100,24 @@ ${x.bookedSlot ? `<p>Booked callback: <strong>${esc(x.bookedSlot)}</strong></p>`
 <div style="color:#64748b;margin-bottom:4px;">Their enquiry</div>
 <div>${esc(lead.message || "(no message)")}</div>
 </div>
+${
+  typeof x.responseLatencyMs === "number"
+    ? `<p style="margin:12px 0 0;font-size:14px;">Responded <strong>${esc(formatLatency(x.responseLatencyMs))}</strong> after enquiring.</p>`
+    : ""
+}
+${
+  x.timeline?.length
+    ? `<div style="margin:12px 0;">
+<div style="color:#64748b;font-size:13px;margin-bottom:4px;">Conversation so far</div>
+<table style="border-collapse:collapse;font-size:13px;">${x.timeline
+        .map(
+          (t) =>
+            `<tr><td style="padding:2px 10px 2px 0;color:#64748b;white-space:nowrap;vertical-align:top;">${esc(formatTimestamp(t.ts))}</td><td style="padding:2px 0;">${esc(t.label)}${t.detail ? `<div style="background:#f1f5f9;border-radius:4px;padding:4px 8px;margin-top:2px;font-style:italic;">&ldquo;${esc(t.detail)}&rdquo;</div>` : ""}</td></tr>`,
+        )
+        .join("")}</table>
+</div>`
+    : ""
+}
 <p style="margin:16px 0 0;color:#64748b;font-size:13px;">£${x.priceGbp} is added to your monthly invoice under the agreed terms.</p>
 ${
   lead.consent_text
@@ -122,6 +144,18 @@ ${
     lead.id ? `Our reference: L-${lead.id.slice(0, 8)}` : "",
     "",
     `Their enquiry: ${lead.message || "(no message)"}`,
+    typeof x.responseLatencyMs === "number"
+      ? `Responded ${formatLatency(x.responseLatencyMs)} after enquiring.`
+      : "",
+    ...(x.timeline?.length
+      ? [
+          "",
+          "CONVERSATION SO FAR",
+          ...x.timeline.map(
+            (t) => `${formatTimestamp(t.ts)}  ${t.label}${t.detail ? ` - "${t.detail}"` : ""}`,
+          ),
+        ]
+      : []),
     "",
     `£${x.priceGbp} is added to your monthly invoice under the agreed terms.`,
     lead.consent_text

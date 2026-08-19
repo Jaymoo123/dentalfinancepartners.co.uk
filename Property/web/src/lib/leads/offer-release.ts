@@ -16,6 +16,7 @@ import { adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
 import { CLAIM_SLOTS_PER_LEAD, EXCLUSIVE_MULTIPLIER } from "@/lib/leads/tiers";
 import { prettySource, type LeadRecord } from "@/lib/leads/notify-email";
 import { buildReleaseEmail } from "@/lib/leads/release-email";
+import { gatherLeadDossier } from "@/lib/leads/dossier";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { isSuppressed } from "@/lib/leads/suppression";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
@@ -219,6 +220,22 @@ export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResul
     const ver = verRes.ok ? verRes.data[0] : undefined;
     const booked = bookedRes.ok ? bookedRes.data[0]?.meta?.start : undefined;
     const score = scoreRes.ok ? scoreRes.data[0] : undefined;
+    // Sequence breakdown (owner instruction 2026-08-19): the dossier's
+    // conversation timeline + response latency ride the release. Best-effort.
+    let timeline: Awaited<ReturnType<typeof gatherLeadDossier>>["timeline"] = [];
+    let responseLatencyMs: number | null = null;
+    try {
+      const dossier = await gatherLeadDossier({
+        id: offer.lead_id,
+        created_at: lead.created_at ?? "",
+        visitor_id: null,
+        message: lead.message ?? null,
+      });
+      timeline = dossier.timeline;
+      responseLatencyMs = dossier.responseLatencyMs;
+    } catch (err) {
+      console.error("leads/offer-release: dossier gather failed", err);
+    }
     const email = buildReleaseEmail(lead, {
       phoneStatus: ver?.phone_status,
       emailStatus: ver?.email_status,
@@ -228,6 +245,8 @@ export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResul
       caseType: score?.case_type,
       intentLine: score?.intent_line,
       priceGbp: offer.price_gbp,
+      timeline,
+      responseLatencyMs,
     });
     try {
       const { error } = await getResend().emails.send({
