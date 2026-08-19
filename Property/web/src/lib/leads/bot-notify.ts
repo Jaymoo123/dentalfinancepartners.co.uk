@@ -14,7 +14,7 @@
 import { sendTelegram, type InlineKeyboard } from "@/lib/telegram";
 import { adminSelect } from "@/lib/supabase/admin";
 import { renderTeaserText } from "@/lib/leads/offer-send";
-import { tierPrice } from "@/lib/leads/offer-config";
+import { tierPrice, matchingBuyers } from "@/lib/leads/offer-config";
 import { tierLabel, buildTeaser, type TeaserJson } from "@/lib/leads/offer-teaser";
 import { escapeHtml } from "@/lib/leads/notify-email";
 import type { GradeResult } from "@/lib/leads/case-tier";
@@ -137,7 +137,16 @@ export async function buildVerifiedMessage(
     ? `<b>Lead verified: ${label}</b>\nAI grading unavailable. Pick the tier yourself (keyword guess: ${escapeHtml(tierLabel(grade.tier) || grade.tier)}).`
     : `<b>Lead verified: ${label}</b>\nSuggested tier: <b>${escapeHtml(tierLabel(grade.tier) || grade.tier)}</b> £${price ?? "?"}${grade.caseType ? ` · ${escapeHtml(grade.caseType)}` : ""}${grade.intentLine ? `\nWhy: ${escapeHtml(grade.intentLine)}` : ""}`;
 
-  const text = `${header}\n\n<pre>${escapeHtml(renderTeaserText(teaser, price))}</pre>`;
+  // Sending goes to every matching signed firm, so the ping says how many.
+  let poolLine = "";
+  try {
+    const pool = await matchingBuyers((lead.source ?? "").toLowerCase(), grade.tier);
+    poolLine = `\nPool: ${pool.length} matching firm${pool.length === 1 ? "" : "s"}`;
+  } catch {
+    // best-effort; the count is informational
+  }
+
+  const text = `${header}${poolLine}\n\n<pre>${escapeHtml(renderTeaserText(teaser, price))}</pre>`;
 
   // AI down: no one-tap send; the owner's tier pick IS the classification and
   // the send happens from the re-rendered message after picking.
