@@ -17,6 +17,9 @@ import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
 import { getSiteUrl } from "@/config/niche-loader";
 import { firstNameOf } from "@accounting-network/web-shared/lead-nurture/config";
 import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
+import { botArmed } from "@/lib/telegram";
+import { isBotPaused } from "@/lib/leads/nurture-control";
+import { notifyExpiredOffer, notifyClaimHeld } from "@/lib/leads/bot-notify";
 
 // ---------------------------------------------------------------------------
 // Window bounds (Europe/London wall-clock)
@@ -466,16 +469,73 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
 
   // ── Scan C: buyer offer expiry ───────────────────────────────────────────
   // Estate-wide sweep (lives in Property only, like the notify route): any
-  // offer still 'offered' past its expires_at flips to 'expired'. No emails;
-  // the lead simply falls back to normal routing.
+  // offer still 'offered' past its expires_at flips to 'expired'. When the
+  // lead-ops bot is armed, each expiry pings the owner with a [Re-offer]
+  // button; otherwise the lead simply falls back to normal routing.
   try {
-    await adminUpdate(
+    const expired = await adminUpdate<{ id: string; lead_id: string; price_gbp: number }>(
       "lead_offers",
       { status: "eq.offered", expires_at: `lt.${new Date().toISOString()}` },
       { status: "expired" },
     );
+    if (botArmed() && expired.ok && expired.data.length > 0 && !(await isBotPaused())) {
+      for (const row of expired.data) {
+        try {
+          await notifyExpiredOffer(row);
+        } catch (err) {
+          console.error("[lead-aux-cron] expiry notify failed", row.id, err);
+        }
+      }
+    }
   } catch (err) {
     console.error("[lead-aux-cron] offer expiry sweep error", err);
+  }
+
+  // ── Scan D: held-release nudge ───────────────────────────────────────────
+  // A claim held for the owner's [Release details] tap gets ONE reminder after
+  // an hour, stamped on nudged_at only when the send succeeded (a failed send
+  // retries next hour; a second nudge never fires). No silent auto-release:
+  // approve-each-release is owner-locked.
+  try {
+    if (botArmed() && !(await isBotPaused())) {
+      const cutoff = new Date(Date.now() - 3600_000).toISOString();
+      const stuck = await adminSelect<{
+        id: string;
+        lead_id: string;
+        buyer_id: string;
+        price_gbp: number;
+      }>("lead_offers", {
+        select: "id,lead_id,buyer_id,price_gbp",
+        status: "eq.claimed",
+        released_at: "is.null",
+        nudged_at: "is.null",
+        claimed_at: `lt.${cutoff}`,
+        limit: "10",
+      });
+      for (const offer of stuck.ok ? stuck.data : []) {
+        let firm = "A partner firm";
+        try {
+          const b = await adminSelect<{ firm_name: string }>("lead_buyers", {
+            select: "firm_name",
+            id: `eq.${offer.buyer_id}`,
+            limit: "1",
+          });
+          if (b.ok && b.data[0]?.firm_name) firm = b.data[0].firm_name;
+        } catch {
+          // generic label is fine
+        }
+        const sent = await notifyClaimHeld(offer, firm, { nudge: true });
+        if (sent) {
+          await adminUpdate(
+            "lead_offers",
+            { id: `eq.${offer.id}`, nudged_at: "is.null" },
+            { nudged_at: new Date().toISOString() },
+          ).catch(() => {});
+        }
+      }
+    }
+  } catch (err) {
+    console.error("[lead-aux-cron] held-release nudge error", err);
   }
 
   return { reminders, nudges };

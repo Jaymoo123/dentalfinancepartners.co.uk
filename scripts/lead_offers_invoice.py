@@ -75,11 +75,26 @@ def main():
     y, m = int(month[:4]), int(month[5:7])
     nxt = f"{y + (m == 12):04d}-{(m % 12) + 1:02d}-01"
     offers = api(url, key,
-                 "lead_offers?select=id,lead_id,buyer_id,status,claimed_at,price_gbp,credit_reason"
+                 "lead_offers?select=id,lead_id,buyer_id,status,claimed_at,released_at,price_gbp,credit_reason"
                  f"&status=in.(claimed,credited)&claimed_at=gte.{month}-01&claimed_at=lt.{nxt}"
                  "&order=claimed_at.asc&limit=2000")
     if not offers:
         print(f"No claimed or credited offers with claimed_at in {month}.")
+        return
+
+    # A claimed offer whose details were never RELEASED is not billable: under
+    # the bot's approve-each-release flow released_at can lag claimed_at (or
+    # never happen). Billing for an undelivered lead is the one invoice error
+    # a buyer will rightly dispute, so those rows print loudly and drop out.
+    unreleased = [o for o in offers if o["status"] == "claimed" and not o.get("released_at")]
+    if unreleased:
+        print(f"\n!! EXCEPTIONS: {len(unreleased)} claimed offer(s) with NO release recorded."
+              "\n!! Not billed. Release them (Telegram [Release details] or manually) and rerun:")
+        for o in unreleased:
+            print(f"!!   offer {o['id']}  lead {o['lead_id'][:8]}  claimed {o['claimed_at'][:16]}  £{o['price_gbp']}")
+        offers = [o for o in offers if o not in unreleased]
+    if not offers:
+        print(f"\nNo billable offers in {month} after exclusions.")
         return
     buyers = {b["id"]: b for b in api(url, key, "lead_buyers?select=id,ref,firm_name&limit=500")}
     lead_ids = ",".join(o["lead_id"] for o in offers)

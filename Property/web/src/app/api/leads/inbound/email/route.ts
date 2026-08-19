@@ -38,6 +38,11 @@ import { verifyLead } from "@/lib/leads/verify";
 import { extractUkPhone } from "@/lib/leads/reply-extract";
 import { phoneMeetsFloor } from "@/lib/leads/field-floors";
 import { acknowledgeEmailReply, notifyOperatorOfReply } from "@/lib/leads/reply-ack";
+import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
+import { isRawSupplied } from "@/lib/leads/offer-send";
+import { notifyBuyerReply, notifySuppliedLeadResponded } from "@/lib/leads/bot-notify";
+import { getResend, getFromAddress } from "@/lib/resend";
+import { resolveLeadTo } from "@/lib/lead-routing";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -84,6 +89,71 @@ async function resolveLeadByEmail(senderEmail: string): Promise<LeadRow | null> 
   });
   if (res.ok && res.data.length > 0) return res.data[0];
   return null;
+}
+
+// ── Buyer replies ─────────────────────────────────────────────────────────────
+
+/**
+ * If the sender is an active lead buyer, surface the reply to the owner on
+ * Telegram with per-offer [Claim & release] buttons (or the operator email
+ * fallback) and report handled=true. Inactive buyers fall through to the
+ * normal enquirer path.
+ */
+async function handleBuyerReply(senderEmail: string, body: string): Promise<boolean> {
+  const buyerRes = await adminSelect<{ id: string; firm_name: string }>("lead_buyers", {
+    select: "id,firm_name",
+    email: `eq.${senderEmail}`,
+    status: "eq.active",
+    limit: "1",
+  });
+  if (!buyerRes.ok || buyerRes.data.length === 0) return false;
+  const buyer = buyerRes.data[0];
+
+  let offers: Array<{ id: string; lead_id: string; price_gbp: number; teaser: { tier?: string } }> = [];
+  try {
+    const res = await adminSelect<{
+      id: string;
+      lead_id: string;
+      price_gbp: number;
+      teaser: { tier?: string };
+    }>("lead_offers", {
+      select: "id,lead_id,price_gbp,teaser",
+      buyer_id: `eq.${buyer.id}`,
+      status: "eq.offered",
+      order: "created_at.desc",
+      limit: "5",
+    });
+    if (res.ok) offers = res.data;
+  } catch (err) {
+    console.error("[leads/inbound/email] buyer offers load failed", err);
+  }
+
+  const sent = await notifyBuyerReply(
+    buyer.firm_name,
+    body,
+    offers.map((o) => ({
+      id: o.id,
+      lead_id: o.lead_id,
+      price_gbp: o.price_gbp,
+      tier: o.teaser?.tier,
+    })),
+  );
+  if (!sent) {
+    // Telegram down: the reply must still reach a human. Plain operator email.
+    try {
+      if (process.env.RESEND_API_KEY) {
+        await getResend().emails.send({
+          from: getFromAddress(),
+          to: resolveLeadTo(undefined),
+          subject: `Buyer reply from ${buyer.firm_name}`,
+          text: `${buyer.firm_name} replied to a lead offer email:\n\n${body.slice(0, 2000)}\n\nOpen offers for this firm: ${offers.length}. Handle from your inbox or the console.`,
+        });
+      }
+    } catch (err) {
+      console.error("[leads/inbound/email] buyer reply email fallback failed", err);
+    }
+  }
+  return true;
 }
 
 // ── Response helpers ──────────────────────────────────────────────────────────
@@ -140,6 +210,19 @@ export async function POST(req: NextRequest) {
 
   const strippedBody = stripQuotedHistory(rawText);
 
+  // Buyer-address-first: a partner firm replying to an offer ping must NEVER
+  // fall through into the enquirer paths (opt-out detection, phone capture,
+  // nurture promotion). Checked before lead resolution because a buyer contact
+  // may once have submitted a form and matched a lead row.
+  try {
+    const handled = await handleBuyerReply(senderEmail, strippedBody);
+    if (handled) return ok200();
+  } catch (err) {
+    console.error("[leads/inbound/email] buyer branch failed", err);
+    // Fall through to lead resolution; worst case the reply is dropped like
+    // any unmatched sender.
+  }
+
   // Resolve sender to a Property lead (most recent match wins).
   let lead: LeadRow | null = null;
   try {
@@ -149,6 +232,22 @@ export async function POST(req: NextRequest) {
   }
   if (!lead) return ok200();
   const leadId = lead.id;
+
+  // A raw-supplied lead's replies are an owner FYI only: the raw buyer owns
+  // the relationship, so no ack email, no operator pack, no promotion. The
+  // reply event is still recorded for the audit trail.
+  try {
+    if (await isRawSupplied(leadId, { failClosed: false })) {
+      await recordLeadContactEvent(leadId, "replied", "email", {
+        body: strippedBody.slice(0, 2000),
+        raw_supplied: true,
+      });
+      await notifySuppliedLeadResponded(leadId);
+      return ok200();
+    }
+  } catch (err) {
+    console.error("[leads/inbound/email] raw-supplied check failed", err);
+  }
 
   try {
     // Detect opt-out deterministically BEFORE calling the AI (avoids API spend).

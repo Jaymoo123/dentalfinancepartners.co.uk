@@ -32,6 +32,11 @@ import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
+import { botArmed } from "@/lib/telegram";
+import { isBotPaused } from "./nurture-control";
+import { ensureCaseTier } from "./case-tier";
+import { notifyLeadVerified, notifySuppliedLeadResponded } from "./bot-notify";
+import { isRawSupplied } from "./offer-send";
 
 type EventRow = { event_type: string; channel: string | null; ts?: string | null };
 type VerRow = { phone_status: string | null };
@@ -161,6 +166,20 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       return { promoted: false, alreadyPromoted: true, reason: verdict.reason };
     }
 
+    // Telegram lead-ops ping (additive, never load-bearing): the handoff email
+    // below still fires regardless and carries the "Offer to buyers" link, so
+    // a Telegram failure costs nothing but convenience. Best-effort by design.
+    if (botArmed()) {
+      try {
+        if (!(await isBotPaused())) {
+          const grade = await ensureCaseTier(leadId);
+          if (grade) await notifyLeadVerified(leadId, grade);
+        }
+      } catch (err) {
+        console.error("[contactability] bot verify ping failed (handoff email still sent)", err);
+      }
+    }
+
     // Fire the handoff first; the audit event is recorded only once we know the outcome.
     const handoff = await sendContactableHandoff(leadId, verdict.reason);
 
@@ -232,6 +251,18 @@ export async function recordResponseAndEvaluate(
   meta?: Record<string, unknown>,
 ): Promise<PromoteResult> {
   await recordLeadContactEvent(leadId, eventType, channel, meta);
+  // A raw-supplied lead responding is an FYI to the owner only: its status is
+  // 'forwarded' so the promote latch below is inert, and the raw buyer owns
+  // the relationship. Best-effort, never blocks the evaluation path.
+  if (botArmed()) {
+    try {
+      if (await isRawSupplied(leadId, { failClosed: false })) {
+        await notifySuppliedLeadResponded(leadId);
+      }
+    } catch (err) {
+      console.error("[contactability] supplied-lead response notice failed", err);
+    }
+  }
   // When a lead replies (any channel), flag the active nurture state for copy regeneration
   // so the AI copy layer can weave their reply into remaining touches.
   // Best-effort: errors are swallowed so a DB hiccup never blocks the contactability path.

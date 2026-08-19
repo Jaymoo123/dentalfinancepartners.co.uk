@@ -93,6 +93,51 @@ export async function isNurturePaused(): Promise<boolean> {
 // ── Writes (fail-silently) ────────────────────────────────────────────────────
 
 /**
+ * Telegram lead-ops bot kill switch (columns added by migration
+ * 20260819000001). FAIL-OPEN like the nurture switch: a missing column or a
+ * transient DB error reads as "not paused", because a paused-looking bot
+ * silently swallowing claim-hold prompts is the one outcome with no remedy —
+ * callers treat paused as "act like the bot does not exist" (auto-release,
+ * no prompts), which is the safe direction.
+ */
+export async function isBotPaused(): Promise<boolean> {
+  try {
+    const res = await adminSelect<{ bot_paused: boolean }>("lead_nurture_control", {
+      select: "bot_paused",
+      id: "eq.1",
+      limit: "1",
+    });
+    if (!res.ok || res.data.length === 0) return false;
+    return Boolean(res.data[0].bot_paused);
+  } catch (err) {
+    console.error("[nurture-control] isBotPaused error, failing open", err);
+    return false;
+  }
+}
+
+/** Pause/resume the lead-ops bot. Fails silently (log, no throw). */
+export async function setBotPaused(paused: boolean): Promise<void> {
+  const nowIso = new Date().toISOString();
+  try {
+    const res = await adminInsert(
+      "lead_nurture_control",
+      {
+        id: 1,
+        bot_paused: paused,
+        bot_paused_at: paused ? nowIso : null,
+        updated_at: nowIso,
+      },
+      { onConflict: "id" },
+    );
+    if (!res.ok) {
+      console.error("[nurture-control] setBotPaused write failed", res.status);
+    }
+  } catch (err) {
+    console.error("[nurture-control] setBotPaused error", err);
+  }
+}
+
+/**
  * Pause all nurture sends. Upserts id=1 with paused=true, recording the
  * reason and operator identity. Fails silently if the table is missing.
  */

@@ -11,11 +11,12 @@
  * never a site brand.
  */
 import { getResend } from "@/lib/resend";
-import { adminInsert } from "@/lib/supabase/admin";
+import { adminInsert, adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { isSuppressed } from "@/lib/leads/suppression";
 import { matchingBuyers, tierPrice, type LeadBuyer } from "@/lib/leads/offer-config";
 import { tierLabel, type TeaserJson } from "@/lib/leads/offer-teaser";
 import { escapeHtml } from "@/lib/leads/notify-email";
+import { offerFromAddress } from "@/lib/leads/offer-release";
 
 const FONT = "-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 
@@ -24,10 +25,6 @@ export function offerBaseUrl(): string {
     /\/+$/,
     "",
   );
-}
-
-function offerFromAddress(): string {
-  return process.env.LEAD_OFFER_FROM || "Ashfield Partner Network <leads@propertytaxpartners.co.uk>";
 }
 
 // ---------------------------------------------------------------------------
@@ -121,7 +118,7 @@ function buyerOfferEmail(
 <h1 style="margin:0;color:#ffffff;font-size:19px;font-weight:700;line-height:1.3;">${escapeHtml(teaser.site || "Specialist")} enquiry · ${escapeHtml(tierLabel(teaser.tier))} tier</h1>
 </td></tr>
 <tr><td style="padding:24px 28px 28px;color:#334155;font-size:15px;line-height:1.6;">
-<p style="margin:0 0 16px;">Hi ${escapeHtml(greetingName)}, a new enquiry matching your subscription is available. Details below are anonymised; full contact details release to you the moment you accept.</p>
+<p style="margin:0 0 16px;">Hi ${escapeHtml(greetingName)}, a new enquiry matching your subscription is available. Details below are anonymised; full contact details are released to you on acceptance.</p>
 ${renderTeaserHtml(teaser, priceGbp)}
 <table role="presentation" cellpadding="0" cellspacing="0" style="margin:22px 0 8px;"><tr><td style="border-radius:6px;background-color:#0f172a;">
 <a href="${escapeHtml(claimUrl)}" style="display:inline-block;font-family:${FONT};font-size:16px;font-weight:700;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:6px;">Accept this lead · £${priceGbp}</a>
@@ -154,6 +151,45 @@ ${renderTeaserHtml(teaser, priceGbp)}
 
 const OFFER_EXPIRY_HOURS = 24;
 
+/**
+ * A lead may only enter the pool if the notice it was collected under
+ * disclosed sharing. Decided from the lead's OWN stored consent_text, never
+ * from the current site config: leads collected during the 2026-08-17
+ * in-house-wording window (or under a named-firm notice) are not disclosable
+ * to the partner network. Substring anchors, because the full string embeds
+ * each site's display name.
+ */
+const SHARING_CONSENT_PHRASES = [
+  "will share your details with", // estate sharing wording (partner network)
+  "a firm from our specialist partner network",
+  "may be shared with a specialist partner firm", // 2026-07-15 generic paused wording
+];
+
+export function consentAllowsSharing(consentText?: string | null): boolean {
+  const text = (consentText ?? "").toLowerCase();
+  if (!text) return false;
+  return SHARING_CONSENT_PHRASES.some((p) => text.includes(p));
+}
+
+/**
+ * True when the lead was already sold in a raw Bulk Supply batch.
+ * Sharing paths keep the default failClosed=true (offering on a failed read
+ * has no remedy); notify-only callers pass failClosed:false so a DB blip
+ * cannot fabricate an "already sold" message.
+ */
+export async function isRawSupplied(
+  leadId: string,
+  opts?: { failClosed?: boolean },
+): Promise<boolean> {
+  const res = await adminSelect<{ id: string }>("lead_supply", {
+    select: "id",
+    lead_id: `eq.${leadId}`,
+    limit: "1",
+  });
+  if (!res.ok) return opts?.failClosed === false ? false : true;
+  return res.data.length > 0;
+}
+
 export type SendOffersResult = {
   matched: number;
   offered: number;
@@ -173,6 +209,24 @@ export async function sendOffers(
   // An enquirer who has objected is never offered (DSA clause 3.5, LIA safeguard).
   if (await isSuppressed(leadId)) {
     console.warn("leads/offer-send: lead suppressed, not offering", leadId);
+    return { matched: 0, offered: 0, buyers: [] };
+  }
+
+  // A raw-supplied lead is excluded from tiered offers forever (owner decision
+  // 2026-08-19): the raw buyer already holds its full details.
+  if (await isRawSupplied(leadId)) {
+    console.warn("leads/offer-send: lead already raw-supplied, not offering", leadId);
+    return { matched: 0, offered: 0, buyers: [] };
+  }
+
+  // The stored consent decides disclosability, not the current site copy.
+  const consentRes = await adminSelect<{ consent_text: string | null }>("leads", {
+    select: "consent_text",
+    id: `eq.${leadId}`,
+    limit: "1",
+  });
+  if (!consentRes.ok || !consentAllowsSharing(consentRes.data[0]?.consent_text)) {
+    console.warn("leads/offer-send: consent wording does not disclose sharing, not offering", leadId);
     return { matched: 0, offered: 0, buyers: [] };
   }
 
@@ -221,4 +275,88 @@ export async function sendOffers(
   }
 
   return { matched: buyers.length, offered: offeredTo.length, buyers: offeredTo };
+}
+
+// ---------------------------------------------------------------------------
+// Re-offer (bot [Re-offer] button on an expired offer)
+// ---------------------------------------------------------------------------
+
+export type ReofferResult = "reoffered" | "stale" | "blocked" | "error";
+
+/**
+ * Flip ONE expired offer row back to offered and resend the buyer email with
+ * its existing claim token. A plain sendOffers cannot do this: the
+ * (lead_id, buyer_id) row already exists, so its ignoreDuplicates insert is a
+ * silent no-op. The conditional PATCH doubles as the stale-tap latch (a second
+ * tap, or a race with the hourly expiry sweep, updates zero rows).
+ */
+export async function reofferExpired(offerId: string): Promise<ReofferResult> {
+  type FullOffer = {
+    id: string;
+    lead_id: string;
+    buyer_id: string;
+    token: string;
+    teaser: TeaserJson;
+    price_gbp: number;
+  };
+  const res = await adminSelect<FullOffer>("lead_offers", {
+    select: "id,lead_id,buyer_id,token,teaser,price_gbp",
+    id: `eq.${offerId}`,
+    limit: "1",
+  });
+  if (!res.ok || res.data.length === 0) return "error";
+  const offer = res.data[0];
+
+  // Same gates as a fresh offer: an objection or a raw supply since expiry
+  // blocks the re-offer.
+  if ((await isSuppressed(offer.lead_id)) || (await isRawSupplied(offer.lead_id))) {
+    return "blocked";
+  }
+
+  const expiresAt = new Date(Date.now() + OFFER_EXPIRY_HOURS * 3600_000).toISOString();
+  const flip = await adminUpdate<FullOffer>(
+    "lead_offers",
+    { id: `eq.${offerId}`, status: "eq.expired" },
+    { status: "offered", expires_at: expiresAt },
+  );
+  if (!flip.ok) return "error";
+  if (flip.data.length === 0) return "stale";
+
+  const buyerRes = await adminSelect<LeadBuyer>("lead_buyers", {
+    select: "id,ref,firm_name,contact_name,email,status,sources,min_tier,dsa_signed_at",
+    id: `eq.${offer.buyer_id}`,
+    status: "eq.active",
+    dsa_signed_at: "not.is.null",
+    limit: "1",
+  });
+  const buyer = buyerRes.ok ? buyerRes.data[0] : undefined;
+  if (!buyer) {
+    // Buyer no longer eligible: put the row back so it cannot sit claimable.
+    await adminUpdate(
+      "lead_offers",
+      { id: `eq.${offerId}`, status: "eq.offered" },
+      { status: "expired" },
+    ).catch(() => {});
+    return "blocked";
+  }
+
+  const claimUrl = `${offerBaseUrl()}/api/leads/claim/${offer.token}`;
+  const email = buyerOfferEmail(buyer, offer.teaser, offer.price_gbp, claimUrl, OFFER_EXPIRY_HOURS);
+  try {
+    const { error } = await getResend().emails.send({
+      from: offerFromAddress(),
+      to: buyer.email,
+      subject: email.subject,
+      html: email.html,
+      text: email.text,
+    });
+    if (error) {
+      console.error("leads/offer-send: reoffer resend error", offerId, error);
+      return "error";
+    }
+  } catch (err) {
+    console.error("leads/offer-send: reoffer send threw", offerId, err);
+    return "error";
+  }
+  return "reoffered";
 }

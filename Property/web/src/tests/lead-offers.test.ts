@@ -23,6 +23,8 @@ const db = {
   lead_nurture_state:   [] as Row[],
   // Read by the suppression check on both the offer and the claim path.
   lead_contact_events:  [] as Row[],
+  // Raw Bulk Supply ledger: read by the supplied-lead guard in sendOffers.
+  lead_supply:          [] as Row[],
   reset() {
     this.leads               = [];
     this.lead_buyers         = [];
@@ -30,6 +32,7 @@ const db = {
     this.lead_value_scores   = [];
     this.lead_nurture_state  = [];
     this.lead_contact_events = [];
+    this.lead_supply         = [];
   },
 };
 
@@ -43,8 +46,12 @@ function matches(row: Row, params: Record<string, string>): boolean {
       if (!set.includes(String(row[k]))) return false;
     } else if (raw.startsWith("lt.")) {
       if (!(String(row[k]) < raw.slice(3))) return false;
+    } else if (raw.startsWith("gte.")) {
+      if (!(String(row[k]) >= raw.slice(4))) return false;
     } else if (raw === "not.is.null") {
       if (row[k] === null || row[k] === undefined || row[k] === "") return false;
+    } else if (raw === "is.null") {
+      if (!(row[k] === null || row[k] === undefined || row[k] === "")) return false;
     } else if (raw.startsWith("cs.")) {
       // array contains: cs.{value}
       const want = raw.slice(3).replace(/^\{|\}$/g, "");
@@ -152,6 +159,28 @@ function ctxFor(token: string) {
 
 const FUTURE = new Date(Date.now() + 3600_000).toISOString();
 const PAST = new Date(Date.now() - 3600_000).toISOString();
+
+// Estate sharing wording: the offer path only pools leads whose stored
+// consent_text disclosed sharing (H1 guard).
+const SHARING_CONSENT =
+  "Dentists Tax Specialists will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time.";
+
+function seedLeadRow(id: string, over: Row = {}): Row {
+  const lead: Row = {
+    id,
+    full_name: "Jane Doe",
+    email: `${id}@lead.test`,
+    phone: "07000000000",
+    source: "dentists",
+    message: "Need help with practice incorporation",
+    created_at: "2026-08-06T10:00:00Z",
+    status: "new",
+    consent_text: SHARING_CONSENT,
+    ...over,
+  };
+  db.leads.push(lead);
+  return lead;
+}
 
 function seedBuyer(over: Row = {}): Row {
   const buyer: Row = {
@@ -279,6 +308,10 @@ describe("matchingBuyers", () => {
 // ── suppression ──────────────────────────────────────────────────────────────
 
 describe("objection suppression", () => {
+  beforeEach(() => {
+    seedLeadRow("lead-1");
+  });
+
   it("does not offer a lead whose enquirer has opted out", async () => {
     seedBuyer({ id: "b1", sources: ["dentists"], min_tier: "standard" });
     db.lead_contact_events.push({
@@ -381,6 +414,14 @@ describe("sendOffers", () => {
     site: "Dentists", tier: "advisory", est_band: "£1,000–£3,000", intent: "structure",
     work_type: "recurring", role: "Practice owner", surface: "", submitted_date: "2026-08-06",
   };
+
+  beforeEach(() => {
+    // Every offered lead must exist with sharing-consent wording; the H1 guard
+    // reads the stored consent_text before any offer goes out.
+    seedLeadRow("lead-1");
+    seedLeadRow("lead-9");
+    seedLeadRow("lead-10");
+  });
 
   it("creates one offer per matching buyer and emails each", async () => {
     seedBuyer({ id: "b1", email: "b1@buyers.test" });

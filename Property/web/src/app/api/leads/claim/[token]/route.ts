@@ -15,14 +15,13 @@
  *   in the forward-ready notify format, owner notified.
  */
 import { NextResponse, type NextRequest } from "next/server";
-import { getResend, getFromAddress } from "@/lib/resend";
-import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
-import { isSuppressed } from "@/lib/leads/suppression";
-import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { buildLeadHtml, buildLeadText, prettySource, type LeadRecord } from "@/lib/leads/notify-email";
+import { adminSelect } from "@/lib/supabase/admin";
 import { renderTeaserHtml } from "@/lib/leads/offer-send";
+import { claimOffer, releaseClaimedOffer } from "@/lib/leads/offer-release";
+import { botArmed } from "@/lib/telegram";
+import { isBotPaused } from "@/lib/leads/nurture-control";
+import { notifyClaimHeld } from "@/lib/leads/bot-notify";
 import type { TeaserJson } from "@/lib/leads/offer-teaser";
-import { resolveLeadTo } from "@/lib/lead-routing";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -103,7 +102,7 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   if (offer.status === "claimed") {
     return page(
       "Lead claimed",
-      `<h1>You claimed this lead</h1><p>Full contact details were emailed to you when you accepted. Check your inbox (and spam folder).</p>`,
+      `<h1>You claimed this lead</h1><p>Full contact details have been sent or are on their way. Check your inbox (and spam folder).</p>`,
     );
   }
   if (offer.status === "lost") return takenPage();
@@ -114,7 +113,7 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   return page(
     "Accept this lead?",
     `<h1>Accept this lead exclusively · £${offer.price_gbp}</h1>
-     <p>First firm to accept gets the lead. On accepting, full contact details are emailed to you immediately and £${offer.price_gbp} is added to your monthly invoice under the agreed terms.</p>
+     <p>First firm to accept gets the lead. On accepting, full contact details are emailed to you and £${offer.price_gbp} is added to your monthly invoice under the agreed terms.</p>
      ${renderTeaserHtml(offer.teaser, offer.price_gbp)}
      <form method="POST" action="${actionUrl}" style="margin-top:24px"><input type="hidden" name="confirm" value="1"><button type="submit">Accept this lead · £${offer.price_gbp}</button></form>`,
   );
@@ -144,137 +143,75 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   if (offer.status === "claimed") {
     return page(
       "Already claimed",
-      `<h1>You already claimed this lead</h1><p>Full contact details were emailed to you when you accepted.</p>`,
+      `<h1>You already claimed this lead</h1><p>Full contact details have been sent or are on their way.</p>`,
     );
   }
-  if (offer.status !== "offered" || isExpired(offer)) {
-    return offer.status === "lost" ? takenPage() : expiredPage();
-  }
 
-  // Checked again here, not only at offer time: an objection can land between the
-  // alert and the claim, and DSA clause 3.5 says a Referral must not then be made.
-  // The offer is withdrawn rather than left claimable.
-  if (await isSuppressed(offer.lead_id)) {
-    await adminUpdate(
-      "lead_offers",
-      { lead_id: `eq.${offer.lead_id}`, status: "eq.offered" },
-      { status: "lost" },
-    ).catch(() => {});
+  // The whole claim transition (status checks, suppression re-check, buyer
+  // DSA/active re-check, atomic first-click-wins flip, siblings, nurture halt)
+  // is shared with the bot's claim-on-behalf path in offer-release.ts.
+  const { outcome } = await claimOffer(offer.id);
+  if (outcome === "lost") return takenPage();
+  if (outcome === "expired" || outcome === "not-offered" || outcome === "error") {
+    return expiredPage();
+  }
+  if (outcome === "suppressed") {
     return page(
       "No longer available",
       `<h1>This lead is no longer available</h1><p>The enquirer asked us not to pass their details on. Nothing has been charged.</p>`,
     );
   }
-
-  // Atomic first-click-wins: only an 'offered' row can flip to 'claimed', and
-  // the partial unique index on (lead_id) where status='claimed' makes a
-  // concurrent double-win impossible. Zero rows back = we lost the race.
-  const claim = await adminUpdate<OfferRow>(
-    "lead_offers",
-    { id: `eq.${offer.id}`, status: "eq.offered" },
-    { status: "claimed", claimed_at: new Date().toISOString() },
-  );
-  if (!claim.ok || claim.data.length === 0) {
-    return takenPage();
-  }
-
-  // Siblings lose (best-effort; expiry sweep catches any stragglers).
-  await adminUpdate(
-    "lead_offers",
-    { lead_id: `eq.${offer.lead_id}`, status: "eq.offered" },
-    { status: "lost" },
-  ).catch(() => {});
-
-  // The buyer now owns the relationship: halt ALL nurture sequences so the
-  // lead is never chased by both. Deliberately NOT stopNurture(), which records
-  // an opted_out consent event; a sold lead has not withdrawn consent, it has
-  // been handed off. Failure never blocks release.
-  try {
-    await adminUpdate(
-      "lead_nurture_state",
-      { lead_id: `eq.${offer.lead_id}` },
-      { status: "stopped", next_action_at: null, updated_at: new Date().toISOString() },
+  if (outcome === "buyer-ineligible") {
+    return page(
+      "No longer available",
+      `<h1>This offer is no longer available</h1><p>Please contact us if you believe this is an error. Nothing has been charged.</p>`,
     );
-    await recordLeadContactEvent(offer.lead_id, "handed_off", "system", {
-      reason: "buyer_claim",
-      offer_id: offer.id,
-      buyer_id: offer.buyer_id,
-    });
-  } catch (err) {
-    console.error("leads/claim: nurture halt failed", err);
   }
 
-  // Release: full details to the buyer, forward-ready format.
-  const buyerRes = await adminSelect<{ email: string; firm_name: string }>("lead_buyers", {
-    select: "email,firm_name",
-    id: `eq.${offer.buyer_id}`,
-  });
-  const buyer = buyerRes.ok ? buyerRes.data[0] : undefined;
-
-  const leadRes = await adminSelect<LeadRecord>("leads", {
-    select:
-      "id,created_at,submitted_at,full_name,email,phone,role,practice_name,message,source,source_url,status,consent_given,consent_text,extras",
-    id: `eq.${offer.lead_id}`,
-  });
-  const lead = leadRes.ok ? leadRes.data[0] : undefined;
-
-  let released = false;
-  if (buyer && lead) {
-    const subject = `Lead released: ${lead.full_name || "new enquiry"} (${prettySource(lead.source)})`;
-    try {
-      const { error } = await getResend().emails.send({
-        from: process.env.LEAD_OFFER_FROM || "Ashfield Partner Network <leads@propertytaxpartners.co.uk>",
-        to: buyer.email,
-        subject,
-        html: buildLeadHtml(lead),
-        text: buildLeadText(lead),
-      });
-      if (error) {
-        console.error("leads/claim: release send error", error);
-      } else {
-        released = true;
-        await adminUpdate(
-          "lead_offers",
-          { id: `eq.${offer.id}` },
-          { released_at: new Date().toISOString() },
-        ).catch(() => {});
-      }
-    } catch (err) {
-      console.error("leads/claim: release send threw", err);
-    }
-
-    // Mark the lead forwarded (best-effort; the offer row is the ledger).
-    await adminUpdate("leads", { id: `eq.${offer.lead_id}` }, { status: "forwarded" }).catch(
-      () => {},
+  // Release, or hold for the owner's Telegram [Release details] tap.
+  // Held ONLY when the bot is armed, unpaused, AND the prompt actually reached
+  // Telegram: a silent hold (owner never told, buyer never served) is the one
+  // unacceptable state, so any doubt falls open to the instant release the
+  // published terms describe. LEAD_RELEASE_AUTO=1 restores instant release
+  // without a deploy.
+  const releaseAuto = (process.env.LEAD_RELEASE_AUTO || "").trim() === "1";
+  let held = false;
+  if (!releaseAuto && botArmed() && !(await isBotPaused())) {
+    held = await notifyClaimHeld(
+      { id: offer.id, lead_id: offer.lead_id, price_gbp: offer.price_gbp },
+      await buyerFirmName(offer.buyer_id),
     );
-
-    // Tell the owner who won.
-    try {
-      await getResend().emails.send({
-        from: getFromAddress(),
-        to: resolveLeadTo(lead.source),
-        subject: `Lead claimed by ${buyer.firm_name}: ${lead.full_name || offer.lead_id} (£${offer.price_gbp})`,
-        text: [
-          `${buyer.firm_name} claimed lead ${offer.lead_id} (${prettySource(lead.source)}) for £${offer.price_gbp}.`,
-          released
-            ? "Full details were released to the buyer automatically."
-            : "RELEASE EMAIL FAILED, send the lead details manually.",
-          `Offer ID: ${offer.id}`,
-        ].join("\n"),
-      });
-    } catch (err) {
-      console.error("leads/claim: owner notify threw", err);
-    }
   }
 
-  if (!buyer || !lead || !released) {
+  if (held) {
+    return page(
+      "Lead accepted",
+      `<h1>Lead accepted · it is yours</h1><p>Full contact details are on their way to your inbox. £${offer.price_gbp} will appear on your monthly invoice. The agreed credit policy applies if the lead is uncontactable or not genuine.</p>`,
+    );
+  }
+
+  const release = await releaseClaimedOffer(offer.id);
+  if (!release.released) {
     return page(
       "Accepted",
-      `<h1>Lead accepted</h1><p>Your acceptance is recorded${released ? "" : ", but the details email could not be sent automatically. The details will be sent to you shortly"}.</p>`,
+      `<h1>Lead accepted</h1><p>Your acceptance is recorded, but the details email could not be sent automatically. The details will be sent to you shortly.</p>`,
     );
   }
   return page(
     "Lead accepted",
     `<h1>Lead accepted · it is yours</h1><p>Full contact details have been emailed to you. £${offer.price_gbp} will appear on your monthly invoice. The agreed credit policy applies if the lead is uncontactable or not genuine.</p>`,
   );
+}
+
+async function buyerFirmName(buyerId: string): Promise<string> {
+  try {
+    const res = await adminSelect<{ firm_name: string }>("lead_buyers", {
+      select: "firm_name",
+      id: `eq.${buyerId}`,
+      limit: "1",
+    });
+    return (res.ok && res.data[0]?.firm_name) || "A partner firm";
+  } catch {
+    return "A partner firm";
+  }
 }

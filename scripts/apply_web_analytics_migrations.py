@@ -102,6 +102,19 @@ MIGRATIONS = [
     # web_timeseries/estate_timeseries to read the rollup (kills 89s all-time
     # scans / 7d-hourly 500s). Backfill run separately after apply.
     "20260707000002_web_timeseries_rollups.sql",
+    # ---------------------------------------------------------------------
+    # Retroactive registration 2026-08-19 (lead offer/claim pipeline): the
+    # three migrations below were applied to prod ad hoc in August but never
+    # added to this list (staging verified missing lead_buyers on 08-19).
+    # Apply-by-substring only, same rule as the 07-05 block above.
+    # ---------------------------------------------------------------------
+    "20260709000001_lead_value_scores.sql",
+    "20260807000001_lead_buyers_and_offers.sql",
+    "20260810000001_case_tiers.sql",
+    "20260814000001_case_classification.sql",
+    # Telegram lead-ops bot: lead_supply raw ledger, lead_offers.nudged_at,
+    # bot kill switch on lead_nurture_control, scored_by provenance widening.
+    "20260819000001_telegram_lead_ops.sql",
 ]
 
 
