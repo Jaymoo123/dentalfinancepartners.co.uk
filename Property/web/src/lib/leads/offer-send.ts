@@ -98,11 +98,17 @@ export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): strin
 // Buyer offer email
 // ---------------------------------------------------------------------------
 
+/**
+ * Reply-to-accept email (owner decision 2026-08-19): no button, no link. The
+ * firm replies YES to accept; the inbound webhook detects it, claims
+ * atomically and the owner releases. Buttons and in-email forms read as
+ * phishing to a first firm and some clients strip them; a bare reply is the
+ * concierge model the owner settled on 2026-08-12.
+ */
 function buyerOfferEmail(
   buyer: LeadBuyer,
   teaser: TeaserJson,
   priceGbp: number,
-  claimUrl: string,
   expiresHours: number,
 ): { subject: string; html: string; text: string } {
   const subject = `New ${teaser.site || "specialist"} enquiry available, ${tierLabel(teaser.tier)} tier, £${priceGbp} exclusive`;
@@ -118,13 +124,10 @@ function buyerOfferEmail(
 <h1 style="margin:0;color:#ffffff;font-size:19px;font-weight:700;line-height:1.3;">${escapeHtml(teaser.site || "Specialist")} enquiry · ${escapeHtml(tierLabel(teaser.tier))} tier</h1>
 </td></tr>
 <tr><td style="padding:24px 28px 28px;color:#334155;font-size:15px;line-height:1.6;">
-<p style="margin:0 0 16px;">Hi ${escapeHtml(greetingName)}, a new enquiry matching your subscription is available. Details below are anonymised; full contact details are released to you on acceptance.</p>
+<p style="margin:0 0 16px;">Hi ${escapeHtml(greetingName)}, a new enquiry matching your subscription is available. Details below are anonymised.</p>
 ${renderTeaserHtml(teaser, priceGbp)}
-<table role="presentation" cellpadding="0" cellspacing="0" style="margin:22px 0 8px;"><tr><td style="border-radius:6px;background-color:#0f172a;">
-<a href="${escapeHtml(claimUrl)}" style="display:inline-block;font-family:${FONT};font-size:16px;font-weight:700;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:6px;">Accept this lead · £${priceGbp}</a>
-</td></tr></table>
-<p style="margin:8px 0 0;color:#64748b;font-size:13px;">First firm to accept gets the lead exclusively. This offer expires in ${expiresHours} hours. Accepting adds £${priceGbp} to your monthly invoice under the agreed terms (credit policy applies).</p>
-<p style="margin:8px 0 0;color:#64748b;font-size:13px;">Prefer email? Just reply to this message to accept and we will take care of the rest.</p>
+<p style="margin:22px 0 0;font-size:16px;font-weight:700;color:#0f172a;">Want this lead? Just reply YES to this email.</p>
+<p style="margin:8px 0 0;color:#64748b;font-size:13px;">Full contact details are sent to you on acceptance. First firm to reply gets the lead exclusively. This offer expires in ${expiresHours} hours. Accepting adds £${priceGbp} to your monthly invoice under the agreed terms (credit policy applies).</p>
 </td></tr>
 <tr><td style="padding:16px 28px 20px;border-top:1px solid #e2e8f0;">
 <p style="margin:0;color:#94a3b8;font-size:12px;">Ashfield Partner Network · you receive these because your firm has a signed data-sharing agreement with Ashfield Trading Ltd. Reply to pause or change your subscription.</p>
@@ -138,14 +141,31 @@ ${renderTeaserHtml(teaser, priceGbp)}
     "",
     renderTeaserText(teaser, priceGbp),
     "",
-    `Accept this lead: ${claimUrl}`,
+    "Want this lead? Just reply YES to this email.",
     "",
-    `First firm to accept gets the lead exclusively. Expires in ${expiresHours} hours.`,
+    `Full contact details are sent to you on acceptance. First firm to reply gets the lead exclusively. Expires in ${expiresHours} hours.`,
     `Accepting adds £${priceGbp} to your monthly invoice under the agreed terms.`,
-    "",
-    "Prefer email? Just reply to this message to accept and we will take care of the rest.",
   ].join("\n");
   return { subject, html, text };
+}
+
+/**
+ * Deterministic buyer-acceptance detection for reply-to-accept. Judges only
+ * the FIRST non-empty line (signature blocks sank the STOP classifier once;
+ * never scan the whole body), caps its length, accepts the yes-family in any
+ * casing, and refuses when any negation is present.
+ */
+export function isBuyerAcceptance(body: string): boolean {
+  const firstLine = (body || "")
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .find((l) => l.length > 0);
+  if (!firstLine || firstLine.length > 80) return false;
+  const line = firstLine.toLowerCase();
+  if (/\b(no|not|don't|dont|isn't|isnt|won't|wont|never|unsubscribe|stop|pause)\b/.test(line)) {
+    return false;
+  }
+  return /(^|\W)(y|ya|yes|yep|yeah|yeh|accept|accepted|interested)(\W|$)/.test(line);
 }
 
 // ---------------------------------------------------------------------------
@@ -257,8 +277,7 @@ export async function sendOffers(
     );
     if (!res.ok || res.data.length === 0) continue;
 
-    const claimUrl = `${offerBaseUrl()}/api/leads/claim/${res.data[0].token}`;
-    const email = buyerOfferEmail(buyer, teaser, price, claimUrl, OFFER_EXPIRY_HOURS);
+    const email = buyerOfferEmail(buyer, teaser, price, OFFER_EXPIRY_HOURS);
     try {
       const { error } = await getResend().emails.send({
         from: offerFromAddress(),
@@ -344,8 +363,7 @@ export async function reofferExpired(offerId: string): Promise<ReofferResult> {
     return "blocked";
   }
 
-  const claimUrl = `${offerBaseUrl()}/api/leads/claim/${offer.token}`;
-  const email = buyerOfferEmail(buyer, offer.teaser, offer.price_gbp, claimUrl, OFFER_EXPIRY_HOURS);
+  const email = buyerOfferEmail(buyer, offer.teaser, offer.price_gbp, OFFER_EXPIRY_HOURS);
   try {
     const { error } = await getResend().emails.send({
       from: offerFromAddress(),

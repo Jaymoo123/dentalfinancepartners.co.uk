@@ -135,7 +135,7 @@ vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
 
 import { offerQualifies, tierPrice, tierAtLeast, matchingBuyers } from "@/lib/leads/offer-config";
 import { scrubSituation, buildTeaser, redactMessage } from "@/lib/leads/offer-teaser";
-import { sendOffers } from "@/lib/leads/offer-send";
+import { sendOffers, isBuyerAcceptance } from "@/lib/leads/offer-send";
 import { GET as claimGet, POST as claimPost } from "@/app/api/leads/claim/[token]/route";
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -433,11 +433,12 @@ describe("sendOffers", () => {
     expect(db.lead_offers.every((o) => o.price_gbp === 85 && o.status === "offered")).toBe(true);
     expect(sentEmails).toHaveLength(2);
     expect(sentEmails[0].subject).toContain("Advisory tier, £85");
-    expect(sentEmails[0].html).toContain("Accept this lead");
-    // Reply-to-claim path: replies must land on the inbound capture subdomain
-    // so the webhook surfaces them in Telegram, and the copy offers it.
+    // Reply-to-accept model (owner decision 2026-08-19): no button, no claim
+    // link; replies land on the inbound capture subdomain and the copy says
+    // reply YES.
+    expect(sentEmails[0].html).toContain("reply YES");
+    expect(sentEmails[0].html).not.toContain("/api/leads/claim/");
     expect((sentEmails[0] as { replyTo?: string }).replyTo).toContain("@inbound.");
-    expect(sentEmails[0].html).toContain("Just reply to this message to accept");
     // Buyer-facing copy renders the new labels, never the old tier ids.
     expect(sentEmails[0].html).not.toMatch(/very_high|Very high/);
     // Anonymised: buyer email must not contain a claimable lead id.
@@ -487,6 +488,36 @@ describe("sendOffers", () => {
     const r2 = await sendOffers("lead-1", "dentists", teaser);
     expect(r2.matched).toBe(0);
     expect(db.lead_offers).toHaveLength(0);
+  });
+});
+
+// ── buyer acceptance detection ───────────────────────────────────────────────
+
+describe("isBuyerAcceptance", () => {
+  it("accepts the yes-family in any casing", () => {
+    for (const s of ["YES", "yes", "yEs", "Y", "y", "Yes.", "yes!", "Yep", "yeah",
+      "Yes please", "yes, send it over", "Accept", "Interested, yes"]) {
+      expect(isBuyerAcceptance(s), s).toBe(true);
+    }
+  });
+  it("refuses negations, opt-outs and non-answers", () => {
+    for (const s of ["no", "No thanks", "not this one", "yes but not this one",
+      "please pause my subscription", "unsubscribe", "stop", "who is this?",
+      "can you tell me more about the enquiry", ""]) {
+      expect(isBuyerAcceptance(s), s).toBe(false);
+    }
+  });
+  it("judges only the first line, so a signature cannot flip the verdict", () => {
+    // The signed-STOP incident class: trailing signature text must not count.
+    expect(isBuyerAcceptance("yes\n\nKind regards\nRob McKee CTA\nMaratax Limited")).toBe(true);
+    expect(isBuyerAcceptance("Not for us\n\nyes to future advisory leads though")).toBe(false);
+  });
+  it("refuses an over-long first line (essay replies go to the owner instead)", () => {
+    expect(
+      isBuyerAcceptance(
+        "yes well possibly, although it depends on quite a few things we would want to discuss first about scope",
+      ),
+    ).toBe(false);
   });
 });
 

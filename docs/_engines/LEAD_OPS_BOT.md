@@ -18,14 +18,19 @@ claims auto-release exactly as before the bot existed.
    (existing `sendOffers`, 24h expiry). Gates applied automatically: enquirer
    suppression, signed DSA + active buyer, stored consent-wording check,
    never-if-raw-supplied.
-3. **Buyer claims** via the link. The claim is atomic and instant (race
-   decided, price fixed, siblings lost, nurture halted), then the bot asks:
-   `[Release details £X] [Credit]`. Your tap sends the full details. One nudge
-   after 1h if you have not tapped. If the bot cannot reach you, the release
-   goes out automatically (published terms say real time).
-4. **Buyer replies by email instead** (to the offer ping): the bot shows the
-   reply verbatim (truncated) with `[Claim & release for them] [Ignore]` per
-   open offer.
+3. **Buyer accepts by REPLYING YES** (owner decision 2026-08-19: no button, no
+   link in the ping; replies land on the inbound capture subdomain). A
+   yes-family first line (YES/y/yep/accept/interested, any casing, negations
+   refused, first line only so signatures cannot flip it) with exactly ONE
+   open offer claims it atomically on the spot: buyer gets a short "details on
+   their way" ack, and the bot asks you `[Release details £X] [Credit]`. Your
+   tap sends the full details. One nudge after 1h. If the bot cannot reach
+   you at claim time, the release goes out automatically.
+   A yes with SEVERAL open offers, or any other reply, surfaces in Telegram
+   with per-offer `[Claim & release for them]` buttons instead (a bare yes
+   cannot safely pick between leads).
+   The old `/api/leads/claim/[token]` route stays live for any in-flight
+   emails that still carry a link.
 5. **Offer expires unclaimed** (24h): bot notifies with `[Re-offer for 24h]`.
 6. **Raw batch, daily 08:00**: leads unverified past 24h are listed, split
    into "not in nurture" vs "mid-nurture" (selling a mid-nurture lead ends its

@@ -39,10 +39,27 @@ import { extractUkPhone } from "@/lib/leads/reply-extract";
 import { phoneMeetsFloor } from "@/lib/leads/field-floors";
 import { acknowledgeEmailReply, notifyOperatorOfReply } from "@/lib/leads/reply-ack";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { isRawSupplied } from "@/lib/leads/offer-send";
-import { notifyBuyerReply, notifySuppliedLeadResponded } from "@/lib/leads/bot-notify";
+import { isRawSupplied, isBuyerAcceptance } from "@/lib/leads/offer-send";
+import { claimOffer, offerFromAddress, offerReplyTo } from "@/lib/leads/offer-release";
+import { notifyBuyerReply, notifyClaimHeld, notifySuppliedLeadResponded } from "@/lib/leads/bot-notify";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
+
+/** Short plain ack to a buyer, best-effort (never blocks the webhook). */
+async function sendBuyerAck(to: string, subject: string, bodyText: string): Promise<void> {
+  try {
+    if (!process.env.RESEND_API_KEY) return;
+    await getResend().emails.send({
+      from: offerFromAddress(),
+      to,
+      replyTo: offerReplyTo(),
+      subject,
+      text: `${bodyText}\n\nAshfield Partner Network`,
+    });
+  } catch (err) {
+    console.error("[leads/inbound/email] buyer ack failed", err);
+  }
+}
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -94,10 +111,15 @@ async function resolveLeadByEmail(senderEmail: string): Promise<LeadRow | null> 
 // ── Buyer replies ─────────────────────────────────────────────────────────────
 
 /**
- * If the sender is an active lead buyer, surface the reply to the owner on
- * Telegram with per-offer [Claim & release] buttons (or the operator email
- * fallback) and report handled=true. Inactive buyers fall through to the
- * normal enquirer path.
+ * If the sender is an active lead buyer, handle the reply and report
+ * handled=true (inactive buyers fall through to the normal enquirer path).
+ *
+ * Reply-to-accept (owner decision 2026-08-19): a yes-family reply with
+ * EXACTLY ONE open offer claims it atomically on the spot; the owner then
+ * gets the usual [Release details] prompt and the buyer gets a short ack.
+ * A yes with several open offers cannot be trusted to pick the right lead,
+ * and any other reply is business text: both surface in Telegram with
+ * per-offer [Claim & release] buttons.
  */
 async function handleBuyerReply(senderEmail: string, body: string): Promise<boolean> {
   const buyerRes = await adminSelect<{ id: string; firm_name: string }>("lead_buyers", {
@@ -126,6 +148,29 @@ async function handleBuyerReply(senderEmail: string, body: string): Promise<bool
     if (res.ok) offers = res.data;
   } catch (err) {
     console.error("[leads/inbound/email] buyer offers load failed", err);
+  }
+
+  if (offers.length === 1 && isBuyerAcceptance(body)) {
+    const offer = offers[0];
+    const { outcome } = await claimOffer(offer.id);
+    if (outcome === "claimed") {
+      await notifyClaimHeld(
+        { id: offer.id, lead_id: offer.lead_id, price_gbp: offer.price_gbp },
+        buyer.firm_name,
+      ).catch(() => {});
+      await sendBuyerAck(
+        senderEmail,
+        "Lead accepted, details on their way",
+        `Thanks, the lead is yours. Full contact details will be with you shortly, and £${offer.price_gbp} is added to your monthly invoice under the agreed terms.`,
+      );
+    } else {
+      await sendBuyerAck(
+        senderEmail,
+        "That lead is no longer available",
+        "Thanks for the quick reply, but that lead is no longer available. You will receive the next matching lead automatically.",
+      );
+    }
+    return true;
   }
 
   const sent = await notifyBuyerReply(
