@@ -32,6 +32,18 @@ Same names as Property. Per site deployment:
 - Twilio: SMS/WhatsApp shared number policy undecided; email-only arming first.
 - Deploys are owner-approved per the standing gate; deploy commands in [[vercel_cli_deploy_workflow]] memory.
 
+## Arming checklist per site (2026-08-19 program; owner-gated, one site at a time)
+
+1. Deploy the site (clean worktree C:/dep at a pushed SHA, `python scripts/check_dependency_closure.py` first). Property must be deployed BEFORE any sibling (pool-intake bridge + shared infra).
+2. Live consent check: fetch the deployed enquiry page + privacy policy; the consent text must hit a `consentAllowsSharing` anchor ("will share your details with"). Record pass + timestamp below. Fail = do not arm.
+3. Env (site's Vercel project): `CRON_SECRET`, `LEAD_NURTURE_TOKEN_SECRET` (= Property's), `LEAD_INTERNAL_SECRET` only if Property sets one, `RESEND_API_KEY`, `LEAD_SERVICE_FROM_NAME/EMAIL/REPLY_TO` (site brand + verified domain), `TWILIO_ACCOUNT_SID`/`TWILIO_AUTH_TOKEN`/`TWILIO_SMS_FROM=+447723568557` (mirrored from Property; Twilio console unchanged, inbound stays on Property's webhook), then the switches: `LEAD_NURTURE_ENABLED=1`, `LEAD_NURTURE_EMAIL_ENABLED=1`, `LEAD_NURTURE_SMS_ENABLED=1`, `LEAD_RETENTION_PURGE_ENABLED`/`LEAD_RECONCILE_ENABLED` with the crons. `LEAD_RESEND_INBOUND_SECRET` + per-site inbound subdomain is owner-external DNS work and can arm later.
+4. Property side: append the site's source to `LEAD_OFFER_READY_GATED_SOURCES`, redeploy Property.
+5. Synthetic probe (source='test'): submit -> verify row -> simulated reply -> contactable -> handoff skipped-for-test -> no Telegram ping -> delete rows + dangling web_sessions.lead_id.
+6. Abbreviated live walk (real-shaped lead owner controls): submit -> lead_verification row + verify_pass event -> chase SMS from +447723568557 + email with correct branding -> reply YES -> contactable + Telegram ping (correct source, redacted teaser) -> bin. File the evidence table below.
+7. 7-day watch via existing surfaces only (vw_lead_contactability_funnel, Vercel cron logs, lead_nurture_sends); report failures proactively. Then the next site.
+
+Rollback per site, no deploy: unset `LEAD_NURTURE_ENABLED` (fully dormant); remove source from `LEAD_OFFER_READY_GATED_SOURCES` + Property redeploy to leave the pool.
+
 ## Status log
 
 - 2026-08-07: audit complete; offer READY-gating env added (`LEAD_OFFER_READY_GATED_SOURCES`, property always implicit); Dentists pilot port launched.

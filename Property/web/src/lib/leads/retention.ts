@@ -57,6 +57,11 @@ export const RETENTION_MONTHS_BY_SOURCE: Record<string, number> = {
   "construction-cis": 24,
   "contractors-ir35": 24,
   "digital-agency": 24,
+  // The digital-agency site writes leads.source = "agency", not its directory name
+  // (see digital-agency/web/src/app/api/leads/submit/route.ts). Without this alias the
+  // lookup missed and every agency lead fell to DEFAULT_MONTHS = 3, purging data the
+  // site's privacy notice promises to keep for 24 months. Keep both keys in step.
+  agency: 24,
   "divorce-finances": 24,
   "wills-probate": 24,
 };

@@ -10,9 +10,9 @@
  * site configs cannot be imported across apps from here. Reading the source
  * file text is deliberate.
  *
- * Scope: Property + the 6 in-scope Tier-2 sites (estate lead-stack port,
- * 2026-08-19). Add each Tier-3 site here as its consent wording lands (P5).
- * wills-probate and divorce-finances are out of scope (owner, 2026-08-19).
+ * Scope: Property + the 6 in-scope Tier-2 sites + the 8 Tier-3 sites (estate
+ * lead-stack port, 2026-08-19). wills-probate and divorce-finances are out of
+ * scope (owner, 2026-08-19).
  */
 
 import { describe, it, expect } from "vitest";
@@ -30,6 +30,14 @@ const IN_SCOPE_SITES = [
   "generalist",
   "contractors-ir35",
   "construction-cis",
+  "ecommerce",
+  "crypto",
+  "charities",
+  "care",
+  "hospitality",
+  "pharmacies",
+  "startups-tech",
+  "digital-agency",
 ];
 
 /** Extract the leadConsentText literal from a site's config source text. */

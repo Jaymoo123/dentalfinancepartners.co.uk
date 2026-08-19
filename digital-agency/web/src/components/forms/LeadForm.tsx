@@ -6,6 +6,7 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitAffLead } from "@/lib/leads/submit-client";
+import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
@@ -156,8 +157,18 @@ export function LeadForm({
     setCallGoal("");
 
     if (redirectOnSuccess) {
+      // Booking-token handoff: carry the signed token to /thank-you so the inline
+      // slot picker renders at the highest-intent moment, plus the page the user
+      // was reading so they can get back to it. No token (secret unset) falls
+      // back to the plain destination.
+      const dest = result.bookingToken
+        ? buildThankYouUrl(
+            result.bookingToken,
+            window.location.pathname + window.location.search + window.location.hash,
+          )
+        : successRedirect;
       setTimeout(() => {
-        router.push(successRedirect);
+        router.push(dest);
       }, 800);
     }
   }
