@@ -124,6 +124,7 @@ ${
     ? `<p style="margin:10px 0 0;color:#94a3b8;font-size:12px;">Data-sharing notice shown to the enquirer at the point of collection: &ldquo;${esc(lead.consent_text)}&rdquo;</p>`
     : ""
 }
+<p style="margin:10px 0 0;color:#94a3b8;font-size:12px;">This is an automated delivery; please do not reply to this email. Contact the enquirer directly using the details above.</p>
 </div>`;
 
   const text = [
@@ -161,6 +162,7 @@ ${
     lead.consent_text
       ? `Data-sharing notice shown at collection: "${lead.consent_text}"`
       : "",
+    "This is an automated delivery; please do not reply to this email. Contact the enquirer directly using the details above.",
   ]
     .filter(Boolean)
     .join("\n");
