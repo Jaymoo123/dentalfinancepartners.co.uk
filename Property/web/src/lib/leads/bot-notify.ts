@@ -192,18 +192,25 @@ export async function notifyBuyerReply(
   buyerFirm: string,
   body: string,
   offers: Array<{ id: string; lead_id: string; price_gbp: number; tier?: string }>,
+  subject?: string,
 ): Promise<boolean> {
   const quoted = (body || "").replace(/\s+/g, " ").trim().slice(0, BUYER_REPLY_QUOTE_LIMIT);
-  const head = `<b>${escapeHtml(buyerFirm)} replied by email:</b>\n<i>${escapeHtml(quoted || "(empty message)")}</i>`;
+  const subjectLine = subject?.trim()
+    ? `\nReplying to: <i>${escapeHtml(subject.trim().slice(0, 120))}</i>`
+    : "";
+  const head = `<b>${escapeHtml(buyerFirm)} replied by email:</b>\n<i>${escapeHtml(quoted || "(empty message)")}</i>${subjectLine}`;
   if (offers.length === 0) {
     return sendTelegram(`${head}\n\nNo open offers for this firm. Reply from your inbox if it needs an answer.`);
   }
-  const buttons: InlineKeyboard = offers.map((o) => [
-    {
-      text: `Claim & release ${leadRef(o.lead_id)} · £${o.price_gbp}${o.tier ? ` (${tierLabel(o.tier) || o.tier})` : ""}`,
-      callback_data: `br:${o.id}`,
-    },
-  ]);
+  const buttons: InlineKeyboard = [];
+  for (const o of offers) {
+    buttons.push([
+      {
+        text: `Claim & release ${await leadLabel(o.lead_id)} · £${o.price_gbp}${o.tier ? ` (${tierLabel(o.tier) || o.tier})` : ""}`,
+        callback_data: `br:${o.id}`,
+      },
+    ]);
+  }
   buttons.push([{ text: "Ignore", callback_data: `ign:${offers[0].id}` }]);
   return sendTelegram(
     `${head}\n\nOpen offer${offers.length > 1 ? "s" : ""} for this firm below. Claiming releases full details immediately.`,

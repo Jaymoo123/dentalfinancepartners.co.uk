@@ -111,8 +111,12 @@ function buyerOfferEmail(
   teaser: TeaserJson,
   priceGbp: number,
   _expiresHours: number,
+  leadRef?: string,
 ): { subject: string; html: string; text: string } {
-  const subject = `New ${teaser.site || "specialist"} enquiry available, ${tierLabel(teaser.tier)} tier, £${priceGbp}`;
+  // The [L-xxxxxxxx] ref in the subject is load-bearing: a firm's reply keeps
+  // it in "Re: ...", which is how a YES is matched to the exact lead when the
+  // firm has several offers open.
+  const subject = `New ${teaser.site || "specialist"} enquiry available, ${tierLabel(teaser.tier)} tier, £${priceGbp}${leadRef ? ` [${leadRef}]` : ""}`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"></head>
 <body style="margin:0;padding:0;background:#f1f5f9;font-family:${FONT};">
@@ -163,6 +167,12 @@ export function isBuyerAcceptance(body: string): boolean {
     return false;
   }
   return /(^|\W)(y|ya|yes|yep|yeah|yeh|accept|accepted|interested)(\W|$)/.test(line);
+}
+
+/** Pull the [L-xxxxxxxx] lead ref out of a reply subject ("Re: ... [L-12ab34cd]"). */
+export function parseLeadRefFromSubject(subject: string): string | null {
+  const m = /\[L-([0-9a-f]{8})\]/i.exec(subject || "");
+  return m ? m[1].toLowerCase() : null;
 }
 
 /** "yes exclusive" / "EXCLUSIVE please" on the first line asks for the lock. */
@@ -284,7 +294,7 @@ export async function sendOffers(
     );
     if (!res.ok || res.data.length === 0) continue;
 
-    const email = buyerOfferEmail(buyer, teaser, price, OFFER_EXPIRY_HOURS);
+    const email = buyerOfferEmail(buyer, teaser, price, OFFER_EXPIRY_HOURS, `L-${leadId.slice(0, 8)}`);
     try {
       const { error } = await getResend().emails.send({
         from: offerFromAddress(),
@@ -370,7 +380,13 @@ export async function reofferExpired(offerId: string): Promise<ReofferResult> {
     return "blocked";
   }
 
-  const email = buyerOfferEmail(buyer, offer.teaser, offer.price_gbp, OFFER_EXPIRY_HOURS);
+  const email = buyerOfferEmail(
+    buyer,
+    offer.teaser,
+    offer.price_gbp,
+    OFFER_EXPIRY_HOURS,
+    `L-${offer.lead_id.slice(0, 8)}`,
+  );
   try {
     const { error } = await getResend().emails.send({
       from: offerFromAddress(),

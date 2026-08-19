@@ -39,7 +39,12 @@ import { extractUkPhone } from "@/lib/leads/reply-extract";
 import { phoneMeetsFloor } from "@/lib/leads/field-floors";
 import { acknowledgeEmailReply, notifyOperatorOfReply } from "@/lib/leads/reply-ack";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { isRawSupplied, isBuyerAcceptance, isExclusiveRequest } from "@/lib/leads/offer-send";
+import {
+  isRawSupplied,
+  isBuyerAcceptance,
+  isExclusiveRequest,
+  parseLeadRefFromSubject,
+} from "@/lib/leads/offer-send";
 import { claimOffer, offerFromAddress, offerReplyTo } from "@/lib/leads/offer-release";
 import { notifyBuyerReply, notifyClaimHeld, notifySuppliedLeadResponded } from "@/lib/leads/bot-notify";
 import { getResend, getFromAddress } from "@/lib/resend";
@@ -121,7 +126,7 @@ async function resolveLeadByEmail(senderEmail: string): Promise<LeadRow | null> 
  * and any other reply is business text: both surface in Telegram with
  * per-offer [Claim & release] buttons.
  */
-async function handleBuyerReply(senderEmail: string, body: string): Promise<boolean> {
+async function handleBuyerReply(senderEmail: string, body: string, subject: string): Promise<boolean> {
   const buyerRes = await adminSelect<{ id: string; firm_name: string }>("lead_buyers", {
     select: "id,firm_name",
     email: `eq.${senderEmail}`,
@@ -150,8 +155,17 @@ async function handleBuyerReply(senderEmail: string, body: string): Promise<bool
     console.error("[leads/inbound/email] buyer offers load failed", err);
   }
 
-  if (offers.length === 1 && isBuyerAcceptance(body)) {
-    const offer = offers[0];
+  // The ping subject carries [L-xxxxxxxx]; a reply's "Re: ..." keeps it, so a
+  // YES resolves to the exact lead even with several offers open. Fallback:
+  // a bare YES with exactly one open offer is still unambiguous.
+  const refPrefix = parseLeadRefFromSubject(subject);
+  const refMatch = refPrefix
+    ? offers.find((o) => o.lead_id.toLowerCase().startsWith(refPrefix))
+    : undefined;
+  const target = refMatch ?? (offers.length === 1 ? offers[0] : undefined);
+
+  if (target && isBuyerAcceptance(body)) {
+    const offer = target;
     // "yes exclusive" (any casing) on a wholly unclaimed lead buys the lock
     // at the published multiplier; the race decides (standard terms).
     const wantsExclusive = isExclusiveRequest(body);
@@ -198,6 +212,7 @@ async function handleBuyerReply(senderEmail: string, body: string): Promise<bool
       price_gbp: o.price_gbp,
       tier: o.teaser?.tier,
     })),
+    subject,
   );
   if (!sent) {
     // Telegram down: the reply must still reach a human. Plain operator email.
@@ -276,7 +291,7 @@ export async function POST(req: NextRequest) {
   // nurture promotion). Checked before lead resolution because a buyer contact
   // may once have submitted a form and matched a lead row.
   try {
-    const handled = await handleBuyerReply(senderEmail, strippedBody);
+    const handled = await handleBuyerReply(senderEmail, strippedBody, subject);
     if (handled) return ok200();
   } catch (err) {
     console.error("[leads/inbound/email] buyer branch failed", err);

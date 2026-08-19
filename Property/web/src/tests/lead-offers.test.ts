@@ -191,7 +191,7 @@ vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
 
 import { offerQualifies, tierPrice, tierAtLeast, matchingBuyers } from "@/lib/leads/offer-config";
 import { scrubSituation, buildTeaser, redactMessage } from "@/lib/leads/offer-teaser";
-import { sendOffers, isBuyerAcceptance } from "@/lib/leads/offer-send";
+import { sendOffers, isBuyerAcceptance, parseLeadRefFromSubject } from "@/lib/leads/offer-send";
 import { claimOffer } from "@/lib/leads/offer-release";
 import { GET as claimGet, POST as claimPost } from "@/app/api/leads/claim/[token]/route";
 
@@ -545,6 +545,20 @@ describe("sendOffers", () => {
     const r2 = await sendOffers("lead-1", "dentists", teaser);
     expect(r2.matched).toBe(0);
     expect(db.lead_offers).toHaveLength(0);
+  });
+});
+
+// ── subject lead-ref parsing ─────────────────────────────────────────────────
+
+describe("parseLeadRefFromSubject", () => {
+  it("pulls the ref out of a reply subject, any casing/prefix", () => {
+    expect(parseLeadRefFromSubject("RE: New Property enquiry available, Advisory tier, £85 [L-12ebf7a6]")).toBe("12ebf7a6");
+    expect(parseLeadRefFromSubject("Fwd: re: something [l-ABCDEF01]")).toBe("abcdef01");
+  });
+  it("returns null when absent or malformed", () => {
+    expect(parseLeadRefFromSubject("RE: New Property enquiry available, Essential tier, £15")).toBeNull();
+    expect(parseLeadRefFromSubject("[L-123]")).toBeNull();
+    expect(parseLeadRefFromSubject("")).toBeNull();
   });
 });
 
