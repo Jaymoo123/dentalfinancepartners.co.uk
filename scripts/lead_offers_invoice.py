@@ -96,7 +96,15 @@ def main():
     if not offers:
         print(f"\nNo billable offers in {month} after exclusions.")
         return
-    buyers = {b["id"]: b for b in api(url, key, "lead_buyers?select=id,ref,firm_name&limit=500")}
+    buyers = {b["id"]: b for b in api(url, key, "lead_buyers?select=id,ref,firm_name,is_test&limit=500")}
+    # Test buyers (owner's own inbox rows) are never billable.
+    test_rows = [o for o in offers if buyers.get(o["buyer_id"], {}).get("is_test")]
+    if test_rows:
+        print(f"(skipping {len(test_rows)} row(s) for test buyers - not billable)")
+        offers = [o for o in offers if o not in test_rows]
+    if not offers:
+        print(f"\nNo billable offers in {month} after exclusions.")
+        return
     lead_ids = ",".join(o["lead_id"] for o in offers)
     leads = {l["id"]: l for l in api(url, key,
              f"leads?select=id,created_at,source&id=in.({lead_ids})&limit=2000")}

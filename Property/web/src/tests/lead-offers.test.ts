@@ -63,6 +63,52 @@ function matches(row: Row, params: Record<string, string>): boolean {
 
 let idCounter = 0;
 
+// In-memory simulation of the claim_lead_offer() SQL function (migration
+// 20260819000002): shared cap, exclusive lock, test buyers exempt from the
+// allocation count. Mirrors the plpgsql exactly; keep in sync.
+function simulateClaimRpc(args: {
+  p_offer_id: string;
+  p_cap: number;
+  p_exclusive: boolean;
+  p_exclusive_multiplier: number;
+}): Row[] {
+  const offer = db.lead_offers.find((o) => o.id === args.p_offer_id);
+  if (!offer) return [{ outcome: "error", charged_gbp: 0 }];
+  const price = offer.price_gbp as number;
+  if (offer.status === "claimed") return [{ outcome: "not-offered", charged_gbp: price }];
+  if (offer.status === "lost") return [{ outcome: "lost", charged_gbp: price }];
+  if (offer.status !== "offered" || String(offer.expires_at) < new Date().toISOString()) {
+    return [{ outcome: "expired", charged_gbp: price }];
+  }
+  const siblings = db.lead_offers.filter((o) => o.lead_id === offer.lead_id);
+  const claimed = siblings.filter((o) => o.status === "claimed");
+  if (claimed.some((o) => o.exclusive)) return [{ outcome: "lost", charged_gbp: price }];
+  const isTestBuyer = (bid: unknown) =>
+    Boolean(db.lead_buyers.find((b) => b.id === bid)?.is_test);
+  const realClaims = claimed.filter((o) => !isTestBuyer(o.buyer_id)).length;
+  if (args.p_exclusive) {
+    if (realClaims > 0) return [{ outcome: "exclusive-unavailable", charged_gbp: price }];
+    const charged = price * args.p_exclusive_multiplier;
+    Object.assign(offer, {
+      status: "claimed",
+      claimed_at: new Date().toISOString(),
+      exclusive: true,
+      price_gbp: charged,
+    });
+    siblings.filter((o) => o.status === "offered").forEach((o) => (o.status = "lost"));
+    return [{ outcome: "claimed", charged_gbp: charged }];
+  }
+  if (realClaims >= args.p_cap) return [{ outcome: "allocated", charged_gbp: price }];
+  Object.assign(offer, { status: "claimed", claimed_at: new Date().toISOString() });
+  const after = siblings.filter(
+    (o) => o.status === "claimed" && !isTestBuyer(o.buyer_id),
+  ).length;
+  if (after >= args.p_cap) {
+    siblings.filter((o) => o.status === "offered").forEach((o) => (o.status = "lost"));
+  }
+  return [{ outcome: "claimed", charged_gbp: price }];
+}
+
 vi.mock("@/lib/supabase/admin", () => ({
   adminConfigured: () => true,
   adminSelect: vi.fn((table: string, params: Record<string, string>) => {
@@ -71,6 +117,13 @@ vi.mock("@/lib/supabase/admin", () => ({
   }),
   adminInsert: vi.fn(
     (table: string, rows: Row | Row[], opts?: { onConflict?: string; ignoreDuplicates?: boolean }) => {
+      if (table === "rpc/claim_lead_offer") {
+        return Promise.resolve({
+          ok: true,
+          status: 200,
+          data: simulateClaimRpc(rows as never),
+        });
+      }
       const tableData = db[table as keyof typeof db] as Row[];
       const list = Array.isArray(rows) ? rows : [rows];
       const inserted: Row[] = [];
@@ -136,6 +189,7 @@ vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
 import { offerQualifies, tierPrice, tierAtLeast, matchingBuyers } from "@/lib/leads/offer-config";
 import { scrubSituation, buildTeaser, redactMessage } from "@/lib/leads/offer-teaser";
 import { sendOffers, isBuyerAcceptance } from "@/lib/leads/offer-send";
+import { claimOffer } from "@/lib/leads/offer-release";
 import { GET as claimGet, POST as claimPost } from "@/app/api/leads/claim/[token]/route";
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -544,41 +598,82 @@ describe("claim route", () => {
     expect(sentEmails).toHaveLength(0);
   });
 
-  it("POST claims, releases full details, halts nurture, marks siblings lost", async () => {
+  it("POST claims, releases full details, halts nurture; sibling stays claimable (shared model)", async () => {
     seedLeadAndBuyer();
     db.lead_nurture_state.push({ lead_id: "lead-1", sequence: "contactability", status: "active" });
     const win = seedOffer({ buyer_id: "buyer-1" });
-    const lose = seedOffer({ buyer_id: "buyer-2", token: "ffffeeeeddddcccc99" });
+    const sibling = seedOffer({ buyer_id: "buyer-2", token: "ffffeeeeddddcccc99" });
 
     const res = await claimPost(makeReq(), ctxFor(win.token as string));
     const html = await res.text();
     expect(html).toContain("it is yours");
     expect(win.status).toBe("claimed");
-    expect(lose.status).toBe("lost");
+    // Claim-race model: up to CLAIM_SLOTS_PER_LEAD firms share; the sibling
+    // offer stays open, it does not flip to lost on the first claim.
+    expect(sibling.status).toBe("offered");
     expect(db.lead_nurture_state[0].status).toBe("stopped");
     expect(contactEvents).toEqual([{ leadId: "lead-1", type: "handed_off" }]);
     expect(db.leads[0].status).toBe("forwarded");
 
-    // Release email to the winner carries full PII; owner notified separately.
+    // Release email carries full PII but no Source page row; billing line present.
     const release = sentEmails.find((e) => e.to === "winner@buyers.test");
     expect(release?.html).toContain("jane@lead.test");
     expect(release?.html).toContain("Jane Doe");
+    expect(release?.html).not.toContain("Source page");
+    expect(release?.html).toContain("added to your monthly invoice");
     expect(sentEmails.some((e) => e.subject.startsWith("Lead claimed by Winner LLP"))).toBe(true);
     expect(win.released_at).toBeTruthy();
   });
 
-  it("second claimant gets the taken page and no release", async () => {
+  it("second firm shares the lead at the same price; cap closes the rest", async () => {
     seedLeadAndBuyer();
-    const win = seedOffer({ buyer_id: "buyer-1" });
-    const lose = seedOffer({ buyer_id: "buyer-2", token: "ffffeeeeddddcccc98" });
-    await claimPost(makeReq(), ctxFor(win.token as string));
-    sentEmails.length = 0;
+    seedBuyer({ id: "buyer-3", email: "third@buyers.test" });
+    seedBuyer({ id: "buyer-4", email: "fourth@buyers.test" });
+    const o1 = seedOffer({ buyer_id: "buyer-1" });
+    const o2 = seedOffer({ buyer_id: "buyer-2", token: "ffffeeeeddddcccc98" });
+    const o3 = seedOffer({ buyer_id: "buyer-3", token: "ffffeeeeddddcccc97" });
+    const o4 = seedOffer({ buyer_id: "buyer-4", token: "ffffeeeeddddcccc96" });
 
-    const res = await claimPost(makeReq(), ctxFor(lose.token as string));
-    const html = await res.text();
-    expect(html).toContain("taken");
-    expect(lose.status).toBe("lost");
+    await claimPost(makeReq(), ctxFor(o1.token as string));
+    const res2 = await claimPost(makeReq(), ctxFor(o2.token as string));
+    expect(await res2.text()).toContain("it is yours");
+    expect(o2.status).toBe("claimed");
+    expect(o2.price_gbp).toBe(85); // same fixed price as the first claim
+
+    await claimPost(makeReq(), ctxFor(o3.token as string));
+    // Third real claim reaches the cap: the remaining offer closes.
+    expect(o3.status).toBe("claimed");
+    expect(o4.status).toBe("lost");
+
+    sentEmails.length = 0;
+    const res4 = await claimPost(makeReq(), ctxFor(o4.token as string));
+    expect(await res4.text()).toContain("taken");
     expect(sentEmails).toHaveLength(0);
+  });
+
+  it("exclusive claim locks the lead at the multiplier; unavailable once shared-claimed", async () => {
+    seedLeadAndBuyer();
+    const o1 = seedOffer({ buyer_id: "buyer-1" });
+    const o2 = seedOffer({ buyer_id: "buyer-2", token: "ffffeeeeddddcccc95" });
+
+    const excl = await claimOffer(o1.id as string, { exclusive: true });
+    expect(excl.outcome).toBe("claimed");
+    expect(excl.offer?.price_gbp).toBe(255); // 85 x 3
+    expect(o1.exclusive).toBe(true);
+    expect(o2.status).toBe("lost");
+  });
+
+  it("test-buyer claims never consume an allocation slot", async () => {
+    seedLeadAndBuyer();
+    seedBuyer({ id: "buyer-test", email: "owner@test.inbox", is_test: true });
+    const t = seedOffer({ buyer_id: "buyer-test", token: "ffffeeeeddddcccc94" });
+    const real = seedOffer({ buyer_id: "buyer-1", token: "ffffeeeeddddcccc93" });
+
+    await claimPost(makeReq(), ctxFor(t.token as string));
+    expect(t.status).toBe("claimed");
+    // A test claim does not block an exclusive lock for a real firm.
+    const excl = await claimOffer(real.id as string, { exclusive: true });
+    expect(excl.outcome).toBe("claimed");
   });
 
   it("expired offers cannot be claimed", async () => {

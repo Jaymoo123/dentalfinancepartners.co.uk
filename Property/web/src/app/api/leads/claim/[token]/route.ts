@@ -151,7 +151,9 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   // DSA/active re-check, atomic first-click-wins flip, siblings, nurture halt)
   // is shared with the bot's claim-on-behalf path in offer-release.ts.
   const { outcome } = await claimOffer(offer.id);
-  if (outcome === "lost") return takenPage();
+  if (outcome === "lost" || outcome === "allocated" || outcome === "exclusive-unavailable") {
+    return takenPage();
+  }
   if (outcome === "expired" || outcome === "not-offered" || outcome === "error") {
     return expiredPage();
   }

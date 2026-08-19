@@ -2,12 +2,11 @@
  * Telegram message builders + senders for the lead-ops bot. Transport is
  * lib/telegram.ts; this module owns the content rules:
  *
- *   NO LEAD PII IN ANY MESSAGE. No names, phone numbers, emails, postcodes or
- *   raw enquiry text. The teaser (already buyer-redacted, kill-switch tested)
- *   and the rubric intent_line are the only enquiry-derived content allowed.
- *   Buyer replies are quoted truncated. Leads are referenced by id prefix.
- *   Kept content-free this way, Telegram never becomes a data processor and
- *   the retention purge needs no new reach.
+ *   Lead content in a message is limited to: the enquirer's INITIALS (owner
+ *   decision 2026-08-19: readable without putting a name through a US chat
+ *   platform the privacy policies do not list), the buyer-redacted teaser,
+ *   and the rubric intent_line. NEVER full names, phone numbers, emails,
+ *   postcodes or raw enquiry text. Buyer replies are quoted truncated.
  *
  * Every sender returns a boolean and never throws: callers fall back to the
  * existing operator email paths when Telegram is down.
@@ -20,9 +19,38 @@ import { tierLabel, buildTeaser, type TeaserJson } from "@/lib/leads/offer-tease
 import { escapeHtml } from "@/lib/leads/notify-email";
 import type { GradeResult } from "@/lib/leads/case-tier";
 
-/** Short, non-identifying handle for a lead in bot copy. */
+/** Short id handle for a lead in bot copy (uniqueness when names collide). */
 export function leadRef(leadId: string): string {
   return `L-${leadId.slice(0, 8)}`;
+}
+
+/** "Jane Doe" -> "J.D." */
+export function initialsOf(fullName?: string | null): string {
+  return (fullName ?? "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 3)
+    .map((w) => `${w[0].toUpperCase()}.`)
+    .join("");
+}
+
+/**
+ * "J.D. (L-3848b527)" — initials for readability, id for uniqueness.
+ * Falls back to the bare ref on any read problem.
+ */
+export async function leadLabel(leadId: string): Promise<string> {
+  try {
+    const res = await adminSelect<{ full_name: string | null }>("leads", {
+      select: "full_name",
+      id: `eq.${leadId}`,
+      limit: "1",
+    });
+    const initials = initialsOf(res.ok ? res.data[0]?.full_name : "");
+    return initials ? `${initials} (${leadRef(leadId)})` : leadRef(leadId);
+  } catch {
+    return leadRef(leadId);
+  }
 }
 
 /** Tier picker row (shared with the webhook's [Change tier] re-render). */
@@ -68,6 +96,7 @@ export async function buildVerifiedMessage(
   const [leadRes, scoreRes] = await Promise.all([
     adminSelect<{
       id: string;
+      full_name: string | null;
       role: string | null;
       message: string | null;
       source: string | null;
@@ -76,7 +105,7 @@ export async function buildVerifiedMessage(
       extras: Record<string, unknown> | null;
       is_test: boolean | null;
     }>("leads", {
-      select: "id,role,message,source,submitted_at,created_at,extras,is_test",
+      select: "id,full_name,role,message,source,submitted_at,created_at,extras,is_test",
       id: `eq.${leadId}`,
       limit: "1",
     }),
@@ -102,9 +131,11 @@ export async function buildVerifiedMessage(
 
   const price = tierPrice(grade.tier);
   const aiDown = grade.source === "deterministic";
+  const initials = initialsOf(lead.full_name);
+  const label = escapeHtml(initials ? `${initials} (${leadRef(leadId)})` : leadRef(leadId));
   const header = aiDown
-    ? `<b>Lead verified: ${leadRef(leadId)}</b>\nAI grading unavailable. Pick the tier yourself (keyword guess: ${escapeHtml(tierLabel(grade.tier) || grade.tier)}).`
-    : `<b>Lead verified: ${leadRef(leadId)}</b>\nSuggested tier: <b>${escapeHtml(tierLabel(grade.tier) || grade.tier)}</b> £${price ?? "?"}${grade.caseType ? ` · ${escapeHtml(grade.caseType)}` : ""}${grade.intentLine ? `\nWhy: ${escapeHtml(grade.intentLine)}` : ""}`;
+    ? `<b>Lead verified: ${label}</b>\nAI grading unavailable. Pick the tier yourself (keyword guess: ${escapeHtml(tierLabel(grade.tier) || grade.tier)}).`
+    : `<b>Lead verified: ${label}</b>\nSuggested tier: <b>${escapeHtml(tierLabel(grade.tier) || grade.tier)}</b> £${price ?? "?"}${grade.caseType ? ` · ${escapeHtml(grade.caseType)}` : ""}${grade.intentLine ? `\nWhy: ${escapeHtml(grade.intentLine)}` : ""}`;
 
   const text = `${header}\n\n<pre>${escapeHtml(renderTeaserText(teaser, price))}</pre>`;
 
@@ -133,9 +164,10 @@ export async function notifyClaimHeld(
   buyerFirm: string,
   opts?: { nudge?: boolean },
 ): Promise<boolean> {
+  const label = escapeHtml(await leadLabel(offer.lead_id));
   const head = opts?.nudge
-    ? `<b>Still waiting on you:</b> ${escapeHtml(buyerFirm)} claimed ${leadRef(offer.lead_id)} over an hour ago and the details are NOT yet released.`
-    : `<b>${escapeHtml(buyerFirm)} claimed ${leadRef(offer.lead_id)}</b> for £${offer.price_gbp}.\nRelease the full contact details?`;
+    ? `<b>Still waiting on you:</b> ${escapeHtml(buyerFirm)} claimed ${label} over an hour ago and the details are NOT yet released.`
+    : `<b>${escapeHtml(buyerFirm)} claimed ${label}</b> for £${offer.price_gbp}.\nRelease the full contact details?`;
   return sendTelegram(head, [
     [
       { text: `Release details £${offer.price_gbp}`, callback_data: `rel:${offer.id}` },
@@ -176,7 +208,7 @@ export async function notifyExpiredOffer(offer: {
   price_gbp: number;
 }): Promise<boolean> {
   return sendTelegram(
-    `<b>Offer expired unclaimed:</b> ${leadRef(offer.lead_id)} (£${offer.price_gbp}).`,
+    `<b>Offer expired unclaimed:</b> ${escapeHtml(await leadLabel(offer.lead_id))} (£${offer.price_gbp}).`,
     [[{ text: "Re-offer for 24h", callback_data: `ro:${offer.id}` }]],
   );
 }
@@ -203,6 +235,6 @@ export async function notifyRawEligible(split: {
 
 export async function notifySuppliedLeadResponded(leadId: string): Promise<boolean> {
   return sendTelegram(
-    `<b>Heads-up:</b> ${leadRef(leadId)} was already sold in a raw batch and has now responded. It stays with the raw buyer; no tiered offer will be made and no automated reply was sent.`,
+    `<b>Heads-up:</b> ${escapeHtml(await leadLabel(leadId))} was already sold in a raw batch and has now responded. It stays with the raw buyer; no tiered offer will be made and no automated reply was sent.`,
   );
 }

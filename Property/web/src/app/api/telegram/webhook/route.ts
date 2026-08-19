@@ -32,7 +32,7 @@ import { reofferExpired, sendOffers } from "@/lib/leads/offer-send";
 import { buildTeaser, tierLabel } from "@/lib/leads/offer-teaser";
 import { offerTierFor, tierPrice } from "@/lib/leads/offer-config";
 import { setOwnerTier } from "@/lib/leads/case-tier";
-import { tierPickerKeyboard, verifiedKeyboard, leadRef } from "@/lib/leads/bot-notify";
+import { tierPickerKeyboard, verifiedKeyboard, leadLabel } from "@/lib/leads/bot-notify";
 import { eligibleRawLeads, supplyRawLeads, rawPriceGbp } from "@/lib/leads/raw-supply";
 import type { CaseTier } from "@/lib/ai";
 
@@ -163,7 +163,9 @@ async function handleClaimForBuyer(offerId: string): Promise<Toast> {
   const { outcome, offer } = await claimOffer(offerId);
   if (outcome !== "claimed") {
     const msg: Record<string, string> = {
-      lost: "That lead was already claimed.",
+      lost: "That lead is closed (exclusive lock or withdrawn).",
+      allocated: "That lead has reached its allocation cap.",
+      "exclusive-unavailable": "Exclusive is no longer available on that lead.",
       expired: "That offer has expired. Re-offer it from the expiry alert.",
       "not-offered": "That offer is no longer open.",
       suppressed: "The enquirer has objected; the offer was withdrawn.",
@@ -225,7 +227,7 @@ async function handleRawPick(): Promise<string> {
     const ageHours = Math.round((Date.now() - Date.parse(lead.created_at)) / 3600_000);
     const nurturing = split.nurturing.some((l) => l.id === lead.id);
     const okSend = await sendTelegram(
-      `${leadRef(lead.id)} · ${lead.source} · ${ageHours}h old${nurturing ? " · mid-nurture" : ""}`,
+      `${await leadLabel(lead.id)} · ${lead.source} · ${ageHours}h old${nurturing ? " · mid-nurture" : ""}`,
       [[{ text: `Supply £${price}`, callback_data: `rs:${lead.id}` }]],
     );
     if (okSend) sent++;
@@ -293,7 +295,17 @@ async function monthText(arg?: string): Promise<string> {
     and: `(claimed_at.gte.${month}-01,claimed_at.lt.${next})`,
     limit: "2000",
   });
-  const offers = offersRes.ok ? offersRes.data : [];
+  let offers = offersRes.ok ? offersRes.data : [];
+
+  // Test buyers (owner's own inbox rows) never appear in a money view.
+  const testBuyers = await adminSelect<{ id: string }>("lead_buyers", {
+    select: "id",
+    is_test: "eq.true",
+  });
+  if (testBuyers.ok && testBuyers.data.length > 0) {
+    const testIds = new Set(testBuyers.data.map((b) => b.id));
+    offers = offers.filter((o) => !testIds.has(o.buyer_id));
+  }
 
   const supplyRes = await adminSelect<{ price_gbp: number }>("lead_supply", {
     select: "price_gbp",
@@ -369,7 +381,7 @@ export async function POST(req: NextRequest) {
           await answerCallbackQuery(cb.id, "Sending to the pool...");
           const result = await handleSendToPool(id);
           if (result.stripButtons && messageId) await editMessageReplyMarkup(messageId, []);
-          await sendTelegram(`${leadRef(id)}: ${result.toast}`);
+          await sendTelegram(`${await leadLabel(id)}: ${result.toast}`);
           break;
         }
         case "tp": {

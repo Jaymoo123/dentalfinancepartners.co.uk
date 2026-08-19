@@ -115,6 +115,9 @@ MIGRATIONS = [
     # Telegram lead-ops bot: lead_supply raw ledger, lead_offers.nudged_at,
     # bot kill switch on lead_nurture_control, scored_by provenance widening.
     "20260819000001_telegram_lead_ops.sql",
+    # Claim-race port: shared cap 3, exclusive 3x lock, test buyers exempt
+    # from allocation; atomic claim_lead_offer() replaces the one-claim index.
+    "20260819000002_claim_race.sql",
 ]
 
 

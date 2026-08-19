@@ -22,15 +22,24 @@ claims auto-release exactly as before the bot existed.
    link in the ping; replies land on the inbound capture subdomain). A
    yes-family first line (YES/y/yep/accept/interested, any casing, negations
    refused, first line only so signatures cannot flip it) with exactly ONE
-   open offer claims it atomically on the spot: buyer gets a short "details on
-   their way" ack, and the bot asks you `[Release details £X] [Credit]`. Your
-   tap sends the full details. One nudge after 1h. If the bot cannot reach
-   you at claim time, the release goes out automatically.
-   A yes with SEVERAL open offers, or any other reply, surfaces in Telegram
-   with per-offer `[Claim & release for them]` buttons instead (a bare yes
-   cannot safely pick between leads).
+   open offer claims it atomically on the spot, and the bot asks you
+   `[Release details £X] [Credit]`. Your tap sends the full details. One
+   nudge after 1h. No winner ack email (the release email is the
+   confirmation); losers/latecomers get a one-line "no longer available" or
+   "fully allocated" note. A yes with SEVERAL open offers, or any other
+   reply, surfaces in Telegram with per-offer `[Claim & release for them]`
+   buttons instead (a bare yes cannot safely pick between leads).
    The old `/api/leads/claim/[token]` route stays live for any in-flight
    emails that still carry a link.
+4. **Claim-race model, LIVE since 2026-08-19** (`claim_lead_offer()` SQL
+   function, migration 20260819000002, atomic per lead): up to
+   `CLAIM_SLOTS_PER_LEAD` (3) firms share a lead at the SAME fixed price;
+   the 3rd claim closes the remaining offers; firm 4 gets "fully allocated".
+   "yes exclusive" in the reply buys the lock at 3x, only while the lead is
+   wholly unclaimed; the race decides, and an exclusive lock closes the lead
+   to everyone. **Test buyers (`lead_buyers.is_test`) never consume a slot,
+   never block an exclusive, and never appear in /month or the invoice.**
+   Each claiming firm gets its own release tap and its own invoice line.
 5. **Offer expires unclaimed** (24h): bot notifies with `[Re-offer for 24h]`.
 6. **Raw batch, daily 08:00**: leads unverified past 24h are listed, split
    into "not in nurture" vs "mid-nurture" (selling a mid-nurture lead ends its
@@ -115,10 +124,11 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
 
 ## Design rules baked in (do not regress)
 
-- **No lead PII in any Telegram message** (names, numbers, emails, postcodes,
-  raw enquiry text). Teaser fields + rubric intent_line only; buyer replies
-  truncated; leads referenced as `L-xxxxxxxx`. This keeps Telegram out of the
-  processor list; the privacy notices do not name it.
+- **Lead content in Telegram is initials + redacted teaser only** (owner
+  decision 2026-08-19: leads shown as `J.D. (L-xxxxxxxx)`). Never full names,
+  numbers, emails, postcodes or raw enquiry text; buyer replies truncated.
+  This keeps Telegram out of the processor list; the privacy notices do not
+  name it.
 - Every button acts through a conditional DB transition; zero rows updated =
   stale tap = toast. Chat history holds no state.
 - Every bot send is fail-open with an email fallback; a Telegram outage can
@@ -128,9 +138,9 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
   and always wins.
 - The 24h raw window is an owner-accepted divergence from the published 7-day
   wording (decision 2026-08-19); documents deliberately NOT regenerated.
-- Live claim model is one-claim-exclusive (DB index enforced). The claim-race
-  3+3-lane model exists only in `lead_engine/` + `config/tiers.json`; port it
-  when buyer #2 signs.
+- The claim-race accounting-lane model is LIVE (see the loop above). Still not
+  ported: the adjacent lane and decay-cascade (no adjacent buyers exist);
+  revisit when one signs.
 
 ## Known limits (v1)
 

@@ -23,6 +23,7 @@
  */
 import { z } from "zod";
 import { generateJson, anthropicConfigured } from "@/lib/ai/anthropic";
+import { adminSelect } from "@/lib/supabase/admin";
 import { roleLabel, surfaceLabel } from "@/lib/leads/role-labels";
 import { offerTierFor } from "@/lib/leads/offer-config";
 import { CASE_TIERS, LEGACY_TIER_MAP, type OfferTier } from "@/lib/leads/tiers";
@@ -36,7 +37,10 @@ export type TeaserJson = {
   work_type: string;
   role: string;
   surface: string;
-  submitted_date: string; // day precision only
+  /** "YYYY-MM-DD HH:MM" UTC since 2026-08-19 (day-only on older teasers). */
+  submitted_date: string;
+  /** "Yes · Mon 6 Jul, afternoon" / "Yes" / "No" (absent on older teasers). */
+  callback_booked?: string;
   situation?: string;
   /** The enquiry in the enquirer's own words, identifiers removed. */
   redacted_message?: string;
@@ -152,6 +156,30 @@ async function generateSituation(lead: LeadLike): Promise<string> {
   return scrubSituation(result.situation);
 }
 
+/**
+ * "Yes · Mon 6 Jul, afternoon" when a callback slot is booked (the booked
+ * event's human label carries no PII), else "No". Best-effort: a failed read
+ * omits the field rather than mislabelling.
+ */
+async function callbackBooked(leadId?: string): Promise<string | undefined> {
+  if (!leadId) return undefined;
+  try {
+    const res = await adminSelect<{ meta: { start?: string } | null }>("lead_contact_events", {
+      select: "meta",
+      lead_id: `eq.${leadId}`,
+      event_type: "eq.booked",
+      order: "ts.desc",
+      limit: "1",
+    });
+    if (!res.ok) return undefined;
+    if (res.data.length === 0) return "No";
+    const start = res.data[0]?.meta?.start;
+    return typeof start === "string" && start ? `Yes · ${start}` : "Yes";
+  } catch {
+    return undefined;
+  }
+}
+
 export async function buildTeaser(lead: LeadLike, score: ScoreLike): Promise<TeaserJson> {
   const submitted = lead.submitted_at || lead.created_at || "";
   const fid = typeof lead.extras?.form_id === "string" ? lead.extras.form_id : "";
@@ -164,8 +192,11 @@ export async function buildTeaser(lead: LeadLike, score: ScoreLike): Promise<Tea
     work_type: score.work_type ?? "unknown",
     role: roleLabel(lead.role) || "",
     surface: (fid && surfaceLabel(fid)) || "",
-    submitted_date: submitted ? submitted.slice(0, 10) : "",
+    // Date + time (UTC): buyers judge freshness by the hour, not the day.
+    submitted_date: submitted ? submitted.slice(0, 16).replace("T", " ") : "",
   };
+  const booked = await callbackBooked(lead.id);
+  if (booked) teaser.callback_booked = booked;
   const redacted = redactMessage(lead.message);
   if (redacted) teaser.redacted_message = redacted;
   const situation = await generateSituation(lead);

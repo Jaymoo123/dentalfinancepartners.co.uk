@@ -39,7 +39,7 @@ import { extractUkPhone } from "@/lib/leads/reply-extract";
 import { phoneMeetsFloor } from "@/lib/leads/field-floors";
 import { acknowledgeEmailReply, notifyOperatorOfReply } from "@/lib/leads/reply-ack";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { isRawSupplied, isBuyerAcceptance } from "@/lib/leads/offer-send";
+import { isRawSupplied, isBuyerAcceptance, isExclusiveRequest } from "@/lib/leads/offer-send";
 import { claimOffer, offerFromAddress, offerReplyTo } from "@/lib/leads/offer-release";
 import { notifyBuyerReply, notifyClaimHeld, notifySuppliedLeadResponded } from "@/lib/leads/bot-notify";
 import { getResend, getFromAddress } from "@/lib/resend";
@@ -152,16 +152,32 @@ async function handleBuyerReply(senderEmail: string, body: string): Promise<bool
 
   if (offers.length === 1 && isBuyerAcceptance(body)) {
     const offer = offers[0];
-    const { outcome } = await claimOffer(offer.id);
-    if (outcome === "claimed") {
+    // "yes exclusive" (any casing) on a wholly unclaimed lead buys the lock
+    // at the published multiplier; the race decides (standard terms).
+    const wantsExclusive = isExclusiveRequest(body);
+    const result = await claimOffer(offer.id, { exclusive: wantsExclusive });
+    if (result.outcome === "claimed") {
+      // No winner ack (owner decision 2026-08-19, keep the thread light): the
+      // release email itself is the confirmation and follows within minutes.
       await notifyClaimHeld(
-        { id: offer.id, lead_id: offer.lead_id, price_gbp: offer.price_gbp },
+        {
+          id: offer.id,
+          lead_id: offer.lead_id,
+          price_gbp: result.offer?.price_gbp ?? offer.price_gbp,
+        },
         buyer.firm_name,
       ).catch(() => {});
+    } else if (result.outcome === "exclusive-unavailable") {
       await sendBuyerAck(
         senderEmail,
-        "Lead accepted, details on their way",
-        `Thanks, the lead is yours. Full contact details will be with you shortly, and £${offer.price_gbp} is added to your monthly invoice under the agreed terms.`,
+        "Exclusive no longer available on that lead",
+        "Another firm has already taken a shared slot, so the exclusive option has closed. Reply YES if you would like a shared slot at the published price.",
+      );
+    } else if (result.outcome === "allocated") {
+      await sendBuyerAck(
+        senderEmail,
+        "That lead is fully allocated",
+        "Thanks for the quick reply, but that lead has reached its allocation. You will receive the next matching lead automatically.",
       );
     } else {
       await sendBuyerAck(

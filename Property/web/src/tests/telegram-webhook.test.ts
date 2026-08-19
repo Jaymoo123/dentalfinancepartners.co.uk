@@ -89,8 +89,57 @@ const mockAdminSelect = vi.fn((table: string, params: Record<string, string>) =>
   return Promise.resolve({ ok: true, status: 200, data: tableData });
 });
 
+// Mirrors the claim_lead_offer() SQL function (migration 20260819000002):
+// shared cap, exclusive lock, test buyers exempt. Keep in sync with the
+// twin simulation in lead-offers.test.ts.
+function simulateClaimRpc(args: {
+  p_offer_id: string;
+  p_cap: number;
+  p_exclusive: boolean;
+  p_exclusive_multiplier: number;
+}): Row[] {
+  const offer = db.lead_offers.find((o) => o.id === args.p_offer_id);
+  if (!offer) return [{ outcome: "error", charged_gbp: 0 }];
+  const price = offer.price_gbp as number;
+  if (offer.status === "claimed") return [{ outcome: "not-offered", charged_gbp: price }];
+  if (offer.status === "lost") return [{ outcome: "lost", charged_gbp: price }];
+  if (offer.status !== "offered" || String(offer.expires_at) < new Date().toISOString()) {
+    return [{ outcome: "expired", charged_gbp: price }];
+  }
+  const siblings = db.lead_offers.filter((o) => o.lead_id === offer.lead_id);
+  const claimed = siblings.filter((o) => o.status === "claimed");
+  if (claimed.some((o) => o.exclusive)) return [{ outcome: "lost", charged_gbp: price }];
+  const isTestBuyer = (bid: unknown) =>
+    Boolean(db.lead_buyers.find((b) => b.id === bid)?.is_test);
+  const realClaims = claimed.filter((o) => !isTestBuyer(o.buyer_id)).length;
+  if (args.p_exclusive) {
+    if (realClaims > 0) return [{ outcome: "exclusive-unavailable", charged_gbp: price }];
+    const charged = price * args.p_exclusive_multiplier;
+    Object.assign(offer, {
+      status: "claimed",
+      claimed_at: new Date().toISOString(),
+      exclusive: true,
+      price_gbp: charged,
+    });
+    siblings.filter((o) => o.status === "offered").forEach((o) => (o.status = "lost"));
+    return [{ outcome: "claimed", charged_gbp: charged }];
+  }
+  if (realClaims >= args.p_cap) return [{ outcome: "allocated", charged_gbp: price }];
+  Object.assign(offer, { status: "claimed", claimed_at: new Date().toISOString() });
+  const after = siblings.filter(
+    (o) => o.status === "claimed" && !isTestBuyer(o.buyer_id),
+  ).length;
+  if (after >= args.p_cap) {
+    siblings.filter((o) => o.status === "offered").forEach((o) => (o.status = "lost"));
+  }
+  return [{ outcome: "claimed", charged_gbp: price }];
+}
+
 const mockAdminInsert = vi.fn(
   (table: string, rows: Row | Row[], opts?: { onConflict?: string; ignoreDuplicates?: boolean }) => {
+    if (table === "rpc/claim_lead_offer") {
+      return Promise.resolve({ ok: true, status: 200, data: simulateClaimRpc(rows as never) });
+    }
     const tableData = db[table as keyof typeof db] as Row[];
     const list = Array.isArray(rows) ? rows : [rows];
     const inserted: Row[] = [];

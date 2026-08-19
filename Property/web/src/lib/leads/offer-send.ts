@@ -45,6 +45,7 @@ function teaserRows(t: TeaserJson, priceGbp?: number | null): TeaserRow[] {
   if (t.role) rows.push({ label: "Enquirer", value: t.role });
   if (t.surface) rows.push({ label: "Came via", value: t.surface });
   if (t.submitted_date) rows.push({ label: "Submitted", value: t.submitted_date });
+  if (t.callback_booked) rows.push({ label: "Callback booked?", value: t.callback_booked });
   if (t.backlog) rows.push({ label: "Note", value: "Backlog lead (date above is accurate)" });
   return rows;
 }
@@ -99,20 +100,19 @@ export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): strin
 // ---------------------------------------------------------------------------
 
 /**
- * Reply-to-accept email (owner decision 2026-08-19): no button, no link. The
- * firm replies YES to accept; the inbound webhook detects it, claims
- * atomically and the owner releases. Buttons and in-email forms read as
- * phishing to a first firm and some clients strip them; a bare reply is the
- * concierge model the owner settled on 2026-08-12.
+ * Reply-to-accept email (owner decisions 2026-08-19): no button, no link, no
+ * greeting, no terms paragraph. The teaser plus one bold instruction and one
+ * ignore line; everything else lives in the release email and the signed
+ * agreement. The firm replies YES to accept; the inbound webhook detects it,
+ * claims atomically and the owner releases.
  */
 function buyerOfferEmail(
-  buyer: LeadBuyer,
+  _buyer: LeadBuyer,
   teaser: TeaserJson,
   priceGbp: number,
-  expiresHours: number,
+  _expiresHours: number,
 ): { subject: string; html: string; text: string } {
-  const subject = `New ${teaser.site || "specialist"} enquiry available, ${tierLabel(teaser.tier)} tier, £${priceGbp} exclusive`;
-  const greetingName = (buyer.contact_name || "").split(/\s+/)[0] || buyer.firm_name;
+  const subject = `New ${teaser.site || "specialist"} enquiry available, ${tierLabel(teaser.tier)} tier, £${priceGbp}`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"></head>
 <body style="margin:0;padding:0;background:#f1f5f9;font-family:${FONT};">
@@ -120,31 +120,28 @@ function buyerOfferEmail(
 <tr><td align="center" style="padding:24px 16px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;">
 <tr><td style="background:#0f172a;padding:22px 28px;">
-<p style="margin:0 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Lead available · exclusive</p>
+<p style="margin:0 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">Lead available</p>
 <h1 style="margin:0;color:#ffffff;font-size:19px;font-weight:700;line-height:1.3;">${escapeHtml(teaser.site || "Specialist")} enquiry · ${escapeHtml(tierLabel(teaser.tier))} tier</h1>
 </td></tr>
 <tr><td style="padding:24px 28px 28px;color:#334155;font-size:15px;line-height:1.6;">
-<p style="margin:0 0 16px;">Hi ${escapeHtml(greetingName)}, a new enquiry matching your subscription is available. Details below are anonymised.</p>
 ${renderTeaserHtml(teaser, priceGbp)}
 <p style="margin:22px 0 0;font-size:16px;font-weight:700;color:#0f172a;">Want this lead? Just reply YES to this email.</p>
-<p style="margin:8px 0 0;color:#64748b;font-size:13px;">Full contact details are sent to you on acceptance. First firm to reply gets the lead exclusively. This offer expires in ${expiresHours} hours. Accepting adds £${priceGbp} to your monthly invoice under the agreed terms (credit policy applies).</p>
+<p style="margin:8px 0 0;color:#64748b;font-size:13px;">If it's not for you, please ignore.</p>
 </td></tr>
 <tr><td style="padding:16px 28px 20px;border-top:1px solid #e2e8f0;">
-<p style="margin:0;color:#94a3b8;font-size:12px;">Ashfield Partner Network · you receive these because your firm has a signed data-sharing agreement with Ashfield Trading Ltd. Reply to pause or change your subscription.</p>
+<p style="margin:0;color:#94a3b8;font-size:12px;">Ashfield Partner Network · you receive these because your firm has a signed data-sharing agreement with Ashfield Trading Ltd.</p>
 </td></tr>
 </table>
 </td></tr>
 </table>
 </body></html>`;
   const text = [
-    `New ${teaser.site || "specialist"} enquiry available (${tierLabel(teaser.tier)} tier, £${priceGbp} exclusive)`,
+    `New ${teaser.site || "specialist"} enquiry available (${tierLabel(teaser.tier)} tier, £${priceGbp})`,
     "",
     renderTeaserText(teaser, priceGbp),
     "",
     "Want this lead? Just reply YES to this email.",
-    "",
-    `Full contact details are sent to you on acceptance. First firm to reply gets the lead exclusively. Expires in ${expiresHours} hours.`,
-    `Accepting adds £${priceGbp} to your monthly invoice under the agreed terms.`,
+    "If it's not for you, please ignore.",
   ].join("\n");
   return { subject, html, text };
 }
@@ -166,6 +163,16 @@ export function isBuyerAcceptance(body: string): boolean {
     return false;
   }
   return /(^|\W)(y|ya|yes|yep|yeah|yeh|accept|accepted|interested)(\W|$)/.test(line);
+}
+
+/** "yes exclusive" / "EXCLUSIVE please" on the first line asks for the lock. */
+export function isExclusiveRequest(body: string): boolean {
+  const firstLine = (body || "")
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .find((l) => l.length > 0);
+  if (!firstLine || firstLine.length > 80) return false;
+  return /\bexclusive\b/i.test(firstLine);
 }
 
 // ---------------------------------------------------------------------------

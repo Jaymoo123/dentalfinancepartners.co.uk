@@ -205,8 +205,10 @@ export async function supplyRawLeads(leadIds: string[]): Promise<SupplyResult> {
     `As agreed, this batch contains ${won.length} unverified enquir${won.length === 1 ? "y" : "ies"} ` +
     `supplied as a whole at £${price} per lead, invoiced monthly. Raw leads are sold as seen; the credit policy does not apply.`;
   const html = `<p style="font-family:sans-serif;font-size:14px;line-height:1.6;">${intro}</p><hr>` +
-    rows.map((r) => buildLeadHtml(r)).join("<hr>");
-  const text = [intro, "", ...rows.map((r) => buildLeadText(r))].join("\n\n----------------\n\n");
+    rows.map((r) => buildLeadHtml(r, { omitSourcePage: true })).join("<hr>");
+  const text = [intro, "", ...rows.map((r) => buildLeadText(r, { omitSourcePage: true }))].join(
+    "\n\n----------------\n\n",
+  );
 
   let emailSent = false;
   try {

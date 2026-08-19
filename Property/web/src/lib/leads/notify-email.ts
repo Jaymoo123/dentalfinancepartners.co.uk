@@ -124,7 +124,19 @@ export type LeadEmailOptions = {
   extraHtml?: string;
   /** Extra plain-text appended at the end. */
   extraText?: string;
+  /**
+   * Buyer-facing releases: where a lead came from is operator intelligence,
+   * not the pool's business (owner decision 2026-08-19). Operator emails keep
+   * the row.
+   */
+  omitSourcePage?: boolean;
 };
+
+function detailFields(opts: LeadEmailOptions): DetailField[] {
+  return opts.omitSourcePage
+    ? DETAIL_FIELDS.filter((f) => f.label !== "Source page")
+    : DETAIL_FIELDS;
+}
 
 export function buildLeadHtml(r: LeadRecord, opts: LeadEmailOptions = {}): string {
   const siteLabel = prettySource(r.source) || "Website";
@@ -132,7 +144,7 @@ export function buildLeadHtml(r: LeadRecord, opts: LeadEmailOptions = {}): strin
   const received = formatTimestamp(r.created_at);
   const message = (r.message ?? "").trim();
 
-  const detailRows = DETAIL_FIELDS
+  const detailRows = detailFields(opts)
     .filter((field) => {
       if (!field.optional) return true;
       const val = (field.get(r) ?? "").toString().trim();
@@ -234,7 +246,7 @@ export function buildLeadText(r: LeadRecord, opts: LeadEmailOptions = {}): strin
       "NURTURE IN PROGRESS. Do NOT forward this yet. Wait for the separate READY handoff email, which arrives only once the lead is verified and has actively responded.",
     );
   lines.push("", "LEAD DETAILS");
-  for (const field of DETAIL_FIELDS) {
+  for (const field of detailFields(opts)) {
     const raw = (field.get(r) ?? "").toString().trim();
     if (field.optional && !raw) continue;
     lines.push(`${field.label}: ${raw || "Not provided"}`);

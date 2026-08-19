@@ -12,7 +12,8 @@
  * the pre-extraction route, where nothing retried either).
  */
 import { getResend, getFromAddress } from "@/lib/resend";
-import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
+import { adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
+import { CLAIM_SLOTS_PER_LEAD, EXCLUSIVE_MULTIPLIER } from "@/lib/leads/tiers";
 import { buildLeadHtml, buildLeadText, prettySource, type LeadRecord } from "@/lib/leads/notify-email";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { isSuppressed } from "@/lib/leads/suppression";
@@ -61,18 +62,25 @@ export type ClaimOutcome =
   | "suppressed"
   | "expired"
   | "not-offered"
+  | "allocated"
+  | "exclusive-unavailable"
   | "buyer-ineligible"
   | "error";
 
 /**
- * The claim transition, shared by the buyer claim route and the bot's
- * [Claim & release for them] button so the two paths cannot drift:
- * status checks -> suppression re-check (withdraws siblings) -> buyer
- * DSA/active re-check -> atomic first-click-wins flip -> siblings lost ->
- * nurture halt + handed_off event. Release is NOT included; callers decide
- * between held and instant release.
+ * The claim transition, shared by the buyer claim route and the bot/inbound
+ * reply paths so they cannot drift. App side: suppression re-check (withdraws
+ * the remaining offers), buyer DSA/active re-check. DB side: the atomic
+ * claim_lead_offer() function (migration 20260819000002) serialises per lead
+ * and enforces the claim-race rules — shared cap CLAIM_SLOTS_PER_LEAD, test
+ * buyers exempt from the count, exclusive at EXCLUSIVE_MULTIPLIER x only
+ * while wholly unclaimed. Release is NOT included; callers decide between
+ * held and instant release.
  */
-export async function claimOffer(offerId: string): Promise<{
+export async function claimOffer(
+  offerId: string,
+  opts?: { exclusive?: boolean },
+): Promise<{
   outcome: ClaimOutcome;
   offer?: { id: string; lead_id: string; buyer_id: string; price_gbp: number };
 }> {
@@ -91,16 +99,10 @@ export async function claimOffer(offerId: string): Promise<{
   if (!res.ok || res.data.length === 0) return { outcome: "error" };
   const offer = res.data[0];
 
-  if (offer.status === "lost") return { outcome: "lost", offer };
-  if (offer.status === "claimed") return { outcome: "not-offered", offer };
-  const expTs = Date.parse(offer.expires_at);
-  if (offer.status !== "offered" || (Number.isFinite(expTs) && expTs < Date.now())) {
-    return { outcome: "expired", offer };
-  }
-
   // Re-checked at claim time, not only at offer time: an objection can land
   // between the alert and the claim, and DSA clause 3.5 says a Referral must
-  // not then be made. The offer is withdrawn rather than left claimable.
+  // not then be made. The remaining offers are withdrawn rather than left
+  // claimable (already-claimed firms keep what was lawfully released).
   if (await isSuppressed(offer.lead_id)) {
     await adminUpdate(
       "lead_offers",
@@ -122,27 +124,26 @@ export async function claimOffer(offerId: string): Promise<{
     return { outcome: "buyer-ineligible", offer };
   }
 
-  // Atomic first-click-wins: only an 'offered' row can flip to 'claimed', and
-  // the partial unique index on (lead_id) where status='claimed' makes a
-  // concurrent double-win impossible. Zero rows back = we lost the race.
-  const claim = await adminUpdate<{ id: string }>(
-    "lead_offers",
-    { id: `eq.${offer.id}`, status: "eq.offered" },
-    { status: "claimed", claimed_at: new Date().toISOString() },
+  // Atomic claim via PostgREST RPC (POST /rest/v1/rpc/claim_lead_offer).
+  const rpc = await adminInsert<{ outcome: string; charged_gbp: number }>(
+    "rpc/claim_lead_offer",
+    {
+      p_offer_id: offerId,
+      p_cap: CLAIM_SLOTS_PER_LEAD,
+      p_exclusive: Boolean(opts?.exclusive),
+      p_exclusive_multiplier: EXCLUSIVE_MULTIPLIER,
+    },
   );
-  if (!claim.ok || claim.data.length === 0) return { outcome: "lost", offer };
+  if (!rpc.ok || rpc.data.length === 0) return { outcome: "error", offer };
+  const outcome = rpc.data[0].outcome as ClaimOutcome;
+  const charged = rpc.data[0].charged_gbp;
+  if (outcome !== "claimed") return { outcome, offer };
 
-  // Siblings lose (best-effort; expiry sweep catches any stragglers).
-  await adminUpdate(
-    "lead_offers",
-    { lead_id: `eq.${offer.lead_id}`, status: "eq.offered" },
-    { status: "lost" },
-  ).catch(() => {});
-
-  // The buyer now owns the relationship: halt ALL nurture sequences so the
-  // lead is never chased by both. Deliberately NOT stopNurture(), which
-  // records an opted_out consent event; a sold lead has not withdrawn
-  // consent, it has been handed off. Failure never blocks release.
+  // A claiming firm now owns the relationship: halt ALL nurture sequences so
+  // the lead is never chased by both (idempotent across multiple claims).
+  // Deliberately NOT stopNurture(), which records an opted_out consent event;
+  // a sold lead has not withdrawn consent, it has been handed off. Failure
+  // never blocks release.
   try {
     await adminUpdate(
       "lead_nurture_state",
@@ -153,12 +154,13 @@ export async function claimOffer(offerId: string): Promise<{
       reason: "buyer_claim",
       offer_id: offer.id,
       buyer_id: offer.buyer_id,
+      exclusive: Boolean(opts?.exclusive),
     });
   } catch (err) {
     console.error("leads/offer-release: nurture halt failed", err);
   }
 
-  return { outcome: "claimed", offer };
+  return { outcome: "claimed", offer: { ...offer, price_gbp: charged } };
 }
 
 /**
@@ -194,14 +196,20 @@ export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResul
   let released = false;
   if (buyer && lead) {
     const subject = `Lead released: ${lead.full_name || "new enquiry"} (${prettySource(lead.source)})`;
+    // Terms moved out of the ping (owner decision 2026-08-19): the billing
+    // line rides the release email, where it is relevant.
+    const billing = `£${offer.price_gbp} is added to your monthly invoice under the agreed terms.`;
     try {
       const { error } = await getResend().emails.send({
         from: offerFromAddress(),
         to: buyer.email,
         replyTo: offerReplyTo(),
         subject,
-        html: buildLeadHtml(lead),
-        text: buildLeadText(lead),
+        html: buildLeadHtml(lead, {
+          omitSourcePage: true,
+          extraHtml: `<p style="margin:16px 0 0;color:#64748b;font-size:13px;">${billing}</p>`,
+        }),
+        text: buildLeadText(lead, { omitSourcePage: true, extraText: billing }),
       });
       if (error) {
         console.error("leads/offer-release: release send error", error);
