@@ -25,6 +25,8 @@ const db = {
   lead_contact_events:  [] as Row[],
   // Raw Bulk Supply ledger: read by the supplied-lead guard in sendOffers.
   lead_supply:          [] as Row[],
+  // Verification row: read by the release email builder.
+  lead_verification:    [] as Row[],
   reset() {
     this.leads               = [];
     this.lead_buyers         = [];
@@ -33,6 +35,7 @@ const db = {
     this.lead_nurture_state  = [];
     this.lead_contact_events = [];
     this.lead_supply         = [];
+    this.lead_verification   = [];
   },
 };
 

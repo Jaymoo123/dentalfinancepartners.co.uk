@@ -32,6 +32,7 @@ const db = {
   lead_contact_events: [] as Row[],
   lead_supply: [] as Row[],
   lead_nurture_control: [] as Row[],
+  lead_verification: [] as Row[],
   reset() {
     this.leads = [];
     this.lead_buyers = [];
@@ -41,6 +42,7 @@ const db = {
     this.lead_contact_events = [];
     this.lead_supply = [];
     this.lead_nurture_control = [];
+    this.lead_verification = [];
   },
 };
 
@@ -400,13 +402,13 @@ describe("callback: rel", () => {
 
     const res1 = await POST(cbReq(`rel:${OFFER_UUID}`));
     expect(res1.status).toBe(200);
-    expect(sentEmails.filter((e) => e.subject.startsWith("Lead released:"))).toHaveLength(1);
+    expect(sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"))).toHaveLength(1);
     const offerRow = db.lead_offers.find((o) => o.id === OFFER_UUID);
     expect(offerRow?.released_at).toBeTruthy();
 
     const res2 = await POST(cbReq(`rel:${OFFER_UUID}`));
     expect(res2.status).toBe(200);
-    expect(sentEmails.filter((e) => e.subject.startsWith("Lead released:"))).toHaveLength(1); // unchanged
+    expect(sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"))).toHaveLength(1); // unchanged
 
     const toasts = callsTo("answerCallbackQuery");
     expect(toasts[toasts.length - 1].body.text).toContain("Already released");
@@ -486,7 +488,7 @@ describe("callback: br (claim-for-them)", () => {
     expect(offerRow?.status).toBe("claimed");
     expect(offerRow?.released_at).toBeTruthy();
 
-    expect(sentEmails.filter((e) => e.subject.startsWith("Lead released:"))).toHaveLength(1);
+    expect(sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"))).toHaveLength(1);
 
     const nurtureRow = db.lead_nurture_state.find((r) => r.lead_id === LEAD_UUID);
     expect(nurtureRow?.status).toBe("stopped");

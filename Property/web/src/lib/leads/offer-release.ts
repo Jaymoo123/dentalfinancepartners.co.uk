@@ -14,7 +14,8 @@
 import { getResend, getFromAddress } from "@/lib/resend";
 import { adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
 import { CLAIM_SLOTS_PER_LEAD, EXCLUSIVE_MULTIPLIER } from "@/lib/leads/tiers";
-import { buildLeadHtml, buildLeadText, prettySource, type LeadRecord } from "@/lib/leads/notify-email";
+import { prettySource, type LeadRecord } from "@/lib/leads/notify-email";
+import { buildReleaseEmail } from "@/lib/leads/release-email";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { isSuppressed } from "@/lib/leads/suppression";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
@@ -195,21 +196,47 @@ export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResul
 
   let released = false;
   if (buyer && lead) {
-    const subject = `Lead released: ${lead.full_name || "new enquiry"} (${prettySource(lead.source)})`;
-    // Terms moved out of the ping (owner decision 2026-08-19): the billing
-    // line rides the release email, where it is relevant.
-    const billing = `£${offer.price_gbp} is added to your monthly invoice under the agreed terms.`;
+    // Buyer release = "New qualified enquiry" template (owner request
+    // 2026-08-19), constrained to DSA Annex A.2 fields. Supporting rows are
+    // best-effort: a failed lookup drops a row, never the release.
+    const [verRes, bookedRes, scoreRes] = await Promise.all([
+      adminSelect<{ phone_status: string | null; email_status: string | null; verified_at: string | null }>(
+        "lead_verification",
+        { select: "phone_status,email_status,verified_at", lead_id: `eq.${offer.lead_id}`, limit: "1" },
+      ),
+      adminSelect<{ meta: { start?: string } | null }>("lead_contact_events", {
+        select: "meta",
+        lead_id: `eq.${offer.lead_id}`,
+        event_type: "eq.booked",
+        order: "ts.desc",
+        limit: "1",
+      }),
+      adminSelect<{ case_tier: string | null; case_type: string | null; intent_line: string | null }>(
+        "lead_value_scores",
+        { select: "case_tier,case_type,intent_line", lead_id: `eq.${offer.lead_id}`, limit: "1" },
+      ),
+    ]);
+    const ver = verRes.ok ? verRes.data[0] : undefined;
+    const booked = bookedRes.ok ? bookedRes.data[0]?.meta?.start : undefined;
+    const score = scoreRes.ok ? scoreRes.data[0] : undefined;
+    const email = buildReleaseEmail(lead, {
+      phoneStatus: ver?.phone_status,
+      emailStatus: ver?.email_status,
+      verifiedAt: ver?.verified_at,
+      bookedSlot: typeof booked === "string" ? booked : null,
+      caseTier: score?.case_tier,
+      caseType: score?.case_type,
+      intentLine: score?.intent_line,
+      priceGbp: offer.price_gbp,
+    });
     try {
       const { error } = await getResend().emails.send({
         from: offerFromAddress(),
         to: buyer.email,
         replyTo: offerReplyTo(),
-        subject,
-        html: buildLeadHtml(lead, {
-          omitSourcePage: true,
-          extraHtml: `<p style="margin:16px 0 0;color:#64748b;font-size:13px;">${billing}</p>`,
-        }),
-        text: buildLeadText(lead, { omitSourcePage: true, extraText: billing }),
+        subject: email.subject,
+        html: email.html,
+        text: email.text,
       });
       if (error) {
         console.error("leads/offer-release: release send error", error);
