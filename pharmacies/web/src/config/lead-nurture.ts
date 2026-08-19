@@ -407,8 +407,8 @@ const STEPS: LeadNurtureStep[] = [
         `One thing pharmacy owners often overlook, ${c.firstName}`,
         "A short call usually surfaces something worth knowing about your situation.",
         [
-          "A quick pointer while your enquiry is with us. Most pharmacy owners we speak to find the difficulty is not the return itself, it is that the trading picture and the NHS contract picture never quite line up. Dispensing is done in one month, paid on account in another, and adjusted again after that.",
-          "Retrospective adjustments, the split between NHS and retail income for VAT, and the real cost of covering the rota all interact, and a generalist accountant will not always flag where they pull against each other. That is the sort of thing your free review would go through with you.",
+          "A quick pointer while your enquiry is with us. Most pharmacy owners we speak to find the hard part is squaring the trading picture against the NHS contract picture. The money for a month's dispensing rarely lands in that month, and adjustments follow later still.",
+          "Retrospective adjustments, how NHS and retail income are treated, and the real cost of covering the rota all interact. That is the sort of thing your free review would go through with you.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -611,7 +611,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "One pointer while you decide",
           "Something worth knowing while your enquiry sits with us.",
           [
-            "One quick pointer while your enquiry is with us. The job pharmacy owners most often put off is squaring what the NHS statements say against what the accounts show, because the adjustments land months after the dispensing they relate to. Left alone, that gap only gets harder to unpick.",
+            "One quick pointer while your enquiry is with us. The job pharmacy owners most often put off is squaring what the NHS statements say against what the accounts show, because the payments and the dispensing they relate to rarely line up in time. Left alone, that gap only gets harder to unpick.",
             `And if you would like a specialist to look at the whole picture for you, just reply with ${ask} and we will set up a free call.`,
           ],
           "detail_capture_day3",

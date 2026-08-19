@@ -40,7 +40,8 @@ Same names as Property. Per site deployment:
 4. Property side: append the site's source to `LEAD_OFFER_READY_GATED_SOURCES`, redeploy Property.
 5. Synthetic probe (source='test'): submit -> verify row -> simulated reply -> contactable -> handoff skipped-for-test -> no Telegram ping -> delete rows + dangling web_sessions.lead_id.
 6. Abbreviated live walk (real-shaped lead owner controls): submit -> lead_verification row + verify_pass event -> chase SMS from +447723568557 + email with correct branding -> reply YES -> contactable + Telegram ping (correct source, redacted teaser) -> bin. File the evidence table below.
-7. 7-day watch via existing surfaces only (vw_lead_contactability_funnel, Vercel cron logs, lead_nurture_sends); report failures proactively. Then the next site.
+7. If arming WhatsApp: eyeball the approved Meta template bodies for `lead_welcome` / `lead_reminder` first (they are referenced by name in every site's config but live only Meta-side; QA 2026-08-19 could not verify their content or opt-out line).
+8. 7-day watch via existing surfaces only (vw_lead_contactability_funnel, Vercel cron logs, lead_nurture_sends); report failures proactively. Then the next site.
 
 Rollback per site, no deploy: unset `LEAD_NURTURE_ENABLED` (fully dormant); remove source from `LEAD_OFFER_READY_GATED_SOURCES` + Property redeploy to leave the pool.
 

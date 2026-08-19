@@ -418,7 +418,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about your service.",
         [
           "A quick pointer while your enquiry is with us. Most operators we speak to already know staffing is the pressure point. What tends to surprise them is how much of the answer sits in the way hours are recorded rather than in the rates themselves.",
-          "Sleep-in shifts, travel time between visits, and how agency cover gets booked all change the picture, and they are the areas that come under the most scrutiny when your records are looked at. That is the sort of ground your free review covers.",
+          "Sleep-in shifts, travel time between visits, and how agency cover gets booked all change the picture, and they are areas that get looked at closely when your records are reviewed. That is the sort of ground your free review covers.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -487,7 +487,7 @@ const STEPS: LeadNurtureStep[] = [
         "Stopping the reminders now. The door stays open whenever you need it.",
         [
           "This is our last note. We will stop the reminders here. No hard feelings at all, the timing has to be right.",
-          "For what it is worth, the points where a review tends to earn its keep are when a payroll run stops adding up, when fee rates are being renegotiated, or when an inspection puts the paperwork under the spotlight. If one of those turns up, reply to this email whenever and we will pick it straight back up.",
+          "For what it is worth, the points where a review tends to earn its keep are when a payroll run stops adding up, when fee rates are being renegotiated, or when the payroll records get looked at closely. If one of those turns up, reply to this email whenever and we will pick it straight back up.",
           "All the best with the service.",
         ],
         "breakup_day11",
@@ -621,7 +621,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "One pointer while you decide",
           "Something worth knowing while your enquiry sits with us.",
           [
-            "One quick pointer while your enquiry is with us. The part operators most often underestimate is how much rests on the rota records themselves, because hours worked, sleep-ins and travel time all have to be evidenced rather than estimated, and reconstructing that after the fact takes far longer than keeping it as you go.",
+            "One quick pointer while your enquiry is with us. The part operators most often underestimate is how much rests on the rota records themselves, because hours worked, sleep-ins and travel time all come back to what the rota records show, and reconstructing that after the fact takes far longer than keeping it as you go.",
             `And if you would like a specialist to look at the whole picture with you, just reply with ${ask} and we will set up a free call.`,
           ],
           "detail_capture_day3",

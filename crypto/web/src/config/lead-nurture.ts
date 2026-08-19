@@ -91,7 +91,7 @@ function base(): string {
 
 const CALC_MAP: Record<string, { name: string; path: string }> = {
   cgt: {
-    name: "Crypto CGT Estimator 2026/27",
+    name: "Crypto CGT Estimator",
     path: "/calculators/crypto-cgt-estimator",
   },
   disclosure: {
@@ -413,8 +413,8 @@ const STEPS: LeadNurtureStep[] = [
         `One thing crypto holders often overlook, ${c.firstName}`,
         "A short call usually surfaces something worth knowing about your situation.",
         [
-          "A quick pointer while your enquiry is with us. Most people we speak to find that their position turns on records rather than rules, so the first question is usually a practical one: how complete is the history from the exchanges and wallets you have used.",
-          "Token-to-token swaps, moving holdings between platforms, staking rewards and DeFi activity are all treated differently, and a gap in the export from an old account is what most often turns a straightforward year into a slow one. That is the sort of thing your free review would go through with you.",
+          "A quick pointer while your enquiry is with us. Most holders we speak to find that the first hurdle is nearly always records, so the first question is usually a practical one: how complete is the history from the exchanges and wallets you have used.",
+          "Token-to-token swaps, transfers between platforms, staking rewards and DeFi activity all leave different trails, and a gap in the export from an old account is what most often turns a straightforward year into a slow one. That is the sort of thing your free review would go through with you.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -432,7 +432,7 @@ const STEPS: LeadNurtureStep[] = [
       const smsBody =
         c.engagementVariant === "hesitation"
           ? `Hi ${c.firstName}, the team at Crypto Tax Partners here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
-          : `Hi ${c.firstName}, the team at Crypto Tax Partners here. Most people we speak to came with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
+          : `Hi ${c.firstName}, the team at Crypto Tax Partners here. Most holders we speak to came with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
         whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),

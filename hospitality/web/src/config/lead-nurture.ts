@@ -427,7 +427,7 @@ const STEPS: LeadNurtureStep[] = [
       const smsBody =
         c.engagementVariant === "hesitation"
           ? `Hi ${c.firstName}, the team at Hospitality Tax here. The call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Reply YES and a specialist will call you when it suits. Reply STOP to opt out.`
-          : `Hi ${c.firstName}, the team at Hospitality Tax here. Most operators who get in touch have been meaning to sort this for a while and one short call clears it up. Reply YES and we will call between services. ${c.optOutText}`;
+          : `Hi ${c.firstName}, the team at Hospitality Tax here. Most operators who get in touch have been meaning to sort this for a while and one short call clears it up. Reply YES, tell us the gap that works, and we will pass it on. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
         whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),
@@ -588,7 +588,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           `Reply with ${ask} and we will sort the rest.`,
           [
             "A quick nudge on the message you sent us yesterday. We would still like to get a specialist on the phone to you this week.",
-            `All we need is ${ask}. Just reply to this email and we will sort the rest, including ringing at a time that misses your service. No cost and no obligation at any point.`,
+            `All we need is ${ask}. Just reply to this email and we will sort the rest and pass on the time that misses your service. No cost and no obligation at any point.`,
           ],
           "detail_capture_day1",
           {
@@ -614,7 +614,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           [
             "Your message is still with us, so here is what the call involves in case that makes it an easier yes.",
             "A specialist reads your enquiry first, then rings and asks how the business runs, how the team is paid and how tips are handled at the moment. There is nothing to send over and nothing to dig out beforehand.",
-            `If you would like us to set it up, just reply with ${ask} and we will book it around your service times.`,
+            `If you would like us to set it up, just reply with ${ask}, tell us the times that work and we will pass them on.`,
           ],
           "detail_capture_day3",
           {

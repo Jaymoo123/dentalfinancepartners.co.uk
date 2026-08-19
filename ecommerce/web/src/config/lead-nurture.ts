@@ -379,7 +379,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about your setup.",
         [
           "A quick pointer while your enquiry is with us. Most sellers we speak to, whether they run an Amazon store, a Shopify site or a spread of marketplaces, find that the figures in their platform reports and the figures their accounts are built on are not the same thing.",
-          "Marketplace VAT collected at the checkout, fees and refunds netted off before the payout lands, and stock sitting in more than one country all change how a seller account should be put together. That is exactly the kind of thing your free review would look at.",
+          "On some marketplaces VAT is handled at the checkout, and fees and refunds are netted off before the payout lands, and stock sitting in more than one country all change how a seller account should be put together. That is exactly the kind of thing your free review would look at.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -582,7 +582,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "One pointer while you decide",
           "Something worth knowing while your enquiry sits with us.",
           [
-            "One quick pointer while your enquiry is with us. The thing that most often catches out the sellers we speak to is the gap between the money that lands in the bank and what the platform reports actually say. Fees, refunds and marketplace VAT are all settled before the payout, so the two rarely match, and a specialist can tell you in one call whether yours line up.",
+            "One quick pointer while your enquiry is with us. The thing that most often catches out the sellers we speak to is the gap between the money that lands in the bank and what the platform reports actually say. Fees and refunds are netted off before the payout lands, and on some marketplaces VAT is handled at the checkout too, so the two rarely match. That gap is one of the first things a specialist would look at with you.",
             `And if you would like a specialist to look at the whole picture for you, just reply with ${ask} and we will set up a free call.`,
           ],
           "detail_capture_day3",

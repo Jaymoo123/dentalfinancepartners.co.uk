@@ -446,7 +446,7 @@ const STEPS: LeadNurtureStep[] = [
         "Stopping the reminders now. The door stays open whenever you need it.",
         [
           "This is our last note. We will stop the reminders here. No hard feelings at all, the timing has to be right.",
-          "For what it is worth, the moments trustees tend to get the most out of a call are when the year end is coming round, when an independent examination or audit is being arranged, or when a Gift Aid claim has been sitting unfiled longer than anyone meant. If one of those comes up, reply to this email whenever and we will pick it straight back up.",
+          "For what it is worth, the moments trustees tend to get the most out of a call are when the year end is coming round, when an independent examination or audit is being arranged, or when a Gift Aid claim has been sitting unclaimed longer than anyone meant. If one of those comes up, reply to this email whenever and we will pick it straight back up.",
           "All the best with the year ahead.",
         ],
         "breakup_day11",
@@ -580,7 +580,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "One pointer while you decide",
           "Something worth knowing while your enquiry sits with us.",
           [
-            "One quick note while your enquiry is with us. The thing trustees most often find out too late is which level of scrutiny this year's accounts need, independent examination or full audit, because it turns on where the year's income and assets land. Knowing early makes the year end a great deal calmer.",
+            "One quick note while your enquiry is with us. The thing trustees most often find out too late is which level of scrutiny this year's accounts need, independent examination or full audit. A specialist can look at your own figures and tell you where you sit. Knowing early makes the year end a great deal calmer.",
             `And if you would like a specialist to look at the whole picture with you, just reply with ${ask} and we will set up a free call.`,
           ],
           "detail_capture_day3",

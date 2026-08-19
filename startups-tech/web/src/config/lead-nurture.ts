@@ -313,7 +313,7 @@ const STEPS: LeadNurtureStep[] = [
         `We have your enquiry, ${c.firstName}`,
         "Reply with a day and time that suits and a specialist will call you.",
         [
-          "Thanks for getting in touch. Your enquiry has landed with us and a startup accountant is ready to pick it up.",
+          "Thanks for getting in touch. Your enquiry has landed with us and a startup finance specialist is ready to pick it up.",
           "The call is a free review of where your company is now, about 20 minutes, no charge and no obligation.",
           "Just reply to this email with a day and time that works. Even a one-line reply is enough, and we will fit around your diary.",
         ],
@@ -332,7 +332,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, the team at Founder Tax Partners here. Thanks for your enquiry. Reply YES and a startup accountant will call you. ${c.optOutText}`,
+        `Hi ${c.firstName}, the team at Founder Tax Partners here. Thanks for your enquiry. Reply YES and a startup finance specialist will call you. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.bookingUrl]),
     ],
@@ -418,7 +418,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so a text instead. Your free review is still open. Reply YES and a startup accountant will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so a text instead. Your free review is still open. Reply YES and a startup finance specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -535,7 +535,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and a startup accountant will call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and a startup finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even one word tells us we can reach you, and we will take it from there.",
           ],
           "detail_capture_t0",
