@@ -100,6 +100,23 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.12 CGT cluster dossier (FROZEN 2026-08-20, work order awaiting owner approval)
+
+Cluster 2 of the coverage programme, built through the same §9 pipeline as SDLT and
+committed `160e7325`: [`briefs/property/cgt/DOSSIER.md`](../../briefs/property/cgt/DOSSIER.md)
++ ledger.csv (3,869-query universe, balanced), cluster_map.csv, pages_inventory.csv
+(374 pages in scope), 8 research packs. Harvest spend $0.32 DataForSEO (uncapped,
+exhaustive under the family filter). Bing contributed 59% of the query universe.
+
+Work order (nothing written): 7 EXTEND packs ranked by peer-winnable volume
+(complete-guide 5,260 / letting relief 4,270 / 60-day reporting 3,330 / PRR 1,740 /
+rates-allowances 1,020 / inherited 1,000 / BTL step-by-step 620) + 3 gated items:
+the calculator REFRAME (27,910 pw, gated on the SDLT calculator read ~09-01),
+2 queued new pages (do-companies-pay-CGT, second-home sale), and the shares family
+(6,430 pw, taxd-only evidence, off-vertical, owner decision). Language spec measured:
+question-form headings ARE a gap on this cluster (winners 31.5% vs our 14.5%), unlike
+SDLT; you/your 39.7 vs 8.8; statute 0.0 vs 10.2 per 1k.
+
 ## 0.08 Discovery engine v2 (NEW 2026-08-15)
 
 Built + migration `20260815000001_discovery_engine_v2.sql` applied (`discovery_candidates`, `competitor_urls_seen`, `discovery_log`, + `paa`/`serp_features` columns on `competitor_serps`). Engine doc: [`docs/_engines/DISCOVERY_ENGINE_V2.md`](../_engines/DISCOVERY_ENGINE_V2.md).
