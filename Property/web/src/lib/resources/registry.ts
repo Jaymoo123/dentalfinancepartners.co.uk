@@ -202,6 +202,22 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     magnetBlurbTemplate:
       "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
+  // Guide-only topic: the written hub exists, there is no Excel model and there
+  // is unlikely ever to be one (leasehold premiums are a surveyor's valuation,
+  // not a spreadsheet). Linked directly from the /leasehold pillar.
+  leasehold: {
+    topic: "leasehold",
+    toolId: "leasehold-premium",
+    xlsx: null,
+    guide: {
+      slug: "leasehold",
+      label: "Leasehold resource hub",
+      enabled: true,
+    },
+    magnetTitle: "The leasehold resource hub",
+    magnetBlurbTemplate:
+      "Every statute, commencement instrument and HMRC reference a leaseholder needs, with what each one settles.",
+  },
   services: {
     topic: "services",
     toolId: "services-premium",

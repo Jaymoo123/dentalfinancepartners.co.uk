@@ -18,6 +18,7 @@ import { buyToLetRentalStressTestCalculator } from "./tools/buy-to-let-rental-st
 import { commercialMortgageCalculator } from "./tools/commercial-mortgage-calculator";
 import { bridgingLoanCalculator } from "./tools/bridging-loan-calculator";
 import { developmentFinanceCalculator } from "./tools/development-finance-calculator";
+import { leaseExtensionPremiumCalculator } from "./tools/lease-extension-premium-calculator";
 
 /**
  * The calculator fleet. "bespoke" tools have their own hand-built component +
@@ -100,6 +101,7 @@ const GENERIC: GenericTool[] = [
   commercialMortgageCalculator,
   bridgingLoanCalculator,
   developmentFinanceCalculator,
+  leaseExtensionPremiumCalculator,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];

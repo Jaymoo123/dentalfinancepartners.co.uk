@@ -26,6 +26,7 @@ export type TopicKey =
   | "non-resident"
   | "property-types"
   | "stamp-duty"
+  | "leasehold"
   | "services";
 
 export type Topic = {
@@ -113,6 +114,18 @@ export const TOPICS: Topic[] = [
     primaryCalculator: "stamp-duty-calculator",
     ctaCopy: "Check your stamp duty",
     resourceId: "stamp-duty",
+  },
+  {
+    // No blogCategorySlugs: the leasehold posts live in the shared
+    // "Property Types & Specialist Tax" category, which already resolves to
+    // property-types. This topic exists only to hang the /resources/leasehold
+    // guide off the /leasehold pillar, so it never intercepts blog routing.
+    key: "leasehold",
+    label: "Leasehold, extensions and service charges",
+    blogCategorySlugs: [],
+    primaryCalculator: "stamp-duty-calculator",
+    ctaCopy: "Check the tax on your lease extension",
+    resourceId: "leasehold",
   },
   {
     key: "services",

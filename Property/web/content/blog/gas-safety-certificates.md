@@ -108,7 +108,7 @@ editorialNote: "MW2 Bucket B B17: definitional pillar for the bare query 'gas sa
 
 <h2>How Much It Costs</h2>
 
-<p>Typical residential property with one to three appliances (combi boiler plus gas hob plus perhaps one gas fire): £60 to £100. Larger HMO or multi-appliance property: £100 to £200. Commercial, LPG, or non-standard installations: £150 to £500 depending on complexity. Cost varies by region, engineer, urgency, and any out-of-hours premium for evening or weekend appointments.</p>
+<p>Typical residential property with one to three appliances (combi boiler plus gas hob plus perhaps one gas fire): £60 to £100. Larger HMO or multi-appliance property: £100 to £200. Commercial, LPG, or non-standard installations: £150 to £500 depending on complexity. Cost varies by region, engineer, urgency, and any out-of-hours premium for evening or weekend appointments. For a full price breakdown, including bundle deals with the EICR and EPC and what drives the quotes, see our <a href="/blog/landlord-tax-essentials/gas-safety-certificate-cost">gas safety certificate cost guide</a>.</p>
 
 <p>Portfolio landlords often negotiate annual block contracts at lower per-property rates, particularly with regional engineer networks. The annual fee is revenue, fully deductible against rental income under ITTOIA 2005 s.272 as a compulsory regulatory expense of the rental business.</p>
 

@@ -46,6 +46,7 @@ import { rentalYieldCalculator } from "../lib/calculators/tools/rental-yield-cal
 import { buyToLetCashflowCalculator } from "../lib/calculators/tools/buy-to-let-cashflow-calculator";
 import { rentARoomReliefCalculator } from "../lib/calculators/tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "../lib/calculators/tools/property-allowance-checker";
+import { leaseExtensionPremiumCalculator } from "../lib/calculators/tools/lease-extension-premium-calculator";
 // Tools that call @/lib/* must be tested through the pure lib functions directly
 // (the @/ alias resolves in the app but the tool configs carry compute fns).
 
@@ -68,8 +69,8 @@ type V = Record<string, number | string | boolean>;
 // 1. Registry contract (TL-01)
 // ============================================================
 describe("registry contract (TL-01)", () => {
-  it("total fleet = 23 tools (5 bespoke + 18 generic)", () => {
-    expect(TOOLS.length).toBe(23);
+  it("total fleet = 24 tools (5 bespoke + 19 generic)", () => {
+    expect(TOOLS.length).toBe(24);
   });
 
   it("5 bespoke tools", () => {
@@ -77,13 +78,13 @@ describe("registry contract (TL-01)", () => {
     expect(bespoke.length).toBe(5);
   });
 
-  it("18 generic tools", () => {
+  it("19 generic tools", () => {
     const generic = genericTools();
-    expect(generic.length).toBe(18);
+    expect(generic.length).toBe(19);
   });
 
-  it("allTools returns 23 tools", () => {
-    expect(allTools().length).toBe(23);
+  it("allTools returns 24 tools", () => {
+    expect(allTools().length).toBe(24);
   });
 
   it("getGenericTool finds by slug", () => {
@@ -114,6 +115,7 @@ describe("registry contract (TL-01)", () => {
       "dividend-tax-calculator",
       "rent-a-room-relief-calculator",
       "property-allowance-checker",
+      "lease-extension-premium-calculator",
     ];
     for (const s of expected) {
       expect(slugs, `missing slug: ${s}`).toContain(s);
@@ -561,5 +563,258 @@ describe("stale-figure checks (ground-truth sentinels)", () => {
   it("CT small profits rate is 19% at lower limit", () => {
     const tax = corporationTax(50_000);
     expect(tax).toBe(9_500); // 50000 * 0.19
+  });
+});
+
+// ============================================================
+// 15. GOLDEN: Lease Extension Premium (LRHUDA 1993 Sch 13)
+//
+// Method under test (hand-derived below for every case):
+//   term       = groundRent * (1 - (1+c)^-t) / c          [c = capitalisation rate]
+//   reversion  = value * (1+d)^-t                          [d = deferment rate]
+//   relativity = piecewise-linear over the anchor table, anchors at
+//                60y=85.0, 70y=90.0, 80y=94.0, 90y=96.8
+//   marriage   = t > 80 ? 0 : value - value*rel - term - reversion   (Sch 13 para 4(2A):
+//                nil only where the unexpired term EXCEEDS 80 years, so 80.0 pays it)
+//   premium    = term + reversion + marriage/2
+//   headline   = premium +/- 20%
+//
+// Ground truth: house_positions.md §31.3a — marriage value abolition is NOT in
+// force in Aug 2026, so the sub-80 charge is live. A test failing here because
+// marriage value has been switched off = STOP, verify commencement first.
+// ============================================================
+describe("GOLDEN: lease-extension-premium-calculator (defaults, 82 years)", () => {
+  const result = leaseExtensionPremiumCalculator.compute(
+    defaults(leaseExtensionPremiumCalculator.fields) as V,
+  );
+
+  // Defaults: value 300000, 82 years, ground rent 150, deferment 5%, cap 7%, no override.
+  // term      = 150 * (1 - 1.07^-82) / 0.07 = 150 * 14.23005 = 2134.51 -> £2,135
+  // reversion = 300000 * 1.05^-82           = 5490.33         -> £5,490
+  // marriage  = 0 (82 > 80)
+  // premium   = 2134.51 + 5490.33           = 7624.84         -> £7,625
+  // range     = 6099.87 to 9149.81          -> £6,100 to £9,150
+  it("term (capitalised ground rent) = £2,135", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Capitalised ground rent"));
+    expect(row?.value).toBe("£2,135");
+  });
+
+  it("reversion = £5,490", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Reversion"));
+    expect(row?.value).toBe("£5,490");
+  });
+
+  it("no marriage value above 80 years", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("Nil, term is over 80 years");
+    const share = result.rows?.find((r) => r.label.startsWith("Freeholder's 50%"));
+    expect(share?.value).toBe("£0");
+  });
+
+  it("premium midpoint = £7,625", () => {
+    const row = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£7,625");
+  });
+
+  it("headline is a +/-20% range, not a single figure", () => {
+    expect(result.headline.value).toBe("£6,100 to £9,150");
+  });
+
+  it("tone = warn inside the 80-83 year cliff zone", () => {
+    expect(result.headline.tone).toBe("warn");
+  });
+
+  // Same flat re-run at 79 years: see the 79-year golden below (£13,844).
+  it("shows the cost of drifting past the cliff", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Premium midpoint if you wait"));
+    expect(row?.value).toBe("£13,844");
+  });
+
+  // Fee stack is pinned to content/blog/lease-extension-cost-uk.md.
+  it("fee stack = £2,600 to £4,400", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Professional fees"));
+    expect(row?.value).toBe("£2,600 to £4,400");
+  });
+
+  // all-in = 6099.87 + 2600 = 8699.87 -> £8,700; 9149.81 + 4400 = 13549.81 -> £13,550
+  it("all-in range adds the fee stack", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Indicative all-in"));
+    expect(row?.value).toBe("£8,700 to £13,550");
+  });
+
+  it("note carries the not-in-force discipline and the consultation date", () => {
+    expect(result.note).toContain("not in force");
+    expect(result.note).toContain("23 September 2026");
+    expect(result.note).toContain("RICS");
+  });
+});
+
+describe("GOLDEN: lease-extension-premium-calculator (79 years, marriage value live)", () => {
+  const result = leaseExtensionPremiumCalculator.compute({
+    propertyValue: 300_000,
+    unexpiredYears: 79,
+    groundRent: 150,
+    defermentRate: 5,
+    capitalisationRate: 7,
+    relativityOverride: 0,
+  } as V);
+
+  // term       = 150 * (1 - 1.07^-79) / 0.07 = 2132.63 -> £2,133
+  // reversion  = 300000 * 1.05^-79           = 6355.75 -> £6,356
+  // relativity = 90 + (79-70)/10 * (94-90)   = 93.6%
+  // short-lease value = 300000 * 0.936       = 280800
+  // marriage   = 300000 - 280800 - 2132.63 - 6355.75 = 10711.62 -> £10,712
+  // share      = 5355.81                                        -> £5,356
+  // premium    = 2132.63 + 6355.75 + 5355.81 = 13844.19         -> £13,844
+  // range      = 11075.35 to 16613.03                           -> £11,075 to £16,613
+  it("relativity = 93.6%", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Relativity"));
+    expect(row?.value).toBe("93.6%");
+  });
+
+  it("marriage value = £10,712", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("£10,712");
+  });
+
+  it("freeholder's 50% share = £5,356", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Freeholder's 50%"));
+    expect(row?.value).toBe("£5,356");
+  });
+
+  it("premium midpoint = £13,844", () => {
+    const row = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£13,844");
+  });
+
+  it("headline range = £11,075 to £16,613", () => {
+    expect(result.headline.value).toBe("£11,075 to £16,613");
+    expect(result.headline.sub).toContain("£5,356");
+  });
+
+  it("no cliff-cost row below 80 years (already over it)", () => {
+    expect(result.rows?.find((r) => r.label.startsWith("Premium midpoint if you wait"))).toBeUndefined();
+  });
+});
+
+describe("GOLDEN: lease-extension-premium-calculator (the 80-year boundary)", () => {
+  const at = (years: number) =>
+    leaseExtensionPremiumCalculator.compute({
+      propertyValue: 300_000,
+      unexpiredYears: years,
+      groundRent: 150,
+      defermentRate: 5,
+      capitalisationRate: 7,
+      relativityOverride: 0,
+    } as V);
+
+  // EXACTLY 80 years — Sch 13 para 4(2A) makes marriage value nil only where the
+  // term EXCEEDS 80, so 80.0 is inside the charge.
+  // term       = 150 * (1 - 1.07^-80) / 0.07 = 2133.30 -> £2,133
+  // reversion  = 300000 * 1.05^-80           = 6053.09 -> £6,053
+  // relativity = 94.0% (anchor)              -> short-lease value 282000
+  // marriage   = 300000 - 282000 - 2133.30 - 6053.09 = 9813.61 -> £9,814
+  // share      = 4906.80                                       -> £4,907
+  // premium    = 2133.30 + 6053.09 + 4906.80 = 13093.20        -> £13,093
+  const eighty = at(80);
+
+  it("at exactly 80 years marriage value IS payable", () => {
+    const row = eighty.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("£9,814");
+  });
+
+  it("at exactly 80 years the freeholder's share = £4,907", () => {
+    const row = eighty.rows?.find((r) => r.label.startsWith("Freeholder's 50%"));
+    expect(row?.value).toBe("£4,907");
+  });
+
+  it("at exactly 80 years premium = £13,093", () => {
+    const row = eighty.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£13,093");
+  });
+
+  // ONE YEAR ABOVE the cliff — same flat, no marriage value at all.
+  // term      = 150 * (1 - 1.07^-81) / 0.07 = 2133.93 -> £2,134
+  // reversion = 300000 * 1.05^-81           = 5764.85 -> £5,765
+  // premium   = 7898.78                               -> £7,899
+  const eightyOne = at(81);
+
+  it("at 81 years marriage value is nil", () => {
+    const row = eightyOne.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("Nil, term is over 80 years");
+  });
+
+  it("at 81 years premium = £7,899", () => {
+    const row = eightyOne.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£7,899");
+  });
+
+  it("crossing the cliff costs £5,194 on this flat (13093 - 7899)", () => {
+    expect(13_093 - 7_899).toBe(5_194);
+  });
+});
+
+describe("GOLDEN: lease-extension-premium-calculator (peppercorn / zero ground rent)", () => {
+  const result = leaseExtensionPremiumCalculator.compute({
+    propertyValue: 250_000,
+    unexpiredYears: 70,
+    groundRent: 0,
+    defermentRate: 5,
+    capitalisationRate: 7,
+    relativityOverride: 0,
+  } as V);
+
+  // term       = 0 * anything                = 0
+  // reversion  = 250000 * 1.05^-70           = 8216.54 -> £8,217
+  // relativity = 90.0% (anchor)              -> short-lease value 225000
+  // marriage   = 250000 - 225000 - 0 - 8216.54 = 16783.46 -> £16,783
+  // share      = 8391.73                                  -> £8,392
+  // premium    = 0 + 8216.54 + 8391.73 = 16608.27         -> £16,608
+  it("term component is £0 with no ground rent", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Capitalised ground rent"));
+    expect(row?.value).toBe("£0");
+  });
+
+  it("reversion = £8,217", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Reversion"));
+    expect(row?.value).toBe("£8,217");
+  });
+
+  it("marriage value still applies = £16,783", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("£16,783");
+  });
+
+  it("premium = reversion + half the marriage value = £16,608", () => {
+    const row = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£16,608");
+  });
+});
+
+describe("lease-extension-premium-calculator: house-bar checks", () => {
+  it("relativity override wins over the derived curve", () => {
+    const result = leaseExtensionPremiumCalculator.compute({
+      propertyValue: 300_000,
+      unexpiredYears: 79,
+      groundRent: 150,
+      defermentRate: 5,
+      capitalisationRate: 7,
+      relativityOverride: 90,
+    } as V);
+    const row = result.rows?.find((r) => r.label.startsWith("Relativity"));
+    expect(row?.value).toBe("90.0%");
+    // marriage = 300000 - 270000 - 2132.63 - 6355.75 = 21511.62; share = 10755.81
+    // premium  = 2132.63 + 6355.75 + 10755.81 = 19244.19 -> £19,244
+    const premium = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(premium?.value).toBe("£19,244");
+  });
+
+  it("no em-dashes in any user-facing string", () => {
+    const result = leaseExtensionPremiumCalculator.compute(
+      defaults(leaseExtensionPremiumCalculator.fields) as V,
+    );
+    const copy = JSON.stringify(leaseExtensionPremiumCalculator) + JSON.stringify(result);
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
   });
 });

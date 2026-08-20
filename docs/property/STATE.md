@@ -100,7 +100,28 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
-## 0.13 Growth work plan approved 2026-08-20 — pickup doc for the next agent
+## 0.14 Wave 11 WRAP — QA EXECUTED 2026-08-20 PM, fix rounds in flight at session close (NO DEPLOY: owner instruction "dont bother deploying it, just complete it to the highest standard")
+
+Phase A of HANDOFF_2026-08-20 run to the QA-complete stage in one session. State at close:
+
+**Done and committed in this batch:**
+- All 19 wave pages frontmatter-fixed (`generator: "opus-4.8/netnew-wave"` added to 19; `reviewedBy`/`reviewerCredentials` to 18). Meta lengths all inside CI 60/155 (max 60/155 exactly; no trip).
+- `s42.html` (writer's stray saved legislation page at repo root) deleted, never committed.
+- Deterministic pre-checks all green pre-QA: frontmatter lint 763 OK, link audit 0 hard/0 soft, word gate 763/763, voice scan 19/19 clean-or-minor (margins to watch: commercial-epc-requirements 34.8, right-to-manage-process-steps 32.6), zero em-dashes, all 19 middleware `SLUG_TO_CATEGORY_MAP` entries confirmed.
+- Full two-track Opus QA (7 factual agents by statute family, 5 editorial agents with trios kept together). ALL 12 reports on disk in `briefs/property/wave11/qa/` (5 EDITORIAL_*, 7 FACTUAL_*).
+
+**QA verdict matrix (editorial x factual):** every page editorial must_fix (systemic cross-page templating: banned "most guides" meta-commentary x11+, shared closers, twin sections, "X, not Y" cadence x38, persona reuse). Factual: all_clear = fire-risk, landlord-licensing, how-to-book-an-epc, service-charge, ground-rent; must_fix = eicr pair (reg 3 clock errors in worked timeline, NI status), gas-cost (appliance add-on arithmetic), lease pair + LAFRA (cross-page fee-stack contradiction £2,600-£4,400 vs £3,600-£6,600 = the one BLOCKER; 6 arithmetic errors incl. Marcus premium and HMLR Scale 1 £65 fee; CG71141 miscited on 2 pages), RTM trio (formation fee "under £100", unsourced revenue-deductibility claim, s.21 cited as live right, s.84(3) vs s.84(4) x3), epc-cost + mees (s.21-abolished-May-2026 violation, PIM2030 cited backwards on double glazing, TCGA s.38(2) exhaustive-list error); commercial-epc-requirements + commercial-property-mees-compliance (DEC penalties inverted x3 — reg 14(3)(a)=£1,000 hold vs 14(3)(b)=£500 display, page has it backwards; dead `www.find-energy-certificate...` host, live host has no www; reg 41 "not exceeding" ceiling stated as a floor). commercial-energy-performance-certificate-cost = factual all_clear.
+
+**Fix rounds: 2 of ~5 dispatched before close** (fresh Opus agents; original writers dead with the prior session): (1) eicr pair + fire-risk, (2) service-charge + ground-rent (incl. adding s.166 CLRA 2002 section). Their edits may be partially on disk / in working tree. NOT yet dispatched: licensing+gas+booking group, lease pair + LAFRA group (needs the fee-stack harmonisation from FACTUAL_lease-lafra.md), RTM trio, epc-cost+mees, commercial trio (awaits its factual read).
+
+**§6 out-of-band, in flight at close:** /leasehold pillar DONE on disk (page.tsx + resources/leasehold.md + sitemap/taxonomy/registry/opener/niche.config.json wiring; tsc clean; agent report in transcript). /landlord-compliance pillar and lease-extension-premium-calculator agents were still running; check `git status` for their files (src/app/landlord-compliance/, src/lib/calculators/tools/lease-extension-premium-calculator.ts + registry.ts + goldens). Internal-link back-patch sweep NOT started.
+
+**Cross-cutting findings for the conductor (from QA, not yet actioned):**
+1. `house_positions.md` §26.7 has double-glazing capital treatment BACKWARDS vs PIM2030 (repair, verbatim example). Patch HP first, then the two pages citing it.
+2. Legacy back-patches wanted (Stage 11 sweep): `energy-performance-certificates-epc.md` (MEES penalty figure, reg cite, stale price, "England and Wales" register scope, visit duration), `gas-safety-certificates.md` (stale £60-£100 headline), 2 lease sibling pages carry stale £250,000 SDLT nil-rate band (reverted £125,000 on 1 Apr 2025).
+3. EPC C 2030: 21 Jan 2026 government response decided £10,000 cap (SI aimed 2027, none made) — new pages' hedge holds but framing slightly stale.
+
+**Remaining WRAP sequence (in order):** finish fix rounds → verify reads on restructured pages → re-run voice scan + em-dash + meta lengths on all touched → equity-gate n/a (wave not cluster) → tsc, vitest incl. new goldens, prod build from Property/web, dependency closure → record qa_verdict batch `wave11` LAST (hash-keyed) → predeploy gate → commit + push. THEN out-of-band completion + link sweep. Deploy/monitored_pages/IndexNow stay OWNER-GATED; deploy approval from §2 of the handoff still stands but this session was told not to use it.
 
 Owner approved the five-phase plan the same day the CGT batch shipped. **START HERE:
 [`HANDOFF_2026-08-20.md`](HANDOFF_2026-08-20.md)** — Wave 11 WRAP + deploy (authorized),

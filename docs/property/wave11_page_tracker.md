@@ -72,3 +72,9 @@ Tracker columns: status | pos | slug | category | body words | FAQ count | monit
 
 
 
+
+---
+
+## WRAP status snapshot 2026-08-20 PM (session close; authoritative narrative in STATE.md §0.14)
+
+All 19 bodies written 08-15/16 (4,100-5,000 words). This session: frontmatter completed on all 19, deterministic pre-checks green (lint / links 0-hard / word gate / voice 19x clean-or-minor / 0 em-dashes / middleware map 19/19), full two-track Opus QA executed — 12 reports in `briefs/property/wave11/qa/`. Editorial: 19/19 must_fix (cross-page templating). Factual all_clear: A3, A4, A7, A14, A15, A18. Factual must_fix: A1, A2, A5, A6, A8, A9, A10, A11, A12, A13, A16, A17, A19. Fix rounds dispatched at close: {A1,A2,A3} and {A14,A15}; remaining groups not yet dispatched. qa_verdict NOT recorded (correctly — edits pending). NO deploy per owner instruction this session.

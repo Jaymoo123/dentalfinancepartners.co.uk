@@ -88,7 +88,7 @@ editorialNote: "MW2 Bucket B B15: definitional pillar on-ramp for the bare query
 <li><strong>The landlord or seller receives the PDF and the reference number.</strong> The reference number is the searchable anchor on the public register.</li>
 </ol>
 
-<p>Typical cost: £60 to £120 for a residential property; £150 to £500 for commercial depending on size and complexity. Turnaround is typically one to five days. The EPC is then valid for 10 years from the date of issue.</p>
+<p>Typical cost: £60 to £120 for a residential property (full breakdown in our <a href="/blog/landlord-tax-essentials/epc-certificate-cost-uk">EPC certificate cost guide</a>); commercial certificates run from around £150 to £1,500 or more depending on floor area and complexity, covered separately in our <a href="/blog/property-types-and-specialist-tax/commercial-energy-performance-certificate-cost">commercial EPC cost guide</a>. Turnaround is typically one to five days. The EPC is then valid for 10 years from the date of issue.</p>
 
 <aside>
 <p><strong>Portfolio with EPCs approaching expiry?</strong> Mass 10-year expiry across a portfolio acquired in the same period can hit several properties in the same quarter. We coordinate scheduled re-assessment as a portfolio operation rather than discovering expiry per-property at the next letting. Talk to us about the rolling EPC schedule.</p>

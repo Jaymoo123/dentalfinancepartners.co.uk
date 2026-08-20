@@ -27,6 +27,7 @@ const TOPIC_NOUN: Record<TopicKey, string> = {
   "non-resident": "non-resident landlord tax",
   "property-types": "the tax on your property",
   "stamp-duty": "stamp duty",
+  leasehold: "your lease",
   services: "your situation",
 };
 

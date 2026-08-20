@@ -75,6 +75,10 @@
           "href": "/making-tax-digital-landlords"
         },
         {
+          "label": "Leasehold",
+          "href": "/leasehold"
+        },
+        {
           "label": "Property tax rates",
           "href": "/property-tax-rates"
         },
@@ -121,6 +125,10 @@
     {
       "label": "Making Tax Digital",
       "href": "/making-tax-digital-landlords"
+    },
+    {
+      "label": "Leasehold",
+      "href": "/leasehold"
     },
     {
       "label": "Property tax rates",
