@@ -13,6 +13,8 @@ altText: "UK landlord reviewing CGT calculation documents for buy-to-let propert
 image: ""
 h1: "How CGT Is Calculated on a Buy-to-Let Sale: Step-by-Step Worked Examples"
 summary: "The CGT calculation on a buy-to-let sale follows a fixed sequence: identify proceeds and base cost, deduct allowable costs and reliefs, apply the £3,000 annual exempt amount, split the taxable gain across the 18% and 24% bands, then report and pay via the 60-day CGT on UK property service. This guide walks through the mechanics with five worked examples covering the common variants."
+reviewedAt: "2026-08-20"
+dateModified: "2026-08-20"
 schema: ''
 faqs:
   - question: "What is included in the base cost of a buy-to-let for CGT?"
@@ -43,11 +45,46 @@ faqs:
     answer: "The base cost and proceeds mechanics are similar, but companies do not have an annual exempt amount. The gain is taxed at corporation tax rates (19% / 25%, with marginal relief between £50,000 and £250,000), not the personal 18% / 24%. Indexation allowance (frozen at December 2017 since April 2018) may still apply to companies' pre-2018 base costs. Companies file gains via the CT600, not via the 60-day CGT on UK property service. Personal-vs-company comparisons are in our <a href=\"/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk\">BTL limited company complete guide</a>."
   - question: "What records do I need to support the calculation?"
     answer: "Original purchase contract and completion statement, SDLT return and receipt, purchase legal invoices, survey costs, all capital improvement invoices with descriptions of work (to evidence capital vs revenue), receipts and bank statements showing payment, sale contract and completion statement, sale legal and estate agent invoices, and your computation worksheet linking the base cost and proceeds to the figures filed. HMRC's standard retention period for landlords is five years and 10 months from the end of the tax year. In practice, retain for at least six years after the disposal."
+  - question: "How much is capital gains tax on a rental property in 2026/27?"
+    answer: "You pay 18% on the part of your gain that fits inside your unused basic-rate band and 24% on everything above it, after deducting your £3,000 annual exempt amount. The rate is set by your total income for the year of sale, not by how long you owned the property. If your income already runs above £50,270 you pay 24% on the whole taxable gain; if you have basic-rate band to spare, the slice that fits inside it is taxed at 18%. Trustees and personal representatives pay 24% throughout with no basic-rate slice."
+  - question: "Do you pay capital gains tax on your primary residence?"
+    answer: "Usually no. Private Residence Relief normally covers the whole gain on the home you live in, so most main-residence sales produce no CGT and no 60-day return. You pay on the part of the gain that relates to periods when the property was not your only or main residence, which is what makes a former home that you later let out a chargeable disposal. The relief is time-apportioned, and the final nine months of ownership always qualify. Worked example 3 above splits a former home between the relieved and chargeable periods, and the full mechanics are in our <a href=\"/blog/capital-gains-tax/principal-private-residence-relief-landlords\">Private Residence Relief guide for landlords</a>."
+  - question: "Can you claim letting relief on capital gains tax when you sell?"
+    answer: "Only if you shared occupation of the property with your tenant during the letting period. Since 6 April 2020 letting relief has been restricted to shared-occupation lettings, so it no longer reduces the capital gain for a landlord who moved out and let the whole property to tenants, however long the letting ran. Where it does apply the relief is capped at the lower of £40,000, the amount of Private Residence Relief given, and the gain attributable to the letting. The conditions are set out in our <a href=\"/blog/capital-gains-tax/letting-relief-landlords-2026-changes\">lettings relief guide</a>."
+  - question: "Does moving back into a rental property avoid capital gains tax?"
+    answer: "No. Private Residence Relief is apportioned across your whole period of ownership, so a second spell of living there adds months to the relieved fraction rather than clearing the gain that built up while the property was let. It also has to be a genuine main residence. No minimum stay is written into the legislation, but HMRC weighs the quality and permanence of the occupation, so a short move back arranged for the relief alone is a position that struggles under enquiry. The section on reducing the bill puts numbers on what a second period of occupation is worth."
+  - question: "How do joint owners report a buy-to-let sale to HMRC?"
+    answer: "Separately. There is no joint return: each owner reports their own share of the gain on their own Capital Gains Tax on UK property account within 60 days of completion, using their own annual exempt amount, their own losses and their own rate band. If one owner has tax to pay and the other does not (because their share is covered by the annual exempt amount or losses), only the first owner needs to file. Each owner then reports their share again on their own Self Assessment return where they are in Self Assessment and their gains exceed the annual exempt amount or their proceeds exceed £50,000."
+  - question: "Can you use a buy-to-let loss in a CGT return?"
+    answer: "Yes. A loss on one property disposal is set against gains on other chargeable assets in the same tax year automatically, and any unused balance is carried forward indefinitely once you have claimed it. Brought-forward losses are then used only to the extent your gains exceed the annual exempt amount, so the allowance is not wasted. If the loss arises after you have already filed a 60-day return on an earlier gain in the same year, you cannot undo that return, but the position is corrected on your Self Assessment return and any overpayment is refunded. Detail is in our <a href=\"/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses\">capital losses on property guide</a>."
 ---
 
 <p>The CGT calculation on a buy-to-let sale follows a fixed five-step sequence. Each step has its own pitfalls, the largest of which is mis-classifying capital improvements (which enter the base cost and reduce the gain) versus revenue repairs (which are income tax expenses claimed during ownership and cannot enter the base cost). This guide walks through the calculation with five worked examples covering the variants we see most often.</p>
 
 <p>For the broader CGT framework (current rates, the annual exempt amount, the regime as a whole) see the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>. For 60-day reporting mechanics see the <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines page</a>. This page focuses on the computation itself.</p>
+
+<h2>Do you pay capital gains tax when you sell a rental property?</h2>
+
+<p>Yes. Capital gains on rental property are taxed at 18% on the part of your gain that fits inside your unused basic-rate band and 24% on everything above it, after your £3,000 annual exempt amount for 2026/27. If tax is due, you have 60 days from completion to report the sale and pay it.</p>
+
+<p>Three things set the bill when you are selling a rental property. What the property cost you, including the costs of buying it and any capital improvements you made. What you sold it for, after estate agent and legal fees. And how much of your basic-rate band is still free in the tax year the sale falls into, because that is what decides how much of the gain is taxed at 18% rather than 24%.</p>
+
+<p>Each sale stands on its own, so if you are selling rental property out of a portfolio you run the same five steps for every disposal before the year's gains and losses are added together. Nothing else moves the number. Not how long you owned it, not whether you reinvest the money, and not what is left on the mortgage. The five steps below turn those three inputs into a figure you can file, and the worked examples after them cover the variants we see most: a higher-rate landlord, a gain that straddles the bands, a former home, joint owners, and a year with losses in it.</p>
+
+<p>If you would rather read the same five steps as a plain walkthrough than as worked examples, our <a href="/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide">guide to how CGT is calculated when you sell a buy-to-let</a> takes them one at a time.</p>
+
+<h2>What can you deduct when you sell a rental property?</h2>
+
+<p>You can deduct what you paid for the property, the costs of buying it, the cost of capital improvements you made while you owned it, and the costs of selling it. You cannot deduct anything you paid on the mortgage.</p>
+
+<p>That last point catches more landlords than any other, and it reaches us most weeks in one of two forms:</p>
+
+<ul>
+<li><strong>"Is it cheaper to pay off the buy-to-let mortgage before I sell?"</strong> It makes no difference to your CGT. The gain is your net proceeds minus your base cost, and neither figure moves when you clear the borrowing. Paying the mortgage down changes what lands in your bank account on completion, not what HMRC charges you on.</li>
+<li><strong>"Can I offset the interest I paid on an interest-only mortgage?"</strong> No. Mortgage interest is an income tax item, relieved against your rental profit during ownership at the basic rate under the Section 24 restriction. It has already had its relief, so it cannot also reduce the gain.</li>
+</ul>
+
+<p>Capital improvements are the deduction most often missed in the other direction. If you added a bedroom, extended, converted a loft or put in central heating where there was none, that spending belongs in your base cost, even if you paid for it a decade ago and never told anyone. What it needs is an invoice describing the work. The table further down this page separates the improvements that count from the repairs that do not.</p>
 
 <h2>The five-step calculation</h2>
 
@@ -306,6 +343,20 @@ faqs:
 <li><strong>Deemed disposal at market value.</strong> Other deemed-disposal events (transfer to a connected party other than a spouse, certain trust events, certain corporate events) similarly use market value rather than actual consideration.</li>
 </ul>
 
+<h2>Do you have to tell HMRC when you sell a buy-to-let?</h2>
+
+<p>Yes, if there is CGT to pay: HMRC wants the return and the money within 60 days of completion. If the gain is covered by your £3,000 annual exempt amount, by losses or by Private Residence Relief and you are UK resident, there is nothing to file in those 60 days. The full filing and payment sequence, including the non-resident rule and what happens on Self Assessment afterwards, is in the reporting section below.</p>
+
+<p>Sold at a loss? Nothing is due and no 60-day return is needed, but claim the loss anyway, within four years of the end of the tax year, so it is sitting there against your next gain.</p>
+
+<h2>What if you sell one buy-to-let and buy another?</h2>
+
+<p>You still pay the CGT on the sale. Buying another rental property does not defer, reduce or roll over the gain, however quickly you reinvest the proceeds. The tax is triggered by the disposal, and the 60-day clock runs from completion on the sale regardless of what you do next with the money.</p>
+
+<p>Roll-over relief, which does let you defer a gain by reinvesting, applies to assets used in a trade. A residential letting business is an investment business rather than a trade, so its properties do not qualify. The same reasoning is why Business Asset Disposal Relief is not available on a standard buy-to-let disposal.</p>
+
+<p>The practical consequence is a cash-flow one. If you are selling one property to fund the deposit on the next, set the CGT aside on completion rather than committing all of the proceeds, because the bill is due 60 days later and it does not wait for the new purchase to settle.</p>
+
 <h2>Reporting and payment: tying the calculation back to compliance</h2>
 
 <p>Once the calculation is complete, the reporting and payment workflow is:</p>
@@ -328,6 +379,22 @@ faqs:
 <p>From 6 April 2027, separate property income tax rates of 22% basic, 42% higher and 47% additional rate apply to rental profit (announced in the Autumn Budget, scheduled for Finance Act 2026). The change is to income tax on rental profit, not to CGT rates on disposal. CGT on residential property remains at 18% basic and 24% higher rate with no confirmed change for 2027.</p>
 
 <p>The 2027 change affects the disposal-timing decision (covered in our <a href="/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales">2027 property tax and CGT disposal timing</a> page) but does not change the mechanics of the calculation itself. The five-step computation above continues to apply.</p>
+
+<h2>Can you avoid capital gains tax on a rental property?</h2>
+
+<p>You cannot avoid it on a taxable gain, but you can usually reduce it, and the honest list of ways to avoid capital gains tax on property is short enough to fit in five bullets. Every one of them is already somewhere in the five steps above.</p>
+
+<ul>
+<li><strong>Two annual exempt amounts instead of one.</strong> A property held jointly by a married couple carries £6,000 of exempt gain rather than £3,000.</li>
+<li><strong>A pre-sale transfer to the lower-earning spouse.</strong> Example 4 above shows the mechanic: shifting a share to a partner with unused basic-rate band moves part of the gain from 24% to 18%. The transfer has to happen before the sale and has to be genuine.</li>
+<li><strong>Improvement spending you forgot about.</strong> Every extension, conversion or new-build element you can evidence with an invoice comes off the gain itself, so it saves you 24p or 18p in the pound depending on your rate.</li>
+<li><strong>Losses, including old ones.</strong> A loss claimed in an earlier year and carried forward is still available. In-year losses come off before your annual exempt amount, brought-forward losses only after it and only down to the allowance, which is what stops the old loss being wasted on gain the allowance would have covered anyway.</li>
+<li><strong>Timing, measured from exchange.</strong> The tax year of a disposal is set by the date you exchange contracts, not the date you complete. A contract exchanged on 6 April rather than 5 April falls into the following tax year, which can hand you an unused annual exempt amount and an unused basic-rate band. It does not push back the payment date, because where CGT is due that still runs 60 days from completion.</li>
+</ul>
+
+<p>What does not work is moving back into a rental property to clear the gain. Private Residence Relief is time-apportioned across your whole period of ownership, so a year back in a property you have owned for fifteen adds roughly a fifteenth of relief and no more. The final nine months already qualified if the property was ever your main residence, so moving back does not buy them a second time.</p>
+
+<p>The wider survey of the reduction levers, including incorporation and deferral routes that sit outside a single disposal, is in our <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">guide to reducing CGT on a property disposal</a>. The rates, allowances and regime as a whole are in the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>.</p>
 
 <h2>Records and documentation</h2>
 

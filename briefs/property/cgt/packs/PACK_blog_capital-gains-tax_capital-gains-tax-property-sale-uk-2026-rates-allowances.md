@@ -5,7 +5,7 @@ Generated 2026-08-20 from live pulls (GSC 90d to 2026-08-20, Bing page-query sta
 ## 1. Target and permission level
 
 - Page: `/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances` (capital-gains-tax-property-sale-uk-2026-rates-allowances.md)
-- Clusters owned: capital gains on residential property
+- Clusters owned: capital gains on residential property, capital gains tax rates 2024/25, capital gains tax rate 2026
 - Combined peer-winnable volume: 1,020/mo
 - Grade: **EXTEND-GOOGLE**
 - Permission: ADDITIVE ONLY. metaTitle, H1 and existing H2 order are protected (byte-identical). Add new H2 blocks and FAQ entries carrying the missing phrasings.
@@ -82,6 +82,7 @@ Page totals: Google 90d 136 impressions / 0 clicks / pos 6.0; Bing 50 impression
 |---|---|---|---|---|
 | capital gains on residential property | 1000 | 51 | ukpropertyaccountants.co.uk | NO |
 | cgt on residential property | 1000 | 58 | ukpropertyaccountants.co.uk | NO |
+| capital gains tax rates 2024/25 | 590 | 66 | uklandlordtax.co.uk | NO |
 | non resident capital gains | 390 | 15 | ukpropertyaccountants.co.uk | NO |
 | capital gain tax non resident | 390 | 19 | optimiseaccountants.co.uk | NO |
 | capital gains tax and non residents | 390 | 16 | uklandlordtax.co.uk | NO |
@@ -107,26 +108,40 @@ Page totals: Google 90d 136 impressions / 0 clicks / pos 6.0; Bing 50 impression
 | capital gain non resident | 390 | 20 | uklandlordtax.co.uk | NO |
 | non-resident cgt | 390 | 20 | uklandlordtax.co.uk | NO |
 | capital gains on non residents | 390 | 14 | uklandlordtax.co.uk | NO |
+| capital gains tax rate 2026 | 320 | 86 | ukpropertyaccountants.co.uk | NO |
 | capital gains for non uk residents | 260 | 11 | uklandlordtax.co.uk | NO |
 | non resident capital gains tax uk | 260 | 11 | uklandlordtax.co.uk | NO |
 | capital gains tax for non uk residents | 260 | 14 | uklandlordtax.co.uk | NO |
 | cgt non resident uk | 260 | 18 | uklandlordtax.co.uk | NO |
 | capital gains tax for uk non residents | 260 | 10 | uklandlordtax.co.uk | NO |
+| increase in capital gains tax | 210 | 47 | ukpropertyaccountants.co.uk | NO |
+| cgt increase | 210 | 30 | ukpropertyaccountants.co.uk | NO |
+| rise in capital gains tax | 210 | 33 | ukpropertyaccountants.co.uk | NO |
+| raising capital gains tax | 210 | 65 | ukpropertyaccountants.co.uk | NO |
+| capital gain tax increase | 210 | 61 | ukpropertyaccountants.co.uk | NO |
+| capital gains tax 2025 26 | 210 | 79 | ukpropertyaccountants.co.uk | NO |
+| capital gains tax increase | 210 | 61 | ukpropertyaccountants.co.uk | NO |
+| capital gains tax raise | 210 | 15 | ukpropertyaccountants.co.uk | NO |
+| capital gain tax rate 2025 | 210 | 80 | ukpropertyaccountants.co.uk | NO |
+| increase capital gains tax | 210 | 70 | ukpropertyaccountants.co.uk | NO |
+| budget 2025 capital gains tax | 170 | 69 | ukpropertyaccountants.co.uk | NO |
 | nrcgt | 140 | 5 | ukpropertyaccountants.co.uk | NO |
 | paper cgt return | 140 | 32 | uklandlordtax.co.uk | NO |
+| capital gains tax 2025 | 140 | 68 | ukpropertyaccountants.co.uk | NO |
+| cgt on residential property 2025/26 | 110 | 54 | ukpropertyaccountants.co.uk | NO |
+| cgt on residential property 2025 26 | 110 | 59 | ukpropertyaccountants.co.uk | NO |
+| capital gains tax rates 25 26 | 110 | 86 | ukpropertyaccountants.co.uk | NO |
 | report cgt on residential property | 90 | 16 | uklandlordtax.co.uk | NO |
 | capital gains tax uk property disposal return form pdf | 90 | 20 | uklandlordtax.co.uk | NO |
 | non resident cgt return | 90 | 10 | ukpropertyaccountants.co.uk | NO |
 | reporting cgt on residential property | 90 | 29 | uklandlordtax.co.uk | NO |
 | non resident capital gains tax return | 90 | 15 | ukpropertyaccountants.co.uk | NO |
 | cgt on uk property account | 90 | 28 | uklandlordtax.co.uk | NO |
-| nrcgt returns | 70 | 6 | ukpropertyaccountants.co.uk | NO |
-| hmrc capital gains tax property | 70 | 24 | uklandlordtax.co.uk | NO |
-| nrcgt return | 70 | 4 | ukpropertyaccountants.co.uk | NO |
-| residential property cgt | 50 | 57 | ukpropertyaccountants.co.uk | NO |
-| ppdcgt form | 50 | 25 | uklandlordtax.co.uk | NO |
+| has capital gains tax gone up | 90 | 37 | ukpropertyaccountants.co.uk | NO |
+| when did cgt rates change | 90 | 32 | ukpropertyaccountants.co.uk | NO |
+| cgt higher rate | 90 | 61 | ukpropertyaccountants.co.uk | NO |
 
-45 of 45 cluster keywords do NOT appear verbatim in our copy.
+87 of 87 cluster keywords do NOT appear verbatim in our copy.
 
 ## 4. Competitor teardown (every cluster URL)
 
@@ -139,6 +154,8 @@ Page totals: Google 90d 136 impressions / 0 clicks / pos 6.0; Bing 50 impression
   - title: How to work out Capital Gains Tax for non residents - UK Landlord Tax
   - H1: How to work out Capital Gains Tax for non residents
   - headings: Residential property | Non-residential property (after 5th April 2019) | Do you have a question for our landlord tax experts?
+- `https://www.ukpropertyaccountants.co.uk/how-capital-gains-tax-has-evolved-over-the-years/` - NO TEARDOWN: ukpropertyaccountants (HTTP 202 captcha stub, keyword-data-only)
+- `https://www.ukpropertyaccountants.co.uk/capital-gains-tax-the-likely-target-for-hike-in-tax-rates/` - NO TEARDOWN: ukpropertyaccountants (HTTP 202 captcha stub, keyword-data-only)
 
 ## 5. Ours, side by side
 

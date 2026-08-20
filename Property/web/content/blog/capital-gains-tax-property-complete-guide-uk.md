@@ -43,14 +43,50 @@ faqs:
   answer: "Original purchase contract, completion statement, SDLT return, purchase legal invoices, survey costs, all capital improvement invoices with descriptions of work, tenancy records for periods of letting, evidence of any PRR periods (council tax, utility bills, electoral roll), sale completion statement, sale legal and estate agent invoices, and the CGT computation worksheet. HMRC's standard retention period for business taxpayers (including most landlords) is five years and 10 months from the end of the tax year. In practice, retain records for at least six years after the disposal."
 - question: "Where do I get authoritative confirmation of current rates?"
   answer: "HMRC's <a href=\"https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual\">Capital Gains Manual</a> is the authoritative reference for mechanics. <a href=\"https://www.gov.uk/capital-gains-tax/rates\">gov.uk Capital Gains Tax rates</a> is updated each tax year for the current rates. <a href=\"https://www.legislation.gov.uk/ukpga/1992/12\">TCGA 1992</a> on legislation.gov.uk is the statutory framework. <a href=\"https://www.gov.uk/report-and-pay-your-capital-gains-tax\">HMRC's CGT on UK property service</a> is the filing portal."
-dateModified: '2026-05-21'
+- question: "Do you pay capital gains tax when you sell your house?"
+  answer: "Not if it was your only or main home for the whole time you owned it, because Private Residence Relief covers the gain. You pay capital gains tax when selling a house that was let out, used as a second home, or lived in for only part of your ownership. In 2026/27 the taxable slice is charged at 18% within your unused basic-rate band and 24% above it, after your £3,000 annual exempt amount. Joint owners are taxed on their own share and each get their own £3,000, so two names on the deeds shelter £6,000 of gain."
+dateModified: '2026-08-20'
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: '2026-05-21'
+reviewedAt: '2026-08-20'
 editorialNote: Pillar rewrite covering full CGT framework with onward links to daughter pages.
 ---
 
 <p>Capital Gains Tax (CGT) is the tax on the gain made when a UK residential property is sold or disposed of at a profit. For UK individual landlords in 2026/27 the rates are 18% basic and 24% higher, with a £3,000 annual exempt amount. UK residents disposing of property where CGT is due must file a return and pay within 60 days of completion. Non-UK residents must file for every UK land disposal regardless of tax due. This pillar guide sets out the framework with onward links to the daughter pages covering specific topics.</p>
+
+<h2>Do you pay capital gains tax when you sell a house?</h2>
+
+<p>You pay capital gains tax when you sell a house that was not your only or main home for the whole time you owned it. There is no capital gains tax on a home sale where you lived there throughout, because Private Residence Relief covers the gain and there is nothing to report either. If it was a rental, a second home or a former home you moved out of, part or all of the gain is taxable at 18% or 24% in 2026/27.</p>
+
+<p>Three positions cover most sellers:</p>
+
+<ul>
+<li><strong>Your only home, lived in throughout.</strong> No tax, because the relief covers the whole gain.</li>
+<li><strong>A former home you later let out.</strong> The gain is time-apportioned, so you pay on the slice falling in the years it was not your main residence, and the final nine months count as though you still lived there. CGT letting relief only reaches you if you shared the house with your tenant, which our <a href="/blog/capital-gains-tax/letting-relief-landlords-2026-changes">letting relief page</a> explains.</li>
+<li><strong>A buy-to-let or second home you never lived in.</strong> The whole gain is chargeable once your costs, your losses and your £3,000 allowance have come off.</li>
+</ul>
+
+<p>Capital gains on selling a house you once lived in are usually smaller than sellers expect, because the years you occupied it are exempt. Capital gains when selling a house you never occupied are usually larger, because nothing shelters them. If you owned it jointly, each of you is taxed on your own share and each uses your own allowance, so two names on the deeds shelter £6,000 of gain before any other planning. Where there is tax to pay, when you pay is fixed at 60 days from completion: you report and pay capital gains tax on UK property inside that window, and the 60-day section below sets out who does not have to file at all.</p>
+
+<h2>How much is capital gains tax on property in 2026/27?</h2>
+
+<p>Capital gains tax on property is 18% on the part of your gain that fits inside your unused basic-rate band and 24% on everything above it. Those are the residential property capital gains tax rates for 2026/27. Your capital gain on residential property is not taxed at one fixed percentage: how much of it falls at 18% depends on how much of your basic-rate band your other income has already used. The capital gains allowance on property is £3,000 and it belongs to you rather than to the property, so it covers your gains for the year rather than each sale you make.</p>
+
+<p>On a real disposal it works like this. You bought a rental flat for £245,000, paid £9,500 in stamp duty and legal fees on the way in and £14,000 on a loft conversion, then sold for £430,000 with £8,500 of agent and legal costs. Net proceeds of £421,500 against a base cost of £268,500 make the capital gain from the sale £153,000. Take off the £3,000 annual exempt amount and £150,000 is taxable, which is £36,000 at the 24% higher rate. If your other income left £15,000 of your basic-rate band free, that first £15,000 is taxed at 18% instead and the bill falls to £35,100.</p>
+
+<p>Run your own figures through our <a href="/blog/capital-gains-tax/property-capital-gains-tax-calculator">property capital gains tax calculator</a>, or see the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 CGT rates page</a> for the bands in detail. How the capital gains tax allowance on property interacts with losses is covered in our <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">£3,000 annual exempt amount page</a>.</p>
+
+<h2>Do you pay capital gains tax on a rental property, a second home or commercial property?</h2>
+
+<p>You do, and the rate is the same in each case: capital gains on property are taxed at 18% and 24% whether you are selling a flat you let, a cottage you use at weekends or a shop. What changes is the relief you can claim and the way you report it.</p>
+
+<ul>
+<li><strong>A rental property.</strong> There is no Private Residence Relief if you never lived there, so capital gains on rental property tend to be larger than on a home of the same value. Selling rental property in a low-income year is the one lever left, because more of your basic-rate band stays free and more of the gain sits at 18%.</li>
+<li><strong>A second home or holiday home.</strong> Treated like a rental unless you have lived in it and nominated it as your main residence, which is a choice with a deadline attached. Our <a href="/blog/capital-gains-tax/capital-gains-tax-second-home-sale">second home page</a> works it through.</li>
+<li><strong>Commercial property or land.</strong> Capital gains tax on commercial property has matched residential since 30 October 2024, so commercial property capital gains tax now turns on reporting rather than rate: a UK resident files no 60-day return and puts the gain on the Self Assessment return instead. Capital gains tax on land follows the same rates where the land is not residential, though land sold as the garden and grounds of your home can fall inside Private Residence Relief. Our <a href="/blog/capital-gains-tax/cgt-commercial-property-different-residential">commercial versus residential CGT page</a> covers price apportionment and capital allowances.</li>
+</ul>
+
+<p>CGT on rental property, second homes and commercial units all run through the same steps set out below. The gain is the sale price, less what you paid, less the costs of buying, improving and selling, and capital gains tax on property sales is charged on that increase in value rather than on the cash left once you clear the mortgage. CGT on the sale of a property to a family member below market value is worked out on open market value instead, which our <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">gifting page</a> covers, and where you sell at a loss it is worth <a href="/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses">reporting the loss</a> so it can shelter a future gain.</p>
 
 <h2>The 2026/27 CGT framework at a glance</h2>
 

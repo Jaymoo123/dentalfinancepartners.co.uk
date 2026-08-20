@@ -1,19 +1,21 @@
-"""SDLT cluster equity gate (REWRITE_PROGRAM.md section 9.9, floors 5 and 7).
+"""Cluster equity gate (REWRITE_PROGRAM.md section 9.9, floors 5, 6 and 7).
 
-Deterministic pre-commit gate for the SDLT batch. Per research pack in
-briefs/property/sdlt/packs/:
+Deterministic pre-commit gate, per research pack. Supports both cluster batches:
+  --cluster sdlt (default): briefs/property/sdlt/, pack equity lines "- N impr, ..."
+  --cluster cgt:            briefs/property/cgt/,  pack equity tables (section 2),
+                            plus floor 6: every section-3 keyword with volume >= 50
+                            is placed in the page or listed in the page's coverage
+                            note under briefs/property/cgt/notes/.
 
-  1. Equity preservation: every section-2 equity query still matches the edited
-     page (token coverage: all content-bearing tokens of the query appear in the
-     page text).
+  1. Equity preservation: every section-2 equity query the baseline covered still
+     matches the edited page (token coverage).
   2. Protected elements (EXTEND grades): metaTitle and H1 byte-identical to the
      baseline commit, and the baseline H2 sequence preserved in order (additions
      allowed).  REFRAME grades skip this check.
-  3. Ledger balance: bucket counts in briefs/property/sdlt/ledger.csv sum to the
-     declared universe.
+  3. Ledger balance: ledger.csv row count equals the declared universe.
 
 Usage:
-    python scripts/sdlt_equity_gate.py [--baseline <sha>]   # default HEAD
+    python scripts/sdlt_equity_gate.py [--cluster sdlt|cgt] [--baseline <sha>]
 
 Exit 0 = all gates pass. Exit 1 = any failure, listed on stdout.
 Per-execution cost: none (local files + git only).
@@ -29,20 +31,28 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PACK_DIR = ROOT / "briefs" / "property" / "sdlt" / "packs"
-LEDGER = ROOT / "briefs" / "property" / "sdlt" / "ledger.csv"
 BLOG_DIR = "Property/web/content/blog"
-UNIVERSE = 2448
+
+CLUSTERS = {
+    "sdlt": {"dir": ROOT / "briefs" / "property" / "sdlt", "universe": 2448},
+    "cgt": {"dir": ROOT / "briefs" / "property" / "cgt", "universe": 3869},
+}
+
+# generic calculator tools live in the registry, bespoke ones in app routes
+GENERIC_TOOL_SLUGS = {
+    "first-time-buyer-stamp-duty-calculator",
+    "capital-gains-tax-calculator",
+}
 
 # pack page path -> repo file path
 def repo_path(page: str) -> str:
     if page.startswith("/blog/"):
         slug = page.rstrip("/").split("/")[-1]
         return f"{BLOG_DIR}/{slug}.md"
-    if page == "/calculators/first-time-buyer-stamp-duty-calculator":
-        return "Property/web/src/lib/calculators/tools/first-time-buyer-stamp-duty-calculator.ts"
     if page.startswith("/calculators/"):
         slug = page.rstrip("/").split("/")[-1]
+        if slug in GENERIC_TOOL_SLUGS:
+            return f"Property/web/src/lib/calculators/tools/{slug}.ts"
         return f"Property/web/src/app/calculators/{slug}/page.tsx"
     raise ValueError(f"unmapped page path: {page}")
 
@@ -95,34 +105,53 @@ def is_subsequence(needle: list[str], haystack: list[str]) -> bool:
     return all(any(n == h for h in it) for n in needle)
 
 
-def parse_pack(path: Path) -> dict:
+def parse_pack(path: Path, cluster: str) -> dict:
     text = path.read_text(encoding="utf-8")
     page = re.search(r"^- Page: `([^`]+)`", text, re.MULTILINE).group(1)
-    grade = re.search(r"^- Grade: \*\*([A-Z-]+)\*\*", text, re.MULTILINE).group(1)
-    queries = re.findall(r"^- \d+ impr, \d+ clicks?, pos [\d.]+ :: `([^`]+)`", text, re.MULTILINE)
+    grade = re.search(r"^- Grade: \*\*([A-Z-]+)", text, re.MULTILINE).group(1)
+    if cluster == "sdlt":
+        queries = re.findall(r"^- \d+ impr, \d+ clicks?, pos [\d.]+ :: `([^`]+)`", text, re.MULTILINE)
+        market = []
+    else:
+        # cgt packs: section 2 equity tables "| query | impressions | clicks | position |"
+        # and section 3 market table "| keyword | vol/mo | best peer pos | domain | in our copy |"
+        sec2 = text.split("## 2.", 1)[-1].split("## 3.", 1)[0]
+        queries = [m.group(1).strip() for m in
+                   re.finditer(r"^\| ([^|]+) \| \d+ \| \d+ \| [\d.]+ \|", sec2, re.MULTILINE)
+                   if not m.group(1).strip().startswith("...")]
+        sec3 = text.split("## 3.", 1)[-1].split("## 4.", 1)[0]
+        market = [(m.group(1).strip(), int(m.group(2))) for m in
+                  re.finditer(r"^\| ([^|]+) \| (\d+) \| [^|]+ \| [^|]+ \| [^|]+ \|", sec3, re.MULTILINE)
+                  if m.group(1).strip() != "keyword"]
     # pack-declared exceptions to the protected-element freeze, e.g. a statute
     # correction: "Approved protected-element change ...: H2 `old` -> `new`."
     approved = dict(re.findall(
         r"Approved protected-element change[^`]*`([^`]+)`\s*->\s*`([^`]+)`", text, re.DOTALL))
     return {"pack": path.name, "page": page, "grade": grade, "queries": queries,
-            "approved_changes": approved}
+            "market": market, "approved_changes": approved}
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--baseline", default="HEAD", help="git ref of the pre-edit state")
+    ap.add_argument("--cluster", default="sdlt", choices=sorted(CLUSTERS))
     args = ap.parse_args()
+
+    cfg = CLUSTERS[args.cluster]
+    pack_dir = cfg["dir"] / "packs"
+    notes_dir = cfg["dir"] / "notes"
+    universe = cfg["universe"]
 
     failures: list[str] = []
 
     # gate 7: ledger balance
-    with open(LEDGER, encoding="utf-8") as f:
+    with open(cfg["dir"] / "ledger.csv", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    if len(rows) != UNIVERSE:
-        failures.append(f"LEDGER: {len(rows)} rows, expected {UNIVERSE}")
+    if len(rows) != universe:
+        failures.append(f"LEDGER: {len(rows)} rows, expected {universe}")
 
-    for pack_file in sorted(PACK_DIR.glob("PACK_*.md")):
-        pack = parse_pack(pack_file)
+    for pack_file in sorted(pack_dir.glob("PACK_*.md")):
+        pack = parse_pack(pack_file, args.cluster)
         rel = repo_path(pack["page"])
         fpath = ROOT / rel
         if not fpath.exists():
@@ -154,6 +183,24 @@ def main() -> int:
                 new_h2 = h2_sequence(new)
                 if not is_subsequence(old_h2, new_h2):
                     failures.append(f"{pack['pack']}: baseline H2 sequence not preserved")
+
+        # gate 6 (cgt): cluster coverage. Every section-3 keyword with volume >= 50
+        # is placed in the page, or named in the page's coverage note (a written
+        # decline). The gate enforces that a decision exists; judgement made it.
+        if pack["market"]:
+            slug = pack["page"].rstrip("/").split("/")[-1]
+            note_file = notes_dir / f"{slug}_coverage.md"
+            note_text = note_file.read_text(encoding="utf-8").lower() if note_file.exists() else ""
+            if not note_file.exists():
+                failures.append(f"{pack['pack']}: coverage note missing ({note_file.name})")
+            for kw, vol in pack["market"]:
+                if vol < 50:
+                    continue
+                if query_covered(kw, page_tokens):
+                    continue
+                if kw.lower() in note_text:
+                    continue
+                failures.append(f"{pack['pack']}: keyword neither placed nor declined: {kw!r} (vol {vol})")
 
     if failures:
         print(f"EQUITY GATE: {len(failures)} failure(s)")

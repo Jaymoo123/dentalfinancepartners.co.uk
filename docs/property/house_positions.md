@@ -4009,6 +4009,11 @@ Verified by the manager at legislation.gov.uk + the GOV.UK measure page on 2026-
 - Foreign tax credit relief: TIOPA 2010 (treaty or unilateral), capped at the UK CGT attributable to the same gain.
 - Sources: CG78300-78310; Sch 2 FA 2019; TIOPA 2010 Part 2.
 
+**Sale below probate value (added 2026-08-20, CGT cluster batch, writer source-verified at legislation.gov.uk):**
+- **IHTA 1984 s.191 relief**: where PRs sell "qualifying investments"/land within **THREE YEARS of death** for less than probate value, they may claim to substitute the sale price for the death value for IHT. The **four-year** figure in s.191(1A) is the CLAIM deadline for land sold in the third year, NOT the sale window — do not conflate.
+- **TCGA 1992 s.274**: where a value has been "ascertained" for IHT, that value is the CGT base cost. So a successful s.191 claim substitutes the lower sale price as base cost too, which KILLS the expected CGT loss. Never write "sell below probate value and claim a CGT loss" without this caveat.
+- The deceased's unused capital losses die with them; losses of the year of death can be carried back against the deceased's own gains of the three preceding tax years (TCGA 1992 s.62(2)), later years first.
+
 
 ## 5.A BADR trading test post-FHL abolition (serviced accommodation edge) — Wave 10 mini-lock (added 2026-07-08, manager source-verified)
 

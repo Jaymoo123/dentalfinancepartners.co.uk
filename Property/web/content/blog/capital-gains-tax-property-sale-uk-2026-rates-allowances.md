@@ -3,6 +3,8 @@ title: "Capital Gains Tax on Property Sale UK 2026: Rates and Allowances"
 slug: "capital-gains-tax-property-sale-uk-2026-rates-allowances"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances"
 date: "2026-05-21"
+reviewedAt: "2026-08-20"
+dateModified: "2026-08-20"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "CGT on UK Property Sale 2026: Allowances & Reliefs Explained"
@@ -22,7 +24,7 @@ faqs:
   - question: "What costs can I deduct when calculating capital gains on property?"
     answer: "You can deduct the original purchase price, SDLT or LTT (Wales) and legal fees on purchase, estate agent fees and legal costs on sale, and capital improvements (not repairs). The improvements must add to the property's value, not maintain it: a new extension is capital; a replacement boiler is revenue. Indexation allowance no longer applies for individuals (abolished 6 April 2008); it remains for companies on property held before that date."
   - question: "When do I need to report a property sale to HMRC?"
-    answer: "UK residential property disposals where CGT is due must be reported and paid within 60 days of completion via HMRC's Capital Gains Tax on UK property service. The same window applies to non-residents disposing of UK residential property. Late filing penalties start at £100 and escalate, plus daily penalties after 3 months and 6 months. The annual self-assessment return reconciles the position with any over- or under-payment adjusted."
+    answer: "UK residential property disposals where CGT is due must be reported and paid within 60 days of completion via HMRC's Capital Gains Tax on UK property service. The same window applies to non-residents disposing of UK residential property. Late filing penalties start at £100, with £10 daily penalties from 3 months and further penalties at 6 and 12 months. The annual self-assessment return reconciles the position with any over- or under-payment adjusted."
   - question: "What is the order of calculation for a CGT property sale?"
     answer: "Five steps. (1) Sale proceeds minus costs of sale (estate agent, legal fees) equals net proceeds. (2) Original purchase price plus acquisition costs (SDLT/LTT, legal fees) plus capital improvements equals base cost. (3) Net proceeds minus base cost equals the gross gain. (4) Apply Principal Private Residence Relief if applicable (covered separately for former main residences). (5) Apply the £3,000 annual exempt amount. The remainder is the taxable gain, taxed at 18% (basic rate band) or 24% (higher rate band)."
   - question: "How does the 60-day reporting deadline interact with my self-assessment return?"
@@ -34,11 +36,23 @@ faqs:
   - question: "How does CGT work when selling a property through a limited company?"
     answer: "Gains realised inside a limited company are taxed as part of the company's corporation tax computation at 19% (small profits rate, profits under £50k) or 25% (main rate, over £250k), not at the personal CGT rates of 18/24%. The company does not have an annual exempt amount. To get the proceeds out to the landlord personally, dividend tax (10.75% / 35.75% / 39.35%) or salary applies. For long-hold strategies where proceeds are reinvested rather than extracted, the company route often wins on net tax."
   - question: "What are the most common CGT mistakes landlords make on a property sale?"
-    answer: "Five recurring patterns: (1) using exchange date rather than completion date as the disposal date; (2) missing capital improvements added years ago to the base cost; (3) forgetting to apply PRR to former main residences; (4) missing the 60-day reporting deadline; (5) double-counting the annual exempt amount across multiple disposals in the same tax year (the £3,000 applies once per tax year per individual, not per disposal). Each can cost from hundreds to thousands of pounds in incorrect tax."
+    answer: "Five recurring patterns: (1) using the completion date rather than the exchange date as the disposal date (exchange fixes the tax year; completion only starts the 60-day clock); (2) missing capital improvements added years ago to the base cost; (3) forgetting to apply PRR to former main residences; (4) missing the 60-day reporting deadline; (5) double-counting the annual exempt amount across multiple disposals in the same tax year (the £3,000 applies once per tax year per individual, not per disposal). Each can cost from hundreds to thousands of pounds in incorrect tax."
   - question: "Can I offset capital losses against a property gain?"
     answer: "Yes. Current-year capital losses must be set against current-year gains before applying the annual exempt amount. Brought-forward losses from prior years can be set against current-year gains AFTER the annual exempt amount is applied (so you preserve the £3,000 if the brought-forward losses cover the full gain). Losses are tracked indefinitely on your self-assessment return until used."
   - question: "What if the property sale is part of a divorce or relationship breakdown?"
     answer: "Transfers between spouses or civil partners during marriage (or before decree absolute) are at no-gain-no-loss for CGT. Special rules in TCGA 1992 s.225B apply post-separation in some circumstances. The Mirror Trusts and Civil Partnership (Amendments to Schedules 1, 2 and 3 to the Capital Allowances Act 2001) Order 2024 (and related provisions from April 2023) extended favourable treatment for transfers within three years of separation. The tax treatment of divorce-related property transfers is fact-specific and often warrants specialist advice."
+  - question: "If you are non-resident, will you be taxed twice on a UK property sale?"
+    answer: "Non-resident capital gains tax is a UK charge and it stands wherever you live, because the UK keeps the taxing rights on gains from UK land under essentially every treaty it has signed. Your country of residence may tax the same gain as well. Where it does, the treaty normally requires it to give credit for the UK tax paid, or to exempt the gain. That relief has to be claimed on the other country's return, it is not applied automatically, and the credit is capped at the foreign tax the other country would have charged on the same gain. Get the UK computation settled first, because it is the figure the credit claim is built on."
+  - question: "What is NRCGT and when did it start?"
+    answer: "NRCGT is non-resident capital gains tax, the charge on people and entities outside the UK who dispose of UK land. It arrived in stages: residential property from 6 April 2015, then commercial property, bare land and indirect disposals of shares in UK property-rich companies from 6 April 2019. Because of that staging, the default base cost is the market value at 5 April 2015 for residential property and 5 April 2019 for non-residential, so you are usually taxed only on the growth since those dates. An election can take you off that default. On a residential property rebased at April 2015 you can apportion the whole gain in a straight line across your ownership instead, and on either route you can choose to compute the gain from your actual original cost. Neither helps unless the facts happen to suit it."
+  - question: "Which CGT rates apply if a sale exchanged before 30 October 2024 but completed after it?"
+    answer: "The old ones. For capital gains tax the disposal happens when the contract is made, so an exchange on or before 29 October 2024 fixes the gain in the pre-change regime: 18% and 28% on residential property, 10% and 20% on commercial property and land. Completion after the change date does not move it. The 60-day reporting and payment clock runs the other way round, from completion, so the return can fall due months after the tax year the gain actually belongs to. Contracts between connected parties around a rate change attract more scrutiny than arm's length sales, so take advice before relying on the exchange date in a family transfer."
+  - question: "What were the capital gains tax rates in 2024/25?"
+    answer: "2024/25 split in two. For residential property disposals up to 29 October 2024 the rates were 18% and 28%, and non-residential gains were charged at 10% and 20%. From 30 October 2024 onwards both were charged at 18% and 24%, which are still the rates today. The annual exempt amount was £3,000 for the whole of 2024/25, down from £6,000 in 2023/24. Rates for 2025/26 and 2026/27 are identical to the post-30-October-2024 position, so no further change has happened since."
+  - question: "Do you have to report a commercial property or land sale within 60 days?"
+    answer: "Not if you are UK resident. The 60-day CGT on UK property return covers UK residential property, so a UK resident selling a shop, a warehouse or bare land reports the gain on the capital gains pages of the Self Assessment return instead, with the tax due by 31 January after the end of the tax year. Non-residents are the exception and file within 60 days for every UK land disposal, residential or not, whether or not any tax is due. The rate is the same 18% and 24% either way. Only the deadline moves, and the later deadline is the one people misremember as no deadline at all."
+  - question: "Do I still pay UK CGT if I move abroad before selling?"
+    answer: "Yes. Leaving the UK does not take a UK property outside the UK CGT net, because the non-resident rules charge the gain wherever you live. Selling while abroad can still change the number, because the rebased base cost and your UK income for the year both feed the calculation. The temporary non-residence rules are a further catch, and a narrower one than they look: they bite where you were UK resident in at least four of the seven tax years before you left and you return within five years, and they reach the gains the non-resident charge did not already tax, mainly pre-April-2015 value and assets outside the UK. A post-2015 UK residential gain is already taxed in full, so there is nothing left for them to recapture."
 ---
 
 <p><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital gains tax</a> on property sale UK 2026 remains a significant consideration for landlords and property investors. With the annual exempt amount continuing its reduction and property values remaining high, understanding your CGT liability is crucial when planning property disposals.</p>
@@ -52,7 +66,7 @@ faqs:
 </ul>
 <p>These are the definitive rates for property sales completing in the 2026 tax year. They apply to the taxable gain, which is calculated after deducting your annual exempt amount and all allowable costs. Your income tax band for CGT purposes is determined by adding the taxable gain to your other taxable income (like salary or rental profits) for the year.</p>
 <p><strong>Example:</strong> A landlord with a £35,000 salary makes a £60,000 property gain. The personal allowance and basic rate band for 2026/27 mean they would pay 18% CGT on the first portion of the gain that falls within the remaining basic rate band, and 24% on the portion that pushes them into the higher rate band.</p>
-<p>The annual exempt amount for capital gains tax continues its significant reduction:</p>
+<p>The annual exempt amount for capital gains tax was cut sharply and has stood at £3,000 since April 2024:</p>
 <ul>
 <li><strong>2026/27:</strong> £3,000</li>
 <li><strong>2025/26:</strong> £3,000</li>
@@ -119,6 +133,46 @@ faqs:
 <li>Estate agent and legal fees</li>
 <li>Evidence of any periods of personal occupation</li>
 </ul>
+
+<h2>Do you pay 18% or 24% on your gain?</h2>
+<p>On a gain of any size, usually both. The two rates are not a label attached to you as a taxpayer, they are slices of a single gain, and where the cut falls depends on how much of your basic rate band your income has already used up.</p>
+<p>Work out capital gains on residential property in this order: take the gain, deduct any reliefs and losses, deduct the £3,000 <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">annual exempt amount</a>, then stack what is left on top of your taxable income for the year. Income fills the band first and the gain sits on top of it, so the part of the gain below £50,270 of combined income and gain is charged at 18% and the rest at 24%. If your income alone already runs past £50,270, there is no 18% slice left to use and the whole gain is charged at 24%.</p>
+<p>Trustees and personal representatives get no 18% slice at all. They pay 24% on the whole gain, and a trust's annual exempt amount is £1,500 rather than £3,000. If you want the band-splitting arithmetic worked through in more detail, our <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">CGT rates on property page</a> runs five examples.</p>
+
+<h2>Have capital gains tax rates gone up?</h2>
+<p>CGT rates last changed on 30 October 2024, and whether that counted as an increase depends entirely on what you are selling.</p>
+<p>Sell residential property and your rates came down. The CGT higher rate on residential gains was 28% before that date and is 24% now. The basic rate stayed at 18% throughout. A higher rate taxpayer selling a rental flat today pays four percentage points less on the gain than the same disposal would have cost in early 2024.</p>
+<p>Sell commercial property or land and your rates went up. Non-residential gains were charged at 10% and 20% before 30 October 2024, and they now use the same 18% and 24% scale as residential property. Business Asset Disposal Relief has risen twice on its own track: 10% up to 5 April 2025, 14% for 2025/26, and 18% from 6 April 2026.</p>
+<p>The bigger squeeze on landlords has not been the rate at all. It has been the annual exempt amount. Take a £60,000 gain. In 2022/23 you sheltered £12,300 and paid 28% on the rest, which came to £13,356. Today you shelter £3,000 and pay 24% on the rest, which comes to £13,680. The rate cut looks generous and the allowance cut quietly took back more than the rate cut gave.</p>
+
+<h2>What were the capital gains tax rates in 2024/25 and 2025/26?</h2>
+<p>2024/25 is the awkward year, because the rates changed part-way through it. Disposals landing on or before 29 October 2024 used the old rates and disposals from 30 October 2024 onwards used the current ones. Every year since has run on a single set of rates.</p>
+<table>
+<thead>
+<tr><th>Tax year</th><th>Residential property (basic / higher)</th><th>Non-residential and land (basic / higher)</th><th>Annual exempt amount</th></tr>
+</thead>
+<tbody>
+<tr><td>2023/24</td><td>18% / 28%</td><td>10% / 20%</td><td>£6,000</td></tr>
+<tr><td>2024/25, to 29 October 2024</td><td>18% / 28%</td><td>10% / 20%</td><td>£3,000</td></tr>
+<tr><td>2024/25, from 30 October 2024</td><td>18% / 24%</td><td>18% / 24%</td><td>£3,000</td></tr>
+<tr><td>2025/26</td><td>18% / 24%</td><td>18% / 24%</td><td>£3,000</td></tr>
+<tr><td>2026/27</td><td>18% / 24%</td><td>18% / 24%</td><td>£3,000</td></tr>
+</tbody>
+</table>
+<p>CGT on residential property in 2025/26 and 2026/27 is identical: 18% and 24%, with a £3,000 annual exempt amount in both. The 2025/26 and 2026/27 positions are the same, so an older calculation built on 2025/26 rates still holds.</p>
+<p>One thing to check before you reuse an older calculation. Watch the annual exempt amount as closely as the rate, because the £3,000 figure has applied since 6 April 2024. Any 2024/25 or later computation still deducting £6,000 or £12,300 is overstating your relief and understating the tax, and the 60-day payment that follows will be short.</p>
+
+<h2>What is the CGT rate on commercial property and land?</h2>
+<p>The same 18% and 24%. Since 30 October 2024 there has been no separate rate for commercial property, bare land or any other non-residential asset held personally, so a shop, a warehouse, a development plot and a rental house all sit on one scale. Personal capital gain rates for the sale of commercial land follow your income position, not the type of asset.</p>
+<p>The reliefs are where the two still part company. Rollover relief attaches to land and buildings you use in your own trade, so a trader replacing premises can roll the gain into the replacement rather than pay it now. Business Asset Disposal Relief does not attach to a building at all: it needs a disposal of the business itself, or of business assets after you stop trading, or an associated disposal alongside your exit from a partnership or company, so selling one shop while you carry on trading from the others gets you nothing. Neither relief reaches residential investment property. Capital allowances claimed on plant and machinery inside a commercial building also have to be unwound properly before you settle the gain. Our page on <a href="/blog/capital-gains-tax/cgt-commercial-property-different-residential">commercial versus residential property CGT</a> sets out where the mechanics diverge.</p>
+
+<h2>Do non-residents pay capital gains tax on UK property?</h2>
+<p>Yes. If you live abroad and sell UK property, you pay UK capital gains tax on the gain at the same 18% and 24% rates a UK resident pays, and as an individual you keep the same £3,000 annual exempt amount. The charge is usually called non-resident capital gains tax, or NRCGT. Being taxed somewhere else on the same sale does not remove the UK charge; it is dealt with through a credit, if the relevant treaty gives you one.</p>
+<h3>You report every disposal, even when no tax is due</h3>
+<p>A UK resident only has to file the 60-day return where CGT is actually payable. As a non-resident you file a non-resident CGT return within 60 days of every UK land disposal, whether the answer is a large bill, a loss or nothing at all. That covers residential property, commercial property and land, and indirect disposals of shares in UK property-rich companies. Miss it and the penalty starts at £100 even where the tax due was zero.</p>
+<h3>Your base cost is usually rebased, not what you paid</h3>
+<p>Non-residents were brought into the UK CGT net in stages: residential property from 6 April 2015, then commercial property, land and indirect disposals from 6 April 2019. The default is that you only pay on growth since those dates, so a residential property you bought in 2004 is normally measured from its market value on 5 April 2015 rather than the price you paid. You can elect out of that if the facts suit you better, either by apportioning the whole gain in a straight line over your ownership or by using your actual original cost.</p>
+<p>Timing a move matters as much as timing a sale, though moving abroad to sell saves less than people expect. A residential gain from April 2015 onwards is already inside the non-resident charge in full, so there is no UK tax to escape by leaving. The temporary non-residence rules then catch what is left over: where you were UK resident in at least four of the seven tax years before you went and you come back within five years, gains the non-resident charge did not reach, principally pre-April-2015 value and assets outside the UK, are taxed in the year you return. The detail sits in our guides to <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates and reporting</a>, <a href="/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide">selling UK property from overseas</a> and the <a href="/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property">five-year temporary non-residence rule</a>.</p>
 
 <h2>Related Reading</h2>
 <ul>

@@ -5,8 +5,8 @@ Generated 2026-08-20 from live pulls (GSC 90d to 2026-08-20, Bing page-query sta
 ## 1. Target and permission level
 
 - Page: `/calculators/capital-gains-tax-calculator` (capital-gains-tax-calculator.ts)
-- Clusters owned: capital gains tax calculator, uk capital gains tax calculator
-- Combined peer-winnable volume: 27,910/mo
+- Clusters owned: capital gains tax calculator, capital gains tax on shares calculator, uk capital gains tax calculator, capital gains tax how much, how much capital gain
+- Combined peer-winnable volume: 34,140/mo
 - Grade: **REFRAME**
 - Permission: REFRAME. metaTitle, H1, H2s, body and FAQ may change. For the calculator: copy is an UNPROVEN lever on tool SERPs (SDLT dossier 4b); run as a stated experiment, not a promised win.
 - Revert path: git revert of the single commit touching this page; `blog_optimizations` carries `content_backup_path`.
@@ -61,13 +61,29 @@ NOTE: GSC returns zero named queries for this page despite the impressions above
 | cgt calculator uk | 9900 | 18 | ukpropertyaccountants.co.uk | NO |
 | capital gains tax calculator uk | 9900 | 20 | taxd.co.uk | NO |
 | capital gains calculator uk | 9900 | 19 | taxd.co.uk | NO |
+| capital gains tax how much | 9900 | 60 | taxd.co.uk | NO |
+| how much capital gain | 9900 | 61 | taxd.co.uk | yes |
 | what is cgt | 8100 | 100 | cruseburke.co.uk | NO |
+| capital gain tax allowance | 8100 | 25 | taxd.co.uk | NO |
+| cgt allowance | 8100 | 55 | taxd.co.uk | yes |
+| capital gains tax allowance | 8100 | 52 | taxd.co.uk | yes |
+| capital gains rate uk | 6600 | 38 | uklandlordtax.co.uk | NO |
 | capital gain | 4400 | 76 | cruseburke.co.uk | yes |
 | cgt calculator | 3600 | 15 | ukpropertyaccountants.co.uk | NO |
 | how much capital gains tax uk | 3600 | 44 | ukpropertyaccountants.co.uk | NO |
 | capital gains tax on property | 3600 | 32 | ukpropertyaccountants.co.uk | yes |
+| uk capital gains tax allowance | 3600 | 51 | taxd.co.uk | NO |
+| capital gains allowance | 3600 | 61 | taxd.co.uk | NO |
+| capital gains uk allowance | 3600 | 39 | uklandlordtax.co.uk | NO |
+| uk capital gains allowance | 3600 | 49 | taxd.co.uk | NO |
 | capital gains calculator | 2900 | 15 | ukpropertyaccountants.co.uk | NO |
 | capital gain tax calculator | 2900 | 22 | taxd.co.uk | NO |
+| capital gains tax shares | 2900 | 62 | cruseburke.co.uk | NO |
+| cgt and shares | 2900 | 64 | cruseburke.co.uk | NO |
+| capital gains tax on shares | 2900 | 47 | taxd.co.uk | NO |
+| cgt on shares | 2900 | 66 | cruseburke.co.uk | NO |
+| capital gains from shares | 2900 | 58 | cruseburke.co.uk | NO |
+| capital gains tax and shares | 2900 | 19 | cruseburke.co.uk | NO |
 | capital gains tax property | 2400 | 35 | ukpropertyaccountants.co.uk | NO |
 | capital gain in property | 2400 | 31 | ukpropertyaccountants.co.uk | NO |
 | capital gains on property | 2400 | 20 | ukpropertyaccountants.co.uk | NO |
@@ -89,6 +105,7 @@ NOTE: GSC returns zero named queries for this page despite the impressions above
 | how capital gains tax is calculated | 1900 | 44 | taxd.co.uk | NO |
 | how to calculate capital gains | 1900 | 29 | taxd.co.uk | NO |
 | threshold for capital gains tax | 1900 | 83 | cruseburke.co.uk | NO |
+| capital gains tax allowance 2025/26 | 1900 | 84 | uklandlordtax.co.uk | NO |
 | capital gains tax on property calculator uk | 1600 | 16 | ukpropertyaccountants.co.uk | NO |
 | cgt calculator property uk | 1600 | 16 | ukpropertyaccountants.co.uk | NO |
 | property cgt calculator uk | 1600 | 12 | ukpropertyaccountants.co.uk | NO |
@@ -96,25 +113,8 @@ NOTE: GSC returns zero named queries for this page despite the impressions above
 | cgt on property uk | 1600 | 36 | ukpropertyaccountants.co.uk | NO |
 | capital gains tax on uk property | 1600 | 36 | ukpropertyaccountants.co.uk | NO |
 | what is the capital gain tax percentage | 1600 | 80 | cruseburke.co.uk | NO |
-| capital gains tax uk property | 1600 | 58 | landlordstudio.com | NO |
-| capital gains tax on house sale | 1300 | 44 | ukpropertyaccountants.co.uk | NO |
-| capital gains tax for house sale | 1300 | 50 | ukpropertyaccountants.co.uk | NO |
-| capital gains calculator shares | 1300 | 10 | taxd.co.uk | NO |
-| cgt house sale | 1300 | 30 | taxd.co.uk | NO |
-| capital gains calculator hmrc | 1000 | 14 | taxd.co.uk | NO |
-| hmrc capital gains tax calculator | 1000 | 14 | taxd.co.uk | NO |
-| residential property capital gains tax | 1000 | 40 | ukpropertyaccountants.co.uk | NO |
-| hmrc cgt calculator | 1000 | 10 | taxd.co.uk | NO |
-| capital gains tax on property sale | 1000 | 27 | ukpropertyaccountants.co.uk | NO |
-| report and pay capital gains tax on uk property | 1000 | 11 | uklandlordtax.co.uk | NO |
-| cgt on residential property | 1000 | 58 | ukpropertyaccountants.co.uk | NO |
-| how much capital gains tax do i pay | 880 | 18 | taxd.co.uk | NO |
-| how much is capital gains on property | 880 | 42 | ukpropertyaccountants.co.uk | NO |
-| how much capital gain tax on property | 880 | 55 | ukpropertyaccountants.co.uk | NO |
-| how much is capital gains tax property | 880 | 42 | ukpropertyaccountants.co.uk | NO |
-| how much capital gain on property | 880 | 41 | ukpropertyaccountants.co.uk | NO |
 
-250 of 254 cluster keywords do NOT appear verbatim in our copy.
+401 of 409 cluster keywords do NOT appear verbatim in our copy.
 
 ## 4. Competitor teardown (every cluster URL)
 
@@ -131,6 +131,10 @@ NOTE: GSC returns zero named queries for this page despite the impressions above
   - title: UK Capital Gains Tax Calculator: A Complete Guide - Taxd
   - H1: A Complete Guide to Understanding Capital Gains Tax with the Right Calculators in the UK
   - headings: 1. What is Capital Gains Tax (CGT) in the UK? | Key Points to Keep in Mind About CGT: | 2. How the Capital Gains Tax UK Calculator Works | What Does the Capital Gains Tax UK Calculator Do? | Why You Should Use a Capital Gains Tax UK Calculator | 3. What Happens If You’re Leaving the UK and Need a Tax Refund? | Why Would You Be Eligible for a Tax Refund When Leaving the UK? | How Does the Tax Refund Leaving UK Calculator Work? | 4. When Should You Use the HMRC Capital Gains Tax Calculator? | How to Use the HMRC Capital Gains Tax Calculator: | 5. Final Thoughts: Tools for Tax Planning and Refunds | Latest news
+- `https://www.taxd.co.uk/blog/capital-gains-tax-shares/` - 1703 words, 0 tables, FAQ=False, calculator=False
+  - title: Capital Gains Tax Calculator for Shares - Taxd
+  - H1: Navigating the Capital Gains Tax Calculator for Shares: Everything You Need to Know
+  - headings: What is Capital Gains Tax (CGT)? | How Does CGT on Shares Work in the UK? | Why You Need a Capital Gains Tax Calculator for Shares | How to Use the HMRC Capital Gains Tax Calculator for Shares | Step 1: Gather Your Information | Step 2: Input Your Details into the Calculator | Step 3: Review the Results | Step 4: Plan Your Tax Strategy | Step 5: File Your Tax Return | Common Mistakes to Avoid When Using a Capital Gains Tax Calculator | How to Minimize Your Capital Gains Tax on Shares | Conclusion | Latest news
 - `https://www.ukpropertyaccountants.co.uk/capital-gain-tax-guide/` - NO TEARDOWN: ukpropertyaccountants (HTTP 202 captcha stub, keyword-data-only)
 - `https://www.taxd.co.uk/blog/capital-gains-tax-property-uk` - 1631 words, 0 tables, FAQ=False, calculator=False
   - title: Understanding Capital Gains Tax on Property in the UK
@@ -160,6 +164,10 @@ NOTE: GSC returns zero named queries for this page despite the impressions above
   - title: Provestor
   - H1: Capital gains tax on residential properties
   - headings: Capital Gains Tax on Property | What are the changes? | How to report and pay the tax | Penalties & interest | In preparation of the property sale | In this section: | Actions to take before your company year end | Business Tax Account | Capital gains tax on residential properties | Corporation tax | Making PAYE payments to HMRC | Personal tax planner | Reporting benefits in kind - form P11D | Reporting income on your Self Assessment | Understanding tax codes | VAT returns in Provestor | What is included on a Self Assessment tax return? | In this section:
+- `https://www.taxd.co.uk/blog/how-much-is-the-capital-gain-tax-allowance` - NO TEARDOWN: not fetched this pass - flagged gap
+- `https://uklandlordtax.co.uk/tax-guide/tax-rates-and-allowances/` - NO TEARDOWN: not fetched this pass - flagged gap
+- `https://cruseburke.co.uk/capital-gains-tax-on-shares/` - NO TEARDOWN: not fetched this pass - flagged gap
+- `https://www.taxd.co.uk/blog/how-can-you-easily-calculate-capital-gains-tax-in-the-uk` - NO TEARDOWN: not fetched this pass - flagged gap
 
 ## 5. Ours, side by side
 

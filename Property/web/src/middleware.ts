@@ -14,6 +14,11 @@ const BLOG_TO_LOCATION: Record<string, string> = {
 };
 
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  // --- CGT cluster batch (2026-08-20): three net-new pages from the CGT dossier.
+  "do-limited-companies-pay-capital-gains-tax-property": "capital-gains-tax",
+  "capital-gains-tax-second-home-sale": "capital-gains-tax",
+  "capital-gains-tax-on-shares-uk": "capital-gains-tax",
+  // --- end CGT cluster block ---
   // --- Wave 11 (2026-08): landlord compliance + leasehold + commercial.
   // Registered ahead of the wave (P6 precondition) so canonical URLs resolve
   // the moment each page lands; dynamicParams=false 404s them until then,

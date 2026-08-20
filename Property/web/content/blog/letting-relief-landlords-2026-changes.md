@@ -3,6 +3,7 @@ title: "Lettings Relief in 2026/27: Post-2020 Rules, £40k Cap, Shared Occupatio
 slug: "letting-relief-landlords-2026-changes"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/letting-relief-landlords-2026-changes"
 date: "2026-05-24"
+dateModified: "2026-08-20"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "Lettings Relief 2026/27: Post-2020 s.223B, £40k Cap"
@@ -43,6 +44,18 @@ faqs:
     answer: "No. Converting the home into self-contained flats (each with its own kitchen, bathroom and entrance) creates separate dwellings for CGT purposes. The owner's main-residence dwelling and the let-flat dwelling are then taxed separately on disposal: PRR applies only to the main-residence portion; the let portion is taxed in full as an investment-property gain without Lettings Relief (because the shared-occupation test is not met on a self-contained flat). The conversion itself can crystallise CGT consequences on the portion of the property that ceases to be the owner's main residence. Owners considering self-contained flat conversions should run the CGT analysis before the conversion, not after, because the position is materially different from a shared-occupation lodger arrangement."
   - question: "What if I'm a non-resident landlord, does Lettings Relief apply to my NRCGT computation?"
     answer: "Lettings Relief under s.223B is available to non-UK residents on UK residential property disposals within the NRCGT regime, provided the underlying PRR conditions are met. A non-resident landlord with shared-occupation lodgers in a former-UK-main-residence can claim Lettings Relief on the eventual disposal, subject to the same lower-of-three computation. The 60-day CGT on UK property return is mandatory for non-residents on any UK land disposal regardless of whether tax is due, and the Lettings Relief computation is shown on that return. The NRCGT specialist depth is in the <a href=\"/blog/capital-gains-tax/non-resident-cgt-uk-property-rates-reporting\">NRCGT guide</a>. PRR mechanics for non-residents (the conditions for treating a UK property as a main residence while non-resident) are in the <a href=\"/blog/capital-gains-tax/principal-private-residence-relief-landlords\">PRR for landlords guide</a>."
+  - question: "Has lettings relief been abolished?"
+    answer: "No, but it was closed to most landlords on 6 April 2020, which is why so much online commentary calls it abolished. The £40,000 cap is still there and you can still claim it in 2026/27. What you cannot do any more is claim it after moving out and letting the whole property to tenants, which was the situation most claims came from. If you shared the property with your tenant while it was let, and you lived there as your main home, the relief is still open to you and works exactly as it did before."
+  - question: "Can you claim both lettings relief and the annual exempt amount?"
+    answer: "Yes. They apply at different stages, so you get both. Lettings relief reduces the gain itself, up to £40,000, alongside private residence relief. The £3,000 annual exempt amount is then set against whatever chargeable gain is left across all your disposals for the year, and you pay 18% or 24% on the remainder. The order is: gain, less private residence relief, less lettings relief, less this year's capital losses, less the £3,000 annual exempt amount. Losses brought forward from earlier years come last of all, and are used only down to the £3,000 and never through it. See the <a href=\"/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27\">£3,000 annual exempt amount guide</a> for how the allowance is used across multiple disposals."
+  - question: "What capital gains tax reliefs on property can you claim if lettings relief is closed to you?"
+    answer: "Private residence relief for the years you lived there plus the final 9 months, the £3,000 annual exempt amount for each owner, a transfer of part of the property to a spouse or civil partner before the sale so a second annual exempt amount and a second basic-rate band are in play, brought-forward capital losses, and the deferral routes if you are reinvesting. The section on other reliefs and alternatives below sets out each one with the numbers, and the <a href=\"/blog/capital-gains-tax/reduce-cgt-property-disposal-uk\">reduce CGT survey</a> covers the full lever set."
+  - question: "Is residential lettings relief the same as CGT letting relief?"
+    answer: "Yes. Residential lettings relief, letting relief, lettings relief and CGT letting relief all describe the same relief in section 223B TCGA 1992. HMRC uses 'lettings relief'; the singular 'letting relief' is the common spelling in older guidance. There is no separate commercial version: the relief only applies to a dwelling that has been your main home, so it is residential by definition. Do not confuse it with the Rent-a-Room scheme, which is an income tax relief on the rent you receive rather than a CGT relief on the eventual sale."
+  - question: "What is PPR for CGT, and is it the same as PRR?"
+    answer: "Yes, PPR and PRR are the same relief. Principal private residence relief, private residence relief, PPR and PRR all mean the capital gains tax relief on your own home under sections 222 to 226 TCGA 1992. It exempts the share of your gain covering the period the property was your main home, plus the final 9 months of ownership, and it is the prerequisite for lettings relief: no private residence relief means no lettings relief. Depth is in the <a href=\"/blog/capital-gains-tax/principal-private-residence-relief-landlords\">PRR for landlords guide</a>."
+  - question: "Do you have to show the lettings relief computation on your tax return?"
+    answer: "Yes. You show the disposal, the reliefs claimed and the resulting chargeable gain on the capital gains pages (SA108) of your Self Assessment return. Provide your computation with the return, as the SA108 notes ask, and keep the working papers behind it: the whole gain, the private residence relief given, the gain attributable to the letting, the £40,000 cap, and which of the three was lowest. If tax is payable you also report the same figures on the 60-day CGT on UK property return, and the Self Assessment entry then reconciles to it."
 ---
 
 <p>Lettings Relief under section 223B of the Taxation of Chargeable Gains Act 1992 is the post-2020 incarnation of a relief that used to be much broader. Section 223B was inserted by Finance Act 2020 with effect from 6 April 2020. The change was substantive: the relief that previously applied to the let portion of a former main residence (without any requirement for the owner to share occupation with the tenant) is now restricted to live-in landlord arrangements.</p>
@@ -50,6 +63,89 @@ faqs:
 <p>The £40,000 cap survived the change. The lower-of-three computation survived. The PRR-prerequisite survived. What changed is the gateway: shared occupation between owner and tenant is now mandatory. The typical accidental-landlord scenario (owner moves out, lets the former home, no shared occupation) is closed.</p>
 
 <p>This guide sets out the post-2020 framework, the lower-of-three computation under s.223B(4), the corrected position on the transitional cut-off (which is the date of DISPOSAL, not the date of letting), the spouse interaction, and the Rent-a-Room scheme distinction. For the broader PRR framework that drives the Lettings Relief computation, see the <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">PRR for landlords guide</a>. For the CGT framework as a whole, see the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>.</p>
+
+<h2>What is lettings relief?</h2>
+
+<p>Lettings relief is a capital gains tax relief worth up to £40,000 per owner on the part of your property gain that comes from letting a home you also lived in. It only reduces the gain that private residence relief has not already covered, and since 6 April 2020 you only get it if you shared the home with your tenant.</p>
+
+<p>Letting relief, lettings relief and CGT letting relief are the same thing. The spelling varies; the rules do not.</p>
+
+<p>The £40,000 is a ceiling, not a starting point, and it goes per owner, so you and your partner could claim up to £80,000 between you if you both own the property and you both lived there alongside the tenant.</p>
+
+<h2>Who qualifies for lettings relief in 2026/27?</h2>
+
+<p>You qualify if you lived in the property as your main home, let part of it while you were still living there, and shared the living space with your tenant. That is the whole test, and the sharing is the part most people fail.</p>
+
+<ul>
+<li>You are a live-in landlord with lodgers, and you share the kitchen, bathroom or living room with them.</li>
+<li>You let a room or rooms, not a self-contained part of the building with its own front door, kitchen and bathroom.</li>
+<li>Your property was your only or main home for at least part of your ownership.</li>
+<li>You have a gain left over from the letting once private residence relief has been applied, which is the limb most people fail.</li>
+</ul>
+
+<h2>Who no longer qualifies after April 2020?</h2>
+
+<p>If you moved out and let the whole property to tenants, you no longer qualify, and that is the most common landlord situation of all. You also get nothing on a self-contained flat or basement with its own kitchen, bathroom and entrance, or on a property you bought to let and never lived in.</p>
+
+<p>The date that decides which rules apply is when you sell, not when you started letting, and for capital gains tax you sell on exchange of contracts rather than completion. Exchange on or after 6 April 2020 and the restricted rules cover your whole letting history, including the years before 2020. The transitional-rules section below sets out where HMRC states this.</p>
+
+<h2>How is lettings relief calculated?</h2>
+
+<p>Your relief is the lowest of three figures: £40,000, the private residence relief you have already been given on the sale, and the gain attributable to the letting. Work out all three and take the smallest.</p>
+
+<ol>
+<li><strong>Work out the whole gain.</strong> Sale price, less your selling costs, less what you paid and your buying costs, less any capital improvements.</li>
+<li><strong>Apply private residence relief.</strong> It can be restricted where a distinct part of the home was let on its own terms rather than shared with you as one household, and that restriction is what leaves a gain to relieve.</li>
+<li><strong>Work out the gain attributable to letting.</strong> Apportion the whole gain twice: by the share of the floor area let on those terms, and by the share of your ownership period it was let for. Shared kitchens, bathrooms and hallways are not let space.</li>
+<li><strong>Take the lowest of the three.</strong></li>
+</ol>
+
+<h2>Worked example: how much lettings relief would you get on a 2026/27 sale?</h2>
+
+<p>Dana bought a house in Leeds in 2011 for £220,000 and lived in it as her only home for all 15 years. She sells in June 2026 for £600,000 with £12,000 of costs, so her gain is £368,000. She is a higher-rate taxpayer with no basic-rate band left.</p>
+
+<p><strong>Case 1: lodgers sharing the house.</strong> From 2014 Dana let two bedrooms to lodgers who shared her kitchen, bathroom and living room as part of her household.</p>
+
+<ul>
+<li>A household lodger arrangement does not stop any part of the house being her home, so private residence relief covers the whole £368,000 and nothing is left for lettings relief to reduce</li>
+<li>Capital gains tax: <strong>nil</strong></li>
+</ul>
+
+<p>This is the answer for most live-in landlords, and it matches the second worked example further down this page. Taking in lodgers does not cost you private residence relief.</p>
+
+<p><strong>Case 2: a distinct part let to tenants.</strong> Now say Dana instead put the top floor, 25% of the floor area, on its own tenancy from 2014 to 2026, with the tenants keeping those rooms and their own shower room to themselves and sharing only the kitchen and hallway.</p>
+
+<ul>
+<li>Gain attributable to the letting: £368,000 × 25% × 12/15 = <strong>£73,600</strong></li>
+<li>Private residence relief covers the rest: £294,400</li>
+<li>Lowest of three: private residence relief given £294,400, the cap £40,000, let-attributable gain £73,600, so the relief is <strong>£40,000</strong></li>
+<li>Chargeable gain: £73,600 − £40,000 = £33,600, less the £3,000 annual exempt amount = £30,600</li>
+<li>At 24%: <strong>£7,344</strong> of capital gains tax</li>
+</ul>
+
+<p>Case 2 is the narrow situation the relief was left in place for, and the line between the two cases is fact-specific. HMRC treats an ordinary lodger living as part of your household as not restricting private residence relief at all, so most shared arrangements land in case 1. Push the facts far enough the other way to restrict it and you risk failing the shared-occupation test too, which leaves no relief at all. Get the computation checked if you are near that line.</p>
+
+<h2>How do private residence relief and lettings relief fit together?</h2>
+
+<p>Private residence relief comes first and lettings relief only mops up what is left. You cannot claim lettings relief on a property that never qualified for private residence relief.</p>
+
+<p>You will see it written several ways. PRR, PPR, principal private residence relief and main residence relief all mean the same thing. HMRC's manuals use 'private residence relief'; PPR survives from older practice.</p>
+
+<p>It exempts the share of your gain covering the time the property was your only or main home, and you get it automatically. If you own more than one property you may need to nominate which is your main home, which has its own two-year window, covered in the <a href="/blog/capital-gains-tax/cgt-main-residence-election-two-properties">two-properties election guide</a>. The full time-apportionment framework is in the <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">PRR for landlords guide</a>.</p>
+
+<h2>Is there still a 36-month rule for capital gains tax in the UK?</h2>
+
+<p>No. The final period covered by private residence relief is 9 months, not 36. It was cut from 36 months to 18 months on 6 April 2014, and from 18 months to 9 months on 6 April 2020, so anyone quoting a 36-month rule is working from rules more than a decade out of date.</p>
+
+<p>The 36 months survives in one place: if you are long-term disabled, or you move permanently into a care home, the final period is still 36 months, provided neither you nor your spouse or civil partner has another property that is your main residence. For everyone else, budget for 9. On a 15-year ownership the difference is 15% of your gain.</p>
+
+<h2>What will you pay in 2026/27 if lettings relief does not cover your gain?</h2>
+
+<p>You pay 18% or 24% on what is left, after a £3,000 annual exempt amount. The 18% rate covers whatever part of the gain fits inside your remaining basic-rate band and 24% takes everything above it, so on a property gain of any size most of it lands at 24%.</p>
+
+<p>This year's capital losses come off before the £3,000 annual exempt amount and must be used in full, even where that wastes some of the allowance. Losses brought forward from earlier years come off after it, and only so far as your gains still exceed £3,000, so the allowance is never burned on them.</p>
+
+<p>If tax is payable you have 60 days from completion to report and pay, and if your reliefs bring the gain to nil you do not need that return as a UK resident. Non-residents file on every UK land disposal either way. Deadlines are in the <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT deadlines guide</a>; the rate bands are in the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 CGT rates guide</a>.</p>
 
 <h2>The post-2020 framework (section 223B TCGA 1992)</h2>
 

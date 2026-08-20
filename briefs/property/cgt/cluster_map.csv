@@ -1,6 +1,6 @@
 cluster,volume,peer_winnable,kw_count,peer_top10_count,domain_count,grade,page,new_page,adjudicated,score,domains
 capital gains tax calculator,161220,23540,125,11,3,REFRAME,/calculators/capital-gains-tax-calculator,,True,,provestor.co.uk;taxd.co.uk;ukpropertyaccountants.co.uk
-capital gains tax on shares calculator,7530,6230,15,8,1,deferred-shares-decision,,,True,,taxd.co.uk
+capital gains tax on shares calculator,7530,6230,15,8,1,REFRAME,/calculators/capital-gains-tax-calculator,,True,,taxd.co.uk
 capital gains tax on property,33000,5190,102,29,6,EXTEND-BING,/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk,,True,,landlordstudio.com;optimiseaccountants.co.uk;provestor.co.uk;taxd.co.uk;uklandlordtax.co.uk;ukpropertyaccountants.co.uk
 uk capital gains tax calculator,94050,4370,163,7,5,REFRAME,/calculators/capital-gains-tax-calculator,,True,,cruseburke.co.uk;provestor.co.uk;taxd.co.uk;uklandlordtax.co.uk;ukpropertyaccountants.co.uk
 cgt letting relief,4730,4270,19,15,4,EXTEND-GOOGLE,/blog/capital-gains-tax/letting-relief-landlords-2026-changes,,True,,cruseburke.co.uk;taxd.co.uk;uklandlordtax.co.uk;ukpropertyaccountants.co.uk
@@ -15,27 +15,27 @@ capital gains tax private residence relief,1140,610,8,3,3,EXTEND-BING,/blog/capi
 do companies pay cgt,2080,330,18,3,3,NO-PAGE,,do-limited-companies-pay-capital-gains-tax-property,True,,cruseburke.co.uk;uklandlordtax.co.uk;ukpropertyaccountants.co.uk
 cgt in spain,1630,270,7,3,1,excluded-offniche,,,False,0,uklandlordtax.co.uk
 capital gains on second home,14580,260,45,1,2,NO-PAGE,,capital-gains-tax-second-home-sale,True,,cruseburke.co.uk;ukpropertyaccountants.co.uk
-how much capital gains tax on shares,840,200,4,2,1,deferred-shares-decision,,,True,,taxd.co.uk
+how much capital gains tax on shares,840,200,4,2,1,NO-PAGE,,capital-gains-tax-on-shares-uk,True,,taxd.co.uk
 capital gains on property,32330,70,80,1,2,EXTEND-BING,/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk,,True,,cruseburke.co.uk;ukpropertyaccountants.co.uk
 capital gains foreign property,980,70,10,1,1,EXTEND-GOOGLE,/blog/capital-gains-tax/cgt-overseas-property-uk-residents-foreign-disposals,,True,,ukpropertyaccountants.co.uk
 capital gains loss,1370,50,14,1,1,EXTEND-BING,/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses,,True,,taxd.co.uk
-capital gains tax how much,84200,0,103,0,2,REFRAME,/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales,,False,0.54,taxd.co.uk;uklandlordtax.co.uk
-how much capital gain,48020,0,59,0,2,REFRAME,/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords,,False,0.36,cruseburke.co.uk;taxd.co.uk
-capital gains tax rates 2024/25,2640,0,24,0,1,NO-PAGE,,,False,0.16,ukpropertyaccountants.co.uk
-cgt on gifted property,6000,0,18,0,2,REFRAME,/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy,,False,0.56,optimiseaccountants.co.uk;ukpropertyaccountants.co.uk
-capital gains tax rate 2026,2800,0,18,0,1,NO-PAGE,,,False,0.28,ukpropertyaccountants.co.uk
-how to avoid capital gains tax uk,4890,0,18,0,1,REFRAME,/blog/capital-gains-tax/cgt-divorce-property-transfer-tax-implications,,False,0.38,taxd.co.uk
-capital gains tax on stocks,2380,0,13,0,1,REFRAME,/blog/non-resident-landlord-tax/dont-pay-twice-an-introduction-to-tax-treaties,,False,0.47,cruseburke.co.uk
-eis capital gains tax deferral,1390,0,11,0,1,REFRAME,/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk,,False,0.42,optimiseaccountants.co.uk
-allowable deductions for capital gains tax on property uk,790,0,10,0,3,EXTEND-GOOGLE,/blog/capital-gains-tax/property-capital-gains-tax-calculator,,False,0.29,optimiseaccountants.co.uk;provestor.co.uk;uklandlordtax.co.uk
-tax deferred capital gains,630,0,9,0,1,NO-PAGE,,,False,0.17,uklandlordtax.co.uk
-capital gains tax gifts,1960,0,10,0,3,NO-PAGE,,,False,0.28,cruseburke.co.uk;taxd.co.uk;ukpropertyaccountants.co.uk
+capital gains tax how much,84200,0,103,0,2,REFRAME,/calculators/capital-gains-tax-calculator,,True,,taxd.co.uk;uklandlordtax.co.uk
+how much capital gain,48020,0,59,0,2,REFRAME,/calculators/capital-gains-tax-calculator,,True,,cruseburke.co.uk;taxd.co.uk
+capital gains tax rates 2024/25,2640,0,24,0,1,EXTEND-GOOGLE,/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances,,True,,ukpropertyaccountants.co.uk
+cgt on gifted property,6000,0,18,0,2,EXTEND-BING,/blog/capital-gains-tax/cgt-gifting-property-family-members-uk,,True,,optimiseaccountants.co.uk;ukpropertyaccountants.co.uk
+capital gains tax rate 2026,2800,0,18,0,1,EXTEND-GOOGLE,/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances,,True,,ukpropertyaccountants.co.uk
+how to avoid capital gains tax uk,4890,0,18,0,1,REFRAME,/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk,,True,,taxd.co.uk
+capital gains tax on stocks,2380,0,13,0,1,NO-PAGE,,capital-gains-tax-on-shares-uk,True,,cruseburke.co.uk
+eis capital gains tax deferral,1390,0,11,0,1,REFRAME,/blog/capital-gains-tax/cgt-deferral-strategies-property-investors-uk,,True,,optimiseaccountants.co.uk
+allowable deductions for capital gains tax on property uk,790,0,10,0,3,REFRAME,/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales,,False,0.38,optimiseaccountants.co.uk;provestor.co.uk;uklandlordtax.co.uk
+tax deferred capital gains,630,0,9,0,1,REFRAME,/blog/non-resident-landlord-tax/dont-pay-twice-an-introduction-to-tax-treaties,,False,0.42,uklandlordtax.co.uk
+capital gains tax gifts,1960,0,10,0,3,REFRAME,/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy,,False,0.42,cruseburke.co.uk;taxd.co.uk;ukpropertyaccountants.co.uk
 capital gains tax specialist uk,1360,0,9,0,2,REFRAME,/blog/property-accountant-services/property-accountant-near-me,,False,0.33,optimiseaccountants.co.uk;ukpropertyaccountants.co.uk
-capital gains tax divorce,1680,0,8,0,1,REFRAME,/blog/incorporation-and-company-structures/sdlt-divorce-separation-transfer-relief-schedule-3-paragraph-3-fa-2003,,False,0.62,uklandlordtax.co.uk
-capital gains inheritance,1840,0,8,0,1,NO-PAGE,,,False,0.28,ukpropertyaccountants.co.uk
+capital gains tax divorce,1680,0,8,0,1,REFRAME,/blog/capital-gains-tax/cgt-divorce-property-transfer-tax-implications,,True,,uklandlordtax.co.uk
+capital gains inheritance,1840,0,8,0,1,EXTEND-GOOGLE,/blog/capital-gains-tax/property-capital-gains-tax-calculator,,False,0.42,ukpropertyaccountants.co.uk
 capital gains holdover relief,960,0,8,0,1,REFRAME,/blog/capital-gains-tax/hmrcs-nudge-letters-demand-urgent-review-of-gift-hold-over-relief-claim,,False,0.5,ukpropertyaccountants.co.uk
 roll over relief cgt,1420,0,8,0,2,REFRAME,/blog/capital-gains-tax/cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics,,False,0.31,cruseburke.co.uk;ukpropertyaccountants.co.uk
-cgt hold over relief,1110,0,5,0,1,NO-PAGE,,,False,0.25,ukpropertyaccountants.co.uk
+cgt hold over relief,1110,0,5,0,1,REFRAME,/blog/incorporation-and-company-structures/sdlt-divorce-separation-transfer-relief-schedule-3-paragraph-3-fa-2003,,False,0.31,ukpropertyaccountants.co.uk
 crypto capital gains tax,490,0,5,0,1,NO-PAGE,,,False,0.25,taxd.co.uk
 bed and breakfasting capital gains tax,280,0,4,0,1,REFRAME,/blog/capital-gains-tax/bed-and-breakfasting,,False,0.33,ukpropertyaccountants.co.uk
 capital gains tax calculation worksheet,320,0,4,0,1,NO-PAGE,,,False,0.16,optimiseaccountants.co.uk
