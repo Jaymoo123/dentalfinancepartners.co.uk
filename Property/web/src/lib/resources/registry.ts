@@ -138,6 +138,21 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     magnetBlurbTemplate:
       "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
+  "landlord-compliance": {
+    topic: "landlord-compliance",
+    toolId: "landlord-compliance-premium",
+    // ponytail: guide only. No spreadsheet exists for this topic and the duty
+    // map does not need one; add an xlsx entry if a model is ever authored.
+    xlsx: null,
+    guide: {
+      slug: "landlord-compliance",
+      label: "Landlord compliance guide",
+      enabled: true,
+    },
+    magnetTitle: "The landlord compliance duty map",
+    magnetBlurbTemplate:
+      "Every safety, energy and licensing duty in one place, with the source law and the tax treatment. Enter your email and we'll send it over.",
+  },
   "stamp-duty": {
     topic: "stamp-duty",
     toolId: "stamp-duty-premium",

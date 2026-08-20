@@ -444,7 +444,15 @@ export default function LandlordTaxPage() {
                 Anything incurred wholly and exclusively for the letting business is deductible. The usual claims
                 are letting agent and management fees, landlord insurance, ground rent and service charges, gas
                 safety and EICR certificates, accountancy fees, advertising for tenants, legal fees on short leases,
-                and council tax, utilities and cleaning during void periods.
+                and council tax, utilities and cleaning during void periods. The safety and licensing side has its
+                own cycle, cost and capital/revenue split, set out in our{" "}
+                <Link
+                  href="/landlord-compliance"
+                  className="font-semibold text-emerald-700 hover:text-emerald-800"
+                >
+                  landlord compliance guide
+                </Link>
+                .
               </p>
               <p>
                 Travel to inspect or maintain a property is allowable at{" "}

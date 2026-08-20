@@ -79,6 +79,10 @@
           "href": "/leasehold"
         },
         {
+          "label": "Landlord compliance",
+          "href": "/landlord-compliance"
+        },
+        {
           "label": "Property tax rates",
           "href": "/property-tax-rates"
         },
@@ -129,6 +133,10 @@
     {
       "label": "Leasehold",
       "href": "/leasehold"
+    },
+    {
+      "label": "Landlord compliance",
+      "href": "/landlord-compliance"
     },
     {
       "label": "Property tax rates",

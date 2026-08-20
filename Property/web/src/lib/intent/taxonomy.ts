@@ -21,6 +21,7 @@ export type TopicKey =
   | "incorporation"
   | "capital-gains"
   | "landlord-essentials"
+  | "landlord-compliance"
   | "mtd"
   | "portfolio"
   | "non-resident"
@@ -74,6 +75,16 @@ export const TOPICS: Topic[] = [
     primaryCalculator: "rental-income-tax-calculator",
     ctaCopy: "Check your landlord tax position",
     resourceId: "landlord-essentials",
+  },
+  {
+    // Compliance is a duty cluster, not a blog category: it is reached from the
+    // /landlord-compliance pillar, never derived from a category slug.
+    key: "landlord-compliance",
+    label: "Landlord compliance duties",
+    blogCategorySlugs: [],
+    primaryCalculator: "rental-income-tax-calculator",
+    ctaCopy: "Check what your compliance spend is worth on your return",
+    resourceId: "landlord-compliance",
   },
   {
     key: "mtd",
