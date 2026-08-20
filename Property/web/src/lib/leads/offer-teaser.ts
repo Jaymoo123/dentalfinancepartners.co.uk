@@ -1,19 +1,18 @@
 /**
  * Anonymised buyer teaser for the lead offer pipeline.
  *
- * A teaser is what a prospective buyer sees BEFORE claiming: structured facts,
- * a one-line situation summary, and the enquiry in the enquirer's own words with
- * the identifying parts removed. Owner decision 2026-08-14: a firm decides on the
- * enquiry itself rather than on a summary of it, and receives the unredacted
+ * A teaser is what a prospective buyer sees BEFORE claiming: structured facts
+ * plus an anonymised situation summary. Owner decision 2026-08-20 (reversing
+ * 2026-08-14's verbatim-enquiry call): the pre-claim surface never carries the
+ * enquirer's own words, even redacted; phrasing itself is re-identifiable
+ * residue. A firm decides on the paraphrase and receives the unredacted
  * enquiry and the contact details only if it claims.
  *
- * It must never contain PII. Owner decision 2026-08-20 (after the KAN.AI leak,
- * where regex redaction passed a company name and city verbatim): redaction is
- * two AI passes over the gateway, no regex anywhere.
+ * It must never contain PII. Anonymisation is two AI passes over the gateway
+ * (owner decision 2026-08-20 after the KAN.AI regex leak), no regex anywhere:
  *   1. Structured fields (tier, intent, role, site) carry no PII by construction.
- *   2. redactEnquiry rewrites the message with identifiers tokenised and writes
- *      the situation line in the same call.
- *   3. verifyNoIdentifiers independently checks the exact strings that will
+ *   2. redactEnquiry reads the enquiry and writes the situation summary.
+ *   3. verifyNoIdentifiers independently checks the exact string that will
  *      render; anything not verified clean is withheld entirely.
  *
  * FAIL-CLOSED: if either pass is unavailable or unhappy, the teaser degrades to
@@ -39,7 +38,8 @@ export type TeaserJson = {
   /** "Yes · Mon 6 Jul, afternoon" / "Yes" / "No" (absent on older teasers). */
   callback_booked?: string;
   situation?: string;
-  /** The enquiry in the enquirer's own words, identifiers removed. */
+  /** Retired 2026-08-20 (pre-claim is situation-only); kept optional so teasers
+   *  stored before then still parse and render. */
   redacted_message?: string;
   backlog?: boolean;
 };
@@ -117,20 +117,16 @@ export async function buildTeaser(lead: LeadLike, score: ScoreLike): Promise<Tea
   const booked = await callbackBooked(lead.id);
   if (booked) teaser.callback_booked = booked;
 
-  // Two-pass AI redaction, fail-closed: free text ships only when pass 1
-  // produced it AND pass 2 verified the exact strings clean. Any failure or
-  // doubt leaves the teaser structured-facts-only.
+  // Two-pass AI anonymisation, fail-closed, situation-only: the summary ships
+  // only when pass 1 produced it AND pass 2 verified the exact string clean.
+  // Any failure or doubt leaves the teaser structured-facts-only. The
+  // enquirer's own words never ship pre-claim (owner decision 2026-08-20).
   const message = (lead.message ?? "").trim();
   if (message) {
     const redacted = await redactEnquiry({ message, role: lead.role ?? undefined });
-    if (redacted) {
-      const body = redacted.redacted_message.replace(/\s+/g, " ").trim().slice(0, 2000);
-      const situation = redacted.situation.trim();
-      const texts = [body, situation].filter(Boolean);
-      if (texts.length > 0 && (await verifyNoIdentifiers(texts))) {
-        if (body) teaser.redacted_message = body;
-        if (situation) teaser.situation = situation;
-      }
+    const situation = redacted?.situation.trim() ?? "";
+    if (situation && (await verifyNoIdentifiers([situation]))) {
+      teaser.situation = situation;
     }
   }
   return teaser;

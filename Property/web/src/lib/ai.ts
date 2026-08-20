@@ -229,7 +229,7 @@ export interface RedactedEnquiry {
 
 const redactSchema = z.object({
   redacted_message: z.string().max(2400),
-  situation: z.string().max(320),
+  situation: z.string().max(480),
 });
 
 const REDACT_SYSTEM = `You anonymise inbound enquiries to UK accountancy firms so they can be shown
@@ -251,8 +251,11 @@ Rules, absolute:
   interactions, structures, sector ("an AI health startup" is fine once the
   name is tokenised), dispute points.
 - Keep the enquirer's own wording and tone wherever it is not identifying.
-- situation: one or two sentences summarising the situation for a buyer firm,
-  selling the situation, never the person, with no identifiers at all. Empty
+- situation: one to three sentences summarising the situation for a buyer firm.
+  This paraphrase is the ONLY free text the buyer sees before purchasing, so
+  cover every fact they need to price and decide (work type, complexity,
+  amounts, deadlines, urgency). Sell the situation, never the person; no
+  identifiers at all, and never quote the enquirer's own phrasing. Empty
   string if the message is too thin.
 - Plain British English. No em-dashes.`;
 

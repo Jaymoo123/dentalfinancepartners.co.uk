@@ -131,13 +131,19 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
   name it.
 - **Redaction is two AI passes, no regex, fail-closed** (owner decision
   2026-08-20 after a regex leak: an enquiry naming "KAN.AI ... Edinburgh"
-  passed the pattern layer verbatim). `redactEnquiry` (gateway Opus) tokenises
-  identifiers and writes the situation line; `verifyNoIdentifiers`
-  independently checks the exact strings that render; anything unverified is
+  passed the pattern layer verbatim). `redactEnquiry` (gateway Opus) reads the
+  enquiry and writes the situation summary; `verifyNoIdentifiers`
+  independently checks the exact string that renders; anything unverified is
   withheld and the teaser degrades to structured facts only. Same verify pass
   gates the grading `intent_line`. The python `lead_engine/scripts/tiers.py`
   regex `redact()` is now a dry-run-only artefact and no longer mirrors the
   live path.
+- **Pre-claim surface is situation-only** (owner decision 2026-08-20, second
+  same-day pass, REVERSING 2026-08-14's verbatim-enquiry call): the enquirer's
+  own words never ship before a claim, even tokenised; phrasing is
+  re-identifiable residue. Buyers decide on the anonymised paraphrase; the
+  full enquiry + contact details arrive on claim. `teaser.redacted_message`
+  is a legacy field that renders only for teasers stored before the flip.
 - Every button acts through a conditional DB transition; zero rows updated =
   stale tap = toast. Chat history holds no state.
 - Every bot send is fail-open with an email fallback; a Telegram outage can

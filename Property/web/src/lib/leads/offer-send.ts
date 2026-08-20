@@ -66,13 +66,17 @@ export function renderTeaserHtml(t: TeaserJson, priceGbp?: number | null): strin
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
       <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;color:#334155;font-size:14px;line-height:1.6;">${escapeHtml(body)}</td></tr>
     </table>`;
+  // The enquiry panel renders only for teasers stored before 2026-08-20; new
+  // teasers are situation-only and carry the claim note instead.
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
       <colgroup><col style="width:150px;" /><col /></colgroup>${rows}
     </table>${situation ? panel("Situation", situation) : ""}${
       enquiry
         ? panel("The enquiry, in their words", enquiry) +
           `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">Identifying details (names, companies, contact details, addresses, locations and web links) are removed above, and the redaction is independently verified before sending. You get the enquiry in full, unredacted, with the enquirer's contact details, only if you claim it.</p>`
-        : ""
+        : situation
+          ? `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">The summary above is anonymised and independently verified before sending. You get the enquiry in full, in the enquirer's own words, with their contact details, only if you claim it.</p>`
+          : ""
     }`;
 }
 
@@ -80,6 +84,7 @@ export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): strin
   const lines = teaserRows(t, priceGbp).map((r) => `${r.label}: ${r.value}`);
   const situation = (t.situation ?? "").trim();
   if (situation) lines.push("", "SITUATION", situation);
+  // Enquiry block = legacy stored teasers only; new teasers are situation-only.
   const enquiry = (t.redacted_message ?? "").trim();
   if (enquiry) {
     lines.push(
@@ -90,6 +95,13 @@ export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): strin
       "Identifying details (names, companies, contact details, addresses, locations " +
         "and web links) are removed above, and the redaction is independently verified " +
         "before sending. You get the enquiry in full, unredacted, with the enquirer's " +
+        "contact details, only if you claim it.",
+    );
+  } else if (situation) {
+    lines.push(
+      "",
+      "The summary above is anonymised and independently verified before sending. " +
+        "You get the enquiry in full, in the enquirer's own words, with their " +
         "contact details, only if you claim it.",
     );
   }

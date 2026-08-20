@@ -406,15 +406,13 @@ describe("objection suppression", () => {
 describe("teaser PII defence (two-pass AI, fail-closed)", () => {
   // The alert carries the enquiry itself, so redaction is what stands between a
   // pre-claim alert and a disclosure of identity to firms that never pay.
-  it("carries the redacted enquiry and situation only after the verify pass", async () => {
+  it("carries the verified situation only, never the enquirer's words (2026-08-20)", async () => {
     const teaser = await buildTeaser(
       { id: "lead-1", message: "I run KAN.AI in Edinburgh, need accounts help", source: "generalist", created_at: "2026-08-06T10:00:00Z" },
       { tier: "high", case_tier: "advisory", intent: "structure", work_type: "recurring" },
     );
-    expect(teaser.redacted_message).toBe(
-      "I run [COMPANY], an AI health startup in [LOCATION], and need accounts support.",
-    );
     expect(teaser.situation).toBe("Landlord with three properties weighing incorporation.");
+    expect(teaser.redacted_message).toBeUndefined();
     expect(JSON.stringify(teaser)).not.toContain("KAN.AI");
   });
 
