@@ -100,6 +100,16 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.13 Growth work plan approved 2026-08-20 — pickup doc for the next agent
+
+Owner approved the five-phase plan the same day the CGT batch shipped. **START HERE:
+[`HANDOFF_2026-08-20.md`](HANDOFF_2026-08-20.md)** — Wave 11 WRAP + deploy (authorized),
+tools family (GO now, ungated from the 09-01 read by owner ruling), rental-income cluster,
+incorporation cluster (conditional on the cannibalisation freeze check), Wave 12
+(brand-fit GATE RESOLVED: on Property with the CGT hook). Delayed by owner: the
+internal-linking experiment. Off-site authority: owned elsewhere. Standing ruling:
+gov.uk/MSE-held heads are in scope ("position 3 under gov.uk still wins").
+
 ## 0.12 CGT cluster batch (EXECUTED 2026-08-20, commit `701a2d53`; deploy owner-gated)
 
 **Owner approved the full work order same day, including the gov.uk/MSE-held heads
