@@ -495,6 +495,101 @@ describe("callback: br (claim-for-them)", () => {
   });
 });
 
+// ── Callback: sid (free hand-off of an expired lead) ─────────────────────────
+
+describe("callback: sid (send expired lead to the unbilled fallback buyer)", () => {
+  function seedSidFixture(over: { sid?: Row; offer?: Row } = {}) {
+    db.lead_buyers.push({
+      id: "buyer-sid",
+      ref: "sidekick",
+      email: "sid@sidekickaccounting.co.uk",
+      firm_name: "Sidekick Accounting",
+      status: "active",
+      is_test: true,
+      dsa_signed_at: "2026-08-20T00:00:00.000Z",
+      ...(over.sid ?? {}),
+    });
+    db.leads.push({ id: LEAD_UUID, source: "generalist", full_name: "Jane Doe" });
+    db.lead_nurture_state.push({ lead_id: LEAD_UUID, status: "active" });
+    db.lead_offers.push({
+      id: OFFER_UUID,
+      lead_id: LEAD_UUID,
+      buyer_id: "buyer-1",
+      status: "expired",
+      teaser: { site: "Generalist", tier: "advisory" },
+      price_gbp: 85,
+      ...(over.offer ?? {}),
+    });
+  }
+
+  it("creates a £0 claimed offer for Sid, releases once, stops nurture; second tap no-ops", async () => {
+    seedSidFixture();
+
+    const res = await POST(cbReq(`sid:${OFFER_UUID}`));
+    expect(res.status).toBe(200);
+
+    const sidOffer = db.lead_offers.find((o) => o.buyer_id === "buyer-sid");
+    expect(sidOffer).toBeDefined();
+    expect(sidOffer?.status).toBe("claimed");
+    expect(sidOffer?.price_gbp).toBe(0);
+    expect(sidOffer?.released_at).toBeTruthy();
+    // Sid's copy carries the stored anonymised teaser, not a fresh build.
+    expect(sidOffer?.teaser).toEqual({ site: "Generalist", tier: "advisory" });
+
+    const releases = sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"));
+    expect(releases).toHaveLength(1);
+    expect(releases[0].to).toBe("sid@sidekickaccounting.co.uk");
+
+    // The original expired offer is untouched; nurture stops.
+    expect(db.lead_offers.find((o) => o.id === OFFER_UUID)?.status).toBe("expired");
+    expect(db.lead_nurture_state.find((r) => r.lead_id === LEAD_UUID)?.status).toBe("stopped");
+
+    // Second tap: the (lead_id, buyer_id) latch means no new offer, no new email.
+    const res2 = await POST(cbReq(`sid:${OFFER_UUID}`));
+    expect(res2.status).toBe(200);
+    expect(db.lead_offers.filter((o) => o.buyer_id === "buyer-sid")).toHaveLength(1);
+    expect(sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"))).toHaveLength(1);
+    const toasts = callsTo("answerCallbackQuery");
+    expect(toasts[toasts.length - 1].body.text).toContain("Already sent to Sid");
+  });
+
+  it("refuses when the lead was claimed by a paying buyer", async () => {
+    seedSidFixture();
+    db.lead_offers.push({
+      id: OFFER_UUID_2,
+      lead_id: LEAD_UUID,
+      buyer_id: "buyer-2",
+      status: "claimed",
+      price_gbp: 85,
+    });
+
+    const res = await POST(cbReq(`sid:${OFFER_UUID}`));
+    expect(res.status).toBe(200);
+    expect(db.lead_offers.find((o) => o.buyer_id === "buyer-sid")).toBeUndefined();
+    expect(sentEmails).toHaveLength(0);
+  });
+
+  it("refuses when Sid's row is unsigned (DSA gate stays load-bearing)", async () => {
+    seedSidFixture({ sid: { dsa_signed_at: null } });
+
+    const res = await POST(cbReq(`sid:${OFFER_UUID}`));
+    expect(res.status).toBe(200);
+    expect(db.lead_offers.find((o) => o.buyer_id === "buyer-sid")).toBeUndefined();
+    expect(sentEmails).toHaveLength(0);
+    const toasts = callsTo("answerCallbackQuery");
+    expect(toasts[toasts.length - 1].body.text).toContain("unsigned");
+  });
+
+  it("refuses a non-expired offer", async () => {
+    seedSidFixture({ offer: { status: "offered" } });
+
+    const res = await POST(cbReq(`sid:${OFFER_UUID}`));
+    expect(res.status).toBe(200);
+    expect(db.lead_offers.find((o) => o.buyer_id === "buyer-sid")).toBeUndefined();
+    expect(sentEmails).toHaveLength(0);
+  });
+});
+
 // ── Callback: garbage data ───────────────────────────────────────────────────
 
 describe("callback: unknown/garbage data", () => {

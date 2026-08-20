@@ -223,9 +223,14 @@ export async function notifyExpiredOffer(offer: {
   lead_id: string;
   price_gbp: number;
 }): Promise<boolean> {
+  // [Send to Sid] = free hand-off of the full lead to the unbilled fallback
+  // buyer (owner decision 2026-08-20); [Re-offer] keeps the paid path open.
   return sendTelegram(
     `<b>Offer expired unclaimed:</b> ${escapeHtml(await leadLabel(offer.lead_id))} (£${offer.price_gbp}).`,
-    [[{ text: "Re-offer for 24h", callback_data: `ro:${offer.id}` }]],
+    [
+      [{ text: "Send to Sid (free)", callback_data: `sid:${offer.id}` }],
+      [{ text: "Re-offer for 24h", callback_data: `ro:${offer.id}` }],
+    ],
   );
 }
 

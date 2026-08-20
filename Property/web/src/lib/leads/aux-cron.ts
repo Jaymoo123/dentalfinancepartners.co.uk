@@ -479,7 +479,23 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
       { status: "expired" },
     );
     if (botArmed() && expired.ok && expired.data.length > 0 && !(await isBotPaused())) {
+      // One ping per lead, and none when the lead already sold: sibling offers
+      // expiring after a claim is the expected end-state, not news (owner
+      // decision 2026-08-20 after five noise pings in one sweep). The ping
+      // carries the highest-priced expired offer for the lead.
+      const byLead = new Map<string, { id: string; lead_id: string; price_gbp: number }>();
       for (const row of expired.data) {
+        const cur = byLead.get(row.lead_id);
+        if (!cur || row.price_gbp > cur.price_gbp) byLead.set(row.lead_id, row);
+      }
+      const soldRes = await adminSelect<{ lead_id: string }>("lead_offers", {
+        select: "lead_id",
+        lead_id: `in.(${[...byLead.keys()].join(",")})`,
+        status: "in.(claimed,credited)",
+      });
+      const sold = new Set((soldRes.ok ? soldRes.data : []).map((r) => r.lead_id));
+      for (const row of byLead.values()) {
+        if (sold.has(row.lead_id)) continue;
         try {
           await notifyExpiredOffer(row);
         } catch (err) {

@@ -18,7 +18,7 @@
 
 import { NextResponse, type NextRequest } from "next/server";
 import { timingSafeEqual } from "crypto";
-import { adminConfigured, adminSelect, adminUpdate } from "@/lib/supabase/admin";
+import { adminConfigured, adminInsert, adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import {
   answerCallbackQuery,
   editMessageReplyMarkup,
@@ -34,6 +34,8 @@ import { offerTierFor, tierPrice } from "@/lib/leads/offer-config";
 import { setOwnerTier } from "@/lib/leads/case-tier";
 import { tierPickerKeyboard, verifiedKeyboard, leadLabel } from "@/lib/leads/bot-notify";
 import { eligibleRawLeads, supplyRawLeads, rawPriceGbp } from "@/lib/leads/raw-supply";
+import { isSuppressed } from "@/lib/leads/suppression";
+import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 import type { CaseTier } from "@/lib/ai";
 
 export const runtime = "nodejs";
@@ -184,6 +186,95 @@ async function handleClaimForBuyer(offerId: string): Promise<Toast> {
   }
   return {
     toast: "Claimed, but the release email FAILED. Check the email alert.",
+    stripButtons: true,
+  };
+}
+
+/** The unbilled fallback buyer for expired leads (owner decision 2026-08-20). */
+const SID_BUYER_REF = "sidekick";
+
+/**
+ * [Send to Sid] on an expiry alert: hand the full lead, free, to the unbilled
+ * fallback buyer. Straight release, no accept step (owner decision 2026-08-20).
+ * The (lead_id, buyer_id) unique key is the idempotency latch; the DSA gate on
+ * the buyer row stays load-bearing exactly as on the paid path.
+ */
+async function handleSendToSid(offerId: string): Promise<Toast> {
+  const res = await adminSelect<{ id: string; lead_id: string; status: string; teaser: unknown }>(
+    "lead_offers",
+    { select: "id,lead_id,status,teaser", id: `eq.${offerId}`, limit: "1" },
+  );
+  if (!res.ok || res.data.length === 0) return { toast: "Could not load the offer, try again." };
+  const offer = res.data[0];
+  if (offer.status !== "expired") {
+    return { toast: "Only an expired offer can go to Sid.", stripButtons: true };
+  }
+
+  // DSA clause 3.5: an objection between expiry and this tap kills the referral.
+  if (await isSuppressed(offer.lead_id)) {
+    return { toast: "The enquirer has objected; nothing sent.", stripButtons: true };
+  }
+
+  const buyerRes = await adminSelect<{ id: string; status: string; dsa_signed_at: string | null }>(
+    "lead_buyers",
+    { select: "id,status,dsa_signed_at", ref: `eq.${SID_BUYER_REF}`, limit: "1" },
+  );
+  const sid = buyerRes.ok ? buyerRes.data[0] : undefined;
+  if (!sid || sid.status !== "active" || !sid.dsa_signed_at) {
+    return { toast: "Sid's buyer row is missing, paused or unsigned; nothing sent." };
+  }
+
+  // A lead that sold (or was claimed then credited as bad) never goes to Sid.
+  // Sid's own row is excluded so a double tap falls through to the insert
+  // latch and toasts "already sent" instead.
+  const sold = await adminSelect<{ id: string; buyer_id: string }>("lead_offers", {
+    select: "id,buyer_id",
+    lead_id: `eq.${offer.lead_id}`,
+    status: "in.(claimed,credited)",
+  });
+  if (sold.ok && sold.data.some((r) => r.buyer_id !== sid.id)) {
+    return { toast: "This lead was claimed by a buyer; not sending to Sid.", stripButtons: true };
+  }
+
+  const ins = await adminInsert<{ id: string }>(
+    "lead_offers",
+    [
+      {
+        lead_id: offer.lead_id,
+        buyer_id: sid.id,
+        teaser: offer.teaser,
+        status: "claimed",
+        claimed_at: new Date().toISOString(),
+        expires_at: new Date().toISOString(),
+        price_gbp: 0,
+      },
+    ],
+    { onConflict: "lead_id,buyer_id", ignoreDuplicates: true },
+  );
+  if (!ins.ok) return { toast: "DB error, try again." };
+  if (ins.data.length === 0) return { toast: "Already sent to Sid.", stripButtons: true };
+
+  // Sid owns the relationship now: halt nurture, record the hand-off (same
+  // shape as claimOffer; failure never blocks the release).
+  try {
+    await adminUpdate(
+      "lead_nurture_state",
+      { lead_id: `eq.${offer.lead_id}` },
+      { status: "stopped", next_action_at: null, updated_at: new Date().toISOString() },
+    );
+    await recordLeadContactEvent(offer.lead_id, "handed_off", "system", {
+      reason: "sid_free_handoff",
+      offer_id: ins.data[0].id,
+      buyer_id: sid.id,
+    });
+  } catch (err) {
+    console.error("[telegram/webhook] sid nurture halt failed", err);
+  }
+
+  const release = await releaseClaimedOffer(ins.data[0].id);
+  if (release.released) return { toast: "Full details sent to Sid, free.", stripButtons: true };
+  return {
+    toast: "Latched for Sid but the release email FAILED. Check the email alert.",
     stripButtons: true,
   };
 }
@@ -484,6 +575,12 @@ export async function POST(req: NextRequest) {
         case "ign": {
           if (messageId) await editMessageReplyMarkup(messageId, []);
           await answerCallbackQuery(cb.id, "Ignored.");
+          break;
+        }
+        case "sid": {
+          const result = await handleSendToSid(id);
+          if (result.stripButtons && messageId) await editMessageReplyMarkup(messageId, []);
+          await answerCallbackQuery(cb.id, result.toast);
           break;
         }
         case "ro": {

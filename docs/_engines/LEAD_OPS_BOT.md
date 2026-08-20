@@ -156,6 +156,20 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
 - The claim-race accounting-lane model is LIVE (see the loop above). Still not
   ported: the adjacent lane and decay-cascade (no adjacent buyers exist);
   revisit when one signs.
+- **Expiry alerts: one per lead, silent when the lead sold** (owner decision
+  2026-08-20 after five noise pings in one sweep: a claim leaves sibling
+  offers open until their own 24h expiry, which is the expected end-state,
+  not news). The ping carries the highest-priced expired offer.
+- **[Send to Sid] on expiry alerts** (owner decision 2026-08-20): free
+  hand-off of the full lead to the unbilled fallback buyer, lead_buyers ref
+  `sidekick` (sid@sidekickaccounting.co.uk, is_test=true so it never appears
+  in money views or consumes claim slots; sources empty so pool sends never
+  match it; DSA confirmed signed by owner 2026-08-20). Straight release, no
+  accept step: the tap inserts a £0 claimed offer (the lead+buyer unique key
+  is the double-tap latch, Sid's copy reuses the stored anonymised teaser)
+  and fires the normal release email + nurture halt. Blocked when the lead
+  was claimed/credited by a paying buyer, the enquirer objected, or Sid's
+  row is paused/unsigned.
 
 ## Known limits (v1)
 

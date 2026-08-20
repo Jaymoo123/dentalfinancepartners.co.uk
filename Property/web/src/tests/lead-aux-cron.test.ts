@@ -133,6 +133,21 @@ vi.mock("@/lib/leads/send-window", () => ({
     mockInSendWindow(...args),
 }));
 
+// ── Telegram/bot mocks (Scan C/D notify paths; default unarmed) ──────────────
+
+let botArmedFlag = false;
+vi.mock("@/lib/telegram", () => ({
+  botArmed: () => botArmedFlag,
+}));
+vi.mock("@/lib/leads/nurture-control", () => ({
+  isBotPaused: () => Promise.resolve(false),
+}));
+const mockNotifyExpired = vi.fn((_offer: Row) => Promise.resolve(true));
+vi.mock("@/lib/leads/bot-notify", () => ({
+  notifyExpiredOffer: (...a: [Row]) => mockNotifyExpired(...a),
+  notifyClaimHeld: vi.fn(() => Promise.resolve(true)),
+}));
+
 // ── Imports (after mocks) ─────────────────────────────────────────────────────
 
 import { runLeadAuxScans, buildIcsForSlot } from "@/lib/leads/aux-cron";
@@ -201,6 +216,8 @@ beforeEach(() => {
   mockSend.mockReset();
   mockSend.mockResolvedValue({ id: "msg-123" });
   mockInSendWindow.mockReturnValue(true);
+  botArmedFlag = false;
+  mockNotifyExpired.mockClear();
   vi.clearAllTimers();
 });
 
@@ -639,6 +656,29 @@ describe("Scan C: buyer offer expiry sweep", () => {
     expect(db.lead_offers.find((o) => o.id === "o1")?.status).toBe("expired");
     expect(db.lead_offers.find((o) => o.id === "o2")?.status).toBe("offered");
     expect(db.lead_offers.find((o) => o.id === "o3")?.status).toBe("claimed");
+  });
+
+  it("armed: one ping per lead, carrying the highest price; silence for sold leads", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-07T12:00:00.000Z"));
+    botArmedFlag = true;
+    db.lead_offers.push(
+      // L1: two expired offers, no claim -> ONE ping with the £85 row
+      { id: "p1", lead_id: "L1", price_gbp: 85, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+      { id: "p2", lead_id: "L1", price_gbp: 15, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+      // L2: sibling expired after a claim -> the lead sold, no ping
+      { id: "p3", lead_id: "L2", price_gbp: 15, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+      { id: "p4", lead_id: "L2", price_gbp: 15, status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" },
+    );
+
+    await runLeadAuxScans();
+
+    expect(mockNotifyExpired).toHaveBeenCalledTimes(1);
+    expect(mockNotifyExpired.mock.calls[0][0]).toMatchObject({
+      id: "p1",
+      lead_id: "L1",
+      price_gbp: 85,
+    });
   });
 });
 
