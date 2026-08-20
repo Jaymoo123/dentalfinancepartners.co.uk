@@ -121,6 +121,12 @@ MIGRATIONS = [
     # Dashboard KPI functions exclude test leads (source='test' OR is_test):
     # real-shaped walk/QA leads were counting in the console lead tiles.
     "20260819000003_test_leads_excluded_from_kpis.sql",
+    # Chart regression fix: 20260819000003 re-created web_timeseries and
+    # estate_timeseries from the rollup-reading 20260707000002 base, but prod
+    # was reverted to live scans out-of-band on 2026-07-08 and web_rollup is
+    # dormant (last bucket 07-07). Restores the live 20260704000001 bodies with
+    # the test-lead filter kept.
+    "20260820000001_restore_live_timeseries.sql",
 ]
 
 
