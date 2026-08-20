@@ -131,3 +131,5 @@ Factual verdict was **all_clear** (0 blockers, 3 advisories). Editorial verdict 
 ## Arithmetic check (new worked figures, H2 4)
 
 Probate value £280,000; sale £310,000; costs £6,000. £310,000 − £6,000 = £304,000. £304,000 − £280,000 = £24,000. £24,000 − £3,000 AEA = £21,000. £21,000 x 24% = £5,040. £21,000 x 18% = £3,780. Both verified. Rates and AEA per house positions §5.
+
+## Manager trim (2026-08-20, post-push): metaTitle 61 -> 60 chars ("+ 5 Examples" -> ", 5 Examples"), CI Content Quality Check limit is 60 on changed files. Same class as SDLT b4e2b4e0.

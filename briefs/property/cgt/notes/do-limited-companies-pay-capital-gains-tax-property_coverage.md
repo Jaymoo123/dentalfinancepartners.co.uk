@@ -227,3 +227,5 @@ intent ("avoiding capital gains tax on a limited company's property") and drops 
 ## Not done (by instruction)
 
 No commit, no push, no deploy, no IndexNow, no `monitored_pages` / `blog_optimizations` row.
+
+## Manager trim (2026-08-20, post-push): metaDescription 156 -> 154 chars ("Rates and reporting." -> "Rates + reporting."), CI limit is 155 on changed files.
