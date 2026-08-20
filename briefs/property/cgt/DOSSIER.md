@@ -5,8 +5,13 @@ Every agent working this cluster reads this file first and adds no scope that is
 Method: `docs/_engines/REWRITE_PROGRAM.md` §9. Predecessor: `briefs/property/sdlt/DOSSIER.md`
 (SDLT batch deployed 2026-08-18, first Bing read ~2026-09-01).
 
-**Status: DOSSIER FROZEN 2026-08-20. Work order NOT approved. Nothing written, changed or
-deployed. Deploys stay owner-triggered.**
+**Status: BATCH EXECUTED 2026-08-20, commit `701a2d53` (owner approved the FULL work order
+same day, including the gov.uk-held heads, the calculator experiment ungated, and the shares
+family). 11 targets written, QA'd through two Opus tracks + a verification read, all gates
+green, qa_verdict batch `cgt1` all_clear. NOT deployed; deploy and monitored_pages
+registration stay owner-triggered. Owner rulings recorded in the ADJUDICATIONS block of the
+assignment tooling and in section 4c: the two "how much" heads route to the calculator, the
+shares family got a net-new page plus a calculator shares mode.**
 
 ## 1. Scope declaration
 

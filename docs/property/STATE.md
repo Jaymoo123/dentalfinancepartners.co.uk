@@ -100,7 +100,27 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
-## 0.12 CGT cluster dossier (FROZEN 2026-08-20, work order awaiting owner approval)
+## 0.12 CGT cluster batch (EXECUTED 2026-08-20, commit `701a2d53`; deploy owner-gated)
+
+**Owner approved the full work order same day, including the gov.uk/MSE-held heads
+("position 3 under gov.uk still wins"), the calculator experiment ungated from the SDLT
+read, and the shares family.** Executed: 7 EXTEND pages (additive, protected elements
+byte-identical, three approved factual back-patches in protected copy recorded per
+coverage note), 3 net-new pages (do-limited-companies-pay-CGT, second-home sale, shares
+CGT; netnew briefs + middleware map entries), calculator copy REFRAME + compute-neutral
+shares mode (goldens 72/72). QA: two Opus tracks per page + restructure verification;
+5 factual blockers fixed pre-commit; every worked example re-derived to the penny.
+Gates: equity gate (now `--cluster cgt`, floor-6 coverage sweep over all 11 packs),
+lint, link audit 0/0, word gate, voice CLEAN/MINOR x10, tsc, vitest 1308, prod build,
+dependency closure, predeploy PASS, qa_verdict `cgt1` all_clear (10 slugs).
+house_positions §39 gained the s.191/s.274 sale-below-probate lock.
+**NEXT: owner-triggered deploy via clean worktree, then register the 11 in
+monitored_pages/blog_optimizations (2 non-blog URLs need `--page-urls`), IndexNow,
+Bing read 14/28d, Google 28/90d.** Open protected-copy calls (deliberately not taken):
+unify the PRR restriction methodology across the letting-relief page's two examples;
+the letting-relief protected "nil-gain still goes on SA108" sentence.
+
+## 0.12a CGT cluster dossier (FROZEN 2026-08-20, superseded by 0.12 execution)
 
 Cluster 2 of the coverage programme, built through the same §9 pipeline as SDLT and
 committed `160e7325`: [`briefs/property/cgt/DOSSIER.md`](../../briefs/property/cgt/DOSSIER.md)
