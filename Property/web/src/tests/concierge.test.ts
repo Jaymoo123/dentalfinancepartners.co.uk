@@ -1055,3 +1055,30 @@ describe("proposedSlots()", () => {
     }
   });
 });
+
+// ===========================================================================
+// Sold/binned lead gate (C5)
+// ===========================================================================
+
+describe("sold or binned lead gets no concierge conversation", () => {
+  it.each(["forwarded", "closed"])("status '%s': no reply, no state, no booking", async (status) => {
+    db.leads.push({ id: LID, status });
+    classifySpy.mockResolvedValue("book_slot");
+
+    await handleInboundReply({ leadId: LID, channel: "sms", body: "can we book a call?", lead: BASE_LEAD });
+
+    expect(sentMessages).toHaveLength(0);
+    expect(recordResponseSpy).not.toHaveBeenCalled();
+    expect(db.lead_conversation_state).toHaveLength(0);
+  });
+
+  it("a live lead (status contactable) still gets the full conversation", async () => {
+    db.leads.push({ id: LID, status: "contactable" });
+    classifySpy.mockResolvedValue("book_slot");
+
+    await handleInboundReply({ leadId: LID, channel: "sms", body: "can we book a call?", lead: BASE_LEAD });
+
+    expect(sentMessages).toHaveLength(1);
+    expect(lastSent()?.body).toContain("Reply 1, 2 or 3");
+  });
+});

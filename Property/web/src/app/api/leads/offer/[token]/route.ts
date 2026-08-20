@@ -111,7 +111,7 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   return page(
     "Offer to buyers?",
     `<h1>Offer this lead to ${buyers.length} buyer${buyers.length === 1 ? "" : "s"}?</h1>
-     <p>Buyers will see exactly this, with an Accept link. First to accept claims exclusively; the offer expires after 24 hours.</p>
+     <p>Buyers will see exactly this, with an Accept link. Up to three firms may claim at the same fixed price, first come, first served; the offer expires after 24 hours.</p>
      ${renderTeaserHtml(teaser, tierPrice(offerTier))}
      <form method="POST" action="${actionUrl}" style="margin-top:24px"><input type="hidden" name="confirm" value="1"><button type="submit">Offer to buyers</button></form>`,
   );

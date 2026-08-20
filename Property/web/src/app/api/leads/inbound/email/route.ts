@@ -45,8 +45,16 @@ import {
   isExclusiveRequest,
   parseLeadRefFromSubject,
 } from "@/lib/leads/offer-send";
-import { claimOffer, offerFromAddress, offerReplyTo } from "@/lib/leads/offer-release";
+import {
+  claimOffer,
+  releaseClaimedOffer,
+  offerFromAddress,
+  offerReplyTo,
+} from "@/lib/leads/offer-release";
 import { notifyBuyerReply, notifyClaimHeld, notifySuppliedLeadResponded } from "@/lib/leads/bot-notify";
+import { botArmed, sendTelegram } from "@/lib/telegram";
+import { isBotPaused } from "@/lib/leads/nurture-control";
+import { escapeHtml } from "@/lib/leads/notify-email";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 
@@ -127,9 +135,11 @@ async function resolveLeadByEmail(senderEmail: string): Promise<LeadRow | null> 
  * per-offer [Claim & release] buttons.
  */
 async function handleBuyerReply(senderEmail: string, body: string, subject: string): Promise<boolean> {
+  // ilike = case-insensitive exact match (senderEmail carries no wildcards):
+  // a mixed-case stored buyer address must still match the lowercased sender.
   const buyerRes = await adminSelect<{ id: string; firm_name: string }>("lead_buyers", {
     select: "id,firm_name",
-    email: `eq.${senderEmail}`,
+    email: `ilike.${senderEmail}`,
     status: "eq.active",
     limit: "1",
   });
@@ -148,7 +158,7 @@ async function handleBuyerReply(senderEmail: string, body: string, subject: stri
       buyer_id: `eq.${buyer.id}`,
       status: "eq.offered",
       order: "created_at.desc",
-      limit: "5",
+      limit: "25",
     });
     if (res.ok) offers = res.data;
   } catch (err) {
@@ -162,6 +172,30 @@ async function handleBuyerReply(senderEmail: string, body: string, subject: stri
   const refMatch = refPrefix
     ? offers.find((o) => o.lead_id.toLowerCase().startsWith(refPrefix))
     : undefined;
+
+  // A subject ref that matches NO open offer must never fall back to the
+  // buyer's one other open offer: that claims a lead they never accepted.
+  if (refPrefix && !refMatch) {
+    if (isBuyerAcceptance(body)) {
+      // Duplicate YES / webhook redelivery: the buyer may already hold the
+      // referenced lead, and the winner must not be told it is gone.
+      const claimed = await claimedOfferByRef(buyer.id, refPrefix);
+      if (claimed) {
+        await ackAlreadyClaimed(senderEmail, claimed.released_at);
+        return true;
+      }
+    }
+    // Owner decides (existing ambiguous branch). The note rides the subject
+    // line because notifyBuyerReply owns the Telegram text.
+    await surfaceBuyerReply(
+      buyer.firm_name,
+      body,
+      offers,
+      `${subject} (the referenced lead is no longer open)`,
+    );
+    return true;
+  }
+
   const target = refMatch ?? (offers.length === 1 ? offers[0] : undefined);
 
   if (target && isBuyerAcceptance(body)) {
@@ -173,14 +207,30 @@ async function handleBuyerReply(senderEmail: string, body: string, subject: stri
     if (result.outcome === "claimed") {
       // No winner ack (owner decision 2026-08-19, keep the thread light): the
       // release email itself is the confirmation and follows within minutes.
-      await notifyClaimHeld(
-        {
-          id: offer.id,
-          lead_id: offer.lead_id,
-          price_gbp: result.offer?.price_gbp ?? offer.price_gbp,
-        },
-        buyer.firm_name,
-      ).catch(() => {});
+      // Hold ONLY when the bot is armed, unpaused, auto-release is off AND the
+      // prompt actually reached Telegram; every other case falls open to the
+      // instant release the published terms describe (mirrors the claim token
+      // route, docs/_engines/LEAD_OPS_BOT.md fail-open rule).
+      const releaseFlag = (process.env.LEAD_RELEASE_AUTO || "").trim();
+      const releaseAuto = releaseFlag === "1" || releaseFlag === "true";
+      let held = false;
+      if (!releaseAuto && botArmed() && !(await isBotPaused())) {
+        held = await notifyClaimHeld(
+          {
+            id: offer.id,
+            lead_id: offer.lead_id,
+            price_gbp: result.offer?.price_gbp ?? offer.price_gbp,
+          },
+          buyer.firm_name,
+        );
+      }
+      if (!held) {
+        try {
+          await releaseClaimedOffer(offer.id);
+        } catch (err) {
+          console.error("[leads/inbound/email] auto-release failed", err);
+        }
+      }
     } else if (result.outcome === "exclusive-unavailable") {
       await sendBuyerAck(
         senderEmail,
@@ -193,6 +243,29 @@ async function handleBuyerReply(senderEmail: string, body: string, subject: stri
         "That lead is fully allocated",
         "Thanks for the quick reply, but that lead has reached its allocation. You will receive the next matching lead automatically.",
       );
+    } else if (result.outcome === "not-offered") {
+      // 'not-offered' covers a row already claimed; when THIS buyer claimed
+      // it (duplicate YES racing its own first claim), the winner must not be
+      // told the lead is gone.
+      let row: { buyer_id: string; status: string; released_at: string | null } | undefined;
+      try {
+        const r = await adminSelect<{ buyer_id: string; status: string; released_at: string | null }>(
+          "lead_offers",
+          { select: "buyer_id,status,released_at", id: `eq.${offer.id}`, limit: "1" },
+        );
+        row = r.ok ? r.data[0] : undefined;
+      } catch {
+        // fall through to the generic ack
+      }
+      if (row && row.status === "claimed" && row.buyer_id === buyer.id) {
+        await ackAlreadyClaimed(senderEmail, row.released_at);
+      } else {
+        await sendBuyerAck(
+          senderEmail,
+          "That lead is no longer available",
+          "Thanks for the quick reply, but that lead is no longer available. You will receive the next matching lead automatically.",
+        );
+      }
     } else {
       await sendBuyerAck(
         senderEmail,
@@ -203,8 +276,21 @@ async function handleBuyerReply(senderEmail: string, body: string, subject: stri
     return true;
   }
 
+  await surfaceBuyerReply(buyer.firm_name, body, offers, subject);
+  return true;
+}
+
+type OpenOffer = { id: string; lead_id: string; price_gbp: number; teaser: { tier?: string } };
+
+/** Telegram [Claim & release] buttons for the owner, with an email fallback. */
+async function surfaceBuyerReply(
+  buyerFirm: string,
+  body: string,
+  offers: OpenOffer[],
+  subject: string,
+): Promise<void> {
   const sent = await notifyBuyerReply(
-    buyer.firm_name,
+    buyerFirm,
     body,
     offers.map((o) => ({
       id: o.id,
@@ -221,15 +307,69 @@ async function handleBuyerReply(senderEmail: string, body: string, subject: stri
         await getResend().emails.send({
           from: getFromAddress(),
           to: resolveLeadTo(undefined),
-          subject: `Buyer reply from ${buyer.firm_name}`,
-          text: `${buyer.firm_name} replied to a lead offer email:\n\n${body.slice(0, 2000)}\n\nOpen offers for this firm: ${offers.length}. Handle from your inbox or the console.`,
+          subject: `Buyer reply from ${buyerFirm}`,
+          text: `${buyerFirm} replied to a lead offer email:\n\n${body.slice(0, 2000)}\n\nOpen offers for this firm: ${offers.length}. Handle from your inbox or the console.`,
         });
       }
     } catch (err) {
       console.error("[leads/inbound/email] buyer reply email fallback failed", err);
     }
   }
-  return true;
+}
+
+/** The buyer's already-claimed offer whose lead id starts with the subject ref, if any. */
+async function claimedOfferByRef(
+  buyerId: string,
+  refPrefix: string,
+): Promise<{ released_at: string | null } | undefined> {
+  try {
+    const res = await adminSelect<{ lead_id: string; released_at: string | null }>("lead_offers", {
+      select: "lead_id,released_at",
+      buyer_id: `eq.${buyerId}`,
+      status: "eq.claimed",
+      limit: "25",
+    });
+    return res.ok
+      ? res.data.find((o) => o.lead_id.toLowerCase().startsWith(refPrefix))
+      : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+/** "You already have this lead" ack for a duplicate YES (never a dup claim). */
+async function ackAlreadyClaimed(to: string, releasedAt: string | null): Promise<void> {
+  await sendBuyerAck(
+    to,
+    "You already have this lead",
+    releasedAt
+      ? "You already claimed this lead and the full contact details were sent to you."
+      : "You already claimed this lead. The full contact details will follow shortly.",
+  );
+}
+
+/**
+ * A reply carrying an offer ref from an address matching no active buyer must
+ * not die silently. Sender address + subject only, NEVER body content (the
+ * body may hold lead PII and the sender is unverified). No claim on this path.
+ */
+async function notifyUnmatchedOfferReply(senderEmail: string, subject: string): Promise<void> {
+  try {
+    const sent = await sendTelegram(
+      `<b>Reply to a lead offer from an unrecognised address:</b> ${escapeHtml(senderEmail)}\nSubject: <i>${escapeHtml(subject.slice(0, 120))}</i>\nNo active buyer matches this address, so nothing was claimed. Handle from your inbox.`,
+    );
+    if (sent) return;
+    if (process.env.RESEND_API_KEY) {
+      await getResend().emails.send({
+        from: getFromAddress(),
+        to: resolveLeadTo(undefined),
+        subject: `Unmatched buyer reply: ${senderEmail}`,
+        text: `${senderEmail} replied to a lead offer email (subject: ${subject.slice(0, 200)}), but no active buyer matches this address. Nothing was claimed. Handle from your inbox.`,
+      });
+    }
+  } catch (err) {
+    console.error("[leads/inbound/email] unmatched offer reply notify failed", err);
+  }
 }
 
 // ── Response helpers ──────────────────────────────────────────────────────────
@@ -293,6 +433,12 @@ export async function POST(req: NextRequest) {
   try {
     const handled = await handleBuyerReply(senderEmail, strippedBody, subject);
     if (handled) return ok200();
+    // Not a buyer, but the subject carries an offer ref [L-xxxxxxxx]: this is
+    // a reply to an offer ping from an unrecognised (or inactive) address and
+    // must reach the owner rather than drop. No claim is made.
+    if (parseLeadRefFromSubject(subject)) {
+      await notifyUnmatchedOfferReply(senderEmail, subject);
+    }
   } catch (err) {
     console.error("[leads/inbound/email] buyer branch failed", err);
     // Fall through to lead resolution; worst case the reply is dropped like

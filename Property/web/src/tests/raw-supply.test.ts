@@ -347,8 +347,48 @@ describe("supplyRawLeads", () => {
     db.lead_buyers.length = 0;
     seedLead("l1");
     const result = await supplyRawLeads(["l1"]);
-    expect(result).toEqual({ supplied: 0, skipped: 1, emailSent: false, reason: "no-raw-buyer" });
+    expect(result).toEqual({ supplied: 0, skipped: 1, remaining: 0, emailSent: false, reason: "no-raw-buyer" });
     expect(sentEmails).toHaveLength(0);
+  });
+
+  it("supply insert failure: status reverted to pre-flip value and lead is in the failure alert email (C3)", async () => {
+    seedLead("l1", { status: "nurturing" });
+    // First adminInsert in supplyRawLeads is the lead_supply latch: fail it once.
+    mockAdminInsert.mockImplementationOnce(() =>
+      Promise.resolve({ ok: false, status: 500, data: [] }),
+    );
+
+    const result = await supplyRawLeads(["l1"]);
+
+    expect(result.supplied).toBe(0);
+    expect(db.lead_supply).toHaveLength(0);
+    // The flip was undone: the lead stays visible to every lane.
+    expect(db.leads.find((l) => l.id === "l1")?.status).toBe("nurturing");
+    // The owner hears about it via the failure alert email.
+    const alert = sentEmails.find((e) => e.subject.includes("RAW SUPPLY INSERT FAILED"));
+    expect(alert).toBeDefined();
+    expect(alert?.text).toContain("l1");
+    // No batch email went to the buyer.
+    expect(sentEmails.some((e) => e.to === "rob@buyers.test")).toBe(false);
+  });
+
+  it("caps one pass at 30 leads and surfaces the remainder (C4)", async () => {
+    const ids: string[] = [];
+    for (let i = 1; i <= 31; i++) {
+      seedLead(`c${i}`);
+      ids.push(`c${i}`);
+    }
+
+    const result = await supplyRawLeads(ids);
+
+    expect(result.supplied).toBe(30);
+    expect(result.remaining).toBe(1);
+    expect(db.lead_supply).toHaveLength(30);
+    // The 31st lead is untouched and still sellable on the next tap.
+    expect(db.leads.find((l) => l.id === "c31")?.status).toBe("new");
+    expect(db.lead_supply.some((r) => r.lead_id === "c31")).toBe(false);
+    // Still ONE batch email.
+    expect(sentEmails.filter((e) => e.to === "rob@buyers.test")).toHaveLength(1);
   });
 
   it("unsigned buyer: supplies nothing, sends no email, reason no-raw-buyer", async () => {
@@ -390,7 +430,9 @@ describe("sendOffers refuses an already raw-supplied lead", () => {
       surface: "",
       submitted_date: "2026-08-06",
     });
-    expect(res).toEqual({ matched: 0, offered: 0, buyers: [] });
+    // objectContaining: a concurrent offer-send change added a refusal `reason`
+    // field; this test only cares that nothing matched or was offered.
+    expect(res).toEqual(expect.objectContaining({ matched: 0, offered: 0, buyers: [] }));
     expect(db.lead_offers).toHaveLength(0);
   });
 });

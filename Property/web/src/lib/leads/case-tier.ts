@@ -69,6 +69,8 @@ type ScoreRow = {
   case_tier: string | null;
   case_type: string | null;
   intent_line: string | null;
+  scored_by: string | null;
+  scored_at: string | null;
 };
 
 type LeadRow = { message: string | null; source: string | null; role: string | null };
@@ -77,7 +79,7 @@ const TIERS: readonly string[] = ["advisory", "standard", "essential"];
 
 async function loadScoreRow(leadId: string): Promise<ScoreRow | null> {
   const res = await adminSelect<ScoreRow>("lead_value_scores", {
-    select: "id,case_tier,case_type,intent_line",
+    select: "id,case_tier,case_type,intent_line,scored_by,scored_at",
     lead_id: `eq.${leadId}`,
     limit: "1",
   });
@@ -134,6 +136,33 @@ async function storeGrade(
 }
 
 /**
+ * Rows scored before this date can carry a raw-message prefix in intent_line:
+ * the 2026-08-14 python backfill wrote message prefixes into the column, and
+ * those render into Telegram. Rows scored on/after it are verified at write
+ * time (verifyNoIdentifiers gates every store below), so they return untouched.
+ */
+const INTENT_LINE_VERIFIED_SINCE = "2026-08-20";
+
+/**
+ * A stored intent_line is returned only if it is trustworthy: owner-written,
+ * written after the verified-at-write cutoff, or passing verifyNoIdentifiers
+ * now. A pre-cutoff line that fails (or errors, fail-closed) is dropped AND
+ * nulled in the DB so the verify cost is paid once.
+ */
+async function vettedIntentLine(row: ScoreRow): Promise<string> {
+  const line = (row.intent_line ?? "").trim();
+  if (!line) return "";
+  if (row.scored_by === "owner") return line;
+  if ((row.scored_at ?? "") >= INTENT_LINE_VERIFIED_SINCE) return line;
+  const clean = await verifyNoIdentifiers([line]).catch(() => false);
+  if (clean) return line;
+  await adminUpdate("lead_value_scores", { id: `eq.${row.id}` }, { intent_line: null }).catch(
+    () => {},
+  );
+  return "";
+}
+
+/**
  * Ensure a lead carries a case tier, grading it if needed. Returns null only
  * when the lead itself cannot be loaded.
  */
@@ -143,7 +172,7 @@ export async function ensureCaseTier(leadId: string): Promise<GradeResult | null
     return {
       tier: row.case_tier as CaseTier,
       caseType: row.case_type ?? "",
-      intentLine: row.intent_line ?? "",
+      intentLine: await vettedIntentLine(row),
       source: "existing",
     };
   }

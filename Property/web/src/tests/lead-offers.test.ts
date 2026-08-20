@@ -3,8 +3,9 @@
  *   - offer-config: qualifying rules, price card parsing, buyer matching
  *   - offer-teaser: PII scrub defence
  *   - offer-send: idempotent offer creation + buyer emails
- *   - claim route: first-click-wins state machine, GET never mutates,
- *     release email + nurture halt on claim
+ *   - claim route: claim-race shared-cap model (up to CLAIM_SLOTS_PER_LEAD
+ *     firms at the same price), GET never mutates, release email + nurture
+ *     halt on claim
  *
  * Mocking mirrors the style of lead-aux-cron.test.ts.
  */
@@ -66,9 +67,10 @@ function matches(row: Row, params: Record<string, string>): boolean {
 
 let idCounter = 0;
 
-// In-memory simulation of the claim_lead_offer() SQL function (migration
-// 20260819000002): shared cap, exclusive lock, test buyers exempt from the
-// allocation count. Mirrors the plpgsql exactly; keep in sync.
+// In-memory simulation of the claim_lead_offer() SQL function (migrations
+// 20260819000002 + 20260820000002): shared cap, exclusive lock, test buyers
+// exempt from BOTH the allocation count and the exclusive-lock check.
+// Mirrors the plpgsql exactly; keep in sync.
 function simulateClaimRpc(args: {
   p_offer_id: string;
   p_cap: number;
@@ -85,9 +87,13 @@ function simulateClaimRpc(args: {
   }
   const siblings = db.lead_offers.filter((o) => o.lead_id === offer.lead_id);
   const claimed = siblings.filter((o) => o.status === "claimed");
-  if (claimed.some((o) => o.exclusive)) return [{ outcome: "lost", charged_gbp: price }];
   const isTestBuyer = (bid: unknown) =>
     Boolean(db.lead_buyers.find((b) => b.id === bid)?.is_test);
+  // Only a REAL firm's exclusive claim locks the lead (20260820000002): a QA
+  // "yes exclusive" from an is_test buyer is a walk, not a sale.
+  if (claimed.some((o) => o.exclusive && !isTestBuyer(o.buyer_id))) {
+    return [{ outcome: "lost", charged_gbp: price }];
+  }
   const realClaims = claimed.filter((o) => !isTestBuyer(o.buyer_id)).length;
   if (args.p_exclusive) {
     if (realClaims > 0) return [{ outcome: "exclusive-unavailable", charged_gbp: price }];
@@ -157,10 +163,15 @@ vi.mock("@/lib/supabase/admin", () => ({
 // ── Resend mock ──────────────────────────────────────────────────────────────
 
 const sentEmails: Array<{ from: string; to: string; subject: string; html?: string; text?: string }> = [];
+// Recipients whose sends fail (simulates a Resend error for that address).
+const failEmailTo = new Set<string>();
 vi.mock("@/lib/resend", () => ({
   getResend: () => ({
     emails: {
       send: vi.fn((payload: { from: string; to: string; subject: string; html?: string; text?: string }) => {
+        if (failEmailTo.has(payload.to)) {
+          return Promise.resolve({ data: null, error: { message: "simulated send failure" } });
+        }
         sentEmails.push(payload);
         return Promise.resolve({ data: { id: `email-${sentEmails.length}` }, error: null });
       }),
@@ -178,6 +189,23 @@ vi.mock("@/lib/ai", () => ({
   verifyNoIdentifiers: vi.fn(() => Promise.resolve(aiVerifyClean)),
 }));
 
+// ── Bot hold-path mocks (claim route: botArmed / isBotPaused / notifyClaimHeld) ──
+
+let botArmedFlag = false;
+vi.mock("@/lib/telegram", () => ({
+  botArmed: () => botArmedFlag,
+}));
+vi.mock("@/lib/leads/nurture-control", () => ({
+  isBotPaused: () => Promise.resolve(false),
+}));
+const heldCalls: unknown[][] = [];
+vi.mock("@/lib/leads/bot-notify", () => ({
+  notifyClaimHeld: (...a: unknown[]) => {
+    heldCalls.push(a);
+    return Promise.resolve(true);
+  },
+}));
+
 // ── Contact-event mock ───────────────────────────────────────────────────────
 
 const contactEvents: Array<{ leadId: string; type: string }> = [];
@@ -191,7 +219,7 @@ vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
 import { offerQualifies, tierPrice, tierAtLeast, matchingBuyers } from "@/lib/leads/offer-config";
 import { buildTeaser } from "@/lib/leads/offer-teaser";
 import { sendOffers, isBuyerAcceptance, parseLeadRefFromSubject } from "@/lib/leads/offer-send";
-import { claimOffer } from "@/lib/leads/offer-release";
+import { claimOffer, releaseClaimedOffer } from "@/lib/leads/offer-release";
 import { GET as claimGet, POST as claimPost } from "@/app/api/leads/claim/[token]/route";
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -274,7 +302,11 @@ function seedOffer(over: Row = {}): Row {
 beforeEach(() => {
   db.reset();
   sentEmails.length = 0;
+  failEmailTo.clear();
   contactEvents.length = 0;
+  heldCalls.length = 0;
+  botArmedFlag = false;
+  delete process.env.LEAD_RELEASE_AUTO;
   aiRedact = {
     redacted_message: "I run [COMPANY], an AI health startup in [LOCATION], and need accounts support.",
     situation: "Landlord with three properties weighing incorporation.",
@@ -383,7 +415,7 @@ describe("objection suppression", () => {
       site: "Dentists", tier: "advisory", intent: "structure", work_type: "recurring",
       role: "", surface: "", submitted_date: "2026-08-06",
     });
-    expect(res).toEqual({ matched: 0, offered: 0, buyers: [] });
+    expect(res).toEqual({ matched: 0, offered: 0, buyers: [], reason: "suppressed" });
     expect(db.lead_offers).toHaveLength(0);
   });
 
@@ -573,12 +605,47 @@ describe("sendOffers", () => {
     expect(sentEmails).toHaveLength(0);
   });
 
-  it("does nothing for an unsellable tier or no matching buyers", async () => {
+  it("does nothing for an unsellable tier or no matching buyers, and names why", async () => {
     const r1 = await sendOffers("lead-1", "dentists", { ...teaser, tier: "low" });
     expect(r1.matched).toBe(0);
+    expect(r1.reason).toBe("no-price");
     const r2 = await sendOffers("lead-1", "dentists", teaser);
     expect(r2.matched).toBe(0);
+    expect(r2.reason).toBe("no-buyers");
     expect(db.lead_offers).toHaveLength(0);
+  });
+
+  it("legacy stored redacted_message never renders; the teaser is structured facts + situation only", async () => {
+    seedBuyer({ id: "b1", email: "b1@buyers.test" });
+    // A teaser stored before the 2026-08-20 situation-only flip: its
+    // redacted_message came from the retired regex redactor, never AI-verified.
+    await sendOffers("lead-1", "dentists", {
+      ...teaser,
+      redacted_message: "I run [COMPANY], an AI health startup in [LOCATION].",
+    });
+    expect(sentEmails).toHaveLength(1);
+    for (const body of [sentEmails[0].html, sentEmails[0].text]) {
+      expect(body).not.toContain("[COMPANY]");
+      expect(body?.toLowerCase()).not.toContain("in their words");
+    }
+  });
+
+  it("a failed buyer email is chased with ONE operator fallback and counted in the result", async () => {
+    seedBuyer({ id: "b1", email: "b1@buyers.test", ref: "firm-ok" });
+    seedBuyer({ id: "b2", email: "b2@buyers.test", ref: "firm-bounced" });
+    failEmailTo.add("b2@buyers.test");
+    const result = await sendOffers("lead-1", "dentists", teaser);
+    expect(result.offered).toBe(1);
+    expect(result.emailFailures).toBe(1);
+    // Both offer rows exist (b2's sits claimable), so the operator must hear.
+    expect(db.lead_offers).toHaveLength(2);
+    const fallback = sentEmails.find((e) => e.subject.includes("Offer email FAILED"));
+    expect(fallback).toBeTruthy();
+    expect(fallback?.subject).toContain("[L-lead-1]");
+    expect(fallback?.text).toContain("firm-bounced · L-lead-1 · £85");
+    expect(fallback?.text).not.toContain("firm-ok ·");
+    // One buyer email (b1) + one fallback, nothing else.
+    expect(sentEmails).toHaveLength(2);
   });
 });
 
@@ -611,6 +678,14 @@ describe("isBuyerAcceptance", () => {
       "can you tell me more about the enquiry", ""]) {
       expect(isBuyerAcceptance(s), s).toBe(false);
     }
+  });
+  it("refuses questions and hedges even when a yes-family word is present", () => {
+    for (const s of ["Interested, can you share a bit more first?",
+      "Accepted your last one, is this similar?", "maybe"]) {
+      expect(isBuyerAcceptance(s), s).toBe(false);
+    }
+    expect(isBuyerAcceptance("Yes please")).toBe(true);
+    expect(isBuyerAcceptance("Interested.")).toBe(true);
   });
   it("judges only the first line, so a signature cannot flip the verdict", () => {
     // The signed-STOP incident class: trailing signature text must not count.
@@ -727,6 +802,21 @@ describe("claim route", () => {
     expect(excl.outcome).toBe("claimed");
   });
 
+  it("a test buyer's exclusive claim never locks the lead against real firms", async () => {
+    seedLeadAndBuyer();
+    seedBuyer({ id: "buyer-test", email: "owner@test.inbox", is_test: true });
+    const t = seedOffer({ buyer_id: "buyer-test", token: "ffffeeeeddddcccc92" });
+    const excl = await claimOffer(t.id as string, { exclusive: true });
+    expect(excl.outcome).toBe("claimed");
+    // A QA "yes exclusive" is a walk, not a sale (20260820000002): an offer
+    // made afterwards (e.g. a re-offer) still claims SHARED for a real firm.
+    const real = seedOffer({ buyer_id: "buyer-1", token: "ffffeeeeddddcccc91" });
+    const shared = await claimOffer(real.id as string);
+    expect(shared.outcome).toBe("claimed");
+    expect(real.status).toBe("claimed");
+    expect(real.price_gbp).toBe(85); // shared price, no lock in force
+  });
+
   it("expired offers cannot be claimed", async () => {
     seedLeadAndBuyer();
     const offer = seedOffer({ expires_at: PAST });
@@ -750,5 +840,86 @@ describe("claim route", () => {
     const res = await claimGet(makeReq(), ctxFor("../../etc/passwd"));
     const html = await res.text();
     expect(html).toContain("not valid");
+  });
+
+  it("bot armed without LEAD_RELEASE_AUTO holds the release for the owner's tap", async () => {
+    seedLeadAndBuyer();
+    const offer = seedOffer({ buyer_id: "buyer-1" });
+    botArmedFlag = true;
+    const res = await claimPost(makeReq(), ctxFor(offer.token as string));
+    expect(await res.text()).toContain("on their way");
+    expect(heldCalls).toHaveLength(1);
+    expect(offer.status).toBe("claimed");
+    expect(offer.released_at).toBeFalsy();
+    expect(sentEmails.find((e) => e.to === "winner@buyers.test")).toBeUndefined();
+  });
+
+  it("LEAD_RELEASE_AUTO=true is honoured like =1: instant release, no hold (E5)", async () => {
+    seedLeadAndBuyer();
+    const offer = seedOffer({ buyer_id: "buyer-1" });
+    botArmedFlag = true;
+    process.env.LEAD_RELEASE_AUTO = "true";
+    const res = await claimPost(makeReq(), ctxFor(offer.token as string));
+    expect(await res.text()).toContain("it is yours");
+    expect(heldCalls).toHaveLength(0);
+    expect(offer.released_at).toBeTruthy();
+    expect(sentEmails.some((e) => e.to === "winner@buyers.test")).toBe(true);
+  });
+});
+
+// ── releaseClaimedOffer: suppression gate + owner alerts (E1 / E1b) ─────────
+
+describe("releaseClaimedOffer suppression and alerts", () => {
+  function seedClaimed(over: Row = {}): Row {
+    seedLeadRow("lead-1");
+    seedBuyer({ id: "buyer-1", email: "winner@buyers.test", firm_name: "Winner LLP" });
+    return seedOffer({
+      buyer_id: "buyer-1",
+      status: "claimed",
+      claimed_at: "2026-08-20T09:00:00.000Z",
+      ...over,
+    });
+  }
+
+  it("an objection landing after the claim blocks release: no latch, no PII, owner alerted", async () => {
+    const offer = seedClaimed();
+    db.lead_contact_events.push({
+      lead_id: "lead-1",
+      event_type: "opted_out",
+      ts: "2026-08-20T10:00:00.000Z",
+    });
+
+    const result = await releaseClaimedOffer(offer.id as string);
+    expect(result).toMatchObject({ already: false, released: false, reason: "suppressed" });
+    expect(offer.released_at).toBeFalsy(); // never latched
+    expect(offer.status).toBe("claimed");
+    // Exactly one email: the owner alert. No release email, no PII anywhere.
+    expect(sentEmails).toHaveLength(1);
+    expect(sentEmails[0].to).not.toBe("winner@buyers.test");
+    expect(sentEmails[0].text).toContain("OBJECTED");
+    expect(JSON.stringify(sentEmails)).not.toContain("lead-1@lead.test");
+    expect(JSON.stringify(sentEmails)).not.toContain("Jane Doe");
+  });
+
+  it("an unsuppressed claimed offer still releases exactly as before", async () => {
+    const offer = seedClaimed();
+    const result = await releaseClaimedOffer(offer.id as string);
+    expect(result.released).toBe(true);
+    expect(offer.released_at).toBeTruthy();
+    expect(sentEmails.some((e) => e.to === "winner@buyers.test")).toBe(true);
+  });
+
+  it("a post-latch buyer read failure alerts the owner instead of going silent (E1b)", async () => {
+    seedLeadRow("lead-1");
+    // No buyer row: the post-latch buyer read comes back empty.
+    const offer = seedOffer({ buyer_id: "buyer-ghost", status: "claimed" });
+
+    const result = await releaseClaimedOffer(offer.id as string);
+    expect(result.already).toBe(false);
+    expect(result.released).toBe(false);
+    expect(offer.released_at).toBeTruthy(); // latched, so /month would bill it
+    expect(sentEmails).toHaveLength(1);
+    expect(sentEmails[0].text).toContain("RELEASE EMAIL FAILED");
+    expect(sentEmails[0].text).toContain(String(offer.id));
   });
 });

@@ -43,7 +43,9 @@ export type TeaserJson = {
   availability?: string;
   situation?: string;
   /** Retired 2026-08-20 (pre-claim is situation-only); kept optional so teasers
-   *  stored before then still parse and render. */
+   *  stored before then still parse. Never rendered anywhere since the same
+   *  date: pre-flip strings came from the regex redactor and were never
+   *  AI-verified. */
   redacted_message?: string;
   backlog?: boolean;
 };

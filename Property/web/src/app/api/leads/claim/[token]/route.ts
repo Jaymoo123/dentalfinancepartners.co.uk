@@ -1,5 +1,7 @@
 /**
- * Buyer claim route: first firm to accept an offered lead claims it exclusively.
+ * Buyer claim route (legacy link path; replies-to-claim is the primary path).
+ * Shared claim-race model, live since 2026-08-19: up to CLAIM_SLOTS_PER_LEAD
+ * firms take a lead at the same fixed price, first come, first served.
  *
  * GET  /api/leads/claim/[token] -- click from the buyer offer email.
  *   Looks up the offer by its unique DB token. Renders the teaser with an
@@ -7,12 +9,14 @@
  *   claimed by this buyer), or a taken/expired page. A bare GET never claims,
  *   so a buyer's email link-scanner cannot accept leads (opt-out route pattern).
  *
- * POST -- human form submission (confirm=1). Conditional UPDATE to 'claimed'
- *   WHERE status='offered'; the partial unique index lead_offers_one_claim
- *   backstops any race, so exactly one buyer ever wins. On win: sibling offers
- *   marked 'lost', in-flight nurture stopped (buyer and nurture must never
- *   chase the same person), full lead details emailed to the buyer instantly
- *   in the forward-ready notify format, owner notified.
+ * POST -- human form submission (confirm=1). claimOffer() re-checks suppression
+ *   and buyer eligibility, then the atomic claim_lead_offer() SQL function
+ *   (migration 20260819000002) serialises per lead and enforces the shared
+ *   cap, closing the remaining offers when the cap is reached. On a claim:
+ *   in-flight nurture stopped (buyer and nurture must never chase the same
+ *   person), full lead details emailed to the buyer in the forward-ready
+ *   notify format (instantly, or on the owner's Telegram release tap), owner
+ *   notified.
  */
 import { NextResponse, type NextRequest } from "next/server";
 import { adminSelect } from "@/lib/supabase/admin";
@@ -112,8 +116,8 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   const actionUrl = new URL(_req.url).pathname;
   return page(
     "Accept this lead?",
-    `<h1>Accept this lead exclusively · £${offer.price_gbp}</h1>
-     <p>First firm to accept gets the lead. On accepting, full contact details are emailed to you and £${offer.price_gbp} is added to your monthly invoice under the agreed terms.</p>
+    `<h1>Accept this lead · £${offer.price_gbp}</h1>
+     <p>Up to three firms may take this lead, first come, first served, all at the same fixed price. Accepting secures one of the remaining places: full contact details are emailed to you and £${offer.price_gbp} is added to your monthly invoice under the agreed terms.</p>
      ${renderTeaserHtml(offer.teaser, offer.price_gbp)}
      <form method="POST" action="${actionUrl}" style="margin-top:24px"><input type="hidden" name="confirm" value="1"><button type="submit">Accept this lead · £${offer.price_gbp}</button></form>`,
   );
@@ -176,7 +180,8 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   // unacceptable state, so any doubt falls open to the instant release the
   // published terms describe. LEAD_RELEASE_AUTO=1 restores instant release
   // without a deploy.
-  const releaseAuto = (process.env.LEAD_RELEASE_AUTO || "").trim() === "1";
+  const releaseAutoFlag = (process.env.LEAD_RELEASE_AUTO || "").trim();
+  const releaseAuto = releaseAutoFlag === "1" || releaseAutoFlag === "true";
   let held = false;
   if (!releaseAuto && botArmed() && !(await isBotPaused())) {
     held = await notifyClaimHeld(
@@ -188,7 +193,7 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   if (held) {
     return page(
       "Lead accepted",
-      `<h1>Lead accepted · it is yours</h1><p>Full contact details are on their way to your inbox. £${offer.price_gbp} will appear on your monthly invoice. The agreed credit policy applies if the lead is uncontactable or not genuine.</p>`,
+      `<h1>Lead accepted · it is yours</h1><p>Full contact details are on their way to your inbox. £${offer.price_gbp} will appear on your monthly invoice.</p>`,
     );
   }
 
@@ -201,7 +206,7 @@ export async function POST(_req: NextRequest, ctx: Ctx) {
   }
   return page(
     "Lead accepted",
-    `<h1>Lead accepted · it is yours</h1><p>Full contact details have been emailed to you. £${offer.price_gbp} will appear on your monthly invoice. The agreed credit policy applies if the lead is uncontactable or not genuine.</p>`,
+    `<h1>Lead accepted · it is yours</h1><p>Full contact details have been emailed to you. £${offer.price_gbp} will appear on your monthly invoice.</p>`,
   );
 }
 

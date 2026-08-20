@@ -136,6 +136,10 @@ function seedScoreRow(leadId: string, over: Row = {}): Row {
     case_type: null,
     intent_line: null,
     scored_by: null,
+    // Default: written after the verified-at-write cutoff (2026-08-20), so a
+    // stored intent_line returns untouched. E3 tests override with a
+    // pre-cutoff date to exercise the backfill re-verification.
+    scored_at: "2026-08-21T00:00:00.000Z",
     ...over,
   };
   db.lead_value_scores.push(row);
@@ -308,6 +312,87 @@ describe("ensureCaseTier", () => {
   it("returns null when the lead itself cannot be loaded", async () => {
     const result = await ensureCaseTier("missing-lead");
     expect(result).toBeNull();
+  });
+});
+
+// ── ensureCaseTier: stored intent_line vetting (E3) ──────────────────────────
+// The 2026-08-14 python backfill wrote raw-message prefixes into intent_line;
+// pre-cutoff rows must be re-verified before the line renders into Telegram.
+
+describe("ensureCaseTier: stored intent_line vetting", () => {
+  const PRE_CUTOFF = "2026-08-14T12:00:00.000Z";
+
+  it("pre-cutoff line failing verify is dropped from the return AND nulled in the DB", async () => {
+    const row = seedScoreRow("lead-8", {
+      case_tier: "standard",
+      case_type: "sme_accounts",
+      intent_line: "Hi, John here from KAN.AI in Edinburgh, need accounts help",
+      scored_by: "claude_auto",
+      scored_at: PRE_CUTOFF,
+    });
+    mockGenerateObject.mockResolvedValueOnce({ object: { clean: false, issues: ["name"] } });
+
+    const result = await ensureCaseTier("lead-8");
+    expect(result).toMatchObject({ tier: "standard", intentLine: "", source: "existing" });
+    expect(row.intent_line).toBeNull();
+    expect(mockGenerateObject).toHaveBeenCalledTimes(1); // verify only, no re-grade
+  });
+
+  it("verify throw fails closed: line dropped and nulled", async () => {
+    const row = seedScoreRow("lead-9", {
+      case_tier: "standard",
+      case_type: "sme_accounts",
+      intent_line: "Raw message prefix from the backfill",
+      scored_by: "claude_auto",
+      scored_at: PRE_CUTOFF,
+    });
+    mockGenerateObject.mockRejectedValueOnce(new Error("gateway down"));
+
+    const result = await ensureCaseTier("lead-9");
+    expect(result?.intentLine).toBe("");
+    expect(row.intent_line).toBeNull();
+  });
+
+  it("pre-cutoff line passing verify is returned and kept", async () => {
+    const row = seedScoreRow("lead-10", {
+      case_tier: "standard",
+      case_type: "sme_accounts",
+      intent_line: "Needs self assessment for two rental properties.",
+      scored_by: "claude_auto",
+      scored_at: PRE_CUTOFF,
+    });
+    mockGenerateObject.mockResolvedValueOnce({ object: { clean: true, issues: [] } });
+
+    const result = await ensureCaseTier("lead-10");
+    expect(result?.intentLine).toBe("Needs self assessment for two rental properties.");
+    expect(row.intent_line).toBe("Needs self assessment for two rental properties.");
+    expect(mockGenerateObject).toHaveBeenCalledTimes(1);
+  });
+
+  it("post-cutoff rows are verified at write time: returned untouched, no AI call", async () => {
+    seedScoreRow("lead-11", {
+      case_tier: "advisory",
+      case_type: "incorporation",
+      intent_line: "Wants portfolio incorporation advice.",
+      scored_by: "claude_auto",
+      scored_at: "2026-08-20T09:00:00.000Z",
+    });
+    const result = await ensureCaseTier("lead-11");
+    expect(result?.intentLine).toBe("Wants portfolio incorporation advice.");
+    expect(mockGenerateObject).not.toHaveBeenCalled();
+  });
+
+  it("owner-written lines are trusted regardless of age: no AI call", async () => {
+    seedScoreRow("lead-12", {
+      case_tier: "advisory",
+      case_type: "incorporation",
+      intent_line: "Owner note",
+      scored_by: "owner",
+      scored_at: "2026-08-10T00:00:00.000Z",
+    });
+    const result = await ensureCaseTier("lead-12");
+    expect(result?.intentLine).toBe("Owner note");
+    expect(mockGenerateObject).not.toHaveBeenCalled();
   });
 });
 

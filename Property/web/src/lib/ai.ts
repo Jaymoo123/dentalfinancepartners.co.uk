@@ -267,7 +267,9 @@ Rules, absolute:
   any identifier exactly as above; drop greetings, sign-offs, names and
   everything unrelated to scheduling. Empty string when there are no replies
   or they carry no scheduling content.
-- Plain British English. No em-dashes.`;
+- Plain British English. No em-dashes.
+- Use only facts stated in the enquiry or replies; never add, infer beyond, or
+  embellish specifics (no invented figures, counts, deadlines or circumstances).`;
 
 /** Pass 1: rewrite the enquiry with identifiers tokenised. Null on any failure. */
 export async function redactEnquiry(input: {

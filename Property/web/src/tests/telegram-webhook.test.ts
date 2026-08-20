@@ -91,9 +91,10 @@ const mockAdminSelect = vi.fn((table: string, params: Record<string, string>) =>
   return Promise.resolve({ ok: true, status: 200, data: tableData });
 });
 
-// Mirrors the claim_lead_offer() SQL function (migration 20260819000002):
-// shared cap, exclusive lock, test buyers exempt. Keep in sync with the
-// twin simulation in lead-offers.test.ts.
+// Mirrors the claim_lead_offer() SQL function (migration 20260819000002 as
+// amended by 20260820000002: the exclusive-lock check joins lead_buyers and
+// ignores is_test rows): shared cap, exclusive lock, test buyers exempt from
+// slots AND locks. Keep in sync with the twin simulation in lead-offers.test.ts.
 function simulateClaimRpc(args: {
   p_offer_id: string;
   p_cap: number;
@@ -110,9 +111,12 @@ function simulateClaimRpc(args: {
   }
   const siblings = db.lead_offers.filter((o) => o.lead_id === offer.lead_id);
   const claimed = siblings.filter((o) => o.status === "claimed");
-  if (claimed.some((o) => o.exclusive)) return [{ outcome: "lost", charged_gbp: price }];
   const isTestBuyer = (bid: unknown) =>
     Boolean(db.lead_buyers.find((b) => b.id === bid)?.is_test);
+  // Test buyers never lock: their exclusive claims are QA walks, not sales.
+  if (claimed.some((o) => o.exclusive && !isTestBuyer(o.buyer_id))) {
+    return [{ outcome: "lost", charged_gbp: price }];
+  }
   const realClaims = claimed.filter((o) => !isTestBuyer(o.buyer_id)).length;
   if (args.p_exclusive) {
     if (realClaims > 0) return [{ outcome: "exclusive-unavailable", charged_gbp: price }];
@@ -220,11 +224,29 @@ vi.mock("ai", () => ({
   generateObject: () => Promise.resolve(null),
 }));
 
+// verifyNoIdentifiers gates the buyer-reply excerpt (B2): partial mock so the
+// rest of @/lib/ai (redactEnquiry etc.) stays real and fail-closed as above.
+const mockVerify = vi.fn();
+vi.mock("@/lib/ai", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("@/lib/ai")>();
+  return { ...actual, verifyNoIdentifiers: (texts: string[]) => mockVerify(texts) };
+});
+
+// sendOffers is owned by offer-send's own test file; here it is mocked so the
+// sp handler's toast mapping (including the optional `reason` field) can be
+// driven directly. reofferExpired/renderTeaserText stay real.
+const mockSendOffers = vi.fn();
+vi.mock("@/lib/leads/offer-send", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("@/lib/leads/offer-send")>();
+  return { ...actual, sendOffers: (...a: unknown[]) => (mockSendOffers as (...x: unknown[]) => unknown)(...a) };
+});
+
 // @/lib/telegram is deliberately NOT mocked: these tests exercise its real
 // fetch() against a stubbed global.fetch.
 
 import { NextRequest } from "next/server";
 import { POST } from "@/app/api/telegram/webhook/route";
+import { notifyBuyerReply } from "@/lib/leads/bot-notify";
 
 // ── global.fetch stub (Telegram Bot API transport) ──────────────────────────
 
@@ -267,6 +289,10 @@ beforeEach(() => {
   mockAdminSelect.mockClear();
   mockAdminInsert.mockClear();
   mockAdminUpdate.mockClear();
+  mockVerify.mockReset();
+  mockVerify.mockResolvedValue(false); // fail-closed default, like the real gate
+  mockSendOffers.mockReset();
+  mockSendOffers.mockResolvedValue({ matched: 0, offered: 0, buyers: [] });
 });
 
 afterEach(() => {
@@ -451,6 +477,69 @@ describe("callback: bin", () => {
     expect(res.status).toBe(200);
     expect(db.leads.find((l) => l.id === LEAD_UUID)?.status).toBe("closed");
   });
+
+  it("withdraws the lead's open offers and reports the count in the toast", async () => {
+    db.leads.push({ id: LEAD_UUID, status: "contactable" });
+    db.lead_offers.push(
+      { id: OFFER_UUID, lead_id: LEAD_UUID, buyer_id: "b1", status: "offered", price_gbp: 40 },
+      { id: OFFER_UUID_2, lead_id: LEAD_UUID, buyer_id: "b2", status: "offered", price_gbp: 40 },
+    );
+    const res = await POST(cbReq(`bin:${LEAD_UUID}`));
+    expect(res.status).toBe(200);
+    expect(db.leads.find((l) => l.id === LEAD_UUID)?.status).toBe("closed");
+    // No 'offered' rows survive a bin: a binned lead is never claimable.
+    expect(db.lead_offers.filter((o) => o.lead_id === LEAD_UUID && o.status === "lost")).toHaveLength(2);
+    const toasts = callsTo("answerCallbackQuery");
+    expect(toasts[toasts.length - 1].body.text).toBe("Binned. 2 open offers withdrawn.");
+  });
+});
+
+// ── Callback: sp (send to pool) ─────────────────────────────────────────────
+
+describe("callback: sp (send to pool)", () => {
+  function seedSpFixture(leadStatus = "contactable") {
+    db.leads.push({ id: LEAD_UUID, status: leadStatus, source: "dentists", full_name: "Jane Doe" });
+    db.lead_value_scores.push({
+      id: "score-1",
+      lead_id: LEAD_UUID,
+      tier: null,
+      case_tier: "advisory",
+      intent: null,
+      work_type: null,
+    });
+  }
+
+  it("refuses a binned lead before any offer work", async () => {
+    seedSpFixture("closed");
+    const res = await POST(cbReq(`sp:${LEAD_UUID}`));
+    expect(res.status).toBe(200);
+    expect(mockSendOffers).not.toHaveBeenCalled();
+    const msgs = callsTo("sendMessage");
+    expect(msgs[msgs.length - 1].body.text).toContain("Lead is closed/binned.");
+  });
+
+  it.each([
+    ["suppressed", "Blocked: enquirer opted out"],
+    ["raw-supplied", "Blocked: already raw-supplied"],
+    ["consent", "Blocked: stored consent wording not recognised - check the site's consent copy"],
+    ["no-price", "No price for this tier"],
+    ["no-buyers", "No matching signed buyers"],
+  ])("maps sendOffers no-op reason %s to its own toast", async (reason, toast) => {
+    seedSpFixture();
+    mockSendOffers.mockResolvedValue({ matched: 0, offered: 0, buyers: [], reason });
+    const res = await POST(cbReq(`sp:${LEAD_UUID}`));
+    expect(res.status).toBe(200);
+    const msgs = callsTo("sendMessage");
+    expect(msgs[msgs.length - 1].body.text).toContain(toast);
+  });
+
+  it("keeps the generic toast when sendOffers gives no reason (backwards compatible)", async () => {
+    seedSpFixture();
+    const res = await POST(cbReq(`sp:${LEAD_UUID}`));
+    expect(res.status).toBe(200);
+    const msgs = callsTo("sendMessage");
+    expect(msgs[msgs.length - 1].body.text).toContain("Not offered: no eligible buyer");
+  });
 });
 
 // ── Callback: br (claim-for-them) ───────────────────────────────────────────
@@ -492,6 +581,88 @@ describe("callback: br (claim-for-them)", () => {
 
     const nurtureRow = db.lead_nurture_state.find((r) => r.lead_id === LEAD_UUID);
     expect(nurtureRow?.status).toBe("stopped");
+  });
+
+  it("a test buyer's 'exclusive' claim never locks: a real buyer still claims shared", async () => {
+    db.lead_buyers.push(
+      {
+        id: "buyer-2",
+        email: "firm2@buyers.test",
+        firm_name: "Firm Two",
+        status: "active",
+        dsa_signed_at: "2026-08-01T00:00:00.000Z",
+      },
+      { id: "buyer-qa", firm_name: "Owner shadow", is_test: true },
+    );
+    db.leads.push({
+      id: LEAD_UUID,
+      source: "dentists",
+      full_name: "Jane Doe",
+      consent_text: "will share your details with our specialist partner network",
+    });
+    db.lead_offers.push(
+      // QA walk: test buyer claimed "exclusive" (migration 20260820000002 says ignore it)
+      { id: OFFER_UUID, lead_id: LEAD_UUID, buyer_id: "buyer-qa", status: "claimed", exclusive: true, price_gbp: 255 },
+      {
+        id: OFFER_UUID_2,
+        lead_id: LEAD_UUID,
+        buyer_id: "buyer-2",
+        status: "offered",
+        released_at: null,
+        expires_at: new Date(Date.now() + 3_600_000).toISOString(),
+        price_gbp: 85,
+      },
+    );
+
+    const res = await POST(cbReq(`br:${OFFER_UUID_2}`));
+    expect(res.status).toBe(200);
+
+    const offerRow = db.lead_offers.find((o) => o.id === OFFER_UUID_2);
+    expect(offerRow?.status).toBe("claimed");
+    expect(offerRow?.exclusive).toBeFalsy(); // shared claim, not a lock
+    expect(sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"))).toHaveLength(1);
+  });
+});
+
+// ── notifyBuyerReply: fail-closed PII gate on the quoted excerpt ─────────────
+
+describe("notifyBuyerReply PII gate", () => {
+  const offers = [{ id: OFFER_UUID, lead_id: LEAD_UUID, price_gbp: 40 }];
+
+  beforeEach(() => {
+    db.leads.push({ id: LEAD_UUID, full_name: "Jane Doe" });
+  });
+
+  it("withholds the excerpt when verifyNoIdentifiers says not clean", async () => {
+    mockVerify.mockResolvedValue(false);
+    const ok = await notifyBuyerReply("Firm One", "is this Jane Doe from Edinburgh?", offers, "Re: your lead J Doe");
+    expect(ok).toBe(true);
+    const call = callsTo("sendMessage")[0];
+    const text = call.body.text as string;
+    expect(text).toContain("(reply content withheld, see email)");
+    expect(text).toContain("Firm One");
+    expect(text).not.toContain("Jane Doe from Edinburgh");
+    expect(text).not.toContain("Re: your lead");
+    // Lead label and the claim buttons survive the withholding.
+    expect(JSON.stringify(call.body.reply_markup)).toContain("J.D. (L-11111111)");
+  });
+
+  it("withholds the excerpt when the verify call throws (fail-closed)", async () => {
+    mockVerify.mockRejectedValue(new Error("gateway down"));
+    const ok = await notifyBuyerReply("Firm One", "is this Jane Doe from Edinburgh?", offers);
+    expect(ok).toBe(true);
+    const text = callsTo("sendMessage")[0].body.text as string;
+    expect(text).toContain("(reply content withheld, see email)");
+    expect(text).not.toContain("Edinburgh");
+  });
+
+  it("shows the excerpt and subject when verified clean", async () => {
+    mockVerify.mockResolvedValue(true);
+    await notifyBuyerReply("Firm One", "yes please, we will take it", offers, "Re: New enquiry");
+    const text = callsTo("sendMessage")[0].body.text as string;
+    expect(text).toContain("yes please, we will take it");
+    expect(text).toContain("Replying to:");
+    expect(text).toContain("Re: New enquiry");
   });
 });
 

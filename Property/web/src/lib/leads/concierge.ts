@@ -440,6 +440,22 @@ export async function handleInboundReply(input: ConciergeInput): Promise<void> {
   const firstName = firstNameOf(lead.full_name);
   const bookingUrl = mintBookingUrl(leadId);
 
+  // A sold or binned lead never gets an automated conversation: the buyer
+  // owns the relationship now ('forwarded' = pool release, raw supply or Sid
+  // hand-off; 'closed' = binned). Same status set as the aux-cron reminder
+  // skip. Skipping is the existing disabled no-op: no reply, no booking.
+  try {
+    const statusRes = await adminSelect<{ status: string | null }>("leads", {
+      select: "status",
+      id: `eq.${leadId}`,
+      limit: "1",
+    });
+    const status = statusRes.ok ? statusRes.data[0]?.status : null;
+    if (status === "forwarded" || status === "closed") return;
+  } catch (err) {
+    console.error("[leads/concierge] status check failed", err);
+  }
+
   // Load or create conversation state
   let state: ConversationStateRow;
   try {

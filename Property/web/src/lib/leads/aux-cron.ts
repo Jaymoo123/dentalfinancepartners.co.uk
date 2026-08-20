@@ -19,7 +19,9 @@ import { firstNameOf } from "@accounting-network/web-shared/lead-nurture/config"
 import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { botArmed } from "@/lib/telegram";
 import { isBotPaused } from "@/lib/leads/nurture-control";
-import { notifyExpiredOffer, notifyClaimHeld } from "@/lib/leads/bot-notify";
+import { notifyExpiredOffer, notifyClaimHeld, leadRef } from "@/lib/leads/bot-notify";
+import { getResend, getFromAddress } from "@/lib/resend";
+import { resolveLeadTo } from "@/lib/lead-routing";
 
 // ---------------------------------------------------------------------------
 // Window bounds (Europe/London wall-clock)
@@ -230,8 +232,9 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         email: string;
         phone: string | null;
         source: string | null;
+        status: string | null;
       }>("leads", {
-        select: "id,full_name,email,phone,source",
+        select: "id,full_name,email,phone,source,status",
         source: "eq.property",
         id: `in.(${leadIds.join(",")})`,
       });
@@ -249,6 +252,10 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         if (!lead) continue;
         if (optedOutLeads.has(leadId)) continue;
         if (lead.source === "test") continue;
+        // A sold or binned lead never gets a "the partner firm will ring you"
+        // reminder: the buyer owns the relationship now ('forwarded' = pool
+        // release, raw supply or Sid hand-off; 'closed' = binned).
+        if (lead.status === "forwarded" || lead.status === "closed") continue;
 
         const bounds = WINDOW_BOUNDS[meta.window];
         if (!bounds) continue;
@@ -469,21 +476,28 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
 
   // ── Scan C: buyer offer expiry ───────────────────────────────────────────
   // Estate-wide sweep (lives in Property only, like the notify route): any
-  // offer still 'offered' past its expires_at flips to 'expired'. When the
-  // lead-ops bot is armed, each expiry pings the owner with a [Re-offer]
-  // button; otherwise the lead simply falls back to normal routing.
+  // offer still 'offered' past its expires_at flips to 'expired'. The flip is
+  // state truth and runs regardless of the bot; but it also destroys the
+  // dedupe, so every lead the bot cannot or does not alert must reach the
+  // owner by email instead (runbook rule: every bot send is fail-open with an
+  // email fallback), or the [Re-offer]/[Send to Sid] decision is lost forever.
   try {
-    const expired = await adminUpdate<{ id: string; lead_id: string; price_gbp: number }>(
+    const expired = await adminUpdate<{
+      id: string;
+      lead_id: string;
+      price_gbp: number;
+      teaser?: { tier?: string } | null;
+    }>(
       "lead_offers",
       { status: "eq.offered", expires_at: `lt.${new Date().toISOString()}` },
       { status: "expired" },
     );
-    if (botArmed() && expired.ok && expired.data.length > 0 && !(await isBotPaused())) {
-      // One ping per lead, and none when the lead already sold: sibling offers
+    if (expired.ok && expired.data.length > 0) {
+      // One alert per lead, and none when the lead already sold: sibling offers
       // expiring after a claim is the expected end-state, not news (owner
-      // decision 2026-08-20 after five noise pings in one sweep). The ping
+      // decision 2026-08-20 after five noise pings in one sweep). The alert
       // carries the highest-priced expired offer for the lead.
-      const byLead = new Map<string, { id: string; lead_id: string; price_gbp: number }>();
+      const byLead = new Map<string, (typeof expired.data)[number]>();
       for (const row of expired.data) {
         const cur = byLead.get(row.lead_id);
         if (!cur || row.price_gbp > cur.price_gbp) byLead.set(row.lead_id, row);
@@ -506,12 +520,40 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
           .filter((r) => !testIds.has(r.buyer_id))
           .map((r) => r.lead_id),
       );
+      const armed = botArmed() && !(await isBotPaused());
+      const unnotified: (typeof expired.data)[number][] = [];
       for (const row of byLead.values()) {
         if (sold.has(row.lead_id)) continue;
+        if (!armed) {
+          unnotified.push(row);
+          continue;
+        }
         try {
-          await notifyExpiredOffer(row);
+          if (!(await notifyExpiredOffer(row))) unnotified.push(row);
         } catch (err) {
           console.error("[lead-aux-cron] expiry notify failed", row.id, err);
+          unnotified.push(row);
+        }
+      }
+      if (unnotified.length > 0 && process.env.RESEND_API_KEY) {
+        // ONE batched email for the whole sweep, mirroring the raw-batch
+        // cron's fallback (ids only, no PII).
+        try {
+          await getResend().emails.send({
+            from: getFromAddress(),
+            to: resolveLeadTo(undefined),
+            subject: `Offers expired unclaimed: ${unnotified.length} lead${unnotified.length === 1 ? "" : "s"} (no Telegram alert)`,
+            text: [
+              "These leads' offers expired unclaimed and no Telegram alert reached you:",
+              ...unnotified.map(
+                (r) =>
+                  `${leadRef(r.lead_id)} · ${r.teaser?.tier ? `${r.teaser.tier} tier · ` : ""}£${r.price_gbp}`,
+              ),
+              "The [Re-offer] and [Send to Sid] buttons are only in Telegram; open the bot to act on these.",
+            ].join("\n"),
+          });
+        } catch (err) {
+          console.error("[lead-aux-cron] expiry email fallback failed", err);
         }
       }
     }

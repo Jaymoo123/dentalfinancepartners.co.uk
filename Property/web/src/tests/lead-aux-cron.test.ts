@@ -148,6 +148,25 @@ const mockNotifyExpired = vi.fn((_offer: Row) => Promise.resolve(true));
 vi.mock("@/lib/leads/bot-notify", () => ({
   notifyExpiredOffer: (...a: [Row]) => mockNotifyExpired(...a),
   notifyClaimHeld: vi.fn(() => Promise.resolve(true)),
+  leadRef: (leadId: string) => `L-${leadId.slice(0, 8)}`,
+}));
+
+// ── Resend + routing mocks (Scan C operator email fallback) ──────────────────
+
+const sentEmails: Array<{ from: string; to: string; subject: string; text?: string }> = [];
+vi.mock("@/lib/resend", () => ({
+  getResend: () => ({
+    emails: {
+      send: vi.fn((payload: { from: string; to: string; subject: string; text?: string }) => {
+        sentEmails.push(payload);
+        return Promise.resolve({ data: { id: `email-${sentEmails.length}` }, error: null });
+      }),
+    },
+  }),
+  getFromAddress: () => "JM Lead Notification <leads@test.invalid>",
+}));
+vi.mock("@/lib/lead-routing", () => ({
+  resolveLeadTo: () => "owner@test.invalid",
 }));
 
 // ── Imports (after mocks) ─────────────────────────────────────────────────────
@@ -219,7 +238,10 @@ beforeEach(() => {
   mockSend.mockResolvedValue({ id: "msg-123" });
   mockInSendWindow.mockReturnValue(true);
   botArmedFlag = false;
-  mockNotifyExpired.mockClear();
+  mockNotifyExpired.mockReset();
+  mockNotifyExpired.mockResolvedValue(true);
+  sentEmails.length = 0;
+  process.env.RESEND_API_KEY = "re_test";
   vi.clearAllTimers();
 });
 
@@ -354,6 +376,45 @@ describe("Scan A: T-24 email", () => {
 
     await runLeadAuxScans();
     expect(mockSend).not.toHaveBeenCalled();
+  });
+
+  it("skips sold and binned leads but still reminds a live one (C2)", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-07-03T10:00:00.000Z")); // inside T-24
+
+    seedLead({ status: "forwarded" }); // sold: pool release, raw supply or Sid
+    seedBookedEvent("2026-07-04", "morning", "2026-07-02T10:00:00.000Z");
+
+    (db.leads as Row[]).push({
+      id: "lead-binned-3",
+      full_name: "Ben Binned",
+      email: "ben@example.com",
+      phone: "+447700900003",
+      source: "property",
+      status: "closed",
+    });
+    (db.leads as Row[]).push({
+      id: "lead-live-2",
+      full_name: "Liv Live",
+      email: "liv@example.com",
+      phone: "+447700900002",
+      source: "property",
+      status: "contactable",
+    });
+    for (const id of ["lead-binned-3", "lead-live-2"]) {
+      (db.lead_contact_events as Row[]).push({
+        lead_id: id,
+        event_type: "booked",
+        ts: "2026-07-02T11:00:00.000Z",
+        meta: { date: "2026-07-04", window: "morning", start: "Sat 4 Jul, morning (9am to 12pm)" },
+      });
+    }
+
+    await runLeadAuxScans();
+
+    const emailSends = mockSend.mock.calls.filter((c) => c[0].channel === "email");
+    expect(emailSends).toHaveLength(1);
+    expect(emailSends[0][0].to).toBe("liv@example.com");
   });
 
   it("T-24 email is reply-based with no booking link", async () => {
@@ -648,9 +709,9 @@ describe("Scan C: buyer offer expiry sweep", () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-08-07T12:00:00.000Z"));
     db.lead_offers.push(
-      { id: "o1", status: "offered", expires_at: "2026-08-07T10:00:00.000Z" }, // overdue
-      { id: "o2", status: "offered", expires_at: "2026-08-08T10:00:00.000Z" }, // still open
-      { id: "o3", status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" }, // claimed, untouched
+      { id: "o1", lead_id: "LA", status: "offered", expires_at: "2026-08-07T10:00:00.000Z" }, // overdue
+      { id: "o2", lead_id: "LB", status: "offered", expires_at: "2026-08-08T10:00:00.000Z" }, // still open
+      { id: "o3", lead_id: "LC", status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" }, // claimed, untouched
     );
 
     await runLeadAuxScans();
@@ -686,6 +747,56 @@ describe("Scan C: buyer offer expiry sweep", () => {
     const pinged = mockNotifyExpired.mock.calls.map((c) => c[0]);
     expect(pinged).toContainEqual(expect.objectContaining({ id: "p1", lead_id: "L1", price_gbp: 85 }));
     expect(pinged).toContainEqual(expect.objectContaining({ id: "p5", lead_id: "L3", price_gbp: 85 }));
+    // Every ping succeeded: no operator fallback email
+    expect(sentEmails).toHaveLength(0);
+  });
+
+  it("unarmed: flip still runs and ONE batched fallback email lists the unsold leads (C1)", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-07T12:00:00.000Z"));
+    botArmedFlag = false;
+    db.lead_buyers.push({ id: "B-real", is_test: false });
+    db.lead_offers.push(
+      // L1: two expired offers, unsold -> in the email with the £85 row
+      { id: "q1", lead_id: "L1", price_gbp: 85, status: "offered", expires_at: "2026-08-07T10:00:00.000Z", teaser: { tier: "standard" } },
+      { id: "q2", lead_id: "L1", price_gbp: 15, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+      // L2: sold to a real buyer -> silent even in the fallback email
+      { id: "q3", lead_id: "L2", price_gbp: 15, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+      { id: "q4", lead_id: "L2", buyer_id: "B-real", price_gbp: 15, status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" },
+      // L3: unsold -> batched into the SAME email, not a second one
+      { id: "q5", lead_id: "L3", price_gbp: 45, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+    );
+
+    await runLeadAuxScans();
+
+    expect(db.lead_offers.find((o) => o.id === "q1")?.status).toBe("expired");
+    expect(mockNotifyExpired).not.toHaveBeenCalled();
+    expect(sentEmails).toHaveLength(1);
+    expect(sentEmails[0].to).toBe("owner@test.invalid");
+    expect(sentEmails[0].text).toContain("L-L1");
+    expect(sentEmails[0].text).toContain("standard tier");
+    expect(sentEmails[0].text).toContain("£85");
+    expect(sentEmails[0].text).toContain("L-L3");
+    expect(sentEmails[0].text).toContain("£45");
+    expect(sentEmails[0].text).not.toContain("L-L2");
+    expect(sentEmails[0].text).toContain("Telegram");
+  });
+
+  it("armed but the Telegram send returns false: fallback email carries the decision (C1)", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-07T12:00:00.000Z"));
+    botArmedFlag = true;
+    mockNotifyExpired.mockResolvedValue(false);
+    db.lead_offers.push(
+      { id: "q1", lead_id: "L1", price_gbp: 85, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+    );
+
+    await runLeadAuxScans();
+
+    expect(mockNotifyExpired).toHaveBeenCalledTimes(1);
+    expect(sentEmails).toHaveLength(1);
+    expect(sentEmails[0].text).toContain("L-L1");
+    expect(sentEmails[0].text).toContain("£85");
   });
 });
 

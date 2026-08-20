@@ -17,6 +17,7 @@ import { renderTeaserText } from "@/lib/leads/offer-send";
 import { tierPrice, matchingBuyers } from "@/lib/leads/offer-config";
 import { tierLabel, buildTeaser, type TeaserJson } from "@/lib/leads/offer-teaser";
 import { escapeHtml } from "@/lib/leads/notify-email";
+import { verifyNoIdentifiers } from "@/lib/ai";
 import type { GradeResult } from "@/lib/leads/case-tier";
 
 /** Short id handle for a lead in bot copy (uniqueness when names collide). */
@@ -195,10 +196,22 @@ export async function notifyBuyerReply(
   subject?: string,
 ): Promise<boolean> {
   const quoted = (body || "").replace(/\s+/g, " ").trim().slice(0, BUYER_REPLY_QUOTE_LIMIT);
-  const subjectLine = subject?.trim()
-    ? `\nReplying to: <i>${escapeHtml(subject.trim().slice(0, 120))}</i>`
-    : "";
-  const head = `<b>${escapeHtml(buyerFirm)} replied by email:</b>\n<i>${escapeHtml(quoted || "(empty message)")}</i>${subjectLine}`;
+  const subjectExcerpt = subject?.trim() ? subject.trim().slice(0, 120) : "";
+  // A buyer's prose can quote lead PII back ("is this Jane Doe from ...?"), so
+  // the excerpts pass the same fail-closed verify gate as the teaser: false or
+  // any throw withholds them; firm name, lead label and buttons always render.
+  const texts = [quoted, subjectExcerpt].filter(Boolean);
+  let clean = texts.length === 0; // nothing quoted = nothing to leak
+  if (!clean) {
+    try {
+      clean = await verifyNoIdentifiers(texts);
+    } catch {
+      clean = false;
+    }
+  }
+  const head = clean
+    ? `<b>${escapeHtml(buyerFirm)} replied by email:</b>\n<i>${escapeHtml(quoted || "(empty message)")}</i>${subjectExcerpt ? `\nReplying to: <i>${escapeHtml(subjectExcerpt)}</i>` : ""}`
+    : `<b>${escapeHtml(buyerFirm)} replied by email:</b>\n<i>(reply content withheld, see email)</i>`;
   if (offers.length === 0) {
     return sendTelegram(`${head}\n\nNo open offers for this firm. Reply from your inbox if it needs an answer.`);
   }

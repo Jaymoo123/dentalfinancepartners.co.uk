@@ -4,12 +4,16 @@
  * Telegram bot's [Release details] button and the claim route share ONE
  * implementation.
  *
- * Idempotency latch FIRST: a conditional PATCH stamps released_at only when it
- * is still null, so a double tap, a Telegram redelivery and a concurrent claim
- * route call collapse to exactly one release email. The latch is taken BEFORE
- * the send; on a send failure the offer stays latched and the owner gets the
- * RELEASE EMAIL FAILED alert to forward manually (same operational outcome as
- * the pre-extraction route, where nothing retried either).
+ * Suppression re-check FIRST (DSA clause 3.5): an objection landing between
+ * the claim and the owner's [Release] tap must stop the release, so the check
+ * runs before anything is stamped and a suppressed lead never latches.
+ *
+ * Then the idempotency latch: a conditional PATCH stamps released_at only when
+ * it is still null, so a double tap, a Telegram redelivery and a concurrent
+ * claim route call collapse to exactly one release email. The latch is taken
+ * BEFORE the send; on a send failure the offer stays latched and the owner
+ * gets the RELEASE EMAIL FAILED alert to forward manually (same operational
+ * outcome as the pre-extraction route, where nothing retried either).
  */
 import { getResend, getFromAddress } from "@/lib/resend";
 import { adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
@@ -35,6 +39,8 @@ export type ReleaseResult = {
   already: boolean;
   /** True when the release email reached Resend without error. */
   released: boolean;
+  /** Set when the release was refused because the enquirer objected (DSA 3.5). */
+  reason?: "suppressed";
   offer?: OfferRow;
   buyerFirm?: string;
   leadSource?: string;
@@ -166,10 +172,55 @@ export async function claimOffer(
 }
 
 /**
+ * Owner alert for a release that needs a human. Same pathway shape as the
+ * "RELEASE EMAIL FAILED" line in the claimed-notification email: plain text to
+ * the lead's notify inbox, so every claimed-but-not-released row is surfaced
+ * before the invoice run counts it. Best-effort, never throws.
+ */
+async function alertOwnerReleaseAttention(
+  offer: OfferRow,
+  leadSource: string | null | undefined,
+  lines: string[],
+): Promise<void> {
+  try {
+    await getResend().emails.send({
+      from: getFromAddress(),
+      to: resolveLeadTo(leadSource ?? undefined),
+      subject: `Lead release needs attention: offer ${offer.id}`,
+      text: [...lines, `Offer ID: ${offer.id}`, `Lead ID: ${offer.lead_id}`].join("\n"),
+    });
+  } catch (err) {
+    console.error("leads/offer-release: owner alert threw", err);
+  }
+}
+
+/**
  * Release a claimed offer's lead to its buyer. Only acts on status='claimed'
- * rows with released_at null; anything else returns {already:true}.
+ * rows with released_at null; anything else returns {already:true}. A lead
+ * whose enquirer has objected since the claim is never released or latched:
+ * {released:false, reason:"suppressed"} plus an owner alert to credit/close.
  */
 export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResult> {
+  // Suppression re-check BEFORE the latch (DSA 3.5): an objection landing
+  // between the claim and the release tap stops the release. The read is only
+  // for lead_id + state; the conditional latch below still owns idempotency.
+  const pre = await adminSelect<OfferRow>("lead_offers", {
+    select: "id,lead_id,buyer_id,status,price_gbp,released_at",
+    id: `eq.${offerId}`,
+    limit: "1",
+  });
+  const preRow = pre.ok ? pre.data[0] : undefined;
+  if (!preRow || preRow.status !== "claimed" || preRow.released_at) {
+    return { already: true, released: false };
+  }
+  if (await isSuppressed(preRow.lead_id)) {
+    await alertOwnerReleaseAttention(preRow, undefined, [
+      `ENQUIRER OBJECTED: the enquirer for lead ${preRow.lead_id} has asked us not to pass their details on, so the claimed offer was NOT released to the buyer.`,
+      "No details were sent and the offer is still marked claimed. Credit or close it so it is not billed.",
+    ]);
+    return { already: false, released: false, reason: "suppressed", offer: preRow };
+  }
+
   // Latch: claimed + unreleased -> stamped. Zero rows back means someone else
   // (double tap, concurrent path) got here first, or the offer is not claimed.
   const latch = await adminUpdate<OfferRow>(
@@ -288,6 +339,14 @@ export async function releaseClaimedOffer(offerId: string): Promise<ReleaseResul
     } catch (err) {
       console.error("leads/offer-release: owner notify threw", err);
     }
+  } else {
+    // A post-latch buyer/lead read failure must not go silent: the row is
+    // stamped released, /month would count it as billable, and nothing was
+    // sent. Same alert pathway as a failed release send.
+    await alertOwnerReleaseAttention(offer, lead?.source, [
+      `RELEASE EMAIL FAILED: could not load the ${buyer ? "lead" : "buyer"} record for claimed offer ${offer.id}, so nothing was sent to the buyer.`,
+      "Send the lead details manually, or credit the offer so it is not billed.",
+    ]);
   }
 
   return {

@@ -1,6 +1,7 @@
 /**
  * Offer-send: creates lead_offers rows for every matching buyer and emails
- * each buyer the anonymised teaser with their own Accept link.
+ * each buyer the anonymised teaser; the firm accepts by replying YES
+ * (reply-to-accept, owner decision 2026-08-19: no per-buyer link or button).
  *
  * Idempotent by construction: offers insert with onConflict (lead_id, buyer_id)
  * ignoreDuplicates, and emails go only to buyers whose insert succeeded, so a
@@ -17,6 +18,7 @@ import { matchingBuyers, tierPrice, type LeadBuyer } from "@/lib/leads/offer-con
 import { tierLabel, type TeaserJson } from "@/lib/leads/offer-teaser";
 import { escapeHtml } from "@/lib/leads/notify-email";
 import { offerFromAddress, offerReplyTo } from "@/lib/leads/offer-release";
+import { resolveLeadTo } from "@/lib/lead-routing";
 
 const FONT = "-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 
@@ -62,44 +64,30 @@ export function renderTeaserHtml(t: TeaserJson, priceGbp?: number | null): strin
     )
     .join("");
   const situation = (t.situation ?? "").trim();
-  const enquiry = (t.redacted_message ?? "").trim();
   const panel = (label: string, body: string) =>
     `<p style="margin:16px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">${label}</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
       <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;color:#334155;font-size:14px;line-height:1.6;">${escapeHtml(body)}</td></tr>
     </table>`;
-  // The enquiry panel renders only for teasers stored before 2026-08-20; new
-  // teasers are situation-only and carry the claim note instead.
+  // Legacy redacted_message is deliberately NOT rendered (situation-only, owner
+  // decision 2026-08-20): pre-flip strings came from the retired regex redactor
+  // and were never AI-verified, so a legacy teaser renders structured facts only.
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
       <colgroup><col style="width:150px;" /><col /></colgroup>${rows}
     </table>${situation ? panel("Situation", situation) : ""}${
-      enquiry
-        ? panel("The enquiry, in their words", enquiry) +
-          `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">Identifying details (names, companies, contact details, addresses, locations and web links) are removed above, and the redaction is independently verified before sending. You get the enquiry in full, unredacted, with the enquirer's contact details, only if you claim it.</p>`
-        : situation
-          ? `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">The summary above is anonymised and independently verified before sending. You get the enquiry in full, in the enquirer's own words, with their contact details, only if you claim it.</p>`
-          : ""
+      situation
+        ? `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">The summary above is anonymised and independently verified before sending. You get the enquiry in full, in the enquirer's own words, with their contact details, only if you claim it.</p>`
+        : ""
     }`;
 }
 
 export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): string {
   const lines = teaserRows(t, priceGbp).map((r) => `${r.label}: ${r.value}`);
   const situation = (t.situation ?? "").trim();
-  if (situation) lines.push("", "SITUATION", situation);
-  // Enquiry block = legacy stored teasers only; new teasers are situation-only.
-  const enquiry = (t.redacted_message ?? "").trim();
-  if (enquiry) {
-    lines.push(
-      "",
-      "THE ENQUIRY, IN THEIR WORDS",
-      enquiry,
-      "",
-      "Identifying details (names, companies, contact details, addresses, locations " +
-        "and web links) are removed above, and the redaction is independently verified " +
-        "before sending. You get the enquiry in full, unredacted, with the enquirer's " +
-        "contact details, only if you claim it.",
-    );
-  } else if (situation) {
+  // Legacy redacted_message never renders (situation-only, owner decision
+  // 2026-08-20): pre-flip strings were regex-redacted and never AI-verified.
+  if (situation) {
+    lines.push("", "SITUATION", situation);
     lines.push(
       "",
       "The summary above is anonymised and independently verified before sending. " +
@@ -181,6 +169,9 @@ export function isBuyerAcceptance(body: string): boolean {
   if (/\b(no|not|don't|dont|isn't|isnt|won't|wont|never|unsubscribe|stop|pause)\b/.test(line)) {
     return false;
   }
+  // A question or a hedge is not an acceptance: "Interested, can you share a
+  // bit more first?" must surface to the owner, never auto-claim.
+  if (line.includes("?") || /\b(maybe|possibly|depends)\b/.test(line)) return false;
   return /(^|\W)(y|ya|yes|yep|yeah|yeh|accept|accepted|interested)(\W|$)/.test(line);
 }
 
@@ -249,6 +240,10 @@ export type SendOffersResult = {
   matched: number;
   offered: number;
   buyers: string[];
+  /** Buyers whose offer row inserted but whose email failed (operator chased). */
+  emailFailures?: number;
+  /** Why a zero-matched return sent nothing. Additive; callers may ignore it. */
+  reason?: "suppressed" | "raw-supplied" | "consent" | "no-price" | "no-buyers";
 };
 
 type OfferRow = { id: string; token: string; buyer_id: string };
@@ -259,19 +254,19 @@ export async function sendOffers(
   teaser: TeaserJson,
 ): Promise<SendOffersResult> {
   const price = tierPrice(teaser.tier);
-  if (price === null) return { matched: 0, offered: 0, buyers: [] };
+  if (price === null) return { matched: 0, offered: 0, buyers: [], reason: "no-price" };
 
   // An enquirer who has objected is never offered (DSA clause 3.5, LIA safeguard).
   if (await isSuppressed(leadId)) {
     console.warn("leads/offer-send: lead suppressed, not offering", leadId);
-    return { matched: 0, offered: 0, buyers: [] };
+    return { matched: 0, offered: 0, buyers: [], reason: "suppressed" };
   }
 
   // A raw-supplied lead is excluded from tiered offers forever (owner decision
   // 2026-08-19): the raw buyer already holds its full details.
   if (await isRawSupplied(leadId)) {
     console.warn("leads/offer-send: lead already raw-supplied, not offering", leadId);
-    return { matched: 0, offered: 0, buyers: [] };
+    return { matched: 0, offered: 0, buyers: [], reason: "raw-supplied" };
   }
 
   // The stored consent decides disclosability, not the current site copy.
@@ -282,14 +277,15 @@ export async function sendOffers(
   });
   if (!consentRes.ok || !consentAllowsSharing(consentRes.data[0]?.consent_text)) {
     console.warn("leads/offer-send: consent wording does not disclose sharing, not offering", leadId);
-    return { matched: 0, offered: 0, buyers: [] };
+    return { matched: 0, offered: 0, buyers: [], reason: "consent" };
   }
 
   const buyers = await matchingBuyers(source, teaser.tier);
-  if (buyers.length === 0) return { matched: 0, offered: 0, buyers: [] };
+  if (buyers.length === 0) return { matched: 0, offered: 0, buyers: [], reason: "no-buyers" };
 
   const expiresAt = new Date(Date.now() + OFFER_EXPIRY_HOURS * 3600_000).toISOString();
   const offeredTo: string[] = [];
+  const failedBuyers: LeadBuyer[] = [];
 
   for (const buyer of buyers) {
     // ignoreDuplicates: re-offering the same lead to the same buyer is a no-op,
@@ -321,15 +317,43 @@ export async function sendOffers(
       });
       if (error) {
         console.error("leads/offer-send: resend error", buyer.ref, error);
+        failedBuyers.push(buyer);
         continue;
       }
       offeredTo.push(buyer.firm_name);
     } catch (err) {
       console.error("leads/offer-send: send threw", buyer.ref, err);
+      failedBuyers.push(buyer);
     }
   }
 
-  return { matched: buyers.length, offered: offeredTo.length, buyers: offeredTo };
+  // Fail-open rule (LEAD_OPS_BOT.md): an offer row whose buyer email failed
+  // sits claimable while the firm never heard of it, so the operator gets ONE
+  // chase email listing the affected buyers. No retry logic.
+  if (failedBuyers.length > 0) {
+    const leadRef = `L-${leadId.slice(0, 8)}`;
+    try {
+      await getResend().emails.send({
+        from: offerFromAddress(),
+        to: resolveLeadTo(source),
+        subject: `Offer email FAILED for ${failedBuyers.length} buyer(s) [${leadRef}]`,
+        text: [
+          "These buyers hold an open offer row but never received the offer email; chase or re-offer manually:",
+          "",
+          ...failedBuyers.map((b) => `${b.ref} · ${leadRef} · £${price}`),
+        ].join("\n"),
+      });
+    } catch (err) {
+      console.error("leads/offer-send: operator fallback send threw", leadId, err);
+    }
+  }
+
+  return {
+    matched: buyers.length,
+    offered: offeredTo.length,
+    buyers: offeredTo,
+    emailFailures: failedBuyers.length,
+  };
 }
 
 // ---------------------------------------------------------------------------

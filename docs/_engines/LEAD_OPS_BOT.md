@@ -4,7 +4,9 @@ Built 2026-08-19. The owner runs the whole lead-sale loop from Telegram inline
 buttons; the bot is a second front-end over the existing offer/claim pipeline
 (`docs/_engines/CENTRAL_LEAD_PIPELINE.md`). It is additive, never load-bearing:
 if Telegram is down, every prompt falls back to the existing operator emails and
-claims auto-release exactly as before the bot existed.
+claims auto-release exactly as before the bot existed. A full scenario audit
+(~45 findings, ~30 fixed, deliberate non-fixes listed) ran 2026-08-20:
+`LEAD_OPS_BULLETPROOF_2026-08-20.md`.
 
 ## The loop, end to end
 
@@ -24,11 +26,19 @@ claims auto-release exactly as before the bot existed.
    refused, first line only so signatures cannot flip it) with exactly ONE
    open offer claims it atomically on the spot, and the bot asks you
    `[Release details £X] [Credit]`. Your tap sends the full details. One
-   nudge after 1h. No winner ack email (the release email is the
-   confirmation); losers/latecomers get a one-line "no longer available" or
-   "fully allocated" note. A yes with SEVERAL open offers, or any other
-   reply, surfaces in Telegram with per-offer `[Claim & release for them]`
-   buttons instead (a bare yes cannot safely pick between leads).
+   nudge after 1h. The hold only exists while the prompt provably lands: if
+   the bot is unarmed, paused, `LEAD_RELEASE_AUTO` is on, or the Telegram
+   send fails, the claim releases instantly (published-terms behaviour, same
+   ladder as the legacy claim route). No winner ack email (the release email
+   is the confirmation); losers/latecomers get a one-line "no longer
+   available" or "fully allocated" note, and a duplicate YES from the winner
+   gets "you already have this lead". A yes whose subject still carries the
+   `[L-xxxxxxxx]` ref claims that lead directly even when the firm has
+   several open offers; a bare yes with several open offers, a yes whose ref
+   is no longer open, or any other reply surfaces in Telegram with per-offer
+   `[Claim & release for them]` buttons instead (never guessed). Replies
+   from an address that matches no buyer but carries a lead ref ping the
+   owner instead of dropping.
    The old `/api/leads/claim/[token]` route stays live for any in-flight
    emails that still carry a link.
 4. **Claim-race model, LIVE since 2026-08-19** (`claim_lead_offer()` SQL
@@ -40,14 +50,18 @@ claims auto-release exactly as before the bot existed.
    to everyone. **Test buyers (`lead_buyers.is_test`) never consume a slot,
    never block an exclusive, and never appear in /month or the invoice.**
    Each claiming firm gets its own release tap and its own invoice line.
-5. **Offer expires unclaimed** (24h): bot notifies with `[Re-offer for 24h]`.
-6. **Raw batch, daily 08:00**: leads unverified past 24h are listed, split
+5. **Offer expires unclaimed** (24h): bot notifies with `[Re-offer for 24h]`
+   and `[Send to Sid (free)]` (see design rules). If the ping fails or the
+   bot is dark, one batched operator email per sweep lists the expired leads
+   instead (the buttons themselves live only in Telegram).
+6. **Raw batch, daily 08:00 UTC** (09:00 UK in summer): leads unverified past 24h are listed, split
    into "not in nurture" vs "mid-nurture" (selling a mid-nurture lead ends its
    chase and any future tiered sale, so those need the explicit second
    button). Buttons: `[Send batch (n)] [Include mid-nurture (n+m)] [Pick] [Skip]`.
    A batch is ONE email of full details to the single raw buyer
    (`LEAD_RAW_BUYER_REF`), £5/lead equivalent, sold as seen, logged in
-   `lead_supply`. A supplied lead is excluded from tiered offers forever; if
+   `lead_supply`, capped at 30 leads per tap (the toast says how many
+   remain; tap again for the rest). A supplied lead is excluded from tiered offers forever; if
    it later verifies or replies, the bot tells you and nothing else fires.
 
 Commands: `/status` (pipeline counts), `/month [YYYY-MM]` (invoice view),
@@ -56,13 +70,18 @@ Commands: `/status` (pipeline counts), `/month [YYYY-MM]` (invoice view),
 ## Money
 
 - `lead_offers` is the ledger for tiered sales (`price_gbp` snapshotted at
-  offer time), `lead_supply` for raw.
+  offer time), `lead_supply` for raw. The invoice script reads BOTH (raw
+  section added 2026-08-20, test buyers excluded throughout).
 - Invoice on the 1st: `python scripts/lead_offers_invoice.py YYYY-MM`
-  (set `BANK_DETAILS` in the script first; still empty as of 2026-08-19).
-  Claimed-but-never-released rows print as EXCEPTIONS and are NOT billed;
-  release or credit them first.
-- Credits: `[Credit]` button on a claim, or
-  `python scripts/lead_offers_invoice.py YYYY-MM --credit OFFER_ID REASON`.
+  (set `BANK_DETAILS` in the script first; the script refuses to render a
+  billable invoice while it is empty). Claimed-but-never-released rows print
+  as EXCEPTIONS and are NOT billed; release or credit them first.
+- **Credits are dead-lead refunds on EXCLUSIVE claims only** (owner decision
+  2026-08-20). No shared-claim credits, no prepaid packs; buyer-facing copy
+  says so. The `[Credit]` button and
+  `python scripts/lead_offers_invoice.py YYYY-MM --credit OFFER_ID REASON`
+  remain as internal ops tools (the script refuses non-claimed rows);
+  credited rows list at £0 and are never deducted from other leads' bills.
 
 ## Onboarding a new buyer (the whole workflow)
 
@@ -94,9 +113,16 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
 
 ## Arming sequence (deploy dark first)
 
-1. Apply migration: `python scripts/apply_web_analytics_migrations.py prod 20260819`
-   (staging first). Pre-deploy: confirm prod already has `20260810000001` +
-   `20260814000001` (lead_value_scores.case_tier etc); apply in order if not.
+1. Apply migrations through `20260820000002` (staging first):
+   `python scripts/apply_web_analytics_migrations.py prod 20260819` then the
+   two 20260820 files. Pre-deploy: confirm prod already has `20260810000001`
+   + `20260814000001` (lead_value_scores.case_tier etc); apply in order if
+   not. `20260820000001` (chart restore) and `20260820000002` (test-buyer
+   exclusive-lock fix) MUST ride along: stopping at 20260819 re-flattens the
+   dashboards and lets a QA "yes exclusive" lock real firms out. Before any
+   CREATE OR REPLACE of `claim_lead_offer` or the timeseries functions, diff
+   `pg_get_functiondef` against the migration (prod has drifted out-of-band
+   before).
 2. Deploy Property (clean-worktree recipe). Everything ships inert.
 3. BotFather: `/newbot` → copy token; `/setcommands`:
    `status - pipeline counts`, `month - invoice month`, `pause - silence bot`,
@@ -143,11 +169,19 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
   own words never ship before a claim, even tokenised; phrasing is
   re-identifiable residue. Buyers decide on the anonymised paraphrase; the
   full enquiry + contact details arrive on claim. `teaser.redacted_message`
-  is a legacy field that renders only for teasers stored before the flip.
+  is a legacy field that no longer renders anywhere (2026-08-20 second fix:
+  pre-flip strings came from the regex redactor and were never AI-verified,
+  so [Re-offer] on an old offer was re-emailing unverified text); legacy
+  teasers render structured facts only. Buyer-reply excerpts shown in
+  Telegram pass the same verify gate, withheld on failure.
 - Every button acts through a conditional DB transition; zero rows updated =
   stale tap = toast. Chat history holds no state.
 - Every bot send is fail-open with an email fallback; a Telegram outage can
-  delay convenience, never a lead.
+  delay convenience, never a lead. (Made fully true 2026-08-20: reply-YES
+  holds auto-release when the prompt cannot land, expiry sweeps fall back to
+  one batched operator email, failed buyer offer-emails alert the operator.
+  The supplied-lead-responded FYI stays best-effort by design: nothing is at
+  stake.)
 - The tier on a ping is read from `lead_value_scores.case_tier` (recorded at
   grading time), never re-derived. Owner override writes `scored_by='owner'`
   and always wins.
@@ -170,6 +204,12 @@ Existing knobs reused unchanged: `LEAD_OFFER_SOURCES`, `LEAD_OFFER_PRICES`,
   and fires the normal release email + nurture halt. Blocked when the lead
   was claimed/credited by a paying buyer, the enquirer objected, or Sid's
   row is paused/unsigned.
+
+- Leads that predate the pool have no `lead_offers` row, so no expiry alert
+  and no [Send to Sid] anchor. The 2026-08-20 workaround (Keogh) was a
+  hand-inserted synthetic expired offer; note the side effect: any
+  `lead_offers` row excludes the lead from the raw lane. One-off era; not
+  codified on purpose.
 
 ## Known limits (v1)
 

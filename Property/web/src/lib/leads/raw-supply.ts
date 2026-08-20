@@ -26,6 +26,9 @@ import type { LeadBuyer } from "@/lib/leads/offer-config";
 
 const RAW_WINDOW_HOURS = 24;
 
+// ponytail: 30/tap keeps us far inside the 30s webhook budget; chunked taps cover backlogs
+const RAW_SUPPLY_BATCH_CAP = 30;
+
 export function rawSources(): string[] {
   return (process.env.LEAD_RAW_SOURCES || "")
     .split(",")
@@ -120,10 +123,26 @@ export async function eligibleRawLeads(): Promise<RawEligibility> {
 export type SupplyResult = {
   supplied: number;
   skipped: number;
+  /** Eligible leads beyond the per-pass cap, untouched: tap again to supply them. */
+  remaining: number;
   emailSent: boolean;
   buyerFirm?: string;
   reason?: string;
 };
+
+/** Operator alert via the always-available email channel (raw-batch fallback pattern). */
+async function alertOwner(subject: string, text: string): Promise<void> {
+  try {
+    await getResend().emails.send({
+      from: getFromAddress(),
+      to: resolveLeadTo(undefined),
+      subject,
+      text,
+    });
+  } catch (err) {
+    console.error("[raw-supply] owner failure alert threw", err);
+  }
+}
 
 async function loadRawBuyer(): Promise<LeadBuyer | null> {
   const ref = (process.env.LEAD_RAW_BUYER_REF || "").trim();
@@ -146,13 +165,31 @@ async function loadRawBuyer(): Promise<LeadBuyer | null> {
 export async function supplyRawLeads(leadIds: string[]): Promise<SupplyResult> {
   const buyer = await loadRawBuyer();
   if (!buyer) {
-    return { supplied: 0, skipped: leadIds.length, emailSent: false, reason: "no-raw-buyer" };
+    return {
+      supplied: 0,
+      skipped: leadIds.length,
+      remaining: 0,
+      emailSent: false,
+      reason: "no-raw-buyer",
+    };
   }
+  const batch = leadIds.slice(0, RAW_SUPPLY_BATCH_CAP);
+  const remaining = leadIds.length - batch.length;
   const price = rawPriceGbp();
   const nowIso = new Date().toISOString();
   const won: string[] = [];
+  const reverted: string[] = [];
 
-  for (const leadId of leadIds) {
+  // Capture each lead's pre-flip status (only ever 'new' or 'nurturing') so a
+  // failed supply insert can restore it: a lead left 'forwarded' with no
+  // lead_supply row is invisible to every lane forever, sold to no one.
+  const preRes = await adminSelect<{ id: string; status: string }>("leads", {
+    select: "id,status",
+    id: `in.(${batch.join(",")})`,
+  });
+  const preStatus = new Map((preRes.ok ? preRes.data : []).map((l) => [l.id, l.status]));
+
+  for (const leadId of batch) {
     if (await isSuppressed(leadId)) continue;
     const flip = await adminUpdate<{ id: string }>(
       "leads",
@@ -165,15 +202,43 @@ export async function supplyRawLeads(leadIds: string[]): Promise<SupplyResult> {
       [{ lead_id: leadId, buyer_id: buyer.id, price_gbp: price, supplied_at: nowIso }],
       { onConflict: "lead_id", ignoreDuplicates: true },
     );
-    if (!ins.ok || ins.data.length === 0) {
+    if (!ins.ok) {
+      // Non-duplicate insert failure: undo the flip so the lead stays sellable.
+      await adminUpdate(
+        "leads",
+        { id: `eq.${leadId}`, status: "eq.forwarded" },
+        { status: preStatus.get(leadId) ?? "new" },
+      ).catch(() => {});
+      reverted.push(leadId);
+      console.error("[raw-supply] supply insert failed, status reverted", leadId);
+      continue;
+    }
+    if (ins.data.length === 0) {
       console.error("[raw-supply] supply insert conflict after status flip", leadId);
       continue;
     }
     won.push(leadId);
   }
 
+  const revertNote = reverted.length
+    ? `\n${reverted.length} lead${reverted.length === 1 ? "" : "s"} hit a supply insert failure; ` +
+      `status reverted, still sellable, NOT emailed to the buyer:\n${reverted.join("\n")}`
+    : "";
+
   if (won.length === 0) {
-    return { supplied: 0, skipped: leadIds.length, emailSent: false, buyerFirm: buyer.firm_name };
+    if (reverted.length > 0) {
+      await alertOwner(
+        `RAW SUPPLY INSERT FAILED: ${reverted.length} lead${reverted.length === 1 ? "" : "s"} reverted`,
+        `Nothing was supplied.${revertNote}`,
+      );
+    }
+    return {
+      supplied: 0,
+      skipped: batch.length,
+      remaining,
+      emailSent: false,
+      buyerFirm: buyer.firm_name,
+    };
   }
 
   // The buyer owns these relationships now: stop every nurture sequence, and
@@ -228,24 +293,24 @@ export async function supplyRawLeads(leadIds: string[]): Promise<SupplyResult> {
   if (!emailSent) {
     // Supply rows are latched; the batch just needs manual delivery. Tell the
     // owner via the always-available email channel.
-    try {
-      await getResend().emails.send({
-        from: getFromAddress(),
-        to: resolveLeadTo(undefined),
-        subject: `RAW BATCH EMAIL FAILED: ${won.length} leads latched for ${buyer.firm_name}`,
-        text:
-          `The raw batch email to ${buyer.firm_name} failed to send. The ${won.length} leads are ` +
-          `recorded in lead_supply and will not be re-batched; forward them manually.\nLead ids:\n` +
-          won.join("\n"),
-      });
-    } catch (err) {
-      console.error("[raw-supply] owner failure alert threw", err);
-    }
+    await alertOwner(
+      `RAW BATCH EMAIL FAILED: ${won.length} leads latched for ${buyer.firm_name}`,
+      `The raw batch email to ${buyer.firm_name} failed to send. The ${won.length} leads are ` +
+        `recorded in lead_supply and will not be re-batched; forward them manually.\nLead ids:\n` +
+        won.join("\n") +
+        revertNote,
+    );
+  } else if (reverted.length > 0) {
+    await alertOwner(
+      `RAW SUPPLY INSERT FAILED: ${reverted.length} lead${reverted.length === 1 ? "" : "s"} reverted`,
+      `The batch of ${won.length} was delivered.${revertNote}`,
+    );
   }
 
   return {
     supplied: won.length,
-    skipped: leadIds.length - won.length,
+    skipped: batch.length - won.length,
+    remaining,
     emailSent,
     buyerFirm: buyer.firm_name,
   };

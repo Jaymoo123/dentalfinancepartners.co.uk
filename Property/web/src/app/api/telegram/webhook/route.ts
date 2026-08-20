@@ -91,12 +91,13 @@ async function handleSendToPool(leadId: string): Promise<Toast> {
       role: string | null;
       message: string | null;
       source: string | null;
+      status: string | null;
       submitted_at: string | null;
       created_at: string | null;
       extras: Record<string, unknown> | null;
       is_test: boolean | null;
     }>("leads", {
-      select: "id,role,message,source,submitted_at,created_at,extras,is_test",
+      select: "id,role,message,source,status,submitted_at,created_at,extras,is_test",
       id: `eq.${leadId}`,
       limit: "1",
     }),
@@ -109,6 +110,8 @@ async function handleSendToPool(leadId: string): Promise<Toast> {
   const score = scoreRes.ok ? scoreRes.data[0] : undefined;
   if (!lead) return { toast: "Lead not found." };
   if (lead.is_test || lead.source === "test") return { toast: "Test lead, never offered." };
+  // A binned lead (handleBin writes 'closed') must never re-enter the pool.
+  if (lead.status === "closed") return { toast: "Lead is closed/binned." };
   const tier = offerTierFor({ tier: score?.tier ?? "", case_tier: score?.case_tier });
   if (!tier) return { toast: "No tier set. Tap Change tier first." };
 
@@ -126,6 +129,17 @@ async function handleSendToPool(leadId: string): Promise<Toast> {
     };
   }
   if (result.matched > 0) return { toast: "Already offered to every matching buyer." };
+  // sendOffers may name why it sent nothing; read defensively (field is optional
+  // and lands from offer-send separately), fall back to the generic toast.
+  const reasonToast: Record<string, string> = {
+    suppressed: "Blocked: enquirer opted out",
+    "raw-supplied": "Blocked: already raw-supplied",
+    consent: "Blocked: stored consent wording not recognised - check the site's consent copy",
+    "no-price": "No price for this tier",
+    "no-buyers": "No matching signed buyers",
+  };
+  const reason = (result as { reason?: string }).reason;
+  if (reason && reasonToast[reason]) return { toast: reasonToast[reason] };
   return { toast: "Not offered: no eligible buyer, or the lead is blocked (suppressed/supplied/consent)." };
 }
 
@@ -149,6 +163,16 @@ async function handleBin(leadId: string): Promise<Toast> {
   );
   if (!res.ok) return { toast: "DB error, try again." };
   if (res.data.length === 0) return { toast: "Cannot bin: the lead has moved on (offered/forwarded?)." };
+  // A binned lead must not stay claimable: withdraw its open offers too.
+  const withdrawn = await adminUpdate<{ id: string }>(
+    "lead_offers",
+    { lead_id: `eq.${leadId}`, status: "eq.offered" },
+    { status: "lost" },
+  );
+  const n = withdrawn.ok ? withdrawn.data.length : 0;
+  if (n > 0) {
+    return { toast: `Binned. ${n} open offer${n === 1 ? "" : "s"} withdrawn.`, stripButtons: true };
+  }
   return { toast: "Binned. It will not be offered.", stripButtons: true };
 }
 
@@ -311,7 +335,7 @@ async function handleRawSend(includeNurturing: boolean): Promise<string> {
   const delivery = result.emailSent
     ? `emailed to ${result.buyerFirm}`
     : `LATCHED for ${result.buyerFirm} but the EMAIL FAILED, see the email alert`;
-  return `Raw batch: ${result.supplied} lead${result.supplied === 1 ? "" : "s"} ${delivery} at £${rawPriceGbp()} each${result.skipped ? ` (${result.skipped} skipped)` : ""}.`;
+  return `Raw batch: ${result.supplied} lead${result.supplied === 1 ? "" : "s"} ${delivery} at £${rawPriceGbp()} each${result.skipped ? ` (${result.skipped} skipped)` : ""}${result.remaining ? ` (${result.remaining} remaining, tap again)` : ""}.`;
 }
 
 async function handleRawPick(): Promise<string> {
