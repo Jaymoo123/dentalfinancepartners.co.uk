@@ -553,6 +553,25 @@ describe("callback: sid (send expired lead to the unbilled fallback buyer)", () 
     expect(toasts[toasts.length - 1].body.text).toContain("Already sent to Sid");
   });
 
+  it("allows the hand-off when the only claim is a test buyer's (QA walk, not a sale)", async () => {
+    seedSidFixture();
+    db.lead_buyers.push({ id: "buyer-shadow", ref: "test-owner-inbox", is_test: true });
+    db.lead_offers.push({
+      id: OFFER_UUID_2,
+      lead_id: LEAD_UUID,
+      buyer_id: "buyer-shadow",
+      status: "claimed",
+      price_gbp: 85,
+    });
+
+    const res = await POST(cbReq(`sid:${OFFER_UUID}`));
+    expect(res.status).toBe(200);
+    const sidOffer = db.lead_offers.find((o) => o.buyer_id === "buyer-sid");
+    expect(sidOffer?.status).toBe("claimed");
+    expect(sidOffer?.released_at).toBeTruthy();
+    expect(sentEmails.filter((e) => e.subject.startsWith("New qualified enquiry:"))).toHaveLength(1);
+  });
+
   it("refuses when the lead was claimed by a paying buyer", async () => {
     seedSidFixture();
     db.lead_offers.push({

@@ -225,14 +225,20 @@ async function handleSendToSid(offerId: string): Promise<Toast> {
   }
 
   // A lead that sold (or was claimed then credited as bad) never goes to Sid.
-  // Sid's own row is excluded so a double tap falls through to the insert
-  // latch and toasts "already sent" instead.
+  // Test-buyer claims (owner's shadow inbox, Sid himself) are QA/contingency,
+  // not sales, so they neither block the hand-off nor break the double-tap
+  // latch below (2026-08-20 fix: QA-walk claims wrongly blocked two leads).
   const sold = await adminSelect<{ id: string; buyer_id: string }>("lead_offers", {
     select: "id,buyer_id",
     lead_id: `eq.${offer.lead_id}`,
     status: "in.(claimed,credited)",
   });
-  if (sold.ok && sold.data.some((r) => r.buyer_id !== sid.id)) {
+  const testBuyers = await adminSelect<{ id: string }>("lead_buyers", {
+    select: "id",
+    is_test: "eq.true",
+  });
+  const testIds = new Set((testBuyers.ok ? testBuyers.data : []).map((b) => b.id));
+  if (sold.ok && sold.data.some((r) => !testIds.has(r.buyer_id))) {
     return { toast: "This lead was claimed by a buyer; not sending to Sid.", stripButtons: true };
   }
 

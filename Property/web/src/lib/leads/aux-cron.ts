@@ -488,12 +488,24 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         const cur = byLead.get(row.lead_id);
         if (!cur || row.price_gbp > cur.price_gbp) byLead.set(row.lead_id, row);
       }
-      const soldRes = await adminSelect<{ lead_id: string }>("lead_offers", {
-        select: "lead_id",
+      const soldRes = await adminSelect<{ lead_id: string; buyer_id: string }>("lead_offers", {
+        select: "lead_id,buyer_id",
         lead_id: `in.(${[...byLead.keys()].join(",")})`,
         status: "in.(claimed,credited)",
       });
-      const sold = new Set((soldRes.ok ? soldRes.data : []).map((r) => r.lead_id));
+      // A claim by a test buyer (owner's shadow inbox, Sid) is QA or
+      // contingency, never a sale: it must not suppress the expiry alert
+      // (2026-08-20 fix: QA-walk claims silenced two genuinely unsold leads).
+      const testBuyers = await adminSelect<{ id: string }>("lead_buyers", {
+        select: "id",
+        is_test: "eq.true",
+      });
+      const testIds = new Set((testBuyers.ok ? testBuyers.data : []).map((b) => b.id));
+      const sold = new Set(
+        (soldRes.ok ? soldRes.data : [])
+          .filter((r) => !testIds.has(r.buyer_id))
+          .map((r) => r.lead_id),
+      );
       for (const row of byLead.values()) {
         if (sold.has(row.lead_id)) continue;
         try {

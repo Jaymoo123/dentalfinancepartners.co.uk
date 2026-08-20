@@ -21,12 +21,14 @@ const db = {
   lead_nurture_state:   [] as Row[],
   lead_nurture_sends:   [] as Row[],
   lead_offers:          [] as Row[],
+  lead_buyers:          [] as Row[],
   reset() {
     this.leads               = [];
     this.lead_contact_events = [];
     this.lead_nurture_state  = [];
     this.lead_nurture_sends  = [];
     this.lead_offers         = [];
+    this.lead_buyers         = [];
   },
 };
 
@@ -658,27 +660,32 @@ describe("Scan C: buyer offer expiry sweep", () => {
     expect(db.lead_offers.find((o) => o.id === "o3")?.status).toBe("claimed");
   });
 
-  it("armed: one ping per lead, carrying the highest price; silence for sold leads", async () => {
+  it("armed: one ping per lead, silence for sold leads, test-buyer claims never count as sold", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-08-07T12:00:00.000Z"));
     botArmedFlag = true;
+    db.lead_buyers.push(
+      { id: "B-real", is_test: false },
+      { id: "B-test", is_test: true },
+    );
     db.lead_offers.push(
       // L1: two expired offers, no claim -> ONE ping with the £85 row
       { id: "p1", lead_id: "L1", price_gbp: 85, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
       { id: "p2", lead_id: "L1", price_gbp: 15, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
-      // L2: sibling expired after a claim -> the lead sold, no ping
+      // L2: sibling expired after a REAL claim -> the lead sold, no ping
       { id: "p3", lead_id: "L2", price_gbp: 15, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
-      { id: "p4", lead_id: "L2", price_gbp: 15, status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" },
+      { id: "p4", lead_id: "L2", buyer_id: "B-real", price_gbp: 15, status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" },
+      // L3: only a TEST-buyer claim (QA walk) -> not a sale, ping fires
+      { id: "p5", lead_id: "L3", price_gbp: 85, status: "offered", expires_at: "2026-08-07T10:00:00.000Z" },
+      { id: "p6", lead_id: "L3", buyer_id: "B-test", price_gbp: 85, status: "claimed", expires_at: "2026-08-07T10:00:00.000Z" },
     );
 
     await runLeadAuxScans();
 
-    expect(mockNotifyExpired).toHaveBeenCalledTimes(1);
-    expect(mockNotifyExpired.mock.calls[0][0]).toMatchObject({
-      id: "p1",
-      lead_id: "L1",
-      price_gbp: 85,
-    });
+    expect(mockNotifyExpired).toHaveBeenCalledTimes(2);
+    const pinged = mockNotifyExpired.mock.calls.map((c) => c[0]);
+    expect(pinged).toContainEqual(expect.objectContaining({ id: "p1", lead_id: "L1", price_gbp: 85 }));
+    expect(pinged).toContainEqual(expect.objectContaining({ id: "p5", lead_id: "L3", price_gbp: 85 }));
   });
 });
 
