@@ -45,6 +45,8 @@ function teaserRows(t: TeaserJson, priceGbp?: number | null): TeaserRow[] {
   if (t.role) rows.push({ label: "Enquirer", value: t.role });
   if (t.surface) rows.push({ label: "Came via", value: t.surface });
   if (t.submitted_date) rows.push({ label: "Submitted", value: t.submitted_date });
+  if (t.last_responded) rows.push({ label: "Last responded", value: t.last_responded });
+  if (t.availability) rows.push({ label: "Availability", value: t.availability });
   if (t.callback_booked) rows.push({ label: "Callback booked?", value: t.callback_booked });
   if (t.backlog) rows.push({ label: "Note", value: "Backlog lead (date above is accurate)" });
   return rows;

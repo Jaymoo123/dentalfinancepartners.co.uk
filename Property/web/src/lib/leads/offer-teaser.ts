@@ -37,6 +37,10 @@ export type TeaserJson = {
   submitted_date: string;
   /** "Yes · Mon 6 Jul, afternoon" / "Yes" / "No" (absent on older teasers). */
   callback_booked?: string;
+  /** "YYYY-MM-DD HH:MM · email" from the latest reply (absent when none). */
+  last_responded?: string;
+  /** Near-verbatim scheduling content of their replies, redacted + verified. */
+  availability?: string;
   situation?: string;
   /** Retired 2026-08-20 (pre-claim is situation-only); kept optional so teasers
    *  stored before then still parse and render. */
@@ -117,19 +121,65 @@ export async function buildTeaser(lead: LeadLike, score: ScoreLike): Promise<Tea
   const booked = await callbackBooked(lead.id);
   if (booked) teaser.callback_booked = booked;
 
-  // Two-pass AI anonymisation, fail-closed, situation-only: the summary ships
-  // only when pass 1 produced it AND pass 2 verified the exact string clean.
-  // Any failure or doubt leaves the teaser structured-facts-only. The
-  // enquirer's own words never ship pre-claim (owner decision 2026-08-20).
+  // Recent engagement (owner decision 2026-08-20, promised to the first buyer):
+  // an old submit date with a fresh reply is the hottest kind of lead, so the
+  // teaser carries when they last responded (deterministic) and the
+  // scheduling content of their replies (near-verbatim, redacted + verified).
+  const replies = await latestReplies(lead.id);
+  if (replies.length > 0) {
+    const newest = replies[0];
+    teaser.last_responded = `${newest.ts.slice(0, 16).replace("T", " ")} · ${newest.channel}`;
+  }
+
+  // Two-pass AI anonymisation, fail-closed: free text (situation +
+  // availability) ships only when pass 1 produced it AND pass 2 verified the
+  // exact strings clean. Any failure or doubt leaves the teaser
+  // structured-facts-only. The enquirer's message never ships pre-claim
+  // (owner decision 2026-08-20); the availability line is the one deliberate
+  // near-verbatim slice, scheduling content only.
   const message = (lead.message ?? "").trim();
   if (message) {
-    const redacted = await redactEnquiry({ message, role: lead.role ?? undefined });
+    const redacted = await redactEnquiry({
+      message,
+      role: lead.role ?? undefined,
+      replies: replies.map((r) => r.body),
+    });
     const situation = redacted?.situation.trim() ?? "";
-    if (situation && (await verifyNoIdentifiers([situation]))) {
-      teaser.situation = situation;
+    const availability = redacted?.availability?.trim() ?? "";
+    const texts = [situation, availability].filter(Boolean);
+    if (texts.length > 0 && (await verifyNoIdentifiers(texts))) {
+      if (situation) teaser.situation = situation;
+      if (availability) teaser.availability = availability;
     }
   }
   return teaser;
+}
+
+/** Latest reply bodies (newest first, max 3). Best-effort: errors return []. */
+async function latestReplies(
+  leadId?: string,
+): Promise<Array<{ ts: string; channel: string; body: string }>> {
+  if (!leadId) return [];
+  try {
+    const res = await adminSelect<{ ts: string; channel: string | null; meta: { body?: string } | null }>(
+      "lead_contact_events",
+      {
+        select: "ts,channel,meta",
+        lead_id: `eq.${leadId}`,
+        event_type: "eq.replied",
+        order: "ts.desc",
+        limit: "3",
+      },
+    );
+    if (!res.ok) return [];
+    return res.data.map((r) => ({
+      ts: r.ts,
+      channel: r.channel || "message",
+      body: typeof r.meta?.body === "string" ? r.meta.body : "",
+    }));
+  } catch {
+    return [];
+  }
 }
 
 /**

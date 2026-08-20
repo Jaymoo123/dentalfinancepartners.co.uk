@@ -225,11 +225,15 @@ export interface RedactedEnquiry {
   redacted_message: string;
   /** One-line anonymised summary for the buyer alert; may be "". */
   situation: string;
+  /** Near-verbatim scheduling/contact-preference content of their replies,
+   *  identifiers tokenised; "" when the replies carry none. */
+  availability: string;
 }
 
 const redactSchema = z.object({
   redacted_message: z.string().max(2400),
   situation: z.string().max(480),
+  availability: z.string().max(400),
 });
 
 const REDACT_SYSTEM = `You anonymise inbound enquiries to UK accountancy firms so they can be shown
@@ -257,21 +261,35 @@ Rules, absolute:
   amounts, deadlines, urgency). Sell the situation, never the person; no
   identifiers at all, and never quote the enquirer's own phrasing. Empty
   string if the message is too thin.
+- availability: only when later replies are provided. Extract the scheduling
+  and contact-preference content ALMOST VERBATIM: call-time availability,
+  days, timezone, preferred channel (phone, Teams, Zoom, WhatsApp). Tokenise
+  any identifier exactly as above; drop greetings, sign-offs, names and
+  everything unrelated to scheduling. Empty string when there are no replies
+  or they carry no scheduling content.
 - Plain British English. No em-dashes.`;
 
 /** Pass 1: rewrite the enquiry with identifiers tokenised. Null on any failure. */
 export async function redactEnquiry(input: {
   message: string;
   role?: string;
+  /** Verbatim bodies of the enquirer's later replies, newest first. */
+  replies?: string[];
 }): Promise<RedactedEnquiry | null> {
   const message = (input.message || "").trim();
   if (!message) return null;
+  const replies = (input.replies ?? []).map((r) => (r || "").trim()).filter(Boolean);
+  const repliesBlock = replies.length
+    ? `\n\nTheir later replies (newest first):\n${replies
+        .map((r) => `"""${r.slice(0, 1500)}"""`)
+        .join("\n")}`
+    : "";
   try {
     const { object } = await generateObject({
       model: MODEL,
       schema: redactSchema,
       system: REDACT_SYSTEM,
-      prompt: `Enquiry message:\n"""${message.slice(0, 4000)}"""\n\nRole given: ${input.role ?? "unknown"}\n\nAnonymise this enquiry.`,
+      prompt: `Enquiry message:\n"""${message.slice(0, 4000)}"""\n\nRole given: ${input.role ?? "unknown"}${repliesBlock}\n\nAnonymise this enquiry.`,
       temperature: 0,
     });
     return object as RedactedEnquiry;

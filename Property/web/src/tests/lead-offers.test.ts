@@ -171,7 +171,7 @@ vi.mock("@/lib/resend", () => ({
 
 // ── AI mock: two-pass gateway redaction returns whatever the test sets ──────
 
-let aiRedact: { redacted_message: string; situation: string } | null = null;
+let aiRedact: { redacted_message: string; situation: string; availability?: string } | null = null;
 let aiVerifyClean = true;
 vi.mock("@/lib/ai", () => ({
   redactEnquiry: vi.fn(() => Promise.resolve(aiRedact)),
@@ -414,6 +414,51 @@ describe("teaser PII defence (two-pass AI, fail-closed)", () => {
     expect(teaser.situation).toBe("Landlord with three properties weighing incorporation.");
     expect(teaser.redacted_message).toBeUndefined();
     expect(JSON.stringify(teaser)).not.toContain("KAN.AI");
+  });
+
+  it("carries last-responded + verified availability from reply events (2026-08-20)", async () => {
+    db.lead_contact_events.push({
+      lead_id: "lead-1",
+      event_type: "replied",
+      channel: "email",
+      ts: "2026-08-20T04:53:00.000Z",
+      meta: { body: "Hi Junayd, would a Teams call work? Any time tomorrow. Kind regards Sarah" },
+    });
+    aiRedact = {
+      redacted_message: "",
+      situation: "Non-resident landlord weighing company ownership for future purchases.",
+      availability: "Would a Teams call work? Any time tomorrow.",
+    };
+    const teaser = await buildTeaser(
+      { id: "lead-1", message: "help with BTL", source: "property", created_at: "2026-08-11T07:54:00Z" },
+      { tier: "high", case_tier: "advisory", intent: "structure", work_type: "recurring" },
+    );
+    expect(teaser.last_responded).toBe("2026-08-20 04:53 · email");
+    expect(teaser.availability).toBe("Would a Teams call work? Any time tomorrow.");
+    expect(JSON.stringify(teaser)).not.toContain("Sarah");
+  });
+
+  it("verify failure drops availability along with the situation, keeps last_responded", async () => {
+    db.lead_contact_events.push({
+      lead_id: "lead-1",
+      event_type: "replied",
+      channel: "sms",
+      ts: "2026-08-20T04:53:00.000Z",
+      meta: { body: "call me anytime" },
+    });
+    aiRedact = {
+      redacted_message: "",
+      situation: "Something",
+      availability: "Call Sarah on 07700",
+    };
+    aiVerifyClean = false;
+    const teaser = await buildTeaser(
+      { id: "lead-1", message: "help", source: "property" },
+      { tier: "high", case_tier: "advisory" },
+    );
+    expect(teaser.availability).toBeUndefined();
+    expect(teaser.situation).toBeUndefined();
+    expect(teaser.last_responded).toBe("2026-08-20 04:53 · sms");
   });
 
   it("withholds ALL free text when the verify pass flags the redaction", async () => {
