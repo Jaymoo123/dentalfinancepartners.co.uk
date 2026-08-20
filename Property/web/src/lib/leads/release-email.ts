@@ -118,7 +118,11 @@ ${
 </div>`
     : ""
 }
-<p style="margin:16px 0 0;color:#64748b;font-size:13px;">£${x.priceGbp} is added to your monthly invoice under the agreed terms.</p>
+<p style="margin:16px 0 0;color:#64748b;font-size:13px;">${
+    x.priceGbp === 0
+      ? "This lead is supplied free of charge; nothing is added to any invoice."
+      : `£${x.priceGbp} is added to your monthly invoice under the agreed terms.`
+  }</p>
 ${
   lead.consent_text
     ? `<p style="margin:10px 0 0;color:#94a3b8;font-size:12px;">Data-sharing notice shown to the enquirer at the point of collection: &ldquo;${esc(lead.consent_text)}&rdquo;</p>`
@@ -158,7 +162,9 @@ ${
         ]
       : []),
     "",
-    `£${x.priceGbp} is added to your monthly invoice under the agreed terms.`,
+    x.priceGbp === 0
+      ? "This lead is supplied free of charge; nothing is added to any invoice."
+      : `£${x.priceGbp} is added to your monthly invoice under the agreed terms.`,
     lead.consent_text
       ? `Data-sharing notice shown at collection: "${lead.consent_text}"`
       : "",
