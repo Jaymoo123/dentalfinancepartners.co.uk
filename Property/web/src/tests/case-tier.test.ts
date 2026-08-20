@@ -112,9 +112,10 @@ vi.mock("ai", () => ({
   generateObject: (...args: unknown[]) => (mockGenerateObject as (...a: unknown[]) => unknown)(...args),
 }));
 
-// offer-teaser.ts (imported by case-tier.ts for scrubSituation, a pure function)
-// is deliberately NOT mocked: it pulls in "@/lib/ai/anthropic" and role-labels,
-// both real and safe to import unconfigured (ANTHROPIC_API_KEY unset in tests).
+// case-tier.ts calls two gateway functions from @/lib/ai: classifyCaseTier
+// (call 1) and verifyNoIdentifiers over the intent_line (call 2, fail-closed).
+// Both bottom out in the mocked generateObject above, so tests queue one
+// response per call with mockResolvedValueOnce.
 
 import {
   stubCaseTier,
@@ -155,8 +156,10 @@ function seedLead(leadId: string, over: Row = {}): Row {
 
 type AiGrade = { tier: string; intent_line: string; case_type: string; area: string };
 
-function mockAiSuccess(grade: AiGrade): void {
-  mockGenerateObject.mockResolvedValueOnce({ object: grade });
+function mockAiSuccess(grade: AiGrade, opts: { verifyClean?: boolean } = {}): void {
+  mockGenerateObject
+    .mockResolvedValueOnce({ object: grade })
+    .mockResolvedValueOnce({ object: { clean: opts.verifyClean ?? true, issues: [] } });
 }
 
 function mockAiFailure(): void {
@@ -265,6 +268,24 @@ describe("ensureCaseTier", () => {
     expect(row).toBeDefined();
     expect(row?.case_tier).toBe("advisory");
     expect(row?.scored_by).toBe("claude_auto");
+  });
+
+  it("drops an intent_line the verify pass flags, keeping the grade (fail-closed)", async () => {
+    seedLead("lead-7", { message: "Portfolio incorporation query." });
+    mockAiSuccess(
+      {
+        tier: "advisory",
+        intent_line: "Kan.AI founder in Edinburgh wants incorporation.",
+        case_type: "incorporation",
+        area: "",
+      },
+      { verifyClean: false },
+    );
+
+    const result = await ensureCaseTier("lead-7");
+    expect(result).toMatchObject({ tier: "advisory", intentLine: "", source: "claude_auto" });
+    const row = db.lead_value_scores.find((r) => r.lead_id === "lead-7");
+    expect(row?.intent_line).toBe("");
   });
 
   it("AI failure (throw) falls back to the deterministic stub, with an empty intent_line", async () => {

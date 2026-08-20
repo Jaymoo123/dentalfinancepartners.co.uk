@@ -11,7 +11,9 @@ import { generateObject } from "ai";
 import { z } from "zod";
 import { surfaceLabel } from "./leads/role-labels";
 
-const MODEL = "anthropic/claude-opus-4-8";
+// Gateway slugs use dots for versions ("claude-opus-4.8"); the hyphenated
+// Anthropic-style id 400s at the gateway. Verified against /v1/models 2026-08-20.
+const MODEL = "anthropic/claude-opus-4.8";
 
 /** Intent buckets aligned to the site's real demand (incorporation/structuring lead). */
 export const INTENT_CATEGORIES = [
@@ -202,3 +204,120 @@ export async function classifyCaseTier(input: {
 }
 
 export const AI_MODEL_ID = MODEL;
+
+// ---------------------------------------------------------------------------
+// Enquiry redaction + verification (two-pass, owner decision 2026-08-20)
+// ---------------------------------------------------------------------------
+//
+// Regex redaction was retired 2026-08-20 after a live leak: an enquiry naming
+// "KAN.AI ... Edinburgh" passed the pattern layer verbatim (no Ltd suffix, no
+// contact details). Free-text identifiers, misspellings and obfuscations are
+// not pattern-matchable, so redaction is now two AI passes over the gateway:
+// pass 1 rewrites the enquiry with bracketed tokens, pass 2 independently
+// verifies the result carries no identifiers. Callers must treat any failure
+// as FAIL-CLOSED: no verified text, no free text sent anywhere.
+//
+// Both passes are pinned to MODEL (Opus): LEAD_TIER_MODEL exists only as a
+// free-tier stopgap for grading and must never route compliance redaction.
+
+export interface RedactedEnquiry {
+  /** The enquiry in the enquirer's own words, identifiers tokenised. */
+  redacted_message: string;
+  /** One-line anonymised summary for the buyer alert; may be "". */
+  situation: string;
+}
+
+const redactSchema = z.object({
+  redacted_message: z.string().max(2400),
+  situation: z.string().max(320),
+});
+
+const REDACT_SYSTEM = `You anonymise inbound enquiries to UK accountancy firms so they can be shown
+to prospective buyer firms BEFORE any purchase. Rewrite the enquiry in the
+enquirer's own words, replacing every identifying detail with a bracketed
+token: [NAME], [COMPANY], [EMAIL], [PHONE], [POSTCODE], [ADDRESS], [LOCATION],
+[LINK], [HANDLE].
+
+Rules, absolute:
+- Remove ALL names of people, companies, brands, trading names, employers,
+  charities, websites, apps and products, however written: with or without a
+  legal suffix, misspelled, split across words, or obfuscated ("kan dot ai"
+  is still a company name).
+- Replace towns, cities, streets and any location more specific than a UK
+  nation or broad region with [LOCATION].
+- Remove emails, phone numbers, postcodes, URLs and social handles even when
+  malformed or disguised.
+- Keep every tax-relevant fact: amounts, property counts, deadlines, HMRC
+  interactions, structures, sector ("an AI health startup" is fine once the
+  name is tokenised), dispute points.
+- Keep the enquirer's own wording and tone wherever it is not identifying.
+- situation: one or two sentences summarising the situation for a buyer firm,
+  selling the situation, never the person, with no identifiers at all. Empty
+  string if the message is too thin.
+- Plain British English. No em-dashes.`;
+
+/** Pass 1: rewrite the enquiry with identifiers tokenised. Null on any failure. */
+export async function redactEnquiry(input: {
+  message: string;
+  role?: string;
+}): Promise<RedactedEnquiry | null> {
+  const message = (input.message || "").trim();
+  if (!message) return null;
+  try {
+    const { object } = await generateObject({
+      model: MODEL,
+      schema: redactSchema,
+      system: REDACT_SYSTEM,
+      prompt: `Enquiry message:\n"""${message.slice(0, 4000)}"""\n\nRole given: ${input.role ?? "unknown"}\n\nAnonymise this enquiry.`,
+      temperature: 0,
+    });
+    return object as RedactedEnquiry;
+  } catch (err) {
+    console.error("[ai] redactEnquiry failed", err);
+    return null;
+  }
+}
+
+const verifySchema = z.object({
+  clean: z.boolean(),
+  issues: z.array(z.string()).max(10),
+});
+
+const VERIFY_SYSTEM = `You are the final compliance check before an anonymised enquiry leaves the
+business. You are given one or more texts. Decide whether they are clean:
+containing nothing that could help identify a specific person or business.
+
+Flag as NOT clean if any text contains: a personal name; a company, brand,
+product, app or trading name (with or without Ltd/LLP/PLC, including
+misspelled or obfuscated forms); an email address, phone number, postcode,
+street address, URL or social handle, however malformed; a place name more
+specific than a UK nation or broad region; or a combination of details so
+distinctive it likely identifies one person or firm.
+
+Bracketed redaction tokens like [COMPANY] or [LOCATION] are fine. Generic
+sector descriptions are fine. When in doubt, NOT clean.`;
+
+/**
+ * Pass 2: independent no-identifier check over the exact strings that will be
+ * sent. Unlike the rest of this module this FAILS CLOSED: any error, gateway
+ * outage or doubt returns false, and the caller must withhold the text.
+ */
+export async function verifyNoIdentifiers(texts: string[]): Promise<boolean> {
+  const nonEmpty = texts.map((t) => (t || "").trim()).filter(Boolean);
+  if (nonEmpty.length === 0) return false;
+  try {
+    const { object } = await generateObject({
+      model: MODEL,
+      schema: verifySchema,
+      system: VERIFY_SYSTEM,
+      prompt: `Texts to check:\n${nonEmpty.map((t, i) => `--- text ${i + 1} ---\n${t}`).join("\n")}\n\nAre these clean?`,
+      temperature: 0,
+    });
+    const verdict = object as { clean: boolean; issues: string[] };
+    if (!verdict.clean) console.warn("[ai] verifyNoIdentifiers flagged", verdict.issues);
+    return verdict.clean === true;
+  } catch (err) {
+    console.error("[ai] verifyNoIdentifiers failed", err);
+    return false;
+  }
+}

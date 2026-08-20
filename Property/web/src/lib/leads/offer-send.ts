@@ -71,7 +71,7 @@ export function renderTeaserHtml(t: TeaserJson, priceGbp?: number | null): strin
     </table>${situation ? panel("Situation", situation) : ""}${
       enquiry
         ? panel("The enquiry, in their words", enquiry) +
-          `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">Names, phone numbers, email addresses, postcodes, web addresses and company names are removed above. You get the enquiry in full, unredacted, with the enquirer's contact details, only if you claim it.</p>`
+          `<p style="margin:8px 0 0;color:#64748b;font-size:12px;line-height:1.5;">Identifying details (names, companies, contact details, addresses, locations and web links) are removed above, and the redaction is independently verified before sending. You get the enquiry in full, unredacted, with the enquirer's contact details, only if you claim it.</p>`
         : ""
     }`;
 }
@@ -87,9 +87,10 @@ export function renderTeaserText(t: TeaserJson, priceGbp?: number | null): strin
       "THE ENQUIRY, IN THEIR WORDS",
       enquiry,
       "",
-      "Names, phone numbers, email addresses, postcodes, web addresses and company " +
-        "names are removed above. You get the enquiry in full, unredacted, with the " +
-        "enquirer's contact details, only if you claim it.",
+      "Identifying details (names, companies, contact details, addresses, locations " +
+        "and web links) are removed above, and the redaction is independently verified " +
+        "before sending. You get the enquiry in full, unredacted, with the enquirer's " +
+        "contact details, only if you claim it.",
     );
   }
   return lines.join("\n");

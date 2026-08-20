@@ -12,8 +12,7 @@
  *      a keyword false positive grades UP and a misgrade is a credit ground.
  */
 import { adminSelect, adminInsert, adminUpdate } from "@/lib/supabase/admin";
-import { classifyCaseTier, type CaseTier } from "@/lib/ai";
-import { redactMessage, scrubSituation } from "@/lib/leads/offer-teaser";
+import { classifyCaseTier, verifyNoIdentifiers, type CaseTier } from "@/lib/ai";
 
 // ponytail: crude keyword heuristic ported from lead_engine/scripts/classify_stub.py,
 // stands in for the CLASSIFY.md prompt only when the gateway is down. A drift
@@ -157,19 +156,20 @@ export async function ensureCaseTier(leadId: string): Promise<GradeResult | null
   const lead = leadRes.ok ? leadRes.data[0] : undefined;
   if (!lead) return null;
 
-  // Data minimisation: the model grades the REDACTED enquiry (same text a
-  // buyer sees pre-claim), never the raw message. Tier signals survive
-  // redaction; names, numbers and postcodes never reach any provider. The
-  // kill-switch "" case simply falls through to the stub.
+  // The model grades the raw enquiry. Regex pre-redaction was retired
+  // 2026-08-20: the gateway routes with zero data retention and the redaction
+  // pipeline itself (redactEnquiry) already reads the raw message, so grading
+  // on a regex-mangled copy bought nothing and cost signal.
   const ai = await classifyCaseTier({
-    message: redactMessage(lead.message),
+    message: lead.message ?? "",
     source: lead.source ?? undefined,
     role: lead.role ?? undefined,
   });
   if (ai) {
-    // Belt-and-braces: the rubric forbids PII in intent_line, and the
-    // kill-switch scrub drops the line entirely if anything slipped through.
-    const intentLine = scrubSituation(ai.intent_line);
+    // The rubric forbids PII in intent_line; the AI verify pass drops the
+    // line entirely if anything slipped through. Fail-closed: unverified = "".
+    const rawLine = (ai.intent_line ?? "").trim();
+    const intentLine = rawLine && (await verifyNoIdentifiers([rawLine])) ? rawLine : "";
     await storeGrade(
       leadId,
       row !== null,

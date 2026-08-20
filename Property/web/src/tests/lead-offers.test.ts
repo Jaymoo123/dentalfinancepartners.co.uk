@@ -169,14 +169,13 @@ vi.mock("@/lib/resend", () => ({
   getFromAddress: () => "JM Lead Notification <leads@test.invalid>",
 }));
 
-// ── AI mock: situation generator returns whatever the test sets ─────────────
+// ── AI mock: two-pass gateway redaction returns whatever the test sets ──────
 
-let aiSituation: string | null = "Landlord with three properties weighing incorporation.";
-vi.mock("@/lib/ai/anthropic", () => ({
-  anthropicConfigured: () => aiSituation !== null,
-  generateJson: vi.fn(() =>
-    Promise.resolve(aiSituation === null ? null : { situation: aiSituation }),
-  ),
+let aiRedact: { redacted_message: string; situation: string } | null = null;
+let aiVerifyClean = true;
+vi.mock("@/lib/ai", () => ({
+  redactEnquiry: vi.fn(() => Promise.resolve(aiRedact)),
+  verifyNoIdentifiers: vi.fn(() => Promise.resolve(aiVerifyClean)),
 }));
 
 // ── Contact-event mock ───────────────────────────────────────────────────────
@@ -190,7 +189,7 @@ vi.mock("@accounting-network/web-shared/lead-nurture/send", () => ({
 }));
 
 import { offerQualifies, tierPrice, tierAtLeast, matchingBuyers } from "@/lib/leads/offer-config";
-import { scrubSituation, buildTeaser, redactMessage } from "@/lib/leads/offer-teaser";
+import { buildTeaser } from "@/lib/leads/offer-teaser";
 import { sendOffers, isBuyerAcceptance, parseLeadRefFromSubject } from "@/lib/leads/offer-send";
 import { claimOffer } from "@/lib/leads/offer-release";
 import { GET as claimGet, POST as claimPost } from "@/app/api/leads/claim/[token]/route";
@@ -276,7 +275,11 @@ beforeEach(() => {
   db.reset();
   sentEmails.length = 0;
   contactEvents.length = 0;
-  aiSituation = "Landlord with three properties weighing incorporation.";
+  aiRedact = {
+    redacted_message: "I run [COMPANY], an AI health startup in [LOCATION], and need accounts support.",
+    situation: "Landlord with three properties weighing incorporation.",
+  };
+  aiVerifyClean = true;
   process.env.LEAD_OFFER_SOURCES = "dentists,solicitors,medical";
   process.env.LEAD_OFFER_PRICES = "essential:15,standard:40,advisory:85";
   process.env.LEAD_OFFER_MIN_TIER = "essential";
@@ -400,57 +403,45 @@ describe("objection suppression", () => {
 
 // ── teaser scrub ─────────────────────────────────────────────────────────────
 
-describe("teaser PII defence", () => {
-  // The alert now carries the enquiry itself, so redaction is what stands between a
+describe("teaser PII defence (two-pass AI, fail-closed)", () => {
+  // The alert carries the enquiry itself, so redaction is what stands between a
   // pre-claim alert and a disclosure of identity to firms that never pay.
-  it("redacts identifiers out of the enquiry shown before a claim", () => {
-    const out = redactMessage(
-      "I am Jane Doe, jane@example.com, 07700 900999, of Doe Holdings Ltd at LS1 4AB. See www.doe.co.uk",
+  it("carries the redacted enquiry and situation only after the verify pass", async () => {
+    const teaser = await buildTeaser(
+      { id: "lead-1", message: "I run KAN.AI in Edinburgh, need accounts help", source: "generalist", created_at: "2026-08-06T10:00:00Z" },
+      { tier: "high", case_tier: "advisory", intent: "structure", work_type: "recurring" },
     );
-    for (const leaked of ["jane@example.com", "07700 900999", "LS1 4AB", "Doe Holdings", "www.doe.co.uk"]) {
-      expect(out).not.toContain(leaked);
-    }
-    for (const marker of ["[EMAIL]", "[PHONE]", "[POSTCODE]", "[COMPANY]", "[LINK]"]) {
-      expect(out).toContain(marker);
-    }
-  });
-
-  it("keeps the substance a firm needs to decide", () => {
-    const out = redactMessage("I have six buy to lets and want to incorporate before April.");
-    expect(out).toBe("I have six buy to lets and want to incorporate before April.");
-  });
-
-  it("kills a situation line containing an email, phone or postcode", () => {
-    expect(scrubSituation("Contact me at joe@foo.com about CGT")).toBe("");
-    expect(scrubSituation("Call 07456 633 893 to discuss")).toBe("");
-    expect(scrubSituation("Landlord in M20 4WX with two flats")).toBe("");
-    expect(scrubSituation("Landlord disputing an HMRC prompted-status ruling")).toBe(
-      "Landlord disputing an HMRC prompted-status ruling",
+    expect(teaser.redacted_message).toBe(
+      "I run [COMPANY], an AI health startup in [LOCATION], and need accounts support.",
     );
+    expect(teaser.situation).toBe("Landlord with three properties weighing incorporation.");
+    expect(JSON.stringify(teaser)).not.toContain("KAN.AI");
   });
 
-  it("drops a poisoned AI situation from the teaser entirely", async () => {
-    aiSituation = "Email them at leak@example.com";
+  it("withholds ALL free text when the verify pass flags the redaction", async () => {
+    aiVerifyClean = false;
     const teaser = await buildTeaser(
       { id: "lead-1", message: "help", source: "dentists", created_at: "2026-08-06T10:00:00Z" },
-      { tier: "high", case_tier: "advisory", est_value_gbp: 2000, intent: "structure", work_type: "recurring" },
+      { tier: "high", case_tier: "advisory", intent: "structure", work_type: "recurring" },
     );
+    expect(teaser.redacted_message).toBeUndefined();
     expect(teaser.situation).toBeUndefined();
-    expect(JSON.stringify(teaser)).not.toContain("leak@example.com");
+    expect(teaser.tier).toBe("advisory");
   });
 
-  it("degrades to structured-only when AI is unconfigured", async () => {
-    aiSituation = null;
+  it("degrades to structured-only when redaction is unavailable (fail-closed)", async () => {
+    aiRedact = null;
     const teaser = await buildTeaser(
       { id: "lead-1", message: "help", source: "dentists" },
-      { tier: "medium", case_tier: "standard", est_value_gbp: 500, intent: "cgt", work_type: "one_off" },
+      { tier: "medium", case_tier: "standard", intent: "cgt", work_type: "one_off" },
     );
+    expect(teaser.redacted_message).toBeUndefined();
     expect(teaser.situation).toBeUndefined();
     expect(teaser.tier).toBe("standard");
   });
 
   it("teaser tier is the case tier, mapped for legacy scores, never a legacy id", async () => {
-    aiSituation = null;
+    aiRedact = null;
     const legacy = await buildTeaser(
       { id: "lead-1", message: "help", source: "dentists" },
       { tier: "high", est_value_gbp: 2000, intent: "structure", work_type: "recurring" },
@@ -503,7 +494,7 @@ describe("sendOffers", () => {
   });
 
   it("legacy fallback: a lead scored high with no case_tier offers as advisory at £85", async () => {
-    aiSituation = null;
+    aiRedact = null;
     seedBuyer({ id: "b1", email: "b1@buyers.test", min_tier: "standard" });
     const legacyTeaser = await buildTeaser(
       { id: "lead-9", message: "incorporation question", source: "dentists" },
@@ -517,7 +508,7 @@ describe("sendOffers", () => {
   });
 
   it("legacy fallback: a low-only lead never offers", async () => {
-    aiSituation = null;
+    aiRedact = null;
     seedBuyer({ id: "b1", email: "b1@buyers.test", min_tier: "essential" });
     const lowTeaser = await buildTeaser(
       { id: "lead-10", message: "hi", source: "dentists" },
