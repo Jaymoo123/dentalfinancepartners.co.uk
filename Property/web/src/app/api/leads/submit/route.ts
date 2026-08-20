@@ -37,6 +37,10 @@ import { verifyLead } from "@/lib/leads/verify";
 import { enrollLead } from "@/lib/leads/enroll";
 import { routePrimarySequence, LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
+import {
+  normalizeEmailForDedupe,
+  phoneDedupeKey,
+} from "@accounting-network/web-shared/leads/server";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { copyAiEnabled } from "@/lib/leads/sequence-gen";
@@ -136,13 +140,17 @@ export async function POST(req: Request) {
   // 3. Dedupe (best-effort) against a recent same-email/phone lead, else insert.
   //    A dedupe hiccup must NEVER lose a lead, so it is isolated from the insert.
   let leadId: string | null = null;
-  let existingRow: { id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null } | null = null;
+  type DedupeRow = { id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null; email?: string };
+  let existingRow: DedupeRow | null = null;
   try {
-    // Dedupe on email only. Email is regex-validated and (as a standalone eq
-    // filter) safe; folding phone into an `or=(...)` group risked breaking the
-    // PostgREST filter on stray characters, and stored phones are raw anyway.
+    // Exact source+email eq fast path first (regex-validated, safe as a
+    // standalone eq filter). On a miss, a second pass over recent same-source
+    // rows matches on the plus-alias normalised email OR the last-10-digits
+    // phone key, in JS rather than an `or=(...)` PostgREST group (which risked
+    // breaking on stray characters in raw stored phones). Real incident
+    // 2026-08-19: `kendlc2026+ma@` then `kendlc2026@` created two rows.
     const since = new Date(Date.now() - DEDUPE_WINDOW_MS).toISOString();
-    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null }>("leads", {
+    const existing = await adminSelect<DedupeRow>("leads", {
       select: "id,full_name,phone,message,status,extras",
       source: `eq.${source}`,
       email: `eq.${email}`,
@@ -154,10 +162,31 @@ export async function POST(req: Request) {
       leadId = existing.data[0].id;
       existingRow = existing.data[0];
     }
+    if (!existingRow) {
+      const cand = await adminSelect<DedupeRow>("leads", {
+        select: "id,full_name,phone,message,status,extras,email",
+        source: `eq.${source}`,
+        created_at: `gte.${since}`,
+        order: "created_at.desc",
+        limit: "50",
+      });
+      const emailKey = normalizeEmailForDedupe(email);
+      const phoneKey = phoneDedupeKey(phone);
+      const hit = cand.data.find(
+        (r) =>
+          normalizeEmailForDedupe(r.email ?? "") === emailKey ||
+          (phoneKey !== null && phoneDedupeKey(r.phone ?? "") === phoneKey),
+      );
+      if (hit) {
+        leadId = hit.id;
+        existingRow = hit;
+      }
+    }
   } catch (e) {
     console.error("[leads/submit] dedupe lookup failed (non-fatal)", e);
   }
 
+  const mergedLead = leadId !== null;
   if (leadId) {
     try {
       // Adopt corrections: use the newly submitted value when non-empty, so a
@@ -285,8 +314,11 @@ export async function POST(req: Request) {
   //    no-ops while dormant, routes the lead by its missing contact fields
   //    (full form -> contactability; email_only widget -> detail-capture), and
   //    fires the instant touch only on a brand-new enrolment. Best-effort: never
-  //    blocks or loses the lead.
-  try {
+  //    blocks or loses the lead. Brand-new inserts only: a dedupe merge is an
+  //    inbox already in a sequence, and re-routing it (e.g. detail-capture ->
+  //    contactability once the phone arrives) would start a second sequence
+  //    that double-chases the same person. Verification above still runs.
+  if (!mergedLead) try {
     const lead: NurtureLead = { id: leadId, full_name, email, phone, role, source, message };
     const sequenceName = routePrimarySequence(lead);
     const result = await enrollLead(lead, {

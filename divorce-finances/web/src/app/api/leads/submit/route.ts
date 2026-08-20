@@ -43,7 +43,7 @@ export async function POST(req: Request): Promise<NextResponse> {
 
   const response = await baseHandler(req);
 
-  let result: { success?: boolean; leadId?: string | null } = {};
+  let result: { success?: boolean; leadId?: string | null; merged?: boolean } = {};
   try {
     result = (await response.clone().json()) as typeof result;
   } catch {
@@ -76,11 +76,14 @@ export async function POST(req: Request): Promise<NextResponse> {
         message,
       };
       const sequenceName = routePrimarySequence(lead);
-      await enrollLead(lead, {
-        sequenceName,
-        live: lead.source !== "test",
-        visitorId,
-      });
+      // merged resubmission: already enrolled from the first pass, a second sequence would double-chase
+      if (!result.merged) {
+        await enrollLead(lead, {
+          sequenceName,
+          live: lead.source !== "test",
+          visitorId,
+        });
+      }
     } catch (err) {
       console.error("[leads/submit/divorce] enrol failed (non-fatal)", err);
     }

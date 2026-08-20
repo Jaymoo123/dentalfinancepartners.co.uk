@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
 
   // Run the shared handler (validates, dedupes, inserts).
   const sharedRes = await sharedHandler(clonedReq as NextRequest);
-  let json: { success?: boolean; leadId?: string | null; error?: string } = {};
+  let json: { success?: boolean; leadId?: string | null; merged?: boolean; error?: string } = {};
   try {
     json = (await sharedRes.json()) as typeof json;
   } catch {
@@ -121,7 +121,8 @@ export async function POST(req: NextRequest) {
   }
 
   // Enrol into the nurture sequence (best-effort, never blocks or loses a lead).
-  if (!isResource) {
+  // merged resubmission: already enrolled from the first pass, a second sequence would double-chase
+  if (!isResource && !json.merged) {
     try {
       const lead: NurtureLead = {
         id: json.leadId,

@@ -315,6 +315,67 @@ describe("ensureCaseTier", () => {
   });
 });
 
+// ── ensureCaseTier: health-check cap (owner decision 2026-08-20) ─────────────
+
+describe("ensureCaseTier: health-check leads capped at essential", () => {
+  it("health_check in extras caps a fresh AI advisory grade to essential, case_type untouched", async () => {
+    seedLead("lead-13", {
+      message: "Weighing incorporation of a six-property portfolio.",
+      extras: { health_check: { score: 42 } },
+    });
+    mockAiSuccess({
+      tier: "advisory",
+      intent_line: "Weighing incorporation of a six-property portfolio.",
+      case_type: "incorporation",
+      area: "",
+    });
+
+    const result = await ensureCaseTier("lead-13");
+    expect(result).toMatchObject({ tier: "essential", caseType: "incorporation", source: "claude_auto" });
+    const row = db.lead_value_scores.find((r) => r.lead_id === "lead-13");
+    expect(row?.case_tier).toBe("essential");
+    expect(row?.case_type).toBe("incorporation");
+    expect(row?.scored_by).toBe("claude_auto");
+  });
+
+  it("extras without a health_check key leaves the AI tier unchanged", async () => {
+    seedLead("lead-14", {
+      message: "Weighing incorporation of a six-property portfolio.",
+      extras: { utm_source: "bing" },
+    });
+    mockAiSuccess({
+      tier: "advisory",
+      intent_line: "Weighing incorporation of a six-property portfolio.",
+      case_type: "incorporation",
+      area: "",
+    });
+
+    const result = await ensureCaseTier("lead-14");
+    expect(result?.tier).toBe("advisory");
+    expect(db.lead_value_scores.find((r) => r.lead_id === "lead-14")?.case_tier).toBe("advisory");
+  });
+
+  it("owner override still upgrades a capped lead from the tier picker", async () => {
+    seedLead("lead-15", {
+      message: "Weighing incorporation of a six-property portfolio.",
+      extras: { health_check: true },
+    });
+    mockAiSuccess({
+      tier: "advisory",
+      intent_line: "Weighing incorporation of a six-property portfolio.",
+      case_type: "incorporation",
+      area: "",
+    });
+    await ensureCaseTier("lead-15");
+
+    const ok = await setOwnerTier("lead-15", "advisory");
+    expect(ok).toBe(true);
+    const row = db.lead_value_scores.find((r) => r.lead_id === "lead-15");
+    expect(row?.case_tier).toBe("advisory");
+    expect(row?.scored_by).toBe("owner");
+  });
+});
+
 // ── ensureCaseTier: stored intent_line vetting (E3) ──────────────────────────
 // The 2026-08-14 python backfill wrote raw-message prefixes into intent_line;
 // pre-cutoff rows must be re-verified before the line renders into Telegram.

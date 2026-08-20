@@ -73,7 +73,12 @@ type ScoreRow = {
   scored_at: string | null;
 };
 
-type LeadRow = { message: string | null; source: string | null; role: string | null };
+type LeadRow = {
+  message: string | null;
+  source: string | null;
+  role: string | null;
+  extras: Record<string, unknown> | null;
+};
 
 const TIERS: readonly string[] = ["advisory", "standard", "essential"];
 
@@ -178,12 +183,18 @@ export async function ensureCaseTier(leadId: string): Promise<GradeResult | null
   }
 
   const leadRes = await adminSelect<LeadRow>("leads", {
-    select: "message,source,role",
+    select: "message,source,role,extras",
     id: `eq.${leadId}`,
     limit: "1",
   });
   const lead = leadRes.ok ? leadRes.data[0] : undefined;
   if (!lead) return null;
+
+  // Owner decision 2026-08-20: leads from a site's FREE health-check wizard
+  // expect a free call, so any freshly computed grade is capped to essential
+  // before storing. Existing grades and setOwnerTier are never capped.
+  const cap = (tier: CaseTier): CaseTier =>
+    lead.extras && "health_check" in lead.extras ? "essential" : tier;
 
   // The model grades the raw enquiry. Regex pre-redaction was retired
   // 2026-08-20: the gateway routes with zero data retention and the redaction
@@ -199,26 +210,28 @@ export async function ensureCaseTier(leadId: string): Promise<GradeResult | null
     // line entirely if anything slipped through. Fail-closed: unverified = "".
     const rawLine = (ai.intent_line ?? "").trim();
     const intentLine = rawLine && (await verifyNoIdentifiers([rawLine])) ? rawLine : "";
+    const tier = cap(ai.tier);
     await storeGrade(
       leadId,
       row !== null,
-      { tier: ai.tier, case_type: ai.case_type, intent_line: intentLine },
+      { tier, case_type: ai.case_type, intent_line: intentLine },
       "claude_auto",
     );
-    return { tier: ai.tier, caseType: ai.case_type, intentLine, source: "claude_auto" };
+    return { tier, caseType: ai.case_type, intentLine, source: "claude_auto" };
   }
 
   // Deliberate deviation from the python stub: its intent() returns the raw
   // message prefix, which can carry PII. The fallback stores an empty
   // intent_line instead; case_type carries the signal.
   const stub = stubCaseTier(lead.message ?? "");
+  const stubTier = cap(stub.tier);
   await storeGrade(
     leadId,
     row !== null,
-    { tier: stub.tier, case_type: stub.case_type, intent_line: "" },
+    { tier: stubTier, case_type: stub.case_type, intent_line: "" },
     "deterministic",
   );
-  return { tier: stub.tier, caseType: stub.case_type, intentLine: "", source: "deterministic" };
+  return { tier: stubTier, caseType: stub.case_type, intentLine: "", source: "deterministic" };
 }
 
 /**

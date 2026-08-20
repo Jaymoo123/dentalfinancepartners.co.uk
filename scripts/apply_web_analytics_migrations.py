@@ -127,6 +127,10 @@ MIGRATIONS = [
     # dormant (last bucket 07-07). Restores the live 20260704000001 bodies with
     # the test-lead filter kept.
     "20260820000001_restore_live_timeseries.sql",
+    # Claim-race fix: a test buyer's exclusive claim must not lock real firms
+    # out (is_test joined into the exclusive-lock count). Diff
+    # pg_get_functiondef on prod before applying (out-of-band drift trap).
+    "20260820000002_claim_race_test_exclusive.sql",
 ]
 
 
