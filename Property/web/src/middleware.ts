@@ -23,6 +23,8 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   // Registered ahead of the wave (P6 precondition) so canonical URLs resolve
   // the moment each page lands; dynamicParams=false 404s them until then,
   // which is correct pre-publication behaviour.
+  // Rental cluster (2026-08-21)
+  "national-insurance-on-rental-income": "landlord-tax-essentials",
   "eicr-certificate-cost-landlords": "landlord-tax-essentials",
   "landlord-electrical-safety-certificate": "landlord-tax-essentials",
   "fire-risk-assessment-cost": "landlord-tax-essentials",

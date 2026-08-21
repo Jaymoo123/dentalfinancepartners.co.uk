@@ -1,174 +1,187 @@
 ---
-title: "How to Claim the Home Office Deduction as a Landlord: The Two Methods, Worked Examples, and the CGT Trap Most Landlords Miss"
+title: "How Landlords Claim Home Office Costs: Actual Costs, Not a Flat Rate"
 slug: "claim-home-office-deduction-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/claim-home-office-deduction-landlords"
 date: "2026-05-27"
+generator: "opus/netnew-rental-cluster"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Landlord Home Office Deduction: Two Methods and the CGT Trap"
-metaDescription: "UK landlords can claim a home-office deduction via ITTOIA s.94H flat-rate or s.34 actual-cost apportionment. Mind the s.224(1) PPR trap."
-altText: "A UK landlord working from a home office, reviewing tenant correspondence and rental accounts at a laptop on a tidy desk"
+metaTitle: "Landlord Home Office Costs: No Flat Rate, Actual Only"
+metaDescription: "Landlords cannot use the £10, £18 or £26 flat rates. You apportion actual household costs instead. Worked example, and the CGT trap on an exclusive room."
+altText: "A UK landlord working on rental accounts and tenant correspondence at a desk in a spare room used for other things too"
 image: "https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit: "Photo by Vlada Karpovich on Pexels"
-h1: "How to Claim the Home Office Deduction as a Landlord: The Two Methods, Worked Examples, and the CGT Trap Most Landlords Miss"
-summary: "UK landlords managing a residential rental portfolio from home can claim a home-office deduction against their property-business profits under ITTOIA 2005 s.272, which imports the trading-income deduction rules into the property-business calculation. There are two routes: the simplified flat-rate at s.94H (a monthly figure based on hours worked at home, £10 for 25 to 50 hours, £18 for 51 to 100 hours, £26 for 101 hours or more); or actual-cost apportionment under s.34 wholly-and-exclusively (business-use share of utilities, council tax, mortgage interest, insurance, repairs). The actual-cost route can produce a larger deduction, but the moment the landlord characterises a room as exclusively for the business, TCGA 1992 s.224(1) restricts Principal Private Residence relief on the gain attributable to that room on disposal. This page covers both methods, the CGT trap, the Ltd Co landlord variation, and the records HMRC expects."
+h1: "How Landlords Claim Home Office Costs: Actual Costs, Not a Flat Rate"
+summary: "Yes, you can claim home office costs against rental profit, but not at £10, £18 or £26 a month. Those flat rates sit in the trading income rules and apply to a trade, and letting property is not a trade, so the property business rules never bring them across. What you claim instead is a fair and reasonable share of your actual household running costs: HMRC's landlord guidance offers the extra lighting and heating you incur, and a proportion of the fixed costs of a part of your home used exclusively for the business, whether continuously or at particular times. Bernadette, in the worked example below, turns £5,040 of household bills into a £205.71 deduction. The catch is at the top end: the larger claim depends on a room used exclusively for the business, and that characterisation restricts Private Residence Relief when you sell your own home. Ten years of the bigger claim saves £2,057 of income tax and costs £3,908.57 of capital gains tax."
 schema: ""
 faqs:
-  - question: "Can a UK landlord claim a home-office deduction at all?"
-    answer: "Yes. ITTOIA 2005 s.272 imports the trading-income deduction rules into the property-business profit calculation, including the simplified-flat-rate home-office provision at s.94H and the wholly-and-exclusively actual-cost apportionment gateway at s.34. The deduction reduces the landlord's taxable rental profits at the landlord's marginal income-tax rate. The deduction is available to individual landlords (sole-trader and joint-owner formats), partnership landlords, and (with adjustments via the company-tax framework) Ltd Co landlords whose company runs the property business."
-  - question: "Which method should I use, simplified flat-rate or actual-cost apportionment?"
-    answer: "Simplified flat-rate (s.94H) suits a low-touch portfolio: a handful of BTL properties, casual home admin time, no dedicated office room. The headline rates are £10 a month for 25 to 50 hours of home-business work in the month, £18 a month for 51 to 100 hours, and £26 a month for 101 hours or more. No exclusive-use requirement; no record-keeping beyond an hours log; no CGT downside on the family home. Actual-cost apportionment (s.34) suits a high-touch operation: a larger portfolio, a dedicated office room, material home-running-cost overhead. Higher potential deduction, but heavier record-keeping and the s.224(1) CGT trap if the room is characterised as exclusively business."
-  - question: "What costs can I include in the actual-cost apportionment?"
-    answer: "Apportionable categories cover variable costs (electricity, gas, water, broadband) and fixed costs (council tax, mortgage interest where part is business-attributable, insurance, rent if you are a tenant, repairs and maintenance of the home). The standard apportionment formula is (business-use floor area divided by total floor area) multiplied by (business-use time divided by total time) multiplied by the relevant cost. HMRC accepts reasonable apportionment based on contemporaneous records. Arbitrary blanket-percentage allocations (50 percent of all bills, say) without supporting evidence are challenged at enquiry."
-  - question: "What hours qualify for the simplified flat-rate?"
-    answer: "Hours where the landlord is working at home on property-business activity: tenant communications, viewings co-ordination, rent collection and arrears follow-up, maintenance scheduling, supplier liaison, accounts preparation, tax return work, deposit-protection administration, lender correspondence. The flat-rate is a monthly figure based on the cumulative hours of qualifying home-business work in that month. Records: a contemporaneous time log (spreadsheet, diary, calendar entries) showing the dates, hours, and activity. HMRC accepts reasonable self-recording; the regime is not built around hour-by-hour evidence to the minute, but the log needs to exist and to be plausibly contemporaneous."
-  - question: "What is the CGT trap, and how do I avoid it?"
-    answer: "TCGA 1992 s.224(1) restricts Principal Private Residence relief where part of the dwelling is used exclusively for business purposes. If you claim actual-cost apportionment on a dedicated office room used solely for the property business, the gain attributable to that room on disposal is not exempt under PPR. For a £500,000 home with one of seven rooms used exclusively for the business, about 14 percent of the eventual capital gain becomes chargeable at CGT residential rates (currently 18 percent at basic rate and 24 percent at higher rate from 6 April 2024). The avoidance routes are: use the simplified flat-rate (s.94H, no exclusive-use requirement); use actual-cost apportionment with documented mixed-use of the room (say 95 percent business, 5 percent personal, with the personal use evidenced); or keep the room genuinely shared between business and personal use and apportion only the time element."
-  - question: "What if I run my landlord business through a Ltd Co, does this change?"
-    answer: "Yes, the route is different. Under ITEPA 2003 ss.316A and 317 the company can pay the director an employer-provided home-working allowance, currently £6 a week (£312 a year) as the HMRC permitted amount payable without PAYE or NIC; higher amounts engage PAYE and NIC unless evidenced costs are substantiated. Alternatively the director can grant the company a formal home-office rental arrangement at arm's-length market rent: the company deducts the rent against corporation tax (CTA 2009 s.54), and the director declares the rent personally as property income, with s.272, s.94H, and s.34 self-applying on the director's individual side. The CGT trap still applies on the director's PPR-relief restriction if the room is characterised as exclusively business."
-  - question: "Do I need to apportion if I work from a kitchen table or a bedroom corner?"
-    answer: "Both methods are available regardless of where you work. Simplified flat-rate (s.94H) works without identifying any particular space; it is purely hours-based. Actual-cost apportionment can be applied to a portion of a mixed-use room (the dining-table corner used as home office, accounting for 25 percent of the kitchen, for example), provided the apportionment is reasonable and documented. Critically, the exclusive-use CGT trap at s.224(1) does not bite where the space is genuinely shared between business and personal use, because the section is triggered by exclusive business use of a part of the dwelling, not by mixed use."
-  - question: "What records does HMRC expect?"
-    answer: "Simplified flat-rate: a contemporaneous log of home-business hours by month, sufficient to support the band claimed (25-50, 51-100, or 101+ hours). Actual-cost apportionment: the bills for the period (utilities, council tax, insurance, mortgage statements where interest is claimed); the apportionment formula records (room measurements, floor area, time-use evidence); a methodology note showing how the percentages were derived. HMRC's enquiry intensity is light for simplified flat-rate (mechanical, hard to challenge); medium for actual-cost apportionment (proportionality and reasonableness review); and high where actual-cost claims trigger a CGT trap that the taxpayer fails to reflect on the eventual disposal computation."
-  - question: "Can I claim a home-office deduction if I'm also a salaried employee working from home?"
-    answer: "Yes, but the two routes do not double-count. Employment-side home-office relief runs through ITEPA 2003 s.336 with its own qualifying conditions and the post-2022 HMRC tightening of the homeworking-allowance route. Property-business-side home-office relief runs through ITTOIA 2005 s.272 with s.94H and s.34. Both routes can apply if the home is genuinely used for both activities, but the property-business deduction applies to property-business hours only and the employment deduction applies to employment hours only; the allocation must be reasonable and documented. Double-claiming the same hour under both regimes is treated as an inaccuracy."
-  - question: "What if I let furnished holiday lets or short-stay accommodation?"
-    answer: "The furnished holiday let income-tax regime was abolished from 6 April 2025 (FA 2024 s.25 and Sch 4): former FHL businesses are now treated as ordinary property businesses for income-tax purposes. The home-office deduction routes through the same ITTOIA 2005 s.272 framework as for standard residential lettings, with s.94H and s.34 available. Pre-abolition FHLs were treated as trades for capital-allowances purposes and the home-office deduction routed through Part 2 trading rules directly; post-abolition the gateway is s.272 from the property-business side. The functional result is similar, but the statutory citation has changed."
-  - question: "Can I switch between simplified flat-rate and actual-cost apportionment year by year?"
-    answer: "Yes. The choice is annual, not lifelong. A landlord on simplified flat-rate one year can switch to actual-cost apportionment the next, and vice versa. The switch makes sense, for example, when the landlord moves into a dedicated office room (suggesting actual-cost may produce a larger deduction), or when the landlord moves house and no longer has a dedicated office space (simplified flat-rate becomes appropriate). The downstream CGT consideration follows the years in which actual-cost-exclusive-use was characterised: any year characterised as exclusive business use carries the s.224(1) restriction for that period on the eventual disposal."
-  - question: "What if HMRC challenges my home-office claim?"
-    answer: "Simplified flat-rate claims are rarely successfully challenged because the regime is mechanical: HMRC needs to show the hours band claimed is unsupportable. Actual-cost claims attract more enquiry attention. HMRC looks at: (i) the reasonableness of the apportionment formula (room measurements; time allocations); (ii) the evidence base for the costs claimed (bills, statements); (iii) the characterisation of the space (mixed-use or exclusive-business-use); (iv) consistency between the income-tax claim and the eventual CGT computation on disposal. Voluntary disclosure of an over-claim before HMRC enquiry typically achieves a meaningfully lower penalty band than HMRC discovery."
-dateModified: "2026-05-27"
+  - question: "Can a landlord claim home office costs?"
+    answer: "Yes. If you run your lettings from home, you deduct a fair and reasonable share of your household running costs from your rental profit. HMRC's landlord guidance offers the extra lighting and heating you incur, and a proportion of the fixed costs of a part of your home used exclusively for the business, whether continuously or at particular times. On £5,040 of annual household bills, one room in seven used for lettings work 10 hours out of 35 produces a £205.71 deduction, worth £82.29 to a higher-rate taxpayer."
+  - question: "Can landlords use the £10, £18 or £26 a month flat rate?"
+    answer: "No. Those three monthly amounts are a trading relief in ITTOIA 2005 s.94H, which opens by applying to the profits of a trade. Letting property is not a trade, and the property business rules import only part of the trading code: the 55p and 25p vehicle rates come across, the use of home flat rate does not. Gov.uk's own simplified expenses guidance limits the scheme to sole traders and to partnerships with no corporate partner, and never mentions landlords."
+  - question: "How do I work out the apportionment for a home office?"
+    answer: "Take your total household running costs for the year, then apply a fraction that reflects the business use fairly. The usual basis is rooms multiplied by time: one room out of seven, used for lettings work 10 hours out of the 35 hours a week that room is in use, is 1/7 x 10/35, which is 4.08%. Applied to £5,040 of bills that is £205.71. HMRC does not prescribe a formula, so write down the basis you used."
+  - question: "Which household costs can I include in the calculation?"
+    answer: "Electricity, gas, water, broadband, home insurance and council tax are the usual pot, plus the rent you pay if you rent your home. In the worked example those six lines total £5,040 for the year. Anything used wholly for the lettings business, such as accounting software, postage or a dedicated phone line, is claimed in full rather than apportioned, so keep it out of the apportionment pot."
+  - question: "Can I claim part of my own mortgage interest as a home office cost?"
+    answer: "No, not for a home office. Interest on the loan secured on the home you live in is not a cost of the lettings business, so none of it joins the £5,040 of electricity, gas, water, broadband, insurance and council tax that makes up a typical apportionment pot. PIM2100's paragraph on splitting home loan interest is aimed at a different case, where part of your home is genuinely let out to a tenant."
+  - question: "Does claiming home office costs affect Capital Gains Tax on my own home?"
+    answer: "Only if you characterise part of the home as used exclusively for the business. Where that is true, TCGA 1992 s.224 apportions the gain and Private Residence Relief covers only the part not used exclusively for business. On a £270,000 gain, one room in seven used exclusively for 10 of 20 years of ownership makes £19,285.71 chargeable, which is £3,908.57 of tax at 24% after the £3,000 annual exempt amount."
+  - question: "How much is the exclusive-use claim actually worth after the CGT cost?"
+    answer: "Usually negative. On £5,040 of household bills the exclusive-use version of the claim is worth about £720 a year against £205.71 for a shared room, so at 40% it saves £205.71 a year, or £2,057 over ten years. Ten years of exclusive use on a one-room-in-seven office costs £3,908.57 of Capital Gains Tax on a £270,000 gain when you sell the house, so the exclusive room leaves you £1,851 down across the same period."
+  - question: "Can a landlord claim the £6 a week working from home allowance?"
+    answer: "Not as an individual landlord. The £6 a week, or £26 a month for monthly paid staff, is what an employer may pay an employee tax free for homeworking without evidence or records. It only reaches you if there is an employer, so it applies where your portfolio sits in a limited company and you are its director. That route is worth £312 a year and needs no apportionment at all."
+  - question: "What if I do the lettings admin at the kitchen table?"
+    answer: "You still claim, and the claim is safer. Apportion on the same room-and-time basis, using the hours the kitchen is used for lettings work against its total use. One room in seven at 6 hours out of 60 is 1.43%, so £5,040 of bills gives £72, against £205.71 for a spare room on the same bills. Because a kitchen is obviously not used exclusively for business, s.224 cannot bite, so your Private Residence Relief on the whole house stays intact."
+  - question: "Do I need to keep an hours log for a landlord home office claim?"
+    answer: "There is no statutory hours log for landlords, because the hours-banded flat rate sits in the trading rules and does not reach a property business. What you do need is the bills, the room count or floor areas, the hours basis behind your fraction and a short note of the method, kept for the year. On a £205.71 claim, a single spreadsheet tab is proportionate evidence."
+  - question: "Can my property company pay me for working from home?"
+    answer: "Yes. Your company can pay you £6 a week, £312 a year, for homeworking with no PAYE, no National Insurance and no records to keep, and it deducts the payment against corporation tax. Anything above that guideline rate has to be justified with evidence of the actual additional costs, so most director landlords take the £312 and stop there."
+  - question: "Is it worth charging my company rent for a home office?"
+    answer: "Rarely, on ordinary numbers. An £1,800 annual licence fee saves the company £450 at 25% corporation tax and costs you £432 in personal tax, because you declare the £1,800 as property income against roughly £720 of allowable home costs. That is £18 a year of net benefit, and the licence almost always describes a defined space used only by the company, which is the exclusive-use characterisation that restricts Private Residence Relief on your own home."
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-05-27"
-editorialNote: "MW2 Bucket B B5: action-led home-office deep-dive with the s.224(1) PPR business-use restriction as the differentiator hook. Sits under the broader allowable-expenses pillar landlord-expenses-allowable-uk-2026 which carries home-office at the simplified-flat-rate-only depth. §34 mini-lock signed off 2026-05-27 closing F-52. ITTOIA 2005 s.272 verified verbatim at Stage 1 seed (2026-05-26). Flat-rate figures (£10/£18/£26 monthly) and CGT rates (18 percent / 24 percent from 6 April 2024) framed rate-by-reference per §16.27. Out-of-wave back-patch noted: landlord-expenses-allowable-uk-2026 pillar should add the CGT-trap cross-link to its home-office paragraph."
+reviewedAt: "2026-08-21"
+editorialNote: "FULL REWRITE 2026-08-21. The 2026-05-27 version was built on ITTOIA 2005 s.94H as a live route for property businesses. It is not one: s.94H applies to a trade, and the s.272 and cash basis import tables carry only s.94C and ss.94D to 94G (vehicles), so no flat-rate use of home deduction reaches a property business. BIM47825 scopes the trader guidance to trades; PIM2100 offers landlords actual-cost apportionment only. The old CGT section was the consumer-harm limb: it offered the flat rate as the first escape from the s.224(1) restriction, so a reader would have taken a deduction they were not entitled to and believed a CGT exposure was neutralised when it was not. Slug, canonical and category unchanged; every other element reframed. Page carried 1 Google impression and 0 Bing over 90 days, so there was no equity to preserve. Statute discipline per briefs/property/rental/_language_spec.md: 4 references (s.94H, s.272, s.34, s.224) plus PIM2100 once. FIX ROUND 2026-08-21: worked-example persona renamed to Bernadette (the previous name collided with four other Property worked-example personas); correction-of-record framing pulled out of body copy and left in this note only; s.224(1) narrowed to s.224 because the computation uses both (1) and (2); PIM2100's second limb restored to its full wording."
 ---
 
-<p>If you manage your rental properties from home, HMRC gives you two ways to claim a deduction against your property-business profits. One is easier and never costs you anything on sale; the other is more generous and can quietly cost you tens of thousands of pounds in lost capital-gains relief when you eventually sell. The difference matters most for landlords with a dedicated home office in a high-value family home, but the principle applies across the board.</p>
+<p>Yes, you can claim home office costs against your rental profit, but not at £10, £18 or £26 a month. Those flat rates belong to traders, and letting property is not a trade. What you claim instead is a fair and reasonable share of your actual household running costs, which in the worked example below comes to £205.71 a year.</p>
 
-<p>This page walks both routes, surfaces the CGT trap most landlord-press content does not mention, covers the Ltd Co landlord variation, and sets out the records HMRC expects.</p>
+<p>The distinction matters more than a small deduction usually would, because the mistake runs in both directions. Claiming a flat rate you are not entitled to is an error that has to be unwound across every year you claimed it. Claiming the larger actual-cost figure on the wrong footing is the more expensive one: a home office described as used exclusively for the business restricts Private Residence Relief on your own home, and on a £270,000 gain that costs £3,908.57.</p>
 
-<h2>The Two-Method Choice in One Paragraph</h2>
+<h2>Landlords cannot use the £10, £18 and £26 flat rates</h2>
 
-<p>Under ITTOIA 2005 s.272, the trading-income deduction rules apply to the property-business profit calculation. That gateway brings in two home-office routes. The simplified flat-rate under s.94H gives a monthly figure based on hours worked at home: £10 for 25 to 50 hours in the month, £18 for 51 to 100 hours, and £26 for 101 hours or more. The actual-cost apportionment route under s.34 (the wholly-and-exclusively gateway) lets the landlord claim the business-use share of household running costs (utilities, council tax, insurance, repairs, mortgage interest). The simplified route requires no record beyond an hours log and carries no CGT downside. The actual-cost route can produce a larger deduction but triggers the TCGA 1992 s.224(1) PPR restriction if the landlord characterises a room as exclusively for the business.</p>
+<p>The flat rates are real, and they are not yours. They sit in ITTOIA 2005 s.94H, which opens by saying it applies "if, in calculating the profits of a trade of a person for a period, a deduction would otherwise be allowable" for the use of that person's home. Your rental profit is not the profit of a trade. It is property income, computed under a separate part of the same Act.</p>
 
-<aside>
-<p><strong>Not sure which method fits your portfolio?</strong> Our team works with UK landlords on the home-office deduction strategy, the apportionment build, and the eventual PPR computation on family-home sale. We can model both routes against your actual property-business hours and the running costs of your home before you commit to one. Talk to us.</p>
-</aside>
+<p>The property business rules do borrow from the trading rules, but selectively, and the borrowing is done through a list. Section 272 sets out exactly which trading provisions apply to a property business, and for the simplified fixed-rate chapter the list contains two entries: the exclusion for firms with a corporate partner, and "sections 94D to 94G, expenditure on vehicles". The cash basis version of the same table reads identically. So the fixed mileage rates do reach you, which is why you can claim 55p a mile for the first 10,000 miles of property trips, and the use of home rate sitting immediately after them in the same chapter does not.</p>
 
-<h2>How to Claim the Simplified Flat-Rate (ITTOIA 2005 s.94H)</h2>
+<p>The same answer comes back from two other directions. Gov.uk's simplified expenses guidance states that the scheme "can be used by sole traders, business partnerships that have no companies as partners" and never mentions landlords or property businesses anywhere in its eligibility wording. And HMRC's landlord manual, PIM2100, is the page that deals with a landlord's own home: it offers actual costs and nothing else, because no flat rate reaches a property business.</p>
 
-<p>The simplified flat-rate is the easier route by a considerable margin. There is no apportionment, no business-use percentage of utilities, no measurement of the office area. The landlord logs the hours worked at home on property-business activity in each month and claims the corresponding monthly figure.</p>
+<h3>Where the £6 a week and the £26 a month actually come from</h3>
 
-<p>The three bands, current at the time of writing (verify against the current gov.uk simplified-expenses guidance, which is the authoritative source for any rate adjustments):</p>
+<p>Both figures are genuine, and neither is a landlord's. The £6 a week, £312 a year, is the guideline rate an employer may pay an employee tax free for homeworking, and HMRC states it as "£6 per week or £26 per month for monthly paid employees" from 6 April 2020. It requires an employer, so it reaches you only if your portfolio is in a company and you are its director. The £10, £18 and £26 monthly bands are the trader flat rate, banded by hours worked at home: 25 or more, 51 or more, 101 or more.</p>
 
-<ul>
-<li>25 to 50 hours of home-business work in the month: £10 a month.</li>
-<li>51 to 100 hours: £18 a month.</li>
-<li>101 hours or more: £26 a month.</li>
-</ul>
+<p>The £26 appears in both, which is probably how the confusion started. A £26 a month claim set against property income has taken a trader's rule or an employee's rule and pointed it at the one kind of income neither rule reaches. If you have been claiming on that basis, the correction is a straightforward amendment rather than a disclosure, and the actual-cost figure is often larger anyway, as the worked example shows.</p>
 
-<p>An annual claim for a landlord working ten hours a week on the business (typically around 40 to 50 hours a month) falls in the £10 band, producing a £120 annual deduction. A landlord with a larger portfolio working 20 hours a week (typically 80 to 90 hours a month) falls in the £18 band, producing a £216 annual deduction. A full-time landlord (101+ hours a month) takes the £26 band, producing £312 a year.</p>
+<h2>What you can claim: a fair share of your actual household costs</h2>
 
-<p>The flat-rate deduction is simple to operate and resistant to HMRC challenge because it is mechanical: the only thing HMRC can usefully test is whether the claimed hours band is plausibly supportable, which is a low evidential bar in most cases. Critically, the simplified route does not require exclusive business use of any part of the dwelling, so it does not engage the s.224(1) PPR restriction on eventual sale. The family home remains entirely within Principal Private Residence relief.</p>
+<p>A defensible share of your electricity, gas, water, broadband, insurance and council tax. PIM2100 allows it at two levels: the extra lighting and heating that running the business actually costs you, and, where part of your home is used exclusively for the business, a proportion of the fixed costs referable to that part. Which level you take sets both the size of your claim and what it costs you when you sell.</p>
 
-<h2>How to Claim Actual-Cost Apportionment (ITTOIA 2005 s.34)</h2>
+<p>The first level is the extra cost of running the business from home. In HMRC's words, "where a landlord genuinely runs the property business from home they may claim the extra business costs that they incur, such as the cost of extra lighting and heating". That is the additional consumption, and nobody argues about it.</p>
 
-<p>Actual-cost apportionment routes through the wholly-and-exclusively trading-income gateway at s.34. The deduction is the business-use share of the relevant running cost.</p>
+<p>The second level is a share of what your home costs you anyway. HMRC's condition is that "a specific part" of the home is "used exclusively for running the property business for a significant amount of time, whether continuously or at particular times". Where that is met, "a proportion of all fixed expenses referable to that room may be deducted", and HMRC's own examples of those expenses are the rent you pay your own landlord, repairs, property insurance, lighting and heating. Note the second half of that condition: use at particular times qualifies, which is what lets a fraction be applied to all six of the fixed costs rather than to extra light and heat alone. This is the level worth having, and it is also the one that carries the capital gains problem covered further down.</p>
 
-<p>Apportionable cost categories are:</p>
+<p>On method, HMRC is deliberately open: "It is impossible to lay down hard and fast rules because circumstances vary enormously. The aim is for the property business deductions to reflect the commercial use of the property in a fair and reasonable way." There is no prescribed formula. There is a standard you have to meet, and a note explaining how you met it.</p>
 
-<ul>
-<li><strong>Variable costs (utilities).</strong> Electricity, gas, water, broadband, telephone. The business-use share is typically calculated by floor area multiplied by time-use, or by separate metering where the office is sub-metered.</li>
-<li><strong>Fixed costs (occupancy).</strong> Council tax, insurance on the home, mortgage interest (the business-use share is allowable; pure capital repayment is not), rent if the landlord is themselves a tenant, repairs and maintenance.</li>
-</ul>
+<p>The gateway test behind all of it is ITTOIA 2005 s.34, the wholly and exclusively rule, which blocks a cost that has a private purpose unless you can identify a definite business part of it. That is precisely what an apportionment does, and it is why the arithmetic has to be written down rather than estimated in your head.</p>
 
-<p>The standard apportionment formula is the business-use floor area divided by the total floor area, multiplied by the business-use time divided by the total time the home is in use, multiplied by the relevant cost. For a £4,000 annual electricity bill, a dedicated office of 12 square metres in a 120-square-metre home (10 percent of floor area), used 40 hours a week of a 168-hour week (24 percent of time-use), the apportioned annual deduction would be £4,000 multiplied by 10 percent multiplied by 24 percent, equal to £96. The arithmetic is straightforward; the discipline is the apportionment build and the contemporaneous documentation.</p>
+<p>Costs that belong in the apportionment pot: electricity, gas, water, broadband, home insurance, council tax, and rent if you are a tenant in your own home. Costs that do not: capital repayments on your mortgage, and interest on the loan secured on the home you live in. Home loan interest is not a cost of your lettings business, and for an individual landlord residential finance costs give a 20% tax reducer rather than a deduction anyway. Anything used wholly for the business, such as accounting software, postage, printer ink or a separate phone line, is claimed in full and kept out of the pot entirely.</p>
 
-<p>For a landlord with a dedicated office room and a £15,000 annual home-running-cost base (across all apportionable categories), the actual-cost apportionment can produce a deduction of around £300 to £600 a year, depending on the room-and-time-use parameters. That is more than the simplified-rate annual ceiling at the highest band (£312) for many portfolios, but the size of the gap shrinks once the CGT trap is taken into account.</p>
+<h3>What about a garden office or converted outbuilding?</h3>
 
-<h2>The CGT Trap: When Claiming the Deduction Now Costs You More on Sale</h2>
+<p>Treat the building and the running of it as two separate questions. Putting up a garden room, or converting a garage into an office, is capital expenditure on your own home, so none of the build cost is deductible from your rental profit. The running costs are a different matter: the power, the heating and the share of your broadband that serves it go into the apportionment on exactly the same basis as a spare bedroom would.</p>
 
-<p>This is the angle that landlord-press content rarely surfaces. TCGA 1992 s.224(1) provides that where part of a dwelling-house is at any time during the period of ownership used exclusively for business purposes, the Principal Private Residence relief at s.222(1) is restricted: the portion of the gain attributable to the business-use part is not exempt.</p>
+<p>Be careful with the fraction, though. A purpose-built garden office is the easiest structure in the country to characterise as used exclusively for business, because that is usually what it is, and the relief restriction does not care whether the space sits inside the four walls of the house. If the room genuinely has no other use, expect the relief restriction and price it before you build. If the family uses it as a study or a spare room too, say so in your method note and apportion by time as normal.</p>
 
-<p>The trigger is exclusive business use. If a landlord claims actual-cost apportionment on the basis that the second bedroom is used exclusively as a property-business office (no personal use, no occasional guest stays, no family room), the relief is restricted on disposal. For a typical £500,000 family home with one of seven rooms used exclusively for the business, around 14 percent of the eventual capital gain becomes chargeable at residential CGT rates (currently 18 percent at the basic-rate band and 24 percent at the higher-rate band from 6 April 2024). On a £200,000 gain on disposal, that is £4,032 to £6,720 of additional CGT.</p>
+<p>Outbuildings raise two smaller points as well: business rates can be triggered where a space is used only for business, and a structure that is not part of the dwelling can fall outside your home insurance unless you tell the insurer.</p>
 
-<p>The restriction sticks to the periods of exclusive business use. A landlord who used the room exclusively for the business for 10 of their 25-year ownership of the home suffers the restriction proportionate to those 10 years, not the full 25. The arithmetic is built up year by year on the s.224(1) disposal computation.</p>
+<h2>Worked example: £5,040 of household costs becomes a £205.71 deduction</h2>
 
-<aside>
-<p><strong>Have you been claiming actual-cost home-office on a dedicated office room?</strong> Check the s.224(1) characterisation before you sell. Voluntary disclosure of the exclusive-use period on the eventual CGT computation is the right answer; failing to reflect it triggers HMRC enquiry, interest on under-paid CGT, and inaccuracy penalties. Our team handles the historical apportionment build and the CGT disposal computation. Talk to us before listing the property.</p>
-</aside>
+<p>Bernadette lets four flats and runs them herself from the smallest bedroom, which is also the guest room and where the household desktop lives. Her home has seven rooms if you count the kitchen, living room, dining room and four bedrooms, and exclude the hall and bathrooms. She spends about 10 hours a week on lettings work, and that room is in use for something or other about 35 hours a week.</p>
 
-<h2>How to Avoid the CGT Trap</h2>
+<h3>Bernadette's household running costs, 2026/27</h3>
 
-<p>There are three practical routes.</p>
+<table>
+  <tr><th>Cost</th><th>Annual amount</th></tr>
+  <tr><td>Electricity</td><td>£960</td></tr>
+  <tr><td>Gas</td><td>£840</td></tr>
+  <tr><td>Water</td><td>£420</td></tr>
+  <tr><td>Broadband</td><td>£336</td></tr>
+  <tr><td>Home insurance</td><td>£288</td></tr>
+  <tr><td>Council tax</td><td>£2,196</td></tr>
+  <tr><td><strong>Total</strong></td><td><strong>£5,040</strong></td></tr>
+</table>
 
-<p><strong>Route 1: Use the simplified flat-rate.</strong> The s.94H route is hours-based, not exclusive-use-based. PPR relief is unaffected on disposal. For most landlords with modest property-business hours and a high-value family home, the simplified route is the better economic answer once the CGT downstream is factored in.</p>
+<p>Source: illustrative household bills for a four-bedroom house, 2026/27. Method per HMRC PIM2100, data to August 2026.</p>
 
-<p><strong>Route 2: Use actual-cost apportionment with documented mixed-use.</strong> The s.224(1) trigger is exclusive business use. A room used 95 percent for the business and 5 percent for personal purposes (a family guest stays once a year, the family uses the desk for personal correspondence on Sundays, the room doubles as a quiet reading space) is not used exclusively for business. The actual-cost apportionment can still apply (at the 95 percent business-use share), and the room is not within the s.224(1) restriction. Document the mixed-use contemporaneously: a calendar note of the guest stay, a photograph of the room set up for personal use, a written usage policy.</p>
+<p>Her room fraction is one room in seven, which is 14.29%. Her time fraction is 10 hours out of 35, which is 28.57%. Multiply them and the business fraction is 1/7 x 10/35, which is 10/245, or 4.08%.</p>
 
-<p><strong>Route 3: Apportion by time-use only, not by exclusive-room.</strong> Run the actual-cost apportionment using only a time-use percentage of the whole home's running costs, without identifying any part of the dwelling as exclusively business. This produces a smaller deduction than the room-and-time formula but avoids the s.224(1) characterisation altogether.</p>
+<p>Apply that to the bills: £5,040 x 4.08% = <strong>£205.71</strong>. That is the deduction. As a higher-rate taxpayer Bernadette keeps £82.29 of it; at basic rate she would keep £41.14.</p>
 
-<h2>What About the Ltd Co Landlord?</h2>
+<p>Now compare that with the flat rate she is not allowed to use. At 10 hours a week she averages about 43 hours a month, which is the 25-or-more band at £10 a month, or £120 a year. The rule that does not apply to her would have given her £85.71 less than the rule that does. So the flat rate is not only unavailable, it is also smaller.</p>
 
-<p>Where the landlord operates through a limited company, the home-office mechanic shifts to a different statutory route. There are two operational choices.</p>
+<p>If Bernadette rented her home rather than owning it, her rent would join the pot. Add £14,400 of annual rent and the total becomes £19,440, so the same 4.08% fraction gives £793.47 instead of £205.71. Tenants who run a portfolio from home usually have much the larger claim, and no capital gains exposure at all on a property they do not own.</p>
 
-<p><strong>Option A: ITEPA 2003 ss.316A and 317 employer-provided home-working allowance.</strong> The company pays the director a flat homeworking allowance of £6 a week (£312 a year) as the HMRC permitted amount, payable without PAYE or NIC. Higher amounts are payable, but only with substantiated evidence of actual costs and with PAYE and NIC consequences. The company deducts the allowance against corporation tax. No CGT consequence on the director's home because the director has not characterised any part of the home as exclusively business.</p>
+<h2>The bigger claim needs an exclusive room, and that room costs £3,909 on sale</h2>
 
-<p>One change to keep in view from 2026/27: Finance Act 2026 s.21 (new ITEPA 2003 s.360B) removes the income-tax deduction an employee or director could otherwise claim from their employment earnings for the additional household costs of working from home. This is the deduction the worker claims on their own side; it does not affect the employer-provided allowance route in Option A, which the company can still pay tax-free under ss.316A and 317. Self-employed and individual landlords running a property business (Routes 1 to 3 above) are unaffected by s.21 and continue to use the flat-rate or actual-cost methods.</p>
+<p>The bigger claim is worth <strong>£720</strong> a year instead of £205.71, and the condition attached to it is what costs you money later. Make the business use of that room continuous rather than at particular times, so that nothing else happens in there, and the time fraction falls away: Bernadette's claim becomes one seventh of £5,040 rather than 10/245 of it.</p>
 
-<p><strong>Option B: Formal home-office rental.</strong> The director grants the company a written licence to use a defined home-office space at an arm's-length market rent. The company pays the rent to the director, deducts it against corporation tax (CTA 2009 s.54), and the director declares the rent personally as property income, with the property-business framework (s.272 plus s.94H or s.34) self-applying on the director's individual side to compute the net taxable amount. This route can produce a larger overall deduction than the £312 allowance, but the rental income on the director's side may push the director into a higher tax band, and a formal exclusive-use rental can trigger the s.224(1) PPR restriction on the director's home. The rental option works best where the family home is not a primary residence (a holiday home, a flat held alongside the family base), where the s.224 consequence is irrelevant.</p>
+<p>That is £514.29 a year more of deduction, worth £205.71 a year of tax at 40%. Over ten years it saves £2,057. Here is what it costs.</p>
 
-<p>For the broader Ltd Co incorporation decision (where it makes sense to run a portfolio through a company at all), see our <a href="/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-property-landlords">2027 incorporation decision page</a>. For the related corporate-side tax framework, see our broader <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord allowable expenses pillar</a>.</p>
+<p>TCGA 1992 s.224 deals with a dwelling-house where part is used exclusively for the purposes of a trade or business. In that case "the gain shall be apportioned" and the exemption applies only to the part of the gain attributable to the part not used exclusively for those purposes. Your own home stops being fully covered by Private Residence Relief for as long as the exclusive use lasts.</p>
 
-<h2>What If I Work From the Kitchen Table or a Bedroom Corner?</h2>
+<h3>Bernadette sells her home after 20 years, 10 of them with an exclusive office</h3>
 
-<p>Both methods accommodate the no-dedicated-office case. The simplified flat-rate is unaffected by where you work; the hours are what count. Actual-cost apportionment can be applied to a portion of a mixed-use room (the dining-table corner that operates as the office, accounting for 25 percent of the kitchen by use, or the desk-in-the-corner that occupies 10 percent of a bedroom by floor area). The apportionment is reasonable and supportable, and the room is not used exclusively for the business, so s.224(1) is not engaged.</p>
+<table>
+  <tr><th>Step</th><th>Figure</th></tr>
+  <tr><td>Purchase price</td><td>£295,000</td></tr>
+  <tr><td>Sale price</td><td>£565,000</td></tr>
+  <tr><td>Gain</td><td>£270,000</td></tr>
+  <tr><td>Restricted fraction: 1 room in 7, for 10 years of 20</td><td>1/14, or 7.14%</td></tr>
+  <tr><td>Gain outside Private Residence Relief</td><td>£19,285.71</td></tr>
+  <tr><td>Less annual exempt amount 2026/27</td><td>£3,000</td></tr>
+  <tr><td>Taxable</td><td>£16,285.71</td></tr>
+  <tr><td>Capital Gains Tax at 24%</td><td><strong>£3,908.57</strong></td></tr>
+</table>
 
-<p>This is the optimal operational pattern for most multi-property individual landlords: a working corner of a multi-use room, with actual-cost apportionment on a time-and-area basis, no exclusive-use characterisation, and PPR preserved.</p>
+<p>Source: gov.uk Capital Gains Tax rates and allowances 2026/27, residential rates 18% and 24%, annual exempt amount £3,000. Data to August 2026.</p>
 
-<aside>
-<p><strong>Setting up your home-office for the first tax year?</strong> Document the mixed-use of the space from day one. A contemporaneous record of the room layout, the personal-use evidence (guest stays, family use, secondary functions), and the apportionment methodology saves substantial cost on the eventual CGT disposal computation. Our team builds the documentation pack alongside the income-tax claim.</p>
-</aside>
+<p>So the exclusive room saves you £2,057 of income tax over ten years and hands back £3,908.57 when you sell. You are £1,851 down, before you count the extra record keeping and before you notice that you have spent a decade unable to use a room in your own house. If your annual exempt amount is already used against something else, the capital gains figure rises to £4,628.57 and you are £2,571 down.</p>
 
-<h2>What Records Does HMRC Expect?</h2>
+<p>The arithmetic flips only in narrow cases: a very large home office share, a house with little or no gain, or a home that is not your main residence in the first place. Run the numbers before you decide, not after you have described a room as your office on a tax return.</p>
 
-<p>The evidential standard differs between the two routes.</p>
+<h2>How to document mixed use so the relief survives</h2>
 
-<p>For simplified flat-rate, HMRC wants a contemporaneous hours log: a spreadsheet, a diary, or calendar entries showing the dates, the hours, and the property-business activity. The log should plausibly support the band claimed (25-50, 51-100, or 101+ hours per month). Self-recorded estimates are accepted; the log does not have to be hour-by-hour evidence to the minute.</p>
+<p>Document it in four short steps: claim on a time fraction, write the method down once a year, record the non-business use, and keep the note with the house papers. None of them takes long, and together they are what lets you prove the position fifteen years later.</p>
 
-<p>For actual-cost apportionment, HMRC wants the underlying cost evidence (bills, statements, mortgage interest certificates) plus the apportionment methodology (room measurements, floor area calculation, time-use rationale, photo evidence of room set-up). The methodology should sit on file with the workpapers, ready to produce on enquiry.</p>
-
-<p>The eventual CGT disposal computation is the most exposed point. Where actual-cost apportionment was claimed on an exclusive-use basis, the disposal computation must reflect the s.224(1) restriction. Failure to do so is the most common path into an HMRC enquiry on home-office matters: the income-tax claim and the CGT computation are checked against each other.</p>
-
-<h2>Can I Switch Between the Two Methods Year by Year?</h2>
-
-<p>Yes. The choice is annual, not lifelong. A landlord starts in simplified flat-rate, switches to actual-cost in a year where home-business hours grow and the apportionment economics improve, and switches back in a year where the family moves house and a dedicated office space is no longer available. The choice does not need to be consistent year on year; only the records for each year need to support the chosen method.</p>
-
-<p>The downstream CGT picture follows the characterisation of each year. Years of exclusive-business-use carry the s.224(1) restriction on the eventual disposal computation; years of mixed-use or simplified-flat-rate do not. The build-up is by year-of-use, not by lifelong election.</p>
-
-<h2>Interaction with Employment Home-Office Claims</h2>
-
-<p>Where the landlord is also a salaried employee who works from home, both regimes can apply but cannot double-count. Employment-side relief routes through ITEPA 2003 s.336 (with its own qualifying conditions and the post-2022 HMRC tightening of the homeworking-allowance route, where claims have been more rigorously scrutinised since the end of the COVID-era relaxations). Property-business-side relief routes through ITTOIA 2005 s.272 and the s.94H or s.34 routes covered above.</p>
-
-<p>The allocation of hours and costs between the two activities must be reasonable and documented. A landlord who is also a software developer working from home cannot claim the same hour under both regimes. The allocation typically splits by genuine activity time, with the hours log showing the activity type for each period.</p>
-
-<h2>What About FHL and Short-Stay Accommodation?</h2>
-
-<p>The Furnished Holiday Let income-tax regime was abolished from 6 April 2025 (FA 2024 s.25 and Sch 4). Former FHL businesses are now treated as ordinary property businesses for income-tax purposes. The home-office deduction routes through the same ITTOIA 2005 s.272 framework, with s.94H and s.34 available. The functional result is similar to the pre-abolition position (where FHLs were treated as trades and the home-office deduction routed through Part 2 directly), but the statutory citation has changed.</p>
-
-<p>For short-stay accommodation outside the former FHL regime (serviced accommodation, aparthotel operators), the position is fact-sensitive: most operators run as full trading businesses with Part 2 trading rules applying directly, in which case the trading-side home-office route at s.94H or s.34 applies on its own terms without going through the s.272 import gateway.</p>
-
-<h2>Authorities Cited</h2>
+<p>Exclusive use is a question of fact, not a label you choose. A room with a sofa bed that guests use four times a year, or a desk that shares space with the family computer, is not used exclusively for business no matter what you call it. The documentation proves facts you already have rather than creating them.</p>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272" rel="nofollow">ITTOIA 2005 s.272 (Application of trading income rules: GAAP, the property-business import gateway)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/94H" rel="nofollow">ITTOIA 2005 s.94H (Use of home for business purposes, simplified flat-rate)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/34" rel="nofollow">ITTOIA 2005 s.34 (Expenses not wholly and exclusively for trade, actual-cost gateway)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/222" rel="nofollow">TCGA 1992 s.222 (Relief on disposal of private residence)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/224" rel="nofollow">TCGA 1992 s.224 (Amount of relief, with the s.224(1) business-use restriction)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/2003/1/section/316A" rel="nofollow">ITEPA 2003 s.316A (Accommodation outgoings, employer-provided home-working allowance)</a></li>
-<li><a href="https://www.gov.uk/simpler-income-tax-simplified-expenses/business-premises" rel="nofollow">GOV.UK Simplified expenses (current s.94H flat-rate figures)</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2120" rel="nofollow">HMRC Property Income Manual PIM2120 (home office for property businesses)</a></li>
+  <li><strong>Claim on a time fraction.</strong> A claim built on hours is itself an assertion that the room has other uses, which is why the smaller claim protects itself. Bernadette's 10 hours out of 35 is the evidence.</li>
+  <li><strong>Write the method down once a year.</strong> One paragraph: the rooms counted, the hours assumed, the bills totalled, the fraction. Date it. This is the document that answers an enquiry and the document that answers the capital gains question on sale.</li>
+  <li><strong>Record the non-business use.</strong> A calendar note of guest stays, the fact the household printer lives in there, the exercise bike in the corner. You are not building a case, you are noting what is true.</li>
+  <li><strong>Keep the note with the house papers.</strong> Not just in the tax file for that year. The person who needs it is the person computing your gain two decades from now.</li>
 </ul>
+
+<p>Do this and the question never arises, because the answer to "was any part used exclusively for business" is no, evidenced. For the wider picture on what relief you keep when you sell, see our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to Capital Gains Tax on property</a>.</p>
+
+<h2>What if you also work from home as an employee?</h2>
+
+<p>Both can be true at once, and the two claims run on separate tracks. Your employer can pay you £6 a week for homeworking under the employment rules. Your lettings apportionment is a deduction against rental profit and covers only the hours you spend on the lettings. Neither one blocks the other.</p>
+
+<p>What you cannot do is count the same hour twice. If that room sees 35 hours of use a week, split as 20 hours of your day job, 10 hours of lettings work and 5 hours of private use, then the lettings fraction is 10 out of 35 and the employment side takes its own route. Bernadette's 4.08% already reflects that split. A fraction that adds up to more than the room's actual use is the first thing an inspector spots.</p>
+
+<h2>Company landlords: £312 a year tax free, or charge the company rent</h2>
+
+<p>£312 a year, tax free, with no apportionment and no records. A company is an employer and you are its employee, so the homeworking rules that are closed to an individual landlord open up.</p>
+
+<p><strong>The simple route.</strong> The company pays you £6 a week, £312 a year, for working at home. No PAYE, no National Insurance, no evidence, no records, and the company deducts the payment against corporation tax. HMRC's guidance is explicit that the employer does not have to justify the amount and the employee does not have to keep records to demonstrate the additional expenditure. Above the guideline rate you need evidence of the actual costs, which is where the simplicity disappears.</p>
+
+<p><strong>The rental route.</strong> You grant the company a licence to use a home office at a market rent. Charge £1,800 a year and the company saves £450 of corporation tax at 25%, or £342 at 19%. On your side the £1,800 is property income, against which you deduct your allowable home costs of, say, £720, leaving £1,080 taxed at 40%, which is £432. Net benefit at those rates: <strong>£18 a year</strong>. If you are a basic-rate taxpayer and the company pays 19%, it is £342 less £216, or £126 a year.</p>
+
+<p>Neither number justifies the paperwork on its own, and there is a sting. A licence at a market rent almost always describes a defined space used by the company, which is the exclusive-use characterisation that brings the relief restriction back to your own home. For most director landlords the £312 allowance is the whole answer, and the rental route only earns its keep where the space is genuinely substantial or the property is not your main residence. If you are still deciding whether a company is the right wrapper at all, start with the <a href="/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-property-landlords">2027 rates and the incorporation decision</a>.</p>
+
+<h2>Records and Making Tax Digital: four things per year, built as you go</h2>
+
+<p>Keep four things for each tax year: the bills that make up the pot, the room count or floor areas, the hours basis behind your fraction, and the one-paragraph method note. On a £205.71 claim that is a spreadsheet tab, and it is proportionate to what is at stake.</p>
+
+<p>Making Tax Digital changes the timing rather than the rule. Once you are in scope you report property income and expenses in quarterly updates, so the home office figure needs to exist during the year rather than being reconstructed the following January. The practical answer is a fixed quarterly figure, one quarter of your annual estimate, trued up at the final declaration when the actual bills are in. What counts as an acceptable digital record is set out in our guide to <a href="/blog/making-tax-digital-mtd/mtd-itsa-digital-records-receipts-bank-feeds-what-counts-evidence">digital records, receipts and bank feeds under MTD</a>, and the box the number lands in is covered in our <a href="/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide">SA105 property pages guide</a>.</p>
+
+<p>Home office costs are one line in a much longer list, and it is rarely the most valuable one. The full set of categories, including the ones landlords most often miss, is in our <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">complete list of landlord tax deductions</a>, and the wider position on how rental profit is taxed is in our <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">complete guide to rental income tax</a>.</p>
+
+<h2>Your home office claim is worth £205.71 or £720, and one of them costs £3,908.57</h2>
+
+<p>Our landlord tax review rebuilds the apportionment from your actual bills and room use, then sets the resulting fraction against your Private Residence Relief position so both numbers sit on one page. A flat-rate claim taken in error has to be unwound across every year you claimed it. An exclusive-use description left on a return costs £3,908.57 on a £270,000 gain. Ten minutes now is cheaper than either, and cheapest of all while the room is still in use.</p>
+
+<p>External sources used on this page: <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2100" rel="nofollow noopener" target="_blank">HMRC PIM2100 on a landlord's own home</a>, <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/272" rel="nofollow noopener" target="_blank">ITTOIA 2005 s.272</a>, <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/94H" rel="nofollow noopener" target="_blank">ITTOIA 2005 s.94H</a>, <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/224" rel="nofollow noopener" target="_blank">TCGA 1992 s.224</a>, <a href="https://www.gov.uk/simpler-income-tax-simplified-expenses" rel="nofollow noopener" target="_blank">gov.uk simplified expenses</a>, <a href="https://www.gov.uk/capital-gains-tax/rates" rel="nofollow noopener" target="_blank">gov.uk Capital Gains Tax rates</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim01476" rel="nofollow noopener" target="_blank">HMRC EIM01476 on homeworking payments</a>.</p>

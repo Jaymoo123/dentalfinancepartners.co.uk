@@ -100,6 +100,35 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.16 Rental-income cluster (Phase C) — EXECUTED 2026-08-21 PM, deploy owner-gated
+
+Dossier `briefs/property/rental/DOSSIER.md` frozen + executed same day. Universe 867
+(competitor 248 uncapped + GSC 138 + Bing 546, the largest source again), ledger balanced
+605/247/10/5. Work order: E1 head-guide EXTEND (+963 words, 3 answer-first sections, 466
+kw reconciled, equity 253 Bing queries protected), E2 deductions EXTEND (+1,495 words, 6
+sections, statute density 10.9→~7 by dilution), N1 NET-NEW national-insurance-on-rental-income
+(2,863 words, CLEAN 5.9, 17 source checks; middleware map entry added). Frozen discovered
+at assignment: income-tax-rates page = Bing-experiment TREATMENT, how-much-tax page =
+CONTROL; both excluded to ~09-15. Equity gate gained the `rental` CLUSTERS entry.
+MAJOR ESCALATION HANDLED: house_positions §34.2 was WRONG (s.94H is trades-only, not
+imported into property income; 4x legislation fetches + BIM47825 + PIM2100); §34 corrected
+with evidence trail, and the live page claim-home-office-deduction-landlords (built on the
+error, 33 refs + a consumer-harmful CGT FAQ; invisible: 1 impression/90d) FULLY REWRITTEN
+(2,975 words, CLEAN 9.9, 29/29 arithmetic, two-track QA'd + fix round; also dropped a
+second latent error: home mortgage interest is not an apportionable home-office cost, and
+an unverifiable "FA 2026 s.21 / ITEPA s.360B" claim). Two-track QA + 2 fix rounds across
+the batch; personas deduplicated (Rafiq/Orla/Bernadette). qa_verdict `rental1` 4/4
+all_clear recorded LAST; predeploy gate PASS. E1 links N1, so E1 MUST NOT deploy without
+N1 (same batch = fine). AT DEPLOY: rental1 batch registers in monitored_pages; revert
+triggers pre-stated in the packs.
+ALSO 08-21 PM (owner-directed): audience scoping (briefs/property/AUDIENCE_SCOPING_2026-08-21.md)
++ 3-track expansion proposal (briefs/property/EXPANSION_PROPOSAL_2026-08-21.md: rural
+/landed-estates on Property bounded to the tax half; developers = one pillar after Phase D;
+agents = relationship channel via landlord-law explainers, RRA signal 774.5 median weekly
+Bing impressions). De-risk harvests run (~$1.20; saffery holds APR family pos 3-5, consumer
+register unowned). /embed hub flipped indexable (its audience is agents; iframe routes stay
+noindexed). 4 owner decisions listed in the proposal.
+
 ## 0.15 Tools-family cluster (Phase B) — EXECUTED 2026-08-21, deploy owner-gated
 
 Dossier `briefs/property/tools/DOSSIER.md` frozen + executed same day. Harvest $0.55

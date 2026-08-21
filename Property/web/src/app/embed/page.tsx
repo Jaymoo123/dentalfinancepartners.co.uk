@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   description:
     "Add our free UK property tax calculators to your website: stamp duty, Section 24, incorporation, MTD checker, portfolio yield. One iframe, no cost.",
   alternates: { canonical: `${siteConfig.url}/embed` },
-  robots: { index: false, follow: true },
+  // The hub page is indexable (its audience is agents searching for embeddable
+  // tools); the per-calculator /embed/[slug] iframe routes stay noindexed.
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Embed Our Free Property Tax Calculators",
     description:

@@ -36,6 +36,7 @@ BLOG_DIR = "Property/web/content/blog"
 CLUSTERS = {
     "sdlt": {"dir": ROOT / "briefs" / "property" / "sdlt", "universe": 2448},
     "cgt": {"dir": ROOT / "briefs" / "property" / "cgt", "universe": 3869},
+    "rental": {"dir": ROOT / "briefs" / "property" / "rental", "universe": 867},
 }
 
 # generic calculator tools live in the registry, bespoke ones in app routes

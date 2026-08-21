@@ -3,18 +3,18 @@ title: "Rental Income Tax UK: Complete Guide for Landlords 2026"
 slug: "rental-income-tax-uk-complete-guide-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords"
 date: "2026-03-29"
-dateModified: "2026-06-02"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-06-02"
+reviewedAt: "2026-08-21"
 category: "Section 24 & Tax Relief"
 metaTitle: "Rental Income Tax UK 2026: Landlord Guide to What You Pay"
-metaDescription: "How UK rental income is taxed in 2026/27: rates, allowable expenses, the Section 24 mortgage credit, MTD quarterly filing and the new April 2027 rates."
+metaDescription: "Tax on rental income UK: you pay 0%, 20%, 40% or 45% on rental profit in 2026/27, plus expenses, the Section 24 credit and the new April 2027 rates."
 altText: "UK landlord calculating rental income tax on laptop with property documents and a calculator"
 image: ""
 h1: "Rental Income Tax UK: A Complete Guide for Landlords"
-summary: "UK rental income is taxed on net profit at your marginal Income Tax rate (20%, 40% or 45% for 2026/27), with mortgage interest no longer deductible but instead relieved as a 20% basic-rate credit under Section 24. This guide sets out the rates, the full allowable-expense list, a worked Section 24 calculation, the property and rent-a-room allowances, Making Tax Digital quarterly filing (live from 6 April 2026 at £50,000), and the separate 22% / 42% / 47% property income rates that take effect from 6 April 2027 under Finance Act 2026."
+summary: "UK rental income is taxed on net profit at your marginal Income Tax rate (20%, 40% or 45% for 2026/27), with mortgage interest relieved as a 20% basic-rate credit under Section 24 rather than deducted. Making Tax Digital is live at £50,000 from 6 April 2026, and separate property income rates of 22%, 42% and 47% start on 6 April 2027."
 schema: ""
 faqs:
   - question: "How much tax do I pay on rental income in the UK?"
@@ -41,6 +41,10 @@ faqs:
     answer: "Most landlords report through Self Assessment, completing the UK property pages (SA105) of the SA100 return. You must register for Self Assessment by 5 October following the tax year in which you first have rental profit to declare. The online filing deadline is 31 January after the tax year end, which is also the date the tax is due. From the relevant MTD start date, in-scope landlords replace the annual property pages with quarterly digital updates plus a final declaration."
   - question: "Can I deduct losses from one rental property against another?"
     answer: "Yes, within the same property business. All your UK residential lets are treated as a single UK property business, so a loss on one property is automatically set against profits on the others in the same year. A net loss for the year is carried forward and set against the first available future profits of the same property business. UK and overseas lettings are separate businesses, and Furnished Holiday Lettings ceased to be a separate business when the FHL regime was abolished on 6 April 2025, so former FHL losses now sit in the ordinary property business pool."
+  - question: "Do landlords pay tax on rent?"
+    answer: "Yes. Rental profit is taxed at 0%, 20%, 40% or 45% for 2026/27, and which of those you pay depends on where the profit lands once it is added to your other income. Tax is charged on profit rather than on rent, so £18,000 of rent with £6,000 of allowable costs is £12,000 of profit, costing £2,400 for a basic-rate landlord and £4,800 for a higher-rate one. Rent is only genuinely tax-free in two cases: where the year's gross property income is £1,000 or less and the property allowance covers the lot, or where the profit still fits inside an unused £12,570 personal allowance. Above £1,000 the allowance replaces your actual expenses rather than adding to them."
+  - question: "How can I legally reduce the tax on my rental income?"
+    answer: "Claim every allowable expense first: £6,000 of running costs is worth £1,200 off a basic-rate bill and £2,400 off a higher-rate one. Then use the £1,000 property allowance in place of your actual costs where those costs are lower, take Rent-a-Room Relief of up to £7,500 on a lodger in your own home, and check that the income sits with whoever pays the lower rate, because each person has their own £12,570 personal allowance. Losses carry forward against future profits of the same property business. What none of this does is make genuine profit tax-free."
 howToSteps:
   - name: "Add up your gross rental income"
     text: "Total the rent and any other letting receipts for the tax year (6 April to 5 April) across all your UK properties, which HMRC treats as one property business."
@@ -57,6 +61,20 @@ howToSteps:
 ---
 
 <p>Rental income tax is straightforward in principle and awkward in practice. You are taxed on profit, not rent, at your usual Income Tax rates, but two rules quietly reshape the bill: Section 24 removes mortgage interest as a deduction and hands it back as a thin 20% credit, and Making Tax Digital is now changing how and how often you report. This guide sets out exactly what you pay, what you can deduct, and the two dates that matter most for landlords planning ahead: MTD from 6 April 2026 and the separate property income rates from 6 April 2027.</p>
+
+<h2>Do landlords pay tax on rent? Yes, at 0%, 20%, 40% or 45%</h2>
+
+<p>Do landlords pay tax on rent? Yes. For 2026/27 you pay 0%, 20%, 40% or 45% on your rental profit, and which of those four rates you pay depends on your total income for the year rather than on the rent by itself. The answer is the same whether you let a house, a flat or a single room. Tax on rental income in the UK is charged on profit, so the number that drives the bill is the rent you received minus your allowable expenses. Rental income does not count as earned income: it is property income, which is why no National Insurance is due on it (the full answer is in our guide to <a href="/blog/landlord-tax-essentials/national-insurance-on-rental-income">National Insurance on rental income</a>).</p>
+
+<p>Three points settle most of the question before you go any further:</p>
+
+<ul>
+<li><strong>You are taxed on profit, not on rent.</strong> Rent of £18,000 with £6,000 of running costs is £12,000 of taxable profit, not £18,000.</li>
+<li><strong>Some of it can be tax-free.</strong> If your gross property income is £1,000 or less, the property allowance covers it and there is nothing to report. Above that the allowance is a choice rather than an extra: deduct either the flat £1,000 or your actual expenses, whichever is larger, never both. Profit that still fits inside your £12,570 personal allowance is taxed at 0%.</li>
+<li><strong>Rental profit has no rate of its own.</strong> It sits on top of your salary and pension, so it is taxed at the highest rate your total income reaches, which is 20%, 40% or 45% for 2026/27.</li>
+</ul>
+
+<p>Landlord tax on rental income comes down to one line: profit multiplied by your marginal rate, less the mortgage interest credit if you have a loan on the property.</p>
 
 <h2>How is rental income taxed in the UK?</h2>
 
@@ -76,9 +94,35 @@ howToSteps:
 </tbody>
 </table>
 
+<p>Source: HMRC Income Tax rates and allowances for 2026/27, gov.uk. Data to August 2026.</p>
+
 <p>The personal allowance tapers away by £1 for every £2 of income above £100,000, so it is fully gone at £125,140. Rental profit counts towards that taper, which is one of several ways the Section 24 add-back (below) can do more damage than the headline interest suggests. Note also that Scotland operates its own Income Tax bands and rates on non-savings income, including rental profit, so a Scottish-resident landlord uses the Holyrood-set rates rather than the figures above.</p>
 
 <p>A quick worked example. Suppose you earn £45,000 from employment and make £15,000 of net rental profit, giving £60,000 of total income. The basic-rate band runs up to £50,270 of total income, and your £45,000 salary leaves only £5,270 of it unused. The rental profit stacks on top of the salary: the first £5,270 falls in the remaining basic-rate band and is taxed at 20%, while the other £9,730 spills into the higher-rate band and is taxed at 40%. The lesson is that rental profit is taxed at the margin: it is the last slice of income, taxed at your top rate.</p>
+
+<h2>How much tax do I pay on rental income? £2,400 on a £12,000 profit at basic rate</h2>
+
+<p>How much tax do you pay on rental income? On £18,000 of rent with £6,000 of costs, you pay £2,400 as a basic-rate taxpayer and £4,800 as a higher-rate taxpayer. Same flat, same profit, double the bill. Here are the two positions side by side.</p>
+
+<p>Priya is 34 and earns £32,000 in her job. Marcus is 52 and earns £60,000 in his. Each lets one flat at £1,500 a month, and each spends £6,000 a year on agent fees, insurance, repairs and safety certificates. Neither has a mortgage on the flat, so no finance-cost credit is in play.</p>
+
+<table>
+<thead>
+<tr><th>Step</th><th>Priya (salary £32,000)</th><th>Marcus (salary £60,000)</th></tr>
+</thead>
+<tbody>
+<tr><td>Rent received</td><td>£18,000</td><td>£18,000</td></tr>
+<tr><td>Allowable expenses</td><td>(£6,000)</td><td>(£6,000)</td></tr>
+<tr><td>Taxable rental profit</td><td>£12,000</td><td>£12,000</td></tr>
+<tr><td>Total income including the profit</td><td>£44,000</td><td>£72,000</td></tr>
+<tr><td>Rate on the rental profit</td><td>20%</td><td>40%</td></tr>
+<tr><td><strong>Tax on the rental profit</strong></td><td><strong>£2,400</strong></td><td><strong>£4,800</strong></td></tr>
+</tbody>
+</table>
+
+<p>Priya's £12,000 of profit lands on a £32,000 salary, so her total income is £44,000 and the whole profit stays inside the basic-rate band, which runs to £50,270. Marcus is already past £50,270 on salary alone, so every pound of his £12,000 is taxed at 40%. He pays £2,400 more than Priya for a flat that earns exactly the same money.</p>
+
+<p>To work out your own figure, take the rent you received, subtract your allowable expenses, then tax the answer at the highest rate your total income reaches. If the property carries a mortgage, do that sum first and then subtract the 20% finance-cost credit set out below, which is what makes a geared let cost more than this example suggests.</p>
 
 <h2>What expenses can landlords claim against rental income?</h2>
 
@@ -145,6 +189,21 @@ howToSteps:
 
 <p>If you let a furnished room in the home you live in, the first £7,500 of gross receipts a year is tax-free under Rent-a-Room Relief (£3,750 each where two people share the income). Below £7,500 the income is exempt; above it, you choose between being taxed on receipts minus £7,500, or on the ordinary profit basis, whichever is lower. The relief applies only to live-in arrangements, not to a separate let property.</p>
 
+<h2>How to avoid paying tax on rental income legally: £12,570, £7,500 and £1,000 of allowances</h2>
+
+<p>How do you avoid paying tax on rental income? You cannot avoid tax on genuine profit, and since 2020 you cannot offset mortgage interest against rental income either: the relief arrives as a 20% credit instead. What you can do is legitimately cut the taxable figure. The landlord tax tips below come down to three allowances and one ownership decision: the £12,570 personal allowance, up to £7,500 of Rent-a-Room Relief, the £1,000 property allowance, and putting the income in the hands of whoever pays the lower rate. None of these is a scheme. All of them are the rules working as written.</p>
+
+<ul>
+<li><strong>Claim every expense you are entitled to.</strong> This is the biggest lever and the one most often under-used. It is what turns £18,000 of rent into £12,000 of taxable profit, and at 40% that £6,000 of costs is worth £2,400 to you. Keep the receipts for agent fees, insurance, repairs, safety certificates and accountancy.</li>
+<li><strong>Use the £1,000 property allowance where your real costs are lower.</strong> It replaces your actual expenses rather than adding to them, and it does not suit every let: our guide to the <a href="/blog/landlord-tax-essentials/property-income-allowance-1000-exemption-vs-expenses">£1,000 property income allowance</a> sets out when it is worth taking and when it is blocked.</li>
+<li><strong>Take Rent-a-Room Relief on a lodger</strong>, worth up to £7,500 a year. Our <a href="/blog/section-24-and-tax-relief/rent-a-room-relief-uk-landlords-lodgers-guide">Rent-a-Room Relief guide</a> covers the tests.</li>
+<li><strong>Check who the income is taxed on.</strong> Every individual has their own £12,570 personal allowance and their own basic-rate band to £50,270, so income sitting with a lower-rate spouse is taxed at 20% instead of 40% or 45%. The split has to reflect genuine beneficial ownership: spouses in joint names are taxed 50:50 by default, and a Form 17 declaration tells HMRC about an unequal beneficial split that a deed has already created, rather than creating one itself. See our guide to <a href="/blog/landlord-tax-essentials/jointly-owned-property">jointly owned property</a>.</li>
+<li><strong>Carry your losses forward.</strong> A loss on one property is set against profits on your others in the same year, and a net loss for the year runs forward against the first available profits of the same property business. A bad year reduces a later bill rather than being wasted.</li>
+<li><strong>Model a company before assuming it is the answer.</strong> A company deducts mortgage interest in full, which is why geared higher-rate landlords look at it, but the transfer itself can trigger Stamp Duty and Capital Gains Tax. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets out both sides.</li>
+</ul>
+
+<p>What does not work is leaving the income undeclared. HMRC matches letting-agent, deposit-scheme and Land Registry data against tax returns, and coming forward first is worth real money. Where the failure was not deliberate and you disclose before HMRC contacts you, within 12 months of the tax falling due, the penalty can be reduced to nil. Once HMRC has had to prompt you, the floor is 10% of the tax, on top of the tax and the interest. So declaring rental income voluntarily is the cheaper of the two routes. If you are behind, the <a href="/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026">Let Property Campaign</a> is the way back in.</p>
+
 <h2>Making Tax Digital for landlords: what changes and when</h2>
 
 <p>Making Tax Digital for Income Tax (MTD for ITSA) is now live, and it changes the reporting rhythm for most landlords. The rollout is by qualifying income, tested on <em>gross</em> rent plus any self-employment turnover, not on profit:</p>
@@ -172,7 +231,7 @@ howToSteps:
 <li><strong>Pay</strong> the tax by the same 31 January, with payments on account due 31 January and 31 July where last year's bill was over £1,000.</li>
 </ul>
 
-<p>From your MTD start date the annual property pages are replaced by four quarterly updates plus the final declaration. The detailed filing process, including the property-pages walkthrough, is in our <a href="/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide">landlord Self Assessment filing guide</a>. Keep records (rent received, expense receipts, mortgage statements, insurance and safety certificates) for at least five years and ten months after the relevant 31 January filing deadline, the period HMRC can require you to support a return.</p>
+<p>From your MTD start date the annual property pages are replaced by four quarterly updates plus the final declaration. The detailed filing process, including the property-pages walkthrough, is in our <a href="/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide">landlord Self Assessment filing guide</a>. Keep records (rent received, expense receipts, mortgage statements, insurance and safety certificates) for at least five years after the 31 January following the tax year, the period HMRC can require you to support a return.</p>
 
 <h2>Capital Gains Tax when you sell</h2>
 
@@ -194,6 +253,8 @@ howToSteps:
 <tr><td>Additional</td><td>45%</td><td>47%</td></tr>
 </tbody>
 </table>
+
+<p>Source: HMRC measure paper on the 2027 property, savings and dividend income tax rates, gov.uk. Data to August 2026.</p>
 
 <p>These rates apply to property income in England, Wales and Northern Ireland; Scotland sets its own rates on non-savings income. The detail many commentators get wrong is the interaction with Section 24: the finance-cost tax reducer rises in step from 20% to 22% (FA 2026 Sch 1, amending ITTOIA 2005 ss.274AA and 274C and ITA 2007 s.399B). So a basic-rate landlord sees the reducer (22%) match the rate on their property income (22%), and <strong>no new basic-rate wedge opens</strong>. Higher and additional-rate landlords get a slightly more valuable 22% credit, while the finance-cost wedge stays the same width as today (20 points for a higher-rate landlord, 25 points for additional rate). We cover the planning response in our <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates</a> guide.</p>
 
