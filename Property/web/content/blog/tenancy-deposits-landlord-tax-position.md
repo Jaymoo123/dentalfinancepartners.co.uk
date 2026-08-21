@@ -9,7 +9,7 @@ reviewerCredentials: "UK property tax advisers who answer deposit and end-of-ten
 reviewedAt: "2026-08-21"
 category: "Landlord Tax Essentials"
 metaTitle: "Tenancy Deposit Tax Treatment: The Landlord's Position"
-metaDescription: "A deposit is not the landlord's income when you take it. It becomes income for the part kept at the end of the tenancy. What to tell a landlord at check-out."
+metaDescription: "A deposit is not the landlord's income when you take it. It becomes income for the part kept at the end of the tenancy. What to say at check-out."
 altText: "Letting agent completing a check-out report and deposit return statement at the end of a tenancy"
 image: ""
 h1: "Tenancy Deposit Tax Treatment: The Landlord's Position"
