@@ -100,6 +100,9 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+**NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
+track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
+
 ## 0.19 Rural/landed-estates cluster (Cluster 5) — EXECUTED 2026-08-21 PM, deploy owner-gated
 
 Dossier frozen `a14be0b3` (universe 242, ledger balanced, 19-domain uncapped harvest
@@ -126,6 +129,12 @@ OK 19, qa_verdict `landed1` 8/8 all_clear recorded LAST, predeploy PASS. AT DEPL
 register landed1 batch in monitored_pages (+ pillar + calculator via --page-urls:
 landed-estates=/landed-estates, bpr-apr-allowance-calculator=/calculators/bpr-apr-allowance-calculator),
 IndexNow. READS: 90-day is the honest read (IHT intent); failure trigger per DOSSIER §9.
+**DEPLOYED 2026-08-21 PM (owner-triggered, second deploy of the day):** worktree at
+`631d71ef`, deployment `dpl_C8CGheNvpuhdxCzzc7fp6GQhKdCR`, all 11 URLs verified 200
+(incl. /landed-estates, calculator + its embed route). monitored_pages: 5 inserts +
+3 pre-existing rows re-baselined in place + pillar/calculator via --page-urls =
+47 rows now carry rewrite_date 2026-08-21, all watched to 2026-11-19. IndexNow 10
+URLs HTTP 200. Worktree + scratch cleaned. CI green.
 
 ## 0.18 CONSOLIDATED DEPLOY 2026-08-21 (owner-triggered): wave11 + cgt1 + tools + rental1 ALL LIVE
 
