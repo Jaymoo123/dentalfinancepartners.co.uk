@@ -1,0 +1,33 @@
+# Wave 12 picks — Cluster A cost-of-selling / vendor capture.
+# Source: expansion_research/buyer_demand/PROPERTY_PAGE_PLAN.md Cluster A
+# (owner-approved for Property per HANDOFF_2026-08-20 §Phase E; brand-fit gate
+# resolved: CGT hook MANDATORY on every page, category "Capital Gains Tax").
+# Single lane per the 2026-07-08 owner ruling (sites/property.json wave.buckets).
+# NOT in this file (conductor-side builds, landed1 precedent): the
+# /cost-of-selling-a-property pillar (plan A1) and cost-of-selling-calculator
+# (plan A2, direct target `estate agent fees calculator uk` 720/mo, must FEED
+# capital-gains-tax-calculator.ts's combined costs input - chain, not duplicate).
+# Standing cautions (HANDOFF_2026-08-21 §2): cgt1 batch is ARMED to ~11-19 -
+# every keyword a cgt1 page owns buckets already-covered; do NOT touch the CGT
+# calculator or build a competing seller-CGT tool; dedupe personas/CTA shapes
+# vs the agents1 batch shipped earlier today (EDITORIAL_batchA/B fingerprints).
+wave: 12
+buckets:
+  A:
+    label: "Bucket A — cost of selling: fees, DIY-sale, disposal-route alternatives"
+    picks:
+      # --- fees family ---
+      - { id: A1,  slug: "how-much-do-estate-agents-charge-to-sell-a-house", label: "How much estate agents charge to sell a house (880/mo)" }
+      - { id: A2,  slug: "cheapest-estate-agent-fees-uk",                    label: "Cheapest estate agent fees UK (210/mo, £9.83 CPC)" }
+      - { id: A3,  slug: "sell-house-without-estate-agent",                  label: "Selling without an estate agent (390x3, £13.46 CPC)" }
+      - { id: A4,  slug: "can-you-sell-a-house-without-an-estate-agent",     label: "Can you sell without an agent (260 + 140 how-to)" }
+      - { id: A5,  slug: "online-estate-agents-uk",                          label: "Online estate agents UK (2,400/mo)" }
+      - { id: A6,  slug: "estate-agent-fees-for-renting",                    label: "Estate agent fees for renting/letting (260/mo)" }
+      - { id: A7,  slug: "average-london-estate-agent-fees",                 label: "Average London estate agent fees (50 + commission 90)" }
+      - { id: A8,  slug: "estate-agent-contract-tie-in-periods",             label: "Agent contract tie-in periods (supporting, low vol)" }
+      # --- moving + disposal-route alternatives ---
+      - { id: A9,  slug: "cost-of-moving-house-uk",                          label: "Cost of moving house UK (2,400/mo)" }
+      - { id: A10, slug: "selling-a-house-at-auction-uk",                    label: "Selling at auction UK (880/mo, KD 8)" }
+      - { id: A11, slug: "modern-method-of-auction-explained",               label: "Modern method of auction (2,900/mo)" }
+      - { id: A12, slug: "part-exchange-house-uk",                           label: "Part-exchange house UK (2,900 + new-build 1,300)" }
+      - { id: A13, slug: "selling-a-probate-property",                       label: "Selling a probate property (480/mo; links 3 existing probate-tax posts, never restates)" }
