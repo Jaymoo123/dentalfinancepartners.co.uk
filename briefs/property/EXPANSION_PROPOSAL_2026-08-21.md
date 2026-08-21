@@ -426,6 +426,14 @@ and the deterministic gates and `qa_verdict` recording happen before any deploy 
 
 ## DECISIONS FOR OWNER
 
+> **RULED 2026-08-21, all four approved as recommended:** (1) rural on Property under
+> `/landed-estates`, tax-half scope frozen; (2) developers as one `/property-developers`
+> pillar, no service page, no new CIS on Property; (3) agents as a pure resource surface,
+> `/for-letting-agents` hub + explainers, no outreach machinery (the `/embed` indexable
+> flip was already committed and rides the parked deploy); (4) sequencing accepted:
+> agents after Phase C deploy, developers after the Phase D re-check (~mid-Sep), rural
+> after Phase E. Do not re-litigate.
+
 1. **Rural on Property, bounded.** Build the APR/BPR cluster under a `/landed-estates`
    pillar on Property rather than a new site, scope frozen at the tax half (the £2.5m
    combined allowance, mixed-estate allocation, the Pawson line) and explicitly conceding

@@ -142,7 +142,10 @@ ALSO 08-21 PM (owner-directed): audience scoping (briefs/property/AUDIENCE_SCOPI
 agents = relationship channel via landlord-law explainers, RRA signal 774.5 median weekly
 Bing impressions). De-risk harvests run (~$1.20; saffery holds APR family pos 3-5, consumer
 register unowned). /embed hub flipped indexable (its audience is agents; iframe routes stay
-noindexed). 4 owner decisions listed in the proposal.
+noindexed). 4 owner decisions listed in the proposal — ALL FOUR APPROVED as recommended
+2026-08-21 (ruling recorded in the proposal's DECISIONS section): rural on Property
+bounded, developers one pillar, agents resource surface, sequencing agents→C /
+developers→post-D / rural→post-E.
 
 ## 0.15 Tools-family cluster (Phase B) — EXECUTED 2026-08-21, deploy owner-gated
 
