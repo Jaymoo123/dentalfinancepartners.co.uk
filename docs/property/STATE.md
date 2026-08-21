@@ -142,6 +142,19 @@ cost-of-selling-calculator=/calculators/cost-of-selling-calculator), IndexNow
 exact URLs. READS: 14d Bing ~09-04-equivalent from deploy date, 90d Google;
 addressable ~45,850/mo family.
 
+**DEPLOYED 2026-08-21 NIGHT (owner-triggered, third deploy of the day, agents1 +
+wave12 in ONE deploy):** worktree at `8d4aaf1d`, deployment
+`dpl_F5UBBHoxZLmn9yFyDB1j9VE3NkJt`, **all 22 new URLs verified 200** on the
+production domain (hub, pillar, calculator + its embed route, 5 agents1 blog,
+13 wave12 blog). monitored_pages: **19 inserts** (3 agents1 blog + hub via
+--page-urls + 13 wave12 blog + pillar/calculator via --page-urls) + **2 REFRAME
+rows re-baselined IN PLACE** with supersession notes (mtd-itsa-letting-agent G
+0/2/85.0, prs-database 0/0; fresh G+Bing baselines, new 90d window) = **70 rows
+now carry rewrite_date 2026-08-21, all watched to 2026-11-19**. IndexNow: 21
+exact URLs HTTP 200 (per-calculator embed route deliberately not submitted,
+noindex by design). Worktree removed. Reads: 14d Bing ~09-04, 28d ~09-18, 90d
+Google ~2026-11-19, same calendar as the morning batches.
+
 ## 0.20 agents1: /for-letting-agents resource surface (Track A) — EXECUTED 2026-08-21 EVE, deploy owner-gated
 
 Owner-ruled track (EXPANSION_PROPOSAL_2026-08-21 decision 3: pure resource surface,
