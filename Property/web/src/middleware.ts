@@ -14,6 +14,11 @@ const BLOG_TO_LOCATION: Record<string, string> = {
 };
 
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  // --- agents1 cluster (2026-08-21): letting-agent-facing explainers.
+  "rra-2026-whats-in-force-letting-agents": "landlord-tax-essentials",
+  "mees-epc-rules-what-your-landlords-think": "landlord-tax-essentials",
+  "tenancy-deposits-landlord-tax-position": "landlord-tax-essentials",
+  // --- end agents1 cluster block ---
   // --- Rural/landed-estates cluster (2026-08-21): three net-new pages.
   "inheritance-tax-on-farms": "property-types-and-specialist-tax",
   "farm-tax-uk-guide": "property-types-and-specialist-tax",

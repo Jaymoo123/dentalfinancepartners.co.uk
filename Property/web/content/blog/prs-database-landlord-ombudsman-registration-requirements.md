@@ -1,237 +1,191 @@
 ---
-title: "PRS Database and Landlord Ombudsman: Registration Mechanics Under the Renters' Rights Act 2025"
+title: "The Private Rented Sector Database and the Landlord Redress Scheme: What Is Actually Live"
 slug: "prs-database-landlord-ombudsman-registration-requirements"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/prs-database-landlord-ombudsman-registration-requirements"
-date: "2026-05-22"
+date: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "PRS Database + Landlord Ombudsman: Registration Mechanics"
-metaDescription: "Two new mandatory registers for English landlords under the Renters' Rights Act 2025. Status today, registration mechanics, penalties, possession bar."
-altText: "Neatly arranged labelled folders on an office shelf, representing the dual landlord-and-dwelling register a residential landlord must maintain"
+metaTitle: "Private Rented Sector Database: What Agents Get Asked"
+metaDescription: "Neither the private rented sector database nor landlord redress is a live duty yet. What is in force, what is not, and what to tell your landlord clients."
+altText: "Neatly arranged labelled folders on an office shelf, representing the per-property compliance file a letting agency already keeps for every managed let"
 image: "https://images.pexels.com/photos/34293528/pexels-photo-34293528.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
   photographer: "Zulfugar Karimov"
   photographer_url: "https://www.pexels.com/@zulfugarkarimov"
   source: "Pexels"
   source_url: "https://www.pexels.com/photo/organized-blue-office-binders-on-shelf-34293528/"
-h1: "PRS Database and Landlord Ombudsman: Registration Mechanics Under the Renters' Rights Act 2025"
-summary: "Two new mandatory registers sit at the centre of the Renters' Rights Act 2025 reform programme: the Landlord Redress Scheme (commonly called the Landlord Ombudsman) in Part 2 Chapter 2, and the Private Rented Sector Database in Part 2 Chapter 3. Both are enacted; neither is yet fully in force. As of 22 May 2026 only section 74 of the Ombudsman chapter has commenced (the Local Commissioners' route for non-tenant complaints, brought into force on 1 May 2026 by SI 2026/421 reg.3), and the entire PRS Database chapter remains pending a further commencement order. This page sets out what each register will require when commenced, the cost stack (registration fees, Ombudsman subscription, professional fees on first-year set-up), the civil-penalty and offence regime that bites for non-registration (£7,000 financial penalty, £40,000 for offences, possession bar at section 90 of the Act), the practical registration workflow for an 8-property portfolio worked example, and the tax treatment of the recurring costs (deductible as professional expenses of the rental business) versus the penalties (non-deductible per BIM38500)."
+h1: "The Private Rented Sector Database and the Landlord Redress Scheme: What Is Actually Live"
+summary: "Nobody can register on the private rented sector database, no fee for it has been set in law, and the landlord redress scheme has no rules behind it yet. The scheme your agency has belonged to since 2014 is a separate regime from the one landlords will eventually join, and that confusion is behind most of the calls. The marketing restriction, when it arrives, lands on your listing workflow rather than on your landlord, which makes it the part most likely to reach your desk first."
 schema: ''
 faqs:
-  - question: "Is the PRS Database open and accepting landlord registrations as of May 2026?"
-    answer: "No. The entire Private Rented Sector Database chapter of the RRA 2025 (Part 2 Chapter 3, sections 75 to 96) is enacted but no commencement order has appointed the day on which registration becomes mandatory. Government policy statements anticipate commencement before April 2027 but a specific date has not been set as of 22 May 2026. The database operator function (section 76, the Secretary of State or an appointed contractor) is not yet in operation. Landlords cannot register because there is nothing to register on yet; they should monitor the legislation.gov.uk commencement table for the operative statutory instrument and plan for a 6 to 12-month registration window between commencement and the first enforcement notices."
-  - question: "Is the PRS Ombudsman / Landlord Redress Scheme in force as of May 2026?"
-    answer: "Partially. Only section 74 of Part 2 Chapter 2 (Local Commissioners' investigation of complaints by persons who are not tenants) was brought into force on 1 May 2026 by regulation 3 of SI 2026/421. The substantive duty to belong to an approved scheme under section 64 is enacted but pending: the Secretary of State has not yet made the regulations specifying which scheme to join or appointed the day on which membership becomes mandatory. The civil penalty regime under section 66 and the offence regime under section 67 are likewise enacted but not yet in force. Government policy statements again anticipate commencement before April 2027; landlords have a planning window but no current compliance obligation beyond the section 74 Local Commissioner route."
-  - question: "What is section 74 and why is it the only part of the Ombudsman chapter in force on 22 May 2026?"
-    answer: "Section 74 extends the existing Local Government and Social Care Ombudsman jurisdiction to investigate complaints made by persons who are not tenants of the landlord. The mechanic is procedural: it allows neighbours, occupiers of adjacent properties, and other non-tenant complainants to bring a complaint through the Local Commissioner route rather than through the not-yet-commenced landlord redress scheme. SI 2026/421 reg.3 commenced section 74 because the underlying Local Commissioner machinery already exists and could absorb the new jurisdiction immediately, whereas the bespoke Landlord Redress Scheme under sections 64 to 73 requires the Secretary of State to make regulations and approve or designate a scheme administrator (a longer process). The substantive scheme will commence by separate statutory instrument once those regulatory steps are complete."
-  - question: "What information will I have to supply when the PRS Database opens for registration?"
-    answer: "The expected dataset is two-tiered. The landlord entry (under section 77) will require: full name, registered address or business address, contact information, any banning order or relevant conviction history (recorded under section 83), unique identifier allocated by the database operator (section 84). The dwelling entry (a separate entry per property) will require: property address, tenancy type, current tenancy status (active or void), gas safety certificate expiry, Electrical Installation Condition Report expiry, Energy Performance Certificate band and expiry, deposit protection scheme and reference, Right to Rent check status, HMO licence status (where applicable), Decent Homes compliance status (once the substantive standard regulations commence). The exact data fields will be set by regulations under section 77 and may differ in detail; landlords should plan for the dataset above as a working specification."
-  - question: "Will the PRS Database be public? Can my tenant or my neighbour look me up?"
-    answer: "Partly public, partly restricted. Sections 86 and 87 distinguish between information that is published and information that is restricted. The current government policy expectation is that the landlord identity and the property compliance status will be searchable by prospective tenants (so a tenant viewing a property can check whether it is properly registered and what the compliance status is), while personal financial information (fee payments, contact telephone numbers, full date of birth) will be restricted. The unique identifier under section 84 will appear on all marketing material under section 82, so a search by unique identifier will reveal the property's compliance status to anyone seeing the advert. Landlords concerned about identifiability should plan for the public-facing portion to look broadly similar to the existing Public Companies House register: identity and high-level status visible, transactional detail restricted."
-  - question: "What is the section 84 unique identifier requirement, and where must I display it?"
-    answer: "The database operator will allocate a unique identifier per landlord and per dwelling under section 84 of the RRA 2025. Under section 82 (marketing, advertising and letting restrictions), every advertisement or marketing material for a dwelling will have to include the relevant unique identifier. The practical reading is that property portals (Rightmove, Zoopla, OnTheMarket, OpenRent), letting agent shopfront cards, social media adverts, and direct-to-tenant marketing will all need the unique identifier to be visible. Marketing without a unique identifier is a section 91 financial-penalty trigger (up to £7,000) and, for repeated breaches, a section 92 offence (up to £40,000). Letting agents will normally administer the unique identifier on the landlord's behalf as part of their standard listing workflow once the database commences."
-  - question: "What is the section 90 possession bar and how serious is it?"
-    answer: "Section 90 of the RRA 2025 provides that a court cannot grant a possession order in respect of a dwelling let under a relevant tenancy where the landlord is in breach of the Database registration duty, with two exceptions: possession sought under Ground 7A (serious anti-social behaviour) and possession sought under Ground 14 (other anti-social behaviour). The structural effect is severe: a landlord who has not registered the dwelling cannot recover possession through the courts for any of the standard mandatory or discretionary grounds (rent arrears under Ground 8, landlord-sale under Ground 1A, landlord-occupation under Ground 1, breach of tenancy under Ground 12, and so on). The route is therefore: register first, then notice. Sessions advising landlords planning a possession claim around the Database commencement should ensure the database registration is in place before the section 8 notice is served, not after; an unregistered landlord cannot recover even where the substantive ground is unimpeachable."
-  - question: "How much can the local authority fine me for not being on the Database when it commences?"
-    answer: "Up to £7,000 per breach as a section 91 financial penalty, or up to £40,000 per offence under section 92. The choice between civil penalty and prosecution is the local authority's, with section 91 typically used for first or technical breaches and section 92 for knowingly false information, continuing breaches after a penalty notice, or repeat offending. Both routes operate as alternatives to (not on top of) each other for any single breach, but a course of conduct generating multiple distinct breaches can produce multiple distinct penalties. The procedural safeguards mirror the civil-penalty regime covered in our companion page linked below: notice of intent, 28-day representations window, final notice, 28-day appeal to the First-Tier Tribunal Property Chamber. The amount of the penalty is informed by the local authority's published civil-penalty policy; aggravating factors include scale of portfolio, prior offence history, and tenant harm."
-  - question: "How does the new PRS Database differ from the existing rogue-landlord database under the Housing and Planning Act 2016?"
-    answer: "They are different registers serving different purposes and they will run in parallel. The HP Act 2016 rogue-landlord database under section 28 is offence-driven: a landlord is added only after a banning order is in force (mandatory inclusion under section 29) or after a conviction for a banning-order offence or two civil penalties within 12 months (discretionary inclusion under section 30). It is restricted-access (not publicly searchable; operated as a tool for local authorities and the Secretary of State). The RRA 2025 PRS Database under Chapter 3 is universal: every residential landlord must register, regardless of compliance history, before any dwelling can be marketed or let. Substantial portions of it will be publicly accessible. The two registers will operate alongside each other; a small subset of landlords on the PRS Database will also be on the rogue database following a banning order or relevant convictions. The two regimes carry separate enforcement consequences and are administered by different parts of central and local government."
-  - question: "Are my PRS Database registration fees and Landlord Ombudsman subscription tax deductible against rental income?"
-    answer: "Yes. Both are deductible as professional expenses of the rental business under the wholly-and-exclusively rule in ITTOIA 2005 (section 34 cash basis, section 272 accruals applying trading-profit principles). They sit alongside other deductible statutory operating costs: HMO licensing fees under PIM2080, selective licensing fees, gas safety certificate fees, EICR fees, EPC fees, professional accountancy fees, and letting agent fees. The deduction is taken in the year of payment under the cash basis (default for landlords with gross rental income under £150,000) or matched to the period the fee covers under the accruals basis. The same treatment carries across to first-year registration set-up professional fees: a solicitor or accountant's time advising on the registration workflow, or a property manager's set-up fee for managing the registration on the landlord's behalf, is deductible as professional fees in the year incurred. The deductibility analysis is the same one developed in detail in our HMO licensing fees deductibility guide linked below."
-  - question: "Is the £7,000 financial penalty for non-registration tax deductible?"
-    answer: "No. HMRC's BIM38500 position is that financial penalties for breach of regulatory obligations are not laid out wholly and exclusively for trade or business purposes, and are therefore not deductible against rental income (or trading income, for company landlords). The non-deductibility extends to: the section 91 financial penalty for breach of the database registration duty (up to £7,000), the section 66 financial penalty for breach of the Ombudsman membership duty (up to £7,000), the section 92 offence penalty (up to £40,000), the section 67 offence penalty (up to £40,000), and the existing Housing Act 2004 section 249A civil penalty (up to £40,000 from 1 May 2026 following the uplift by SI 2026/319 reg.2; £30,000 for offences before that date) where it remains operative. The underlying remediation works (where the breach involved missing compliance certificates that have to be obtained, missed gas safety inspection that has to be booked, missing EICR that has to be commissioned) remain deductible as revenue expenses to the extent they are revenue in character. Professional fees defending the notice (representations stage, FTT appeal) are deductible where they are revenue."
-  - question: "Do joint landlords each need their own database entry?"
-    answer: "Section 95 of the RRA 2025 provides specifically for joint landlords, with the detailed mechanics to be set in regulations made under the database chapter. The working expectation based on the section text is that one dwelling entry covers the property and each joint landlord has a separate landlord entry, with the dwelling entry recording the link to all joint landlords. The compliance duty under section 82 (marketing restriction) attaches to each joint landlord individually, so a single failure by one joint landlord triggers a civil penalty against that landlord but does not necessarily trigger penalties against the others. The unique identifier under section 84 will be allocated per landlord; the property's combined unique identifier will reflect all registered joint landlords. The exact mechanic awaits the section 77 and section 84 regulations."
-  - question: "Will my managing agent register me, or do I have to do it myself?"
-    answer: "Either is permitted; the legal duty under section 77 sits with the landlord. In practice, larger letting agents will offer database registration management as part of a standard managed-let service (the same way they currently administer deposit protection, the gas safety certificate booking, and the EPC commissioning). The agent acts as the registration vehicle but the landlord remains the legal duty-holder; any civil penalty for non-registration or false information attaches to the landlord, with a contractual right to recover from the agent only if the management contract supports it. Landlords using let-only or tenant-find-only services will likely have to register themselves, since the agent's mandate ends at tenant introduction. Self-managing landlords (the majority of portfolio landlords with 4 to 10 properties) will register directly through the database operator's online portal once commenced. The Companies House model is a reasonable analogue for the likely user experience."
-  - question: "When is the PRS Database likely to commence, and what should I do in the meantime?"
-    answer: "Government policy statements anticipate commencement before April 2027 but no statutory instrument appointing the day has been made as of 22 May 2026. Practical preparation moves landlords can make in the meantime: (a) consolidate the compliance evidence pack per property (gas safety records, EICRs, EPCs, deposit-protection certificates, Right to Rent check records, HMO licence where applicable) into a single per-property folder; (b) verify all evidence is current and identify any gaps to address before commencement (gas safety certificates lapse annually, EICRs every 5 years, EPCs every 10 years); (c) build a portfolio-level register spreadsheet listing each property and its compliance status, to mirror the structure the database will likely require; (d) discuss the registration workflow with any letting agent in the portfolio so the operational responsibility is clear; (e) include registration fees and Ombudsman subscription in the next budget cycle so the cash impact is planned. Detailed guidance from MHCLG (or successor department) on the registration workflow and exact data requirements will follow the commencement SI."
-dateModified: "2026-05-22"
+  - question: "Is the landlord database live yet?"
+    answer: "No. The private rented sector database is in the Renters' Rights Act 2025 but the duty to register has not been commenced, and the database duty is marked prospective on the statute book. The regulation-making powers are in force, so ministers can write the rules, but no regulations have been made. There is no portal, no register and no way for a landlord to sign up. The government roadmap expects a regional rollout for landlords and local councils from late 2026, and that year is an expectation rather than a date set in law. Until a commencement order appears, phrase it as a future: when the database opens, your landlords will need to register."
+  - question: "How much does landlord database registration cost?"
+    answer: "Nothing has been set. The fee power sits in the Act and has been in force since Royal Assent, but no fee regulations have been made under it, so no fee exists in law. Every figure circulating in commentary was invented by whoever published it. Do not quote one to a landlord, and do not let a landlord budget against one. If someone offers to register a landlord on the database for a fee, there is nothing for them to register on and no basis for the charge. The honest answer to give a landlord is that the cost is unknown and will be set by regulations that have not been written."
+  - question: "Do letting agents need to be in a redress scheme?"
+    answer: "Yes, and you have needed to since 1 October 2014. Letting and managing agents must belong to an approved redress scheme, and that duty is more than a decade older than the Renters' Rights Act 2025. Nothing in the Act changed it. Two approved schemes are open to agents: The Property Ombudsman, and Property Redress, which used to trade as the Property Redress Scheme. Ombudsman Services: Property was a third until it left the sector in 2018. Your membership covers complaints made about your agency. It does not cover your landlord clients, and it never has."
+  - question: "What is the difference between the landlord ombudsman and the redress scheme my agency is already in?"
+    answer: "They are separate regimes with separate duty-holders. Your scheme membership is the agent duty that has existed since 2014, it is live now, and it covers complaints about your agency's own work. The landlord regime is new, it was created by the Renters' Rights Act 2025, it applies to landlords in their own name, and it is additional to yours rather than a replacement for it. It also does not exist yet in any practical sense: no scheme regulations have been made and no scheme is open for landlord membership. Note too that the Act permits one or more approved schemes rather than a single body, so 'the landlord ombudsman' is the phrase landlords use rather than a description of what the Act creates."
+  - question: "PRS database registration: what will it involve?"
+    answer: "On the working expectation, two entry types. One entry for the landlord, covering name, address, contact details and any banning order or relevant conviction. One entry for each dwelling, covering the property and its compliance status. There will be a continuing duty to keep an active entry up to date, and marketing a dwelling without an active entry will be an offence once the duty commences. Every detail of that is subject to regulations that have not been made, so treat the field list as a planning assumption rather than a specification. If you manage the property, you already hold most of what the dwelling entry is expected to want."
+  - question: "What parts of the Renters' Rights Act are in force now?"
+    answer: "Very little is live on either register. The boundary provision on the redress side has been in force since 1 May 2026, and the regulation-making powers in both chapters since Royal Assent, but no regulations have been made under either. Elsewhere in the Act there is one tranche that is easy to misread. Since 22 June 2026 a council can fine up to £7,000 where a property has a category 1 hazard, and can put that money back into enforcement reaching superior landlords. That sits under the Housing Health and Safety Rating System, and it is not the Decent Homes Standard, which is a separate question still awaiting a further commencement order. No further commencement order has been made since."
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-05-22"
-editorialNote: "Drafted in the transitional window between commencement of section 74 of the RRA 2025 (1 May 2026 under SI 2026/421 reg.3) and commencement of the substantive Landlord Redress Scheme (sections 64 to 73, pending) and the PRS Database (Chapter 3 sections 75 to 96, pending). The in-force-versus-scheduled discipline is the page's primary editorial frame; the substantive registration mechanics described in the body and FAQs reflect the section text as enacted but are not yet operative duties. Statutory references verified against legislation.gov.uk on 22 May 2026."
+reviewerCredentials: "UK-based property tax advisers writing for letting and estate agents fielding landlord questions. Every commencement claim and every figure on this page was re-verified against legislation.gov.uk and the government implementation roadmap at the review date."
+reviewedAt: "2026-08-21"
+editorialNote: "Full rewrite in the agent register. Governing house positions: §20.12 (commencement timeline), §26.5 (landlord redress scheme and the pre-existing 2014 agent regime, including the 08-21 two-scheme correction), §26.6 (private rented sector database), §26.7 and §26.8. The page's organising idea is the distinction between the letting-agent redress duty that has existed since 1 October 2014 and the landlord redress duty created by the Renters' Rights Act 2025, which has no scheme regulations behind it. Every uncommenced provision is written conditionally and every expected year is labelled indicative. The previous version's worked example and its registration cost stack were removed in full: no fee regulations have been made under the database fee power, so no fee figure is citable and any circulating figure is invented. Section 74's content, the possession restriction, the rogue landlord database contrast and the HMRC manual anchor were verified at the review date; the penalty section attributions and the date-of-service refinement on the possession restriction were removed for want of support."
 ---
 
-<p>The Renters' Rights Act 2025 introduces two new mandatory registers for English residential landlords. The first is the Landlord Redress Scheme (commonly called the PRS Ombudsman) under Part 2 Chapter 2 of the Act. The second is the Private Rented Sector Database under Part 2 Chapter 3. Both are enacted, neither is yet fully in force, and the planning question for landlords as of 22 May 2026 is what to do in the transitional window before commencement bites.</p>
+<p>Your landlords have read about a landlord database and a landlord ombudsman. They want to know what they have to do, and when.</p>
 
-<p>For the wider enforcement context, see our <a href="/blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence">civil penalty and banning order defence guide</a>. For the property-condition floor that runs in parallel, see our <a href="/blog/landlord-tax-essentials/decent-homes-standard-prs-landlord-compliance-checklist">Decent Homes Standard compliance checklist</a>. For the cap-versus-revenue and professional-expense deductibility framework that drives the tax treatment of the registration costs, see our <a href="/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords">HMO licensing fees deductibility guide</a>. For the contrast with the tax-withholding register that non-resident landlords already deal with (the NRL scheme), see our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme guide</a>.</p>
+<h2>The one-line answer</h2>
 
-<h2>Status on 22 May 2026: Two Registers, Neither Yet Fully Operative</h2>
+<p>Nothing, yet. Neither register is a live duty. Nobody can register on anything, no fee exists in law, and the redress scheme your agency already belongs to is a different regime from the one landlords will eventually have to join.</p>
 
-<p>The commencement state is the operative editorial frame for this page. A landlord reading guidance on the PRS Database in May 2026 needs to understand that none of the substantive registration mechanics is yet a live duty, and that the planning window is the right place to be doing the preparatory work rather than waiting for the database operator to open the portal. The status table below summarises the position as verified against the legislation.gov.uk commencement table on 22 May 2026.</p>
+<p>That is the answer to give on the phone. Two follow-ups always come next, and both are counter-intuitive. You will get both. For the enforcement machinery that surrounds all of this, see our <a href="/blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence">civil penalty and banning order guide</a>. For the property-condition rules landlords often confuse with the database, see the <a href="/blog/landlord-tax-essentials/decent-homes-standard-prs-landlord-compliance-checklist">Decent Homes Standard checklist</a>.</p>
+
+<h2>What is actually in force today?</h2>
+
+<p>Start with the distinction almost nobody explains. A section of the Renters' Rights Act 2025 can be drafted, debated and passed and still do nothing at all. It only starts binding anyone on the day a commencement order switches it on.</p>
+
+<p>That is why the database can be in the Act and not in force, and why both halves of that sentence are true.</p>
+
+<p>Three things are live, and none of them is what your landlords think. You can give a landlord all three in under a minute:</p>
+
+<ul>
+<li><strong>Section 74 of the redress chapter, since 1 May 2026.</strong> It is a jurisdictional boundary provision. It amends the Local Government Act 1974 to adjust where certain housing complaints go, between the local government ombudsman and the housing ombudsman scheme. It does not extend redress to landlords and it gives your landlord clients nothing to join.</li>
+<li><strong>The regulation-making powers in both chapters of the Renters' Rights Act 2025, since Royal Assent in October 2025.</strong> The accurate sentence is that they are in force for regulation-making only and no regulations have been made. Ministers can write the rules. They have not written them.</li>
+<li><strong>A further tranche elsewhere in the Act, since 22 June 2026.</strong> Local housing authorities can now impose civil penalties of up to £7,000 for category 1 hazards, and penalty income can fund enforcement involving superior landlords. That is enforcement plumbing under the Housing Health and Safety Rating System. It is not the Decent Homes Standard, whatever a landlord thinks it means.</li>
+</ul>
+
+<p>No further commencement order has been made since that tranche.</p>
+
+<h2>What is not in force yet?</h2>
+
+<p>Everything your landlords are actually asking about. None of it is something you can action this month.</p>
+
+<ul>
+<li>The duty to register on the private rented sector database. That duty is marked prospective, which is the statute book's own word for a section waiting on a commencement order.</li>
+<li>The duty for a landlord to belong to an approved redress scheme. No scheme regulations exist at all.</li>
+<li>Every fee, data field, deadline and mechanic that regulations would have to set.</li>
+</ul>
 
 <table>
 <thead>
-<tr><th>Provision</th><th>RRA 2025 reference</th><th>Status on 22 May 2026</th><th>Source</th></tr>
+<tr><th>Milestone</th><th>Where it stands</th><th>Expected timing</th></tr>
 </thead>
 <tbody>
-<tr><td>Local Commissioner complaints route (non-tenants)</td><td>s.74</td><td><strong>In force</strong> from 1 May 2026</td><td>SI 2026/421 reg.3</td></tr>
-<tr><td>Duty to belong to an approved Landlord Redress Scheme</td><td>ss.64 to 65</td><td><strong>Pending</strong></td><td>Awaits further SI + SoS regulations</td></tr>
-<tr><td>Landlord Redress Scheme civil penalty + offences</td><td>ss.66 to 67</td><td><strong>Pending</strong></td><td>Awaits further SI</td></tr>
-<tr><td>PRS Database creation + database operator</td><td>ss.75 to 76</td><td><strong>Pending</strong></td><td>Awaits further SI</td></tr>
-<tr><td>Database entries, active / inactive rules, verification</td><td>ss.77 to 80</td><td><strong>Pending</strong></td><td>Awaits further SI + SoS regulations</td></tr>
-<tr><td>Marketing restriction + unique identifier</td><td>ss.82 + 84</td><td><strong>Pending</strong></td><td>Awaits further SI</td></tr>
-<tr><td>Possession bar where landlord not registered</td><td>s.90</td><td><strong>Pending</strong></td><td>Awaits further SI</td></tr>
-<tr><td>Database financial penalties + offences</td><td>ss.91 to 92</td><td><strong>Pending</strong></td><td>Awaits further SI</td></tr>
+<tr><td>Landlord registration on the database</td><td>Not in force. Regulation-making powers only, no regulations made</td><td>Regional rollout for landlords and councils from late 2026 (indicative)</td></tr>
+<tr><td>Landlord membership of an approved redress scheme</td><td>Not in force. No scheme regulations of any kind</td><td>Mandatory membership in 2028 (indicative)</td></tr>
 </tbody>
 </table>
 
-<p>Government policy statements anticipate full commencement of both registers before April 2027 but neither chapter has had a commencement day appointed by statutory instrument as of 22 May 2026. The structural reason for the phasing is that the substantive Landlord Redress Scheme requires the Secretary of State to either approve a private scheme or designate and administer one, and the PRS Database requires the database operator function to be set up (either by the Secretary of State directly or by an appointed contractor). Both are administrative processes with delivery lead times that the commencement timetable has to accommodate.</p>
+<p>Treat both expected years as indicative. The government has committed to them, but only later regulations will confirm them. Until then, phrase it as a future when you answer. Say "when the database opens, you will need to register", never "you must register now".</p>
 
-<h2>The Landlord Redress Scheme (PRS Ombudsman): What Section 64 Will Require</h2>
+<h2>Your agency's duty and your landlord's duty are not the same thing</h2>
 
-<p>Section 64 of the RRA 2025 empowers the Secretary of State to make regulations requiring a residential landlord to be a member of an approved Landlord Redress Scheme. The expected core duties of membership, based on the section text and government policy statements, are:</p>
+<p>This is the confusion the whole page exists to clear up, and it is worth getting fluent in, because you will explain it more times than you want to before the database opens.</p>
 
-<ul>
-<li>Join an approved scheme before marketing a dwelling for residential tenancy purposes.</li>
-<li>Remain a member of the scheme during the tenancy and for a specified post-tenancy period (likely six months on current policy expectation).</li>
-<li>Supply the scheme administrator with prescribed information about each property within the landlord's portfolio.</li>
-<li>Notify the scheme administrator of changes to that information.</li>
-<li>Cooperate with scheme investigations into tenant complaints.</li>
-<li>Comply with any code of practice issued by the Secretary of State under section 64 powers.</li>
-</ul>
+<h3>The duty you already have</h3>
 
-<p>The scheme itself, once approved or designated, must enable independent investigation and determination of tenant complaints, with redress in the form of an apology, compensation up to a maximum to be set by regulation (anticipated at £25,000 on current policy), or specified actions to remedy the complaint. The scheme administrator must designate an individual responsible for overseeing complaint investigation, and the scheme must include procedures for expelling members for serious or repeated non-compliance, with independent review of expulsion decisions.</p>
+<p>You have belonged to an approved redress scheme since 1 October 2014. Every letting and managing agent has. Two approved schemes are open to agents today: The Property Ombudsman, and Property Redress, which is the Property Redress Scheme under its current name. A third, Ombudsman Services: Property, left the sector in 2018.</p>
 
-<h3>Civil penalty and offence regime under sections 66 and 67</h3>
+<p>Nothing in the Renters' Rights Act 2025 changed that duty. It is old news, and it is yours. Anyone telling you that agents joined the redress regime through the Act has it backwards. If you are ever asked to prove it, the scheme membership you already renew every year is the whole answer.</p>
 
-<p>Section 66 establishes the civil-penalty regime for breach of the membership and information duties: up to £7,000 per breach, imposed by the local housing authority. Multiple penalties are permitted only after a 28-day cure period from a prior penalty, which means a landlord receiving a section 66 notice has a structured window to remediate before further enforcement.</p>
+<h3>The duty your landlord does not have yet</h3>
 
-<p>Section 67 establishes the offence regime for the more serious failures: continuing breach after the cure period has expired, different breaches within five years of a prior penalty, or fresh breaches after a prior conviction. Section 67 offences are summary in mode of trial and carry a financial penalty up to £40,000. The local authority chooses between section 66 (civil) and section 67 (criminal) on a case-by-case basis informed by its published civil-penalty policy; sessions advising on a likely-prosecution case should consider whether the landlord would prefer to be steered onto the civil track via active engagement at the representations stage.</p>
+<p>The Renters' Rights Act 2025 creates a separate landlord redress scheme, additional to yours and joined by the landlord rather than by you. Your landlord will have to join in their own name. They will not join through you, and your membership does nothing for them.</p>
 
-<aside>
-<p>Mid-portfolio landlord facing the cumulative compliance set-up cost of database registration, Ombudsman subscription, and the Decent Homes refit programme?</p>
-<p>The cap-versus-revenue split on the property works, the deductibility framework for the recurring fees, and the cash-flow staging across the commencement window are all worth modelling at portfolio level before the first contractor commitment lands. <a href="/contact">Book a portfolio-level review</a> with one of our property-tax specialists.</p>
-</aside>
+<p>That regime has no scheme regulations behind it. Mandatory membership is expected in 2028, and that year is an expectation rather than a date in law. The Act also allows for more than one approved scheme. "The landlord ombudsman" is what landlords call it, not what the Act sets up. Our <a href="/blog/landlord-tax-essentials/renters-rights-act-property-redress-scheme-mandatory-enrolment-landlords">guide to landlord enrolment in the approved redress scheme regime</a> covers that architecture in depth.</p>
 
-<h2>The Private Rented Sector Database: What Chapter 3 Will Require</h2>
+<h3>The sentence to say on the phone</h3>
 
-<p>Chapter 3 of Part 2 of the RRA 2025 creates the PRS Database. The register has two entry types under section 77: a landlord entry (one per landlord) and a dwelling entry (one per property let or marketed for let). Both are required before the dwelling can lawfully be marketed under the section 82 restriction.</p>
+<p>"You're in a redress scheme, doesn't that cover me?"</p>
 
-<h3>Landlord entry: what goes in</h3>
+<p>No. The scheme you belong to covers complaints about your agency. When the landlord regime arrives, your landlord will need their own membership. Today there is nothing for them to join.</p>
 
-<p>The expected landlord-entry dataset, based on the section text and likely regulations under section 77:</p>
+<p>That call keeps happening because both halves of the answer are counter-intuitive. Your landlord has read a headline about a landlord ombudsman, knows their agent is in a redress scheme, and concludes they are covered. They are not covered, and there is nothing to sign up to.</p>
+
+<h2>What will the private rented sector database actually be?</h2>
+
+<p>"Do I need to register on the landlord database?" Not yet, and there is nowhere to do it. Here is what you will be dealing with when there is.</p>
+
+<p>A register with two entry types, plus a record of people subject to banning orders or convictions for relevant offences. One entry for the landlord. One entry for each dwelling. A continuing duty to keep an active entry up to date.</p>
+
+<p>The data fields are a working expectation and nothing more. Regulations will set the required information, the evidence, the timelines and the fees, and none of those regulations has been made. On that basis, the landlord database is expected to want:</p>
 
 <ul>
-<li>Full legal name of the landlord (individual, partnership, or corporate body).</li>
-<li>Registered address or principal place of business.</li>
-<li>Contact information (email, telephone).</li>
-<li>Unique identifier allocated by the database operator under section 84.</li>
-<li>Any banning order in force against the landlord (recorded under section 83).</li>
-<li>Any conviction for a banning-order offence (recorded under section 83).</li>
-<li>Any financial penalty imposed under section 91 or 92 (recorded under section 83).</li>
+<li><strong>From the landlord:</strong> name, address, contact details, and any banning order or conviction for a relevant offence.</li>
+<li><strong>From each dwelling:</strong> the address, whether it is currently let, the gas safety record, the electrical installation condition report, the energy performance certificate, the deposit protection reference, the Right to Rent check, and any HMO or selective licence.</li>
 </ul>
 
-<h3>Dwelling entry: what goes in</h3>
+<p>If you manage the property, you already hold every line of that second list.</p>
 
-<p>The expected dwelling-entry dataset:</p>
+<h3>Is this the rogue landlord list?</h3>
+
+<p>No, and you will be asked this one, so say so plainly. The two registers get merged in landlords' heads. The rogue landlord database under the Housing and Planning Act 2016 has run since 6 April 2018 and is still in force. It is offence-driven: a landlord goes on it after a banning order, a conviction for a banning-order offence, or repeat civil penalties. The Secretary of State operates it and local housing authorities make the entries. When the new database commences, the Renters' Rights Act 2025 will add a signpost from that register across to it. The new database is the opposite shape. It will cover every landlord, whatever their record.</p>
+
+<h2>Why does the marketing restriction land on you rather than your landlord?</h2>
+
+<p>Because you write the listing.</p>
+
+<p>Once the database duty in the Renters' Rights Act 2025 commences, marketing a dwelling without an active entry will be an offence. The tenancy contract itself stays valid, which is the first thing a worried landlord asks about. But the advert is the thing that goes wrong, and the advert is yours: the portal listing, the window card, the social post.</p>
+
+<p>So your listing workflow becomes the compliance surface for somebody else's registration duty. When the database opens, "is this property registered" belongs in your pre-listing checks, next to the gas safety record and the deposit reference. That is the change most likely to land on your desk rather than your landlord's, and you will feel it before they do.</p>
+
+<h2>What will registration cost?</h2>
+
+<p>Nobody knows, and anyone who tells you otherwise is guessing.</p>
+
+<p>The fee power in the Renters' Rights Act 2025 is in force. No fee regulations have been made under it. So there is no fee in law. Every figure in circulation was somebody's guess, published with confidence. If your agency repeats one to a landlord, you are passing on that guess with your own name attached to it.</p>
+
+<p>"Someone rang me offering to do my landlord registration for me, should I?"</p>
+
+<p>No. There is nothing to register on. Nobody can charge for access to a register that does not exist.</p>
+
+<p>Apply the same test to timing. Nobody can make a landlord register early, and nobody can charge them to. That is a genuinely useful thing for an agent to say out loud, and most landlords will not hear it anywhere else.</p>
+
+<h2>What happens if a landlord is not registered?</h2>
+
+<p>Once the duties commence, and only then, a landlord you act for is exposed on two fronts. On the redress side the shape is settled: a penalty of up to £7,000 where a local housing authority treats the failure as a breach, and up to £40,000 where it deals with it as an offence. The enrolment guide linked above covers that side in depth. The database side carries its own penalty and offence regime, and the figures for it will be set alongside the regulations. Knowingly false information, and carrying on after a penalty notice, sit at the criminal end of both. None of it reaches anyone on your books today.</p>
+
+<p>The sharper consequence is possession. The Renters' Rights Act 2025 writes the restriction into the Housing Act 1988, so that once the database duty is in force a court will not be able to make a possession order while the landlord is in breach of the registration duty, apart from on the anti-social behaviour grounds. For a landlord who might one day need a Section 8 notice, that is a better argument for registering promptly than any penalty figure. The possession route itself is covered in our <a href="/blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026">guide to possession after Section 21</a>.</p>
+
+<h2>Will the fees be deductible against rental income?</h2>
+
+<p>Yes, when they arrive. Scheme membership and database registration will be regulatory costs of running a rental business, so they will be deductible against rental income in the same way as licensing fees. The reasoning is the one set out in our <a href="/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords">guide to HMO licensing fee deductibility</a>.</p>
+
+<p>Two points are worth having ready, because you will be asked. A financial penalty for a regulatory breach is never deductible. Professional fees spent defending a notice usually are, where they are revenue in character.</p>
+
+<h2>What has not changed</h2>
+
+<p>Nothing below changed. It is worth being able to say so without checking:</p>
 
 <ul>
-<li>Property address.</li>
-<li>Tenancy type (assured periodic from 1 May 2026; HMO; supported exempt accommodation; homelessness accommodation; or company-let, where applicable).</li>
-<li>Current tenancy status (active or void).</li>
-<li>Unique dwelling identifier under section 84.</li>
-<li>Gas Safety Record expiry date.</li>
-<li>Electrical Installation Condition Report expiry date.</li>
-<li>Energy Performance Certificate band and expiry date.</li>
-<li>Deposit protection scheme name + deposit reference number.</li>
-<li>Right to Rent check evidence reference.</li>
-<li>HMO licence reference (where the property is a licensed HMO).</li>
-<li>Selective licence reference (where the property is in a designated selective licensing area).</li>
-<li>Decent Homes Standard compliance status (once the substantive standard regulations under Part 3 of the Act commence; see our <a href="/blog/landlord-tax-essentials/decent-homes-standard-prs-landlord-compliance-checklist">Decent Homes compliance checklist</a>).</li>
+<li>Your agency's own redress scheme membership, unchanged since 2014 and untouched by the Renters' Rights Act 2025.</li>
+<li>Deposit protection under the Housing Act 2004, including the timescales and the prescribed information.</li>
+<li>Gas safety, electrical installation condition reports and energy performance certificates.</li>
+<li>Right to Rent checks.</li>
+<li>HMO licensing and selective licensing under the Housing Act 2004, which the database will not replace.</li>
+<li>The possession grounds in the Housing Act 1988, which have not moved since they took their current shape on 1 May 2026.</li>
+<li>The rogue landlord database under the Housing and Planning Act 2016, which continues alongside.</li>
+<li>The fact that no landlord can register for anything today.</li>
 </ul>
 
-<h3>Active vs inactive entries (section 79)</h3>
+<h2>The file you already keep</h2>
 
-<p>An entry can be active or inactive. An active dwelling entry is one currently let or marketed for letting; an inactive entry is one not currently in either status (genuine void awaiting refurbishment, owner-occupied period, family member occupation outside the assured tenancy regime). Section 79 regulations will set the mechanic for transitioning between active and inactive status, including notification timelines to the database operator. Section 78 imposes a continuing duty on the landlord to keep active entries up to date; failing to update is itself a civil-penalty trigger under section 91.</p>
+<p>Every managed property in your book already has a compliance file. That file is the whole job. Nothing here asks you to start something new, and there is no deadline to work back from yet.</p>
 
-<h3>The unique identifier and the marketing restriction (sections 82 and 84)</h3>
-
-<p>Every dwelling entry receives a unique identifier under section 84. Section 82 restricts marketing of a dwelling to circumstances where both the landlord entry and the dwelling entry are active, and requires the unique identifier to appear on the marketing material. Property portals (Rightmove, Zoopla, OnTheMarket, OpenRent) will need to include an identifier field; letting agents will administer this as part of the standard listing workflow. A direct-to-tenant landlord posting a property advert on social media or local notice boards will need to include the identifier in the advert text itself. Marketing without a valid identifier is a section 91 financial-penalty trigger (£7,000) and, for repeated or knowing breaches, a section 92 offence (£40,000).</p>
-
-<h3>The possession bar at section 90</h3>
-
-<p>Section 90 is the structural enforcement teeth of the Database regime. A court cannot grant a possession order in respect of a dwelling let under a relevant tenancy where the landlord is in breach of the registration duty, except where possession is sought on Ground 7A (serious anti-social behaviour) or Ground 14 (other anti-social behaviour). Every other section 8 ground (rent arrears under Ground 8 or Ground 8A, landlord-sale under Ground 1A, landlord-occupation under Ground 1, breach of tenancy under Ground 12, anti-social behaviour outside Ground 7A/14, and the discretionary grounds) is blocked unless the landlord is properly registered.</p>
-
-<p>The operational consequence: a landlord planning a possession claim around the commencement window of the Database must ensure registration is in place before the section 8 notice is served. Serving a notice from an unregistered position locks in the section 90 bar even if registration is completed before the court hearing, because the validity of the notice goes to the registration status at the date of service. The interaction with the broader post-Section-21 possession process is covered in detail in our <a href="/blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026">Section 21 abolition possession guide</a>.</p>
-
-<h3>Access to the database (sections 86 and 87)</h3>
-
-<p>Sections 86 and 87 distinguish between published information (publicly accessible) and restricted information (accessible only to specified persons or in specified circumstances). The detailed split will be set by regulations under section 86. Current government policy expectation is that landlord identity, property address, compliance status (<a href="/blog/landlord-tax-essentials/gas-safety-certificate-cost">a current gas safety record</a>, EICR, EPC, deposit protection), and unique identifier will be publicly searchable; personal contact details, fee payment information, and full date of birth will be restricted. A prospective tenant viewing a property will be able to verify that the property is properly registered and that the headline compliance fields are current; deeper data fields will be available only to the local housing authority and the database operator.</p>
-
-<h3>Civil penalty and offence regime under sections 91 and 92</h3>
-
-<p>Section 91 establishes the civil-penalty regime for breach of any of the registration, information, or unique-identifier duties: up to £7,000 per breach, imposed by the local housing authority on the procedural framework set out in section 91 itself. Section 92 establishes the offence regime: knowingly or recklessly providing false information, continuing breach after a section 91 penalty, or repeat offending. Section 92 offences carry up to £40,000 on summary conviction. The civil-penalty / criminal-offence choice mechanic mirrors the section 66 / 67 mechanic in the Ombudsman chapter and the section 15 / Schedule 5 mechanic for the broader housing-offence regime under the RRA 2025.</p>
-
-<h2>The Other Database: Why the PRS Database is Not the Rogue Landlord Database</h2>
-
-<p>The HP Act 2016 rogue-landlord database under section 28 has existed since 2018 and continues to operate in parallel with the new PRS Database. The two registers are different in purpose, scope, and access. The table below sets out the contrast.</p>
-
-<table>
-<thead>
-<tr><th>Feature</th><th>Rogue-landlord database (HP Act 2016 s.28)</th><th>PRS Database (RRA 2025 Ch.3 Pt.2)</th></tr>
-</thead>
-<tbody>
-<tr><td>Who must be on it</td><td>Landlords subject to a banning order (mandatory under s.29); convicted or twice-penalised landlords (discretionary under s.30)</td><td>Every residential landlord, regardless of compliance history</td></tr>
-<tr><td>Trigger for inclusion</td><td>Banning order or repeat offence</td><td>Acquiring a residential property to let or starting a marketing process</td></tr>
-<tr><td>Access</td><td>Restricted to local authorities + database operator; not publicly searchable</td><td>Substantially public for compliance verification; restricted for personal data</td></tr>
-<tr><td>Operator</td><td>Secretary of State</td><td>Secretary of State or appointed contractor (s.76)</td></tr>
-<tr><td>Removal</td><td>On expiry of banning order or after defined period for discretionary entries</td><td>On disposal of the property or cessation of lettings (s.89)</td></tr>
-<tr><td>Status on 22 May 2026</td><td>Operational since 2018</td><td>Enacted; commencement pending</td></tr>
-</tbody>
-</table>
-
-<p>A small subset of landlords will appear on both registers (post-banning-order, the landlord is on the rogue database AND remains on the PRS Database with a section 83 entry recording the banning order). The two regimes carry separate enforcement and remediation paths; settling one does not affect the other.</p>
-
-<h2>Tax Treatment of Registration Fees, Ombudsman Subscription, and Civil Penalties</h2>
-
-<p>The recurring costs (database registration fees, Ombudsman subscription, professional fees on first-year set-up) are deductible against rental income as professional expenses of the rental business. The legal basis is the wholly-and-exclusively rule in ITTOIA 2005 s.34 (cash basis) and s.272 (accruals, applying trading-profit principles), backed by the broader treatment of statutory operating costs in HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual" target="_blank" rel="noopener noreferrer">Property Income Manual</a> at PIM2080 (revenue expenses) and PIM2090 (allowable expenses checklist). The deductibility analysis is identical to the treatment of HMO licensing fees explored in detail in our <a href="/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords">HMO licensing fees deductibility guide</a>.</p>
-
-<p>The civil penalties (section 91 / 92 / 66 / 67) are not deductible. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual" target="_blank" rel="noopener noreferrer">Business Income Manual</a> at BIM38500 sets the long-standing position that financial penalties for breach of regulatory obligations are not laid out wholly and exclusively for trade or business purposes. The non-deductibility extends across the full RRA 2025 penalty regime (Database, Ombudsman, broader housing offences under section 15 + Schedule 5) and the existing Housing Act 2004 penalty under section 249A. Professional fees defending a notice (representations, appeal to the First-Tier Tribunal Property Chamber) are deductible where they are revenue in character, on the same basis covered in our <a href="/blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence">civil penalty defence guide</a>.</p>
-
-<h2>Worked Example: 8-Property Portfolio Landlord, First-Year Compliance Cost Stack</h2>
-
-<p>An anonymised illustration. A landlord owns 8 buy-to-let properties across two English cities (4 properties each), all let to individual tenants on assured periodic tenancies after the 1 May 2026 conversion. None of the properties is an HMO. Annual gross rent £124,000, net rental profit (after mortgage interest, repairs, agent fees) £42,000 before the new compliance stack. Higher-rate taxpayer.</p>
-
-<p>Anticipated first-year compliance costs once both registers commence (illustrative based on government policy expectations and the analogue cost of social-housing landlord registration schemes):</p>
-
-<ul>
-<li>Landlord entry registration fee (one off, recoverable to database operator): £80.</li>
-<li>Dwelling entry registration fees (8 properties at £30 each, annual recurring): £240.</li>
-<li>Landlord Ombudsman annual subscription (single landlord subscription, all properties covered): £100.</li>
-<li>Letting agent set-up fee for administering the database registration workflow on the landlord's behalf (one off): £200 (£25 per property).</li>
-<li>Accountancy fee for first-year deductibility review and apportionment of fees to property accounts: £180.</li>
-<li>Total first-year compliance cost: £800.</li>
-</ul>
-
-<p>Tax treatment:</p>
-
-<ul>
-<li>All £800 is revenue, deductible against rental income in the year of payment under the cash basis (the landlord is below the £150,000 gross-income accruals-trigger).</li>
-<li>At higher-rate income tax (40%), the £800 deduction is worth £320 in immediate tax relief.</li>
-<li>Net after-tax cost of the first-year compliance stack: £480.</li>
-<li>Cap-versus-revenue: nothing in the stack is capital; all costs are recurring operating expenses of the rental business.</li>
-</ul>
-
-<p>Year-2 onwards (steady state): the £80 landlord-entry fee is not recurring; the dwelling-entry fees of £240, Ombudsman subscription of £100, and ongoing accountancy fees of £180 carry forward; the letting agent set-up fee is one-off. Steady-state recurring cost £520 gross, £312 net of higher-rate income tax relief. Across the 8-property portfolio, the steady-state annual cost is £39 per property net of tax: a manageable line on the rental P&amp;L, and small enough that the operational risk of non-compliance (£7,000 per breach civil penalty, possession bar under section 90) overwhelmingly outweighs the cost of registering.</p>
-
-<aside>
-<p>Self-managing landlord working out the registration workflow without a letting agent in the loop?</p>
-<p>The set-up effort is one off but front-loaded, and getting the compliance evidence pack consolidated correctly before the database opens is the move that saves real time and avoids first-year penalty exposure. <a href="/contact">Talk to one of our specialists</a> about portfolio-level set-up planning before the commencement SI lands.</p>
-</aside>
-
-<h2>What to Do Now: Planning Moves for the Pre-Commencement Window</h2>
-
-<p>The transitional window between 22 May 2026 and commencement (anticipated before April 2027) is the right time for the preparatory work. Concrete moves:</p>
+<p>Four things are worth tidying in it now, so that when registration opens you are moving data rather than running a project:</p>
 
 <ol>
-<li><strong>Consolidate the compliance evidence pack per property.</strong> Gas safety record, EICR, EPC, deposit protection certificate, Right to Rent check evidence, HMO licence (where applicable), selective licence (where applicable). One per-property folder, refreshed as certificates renew. This is the dataset the database will likely require, and consolidating it now is operationally useful regardless of the commencement date.</li>
-<li><strong>Audit for compliance gaps.</strong> Lapsed gas safety, EICR due, EPC expiring, deposit protection certificate missing, Right to Rent check undocumented. Address the gaps in the pre-commencement window so the first registration is a clean one. A property with lapsed certificates registered into the database from day one will carry the compliance flag against the dwelling entry, which is visible to local authorities and potentially to prospective tenants.</li>
-<li><strong>Build a portfolio-level register spreadsheet.</strong> One row per property, columns mirroring the likely dwelling-entry fields. Use it as the working register pending the database opening; transfer the data structure to the operator portal on commencement.</li>
-<li><strong>Discuss the registration workflow with any letting agent in the portfolio.</strong> Larger agents will offer database registration management as a standard managed-service inclusion; tenant-find-only and let-only services will not. The split of responsibility should be documented in the management agreement.</li>
-<li><strong>Include registration fees and Ombudsman subscription in the next budget cycle.</strong> The cash impact is modest (the worked example above suggests £520 to £800 first-year, declining to £300 to £400 steady-state per landlord across a typical portfolio), but planning it into the cash-flow forecast avoids surprises when the SI lands.</li>
-<li><strong>For landlords considering portfolio disposal,</strong> the section 90 possession bar interacts with the disposal timeline: a landlord intending to recover possession before sale (the landlord-sale Ground 1A route, with its 12-month re-letting prohibition) must register the dwelling before serving the notice. The commercial side of the dispose-or-retrofit decision is covered in detail in our <a href="/blog/landlord-tax-essentials/landlords-considering-selling-portfolio-rra-2025-tax-implications">portfolio disposal under RRA 2025 tax implications guide</a>.</li>
+<li><strong>One folder per property, complete.</strong> Gas safety record, electrical report, energy certificate, deposit reference, Right to Rent evidence, licence where one applies.</li>
+<li><strong>Find the gaps while there is nothing to register.</strong> A lapsed certificate is easier to fix now than in the week a portal opens.</li>
+<li><strong>Keep one portfolio-level view across the managed book.</strong> One row per property, the same columns as the folder. You will need to answer "how many of ours are ready" in one look.</li>
+<li><strong>Write down who registers.</strong> Put it in the management agreement now, for every landlord you act for, so the question is settled before it is urgent.</li>
 </ol>
 
-<p>The pattern across the entire RRA 2025 reform programme is the same: the substantive duties are scheduled, the planning window is open now, and the landlords who use the window to prepare will face less enforcement risk and less administrative friction at commencement than the landlords who wait. The combination of the Decent Homes Standard extension (covered separately in our compliance checklist linked above), the PRS Database, and the Ombudsman scheme is the substantive compliance architecture of the new regime, and they will all become operative within a roughly overlapping window. Treating them as a single connected compliance programme rather than three separate obligations is the cleaner planning posture.</p>
+<p>Do that, and when the database opens you are exporting a spreadsheet rather than chasing every landlord in your book for certificates.</p>
+
+<p><em>References: Renters' Rights Act 2025 (2025 c. 26), sections 74, 75, 77, 82, 90 and 145(2); SI 2026/421 reg.3; SI 2026/638; SI 2014/2359; Housing and Planning Act 2016 s.28 (as amended by RRA 2025 s.94(2)); ITTOIA 2005 s.272.</em></p>

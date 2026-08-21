@@ -87,6 +87,10 @@
           "href": "/landed-estates"
         },
         {
+          "label": "For letting agents",
+          "href": "/for-letting-agents"
+        },
+        {
           "label": "Property tax rates",
           "href": "/property-tax-rates"
         },
@@ -145,6 +149,10 @@
     {
       "label": "Landed estates",
       "href": "/landed-estates"
+    },
+    {
+      "label": "For letting agents",
+      "href": "/for-letting-agents"
     },
     {
       "label": "Property tax rates",

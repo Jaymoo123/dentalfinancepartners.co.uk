@@ -103,6 +103,50 @@ produced three property-only isolated experiments, built through the §9 machine
 **NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
 track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
 
+## 0.20 agents1: /for-letting-agents resource surface (Track A) — EXECUTED 2026-08-21 EVE, deploy owner-gated
+
+Owner-ruled track (EXPANSION_PROPOSAL_2026-08-21 decision 3: pure resource surface,
+no service/pricing/outreach). Dossier `briefs/property/agents/DOSSIER.md` FROZEN
+2026-08-21: fresh GSC 90d (1 query row across all 12 RRA pages = NOT already earning
+the demand, track confirmed net-new), Bing GetPageQueryStats per URL, freeze check
+(periodic + both MEES heads hard-frozen to Nov; work order = hub + 3 net-new + 2
+REFRAME rescues of invisible out-of-window pages; standalone periodic explainer
+DROPPED as cannibalisation), Google Ads volumes $0.13 (RRA head 12,100/mo, redress
+27,100 already-covered, database family 2,010 = the winnable prize), §9.11 language
+spec (winners: 0 citation-grammar, notice-names 10.4/1k median, Flesch 49 vs our 28;
+"your landlord client" whitespace), DDG-not-Google SERP limitation recorded.
+PRE-WRITE STATUTE RE-VERIFICATION (blocking, ran 2026-08-21): found SI 2026/638
+(Commencement No. 3), four unrecorded 1 May SIs (321/324/325/354 incl. the
+information-sheet DUTY + Form 4A), s.145(2) self-commencement layer, private-only
+carve-out, MEES policy hardening (21 Jan 2026 response). house_positions patched
+SAME DAY: §20.12 (6 changes), §26.3, §26.5 (incl. s.74 lock + two-scheme agent-redress
+correction), §26.6, §26.8 (+3 do-not-writes), §19.7 (first-year 30-day concession +
+£200-on-reaching + 2027-28 4%/4%/10% step, found by this batch's factual QA vs gov.uk).
+BUILT (6 Opus writers, batch size 1): /for-letting-agents hub route (+ sitemap +
+niche.config nav/footer, NO CTASection/contact/FAQ by pack mandate),
+rra-2026-whats-in-force-letting-agents (NET-NEW, head page),
+mees-epc-rules-what-your-landlords-think (NET-NEW, myth table, all 4 measured heads
+declined by name), tenancy-deposits-landlord-tax-position (NET-NEW, 14-position
+PIM-verified register in coverage note; dossier's PIM candidates corrected),
+mtd-itsa-letting-agent-managed-portfolio REFRAME, prs-database-landlord-ombudsman
+REFRAME (12 invented pound figures deleted; 2014-vs-RRA regime distinction = spine).
+Two-track QA (2 factual + 2 editorial Opus, cross-writer batching): 4 factual + 3
+leakage blockers + sameness sheet, ALL fixed by original writers in 2 rounds;
+RRA/database overlap collapsed 21→3 shared 7-grams; reviewerCredentials leaks
+killed; batch decision = all 5 blog surfaces carry the estate reviewer block.
+GATES ALL GREEN: equity gate `--cluster agents` PASS (39-row ledger, new CLUSTERS
+entry), frontmatter 775, voice all 5 CLEAN-band-or-MINOR (database 36.7 ROBOTIC →
+20.0, better than its 31.7 pre-overhaul baseline), tsc, vitest 1437/1437, prod build
+exit 0, dependency closure OK 19, qa_verdict `agents1` 5/5 all_clear recorded LAST,
+predeploy `--qa-batch agents1` PASS. Delta list `briefs/property/agents/notes/delta.md`
+(21 items incl. frozen-page back-patches: s.74 sibling error, EPC pipeline-leakage,
+stale 2028 framing, estate-wide reviewerCredentials sweep candidate). AT DEPLOY:
+register agents1 batch in monitored_pages (5 blog slugs; hub via --page-urls
+for-letting-agents=/for-letting-agents; two REFRAME rows re-baseline IN PLACE with
+supersession notes), IndexNow exact URLs. READS: 90d ~2026-11-19; failure trigger
+per DOSSIER §10 (zero Bing rows AND zero GSC impressions cluster-wide = register
+thesis wrong).
+
 ## 0.19 Rural/landed-estates cluster (Cluster 5) — EXECUTED 2026-08-21 PM, deploy owner-gated
 
 Dossier frozen `a14be0b3` (universe 242, ledger balanced, 19-domain uncapped harvest

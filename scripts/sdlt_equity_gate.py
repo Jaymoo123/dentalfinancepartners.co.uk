@@ -38,6 +38,7 @@ CLUSTERS = {
     "cgt": {"dir": ROOT / "briefs" / "property" / "cgt", "universe": 3869},
     "rental": {"dir": ROOT / "briefs" / "property" / "rental", "universe": 867},
     "landed": {"dir": ROOT / "briefs" / "property" / "rural-estates", "universe": 242},
+    "agents": {"dir": ROOT / "briefs" / "property" / "agents", "universe": 39},
 }
 
 # generic calculator tools live in the registry, bespoke ones in app routes
