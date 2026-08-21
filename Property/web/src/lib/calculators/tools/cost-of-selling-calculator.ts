@@ -49,7 +49,7 @@ export const costOfSellingCalculator: GenericTool = {
   name: "Cost of Selling a House Calculator",
   category: "Capital gains tax",
   oneLiner:
-    "The full cost of selling a house in England: estate agent fee including VAT, conveyancing, EPC and removals, split into what comes off a capital gain and what does not.",
+    "Work out what selling your house will cost you, and which of those costs come off a capital gain if it was let.",
   metaTitle: "Cost of Selling a House Calculator | Agent Fees UK",
   metaDescription:
     "Work out the cost of selling your house: agent fees at 1.42% inc VAT, conveyancing, EPC and removals, plus a capital gains tax estimate if it was let.",
@@ -105,7 +105,7 @@ export const costOfSellingCalculator: GenericTool = {
       type: "currency",
       default: 550,
       step: 100,
-      help: "£550 is one published estimate rather than a market range, so treat it as a placeholder until you have a quote. Distance, volume and packing move it a long way.",
+      help: "The HomeOwners Alliance publishes £334 for a one-bedroom local move and £731 for a three-bedroom one, so £550 sits between them. Distance, volume and packing move it a long way.",
     },
     {
       id: "letOrSecond",
@@ -143,8 +143,13 @@ export const costOfSellingCalculator: GenericTool = {
     const agentFee = (salePrice * feePct) / 100;
 
     // s.38(1)(c) + s.38(2), exhaustive. Agent commission (gross of VAT for a
-    // private seller, CG14300), transfer/conveyancing costs, advertising to
-    // find a buyer, and the EPC as a cost of the disposal.
+    // private seller, CG14300), transfer/conveyancing costs, and advertising
+    // to find a buyer. The EPC rides in on the s.38(2)(b) MARKETING limb only
+    // (it is required before marketing under SI 2012/3118 reg 6), and §5.B's
+    // 08-21 wave-close position requires a one-clause hedge on every surface
+    // that includes it: a domestic energy assessor is not one of the six
+    // named professions and HMRC nowhere lists the EPC expressly. Never a
+    // bare assertion. The note strings and the FAQ carry that hedge.
     const deductible = agentFee + conveyancing + epc + advertising;
     // Not on the s.38(2) list at either end. §5.B: never write that removals
     // come off the gain.
@@ -165,7 +170,7 @@ export const costOfSellingCalculator: GenericTool = {
     ];
 
     const sourcesNote =
-      "Every figure here is a starting point, so replace them with your own quotes. The agent fee starts at 1.42% including VAT, the HomeOwners Alliance average for 2026, and the sale conveyancing starts at £700 from the same source. The EPC starts at £80, the middle of the £35 to £120 range on our own EPC cost page. Removals start at £550, which is one published estimate rather than a market range. The figures are for England: Scotland and Wales run a different conveyancing process and charge the buyer a different tax.";
+      "Every figure here is a starting point, so replace them with your own quotes. The agent fee starts at 1.42% including VAT, the HomeOwners Alliance average for 2026, and the sale conveyancing starts at £700 from the same source. The EPC starts at £80, the middle of the £35 to £120 range on our own EPC cost page. Removals start at £550, between the HomeOwners Alliance figures of £334 for a one-bedroom local move and £731 for a three-bedroom one. The figures are for England: Scotland and Wales run a different conveyancing process and charge the buyer a different tax.";
 
     if (!letOrSecond) {
       return {
@@ -208,15 +213,15 @@ export const costOfSellingCalculator: GenericTool = {
         tone: r.tax > 0 ? "warn" : "default",
       },
       rows,
-      note: `The tax figure is an estimate. It takes the gain, knocks off the £3,000 annual allowance, then charges 18% on what fits in your unused basic-rate band and 24% on the rest. It assumes no relief applies. Removals are kept out of the deductible total on purpose, because they are not on the list of costs that reduce a gain, and neither is anything you spent tidying the place up. Take the ${gbp(deductible)} of deductible selling costs into our capital gains tax calculator, add what you paid to buy the property and anything you spent improving it, and check the reliefs before you rely on the number. ${sourcesNote}`,
+      note: `The tax figure is an estimate. It takes the gain, knocks off the £3,000 annual allowance, then charges 18% on what fits in your unused basic-rate band and 24% on the rest. It assumes no relief applies, and that you have not already used your £3,000 allowance on another sale this tax year. Removals are kept out of the deductible total on purpose, because they are not on the list of costs that reduce a gain, and neither is anything you spent tidying the place up. Your EPC is counted in, as part of the cost of marketing the property, though the official list does not name it outright. Take the ${gbp(deductible)} of deductible selling costs into our capital gains tax calculator, add what you paid to buy the property and anything you spent improving it, and check the reliefs before you rely on the number. ${sourcesNote}`,
     };
   },
   explainer: {
     heading: "How much does it cost to sell a house?",
     paragraphs: [
-      "Selling a house in England costs most people about £5,500, on a sale at £293,000. The Land Registry house price index put the average English home at that in June 2026. Your estate agent takes the biggest slice by far. The HomeOwners Alliance puts the 2026 average fee at 1.42% including VAT, so on a £293,000 sale your agent bill is about £4,160. Your solicitor takes about £700, and the EPC and the removal van take the rest.",
+      "Selling a house in England costs most people about £5,500, on a sale at £293,000. The Land Registry house price index put the average English home at that in June 2026. Your estate agent takes the biggest slice by far. The HomeOwners Alliance puts the 2026 average fee at 1.42% including VAT, so on a £293,000 sale your agent bill is about £4,161. Your solicitor takes about £700, and the EPC and the removal van take the rest.",
       "The agent fee is the one number worth arguing about. Sole agency deals run from 1.2% to 1.8% including VAT. Three things move you up or down that range: how many agents you sign, how easy your house is to sell, and how hard you push. So get three quotes, ask for 1.2%, and say you have a cheaper quote elsewhere. On a £293,000 sale the gap between 1.8% and 1.2% is about £1,760, which is more than your solicitor costs.",
-      "Now the part nobody else prices for you. Was the house let out, or was it a second home? Then you may owe capital gains tax on the sale. Some of what you just spent comes off that gain and some of it does not. The agent fee comes off, and so do the sale conveyancing, the EPC and any advertising you paid for yourself. The removal van does not. Nor does storage, cleaning, new carpets or the fee for paying your mortgage off early. The list is a fixed one, and it is shorter than most sellers assume.",
+      "Now the part that decides how much of this you get back. Was the house let out, or was it a second home? Then you may owe capital gains tax on the sale. Some of what you just spent comes off that gain and some of it does not. The agent fee comes off, and so does the sale conveyancing and any advertising you paid for yourself. Your EPC usually goes in too, as part of the cost of marketing the property, though the official list does not name it. The removal van does not. Nor does storage, cleaning, new carpets or the fee for paying your mortgage off early. The list is a fixed one, and it is shorter than most sellers assume.",
       "Is the house your main home? Then you can stop at the cost total. Private residence relief covers the gain, so you have no tax line to worry about. If it was let, tick the box and you get an estimate of your bill at 18% and 24%, after the £3,000 allowance. Treat that as a rough shape rather than a return. The deductible figure the tool hands you is the one to carry into our capital gains tax calculator. There you add what you paid for the property and anything you spent improving it, and work through your reliefs properly.",
     ],
   },
@@ -224,27 +229,22 @@ export const costOfSellingCalculator: GenericTool = {
     {
       question: "How much does it cost to sell a house in the UK?",
       answer:
-        "About £5,500 on a £293,000 sale in England, which is roughly 1.9% of your price. That buys you an estate agent at about £4,160, £700 of conveyancing, an £80 EPC and a £550 removal van. Selling a leasehold flat costs you more, because the management pack adds to your legal bill. If you have no chain and nothing to move, it costs less. If the property was let out, add your capital gains tax, which is usually bigger than all of it put together.",
+        "About £5,500 on a £293,000 sale in England, which is roughly 1.9% of your price. That buys you an estate agent at about £4,161, £700 of conveyancing, an £80 EPC and a £550 removal van. Selling a leasehold flat costs you more, because the management pack adds to your legal bill. If you have no chain and nothing to move, it costs less. If the property was let out, add your capital gains tax, which is usually bigger than all of it put together.",
     },
     {
       question: "How much are estate agent fees?",
       answer:
-        "The average is 1.42% including VAT in 2026. Sole agency deals sit between 1.2% and 1.8%. A multi-agency deal costs you more, because more than one firm is chasing your sale. On a £293,000 house, 1.42% is about £4,160, so every 0.1% you shave off is worth £293 to you. Always check whether your quote includes VAT: a fee quoted as 1.2% plus VAT is really 1.44%.",
+        "The average is 1.42% including VAT in 2026. Sole agency deals sit between 1.2% and 1.8%. A multi-agency deal costs you more, because more than one firm is chasing your sale. On a £293,000 house, 1.42% is about £4,161, so every 0.1% you shave off is worth £293 to you. Always check whether your quote includes VAT: a fee quoted as 1.2% plus VAT is really 1.44%.",
     },
     {
       question: "Can you negotiate estate agent fees?",
       answer:
-        "Yes, and your agent expects you to. Get three quotes from a mix of local independents and bigger chains. Aim for 1.2% including VAT on a sole agency deal, and push lower if your house is worth well above the local average. If one firm quotes you less than the firm you want, say so. Negotiate your tie-in period too. A shorter tie-in lets you walk away from an agent who is not selling your house, and that is often worth more to you than the rate is.",
-    },
-    {
-      question: "Do I pay capital gains tax when I sell my house?",
-      answer:
-        "Not if it has been your only or main home throughout. Private residence relief covers your gain, and you have nothing to pay or report. You do pay if the property was let out, or was your second home, or was your home for only part of the time you owned it. That is why the calculator asks you. Tick the box and it estimates your bill at 18% and 24%, after your £3,000 annual allowance.",
+        "Yes, and your agent expects you to. Three quotes gives you something to quote back. Aim for 1.2% including VAT on sole agency, and negotiate the tie-in as hard as the rate. A shorter tie-in lets you walk away from an agent who is not selling your house, and that is often worth more to you than the rate is.",
     },
     {
       question: "Which selling costs come off a capital gain?",
       answer:
-        "Your agent's commission, your conveyancing on the sale, any advertising you paid for to find a buyer, and the EPC you needed before you could market the house. Fees you paid a surveyor, valuer or auctioneer count too. Deduct your agent fee including the VAT, because you cannot reclaim that VAT anywhere else. The calculator adds all of it into one subtotal for you, and that subtotal is what our capital gains tax calculator asks you for.",
+        "Your agent's commission, your conveyancing on the sale, and any advertising you paid for to find a buyer. Fees you paid a surveyor, valuer or auctioneer count too. The EPC you had to buy before you could market the house normally goes in as part of the cost of advertising for a buyer, though the official list does not name it. Deduct your agent fee including the VAT, because you cannot reclaim that VAT anywhere else. The calculator adds all of it into one subtotal for you, and that subtotal is what our capital gains tax calculator asks you for.",
     },
     {
       question: "Can I deduct removal costs from my gain?",
@@ -268,12 +268,12 @@ export const costOfSellingCalculator: GenericTool = {
       inputs:
         "£293,000 sale price, 1.42% agent fee including VAT, £700 conveyancing, £80 EPC, no separate advertising, £550 removals, main home",
       steps: [
-        "Estate agent fee = £293,000 x 1.42% = £4,160",
+        "Estate agent fee = £293,000 × 1.42% = £4,160.60",
         "Conveyancing for the sale = £700",
         "Energy performance certificate = £80",
-        "Costs that would come off a capital gain = £4,160 + £700 + £80 = £4,941",
+        "Costs that would come off a capital gain = £4,160.60 + £700 + £80 = £4,940.60, which the tool rounds to £4,941",
         "Removals = £550, which get no tax relief at either end",
-        "Total cost of selling = £5,491, which is 1.9% of the sale price",
+        "Total cost of selling = £4,940.60 + £550 = £5,490.60, rounded to £5,491, which is 1.9% of the sale price",
         "This is a main home, so private residence relief covers the gain and there is no tax line",
       ],
     },

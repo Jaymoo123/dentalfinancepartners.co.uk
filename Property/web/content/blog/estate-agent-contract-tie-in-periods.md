@@ -6,7 +6,7 @@ date: "2026-08-21"
 generator: "opus-4.8/netnew-wave"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "Checked against the wording estate agents are required to use for sole agency and sole selling rights, and against the tax rules on which selling costs come off a gain"
+reviewerCredentials: "Read against the sole agency and sole selling rights wording contracts must carry, and against the rules on which selling costs reduce a gain"
 reviewedAt: "2026-08-21"
 category: "Capital Gains Tax"
 metaTitle: "Estate Agent Tie-In Periods: How Long You Are Locked In"
@@ -14,7 +14,7 @@ metaDescription: "How long estate agent tie-ins run, why notice sits on top, whe
 altText: "Homeowner reading the tie-in and notice period clauses of a sole agency estate agent contract at a kitchen table"
 image: ""
 h1: "Estate Agent Tie-In Periods: How Long You Are Locked In and What It Costs to Leave"
-summary: "Most sole agency tie-in periods run for 4 or 12 weeks, and the notice period usually sits on top of the tie-in rather than inside it. This guide sets out how the tie-in and the notice stack up, the difference between sole agency and sole selling rights in the exact wording your contract has to use, when two agents can both charge you for one sale, the 14-day cancellation right that applies when you signed at home, what the agent had to tell you about withdrawal fees before you signed, and which of those payments actually come off your gain if the sale is taxable."
+summary: "Most sole agency tie-ins run 4 or 12 weeks, and the notice usually sits on top, so 12 plus 4 means 16 weeks. Sole selling rights can make you owe the fee on a buyer you found yourself."
 schema: ""
 faqs:
   - question: "How long is a normal estate agent tie-in period?"
@@ -40,15 +40,15 @@ faqs:
   - question: "Is an estate agent withdrawal fee tax deductible against my capital gain?"
     answer: "No, on the usual analysis. The list of selling costs that come off a gain is closed rather than a general allowance for the costs of selling, and HMRC's own guidance says the definition is exhaustive. The fee you pay the agent who actually sold the home is on that list. A withdrawal fee or early-termination charge is the cost of getting out of a contract, not a cost of making the sale, so it does not come off. If you paid a disputed claim to get the sale over the line, there is a separate argument to put about protecting your title, but it is an argument and not a settled deduction."
   - question: "How long should I keep the invoices and correspondence?"
-    answer: "Keep the signed contract, the terms, every email about fees, both agents' invoices and anything that shows when a buyer first saw the house. If the sale is taxable, keep the paperwork for at least five years after the 31 January that follows the tax year of the sale, because that is when a deduction has to be evidenced. Our record-keeping guide sets out what to save and the retention periods in full."
+    answer: "Keep the signed contract, the terms, every email about fees, both agents' invoices and anything that shows when a buyer first saw the house. If the sale is taxable, keep the paperwork for at least five years after the 31 January that follows the tax year of the sale, which is the floor where the property was let, because that is when a deduction has to be evidenced. Our record-keeping guide sets out what to save and the retention periods in full."
 ---
 
 <p>Most sole agency tie-in periods run for 4 or 12 weeks. The notice period normally sits on top of the tie-in rather than inside it, so a 12-week tie-in with 4 weeks' notice keeps you with that agent for 16 weeks. The <a href="https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/estate-agents-contracts-what-to-watch-for/" rel="nofollow noopener" target="_blank">HomeOwners Alliance</a> calls 4 or 12 weeks the most popular terms and says more than that is unnecessary. It has also seen 20-week tie-ins with a 4-week notice period bolted on, which is close to six months.</p>
 
-<p>If you have already signed, the number that matters is not the one you were quoted. It is the tie-in, plus the notice, plus what the contract says about buyers the agent introduced. This page covers what you signed, what you pay to leave, and which of those payments come off your gain when you finally sell.</p>
+<p>If you have already signed, the number that matters is not the one you were quoted. It is the tie-in, plus the notice, plus what the contract says about buyers the agent introduced.</p>
 
 <ul>
-<li><strong>Typical tie-in:</strong> 4 or 12 weeks on sole agency, and longer than that is unnecessary (HomeOwners Alliance, read 2026)</li>
+<li><strong>Typical tie-in:</strong> 4 or 12 weeks on sole agency, and longer than that is unnecessary (HomeOwners Alliance)</li>
 <li><strong>Notice period:</strong> commonly runs on top of the tie-in, so 12 plus 4 means 16 weeks</li>
 <li><strong>Sole selling rights:</strong> you owe the fee even if you find the buyer yourself</li>
 <li><strong>Cancellation:</strong> 14 days from signing, if you signed away from the agent's office</li>
@@ -61,7 +61,7 @@ faqs:
 
 <p>That makes the tie-in the easiest term to negotiate. Agents guard the fee, because the fee is how they are measured. They will often trade the tie-in instead. Ask for 4 weeks and a short notice period, say you are ready to sign today on those terms, and put it in an email.</p>
 
-<p>For the fee itself, see <a href="/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house">how much estate agents charge to sell a house</a>, or <a href="/blog/capital-gains-tax/average-london-estate-agent-fees">average London estate agent fees</a>. This page is about your terms, not the price.</p>
+<p>For the fee itself, see <a href="/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house">how much estate agents charge to sell a house</a>. Selling in the capital has its own numbers, in <a href="/blog/capital-gains-tax/average-london-estate-agent-fees">average London estate agent fees</a>. This page is about your terms, not the price.</p>
 
 <h2>How do you get out of an estate agent contract before the tie-in ends?</h2>
 
@@ -97,19 +97,19 @@ faqs:
 <tr><td>Online or fixed fee, paid upfront</td><td>Varies, often none</td><td>Low</td><td>An upfront listing fee where no sale completes is not a cost of a sale that never happened</td></tr>
 </table>
 
-<p>Online and fixed-fee contracts differ again: you often pay before anyone views. See <a href="/blog/capital-gains-tax/online-estate-agents-uk">online estate agents in the UK</a> and <a href="/blog/capital-gains-tax/cheapest-estate-agent-fees-uk">the cheapest estate agent fees</a>.</p>
+<p>Online and fixed-fee contracts differ again: you often pay before anyone views. Their terms are set out in <a href="/blog/capital-gains-tax/online-estate-agents-uk">online estate agents in the UK</a>. For how the fee models compare, see <a href="/blog/capital-gains-tax/cheapest-estate-agent-fees-uk">the cheapest estate agent fees</a>.</p>
 
 <h2>Can two estate agents both charge you for one sale?</h2>
 
 <p>Yes, in the wrong circumstances. You leave one agent, instruct another, and your eventual buyer turns out to have first seen the house through the first agent.</p>
 
-<p>The leading case is <a href="https://caselaw.nationalarchives.gov.uk/ewca/civ/2008/419" rel="nofollow noopener" target="_blank">Foxtons Ltd v Pelkey Bicknell</a>, decided by the Court of Appeal in April 2008. Most consumer guides describe it wrongly.</p>
+<p>The leading case is <a href="https://caselaw.nationalarchives.gov.uk/ewca/civ/2008/419" rel="nofollow noopener" target="_blank">Foxtons Ltd v Pelkey Bicknell</a>, decided by the Court of Appeal in April 2008. It is the one to read if two agents are chasing you.</p>
 
 <ul>
-<li><strong>What it decided.</strong> The words "a purchaser introduced by us" mean the person the agent introduced to the purchase, not merely to the property (paragraph 36). The homeowner won and the fee claim failed.</li>
-<li><strong>The bit that gets misquoted.</strong> Guides often say the case decided an agent must be the effective cause of the sale. On those terms the court said the opposite: no such requirement needed implying (paragraph 37).</li>
-<li><strong>Where effective cause lives.</strong> The court treated it as a term "very readily" implied in a residential consumer case, unless your contract or the facts rule it out (paragraph 20).</li>
-<li><strong>On double fees.</strong> More than one fee can be payable, but far more rarely than the agent argued (paragraph 24).</li>
+<li><strong>What it decided.</strong> "A purchaser introduced by us" means the person the agent introduced to the purchase, not merely to the property. The homeowner won and the fee claim failed.</li>
+<li><strong>The bit that gets misquoted.</strong> Guides often say the case decided an agent must be the effective cause of the sale. On the wording of that contract the court said the opposite: no such requirement had to be implied.</li>
+<li><strong>Where effective cause lives.</strong> It is a general principle rather than something that case created, and it did not need implying there because the reading above already decided the point. The court treated it as a term readily implied in a residential consumer case, unless your contract or the facts rule it out.</li>
+<li><strong>On double fees.</strong> More than one fee can be payable, but far more rarely than the agent in that case argued.</li>
 </ul>
 
 <p>If two invoices land, do not pay either straight away. Ask both agents to set out in writing when they first introduced your buyer and what they did next. Then take advice. The homeowner won that appeal on exactly that sequence.</p>
@@ -122,7 +122,7 @@ faqs:
 
 <h2>Can you cancel within 14 days if you signed at your kitchen table?</h2>
 
-<p>Most agency contracts are signed in your own home, at the end of the valuation visit. That makes them off-premises contracts, and it gives you a right almost no consumer guide works through.</p>
+<p>Most agency contracts are signed in your own home, at the end of the valuation visit. That makes them off-premises contracts. The right that follows exists whether or not anyone told you about it.</p>
 
 <p>You have 14 days from the day you signed to cancel, with no reason needed. Contracts agreed remotely carry the same right. Cancel in writing and keep proof of when you sent it. The interesting part is what happens once you have asked the agent to start straight away, which most sellers do.</p>
 
@@ -145,20 +145,21 @@ faqs:
 
 <p>Every sales agent has to belong to an approved redress scheme. So if you are already in dispute, complain to the agent first and then take it to their scheme, which costs you nothing.</p>
 
-<p>Put off agents? Try <a href="/blog/capital-gains-tax/sell-house-without-estate-agent">selling without an estate agent</a>, <a href="/blog/capital-gains-tax/can-you-sell-a-house-without-an-estate-agent">can you sell without an estate agent</a>, <a href="/blog/capital-gains-tax/selling-a-house-at-auction-uk">selling a house at auction</a> or <a href="/blog/capital-gains-tax/modern-method-of-auction-explained">the modern method of auction</a>.</p>
 
 <h2>Which of these payments reduce your capital gains tax bill?</h2>
 
-<p>Where your sale is taxable, some selling costs come off the gain. What nobody tells you is that the list is closed. It is not a general allowance for the costs of selling, and HMRC's guidance puts it in four words: <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg15250" rel="nofollow noopener" target="_blank">"The definition is exhaustive"</a>.</p>
+<p>Where your sale is taxable, some selling costs come off the gain. The list is closed. It is not a general allowance for the costs of selling: HMRC's own guidance says so in four words, and the list has not moved.</p>
 
 <p>The fee you pay the agent who actually sold the home is on that list. A withdrawal fee, an early-termination charge or a second fee to an agent who did not sell is not. That is the cost of getting out of a contract, not a cost of making the sale.</p>
 
 <p>Say you complete through a second agent who invoices £4,000, while the first agent charges you a £600 withdrawal fee. Both figures are illustrative. The £4,000 comes off your gain, and because you cannot reclaim the VAT you deduct it including VAT. The £600 does not. Interest added to an unpaid fee never comes off either. Where you pay a disputed claim purely to get the sale over the line, there is a separate argument that the payment protected your title. Treat it as an argument to put with paperwork behind it, not a settled deduction.</p>
 
-<p>If it was your only or main home throughout, none of this is likely to bite, because the gain is usually covered. For a let property or second home, see <a href="/blog/capital-gains-tax/tax-sell-rental-property-uk">tax when you sell a rental property</a> and <a href="/blog/capital-gains-tax/capital-gains-tax-second-home-sale">capital gains tax on a second home sale</a>.</p>
+<p>If it was your only or main home throughout, none of this is likely to bite, because the gain is usually covered. For a let property or second home, see <a href="/blog/capital-gains-tax/tax-sell-rental-property-uk">tax when you sell a rental property</a>.</p>
 
 <h2>What to keep, and for how long</h2>
 
 <p>You have to evidence the deduction years after the argument with the agent has faded. Keep your signed contract and terms, every email about fees, both agents' invoices, and anything showing when a buyer first saw the house. If your sale is taxable, keep it all for at least five years after the 31 January that follows the tax year of sale, the floor for a let property. Our guide to <a href="/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long">record keeping for property sales</a> has the full list.</p>
 
-<p>Still choosing an agent? Work out what the whole sale will cost you first. Our <a href="/calculators/cost-of-selling-calculator">cost of selling calculator</a> breaks down the agent's fee, the legal costs and the rest in under a minute, and <a href="/cost-of-selling-a-property">the cost of selling a property</a> explains each line. Then negotiate your tie-in as hard as you negotiate the fee, because it is the term agents move on most readily. If your sale will be taxable, read <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">reducing capital gains tax on a property disposal</a> next.</p>
+<p>Still choosing an agent? Work out what the whole sale will cost you first. Our <a href="/calculators/cost-of-selling-calculator">cost of selling calculator</a> gives you what you owe if you leave and what you owe if you stay, in under a minute. Then negotiate your tie-in as hard as you negotiate the fee, because it is the term agents move on most readily.</p>
+
+<p>If the terms are the reason you are hesitating rather than the fee, <a href="/blog/capital-gains-tax/sell-house-without-estate-agent">selling without an estate agent</a> removes the contract altogether. <a href="/cost-of-selling-a-property">The cost of selling a property</a> sets out every line of the bill.</p>

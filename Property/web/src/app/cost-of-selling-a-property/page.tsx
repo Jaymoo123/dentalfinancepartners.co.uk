@@ -10,7 +10,7 @@ import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 const PAGE_PATH = "/cost-of-selling-a-property";
 const TITLE = "Cost of Selling a House in the UK: The Full Bill";
 const DESCRIPTION =
-  "Selling a £293,000 home costs about £5,500: agent commission, conveyancing, an EPC and removals. The full bill, plus the tax line nobody prices.";
+  "Selling a £293,000 home costs about £5,500: agent commission, conveyancing, an EPC and removals. The full bill, and what comes off a taxable gain.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -45,14 +45,18 @@ const CALC = "/calculators/cost-of-selling-calculator";
  * (fetched 21 August 2026); Which? estate agent fees and contracts (updated
  * 8 June 2026, citing Rightmove 2025 data); MoneySavingExpert selling guide
  * (updated 1 July 2026); our own EPC cost page for the EPC range.
- * Cash figures marked "illustrative" are calculated by us from the sourced rate.
+ * After-tax route set is the QA-adjudicated canonical one (qa/ADJUDICATIONS.md
+ * ruling 13). This page prices ROUTE 2 (online agent, £999 flat fee plus the
+ * £80 identity check) on its own £293,000 anchor: cash £3,081, £2,526 at 18%,
+ * £2,342 at 24%. Route 1 (no agent at all) is £3,860 on £300,000 and belongs to
+ * the child pages. Break-even price gap is unchanged by tax on either route.
  */
 const atAGlance = [
   {
     label: "Estate agent commission",
     figure: "About £4,160 on a £293,000 sale",
     condition:
-      "The HomeOwners Alliance puts the 2026 average at 1.42% including VAT, and sole agency at 1.2% to 1.8%. Which?, citing Rightmove data for 2025, puts the average nearer 1.3% including VAT. The cash figure is ours, worked from the 1.42% rate.",
+      "The HomeOwners Alliance puts the 2026 average at 1.42% including VAT, and sole agency at 1.2% to 1.8%. Which?, citing Rightmove data for 2025, puts the average nearer 1.3% including VAT, which is about £3,810 on the same sale.",
   },
   {
     label: "Conveyancing on the sale",
@@ -64,19 +68,19 @@ const atAGlance = [
     label: "Energy Performance Certificate",
     figure: "£35 to £120",
     condition:
-      "You need one before your home goes on the market. If the certificate from when you bought is still in date, you pay nothing.",
+      "The range on our own EPC cost page. You need the certificate before your home goes on the market, and if the one from when you bought is still in date you pay nothing.",
   },
   {
     label: "Removals",
     figure: "About £550",
     condition:
-      "One published estimate, from the HomeOwners Alliance cost of moving figures for 2026. Distance, volume and packing all move it, and we could not find a second source we would stand behind.",
+      "One published estimate, from the HomeOwners Alliance cost of moving figures for 2026. Distance, volume and whether you pay someone to pack all move it, so treat it as a starting point rather than a price.",
   },
   {
-    label: "Selling without an agent",
+    label: "Selling through an online agent instead",
     figure: "£129 to £1,599 as a fixed fee",
     condition:
-      "MoneySavingExpert's July 2026 spread across named online providers. Which? gives the market band as £300 to £1,500. Doing the whole thing yourself came out at £900 to £3,250 all in.",
+      "MoneySavingExpert's July 2026 spread across named online providers. Which? gives the market band as £300 to £1,500. Add the identity check that usually sits outside the headline price.",
   },
   {
     label: "Capital gains tax",
@@ -105,22 +109,22 @@ const faqs = [
   {
     question: "Can you negotiate estate agent fees?",
     answer:
-      "Yes, and you should go in with a number rather than a hope. A common target on sole agency is 1% plus VAT, which is 1.2% including it. On a £293,000 sale, moving from 1.42% to 1.2% keeps about £640 in your pocket. Get three quotes so you have something to push against, and say plainly that you have a cheaper quote elsewhere. If the agent will not move on the rate, negotiate the tie-in period instead, because a shorter lock-in is worth real money if the first agent turns out to be the wrong one.",
+      "Yes, and you should go in with a number rather than a hope. A common target on sole agency is 1% plus VAT, which is 1.2% including it. On a £293,000 sale, moving from 1.42% to 1.2% keeps about £640 in your pocket. Get three quotes so you have something to push against. Push at the valuation, before you have said yes to anyone, because that is the only moment your business is still in play.",
   },
   {
     question: "Do you save money selling without an estate agent?",
     answer:
-      "On the headline number, yes. A fixed fee of £999 against 1.42% commission on a £293,000 sale is a gap of about £3,160. Whether you end up ahead is a different question, and nobody can answer it honestly. There is no current independent dataset on whether online and do-it-yourself sales achieve a lower price. Which? notes that a flat fee gives an agent less incentive to chase the highest price. Providers say they usually hit the asking price. Both are positions rather than evidence.",
+      "On the headline number, yes. Take the online-agent route on a £293,000 sale and a £999 flat fee plus the £80 identity check leaves you about £3,081 better off than 1.42% commission. Whether you end up ahead is a different question, and nobody can answer it honestly. There is no current independent dataset on whether online and do-it-yourself sales achieve a lower price. Which? notes that a flat fee gives an agent less incentive to chase the highest price. Providers say they usually hit the asking price. Both are positions rather than evidence.",
   },
   {
     question: "Which selling costs can you deduct from capital gains tax?",
     answer:
-      "The list is a closed one, and it is shorter than most people expect. Your estate agent's commission counts, and so do your solicitor's fees on the sale, the cost of advertising to find a buyer, and an auctioneer's fees if you sell that way. As a private seller you deduct those amounts including the VAT, because you have no way of reclaiming it. What does not count is everything to do with the move itself: removals, storage, cleaning, new carpets and the cost of getting the place looking presentable. Mortgage interest and early repayment charges do not reduce the gain either.",
+      "The list is a closed one, and it is shorter than most people expect. Your estate agent's commission counts, and so do your solicitor's fees on the sale, the cost of advertising to find a buyer, an auctioneer's fees if you sell that way, a surveyor's or valuer's fee, and the cost of any valuation you need in order to work the gain out. As a private seller you deduct those amounts including the VAT, because you have no way of reclaiming it. What does not count is everything to do with the move itself: removals, storage, cleaning, new carpets and the cost of getting the place looking presentable. Mortgage interest and early repayment charges do not reduce the gain either.",
   },
   {
     question: "Do you pay capital gains tax when you sell your house?",
     answer:
-      "Not if it has been your only or main home for the whole time you owned it. That covers most sellers, and it is why most guides skip the subject. You do pay on a buy to let, a second home or a holiday place. The gain is your sale price, less what you paid, less the selling costs that qualify and less any improvements you made. If tax is due, there is a separate return and a 60 day deadline running from completion. That catches people out, because it is nothing like the ordinary tax return timetable.",
+      "Not if it has been your only or main home for the whole time you owned it. That covers most sellers. You do pay on a buy to let, a second home or a holiday place. The gain is your sale price, less what you paid, less the selling costs that qualify and less any improvements you made. If tax is due, there is a separate return and a 60 day deadline running from completion. That catches people out, because it is nothing like the ordinary tax return timetable.",
   },
   {
     question: "When do you pay the estate agent?",
@@ -197,9 +201,9 @@ export default function CostOfSellingAPropertyPage() {
             The cost of selling a house in the UK
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
-            Selling an average English home, £293,000 on the Land Registry index for June 2026, costs you about £5,500.
-            Estate agent commission is roughly £4,160 of that. The rest is your solicitor, an EPC and the removals van.
-            If the house has not been your own home throughout, there is a seventh line nobody else puts on the list.
+            Selling an average English home, £293,000 on the Land Registry index, costs about £5,500. Commission is
+            roughly £4,160 of it. If the place has not been your own home throughout, there is a seventh line, and it is
+            the biggest.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
             <Link
@@ -223,7 +227,7 @@ export default function CostOfSellingAPropertyPage() {
           <div className="mx-auto max-w-4xl">
             <Section id="at-a-glance" title="What does it cost to sell a house in 2026?">
               <p>
-                Here is the whole bill on a £293,000 sale, with the source and the vintage for every figure. Your own
+                Every line of the bill on a £293,000 sale, with the source and the vintage for each figure. Your own
                 total will land somewhere near it, and the commission line is the only one big enough to be worth an
                 argument.
               </p>
@@ -245,8 +249,8 @@ export default function CostOfSellingAPropertyPage() {
               </p>
               <p>
                 <strong>Work out your own figure.</strong> The cost of selling calculator takes your sale price and the
-                fee you have been quoted, and gives you an itemised total in under a minute. Flag the property as a let
-                or a second home and it adds an estimate of the tax as well.
+                fee you have been quoted, and gives you an itemised total, commission first, in under a minute. Flag the
+                property as a let or a second home and it adds an estimate of the tax as well.
               </p>
               <p>
                 <strong>Before you ring round.</strong> Get three quotes, ask for every fee including VAT in writing,
@@ -285,8 +289,8 @@ export default function CostOfSellingAPropertyPage() {
               <p>
                 Sole agency, where one agent markets your home, typically runs 1.2% to 1.8% including VAT. Multi-agency,
                 where several compete, runs 3% to 3.6%, because only the winner gets paid and the price reflects that.
-                On your £293,000 sale the difference between the two is roughly £5,000, and multi-agency only earns its
-                keep if it genuinely finds you a better buyer.
+                On your £293,000 sale the difference between the two is a flat £5,270 at every point of the range, and
+                multi-agency only earns its keep if it genuinely finds you a better buyer.
               </p>
               <p>
                 Always ask whether the quote includes VAT, because the two ways of writing it are not the same number. A
@@ -321,15 +325,13 @@ export default function CostOfSellingAPropertyPage() {
                 your EPC put together.
               </p>
               <p>
-                Get three quotes before you start, and mix local independents with the bigger chains. Say plainly that
-                you have a cheaper quote elsewhere. Agents expect it and they do not want to lose the instruction. Ask
-                about a sliding scale too. A lower base rate with a higher percentage above an agreed price gives your
-                agent a reason to chase the top of your range rather than the quickest offer.
+                Push at the valuation, before you have said yes to anyone. That is the only moment when several agents
+                are competing for the same instruction, and once the board is up your leverage is gone. Say plainly that
+                you hold a cheaper quote elsewhere. Agents expect it and they do not want to lose the business.
               </p>
               <p>
-                Time your ask. The moment to push on the fee is at the valuation, before you have said yes to anyone,
-                because that is the only point at which you still have three agents competing for the same instruction.
-                Once the board is up, your leverage is gone.
+                Ask about a sliding scale too. A lower base rate with a higher percentage above an agreed price gives
+                your agent a reason to chase the top of your range rather than the quickest offer.
               </p>
               <p>
                 If the rate will not move, negotiate the contract instead. The tie-in period and the notice period
@@ -357,18 +359,19 @@ export default function CostOfSellingAPropertyPage() {
                 transfer deed for a fee, which is why almost everybody still uses a conveyancer for that part.
               </p>
               <p>
-                On the headline the saving is real. MoneySavingExpert's July 2026 round-up puts named online providers
+                On the headline the saving is real. MoneySavingExpert&apos;s July 2026 round-up puts named online providers
                 between <strong>£129 and £1,599</strong> as a fixed fee, and Which? gives the wider market band as £300
-                to £1,500. Doing the whole job yourself, listing intermediary included, came out at £900 to £3,250 all
-                in. Against £4,160 of commission on your £293,000 sale, a £999 fixed fee leaves you roughly £3,160
-                better off before anything else happens.
+                to £1,500. That is the online-agent route, the one that gets your home on to the portals. Against
+                £4,160 of commission on your £293,000 sale, a £999 fixed fee plus the £80 identity check leaves you
+                about <strong>£3,081</strong> better off. Skip the agent altogether and a private listing package is £0
+                to £400, which puts more cash on the table and all of the work on you.
               </p>
               <p>
                 Then read the small print, because that is where the fixed-fee models differ from each other. Some want
                 the money up front and keep it whether or not you sell. Some take a deposit and the balance on
                 completion. Some defer the whole fee, and a deferred fee that falls due on a date rather than on
-                completion is a different animal from one that does not. Accompanied viewings usually cost extra, around
-                £300, and the default is that you do them yourself.
+                completion is a different animal from one that does not. Which? puts accompanied viewings at around £300
+                extra, and notes that the default on most of these services is that you do the viewings yourself.
               </p>
               <p>
                 Nobody can tell you honestly whether you end up ahead, and you should be suspicious of anyone who says
@@ -412,8 +415,8 @@ export default function CostOfSellingAPropertyPage() {
               </p>
               <p>
                 <strong>What is not on this list.</strong> You do not pay stamp duty to sell, and you do not pay the
-                Land Registry fee on the property you are leaving. Both belong to the buyer. If a guide puts them on
-                your side of the ledger, it has muddled the two halves of a move.
+                Land Registry fee on the property you are leaving. Both belong to the buyer, so keep them out of your
+                selling budget.
               </p>
             </Section>
 
@@ -471,10 +474,17 @@ export default function CostOfSellingAPropertyPage() {
                 probate sale collapses halfway through.
               </p>
               <p>
+                The bill itself does not move. On a £293,000 probate sale you are still looking at about £4,160 of
+                commission, £700 of conveyancing and an EPC, and the estate pays them out of the proceeds rather than
+                anyone paying them personally. What changes is who is taxed on any rise in value between the date of
+                death and the day the sale completes.
+              </p>
+              <p>
                 The house does not belong to whoever inherits it until it is transferred to them. It sits with the
-                personal representatives, and if there is more than one of them, they all have to agree to the sale.
-                Practically, you also want the grant in hand before you commit to a buyer, because the timetable is not
-                yours to control until you have it.
+                personal representatives, and if there is more than one of them, they all have to agree to the sale, or
+                a court has to order it. The exception is where probate was granted to only some of the named executors,
+                in which case the ones who proved the will can sell on their own. Practically, you also want the grant
+                in hand before you commit to a buyer, because the timetable is not yours to control until you have it.
               </p>
               <p>
                 There is a decision to take before you list, and it is worth taking deliberately. Selling as the
@@ -493,38 +503,32 @@ export default function CostOfSellingAPropertyPage() {
                   href: `${CGT}/capital-gains-tax-property-complete-guide-uk`,
                   label: "Capital gains tax on property: the full guide",
                 },
-                {
-                  href: `${CGT}/cgt-payment-deadlines-property-sales-2026`,
-                  label: "The 60 day deadline, and how to meet it",
-                },
-                { href: "/calculators/capital-gains-tax-calculator", label: "Capital gains tax calculator" },
               ]}
             >
               <p>
                 Not if the place has been your only or main home for the whole time you owned it. That covers most
-                sellers, which is why almost nobody prices this line. You do pay on a buy to let, a second home or a
-                holiday place. You also pay, on part of the gain, if you lived in the property for some of the time you
-                owned it and let it out for the rest.
+                sellers. You do pay on a buy to let, a second home or a holiday place. You also pay, on part of the gain,
+                if you lived in the property for some of the time you owned it and let it out for the rest.
               </p>
               <p>
-                Here is the part that makes the rest of this page worth reading. Your selling costs come off the gain,
-                so the agent you have been arguing with is partly paid for by the tax you no longer owe. Sell a former
-                rental for £300,000 with an agent charging 1.42% including VAT and the commission is £4,260. Add £700 of
-                conveyancing and you have £4,960 coming off the gain, which is worth just under £1,200 at the higher
-                residential rate. Because you cannot reclaim the VAT, you deduct the gross fee, not the amount before
-                VAT.
+                Your selling costs come off the gain, so the agent you have been arguing with is partly paid for by the
+                tax you no longer owe. Sell a former rental for £300,000, a round number rather than the £293,000
+                average used above, and commission at 1.42% including VAT is £4,260. Add £700 of conveyancing and you
+                have £4,960 coming off the gain, which is worth just under £1,200 at the higher residential rate.
+                Because you cannot reclaim the VAT, you deduct the gross fee, not the amount before VAT.
               </p>
               <p>
                 The list of costs that qualify is a closed one, and it is shorter than most people assume. In go your
-                agent&apos;s commission, your solicitor&apos;s fees on the sale, the cost of advertising to find a buyer
-                and an auctioneer&apos;s fees if you sell that way. Out come removals, storage, cleaning, new carpets
-                and the money you spent making the place look presentable. Mortgage interest and early repayment charges
-                do not reduce the gain either. If a page tells you that removal costs are deductible, it is wrong.
+                agent&apos;s commission, your solicitor&apos;s fees on the sale, the cost of advertising to find a buyer,
+                an auctioneer&apos;s fees if you sell that way, a surveyor&apos;s or valuer&apos;s fee, and the cost of
+                any valuation you need in order to work the gain out. Out comes the £550 removals line you costed at the
+                top of this page, along with storage, cleaning and anything you spent making the place look presentable.
+                Mortgage interest and early repayment charges do not reduce the gain either.
               </p>
               <p>
                 One date worth knowing before you exchange. If there is tax to pay, it has its own return and a 60 day
-                deadline that runs from completion, which is nothing like the ordinary tax return timetable. The full
-                guide takes you through the rates, the allowance and the mechanics.
+                deadline that runs from completion, not from the day you shook hands. The full guide takes you through
+                the rates, the allowance and the mechanics.
               </p>
             </Section>
 
@@ -533,13 +537,16 @@ export default function CostOfSellingAPropertyPage() {
               title="How do you work out your own total?"
               links={[
                 { href: CALC, label: "Cost of selling calculator" },
-                { href: `${CGT}/capital-gains-tax-second-home-sale`, label: "Selling a second home: the whole sum" },
+                {
+                  href: `${CGT}/cgt-payment-deadlines-property-sales-2026`,
+                  label: "The 60 day deadline, and how to meet it",
+                },
                 { href: "/services/property-tax-advice", label: "Property tax advice" },
               ]}
             >
               <p>
-                Put your sale price and your quoted fee into the cost of selling calculator. It returns an itemised
-                total in under a minute: commission, conveyancing, EPC and removals. Tell it the property is a let or a
+                Put your sale price and your quoted fee into the cost of selling calculator. It comes back in under a
+                minute with commission, conveyancing, EPC and removals in one column. Tell it the property is a let or a
                 second home and it adds the tax on top.
               </p>
               <p>
@@ -549,9 +556,11 @@ export default function CostOfSellingAPropertyPage() {
                 tax the year you sell.
               </p>
               <p>
-                If your sale is anything other than a straightforward main home, the tax line is where the money is, and
-                it rewards a decision taken before you exchange rather than after. Timing, ownership and which costs you
-                have receipts for all change the answer.
+                One decision is worth taking before you exchange rather than after: the date you exchange, not the date
+                you complete, is what fixes which tax year the gain falls into. A sale that exchanges on 1 April and
+                completes on 20 May is taxed in the year that has just ended, while the reporting clock runs from the
+                May date. If your sale is anything other than a straightforward main home, that gap is where the money
+                is.
               </p>
             </Section>
 
@@ -572,10 +581,11 @@ export default function CostOfSellingAPropertyPage() {
 
       <CTASection
         title="Selling something that is not your main home?"
-        description="Book a free consultation. Bring your sale price and your completion statement, and you will get the gain, the costs that come off it and the date the tax is due."
-        primaryLabel="Book free consultation"
-        secondaryHref={CALC}
-        secondaryLabel="Try the cost of selling calculator"
+        description="Put your sale price and your quoted fee into the cost of selling calculator and you get an itemised total, commission first, in under a minute, with the tax added when the property is a let or a second home."
+        primaryHref={CALC}
+        primaryLabel="Try the cost of selling calculator"
+        secondaryHref="/contact"
+        secondaryLabel="Book free consultation"
       />
     </>
   );

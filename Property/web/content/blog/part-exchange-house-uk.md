@@ -10,11 +10,11 @@ reviewerCredentials: "Checked against the part exchange terms Barratt and Taylor
 reviewedAt: "2026-08-21"
 category: "Capital Gains Tax"
 metaTitle: "Part Exchange House UK: What It Really Costs You"
-metaDescription: "Part exchange gets you 80% to 90% of market value. See what that costs on a £300,000 home, who qualifies, and how to push the builder's number up."
+metaDescription: "Zoopla puts part exchange at 80% to 90% of market value. See what that costs on a £300,000 home, who qualifies, and how to push the builder's number up."
 altText: "Homeowner comparing a house builder part exchange offer against the cost of an open market sale"
 image: ""
 h1: "Part exchange on a house in the UK: what it really costs you"
-summary: "A house builder part exchange buys you a guaranteed sale and a fixed moving date, and you pay for it in the price. Zoopla puts the builder's figure at 80% to 90% of open market value, which is £30,000 to £60,000 on a £300,000 home, against an agent fee of about £4,260. This page shows how the valuation is built, what Barratt and Taylor Wimpey publish as their conditions, what actually moves the number, how assisted move and chain break differ, why the builder pays no stamp duty on your old house, and what part exchange does to your capital gains tax position when private residence relief does not cover the whole gain."
+summary: "A builder's part exchange offer is 80% to 90% of open market value: £30,000 to £60,000 gone on a £300,000 home, against an agent fee around £4,260. You are buying a guaranteed date and paying for it in the price."
 schema: ""
 faqs:
   - question: "How much below market value is a part exchange offer?"
@@ -40,19 +40,19 @@ faqs:
   - question: "What happens to my existing mortgage in a part exchange?"
     answer: "It is redeemed out of the proceeds on completion, in the same way as on an ordinary sale, and any early repayment charge is still payable. Your new mortgage is arranged on the new home in the normal way, and the part exchange figure is treated as your deposit contribution. Two points to watch: an early repayment charge never comes off a capital gain, and neither does mortgage interest, so a large exit fee is a straight cost. Ask your lender for a redemption figure before you accept the offer, not after."
   - question: "Who do I complain to if the new build is defective?"
-    answer: "There is no statutory ombudsman for new build buyers. Parliament passed a law in 2022 that would have created one, but it has never been brought into force. The live scheme is voluntary: the New Homes Quality Board runs the New Homes Quality Code, on version 2 of March 2026 for homes reserved from 2 March 2026 and version 1 of October 2023 for earlier reservations, with redress through the New Homes Ombudsman Service for buyers of builders that have registered. A second voluntary code, the Consumer Code for Home Builders, still runs alongside it. Ask your builder which one they signed, before you reserve."
+    answer: "There is no statutory ombudsman for new build buyers. Parliament passed a law in 2022 that would have created one, but it has never been brought into force. The live scheme is voluntary: the New Homes Quality Board runs the New Homes Quality Code, on version 2 of March 2026 for homes reserved from 2 March 2026 and version 1 of October 2023 for earlier reservations, with redress through the New Homes Ombudsman Service for buyers of builders that have registered. A second voluntary code, the Consumer Code for Home Builders, still runs alongside it, and the major warranty providers list it as the code their registered builders follow. Ask your builder which one they signed, before you reserve."
 ---
 
 <p>Part exchange gets you out of your old house fast, and it costs you a lot. Zoopla's 2024 guide puts the builder's price at 80% to 90% of what your home would fetch on the open market. On a £300,000 house that is £30,000 to £60,000 gone. You save the agent fee, which is about £4,260 on that price, and you skip two or three months of bills. So the speed costs you seven to fourteen times the fee you avoid.</p>
 
-<p>For most sellers that is a bad trade. It is a good one in three cases: your buyer has just pulled out, you cannot carry two homes, or the plot you want will go to someone else if you wait. This page shows you how the builder gets to its number, what you can move, and what the whole thing does to your tax bill.</p>
+<p>For most sellers that is a bad trade. It is a good one in three cases: your buyer has just pulled out, you cannot carry two homes, or the plot you want will go to someone else if you wait.</p>
 
-<p>One thing no brochure tells you. The builder is not doing you a favour. There is a stamp duty relief written for house builders that takes your old home out of tax on their side, and it is the reason the offer exists at all. That is the strongest card you hold when you talk about price.</p>
+<p>The builder is not doing you a favour. There is a stamp duty relief written for house builders that takes your old home out of tax on their side, and it is the reason the offer exists at all. That is the strongest card you hold when you talk about price.</p>
 
-<p><strong>The short version</strong></p>
+<p><strong>What the deal actually is</strong></p>
 
 <ul>
-<li><strong>What you get:</strong> 80% to 90% of open market value, per Zoopla's guide of 16 September 2024.</li>
+<li><strong>What you get:</strong> 80% to 90% of open market value, per Zoopla's 2024 guide.</li>
 <li><strong>What you save:</strong> the agent fee, the marketing, and the risk of a chain falling over.</li>
 <li><strong>Who qualifies:</strong> your home must be worth 70% or less of the new one at Taylor Wimpey, or 80% or less and no more than £500,000 at Barratt.</li>
 <li><strong>What sets the price:</strong> two valuations and an assumed sale in 8 to 10 weeks, on Barratt's published terms.</li>
@@ -74,11 +74,11 @@ faqs:
 
 <p>Read those two lines together and the discount stops being a mystery. You are not being offered market value. You are being offered the price a surveyor thinks your house would fetch if it had to sell inside ten weeks. That is a lower number, and it is a real one.</p>
 
-<p>No builder publishes the size of its own discount. The one dated figure in the market is <a href="https://www.zoopla.co.uk/discover/selling/part-exchange-your-home-a-full-guide-to-exchanging-homes/" rel="nofollow noopener" target="_blank">Zoopla's guide of 16 September 2024</a>, which says a developer might get your old home for 80% to 90% of the price it might have achieved on the open market. Treat that as press commentary, not a builder's promise. Your own gap turns on your house, your area, and how fast that surveyor thinks it would move.</p>
+<p>No builder publishes the size of its own discount. The one published figure comes from <a href="https://www.zoopla.co.uk/discover/selling/part-exchange-your-home-a-full-guide-to-exchanging-homes/" rel="nofollow noopener" target="_blank">Zoopla's guide of 16 September 2024</a>, which says a developer might get your old home for 80% to 90% of the price it might have achieved on the open market. Treat that as press commentary, not a builder's promise. Your own gap turns on your house, your area, and how fast that surveyor thinks it would move.</p>
 
 <h2>Is part exchange worth it? The numbers on a £300,000 home</h2>
 
-<p>Here is the comparison the builders' pages do not print. The property value is a stated example and the figures are illustrative.</p>
+<p>Here is the comparison in full. The property value is a stated example and the figures are illustrative.</p>
 
 <table>
 <tr><th>Item</th><th>Part exchange</th><th>Open market sale</th></tr>
@@ -151,22 +151,22 @@ faqs:
 
 <p>Usually not. Part exchange is a sale for tax, and the fact that the money arrives as credit against a new house changes nothing. If the old home has been your only or main home for the whole time you owned it, private residence relief covers the gain and there is nothing to pay and nothing to report.</p>
 
-<p>Three cases break that. You let the house out for part of the time you owned it. It was a second home or a holiday place. Or the garden and grounds run past the half hectare line, so the extra land sits outside the relief. In those three the gain is taxable, and part exchange makes it worse for one reason: the costs of selling come off the gain, and this route strips most of them out. No agent fee to deduct, because there was no agent. No marketing spend, because there was no marketing. Removal costs never came off the gain in the first place, and nor does mortgage interest.</p>
+<p>Three cases break that. You let the house out for part of the time you owned it. It was a second home or a holiday place. Or the garden and grounds are bigger than the relief reaches. The starting point there is half a hectare, including the ground the house stands on. A larger area counts only where it is genuinely needed to enjoy the house as a home, judged against the size and character of the house itself. Anything past that sits outside the relief. This is not word for word the same test as the builder's stamp duty one. That test has the same half hectare starting point, but it does not tie the larger area to enjoying the place as a residence. A big garden can pass one and fail the other. In all three cases the gain is taxable, and part exchange makes it worse for one reason: the costs of selling come off the gain, and this route strips most of them out. No agent fee to deduct, because there was no agent. No marketing spend, because there was no marketing. Removal costs never came off the gain in the first place, and nor does mortgage interest.</p>
 
 <p>The discount does at least count for something. The builder is not connected to you, so the tax is worked out on the price you actually agreed, low as it is. Take £255,000 for a let property worth £300,000 and the £45,000 you gave up cuts the taxable gain by £45,000, worth £10,800 back at the 24% rate. You still gave up £45,000 to get £10,800 back, and if private residence relief covers you, you get none of it back at all.</p>
 
-<p>That is as far as this page goes on tax. For the mechanics, read <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property</a>. For how letting affects the relief, read <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">private residence relief</a>. For the reporting clock, read <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">CGT payment deadlines</a>. For a figure now, the <a href="/calculators/capital-gains-tax-calculator">capital gains tax calculator</a> takes your own numbers.</p>
+<p>That is as far as this page goes on tax, because the mechanics are a subject of their own. If your old home was let or was a second property, our complete guide to <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property</a> has the rates, the reliefs and the deadline.</p>
 
 <h2>What happens if the new build is not what was promised?</h2>
 
 <p>Less than you would expect. Parliament passed a law in 2022 that would have set up a statutory ombudsman for new build buyers. It has never been brought into force and no date has been set. So there is no statutory right of redress for a bad new build.</p>
 
-<p>What exists instead is voluntary. The New Homes Quality Board runs the New Homes Quality Code, now on version 2 of March 2026 for homes reserved from 2 March 2026, with version 1 of October 2023 covering earlier reservations. Buyers of builders that have registered can take a complaint to the New Homes Ombudsman Service. Builders that have not registered sit outside it, and registering is a choice they make rather than a duty they owe.</p>
+<p>What exists instead is voluntary. The <a href="https://www.nhqb.org.uk/" rel="nofollow noopener" target="_blank">New Homes Quality Board</a> runs the New Homes Quality Code, now on version 2 of March 2026 for homes reserved from 2 March 2026, with version 1 of October 2023 covering earlier reservations. Buyers of builders that have registered can take a complaint to the New Homes Ombudsman Service. Builders that have not registered sit outside it, and registering is a choice they make rather than a duty they owe.</p>
 
-<p>A second voluntary code, the Consumer Code for Home Builders, still runs alongside it. Ask your builder which one they have signed and when, because the answer decides where a complaint goes. Ask before you reserve, not after.</p>
+<p>A second voluntary code, the Consumer Code for Home Builders, still runs alongside it, and the major warranty providers list it as the code their registered builders follow. Ask your builder which one they have signed and when, because the answer decides where a complaint goes. Ask before you reserve, not after.</p>
 
 <p>None of this changes because you part exchanged. Your old home is gone either way, and that is the real risk of the route. You have nothing to go back to if the new one disappoints.</p>
 
 <h2>What to do next</h2>
 
-<p>Before you answer the builder, price the other route properly. Our <a href="/calculators/cost-of-selling-calculator">cost of selling calculator</a> gives you the full cost of an open market sale on your own figures in under a minute: agent fee, legal work, and what comes off your gain. Put the builder's offer beside that number. If the gap is smaller than you feared, take the certainty and go. If it is not, go back and ask for assisted move instead.</p>
+<p>You do not have to answer the builder today. Put your own figures into our <a href="/calculators/cost-of-selling-calculator">cost of selling calculator</a>, which prices an open market sale in under a minute and shows you what one would have left you. If the gap to the builder's offer is smaller than you feared, take the certainty. If it is not, go back and ask for assisted move instead.</p>

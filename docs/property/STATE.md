@@ -103,6 +103,45 @@ produced three property-only isolated experiments, built through the §9 machine
 **NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
 track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
 
+## 0.21 Wave 12 cost-of-selling (Phase E, Track B) — EXECUTED 2026-08-21 NIGHT, deploy owner-gated
+
+Owner-approved Phase E run via the wave conductor (single lane per the 2026-07-08
+ruling; wt-tab steps substituted with conductor subagents, Wave 11 precedent).
+Composition = PROPERTY_PAGE_PLAN Cluster A (13 spokes + pillar + calculator),
+cannib check GREEN 13/0/0, shortlist reconciled (no overlap; 50 picks = future
+waves). Stage 1: 13 seeds, every citation WebFetch-verified; found CPUTR 2008
+REVOKED by DMCCA s.251(1) (+ the no-known-outstanding-effects trap), sales-agent
+regulation unlocked anywhere (§26.14 created), F-151 back-patch shipped
+(sdlt-refund-scams, window closed 08-20). Stage 1b: 5 mini-locks (§5.B, §1.Q,
+§26.14, §26.15, §39.A). Stage 2: full briefs, all market figures named+dated,
+competitor URLs fetch-verified; found Sch 6A para-numbering error in our own
+day-old lock (fixed), SP2/04 scale located, PR AEA pinned s.1K(7), Foxtons
+SERP-wide inversion documented, CG14300 VAT rule, Land Registry SI 2024/931
+Scale 1 structure. Wave language spec measured (consumer register: you ~54/1k
+baseline, sentence length IS a lever, Flesch floor 62; CGT hook UNOCCUPIED:
+9 statute refs + 0 computed tax figures across 35,385 winner words). RUN: 15
+Opus agents (13 writers + pillar + calculator); calculator shares computeCgt
+with the CGT tool (cannot disagree; CGT calc untouched), 47 goldens. QA: 4
+factual + 3 editorial, cross-writer batching; every after-tax figure re-derived
+to the penny (the A3/A4 "conflict" = two routes both correct; canonical
+two-route set ruled); 9 factual blockers all fixed (worst: A3's ID1 verifier
+list taught readers an accountant can sign); editorial all-15 must_fix was
+phrasing convergence, fixed by drop-ins (boast class purged 27+, standfirsts
+to <=40 words, QA-trail language out). Verification read on the 2 restructured
+pages (A9 clean; A3 one residual total fixed). GATES ALL GREEN: validator 0
+errors, lint 783, links 783/783, word gate PASS, voice 13/13, tsc, vitest
+1,484/1,484, prod build exit 0 (one red build first: unescaped apostrophe in
+pillar JSX, 1-char fix), dependency closure OK 19, qa_verdict `wave12` 13/13
+all_clear recorded LAST, predeploy `--qa-batch wave12` PASS. Flag register:
+F-150..F-189 reconciled in wave12_site_wide_flags.md (open at close: F-176
+post-window s.3(7) back-patches, F-185/F-187 future locks, F-188 merge
+back-link, F-152/F-165/F-179 authority notes). AT DEPLOY: register 13 blog
+slugs in monitored_pages + pillar/calculator via --page-urls
+(cost-of-selling-a-property=/cost-of-selling-a-property,
+cost-of-selling-calculator=/calculators/cost-of-selling-calculator), IndexNow
+exact URLs. READS: 14d Bing ~09-04-equivalent from deploy date, 90d Google;
+addressable ~45,850/mo family.
+
 ## 0.20 agents1: /for-letting-agents resource surface (Track A) — EXECUTED 2026-08-21 EVE, deploy owner-gated
 
 Owner-ruled track (EXPANSION_PROPOSAL_2026-08-21 decision 3: pure resource surface,

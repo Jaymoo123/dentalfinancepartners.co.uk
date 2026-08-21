@@ -1722,7 +1722,11 @@ describe("GOLDEN: cost-of-selling-calculator (defaults, main home)", () => {
   it("note names every default's source and states the England scope", () => {
     expect(result.note).toContain("HomeOwners Alliance");
     expect(result.note).toContain("£35 to £120");
-    expect(result.note).toContain("one published estimate");
+    // ADV-C2 fix: the removals default is attributed, not "one published
+    // estimate". HOA publishes £334 one-bedroom local / £731 three-bedroom.
+    expect(result.note).toContain("£334 for a one-bedroom local move");
+    expect(result.note).toContain("£731 for a three-bedroom one");
+    expect(result.note).not.toContain("one published estimate");
     expect(result.note).toContain("figures are for England");
   });
 });
@@ -1789,6 +1793,19 @@ describe("GOLDEN: cost-of-selling-calculator (let property, the split path)", ()
     expect(result.note).toContain("Removals are kept out of the deductible total");
     expect(result.note).toContain("capital gains tax calculator");
     expect(result.note).toContain("£4,941");
+  });
+
+  // §5.B wave-close position (2026-08-21): the seller's EPC may sit in the
+  // deductible bucket ONLY on the s.38(2)(b) marketing limb and ALWAYS with a
+  // one-clause hedge, never as a bare assertion. A bare EPC claim = STOP.
+  it("note carries the §5.B EPC hedge: marketing-limb basis plus the caveat", () => {
+    expect(result.note).toContain("as part of the cost of marketing the property");
+    expect(result.note).toContain("the official list does not name it");
+  });
+
+  // ADV-C5: the tool hardcodes aeaUsed:false, so it must say so.
+  it("note discloses that the £3,000 allowance is assumed unused", () => {
+    expect(result.note).toContain("not already used your £3,000 allowance");
   });
 });
 
@@ -2046,5 +2063,33 @@ describe("cost-of-selling-calculator: house-bar checks", () => {
   it("no named worked-example personas (wave rule)", () => {
     const examples = JSON.stringify(costOfSellingCalculator.workedExamples);
     expect(examples).not.toMatch(/\b(Gwen|Sarah|John|Emma|David|Priya|Tom)\b/);
+  });
+
+  // BLK-C1 / CALC-1: the printed worked example must add up as printed. The
+  // compute rounds 4,160.60 to £4,161, so the example shows the pence and
+  // names the rounding rather than printing a sum that fails on inspection.
+  it("worked example 1 adds up as printed, pence and all", () => {
+    const steps = (costOfSellingCalculator.workedExamples?.[0] as { steps: string[] }).steps;
+    expect(steps[0]).toContain("£4,160.60");
+    expect(steps[3]).toContain("£4,160.60 + £700 + £80 = £4,940.60");
+    expect(steps[3]).toContain("£4,941");
+    expect(steps[5]).toContain("£4,940.60 + £550 = £5,490.60");
+    // 4,160.60 + 700 + 80 = 4,940.60, and + 550 = 5,490.60. Both hold.
+    expect(4_160.6 + 700 + 80).toBeCloseTo(4_940.6, 2);
+    expect(4_940.6 + 550).toBeCloseTo(5_490.6, 2);
+  });
+
+  it("no prose figure sits a pound below the tool's own agent-fee output", () => {
+    // ADV-C1: the explainer and two FAQs said "about £4,160" where the results
+    // table renders £4,161.
+    expect(prose).not.toContain("£4,160,");
+    expect(prose).not.toContain("£4,160.");
+    expect(prose).toContain("about £4,161");
+  });
+
+  // Batch ruling 1: the boast class is deleted wave-wide.
+  it("carries no self-referential boast line", () => {
+    const copy = prose + " " + notes + " " + costOfSellingCalculator.oneLiner;
+    expect(copy).not.toMatch(/nobody else|no other (guide|page|tool)|almost no|leave[s]? out/i);
   });
 });

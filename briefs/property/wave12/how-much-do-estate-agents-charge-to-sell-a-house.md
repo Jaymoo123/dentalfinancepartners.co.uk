@@ -180,3 +180,38 @@ Seed read against §5, §5.B and §26.14 on 2026-08-21. Aligned: s.18 and s.18(5
 **Beat-them plan landing.** All five elements landed. The tax layer is priced in pounds (£4,560 allowable of £5,460 paid, £1,094 of tax saved) where all four live competitors publish a percentage and net nothing off. CG14300's gross-versus-net answer is quoted and converted to £170 of tax. The completion-statement sort runs as its own three-column table with the removals line and the no-disposal withdrawal-fee point, which nothing on the SERP does. The prescribed statutory wording is printed where Which? only advises against signing. The remedy for a fee-disclosure breach appears in plain words, and it is still net-new for the corpus.
 
 No blockers, no questions raised.
+
+### 2026-08-21 FIX ROUND (QA adjudications applied)
+
+Applied per-surface items from `qa/FACTUAL_fees-calc.md` (A1 all_clear, 4 advisories) and
+`qa/EDITORIAL_batch1.md` (2 blockers, 3 advisories, plus BATCH-1/4/5/8/10 where A1 is named),
+plus batch-wide rulings 1, 2, 3, 4, 5, 6, 7 and 8 from `qa/ADJUDICATIONS.md`. Rulings 9 to 13 do
+not engage this surface (no QA-named compound H2, no EPC figure, EPC not in the deductible bucket,
+no portal-paradox claim, no route comparison).
+
+**Blockers**
+- **ADV-A1-1 (adjudicated to blocker).** CG15250 quote completed: `"The definition is exhaustive. No other expenditure is allowable unless specifically provided for by the capital gains legislation."` Added the drop-in clause `Money you spent genuinely improving the property is dealt with separately and is not caught by this list.` FAQ 11 dropped the quotation framing to the paraphrase.
+- **EDITORIAL A1-1.** FAQ 6 question was byte-identical to A8's; rewritten to the fee framing this page owns, and its answer re-led on cost rather than definition. A8 keeps the definitional string.
+- **EDITORIAL A1-2 + ruling 1.** All boasts purged: H1 and `title` (`the Cost Nobody Compares` to `What Comes Off Your Tax`), the `no fee comparison runs` contents sentence (deleted outright), and `an answer no fee comparison gives you` to `an answer of its own`. `summary` also carried one and was rewritten. Zero remaining, measured.
+
+**Advisories and rulings**
+- **ADV-A1-2.** `roughly £660 below the market central figure` to `£300 to £660 below the 1.3% to 1.42% central band, and £660 below the 1.42% average`.
+- **ADV-A1-3 / XS-1, settled by ruling 6.** The 60-day H2 is gone. Exchange fixes the tax year and 60 days from completion now run as ONE line at the end of the CGT block. H2 9 became the action close (`What should you do before you book a valuation?`). The CGT block's five-link close trimmed to the report's drop-in (CGT guide + CGT calculator). Cost: the `cgt-payment-deadlines-property-sales-2026`, `capital-gains-tax-second-home-sale`, `tax-sell-rental-property-uk` and `principal-private-residence-relief-landlords` links, all brief cross-link targets, are off the page. Ruling wins over the brief.
+- **ADV-A1-4.** Removals £900 to £550, aligned with the calculator and pillar and anchored to ADV-C2's HOA figures (£334 one-bedroom local, £731 three-bedroom). Table total re-derived £5,460 to **£5,110**; allowable £4,560, relief £1,094 and the £170 VAT differential all unchanged.
+- **ADV-A1-5 / BATCH-1.** Table lead-in `Here is the sort on...` to `The sort, on a £300,000 sale of a former rental...` (allocated frame). The March/May date pair is gone from the body with the H2; FAQ 14 varied to `2 April with a June completion`, which still sits in the earlier tax year.
+- **Ruling 2.** `summary` cut from 110 words to **38**: one answer sentence, one substance sentence, no catalogue. Body paragraph 2 (the promise list, EDITORIAL A1-3 + BATCH-3) replaced with the sharpest single claim.
+- **Ruling 3.** QA-trail language stripped: `illustrative, calculated from those published rates` out of the at-a-glance box, the table intro and FAQ 3; the completion-statement table header `Illustrative cost` to `Typical cost` (rule 8's own column name), caveat carried once in the table note.
+- **Ruling 5 / BATCH-4 + BATCH-5.** Calculator CTA moved off the converged `Before you [verb]` opener; keeps `in under a minute` and takes A1's allocated output (`your fees, and the share of them that comes off a taxable gain`). Three-quotes script kept (A1 is the fee head term) with the W9 verbatim qualifier `from a mix of local independents and larger chains` deleted. `Aim for 1.2% including VAT` kept, A1 being the keeper page.
+- **Ruling 7 / BATCH-10.** The linked HMRC internal-manual quote is now unlinked and attributed in plain words (external links 4 to 3). The redress paragraph cut to one sentence; the £1,000 penalty and the full explanation belong to A2 under BATCH-10.
+- **BATCH-8.** At-a-glance terminal label `Tax:` to `Comes off the gain:`.
+- **Ruling 8.** `reviewerCredentials` reshaped and de-jargoned (`named, dated` was internal vocabulary).
+
+**Verification re-run after the fixes:** prose words **1,882** (2,093 incl. table cells) [1,200-2,000] ·
+mean sentence **15.7** [15-18] · Flesch **67.3** [62+] · you/1k **49.4** [45-60] · Q-H2 **8 of 9** [40%+] ·
+FAQs **14** [10-14] · metaTitle **48** / metaDescription **147** · summary **38 words** [<=40] ·
+em-dash **0**, en-dash **0** · hard statute in prose **0** · boast and QA-trail strings **0** ·
+all 6 blog links resolve on disk, 3 non-blog targets exist (`/cost-of-selling-a-property`,
+`/calculators/cost-of-selling-calculator`, `/calculators/capital-gains-tax-calculator`) ·
+3 external links all carry `rel="nofollow noopener" target="_blank"` · no HMRC manual link remains.
+Figures re-derived: 4,260 + 300 + 550 = 5,110; allowable 4,560; 4,560 x 0.24 = 1,094.40; 4,260 - 3,550 = 710,
+x 0.24 = 170.40; 3,600 against 3,900 to 4,260 = 300 to 660. Ruling 13's route set does not engage this page.

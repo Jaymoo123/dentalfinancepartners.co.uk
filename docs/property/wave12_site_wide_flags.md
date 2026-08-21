@@ -562,3 +562,37 @@ A £5,000 lower sale price on a chargeable disposal reduces the gain by £5,000,
 **Requested action:** add a §26.16 letting-agent fee mini-lock carrying: the CRA 2015 s.83 three-channel publication duty (premises, own website, third-party site or link), the "inclusive of any applicable tax" and per-dwelling-or-per-tenant limbs, **s.85(1) putting LANDLORD-side fees inside the duty**, the s.87(7) £5,000 penalty; and on the tenant side the s.1/s.2 prohibition, Sch 1 permitted payments with the **statutory** deposit caps (five weeks under £50,000, six weeks at £50,000 or more, **no upper bound**, never gov.uk's £100,000 phrasing), one week's holding deposit, the 1 May 2026 para 1(1A)/(1B) pre-signature rent ban with one month maximum in advance, the two surviving default fees, and the s.8 £5,000/£30,000 penalties. Do-not-write list should carry: "letting agents and estate agents share one fee-disclosure regime" and "six weeks' deposit applies between £50,000 and £100,000".
 
 ---
+
+---
+
+## Conductor reconciliation note 2 (2026-08-21, post-RUN)
+
+Duplicate F-178 resolved: the INTERNAL_LINK entry (bridging-finance page should
+link A10/A11, raised by the A11 writer) is renumbered **F-188**; the BRIEF_DRIFT
+entry (the 1.14 percent net-of-relief line applying relief to the ex-VAT fee,
+raised by the A7 writer) is renumbered **F-189**. Writers' in-page references to
+"F-178" in work logs map accordingly by content. Live flag register after RUN:
+F-179 (SDLTM03720 authority note), F-180/F-184 (brief table-width vs spec rule 8;
+RULED: spec wins, applied by all writers), F-181/F-186/F-189 (after-tax
+arithmetic class; adjudication delegated to the factual QA round as the named
+top item), F-182 (statute-in-prose vs spec rule 4; RULED: spec wins, applied by
+all writers), F-183 (HOA/MSE range presentation), F-185 (executor-vs-administrator
+authority lock, FUTURE, no page blocked), F-187 (letting-agent fee mini-lock
+proposal, FUTURE), F-188 (merge back-patch), F-176 (s.3(7) stale citations on two
+live pages, one armed: post-window back-patches).
+
+## F-188 · BRIEF_DRIFT (F-178 family) · the Propelr borough ranges are PLUS VAT, and every brief that carries them drops the qualifier
+
+**Raised:** 2026-08-21, QA fix round, pick A7 (`average-london-estate-agent-fees`), from BLK-A7-1. **Status:** open. **Severity:** MEDIUM (a wrong VAT basis printed next to an inc-VAT norm, on the page's own evidence for its outer-London argument).
+
+The A7 brief §S2.2 records Propelr's borough table as "Kensington and Chelsea at 1.2% to 1.5% down to Barking and Dagenham at 1.5% to 2.0%" with no VAT basis. Propelr publishes those bands **plus VAT**, and its own cash conversions settle it: Kensington and Chelsea, average value £1,300,000, "1.2% - 1.5% + VAT", "£18,720 - £23,400", which is 1.44% to 1.8% inclusive; Barking and Dagenham, average value £320,000, "1.5% - 2.0% + VAT", "£5,760 - £7,680", which is 1.8% to 2.4% inclusive.
+
+Two consequences. The bare percentages sat next to a stated London norm of 1.8% **including** VAT, so prime central read 20% cheaper than it is. And the page's outer-London argument inverted: on the true basis outer London is 1.8% to 2.4% inclusive, at or above the London norm, not below it.
+
+This is the same failure as F-178, one layer down: the relief and the fee were both being taken on the wrong VAT basis because the brief did not carry one.
+
+**Fixed on A7** at the fix round: all three instances now state "plus VAT" with the inclusive conversion, the borough prose now works from Propelr's own cash figures, and the outer-London paragraph states that the outer quote sits at or above the norm.
+
+**Requested action:** patch §S2.2 in the A7 brief to carry the "+ VAT" basis and the two cash conversions, and check any sibling brief that inherited the same borough line before it reaches a page.
+
+---
