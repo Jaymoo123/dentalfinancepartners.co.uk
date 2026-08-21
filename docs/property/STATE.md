@@ -100,6 +100,21 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.17 Incorporation cluster (Phase D) — FREEZE CHECK RUN 2026-08-21, verdict: DEFER
+
+The owner's condition ("as long as there's not a massive cannibalisation risk") was tested
+per HANDOFF §3 Phase D: of the family's top-10 peer-winnable keywords (5,210 of 9,130
+total pw), 3,340 routes to FROZEN ground (5 stamp-duty keywords owned by the armed SDLT
+batch incl. both just-worked pages; 2 calculator keywords just executed in the Phase B
+tools batch) and only 1,550 is unfrozen (property investment company 590 + the two
+buy-to-let-as/with-ltd 480s). The tail (39 keywords, ~3,900 pw) is long-tail thin and
+provestor's main silo (21 of the family's 49 peer-top-10 keywords) sits on the
+stamp-duty/limited-company guide = more frozen ground. That is under the ~2,000/mo
+unfrozen threshold the handoff set, so per its own rule the cluster DEFERS to after the
+SDLT 28d reads (~mid-Sep) and the parked batches' deploy. Re-run the check then; the
+arithmetic is in this entry and reproducible from briefs/property/sdlt/ledger.csv +
+qa_verdict caches.
+
 ## 0.16 Rental-income cluster (Phase C) — EXECUTED 2026-08-21 PM, deploy owner-gated
 
 Dossier `briefs/property/rental/DOSSIER.md` frozen + executed same day. Universe 867
