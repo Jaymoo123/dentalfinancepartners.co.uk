@@ -100,6 +100,25 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.18 CONSOLIDATED DEPLOY 2026-08-21 (owner-triggered): wave11 + cgt1 + tools + rental1 ALL LIVE
+
+Clean worktree C:/dep at pushed `1cfb5320`, deployment `dpl_B8SGyMhCB4BdvwNns1fMsW67xuDp`,
+aliased www.propertytaxpartners.co.uk, 876 static pages, build green. Spot-verified 200:
+NI net-new, both calculators (BTL mortgage, CGT), /leasehold, second-home CGT page,
+lease-extension calculator, /embed (indexable flip confirmed live, no noindex in HTML),
+home-office rewrite (corrected s.94H trades-only framing confirmed in served HTML).
+monitored_pages: 39 rows at rewrite_date 2026-08-21, monitor_until 2026-11-19 = 19 wave11
+(net_new) + lease-extension calc (net_new) + cgt1 3 net-new + CGT calc + 7 cgt EXTENDs
+re-baselined IN PLACE (prior May-program rows, supersession note, SDLT precedent) + 4 tool
+URLs (--page-urls) + rental1 2 inserts + 2 EXTENDs re-baselined in place. DELIBERATE
+DEVIATION: retitled blog page `rental-income-tax-calculator` NOT registered — registrar
+dedupes on slug and the tool page owns that key; the blog page's calculator queries are
+meant to migrate to the tool, a regression watch there would false-alarm. IndexNow: 43
+URLs HTTP 200 (all batch URLs + 6 calculators + /embed + /leasehold + /landlord-compliance
++ retitled blog page); queue empty. Worktree removed, scratch cleaned. READS: Bing 14d
+~09-04 / 28d ~09-18, Google 28d ~09-18 / 90d ~11-19; per-pack revert triggers in each
+cluster's packs. Reminder: SDLT batch reads (~09-01/09-15) arrive FIRST.
+
 ## 0.17 Incorporation cluster (Phase D) — FREEZE CHECK RUN 2026-08-21, verdict: DEFER
 
 The owner's condition ("as long as there's not a massive cannibalisation risk") was tested
