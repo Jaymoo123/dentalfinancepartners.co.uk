@@ -45,5 +45,136 @@ THE ACCOUNTANT'S ANGLE IS THE HOUSE DIFFERENTIATOR. HomeOwners Alliance, TheAdvi
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A6-A9)
+
+### S2.1 Verify-at-write items resolved
+
+**RESOLVED. CRA 2015 s.83 is unamended by the Renters' Rights Act 2025.** Fetched `https://www.legislation.gov.uk/ukpga/2015/15/section/83` on 2026-08-21; the page states it is "up to date with changes known to be in force on or before 20 August 2026". The only amendments in the annotations are the Tenant Fees Act 2019 changes commenced 1 June 2019 (inserting subsections (3A) to (3C) and modifying (4), (6), (7) and (9)) and Renting Homes (Wales) Act 2016 consequentials from 1 December 2022. **No RRA 2025 amendment.** The three publication channels are confirmed verbatim: "display a list of the fees ... at each of the agent's premises"; "publish a list of the fees on the agent's website (if it has a website)"; and, where the agent advertises on a third party site, "a list of the agent's relevant fees is published on the third party website, or there is a link on that website". Each fee entry needs a description enabling the reader to understand "the service or cost that is covered by the fee", "an indication of whether the fee relates to each dwelling-house or each tenant ... under a tenancy", and "the amount of each fee inclusive of any applicable tax". The Stage 1 anchor stands unchanged; the VAT-inclusive limb is stronger than the seed stated and should be quoted.
+
+**RESOLVED, and it kills a named source. The gov.uk page "Tenant Fees Act 2019: guidance" was WITHDRAWN on 8 May 2026.** Fetched `https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance` on 2026-08-21: published 1 April 2019, last updated 30 September 2020, marked withdrawn 8 May 2026, carrying the three PDFs (enforcement authorities, landlords and letting agents, tenants). The seed's Stage 2 research target list names this page. **Do not cite it and do not link the PDFs.** The live replacements, both fetched and confirmed on 2026-08-21, are:
+- `https://www.gov.uk/guidance/fees-you-can-charge-as-part-of-a-tenancy` (published 1 May 2026, last updated 7 July 2026). This is the page the landlord section should cite.
+- `https://www.gov.uk/government/publications/tenant-fees-act-amended-by-the-renters-rights-act-2025` (updated 1 May 2026), which carries the re-issued statutory guidance for enforcement authorities.
+Raised as **F-170**. Resolved for lock §26.5 (the letting-agent limb) and worth a one-line pointer there so the next session does not reach for the withdrawn page.
+
+**RESOLVED. Tenant Fees Act 2019 Schedule 1 has been amended by the RRA 2025 with effect from 1 May 2026.** Fetched `https://www.legislation.gov.uk/ukpga/2019/4/schedule/1` on 2026-08-21. Paragraph 1(1A) and (1B) were **inserted on 1 May 2026** and prohibit pre-tenancy rent for assured tenancies; paragraph 1A restricts an amount attributable to an earlier rental period exceeding later periods. gov.uk states the practical rule verbatim: "From 1 May 2026, you cannot ask for a tenant to pay rent before the tenancy agreement is signed", and a landlord may take "a maximum of 1 month's rent in advance after you and your tenant have signed". The seed was written before this was checked and the tenant section must carry it.
+
+**RESOLVED, with a statute-versus-guidance divergence the writer must handle.** TFA 2019 Sch 1 para 2 (deposit cap) reads: "the amount of five weeks' rent, where the annual rent ... is less than £50,000, or the amount of six weeks' rent, where the annual rent ... is £50,000 or more". gov.uk's live guidance instead says six weeks applies "For tenancies with an annual rent of between £50,000 and £100,000". **The statute has no upper bound; the page quotes the statute and does not repeat the gov.uk £100,000 phrasing.** Holding deposit cap confirmed at one week's rent (Sch 1 para 3 read with Sch 2). Default fees confirmed: lost key or security device at evidenced actual cost, and late rent interest at "an annual percentage rate of 3% above the Bank of England base rate", chargeable only once rent is at least 14 days overdue (Sch 1 para 4(5)). Recorded in F-170.
+
+**RESOLVED for the pre-letting limb, and it must be a LINK not a restatement.** The route is ITTOIA 2005 s.57 (pre-trading expenses), imported into a property business by the s.272(2) table, seven-year window, deemed incurred on the first day of the business, HMRC PIM2505. Our own `pre-letting-expenses-landlord-claim-before-first-tenant` already sets this out in full, including the Finance Act 2020 Sch 16 para 4(6) "excluded" banner on the standalone s.57 page being a narrow coronavirus-support carve-out rather than a repeal, and the CTA 2009 s.61 company equivalent. **This page gets one sentence and a link.** Restating it would cannibalise a live page.
+
+**STILL FLAGGED, writer must not assert.** The s.87(7) £5,000 penalty and the TFA 2019 s.8 £5,000 / £30,000 penalties were Stage 1 verified but not re-fetched at Stage 2; re-verify at write. CGT 18% / 24% and the £3,000 AEA come from house_positions §5 at write time, never from this brief.
+
+### S2.2 Cost table, sources filled
+
+**Every row below carries its source. Nothing in this table may be written from memory.** Two live sources, both fetched 2026-08-21:
+- **[LS]** Landlord Studio, "How Much Do Letting Agents Charge? UK Fees Explained (2026)", `https://www.landlordstudio.com/uk-blog/letting-agents-fees`, page states "UPDATED ON August 10, 2026".
+- **[LAP]** LettingAProperty, "Letting Agent Fees: A Comprehensive Guide for Landlords (2026)", `https://www.lettingaproperty.com/landlord/blog/letting-agent-fees/`, first published 8 May 2024, last updated 6 July 2026. Method disclosed: figures "illustrative based on agency websites (checked January 2026)", worked on a rental value of £1,424 pcm inclusive of VAT at postcode GU25.
+
+| Row | Typical range | VAT position | Source | Tax treatment (our column) |
+|---|---|---|---|---|
+| Tenant-find only | 8% to 12% of the first year's rent, or a flat £400 to £1,500 | quoted before VAT, add 20% | [LS], corroborated [LAP] | Revenue against rental income, ITTOIA 2005 s.272 applying the s.34 wholly-and-exclusively test |
+| Rent collection | 3% to 12% of monthly rent | before VAT | [LS] and [LAP] agree | Revenue |
+| Full management, independent agent | 10% to 15% of monthly rent | before VAT | [LS] | Revenue |
+| Full management, national chain | 15% to 17% of monthly rent | before VAT | [LS] | Revenue |
+| Full management, whole-market spread | 8% to 20%, London and prime at the upper end | before VAT | [LAP] | Revenue |
+| Tenant referencing | £50 to £150 per applicant | before VAT | [LS] | Revenue |
+| Inventory | £100 to £250 | before VAT | [LS] | Revenue |
+| Section 13 rent increase notice | £0 to £300 | stated inclusive of VAT | [LS] | Revenue |
+| Bundled compliance or regulation charge | about £11 to £48 per month | stated inclusive of VAT | [LS] | Revenue, and see house_positions §26.7 on compulsory regulatory cost |
+| Renewal, check-out, mid-term inspection, section 8 possession admin | named as chargeable, **no amount published by either source** | unknown | [LAP] names them without figures | Revenue |
+| Sale commission when the same agent later sells | see sibling A1 or A7, this page carries no sale figure | | | **Capital. TCGA 1992 s.38(1)(c) incidental cost of making the disposal** |
+| Removals, storage, your own time | not an agency fee | | | **No relief at either end. Not in the exhaustive s.38(2) list** |
+
+**The VAT arithmetic is a page asset, sourced verbatim from [LS]:** "Almost every agent adds VAT at 20% on top, so a headline 12% management fee actually costs 14.4% of your rent", and "On a property let at £1,200 per month, full management at 12% costs £172.80 per month, or £2,073.60 per year, once VAT at 20% is added." Use that structure, with our own second-person numbers.
+
+**Rows with no sourced figure (renewal, check-out, inspection, section 8 admin) are written as "illustrative range, label as such on page" or left as "ask the agent, it must be on their published list under CRA 2015 s.83".** The second option is better here, because it turns a gap into a statutory point.
+
+### S2.3 Competitor verification and beat-them plan
+
+**Verified live (HTTP 200, on-topic, fetched 2026-08-21):**
+- `https://www.landlordstudio.com/uk-blog/letting-agents-fees` (updated 10 August 2026). Complete fee ranges, the VAT-on-top maths, named extras with amounts, one cash example. **Zero tax content.**
+- `https://www.lettingaproperty.com/landlord/blog/letting-agent-fees/` (updated 6 July 2026). Ranges plus a disclosed method. **Does carry one tax line.**
+
+**Deleted from the seed's list, all tested 2026-08-21:** `hoa.org.uk/advice/guides-for-homeowners/for-landlords/letting-agent-fees/` (404); `openrent.co.uk/landlord-fees` (404); the Which? letting agents path tested (404); `getagent.co.uk` (HTTP 429 on two separate attempts, treat as unreachable, do not cite).
+
+**MANDATORY CORRECTION TO THE SEED'S EXPLOITATION PLAN (Bug #3 clause).** The seed assumed no competitor tells a landlord the fee is deductible. That is now false. LettingAProperty states verbatim: "Landlord fees paid to letting agents are strictly allowable business expenses, reducing your taxable rental income", and links HMRC guidance. **Do not write "no one tells you these fees are deductible".** The differentiator moves up one level, to the split and the mechanism. Five beat-them elements, in descending order of value:
+
+1. **The two-computation split.** One competitor says "deductible" and stops. Neither says which computation. The letting fee is revenue against rental income in the year incurred (ITTOIA 2005 s.272 applying s.34); the sale commission on the same property is capital, an incidental cost of making the disposal under TCGA 1992 s.38(1)(c). Same agent, same property, two different reliefs, two different years.
+2. **s.38(2) is an exhaustive list and it names "agent".** HMRC CG15250: "TCGA92/S38 defines the incidental costs of acquisition and disposal. The definition is exhaustive." So the sale commission qualifies and the management fee can never be banked as base cost. This is the correction that stops a landlord double-counting.
+3. **Fees paid before the first tenant are not lost.** ITTOIA 2005 s.57 imported by the s.272(2) table, seven-year window, PIM2505. Neither competitor mentions it. One sentence and a link to our own page.
+4. **The published fee list is a statutory duty, not a courtesy.** CRA 2015 s.83 requires the list at the premises, on the website and on the third-party portal, each fee inclusive of tax and marked per dwelling or per tenant, with a local weights and measures authority penalty behind it. Both competitors discuss "make sure the quote includes VAT" without knowing there is a statute that requires it.
+5. **Net-of-relief cost.** 12% plus VAT is 14.4% of rent gross; after relief it is materially less, and the number depends on the landlord's marginal rate. Neither competitor runs it. This is the page's worked example.
+
+Neither competitor cites CRA 2015 ss.83-88, the Tenant Fees Act 2019, SI 2014/2359 or ITTOIA 2005 s.272. Per F-152, the whole statutory framework is uncited across this SERP.
+
+### S2.4 Query coverage map
+
+**Primary:** `estate agent fees for renting` (260/mo). The head term is ambiguous between letting-agent-charges-a-landlord and what-a-tenant-can-be-charged; the H1 and opening resolve it toward the landlord and the tenant question gets its own H2.
+
+**Secondaries, mapped to H2 level:**
+- `estate agent charges for renting` and `letting agent fees for landlords` to H2.1 (the fee-model table)
+- `how much do letting agents charge` to H2.1
+- `letting agent fees full management vs tenant find` to H2.2
+- `hidden letting agent fees` and `letting agent renewal fee` to H2.3
+- `can a letting agent charge a tenant a fee` to H2.4
+- `are letting agent fees tax deductible` to H2.5, which is the page's centre of gravity
+
+**Lane discipline.** A6 is the only letting-side page in the wave. A1 owns national sale commission, A2 the fee-model comparison, A5 online agents, A7 London sale fees. No sale commission figure appears on this page; where one is needed it is one reference line with a link to A1. Freeze adjacency stands: no CGT rate table, no AEA explainer, no PRR mechanics. The CGT hook is one paragraph plus one worked line, then out to the CGT cluster.
+
+### S2.5 Structure
+
+**H2 skeleton (8):**
+1. What a letting agent charges a landlord in 2026 (the fee-model table)
+2. Tenant-find, rent collection or full management: which model earns its keep
+3. What sits outside the headline percentage (and why the law says it must be published)
+4. What a letting agent can charge a tenant now (Tenant Fees Act 2019 as amended from 1 May 2026)
+5. Are letting agent fees tax deductible, and against what
+6. Fees you pay before the first tenant moves in
+7. The same agent, later, selling the property: why that fee is treated differently
+8. Who files, who withholds, and what redress you have if the agent gets it wrong
+
+**Worked example 1 (second person, no names).** You let a flat at £1,200 a month, £14,400 a year, on full management at 12% plus VAT. The gross fee is £2,073.60 a year [LS]. As a revenue deduction against rental income it reduces your taxable profit, so the after-relief cost depends on your marginal rate: work it at basic, higher and additional rate and show the three net figures. Then the contrast line: none of that £2,073.60 is base cost, and none of it will be there to set against the gain when you sell.
+
+**Worked example 2 (second person, one line only, the CGT hook).** You sell the same flat years later and the agent charges commission on the sale. That commission is an incidental cost of making the disposal under TCGA 1992 s.38(1)(c) and comes off the gain, at the residential rates in house_positions §5. One line, then link out. Do not compute a full CGT bill on this page.
+
+**FAQ list (12):**
+1. How much does a letting agent charge for tenant-find only?
+2. Is a full management fee worth it compared with rent collection?
+3. Do letting agents quote fees including VAT?
+4. What is a letting agent legally required to tell me about fees before I sign?
+5. Can a letting agent still charge a tenant a fee?
+6. How much rent in advance can a landlord ask for from 1 May 2026?
+7. What is the maximum tenancy deposit and holding deposit?
+8. Are letting agent fees tax deductible against rental income?
+9. Can I deduct letting agent fees from my capital gain when I sell?
+10. Can I claim agent fees I paid before the first tenant moved in?
+11. Does using a letting agent change who files my tax return under Making Tax Digital?
+12. My agent got it wrong. Which redress scheme do I complain to?
+
+**Internal links, exact paths (all verified on disk 2026-08-21):**
+- `/blog/capital-gains-tax/tax-sell-rental-property-uk`
+- `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026`
+- `/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list`
+- `/blog/landlord-tax-essentials/pre-letting-expenses-landlord-claim-before-first-tenant`
+- `/blog/landlord-tax-essentials/what-repairs-can-landlords-deduct-from-rental-income`
+- `/blog/landlord-tax-essentials/how-to-calculate-net-rental-income-after-all-costs-uk-guide`
+- `/blog/making-tax-digital-mtd/mtd-itsa-letting-agent-managed-portfolio-who-files-quarterly`
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction`
+- `/blog/non-resident-landlord-tax/nrl-scheme-letting-agents-quarterly-returns-mechanics`
+- `/for-letting-agents` (live route, framed as "what your agent is being told")
+- `/calculators/rental-income-tax-calculator` (live: registered in `src/lib/calculators/registry.ts`, rendered by `/calculators/[slug]`)
+- Wave 12 siblings: `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`, `/blog/capital-gains-tax/cheapest-estate-agent-fees-uk`, `/blog/capital-gains-tax/estate-agent-contract-tie-in-periods`
+- Conductor-side, link as if live: `/cost-of-selling-a-property`, `/calculators/cost-of-selling-calculator`
+- **Do not link `/calculators/capital-gains-tax-calculator`** (armed experiment).
+
+### S2.6 Statutory cross-check against the new locks (§16.36)
+
+- **§5.B** now locks s.38(1)(c) and the exhaustive s.38(2) list, and adds the do-not-write "you can deduct removal costs against the gain". The seed pre-dates §5.B and proposed its own §5.A mini-lock; **§5.B supersedes that proposal and wins.** Cite §5.B, not the F-150 proposal text.
+- **§26.5** is the letting and management agent regime under SI 2014/2359. The seed is correct that two schemes operate (The Property Ombudsman and Property Redress) and correct to warn against "three schemes". **§26.14 confirms the drift risk from the other direction: SI 2014/2359 must never be cited for a selling agent, whose redress duty is EAA 1979 s.23A with SI 2008/1712 art 2.** This page is letting-side, so SI 2014/2359 is right here, but the "same agent later sells" section must switch instrument.
+- **§26.7** supports the deductibility of compulsory regulatory cost against rental income. The bundled compliance charge row uses it.
+- **§20.12** only if a tenanted sale or Ground 1A is mentioned. It should not be; that is a different page.
+- No mismatch found between the seed's citations and the locks other than the superseded §5.A proposal.
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21, Stage 1 seed written. Statutory anchors WebFetch-verified: CRA 2015 ss.83-88, TFA 2019 s.1 + s.8, SI 2014/2359 arts 3 + 5, ITTOIA 2005 s.272, TCGA 1992 s.38, FA 2019 Sch 2 para 3, CG15250. Flag raised: F-150 (s.38 house-position lock missing).
+- 2026-08-21, Stage 2 (batch A6-A9). Extended in place. Resolved: CRA 2015 s.83 unamended by RRA 2025 (current to 20 Aug 2026); gov.uk "Tenant Fees Act 2019: guidance" **withdrawn 8 May 2026** and replaced by `/guidance/fees-you-can-charge-as-part-of-a-tenancy` (7 Jul 2026) plus the RRA-amended publication (1 May 2026); TFA 2019 Sch 1 para 1(1A)-(1B) inserted 1 May 2026 banning pre-signature rent, one month maximum in advance; deposit caps quoted from statute, not from gov.uk's narrower £50,000-to-£100,000 phrasing; pre-letting route confirmed as ITTOIA 2005 s.57 via the s.272(2) table with PIM2505, already covered on-site so LINK only. Cost table sourced to Landlord Studio (10 Aug 2026) and LettingAProperty (6 Jul 2026), both fetched and live. Competitors: 2 live, 4 deleted (HOA landlord fees 404, OpenRent 404, Which? 404, GetAgent 429 twice). **Seed correction: LettingAProperty DOES state the fee is deductible against rental income, so the differentiator moves to the revenue-versus-s.38(1)(c) split, not to the bare fact of deductibility.** Superseded: the seed's proposed §5.A mini-lock, replaced by the locked §5.B. Flag raised: **F-170**.

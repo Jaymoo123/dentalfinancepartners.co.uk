@@ -188,9 +188,228 @@ Land Registry Scale 1 fees are referenced on-site with no governing instrument, 
 
 ---
 
+## F-174 · BRIEF_DRIFT + HOUSE_POSITION_EXTENSION · §1.Q mis-numbers the FA 2003 Sch 6A paragraphs, and the permitted-area question is now answered
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A10-A13 (page: `part-exchange-house-uk`; the para 3 point also reaches `selling-a-probate-property`). **Status:** open.
+
+**1. Paragraph numbering is wrong in §1.Q and in the A12 Stage 1 seed.** Both say "para 2 (property trader, assisted move) and para 3 (chain-break)". Para 3 is not the chain-break case. Verified twice on 2026-08-21: paragraph headings at `https://www.legislation.gov.uk/ukpga/2003/14/schedule/6A`, and HMRC's own contents page **SDLTM21000** (`https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm21000`, last updated **26 May 2026**, HTTP 200), which gives the statutory gateway as **FA03/S58A and FA03/SCH6A**:
+
+| Para | Subject | HMRC leaf |
+|---|---|---|
+| 1 | Acquisition by house-building company from individual acquiring new dwelling | SDLTM21020 |
+| 2 | Acquisition by property trader from individual acquiring new dwelling | SDLTM21030 |
+| **3** | **Acquisition by property trader from personal representatives** | SDLTM21040 |
+| **4** | **Acquisition by property trader from individual where chain of transactions breaks down** | SDLTM21050 |
+| 5 | Acquisition by employer in case of relocation of employment | SDLTM21060 |
+| 6 | Acquisition by property trader in case of relocation of employment | SDLTM21070 |
+| 7 | Meaning of "dwelling", "new dwelling" and "the permitted area" | - |
+| 8 | Meaning of "property trader" and "principal" | - |
+
+Overview at **SDLTM21010**. Relief code 28 on the return (per SDLTM21040). **Requested patch to §1.Q:** correct chain-break to **para 4**; add **para 3 (property trader acquiring from personal representatives)** as a named route, because it is the statutory explanation of the probate cash-buyer model and is directly load-bearing for A13; add the **FA 2003 s.58A** gateway and the SDLTM leaf references. Para 3 conditions verified verbatim at SDLTM21040: "the deceased individual occupied the dwelling as his main or only residence at some time in the two years ending with the date of his death"; "the area of land acquired does not exceed the permitted area"; withdrawal if the trader "spends more than the permitted amount on refurbishment of the dwelling", "grants a lease or licence of the dwelling", or "permits any of its principals or employees, or any person connected with any of its principals or employees, to occupy the dwelling".
+
+**2. §1.Q's Stage 2 permitted-area question is ANSWERED: the two tests are NOT drafted identically.** Both verified verbatim on 2026-08-21 (latest revised, 21 Aug 2026). **FA 2003 Sch 6A para 7(3)**: "land occupied and enjoyed with the dwelling as its garden or grounds that does not exceed - (a) an area (inclusive of the site of the dwelling) of 0.5 of a hectare, or (b) such larger area as is required for the reasonable enjoyment of the dwelling". **TCGA 1992 s.222(2)**: "an area (inclusive of the site of the dwelling-house) of 0.5 of a hectare"; **s.222(3)**: "Where the area required for the reasonable enjoyment of the dwelling-house (or of the part in question) **as a residence, having regard to the size and character of the dwelling-house**, is larger than 0.5 of a hectare, that larger area shall be the permitted area." Same 0.5 hectare baseline; the CGT extension limb is expressly tied to enjoyment **as a residence** and to the **size and character** of the house, the SDLT one is not. **Requested patch:** replace the "Stage 2 must confirm" line with the answer, and add a do-not-write: "a permitted-area agreement under one tax binds the other".
+
+**3. Still open, folded in here rather than raised separately.** The §26.15 Stage 2 item (does the Consumer Code for Home Builders still operate alongside the NHQB code) is **not fully closed**: `consumercode.co.uk` returned **HTTP 403** to automated fetch on 2026-08-21, so the primary source is unverified and must not be quoted. Secondary sources (LABC Warranty, NHBC and two law-firm comparisons) consistently describe two voluntary codes coexisting, with warranty providers accepting adherence to either, and the Consumer Code applying to developers registered with NHBC, Premier Guarantee, LABC Warranty and Checkmate. NHQB itself re-verified live: **Code V2 (March 2026)** for reservations from 2 March 2026, V1 (October 2023) before, redress via the New Homes Ombudsman Service for **registered** developers only. A session with browser access should close this properly before either code is named on a page.
+
+---
+
+## F-175 · HOUSE_POSITION_EXTENSION · §39.A can be upgraded from "figures NOT locked" to the actual SP2/04 scale, and the PR annual exempt amount now has a section
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A10-A13 (page: `selling-a-probate-property`). **Status:** open (manager patches §39.A).
+
+Both of §39.A's explicit "not locked" items are now resolved at primary sources fetched on 2026-08-21.
+
+**1. SP2/04 is live and quotable.** The gov.uk Statement of Practice page that 404'd at seed time was found: **`https://www.gov.uk/government/publications/statement-of-practice-2-2004--2/statement-of-practice-2-2004--4`**, "Statement of Practice 2 (2004)", published **20 August 2004**, HTTP 200. HMRC's own statutory reference on the face of it is **TCGA 1992 s 38(1)(b)**. The scale, for deaths on or after 6 April 2004:
+
+| Gross estate value | Allowable expenditure |
+|---|---|
+| Not exceeding £50,000 | 1.8% of the probate value of the assets sold |
+| Over £50,000 but not exceeding £90,000 | £900 fixed, divided between all estate assets in proportion to probate values |
+| Over £90,000 but not exceeding £400,000 | 1% of the probate value of the assets sold |
+| Over £400,000 but not exceeding £500,000 | £4,000 fixed, divided as above |
+| Over £500,000 but not exceeding £1,000,000 | 0.8% of the probate value of the assets sold |
+| Over £1,000,000 but not exceeding £5,000,000 | £8,000 fixed, divided as above |
+| Over £5,000,000 | 0.16% of the probate value of the assets sold, subject to a maximum of £10,000 |
+
+HMRC "will accept computations based either on this scale or on the actual allowable expenditure incurred", so the scale is an election, not a cap.
+
+**LIMB CORRECTION, and it applies to F-161 and to this brief's own Stage 1 text.** The personal representatives' **cost of establishing title is s.38(1)(b)**, not s.38(1)(c). s.38(1)(b) is the limb containing "any expenditure wholly and exclusively incurred by him in establishing, preserving or defending his title to, or to a right over, the asset" (verified verbatim at `https://www.legislation.gov.uk/ukpga/1992/12/section/38`, latest revised 20 Aug 2026). The **selling** costs stay in s.38(1)(c) with the exhaustive s.38(2) list. §5.B is about the (1)(c) limb and is unaffected; §39.A should name (1)(b) explicitly so no page merges the two.
+
+**2. The PR annual exempt amount has a statutory home: TCGA 1992 s.1K(7).** Verified verbatim at `https://www.legislation.gov.uk/ukpga/1992/12/section/1K`: section heading "Annual exempt amount"; **s.1K(7)**: "For the tax year in which an individual dies and for the next two tax years, this section applies to the individual's personal representatives as if references to the individual were to those personal representatives." §39.A's "statutory basis for the PR AEA not yet pinned" line can be replaced with the section. §39's own bullet ("PRs get the annual exempt amount for the year of death + two following tax years") should carry the same citation.
+
+**3. The §39 PR-rate verify-at-write instruction is satisfied for 2026/27 only.** gov.uk "Capital Gains Tax rates" (`https://www.gov.uk/capital-gains-tax/rates`, fetched 2026-08-21) states verbatim: **"Trustees or personal representatives of someone who's died pay tax at 24% from 6 April 2026."** So 24% is correct and citable for a 2026/27 disposal. The §39 caution should be kept for any earlier year rather than deleted.
+
+**Manual chain for the lock:** s.38(1)(b) → **CG30540** (last updated 21 Aug 2026, "it is necessary to decide what amount of incidental expenses is allowable", directs to "procedures set out in CG30560+") → **CG30560** (records the professional-bodies agreement, cites SP7/81, SP8/94 and SP02/04, **does not reproduce the scale**) → **SP2/04** at the gov.uk URL above.
+
+---
+
+## F-176 · EXISTING_PAGE_STALE · two live pages cite the repealed TCGA 1992 s.3(7) for the personal representatives' annual exempt amount
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A10-A13. **Status:** open (delta-queue; one is an armed cgt1 page).
+
+`Property/web/content/blog/cgt-inherited-rental-property-calculation-uk.md` carries, verbatim: "The personal representatives' AEA is available for the tax year of death and the two following tax years (**TCGA 1992 s.3(7)**)." `Property/web/content/blog/inheriting-uk-rental-property-executors-step-by-step.md` carries the same citation. No other Property page does (repo-wide grep, 2026-08-21).
+
+**The citation is dead.** TCGA 1992 s.3 no longer concerns the annual exempt amount at all: its heading is now "**Gains attributed to UK resident individuals etc**" and the annotation records "Pt. 1 substituted (with effect in accordance with Sch. 1 paras. 120, 123 of the amending Act) by **Finance Act 2019 (c. 1), Sch. 1 para. 2**" (verified `https://www.legislation.gov.uk/ukpga/1992/12/section/3`, 2026-08-21). The live provision is **s.1K**, with the personal-representative extension at **s.1K(7)** (verbatim text in F-175).
+
+The substance on both pages is right; only the section number is stale. Same failure mode as the §17.4 NRCGT ss.14B-14H note: a pre-FA-2019 Part 1 section number that still resolves on legislation.gov.uk but no longer supports the claim. Requested fix: swap `s.3(7)` for `s.1K(7)` on both pages at the next touch. Wave 12 pages must cite s.1K(7) from the start.
+
+---
+
+## F-177 · BRIEF_DRIFT · two citation precision points, one in §5.B and one in §39
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A10-A13. **Status:** open (manager closes at Stage 2b).
+
+**1. §5.B's modern-method reservation-fee note needs a conditional.** The lock currently reads: "**s.22(1)(c)**: capital sums for forfeiture/surrender of rights are a disposal timed at receipt (forfeited buyer's deposit; **a retained modern-method reservation fee needs this analysis**)". The A11 Stage 1 seed went further and assumed the fee is "forfeited **to the seller**". The market-leading platform's own published terms say the opposite. iamsold FAQ, verbatim, fetched 2026-08-21: **"Any retained Reservation Fee is used to cover auction, marketing and associated costs and is not paid to the seller."** Its buyer-fees page corroborates: the fee "is later used to cover the auction costs for the seller, including the listing agent and Auctioneer fees". **s.22(1)** only bites where "any capital sum is **derived from assets**" by the owner, and **s.22(2)** dates it to receipt by that person, so where the platform retains the fee the seller derives nothing and there is no s.22 event for the seller at all.
+
+Requested patch: make the note conditional. Something to the effect of "a forfeited **buyer's deposit at a traditional auction** is a s.22(1)(c) capital sum in the seller's hands; a **modern-method reservation fee is usually retained by the auction platform and not paid to the seller** (iamsold's own terms), in which case there is no s.22 disposal for the seller and the fee is simply a real selling cost charged to the other side and therefore outside the seller's exhaustive s.38(2) list. Read the reservation agreement before asserting either way."
+
+**Related, and worth a line in the same patch.** HMRC has **no published statement** on whether a modern-method reservation fee is chargeable consideration for SDLT. The applicable authority is the general test at **SDLTM03720** ("Guidance - Chargeable Consideration and Fees", gov.uk, **last updated 26 May 2026**, HTTP 200): a fee in addition to the purchase price is chargeable consideration where "it is a condition of the contract that the fee is paid", or "completion of the property transaction is conditional upon the fee being paid", or it is only payable once the transaction proceeds; a fee for a separate matter, "such as a purchaser's own legal costs", is not. The page **does not mention auction reservation fees or buyer's premiums**. HomeOwners Alliance asserts flatly and without citation that "HMRC will charge stamp duty on the final price agreed plus the reservation fee". Our pages state the test and its limits, never the flat assertion.
+
+**2. §39's "Manual: CG30540" is attached to the wrong proposition.** §39 says "PRs (and beneficiaries) selling UK residential property file the 60-day return (Sch 2 FA 2019). **Manual: CG30540**". CG30540 is "Death and Personal Representatives: Personal representatives and their liabilities: Personal representatives: computing gains: normal rules apply" (gov.uk, last updated 21 Aug 2026, fetched 2026-08-21) and on its fetched text says nothing about the 60-day or 30-day return; it is the parent of the incidental-expenses chain that leads to CG30560. Requested patch: cite **FA 2019 Sch 2 para 3(1)(b)** for the obligation, and keep CG30540/CG30560 for the incidental-expenses point where they actually belong.
+
+---
+
+## F-166 · HOUSE_POSITION_EXTENSION · the sales-agent redress PENALTY is £1,000, and gov.uk's own page states it wrongly
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A1-A5 (pages: `cheapest-estate-agent-fees-uk`, `online-estate-agents-uk`). **Status:** open (proposed patch to §26.14).
+
+§26.14 locks the redress **duty** (EAA 1979 s.23A + SI 2008/1712 art 2) but carries no penalty figure, and the obvious place a writer would look for one states it incorrectly.
+
+- **SI 2008/1712 contains only articles 1 and 2** (contents fetched https://www.legislation.gov.uk/uksi/2008/1712/contents/made, 2026-08-21). The penalty is not in the redress Order.
+- The figure is in **The Estate Agents (Redress Scheme) (Penalty Charge) Regulations 2008, SI 2008/1713, reg 2**, verbatim: **"The amount of the penalty charge specified in a notice given to a person under section 23B(1) of the Estate Agents Act 1979 shall be £1000."** In force 1 October 2008; legislation.gov.uk shows the original version with no amendments (fetched https://www.legislation.gov.uk/uksi/2008/1713/made, 2026-08-21).
+- **gov.uk https://www.gov.uk/redress-scheme-estate-agencies (fetched 2026-08-21) says: "You may be fined up to £5,000 and have your licence revoked if you do not join a redress scheme."** That page covers estate agents and letting agents together. **£5,000 is the lettings-side figure and estate agents have never held a licence to revoke.** A session writing a sales page from gov.uk will publish both errors.
+- The same page is still the authority for **which schemes are approved**, naming **"The Property Ombudsman Limited"** and **"Property Redress Scheme"**. Naming trap for the lock: the second scheme now trades as **"Property Redress"** (https://www.propertyredress.co.uk/ live 2026-08-21), so gov.uk carries the pre-rebrand name. `tpos.co.uk` returns **HTTP 403** to automated fetching; cite gov.uk for TPO, not the scheme's own site.
+
+Proposed §26.14 additions: the £1,000 figure with its instrument and the s.23B(1) hook; the two approved sales schemes with both names for the second; and a do-not-write line, **"estate agents can be fined up to £5,000 and lose their licence"** (wrong on both limbs, and sourced from gov.uk itself). Cross-reference: the three-scheme error on `renters-rights-act-property-redress-scheme-mandatory-enrolment-landlords` is the frozen sibling already delta-queued at §26.5 and is not re-flagged here.
+
+---
+
+## F-167 · HOUSE_POSITION_EXTENSION · the VAT rule for incidental costs of disposal lives at CG14300, and every Wave 12 seed pointed at the wrong manual page
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A1-A5 (all five pages). **Status:** open (proposed patch to §5.B).
+
+§5.B locks the exhaustive s.38(2) list but says nothing about VAT, and half of this cluster's cost figures are quoted plus VAT while the other half are quoted inclusive. The A1 seed sent Stage 2 to **CG15250 / CG15260** for it. Both were fetched on 2026-08-21 and **neither mentions VAT**: CG15250 gives the exhaustiveness sentence and the four categories, CG15260 gives transfer and valuation examples and liquidator expenditure. CG15160 (also fetched) gives only the s.38(1) category headings.
+
+The rule is in **CG14300**, "Computation: interaction with other taxes: income tax" (https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg14300, fetched 2026-08-21), verbatim:
+
+- **"If VAT is suffered on the expenses of disposal and this is available for set-off in the vendor's VAT account, the expense exclusive of VAT is to be deducted"**
+- **"If no set-off is available, the expense inclusive of VAT is to be allowed"**
+- plus the two companion limbs: "the gain is to be computed by reference to the proceeds of disposal exclusive of VAT" and "the cost of the asset for capital gains purposes should be the cost exclusive of VAT".
+
+**Consequence for the cluster:** an individual seller who cannot recover VAT deducts the **gross** agent's fee, so on a £300,000 sale at 1.42% including VAT the s.38(1)(c) deduction is £4,260, not £3,550. Every cost-of-selling page in Wave 12 needs this, and A1, A2, A4 and A5 have been written to cite CG14300 and to drop CG15260. HMRC's general position on irrecoverable VAT as an ingredient of expenditure is consistent (**BIM31535**: "the capital expenditure on any assets ranking for capital allowances is inclusive of the irrecoverable VAT"), but CG14300 is the direct authority and the only one that should be cited.
+
+Proposed §5.B addition: the CG14300 rule in one line, plus a do-not-write, **"cite CG15250 or CG15260 for the VAT treatment"** (they are silent on it).
+
+---
+
+## F-168 · HOUSE_POSITION_EXTENSION · the §26.14 DIY-conveyancing caution can be closed: the limit is inside LSA 2007 Sch 3 para 3(3)(d), and HMLR PG67 is the practice guidance
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A1-A5 (pages: `sell-house-without-estate-agent`, `can-you-sell-a-house-without-an-estate-agent`). **Status:** open (proposed patch to §26.14; gating item now RESOLVED).
+
+§26.14 currently says Sch 3 "has no express self-representation carve-out" and tells Stage 2 not to inflate para 3(10) without checking HM Land Registry practice guidance. Both halves are now settled.
+
+**The statute supplies its own ceiling.** Sch 3 para 3 fetched in full (https://www.legislation.gov.uk/ukpga/2007/29/schedule/3, 2026-08-21). **para 3(10): "The person is exempt if the person is an individual who carries on the activity otherwise than for, or in expectation of, any fee, gain or reward."** **para 3(3)(d)** then makes a supervised individual exempt only where the supervisor "is entitled to carry on the activity, otherwise than by virtue of sub-paragraph (10)". So Parliament expressly contemplated the unpaid-individual exemption and expressly denied it any supervisory reach. Other limbs of para 3 for completeness: (2) public officers, (5) to (6) accredited CAAV or RICS members for farm business tenancies, (9) persons employed merely to engross, (11) Scottish solicitors.
+
+**The practice guidance exists and is current.** **HM Land Registry practice guide 67, evidence of identity, conveyancers** (https://www.gov.uk/government/publications/evidence-of-identity-conveyancers/practice-guide-67-evidence-of-identity-conveyancers), **last updated 2 March 2026**, and **gov.uk "Completing forms ID1 and ID2"** (https://www.gov.uk/guidance/completing-forms-id1-and-id2), published 19 August 2014, **updated 5 February 2024**. Both fetched 2026-08-21. Key wording: **"Private individuals must complete form ID1"**; "You must provide evidence of identity for any party (and the person lodging the application if different) who is not legally represented"; section B completed by a conveyancer, Chartered Legal Executive or CLC-regulated Licensed Probate Practitioner; form ID3 verifiers include a "Chartered or certified accountant"; and the low-value carve-out, **"An ID form in respect of an unrepresented party is not required where the true value of the land which is the subject of the disposal, discharge or release is £6,000 or less"**, on a valuation certificate from "an estate agent, a surveyor, a land and property valuer or auctioneer".
+
+Proposed §26.14 replacement wording for the caution: **you may prepare the transfer of your own property because you are not acting for fee, gain or reward (Sch 3 para 3(10)); you may not do it for another person for payment, and para 3(3)(d) denies the unpaid exemption any supervisory standing; HM Land Registry has a documented route for an unrepresented party (PG67, ID1/ID2) which still requires identity verification by a conveyancer or a listed professional.** Do-not-write stays as it is: **"anyone may do conveyancing for anyone unpaid"**.
+
+Also worth adding to §26.14 while it is open: **EAA 1979 s.1(4) is a 2013 substitution** (revised text current to 20 August 2026, re-fetched 2026-08-21), so pre-2013 commentary on the portal boundary is unreliable, and the boundary now has a clean factual companion. Rightmove's own seller guide (fetched 2026-08-21) states that **"sellers and landlords aren't allowed to list properties themselves on Rightmove as a private seller"** and that "we only list homes from registered estate and letting agents". **The consequence, which three pages in this wave use: a route that reaches Rightmove runs through a business doing estate agency work and therefore inside the SI 2008/1712 art 2 redress duty; a route genuinely outside the Act under s.1(4) cannot reach Rightmove. The two are mutually exclusive.**
+
+---
+
+## F-169 · AUTHORITY_GAP · the seller's property information form is on its 6th edition since 30 March 2026 and appears nowhere in the corpus
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A1-A5 (pages: `sell-house-without-estate-agent`, `can-you-sell-a-house-without-an-estate-agent`). **Status:** open (FYI plus a currency risk; manager decides whether it needs a lock).
+
+Grep 2026-08-21: **"TA6" appears on zero Property blog pages**, as do "sole selling rights" and "online estate agent". The TA6 is the document that carries a seller's **Misrepresentation Act 1967 s.2(1)** exposure, and any page in this wave that lists selling paperwork will name it.
+
+The Law Society's own page (https://www.lawsociety.org.uk/topics/property/ta6-6th-edition) returned **HTTP 403** to automated fetching, so the currency fact is sourced from HomeOwners Alliance's TA6 guide (https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/ta6-form/, fetched 2026-08-21), verbatim: **"This guide relates to the latest TA6 property information form (6th edition) published by The Law Society and which came into force on 30 March 2026."** The 4th and 5th editions are superseded, and the controversial "material information" content that sat in the 5th edition is not in the 6th.
+
+**Two cautions for writers.** First, a DIY seller who downloads a form from a search result will very often get a withdrawn edition, which is a genuinely useful thing for our pages to say and nobody else says it. Second, **do not publish a section count**: HOA's guide lists 13 sections and trade coverage says 15, and the Law Society page could not be reached to settle it. If a lock is wanted, it needs one manager-side fetch of the Law Society page from a browser rather than an automated fetcher.
+
+---
+
 ## Conductor note on F-numbering (2026-08-21, Stage 1b)
 
 All three Stage 1 batches were dispatched with the same F-150 to F-179 range (conductor error). Batch A1-A5 took F-150 to F-152; batch A6-A9's separate F-150 to F-153 entries lost the file race, but their substance is covered: s.38 lock proposal → F-162 (locked as §5.B), estate-agency lock → F-150 (locked as §26.14), CPUTR stale page → F-151, Land Registry gap → restored above as F-165. Batch A10-A13 self-rebased to F-160 to F-164. Next dispatch: allocate non-overlapping sub-ranges per batch.
+
+---
+
+## F-170 · AUTHORITY_GAP · the gov.uk Tenant Fees Act guidance every session reaches for was WITHDRAWN on 8 May 2026
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A6-A9 (page: `estate-agent-fees-for-renting`). **Status:** open. **Severity:** MEDIUM.
+
+`https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance` ("Tenant Fees Act 2019: guidance", published 1 April 2019, last updated 30 September 2020) is **marked withdrawn, 8 May 2026** (fetched 2026-08-21). It carries the three PDFs every landlord page cites: statutory guidance for enforcement authorities, guidance for landlords and letting agents, guidance for tenants. The A6 Stage 1 seed names it as a Stage 2 source. **No existing Property page links it** (grep of all 770 blog files for `tenant-fees-act-2019-guidance` returns nothing, 2026-08-21), so this is a forward-looking gap rather than a stale page, but seven pages mention the Tenant Fees Act and any of them being refreshed will reach for the dead URL.
+
+**Live replacements, both fetched 2026-08-21:**
+- `https://www.gov.uk/guidance/fees-you-can-charge-as-part-of-a-tenancy` (published 1 May 2026, last updated 7 July 2026). The landlord-facing page.
+- `https://www.gov.uk/government/publications/tenant-fees-act-amended-by-the-renters-rights-act-2025` (updated 1 May 2026). Carries the re-issued statutory guidance for enforcement authorities.
+
+**Substantive change folded in, worth a §26.5 line.** TFA 2019 Sch 1 has been amended by the RRA 2025: **paragraph 1(1A) and (1B) were inserted on 1 May 2026** prohibiting pre-tenancy rent for assured tenancies, and gov.uk states the rule verbatim as "From 1 May 2026, you cannot ask for a tenant to pay rent before the tenancy agreement is signed", with "a maximum of 1 month's rent in advance after you and your tenant have signed".
+
+**Statute-versus-guidance divergence sessions must handle.** Sch 1 para 2 caps the tenancy deposit at "the amount of five weeks' rent, where the annual rent ... is less than £50,000, or the amount of six weeks' rent, where the annual rent ... is £50,000 or more". gov.uk instead says six weeks applies "For tenancies with an annual rent of between £50,000 and £100,000". **The statute has no upper bound. Quote the statute, not the gov.uk phrasing.** Holding deposit cap is one week's rent; default late-rent interest is "an annual percentage rate of 3% above the Bank of England base rate" after 14 days (Sch 1 para 4(5)).
+
+Also confirmed on the same pass, for the record: **CRA 2015 s.83 is NOT amended by the RRA 2025** (page current to 20 August 2026; last amendments are the TFA 2019 changes of 1 June 2019 and Renting Homes (Wales) Act 2016 consequentials of 1 December 2022). The three-channel publication duty (premises, own website, third-party site or a link on it), the per-dwelling-or-per-tenant indication and "the amount of each fee inclusive of any applicable tax" all stand as the seed states them.
+
+---
+
+## F-171 · HOUSE_POSITION_EXTENSION · §5.B attributes two s.38(2) limbs to CG15250 that are on the face of the statute, and flattens the acquisition/disposal split
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A6-A9 (pages: A7, A9; applies wave-wide). **Status:** open (precision patch, manager closes at Stage 2b). **Severity:** LOW, but it touches every page in the wave.
+
+§5.B currently reads: "fees, commission or remuneration for the professional services of any surveyor, valuer, auctioneer, accountant, agent or legal adviser; costs of transfer or conveyance including stamp duty or SDLT; **plus (per CG15250) advertising to find a buyer and costs of valuation/apportionment required for the CGT computation**".
+
+**Those two limbs are in the Act, not only in the manual**, and they are direction-specific. TCGA 1992 s.38(2) re-fetched verbatim at `https://www.legislation.gov.uk/ukpga/1992/12/section/38` on 2026-08-21 (page states it is current to 20 August 2026), closing words:
+
+> "... and costs of transfer or conveyance (including stamp duty or stamp duty land tax) together **(a) in the case of the acquisition of an asset, with costs of advertising to find a seller, and (b) in the case of a disposal, with costs of advertising to find a buyer and costs reasonably incurred in making any valuation or apportionment required for the purposes of the computation of the gain, including in particular expenses reasonably incurred in ascertaining market value where required by this Act.**"
+
+**Proposed patch to §5.B:** cite s.38(2)(a) and s.38(2)(b) directly for the advertising and valuation limbs, and reserve CG15250 for what it actually supplies, the "the definition is exhaustive" characterisation. Add the direction split, because A9 is a both-ends-of-the-chain page and the distinction is live there: advertising to find a **seller** is an acquisition cost banked into base cost under s.38(1)(a); advertising to find a **buyer** is a disposal cost under s.38(1)(c).
+
+Second limb worth adding while the section is open: **s.38(1)(b) also allows "any expenditure wholly and exclusively incurred by him in establishing, preserving or defending his title to, or to a right over, the asset"**. §5.B currently summarises s.38(1)(b) as enhancement expenditure only. The title limb is the argument a vendor facing a contested dual-fee claim would put (A8), and it is the same limb §39.A relies on for PRs' cost of establishing title, so the two locks should read consistently.
+
+---
+
+## F-172 · BRIEF_DRIFT · the Stage 1 seed for A8 states the ratio of Foxtons v Pelkey Bicknell backwards
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A6-A9 (page: `estate-agent-contract-tie-in-periods`). **Status:** corrected in the brief at Stage 2; logged here because the same error is near-universal on the consumer SERP and will be re-imported by any future session that checks a competitor rather than the judgment. **Severity:** MEDIUM (a page asserting it would be publishing a wrong statement of law).
+
+The A8 seed says: "Lord Neuberger held that 'a purchaser introduced by us' means a person who becomes a purchaser as a result of that introduction, and that **an agent whose commission depends on a successful transaction must normally be the effective cause of that transaction**."
+
+The first half is right. **The second half is the opposite of what the judgment says about that contract.** BAILII returned HTTP 403 on 2026-08-21; the judgment was read at `https://caselaw.nationalarchives.gov.uk/ewca/civ/2008/419` (Court of Appeal (Civil Division), 23 April 2008, Waller LJ, Rix LJ, Lord Neuberger of Abbotsbury). Verbatim:
+
+- **Para 36 (the holding, reached by construction):** "in order to be entitled to a commission under the Terms for having introduced a purchaser, Foxtons have to show that they introduced the person concerned as the (eventual) purchaser, or, to put the point in Nourse LJ's words, that they introduced the purchaser to the purchase, and not merely to the property."
+- **Para 37 (the limb the seed inverts):** "It appears to follow that there can be no question of implying into the Terms a requirement that Foxtons must have been the, or an, effective cause of the purchase in question."
+- **Para 20 (the general principle the seed was reaching for, which is separate):** "the term identified in Article 57 of Bowstead is 'very readily' implied, especially in a residential consumer context, unless the provisions of the particular contract or the facts of the particular case negative it."
+- **Para 24 (directly useful for any dual-fee section):** "While I accept that there could be circumstances in which more than one commission could be payable, it would far rarer an occurrence than on Foxtons' interpretation."
+- **Para 22** sets out the two rival constructions. **Outcome: appeal allowed**, judgment for Mrs Bicknell.
+
+**Writing rule for any page citing this case:** the construction point with para 36, the no-implied-term point with para 37, and the Bowstead Article 57 effective-cause principle with para 20 as a separate proposition. **Never "Lord Neuberger held the agent must be the effective cause."**
+
+---
+
+## F-173 · BRIEF_DRIFT + amendment to F-165 · Land Registry Scale 1 is not "electronic versus otherwise"; the reduced fee is whole-title portal transfers only
+
+**Raised:** 2026-08-21, Stage 2 session A, batch A6-A9 (page: `cost-of-moving-house-uk`; gating item for the batch). **Status:** open. **Severity:** MEDIUM (a published fee table would be wrong for part transfers and new leases).
+
+F-165 and the A9 seed both render SI 2024/931 Sch 1 Scale 1 as two columns, "£X electronic / £Y otherwise". HM Land Registry's own restatement (`https://www.gov.uk/guidance/hm-land-registry-registration-services-fees`, fetched 2026-08-21) shows four:
+
+| Value or amount | By post | Portal or gateway, **whole-title** transfer or surrender | Portal or gateway, **part** transfer or new lease | Voluntary first registration |
+|---|---|---|---|---|
+| £0 to £80,000 | £45 | £20 | £45 | £30 |
+| £80,001 to £100,000 | £95 | £40 | £95 | £70 |
+| £100,001 to £200,000 | £230 | £100 | £230 | £170 |
+| £200,001 to £500,000 | £330 | £150 | £330 | £250 |
+| £500,001 to £1,000,000 | £655 | £295 | £655 | £495 |
+| £1,000,001 and over | £1,105 | £500 | £1,105 | £830 |
+
+**The reduced fee is not a discount for filing online. It is a discount for a portal or gateway application to transfer or surrender a WHOLE registered title.** A transfer of part, or a new lease, lodged electronically pays the full fee. On an ordinary whole-house sale the reduced column is correct, which is why the error is easy to miss and easy to publish.
+
+Two further rules from the same sources, both worth carrying on any page that prints the scale: **"Where the amount or value is a figure which includes pence, it must be rounded down to the nearest £1"** (SI 2024/931 Sch 1), and **"When assessing fees under Scale 1, fees must be paid on the VAT-inclusive consideration or rent"** (HM Land Registry).
+
+**Revocation of the 2021 Order confirmed** (the gating item), verbatim from `https://www.legislation.gov.uk/uksi/2021/1226`, fetched 2026-08-21: the instrument is titled "The Land Registration Fee Order 2021 (revoked)" and annotated "Order revoked (9.12.2024) by The Land Registration Fee Order 2024 (S.I. 2024/931), arts. 1(1), 14". **SI 2024/931 came into force 9 December 2024.** Any page citing registration fees cites the 2024 Order.
+
+**Requested action:** amend F-165 in place to the four-column form, and if the conductor adds the one-line house-position anchor F-165 proposes, add it in the four-column form rather than the two-column one.
 
 ---
 

@@ -48,5 +48,92 @@ The accountant's angle is the house differentiator. HomeOwners Alliance, TheAdvi
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A10-A13)
+
+### 1. Verify-at-write items that gated this page
+
+**RESOLVED - auction seller costs, from named dated live sources.** Three sources fetched and confirmed HTTP 200 on 2026-08-21. Every figure below carries its source; the writer copies the attribution onto the page and never rounds a figure into a bare assertion.
+
+| Cost | Figure as published | Source (fetched 2026-08-21) |
+|---|---|---|
+| Auctioneer's commission | "around 2% to 3% + VAT of the final sale price", minimum fee "£1,500 upwards", payable only on a successful sale | Auction Link, `https://auction-link.org.uk/auction-fees-for-selling-property/`, page states "Last updated 17 August 2026" |
+| Auctioneer's commission (second reading) | "around 2.5% of the price you get for the property" | HomeOwners Alliance, `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/how-to-sell-your-house-at-auction/`, footer © 2026, no per-page updated date shown |
+| Entry / catalogue fee | "around £300 + VAT or more", described as negotiable and sometimes deferrable until after completion | Auction Link, as above, 17 August 2026 |
+| Legal pack | "Legal pack preparation services tend to cost £250 and above, paid to a solicitor or other representative in advance"; "Average legal pack costs are around £200-£400, but this tends to be higher for leasehold lots" | Clive Emson Auctioneers, `https://www.cliveemson.co.uk/news/how-much-does-it-cost-to-sell-a-house-at-auction/`, published 20 March 2025 |
+| Leasehold management pack | "£200 or more" on top of the freehold legal pack | Auction Link, as above, 17 August 2026 |
+| Deposit and completion | "10% deposit, then they have a month to give you the remaining 90%"; completion "within 28 days" | HomeOwners Alliance, as above; corroborated by iamsold, `https://www.iamsold.co.uk/property-auctions-explained/faqs/`, "Completion is then generally expected within 28-days" |
+| Commission when the lot does not sell | Clive Emson: "if the property does not sell, you won't be expected to pay" the commission, but entry and legal fees remain due | Clive Emson, as above, 20 March 2025 |
+
+**NOT resolved, and the page must therefore not assert it - the auction discount.** There is no reliable published UK figure for a residential auction discount, and the auction houses publish the opposite claim. Clive Emson, `https://www.cliveemson.co.uk/news/does-a-property-sell-for-less-at-auction/` (published 15 September 2025, fetched 200): "UK properties can achieve upwards of 110% of their market value", and approximately 80% of properties sell at their first auction at or above the reserve. The HomeOwners Alliance selling-at-auction guide gives no discount figure at all. **WRITER RULE: do not publish a percentage discount.** Write the discount as property-specific and reserve-controlled, name the conditions under which a discount is real (thin legal pack, short lease, structural defect, tenanted with a poor covenant, a lot with a single plausible buyer type), and cite Clive Emson for the counter-position so the page is visibly not repeating folklore. This is a differentiator, not a gap: every consumer page argues 10% versus 20% from nothing.
+
+**RESOLVED - sales-side approved redress schemes (the seed's open item).** Two schemes operate on the **sales** side and they are the same two as the lettings side, which is why the SI confusion in §26.14 matters: **The Property Ombudsman** and **Property Redress** (the rebranded Property Redress Scheme). Property Redress's own legal page, `https://www.propertyredress.co.uk/the-law` (fetched 200, 2026-08-21), cites **"Consumers, Estate Agents and Redress Act 2007: Part 3"** as the governing law and states it is "authorised by the National Trading Standards Estate and Lettings Agency Teams". That is consistent with our lock rather than in conflict with it: EAA 1979 s.23A was inserted by CEARA 2007 s.66(2), and the duty to belong is imposed by **SI 2008/1712 art 2**. **Writer rule:** name the two schemes, cite EAA 1979 s.23A + SI 2008/1712 art 2 as the duty, and never cite SI 2014/2359 (lettings) on this page. Re-check the approved list at write time, because approval is administrative and can change without legislation.
+
+**Carried, not re-derived:** the statutory anchors in the Stage 1 section were all WebFetch-verified on 2026-08-21 and are now locked at HP §5.B and §26.14. Do not re-litigate them; re-fetch per §16.35 at write time only.
+
+### 2. Competitor verification and the beat-them plan
+
+Verified live 2026-08-21 (HTTP 200, on-topic). Use these; do not add unverified firm URLs at write time without fetching them first.
+
+- `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/how-to-sell-your-house-at-auction/` - HomeOwners Alliance, "Selling A House At Auction: A Complete Guide 2026". Gives 2.5% commission, 10% deposit, 28 days. **Confirmed by fetch: no mention of capital gains tax, TCGA 1992, the date of disposal, the Estate Agents Act 1979, or any statute by name.**
+- `https://www.cliveemson.co.uk/news/how-much-does-it-cost-to-sell-a-house-at-auction/` - Clive Emson Auctioneers, 20 March 2025. Seller-cost guide. Legal pack figures; declines to publish a commission percentage.
+- `https://www.cliveemson.co.uk/news/does-a-property-sell-for-less-at-auction/` - Clive Emson Auctioneers, 15 September 2025. The discount counter-position.
+- `https://auction-link.org.uk/auction-fees-for-selling-property/` - Auction Link, last updated 17 August 2026. The fullest published seller fee breakdown found.
+
+Dead or blocked at Stage 2, do not cite: `auctionhouse.co.uk/selling-at-auction` (404); `sdlauctions.co.uk` (403 to automated fetch, so its 4% + VAT / £5,000 minimum buyer-paid structure is **unverified and must not be published**).
+
+**Beat-them plan, five elements the ranking pages do not have:**
+1. **The tax layer (the wave's mandatory hook).** TCGA 1992 s.38(2) names the **auctioneer** expressly in an exhaustive list, so auction commission, the entry fee and the legal-pack solicitor's fee are all deductible. None of the four competitors mentions tax at all.
+2. **The disposal date.** s.28(1) puts the disposal at the fall of the hammer, not at completion, so an auction straddling early April moves the gain into the earlier tax year while the 60-day clock under FA 2019 Sch 2 para 3(1)(b) still runs from **completion**. This is the single most valuable sentence on the page and it appears nowhere in the SERP.
+3. **Why the hammer binds, with the section.** LP(MP)A 1989 s.2(5)(b) disapplies the s.2(1) writing formalities for "a contract made in the course of a public auction". Competitors say "it is legally binding"; none says why.
+4. **The fee-disclosure right, with the consequence.** EAA 1979 s.18 requires fees and prospective liabilities before contract and **s.18(5)** makes a non-compliant contract unenforceable by the agent except by court order. A seller reading that has leverage nobody else gave them.
+5. **The guide-price rule as it is since 6 April 2025.** DMCCA 2024 Sch 20 para 5 (bait advertising) and para 7 (false scarcity to elicit an immediate decision), with CPUTR 2008 revoked by s.251(1). Every competitor page that touches guide prices is either silent or citing revoked law.
+
+### 3. Query coverage map
+
+Primary: `sell house at auction` and variants (880/mo, KD 8, £14.56 CPC per PROPERTY_PAGE_PLAN A12). Secondaries mapped to H2 level:
+
+| Query family | H2 that owns it |
+|---|---|
+| how to sell a house at auction / auction process | H2 2 (how it works, valuation to completion) |
+| cost of selling a house at auction / auction fees for sellers | H2 3 (the cost table) |
+| how long does it take to sell at auction | H2 4 (timetable) |
+| is an auction sale legally binding / can I pull out | H2 5 (the hammer) |
+| do houses sell for less at auction | H2 6 (discount and reserve) |
+| what sells well at auction / should I auction my house | H2 7 (which properties) |
+| auction legal pack | H2 8 (legal pack) |
+| capital gains tax on auction sale | H2 10 (tax) |
+
+Lane guards enforced: A11 owns modern method (one contrast paragraph plus link, no MMoA cost table here); A12 owns part-exchange; A1-A5 own agent fee structures (one comparison row only); the armed cgt1 cluster owns CGT mechanics (hook paragraph plus one worked line is the ceiling).
+
+### 4. Structure
+
+H2 skeleton (9):
+1. Should you sell at auction? The short answer
+2. How selling at auction actually works, step by step
+3. What it costs the seller (cost table)
+4. How long it takes, and the 28-day completion rule
+5. The fall of the hammer: why you are bound, and what happens if the buyer walks
+6. Guide price, reserve, and whether you really lose money at auction
+7. Which properties genuinely do better at auction than with an agent
+8. The legal pack, and why a thin one costs you more than any fee
+9. What your auction house must tell you before you sign (EAA 1979 s.18, redress, DMCCA 2024)
+10. Capital gains tax on an auction sale: the deduction, and the date
+
+**Cost table spec.** Columns: Cost item | Typical published range | What drives it | Deductible against CGT? | Source. Rows: auctioneer's commission; entry / catalogue fee; legal pack (freehold); leasehold management pack; conveyancing on completion; EPC; and one comparison row for high-street agent commission (cross-referenced to A1, not re-derived). The "Deductible?" column is the house asset: commission, entry fee, legal-pack and conveyancing fees are inside the exhaustive s.38(2) list; **removals, storage, mortgage early-repayment charges and pre-sale cosmetic spend are not** (HP §5.B, CG15250). Every range cell carries the source name and date from the table in section 1 above.
+
+**Worked examples (second person only, no named personas).**
+- *Example 1, the tax-year fork.* You auction a let flat, the hammer falls on 30 March and completion is on 27 April. The disposal is in the tax year of the hammer (s.28(1)); the 60-day return runs from 27 April (FA 2019 Sch 2 para 3(1)(b)). One line showing which year's annual exempt amount and which year's losses you are using, then a link out. No full computation.
+- *Example 2, the deduction.* A hammer price with the published commission range applied, plus the entry fee and legal pack, shown as the s.38(1)(c) deduction, and one line naming what you cannot deduct (removals, storage, ERC). Use "assume" language and label every input as illustrative arithmetic on the sourced ranges, not a quoted market price.
+
+**FAQ list (12):** Can I set a reserve and does the auction house have to honour it? What is the difference between a guide price and a reserve? Am I bound the moment the hammer falls? What happens if the winning bidder does not complete? Do I pay anything if the lot does not sell? Who pays the buyer's premium and does it come out of my price? Can I withdraw the lot before the auction, and what does that cost? How long does the whole thing take from instruction? Do I need the legal pack ready before the catalogue goes out? Can I sell a tenanted property at auction? Is an auction sale still an estate agency transaction for redress purposes? When do I have to report and pay the CGT?
+
+**Internal links (exact paths, all targets confirmed to exist 2026-08-21):**
+`/cost-of-selling-a-property` (pillar, as if live) · `/calculators/cost-of-selling-calculator` (as if live) · `/calculators/capital-gains-tax-calculator` · `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk` · `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026` · `/blog/capital-gains-tax/capital-gains-tax-second-home-sale` · `/blog/property-finance/bridging-finance-for-auction-purchases` (buyer-side counterpart; note the route segment is **property-finance**, not capital-gains-tax) · Wave 12 siblings `/blog/capital-gains-tax/modern-method-of-auction-explained`, `/blog/capital-gains-tax/selling-a-probate-property`, `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`.
+
+### 5. Statutory cross-check against the new locks (§16.36)
+
+Every Stage 1 citation on this page re-read against §5.B, §26.14 and §26.15. **No mismatches found**; the locks were built from this batch's own verifications. Two precision points carried forward: (a) cite **FA 2022 s.23(2)** as the enacting provision for the 60-day figure, not the October 2021 announcement (§5.B); (b) the redress duty is **EAA 1979 s.23A + SI 2008/1712 art 2**, never SI 2014/2359 (§26.14).
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21 Stage 1 seed written (Wave 12 bucket A, batch A10-A13). Statutory anchors WebFetch-verified same day: LP(MP)A 1989 s.2(5)(b), TCGA 1992 ss.28/38, EAA 1979 ss.1/18/23A, DMCCA 2024 ss.225-230 + Sch 20 + s.251(1), FA 2019 Sch 2 para 3(1)(b), CG15250. Flags raised by this batch: **F-162** (HOUSE_POSITION_EXTENSION, §5.B disposal-date and incidental-costs floor), **F-163** (INTERNAL_LINK, `bridging-finance-for-auction-purchases` back-link). Flags reused rather than duplicated: **F-150** (sales-agent and consumer-practices floor) and **F-151** (CPUTR 2008 cited as live on `sdlt-refund-scams-how-to-avoid`), both already raised by the A1-A5 batch and independently confirmed here at the same primary sources. Open Stage 2 item: which redress schemes are currently approved on the sales side.
+- 2026-08-21 Stage 2 extension written (batch A10-A13). Seller-cost figures sourced from four live named sources (Auction Link 17 Aug 2026; Clive Emson 20 Mar 2025 and 15 Sep 2025; HomeOwners Alliance; iamsold). Sales-side redress open item CLOSED: The Property Ombudsman and Property Redress, duty at EAA 1979 s.23A + SI 2008/1712 art 2, corroborated at propertyredress.co.uk/the-law. **Auction discount deliberately NOT resolved and must not be published**: no reliable named figure exists and Clive Emson publishes the counter-position (upwards of 110% of market value achievable, ~80% sell at or above reserve at first auction). Dead competitor URLs removed at Stage 2: auctionhouse.co.uk/selling-at-auction (404), sdlauctions.co.uk (403, so its fee structure is unpublishable). Statutory cross-check against §5.B and §26.14 found no mismatch. No new flags from this page.

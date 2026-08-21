@@ -44,5 +44,114 @@ THE ACCOUNTANT'S ANGLE IS THE HOUSE DIFFERENTIATOR. GetAgent, TheAdvisory, HomeO
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A6-A9)
+
+### S2.1 Verify-at-write items resolved
+
+**RESOLVED. TCGA 1992 s.38(2) verbatim, and the seed's paraphrase needs one correction.** Fetched `https://www.legislation.gov.uk/ukpga/1992/12/section/38` on 2026-08-21, page states "up to date with changes known to be in force on or before 20 August 2026". s.38(2) reads: "the incidental costs to the person making the disposal of the acquisition of the asset or of its disposal shall consist of expenditure wholly and exclusively incurred by him for the purposes of the acquisition or, as the case may be, the disposal, being fees, commission or remuneration paid for the professional services of any surveyor or valuer, or auctioneer, or accountant, or agent or legal adviser and costs of transfer or conveyance (including stamp duty or stamp duty land tax) together (a) in the case of the acquisition of an asset, with costs of advertising to find a seller, and (b) in the case of a disposal, with costs of advertising to find a buyer and costs reasonably incurred in making any valuation or apportionment required for the purposes of the computation of the gain, including in particular expenses reasonably incurred in ascertaining market value where required by this Act."
+
+**The correction:** advertising to find a **seller** is the acquisition limb, s.38(2)(a); advertising to find a **buyer** plus valuation and apportionment costs are the disposal limb, s.38(2)(b). The seed rolls both into one list. On a sell-side page only s.38(2)(b) is in scope. **Resolved for lock §5.B**, which currently attributes the advertising and valuation limbs to CG15250; they are on the face of the statute at s.38(2)(a) and (b) and should be cited as such, with CG15250 supporting only the "exhaustive" characterisation. Raised as **F-171** for the conductor's Stage 2b patch.
+
+**RESOLVED. There is no statutory cap on estate agent commission, and the SERP has no source that says otherwise.** No instrument found on any Stage 2 fetch imposes one; EAA 1979 s.18 regulates disclosure, not amount, and DMCCA 2024 Pt 4 Ch 1 regulates the presentation of price, not its level. The seed's instruction to say so explicitly stands and is now the answer to key question 5.
+
+**RESOLVED. The CPUTR 2008 revocation and the DMCCA 2024 replacement are locked at §26.14** ("CPUTR 2008 (SI 2008/1277) REVOKED by DMCCA 2024 s.251(1) from 6 April 2025", with the trap that legislation.gov.uk's SI 2008/1277 contents page still shows "no known outstanding effects"). Nothing further to fetch; cite the lock.
+
+**PARTLY BLOCKED, and the writer must respect the split.** No source publishing **London commission percentages from real completion data** could be reached at Stage 2. GetAgent, the only competitor known to hold completion data, returned HTTP 429 on two separate attempts (`https://www.getagent.co.uk/sell/estate-agent-fees` and `https://www.getagent.co.uk/estate-agent-fees`), and the Estate Agent Today trade write-up of GetAgent's Q4 2025 data returned HTTP 403. **Do not cite GetAgent, do not cite any GetAgent figure at second hand, and do not assert a borough-level completion-data average.** What IS sourced is set out in S2.2: a dated London percentage from a named guide, and authoritative London and England average prices from HM Land Registry. Percentages are the sourced-or-illustrative layer; **the pound figures are built from HM Land Registry prices, which is the part no competitor anchors properly.**
+
+**RE-VERIFY AT WRITE, do not carry from this brief:** CGT 18% / 24% and the £3,000 AEA (house_positions §5); the 60-day window (FA 2019 Sch 2 para 3(1)(b), the "60th" substituted by FA 2022 s.23(2), per §5.B); EAA 1979 s.18(5) and (6) wording.
+
+### S2.2 Cost tables, sources filled
+
+Sources, all fetched 2026-08-21 and live:
+- **[HOA]** HomeOwners Alliance, "Estate Agent Fees - And How You Can Save In 2026", `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/how-much-should-i-pay-the-estate-agent/`. Verbatim: "The average estate agent fee in 2026 is 1.42% including VAT"; sole agency "typical fees are 1.2% to 1.8% inc VAT"; multi-agency "typical fees are 3% to 3.6% inc VAT"; "The VAT rate on estate agent fees in the UK is 20%." **No date of last update and no method disclosed on the page. Record that.** No London figure.
+- **[ADV]** TheAdvisory, "Estate Agent Fees & Commission: The Definitive Guide (2026)", `https://www.theadvisory.co.uk/estate-agents/fees/`. Sole agency no-sale-no-fee "1.18%+VAT" (1.42% inc VAT), range 0.5% to 2% plus VAT, multi-agency 2.5% plus VAT. Distribution: 29% paid 1.0%, 25% paid 1.5%. **Method disclosed and it is the page's weakness: a TheAdvisory survey of 2,137 sellers in England and Wales conducted May to July 2018, republished under a "2026 update" header.** No London figure. Cites EAA 1979, SI 1991/859 and the TPO code.
+- **[PRP]** Propelr, "Estate Agent Fees London 2026", `https://www.propelr.co.uk/guides/estate-agent-fees-london`, "Updated 18 March 2026". London sole agency "1.5% plus VAT", which "works out at 1.8% of the sale price"; about £9,000 including VAT on a £500,000 property; national comparison given as 1.2% plus VAT (1.44% including VAT); a borough table ranging from Kensington and Chelsea at 1.2% to 1.5% down to Barking and Dagenham at 1.5% to 2.0%. Cites HomeOwners Alliance, HM Land Registry UK House Price Index, EAA 1979, TPO and the Rightmove House Price Index.
+- **[HPI]** HM Land Registry UK House Price Index, `https://landregistry.data.gov.uk/app/ukhpi`, **London average £553,870, England average £293,262, both June 2026**, fetched 2026-08-21. This is the authoritative anchor for every pound figure on the page.
+
+**Table 1, London price bands against percentage and cash fee.** Bands run £300,000 / £500,000 / £750,000 / £1,000,000 / £1,500,000, with the **£553,870 London average [HPI]** as the marked row. Percentage column: 1.5% plus VAT, that is 1.8% inclusive [PRP, 18 Mar 2026], with the 1.2% to 1.8% inclusive sole-agency spread [HOA] shown as the national comparison. Cash column computed from the band, arithmetic shown. **Every percentage cell carries its source inline; the cash cells are our arithmetic on a sourced percentage and a sourced price, and the page says so.**
+
+**Table 2, drivers of the spread.** Sole agency versus multi-agency (multi-agency 3% to 3.6% inclusive [HOA], 2.5% plus VAT [ADV]); price band (the percentage falls as the price rises, the pound figure rises); borough (Kensington and Chelsea 1.2% to 1.5%, Barking and Dagenham 1.5% to 2.0% [PRP], **labelled as a single guide's figures, not market-wide data**); fee model (percentage, fixed fee, upfront versus no-sale-no-fee); marketing package. **The borough row is the weakest-sourced row on the page. Label it "one published guide's borough range, March 2026" and never present it as completion data.**
+
+**Table 3, the after-tax comparison. This is the beat-them table and no competitor has it.** Three columns: commission paid; net cost where Private Residence Relief covers the whole gain (100% of the fee, no relief); net cost where the property is let or a second home (fee less relief at the residential rates in house_positions §5). Rows at the London average price and at £1,000,000. The effect line the seed already drafted holds arithmetically: at the higher residential rate every £10,000 of commission is £2,400 of CGT not paid, so a 1.5% fee on a chargeable disposal costs about 1.14% net. **Rates come from §5 at write time, not from this brief.**
+
+**Marked illustrative, label as such on the page:** any withdrawal fee, photography, EPC or premium-listing add-on. No Stage 2 source published amounts for these on a London-specific basis.
+
+### S2.3 Competitor verification and beat-them plan
+
+**Verified live (HTTP 200, on-topic, fetched 2026-08-21):** [HOA], [ADV] and [PRP] above.
+
+**Deleted or unreachable, tested 2026-08-21:** `getagent.co.uk` two paths, HTTP 429 both times; `estateagenttoday.co.uk` Q4 2025 fee article, HTTP 403; the Which? estate agent fees path tested, 404. **Do not list any of these as competitor URLs and do not repeat their figures at second hand.**
+
+**Beat-them plan, five elements:**
+1. **The after-tax cost of the fee (Table 3).** [HOA], [ADV] and [PRP] all price the commission. None of them prices the tax. On a London disposal the gap between gross and net cost is thousands of pounds, and the whole difference turns on whether PRR covers the gain.
+2. **s.38(2) is an exhaustive list, so the boundary matters.** The agent's commission is in (professional services of an agent). Your own time, travel, staging, storage and removals are not. HMRC CG15250: "TCGA92/S38 defines the incidental costs of acquisition and disposal. The definition is exhaustive." No consumer page on this SERP draws that line.
+3. **The pound figures are anchored to HM Land Registry, not to a rounded example price.** [HPI] London £553,870, June 2026. [HOA] runs its example on a £275,000 property, which is not a London number at all; [PRP] uses a round £500,000. Using the actual published London average, dated, is a small credibility win that costs nothing.
+4. **Date and method honesty about the market figures.** [ADV]'s headline 1.18% plus VAT rests on a survey of 2,137 sellers run **May to July 2018** and republished with a 2026 header; [HOA] publishes 1.42% with no visible update date and no method. Our page states the source and the date of every percentage it prints. This is a differentiator precisely because the ranking pages do not do it.
+5. **There is no cap, and here is what the law does instead.** EAA 1979 s.18 pre-contract disclosure, with s.18(5) making the contract unenforceable by the agent on breach except by court order and s.18(6) letting the court reduce or discharge the sum, plus DMCCA 2024 ss.227 and 230 on material information including total price. **Note for the writer: [ADV] does cite EAA 1979 and SI 1991/859, so the "SERP-wide uncited" framing in F-152 is true of the fee pages generally but NOT of TheAdvisory. Do not claim no competitor cites any law. Claim, accurately, that none of them connects the law to the tax.**
+
+### S2.4 Query coverage map
+
+**Primary:** `average london estate agent fees` (50/mo, £13.56 CPC), with `how much commission do estate agents charge` (90/mo) as the co-primary in the same H2.
+
+**Secondaries, mapped to H2 level:**
+- `estate agent fees london` and `london estate agent commission` to H2.1
+- `estate agent fees by borough` to H2.2
+- `are estate agent fees negotiable london` to H2.4
+- `is there a legal limit on estate agent fees` to H2.5
+- `sole agency vs multi agency london` to H2.6, one section only, contract mechanics belong to A8
+- `are estate agent fees tax deductible` to H2.7
+
+**Lane discipline.** A7 is the regional lane and only the regional lane. **No national average table**; the national comparison is a single referenced line pointing to A1. No fee-model comparison table (A2 owns it), no online-agent pricing (A5 owns it), no tie-in or contract-terms content beyond a one-line pointer to A8. Freeze adjacency: no CGT rate table, no AEA explainer, no PRR mechanics, no 60-day walkthrough. Hook paragraph plus one worked line is the ceiling.
+
+### S2.5 Structure
+
+**H2 skeleton (8):**
+1. What London estate agents actually charge in 2026 (Table 1, price bands and cash)
+2. Why the percentage is lower in prime London and the fee is higher (Table 2, drivers)
+3. What is inside the fee and what is charged on top
+4. What a realistic negotiation looks like in London
+5. Is there a cap on estate agent fees? (No, and what EAA 1979 s.18 does instead)
+6. Sole agency, multi-agency and two liabilities on one sale (short, links A8)
+7. What the commission is worth back against Capital Gains Tax (Table 3)
+8. Do you have to report the sale within 60 days?
+
+**Worked example 1 (second person, no names).** You sell at the London average of £553,870 [HPI, June 2026] on a sole agency instruction at 1.5% plus VAT, that is 1.8% inclusive [PRP]. The commission is roughly £9,970. If the property was your only or main residence throughout, that is the whole cost. Show it as a single figure.
+
+**Worked example 2 (second person, one line, the CGT hook).** Same sale, but the property was let for part of your ownership, so PRR does not cover the whole gain. The same commission is an incidental cost of making the disposal under TCGA 1992 s.38(1)(c), so it reduces the chargeable gain and the net cost falls to roughly three-quarters of the invoice at the higher residential rate. **One line. Rates from §5 at write. Then link out to the CGT cluster.**
+
+**FAQ list (12):**
+1. What is the average estate agent fee in London?
+2. How much is that in pounds on a typical London sale?
+3. Why are London percentages lower than the rest of England when the fee is bigger?
+4. Do estate agents in London quote fees including VAT?
+5. Is there a legal maximum an estate agent can charge?
+6. What must an agent tell me about fees before I sign, and what if they do not?
+7. How much can I realistically negotiate off a London quote?
+8. Is multi-agency worth it in London, and can I end up paying twice?
+9. Do prime central London agencies charge differently?
+10. Are estate agent fees tax deductible?
+11. How much of the commission comes back if the property was let?
+12. Do I have to file a 60-day return if I sell my only home?
+
+**Internal links, exact paths (all verified on disk 2026-08-21):**
+- `/blog/capital-gains-tax/capital-gains-tax-second-home-sale`
+- `/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained`
+- `/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27`
+- `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026`
+- `/blog/capital-gains-tax/tax-sell-rental-property-uk`
+- `/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step`
+- `/blog/capital-gains-tax/reduce-cgt-property-disposal-uk`
+- Wave 12 siblings: `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`, `/blog/capital-gains-tax/cheapest-estate-agent-fees-uk`, `/blog/capital-gains-tax/online-estate-agents-uk`, `/blog/capital-gains-tax/estate-agent-contract-tie-in-periods`, `/blog/capital-gains-tax/cost-of-moving-house-uk`
+- Conductor-side, link as if live: `/cost-of-selling-a-property`, `/calculators/cost-of-selling-calculator`
+- **Do not link `/calculators/capital-gains-tax-calculator`** (armed experiment).
+
+### S2.6 Statutory cross-check against the new locks (§16.36)
+
+- **§5.B supersedes the seed's proposed §5.A mini-lock.** Cite §5.B. It also adds the disposal-date point the seed does not carry: the s.28(1) disposal date is exchange, the 60-day trigger is completion, and they are different dates. Worth one line in H2.8, not a section.
+- **§26.14 supersedes the seed's proposed estate-agency lock (F-151).** Cite §26.14. It adds two things the seed lacks and the page should use: EAA 1979 s.1(4), which puts pure advertisers and portals outside the Act, and the sale-side redress instrument, **EAA 1979 s.23A with SI 2008/1712 art 2**. The seed's reference to §26.5 redress in the A6 context does not travel here; **never cite SI 2014/2359 on a selling-agent page.**
+- **§5.B do-not-write list applies:** no "you can deduct removal costs against the gain", no "the 60-day clock runs from exchange".
+- Seed citations otherwise consistent with the locks. One correction recorded above (s.38(2)(a) versus (b) advertising limbs, F-171).
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21, Stage 1 seed written. Statutory anchors WebFetch-verified: TCGA 1992 s.38, EAA 1979 s.18, DMCCA 2024 Pt 4 Ch 1 ss.225-230, CPUTR 2008 revocation annotation, FA 2019 Sch 2 para 3, CG15250. Flags raised: F-150 (s.38 lock), F-151 (estate-agency consumer-law lock), F-152 (existing page cites the revoked CPRs as live).
+- 2026-08-21, Stage 2 (batch A6-A9). Extended in place. Resolved: TCGA 1992 s.38(1)-(3) re-fetched verbatim (current to 20 Aug 2026), and the seed's advertising limb corrected, s.38(2)(a) is advertising to find a **seller** on acquisition, s.38(2)(b) is advertising to find a **buyer** plus valuation and apportionment on disposal; no statutory cap on commission confirmed; CPUTR revocation covered by locked §26.14. Sourced: HOA (1.42% inc VAT, no date, no method), TheAdvisory (1.18% plus VAT, **method disclosed as a May-July 2018 survey of 2,137 sellers republished under a 2026 header**), Propelr (London 1.5% plus VAT, updated 18 Mar 2026, borough table), HM Land Registry UK HPI (**London £553,870, England £293,262, June 2026**). Competitors: 3 live, 3 unreachable and deleted (GetAgent 429 twice, Estate Agent Today 403, Which? 404). **Still blocked: no reachable source for London completion-data commission averages; borough percentages are one guide's figures and must be labelled as such; do not cite GetAgent at second hand.** Superseded: seed's §5.A proposal by §5.B, seed's F-151 proposal by §26.14. Flag raised: **F-171**.

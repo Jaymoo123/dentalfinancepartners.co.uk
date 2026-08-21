@@ -51,4 +51,82 @@ THE ACCOUNTANT'S ANGLE. The competitors (HomeOwners Alliance, TheAdvisory, Which
 - Coverage-page spec per NETNEW_PROGRAM §8.3: subject as title, question-shaped H2s, the answer in the first sentence under each, one current tax year leads.
 - The decision section must actually decide. A page that says "it depends" without naming who it suits has failed the query.
 
+## Stage 2 extensions (2026-08-21, session A batch A1-A5)
+
+### 1. Verify-at-write resolutions
+
+- **The legal "yes": RESOLVED from the Act as re-fetched.** https://www.legislation.gov.uk/ukpga/1979/38/section/1, fetched 2026-08-21, revised text current to **20 August 2026**. s.1(1) applies the Act to things done **in the course of a business** on **instructions received from another person** who wants to dispose of or acquire an interest in land. A person selling their own home does neither, so the Act does not reach them and imposes no duty to use an agent. **s.1(4) is a 2013 substitution**, so pre-2013 commentary on the portal boundary is unreliable and must not be relied on. s.1(2) exclusions confirmed (practising solicitors in the course of the profession, CCA credit brokerage, distinct survey or valuation contracts, planning and listed-building applications).
+- **Blocker one, an existing agency agreement: RESOLVED with the prescribed wording (see the A1 and A2 briefs for the full Stage 2 capture).** SI 1991/859 reg 5 and the Schedule, fetched 2026-08-21. The sentence that decides this blocker, in the prescribed words: under **sole selling rights** you are liable "if unconditional contracts for the sale of the property are exchanged in the period during which we have sole selling rights, **even if the purchaser was not found by us but by another agent or by any other person, including yourself**", and also after that period where the buyer was introduced or negotiated with during it. The **ready, willing and able** explanation is the second trap: the fee "must be paid even if you subsequently withdraw and unconditional contracts for sale are not exchanged, irrespective of your reasons". **reg 5(3) puts the explanation in the contract document itself**, so the reader's first action is to look at the agreement, not at the marketing. Deep dive goes to A8; A4 gets this one decisive quote and a link.
+- **The second "can you", skipping the conveyancer: RESOLVED, with the statute supplying its own ceiling (resolved for lock §26.14, patch proposed at F-168).** LSA 2007 Sch 3 para 3 fetched in full at https://www.legislation.gov.uk/ukpga/2007/29/schedule/3 on 2026-08-21. **para 3(10): "The person is exempt if the person is an individual who carries on the activity otherwise than for, or in expectation of, any fee, gain or reward."** **para 3(3)(d)** confirms the limit: a supervisor whose own entitlement rests only on sub-paragraph (10) cannot supervise anyone else. Practice guidance secured: **HM Land Registry practice guide 67, last updated 2 March 2026**, and gov.uk "Completing forms ID1 and ID2", **updated 5 February 2024** ("Private individuals must complete form ID1"; evidence of identity required "for any party (and the person lodging the application if different) who is not legally represented"; section B completed by a conveyancer, Chartered Legal Executive or CLC-regulated Licensed Probate Practitioner; the **£6,000** low-value carve-out). **Safe answer for the page: yes, you may prepare the transfer of your own property because you are not acting for fee, gain or reward, and HM Land Registry has a documented route for an unrepresented party, but you will still need a conveyancer or a listed professional to verify your identity, and a lender in the transaction will normally require a conveyancer in any event.** Do not write "anyone can do anyone's conveyancing unpaid".
+- **Blocker four, listing on the portals: RESOLVED from Rightmove's own guide** (fetched 2026-08-21, https://www.rightmove.co.uk/guides/seller/preparing-to-sell/marketing-your-property/): **"sellers and landlords aren't allowed to list properties themselves on Rightmove as a private seller"**, and "we only list homes from registered estate and letting agents"; you "will need to work with an agent who has an active membership with us". Paired with **s.1(4)**, this gives the page a clean test rather than a brand list: a route that reaches Rightmove runs through a business doing estate agency work, which is caught by the **SI 2008/1712 art 2** redress duty; a route genuinely outside the Act under s.1(4) cannot reach Rightmove.
+- **Blockers two, three and five: framed procedurally, not as statutory claims, exactly as the seed required.** The lender's requirements on a mortgaged sale, the leasehold management pack and landlord consents, and co-ownership, trust or attorney arrangements are contractual and procedural points. **No statutory citation is offered for any of them and none should be invented.** The **executor** blocker is the exception and it does have a statutory floor: **AEA 1925 s.2(2)**, per §39.A, means that with more than one personal representative a conveyance of real estate, or a contract for one, requires **all** PRs to concur or a court order, except where probate was granted to only some of the named executors. **A4 states that in one sentence and links to A13**; it does not run A13's page.
+- **The tax fork: RESOLVED and quantified.** s.38(1)(c) and s.38(2) per the seed. Added at Stage 2, **CG15250** verbatim, fetched 2026-08-21: **"The definition is exhaustive. No other expenditure is allowable unless specifically provided for by TCGA92"**, which is why the decision cannot be softened by "well, you can deduct the removals instead". Added, **CG14300** verbatim, fetched 2026-08-21: where no VAT set-off is available "the expense inclusive of VAT is to be allowed", so the deduction a DIY seller forgoes is the **gross** commission, which makes the fork slightly sharper than the seed assumed. See **F-167**.
+- **Rates and AEA re-read against §5 on 2026-08-21:** 18% / 24%, AEA £3,000, 60-day filing for UK residents only where tax is due. Unchanged.
+- **Fee figures: RESOLVED from named dated sources** (see §4). None from memory.
+
+### 2. Competitor verification + exploitation plan
+
+Live at 2026-08-21 (HTTP 200, on-topic, WebFetch-confirmed):
+- https://www.moneysavingexpert.com/mortgages/how-to-sell-a-house/ (updated **1 July 2026**; frames the choice as "DIY, online agent or high street", which is the decision this page adjudicates)
+- https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/cost-selling-home/
+- https://www.which.co.uk/money/mortgages-and-property/home-movers/selling-a-house/estate-agent-fees-and-contracts-aVxAi4F4tdMd (updated **08 Jun 2026**; carries the sole-selling-rights warning we can better with the prescribed wording)
+- https://www.rightmove.co.uk/guides/seller/preparing-to-sell/marketing-your-property/ (first-party source for blocker four)
+
+Deleted: `theadvisory.co.uk/estate-agents/estate-agent-fees/` (**404**), `getagent.co.uk/estate-agent-fees` (**429**, two attempts), `hoa.org.uk/.../estate-agent-fees/` (**404**).
+
+Beat-them plan (5):
+1. **The five-blocker checklist.** Every competitor answers "yes, and here is how", because "here is how" is their product. **Nobody writes the list of circumstances in which the answer is effectively no**: an agency agreement still inside its tie-in, a lender's requirements, a leasehold pack and consents, co-owners or attorneys or trustees who control the instruction with you, and an estate where the grant governs who can sign. This is the page's spine and its whole differentiator.
+2. **Blocker one answered in the prescribed statutory words**, not in folklore. Which? says only "We don't recommend signing a contract with sole selling rights". We print the reg 5 Schedule wording that makes it bite and tell the reader which document to open.
+3. **The recommendation made conditional on the tax position.** One sentence changes the advice: **if the sale is chargeable, the agent is cheaper than it looks and a weaker sale price is dearer than it looks.** No consumer page makes the "should you" answer depend on whether private residence relief covers the gain, because none of them is written by anyone who does the computation.
+4. **The portal paradox as a legal test.** The s.1(4) exemption and Rightmove access are mutually exclusive, which quietly undermines the "sell with no agent at all" premise of the entire SERP.
+5. **An actual decision at the end.** Per the seed's own rule, the page names who it suits and who should not attempt it, rather than closing on "it depends". Corpus check 2026-08-21 confirms the site has nothing on this question and that "Estate Agents Act" appears on **zero** of our blog pages (F-152).
+
+### 3. Query coverage map
+
+| Query | Served at |
+|---|---|
+| `can you sell a house without an estate agent` (260/mo, primary) | H1 + "yes" in the first sentence + H2 1 |
+| `how to sell your house without an estate agent` (140/mo) | H2 6, the compressed numbered method, then the link to A3 |
+| `do i need an estate agent to sell my house` | H2 1 |
+| `can i sell my house myself if it's with an estate agent` | H2 2, blocker one |
+| `do i need a solicitor to sell my house` | H2 3 |
+| `can you sell a leasehold flat without an agent` | H2 2, blocker three |
+| `should i sell my house without an estate agent` | H2 5 and H2 7 |
+| `can executors sell a house without an estate agent` | H2 2, blocker five, then link to A13 |
+
+Lane guard: **A4 decides, A3 executes.** A4's method section is a compressed numbered list that hands off; it never runs A3's ten steps at depth, and A3 never argues the decision. A1 is the cost benchmark, A5 the middle option, A8 the tie-in deep dive, A13 the executor case.
+
+### 4. Structure, tables, examples, FAQs, links
+
+**H2 skeleton (8):**
+1. Can you legally sell your house without an estate agent? (yes, in the first sentence, from EAA 1979 s.1(1))
+2. Five things that can make the answer no for you (the checklist: existing agency agreement, lender requirements, leasehold pack and consents, co-owners or trustees or attorneys, an estate where the grant governs who can sign)
+3. Do you still need a conveyancer, and can you do it yourself? (LSA 2007 Sch 3 para 3(10) and the para 3(3)(d) limit; HMLR PG67 and the ID1 route; the lender point)
+4. Can you get on Rightmove and Zoopla? (Rightmove's rule verbatim, then the s.1(4) test)
+5. Should you? What it saves and what you take on (the two-column read)
+6. How you would actually do it, in short (compressed numbered method, then the mandatory hand-off to A3)
+7. Who it suits, and who should not attempt it (the page must actually decide)
+8. Does the tax position change the answer, and what do you have to report? (the fork, plus 60 days from completion and the exchange-date trap)
+
+**Saving-versus-risk table spec.** Rows: sale price £200,000 / £300,000 / £450,000. Columns: commission avoided at the sourced average · DIY costs incurred · net cash saving · net saving after CGT at 18% · net saving after CGT at 24% · **the sale-price gap at which the saving is wiped out**. That last column is the one no competitor has, and it is the honest centre of the decision. Sourced inputs, all fetched 2026-08-21:
+- Commission: **1.42% including VAT** (HomeOwners Alliance, "Estate Agent Fees, And How You Can Save In 2026"), cross-checked against **roughly 1.3% including VAT**, Rightmove 2025 data as reported by Which? (updated 08 Jun 2026), and **0.75% to 3% plus VAT** (MoneySavingExpert, updated 1 July 2026).
+- DIY costs: agency element **£0 to £400**, all-in **£900 to £3,250** (MoneySavingExpert, 1 July 2026); conveyancing **£800 to £1,500** (MSE) against **around £610 to £950** (HOA, "Cost of selling a house in 2026"), both named; EPC **£50 to £120** (MSE) and **£60 to £120** (HOA).
+Every derived figure is labelled "calculated from the sourced figures". No figure appears without its source.
+
+**Worked examples (2, second person only).**
+(a) *The same decision, two tax positions.* You are selling a £300,000 house. Doing it yourself saves about £3,181 of commission net of your own costs. If the house has been your only home throughout, the gain is covered by private residence relief, there is nothing to deduct against, and **the whole £3,181 is yours**: the DIY case is at its strongest. If it is a former rental and you are a higher-rate taxpayer, the commission you avoided was a deduction under **s.38(1)(c)**, so the real saving is **£2,418**, and a sale price £3,300 lower than an agent would have achieved wipes it out entirely. Same house, same effort, different answer.
+(b) *Blocker one, in three lines.* You signed a twelve-week sole selling rights agreement six weeks ago and have now found a buyer through a neighbour. The prescribed explanation in your contract says you are liable "even if the purchaser was not found by us but by another agent or by any other person, including yourself". Selling privately does not avoid the fee; it doubles your costs. Check the tie-in date first, then A8.
+
+**FAQ list (13):** Can you legally sell a house without an estate agent in the UK? · Do you need an estate agent by law? · Can you sell privately if you have already signed with an agent? · How do you get out of an estate agent contract? · Do you need a solicitor to sell a house? · Can you do your own conveyancing? · What is form ID1? · Does your mortgage lender care how the property is sold? · Can you sell a leasehold flat privately? · What if the house is jointly owned or held in trust? · Can executors sell without an agent? · Can you list on Rightmove yourself? · How much does selling privately save after tax? · What do you have to report to HMRC, and by when?
+
+**Internal links (exact paths):**
+- `/cost-of-selling-a-property` (pillar, as if live), `/calculators/cost-of-selling-calculator` (as if live), `/calculators/capital-gains-tax-calculator`
+- `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk`, `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026`, `/blog/capital-gains-tax/principal-private-residence-relief-landlords`, `/blog/capital-gains-tax/capital-gains-tax-second-home-sale`
+- siblings: `/blog/capital-gains-tax/sell-house-without-estate-agent` (A3, **mandatory**, linked from H2 6 and once early), `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house` (A1), `/blog/capital-gains-tax/estate-agent-contract-tie-in-periods` (A8, blocker-one deep dive), `/blog/capital-gains-tax/online-estate-agents-uk` (A5, the middle option), `/blog/capital-gains-tax/selling-a-probate-property` (A13, blocker five)
+
+### 5. Statutory cross-check (§16.36)
+
+Seed read against §5, §5.B, §26.14 and §39.A on 2026-08-21. Aligned: s.1(1) and s.1(4); LSA 2007 s.13, Sch 2 para 5(1)(a) and Sch 3 para 3(10); SI 1991/859 reg 5 and the Schedule; Misrepresentation Act 1967 s.2(1); s.38(1)(c) and s.38(2); FA 2019 Sch 2 para 3(1)(b) with FA 2022 s.23(2). **Added at Stage 2:** para 3(3)(d) as the statutory limit on the DIY-conveyancing framing (**F-168**); CG14300 as the VAT authority, which the seed did not name (**F-167**); CG15250's exhaustiveness sentence, which closes off the "deduct something else instead" move; the 2013 substitution of s.1(4); and, from §39.A, **AEA 1925 s.2(2)** as the only statutory limb in the five-blocker list, everything else in that list being procedural by design. **Do-not-write carried over from §5.B and §26.14:** no "you can deduct removal costs", no "the 60-day clock runs from exchange", no CPUTR 2008 as live, no Property Misdescriptions Act 1991, and never SI 2014/2359 for a selling agent. No mismatch found between seed and lock.
+
 ## Work log (Stage 2 + RUN populate)
+- 2026-08-21 Stage 2: EAA 1979 s.1 re-fetched (revised to 20 Aug 2026; s.1(4) is a 2013 substitution); LSA 2007 Sch 3 para 3 fetched in full with para 3(3)(d) as the internal limit; HMLR PG67 (2 Mar 2026) and gov.uk ID1/ID2 (5 Feb 2024) secured; Rightmove private-seller rule captured verbatim; SI 1991/859 prescribed wording captured; CG14300 and CG15250 added to the tax fork; blockers two, three and five confirmed as procedural with AEA 1925 s.2(2) the sole statutory limb; four competitor URLs verified 200, three deleted; extensions appended. No blockers.

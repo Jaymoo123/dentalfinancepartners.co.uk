@@ -51,5 +51,116 @@ The accountant's angle is the house differentiator. Consumer coverage of probate
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A10-A13)
+
+### 1. Verify-at-write items that gated this page
+
+**RESOLVED - SP2/04 located, live, and the scale is publishable.** The gov.uk Statement of Practice page that 404'd at seed time was found and fetched HTTP 200 on 2026-08-21: **`https://www.gov.uk/government/publications/statement-of-practice-2-2004--2/statement-of-practice-2-2004--4`**, "Statement of Practice 2 (2004)", **published 20 August 2004**. Verified content:
+
+- **Statutory basis given by HMRC on the face of the Statement: TCGA 1992 s.38(1)(b)**, not s.38(1)(c). That is correct and it corrects this brief's Stage 1 text and F-161: the cost of establishing title is expenditure "wholly and exclusively incurred by him in establishing, preserving or defending his title to, or to a right over, the asset" under **s.38(1)(b)** (verified verbatim at `https://www.legislation.gov.uk/ukpga/1992/12/section/38`, latest revised 20 August 2026). The **selling** costs (agent, conveyancer, advertising, valuation for the computation) remain **s.38(1)(c)** with the exhaustive s.38(2) list. The page must keep the two limbs apart.
+- **The scale**, verbatim bands, applying where the death occurred on or after 6 April 2004:
+
+| Gross estate value | Allowable expenditure |
+|---|---|
+| Not exceeding £50,000 | 1.8% of the probate value of the assets sold |
+| Over £50,000 but not exceeding £90,000 | £900 fixed, divided between all assets of the estate in proportion to probate values |
+| Over £90,000 but not exceeding £400,000 | 1% of the probate value of the assets sold |
+| Over £400,000 but not exceeding £500,000 | £4,000 fixed, divided as above |
+| Over £500,000 but not exceeding £1,000,000 | 0.8% of the probate value of the assets sold |
+| Over £1,000,000 but not exceeding £5,000,000 | £8,000 fixed, divided as above |
+| Over £5,000,000 | 0.16% of the probate value of the assets sold, subject to a maximum of £10,000 |
+
+- HMRC "will accept computations based either on this scale or on the actual allowable expenditure incurred". The page must state that election plainly, because for a single-property estate the actual conveyancing and title cost often beats the scale.
+- **Manual chain verified:** **CG30540** ("Death and Personal Representatives: ... computing gains: normal rules apply", gov.uk, **last updated 21 August 2026**) says "In computing the gains it is necessary to decide what amount of incidental expenses is allowable in the computation" and directs readers to "procedures set out in CG30560+". **CG30560** (fetched 200) records the agreement with the professional bodies and cites SP7/81, SP8/94 and SP02/04 but **does not reproduce the scale**. So the citation chain for the page is: s.38(1)(b) → CG30540 → CG30560 → SP2/04 (gov.uk URL above).
+
+Resolved for lock **§39.A**, whose figures were expressly not locked. **Manager: the scale is now locatable and quotable; §39.A can be upgraded from existence-only to figures** (raised as **F-175**).
+
+**RESOLVED - the statutory basis for the personal representatives' annual exempt amount. It is TCGA 1992 s.1K(7).** Verified verbatim at `https://www.legislation.gov.uk/ukpga/1992/12/section/1K` on 2026-08-21: section heading "Annual exempt amount"; **s.1K(7)**: "For the tax year in which an individual dies and for the next two tax years, this section applies to the individual's personal representatives as if references to the individual were to those personal representatives." That closes the §39.A gating item and the §39 gap.
+
+**IMPORTANT, and it produces a flag against live pages.** The old provision was TCGA 1992 s.3, which **no longer deals with the annual exempt amount at all**: s.3 now reads "Gains attributed to UK resident individuals etc", Part 1 having been substituted by **Finance Act 2019 Sch 1 para 2** (verified at `https://www.legislation.gov.uk/ukpga/1992/12/section/3`, 2026-08-21). Two live Property pages still cite **"TCGA 1992 s.3(7)"** for the PR annual exempt amount: `cgt-inherited-rental-property-calculation-uk` and `inheriting-uk-rental-property-executors-step-by-step`. Raised as **F-176**. This page cites **s.1K(7)** and nothing else.
+
+**RESOLVED - the personal-representative CGT rate, per the §39 verify-at-write instruction.** gov.uk "Capital Gains Tax rates" (`https://www.gov.uk/capital-gains-tax/rates`, fetched 2026-08-21) states verbatim: **"Trustees or personal representatives of someone who's died pay tax at 24% from 6 April 2026."** So for a 2026/27 disposal, 24% is correct and citable to gov.uk. Do **not** back-date that rate to earlier years on the strength of this page; the §39 caution stands for any pre-6-April-2026 disposal.
+
+**RESOLVED, AND IT NARROWS THE PAGE - the freeze-adjacency read.** The seed required a read of the three named probate-tax posts plus `cgt-inherited-rental-property-calculation-uk` before drafting, and specifically asked whether the personal-representative versus beneficiary annual-exempt-amount fork is already covered. **It is, comprehensively.** `Property/web/content/blog/cgt-inherited-rental-property-calculation-uk.md` carries a dedicated H2 **"The PR-sale versus assent decision"**, an H2 **"Annual exempt amount sequencing across three tax years"**, and five worked examples including "personal representatives sell during administration" and "assent to a basic-rate beneficiary, who then sells". `inheriting-uk-rental-property-executors-step-by-step` covers assents at similar depth.
+
+**Writer rule (mandatory, overrides the Stage 1 framing):** the Stage 1 seed called the fork "the decision the whole page is built around". After the read, that is too much. **The fork gets ONE sentence, framed as a pre-listing operational question ("this has to be decided before the property is listed, because it decides whose name goes on the contract"), followed immediately by a link to `/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk`.** No rates comparison, no AEA sequencing, no worked example on the fork. The page's spine is the **order of operations**, which nothing on the site covers. Also confirmed by the same read: probate base cost (s.62), the s.274 ascertained-value rule and IHTA 1984 s.191 are all already owned elsewhere and get one sentence and a link each, maximum.
+
+**NEW, and it is the page's best unclaimed asset - FA 2003 Sch 6A para 3.** Verified this batch (see the A12 brief): **Sch 6A para 3 is "Acquisition by property trader from personal representatives"**, HMRC leaf page **SDLTM21040** (gov.uk, last updated 26 May 2026, fetched 200). Conditions verified verbatim from SDLTM21040: "the deceased individual occupied the dwelling as his main or only residence at some time in the two years ending with the date of his death"; "the area of land acquired does not exceed the permitted area"; relief is withdrawn if the trader "spends more than the permitted amount on refurbishment of the dwelling", "grants a lease or licence of the dwelling", or "permits any of its principals or employees, or any person connected with any of its principals or employees, to occupy the dwelling". Relief code 28 on the return.
+
+**Why this matters for this page:** the seed's key question 10 asks about cash-buying companies. This is the statutory answer nobody publishes. A property trader buying a probate house from the personal representatives can be making an **SDLT-relieved acquisition under FA 2003 s.58A + Sch 6A para 3**, which is part of why the cash-buyer model works on probate stock at all. Executors negotiating with such a buyer should know the buyer's own tax position, exactly as the A12 page tells part-exchangers about para 1. One subsection, framed as a negotiating fact, and the framing rule from §1.Q applies unchanged: **it is the buyer's relief, never the estate's.**
+
+### 2. Competitor verification and the beat-them plan
+
+Verified live 2026-08-21 (HTTP 200, on-topic):
+
+- `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/selling-a-probate-house/` - HomeOwners Alliance, "Selling A Probate House In 2026". Covers the grant, pre-grant marketing, the ten-step process, executor duties. **Confirmed by fetch: no mention of the Administration of Estates Act 1925, no s.2(2), nothing about all executors having to concur, no TCGA 1992, no SP2/04, no 60-day return, no statute by name.** Mentions capital gains tax only in general terms. Useful verbatim: "Yes, you can market a probate property for sale before probate is granted. Although you'll need to disclose in the marketing materials that the property is subject to probate and that the sale is contingent upon the grant of probate."
+- `https://www.irwinmitchell.com/news-and-insights/expert-comment/post/102j2mb/national-conveyancing-week-how-to-sell-a-probate-property` - Irwin Mitchell, published 13 March 2024. A solicitor firm's own guide. **Confirmed by fetch: no AEA 1925 s.2(2), no all-PRs-concur rule, no capital gains tax, no TCGA 1992, no 60-day return.** Useful verbatim: "Although there is nothing stopping you from putting the property on the market and accepting an offer before Probate is granted, you will not be able to complete on a sale until this time", and "Without Probate you would have no legal authority to sell and this would put you in breach of contract."
+- `https://hoa.org.uk/advice/guides-for-homeowners/for-owners/probate-explained/` - HomeOwners Alliance probate hub, live, same profile.
+
+Blocked at Stage 2, do not cite: `co-oplegalservices.co.uk` (bot-detection page returned instead of content).
+
+**Note the useful tension between the two verified competitors and gov.uk.** HomeOwners Alliance and Irwin Mitchell both say you can market before the grant. gov.uk "Applying for probate" says, verbatim, **"You should not make any financial plans or put property on the market until you've got probate."** The page's honest treatment of that conflict is a differentiator in itself: quote gov.uk, state what agents and solicitors actually do, explain the risk the buyer carries, and never invent a statutory prohibition (§39.A: there is no statutory pre-grant sale bar).
+
+**Beat-them plan, five elements:**
+1. **The tax layer.** The estate's base cost is the death value, so the only gain is post-death movement, and against that thin gain the personal representatives can set the full s.38(1)(c) selling costs **plus** the s.38(1)(b) cost of establishing title on the SP2/04 scale. Neither competitor prices the sale at all.
+2. **AEA 1925 s.2(2), in plain terms.** With more than one personal representative, a conveyance of real estate **or a contract for one** needs all of them to concur or a court order, except where probate was granted to only some of the named executors, in which case the proving executors may convey alone. This is the most common reason a probate sale collapses and neither verified competitor states it.
+3. **SP2/04 with its actual figures and its election.** Zero of the 770 existing Property pages cite SP2/04 or CG30560 (the authority gap folded into F-161), and no competitor comes near it.
+4. **The Sch 6A para 3 point about cash buyers.** The buyer of a probate house may be claiming a named SDLT relief that the estate can never claim. Nobody publishes this.
+5. **The Inheritance Tax cash-flow trap as a selling problem.** gov.uk: "You'll normally have to start paying Inheritance Tax before probate is granted", and the grant is what unlocks the house that would have paid it. Competitors treat IHT as a separate topic; this page treats it as the reason the sale sequence is what it is.
+
+### 3. Query coverage map
+
+Primary: `probate house sale` / `selling a probate property` (480/mo, KD 10, £3.95 CPC per PROPERTY_PAGE_PLAN A15). Secondaries at H2 level:
+
+| Query family | H2 that owns it |
+|---|---|
+| can you sell a house before probate is granted | H2 1 |
+| can you put a house on the market before probate | H2 1 |
+| who signs the contract / do all executors have to agree | H2 2 |
+| selling a house in probate step by step / timeline | H2 3 |
+| what if an executor refuses to sell | H2 4 |
+| paying inheritance tax before probate | H2 5 |
+| probate property valuation for CGT | H2 6 |
+| selling probate property at auction / to a cash buyer | H2 7 |
+| what costs can the estate deduct | H2 8 |
+| do executors pay capital gains tax when they sell | H2 9 |
+
+Lane guards, hard: `how-long-does-probate-take-in-the-uk` owns the probate timetable, so timetable figures are deferred to it and not restated here; `inheriting-a-house-in-the-uk` and `inheriting-uk-rental-property-executors-step-by-step` own the inherit-and-keep decision; the three named probate-tax posts and `cgt-inherited-rental-property-calculation-uk` own probate base cost, the SDLT probate reliefs and the PR-versus-assent computation.
+
+### 4. Structure
+
+H2 skeleton (9):
+1. Do you need probate to sell, and can you market before the grant?
+2. Who owns the house, and who has to sign (AEA 1925 s.1 and s.2(2))
+3. The order of operations from death to completion, and where it stalls
+4. What to do if a co-executor will not act, cannot be found, or has died
+5. Paying the Inheritance Tax when the money is in the house you cannot yet sell
+6. The date-of-death valuation: who does it, what it is for, and whether it is deductible
+7. Agent, auction or cash buyer: choosing the route, and what executors owe the beneficiaries
+8. What the estate can deduct, including the personal representatives' cost of establishing title
+9. Reporting and paying: who files, at what rate, and by when
+
+**Cost table spec.** Columns: Cost | Typical range | Who pays it (estate or beneficiary) | Deductible, and under which limb | Source. Rows: estate agent commission (cross-reference A1, do not re-derive); conveyancing; probate valuation; the SP2/04 cost of establishing title (with the scale table and the actual-cost election); clearance and insurance during the void period; council tax (link to the exemption, not a rate table); auction costs if that route is taken (cross-reference A10). The **limb** column is the house asset: selling costs sit in s.38(1)(c) and the exhaustive s.38(2) list, the cost of establishing title sits in s.38(1)(b), and property clearance, ongoing insurance and utilities are **not** deductible against the gain at all (§5.B).
+
+**Worked examples (second person only, no named personas).**
+- *Example 1, the costs close the gain.* A death value, a sale a year later at a modest uplift, then the s.38(1)(c) selling costs and the s.38(1)(b) SP2/04 scale amount applied to an estate in one of the published bands. Show the gain going to nil or near-nil, and state the consequence: where no tax is due, no 60-day return is required for the estate (§5). Label the inputs illustrative; the scale percentages are the only figures quoted as fact, sourced to SP2/04.
+- *Example 2, the sequencing trap.* Contracts exchanged in March, completion in May. The disposal is at exchange under s.28(1) and lands in the earlier tax year, which decides which of the three years of PR annual exempt amount under s.1K(7) you are using, while the 60-day clock under FA 2019 Sch 2 para 3(1)(b) runs from completion. One line, then link out. No computation.
+
+**FAQ list (13):** Can you sell a house before probate is granted? Can you put a probate property on the market before the grant? Can you exchange contracts before the grant? Who owns the house between death and the grant? Do all the executors have to sign? What if one executor will not act or cannot be found? How long does the whole sale take? How do you pay the Inheritance Tax before you can sell? Who should do the date-of-death valuation, and is it deductible? Do executors have to get the best price? Should a probate property go to auction or to an agent? What can the estate deduct from the gain? Who reports and pays the capital gains tax, and by when?
+
+**Internal links (exact paths, all targets confirmed to exist on disk 2026-08-21; note the route segments differ by category):**
+`/blog/landlord-tax-essentials/sdlt-on-probate-property-transfers` · `/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost` · `/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-relief-for-probate-properties` · `/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk` (the PR-versus-assent fork lives here) · `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026` · `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk` · `/blog/landlord-tax-essentials/how-long-does-probate-take-in-the-uk` · `/blog/landlord-tax-essentials/inheriting-a-house-in-the-uk` · `/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step` · Wave 12 siblings `/blog/capital-gains-tax/selling-a-house-at-auction-uk`, `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`, `/blog/capital-gains-tax/sell-house-without-estate-agent` · conductor-side `/cost-of-selling-a-property` and `/calculators/cost-of-selling-calculator` (as if live) · `/calculators/capital-gains-tax-calculator`.
+
+### 5. Statutory cross-check against the new locks (§16.36)
+
+Re-read against §39, §39.A and §5.B. Three corrections, all upward in precision, none in conflict with a lock's substance:
+
+1. **s.38(1)(b), not s.38(1)(c), for the cost of establishing title.** SP2/04 says so on its face and s.38(1)(b) contains the "establishing, preserving or defending his title" words. The Stage 1 text of this brief and F-161 both put it under (1)(c). §39.A says only "allowable per the agreed scale", so the lock is not wrong, but the page must use the right limb. Folded into **F-175**.
+2. **PR annual exempt amount = TCGA 1992 s.1K(7).** §39.A records this as unpinned; it is now pinned. **F-175**.
+3. **§39's "Manual: CG30540" for the 60-day return is imprecise.** CG30540 is "computing gains: normal rules apply" and, on the fetched text, says nothing about the 60-day or 30-day return; it is the parent of the incidental-expenses chain leading to CG30560. Cite **FA 2019 Sch 2 para 3(1)(b)** for the obligation and CG30540/CG30560 only for the incidental-expenses point. Raised as **F-177**.
+
+Everything else in §39 and §39.A holds and wins: AEA 1925 s.1(1)/(3) and s.2(2), the no-statutory-pre-grant-bar rule with gov.uk quoted rather than paraphrased, and the §39 sale-below-probate-value caveat (a successful IHTA 1984 s.191 claim substitutes the sale price as base cost via TCGA 1992 s.274 and kills the expected CGT loss) which this page states in one sentence and links out.
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21 Stage 1 seed written (Wave 12 bucket A, batch A10-A13). Statutory anchors WebFetch-verified same day: AEA 1925 s.1 and s.2 (s.2(2) concurrence rule and named-executor exception), TCGA 1992 s.38, FA 2019 Sch 2 para 3(1)(b), CG15250, CG30560, gov.uk "Applying for probate". The probate anchor was verified, not guessed: there is **no** statutory section prohibiting a pre-grant sale, so the page frames that limb procedurally on gov.uk's own words per the dispatch instruction. Flags raised: **F-161** (HOUSE_POSITION_EXTENSION, §39.A selling-process floor, with the CG30560 / SP2/04 authority gap folded in), plus **F-162** shared with the batch. Gating Stage 2 items: SP2/04 scale figures (gov.uk SP page 404 at seed time), PR annual-exempt-amount statutory basis, PR residential rate per the §39 verify-at-write instruction.
+- 2026-08-21 Stage 2 extension written (batch A10-A13). **All three gating items CLOSED.** (1) SP2/04 located and live at `https://www.gov.uk/government/publications/statement-of-practice-2-2004--2/statement-of-practice-2-2004--4` (published 20 Aug 2004); full scale transcribed into the brief, and HMRC's own statutory reference is **s.38(1)(b)**, not s.38(1)(c), which corrects this brief's Stage 1 text and F-161. (2) PR annual exempt amount = **TCGA 1992 s.1K(7)**, verified verbatim; the old s.3 was substituted by FA 2019 Sch 1 para 2 and no longer concerns the AEA, and two live pages still cite the stale s.3(7) (**F-176**). (3) PR rate: gov.uk states "Trustees or personal representatives of someone who's died pay tax at 24% from 6 April 2026", citable for 2026/27 only. Raised **F-175** (upgrade §39.A from existence-only to figures) and **F-177** (§39's CG30540 reference is not the 60-day authority). **Freeze-adjacency read done and it narrows the page:** `cgt-inherited-rental-property-calculation-uk` already carries a dedicated "The PR-sale versus assent decision" H2, an AEA-sequencing H2 and five worked examples, so the fork drops to ONE sentence plus a link. **New unclaimed asset found:** FA 2003 Sch 6A **para 3** is the property-trader-acquiring-from-personal-representatives relief (SDLTM21040, conditions verified), which is the statutory answer to the cash-buying-company question and appears nowhere in the SERP. Competitors verified live: HomeOwners Alliance probate house guide and hub, Irwin Mitchell (13 Mar 2024); co-oplegalservices.co.uk blocked and dropped.

@@ -48,5 +48,110 @@ The accountant's angle is the house differentiator, and here it is unusually str
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A10-A13)
+
+### 1. Verify-at-write items that gated this page
+
+**RESOLVED - Sch 6A permitted area versus TCGA 1992 s.222(2). The two tests are NOT identically drafted, and the page must not say they are.** Both fetched verbatim at legislation.gov.uk on 2026-08-21 (latest revised, 21 August 2026).
+
+- **FA 2003 Sch 6A para 7(3)** defines "the permitted area" as "land occupied and enjoyed with the dwelling as its garden or grounds that does not exceed - (a) an area (inclusive of the site of the dwelling) of 0.5 of a hectare, or (b) such larger area as is required for the reasonable enjoyment of the dwelling".
+- **TCGA 1992 s.222(2)**: "an area (inclusive of the site of the dwelling-house) of 0.5 of a hectare". **s.222(3)**: "Where the area required for the reasonable enjoyment of the dwelling-house (or of the part in question) **as a residence, having regard to the size and character of the dwelling-house**, is larger than 0.5 of a hectare, that larger area shall be the permitted area."
+
+**The decisive difference:** the 0.5 hectare baseline is identical, but the extension limb is not. s.222(3) qualifies "reasonable enjoyment" with "**as a residence, having regard to the size and character of the dwelling-house**"; Sch 6A para 7(3)(b) carries no such qualifier. **Writer rule:** say the baseline is the same 0.5 hectare in both, note that the CGT extension test is expressly tied to enjoyment as a residence and to the size and character of the house while the SDLT one is not, and stop there. Do not assert that a decision or concession under one test binds the other. Resolved for lock **§1.Q**, whose Stage 2 question ("confirm whether the two tests are drafted identically before any page asserts they are") is now answered: **no**.
+
+**RESOLVED, AND IT CORRECTS BOTH THE SEED AND §1.Q - the Sch 6A paragraph numbering is wrong.** The Stage 1 seed and HP §1.Q both say para 3 is the chain-break case. It is not. Verified at legislation.gov.uk (paragraph headings, 2026-08-21) and corroborated by HMRC's own contents page **SDLTM21000** (gov.uk, last updated **26 May 2026**, statutory reference given as **FA03/S58A and FA03/SCH6A**):
+
+| Para | Actual subject | HMRC leaf page |
+|---|---|---|
+| 1 | Acquisition by house-building company from individual acquiring new dwelling | SDLTM21020 |
+| 2 | Acquisition by property trader from individual acquiring new dwelling (assisted move) | SDLTM21030 |
+| **3** | **Acquisition by property trader from personal representatives** | SDLTM21040 |
+| **4** | **Acquisition by property trader from individual where chain of transactions breaks down** | SDLTM21050 |
+| 5 | Acquisition by employer in case of relocation of employment | SDLTM21060 |
+| 6 | Acquisition by property trader in case of relocation of employment | SDLTM21070 |
+| 7 | Meaning of "dwelling", "new dwelling" and "the permitted area" | - |
+| 8 | Meaning of "property trader" and "principal" | - |
+
+Overview page: **SDLTM21010**, "General overview and definitions FA03/S58A and FA03/SCH6A". All leaf references above taken from the live contents page, which was fetched and returned HTTP 200. **Writer rule:** cite **FA 2003 s.58A + Sch 6A** as the gateway, then the correct paragraph. Chain-break is **para 4**. Raised to the manager as **F-174** so §1.Q can be patched; do not edit house_positions.md.
+
+**RESOLVED - the discount and the eligibility cap, from the developers' own published terms (primary sources, not commentary).** All fetched HTTP 200 on 2026-08-21:
+
+| Item | Figure as published | Source |
+|---|---|---|
+| Eligibility cap (Taylor Wimpey) | "Your existing home must be 70% or less than the value of the new home you are considering purchasing." | `https://www.taylorwimpey.co.uk/ways-to-buy/terms-and-conditions/part-exchange-and-easymover-terms-and-conditions` (no version date shown on page) |
+| Eligibility cap (Barratt) | "Your current home shouldn't be more than 80% of the price of the home you want to buy", applying to properties "up to a maximum value of £500,000" | `https://www.barratthomes.co.uk/offers/part-exchange/` |
+| Valuation basis (Barratt) | "we'll run two independent evaluations of your home", and the offer is "based on the premise that the house will sell between 8 and 10 weeks" | Barratt, as above |
+| Valuation basis (Taylor Wimpey) | England and Wales: "our initial offer will be subject to the RICS survey and valuation"; Scotland: "based on the Home Report value" | Taylor Wimpey, as above |
+| Agent fees | Taylor Wimpey: "if the complete transaction proceeds to mutual legal completion any fees and commissions for the appointed agents will be met by Taylor Wimpey"; but if either side withdraws and you continue with an introduced buyer, "you will be responsible for the agents' fees and commission (plus VAT)". Barratt: "No estate agent fees and no chain" | Both, as above |
+| Exclusions | "Leasehold properties with less than 85 years remaining on the lease or those that include any commercially onerous terms cannot be considered"; properties unsuitable by "method of construction or unusual characteristics" | Taylor Wimpey, as above |
+| Discount | "Typically a developer might get your old home for **80% to 90%** of the price it might have achieved on the open market" | Zoopla, `https://www.zoopla.co.uk/discover/selling/part-exchange-your-home-a-full-guide-to-exchanging-homes/`, published and last modified **16 September 2024** |
+
+**Writer rule:** the caps differ by developer (70% Taylor Wimpey, 80% Barratt with a £500,000 ceiling), so present them as **per-developer published terms with the developer named**, never as an industry rule. The Zoopla 80-90% figure is the only dated, named discount source located and is **commentary, not a developer's own statement**: attribute it explicitly and label the range as such. The developers' own valuation bases (an 8-to-10-week sale premise, an RICS valuation) are the honest explanation of where the discount comes from and are stronger material than any percentage.
+
+**PARTIALLY RESOLVED - Consumer Code for Home Builders alongside the NHQB code.** `consumercode.co.uk` returned **HTTP 403** to automated fetch on 2026-08-21, so the primary source is **not verified** and the page must not quote it. What is verified: the **New Homes Quality Board** site (`https://www.nhqb.org.uk/`, HTTP 200, 2026-08-21) confirms **Code V2 (March 2026)** applying to homes reserved **from 2 March 2026**, with **V1 (October 2023)** for earlier reservations, and states verbatim that "Customers of developers who commit to the Code are provided with access to the independent New Homes Ombudsman Service" and that customers "who reserved a home after a developer's NHQB registration" can complain to the Ombudsman. That is the voluntary, registration-gated regime §26.15 locks. Secondary sources (LABC Warranty, NHBC, Brodies, Boyes Turner, HomeOwners Alliance) consistently describe **two codes coexisting**, with warranty providers accepting adherence to either, and the Consumer Code applying to developers registered with NHBC, Premier Guarantee, LABC Warranty and Checkmate. **Writer rule:** the page may say two voluntary codes currently operate and a buyer should check which one their developer signed up to, sourced to the warranty providers' own pages, and must **not** quote the Consumer Code's own site until it is fetched successfully. It must still say plainly that neither is statutory: **BSA 2022 ss.136-138 have never been commenced** (§26.15). Still-open item recorded in **F-174**.
+
+### 2. Competitor verification and the beat-them plan
+
+Verified live 2026-08-21 (HTTP 200, on-topic):
+
+- `https://www.zoopla.co.uk/discover/selling/part-exchange-your-home-a-full-guide-to-exchanging-homes/` - Zoopla, published 16 September 2024. Gives the 80-90% discount and a 70% cap. **Confirmed by fetch: does not mention capital gains tax, SDLT by name, FA 2003 Schedule 6A, or any statute.** Mentions "stamp duty" only as a generic cost.
+- `https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/part-exchange-house/` - HomeOwners Alliance, buying-side. **Confirmed by fetch: no discount figure, no eligibility cap, no capital gains tax, no SDLT by name, no FA 2003 Sch 6A, no New Homes Quality Code, no statute at all.** Its useful line is the warning that developers quote a "selling price" that "could be much lower than you are expecting".
+- `https://www.taylorwimpey.co.uk/ways-to-buy/terms-and-conditions/part-exchange-and-easymover-terms-and-conditions` - cited as a **primary source** for the conditions a developer actually imposes.
+- `https://www.barratthomes.co.uk/offers/part-exchange/` - same, primary source.
+
+**Beat-them plan, five elements:**
+1. **The tax layer.** Part-exchange is a disposal. Where PRR does not cover it (let for part of the period, second home, garden over the 0.5 hectare permitted area), the s.38(2) deductions are unusually thin because there is no agent and no marketing spend, so the gain is larger than on an open-market sale of the same house at the same net proceeds.
+2. **FA 2003 s.58A + Sch 6A para 1, named.** The builder's acquisition of your old house is exempt from SDLT if the conditions are met. That is why the offer exists at all. Not one competitor names the relief. The framing rule from §1.Q is absolute: **this is the developer's relief, never yours** (you would pay no SDLT on a disposal in any event), and it is a negotiating fact, not a benefit.
+3. **s.17(1) does not apply.** A part-exchange between unconnected parties is an arm's-length bargain, so market value is not substituted and the discount genuinely reduces the taxable gain. But it reduces it by at most 18% or 24% of the discount while costing you 100% of it. That single arithmetic line is the page's answer to "is part-exchange worth it" and it exists nowhere in the SERP.
+4. **The three-route ladder the statute distinguishes and the search intent conflates:** part-exchange (para 1, builder takes the house), assisted move (para 2, property trader takes it, builder subsidises the agent), chain-break (**para 4**, trader steps in when your own buyer collapses). Naming them from the statute is the structural differentiator.
+5. **The redress floor stated honestly.** BSA 2022 ss.136-138 never commenced; the live regime is voluntary, registration-gated and split across two codes. Competitors either imply a statutory ombudsman exists or say nothing.
+
+### 3. Query coverage map
+
+Primary: `part exchange house uk` (2,900/mo, KD 13, £4.12 CPC), plus `part ex house` and `new build part exchange` (1,300/mo) per PROPERTY_PAGE_PLAN A14. Secondaries at H2 level:
+
+| Query family | H2 that owns it |
+|---|---|
+| what is part exchange on a house / how does it work | H2 1 |
+| part exchange valuation / how much do developers offer | H2 2 |
+| is part exchange worth it / part exchange pros and cons | H2 3 |
+| part exchange criteria / do I qualify | H2 4 |
+| can you negotiate part exchange | H2 5 |
+| assisted move vs part exchange vs chain break | H2 6 |
+| part exchange stamp duty | H2 7 |
+| capital gains tax on part exchange | H2 8 |
+| new build ombudsman / what if the new build is wrong | H2 9 |
+
+Lane guards: no snagging content, no SDLT rate table (link `/calculators/stamp-duty-calculator`), no PRR walkthrough beyond the permitted-area point, no auction content (A10/A11).
+
+### 4. Structure
+
+H2 skeleton (9):
+1. What part-exchange is, and which developers offer it
+2. How the developer arrives at your valuation, and where the discount comes from
+3. Is part-exchange worth it? The comparison that actually matters
+4. Do you qualify? The published conditions, developer by developer
+5. Can you negotiate, and what evidence moves the number
+6. Part-exchange, assisted move and chain-break: the three routes the statute separates
+7. Stamp duty: why the developer pays none on your old house, and what you pay on the new one
+8. Capital gains tax on a part-exchange: usually nothing, and the three cases where it is not
+9. What protection you have if the new build is not what was promised
+
+**Cost table spec.** Columns: Item | What part-exchange costs you | What an open-market sale would have cost | Deductible against CGT? | Source. Rows: the discount itself (the real cost, sourced to Zoopla and labelled as commentary); estate agent commission avoided (cross-reference A1, do not re-derive); marketing and EPC; conveyancing (still payable); carrying costs of the months you avoid; removals (**not** deductible, per §5.B). The point the table makes is that part-exchange converts a deductible cost into a non-deductible price reduction.
+
+**Worked examples (second person only).**
+- *Example 1, the discount arithmetic.* Your old home, an open-market figure, the part-exchange offer at the sourced discount range, against the agent commission and the carrying cost you avoid. Then the tax line: the discount reduces your proceeds pound for pound and therefore reduces the gain, but at 18% or 24% you recover only that fraction of it, and you have given up 100%. Label all inputs illustrative.
+- *Example 2, when PRR does not cover it.* A house let for part of the ownership period, part-exchanged. One line showing the s.38(1)(c) deductions that exist (conveyancing, valuation for the computation) and the one that does not (no agent commission, because there was no agent), then link out to the CGT pillar. No full computation.
+
+**FAQ list (12):** How much below market value is a part-exchange offer? Which developers offer part-exchange? Do I need my home to be worth less than the new one, and by how much? Who pays the estate agent? Can I part-exchange a leasehold flat? Can I negotiate the offer? What is assisted move and how is it different? What is a chain-break scheme? Does the developer pay stamp duty on my old house? Do I pay capital gains tax on a part-exchange? What happens to my existing mortgage? Who do I complain to if the new build is defective?
+
+**Internal links (exact paths, targets confirmed to exist 2026-08-21):**
+`/cost-of-selling-a-property` (as if live) · `/calculators/cost-of-selling-calculator` (as if live) · `/calculators/stamp-duty-calculator` · `/calculators/capital-gains-tax-calculator` · `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk` · `/blog/capital-gains-tax/principal-private-residence-relief-landlords` · `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026` · `/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property` (developer-side counterpart; route segment is **property-types-and-specialist-tax**) · Wave 12 siblings `/blog/capital-gains-tax/modern-method-of-auction-explained`, `/blog/capital-gains-tax/cost-of-moving-house-uk`, `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`.
+
+### 5. Statutory cross-check against the new locks (§16.36)
+
+Re-read against §1.Q, §5.B and §26.15. **One mismatch, material:** §1.Q's paragraph mapping ("para 2 assisted move and para 3 chain-break") is wrong at para 3, which is the property-trader-from-personal-representatives case; chain-break is para 4. Corrected in the table above, raised as **F-174**, and the lock wins on everything else. §1.Q's Stage 2 permitted-area question is answered above: the two tests share the 0.5 hectare baseline but the extension limbs are drafted differently, so no page may assert they are identical. §26.15 confirmed unchanged: NHQB Code V2 (March 2026) from 2 March 2026, registration-gated, BSA 2022 ss.136-138 uncommenced.
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21 Stage 1 seed written (Wave 12 bucket A, batch A10-A13). Statutory anchors WebFetch-verified same day: FA 2003 Sch 6A paras 1-3, TCGA 1992 ss.17/38/222(2)-(3), BSA 2022 s.136 (confirmed NOT in force, "see s. 170(5)"), FA 2019 Sch 2 para 3(1)(b), CG15250, NHQB code V2. Flags raised: **F-160** (HOUSE_POSITION_EXTENSION, SDLT Sch 6A lock proposal §1.Q), **F-164** (HOUSE_POSITION_EXTENSION, new-build redress is non-statutory), plus **F-162** shared with the batch. Stage 2 gating items: sourced discount percentage and value cap; SDLTM leaf-page references; Consumer Code for Home Builders status.
+- 2026-08-21 Stage 2 extension written (batch A10-A13). **Permitted-area gating item CLOSED: the two tests are NOT drafted identically.** Both share the 0.5 hectare baseline, but TCGA 1992 s.222(3) qualifies the extension with "as a residence, having regard to the size and character of the dwelling-house" while FA 2003 Sch 6A para 7(3)(b) does not. No page may assert they are the same test. **Sch 6A paragraph numbering CORRECTED against §1.Q and the seed:** para 3 is "Acquisition by property trader from personal representatives" and para 4 is the chain-break case; verified at legislation.gov.uk and against HMRC SDLTM21000 (last updated 26 May 2026), leaf pages SDLTM21010/21020/21030/21040/21050/21060/21070, statutory gateway FA03/S58A. Raised **F-174**. Discount and caps sourced from the developers' own terms (Taylor Wimpey 70%, Barratt 80% with a £500,000 ceiling, Barratt's "sell between 8 and 10 weeks" valuation premise) plus Zoopla (16 Sep 2024) for the 80-90% discount range, labelled as commentary. Consumer Code for Home Builders **PARTIALLY resolved only**: consumercode.co.uk returned 403 to automated fetch, so its own site must not be quoted; NHQB Code V2 (March 2026) re-verified live. Competitor URLs verified live: Zoopla, HomeOwners Alliance part-exchange guide, Taylor Wimpey and Barratt terms.

@@ -48,5 +48,97 @@ The accountant's angle is the house differentiator. Consumer coverage (HomeOwner
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A10-A13)
+
+### 1. Verify-at-write items that gated this page
+
+**RESOLVED (b) - reservation fee percentage, minimum, and the reservation period.** Fetched 2026-08-21, all HTTP 200:
+
+| Item | Figure as published | Source |
+|---|---|---|
+| Reservation fee | "usually at least 2.5% + VAT of the sold price, or a minimum of £6,000 inc VAT" | HomeOwners Alliance, `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/modern-method-of-auction/` |
+| Reservation fee worked illustration | "on a property sold for the average house price of £275,000, you would pay a reservation fee of £8,250 (incl VAT) if the fee is 3%", against "a minimum of £6,000 (inc VAT)" | HomeOwners Alliance, `https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/modern-auction-pitfalls/` |
+| Reservation period | "28 days to exchange contracts and a further 28 days to complete" | HomeOwners Alliance modern-method guide, as above |
+| Reservation period (platform's own words) | "56 days from receipt of draft contract" for the modern method, against traditional auction where "Completion is then generally expected within 28-days" | iamsold, `https://www.iamsold.co.uk/property-auctions-explained/faqs/` |
+| Fee is on top of the price | The fee is "paid in addition to the purchase price" and is not deducted from it | iamsold, `https://www.iamsold.co.uk/buying-at-auction/buying-fees-explained/` |
+| Fee varies by lot | "The percentage payable varies by property, so always check the Fees & Charges section in your Buyer Information Pack" | iamsold, as above |
+
+**Writer rule:** state the fee as "typically", attribute it, and say the percentage is set lot by lot in the buyer information pack. Do not publish a single percentage as if it were an industry rule.
+
+**RESOLVED, AND IT CORRECTS THE SEED - where a forfeited reservation fee actually goes.** The Stage 1 CGT hook assumed a forfeited fee is "forfeited **to the seller**" and therefore a capital sum within TCGA 1992 s.22(1)(c). The market-leading platform's own FAQ says the opposite, verbatim: **"Any retained Reservation Fee is used to cover auction, marketing and associated costs and is not paid to the seller."** (iamsold, fetched 2026-08-21.) Its buyer-fees page says the same in different words: the fee "is later used to cover the auction costs for the seller, including the listing agent and Auctioneer fees". s.22(1) only bites where "any capital sum is **derived from assets**" by the owner, and s.22(2) dates it to receipt **by that person**. If the seller never receives it, there is no s.22 disposal for the seller and nothing to tax.
+
+**Writer rule (mandatory):** the page states the s.22(1)(c) analysis **conditionally** and identifies the fork by reading the reservation agreement. Where the fee is retained by the auction platform (the standard iamsold model, quoted), the seller receives nothing and there is no s.22 event; the seller's only tax consequence is that a real cost of the sale was charged to the buyer and is therefore outside the seller's exhaustive s.38(2) list. Where the reservation agreement in fact routes a forfeited fee to the seller, or nets it against completion monies, **then** s.22(1)(c) applies and s.22(2) dates it to receipt. Never assert the fee is taxable in the seller's hands without the agreement in front of you. This correction is flagged to the manager as **F-177** for a conditional to be added to HP §5.B.
+
+**RESOLVED (a), to the limit of what is publishable - SDLT on the reservation fee.** HMRC has **no published statement naming modern-method reservation fees**. What exists is the general test at **SDLTM03720** ("SDLTM03720 - Guidance - Chargeable Consideration and Fees", gov.uk, page last updated **26 May 2026**, fetched 200 on 2026-08-21). Verified content: a fee charged in addition to the purchase price is chargeable consideration where "it is a condition of the contract that the fee is paid", or "completion of the property transaction is conditional upon the fee being paid", or the fee is only payable once the transaction proceeds; a fee for a separate matter not required to secure the property, "such as a purchaser's own legal costs", is not. The page **does not mention auction reservation fees or buyer's premiums**.
+
+**Writer rule:** set out HMRC's three indicators from SDLTM03720, apply them openly to a reservation fee, and say plainly that HMRC has published no modern-method-specific ruling, so the answer turns on the terms of the particular reservation agreement and a buyer should take advice before filing. **Do not** copy the flat assertion the competitors make. HomeOwners Alliance states without citation: "You will pay more in stamp duty as HMRC will charge stamp duty on the final price agreed plus the reservation fee." That is a plausible reading of SDLTM03720 but it is presented as settled and sourced to nothing, which is precisely the gap this page exploits. This is a buyer-side point and stays to one subsection.
+
+**RESOLVED - what happens on buyer default, and whether the seller is locked in.** iamsold FAQ, verbatim: "If you do not complete, you will lose your non-refundable Reservation Fee", with possible further "financial implications" for breaching the auction contract terms; "Once the buyer has signed the Reservation Agreement, they are expected to proceed with the purchase" and "the seller cannot sell to anyone else during that time". HomeOwners Alliance: "if you win the bid in the Modern Method of Auction ... you will lose your reservation fee". Third-party coverage that the fee is refundable only where the **seller** withdraws should be treated as unverified against the platform's own terms and not published as a rule.
+
+**RESOLVED - is it really free to the seller.** iamsold does not claim a zero seller cost. Its FAQ says fees "may vary depending on the agreement in place and the services included" and that the retained fee "is used to cover auction, marketing and associated costs". HomeOwners Alliance frames it as "the outlay is shouldered by the buyer" and "Lower selling costs ... minimal cost to them". The page's answer: the cost is real, it is levied on the other side of the table, it is priced into the bid, and the seller therefore bears it economically while getting no s.38 deduction for it.
+
+### 2. Competitor verification and the beat-them plan
+
+Verified live 2026-08-21 (HTTP 200, on-topic):
+
+- `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/modern-method-of-auction/` - HomeOwners Alliance, "Modern Method Of Auction Explained". Gives the fee, the 28+28 timetable, the seller-benefit framing. **Confirmed by fetch: no mention of capital gains tax, TCGA 1992 s.38, DMCCA 2024, or any statute by name;** the only tax content is the uncited stamp-duty line quoted above.
+- `https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/modern-auction-pitfalls/` - HomeOwners Alliance, buyer-side pitfalls, ten risks including the fee and the stamp duty point. **Confirmed by fetch: no statute cited anywhere; references only the FCA, the Property Ombudsman, HM Land Registry, TA6 and the title register.**
+- `https://www.iamsold.co.uk/property-auctions-explained/faqs/` and `https://www.iamsold.co.uk/buying-at-auction/buying-fees-explained/` - the platform's own terms, cited as a primary source for how the product works, not as commentary.
+
+**Beat-them plan, five elements:**
+1. **The tax layer.** The seller's exhaustive s.38(2) list does not contain a cost the buyer paid to a third party. So the one route marketed as costless to the vendor is the one route where a real selling cost becomes non-deductible. Zero competitors reach this.
+2. **The legal pivot, correctly stated.** A traditional auction relies on LP(MP)A 1989 **s.2(5)(b)**; the modern method cannot, because the winning bid produces a reservation agreement rather than a contract for the disposition of an interest in land, so s.2(1) is still unsatisfied and the land contract has yet to be made. Every consequence readers complain about follows from that one sentence, and the SERP states it nowhere.
+3. **The total-price rule since 6 April 2025.** DMCCA 2024 **s.230(4)**: the total price "includes any fees, taxes, charges or other payments that the consumer will **necessarily** incur", with **s.230(9)** treating unclear, untimely or easily-missed disclosure as an omission. A listing showing a bid level with a percentage fee in the small print is a live compliance question, and CPUTR 2008 was revoked by s.251(1) on the same date, so any competitor still citing it is citing revoked law.
+4. **The SDLT answer with its actual authority.** SDLTM03720's three indicators, applied, plus the honest statement that HMRC has published nothing product-specific.
+5. **Who bears the fee.** The incidence argument: a buyer who must find the fee in cash on top of a deposit bids less, so the vendor pays it in the price. No competitor allocates the incidence.
+
+### 3. Query coverage map
+
+Primary: `modern method of auction` and variants (2,900/mo, £3.54 CPC per PROPERTY_PAGE_PLAN A13). Secondaries at H2 level:
+
+| Query family | H2 that owns it |
+|---|---|
+| what is the modern method of auction / conditional auction | H2 1 |
+| modern method of auction vs traditional auction | H2 2 |
+| modern method of auction reservation fee / how much | H2 3 |
+| modern method of auction 56 days / timescale | H2 4 |
+| can you pull out of a modern method auction | H2 5 |
+| modern method of auction stamp duty | H2 6 |
+| modern method of auction for sellers / is it worth it | H2 7 |
+| modern method of auction mortgage problems | H2 8 |
+| modern method of auction is it a scam / complaints | H2 9 (the disclosure rules) |
+
+Lane guards: no traditional-auction cost table (A10 owns it, one contrast row only); no agent commission comparison beyond one row (A1-A5); no CGT computation walkthrough (cgt1).
+
+### 4. Structure
+
+H2 skeleton (10):
+1. What the modern method of auction is, and what else it is called
+2. How it differs from a traditional auction, in law and in practice
+3. The reservation fee: how much, who pays, and is it ever refundable
+4. The timetable after the winning bid, stage by stage
+5. What you are actually committed to, and what happens if either side walks
+6. Does the reservation fee count for stamp duty?
+7. Is it really free to the seller? Who bears the fee
+8. Why some lenders struggle with modern-method purchases
+9. What the listing has to tell you about the fee since 6 April 2025
+10. Capital gains tax: the disposal date, and the deduction you do not get
+
+**Cost table spec.** Columns: Item | Who pays it | Typical published figure | Refundable? | Counts for the seller's CGT deduction? | Source. Rows: reservation fee; buyer information pack fee (iamsold publishes "£349 including VAT"); seller-side auction or agent fee where one applies; conveyancing both sides; searches. The "counts for the seller's deduction" column is the house asset and is answered from the exhaustive s.38(2) list.
+
+**Worked examples (second person only).**
+- *Example 1, the incidence.* Two offers on the same house, one through an agent at a stated commission and one through the modern method at a lower bid with the buyer paying a reservation fee on the published range. Net cash to you, side by side, then the tax line: the agent's commission is deductible under s.38(1)(c); the buyer's fee is not deductible by you at all. Label all inputs illustrative.
+- *Example 2, the date.* The winning bid lands in late March, exchange happens in May inside the reservation period. The disposal is at **exchange** under s.28(1), not at the end of the bidding, because the reservation agreement is not the land contract. One line on which tax year that lands in, then link out.
+
+**FAQ list (12):** Is the modern method of auction the same as a normal auction? Is the reservation fee refundable? Does the reservation fee come off the purchase price? Do I pay stamp duty on the reservation fee? What happens if I cannot get a mortgage in time? Can the seller accept a higher offer after I have reserved? Can I extend the 56 days? Is the seller committed once the bid is accepted? Why do some lenders refuse modern-method purchases? As a seller, what does it actually cost me? What must the listing disclose about the fee? When is the disposal for capital gains tax?
+
+**Internal links (exact paths, targets confirmed to exist 2026-08-21):**
+`/cost-of-selling-a-property` (as if live) · `/calculators/cost-of-selling-calculator` (as if live) · `/calculators/capital-gains-tax-calculator` · `/calculators/stamp-duty-calculator` · `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk` · `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026` · `/blog/property-finance/bridging-finance-for-auction-purchases` (route segment is **property-finance**) · Wave 12 siblings `/blog/capital-gains-tax/selling-a-house-at-auction-uk` (primary contrast), `/blog/capital-gains-tax/part-exchange-house-uk`, `/blog/capital-gains-tax/online-estate-agents-uk`, `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`.
+
+### 5. Statutory cross-check against the new locks (§16.36)
+
+Re-read against §5.B and §26.14. **One mismatch, corrected above and flagged as F-177:** §5.B's line "a retained modern-method reservation fee needs this analysis" is right that it needs analysis but reads as though the seller is the recipient. The platform's own terms say the retained fee is not paid to the seller, so the lock needs a conditional. Otherwise no mismatches: §26.14 already carries the s.230 material-information limb, and this page adds the s.230(4) total-price application the Stage 1 seed asked for.
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21 Stage 1 seed written (Wave 12 bucket A, batch A10-A13). Statutory anchors WebFetch-verified same day: LP(MP)A 1989 s.2(1)/(5)(b), DMCCA 2024 s.230 (incl. s.230(4) verbatim) + ss.225-229 + Sch 20 + s.251(1) with SI 2025/272 commencement, EAA 1979 ss.1/18, TCGA 1992 ss.22/28/38, CG15250. Flags: reuses **F-150** (sales-agent and consumer-practices floor, A1-A5 batch) with a request to add the s.230(4) total-price limb, and **F-162** (§5.B disposal-date and incidental-costs floor, this batch). Gating Stage 2 items: SDLT treatment of the reservation fee; sourced fee percentage and reservation-period length.
+- 2026-08-21 Stage 2 extension written (batch A10-A13). Both gating items resolved. Fee and period sourced live (HomeOwners Alliance: "usually at least 2.5% + VAT ... or a minimum of £6,000 inc VAT", "28 days to exchange contracts and a further 28 days to complete"; iamsold: "56 days from receipt of draft contract", fee "paid in addition to the purchase price", percentage set lot by lot in the buyer information pack). SDLT resolved to the limit of what is publishable: HMRC has NO modern-method-specific statement; the applicable authority is **SDLTM03720** (gov.uk, last updated 26 May 2026) and its three indicators, and the page states that openly rather than copying the competitors' uncited assertion. **CORRECTION to the Stage 1 CGT hook:** iamsold's own FAQ says verbatim "Any retained Reservation Fee is used to cover auction, marketing and associated costs and is not paid to the seller", so the s.22(1)(c) forfeiture analysis is CONDITIONAL, not general; a seller who never receives the sum derives no capital sum from the asset. Raised **F-177** for a §5.B conditional. Competitor URLs verified live: two HomeOwners Alliance guides plus two iamsold pages, none citing any statute.

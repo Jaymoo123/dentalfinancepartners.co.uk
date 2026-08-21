@@ -46,5 +46,131 @@ THE ACCOUNTANT'S ANGLE IS THE HOUSE DIFFERENTIATOR. HomeOwners Alliance, TheAdvi
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A6-A9)
+
+### S2.1 Verify-at-write items resolved
+
+**RESOLVED, AND THE SEED IS WRONG ON THE RATIO. Foxtons Ltd v Pelkey Bicknell & Anor [2008] EWCA Civ 419 does NOT decide the case on an implied effective-cause term; it expressly says no such term needs implying.** BAILII returned HTTP 403 at Stage 2; the judgment was read at the National Archives Find Case Law copy, `https://caselaw.nationalarchives.gov.uk/ewca/civ/2008/419`, fetched 2026-08-21. Court of Appeal (Civil Division), 23 April 2008, Waller LJ, Rix LJ and Lord Neuberger of Abbotsbury. Verbatim, with paragraph numbers:
+
+- **Para 22, the two rival constructions:** "The first, which is favoured by Foxtons and was adopted by the Judge, is that the expression means 'a person who at some time in the future becomes a purchaser'. The alternative reading, advanced on behalf of Mrs Bicknell, is that the expression means 'a person who becomes a purchaser as a result of our introduction'."
+- **Para 24, the double-commission point, which is the anchor for the dual-fee section:** "While I accept that there could be circumstances in which more than one commission could be payable, it would far rarer an occurrence than on Foxtons' interpretation."
+- **Para 29, quoting the earlier authority:** the phrase could "only mean the introduction of the person who ultimately purchases, not to the property, but to the purchase, or, if you look at it from the vendor's angle, to the sale; in either case to the transaction that takes place".
+- **Para 36, the holding:** "in order to be entitled to a commission under the Terms for having introduced a purchaser, Foxtons have to show that they introduced the person concerned as the (eventual) purchaser, or, to put the point in Nourse LJ's words, that they introduced the purchaser to the purchase, and not merely to the property."
+- **Para 37, the limb the seed gets backwards:** "It appears to follow that there can be no question of implying into the Terms a requirement that Foxtons must have been the, or an, effective cause of the purchase in question."
+- **Para 20, the general position on the implied term, which is what the seed was reaching for:** "the term identified in Article 57 of Bowstead is 'very readily' implied, especially in a residential consumer context, unless the provisions of the particular contract or the facts of the particular case negative it."
+- **Outcome: appeal allowed**, the trial judge's decision set aside and judgment entered for Mrs Bicknell; Foxtons failed to show that the eventual purchaser was introduced by them as a purchaser.
+
+**Writing rule for this page.** Foxtons is authority that "introduced by us" means introduced **to the purchase, not to the property** (para 36), and that on that construction no effective-cause term is implied (para 37). The general effective-cause principle exists separately, as the Bowstead Article 57 implied term that is "very readily" implied in a residential consumer context unless the contract or facts negative it (para 20). **Do not write "Lord Neuberger held that the agent must be the effective cause".** Write the construction point and cite para 36, then the Bowstead point and cite para 20. Raised as **F-172**.
+
+**RESOLVED. The consumer-law limbs the seed relies on are now locked at §26.14** and do not need re-fetching: SI 1991/859 reg 5 and Schedule (prescribed sole selling rights, sole agency and ready-willing-and-able explanations, reg 6 prominence); EAA 1979 s.18 with s.18(5) unenforceability and s.18(6) court discretion; SI 2013/3134 reg 30 (14 days for service contracts), reg 31 (extension for information breach), reg 36 (supply in the cancellation period, reg 36(4) proportionate charge); DMCCA 2024 Pt 4 Ch 1 in force 6 April 2025 by SI 2025/272 reg 2(1)(3), with CPUTR 2008 revoked by s.251(1). **Cite the lock, do not re-derive.** §26.14 also supplies the sale-side redress instrument the seed does not name: **EAA 1979 s.23A with SI 2008/1712 art 2**. Never cite SI 2014/2359 here; that is the lettings instrument.
+
+**RESOLVED. TCGA 1992 s.38(1) to (3) re-fetched verbatim** at `https://www.legislation.gov.uk/ukpga/1992/12/section/38`, 2026-08-21, current to 20 August 2026. Two limbs matter here and the seed uses only one:
+- **s.38(1)(b)** allows "any expenditure wholly and exclusively incurred by him in establishing, preserving or defending his title to, or to a right over, the asset". This is a **second possible route for a contested second commission** and the seed does not mention it. It is not a safe assertion, but it is the right thing for the page to name as the argument, rather than leaving the reader with "not deductible, full stop".
+- **s.38(3)**: "Except as provided by section 40, no payment of interest shall be allowable under this section." Relevant if an agent adds interest to an unpaid commission claim.
+The advertising limb split is recorded on the A7 brief and applies here too: s.38(2)(a) is advertising to find a seller on acquisition, s.38(2)(b) is advertising to find a buyer on disposal. A withdrawal fee is in neither.
+
+**STILL FLAGGED, writer must not assert.** The Property Ombudsman Code of Practice for Residential Estate Agents could not be reached: `https://www.tpos.co.uk/consumers/codes-of-practice` returned HTTP 403 on 2026-08-21. The page may say that a TPO code exists and is a code rather than law (that much is in §26.14's redress limb and in [HOA] below, which cites it), but **no clause, version number or date of the TPO code may be quoted** unless the writer reaches it at write time.
+
+**RE-VERIFY AT WRITE:** SI 1991/859 prescribed wording unchanged; SI 2013/3134 reg 30 fourteen-day period; EAA 1979 s.18 in force; CGT rates and AEA from house_positions §5.
+
+### S2.2 Figures (no cost table on this page)
+
+The seed is right that A8 is not a cost-led keyword and carries no cost table. **A contract-comparison table is the shape.** The only market figures on the page are tie-in and notice lengths, and they now have a source.
+
+**[HOA]** HomeOwners Alliance, "Estate Agent Contracts: What To Watch For", `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/estate-agents-contracts-what-to-watch-for/`, fetched live 2026-08-21. Verbatim: "4 weeks or 12 weeks are the most popular terms" for sole agency lock-in, with "More than this is unnecessary"; it reports having found "instances of sole agency agreement time limits of a 20 weeks tie-in period with a 4 week notice period"; "There can also be a notice period on top of the minimum lock-in period"; on ready, willing and able, "Do not accept this! It means you have to pay the agent for finding a buyer, even if you decide not to sell"; and "you have the right to a 14 day cooling off period if the contract was signed at a location away from the agent's business premises". **No date of last update on the page. No withdrawal fee or marketing charge figures anywhere on it.**
+
+**Contract comparison table spec** (four rows, five columns; every figure cell sourced or marked illustrative):
+
+| Contract type | Typical tie-in | Notice period | Dual-fee risk | CGT treatment of an exit charge |
+|---|---|---|---|---|
+| Sole agency | 4 or 12 weeks most common, 20 weeks seen [HOA] | commonly runs **on top of** the tie-in [HOA] | low while it runs, real afterwards if the agent introduced the buyer | commission on the completed sale is s.38(1)(c); a withdrawal fee is not |
+| Sole selling rights | as above | as above | **highest**, the prescribed wording makes you liable "even if the purchaser was not found by us but by another agent or by any other person, including yourself" (SI 1991/859 Sch) | as above |
+| Multi-agency | usually none or short | usually short | two agents can claim; Foxtons para 24 is the authority on how often that really happens | as above |
+| Online or fixed-fee, upfront | varies, often none | varies | low | an upfront listing fee where no sale completes is not an incidental cost of a disposal that did not happen |
+
+**No withdrawal fee, marketing charge, photography or EPC figure is sourced.** Any such figure is either omitted or written as "illustrative range, label as such on page". The EPC line may instead point at our own `/blog/landlord-tax-essentials/epc-certificate-cost-uk`, which carries a sourced £35 to £120 range and already cites CG15250.
+
+### S2.3 Competitor verification and beat-them plan
+
+**Verified live (HTTP 200, on-topic, fetched 2026-08-21):**
+- `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/estate-agents-contracts-what-to-watch-for/`. Covers sole agency, sole selling rights, joint agency, multi-agency, ready-willing-and-able, tie-in and notice lengths, and the 14-day cooling-off right. **Cites only the TPO Code of Practice. Names no statute. No mention of Capital Gains Tax or deductibility. No publication date.**
+- `https://www.theadvisory.co.uk/estate-agents/fees/`. "Estate Agent Fees & Commission: The Definitive Guide (2026)". Covers contract types alongside fees and **does cite the Estate Agents Act 1979, the Estate Agents (Provision of Information) Regulations 1991 and the TPO code**. No tax content.
+
+**Deleted or unreachable, tested 2026-08-21:** `hoa.org.uk/advice/guides-for-homeowners/i-am-selling/estate-agent-contracts-what-you-need-to-know/` (404, the working URL is the one above); `tpos.co.uk/consumers/codes-of-practice` (403); the Which? estate agent contracts path tested (404). **Do not list any of these.**
+
+**Beat-them plan, five elements:**
+1. **Which exit payment survives into the CGT computation, and which does not.** Commission to the agent who sold the property is a professional fee to an agent under s.38(2) and is squarely in. A withdrawal fee, an early-termination charge or a second commission to an agent who did not sell is a cost of getting out of a contract, not a cost of making the disposal. Neither competitor has a word of this. **This is the page's whole reason to exist.**
+2. **s.38(2) is an exhaustive list, not a general "costs of selling" allowance.** CG15250: "TCGA92/S38 defines the incidental costs of acquisition and disposal. The definition is exhaustive." Say it and quote it.
+3. **The s.38(1)(b) title argument for a contested second fee.** Where a vendor pays a disputed claim to clear the way to completion, the "establishing, preserving or defending his title" limb is the argument to put, and the paperwork has to exist to put it. **Frame as the argument, not as settled treatment.** No consumer page raises it and no competitor could.
+4. **Reg 36 worked through, not mentioned.** [HOA] mentions the 14-day cooling-off right in one sentence. Nobody works reg 36: what happens when you told the agent to start marketing immediately (reg 36 early supply on express request, on a durable medium for an off-premises contract), what you owe if you then cancel (reg 36(4) proportionate amount), when the right is lost altogether (reg 36(2), full performance after such a request with an acknowledgement) and when you owe nothing at all (reg 36(6), trader failed to give the cancellation information).
+5. **The correct account of Foxtons.** Every consumer page that mentions it says "the agent must be the effective cause". Para 37 says the opposite about that contract. Getting this right, with paragraph numbers, is a citation-level differentiator on a low-volume page whose readers are in a dispute and are checking.
+
+**Note on F-152's framing.** TheAdvisory does cite EAA 1979 and SI 1991/859, so do not write that no competitor cites any law. Write, accurately, that none of them cites the tax statute and none of them reads the case correctly.
+
+### S2.4 Query coverage map
+
+**Primary:** `estate agent tie in period` (supporting, low volume, remedial intent).
+
+**Secondaries, mapped to H2 level:**
+- `sole agency notice period` to H2.1
+- `how to get out of an estate agent contract` to H2.2
+- `sole agency vs sole selling rights` to H2.3
+- `can i be charged by two estate agents` to H2.4
+- `ready willing and able purchaser` to H2.5
+- `estate agent contract 14 day cooling off` to H2.6
+- `estate agent withdrawal fee` to H2.7
+
+**Lane discipline.** A8 is the contract-terms lane and nothing else. **No fee percentages and no cost table.** Where a figure is needed the page points at A1 (national) or A7 (London). Freeze adjacency: no CGT rate table, no AEA, no PRR mechanics. Hook paragraph plus one worked line.
+
+### S2.5 Structure
+
+**H2 skeleton (9):**
+1. What a tie-in period is, and how long is normal
+2. Tie-in versus notice, and why the real lock-in is usually longer than the number you were quoted
+3. Sole agency, sole selling rights and multi-agency, in the prescribed statutory wording
+4. Can you be made to pay two agents for one sale?
+5. "Ready, willing and able": paying when no sale completes
+6. Cancelling within 14 days when you signed at home, and what you owe if marketing already started
+7. What the agent had to tell you before you signed, and what happens to their claim if they did not
+8. Which of these payments reduce your Capital Gains Tax bill, and which do not
+9. What to keep, and for how long
+
+**Worked example 1 (second person, no names).** You instruct on a 12-week sole agency with 4 weeks' notice, decide at week 6 to move to another agent, and are told the earliest you can be free is week 16. Walk the arithmetic of tie-in plus notice, then the s.18 question (was the sequence disclosed before you signed, and what s.18(5) means if it was not), then the reg 30 question (where did you sign). **No percentages.**
+
+**Worked example 2 (second person, one line, the CGT hook).** Your sale eventually completes through the second agent. The second agent's commission is an incidental cost of making the disposal under s.38(1)(c) and comes off the gain. The first agent's withdrawal fee is not in the s.38(2) list and does not. **One line, then link to record-keeping and out to the CGT cluster.** No rates on this page.
+
+**FAQ list (12):**
+1. How long is a normal estate agent tie-in period?
+2. Does the notice period run at the same time as the tie-in or after it?
+3. What is the difference between sole agency and sole selling rights?
+4. Can I sell to a friend during a sole selling rights agreement without paying the agent?
+5. Can two estate agents both claim commission on the same sale?
+6. What does "ready, willing and able purchaser" mean?
+7. Can I cancel my estate agent contract within 14 days?
+8. I told the agent to start marketing straight away. What do I owe if I cancel?
+9. What if the agent never gave me the cancellation information?
+10. What must an agent tell me about fees before I sign?
+11. Is an estate agent withdrawal fee tax deductible against my capital gain?
+12. How long should I keep the invoices and correspondence?
+
+**Internal links, exact paths (all verified on disk 2026-08-21):**
+- `/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long`
+- `/blog/capital-gains-tax/tax-sell-rental-property-uk`
+- `/blog/capital-gains-tax/capital-gains-tax-second-home-sale`
+- `/blog/capital-gains-tax/reduce-cgt-property-disposal-uk`
+- `/blog/property-types-and-specialist-tax/selling-house-below-market-value`
+- `/blog/landlord-tax-essentials/epc-certificate-cost-uk` (for the EPC line, avoids an unsourced figure)
+- Wave 12 siblings: `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`, `/blog/capital-gains-tax/cheapest-estate-agent-fees-uk`, `/blog/capital-gains-tax/sell-house-without-estate-agent`, `/blog/capital-gains-tax/can-you-sell-a-house-without-an-estate-agent`, `/blog/capital-gains-tax/online-estate-agents-uk`, `/blog/capital-gains-tax/average-london-estate-agent-fees`, `/blog/capital-gains-tax/selling-a-house-at-auction-uk`, `/blog/capital-gains-tax/modern-method-of-auction-explained`
+- Conductor-side, link as if live: `/cost-of-selling-a-property`, `/calculators/cost-of-selling-calculator`
+- **Do not link `/calculators/capital-gains-tax-calculator`** (armed experiment).
+
+### S2.6 Statutory cross-check against the new locks (§16.36)
+
+- **§5.B supersedes the seed's proposed §5.A mini-lock (F-150).** Cite §5.B, which also carries the s.28(1) exchange-not-completion disposal date. On this page that matters in one place: a contract dispute that delays exchange moves the tax year, and the 60-day clock still runs from completion.
+- **§26.14 supersedes the seed's proposed estate-agency lock (F-151).** Cite §26.14. It adds EAA 1979 s.1(1) and s.1(4) (the portal boundary), s.23A with SI 2008/1712 art 2 for sale-side redress, and the explicit warning never to cite SI 2014/2359 for a selling agent. The seed does not name the redress instrument at all; the page's complaint route section must use s.23A and SI 2008/1712.
+- **§26.14 do-not-write list applies:** "CPUTR 2008 applies", "Property Misdescriptions Act 1991", "letting agents and estate agents share one redress instrument".
+- **Correction to the seed's case-law limb recorded above and raised as F-172.** Everything else in the seed's citation set matches the locks.
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21, Stage 1 seed written. Statutory anchors WebFetch-verified: SI 1991/859 reg 5 (prescribed wording quoted), EAA 1979 s.18, SI 2013/3134 regs 29/30/36, DMCCA 2024 Pt 4 Ch 1, CPUTR 2008 revocation annotation, TCGA 1992 s.38, CG15250, Foxtons v Pelkey Bicknell. Flags raised: F-150, F-151, F-152.
+- 2026-08-21, Stage 2 (batch A6-A9). Extended in place. **Seed correction, material: the seed's account of Foxtons [2008] EWCA Civ 419 is wrong on the ratio.** Judgment read in full at caselaw.nationalarchives.gov.uk (BAILII 403'd); para 36 decides the case by construing "introduced by us" as introduced to the purchase not the property, and **para 37 says expressly that no effective-cause term needs implying**; the general Bowstead Article 57 implied term is at para 20; the double-commission observation is at para 24. Quotes with paragraph numbers now in the brief. Also resolved: s.38(1)(b) "establishing, preserving or defending his title" identified as the argument for a contested second commission (frame as argument, not settled); s.38(3) interest exclusion; advertising limbs split between s.38(2)(a) acquisition and (b) disposal. Sourced: HOA estate agent contracts page (4 or 12 weeks typical tie-in, 20 weeks seen, notice on top, 14-day cooling off, no date, no statute, no tax). Competitors: 2 live, 3 deleted (HOA old contracts URL 404, TPO code 403, Which? 404). **Still blocked: no TPO code clause, version or date may be quoted.** Superseded: seed's §5.A proposal by §5.B, seed's F-151 proposal by §26.14. Flag raised: **F-172**.

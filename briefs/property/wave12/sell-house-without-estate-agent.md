@@ -50,4 +50,91 @@ THE ACCOUNTANT'S ANGLE. The DIY-selling SERP is owned by companies selling the D
 - Coverage-page spec per NETNEW_PROGRAM §8.3: subject as title, question-shaped H2s, the number in the first sentence under each, one current tax year leads.
 - The page must not read as an advert for portal-listing intermediaries. Name the route, not a preferred provider.
 
+## Stage 2 extensions (2026-08-21, session A batch A1-A5)
+
+### 1. Verify-at-write resolutions
+
+- **LSA 2007 Sch 3 para 3(10) and the DIY-conveyancing framing: RESOLVED, and the primary law supplies its own limit (resolved for lock §26.14, proposed patch raised as F-168).** Full text of Sch 3 para 3 fetched https://www.legislation.gov.uk/ukpga/2007/29/schedule/3 on 2026-08-21. **para 3(10) verbatim: "The person is exempt if the person is an individual who carries on the activity otherwise than for, or in expectation of, any fee, gain or reward."** The guard the lock asked for is inside the same paragraph: **para 3(3)(d)** makes a supervised individual exempt only where the supervisor "is entitled to carry on the activity, **otherwise than by virtue of sub-paragraph (10)**". So the statute itself says a person who is exempt only because they act unpaid cannot be the supervisor under whom someone else acts. **Safe framing, which the writer must not exceed: you may prepare the transfer of your own property because you are not doing it for fee, gain or reward; you may not do it for anyone else for payment, and the unpaid exemption gives you no standing to supervise anyone.** Do not write "anyone can do anyone's conveyancing unpaid".
+- **HM Land Registry practice guidance on unrepresented parties: RESOLVED (gates this page and A4; resolved for lock §26.14).** Two sources, both fetched 2026-08-21:
+  - **Practice guide 67, evidence of identity, conveyancers**, https://www.gov.uk/government/publications/evidence-of-identity-conveyancers/practice-guide-67-evidence-of-identity-conveyancers, **last updated 2 March 2026**. For an unrepresented party the conveyancer lodging the application must "confirm that they are satisfied that sufficient steps have been taken to verify the identity of that person, or enclose 'evidence of identity' in respect of that person". Low-value carve-out verbatim: **"An ID form in respect of an unrepresented party is not required where the true value of the land which is the subject of the disposal, discharge or release is £6,000 or less"**, in which case you upload "a certificate confirming the value of the land by someone qualified to give property valuations; such as an estate agent, a surveyor, a land and property valuer or auctioneer". Form **ID3** verifiers include a "Medical doctor, Dentist, **Chartered or certified accountant**, Regulated financial adviser, Member of Parliament, Member of the Senedd".
+  - **gov.uk "Completing forms ID1 and ID2"**, https://www.gov.uk/guidance/completing-forms-id1-and-id2, published 19 August 2014, **updated 5 February 2024**: **"Private individuals must complete form ID1"**, and "You must provide evidence of identity for any party (and the person lodging the application if different) who is not legally represented." Section B must be completed by a conveyancer, Chartered Legal Executive or CLC-regulated Licensed Probate Practitioner.
+  **What this resolves:** HM Land Registry's own machinery expressly contemplates an unrepresented party, so the page can state the DIY route **procedurally and accurately**: it is not prohibited, it is registered through a documented identity process, and the practical bite is that you will still need a conveyancer or one of the listed professionals to verify who you are. **What it does not resolve, and the writer must not claim:** HMLR says nothing about the LSA 2007 exemption. The two arguments are kept separate on the page.
+- **Listing on Rightmove without an agent: RESOLVED from the portal's own words, and it locks neatly onto s.1(4).** Rightmove seller guide, https://www.rightmove.co.uk/guides/seller/preparing-to-sell/marketing-your-property/, fetched 2026-08-21, verbatim: **"sellers and landlords aren't allowed to list properties themselves on Rightmove as a private seller"**, and "we only list homes from registered estate and letting agents"; to sell there "you will need to work with an agent who has an active membership with us". **The original point this unlocks:** a business that only publishes advertisements or provides a direct buyer-to-seller channel sits outside the Act under **EAA 1979 s.1(4)** and therefore outside the **SI 2008/1712 art 2** redress duty, but by the same token it is not a registered agent and cannot put you on Rightmove. **The two things are mutually exclusive: if the route gets you onto Rightmove it runs through a business that is an estate agent in law and must be in an approved redress scheme; if the route is genuinely outside the Act it cannot get you onto Rightmove.** State the test, never a brand. Caution recorded: Rightmove's guide does not itself mention redress schemes, so the redress limb is cited to SI 2008/1712 art 2, not to Rightmove.
+- **EAA 1979 s.1 re-fetched in full**, https://www.legislation.gov.uk/ukpga/1979/38/section/1, revised text current to **20 August 2026**. s.1(4) is a **2013 substitution**, which matters because pre-2013 commentary on the portal boundary is unreliable. s.1(2) exclusions confirmed: practising solicitors in the course of the profession, Consumer Credit Act credit brokerage, survey or valuation work under a distinct contract, and planning and listed-building applications.
+- **Property information form currency: RESOLVED, and it is new to the corpus (raised as F-169).** The Law Society's own page returned **HTTP 403** to our fetcher, so this is sourced from HomeOwners Alliance's TA6 guide, https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/ta6-form/, fetched 2026-08-21, verbatim: **"This guide relates to the latest TA6 property information form (6th edition) published by The Law Society and which came into force on 30 March 2026."** Seller's duty as stated there: "Complete the form truthfully, completely and as accurately as you can from your own knowledge", with Misrepresentation Act 1967 exposure if the answers are wrong. **Do not publish a section count**: HOA lists 13 sections and trade coverage says 15, and the Law Society page could not be reached to settle it.
+- **Costs of the DIY route: RESOLVED from two named dated sources** (see §4). **Land Registry registration fees are NOT in this page's table**: on a sale the registration application is the buyer's, so SI 2024/931 Sch 1 Scale 1 (per F-165) belongs to A9 and to the buy side, not to a seller's cost list. Saying so is itself a small correction the DIY-selling SERP gets wrong.
+- **Rates and AEA re-read against §5 on 2026-08-21:** 18% / 24%, AEA £3,000, 60-day filing for UK residents only where tax is due. Unchanged.
+
+### 2. Competitor verification + exploitation plan
+
+Live at 2026-08-21 (HTTP 200, on-topic, WebFetch-confirmed):
+- https://www.moneysavingexpert.com/mortgages/how-to-sell-a-house/ (updated **1 July 2026**; carries an explicit DIY costing)
+- https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/cost-selling-home/ ("Cost of selling a house in 2026")
+- https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/ta6-form/
+- https://www.rightmove.co.uk/guides/seller/preparing-to-sell/marketing-your-property/ (first-party source on portal access, not a competitor to outrank)
+
+Deleted: `theadvisory.co.uk/estate-agents/estate-agent-fees/` (**404**); `getagent.co.uk/estate-agent-fees` (**429**, two attempts); `strike.co.uk` **301-redirects to purplebricks.co.uk** as at 2026-08-21, so the free-listing brand the DIY SERP still recommends no longer operates as a separate service, which is a fact worth one line on the page and a reason not to name providers at all.
+
+Beat-them plan (5):
+1. **The after-tax saving.** MSE prices the DIY route at "£0 to £400" of agency fees and a "£900 to £3,250" total, and stops there. We net it off: the commission you avoid was a deduction under **s.38(1)(c)**, so on a chargeable disposal roughly a fifth to a quarter of the saving goes back in tax. Nobody on this SERP does the subtraction.
+2. **The portal paradox, stated as a legal test.** The s.1(4) exemption and Rightmove access cannot coexist. Every DIY guide tells you to "use a listing service to get on Rightmove" without noticing that this puts a regulated estate agent back into the transaction, which is good news for your protection and bad news for the "no agent" framing.
+3. **The protection ledger, both directions.** Sell privately and the **s.18** disclosure duty and the **SI 2008/1712 art 2** redress route are simply not running (there is no agent to owe them, and no scheme to complain to about yourself), while **Misrepresentation Act 1967 s.2(1)** applies to "a person" with no trader restriction and is entirely undiluted. Meanwhile **DMCCA 2024 s.225(3)** means the unfair-trading regime binds the intermediary, not you. Competitors describe steps; none draws the boundary.
+4. **The TA6 6th edition, in force 30 March 2026.** A DIY seller who downloads a form from a search result is likely to get the withdrawn 4th or 5th edition. Corpus check 2026-08-21: **"TA6" appears on zero of our blog pages**, and it is the single document that carries the seller's misrepresentation exposure.
+5. **The 60-day step as step ten of the process.** Every DIY walkthrough ends at completion. Ours ends at the return, because the seller who removed the agent has also removed the only party who might have mentioned it, and per §5.B the **exchange** date fixes the tax year while the **60-day clock runs from completion**, which are different dates.
+
+### 3. Query coverage map
+
+| Query | Served at |
+|---|---|
+| `sell house without estate agent` (390/mo, primary) | H1 + first-sentence answer + H2 1 |
+| `selling home without estate agent` / `selling house no estate agent` (390 each) | H1 variants + H2 2 step list |
+| `how to sell your house privately` | H2 2 |
+| `can i list on rightmove without an estate agent` | H2 3 |
+| `how to value your house yourself` | H2 4 |
+| `do i need a solicitor to sell my house` / `diy conveyancing` | H2 7 |
+| `what paperwork do i need to sell my house` | H2 5 |
+| `how much does it cost to sell a house privately` | H2 9 (cost table) |
+
+Lane guard: **A3 is the process page.** The "should you" arguments, the who-it-suits list and the five blockers belong to **A4**, which A3 links once and early. A1 owns the commission benchmark. A5 owns the middle option. CGT mechanics stay with cgt1: hook plus one worked line.
+
+### 4. Structure, tables, examples, FAQs, links
+
+**H2 skeleton (10):**
+1. Can you sell a house without an estate agent, and what does it save? (number in the first sentence, then the one-line link to A4 for anyone still deciding)
+2. The ten steps, in order
+3. How to get on Rightmove and Zoopla without an agent (the s.1(4) test, the Rightmove rule verbatim, and what the workaround costs)
+4. How to price it without an agent's comparables, and what evidence to keep
+5. The paperwork: EPC, title, TA6 6th edition, fittings and contents, leasehold pack
+6. Handling viewings, offers and buyer checks with nobody vetting for you
+7. Do you need a conveyancer, and can you do it yourself? (LSA 2007 s.13, Sch 2 para 5(1)(a), Sch 3 para 3(10) and its para 3(3)(d) limit; HMLR PG67 and the ID1 route)
+8. What you are on the hook for when you answer questions about the property (Misrepresentation Act 1967 s.2(1); DMCCA 2024 s.225(3) binds the intermediary, not you)
+9. What it actually costs, and what it saves after tax (cost table)
+10. Step ten: the tax return nobody reminds you about (60 days from completion; exchange fixes the tax year)
+
+**Cost-table spec.** Two blocks side by side. Block A, the DIY route: listing intermediary fee · EPC · photography and floorplan · conveyancing (sale side) · searches and disbursements · identity verification · total. Block B, the agent route: commission at the sourced average · total. Then three columns: cash saving · saving after CGT at 18% · saving after CGT at 24%. Sourced inputs, all fetched 2026-08-21:
+- DIY agency cost **£0 to £400**, DIY all-in total **£900 to £3,250** (MoneySavingExpert, updated 1 July 2026)
+- Online or listing-route fixed fees **£129 to £1,599** by named provider and **£300 to £1,500** as a band (MoneySavingExpert 1 July 2026; Which? "Online estate agents", updated 08 Jun 2026)
+- Conveyancing, sale side: **£800 to £1,500** basic fee plus title deeds £10 to £20, bank transfers £20 to £50 and money-laundering checks £10 to £20 (MoneySavingExpert 1 July 2026), against **"average between around £610 and £950"** plus transfer disbursements £200 to £300 and title deeds £10 (HomeOwners Alliance, "Cost of selling a house in 2026"). **Show both and name both**; the divergence is real and averaging it would be fabrication.
+- EPC: **£50 to £120** (MSE) and **£60 to £120** (HOA). Link to the existing `epc-certificate-cost-uk` page rather than re-arguing it.
+- Commission comparator: **1.42% including VAT** (HOA) and **roughly 1.3% including VAT**, Rightmove 2025 data via Which? (08 Jun 2026).
+- HMLR identity: form ID1 itself carries no HMLR fee, but section B must be completed by a conveyancer or one of the professionals listed in PG67, and any charge for that is the conveyancer's own. **Do not invent a figure**; state it as a cost to ask about.
+Every derived cell is labelled "calculated from the sourced figures".
+
+**Worked examples (2, second person only).**
+(a) *The saving, before and after tax.* You sell a £300,000 former rental. The agent route would have cost £4,260 at 1.42% including VAT. You spend £1,079 instead: a fixed listing fee, an EPC and photography. The cash saving is £3,181. But the £3,181 you did not spend is £3,181 you no longer deduct under **s.38(1)(c)**, so as a higher-rate taxpayer on a chargeable disposal the real saving is **£2,418**. If the property is fully covered by private residence relief instead, there is no gain to deduct against and the whole £3,181 is yours. **That fork changes the answer and it is the only thing on this page a fee-comparison site cannot copy.**
+(b) *The step nobody schedules.* You exchange on 26 March and complete on 12 May. The disposal falls in the **earlier** tax year (s.28(1) fixes it at exchange) but the 60-day return runs from **completion**, so the filing deadline is in July for a gain that belongs to the tax year that ended in April. With no agent and no chain of professional reminders, that is the classic missed filing.
+
+**FAQ list (13):** Can you legally sell your house without an estate agent? · Can you list on Rightmove as a private seller? · What does a listing-only service cost? · How do you value your own house? · Do you need an EPC to sell privately? · What is the TA6 form and which edition is current? · Do you need a solicitor to sell a house? · Can you do your own conveyancing? · What is form ID1 and why do you need it? · How do you check a buyer has the money? · What can you be sued for if you get an answer wrong? · What protections do you give up? · How much does selling privately actually save? · What do you have to tell HMRC after completion?
+
+**Internal links (exact paths):**
+- `/cost-of-selling-a-property` (pillar, as if live), `/calculators/cost-of-selling-calculator` (as if live), `/calculators/capital-gains-tax-calculator`
+- `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk`, `/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026`, `/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long`
+- `/blog/landlord-tax-essentials/energy-performance-certificates-epc`, `/blog/landlord-tax-essentials/epc-certificate-cost-uk`
+- siblings: `/blog/capital-gains-tax/can-you-sell-a-house-without-an-estate-agent` (A4, **mandatory early link**, the decision page), `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house` (A1, the cost avoided), `/blog/capital-gains-tax/online-estate-agents-uk` (A5, the middle option), `/blog/capital-gains-tax/cost-of-moving-house-uk` (A9)
+
+### 5. Statutory cross-check (§16.36)
+
+Seed read against §5, §5.B and §26.14 on 2026-08-21. Aligned: s.1(1) and s.1(4) as the private-seller boundary and the portal mechanism; LSA 2007 s.12(1)(c), Sch 2 para 5(1)(a), s.13 and Sch 3 para 3(10); Misrepresentation Act 1967 s.2(1) applying to "a person"; DMCCA 2024 s.225(3) with CPUTR 2008 revoked and the Property Misdescriptions Act 1991 repealed; s.38(1)(c) and s.38(2); FA 2019 Sch 2 para 3(1)(b) with FA 2022 s.23(2). **Resolved against the lock's own caution:** §26.14 warns that Sch 3 has no express self-representation carve-out and that para 3(10) must not be inflated. Stage 2 finds the limit inside para 3(3)(d) and the practice guidance in PG67, so the caution can be converted into positive lock wording (**F-168**). **Added from §5.B:** the exhaustive s.38(2) list (so the page must not tell a DIY seller their removals or mortgage exit fee are deductible) and the exchange-versus-completion two-date trap, now built into H2 10. No mismatch found between seed and lock.
+
 ## Work log (Stage 2 + RUN populate)
+- 2026-08-21 Stage 2: LSA 2007 Sch 3 para 3 fetched in full, para 3(3)(d) found as the internal limit on para 3(10); HMLR PG67 (updated 2 Mar 2026) and gov.uk ID1/ID2 guidance secured as the practice guidance (F-168 proposes the lock patch); Rightmove private-seller rule captured verbatim and paired with the s.1(4) test; TA6 6th edition in force 30 Mar 2026 recorded (F-169, Law Society page 403 so sourced via HOA, section count deliberately unpublished); DIY cost figures sourced from MSE (1 Jul 2026) and HOA; strike.co.uk found redirecting to purplebricks.co.uk; extensions appended. No blockers.

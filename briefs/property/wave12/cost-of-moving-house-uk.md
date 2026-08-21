@@ -47,5 +47,151 @@ THE ACCOUNTANT'S ANGLE IS THE HOUSE DIFFERENTIATOR. Reallymoving, HomeOwners All
 
 ## Universal rules + workflow stubs (Stage 2 fills)
 
+## Stage 2 extensions (2026-08-21, batch A6-A9)
+
+### S2.1 Verify-at-write items resolved
+
+**GATING ITEM FOR THIS BATCH, FULLY RESOLVED. Land Registry fees: SI 2024/931 Sch 1 Scale 1 only, and SI 2021/1226 is revoked.**
+
+Revocation confirmed. Fetched `https://www.legislation.gov.uk/uksi/2021/1226` on 2026-08-21: the instrument is titled "The Land Registration Fee Order 2021 (revoked)" and carries the annotation verbatim, **"Order revoked (9.12.2024) by The Land Registration Fee Order 2024 (S.I. 2024/931), arts. 1(1), 14"**. The 2024 Order therefore came into force on **9 December 2024**. **Any page citing registration fees cites SI 2024/931 and never the 2021 Order.** Resolved for **F-165**.
+
+Scale 1 confirmed from two sources on 2026-08-21, the Order and HM Land Registry's own restatement:
+- `https://www.legislation.gov.uk/uksi/2024/931/schedule/1/made`
+- `https://www.gov.uk/guidance/hm-land-registry-registration-services-fees`, which states the fees are made under "the Land Registration Fee Order 2024 (SI 2024/931), which came into effect on 9 December 2024".
+
+| Value or amount | By post | Portal or gateway, **whole-title** transfer or surrender | Portal or gateway, **part** transfer or new lease | Voluntary first registration |
+|---|---|---|---|---|
+| £0 to £80,000 | £45 | £20 | £45 | £30 |
+| £80,001 to £100,000 | £95 | £40 | £95 | £70 |
+| £100,001 to £200,000 | £230 | £100 | £230 | £170 |
+| £200,001 to £500,000 | £330 | £150 | £330 | £250 |
+| £500,001 to £1,000,000 | £655 | £295 | £655 | £495 |
+| £1,000,001 and over | £1,105 | £500 | £1,105 | £830 |
+
+**CORRECTION TO THE SEED AND TO F-165, and it is the reason this item was worth gating.** The seed and the flag both render Scale 1 as "£X electronic / £Y otherwise". **That is not what the reduced fee is.** HM Land Registry's own table splits the electronic column: the reduced fee (£20 / £40 / £100 / £150 / £295 / £500) applies to **portal or gateway applications to transfer or surrender a WHOLE registered title**. A **part** transfer or a new lease lodged electronically pays the **full** fee (£45 / £95 / £230 / £330 / £655 / £1,105). Writing "£150 if you do it online" for a £300,000 sale of part, or for a new lease, would be wrong. On a straightforward whole-title house sale the reduced fee is the right one, which is the scenario this page uses, but the table must carry the distinction. Two further points from the same sources: **"Where the amount or value is a figure which includes pence, it must be rounded down to the nearest £1"**, and **"When assessing fees under Scale 1, fees must be paid on the VAT-inclusive consideration or rent."** Raised as **F-173**.
+
+**RESOLVED. TCGA 1992 s.38(1) to (3) re-fetched verbatim** at `https://www.legislation.gov.uk/ukpga/1992/12/section/38`, 2026-08-21, page current to 20 August 2026. The full text of s.38(2) is reproduced in the A7 brief's S2.1. The point that matters for this page, and that the seed gets slightly wrong:
+
+**s.38(2) splits the advertising limb by direction of travel.** "(a) in the case of the acquisition of an asset, with costs of advertising to find a seller, and (b) in the case of a disposal, with costs of advertising to find a buyer and costs reasonably incurred in making any valuation or apportionment required for the purposes of the computation of the gain". The seed writes "advertising to find a buyer or seller" as one line. **A9 is the only page in the wave covering both ends of the chain, so it is the one page where the split is live and useful:** your sale-side marketing spend is s.38(1)(c) now, and any acquisition-side advertising is banked into the base cost of the new property under s.38(1)(a). Use it, do not flatten it. **s.38(3)** confirms the mortgage-interest exclusion the seed relies on: "Except as provided by section 40, no payment of interest shall be allowable under this section."
+
+**RE-VERIFY AT WRITE, do not carry from this brief:** SDLT bands and the 5% surcharge from house_positions §1 (this page prints an amount for the worked scenario only and links `/calculators/stamp-duty-calculator`, it prints no band table); CGT rates and the £3,000 AEA from §5; the 60-day window from §5.B (FA 2019 Sch 2 para 3(1)(b), "60th" substituted by FA 2022 s.23(2)); SI 2012/3118 reg 6.
+
+### S2.2 Cost tables, sources filled
+
+Sources, all fetched 2026-08-21:
+- **[HOA]** HomeOwners Alliance cost of moving, `https://hoa.org.uk/cost-of-moving-calculator/`. **Live.** Total "£13,018 based on buying and selling an averagely priced house in the UK of £292,000", dated 2026. Method disclosed only as "We've used our free tools including our stamp duty calculator to work out these costs". Line items: stamp duty £4,600; building survey £650; conveyancing (purchase) £1,050; mortgage fees £1,000; mortgage valuation £150; homebuyers protection insurance £78; estate agents £4,150; conveyancing (sale) £700; EPC £60; removals £550; mail redirection £39.50.
+- **[HOA-FEE]** HomeOwners Alliance estate agent fees, `https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/how-much-should-i-pay-the-estate-agent/`. **Live.** "The average estate agent fee in 2026 is 1.42% including VAT"; sole agency 1.2% to 1.8% inc VAT. No date, no method.
+- **[HPI]** HM Land Registry UK House Price Index, `https://landregistry.data.gov.uk/app/ukhpi`. **England average £293,262, June 2026**; London £553,870. This is the authoritative price anchor and it happens to sit within £1,300 of HOA's £292,000 assumption, which is worth one sentence of corroboration.
+- **[SI]** The Land Registration Fee Order 2024, SI 2024/931, Sch 1 Scale 1, plus the HM Land Registry restatement. The only statutory line on the whole bill.
+- **[EPC]** Our own `/blog/landlord-tax-essentials/epc-certificate-cost-uk`, which carries a £35 to £120 range and already cites CG15250. Use our own page rather than importing HOA's single £60 point, and link it.
+
+**Table 1, itemised moving costs.** Columns: cost line, typical range or figure, what drives it, **source**. Every row's source cell is filled from the list above or the row is marked "illustrative range, label as such on page". Rows and their sources:
+
+| Line | Figure | Source |
+|---|---|---|
+| Estate agent commission | 1.42% inc VAT average, 1.2% to 1.8% sole agency; about £4,150 on £292,000 | [HOA-FEE], [HOA] |
+| Conveyancing, sale | about £700 | [HOA] |
+| Conveyancing, purchase | about £1,050 | [HOA] |
+| EPC (seller, legally required to market) | £35 to £120 | [EPC], our own page |
+| Survey | about £650 for a building survey | [HOA] |
+| Mortgage arrangement fees | about £1,000 | [HOA] |
+| Mortgage valuation | about £150 | [HOA] |
+| SDLT | worked-scenario amount only, link the calculator | house_positions §1 at write |
+| **Land Registry registration fee** | **statutory, see Table 3** | **[SI]** |
+| Removals | £550 as a single point figure | [HOA]. **Weakest row on the page.** No second source reachable at Stage 2 (Compare My Move 403, Checkatrade 403, reallymoving's removals guide returned no figures). **Either cite HOA's £550 as one published estimate and say so, or present a range marked "illustrative range, label as such on page". Do not invent a range and attribute it.** |
+| Mail redirection | £39.50 | [HOA] |
+| Homebuyers protection insurance | £78 | [HOA] |
+| Storage, cleaning, overlap on two properties, new carpets | not sourced | **illustrative, label as such** |
+
+**Table 2, the three tax buckets. This is the beat-them table and it sits directly under the headline total.** Three columns: cost line; bucket; provision. Bucket 1, deductible now against the gain on the property you are leaving, s.38(1)(c) read with the s.38(2) list: agent commission, sale conveyancing, EPC, advertising to find a buyer. Bucket 2, banked into the base cost of the property you are buying, s.38(1)(a): purchase conveyancing, SDLT (named in s.38(2) as "stamp duty or stamp duty land tax"), the Land Registry fee, survey, any advertising to find a seller under s.38(2)(a). Bucket 3, no relief at either end: removals, storage, cleaning, mail redirection, new carpets, mortgage arrangement and valuation fees, and mortgage interest, which s.38(3) excludes expressly. **The §5.B do-not-write line applies verbatim: never write that removal costs come off the gain.**
+
+**Table 3, the statutory Land Registry scale.** Reproduce the four-column table in S2.1 above, quote the Order by name and SI number, state the 9 December 2024 in-force date, carry the round-down-to-the-nearest-pound rule and the VAT-inclusive-consideration rule, and mark the whole-title versus part-transfer distinction. **This is the most defensible table on the page and no consumer competitor sources it.**
+
+### S2.3 Competitor verification and beat-them plan
+
+**Verified live (HTTP 200, on-topic, fetched 2026-08-21):**
+- `https://hoa.org.uk/cost-of-moving-calculator/`. Full itemised total. Method stated only as "we used our own tools". **Mentions "Capital gains tax on property" only as the title of a separate guide; no tax treatment of any moving cost anywhere on the page.** Cites no legislation. Does not source the Land Registry fee.
+- `https://www.reallymoving.com/moving-cost-calculator`. Live and on-topic, but it is a tool rather than a guide: it publishes **no figures on the page**, stating that costs are "calculated on the basic fees charged by the solicitors, surveyors, removals and EPC partners on reallymoving" and that "VAT has been added where applicable". **Usable as a competitor URL, unusable as a figure source.**
+
+**Deleted or unreachable, tested 2026-08-21:** `comparemymove.com/advice/moving-house/cost-of-moving-house` (403); `checkatrade.com/blog/cost-guides/cost-moving-house/` (403); `reallymoving.com/moving-house/guides/cost-of-moving-house` (404); `reallymoving.com/removals/guides/how-much-do-removals-cost` (200 but the fetched content carried no figures, so it is not a usable source). MoneySavingExpert was not reached. **Do not list any of these.**
+
+**Beat-them plan, five elements:**
+1. **The three-bucket table, directly under the headline total.** Every competitor lists SDLT as a cost and stops. None says which lines reduce a tax bill now, which are banked as base cost for a disposal decades away, and which are simply spent.
+2. **The statutory Land Registry scale, cited to the Order.** [HOA] prints no Land Registry line at all in its itemised list; nobody on this SERP cites SI 2024/931. It is one of very few property transaction costs fixed by statute rather than by market, and it is the page's most defensible row. The whole-title versus part-transfer split (F-173) is a correction the entire SERP gets wrong when it mentions the fee at all.
+3. **Prices anchored to HM Land Registry, dated.** [HPI] England £293,262, June 2026. [HOA] runs on "£292,000" with no stated vintage. Naming the index and the month costs one clause and beats every competitor on provenance.
+4. **The receipts argument for the buying side.** Bucket 2 is worth nothing today and everything in 2046, and nobody remembers a 2026 survey fee twenty years on. This converts a dry list into a reason to act, and it links our record-keeping page.
+5. **s.38(3) on mortgage interest, and the s.38(2) exhaustive list.** CG15250: "TCGA92/S38 defines the incidental costs of acquisition and disposal. The definition is exhaustive." Removals are the single most common thing readers assume is deductible and it is not.
+
+### S2.4 Query coverage map
+
+**Primary:** `cost of moving house uk` (2,400/mo, £7.00 CPC).
+
+**Secondaries, mapped to H2 level:**
+- `how much does it cost to move house` to H2.1
+- `moving house costs breakdown` to H2.2
+- `land registry fees when buying a house` to H2.4, the statutory table
+- `conveyancing fees uk` and `survey cost when buying a house` to H2.5
+- `removal costs uk` to H2.6
+- `hidden costs of moving house` to H2.8
+- `are moving costs tax deductible` to H2.9, the three-bucket table
+
+**Lane discipline and freeze adjacency, non-negotiable.** A9 is the only both-ends-of-the-chain page in the wave; A1, A2, A5, A7 and A8 are sell-side agent pages and the conductor-side pillar owns the selling side in depth. **No CGT rate table, no AEA explainer, no PRR mechanics, no SDLT band table.** The SDLT line gives an amount for the worked scenario and links `/calculators/stamp-duty-calculator`; the CGT line gives an amount and links the CGT pillar. Sell-side detail is one line and a link to the pillar or to A1.
+
+### S2.5 Structure
+
+**H2 skeleton (9):**
+1. What it costs to move house in the UK, all in (headline total, then Table 1)
+2. The three tax buckets your moving bill splits into (Table 2, immediately after the total)
+3. Selling costs: agent, conveyancing, EPC
+4. Buying costs: stamp duty and the Land Registry fee (Table 3, statutory)
+5. Conveyancing, searches and surveys at each end
+6. Removals, storage and the things nobody budgets for
+7. What changes if you are a first-time buyer, or buying without selling
+8. The hidden costs: mortgage fees, overlap, insurance, redirection
+9. What to keep, and for how long, so the buying costs are still provable when you sell
+
+**Worked example 1 (second person, no names).** You are selling at the England average of £293,262 [HPI, June 2026] and buying at a similar price, whole title, electronic registration. Build the total from Table 1's sourced lines, with the Land Registry fee taken from the £200,001 to £500,000 band at **£150** because it is a whole-title portal transfer [SI]. Show the total, then split it three ways using Table 2. **Show the arithmetic; state the source and date of every input in a note under the table.**
+
+**Worked example 2 (second person, one line, the CGT hook).** If the property you are leaving was let for part of your ownership, the selling costs in bucket 1 come off the chargeable gain under s.38(1)(c), and where tax is due a 60-day return follows completion. **One line, then link out.** No rates, no computation.
+
+**FAQ list (13):**
+1. How much does it cost to move house in the UK in 2026?
+2. What is the single biggest cost when moving?
+3. How much is the Land Registry fee, and who sets it?
+4. Is the Land Registry fee cheaper if my solicitor files online?
+5. What do conveyancing fees cost for the sale and the purchase?
+6. Do I need a survey, and what does it cost?
+7. Do I have to buy an EPC to sell my house?
+8. How much do removals cost?
+9. Which moving costs are tax deductible?
+10. Can I deduct removal costs from my capital gain?
+11. Do stamp duty and the Land Registry fee reduce my tax bill?
+12. Do I pay Capital Gains Tax when I move house?
+13. What records do I need to keep, and for how long?
+
+**Internal links, exact paths (all verified on disk 2026-08-21):**
+- `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk`
+- `/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long`
+- `/blog/capital-gains-tax/capital-gains-tax-second-home-sale`
+- `/blog/capital-gains-tax/tax-sell-rental-property-uk`
+- `/blog/property-types-and-specialist-tax/first-time-buyer-relief-understanding-tax-credits-and-deductions`
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025`
+- `/blog/landlord-tax-essentials/energy-performance-certificates-epc`
+- `/blog/landlord-tax-essentials/epc-certificate-cost-uk`
+- `/calculators/stamp-duty-calculator` (live static route)
+- Wave 12 siblings: `/blog/capital-gains-tax/how-much-do-estate-agents-charge-to-sell-a-house`, `/blog/capital-gains-tax/cheapest-estate-agent-fees-uk`, `/blog/capital-gains-tax/online-estate-agents-uk`, `/blog/capital-gains-tax/average-london-estate-agent-fees`, `/blog/capital-gains-tax/estate-agent-contract-tie-in-periods`, `/blog/capital-gains-tax/part-exchange-house-uk`
+- Conductor-side, link as if live: `/cost-of-selling-a-property`, `/calculators/cost-of-selling-calculator`
+- **Do not link `/calculators/capital-gains-tax-calculator`** (armed experiment).
+
+### S2.6 Statutory cross-check against the new locks (§16.36)
+
+- **§5.B supersedes the seed's proposed §5.A mini-lock (F-150).** Cite §5.B. Its do-not-write list is this page's most important guardrail: never "you can deduct removal costs against the gain", never "the 60-day clock runs from exchange".
+- **§5.B adds a fact the seed omits and this page should carry in one line:** the s.28(1) disposal date is exchange, not completion, so a late-March exchange with a May completion puts the disposal in the earlier tax year while the 60-day clock still runs from completion. On a chain page that is a real trap and a differentiator.
+- **§1 governs the SDLT line.** The seed's freeze note is correct and stands: an amount for the worked scenario, a link to the calculator, no band table.
+- **F-165 amended by the Stage 2 finding above (F-173).** The "electronic / otherwise" shorthand in the flag and in the seed is imprecise; the reduced fee is portal or gateway **whole-title** transfers and surrenders only.
+- **Precision note for the conductor's Stage 2b patch to §5.B (raised on the A7 brief as F-171):** the advertising and valuation limbs are on the face of s.38(2)(a) and (b), not only "per CG15250"; the manual supports the "exhaustive" characterisation, the statute supplies the limbs.
+- No other mismatch found between the seed's citations and the locks.
+
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21, Stage 1 seed written. Statutory anchors WebFetch-verified: TCGA 1992 s.38(1)(a)-(c), s.38(2), s.38(3); SI 2024/931 Sch 1 Scale 1 (bands quoted); SI 2012/3118 reg 6; FA 2019 Sch 2 para 3 + para 6; CG15250. SI 2021/1226 confirmed revoked and superseded by SI 2024/931. Flags raised: F-150; F-153 (Land Registration Fee Order supersession, existing page cites "the Scale 1 registration fee" without the Order).
+- 2026-08-21, Stage 2 (batch A6-A9). Extended in place. **Gating item resolved:** SI 2021/1226 shown at legislation.gov.uk as "The Land Registration Fee Order 2021 (revoked)" with the annotation "Order revoked (9.12.2024) by The Land Registration Fee Order 2024 (S.I. 2024/931), arts. 1(1), 14"; SI 2024/931 in force 9 December 2024; Scale 1 bands confirmed against both the Order and HM Land Registry's restatement. **Correction to the seed and to F-165: the reduced fee is NOT "electronic versus otherwise". It applies to portal or gateway applications transferring or surrendering a WHOLE registered title; a part transfer or a new lease lodged electronically pays the full fee.** Also captured: round down to the nearest £1, and fees assessed on VAT-inclusive consideration. TCGA 1992 s.38 re-fetched verbatim; **s.38(2)(a) advertising-to-find-a-seller is the acquisition limb and s.38(2)(b) advertising-to-find-a-buyer plus valuation and apportionment is the disposal limb**, which the seed flattens and which this both-ends page should use. Sourced: HOA cost of moving (£13,018 on £292,000, 2026, full itemised list), HOA estate agent fees (1.42% inc VAT), HM Land Registry UK HPI (**England £293,262, June 2026**), our own EPC cost page (£35 to £120). Competitors: 2 live, 4 unreachable and deleted (Compare My Move 403, Checkatrade 403, two reallymoving guide paths 404 or figure-free). **Still weak: removals has one published point figure (£550, HOA) and no second source; present it as one published estimate or mark the range illustrative, never invent a range.** Superseded: seed's §5.A proposal by §5.B. Flag raised: **F-173**.
