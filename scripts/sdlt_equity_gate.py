@@ -37,6 +37,7 @@ CLUSTERS = {
     "sdlt": {"dir": ROOT / "briefs" / "property" / "sdlt", "universe": 2448},
     "cgt": {"dir": ROOT / "briefs" / "property" / "cgt", "universe": 3869},
     "rental": {"dir": ROOT / "briefs" / "property" / "rental", "universe": 867},
+    "landed": {"dir": ROOT / "briefs" / "property" / "rural-estates", "universe": 242},
 }
 
 # generic calculator tools live in the registry, bespoke ones in app routes
@@ -47,6 +48,8 @@ GENERIC_TOOL_SLUGS = {
 
 # pack page path -> repo file path
 def repo_path(page: str) -> str:
+    if page.startswith("Property/") and page.endswith((".md", ".ts", ".tsx")):
+        return page  # rural-estates packs carry the repo path directly
     if page.startswith("/blog/"):
         slug = page.rstrip("/").split("/")[-1]
         return f"{BLOG_DIR}/{slug}.md"
@@ -108,8 +111,15 @@ def is_subsequence(needle: list[str], haystack: list[str]) -> bool:
 
 def parse_pack(path: Path, cluster: str) -> dict:
     text = path.read_text(encoding="utf-8")
-    page = re.search(r"^- Page: `([^`]+)`", text, re.MULTILINE).group(1)
-    grade = re.search(r"^- Grade: \*\*([A-Z-]+)", text, re.MULTILINE).group(1)
+    # rural-estates packs bold the labels ("- **Page:** `...`", "- **Grade: X**")
+    # and net-new packs carry "- **Page:** NET-NEW, slug **`slug`**"; accept all
+    page_line = re.search(r"^- \*{0,2}Page:\*{0,2}.*$", text, re.MULTILINE).group(0)
+    if "NET-NEW" in page_line:
+        slug = re.search(r"`([^`]+)`", page_line).group(1)
+        page = f"{BLOG_DIR}/{slug}.md"
+    else:
+        page = re.search(r"`([^`]+)`", page_line).group(1)
+    grade = re.search(r"^- \*{0,2}Grade[:* ]+([A-Z][A-Z-]*)", text, re.MULTILINE).group(1)
     if cluster == "sdlt":
         queries = re.findall(r"^- \d+ impr, \d+ clicks?, pos [\d.]+ :: `([^`]+)`", text, re.MULTILINE)
         market = []

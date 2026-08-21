@@ -48,6 +48,7 @@ import { buyToLetMortgageCalculator } from "../lib/calculators/tools/buy-to-let-
 import { rentARoomReliefCalculator } from "../lib/calculators/tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "../lib/calculators/tools/property-allowance-checker";
 import { leaseExtensionPremiumCalculator } from "../lib/calculators/tools/lease-extension-premium-calculator";
+import { bprAprAllowanceCalculator } from "../lib/calculators/tools/bpr-apr-allowance-calculator";
 // Tools that call @/lib/* must be tested through the pure lib functions directly
 // (the @/ alias resolves in the app but the tool configs carry compute fns).
 
@@ -70,8 +71,8 @@ type V = Record<string, number | string | boolean>;
 // 1. Registry contract (TL-01)
 // ============================================================
 describe("registry contract (TL-01)", () => {
-  it("total fleet = 24 tools (5 bespoke + 19 generic)", () => {
-    expect(TOOLS.length).toBe(24);
+  it("total fleet = 25 tools (5 bespoke + 20 generic)", () => {
+    expect(TOOLS.length).toBe(25);
   });
 
   it("5 bespoke tools", () => {
@@ -79,13 +80,13 @@ describe("registry contract (TL-01)", () => {
     expect(bespoke.length).toBe(5);
   });
 
-  it("19 generic tools", () => {
+  it("20 generic tools", () => {
     const generic = genericTools();
-    expect(generic.length).toBe(19);
+    expect(generic.length).toBe(20);
   });
 
-  it("allTools returns 24 tools", () => {
-    expect(allTools().length).toBe(24);
+  it("allTools returns 25 tools", () => {
+    expect(allTools().length).toBe(25);
   });
 
   it("getGenericTool finds by slug", () => {
@@ -118,6 +119,7 @@ describe("registry contract (TL-01)", () => {
       "rent-a-room-relief-calculator",
       "property-allowance-checker",
       "lease-extension-premium-calculator",
+      "bpr-apr-allowance-calculator",
     ];
     for (const s of expected) {
       expect(slugs, `missing slug: ${s}`).toContain(s);
@@ -1288,6 +1290,352 @@ describe("buy-to-let-mortgage-calculator: house-bar checks", () => {
       defaults(buyToLetMortgageCalculator.fields) as V,
     );
     const copy = JSON.stringify(buyToLetMortgageCalculator) + JSON.stringify(result);
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+});
+
+// ============================================================
+// 17. GOLDEN: Combined BPR + APR allowance (IHTA 1984 s.124D)
+//
+// Ground truth: docs/property/house_positions.md §15.4 (+ §22.1 Pawson line).
+//   allowance   = £2,500,000 per person, x2 when the couples toggle is on
+//   available   = max(0, allowance - gifts since 30 Oct 2024)   [anti-forestalling]
+//   relieved100 = min(apr + bpr, available)                     [100% relief]
+//   excess      = (apr + bpr) - relieved100                     [50% relief]
+//   chargeable  = excess * 50% + aim * 50%                      [AIM = separate tier]
+//   iht         = chargeable * 40%
+//   effective rate on the excess = 40% x 50% = 20%
+//
+// A test failing here because the quantum has moved off £2,500,000 = STOP.
+// The GOV.UK reforms summary still says £1m (announcement stage, never updated);
+// s.124D(2)(a) as inserted by FA 2026 Sch 12 para 4 is the authority.
+// ============================================================
+const bprRow = (r: ReturnType<typeof bprAprAllowanceCalculator.compute>, label: string) =>
+  r.rows?.find((x) => x.label === label)?.value;
+
+describe("GOLDEN: bpr-apr-allowance-calculator (defaults, estate over the allowance)", () => {
+  const result = bprAprAllowanceCalculator.compute(defaults(bprAprAllowanceCalculator.fields) as V);
+
+  // Defaults: APR 1,800,000 + BPR 1,200,000, AIM 200,000, nothing consumed, single.
+  // combined    = 1,800,000 + 1,200,000 = 3,000,000
+  // available   = 2,500,000
+  // relieved100 = min(3,000,000, 2,500,000) = 2,500,000  -> remaining 0
+  // excess      = 3,000,000 - 2,500,000     =   500,000
+  // chgExcess   = 500,000 * 0.5             =   250,000
+  // chgAim      = 200,000 * 0.5             =   100,000
+  // chargeable  = 250,000 + 100,000         =   350,000
+  // iht         = 350,000 * 0.4             =   140,000
+  // of which the excess contributes 250,000 * 0.4 = 100,000 = 20% of 500,000
+  it("combined APR + BPR = £3,000,000", () => {
+    expect(bprRow(result, "Combined APR and BPR value entered")).toBe("£3,000,000");
+  });
+
+  it("allowance available = £2,500,000 (s.124D quantum, not the stale £1m)", () => {
+    expect(bprRow(result, "Allowance available for this transfer")).toBe("£2,500,000");
+  });
+
+  it("allowance remaining = £0", () => {
+    expect(bprRow(result, "Allowance remaining")).toBe("£0");
+  });
+
+  it("value relieved at 100% = £2,500,000", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£2,500,000");
+  });
+
+  it("value relieved at 50% = £500,000, chargeable £250,000", () => {
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£500,000");
+    expect(bprRow(result, "Chargeable value from the excess")).toBe("£250,000");
+  });
+
+  it("AIM sits in its own 50% tier and leaves the allowance alone", () => {
+    expect(bprRow(result, "AIM and unquoted shares at 50%, separate sub-tier")).toBe(
+      "£200,000, allowance untouched",
+    );
+    expect(bprRow(result, "Chargeable value from AIM and unquoted shares")).toBe("£100,000");
+  });
+
+  it("total chargeable = £350,000 and IHT at 40% = £140,000", () => {
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£350,000");
+    expect(bprRow(result, "Inheritance tax at 40%")).toBe("£140,000");
+    expect(result.headline.value).toBe("£140,000");
+  });
+
+  it("effective rate line = 20.0% of £500,000, which is £100,000", () => {
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "20.0% of £500,000, which is £100,000",
+    );
+  });
+
+  it("tone = warn once value spills above the allowance", () => {
+    expect(result.headline.tone).toBe("warn");
+    expect(result.headline.sub).toContain("£500,000");
+  });
+
+  it("no couples row unless the toggle is on", () => {
+    expect(bprRow(result, "Couples view, the allowance is transferable")).toBeUndefined();
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (zero inputs)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 0,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // Nothing entered: combined 0, relieved100 0, excess 0, remaining 2,500,000,
+  // chargeable 0, iht 0. Every money row is £0 and nothing is NaN.
+  it("headline IHT = £0", () => expect(result.headline.value).toBe("£0"));
+
+  it("whole allowance is still available", () => {
+    expect(bprRow(result, "Allowance available for this transfer")).toBe("£2,500,000");
+    expect(bprRow(result, "Allowance remaining")).toBe("£2,500,000");
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£0");
+  });
+
+  it("no excess, no chargeable value", () => {
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£0");
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£0");
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "Nil, nothing sits above the allowance",
+    );
+  });
+
+  it("tone stays neutral with nothing entered", () => {
+    expect(result.headline.tone).toBe("default");
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (exactly £2,500,000 combined)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 1_500_000,
+    businessValue: 1_000_000,
+    aimShares: 0,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // combined    = 1,500,000 + 1,000,000 = 2,500,000, exactly the allowance
+  // relieved100 = 2,500,000, excess = 0, remaining = 0
+  // chargeable  = 0, iht = 0. The boundary is inclusive: £2.5m is all at 100%.
+  it("all £2,500,000 relieved at 100%", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£2,500,000");
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£0");
+  });
+
+  it("allowance exactly exhausted, nothing chargeable", () => {
+    expect(bprRow(result, "Allowance remaining")).toBe("£0");
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£0");
+    expect(result.headline.value).toBe("£0");
+  });
+
+  it("tone = good when qualifying value is fully sheltered", () => {
+    expect(result.headline.tone).toBe("good");
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (excess, effective 20% line)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 4_000_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // combined    = 4,000,000
+  // relieved100 = 2,500,000, excess = 1,500,000
+  // chargeable  = 1,500,000 * 0.5 = 750,000
+  // iht         =   750,000 * 0.4 = 300,000, which is 20% of 1,500,000 exactly
+  it("excess = £1,500,000 relieved at 50%", () => {
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe(
+      "£1,500,000",
+    );
+    expect(bprRow(result, "Chargeable value from the excess")).toBe("£750,000");
+  });
+
+  it("IHT = £300,000, an effective 20% of the excess", () => {
+    expect(bprRow(result, "Inheritance tax at 40%")).toBe("£300,000");
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "20.0% of £1,500,000, which is £300,000",
+    );
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (AIM-only estate, allowance untouched)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 0,
+    businessValue: 0,
+    aimShares: 1_000_000,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // AIM is a SEPARATE 50% sub-tier per §15.4: it neither consumes nor uses the
+  // allowance. combined = 0, so relieved100 = 0 and remaining = 2,500,000.
+  // chargeable = 1,000,000 * 0.5 = 500,000; iht = 500,000 * 0.4 = 200,000,
+  // an effective 20% on the AIM holding however small the rest of the estate.
+  it("allowance is completely untouched by AIM", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£0");
+    expect(bprRow(result, "Allowance remaining")).toBe("£2,500,000");
+  });
+
+  it("AIM charged at an effective 20%: IHT = £200,000", () => {
+    expect(bprRow(result, "Chargeable value from AIM and unquoted shares")).toBe("£500,000");
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£500,000");
+    expect(result.headline.value).toBe("£200,000");
+  });
+
+  it("no excess line, because nothing entered used the allowance", () => {
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "Nil, nothing sits above the allowance",
+    );
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (anti-forestalling consumption)", () => {
+  // Gift of £1,000,000 of qualifying property in Jan 2025 (on or after 30 Oct 2024),
+  // death after 6 Apr 2026 and within 7 years, so it consumes allowance.
+  // available   = 2,500,000 - 1,000,000 = 1,500,000
+  // combined    = 2,000,000
+  // relieved100 = 1,500,000, remaining 0, excess = 500,000
+  // chargeable  = 250,000, iht = 100,000
+  const partly = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 2_000_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 1_000_000,
+    couple: false,
+  } as V);
+
+  it("prior gifts cut the available allowance to £1,500,000", () => {
+    expect(bprRow(partly, "Allowance available for this transfer")).toBe("£1,500,000");
+    expect(bprRow(partly, "Value relieved at 100%")).toBe("£1,500,000");
+    expect(bprRow(partly, "Value relieved at 50%, the excess above the allowance")).toBe("£500,000");
+    expect(partly.headline.value).toBe("£100,000");
+  });
+
+  it("note explains the 30 October 2024 anti-forestalling trigger", () => {
+    expect(partly.note).toContain("30 October 2024");
+    expect(partly.note).toContain("6 April 2026");
+  });
+
+  // Headroom driven to exactly zero: available = 2,500,000 - 2,500,000 = 0.
+  // combined 1,000,000 all falls to 50% relief: chargeable 500,000, iht 200,000.
+  const exhausted = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 1_000_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 2_500_000,
+    couple: false,
+  } as V);
+
+  it("a fully consumed allowance puts everything in the 50% band", () => {
+    expect(bprRow(exhausted, "Allowance available for this transfer")).toBe("£0");
+    expect(bprRow(exhausted, "Value relieved at 100%")).toBe("£0");
+    expect(bprRow(exhausted, "Value relieved at 50%, the excess above the allowance")).toBe(
+      "£1,000,000",
+    );
+    expect(bprRow(exhausted, "Total chargeable value after relief")).toBe("£500,000");
+    expect(exhausted.headline.value).toBe("£200,000");
+  });
+
+  // Over-consumption cannot produce a negative allowance.
+  const over = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 500_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 4_000_000,
+    couple: false,
+  } as V);
+
+  it("consumption beyond the allowance floors at zero, never negative", () => {
+    expect(bprRow(over, "Allowance available for this transfer")).toBe("£0");
+    expect(bprRow(over, "Allowance remaining")).toBe("£0");
+    // 500,000 * 0.5 = 250,000 chargeable; 250,000 * 0.4 = 100,000
+    expect(over.headline.value).toBe("£100,000");
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (couples toggle, £5m view)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    ...(defaults(bprAprAllowanceCalculator.fields) as V),
+    couple: true,
+  } as V);
+
+  // Same estate as the defaults golden, but two transferable allowances:
+  // available   = 2,500,000 x 2 = 5,000,000
+  // combined    = 3,000,000, so relieved100 = 3,000,000 and excess = 0
+  // remaining   = 5,000,000 - 3,000,000 = 2,000,000
+  // chargeable  = AIM only, 200,000 * 0.5 = 100,000
+  // iht         = 100,000 * 0.4 = 40,000 (down from 140,000 single)
+  it("two allowances give £5,000,000 of headroom", () => {
+    expect(bprRow(result, "Allowance available for this transfer")).toBe("£5,000,000");
+    expect(bprRow(result, "Couples view, the allowance is transferable")).toBe(
+      "£2,500,000 each, £5,000,000 combined",
+    );
+  });
+
+  it("the whole £3,000,000 is now relieved at 100%, £2,000,000 spare", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£3,000,000");
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£0");
+    expect(bprRow(result, "Allowance remaining")).toBe("£2,000,000");
+  });
+
+  it("only the AIM tier remains chargeable: IHT = £40,000", () => {
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£100,000");
+    expect(result.headline.value).toBe("£40,000");
+    expect(result.headline.tone).toBe("good");
+  });
+});
+
+describe("bpr-apr-allowance-calculator: house-bar checks", () => {
+  const result = bprAprAllowanceCalculator.compute(defaults(bprAprAllowanceCalculator.fields) as V);
+
+  it("note is honest about qualification being the hard part", () => {
+    expect(result.note).toContain("already qualifies");
+    expect(result.note).toContain("Pawson");
+    expect(result.note).toContain("occupation");
+  });
+
+  it("note puts nil-rate bands and RNRB out of scope", () => {
+    expect(result.note).toContain("Nil-rate bands");
+    expect(result.note).toContain("residence nil-rate band");
+    expect(result.note).toContain("out of scope");
+  });
+
+  it("the stale £1m announcement figure is never quoted as the cap", () => {
+    const prose = [
+      bprAprAllowanceCalculator.intro,
+      ...bprAprAllowanceCalculator.explainer.paragraphs,
+      ...(bprAprAllowanceCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+    ].join(" ");
+    expect(prose).toContain("£2,500,000");
+    // £1 million appears only where the FAQ debunks it, never as the allowance.
+    expect(prose).not.toContain("allowance of £1 million");
+  });
+
+  it("carries workedExamples and related links", () => {
+    expect(bprAprAllowanceCalculator.workedExamples?.length).toBe(2);
+    expect(bprAprAllowanceCalculator.related?.length).toBeGreaterThanOrEqual(4);
+  });
+
+  it("meta fields stay inside the 60 / 155 limits", () => {
+    expect(bprAprAllowanceCalculator.metaTitle.length).toBeLessThanOrEqual(60);
+    expect(bprAprAllowanceCalculator.metaDescription.length).toBeLessThanOrEqual(155);
+  });
+
+  it("no pricing in any user-facing string", () => {
+    const copy = JSON.stringify(bprAprAllowanceCalculator);
+    expect(copy).not.toMatch(/\bfrom £\d/);
+    expect(copy).not.toMatch(/\bper (month|hour)\b/i);
+  });
+
+  it("no em-dashes in any user-facing string", () => {
+    const copy = JSON.stringify(bprAprAllowanceCalculator) + JSON.stringify(result);
     expect(copy).not.toContain("—");
     expect(copy).not.toContain("–");
   });

@@ -100,6 +100,33 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.19 Rural/landed-estates cluster (Cluster 5) — EXECUTED 2026-08-21 PM, deploy owner-gated
+
+Dossier frozen `a14be0b3` (universe 242, ledger balanced, 19-domain uncapped harvest
+$0.38, saffery/oldmill teardowns 162 pages, language spec: statute-density is THE
+lever). Built same session: /landed-estates pillar (+ nav/footer/sitemap), T1
+bpr-apr-allowance-calculator (33 goldens, suite 1,437), N1 inheritance-tax-on-farms,
+N2 farm-tax-uk-guide, N3 how-to-avoid-inheritance-tax-on-a-farm (middleware entries
+added), E1 maximising-business-relief REFRAME, E2 agricultural-relief REFRAME, E3
+iht-april-2026 EXTEND (16 Bing queries verified anchored post-edit, 4 strengthened).
+E4/E5 DROPPED to delta at pack derivation (zero assigned keywords, freeze discipline).
+Two-track QA (4 Opus) + 5-agent fix round + floor-8 competitor re-read (72 themes,
+0 undecided after 3 conductor decisions). MAJOR legacy corrections shipped with the
+batch (recorded in notes/): s.124E spousal transferability VERIFIED AT STATUTE and
+locked into house_positions §15.4 (two live pages taught the superseded not-transferable
+position, one steered readers into unnecessary DoVs); anti-forestalling date corrected
+on agricultural-property-relief-mixed-estate (was 17 months too generous); Aldridge
+RNRB example re-derived (£510k/£570k); s.131 miscite dropped; s.162B debts rule
+verified + locked + honest notes on calculator/E2; Atkinson holding corrected; s.118
+2-in-5/7-in-10 fixed. GATES ALL GREEN: equity gate `--cluster landed` PASS (gained
+rural pack-format tolerance), lint 767, links 0/0, em-dash 0, voice 5 MINOR/2 CLEAN/1
+pre-existing ROBOTIC (mixed-estate 48.4→48.6, legacy state, delta item; cap page
+rescued 34.0→8.9 CLEAN), tsc, vitest 1437/1437, prod build exit 0, dependency closure
+OK 19, qa_verdict `landed1` 8/8 all_clear recorded LAST, predeploy PASS. AT DEPLOY:
+register landed1 batch in monitored_pages (+ pillar + calculator via --page-urls:
+landed-estates=/landed-estates, bpr-apr-allowance-calculator=/calculators/bpr-apr-allowance-calculator),
+IndexNow. READS: 90-day is the honest read (IHT intent); failure trigger per DOSSIER §9.
+
 ## 0.18 CONSOLIDATED DEPLOY 2026-08-21 (owner-triggered): wave11 + cgt1 + tools + rental1 ALL LIVE
 
 Clean worktree C:/dep at pushed `1cfb5320`, deployment `dpl_B8SGyMhCB4BdvwNns1fMsW67xuDp`,

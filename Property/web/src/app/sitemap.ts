@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/landlord-compliance",
     "/section-24",
     "/leasehold",
+    "/landed-estates",
     "/making-tax-digital-landlords",
     "/about",
     "/contact",

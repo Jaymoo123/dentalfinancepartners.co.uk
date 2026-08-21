@@ -14,6 +14,11 @@ const BLOG_TO_LOCATION: Record<string, string> = {
 };
 
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  // --- Rural/landed-estates cluster (2026-08-21): three net-new pages.
+  "inheritance-tax-on-farms": "property-types-and-specialist-tax",
+  "farm-tax-uk-guide": "property-types-and-specialist-tax",
+  "how-to-avoid-inheritance-tax-on-a-farm": "property-types-and-specialist-tax",
+  // --- end rural cluster block ---
   // --- CGT cluster batch (2026-08-20): three net-new pages from the CGT dossier.
   "do-limited-companies-pay-capital-gains-tax-property": "capital-gains-tax",
   "capital-gains-tax-second-home-sale": "capital-gains-tax",

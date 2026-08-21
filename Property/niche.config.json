@@ -83,6 +83,10 @@
           "href": "/landlord-compliance"
         },
         {
+          "label": "Landed estates",
+          "href": "/landed-estates"
+        },
+        {
           "label": "Property tax rates",
           "href": "/property-tax-rates"
         },
@@ -137,6 +141,10 @@
     {
       "label": "Landlord compliance",
       "href": "/landlord-compliance"
+    },
+    {
+      "label": "Landed estates",
+      "href": "/landed-estates"
     },
     {
       "label": "Property tax rates",

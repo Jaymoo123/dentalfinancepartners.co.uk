@@ -152,8 +152,8 @@ pattern.
 | E1 | `maximising-business-relief-to-reduce-inheritance-tax` | REFRAME (0 equity) | 10,110 vol / pw 6,140 | the 7-domain BPR consensus topic |
 | E2 | `agricultural-relief-for-inheritance-tax-key-benefits` | REFRAME (0 equity) | APR family 1,000 + variants | APR conditions, occupation tests |
 | E3 | `iht-april-2026-bpr-apr-cap-property-impact` | EXTEND (manager override: sub-threshold Bing equity, 16 queries pos 6-9, but it is our ONLY Bing surface; additive only, protect every statute query) | cap family | the £2.5m arithmetic page |
-| E4 | `agricultural-property-relief-mixed-estate-1m-cap` | REFRAME (0 equity) | mixed-estate allocation | body correct, slug stays (no redirects, standing never) |
-| E5 | `bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line` | REFRAME (0 equity) | Pawson boundary | the honest-no page, links from P1 |
+| E4 | ~~REFRAME~~ **DROPPED TO DELTA at pack derivation 2026-08-21**: zero dossier-assigned keywords (exhaustive grep, not assumption); its title/H1 already lead £2.5m (verified against live file). Freeze discipline: no assigned demand, no rewrite this pass. Pillar links it. | - | - |
+| E5 | ~~REFRAME~~ **DROPPED TO DELTA at pack derivation 2026-08-21**: zero dossier-assigned keywords. The honest-no page keeps its role via pillar links; §22.1 boundary content already correct. | - | - |
 | T1 | combined BPR+APR allowance calculator | NET-NEW tool | queue after content lands | GenericTool + goldens; allowance used/remaining, 50% band, effective 20% |
 
 Deferred to delta list: `business-property-relief-rental-property-iht`,
@@ -162,6 +162,29 @@ Deferred to delta list: `business-property-relief-rental-property-iht`,
 plus 2-4 further net-new candidates the packs may surface (proposal budget was
 8-10 net-new; N1-N3 + pillar are the evidence-backed core, the rest must earn their
 slot from pack data, not fill a quota).
+
+**Delta list additions from the floor-8 competitor re-read (2026-08-21, all three
+undecided themes DECIDED, floor now closes at zero undecided):**
+1. **Debts against relieved property (s.162B)**: CLOSED-THIN this batch. IHTA 1984
+   s.162B verified at statute 2026-08-21 and locked into house_positions §15.4;
+   honest one-line treatments added to the calculator note and E2's worked example.
+   FULL treatment (worked example with a farm loan, both saffery top-10 pages carry
+   an H3 on it) = delta item, needs its own pack.
+2. **Woodlands relief s.125 (timber deferral)**: DECLINED to delta. No house
+   position exists; writing it un-locked breaches the corpus rule. E2's s.115(2)
+   woodland-occupied-with-farmland slice stands. Delta item: verify s.125, lock,
+   then one section on E2 or a small page.
+3. **Farming child vs non-farming children**: DECLINED (scope). The who-gets-what
+   half is succession/solicitor work; now named in the pillar's "What we do not
+   cover" list with the honest boundary (we tax-cost the chosen split, we do not
+   choose it). Tax half already covered across N3/E2/E3.
+4. **Environmental-scheme land APR qualification**: delta item alongside 2 (needs
+   verification + lock of the post-2025 APR extension to environmental land
+   management before anything is written; conceded-scope covers scheme admin, NOT
+   this qualification question).
+5. Thin-vs-competitor rows recorded in FLOOR8_competitor_reread.md (succession
+   sequencing depth, business-structure choice, no-successor fork): candidates for
+   the next dossier pass, not this batch.
 
 ## 9. Expectations + failure triggers (stated before the work)
 

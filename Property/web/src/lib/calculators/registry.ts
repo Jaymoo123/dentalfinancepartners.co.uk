@@ -19,6 +19,7 @@ import { commercialMortgageCalculator } from "./tools/commercial-mortgage-calcul
 import { bridgingLoanCalculator } from "./tools/bridging-loan-calculator";
 import { developmentFinanceCalculator } from "./tools/development-finance-calculator";
 import { leaseExtensionPremiumCalculator } from "./tools/lease-extension-premium-calculator";
+import { bprAprAllowanceCalculator } from "./tools/bpr-apr-allowance-calculator";
 
 /**
  * The calculator fleet. "bespoke" tools have their own hand-built component +
@@ -102,6 +103,7 @@ const GENERIC: GenericTool[] = [
   bridgingLoanCalculator,
   developmentFinanceCalculator,
   leaseExtensionPremiumCalculator,
+  bprAprAllowanceCalculator,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];
