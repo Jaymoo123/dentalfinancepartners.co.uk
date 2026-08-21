@@ -40,7 +40,7 @@ faqs:
   - question: "What if I only use part of the borrowing for the rental business?"
     answer: "Relief follows the use of the money. If you remortgage a let property and use part of the funds personally, only the proportion relating to the rental business qualifies, and the arrangement fee is apportioned on the same basis. Keep a clear record of how the borrowing was applied; HMRC expects the business-use split to be evidenced, not assumed."
   - question: "Does Making Tax Digital change how I report mortgage fees?"
-    answer: "The treatment of the fee does not change, but the reporting does. Making Tax Digital for Income Tax is live, starting from 6 April 2026 for landlords and sole traders with qualifying income above GBP50,000, then GBP30,000 from April 2027 and GBP20,000 from April 2028. In scope, you keep digital records and file quarterly updates, so finance costs including arrangement fees need to be captured in compatible software through the year rather than reconstructed at the deadline."
+    answer: "The treatment of the fee does not change, but the reporting does. Making Tax Digital for Income Tax is live, starting from 6 April 2026 for landlords and sole traders with qualifying income above £50,000, then £30,000 from April 2027 and £20,000 from April 2028. In scope, you keep digital records and file quarterly updates, so finance costs including arrangement fees need to be captured in compatible software through the year rather than reconstructed at the deadline."
 howToSteps:
   - name: "Identify the property type"
     text: "Confirm whether the let is residential or commercial. Residential finance costs are restricted under Section 24; commercial finance costs are fully deductible against rental profit."
@@ -120,7 +120,7 @@ howToSteps:
 
 <p>Under the old rules, those fees and the year's mortgage interest would all have been deducted before arriving at taxable profit, saving tax at 40%. Under Section 24 the sequence is different. The running costs (letting agent, repairs, insurance, and so on) are still deducted to reach rental profit, and that profit is taxed at the landlord's marginal rate. The finance costs (interest plus the arrangement and broker fees) are then pooled and relieved separately as a 20% reduction in the tax bill.</p>
 
-<p>Two consequences follow. First, the fees are worth half what they used to be to a higher-rate taxpayer. Second, the reported profit is higher than it feels, because the finance costs are no longer netted off it. A landlord who is close to a threshold (for example the GBP50,000 higher-rate boundary, or a child benefit or allowance-taper trigger) can be pushed across it by this presentational change alone, even though their cash position has not moved. This is exactly why finance costs need to be modelled, not just recorded, and it is a recurring theme on our <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">full list of landlord tax deductions</a>.</p>
+<p>Two consequences follow. First, the fees are worth half what they used to be to a higher-rate taxpayer. Second, the reported profit is higher than it feels, because the finance costs are no longer netted off it. A landlord who is close to a threshold (for example the £50,000 higher-rate boundary, or a child benefit or allowance-taper trigger) can be pushed across it by this presentational change alone, even though their cash position has not moved. This is exactly why finance costs need to be modelled, not just recorded, and it is a recurring theme on our <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">full list of landlord tax deductions</a>.</p>
 
 <h2>Companies are taxed under a different regime entirely</h2>
 
@@ -143,7 +143,7 @@ howToSteps:
 
 <p>Because an arrangement fee is a cost of borrowing rather than a cost of acquiring the asset, it does not enter the CGT base cost when you eventually sell. This is the mirror image of the popular myth: people are told the purchase fee is "capital and saves CGT later", when in fact it is a finance cost that has already been relieved (at 20% for an individual, or in full for a company) during ownership.</p>
 
-<p>What does sit in the CGT computation is the purchase price, the SDLT (or LBTT/LTT), the acquisition conveyancing, and qualifying capital improvements. UK residential property disposals are taxed at 18% within the basic-rate band and 24% above it, with an annual exempt amount of GBP3,000. The detail is on our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a>, but the headline for this page is simple: do not expect the loan fee to feature in it.</p>
+<p>What does sit in the CGT computation is the purchase price, the SDLT (or LBTT/LTT), the acquisition conveyancing, and qualifying capital improvements. UK residential property disposals are taxed at 18% within the basic-rate band and 24% above it, with an annual exempt amount of £3,000. The detail is on our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a>, but the headline for this page is simple: do not expect the loan fee to feature in it.</p>
 
 <h2>Timing, apportionment and getting the claim right</h2>
 
@@ -155,7 +155,7 @@ howToSteps:
 
 <h2>Reporting these costs under Making Tax Digital</h2>
 
-<p>The treatment of the fee does not change under Making Tax Digital, but the discipline around it does. Making Tax Digital for Income Tax is live, with the first landlords and sole traders coming into scope from 6 April 2026 where qualifying income exceeds GBP50,000, followed by GBP30,000 from April 2027 and GBP20,000 from April 2028. In scope, you keep digital records and file quarterly updates rather than a single year-end return.</p>
+<p>The treatment of the fee does not change under Making Tax Digital, but the discipline around it does. Making Tax Digital for Income Tax is live, with the first landlords and sole traders coming into scope from 6 April 2026 where qualifying income exceeds £50,000, followed by £30,000 from April 2027 and £20,000 from April 2028. In scope, you keep digital records and file quarterly updates rather than a single year-end return.</p>
 
 <p>For finance costs that matters in two ways. The arrangement fee, broker fee and interest need to be captured in compatible software as they arise, not reconstructed at the January deadline, and the Section 24 calculation that converts those pooled costs into a basic-rate reducer happens at the year-end finalisation. Our guide to the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital deadlines for landlords</a> sets out who is caught and when.</p>
 

@@ -48,7 +48,7 @@ faqs:
   - question: "Does Section 24 change how I record mortgage interest in my P&L?"
     answer: "Your commercial P&L should still show the full interest cost so you see the real return. For tax, Section 24 is fully in force: interest is no longer a deduction, it gives a basic-rate (20%) tax reducer. Keep the actual interest figure recorded so the reducer can be calculated correctly."
   - question: "How does MTD for ITSA affect property record keeping?"
-    answer: "Making Tax Digital for Income Tax is live. From 6 April 2026 landlords with qualifying income above GBP50,000 must keep digital records and file quarterly updates, the threshold drops to GBP30,000 from 6 April 2027 and GBP20,000 from 6 April 2028. Qualifying income is gross, before expenses, so a per-property P&L built on digital records keeps you compliant by default."
+    answer: "Making Tax Digital for Income Tax is live. From 6 April 2026 landlords with qualifying income above £50,000 must keep digital records and file quarterly updates, the threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Qualifying income is gross, before expenses, so a per-property P&L built on digital records keeps you compliant by default."
   - question: "What rental property metrics should I track?"
     answer: "Net rental yield, cash-on-cash return and a total expense ratio give you the most signal. Net yield lets you compare assets, cash-on-cash shows the return on the equity you actually invested, and the expense ratio flags properties where costs are eating the rent."
   - question: "How do I track capital expenditure separately from running costs?"
@@ -58,7 +58,7 @@ faqs:
   - question: "Why track profitability per property instead of for the whole portfolio?"
     answer: "Portfolio totals hide losers. One property carrying high maintenance and long voids can be subsidised by stronger ones, so the portfolio looks healthy while you are quietly funding a poor asset. Per-property numbers tell you what to refinance, refurbish, keep or sell."
   - question: "How does my P&L data support a capital gains tax calculation on sale?"
-    answer: "Your capital ledger feeds straight into the CGT computation. Improvement costs add to base cost and reduce the gain. Residential property gains are taxed at 18% and 24% after the GBP3,000 annual exempt amount, so accurate capital records can meaningfully cut the bill on disposal."
+    answer: "Your capital ledger feeds straight into the CGT computation. Improvement costs add to base cost and reduce the gain. Residential property gains are taxed at 18% and 24% after the £3,000 annual exempt amount, so accurate capital records can meaningfully cut the bill on disposal."
 ---
 
 <p>A portfolio-level summary will happily tell you the whole thing makes money. It will not tell you that one flat has eaten its annual profit in a single boiler replacement and a three-month void, while two others quietly carry it. The only way to see that is a per-property profit and loss statement, and the only way to keep one that is also useful at tax time is to build it on records that already satisfy Making Tax Digital.</p>
@@ -67,7 +67,7 @@ faqs:
 
 <h2>Why track profitability per property, not per portfolio</h2>
 
-<p>Take three buy-to-lets producing GBP36,000 of combined rent. At portfolio level that can read as a comfortable surplus. Split it out and the picture often changes: one property runs a long void and an expensive repair year and loses money outright, while the other two subsidise it. You keep buying the same kind of property because the headline looks fine, when the data is telling you to fix or sell the laggard.</p>
+<p>Take three buy-to-lets producing £36,000 of combined rent. At portfolio level that can read as a comfortable surplus. Split it out and the picture often changes: one property runs a long void and an expensive repair year and loses money outright, while the other two subsidise it. You keep buying the same kind of property because the headline looks fine, when the data is telling you to fix or sell the laggard.</p>
 
 <p>Per-property tracking is what turns that guesswork into decisions. Done properly it lets you:</p>
 
@@ -160,7 +160,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Keep a dated capital ledger per property. When you eventually dispose of it, those entries lift the base cost and shrink the gain. With residential gains taxed at 18% and 24% above the GBP3,000 annual exempt amount, a tidy capital history is worth real money on disposal.</p>
+<p>Keep a dated capital ledger per property. When you eventually dispose of it, those entries lift the base cost and shrink the gain. With residential gains taxed at 18% and 24% above the £3,000 annual exempt amount, a tidy capital history is worth real money on disposal.</p>
 
 <h2>How to build the P&L, step by step</h2>
 
@@ -192,7 +192,7 @@ faqs:
 <p>Raw profit is a starting point, not an answer. Three measures carry most of the decision-making weight.</p>
 
 <h3>Net rental yield</h3>
-<p>Annual net profit as a percentage of property value: <strong>(Annual net profit / property value) × 100</strong>. A property worth GBP200,000 netting GBP8,000 a year yields 4%. Net yield is the fairest way to rank assets because it ignores how much rent each happens to charge and focuses on the return.</p>
+<p>Annual net profit as a percentage of property value: <strong>(Annual net profit / property value) × 100</strong>. A property worth £200,000 netting £8,000 a year yields 4%. Net yield is the fairest way to rank assets because it ignores how much rent each happens to charge and focuses on the return.</p>
 
 <h3>Cash-on-cash return</h3>
 <p>Annual cash flow against the cash you actually put in: <strong>(Annual cash flow / cash invested) × 100</strong>. This reflects leverage, so a modest-yield property bought with a small deposit can still produce a strong cash-on-cash figure.</p>
@@ -247,7 +247,7 @@ faqs:
 
 <p>Section 24 is fully in force. For individual landlords, mortgage interest is no longer a deduction from rental profit at all. Instead it produces a tax reducer worth 20% of the interest. The practical effect is that your taxable rental profit is calculated as if you had no finance costs, and a basic-rate credit is then applied.</p>
 
-<p>This is why a commercial P&L and a tax computation diverge, and why you keep both. Consider a higher-rate landlord with GBP18,000 of net rent before interest and GBP6,000 of mortgage interest:</p>
+<p>This is why a commercial P&L and a tax computation diverge, and why you keep both. Consider a higher-rate landlord with £18,000 of net rent before interest and £6,000 of mortgage interest:</p>
 
 <table>
 <thead>
@@ -260,38 +260,38 @@ faqs:
 <tbody>
 <tr>
 <td>Net rent before interest</td>
-<td>GBP18,000</td>
-<td>GBP18,000</td>
+<td>£18,000</td>
+<td>£18,000</td>
 </tr>
 <tr>
 <td>Mortgage interest</td>
-<td>(GBP6,000)</td>
+<td>(£6,000)</td>
 <td>Not deducted</td>
 </tr>
 <tr>
 <td>Taxable profit</td>
-<td>GBP12,000 (commercial)</td>
-<td>GBP18,000</td>
+<td>£12,000 (commercial)</td>
+<td>£18,000</td>
 </tr>
 <tr>
 <td>Tax before reducer (40%)</td>
 <td>n/a</td>
-<td>GBP7,200</td>
+<td>£7,200</td>
 </tr>
 <tr>
-<td>Section 24 reducer (20% × GBP6,000)</td>
+<td>Section 24 reducer (20% × £6,000)</td>
 <td>n/a</td>
-<td>(GBP1,200)</td>
+<td>(£1,200)</td>
 </tr>
 <tr>
 <td>Tax payable</td>
 <td>n/a</td>
-<td>GBP6,000</td>
+<td>£6,000</td>
 </tr>
 </tbody>
 </table>
 
-<p>The commercial profit (GBP12,000) is what you manage the property on. The tax bill is driven by the GBP18,000 figure with a flat GBP1,200 credit. Recording the actual interest in your P&L is what makes the reducer calculable, so never strip it out. The full mechanics are in the <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 guide</a>, and the broader picture of how rental income is taxed is in <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">how much tax you pay on rental income</a>.</p>
+<p>The commercial profit (£12,000) is what you manage the property on. The tax bill is driven by the £18,000 figure with a flat £1,200 credit. Recording the actual interest in your P&L is what makes the reducer calculable, so never strip it out. The full mechanics are in the <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 guide</a>, and the broader picture of how rental income is taxed is in <a href="/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide">how much tax you pay on rental income</a>.</p>
 
 <h3>The 2027 property-income rates are already enacted</h3>
 
@@ -312,23 +312,23 @@ faqs:
 <tbody>
 <tr>
 <td>6 April 2026</td>
-<td>Above GBP50,000</td>
+<td>Above £50,000</td>
 <td>Largest landlords and sole traders</td>
 </tr>
 <tr>
 <td>6 April 2027</td>
-<td>Above GBP30,000</td>
+<td>Above £30,000</td>
 <td>Mid-sized portfolios</td>
 </tr>
 <tr>
 <td>6 April 2028</td>
-<td>Above GBP20,000</td>
+<td>Above £20,000</td>
 <td>Smaller portfolios</td>
 </tr>
 </tbody>
 </table>
 
-<p>Because the test is on gross income, a landlord with GBP52,000 of rent and GBP40,000 of allowable costs (so GBP12,000 of profit) is in scope from April 2026, despite a modest profit. The implication for tracking is simple: digital, reconciled, per-property records produce the quarterly updates as a by-product. If you are already keeping a clean P&L per property, MTD adds a submission step, not a new bookkeeping burden. For the deadlines and submission mechanics, see the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadline guide</a>.</p>
+<p>Because the test is on gross income, a landlord with £52,000 of rent and £40,000 of allowable costs (so £12,000 of profit) is in scope from April 2026, despite a modest profit. The implication for tracking is simple: digital, reconciled, per-property records produce the quarterly updates as a by-product. If you are already keeping a clean P&L per property, MTD adds a submission step, not a new bookkeeping burden. For the deadlines and submission mechanics, see the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords deadline guide</a>.</p>
 
 <h2>The mistakes that make a P&L useless</h2>
 
