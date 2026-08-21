@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/section-24",
     "/leasehold",
     "/landed-estates",
+    "/cost-of-selling-a-property",
     "/for-letting-agents",
     "/making-tax-digital-landlords",
     "/about",

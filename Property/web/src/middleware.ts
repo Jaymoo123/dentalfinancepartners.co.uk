@@ -19,6 +19,21 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "mees-epc-rules-what-your-landlords-think": "landlord-tax-essentials",
   "tenancy-deposits-landlord-tax-position": "landlord-tax-essentials",
   // --- end agents1 cluster block ---
+  // --- Wave 12 cost-of-selling (2026-08-21): 13 net-new pages.
+  "how-much-do-estate-agents-charge-to-sell-a-house": "capital-gains-tax",
+  "cheapest-estate-agent-fees-uk": "capital-gains-tax",
+  "sell-house-without-estate-agent": "capital-gains-tax",
+  "can-you-sell-a-house-without-an-estate-agent": "capital-gains-tax",
+  "online-estate-agents-uk": "capital-gains-tax",
+  "estate-agent-fees-for-renting": "capital-gains-tax",
+  "average-london-estate-agent-fees": "capital-gains-tax",
+  "estate-agent-contract-tie-in-periods": "capital-gains-tax",
+  "cost-of-moving-house-uk": "capital-gains-tax",
+  "selling-a-house-at-auction-uk": "capital-gains-tax",
+  "modern-method-of-auction-explained": "capital-gains-tax",
+  "part-exchange-house-uk": "capital-gains-tax",
+  "selling-a-probate-property": "capital-gains-tax",
+  // --- end Wave 12 block ---
   // --- Rural/landed-estates cluster (2026-08-21): three net-new pages.
   "inheritance-tax-on-farms": "property-types-and-specialist-tax",
   "farm-tax-uk-guide": "property-types-and-specialist-tax",

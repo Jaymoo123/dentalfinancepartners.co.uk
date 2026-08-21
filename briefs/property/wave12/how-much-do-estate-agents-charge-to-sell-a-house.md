@@ -140,3 +140,43 @@ Seed read against §5, §5.B and §26.14 on 2026-08-21. Aligned: s.18 and s.18(5
 
 ## Work log (Stage 2 + RUN populate)
 - 2026-08-21 Stage 2: CG14300 VAT rule located and captured verbatim (seed's CG15250/CG15260 pointer wrong, F-167 raised); CG15250 exhaustiveness quoted; SI 1991/859 reg 5 + Schedule captured verbatim; four competitor URLs verified 200, four deleted (2x 404, 1x 429, 1x stale slug); three named dated fee sources secured; extensions appended. No blockers.
+
+### 2026-08-21 RUN: page written, self-verified
+
+**Page:** `Property/web/content/blog/how-much-do-estate-agents-charge-to-sell-a-house.md`. Written, self-verified, tracker row flipped. Not committed (conductor commits the batch). Middleware entry confirmed already present at `Property/web/src/middleware.ts:23`.
+
+**Self-measured register (prose only, table cells excluded, frontmatter excluded; spec formula for Flesch, sentences of 5+ words):**
+
+| Metric | Measured | Fee-page band | Verdict |
+|---|---|---|---|
+| Body words | **1,949** (2,186 including table cells) | 1,200 to 2,000 | in band |
+| Mean sentence | **15.6** | 15 to 18 | in band |
+| Flesch | **72.5** | 62 or above | in band |
+| "you" per 1,000 | **50.8** (99 instances) | 45 to 60 | in band |
+| "we" per 1,000 | 4.5 | winner median 4.2 | in band |
+| Question H2s | **8 of 9 (89%)** | at least 40% | in band |
+| Hard statutory refs in prose | **0** | 0 | in band |
+| Em-dashes / en-dashes | **0 / 0** | 0 | clean |
+| FAQ entries | **14** | 10 to 14 | in band |
+| metaTitle / metaDescription | **48 / 147 chars** | 60 / 155 | in band |
+
+**Link check.** All internal targets confirmed on disk: `capital-gains-tax-property-complete-guide-uk`, `capital-gains-tax-second-home-sale`, `tax-sell-rental-property-uk`, `cgt-payment-deadlines-property-sales-2026`, `principal-private-residence-relief-landlords`, and `/calculators/capital-gains-tax-calculator` (registered in `src/lib/calculators/registry.ts`). Linked as if live per the dispatch prompt: `/cost-of-selling-a-property`, `/calculators/cost-of-selling-calculator`, and siblings A2, A5, A7, A8, A9. All four external links carry `rel="nofollow noopener" target="_blank"`.
+
+**Figure trail.** Every percentage on the page is HOA (fetched 2026-08-21), Which? (updated 8 Jun 2026) or MSE (updated 1 Jul 2026), each named in prose or in the table's rate cell. Every cash figure is derived from one of those rates and labelled illustrative. Statutory figures from the locks: 24% higher residential rate and the 60-day completion trigger (§5), the exhaustive s.38(2) list and the CG14300 gross-VAT rule (§5.B), the £1,000 non-membership penalty (§26.14, NOT gov.uk's wrong £5,000). Nothing from memory.
+
+**Figures DECLINED (no brief source):** any fixed-fee or online-agent price (the table row states the model and hands off to A5); any EPC price; any conveyancing price. Named as costs, priced nowhere.
+
+**Lock beat brief in two places.** (1) The seed's CGT hook example (1.5% plus VAT on £400,000) was dropped in favour of the Stage 2 sourced 1.42% including VAT on £300,000, because §5.B requires the gross fee to be the deduction and a "plus VAT" headline invites the F-178 error. (2) CG15260 struck from citations per Stage 2; only CG15250 (exhaustiveness) and CG14300 (VAT) are used, and CG14300 is quoted without naming its code, per hard rule 4.
+
+**Brief-versus-language-spec collisions, both already raised by siblings, resolved consistently here.**
+- **F-180 (table width).** The brief's cost-table spec is seven columns (rate, VAT treatment, cash at three prices, commitment, source). Hard rule 8 caps tables at three columns with a total row. Resolved as two three-column tables: a fee-model table (`Fee model | Typical rate | Cash on a £300,000 sale`) with a bottom "what most sellers actually pay" summary row, and the completion-statement sort (`Line | Illustrative cost | Comes off the gain?`) with a real total row. The £200,000 and £450,000 conversions moved to prose; the source moved into the rate cell and the prose above the table; "what it commits you to" moved to the sole agency H2, where it belongs anyway.
+- **F-182 (statute in prose).** The brief's beat-them elements 4 and 5 name the Act and the regulations as the differentiator. Hard rule 4 bars any of it from prose. Resolved at zero hard references, measured. The differentiator survives intact because it is the WORDING and the REMEDY that beat the SERP, not the citation: the prescribed sole selling rights, sole agency and ready-willing-and-able wording is quoted verbatim, and the unenforceable-except-by-court-order remedy plus the court's power to reduce or discharge is stated in plain words. HMRC is named once as a soft authority, which is what the winner set does.
+- **Hard rule 13 versus the brief's two tax H2s.** Kept both H2 8 and H2 9, because the completion-statement sort is the brief's stated sharpest original point and the two-date trap is a §5.B lock line. Sized to the dispatch ceiling by restating no CGT mechanics at all: no rate table, no annual exempt amount, no PRR mechanics, no filing walkthrough. One rate (24%) appears, attached to one worked figure; everything else links out to the armed cgt1 pages.
+
+**New flag raised: F-183** (LOW). HOA's "0.9% to 3.6%" and MSE's "0.75% to 3% plus VAT" are the same range in two presentations, confirmed by MSE's own £2,700 to £10,800 cash conversion. The brief's "the three sources disagree" framing holds on the AVERAGE and fails on the RANGE. This page states the disagreement on the average only and gives the range once. A2, A7, A9 and the pillar price commission from the same three sources and will hit it.
+
+**Noted, not actioned (outside this page's edit lane): the flags file contains two separate F-178 entries**, one from the A11/A12 lane (internal link, bridging-finance auction page) and one from the A7 lane (the 1.14% net-of-tax error). Concurrent writers both claimed 178. Conductor should renumber one at wave close.
+
+**Beat-them plan landing.** All five elements landed. The tax layer is priced in pounds (£4,560 allowable of £5,460 paid, £1,094 of tax saved) where all four live competitors publish a percentage and net nothing off. CG14300's gross-versus-net answer is quoted and converted to £170 of tax. The completion-statement sort runs as its own three-column table with the removals line and the no-disposal withdrawal-fee point, which nothing on the SERP does. The prescribed statutory wording is printed where Which? only advises against signing. The remedy for a fee-disclosure breach appears in plain words, and it is still net-new for the corpus.
+
+No blockers, no questions raised.

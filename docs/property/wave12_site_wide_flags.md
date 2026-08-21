@@ -416,3 +416,149 @@ Two further rules from the same sources, both worth carrying on any page that pr
 
 
 
+## F-178 · INTERNAL_LINK · the bridging-finance auction page explains the modern method in two places and links nowhere
+
+**Raised:** 2026-08-21, RUN Session A (page: `modern-method-of-auction-explained`). **Status:** open. **Severity:** LOW.
+
+`Property/web/content/blog/bridging-finance-for-auction-purchases.md` (live, Property Finance route) carries a full paragraph distinguishing the modern method from a traditional auction (body para beginning "Note the distinction from the modern method of auction") and an FAQ answer on the same question ("What is the difference between a traditional auction and the modern method of auction?"). Both are accurate against the Wave 12 locks and neither links out, because until this wave there was nowhere to send the reader.
+
+**Requested action at wave merge:** back-patch one link in that body paragraph to `/blog/capital-gains-tax/modern-method-of-auction-explained`. The new page links forward to the bridging page already, so this closes the pair. No text change needed beyond the anchor.
+
+---
+
+## F-179 · AUTHORITY_GAP · SDLTM03720 (chargeable consideration and fees) appears nowhere in the corpus
+
+**Raised:** 2026-08-21, RUN Session A (page: `modern-method-of-auction-explained`). **Status:** open. **Severity:** LOW.
+
+`https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm03720` ("Chargeable Consideration and Fees", gov.uk, page last updated 26 May 2026) is cited for the first time on the site by this page, and it is the only published HMRC authority on whether a fee charged on top of a purchase price is chargeable consideration. Its three indicators (payment is a condition of the contract, completion is conditional on payment, the fee is payable only if the transaction proceeds) answer a recurring question well beyond auctions: developer admin fees, reservation deposits on new builds, and "buyer premium" charges generally.
+
+**Requested action:** manager to consider whether the SDLT pages and the A12 part-exchange page should carry the same three indicators, and whether §1 warrants a one-line anchor to it. Note the limit found at Stage 2 and restated on the page: HMRC has published nothing that names modern-method reservation fees, so the manual supports an applied analysis, never a settled answer.
+
+---
+
+## F-180 · BRIEF_DRIFT · the Stage 2 table specs are wider than the language spec's hard rule 8 allows
+
+**Raised:** 2026-08-21, RUN Session A (page: `can-you-sell-a-house-without-an-estate-agent`). **Status:** open. **Severity:** MEDIUM (affects any Wave 12 pick whose brief specs a wide table).
+
+The A4 brief §4 specs a saving-versus-risk table with six columns (commission avoided · DIY costs · net saving · net saving after CGT at 18% · net saving after CGT at 24% · the sale-price gap that wipes the saving out). `_language_spec.md` hard rule 8 says cost tables are "two or three columns and carry a total row. Never five columns", measured from the winner set where W4's model tables are two columns and the winner median is zero tables. The two instructions cannot both be followed.
+
+**Resolved on this page as:** two three-column tables. One comparison/cost table (`The job | With an agent | On your own`) with a total row, which also satisfies the route-page "pitch versus reality" shape; one decision table (`Sale price | Net cash saving | The lower price that cancels it out`) carrying the brief's differentiator column. The 18% and 24% figures moved into the CGT block as prose, which hard rule 13 wants anyway (one block, plain words, one pound figure, one link out).
+
+**Requested action:** manager to confirm the precedence order for the remaining picks. Suggested: the language spec's hard rules win on FORM, the brief wins on CONTENT, and a brief table spec wider than three columns is split rather than trimmed.
+
+---
+
+## F-181 · BRIEF_DRIFT · the A4 worked-example figures are not reproducible from the brief's own sourced inputs, and the break-even claim is arithmetically wrong
+
+**Raised:** 2026-08-21, RUN Session A (page: `can-you-sell-a-house-without-an-estate-agent`). **Status:** open. **Severity:** MEDIUM (the same fork is specced on A1, A3, A5, A9 and the pillar).
+
+Two points, both found while building the table from the brief's Stage 2 sources.
+
+1. **The £3,181 is not derivable.** The brief's worked example (a) states that a £300,000 private sale "saves about £3,181 of commission net of your own costs". The sourced inputs are commission at 1.42% including VAT (£4,260 on £300,000, HomeOwners Alliance 2026) and a private-sale listing package of £0 to £400 (MoneySavingExpert, 1 July 2026). Those give £3,860 to £4,260, not £3,181, and no combination of the brief's other sourced figures (conveyancing £800 to £1,500 or £610 to £950; EPC £50 to £120 or £60 to £120; DIY all-in £900 to £3,250) reaches £3,181. The dependent figures £2,418 and "a sale price £3,300 lower" inherit the error. This page therefore recomputed from the named sources and labelled the result as calculated, per the brief's own rule.
+
+2. **The tax position does not move the break-even sale price.** The brief frames the taxable case as one where a smaller price gap wipes the saving out. It does not. If the saving is S and the price gap is G, a taxable seller keeps 0.76S and loses 0.76G, so the break-even is G = S at any rate. What the tax position changes is the size of the prize, not the price you have to match: £3,860 tax free becomes about £2,934 at 24%. The seed's headline ("if the sale is chargeable, the agent is cheaper than it looks and a weaker sale price is dearer than it looks") survives intact, because the agent's net-of-relief cost genuinely falls from £4,260 to about £3,238. Only the break-even limb is wrong.
+
+**Requested action:** manager to correct the fork arithmetic in any brief that carries it before those pages are written, and to treat "the taxable seller has a tighter break-even" as a do-not-write.
+
+---
+
+## F-178 · BRIEF_DRIFT · the "1.5% really costs 1.14%" net-of-tax line applies the relief to the fee EXCLUDING VAT, which contradicts the locked CG14300 rule
+
+**Raised:** 2026-08-21, RUN session A, pick A7 (`average-london-estate-agent-fees`). **Status:** open. **Severity:** MEDIUM (an understated saving printed as the wave's headline differentiator; the same line is drafted into more than one seed).
+
+The A7 seed and its Stage 2 extension both carry the effect line "at the higher residential rate every £10,000 of commission is £2,400 of CGT you do not pay, so a 1.5% London fee on a let property really costs about 1.14%". The £10,000 example is right. The percentage conversion is not, because it applies the 24% relief to the fee **excluding** VAT while the seller actually pays, and deducts, the fee **including** VAT.
+
+House position §5.B (F-167, CG14300 verified twice on 2026-08-21) is explicit: where the VAT is not available for set-off in the vendor's VAT account, "the expense inclusive of VAT is to be allowed", so a private seller deducts the gross fee. A quoted 1.5% plus VAT is 1.8% of the sale price, and 1.8% less 24% relief is **about 1.37% of the sale price**, not 1.14%. The 1.14% figure is what you get by relieving the net-of-VAT fee and then comparing it to a net-of-VAT headline, which is not the number any seller experiences.
+
+A7 was written to the lock rather than to the brief: the page states the deduction is taken including VAT and prints the pound figures (£9,970 commission, £2,393 relief, £7,577 net at the London average) rather than the percentage conversion.
+
+**Requested action:** correct the effect line in any remaining Wave 12 brief that carries it (A1, A2, A6 and A9 all price commission and all cite §5.B), so no sibling page publishes 1.14%. The safe house form is the pound version, or "1.8% including VAT costs about 1.37% after relief at 24%".
+
+---
+
+## F-182 · BRIEF_DRIFT · the beat-them plans instruct writers to NAME statutes in prose, which hard rule 4 forbids
+
+**Raised:** 2026-08-21, RUN Session A (page: `part-exchange-house-uk`). **Status:** open. **Severity:** MEDIUM (the same instruction sits in most Wave 12 beat-them plans, and it is the stated differentiator on several of them).
+
+Companion to F-180: same collision, different axis. F-180 is about table FORM; this one is about whether a statutory citation may appear in body prose at all.
+
+The A12 brief's beat-them plan, element 2, reads: "**FA 2003 s.58A + Sch 6A para 1, named.** The builder's acquisition of your old house is exempt from SDLT if the conditions are met... Not one competitor names the relief." `_language_spec.md` hard rule 4 says: "**Zero hard statutory references in body prose.** No section numbers, no SI numbers, no Act names, no `legislation.gov.uk` in a sentence... The statutory anchors in each pack are for the writer's accuracy and for the fact-check trail, not for the page." The dispatch prompt restates it as "hard statute at effectively zero in prose". The two instructions cannot both be followed, and the brief calls the citation the page's structural differentiator.
+
+**Resolved on this page as: zero hard statutory references, measured.** The differentiator survives without the citation, because what beats the competitor set is the FACT (the builder pays no stamp duty on the old house, which is why the offer exists) and the CONDITIONS (two-year main-residence occupation, intention to occupy the new dwelling, each acquisition entered into in consideration of the other, permitted area), not the reference. Both are on the page in plain words, together with the §1.Q framing rule that it is the developer's relief and never the seller's. HMRC's manual is named as a soft authority in one place only, which the winner set does 32 times across 35,385 words.
+
+The same conflict is live on at least A1, A2, A3, A5, A8, A10 and A11, whose beat-them plans all name Acts or sections as the differentiator.
+
+**Requested action:** manager to confirm the rule for the rest of the wave. Suggested, and consistent with F-180's proposed precedence: hard rule 4 wins on FORM (no citation in the sentence), the brief wins on CONTENT (the rule itself, stated in plain words, with the citation living in the pack and the work log). If instead the manager wants one named citation per page, say so explicitly, because the register spec as written reads as an absolute bar and every writer will resolve it the way this page did.
+
+---
+
+## F-183 · BRIEF_DRIFT · the three "disagreeing" fee sources agree exactly on the RANGE once VAT is handled, and two of them are the same numbers
+
+**Raised:** 2026-08-21, RUN Session A, pick A1 (`how-much-do-estate-agents-charge-to-sell-a-house`). **Status:** open. **Severity:** LOW (no page is wrong yet; the risk is sibling pages publishing two ranges that are secretly identical and presenting it as a spread).
+
+The A1 Stage 2 table spec instructs the writer that "the three sources disagree, and the page should say so rather than average them". On the AVERAGE they do disagree, and usefully: HomeOwners Alliance 1.42% including VAT against Which?/Rightmove roughly 1.3% including VAT. On the RANGE they do not disagree at all.
+
+- HomeOwners Alliance, fetched 2026-08-21: overall range **0.9% to 3.6%**, quoted including VAT.
+- MoneySavingExpert, updated 1 July 2026, fetched 2026-08-21: **0.75% to 3% plus VAT**, with its own cash conversion "£2,700 to £10,800" on a £300,000 property.
+
+0.75% and 3% grossed up at the standard rate are 0.9% and 3.6%. MSE's own cash range confirms it: £2,700 is 0.9% of £300,000 and £10,800 is 3.6%. **The two sources publish one range in two presentations.** HOA's sole-agency (1.2% to 1.8% inc VAT) and multi-agency (3% to 3.6% inc VAT) bands are the same range split by model. Which?'s "less than 1% to as much as 3.5%" is the only genuinely independent range, and it is narrower at the top.
+
+Two consequences for the rest of the cluster. First, a page that prints "0.9% to 3.6% (HOA)" and "0.75% to 3% plus VAT (MSE)" as two data points is double-counting one data point, which is the citation theatre hard rule 4 and the W13 do-not-copy row both warn against. Second, the agreement is itself the stronger claim: two independent guides land on the same bounds, so the range can be stated with more confidence than the brief's "they disagree" framing suggests.
+
+**Resolved on A1 as:** the disagreement is stated on the AVERAGE only (1.3% to 1.42% including VAT as the central estimate). The range is given once, as "0.75% to 3% plus VAT", with the sourced cash conversion attached, and the table carries HOA's per-model split rather than repeating HOA's overall range as a separate line.
+
+**Requested action:** manager to carry the same treatment into A2, A7, A9 and the pillar, all of which price commission from the same three sources. Suggested do-not-write: presenting HOA's 0.9% to 3.6% and MSE's 0.75% to 3% plus VAT as two different findings.
+
+---
+
+## F-184 · BRIEF_DRIFT · every Wave 12 table spec is wider than the language spec's hard rule allows, and A5's is the widest
+
+**Raised:** 2026-08-21, RUN session A (page: `online-estate-agents-uk`). **Status:** open. **Severity:** LOW (writer-resolvable, but it will recur on at least four more pages this wave).
+
+The A5 Stage 2 brief specifies a fee table of six columns: what you pay and when · cash cost at £200,000 / £300,000 / £450,000 · what you owe if the sale falls through · what is excluded from the headline price · source. `_language_spec.md` hard rule 8 says cost tables are "two or three columns" and "**never five columns**", and the route-page row in §3 prescribes "comparison table, three columns". The two documents cannot both be followed.
+
+Resolved on the page in favour of the language spec, which the RUN prompt makes the authority on shape: the table runs three columns (fee shape · what it costs on a £300,000 sale · what you owe if the sale falls through), and the £200,000 and £450,000 conversions, the excluded £80 fee, and the per-figure sourcing moved into the prose immediately around it. Nothing from the brief's table spec was dropped, only relocated.
+
+The same collision is visible in the A1, A2, A7 and A9 briefs, all of which specify four or more columns while the spec's measured winner median is **zero tables**. **Requested action:** conductor to state one rule for the wave, so QA does not read five identically-shaped deviations as five separate errors.
+
+---
+
+## F-185 · HOUSE_POSITION_EXTENSION · §39.A answers "who signs" but not "whose authority exists yet", and it is silent on a personal representative who dies
+
+**Raised:** 2026-08-21, RUN session A (page: `selling-a-probate-property`). **Status:** open. **Severity:** MEDIUM (it changes the answer to the cluster's highest-volume question).
+
+§39.A locks three things well: the house devolves on the personal representatives at death, a contract or conveyance needs ALL of them to concur unless the grant issued to only some of the named executors, and there is no statutory pre-grant sale bar. Two adjacent points that a probate-selling page reaches for on every draft are not in the lock and were therefore left off the page.
+
+**1. Executors versus administrators before the grant.** An executor's appointment comes from the will and the grant confirms it; an administrator has no appointment at all until letters of administration issue. That distinction is the real answer to "can I accept an offer / exchange before the grant", because the two cases are not the same, and it is exactly the question that carries the volume in this cluster (`can you sell a house before probate is granted`, `can you put a house on the market before probate`). Nothing in §39 or §39.A says which side of that line the reader is on. Neither verified competitor states it either, so it is unclaimed ground rather than a correction. The page as shipped answers procedurally on gov.uk's words and does **not** assert the distinction, per the "no figure and no rule from memory" rule.
+
+**2. Death of a personal representative mid-sale.** The seed for this page asks it directly ("What if one of the executors ... has died?") and the lock has no position. Whether the survivors can continue alone turns on whether the deceased PR had already proved, and there is a further rule where a sole proving executor dies. The page answers this in one sentence that routes the reader to the probate solicitor rather than stating law the lock does not carry.
+
+**Requested action:** manager to extend §39.A with (a) the source of an executor's authority versus an administrator's, verified at legislation.gov.uk, and (b) the survivorship position when a PR dies before completion. Both are re-usable across the three existing probate-tax posts and `how-long-does-probate-take-in-the-uk`, none of which carry either point.
+
+---
+
+## F-186 · BRIEF_DRIFT · the A2 worked example nets the fee saving for tax but not the price loss, and the £2,582 headline is the result
+
+**Raised:** 2026-08-21, RUN session A (page: `cheapest-estate-agent-fees-uk`). **Status:** open. **Severity:** MEDIUM (the number was specified for publication and it is not defensible).
+
+The A2 Stage 2 brief's worked example (b) is correct up to its own punchline. It computes the after-tax fee saving properly: choosing a £1,079 fixed fee over a £4,260 commission on a £300,000 sale saves £3,181 of cash, the lost s.38(1)(c) deduction costs £763 at 24%, and the real saving is **£2,418**. It then writes: "if the cheaper route achieves £5,000 less on the price, you are **£2,582** worse off before you count anything else." £2,582 is £2,418 minus £5,000, which sets an **after-tax** fee saving against a **pre-tax** price loss.
+
+A £5,000 lower sale price on a chargeable disposal reduces the gain by £5,000, so the tax falls by £1,200 at 24% and the loss after tax is **£3,800**. On one consistent basis the reader is **£1,382 worse off**, not £2,582. The page publishes £1,382 and shows the £1,200 tax reduction in the same sentence so the arithmetic is checkable. The rhetorical point the brief was reaching for ("the fee is the small number, the price is the big one") survives intact and is still comfortably won at £1,382.
+
+**Requested action:** correct the A2 brief in place before any reuse, and check the same pattern in the A1 and A9 briefs, which both pair an after-tax fee figure with a gross price or cost figure in the same comparison. This is the second arithmetic-consistency flag on the wave's after-tax lines (see F-178 on the VAT base), which suggests the after-tax column needs one stated convention for the whole cluster: net everything, or net nothing, and say which in the sentence.
+
+---
+
+## F-187 · HOUSE_POSITION_EXTENSION · §26 locks the SALES-agent fee regime (§26.14) but nothing locks the LETTING-agent fee regime
+
+**Raised:** 2026-08-21, RUN session A (page: `estate-agent-fees-for-renting`). **Status:** open. **Severity:** MEDIUM.
+
+§26.14 was added this wave for selling agents: fee information before contract, prescribed wording, redress instrument, penalty. There is no mirror for letting agents. §26.5 covers letting-agent REDRESS only; §26.7 covers deductibility. Nothing in house_positions carries (a) the letting agent's fee-publication duty or (b) the tenant fee ban. F-170 recorded the dead gov.uk URL and the 1 May 2026 Sch 1 amendments but proposed only "a §26.5 line", not a lock. Every future landlord-facing fees, deposits or agent-selection page needs this, and the drift risk is the same one §26.14 exists to stop: writers reaching for the sales-agent instrument, or for gov.uk's wrong figures.
+
+**Both write-time verify items in the A6 brief are now RESOLVED, verbatim, and belong in the lock:**
+- **CRA 2015 s.87(7): "must not exceed £5,000"** (local weights and measures authority penalty for breach of the s.83 publication duty). Fetched `https://www.legislation.gov.uk/ukpga/2015/15/section/87` on 2026-08-21; page current to 20 August 2026.
+- **TFA 2019 s.8: "must not exceed £5,000"**, rising to **"must not exceed £30,000"** where the authority is satisfied the breach is a s.12 offence. Fetched `https://www.legislation.gov.uk/ukpga/2019/4/section/8` on 2026-08-21; s.8 in force 1 June 2019, textual amendments applied 1 May 2026 by the RRA 2025.
+
+**Requested action:** add a §26.16 letting-agent fee mini-lock carrying: the CRA 2015 s.83 three-channel publication duty (premises, own website, third-party site or link), the "inclusive of any applicable tax" and per-dwelling-or-per-tenant limbs, **s.85(1) putting LANDLORD-side fees inside the duty**, the s.87(7) £5,000 penalty; and on the tenant side the s.1/s.2 prohibition, Sch 1 permitted payments with the **statutory** deposit caps (five weeks under £50,000, six weeks at £50,000 or more, **no upper bound**, never gov.uk's £100,000 phrasing), one week's holding deposit, the 1 May 2026 para 1(1A)/(1B) pre-signature rent ban with one month maximum in advance, the two surviving default fees, and the s.8 £5,000/£30,000 penalties. Do-not-write list should carry: "letting agents and estate agents share one fee-disclosure regime" and "six weeks' deposit applies between £50,000 and £100,000".
+
+---

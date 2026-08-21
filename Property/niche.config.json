@@ -87,6 +87,10 @@
           "href": "/landed-estates"
         },
         {
+          "label": "Cost of selling a property",
+          "href": "/cost-of-selling-a-property"
+        },
+        {
           "label": "For letting agents",
           "href": "/for-letting-agents"
         },
@@ -149,6 +153,10 @@
     {
       "label": "Landed estates",
       "href": "/landed-estates"
+    },
+    {
+      "label": "Cost of selling a property",
+      "href": "/cost-of-selling-a-property"
     },
     {
       "label": "For letting agents",

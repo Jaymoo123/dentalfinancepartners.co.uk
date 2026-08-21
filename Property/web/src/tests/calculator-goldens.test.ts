@@ -49,6 +49,7 @@ import { rentARoomReliefCalculator } from "../lib/calculators/tools/rent-a-room-
 import { propertyAllowanceChecker } from "../lib/calculators/tools/property-allowance-checker";
 import { leaseExtensionPremiumCalculator } from "../lib/calculators/tools/lease-extension-premium-calculator";
 import { bprAprAllowanceCalculator } from "../lib/calculators/tools/bpr-apr-allowance-calculator";
+import { costOfSellingCalculator } from "../lib/calculators/tools/cost-of-selling-calculator";
 // Tools that call @/lib/* must be tested through the pure lib functions directly
 // (the @/ alias resolves in the app but the tool configs carry compute fns).
 
@@ -71,8 +72,8 @@ type V = Record<string, number | string | boolean>;
 // 1. Registry contract (TL-01)
 // ============================================================
 describe("registry contract (TL-01)", () => {
-  it("total fleet = 25 tools (5 bespoke + 20 generic)", () => {
-    expect(TOOLS.length).toBe(25);
+  it("total fleet = 26 tools (5 bespoke + 21 generic)", () => {
+    expect(TOOLS.length).toBe(26);
   });
 
   it("5 bespoke tools", () => {
@@ -80,13 +81,13 @@ describe("registry contract (TL-01)", () => {
     expect(bespoke.length).toBe(5);
   });
 
-  it("20 generic tools", () => {
+  it("21 generic tools", () => {
     const generic = genericTools();
-    expect(generic.length).toBe(20);
+    expect(generic.length).toBe(21);
   });
 
-  it("allTools returns 25 tools", () => {
-    expect(allTools().length).toBe(25);
+  it("allTools returns 26 tools", () => {
+    expect(allTools().length).toBe(26);
   });
 
   it("getGenericTool finds by slug", () => {
@@ -120,6 +121,7 @@ describe("registry contract (TL-01)", () => {
       "property-allowance-checker",
       "lease-extension-premium-calculator",
       "bpr-apr-allowance-calculator",
+      "cost-of-selling-calculator",
     ];
     for (const s of expected) {
       expect(slugs, `missing slug: ${s}`).toContain(s);
@@ -1638,5 +1640,411 @@ describe("bpr-apr-allowance-calculator: house-bar checks", () => {
     const copy = JSON.stringify(bprAprAllowanceCalculator) + JSON.stringify(result);
     expect(copy).not.toContain("—");
     expect(copy).not.toContain("–");
+  });
+});
+
+// ============================================================
+// GOLDEN: Cost of Selling a House (Wave 12 Cluster A, 2026-08-21)
+//
+// The differentiator under test is the SPLIT: which selling costs come off a
+// capital gain and which do not. Ground truth house_positions.md §5.B —
+// TCGA 1992 s.38(1)(c) with the exhaustive s.38(2) list (agent commission,
+// conveyancing, advertising to find a buyer, professional fees) IN; removals,
+// storage, cleaning and mortgage redemption OUT; s.38(3) rules out interest.
+// CG14300: a private seller with no VAT set-off deducts the GROSS agent fee,
+// so every fee figure here is inclusive of VAT.
+//
+// The CGT estimate runs the SAME computeCgt engine as
+// capital-gains-tax-calculator, which is the chain: the deductible subtotal is
+// surfaced as the figure to type into that tool's combined costs field. A
+// figure diverging between the two tools = STOP.
+//
+// Defaults: salePrice 293,000 (HM Land Registry England avg, June 2026),
+// agentFeePct 1.42 (HOA 2026 average inc VAT), conveyancing 700, epc 80,
+// advertising 0, removals 550, letOrSecond false, purchasePrice 200,000,
+// otherIncome 50,000.
+//
+// Hand-derived:
+//   agent fee   = 293,000 x 1.42%              = 4,160.60 -> £4,161
+//   deductible  = 4,160.60 + 700 + 80          = 4,940.60 -> £4,941
+//   removals    = 550, no relief at either end
+//   total       = 5,490.60                     -> £5,491
+//   share       = 5,490.60 / 293,000 x 100     = 1.8739%  -> "1.9%"
+// ============================================================
+const cosRow = (result: ReturnType<typeof costOfSellingCalculator.compute>, startsWith: string) =>
+  result.rows?.find((r) => r.label.startsWith(startsWith))?.value;
+
+describe("GOLDEN: cost-of-selling-calculator (defaults, main home)", () => {
+  const result = costOfSellingCalculator.compute(defaults(costOfSellingCalculator.fields) as V);
+
+  it("agent fee = £4,161 at 1.42% inc VAT, and the rate is in the label", () => {
+    expect(cosRow(result, "Estate agent fee at 1.42% including VAT")).toBe("£4,161");
+  });
+
+  it("the itemised sell-side lines are conveyancing, EPC and removals", () => {
+    expect(cosRow(result, "Conveyancing for the sale")).toBe("£700");
+    expect(cosRow(result, "Energy performance certificate")).toBe("£80");
+    expect(cosRow(result, "Removals, which get no tax relief")).toBe("£550");
+  });
+
+  it("no advertising row when the field is left at zero", () => {
+    expect(cosRow(result, "Advertising to find a buyer")).toBeUndefined();
+  });
+
+  it("deductible subtotal = £4,941 (agent + conveyancing + EPC, removals excluded)", () => {
+    expect(cosRow(result, "Costs that come off a capital gain")).toBe("£4,941");
+  });
+
+  it("total cost of selling = £5,491", () => {
+    expect(cosRow(result, "Total cost of selling")).toBe("£5,491");
+    expect(result.headline.value).toBe("£5,491");
+  });
+
+  it("headline ties the total to the stated property value and the share of price", () => {
+    expect(result.headline.sub).toBe("On a £293,000 sale that is 1.9% of the price, with no tax to pay");
+  });
+
+  it("MAIN-HOME PATH: no CGT rows at all", () => {
+    expect(cosRow(result, "Gain before allowances")).toBeUndefined();
+    expect(cosRow(result, "Taxable gain")).toBeUndefined();
+    expect(cosRow(result, "Taxed at 18%")).toBeUndefined();
+    expect(cosRow(result, "Taxed at 24%")).toBeUndefined();
+    expect(cosRow(result, "Capital gains tax, estimated")).toBeUndefined();
+    expect(cosRow(result, "Figure for the CGT calculator")).toBeUndefined();
+    expect(result.headline.tone).toBeUndefined();
+  });
+
+  it("MAIN-HOME PATH: the note says PRR covers it, in plain words", () => {
+    expect(result.note).toContain("private residence relief");
+    expect(result.note).toContain("no capital gains tax line");
+  });
+
+  it("note names every default's source and states the England scope", () => {
+    expect(result.note).toContain("HomeOwners Alliance");
+    expect(result.note).toContain("£35 to £120");
+    expect(result.note).toContain("one published estimate");
+    expect(result.note).toContain("figures are for England");
+  });
+});
+
+// Let property, same sale. Hand-derived through computeCgt:
+//   gain        = 293,000 - 200,000 - 4,940.60 = 88,059.40 -> £88,059
+//   AEA         = 3,000                        -> "−£3,000"
+//   taxable     = 85,059.40                    -> £85,059
+//   income 50,000: PA 12,570 leaves 37,430 in band, basic band 37,700,
+//   so unused basic band = 270.
+//   at 18%      = 270 x 0.18      =      48.60 -> £49
+//   at 24%      = 84,789.40 x .24 = 20,349.456 -> £20,349
+//   CGT         = 20,398.056                   -> £20,398
+//   headline    = 5,490.60 + 20,398.056        = 25,888.66 -> £25,889
+describe("GOLDEN: cost-of-selling-calculator (let property, the split path)", () => {
+  const result = costOfSellingCalculator.compute({
+    ...(defaults(costOfSellingCalculator.fields) as V),
+    letOrSecond: true,
+  } as V);
+
+  it("gain = £88,059, struck after the DEDUCTIBLE costs only", () => {
+    expect(cosRow(result, "Gain before allowances")).toBe("£88,059");
+  });
+
+  it("AEA row = minus £3,000", () => {
+    expect(cosRow(result, "Less the £3,000 annual allowance")).toBe("−£3,000");
+    expect(cosRow(result, "Taxable gain")).toBe("£85,059");
+  });
+
+  it("bands split 18% / 24% on the unused basic-rate band", () => {
+    expect(cosRow(result, "Taxed at 18%")).toBe("£49");
+    expect(cosRow(result, "Taxed at 24%")).toBe("£20,349");
+  });
+
+  it("CGT estimate = £20,398", () => {
+    expect(cosRow(result, "Capital gains tax, estimated")).toBe("£20,398");
+  });
+
+  it("headline = selling costs plus tax = £25,889, and says which is which", () => {
+    expect(result.headline.value).toBe("£25,889");
+    expect(result.headline.sub).toBe("£5,491 of selling costs plus about £20,398 of capital gains tax");
+    expect(result.headline.tone).toBe("warn");
+  });
+
+  it("CHAIN ROW: hands the deductible subtotal to the CGT calculator, not the total", () => {
+    expect(cosRow(result, "Figure for the CGT calculator's costs box")).toBe(
+      "£4,941 plus your buying and improvement costs",
+    );
+  });
+
+  it("CHAIN: the same figures through computeCgt directly, so the two tools agree", () => {
+    const direct = computeCgt({
+      salePrice: 293_000,
+      purchasePrice: 200_000,
+      costs: 4_940.6,
+      otherIncome: 50_000,
+      aeaUsed: false,
+    });
+    expect(gbp(direct.tax)).toBe("£20,398");
+    expect(gbp(direct.gain)).toBe("£88,059");
+  });
+
+  it("note keeps removals out of the deductible total and points at the full tool", () => {
+    expect(result.note).toContain("Removals are kept out of the deductible total");
+    expect(result.note).toContain("capital gains tax calculator");
+    expect(result.note).toContain("£4,941");
+  });
+});
+
+// The differentiator, isolated: multiplying the NON-deductible line by nine
+// changes the cost total and must not move the gain or the tax by a penny.
+describe("GOLDEN: cost-of-selling-calculator (removals never touch the gain)", () => {
+  const base = defaults(costOfSellingCalculator.fields) as V;
+  const cheap = costOfSellingCalculator.compute({ ...base, letOrSecond: true } as V);
+  const expensive = costOfSellingCalculator.compute({
+    ...base,
+    letOrSecond: true,
+    removals: 5_000,
+  } as V);
+
+  it("a £5,000 removal bill raises the cost total to £9,941", () => {
+    expect(cosRow(expensive, "Total cost of selling")).toBe("£9,941");
+    expect(cosRow(cheap, "Total cost of selling")).toBe("£5,491");
+  });
+
+  it("but the deductible subtotal, the gain and the tax are unchanged", () => {
+    expect(cosRow(expensive, "Costs that come off a capital gain")).toBe("£4,941");
+    expect(cosRow(expensive, "Gain before allowances")).toBe(cosRow(cheap, "Gain before allowances"));
+    expect(cosRow(expensive, "Capital gains tax, estimated")).toBe(
+      cosRow(cheap, "Capital gains tax, estimated"),
+    );
+  });
+
+  it("advertising to find a buyer DOES move the deductible subtotal", () => {
+    // s.38(2)(b): advertising to find a buyer is on the exhaustive list.
+    // deductible = 4,940.60 + 1,000 = 5,940.60 -> £5,941
+    const advertised = costOfSellingCalculator.compute({
+      ...base,
+      letOrSecond: true,
+      advertising: 1_000,
+    } as V);
+    expect(cosRow(advertised, "Advertising to find a buyer")).toBe("£1,000");
+    expect(cosRow(advertised, "Costs that come off a capital gain")).toBe("£5,941");
+    // gain falls by the same £1,000: 88,059.40 - 1,000 = 87,059.40
+    expect(cosRow(advertised, "Gain before allowances")).toBe("£87,059");
+  });
+});
+
+// Band boundary. otherIncome 12,570 = the personal allowance exactly, so the
+// whole £37,700 basic-rate band is unused.
+//   sale 250,000, fee 1.42% = 3,550, + 700 + 80 = 4,330 deductible
+//   purchase 204,970 -> gain 40,700 -> taxable 37,700, EXACTLY the band
+//   tax = 37,700 x 18% = 6,786, and nothing at 24%
+// One pound more of gain puts £1 into the 24% band.
+describe("GOLDEN: cost-of-selling-calculator (18% / 24% band boundary)", () => {
+  const at = (purchasePrice: number) =>
+    costOfSellingCalculator.compute({
+      salePrice: 250_000,
+      agentFeePct: 1.42,
+      conveyancing: 700,
+      epc: 80,
+      advertising: 0,
+      removals: 0,
+      letOrSecond: true,
+      purchasePrice,
+      otherIncome: 12_570,
+    } as V);
+
+  const exact = at(204_970);
+
+  it("taxable gain exactly fills the basic-rate band: all £6,786 at 18%", () => {
+    expect(cosRow(exact, "Taxable gain")).toBe("£37,700");
+    expect(cosRow(exact, "Taxed at 18%")).toBe("£6,786");
+    expect(cosRow(exact, "Capital gains tax, estimated")).toBe("£6,786");
+  });
+
+  it("no 24% row while the gain stays inside the band", () => {
+    expect(cosRow(exact, "Taxed at 24%")).toBeUndefined();
+  });
+
+  const overBy1 = at(204_969);
+
+  it("one pound over the band and the 24% row appears", () => {
+    expect(cosRow(overBy1, "Taxable gain")).toBe("£37,701");
+    expect(cosRow(overBy1, "Taxed at 18%")).toBe("£6,786");
+    // 24p of tax: the row exists, and it rounds to £0 on display.
+    expect(cosRow(overBy1, "Taxed at 24%")).toBe("£0");
+  });
+});
+
+// AEA. Same sale, purchase set so the gain is exactly the £3,000 annual
+// exempt amount: taxable gain nil, tax nil, and no rate rows at all.
+describe("GOLDEN: cost-of-selling-calculator (£3,000 annual exempt amount)", () => {
+  const at = (purchasePrice: number) =>
+    costOfSellingCalculator.compute({
+      salePrice: 250_000,
+      agentFeePct: 1.42,
+      conveyancing: 700,
+      epc: 80,
+      advertising: 0,
+      removals: 550,
+      letOrSecond: true,
+      purchasePrice,
+      otherIncome: 12_570,
+    } as V);
+
+  const covered = at(242_670);
+
+  it("a gain of exactly £3,000 is fully covered: no tax", () => {
+    expect(cosRow(covered, "Gain before allowances")).toBe("£3,000");
+    expect(cosRow(covered, "Less the £3,000 annual allowance")).toBe("−£3,000");
+    expect(cosRow(covered, "Taxable gain")).toBe("£0");
+    expect(cosRow(covered, "Capital gains tax, estimated")).toBe("£0");
+  });
+
+  it("no rate rows when nothing is taxable", () => {
+    expect(cosRow(covered, "Taxed at 18%")).toBeUndefined();
+    expect(cosRow(covered, "Taxed at 24%")).toBeUndefined();
+  });
+
+  it("tone stays neutral and the headline is just the selling costs", () => {
+    // deductible 4,330 + removals 550 = 4,880; tax 0
+    expect(covered.headline.value).toBe("£4,880");
+    expect(covered.headline.tone).toBe("default");
+  });
+
+  it("the chain row still fires, because a nil bill still needs the costs carried over", () => {
+    expect(cosRow(covered, "Figure for the CGT calculator's costs box")).toBe(
+      "£4,330 plus your buying and improvement costs",
+    );
+  });
+
+  it("AEA sentinel: the allowance is £3,000, not a stale £6,000 or £12,300", () => {
+    // £1 more of gain and £1 becomes taxable.
+    const overBy1 = at(242_669);
+    expect(cosRow(overBy1, "Taxable gain")).toBe("£1");
+  });
+});
+
+describe("GOLDEN: cost-of-selling-calculator (zero and negative-proofing)", () => {
+  const zeroed = costOfSellingCalculator.compute({
+    salePrice: 0,
+    agentFeePct: 0,
+    conveyancing: 0,
+    epc: 0,
+    advertising: 0,
+    removals: 0,
+    letOrSecond: false,
+    purchasePrice: 0,
+    otherIncome: 0,
+  } as V);
+
+  it("everything at zero gives £0 and no NaN, including the share of price", () => {
+    expect(zeroed.headline.value).toBe("£0");
+    expect(zeroed.headline.sub).toBe("On a £0 sale that is 0.0% of the price, with no tax to pay");
+  });
+
+  it("negative entries floor at zero rather than producing a credit", () => {
+    const negative = costOfSellingCalculator.compute({
+      salePrice: 200_000,
+      agentFeePct: -2,
+      conveyancing: -500,
+      epc: 0,
+      advertising: 0,
+      removals: -100,
+      letOrSecond: false,
+      purchasePrice: 0,
+      otherIncome: 0,
+    } as V);
+    expect(negative.headline.value).toBe("£0");
+    expect(cosRow(negative, "Costs that come off a capital gain")).toBe("£0");
+  });
+
+  it("a sale at a loss cannot produce negative tax", () => {
+    const loss = costOfSellingCalculator.compute({
+      ...(defaults(costOfSellingCalculator.fields) as V),
+      letOrSecond: true,
+      purchasePrice: 400_000,
+    } as V);
+    expect(cosRow(loss, "Gain before allowances")).toBe("£0");
+    expect(cosRow(loss, "Capital gains tax, estimated")).toBe("£0");
+    expect(loss.headline.tone).toBe("default");
+  });
+});
+
+describe("cost-of-selling-calculator: house-bar checks", () => {
+  const prose = [
+    costOfSellingCalculator.intro,
+    ...costOfSellingCalculator.explainer.paragraphs,
+    ...(costOfSellingCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+  ].join(" ");
+
+  const notes = [
+    costOfSellingCalculator.compute(defaults(costOfSellingCalculator.fields) as V).note ?? "",
+    costOfSellingCalculator.compute({
+      ...(defaults(costOfSellingCalculator.fields) as V),
+      letOrSecond: true,
+    } as V).note ?? "",
+  ].join(" ");
+
+  it("meta fields stay inside the 60 / 155 limits", () => {
+    expect(costOfSellingCalculator.metaTitle.length).toBeLessThanOrEqual(60);
+    expect(costOfSellingCalculator.metaDescription.length).toBeLessThanOrEqual(155);
+  });
+
+  it("no em-dashes or en-dashes in any user-facing string", () => {
+    const copy = JSON.stringify(costOfSellingCalculator) + notes;
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+
+  it("no pricing of our own services", () => {
+    const copy = JSON.stringify(costOfSellingCalculator);
+    expect(copy).not.toMatch(/\bfrom £\d/);
+    expect(copy).not.toMatch(/\bper (month|hour)\b/i);
+  });
+
+  // Wave 12 language spec hard rule 4: zero hard statutory references in body
+  // prose. Ten of twelve measured winners cite no statute at all. The citations
+  // for this tool live in its source comments, which never render.
+  it("no hard statutory references anywhere in body prose, notes included", () => {
+    const body = prose + " " + notes;
+    expect(body).not.toMatch(/TCGA|Finance Act|legislation\.gov\.uk|section \d/i);
+    expect(body).not.toMatch(/\bCG\d{4,}\b/);
+  });
+
+  it("the removals correction is stated in plain words on the page", () => {
+    expect(prose).toContain("The removal van does not");
+    expect(prose.toLowerCase()).toContain("removals are not on it");
+  });
+
+  it("PRR is stated in plain words for the main-home reader", () => {
+    expect(prose).toContain("Private residence relief covers the gain");
+  });
+
+  it("landing copy opens on the cost question, not on the tax", () => {
+    expect(costOfSellingCalculator.intro.startsWith("How much will it cost you to sell your house?")).toBe(
+      true,
+    );
+    expect(costOfSellingCalculator.explainer.heading).toBe("How much does it cost to sell a house?");
+  });
+
+  it("every FAQ heading is a question, per the cluster spec", () => {
+    for (const f of costOfSellingCalculator.faqs ?? []) {
+      expect(f.question.endsWith("?"), `not a question: ${f.question}`).toBe(true);
+    }
+  });
+
+  it("negotiation advice carries a target number, never just 'fees are negotiable'", () => {
+    expect(prose).toContain("1.2%");
+    expect(prose).toContain("three quotes");
+  });
+
+  it("carries worked examples and related links, and chains to the CGT calculator", () => {
+    expect(costOfSellingCalculator.workedExamples?.length).toBe(2);
+    expect(costOfSellingCalculator.related?.length).toBeGreaterThanOrEqual(4);
+    const hrefs = (costOfSellingCalculator.related ?? []).map((r) => r.href);
+    expect(hrefs).toContain("/calculators/capital-gains-tax-calculator");
+  });
+
+  it("no named worked-example personas (wave rule)", () => {
+    const examples = JSON.stringify(costOfSellingCalculator.workedExamples);
+    expect(examples).not.toMatch(/\b(Gwen|Sarah|John|Emma|David|Priya|Tom)\b/);
   });
 });
