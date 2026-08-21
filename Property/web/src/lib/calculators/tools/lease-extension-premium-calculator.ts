@@ -14,7 +14,7 @@ import { gbp, pct } from "../format";
  *    consultation closes 23 Sep 2026. Post-Sportelli 5% remains the working rate.
  *  - Extensions completing today are +90 years, not 990.
  *
- * Fee stack (£2,600 to £4,400) is the range published on
+ * Fee stack (£2,750 to £4,700 excluding VAT) is the range published on
  * content/blog/lease-extension-cost-uk.md, kept deliberately in step with it.
  */
 
@@ -22,8 +22,8 @@ import { gbp, pct } from "../format";
 const MARRIAGE_VALUE_THRESHOLD_YEARS = 80;
 
 /** Professional fee stack to budget on top of the premium (own + freeholder's, s.60). */
-const FEES_LOW = 2_600;
-const FEES_HIGH = 4_400;
+const FEES_LOW = 2_750;
+const FEES_HIGH = 4_700;
 
 /** Honest width on the headline: relativity and the rates are both negotiable. */
 const RANGE_BAND = 0.2;
@@ -280,7 +280,7 @@ export const leaseExtensionPremiumCalculator: GenericTool = {
     {
       question: "What else do I pay on top of the premium?",
       answer:
-        "Budget roughly £2,600 to £4,400 for the professional fee stack: your own solicitor and valuer, plus the freeholder's reasonable costs of investigating the claim, valuing the flat and granting the new lease, which you pay under section 60 of the 1993 Act. The 2024 Act repeals section 60, but that repeal is not in force either. Fees are usually quoted before VAT. If the premium goes to tribunal, each side bears its own costs of those proceedings.",
+        "Budget roughly £2,750 to £4,700 before VAT for the professional fee stack: your own solicitor and valuer, plus the freeholder's reasonable costs of investigating the claim, valuing the flat and granting the new lease, which you pay under section 60 of the 1993 Act. The 2024 Act repeals section 60, but that repeal is not in force either. Fees are usually quoted before VAT. If the premium goes to tribunal, each side bears its own costs of those proceedings.",
     },
     {
       question: "Do I need to have owned the flat for two years?",

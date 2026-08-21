@@ -150,7 +150,7 @@ editorialNote: "Reviewed against HMRC RDR3 (Statutory Residence Test), HMRC CG26
 
 <h3>11. Sign the letting agent management agreement</h3>
 
-<p>If a property is becoming a rental for the first time (David's case), the agent's onboarding includes EPC check, gas safety certificate, electrical installation condition report (EICR), Right-to-Rent check on tenants, and deposit-scheme registration. Allow four to six weeks for first letting after onboarding.</p>
+<p>If a property is becoming a rental for the first time (David's case), the agent's onboarding includes EPC check, gas safety certificate, <a href="/blog/landlord-tax-essentials/eicr-certificate-cost-landlords">electrical installation condition report (EICR)</a>, Right-to-Rent check on tenants, and deposit-scheme registration. Allow four to six weeks for first letting after onboarding.</p>
 
 <h3>12. Tenant notification and section 48 service address</h3>
 

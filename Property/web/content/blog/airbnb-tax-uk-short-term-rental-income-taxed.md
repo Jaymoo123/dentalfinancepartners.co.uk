@@ -117,7 +117,7 @@ faqs:
 <li><strong>Repairs.</strong> Revenue repairs to maintain the property in its current state (re-painting, broken-fixture replacement, fixing leaks). Capital improvements (extensions, new bathrooms, conversions) are excluded from rental profit and enter the CGT base cost.</li>
 <li><strong>Platform fees.</strong> Airbnb host service fees, listing fees, professional photography paid through the platform.</li>
 <li><strong>Professional fees.</strong> Accountancy, legal advice on host-tenant matters, mortgage broker fees on commercial finance.</li>
-<li><strong>Safety and compliance.</strong> Annual gas safety certificate, electrical installation condition report, PAT testing, fire risk assessment, smoke and CO alarms, fire extinguishers, first aid kit.</li>
+<li><strong>Safety and compliance.</strong> Annual gas safety certificate, electrical installation condition report, PAT testing, <a href="/blog/landlord-tax-essentials/fire-risk-assessment-cost">fire risk assessment</a>, smoke and CO alarms, fire extinguishers, first aid kit.</li>
 <li><strong>Licensing.</strong> Scottish short-term let licence fees, English borough-licensing fees where applicable. The full fee for the period of let is deductible as a revenue expense.</li>
 <li><strong>Travel.</strong> Genuine business travel to inspect, maintain or hand over the property; commuting costs and personal-use travel are excluded.</li>
 </ul>

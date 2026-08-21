@@ -45,7 +45,7 @@ faqs:
 
 <h2>Three Regimes, One Statute: Why Landlords Confuse Them</h2>
 
-<p>All three licensing regimes sit inside the same Act. They share the same enforcement architecture, the same civil-penalty machinery, and the same routes to rent repayment orders and banning orders. What differs is the threshold that brings a property inside the regime and the designation route a council uses to create scope. The cleanest mental model is to treat the regimes as three layers of a single licensing system, applied in this order of geographic coverage.</p>
+<p>All three licensing regimes sit inside the same Act. They share the same enforcement architecture, the same civil-penalty machinery, and the same routes to rent repayment orders and banning orders. What differs is the threshold that brings a property inside the regime and the designation route a council uses to create scope. The cleanest mental model, set out in plainer terms in our overview of <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">how landlord licensing works</a>, is to treat the regimes as three layers of a single licensing system, applied in this order of geographic coverage.</p>
 
 <table>
 <thead>

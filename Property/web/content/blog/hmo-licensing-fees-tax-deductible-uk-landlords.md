@@ -62,7 +62,7 @@ faqs:
 </tbody>
 </table>
 
-<p>A single property can require more than one licence type. A 5-bedroom HMO in a council ward with selective licensing needs both the mandatory HMO licence and the selective licence. Both fees are independently deductible.</p>
+<p>A single property can require more than one licence type, so it is worth confirming <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">which licensing regimes cover the property</a> before budgeting for the fees. A 5-bedroom HMO in a council ward with selective licensing needs both the mandatory HMO licence and the selective licence. Both fees are independently deductible.</p>
 
 <h2>Cash Basis vs Accruals: Which Year Do You Claim?</h2>
 

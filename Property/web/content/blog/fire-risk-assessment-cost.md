@@ -41,7 +41,7 @@ faqs:
 dateModified: "2026-08-15"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-08-15"
+reviewedAt: "2026-08-21"
 ---
 
 <p>A professional fire risk assessment for a rented residential building costs between £150 and £1,500 or more, based on quoted ranges from UK assessment providers checked in August 2026. The spread is wide because the price tracks the building, not the paperwork: a six-bed HMO in a converted house sits near the bottom, a purpose-built block above 11 metres in the middle, and a high-rise building at 18 metres or seven storeys at the top, where the Fire Safety (England) Regulations 2022 add duties the assessor has to cover. Reviews of an existing assessment cost less than first assessments. This page states the position for England. The Fire Safety Order 2005 also applies in Wales, but the 2022 Regulations, the alarm rules and the enforcement detail below are England-only; Scotland and Northern Ireland run separate regimes entirely.</p>

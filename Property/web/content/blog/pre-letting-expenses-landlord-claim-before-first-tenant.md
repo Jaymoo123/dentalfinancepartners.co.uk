@@ -140,7 +140,7 @@ faqs:
 
 <h3>Example 1: a straightforward refurbishment before first let</h3>
 
-<p>A landlord buys a tired but structurally sound flat in January. They spend roughly eight thousand pounds on redecoration, replacement carpets and repairs to the existing boiler, plus four hundred pounds on an EPC and gas and electrical safety certificates. The flat is marketed in late March and the first tenant moves in during April. All of these are revenue costs incurred wholly and exclusively to make the flat lettable, and all fall well inside the seven-year window. They are treated as incurred on the April commencement date and deducted in full in the first period of the property business.</p>
+<p>A landlord buys a tired but structurally sound flat in January. They spend roughly eight thousand pounds on redecoration, replacement carpets and repairs to the existing boiler, plus four hundred pounds on <a href="/blog/landlord-tax-essentials/epc-certificate-cost-uk">an EPC</a> and gas and electrical safety certificates. The flat is marketed in late March and the first tenant moves in during April. All of these are revenue costs incurred wholly and exclusively to make the flat lettable, and all fall well inside the seven-year window. They are treated as incurred on the April commencement date and deducted in full in the first period of the property business.</p>
 
 <h3>Example 2: mortgage interest during a void before the first tenant</h3>
 

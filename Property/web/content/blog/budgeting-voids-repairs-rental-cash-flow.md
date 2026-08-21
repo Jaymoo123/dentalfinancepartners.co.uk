@@ -73,7 +73,7 @@ imageCredit:
 
 <h3>Cost out a single void month</h3>
 
-<p>Add up every fixed cost the property carries with no tenant in it: mortgage, buildings insurance, council tax, utility standing charges, any service charge or ground rent, and management retainer. That monthly total, multiplied by your realistic void length, is the void figure your reserve has to cover. Remember the service charge point in particular, because if a charge was not built into the rent you cannot suddenly pass it to a tenant, and it comes straight out of your income.</p>
+<p>Add up every fixed cost the property carries with no tenant in it: mortgage, buildings insurance, council tax, utility standing charges, any service charge or ground rent, and management retainer. That monthly total, multiplied by your realistic void length, is the void figure your reserve has to cover. Remember the service charge point in particular, because if <a href="/blog/property-types-and-specialist-tax/service-charge-disputes-leaseholders">a service charge was not built into the rent</a> you cannot suddenly pass it to a tenant, and it comes straight out of your income.</p>
 
 <h3>Build a void fund (and pool it across a portfolio)</h3>
 

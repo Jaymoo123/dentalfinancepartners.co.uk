@@ -89,7 +89,7 @@ editorialNote: "MW3 Bucket C C20: live-pipeline status plus investment-impact pa
 
 <p>LRGRA 2022 is in force from 30 June 2022 (residential long leases) and from 1 April 2023 (retirement homes). It bans monetary ground rent on most new long residential leases (more than 21 years); the permitted ground rent is a peppercorn. The penalty for breach runs from £500 to £30,000 per breach.</p>
 
-<p>The Act does NOT apply to leases granted before 30 June 2022, so contractual ground rent on pre-2022 leases continues. If you hold the freehold of a pre-2022 leasehold block you still receive that contractual ground rent income, and the forthcoming Bill is expected to extend reform to those existing leases.</p>
+<p>The Act does NOT apply to leases granted before 30 June 2022, so <a href="/blog/property-types-and-specialist-tax/ground-rent-rules-uk">contractual ground rent on pre-2022 leases continues</a>. If you hold the freehold of a pre-2022 leasehold block you still receive that contractual ground rent income, and the forthcoming Bill is expected to extend reform to those existing leases.</p>
 
 <h3>Building Safety Act 2022 Sch 8 leaseholder protections</h3>
 
@@ -127,7 +127,7 @@ editorialNote: "MW3 Bucket C C20: live-pipeline status plus investment-impact pa
   <li><strong>Forfeiture reform.</strong> Substantial reform or abolition of the forfeiture remedy for residential leasehold breaches. Law Commission 2006 and 2020 reports both recommended this; the precise mechanism is not yet determined.</li>
   <li><strong>Ground-rent reform for existing leases.</strong> Consultation outcome pending. Options include a cap (such as £250 per year), a buyout mechanism or phased reduction.</li>
   <li><strong>Commonhold conversion pathway.</strong> A workable mechanism for existing leasehold blocks to convert to commonhold tenure (the operational reset on the CLRA 2002 Part 1 framework that has not delivered conversions at scale).</li>
-  <li><strong>Right-to-manage simplification.</strong> Lower RTM qualifying thresholds plus simpler claim procedures.</li>
+  <li><strong>Right-to-manage simplification.</strong> Lower <a href="/blog/property-types-and-specialist-tax/right-to-manage-explained">RTM qualifying thresholds</a> plus simpler claim procedures.</li>
 </ol>
 
 <p>Every one of these six sits at the WHITE PAPER stage and nowhere further. Do not let the planning collapse the distinction between proposed (in the White Paper), drafted (in a Bill that has not yet been introduced), enacted (Royal Assent received) and in force (commencement order made). The Bill could change any component substantially during its parliamentary passage; the White Paper is not the final shape of any reform.</p>

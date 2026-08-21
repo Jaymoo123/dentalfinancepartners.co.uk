@@ -112,7 +112,7 @@ faqs:
 <li><strong>The completion statement and SDLT (or LBTT/LTT) certificate</strong> from purchase. Without it, the base cost on a future sale is open to challenge and the gain can be overstated.</li>
 <li><strong>Dated photographs</strong> taken before and after work. A photograph is what separates a deductible repair from a capital improvement when the description on an invoice is ambiguous.</li>
 <li><strong>Mileage logs</strong> for property visits, with dates, destinations and purpose. Travel claimed without a contemporaneous log is routinely disallowed.</li>
-<li><strong>Safety and compliance certificates</strong>: gas safety, EICR electrical reports, EPC, and HMO fire-safety records. These prove both the expense and that the property was lawfully let.</li>
+<li><strong>Safety and compliance certificates</strong>: gas safety, <a href="/blog/landlord-tax-essentials/landlord-electrical-safety-certificate">EICR electrical reports</a>, EPC, and HMO fire-safety records. These prove both the expense and that the property was lawfully let.</li>
 <li><strong>Deposit-protection scheme records</strong> and prescribed-information confirmations, which matter for both tax and possession.</li>
 </ul>
 

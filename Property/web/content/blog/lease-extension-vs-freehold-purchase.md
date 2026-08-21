@@ -26,7 +26,7 @@ faqs:
   - question: "What is the SDLT treatment of a statutory lease extension under LRHUDA 1993?"
     answer: "FA 2003 Schedule 17A paragraph 9 (surrender-and-regrant). The new lease is a chargeable land transaction; the chargeable consideration is the premium paid plus the net present value of any rent under the new lease (peppercorn = nil NPV). Para 9 overlap-relief reduces the new-lease rent for the overlap period by the old-lease rent for the same period; with peppercorn rents the credit is operationally invisible. If the leaseholder already owns another residential property and the premium is at least £40,000, the 5% additional-dwellings surcharge under FA 2003 Schedule 4ZA applies."
   - question: "What is the SDLT treatment of collective enfranchisement?"
-    answer: "FA 2003 section 74 'Exercise of collective rights by tenants of flats' provides a special calculation. The total consideration is divided by the number of qualifying flats to derive a per-flat fraction; standard SDLT rates apply to that per-flat fraction; the resulting tax is then multiplied back up by the number of flats. The per-flat fraction frequently falls below the £250,000 nil-rate band, producing materially less SDLT than applying full rates to the aggregate price. The Schedule 4A 17% flat rate may apply if the per-flat fraction exceeds £500,000 and a corporate envelope structure is in use."
+    answer: "FA 2003 section 74 'Exercise of collective rights by tenants of flats' provides a special calculation. The total consideration is divided by the number of qualifying flats to derive a per-flat fraction; standard SDLT rates apply to that per-flat fraction; the resulting tax is then multiplied back up by the number of flats. The per-flat fraction frequently falls inside the £125,000 nil-rate band or the 2% band just above it, producing materially less SDLT than applying full rates to the aggregate price. The Schedule 4A 17% flat rate may apply if the per-flat fraction exceeds £500,000 and a corporate envelope structure is in use."
   - question: "What is the cost-and-process timeline for each route?"
     answer: "Individual lease extension under LRHUDA 1993 Chapter II: 6-12 months. Collective enfranchisement under LRHUDA 1993 Chapter I: 9-18 months (longer because of the neighbour-coordination phase and the larger valuation negotiation). House enfranchisement under LRA 1967: 6-12 months. Both routes start with a formal initial notice (LRA 1967 s.5 or LRHUDA 1993 s.13 / s.42), a landlord counter-notice, valuation negotiation, and a First-tier Tribunal (Property Chamber) determination if the parties do not agree. The leaseholder pays the freeholder's reasonable legal and valuation costs in addition to the premium, capped under the post-LFRA-2024 costs framework, plus their own legal and valuation costs. All-in cost loading is typically 1.3-1.8 times the headline premium."
   - question: "When does extension typically beat freehold acquisition?"
@@ -114,11 +114,11 @@ reviewedAt: "2026-05-26"
 
 <h3>House enfranchisement under LRA 1967</h3>
 
-<p>A standard residential SDLT charge on the freehold purchase consideration. Slice rates apply (0% to £250,000, 5% to £925,000, 10% to £1.5m, 12% above) plus the 5% additional-dwellings surcharge under Schedule 4ZA if the buyer already owns another residential property.</p>
+<p>A standard residential SDLT charge on the freehold purchase consideration. Slice rates apply (0% to £125,000, 2% to £250,000, 5% to £925,000, 10% to £1.5m, 12% above) plus the 5% additional-dwellings surcharge under Schedule 4ZA if the buyer already owns another residential property.</p>
 
 <h3>Collective enfranchisement under LRHUDA 1993 Chapter I</h3>
 
-<p>The special calculation under <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/74" rel="nofollow noopener" target="_blank">FA 2003 section 74</a>: total consideration divided by the number of qualifying flats to derive a per-flat fraction; standard residential SDLT rates applied to the per-flat fraction; the resulting tax multiplied back up by the number of flats. The mechanic typically delivers materially less SDLT than applying full rates to the aggregate consideration because the per-flat fraction often falls inside the £250,000 nil-rate band. The Schedule 4A 17% flat rate may apply where the per-flat fraction exceeds £500,000 and a corporate envelope is in use.</p>
+<p>The special calculation under <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/74" rel="nofollow noopener" target="_blank">FA 2003 section 74</a>: total consideration divided by the number of qualifying flats to derive a per-flat fraction; standard residential SDLT rates applied to the per-flat fraction; the resulting tax multiplied back up by the number of flats. The mechanic typically delivers materially less SDLT than applying full rates to the aggregate consideration because the per-flat fraction often falls inside the £125,000 nil-rate band or the 2% band just above it. The Schedule 4A 17% flat rate may apply where the per-flat fraction exceeds £500,000 and a corporate envelope is in use.</p>
 
 <h2>Three worked examples</h2>
 
@@ -127,7 +127,7 @@ reviewedAt: "2026-05-26"
 <p>Leasehold flat, 75-year residual lease, peppercorn ground rent. Leaseholder owns no other property. Statutory extension premium £55,000, including marriage value (75 years is below the 80-year boundary, and the LFRA 2024 abolition of marriage value is not yet in force).</p>
 
 <ul>
-<li>SDLT chargeable consideration: £55,000 premium plus nil NPV of peppercorn rent. Slice rates: £55,000 falls inside the £250,000 nil-rate band. No HRAD surcharge (only residential property the leaseholder owns).</li>
+<li>SDLT chargeable consideration: £55,000 premium plus nil NPV of peppercorn rent. Slice rates: £55,000 falls inside the £125,000 nil-rate band. No HRAD surcharge (only residential property the leaseholder owns).</li>
 <li>SDLT: nil.</li>
 <li>All-in cost: roughly £70,000 with legal and valuation costs.</li>
 </ul>
@@ -148,9 +148,9 @@ reviewedAt: "2026-05-26"
 
 <ul>
 <li>Per-flat fraction: £1,200,000 / 8 = £150,000.</li>
-<li>Standard residential SDLT on £150,000: nil (inside the £250,000 nil-rate band).</li>
-<li>Tax multiplied back up by 8: nil multiplied by 8 = nil.</li>
-<li>SDLT: nil.</li>
+<li>Standard residential SDLT on £150,000: £500 (nil on the first £125,000, 2% on the remaining £25,000).</li>
+<li>Tax multiplied back up by 8: £500 multiplied by 8 = £4,000.</li>
+<li>SDLT: £4,000.</li>
 <li>By contrast, applying standard residential rates to the aggregate £1,200,000 (without s.74) would have produced approximately £63,750 of SDLT.</li>
 </ul>
 
@@ -193,7 +193,7 @@ reviewedAt: "2026-05-26"
 <tr><td>Building type</td><td>Flat with weak neighbour coordination</td><td>Flat with strong neighbour coordination; any house</td></tr>
 <tr><td>Planning horizon</td><td>20-50 years (peppercorn term solves the lender and ground-rent problem)</td><td>Indefinite (governance and ground-rent extinction)</td></tr>
 <tr><td>Management appetite</td><td>Leaseholder prefers landlord-managed</td><td>Leaseholder wants self-governance</td></tr>
-<tr><td>SDLT efficiency</td><td>Small premium (most premiums under £250,000)</td><td>Collective enfranchisement with s.74 per-flat fraction often nil</td></tr>
+<tr><td>SDLT efficiency</td><td>Small premium (most premiums under £125,000)</td><td>Collective enfranchisement with s.74 per-flat fraction often minimal</td></tr>
 <tr><td>Hope-value capture</td><td>Not available</td><td>Available (future scheme variations on the freehold)</td></tr>
 <tr><td>Coordination cost</td><td>Unilateral; low</td><td>Group coordination required; meaningful</td></tr>
 </tbody>

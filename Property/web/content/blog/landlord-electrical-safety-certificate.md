@@ -41,7 +41,7 @@ faqs:
 dateModified: "2026-08-15"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-08-15"
+reviewedAt: "2026-08-21"
 ---
 
 <p>If you let residential property in England, the law requires you to have the fixed electrical installation inspected and tested by a qualified person at least every 5 years, to hold the written report that inspection produces, to give that report to your tenants and the council within fixed deadlines, and to complete any remedial work the report requires within 28 days. Those duties come from the <a href="https://www.legislation.gov.uk/uksi/2020/312/regulation/3">Electrical Safety Standards in the Private Rented Sector and Social Rented Sector (England) Regulations 2020</a>, and since 1 November 2025 the penalty for breaching any one of them is up to £40,000 per breach, raised from the original £30,000 cap.</p>

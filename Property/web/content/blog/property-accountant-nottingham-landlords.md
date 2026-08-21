@@ -64,7 +64,7 @@ faqs:
 
 <h2>Nottingham City Council Selective Licensing</h2>
 
-<p>Selective licensing under Part 3 of the Housing Act 2004 was originally introduced across most of Nottingham in 2018 and renewed for a further five years from 1 December 2023. The renewal covers most non-mandatory and non-additional-HMO private rented properties in the following wards (subject to specific exemptions for purpose-built student accommodation, registered providers, and HMOs covered by mandatory or additional HMO licensing):</p>
+<p><a href="/blog/landlord-tax-essentials/landlord-licensing-explained">Selective licensing under Part 3 of the Housing Act 2004</a> was originally introduced across most of Nottingham in 2018 and renewed for a further five years from 1 December 2023. The renewal covers most non-mandatory and non-additional-HMO private rented properties in the following wards (subject to specific exemptions for purpose-built student accommodation, registered providers, and HMOs covered by mandatory or additional HMO licensing):</p>
 
 <ul>
 <li>Arboretum</li>

@@ -151,7 +151,7 @@ editorialNote: "Written to the enacted Renters' Rights Act 2025, verified agains
 <li>Repair obligations: section 11 Landlord and Tenant Act 1985 (structure, exterior, sanitary fittings, gas and electrical installations, heating and hot water). The Decent Homes Standard extension (Part 3 RRA 2025) sits on top; the underlying section 11 LTA 1985 obligations remain.</li>
 <li>Gas safety: annual record by Gas Safe registered engineer (Gas Safety (Installation and Use) Regulations 1998).</li>
 <li>EICR: 5-yearly Electrical Installation Condition Report (Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020).</li>
-<li>EPC: valid EPC at start of tenancy; minimum E for new tenancies and renewals (MEES Regulations 2015).</li>
+<li>EPC: valid EPC at start of tenancy; <a href="/blog/landlord-tax-essentials/mees-regulations-landlords">minimum E for new tenancies and renewals</a> (MEES Regulations 2015).</li>
 <li>Smoke and carbon monoxide alarms: every floor (smoke) and every room with a fixed combustion appliance (CO) (Smoke and Carbon Monoxide Alarm (Amendment) Regulations 2022).</li>
 <li>Right to Rent: checks on all adult occupants (Immigration Act 2014).</li>
 <li>Subletting and assignment: landlord consent not to be unreasonably withheld where the contractual clause is qualified (section 19 Landlord and Tenant Act 1927).</li>

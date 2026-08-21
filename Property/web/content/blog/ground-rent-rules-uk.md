@@ -43,7 +43,7 @@ faqs:
 dateModified: "2026-08-15"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-08-15"
+reviewedAt: "2026-08-21"
 ---
 
 <p>Ask what the ground rent rules are in the UK and you will get three different answers, all of them correct for somebody. A friend who bought a new-build flat in 2023 pays nothing. Your own 2007 lease started at £295 a year and doubles it every decade. And the news keeps reporting a £250 cap that, when you check your demand, has made no difference at all. None of these people is wrong about their own position. The confusion comes from treating three separate legal states as one, and almost all of the bad information online does exactly that.</p>

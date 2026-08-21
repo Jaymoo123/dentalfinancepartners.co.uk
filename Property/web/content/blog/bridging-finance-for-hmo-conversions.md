@@ -59,7 +59,7 @@ faqs:
 <p>Get this wrong and the consequences are severe. If you buy in an Article 4 area assuming permitted development, complete a bridge, and then cannot obtain planning permission, you own a house you cannot lawfully run as the HMO your figures depend on, with a short-term loan against it. The planning position is due diligence you do before you exchange, not after you draw the bridge.</p>
 
 <h2>HMO licensing: mandatory, additional and selective</h2>
-<p>Planning permission tells you whether the HMO can exist. Licensing tells you whether you can legally let it, and it is a separate consent under the Housing Act 2004. There are three layers:</p>
+<p>Planning permission tells you whether the HMO can exist. <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">Licensing tells you whether you can legally let it</a>, and it is a separate consent under the Housing Act 2004. There are three layers:</p>
 <ul>
 <li><strong>Mandatory licensing:</strong> applies nationwide to any HMO occupied by <strong>five or more people</strong> forming two or more households who share amenities. This threshold is fixed by statute and is not a local choice.</li>
 <li><strong>Additional licensing:</strong> a discretionary scheme a council can apply to smaller HMOs (for example three and four person HMOs) in a designated area.</li>

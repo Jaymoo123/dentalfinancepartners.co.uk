@@ -93,7 +93,7 @@ reviewedAt: "2026-05-26"
 
 <p>The 5% additional-dwellings surcharge under <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA" rel="nofollow noopener" target="_blank">FA 2003 Schedule 4ZA</a> applies to premiums of £40,000 or more where the leaseholder already owns another residential property at the effective date.</p>
 
-<p>Worked example. London zone-2 leasehold flat, 70-year residual lease, peppercorn rent, leaseholder owns no other property. Statutory Chapter II extension premium £80,000, including marriage value (70 years is below the 80-year boundary; LFRA 2024 abolishes marriage value but that provision is not yet in force, so a claim made today still pays it). SDLT chargeable consideration: £80,000 premium plus nil NPV of peppercorn rent under the new lease. Para 9 overlap-relief credit: nil (peppercorn × overlap = nil). Slice rates on £80,000 of residential consideration: inside the £250,000 nil-rate band. No HRAD (only residential property the leaseholder owns). SDLT: nil.</p>
+<p>Worked example. London zone-2 leasehold flat, 70-year residual lease, peppercorn rent, leaseholder owns no other property. Statutory Chapter II extension premium £80,000, including marriage value (70 years is below the 80-year boundary; LFRA 2024 abolishes marriage value but that provision is not yet in force, so a claim made today still pays it). SDLT chargeable consideration: £80,000 premium plus nil NPV of peppercorn rent under the new lease. Para 9 overlap-relief credit: nil (peppercorn × overlap = nil). Slice rates on £80,000 of residential consideration: inside the £125,000 nil-rate band. No HRAD (only residential property the leaseholder owns). SDLT: nil.</p>
 
 <h2>The doctrine applied to a statutory lease extension under LRA 1967</h2>
 

@@ -108,7 +108,7 @@ faqs:
 
 <h2>The LFRA 2024 Amendments: SI 2024/1018</h2>
 
-<p>The Leasehold and Freehold Reform Act 2024 (c. 22) commenced via The Leasehold and Freehold Reform Act 2024 (Commencement No. 1 and Transitional Provision) Regulations 2024 (SI 2024/1018) on 31 October 2024. Several Sch 8 amendments took effect on that date:</p>
+<p><a href="/blog/property-types-and-specialist-tax/leasehold-reform-act-2024-what-is-in-force">The Leasehold and Freehold Reform Act 2024</a> (c. 22) commenced via The Leasehold and Freehold Reform Act 2024 (Commencement No. 1 and Transitional Provision) Regulations 2024 (SI 2024/1018) on 31 October 2024. Several Sch 8 amendments took effect on that date:</p>
 
 <ul>
 <li><strong>Shared-ownership qualifying-lease clarification.</strong> Shared-ownership leases (where the leaseholder owns a proportion of the lease and the housing association owns the remainder) now qualify for Sch 8 protections on the leaseholder's proportion, with the freeholder/housing-association responsible for the proportion they retain.</li>

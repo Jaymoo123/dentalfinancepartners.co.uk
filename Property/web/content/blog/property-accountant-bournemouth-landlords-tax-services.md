@@ -108,7 +108,7 @@ faqs:
 
 <h2>BCP HMO Licensing and the Tax Treatment</h2>
 
-<p>BCP Council operates three layers of HMO regulation:</p>
+<p>Alongside <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">the licensing rules that apply to landlords generally</a>, BCP Council operates three layers of HMO regulation:</p>
 
 <ul>
 <li><strong>Mandatory HMO licensing</strong> (national): five or more occupiers in two or more households. Application fee around £900-£1,100 in BCP for the typical 5-bed.</li>

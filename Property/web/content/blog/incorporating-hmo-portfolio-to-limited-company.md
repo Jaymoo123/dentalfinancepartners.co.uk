@@ -113,7 +113,7 @@ editorialNote: "HMO-specific incorporation guide written from operational experi
 
 <p>The standard sequencing answer is: apply for the new licence in the company's name before completing the property transfer, and only complete the transfer once the licence has been issued. Some councils allow operating under evidence of application; others do not. The local authority's stance has to be confirmed in writing before the transfer date is set. Mortgage drawdown is usually conditional on the licence being in place at completion, which feeds back into the lender timetable.</p>
 
-<p>Additional and selective licensing schemes (covering smaller HMOs and all rented property in designated areas respectively) follow the same principle but with scheme-specific application processes and fees. A portfolio of three HMOs spread across three different councils may have three different licensing positions to navigate in parallel.</p>
+<p><a href="/blog/landlord-tax-essentials/landlord-licensing-explained">Additional and selective licensing schemes</a> (covering smaller HMOs and all rented property in designated areas respectively) follow the same principle but with scheme-specific application processes and fees. A portfolio of three HMOs spread across three different councils may have three different licensing positions to navigate in parallel.</p>
 
 <aside><p>Sequencing a multi-HMO incorporation?</p><p>The single biggest risk is the licence-transfer gap, where the company has taken legal title but the licence is still in the individual's name. The fix is calendar-led sequencing; the cost of getting it wrong is criminal. Use the form at the bottom of this page if you want a sequencing review.</p></aside>
 

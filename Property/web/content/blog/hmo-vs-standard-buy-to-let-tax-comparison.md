@@ -119,7 +119,7 @@ faqs:
 
 <h2>Licensing and Compliance: The HMO Burden</h2>
 
-<p>Standard BTLs typically require gas safety certification (annual), EICR (every 5 years), EPC (every 10 years), and selective licensing only where the local authority operates a scheme. HMOs add mandatory licensing for any HMO with 5+ occupants forming 2+ households, additional licensing in defined areas, more rigorous fire safety requirements, and often planning consent if the property sits inside an Article 4 zone.</p>
+<p>Standard BTLs typically require gas safety certification (annual), EICR (every 5 years), EPC (every 10 years), and, in areas where the local authority operates a scheme, <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">selective licensing of ordinary lets</a>. HMOs add mandatory licensing for any HMO with 5+ occupants forming 2+ households, additional licensing in defined areas, more rigorous fire safety requirements, and often planning consent if the property sits inside an Article 4 zone.</p>
 
 <p>On the tax side, all licensing fees, safety certificates, professional management, and ongoing compliance costs are revenue expenses deductible against rental income under the wholly-and-exclusively rule. The compliance burden is heavier in cash terms but tax-effective overall. Initial conversion works (additional bathrooms, fire doors, structural changes) are capital expenditure and add to base cost for eventual CGT rather than reducing this year's tax bill.</p>
 

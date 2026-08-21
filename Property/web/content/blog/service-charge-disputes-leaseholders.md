@@ -43,7 +43,7 @@ faqs:
 dateModified: "2026-08-15"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-08-15"
+reviewedAt: "2026-08-21"
 ---
 
 <p>A service charge demand lands and the number is bigger than last year, bigger than the budget, or simply unexplained. Before you pay it, argue about it or ignore it, it helps to know that residential leaseholders in England hold a specific set of statutory rights, most of them in the <a href="https://www.legislation.gov.uk/ukpga/1985/70/contents">Landlord and Tenant Act 1985</a>, that control what your landlord can charge, when they must consult you first, how late a demand can arrive, and what paperwork you can force them to show you. Here is the toolkit at a glance:</p>

@@ -123,7 +123,7 @@ faqs:
 
 <h3>MEES Energy-Efficiency Improvements</h3>
 
-<p>Most improvements (insulation, double glazing, heat-pump installation, structural improvements for thermal performance) are capital expenditure adding to the CGT base cost under TCGA 1992 s.38(1)(b). Like-for-like maintenance is revenue. Grant receipts (ECO4, BUS, GBIS, HUG2) reduce the CGT base-cost addition; grants are not income. The 0% VAT rate on energy-saving materials (in force April 2022 to March 2027) reduces gross costs significantly.</p>
+<p>Most improvements made to meet <a href="/blog/landlord-tax-essentials/mees-regulations-landlords">the MEES minimum energy efficiency standard</a> (insulation, double glazing, heat-pump installation, structural improvements for thermal performance) are capital expenditure adding to the CGT base cost under TCGA 1992 s.38(1)(b). Like-for-like maintenance is revenue. Grant receipts (ECO4, BUS, GBIS, HUG2) reduce the CGT base-cost addition; grants are not income. The 0% VAT rate on energy-saving materials (in force April 2022 to March 2027) reduces gross costs significantly.</p>
 
 <h3>BSA 2022 Building-Safety Remediation</h3>
 

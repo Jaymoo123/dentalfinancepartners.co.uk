@@ -108,7 +108,7 @@ editorialNote: "MW3 Bucket C C13: cross-jurisdictional England-Wales BTL decisio
 
 <p>Mandatory HMO licensing under Housing Act 2004 Part 2 applies UK-wide where the property is occupied by 5 or more unrelated occupants forming 2 or more households and sharing basic amenities. That Part 2 floor is the same in Plymouth and Cardiff.</p>
 
-<p>On the Plymouth side, selected wards can add additional HMO licensing under Housing Act 2004 s.56, capturing smaller HMOs below the 5+/2+ Part 2 threshold. Check Plymouth City Council's additional HMO licensing designation orders against your specific property.</p>
+<p>On the Plymouth side, selected wards can add <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">additional HMO licensing under Housing Act 2004 s.56</a>, capturing smaller HMOs below the 5+/2+ Part 2 threshold. Check Plymouth City Council's additional HMO licensing designation orders against your specific property.</p>
 
 <p>On the Cardiff side, Article 4 directions in Plasnewydd, Cathays, and Roath remove the permitted-development right to convert a Class C3 dwelling-house to a Class C4 small HMO without planning permission. In those wards, turning a single-let into an HMO means a planning application, with the cost, delay, and refusal risk that brings. The student-let market in Cathays and Plasnewydd is shaped by these directions, so if you are eyeing an HMO conversion in the catchment, price in the planning step before you assume those HMO yields are yours to take.</p>
 

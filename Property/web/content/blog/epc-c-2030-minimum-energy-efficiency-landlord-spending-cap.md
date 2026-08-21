@@ -121,7 +121,7 @@ faqs:
 
 <h2>Compliance Posture for the Enacted Current State</h2>
 
-<p>For each property in a rental portfolio, the compliance position should be assessed against the EPC E floor:</p>
+<p>For each property in a rental portfolio, the compliance position should be assessed against the EPC E floor set by <a href="/blog/landlord-tax-essentials/mees-regulations-landlords">how the MEES regulations apply to landlords</a>:</p>
 
 <ol>
 <li><strong>Pull the current EPC.</strong> Check the EPC register (gov.uk/find-energy-certificate). If the current EPC is more than 5 years old, consider a refresh for accuracy.</li>

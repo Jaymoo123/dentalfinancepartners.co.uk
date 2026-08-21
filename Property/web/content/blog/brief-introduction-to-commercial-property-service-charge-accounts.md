@@ -175,7 +175,7 @@ editorialNote: "MW3 Bucket C C12: landlord-side orientation hub for commercial p
 
 <h2>Dispute Resolution</h2>
 
-<p>Unlike residential (where the First-tier Tribunal Property Chamber has dedicated service-charge jurisdiction under LTA 1985 s.27A), commercial service-charge disputes are resolved through:</p>
+<p>Unlike a <a href="/blog/property-types-and-specialist-tax/service-charge-disputes-leaseholders">residential service-charge dispute</a> (where the First-tier Tribunal Property Chamber has dedicated jurisdiction under LTA 1985 s.27A), commercial service-charge disputes are resolved through:</p>
 
 <ul>
   <li>Contractual mechanisms in the lease (typically dispute resolution clauses with expert determination or arbitration).</li>

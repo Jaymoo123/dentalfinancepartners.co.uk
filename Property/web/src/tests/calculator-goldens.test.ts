@@ -630,16 +630,16 @@ describe("GOLDEN: lease-extension-premium-calculator (defaults, 82 years)", () =
     expect(row?.value).toBe("£13,844");
   });
 
-  // Fee stack is pinned to content/blog/lease-extension-cost-uk.md.
-  it("fee stack = £2,600 to £4,400", () => {
+  // Fee stack is pinned to content/blog/lease-extension-cost-uk.md (harmonised set, ex VAT).
+  it("fee stack = £2,750 to £4,700", () => {
     const row = result.rows?.find((r) => r.label.startsWith("Professional fees"));
-    expect(row?.value).toBe("£2,600 to £4,400");
+    expect(row?.value).toBe("£2,750 to £4,700");
   });
 
-  // all-in = 6099.87 + 2600 = 8699.87 -> £8,700; 9149.81 + 4400 = 13549.81 -> £13,550
+  // all-in = 6099.87 + 2750 = 8849.87 -> £8,850; 9149.81 + 4700 = 13849.81 -> £13,850
   it("all-in range adds the fee stack", () => {
     const row = result.rows?.find((r) => r.label.startsWith("Indicative all-in"));
-    expect(row?.value).toBe("£8,700 to £13,550");
+    expect(row?.value).toBe("£8,850 to £13,850");
   });
 
   it("note carries the not-in-force discipline and the consultation date", () => {

@@ -150,7 +150,7 @@ editorialNote: "Decision-helper / pros-and-cons framing page for HMO incorporati
 
 <h3>6. HMO licence transfer (Housing Act 2004 Part 2)</h3>
 
-<p>The HMO licence is held by the landlord; on transfer to a LtdCo, the LtdCo must apply for a new licence in its own name (or seek transfer of existing; local authority practice varies). Cost: licence fees £500 to £1,500 per HMO per 5-year cycle plus administrative time. Risk during transfer: running an unlicensed HMO is an offence under Housing Act 2004 s.72 with rent-repayment-order exposure under Housing and Planning Act 2016 ss.40 to 45 (tenant can recover up to 12 months' rent). Operational discipline required to time the licence transfer with the SDLT, lender, and accounting steps.</p>
+<p>The HMO licence is held by the landlord; on transfer to a LtdCo, the LtdCo must <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">apply for a new licence in its own name</a> (or seek transfer of existing; local authority practice varies). Cost: licence fees £500 to £1,500 per HMO per 5-year cycle plus administrative time. Risk during transfer: running an unlicensed HMO is an offence under Housing Act 2004 s.72 with rent-repayment-order exposure under Housing and Planning Act 2016 ss.40 to 45 (tenant can recover up to 12 months' rent). Operational discipline required to time the licence transfer with the SDLT, lender, and accounting steps.</p>
 
 <h3>7. Annual filing overhead</h3>
 
