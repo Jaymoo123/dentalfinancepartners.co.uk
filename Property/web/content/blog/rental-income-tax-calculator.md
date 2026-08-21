@@ -1,5 +1,5 @@
 ---
-title: "Rental Income Tax Calculator: Work Out Your Tax"
+title: "How to Work Out Tax on Rental Income, Step by Step"
 slug: "rental-income-tax-calculator"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/rental-income-tax-calculator"
 date: "2026-04-01"
@@ -9,11 +9,11 @@ reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
 category: "Section 24 & Tax Relief"
-metaTitle: "Rental Income Tax Calculator UK: Work Out Your Tax"
+metaTitle: "How to Work Out Tax on Rental Income: Step by Step"
 metaDescription: "Work out your rental income tax step by step: allowable deductions, the Section 24 add-back, your tax band, and what the 2027/28 property rates change."
 altText: "UK landlord working out rental income tax with Section 24 mortgage interest figures on a laptop"
 image: ""
-h1: "Rental Income Tax Calculator: How to Work Out Your Tax"
+h1: "How to Work Out Tax on Your Rental Income, Step by Step"
 summary: "A step-by-step method to work out the tax on your rental income: net the right expenses, apply the Section 24 mortgage-interest add-back and 20% credit, stack the profit on your other income, and plan for the 2027/28 property-rate change and Making Tax Digital."
 schema: ""
 howToSteps:
@@ -56,7 +56,7 @@ faqs:
 
 <p>The phrase <strong>rental income tax calculator</strong> hides the part landlords actually get wrong. The arithmetic of "rent minus costs, taxed at your band" is simple. The traps are which costs count, the <a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24</a> mortgage-interest add-back that no spreadsheet does for you automatically, and how the profit stacks on your other income. Get those three right and the rest is addition.</p>
 
-<p>This guide walks the calculation in the order HMRC expects it, with a worked example, a tax-band table, the limited-company comparison landlords keep asking about, and what changes when the new property income rates take effect on 6 April 2027.</p>
+<p>If you want the number without the working, our <a href="/calculators/rental-income-tax-calculator">tax on rental income calculator</a> does the same calculation in a few fields. This guide walks the calculation in the order HMRC expects it, with a worked example, a tax-band table, the limited-company comparison landlords keep asking about, and what changes when the new property income rates take effect on 6 April 2027.</p>
 
 <h2>How to work out your rental income tax, step by step</h2>
 

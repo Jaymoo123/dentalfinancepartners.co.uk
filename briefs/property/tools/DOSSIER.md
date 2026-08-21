@@ -5,7 +5,19 @@ this file first and adds no scope that is not in it. Method: `docs/_engines/REWR
 §9. Predecessors: `briefs/property/sdlt/DOSSIER.md` (deployed 08-18), `briefs/property/cgt/DOSSIER.md`
 (batch cgt1, deploy parked).
 
-**Status: FROZEN 2026-08-21 (teardown + language spec inserted same day).**
+**Status: BATCH EXECUTED 2026-08-21, same day as freeze.** T1-T4 built/reframed by 3 Opus
+builders + 1 combined fix round off two-track QA (factual: 96 figures re-derived, 2 blockers
+fixed; editorial: 11 blockers incl. cross-tool templating, all fixed; reports in `qa/`).
+T4 gained a `cashInvested` field + cash-on-cash row (conductor addition, golden-pinned), so
+its ROI H1 is honest. Cannibalisation adjudication executed: the blog page
+`rental-income-tax-calculator.md` retitled to guide intent ("How to Work Out Tax on Rental
+Income, Step by Step") + one link to the tool; the tool page owns the calculator queries.
+Gates: goldens 158/158 within full suite 1,401/1,401, tsc clean, lint 763, links 0-hard,
+prod build green. NOT deployed (owner-gated; at deploy register the 4 tool URLs in
+monitored_pages via --page-urls + the retitled blog page, baselines per §8). T5 + the two
+GBP-deferred files execute after the ~09-15 Bing read per §9 delta list.
+Estate-wide nits parked, owner-visible: shared `gbp()` renders negatives as "£-50"
+(15+ sites surface); `advanced:true` flag inert on generic tools (renderer shows all fields).
 Owner rulings inherited from HANDOFF_2026-08-20 §2, recorded 2026-08-20, do not re-litigate:
 tools family GO NOW, explicitly ungated from the SDLT calculator experiment read (~09-01);
 honest framing mandatory (experiments with stated expectations, not promised wins; tool-SHAPE

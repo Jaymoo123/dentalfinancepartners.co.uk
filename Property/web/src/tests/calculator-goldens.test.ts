@@ -44,6 +44,7 @@ import { gbp, pct } from "../lib/calculators/format";
 import { rentalIncomeTaxCalculator } from "../lib/calculators/tools/rental-income-tax-calculator";
 import { rentalYieldCalculator } from "../lib/calculators/tools/rental-yield-calculator";
 import { buyToLetCashflowCalculator } from "../lib/calculators/tools/buy-to-let-cashflow-calculator";
+import { buyToLetMortgageCalculator } from "../lib/calculators/tools/buy-to-let-mortgage-calculator";
 import { rentARoomReliefCalculator } from "../lib/calculators/tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "../lib/calculators/tools/property-allowance-checker";
 import { leaseExtensionPremiumCalculator } from "../lib/calculators/tools/lease-extension-premium-calculator";
@@ -108,6 +109,7 @@ describe("registry contract (TL-01)", () => {
       "rental-income-tax-calculator",
       "rental-yield-calculator",
       "buy-to-let-cashflow-calculator",
+      "buy-to-let-mortgage-calculator",
       "lbtt-calculator-scotland",
       "ltt-calculator-wales",
       "first-time-buyer-stamp-duty-calculator",
@@ -243,30 +245,273 @@ describe("GOLDEN: rental-income-tax-calculator (defaults)", () => {
 });
 
 // ============================================================
-// 5. GOLDEN: Rental Yield (at defaults)
-// Defaults: propertyValue=250000, annualRent=15000, annualCosts=4000
+// 5. GOLDEN: Rental Yield
+//
+// Fields: propertyValue, monthlyRent, lettingAgentPct, maintenancePct,
+//         insurance, serviceCharge, mortgageInterest.
+// Defaults: 250000 / 1250pm / 10% / 10% / 300 / 0 / 0
+//
+// Every expected figure below is hand-derived in the comment above it.
+// Shape of the maths:
+//   annual rent = monthly x 12
+//   costs       = agent% of rent + maintenance% of rent + insurance + service charge
+//   gross yield = annual rent / value x 100
+//   net yield   = (annual rent - costs) / value x 100
 // ============================================================
-describe("GOLDEN: rental-yield-calculator (defaults)", () => {
+const yieldRow = (result: ReturnType<typeof rentalYieldCalculator.compute>, label: string) =>
+  result.rows?.find((r) => r.label === label)?.value;
+
+describe("GOLDEN: rental-yield-calculator (defaults, net case)", () => {
   const result = rentalYieldCalculator.compute(defaults(rentalYieldCalculator.fields) as V);
 
-  it("gross yield = 6.0%", () => {
-    // 15000 / 250000 = 6%
+  it("annual rent = 15000 (1250 x 12)", () => {
+    expect(yieldRow(result, "Annual rent")).toBe("£15,000");
+  });
+
+  it("gross yield = 6.0% (15000 / 250000 x 100 = 6)", () => {
     expect(result.headline.value).toBe("6.0%");
   });
 
-  it("net yield shown in sub", () => {
-    // net = (15000 - 4000) / 250000 = 11000/250000 = 4.4%
-    expect(result.headline.sub).toBe("Net yield 4.4%");
+  it("agent 10% = 1500 and maintenance 10% = 1500 (of 15000)", () => {
+    expect(yieldRow(result, "Letting agent at 10.0%")).toBe("−£1,500");
+    expect(yieldRow(result, "Maintenance at 10.0%")).toBe("−£1,500");
   });
 
-  it("net income = 11000", () => {
-    const row = result.rows?.find((r) => r.label === "Net income before tax");
-    expect(row?.value).toBe("£11,000");
+  it("total running costs = 3300 (1500 + 1500 + 300 insurance + 0 service)", () => {
+    expect(yieldRow(result, "Total running costs")).toBe("−£3,300");
   });
 
-  it("monthly net = 917", () => {
-    const row = result.rows?.find((r) => r.label === "Net income per month");
-    expect(row?.value).toBe("£917"); // 11000/12 = 916.67 → rounds to 917
+  it("net income = 11700 (15000 - 3300)", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£11,700");
+  });
+
+  it("net yield = 4.7% (11700 / 250000 x 100 = 4.68)", () => {
+    expect(result.headline.sub).toBe("Net yield 4.7%");
+  });
+
+  it("monthly net = 975 (11700 / 12)", () => {
+    expect(yieldRow(result, "Net income per month")).toBe("£975");
+  });
+
+  it("payback = 21.4 years (250000 / 11700 = 21.3675)", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("21.4 years");
+  });
+
+  it("zero service charge and zero mortgage interest suppress their rows", () => {
+    expect(yieldRow(result, "Service charge and ground rent")).toBeUndefined();
+    expect(yieldRow(result, "Mortgage interest")).toBeUndefined();
+    expect(yieldRow(result, "Net yield after mortgage interest")).toBeUndefined();
+  });
+
+  it("costs are 22% of rent, so no warn flag", () => {
+    // 3300 / 15000 = 0.22, under the 0.5 warn share
+    expect(result.headline.tone).toBe("default");
+  });
+
+  it("note carries no statute reference", () => {
+    expect(result.note).not.toMatch(/Section 24|Finance Act|HMRC/);
+  });
+});
+
+// Every cost field populated, plus the optional mortgage interest.
+// value 320000, rent 1600pm, agent 10%, maintenance 10%, insurance 350,
+// service charge 1400, mortgage interest 9000.
+//   annual rent = 1600 x 12                = 19,200
+//   agent       = 10% of 19,200            =  1,920
+//   maintenance = 10% of 19,200            =  1,920
+//   costs       = 1920 + 1920 + 350 + 1400 =  5,590
+//   net income  = 19,200 - 5,590           = 13,610
+//   gross       = 19,200 / 320,000 x 100   = 6.0%    (exact)
+//   net         = 13,610 / 320,000 x 100   = 4.2531% -> 4.3%
+//   after int.  = 13,610 - 9,000           =  4,610
+//   net-of-fin. =  4,610 / 320,000 x 100   = 1.4406% -> 1.4%
+//   payback     = 320,000 / 13,610         = 23.5121 -> 23.5 years
+describe("GOLDEN: rental-yield-calculator (all costs + mortgage interest)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 320_000,
+    monthlyRent: 1_600,
+    lettingAgentPct: 10,
+    maintenancePct: 10,
+    insurance: 350,
+    serviceCharge: 1_400,
+    mortgageInterest: 9_000,
+  } as V);
+
+  it("gross yield = 6.0%", () => {
+    expect(result.headline.value).toBe("6.0%");
+  });
+
+  it("service charge row appears when non-zero", () => {
+    expect(yieldRow(result, "Service charge and ground rent")).toBe("−£1,400");
+  });
+
+  it("total running costs = 5590", () => {
+    expect(yieldRow(result, "Total running costs")).toBe("−£5,590");
+  });
+
+  it("net income = 13610", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£13,610");
+  });
+
+  it("net yield = 4.3%", () => {
+    expect(result.headline.sub).toBe("Net yield 4.3%");
+  });
+
+  it("net income after mortgage interest = 4610", () => {
+    expect(yieldRow(result, "Net income after mortgage interest")).toBe("£4,610");
+  });
+
+  it("net yield after mortgage interest = 1.4%", () => {
+    expect(yieldRow(result, "Net yield after mortgage interest")).toBe("1.4%");
+  });
+
+  it("payback = 23.5 years", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("23.5 years");
+  });
+});
+
+// Zero-cost case: the gross-only reading a listing quotes, and the proof that
+// net collapses onto gross when nothing is deducted.
+// value 180000, rent 850pm, all cost fields 0.
+//   annual rent = 850 x 12               = 10,200
+//   gross = net = 10,200 / 180,000 x 100 = 5.6667% -> 5.7%
+//   payback     = 180,000 / 10,200       = 17.647 -> 17.6 years
+describe("GOLDEN: rental-yield-calculator (zero costs, net == gross)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 180_000,
+    monthlyRent: 850,
+    lettingAgentPct: 0,
+    maintenancePct: 0,
+    insurance: 0,
+    serviceCharge: 0,
+    mortgageInterest: 0,
+  } as V);
+
+  it("gross yield = 5.7%", () => {
+    expect(result.headline.value).toBe("5.7%");
+  });
+
+  it("net yield equals gross yield when no costs are entered", () => {
+    expect(result.headline.sub).toBe(`Net yield ${result.headline.value}`);
+  });
+
+  it("total running costs = 0", () => {
+    expect(yieldRow(result, "Total running costs")).toBe("−£0");
+  });
+
+  it("net income = annual rent = 10200", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£10,200");
+  });
+
+  it("payback = 17.6 years", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("17.6 years");
+  });
+});
+
+// Rounding edge: three different roundings in one case, none of them exact.
+// value 265000, rent 1100pm, agent 10%, maintenance 5%, insurance 250.
+//   annual rent = 1100 x 12                    = 13,200
+//   agent  = 10% of 13,200 = 1,320; maint = 5% =    660
+//   costs  = 1320 + 660 + 250                  =  2,230
+//   net    = 13,200 - 2,230                    = 10,970
+//   gross  = 13,200 / 265,000 x 100 = 4.98113% -> "5.0%"  (rounds UP past a whole number)
+//   net    = 10,970 / 265,000 x 100 = 4.13962% -> "4.1%"  (rounds DOWN)
+//   monthly= 10,970 / 12 = 914.1667            -> "£914"  (gbp rounds DOWN)
+//   payback= 265,000 / 10,970 = 24.15679       -> "24.2"  (toFixed rounds UP)
+describe("GOLDEN: rental-yield-calculator (rounding edge)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 265_000,
+    monthlyRent: 1_100,
+    lettingAgentPct: 10,
+    maintenancePct: 5,
+    insurance: 250,
+    serviceCharge: 0,
+    mortgageInterest: 0,
+  } as V);
+
+  it("gross 4.98113% displays as 5.0%, not 4.9%", () => {
+    expect(result.headline.value).toBe("5.0%");
+  });
+
+  it("net 4.13962% displays as 4.1%", () => {
+    expect(result.headline.sub).toBe("Net yield 4.1%");
+  });
+
+  it("monthly net 914.1667 displays as £914", () => {
+    expect(yieldRow(result, "Net income per month")).toBe("£914");
+  });
+
+  it("payback 24.15679 displays as 24.2 years", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("24.2 years");
+  });
+
+  it("maintenance label carries the rate to 1dp", () => {
+    expect(yieldRow(result, "Maintenance at 5.0%")).toBe("−£660");
+  });
+});
+
+// Warn tone: the ONLY thing the flag means is costs > half the rent, and the
+// note has to say so.
+// value 200000, rent 500pm, agent 15%, maintenance 15%, insurance 500, service 2000.
+//   annual rent = 6,000; agent = 900; maintenance = 900
+//   costs = 900 + 900 + 500 + 2000 = 4,300 = 71.7% of rent -> warn
+//   net   = 6,000 - 4,300 = 1,700
+//   net yield = 1,700 / 200,000 x 100 = 0.85% -> "0.9%"
+describe("GOLDEN: rental-yield-calculator (warn tone basis)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 200_000,
+    monthlyRent: 500,
+    lettingAgentPct: 15,
+    maintenancePct: 15,
+    insurance: 500,
+    serviceCharge: 2_000,
+    mortgageInterest: 0,
+  } as V);
+
+  it("costs of 4300 on 6000 rent trip the warn tone", () => {
+    expect(result.headline.tone).toBe("warn");
+  });
+
+  it("note states the basis for the flag", () => {
+    expect(result.note).toContain("more than half the rent");
+  });
+
+  it("net yield = 0.9% (0.85 rounded)", () => {
+    expect(result.headline.sub).toBe("Net yield 0.9%");
+  });
+
+  it("net income = 1700", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£1,700");
+  });
+});
+
+describe("rental-yield-calculator: no good-yield figure is asserted anywhere", () => {
+  // The "what is a good yield" data lives on the benchmarks blog post, which is
+  // frozen; this page must link it, never quote it.
+  const prose = [
+    rentalYieldCalculator.intro,
+    ...rentalYieldCalculator.explainer.paragraphs,
+    ...(rentalYieldCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+  ].join(" ");
+
+  it("no statute references in the prose", () => {
+    expect(prose).not.toMatch(/Section 24|Finance Act|HMRC|Royal Assent/);
+  });
+
+  it("no em-dashes or en-dashes in the prose", () => {
+    expect(prose).not.toMatch(/[–—]/);
+  });
+
+  it("links the benchmarks post rather than quoting it", () => {
+    const hrefs = (rentalYieldCalculator.related ?? []).map((r) => r.href);
+    expect(hrefs).toContain(
+      "/blog/portfolio-management/property-investment-benchmarks-uk-2026-good-yield",
+    );
+  });
+
+  it("carries worked examples and related links for the SSR blocks", () => {
+    expect(rentalYieldCalculator.workedExamples?.length).toBe(2);
+    expect(rentalYieldCalculator.related?.length).toBeGreaterThanOrEqual(4);
   });
 });
 
@@ -288,6 +533,31 @@ describe("GOLDEN: buy-to-let-cashflow-calculator (defaults)", () => {
   it("annual cashflow = 4200", () => {
     const row = result.rows?.find((r) => r.label === "Annual cashflow");
     expect(row?.value).toBe("£4,200");
+  });
+
+  it("cashInvested defaults to 0 so no ROI row (4 rows)", () => {
+    expect(result.rows?.length).toBe(4);
+    expect(result.rows?.some((r) => r.label.startsWith("Cash-on-cash"))).toBe(false);
+  });
+});
+
+describe("GOLDEN: buy-to-let-cashflow-calculator (cash invested)", () => {
+  // 1450 - 720 - 330 = 400/mo; annual 4,800; 4,800 / 75,000 = 0.064 -> "6.4%"
+  // Matches the tool's own second worked example.
+  const result = buyToLetCashflowCalculator.compute({
+    monthlyRent: 1_450,
+    monthlyMortgage: 720,
+    monthlyCosts: 330,
+    cashInvested: 75_000,
+  } as V);
+
+  it("cash-on-cash return row = 6.4%", () => {
+    const row = result.rows?.find((r) => r.label === "Cash-on-cash return, before tax");
+    expect(row?.value).toBe("6.4%");
+  });
+
+  it("still 5 rows with the ROI row appended", () => {
+    expect(result.rows?.length).toBe(5);
   });
 });
 
@@ -814,6 +1084,210 @@ describe("lease-extension-premium-calculator: house-bar checks", () => {
       defaults(leaseExtensionPremiumCalculator.fields) as V,
     );
     const copy = JSON.stringify(leaseExtensionPremiumCalculator) + JSON.stringify(result);
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+});
+
+// ============================================================
+// GOLDEN: Buy to Let Mortgage (T1 rework, 2026-08-21)
+//
+// Fields (5): propertyValue, deposit, annualRate, termYears, monthlyRent.
+// Defaults:   250000 / 62500 / 5.25% / 25 years / 1250pm
+//
+// The loan and the LTV are OUTPUTS now (they used to be the first input), and
+// interest-only + capital repayment are computed TOGETHER, not behind a select.
+//
+// Hand-derived, loan = 250,000 - 62,500 = 187,500, r = 0.0525/12 = 0.004375,
+// n = 300:
+//   LTV                = 187,500 / 250,000           = 75.0%
+//   deposit share      = 62,500 / 250,000            = 25.0%
+//   interest-only pm   = 187,500 x 0.0525 / 12       = 820.3125   -> £820
+//   repayment pm       = P r (1+r)^n / ((1+r)^n - 1) = 1,123.5895 -> £1,124
+//   extra pm           = 1,123.5895 - 820.3125       = 303.28     -> £303
+//   interest-only tot  = 820.3125 x 300              = 246,093.75 -> £246,094
+//   repayment total    = 1,123.5895 x 300            = 337,076.84 -> £337,077
+//   repayment interest = 337,076.84 - 187,500        = 149,576.84 -> £149,577
+//   rental cover       = 1,250 / 820.3125            = 152.38%    -> 152.4%
+//   rent for 125%      = 820.3125 x 1.25             = 1,025.39   -> £1,025
+//   rent for 145%      = 820.3125 x 1.45             = 1,189.45   -> £1,189
+// ============================================================
+const btlRow = (result: ReturnType<typeof buyToLetMortgageCalculator.compute>, startsWith: string) =>
+  result.rows?.find((r) => r.label.startsWith(startsWith))?.value;
+
+describe("GOLDEN: buy-to-let-mortgage-calculator (defaults)", () => {
+  const result = buyToLetMortgageCalculator.compute(defaults(buyToLetMortgageCalculator.fields) as V);
+
+  it("takes 5 inputs: price, deposit, rate, term, rent", () => {
+    expect(buyToLetMortgageCalculator.fields.map((f) => f.id)).toEqual([
+      "propertyValue",
+      "deposit",
+      "annualRate",
+      "termYears",
+      "monthlyRent",
+    ]);
+  });
+
+  it("loan = 187500 (price less deposit), an output not an input", () => {
+    expect(btlRow(result, "Loan amount")).toBe("£187,500");
+  });
+
+  it("LTV = 75.0% (187500 / 250000)", () => {
+    expect(btlRow(result, "Loan to value")).toBe("75.0%");
+  });
+
+  it("deposit share = 25.0% (62500 / 250000)", () => {
+    expect(btlRow(result, "Deposit as a share")).toBe("25.0%");
+  });
+
+  it("headline is the interest-only monthly payment = £820", () => {
+    expect(result.headline.label).toBe("Interest-only monthly payment");
+    expect(result.headline.value).toBe("£820");
+    expect(result.headline.tone).toBeUndefined(); // default tone
+  });
+
+  it("headline sub names the basis: loan, rate and the repayment alternative", () => {
+    expect(result.headline.sub).toContain("£187,500 borrowed at 5.25%");
+    expect(result.headline.sub).toContain("£1,124 a month");
+  });
+
+  it("interest-only and repayment are BOTH rows, side by side", () => {
+    expect(btlRow(result, "Interest-only,")).toBe("£820 a month");
+    expect(btlRow(result, "Capital repayment over 25 years")).toBe("£1,124 a month");
+    expect(btlRow(result, "Extra each month")).toBe("£303");
+  });
+
+  it("total cost over the term is shown for both bases", () => {
+    expect(btlRow(result, "Total paid over 25 years, interest-only")).toBe("£246,094");
+    expect(btlRow(result, "Still owed at the end")).toBe("£187,500");
+    expect(btlRow(result, "Total paid over 25 years, capital repayment")).toBe("£337,077");
+    expect(btlRow(result, "Interest paid over 25 years")).toBe("£149,577");
+  });
+
+  it("cross-check: repayment total less the loan equals the interest shown", () => {
+    // 337,076.84 - 187,500 = 149,576.84, and both round to the pinned figures.
+    expect(Math.round(337_076.84 - 187_500)).toBe(149_577);
+    // Interest-only over the term is cheaper by less than the capital it never repays.
+    expect(337_077 - 246_094).toBeLessThan(187_500);
+  });
+
+  it("rent drives the cover rows at 125% and 145%", () => {
+    expect(btlRow(result, "Rental cover")).toBe("152.4%");
+    expect(btlRow(result, "Rent needed for 125%")).toBe("£1,025 a month");
+    expect(btlRow(result, "Rent needed for 145%")).toBe("£1,189 a month");
+  });
+
+  it("note keeps the rate honest and points at the stress test", () => {
+    expect(result.note).toContain("not a live quote");
+    expect(result.note).toContain("stress");
+    expect(result.note).toContain("not a quote or an offer of finance");
+  });
+});
+
+describe("GOLDEN: buy-to-let-mortgage-calculator (no rent entered)", () => {
+  const result = buyToLetMortgageCalculator.compute({
+    propertyValue: 250_000,
+    deposit: 62_500,
+    annualRate: 5.25,
+    termYears: 25,
+    monthlyRent: 0,
+  } as V);
+
+  it("drops all three cover rows when rent is 0", () => {
+    expect(result.rows?.length).toBe(10);
+    expect(result.rows?.some((r) => r.label.startsWith("Rental cover"))).toBe(false);
+    expect(result.rows?.some((r) => r.label.startsWith("Rent needed"))).toBe(false);
+  });
+
+  it("the mortgage figures are unaffected by the missing rent", () => {
+    expect(result.headline.value).toBe("£820");
+    expect(btlRow(result, "Capital repayment over 25 years")).toBe("£1,124 a month");
+  });
+});
+
+describe("GOLDEN: buy-to-let-mortgage-calculator (LTV maths)", () => {
+  const at = (deposit: number) =>
+    buyToLetMortgageCalculator.compute({
+      propertyValue: 250_000,
+      deposit,
+      annualRate: 5.25,
+      termYears: 25,
+      monthlyRent: 1_250,
+    } as V);
+
+  // 40% deposit: loan = 150,000, LTV = 60.0%
+  //   interest-only = 150,000 x 0.0525 / 12 = 656.25 -> £656
+  //   repayment     = 898.8716                       -> £899
+  //   cover         = 1,250 / 656.25 = 190.48%       -> 190.5%
+  const bigger = at(100_000);
+
+  it("a 40% deposit gives a 60.0% LTV and a £150,000 loan", () => {
+    expect(btlRow(bigger, "Loan amount")).toBe("£150,000");
+    expect(btlRow(bigger, "Loan to value")).toBe("60.0%");
+    expect(btlRow(bigger, "Deposit as a share")).toBe("40.0%");
+  });
+
+  it("the smaller loan costs £656 interest-only and £899 on repayment", () => {
+    expect(bigger.headline.value).toBe("£656");
+    expect(btlRow(bigger, "Capital repayment over 25 years")).toBe("£899 a month");
+  });
+
+  it("and the same rent covers it 190.5% over", () => {
+    expect(btlRow(bigger, "Rental cover")).toBe("190.5%");
+  });
+
+  // A deposit larger than the price cannot produce a negative loan.
+  it("a deposit above the price floors the loan at zero", () => {
+    const cash = at(300_000);
+    expect(btlRow(cash, "Loan amount")).toBe("£0");
+    expect(btlRow(cash, "Loan to value")).toBe("0.0%");
+    expect(cash.headline.value).toBe("£0");
+  });
+});
+
+describe("buy-to-let-mortgage-calculator: house-bar checks", () => {
+  it("a 0% rate degenerates to straight-line capital, not NaN", () => {
+    // 187,500 / 300 = £625 a month, £187,500 over the term, £0 interest.
+    const result = buyToLetMortgageCalculator.compute({
+      propertyValue: 250_000,
+      deposit: 62_500,
+      annualRate: 0,
+      termYears: 25,
+      monthlyRent: 0,
+    } as V);
+    expect(result.headline.value).toBe("£0");
+    expect(btlRow(result, "Capital repayment over 25 years")).toBe("£625 a month");
+    expect(btlRow(result, "Total paid over 25 years, capital repayment")).toBe("£187,500");
+    expect(btlRow(result, "Interest paid over 25 years")).toBe("£0");
+  });
+
+  it("carries workedExamples and related links (both were empty before)", () => {
+    expect(buyToLetMortgageCalculator.workedExamples?.length).toBe(2);
+    expect(buyToLetMortgageCalculator.related?.length).toBeGreaterThanOrEqual(4);
+    const hrefs = buyToLetMortgageCalculator.related?.map((r) => r.href) ?? [];
+    expect(hrefs).toContain("/calculators/buy-to-let-rental-stress-test-calculator");
+    expect(hrefs).toContain("/calculators/section-24-calculator");
+  });
+
+  it("meta fields stay inside the 60 / 155 limits", () => {
+    expect(buyToLetMortgageCalculator.metaTitle.length).toBeLessThanOrEqual(60);
+    expect(buyToLetMortgageCalculator.metaDescription.length).toBeLessThanOrEqual(155);
+  });
+
+  it("at most one statute reference in the page prose", () => {
+    const prose = [
+      buyToLetMortgageCalculator.intro,
+      ...buyToLetMortgageCalculator.explainer.paragraphs,
+      ...(buyToLetMortgageCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+    ].join(" ");
+    expect((prose.match(/Section 24/g) ?? []).length).toBe(1);
+  });
+
+  it("no em-dashes in any user-facing string", () => {
+    const result = buyToLetMortgageCalculator.compute(
+      defaults(buyToLetMortgageCalculator.fields) as V,
+    );
+    const copy = JSON.stringify(buyToLetMortgageCalculator) + JSON.stringify(result);
     expect(copy).not.toContain("—");
     expect(copy).not.toContain("–");
   });

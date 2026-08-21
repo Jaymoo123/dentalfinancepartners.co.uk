@@ -100,6 +100,24 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
+## 0.15 Tools-family cluster (Phase B) — EXECUTED 2026-08-21, deploy owner-gated
+
+Dossier `briefs/property/tools/DOSSIER.md` frozen + executed same day. Harvest $0.55
+(balance ~$4.78), universe 2,787, ledger balanced (472 assigned / 436 already-covered /
+1,845 excluded / 34 deferred). Work order: 4 tool REFRAMEs executed (T1 BTL mortgage =
+full rework to price+deposit inputs with dual repayment bases + ICR rows, the family
+uklandlordtax owns at pos 1-4; T2 rental yield gross+net itemised + payback; T3
+rental-income-tax copy REFRAME owning "tax on rental income calculator" (adjudicated vs
+Phase C); T4 cashflow + new cash-on-cash ROI row). Two-track Opus QA + fix round; goldens
+158 within suite 1,401/1,401; tsc/lint/links/prod build green. Blog
+`rental-income-tax-calculator.md` retitled to guide intent (cannibalisation split). GBP-
+literal class: 316 fixed across 11 files; 2 deferred (Bing-experiment treatments). T5
+benchmarks EXTEND FROZEN until the Bing 28d read (~09-15) - it is a treatment page.
+AT DEPLOY: register 4 tool URLs (--page-urls) + retitled blog page in monitored_pages;
+expectations + failure triggers pre-stated in DOSSIER §8. Parked estate nits: shared
+gbp() negative rendering "£-50"; advanced flag inert on generic tools. Deferred candidate
+tools for owner: hmlr-fee-calculator (6.6k/mo), fhl-str calculator (3.6k/mo).
+
 ## 0.14 Wave 11 WRAP — COMPLETE 2026-08-21 (NO DEPLOY: owner instruction "dont bother deploying it, just complete it to the highest standard"; deploy authorization from HANDOFF §2 remains standing but unused)
 
 **FINAL STATE 2026-08-21:** all 5 fix groups + legacy back-patch + 2 verification reads + internal-link sweep COMPLETE. Voice final: 15 CLEAN / 4 MINOR (worst 19.8; pre-fix worst 34.8). Personas deduplicated corpus-wide (final grep clean: Yusuf+Lars, Marcus+Bev, Dele, Priya, Farah+Nadia, Tom, Sunita, Bola, Idris, Dermot, Renata+Callum, Fergal). house_positions §26.7 CORRECTED (double glazing = repair per PIM2030). Legacy back-patches: energy-performance-certificates-epc (8 items incl. reg 9(2)/reg 22/reg 38/reg 24 citations, penalty ladder, prices), gas-safety-certificates (£60-£120, Great Britain scoping), 2 lease siblings (SDLT £125k band; one worked example re-derived nil→£4,000). Link sweep: 37 links into 36 legacy pages, 118 measurement-window exclusions honoured (CGT/SDLT/Bing/verdict-hashed), commercial trio discoverable via pillars only (by design). Calculator fee stack harmonised £2,750-£4,700 ex VAT. GATES ALL GREEN: lint 763, link audit 0/0, word gate 763/763, meta 60/155 0 over, tsc clean, vitest 1343/1343, prod build exit 0, dependency closure OK 19 sites, qa_verdict `wave11` recorded LAST (19/19 all_clear, evidence-derived), predeploy gate PASS ("all 19 slug(s) QA'd-clean with matching hashes"). REMAINING FOR OWNER: deploy (./scripts/deploy-and-index.ps1 -Site property -QaBatch wave11, which also registers monitored_pages + IndexNow), batched with the parked CGT batch (cgt1). Minor open: epc-c-2030 page still carries pre-Jan-2026 framing (hedge correct, refresh candidate); 10 pre-existing em-dashes across 10 legacy files (predate wave; cleanup item); 50% special-rate FYA claim needs sourcing into house_positions §38 before anyone writes it.
