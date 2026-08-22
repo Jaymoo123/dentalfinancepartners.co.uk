@@ -67,10 +67,29 @@ function Pill() {
   );
 }
 
+/**
+ * The table's own call to action.
+ *
+ * `data-cta` added in Phase 6.4, deliberately and as a decision rather than a
+ * drive-by. The designer's own standing rule is that every CTA carries
+ * `data-cta`, `data-cta-placement` and `data-cta-goal`, and this one carried
+ * none, so it was the only uninstrumented primary CTA on either page that uses
+ * the table. It is a single shared id rather than one per page: `cta_id` is what
+ * `vw_cta_performance` groups on, and a table CTA means the same thing on both
+ * routes, so one series reading "pressed the button under the comparison table"
+ * is more useful than two. It lands on `/services/property-tax-advice` and
+ * `/services/landlord-accountant`, and any later page that passes `cta`.
+ */
 function Cta({ cta }: { cta: NonNullable<Props["cta"]> }) {
   return (
     <>
-      <Link href={cta.href} className={`${btnPrimary} w-full`}>
+      <Link
+        href={cta.href}
+        data-cta="comparison_book"
+        data-cta-placement="comparison_table"
+        data-cta-goal="form"
+        className={`${btnPrimary} w-full`}
+      >
         {cta.label}
       </Link>
       {cta.note && <p className="mt-3 text-xs text-slate-600">{cta.note}</p>}
