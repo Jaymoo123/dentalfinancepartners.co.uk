@@ -164,7 +164,7 @@ function NumberField({
         onValueChange={(vals) => onChange(vals[0])}
         aria-label={field.label}
       />
-      {field.help && <p className="text-xs text-slate-400 mt-1.5">{field.help}</p>}
+      {field.help && <p className="text-xs text-slate-500 mt-1.5">{field.help}</p>}
     </div>
   );
 }
@@ -203,7 +203,7 @@ function SelectField({
           );
         })}
       </div>
-      {field.help && <p className="text-xs text-slate-400 mt-1.5">{field.help}</p>}
+      {field.help && <p className="text-xs text-slate-500 mt-1.5">{field.help}</p>}
     </div>
   );
 }
@@ -242,7 +242,7 @@ function ToggleField({
           />
         </span>
       </label>
-      {field.help && <p className="text-xs text-slate-400 mt-1.5">{field.help}</p>}
+      {field.help && <p className="text-xs text-slate-500 mt-1.5">{field.help}</p>}
     </div>
   );
 }
@@ -417,7 +417,7 @@ function Workings({ result }: { result: PremiumResult }) {
               s.rows &&
               s.rows.length > 0 && (
                 <div key={s.id} className="space-y-2">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                     {s.label}
                   </div>
                   <RowList rows={s.rows} />

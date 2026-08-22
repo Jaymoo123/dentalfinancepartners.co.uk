@@ -137,7 +137,7 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
             <div className="columns-2 gap-6">
               {item.groups.map((group) => (
                 <div key={group.category} className="mb-4 break-inside-avoid">
-                  <p className="px-2 pb-1 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                  <p className="px-2 pb-1 text-[11px] font-bold uppercase tracking-wider text-slate-500">
                     {group.category}
                   </p>
                   {group.items.map((child) => (
@@ -376,7 +376,7 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
                       <div className="mb-1 ml-4 border-l border-slate-200">
                         {item.groups.map((group) => (
                           <div key={group.category} className="py-1">
-                            <p className="px-4 pb-0.5 pt-1 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                            <p className="px-4 pb-0.5 pt-1 text-[11px] font-bold uppercase tracking-wider text-slate-500">
                               {group.category}
                             </p>
                             {group.items.map((child) => {

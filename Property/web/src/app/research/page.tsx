@@ -62,7 +62,7 @@ export default function ResearchIndexPage() {
                   {r.title}
                 </h2>
                 <p className="mt-2 text-base leading-relaxed text-slate-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-slate-400">Updated {r.updated}</p>
+                <p className="mt-4 text-xs text-slate-500">Updated {r.updated}</p>
               </Link>
             ))}
           </div>
