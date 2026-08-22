@@ -13,8 +13,10 @@ export function PageShell({ children }: PageShellProps) {
   const pathname = usePathname();
 
   // Embeddable widgets (/embed/*) render chrome-free so they sit natively inside
-  // a partner's iframe — no site header, footer, or sticky CTA.
-  if (pathname?.startsWith("/embed")) {
+  // a partner's iframe — no site header, footer, or sticky CTA. The trailing slash
+  // matters: "/embed" is the public, indexable gallery where partners come to find
+  // the embed codes, and it needs the full site chrome.
+  if (pathname?.startsWith("/embed/")) {
     return <>{children}</>;
   }
 
