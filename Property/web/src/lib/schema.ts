@@ -1,6 +1,7 @@
 import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
+import { categoryDisplayName, getCategorySlug } from "@/lib/blog";
 
 /** Build BreadcrumbList JSON-LD schema */
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
@@ -28,7 +29,7 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
   const url = `${siteConfig.url}${path}`;
   const imageUrl = post.image
     ? (post.image.startsWith("http") ? post.image : `${siteConfig.url}${post.image}`)
-    : buildOgImageUrl(post.h1, post.category);
+    : buildOgImageUrl(post.h1, categoryDisplayName(getCategorySlug(post), post.category));
 
   const faq =
     post.faqs && post.faqs.length > 0
@@ -89,7 +90,7 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
       "@type": "WebPage",
       "@id": url,
     },
-    articleSection: post.category,
+    articleSection: categoryDisplayName(getCategorySlug(post), post.category),
     inLanguage: "en-GB",
   };
 

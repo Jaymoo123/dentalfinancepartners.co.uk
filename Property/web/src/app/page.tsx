@@ -13,7 +13,7 @@ import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
-import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { getAllPosts, getCategorySlug, categoryDisplayName } from "@/lib/blog";
 import { locationHref } from "@/lib/locations";
 import { essentialGuides } from "@/lib/essential-guides";
 import { ArrowRight } from "lucide-react";
@@ -623,7 +623,7 @@ export default function HomePage() {
                     className="block p-6 h-full flex flex-col"
                   >
                     <div className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
-                      {post.category}
+                      {categoryDisplayName(post.categorySlug, post.category)}
                     </div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
                       {post.title}

@@ -6,6 +6,7 @@ import {
   getPostByCategoryAndSlug,
   getCategorySlug,
   getRelatedPosts,
+  categoryDisplayName,
 } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
@@ -56,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: post.dateModified ?? post.date,
       images: [
         {
-          url: post.image || buildOgImageUrl(post.h1, post.category),
+          url: post.image || buildOgImageUrl(post.h1, categoryDisplayName(getCategorySlug(post), post.category)),
           width: 1200,
           height: 630,
           alt: post.altText || post.title,
@@ -67,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
-      images: [post.image || buildOgImageUrl(post.h1, post.category)],
+      images: [post.image || buildOgImageUrl(post.h1, categoryDisplayName(getCategorySlug(post), post.category))],
     },
   };
 }
