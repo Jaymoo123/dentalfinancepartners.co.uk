@@ -116,6 +116,31 @@ export function getPostByCategoryAndSlug(
   return post;
 }
 
+/**
+ * Canonical display name per category slug, matching the ten hub pages under
+ * /blog/<slug>. Post frontmatter is inconsistent about the same category
+ * ("Incorporation & Company Structures" vs "Incorporation and Company
+ * Structures", "Making Tax Digital MTD" vs "(MTD)"): the variants all slugify
+ * to the same hub, but any card that renders `post.category` verbatim shows
+ * whichever variant that file happens to carry. Render this name instead.
+ */
+const CANONICAL_CATEGORY_NAMES: Record<string, string> = {
+  "capital-gains-tax": "Capital Gains Tax",
+  "incorporation-and-company-structures": "Incorporation & Company Structures",
+  "landlord-tax-essentials": "Landlord Tax Essentials",
+  "making-tax-digital-mtd": "Making Tax Digital (MTD)",
+  "non-resident-landlord-tax": "Non-Resident Landlord Tax",
+  "portfolio-management": "Portfolio Management",
+  "property-accountant-services": "Property Accountant Services",
+  "property-finance": "Property Finance",
+  "property-types-and-specialist-tax": "Property Types & Specialist Tax",
+  "section-24-and-tax-relief": "Section 24 & Tax Relief",
+};
+
+export function categoryDisplayName(slug: string, fallback: string): string {
+  return CANONICAL_CATEGORY_NAMES[slug] ?? fallback;
+}
+
 export function getAllCategories(): Array<{ slug: string; name: string; count: number }> {
   const posts = getAllPosts();
   const categoryMap = new Map<string, { name: string; count: number }>();
@@ -125,7 +150,7 @@ export function getAllCategories(): Array<{ slug: string; name: string; count: n
     if (categoryMap.has(slug)) {
       categoryMap.get(slug)!.count++;
     } else {
-      categoryMap.set(slug, { name: post.category, count: 1 });
+      categoryMap.set(slug, { name: categoryDisplayName(slug, post.category), count: 1 });
     }
   }
 
