@@ -120,7 +120,7 @@ export default function CalculatorsPage() {
             <div className="mt-6 sm:mt-8">
               <Link
                 href="/contact"
-                className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}
+                className={`${btnPrimary} bg-emerald-600 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}
               >
                 Book free consultation
               </Link>

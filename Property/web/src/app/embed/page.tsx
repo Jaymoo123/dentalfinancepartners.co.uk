@@ -134,7 +134,7 @@ export default function EmbedGalleryPage() {
             <div className="mt-8">
               <Link
                 href="/contact?utm_source=embed-gallery&utm_medium=site&utm_campaign=partnerships"
-                className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-base px-6 py-3 sm:px-8 sm:py-4`}
+                className={`${btnPrimary} bg-emerald-600 text-base px-6 py-3 sm:px-8 sm:py-4`}
               >
                 Talk to us about a partnership
               </Link>

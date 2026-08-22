@@ -328,7 +328,7 @@ export default function HomePage() {
               Property tax sorted, your way. Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href={activeCta.hero_primary.href} data-cta="hero_book" data-cta-placement="hero" data-cta-goal={packagesMode ? "pricing" : "form"} data-cta-variant={niche.cta.variant} className={`${btnPrimary} bg-blue-600 border-blue-800 hover:bg-blue-700 hover:border-blue-900 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+              <Link href={activeCta.hero_primary.href} data-cta="hero_book" data-cta-placement="hero" data-cta-goal={packagesMode ? "pricing" : "form"} data-cta-variant={niche.cta.variant} className={`${btnPrimary} bg-blue-600 hover:bg-blue-700 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
                 {activeCta.hero_primary.label}
               </Link>
               <Link href="#calculators" data-cta="hero_calculators" data-cta-placement="hero" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>

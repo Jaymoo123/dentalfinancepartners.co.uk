@@ -103,7 +103,7 @@ export function StickyCTA({
             data-cta-variant={niche.cta.variant}
             data-cta-goal={ctaHref.startsWith("/contact") ? "form" : undefined}
             onClick={() => !packagesMode && action && trackPersonalization("clicked", action)}
-            className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
+            className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
           >
             {button}
           </Link>
