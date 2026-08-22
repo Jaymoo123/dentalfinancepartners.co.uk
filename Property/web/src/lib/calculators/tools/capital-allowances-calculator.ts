@@ -134,7 +134,7 @@ export const capitalAllowancesCalculator: GenericTool = {
     ];
 
     let note =
-      "Indicative only. The embedded pool is a rough share of spend based on typical claims for this building type; every property is different and a surveyor-led claim confirms the real figure. Main pool WDA is 14% and special rate pool WDA is 6% from April 2026, with AIA of £1m and full expensing available on new main-rate plant for companies.";
+      "Indicative only. The embedded pool is a rough share of spend based on typical claims for this building type; every property is different and a surveyor-led claim confirms the real figure. Main pool WDA is 14% and special rate pool WDA is 6% from April 2026, with AIA of £1m. On new and unused main-rate plant, companies can claim 100% full expensing; a 40% first-year allowance applies to expenditure incurred on or after 1 January 2026 and is the practical route where full expensing is unavailable, such as an unincorporated landlord or plant bought for leasing.";
     if (priorClaim === "yes") {
       note +=
         " Because allowances may already have been claimed or pooled, a fresh claim depends on a section 198 election at your purchase and could be smaller than shown, or unavailable, without one.";
@@ -157,7 +157,8 @@ export const capitalAllowancesCalculator: GenericTool = {
     heading: "How capital allowances on a commercial property are estimated",
     paragraphs: [
       "Every commercial building contains plant, machinery and integral features embedded in the fabric, wiring, heating, sanitaryware, kitchens, lifts and more, that qualify for capital allowances even though they were never itemised separately on a completion statement. How much is claimable varies hugely by building type: an industrial shed might yield 5% to 15% of its price, while a hotel or dental practice can yield 25% to 45%, because far more of the spend goes on qualifying plant and fittings rather than bare structure.",
-      "Once estimated, the pool splits between the main pool, which gets a 14% writing-down allowance (or 100% full expensing on new main-rate plant bought by a company), and the special rate pool, covering integral features such as air conditioning, electrical and cold-water systems, which gets a 6% writing-down allowance. The Annual Investment Allowance gives a 100% deduction on the first £1m of qualifying spend across both pools each year, normally best allocated to the special rate pool first since it otherwise depreciates so slowly.",
+      "Once estimated, the pool splits between the main pool, which gets a 14% writing-down allowance, and the special rate pool, covering integral features such as air conditioning, electrical and cold-water systems, which gets a 6% writing-down allowance. The Annual Investment Allowance gives a 100% deduction on the first £1m of qualifying spend across both pools each year, normally best allocated to the special rate pool first since it otherwise depreciates so slowly.",
+      "Above the £1m Annual Investment Allowance there are two first-year allowances on new and unused main-rate plant, and which one you use depends on how you hold the property. Companies can claim 100% full expensing (CAA 2001 s.45S). A separate 40% first-year allowance applies to main-rate expenditure incurred on or after 1 January 2026 (Finance Act 2026 s.29, inserting CAA 2001 s.45U). The 40% allowance is not restricted by incorporation status, but in practice it is the route for sole traders, partnerships and individual landlords, who cannot use full expensing, and for plant bought for leasing, where full expensing is unavailable. Neither covers cars or second-hand assets.",
       "Buying a second-hand commercial property has a trap: since April 2014, if the seller had already pooled the fixtures, the buyer can only inherit that entitlement if a joint section 198 election is agreed at the point of sale. Skip it, and the fixtures allowance can be lost permanently, however genuinely qualifying the assets are.",
       "This calculator gives a rough, sector-based estimate to size the opportunity. The actual claim depends on a detailed survey of what was bought or built, apportioned on a just and reasonable basis, which is why a specialist capital allowances review is the next step before relying on any figure here.",
     ],
@@ -176,7 +177,7 @@ export const capitalAllowancesCalculator: GenericTool = {
     {
       question: "What is the difference between the main and special-rate pool?",
       answer:
-        "The main pool covers general plant and machinery and gets a 14% writing-down allowance (or 100% full expensing on new main-rate assets for companies). The special rate pool covers integral features such as electrical, heating, cooling, water and lift systems, and gets a much slower 6% writing-down allowance.",
+        "The main pool covers general plant and machinery and gets a 14% writing-down allowance. On new and unused main-rate plant a first-year allowance may be available instead: 100% full expensing for companies, or the 40% first-year allowance introduced by Finance Act 2026 for expenditure on or after 1 January 2026, which is the practical route where full expensing cannot be used, such as an unincorporated landlord or plant bought for leasing. The special rate pool covers integral features such as electrical, heating, cooling, water and lift systems, and gets a much slower 6% writing-down allowance.",
     },
     {
       question: "Can I still claim on a second-hand building?",
