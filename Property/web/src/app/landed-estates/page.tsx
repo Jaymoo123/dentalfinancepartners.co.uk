@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
-import { CTASection } from "@/components/ui/CTASection";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
+import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
+import { FaqSection } from "@/components/ui/FaqSection";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
+import { TopicHero, TopicSection } from "@/components/property/TopicSection";
+import { btnOnCream, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 
@@ -128,34 +130,6 @@ const faqs = [
   },
 ];
 
-function Section({
-  id,
-  title,
-  children,
-  links,
-}: {
-  id: string;
-  title: string;
-  children: ReactNode;
-  links?: { href: string; label: string }[];
-}) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-slate-200 py-8 first:border-t-0 first:pt-0">
-      <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-slate-700">{children}</div>
-      {links && links.length > 0 && (
-        <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-          {links.map((l) => (
-            <Link key={l.href} href={l.href} className="text-emerald-700 hover:text-emerald-800">
-              {l.label} →
-            </Link>
-          ))}
-        </div>
-      )}
-    </section>
-  );
-}
-
 export default function LandedEstatesPage() {
   const articleSchema = {
     "@context": "https://schema.org",
@@ -179,302 +153,331 @@ export default function LandedEstatesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
       />
 
-      <section className="bg-slate-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Landed estates" }]} onDark />
-          <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-            Landed estates and farm inheritance tax: the £2.5 million allowance
-          </h1>
-          <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
+      <TopicHero
+        breadcrumb={<Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Landed estates" }]} />}
+        title="Landed estates and farm inheritance tax: the £2.5 million allowance"
+        standfirst={
+          <>
             From 6 April 2026 the first £2.5 million of your qualifying farmland and trading business passes free of
             inheritance tax, and you pay an effective 20% on the value above it. A married couple can cover up to £5
             million between them. If a guide still tells you the figure is £1 million, it has not been updated.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
-            <Link
-              href="/contact"
-              className={`${btnPrimary} bg-emerald-600 px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
-            >
-              Talk to a property tax specialist
-            </Link>
-            <Link
-              href={CALC}
-              className={`${btnSecondary} border-white bg-white/10 px-6 py-3 text-center text-sm text-white hover:bg-white/20 sm:px-8 sm:py-3.5 sm:text-base`}
-            >
-              Work out your allowance
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-4xl">
-            <Section
-              id="will-we-pay"
-              title="Will your family pay inheritance tax on the farm?"
-              links={[
-                { href: `${PTST}/inheritance-tax-on-farms`, label: "Inheritance tax on farms, explained" },
-                {
-                  href: `${PTST}/how-to-avoid-inheritance-tax-on-a-farm`,
-                  label: "Reducing inheritance tax on a farm, legitimately",
-                },
-                { href: CALC, label: "Allowance calculator" },
-              ]}
-            >
-              <p>
-                Work out the qualifying value first, because that single number tells you whether you have a problem.
-                Add up the agricultural value of the land and buildings and the value of any genuine trading business,
-                then set the total against £2.5 million. Under it, the relief covers everything, as it did before. Over
-                it, only the excess is exposed, and the exposure is smaller than most of the headlines suggested.
-              </p>
-              <p>
-                Here is the arithmetic on £4 million of qualifying value. The first £2.5 million is relieved in full.
-                The remaining £1.5 million is relieved at 50%, so £750,000 stays in the estate. At the ordinary 40%
-                rate that is £300,000 of inheritance tax, before your nil rate band and the rest of your estate come
-                into it. That is the effective 20% figure, and it is the number to plan against.
-              </p>
-              <p>
-                If you are married or in a civil partnership, the unused part of the first allowance passes to the
-                survivor, so the couple figure is £5 million and the same £4 million estate has nothing to pay. And if
-                you have made gifts since October 2024, some of that allowance may already be spoken for by the time
-                the estate is valued.
-              </p>
-            </Section>
-
-            <Section
-              id="in-force"
-              title="Which rules are actually in force from April 2026?"
-              links={[
-                {
-                  href: `${LTE}/iht-april-2026-bpr-apr-cap-property-impact`,
-                  label: "The cap, worked through in full",
-                },
-                {
-                  href: `${LTE}/maximising-business-relief-to-reduce-inheritance-tax`,
-                  label: "Business property relief: what qualifies",
-                },
-                {
-                  href: `${LTE}/agricultural-relief-for-inheritance-tax-key-benefits`,
-                  label: "Agricultural relief: the qualification gate",
-                },
-              ]}
-            >
-              <p>
-                A great deal of the coverage written while this reform was going through never caught up with where it
-                landed, so the single most useful thing on this page is a plain statement of the rules that are law
-                today.
-              </p>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse text-sm">
-                  <thead>
-                    <tr className="border-b-2 border-slate-300 text-left">
-                      <th className="py-2 pr-4 font-bold text-slate-900">Rule</th>
-                      <th className="py-2 pr-4 font-bold text-slate-900">Status</th>
-                      <th className="py-2 font-bold text-slate-900">What it means for you</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {inForce.map((row) => (
-                      <tr key={row.rule} className="border-b border-slate-200 align-top">
-                        <td className="py-2 pr-4 font-semibold text-slate-900">{row.rule}</td>
-                        <td className="py-2 pr-4 text-slate-900">{row.status}</td>
-                        <td className="py-2 text-slate-700">{row.effect}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </Section>
-
-            <Section
-              id="landlords"
-              title="What if your estate is rental property rather than farmland?"
-              links={[
-                {
-                  href: `${LTE}/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line`,
-                  label: "Why buy-to-let fails the investment line",
-                },
-                {
-                  href: `${LTE}/business-property-relief-rental-property-iht`,
-                  label: "Business property relief and rental property",
-                },
-                {
-                  href: `${PTST}/serviced-accommodation-bpr-eligibility-pawson-test`,
-                  label: "Serviced accommodation: where the boundary sits",
-                },
-              ]}
-            >
-              <p>
-                A straight buy-to-let portfolio does not get this relief, and the April 2026 allowance does not change
-                that. The test is whether the business is mainly trading or mainly holding investments, and collecting
-                rent from residential lettings falls on the investment side of that line no matter how many properties
-                you hold or how much of your week they take up. If your estate is rentals and nothing else, the
-                allowance on this page is probably not for you.
-              </p>
-              <p>
-                The honest exceptions are narrow. Development work is trading, so a developer holding sites and work in
-                progress can qualify on that element. Serviced accommodation can qualify where the services are
-                substantial rather than nominal, and the bar for that is high. Furnished holiday letting on its own has
-                never cleared it. If you sit near the boundary, the linked page walks the line properly rather than
-                giving you a yes or no you cannot rely on.
-              </p>
-              <p>
-                Where this does bite for landlords is the mixed estate: a working farm or a trading company alongside a
-                rental portfolio. The rentals get no relief and the trading side competes with the farmland for the same
-                £2.5 million, so the allocation decision is real money.
-              </p>
-            </Section>
-
-            <Section
-              id="mixed-estates"
-              title="Mixed estates: one allowance, several claims on it"
-              links={[
-                {
-                  href: `${PTST}/agricultural-property-relief-mixed-estate-1m-cap`,
-                  label: "Allocating the allowance across a mixed estate",
-                },
-                {
-                  href: `${LTE}/iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation`,
-                  label: "Trading against investing: how the split works",
-                },
-                { href: `${PTST}/farm-tax-uk-guide`, label: "Farm tax: the property side, in one place" },
-              ]}
-            >
-              <p>
-                Most of the estates we see are not purely agricultural. There is land, a farmhouse, some let cottages,
-                perhaps a diversified enterprise and often a share portfolio. Each of those is treated differently, and
-                the allowance is claimed against the qualifying parts only, so the first job is deciding what actually
-                counts before deciding how to spread the relief.
-              </p>
-              <p>
-                Shares designated as not listed on the markets of recognised stock exchanges, AIM holdings in practice,
-                are the exception worth knowing. Relief on them has dropped to 50%, but that 50% is a separate tier that
-                does not eat into your £2.5 million. Ordinary shares in a private trading company are not in that tier:
-                they are relieved under the normal business property relief rules and draw on the same £2.5 million as
-                the farm. It is one of the few places where the reform left something on the table, and it changes how
-                you would sequence gifts of different asset types.
-              </p>
-            </Section>
-
-            <Section
-              id="gifts-and-trusts"
-              title="How do gifts and trusts change your allowance?"
-              links={[
-                { href: `${ICS}/fic-iht-treatment-bpr-myth`, label: "Family investment companies and the relief myth" },
-                {
-                  href: `${LTE}/farmland-supply-value-drops-is-iht-reform-to-blame`,
-                  label: "What the reform did to farmland values",
-                },
-                {
-                  href: `${PTST}/serviced-accommodation-tax-fhl-abolition-april-2025`,
-                  label: "Holiday letting after the 2025 abolition",
-                },
-              ]}
-            >
-              <p>
-                Giving land away in your lifetime still works, and the seven-year clock still runs. What changed is that
-                gifts made on or after 30 October 2024 are measured against the new rules if you die on or after 6 April
-                2026 and within seven years of making them. Anything you gave away before that date is outside the new
-                regime entirely, whenever you die, which is worth checking before anyone assumes a historic gift needs
-                revisiting.
-              </p>
-              <p>
-                Trusts changed in the same direction. A trust you settled before 30 October 2024 keeps its own
-                allowance. Trusts settled by the same person on or after that date share one allowance between them, so
-                the old approach of adding a trust to add another slice of relief no longer does anything. If you were
-                part way through a multi-trust plan when the announcement landed, that plan needs re-running rather than
-                continuing.
-              </p>
-              <p>
-                Sequencing matters more than it used to. Because the allowance looks back seven years, the order in
-                which you give things away, and how far apart, changes what is left when it counts.
-              </p>
-            </Section>
-
-            <Section id="not-covered" title="What we do not cover, and who does">
-              <p>
-                This site handles the property tax half of a landed estate. Several things a farming family needs sit
-                outside that, and we would rather say so than pretend otherwise.
-              </p>
-              <ul className="ml-5 list-disc space-y-2">
-                <li>
-                  <strong>Herd basis elections.</strong> The livestock valuation election is a farm accounts decision
-                  and belongs with your farm accountant.
-                </li>
-                <li>
-                  <strong>Farmers&apos; averaging.</strong> Averaging profits across two or five years is income tax
-                  work on the trading accounts, again with your farm accountant.
-                </li>
-                <li>
-                  <strong>Basic Payment Scheme and environmental schemes.</strong> Scheme entitlements, delinked
-                  payments and stewardship agreements are handled by your farm accountant or land agent.
-                </li>
-                <li>
-                  <strong>Dividing the estate between farming and non-farming children.</strong> Who inherits what, and
-                  how the non-farming children are treated fairly, is succession planning for a solicitor and the family
-                  to settle. We cover the tax consequences of whichever split you choose, not the split itself.
-                </li>
-                <li>
-                  <strong>Agricultural tenancy law.</strong> Succession rights, rent reviews and notices to quit are a
-                  rural surveyor and solicitor matter, not a tax one.
-                </li>
-              </ul>
-              <p>
-                We work alongside those advisers rather than replacing them. What we do is the inheritance tax and
-                capital tax position on the land, the buildings and the structures that hold them.
-              </p>
-            </Section>
-
-            <Section
-              id="where-to-start"
-              title="Where to start"
-              links={[
-                { href: CALC, label: "Combined allowance calculator" },
-                { href: "/services/property-tax-advice", label: "Property tax advice" },
-                { href: "/blog/landlord-tax-essentials", label: "All landlord tax guides" },
-              ]}
-            >
-              <p>
-                Get a qualifying value on paper. Not a market value of the whole estate, but the part that actually
-                qualifies: the agricultural value of the land and buildings, plus any real trading business, with the
-                rentals and the surplus development value stripped out. That figure against £2.5 million, or £5 million
-                if there are two of you, is the answer to the question you came here with.
-              </p>
-              <p>
-                Then check the last two years of gifts, because the 30 October 2024 line runs through the middle of a
-                lot of half-finished planning. If you made a gift or settled a trust after that date, the numbers you
-                were given at the time were almost certainly based on the announcement figure.
-              </p>
-              <p>
-                We can produce a written view of your allowance position: what qualifies, what does not, how much
-                headroom is left after gifts already made, and what the tax would be on a death today. You bring the
-                valuations and the gift history, we do the rest.
-              </p>
-            </Section>
-
-            <div className="mt-12 border-t border-slate-200 pt-10">
-              <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Farm inheritance tax questions</h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f) => (
-                  <div key={f.question}>
-                    <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-slate-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <CTASection
-        title="Find out where your estate sits against the allowance"
-        description="Book a free consultation. We will put a qualifying value on the estate, check what your gifts since October 2024 have used up, and tell you the tax on a death today."
-        primaryLabel="Book free consultation"
-        secondaryHref={CALC}
-        secondaryLabel="Try the allowance calculator"
+          </>
+        }
+        primary={
+          <Link
+            href="#book"
+            data-cta="estates_hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className={`${btnPrimary} bg-emerald-600 px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
+          >
+            Talk to a property tax specialist
+          </Link>
+        }
+        secondary={
+          <Link
+            href={CALC}
+            data-cta="estates_hero_calculator"
+            data-cta-placement="hero"
+            className={`${btnOnCream} px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
+          >
+            Work out your allowance
+          </Link>
+        }
       />
+
+      <TopicSection
+        id="will-we-pay"
+        eyebrow="The number that decides it"
+        title="Will your family pay inheritance tax on the farm?"
+        links={[
+          { href: `${PTST}/inheritance-tax-on-farms`, label: "Inheritance tax on farms, explained" },
+          {
+            href: `${PTST}/how-to-avoid-inheritance-tax-on-a-farm`,
+            label: "Reducing inheritance tax on a farm, legitimately",
+          },
+          { href: CALC, label: "Allowance calculator" },
+        ]}
+      >
+        <p>
+          Work out the qualifying value first, because that single number tells you whether you have a problem.
+          Add up the agricultural value of the land and buildings and the value of any genuine trading business,
+          then set the total against £2.5 million. Under it, the relief covers everything, as it did before. Over
+          it, only the excess is exposed, and the exposure is smaller than most of the headlines suggested.
+        </p>
+        <p>
+          Here is the arithmetic on £4 million of qualifying value. The first £2.5 million is relieved in full.
+          The remaining £1.5 million is relieved at 50%, so £750,000 stays in the estate. At the ordinary 40%
+          rate that is £300,000 of inheritance tax, before your nil rate band and the rest of your estate come
+          into it. That is the effective 20% figure, and it is the number to plan against.
+        </p>
+        <p>
+          If you are married or in a civil partnership, the unused part of the first allowance passes to the
+          survivor, so the couple figure is £5 million and the same £4 million estate has nothing to pay. And if
+          you have made gifts since October 2024, some of that allowance may already be spoken for by the time
+          the estate is valued.
+        </p>
+      </TopicSection>
+
+      <TopicSection
+        id="in-force"
+        eyebrow="In force"
+        tone="slate"
+        title="Which rules are actually in force from April 2026?"
+        links={[
+          {
+            href: `${LTE}/iht-april-2026-bpr-apr-cap-property-impact`,
+            label: "The cap, worked through in full",
+          },
+          {
+            href: `${LTE}/maximising-business-relief-to-reduce-inheritance-tax`,
+            label: "Business property relief: what qualifies",
+          },
+          {
+            href: `${LTE}/agricultural-relief-for-inheritance-tax-key-benefits`,
+            label: "Agricultural relief: the qualification gate",
+          },
+        ]}
+      >
+        <p>
+          A great deal of the coverage written while this reform was going through never caught up with where it
+          landed, so the single most useful thing on this page is a plain statement of the rules that are law
+          today.
+        </p>
+        {/* Designer's figure-card treatment, the same one the statutory
+            changes tables on /landlord-tax and /services/property-tax-advice
+            carry: a white card on the slate ground, the table inside it, and
+            the owner's rule-33 note beneath. */}
+        <div className="overflow-x-auto rounded-xl bg-white p-5 sm:p-6">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b-2 border-slate-300 text-left">
+                <th className="py-2 pr-4 font-bold text-slate-900">Rule</th>
+                <th className="py-2 pr-4 font-bold text-slate-900">Status</th>
+                <th className="py-2 font-bold text-slate-900">What it means for you</th>
+              </tr>
+            </thead>
+            <tbody>
+              {inForce.map((row) => (
+                <tr key={row.rule} className="border-b border-slate-200 align-top">
+                  <td className="py-2 pr-4 font-semibold text-slate-900">{row.rule}</td>
+                  <td className="py-2 pr-4 text-slate-900">{row.status}</td>
+                  <td className="py-2 text-slate-700">{row.effect}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <ExampleFigureNote className="mt-3" />
+        </div>
+      </TopicSection>
+
+      <TopicSection
+        id="landlords"
+        eyebrow="The investment line"
+        title="What if your estate is rental property rather than farmland?"
+        links={[
+          {
+            href: `${LTE}/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line`,
+            label: "Why buy-to-let fails the investment line",
+          },
+          {
+            href: `${LTE}/business-property-relief-rental-property-iht`,
+            label: "Business property relief and rental property",
+          },
+          {
+            href: `${PTST}/serviced-accommodation-bpr-eligibility-pawson-test`,
+            label: "Serviced accommodation: where the boundary sits",
+          },
+        ]}
+      >
+        <p>
+          A straight buy-to-let portfolio does not get this relief, and the April 2026 allowance does not change
+          that. The test is whether the business is mainly trading or mainly holding investments, and collecting
+          rent from residential lettings falls on the investment side of that line no matter how many properties
+          you hold or how much of your week they take up. If your estate is rentals and nothing else, the
+          allowance on this page is probably not for you.
+        </p>
+        <p>
+          The honest exceptions are narrow. Development work is trading, so a developer holding sites and work in
+          progress can qualify on that element. Serviced accommodation can qualify where the services are
+          substantial rather than nominal, and the bar for that is high. Furnished holiday letting on its own has
+          never cleared it. If you sit near the boundary, the linked page walks the line properly rather than
+          giving you a yes or no you cannot rely on.
+        </p>
+        <p>
+          Where this does bite for landlords is the mixed estate: a working farm or a trading company alongside a
+          rental portfolio. The rentals get no relief and the trading side competes with the farmland for the same
+          £2.5 million, so the allocation decision is real money.
+        </p>
+      </TopicSection>
+
+      <TopicSection
+        id="mixed-estates"
+        eyebrow="Allocation"
+        tone="slate"
+        title="Mixed estates: one allowance, several claims on it"
+        links={[
+          {
+            href: `${PTST}/agricultural-property-relief-mixed-estate-1m-cap`,
+            label: "Allocating the allowance across a mixed estate",
+          },
+          {
+            href: `${LTE}/iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation`,
+            label: "Trading against investing: how the split works",
+          },
+          { href: `${PTST}/farm-tax-uk-guide`, label: "Farm tax: the property side, in one place" },
+        ]}
+      >
+        <p>
+          Most of the estates we see are not purely agricultural. There is land, a farmhouse, some let cottages,
+          perhaps a diversified enterprise and often a share portfolio. Each of those is treated differently, and
+          the allowance is claimed against the qualifying parts only, so the first job is deciding what actually
+          counts before deciding how to spread the relief.
+        </p>
+        <p>
+          Shares designated as not listed on the markets of recognised stock exchanges, AIM holdings in practice,
+          are the exception worth knowing. Relief on them has dropped to 50%, but that 50% is a separate tier that
+          does not eat into your £2.5 million. Ordinary shares in a private trading company are not in that tier:
+          they are relieved under the normal business property relief rules and draw on the same £2.5 million as
+          the farm. It is one of the few places where the reform left something on the table, and it changes how
+          you would sequence gifts of different asset types.
+        </p>
+      </TopicSection>
+
+      <TopicSection
+        id="gifts-and-trusts"
+        eyebrow="The seven-year window"
+        title="How do gifts and trusts change your allowance?"
+        links={[
+          { href: `${ICS}/fic-iht-treatment-bpr-myth`, label: "Family investment companies and the relief myth" },
+          {
+            href: `${LTE}/farmland-supply-value-drops-is-iht-reform-to-blame`,
+            label: "What the reform did to farmland values",
+          },
+          {
+            href: `${PTST}/serviced-accommodation-tax-fhl-abolition-april-2025`,
+            label: "Holiday letting after the 2025 abolition",
+          },
+        ]}
+      >
+        <p>
+          Giving land away in your lifetime still works, and the seven-year clock still runs. What changed is that
+          gifts made on or after 30 October 2024 are measured against the new rules if you die on or after 6 April
+          2026 and within seven years of making them. Anything you gave away before that date is outside the new
+          regime entirely, whenever you die, which is worth checking before anyone assumes a historic gift needs
+          revisiting.
+        </p>
+        <p>
+          Trusts changed in the same direction. A trust you settled before 30 October 2024 keeps its own
+          allowance. Trusts settled by the same person on or after that date share one allowance between them, so
+          the old approach of adding a trust to add another slice of relief no longer does anything. If you were
+          part way through a multi-trust plan when the announcement landed, that plan needs re-running rather than
+          continuing.
+        </p>
+        <p>
+          Sequencing matters more than it used to. Because the allowance looks back seven years, the order in
+          which you give things away, and how far apart, changes what is left when it counts.
+        </p>
+      </TopicSection>
+
+      <TopicSection
+        id="not-covered"
+        eyebrow="Scope"
+        tone="slate"
+        title="What we do not cover, and who does"
+      >
+        <p>
+          This site handles the property tax half of a landed estate. Several things a farming family needs sit
+          outside that, and we would rather say so than pretend otherwise.
+        </p>
+        <ul className="ml-5 list-disc space-y-2">
+          <li>
+            <strong>Herd basis elections.</strong> The livestock valuation election is a farm accounts decision
+            and belongs with your farm accountant.
+          </li>
+          <li>
+            <strong>Farmers&apos; averaging.</strong> Averaging profits across two or five years is income tax
+            work on the trading accounts, again with your farm accountant.
+          </li>
+          <li>
+            <strong>Basic Payment Scheme and environmental schemes.</strong> Scheme entitlements, delinked
+            payments and stewardship agreements are handled by your farm accountant or land agent.
+          </li>
+          <li>
+            <strong>Dividing the estate between farming and non-farming children.</strong> Who inherits what, and
+            how the non-farming children are treated fairly, is succession planning for a solicitor and the family
+            to settle. We cover the tax consequences of whichever split you choose, not the split itself.
+          </li>
+          <li>
+            <strong>Agricultural tenancy law.</strong> Succession rights, rent reviews and notices to quit are a
+            rural surveyor and solicitor matter, not a tax one.
+          </li>
+        </ul>
+        <p>
+          We work alongside those advisers rather than replacing them. What we do is the inheritance tax and
+          capital tax position on the land, the buildings and the structures that hold them.
+        </p>
+      </TopicSection>
+
+      <TopicSection
+        id="where-to-start"
+        eyebrow="First moves"
+        title="Where to start"
+        links={[
+          { href: CALC, label: "Combined allowance calculator" },
+          { href: "/services/property-tax-advice", label: "Property tax advice" },
+          { href: "/blog/landlord-tax-essentials", label: "All landlord tax guides" },
+        ]}
+      >
+        <p>
+          Get a qualifying value on paper. Not a market value of the whole estate, but the part that actually
+          qualifies: the agricultural value of the land and buildings, plus any real trading business, with the
+          rentals and the surplus development value stripped out. That figure against £2.5 million, or £5 million
+          if there are two of you, is the answer to the question you came here with.
+        </p>
+        <p>
+          Then check the last two years of gifts, because the 30 October 2024 line runs through the middle of a
+          lot of half-finished planning. If you made a gift or settled a trust after that date, the numbers you
+          were given at the time were almost certainly based on the announcement figure.
+        </p>
+        <p>
+          We can produce a written view of your allowance position: what qualifies, what does not, how much
+          headroom is left after gifts already made, and what the tax would be on a death today. You bring the
+          valuations and the gift history, we do the rest.
+        </p>
+        <Link
+          href="#book"
+          data-cta="estates_start_book"
+          data-cta-placement="where_to_start"
+          data-cta-goal="form"
+          className={`${btnPrimary} w-full sm:w-auto`}
+        >
+          Get a written allowance position
+        </Link>
+      </TopicSection>
+
+      {/* Anchor for the hero primary and the mid-page ask. The copy is the
+          CTASection copy this replaces, unchanged; the proof points are the trio
+          already claimed in niche.config.json, /about and the four service
+          pages, so nothing here is a new factual claim (rule 30). */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          title="Find out where your estate sits against the allowance"
+          description="Book a free consultation. We will put a qualifying value on the estate, check what your gifts since October 2024 have used up, and tell you the tax on a death today."
+          proofPoints={[
+            { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
+            { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
+            { title: "24-hour response", detail: "Usually the same working day" },
+          ]}
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+        />
+      </div>
+
+      {/* The light section that keeps the navy panel off the navy footer
+          (adjacency rule, resolution 2), and the accordion every other FAQ on
+          the site uses. The FAQPage JSON-LD is emitted separately above, so
+          collapsing costs no schema. */}
+      <FaqSection title="Farm inheritance tax questions" faqs={faqs} />
     </>
   );
 }
