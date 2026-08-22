@@ -103,6 +103,114 @@ produced three property-only isolated experiments, built through the §9 machine
 **NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
 track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
 
+## 0.22 Designer redesign PORT — ALL BUILD PHASES COMPLETE 2026-08-23, NOT DEPLOYED (Phase 9 is owner-triggered)
+
+**What this is.** On 2026-07-16 the Property site source was pushed to `Property_zip` so an
+external designer (Tanjiah, Double Wired Creative) could rework design, branding and
+conversion psychology. On 2026-08-21 they returned one squashed commit, `eb745e1`, covering 11
+sessions: **252 files, +33,857 / -6,934** — a new design system, ~40 bespoke storytelling
+components, a rebuilt blog, and reworked chrome, homepage, services, calculators and legal
+pages. We had not stood still: **644 files changed under `Property/`** over the same period
+(Waves 8 to 12, the cluster coverage programme, lead-engine parity). Both sides moved, so this
+was a **port, not a merge**: 81 overlapping files, 59 real conflicts, ported file by file with
+a recorded decision for each.
+
+**Governing rule, from the owner (2026-08-22): take their design.** The designer's decisions
+are approved and were not relitigated. Seven carve-outs were the only permitted divergence,
+all of them cases where their July fork would undo something factual, legal, security-related
+or SEO-load-bearing that we changed after they forked: facts and figures against
+`house_positions.md`; surfaces we deliberately deleted (chiefly `ResourceGate`, killed in
+`5c156c51` for writing direct to PostgREST and shipping client-side Supabase keys); locked
+compliance decisions (Microsoft Clarity stays dead, the DJH partner block stays ours,
+`enquiry_retention_months` stays 24); data-tuned settings; **our SEO surface** (schema, H2
+sets, metadata, canonicals, crawlable internal links); build correctness (the
+`@source "../../../../packages/web-shared"` line they deleted because they had no such
+package); and analytics continuity.
+
+**Where the record lives.** The whole programme worked out of gitignored
+`tmp/design_migration/`: `CONTEXT.md` (rule zero and the carve-outs), `PLAN.md` (phases and
+the owner decisions A to M), `EXECUTION.md` (gate tiers, commit discipline, reporting rules),
+`reports/01..15` (the investigation), `reports/14_completeness_audit.md` (**the 252-row
+disposition table, which is the coverage proof**), and per-phase `logs/phase_N.md` +
+`logs/fidelity_N.md`. Branch `design/property-redesign-port`, tags
+`design-port-phase-0` .. `design-port-phase-7`. Every phase was built by one agent, gated, then
+reviewed by a second independent agent against the designer's intent.
+`REDESIGN_ARCHITECTURE.md` (our own competing internal spec, 2026-07-03, never signed off) was
+confirmed dead and archived to `_archive/` under DECISION K.
+
+**Phase 8, the last build phase (2026-08-23, 11 commits).** Two structural fixes that were
+deferred so their blast radius would be attributable, plus cleanup:
+
+- **The `h1..h6` cascade-layer fix.** `globals.css` carried an UNLAYERED
+  `h1..h6 { font-weight:700; line-height:1.2; letter-spacing:-0.02em }`, and under Tailwind
+  v4 unlayered author CSS beats every layered utility regardless of specificity, so it
+  silently defeated every `font-*`, `leading-*` and `tracking-*` utility ever written on a
+  heading, site-wide. **Shipped as a deliberate split and this is the part to understand
+  before touching it again:** `font-weight` and `letter-spacing` moved into `@layer base`;
+  `line-height: 1.2` was left UNLAYERED on purpose. Tailwind's `text-*` utilities carry a
+  bundled line-height, so layering it hands every heading to Tailwind's per-size defaults —
+  measured with `getComputedStyle` over 82 routes at 1440 and 390, that moved **2,214
+  headings across 163 route/width combinations**, including every hero h1 from 72px to 60px
+  leading. None of those was an author's intention; they are framework defaults, and the
+  designer authored and shipped the whole system at a uniform 1.2 heading rhythm
+  (`DESIGN_GUIDELINES.md:280-286` names its one deliberate exception). As shipped, **14 of
+  5,111 measured headings moved**, all letter-spacing, both sites deliberate (the blog sticky
+  TOC label and a calculator summary heading, both uppercase micro-labels). 40 heading tags
+  carrying dormant `font-semibold` became `font-bold`, which is a zero-render change and is
+  what the designer's own weight rule specifies.
+- **`getRelatedPosts` matched raw frontmatter.** Three of our ten categories carry a two-way
+  spelling split, so each was two disconnected related-article pools. Measured over all 783
+  posts: 13 groups became 10, pools **shrank on 0 posts and grew on 357**, and the rendered
+  top-3 changed on 228 pages. Guarded by a new test that fails when the fix is reverted.
+- **Ten blog hubs emitted `BreadcrumbList` twice** (hub `@graph` plus the shared
+  `<Breadcrumb>`). The `@graph` node was dropped, per the Phase 0.10 precedent. Verified from
+  rendered JSON-LD: exactly one on all ten, `CollectionPage` preserved.
+- **DECISION L shipped.** `£2.4M+ Tax savings identified` was replaced by
+  **`280+ Properties enquired about`** on all 12 `StatsCounter` pages. The figure was
+  re-derived from live data before shipping (158 enquiries, floor 280, data through
+  2026-08-21) and **the SQL is now in the docstring of `src/lib/site-stats.ts`** so it stays
+  re-runnable. It is a floor, not an estimate: `leads.role` is present on 158/158 rows, every
+  band is counted at its bottom edge, developers and "Other" contribute zero. **Wording is
+  binding: enquiries, never clients, advises, manages or serves** — Property is lead-gen and
+  no client records exist anywhere in the estate. **DECISION M ("100+ Landlords served") is
+  still open and that tile was not touched.**
+- Also: the 40% first-year allowance (FA 2026 s.29 / CAA 2001 s.45U) added to
+  `capital-allowances-calculator` copy, which had stopped at companies-only full expensing;
+  every list moved to the designer's `pl-6` recipe; `ProcessTimeline`'s inactive step number
+  2.63:1 -> 4.76:1; the last `font-serif` removed; three zero-consumer components deleted
+  (`CTASection`, `ResultChart`, `ResultChartInner` — the designer's tree has zero consumers
+  for all three too); `MTDCountdown` retargeted from its expired 6 April 2026 deadline to the
+  **6 April 2027 £30,000 step** (house §3), **in its own isolated commit `9d82560b`** so it
+  can be reverted in one line.
+
+**Gate at Phase 8 close, every number at or better than the `design-port-phase-7` baseline:**
+tsc 0 errors; eslint 0 errors / 31 warnings; vitest 52 files / 1,511 pass (was 51 / 1,508);
+calculator goldens 241/241; `next build` exit 0 / 902 static pages; dependency closure OK
+across 19 sites; `predeploy_gate.py --site property` PASS; sweep 98/98 URLs clean, 0/771 dead
+links, 567 `data-cta`, 0 rendered dashes; `browser_check` exit 0, 140 page-loads, 0 new
+problems. No baseline artefact was re-saved.
+
+**NOT DEPLOYED.** Phase 9 is deploy and it is owner-triggered in the turn it happens. Its
+entry conditions and running order are in `tmp/design_migration/PLAN.md` Phase 9. Two things
+carry into it that are easy to lose: **DECISION A1** requires the whole Property
+`monitored_pages` set to be re-baselined post-deploy (70 cluster rows are armed to 2026-11-19
+and a re-skin triggers no detector, so attribution for that window is knowingly spent), and
+Phase 4 item 8 requires a **Vercel referrer-log check for live calculator embedders** before
+anything that changes embed output ships, because breaking a widget on someone else's site is
+not reversible from our end.
+
+**Open owner decisions at Phase 8 close:** M (the "100+ Landlords served" label, which the
+DECISION L investigation showed cannot be evidenced as a client claim); I (a fee figure on
+`/services/property-accountant` and an `/incorporation` FAQ answer, asked for across six
+designer sessions and never supplied); the homepage hero closer, still the designer's
+placeholder; whether the seven-field `LeadForm` gets an experiment; and whether the
+**Weekly Optimisation Engine** should keep running — it was verified LIVE on 2026-08-23
+(`.github/workflows/weekly-optimisation.yml`, cron Mondays 07:00 UTC, succeeding on schedule
+every Monday since 2026-07-20). Our records saying it was "disabled 2026-07-13" were wrong: it
+FAILED on 07-13, was fixed on 07-19, and has run ever since. It was reported, not stopped.
+
+---
+
 ## 0.21 Wave 12 cost-of-selling (Phase E, Track B) — EXECUTED 2026-08-21 NIGHT, deploy owner-gated
 
 Owner-approved Phase E run via the wave conductor (single lane per the 2026-07-08
