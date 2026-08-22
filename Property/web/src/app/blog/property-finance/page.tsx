@@ -53,14 +53,14 @@ export default function PropertyFinancePage() {
         {
           heading: "Bridging finance",
           paragraphs: [
-            "Bridging finance is short-term, interest-first lending used to move quickly: buying at auction inside the 28-day completion window, funding a refurbishment before refinancing onto a term mortgage (a bridge-to-let), breaking a chain, or securing a below-market-value purchase. It is priced monthly, secured on the asset, and repaid from a defined exit such as a sale or a remortgage. Investment and business bridging is unregulated lending, distinct from a regulated bridge secured on someone’s own home.",
+            "Bridging finance is short-term, interest-first lending used to move quickly: buying at auction inside the 28-day completion window, funding a refurbishment before refinancing onto a term mortgage (a bridge-to-let), breaking a chain, or securing a below-market-value purchase. It is priced monthly, secured on the asset, and repaid from a defined exit such as a sale or a remortgage. Investment and business bridging is unregulated lending, distinct from a regulated bridge secured on someone's own home.",
             "The tax questions bridging raises are frequently overlooked, in particular whether the interest is an allowable finance cost and how it interacts with the eventual term financing. That is where the numbers are won or lost.",
           ],
         },
         {
           heading: "Development finance",
           paragraphs: [
-            "Development finance funds ground-up construction and heavy refurbishment, released in stages against build progress rather than as a single lump sum. Lenders size facilities against gross development value (GDV) and loan-to-cost (LTC), retain an interest roll-up, and look closely at the developer’s experience and the exit. Development exit finance can then replace a development loan once a scheme is complete but not yet sold, easing cash flow and reducing the rate.",
+            "Development finance funds ground-up construction and heavy refurbishment, released in stages against build progress rather than as a single lump sum. Lenders size facilities against gross development value (GDV) and loan-to-cost (LTC), retain an interest roll-up, and look closely at the developer's experience and the exit. Development exit finance can then replace a development loan once a scheme is complete but not yet sold, easing cash flow and reducing the rate.",
             "Development profits are usually taxed as trading income, not capital gains, so the funding structure and the tax structure of a scheme should be planned together from the outset.",
           ],
         },
