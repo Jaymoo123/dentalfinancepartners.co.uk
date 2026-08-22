@@ -109,7 +109,7 @@ const landlordTaxPrompts: Prompt[] = [
 ];
 
 /**
- * The taxes, as a card grid rather than full-width bars.
+ * The six taxes, as a card grid rather than full-width bars.
  *
  * These were `label` + `body` strings that ran on grammatically ("Income tax
  * every year *on your rental profit*"), which reads fine in a sentence and not
@@ -147,6 +147,12 @@ const propertyTaxes: CoverageItem[] = [
     body: "Replaces income tax if you hold through a limited company: 19% to 25% on profits, then 10.75% to 39.35% on what you extract.",
     outcome: "Two charges instead of one, on company-held property",
     icon: Building2,
+  },
+  {
+    title: "Annual tax on enveloped dwellings",
+    body: "An annual charge on company-held residential property worth over £500,000. Letting to unconnected tenants relieves it in full, but only if you claim.",
+    outcome: "A return every April, even when the relief reduces it to nil",
+    icon: CalendarClock,
   },
 ];
 
@@ -514,8 +520,8 @@ export default function LandlordTaxPage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
                 What you pay depends on your other income, how geared the property is, whose name it is in and how
-                long you hold it. Several different taxes touch a let property, and they arrive at different points
-                in the life of the investment.
+                long you hold it. Six different taxes touch a let property, and they arrive at different points in
+                the life of the investment.
               </p>
               <p className="mt-6 text-base font-bold leading-relaxed text-slate-900 text-balance sm:text-lg">
                 If one of these is the sentence going round your head, the answer is a number, and you can have it.
@@ -541,7 +547,7 @@ export default function LandlordTaxPage() {
           <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">What tax do UK landlords pay?</h2>
           <Prose>
             <p>
-              Five taxes touch a let residential property, and they arrive at different points in the life of the
+              Six taxes touch a let residential property, and they arrive at different points in the life of the
               investment.
             </p>
             <p>
