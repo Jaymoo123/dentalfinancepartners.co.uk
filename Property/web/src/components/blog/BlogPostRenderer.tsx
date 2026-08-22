@@ -81,6 +81,11 @@ const CTA_BY_CATEGORY: Record<string, CTACopy> = {
     body: "Furnished holiday lets, mixed-use, HMOs, commercial, agricultural. Get a specialist who has handled your property type before.",
     button: "Book a specialist call",
   },
+  "property-finance": {
+    heading: "Financing a purchase or a refinance?",
+    body: "Get a property tax specialist to read the finance and the tax together, from SPV buy-to-let and interest relief to bridging costs and how development profits are taxed. Practical recommendations, no hard sell.",
+    button: "Book a finance and tax review",
+  },
   "non-resident-landlord-tax": {
     heading: "UK property and a foreign tax position to manage?",
     body: "Get a property tax specialist with cross-border experience. NRL scheme, treaty credit, FIG regime, NRCGT, we have walked these for landlords like you.",
