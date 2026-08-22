@@ -69,17 +69,15 @@ export function BlogCategoryHub({
     date: post.date,
   }));
 
+  // No BreadcrumbList node here. The <Breadcrumb> rendered below emits its own from
+  // buildBreadcrumbJsonLd (components/ui/Breadcrumb.tsx:30), and carrying one in this
+  // @graph too made all ten hubs emit BreadcrumbList TWICE. Phase 0.10 hit the identical
+  // defect on the five pillar pages and set the precedent: drop the page-level copy, keep
+  // the shared component's, so the hubs stay on the same site-wide emitter as every other
+  // route. The CollectionPage node is unaffected, so the hub loses no schema.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
-          { "@type": "ListItem", position: 3, name: categoryName },
-        ],
-      },
       {
         "@type": "CollectionPage",
         name: collectionName ?? categoryName,
