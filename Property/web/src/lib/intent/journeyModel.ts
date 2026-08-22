@@ -71,7 +71,13 @@ function load(): Trail {
   try {
     const raw = window.sessionStorage.getItem(STORAGE_KEY);
     if (raw) {
-      trail = JSON.parse(raw) as Trail;
+      // Validate rather than cast. Every consumer (nodeFor, recordPath, onEvent,
+      // getJourneyProfile) routes through load(), and getJourneyProfile runs during
+      // SpecialistWidget's render, which sits ABOVE app/error.tsx in the root layout.
+      // A stored value of the wrong shape would therefore be a full-screen
+      // Application Error, not a broken widget. Covered by src/tests/journey-model.test.ts.
+      const parsed = JSON.parse(raw) as Partial<Trail> | null;
+      trail = parsed && Array.isArray(parsed.pages) ? { ...emptyTrail(), ...parsed, pages: parsed.pages } : emptyTrail();
       return trail;
     }
   } catch {
