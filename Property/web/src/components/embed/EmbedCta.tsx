@@ -13,7 +13,7 @@ export function EmbedCta({ campaign, label }: { campaign: string; label?: string
         href={href}
         target="_blank"
         rel="noopener"
-        className="inline-flex w-full items-center justify-center bg-emerald-600 px-6 py-3.5 text-sm sm:text-base font-bold text-white border-b-4 border-emerald-800 hover:bg-emerald-700 active:border-b-2 active:translate-y-0.5 transition-colors"
+        className="inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-6 py-3.5 text-sm sm:text-base font-bold text-white hover:bg-emerald-700 active:bg-emerald-800 transition-colors"
       >
         {label ?? "Speak to a specialist property accountant →"}
       </a>

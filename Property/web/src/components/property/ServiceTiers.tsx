@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Check } from "lucide-react";
 
 const tiers = [
   {
@@ -57,7 +58,7 @@ export function ServiceTiers() {
       {tiers.map((tier) => (
         <div
           key={tier.name}
-          className={`relative flex flex-col bg-white border-2 transition-all h-full ${
+          className={`relative flex flex-col rounded-xl bg-white border-2 transition-all h-full ${
             tier.featured 
               ? "border-emerald-600 shadow-lg md:scale-105" 
               : "border-slate-200 hover:border-emerald-600 hover:shadow-md"
@@ -65,7 +66,7 @@ export function ServiceTiers() {
         >
           {tier.featured && (
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <div className="bg-emerald-600 px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
+              <div className="rounded-full bg-emerald-600 px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
                 Most Popular
               </div>
             </div>
@@ -78,17 +79,17 @@ export function ServiceTiers() {
             <ul className="flex-1 space-y-2 sm:space-y-3 mb-6 sm:mb-8">
               {tier.features.map((feature, idx) => (
                 <li key={idx} className="flex items-start gap-2 sm:gap-3 text-xs sm:text-sm text-slate-700">
-                  <span className="text-emerald-600 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
+                  <Check aria-hidden className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-emerald-600" strokeWidth={3} />
                   <span className={feature.endsWith(":") ? "font-bold text-slate-900" : ""}>{feature}</span>
                 </li>
               ))}
             </ul>
             <Link
               href={tier.ctaHref}
-              className={`block w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all border-t-4 mt-auto min-h-[44px] flex items-center justify-center ${
+              className={`block w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all rounded-xl mt-auto min-h-[44px] flex items-center justify-center ${
                 tier.featured
-                  ? "bg-emerald-600 border-emerald-800 text-white hover:bg-emerald-700 active:border-t-2 active:translate-y-0.5"
-                  : "bg-slate-50 border-slate-300 text-slate-900 hover:bg-slate-100 hover:border-emerald-600 active:border-t-2 active:translate-y-0.5"
+                  ? "bg-emerald-600 text-white hover:bg-emerald-700 active:bg-emerald-800"
+                  : "bg-slate-50 border-2 border-slate-300 text-slate-900 hover:bg-slate-100 hover:border-emerald-600 active:bg-slate-200"
               }`}
             >
               {tier.cta}
