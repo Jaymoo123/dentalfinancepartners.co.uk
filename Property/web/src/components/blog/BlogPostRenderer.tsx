@@ -26,48 +26,52 @@ type BlogPostRendererProps = {
 
 type CTACopy = { heading: string; body: string; button: string };
 
+// Keyed on the category SLUG, never the raw frontmatter string: three categories carry a
+// two-way spelling split ("&" vs "and", "(MTD)" vs "MTD") across 57 posts, and every variant
+// slugifies to the same hub. Keying on the label made those 57 miss every entry and fall
+// through to the generic CTA.
 const CTA_BY_CATEGORY: Record<string, CTACopy> = {
-  "Section 24 & Tax Relief": {
+  "section-24-and-tax-relief": {
     heading: "Want your Section 24 position checked?",
     body: "Get a property tax specialist to run the numbers on your portfolio under the s.24 finance cost restriction. Free 20-minute call, no hard sell.",
     button: "Book a Section 24 review",
   },
-  "Incorporation & Company Structures": {
+  "incorporation-and-company-structures": {
     heading: "Considering incorporating your portfolio?",
     body: "Incorporation is one of the most consequential decisions a landlord can make. Get a specialist to model the SDLT, CGT and ongoing tax impact for your specific portfolio.",
     button: "Book an incorporation review",
   },
-  "Making Tax Digital (MTD)": {
+  "making-tax-digital-mtd": {
     heading: "Get your MTD ITSA setup checked before April 2026",
     body: "Run a parallel-quarter dry run with us. We will check your records, your software, and your digital links so the mandate is a non-event.",
     button: "Book an MTD readiness call",
   },
-  "Capital Gains Tax": {
+  "capital-gains-tax": {
     heading: "Selling a property? Get the CGT position checked first",
     body: "The 60-day CGT reporting deadline is unforgiving. Get a specialist to compute your gain, model any reliefs, and file on time.",
     button: "Book a CGT review",
   },
-  "Portfolio Management": {
+  "portfolio-management": {
     heading: "Want a second pair of eyes on your portfolio?",
     body: "Get a property tax specialist to review your portfolio structure, reliefs, and tax exposure. Practical recommendations, no hard sell.",
     button: "Book a portfolio review",
   },
-  "Property Accountant Services": {
+  "property-accountant-services": {
     heading: "Want a fixed-fee property accountant?",
     body: "Get a property tax specialist to handle your accounts, tax returns, and ongoing advice. Fixed fees, 24-hour response, no surprises.",
     button: "Book an introduction call",
   },
-  "Landlord Tax Essentials": {
+  "landlord-tax-essentials": {
     heading: "Want your landlord tax position checked?",
     body: "Get a property tax specialist to run through your situation. Practical recommendations, no hard sell.",
     button: "Book a consultation",
   },
-  "Property Types & Specialist Tax": {
+  "property-types-and-specialist-tax": {
     heading: "Have a specialist property tax question?",
     body: "Furnished holiday lets, mixed-use, HMOs, commercial, agricultural. Get a specialist who has handled your property type before.",
     button: "Book a specialist call",
   },
-  "Non-Resident Landlord Tax": {
+  "non-resident-landlord-tax": {
     heading: "UK property and a foreign tax position to manage?",
     body: "Get a property tax specialist with cross-border experience. NRL scheme, treaty credit, FIG regime, NRCGT, we have walked these for landlords like you.",
     button: "Book a cross-border review",
@@ -131,13 +135,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         body: getActiveCta(niche).blog.cta_body,
         button: getActiveCta(niche).blog.cta_button,
       }
-    : (CTA_BY_CATEGORY[post.category] ?? {
+    : (CTA_BY_CATEGORY[categorySlug] ?? {
         heading: getActiveCta(niche).blog.cta_heading,
         body: getActiveCta(niche).blog.cta_body,
         button: getActiveCta(niche).blog.cta_button,
       });
 
-  const isMTDPost = post.category === "Making Tax Digital (MTD)";
+  const isMTDPost = categorySlug === "making-tax-digital-mtd";
 
   const reviewerName = post.reviewedBy?.trim();
   const reviewerCreds = post.reviewerCredentials?.trim();
