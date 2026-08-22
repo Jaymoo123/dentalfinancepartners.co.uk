@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { StampDutyCalculator } from "@/components/calculators/StampDutyCalculator";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
@@ -122,7 +122,7 @@ export default function StampDutyCalculatorPage() {
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Stamp Duty Calculator UK (2026/27)
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-slate-300">
+          <p className="mt-4 max-w-3xl text-lg text-slate-300">
             Work out how much stamp duty you pay on a property in England &amp; Northern Ireland. Put in
             your price, tick the boxes for an additional property, a first-time buyer or a non-UK
             resident, and the calculator gives you the figure and your effective rate.
@@ -131,11 +131,12 @@ export default function StampDutyCalculatorPage() {
       </section>
 
       <section className="bg-slate-50 py-12 sm:py-16">
+        {/* No inner clamp: `max-w-5xl` left the calculator 64px narrower than
+            every other section on the page, so its edges did not line up
+            with the heading below it. */}
         <div className={siteContainerLg}>
-          <div className="max-w-5xl">
-            <StampDutyCalculator variant="page" />
-            <CalculatorPageResources slug="stamp-duty-calculator" />
-          </div>
+          <StampDutyCalculator variant="page" />
+          <CalculatorPageResources slug="stamp-duty-calculator" />
         </div>
       </section>
 
@@ -275,25 +276,36 @@ export default function StampDutyCalculatorPage() {
               if that is the only figure you need.
             </p>
 
-            <div
-              id="get-expert-help"
-              className="mt-12 scroll-mt-24 border-2 border-emerald-600/20 bg-gradient-to-br from-emerald-50 to-teal-50 p-8 sm:p-10 rounded-2xl"
-            >
-              <h2 className="text-2xl font-bold text-emerald-700 sm:text-3xl">
-                Buying a property? Get the tax right from the start.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-slate-600">
-                Stamp duty is only the first tax decision. We help landlords and investors structure purchases
-                tax-efficiently, checking surcharge-refund routes, weighing incorporation, and planning the ongoing
-                tax on the property. Tell us about your purchase for a no-obligation review.
-              </p>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Request a property tax review" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Was a pale mint gradient card holding a bare LeadForm, boxed to
+          `max-w-3xl` mid-page. Now the same full-bleed navy brick panel every
+          other page converts on.
+
+          `redirectOnSuccess` stays false, as it was on the card: a reader who has
+          just entered their figures should keep the result on screen rather than
+          be thrown to /thank-you.
+
+          `id` is kept: StampDutyCalculator links to #get-expert-help from its
+          result panel. The slate-50 FAQ section below is what keeps this navy
+          panel off the navy footer (the adjacency rule). */}
+      <div id="get-expert-help" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Free review"
+          title="Buying a property? Get the tax right from the start."
+          description="Stamp duty is only the first tax decision. We help landlords and investors structure purchases tax-efficiently, checking surcharge-refund routes, weighing incorporation, and planning the ongoing tax on the property. Tell us about your purchase for a no-obligation review."
+          proofPoints={[
+            { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
+            { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
+            { title: "24-hour response", detail: "Usually the same working day" },
+          ]}
+          submitLabel="Request a property tax review"
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+          redirectOnSuccess={false}
+        />
+      </div>
 
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
