@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { locationHref } from "@/lib/locations";
 
 /**
  * The "Across the UK" locations strip.
@@ -21,7 +22,9 @@ export function LocationChips({ className = "" }: { className?: string }) {
       {siteConfig.locations.map((loc) => (
         <Link
           key={loc.slug}
-          href={`/locations/${loc.slug}`}
+          // Ours: locationHref, not a raw template literal. It is the single
+          // point of control for city URL resolution after the 08-05 reversal.
+          href={locationHref(loc.slug)}
           className="rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-xs sm:text-sm font-semibold text-slate-700 hover:border-emerald-600 hover:text-emerald-700 transition-colors"
         >
           {loc.title.replace("Property accountants in ", "")}

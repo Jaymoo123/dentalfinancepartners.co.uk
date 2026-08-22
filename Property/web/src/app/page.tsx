@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import dynamic from "next/dynamic";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
-import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
+import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { btnOnDark, btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
+import { LocationChips } from "@/components/property/LocationChips";
 import { siteConfig } from "@/config/site";
 import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
@@ -12,36 +12,21 @@ import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
-import { ServiceTiers } from "@/components/property/ServiceTiers";
+import { StatsCounter } from "@/components/property/StatsCounter";
+import { siteStats } from "@/lib/site-stats";
+import { WhyUsList } from "@/components/property/WhyUsList";
+import { ProblemStatement } from "@/components/property/ProblemStatement";
+import { TestimonialsSection } from "@/components/property/TestimonialsSection";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { getAllPosts, getCategorySlug, categoryDisplayName } from "@/lib/blog";
-import { locationHref } from "@/lib/locations";
-import { essentialGuides } from "@/lib/essential-guides";
-import { ArrowRight } from "lucide-react";
-
-// Lazy load calculators (below the fold, client-only)
-const Section24Calculator = dynamic(
-  () => import("@/components/calculators/Section24Calculator").then(mod => ({ default: mod.Section24Calculator })),
-  { loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
-);
-
-const IncorporationCostCalculator = dynamic(
-  () => import("@/components/calculators/IncorporationCostCalculator").then(mod => ({ default: mod.IncorporationCostCalculator })),
-  { loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
-);
-
-const MTDCheckerCalculator = dynamic(
-  () => import("@/components/calculators/MTDCheckerCalculator").then(mod => ({ default: mod.MTDCheckerCalculator })),
-  { loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-64 bg-slate-100 rounded"></div></div> }
-);
-
-const PortfolioProfitabilityCalculator = dynamic(
-  () => import("@/components/calculators/PortfolioProfitabilityCalculator").then(mod => ({ default: mod.PortfolioProfitabilityCalculator })),
-  { loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
-);
+import { essentialGuides, guideGroups } from "@/lib/essential-guides";
+import { ArrowRight, BarChart3, Briefcase, Building2, CalendarClock, Check, Clock, MapPin, PoundSterling, RefreshCw, ShieldCheck, Target } from "lucide-react";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 export const metadata: Metadata = {
   title: "Property Accountants UK | Specialist Landlord Tax Advice",
   description:
+    // Ours (c218d7a6): shortened to fit the SERP snippet.
     "Specialist property accountants for UK landlords and investors. Section 24, MTD, incorporation and CGT planning. Fixed fees and free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
@@ -64,55 +49,48 @@ const services = [
   {
     title: "Section 24 Planning",
     description: "Calculate your tax hit and explore mitigation strategies",
-    icon: "📊",
+    icon: BarChart3,
   },
   {
     title: "MTD Compliance",
     description: "Quarterly digital reporting from April 2026",
-    icon: "📅",
+    icon: CalendarClock,
   },
   {
     title: "Incorporation Analysis",
     description: "Full feasibility modelling: CGT, SDLT, break-even",
-    icon: "🏢",
+    icon: Building2,
   },
   {
     title: "Portfolio Reporting",
     description: "Property-by-property profitability tracking",
-    icon: "💼",
+    icon: Briefcase,
   },
 ];
 
-const whoWeHelp = [
+// Same figures as the /about stats bar — keep the two in sync.
+
+// "Who we are" intro cards — firm traits, distinct from the services grid below.
+const whoWeAre = [
   {
-    title: "Individual Landlords",
-    subtitle: "1-3 properties",
-    points: [
-      "Self Assessment with rental schedules",
-      "Section 24 tax planning",
-      "MTD compliance support",
-      "Incorporation feasibility",
-    ],
+    icon: Target,
+    title: "Property-only focus",
+    body: "Every client is a landlord, investor, or developer. No restaurants, no retailers, just property.",
   },
   {
-    title: "Portfolio Owners",
-    subtitle: "4-10 properties",
-    points: [
-      "Management accounts",
-      "Property-by-property reporting",
-      "Limited company accounts",
-      "Acquisition support",
-    ],
+    icon: MapPin,
+    title: "UK-wide coverage",
+    body: "From single rental flats to thirty-property portfolios, anywhere in the UK.",
   },
   {
-    title: "Large Portfolios",
-    subtitle: "10+ properties",
-    points: [
-      "Group accounting",
-      "Corporation tax planning",
-      "Disposal planning (CGT)",
-      "Portfolio restructuring",
-    ],
+    icon: PoundSterling,
+    title: "Fixed fees",
+    body: "Quoted up front with no surprises, and no hard sell, ever.",
+  },
+  {
+    icon: Clock,
+    title: "24hr response",
+    body: "Every enquiry answered within one working day, usually the same day.",
   },
 ];
 
@@ -127,36 +105,27 @@ const trustBadges = [
 // The comprehensive tax-area coverage list is shared with the /blog index via
 // src/lib/essential-guides.ts (single canonical hub per topic, no drift).
 
-// Anonymised social proof only (no client names), per the lead-gen model.
-const testimonials = [
-  {
-    quote: "They modelled our Section 24 position properly for the first time and showed us exactly where incorporation did and did not make sense. No hard sell, just the numbers.",
-    attribution: "Higher-rate landlord, 7-property portfolio, London",
-  },
-  {
-    quote: "We were weeks from missing the 60-day capital gains deadline on a sale. They turned the computation around and filed on time. Worth the fee on that alone.",
-    attribution: "Buy-to-let investor, Manchester",
-  },
-  {
-    quote: "Getting ready for Making Tax Digital felt overwhelming. They set up the software, mapped every property, and now the quarterly filing just happens.",
-    attribution: "Individual landlord, 2 properties, Leeds",
-  },
-];
+// Testimonial data now lives in components/property/TestimonialsSection.tsx,
+// shared with /services.
 
 const whyUs = [
   {
+    icon: Building2,
     title: "Property is all we do",
     body: "We work only with landlords, investors, and developers, so the property rules are core competence rather than an occasional sideline.",
   },
   {
+    icon: ShieldCheck,
     title: "Specialist depth where generalists slip",
     body: "Section 24, the 60-day CGT window, and incorporation modelled correctly, not treated as an afterthought.",
   },
   {
+    icon: PoundSterling,
     title: "Fixed fees, no surprises",
     body: "Quoted up front, and for most landlords recovered several times over through reliefs claimed and penalties avoided.",
   },
   {
+    icon: RefreshCw,
     title: "Up to date with every change",
     body: "The Finance Act 2026 measures, the 2027 income tax rate change, and the falling MTD thresholds are built into your plan.",
   },
@@ -211,6 +180,11 @@ const faqs = [
 ];
 
 export default function HomePage() {
+  // Ours (1c066426 / 7ab42441 / 7f7eae12): the live CTA variant. One flag in
+  // niche.config.json switches the hero and the closing block between the
+  // leadgen and packages propositions, and both are instrumented.
+  const activeCta = getActiveCta(niche);
+  const packagesMode = isPackagesMode(niche);
   const orgSchema = buildOrganizationJsonLd();
   const faqSchema = buildFaqPageJsonLd(faqs);
 
@@ -290,9 +264,6 @@ export default function HomePage() {
     categorySlug: getCategorySlug(post),
   }));
 
-  const activeCta = getActiveCta(niche);
-  const packagesMode = isPackagesMode(niche);
-
   return (
     <>
       <StickyCTA />
@@ -306,39 +277,36 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
-      {/* Hero Section with Large Property Image */}
-      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=85"
-          alt="UK residential property"
-          fill
-          className="object-cover brightness-75"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/90 to-slate-900/70" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+      {/* Hero Section — solid navy with etched brickwork on the right (tablet/desktop only) */}
+      <section className="relative flex items-center py-10 sm:py-12 lg:py-14 min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] overflow-hidden bg-slate-900">
+        <HeroBrickBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
-            <div className="inline-block bg-blue-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
+            <div className="inline-flex items-center gap-2.5 rounded-full bg-blue-400/10 backdrop-blur-lg ring-1 ring-white/25 px-4 py-2 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
+              <span className="relative flex h-2.5 w-2.5" aria-hidden>
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+              </span>
               MTD is now live for landlords
             </div>
             <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
               Property accountants for UK landlords and investors
             </h1>
-            <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-white sm:text-xl lg:text-2xl max-w-2xl">
-              Property tax sorted, your way. Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation.
+            <p className="mt-4 sm:mt-6 text-base leading-relaxed text-white/90 sm:text-lg lg:text-xl max-w-3xl">
+              Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation. Property tax sorted, your way, with ease.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href={activeCta.hero_primary.href} data-cta="hero_book" data-cta-placement="hero" data-cta-goal={packagesMode ? "pricing" : "form"} data-cta-variant={niche.cta.variant} className={`${btnPrimary} bg-blue-600 hover:bg-blue-700 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+              <Link href={activeCta.hero_primary.href} data-cta="hero_book" data-cta-placement="hero" data-cta-goal={packagesMode ? "pricing" : "form"} data-cta-variant={niche.cta.variant} className={`${btnPrimary} bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
                 {activeCta.hero_primary.label}
               </Link>
-              <Link href="#calculators" data-cta="hero_calculators" data-cta-placement="hero" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+              <Link href="#calculators" data-cta="hero_calculators" data-cta-placement="hero" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white hover:text-emerald-700 hover:border-white text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
                 Try free calculators
               </Link>
             </div>
             <div className="mt-6 sm:mt-8 flex flex-wrap gap-4 sm:gap-6 text-xs sm:text-sm text-slate-200">
               {trustBadges.map((badge) => (
                 <div key={badge} className="flex items-center gap-2">
-                  <div className="h-1.5 w-1.5 bg-emerald-400" />
+                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                   <span className="font-semibold">{badge}</span>
                 </div>
               ))}
@@ -347,52 +315,99 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats Bar (shared figures with /about) — counts up on scroll into view.
+          White strip: cleanest break from the navy hero, and the hairline keeps it
+          distinct from the white sections further down. */}
+      <section className="border-b border-slate-200 bg-white py-5 sm:py-7">
+        <div className={siteContainerLg}>
+          <StatsCounter stats={siteStats} />
+        </div>
+      </section>
+
       {/* MTD Urgent Banner */}
-      <section className="border-y-2 border-slate-200">
+      <section>
         <div className={siteContainerLg}>
           <MTDCountdown />
         </div>
       </section>
 
+      {/* Self-identification: the reader's problem, before any claim about us */}
+      <ProblemStatement />
+
       {/* National property-accountant intro */}
       <section className="bg-white py-10 sm:py-14">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
+            <Eyebrow>Who we are</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-3 sm:mb-4">
+              Property tax is all we do
+            </h2>
             <p className="text-base sm:text-lg leading-relaxed text-slate-700">
-              Property Tax Partners is a firm of specialist property accountants working with landlords, buy-to-let investors, and property developers across the UK. We work only with property, so Section 24, the Non-Resident Landlord Scheme, capital gains on disposals, ATED, and the personal-versus-limited-company decision are core competence rather than an occasional sideline.
+              Property Tax Partners is a specialist property accountancy firm for UK landlords, buy-to-let investors, and developers. Property is all we do, so{" "}
+              <Link href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-700">Section 24</Link>,{" "}
+              <Link href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-700">Making Tax Digital</Link>{" "}
+              (live since 6 April 2026), the 60-day CGT window, and the{" "}
+              <Link href="/incorporation" className="text-emerald-600 underline underline-offset-2 hover:text-emerald-700">incorporation</Link>{" "}
+              decision are core competence, not a sideline.
             </p>
-            <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-700">
-              Whether you hold one rental flat or a portfolio of thirty, a property tax accountant turns the rules into a plan: modelling your{" "}
-              <Link href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">Section 24</Link>{" "}
-              finance-cost restriction, getting you compliant with{" "}
-              <Link href="/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">Making Tax Digital for Income Tax</Link>{" "}
-              (live since 6 April 2026), running the{" "}
-              <Link href="/incorporation" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">incorporation</Link>{" "}
-              arithmetic before you commit, and filing your capital gains within the 60-day HMRC window. Fixed fees, 24-hour response, no hard sell.
-            </p>
+          </div>
+          <div className="mt-8 sm:mt-10 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {whoWeAre.map((item) => (
+              <div key={item.title} className="rounded-xl bg-slate-50 p-5 sm:p-6 transition-colors border border-transparent hover:border-emerald-600">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 mb-3">
+                  <item.icon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
+                </div>
+                <h3 className="text-sm sm:text-base font-bold text-slate-900">{item.title}</h3>
+                <p className="mt-1.5 text-xs sm:text-sm leading-relaxed text-slate-600">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          {/* Locations strip (absorbed from the old "Areas we serve" section) */}
+          <LocationChips className="mt-6 sm:mt-8" />
+        </div>
+      </section>
+
+      {/* Why landlords choose a specialist */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16 lg:items-start">
+            <div>
+              <Eyebrow>Why choose us</Eyebrow>
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+                Why landlords choose a specialist
+              </h2>
+              <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+                A generalist accountant can file your return. A specialist property accountant makes sure the structure, the reliefs, and the deadlines are right before you ever get there.
+              </p>
+            </div>
+            <WhyUsList items={whyUs.map(({ title, body }) => ({ title, body }))} />
           </div>
         </div>
       </section>
 
       {/* Core Services - Visual Grid */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-sky-50/60 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <div className="max-w-3xl mb-8 sm:mb-12">
+            <Eyebrow>Our services</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               What a property accountant does for landlords
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Property-only focus means we understand Section 24, MTD, incorporation, and CGT inside out.
+              Property-only focus means we understand Section 24, MTD, incorporation, and CGT inside out, at every scale from individual landlords with a single flat to large portfolio owners.
             </p>
           </div>
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
-              <div key={service.title} className="text-center group">
-                <div className="mx-auto flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center bg-gradient-to-br from-emerald-500 to-emerald-700 text-3xl sm:text-4xl mb-3 sm:mb-4 shadow-lg hover:shadow-xl transition-all hover:scale-105 backdrop-blur-sm border border-emerald-400/20">
-                  {service.icon}
-                </div>
+              <div
+                key={service.title}
+                className="rounded-xl border border-emerald-100 bg-white p-6 shadow-[0_6px_20px_-8px_rgba(5,150,105,0.28)] transition-colors duration-200 hover:border-emerald-300"
+              >
+                <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100">
+                  <service.icon aria-hidden className="h-6 w-6" strokeWidth={1.75} />
+                </span>
                 <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
-                <p className="mt-1.5 sm:mt-2 text-sm text-slate-600">{service.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">{service.description}</p>
               </div>
             ))}
           </div>
@@ -402,246 +417,105 @@ export default function HomePage() {
       {/* Comprehensive tax-area coverage */}
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <div className="max-w-3xl mb-8 sm:mb-12">
+            <Eyebrow>What we cover</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               The tax areas a property accountant handles
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
               From the everyday return to the once-in-a-portfolio decision, here is the full scope we cover for UK landlords and investors.
             </p>
           </div>
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {essentialGuides.map((area) => (
-              <div key={area.title} className="bg-white p-5 sm:p-6 border-l-4 border-emerald-600 shadow-sm">
-                <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                  <Link href={area.href} className="hover:text-emerald-700 transition-colors">{area.title}</Link>
-                </h3>
-                <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-600">{area.blurb}</p>
+          <div className="grid gap-4 sm:gap-6 lg:grid-cols-3">
+            {guideGroups.map((g) => (
+              <div key={g.key} className="rounded-xl bg-white p-5 sm:p-6 shadow-sm flex flex-col">
+                <div className="border-b border-slate-100 pb-4 sm:pb-5">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{g.label}</h3>
+                  <p className="mt-1 text-xs sm:text-sm text-slate-500">{g.blurb}</p>
+                </div>
+                <div className="mt-2 flex flex-col">
+                  {essentialGuides.filter((area) => area.group === g.key).map((area) => (
+                    <Link
+                      key={area.title}
+                      href={area.href}
+                      className="group -mx-2 flex items-center gap-3 rounded-xl p-2.5 sm:p-3 transition-colors hover:bg-slate-50"
+                    >
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:bg-emerald-600 group-hover:text-white">
+                        <area.icon aria-hidden className="h-4 w-4" strokeWidth={1.75} />
+                      </span>
+                      <span className="min-w-0 flex-1 text-sm sm:text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                        {area.title}
+                      </span>
+                      <ArrowRight aria-hidden className="h-4 w-4 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-emerald-600" />
+                    </Link>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Service Tiers */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-              Choose your level of support
-            </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              From free calculators to full-service accounting. Start with DIY tools, upgrade when you need expert help.
-            </p>
-          </div>
-          <ServiceTiers />
         </div>
       </section>
 
       {/* Calculators Section */}
       <section id="calculators" className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="inline-block bg-emerald-600 px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
-              Free tools
-            </div>
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <div className="max-w-3xl mb-8 sm:mb-12">
+            <Eyebrow>Free tools</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               Calculate your property tax position
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Get instant answers on Section 24, incorporation costs, MTD compliance, and portfolio profitability.
+              Get instant answers on Section 24, incorporation costs, MTD compliance, and portfolio profitability. Select a calculator below, enter your figures, and see where you stand.
             </p>
           </div>
-          <div className="space-y-12 sm:space-y-16">
-            <div id="section24">
-              <Section24Calculator />
-            </div>
-            <div id="incorporation">
-              <IncorporationCostCalculator />
-            </div>
-            <div id="mtd">
-              <MTDCheckerCalculator />
-            </div>
-            <div id="portfolio">
-              <PortfolioProfitabilityCalculator />
-            </div>
-          </div>
+          <CalculatorTabs />
         </div>
       </section>
 
-      {/* Property Image Section */}
-      <section className="relative h-72 sm:h-80 lg:h-96 overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=2000&q=85"
-          alt="UK property portfolio"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-slate-900/70" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
-          <div className="max-w-2xl">
-            <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Landlords at every scale
-            </h2>
-            <p className="mt-3 sm:mt-4 text-lg sm:text-xl text-slate-200">
-              From individual landlords to large portfolio owners. We understand property accounting.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Who We Help */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
-            {whoWeHelp.map((segment) => (
-              <div key={segment.title} className="bg-slate-50 p-6 sm:p-8 border-l-4 border-emerald-600">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900">{segment.title}</h3>
-                <p className="mt-2 text-xs sm:text-sm font-bold text-emerald-700 uppercase tracking-wider">{segment.subtitle}</p>
-                <ul className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
-                  {segment.points.map((point, idx) => (
-                    <li key={idx} className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base text-slate-700">
-                      <span className="text-emerald-600 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Areas we serve */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="max-w-3xl mb-6 sm:mb-8">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
-              Property accountants across the UK
-            </h2>
-            <p className="mt-3 text-base sm:text-lg text-slate-600">
-              Tax law is national, so we act for landlords anywhere in the UK. We also publish city-specific guidance for the markets where we work most.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {siteConfig.locations.map((loc) => (
-              <Link
-                key={loc.slug}
-                href={locationHref(loc.slug)}
-                className="bg-white border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-600 hover:text-emerald-700 transition-colors"
-              >
-                {loc.title}
-              </Link>
-            ))}
-            <Link
-              href="/locations"
-              className="bg-white border border-slate-200 px-4 py-2 text-sm font-semibold text-emerald-700 hover:border-emerald-600 transition-colors"
-            >
-              All locations
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Why landlords choose a specialist */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="grid gap-8 lg:grid-cols-3 lg:gap-12">
-            <div className="lg:col-span-1">
-              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
-                Why landlords choose a specialist
-              </h2>
-              <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-                A generalist accountant can file your return. A specialist property accountant makes sure the structure, the reliefs, and the deadlines are right before you ever get there.
-              </p>
-              <p className="mt-4 text-sm sm:text-base text-slate-600">
-                Our team are qualified accountants who work only with property, and we keep current with every change that affects landlords.
-              </p>
-            </div>
-            <div className="lg:col-span-2 grid gap-5 sm:gap-6 sm:grid-cols-2">
-              {whyUs.map((item) => (
-                <div key={item.title} className="flex gap-3 sm:gap-4">
-                  <span className="mt-1 text-emerald-600 font-bold flex-shrink-0 text-lg">✓</span>
-                  <div>
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
-                    <p className="mt-1 text-sm sm:text-base leading-relaxed text-slate-600">{item.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What landlords say (anonymised social proof) */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-              What landlords say
-            </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Anonymised feedback from landlords and investors we have worked with.
-            </p>
-          </div>
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <figure key={t.attribution} className="bg-white p-6 sm:p-8 border-t-4 border-emerald-600 shadow-sm flex flex-col">
-                <div className="text-4xl leading-none text-emerald-600 font-serif" aria-hidden="true">&ldquo;</div>
-                <blockquote className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700 flex-grow">
-                  {t.quote}
-                </blockquote>
-                <figcaption className="mt-4 text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wider">
-                  {t.attribution}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* What landlords say (anonymised social proof) — navy band, echoes hero.
+          Shared with /services via TestimonialsSection. */}
+      <TestimonialsSection />
 
       {/* Latest Insights */}
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <div className="max-w-6xl">
+            <div className="mb-8 sm:mb-12">
+              <Eyebrow>From the blog</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
                 Latest property tax insights
               </h2>
               <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
                 Practical guidance on Section 24, MTD, incorporation, and portfolio management
               </p>
             </div>
-            <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
+            <div className="divide-y divide-slate-200 border-y border-slate-200">
               {recentPosts.map((post) => (
-                <article
-                  key={post.slug}
-                  className="bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden group"
-                >
+                <article key={post.slug} className="group">
                   <Link
                     href={`/blog/${post.categorySlug}/${post.slug}`}
-                    className="block p-6 h-full flex flex-col"
+                    className="flex items-center gap-4 py-4 sm:gap-6 sm:py-5"
                   >
-                    <div className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
+                    <span className="hidden w-40 shrink-0 text-xs font-bold uppercase tracking-wider text-emerald-700 sm:block">
                       {categoryDisplayName(post.categorySlug, post.category)}
-                    </div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
-                      {post.title}
-                    </h3>
-                    {post.summary && (
-                      <p className="text-slate-600 mb-4 flex-grow line-clamp-3 text-sm sm:text-base">
-                        {post.summary}
-                      </p>
-                    )}
-                    <div className="flex items-center text-emerald-600 font-medium text-sm mt-auto">
-                      Read article
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="mb-1 block text-xs font-bold uppercase tracking-wider text-emerald-700 sm:hidden">
+                        {categoryDisplayName(post.categorySlug, post.category)}
+                      </span>
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 transition-colors group-hover:text-emerald-700">
+                        {post.title}
+                      </h3>
+                      {post.summary && (
+                        <p className="mt-1 hidden text-sm text-slate-600 line-clamp-1 sm:block">{post.summary}</p>
+                      )}
+                    </span>
+                    <ArrowRight aria-hidden className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-emerald-600" />
                   </Link>
                 </article>
               ))}
             </div>
-            <div className="text-center mt-8 sm:mt-12">
+            <div className="mt-8 sm:mt-12">
               <Link
                 href="/blog"
                 className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold text-base sm:text-lg transition-colors"
@@ -654,26 +528,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact CTA with Image */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=2000&q=85"
-            alt="London property skyline"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-slate-900/90" />
-        </div>
+      {/* Contact CTA — navy with brickwork, matches hero */}
+      <section className="relative overflow-hidden bg-slate-900">
+        <HeroBrickBackdrop />
         <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16 items-start">
             <div>
-              <div className="inline-block bg-emerald-600 px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-bold text-white uppercase tracking-wider mb-4 sm:mb-6">
-                Get started
-              </div>
+              <Eyebrow onDark>Get started</Eyebrow>
+              {/* Ours: the closing block follows the live CTA variant. Their copy is
+                  the leadgen branch; the packages branch is unchanged from ours and
+                  carries home_cta_primary / home_cta_secondary, two live rows in
+                  vw_cta_performance that a straight take-theirs would have dropped. */}
               {packagesMode ? (
                 <>
-                  <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
+                  <h2 className="text-2xl font-bold text-white sm:text-4xl">
                     {activeCta.home_cta.heading}
                   </h2>
                   <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
@@ -697,7 +565,7 @@ export default function HomePage() {
                         data-cta-placement="home_cta"
                         data-cta-goal={activeCta.home_cta.secondary.href.startsWith("/contact") ? "form" : "pricing"}
                         data-cta-variant={niche.cta.variant}
-                        className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base px-6 py-3 text-center`}
+                        className={`${btnOnDark} text-base px-6 py-3 text-center`}
                       >
                         {activeCta.home_cta.secondary.label}
                       </Link>
@@ -706,7 +574,7 @@ export default function HomePage() {
                 </>
               ) : (
                 <>
-                  <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
+                  <h2 className="text-2xl font-bold text-white sm:text-4xl">
                     Get your property tax sorted today
                   </h2>
                   <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
@@ -717,27 +585,21 @@ export default function HomePage() {
               )}
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-4 text-slate-200">
-                  <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
-                    ✓
-                  </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 ring-1 ring-emerald-500/30"><Check aria-hidden className="h-6 w-6" strokeWidth={1.75} /></div>
                   <div>
                     <div className="font-bold text-white">24-hour response time</div>
                     <div className="text-sm text-slate-300">Usually same day</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 text-slate-200">
-                  <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
-                    ✓
-                  </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 ring-1 ring-emerald-500/30"><Check aria-hidden className="h-6 w-6" strokeWidth={1.75} /></div>
                   <div>
                     <div className="font-bold text-white">Fixed fees, no surprises</div>
                     <div className="text-sm text-slate-300">Transparent pricing</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 text-slate-200">
-                  <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
-                    ✓
-                  </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 ring-1 ring-emerald-500/30"><Check aria-hidden className="h-6 w-6" strokeWidth={1.75} /></div>
                   <div>
                     <div className="font-bold text-white">Property-only specialists</div>
                     <div className="text-sm text-slate-300">We only work with landlords</div>
@@ -746,7 +608,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-white p-6 sm:p-8 lg:p-10">
+            <div className="rounded-xl bg-white p-6 sm:p-8 lg:p-10">
               {packagesMode ? (
                 <>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Send us an enquiry</h3>
@@ -766,9 +628,11 @@ export default function HomePage() {
       {/* FAQ */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl lg:text-5xl">Common questions</h2>
-            <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
+          <div className="max-w-3xl">
+            <Eyebrow>FAQ</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-8 sm:mb-12">Common questions</h2>
+          </div>
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
               {faqs.map((faq, idx) => (
                 <AccordionItem key={idx} value={`faq-${idx}`}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
@@ -778,7 +642,6 @@ export default function HomePage() {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
         </div>
       </section>
     </>
