@@ -63,7 +63,7 @@ export default function Section24CalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <Section24Calculator variant="page" />
-            <CalculatorPageResources slug="section-24-calculator" pageTitle="Section 24 Tax Calculator" />
+            <CalculatorPageResources slug="section-24-calculator" />
           </div>
         </div>
       </section>

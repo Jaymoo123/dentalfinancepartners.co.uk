@@ -134,7 +134,7 @@ export default function StampDutyCalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <StampDutyCalculator variant="page" />
-            <CalculatorPageResources slug="stamp-duty-calculator" pageTitle="Stamp Duty (SDLT) Calculator" />
+            <CalculatorPageResources slug="stamp-duty-calculator" />
           </div>
         </div>
       </section>

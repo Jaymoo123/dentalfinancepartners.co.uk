@@ -63,7 +63,7 @@ export default function PortfolioProfitabilityCalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <PortfolioProfitabilityCalculator variant="page" />
-            <CalculatorPageResources slug="portfolio-profitability-calculator" pageTitle="Portfolio Profitability Calculator" />
+            <CalculatorPageResources slug="portfolio-profitability-calculator" />
           </div>
         </div>
       </section>

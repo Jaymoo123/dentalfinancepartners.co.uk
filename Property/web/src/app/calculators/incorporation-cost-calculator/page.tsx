@@ -63,7 +63,7 @@ export default function IncorporationCostCalculatorPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <IncorporationCostCalculator variant="page" />
-            <CalculatorPageResources slug="incorporation-cost-calculator" pageTitle="Incorporation Cost Calculator" />
+            <CalculatorPageResources slug="incorporation-cost-calculator" />
           </div>
         </div>
       </section>

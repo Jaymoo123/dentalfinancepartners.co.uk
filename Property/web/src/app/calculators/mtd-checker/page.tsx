@@ -63,7 +63,7 @@ export default function MTDCheckerPage() {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <MTDCheckerCalculator variant="page" />
-            <CalculatorPageResources slug="mtd-checker" pageTitle="Making Tax Digital (MTD) Checker" />
+            <CalculatorPageResources slug="mtd-checker" />
           </div>
         </div>
       </section>

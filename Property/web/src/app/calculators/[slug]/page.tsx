@@ -79,7 +79,7 @@ export default async function CalculatorToolPage({ params }: Props) {
         <div className={siteContainerLg}>
           <div className="max-w-5xl">
             <CalculatorClient slug={tool.slug} variant="page" />
-            <CalculatorPageResources slug={tool.slug} pageTitle={tool.name} />
+            <CalculatorPageResources slug={tool.slug} />
           </div>
         </div>
       </section>
