@@ -20,8 +20,12 @@
  * of what this note is for. Flagged to the owner and awaiting his call.
  */
 export function ExampleFigureNote({ className = "" }: { className?: string }) {
+  // Rule Zero (c): slate-500, not the designer's slate-400. This renders at 11px
+  // on white, so the 4.5:1 AA floor applies and slate-400 measures 2.63:1 against
+  // it. Measured in the browser on /property-tax-rates, where Phase 5 gave this
+  // component its first consumer: 2.63:1 -> 4.76:1.
   return (
-    <p className={`text-[11px] leading-relaxed text-slate-400 ${className}`}>
+    <p className={`text-[11px] leading-relaxed text-slate-500 ${className}`}>
       <span aria-hidden>*</span>
       <span className="sr-only">Note: </span>
       Example figures displayed
