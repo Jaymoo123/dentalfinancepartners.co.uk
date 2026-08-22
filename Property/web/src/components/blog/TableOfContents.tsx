@@ -46,7 +46,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
       <div className="lg:hidden sticky top-16 z-30 mb-6 -mx-4 sm:-mx-6">
         <div className="bg-[var(--surface)]/95 backdrop-blur-sm border-y border-[var(--border)] px-4 py-3 sm:px-6">
           <details className="group">
-            <summary className={`flex items-center justify-between cursor-pointer list-none ${focusRing} rounded`}>
+            <summary className={`flex items-center justify-between py-0.5 cursor-pointer list-none ${focusRing} rounded`}>
               <span className="flex items-center gap-2 text-sm font-semibold text-[var(--ink)]">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -82,8 +82,10 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
         </div>
       </div>
 
-      {/* Desktop: Sticky sidebar */}
-      <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
+      {/* Desktop sidebar. The sticky positioning and viewport clamp live on
+          the sidebar wrapper in BlogPostRenderer (which stacks the CTA card
+          above this), not here: two nested sticky/scroll areas fight. */}
+      <div className="hidden lg:block rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
         <h2 className="text-sm font-bold uppercase tracking-wide text-[var(--ink)] mb-4 flex items-center gap-2">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
