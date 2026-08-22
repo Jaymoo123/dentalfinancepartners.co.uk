@@ -228,7 +228,10 @@ export function BlogCategoryHub({
                 className={`inline-flex min-h-12 items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-900 shadow-sm transition-all hover:border-emerald-600 hover:text-emerald-700 hover:shadow-md sm:text-base ${focusRing}`}
               >
                 {topic.name}
-                <span className="text-xs font-semibold text-slate-400">{topic.count}</span>
+                {/* slate-500, not their slate-400: on white the count read at
+                    2.63:1, below the 4.5:1 floor the rest of the site holds.
+                    Same quiet treatment, one step darker. */}
+                <span className="text-xs font-semibold text-slate-500">{topic.count}</span>
               </Link>
             ))}
           </div>
