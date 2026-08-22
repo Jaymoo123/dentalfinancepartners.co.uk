@@ -38,7 +38,7 @@ export function PageShell({ children, nav }: PageShellProps) {
       <main id="main" className="flex-1">
         {children}
       </main>
-      <SiteFooter />
+      <SiteFooter nav={nav} />
     </div>
   );
 }
