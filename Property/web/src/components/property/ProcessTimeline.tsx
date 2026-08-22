@@ -112,7 +112,10 @@ export function ProcessTimeline({
               className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl font-mono text-lg font-bold transition-all duration-500 sm:h-16 sm:w-16 sm:text-2xl ${
                 active
                   ? "bg-slate-900 text-white shadow-[0_10px_30px_-12px_rgba(15,23,42,0.7)]"
-                  : "bg-white text-slate-400 ring-1 ring-slate-200"
+                  // Rule Zero (c): slate-500, not the designer's slate-400. This is the
+                  // inactive step number on a white chip, measured 2.63:1 against the 4.5:1
+                  // AA floor; slate-500 is 4.76:1. Live on 6 routes.
+                  : "bg-white text-slate-500 ring-1 ring-slate-200"
               }`}
             >
               {step.n}
