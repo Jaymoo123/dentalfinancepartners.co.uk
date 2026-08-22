@@ -1,3 +1,14 @@
+> **ARCHIVED 2026-08-22. DEAD. DO NOT BUILD FROM THIS.**
+> Written 2026-07-03, never signed off: its own section 8 lists four owner
+> decisions that were never answered, and nothing in it was ever implemented
+> (no `GlassCard`, no `Reveal`, no glass or gradient tokens exist in
+> `Property/web/src`). It was superseded by the external designer's redesign
+> (`Property_zip@eb745e1`, 11 sessions), which the owner commissioned and
+> approved, and which is being ported under `tmp/design_migration/PLAN.md`.
+> The two are incompatible: this document proposes rounded glass, gradients,
+> teal and amber; the shipped system is flat emerald on slate-900 with
+> `--radius: 0rem`. Archived as DECISION K of the design migration plan.
+
 # Property Tax Partners — UX/UI Redesign Architecture
 
 **Status:** DESIGN / AWAITING OWNER SIGN-OFF (2026-07-03)
