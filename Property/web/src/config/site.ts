@@ -4,6 +4,19 @@
  */
 import { niche, getSiteUrl } from "./niche-loader";
 
+/**
+ * A primary-nav entry. `children` turns it into a flat dropdown in SiteHeader;
+ * `groups` turns it into a wider, category-grouped panel (used by Calculators,
+ * where a flat list of the whole fleet would run off the bottom of the screen).
+ * Set one or the other, not both.
+ */
+export type NavItem = {
+  label: string;
+  href: string;
+  children?: Array<{ label: string; href: string }>;
+  groups?: Array<{ category: string; items: Array<{ label: string; href: string }> }>;
+};
+
 // Guarded: 7 prod client_error rows showed niche.company undefined in some
 // client bundles (partial chunk load). Fall back to empties so the page renders.
 const company = (niche?.company ?? {}) as Partial<typeof niche.company>;
@@ -43,7 +56,8 @@ export const siteConfig = {
   // NOTE: contact.email is an internal-routing value only (e.g. nurture reply-to).
   // It is intentionally NOT displayed publicly (public contact goes via /contact).
   contact: niche.contact,
-  nav: niche.navigation,
+  // Top-level items may carry `children`, which the header renders as a dropdown.
+  nav: niche.navigation as NavItem[],
   footer: niche.footer_links,
   locations: niche.locations,
   // Registered company / legal entity. Single source of truth = niche.config.json.

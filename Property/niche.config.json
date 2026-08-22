@@ -37,6 +37,10 @@
       "href": "/services",
       "children": [
         {
+          "label": "All services",
+          "href": "/services"
+        },
+        {
           "label": "Property accountant",
           "href": "/services/property-accountant"
         },
@@ -45,12 +49,12 @@
           "href": "/services/landlord-accountant"
         },
         {
-          "label": "Non-resident landlords",
-          "href": "/services/non-resident-landlord"
-        },
-        {
           "label": "Property tax advice",
           "href": "/services/property-tax-advice"
+        },
+        {
+          "label": "Non-resident landlords",
+          "href": "/services/non-resident-landlord"
         },
         {
           "label": "Incorporation",
@@ -99,6 +103,10 @@
           "href": "/property-tax-rates"
         },
         {
+          "label": "Landlord tax index",
+          "href": "/research/landlord-tax-index"
+        },
+        {
           "label": "Blog",
           "href": "/blog"
         }
@@ -111,6 +119,10 @@
     {
       "label": "About",
       "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
     }
   ],
   "footer_links": [
