@@ -14,7 +14,7 @@
  * everywhere. Do not re-split it without asking him.
  *
  * The one place it is deliberately NOT used is `StatsCounter` (the 100+
- * landlords / 24hr / £2.4M+ proof strip). Those are the firm's own claims about
+ * landlords / 24hr / 280+ properties proof strip). Those are the firm's own claims about
  * itself, not tax figures, and captioning them "example figures displayed" would
  * read as an admission that the proof points are invented. That is the opposite
  * of what this note is for. Flagged to the owner and awaiting his call.
