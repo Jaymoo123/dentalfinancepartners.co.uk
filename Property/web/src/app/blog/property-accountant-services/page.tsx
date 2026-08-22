@@ -121,7 +121,7 @@ export default function PropertyAccountantServicesPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Cost and Fee Structures</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Property accountancy fees vary widely based on portfolio size, company structure, and the scope of work. A straightforward personal tax return with a single buy-to-let might cost £250–£400, while a limited company with ten-plus properties, VAT registration, and quarterly management accounts could run to £2,000–£4,000 per year. Most specialist firms offer fixed-fee packages so you know exactly what you&apos;ll pay.
+              Property accountancy fees vary widely based on portfolio size, company structure, and the scope of work. A straightforward personal tax return with a single buy-to-let might cost £250 to £400, while a limited company with ten-plus properties, VAT registration, and quarterly management accounts could run to £2,000 to £4,000 per year. Most specialist firms offer fixed-fee packages so you know exactly what you&apos;ll pay.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
               When comparing quotes, look beyond the headline fee. Some firms charge separately for ad hoc tax advice, HMRC correspondence, or CGT computations, while others bundle everything into an annual retainer. A slightly higher fixed fee that includes unlimited queries often delivers better value than a low base price with costly add-ons.
