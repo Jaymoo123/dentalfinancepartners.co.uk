@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
-import { niche } from "@/config/niche-loader";
+import { niche, sourceIdentifier } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
 import { validateEnquiryParts, composeEnquiryMessage, SITUATION_MIN_CHARS } from "@/lib/leads/enquiry-message";
@@ -113,7 +113,7 @@ export function LeadForm({
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
       message: composeEnquiryMessage({ situation, prompted, callGoal }),
-      source: niche.content_strategy.source_identifier,
+      source: sourceIdentifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
       // Legitimate-interests acknowledgement: submitting the form IS the affirmative

@@ -17,7 +17,7 @@
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { niche } from "@/config/niche-loader";
+import { niche, sourceIdentifier } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitPropertyLead } from "@/lib/leads/submit-client";
 import {
@@ -383,7 +383,7 @@ export function SpecialistWidget() {
       phone: "",
       role: "Other",
       message: `[Specialist question${topicTag}] ${question}`,
-      source: niche.content_strategy.source_identifier,
+      source: sourceIdentifier,
       source_url: typeof window !== "undefined" ? window.location.href : "",
       submitted_at: new Date().toISOString(),
       // Legitimate-interests acknowledgement: submitting IS the affirmative act, so
@@ -462,7 +462,7 @@ export function SpecialistWidget() {
       phone: "",
       role,
       message: `[Specialist question${topicTag}] ${question.trim()}`,
-      source: niche.content_strategy.source_identifier,
+      source: sourceIdentifier,
       source_url: typeof window !== "undefined" ? window.location.href : "",
       submitted_at: new Date().toISOString(),
       consent_given: true,

@@ -119,6 +119,17 @@ export interface NicheConfig {
 
 export const niche = nicheConfigJson as NicheConfig;
 
+/**
+ * The value that lands in `leads.source`. Client components MUST read this rather
+ * than `niche.content_strategy.source_identifier`: 21 production `client_error` rows
+ * show `niche` genuinely undefined in some client bundles (partial chunk load), and
+ * in the assistant widget the dereference sits inside the async submit handler where
+ * no React error boundary catches it, so the button stays on "Sending..." and the
+ * lead is lost. Same guard shape as the `niche.company` one in src/config/site.ts.
+ */
+export const sourceIdentifier: string =
+  niche?.content_strategy?.source_identifier ?? "property";
+
 // Local equivalents of web-shared niche-config helpers. Property's NicheConfig
 // is not structurally compatible with the shared type (optional site_key,
 // different seo/partner shapes), so the shared helpers do not typecheck here.

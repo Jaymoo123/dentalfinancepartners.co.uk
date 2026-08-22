@@ -9,13 +9,13 @@ import {
   type MiniCaptureConfig,
   type MiniCaptureSubmitFn,
 } from "@accounting-network/web-shared/leads/MiniCapture";
-import { niche } from "@/config/niche-loader";
+import { niche, sourceIdentifier } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitPropertyLead, type PropertyLeadPayload } from "@/lib/leads/submit-client";
 import { trackExperimentView, trackExperimentAction } from "@/lib/experiments/exposure";
 
 const propertyMiniConfig: MiniCaptureConfig = {
-  sourceIdentifier: niche.content_strategy.source_identifier,
+  sourceIdentifier,
   consentText: siteConfig.leadConsentText,
   nicheId: niche.niche_id,
   leadForm: {
