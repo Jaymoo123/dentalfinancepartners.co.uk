@@ -1,9 +1,36 @@
 # Proactive journey-aware on-site assistant — exploration brief & handoff
 
-**Status:** DESIGN-ONLY exploration complete (2026-06-25), no code written. This doc
-captures the codebase exploration so a planning agent can design the feature without
-re-exploring. Next step = produce a plan (plan-mode workflow), resolve the open decisions
-with the owner, then build.
+> **STATUS CORRECTED 2026-08-23 (design migration, Phase 8 item 10). It was BUILT and it is
+> LIVE.** This header said "DESIGN-ONLY exploration complete (2026-06-25), no code written
+> ... Next step = produce a plan ... then build" for a surface that has been shipping for
+> months, which is how three separate investigation agents came to treat a live conversion
+> surface as an unbuilt idea.
+>
+> **What actually shipped**, verified by reading the code, not inferred:
+> `src/components/support/SpecialistWidget.tsx`, mounted globally at
+> `src/app/layout.tsx:121`, so it is on every route. The proactive layer described in this
+> brief is in it: it imports `initJourneyModel` / `recordPath` / `getJourneyProfile` from
+> `src/lib/intent/journeyModel.ts` (`:37`), auto-opens on a 600ms delay
+> (`AUTO_OPEN_DELAY_MS`, `:55`), records each page into a journey trail (`:170`), fires one
+> journey-tailored proactive ping per session across all triggers with a red-badge peek
+> (`:107-110`), suppresses itself for visitors who have already converted (`:90`), stands
+> down so `ExitIntentModal` does not double up (`:159`), and emits `personalization_shown`,
+> `support_opened` and `cta_click` with `cta_id: assistant_<goal>`.
+>
+> **Measured usage**, `web_events`, Property, the 90 days to 2026-08-22:
+> `support_opened` **8,450 events across 8,391 sessions**, `personalization_shown` 11,470
+> across 7,842 sessions.
+>
+> **Read that number carefully.** Report 08 quoted "16,814 opens last quarter". That figure
+> counts bot traffic: over the same window `support_opened` is 16,947 unfiltered and 8,450
+> with `is_bot = false`. **Roughly half of this widget's recorded opens are bots.** Use the
+> bot-excluded figure for any conversion reasoning.
+>
+> Everything below is the original June exploration and is kept for the reasoning. Treat its
+> open decisions as possibly already settled by what shipped, and check the code first.
+
+**Status:** SHIPPED and live on every route. Originally written 2026-06-25 as a
+DESIGN-ONLY exploration so a planning agent could design the feature without re-exploring.
 
 Related memory: `unified_console_plan`, `property_behaviour_analytics`,
 `property_experiments_concluded`, `property_leadform_honeypot_silent_drop`,

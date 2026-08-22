@@ -39,7 +39,6 @@
     "./analytics/react/ConsentBanner": "./analytics/react/ConsentBanner.tsx",
     "./analytics/react/ConsentedScripts": "./analytics/react/ConsentedScripts.tsx",
     "./analytics/react/GoogleAnalytics": "./analytics/react/GoogleAnalytics.tsx",
-    "./analytics/react/Clarity": "./analytics/react/Clarity.tsx",
     "./analytics/react/WebVitals": "./analytics/react/WebVitals.tsx",
     "./analytics/react/AnalyticsProvider": "./analytics/react/AnalyticsProvider.tsx",
     "./analytics/react/useFormTracking": "./analytics/react/useFormTracking.ts",
