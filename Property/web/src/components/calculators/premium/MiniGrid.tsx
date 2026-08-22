@@ -69,7 +69,7 @@ export function MiniGrid({
   return (
     <div className="space-y-3">
       {config.heading && (
-        <h4 className="text-sm font-semibold text-slate-700">{config.heading}</h4>
+        <h4 className="text-sm font-bold text-slate-700">{config.heading}</h4>
       )}
 
       {rows.map((row, idx) => {

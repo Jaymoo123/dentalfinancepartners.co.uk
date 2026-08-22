@@ -152,10 +152,44 @@ body {
    TYPOGRAPHY
    ============================================================ */
 
+/* House heading defaults. Deliberately split across two blocks. Read this before merging
+   them back together, because both halves are load-bearing and they are load-bearing for
+   OPPOSITE reasons.
+
+   Background. Tailwind v4's `@import "tailwindcss"` declares the layer order
+   `theme, base, components, utilities` and puts every generated utility in `utilities`.
+   Unlayered author CSS outranks EVERY layered rule regardless of specificity. This whole
+   block used to sit outside a layer, so it silently beat every font-*, leading-* and
+   tracking-* utility ever written on a heading element, site-wide. The designer hit the same
+   thing in their own tree (their globals.css carries the identical unlayered rule and has no
+   @layer either) and documented it at DESIGN_GUIDELINES.md:67-76, with the `!` important
+   modifier as the escape hatch.
+
+   1. font-weight and letter-spacing move INTO @layer base, so utilities now win. Neither
+      property is bundled into any other Tailwind utility, so the blast radius of this half
+      is exactly the heading tags that carry a font-* or tracking-* utility, and every one
+      was enumerated and decided before this shipped.
+
+   2. line-height STAYS UNLAYERED, and that is not an oversight. Tailwind's `text-*` size
+      utilities carry a bundled line-height (text-base 1.5, text-lg 1.556, text-2xl 1.333,
+      text-4xl 1.111, text-6xl 1.0, ...). Layering this declaration hands every heading on
+      the site over to those per-size defaults: measured, it moved 2214 headings across 163
+      route/width combinations, including every hero h1 from 72px to 60px leading, which is
+      Tailwind's default and not a value anyone here chose. The designer authored, eyeballed
+      and shipped the entire visual system at a uniform 1.2 heading rhythm, and
+      DESIGN_GUIDELINES.md:280-286 confirms 1.2 is the deliberate house default by naming the
+      one deliberate exception (blog article-title cards at 1.375, written with `leading-snug!`
+      precisely because of this rule). Keeping it unlayered keeps the approved rhythm and
+      keeps the documented `!` escape hatch working for deliberate deviations. */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
 }
 
 /* ============================================================
