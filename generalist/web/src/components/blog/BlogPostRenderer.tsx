@@ -327,7 +327,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <p className="mt-4 text-base leading-relaxed text-slate-200">
                   {activeCta.blog.cta_body}
                 </p>
-                <div className="mt-8">
+                {/* LeadForm labels/consent copy are dark by design, so it must sit on a light surface. */}
+                <div className="mt-8 bg-white p-6 sm:p-8">
                   <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
                 </div>
               </div>
