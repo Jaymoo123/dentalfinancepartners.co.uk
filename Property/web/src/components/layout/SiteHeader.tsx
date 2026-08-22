@@ -12,6 +12,20 @@ const activeCta = getActiveCta(niche);
 const fallbackNav = getActiveNav(niche) as NavItem[];
 const ctaVariant = niche.cta.variant;
 
+/**
+ * The header_secondary CTA below renders the same label and href as a top-level
+ * nav item can (today: "Contact" -> /contact), but only from xl: up, while the
+ * nav itself starts at lg:. Measured on the running site at 390/768/1024/1280/
+ * 1440: the nav Contact is the ONLY header affordance at 1024-1279, and from
+ * 1280 up both render, identically labelled, side by side.
+ *
+ * So the nav item is not redundant and the CTA is not droppable (it carries the
+ * live data-cta="header_contact" series, report 07 2.3). Hide the nav copy at
+ * xl: only, where the CTA takes over. CSS visibility, not a per-breakpoint nav
+ * config fork.
+ */
+const secondaryCtaHref = activeCta.header_secondary?.href;
+
 function MenuIcon({ open }: { open: boolean }) {
   return (
     <svg
@@ -224,6 +238,8 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
                 key={item.href}
                 href={item.href}
                 className={`whitespace-nowrap px-3 py-2 text-sm font-bold transition-colors border-b-2 xl:px-4 ${focusRing} ${
+                  item.href === secondaryCtaHref ? "xl:hidden" : ""
+                } ${
                   itemHrefs(item).some((h) => hrefActive(pathname, h))
                     ? "border-emerald-600 text-emerald-700"
                     : "border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300"
