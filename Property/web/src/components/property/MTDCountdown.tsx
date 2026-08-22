@@ -3,12 +3,25 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+/**
+ * The next MTD for ITSA threshold step. house_positions.md section 3 locks the schedule:
+ * 6 April 2026 mandatory above £50,000, 6 April 2027 the threshold drops to £30,000,
+ * 6 April 2028 it drops to £20,000.
+ *
+ * THIS COMPONENT SELF-EXPIRES. It returns null once the date has passed, which is why it
+ * rendered nothing anywhere on the site between 6 April 2026 and this change while still
+ * being mounted on the homepage and on every MTD blog article. When 6 April 2027 passes it
+ * will go silent again: the next step is 6 April 2028 at £20,000, and the copy below has to
+ * move with the date. Nothing derives either from the clock.
+ */
+const MTD_NEXT_STEP = "2027-04-06";
+
 export function MTDCountdown() {
   const [daysUntilMTD, setDaysUntilMTD] = useState<number | null>(null);
   const [isDismissed, setIsDismissed] = useState(false);
 
   useEffect(() => {
-    const mtdDate = new Date("2026-04-06");
+    const mtdDate = new Date(MTD_NEXT_STEP);
     const today = new Date();
     const diffTime = mtdDate.getTime() - today.getTime();
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -37,10 +50,16 @@ export function MTDCountdown() {
           <div className="mt-1.5 sm:mt-2 text-xs font-bold text-emerald-100 uppercase tracking-wider">Days</div>
         </div>
         <div className="flex-1">
-          <h3 className="text-base sm:text-lg font-bold text-white">Making Tax Digital starts 6 April 2026</h3>
+          <h3 className="text-base sm:text-lg font-bold text-white">
+            MTD for Income Tax reaches £30,000 on 6 April 2027
+          </h3>
           <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-slate-200">
-            Quarterly digital reporting becomes mandatory for landlords earning £50k+. Are you ready?{" "}
-            <Link href="#mtd" className="font-bold text-emerald-400 underline underline-offset-2 hover:text-emerald-300">
+            Quarterly digital reporting has been mandatory above £50,000 since April 2026. From 6 April
+            2027 the threshold drops to £30,000 of qualifying income. Are you ready?{" "}
+            <Link
+              href="/making-tax-digital-landlords"
+              className="font-bold text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
+            >
               Check if you&apos;re affected
             </Link>
           </p>
