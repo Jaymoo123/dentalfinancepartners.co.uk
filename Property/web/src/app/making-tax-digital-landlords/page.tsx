@@ -226,14 +226,6 @@ const faqs = [
 const jsonLd = JSON.stringify([
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-      { "@type": "ListItem", position: 2, name: "Making Tax Digital for Landlords", item: URL },
-    ],
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "Article",
     "@id": `${URL}#article`,
     headline: "Making Tax Digital for Landlords: 2026 Rules and Deadlines",
