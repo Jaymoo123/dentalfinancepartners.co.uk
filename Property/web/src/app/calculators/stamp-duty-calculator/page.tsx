@@ -325,7 +325,7 @@ export default function StampDutyCalculatorPage() {
             <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
               Related calculators and rate tables
             </h2>
-            <ul className="mt-6 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
+            <ul className="mt-6 list-disc space-y-2 pl-6 text-base leading-relaxed text-slate-700">
               <li>
                 Buying your first home? Use the{" "}
                 <Link className="text-emerald-700 underline" href="/calculators/first-time-buyer-stamp-duty-calculator">first-time buyer SDLT calculator</Link>

@@ -390,7 +390,7 @@ export default function LandedEstatesPage() {
           This site handles the property tax half of a landed estate. Several things a farming family needs sit
           outside that, and we would rather say so than pretend otherwise.
         </p>
-        <ul className="ml-5 list-disc space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>Herd basis elections.</strong> The livestock valuation election is a farm accounts decision
             and belongs with your farm accountant.

@@ -321,7 +321,7 @@ export default function LandlordCompliancePage() {
           have almost nothing in common except that they all land on the same person and all get budgeted for
           out of the same rent.
         </p>
-        <ul className="ml-5 list-disc space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>Gas.</strong> An annual safety check of every gas appliance and flue by a Gas Safe
             registered engineer, with the record supplied to tenants and retained.
@@ -388,7 +388,7 @@ export default function LandlordCompliancePage() {
           The dates that matter are not only the renewal dates. Each regime carries service and action
           deadlines that run from the inspection, and those are where councils find breaches:
         </p>
-        <ul className="ml-5 list-disc space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>Gas:</strong> a copy of the record to each existing tenant within{" "}
             <strong>28 days</strong> of the check, and to any new tenant <strong>before occupation</strong>.

@@ -129,14 +129,14 @@ export default async function CalculatorToolPage({ params }: Props) {
                         <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700">{inputs}</p>
                       )}
                       {steps && steps.length > 0 && (
-                        <ol className="mt-2 list-decimal list-inside space-y-1 text-sm sm:text-base leading-relaxed text-slate-700">
+                        <ol className="mt-2 list-decimal space-y-1 pl-6 text-sm sm:text-base leading-relaxed text-slate-700">
                           {steps.map((s, j) => (
                             <li key={j}>{s}</li>
                           ))}
                         </ol>
                       )}
                       {result && (
-                        <ul className="mt-2 list-disc list-inside space-y-1 text-sm sm:text-base leading-relaxed text-slate-700">
+                        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm sm:text-base leading-relaxed text-slate-700">
                           {Object.entries(result).map(([k, val]) => (
                             <li key={k}>
                               <span className="font-medium">{k}:</span> {String(val)}

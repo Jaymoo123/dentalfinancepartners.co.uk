@@ -305,7 +305,7 @@ export default function LeaseholdPage() {
           notice on the day of completion.
         </p>
         <p>The premium is built from three components, discounted at a statutory deferment rate:</p>
-        <ul className="ml-5 list-disc space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>Term.</strong> The value to the freeholder of the ground rent still to be received over the
             unexpired term.
@@ -431,7 +431,7 @@ export default function LeaseholdPage() {
           Almost every ground rent question resolves once you separate three things that most coverage runs
           together.
         </p>
-        <ul className="ml-5 list-disc space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>New leases: law.</strong> The Leasehold Reform (Ground Rent) Act 2022 limits ground rent on
             new qualifying residential long leases to a peppercorn. Commenced by SI 2022/694 on 30 June 2022,
