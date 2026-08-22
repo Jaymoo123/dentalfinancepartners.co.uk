@@ -30,14 +30,14 @@ export default function CookiePolicyPage() {
           { label: "Cookie policy" },
         ]}
       />
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Cookie policy</h1>
+      <h1 className="text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Cookie policy</h1>
       <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 5 June 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy describes how {siteConfig.company.legalName} (trading as {siteConfig.name}) uses cookies and similar technologies on our website. Cookies are small text files stored on your device that help us understand how visitors use our Site and improve your experience.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. What cookies we use</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">1. What cookies we use</h2>
         
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Essential cookies</h3>
         <p>
@@ -71,7 +71,7 @@ export default function CookiePolicyPage() {
           Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymised. Data is retained for 14 months.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>
         <p>We use cookies to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Understand which pages are most useful to landlords and property investors</li>
@@ -83,7 +83,7 @@ export default function CookiePolicyPage() {
           We do <strong>not</strong> use cookies for advertising, remarketing, or selling your data to third parties.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. How to manage cookies</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">3. How to manage cookies</h2>
         <p>You can control and manage cookies in several ways:</p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">On this site</h3>
@@ -152,12 +152,12 @@ export default function CookiePolicyPage() {
           .
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Changes to this policy</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">4. Changes to this policy</h2>
         <p>
           We may update this cookie policy from time to time. The &quot;Last updated&quot; date at the top of this page shows when it was last revised.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Contact us</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">5. Contact us</h2>
         <p>
           If you have questions about our use of cookies, please contact us via our{" "}
           <Link href="/contact" className="text-[var(--accent-strong)] underline">

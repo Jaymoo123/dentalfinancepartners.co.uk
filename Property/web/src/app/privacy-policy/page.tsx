@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
           { label: "Privacy policy" },
         ]}
       />
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
+      <h1 className="text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
       <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 10 August 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
           Act 2018.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. Who we are (data controller)</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">1. Who we are (data controller)</h2>
         <p>
           The data controller responsible for your personal data is {company.legalName}, which trades as{" "}
           {siteConfig.name}:
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
           <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. What information we collect</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">2. What information we collect</h2>
         <p>We collect the following personal information through the Site:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
           asked for.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. Why we use your information</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>To respond to your enquiry:</strong>{" "}
@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Our lawful basis</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">4. Our lawful basis</h2>
         <p>
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f) of the UK
           GDPR)
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
           <strong>&ldquo;Do not track me&rdquo;</strong> link in the footer.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
         {partner ? (
           <>
             <p>
@@ -196,14 +196,14 @@ export default function PrivacyPolicyPage() {
         </p>
         <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">6. How long we keep your information</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">6. How long we keep your information</h2>
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
           after which it is deleted. If you subscribe to our email updates, we keep your email address until you
           unsubscribe. Our records of what you were shown and any consent you gave are kept for up to six years, under access controls, so that we can demonstrate the lawful basis for using it.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">7. Your rights</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">7. Your rights</h2>
         <p>Under UK data protection law you have the right to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Access</strong> the personal data we hold about you.</li>
@@ -236,14 +236,14 @@ export default function PrivacyPolicyPage() {
           . We would, however, welcome the chance to address your concerns first.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">8. Cookies and analytics</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">8. Cookies and analytics</h2>
         <p>
           We use cookies and similar technologies for analytics, so we can understand how the Site is used and improve it.
           For full details of what we use and how to manage or opt out, please see our{" "}
           <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link>.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">9. How we protect your data and international transfers</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">9. How we protect your data and international transfers</h2>
         <p>
           Form submissions are stored securely and access is restricted to authorised staff only. Some of our service
           providers (for example, Vercel) are based outside the UK and EEA. Where data is transferred internationally, we
@@ -251,13 +251,13 @@ export default function PrivacyPolicyPage() {
           Contractual Clauses.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">10. Changes to this policy</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">10. Changes to this policy</h2>
         <p>
           We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this page
           shows when it was last revised. We encourage you to review this policy periodically.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">11. Contact us</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">11. Contact us</h2>
         <p>
           If you have any questions about this privacy policy or how we handle your data, please contact us through our{" "}
           <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
