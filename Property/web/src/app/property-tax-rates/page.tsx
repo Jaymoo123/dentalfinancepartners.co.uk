@@ -1,17 +1,30 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
+import { StatsCounter } from "@/components/property/StatsCounter";
+import { TestimonialsSection } from "@/components/property/TestimonialsSection";
+import { FaqSection } from "@/components/ui/FaqSection";
+import { Eyebrow } from "@/components/ui/page-blocks";
+import { siteStats } from "@/lib/site-stats";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { btnOnCream, btnPrimary, heroCreamSurface, siteContainerLg } from "@/components/ui/layout-utils";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { buildBreadcrumbJsonLd } from "@/lib/schema";
+import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 
 const UPDATED = "2026/27 tax year";
+
+/** One source for the visible breadcrumb and its JSON-LD. Keep them identical. */
+const BREADCRUMB = [{ label: "Home", href: "/" }, { label: "UK property tax rates" }];
 
 export const metadata: Metadata = {
   title: "UK Property Tax Rates 2026/27 | Landlord Tax Reference",
   description:
+    // Ours (c218d7a6): shortened to fit the SERP snippet.
     "Current UK property tax rates for 2026/27: stamp duty (SDLT, LBTT, LTT), capital gains, rental income, Section 24, corporation and dividend tax, MTD.",
   alternates: { canonical: `${siteConfig.url}/property-tax-rates` },
   openGraph: {
@@ -69,18 +82,27 @@ function RateTable({ head, rows }: { head: [string, string, string?]; rows: Row[
           ))}
         </tbody>
       </table>
+      <ExampleFigureNote className="mt-3" />
     </div>
   );
 }
 
 function Section({
   id,
+  eyebrow,
   title,
   children,
   calc,
   guide,
 }: {
   id: string;
+  /**
+   * The short signpost above the heading. Required, not optional: the section
+   * eyebrows are now the ONLY navigational signposting on this page, the hero
+   * jump-link pills having been removed. A section without one goes unmarked in
+   * a run of seven rate tables, so the type makes forgetting it a build error.
+   */
+  eyebrow: string;
   title: string;
   children: ReactNode;
   calc?: { href: string; label: string };
@@ -88,17 +110,18 @@ function Section({
 }) {
   return (
     <section id={id} className="scroll-mt-24 border-t border-slate-200 py-8 first:border-t-0">
-      <h2 className="text-2xl font-bold text-slate-900">{title}</h2>
+      <Eyebrow>{eyebrow}</Eyebrow>
+      <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">{title}</h2>
       <div className="mt-3 space-y-3 text-base leading-relaxed text-slate-700">{children}</div>
       {(calc || guide) && (
         <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm font-semibold">
           {calc && (
-            <Link href={calc.href} className="text-emerald-700 hover:text-emerald-800">
+            <Link href={calc.href} className="inline-block py-0.5 text-emerald-700 hover:text-emerald-800">
               {calc.label} →
             </Link>
           )}
           {guide && (
-            <Link href={guide.href} className="text-slate-500 hover:text-emerald-700">
+            <Link href={guide.href} className="inline-block py-0.5 text-slate-500 hover:text-emerald-700">
               {guide.label} →
             </Link>
           )}
@@ -130,25 +153,72 @@ export default function PropertyTaxRatesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
       />
+      {/* The visible breadcrumb rendered without the structured data behind it,
+          so the trail existed for a reader and not for a crawler. Same items,
+          one source. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(BREADCRUMB) }}
+      />
 
-      <section className="bg-slate-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "UK property tax rates" }]} onDark />
-          <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+      <section className={`relative overflow-hidden ${heroCreamSurface} py-12 sm:py-16`}>
+        <HeroBrickBackdrop tone="cream" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <Breadcrumb items={BREADCRUMB} />
+          <h1 className="mt-6 text-3xl font-bold text-slate-900 sm:text-4xl lg:text-6xl">
             UK property tax rates 2026/27
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-slate-300">
+          <p className="mt-4 max-w-3xl text-lg text-slate-700">
             Every current UK property tax figure a landlord needs, in one place. Figures are for the {UPDATED}{" "}
             and are maintained against HMRC, Revenue Scotland, the Welsh Revenue Authority and legislation.gov.uk.
           </p>
+
+          {/* This page had no call to action of any kind: a reader could arrive
+              from search, find their figure and leave without ever meeting an
+              ask. Both buttons stay on the page. */}
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
+            <Link
+              href="#book"
+              data-cta="hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+              className={`${btnPrimary} bg-emerald-600 px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
+            >
+              Get your rates checked
+            </Link>
+            <Link
+              href="#free-tools"
+              className={`${btnOnCream} px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
+            >
+              Run your numbers
+            </Link>
+          </div>
+
+          {/* No jump-link chip row here, by explicit instruction: the section
+              eyebrows are the only navigational signposting these pages use.
+              An earlier pass put a row of pills under this hero; it was removed
+              because it competed with the eyebrows for the same job and put a
+              second, differently-styled index above the fold.
+
+              The `Section` ids and `scroll-mt-24` below are untouched and
+              predate that row, so deep links into a section still land
+              correctly. Do not re-add the pills. */}
+        </div>
+      </section>
+
+      {/* Proof before the reference, reusing the shared siteStats. */}
+      <section className="border-b border-slate-200 bg-white py-5 sm:py-7">
+        <div className={siteContainerLg}>
+          <StatsCounter stats={siteStats} />
         </div>
       </section>
 
       <section className="bg-white py-10 sm:py-14">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl">
+          <div>
             <Section
               id="sdlt"
+              eyebrow="Stamp duty"
               title="Stamp Duty Land Tax (England & Northern Ireland)"
               calc={{ href: "/calculators/stamp-duty-calculator", label: "Stamp duty calculator" }}
             >
@@ -174,6 +244,7 @@ export default function PropertyTaxRatesPage() {
 
             <Section
               id="lbtt"
+              eyebrow="Scotland"
               title="LBTT (Scotland)"
               calc={{ href: "/calculators/lbtt-calculator-scotland", label: "LBTT calculator" }}
             >
@@ -195,6 +266,7 @@ export default function PropertyTaxRatesPage() {
 
             <Section
               id="ltt"
+              eyebrow="Wales"
               title="LTT (Wales)"
               calc={{ href: "/calculators/ltt-calculator-wales", label: "LTT calculator" }}
             >
@@ -214,6 +286,7 @@ export default function PropertyTaxRatesPage() {
 
             <Section
               id="cgt"
+              eyebrow="Capital gains"
               title="Capital Gains Tax on residential property"
               calc={{ href: "/calculators/capital-gains-tax-calculator", label: "Capital gains tax calculator" }}
               guide={{
@@ -232,8 +305,46 @@ export default function PropertyTaxRatesPage() {
               />
             </Section>
 
+            {/* The only ask between the hero and the panel at the foot. Before
+                this, a reader could arrive from a search like "landlord CGT
+                rate 2026", find the figure in the table above and leave, with
+                seven sections of reference between them and the next ask.
+
+                Placed after CGT and nowhere else on the page for one reason:
+                the row directly above it is the only DEADLINE on the page. A
+                rate is a fact you look up; 60 days from completion is a clock
+                that may already be running, and it is the one moment on a
+                lookup surface where the reader's question stops being "what is
+                the rate" and becomes "am I late".
+
+                Deliberately restrained. This is a reference page and a hard
+                sell between rate tables would cost the trust that makes it
+                worth citing, which is the same reason the page carries no
+                prompt marquee. */}
+            <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+              <div className="min-w-0">
+                <p className="text-base font-bold text-slate-900 sm:text-lg">
+                  Sold a property in the last 60 days?
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">
+                  The reporting deadline runs from completion, not from the end of the tax year, and it is the one
+                  on this page with a penalty attached. We can file it for you.
+                </p>
+              </div>
+              <Link
+                href="#book"
+                data-cta="cgt_deadline_book"
+                data-cta-placement="cgt"
+                data-cta-goal="form"
+                className={`${btnPrimary} mt-5 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+              >
+                Get the 60-day return filed
+              </Link>
+            </div>
+
             <Section
               id="income-tax"
+              eyebrow="Rental income"
               title="Rental income tax and Section 24"
               calc={{ href: "/calculators/rental-income-tax-calculator", label: "Rental income tax calculator" }}
               guide={{
@@ -258,6 +369,7 @@ export default function PropertyTaxRatesPage() {
 
             <Section
               id="company"
+              eyebrow="Company"
               title="Corporation tax and dividends (property company)"
               calc={{ href: "/calculators/corporation-tax-calculator", label: "Corporation tax calculator" }}
               guide={{
@@ -277,7 +389,7 @@ export default function PropertyTaxRatesPage() {
               />
             </Section>
 
-            <Section id="allowances" title="Allowances, reliefs and MTD">
+            <Section id="allowances" eyebrow="Allowances and MTD" title="Allowances, reliefs and MTD">
               <RateTable
                 head={["Item", "2026/27"]}
                 rows={[
@@ -293,31 +405,61 @@ export default function PropertyTaxRatesPage() {
               </p>
             </Section>
 
-            <div className="mt-10 border-2 border-emerald-600/20 bg-gradient-to-br from-emerald-50 to-teal-50 p-8 sm:p-10 rounded-2xl">
-              <h2 className="text-2xl font-bold text-emerald-700 sm:text-3xl">Not sure which rates apply to you?</h2>
-              <p className="mt-4 text-base leading-relaxed text-slate-600">
-                Rates are the easy part. Knowing which reliefs you qualify for, and how the pieces interact, is
-                where the savings are. Tell us about your situation for a no-obligation review.
-              </p>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Request a property tax review" />
-              </div>
-            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Frequently asked questions</h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-slate-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
+      {/* Proof, then the tools, then the ask, then the FAQ. The
+          testimonials sit ABOVE the free tools rather than beside `#book`
+          because both are full-bleed navy: adjacent they read as one dark
+          slab, and the light tools block between them is what keeps the
+          band alternating. */}
+      <TestimonialsSection
+        eyebrow="Testimonials"
+        title="Landlords who stopped guessing at the rates"
+        description="Anonymised feedback from landlords and investors we have worked with on exactly these questions."
+      />
+
+      {/* Free tools, the hero's secondary CTA target. A rates table tells you
+          the percentage; the calculators tell you the number, and that is the
+          question a reader on this page actually arrived with. */}
+      <section id="free-tools" className="scroll-mt-24 bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div>
+            <Eyebrow>Free tools</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Put these rates against your own figures</h2>
+            <p className="mt-4 text-sm sm:text-base text-slate-700">
+              Free, and the figures are yours to take to any adviser.
+            </p>
+            <div className="mt-8 sm:mt-10">
+              <CalculatorTabs />
             </div>
           </div>
         </div>
       </section>
+
+      {/* Was a pale mint card holding a bare LeadForm, mid-page and below the
+          last rate table: the least assertive block on a page whose job is to
+          convert a lookup into an enquiry. Now the same full-bleed navy panel
+          the other resources pages close on, and the target of `#book`. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          title="Not sure which rates apply to you?"
+          description="Rates are the easy part. Knowing which reliefs you qualify for, and how the pieces interact, is where the savings are. Tell us about your situation for a no-obligation review."
+          proofPoints={[
+            { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
+            { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
+            { title: "24-hour response", detail: "Usually the same working day" },
+          ]}
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+        />
+      </div>
+      <FaqSection
+        title="Frequently asked questions"
+        faqs={faqs}
+        className="bg-white py-12 sm:py-16 lg:py-20"
+      />
+
     </>
   );
 }

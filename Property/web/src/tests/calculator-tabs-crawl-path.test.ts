@@ -33,7 +33,17 @@ const APP_DIR = join(__dirname, "..", "app");
  */
 export function keepsCrawlPath(src: string): boolean {
   if (!src.includes("<CalculatorTabs")) return true;
-  return src.includes("<CalculatorLinkCards") || /href=\{?["'`]\/calculators\//.test(src);
+  return (
+    src.includes("<CalculatorLinkCards") ||
+    // A literal JSX attribute, `href="/calculators/..."`.
+    /href=\{?["'`]\/calculators\//.test(src) ||
+    // Or the same link expressed as an object property that a component renders
+    // into an <a>, `calc={{ href: "/calculators/..." }}`. Phase 5 hit this on
+    // /property-tax-rates, where six crawlable calculator links are written this
+    // way and the attribute-only predicate called a page with links a page
+    // without. Both forms are real links; only the spelling differs.
+    /href:\s*["'`]\/calculators\//.test(src)
+  );
 }
 
 function pageFiles(dir: string): string[] {
@@ -51,6 +61,10 @@ describe("CalculatorTabs pages keep a crawlable path to /calculators/*", () => {
     expect(keepsCrawlPath("<CalculatorTabs />")).toBe(false);
     expect(keepsCrawlPath('<CalculatorTabs /><CalculatorLinkCards items={x} />')).toBe(true);
     expect(keepsCrawlPath('<CalculatorTabs /><Link href="/calculators/mtd-checker" />')).toBe(true);
+    expect(
+      keepsCrawlPath('<CalculatorTabs /><Section calc={{ href: "/calculators/mtd-checker" }} />'),
+    ).toBe(true);
+    expect(keepsCrawlPath('<CalculatorTabs /><Link href="/blog/mtd" />')).toBe(false);
     expect(keepsCrawlPath("<p>no tabs here</p>")).toBe(true);
   });
 
