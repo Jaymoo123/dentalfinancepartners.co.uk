@@ -915,6 +915,10 @@ export default function LandlordTaxPage() {
               </div>
             ))}
           </div>
+          {/* Owner rule 33: these are rate-forward tiles, the figure is the
+              content, and statutory figures are inside the rule. Every other
+              figure block on this page already carries the note. */}
+          <ExampleFigureNote className="mt-4" />
 
           <Prose>
             <p>
@@ -959,6 +963,11 @@ export default function LandlordTaxPage() {
           <div className="mt-6">
             <DisposalFigures showRebasing={false} />
           </div>
+          {/* Owner rule 33, applied consistently: the same component on
+              /services/non-resident-landlord carries the note, so this one does
+              too. Page-level rather than inside the component, because the note
+              is already written at both consumers' call sites. */}
+          <ExampleFigureNote className="mt-4" />
 
           <Prose>
             <p>

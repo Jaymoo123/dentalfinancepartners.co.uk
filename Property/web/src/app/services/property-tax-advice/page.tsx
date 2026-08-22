@@ -24,6 +24,7 @@ import { ComparisonTable, type ComparisonRow } from "@/components/property/Compa
 import { DrawnTickList } from "@/components/property/DrawnTickList";
 import { DecisionWindow } from "@/components/property/DecisionWindow";
 import { CoverageCards, type CoverageItem } from "@/components/property/CoverageCards";
+import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 import { PromptMarquee, type Prompt } from "@/components/property/PromptMarquee";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { FaqSection } from "@/components/ui/FaqSection";
@@ -749,6 +750,11 @@ export default function PropertyTaxAdvicePage() {
                   ))}
                 </tbody>
               </table>
+              {/* Owner rule 33: the note goes on every visual carrying figures,
+                  including statutory ones. The structurally identical changes
+                  table on /landlord-tax already carries it; this one is the same
+                  table with the same rates, so it carries it too. */}
+              <ExampleFigureNote className="mt-3" />
             </div>
           </div>
         </div>
