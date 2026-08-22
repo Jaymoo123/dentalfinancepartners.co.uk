@@ -170,7 +170,7 @@ export default function Section24Page() {
         <div className="absolute inset-0 bg-slate-900/85" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-3xl">
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Section 24" }]} />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Section 24" }]} onDark />
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
               Section 24 explained: mortgage interest relief for landlords
             </h1>

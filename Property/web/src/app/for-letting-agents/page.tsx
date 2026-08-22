@@ -109,7 +109,7 @@ export default function ForLettingAgentsPage() {
 
       <section className="bg-slate-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "For letting agents" }]} />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "For letting agents" }]} onDark />
           <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             For letting agents: what your landlords will ask you this year
           </h1>

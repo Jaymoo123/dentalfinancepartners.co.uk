@@ -54,6 +54,7 @@ export default function EmbedGalleryPage() {
       <section className="bg-slate-900 py-14 sm:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Embed our calculators" },

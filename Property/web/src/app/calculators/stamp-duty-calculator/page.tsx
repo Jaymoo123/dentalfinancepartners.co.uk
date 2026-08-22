@@ -112,6 +112,7 @@ export default function StampDutyCalculatorPage() {
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Calculators", href: "/calculators" },

@@ -123,6 +123,7 @@ export default function IncorporationPage() {
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-3xl">
             <Breadcrumb
+              onDark
               items={[
                 { label: "Home", href: "/" },
                 { label: "Incorporation" },

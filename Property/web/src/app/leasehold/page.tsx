@@ -185,7 +185,7 @@ export default function LeaseholdPage() {
 
       <section className="bg-slate-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Leasehold" }]} />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Leasehold" }]} onDark />
           <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             Leasehold explained: extensions, right to manage, service charges and ground rent
           </h1>

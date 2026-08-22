@@ -289,7 +289,7 @@ export default function LandlordCompliancePage() {
 
       <section className="bg-slate-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Landlord compliance" }]} />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Landlord compliance" }]} onDark />
           <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             Landlord compliance: the duties, the renewal cycle, the cost and the tax treatment
           </h1>
