@@ -25,7 +25,7 @@ export function CTASection({
   
   return (
     <section
-      className="border-l-4 border-emerald-600 bg-emerald-50 p-8 sm:p-12"
+      className="rounded-xl bg-emerald-50 p-8 sm:p-12"
       aria-labelledby={headingId}
     >
       <h2
