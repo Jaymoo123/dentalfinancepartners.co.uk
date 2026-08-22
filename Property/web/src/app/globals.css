@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Prose link styling applies to in-text links only. Tracked CTA buttons
-   (anything carrying data-cta) keep their own colours â€” without the :not()
+   (anything carrying data-cta) keep their own colours — without the :not()
    this rule painted emerald text onto emerald button backgrounds. */
 .prose-blog a:not([data-cta]) {
   color: var(--emerald-700);
@@ -379,4 +379,371 @@ select {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
+}
+
+
+
+/* Logo house icon: stroke draws itself on page load; replays on hover
+   (desktop). 80 comfortably exceeds the lucide Home path lengths. */
+.logo-house path,
+.logo-house polyline {
+  stroke-dasharray: 80;
+  animation: logo-draw 1.5s ease-out both;
+}
+@media (hover: hover) {
+  .group:hover .logo-house path,
+  .group:hover .logo-house polyline {
+    animation: logo-draw-hover 1.2s ease-out both;
+  }
+}
+@keyframes logo-draw {
+  from { stroke-dashoffset: 80; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes logo-draw-hover {
+  from { stroke-dashoffset: 80; }
+  to { stroke-dashoffset: 0; }
+}
+
+/* Vertical marquee (homepage "Sound familiar?" prompt column).
+   The track holds the card set twice; each set carries a bottom margin equal to
+   the inter-card gap, so the set block is exactly half the track and a -50%
+   translate loops seamlessly with no drift. Pauses on hover and on keyboard
+   focus so the cards can actually be read, and stops entirely under
+   prefers-reduced-motion, where the column becomes a normal scroll area. */
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-y 33s linear infinite;
+  will-change: transform;
+}
+
+.marquee-viewport:hover .marquee-track,
+.marquee-viewport:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .marquee-viewport {
+    overflow-y: auto;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+/* "Why choose us" 01-04 figures: staggered light-up when the list scrolls in */
+@keyframes num-glow {
+  0% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  35% {
+    opacity: 1;
+    text-shadow: 0 0 22px rgba(16, 185, 129, 0.95), 0 0 44px rgba(16, 185, 129, 0.45);
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 22px rgba(16, 185, 129, 0.95), 0 0 44px rgba(16, 185, 129, 0.45);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Client-tier cards (/services "Who we work with"): a one-two-three glow that
+   runs once when the group is fully on screen. Sibling of num-glow above, same
+   idea applied to a box-shadow instead of a text-shadow.
+
+   Start and end frames are the card's resting shadow, so the animation needs no
+   fill-mode and hands the card back to its normal hover shadow when it ends.
+   The stagger is nth-child rather than an inline animationDelay because the
+   cards are server-rendered and passed to ScrollGlowGroup as opaque children. */
+@keyframes card-glow {
+  0% {
+    box-shadow: 0 6px 20px -8px rgba(5, 150, 105, 0.28);
+    border-color: rgb(209 250 229);
+  }
+  40% {
+    box-shadow:
+      0 0 0 3px rgba(16, 185, 129, 0.22),
+      0 18px 40px -10px rgba(5, 150, 105, 0.6);
+    border-color: rgb(52 211 153);
+  }
+  100% {
+    box-shadow: 0 6px 20px -8px rgba(5, 150, 105, 0.28);
+    border-color: rgb(209 250 229);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-glow="on"] > * {
+    animation: card-glow 3.4s ease-in-out;
+    /* Overridable per group via the `delay` prop. The :nth-child rules below
+       are more specific, so a staggered row is unaffected by it. */
+    animation-delay: var(--glow-delay, 0s);
+  }
+
+  /* Stagger is shorter than the duration on purpose: the glows overlap, so the
+     sequence reads as one wave crossing the row rather than three separate
+     pulses. Whole run is 1.4s + 3.4s ≈ 4.8s. */
+  [data-glow="on"] > *:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+
+  [data-glow="on"] > *:nth-child(3) {
+    animation-delay: 1.4s;
+  }
+
+  /* A fourth step, for 2x2 grids. Without it the fourth card inherits the
+     0s default and glows in unison with the first, which in a 2x2 reads as
+     two opposite corners flashing rather than a wave. No existing three-card
+     group has a fourth child, so this changes nothing that already shipped. */
+  [data-glow="on"] > *:nth-child(4) {
+    animation-delay: 2.1s;
+  }
+}
+
+/* Eyebrow rule: draws left to right the first time its label scrolls into view.
+   The bar is collapsed from its left edge and released once the observer flips
+   data-draw, so the growth is a transform rather than a width animation and
+   costs no layout.
+
+   The collapsed state is scoped to [data-draw="off"]. That attribute is in the
+   server HTML too, so the no-JS case is covered by a <noscript> override in the
+   root layout, which releases every rule rather than leaving the marks hidden
+   on a page that can never run the observer. */
+.eyebrow-rule {
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .eyebrow-rule {
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .eyebrow-rule[data-draw="off"] {
+    transform: scaleX(0);
+  }
+}
+
+/* Deliverables ticks: each mark is painted along its own path the first time
+   the list scrolls into view, staggered by an inline transition-delay.
+
+   Same posture as the eyebrow rule above. The undrawn state is scoped to
+   [data-draw="off"], which is in the server HTML, so the no-JS case is released
+   by the <noscript> override in the root layout rather than leaving a column of
+   empty boxes next to a list of promises. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-draw="off"] .tick-draw {
+    stroke-dashoffset: 24;
+  }
+
+  .tick-draw {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 420ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+}
+
+/* About page "Why we exist": the 01/02/03 numerals light emerald the first time
+   the section scrolls into view, staggered by an inline transition-delay.
+
+   Same posture as the drawn ticks above. The UNLIT state is scoped to
+   [data-draw="off"], which is in the server HTML, so the no-JS case is released
+   by the <noscript> override in the root layout rather than leaving three grey
+   stubs above three headings.
+
+   The lit state is the resting state: emerald with a soft glow behind it. The
+   glow is a text-shadow rather than a filter so it costs no compositing layer,
+   and its own rule underneath brightens with it so the numeral and the mark
+   read as one element arriving. It settles and stops. */
+.story-numeral {
+  color: var(--color-emerald-600, oklch(0.596 0.145 163.225));
+  text-shadow: 0 0 18px rgb(16 185 129 / 0.45);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .story-numeral {
+    transition:
+      color 520ms ease-out,
+      text-shadow 520ms ease-out;
+  }
+
+  .story-numeral-rule {
+    transform-origin: left center;
+    transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* slate-200: the numeral is present and legible before it lights, so the
+     section never reads as half-rendered while it is off screen. */
+  [data-draw="off"] .story-numeral {
+    color: oklch(0.929 0.013 255.508);
+    text-shadow: 0 0 0 rgb(16 185 129 / 0);
+  }
+
+  [data-draw="off"] .story-numeral-rule {
+    transform: scaleX(0);
+  }
+}
+
+/* Penalty ladder: the rail draws left to right the first time the deadlines
+   section scrolls into view, and each numbered step lands as the line reaches
+   it.
+
+   Same posture as the eyebrow rule and the drawn ticks above. The undrawn state
+   is scoped to [data-draw="off"], which is in the server HTML, so the no-JS case
+   is released by the <noscript> override in the root layout rather than leaving
+   four penalties without their numbers. Both animations are transforms and
+   opacity only, so nothing here costs layout.
+
+   The rail is only rendered from md up, which is also the only width where the
+   left-to-right reading applies: stacked on mobile the steps simply appear. */
+.penalty-ladder-rail {
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .penalty-ladder-rail {
+    transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  [data-draw="off"] .penalty-ladder-rail {
+    transform: scaleX(0);
+  }
+
+  /* The mobile rail draws downward, which is the direction the stacked steps
+     are read in. Same duration as the horizontal one. */
+  .penalty-ladder-rail-v {
+    transform-origin: center top;
+    transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  [data-draw="off"] .penalty-ladder-rail-v {
+    transform: scaleY(0);
+  }
+
+  .penalty-ladder-step {
+    transition:
+      transform 380ms cubic-bezier(0.34, 1.4, 0.64, 1),
+      opacity 260ms ease-out;
+  }
+
+  /* Scaled from the centre so the ring grows with the disc, and only to 0.6:
+     a step arriving from nothing reads as a bullet appearing, not as a mark
+     being placed on a line that is already there. */
+  [data-draw="off"] .penalty-ladder-step {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+
+/* Section 24 rate wedge: both bars fill left to right the first time the figure
+   is 90% on screen.
+
+   Same posture as the penalty ladder above. The unfilled state is scoped to
+   [data-draw="off"], which is in the server HTML, so the no-JS case is released
+   by the <noscript> override in the root layout rather than leaving two empty
+   tracks beside a claim about their widths.
+
+   scaleX from the left rather than an animated width, so the growth costs no
+   layout. The bars carry their own border radius, and scaling distorts it
+   horizontally while the bar is short; at 3px tall on a pill that is not
+   visible, which is why this is a transform rather than a width transition. */
+.rate-wedge-fill {
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rate-wedge-fill {
+    transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Both rows share one delay, deliberately. The figure's claim is that the two
+     gaps are the same width, and staggering them would invite the reader to
+     compare a finished bar against a growing one. */
+  [data-draw="off"] .rate-wedge-fill {
+    transform: scaleX(0);
+  }
+}
+
+/* Landlord tax profit stack: the salary/basic/higher bar sweeps left to right
+   the first time the figure is 35% on screen, then the threshold marker fades
+   in on the boundary it points at.
+
+   Same posture as the penalty ladder and the rate wedge above. The unswept state
+   is scoped to [data-draw="off"], which is in the server HTML, so the no-JS case
+   is released by the <noscript> override in the root layout rather than leaving
+   an empty bar above three labelled amounts.
+
+   scaleX from the left rather than an animated width, so the sweep costs no
+   layout. Each segment's rounded outer corner would distort horizontally while
+   the fill is short, which is why the parent slot carries `overflow-hidden`: the
+   fill is clipped to its own slot and the corner is only visible once the
+   segment is at full width.
+
+   The marker is opacity only, deliberately. It is positioned with a static
+   -translate-x-1/2 and animating transform here would fight that centring. */
+@media (prefers-reduced-motion: no-preference) {
+  .profit-stack-seg {
+    transform-origin: left center;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  [data-draw="off"] .profit-stack-seg {
+    transform: scaleX(0);
+  }
+
+  .profit-stack-marker {
+    transition: opacity 320ms ease-out;
+  }
+
+  [data-draw="off"] .profit-stack-marker {
+    opacity: 0;
+  }
+}
+
+/* The "live now" indicator on the MTD timing tiles.
+   
+   This is the ONE looping animation on the site. Everything else draws once
+   the first time it scrolls into view and then stops, because motion that
+   repeats competes with reading. A "live now" dot is the exception: a pulse
+   that stops pulsing stops meaning live, which is the entire content of the
+   mark.
+
+   Pure CSS with no observer and no data-draw, so there is nothing for the
+   <noscript> override to release. The ring rests at opacity 0 and the solid
+   dot underneath is always painted, so reduced motion and no JavaScript both
+   leave a plain emerald dot: the indicator still reads, it just does not
+   move. */
+.live-pulse-ring {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .live-pulse-ring {
+    animation: live-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes live-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    70%,
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
 }
