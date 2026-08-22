@@ -20,7 +20,7 @@ export const lttCalculator: GenericTool = {
     { id: "price", label: "Property price", type: "currency", default: 250_000, step: 5000 },
     {
       id: "additional",
-      label: "Additional property (buy-to-let or second home) — uses the higher rates",
+      label: "Additional property (buy-to-let or second home): uses the higher rates",
       type: "toggle",
       default: true,
     },

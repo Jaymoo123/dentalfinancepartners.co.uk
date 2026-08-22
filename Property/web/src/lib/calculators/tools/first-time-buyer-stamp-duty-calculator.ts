@@ -35,7 +35,7 @@ export const firstTimeBuyerStampDutyCalculator: GenericTool = {
       ],
       note: reliefLost
         ? "Above £500,000 first-time-buyer relief is fully withdrawn, so you pay standard SDLT. England & NI only."
-        : "First-time-buyer relief: 0% on the first £300,000 and 5% on £300,001–£500,000. Both buyers must be first-time buyers. England & NI only; Scotland and Wales differ.",
+        : "First-time-buyer relief: 0% on the first £300,000 and 5% on £300,001 to £500,000. Both buyers must be first-time buyers. England & NI only; Scotland and Wales differ.",
     };
   },
   explainer: {

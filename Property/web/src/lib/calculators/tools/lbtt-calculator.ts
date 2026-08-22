@@ -20,13 +20,13 @@ export const lbttCalculator: GenericTool = {
     { id: "price", label: "Property price", type: "currency", default: 250_000, step: 5000 },
     {
       id: "additional",
-      label: "Additional property (buy-to-let or second home) — adds the 8% ADS",
+      label: "Additional property (buy-to-let or second home): adds the 8% ADS",
       type: "toggle",
       default: true,
     },
     {
       id: "firstTimeBuyer",
-      label: "First-time buyer — relief raises the nil band to £175,000",
+      label: "First-time buyer: relief raises the nil band to £175,000",
       type: "toggle",
       default: false,
     },

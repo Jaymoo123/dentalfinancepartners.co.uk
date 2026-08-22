@@ -187,7 +187,7 @@ export const landlordEssentialsPremiumTool: PremiumToolConfig = {
     },
   ],
   grid: {
-    heading: "Or list your properties (optional — overrides the single property above)",
+    heading: "Or list your properties (optional, overrides the single property above)",
     columns: [
       { id: "name", label: "Property", type: "text" },
       { id: "rent", label: "Annual rent", type: "currency" },
