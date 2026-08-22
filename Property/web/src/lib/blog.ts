@@ -62,6 +62,18 @@ export function getPostBySlug(slug: string): BlogPost | null {
   return parsePostFile(filePath);
 }
 
+/**
+ * Related articles from the same category.
+ *
+ * `category` is matched on the CATEGORY SLUG, not on the raw frontmatter string. Three of
+ * our ten categories carry a two-way spelling split in frontmatter ("Making Tax Digital
+ * MTD" vs "(MTD)", "Incorporation and Company Structures" vs "&", "Property Types and
+ * Specialist Tax" vs "&"), and while raw-string equality was the predicate those three
+ * categories were each two disconnected related-article pools that could never reach one
+ * another. Same root cause Phase 0.4 fixed for CTA_BY_CATEGORY. Slugifying both sides makes
+ * the function immune to any future frontmatter spelling and accepts a slug or a display
+ * name from a caller, since slugifying a slug is idempotent.
+ */
 export function getRelatedPosts(
   currentSlug: string,
   category: string,
@@ -70,6 +82,7 @@ export function getRelatedPosts(
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
+  const wantedCategorySlug = slugifyCategory(category);
 
   const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
   const candidates: BlogPost[] = [];
@@ -81,7 +94,7 @@ export function getRelatedPosts(
     const fm = data as Partial<BlogFrontmatter>;
 
     if (fm.slug === currentSlug) continue;
-    if (fm.category !== category) continue;
+    if (!fm.category || slugifyCategory(fm.category) !== wantedCategorySlug) continue;
     if (!fm.slug || !fm.title) continue;
 
     candidates.push(parsePostFile(filePath));
