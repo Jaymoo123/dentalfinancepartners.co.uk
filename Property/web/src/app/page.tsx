@@ -3,6 +3,7 @@ import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { allTools } from "@/lib/calculators/registry";
 import { btnOnDark, btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { LocationChips } from "@/components/property/LocationChips";
 import { siteConfig } from "@/config/site";
@@ -469,6 +470,22 @@ export default function HomePage() {
             </p>
           </div>
           <CalculatorTabs />
+          {/* Carve-out 5. CalculatorTabs renders <button role="tab">, so the block
+              itself contains no crawlable link, and the homepage body carried none
+              before it either. This is the designer's own pattern from their /blog
+              index (data-cta="blog_calculators_all"), and the count is derived from
+              the registry rather than typed, per their rule. */}
+          <div className="mt-8 sm:mt-10">
+            <Link
+              href="/calculators"
+              data-cta="home_calculators_all"
+              data-cta-placement="calculator_bridge"
+              className="inline-flex items-center gap-2 text-base sm:text-lg font-semibold text-emerald-700 transition-colors hover:text-emerald-800"
+            >
+              See all {allTools().length} calculators
+              <ArrowRight aria-hidden className="h-5 w-5" />
+            </Link>
+          </div>
         </div>
       </section>
 

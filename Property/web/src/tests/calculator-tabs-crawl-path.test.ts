@@ -42,7 +42,12 @@ export function keepsCrawlPath(src: string): boolean {
     // /property-tax-rates, where six crawlable calculator links are written this
     // way and the attribute-only predicate called a page with links a page
     // without. Both forms are real links; only the spelling differs.
-    /href:\s*["'`]\/calculators\//.test(src)
+    /href:\s*["'`]\/calculators\//.test(src) ||
+    // Or a link to the calculator directory itself. /calculators renders the full
+    // registry (26 links, measured in Phase 4), so a page that links to it keeps a
+    // complete crawl path to every tool, which is what this guard is protecting.
+    // Phase 5 put exactly this link under the homepage tabs.
+    /href=\{?["'`]\/calculators["'`]/.test(src)
   );
 }
 
@@ -64,7 +69,9 @@ describe("CalculatorTabs pages keep a crawlable path to /calculators/*", () => {
     expect(
       keepsCrawlPath('<CalculatorTabs /><Section calc={{ href: "/calculators/mtd-checker" }} />'),
     ).toBe(true);
+    expect(keepsCrawlPath('<CalculatorTabs /><Link href="/calculators" />')).toBe(true);
     expect(keepsCrawlPath('<CalculatorTabs /><Link href="/blog/mtd" />')).toBe(false);
+    expect(keepsCrawlPath('<CalculatorTabs /><Link href="/calculators-guide" />')).toBe(false);
     expect(keepsCrawlPath("<p>no tabs here</p>")).toBe(true);
   });
 
