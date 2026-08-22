@@ -2,16 +2,15 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { computeIncorporation } from "@/lib/incorporation";
 import { NumberInput } from "@/components/calculators/fields/NumberInput";
+import { ResultGate } from "@/components/calculators/ResultGate";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 export function IncorporationCostCalculator({
   variant = "page",
-  resultCta = false,
 }: {
   variant?: "page" | "embed";
-  resultCta?: boolean;
 }) {
   const [propertyValue, setPropertyValue] = useState(300000);
   const [purchasePrice, setPurchasePrice] = useState(200000);
@@ -38,11 +37,11 @@ export function IncorporationCostCalculator({
   const effectiveCgtRate = res.capitalGain > 0 ? (res.cgtCost / res.capitalGain) * 100 : 0;
 
   return (
-    <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
+    <div className="rounded-xl bg-white p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
-          Calculator
-        </div>
+        {/* Was a filled navy pill badge. Eyebrow is the shared section
+            label; it carries its own bottom margin. */}
+        <Eyebrow>Calculator</Eyebrow>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">Incorporation Cost Calculator</h3>
         <p className="mt-2 text-sm sm:text-base text-slate-600">
           Calculate the upfront cost (CGT + SDLT) and break-even timeline for incorporating your rental property.
@@ -128,6 +127,7 @@ export function IncorporationCostCalculator({
           </div>
         </div>
 
+        <ResultGate campaign="incorporation-cost-calculator" enabled={variant !== "embed"}>
         <div className="bg-slate-900 p-6 sm:p-8 text-white space-y-6 sm:space-y-8">
           <div>
             <div className="text-xs sm:text-sm font-bold text-amber-400 uppercase tracking-wider mb-2">Upfront cost</div>
@@ -172,12 +172,9 @@ export function IncorporationCostCalculator({
             </p>
           </div>
         </div>
+        </ResultGate>
       </div>
-      {variant === "embed" ? (
-        <EmbedCta campaign="incorporation-cost-calculator" />
-      ) : resultCta ? (
-        <CalcResultCta campaign="incorporation-cost-calculator" />
-      ) : null}
+      {variant === "embed" ? <EmbedCta campaign="incorporation-cost-calculator" /> : null}
     </div>
   );
 }

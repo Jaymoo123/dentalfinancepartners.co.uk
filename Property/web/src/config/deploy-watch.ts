@@ -145,12 +145,15 @@ export function volumeVerdict(actual2wk: number, baseline2wk: number): GateResul
  * The mini-form capture surfaces this watch covers. These are the form_id values
  * emitted by the exit-intent modal, the inline mini form, the calculator result
  * gate, the mobile tool slot, the resource block, and the specialist widget.
+ *
+ * `calc_result` was REMOVED on 2026-08-22 in the same commit that deleted
+ * CalcResultCta, its only emitter (owner Decision C2 of the design port). See the
+ * baseline note below: the two must never move apart.
  */
 export const MINIFORM_FORM_IDS = [
   "exit_intent",
   "exit_intent_form",
   "inline_mini",
-  "calc_result",
   "calc_result_gate",
   "mobile_tool",
   "resource_block",
@@ -162,6 +165,18 @@ export const MINIFORM_FORM_IDS = [
  * 28 days immediately before the multi-step rollout). This window includes the
  * specialist widget. It is the "before" number the day 14 and day 28 volume
  * checks compare against.
+ *
+ * RESTATED 2026-08-22, and the arithmetic matters, because dropping a form_id
+ * from the list above while leaving this number alone would compare a shrunken
+ * surface set against an unshrunken baseline and fire a false ACTION-NEEDED
+ * email at the owner.
+ *
+ * The measured window breaks down (docs/Property/LEAD_CAPTURE_MAP.md, same dates,
+ * human sessions) as specialist_widget 4 + exit_intent 5 + calc_result_gate 2 +
+ * inline_mini 2 + mobile_tool 2 + resource_block 0 + **calc_result 0** = 15.
+ * calc_result contributed 3 starts and ZERO leads, so removing it takes nothing
+ * out of the 15 and the comparison stays like for like. The number is therefore
+ * unchanged at 15 by derivation, not by omission.
  */
 export const BASELINE_MINIFORM_LEADS_28D = 15;
 /** Derived weekly baseline (28d / 4). Used by the day 7 week-one lead check. */

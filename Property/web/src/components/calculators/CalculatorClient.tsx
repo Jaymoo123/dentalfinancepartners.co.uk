@@ -13,7 +13,7 @@
  *
  * The resultCta prop accepts a React node (the shared Calculator's API) so the
  * server page can inject a CTA without passing functions across the boundary.
- * Property tool pages that need a CTA inject <CalcResultCta> or <PageResultCta>
+ * Property tool pages that need a CTA inject <PageResultCta>
  * as children.
  */
 import { Calculator } from "@accounting-network/web-shared/tools/components/Calculator";

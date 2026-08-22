@@ -2,8 +2,9 @@
 
 import { useState, useRef } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { NumberInput } from "@/components/calculators/fields/NumberInput";
+import { ResultGate } from "@/components/calculators/ResultGate";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 interface Property {
   id: string;
@@ -15,10 +16,8 @@ interface Property {
 
 export function PortfolioProfitabilityCalculator({
   variant = "page",
-  resultCta = false,
 }: {
   variant?: "page" | "embed";
-  resultCta?: boolean;
 }) {
   const nextId = useRef(3);
   const [properties, setProperties] = useState<Property[]>([
@@ -59,11 +58,11 @@ export function PortfolioProfitabilityCalculator({
   const averageNetYield = (totalNetProfit / (properties.length * 250000)) * 100;
 
   return (
-    <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
+    <div className="rounded-xl bg-white p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
-          Calculator
-        </div>
+        {/* Was a filled navy pill badge. Eyebrow is the shared section
+            label; it carries its own bottom margin. */}
+        <Eyebrow>Calculator</Eyebrow>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">Portfolio Profitability Calculator</h3>
         <p className="mt-2 text-sm sm:text-base text-slate-600">
           Analyse property-level profitability across your portfolio. Assumes £250k property value for yield calculations.
@@ -141,7 +140,7 @@ export function PortfolioProfitabilityCalculator({
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-2 sm:gap-4 bg-white p-3 sm:p-4 text-center border-l-4 border-slate-300">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 bg-white p-3 sm:p-4 text-center">
                 <div>
                   <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Net profit</div>
                   <div
@@ -181,6 +180,7 @@ export function PortfolioProfitabilityCalculator({
         </button>
       </div>
 
+      <ResultGate campaign="portfolio-profitability-calculator" enabled={variant !== "embed"}>
       <div className="mt-8 sm:mt-10 bg-slate-900 p-6 sm:p-8 text-white">
         <h4 className="text-base sm:text-lg font-bold text-white mb-4 sm:mb-6 uppercase tracking-wider">Portfolio summary</h4>
         <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4">
@@ -221,11 +221,8 @@ export function PortfolioProfitabilityCalculator({
           </p>
         </div>
       </div>
-      {variant === "embed" ? (
-        <EmbedCta campaign="portfolio-profitability-calculator" />
-      ) : resultCta ? (
-        <CalcResultCta campaign="portfolio-profitability-calculator" />
-      ) : null}
+      </ResultGate>
+      {variant === "embed" ? <EmbedCta campaign="portfolio-profitability-calculator" /> : null}
     </div>
   );
 }

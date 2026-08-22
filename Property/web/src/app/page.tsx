@@ -454,16 +454,16 @@ export default function HomePage() {
           </div>
           <div className="space-y-12 sm:space-y-16">
             <div id="section24">
-              <Section24Calculator resultCta />
+              <Section24Calculator />
             </div>
             <div id="incorporation">
-              <IncorporationCostCalculator resultCta />
+              <IncorporationCostCalculator />
             </div>
             <div id="mtd">
-              <MTDCheckerCalculator resultCta />
+              <MTDCheckerCalculator />
             </div>
             <div id="portfolio">
-              <PortfolioProfitabilityCalculator resultCta />
+              <PortfolioProfitabilityCalculator />
             </div>
           </div>
         </div>

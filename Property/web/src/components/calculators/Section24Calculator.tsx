@@ -2,16 +2,15 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { CalcResultCta } from "@/components/calculators/CalcResultCta";
+import { ResultGate } from "@/components/calculators/ResultGate";
 import { computeSection24, type TaxBand } from "@/lib/section24";
 import { NumberInput } from "@/components/calculators/fields/NumberInput";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 export function Section24Calculator({
   variant = "page",
-  resultCta = false,
 }: {
   variant?: "page" | "embed";
-  resultCta?: boolean;
 }) {
   const [rentalIncome, setRentalIncome] = useState(50000);
   const [mortgageInterest, setMortgageInterest] = useState(20000);
@@ -26,11 +25,11 @@ export function Section24Calculator({
   const extraTaxPerMonth = extraTax / 12;
 
   return (
-    <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
+    <div className="rounded-xl bg-white p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
-          Calculator
-        </div>
+        {/* Was a filled navy pill badge. Eyebrow is the shared section
+            label; it carries its own bottom margin. */}
+        <Eyebrow>Calculator</Eyebrow>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">Section 24 Tax Calculator</h3>
         <p className="mt-2 text-sm sm:text-base text-slate-600">
           Calculate how much extra tax you&apos;re paying due to Section 24 mortgage interest restriction.
@@ -101,6 +100,7 @@ export function Section24Calculator({
           </div>
         </div>
 
+        <ResultGate campaign="section-24-calculator" enabled={variant !== "embed"}>
         <div className="bg-slate-900 p-6 sm:p-8 text-white">
           <div className="mb-4 sm:mb-6">
             <div className="text-xs sm:text-sm font-bold text-emerald-400 uppercase tracking-wider mb-2">Your result</div>
@@ -137,12 +137,9 @@ export function Section24Calculator({
             </p>
           </div>
         </div>
+        </ResultGate>
       </div>
-      {variant === "embed" ? (
-        <EmbedCta campaign="section-24-calculator" />
-      ) : resultCta ? (
-        <CalcResultCta campaign="section-24-calculator" />
-      ) : null}
+      {variant === "embed" ? <EmbedCta campaign="section-24-calculator" /> : null}
     </div>
   );
 }

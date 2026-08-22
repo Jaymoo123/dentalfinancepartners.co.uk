@@ -2,15 +2,14 @@
 
 import { useState } from "react";
 import { EmbedCta } from "@/components/embed/EmbedCta";
-import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { NumberInput } from "@/components/calculators/fields/NumberInput";
+import { ResultGate } from "@/components/calculators/ResultGate";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 export function MTDCheckerCalculator({
   variant = "page",
-  resultCta = false,
 }: {
   variant?: "page" | "embed";
-  resultCta?: boolean;
 }) {
   const [rentalIncome, setRentalIncome] = useState(35000);
   const [selfEmploymentIncome, setSelfEmploymentIncome] = useState(20000);
@@ -22,11 +21,11 @@ export function MTDCheckerCalculator({
   const distanceFromThreshold = mtdThreshold - totalIncome;
 
   return (
-    <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10">
+    <div className="rounded-xl bg-white p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
-          Calculator
-        </div>
+        {/* Was a filled navy pill badge. Eyebrow is the shared section
+            label; it carries its own bottom margin. */}
+        <Eyebrow>Calculator</Eyebrow>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">MTD Checker</h3>
         <p className="mt-2 text-sm sm:text-base text-slate-600">
           Check if you need to comply with Making Tax Digital from April 2026.
@@ -84,7 +83,10 @@ export function MTDCheckerCalculator({
           </div>
         </div>
 
-        <div className={`p-6 sm:p-8 text-white ${requiresMTD ? 'bg-amber-600' : 'bg-emerald-600'}`}>
+        <ResultGate campaign="mtd-checker" enabled={variant !== "embed"}>
+        {/* Navy in both outcomes, to match every other calculator result panel.
+            The yes/no answer carries the amber or emerald signal instead. */}
+        <div className="bg-slate-900 p-6 sm:p-8 text-white">
           <div className="mb-4 sm:mb-6">
             <div className="text-xs sm:text-sm font-bold text-white/80 uppercase tracking-wider mb-2">Your total income</div>
             <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-mono">
@@ -101,7 +103,7 @@ export function MTDCheckerCalculator({
 
           <div className="border-t border-white/20 pt-4 sm:pt-6 mb-4 sm:mb-6">
             <div className="text-xs sm:text-sm font-bold text-white/80 uppercase tracking-wider mb-3">Do you need MTD?</div>
-            <div className={`inline-block px-4 sm:px-6 py-2 sm:py-3 text-xl sm:text-2xl font-bold ${requiresMTD ? 'bg-white text-amber-900' : 'bg-white text-emerald-900'}`}>
+            <div className={`inline-block px-4 sm:px-6 py-2 sm:py-3 text-xl sm:text-2xl font-bold ${requiresMTD ? 'bg-amber-400 text-amber-950' : 'bg-emerald-400 text-emerald-950'}`}>
               {requiresMTD ? "YES" : "NO"}
             </div>
             {!requiresMTD && distanceFromThreshold > 0 && (
@@ -129,12 +131,9 @@ export function MTDCheckerCalculator({
             )}
           </div>
         </div>
+        </ResultGate>
       </div>
-      {variant === "embed" ? (
-        <EmbedCta campaign="mtd-checker" />
-      ) : resultCta ? (
-        <CalcResultCta campaign="mtd-checker" />
-      ) : null}
+      {variant === "embed" ? <EmbedCta campaign="mtd-checker" /> : null}
     </div>
   );
 }

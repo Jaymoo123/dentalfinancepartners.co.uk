@@ -48,15 +48,10 @@ import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { ResultGateModal } from "@/components/calculators/ResultGateModal";
+import { HeldResult } from "@/components/calculators/HeldResult";
+import { wasRevealed, rememberRevealed } from "@/components/calculators/resultGateStorage";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
-import { btnPrimary } from "@/components/ui/layout-utils";
-
-// The result-gate interstitial shows at most once per session: the cheeky capture
-// moment. After it has shown, the per-calc "See your result" button reveals the
-// result directly without re-popping.
-let gateModalShownThisSession = false;
 
 /* ---------------------------------------------------------------------------
  * Defaults / setup
@@ -197,7 +192,7 @@ function SelectField({
               aria-checked={active}
               onClick={() => onChange(opt.value)}
               className={cn(
-                "rounded-lg border px-3.5 py-2 text-sm transition-colors min-h-[40px]",
+                "rounded-xl border px-3.5 py-2 text-sm transition-colors min-h-[40px]",
                 active
                   ? "border-emerald-600 bg-emerald-50 text-emerald-800 font-semibold"
                   : "border-slate-200 text-slate-600 hover:bg-slate-50",
@@ -315,7 +310,7 @@ function ScenarioTiles({ scenarios }: { scenarios: ScenarioResult[] }) {
           <div className="flex items-start justify-between gap-2">
             <span className="text-xs text-slate-500">{s.label}</span>
             {s.best && (
-              <span className="rounded-full bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-700">
+              <span className="rounded-full bg-emerald-50 px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-emerald-700">
                 Lower
               </span>
             )}
@@ -476,14 +471,23 @@ export function PremiumCalculator({
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Result gate (shipped default 2026-06-30, was the result_gate_capture treatment;
-  // concluded to treatment — it netted more leads than the ungated control). In-blog
-  // calculators hold the result behind a "See your result" button + interstitial
-  // capture. Converted visitors are never gated (instant access), and non-blog
-  // placements (calculator pages, embeds) are never gated either.
-  const gated = placement === "blog" && !isConverted();
+  // concluded to treatment — it netted more leads than the ungated control). The
+  // result is held behind a "See your result" button + interstitial capture on every
+  // on-site placement, with no once-per-session bypass, so gating one calculator
+  // does not unlock the others. Converted visitors ARE bypassed — they have already
+  // given us their details. Embeds are never gated: they run on third-party sites
+  // as a distribution play, so gating them breaks the deal rather than converting.
+  const gated = placement !== "embed" && !isConverted();
   const [revealed, setRevealed] = useState(false);
   const [gateOpen, setGateOpen] = useState(false);
   const showResult = !gated || revealed;
+
+  // Restore a reveal from earlier in the session so navigating away and back does
+  // not re-gate a calculator the reader has already answered for. Read after mount:
+  // sessionStorage is client-only, so reading during render would desync hydration.
+  useEffect(() => {
+    if (wasRevealed(config.id)) setRevealed(true);
+  }, [config.id]);
 
   // Shared event context: which tool, where, and that this is the premium kind.
   const base = {
@@ -527,23 +531,19 @@ export function PremiumCalculator({
     onInteract("grid");
   };
 
-  // "See your result": opens the interstitial the first time this session,
-  // otherwise reveals directly. The press is auto-captured as a cta_click via the
-  // button's data-cta ("see_result"), which still feeds the on-page diagnostics.
+  // "See your result" always opens the interstitial — no once-per-session bypass,
+  // so every calculator asks once. The press is auto-captured as a cta_click via
+  // the button's data-cta ("see_result"), which still feeds the on-page diagnostics.
   const onSeeResult = () => {
-    if (!gateModalShownThisSession) {
-      gateModalShownThisSession = true;
-      setGateOpen(true);
-    } else {
-      setRevealed(true);
-    }
+    setGateOpen(true);
   };
   // Stable identity so the modal's focus/Escape effects are not re-run (and focus
   // not stolen from the capture form) on an unrelated parent re-render.
   const revealFromGate = useCallback(() => {
     setGateOpen(false);
     setRevealed(true);
-  }, []);
+    rememberRevealed(config.id);
+  }, [config.id]);
 
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, rows, scenario }),
@@ -559,7 +559,7 @@ export function PremiumCalculator({
     <>
     <div
       ref={rootRef}
-      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
+      className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
     >
       {/* Branded top accent */}
       <div className="h-1 bg-gradient-to-r from-emerald-400 to-emerald-600" />
@@ -626,8 +626,13 @@ export function PremiumCalculator({
           </div>
         </div>
 
-        {/* Results */}
-        <div className="space-y-5 border-t border-slate-200 bg-slate-50 p-5 sm:p-7 lg:border-l lg:border-t-0">
+        {/* Results. Pre-reveal these same cards render behind frosted glass, so
+            the area is already the right size and revealing causes no jump. */}
+        <div
+          className={`border-t border-slate-200 lg:border-l lg:border-t-0 ${
+            showResult ? "space-y-5 bg-slate-50 p-5 sm:p-7" : ""
+          }`}
+        >
           {showResult ? (
             <>
               <HeadlineCard result={result} />
@@ -636,38 +641,26 @@ export function PremiumCalculator({
               <Workings result={result} />
             </>
           ) : (
-            // Treatment, pre-reveal: the figure is computed but held behind a button.
-            // min-height reserves the result area so revealing causes no layout jump.
-            <div className="flex min-h-[220px] flex-col items-center justify-center gap-3 text-center">
-              <p className="text-sm font-medium text-slate-600">Your figure is ready.</p>
-              <button
-                type="button"
-                onClick={onSeeResult}
-                className={`${btnPrimary} w-full sm:w-auto`}
-                data-cta="see_result"
-              >
-                See your result
-              </button>
-            </div>
+            <HeldResult
+              onReveal={onSeeResult}
+              ground="light"
+              contentClassName="space-y-5 bg-slate-50 p-5 sm:p-7"
+              minHeightClass="min-h-[220px]"
+              buttonLabel="See your result"
+              dataCta="see_result"
+            >
+              <HeadlineCard result={result} />
+              {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
+              {full && <ComparisonChart config={config} result={result} />}
+              <Workings result={result} />
+            </HeldResult>
           )}
         </div>
       </div>
 
-      {/* Blog placement: the tool otherwise dead-ends (its only lead path is the
-          email Excel gate placed further down the article). Add a form-bound CTA
-          so a reader who just saw their numbers can go straight to a specialist.
-          data-cta-goal="form" feeds the funnel's form-CTA stage + vw_cta_performance. */}
-      {/* Non-gated readers (converted visitors, who get the result instantly) keep
-          the inline capture below the result. Gated readers don't: the interstitial
-          gate is their capture instead, so the inline form would be redundant. */}
-      {placement === "blog" && !gated && !revealed && (
-        <div className="border-t border-slate-200 bg-white px-5 py-4 sm:px-7">
-          <CalcResultCta
-            campaign={config.id}
-            label="Get a specialist to check your numbers →"
-          />
-        </div>
-      )}
+      {/* No inline capture below the result: the interstitial gate is now the
+          capture on every on-site placement, and the only readers who reach the
+          result ungated are converted visitors, who have already given us details. */}
     </div>
     {gateOpen && <ResultGateModal campaign={config.id} onReveal={revealFromGate} />}
     </>
