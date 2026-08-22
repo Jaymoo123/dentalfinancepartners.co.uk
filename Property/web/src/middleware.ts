@@ -162,7 +162,9 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "property-accountant-salary-complete-guide": "property-accountant-services",
   "property-accountant-salary-london": "portfolio-management",
   "property-accountant-salary-uk-guide": "portfolio-management",
-  "property-accountant-services": "property-accountant-services",
+  // "property-accountant-services" is the CATEGORY hub slug, not an article slug.
+  // Listing it here (or in DUPLICATE_REDIRECTS) shadowed /blog/property-accountant-services
+  // so the hub page could never render. Removed 2026-08-22; see the assert below.
   "property-accountant-services-expert-solutions": "portfolio-management",
   "property-accountant-vs-general-accountant": "property-accountant-services",
   "property-accountants-manchester": "portfolio-management",
@@ -420,7 +422,7 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "best-property-accountant-london": "/locations/london",
   "what-services-buy-to-let-accountant": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "online-property-accountant-remote-accounting": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accountant-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
+  // "property-accountant-services" removed here too - see the note in SLUG_TO_CATEGORY_MAP.
   "property-accountant-vs-general-accountant": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "accountant-accounting-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "what-should-property-investors-expect-from-specialist-accountants": "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -534,6 +536,33 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "capital-gains-tax-selling-rental-property-uk": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide",
   ...BLOG_TO_LOCATION,
 };
+
+// The live /blog/<hub> routes (one directory each under src/app/blog). A slug key equal to
+// one of these shadows the hub: the flat-slug handler below fires first and 301s the hub
+// away, so it can never render. Keep in sync when a hub is added or removed.
+const CATEGORY_HUB_SLUGS = [
+  "capital-gains-tax",
+  "incorporation-and-company-structures",
+  "landlord-tax-essentials",
+  "making-tax-digital-mtd",
+  "non-resident-landlord-tax",
+  "portfolio-management",
+  "property-accountant-services",
+  "property-finance",
+  "property-types-and-specialist-tax",
+  "section-24-and-tax-relief",
+];
+
+if (process.env.NODE_ENV !== "production") {
+  const shadowed = CATEGORY_HUB_SLUGS.filter(
+    (hub) => hub in SLUG_TO_CATEGORY_MAP || hub in DUPLICATE_REDIRECTS,
+  );
+  if (shadowed.length > 0) {
+    throw new Error(
+      `middleware: these category hub slugs are keyed as article slugs and can never render: ${shadowed.join(", ")}`,
+    );
+  }
+}
 
 const CANONICAL_HOST = "www.propertytaxpartners.co.uk";
 
