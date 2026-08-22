@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
-import { CTASection } from "@/components/ui/CTASection";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
@@ -848,17 +848,9 @@ export default async function LocationPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: faqSchema }}
       />
 
-      <section className="relative h-[350px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&q=85"
-          alt={`${city} property`}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover brightness-75"
-        />
-        <div className="absolute inset-0 bg-slate-900/85" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+      <section className="relative flex items-center py-10 sm:py-12 lg:py-14 min-h-[350px] overflow-hidden bg-slate-900">
+        <HeroBrickBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
             <Breadcrumb
               onDark
@@ -885,19 +877,19 @@ export default async function LocationPage({ params }: Props) {
               {content.intro}
             </p>
 
-            <h2 className="mt-12 text-3xl font-bold text-slate-900">
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-4xl">
               Specialist property accounting services in {city}
             </h2>
             <div className="mt-8 space-y-6">
               {content.services.map((service) => (
-                <div key={service.title} className="border-l-4 border-emerald-600 bg-slate-50 p-8">
-                  <h3 className="text-xl font-bold text-slate-900">{service.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-slate-700">{service.desc}</p>
+                <div key={service.title} className="bg-slate-50 p-8">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
+                  <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{service.desc}</p>
                 </div>
               ))}
             </div>
 
-            <h2 className="mt-16 text-3xl font-bold text-slate-900">
+            <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">
               Why choose a specialist for {city} property?
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-700">
@@ -906,7 +898,7 @@ export default async function LocationPage({ params }: Props) {
 
             {content.sections.map((section) => (
               <div key={section.h2}>
-                <h2 className="mt-16 text-3xl font-bold text-slate-900">{section.h2}</h2>
+                <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">{section.h2}</h2>
                 {section.paras?.map((p) => (
                   <p key={p} className="mt-4 text-base leading-relaxed text-slate-700">
                     {p}
@@ -922,7 +914,7 @@ export default async function LocationPage({ params }: Props) {
               </div>
             ))}
 
-            <h2 className="mt-16 text-3xl font-bold text-slate-900">
+            <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">
               Areas we serve in and around {city}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-700">
@@ -933,20 +925,20 @@ export default async function LocationPage({ params }: Props) {
               market. Remote support with local market knowledge.
             </p>
 
-            <h2 className="mt-16 text-3xl font-bold text-slate-900">
+            <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">
               {city} landlord tax questions
             </h2>
             <div className="mt-8 space-y-6">
               {content.faqs.map((faq) => (
-                <div key={faq.q} className="border-l-4 border-slate-300 bg-slate-50 p-6">
+                <div key={faq.q} className="bg-slate-50 p-6">
                   <h3 className="text-lg font-bold text-slate-900">{faq.q}</h3>
                   <p className="mt-3 text-base leading-relaxed text-slate-700">{faq.a}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 bg-emerald-50 border-l-4 border-emerald-600 p-8">
-              <h2 className="text-2xl font-bold text-slate-900">
+            <div className="mt-12 bg-emerald-50 p-8">
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
                 How to get started
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-700">
@@ -963,13 +955,13 @@ export default async function LocationPage({ params }: Props) {
 
             {posts.length > 0 && (
               <>
-                <h2 className="mt-16 text-3xl font-bold text-slate-900">Related articles</h2>
+                <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">Related articles</h2>
                 <ul className="mt-8 space-y-4">
                   {posts.map((p) => (
                     <li key={p.slug}>
                       <Link
                         href={`/blog/${getCategorySlug(p)}/${p.slug}`}
-                        className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
+                        className="border border-transparent block bg-slate-50 p-6 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
                       >
                         <h3 className="text-lg font-bold text-slate-900">{p.title}</h3>
                         <p className="mt-2 text-sm text-slate-600">{p.summary}</p>
@@ -983,14 +975,20 @@ export default async function LocationPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <CTASection
-            title={`Speak to a property accountant for your ${city} portfolio`}
-            description="Tell us about your portfolio and we'll explain how we can help with Section 24, MTD, and incorporation planning."
-          />
-        </div>
-      </section>
+      {/* Their LeadCTAPanel, contained, replacing the link-out CTASection. Our h2
+          text is kept: the panel renders it as the page's closing h2 and the h2 set
+          on these 5 pages is carve-out 5. */}
+      <LeadCTAPanel
+        contained
+        title={`Speak to a property accountant for your ${city} portfolio`}
+        description="Tell us about your portfolio and we'll explain how we can help with Section 24, MTD, and incorporation planning."
+        proofPoints={[
+          { title: "Property-only specialists", detail: "Landlords, investors and developers, nothing else" },
+          { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },
+          { title: "24-hour response", detail: "Usually the same working day" },
+        ]}
+        footnote="No obligation and no hard sell. If you do not need us, we will tell you."
+      />
     </>
   );
 }

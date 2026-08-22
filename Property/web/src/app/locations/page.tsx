@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import Link from "next/link";
-import Image from "next/image";
-import { CTASection } from "@/components/ui/CTASection";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { locationHref } from "@/lib/locations";
@@ -27,15 +27,9 @@ export const metadata: Metadata = {
 export default function LocationsHubPage() {
   return (
     <>
-      <section className="relative h-[350px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=2000&q=85"
-          alt="UK cities"
-          fill
-          className="object-cover brightness-75"
-        />
-        <div className="absolute inset-0 bg-slate-900/85" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+      <section className="relative flex items-center py-10 sm:py-12 lg:py-14 min-h-[350px] overflow-hidden bg-slate-900">
+        <HeroBrickBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
             <Breadcrumb
               onDark
@@ -58,8 +52,11 @@ export default function LocationsHubPage() {
             {siteConfig.locations.map((loc) => (
               <Link
                 key={loc.slug}
+                // Ours: locationHref is the single point of control for city URL
+                // resolution after the 08-05 reversal. Currently the identity
+                // function, and it must not be bypassed.
                 href={locationHref(loc.slug)}
-                className="group bg-slate-50 border-l-4 border-slate-300 p-8 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
+                className="border border-transparent group bg-slate-50 p-8 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
               >
                 <span className="text-2xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                   {loc.title}
@@ -74,14 +71,20 @@ export default function LocationsHubPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <CTASection
-            title="Not sure which page fits?"
-            description="Tell us where you are based and we'll point you to the right next step."
-          />
-        </div>
-      </section>
+      {/* The old block asked people to pick a location page. Taking the details
+          here instead means someone whose town has no page still converts,
+          rather than bouncing off a list that does not include them. */}
+      <LeadCTAPanel
+        contained
+        title="Not sure which page fits?"
+        description="Tell us where you are based and what you own. We will point you to the right next step, wherever you are in the UK."
+        proofPoints={[
+          { title: "Property-only specialists", detail: "Landlords, investors and developers, nothing else" },
+          { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },
+          { title: "24-hour response", detail: "Usually the same working day" },
+        ]}
+        footnote="No obligation and no hard sell. If you do not need us, we will tell you."
+      />
     </>
   );
 }
