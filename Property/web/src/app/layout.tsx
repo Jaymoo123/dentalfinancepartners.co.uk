@@ -84,6 +84,21 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
+        {/* Without JS the eyebrow rules can never be released by their observer,
+            so show them complete rather than collapsed. Must live inside <body>:
+            React cannot render <noscript> as a direct child of <html>. */}
+        <noscript>
+          <style>{`.eyebrow-rule[data-draw="off"] { transform: none; }
+            [data-draw="off"] .tick-draw { stroke-dashoffset: 0; }
+            [data-draw="off"] .penalty-ladder-rail { transform: none; }
+            [data-draw="off"] .penalty-ladder-rail-v { transform: none; }
+            [data-draw="off"] .penalty-ladder-step { opacity: 1; transform: none; }
+            [data-draw="off"] .rate-wedge-fill { transform: none; }
+            [data-draw="off"] .profit-stack-seg { transform: none; }
+            [data-draw="off"] .profit-stack-marker { opacity: 1; }
+            [data-draw="off"] .story-numeral-rule { transform: none; }
+            [data-draw="off"] .story-numeral { color: oklch(0.596 0.145 163.225); text-shadow: 0 0 18px rgb(16 185 129 / 0.45); }`}</style>
+        </noscript>
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * Visitor can opt out via the "Do not track me" footer link.
