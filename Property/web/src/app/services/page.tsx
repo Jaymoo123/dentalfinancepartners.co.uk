@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { CTASection } from "@/components/ui/CTASection";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { ArrowRight, BarChart3, Briefcase, Building2, CalendarClock, Check, FileText, Home, Landmark, Network } from "lucide-react";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
+import { ScrollGlowGroup } from "@/components/property/ScrollGlowGroup";
+import { StatsCounter } from "@/components/property/StatsCounter";
+import { siteStats } from "@/lib/site-stats";
+import { TestimonialsSection } from "@/components/property/TestimonialsSection";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
+import { btnPrimary, heroCreamSurface, siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { ServiceTiers } from "@/components/property/ServiceTiers";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
+// Ours (0107a8b8 brand-suffix dedupe + c218d7a6 descriptions). Their title
+// duplicates the "property accountant" head term that /services/property-accountant
+// owns; ours is the deduped one and it is what the monitored rows were baselined on.
 export const metadata: Metadata = {
   title: "Property Accounting Services",
   description:
@@ -31,6 +39,13 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Ours (bbfe0437). The "Where to start" hub, and it is not decoration: these six
+ * links are the only sitewide entry point to the four /services/* pages and
+ * /incorporation outside the nav dropdown, and four of them are monitored rows.
+ * Carve-out 5. The designer never saw this section, so their file simply has no
+ * equivalent; the cards below are restyled into their card idiom.
+ */
 const hub = [
   {
     href: "/services/property-accountant",
@@ -80,42 +95,115 @@ const jsonLd = {
   ],
 };
 
+const included = [
+  {
+    title: "24-hour response guarantee",
+    body: "Email or call us with a question. We respond within 24 hours, usually same day.",
+  },
+  {
+    title: "Fixed fees, no surprises",
+    body: "You know exactly what you're paying upfront. No hourly billing, no hidden charges.",
+  },
+  {
+    title: "Property-only specialists",
+    body: "100% of our clients are landlords. We understand Section 24, MTD, and incorporation because we see them every day.",
+  },
+  {
+    title: "Proactive support",
+    body: "We flag opportunities before you miss them. If MTD is approaching or incorporation would save you money, we'll tell you.",
+  },
+];
+
 const services = [
   {
-    icon: "📊",
+    icon: BarChart3,
     title: "Section 24 Tax Planning",
     description: "Calculate your Section 24 impact and explore ways to reduce the tax hit.",
     features: ["Annual tax saving analysis", "Incorporation vs. personal comparison", "Expense optimisation"],
+    calc: { slug: "section-24-calculator", label: "Estimate your Section 24 bill", key: "section24" },
   },
   {
-    icon: "📅",
+    icon: CalendarClock,
     title: "MTD Compliance",
     description: "Get ready for Making Tax Digital quarterly reporting from April 2026.",
     features: ["MTD threshold check", "Software setup", "Quarterly submissions", "Penalty avoidance"],
+    calc: { slug: "mtd-checker", label: "Check if MTD applies to you", key: "mtd" },
   },
   {
-    icon: "🏢",
+    icon: Building2,
     title: "Incorporation Analysis",
     description: "Find out if transferring to a limited company makes financial sense.",
     features: ["CGT and SDLT cost modelling", "Break-even timeline", "Clear recommendation"],
+    calc: { slug: "incorporation-cost-calculator", label: "Cost out incorporation", key: "incorporation" },
   },
   {
-    icon: "💼",
+    icon: Briefcase,
     title: "Portfolio Reporting",
     description: "Property-by-property profitability tracking and yield analysis.",
     features: ["Monthly/quarterly reports", "Property-level P&L", "Yield calculations", "Cash flow forecasts"],
+    calc: { slug: "portfolio-profitability-calculator", label: "Test a property's profitability", key: "portfolio" },
   },
   {
-    icon: "📝",
+    icon: FileText,
     title: "Self Assessment",
     description: "Tax returns for individual landlords with rental income.",
     features: ["Rental schedules", "Expense claims", "Section 24 application", "Payment on account"],
+    calc: { slug: "rental-income-tax-calculator", label: "Work out the tax on your rent", key: "rental_income" },
   },
   {
-    icon: "🏛️",
+    icon: Landmark,
     title: "Company Accounts",
     description: "Annual accounts and corporation tax for property limited companies.",
     features: ["Statutory accounts", "Corporation tax returns", "Profit extraction advice", "Director loans"],
+    calc: { slug: "corporation-tax-calculator", label: "Estimate your Corporation Tax", key: "corp_tax" },
+  },
+];
+
+/* Client tiers. The prose that used to sit here was a comma list, which reads as
+   a sentence rather than as evidence. Naming each workstream on its own line is
+   what signals depth: it shows we know the shape of the work at every portfolio
+   size. All three tiers are styled identically on purpose: the brand serves
+   every portfolio size equally, so singling one out would push the other two
+   visitors toward reading themselves as the lesser fit. */
+const clientTiers = [
+  {
+    icon: Home,
+    title: "Individual Landlords",
+    scale: "1-3 properties",
+    summary: "One flat or a small let portfolio, run in your own name alongside a job.",
+    handles: [
+      "Self Assessment returns",
+      "Section 24 planning",
+      "MTD compliance",
+      "Incorporation feasibility",
+    ],
+    calc: { slug: "rental-income-tax-calculator", label: "Work out the tax on your rent", key: "individual" },
+  },
+  {
+    icon: Building2,
+    title: "Portfolio Owners",
+    scale: "4-10 properties",
+    summary: "A portfolio big enough that property-by-property numbers start to matter.",
+    handles: [
+      "Management accounts",
+      "Property-level reporting",
+      "Limited company accounts",
+      "Acquisition support",
+    ],
+    calc: { slug: "portfolio-profitability-calculator", label: "Test a property's profitability", key: "portfolio" },
+  },
+  {
+    icon: Network,
+    title: "Large Portfolios",
+    scale: "10+ properties",
+    summary: "Multi-company structures where the tax question is usually structural.",
+    handles: [
+      "Group accounting",
+      "Corporation tax planning",
+      "Disposal planning",
+      "Portfolio restructuring",
+    ],
+    calc: { slug: "corporation-tax-calculator", label: "Estimate your Corporation Tax", key: "large" },
   },
 ];
 
@@ -123,76 +211,57 @@ export default function ServicesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative h-[300px] sm:h-[350px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=85"
-          alt="UK property"
-          fill
-          className="object-cover brightness-75"
-        />
-        <div className="absolute inset-0 bg-slate-900/85" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+      <section className={`relative flex items-center py-10 sm:py-12 lg:py-14 min-h-[300px] sm:min-h-[350px] overflow-hidden ${heroCreamSurface}`}>
+        <HeroBrickBackdrop tone="cream" />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
             <Breadcrumb
-              onDark
               items={[
                 { label: "Home", href: "/" },
                 { label: "Services" },
               ]}
             />
-            <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
-              Our services
+            <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-6xl">
+              Property accounting services for UK landlords
             </h1>
-            <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
-              Everything we do, in one place. Start with a free calculator or go straight to the service you need.
+            {/* Mirrors the homepage hero subcopy: a "whether you need..." span of
+                the three most-searched jobs, then a closer that bridges into the
+                CTA. Kept to the services page's wider scope (compliance work as
+                well as advisory). */}
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
+              Whether you need your Self Assessment filed or your reporting set up for Making Tax Digital,
+              a free consultation shows you where the money is leaking and what fixing it costs, all
+              within 24 hours.
             </p>
+            <Link
+              href="#book"
+              data-cta="services_hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+              className={`${btnPrimary} mt-6 w-full sm:mt-8 sm:w-auto`}
+            >
+              Book free consultation
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* Stats strip, same treatment as the homepage: white with a hairline, so it
+          reads as a break from the navy hero rather than a section of its own. */}
+      <section className="border-b border-slate-200 bg-white py-5 sm:py-7">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">Where to start</h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Each page below explains what the work covers, who it suits and how an engagement runs. If you are not
-              sure which fits, book a call and we will point you at the right one.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {hub.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block bg-white border-2 border-slate-200 p-8 transition-all hover:border-emerald-600 hover:shadow-md"
-              >
-                <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
-                <p className="mt-3 text-base leading-relaxed text-slate-600">{item.description}</p>
-                <span className="mt-6 inline-block text-sm font-bold text-emerald-700">Read more</span>
-              </Link>
-            ))}
-          </div>
+          <StatsCounter stats={siteStats} />
         </div>
       </section>
 
-      <section className="bg-white pb-12 sm:pb-16 lg:pb-20">
-        <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">Choose your service tier</h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Start with free tools, upgrade to expert review, or let us handle everything. No long-term contracts.
-            </p>
-          </div>
-          <div className="mt-8 sm:mt-10">
-            <ServiceTiers />
-          </div>
-        </div>
-      </section>
 
       <section className="bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">What the work covers</h2>
+          <div className="max-w-3xl mb-12">
+            <Eyebrow>Our services</Eyebrow>
+            {/* Ours (bbfe0437): "What the work covers", not "What we specialise
+                in". Their h2 scale, our wording. */}
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">What the work covers</h2>
             <p className="mt-4 text-lg text-slate-600">
               Property-only focus means we understand Section 24, MTD, and incorporation inside out.
             </p>
@@ -201,21 +270,40 @@ export default function ServicesPage() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-white border-l-4 border-slate-300 p-8 transition-all hover:border-emerald-600 hover:shadow-md"
+                className="flex flex-col rounded-xl bg-white p-5 sm:p-6 transition-colors border border-transparent hover:border-emerald-600"
               >
-                <div className="flex h-16 w-16 items-center justify-center bg-emerald-600 text-3xl mb-4">
-                  {service.icon}
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 mb-3">
+                  <service.icon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900">{service.title}</h3>
-                <p className="mt-3 text-base leading-relaxed text-slate-600">{service.description}</p>
-                <ul className="mt-6 space-y-2.5">
+                <h3 className="text-sm sm:text-base font-bold text-slate-900">{service.title}</h3>
+                <p className="mt-1.5 text-xs sm:text-sm leading-relaxed text-slate-600">{service.description}</p>
+                <ul className="mt-4 space-y-2 pb-4">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm text-slate-700">
-                      <span className="text-emerald-600 font-bold flex-shrink-0 text-lg">✓</span>
+                    <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                      <Check aria-hidden className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" strokeWidth={3} />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
+                {/* One matched calculator per service: it answers the "would this
+                    even be worth it for me?" objection at the moment it forms, and
+                    the result sits behind ResultGate, so the link captures rather
+                    than leaks. Secondary weight on purpose: the hero "Book free
+                    consultation" stays the page's single primary CTA.
+                    mt-auto pins the row to the card foot so the links line up
+                    across a row despite uneven feature-list lengths. */}
+                <Link
+                  href={`/calculators/${service.calc.slug}`}
+                  data-cta={`services_calc_${service.calc.key}`}
+                  data-cta-placement="services_grid"
+                  className="group mt-auto flex items-center gap-2 border-t border-slate-100 pt-4 text-xs sm:text-sm font-bold text-emerald-700 transition-colors hover:text-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
+                >
+                  {service.calc.label}
+                  <ArrowRight
+                    aria-hidden
+                    className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                  />
+                </Link>
               </div>
             ))}
           </div>
@@ -224,55 +312,21 @@ export default function ServicesPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-10">What&apos;s included</h2>
-            <div className="space-y-6">
-              <div className="flex gap-6 border-l-4 border-emerald-600 bg-slate-50 p-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-600 flex items-center justify-center text-white font-bold text-2xl">
-                  ✓
+          <div>
+            <Eyebrow>What you get</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-10">What&apos;s included</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              {included.map((item) => (
+                <div key={item.title} className="flex gap-6 rounded-xl bg-slate-50 p-6">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100">
+                    <Check aria-hidden className="h-6 w-6" strokeWidth={1.75} />
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
+                    <p className="mt-2 text-sm sm:text-base text-slate-700 leading-relaxed">{item.body}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">24-hour response guarantee</h3>
-                  <p className="mt-2 text-base text-slate-700 leading-relaxed">
-                    Email or call us with a question. We respond within 24 hours, usually same day.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6 border-l-4 border-emerald-600 bg-slate-50 p-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-600 flex items-center justify-center text-white font-bold text-2xl">
-                  ✓
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">Fixed fees, no surprises</h3>
-                  <p className="mt-2 text-base text-slate-700 leading-relaxed">
-                    You know exactly what you&apos;re paying upfront. No hourly billing, no hidden charges.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6 border-l-4 border-emerald-600 bg-slate-50 p-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-600 flex items-center justify-center text-white font-bold text-2xl">
-                  ✓
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">Property-only specialists</h3>
-                  <p className="mt-2 text-base text-slate-700 leading-relaxed">
-                    100% of our clients are landlords. We understand Section 24, MTD, and incorporation because we see
-                    them every day.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6 border-l-4 border-emerald-600 bg-slate-50 p-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-600 flex items-center justify-center text-white font-bold text-2xl">
-                  ✓
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">Proactive support</h3>
-                  <p className="mt-2 text-base text-slate-700 leading-relaxed">
-                    We flag opportunities before you miss them. If MTD is approaching or incorporation would save you
-                    money, we&apos;ll tell you.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -280,39 +334,121 @@ export default function ServicesPage() {
 
       <section className="bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-10">Who we work with</h2>
-            <div className="grid gap-6 md:grid-cols-3">
-              <div className="bg-white border-2 border-slate-200 p-8">
-                <h3 className="text-xl font-bold text-slate-900">Individual Landlords</h3>
-                <p className="mt-2 text-sm font-bold text-emerald-700 uppercase tracking-wider">1-3 properties</p>
-                <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                  Self Assessment, Section 24 planning, MTD compliance, and incorporation feasibility.
-                </p>
-              </div>
-              <div className="bg-emerald-50 border-2 border-emerald-600 p-8">
-                <h3 className="text-xl font-bold text-slate-900">Portfolio Owners</h3>
-                <p className="mt-2 text-sm font-bold text-emerald-700 uppercase tracking-wider">4-10 properties</p>
-                <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                  Management accounts, property-level reporting, limited company accounts, and acquisition support.
-                </p>
-              </div>
-              <div className="bg-white border-2 border-slate-200 p-8">
-                <h3 className="text-xl font-bold text-slate-900">Large Portfolios</h3>
-                <p className="mt-2 text-sm font-bold text-emerald-700 uppercase tracking-wider">10+ properties</p>
-                <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                  Group accounting, corporation tax planning, disposal planning, and portfolio restructuring.
-                </p>
-              </div>
-            </div>
+          <div>
+            <Eyebrow>Our clients</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Who we work with</h2>
+            <p className="mt-4 max-w-3xl text-lg text-slate-600 mb-10">
+              Every client is a landlord or property investor. The work changes shape as a portfolio
+              grows, so here is what we handle at each stage.
+            </p>
+            <ScrollGlowGroup className="grid gap-6 md:grid-cols-3">
+              {clientTiers.map((tier) => (
+                <div
+                  key={tier.title}
+                  className="group flex flex-col rounded-xl border border-emerald-100 bg-white p-8 shadow-[0_6px_20px_-8px_rgba(5,150,105,0.28)] transition duration-200 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-[0_16px_32px_-12px_rgba(5,150,105,0.4)] motion-reduce:transform-none motion-reduce:transition-none"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100">
+                      <tier.icon aria-hidden className="h-6 w-6" strokeWidth={1.75} />
+                    </span>
+                    {/* Scale chip: the fastest self-identification cue on the card,
+                        so it sits level with the badge rather than buried in prose. */}
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-700 ring-1 ring-emerald-200">
+                      {tier.scale}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 text-base sm:text-lg font-bold text-slate-900">{tier.title}</h3>
+                  <p className="mt-2 text-sm sm:text-base text-slate-700 leading-relaxed">{tier.summary}</p>
+                  <ul className="mt-5 space-y-2 pb-6">
+                    {tier.handles.map((item) => (
+                      <li key={item} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                        <Check aria-hidden className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" strokeWidth={3} />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href={`/calculators/${tier.calc.slug}`}
+                    data-cta={`services_client_${tier.calc.key}`}
+                    data-cta-placement="services_clients"
+                    className="mt-auto flex items-center gap-2 border-t border-slate-100 pt-4 text-xs sm:text-sm font-bold text-emerald-700 transition-colors hover:text-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
+                  >
+                    {tier.calc.label}
+                    <ArrowRight
+                      aria-hidden
+                      className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                    />
+                  </Link>
+                </div>
+              ))}
+            </ScrollGlowGroup>
           </div>
         </div>
       </section>
 
-      <CTASection
-        title="Get your property tax sorted"
-        description="Book a free consultation to discuss your situation. We'll give you clear recommendations, no hard sell."
-      />
+      {/* Proof sits directly after the tier cards: the visitor has just placed
+          themselves in a tier, so the quotes land while that self-identification
+          is fresh, and the navy band breaks up a long run of light sections. */}
+      <TestimonialsSection description="Anonymised feedback from landlords and investors across every portfolio size." />
+
+      {/* Ours, carve-out 5, restyled into their system (Eyebrow, their h2 scale,
+          rounded-xl cards, their hover treatment). White ground because the band
+          above it is navy and the panel below is a contained card on slate-50, so
+          this section is also what keeps two dark fields apart. Cards are slate-50
+          so they contrast with the white ground (their rule: a card matching its
+          ground vanishes). */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl mb-8 sm:mb-12">
+            <Eyebrow>Choose a service</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Where to start</h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+              Each page below explains what the work covers, who it suits and how an engagement runs. If you are not
+              sure which fits, book a call and we will point you at the right one.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {hub.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex flex-col rounded-xl border border-transparent bg-slate-50 p-5 transition-colors hover:border-emerald-600 sm:p-6"
+              >
+                <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:mt-3 sm:text-base">{item.description}</p>
+                <span className="mt-auto flex items-center gap-2 pt-4 text-sm font-bold text-emerald-700">
+                  Read more
+                  <ArrowRight
+                    aria-hidden
+                    className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                  />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Page closer. The reader has just been through six services, three
+          tiers, and the testimonials, so the job is not to explain again: it is
+          to price the next step at zero and take the details there and then.
+          The old block sent them to /contact to start over, and its secondary
+          button pointed back at this same page. */}
+      {/* Anchor for the hero CTA. `scroll-mt` clears the sticky header so the
+          panel's heading is not hidden under it on arrival. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          title="Find out what your current setup is costing you"
+          description="Tell us what you own and how it is held. We will come back within 24 hours with where the money is leaking and a fixed fee in writing if you want us to fix it."
+          proofPoints={[
+            { title: "Property-only specialists", detail: "We work with landlords and investors, nothing else" },
+            { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },
+            { title: "24-hour response", detail: "Usually the same working day" },
+          ]}
+          footnote="No obligation and no hard sell. If you are better off staying where you are, we will say so."
+        />
+      </div>
     </>
   );
 }
