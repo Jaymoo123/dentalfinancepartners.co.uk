@@ -13,7 +13,6 @@ import { btnOnCream, btnPrimary, heroCreamSurface, siteContainerLg } from "@/com
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
-import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 
 const UPDATED = "2026/27 tax year";
@@ -153,13 +152,12 @@ export default function PropertyTaxRatesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
       />
-      {/* The visible breadcrumb rendered without the structured data behind it,
-          so the trail existed for a reader and not for a crawler. Same items,
-          one source. */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(BREADCRUMB) }}
-      />
+      {/* Carve-out 5. The designer added a BreadcrumbList script here because in
+          their tree the visible breadcrumb carried no structured data. In ours,
+          ui/Breadcrumb.tsx:17 already emits buildBreadcrumbJsonLd(items) itself, so
+          taking their script shipped the page TWO BreadcrumbList blocks (measured in
+          the rendered HTML, not inferred). Their BREADCRUMB const is kept as the
+          single source for the visible trail; the duplicate script is dropped. */}
 
       <section className={`relative overflow-hidden ${heroCreamSurface} py-12 sm:py-16`}>
         <HeroBrickBackdrop tone="cream" />
