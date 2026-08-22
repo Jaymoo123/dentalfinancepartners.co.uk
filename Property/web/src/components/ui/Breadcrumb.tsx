@@ -19,7 +19,12 @@ export function Breadcrumb({ items, onDark = false }: BreadcrumbProps) {
   const listColor = onDark ? "text-slate-300" : "text-slate-600";
   const linkHover = onDark ? "hover:text-white" : "hover:text-emerald-700";
   const currentColor = onDark ? "font-semibold text-white" : "font-semibold text-slate-900";
-  const chevronColor = onDark ? "text-slate-400" : "text-slate-400";
+  // CONTEXT.md Rule Zero (c), the standing accessibility floor: slate-400 is
+  // correct on navy and stays, but on a light ground it measures 2.52:1 in
+  // Edge against the cream hero surface, so the light branch is slate-500 at
+  // 4.76:1. Both branches read slate-400 before this, which made the ternary a
+  // no-op and is why the light case was never caught.
+  const chevronColor = onDark ? "text-slate-400" : "text-slate-500";
 
   return (
     <>
