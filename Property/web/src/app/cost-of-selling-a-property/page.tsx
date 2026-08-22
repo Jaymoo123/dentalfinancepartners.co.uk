@@ -445,7 +445,7 @@ export default function CostOfSellingAPropertyPage() {
 
       <TopicSection
         id="probate"
-        eyebrow="After a death"
+        eyebrow="Probate sales"
         title="What changes when you are selling after a death?"
         links={[
           { href: `${CGT}/selling-a-probate-property`, label: "Selling a probate property: the running order" },

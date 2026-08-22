@@ -221,7 +221,7 @@ export default function LandedEstatesPage() {
 
       <TopicSection
         id="in-force"
-        eyebrow="In force"
+        eyebrow="Law today"
         tone="slate"
         title="Which rules are actually in force from April 2026?"
         links={[

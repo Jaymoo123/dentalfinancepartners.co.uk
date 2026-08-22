@@ -283,7 +283,7 @@ export default function LeaseholdPage() {
 
       <TopicSection
         id="lease-extension"
-        eyebrow="The premium"
+        eyebrow="Section 42"
         title="Lease extension: what drives the premium"
         links={[
           { href: `${BLOG}/lease-extension-cost-uk`, label: "Lease extension cost, premium and fees" },
@@ -461,7 +461,7 @@ export default function LeaseholdPage() {
 
       <TopicSection
         id="tax"
-        eyebrow="Completion"
+        eyebrow="Stamp duty and gains"
         title="The tax nobody mentions until completion"
         links={[
           { href: "/calculators/stamp-duty-calculator", label: "Stamp duty calculator" },
