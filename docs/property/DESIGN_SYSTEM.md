@@ -25,8 +25,9 @@ the port closed.
 blast radius · §2 related reading · §3 page summaries · §4 `TopicSection` ·
 §4a every section carries a visual · §4b the page skeleton · §4c shared
 marketing bands · §4d the three post-submit surfaces · §4e hub pagination · §5 page
-figures · §6 calculators on a page · §6a calculator body width · §7 CTAs · §8
-accessibility floors · §9 section grounds · §10 copy rules.
+figures · §6 calculators on a page · §6a calculator body width · §7 CTAs ·
+§7a the header across breakpoints · §8 accessibility floors · §9 section
+grounds · §10 copy rules.
 
 ---
 
@@ -175,7 +176,48 @@ half-built.
       `scripts/validate_palette.js` does not exist, whatever `RateWedge` and
       `SdltMarketValue` tell you to run. §8.
 
-### 0.8 Copy
+### 0.8 Responsive and mobile
+
+Most of this site's readers are on a phone. A layout is not "done desktop, check
+mobile later"; the narrow view is the one most people will ever see.
+
+- [ ] **Below `lg:` the burger owns navigation.** One navigation system per
+      breakpoint band, never two. The header is wordmark plus burger; the
+      primary CTA lives at the foot of the drawer. From `lg:` up it is wordmark,
+      nav and CTA, and no burger. §7.
+- [ ] **Nothing in the header bar may overlap or crowd the wordmark.** The
+      wordmark is the home link and the brand; it never gets squeezed, clipped
+      or overlapped by a CTA, a nav item or a burger.
+- [ ] **A sibling must not appear at the same breakpoint a neighbour's cap
+      lifts.** This is the trap that caused the incident. `BrandWordmarkHomeLink`
+      goes `max-w-[13rem]` to `max-w-none` at `sm:`, and the header CTA used to
+      appear at `sm:` too, so the wordmark started expanding at the exact moment
+      something arrived to compete with it. When you add a `sm:`/`md:`/`lg:`
+      visibility class, check what else changes at that breakpoint.
+- [ ] **`min-w-0` on anything that must shrink, `shrink-0` on anything that must
+      not.** A flex child defaults to `min-width: auto` and refuses to shrink
+      below its content, which is how a long label pushes a sibling off the bar
+      instead of truncating itself.
+- [ ] **Touch targets are at least 44px, and 48px for anything primary.**
+      `btnPrimary` carries `min-h-12`; the burger is `h-12 w-12`. Add
+      `touch-manipulation` to controls so a double-tap does not zoom.
+- [ ] **The page body never scrolls horizontally at any width.** Wide content
+      (tables, chip grids, code) scrolls inside its own `overflow-x-auto`
+      container, never the page. `siteContainerLg` carries `min-w-0` for this.
+- [ ] **Multi-column grids stack, and the stack order is the reading order.**
+      The two-column post-submit body puts the ask first on mobile, not the
+      reassurance card. Check what lands on top when the grid collapses.
+- [ ] **Every anchor target carries `scroll-mt-24`.** The header is sticky, so
+      without it a `#book` jump hides the form heading underneath it. §7.
+- [ ] **A hover state is not an affordance on touch.** Anything reachable only
+      on hover is unreachable on a phone, and any hover glow needs
+      `@media (hover: hover)` or a tap burns it in until the next tap lands
+      elsewhere. §2.
+- [ ] **Check it at 390, 768, 1024 and 1440**, not just at the one width your
+      window happens to be. 390 is the phone, 768 is the tablet where two
+      systems collide, 1024 is where the desktop nav takes over.
+
+### 0.9 Copy
 
 - [ ] **No em-dashes in user-facing copy.** Code comments, commits and PRs are
       exempt. §10.
@@ -188,7 +230,7 @@ half-built.
       `detail` renders outside the quotation marks so it cannot read as an
       invented client quote. §10.
 
-### 0.9 Reuse before you write
+### 0.10 Reuse before you write
 
 - [ ] **Look for the component before writing one.** Two pages needing the same
       band means one shared component, not two copies. `LocationChips`,
@@ -199,7 +241,7 @@ half-built.
 - [ ] **Never restyle an estate-shared component to suit Property.** Add a token
       or a slot whose default is the current behaviour. §1.
 
-### 0.10 Before you call it done
+### 0.11 Before you call it done
 
 - [ ] Run the page in the dev server and look at it, on mobile width too.
 - [ ] `npx tsc --noEmit`, `npx next lint`, `npx vitest run`, all green.
@@ -801,34 +843,59 @@ are all closed: `/research/landlord-tax-index` (§4b), `/locations/[slug]` (its
   CTA.** They feed `vw_cta_performance`; changing one silently breaks a funnel
   row.
 
-### The header CTA and the burger share one breakpoint
+---
 
-**A header affordance must appear at the breakpoint its layout was sized for,
-and the burger owns everything below `lg:`.**
+## 7a. The header across breakpoints
+
+**One navigation system per breakpoint band. Never two.**
+
+| Width | Header carries | Notes |
+|---|---|---|
+| below `lg:` (0-1023) | wordmark + burger | primary CTA at the foot of the drawer |
+| `lg:` and up (1024+) | wordmark + nav + CTA | no burger |
+| `xl:` and up (1280+) | as above, plus `header_secondary` | the nav's own Contact link hides at `xl:` so the two do not double up |
+
+### The incident, 2026-08-23
 
 `SiteHeader`'s primary CTA was `sm:inline-flex` while the burger runs to
-`lg:hidden`, so from 640px to 1023px the bar carried a ~180px button, a 48px
-burger and the wordmark at once. `BrandWordmarkHomeLink` lifts its own cap from
-`max-w-[13rem]` to `max-w-none` at exactly `sm:`, so the wordmark expanded into
-the same squeeze rather than truncating out of it. Owner 2026-08-23: the CTA now
-appears only where the desktop nav does.
+`lg:hidden`. From 640px to 1023px the bar therefore carried a ~180px button, a
+48px burger AND the wordmark. `BrandWordmarkHomeLink` lifts its own cap from
+`max-w-[13rem]` to `max-w-none` at **exactly `sm:`**, so at the very moment the
+CTA arrived to compete for the bar, the wordmark stopped truncating and started
+expanding. The owner reported it as the CTA covering the logo.
 
-The result is one rule per breakpoint band, with no band carrying two navigation
-systems:
+The CTA is now `lg:inline-flex`, appearing only where the desktop nav does.
 
-| Width | Header carries |
-|---|---|
-| below `lg:` | wordmark + burger. CTA lives in the drawer. |
-| `lg:` and up | wordmark + nav + CTA. No burger. |
+**The generalisable rule, and the one that is easy to miss: never introduce a
+sibling at the same breakpoint a neighbour's width cap changes.** Both classes
+read as harmless on their own. The defect only exists in the overlap, in two
+different files, and no test would have caught it.
 
-The drawer already ends in a full-width primary CTA, so nothing was lost: below
-1024px the ask is at the foot of the menu, which is what a burger is for.
+### The header bar's own rules
 
-**This moves analytics, deliberately.** `data-cta="header_book"` used to fire
-from 640px up and now fires from 1024px up, so tablet volume shifts to the
-drawer's `header_book_mobile` row in `vw_cta_performance`. Both rows already
-existed and the total is unchanged, but a before-and-after comparison on
-`header_book` alone will read as a drop that is not one.
+- **Nothing overlaps or crowds the wordmark.** It is the home link and the
+  brand. If the bar is tight, something else gives way, not the logo.
+- **`min-w-0` on anything that must shrink; `shrink-0` on anything that must
+  not.** A flex child defaults to `min-width: auto` and refuses to go below its
+  content width, so a long label shoves a sibling out of the bar rather than
+  truncating itself. The nav has `min-w-0`; the CTA-and-burger group has
+  `shrink-0`.
+- **The burger is `h-12 w-12` with `touch-manipulation`** and is the only
+  navigation control below `lg:`.
+- **The drawer must end in the primary CTA.** Hiding the header CTA on mobile is
+  only safe because the drawer carries it as `header_book_mobile`.
+- Both burger buttons (open, and close inside the drawer) are `rounded-xl`. They
+  were the pre-redesign square `border-2` recipe until 2026-08-23.
+
+### Moving a header CTA moves analytics
+
+`data-cta="header_book"` used to fire from 640px up and now fires from 1024px
+up, so tablet volume shifts to the drawer's `header_book_mobile` row in
+`vw_cta_performance`. Both rows already existed and the total is unchanged, but
+**a before-and-after comparison on `header_book` alone will read as a drop that
+is not one.** Any future breakpoint change to an instrumented CTA has the same
+property: say so in the commit and here, or someone investigates a phantom
+regression a month later.
 
 ---
 

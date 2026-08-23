@@ -340,7 +340,23 @@ buttons also picked up `rounded-xl` (they were the pre-redesign square recipe).
 **Analytics consequence:** `header_book` volume from 640-1023px moves to the
 `header_book_mobile` row in `vw_cta_performance`. Total unchanged, but a
 `header_book`-only comparison across this date will read as a drop that is not one.
-Written up in `DESIGN_SYSTEM.md` §7.
+Written up as a new `DESIGN_SYSTEM.md` **§7a (the header across breakpoints)**, with
+the generalisable rule spelled out: never introduce a sibling at the same breakpoint a
+neighbour's width cap changes. Both classes read as harmless alone; the defect only
+exists in the overlap, across two files, and no test would have caught it. A new
+contract subsection **§0.8 Responsive and mobile** carries the checklist version
+(burger owns below `lg:`, nothing crowds the wordmark, `min-w-0`/`shrink-0` discipline,
+44/48px touch targets, no horizontal page scroll, stack order = reading order, check at
+390/768/1024/1440).
+
+**Cache posture verified after deploy, 2026-08-23.** No stale-serving risk: HTML is
+`public, max-age=0, must-revalidate` so every browser revalidates against the CDN on
+each load; `/_next/static/*` is content-hashed and `immutable`, so a new build emits new
+filenames and cannot collide with an old cache; **there is no service worker** (`/sw.js`
+and `/service-worker.js` both 404, zero `serviceWorker` registrations in source), which
+is the only thing that could pin a user to an old build indefinitely; and the apex alias
+points at a single Ready production deployment. `/thank-you`, `/book` and `/complete`
+are `private, no-cache, no-store` and never cached at all.
 
 **New files this session:** `components/property/MarketingSections.tsx`,
 `components/property/WhatToExpectCard.tsx`, `components/ui/SlimHero.tsx`,
