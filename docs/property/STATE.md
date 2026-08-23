@@ -116,7 +116,7 @@ track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for seque
 > the window, the two traps, and the precondition. Do not compare `header_book` alone across
 > this date: commit `d4f24e25` moved the CTA from `sm:` to `lg:`, so tablet volume shifted to
 > the `header_book_mobile` row. Sum the pair. And do not read the comparison at all until the
-> analytics bot backfill in 0.23 has been applied, or the BEFORE side is inflated and the
+> analytics bot backfill has been applied (it was, 2026-08-23), or the BEFORE side is inflated and the
 > redesign reads as a loss it did not cause. Give it three to four full weeks.
 
 

@@ -142,13 +142,29 @@ marked human. Until they are flipped, every historical comparison across this
 date is unsafe, including the Property redesign before/after. The backfill tags
 `bot_reason = 'passive_session (backfill 2026-08-23)'`, so it reverses exactly:
 `update web_sessions set is_bot = false, human_confirmed = true
- where bot_reason like '%backfill 2026-08-23%'`. **Status: not yet applied,
-owner decision pending** (it rewrites reported history, so it was not done
-unilaterally).
+ where bot_reason like '%backfill 2026-08-23%'`. **APPLIED 2026-08-23,
+owner-authorised, full history**: 5,308 sessions and 27,423 `web_events` rows.
+Script: `scripts/backfill_passive_sessions.py`. Verified through the live RPCs
+rather than inferred, `web_timeseries` for 08-20 to 08-23 now returning Property
+225 / 186 / 111 / 121 and estate 427 / 354 / 198 / 229.
 
-**Open.** Nothing schedules `bot_scorer.py`. Without a schedule this recurs the
-next time a fleet changes shape. Arming one is an owner decision because it is a
-new scheduled job.
+**Consequence, and it will bite somebody.** Every traffic figure in a doc or
+report written before 2026-08-23 is inflated by roughly 12% and no longer
+reconciles against the database. That is the intended trade: one definition of
+"human" on both sides of any comparison beats matching old paperwork.
+
+**Schedule.** `.github/workflows/bot-scorer.yml`, daily at 03:00 UTC, all 15
+sites, three days back so a session that keeps receiving events overnight gets
+re-judged. Owner-authorised 2026-08-23. Silent by contract: it sends nothing, it
+makes no paid API calls, and the only way it speaks is by crashing. The bot share
+reaches the owner as one line in the caretaker's monthly monitor audit, via the
+two informational `state_check` facts `jobs/bot_scorer.stale_days` and
+`jobs/analytics.bot_share_pct_7d`. Neither is promoted to an alarm on purpose: a
+drifting number is a question for a human, not a thing to wake anyone for.
+
+**Do not be alarmed by `analytics.bot_share_pct_7d` reading ~64%.** About 72% of
+that is `ua_pattern`, the declared crawlers that were always excluded. The new
+rule contributes roughly 1,030 sessions per seven days on top.
 
 ---
 
