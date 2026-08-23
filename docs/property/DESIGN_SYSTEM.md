@@ -801,6 +801,35 @@ are all closed: `/research/landlord-tax-index` (§4b), `/locations/[slug]` (its
   CTA.** They feed `vw_cta_performance`; changing one silently breaks a funnel
   row.
 
+### The header CTA and the burger share one breakpoint
+
+**A header affordance must appear at the breakpoint its layout was sized for,
+and the burger owns everything below `lg:`.**
+
+`SiteHeader`'s primary CTA was `sm:inline-flex` while the burger runs to
+`lg:hidden`, so from 640px to 1023px the bar carried a ~180px button, a 48px
+burger and the wordmark at once. `BrandWordmarkHomeLink` lifts its own cap from
+`max-w-[13rem]` to `max-w-none` at exactly `sm:`, so the wordmark expanded into
+the same squeeze rather than truncating out of it. Owner 2026-08-23: the CTA now
+appears only where the desktop nav does.
+
+The result is one rule per breakpoint band, with no band carrying two navigation
+systems:
+
+| Width | Header carries |
+|---|---|
+| below `lg:` | wordmark + burger. CTA lives in the drawer. |
+| `lg:` and up | wordmark + nav + CTA. No burger. |
+
+The drawer already ends in a full-width primary CTA, so nothing was lost: below
+1024px the ask is at the foot of the menu, which is what a burger is for.
+
+**This moves analytics, deliberately.** `data-cta="header_book"` used to fire
+from 640px up and now fires from 1024px up, so tablet volume shifts to the
+drawer's `header_book_mobile` row in `vw_cta_performance`. Both rows already
+existed and the total is unchanged, but a before-and-after comparison on
+`header_book` alone will read as a drop that is not one.
+
 ---
 
 ## 8. Accessibility floors that have already been fought for

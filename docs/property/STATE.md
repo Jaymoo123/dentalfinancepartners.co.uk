@@ -329,6 +329,19 @@ same day. Recorded because the pattern matters more than the fixes:**
 `/thank-you` has no visual. A reading grid in front of someone who has just asked us to stop
 would be the wrong read.
 
+**Mobile header fix (later the same day, second commit).** `SiteHeader`'s primary
+CTA was `sm:inline-flex` while the burger runs to `lg:hidden`, so between 640px and
+1023px the bar carried a ~180px button, a 48px burger and the wordmark at once, and
+`BrandWordmarkHomeLink` lifts its cap from `max-w-[13rem]` to `max-w-none` at exactly
+`sm:` so it expanded into the squeeze instead of truncating. The CTA is now
+`lg:inline-flex`: below 1024px the header is wordmark plus burger only and the ask sits
+at the foot of the drawer, where it already existed as `header_book_mobile`. Both burger
+buttons also picked up `rounded-xl` (they were the pre-redesign square recipe).
+**Analytics consequence:** `header_book` volume from 640-1023px moves to the
+`header_book_mobile` row in `vw_cta_performance`. Total unchanged, but a
+`header_book`-only comparison across this date will read as a drop that is not one.
+Written up in `DESIGN_SYSTEM.md` §7.
+
 **New files this session:** `components/property/MarketingSections.tsx`,
 `components/property/WhatToExpectCard.tsx`, `components/ui/SlimHero.tsx`,
 `components/ui/NoticeCard.tsx`, `src/tests/hub-article-crawl-path.test.ts`.

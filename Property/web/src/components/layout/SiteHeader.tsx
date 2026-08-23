@@ -288,20 +288,33 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
               {activeCta.header_secondary.label}
             </Link>
           ) : null}
+          {/* `lg:`, NOT `sm:`, owner 2026-08-23.
+              The burger runs until `lg:`, so at `sm:` this put a ~180px button
+              and a 48px burger next to a wordmark whose own cap lifts to
+              `max-w-none` at exactly the same breakpoint. Between 640 and
+              1023px the three fought for the bar and the wordmark lost.
+              The CTA now appears only where the desktop nav does, and below
+              that it lives in the drawer as `header_book_mobile`, which is what
+              the burger is for.
+
+              Analytics consequence, deliberate: `header_book` used to fire from
+              640px up and now fires from 1024px up, so tablet volume moves to
+              the `header_book_mobile` row in vw_cta_performance. Both rows
+              already exist; the total is unchanged and the split gets truer. */}
           <Link
             href={activeCta.header_primary.href}
             data-cta="header_book"
             data-cta-placement="header"
             data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "form" : "pricing"}
             data-cta-variant={ctaVariant}
-            className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm sm:inline-flex`}
+            className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
           >
             {activeCta.header_primary.label}
           </Link>
 
           <button
             type="button"
-            className={`flex h-12 w-12 touch-manipulation items-center justify-center border-2 border-slate-200 bg-white text-slate-900 hover:bg-slate-50 hover:border-slate-300 lg:hidden ${focusRing}`}
+            className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-xl border-2 border-slate-200 bg-white text-slate-900 hover:bg-slate-50 hover:border-slate-300 lg:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -340,7 +353,7 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
                 </p>
                 <button
                   type="button"
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center border-2 border-slate-200 ${focusRing}`}
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-slate-200 ${focusRing}`}
                   aria-label="Close menu"
                   onClick={() => setOpen(false)}
                 >
