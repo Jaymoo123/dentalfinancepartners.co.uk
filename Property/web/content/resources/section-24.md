@@ -1,7 +1,7 @@
 ---
 topic: section-24
 title: "Section 24 and mortgage interest relief: the complete landlord guide"
-summary: "Exactly how the Section 24 finance-cost restriction works, who it hits, what it costs at each tax band, the 22% change from April 2027, and the real mitigation options, with worked examples."
+summary: "You are taxed on rent the bank takes. Exactly how the finance cost restriction works, who it hits, what it costs you at each tax band, why the 22% change in April 2027 does not fix it, and which mitigations are actually worth the effort, with worked examples."
 version: "2026.1"
 lastReviewed: "2026-06-06"
 ---

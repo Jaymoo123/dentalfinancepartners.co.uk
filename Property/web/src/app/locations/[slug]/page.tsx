@@ -5,8 +5,9 @@ import { notFound } from "next/navigation";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { getAllPosts, getCategorySlug, firstSentence } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -870,9 +871,16 @@ export default async function LocationPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          {/* No inner measure. Every other page runs its body at the full
+              `siteContainerLg` width (that is what `Prose` does, and it sets no
+              max-width of its own); this page alone pinned its body to
+              `max-w-4xl mx-auto`, so the content sat in a 896px column inside a
+              1152px container and read as a narrower page than the rest of the
+              site. Section padding matched to the house `py-12 sm:py-16 lg:py-20`
+              at the same time, from a one-off `py-16 sm:py-20`. */}
+          <div>
             <p className="text-lg leading-relaxed text-slate-700">
               {content.intro}
             </p>
@@ -880,9 +888,16 @@ export default async function LocationPage({ params }: Props) {
             <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-4xl">
               Specialist property accounting services in {city}
             </h2>
-            <div className="mt-8 space-y-6">
+            {/* Two columns at the page's real width, in the house card recipe
+                (`rounded-xl` + hairline ring), rather than a single stack of
+                square full-bleed panels. A one-column stack was right inside the
+                old 896px measure and is a very wide, very sparse row without it. */}
+            <div className="mt-8 grid gap-4 sm:gap-5 sm:grid-cols-2">
               {content.services.map((service) => (
-                <div key={service.title} className="bg-slate-50 p-8">
+                <div
+                  key={service.title}
+                  className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8"
+                >
                   <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
                   <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{service.desc}</p>
                 </div>
@@ -928,16 +943,16 @@ export default async function LocationPage({ params }: Props) {
             <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">
               {city} landlord tax questions
             </h2>
-            <div className="mt-8 space-y-6">
+            <div className="mt-8 grid gap-4 sm:gap-5 sm:grid-cols-2">
               {content.faqs.map((faq) => (
-                <div key={faq.q} className="bg-slate-50 p-6">
-                  <h3 className="text-lg font-bold text-slate-900">{faq.q}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-slate-700">{faq.a}</p>
+                <div key={faq.q} className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{faq.q}</h3>
+                  <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{faq.a}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 bg-emerald-50 p-8">
+            <div className="mt-12 rounded-xl bg-emerald-50 p-6 ring-1 ring-emerald-200/70 sm:p-8">
               <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
                 How to get started
               </h2>
@@ -947,7 +962,7 @@ export default async function LocationPage({ params }: Props) {
                 of your portfolio, so we will talk that through rather than quote blind.
               </p>
               <div className="mt-6">
-                <Link href="/contact" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
+                <Link href="#book" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
                   Book your free consultation
                 </Link>
               </div>
@@ -956,19 +971,14 @@ export default async function LocationPage({ params }: Props) {
             {posts.length > 0 && (
               <>
                 <h2 className="mt-16 text-2xl font-bold text-slate-900 sm:text-4xl">Related articles</h2>
-                <ul className="mt-8 space-y-4">
-                  {posts.map((p) => (
-                    <li key={p.slug}>
-                      <Link
-                        href={`/blog/${getCategorySlug(p)}/${p.slug}`}
-                        className="border border-transparent block bg-slate-50 p-6 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
-                      >
-                        <h3 className="text-lg font-bold text-slate-900">{p.title}</h3>
-                        <p className="mt-2 text-sm text-slate-600">{p.summary}</p>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                <RelatedArticles
+                  className="mt-8"
+                  items={posts.map((p) => ({
+                    href: `/blog/${getCategorySlug(p)}/${p.slug}`,
+                    title: p.title,
+                    excerpt: firstSentence(p.contentHtml, p.summary),
+                  }))}
+                />
               </>
             )}
           </div>
@@ -978,17 +988,19 @@ export default async function LocationPage({ params }: Props) {
       {/* Their LeadCTAPanel, contained, replacing the link-out CTASection. Our h2
           text is kept: the panel renders it as the page's closing h2 and the h2 set
           on these 5 pages is carve-out 5. */}
-      <LeadCTAPanel
-        contained
-        title={`Speak to a property accountant for your ${city} portfolio`}
-        description="Tell us about your portfolio and we'll explain how we can help with Section 24, MTD, and incorporation planning."
-        proofPoints={[
-          { title: "Property-only specialists", detail: "Landlords, investors and developers, nothing else" },
-          { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },
-          { title: "24-hour response", detail: "Usually the same working day" },
-        ]}
-        footnote="No obligation and no hard sell. If you do not need us, we will tell you."
-      />
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          title={`Speak to a property accountant for your ${city} portfolio`}
+          description="Tell us about your portfolio and we'll explain how we can help with Section 24, MTD, and incorporation planning."
+          proofPoints={[
+            { title: "Property-only specialists", detail: "Landlords, investors and developers, nothing else" },
+            { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },
+            { title: "24-hour response", detail: "Usually the same working day" },
+          ]}
+          footnote="No obligation and no hard sell. If you do not need us, we will tell you."
+        />
+      </div>
     </>
   );
 }

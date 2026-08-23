@@ -33,7 +33,8 @@ import { btnOnCream, btnPrimary, heroCreamSurface, siteContainerLg } from "@/com
 import { buildFaqPageJsonLd, type FaqEntry } from "@/lib/faq-page-schema";
 import { siteConfig } from "@/config/site";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
-import { CalculatorLinkCards } from "@/components/calculators/CalculatorLinkCards";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { relatedItemsFromLinks } from "@/lib/blog";
 
 const PAGE_PATH = "/services/property-tax-advice";
 const pageUrl = `${siteConfig.url}${PAGE_PATH}`;
@@ -129,69 +130,55 @@ const triggerPrompts: Prompt[] = [
   {
     tag: "I am about to buy or sell",
     text: "I exchange in a few weeks and nobody has checked how it should be structured.",
+    detail:
+      "The cheapest advice is the advice you take before you exchange. Ownership name, funding structure, SDLT surcharges and multiple dwellings treatment are all fixed on completion day and expensive to unwind afterwards.",
     icon: Home,
   },
   {
     tag: "My accountant only files",
     text: "My return goes in on time, but nobody has modelled my position in three years.",
+    detail:
+      "Compliance and advice are different jobs. If nobody has modelled your position for three years, you are almost certainly paying tax you did not need to pay, or carrying a risk nobody has priced.",
     icon: UserX,
   },
   {
     tag: "HMRC has written to me",
     text: "There is a letter about undeclared rent and I do not know how to answer it.",
+    detail:
+      "A nudge letter, a Let Property Campaign disclosure or a formal enquiry needs a considered position before you reply. What you say first shapes the whole enquiry.",
     icon: FileWarning,
   },
   {
     tag: "I am restructuring the portfolio",
     text: "Moving properties into a company, and everyone I ask quotes a different number.",
+    detail:
+      "Moving properties between spouses, into a company, into a trust or across a group has capital gains, stamp duty, mortgage and inheritance tax consequences that only make sense modelled together.",
     icon: ArrowLeftRight,
   },
   {
     tag: "I have inherited a property",
     text: "I do not know whether to sell it, let it, or pass it on again.",
+    detail:
+      "Probate value sets your base cost, the estate may still be settling, and the choice between selling, letting or transferring changes both your tax bill and the estate's.",
     icon: Landmark,
   },
   {
     tag: "I have been offered a scheme",
     text: "Someone has proposed a structure and I want it checked before I commit money.",
+    detail:
+      "A scheme, a structure or a plan someone else has proposed, reviewed independently before you commit money to it. We tell you where it holds and where it does not.",
     icon: ShieldQuestion,
   },
 ];
 
-/**
- * Ours, kept. Their re-layout replaced these six two-to-three-sentence
- * explanations with the six one-line prompts above, which report 03 §7.2 costs
- * at roughly 250 words of substance traded for 80 words of recognition cue. The
- * two do different jobs and PLAN 6.3 keeps both: the prompts are the hook, these
- * are the substance, and they sit in the same section so the reader who
- * recognises themselves in a card can read what it actually means underneath.
- */
-const scenarios = [
-  {
-    title: "You are about to buy or sell and want the decision checked first",
-    body: "The cheapest advice is the advice you take before you exchange. Ownership name, funding structure, SDLT surcharges and multiple dwellings treatment are all fixed on completion day and expensive to unwind afterwards.",
-  },
-  {
-    title: "Your accountant files your return but never advises",
-    body: "Compliance and advice are different jobs. If nobody has modelled your position for three years, you are almost certainly paying tax you did not need to pay, or carrying a risk nobody has priced.",
-  },
-  {
-    title: "You have an HMRC letter, an enquiry or an undisclosed period",
-    body: "A nudge letter, a Let Property Campaign disclosure or a formal enquiry needs a considered position before you reply. What you say first shapes the whole enquiry.",
-  },
-  {
-    title: "You are restructuring a portfolio",
-    body: "Moving properties between spouses, into a company, into a trust or across a group has capital gains, stamp duty, mortgage and inheritance tax consequences that only make sense modelled together.",
-  },
-  {
-    title: "You have inherited property and do not know what to do with it",
-    body: "Probate value sets your base cost, the estate may still be settling, and the choice between selling, letting or transferring changes both your tax bill and the estate's.",
-  },
-  {
-    title: "You want a second opinion on advice you have already been given",
-    body: "A scheme, a structure or a plan someone else has proposed, reviewed independently before you commit money to it. We tell you where it holds and where it does not.",
-  },
-];
+/* The `scenarios` list that used to sit here was merged into `triggerPrompts`
+   above (owner, 2026-08-23). It was the same six situations as the prompts, told
+   in the second person: prompt 1 and scenario 1 were both "about to buy or sell",
+   and so on down all six, so the section stated its argument twice, once as a
+   rotating card and again as a static list underneath. Every word of the
+   substance is preserved, now as each prompt's `detail`, which is what report 03
+   §7.2 and PLAN 6.3 were protecting: the hook and the substance both survive,
+   they are just no longer in two competing blocks. */
 
 const engagement = [
   {
@@ -342,39 +329,6 @@ const backgroundReading = [
   {
     href: "/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026",
     label: "Making Tax Digital software for landlords",
-  },
-];
-
-/**
- * The four crawlable calculator links that sit alongside the tabs.
- *
- * Phase 4 identified this page as one of two where the designer's version drops
- * four crawlable /calculators/* links, because `CalculatorTabs` renders
- * <button role="tab"> and there is no <a href> in the block. This is the
- * designer's own remedy, `CalculatorLinkCards`, on the same four tools the tabs
- * offer here. Carve-out 5, and asserted by
- * src/tests/calculator-tabs-crawl-path.test.ts.
- */
-const calculatorLinks = [
-  {
-    href: "/calculators/section-24-calculator",
-    title: "Section 24 calculator",
-    body: "See what the finance cost restriction costs you each year, now and from April 2027.",
-  },
-  {
-    href: "/calculators/incorporation-cost-calculator",
-    title: "Incorporation cost calculator",
-    body: "Upfront capital gains and stamp duty exposure against the annual saving, with a break-even year.",
-  },
-  {
-    href: "/calculators/mtd-checker",
-    title: "Making Tax Digital checker",
-    body: "Find out which April your quarterly reporting starts, or whether it catches you at all.",
-  },
-  {
-    href: "/calculators/stamp-duty-calculator",
-    title: "Stamp duty calculator",
-    body: "Including the additional dwellings surcharge on a purchase.",
   },
 ];
 
@@ -585,22 +539,6 @@ export default function PropertyTaxAdvicePage() {
               </div>
               <PromptMarquee prompts={triggerPrompts} />
             </div>
-
-            {/* The substance behind the six prompts, kept from our version and
-                placed in the same section as the hook rather than in a competing
-                one: the marquee is the recognition cue, this is what each of
-                those situations actually turns on. A divided list rather than a
-                second card grid, because the Scope section directly below is a
-                CoverageCards grid and two grids in a row read as twelve
-                equivalent things. */}
-            <ul className="mt-10 divide-y divide-slate-200 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:mt-12 sm:p-8">
-              {scenarios.map((item) => (
-                <li key={item.title} className="py-5 first:pt-0 last:pb-0">
-                  <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">{item.body}</p>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </section>
@@ -615,28 +553,6 @@ export default function PropertyTaxAdvicePage() {
               several, depending on the decision in front of you.
             </p>
             <CoverageCards items={coverage} />
-
-            {/* Carve-out 5. Their re-layout deleted this box and all eight blog
-                deep links with it. Kept where it was, because "before you book"
-                is the whole framing, and restyled to the card anatomy. */}
-            <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:mt-10 sm:p-8">
-              <h3 className="text-base font-bold text-slate-900 sm:text-lg">Background reading before you book</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">
-                These go deeper on the questions that come up most often in consultations.
-              </p>
-              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-                {backgroundReading.map((post) => (
-                  <li key={post.href}>
-                    <Link
-                      href={post.href}
-                      className="block rounded-xl bg-white px-5 py-4 text-sm font-semibold text-slate-800 ring-1 ring-slate-200 transition-all hover:text-emerald-700 hover:ring-emerald-300 sm:text-base"
-                    >
-                      {post.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </section>
@@ -756,6 +672,21 @@ export default function PropertyTaxAdvicePage() {
                   table with the same rates, so it carries it too. */}
               <ExampleFigureNote className="mt-3" />
             </div>
+
+            {/* Carve-out 5. Their re-layout deleted this box and all eight blog
+                deep links with it. Owner 2026-08-23 moved it down here from the
+                Scope section, under the changes table: a reader who has just met
+                the rules that are moving is the one who wants to read further,
+                and it no longer interrupts the run from scope into process.
+                `bg-white` because this section's ground is slate-50 and a
+                slate-50 card on it would have no edge (DESIGN_SYSTEM §4a). */}
+            <div className="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:mt-10 sm:p-8">
+              <h3 className="text-base font-bold text-slate-900 sm:text-lg">Background reading before you book</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">
+                These go deeper on the questions that come up most often in consultations.
+              </p>
+              <RelatedArticles className="mt-5" items={relatedItemsFromLinks(backgroundReading)} />
+            </div>
           </div>
         </div>
       </section>
@@ -783,10 +714,20 @@ export default function PropertyTaxAdvicePage() {
             <div className="mt-8">
               <CalculatorTabs tabs={["section24", "incorporation", "mtd", "stampduty"]} />
             </div>
-            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-900">
-              Or open any of them on its own page:
-            </p>
-            <CalculatorLinkCards items={calculatorLinks} />
+            {/* OWNER DECISION 2026-08-23: the tabs are the only calculator
+                surface this page carries. Both the 2x2 CalculatorLinkCards
+                module and the "Or open any of them on its own page" link list
+                that briefly replaced it are gone, asked for twice and
+                reaffirmed.
+
+                Know what that costs before restoring anything here.
+                `CalculatorTabs` renders <button role="tab">, not anchors, so
+                this page now emits ZERO in-body links to any /calculators/<slug>
+                page. That is the page-authored topical equity carve-out 5
+                protects and `calculator-tabs-crawl-path.test.ts` guards; this
+                route is listed in that test's OWNER_REMOVED_INBODY_LINKS with
+                the same reasoning. Reachability is unaffected (SiteFooter ships
+                per-tool links site-wide), so nothing is orphaned. */}
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { BlogCategoryHub } from "@/components/blog/BlogCategoryHub";
+import { PAGE_SUMMARIES } from "@/lib/page-summaries";
 
 const categoryName = "Landlord Tax Essentials";
 const categorySlug = "landlord-tax-essentials";
@@ -32,7 +33,9 @@ export default function LandlordTaxEssentialsPage() {
       categoryName={categoryName}
       categorySlug={categorySlug}
       description={description}
-      intro="Core tax knowledge every UK landlord needs. From self-assessment filing and rental income tax to VAT registration, stamp duty, and maximising your allowable expenses."
+      /* One copy, in `PAGE_SUMMARIES`, so the hub intro and every related-
+         reading card pointing at this hub cannot drift apart. */
+      intro={PAGE_SUMMARIES["/blog/landlord-tax-essentials"]}
       sections={[
         {
           heading: "Income tax for landlords",

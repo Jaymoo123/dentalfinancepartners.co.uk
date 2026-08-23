@@ -1,7 +1,7 @@
 ---
 topic: landlord-compliance
 title: "Landlord compliance in England: the duty map, the source law and the tax treatment"
-summary: "Every recurring safety, energy and licensing duty on an England landlord in one place: the statutory source for each, the official guidance worth bookmarking, the renewal cycle, the penalty exposure, and how each cost is treated for tax."
+summary: "One missed renewal date is the difference between a £90 certificate and a £40,000 penalty. Every safety, energy and licensing duty on an England landlord in one place, with the statutory source for each, the renewal cycle, the penalty exposure, and how each cost is treated for tax."
 version: "2026.1"
 lastReviewed: "2026-08-20"
 ---

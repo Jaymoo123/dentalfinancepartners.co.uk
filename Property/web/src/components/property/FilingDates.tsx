@@ -135,10 +135,11 @@ export function FilingDates() {
           </li>
         ))}
       </ol>
-
-      <p className="mt-6 text-[11px] leading-relaxed text-slate-500">
-        Living abroad does not move any of these dates, and neither does using an agent.
-      </p>
+      {/* The "Living abroad does not move any of these dates" line used to sit
+          here as its own 11px slate paragraph, directly above the caller's
+          <ExampleFigureNote>. Two stacked lines in identical fine print read as
+          two disclaimers, so the sentence moved to the caller and the two now
+          set on one line (owner, 2026-08-23). */}
     </div>
   );
 }

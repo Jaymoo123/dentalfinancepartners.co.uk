@@ -81,6 +81,11 @@
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: var(--accent-foreground);
+  /* Shared btnPrimary defaults to a 9999px pill, which is the generalist design
+     system's shape and not ours. Pinning it to the same token our local
+     `rounded-xl` resolves to keeps the result-gate modal's submit button
+     identical to every primary CTA on the page. Declared in `@theme inline`
+     below, because that is where --radius-xl is defined. */
 }
 
 @theme inline {
@@ -112,6 +117,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --btn-radius: var(--radius-xl);
   --font-sans: var(--font-plus-jakarta);
 }
 
@@ -545,6 +551,49 @@ input[type="number"]::-webkit-outer-spin-button {
      group has a fourth child, so this changes nothing that already shipped. */
   [data-glow="on"] > *:nth-child(4) {
     animation-delay: 2.1s;
+  }
+}
+
+/* Related-article cards: the same green glow as `card-glow` above, but held as a
+   hover STATE rather than played as a one-shot animation. The values are lifted
+   from that keyframe's 40% peak on purpose, so a reader who has already seen the
+   scroll glow reads this as the same material responding to the pointer, not as
+   a second unrelated effect.
+
+   `(hover: hover)` is what keeps it a mouse affordance. Without it a touch tap
+   leaves the glow burnt into the card until the next tap lands somewhere else,
+   because :hover sticks on touch. Keyboard users get the same treatment through
+   :focus-visible, which is not gated: it is the only way the card can indicate
+   focus, and the focus ring alone does not say "this is the one you are on".
+
+   The card's resting shadow is deliberately none. A resting glow would make
+   every card look hovered, which is the thing being fixed. */
+.related-card {
+  transition:
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+@media (hover: hover) {
+  .related-card:hover {
+    border-color: rgb(52 211 153);
+    box-shadow:
+      0 0 0 3px rgba(16, 185, 129, 0.22),
+      0 18px 40px -10px rgba(5, 150, 105, 0.6);
+  }
+}
+
+.related-card:focus-within {
+  border-color: rgb(52 211 153);
+  box-shadow:
+    0 0 0 3px rgba(16, 185, 129, 0.22),
+    0 18px 40px -10px rgba(5, 150, 105, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .related-card {
+    transition: none;
   }
 }
 

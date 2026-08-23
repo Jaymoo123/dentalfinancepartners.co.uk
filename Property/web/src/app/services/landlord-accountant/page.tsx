@@ -123,7 +123,9 @@ const whoWeWorkWith = [
   {
     icon: "alert" as const,
     title: "Undeclared rental income",
-    body: "You did not realise the income was reportable, or you stopped filing. The Let Property Campaign is a route back with far lower penalties than waiting for HMRC to open an enquiry.",
+    body: "You did not realise the income was reportable, or you stopped filing. The Let Property Campaign is a route back with far lower penalties than waiting for HMRC to open an enquiry. Read how a disclosure works before you contact HMRC directly.",
+    href: "/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026",
+    linkLabel: "How a Let Property Campaign disclosure works",
   },
   {
     icon: "globe" as const,
@@ -400,19 +402,17 @@ export default function LandlordAccountantPage() {
         <div className={siteContainerLg}>
           <Eyebrow>Our clients</Eyebrow>
           <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Who we work with</h2>
+          {/* The Let Property Campaign link now sits ON the card it belongs to
+              (owner, 2026-08-23), rather than in a stray paragraph underneath.
+              The note that used to live here said a link could not go in the
+              carousel because it "would be hidden behind the autoplay control".
+              That was already untrue of this component: `CardCarousel` renders an
+              optional per-card `href`/`linkLabel` at the card foot, every slide
+              is in the DOM (native scroll, nothing virtualised) so the link is
+              crawlable, autoplay pauses on hover and on focus-capture, and
+              clicking the link calls `takeOver()`, which stops the rotation for
+              the rest of the visit. */}
           <CardCarousel items={whoWeWorkWith} tone="white" label="Who we work with" autoplay />
-          {/* Kept out of the carousel deliberately: the five cards carry no links,
-              which is the whole reason a carousel is acceptable here, and a link
-              inside it would be hidden behind the autoplay control. */}
-          <Prose>
-            <p>
-              If undeclared income is the issue, read how{" "}
-              <InlineLink href="/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026">
-                a Let Property Campaign disclosure works
-              </InlineLink>{" "}
-              before you contact HMRC directly.
-            </p>
-          </Prose>
         </div>
       </section>
 

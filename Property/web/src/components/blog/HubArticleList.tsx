@@ -32,6 +32,20 @@ function formatUkDate(isoDate: string): string {
  * articles; without paging the grid buried the closing LeadCTAPanel a hundred
  * cards down. Page changes jump back to the top of the grid (instant, per the
  * site's reduced-motion posture).
+ *
+ * CARVE-OUT 5, and the reason this does NOT `slice()`.
+ *
+ * `NumberedPagination` renders `<button>`, not `<a href>`, so a sliced grid puts
+ * pages 2..N behind client state and out of the server HTML entirely. The nine
+ * hubs are the only full HTML crawl path to the ~750-post corpus (/blog itself
+ * exposes 24), so slicing would have cut that to 108 crawlable article links.
+ * The hubs were therefore shipped with paging disabled, which handed the reader
+ * a 150-card wall instead.
+ *
+ * So every card stays in the server HTML and the off-page ones carry the
+ * `hidden` attribute: crawlers still see every `<a href>` on first render,
+ * assistive tech skips what is not on screen, and the reader gets twelve at a
+ * time. Do not "optimise" this back into a slice.
  */
 export function HubArticleList({
   posts,
@@ -46,10 +60,6 @@ export function HubArticleList({
   const topRef = useRef<HTMLDivElement>(null);
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
-  const paginated = posts.slice(
-    (currentPage - 1) * postsPerPage,
-    currentPage * postsPerPage
-  );
 
   const goToPage = (page: number) => {
     setCurrentPage(page);
@@ -59,9 +69,10 @@ export function HubArticleList({
   return (
     <div ref={topRef} className="scroll-mt-24">
       <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {paginated.map((post) => (
+        {posts.map((post, i) => (
           <article
             key={post.slug}
+            hidden={Math.floor(i / postsPerPage) + 1 !== currentPage}
             className="rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:border-emerald-600 hover:shadow-md"
           >
             <Link

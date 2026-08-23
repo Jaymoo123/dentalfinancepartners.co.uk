@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { CalculatorLinkCards } from "@/components/calculators/CalculatorLinkCards";
+import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { TopicHero, TopicSection } from "@/components/property/TopicSection";
+import {
+  DepositMoment,
+  EmbedDeliverables,
+  EpcStandards,
+  ForwardTraits,
+  MtdSplit,
+  NotYetLive,
+  PeriodicQuestions,
+  WhatChanged,
+} from "@/components/property/letting-agents-figures";
 import { btnOnCream, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
@@ -35,38 +45,19 @@ const LTE = "/blog/landlord-tax-essentials";
 const MTD = "/blog/making-tax-digital-mtd";
 
 /**
- * Shaped for `CalculatorLinkCards`, which is the designer's own component and
- * whose stated home is exactly this: a "free tools" block whose job is to send
- * people into a calculator, with every tool left as a real crawlable link. Same
- * five tools, same five hrefs, same five sentences.
+ * The five tools this page offers, as `CalculatorTabs` keys.
+ *
+ * These were five `CalculatorLinkCards` until 2026-08-23, when the owner made
+ * the standing call that a calculator never gets a card: a card is the wrong
+ * affordance for a tool the reader can use where they are standing. Same five
+ * tools, same order, now usable on the page instead of linked off it.
+ *
+ * The section's copy changed with them. It used to say "send one instead of
+ * doing the sum on the back of a viewing sheet", which a tab cannot honour, so
+ * it now says run it here and points at the embed section below for the case
+ * where an agent genuinely wants the tool on their own site.
  */
-const calculators = [
-  {
-    href: "/calculators/stamp-duty-calculator",
-    title: "Stamp duty calculator",
-    body: "What a landlord pays on the next purchase, with the buy-to-let surcharge built in.",
-  },
-  {
-    href: "/calculators/rental-yield-calculator",
-    title: "Rental yield calculator",
-    body: "Whether the yield on a property is the one the landlord thinks it is.",
-  },
-  {
-    href: "/calculators/section-24-calculator",
-    title: "Section 24 calculator",
-    body: "What the mortgage interest restriction costs a landlord at their own tax band.",
-  },
-  {
-    href: "/calculators/rental-income-tax-calculator",
-    title: "Rental income tax calculator",
-    body: "The tax on a year of rent, once the allowable running costs come out.",
-  },
-  {
-    href: "/calculators/mtd-checker",
-    title: "Making Tax Digital checker",
-    body: "Whether a landlord is caught by Making Tax Digital, and from which April.",
-  },
-];
+const calculatorTabs = ["stampduty", "rentalyield", "section24", "rentalincome", "mtd"] as const;
 
 export default function ForLettingAgentsPage() {
   const articleSchema = {
@@ -90,12 +81,18 @@ export default function ForLettingAgentsPage() {
       <TopicHero
         breadcrumb={<Breadcrumb items={[{ label: "Home", href: "/" }, { label: "For letting agents" }]} />}
         title="For letting agents: what your landlords will ask you this year"
+        /* Standfirst rewritten for conversion, 2026-08-23. The old one described
+           what the page was ("This page is for letting and estate agents. Short
+           answers you can give at the desk"). This one leads on the agent's own
+           problem, names what they walk away with, and keeps the two factual
+           anchors the descriptive version carried: the 1 May 2026 commencement
+           and the no-gate promise, which the Forwarding section cashes. */
         standfirst={
           <>
-            The tenancy rules changed when the Renters&rsquo; Rights Act 2025 reforms came into force on 1 May 2026,
-            and the questions have not stopped since. This page is for letting and estate agents. Short answers you
-            can give at the desk, and longer pages you can forward to the landlord who asked. Nothing here is gated
-            and nothing asks your landlord for their details.
+            Since 1 May 2026 your landlords have been asking you questions that are not your job to answer, and
+            getting one wrong costs you the relationship. Give them a straight answer at the desk, run the number
+            in front of them, and forward a page that settles it. Nothing here is gated, nothing asks your landlord
+            for their details, and none of it costs you anything.
           </>
         }
         primary={
@@ -110,13 +107,16 @@ export default function ForLettingAgentsPage() {
           </Link>
         }
         secondary={
+          /* Owner, 2026-08-23: scroll to the calculators ON THIS PAGE rather than
+             leaving for /calculators. Same five tools either way, and keeping the
+             agent here keeps them in front of the ask at the foot. */
           <Link
-            href="/calculators"
+            href="#calculators"
             data-cta="letting_agents_hero_calculators"
             data-cta-placement="hero"
             className={`${btnOnCream} px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
           >
-            Open the calculators
+            Run a calculator now
           </Link>
         }
       />
@@ -131,6 +131,10 @@ export default function ForLettingAgentsPage() {
             label: "In force, and not in force: the full list",
           },
         ]}
+        /* Scope first, then the three changes as before and after. Scope decides whether
+           the rest of the section applies at all, and a housing association tenancy
+           takes a neutral dash rather than a cross. */
+        figure={<WhatChanged />}
       >
         <p>
           The tenancy reforms in the Renters&rsquo; Rights Act 2025 came into force on 1 May 2026. They reach
@@ -169,6 +173,10 @@ export default function ForLettingAgentsPage() {
             label: "Landlord redress: where the duty comes from",
           },
         ]}
+        /* Three duties, badged with whether each is running. A bulleted list gave all
+           three equal weight and no status, which is the confusion the section
+           exists to undo. */
+        figure={<NotYetLive />}
       >
         <p>
           Two of the things your landlords have read about are in the Renters&rsquo; Rights Act 2025 and are not
@@ -203,6 +211,10 @@ export default function ForLettingAgentsPage() {
             label: "What the switch put on the landlord",
           },
         ]}
+        /* The two questions the switch generates, and the rent question it does not,
+           marked with a neutral dash. Agents keep answering the third when asked
+           the first. */
+        figure={<PeriodicQuestions />}
       >
         <p>
           Every private assured tenancy is periodic now, and two questions follow from that. The first is what notice the
@@ -235,6 +247,9 @@ export default function ForLettingAgentsPage() {
             label: "The 2030 proposal and the spending cap",
           },
         ]}
+        /* Enacted beside not enacted. Deliberately two bands and not an A to G scale:
+           the page names E and C and makes no claim about the others. */
+        figure={<EpcStandards />}
       >
         <p>
           A landlord will tell you the property has to reach EPC C by 2030. That is government policy. It is not
@@ -257,6 +272,9 @@ export default function ForLettingAgentsPage() {
             label: "Managed portfolios: who files quarterly",
           },
         ]}
+        /* Whose obligation it is, then the statement itself with the top and bottom
+           lines marked. The trap is arithmetic and prose cannot show it. */
+        figure={<MtdSplit />}
       >
         <p>
           Making Tax Digital for Income Tax is the landlord&rsquo;s obligation and not yours. You do not file for
@@ -281,6 +299,9 @@ export default function ForLettingAgentsPage() {
             label: "What to tell a landlord at check-out",
           },
         ]}
+        /* Two states on a rail, because the section's point is that the tax moment is
+           the check-out deduction and not the holding of the money. */
+        figure={<DepositMoment />}
       >
         <p>
           Deposits raise a tax question, and it is not the one landlords expect. It is not about holding the
@@ -297,30 +318,40 @@ export default function ForLettingAgentsPage() {
       <TopicSection
         id="calculators"
         eyebrow="Free tools"
-        title="Calculators you can point a landlord at"
+        title="Calculators you can run on a landlord's question"
       >
         <p>
-          Send one instead of doing the sum on the back of a viewing sheet.
+          Run the number in front of them instead of doing the sum on the back of a viewing sheet. Every one of
+          these is free, needs no sign-up, and can sit on your own website: the{" "}
+          <Link href="#embed" className="font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-800">
+            embed section below
+          </Link>{" "}
+          is one line of HTML.
         </p>
-        <CalculatorLinkCards items={calculators} />
+        {/* Literal href, not a mapped constant. `calculator-tabs-crawl-path.test.ts`
+            is a source scan and cannot see through an array, and this page went from
+            five crawlable per-tool links to zero the moment the cards became tabs.
+            Keep at least this one spelled out. */}
+        <p>
+          The most-asked of the five is the{" "}
+          <Link
+            href="/calculators/stamp-duty-calculator"
+            className="font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-800"
+          >
+            stamp duty calculator
+          </Link>
+          , because the buy-to-let surcharge is the figure landlords most often get wrong on their next purchase.
+        </p>
+        <div className="mt-6">
+          <CalculatorTabs tabs={[...calculatorTabs]} />
+        </div>
       </TopicSection>
 
-      <TopicSection
-        id="embed"
-        eyebrow="One line of HTML"
-        tone="slate"
-        title="Putting the calculators on your own site"
-        links={[{ href: "/embed", label: "The embed gallery" }]}
-      >
-        <p>
-          Every calculator here can sit on your own website. It is one line of HTML, it costs nothing, and we keep
-          the rates current so that you never have to think about it again.
-        </p>
-        <p>
-          The only condition is that the small &ldquo;Powered by Property Tax Partners&rdquo; line stays where it
-          is. The gallery has the code for each calculator.
-        </p>
-      </TopicSection>
+      {/* The embed offer as a full-bleed navy deliverables band, not a body
+          section (owner, 2026-08-23). It carries its own `id="embed"`, which the
+          calculators section links to. Adjacency holds: calculators above is
+          white and Forwarding below is white. */}
+      <EmbedDeliverables />
 
       <TopicSection
         id="forward"
@@ -331,15 +362,31 @@ export default function ForLettingAgentsPage() {
           Every page linked from here is written to be sent. They answer the landlord&rsquo;s question rather than
           describing the law at them, and they sit on open URLs, so you can paste one into a reply and move on.
         </p>
-        <Link
-          href="#book"
-          data-cta="letting_agents_forward_book"
-          data-cta-placement="forward"
-          data-cta-goal="form"
-          className={`${btnPrimary} w-full sm:w-auto`}
-        >
-          Send us the one you cannot answer
-        </Link>
+
+        {/* Inline rather than in the `figure` slot, which renders after every
+            child: the traits belong above the closing ask, not under it. The
+            hero's no-gate promise is cashed here. */}
+        <ForwardTraits />
+
+        {/* Was a bare `btnPrimary` link. A bare button is not a CTA block
+            (DESIGN_SYSTEM.md section 7): statement left, button right, stacking
+            on mobile. Slate card because this section sits on the white ground.
+            `data-cta` unchanged, so the `vw_cta_performance` row survives. */}
+        <div className="mt-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+          <p className="text-base font-bold text-slate-900 sm:text-lg">
+            There is always one question a page cannot settle. Send us that one and we will answer it, or tell you
+            the landlord needs their own accountant.
+          </p>
+          <Link
+            href="#book"
+            data-cta="letting_agents_forward_book"
+            data-cta-placement="forward"
+            data-cta-goal="form"
+            className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+          >
+            Send us the one you cannot answer
+          </Link>
+        </div>
       </TopicSection>
 
       {/* Anchor for the hero primary and the mid-page ask.

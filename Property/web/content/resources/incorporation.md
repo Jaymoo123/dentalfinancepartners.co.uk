@@ -1,7 +1,7 @@
 ---
 topic: incorporation
 title: "Incorporating a property portfolio: the complete landlord guide"
-summary: "When holding rental property through a limited company actually pays, the real CGT and SDLT cost of moving property in, s.162 incorporation relief, mortgage and refinance traps, ongoing company admin, ATED, and the honest trade-offs, with worked examples."
+summary: "Most landlords are told to incorporate by someone who has never seen their numbers. The honest version: what moving property into a company really costs in capital gains tax and stamp duty, when the annual saving repays it, where s.162 relief and your mortgage sit, and when the answer is to leave things alone."
 version: "2026.1"
 lastReviewed: "2026-06-06"
 ---

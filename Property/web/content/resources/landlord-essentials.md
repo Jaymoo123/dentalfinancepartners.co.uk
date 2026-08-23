@@ -1,7 +1,7 @@
 ---
 topic: landlord-essentials
 title: "Landlord tax essentials: the complete guide for UK residential landlords"
-summary: "What rental income to declare, allowable versus capital expenses, the £1,000 property allowance, Section 24 in brief, registering for Self Assessment, the deadlines that matter, record-keeping, and the mistakes that cost landlords money, with worked examples throughout."
+summary: "Most landlords overpay by getting the ordinary things slightly wrong. What to declare, which costs come off the rent and which do not, the £1,000 property allowance, the deadlines that carry penalties, and the mistakes that cost the most, with worked examples throughout."
 version: "2026.1"
 lastReviewed: "2026-06-06"
 ---

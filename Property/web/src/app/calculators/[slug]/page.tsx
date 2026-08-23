@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { relatedItemsFromLinks } from "@/lib/blog";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -163,18 +165,16 @@ export default async function CalculatorToolPage({ params }: Props) {
           <div className={siteContainerLg}>
             <Eyebrow>Related reading</Eyebrow>
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Read further on this</h2>
-            <ul className="mt-6 space-y-2 text-sm sm:text-base leading-relaxed">
-              {tool.related.map((r) => (
-                <li key={r.href}>
-                  <a
-                    href={r.href}
-                    className="inline-block py-0.5 font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-800"
-                  >
-                    {r.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {/* The last inline related-reading list on the site, now the same
+                card grid as everywhere else (owner, 2026-08-23). The pill earns
+                its place here more than anywhere: `tool.related` deliberately
+                mixes blog posts with sibling calculators, and a reader could not
+                previously tell which was which until they clicked. The curated
+                labels are kept as the card titles, because they are the
+                hand-written anchor text carve-out 5 protects. */}
+            <div className="mt-6">
+              <RelatedArticles items={relatedItemsFromLinks(tool.related)} columns={3} />
+            </div>
           </div>
         </section>
       )}

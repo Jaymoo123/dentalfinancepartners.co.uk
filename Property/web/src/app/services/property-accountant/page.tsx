@@ -13,7 +13,8 @@ import { btnOnCream, btnPrimary, heroCreamSurface, siteContainerLg } from "@/com
 import { buildFaqPageJsonLd, type FaqEntry } from "@/lib/faq-page-schema";
 import { siteConfig } from "@/config/site";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
-import { CalculatorLinkCards } from "@/components/calculators/CalculatorLinkCards";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { relatedItemsFromLinks } from "@/lib/blog";
 import { CoverageCards, type CoverageItem } from "@/components/property/CoverageCards";
 import { PromptMarquee, type Prompt } from "@/components/property/PromptMarquee";
 import { TaxYearGap } from "@/components/property/TaxYearGap";
@@ -234,37 +235,6 @@ const onboarding = [
     // does siteStats. Raised as an owner question rather than changed here.
     title: "The year runs",
     body: "Records kept current, quarterly filings where MTD applies, questions answered inside 24 hours, and a planning conversation before your year end rather than after it, while the decisions can still change the outcome.",
-  },
-];
-
-/**
- * The four free calculators, as real crawlable links alongside the tabs.
- *
- * CalculatorTabs renders <button role="tab">, so their version of this page
- * traded four in-body links to the tools for zero (report 03 §4.2). This is the
- * designer's own fix for that, CalculatorLinkCards, which they wrote and
- * documented and then never wired to a page. Carve-out 5.
- */
-const calculatorLinks = [
-  {
-    href: "/calculators/section-24-calculator",
-    title: "Section 24 calculator",
-    body: "What the finance cost restriction costs you this year, and what it costs from April 2027 when the reducer moves to 22% and property income moves to 22%, 42% and 47%.",
-  },
-  {
-    href: "/calculators/mtd-checker",
-    title: "MTD checker",
-    body: "Whether quarterly filing catches you from April 2026, April 2027, April 2028, or not yet.",
-  },
-  {
-    href: "/calculators/incorporation-cost-calculator",
-    title: "Incorporation cost calculator",
-    body: "Upfront CGT and stamp duty against annual savings, with a break-even year.",
-  },
-  {
-    href: "/calculators/portfolio-profitability-calculator",
-    title: "Portfolio profitability calculator",
-    body: "Net yield and profit per property, so you can see which holdings are actually carrying the portfolio.",
   },
 ];
 
@@ -730,10 +700,23 @@ export default function PropertyAccountantPage() {
             <div className="mt-8 sm:mt-10">
               <CalculatorTabs />
             </div>
-            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-900">
-              Or open any of them on its own page:
-            </p>
-            <CalculatorLinkCards items={calculatorLinks} />
+            {/* OWNER DECISION 2026-08-23: the tabs are the only calculator
+                surface this page carries. Both the 2x2 CalculatorLinkCards
+                module and the "Or open any of them on its own page" link list
+                that briefly replaced it are gone, asked for twice and
+                reaffirmed.
+
+                Know what that costs before restoring anything here.
+                `CalculatorTabs` renders <button role="tab">, not anchors, so
+                this page now emits ZERO in-body links to any /calculators/<slug>
+                page. That is the page-authored topical equity carve-out 5
+                protects and `calculator-tabs-crawl-path.test.ts` guards; this
+                route is listed in that test's OWNER_REMOVED_INBODY_LINKS with
+                the same reasoning. /calculators/mtd-checker is the one to watch:
+                it already takes zero in-body links from all 760 blog posts
+                (STRUCTURE_VS_COMPETITORS_2026-08-17.md:142). Reachability is
+                unaffected (SiteFooter ships per-tool links site-wide), so
+                nothing is orphaned. */}
           </div>
         </div>
       </section>
@@ -762,18 +745,7 @@ export default function PropertyAccountantPage() {
           <div>
             <Eyebrow>Related reading</Eyebrow>
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">More on choosing and working with one</h2>
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-              {feedingPosts.map((post) => (
-                <li key={post.href}>
-                  <Link
-                    href={post.href}
-                    className="block rounded-xl bg-white px-5 py-4 text-sm sm:text-base font-semibold text-slate-800 ring-1 ring-slate-200 transition-all hover:text-emerald-700 hover:ring-emerald-300"
-                  >
-                    {post.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <RelatedArticles className="mt-8" items={relatedItemsFromLinks(feedingPosts)} />
           </div>
         </div>
       </section>

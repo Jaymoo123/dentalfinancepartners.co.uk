@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Eyebrow, Prose } from "@/components/ui/page-blocks";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { heroCreamSurface, siteContainerLg } from "@/components/ui/layout-utils";
+import { RelatedArticles, type RelatedArticleKind } from "@/components/blog/RelatedArticles";
+import { relatedItemsFromLinks } from "@/lib/blog";
 
 /**
  * One full-width body band on a topic pillar page.
@@ -48,6 +50,8 @@ export function TopicSection({
   tone = "white",
   children,
   links,
+  linksAs = "cards",
+  figure,
 }: {
   id: string;
   /** The pre-header label. Must not repeat the heading's words (rule 21). */
@@ -56,7 +60,31 @@ export function TopicSection({
   /** Section ground. Alternate it: two touching sections must not match. */
   tone?: "white" | "slate";
   children: ReactNode;
-  links?: { href: string; label: string }[];
+  /**
+   * Related reading. Must not repeat the heading's words (rule 21).
+   *
+   * `kind` overrides the pill `RelatedArticles` would otherwise derive from the
+   * href, and is only needed for a destination whose route does not say what it
+   * is: /landlord-tax is a pillar guide but sits at the top level, so it matches
+   * none of the /blog, /calculators, /resources or /services prefixes.
+   */
+  links?: { href: string; label: string; kind?: RelatedArticleKind }[];
+  /**
+   * How `links` render.
+   *
+   * "cards" is the default and the site-wide treatment (owner, 2026-08-23:
+   * apply it everywhere). Links render through `RelatedArticles`, the single
+   * article-card grid the blog, the service pages and /locations already use,
+   * each carrying a pill saying what it points at and, where the destination can
+   * supply one, its opening sentence.
+   *
+   * "list" is the original inline underlined treatment, kept for a caller whose
+   * links are incidental rather than a related-reading block. Nothing passes it
+   * today; it exists so that case does not have to fight the default.
+   */
+  linksAs?: "list" | "cards";
+  /** Extra content between the prose and the links, for a section's figure. */
+  figure?: ReactNode;
 }) {
   return (
     <section
@@ -67,20 +95,26 @@ export function TopicSection({
         <Eyebrow>{eyebrow}</Eyebrow>
         <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">{title}</h2>
         <Prose>{children}</Prose>
-        {links && links.length > 0 && (
-          <ul className="mt-8 space-y-2 text-sm leading-relaxed sm:text-base">
-            {links.map((l) => (
-              <li key={l.href}>
-                <Link
-                  href={l.href}
-                  className="inline-block py-0.5 font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-800"
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        {figure}
+        {links && links.length > 0 &&
+          (linksAs === "cards" ? (
+            <div className="mt-8">
+              <RelatedArticles items={relatedItemsFromLinks(links)} columns={3} />
+            </div>
+          ) : (
+            <ul className="mt-8 space-y-2 text-sm leading-relaxed sm:text-base">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="inline-block py-0.5 font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-800"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ))}
       </div>
     </section>
   );

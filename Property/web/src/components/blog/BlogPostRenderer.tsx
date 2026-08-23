@@ -15,10 +15,10 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { BlogSidebarCta } from "@/components/blog/BlogSidebarCta";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
-import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime, categoryDisplayName } from "@/lib/blog";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
@@ -155,8 +155,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         body: getActiveCta(niche).blog.cta_body,
         button: getActiveCta(niche).blog.cta_button,
       });
-
-  const isMTDPost = categorySlug === "making-tax-digital-mtd";
 
   const reviewerName = post.reviewedBy?.trim();
   const reviewerCreds = post.reviewerCredentials?.trim();
@@ -304,12 +302,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 )}
               </div>
 
-              {isMTDPost ? (
-                <div className="mt-12">
-                  <MTDCountdown />
-                </div>
-              ) : null}
-
               <section
                 id="enquiry-form"
                 className="relative mt-16 overflow-hidden rounded-xl bg-slate-900 p-8 sm:p-10 text-white scroll-mt-24"
@@ -393,19 +385,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <h2 id="related-heading" className="text-2xl font-bold text-slate-900 mb-8">
                     Related articles
                   </h2>
-                  <ul className="grid gap-4 sm:grid-cols-2">
-                    {related.map((r) => (
-                      <li key={r.slug}>
-                        <Link
-                          href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="border border-transparent block h-full rounded-xl bg-slate-50 p-6 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
-                        >
-                          <h3 className="text-base sm:text-lg font-bold! tracking-normal! leading-snug! text-slate-900">{r.title}</h3>
-                          <p className="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">{r.summary}</p>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  <RelatedArticles
+                    items={related.map((r) => ({
+                      href: `/blog/${r.categorySlug}/${r.slug}`,
+                      title: r.title,
+                      excerpt: r.summary,
+                    }))}
+                  />
                 </section>
               ) : null}
 

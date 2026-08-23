@@ -2,6 +2,17 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { RateWedge } from "@/components/property/RateWedge";
+import {
+  BandLadder,
+  bandLabel,
+  CgtOrder,
+  CorporationZones,
+  LBTT_BANDS,
+  LTT_BANDS,
+  MtdStaircase,
+  SDLT_BANDS,
+} from "@/components/property/rates-figures";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { StatsCounter } from "@/components/property/StatsCounter";
 import { TestimonialsSection } from "@/components/property/TestimonialsSection";
@@ -224,15 +235,26 @@ export default function PropertyTaxRatesPage() {
                 Each rate applies only to the part of the price within its band. A buy-to-let or second home
                 adds a 5% surcharge on the whole price.
               </p>
+              {/* Rows built from SDLT_BANDS in `rates-figures.tsx`, which is
+                  the single source this table and the ladder below it both read.
+                  Typing the bands twice is how a table and its figure drift. */}
               <RateTable
                 head={["Band", "Standard", "+ 5% additional"]}
-                rows={[
-                  { band: "Up to £125,000", a: "0%", b: "5%" },
-                  { band: "£125,001 to £250,000", a: "2%", b: "7%" },
-                  { band: "£250,001 to £925,000", a: "5%", b: "10%" },
-                  { band: "£925,001 to £1,500,000", a: "10%", b: "15%" },
-                  { band: "Above £1,500,000", a: "12%", b: "17%" },
-                ]}
+                rows={SDLT_BANDS.map((b) => ({
+                  band: bandLabel(b),
+                  a: `${b.rate}%`,
+                  b: `${b.additional}%`,
+                }))}
+              />
+              <BandLadder
+                bands={SDLT_BANDS}
+                axisLabel="the price"
+                wholePrice={{
+                  rate: "5%",
+                  label: "additional-dwelling surcharge",
+                  detail:
+                    "On a buy-to-let or second home it is charged on the whole price, not on a slice of it. That is why the right-hand column above adds five points to every band rather than only to the top one.",
+                }}
               />
               <p>
                 Non-UK-resident buyers add a further 2%. First-time buyers pay 0% to £300,000 and 5% on
@@ -248,13 +270,17 @@ export default function PropertyTaxRatesPage() {
             >
               <RateTable
                 head={["Band", "Rate"]}
-                rows={[
-                  { band: "Up to £145,000", a: "0%" },
-                  { band: "£145,001 to £250,000", a: "2%" },
-                  { band: "£250,001 to £325,000", a: "5%" },
-                  { band: "£325,001 to £750,000", a: "10%" },
-                  { band: "Above £750,000", a: "12%" },
-                ]}
+                rows={LBTT_BANDS.map((b) => ({ band: bandLabel(b), a: `${b.rate}%` }))}
+              />
+              <BandLadder
+                bands={LBTT_BANDS}
+                axisLabel="the price"
+                wholePrice={{
+                  rate: "8%",
+                  label: "Additional Dwelling Supplement",
+                  detail:
+                    "Charged on the whole price of an additional dwelling worth £40,000 or more, which is why it dwarfs the banded rates above it on all but the largest purchases.",
+                }}
               />
               <p>
                 The Additional Dwelling Supplement is 8% of the whole price for an additional dwelling worth
@@ -271,12 +297,15 @@ export default function PropertyTaxRatesPage() {
               <p>Main residential rates. Additional properties use a separate higher-rates table (5% to 17%).</p>
               <RateTable
                 head={["Band", "Main rate"]}
-                rows={[
-                  { band: "Up to £225,000", a: "0%" },
-                  { band: "£225,001 to £400,000", a: "6%" },
-                  { band: "£400,001 to £750,000", a: "7.5%" },
-                  { band: "£750,001 to £1,500,000", a: "10%" },
-                  { band: "Above £1,500,000", a: "12%" },
+                rows={LTT_BANDS.map((b) => ({ band: bandLabel(b), a: `${b.rate}%` }))}
+              />
+              <BandLadder
+                bands={LTT_BANDS}
+                axisLabel="the price"
+                notes={[
+                  "No first-time-buyer relief in Wales.",
+                  "No non-resident surcharge in Wales.",
+                  "Additional properties use a separate higher-rates table, 5% to 17%.",
                 ]}
               />
               <p>Wales has no first-time-buyer relief and no non-resident surcharge.</p>
@@ -301,6 +330,7 @@ export default function PropertyTaxRatesPage() {
                   { band: "Reporting and payment deadline", a: "60 days from completion" },
                 ]}
               />
+              <CgtOrder />
             </Section>
 
             {/* The only ask between the hero and the panel at the foot. Before
@@ -363,6 +393,12 @@ export default function PropertyTaxRatesPage() {
                 Individual landlords cannot deduct mortgage interest. The full profit is taxed and a
                 basic-rate credit is given on the interest. Companies deduct interest in full.
               </p>
+              {/* `RateWedge` rather than a new figure. It was written for exactly
+                  the two rows above it: the reducer rising to 22% reads like
+                  relief, and property income moving to 22/42/47 at the same
+                  moment means the gap between the rate you pay and the relief you
+                  get does not change. Its second consumer, after /section-24. */}
+              <RateWedge />
             </Section>
 
             <Section
@@ -385,6 +421,7 @@ export default function PropertyTaxRatesPage() {
                   { band: "Dividend tax rates", a: "10.75% / 35.75% / 39.35%" },
                 ]}
               />
+              <CorporationZones />
             </Section>
 
             <Section id="allowances" eyebrow="Allowances and MTD" title="Allowances, reliefs and MTD">
@@ -397,6 +434,7 @@ export default function PropertyTaxRatesPage() {
                   { band: "MTD threshold from April 2027 / April 2028", a: "£30,000 / £20,000" },
                 ]}
               />
+              <MtdStaircase />
               <p className="text-sm text-slate-500">
                 These figures are a quick reference and not a substitute for advice on your own position. We
                 can confirm exactly how each applies to you.

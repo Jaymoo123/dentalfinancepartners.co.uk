@@ -69,9 +69,47 @@ const APP_DIR = join(__dirname, "..", "app");
  */
 const NO_PRIOR_INBODY_CALCULATOR_LINKS = ["src/app/page.tsx"];
 
+/**
+ * Routes where the owner has decided, explicitly, that the tabs are the only
+ * calculator surface the page carries.
+ *
+ * This is NOT the exemption above. That one says a page never had the equity to
+ * lose. This one says the equity existed, the cost was put in writing, and the
+ * owner chose to spend it anyway (2026-08-23, asked twice and reaffirmed: "no
+ * ONLY keep the calculator tab designs on page"). Both pages previously shipped
+ * four `CalculatorLinkCards` links; those cards were removed first and replaced
+ * with a plain link list, then the list was removed too.
+ *
+ * `/section-24` had the same cards removed on the same day and is deliberately
+ * NOT listed here. It keeps an in-prose `InlineLink` to
+ * `/calculators/section-24-calculator` in its worked-example paragraph, so it
+ * still satisfies the real predicate on its own merits and needs no exemption.
+ * That is the outcome to prefer every time: an exemption is for a page that has
+ * genuinely lost every per-tool link, not for one that merely lost the cards.
+ *
+ * What is actually spent: `CalculatorTabs` renders `<button role="tab">`, so
+ * each of these pages now emits zero in-body links to any specific
+ * `/calculators/<slug>` page. Reachability is untouched, because
+ * `SiteFooter.tsx` ships per-tool links on every page of the site; what is gone
+ * is the topical, page-authored link from a commercial page to the tool it
+ * discusses. `/calculators/mtd-checker` is the one to watch, since
+ * `docs/property/STRUCTURE_VS_COMPETITORS_2026-08-17.md:142` records it taking
+ * zero in-body links from all 760 blog posts.
+ *
+ * Keep this list SHORT and keep it explicit. A route belongs here only on a
+ * recorded owner decision, never because a page edit tripped the guard: that is
+ * the failure mode this file was written to stop, and the correct response to a
+ * red test is still to restore the links unless the owner says otherwise.
+ */
+const OWNER_REMOVED_INBODY_LINKS = [
+  "src/app/services/property-accountant/page.tsx",
+  "src/app/services/property-tax-advice/page.tsx",
+];
+
 export function keepsCrawlPath(src: string, pagePath = ""): boolean {
   if (!src.includes("<CalculatorTabs")) return true;
   const norm = pagePath.replace(/\\/g, "/");
+  if (OWNER_REMOVED_INBODY_LINKS.some((p) => norm.endsWith(p))) return true;
   if (NO_PRIOR_INBODY_CALCULATOR_LINKS.some((p) => norm.endsWith(p))) {
     // Still has to link the index; it is the only crawl affordance that block has.
     return /href=\{?["'`]\/calculators["'`]/.test(src) || hasPerToolLink(src);
@@ -123,15 +161,39 @@ describe("CalculatorTabs pages keep a crawlable path to /calculators/*", () => {
     expect(keepsCrawlPath(src, "C:\\x\\Property\\web\\src\\app\\page.tsx")).toBe(true);
     expect(keepsCrawlPath(src, "src/app/page.tsx")).toBe(true);
     // The clause Phase 5 added, on any other page: now a failure.
-    expect(keepsCrawlPath(src, "src/app/services/property-accountant/page.tsx")).toBe(false);
+    expect(keepsCrawlPath(src, "src/app/making-tax-digital-landlords/page.tsx")).toBe(false);
     expect(keepsCrawlPath(src)).toBe(false);
     // The exemption is not a blanket pass: the homepage still needs one of the two.
     expect(keepsCrawlPath("<CalculatorTabs />", "src/app/page.tsx")).toBe(false);
   });
 
+  it("the owner exemption is scoped to the two routes, not a blanket pass", () => {
+    const src = "<CalculatorTabs />";
+    expect(keepsCrawlPath(src, "src/app/services/property-accountant/page.tsx")).toBe(true);
+    expect(keepsCrawlPath(src, "src/app/services/property-tax-advice/page.tsx")).toBe(true);
+    expect(keepsCrawlPath(src, "src/app/services/landlord-accountant/page.tsx")).toBe(false);
+    expect(keepsCrawlPath(src, "src/app/making-tax-digital-landlords/page.tsx")).toBe(false);
+  });
+
   const pages = pageFiles(APP_DIR).filter((p) =>
     readFileSync(p, "utf8").includes("<CalculatorTabs"),
   );
+
+  it("every owner-exempt route still renders CalculatorTabs and still has no per-tool link", () => {
+    // Two-way honesty check on the list. A route that regained its links, or
+    // that stopped rendering tabs entirely, should come off the exemption rather
+    // than sit there granting a pass nothing needs.
+    for (const rel of OWNER_REMOVED_INBODY_LINKS) {
+      const page = pages.find((p) => p.replace(/\\/g, "/").endsWith(rel));
+      expect(page, `${rel} is exempt but renders no CalculatorTabs`).toBeDefined();
+      const src = readFileSync(page!, "utf8");
+      expect(
+        hasPerToolLink(src),
+        `${rel} has per-tool calculator links again, so remove it from OWNER_REMOVED_INBODY_LINKS ` +
+          "and let the real guard cover it.",
+      ).toBe(false);
+    }
+  });
 
   it("at least one page renders CalculatorTabs, so the guard is live", () => {
     expect(pages.length).toBeGreaterThan(0);

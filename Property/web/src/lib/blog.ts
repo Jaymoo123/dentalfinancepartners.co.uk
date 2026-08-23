@@ -4,6 +4,9 @@ import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
 import { addHeadingIds } from "./markdown-utils";
 import { assertFrontmatter, STANDARD_MANIFEST } from "@accounting-network/web-shared/lib/frontmatter";
+import { getGuideByTopic } from "./resources/content";
+import { pageSummary } from "./page-summaries";
+import type { RelatedArticleKind } from "@/components/blog/RelatedArticles";
 
 const postsDirectory = path.join(process.cwd(), "content", "blog");
 
@@ -170,6 +173,101 @@ export function getAllCategories(): Array<{ slug: string; name: string; count: n
   return Array.from(categoryMap.entries())
     .map(([slug, data]) => ({ slug, name: data.name, count: data.count }))
     .sort((a, b) => b.count - a.count);
+}
+
+/**
+ * Opening sentence of a post's body, for the related-article cards.
+ *
+ * The cards used to render `summary`, which is frontmatter written for search
+ * rather than for a reader: across the corpus it ranges from one clean line to a
+ * 130-word statute-citing block (`change-landlord-accountants.md`), so at a
+ * fixed clamp the cards were a wall of text on some rows and a single line on
+ * others. The body's first sentence is written to be read first and is
+ * consistently a hook, which is what a card wants.
+ *
+ * Falls back to `summary` when a post opens on something that is not prose (a
+ * table, a figure block), so a card never renders empty.
+ */
+export function firstSentence(contentHtml: string, fallback = ""): string {
+  const text = contentHtml
+    // Drop whole blocks that carry no opening prose, before tags are stripped:
+    // an opening table or list would otherwise contribute its first cell.
+    .replace(/<(table|ul|ol|figure|blockquote|pre)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<[^>]*>/g, " ")
+    // Markdown leftovers: ATX headings, emphasis, link syntax, list bullets.
+    .replace(/^#{1,6}\s+.*$/gm, " ")
+    .replace(/^\s*[-*+]\s+/gm, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`]/g, "")
+    .replace(/&(nbsp|amp|lt|gt|#39|quot);/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Split on a terminator followed by a space and a capital, so "s.9A." and
+  // "£3,000." do not cut a sentence in half. Abbreviations ending in a capital
+  // (an initial, "U.K.") are rare enough in an opening line to accept.
+  const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z£"'(])/);
+
+  // Take sentences until there is enough to be worth reading. 12 posts open on a
+  // deliberate one-word answer ("No.", "Short answer.", "Two decades."), which is
+  // good writing and a useless card on its own; the line that follows is the one
+  // that explains it, so the card gets both.
+  let excerpt = "";
+  for (const s of sentences) {
+    const next = excerpt ? `${excerpt} ${s}` : s;
+    // Stop before a sentence that would blow the budget, unless we have nothing.
+    if (excerpt && next.length > 320) break;
+    excerpt = next;
+    if (excerpt.length >= 40) break;
+  }
+  excerpt = excerpt.trim();
+
+  const fb = fallback.trim();
+  const usable = (s: string) => s.length >= 40 && s.length <= 320;
+  if (usable(excerpt)) return excerpt;
+  if (usable(fb)) return fb;
+  return excerpt || fb;
+}
+
+/**
+ * Turn a page's curated `{ href, label }` link list into related-article cards,
+ * resolving each blog href to its post so the card can carry an opening line.
+ *
+ * The curated LABEL is kept as the card title rather than the post's own title.
+ * Those labels are hand-written anchor text on the site's only authored links
+ * out into the blog clusters (carve-out 5), so swapping them for post titles
+ * would rewrite the anchor text of every one of them as a side effect of a
+ * styling change.
+ *
+ * An href that is not a blog post (a calculator, a pillar page) or one whose
+ * post has since been renamed simply gets no excerpt: the card still renders and
+ * the link still works, which is the right failure mode for a link list that
+ * outlives any single post.
+ */
+export function relatedItemsFromLinks(
+  links: Array<{ href: string; label: string; kind?: RelatedArticleKind }>,
+): Array<{ href: string; title: string; excerpt?: string; kind?: RelatedArticleKind }> {
+  return links.map(({ href, label, kind }) => {
+    const base = { href, title: label, kind };
+
+    const post = href.match(/^\/blog\/([^/]+)\/([^/?#]+)/);
+    if (post) {
+      const found = getPostByCategoryAndSlug(post[1], post[2]);
+      return found
+        ? { ...base, excerpt: firstSentence(found.contentHtml, found.summary) }
+        : base;
+    }
+
+    // Resolved live rather than duplicated into `PAGE_SUMMARIES`: the guide
+    // registry already holds the summary this page's own hero renders.
+    const guide = href.match(/^\/resources\/([^/?#]+)/);
+    if (guide) {
+      const found = getGuideByTopic(guide[1]);
+      return found?.summary ? { ...base, excerpt: found.summary } : base;
+    }
+
+    return { ...base, excerpt: pageSummary(href) };
+  });
 }
 
 export function calculateReadTime(html: string): number {

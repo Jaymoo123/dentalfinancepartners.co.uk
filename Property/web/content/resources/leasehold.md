@@ -1,7 +1,7 @@
 ---
 topic: leasehold
 title: "Leasehold resource hub: the primary sources, in one place"
-summary: "Every statute, statutory instrument, HMRC manual and free advice service a leaseholder actually needs, with what each one settles, plus our own guides on extensions, right to manage, service charges and ground rent."
+summary: "A lease loses value every year you leave it, and crossing the 80-year line costs thousands. Every statute, statutory instrument, HMRC manual and free advice service a leaseholder actually needs, with what each one settles, plus our own guides on extensions, right to manage, service charges and ground rent."
 version: "2026.1"
 lastReviewed: "2026-08-20"
 ---

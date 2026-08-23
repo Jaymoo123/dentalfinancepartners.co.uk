@@ -5,6 +5,15 @@ import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { TopicHero, TopicSection } from "@/components/property/TopicSection";
+import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { InlineLink } from "@/components/ui/page-blocks";
+import {
+  AllowanceClaims,
+  AllowanceSplit,
+  GiftTimeline,
+  InvestmentLine,
+  OutOfScope,
+} from "@/components/property/estate-figures";
 import { btnOnCream, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
@@ -196,7 +205,6 @@ export default function LandedEstatesPage() {
             href: `${PTST}/how-to-avoid-inheritance-tax-on-a-farm`,
             label: "Reducing inheritance tax on a farm, legitimately",
           },
-          { href: CALC, label: "Allowance calculator" },
         ]}
       >
         <p>
@@ -205,16 +213,35 @@ export default function LandedEstatesPage() {
           then set the total against £2.5 million. Under it, the relief covers everything, as it did before. Over
           it, only the excess is exposed, and the exposure is smaller than most of the headlines suggested.
         </p>
+        {/* The arithmetic this section used to spell out in two paragraphs,
+            drawn. Every figure is derived from the same constants, so the bar,
+            the three stats and the couple line cannot drift apart. */}
+        <AllowanceSplit />
+        {/* The calculator was a related CARD in this row. A card is the wrong
+            affordance for a tool the reader can use here, so it is the tab
+            treatment instead, exactly as /leasehold does with stamp duty. The
+            `bprapr` tab is backed by the generic registry tool. */}
+        <div className="mt-8 sm:mt-10">
+          <h3 className="text-base font-bold text-slate-900 sm:text-lg">Put your own figure through it</h3>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            Enter the agricultural value and any trading business value. The{" "}
+            {/* Literal href, not the `CALC` constant, deliberately. This page
+                renders `CalculatorTabs`, which emits <button role="tab"> and no
+                crawlable link, so `calculator-tabs-crawl-path.test.ts` requires a
+                real per-tool <a href> in this file's own markup. That guard is a
+                source scan and cannot see through a constant, and it caught this
+                the moment the tabs went in. Keep this one spelled out. */}
+            <InlineLink href="/calculators/bpr-apr-allowance-calculator">
+              combined allowance calculator
+            </InlineLink>{" "}
+            shows what is relieved, what is exposed, and the tax on the excess.
+          </p>
+          <div className="mt-5">
+            <CalculatorTabs tabs={["bprapr"]} />
+          </div>
+        </div>
         <p>
-          Here is the arithmetic on £4 million of qualifying value. The first £2.5 million is relieved in full.
-          The remaining £1.5 million is relieved at 50%, so £750,000 stays in the estate. At the ordinary 40%
-          rate that is £300,000 of inheritance tax, before your nil rate band and the rest of your estate come
-          into it. That is the effective 20% figure, and it is the number to plan against.
-        </p>
-        <p>
-          If you are married or in a civil partnership, the unused part of the first allowance passes to the
-          survivor, so the couple figure is £5 million and the same £4 million estate has nothing to pay. And if
-          you have made gifts since October 2024, some of that allowance may already be spoken for by the time
+          If you have made gifts since October 2024, some of that allowance may already be spoken for by the time
           the estate is valued.
         </p>
       </TopicSection>
@@ -297,12 +324,14 @@ export default function LandedEstatesPage() {
           you hold or how much of your week they take up. If your estate is rentals and nothing else, the
           allowance on this page is probably not for you.
         </p>
+        {/* A binary test drawn as two columns. A reader arrives asking "does
+            mine count", which is a lookup, and it was three paragraphs of
+            qualifications. Neutral dash on the right: nothing there is being
+            done wrong, it simply is not trading. */}
+        <InvestmentLine />
         <p>
-          The honest exceptions are narrow. Development work is trading, so a developer holding sites and work in
-          progress can qualify on that element. Serviced accommodation can qualify where the services are
-          substantial rather than nominal, and the bar for that is high. Furnished holiday letting on its own has
-          never cleared it. If you sit near the boundary, the linked page walks the line properly rather than
-          giving you a yes or no you cannot rely on.
+          If you sit near the boundary, the linked page walks the line properly rather than giving you a yes or no
+          you cannot rely on.
         </p>
         <p>
           Where this does bite for landlords is the mixed estate: a working farm or a trading company alongside a
@@ -334,13 +363,13 @@ export default function LandedEstatesPage() {
           the allowance is claimed against the qualifying parts only, so the first job is deciding what actually
           counts before deciding how to spread the relief.
         </p>
+        {/* What competes for the allowance and what sits outside it. The AIM
+            sub-tier is the one thing on this page that works in the reader's
+            favour and it was mid-paragraph. */}
+        <AllowanceClaims />
         <p>
-          Shares designated as not listed on the markets of recognised stock exchanges, AIM holdings in practice,
-          are the exception worth knowing. Relief on them has dropped to 50%, but that 50% is a separate tier that
-          does not eat into your £2.5 million. Ordinary shares in a private trading company are not in that tier:
-          they are relieved under the normal business property relief rules and draw on the same £2.5 million as
-          the farm. It is one of the few places where the reform left something on the table, and it changes how
-          you would sequence gifts of different asset types.
+          It is one of the few places where the reform left something on the table, and it changes how you would
+          sequence gifts of different asset types.
         </p>
       </TopicSection>
 
@@ -361,23 +390,14 @@ export default function LandedEstatesPage() {
         ]}
       >
         <p>
-          Giving land away in your lifetime still works, and the seven-year clock still runs. What changed is that
-          gifts made on or after 30 October 2024 are measured against the new rules if you die on or after 6 April
-          2026 and within seven years of making them. Anything you gave away before that date is outside the new
-          regime entirely, whenever you die, which is worth checking before anyone assumes a historic gift needs
-          revisiting.
+          Giving land away in your lifetime still works, and the seven-year clock still runs. What changed is the
+          date the rules attach to.
         </p>
-        <p>
-          Trusts changed in the same direction. A trust you settled before 30 October 2024 keeps its own
-          allowance. Trusts settled by the same person on or after that date share one allowance between them, so
-          the old approach of adding a trust to add another slice of relief no longer does anything. If you were
-          part way through a multi-trust plan when the announcement landed, that plan needs re-running rather than
-          continuing.
-        </p>
-        <p>
-          Sequencing matters more than it used to. Because the allowance looks back seven years, the order in
-          which you give things away, and how far apart, changes what is left when it counts.
-        </p>
+        {/* One date, two sides, gifts and trusts on each. The section says this
+            line "runs through the middle of a lot of half-finished planning",
+            which is exactly the kind of claim a reader has to check against
+            their own dates. */}
+        <GiftTimeline />
       </TopicSection>
 
       <TopicSection
@@ -390,29 +410,10 @@ export default function LandedEstatesPage() {
           This site handles the property tax half of a landed estate. Several things a farming family needs sit
           outside that, and we would rather say so than pretend otherwise.
         </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>Herd basis elections.</strong> The livestock valuation election is a farm accounts decision
-            and belongs with your farm accountant.
-          </li>
-          <li>
-            <strong>Farmers&apos; averaging.</strong> Averaging profits across two or five years is income tax
-            work on the trading accounts, again with your farm accountant.
-          </li>
-          <li>
-            <strong>Basic Payment Scheme and environmental schemes.</strong> Scheme entitlements, delinked
-            payments and stewardship agreements are handled by your farm accountant or land agent.
-          </li>
-          <li>
-            <strong>Dividing the estate between farming and non-farming children.</strong> Who inherits what, and
-            how the non-farming children are treated fairly, is succession planning for a solicitor and the family
-            to settle. We cover the tax consequences of whichever split you choose, not the split itself.
-          </li>
-          <li>
-            <strong>Agricultural tenancy law.</strong> Succession rights, rent reviews and notices to quit are a
-            rural surveyor and solicitor matter, not a tax one.
-          </li>
-        </ul>
+        {/* A referral map rather than a bulleted disclaimer list. Naming the
+            adviser against each row makes the same content useful instead of
+            defensive, which is what the closing sentence already claims. */}
+        <OutOfScope />
         <p>
           We work alongside those advisers rather than replacing them. What we do is the inheritance tax and
           capital tax position on the land, the buildings and the structures that hold them.
@@ -424,7 +425,6 @@ export default function LandedEstatesPage() {
         eyebrow="First moves"
         title="Where to start"
         links={[
-          { href: CALC, label: "Combined allowance calculator" },
           { href: "/services/property-tax-advice", label: "Property tax advice" },
           { href: "/blog/landlord-tax-essentials", label: "All landlord tax guides" },
         ]}
@@ -440,20 +440,26 @@ export default function LandedEstatesPage() {
           lot of half-finished planning. If you made a gift or settled a trust after that date, the numbers you
           were given at the time were almost certainly based on the announcement figure.
         </p>
-        <p>
-          We can produce a written view of your allowance position: what qualifies, what does not, how much
-          headroom is left after gifts already made, and what the tax would be on a death today. You bring the
-          valuations and the gift history, we do the rest.
-        </p>
-        <Link
-          href="#book"
-          data-cta="estates_start_book"
-          data-cta-placement="where_to_start"
-          data-cta-goal="form"
-          className={`${btnPrimary} w-full sm:w-auto`}
-        >
-          Get a written allowance position
-        </Link>
+        {/* The bare button became the prompt-and-button block /incorporation and
+            /landlord-compliance use: white card, hairline ring, statement left,
+            CTA right, stacking on mobile. The paragraph that used to sit above
+            the button is the statement, so nothing is lost; it just reads as one
+            ask rather than as prose followed by an unexplained button. */}
+        <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+          <p className="text-base font-bold text-slate-900 sm:text-lg">
+            You bring the valuations and the gift history. We tell you what qualifies, what does not, how much
+            headroom is left, and what the tax would be on a death today.
+          </p>
+          <Link
+            href="#book"
+            data-cta="estates_start_book"
+            data-cta-placement="where_to_start"
+            data-cta-goal="form"
+            className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+          >
+            Get a written allowance position
+          </Link>
+        </div>
       </TopicSection>
 
       {/* Anchor for the hero primary and the mid-page ask. The copy is the

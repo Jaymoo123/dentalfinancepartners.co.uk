@@ -67,6 +67,22 @@ function hrefActive(pathname: string, href: string): boolean {
 }
 
 /**
+ * Active state for an item INSIDE a dropdown or drawer, which is an exact match
+ * and never a prefix one.
+ *
+ * `hrefActive` is right for a top-level trigger, where "Services" should read as
+ * active anywhere under /services. It is wrong for the children, because every
+ * group carries a self-referential first child ("All services" -> /services) and
+ * a prefix test lights that child up on every sibling page: on
+ * /services/property-accountant both "All services" and "Property accountant"
+ * came out green, so the menu stopped saying which page you were on. Any two
+ * children where one href is a prefix of the other have the same defect.
+ */
+function childActive(pathname: string, href: string): boolean {
+  return pathname === href;
+}
+
+/**
  * Desktop dropdown for a nav group.
  *
  * DELIBERATE DIVERGENCE from the designer's build, on accessibility grounds
@@ -144,7 +160,11 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
                     <Link
                       key={child.href}
                       href={child.href}
-                      className={`block rounded-lg px-2 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-700 ${focusRing}`}
+                      className={`block rounded-lg px-2 py-1.5 text-sm font-semibold ${focusRing} ${
+                        childActive(pathname, child.href)
+                          ? "bg-emerald-50 text-emerald-700"
+                          : "text-slate-700 hover:bg-slate-50 hover:text-emerald-700"
+                      }`}
                       onClick={() => setOpen(false)}
                     >
                       {child.label}
@@ -171,7 +191,7 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
                 key={child.href}
                 href={child.href}
                 className={`block px-4 py-2.5 text-sm font-semibold ${focusRing} ${
-                  hrefActive(pathname, child.href)
+                  childActive(pathname, child.href)
                     ? "bg-emerald-50 text-emerald-700"
                     : "text-slate-700 hover:bg-slate-50 hover:text-emerald-700"
                 }`}
@@ -351,13 +371,13 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
                           // The parent link already covers the section index.
                           .filter((child) => child.href !== item.href)
                           .map((child) => {
-                            const childActive = hrefActive(pathname, child.href);
+                            const isActive = childActive(pathname, child.href);
                             return (
                               <Link
                                 key={child.href}
                                 href={child.href}
                                 className={`block px-4 py-2.5 text-sm font-semibold ${focusRing} ${
-                                  childActive
+                                  isActive
                                     ? "text-emerald-700"
                                     : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                                 }`}
@@ -380,13 +400,13 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
                               {group.category}
                             </p>
                             {group.items.map((child) => {
-                              const childActive = pathname === child.href;
+                              const isActive = childActive(pathname, child.href);
                               return (
                                 <Link
                                   key={child.href}
                                   href={child.href}
                                   className={`block px-4 py-2.5 text-sm font-semibold ${focusRing} ${
-                                    childActive
+                                    isActive
                                       ? "text-emerald-700"
                                       : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                                   }`}

@@ -209,6 +209,303 @@ placeholder; whether the seven-field `LeadForm` gets an experiment; and whether 
 every Monday since 2026-07-20). Our records saying it was "disabled 2026-07-13" were wrong: it
 FAILED on 07-13, was fixed on 07-19, and has run ever since. It was reported, not stopped.
 
+### 0.22a / 0.22b / 0.22c Owner review passes — 2026-08-23, UNCOMMITTED, NOT DEPLOYED
+
+**START HERE IF YOU ARE PICKING THIS UP.** Three live review sessions on top of
+`design/property-redesign-port` after Phase 8 closed, all on the same day. The owner walked
+the site on the dev server and directed changes page by page. Nothing is committed, nothing
+is pushed, nothing is deployed.
+
+**Read `docs/property/DESIGN_SYSTEM.md` first, and read §0 of it before writing any new
+page.** It is the durable rulebook these sessions produced. 0.22c turned it from a record of
+what the redesign did into a **binding page contract**: §0 is a ten-part checklist covering
+structure, visuals, money figures, calculators, conversion, crawl paths, accessibility, copy
+and reuse, and a page that does not satisfy it is not finished. 0.22c is the latest session;
+everything in 0.22b and 0.22a still stands except where 0.22c says otherwise.
+
+**Gate as at the third review session's close (2026-08-23 late):** tsc 0 errors; eslint
+0 errors; vitest **55 files / 1,532 pass** (was 54 / 1,529 at 0.22b, 52 / 1,511 at Phase 8).
+`check_dependency_closure.py` re-run and PASSING ("dependency closure OK across 19 sites").
+`next build`, calculator goldens, `predeploy_gate.py`, the sweep and `browser_check` have NOT
+been re-run since Phase 8 and must all be run before any deploy.
+
+**71 files under `Property/web` are now modified or untracked** (was 62), plus
+`Property/niche.config.json`, 2 under `packages/web-shared` and 2 docs: 76 in total. Every page change below was verified by fetching
+the rendered page off the local dev server and asserting the new strings are present in the
+HTML, not by assuming the edit landed.
+
+### 0.22c Third owner review session — 2026-08-23 late, UNCOMMITTED
+
+Same branch, same dev-server walk. Eight surfaces plus the rulebook itself. **The headline
+outcome is `DESIGN_SYSTEM.md` §0, the page contract**, written at the owner's instruction so
+that every existing and future page is held to one checklist instead of the rules being
+re-derived page by page. Read it before anything else.
+
+**What changed, page by page:**
+
+1. **`/calculators/stamp-duty-calculator` body now runs the full container.** It was the last
+   page on the site with a `max-w-3xl` body clamp (two of them: the explainer and the FAQ
+   block), so it read as a narrower site than `/calculators/[slug]` beside it. Fixing it
+   surfaced two things the box was hiding: its h2s were `sm:text-3xl`, a size used nowhere
+   else, and its FAQ was a hand-rolled `dl` with its own inline `FAQPage` object over `q`/`a`
+   keys. Now `sm:text-4xl` and `FaqSection` + `buildFaqPageJsonLd` over one
+   `{question, answer}` array. Rule written up as **`DESIGN_SYSTEM.md` §6a**.
+   **Site-wide audit done:** every `max-w-3xl|4xl|5xl` in `src/app/**` was read in context.
+   All survivors are hero copy or the eyebrow + h2 standfirst block above a full-width grid.
+   **Zero body clamps remain anywhere on the site.**
+
+2. **`/contact` rebuilt from a hero-and-form into a funnel.** It now runs hero, form, Who we
+   are, Why choose us, Testimonials, What we cover. The three homepage bands were **lifted
+   out of `app/page.tsx` into `components/property/MarketingSections.tsx`** and the homepage
+   re-renders them from there, so the two pages cannot drift. The form deliberately stays
+   directly under the hero: it was tried below the bands and moved back the same day, because
+   `/contact` is the page a reader arrives on already intending to enquire. Testimonials sits
+   third rather than last because the footer is navy. **`DESIGN_SYSTEM.md` §4c.**
+
+3. **`/services/property-tax-advice`:** the "Background reading before you book" box (eight
+   blog deep links, carve-out 5) moved out of the Scope section to under the changes table in
+   Moving parts, and went `bg-white` because that section's ground is slate. **§2.**
+
+4. **Category hubs got their pagination back, at 12 per page.** `/blog/<category>` shipped
+   with paging disabled (`postsPerPage={articleItems.length}`) because `NumberedPagination`
+   renders `<button>` not `<a href>`, and the hubs are the only full HTML crawl path to the
+   ~750-post corpus. Slicing would have cut 749 server-rendered article links to 108, so the
+   reader ate a wall of up to 163 cards instead. **`HubArticleList` now keeps every card in
+   the server HTML and hides the off-page ones with the `hidden` attribute**, which buys both.
+   Verified on the largest hub, `landlord-tax-essentials`: 163 crawlable links, 12 visible,
+   151 hidden, "Page 1 of 14". Guarded by new **`src/tests/hub-article-crawl-path.test.ts`**
+   (3 tests, source scan on both halves). **§4e. Hide, never slice.**
+
+5. **`/thank-you`, `/book` and `/complete` brought onto the redesign as one set.** They were
+   the last pre-redesign pages: no hero, square corners, `border-2 border-slate-300` buttons.
+   Doing them together was not tidiness. `/complete`'s "needs the personal link" card was a
+   hand-copy of `/book`'s, so restyling `/book` alone had already made the pair disagree.
+   Three new shared components carry the set: **`ui/SlimHero.tsx`** (shallow navy hero, no
+   tick, no CTA, owner-directed), **`ui/NoticeCard.tsx`** (replaced **eight** near-copies of
+   the outcome card across four files) and **`property/WhatToExpectCard.tsx`** (lifted out of
+   `/contact`, now four consumers). `BookingPicker`'s chips went `rounded-xl` and
+   `DetailsForm`'s inputs with them. **Every branch was kept**: all four `/thank-you` states,
+   all four `/complete` states, the `?rt=` return link with its `data-cta` attributes, and the
+   `LEAD_NURTURE_ENABLED` copy fork. **§4d.**
+
+6. **The `/complete` "server crash" flag in the handoff docs is closed, and was never ours.**
+   `tmp/design_migration/reports/08_specialist_widget.md` §1.2 quotes
+   `CONTEXT_SUMMARY_SESSION10.md`: 22 entrypoints (the `/complete` page plus 21 `/api/leads/*`
+   and `/api/cron/*` routes) imported lead-nurture modules **missing from the designer's
+   vendored snapshot**, which poisoned their dev server and failed their production build.
+   Our monorepo has the real package. Verified: all nine modules present under
+   `packages/web-shared/lead-nurture/`; `check_dependency_closure.py` PASSES across 19 sites;
+   `/complete` returns 200 on no token, garbage token, malformed token and a real-shaped prod
+   token; all 25 API routes answer (`submit` 400 on empty body, `book` 401, `booking-viewed`
+   200) with no 503 stubs; and nothing is poisoned afterwards. Worth knowing: `/complete` has
+   a second plausible 500 path in that `verifyLeadToken` is called outside any try/catch, but
+   it is safe because the shared module catches the missing-secret throw internally
+   (`tokens.ts:105-109`) and returns `bad-signature`. A comment now says so at the call site.
+
+**Four defects found by auditing the new pages against §0, three of them self-inflicted the
+same day. Recorded because the pattern matters more than the fixes:**
+
+- **A `max-w-2xl` column is a clamp.** The first pass at `/book` and `/complete` put the
+  picker and the form in a narrow column under a full-width heading, and wrote that into §4d
+  as a legitimate carve-out. It was not one: a lone narrow column leaves half the container
+  empty, which is the defect §0.1 exists to stop, reached by a different route. All three
+  pages now run `lg:grid-cols-[1.6fr_1fr]` with `WhatToExpectCard` in the second column, the
+  `/contact` anatomy. §0.1 now says the fix for a lost-looking form is a second column, never
+  a clamp.
+- **Three closing sections shipped as prose plus a button row**, breaking §0.2, the rule the
+  same session had just written. They now carry a `RelatedArticles` grid or fold into the
+  reassurance column.
+- **`/thank-you` without a token offered "Ready to book a time?" pointing at `/contact`**,
+  which is the form the reader had just submitted. A CTA whose only destination is the thing
+  already done is worse than no CTA.
+- **Two claims written on `/complete` were false** and were caught before leaving the working
+  tree: "we never pass your details on without telling you first" and "no marketing list".
+  `/privacy-policy` §5 discloses that **up to six firms** may receive an enquiry, three
+  accountancy or tax and three in related professions. The card links to the policy now
+  instead of paraphrasing it. **Reassurance copy beside a data-capture field must be checked
+  against the privacy policy, every time.**
+
+**One deliberate §0.2 exemption, the only one on the site:** the opt-out branch of
+`/thank-you` has no visual. A reading grid in front of someone who has just asked us to stop
+would be the wrong read.
+
+**New files this session:** `components/property/MarketingSections.tsx`,
+`components/property/WhatToExpectCard.tsx`, `components/ui/SlimHero.tsx`,
+`components/ui/NoticeCard.tsx`, `src/tests/hub-article-crawl-path.test.ts`.
+
+**Not done, and deliberately so:** §0 is enforced by review, not by tests. The only guarded
+rules are the two crawl paths (`calculator-tabs-crawl-path.test.ts`,
+`hub-article-crawl-path.test.ts`). The container rule and the
+missing-`ExampleFigureNote` case could both be source scans and are not written yet. Also
+left alone: two pre-existing lint warnings in `BookingPicker.tsx` (`useEffect` missing `token`
+dep) and, until this session touched it, `book/page.tsx`.
+
+---
+
+### 0.22b Second owner review session — 2026-08-23 evening, UNCOMMITTED
+
+Same branch, same dev-server walk, six more surfaces. The rules this session produced are all
+written into `DESIGN_SYSTEM.md` (new sections 4a and 4b, plus additions to 2, 6 and 9). Read
+that file before touching any of these pages: the whole point of the session was to stop
+these decisions being re-litigated page by page.
+
+**The three standing rules the owner set, in his own framing:**
+
+1. **A calculator never gets a card.** Where a related-reading row would carry a
+   `/calculators/<slug>` card, or a section would carry a link to one, render the tool itself
+   as a `CalculatorTabs` block on the page. `CalculatorTabs` gained three registry-backed
+   keys for this (`costofselling`, `rentalyield`, `rentalincome`) on the `bprapr` pattern.
+   **Every page doing this still owes `calculator-tabs-crawl-path.test.ts` one literal
+   `<a href="/calculators/...">` in its own markup**, because that guard is a source scan and
+   cannot see through a constant or an array. Each such link carries a comment saying so.
+2. **Every section carries a visual.** No body section on a topic or resource page ships as
+   prose alone. Section 4a of `DESIGN_SYSTEM.md` has the three-part rule; the part that keeps
+   getting missed is that ground alternation applies to the FIGURE's own surface, so a figure
+   on a white section takes `bg-slate-50` and on a slate section takes `bg-white`.
+3. **A bare button is not a CTA block.** Statement left, button right, stacking on mobile.
+
+**What changed, page by page:**
+
+- **`/cost-of-selling-a-property`** — 9 figures, one per section, in new
+  `components/property/cost-of-selling-figures.tsx`. Every pound figure is DERIVED from
+  `DEFAULT_SALE_PRICE` and `DEFAULT_AGENT_FEE_PCT`, newly exported from
+  `lib/calculators/tools/cost-of-selling-calculator.ts`, and rounded by a local `money(n, step)`
+  to the precision the prose beside it uses, so a figure cannot contradict its paragraph. Its
+  own calculator and the stamp duty calculator are now on-page tabs; the hero secondary
+  scrolls to `#calculator` instead of leaving the site; the closing bare button became the CTA
+  card.
+- **`/for-letting-agents`** — hero standfirst rewritten for conversion (was descriptive: "This
+  page is for letting and estate agents"). Hero secondary scrolls to `#calculators`. Seven
+  figures in new `letting-agents-figures.tsx`. The five `CalculatorLinkCards` became five
+  tabs, and **the section's copy moved with them**: it said "send one instead of doing the sum
+  on the back of a viewing sheet", which a `<button role="tab">` cannot honour. The embed
+  section is now `EmbedDeliverables`, a full-bleed navy brick band (owner: it is a
+  deliverable, make it look like one).
+- **`/property-tax-rates`** — 7 figures in new `rates-figures.tsx`. **The band arrays in that
+  file are the single source the page's rate TABLES are built from as well as the ladders**,
+  so a table and the figure beside it cannot disagree. The ladders carry what a table
+  structurally cannot: main bands are marginal, the SDLT 5% surcharge and the Scottish 8% ADS
+  land on the whole price, corporation tax's middle zone is effectively HIGHER than its top
+  rate, and the MTD threshold falls in three steps. `RateWedge` gained its second consumer
+  rather than a new component being written.
+- **`/landlord-tax`** — 6 figures in new `landlord-tax-figures.tsx` for the sections still on
+  prose. The headline one is `EffectiveRate`: 40% assumed against about 47% actual and near
+  49% in 2027/28, every percentage derived from the worked example's own £11,000 / £5,146 /
+  £5,366. `MtdStaircase` is REUSED from `rates-figures.tsx` on the navy band rather than
+  copied.
+- **`/research/landlord-tax-index`** — rebuilt on the standard skeleton. It was the last page
+  still shipping the pre-redesign one: a flat `bg-slate-900` hero with four stat tiles and no
+  CTA, a single white body block inside a `max-w-4xl` wrapper with `rounded-2xl border` cards,
+  a mint gradient card holding a bare `LeadForm`, and a hand-rolled FAQ. Now: brick hero with
+  a primary green CTA to `#book`, seven `TopicSection`s alternating white and slate, the four
+  stat tiles moved into the Headline numbers section that sources and caveats them, the two
+  calculator links as tabs, `LeadCTAPanel` and `FaqSection`. Section 4b of `DESIGN_SYSTEM.md`
+  is that skeleton written down so the next page does not have to rediscover it.
+
+**Open, and NOT done:**
+
+1. **Commit and push.** 62 files, no commits yet. CI has not run on any of it. The owner
+   declined a commit when asked (2026-08-23, "skip the commit, edit now"), so this is a
+   known and accepted exposure, not an oversight.
+2. **`CalculatorLinkCards` now has zero render consumers**, its five-card block on
+   `/for-letting-agents` having been the last. It is deliberately NOT deleted:
+   `calculator-tabs-crawl-path.test.ts` names it in both its predicate and its failure message
+   as the remedy for a page that has lost its per-tool links. Deleting it means rewriting that
+   guard's advice in the same commit.
+3. **The rose-red X for "does not apply to you"** on `/landlord-tax` (Section 24 scope list
+   and the IHT points list) and on `/section-24` contradicts figure rule 5 (neutral dash,
+   never a red cross, where nobody is doing anything wrong). Both files carry comments saying
+   the rose is deliberate so each page has one negation colour. Flagged to the owner, not
+   changed, because it is a two-page change that was not asked for.
+4. **The 24 calculator-to-calculator related cards on five `/calculators/<slug>` pages** are
+   untouched. The owner was asked whether rule 1 reaches them and chose not to extend it
+   there, because converting would embed a second full calculator below the first.
+5. Everything in the 0.22a list below still stands, including the Phase 9 deploy conditions.
+
+---
+
+### 0.22a First owner review session — 2026-08-23, the earlier pass
+
+What follows is the first session of the day. It is unchanged by 0.22b except where 0.22b
+says otherwise, and its own "Open, and NOT done" list at the end is still live.
+
+**Site-wide component changes.** These are the ones that reach beyond a single page:
+
+- **One related-article card, everywhere.** New `components/blog/RelatedArticles.tsx`
+  replaced four different designs with three different hover treatments. Green hover glow
+  (`.related-card` in `globals.css`), a pill saying what the destination is (Article /
+  Calculator / Guide / Service, derived from the href, never chosen), and the article's
+  opening sentence via new `firstSentence()` in `lib/blog.ts`. **Zero instances of the old
+  inline underlined link list remain anywhere on the site.**
+- **New `lib/page-summaries.ts`.** One sentence per non-article route, imported by the owning
+  page for its own hero AND read by the cards, so a hero edit cannot leave a card describing
+  the old page.
+- **`TopicSection` now defaults `linksAs="cards"`**, so all five topic pillars picked the
+  cards up at once. Gained a `figure` slot and a per-link `kind`.
+- **web-shared, twice, both opt-in with the old behaviour as the default** (see
+  DESIGN_SYSTEM.md §1): `btnPrimary` corner radius became `--btn-radius`, and
+  `tools/components/Calculator.tsx` gained an `eyebrow` slot so Property's generic calculators
+  head themselves with `<Eyebrow>` instead of the black tag. **17 other sites unaffected.**
+- **`CalculatorTabs` gained a `bprapr` tab backed by a generic registry tool** rather than a
+  bespoke component. That is now the route for any registry tool wanting a tab.
+- **On-page primary green CTAs now scroll to the on-page form** (`#book`); only the header CTA
+  and the sticky banner still leave for `/contact`. `hero_primary` in `niche.config.json`
+  changed with them.
+- Smaller shared additions: `DrawnTickList` `tickClassName` (its emerald-400 default is ~1.9:1
+  on white), `ExampleFigureNote` optional lead-in so two fine-print lines set as one,
+  `PromptMarquee` `detail` plus an auto-taller viewport.
+
+**Deletions and factual corrections worth knowing:**
+
+- **`MTDCountdown` deleted outright** (component and both mounts), owner call.
+- **Section 162 relief is no longer described as automatic.** `/incorporation` said "the relief
+  is automatic, which means you do not claim it" in body copy and an FAQ. That has been wrong
+  since **6 April 2026**: house positions §5 (locked 2026-06-01, source-verified at
+  legislation.gov.uk) records FA 2026 making it claim-only, due by the first anniversary of the
+  31 January following the tax year of the transfer. A reader who believed the old wording
+  would have lost the relief outright. Every other page already carried the corrected wording;
+  `/incorporation` was the outlier.
+- **Calculator link cards removed from `/services/property-accountant`,
+  `/services/property-tax-advice` and `/section-24`**, owner-directed and reaffirmed. The first
+  two now emit **zero** in-body links to any specific `/calculators/<slug>` and are listed in
+  `OWNER_REMOVED_INBODY_LINKS` in `calculator-tabs-crawl-path.test.ts` with the cost written
+  down. `/section-24` keeps an in-prose calculator link and needs no exemption.
+  `/calculators/mtd-checker` is the one to watch: it already takes zero in-body links from all
+  760 blog posts.
+- **All eight `/resources` guide summaries rewritten** for conversion rather than description.
+  Those pages are noindex by design, so there is no meta-description cost.
+
+**Nav fix + new guards.** Dropdown children used the same prefix predicate as the top-level
+trigger, so on `/services/property-accountant` both "All services" and "Property accountant"
+lit green. Children now match exactly. New `tests/nav-active-state.test.ts` asserts exactly one
+child lights per page, and includes an assertion proving the guard is not vacuous. New
+`tests/first-sentence.test.ts` runs the excerpt extractor over all 783 posts.
+
+**Pages given figures this session.** `/leasehold` (7 figures, new
+`components/property/leasehold-figures.tsx`), `/landlord-compliance` (12,
+`compliance-figures.tsx`), `/landed-estates` (5, `estate-figures.tsx`), plus `SdltMarketValue`
+and `IncorporationReliefGates` on `/incorporation` and `Section24Wedge` finally wired to
+`/section-24`, the page its own docstring was written for. **Every figure re-presents existing
+copy and invents no fact**; the SDLT and allowance figures derive every number from
+`lib/sdlt.ts` and from constants so they cannot drift from the prose beside them.
+
+**Open, and NOT done:**
+
+1. **Commit and push.** 52 files, no commits yet. CI has not run on any of it.
+2. **Re-run the full Phase 8 gate** before deploy: `next build`, calculator goldens,
+   `check_dependency_closure.py`, `predeploy_gate.py --site property`, sweep, `browser_check`.
+3. Phase 9 deploy remains owner-triggered, with DECISION A1 and the embedder referrer check
+   still carrying into it, exactly as recorded above.
+4. `scripts/validate_palette.js` is referenced by `RateWedge` and `SdltMarketValue` and **does
+   not exist**. Contrast was measured by hand.
+5. `PageResultCta.tsx` still has **zero consumers** despite a docstring claiming it runs on the
+   homepage.
+6. On `/incorporation` the "Services" nav trigger does not highlight, because that route sits
+   outside `/services/` while being listed in that dropdown. Pre-existing, not touched.
+7. `/calculators/incorporation-cost-calculator` describes s.162 without the claim requirement.
+   Not wrong, incomplete on the same point corrected above.
+8. The 2x2 `CalculatorLinkCards` module still renders on `/for-letting-agents`.
+
 ---
 
 ## 0.21 Wave 12 cost-of-selling (Phase E, Track B) — EXECUTED 2026-08-21 NIGHT, deploy owner-gated

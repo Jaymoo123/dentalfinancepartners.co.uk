@@ -5,6 +5,20 @@ import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { TopicHero, TopicSection } from "@/components/property/TopicSection";
+import {
+  CommercialSplit,
+  ComplianceCostSummary,
+  ComplianceCycles,
+  ComplianceDuties,
+  DeductibilityBuckets,
+  EicrCodes,
+  EnergyRegimes,
+  FireScope,
+  GasWindow,
+  HorizonList,
+  LicensingSchemes,
+  PenaltyScale,
+} from "@/components/property/compliance-figures";
 import { btnOnCream, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
@@ -143,6 +157,29 @@ const costs = [
     price: "Capped at £3,500 including VAT",
     cycle: "Only where the property is below band E",
     spread: "One-off, and usually capital rather than revenue",
+  },
+];
+
+/**
+ * What is coming but is not law. Both entries are the section's own paragraphs,
+ * split at their natural join. Keep them OUT of any "current duties" list: the
+ * whole point of the section is that a reader must not plan against them.
+ */
+const horizon = [
+  {
+    title: "Renters' Rights Act 2025",
+    detail:
+      "Adds a redress scheme obligation and a private rented sector database, and extends the rent repayment order window. Commencement is being phased, so the operative question for any given duty is which provisions have actually been brought into force rather than what the Act says on its face.",
+  },
+  {
+    title: "The Decent Homes Standard for the PRS",
+    detail:
+      "Preliminary provisions only, with the substantive standard awaiting a further statutory instrument.",
+  },
+  {
+    title: "EPC C by 2030, and EPC C or B for commercial",
+    detail:
+      "Consultation and policy positions. Neither has been laid as a statutory instrument. Treat them as a direction of travel that should shape what you do at the next refurbishment or the next purchase, and treat band E as the line that is actually enforceable today.",
   },
 ];
 
@@ -321,28 +358,11 @@ export default function LandlordCompliancePage() {
           have almost nothing in common except that they all land on the same person and all get budgeted for
           out of the same rent.
         </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>Gas.</strong> An annual safety check of every gas appliance and flue by a Gas Safe
-            registered engineer, with the record supplied to tenants and retained.
-          </li>
-          <li>
-            <strong>Electrical.</strong> Inspection and testing of the fixed installation by a qualified person
-            at least every five years, producing the EICR, with any remedial work completed within 28 days.
-          </li>
-          <li>
-            <strong>Energy.</strong> A valid EPC before the property is marketed or let, and a rating of at
-            least band E unless a valid exemption is registered.
-          </li>
-          <li>
-            <strong>Fire.</strong> A suitable and sufficient fire risk assessment, where the property is an HMO
-            or the building has common parts, plus smoke and carbon monoxide alarms in every let.
-          </li>
-          <li>
-            <strong>Licensing.</strong> A licence where the property is a larger HMO anywhere in England, or
-            sits inside a council designation for additional or selective licensing.
-          </li>
-        </ul>
+        {/* The five duties were a bulleted list, which is the one shape that
+            makes five separate statutory regimes look like one list. Each is now
+            a card carrying its own cycle and its own enforcement track, which is
+            the section's actual argument. Bodies verbatim. */}
+        <ComplianceDuties />
         <p>
           One thing worth naming early, because it is the most common misreading: the EICR is the report. There
           is no separate document called an electrical safety certificate in law. When an agent or a council
@@ -361,6 +381,9 @@ export default function LandlordCompliancePage() {
           every five, an EPC every ten, and a licence on a term the council sets. Most landlords who get caught
           out were not ignoring the rules, they lost track of one date.
         </p>
+        {/* The misalignment the paragraph above just claimed, drawn before the
+            table states it row by row. */}
+        <ComplianceCycles />
         <div className="overflow-x-auto rounded-xl bg-white p-5 sm:p-6">
           <table className="w-full border-collapse text-sm">
             <thead>
@@ -467,20 +490,9 @@ export default function LandlordCompliancePage() {
           </table>
           <ExampleFigureNote className="mt-3" />
         </div>
-        <p>
-          On a gas-heated single let with no licensing requirement, the certificates themselves come to roughly{" "}
-          <strong>£90 to £200 a year</strong> once the five-year and ten-year items are spread across their
-          cycles. That is not the number that hurts. The number that hurts is remedial work: an unsatisfactory
-          EICR can trigger anything from a £100 socket repair to a four-figure rewire, and a fire risk
-          assessment action plan is open-ended by design.
-        </p>
-        <p>
-          Two levers genuinely reduce the bill. The first is bundling: a CP12 taken with a boiler service
-          typically lands between £110 and £160, against £60 to £120 for the check alone, and assessors who
-          carry out more than one inspection in a single visit usually price the second one lower. The second
-          is booking direct rather than through an agent, where the markup is often the largest single
-          component of the quote.
-        </p>
+        {/* The two figures this section actually lands on, and the two levers,
+            which were the last two paragraphs. Every number is theirs. */}
+        <ComplianceCostSummary />
       </TopicSection>
 
       <TopicSection
@@ -496,6 +508,11 @@ export default function LandlordCompliancePage() {
           separate regimes with separate enforcement, so an unlicensed and uncertified property can attract
           both.
         </p>
+        {/* Current caps on one line, before the per-breach detail. The section
+            opens by warning that much of the guidance online is stale, which is
+            the argument for putting the live numbers where they cannot be
+            missed. */}
+        <PenaltyScale />
         <div className="space-y-5">
           {penalties.map((p) => (
             <div key={p.breach} className="rounded-xl bg-white p-6 sm:p-8">
@@ -519,8 +536,12 @@ export default function LandlordCompliancePage() {
         eyebrow="Three buckets"
         title="What is deductible, what is capital, and what gets no relief at all"
         links={[
-          { href: "/landlord-tax", label: "Landlord tax guide" },
-          { href: "/section-24", label: "Section 24 explained" },
+          // Both are top-level pillar routes, so the href-derived pill rule
+          // gives them nothing and their cards rendered bare beside the blog
+          // card's Article pill and excerpt. `kind` supplies the pill and
+          // `PAGE_SUMMARIES` supplies the sentence, so all three now match.
+          { href: "/landlord-tax", label: "Landlord tax guide", kind: "guide" },
+          { href: "/section-24", label: "Section 24 explained", kind: "guide" },
           {
             href: "/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords",
             label: "Are HMO licensing fees deductible",
@@ -531,50 +552,11 @@ export default function LandlordCompliancePage() {
           This is the part most compliance guidance skips, and it is where the money is. Every compliance
           pound falls into one of three buckets, and they are treated completely differently.
         </p>
-        <div className="overflow-x-auto rounded-xl bg-slate-50 p-5 sm:p-6">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="border-b-2 border-slate-300 text-left">
-                <th className="py-2 pr-4 font-bold text-slate-900">Bucket</th>
-                <th className="py-2 pr-4 font-bold text-slate-900">Examples</th>
-                <th className="py-2 font-bold text-slate-900">Treatment</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b border-slate-200">
-                <td className="py-2 pr-4 font-semibold text-slate-900">Revenue</td>
-                <td className="py-2 pr-4 text-slate-700">
-                  CP12 fee, EICR fee, EPC fee, fire risk assessment fee, licence fee, alarm servicing,
-                  like-for-like repairs the inspection flags
-                </td>
-                <td className="py-2 text-slate-700">
-                  Deducted against rental profit in the year incurred, under ITTOIA 2005 s.272
-                </td>
-              </tr>
-              <tr className="border-b border-slate-200">
-                <td className="py-2 pr-4 font-semibold text-slate-900">Capital</td>
-                <td className="py-2 pr-4 text-slate-700">
-                  A first-time full rewire that materially upgrades the installation, a new alarm or
-                  compartmentation system, insulation and glazing that lift the EPC band
-                </td>
-                <td className="py-2 text-slate-700">
-                  Added to the base cost and relieved against capital gains tax on sale, under TCGA 1992
-                  s.38(1)(b)
-                </td>
-              </tr>
-              <tr className="border-b border-slate-200">
-                <td className="py-2 pr-4 font-semibold text-slate-900">No relief</td>
-                <td className="py-2 pr-4 text-slate-700">
-                  Civil penalties, penalty charge notices, criminal fines, rent repayment orders
-                </td>
-                <td className="py-2 text-slate-700">
-                  Not incurred wholly and exclusively for the business, so nothing is deductible. HMRC sets
-                  this out at BIM38500 onwards
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        {/* The three-row table became three cards. A table gave all three the
+            same weight; the section's point is that they are treated completely
+            differently, so the headline on each card is that answer. Examples
+            and statutory references are carried verbatim. */}
+        <DeductibilityBuckets />
         <p>
           The line between the first two buckets is <strong>repair against improvement</strong>, and it is the
           single most common source of amended returns in this area. Restoring the installation to the
@@ -600,15 +582,26 @@ export default function LandlordCompliancePage() {
           of up to five years. Landlords sometimes spread it across the term in their own accounts, which
           understates the deduction in year one and creates a reconciliation problem later.
         </p>
-        <Link
-          href="#book"
-          data-cta="compliance_tax_book"
-          data-cta-placement="tax"
-          data-cta-goal="form"
-          className={`${btnPrimary} w-full sm:w-auto`}
-        >
-          Have the compliance bill checked
-        </Link>
+        {/* The bare button became the prompt-and-button block /incorporation
+            uses at the foot of its own two-lists section. Same recipe exactly:
+            white card, hairline ring, statement on the left, CTA on the right.
+            A button alone asks for the click without saying why now; the line
+            beside it is the reason, and here the reason is the repair-against-
+            improvement split the section has just spent four paragraphs on. */}
+        <div className="mt-10 rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+          <p className="text-base font-bold text-slate-900 sm:text-lg">
+            Not sure which bucket your last invoice falls in? That line is worth getting right once.
+          </p>
+          <Link
+            href="#book"
+            data-cta="compliance_tax_book"
+            data-cta-placement="tax"
+            data-cta-goal="form"
+            className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+          >
+            Book a consultation
+          </Link>
+        </div>
       </TopicSection>
 
       <TopicSection
@@ -634,12 +627,10 @@ export default function LandlordCompliancePage() {
           through a civil penalty regime, which is why no fixed fine figure exists to plan against and why the
           figures circulating in agent guidance should be treated with suspicion.
         </p>
-        <p>
-          The most useful operational detail is regulation 36A: a check carried out in the two months before
-          the deadline date is treated as made on the deadline date. That is what lets you fix both the price
-          and the renewal date in advance without shortening the cycle, and it is the reason the annual check
-          is often described as a ten to twelve month job rather than a strict twelve.
-        </p>
+        {/* Regulation 36A drawn rather than described. It is the section's one
+            genuinely useful operational detail and it was buried mid-paragraph;
+            a rule about dates belongs on a bar. Copy carried through. */}
+        <GasWindow />
       </TopicSection>
 
       <TopicSection
@@ -665,6 +656,10 @@ export default function LandlordCompliancePage() {
           further investigation required. Any of the three makes the report unsatisfactory and starts the
           28-day remedial clock.
         </p>
+        {/* The three codes and the clock they start. A reader holding a report
+            is looking for their own code and should not have to read a
+            paragraph to find it. */}
+        <EicrCodes />
         <p>
           A narrow set of tenancies is excluded from the regime by Schedule 1, including long leases of seven
           years or more, lodger arrangements where the occupier shares amenities with the landlord, student
@@ -699,20 +694,16 @@ export default function LandlordCompliancePage() {
         ]}
       >
         <p>
-          Two separate statutes are involved here and merging them causes real errors. The Energy Performance
-          of Buildings (England and Wales) Regulations 2012 answer the question{" "}
-          <em>must a certificate exist for this transaction</em>: an EPC before marketing, made available free
-          of charge to a prospective tenant, valid for ten years from the date it went on the register. The
-          Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 answer a different
-          question: <em>is the band good enough to let</em>.
+          Two separate statutes are involved here, and merging them causes real errors. They answer different
+          questions.
         </p>
+        {/* Two questions, two cards. The section warns that these get merged, so
+            drawing them apart is the correction. Band E and the £3,500 cap sit
+            under the second, because that is the regulation they belong to. */}
+        <EnergyRegimes />
         <p>
-          The answer to the second question is band E. Letting a domestic property rated F or G has been
-          prohibited for new tenancies since 1 April 2018 and for all continuing lets since 1 April 2020,
-          unless a valid exemption is registered on the PRS Exemptions Register. Where the property cannot
-          reach band E within the <strong>£3,500 including VAT</strong> cost cap, an exemption can be
-          registered on that basis. Most exemption classes run for five years; the temporary exemption for
-          someone who has recently become a landlord runs for six months.
+          Most exemption classes run for five years; the temporary exemption for someone who has recently become a
+          landlord runs for six months.
         </p>
         <p>
           Before booking anything, search the national register. An EPC lasts ten years and survives both a
@@ -737,12 +728,16 @@ export default function LandlordCompliancePage() {
         ]}
       >
         <p>
-          The Regulatory Reform (Fire Safety) Order 2005 applies to HMOs and to the common parts of buildings
-          containing two or more sets of domestic premises. It does not apply inside a single self-contained
-          house let to one household, and any guide telling you every rental needs a fire risk assessment is
-          wrong. Where it does apply, the responsible person must make a suitable and sufficient assessment
+          The Regulatory Reform (Fire Safety) Order 2005 does not reach every rental, and any guide telling you it
+          does is wrong. Where it does apply, the responsible person must make a suitable and sufficient assessment
           and, since October 2023, record it in full rather than recording significant findings only.
         </p>
+        {/* Where it applies and where it does not, drawn side by side, because
+            the section says in terms that most guides get this wrong. Neutral
+            dash rather than a cross on the second column: nothing is being done
+            wrong there. The alarms duty follows, since it is the one that IS in
+            every let. */}
+        <FireScope />
         <p>
           Who pays depends on the building. An HMO landlord bears their own assessment cost and deducts it as
           a revenue expense. In a block, the freeholder or managing agent procures the assessment and recovers
@@ -750,11 +745,8 @@ export default function LandlordCompliancePage() {
           right to manage company that has taken over management procures and recharges it in the same way.
         </p>
         <p>
-          Separately, and in every let, the Smoke and Carbon Monoxide Alarm (England) Regulations 2015 require
-          a smoke alarm on each storey with living accommodation, carbon monoxide alarms in rooms with a
-          qualifying combustion appliance, and a working-order check on the day the tenancy begins. Failure
-          carries a penalty of up to £5,000 under regulation 8(2). Check the current wording of regulation 4
-          before assuming the carbon monoxide scope, because it has been amended.
+          Check the current wording of regulation 4 before assuming the carbon monoxide scope, because it has been
+          amended.
         </p>
       </TopicSection>
 
@@ -778,14 +770,9 @@ export default function LandlordCompliancePage() {
           },
         ]}
       >
-        <p>
-          England runs three licensing regimes under the Housing Act 2004.{" "}
-          <strong>Mandatory HMO licensing</strong> applies nationwide to any HMO occupied by five or more
-          people forming two or more households, regardless of what the council has designated.{" "}
-          <strong>Additional HMO licensing</strong> catches smaller shared houses, but only inside an area the
-          council has designated. <strong>Selective licensing</strong> catches every private rental inside a
-          designated area, including an ordinary single-family let with no sharing at all.
-        </p>
+        <p>England runs three licensing regimes under the Housing Act 2004.</p>
+        {/* Three schemes, three cards, each saying where it bites. */}
+        <LicensingSchemes />
         <p>
           Which one applies turns on four facts you can check quickly: how many people live there, how many
           households they form, which council area the property sits in, and whether that council has a live
@@ -793,11 +780,9 @@ export default function LandlordCompliancePage() {
           ended last year does not bind you and one that started last month does.
         </p>
         <p>
-          Fees vary widely and are set locally. Mandatory HMO licences commonly run from around £600 to
-          £1,900, and selective licences from around £500 to £1,000, usually split between a payment on
-          application and a second payment on grant. Read them per year of term rather than as a headline: a
-          £704 selective licence over a five-year term is about £141 a year, which is the figure to compare
-          against your other recurring compliance costs.
+          Fees vary widely and are set locally. Mandatory HMO licences commonly run from around £600 to £1,900, and
+          selective licences from around £500 to £1,000, usually split between a payment on application and a second
+          payment on grant.
         </p>
       </TopicSection>
 
@@ -821,19 +806,18 @@ export default function LandlordCompliancePage() {
         ]}
       >
         <p>
-          If you let non-domestic property, do not import the figures above. The £3,500 cost cap is a domestic
-          concept only. On the commercial side the equivalent filter is a seven-year simple payback test:
-          improvements that do not pay for themselves in energy savings within seven years are not relevant
-          improvements, and an exemption can be registered where all relevant improvements have been made or
-          none can be.
+          If you let non-domestic property, do not import the figures above. Four things behave differently, and
+          each of them is a mistake someone makes every year.
         </p>
+        {/* Side by side, because the section's whole instruction is "do not
+            import the figures above" and four contrasts spread across two
+            paragraphs is exactly the shape that produces the mistake it warns
+            about. Every pair is theirs. */}
+        <CommercialSplit />
         <p>
-          The penalties are structured differently too. Commercial MEES penalties are linked to rateable
-          value, with a split between breaches under three months and breaches of three months or more, and the
-          non-dwelling EPC penalty is a percentage of rateable value rather than the £200 fixed notice a
-          dwelling attracts. Capital allowances also behave differently: commercial property sits outside the
-          dwelling-house restriction that blocks plant and machinery claims inside a residential let, so the
-          plant within an energy upgrade can often be claimed.
+          On the commercial side the payback filter works like this: improvements that do not pay for themselves in
+          energy savings within seven years are not relevant improvements, and an exemption can be registered where
+          all relevant improvements have been made or none can be.
         </p>
       </TopicSection>
 
@@ -855,20 +839,13 @@ export default function LandlordCompliancePage() {
         ]}
       >
         <p>
-          Beyond the certificates, the Renters&apos; Rights Act 2025 adds a redress scheme obligation and a
-          private rented sector database, and extends the rent repayment order window. Commencement is being
-          phased, so the operative question for any given duty is which provisions have actually been brought
-          into force rather than what the Act says on its face. The Decent Homes Standard is on the same
-          footing: preliminary provisions only, with the substantive standard awaiting a further statutory
-          instrument.
+          None of the following is in force. The operative question for any given duty is which provisions have
+          actually been brought into force, rather than what an Act says on its face.
         </p>
-        <p>
-          The same discipline applies to the energy trajectory. EPC C by 2030 for domestic property, and EPC C
-          or B for commercial, are consultation and policy positions. Neither has been laid as a statutory
-          instrument. The planning answer is to treat them as a direction of travel that should shape what you
-          do at the next refurbishment or the next purchase, and to treat band E as the line that is actually
-          enforceable today.
-        </p>
+        {/* The same hollow-marker rail /leasehold uses for uncommenced law, for
+            the same reason: these are real, dated-looking obligations that a
+            reader could easily mistake for current ones. */}
+        <HorizonList items={horizon} />
         <p>
           For how the compliance bill fits into the wider tax position on a portfolio, see our{" "}
           <Link href="/landlord-tax" className="font-semibold text-emerald-700 hover:text-emerald-800">

@@ -92,7 +92,7 @@ export function ProblemStatement() {
               a generalist for a specialist job.
             </p>
             <Link
-              href="/contact"
+              href="#book"
               data-cta="problem_book"
               data-cta-placement="problem_statement"
               data-cta-goal="form"

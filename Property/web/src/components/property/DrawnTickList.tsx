@@ -30,7 +30,23 @@ const TICK_LENGTH = 24;
 
 const STAGGER_MS = 110;
 
-export function DrawnTickList({ items, className = "" }: { items: string[]; className?: string }) {
+export function DrawnTickList({
+  items,
+  className = "",
+  tickClassName = "text-emerald-400",
+}: {
+  items: string[];
+  className?: string;
+  /**
+   * Tick colour. Defaults to emerald-400, which is tuned for the navy
+   * deliverables bands this list was written for and washes out badly on white
+   * (roughly 1.9:1). A caller rendering on a light ground should pass
+   * `text-emerald-600`, which measures 4.54:1. The mark is `aria-hidden`, so
+   * this is legibility rather than an AA text requirement, but a tick nobody can
+   * see is not doing the job either way.
+   */
+  tickClassName?: string;
+}) {
   const ref = useRef<HTMLUListElement>(null);
   const [drawn, setDrawn] = useState(false);
 
@@ -64,7 +80,7 @@ export function DrawnTickList({ items, className = "" }: { items: string[]; clas
             aria-hidden
             viewBox="0 0 24 24"
             fill="none"
-            className="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-400 sm:h-6 sm:w-6"
+            className={`mt-0.5 h-5 w-5 flex-shrink-0 sm:h-6 sm:w-6 ${tickClassName}`}
           >
             <path
               d={TICK_PATH}

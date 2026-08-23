@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { TopicHero, TopicSection } from "@/components/property/TopicSection";
+import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { InlineLink } from "@/components/ui/page-blocks";
+import {
+  AlternativeRoutes,
+  BillSides,
+  BillStack,
+  DeductibleSplit,
+  FeeSpread,
+  NegotiationGap,
+  ProbateOrder,
+  RouteCompare,
+  SaleTimeline,
+} from "@/components/property/cost-of-selling-figures";
 import { btnOnCream, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
@@ -35,7 +47,10 @@ export const metadata: Metadata = {
 // slugifyCategory() in src/lib/blog.ts. Do not guess these.
 const CGT = "/blog/capital-gains-tax";
 const LTE = "/blog/landlord-tax-essentials";
-const CALC = "/calculators/cost-of-selling-calculator";
+// No `CALC` constant any more. The calculator is rendered on the page as a tab
+// and its one crawlable link is spelled out literally in the markup, because
+// `calculator-tabs-crawl-path.test.ts` is a source scan and cannot see through
+// a constant.
 
 /**
  * The at-a-glance box. Every figure carries a named, dated source in the note
@@ -182,8 +197,12 @@ export default function CostOfSellingAPropertyPage() {
           </Link>
         }
         secondary={
+          /* Owner, 2026-08-23: the secondary sends the reader to the calculator
+             ON THIS PAGE rather than out to /calculators/<slug>. The tool is the
+             same registry tool either way, and keeping the reader here keeps
+             them in front of the form at the foot. */
           <Link
-            href={CALC}
+            href="#calculator"
             data-cta="selling_hero_calculator"
             data-cta-placement="hero"
             className={`${btnOnCream} px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
@@ -203,21 +222,15 @@ export default function CostOfSellingAPropertyPage() {
           total will land somewhere near it, and the commission line is the only one big enough to be worth an
           argument.
         </p>
-        {/* Designer figure-card treatment on the white ground: a slate
-            card at the site radius rather than a hairline-bordered box,
-            with the owner rule-33 note beneath. Every row here is a
-            displayed money figure, which is what the note is for. */}
-        <dl className="rounded-xl bg-slate-50 p-5 sm:p-6">
-          {atAGlance.map((row) => (
-            <div key={row.label} className="border-b border-slate-200 py-3 first:pt-0 last:border-b-0 last:pb-0">
-              <dt className="font-bold text-slate-900">
-                {row.label}: <span className="text-emerald-700">{row.figure}</span>
-              </dt>
-              <dd className="mt-1 text-sm text-slate-700">{row.condition}</dd>
-            </div>
-          ))}
-          <ExampleFigureNote className="mt-4" />
-        </dl>
+        {/* Inline rather than in the `figure` slot, which renders after all the
+            prose: this one belongs where the old `dl` stood, between the opening
+            claim and the paragraphs that read off it. Same carve-out `PremiumStack`
+            takes on /leasehold. The rows are unchanged and are passed in rather
+            than copied, because the sourcing in their `condition` cells is the
+            differentiator on this SERP; what changed is that they now sit under a
+            single bar split by share, because the section's claim is not "six
+            costs" but "one of the six is three quarters of the money". */}
+        <BillStack rows={atAGlance} />
         <p>
           Add the first four lines together and you get about £5,500: £4,160 of commission, £700 of conveyancing,
           £80 for an EPC and £550 for the van. That is the number to put in your spreadsheet before you speak to
@@ -250,6 +263,11 @@ export default function CostOfSellingAPropertyPage() {
           { href: `${CGT}/average-london-estate-agent-fees`, label: "What London agents charge" },
           { href: `${CGT}/estate-agent-fees-for-renting`, label: "Letting agent fees, if you are a landlord" },
         ]}
+        /* The three published averages, on one axis. Prose can only list numbers one
+           after another, which is what every page outranking us does; on a shared
+           scale the 1.3-versus-1.42 disagreement turns out to be trivial next to
+           the 1.2-to-3.6 spread, which is the section's actual point. */
+        figure={<FeeSpread />}
       >
         <p>
           Three sources publish an average and none of them agrees with the others, so take the spread rather than
@@ -297,6 +315,10 @@ export default function CostOfSellingAPropertyPage() {
           },
           { href: `${CGT}/cheapest-estate-agent-fees-uk`, label: "Where the cheapest headline stops being cheap" },
         ]}
+        /* Two bars and the gap between them. "You keep about £640" is a fact in a
+           paragraph; the same number drawn as the distance between the average and
+           the target is the decision the reader is actually taking. */
+        figure={<NegotiationGap />}
       >
         <p>
           It is negotiable, and you get further with a figure than with a request. On sole agency the target
@@ -334,6 +356,11 @@ export default function CostOfSellingAPropertyPage() {
           },
           { href: `${CGT}/online-estate-agents-uk`, label: "Online agents: how the model actually works" },
         ]}
+        /* Three routes on one pound scale, with the open question drawn as part of the
+           figure rather than as a footnote to it. A bar chart alone would state the
+           saving and imply the price question is settled, and the section says
+           plainly that it is not. */
+        figure={<RouteCompare />}
       >
         <p>
           You can, and nothing in law stops you. Selling your own home is not estate agency, so none of the
@@ -368,10 +395,13 @@ export default function CostOfSellingAPropertyPage() {
         id="the-rest-of-the-bill"
         eyebrow="The smaller lines"
         title="What else is on the bill?"
+        /* The stamp duty calculator was the third card here. Standing rule
+           (owner, 2026-08-23): a related CARD pointing at a calculator becomes
+           the tab treatment on the page instead, because a card is the wrong
+           affordance for a tool the reader can use where they are standing. */
         links={[
           { href: `${CGT}/cost-of-moving-house-uk`, label: "The whole move, buying side included" },
           { href: `${LTE}/epc-certificate-cost-uk`, label: "What an EPC costs and who has to have one" },
-          { href: "/calculators/stamp-duty-calculator", label: "Stamp duty on what you buy next" },
         ]}
       >
         <p>
@@ -401,6 +431,23 @@ export default function CostOfSellingAPropertyPage() {
           Land Registry fee on the property you are leaving. Both belong to the buyer, so keep them out of your
           selling budget.
         </p>
+
+        <BillSides />
+
+        <div className="mt-10 sm:mt-12">
+          <h3 className="text-base font-bold text-slate-900 sm:text-lg">Stamp duty on what you buy next</h3>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            The one line on the buying side worth pricing before you accept an offer, because it is the largest and
+            it lands on completion. The{" "}
+            {/* Literal href, not a constant: `calculator-tabs-crawl-path.test.ts`
+                is a source scan and cannot see through one. */}
+            <InlineLink href="/calculators/stamp-duty-calculator">stamp duty calculator</InlineLink> has the
+            additional dwellings surcharge built in.
+          </p>
+          <div className="mt-5">
+            <CalculatorTabs tabs={["stampduty"]} />
+          </div>
+        </div>
       </TopicSection>
 
       <TopicSection
@@ -416,6 +463,10 @@ export default function CostOfSellingAPropertyPage() {
           },
           { href: `${CGT}/part-exchange-house-uk`, label: "Part-exchange: what the developer really pays" },
         ]}
+        /* Each card leads on who actually pays. All three routes look cheaper than a
+           high street agent and none is, and on the modern method the fee is
+           genuinely not charged to you while still costing you money. */
+        figure={<AlternativeRoutes />}
       >
         <p>
           Cheaper on paper is not the same as better off, and each of these routes moves the cost somewhere you
@@ -454,6 +505,10 @@ export default function CostOfSellingAPropertyPage() {
             label: "What you are taxed on when you inherit",
           },
         ]}
+        /* A rail, not a grid. The section's own first line is that the costs are the
+           same and the ORDER is not, and a grid of equivalent cards contradicts
+           that word for word. */
+        figure={<ProbateOrder />}
       >
         <p>
           The costs are the same. The order of operations is not, and getting it wrong is the most common reason a
@@ -492,6 +547,10 @@ export default function CostOfSellingAPropertyPage() {
             label: "Capital gains tax on property: the full guide",
           },
         ]}
+        /* The closed list drawn as a boundary, with the worked example above it.
+           Neutral dashes on the right, never crosses: nobody is doing anything
+           wrong by paying for removals. */
+        figure={<DeductibleSplit />}
       >
         <p>
           Not if the place has been your only or main home for the whole time you owned it. That covers most
@@ -524,8 +583,11 @@ export default function CostOfSellingAPropertyPage() {
         id="your-number"
         eyebrow="Your figure"
         title="How do you work out your own total?"
+        /* The cost of selling calculator was a related CARD in this row. A card
+           is the wrong affordance for a tool the reader can use right here, so it
+           is the tab treatment instead, exactly as /landed-estates does with the
+           allowance calculator and /leasehold with stamp duty. Owner, 2026-08-23. */
         links={[
-          { href: CALC, label: "Cost of selling calculator" },
           {
             href: `${CGT}/cgt-payment-deadlines-property-sales-2026`,
             label: "The 60 day deadline, and how to meet it",
@@ -534,9 +596,9 @@ export default function CostOfSellingAPropertyPage() {
         ]}
       >
         <p>
-          Put your sale price and your quoted fee into the cost of selling calculator. It comes back in under a
-          minute with commission, conveyancing, EPC and removals in one column. Tell it the property is a let or a
-          second home and it adds the tax on top.
+          Put your sale price and your quoted fee into the cost of selling calculator below. It comes back in under
+          a minute with commission, conveyancing, EPC and removals in one column. Tell it the property is a let or
+          a second home and it adds the tax on top.
         </p>
         <p>
           Then keep the completion statement. It is the one piece of paper that evidences your commission, your
@@ -551,15 +613,54 @@ export default function CostOfSellingAPropertyPage() {
           May date. If your sale is anything other than a straightforward main home, that gap is where the money
           is.
         </p>
-        <Link
-          href="#book"
-          data-cta="selling_number_book"
-          data-cta-placement="your_number"
-          data-cta-goal="form"
-          className={`${btnPrimary} w-full sm:w-auto`}
-        >
-          Check the tax on your sale
-        </Link>
+
+        <SaleTimeline />
+
+        {/* The on-page tool. `#calculator` is what the hero secondary now points
+            at, and `scroll-mt-24` clears the sticky header so the tab bar is not
+            hidden under it. */}
+        <div id="calculator" className="mt-10 scroll-mt-24 sm:mt-12">
+          <h3 className="text-base font-bold text-slate-900 sm:text-lg">Work out your own selling costs</h3>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            Your sale price and the fee you have been quoted are the only two figures it needs. The{" "}
+            {/* Literal href, not the `CALC` constant, deliberately. This page now
+                renders `CalculatorTabs`, which emits <button role="tab"> and no
+                crawlable link, so `calculator-tabs-crawl-path.test.ts` requires a
+                real per-tool <a href> in this file's own markup. That guard is a
+                source scan and cannot see through a constant. Keep this one
+                spelled out: it is the page's only remaining in-body link to the
+                calculator, because the hero secondary now scrolls here instead. */}
+            <InlineLink href="/calculators/cost-of-selling-calculator">cost of selling calculator</InlineLink>{" "}
+            itemises the bill, commission first, and adds an estimate of the tax if the property was let or a
+            second home.
+          </p>
+          <div className="mt-5">
+            <CalculatorTabs tabs={["costofselling"]} />
+          </div>
+        </div>
+
+        {/* Was a bare `btnPrimary` link. A bare button is not a CTA block
+            (DESIGN_SYSTEM.md section 7): the pattern is a card with a hairline
+            ring, a statement specific to this section on the left and the button
+            on the right, stacking on mobile. Slate card rather than the white one
+            /incorporation uses, because this section sits on the white ground and
+            a white card on white has no edge. `data-cta` is unchanged, so the
+            `vw_cta_performance` row survives the move. */}
+        <div className="mt-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+          <p className="text-base font-bold text-slate-900 sm:text-lg">
+            The calculator estimates the tax. Which tax year it falls into, and what is actually deductible, is
+            the part worth getting right before you exchange.
+          </p>
+          <Link
+            href="#book"
+            data-cta="selling_number_book"
+            data-cta-placement="your_number"
+            data-cta-goal="form"
+            className={`${btnPrimary} mt-4 w-full sm:mt-0 sm:w-auto sm:shrink-0`}
+          >
+            Check the tax on your sale
+          </Link>
+        </div>
       </TopicSection>
 
       {/* Anchor for the hero primary and the mid-page ask. The CTASection this

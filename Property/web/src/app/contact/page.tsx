@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Check } from "lucide-react";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -8,6 +7,13 @@ import { niche, isPackagesMode } from "@/config/niche-loader";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Eyebrow } from "@/components/ui/page-blocks";
+import {
+  WhoWeAreSection,
+  WhyChooseUsSection,
+  WhatWeCoverSection,
+} from "@/components/property/MarketingSections";
+import { TestimonialsSection } from "@/components/property/TestimonialsSection";
+import { WhatToExpectCard } from "@/components/property/WhatToExpectCard";
 
 export const metadata: Metadata = {
   // Ours (c218d7a6): brand-suffix dedupe, and a description that fits the snippet.
@@ -49,11 +55,19 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* The form stays the first thing under the hero (owner 2026-08-23): this
+          is the page a reader arrives on already intending to enquire, so making
+          them scroll past the argument to reach it costs more than the argument
+          wins. The bands below are what they read if the form does not close
+          them on its own. */}
+      <section id="book" className="scroll-mt-24 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
             <div className="space-y-6 sm:space-y-8">
-              <div className="rounded-xl bg-slate-50 p-6 sm:p-8">
+              {/* bg-white, not bg-slate-50: this section's own ground went
+                  slate-50 when the bands moved below it, and a slate card on a
+                  slate section has no edge (DESIGN_SYSTEM §4a rule 3). */}
+              <div className="rounded-xl bg-white p-6 sm:p-8">
                 <Eyebrow>Speak to us</Eyebrow>
                 <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-4 sm:mb-6">Get in touch</h2>
                 <p className="text-base text-slate-700 leading-relaxed">
@@ -79,27 +93,10 @@ export default function ContactPage() {
                 ) : null}
               </div>
 
-              <div className="rounded-xl bg-slate-900 p-6 sm:p-8 text-white">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">What to expect</h3>
-                <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-slate-200">
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <Check aria-hidden className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-emerald-400" strokeWidth={3} />
-                    <span>Instant text and email from us. Reply to confirm your callback</span>
-                  </li>
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <Check aria-hidden className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-emerald-400" strokeWidth={3} />
-                    <span>Initial call to understand your situation</span>
-                  </li>
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <Check aria-hidden className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-emerald-400" strokeWidth={3} />
-                    <span>Clear recommendations with no obligation</span>
-                  </li>
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <Check aria-hidden className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-emerald-400" strokeWidth={3} />
-                    <span>Fixed fee quote if you decide to proceed</span>
-                  </li>
-                </ul>
-              </div>
+              {/* Was inline here. Now shared with /thank-you, /book and
+                  /complete, which all wanted the same card beside their own ask.
+                  These four items are the component's defaults. */}
+              <WhatToExpectCard />
             </div>
 
             <div className="rounded-xl bg-white border-2 border-slate-200 p-6 sm:p-8 lg:p-10">
@@ -114,6 +111,22 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Owner 2026-08-23: /contact used to be a hero and a form, so a reader
+          who was not already sold met the ask having read none of the argument
+          the homepage makes. These four bands are the homepage's, rendered from
+          the shared components rather than copied, so the two cannot drift.
+
+          Grounds, top to bottom: navy hero, slate-50 form, white, slate-50,
+          navy testimonials, white. No two touching sections share a ground and
+          nothing navy lands on the navy footer (DESIGN_SYSTEM §9). Testimonials
+          sits third rather than last for exactly that reason, and
+          `WhatWeCoverSection` takes tone="white" here where the homepage takes
+          the slate default. Re-check both before reordering. */}
+      <WhoWeAreSection />
+      <WhyChooseUsSection />
+      <TestimonialsSection />
+      <WhatWeCoverSection tone="white" />
     </>
   );
 }

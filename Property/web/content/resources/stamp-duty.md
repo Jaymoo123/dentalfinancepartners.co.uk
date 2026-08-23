@@ -1,7 +1,7 @@
 ---
 topic: stamp-duty
 title: "Stamp Duty (SDLT) for property investors: the complete guide"
-summary: "How the SDLT bands work, the 5% additional-dwelling surcharge for buy-to-lets and second homes, the 2% non-resident surcharge, first-time-buyer relief, mixed-use and the six-dwellings rule, with worked examples, and a clear note on Scotland (LBTT) and Wales (LTT)."
+summary: "The surcharge catches more purchases than buyers expect, and it applies to the whole price rather than a slice. How the bands work, when the 5% additional-dwelling and 2% non-resident surcharges bite, the reliefs that survive, mixed-use and the six-dwellings rule, and where Scotland (LBTT) and Wales (LTT) differ."
 version: "2026.1"
 lastReviewed: "2026-06-06"
 ---

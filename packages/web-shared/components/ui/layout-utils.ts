@@ -24,9 +24,15 @@ export const sectionYLoose = "py-16 sm:py-20 md:py-24 lg:py-28";
 export const focusRing =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
 
-/** Primary CTA: brand surface + brand-on-primary label. */
+/** Primary CTA: brand surface + brand-on-primary label.
+ *
+ * The corner radius is a per-site token, NOT a fixed pill. Sites whose design
+ * system uses square or near-square buttons (Property, whose `--radius` is 0)
+ * set `--btn-radius` in their own globals so this button matches the primary
+ * CTAs rendered by their local `btnPrimary`. Every site that sets nothing keeps
+ * the 9999px pill it has always had. */
 export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold tracking-tight text-[var(--brand-on-primary)] shadow-sm transition-all duration-200 hover:bg-[var(--brand-primary-strong)] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
+  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-[var(--btn-radius,9999px)] bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold tracking-tight text-[var(--brand-on-primary)] shadow-sm transition-all duration-200 hover:bg-[var(--brand-primary-strong)] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
 
 /** Secondary: ink outline, for use on light backgrounds. */
 export const btnSecondary =

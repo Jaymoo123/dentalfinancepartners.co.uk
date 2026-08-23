@@ -4,9 +4,12 @@ import { StampDutyCalculator } from "@/components/calculators/StampDutyCalculato
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { FaqSection } from "@/components/ui/FaqSection";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@/components/ui/page-blocks";
 import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
+import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { STANDARD_SDLT_BANDS } from "@/lib/sdlt";
 
 export const metadata: Metadata = {
@@ -48,36 +51,36 @@ const bandRows = STANDARD_SDLT_BANDS.map((b, i, arr) => {
 
 const faqs = [
   {
-    q: "How much stamp duty will I pay?",
-    a: "On a standard home in England or Northern Ireland you pay nothing on the first £125,000, 2% on the slice from £125,001 to £250,000, 5% from £250,001 to £925,000, 10% from £925,001 to £1,500,000 and 12% above that. Enter your price in the calculator above and it gives you the figure and the effective rate.",
+    question: "How much stamp duty will I pay?",
+    answer: "On a standard home in England or Northern Ireland you pay nothing on the first £125,000, 2% on the slice from £125,001 to £250,000, 5% from £250,001 to £925,000, 10% from £925,001 to £1,500,000 and 12% above that. Enter your price in the calculator above and it gives you the figure and the effective rate.",
   },
   {
-    q: "How much is stamp duty on a second home?",
-    a: "You pay a 5% surcharge on the whole price on top of the standard rates. On a £300,000 second home that is £5,000 of standard stamp duty plus £15,000 of surcharge, so £20,000 in total. Tick the additional property box in the calculator and it adds the surcharge for you.",
+    question: "How much is stamp duty on a second home?",
+    answer: "You pay a 5% surcharge on the whole price on top of the standard rates. On a £300,000 second home that is £5,000 of standard stamp duty plus £15,000 of surcharge, so £20,000 in total. Tick the additional property box in the calculator and it adds the surcharge for you.",
   },
   {
-    q: "Do first-time buyers pay stamp duty?",
-    a: "Not on the first £300,000. First-time buyers pay 0% up to £300,000 and 5% on the slice from £300,000 to £500,000. Once the price passes £500,000 the relief is withdrawn completely and you pay standard rates on the whole price.",
+    question: "Do first-time buyers pay stamp duty?",
+    answer: "Not on the first £300,000. First-time buyers pay 0% up to £300,000 and 5% on the slice from £300,000 to £500,000. Once the price passes £500,000 the relief is withdrawn completely and you pay standard rates on the whole price.",
   },
   {
-    q: "What are the stamp duty thresholds for 2026/27?",
-    a: "The nil-rate threshold is £125,000 for a standard purchase and £300,000 for a first-time buyer. The other thresholds are £250,000, £925,000 and £1,500,000, and each rate applies only to the slice of the price inside its band.",
+    question: "What are the stamp duty thresholds for 2026/27?",
+    answer: "The nil-rate threshold is £125,000 for a standard purchase and £300,000 for a first-time buyer. The other thresholds are £250,000, £925,000 and £1,500,000, and each rate applies only to the slice of the price inside its band.",
   },
   {
-    q: "Is stamp duty different in Scotland and Wales?",
-    a: "Yes. Scotland charges Land and Buildings Transaction Tax and Wales charges Land Transaction Tax, both with their own bands and their own additional-property rules. This calculator covers England and Northern Ireland only, so use the LBTT or LTT calculator if you are buying there.",
+    question: "Is stamp duty different in Scotland and Wales?",
+    answer: "Yes. Scotland charges Land and Buildings Transaction Tax and Wales charges Land Transaction Tax, both with their own bands and their own additional-property rules. This calculator covers England and Northern Ireland only, so use the LBTT or LTT calculator if you are buying there.",
   },
   {
-    q: "Can I use this as an SDLT calculator for a limited company?",
-    a: "Yes, for a normal buy-to-let purchase by a property-letting company. Tick the additional property box, because a company pays the 5% surcharge on every residential purchase with no starting allowance. The calculator does not model the 17% flat rate that can hit a company buying a dwelling over £500,000 where no letting relief applies.",
+    question: "Can I use this as an SDLT calculator for a limited company?",
+    answer: "Yes, for a normal buy-to-let purchase by a property-letting company. Tick the additional property box, because a company pays the 5% surcharge on every residential purchase with no starting allowance. The calculator does not model the 17% flat rate that can hit a company buying a dwelling over £500,000 where no letting relief applies.",
   },
   {
-    q: "Do non-UK residents pay extra stamp duty?",
-    a: "Yes, a further 2% on the whole price on top of the standard rates and any second-home surcharge. Tick the non-UK resident box and the calculator adds it.",
+    question: "Do non-UK residents pay extra stamp duty?",
+    answer: "Yes, a further 2% on the whole price on top of the standard rates and any second-home surcharge. Tick the non-UK resident box and the calculator adds it.",
   },
   {
-    q: "When do you pay stamp duty?",
-    a: "The return and the payment are both due within 14 days of completion. Your conveyancer normally files it, but the responsibility for getting it right sits with you as the buyer.",
+    question: "When do you pay stamp duty?",
+    answer: "The return and the payment are both due within 14 days of completion. Your conveyancer normally files it, but the responsibility for getting it right sits with you as the buyer.",
   },
 ];
 
@@ -95,19 +98,11 @@ export default function StampDutyCalculatorPage() {
           }),
         }}
       />
+      {/* Same `faqs` array behind the markup and the schema, so the two cannot
+          disagree. Was a hand-rolled FAQPage object over `q`/`a` keys. */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
       />
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
@@ -140,10 +135,15 @@ export default function StampDutyCalculatorPage() {
         </div>
       </section>
 
+      {/* Body copy runs the full container width, like every other body section
+          on the site and like the other four bespoke calculators. It used to sit
+          in a `max-w-3xl` box, which is the measure reserved for HERO copy only,
+          so this page read as a narrower site than /calculators/[slug] beside
+          it. Owner 2026-08-23, generalised to every calculator page. */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">How much is stamp duty?</h2>
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">How much is stamp duty?</h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
               <p>
                 On a standard home you pay nothing on the first £125,000, then 2%, 5%, 10% and 12% on the
@@ -175,7 +175,7 @@ export default function StampDutyCalculatorPage() {
               shows you the total and the effective rate across the whole price.
             </p>
 
-            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-4xl">
               Stamp duty on a second home
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
@@ -201,7 +201,7 @@ export default function StampDutyCalculatorPage() {
               </p>
             </div>
 
-            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-4xl">
               Stamp duty rates in England and Northern Ireland
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
@@ -230,7 +230,7 @@ export default function StampDutyCalculatorPage() {
               </p>
             </div>
 
-            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-4xl">
               Stamp duty for limited companies and non-residential property
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
@@ -260,7 +260,7 @@ export default function StampDutyCalculatorPage() {
               </p>
             </div>
 
-            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-4xl">
               Stamp duty for first-time buyers
             </h2>
             <p className="mt-6 text-base leading-relaxed text-slate-700">
@@ -307,22 +307,24 @@ export default function StampDutyCalculatorPage() {
         />
       </div>
 
-      <section className="bg-slate-50 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-              Stamp duty calculator: common questions
-            </h2>
-            <dl className="mt-6 space-y-6">
-              {faqs.map((f) => (
-                <div key={f.q}>
-                  <dt className="text-lg font-semibold text-slate-900">{f.q}</dt>
-                  <dd className="mt-2 text-base leading-relaxed text-slate-700">{f.a}</dd>
-                </div>
-              ))}
-            </dl>
+      {/* Was a hand-rolled `dl` of h3-and-paragraph pairs inside a `max-w-3xl`
+          box. `FaqSection` is the site's one FAQ pattern (DESIGN_SYSTEM §4b) and
+          runs the full container, so the accordion now matches every other page
+          and the light ground still keeps the navy panel above off the navy
+          footer below. */}
+      <FaqSection
+        eyebrow="FAQ"
+        title="Stamp duty calculator: common questions"
+        faqs={faqs}
+        className="bg-slate-50 py-12 sm:py-16"
+        tone="white"
+      />
 
-            <h2 className="mt-12 text-2xl font-bold text-slate-900 sm:text-3xl">
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <div>
+            <Eyebrow>Keep going</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               Related calculators and rate tables
             </h2>
             <ul className="mt-6 list-disc space-y-2 pl-6 text-base leading-relaxed text-slate-700">

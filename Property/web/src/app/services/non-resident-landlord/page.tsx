@@ -124,71 +124,56 @@ const clientPrompts: Prompt[] = [
   {
     tag: "I have just moved abroad",
     text: "I kept the flat, and my agent has started taking 20% off the rent.",
+    detail:
+      "The most common trigger. Your usual place of abode moves outside the UK, your letting agent starts withholding 20%, and nobody tells you that gross approval exists. We register you, reset the agent, and pick up the Self Assessment.",
     icon: PlaneTakeoff,
   },
   {
     tag: "I let directly to my tenants",
     text: "There is no UK agent involved, so is my tenant meant to be deducting the tax?",
+    detail:
+      "With no UK letting agent, a tenant paying you more than £100 a week has the deduction obligation themselves. Most tenants have no idea. Gross approval removes the problem for both of you.",
     icon: Home,
   },
   {
     tag: "I am moving back to the UK",
     text: "I let the place out for years while I was away and never filed anything.",
+    detail:
+      "Rental income received abroad and never declared is still UK taxable. We quantify the exposure, use the right disclosure route, and negotiate the penalty position rather than letting HMRC open it first.",
     icon: PlaneLanding,
   },
   {
     tag: "I am selling from overseas",
     text: "We complete next month and somebody mentioned a 60-day deadline.",
+    detail:
+      "The 60-day clock starts at completion, not when your solicitor gets round to it, and the penalty for missing it applies even when no tax is due. We work the computation alongside the conveyance so the return goes in on time.",
     icon: Timer,
   },
   {
     tag: "I am about to leave the country",
     text: "I still own the whole portfolio and I go in the spring.",
+    detail:
+      "The year you leave is the year most of the planning value sits. Split-year treatment, the timing of a disposal, mortgage restructuring and the agent arrangements all read differently before departure than after.",
     icon: CalendarClock,
   },
   {
     tag: "I hold through a company",
     text: "It is a non-resident company and I am not sure what it should be filing.",
+    detail:
+      "Corporate and trustee landlords have their own forms, their own filing regime and, for higher-value residential holdings, an annual ATED return. We handle the full stack rather than the rental accounts alone.",
     icon: Building2,
   },
 ];
 
-/**
- * Ours, kept. Their re-layout replaced these six cards with the marquee above,
- * and the marquee is the better hook, but it is an 80-word recognition cue
- * against roughly 300 words of substance and dropping ours is a real content
- * reduction on the one page the head-asset map calls HAVE-WINNING. Both ship,
- * in the same section, on the reasoning Phase 6.3 recorded for exactly this
- * pair: the prompts say "this is you", the scenarios say what each of those
- * situations actually turns on, and splitting them across two sections needs a
- * second H2 saying the same thing as the first.
- */
-const scenarios = [
-  {
-    title: "You have just moved abroad and kept the flat",
-    body: "The most common trigger. Your usual place of abode moves outside the UK, your letting agent starts withholding 20%, and nobody tells you that gross approval exists. We register you, reset the agent, and pick up the Self Assessment.",
-  },
-  {
-    title: "You live overseas and let directly to tenants",
-    body: "With no UK letting agent, a tenant paying you more than £100 a week has the deduction obligation themselves. Most tenants have no idea. Gross approval removes the problem for both of you.",
-  },
-  {
-    title: "You are a returning expat with years of unfiled returns",
-    body: "Rental income received abroad and never declared is still UK taxable. We quantify the exposure, use the right disclosure route, and negotiate the penalty position rather than letting HMRC open it first.",
-  },
-  {
-    title: "You are selling a UK property from overseas",
-    body: "The 60-day clock starts at completion, not when your solicitor gets round to it, and the penalty for missing it applies even when no tax is due. We work the computation alongside the conveyance so the return goes in on time.",
-  },
-  {
-    title: "You are planning the move and still own the portfolio",
-    body: "The year you leave is the year most of the planning value sits. Split-year treatment, the timing of a disposal, mortgage restructuring and the agent arrangements all read differently before departure than after.",
-  },
-  {
-    title: "You are a non-resident with a UK company or trust holding property",
-    body: "Corporate and trustee landlords have their own forms, their own filing regime and, for higher-value residential holdings, an annual ATED return. We handle the full stack rather than the rental accounts alone.",
-  },
-];
+/* The `scenarios` list that used to sit here was merged into `clientPrompts`
+   above (owner, 2026-08-23). It was the same six situations as the prompts,
+   told in the second person: prompt 1 and scenario 1 were both "just moved
+   abroad and kept the flat", and so on down all six, so the section made its
+   argument twice. Every word of the substance survives as each prompt's
+   `detail`, which is what Phase 6.3 was protecting when it kept both: the
+   80-word hook and the ~300 words of substance both ship, they are just no
+   longer in two competing blocks on the page the head-asset map calls
+   HAVE-WINNING. */
 
 /**
  * Their three treaty cards. Written out of the prose that used to sit here: the
@@ -493,19 +478,6 @@ export default function NonResidentLandlordPage() {
             <PromptMarquee prompts={clientPrompts} />
           </div>
 
-          {/* Our six scenarios, kept. A divided list in one white card rather
-              than a second card grid, because the section below is a
-              CoverageCards grid and two grids in a row read as twelve
-              equivalent things. Phase 6.3 settled this shape for exactly this
-              prompts-plus-scenarios pair. */}
-          <ul className="mt-10 divide-y divide-slate-200 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:mt-12 sm:p-8">
-            {scenarios.map((item) => (
-              <li key={item.title} className="py-5 first:pt-0 last:pb-0">
-                <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">{item.body}</p>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
@@ -575,7 +547,9 @@ export default function NonResidentLandlordPage() {
               </p>
             </Prose>
             <FilingDates />
-            <ExampleFigureNote className="mt-4" />
+            <ExampleFigureNote className="mt-4">
+              Living abroad does not move any of these dates, and neither does using an agent.
+            </ExampleFigureNote>
 
             {/* The section links to these four times; embedding one converts an
                 exit into an on-page ResultGate capture. `scroll-mt` clears the

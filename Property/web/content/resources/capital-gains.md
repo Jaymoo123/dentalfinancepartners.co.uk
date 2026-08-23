@@ -1,7 +1,7 @@
 ---
 topic: capital-gains
 title: "Capital Gains Tax on property: the complete guide for landlords and second-home owners"
-summary: "How CGT works when you sell a buy-to-let or second property: the 18%/24% rates, the £3,000 allowance, allowable costs, the 60-day report-and-pay deadline, Private Residence Relief and Lettings Relief, spousal transfers, and offsetting losses, with worked examples."
+summary: "Sell a rental at the wrong moment and the tax is decided before you exchange. The whole capital gains position on a buy-to-let or second property: the 18% and 24% rates, the £3,000 allowance, what you can actually deduct, the 60-day clock that starts at completion, and the reliefs most sellers miss, with worked examples."
 version: "2026.1"
 lastReviewed: "2026-06-06"
 ---

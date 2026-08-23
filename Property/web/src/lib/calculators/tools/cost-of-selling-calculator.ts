@@ -37,11 +37,18 @@ import { computeCgt } from "@/lib/cgt";
  * citation in this file lives in comments and never in a user-facing string.
  */
 
-/** HomeOwners Alliance, 2026 average sole-agency fee, including VAT. */
-const DEFAULT_AGENT_FEE_PCT = 1.42;
+/**
+ * HomeOwners Alliance, 2026 average sole-agency fee, including VAT.
+ *
+ * Exported because `components/property/cost-of-selling-figures.tsx` derives
+ * every money figure on /cost-of-selling-a-property from these two constants
+ * rather than typing them, so the page's visuals cannot drift from the tool it
+ * sends the reader to. Same posture as `SdltMarketValue` over `lib/sdlt.ts`.
+ */
+export const DEFAULT_AGENT_FEE_PCT = 1.42;
 
 /** HM Land Registry UK HPI, England average, June 2026 (£293,262), rounded. */
-const DEFAULT_SALE_PRICE = 293_000;
+export const DEFAULT_SALE_PRICE = 293_000;
 
 export const costOfSellingCalculator: GenericTool = {
   kind: "generic",

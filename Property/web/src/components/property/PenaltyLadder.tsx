@@ -32,6 +32,46 @@ export type PenaltyStep = { when: string; penalty: string; note: string };
  */
 const STAGGER_MS = 220;
 
+/**
+ * The step discs, as a warm ramp instead of four identical navy circles.
+ *
+ * The ramp is the section's own argument in colour: these penalties are a
+ * sequence that gets worse, so the discs get hotter as the reader moves along
+ * them. Four flat navy discs said "four things" where the copy says "an
+ * escalation".
+ *
+ * Read the note below before changing any of these. THE FIRST STEP MUST STAY
+ * FULLY SATURATED. An earlier pass greyed step one to mark it as the trigger and
+ * it read as "inactive", which is wrong: the £100 is a real penalty and it lands
+ * the day after the deadline. That is why the ramp starts at amber-700 rather
+ * than at a pale amber-100, and it is the same trap a light-to-dark ramp walks
+ * straight back into.
+ *
+ * Contrast, measured against white text at the 4.5:1 AA floor (these are 14px
+ * bold, which is NOT WCAG large text, so 3:1 does not apply):
+ *
+ *   amber-700  #b45309  5.02:1
+ *   orange-700 #c2410c  5.18:1
+ *   red-600    #dc2626  4.83:1
+ *   red-800    #991b1b  8.31:1
+ *
+ * The obvious brighter choices FAIL and are not options: amber-600 is 3.19:1 and
+ * orange-600, the site's own accent, is 3.56:1. Do not "brighten" this ramp
+ * without re-measuring.
+ *
+ * Nothing rests on hue. Every step carries its number, its date and its penalty
+ * in text, so the ramp is emphasis rather than information and colour-blind
+ * readers lose nothing. That is also why a single-hue warm ramp is fine here
+ * where `RateWedge` needed a validated CVD-separated pair: that figure asks the
+ * reader to tell two series apart, this one does not.
+ */
+const STEP_TONES = [
+  "bg-[#b45309]", // amber-700
+  "bg-[#c2410c]", // orange-700
+  "bg-[#dc2626]", // red-600
+  "bg-[#991b1b]", // red-800
+] as const;
+
 export function PenaltyLadder({ steps }: { steps: readonly PenaltyStep[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const [drawn, setDrawn] = useState(false);
@@ -75,16 +115,31 @@ export function PenaltyLadder({ steps }: { steps: readonly PenaltyStep[] }) {
             round number. Measured: rail and disc centres both land on 22. `top`/`bottom` are inset by the same 22px so the
             rail starts and ends AT the first and last disc rather than
             overshooting into the gap. */}
-        <div aria-hidden className="penalty-ladder-rail absolute left-0 right-0 top-[22px] hidden h-px bg-slate-200 md:block" />
-        <div aria-hidden className="penalty-ladder-rail-v absolute bottom-[22px] left-[21.5px] top-[22px] w-px bg-slate-200 md:hidden" />
+        {/* The rail carries the same ramp as the discs, so the line the eye
+            follows warms up as it crosses rather than staying a neutral hairline
+            through four escalating steps. Direction follows the axis: left to
+            right above md, top to bottom below it, matching the reading order
+            each layout actually has. Both still animate on `transform`, so the
+            gradient scales with the rail and the draw is unchanged. */}
+        <div
+          aria-hidden
+          className="penalty-ladder-rail absolute left-0 right-0 top-[22px] hidden h-px bg-gradient-to-r from-[#b45309] via-[#dc2626] to-[#991b1b] md:block"
+        />
+        <div
+          aria-hidden
+          className="penalty-ladder-rail-v absolute bottom-[22px] left-[21.5px] top-[22px] w-px bg-gradient-to-b from-[#b45309] via-[#dc2626] to-[#991b1b] md:hidden"
+        />
         {steps.map((step, i) => (
           <li key={step.when} className="relative">
             <span
               aria-hidden
-              // All four navy. An earlier pass greyed the first step to mark it
-              // as the trigger, which read as "inactive": the £100 is a real
-              // penalty and lands the day after the deadline.
-              className="penalty-ladder-step relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-slate-900 text-sm font-bold text-white ring-4 ring-white"
+              // Warm ramp, see STEP_TONES. A step beyond the fourth falls back to
+              // the last tone rather than to an undefined class, so adding a
+              // fifth penalty degrades to "as bad as the one before" instead of
+              // rendering a transparent disc.
+              className={`penalty-ladder-step relative z-10 flex h-11 w-11 items-center justify-center rounded-full text-sm font-bold text-white ring-4 ring-white ${
+                STEP_TONES[i] ?? STEP_TONES[STEP_TONES.length - 1]
+              }`}
               style={{ transitionDelay: `${i * STAGGER_MS}ms` }}
             >
               {i + 1}

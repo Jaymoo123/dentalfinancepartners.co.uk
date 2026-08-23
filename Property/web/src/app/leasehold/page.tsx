@@ -5,6 +5,18 @@ import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { TopicHero, TopicSection } from "@/components/property/TopicSection";
+import { ProcessTimeline } from "@/components/property/ProcessTimeline";
+import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
+import { InlineLink } from "@/components/ui/page-blocks";
+import {
+  CommencementTimeline,
+  GroundRentStates,
+  LeaseholdStatuteMap,
+  LeaseholdTaxCards,
+  PremiumStack,
+  RtmChanges,
+  ServiceChargeLevers,
+} from "@/components/property/leasehold-figures";
 import { btnOnCream, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
@@ -93,6 +105,29 @@ const inForce = [
     status: "Draft Bill only",
     effect:
       "Sits in the Commonhold and Leasehold Reform Bill, not in the 2024 Act. It is not law and should never be planned around.",
+  },
+];
+
+/**
+ * The "where to start" run, as steps. This is the closing section's own three
+ * paragraphs, split at their natural joins and not otherwise rewritten: the
+ * copy was already a sequence, and only its shape has changed.
+ */
+const nextSteps = [
+  {
+    n: "01",
+    title: "Find the unexpired term",
+    body: "From the lease itself or the title register, and work out how far it is from 80 years. That single number decides whether this is urgent or merely important. Under 85 years and you should be getting a valuation now, because a claim served before the term passes 80 avoids marriage value entirely.",
+  },
+  {
+    n: "02",
+    title: "Decide the route",
+    body: "Extend, enfranchise, take over management, or do nothing for now. They answer different problems. Extension protects value and mortgageability. Enfranchisement removes the freeholder. Right to manage fixes bad management without buying anything. Doing nothing is a real option on a lease with 120 years left and a competent managing agent.",
+  },
+  {
+    n: "03",
+    title: "Line up all three advisers before serving notice",
+    body: "Our side of it is the tax: the stamp duty on the premium, whether the surcharge bites, what is deductible against rent, and how the premium affects the eventual gain. The valuation and the notices are a surveyor and a solicitor. Getting all three lined up before serving notice is what stops a claim becoming expensive.",
   },
 ];
 
@@ -194,6 +229,11 @@ export default function LeaseholdPage() {
         id="what-is-leasehold"
         eyebrow="The structure"
         title="What leasehold actually is"
+        /* The six-Act sentence became a card each. The paragraph naming all six
+           in a row was the least readable way to make the section's own point,
+           which is that leasehold is a pile of separate statutes rather than a
+           code. No Act, and no part of what each governs, was dropped. */
+        figure={<LeaseholdStatuteMap />}
         links={[
           { href: `${BLOG}/lease-extension-vs-freehold-purchase`, label: "Extend the lease or buy the freehold" },
           { href: `${BLOG}/commonhold-and-leasehold-reform-bill`, label: "What the reform pipeline holds" },
@@ -207,11 +247,7 @@ export default function LeaseholdPage() {
         </p>
         <p>
           Parliament has answered that with statutory rights rather than a single code, which is why the law
-          sits in five or six separate Acts. Flats are governed by the Leasehold Reform, Housing and Urban
-          Development Act 1993, houses by the Leasehold Reform Act 1967, management by the Commonhold and
-          Leasehold Reform Act 2002, service charges by the Landlord and Tenant Act 1985, and ground rent on
-          new leases by the Leasehold Reform (Ground Rent) Act 2022. The Leasehold and Freehold Reform Act 2024
-          amends several of them, but only in part, which is where nearly all the confusion comes from.
+          sits in five or six separate Acts rather than in one place.
         </p>
         <p>
           This page describes the position in <strong>England</strong>. Wales shares most of the primary
@@ -239,6 +275,12 @@ export default function LeaseholdPage() {
           instrument, and as at August 2026 exactly three commencement instruments exist: SI 2024/1018,
           SI 2025/57 and SI 2025/131. Three of the four headline reforms have not been commenced at all.
         </p>
+        {/* The same events on a rail before the ledger below. The section's
+            argument is entirely about WHEN, and a status column cannot show that
+            three provisions commenced and four have not; a timeline can. The
+            table stays: it is the provision-by-provision reference, and this is
+            the shape of the story. */}
+        <CommencementTimeline />
         {/* Designer's figure-card treatment, the same one the statutory
             changes tables on /landlord-tax and /services/property-tax-advice
             carry: a white card on the slate ground, the table inside it, and
@@ -304,27 +346,14 @@ export default function LeaseholdPage() {
           about the price. Since January 2025 there is no qualifying ownership period, so a buyer can serve
           notice on the day of completion.
         </p>
-        <p>The premium is built from three components, discounted at a statutory deferment rate:</p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>Term.</strong> The value to the freeholder of the ground rent still to be received over the
-            unexpired term.
-          </li>
-          <li>
-            <strong>Reversion.</strong> The deferred value of getting the flat back when the lease ends,
-            discounted at the post-Sportelli 5% deferment rate.
-          </li>
-          <li>
-            <strong>Marriage value.</strong> The uplift in combined value created by merging the freehold
-            interest with a longer lease. It applies only where the unexpired term is under 80 years, and it is
-            still payable, because the abolition in the 2024 Act is not in force.
-          </li>
-        </ul>
-        <p>
-          That third component is the 80-year cliff. Above 80 years unexpired, no marriage value. Below it, the
-          premium steps up sharply and keeps climbing as the term shortens. If your lease is near 80 years, the
-          date you serve notice matters more than anything else on this page.
-        </p>
+        {/* The three components and the 80-year cliff, which were a bulleted
+            list plus a paragraph. `PremiumStack` carries the same three bodies
+            verbatim and draws the above-80 / under-80 split the copy called a
+            cliff but rendered as one clause among five. Inline rather than via
+            the `figure` prop because it belongs HERE, between the right to
+            extend and what the whole thing costs, not at the foot of the
+            section. */}
+        <PremiumStack />
         <p>
           Costs sit on top of the premium. You pay your own legal and valuation fees and, because the section
           60 costs repeal in the 2024 Act is not in force, the freeholder&apos;s reasonable legal and valuation
@@ -359,14 +388,14 @@ export default function LeaseholdPage() {
           stays payable.
         </p>
         <p>
-          The 2024 Act reforms to right to manage are the ones that did commence, on 3 March 2025 under
-          SI 2025/131, and they changed three things worth knowing. The non-residential floor space limit rose
-          from 25% to 50%, which brings a large number of shop-and-flats buildings into scope for the first
-          time. The First-tier Tribunal is now the first instance forum rather than the High Court. And the old
-          rule that the RTM company paid the landlord&apos;s process costs win or lose has gone: the general
-          rule is now no liability, with a narrow exception where a claim is withdrawn and the company acted
-          unreasonably.
+          The 2024 Act reforms to right to manage are the ones that did commence, and they changed three things
+          worth knowing.
         </p>
+        {/* The three changes as before-and-after rows. A change is two states
+            and a direction, and the paragraph this replaces had to spell all six
+            states out in sequence. Every one of them is carried verbatim in
+            `RtmChanges`, including the ownership caveat that closed it. */}
+        <RtmChanges />
         <p>
           The mechanics are strict and the deadlines are statutory. The RTM company must be a private company
           limited by guarantee using the prescribed model articles, membership at the point of service must
@@ -399,18 +428,20 @@ export default function LeaseholdPage() {
           liability.
         </p>
         <p>
-          The consultation thresholds are the ones most often misquoted. Consultation is required where
-          qualifying works would cost any one leaseholder more than <strong>£250</strong>, and where a
-          qualifying long term agreement would cost any one leaseholder more than <strong>£100</strong> in an
-          accounting period. Both figures are per leaseholder, not per building or per project. Where the
-          landlord fails to consult, the recoverable amount is capped at those figures, although the tribunal
-          can dispense with consultation where leaseholders suffered no real prejudice.
+          The consultation thresholds are the ones most often misquoted, and the 18-month rule is the one most
+          often assumed to be absolute.
         </p>
+        {/* The three numbers a leaseholder actually looks up, set as figures
+            rather than buried mid-paragraph. The section's own line is that
+            these are "the ones most often misquoted", which is the argument for
+            giving them their own weight. The per-leaseholder qualifier travels
+            with each one, because that is the specific thing people get wrong. */}
+        <ServiceChargeLevers />
         <p>
-          There is also an 18-month rule. A landlord cannot demand a service charge more than 18 months after
-          the cost was incurred, unless it notified leaseholders within that 18 months that the cost had been
-          incurred and a demand would follow. The notification limb is what turns the rule from a hard bar into
-          a conditional one, and it is where most 18-month arguments are actually won or lost.
+          Where the landlord fails to consult, the recoverable amount is capped at those figures, although the
+          tribunal can dispense with consultation where leaseholders suffered no real prejudice. On the 18-month
+          rule, the notification limb is what turns it from a hard bar into a conditional one, and it is where
+          most 18-month arguments are actually won or lost.
         </p>
         <p>
           Tribunal applications carry a fee. From 6 July 2026 an application to determine service charge
@@ -431,26 +462,13 @@ export default function LeaseholdPage() {
           Almost every ground rent question resolves once you separate three things that most coverage runs
           together.
         </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>New leases: law.</strong> The Leasehold Reform (Ground Rent) Act 2022 limits ground rent on
-            new qualifying residential long leases to a peppercorn. Commenced by SI 2022/694 on 30 June 2022,
-            and on 1 April 2023 for retirement home leases. A prohibited term is automatically treated as a
-            peppercorn, and an enforcement authority can impose a penalty of between £500 and £30,000 per
-            breach, with refund orders on top.
-          </li>
-          <li>
-            <strong>Existing leases: unchanged.</strong> The 2022 Act does not touch a lease granted before it
-            commenced. A doubling clause or an RPI-linked escalator in a 2015 lease is enforceable exactly as
-            drafted. The statutory escape route is a lease extension, because a statutory extension takes
-            effect at a peppercorn.
-          </li>
-          <li>
-            <strong>The £250 cap: not law.</strong> It sits in the draft Commonhold and Leasehold Reform Bill.
-            It is not in the 2024 Act, it has not been enacted, and it should not appear in any calculation you
-            rely on.
-          </li>
-        </ul>
+        {/* Badged law / unchanged / not law. This is the section that most
+            needed a figure: its own opening sentence asks the reader to separate
+            three things, and a bulleted list ran them back together by giving
+            all three identical weight and no status. Bodies are the three list
+            items verbatim; the badge is the separation the copy asks for, said
+            in one word. */}
+        <GroundRentStates />
         <p>
           One historic worry has genuinely closed. A long lease with ground rent above £250 a year, or £1,000
           in Greater London, could technically fall within the assured tenancy rules, which caused years of
@@ -463,54 +481,50 @@ export default function LeaseholdPage() {
         id="tax"
         eyebrow="Stamp duty and gains"
         title="The tax nobody mentions until completion"
+        /* The stamp duty calculator was the third card in this row. A card is
+           the wrong affordance for a tool the reader can just USE: the section
+           has spent four cards telling them the premium is chargeable
+           consideration, so the tool goes in the section as a tab rather than as
+           a link out of it. Only the two reading destinations stay as cards, and
+           `kind: "guide"` overrides the href-derived pill on /landlord-tax,
+           which is a pillar route and matches none of the four prefixes. */
         links={[
-          { href: "/calculators/stamp-duty-calculator", label: "Stamp duty calculator" },
-          { href: "/landlord-tax", label: "Landlord tax guide" },
+          { href: "/landlord-tax", label: "Landlord tax guide", kind: "guide" },
           {
             href: `${BLOG}/archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt`,
             label: "Lease extensions and the Scottish position",
           },
         ]}
       >
-        <p>
-          <strong>Stamp duty on an extension premium.</strong> A statutory lease extension is treated for
-          stamp duty land tax as a surrender of the old lease and the grant of a new one, so the premium is
-          chargeable consideration. Rent at a peppercorn contributes nothing to the net present value
-          calculation, so in practice the premium is the charge. The trap is the additional dwellings
-          surcharge: where the premium reaches £40,000 and you already own another residential property, the 5%
-          surcharge applies to the whole premium. That catches a meaningful share of London and South East
-          extensions, and it is routinely missed until the return is prepared.
-        </p>
-        <p>
-          <strong>Collective enfranchisement is calculated differently.</strong> The total consideration is
-          divided by the number of qualifying flats, the rates are applied to that per-flat figure, and the
-          result is multiplied back up. Because the per-flat fraction often falls in or below the nil rate
-          band, the charge is usually far lower than applying the rates to the aggregate price. Buying the
-          freehold of a house is a straightforward purchase taxed in the ordinary way.
-        </p>
-        <p>
-          <strong>Capital gains tax.</strong> The leaseholder has no capital gains tax charge on extending or
-          enfranchising, because money is going out rather than coming in. The premium is capital expenditure
-          that increases the base cost of the property for a future disposal, so keep the paperwork. The
-          freeholder is the one making a disposal, taxed at residential rates of 18% and 24% for an individual
-          or within the corporation tax charge for a company.
-        </p>
-        <p>
-          <strong>Deductibility on a let flat.</strong> Ground rent and service charges are revenue expenses
-          and come off rental income in the normal way. The extension premium does not: it is capital, and the
-          distinction is absolute rather than a matter of degree. If the flat is held in a company and a
-          revaluation after extension pushes it over £500,000, check the annual tax on enveloped dwellings
-          position before the next valuation date.
-        </p>
-        <Link
-          href="#book"
-          data-cta="leasehold_tax_book"
-          data-cta-placement="tax"
-          data-cta-goal="form"
-          className={`${btnPrimary} w-full sm:w-auto`}
-        >
-          Check the tax before you serve notice
-        </Link>
+        {/* The four tax points as cards. Each was already a paragraph opening
+            on a bolded label, which is a heading wearing a paragraph's clothes.
+            `LeaseholdTaxCards` promotes those labels to real h3s and carries the
+            four bodies verbatim, so the section gains four headings naming
+            things people search for and loses no copy. */}
+        <LeaseholdTaxCards />
+        {/* The tool itself, in the site's tab treatment, rather than a card
+            linking away to it. `CalculatorTabs` takes an explicit tab list, so
+            this renders the one calculator this section is actually about.
+
+            Note for the crawl-path guard in
+            `src/tests/calculator-tabs-crawl-path.test.ts`: tabs are
+            <button role="tab"> and emit no crawlable link, so this page needs a
+            per-tool <a href> of its own. It has one, in the Scottish position
+            paragraph below, which links /calculators/stamp-duty-calculator in
+            prose. Do not remove that link while this block is here. */}
+        <div className="mt-8 sm:mt-10">
+          <h3 className="text-base font-bold text-slate-900 sm:text-lg">
+            Put the premium through the stamp duty calculator
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            Enter the premium as the purchase price. If you already own another residential property, the{" "}
+            <InlineLink href="/calculators/stamp-duty-calculator">stamp duty calculator</InlineLink> will show the
+            surcharge on the whole figure.
+          </p>
+          <div className="mt-5">
+            <CalculatorTabs tabs={["stampduty"]} />
+          </div>
+        </div>
       </TopicSection>
 
       <TopicSection
@@ -518,29 +532,23 @@ export default function LeaseholdPage() {
         eyebrow="Next steps"
         tone="slate"
         title="Where to start if your lease is getting short"
+        /* The three paragraphs were already a sequence: find the number, choose
+           the route, line the advisers up. `ProcessTimeline` is the component the
+           site already uses for an ordered run of steps, so the section says in
+           its shape what it was saying in its order. Every sentence is carried
+           through; nothing is summarised away. */
+        figure={<ProcessTimeline steps={nextSteps} />}
         links={[
           { href: "/resources/leasehold", label: "Leasehold resource hub" },
-          { href: "/blog/property-types-and-specialist-tax", label: "All specialist property tax guides" },
+          {
+            href: "/blog/property-types-and-specialist-tax",
+            label: "All specialist property tax guides",
+          },
           { href: "/services/property-tax-advice", label: "Property tax advice" },
         ]}
       >
         <p>
-          Find the unexpired term first, from the lease itself or the title register, and work out how far it
-          is from 80 years. That single number decides whether this is urgent or merely important. Under 85
-          years and you should be getting a valuation now, because a claim served before the term passes 80
-          avoids marriage value entirely.
-        </p>
-        <p>
-          Then decide the route: extend, enfranchise, take over management, or do nothing for now. They answer
-          different problems. Extension protects value and mortgageability. Enfranchisement removes the
-          freeholder. Right to manage fixes bad management without buying anything. Doing nothing is a real
-          option on a lease with 120 years left and a competent managing agent.
-        </p>
-        <p>
-          Our side of it is the tax: the stamp duty on the premium, whether the surcharge bites, what is
-          deductible against rent, and how the premium affects the eventual gain. The valuation and the notices
-          are a surveyor and a solicitor. Getting all three lined up before serving notice is what stops a
-          claim becoming expensive.
+          Three things, in this order. The first one decides whether the other two are urgent.
         </p>
       </TopicSection>
 

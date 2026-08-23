@@ -175,18 +175,15 @@ export function BlogCategoryHub({
             property accountants and kept current.
           </p>
           {posts.length > 0 ? (
-            // CARVE-OUT 5 (our SEO surface). The template's default is 12 per
-            // page with state-driven page changes and no <a href> to pages
-            // 2..N, which would cut the nine hubs from 749 server-rendered
-            // article links to 108. The hubs are the only full HTML crawl path
-            // to the corpus (/blog itself only exposes 24), so the grid renders
-            // the whole category in one page. Design unchanged; the pagination
-            // bar simply never has a second page to offer.
-            <HubArticleList
-              posts={articleItems}
-              categorySlug={categorySlug}
-              postsPerPage={articleItems.length}
-            />
+            // Twelve per page, the same as /blog. This used to pass
+            // `articleItems.length` to force a single page, because paging is
+            // client state with no <a href> to pages 2..N and the hubs are the
+            // only full HTML crawl path to the ~750-post corpus. HubArticleList
+            // now keeps every card in the server HTML and hides the off-page
+            // ones, so the crawl path survives and the reader stops scrolling
+            // past 150 cards to reach the form. See its docstring before
+            // changing either side of this.
+            <HubArticleList posts={articleItems} categorySlug={categorySlug} />
           ) : (
             <p className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-600">
               No articles in this topic yet. Check back shortly.

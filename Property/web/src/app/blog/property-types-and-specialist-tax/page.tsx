@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { BlogCategoryHub } from "@/components/blog/BlogCategoryHub";
+import { PAGE_SUMMARIES } from "@/lib/page-summaries";
 
 const categoryName = "Property Types & Specialist Tax";
 const categorySlug = "property-types-and-specialist-tax";
@@ -34,7 +35,9 @@ export default function PropertyTypesPage() {
       categorySlug={categorySlug}
       collectionName={`${categoryName} for UK Landlords`}
       description={description}
-      intro="Different property types face different tax rules. Expert guidance on HMOs, commercial property, serviced accommodation, holiday lets, student housing, and property development."
+      /* One copy, in `PAGE_SUMMARIES`, so the hub intro and every related-
+         reading card pointing at this hub cannot drift apart. */
+      intro={PAGE_SUMMARIES["/blog/property-types-and-specialist-tax"]}
       sections={[
         {
           heading: "HMOs and multi-tenant properties",

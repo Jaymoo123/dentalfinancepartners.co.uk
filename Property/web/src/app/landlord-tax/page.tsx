@@ -21,6 +21,15 @@ import { DisposalFigures } from "@/components/property/DisposalFigures";
 import { PenaltyLadder } from "@/components/property/PenaltyLadder";
 import { PromptMarquee, type Prompt } from "@/components/property/PromptMarquee";
 import { RentalProfitStack } from "@/components/property/RentalProfitStack";
+import { MtdStaircase } from "@/components/property/rates-figures";
+import {
+  EffectiveRate,
+  IhtFreeze,
+  LossRoutes,
+  PurchaseClock,
+  SpecialistSplit,
+  WhichStructure,
+} from "@/components/property/landlord-tax-figures";
 import { StatsCounter } from "@/components/property/StatsCounter";
 import { TestimonialsSection } from "@/components/property/TestimonialsSection";
 import { FaqSection } from "@/components/ui/FaqSection";
@@ -31,6 +40,7 @@ import { btnOnCream, btnPrimary, heroCreamSurface, siteContainerLg } from "@/com
 import { siteStats } from "@/lib/site-stats";
 import { buildFaqPageJsonLd, type FaqEntry } from "@/lib/faq-page-schema";
 import { siteConfig } from "@/config/site";
+import { PAGE_SUMMARIES } from "@/lib/page-summaries";
 
 /**
  * Ours, kept whole (carve-out 5). Theirs is retitled to "Landlord Tax Explained
@@ -469,10 +479,14 @@ export default function LandlordTaxPage() {
             <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-6xl">
               Landlord tax explained: what you pay on UK rental property in 2026/27
             </h1>
+            {/* Second sentence comes from `PAGE_SUMMARIES`, which is also what
+                the related-reading cards elsewhere on the site render for this
+                route. One string, two consumers: edit it there and the hero and
+                every card describing this page move together. */}
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
               Rental profit is taxed at your normal income tax rate, but mortgage interest is not deductible, so a
-              geared higher-rate landlord can pay close to half of the cash they keep. Here is every tax that
-              touches a let property, what changes next April, and where the money actually goes.
+              geared higher-rate landlord can pay close to half of the cash they keep.{" "}
+              {PAGE_SUMMARIES["/landlord-tax"]}
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
@@ -801,6 +815,10 @@ export default function LandlordTaxPage() {
             </p>
           </Prose>
 
+          {/* The gap the section calls "Section 24 in one number". Every
+              percentage is derived from the worked example's own figures. */}
+          <EffectiveRate />
+
           {/* A link to #book rather than an inline capture, by explicit
               instruction: one form per page, and that form is the navy panel at
               the foot. An inline MiniCapture was tried here and removed. */}
@@ -885,6 +903,8 @@ export default function LandlordTaxPage() {
               are the most common piece of free relief left unclaimed.
             </p>
           </Prose>
+
+          <LossRoutes />
         </div>
       </section>
 
@@ -941,6 +961,8 @@ export default function LandlordTaxPage() {
               <InlineLink href="/calculators/stamp-duty-calculator">Stamp duty calculator</InlineLink>
             </p>
           </Prose>
+
+          <PurchaseClock />
         </div>
       </section>
 
@@ -1044,6 +1066,8 @@ export default function LandlordTaxPage() {
               );
             })}
           </ul>
+
+          <IhtFreeze />
         </div>
       </section>
 
@@ -1113,6 +1137,14 @@ export default function LandlordTaxPage() {
               standard residential let.
             </p>
           </Prose>
+
+          {/* `MtdStaircase` from `rates-figures.tsx`, not a second copy. The
+              three thresholds are the same three this section spells out in
+              prose, and the figure is the only place on either page that shows
+              them as one threshold falling rather than three separate facts.
+              Its cards are light, which is the same treatment the table above
+              takes on this navy band. */}
+          <MtdStaircase />
         </div>
       </section>
 
@@ -1179,6 +1211,8 @@ export default function LandlordTaxPage() {
               <InlineLink href="/incorporation">Incorporation feasibility analysis</InlineLink>
             </p>
           </Prose>
+
+          <WhichStructure />
         </div>
       </section>
 
@@ -1253,6 +1287,8 @@ export default function LandlordTaxPage() {
               ongoing compliance side of that.
             </p>
           </Prose>
+
+          <SpecialistSplit />
         </div>
       </section>
 

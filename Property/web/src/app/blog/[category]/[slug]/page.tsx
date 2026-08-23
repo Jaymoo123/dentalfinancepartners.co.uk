@@ -7,6 +7,7 @@ import {
   getCategorySlug,
   getRelatedPosts,
   categoryDisplayName,
+  firstSentence,
 } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
@@ -89,7 +90,9 @@ export default async function BlogPostPage({ params }: Props) {
   const related = getRelatedPosts(post.slug, post.category, 3).map((r) => ({
     slug: r.slug,
     title: r.title,
-    summary: r.summary,
+    // The card shows the article's opening line, not the frontmatter summary,
+    // which is written for search and runs to 1,000+ characters on some posts.
+    summary: firstSentence(r.contentHtml, r.summary),
     categorySlug: getCategorySlug(r),
   }));
 

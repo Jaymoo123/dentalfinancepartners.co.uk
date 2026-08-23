@@ -20,7 +20,21 @@ import type { LucideIcon } from "lucide-react";
  * shows.
  */
 
-export type Prompt = { tag: string; text: string; icon: LucideIcon };
+export type Prompt = {
+  tag: string;
+  text: string;
+  icon: LucideIcon;
+  /**
+   * What the situation actually turns on, two or three sentences.
+   *
+   * Rendered OUTSIDE the quotation marks and out of italic, deliberately. The
+   * prompt above it is a first-person thing a reader would say; this is our
+   * second-person explanation of it. Folded into the quote it would read as an
+   * invented client testimonial, which is the one thing the rule above this
+   * type forbids. Optional: the homepage set carries hook only.
+   */
+  detail?: string;
+};
 
 /**
  * Card surface, which has to contrast with the section behind it. The fades are
@@ -32,6 +46,7 @@ type Tone = "white" | "slate";
 function PromptCard({
   tag,
   text,
+  detail,
   icon: Icon,
   index,
   tone,
@@ -60,6 +75,11 @@ function PromptCard({
           <p className="mt-2 text-base italic leading-relaxed text-slate-700 sm:text-lg">
             &ldquo;{text}&rdquo;
           </p>
+          {detail ? (
+            <p className="mt-3 border-t border-slate-100 pt-3 text-sm leading-relaxed text-slate-600">
+              {detail}
+            </p>
+          ) : null}
         </div>
       </div>
     </li>
@@ -67,11 +87,22 @@ function PromptCard({
 }
 
 export function PromptMarquee({ prompts, tone = "white" }: { prompts: Prompt[]; tone?: Tone }) {
+  // Cards carrying a `detail` paragraph are roughly twice as tall, so the
+  // hook-only height would frame a single card and read as a broken viewport
+  // rather than a loop. Derived from the prompts instead of a prop: the caller
+  // that adds the details is the caller that needs the taller frame, and there
+  // is no combination where it would want one without the other.
+  const tall = prompts.some((prompt) => prompt.detail);
+
   return (
     <div
       // Height is tuned to show ~3 cards: roughly 3 card heights plus the gaps
       // between them. If the quote type size changes, retune this.
-      className="marquee-viewport relative h-[360px] overflow-hidden sm:h-[420px] lg:h-[480px]"
+      className={`marquee-viewport relative overflow-hidden ${
+        tall
+          ? "h-[520px] sm:h-[600px] lg:h-[680px]"
+          : "h-[360px] sm:h-[420px] lg:h-[480px]"
+      }`}
       // Short fade zones: a long one leaves cards hovering half-transparent at the
       // edges, which reads as an empty card rather than a card leaving.
       style={{

@@ -9,7 +9,17 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
-import { BarChart3, Briefcase, Building2, CalendarClock, Receipt } from "lucide-react";
+import {
+  BarChart3,
+  Briefcase,
+  Building2,
+  CalendarClock,
+  Landmark,
+  Percent,
+  PiggyBank,
+  Receipt,
+  Wallet,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const loading = () => (
@@ -38,8 +48,28 @@ const StampDutyCalculator = dynamic(
   () => import("./StampDutyCalculator").then((m) => ({ default: m.StampDutyCalculator })),
   { loading },
 );
+/**
+ * The five above are bespoke components. `bprapr` is the first tab backed by a
+ * GENERIC registry tool instead, rendered through `CalculatorClient` by slug.
+ * That is the route to follow for any future registry tool a page wants to
+ * offer as a tab: add a key, a TABS row and a line in the panel switch, and do
+ * not write a second copy of the calculator.
+ */
+const CalculatorClient = dynamic(
+  () => import("./CalculatorClient").then((m) => ({ default: m.CalculatorClient })),
+  { loading },
+);
 
-export type TabKey = "section24" | "incorporation" | "mtd" | "portfolio" | "stampduty";
+export type TabKey =
+  | "section24"
+  | "incorporation"
+  | "mtd"
+  | "portfolio"
+  | "stampduty"
+  | "bprapr"
+  | "costofselling"
+  | "rentalyield"
+  | "rentalincome";
 
 const TABS: { key: TabKey; label: string; sub: string; icon: LucideIcon }[] = [
   { key: "section24", label: "Section 24 Calculator", sub: "Your extra tax bill", icon: BarChart3 },
@@ -47,6 +77,10 @@ const TABS: { key: TabKey; label: string; sub: string; icon: LucideIcon }[] = [
   { key: "mtd", label: "MTD Checker", sub: "Are you in scope?", icon: CalendarClock },
   { key: "portfolio", label: "Portfolio Calculator", sub: "Property-by-property profit", icon: Briefcase },
   { key: "stampduty", label: "Stamp Duty Calculator", sub: "Including the surcharge", icon: Receipt },
+  { key: "bprapr", label: "Allowance Calculator", sub: "Your £2.5m BPR and APR position", icon: Landmark },
+  { key: "costofselling", label: "Cost of Selling Calculator", sub: "Your full selling bill", icon: Wallet },
+  { key: "rentalyield", label: "Rental Yield Calculator", sub: "Gross and net on a property", icon: Percent },
+  { key: "rentalincome", label: "Rental Income Tax Calculator", sub: "Tax on a year of rent", icon: PiggyBank },
 ];
 
 const DEFAULT_TABS: TabKey[] = ["section24", "incorporation", "mtd", "portfolio"];
@@ -203,6 +237,18 @@ export function CalculatorTabs({ tabs = DEFAULT_TABS }: { tabs?: TabKey[] } = {}
             {tab.key === "mtd" && <MTDCheckerCalculator />}
             {tab.key === "portfolio" && <PortfolioProfitabilityCalculator />}
             {tab.key === "stampduty" && <StampDutyCalculator />}
+            {tab.key === "bprapr" && (
+              <CalculatorClient slug="bpr-apr-allowance-calculator" variant="page" />
+            )}
+            {tab.key === "costofselling" && (
+              <CalculatorClient slug="cost-of-selling-calculator" variant="page" />
+            )}
+            {tab.key === "rentalyield" && (
+              <CalculatorClient slug="rental-yield-calculator" variant="page" />
+            )}
+            {tab.key === "rentalincome" && (
+              <CalculatorClient slug="rental-income-tax-calculator" variant="page" />
+            )}
           </div>
         ))}
       </div>

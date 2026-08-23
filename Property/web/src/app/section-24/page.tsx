@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BarChart3, Building2, Check, Home, Percent, PoundSterling, Scale, TrendingUp, UserX, X } from "lucide-react";
+import { BarChart3, Building2, Check, Home, Minus, Percent, PoundSterling, Scale, TrendingUp, UserX, X } from "lucide-react";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { RateWedge } from "@/components/property/RateWedge";
+import { Section24Wedge } from "@/components/property/Section24Wedge";
 import { DrawnTickList } from "@/components/property/DrawnTickList";
 import { PromptMarquee, type Prompt } from "@/components/property/PromptMarquee";
 import { CoverageCards, type CoverageItem } from "@/components/property/CoverageCards";
@@ -12,7 +13,6 @@ import { StatsCounter } from "@/components/property/StatsCounter";
 import { TestimonialsSection } from "@/components/property/TestimonialsSection";
 import { siteStats } from "@/lib/site-stats";
 import { CalculatorTabs } from "@/components/calculators/CalculatorTabs";
-import { CalculatorLinkCards } from "@/components/calculators/CalculatorLinkCards";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { ExampleFigureNote } from "@/components/ui/ExampleFigureNote";
 import { Eyebrow, InlineLink } from "@/components/ui/page-blocks";
@@ -210,37 +210,6 @@ const reviewIncludes = [
   "A written recommendation you can act on, or hand to a broker or solicitor",
 ];
 
-/**
- * The four crawlable calculator links that sit alongside the tabs.
- *
- * `CalculatorTabs` renders <button role="tab">, so a free-tools block built only
- * from tabs carries no <a href> to any tool. This is the designer's own remedy,
- * `CalculatorLinkCards`, and it is the same four tools the tabs offer here.
- * Carve-out 5, and asserted by src/tests/calculator-tabs-crawl-path.test.ts.
- */
-const calculatorLinks = [
-  {
-    href: "/calculators/section-24-calculator",
-    title: "Section 24 calculator",
-    body: "What the finance cost restriction costs you this year, and what it costs from April 2027 when the reducer moves to 22% and property income moves to 22%, 42% and 47%.",
-  },
-  {
-    href: "/calculators/incorporation-cost-calculator",
-    title: "Incorporation cost calculator",
-    body: "Upfront capital gains tax and stamp duty against the annual saving, with a break-even year.",
-  },
-  {
-    href: "/calculators/mtd-checker",
-    title: "MTD checker",
-    body: "Whether quarterly filing catches you from April 2026, April 2027, April 2028, or not yet.",
-  },
-  {
-    href: "/calculators/portfolio-profitability-calculator",
-    title: "Portfolio profitability calculator",
-    body: "Net yield and profit per property, so you can see which holdings are actually carrying the portfolio.",
-  },
-];
-
 const faqs: FaqEntry[] = [
   {
     question: "What is Section 24?",
@@ -366,7 +335,7 @@ export default function Section24Page() {
                 href="#free-tools"
                 className={`${btnOnCream} text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}
               >
-                Run your numbers
+                Run your numbers for free
               </Link>
             </div>
           </div>
@@ -419,11 +388,41 @@ export default function Section24Page() {
           <div>
             <Eyebrow>The mechanism</Eyebrow>
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">What is Section 24?</h2>
+            {/* Restored detail 2026-08-23 (owner: retain enough substance to
+                read as professional authority). The port had cut this lead from
+                three paragraphs to one to make room for the figure below, which
+                went too far the other way.
+
+                What came back is only what the figure does NOT already say. The
+                before-and-after arithmetic stays in the two columns, and the
+                two cost lists stay in the lookup further down, so nothing here
+                repeats them. Every added claim is checked against
+                `docs/property/house_positions.md` section 4: the statutory hooks
+                (ITTOIA 2005 ss.274AA to 274C, ITA 2007 s.399B, both named there),
+                the scope line "applies to individuals, partnerships, and trusts,
+                does NOT apply to limited companies", and the reducer-not-a-
+                deduction distinction the same section leads with. The phase-in
+                percentages were deliberately NOT added: house positions does not
+                carry them, and an unsourced 75/50/25 on a tax page is exactly the
+                kind of figure this site does not publish. */}
             <div className="mt-6 space-y-4 text-sm sm:text-base leading-relaxed text-slate-700">
               <p>
                 Section 24 of the Finance (No. 2) Act 2015 stopped individual landlords deducting residential
                 mortgage interest from rental income. It phased in over four years from April 2017 and has applied in
-                full since the 2020/21 tax year.
+                full since the 2020/21 tax year. The operative provisions sit in ITTOIA 2005 sections 274AA to 274C
+                and ITA 2007 section 399B.
+              </p>
+              <p>
+                The distinction that matters is between a deduction and a reducer. Finance costs no longer come off
+                your rental profit at all. They are replaced by a basic rate tax reducer applied against your final
+                income tax liability, which is a different thing arriving at a different point in the calculation. Your
+                taxable profit is larger for every other purpose that reads it: the higher rate threshold, the high
+                income child benefit charge, and the taper of the personal allowance above £100,000.
+              </p>
+              <p>
+                It applies to individuals, partnerships and trusts holding residential property. It does not apply to
+                limited companies, which still deduct interest in full before corporation tax, and that single
+                difference is what drives most of the incorporation questions landlords bring us.
               </p>
             </div>
 
@@ -492,6 +491,17 @@ export default function Section24Page() {
             {/* Same illustrative landlord as the worked example below. */}
             <ExampleFigureNote className="mt-4" />
 
+            {/* Moved above the lookup 2026-08-23 (owner). It used to close the
+                section, where it read as an afterthought to a two-column table;
+                as a lead-in it frames what the table is about to show. */}
+            <div className="mt-6 space-y-4 text-sm sm:text-base leading-relaxed text-slate-700">
+              <p>
+                Only the finance side moved. Section 24 is one part of a wider picture, and{" "}
+                <InlineLink href="/landlord-tax">our landlord tax guide</InlineLink> covers every tax that touches a
+                let property.
+              </p>
+            </div>
+
             {/* Which costs moved and which did not. A lookup, so a two-column
                 list rather than the two paragraphs this replaced: a reader here
                 is checking one cost of their own, not reading both sides. */}
@@ -519,14 +529,6 @@ export default function Section24Page() {
                 </ul>
               </div>
             </div>
-
-            <div className="mt-6 space-y-4 text-sm sm:text-base leading-relaxed text-slate-700">
-              <p>
-                Only the finance side moved. Section 24 is one part of a wider picture, and{" "}
-                <InlineLink href="/landlord-tax">our landlord tax guide</InlineLink> covers every tax that touches a
-                let property.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -538,6 +540,25 @@ export default function Section24Page() {
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               How much is the tax reducer worth in 2026/27 and 2027/28?
             </h2>
+
+            {/* The plain answer first, as a picture, before any of the rate
+                mechanics below (owner, 2026-08-23: make this section simpler to
+                understand). Two bars on one scale show the gap the whole section
+                is about, the profit banked against the larger profit taxed, with
+                the added-back interest as its own segment, and the £3,600 a year
+                that gap costs.
+
+                `Section24Wedge` is the designer's own component, written FOR
+                this page: its docstring says "Figures match the worked example
+                on /section-24 so the two pages cannot drift", and it uses the
+                same £50,000 / £8,000 / £18,000 landlord as the table further
+                down. It had been wired only to /services/landlord-accountant and
+                never to the page it was built for. Nothing new was invented
+                here; the figure was already in the tree. If the worked example
+                below ever changes, change the constants in that component too. */}
+            <div className="mt-6 sm:mt-8">
+              <Section24Wedge />
+            </div>
             {/* Restructured for legibility. This was two dense paragraphs: the
                 first welded the rate change, the reason for it and a two-case
                 win/lose lookup into seven lines, and the second stated a
@@ -557,34 +578,66 @@ export default function Section24Page() {
               </p>
             </div>
 
-            <div className="mt-6 space-y-3">
-              <p className="text-sm leading-relaxed text-slate-700 sm:text-base">
-                <strong className="font-bold text-slate-900">If you are a basic-rate taxpayer, you are neutral.</strong>{" "}
-                22% of relief against 22% of tax is the same trade you make today at 20% and 20%.
-              </p>
-              <p className="text-sm leading-relaxed text-slate-700 sm:text-base">
-                <strong className="font-bold text-slate-900">If you are a higher-rate taxpayer, you pay more.</strong>{" "}
-                You gain 2% of your interest bill and lose 2% of your whole property profit, which is a net cost
-                wherever profit before finance costs exceeds the interest.
-              </p>
+            {/* Which case am I in, as two cards rather than two paragraphs
+                (owner, 2026-08-23). The section's April 2027 answer is entirely
+                conditional on the reader's own rate, and a reader looking that up
+                should not have to parse two sentences to find their own row.
+
+                Deliberately NOT emerald against red. Basic rate is not a win, it
+                is no change, so it takes the neutral slate and a `Minus` on the
+                same reasoning `ComparisonTable` uses for the other side of its
+                own comparison. Amber marks the case that costs money. Every
+                verdict is in words as well as in colour. */}
+            <div className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-2 sm:gap-5">
+              <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70">
+                <p className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-slate-700">
+                  <Minus aria-hidden className="h-3.5 w-3.5" strokeWidth={3} />
+                  No change
+                </p>
+                <h3 className="mt-4 text-base font-bold text-slate-900 sm:text-lg">
+                  If you are a basic-rate taxpayer
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">
+                  You are neutral. 22% of relief against 22% of tax is the same trade you make today at 20% and 20%.
+                </p>
+              </div>
+              <div className="rounded-xl bg-white p-6 ring-1 ring-amber-300">
+                <p className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">
+                  <TrendingUp aria-hidden className="h-3.5 w-3.5" strokeWidth={3} />
+                  You pay more
+                </p>
+                <h3 className="mt-4 text-base font-bold text-slate-900 sm:text-lg">
+                  If you are a higher-rate taxpayer
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-base">
+                  You gain 2% of your interest bill and lose 2% of your whole property profit, which is a net cost
+                  wherever profit before finance costs exceeds the interest.
+                </p>
+              </div>
             </div>
 
-            <div className="mt-8">
-              <p className="text-sm leading-relaxed text-slate-700 sm:text-base">
-                The reducer is also capped. It is calculated on{" "}
-                <strong className="font-bold text-slate-900">whichever of these three is lowest</strong>:
-              </p>
-              <ul className="mt-4 space-y-3">
+            {/* The cap, as three tiles with the "lowest wins" rule stated once at
+                the top rather than buried in the lead-in sentence. The three are
+                genuinely parallel candidates, so they get equal weight and the
+                same treatment; the old bordered list implied a sequence. */}
+            <div className="mt-8 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
+              <h3 className="text-base font-bold text-slate-900 sm:text-lg">
+                The reducer is capped at whichever of these three is lowest
+              </h3>
+              <div className="mt-5 grid gap-4 sm:grid-cols-3 sm:gap-5">
                 {reducerCap.map(({ label, gloss }) => (
-                  <li key={label} className="border-l-2 border-emerald-600 pl-4">
-                    <p className="text-sm font-bold text-slate-900 sm:text-base">{label}</p>
-                    <p className="mt-0.5 text-sm leading-relaxed text-slate-600 sm:text-base">{gloss}</p>
-                  </li>
+                  <div key={label} className="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200/70">
+                    <p className="text-sm font-bold text-slate-900">{label}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{gloss}</p>
+                  </div>
                 ))}
-              </ul>
-              <p className="mt-4 text-sm leading-relaxed text-slate-700 sm:text-base">
-                Anything the cap blocks is not lost. It carries forward and is relieved in a later year when there is
-                enough profit to absorb it.
+              </div>
+              <p className="mt-5 flex items-start gap-2.5 border-t border-slate-200 pt-5 text-sm leading-relaxed text-slate-700 sm:text-base">
+                <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" strokeWidth={2.5} />
+                <span>
+                  Anything the cap blocks is not lost. It carries forward and is relieved in a later year when there is
+                  enough profit to absorb it.
+                </span>
               </p>
             </div>
 
@@ -684,13 +737,11 @@ export default function Section24Page() {
               The cost is not spread evenly. It concentrates on landlords whose marginal rate is above 20% and whose
               borrowing is large relative to rent.
             </p>
-            {/* Glow on, by request: the one-time staggered wave the /services
-                client tiles use. This is the only glowing block on the page,
-                which is the whole point of it. */}
-            <CoverageCards items={whoItHits} columns={2} tone="slate" glow />
             {/* Carve-out 5: their CoverageCards rewrite dropped this paragraph
-                and its two blog links with it. */}
-            <p className="mt-8 text-sm sm:text-base leading-relaxed text-slate-700">
+                and its two blog links with it. Moved above the cards 2026-08-23
+                (owner); it was sitting under them, after the glow, where it read
+                as a footnote to the grid rather than as part of the setup. */}
+            <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
               The threshold effects are where landlords get caught out, because the extra tax lands somewhere they were
               not looking. Our guides on{" "}
               <InlineLink href="/blog/section-24-and-tax-relief/can-section-24-push-higher-rate-tax">
@@ -702,6 +753,10 @@ export default function Section24Page() {
               </InlineLink>{" "}
               cover the two most common versions.
             </p>
+            {/* Glow on, by request: the one-time staggered wave the /services
+                client tiles use. This is the only glowing block on the page,
+                which is the whole point of it. */}
+            <CoverageCards items={whoItHits} columns={2} tone="slate" glow />
           </div>
         </div>
       </section>
@@ -954,6 +1009,20 @@ export default function Section24Page() {
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               What does a Section 24 review actually involve?
             </h2>
+            {/* Merged 2026-08-23 (owner): "The engagement" and "Deliverables"
+                were one section carrying two eyebrows and two headings, the
+                second nested inside the first in its own navy card. Same
+                subject, told twice: what the review involves, then what the
+                review gives you. Now one section, one eyebrow, one h2, with the
+                list kept as a distinct block under an h3 so the scan structure
+                survives the merge.
+
+                The card is slate-50 rather than the navy it used to be, because
+                the merged section is white and the testimonials band directly
+                below it is full-bleed navy: a navy card here would have run into
+                it. Ticks take `text-emerald-600` for the same reason, since the
+                default emerald-400 is tuned for navy and washes out on a light
+                ground. */}
             <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
               We start with your last filed return and your current lending, work out what the restriction is costing
               you this year and next, then price the realistic alternatives against that number. You get a written
@@ -961,15 +1030,15 @@ export default function Section24Page() {
               we quote after a short consultation.
             </p>
 
-            <div className="mt-8 rounded-xl bg-slate-900 p-6 sm:p-10 text-white">
-              <Eyebrow onDark>Deliverables</Eyebrow>
-              <h3 className="text-xl font-bold text-white sm:text-2xl mb-4 sm:mb-6">What the review gives you</h3>
+            <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+              <h3 className="text-base font-bold text-slate-900 sm:text-lg">What the review gives you</h3>
               {/* The ticks write themselves in the first time the block scrolls
-                  into view. Same shared DrawnTickList as the identical navy
-                  deliverables block on /services/property-tax-advice. */}
+                  into view. Same shared DrawnTickList as the navy deliverables
+                  bands on /services/property-tax-advice and /incorporation. */}
               <DrawnTickList
                 items={reviewIncludes}
-                className="grid gap-4 text-sm text-slate-200 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-5 sm:text-base"
+                tickClassName="text-emerald-600"
+                className="mt-5 grid gap-4 text-sm text-slate-700 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-5 sm:text-base"
               />
             </div>
 
@@ -1004,10 +1073,20 @@ export default function Section24Page() {
             <div className="mt-8 sm:mt-10">
               <CalculatorTabs />
             </div>
-            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-900">
-              Or open any of them on its own page:
-            </p>
-            <CalculatorLinkCards items={calculatorLinks} />
+            {/* OWNER DECISION 2026-08-23: the tabs are the only calculator
+                surface this page carries. The 2x2 CalculatorLinkCards module and
+                its "Or open any of them on its own page" lead-in are both gone,
+                the same call already applied to /services/property-accountant
+                and /services/property-tax-advice.
+
+                Know what that costs before restoring anything here.
+                `CalculatorTabs` renders <button role="tab">, not anchors, so
+                this page now emits ZERO in-body links to any /calculators/<slug>
+                page. That is the page-authored topical equity carve-out 5
+                protects and `calculator-tabs-crawl-path.test.ts` guards; this
+                route is listed in that test's OWNER_REMOVED_INBODY_LINKS with
+                the same reasoning. Reachability is unaffected (SiteFooter ships
+                per-tool links site-wide), so nothing is orphaned. */}
           </div>
         </div>
       </section>
