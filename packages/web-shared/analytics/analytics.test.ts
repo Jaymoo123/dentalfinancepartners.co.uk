@@ -461,6 +461,17 @@ describe("buildSession", () => {
     expect(session.human_confirmed).toBe(true);
   });
 
+  it("support_opened alone does NOT confirm a human", () => {
+    // SpecialistWidget auto-opens and emits this with via="auto", so it proves a
+    // page rendered, not that a person acted. Counting it let the 2026-08-22 bot
+    // fleet through the analytics bot gate.
+    const session = buildSession(
+      [makeEvent("page_view"), makeEvent("support_opened", { props: { via: "auto" } })],
+      ctx,
+    );
+    expect(session.human_confirmed).toBe(false);
+  });
+
   it("engagement_time deltas are summed", () => {
     const session = buildSession(
       [

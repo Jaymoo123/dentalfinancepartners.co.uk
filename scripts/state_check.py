@@ -405,6 +405,34 @@ def lane_jobs(ctx: Ctx) -> list[dict]:
     except Exception:
         pass
 
+    # Analytics bot gate. Two facts, deliberately NOT promoted to an alarm: the
+    # caretaker reasons over them on its monthly monitor audit, and a number that
+    # drifts is a question for a human, not a thing to wake anyone for.
+    #
+    # bot_scorer.stale_days is the fact that would have caught the 2026-08-23
+    # incident: the scorer had not written a verdict since 08-17 and nothing said
+    # so, which is why a new fleet sat in the human numbers for two days.
+    # bot_share_pct_7d is the monthly line: a step change in it means either the
+    # gate broke or the traffic mix changed, and both are worth a look.
+    try:
+        r = ctx.sql(
+            "select coalesce(extract(day from now() - max(started_at))::int, 999) as d"
+            " from web_sessions where bot_score is not null"
+        )
+        out.append(fact("jobs", "bot_scorer.stale_days", int(r[0]["d"]),
+                        "days since the scorer last wrote a verdict"))
+    except Exception:
+        pass
+    try:
+        r = ctx.sql(
+            "select round(100.0 * count(*) filter (where is_bot) / nullif(count(*), 0), 1) as pct"
+            " from web_sessions where started_at >= now() - interval '7 days'"
+        )
+        out.append(fact("jobs", "analytics.bot_share_pct_7d", float(r[0]["pct"] or 0),
+                        "share of sessions the bot gate excluded, last 7 days"))
+    except Exception:
+        pass
+
     return out
 
 

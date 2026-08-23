@@ -77,6 +77,81 @@ Vercel (Property project): `SENTRY_DSN` `HEARTBEAT_LEAD_NURTURE`
 Missing secrets self-report: the `secrets` lane alarms on any of these a live
 workflow references but the repo lacks.
 
+## Incident 2026-08-23: a bot fleet doubled reported visitors, and the bot gate paid it a humanity credit
+
+Found by the owner reading the dashboard, which is the wrong way round. Estate
+Sunday visitors read 669 against a normal 150 to 180. Property read 240 against a
+true 115.
+
+**Cause, part one: a new fleet the ingest gate cannot see.** From 2026-08-22 a
+crawler fleet arrived carrying a genuine Chrome-on-Windows User-Agent from GB
+addresses with `timezone = Europe/London`. `detectBot()` in
+`packages/web-shared/analytics/server/bots.ts` is a User-Agent regex, so it has
+nothing to match on and passes every one of them. Their signature is behavioural,
+not textual: no referrer, viewport 800x600 or null, `engaged_ms` 0,
+`max_scroll_pct` 0, and one fingerprint appearing on eight to thirteen unrelated
+sites in a single day. On 2026-08-23, 518 of 686 non-bot sessions estate-wide
+(76%) had zero engagement and zero scroll, against a 25 to 30% baseline.
+
+**Cause, part two, and the reason nothing caught part one: `support_opened` was
+counted as proof of a human.** `SpecialistWidget` auto-opens and emits
+`support_opened` with `props.via = "auto"`. Across the estate 2026-08-20 to
+08-23, 1,921 of 1,934 of those events (99.4%) were `via:"auto"`, which is a page
+opening a widget at itself. The event sat in `INTERACTION_EVENTS`
+(`packages/web-shared/analytics/types.ts`), so ingest flipped
+`web_sessions.human_confirmed = true` on it, and it sat in `HUMAN_SIGNAL_EVENTS`
+in `optimisation_engine/analysis/bot_scorer.py`, so the scorer paid it 0.10 of
+humanity credit. Every headless hit that merely loaded a page bought itself a
+human badge. This has been true since the widget shipped 2026-06-06, so it
+inflated the whole history, not just the incident.
+
+**Cause, part three: the backstop was not running.** `bot_scorer.py` last wrote a
+`bot_score` for a session started 2026-08-17, and nothing schedules it. The
+weekly optimisation workflows have been disabled since 2026-07-13. A dry run over
+the incident days flipped nothing, so even a scheduled scorer would have passed
+the fleet through: at 0.20 out of a 1.65 normalised maximum, `W_NO_HUMAN_SIGNAL`
+alone reaches 0.12 against a 0.60 threshold, and these sessions score near zero on
+every other mechanical axis because they emit almost nothing.
+
+**Fix.**
+1. `support_opened` removed from `INTERACTION_EVENTS` and from
+   `HUMAN_SIGNAL_EVENTS`, with the reasoning recorded at both sites. It is still a
+   tracked event and still renders in the visitor journey; it just no longer
+   testifies to a human. Takes effect at each site's next deploy.
+2. A deterministic `passive_session` rule added to `score_session()`: three or
+   more events, no interaction event of any kind, no frustration click, no form
+   contact, `engaged_ms = 0` and `max_scroll_pct = 0` means a bot regardless of
+   score. The client only emits `engagement_time` after a real pointer, keyboard,
+   touch or scroll input, and only emits `scroll_depth` on a genuine scroll, so
+   all of those being empty together means nothing drove the page.
+3. `HUMAN_SIGNAL_EVENTS` realigned with `INTERACTION_EVENTS` (it had been missing
+   `form_step_complete`, `form_step_back`, `resource_unlocked`,
+   `subscribe_submitted`, `experiment_action`), so the Python and TypeScript
+   definitions of "a human did something" no longer disagree.
+
+**Sizing, measured before shipping, estate-wide over 2026-08-01 to 08-23.** The
+rule removes about 14% of an ordinary day and 47% and 66% of 08-22 and 08-23. The
+14% is real zero-interaction bounces that we cannot distinguish from bots and
+which carry no behavioural data either way. Property's corrected series: 08-20
+248 to 217, 08-21 214 to 184, 08-22 162 to 110, 08-23 241 to 115. The 2026-08-04
+estate spike (1,075) survives the filter untouched, correctly: that was the real
+Solicitors Google Discover event.
+
+**Backfill.** 5,308 sessions from 2026-06-01 onward match the rule and are still
+marked human. Until they are flipped, every historical comparison across this
+date is unsafe, including the Property redesign before/after. The backfill tags
+`bot_reason = 'passive_session (backfill 2026-08-23)'`, so it reverses exactly:
+`update web_sessions set is_bot = false, human_confirmed = true
+ where bot_reason like '%backfill 2026-08-23%'`. **Status: not yet applied,
+owner decision pending** (it rewrites reported history, so it was not done
+unilaterally).
+
+**Open.** Nothing schedules `bot_scorer.py`. Without a schedule this recurs the
+next time a fleet changes shape. Arming one is an owner decision because it is a
+new scheduled job.
+
+---
+
 ## Incident 2026-08-16: the estate was undeployable for nine days and nothing said so
 
 Found by trying to deploy, which is the point. Property deployed first time.

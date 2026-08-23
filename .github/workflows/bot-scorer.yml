@@ -1,0 +1,62 @@
+name: Bot scorer
+
+# Re-scores recent analytics sessions human-vs-bot and writes
+# web_sessions.{bot_score, is_bot, bot_reason}. This is the backstop behind the
+# ingest User-Agent check, which by construction cannot see a crawler carrying a
+# real browser UA.
+#
+# Armed 2026-08-23, owner-authorised, after a fleet doing exactly that doubled
+# reported visitors for two days. Cause and sizing:
+# docs/_engines/CARETAKER.md, "Incident 2026-08-23".
+#
+# SILENT BY DESIGN. It sends nothing, ever. Routine state is read on the console
+# dashboard, and the bot share reaches the owner as one line in the caretaker's
+# monthly monitor audit, via the state_check facts jobs/bot_scorer.stale_days and
+# jobs/analytics.bot_share_pct_7d. The only way this workflow speaks is by
+# crashing, which is a real defect and GitHub's own notification covers it.
+#
+# Cost per run: zero paid API calls. It reads and writes Supabase over PostgREST
+# and calls no LLM.
+#
+# Idempotent: re-scoring a session writes the same verdict, so a re-run or an
+# overlapping window is a no-op rather than a correction.
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # daily, 03:00 UTC, before state-check reads its facts at 06:00
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to re-score"
+        required: false
+        default: "3"
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install --quiet httpx python-dotenv
+
+      - name: Check the rule before trusting it with writes
+        run: python -m optimisation_engine.analysis.bot_scorer --self-check
+
+      - name: Score every site
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          # 3 days, not 1: a session started before midnight keeps receiving
+          # events after it, so yesterday's verdict can still be wrong today.
+          DAYS: ${{ github.event.inputs.days || '3' }}
+        run: |
+          for site in property generalist solicitors dentists medical agency \
+                      construction-cis contractors-ir35 ecommerce charities care \
+                      hospitality pharmacies startups-tech crypto; do
+            python -m optimisation_engine.analysis.bot_scorer "$site" --days="$DAYS"
+          done

@@ -103,7 +103,22 @@ produced three property-only isolated experiments, built through the §9 machine
 **NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
 track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
 
-## 0.22 Designer redesign PORT — ALL BUILD PHASES COMPLETE 2026-08-23, NOT DEPLOYED (Phase 9 is owner-triggered)
+## 0.22 Designer redesign PORT — ALL BUILD PHASES COMPLETE 2026-08-23, **DEPLOYED 2026-08-23 20:21 UTC**
+
+> **CUTOVER: 2026-08-23 20:21 UTC.** Two production deploys, 20:21:50Z and 20:34:05Z (Vercel
+> project `prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU`). Independently corroborated twice: the day's
+> first lead landed 09:38:38Z on the old design, the second 20:47:16Z, thirteen minutes after
+> the second deploy, on the new one. Prod HTML carries the DECISION L proof point
+> ("280+ Properties enquired about") and the `lg:inline-flex` header CTA, so the last commit on
+> the branch is live.
+>
+> **Before/after read: `python scripts/_q.py scripts/property_design_ab.sql`.** That file holds
+> the window, the two traps, and the precondition. Do not compare `header_book` alone across
+> this date: commit `d4f24e25` moved the CTA from `sm:` to `lg:`, so tablet volume shifted to
+> the `header_book_mobile` row. Sum the pair. And do not read the comparison at all until the
+> analytics bot backfill in 0.23 has been applied, or the BEFORE side is inflated and the
+> redesign reads as a loss it did not cause. Give it three to four full weeks.
+
 
 **What this is.** On 2026-07-16 the Property site source was pushed to `Property_zip` so an
 external designer (Tanjiah, Double Wired Creative) could rework design, branding and
