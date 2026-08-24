@@ -1,23 +1,16 @@
 """Market report engine: the proposal document's data story without the commercial
-half. No pricing, no terms, no lead ledger, no site names anywhere: the portfolio
-is described only as specialist UK tax and accounting sites, and the breadth chart
-labels bands by specialism, never by brand or domain.
+half. No pricing, no terms, no lead ledger, no tier grades, no brand and no site
+names anywhere: the portfolio is described only as specialist UK tax and
+accounting sites, and the breadth chart labels bands by specialism, never by
+brand or domain. Anonymous document: ref + date only, no recipient line.
 
 Usage (repo root):  python proposal_engine/generate_report.py
-Needs the same .env as generate_proposal.py, plus working GSC OAuth and
-BING_WEBMASTER_API_KEY for the demand section (sites that fail either API are
-skipped and counted in the coverage note, which understates demand, never
-overstates it).
-
-Recipient + ref are the constants below: this is a one-recipient document, not
-a per-prospect pipeline like the proposal.
+Needs the same .env as generate_proposal.py.
 """
 import os
-import re
-import statistics
 import sys
 from collections import Counter, defaultdict
-from datetime import date, datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone
 from string import Template
 
 import numpy as np
@@ -32,15 +25,11 @@ os.chdir(ROOT)  # env() reads .env relative to the repo root
 sys.path.insert(0, ROOT)
 sys.path.insert(0, HERE)
 
-from generate_proposal import (ACCENT, BRAND_NAME, DTIER_COLOR, DTIER_LABEL,
-                               DTIER_ORDER, GREY_BAR, GREY_MID, INKC,
-                               LEGAL_ENTITY, SOURCE_META, b64_fig,
-                               case_type_label, env, get, number_sections,
-                               strip_block, style_ax)
+from generate_proposal import (ACCENT, GREY_BAR, GREY_MID, INKC, SOURCE_META,
+                               b64_fig, case_type_label, env, get,
+                               number_sections, strip_block, style_ax)
 import analysis as an
 
-# Recipient. One-off document, so no prospects/ machinery.
-CLIENT_NAME = "Michael"
 REPORT_REF = "MKT-2026-001"
 REPORT_DATE = datetime.now(timezone.utc).strftime("%#d %B %Y")
 
@@ -57,68 +46,18 @@ SPECIALISM_LABEL = {
 }
 BREADTH_COLORS = ["#1a6b52", "#3d8069", "#699c88", "#9aa1a9", "#bfc4ca", "#dfe2e6"]
 
-BING_MS = re.compile(r"/Date\((\d+)")
+# The shared label references tier grading, which this document deliberately
+# omits; same category, grading language removed.
+REPORT_CT_LABEL = {"too_vague": "Too vague to place"}
+
+
+def ct_label(tag):
+    return REPORT_CT_LABEL.get(tag) or case_type_label(tag)
 
 
 def specialism(src):
     return SPECIALISM_LABEL.get(src) or SOURCE_META.get(
         src, {}).get("specialism", (src or "unknown").replace("_", " ")).capitalize()
-
-
-def gsc_daily(site_key, days=182):
-    """{date: (clicks, impressions)} from the GSC API, date dimension only."""
-    from optimisation_engine.clients.gsc_query_client import GSCQueryFetcher
-    f = GSCQueryFetcher(site_key)
-    end = date.today()
-    body = {"startDate": (end - timedelta(days=days)).isoformat(),
-            "endDate": end.isoformat(), "dimensions": ["date"], "rowLimit": 25000}
-    rows = (f.gsc_client.service.searchanalytics()
-            .query(siteUrl=f.site["gsc_property_url"], body=body).execute()
-            .get("rows", []))
-    return {date.fromisoformat(r["keys"][0]):
-            (r.get("clicks", 0), r.get("impressions", 0)) for r in rows}
-
-
-def bing_daily(site_key):
-    """{date: (clicks, impressions)} from GetRankAndTrafficStats (site totals;
-    GetQueryStats is top-queries-only and undercounts, never use it here)."""
-    from optimisation_engine.clients.bing_query_client import BingQueryFetcher
-    f = BingQueryFetcher(site_key)
-    rows = f.client._call("GetRankAndTrafficStats",
-                          {"siteUrl": f._resolve_site_url()}) or []
-    out = {}
-    for r in rows:
-        ms = int(BING_MS.search(r["Date"]).group(1))
-        d = datetime.fromtimestamp(ms / 1000, tz=timezone.utc).date()
-        out[d] = (r.get("Clicks", 0), r.get("Impressions", 0))
-    return out
-
-
-def merge_daily(per_site):
-    total = defaultdict(lambda: [0, 0])
-    for series in per_site:
-        for d, (c, i) in series.items():
-            total[d][0] += c
-            total[d][1] += i
-    return dict(total)
-
-
-def weekly_sums(daily, value_idx):
-    """Complete Mon-anchored weeks only: {week_start: sum}."""
-    if not daily:
-        return {}
-    weeks = defaultdict(int)
-    counts = defaultdict(int)
-    for d, v in daily.items():
-        w = d - timedelta(days=d.weekday())
-        weeks[w] += v[value_idx]
-        counts[w] += 1
-    return {w: s for w, s in sorted(weeks.items()) if counts[w] == 7}
-
-
-def last_30(daily, value_idx):
-    ds = sorted(daily)
-    return sum(daily[d][value_idx] for d in ds[-30:]), (ds[-30], ds[-1]) if len(ds) >= 30 else (ds[0], ds[-1])
 
 
 def main():
@@ -164,52 +103,16 @@ def main():
     run_rate, rr_lo, rr_hi = an.bootstrap_runrate(leads, now)
     fc4 = mu[FIT_W:FIT_W + 4].sum()
 
-    # --- search demand: GSC + Bing per site, failures tolerated + counted ---
-    from optimisation_engine.config import get_sites
-    # Internal tools (screeners etc.) carry site rows but are not portfolio sites;
-    # keep the coverage denominator to real lead sites only.
-    site_keys = sorted(s["site_key"] for s in get_sites(active_only=False)
-                       if s["site_key"] in SOURCE_META)
-    g_series, b_series, g_ok, b_ok = [], [], [], []
-    for sk in site_keys:
-        try:
-            s = gsc_daily(sk)
-            if s:
-                g_series.append(s)
-                g_ok.append(sk)
-        except Exception as exc:
-            print(f"[GSC] {sk} skipped: {exc}")
-        try:
-            s = bing_daily(sk)
-            if s:
-                b_series.append(s)
-                b_ok.append(sk)
-        except Exception as exc:
-            print(f"[BING] {sk} skipped: {exc}")
-    print(f"search coverage: GSC {len(g_ok)}/{len(site_keys)}, Bing {len(b_ok)}/{len(site_keys)}")
-    g_daily, b_daily = merge_daily(g_series), merge_daily(b_series)
-    g_imp30, g_win = last_30(g_daily, 1)
-    b_imp30, b_win = last_30(b_daily, 1)
-    g_clk30, _ = last_30(g_daily, 0)
-    b_clk30, _ = last_30(b_daily, 0)
-    imp30, clk30 = g_imp30 + b_imp30, g_clk30 + b_clk30
-
-    # --- tier / case-type stats ---
-    tiers = Counter(s["case_tier"] for _, s in scored)
+    # --- case-type stats (case type only: tiers deliberately absent) ---
     case_types = Counter(s["case_type"] for _, s in scored if s.get("case_type"))
-    tier_by_month = defaultdict(Counter)
-    for l, s in scored:
-        tier_by_month[l["created_at"][:7]][s["case_tier"]] += 1
     months = Counter(l["created_at"][:7] for l in leads)
     month_keys = sorted(months)
     fmt_m = lambda m: datetime.strptime(m, "%Y-%m").strftime("%B %Y")
 
     ct_rows = []
     for ct, n in case_types.most_common(12):
-        by_tier = Counter(s["case_tier"] for _, s in scored if s.get("case_type") == ct)
-        split = ", ".join(f"{by_tier[t]} {DTIER_LABEL[t]}" for t in DTIER_ORDER if by_tier[t])
-        ct_rows.append(f"<tr><td>{case_type_label(ct)}</td><td class='num'>{n}</td>"
-                       f"<td class='num'>{n/n_scored:.0%}</td><td>{split}</td></tr>")
+        ct_rows.append(f"<tr><td>{ct_label(ct)}</td><td class='num'>{n}</td>"
+                       f"<td class='num'>{n/n_scored:.0%}</td></tr>")
 
     # --- breadth: leads by specialism by month, top 5 + other ---
     by_src = Counter(l.get("source") or "unknown" for l in leads)
@@ -282,8 +185,7 @@ def main():
     a1.plot(all_days, cum, color=ACCENT, lw=1.8)
     a1.fill_between(all_days, 0, cum, color=ACCENT, alpha=0.07)
     a1.annotate(f"{len(leads)}", (all_days[-1], cum[-1]), ha="left", va="center",
-                fontsize=9, color=ACCENT, fontweight="bold",
-                xytext=(4, 0), textcoords="offset points")
+                fontsize=8, color=ACCENT, xytext=(4, 0), textcoords="offset points")
     a1.set_title("CUMULATIVE ENQUIRIES", loc="left")
     a1.margins(x=0.04, y=0.08)
     style_ax(a1, keep_y=True)
@@ -337,65 +239,28 @@ def main():
     style_ax(ax)
     chart_flow = b64_fig(fig)
 
-    # Figure 3: weekly search impressions, Google + Bing
-    gw = weekly_sums(g_daily, 1)
-    bw = weekly_sums(b_daily, 1)
-    fig, ax = plt.subplots(figsize=(9.2, 2.6))
-    if gw:
-        ax.plot(list(gw), list(gw.values()), color=ACCENT, lw=1.8, label="Google")
-    if bw:
-        ax.plot(list(bw), list(bw.values()), color=GREY_MID, lw=1.6, label="Bing")
-    ax.legend(frameon=False, fontsize=8, loc="upper left")
-    ax.set_title("WEEKLY SEARCH IMPRESSIONS ACROSS THE PORTFOLIO", loc="left")
-    ax.yaxis.set_major_formatter(lambda v, _: f"{v/1000:.0f}k" if v else "0")
-    ax.set_ylim(0, None)
-    ax.margins(x=0.02, y=0.1)
-    style_ax(ax, keep_y=True)
-    ax.tick_params(axis="x", labelsize=7.5)
-    ax.xaxis.set_major_locator(matplotlib.dates.MonthLocator())
-    ax.xaxis.set_major_formatter(matplotlib.dates.DateFormatter("%b"))
-    chart_demand = b64_fig(fig)
-
-    # Figure 4: tier mix by month + case types (proposal Figure 2)
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(9.2, 2.7), gridspec_kw={"width_ratios": [1, 1.3]})
-    mkeys = [m for m in month_keys if sum(tier_by_month[m].values()) > 0]
-    bottoms = np.zeros(len(mkeys))
-    for t in DTIER_ORDER[::-1]:
-        h = np.array([tier_by_month[m][t] for m in mkeys], float)
-        a1.bar([fmt_m(m)[:3] + " " + m[2:4] for m in mkeys], h, bottom=bottoms,
-               color=DTIER_COLOR[t], width=0.5, label=DTIER_LABEL[t])
-        bottoms += h
-    for x, v in enumerate(bottoms):
-        a1.annotate(f"{v:.0f}", (x, v), ha="center", va="bottom", fontsize=7.5, color=GREY_MID)
-    a1.legend(frameon=False, fontsize=7, ncol=3, loc="upper left", handlelength=1, handleheight=1)
-    a1.set_title("GRADED LEADS BY TIER AND MONTH", loc="left")
-    a1.margins(y=0.3)
-    style_ax(a1)
-    a1.tick_params(axis="x", labelsize=7.5)
+    # Figure 3: case types in the flow, single accent
     top_ct = case_types.most_common(10)[::-1]
-    ct_labels = [case_type_label(c) for c, _ in top_ct]
+    ct_labels = [ct_label(c) for c, _ in top_ct]
     ct_counts = [n for _, n in top_ct]
-    ct_colors = [DTIER_COLOR[Counter(s["case_tier"] for _, s in scored
-                                     if s.get("case_type") == c).most_common(1)[0][0]]
-                 for c, _ in top_ct]
+    fig, ax = plt.subplots(figsize=(9.2, 2.7))
     y = np.arange(len(top_ct))
-    a2.barh(y, ct_counts, color=ct_colors, height=0.62)
-    a2.set_yticks(y)
-    a2.set_yticklabels(ct_labels, fontsize=7.5)
+    ax.barh(y, ct_counts, color=ACCENT, height=0.62)
+    ax.set_yticks(y)
+    ax.set_yticklabels(ct_labels, fontsize=7.5)
     for yy, v in zip(y, ct_counts):
-        a2.annotate(str(v), (v, yy), ha="left", va="center", fontsize=7.5,
+        ax.annotate(str(v), (v, yy), ha="left", va="center", fontsize=7.5,
                     color=GREY_MID, xytext=(3, 0), textcoords="offset points")
-    a2.set_title("CASE TYPES IN THE FLOW, COLOURED BY TIER", loc="left")
-    a2.set_xticks([])
-    a2.margins(x=0.12)
+    ax.set_title("CASE TYPES IN THE FLOW", loc="left")
+    ax.set_xticks([])
+    ax.margins(x=0.12)
     for side in ("top", "right", "bottom"):
-        a2.spines[side].set_visible(False)
-    a2.spines["left"].set_color("#dfe2e6")
-    a2.tick_params(length=0)
-    fig.tight_layout(w_pad=3)
+        ax.spines[side].set_visible(False)
+    ax.spines["left"].set_color("#dfe2e6")
+    ax.tick_params(length=0)
     chart_quality = b64_fig(fig)
 
-    # Figure 5: monthly enquiries by specialism (top 5 + other), stacked
+    # Figure 4: monthly enquiries by specialism (top 5 + other), stacked
     fig, ax = plt.subplots(figsize=(9.2, 2.7))
     stack_keys = top_src + (["_other"] if any(
         src_by_month[m]["_other"] for m in month_keys) else [])
@@ -416,7 +281,7 @@ def main():
     ax.tick_params(axis="x", labelsize=7.5)
     chart_breadth = b64_fig(fig)
 
-    # Figure 6: arrival timing (proposal Figure 3)
+    # Figure 5: arrival timing (proposal Figure 3)
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(9.2, 2.2))
     dlabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
     a1.bar(dlabels, dows, color=[ACCENT if i < 5 else GREY_BAR for i in range(7)], width=0.55)
@@ -456,37 +321,16 @@ def main():
         f"of {rr_lo} to {rr_hi} on a typical 30-day window at the current rate. On the fitted "
         f"trend the next four weeks imply roughly {fc4:.0f} leads, and with a short history the "
         f"interval band should carry more weight than any point estimate.")
-    demand_commentary = (
-        f"In the trailing 30 days the portfolio's pages were shown {imp30:,} times in search "
-        f"results ({g_imp30:,} on Google, {b_imp30:,} on Bing) and received {clk30:,} search "
-        f"visits, which produced {run_rate} enquiries: roughly one enquiry per "
-        f"{clk30 // max(run_rate, 1):,} visits. Two things follow. First, the enquiry flow is "
-        f"not a scrape or a purchased list; it is the visible tip of a search audience the "
-        f"engines themselves measure in the hundreds of thousands of impressions per month. "
-        f"Second, the flow has headroom: volume growth comes from the portfolio continuing to "
-        f"win impressions and convert visits, both of which the sites' publishing programme "
-        f"works on continuously, not from any change to what an enquiry is.")
-    top_ct_label = case_type_label(case_types.most_common(1)[0][0]) if case_types else "n/a"
+    top_ct_label = ct_label(case_types.most_common(1)[0][0]) if case_types else "n/a"
     top_ct_n = case_types.most_common(1)[0][1] if case_types else 0
-    msg_by_tier = defaultdict(list)
-    for l, s in scored:
-        msg_by_tier[s["case_tier"]].append(len((l.get("message") or "").strip()))
     detailed = sum(1 for l in leads if len((l.get("message") or "").strip()) >= 120)
-    recent3 = month_keys[-3:]
-    adv_recent = sum(tier_by_month[m]["advisory"] for m in recent3)
-    all_recent = sum(sum(tier_by_month[m].values()) for m in recent3) or 1
     quality_commentary = (
-        f"Of the {n_scored} graded leads, {tiers['advisory']} ({tiers['advisory']/n_scored:.0%}) "
-        f"grade to Advisory, {tiers['standard']} ({tiers['standard']/n_scored:.0%}) to Standard "
-        f"and {tiers['essential']} ({tiers['essential']/n_scored:.0%}) to Essential. The mix has "
-        f"held as volume has grown: across the most recent three months the Advisory share is "
-        f"{adv_recent/all_recent:.0%}, so the growth is not being bought with thinner enquiries. "
-        f"The largest single case type is {top_ct_label.lower()} at {top_ct_n} enquiries. These "
-        f"sites publish structural and planning guidance, so they attract that kind of enquiry. "
-        f"Message substance tracks the grade: median message length is "
-        f"{statistics.median(msg_by_tier.get('advisory', [0])):.0f} characters in Advisory "
-        f"against {statistics.median(msg_by_tier.get('essential', [0])):.0f} in Essential, and "
-        f"{detailed} of {len(leads)} enquiries arrive with a detailed written brief.")
+        f"The largest single case type is {top_ct_label.lower()} at {top_ct_n} enquiries. "
+        f"These sites publish structural and planning guidance, so they attract enquiries "
+        f"about structure and planning rather than price-shopping for a basic return. The "
+        f"substance shows in the messages themselves: {detailed} of {len(leads)} enquiries "
+        f"arrive with a detailed written brief describing the enquirer's situation and what "
+        f"they want help with.")
     n_specs = len(by_src)
     top_share = by_src.most_common(1)[0][1] / len(leads)
     newest = [s for s, m in sorted(first_lead_by_src.items(), key=lambda x: x[1])[-3:]]
@@ -503,43 +347,23 @@ def main():
         f"strongest conversion lever the receiving firm controls; the profile above shows most "
         f"leads can be called back the same working day.")
 
-    bing_history_note = ("Bing's API retains roughly 14 weeks of daily history, so its "
-                         "series starts later than Google's.")
-    if len(g_ok) == len(site_keys) and len(b_ok) == len(site_keys):
-        coverage_note = (f"Search totals cover all {len(site_keys)} portfolio sites on both "
-                         f"consoles. {bing_history_note}")
-    else:
-        coverage_note = (
-            f"Google data covers {len(g_ok)} of {len(site_keys)} portfolio sites and Bing "
-            f"data {len(b_ok)} of {len(site_keys)}; any site missing from either console "
-            f"understates the search totals shown. {bing_history_note}")
-
     tpl = open(os.path.join(HERE, "template_report.html"), encoding="utf-8").read()
     if not nurture_on:
         tpl = strip_block(tpl, "nurture")
     html = Template(tpl).safe_substitute(
-        brand_name=BRAND_NAME, legal_entity=LEGAL_ENTITY,
-        client_name=CLIENT_NAME, report_date=REPORT_DATE, report_ref=REPORT_REF,
+        report_date=REPORT_DATE, report_ref=REPORT_REF,
         total_leads=len(leads),
         first_month=datetime.strptime(month_keys[0], "%Y-%m").strftime("%b %Y"),
         last_month=datetime.strptime(month_keys[-1], "%Y-%m").strftime("%b %Y"),
         record_30d=record, record_30d_date=record_date.strftime("%#d %b %Y"),
         run_rate=run_rate, run_rate_ci=f"{rr_lo}–{rr_hi}",
-        advisory_share=f"{tiers['advisory']/n_scored:.0%}",
-        n_scored=n_scored, n_weeks=len(wc),
-        chart_volume=chart_volume, chart_flow=chart_flow, chart_demand=chart_demand,
+        n_specs=n_specs, n_scored=n_scored, n_weeks=len(wc),
+        chart_volume=chart_volume, chart_flow=chart_flow,
         chart_quality=chart_quality, chart_breadth=chart_breadth, chart_timing=chart_timing,
-        imp_30d=f"{imp30:,}", clicks_30d=f"{clk30:,}", leads_30d=run_rate,
-        imp_split=f"{g_imp30:,} Google · {b_imp30:,} Bing",
-        clicks_split=f"{g_clk30:,} Google · {b_clk30:,} Bing",
-        ctr_30d=f"{clk30/imp30:.1%}" if imp30 else "n/a",
-        enq_rate=f"{run_rate/clk30:.1%}" if clk30 else "n/a",
         volume_commentary=volume_commentary, trend_commentary=trend_commentary,
-        demand_commentary=demand_commentary, quality_commentary=quality_commentary,
+        quality_commentary=quality_commentary,
         breadth_commentary=breadth_commentary, timing_commentary=timing_commentary,
         case_type_rows="\n    ".join(ct_rows),
-        demand_caption_note=bing_history_note,
-        search_coverage_note=coverage_note,
         **nurture_vars)
     html = number_sections(html)
 
