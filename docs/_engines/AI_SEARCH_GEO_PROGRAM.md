@@ -1,6 +1,8 @@
 # AI-Search + Bing-Family GEO Program
 
-**Status:** EXECUTING — direction + decisions locked 2026-06-16; **FULL-AUTO authorization granted 2026-06-17** (this program only): build, migrate, deploy, and fire IndexNow without per-step sign-off, reporting after each phase. Guardrails retained: deterministic verification (build green + predeploy/link gates + ground-truth fact-check) before any deploy; de-stale BEFORE accelerating IndexNow; do not touch `contractors-ir35/` (another agent active there); A* quality bar.
+> **SUPERSEDED NOTE (2026-08-24):** the 2026-06-17 FULL-AUTO deploy authorization below is EXPIRED and does not carry forward. Deploys and IndexNow are owner-triggered per turn, per the standing rules and `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md` appendix K. Per-site data claims in this doc are June-2026 snapshots (e.g. "Dentists has 0 Bing rows" is false today: 14k+ rows); re-derive before use. Any DeepSeek instruction herein is void (DeepSeek is banned estate-wide).
+
+**Status:** EXECUTING — direction + decisions locked 2026-06-16; ~~**FULL-AUTO authorization granted 2026-06-17**~~ (expired, see note above): build, migrate, deploy, and fire IndexNow without per-step sign-off, reporting after each phase. Guardrails retained: deterministic verification (build green + predeploy/link gates + ground-truth fact-check) before any deploy; de-stale BEFORE accelerating IndexNow; do not touch `contractors-ir35/` (another agent active there); A* quality bar.
 **Owner mode:** Opus architects + gates; Sonnet sub-agents do generation/build slices; manager does infra/verify/prod gates direct.
 **Source of truth for findings:** 16-agent audit `wss7razd7` (7 Property deep-dives + 3 web-research + 5 site gap-audits + 1 Opus synthesis), 2026-06-16.
 
