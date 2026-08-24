@@ -604,3 +604,141 @@ Every page passes the §4.1 floor and the §0 checklist; every page's unique out
 ## I. Copy rules (site-wide, enforced at QA)
 
 British English. No em-dashes anywhere in user-facing copy (grep gate). No claims of clients/customers/served/advised (no client records exist anywhere in the estate; "280+ Properties enquired about" is the evidenced pattern: count enquiries, not clients). Testimonials anonymised (role + detail + initials). No named experts, no regulated-activity claims, advice words only in negation. Every figure re-derivable from `house_positions.md` with a §-reference; example figures carry `ExampleFigureNote`. Reassurance copy near capture fields checked against the privacy policy. Page summaries live in one `lib/page-summaries.ts` per site (one sentence per non-article route, read by both the owning page's hero and every card that references it, so they cannot drift; guarded by a first-sentence test).
+
+## J. The estate niche-cluster registry (which niche lives on which site)
+
+The unique-assignment principle from `REWRITE_PROGRAM.md` §9.4 applies at ESTATE level, not just page level: every niche from the 89-row universe (`expansion_research/R1_NICHE_CANDIDATES.md`) is owned by exactly ONE site, either as the site's core or as a named content cluster. Two sites writing the same niche is estate-level cannibalisation; before any site opens a cluster, check this table, and record new assignments here in the same session. Volumes are the R2D cluster figures (`accountant for X` family, `expansion_research/R2D_VOLUMES.md`); "regardless of demand" (the owner's coverage directive) means every assigned cluster gets at least one cohort, but demand still sets its ceiling and read schedule.
+
+| Site | Core niche(s) | Adjacent-niche clusters to fold into its corpus (R1 row, cluster vol/mo) |
+|---|---|---|
+| Property | landlords, property investors | property mgmt companies (#5, 20), property developers (#4, 210), Airbnb/FHL (#3), estate/letting agents (#6, done: agents1/wave12), landed/rural estates (#7, done: landed1), farmers conversion (#68, done: rural cluster), expats/NRL (#80, 230, per TIER2 conversion), HNW property angle (#81, 140) |
+| construction-cis | CIS subcontractors, builders | plumbers (#10, 10), electricians (#11, 220), painters (#12, 0), landscapers (#13, 0), tradespeople umbrella (#14, 130), scaffolding/roofing variants within trades family |
+| Medical | doctors/GPs, locums | locum doctors (#17), nurses (#23, 60), therapists/allied health (#22, 50 but 108k companies, strongest unscored signal), opticians (#20, 90), vets (#21, 120) unless either is later promoted to its own site |
+| Dentists | dentists | dental associates/incorporation/practice-purchase subtopics (no separate R1 rows; deepen the core) |
+| Solicitors | solicitors | barristers (#29), settlement-agreement accounting/tax angle if the owner keeps it as a cluster rather than a new site (LEADGEN sweep Tier 1) |
+| contractors-ir35 | IT contractors, freelancers | management consultants (#32, 680), virtual assistants (#83, 20), pilots (#67, 10), engineers day-rate angle (#51, 130) |
+| digital-agency | marketing agencies | content creators/influencers (#37, 310), OnlyFans creators (#38, 160), photographers (#46, 130), interior designers (#47, 40) |
+| startups-tech | startups, tech/SaaS | life sciences (#86, 10), energy/renewables (#85, 440), architects (#50, 120) if not generalist |
+| ecommerce | ecommerce sellers | Amazon FBA (#36, 300), used-car dealers (#70, 80) |
+| crypto | crypto traders | day/forex traders (#40, 130) |
+| charities | charities | CICs (#75, 90), churches (#76, 30), schools/academies (#77, 50), sports clubs (#62, 0) |
+| hospitality | restaurants, hospitality | takeaways (#54, 10), pubs (#55, 450), hotels (#56, 110), event caterers (#58, 0) |
+| care | care homes | domiciliary care (#25, 0), childminders/nurseries (#26, 200), foster carers (#27, 140) |
+| pharmacies | pharmacies | locum pharmacists (#18, 10), opticians only if Medical declines |
+| wills-probate | probate, wills, IHT | estate administration, executor topics. BOUNDARY: BR/APR and landed-estate IHT belong to Property's landed cluster; probate process/fees belong here. Record the split per keyword family in both dossiers. |
+| divorce-finances | divorce finances | pension sharing, CMS, Form E (already in build) |
+| generalist | generic small business | retail (#69, 250, per TIER2 conversion), hair/beauty (#60, 60), gyms (#61, 40), taxi/PHV (#64, 420), couriers (#65, 20), hauliers (#66, 140), cleaning (#89, 10), security (#88, 0), driving instructors (#79, 60), tutors (#78, 10), franchisees (#82, 300), neurodivergent owners (#84, 40), performers family: musicians (#41, 200), actors (#42, 380), artists (#44, 260), authors (#45, 20), jewellers (#71, 0), cake makers (#72, 0), maritime/seafarers (#87, 440), travel agents TOMS cluster (#59, per TIER2 conversion), manufacturing cluster (#73, 260) unless promoted to its own site (§6.1) |
+
+Unhomed, needing an owner call before anyone writes them: recruitment (#49, killed: reverse intent), creative/media as a standalone (#43, killed: career intent; the performers CLUSTER on generalist is the sanctioned form), footballers (#63, 50, specialist agent territory), FCA (#52, locked). New sites from §6.1 (settlement agreements, leasehold, surveys, manufacturing) each REMOVE their niche from the cluster table above at the moment the site is approved.
+
+## K. Owner-supplied inputs (the agent must not fabricate or block on these)
+
+Two classes. LAUNCH BLOCKERS stop a deploy; COSMETIC items ship with the recorded placeholder and the owner replaces them later. The executing agent lists the state of every row in `docs/<site>/STATE.md` at handoff; it never invents a value for any of them.
+
+| Input | Class | Rule for the agent |
+|---|---|---|
+| Brand colour ramp sign-off | BLOCKER (per port) | Derive per L.2, present the swatch + contrast table, wait for a yes before Phase 1 |
+| Wordmark icon (the niche's `Home` equivalent) | BLOCKER | Propose one lucide icon + one fallback in the DESIGN_DELTA; owner picks |
+| Favicon set | COSMETIC | Keep the site's existing favicon until the owner ships a new one; never generate one |
+| Homepage/hero imagery beyond the SVG motif | COSMETIC | The standard needs none (Property ships zero photography); if the owner wants photos, they supply them |
+| Phone number | BLOCKER for schema/copy | Use the value in `niche.config.json`; if placeholder, keep placeholder and flag |
+| GA4 id, GSC/Bing verification | Not a blocker (INFO gap per SITE_SPINUP) | Flag in STATE.md |
+| Domain purchase / DNS (new sites, ashfield) | BLOCKER at G1 | Never before G1, per the playbook |
+| DataForSEO top-up | BLOCKER for Track 2 discovery | Report balance, ask once, stop if unfunded |
+| Serper credits | Degraded-mode, not a blocker | Stored-harvest positions are acceptable, label them as such |
+| G1 brand decisions (wills-probate, divorce-finances) | BLOCKER for their launches | Present the silent shortlist, never ask early |
+| Designer engagement (per §8.6) | Programme-level decision | Default: no designer, the standard is the design |
+| Deploy approval | BLOCKER, every time | Owner-triggered in that turn, no exceptions |
+
+## L. DESIGN_DELTA.md template and the brand-ramp derivation rule
+
+### L.1 The template (create per ported site, this exact structure, nothing else in it)
+
+```markdown
+# <SITE> DESIGN DELTA
+Standard: docs/_engines/PROPERTY_STANDARD_ROLLOUT.md appendix + docs/property/DESIGN_SYSTEM.md §0.
+An empty section means: Property standard, no exception.
+
+## 1. Brand tokens (the seven swap points)
+primary ramp:        <family> (50 #.. 100 #.. 600 #.. 700 #.. 800 #.. 900 #..)
+neutral ramp:        slate (unchanged unless stated)
+warning ramp:        amber (unchanged unless stated)
+semantic overrides:  (list only vars that differ from A.1)
+font:                Plus Jakarta Sans (or the assigned substitute + weights)
+button constants:    colour tokens only; box model unchanged
+wordmark:            icon=<lucide name>; line1="<NAME>"; line2="<DESCRIPTOR>"
+backdrop motif:      <description + stroke colours light/dark>
+cream surface:       <hex or "unchanged #fbfaf7">
+
+## 2. Measured contrast table (every brand colour on white, slate-50, and navy)
+| token | ground | ratio | verdict |
+(4.5:1 floor; include the tick colour, the warning ramp, fine print)
+
+## 3. Sanctioned deviations
+| deviation | owner decision + date |
+
+## 4. Owner-input state (appendix K rows)
+```
+
+### L.2 Brand-ramp derivation (when the owner has not chosen)
+
+Default: keep the site's existing `--brand-primary` hue (it is already the live brand), snap it to the nearest Tailwind named ramp family, and use that family's 50-900 as the ramp. Measure every A.8 floor combination before proposing; if the 600 step fails 4.5:1 on white for text use, shift text usages to the 700 step and say so in the delta. Two sites may not share a primary ramp family with an adjacent site in the header nav of the parent (differentiation check against the table in L.3 as ports land). Present as a swatch + contrast table for a one-line owner yes (K).
+
+### L.3 Ramp registry (fill in as ports land)
+
+| Site | Primary ramp | Approved |
+|---|---|---|
+| Property | emerald | live |
+
+## M. The fidelity reviewer brief (verbatim, use per phase)
+
+Spawn an agent that did NOT build the phase. Its prompt carries this contract:
+
+- You are reviewing phase <N> of the <site> port against the Property standard (this doc's appendix + DESIGN_SYSTEM.md §0). Rule zero: the standard is right; you review delivery, not design. Read-only; you fix nothing.
+- For every item in the phase log, classify DELIVERED / DILUTED / DROPPED by checking the RENDERED result (dev server via `next start`, `getComputedStyle` for typography and colour), never by grepping for a class name.
+- Hunt silent substitution: the builder quietly reusing the site's OLD pattern (old radius recipe, old card, old container, old heading treatment). It never shows in a diff; open the pages.
+- Check the standing rules and the deliberate non-actions recorded in the phase log; undoing a deliberate non-action is a fidelity failure.
+- Check cross-file couplings touched by the phase (header CTA x wordmark cap; blog CSS + renderer pairs; noscript animation release; nav data → footer derivation).
+- Re-measure at 390 / 768 / 1024 / 1440: no horizontal scroll, no crowding, contract §0.8 items.
+- Verify the phase's measurements file: numbers you re-take must match the log; a log that disagrees with the artefact is itself a finding.
+- Verdict: FAITHFUL / FAITHFUL-WITH-GAPS / DILUTED, with counts (delivered/diluted/dropped) and every gap named with file:line. Anything but FAITHFUL returns the phase before its tag.
+
+## N. Verification instrument spec (rebuild per programme in the session scratchpad; never scheduled, never in CI, never pointed at production)
+
+**Route sweep (`sweep.mjs` equivalent).** Input: the site's sitemap + nav + footer + calculator registry, deduped. Per URL against `next start`: HTTP status (must be 200; record any 3xx with its target), count of unique same-site `<a href>` in the rendered HTML (the LINK FLOOR: compare per-URL against the pre-port baseline file; any decrease is a blocker), count of `data-cta` attributes, grep of the rendered text for em-dashes (U+2014, zero tolerance) and for pipeline artefacts ("verify at build", "(HP" codes). Output: one JSON baseline file (kept for the programme) + a table of deltas. Baseline is captured BEFORE the first port commit; re-baselining requires a written reason.
+
+**Browser check (`browser_check.mjs` equivalent).** Headless Chromium against `next start` (dev server gives false CSP reds). Per route at 390 and 1440: `document.documentElement.scrollWidth <= clientWidth` (horizontal overflow, zero tolerance at 390), computed text colour vs computed background for every text node under 15px and every `text-slate-*`/fine-print class (floor 4.5:1; composite alpha before computing; normalise oklch; the Property instrument was materially wrong three times on exactly those two operations), presence of `scroll-mt-24` on every element addressed by an in-page anchor, console errors excluding the known Speed Insights path. Pass `--out` per run or runs clobber each other (this happened twice). Build in an isolated worktree if any other dev server may be running (a foreign `next dev` clobbered a phase build mid-measurement).
+
+**Contrast maths note:** ratio = (L1+0.05)/(L2+0.05) on WCAG relative luminance; verify the instrument against two known pairs before trusting it (slate-500 on white = 4.76, slate-400 on white = 2.51).
+
+## O. The extraction work plan (§3, item level)
+
+Order matters; each step is one commit, additive only, Property untouched.
+
+1. `packages/web-shared/design/layout-utils.ts`: containers, section rhythm constants, the four button recipes + focusRing with every colour literal replaced by `var(--brand-*)` / semantic vars; `heroCreamSurface` reads `var(--hero-cream, #fbfaf7)`.
+2. `packages/web-shared/design/globals-standard.css`: the design (not brand) CSS: radius chain, layered/unlayered heading split, motion keyframes + gates, `.related-card`, `.eyebrow-rule`, `.tick-draw`, marquee, glow set with rgba built from `--brand-primary` components. Consumed via one `@import` in a site's globals.css below its token block.
+3. `packages/web-shared/design/primitives/`: Prose, Eyebrow(+Rule), InlineLink, CardStack, ExampleFigureNote, FaqSection+accordion, Breadcrumb, SlimHero, NoticeCard, NumberedPagination.
+4. `packages/web-shared/design/marketing/`: TopicSection/TopicHero, LeadCTAPanel, CoverageCards, ComparisonTable, ProcessTimeline, DrawnTickList, StatsCounter, PromptMarquee, ProblemStatement, ScrollGlowGroup, WhatToExpectCard, StickyCTA, NumberedReasons, WhyUsList, TestimonialsSection (quotes injected by prop).
+5. `packages/web-shared/design/blog/`: RelatedArticles, HubArticleList, TableOfContents, BlogSidebarCta, ReadingProgress, BlogCategoryHub shell, BlogListWithSearch.
+6. `packages/web-shared/design/chrome/`: PageShell, SiteHeader, SiteFooter, backdrop-motif contract (motif SVG injected by prop), wordmark contract (icon + two strings by prop).
+7. Guard-test templates (parameterised by site): calculator-tabs-crawl-path, hub-article-crawl-path, nav-active-state, first-sentence.
+8. Pilot site consumes 1-7; `getComputedStyle` parity check of the pilot's rendered primitives against Property's under Property tokens (N instruments) before any further port.
+
+Every component keeps Property behaviour byte-identical under Property's token values; every export is a NEW path; nothing existing in web-shared changes.
+
+## P. Per-site corpus sizing and readiness ledger
+
+"How large" is discovery-driven, not a round number: each site's ceiling is its addressable peer-winnable volume from its own candidate-pool run, and its pace is the cohort rule (12-15 pages per cluster, Bing 28d / Google 90d reads, median >200 impressions scales, <100 kills). The floors below are minimums that make a site structurally complete at the standard; they are not caps.
+
+| Site | Corpus floor to reach | What must exist first | Track 2 scripts risk |
+|---|---|---|---|
+| Family D (7 sites) | 100-150 posts, full pillar set (3-5), data-derived calculator fleet, 5+ category hubs, 2 research assets | discovery.json authored; house_positions.md created + verified; blog hubs + category routes built during the port | LOW (blog generator + wave runner already multi-site) |
+| construction-cis, contractors-ir35, Medical | 150-250 posts + cluster coverage on their heads | discovery.json (contractors/medical missing), fresh GSC/Bing pull | Medical: flat routing, use `medical_flat_link_audit.py` |
+| Dentists, Solicitors, digital-agency | 250-400 posts + cluster coverage | discovery.json, house_positions currency pass | check per-script site parameterisation (below) |
+| generalist | cluster conversions from J (retail, performers, TOMS, manufacturing...) on top of 418 | its parity programme already ran; fold J clusters into its topic pool | LOW |
+| wills-probate, divorce-finances | already content-complete for launch; J boundaries recorded | G1 | none pre-launch |
+| Property | maintenance + the deferred Phase D (incorporation) after SDLT reads | nothing | none |
+
+Named risk, verify at first use per site: parts of the Track 2 QA chain grew up on Property (`pull_page_data`, `track2_*`, `qa_verdict`, `predeploy_gate --qa-batch`, equity gates). The blog generator, slug resolver, wave runner, discovery engine and indexing are proven multi-site; the track2 chain is NOT yet proven off Property. The first non-Property cluster batch budgets a half-day to generalise whatever breaks, fixes the class not the instance, and records the result here.
+
+Estate totals at completion of the floors above, for scale intuition only: roughly 2,500 existing posts grow to ~3,500-4,000 plus pillar/calculator surfaces, before any Track 3 site. Every number above is a floor or an estimate and is labelled as such; the discovery runs replace them with measurements.
