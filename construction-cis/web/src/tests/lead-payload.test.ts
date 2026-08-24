@@ -26,15 +26,16 @@ describe("consent text wiring", () => {
     expect(consentText).not.toContain("Reflex");
   });
 
-  // Layer one of the layered notice (DSA Annex B.1). Cascade, the maximum number, the
-  // fee and the acknowledgement sentence moved to layer two, the privacy policy, on
-  // 17 August 2026. Plurality stayed here: LIA section 3.2 turns on the enquirer
-  // seeing that the recipients are firms in a network, not one nominated adviser.
-  it("consent text discloses sharing with plural firms in the network", async () => {
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts).
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("specialist partner network");
-    expect(siteConfig.leadConsentText).toContain("regulated firms");
-    expect(siteConfig.leadConsentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
+    expect(siteConfig.leadConsentText).toBe(
+      "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.",
+    );
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {
@@ -43,10 +44,6 @@ describe("consent text wiring", () => {
     expect(consentText).not.toContain("DJH");
   });
 
-  it("consent text mentions 'Trade Tax Specialists' brand", async () => {
-    const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("Trade Tax Specialists");
-  });
 });
 
 // ── Extras qualifiers (moved out of message) ─────────────────────────────────

@@ -56,18 +56,20 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent notice names the network and discloses plural firms", async () => {
-    // Layer one of the layered notice (DSA Annex B.1). It must name the network
-    // category and disclose that the recipients are FIRMS, plural, never a single
-    // nominated adviser: LIA section 3.2 turns on that being visible without opening
-    // the privacy policy. The maximum number, cascade and fee are layer two and are
-    // asserted against the privacy policy, not here. We import the site config rather
-    // than duplicating the string so this fails the moment the config changes.
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts). The
+  // wording is brand-free (identical across sites), so the old brand-mention
+  // assertion is gone too. We import the site config rather than duplicating the
+  // string so this fails the moment the config changes.
+  const EXPECTED_CONSENT =
+    "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", async () => {
     const { siteConfig } = await import("@/config/site");
-    const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).toContain("regulated firms");
-    expect(consentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
+    expect(siteConfig.leadConsentText).toBe(EXPECTED_CONSENT);
   });
 
   it("consent text never contains 'DJH' or 'Reflex' (copy discipline: no internal/named-partner mentions)", async () => {
@@ -75,10 +77,5 @@ describe("consent text wiring", () => {
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
     expect(consentText).not.toContain("DJH");
     expect(consentText).not.toContain("Reflex");
-  });
-
-  it("consent text mentions 'Dental Finance Partners' brand", async () => {
-    const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("Dental Finance Partners");
   });
 });

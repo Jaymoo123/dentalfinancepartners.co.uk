@@ -9,7 +9,7 @@ const partner = niche.partner;
 
 // Lead-form data-sharing acknowledgement (legitimate interests, notice-only).
 // Static category wording, never a named firm; forms append "See our Privacy Policy."
-const leadConsentText = "Ecommerce Finance will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time.";
+const leadConsentText = "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
 
 export const siteConfig = {
   name: niche.display_name,

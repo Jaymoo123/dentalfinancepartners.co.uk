@@ -131,18 +131,19 @@ describe("composeHealthCheckSummary", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent notice names the specialist partner network and discloses re-referral", async () => {
-    // Notice-only acknowledgement (pool model): must name the network category,
-    // never a single firm, and must disclose onward re-referral. We import the
-    // site config here rather than duplicating the string in tests so this test
-    // fails immediately when the config changes.
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts). We import
+  // the site config here rather than duplicating the string in tests so this test
+  // fails immediately when the config changes.
+  const EXPECTED_CONSENT =
+    "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", async () => {
     const { siteConfig } = await import("@/config/site");
-    const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    // Layer one of the layered notice (DSA Annex B.1): the network category and
-    // plural firms. The maximum number, cascade and fee live in the privacy policy.
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).toContain("regulated firms");
-    expect(consentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
+    expect(siteConfig.leadConsentText).toBe(EXPECTED_CONSENT);
   });
 
   it("consent text never contains 'DJH' (copy discipline: internal name must not appear)", async () => {

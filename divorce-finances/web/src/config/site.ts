@@ -20,7 +20,7 @@ const partner = niche.partner ?? null;
 // disclosure sitting inside this notice. That disclosure is mandatory and
 // brand-neutral (no firm named until G1). Do not revert to the generic in-house
 // wording for this site.
-const leadConsentText = `${niche.display_name} will share your details with regulated firms in our specialist partner network so they can answer your enquiry. You can object at any time.`;
+const leadConsentText = `To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
 
 export const siteConfig = {
   name: niche.display_name,

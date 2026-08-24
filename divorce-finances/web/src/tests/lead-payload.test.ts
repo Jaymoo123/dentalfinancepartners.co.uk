@@ -25,14 +25,16 @@ describe("consent text wiring", () => {
     expect(siteConfig.partner?.name).toBe("regulated firms in our specialist partner network");
   });
 
-  // Layer one of the layered notice (DSA Annex B.1). Cascade and the fee moved to
-  // layer two, the privacy policy, on 17 August 2026; plurality stayed here, because
-  // LIA section 3.2 needs it visible before the enquirer opens anything.
-  it("consent text discloses sharing with plural firms in the network", async () => {
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts).
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("specialist partner network");
-    expect(siteConfig.leadConsentText).toContain("regulated firms");
-    expect(siteConfig.leadConsentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
+    expect(siteConfig.leadConsentText).toBe(
+      "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.",
+    );
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {
@@ -41,11 +43,6 @@ describe("consent text wiring", () => {
     expect(consentText).not.toContain("DJH");
   });
 
-  it("consent text mentions the brand display name", async () => {
-    const { siteConfig } = await import("@/config/site");
-    const { niche } = await import("@/config/niche-loader");
-    expect(siteConfig.leadConsentText).toContain(niche.display_name);
-  });
 });
 
 // ── Extras qualifiers (moved out of message) ─────────────────────────────────

@@ -1,11 +1,10 @@
 /**
  * Unit tests for lead-message helpers and the consent text guard.
  *
- * The consent guard asserts that layer one of the notice (DSA Annex B.1) names the
- * specialist partner network and discloses plural firms, that it never reads as a
- * single nominated adviser, and that the string "DJH" (an internal firm identifier
- * that must never appear in user-facing copy) is absent. The maximum number of firms
- * lives in layer two, the privacy policy, and is asserted there.
+ * The consent guard pins the estate-standard sharing notice verbatim (reverted
+ * 2026-08-24 to the pre-2026-08-15 wording; see the test file for why), and
+ * asserts that the string "DJH" (an internal firm identifier that must never
+ * appear in user-facing copy) is absent.
  */
 import { describe, it, expect } from "vitest";
 import { calculatorMessagePrefix, exitIntentMessagePrefix } from "@/lib/lead-message";
@@ -62,21 +61,15 @@ describe("lead consent text", () => {
     expect(nicheConfig.partner?.name).toBe("regulated firms in our specialist partner network");
   });
 
-  // Transparency is layered (DSA Annex B.1). This is layer one, and the LIA is made
-  // out only if it discloses on its face that the recipients are FIRMS, plural, in a
-  // network, and links to the privacy policy that carries the maximum number. The
-  // count itself lives in layer two and is asserted against the privacy policy below.
-  it("consent notice discloses sharing with plural firms in the network", () => {
-    expect(consentText).toContain("specialist partner network");
-    expect(consentText).toContain("regulated firms");
-    expect(consentText).toContain("object at any time");
-  });
-
-  // LIA section 3.2 turns on plurality being visible without opening the policy.
-  // "firm" singular here would collapse the layered argument.
-  it("consent notice never describes the recipient as a single firm", () => {
-    expect(consentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
-    expect(consentText).not.toContain("one firm at a time");
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts).
+  const EXPECTED_CONSENT =
+    "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", () => {
+    expect(consentText).toBe(EXPECTED_CONSENT);
   });
 
   it("consent text does NOT contain the string DJH", () => {
