@@ -45,9 +45,14 @@ _SITE_URL_MAP = {
     "generalist":        "sc-domain:hollowaydavies.co.uk",
     "contractors-ir35":  "sc-domain:contractortaxaccountants.co.uk",
     "construction-cis":  "sc-domain:tradetaxspecialists.co.uk",
-    "charities":         "sc-domain:brand-tbd-charities.invalid",
-    "hospitality":       "sc-domain:brand-tbd-hospitality.invalid",
-    "care":              "sc-domain:brand-tbd-care.invalid",
+    # Wave-2 entries verified against GSC sites.list 2026-08-24 (all siteOwner)
+    "charities":         "sc-domain:trusteetax.co.uk",
+    "hospitality":       "sc-domain:hospitalitytax.co.uk",
+    "care":              "sc-domain:carehometax.co.uk",
+    "pharmacies":        "sc-domain:pharmacytax.co.uk",
+    "crypto":            "sc-domain:cryptotaxpartners.co.uk",
+    "ecommerce":         "sc-domain:ecommercefinance.co.uk",
+    "startups-tech":     "sc-domain:foundertaxpartners.co.uk",
 }
 
 
