@@ -162,11 +162,46 @@ Definition of done per site: every §0 checklist item passes on every template; 
 
 ---
 
-## 5. TRACK 2: corpus expansion (per existing site)
+## 5. TRACK 2: optimisation + corpus expansion (per existing site)
 
-The engine docs are the spec; this section fixes the per-site running order and the estate-level constants. Method detail: `REWRITE_PROGRAM.md` (§9 for cluster coverage), `NETNEW_PROGRAM.md`, `DISCOVERY_ENGINE_V2.md`.
+The engine docs are the spec; this section fixes the per-site running order and the estate-level constants. Method detail: `REWRITE_PROGRAM.md` (§9 for cluster coverage), `NETNEW_PROGRAM.md`, `DISCOVERY_ENGINE_V2.md`, `docs/_engines/AI_SEARCH_GEO_PROGRAM.md`, `docs/_engines/SERP_META_PROGRAM.md`, memory `corepage_engine` / `holistic_meta_strategy`.
 
-### 5.1 Per-site running order
+**A fact that shapes everything in this track: most sibling sites have NEVER had an optimisation pass.** Property received the full stack over 2026-05 to 2026-08 (Track 1/2 rewrites, corepage, SERP meta, GEO, humanise, cannibalisation protection, behaviour analytics, commercial capture, the structure-vs-competitors diagnosis). generalist received its parity programme (GEO backfill on all posts + 281 factual corrections). Everything else got at most the May 2026 9-step structural parity pass (accordion/schema/robots/llms-full/IndexNow) and scattered fix waves (agency indexation, medical discovery, dentists/solicitors corepage rewrites still undeployed). For those sites Track 2 is therefore optimise-then-expand, not expand alone, and the optimisation baseline below is mandatory before wave spend.
+
+### 5.0 The canonical per-site pipeline (the sequence, for every existing site)
+
+```
+STAGE 0  DIAGNOSE      fresh GSC + Bing pull (never stored snapshots), indexation check
+                       (is Google even crawling it: coverage counts, sample URL inspection),
+                       structure-vs-competitors mini-diagnosis, discovery run (5.1 steps 1-2),
+                       conversion funnel read. Output: docs/<site>/STATE.md diagnosis section
+                       naming the binding constraint (eligibility / indexation / conversion /
+                       corpus). ~1 session + ~$2.30.
+STAGE 1  PORT          Track 1 design port (§4). Template level. Includes the structural-floor
+                       verification (robots allowlist, llms-full.txt, feeds, OG, schema,
+                       sitemap lastmod stability, security headers: verify present, most
+                       shipped in the 2026 standardisation phases).
+STAGE 2  OPTIMISE      the optimisation baseline (5.0a) on the EXISTING corpus.
+STAGE 3  EXPAND        cluster coverage + net-new waves (5.1 steps 3-8), cohort-gated.
+STAGE 4  READ + ITERATE  Bing 14/28d, Google 28/90d, cohort scale-or-kill, next cluster.
+```
+
+Ordering rules: Stage 1 before Stage 2/3 because the port re-baselines every monitored window anyway (do it once, then measure content changes on the new design) and because rewritten content should land in the new templates, not be touched twice. EXCEPTION: if Stage 0 diagnoses broken indexation (the agency and medical pattern), the indexation remediation runs FIRST, before port or content, because content spend on an uncrawled site is waste. Stages for different sites may interleave (§9); stages within one site may not reorder.
+
+### 5.0a The optimisation baseline (Stage 2, per site)
+
+What Property and generalist got, replayed in a fixed order on the existing corpus. Each item names its engine; all content passes are Opus, reasoning-first, never scripted bulk edits.
+
+1. **house_positions.md currency pass.** Create or re-verify the site's ground-truth doc against primary sources + the ground-truth memory set (FA 2026 figures moved 4 times between writing and verification in the wills build; assume drift). This gates everything below.
+2. **Corepage pass.** `python -m optimisation_engine.corepage --site <site> --page homepage` (then `/services` etc): analysis pack, then an Opus rewrite of meta + structure + copy of the core commercial pages. Dentists and Solicitors already have corepage rewrites COMMITTED but NOT DEPLOYED (`d3e705dd`, `b8ae2269`); reconcile those against the port before writing anything new, do not overwrite them blind.
+3. **SERP meta pass.** Per-site `seo_persona` + intent-driven metaTitle/metaDescription formulas (memory `holistic_meta_strategy`, `SERP_META_PROGRAM.md`), every title written by an LLM reading that page with fresh query data. Never templated.
+4. **Equity-graded legacy sweep.** Grade the existing corpus with the §9.5 REFRAME / EXTEND / NO-PAGE table. Expect the distribution to differ from Property: on a never-optimised 20-80 post site most pages are low-equity REFRAME candidates; on Dentists/Solicitors-size corpora run the `track2_worklist.py` ROI ranking (near-page-1 Bing + weak Google first). Full-overhaul rules apply (§4 quality bar: dominant-query H1, comparison tables, worked examples, FAQ, current facts).
+5. **GEO backfill.** The generalist waves 0-3b pattern: workedExamples, BLUF answer blocks, citation-ready structure across the corpus (`AI_SEARCH_GEO_PROGRAM.md`). Bing + ChatGPT out-convert Google on Property; the estate's AI-surface readiness is a conversion lever, not garnish.
+6. **Internal-link hygiene.** Hub-and-spoke wiring to the site's pillars (hygiene, not a proven ranking lever: §5.3), honouring any armed monitored windows.
+7. **Conversion instrumentation check.** Analytics SDK live, `data-cta` coverage, funnel events, lead-form invariants (D.1, including the invisible-label check: the navy-ground LeadForm bug is KNOWN LIVE on generalist and digital-agency), no interruptive-surface additions.
+8. **Register + measure.** Changed pages into `monitored_pages` with dual baselines; one change class per page per window.
+
+### 5.1 Per-site running order (discovery + expansion detail)
 
 1. **Universe.** `python scripts/derive_competitor_universe.py --site <site> --top-queries 20 --keep 15` writes the curated competitor list into `sites/<site>.discovery.json`. Sites without a discovery.json (9 of 16) need one authored first: competitors, lanes, lane_negative_tokens, topic_tokens. The lane taxonomy is per-niche judgment work; do it with an Opus pass over the site's pillar set + GSC heads, then owner-skim.
 2. **Pool.** `python -m optimisation_engine.discovery.candidate_pool <site>` dry-run first, then `--spend --commit`. Budget ~$2.30/site full run. Guard: `DATAFORSEO_ABORT_AT` ($5/day default). Note the account balance was ~$4.78 at 2026-08-21; an estate sweep needs a top-up first (owner decision, §8).
@@ -257,7 +292,7 @@ Each step gated on the previous one's owner review; one site in flight per track
 1. **Extraction + pilot D:** extract shared core; port one family-D site (crypto or ecommerce, smallest live surfaces) end to end including its DESIGN_DELTA, guard tests, owner dev-server walk. This validates the extraction, the brand-swap recipe, and the per-site cost estimate.
 2. **Pilot B:** construction-cis (healthy, mid-size, representative family B). This validates the port recipe on a full existing page set with the link floor.
 3. **Fan out Track 1:** remaining family D (6 sites, batched), then family B by conversion upside: Solicitors, Dentists, Medical, contractors-ir35, digital-agency last. wills-probate + divorce-finances ported inside their G1 prep whenever G1 is scheduled.
-4. **Track 2 in parallel**, biggest corpora first (they have the query data that feeds the method): generalist, Dentists, Solicitors, digital-agency (content eligible even while design waits), construction-cis, Medical, contractors-ir35, then family D corpus-building waves.
+4. **Track 2 in parallel**, biggest corpora first (they have the query data that feeds the method): generalist, Dentists, Solicitors, digital-agency (content eligible even while design waits), construction-cis, Medical, contractors-ir35, then family D corpus-building waves. Every site follows the §5.0 stage order internally (diagnose, port, optimise, expand, read); Stage 0 diagnosis can run for ALL sites up front in one sweep since it is cheap and independent, and it produces the evidence that reorders the queue.
 5. **Track 3** after the first two pilots prove the standard scaffold: settlement agreements (or Solicitors cluster, per decision), leasehold decision, manufacturing confirmation, fresh R1 pass, then the scored queue.
 
 Cost calibration from the Property run (the only honest anchor): Property's port was ~15 hours of serial phase agents plus ~a day of investigation on a 252-file designer diff against the estate's largest site. Siblings have no designer diff to reconcile: expect a family-D port at a fraction of a day of agent time plus review, a mid family-B site at 1-2 days, Dentists/Solicitors/agency at 2-4 days, each plus the owner dev-server walk. Corpus discovery is ~1 session + ~$2.30 per site; each cluster batch thereafter ran at roughly a day including QA on Property. These are estimates, labelled as such; the pilots exist to replace them with measurements.
@@ -607,7 +642,9 @@ British English. No em-dashes anywhere in user-facing copy (grep gate). No claim
 
 ## J. The estate niche-cluster registry (which niche lives on which site)
 
-The unique-assignment principle from `REWRITE_PROGRAM.md` §9.4 applies at ESTATE level, not just page level: every niche from the 89-row universe (`expansion_research/R1_NICHE_CANDIDATES.md`) is owned by exactly ONE site, either as the site's core or as a named content cluster. Two sites writing the same niche is estate-level cannibalisation; before any site opens a cluster, check this table, and record new assignments here in the same session. Volumes are the R2D cluster figures (`accountant for X` family, `expansion_research/R2D_VOLUMES.md`); "regardless of demand" (the owner's coverage directive) means every assigned cluster gets at least one cohort, but demand still sets its ceiling and read schedule.
+The unique-assignment principle from `REWRITE_PROGRAM.md` §9.4 applies at ESTATE level, not just page level: at the moment a niche is WRITTEN anywhere, it is owned by exactly ONE site. Two sites writing the same niche is estate-level cannibalisation; before any site opens a cluster, check this table, and record the assignment here in the same session.
+
+What this table is NOT: a mandate to force all 89 niches into the existing sites. Each row is the DEFAULT HOME if and only if the niche is pursued as a cluster; for every niche the executing agent still holds three options, decided on discovery evidence and fit, in this order: (1) fold into the listed site where the audience genuinely overlaps that site's reader; (2) promote to its own Track 3 site where the evidence supports a standalone brand (the §6.1 queue); (3) skip for now, recorded with a reason. A niche whose audience does not fit any site's voice is skipped or promoted, never shoehorned: a page for taxi drivers on a generic-small-business site fits; a farmers cluster on the crypto site does not, and forcing fit produces the off-topic content the A* bar prohibits. Volumes are the R2D cluster figures (`expansion_research/R2D_VOLUMES.md`); the owner's coverage directive means low demand alone is not a reason to skip, but fit is.
 
 | Site | Core niche(s) | Adjacent-niche clusters to fold into its corpus (R1 row, cluster vol/mo) |
 |---|---|---|
