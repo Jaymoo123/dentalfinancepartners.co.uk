@@ -103,6 +103,47 @@ produced three property-only isolated experiments, built through the §9 machine
 **NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
 track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
 
+## 0.23 Consent-wording conversion incident — DIAGNOSED + REVERTED ESTATE-WIDE 2026-08-24
+
+**Symptom (owner, 2026-08-24):** website leads collapsed (Fri 0 / Sat 0 / Sun 2 / Mon 0
+website leads vs 2.41/day baseline) right after the redesign cutover, so the redesign was
+the suspect. **The redesign was cleared; the cause was the consent notice.**
+
+Evidence chain (all re-derivable):
+1. Weekly leads by surface: main `lead_form` held (10 -> 8 wk-on-wk), `specialist_widget`
+   held (3 -> 3); the ENTIRE deficit was the mini-form surfaces: `calc_result_gate` 5 -> 0,
+   `resource_block` 2 -> 0, `mobile_tool` 1 -> 0 (week of 08-17).
+2. Funnel: since 08-15, 18 sessions completed step 1 of the calc gate and VIEWED step 2
+   (contact details); ZERO completed it. Prior baseline 6/20 (30%). 14 of the 18 never
+   focused a single step-2 field yet kept browsing the site afterwards (up to 316 events,
+   81 min) = deliberate refusal at the disclosure, not a technical failure.
+3. Deploy alignment: prod deploy 08-15 15:29 UTC (`ead4aee3` window) put the Annex B.2
+   "up to three firms... may be paid a fee" notice live (from `924a60d5`); the softer but
+   definite "WILL share your details with regulated firms" variant followed 08-17 20:14
+   (`36b2628f`). Stored `consent_text` on lead rows dates each window exactly. In the
+   modal render path, the ONLY user-visible file changed between the 08-13 and 08-15
+   deploys was `Property/web/src/config/site.ts` (the wording) — MiniCapture untouched
+   since 07-17.
+4. Live e2e disproof of breakage: QA-flagged submit (`?qa=1` -> `is_test`) through the
+   live calc gate on 08-24 worked end to end (modal, both steps, submit, lead row,
+   nurture enrol). Test lead + analytics traces deleted after.
+
+**Fix (owner decision, exact revert):** `leadConsentText` restored byte-exact to the
+04-14 Aug wording ("may be shared with a firm from our specialist partner network...
+passed to another firm in the network"), identical across ALL sites (21 files, 17 sites).
+The 7 lead-payload LIA plurality guards re-pinned verbatim; plurality/caps disclosure
+stays in each privacy policy (layer 2, unchanged). Pool gate unaffected (anchor "a firm
+from our specialist partner network" already in `consentAllowsSharing`). Commit
+`435cc12e`, deployed to all 15 Vercel-project sites 2026-08-24 ~20:00-20:30 UTC, all
+READY, wording verified live on 6 domains. wills-probate + divorce-finances ship it at
+their first deploy. One transient CLI "fetch failed" on contractors-ir35, retried clean;
+no failed builds, no CI noise (push triggered no workflows).
+
+**Watch:** mini-form submits (`calc_result_gate`/`mobile_tool`/`resource_block`) should
+come off zero within ~a week if the diagnosis is right. Residual open question: whether
+the softer notice measurably lifts step-2 completion back to ~30% (read at 2 weeks). Any
+future consent-wording change must go through a conversion read BEFORE estate rollout.
+
 ## 0.22 Designer redesign PORT — ALL BUILD PHASES COMPLETE 2026-08-23, **DEPLOYED 2026-08-23 20:21 UTC**
 
 > **CUTOVER: 2026-08-23 20:21 UTC.** Two production deploys, 20:21:50Z and 20:34:05Z (Vercel
