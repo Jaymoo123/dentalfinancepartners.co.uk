@@ -357,7 +357,7 @@ def main():
         last_month=datetime.strptime(month_keys[-1], "%Y-%m").strftime("%b %Y"),
         record_30d=record, record_30d_date=record_date.strftime("%#d %b %Y"),
         run_rate=run_rate, run_rate_ci=f"{rr_lo}–{rr_hi}",
-        n_specs=n_specs, n_scored=n_scored, n_weeks=len(wc),
+        growth_pct=f"{growth:+.0%}", n_scored=n_scored, n_weeks=len(wc),
         chart_volume=chart_volume, chart_flow=chart_flow,
         chart_quality=chart_quality, chart_breadth=chart_breadth, chart_timing=chart_timing,
         volume_commentary=volume_commentary, trend_commentary=trend_commentary,
