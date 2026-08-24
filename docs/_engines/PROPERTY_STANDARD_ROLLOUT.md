@@ -1,6 +1,8 @@
 # THE PROPERTY STANDARD: ESTATE ROLLOUT FRAMEWORK
 
-Date: 2026-08-24. Status: PLAN, no owner sign-off yet, nothing here is authorised to execute.
+Date: 2026-08-24. Status: PLAN. Dry-run tested 2026-08-24 (three adversarial execution simulations; findings incorporated, record in appendix Q).
+
+**Execution-gate model (read this before halting on "not authorised").** This doc is a plan until the owner authorises execution. Authorisation arrives per SCOPE, not per doc: "do the crypto pilot" opens every non-owner-gated step for that scope. Within an authorised scope, the only remaining hard stops are the per-item owner gates in appendix K (brand swatch, wordmark, font change, capture-surface scope, deploy, every time) and the §8 programme decisions not yet taken. When a §8 decision is taken, record it in the table in §8 with the date, in the same session; an agent finding an unrecorded decision asks once, then stops. Never infer authorisation from this doc's existence.
 
 **What this is.** The reusable instruction set for doing to every other site what was just done to Property: (Track 1) a ground-up conversion-focused redesign to a measured, binding page contract; (Track 2) a competitor-driven corpus expansion via DataForSEO; (Track 3) new sites for the accounting niches still open. It is written for an executing agent with zero memory of the Property run. It is deliberately tight: every visual and structural decision is specified or pointered to a binding doc; deviation is a defect, not a flavour choice. The only sanctioned per-site variation is the brand layer defined in §4.3.
 
@@ -90,6 +92,12 @@ Rules of the extraction:
 
 Fallback if the owner rejects extraction: per-site copies are acceptable for the 7 family-D sites only (small surface), and family-B ports then each become a mini design-port project at roughly 3 to 5x the cost. State this trade-off once and take the decision; do not build both.
 
+**Branch prerequisite (hard, before any extraction or port).** The Property standard currently exists only on the unmerged branch `design/property-redesign-port` (main's Property is the OLD design). Step zero of the whole programme is merging that branch to main (owner decision §8.10); every extraction commit and every sibling port branches from main AFTER that merge. Extracting from an unmerged branch, or porting a sibling against a main that lacks the standard, is forbidden: web-shared is shared by 18 sites and a half-merged source of truth poisons all of them.
+
+**Live-site serving rule (every sibling port).** Vercel auto-deploy is OFF estate-wide, so commits are safe: production keeps serving the old design throughout the port. One branch per site port; no production deploy mid-port; a single owner-triggered cutover deploy at the end, exactly the Property shape. Before the port branch is cut, check for committed-but-undeployed changes to that site (pending shared fixes ride the next deploy, e.g. the estate dedupe change): either deploy them first as their own owner-approved release, or name them in the cutover annotation so the before/after read does not attribute their effects to the redesign.
+
+**Programme artifact home (every port).** Phase logs, measurements files, fidelity logs, disposition lists and the link-floor baseline JSON live in `docs/<site>/_port/` IN THE REPO: small text files, durable across sessions and machines, reviewable by the appendix M reviewer. Never the session scratchpad (deleted), never `tmp/` (gitignored, machine-fragile; the Property port's own record is stranded there, which is why this doc exists). The verification instruments themselves get ONE committed reference implementation at `docs/_engines/instruments/` at programme start, built once from appendix N and reused by every port and every reviewer, so two reviewers never build two different instruments. They are still never scheduled, never wired to CI, and never pointed at production.
+
 ---
 
 ## 4. TRACK 1: the design parity port (per existing site)
@@ -144,7 +152,7 @@ Record all seven values in `docs/<site>/DESIGN_DELTA.md` before the first compon
 
 Phased, serial, gated. For a sibling this is much smaller than Property (no designer diff to reconcile), but the shape is identical:
 
-- **Phase 0, investigate before code.** Inventory the site's current pages, components, crawlable-link counts per page (the link floor: unique outbound internal links per page must be >= current live count, binding), conversion surfaces and their `data-cta` ids, and any site-specific carve-outs (analytics continuity, experiment registries, live embeds). Write the per-page disposition list. Nothing is dismissed by category.
+- **Phase 0, investigate before code.** Inventory the site's current pages, components, crawlable-link counts per page (the link floor: unique outbound internal links per page must be >= current live count, binding), conversion surfaces and their `data-cta` ids, armed `monitored_pages` windows and deploy-watch baselines (pull from the DB, so cutover-time `data-cta`/form_id churn gets its baselines restated instead of firing owner-facing alarms), and any site-specific carve-outs (analytics continuity, experiment registries, live embeds). Write the per-page disposition list into `docs/<site>/_port/`. Nothing is dismissed by category. **Treat the site's own STATE.md as a claim, not a fact**: construction-cis's was two months stale with wrong post and calculator counts and a consent-model description its code contradicts; Phase 0 re-measures every number it uses and updates STATE.md first.
 - **Phase 1, foundation.** Tokens, globals.css, layout primitives, brand layer. Verify heading rendering with `getComputedStyle`, never screenshots (§7 trap 1).
 - **Phase 2, chrome.** Header/footer/wordmark to the §7a contract.
 - **Phase 3+, subsystems then pages.** Blog subsystem, calculators, secondary pages, pillars, post-submit set. One commit per logical item, tag per phase.
@@ -159,6 +167,23 @@ Tier 1 every commit: `tsc --noEmit` 0 errors, eslint on touched files, vitest gr
 Tier 2 every phase: full eslint, `next build` exit 0 with the page count recorded, `check_dependency_closure.py` (all 19 sites), `predeploy_gate.py --site <site>`, a route sweep (every URL 200, dead-link count 0, `data-cta` count vs baseline), and a browser check (horizontal overflow 0 at 390px, computed contrast vs the floors). Property's bespoke `sweep.mjs`/`browser_check.mjs` live in gitignored tmp by design; rebuild per programme in the session scratchpad, never schedule them, never point them at production. Run browser checks against `next start`, never `next dev` (false CSP reds). Baselines are captured before the first port commit; re-baselining requires a written reason in the phase log.
 
 Definition of done per site: every §0 checklist item passes on every template; guard tests present and green; link floor held on every page; fidelity review FAITHFUL; `docs/<site>/STATE.md` updated in place; owner walked it on the dev server; deploy is a separate owner decision.
+
+Link-floor authority: the baseline is captured from `next start` at the SHA currently deployed to production (deterministic, matches what users see), written to `docs/<site>/_port/link_baseline.json` before the first port commit.
+
+### 4.6 The sibling-divergence protocol (what to do when the target site differs from Property)
+
+Every sibling differs from Property somewhere. The standard governs DESIGN; it never licenses deleting a sibling's content, data or SEO surface. Rules, in precedence order:
+
+1. **Sibling content features are carve-outs, ported INTO the new components, never dropped.** The mirror of the Property port's Rule Zero: take the standard's design, keep the sibling's payload. Concrete class: renderer-level frontmatter features Property lacks (construction-cis `keyTakeaways[]` boxes, `imageCredit` attribution lines, any site's extra frontmatter) get rendered by the ported renderer with equivalent styling. Dropping one is a fidelity failure the appendix M reviewer must check for explicitly, because no gate catches it (it is not a link).
+2. **Dispositions attach to a file's ROLE, not its name.** Appendix D's "ExitIntentModal: deleted, do not rebuild" refers to Property's exit-intent OFFER surface; construction-cis has a file of the same name that is the modal SHELL used by DeepScrollModal and SpecialistWidget. Phase 0's disposition list records what each file does before anything is deleted.
+3. **Where a sibling is AHEAD of Property on the extraction path, keep the sibling's shape.** Sites already consuming `web-shared/tools` (construction-cis, crypto and all family D) keep that consumption; appendix G's per-site file layout is Property's pre-extraction legacy, and shared consumption is the target state. Existing calculator fleets are kept as-is; the derive-from-data rule governs NEW tools only.
+4. **Never break a live URL for aesthetics.** Existing pillar routes keep their paths (crypto's `/for/[slug]`, construction-cis `/for/[type]`, glossaries, template pages). New pillars follow the root-level convention. A page type with no F-series template gets its anatomy written into the site's Phase 0 disposition list from the closest F template plus the §0 checklist, and the fidelity reviewer reviews against that recorded anatomy.
+5. **Fonts are brand, and live brands need owner sign-off.** Default: the site KEEPS its current typeface (construction-cis: Geist Sans + Geist Mono). Switching a live site to Plus Jakarta is an appendix K owner gate, proposed in the DESIGN_DELTA. Sites keeping a mono font keep it wired to `font-mono` (the stat/result styles depend on it); sites without one name their mono substitute in the delta.
+6. **The capture-surface set is owner-scoped per site.** Porting Property's interruptive set (SpecialistWidget, DeepScrollModal, StickyCTA, ReturningBar) to a site that lacks them is ADDING interruptive surfaces, which the standing rule forbids without asking. The DESIGN_DELTA lists exactly which capture surfaces the port adds, and the owner's swatch sign-off turn (K) approves that list explicitly. Site-specific surfaces with no appendix D row (e.g. intent-engine offer components) get an explicit KEEP-AND-RESTYLE / KILL disposition in Phase 0, KILL only with an owner decision.
+7. **Consent model: rendered checkbox is the estate default for any site being touched.** Property's notice model is site-specific (DSA-backed, owner-approved for Property). A sibling whose code and docs disagree about its consent model (construction-cis: STATE.md records the mandatory-checkbox rule, the live LeadForm ships the notice model with `consent_given: true` hardcoded) is a COMPLIANCE FLAG raised to the owner before the port touches the form, never a judgment call.
+8. **Category-keyed maps are per-site data.** The blog CTA-copy map, category hubs, page-summaries and nav groups are authored fresh for the site's own categories (keyed on category SLUG), as port work items, not copied from Property.
+9. **Dual config sources reconcile to the niche loader.** Sites reading a local `siteConfig` alongside `niche.config.json` converge on the loader during the port; one source of truth per value.
+10. **Sites with flat or grouped-less navigation get their IA authored in Phase 2.** The B/C contracts assume grouped nav + a registry-built calculators group. A flat-nav site's port includes authoring `navigation[]` groups in `niche.config.json` and wiring the nav builder; that is design-port work, listed in the phase plan, not an improvisation.
 
 ---
 
@@ -188,6 +213,14 @@ STAGE 4  READ + ITERATE  Bing 14/28d, Google 28/90d, cohort scale-or-kill, next 
 
 Ordering rules: Stage 1 before Stage 2/3 because the port re-baselines every monitored window anyway (do it once, then measure content changes on the new design) and because rewritten content should land in the new templates, not be touched twice. EXCEPTION: if Stage 0 diagnoses broken indexation (the agency and medical pattern), the indexation remediation runs FIRST, before port or content, because content spend on an uncrawled site is waste. Stages for different sites may interleave (§9); stages within one site may not reorder.
 
+**The zero-search-data variant (applies to any site without a GSC property + Bing import: most of family D today).** Half this track reads GSC/Bing; on a site with neither, those reads return nothing and several scripts hard-fail (`derive_competitor_universe.py` reads `gsc_query_data`; the GSC client raises without a `gsc_property_url`). Rules:
+
+- GSC property + Bing import are a **Track 2 blocker** for that site (owner action, appendix K); Track 1 (the port/build) proceeds without them.
+- Until they exist and have ~90 days of data: competitor universe is authored from the site's niche-screener research export + live SERP checks instead of GSC heads; lanes from the pillar set; eligibility rule 1 (we-are-absent) is assumed true for a near-zero corpus and recorded as assumed; expansion runs as net-new waves gated on cannibalisation only; equity grading and the ROI worklist are N/A (nothing has equity); cohort reads BEGIN when the data does, so register `monitored_pages` rows anyway with zero baselines and read late rather than never.
+- Stage 2 on such a site shrinks to items 1, 6, 7 (house positions, link hygiene, instrumentation) plus the structural floor; items 2-5 defer until query data exists. This is a recorded waiver in STATE.md, not a silent skip.
+
+**Family D is a BUILD, not a port.** These sites have 7-11 components, some no header at all, flat 7-item navs, no capture surfaces beyond the basic form set. Track 1 for them means standing up the full template system (F.1-F.7), authoring nav IA, marketing copy (marquee prompts, stats, coverage cards), page summaries and hubs from scratch on the shared core. Estimate 2-4 agent-days each, not the "fraction of a day" a true re-skin would be; the pilot exists to replace that estimate with a measurement.
+
 ### 5.0a The optimisation baseline (Stage 2, per site)
 
 What Property and generalist got, replayed in a fixed order on the existing corpus. Each item names its engine; all content passes are Opus, reasoning-first, never scripted bulk edits.
@@ -195,7 +228,9 @@ What Property and generalist got, replayed in a fixed order on the existing corp
 1. **house_positions.md currency pass.** Create or re-verify the site's ground-truth doc against primary sources + the ground-truth memory set (FA 2026 figures moved 4 times between writing and verification in the wills build; assume drift). This gates everything below.
 2. **Corepage pass.** `python -m optimisation_engine.corepage --site <site> --page homepage` (then `/services` etc): analysis pack, then an Opus rewrite of meta + structure + copy of the core commercial pages. Dentists and Solicitors already have corepage rewrites COMMITTED but NOT DEPLOYED (`d3e705dd`, `b8ae2269`); reconcile those against the port before writing anything new, do not overwrite them blind.
 3. **SERP meta pass.** Per-site `seo_persona` + intent-driven metaTitle/metaDescription formulas (memory `holistic_meta_strategy`, `SERP_META_PROGRAM.md`), every title written by an LLM reading that page with fresh query data. Never templated.
-4. **Equity-graded legacy sweep.** Grade the existing corpus with the §9.5 REFRAME / EXTEND / NO-PAGE table. Expect the distribution to differ from Property: on a never-optimised 20-80 post site most pages are low-equity REFRAME candidates; on Dentists/Solicitors-size corpora run the `track2_worklist.py` ROI ranking (near-page-1 Bing + weak Google first). Full-overhaul rules apply (§4 quality bar: dominant-query H1, comparison tables, worked examples, FAQ, current facts).
+4. **Equity-graded legacy sweep.** Grade the existing corpus with the §9.5 REFRAME / EXTEND / NO-PAGE table. Rule for which treatment: any site with ≥90 days of GSC data runs the ROI ranking (near-page-1 Bing + weak Google first); zero-data sites default REFRAME-heavy. Full-overhaul rules apply (§4 quality bar: dominant-query H1, comparison tables, worked examples, FAQ, current facts).
+
+**Runnability warning for items 2-4 (verified 2026-08-24, do not discover this mid-run):** `optimisation_engine/corepage/config.py` CORE_PAGES has entries for property/generalist/solicitors/dentists ONLY; every other site needs its entry authored before item 2 runs. `scripts/track2_worklist.py` is Property-hardcoded (universe file and blog dir literals, no `--site`); item 4 on any other site starts by generalising it. `seo_persona` exists per site in `optimisation_engine/blog_generator/site_configs/`. This is the appendix P named risk in concrete form: the first sibling Stage 2 budgets a half-day to generalise the class, and records what it fixed in this doc.
 5. **GEO backfill.** The generalist waves 0-3b pattern: workedExamples, BLUF answer blocks, citation-ready structure across the corpus (`AI_SEARCH_GEO_PROGRAM.md`). Bing + ChatGPT out-convert Google on Property; the estate's AI-surface readiness is a conversion lever, not garnish.
 6. **Internal-link hygiene.** Hub-and-spoke wiring to the site's pillars (hygiene, not a proven ranking lever: §5.3), honouring any armed monitored windows.
 7. **Conversion instrumentation check.** Analytics SDK live, `data-cta` coverage, funnel events, lead-form invariants (D.1, including the invisible-label check: the navy-ground LeadForm bug is KNOWN LIVE on generalist and digital-agency), no interruptive-surface additions.
@@ -218,7 +253,7 @@ What Property and generalist got, replayed in a fixed order on the existing corp
 - Medical: flat routing; use `scripts/medical_flat_link_audit.py`, never `slug_resolver --fix`.
 - generalist: Track 2 applies in full (it already ran a Property-standard parity programme); its design family does not change the content method.
 - Small family-D sites (14-32 posts): run discovery, but expect the first finding to be that the corpus floor, not cluster coverage, is the gap; their expansion looks like early Property waves (net-new to ~100+ posts) before cluster-coverage tactics pay.
-- The blog generator + wave tooling is already multi-site (`sites/*.json`, 17 site_configs). Missing configs: `sites/wills-probate.json`. Author it at Track 2 start for that site.
+- The blog generator + wave tooling is already multi-site (`sites/*.json`, 17 site_configs; `sites/wills-probate.json` exists, verified 2026-08-24). The gap is discovery.json SCHEMA, not existence: several sites carry legacy-format files without `lanes`/`lane_negative_tokens`, and `candidate_pool.py` silently skips the lane gate when they are absent, producing a lower-fidelity pool with no error. Step 1 of every site's discovery run is therefore: open its discovery.json and verify the v2 keys are present, upgrading the file if not; never trust file-exists as file-ready. Precedence for all such claims: repo reality beats this doc's tables; the tables are dated snapshots.
 
 ### 5.3 What transfers from Property without re-derivation
 
@@ -228,7 +263,17 @@ The lever board (`REWRITE_PROGRAM.md` §9.12): word count/depth is NOT a lever; 
 
 ## 6. TRACK 3: new sites for open niches
 
-Build process is already fully specified: `SITE_BUILD_PLAYBOOK_2026-07-24.md` (phases 0-6 + G1, proven twice) + `SITE_SPINUP.md` (infrastructure). New sites are born at the Property standard: Track 1's §4 spec is the scaffold template from day one (post-extraction, the scaffold consumes the shared core; there is no "old design then port" step). Amend the playbook's scaffold source (currently `construction-cis/web`) to the standard-bearer site once the first port lands.
+Build process is already fully specified: `SITE_BUILD_PLAYBOOK_2026-07-24.md` (phases 0-6 + G1, proven twice) + `SITE_SPINUP.md` (infrastructure). New sites are born at the Property standard: Track 1's §4 spec is the scaffold template from day one.
+
+**Hard gate: no Track 3 site starts until the extraction and the family-D pilot have landed.** Before that, there is no sanctioned scaffold source (the playbook's `construction-cis/web` template is family B, which §4.1 defines as the defect; the Property standard sits on an unmerged branch until §8.10). After the pilot: scaffold = shared core + the pilot site as the worked example, and this doc amends the playbook's scaffold-source line at that moment.
+
+**Precedence when the three docs conflict: this doc, then the playbook, then SITE_SPINUP.** Known conflicts, resolved here so no agent re-derives them:
+- Migration order vs deferred branding: the playbook wins. DB migration is Phase 6, single tranche, `active=false`, after brand exists; spinup's "Step 1 FIRST" ordering applies inside that Phase 6 tranche, and no placeholder brand or domain is ever INSERTed into the prod `sites` row.
+- Consent: rendered checkbox, the playbook's rule (§4.6.7). Property's notice model does not travel.
+- Template details: this doc's appendix supersedes the playbook's construction-cis-era items; do not scaffold `ServiceTiers` (dead component, §4.2) or the old chrome.
+- Storage prefixes: spinup's table is stale (9 rows vs 18 live prefixes; verified 2026-08-24). The grep across `*/web/src/app/layout.tsx` is the authority; update spinup's table when you touch it.
+- Lead routing: spinup's pointer to `CENTRAL_LEAD_PIPELINE.md` for a notify allowlist is dead; no per-source allowlist exists. The real work at migration time: read `Property/web/src/lib/lead-routing.ts` + `Property/web/src/app/api/leads/notify/route.ts` and set the new source's routing posture EXPLICITLY, because the defaults are hazardous for a new site: `DEFAULT_CC_EXCLUDED_SOURCES` covers only `property,test` (a new source's leads CC the accounting partner by default) and offer-sending fires per source. For any regulated-adjacent niche both default ON is a compliance incident.
+- Domains: appendix K's "never before G1" governs; spinup's domain-consuming steps (IndexNow host, CI url, `NEXT_PUBLIC_SITE_URL`, DNS) execute at G1 via the playbook's rename-swap list.
 
 ### 6.1 The niche ledger
 
@@ -238,7 +283,7 @@ Open, with positive evidence, in priority order:
 
 | Candidate | Evidence | Note |
 |---|---|---|
-| Settlement agreements / employment | 9,900/mo @ £41.59 CPC, KD 1 | Best ratio in the whole dataset; could plug into Solicitors brand rather than a new site (`docs/settlement-agreements/` exists) |
+| Settlement agreements / employment | 9,900/mo @ £41.59 CPC, KD 1 | **REGULATORY HOLD.** `docs/settlement-agreements/REGULATORY_POSITION_2026-08-10.md` verdict CONDITIONAL: per-lead referral of settlement-agreement recipients is regulated claims management (RAO art 89G; unauthorised carrying-on is criminal, FSMA s.19/s.23). The estate's standard leads model is OFF for this niche; the compliant models are advertising / sponsorship / directory with partner-authored creative (FPO art 73B), and NO estate spec exists for that architecture. The sweep's "model already proven by competitors" claim is FALSIFIED on file (both competitors are SRA-regulated firms inside the art 89N exclusion). The niche screener's G0 gate PASSED this niche (`regulatory_gate: "none"`), a known instrument false-pass; the manual doc wins. Build nothing here until owner decision §8.11. |
 | Leasehold enfranchisement / RTM | 1,000/mo KD 0 | Adjacent to Property (`docs/leasehold/` exists; Property already has the pillar); decide site vs cluster |
 | Property professional surveys | KD 0 family | party wall / asbestos / right-of-light |
 | Manufacturing & engineering | Tier-1 scored #6, research in `expansion_research/tier1_manufacturing/` | The one Tier-1 pick with research but no site; needs the live-SERP confirmation that never happened |
@@ -251,7 +296,9 @@ The owner's stated intent for this programme is coverage "regardless of how smal
 
 ### 6.2 Standing constraints on every new site
 
-From the playbook, unchanged: Opus-only content bodies; A* bar; faceless authority (no named experts, no regulated-activity claims); Ashfield Trading entity; brand/domain deferred to G1, never ask early, greppable placeholders; batch size 1; calculator fleet derived from data (R1/R2/R3 rules), never a round number; fact-verification queue from day one; frozen storage prefix registered in `SITE_SPINUP.md` before code.
+From the playbook, unchanged: Opus-only content bodies; A* bar; faceless authority (no named experts, no regulated-activity claims); Ashfield Trading entity; brand/domain deferred to G1, never ask early, greppable placeholders; batch size 1; calculator fleet derived from data (R1/R2/R3 rules), never a round number; fact-verification queue from day one; frozen storage prefix confirmed by grep across `*/web/src/app/layout.tsx` (the spinup table is stale) and added to that table before code.
+
+**Plus one new mandatory gate, generalised from the settlement-agreements near-miss: every new niche gets a `docs/<niche>/REGULATORY_POSITION_<date>.md` before Phase 0 closes**, verifying against primary sources whether lead generation in that niche is a regulated activity (FCA/RAO, SRA, claims management, credit broking), whether the standard capture stack is lawful for it, and what the compliant monetisation model is. The niche screener's G0 `regulatory_gate` is a heuristic and has produced at least one false PASS; it never substitutes for this doc. A CONDITIONAL or NO verdict stops the build at that point and goes to the owner with the structural options.
 
 ---
 
@@ -273,17 +320,21 @@ The full incident log is in the Property STATE/DESIGN_SYSTEM docs; these are the
 
 ---
 
-## 8. Owner decisions required before execution
+## 8. Owner decisions (the programme's gate register; record outcomes IN this table, with dates)
 
-1. **Extraction (§3):** extract the Property visual core into web-shared (recommended), or per-site copies. Blast radius: additive-only exports, Property unaffected until it opts in. Revert: delete the new export paths.
-2. **Sequencing (§9):** approve the pilot order or reorder by commercial priority.
-3. **generalist:** keep its bespoke design (recommended, on file as deliberate) and run Track 2 only, or bring it onto the Property standard.
-4. **digital-agency:** port position (recommended: last among live family-B sites; its bottleneck is indexing, not design).
-5. **DataForSEO top-up** for the estate discovery sweep (~$2.30/site x ~10 sites with real corpora; balance was ~$4.78).
-6. **Designer involvement:** the Property run bought 11 sessions of professional design that the standard now encodes. Sibling ports need no designer by default (the standard IS the design); confirm, or commission per-site brand layers (ramp, wordmark icon, motif) from Double Wired Creative while agents do the rest.
-7. **NO-GO overrides (§6.1):** whether "every niche" includes dedicated sites for evidence-killed niches, per niche, or accepts the cluster-conversion path as coverage.
-8. **Fresh R1 enumeration pass** to get beyond the exhausted 89-row universe (needed for genuine full coverage).
-9. **wills-probate / divorce-finances:** fold the design port into their pre-G1 prep (recommended: cheapest possible port, zero cutover risk) and schedule G1.
+| # | Decision | Recommendation | State |
+|---|---|---|---|
+| 1 | Extraction (§3): shared core in web-shared vs per-site copies | Extract; additive-only, Property unaffected until opt-in; revert = delete new export paths | OPEN |
+| 2 | Sequencing (§9): approve pilot order | Pilot D (crypto or ecommerce), then construction-cis | OPEN |
+| 3 | generalist design | Keep bespoke (on file as deliberate); Track 2 only | OPEN |
+| 4 | digital-agency port position | Last of the live family-B sites (bottleneck is indexing, not design) | OPEN |
+| 5 | DataForSEO top-up for the estate sweep (~$2.30/site x ~10; balance ~$4.78 at 08-21) | Top up before the Stage 0 sweep; a lone pilot run fits the current balance | OPEN |
+| 6 | Designer involvement for sibling brand layers | None by default; the standard is the design | OPEN |
+| 7 | NO-GO overrides: dedicated sites for evidence-killed niches | Accept cluster-conversion as coverage; override per niche only | OPEN |
+| 8 | Fresh R1 enumeration pass (89-row universe exhausted) | Yes, when Track 3 resumes | OPEN |
+| 9 | wills-probate / divorce-finances | PARKED per owner 2026-08-24 (not live, not a priority); port folds into G1 prep whenever G1 is scheduled | PARKED |
+| 10 | Merge `design/property-redesign-port` to main | Required before ANY extraction or sibling port (§3 branch prerequisite); merge, then verify a Property deploy from main | OPEN |
+| 11 | Settlement agreements structure (§6.1 regulatory hold) | Site with ad/sponsorship model (needs a new conversion-architecture spec), Solicitors cluster (fails the fit test: consumer legal intent vs law-firm-principal audience), or skip. No build under the per-lead model, in any form | OPEN |
 
 ## 9. Recommended sequencing (pending decision 2)
 
@@ -291,11 +342,11 @@ Each step gated on the previous one's owner review; one site in flight per track
 
 1. **Extraction + pilot D:** extract shared core; port one family-D site (crypto or ecommerce, smallest live surfaces) end to end including its DESIGN_DELTA, guard tests, owner dev-server walk. This validates the extraction, the brand-swap recipe, and the per-site cost estimate.
 2. **Pilot B:** construction-cis (healthy, mid-size, representative family B). This validates the port recipe on a full existing page set with the link floor.
-3. **Fan out Track 1:** remaining family D (6 sites, batched), then family B by conversion upside: Solicitors, Dentists, Medical, contractors-ir35, digital-agency last. wills-probate + divorce-finances ported inside their G1 prep whenever G1 is scheduled.
+3. **Fan out Track 1:** remaining family D (6 sites, batched), then family B by conversion upside: Solicitors, Dentists, Medical, contractors-ir35, digital-agency last. wills-probate + divorce-finances are PARKED (owner, 2026-08-24: not live, not a priority); their port folds into G1 prep if and when G1 is scheduled, outside this queue.
 4. **Track 2 in parallel**, biggest corpora first (they have the query data that feeds the method): generalist, Dentists, Solicitors, digital-agency (content eligible even while design waits), construction-cis, Medical, contractors-ir35, then family D corpus-building waves. Every site follows the §5.0 stage order internally (diagnose, port, optimise, expand, read); Stage 0 diagnosis can run for ALL sites up front in one sweep since it is cheap and independent, and it produces the evidence that reorders the queue.
 5. **Track 3** after the first two pilots prove the standard scaffold: settlement agreements (or Solicitors cluster, per decision), leasehold decision, manufacturing confirmation, fresh R1 pass, then the scored queue.
 
-Cost calibration from the Property run (the only honest anchor): Property's port was ~15 hours of serial phase agents plus ~a day of investigation on a 252-file designer diff against the estate's largest site. Siblings have no designer diff to reconcile: expect a family-D port at a fraction of a day of agent time plus review, a mid family-B site at 1-2 days, Dentists/Solicitors/agency at 2-4 days, each plus the owner dev-server walk. Corpus discovery is ~1 session + ~$2.30 per site; each cluster batch thereafter ran at roughly a day including QA on Property. These are estimates, labelled as such; the pilots exist to replace them with measurements.
+Cost calibration from the Property run (the only honest anchor): Property's port was ~15 hours of serial phase agents plus ~a day of investigation on a 252-file designer diff against the estate's largest site. Siblings have no designer diff to reconcile, but family D is a BUILD, not a re-skin (§5.0): expect 2-4 agent-days per family-D site (full template system + IA + marketing copy from scratch on the shared core), a mid family-B site at 1-2 days (existing pages, template swap + divergence protocol), Dentists/Solicitors/agency at 2-4 days, each plus the owner dev-server walk. Corpus discovery is ~1 session + ~$2.30 per site; each cluster batch thereafter ran at roughly a day including QA on Property. These are estimates, labelled as such; the pilots exist to replace them with measurements.
 
 ## 10. Where the detail lives
 
@@ -486,7 +537,7 @@ Bar: `sticky top-0 z-40 border-b border-slate-200 bg-white shadow-sm`, inline `p
 `relative overflow-hidden bg-slate-900 text-white` + brand backdrop motif; `siteContainerLg relative z-10 py-12 sm:py-16`; `grid gap-10 lg:grid-cols-[1.4fr_3fr] lg:gap-16`.
 
 - Left: footer-variant wordmark (primary-400 icon and rule, white text) + `siteConfig.description` in `max-w-md text-sm text-slate-300`.
-- Right: `<nav aria-label="Footer">` `grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4`. Columns DERIVED, never hand-listed: Services = children of the services nav item; Resources = children of the primary resources pillar; Calculators = first tool of each of the first 5 registry categories + "All calculators"; Company = About / Contact / Locations / Book a consultation. Heading `text-xs sm:text-sm font-bold uppercase tracking-widest text-emerald-400 mb-4`; links `inline-flex py-0.5 text-sm font-semibold text-slate-300 hover:text-white` in `ul.space-y-2`.
+- Right: `<nav aria-label="Footer">` `grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4`. Columns DERIVED, never hand-listed: Services = children of the services nav item; Resources = children of the primary resources pillar; Calculators = first tool of each of the first 5 registry categories + "All calculators"; Company = About / Contact / Locations / Book a consultation. Sites without a locations surface (crypto and most of family D) omit the Locations link; the derivation renders only routes that exist, never a dead link. Heading `text-xs sm:text-sm font-bold uppercase tracking-widest text-emerald-400 mb-4`; links `inline-flex py-0.5 text-sm font-semibold text-slate-300 hover:text-white` in `ul.space-y-2`.
 - Legal row: `mt-10 pt-6 border-t border-white/10 space-y-4`: footer_links (Privacy / Terms / Cookies) at `text-xs text-slate-400`, designer credit, `legalDisclosure`, `© {year}` + `ConsentToggle` ("Do not track me").
 
 ## D. The lead form and every capture surface (exact)
@@ -598,6 +649,8 @@ Navy hero → `#book` slate-50 form section `lg:grid-cols-[1.6fr_1fr]` (WhatToEx
 
 ## G. Calculators (structure + fleet)
 
+This layout is Property's pre-extraction shape, recorded as the reference. Sites already consuming `web-shared/tools` (construction-cis, crypto, family D) are AHEAD of it and keep their shape (§4.6.3); the contract fields below are what binds, not the file locations.
+
 File layout per site:
 
 ```
@@ -679,7 +732,10 @@ Two classes. LAUNCH BLOCKERS stop a deploy; COSMETIC items ship with the recorde
 | Favicon set | COSMETIC | Keep the site's existing favicon until the owner ships a new one; never generate one |
 | Homepage/hero imagery beyond the SVG motif | COSMETIC | The standard needs none (Property ships zero photography); if the owner wants photos, they supply them |
 | Phone number | BLOCKER for schema/copy | Use the value in `niche.config.json`; if placeholder, keep placeholder and flag |
-| GA4 id, GSC/Bing verification | Not a blocker (INFO gap per SITE_SPINUP) | Flag in STATE.md |
+| GA4 id | Not a blocker (INFO gap per SITE_SPINUP) | Flag in STATE.md |
+| GSC property + Bing import | **TRACK 2 BLOCKER for that site** (Stage 0 onward reads them; scripts hard-fail without them); not a Track 1 blocker | Zero-data variant of §5.0 until done; flag in STATE.md |
+| Font change on a live site | BLOCKER (per port) | Default is KEEP the current typeface; any switch proposed in the DESIGN_DELTA, owner yes required (§4.6.5) |
+| Capture-surface scope (which interruptive/capture surfaces the port adds) | BLOCKER (per port) | Listed in the DESIGN_DELTA; approved in the same owner turn as the swatch (§4.6.6) |
 | Domain purchase / DNS (new sites, ashfield) | BLOCKER at G1 | Never before G1, per the playbook |
 | DataForSEO top-up | BLOCKER for Track 2 discovery | Report balance, ask once, stop if unfunded |
 | Serper credits | Degraded-mode, not a blocker | Stored-harvest positions are acceptable, label them as such |
@@ -719,7 +775,14 @@ cream surface:       <hex or "unchanged #fbfaf7">
 
 ### L.2 Brand-ramp derivation (when the owner has not chosen)
 
-Default: keep the site's existing `--brand-primary` hue (it is already the live brand), snap it to the nearest Tailwind named ramp family, and use that family's 50-900 as the ramp. Measure every A.8 floor combination before proposing; if the 600 step fails 4.5:1 on white for text use, shift text usages to the 700 step and say so in the delta. Two sites may not share a primary ramp family with an adjacent site in the header nav of the parent (differentiation check against the table in L.3 as ports land). Present as a swatch + contrast table for a one-line owner yes (K).
+Default: keep the site's existing `--brand-primary` hue (it is already the live brand), snap it to the nearest Tailwind named ramp family, and use that family's 50-900 as the ramp. Measure every A.8 floor combination before proposing, INCLUDING white-on-primary-600 button text (a button-ground failure the text-shift rule does not cover); if the 600 step fails 4.5:1 for text use, shift text usages to the 700 step and say so in the delta. Present as a swatch + contrast table for a one-line owner yes (K). Differentiation check: no two ported sites share a primary ramp family where avoidable; L.3 is the check.
+
+**When the default is degenerate, do not auto-derive; prepare 2-3 candidates and let the owner pick.** Two known degenerate classes, both real in the estate:
+
+- **Dark/near-neutral primary** (crypto: `#0e1a3a` near-black navy, with a second burnt-orange action hue). A navy primary collides with the standard's navy grounds (primary buttons inside navy panels violate "navy never touches navy") and is near-indistinguishable from slate for the money semantics. Candidates keep the brand's navy as the GROUND identity and propose a distinct mid-saturation action ramp; a two-hue brand maps as ground hue + primary ramp, and the delta records both.
+- **Primary colliding with a semantic ramp** (construction-cis: `#f97316` IS orange-500, while amber/orange are the locked duty-bites and penalty-ladder colours). The proposal must resolve the collision explicitly: either reassign the site's duty/penalty semantics to a non-brand family with measured contrasts, or shift the brand ramp; the collision analysis goes in the delta and the choice is the owner's.
+
+The primary ramp must always be a mid-saturation hue distinguishable at a glance from slate (neutral), from the site's duty-bites ramp, and from its no-relief red.
 
 ### L.3 Ramp registry (fill in as ports land)
 
@@ -752,14 +815,15 @@ Spawn an agent that did NOT build the phase. Its prompt carries this contract:
 
 Order matters; each step is one commit, additive only, Property untouched.
 
+0. **Package plumbing first (verified 2026-08-24, both will hard-fail if skipped).** (a) `packages/web-shared/package.json` has an explicit `exports` map with no wildcards: every new `./design/*` path must be added to it or consumers throw `ERR_PACKAGE_PATH_NOT_EXPORTED`. (b) Dependencies: the extracted set needs `@radix-ui/react-accordion` (FaqSection) and any other radix pieces the primitives use; add them to web-shared's own `dependencies` (source-only workspace package, consumed via `transpilePackages`, so they resolve from the consumer's tree; verify on the pilot). Consuming sites also need `tw-animate-css` in their own deps (Property's opening CSS block imports it).
 1. `packages/web-shared/design/layout-utils.ts`: containers, section rhythm constants, the four button recipes + focusRing with every colour literal replaced by `var(--brand-*)` / semantic vars; `heroCreamSurface` reads `var(--hero-cream, #fbfaf7)`.
-2. `packages/web-shared/design/globals-standard.css`: the design (not brand) CSS: radius chain, layered/unlayered heading split, motion keyframes + gates, `.related-card`, `.eyebrow-rule`, `.tick-draw`, marquee, glow set with rgba built from `--brand-primary` components. Consumed via one `@import` in a site's globals.css below its token block.
+2. `packages/web-shared/design/globals-standard.css`: the design (not brand) CSS: radius chain, layered/unlayered heading split, motion keyframes + gates, `.related-card`, `.eyebrow-rule`, `.tick-draw`, marquee, glow set with rgba built from `--brand-primary` components. **Consumption mechanics (exact, because the naive instruction is a build error):** a consuming site's `globals.css` mirrors Property's opening block verbatim, then adds the standard import, THEN its token block: `@import "tailwindcss" source("..");` / `@source "../../../../packages/web-shared";` (MANDATORY for every consuming site or Tailwind never scans the shared components and their utilities silently vanish; family-D globals.css files do not have this line today) / `@import "tw-animate-css";` / `@import "@accounting-network/web-shared/design/globals-standard.css";` (path added to the exports map in step 0) / then `:root` tokens. Imports precede all other statements; token overrides come after.
 3. `packages/web-shared/design/primitives/`: Prose, Eyebrow(+Rule), InlineLink, CardStack, ExampleFigureNote, FaqSection+accordion, Breadcrumb, SlimHero, NoticeCard, NumberedPagination.
 4. `packages/web-shared/design/marketing/`: TopicSection/TopicHero, LeadCTAPanel, CoverageCards, ComparisonTable, ProcessTimeline, DrawnTickList, StatsCounter, PromptMarquee, ProblemStatement, ScrollGlowGroup, WhatToExpectCard, StickyCTA, NumberedReasons, WhyUsList, TestimonialsSection (quotes injected by prop).
 5. `packages/web-shared/design/blog/`: RelatedArticles, HubArticleList, TableOfContents, BlogSidebarCta, ReadingProgress, BlogCategoryHub shell, BlogListWithSearch.
-6. `packages/web-shared/design/chrome/`: PageShell, SiteHeader, SiteFooter, backdrop-motif contract (motif SVG injected by prop), wordmark contract (icon + two strings by prop).
+6. `packages/web-shared/design/chrome/`: PageShell, SiteHeader, SiteFooter, backdrop-motif contract (motif SVG injected by prop), wordmark contract (icon + two strings by prop), AND the nav builder (`buildPrimaryNav()` currently in `Property/web/src/lib/nav.ts`: the header's calculators group and the footer's derived columns both depend on it; without it the B/C contracts are unbuildable on a sibling).
 7. Guard-test templates (parameterised by site): calculator-tabs-crawl-path, hub-article-crawl-path, nav-active-state, first-sentence.
-8. Pilot site consumes 1-7; `getComputedStyle` parity check of the pilot's rendered primitives against Property's under Property tokens (N instruments) before any further port.
+8. Pilot site consumes 1-7; `getComputedStyle` parity check of the pilot's rendered primitives against Property's under Property tokens. Harness mechanics: a temporary commit in the pilot's port branch swaps the pilot's token block for Property's values, `next start`, run the N instrument over the primitive set at 390 and 1440, diff computed styles against the same run on Property; revert the token commit. The swap commit never ships.
 
 Every component keeps Property behaviour byte-identical under Property's token values; every export is a NEW path; nothing existing in web-shared changes.
 
@@ -769,9 +833,9 @@ Every component keeps Property behaviour byte-identical under Property's token v
 
 | Site | Corpus floor to reach | What must exist first | Track 2 scripts risk |
 |---|---|---|---|
-| Family D (7 sites) | 100-150 posts, full pillar set (3-5), data-derived calculator fleet, 5+ category hubs, 2 research assets | discovery.json authored; house_positions.md created + verified; blog hubs + category routes built during the port | LOW (blog generator + wave runner already multi-site) |
-| construction-cis, contractors-ir35, Medical | 150-250 posts + cluster coverage on their heads | discovery.json (contractors/medical missing), fresh GSC/Bing pull | Medical: flat routing, use `medical_flat_link_audit.py` |
-| Dentists, Solicitors, digital-agency | 250-400 posts + cluster coverage | discovery.json, house_positions currency pass | check per-script site parameterisation (below) |
+| Family D (7 sites) | 100-150 posts, full pillar set (3-5), data-derived calculator fleet, 5+ category hubs, 2 research assets | GSC property + Bing import (Track 2 blocker, owner); discovery.json schema-verified; house_positions currency pass (most exist); hubs + category routes built during the build | LOW (blog generator + wave runner already multi-site); zero-data variant of §5.0 applies |
+| construction-cis, contractors-ir35, Medical | 150-250 posts + cluster coverage on their heads | discovery.json schema-verified (files exist; legacy format lacks lanes), fresh GSC/Bing pull | Medical: flat routing, use `medical_flat_link_audit.py` |
+| Dentists, Solicitors, digital-agency | 250-400 posts + cluster coverage | discovery.json schema-verified (files exist), house_positions currency pass, reconcile their undeployed corepage rewrite commits first | check per-script site parameterisation (below) |
 | generalist | cluster conversions from J (retail, performers, TOMS, manufacturing...) on top of 418 | its parity programme already ran; fold J clusters into its topic pool | LOW |
 | wills-probate, divorce-finances | already content-complete for launch; J boundaries recorded | G1 | none pre-launch |
 | Property | maintenance + the deferred Phase D (incorporation) after SDLT reads | nothing | none |
@@ -779,3 +843,17 @@ Every component keeps Property behaviour byte-identical under Property's token v
 Named risk, verify at first use per site: parts of the Track 2 QA chain grew up on Property (`pull_page_data`, `track2_*`, `qa_verdict`, `predeploy_gate --qa-batch`, equity gates). The blog generator, slug resolver, wave runner, discovery engine and indexing are proven multi-site; the track2 chain is NOT yet proven off Property. The first non-Property cluster batch budgets a half-day to generalise whatever breaks, fixes the class not the instance, and records the result here.
 
 Estate totals at completion of the floors above, for scale intuition only: roughly 2,500 existing posts grow to ~3,500-4,000 plus pillar/calculator surfaces, before any Track 3 site. Every number above is a floor or an estimate and is labelled as such; the discovery runs replace them with measurements.
+
+## Q. Dry-run verification record (2026-08-24)
+
+Three adversarial execution simulations were run against this doc before any execution: (1) crypto, the family-D pilot path including the appendix O extraction; (2) construction-cis, a live family-B port; (3) settlement-agreements, the Track 3 path across this doc + playbook + spinup. ~50 findings; all BLOCKER and MAJOR findings are incorporated into the body above (execution-gate model, branch prerequisite, live-serving rule, artifact home, sibling-divergence protocol §4.6, zero-data variant §5.0, Stage 2 runnability warnings, extraction plumbing O.0/O.2/O.6/O.8, degenerate-brand rule L.2, Track 3 precedence + regulatory gate + lead-routing hazards, decisions 10-11, K reclassifications, stale-table corrections).
+
+Known open items the dry-run surfaced that a doc cannot fix (owner or build work):
+
+1. **construction-cis consent discrepancy**: STATE.md records the mandatory-checkbox rule; the live LeadForm ships the notice model with `consent_given: true` hardcoded. Compliance flag, owner call, independent of this programme (§4.6.7).
+2. **New-source lead-routing defaults are hazardous** (`DEFAULT_CC_EXCLUDED_SOURCES` covers only property,test; per-source offer sending): any new source key configures its posture explicitly at migration time (§6 precedence list). Pre-existing condition, applies to any future site regardless of this programme.
+3. **Niche screener G0 false-pass** (settlement agreements): the instrument needs its regulatory gate fixed or its output permanently subordinated to the manual REGULATORY_POSITION doc (§6.2). Instrument work, separate backlog.
+4. **The reference instruments do not exist yet** (`docs/_engines/instruments/`, from appendix N): built once in the first execution session.
+5. **SITE_SPINUP.md staleness** (prefix table 9/18 rows, dead CENTRAL_LEAD_PIPELINE pointer): corrected in that doc when next touched; this doc's precedence rules cover the interim.
+
+Re-verify cheap claims at execution time; this record is a snapshot, and the doc's own trap 5 applies to the doc itself.
