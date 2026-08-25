@@ -1,0 +1,66 @@
+keyword,vol,sources,domains,bucket,detail
+accountant for delivery driver uk,0,gsc,0,assigned,T-COU
+accountant for taxi drivers,110,comp,4,assigned,T-TAXI
+accountants for uber drivers,70,comp,3,assigned,T-GIG
+accounting for courier,0,gsc,0,assigned,T-COU
+accounting for plumber,0,pool,0,excluded,"EX-CIS plumbers belong to construction-cis, estate assignment"
+accounting for taxi drivers,110,comp,3,assigned,T-TAXI
+accounts for taxi drivers,110,comp,3,assigned,T-TAXI
+are uber driver self employed,260,pool,1,assigned,T-GIG
+are uber driver self-employed,260,pool,1,assigned,T-GIG
+as a delivery driver can i claim capital allowance for van,0,bing,0,assigned,T-COU
+best apps for drivers,170,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+bolt taxi birmingham,90,comp,1,excluded,"EX-NEWS Bolt-launch news page (gondal blog), news cycle"
+bolt taxis birmingham,90,comp,1,excluded,"EX-NEWS Bolt-launch news page (gondal blog), news cycle"
+chauffeur business,70,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+chauffeur license,210,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+chauffeur's license uk,70,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+cleaning products vat,70,comp,1,assigned,T-CLN
+cleaning work uniform tax rebate,70,comp,1,excluded,"EX-OFFNICHE employee uniform-rebate demand (lanop rebate page), not cleaning-business accountancy"
+do taxis charge vat,140,comp,1,assigned,T-VAT
+driving instructor claim 45p per mile,0,pool,0,assigned,T-DRI
+haulage accountant,0,gsc,0,assigned,T-TRANS
+hmrc cleaning uniform,110,comp,1,excluded,"EX-OFFNICHE employee uniform-rebate demand (lanop rebate page), not cleaning-business accountancy"
+hmrc digital tax rules taxi drivers,10,comp,1,assigned,T-SA
+how do i become a chauffeur,170,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+how do i become a chauffeur uk,70,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+how do uber drivers pay tax uk,0,bing,0,assigned,T-GIG
+how to become a chauffeur,170,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+how to become a chauffeur in uk,70,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+how to become a chauffeur uk,70,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+how to become chauffeur,170,comp,1,excluded,"EX-CAREER how-to-become/apps content, livingstones traffic model; start-a-chauffeur-business angle parked to delta D2"
+how to pay least amount of tax on uber uk,0,bing,0,assigned,T-GIG
+is there vat on taxi fares uk,110,comp,1,assigned,T-VAT
+is uber eats self employed,90,comp,1,assigned,T-GIG
+is uber eats self-employed,70,comp,1,assigned,T-GIG
+lorry driver meal allowance,50,comp,1,assigned,T-HGV
+meal allowance for hgv drivers,50,comp,1,assigned,T-HGV
+"self assessment for uber drivers, is it different to sole trader self employment",0,bing,0,assigned,T-GIG
+self employed taxi driver,110,comp,1,assigned,T-SA
+self employed taxi drivers,110,comp,1,assigned,T-SA
+self-employed taxi driver,110,comp,1,assigned,T-SA
+self-employed taxi driver expenses,40,comp,1,assigned,T-SA
+self-employed taxi drivers,110,comp,1,assigned,T-SA
+social security scotland christmas payment dates,50,comp,1,excluded,"EX-OFFNICHE benefits query, regex false positive on 'security'"
+tax rebate uniform cleaning,70,comp,1,excluded,"EX-OFFNICHE employee uniform-rebate demand (lanop rebate page), not cleaning-business accountancy"
+tax relief cleaning uniform,590,comp,1,excluded,"EX-OFFNICHE employee uniform-rebate demand (lanop rebate page), not cleaning-business accountancy"
+taxi accounts,140,comp,1,assigned,T-TAXI
+taxi driver accountants,110,comp,3,assigned,T-TAXI
+taxi driver self employed,110,comp,1,assigned,T-SA
+taxi driver self-employed,110,comp,1,assigned,T-SA
+taxi drivers self employed,110,comp,1,assigned,T-SA
+taxi expenses,70,comp,1,assigned,T-SA
+taxi vat uk,90,comp,1,assigned,T-VAT
+taxing dividend income,1000,comp,1,excluded,"EX-OFFNICHE dividend-allowance page noise, not family"
+transport accountant,90,comp,3,assigned,T-TRANS
+transport accountants,90,comp,2,assigned,T-TRANS
+transport accountants croydon,0,gsc,0,assigned,T-TRANS
+transportation accounting,90,comp,2,assigned,T-TRANS
+uber accounting services,0,bing,0,assigned,T-GIG
+uber charges for drivers ni,0,bing,0,assigned,T-GIG
+uber hmrc reporting,50,comp,1,assigned,T-GIG
+uber tax,480,pool,1,assigned,T-GIG
+uniform cleaning tax rebate,70,comp,1,excluded,"EX-OFFNICHE employee uniform-rebate demand (lanop rebate page), not cleaning-business accountancy"
+vat on cleaning products,70,comp,1,assigned,T-CLN
+vat on taxi uk,90,comp,1,assigned,T-VAT
+vat on taxis uk,90,comp,1,assigned,T-VAT

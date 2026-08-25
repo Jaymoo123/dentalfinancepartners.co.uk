@@ -1,0 +1,12 @@
+keyword,source,volume,bucket,assigned_page,reason_code,note
+accountant for childminders,r2d_volumes_onfile,90,assigned,N1,,head term row 26; $16.39 CPC
+childminder accountant,c3_equivalence_onfile,90,assigned,N1,,C3 equivalence: = accountant for childminders
+row26 cluster remainder (childminders/nurseries),c3_demand_onfile,110,assigned,N1/N2/N3,,cluster total 200/mo minus head; keyword-level split pending D1 harvest
+foster carer tax,r2d_volumes_onfile,70,assigned,N4,,head term row 27
+foster care tax,c3_equivalence_onfile,70,assigned,N4,,C3 equivalence: = foster carer tax
+row27 cluster remainder (foster carers),c3_demand_onfile,70,assigned,N4/N5,,cluster total 140/mo minus head; split pending D1
+private tutor tax,r2d_volumes_onfile,10,assigned,E1,,head term row 78; seed at Google pos 6.2
+how to be a freelance tutor,discovery_pool_sitemap,,assigned,E1,,pool lane care_education; career-adjacent but tutoring-tax adjacent; carry as E1 FAQ candidate
+how to set up an online tutoring business,discovery_pool_sitemap,,assigned,E1,,pool lane care_education; E1 FAQ candidate
+company statutory services,gsc_90d,,excluded,,EX-SUBSTRING,"sta-tutor-y artefact, 1 impression"
+statutory accounts st albans,gsc_90d,,excluded,,EX-SUBSTRING,"sta-tutor-y artefact, 113 impressions"

@@ -1,0 +1,112 @@
+keyword,volume,best_pos,competitor,source,disposition,code,note
+open bakery shop,4400,31,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+open a coffee shop,1300,11,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+vehicle depreciation calculator,1300,21,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+manufacturing account,260,28,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk|discovery_pool:dfs_ranked,ASSIGNED,M-HEAD,manufacturing hub pillar
+manufacturing accounts,260,29,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-HEAD,manufacturing hub pillar
+accountant retail,210,58,lanop.co.uk,ranked:lanop.co.uk,ASSIGNED,R-HEAD,retail seed reframe
+accounting for retail,210,29,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,ASSIGNED,R-HEAD,retail seed reframe
+accounting for retailers,210,32,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,ASSIGNED,R-HEAD,retail seed reframe
+accounting for retailing,210,31,lanop.co.uk,ranked:lanop.co.uk,ASSIGNED,R-HEAD,retail seed reframe
+accounting in retail,210,31,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,ASSIGNED,R-HEAD,retail seed reframe
+retail accountant,210,57,lanop.co.uk,ranked:lanop.co.uk|tier2_retail_heads_2026-07-15,ASSIGNED,R-HEAD,retail seed reframe
+retail accountants,210,23,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,ASSIGNED,R-HEAD,retail seed reframe
+retail accounting,210,36,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,ASSIGNED,R-HEAD,retail seed reframe
+how to open a coffee shop in the uk,210,15,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+how to open a coffee shop in uk,210,15,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+how to open a coffee shop uk,210,14,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+how to open coffee shop in uk,210,14,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+how to open coffee shop uk,210,14,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+depreciation rate for vehicles,210,22,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+depreciation rate on vehicles,210,15,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+vehicle depreciation rates,210,43,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+accountant manufacturing,170,20,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk|ranked:livingstonesaccountants.co.uk,ASSIGNED,M-HEAD,manufacturing hub pillar
+cost to manufacture,170,10,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+costing for manufacturing,170,10,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk|discovery_pool:dfs_ranked,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+manufacturing accountant,170,11,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk|ranked:livingstonesaccountants.co.uk,ASSIGNED,M-HEAD,manufacturing hub pillar
+manufacturing accountants,170,22,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk|ranked:livingstonesaccountants.co.uk|discovery_pool:dfs_ranked,ASSIGNED,M-HEAD,manufacturing hub pillar
+manufacturing cost,170,9,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+manufacturing costing,170,11,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk|discovery_pool:dfs_ranked,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+manufacturing costs,170,19,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+accounting and manufacturing software,140,7,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+accounting manufacturing software,140,7,lanop.co.uk,ranked:lanop.co.uk,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+accounting software for manufacturing,140,8,lanop.co.uk,ranked:lanop.co.uk,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+accounting software manufacturing,140,7,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+manufacturing accounting software,140,5,lanop.co.uk,ranked:lanop.co.uk,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+manufacturing and accounting software,140,6,lanop.co.uk,ranked:lanop.co.uk|discovery_pool:dfs_ranked,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+manufacturing industry accounting software,140,7,lanop.co.uk,ranked:lanop.co.uk,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+accounting for a franchise,140,13,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,ASSIGNED,F-HEAD,franchisee cluster
+franchise accounting,140,9,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,ASSIGNED,F-HEAD,franchisee cluster
+electric vehicle depreciation,140,54,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+franchise accountant,140,,,tier2_retail_heads_2026-07-15,ASSIGNED,F-HEAD,franchisee cluster
+accountants for franchisees,140,,,tier2_retail_heads_2026-07-15,ASSIGNED,F-HEAD,franchisee cluster
+retail vat scheme,140,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT schemes page
+opening a coffee shop uk,110,20,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+finance in manufacturing,90,17,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-FIN,seed invoice-finance-for-manufacturing (EXTEND)
+manufacturing finance,90,101,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-FIN,seed invoice-finance-for-manufacturing (EXTEND)
+how much to open coffee shop,90,8,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+coffee shop margins,70,5,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+coffee shop profit margin,70,9,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+coffee shop.profit margin,70,9,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+cost open coffee shop,70,8,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+costs of opening a coffee shop,70,9,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+depreciation for vehicles,70,63,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+depreciation on vehicles,70,59,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+depreciation vehicle,70,74,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+vehicle depreciation,70,16,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+manufacturing accounting format,50,85,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-HEAD,manufacturing hub pillar
+accounting in retail business,50,10,lanop.co.uk,ranked:lanop.co.uk,ASSIGNED,R-HEAD,retail seed reframe
+retail business accounting,50,9,lanop.co.uk,ranked:lanop.co.uk,ASSIGNED,R-HEAD,retail seed reframe
+vat for coffee shops,50,14,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+vat on coffee shops,50,15,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+vehicle depreciation value,50,54,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+licence for coffee shop,40,8,livingstonesaccountants.co.uk,ranked:livingstonesaccountants.co.uk,EXCLUDED,EX-STARTUP-DIY,"how-to-open-a-shop startup content (livingstones traffic model), not accountancy hire/operator intent"
+used car depreciation,40,68,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+used cars depreciation,40,76,depreciationscalculator.co.uk,ranked:depreciationscalculator.co.uk,EXCLUDED,EX-CONSUMER-CAR,"consumer car-value intent (depreciationscalculator audience), not motor-trade accountancy"
+till reconciliation,40,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT/records page (EPOS/till section)
+buying a convenience store,40,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-CONV,convenience store page
+car dealer accountant,40,,,C3_DEMAND_2026-08-25,ASSIGNED,A-HEAD,motor trade cluster
+reduce cost in manufacturing,30,9,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+reduce costs in manufacturing,30,7,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+reduce manufacturing cost,30,8,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+reduce manufacturing costs,30,7,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+reducing costs in manufacturing,30,7,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,EXCLUDED,EX-OFFNICHE,no family topic
+reducing manufacturing costs,30,9,skynetaccounting.co.uk,ranked:skynetaccounting.co.uk,ASSIGNED,M-COST,manufacturing hub: costing/WIP page
+vat apportionment scheme,20,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT schemes page
+shop accountant,10,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-HEAD,retail seed reframe
+retail accountants uk,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-HEAD,retail seed reframe
+accountant for retail business,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-HEAD,retail seed reframe
+accountant for shop,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-HEAD,retail seed reframe
+accountants for independent shops,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-HEAD,retail seed reframe
+convenience store accountant,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-CONV,convenience store page
+newsagent accountant,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-CONV,convenience store page
+off licence accountant,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-CONV,convenience store page
+point of sale vat scheme,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT schemes page
+epos accounting,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT/records page (EPOS/till section)
+retail stock accounting,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT/records page (EPOS/till section)
+selling a shop business tax,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-EXIT,buying/selling a shop page
+cash business hmrc investigation,,,,tier2_retail_heads_2026-07-15,ASSIGNED,R-VAT,retail VAT/records page (EPOS/till section)
+retail accountants croydon,,,,discovery_pool:gsc|gsc_90d(imps=44),ASSIGNED,R-HEAD,retail seed reframe
+cost accounting in the manufacturing industry,,,,discovery_pool:sitemap,EXCLUDED,EX-OFFNICHE,no family topic
+top tips for manufacturing accounting,,,,discovery_pool:sitemap,ASSIGNED,M-HEAD,manufacturing hub pillar
+the best clothing manufacturers for startups,,,,discovery_pool:sitemap,EXCLUDED,EX-OFFNICHE,no family topic
+how to fund a franchise,,,,discovery_pool:sitemap,ASSIGNED,F-HEAD,franchisee cluster
+manufacturing accounting software vs agency,,,,discovery_pool:sitemap,EXCLUDED,EX-SOFTWARE,"software-vendor intent; software roundups are a separate editorial call, not this cluster"
+5 manufacturing accounting processes you need to know,,,,discovery_pool:sitemap,ASSIGNED,M-HEAD,manufacturing hub pillar
+3 hot trends small retail businesses need to know about,,,,discovery_pool:sitemap,ASSIGNED,R-HEAD,retail seed reframe
+start a jewellery business,,,,discovery_pool:sitemap,ASSIGNED,J-PAGE,jewellers page
+smart accounting for small manufacturing businesses,,,,discovery_pool:sitemap,EXCLUDED,EX-OFFNICHE,no family topic
+how to calculate vat for a manufacturing business,,,,discovery_pool:gsc|gsc_90d(imps=12),ASSIGNED,M-VAT,manufacturing hub: VAT for manufacturers
+convenience store accountants harrow,,,,discovery_pool:gsc|gsc_90d(imps=5),ASSIGNED,R-CONV,convenience store page
+accountant for retail shops putney,,,,discovery_pool:gsc|gsc_90d(imps=15),ASSIGNED,R-HEAD,retail seed reframe
+accountant for retail shops sutton,,,,discovery_pool:gsc|gsc_90d(imps=6),ASSIGNED,R-HEAD,retail seed reframe
+accountants for manufacturing bury st edmunds,,,,gsc_90d(imps=3),ASSIGNED,M-HEAD,manufacturing hub pillar
+convenience store accountants milton keynes,,,,gsc_90d(imps=1),ASSIGNED,R-CONV,convenience store page
+how to calculate vat for a shops business,,,,gsc_90d(imps=8),ASSIGNED,R-VAT,retail VAT schemes page
+manufacturing accountant swansea,,,,gsc_90d(imps=32),ASSIGNED,M-HEAD,manufacturing hub pillar
+r&d tax credits for manufacturers,,,,gsc_90d(imps=15),ASSIGNED,M-RD,seed rd-tax-credits-manufacturing page
+retail accountants near me,,,,gsc_90d(imps=19),ASSIGNED,R-HEAD,retail seed reframe
+retail business valuation calculator,,,,gsc_90d(imps=1),ASSIGNED,R-EXIT,buying/selling a shop page
+shopify seller accountants,,,,gsc_90d(imps=2),DEFERRED,DEF-ECOM,ecommerce site territory (estate rule)
+accountant for jewellers,,,,C3_DEMAND_2026-08-25,ASSIGNED,J-PAGE,jewellers page
+jeweller accountant,,,,C3_DEMAND_2026-08-25,ASSIGNED,J-PAGE,jewellers page
