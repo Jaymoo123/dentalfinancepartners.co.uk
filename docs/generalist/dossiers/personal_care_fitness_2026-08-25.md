@@ -17,6 +17,18 @@ $5.00 daily estate budget gate** (`DATAFORSEO_ABORT_AT`): concurrent estate sess
 today's running total at $4.97 before this dossier's second batch. The gate is the
 compliance control and was respected, not raised. See §9 D1.
 
+**D1 HARVESTED 2026-08-25** (owner authorised spend beyond the $5/day gate on this date, for
+pending recorded pulls only; `DATAFORSEO_ABORT_AT` raised for that run only, not in config).
+D1 spend **$1.2820** against a ~$0.30 estimate. Breakdown and the honest failure: a first
+uncapped paginated run cost **$1.0992** and its output was lost (the script wrote its JSON only
+after the last domain and hit the raised gate mid-way through accotax; the endpoint's idempotency
+guard then blocked a free re-read, so that spend bought nothing). The recovery run used
+`ranked_keywords` with `filters` on the §1 term family, 3 filter groups per domain, 15 calls,
+**$0.1828**, and that is the run on file. Raw:
+`personal_care_fitness_2026-08-25_D1_raw.json`. Methodology deviation recorded: D1 is a
+family-filtered harvest, not the uncapped harvest the delta specified, so a family term the
+regex misses would not appear.
+
 ---
 
 ## 1. Scope declaration (§9.8 item 1)
@@ -74,9 +86,19 @@ has NO ranking specialist at all.
 `personal_care_fitness_2026-08-25_ledger.csv` (same directory). Raw paid harvest
 preserved: `personal_care_fitness_2026-08-25_ranked_raw.json`.
 
-**Stated limitations:** (a) five ranking multi-niche domains (fusionaccountants.co.uk,
-mytaxdoc.co.uk, mccaccountants.co.uk, ross-brooke.co.uk, accotax.co.uk) were NOT
-harvested — daily budget gate, §9 D1; their head-term keyword sets are unseen.
+**Stated limitations:** (a) ~~five ranking multi-niche domains were NOT harvested~~
+**RESOLVED 2026-08-25 by the D1 harvest.** Result: fusionaccountants.co.uk, mytaxdoc.co.uk,
+mccaccountants.co.uk and ross-brooke.co.uk return **zero** keywords anywhere in the §1 term
+family. accotax.co.uk returns 23 rows, of which 6 are real accountancy demand (the N2 gym
+membership set, all on one blog URL) and 17 are Companies House profile-page brand navigation
+or substring false positives (spa/nail/spam/spare). Net effect: **no specialist head-term
+ranker exists among the five**, which confirms rather than changes the peer-winnable 0 on the
+R1/R2/E1 head families. Discrepancy to keep in view: the language spec records fusion's
+`/barbers-hairdressers-beauty-salon-therapist/` page as a page-1 ranker on
+`accountant for hairdressers` from a free SERP sweep, yet DataForSEO's ranked set holds no
+family keyword for that domain at all. The free SERP observation stands; the head term is
+simply below DataForSEO's tracked-volume floor. Do not treat the zero as proof fusion is absent
+from the SERP. (a2) The D1 harvest was family-filtered, not uncapped (spend, above).
 (b) No search_volume top-up call was made for head terms (same gate); head volumes cite
 C2's corpus figures and harvest rows only. (c) Free expansions (autocomplete/PAA) not
 run. (d) Bing zero is an absence-of-data observation on a rolling snapshot, not proof of
@@ -95,7 +117,7 @@ corroborates topics 2-4 without adding countable queries.
 
 | Topic | Domains | Kws | Raw vol/mo | Peer-winnable (top-10 by a specialist/peer) | Note |
 |---|---|---|---|---|---|
-| Gym membership tax (BIK / salary sacrifice / "through the business") | 1 (pulse) + pool | 10 | 940 | 390 (pulse holds pos 3-10 on 5 of them) | pulse runs it as one blog page + one service page; the cluster's biggest real prize |
+| Gym membership tax (BIK / salary sacrifice / "through the business") | **2** (pulse, accotax — D1) + pool | 10 | 940 | **570** (pulse pos 3-10 on 5; accotax adds pos 6 and pos 10 on the two "business expense" phrasings, 90/mo each) | pulse runs it as one blog page + one service page; accotax runs one blog page and outranks pulse on 5 of the 6 phrasings they share. The cluster's biggest real prize, and now the only topic with 2-domain confirmation |
 | Rent-a-chair tax for hairdressers | 1 (alto) + sitemap evidence | 1 | 170 | 0 (alto pos 16) | alto runs a dedicated page; the C2 signature topic; nobody in top-10 = whitespace |
 | Accountant for hairdressers / beauty therapists heads | 0 ranked | 3 (ours, GSC) | ~40 (C2) | 0 | we already have both pages and both earn impressions; no specialist ranks |
 | Accountant / accounting for personal trainers | 0 ranked | 2 (ours, GSC+pool) | ~30 (C2) | 0 | our page earns the cluster's only click; no specialist ranks |
@@ -229,11 +251,11 @@ Dossier is FROZEN. Everything found after this point lands here, not in the batc
 
 | # | Item | Reason parked |
 |---|---|---|
-| D1 | Harvest fusionaccountants.co.uk, mytaxdoc.co.uk, mccaccountants.co.uk, ross-brooke.co.uk, accotax.co.uk (the domains that actually rank for the head terms) | blocked by the $5 daily estate budget gate 2026-08-25 (concurrent sessions); ~$0.30 estimated; run on the next budget day BEFORE pack derivation — head-term keyword sets are the main blind spot |
+| D1 | ~~Harvest fusionaccountants.co.uk, mytaxdoc.co.uk, mccaccountants.co.uk, ross-brooke.co.uk, accotax.co.uk~~ **HARVESTED 2026-08-25** | Owner authorised spend beyond the $5/day gate on 2026-08-25 for pending recorded pulls only; `DATAFORSEO_ABORT_AT` raised for that run alone, config unchanged. Actual spend **$1.2820** vs ~$0.30 estimated ($1.0992 of it bought nothing, see §1 spend note). Findings in §1 limitation (a) and §2 topic 1; raw in `personal_care_fitness_2026-08-25_D1_raw.json`; rows appended to the ledger CSV under a `comp-D1` marker. Packs patched: N2 §3/§8, `language_spec.md` §1 |
 | D2 | search_volume top-up for the head terms + sitemap-evidenced questions ("do hairdressers charge vat" etc.) | same gate; batch with D1 |
 | D3 | Free expansions (autocomplete/PAA) never run for this family | run at pack derivation if head coverage looks thin |
 | D4 | Persist raw harvest into `dataforseo_competitor_data` table | §9.2 step 1 persistence not done; raw JSON preserved beside this file (same debt as creative D4) |
-| D5 | Language pass (§9.11) winner set incomplete until D1 lands | run post-D1, pre-pack |
+| D5 | ~~Language pass (§9.11) winner set incomplete until D1 lands~~ **CLOSED 2026-08-25** | D1 landed; the winner set does not change (no new head-term ranker). the head-term winner set does not change. One genuine addition: `accotax.co.uk/is-a-gym-membership-tax-deductible-for-business-in-the-uk/` is a second N2 competitor and beats pulse on 5 of the 6 phrasings they share, including pos 6. It has NOT been torn down (that would need a free fetch, not a paid call). **Open action for the N2 writer: fetch and tear down that URL before drafting**, then add it to `language_spec.md` §1 if it earns a row. Flagged in `language_spec.md` §1 |
 
 ---
 

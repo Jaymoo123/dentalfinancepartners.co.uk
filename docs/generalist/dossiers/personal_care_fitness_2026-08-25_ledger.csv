@@ -23,3 +23,15 @@ salary sacrifice gym membership,170,comp-reused+pool,1,assigned,N2 gym membershi
 salon accounting software,50,comp,1,excluded,EX-SOFTWARE software-purchase intent not accountancy demand
 salon bookkeeping software,50,comp,1,excluded,EX-SOFTWARE software-purchase intent not accountancy demand
 tax laws for beauty therapist small businesses,,gsc,0,assigned,R2 protect
+# --- D1 harvest appended 2026-08-25 (owner-authorised budget override). Filtered ranked_keywords, 5 head-term domains. ---
+is a gym membership tax deductible,110,comp-D1,2,assigned,"N2 gym membership tax; accotax pos 20 (2nd ranker, was pulse-only)"
+is gym membership tax deductible,110,comp-D1,2,assigned,"N2 gym membership tax; accotax pos 18"
+can a gym membership be a business expense,90,comp-D1,2,assigned,"N2 gym membership tax; accotax pos 6 TOP-10 (peer-winnable +90)"
+can gym membership be a business expense,90,comp-D1,2,assigned,"N2 gym membership tax; accotax pos 10 TOP-10 (peer-winnable +90)"
+can you put gym membership through business,70,comp-D1,2,assigned,"N2 gym membership tax; accotax pos 23"
+can i put gym membership through my limited company,50,comp-D1,2,assigned,"N2 gym membership tax; accotax pos 19"
+les mills fitness uk limited,90,comp-D1,1,excluded,EX-OFFNICHE accotax Companies House profile page brand navigation
+g and g barbers,390,comp-D1,1,excluded,EX-OFFNICHE accotax Companies House profile page brand navigation
+angela's nails rainham essex,140,comp-D1,1,excluded,EX-OFFNICHE accotax Companies House profile page brand navigation
+sculpt salon cannock,70,comp-D1,1,excluded,EX-OFFNICHE accotax Companies House profile page brand navigation
+aesthetic technology limited,90,comp-D1,1,excluded,EX-OFFNICHE accotax Companies House profile page brand navigation

@@ -1,13 +1,13 @@
 ---
-title: "Accountant for Beauty Therapists: Tax Planning, Structure and Compliance for Your Salon Business"
+title: "Accountant for Beauty Therapists: Work Out Your VAT Position First"
 slug: "accountant-for-beauty-therapists"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-beauty-therapists"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Beauty Therapists: Tax, Structure"
-metaDescription: "Sole trader, partnership or Ltd company? We cover IR35, VAT, expenses and payroll for beauty therapists. Practical UK tax guidance from specialist accountants."
+metaTitle: "Accountants for Beauty Therapists: VAT Threshold Maths"
+metaDescription: "How to calculate the £90,000 VAT threshold for a beauty therapy business, when registration bites, and whether the flat rate scheme pays."
 altText: "Beauty therapist working at a salon treatment table in a UK city centre, with accounts paperwork visible on a nearby desk"
 image: "/blog/accountant-for-beauty-therapists.jpg"
 imageCredit:
@@ -15,123 +15,212 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@n-voitkevich"
   sourceUrl: "https://www.pexels.com/photo/person-writing-on-white-paper-8927687/"
   source: "Pexels"
-h1: "Accountant for Beauty Therapists: Tax Planning, Structure and Compliance for Your Salon Business"
-summary: "Running a beauty therapy business means managing clients, stock, rent and staff. Your tax structure, VAT position and payroll setup need the same attention. We cover the key decisions for sole traders, partnerships and limited company beauty therapists in the UK."
+h1: "Accountant for Beauty Therapists: Work Out Your VAT Position First"
+summary: "Add up your taxable turnover for the last 12 months, month by month, and compare the running total to £90,000. That single calculation decides more about a beauty therapy business than the sole trader or limited company question does, because crossing it changes every price you charge. Here is the arithmetic, the deadline it triggers, and what follows once you are registered."
 schema: ""
 faqs:
-  - question: "Should I register as a sole trader or a limited company for my beauty therapy business?"
-    answer: "If your profit is under £40,000 a year, stay as a sole trader. The admin is lower and the tax difference is small. If your profit exceeds £50,000, or you employ staff, or you want to retain profits for equipment, a limited company saves you tax and gives you more flexibility. We can run the numbers for your specific situation."
-  - question: "Do I need to register for VAT as a beauty therapist?"
-    answer: "You must register when your taxable turnover exceeds £90,000 in a rolling 12-month period. Voluntary registration can benefit you if you sell retail products and want to reclaim VAT on purchases, or if your clients are other businesses. The flat rate VAT scheme at 13% may save you money if your costs are low, but check the limited cost trader rules first."
+  - question: "How do you calculate VAT for a beauty therapist business?"
+    answer: "Add up your taxable turnover for the last 12 months at the end of every month, then compare that running total to £90,000. Taxable turnover means treatment income, retail product sales, course fees and any room or chair rent you receive, before any costs are taken off. It is not your profit and it is not a tax year figure. If the rolling total goes over £90,000 you must tell HMRC within 30 days of the end of that month, and you are registered from the first day of the second month after you went over. A separate test catches you the moment you expect to take more than £90,000 in the next 30 days alone, and that one registers you immediately."
+  - question: "Do accountants for beauty therapists do anything a general accountant does not?"
+    answer: "The specific things worth paying for are the threshold watch, the product-versus-treatment split once you are registered, the flat rate scheme calculation including the 16.5% limited cost business test, and worker status if you have other therapists in your rooms. Those four decisions carry the money in a treatment business. Everything else, the year-end accounts and the return itself, any competent accountant can do."
   - question: "Can I employ other therapists on a self-employed basis?"
-    answer: "Only if they genuinely control their own work, hours, prices and client relationships. If you control their schedule, methods and pricing, HMRC is likely to treat them as employees. The back-tax risk is significant. We recommend using proper room rental agreements for genuine self-employment, or putting therapists on payroll if you control their work."
-  - question: "What expenses can I claim as a beauty therapist?"
-    answer: "You can claim products and consumables, equipment (through capital allowances), premises costs, training that updates your existing skills, insurance, marketing, travel between treatment locations, and uniforms. Keep receipts for everything over £10 and use accounting software to record them. The simplified home office rate is easiest for home-based therapists."
+    answer: "Only where they genuinely run their own business: their own clients, their own prices, their own products and kit, their own hours, and a real rent or fee paid to you. If you set the prices, the hours and the treatment menu, and you keep the takings and pay them a percentage, HMRC is likely to treat them as employees, and the back tax, employer National Insurance and penalties run back years. The label on the agreement does not decide it."
+  - question: "What expenses can a beauty therapist claim?"
+    answer: "Products and consumables, equipment through capital allowances, treatment room rent and business rates, a proportion of household costs if you work from home, insurance, marketing, training that updates skills you already use, business mileage at 55p a mile for the first 10,000 miles from 6 April 2026, and uniforms or protective clothing. Keep the evidence digitally, because HMRC can ask for it up to six years after the tax year."
+  - question: "Do I have to charge VAT on treatments once I am registered?"
+    answer: "Yes. Beauty treatments are standard-rated at 20%, and so are the products you sell alongside them. There is no reduced rate for treatment services. Some medical treatments delivered by registered health professionals fall within the healthcare exemption instead, which is a different area of the rules and outside what this page covers."
 keyTakeaways:
-  - "The VAT registration threshold in 2025/26 is £90,000 in taxable turnover over a rolling 12-month period."
-  - "The flat rate VAT scheme for hairdressing and beauty services is 13 per cent, but therapists spending under 2 per cent of VAT-inclusive turnover (or under £1,000 a year) on goods must use the 16.5 per cent limited cost trader rate."
-  - "A sole trader beauty therapist pays a combined income tax and Class 4 NIC rate of around 42 per cent on profits above £50,270, while a limited company pays 19 per cent corporation tax on profits up to £50,000."
-  - "Making Tax Digital for Income Tax Self Assessment applies from April 2026 for self-employed income over £50,000, from April 2027 for income over £30,000, and from April 2028 for income over £20,000."
-  - "Misclassifying employed therapists as self-employed can trigger back-tax for employer NIC, employee NIC and income tax across up to six years, and for three therapists each on £25,000 the liability can exceed £40,000 plus penalties."
-  - "The HMRC approved mileage rate for cars is 55p per mile for the first 10,000 business miles from 2026/27, up from 45p in 2025/26."
+  - "You must register for VAT when your taxable turnover passes £90,000 in any rolling 12 months, or when you expect to pass it in the next 30 days on its own. The deregistration threshold is £88,000."
+  - "The rolling total is tested at the end of every month, not at your year end, and it counts treatment income, retail product sales and any room rent you receive together."
+  - "The flat rate scheme is open below £150,000 of expected taxable turnover with a 1% discount in your first registered year, but a treatment business spending under 2% of VAT-inclusive turnover, or under £1,000 a year, on goods is a limited cost business and pays 16.5%, which usually removes the point of joining."
+  - "Employing a therapist on £24,500 costs about £27,973 a year once employer National Insurance at 15% above £5,000 and the 3% minimum pension contribution are added, before the £10,500 Employment Allowance is applied."
+  - "Making Tax Digital for Income Tax Self Assessment starts in April 2026 for qualifying income over £50,000, April 2027 over £30,000 and April 2028 over £20,000."
+  - "Class 4 National Insurance is 6% between £12,570 and £50,270 and 2% above, the 2025/26 rates, still current when this page was checked in August 2026."
 ---
 
-<p>If you run a beauty therapy business in the UK, your tax and accounting needs are not the same as a plumber's or a freelance copywriter's. You have products to buy and sell. You have treatment rooms to rent or maintain. You may employ other therapists on a self-employed or employed basis. And if you work from home, mobile or in a salon, each model brings different tax implications.</p>
+<p>Add up what your business took in the last 12 months. Not profit, not a tax year, not the figure on your accounts: every pound of treatment income, every retail product sold, every course fee, every pound of room rent another therapist paid you. Compare that running total to <strong>£90,000</strong>. That is the whole VAT registration test for a beauty therapy business, and it is tested again at the end of every month.</p>
 
-<p>We see beauty therapists come to us at every stage. Some are starting out as sole traders, working from a spare room. Others have built a team of five or six therapists across two treatment rooms in a city centre. The tax questions change as the business grows. Getting the structure right early saves you thousands in tax and keeps you compliant with HMRC.</p>
+<p>Most therapists get caught by it in one of two ways. They check the figure once a year when the accounts are done, by which time the registration date has passed. Or they assume the threshold applies to what they keep rather than what they take, and register £30,000 of costs too late. Both mistakes cost the same thing: VAT you should have charged clients, which HMRC will now collect from you.</p>
 
-<p>This guide covers the practical decisions a beauty therapist faces. Sole trader versus limited company. VAT registration. Staff versus subcontractors. Allowable expenses. And the specific compliance obligations that catch beauty businesses out. We are specialist accountants, and we work with beauty therapists across the UK from our base in Birmingham and through our wider team. This is the advice we give in our meetings.</p>
+<p>Below is the calculation with the dates attached, then what changes on the day registration bites, then the structure, staffing and expense decisions that sit underneath it.</p>
 
-<h2>Sole Trader or Limited Company for a Beauty Therapy Business?</h2>
+<h2>How Do You Calculate VAT for a Beauty Therapist Business?</h2>
 
-<p>Most beauty therapists start as sole traders. It is simple to set up, you register with HMRC for self assessment, and you do not need to file annual accounts at Companies House. Your profit is taxed through income tax and Class 4 National Insurance (Class 2 NIC was abolished from 6 April 2024). For a therapist earning £30,000 to £40,000 net profit, the tax bill is straightforward and the admin burden is low.</p>
+<p>Value Added Tax (VAT) registration turns on <strong>taxable turnover</strong>, which is the value of the standard-rated, reduced-rated and zero-rated supplies your business makes. For a treatment business that means almost everything you invoice: facials, waxing, nails, lashes, massage, retail product sales, gift vouchers when redeemed, training courses, and rent charged to another therapist for use of a room or station. Costs are irrelevant to the test. So is your accounting year end.</p>
 
-<p>The problem comes when profits grow. A sole trader pays income tax on all profits above the personal allowance. If your beauty business turns over £80,000 and your costs are £25,000, your profit is £55,000. As a sole trader, you pay 20% on the first £37,700 above the personal allowance and 40% on the rest. You also pay Class 4 NIC at 6% on profits between £12,570 and £50,270, then 2% above that. The combined tax and NIC rate on profits above £50,270 is around 42%.</p>
-
-<p>A limited company pays corporation tax at 19% on profits up to £50,000, with marginal relief up to £250,000. You then take income as a mix of salary and dividends. The total tax rate on extracted profits is typically lower than sole trader rates, especially once profits exceed £50,000. For a beauty therapist making £55,000 profit, the limited company route can save several thousand pounds a year in tax.</p>
-
-<p>But a limited company brings more compliance. You need to file annual accounts at Companies House, file a corporation tax return (CT600), run payroll through RTI, and manage a director's loan account if you take money out beyond salary and dividends. The annual accounting costs are higher. You also need to consider IR35 if you work through an agency or on contracts that look like employment.</p>
-
-<p><strong>Our view:</strong> If you are a sole therapist earning under £40,000 profit, stay as a sole trader. The extra cost and admin of a limited company does not justify the tax saving. Once your profit exceeds £50,000, or you employ staff, or you want to retain profits in the business for equipment or premises, incorporation becomes worth the switch. We help beauty therapists model both scenarios before they decide. You can read more on our <a href="/incorporation">incorporation services page</a>.</p>
-
-<h2>VAT for Beauty Therapists: When Do You Need to Register?</h2>
-
-<p>The VAT registration threshold for 2025/26 is £90,000 in taxable turnover over a rolling 12-month period. Many beauty therapists operate below this threshold and stay unregistered. But there are cases where voluntary registration makes sense.</p>
-
-<p>If you sell retail products alongside treatments, you can reclaim VAT on your product purchases if you are registered. The margin on retail products is often 50% to 100%. If you buy stock for £10 and sell it for £25, you charge £5 VAT (at 20%) and reclaim £2 on the purchase. The net VAT due is £3, but you have increased your prices by 20% and your customers may not notice if competitors are also VAT registered. For a beauty therapist selling £15,000 of retail products a year, the net benefit of voluntary registration can be £1,500 to £2,500 after accounting for the VAT you charge and reclaim.</p>
-
-<p>The other scenario is where your clients are other businesses. If you rent treatment rooms to other therapists, or supply products wholesale to salons, those clients can reclaim the VAT you charge. Being VAT registered does not make you more expensive to them. It makes you more professional. And you can reclaim VAT on your own costs: rent, equipment, products, marketing, utilities.</p>
-
-<p>Flat rate VAT is worth considering for beauty therapists. The flat rate for hairdressing and beauty services is 13% (from the HMRC table). You charge your clients 20% and pay HMRC 13% of your gross turnover, keeping the 7% difference. But you cannot reclaim VAT on most purchases except capital assets over £2,000. If your costs are low, the flat rate scheme is profitable. If your costs are high (rent, products, equipment), the standard scheme is better because you reclaim VAT on those costs. We run the numbers for each client. You can use our <a href="/calculators">VAT calculators</a> to see the difference.</p>
-
-<p>One trap: the limited cost trader rules. If you spend less than 2% of your VAT-inclusive turnover on relevant goods (or less than £1,000 a year), you must use the 16.5% flat rate. Many beauty therapists who do not sell products fall into this category. Check your goods purchases before you commit to flat rate VAT.</p>
-
-<h2>Employing Staff or Using Self-Employed Therapists</h2>
-
-<p>This is the most common compliance risk we see in beauty businesses. Many salons and individual therapists bring in other therapists on a self-employed basis. The therapist pays their own tax, works their own hours, and uses the salon's treatment room. That looks like a self-employed arrangement. But HMRC has been challenging these arrangements for years, and the beauty sector is a regular target.</p>
-
-<p>HMRC uses the same tests as IR35: control, substitution, mutuality of obligation, and whether the therapist is in business on their own account. If you tell the therapist when to work, what treatments to offer, what products to use, and how to charge, they are likely an employee. If they set their own hours, bring their own clients, set their own prices, and pay you a room rental fee, they are self-employed. The middle ground is where most disputes happen.</p>
-
-<p>The risk is that HMRC issues a determination that your therapists are employees. You then owe employer NIC, employee NIC, income tax on all payments made, plus interest and penalties. The liability can run back six years. For a salon with three therapists each earning £25,000 a year, the back-tax bill can easily exceed £40,000 plus penalties.</p>
-
-<p><strong>Safer approach:</strong> If you control the therapist's work, put them on payroll. The cost of employer NIC at 15% above the £5,000 secondary threshold (2025/26) is manageable. You can claim Employment Allowance of up to £10,500 if your total employer NIC is below that level. If the therapist is genuinely self-employed, use a proper room rental agreement, let them set their own prices and hours, and do not control their methods. We help beauty therapists draft these agreements and review their worker status annually.</p>
-
-<p>If you have staff, you need to operate payroll through RTI. Software like Xero, FreeAgent or BrightPay handles this. You must issue P60s at year-end and P45s when staff leave. You also need employers' liability insurance, a workplace pension scheme (auto-enrolment), and a written statement of employment particulars. Our <a href="/blog/payroll-and-paye">payroll and PAYE blog</a> covers the details.</p>
-
-<h2>Allowable Expenses for Beauty Therapists</h2>
-
-<p>HMRC allows you to deduct expenses that are wholly and exclusively for your trade. Beauty therapists have a specific set of costs that often cause confusion.</p>
+<p>Two separate tests apply, and you fail the first one that is triggered.</p>
 
 <ul>
-<li><strong>Products and consumables:</strong> Full cost of wax, oils, creams, towels, gloves, couch roll, cotton wool, disinfectant. You deduct the cost of products used in treatments. If you buy stock for retail sale, you deduct it when sold (cost of goods sold), not when purchased.</li>
-<li><strong>Equipment:</strong> Treatment couches, wax pots, steamers, LED lamps, magnifying lamps, trolleys. Capital allowances apply. The Annual Investment Allowance (AIA) gives 100% relief on most equipment up to £1,000,000. You deduct the full cost in the year of purchase.</li>
-<li><strong>Premises costs:</strong> If you rent a treatment room, the rent and business rates are deductible. If you work from home, you can claim a proportion of your household costs: mortgage interest (not capital), rent, council tax, utilities, insurance, broadband. The simplest method is the HMRC simplified rate of £10 to £35 per month depending on hours worked. The actual cost method requires a calculation based on the number of rooms and hours used for business. We usually recommend the simplified rate unless the actual costs are significantly higher.</li>
-<li><strong>Training and qualifications:</strong> Courses that update or maintain your existing skills are deductible. Courses that give you a new qualification or allow you to start a new trade are not. If you are a beauty therapist and take a course in microblading, that is deductible because it extends your existing trade. If you take a course in accountancy, that is not.</li>
-<li><strong>Insurance:</strong> Public liability, treatment liability, employers' liability, and professional indemnity insurance are all deductible.</li>
-<li><strong>Marketing:</strong> Website costs, social media ads, business cards, leaflets, salon listing fees, photography for your portfolio. All deductible.</li>
-<li><strong>Travel:</strong> Travel between treatment locations (home to salon, salon to client) is deductible if you have a fixed place of business. Travel from home to your first client and from your last client back home is not deductible under the ordinary commuting rule. Keep a mileage log or use the HMRC approved mileage rates (55p per mile for cars for the first 10,000 business miles, then 25p, from 2026/27; 45p applied up to 2025/26; motorcycles 24p).</li>
-<li><strong>Clothing:</strong> Uniforms and protective clothing are deductible. A white tunic you only wear for work is deductible. Jeans and a top you could wear socially are not.</li>
+<li><strong>The backward-looking test.</strong> At the end of every calendar month, total your taxable turnover for that month and the 11 before it. If that rolling total exceeds <strong>£90,000</strong> (the registration threshold since 1 April 2024, still current when this page was checked in August 2026), you must notify HMRC within 30 days of the end of that month, and you are registered from the <strong>first day of the second month</strong> after you went over.</li>
+<li><strong>The forward-looking test.</strong> If at any point you expect your taxable turnover in the <strong>next 30 days alone</strong> to exceed £90,000, you must register immediately and you are registered from the date the expectation arose. A one-off event booking or a bulk training contract can do this to a business whose annual turnover is nowhere near the threshold.</li>
 </ul>
 
-<p>Keep receipts for everything over £10. Use accounting software like Xero or FreeAgent to scan receipts and categorise expenses. HMRC can ask to see receipts for up to six years after the tax year. Digital records are fine. Paper receipts stored in a shoebox are not fine if HMRC asks and you cannot find them.</p>
+<p>Going the other way, the <strong>deregistration threshold is £88,000</strong>. If your taxable turnover for the next 12 months is expected to fall below £88,000 you can ask HMRC to cancel your registration. It is a request, not automatic, and there are consequences on the stock and equipment you still hold, so it is worth costing before you file it.</p>
 
-<h2>Making Tax Digital for Beauty Therapists</h2>
+<h3>Worked example: Imran crosses the threshold in month nine</h3>
 
-<p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) becomes mandatory from April 2026 for self-employed individuals and landlords with qualifying income over £50,000. From April 2027 it applies to those with income over £30,000. From April 2028 it applies to those with income over £20,000.</p>
+<p>Imran runs a mobile beauty business in Reading, treating clients in their homes and selling retail skincare alongside. He started trading on 1 January 2026, so every month since then counts toward his rolling total. His taxable turnover, treatments and product sales combined, runs like this.</p>
 
-<p>If you are a beauty therapist with turnover over £50,000, you need to be ready for MTD from April 2026. That means keeping digital records using MTD-compatible software and sending quarterly updates to HMRC. You still file an annual self assessment return, but the quarterly updates replace the current annual reporting for the main income and expenses.</p>
+<table>
+<thead><tr><th>Month (2026)</th><th>Taxable turnover</th><th>Rolling total</th></tr></thead>
+<tbody>
+<tr><td>January</td><td>£9,400</td><td>£9,400</td></tr>
+<tr><td>February</td><td>£9,800</td><td>£19,200</td></tr>
+<tr><td>March</td><td>£10,200</td><td>£29,400</td></tr>
+<tr><td>April</td><td>£10,600</td><td>£40,000</td></tr>
+<tr><td>May</td><td>£10,900</td><td>£50,900</td></tr>
+<tr><td>June</td><td>£11,300</td><td>£62,200</td></tr>
+<tr><td>July</td><td>£11,700</td><td>£73,900</td></tr>
+<tr><td>August</td><td>£12,100</td><td>£86,000</td></tr>
+<tr><td>September</td><td>£12,600</td><td>£98,600</td></tr>
+</tbody>
+</table>
 
-<p>If you are below £50,000, you have more time. But we recommend switching to digital record-keeping now. The software is not expensive. Xero starts at around £15 a month. FreeAgent is free with some bank accounts. The habit of recording expenses weekly rather than annually saves you time and stress at year-end. And when MTD eventually applies to you, you will already be compliant.</p>
+<p>At 31 August 2026 the rolling total is <strong>£86,000</strong>, which is under the threshold and nothing happens. At 30 September 2026 it is <strong>£98,600</strong>, which is over. So:</p>
 
-<p>For limited company beauty therapists, MTD for corporation tax is on the horizon. The government has consulted on the approach, but no mandation date has been confirmed and no firm timetable is currently in place. We cover the latest on our <a href="/blog/vat-and-making-tax-digital">VAT and MTD blog</a>.</p>
-
-<h2>Tax Deadlines and Compliance for Beauty Therapists</h2>
-
-<p>If you are a sole trader, your key deadlines are:</p>
 <ul>
-<li>31 January: file your self assessment online (SA100 and SA103 if self-employed) and pay any tax due for the previous tax year. Also make your first payment on account for the current year.</li>
-<li>31 July: second payment on account for the current year.</li>
-<li>5 October: register for self assessment if you started self-employment in the previous tax year.</li>
+<li>Imran must notify HMRC by <strong>30 October 2026</strong>, being 30 days after the end of the month in which he went over.</li>
+<li>He is VAT registered from <strong>1 November 2026</strong>, the first day of the second month after the breach.</li>
+<li>Every treatment and product sale from 1 November 2026 carries VAT at <strong>20%</strong>, whether or not he has his VAT number yet.</li>
 </ul>
 
-<p>If you run a limited company, your key deadlines are:</p>
+<p>That last point is where the money is lost. Registration is backdated to 1 November regardless of when the number arrives, and the VAT on sales made in the gap is still due. The fix is to raise invoices in the meantime at the VAT-inclusive amount, then reissue proper VAT invoices once the number comes through.</p>
+
+<p>If your figures are less tidy than Imran's, the mechanics of the rolling test are the same and our <a href="/blog/vat-and-making-tax-digital/vat-threshold-2025-26">VAT threshold explainer</a> works through more edge cases, including what happens when a business is seasonal.</p>
+
+<h2>What Happens to Your Treatment Prices on Registration Day?</h2>
+
+<p>You now have a choice on every price, and it is a commercial choice rather than a tax one. Imran charges £45 for a facial.</p>
+
 <ul>
-<li>9 months after your year-end: pay corporation tax (CT600 filing deadline is 12 months after year-end, but pay the tax earlier).</li>
-<li>12 months after your year-end: file CT600 corporation tax return.</li>
-<li>9 months after your year-end: file annual accounts at Companies House.</li>
-<li>Annually: file confirmation statement at Companies House.</li>
+<li><strong>Add the VAT.</strong> The price becomes £45 x 1.20 = <strong>£54</strong>. His margin is unchanged, his clients pay 20% more.</li>
+<li><strong>Absorb the VAT.</strong> The price stays at £45, which is now VAT inclusive. The VAT element is £45 ÷ 6 = <strong>£7.50</strong>, so he keeps £37.50. Across roughly 90 treatments a month that is <strong>£675 a month</strong> out of his own pocket.</li>
 </ul>
 
-<p>Late filing of a corporation tax return triggers a £100 penalty immediately, rising to £200 if three months late, then 10% of the tax due. Late filing of annual accounts at Companies House starts at £150 for a private company and rises to £1,500 if six months late. Do not miss these deadlines. Put them in your diary now.</p>
+<p>Against that, registration gives him input VAT back. He buys around £4,800 a year of products, wax, couch roll and consumables including VAT, so the recoverable VAT is £4,800 ÷ 6 = <strong>£800 a year</strong>. He can also recover VAT on equipment, on his van's running costs to the business extent, and on marketing. Input recovery softens the blow but rarely covers it for a labour-heavy treatment business, because most of what you sell is your own time and time carries no input VAT.</p>
 
-<p>If you have staff, you also need to file RTI payroll reports on or before each pay day, and submit a P11D(b) by 6 July for any benefits in kind provided to employees.</p>
+<p>Consumer-facing therapists usually land on a partial pass-through: a price rise smaller than 20%, taken at the next scheduled review rather than on registration day. Therapists whose clients are other businesses, for example a salon paying for cover or a hotel spa buying in treatments, can normally add the full 20% because the client recovers it.</p>
 
-<h2>When to Get Professional Help</h2>
+<h2>Is the Flat Rate Scheme Worth It for a Treatment Business?</h2>
 
-<p>You can manage your own tax as a beauty therapist if your affairs are simple. Sole trader, under £50,000 turnover, no staff, no VAT. Use accounting software, keep receipts, file your self assessment on time. Many therapists do this successfully.</p>
+<p>The Flat Rate Scheme (FRS) lets you pay HMRC a single percentage of your <strong>VAT-inclusive</strong> turnover instead of tracking input VAT on every purchase. You can join if your expected taxable turnover is <strong>£150,000 or less</strong> excluding VAT, and there is a <strong>1% discount</strong> on your rate for the first year of VAT registration. HMRC publishes a percentage for each trade sector, so check the current published figure for your sector at the point you apply rather than relying on a number quoted anywhere else.</p>
 
-<p>But once you add staff, VAT, a limited company, or multiple income streams, the risk of error increases. An incorrect worker status determination, a missed VAT registration deadline, or a misclassified expense can cost you thousands in penalties and back-tax. An accountant who specialises in beauty therapy businesses knows the specific deductions, the HMRC compliance risks, and the tax planning opportunities that a general accountant may miss.</p>
+<p>The test that decides it for most therapists is the <strong>limited cost business</strong> rule. If your spend on relevant goods is less than <strong>2% of your VAT-inclusive turnover</strong>, or less than <strong>£1,000 a year</strong>, your flat rate is <strong>16.5%</strong> regardless of sector. Relevant goods means physical goods used in the business. It excludes services, rent, software subscriptions, accountancy, marketing and, importantly, capital equipment.</p>
 
-<p>We work with beauty therapists across the UK, from sole traders in Shoreditch to limited company salon owners in the Jewellery Quarter in Birmingham. We handle your year-end accounts, VAT returns, payroll, and tax planning. And we give you a fixed fee so you know what you are paying. You can <a href="/contact">contact us here</a> to arrange a free initial call. We will look at your current structure, your turnover, your staff arrangements, and your tax position, and tell you what we would change.</p>
+<p>Run it on Imran. His VAT-inclusive turnover for a full year at that run rate is about £98,600 x 1.20 = £118,320, and 2% of that is <strong>£2,366</strong>. His goods spend of £4,800 clears both £2,366 and £1,000, so he is not a limited cost business and the sector percentage applies to him.</p>
 
-<p>If you are not ready to switch accountants yet, our <a href="/fundamentals">fundamentals section</a> has guides on the key tax topics for small businesses. And our <a href="/glossary">glossary</a> explains the accounting terms you will come across.</p>
+<p>Now take a therapist who does treatments only, buys her products through the salon she works from, and spends £900 a year on goods of her own. She is under both limits, so her rate is 16.5%. On VAT-inclusive quarterly turnover of £30,000 she pays HMRC £30,000 x 16.5% = <strong>£4,950</strong>, having charged clients £5,000 of VAT on £25,000 of net fees. She keeps £50 for the quarter, and she cannot reclaim input VAT on anything except capital assets costing £2,000 or more including VAT. Standard VAT accounting beats that comfortably. Our <a href="/blog/vat-and-making-tax-digital/vat-flat-rate-scheme-explained">flat rate scheme walkthrough</a> sets out the comparison in full.</p>
+
+<p>One scheme that suits treatment businesses better is <strong>cash accounting</strong>, where you account for VAT on payments received and made rather than invoice dates. You can join if your taxable turnover is <strong>£1.35 million or less</strong> and you must leave once it exceeds <strong>£1.6 million</strong>. For a business that takes payment at the point of treatment it changes little on the sales side, but it gives automatic bad debt relief on any account work and matches the VAT bill to the bank balance.</p>
+
+<h2>Do Retail Product Sales Count Towards the Same Registration?</h2>
+
+<p>Yes, and this catches therapists who think of retail as a sideline. Skincare, aftercare kits, tools, gift sets and lash serums are standard-rated at <strong>20%</strong>, the same rate as the treatments, and both sit under one registration and one return. There is no separate threshold for the retail side and no way to keep it outside the calculation while it is the same business.</p>
+
+<p>What retail does change is the economics of registering. Product sales carry input VAT you can reclaim, so a therapist with a real retail line recovers more than one who sells only her hands. A business buying £15,000 of stock a year including VAT recovers £15,000 ÷ 6 = <strong>£2,500</strong> of input VAT once registered, which is why some therapists with a strong retail mix register voluntarily below the threshold.</p>
+
+<p>On liability, treatments are standard-rated. Some medical treatments delivered by registered health professionals fall within the healthcare exemption instead, which is a different area of the rules and is outside what this page covers.</p>
+
+<h2>Can You Split Hair and Beauty into Two Businesses to Stay Under £90,000?</h2>
+
+<p>This is the sector's most-asked question and it needs answering honestly rather than avoided. Two genuinely separate businesses have two separate turnovers. A therapist who rents a room from a salon on commercial terms, keeps her own takings, sets her own prices, buys her own products and holds her own client relationships is a different taxable person from the salon, and neither one counts the other's income.</p>
+
+<p>What HMRC challenges is <strong>artificial separation</strong>: one business presented as several to keep each part below the threshold. The markers are the ones you would expect. A shared till or card terminal. One set of staff working across both. One appointment book. One insurance policy, one lease, one bank account funding both. Customers who experience it as a single business. Where HMRC concludes the separation is artificial, it can issue a direction under the VAT legislation treating the parties as a <strong>single taxable person</strong>, registered from the date of the direction, with the combined turnover assessed against the threshold from then on. The direction operates prospectively, and any earlier failure to register is dealt with separately on the facts.</p>
+
+<p>So the boundary is real and it is worth understanding, but it is a description of where the line sits, not a structure to aim for. If your salon and your beauty side already operate as one business, they are one business, and rearranging the paperwork around an unchanged reality is the thing HMRC is looking for. Legitimate threshold management is duller: timing a large equipment purchase, reviewing prices, deciding whether a quiet January is the moment to test deregistration at £88,000.</p>
+
+<h2>What Happens When You Rent a Treatment Room to Another Therapist?</h2>
+
+<p>Renting a room, couch or station to a self-employed therapist puts two unrelated tests in front of you at once: what rate the rent carries, and whether the therapist is self-employed at all.</p>
+
+<p><strong>The VAT question.</strong> Where you grant facilities to someone who uses them wholly or mainly to supply hairdressing services, the supply is <strong>standard-rated</strong> rather than exempt land letting, and has been since <strong>1 October 2012</strong> (VATA 1994 Schedule 9 Group 1). It remains one standard-rated supply of facilities. A genuinely separate room let with no services attached can still be an exempt letting of land, but that is the exception and it turns on the facts. That exclusion is written around hairdressing, so a room let purely for beauty treatments falls back on the ordinary question of whether you are letting land or supplying facilities, which turns on what comes with the room. A bare room can be exempt; a room supplied with couch, laundry, reception and utilities is a standard-rated supply of facilities. Either way the rent you receive is part of your taxable turnover.</p>
+
+<p><strong>The status question.</strong> Whether that therapist is self-employed at all depends on how the arrangement actually runs: whose clients they are, who sets the price, who supplies the products and kit, who keeps the takings, and whether the therapist is free to work elsewhere. A paid rent does not by itself make anyone self-employed.</p>
+
+<p>Both sides of that transaction have more to them than fits here, and our <a href="/blog/sole-trader-and-self-employment/rent-a-chair-salon-tax-uk">rent-a-chair tax, VAT and status guide</a> takes the salon owner's column and the renting therapist's column all the way down.</p>
+
+<h2>Does a Limited Company Save a Beauty Therapist Tax?</h2>
+
+<p>Sometimes, and less than the internet suggests. As a sole trader you pay income tax on your profit at your marginal rate plus <strong>Class 4 National Insurance contributions (NIC) at 6% between £12,570 and £50,270 and 2% above</strong>, the 2025/26 rates, still current when this page was checked in August 2026.</p>
+
+<p>A limited company pays <strong>corporation tax at 19%</strong> where profits do not exceed £50,000 and <strong>25%</strong> above £250,000, with marginal relief tapering in between at an effective 26.5% on the band. You then extract profit as a mix of salary and dividends, and dividends are taxed at <strong>10.75% ordinary and 35.75% upper from 6 April 2026</strong>, up from 8.75% and 33.75%, with the dividend allowance still £500. That rise narrows the incorporation gap noticeably for a therapist extracting most of what the business earns.</p>
+
+<p>The honest position for a treatment business:</p>
+
+<ul>
+<li><strong>Profit under about £40,000, all of it drawn.</strong> Stay a sole trader. The saving does not cover the extra accountancy, the Companies House filings and the payroll.</li>
+<li><strong>Profit over £50,000, or profit you want to leave in the business.</strong> Model incorporation properly. Retained profit taxed at 19% and drawn later is where the real advantage sits, not the headline rate comparison.</li>
+<li><strong>Employing staff or holding a lease.</strong> Limited liability starts to matter for reasons that have nothing to do with tax.</li>
+</ul>
+
+<p>One narrow point on off-payroll working: the intermediaries rules, commonly called IR35, only apply where you work through a personal service company for a business client, so a therapist invoicing consumers through her own company is not in that territory, though the company still runs its own corporation tax and extraction mechanics.</p>
+
+<h2>Should You Employ Therapists or Engage Them as Self-Employed?</h2>
+
+<p>Worker status is the largest single compliance exposure in a treatment business, and the answer never comes from the agreement. It comes from how the week actually runs: control over hours and methods, whether a substitute could be sent, whether there is an obligation to offer and accept work, who takes the financial risk, and whether the therapist is genuinely in business on her own account with her own clients, prices, products and kit.</p>
+
+<p>Get it wrong and HMRC can determine that the therapists were employees all along. You then owe the employer NIC, the employee NIC and the income tax that should have been deducted, plus interest and penalties, and the exposure runs back years. Three therapists treated as self-employed on £25,000 each produce roughly £19,000 of PAYE and NIC a year before interest and penalties, and HMRC can go back several years.</p>
+
+<p>The alternative is to price the employed route properly, which most owners have never done. Take a therapist on <strong>£24,500</strong>:</p>
+
+<ul>
+<li>Salary <strong>£24,500</strong></li>
+<li>Employer NIC at <strong>15% above the £5,000 secondary threshold</strong>, in force from 6 April 2025: (£24,500 - £5,000) x 15% = <strong>£2,925</strong></li>
+<li>Employer pension at the <strong>3% minimum</strong> on qualifying earnings of £24,500 - £6,240 = £18,260, so <strong>£547.80</strong></li>
+<li><strong>Total employer cost £27,972.80</strong>, before payroll software, employers' liability insurance, holiday cover and statutory pay exposure</li>
+</ul>
+
+<p>The <strong>Employment Allowance of £10,500</strong> then offsets employer NIC for a business with genuine non-director staff, which wipes out the £2,925 entirely at this size and brings the cost back to £25,047.80. A company whose only employee is a single director cannot claim it, which is why the allowance changes the maths the moment you take on your first therapist rather than before.</p>
+
+<p>If you go the employed route you operate Pay As You Earn (PAYE) with Real Time Information reporting on or before each payday, auto-enrol anyone aged 22 to State Pension age earning over the £10,000 trigger, and issue P60s annually and P45s on leaving. Our <a href="/blog/payroll-and-paye/payroll-services-small-business">small business payroll page</a> covers the running obligations, and the hairdressing side of the same problem is worked through on our <a href="/blog/sole-trader-and-self-employment/accountant-for-hairdressers-uk">accountant for hairdressers page</a>.</p>
+
+<h2>Which Expenses Can a Beauty Therapist Claim?</h2>
+
+<p>The test is that the cost is incurred wholly and exclusively for the trade. Applied to a treatment business:</p>
+
+<ul>
+<li><strong>Products and consumables.</strong> Wax, oils, serums, gels, tips, towels, gloves, couch roll, disinfectant. Deductible as used. Stock bought for retail sale is deducted when sold rather than when bought.</li>
+<li><strong>Equipment.</strong> Couches, wax pots, steamers, LED and magnifying lamps, nail units, trolleys. Relief comes through capital allowances. The <strong>Annual Investment Allowance of £1,000,000</strong> gives 100% relief on most plant in the year of purchase. New and unused main-rate plant bought from <strong>1 January 2026</strong> can instead attract a <strong>40% first-year allowance</strong>, and anything left in the main pool gets a writing-down allowance of <strong>18%, falling to 14% from 6 April 2026</strong> for income tax.</li>
+<li><strong>Premises.</strong> Room rent, business rates, heat and light. Working from home, either apportion actual household costs on a defensible basis or use HMRC's simplified monthly rates by hours worked.</li>
+<li><strong>Training.</strong> Courses that update or extend skills you already use in the trade are deductible. A course that starts a genuinely new trade is capital in nature and is not.</li>
+<li><strong>Insurance.</strong> Public liability, treatment liability, professional indemnity, and employers' liability where you have staff.</li>
+<li><strong>Travel.</strong> Business mileage at <strong>55p a mile for the first 10,000 miles then 25p, from 6 April 2026</strong>, up from 45p for 2025/26 and earlier. Travel from home to a permanent workplace is ordinary commuting and is not deductible, which matters for a mobile therapist working out where her base actually is.</li>
+<li><strong>Clothing.</strong> Uniform and protective clothing yes. Anything wearable outside work, no.</li>
+</ul>
+
+<p>Keep the evidence in a form you can produce six years later. Photographed receipts inside your bookkeeping software satisfy that; a carrier bag does not. The general list is on our <a href="/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist">sole trader expenses checklist</a>.</p>
+
+<h2>What Tax Laws Apply to Beauty Therapist Small Businesses?</h2>
+
+<p>Nothing in the tax code is written specifically for beauty therapy. What applies is the general framework for a small unincorporated or owner-managed business, and these are the parts that bite.</p>
+
+<ul>
+<li><strong>Income tax on trading profit</strong>, with the personal allowance at £12,570, basic rate 20% to £50,270 and higher rate 40% above, the 2025/26 figures, still current when this page was checked in August 2026. Scotland sets its own bands for this income.</li>
+<li><strong>Class 4 NIC</strong> at 6% and 2% as above.</li>
+<li><strong>The tax-year basis.</strong> From 2024/25 profits are taxed for the year to 5 April regardless of your accounting date, so a 31 March or 5 April year end saves you an annual apportionment.</li>
+<li><strong>Self assessment dates.</strong> Register by <strong>5 October</strong> following the tax year you started. File online and pay the balancing payment by <strong>31 January</strong>. Payments on account fall due <strong>31 January and 31 July</strong>, each 50% of the previous year's income tax and Class 4 liability, required where that liability exceeded £1,000 and less than 80% was collected at source. Late filing brings an automatic <strong>£100</strong> penalty before any daily charges.</li>
+<li><strong>Company deadlines</strong> if you incorporate: corporation tax payable 9 months and 1 day after the period end, the CT600 return within 12 months, accounts at Companies House within 9 months, and a confirmation statement annually.</li>
+<li><strong>VAT returns</strong> once registered, on the cycle HMRC allocates you, with the VAT paid by the same deadline.</li>
+</ul>
+
+<h2>When Does Making Tax Digital Start for You?</h2>
+
+<p>Making Tax Digital for VAT already applies to every VAT-registered business, whatever the turnover, and has since April 2022. So the day Imran registers he also picks up digital record keeping and MTD-compatible software for his returns. The two obligations arrive together and it is worth having the software in place before the registration date rather than after.</p>
+
+<p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) is the separate one, and it is phased by qualifying income from self-employment and property:</p>
+
+<ul>
+<li><strong>April 2026</strong> for qualifying income over <strong>£50,000</strong></li>
+<li><strong>April 2027</strong> for qualifying income over <strong>£30,000</strong></li>
+<li><strong>April 2028</strong> for qualifying income over <strong>£20,000</strong></li>
+</ul>
+
+<p>Qualifying income is gross income before expenses, so a therapist turning over £55,000 and keeping £28,000 is in from April 2026 on the £55,000, not out on the £28,000. That single misreading is the most common one we correct. Once you are in, you keep digital records and send quarterly updates, then finalise the year as now. Our <a href="/blog/sole-trader-and-self-employment/making-tax-digital-for-income-tax-self-employment-and-rental-income">MTD for Income Tax page</a> covers what a quarterly update contains.</p>
+
+<h2>When Should You Bring in an Accountant?</h2>
+
+<p>A single therapist under the threshold with no staff can run her own affairs on decent software and a monthly habit. The cost of an accountant is hard to justify at that stage and we will tell you so.</p>
+
+<p>The trigger points are specific. You are within about £15,000 of the £90,000 rolling total. You are about to take on another therapist, employed or otherwise. You are opening a second room or taking a lease. Your profit has gone past £50,000. Any one of those turns a straightforward set of accounts into a decision with four figures riding on it, and all four are the sort of thing that is cheap to plan and expensive to unwind.</p>
+
+<p>If you are near any of them, <a href="/contact">talk to us</a>. We will look at your rolling turnover, your worker arrangements and your structure, and tell you which of the three is costing you money now. If registration is the live question, our <a href="/blog/vat-and-making-tax-digital/when-do-you-need-vat-registration-help-uk-business">VAT registration help page</a> sets out what the process involves.</p>
