@@ -10,3 +10,32 @@ how to be a freelance tutor,discovery_pool_sitemap,,assigned,E1,,pool lane care_
 how to set up an online tutoring business,discovery_pool_sitemap,,assigned,E1,,pool lane care_education; E1 FAQ candidate
 company statutory services,gsc_90d,,excluded,,EX-SUBSTRING,"sta-tutor-y artefact, 1 impression"
 statutory accounts st albans,gsc_90d,,excluded,,EX-SUBSTRING,"sta-tutor-y artefact, 113 impressions"
+foster accountants,dfs_ranked_d1,170,assigned,N4,,"D1 harvest; octopusfostering p41 only ranker; NEW head, beats on-file 70/mo"
+nursery accounts,dfs_ranked_d1,110,assigned,N3,,D1; caservices p4 / wearegolding p17; CPC 0.79
+childminding accountant,dfs_ranked_d1,90,assigned,N1,,"D1; caservices p2, swan-books p5, vanilla p8; CPC 16.39"
+only childminding accountant,dfs_ranked_d1,90,assigned,N1,,D1; long-tail variant of the head; caservices p2
+childminders expenses,dfs_ranked_d1,90,assigned,N2,,D1; caservices p8 on a page whose mileage rates are tagged June 2016
+childminding expenses,dfs_ranked_d1,90,assigned,N2,,D1; caservices p8 (same URL)
+expenses for childminders,dfs_ranked_d1,90,assigned,N2,,D1; caservices p8 (same URL)
+childminder expenses list,dfs_ranked_d1,70,assigned,N2,,D1; caservices p13; N2 CONFIRMED by this 4-phrasing 340/mo raw block
+foster carer tax return example,dfs_ranked_d1,90,assigned,N4,,D1; accountaxzone p21; worked-example intent explicit in the query
+foster carer tax return example pdf,dfs_ranked_d1,50,assigned,N4,,D1; accountaxzone p33
+foster carer tax allowance 24 25,dfs_ranked_d1,90,assigned,N4,,D1; accountaxzone p32; year-tagged demand
+foster carer tax allowance 24/25,dfs_ranked_d1,90,assigned,N4,,D1; accountaxzone p40
+hmrc fostering tax allowance,dfs_ranked_d1,50,assigned,N4,,D1; accountaxzone p33
+foster carers and tax,dfs_ranked_d1,70,assigned,N4,,D1; accountaxzone p61; CPC 4.25
+foster carers tax,dfs_ranked_d1,70,assigned,N4,,D1; accountaxzone p63
+tax foster carers,dfs_ranked_d1,70,assigned,N4,,D1; accountaxzone p49
+foster carers tax relief,dfs_ranked_d1,70,assigned,N4,,D1; accountaxzone p50; CPC 3.85
+tax relief for foster carers,dfs_ranked_d1,70,assigned,N4,,D1; accountaxzone p55
+foster carer tax return,dfs_ranked_d1,50,assigned,N4,,D1; accountaxzone p41
+tax return for foster carers,dfs_ranked_d1,50,assigned,N4,,D1; accountaxzone p33; CPC 8.20 (highest foster CPC found)
+tax return foster carer,dfs_ranked_d1,50,assigned,N4,,D1; accountaxzone p51
+tax returns for foster carers,dfs_ranked_d1,50,assigned,N4,,D1; accountaxzone p46
+qualifying care relief 2024 25,dfs_ranked_d1,90,assigned,N5,,D1; accountaxzone p28
+qualifying care relief 2024-25,dfs_ranked_d1,90,assigned,N5,,"D1; accountaxzone p27, tax-wise p104"
+qualifying care relief 2024/25,dfs_ranked_d1,90,assigned,N5,,"D1; accountaxzone p31, tax-wise p104"
+qualifying care relief 2025/26,dfs_ranked_d1,70,assigned,N5,,"D1; accountaxzone p8, caservices p89 - a PEER holds p8, so the head is NOT gov.uk-owned end-to-end; D4 RESOLVED, N5 CONFIRMED"
+qualifying care relief 2025 26,dfs_ranked_d1,70,assigned,N5,,D1; accountaxzone p8
+how much can childminders earn,dfs_ranked_d1,70,excluded,,EX-CAREER,D1; caservices p52; career-earnings intent below the A* lead-intent bar
+nursery franchise,dfs_ranked_d1,90,excluded,,EX-OFFNICHE-FRANCHISE,"D1; wearegolding p10, KD 11; buying-a-franchise intent belongs to C2 row 82 (franchisees, generalist, separate cluster), not row 26"
