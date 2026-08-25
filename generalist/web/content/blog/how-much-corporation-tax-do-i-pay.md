@@ -1,13 +1,13 @@
 ---
-title: "How Much Corporation Tax Do I Pay? UK Rates and Reliefs for 2025/26"
+title: "How Much Corporation Tax Do I Pay? UK Corporation Tax Rates for 2025/26 and 2026/27"
 slug: "how-much-corporation-tax-do-i-pay"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/how-much-corporation-tax-do-i-pay"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
-metaTitle: "How Much Corporation Tax Do I Pay? UK Rates 2025/26"
-metaDescription: "Corporation tax rates for 2025/26: 19% on profits up to £50k, 25% on profits over £250k, with marginal relief between. Worked examples for UK Ltds."
+metaTitle: "How Much Corporation Tax Do I Pay? UK Rates 2025/26 & 2026/27"
+metaDescription: "UK corporation tax rates for 2025/26 and 2026/27: 19% up to £50,000, 25% over £250,000, marginal relief between. Worked examples and associated company rules."
 altText: "accountant reviewing corporation tax computation on a tablet in a modern UK office"
 image: "/blog/how-much-corporation-tax-do-i-pay.jpg"
 imageCredit:
@@ -15,210 +15,213 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@leeloothefirst"
   sourceUrl: "https://www.pexels.com/photo/tax-documents-8970290/"
   source: "Pexels"
-h1: "How Much Corporation Tax Do I Pay? UK Rates and Reliefs for 2025/26"
-summary: "A direct guide to corporation tax rates for 2025/26. We cover the 19% small profits rate, the 25% main rate, how marginal relief works between £50k and £250k profit, and worked examples for typical limited companies."
+h1: "How Much Corporation Tax Do I Pay? UK Corporation Tax Rates for 2025/26 and 2026/27"
+summary: "The UK corporation tax rates are 19% on profits up to £50,000 and 25% on profits over £250,000, with marginal relief in between. The rates are the same for 2025/26 and 2026/27. This guide shows exactly what you pay at every profit level, how associated companies shrink the thresholds, when the bill is due, and the reliefs that reduce it."
 schema: ""
 faqs:
   - question: "How much corporation tax do I pay on £100,000 profit?"
-    answer: "For a company with no associated companies and £100,000 profit, you pay corporation tax of approximately £22,750. That is 25% on £100,000 (£25,000) minus marginal relief of £2,250 (calculated as (£250,000 minus £100,000) x 3/200 = £150,000 x 0.015). Your effective rate is approximately 22.75%, which sits between the 19% small profits rate and the 25% main rate."
+    answer: "For a company with no associated companies and £100,000 taxable profit, corporation tax is £22,750. That is 25% on £100,000 (£25,000) minus marginal relief of £2,250, calculated as (£250,000 minus £100,000) x 3/200. The effective rate is 22.75%, which sits between the 19% small profits rate and the 25% main rate. The same figures apply for 2025/26 and 2026/27."
   - question: "Is corporation tax 19% or 25% for small companies?"
-    answer: "It depends on your profit level. Companies with augmented profits of £50,000 or less pay 19% (the small profits rate). Companies with profits over £250,000 pay 25% (the main rate). Between £50,000 and £250,000, marginal relief applies and the effective rate sits between 19% and 25%. The old flat 19% rate for all companies ended on 31 March 2023."
+    answer: "It depends on profit, not company size. Companies with augmented profits of £50,000 or less pay 19% (the small profits rate). Companies with profits over £250,000 pay 25% (the main rate). Between £50,000 and £250,000, marginal relief applies and the effective rate sits between 19% and 25%. The old flat 19% rate for all companies ended on 31 March 2023."
+  - question: "What is a CT600?"
+    answer: "The CT600 is the corporation tax return every UK company must file with HMRC for each accounting period, even when no tax is due. It reports the taxable profit, the rate applied, any marginal relief, and the tax payable. The filing deadline is 12 months after the accounting period ends, but the payment deadline is earlier, at 9 months and 1 day after the period end."
+  - question: "How do associated companies affect the corporation tax thresholds?"
+    answer: "The £50,000 and £250,000 limits are divided by the total number of associated companies, counting the company itself. With two associated companies each has limits of £25,000 and £125,000; with three, £16,667 and £83,333. Companies under common control count, including overseas companies, so a director with three active companies can find each paying the 25% main rate on quite modest profits. Genuinely dormant companies are excluded."
   - question: "Do I pay corporation tax if my company made a loss?"
-    answer: "No. Corporation tax is charged on taxable profits only. If your company makes a loss, you have no corporation tax liability for that period. You may be able to carry the loss back against profits from the previous year to claim a repayment, or carry it forward indefinitely to reduce corporation tax in future profitable years."
+    answer: "No. Corporation tax is charged on taxable profits only. If your company makes a loss, there is no corporation tax for that period. You may be able to carry the loss back against the previous year's profits and claim a repayment, or carry it forward to reduce corporation tax in future profitable years. You must still file the CT600 return."
+  - question: "When do quarterly instalments apply to corporation tax?"
+    answer: "Quarterly instalment payments apply to large companies, meaning augmented profits over £1.5 million, with that limit divided by the number of associated companies plus one. Very large companies (profits over £20 million) pay on an earlier schedule. There is growth relief for a company that was not large in the previous 12 months with profits of £10 million or less, and a de minimis exemption where the liability is £5,000 or less. Most owner-managed companies never reach the threshold and simply pay 9 months and 1 day after year end."
 keyTakeaways:
-  - "For 2025/26, UK limited companies pay corporation tax at 19% on profits up to £50,000 and at 25% on profits over £250,000."
-  - "Profits between £50,000 and £250,000 attract marginal relief at a standard fraction of 3/200, giving an effective marginal rate of 26.5% through that band."
-  - "Each associated company under common control divides the profit thresholds; two associated companies reduce the small profits limit to £25,000 and the upper limit to £125,000 each."
-  - "Corporation tax is due 9 months and 1 day after the accounting year-end, while the CT600 filing deadline falls 12 months after year-end."
-  - "The Annual Investment Allowance gives 100% tax relief on most plant and machinery purchases up to £1 million per year, deducted in the year of purchase."
-  - "Director loans unrepaid 9 months and 1 day after year-end trigger S455 tax at 33.75% for 2025/26 loans, or 35.75% for loans made from 6 April 2026."
+  - "UK corporation tax rates are 19% on profits up to £50,000 and 25% on profits over £250,000, unchanged for both 2025/26 and 2026/27 (FY2025 and FY2026)."
+  - "Between £50,000 and £250,000, marginal relief applies using the 3/200 standard fraction, so the effective rate climbs smoothly from 19% to 25% and the marginal rate in the band is 26.5%."
+  - "A company with £100,000 profit and no associated companies pays £22,750, an effective rate of 22.75%."
+  - "The £50,000 and £250,000 limits are divided by the number of associated companies: two companies under common control means limits of £25,000 and £125,000 each."
+  - "Payment is due 9 months and 1 day after the accounting period ends; the CT600 filing deadline is 12 months after. Large companies (augmented profits over £1.5 million, adjusted for associated companies) pay by quarterly instalments."
+  - "Capital allowances cut the bill: the Annual Investment Allowance gives 100% relief on up to £1 million of plant and machinery, full expensing gives companies 100% on new main-rate assets with no cap, and a 40% first-year allowance applies to new and unused main-rate plant bought from 1 January 2026."
 ---
 
-<p>If you run a limited company in the UK, corporation tax is your single biggest direct tax cost. The rate you pay depends entirely on your company's taxable profit, not your turnover. And since April 2023, the old flat 19% rate has been replaced with a tiered system. Many directors still assume they pay 19% across the board. That is no longer correct.</p>
+<p>If you run a UK limited company, here is the direct answer. For both 2025/26 and 2026/27, corporation tax is charged at <strong>19% on profits up to £50,000</strong> (the small profits rate) and <strong>25% on profits over £250,000</strong> (the main rate). Between those figures, marginal relief gives you a blended effective rate somewhere between 19% and 25%. The rates did not change at April 2026, so the same numbers hold for accounting periods across FY2025 and FY2026.</p>
 
-<p>This guide explains how much corporation tax you pay for the 2025/26 financial year, with exact rates, worked examples, and the reliefs that can reduce your bill. Every number here is current for the 2025/26 tax year (accounting periods starting on or after 1 April 2025).</p>
+<p>Since April 2023 there has been no single flat rate, yet many directors still assume they pay 19% across the board. Whether that is true for you depends entirely on your taxable profit, not your turnover, and on how many companies you control. This guide works through what you actually pay at every profit level, with recomputable examples, the marginal relief formula, the associated company trap, payment deadlines including quarterly instalments, and the reliefs that reduce the bill.</p>
 
-<h2>The Two Corporation Tax Rates for 2025/26</h2>
+<h2>UK Corporation Tax Rates at a Glance</h2>
 
-<p>There are two main rates. Which one applies depends on your company's <strong>augmented profits</strong>. That is your taxable profit plus any dividends received from other companies.</p>
+<p>Which rate applies depends on your company's <strong>augmented profits</strong>: taxable profit plus any dividends received from non-group companies.</p>
 
+<table>
+<thead>
+<tr><th>Augmented profits</th><th>Rate (2025/26 and 2026/27)</th><th>What applies</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to £50,000</td><td>19%</td><td>Small profits rate</td></tr>
+<tr><td>£50,001 to £250,000</td><td>Effective 19% to 25%</td><td>Main rate less marginal relief (3/200 fraction)</td></tr>
+<tr><td>Over £250,000</td><td>25%</td><td>Main rate, no relief</td></tr>
+</tbody>
+</table>
+
+<p>Two adjustments catch people out. The limits are <strong>divided by the number of associated companies</strong> (covered in detail below), and they are <strong>time-apportioned</strong> for accounting periods shorter than 12 months. A company with a 6-month period has a small profits limit of £25,000, not £50,000.</p>
+
+<h2>How Much Corporation Tax Should I Pay? Worked Examples</h2>
+
+<p>Every figure here uses the current rates and assumes no associated companies unless stated. The numbers are identical for 2025/26 and 2026/27.</p>
+
+<h3>Example 1: A consultancy with £40,000 profit</h3>
 <ul>
-<li><strong>Small profits rate:</strong> 19% on profits up to £50,000.</li>
-<li><strong>Main rate:</strong> 25% on profits over £250,000.</li>
-<li><strong>Marginal relief:</strong> Between £50,000 and £250,000, you pay a blended rate between 19% and 25%.</li>
+<li>Augmented profits £40,000, under the £50,000 limit</li>
+<li>Corporation tax at 19%: <strong>£7,600</strong></li>
+<li>Profit after tax: £32,400</li>
+</ul>
+<p>Straightforward. The small profits rate applies in full.</p>
+
+<h3>Example 2: A company with £100,000 profit</h3>
+<ul>
+<li>Tax at the main rate: 25% x £100,000 = £25,000</li>
+<li>Marginal relief: (£250,000 minus £100,000) x 3/200 = £150,000 x 0.015 = £2,250</li>
+<li>Corporation tax: <strong>£22,750</strong></li>
+<li>Effective rate: 22.75%</li>
 </ul>
 
-<p>The small profits rate applies if your augmented profits are £50,000 or less. The main rate applies if they are £250,000 or more. Between those figures, marginal relief gradually increases your effective rate from 19% up to 25%.</p>
-
-<p>These thresholds are <strong>divided by the number of associated companies</strong>. If you control two limited companies, the £50,000 threshold drops to £25,000 for each. If you control three, it drops to £16,667 each. Associated companies include UK and overseas companies under common control, including dormant companies unless they are genuinely inactive.</p>
-
-<h2>Worked Examples: What You Actually Pay</h2>
-
-<p>Let us run through four common scenarios. These use the 2025/26 rates.</p>
-
-<h3>Example 1: A consultancy Ltd with £40,000 profit</h3>
-<p>One director, no associated companies. Profit is £40,000. Augmented profits are £40,000 (no dividends received).</p>
+<h3>Example 3: A software company with £180,000 profit</h3>
 <ul>
-<li>Corporation tax at 19%: £7,600</li>
-<li>Effective rate: 19%</li>
-<li>Net profit after tax: £32,400</li>
-</ul>
-<p>Straightforward. The small profits rate applies.</p>
-
-<h3>Example 2: A software company with £180,000 profit</h3>
-<p>Three directors, no associated companies. Profit is £180,000. No dividends received.</p>
-<ul>
-<li>Augmented profits: £180,000 (between £50,000 and £250,000)</li>
-<li>Marginal relief applies</li>
-<li>Corporation tax: 25% on £180,000 = £45,000</li>
-<li>Minus marginal relief: £1,050 (standard formula: (£250,000 minus £180,000) x 3/200)</li>
-<li>Net tax: £43,950</li>
+<li>Tax at the main rate: 25% x £180,000 = £45,000</li>
+<li>Marginal relief: (£250,000 minus £180,000) x 3/200 = £70,000 x 0.015 = £1,050</li>
+<li>Corporation tax: <strong>£43,950</strong></li>
 <li>Effective rate: approximately 24.4%</li>
 </ul>
-<p>This company pays an effective rate of roughly 24.4%, not 19% and not 25%. Marginal relief smooths the transition.</p>
 
-<h3>Example 3: A manufacturing Ltd with £420,000 profit</h3>
-<p>Two directors, no associated companies. Profit is £420,000.</p>
+<h3>Example 4: A manufacturer with £420,000 profit</h3>
 <ul>
-<li>Augmented profits: £420,000 (above £250,000)</li>
-<li>Corporation tax at 25%: £105,000</li>
-<li>Effective rate: 25%</li>
-<li>Net profit after tax: £315,000</li>
+<li>Augmented profits above £250,000, so the main rate applies in full</li>
+<li>Corporation tax at 25%: <strong>£105,000</strong></li>
+<li>Profit after tax: £315,000</li>
 </ul>
-<p>The main rate applies in full. No marginal relief is available above £250,000.</p>
 
-<h3>Example 4: A husband-and-wife Ltd with £63,400 profit, two associated companies</h3>
-<p>They also control a property company (dormant) and a separate trading company (active). The dormant property company is excluded from the associated-company count because it has not carried on any trade or business during the period. Two associated companies total (the main company plus the active trading company).</p>
-<ul>
-<li>Thresholds divided by 2: small profits limit is £50,000 / 2 = £25,000. Upper limit is £250,000 / 2 = £125,000.</li>
-<li>Profit is £63,400. That is between £25,000 and £125,000.</li>
-<li>Marginal relief applies at the reduced thresholds.</li>
-<li>Corporation tax: 25% on £63,400 = £15,850</li>
-<li>Minus marginal relief: £924 ((£125,000 minus £63,400) x 3/200 = £61,600 x 0.015)</li>
-<li>Net tax: approximately £14,926</li>
-<li>Effective rate: approximately 23.5%</li>
-</ul>
-<p>Associated companies complicate the calculation. If you control multiple companies, check your count carefully and exclude any that are genuinely dormant.</p>
+<p>Here is the effective rate across the band, so you can place your own company without running the formula:</p>
+
+<table>
+<thead>
+<tr><th>Taxable profit</th><th>Corporation tax</th><th>Effective rate</th></tr>
+</thead>
+<tbody>
+<tr><td>£50,000</td><td>£9,500</td><td>19.0%</td></tr>
+<tr><td>£75,000</td><td>£16,125</td><td>21.5%</td></tr>
+<tr><td>£100,000</td><td>£22,750</td><td>22.75%</td></tr>
+<tr><td>£150,000</td><td>£36,000</td><td>24.0%</td></tr>
+<tr><td>£200,000</td><td>£49,250</td><td>24.6%</td></tr>
+<tr><td>£250,000</td><td>£62,500</td><td>25.0%</td></tr>
+</tbody>
+</table>
 
 <h2>How Marginal Relief Works (The Formula)</h2>
 
-<p>If your profits fall between £50,000 and £250,000, marginal relief reduces the tax bill. The standard formula for 2025/26 is:</p>
+<p>If augmented profits fall between £50,000 and £250,000, you start at the 25% main rate and deduct marginal relief. The statutory formula is:</p>
 
-<p><strong>(Upper limit minus augmented profits) multiplied by (standard fraction) multiplied by (augmented profits divided by taxable profits)</strong></p>
+<p><strong>(Upper limit minus augmented profits) x standard fraction x (taxable profits divided by augmented profits)</strong></p>
 
-<p>The standard fraction for 2025/26 is 3/200 (0.015). That is the same fraction used since April 2023.</p>
+<p>The standard fraction is <strong>3/200</strong> (0.015), unchanged since April 2023. For most owner-managed companies, taxable and augmented profits are the same figure, so the formula simplifies to (£250,000 minus profits) x 3/200, as in the examples above.</p>
 
-<p>For most companies where augmented profits equal taxable profits, the formula simplifies to:</p>
+<p>The consequence worth knowing: the <strong>marginal rate inside the band is 26.5%</strong>. Each extra £1,000 of profit between £50,000 and £250,000 costs £265 in corporation tax, more than either headline rate. That is why timing a capital purchase or a pension contribution to land in a marginal relief year saves more than the same deduction in a 19% year. Our dedicated guide on <a href="/blog/corporation-tax/corporation-tax-marginal-relief-2025-26">corporation tax marginal relief</a> works through the planning angles.</p>
 
-<p><strong>Marginal relief = (Upper limit minus profits) x 3/200</strong></p>
+<h2>Associated Companies: How the Thresholds Shrink</h2>
 
-<p>Using Example 2 above: (£250,000 minus £180,000) x 3/200 = £70,000 x 0.015 = £1,050. That is the full marginal relief, giving net corporation tax of £43,950. We can run the precise numbers for your company if you <a href="/contact">contact us</a>.</p>
+<p>If you control more than one company, the £50,000 and £250,000 limits are divided by the total number of associated companies, counting the company itself. This is the single most common reason a "small" company ends up at the 25% main rate.</p>
 
-<p>The effective marginal rate between £50,000 and £250,000 is 26.5%. That is the rate at which tax increases as profit rises through the marginal relief band. So each additional £1,000 of profit in that band costs roughly £265 in extra corporation tax.</p>
+<table>
+<thead>
+<tr><th>Associated companies</th><th>Small profits limit (each)</th><th>Upper limit (each)</th></tr>
+</thead>
+<tbody>
+<tr><td>1 (no associates)</td><td>£50,000</td><td>£250,000</td></tr>
+<tr><td>2</td><td>£25,000</td><td>£125,000</td></tr>
+<tr><td>3</td><td>£16,667</td><td>£83,333</td></tr>
+<tr><td>4</td><td>£12,500</td><td>£62,500</td></tr>
+</tbody>
+</table>
+
+<p>So if you have three companies in a group, or three subsidiaries under a holding company, each one hits the full 25% rate at just £83,333 of profit. Companies are associated when one controls the other or both are under common control, and the test reaches connected persons, so a spouse's company can count. Overseas companies count too. <strong>Genuinely dormant companies are excluded</strong>, but a company with any trade or business activity in the period is not dormant for this purpose.</p>
+
+<h3>Worked example with associated companies</h3>
+<p>A husband-and-wife company makes £63,400 profit. The couple also control one other active trading company, so there are two associated companies and the limits halve to £25,000 and £125,000.</p>
+<ul>
+<li>£63,400 sits between the adjusted limits, so marginal relief applies</li>
+<li>Tax at the main rate: 25% x £63,400 = £15,850</li>
+<li>Marginal relief: (£125,000 minus £63,400) x 3/200 = £61,600 x 0.015 = £924</li>
+<li>Corporation tax: <strong>£14,926</strong></li>
+<li>Effective rate: approximately 23.5%</li>
+</ul>
+<p>With no second company, the same profit would have cost £15,850 minus £2,799 relief, that is (£250,000 minus £63,400) x 0.015, leaving £13,051. The second company costs £1,875 a year in extra corporation tax at this profit level. If you control multiple companies, check the count carefully; our guide to the <a href="/blog/corporation-tax/associated-companies-corporation-tax">associated companies rules</a> covers the control tests and the dormant exclusion in full.</p>
 
 <h2>When Do You Pay Corporation Tax?</h2>
 
-<p>For most small companies, corporation tax is due <strong>9 months and 1 day</strong> after the end of the accounting period. If your year-end is 31 March 2026, the payment deadline is 1 January 2027.</p>
+<p>For most companies, corporation tax is due <strong>9 months and 1 day</strong> after the end of the accounting period. A 31 March 2026 year end means payment by 1 January 2027.</p>
 
-<p>For companies with taxable profits above £1.5 million, quarterly instalment payments apply. You pay in four instalments starting in the seventh month of the accounting period. Most small and medium companies never reach this threshold.</p>
+<p>The <strong>CT600</strong> is the corporation tax return itself. You must file one for every accounting period, even with no tax to pay, and the filing deadline is <strong>12 months after year end</strong>. Note the mismatch: the money is due three months before the return. Late filing penalties start at £100 and escalate; late payment interest runs at <strong>7.75% (base rate plus 4%, as at January 2026)</strong> from day one. Paying early works the other way: HMRC pays credit interest at <strong>2.75% (base minus 1%, from 9 January 2026)</strong> from your payment date to the normal due date. Both rates float with the Bank of England base rate. Our guide on <a href="/blog/corporation-tax/corporation-tax-paying-early-or-in-instalments-uk">paying corporation tax early or in instalments</a> covers the mechanics.</p>
 
-<p>You must file a <strong>CT600 corporation tax return</strong> with HMRC, even if you have no tax to pay. The filing deadline is 12 months after the year-end, but the payment deadline is earlier (9 months and 1 day). Late filing penalties start at £100 and escalate quickly.</p>
+<h3>Quarterly instalments for larger companies</h3>
 
-<p>New companies receive a <strong>CT41G</strong> form from HMRC within weeks of incorporation. That form asks for your accounting year-end date and other details. Respond promptly to avoid automatic penalties.</p>
+<p><strong>Large companies</strong>, meaning augmented profits over £1.5 million, pay by quarterly instalment payments (QIPs) instead of the single 9-month deadline. The £1.5 million limit is <strong>divided by the number of associated companies plus one</strong> and time-apportioned for short periods, so a group of four companies is into instalments at £300,000 of profit each. The four instalments fall 6 months and 13 days after the start of the accounting period, then at 3-month intervals, with the last 3 months and 14 days after the period ends. <strong>Very large companies</strong> (profits over £20 million) pay earlier, on the 14th day of months 3, 6, 9 and 12 of the period.</p>
+
+<p>Two escape routes matter for growing companies: a company is not required to pay by instalments in the first year it becomes large if it was not large in the preceding 12 months and profits are £10 million or less, and there is a de minimis exemption where the total liability is £5,000 or less. Instalment balances carry their own interest rates, 3.50% credit and 6.25% debit from 29 December 2025.</p>
 
 <h2>What Reduces Your Corporation Tax Bill?</h2>
 
-<p>Several reliefs and deductions can lower your taxable profit and therefore your corporation tax. These are the most common.</p>
+<p>Corporation tax is charged on taxable profit, so anything that legitimately reduces profit reduces the bill at your marginal rate, which in the £50,000 to £250,000 band means 26.5p per pound.</p>
 
-<h3>Capital Allowances</h3>
-<p>If you buy plant, machinery, computers, vehicles, or equipment for your business, you can claim capital allowances. The <strong>Annual Investment Allowance (AIA)</strong> gives 100% relief on most plant and machinery up to £1 million per year. That means you deduct the full cost from your profits in the year of purchase.</p>
+<h3>Capital allowances</h3>
+<p>Spending on plant, machinery, computers and equipment earns capital allowances in place of depreciation. The <a href="/blog/corporation-tax/annual-investment-allowance">Annual Investment Allowance (AIA)</a> gives <strong>100% relief on up to £1 million</strong> of qualifying spend per 12-month period, permanent and available to companies and unincorporated businesses alike, but use-it-or-lose-it in each period. <a href="/blog/corporation-tax/full-expensing-capital-allowances">Full expensing</a>, for companies only, gives 100% first-year relief on new and unused main-rate plant with <strong>no cap</strong>, plus 50% on new special-rate assets. There is also a <strong>40% first-year allowance</strong> on new and unused main-rate plant and machinery bought <strong>from 1 January 2026</strong> (Finance Act 2026 s.29), relevant where AIA is already used up.</p>
 
-<p><strong>Full Expensing</strong> is available for limited companies on most main-rate plant and machinery. It is effectively a 100% first-year allowance with no cap. It applies to new assets only, not second-hand. This is more generous than the AIA for companies buying expensive new equipment.</p>
+<p>Anything left in the pools attracts writing-down allowances, and the main-pool rate <strong>fell from 18% to 14%</strong> for periods from 1 April 2026 (corporation tax) or 6 April 2026 (income tax) under Finance Act 2026 s.28, with the special-rate pool unchanged at 6%. Cars are excluded from AIA, full expensing and the 40% FYA: only new zero-emission cars get a 100% first-year allowance, other cars go into the 14% or 6% pool by CO2 emissions. Commercial buildings earn the Structures and Buildings Allowance at 3% a year on construction cost.</p>
 
-<p>For cars, the rules differ. Only new zero-emission cars (0 g/km CO2) qualify for the 100% first-year allowance. Cars emitting 1 to 50 g/km go into the main pool at 14% writing-down allowance (Finance Act 2026 s.28 cut the main-pool rate from 18% to 14% for chargeable periods beginning on or after 1 April 2026 for corporation tax and 6 April 2026 for income tax). Cars emitting over 50 g/km go into the special-rate pool at 6%.</p>
+<h3>R&D tax relief</h3>
+<p>For accounting periods beginning on or after 1 April 2024, the merged scheme gives a <strong>20% expenditure credit</strong> on qualifying R&D, and loss-making R&D-intensive companies (30% or more of total spend on R&D) can use Enhanced R&D Intensive Support instead. Start with our <a href="/blog/randd-tax-credits/rd-tax-credit-eligibility-checklist">R&D tax credit eligibility checklist</a> to see whether your work qualifies.</p>
 
-<h3>R&D Tax Credits</h3>
-<p>If your company undertakes research and development in science or technology, you can claim R&D tax credits. For accounting periods starting on or after 1 April 2024, the merged scheme applies. Loss-making companies spending more than 30% of their total costs on R&D can use the <strong>Enhanced R&D Intensive Scheme (ERIS)</strong>.</p>
+<h3>Salaries and pension contributions</h3>
+<p>Director and staff salaries are deductible at a commercial rate, and employer pension contributions are deductible on a paid basis with no National Insurance. <strong>Dividends are not deductible</strong>: the company pays corporation tax on the full profit first, then you pay dividend tax personally on what you draw. From 6 April 2026 the ordinary dividend rate is 10.75% and the upper rate 35.75% (8.75% and 33.75% for 2025/26), so the combined corporation-tax-plus-dividend-tax cost of extraction has risen. Our guide to the <a href="/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-director-2025-26">tax-efficient salary and dividend split</a> models the combined position, and the <a href="/blog/director-pay-and-dividends/dividend-tax-rates-2026-27">2026/27 dividend tax rates</a> guide has the personal-tax detail.</p>
 
-<p>The rates are complex and depend on whether you are profit-making or loss-making. We have a dedicated guide on <a href="/r-and-d-credits">R&D tax credits</a> if your company qualifies.</p>
-
-<h3>Structures and Buildings Allowance</h3>
-<p>If you buy or construct commercial property, you can claim 3% per year on the construction cost. This is a straight-line deduction over 33.33 years. It applies to new builds and some conversions.</p>
-
-<h3>Director Salaries and Pension Contributions</h3>
-<p>Salaries paid to directors and employees are deductible against corporation tax, provided they are at a commercial rate. Employer pension contributions are also deductible. These reduce your taxable profit directly.</p>
-
-<p>Dividends are <strong>not</strong> deductible. You pay corporation tax on the full profit, then distribute the remainder as dividends. That is why salary and pension planning matters. For more detail, read our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>.</p>
-
-<h3>Other Deductions</h3>
-<p>Standard business expenses are deductible: rent, rates, utilities, insurance, marketing, professional fees, travel, and staff costs. Entertainment of clients is not deductible (except for staff entertainment under the annual function exemption).</p>
-
-<p>If you work from home, you can claim a proportion of your household costs. The simplified method allows £6 per week without receipts. The actual method requires a fair apportionment of utilities, mortgage interest (not capital), council tax, and insurance.</p>
+<h3>Losses</h3>
+<p>A loss-making period means no corporation tax at all for that period. Trading losses can be carried back 12 months against prior profits for a repayment, or carried forward against future profits. You still file the CT600.</p>
 
 <h2>How to Calculate Your Corporation Tax</h2>
 
-<p>The process runs like this:</p>
-
 <ol>
-<li>Start with your net profit per the accounts (after deducting all allowable expenses).</li>
-<li>Add back disallowable items: client entertainment, depreciation, political donations, fines, capital expenditure (if capital allowances are claimed separately).</li>
-<li>Deduct capital allowances and any other reliefs.</li>
-<li>The result is your taxable profit.</li>
-<li>Apply the appropriate rate: 19%, 25%, or marginal relief.</li>
+<li>Start with net profit per the accounts.</li>
+<li>Add back disallowable items: depreciation, client entertainment, fines, most capital expenditure.</li>
+<li>Deduct capital allowances and any other reliefs (R&D, losses brought forward).</li>
+<li>The result is taxable profit; add non-group dividends received to get augmented profits.</li>
+<li>Count your associated companies and divide the £50,000 and £250,000 limits accordingly.</li>
+<li>Apply 19%, 25%, or 25% less marginal relief.</li>
 </ol>
 
-<p>Depreciation is added back because capital allowances replace it. You cannot claim both. Most companies claim capital allowances instead of depreciation for tax purposes.</p>
+<p>Depreciation is added back because capital allowances replace it; you cannot claim both. The step most DIY filers miss is step 5: HMRC's software calculates marginal relief correctly only if you enter the right associated company count.</p>
 
-<p>If your company has <strong>associated companies</strong>, divide the thresholds by the total number of associated companies (including the company itself). If you are unsure whether a company is associated, check the control test: do you or your connected persons hold more than 50% of the shares or voting rights?</p>
+<h2>Close Companies and Director Loans</h2>
 
-<h2>What About Close Companies?</h2>
-
-<p>Most small UK limited companies are <strong>close companies</strong> (controlled by five or fewer participators). Close company status affects a few tax rules:</p>
-
-<ul>
-<li>Loans to participators (directors) trigger S455 tax at 33.75% (for loans made in 2025/26) or 35.75% (for loans made on or after 6 April 2026) if not repaid within 9 months and 1 day of the year-end.</li>
-<li>Benefits in kind to directors and their families are reportable on form P11D.</li>
-<li>Expenses paid to directors may need to be reported.</li>
-</ul>
-
-<p>Close company status does not change the corporation tax rate itself. The 19%, 25%, and marginal relief rates apply equally to close and non-close companies.</p>
+<p>Most owner-managed companies are <strong>close companies</strong> (controlled by five or fewer participators). Close status does not change the corporation tax rate, but it adds the s.455 charge: a director's loan still outstanding 9 months and 1 day after year end triggers a temporary tax charge on the company at <strong>33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026</strong> (the rate tracks the dividend upper rate). The charge is repaid after the loan is cleared, though the refund is deferred. Our guide to the <a href="/blog/director-pay-and-dividends/directors-loan-account-explained">director's loan account</a> explains the 30-day rule and the benefit-in-kind trap on loans over £10,000.</p>
 
 <h2>Common Mistakes Directors Make</h2>
 
-<p>Here are the errors we see most often when calculating corporation tax.</p>
+<p><strong>Confusing turnover with profit.</strong> Corporation tax is charged on profit. A company turning over £500,000 on a 10% margin pays tax on £50,000, not £500,000.</p>
 
-<p><strong>Confusing turnover with profit.</strong> Corporation tax is on profit, not turnover. A company turning over £500,000 with a 10% margin pays tax on £50,000 profit, not £500,000. We see directors panic about corporation tax bills that simply do not apply.</p>
+<p><strong>Forgetting associated companies.</strong> Two companies halve the thresholds; three cut them to a third. Directors regularly miss a second company incorporated years ago, or a spouse's company under the connected-persons rules.</p>
 
-<p><strong>Forgetting associated companies.</strong> If you own two companies, the £50,000 threshold halves. If you own three, it thirds. Directors often miss dormant companies they incorporated years ago.</p>
+<p><strong>Assuming a cliff edge at £50,000.</strong> You do not jump to 25% on everything the moment profit passes £50,000. Marginal relief means the effective rate climbs gradually, though the marginal cost of each extra pound in the band is 26.5%.</p>
 
-<p><strong>Ignoring marginal relief.</strong> Some directors assume they pay 25% on all profit once they cross £50,000. That is wrong. Marginal relief means the effective rate climbs gradually, not in a cliff edge.</p>
+<p><strong>Confusing the payment and filing deadlines.</strong> Payment is due 9 months and 1 day after year end; the CT600 is due at 12 months. Paying "when the return is due" means three months of late payment interest at 7.75%.</p>
 
-<p><strong>Missing the payment deadline.</strong> Corporation tax is due 9 months and 1 day after the year-end. Many directors assume it aligns with the filing deadline (12 months). It does not. Late payment interest accrues from day one.</p>
+<h2>Do You Need an Accountant for Corporation Tax?</h2>
 
-<h2>Should You Use an Accountant for Corporation Tax?</h2>
+<p>A single company with one director, no capital spend and no associates can reasonably self-file through HMRC's online service. The moment you have associated companies, capital allowances choices (AIA versus full expensing versus the 40% FYA), an R&D claim, or an overdrawn director's loan account, professional review usually saves more than it costs, and the penalty for an incorrect return can reach 100% of the underpaid tax. Our <a href="/blog/corporation-tax/what-does-a-corporation-tax-accountant-do">guide to what a corporation tax accountant actually does</a> sets out what you should expect for the fee, or you can <a href="/contact">get in touch</a> for a quote.</p>
 
-<p>You can file your own CT600 return through HMRC's free online service. For a simple company with one director, straightforward income, and no capital allowances, it is manageable. But the moment you have associated companies, capital expenditure, R&D claims, or complex director loan accounts, the calculation gets harder.</p>
-
-<p>The marginal relief calculation alone trips up many DIY filers. HMRC's online system calculates it automatically if you enter the correct data, but entering the wrong associated company count or augmented profit figure produces the wrong result.</p>
-
-<p>We handle corporation tax for companies across every sector. If your profit structure is anything beyond the simplest case, a professional review saves more than it costs. You can <a href="/services">see our services here</a> or <a href="/contact">get in touch</a> for a specific quote.</p>
-
-<p>The penalty for filing an incorrect return (even unintentionally) can reach 100% of the underpaid tax. That is a risk worth avoiding.</p>
-
-<h2>Final Numbers for 2025/26</h2>
-
-<p>To summarise the key figures:</p>
+<h2>The Key Figures, Summarised</h2>
 
 <ul>
-<li>Small profits rate: 19% on profits up to £50,000</li>
+<li>Small profits rate: 19% on profits up to £50,000 (2025/26 and 2026/27)</li>
 <li>Main rate: 25% on profits over £250,000</li>
-<li>Marginal relief fraction: 3/200 (0.015)</li>
-<li>Effective marginal rate in the relief band: 26.5%</li>
-<li>Thresholds divided by number of associated companies</li>
-<li>Payment deadline: 9 months and 1 day after year-end</li>
-<li>Filing deadline: 12 months after year-end</li>
+<li>Marginal relief fraction: 3/200; marginal rate in the band 26.5%</li>
+<li>Thresholds divided by the number of associated companies and time-apportioned for short periods</li>
+<li>Payment: 9 months and 1 day after year end; CT600 filing: 12 months</li>
+<li>Quarterly instalments: augmented profits over £1.5 million, divided by associated companies plus one</li>
+<li>AIA £1 million; full expensing uncapped for companies; 40% FYA on new plant from 1 January 2026; main-pool WDA 14% from April 2026</li>
 </ul>
 
-<p>If your company's profit sits between £50,000 and £250,000, the effective rate is somewhere between 19% and 25%. Use the marginal relief formula or ask your accountant to run it. The difference between the wrong rate and the right rate can be thousands of pounds.</p>
-
-<p>For a full breakdown of how corporation tax interacts with your director's salary and dividend strategy, read our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>. If you are considering incorporating, our <a href="/incorporation">incorporation guide</a> covers the tax implications of moving from sole trader to limited company.</p>
+<p>If your profit sits between £50,000 and £250,000, run the marginal relief formula rather than guessing a rate: the difference between the wrong rate and the right one is thousands of pounds. And because the corporation tax bill is only half the story for an owner-manager, read it alongside our guide to the <a href="/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-director-2025-26">salary and dividend split</a> before you decide how to take the profit out.</p>

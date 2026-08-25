@@ -1,96 +1,114 @@
 ---
-title: "How To Claim Use Of Home As Office: Simplified Flat Rate vs Actual Costs"
+title: "How To Claim Use Of Home As Office: Flat Rate, Actual Costs and the Director Routes"
 slug: "how-to-claim-use-of-home-as-office"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/how-to-claim-use-of-home-as-office"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "How To Claim Use Of Home As Office: Simplified Flat Rate vs Actual Costs"
-metaDescription: "Claim use of home as office costs through the simplified flat rate or actual costs method. We explain both for sole traders and directors, with worked examples for 2025/26."
-altText: "UK accountant reviewing home office expense calculations on a laptop at a desk in a modern home office in Manchester"
+metaTitle: "Use Of Home As Office: Flat Rate vs Actual Costs 2026/27"
+metaDescription: "How to claim use of home as office: the simplified flat rate (£10 to £26 a month) and actual cost apportionment with worked examples."
+altText: "UK accountant reviewing home office expense calculations on a laptop at a desk in a modern home office"
 image: "/blog/how-to-claim-use-of-home-as-office.jpg"
 imageCredit:
   photographer: "RDNE Stock project"
   photographerUrl: "https://www.pexels.com/@rdne"
   sourceUrl: "https://www.pexels.com/photo/man-sitting-by-desk-using-computer-and-laptop-10376169/"
   source: "Pexels"
-h1: "How To Claim Use Of Home As Office: Simplified Flat Rate vs Actual Costs"
-summary: "Two ways to claim use of home as office costs on your tax return: a simplified flat rate (hours-based for sole traders and partnerships; £6 per week for limited company directors) or a detailed actual costs calculation. We explain which suits your situation, how to calculate each, and what records HMRC expects you to keep."
+h1: "How To Claim Use Of Home As Office: Flat Rate, Actual Costs and the Director Routes"
+summary: "There are three main routes to claim use of home as office costs: the simplified flat rate for sole traders and partners (£10, £18 or £26 a month by hours worked), the actual costs method (a proportion of rent or mortgage interest, council tax, energy and insurance), and the limited company director routes (£6 a week tax free, or a rental licence agreement). We explain how each works, who can use which, the record keeping HMRC expects, and the capital gains trap of exclusive business use."
 schema: ""
 faqs:
   - question: "Can I claim use of home as office if I have a separate office elsewhere?"
     answer: "No. If you have a dedicated business premises outside your home, you cannot also claim home office costs for the same business. The home office claim is for the additional costs of running your business from home. If you already have a commercial premises, the home use is not an additional cost."
   - question: "Does the flat rate cover my phone and broadband costs?"
-    answer: "No. Neither the hours-based simplified rate for sole traders nor the £6 per week rate for company directors covers phone and broadband costs. Those rates apply to general household costs such as heating, lighting, and council tax. You can claim the business proportion of your phone and broadband bills separately, on top of whichever flat rate you use, provided you keep records of the business use."
+    answer: "No. Neither the hours-based simplified rate for sole traders nor the £6 per week rate for company directors covers phone and broadband costs. Those rates cover general household running costs such as heating, lighting, and council tax. You can claim the business proportion of your phone and broadband bills separately, on top of whichever flat rate you use, provided you keep records of the business use."
   - question: "How do I claim home office costs as a limited company director?"
-    answer: "Your company can reimburse you up to £6 per week tax free without receipts. For higher amounts, the company reimburses your actual additional household costs, calculated using the room count or hours method. The reimbursement is tax deductible for the company and not a taxable benefit for you."
+    answer: "Your company can pay you up to £6 per week (£26 per month) tax free without receipts under the homeworking exemption in section 316A ITEPA 2003. For higher amounts, either the company reimburses your calculated additional household costs, or you put a licence agreement in place and charge the company a commercial rent, which you then declare as property income on your own return. Sole trader simplified expenses (the £10 to £26 monthly rates) are not available to limited companies."
+  - question: "Can employees still claim working from home tax relief?"
+    answer: "Only in narrow circumstances. The pandemic-era easement that let employees claim a whole year's relief for even one day of home working ended on 5 April 2022. An employee can now claim only if they have to work from home, for example because the job requires it or the employer has no premises they can attend, not because they choose to or their contract allows hybrid working. If the employer pays the £6 a week homeworking allowance, no claim is needed."
+  - question: "Will claiming home office costs affect the capital gains tax position when I sell my house?"
+    answer: "Only if part of your home is used exclusively for business. Private residence relief is restricted for any part of the home used exclusively for the trade throughout the ownership period, so the gain on that fraction becomes taxable. If the room has genuine dual use, for example it is also a guest bedroom or the household uses it in the evenings, full private residence relief is preserved. Claiming the flat rate or a time-apportioned actual costs deduction does not, by itself, create a capital gains problem."
   - question: "What happens if HMRC enquires into my home office claim?"
-    answer: "HMRC will ask for your calculation and supporting evidence. For the £6 rate, a simple log of weeks worked is enough. For actual costs, they expect bills, floor plans, and time logs. If you cannot provide them, they can disallow the claim and charge interest and penalties. If you are self-employed, keep your records for at least 5 years after the 31 January Self Assessment filing deadline for that tax year."
+    answer: "HMRC will ask for your calculation and supporting evidence. For the flat rates, a simple log of hours or weeks worked is enough. For actual costs, they expect bills, a room count or floor plan, and time logs. If you cannot provide them, they can disallow the claim and charge interest and penalties. If you are self-employed, keep your records for at least 5 years after the 31 January Self Assessment filing deadline for that tax year."
 keyTakeaways:
-  - "Sole traders and partnerships can claim £10, £18, or £26 per month under the simplified flat rate for working 25 to 50, 51 to 100, or 101+ hours from home."
-  - "Limited company directors can receive up to £6 per week (£312 per year) from their company tax-free without receipts under HMRC's benchmark rates."
-  - "The actual costs method allows a proportion of rent or mortgage interest, council tax, gas and electricity, broadband, and insurance, apportioned using a room count fraction."
-  - "You must choose one method for the whole tax year and cannot mix the simplified flat rate with actual costs in the same year."
-  - "Mortgage capital repayments are not allowable under the actual costs method; only mortgage interest qualifies as a deductible expense."
-  - "You must work at least 25 hours from home in a month to use the simplified flat rate; lower-hour months require the actual costs method instead."
+  - "Sole traders and partners can claim £10, £18, or £26 per month under simplified expenses for working 25 to 50, 51 to 100, or 101+ hours from home; the rates are not available to limited companies."
+  - "The actual costs method allows a proportion of rent or mortgage interest, council tax, energy, and insurance, apportioned by room count and business hours, and usually beats the flat rate where a room is used substantially for business."
+  - "Limited company directors have two routes: £6 per week (£312 per year) tax free without receipts, or a rental licence agreement charging the company a commercial rent, declared as property income."
+  - "Employees can only claim working from home relief under the strict section 336 test; the pandemic-era easement ended on 5 April 2022, and choosing to work from home does not qualify."
+  - "Never use a room exclusively for business: exclusive business use restricts capital gains private residence relief on that part of the home when you sell. Dual use preserves full relief."
+  - "Mortgage capital repayments are never allowable; only the interest element qualifies, and you must pick one method (flat rate or actual costs) for the whole tax year."
 ---
 
-<p>If you work from home, whether as a sole trader, a contractor through your own limited company, or a partner in a partnership, you can claim a deduction for the business use of your home. HMRC gives you two routes: a simplified flat rate (hours-based for sole traders and partnerships; £6 per week for limited company directors) or a detailed calculation based on your actual costs. The right choice depends on how much of your home you use for business and what your actual bills look like.</p>
+<p>If you work from home, there is a deduction to claim, but the route depends entirely on how your business is set up. A sole trader or partner chooses between HMRC's simplified flat rate and an actual cost apportionment. A limited company director cannot use the sole trader flat rates at all: the company either pays the £6 a week homeworking allowance or rents the space from the director under a licence agreement. Employees are a fourth, much more restricted, case.</p>
 
-<p>This article covers both methods for the 2025/26 tax year, with worked examples and the record-keeping requirements for each. We are specialist accountants and work with UK businesses of every shape, from sole traders in Sheffield to limited companies in London.</p>
+<p>This guide covers each route in turn, with worked examples, the comparison table, the record keeping HMRC expects, and the capital gains trap that catches people who make a room exclusively business. Figures are current for the 2026/27 tax year; where a rate also applied in 2025/26 (the return most people are filing now) it is the same unless stated.</p>
 
-<h2>The Simplified Flat Rate Method</h2>
+<h2>Which Route Applies To You</h2>
 
-<p>For sole traders and partnerships, HMRC's simplified flat rate for home office use is based on the hours you work from home each month. You do not need to provide receipts, calculate floor areas, or split your broadband bill. The monthly rates are:</p>
+<table>
+<thead>
+<tr><th>Route</th><th>Who can use it</th><th>Typical annual value</th><th>Records needed</th></tr>
+</thead>
+<tbody>
+<tr><td>Simplified flat rate (£10/£18/£26 a month)</td><td>Sole traders and partners only</td><td>Up to £312</td><td>Monthly hours log</td></tr>
+<tr><td>Actual costs apportionment</td><td>Sole traders and partners</td><td>Often £500 to £3,000+</td><td>Bills, room count, hours log, the calculation</td></tr>
+<tr><td>£6 a week homeworking allowance</td><td>Limited company directors and employees, paid by the company</td><td>£312</td><td>None (no receipts required)</td></tr>
+<tr><td>Rental licence agreement</td><td>Limited company directors</td><td>Set by the agreement, at a commercial rate</td><td>Written licence, board minute, rent workings, property pages on your return</td></tr>
+<tr><td>Employee relief claim (s.336)</td><td>Employees who have to work from home</td><td>£6 a week relief, or evidenced actual extra costs</td><td>Evidence home working is required, not chosen</td></tr>
+</tbody>
+</table>
+
+<h2>Route 1: The Simplified Flat Rate (Sole Traders and Partners)</h2>
+
+<p>HMRC's simplified expenses regime gives sole traders and partnerships an hours-based monthly flat rate for use of home. You do not need receipts, floor areas, or apportioned bills. The monthly rates are:</p>
+
+<table>
+<thead>
+<tr><th>Hours worked from home per month</th><th>Flat rate per month</th></tr>
+</thead>
+<tbody>
+<tr><td>25 to 50</td><td>£10</td></tr>
+<tr><td>51 to 100</td><td>£18</td></tr>
+<tr><td>101 or more</td><td>£26</td></tr>
+</tbody>
+</table>
+
+<p>You total your monthly claims and enter the figure as a deduction against trading profit on your Self Assessment return. Working 101 or more hours from home every month gives the maximum of £312 for the year (£26 x 12).</p>
+
+<p>Three rules people miss. First, the 25-hour floor: a month in which you work fewer than 25 hours from home does not qualify for the flat rate, though you can still claim actual additional costs for that month. Second, the rate is per person, not per business: if you and your spouse each run a business from the same home, you each claim at your own rate; if you alone run two trades, you claim once on your combined hours. Third, and most important, <strong>the simplified rates are not available to limited companies</strong>. A director claiming £26 a month through their company is using the wrong regime; the director routes are covered below.</p>
+
+<p>The flat rate covers general household running costs (heating, lighting, council tax). It does not cover phone or broadband, so you claim the business proportion of those separately on top. And the flat rate is an option, not a cap: if your actual additional costs are lower than the flat rate, you may still use the flat rate. You are not required to prove your costs reach it.</p>
+
+<h2>Route 2: The Actual Costs Method (Sole Traders and Partners)</h2>
+
+<p>If your business use of home is substantial, apportioning your actual household costs almost always yields more than £312. This is how to deduct home business expenses properly, and it is also the calculation a company must use if it reimburses a director more than £6 a week.</p>
+
+<p>You can claim a business proportion of:</p>
 
 <ul>
-<li>25 to 50 hours per month: £10</li>
-<li>51 to 100 hours per month: £18</li>
-<li>101 hours or more per month: £26</li>
-</ul>
-
-<p>You add up your monthly claims and enter the total on your tax return as a deduction against your trading profits. (Limited company directors can claim £6 per week from their company tax-free: see the director section below.)</p>
-
-<p>This method is designed for people who use part of their home for business tasks but do not have a dedicated room used exclusively for work. If you answer emails from the kitchen table, take client calls from the living room, or do your bookkeeping on a laptop in the spare bedroom that also stores your suitcases, the simplified flat rate suits you.</p>
-
-<p>You must work at least 25 hours from home in a month to use the simplified rate for that month. Months where your business use falls below 25 hours do not qualify for the flat rate, but you can still claim actual additional costs for those months. If you work 101 hours or more every month for 12 months, you can claim £26 per month, giving £312 for the year. If your hours vary month to month, total your claims at the applicable rate for each month.</p>
-
-<p>The simplified rate applies per person, not per business. If you and your spouse both run separate businesses from the same home, you each claim at your own applicable rate based on your own hours. If you run two different trades from home, you claim once only, based on the total hours you work from home across all your businesses.</p>
-
-<h3>Who Should Use the Simplified Method</h3>
-
-<p>Use the simplified flat rate if your actual costs are low or you do not want the administrative hassle of calculating and justifying actual costs. It is also a good choice if you rent a room or live in shared accommodation where you cannot easily isolate your share of household bills. You cannot use the simplified rate for any month in which you work fewer than 25 hours from home.</p>
-
-<p>For most sole traders working from home 25 or more hours per month, the simplified rate is easy to operate and HMRC will not challenge it. If your hours fall below 25 in a given month, the actual costs method (covered below) is your only option for that month.</p>
-
-<h2>The Actual Costs Method</h2>
-
-<p>If your business use of home is more substantial, you can claim a proportion of your actual household costs instead of the flat rate. This typically yields a higher deduction, but it requires more record keeping and a defensible calculation methodology.</p>
-
-<p>You can claim a proportion of the following costs:</p>
-
-<ul>
-<li>Mortgage interest (not capital repayments) or rent</li>
+<li>Mortgage interest (never capital repayments) or rent</li>
 <li>Council tax</li>
-<li>Water rates</li>
+<li>Water rates (if metered and business use increases them)</li>
 <li>Gas and electricity</li>
-<li>Buildings and contents insurance</li>
+<li>Buildings and contents insurance (home insurance qualifies only in proportion to business use; it is not fully claimable)</li>
 <li>Broadband and telephone line rental</li>
-<li>Cleaning and repairs to the room you use</li>
+<li>Cleaning, and repairs to the room you use</li>
 </ul>
 
-<p>You cannot claim a proportion of mortgage capital repayments, food, or general home improvements that benefit the whole property.</p>
+<p>You cannot claim mortgage capital repayments, food, or improvements that benefit the whole property. For the full list of what a sole trader can deduct beyond the home, see our <a href="/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist">allowable expenses checklist for sole traders</a>.</p>
 
-<h3>How To Calculate Your Claim</h3>
+<h3>The Room and Hours Calculation</h3>
 
-<p>You need a fair and reasonable method for apportioning costs. The most common approach is the room count method.</p>
+<p>HMRC accepts any fair and reasonable apportionment. The standard approach is rooms first, then time:</p>
 
-<p>Count the total number of rooms in your home (excluding bathrooms, hallways, and kitchens unless you use them exclusively for business). Divide by the number of rooms you use for business. Then multiply each household bill by that fraction. Then multiply by the proportion of time you use the room for business.</p>
+<ol>
+<li>Count the rooms in your home, excluding bathrooms, hallways and kitchens (unless used exclusively for business).</li>
+<li>Divide to get the room fraction for the room(s) used for business.</li>
+<li>If the room is not used for business all the time, multiply by the business-hours fraction.</li>
+</ol>
 
-<p>Here is a worked example. A freelance graphic designer in Bristol lives in a two-bedroom flat. She uses the second bedroom as her office, working 35 hours per week from home. The flat has four rooms: living room, kitchen, bedroom, and office. She uses the office 100% for business.</p>
-
-<p>Her annual costs:</p>
+<p><strong>Worked example 1, substantial use.</strong> A freelance graphic designer in Bristol rents a two-bedroom flat and uses the second bedroom as her office for 35 hours a week; during the week the room is used almost exclusively for business, with only minor private use (deliberate dual use rather than exclusive use, see the capital gains section). The flat has four countable rooms. Her annual costs:</p>
 
 <ul>
 <li>Rent: £9,600</li>
@@ -101,75 +119,85 @@ keyTakeaways:
 <li>Total: £13,080</li>
 </ul>
 
-<p>Room count: 4 rooms. One room used exclusively for business. Business fraction: 1/4 = 25%.</p>
+<p>Room fraction: 1/4 = 25%. Because business use dominates and private use is minor, a full room fraction with no time apportionment is reasonable. Claim: £13,080 x 25% = £3,270. A room shared materially with the household would instead need the hours fraction from step 3.</p>
 
-<p>Claim: £13,080 x 25% = £3,270.</p>
+<p>Against the £312 flat rate maximum, that is £2,958 more in deductions. As a basic-rate taxpayer she saves 20% income tax plus 6% Class 4 National Insurance on the extra: £2,958 x 26% = £769 a year. At the higher rate (40% plus 2% Class 4) it is £2,958 x 42% = £1,242. An hour of paperwork for several hundred pounds is clearly worth it.</p>
 
-<p>Compare that to the £312 she would claim using the simplified flat rate (£26 per month at 101+ hours, for all 12 months). The actual costs method gives her an extra £2,958 in deductions, saving her £592 in income tax at the basic rate (20%) or £1,183 at the higher rate (40%). The extra record keeping is clearly worth it.</p>
+<p><strong>Worked example 2, light use.</strong> A consultant in Manchester uses the dining room of a six-room house for 30 hours a week, 48 weeks a year, with heavy personal use the rest of the time. Total household costs £15,000. Room fraction: 1/6. Time fraction: 30 out of 168 hours a week. Claim: £15,000 x 1/6 x 30/168 = £446.</p>
 
-<h3>When the Room Is Not Exclusive</h3>
+<p>Here the flat rate (£312 at 101+ hours a month) is only £134 behind, worth £27 of tax at 20% or £54 at 40%, and many people reasonably take the simpler option. The general pattern: a room used substantially for business justifies actual costs; kitchen-table working suits the flat rate.</p>
 
-<p>If your office doubles as a guest bedroom or a storage room for personal items, you need to factor in the proportion of time it is used for business. A common approach is to calculate business use on an hourly basis.</p>
+<h2>Route 3: Limited Company Directors</h2>
 
-<p>Example: A consultant in Manchester uses the dining room as his office 30 hours per week, 48 weeks per year. The room is used for personal purposes the rest of the time. The house has 6 rooms. Business fraction: 1/6 = 16.67%. Time fraction: 30 hours out of 168 hours per week = 17.86%.</p>
+<p>A director working from home has two legitimate routes, and the sole trader flat rates above are not one of them.</p>
 
-<p>Total household costs: £15,000. Claim: £15,000 x 16.67% x 17.86% = £446.</p>
+<h3>The £6 A Week Homeworking Allowance</h3>
 
-<p>In this case, the simplified flat rate (up to £312 a year for those working 101 or more hours from home each month) is close enough that many people choose the simpler option. The difference is £134 in deductions, saving £27 in tax at 20% or £54 at 40%. That may not be worth the calculation time.</p>
+<p>The company can pay you up to £6 per week (£26 per month, £312 per year) tax free, with no receipts required, under the homeworking exemption in section 316A ITEPA 2003. The payment is deductible for the company, free of tax and National Insurance for you, and needs nothing more than a note of the weeks worked at home. There must be a genuine homeworking arrangement (regular work at home, not the odd evening), but for a director running the company from home that test is comfortably met.</p>
 
-<h2>Limited Company Directors and Home Office Claims</h2>
+<p>If your actual additional household costs exceed £6 a week, the company can instead reimburse the calculated additional cost, using the actual costs method above, with the workings kept at the company. The reimbursement stays tax free only up to the genuine additional cost incurred.</p>
 
-<p>If you are a director of your own limited company and work from home, the rules are slightly different. Your company can reimburse you for home office costs, or you can claim a deduction on your personal self assessment return if you use your home for company business.</p>
+<h3>The Rental Licence Agreement Route</h3>
 
-<p>The company can pay you up to £6 per week (£312 per year) tax free and without the need for receipts, under HMRC's benchmark rates. This is treated as a tax deductible expense for the company and is not a taxable benefit for you. The company simply processes it through payroll or as a reimbursement.</p>
+<p>Where a meaningful part of the home is given over to the company, a director can go further: grant the company a non-exclusive licence to occupy part of the home and charge it rent. The tax consequences on each side are:</p>
 
-<p>If your actual costs are higher, the company can reimburse you the exact amount of additional household costs incurred because of the business use. You need to calculate this using the actual costs method above, and keep the records at the company. The reimbursement is tax deductible for the company and not taxable for you, provided it does not exceed the actual additional costs.</p>
+<ul>
+<li><strong>For the company:</strong> the rent is an allowable expense, saving corporation tax at 19% to 25% depending on profits. There is no employer National Insurance on rent, unlike salary.</li>
+<li><strong>For you:</strong> the rent is property income, declared on the property pages of your Self Assessment return. You deduct the apportioned costs of providing the space (the same room-and-hours calculation), so if the rent is set at or near cost, the taxable rental profit can be small or nil. Note that for an individual, any mortgage interest in that calculation is relieved only as a basic-rate (20%) tax reducer, not a full deduction.</li>
+<li><strong>Paperwork matters:</strong> a written licence agreement and a board minute, with the rent at a justifiable commercial level. Without the agreement, HMRC can treat the payments as earnings.</li>
+</ul>
 
-<p>For a detailed breakdown of how director salary and dividend planning interacts with home office claims, see our <a href="/blog/director-pay-and-dividends">director pay and dividends guide</a>.</p>
+<p>The rental route makes sense where the £6 a week allowance is trivially small next to the real cost of the space. It interacts with how you take the rest of your income, so read it alongside our <a href="/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-director-2025-26">tax-efficient salary and dividend split guide</a>, and see our companion piece on <a href="/blog/limited-company-tax/can-i-claim-home-office-expenses-limited-company">claiming home office expenses through a limited company</a> for the company-side detail.</p>
+
+<h2>Employees: The Strict Section 336 Position</h2>
+
+<p>The common misconception is that anyone working from home can claim the relief. That was briefly close to true: during the pandemic HMRC allowed employees to claim a full year's relief if they were required to work from home for even one day. <strong>That easement ended on 5 April 2022.</strong></p>
+
+<p>An employee can now claim tax relief for home working costs only where the strict test in section 336 ITEPA 2003 is met: the expenses must be incurred wholly, exclusively and necessarily in the performance of the duties. In practice HMRC accepts a claim only where you <em>have</em> to work from home, for example because the job requires you to live far from the employer's premises or the employer has no premises you can attend. Choosing to work from home, or hybrid working under a flexible arrangement, does not qualify, even if your contract permits it.</p>
+
+<p>If your employer pays you the £6 a week homeworking allowance, that is tax free under section 316A and no claim arises. If it does not, and you meet the strict test, you can claim £6 a week (worth £1.20 a week at basic rate) or evidenced actual additional costs.</p>
+
+<h2>The Capital Gains Trap: Never Make The Room Exclusive</h2>
+
+<p>When you sell your main home, private residence relief normally exempts the whole gain from capital gains tax. But the relief is restricted for any part of the home used <strong>exclusively</strong> for business throughout your ownership: the gain apportioned to that part becomes chargeable, at 18% or 24% depending on your band (see our <a href="/blog/exit-and-capital-gains/capital-gains-tax-rates-2025-26">capital gains tax rates guide</a>).</p>
+
+<p>The fix is simple and legitimate: keep genuine dual use. If the office is also a guest bedroom, houses the family printer, or is used personally in the evenings, no part of the home is exclusively business and full relief is preserved. This is also why the time apportionment in the actual costs method is not a defect but a feature: it evidences the dual use. The same warning applies with more force to the rental licence route; the licence should be non-exclusive and the room should retain personal use.</p>
+
+<p>Claiming the flat rate, the £6 a week allowance, or a time-apportioned actual costs deduction does not by itself create a capital gains problem.</p>
 
 <h2>What HMRC Expects You To Keep</h2>
 
-<p>If you use the simplified flat rate (sole traders) or the £6 per week director rate, you need no receipts. You just need a note in your records confirming the hours you worked from home each month (for the simplified rate) or the weeks claimed (for the director rate). A simple diary entry or calendar log is sufficient.</p>
+<p>For the simplified flat rate or the £6 a week allowance: no receipts, just a log of the hours (or weeks) worked from home. A calendar note is sufficient.</p>
 
-<p>If you use the actual costs method, keep:</p>
+<p>For actual costs, keep:</p>
 
 <ul>
-<li>Copies of your household bills (gas, electricity, broadband, rent, council tax)</li>
-<li>A floor plan or room count showing how you calculated the business proportion</li>
-<li>A log of the hours you worked from home, especially if the room is not exclusive</li>
-<li>The calculation itself, showing each step</li>
+<li>Copies of household bills (gas, electricity, broadband, rent or mortgage statements, council tax, insurance)</li>
+<li>A room count or floor plan showing the business proportion</li>
+<li>An hours log, especially where the room is not used for business full time</li>
+<li>The calculation itself, step by step</li>
 </ul>
 
-<p>HMRC can ask for this evidence if they enquire into your tax return. If you cannot produce it, they may disallow the claim and charge interest and penalties. The risk is low for small claims, but it exists.</p>
+<p>For the rental licence route, add the written licence agreement, the board minute, and the workings behind the rent figure.</p>
 
-<h2>Claiming on Your Tax Return</h2>
+<p>If HMRC enquires and you cannot produce the evidence, the claim can be disallowed with interest and penalties. Self-employed records should be kept for at least 5 years after the 31 January filing deadline for the year.</p>
 
-<p>Sole traders and partners claim home office costs on the self employment pages of the self assessment return (SA103). The amount goes in the "use of home as office" box under allowable expenses. For the 2025/26 return, this is straightforward if you use accounting software like FreeAgent, Xero, or QuickBooks, which have dedicated fields for this expense.</p>
+<h2>Claiming On Your Tax Return</h2>
 
-<p>If you are a sole trader or partner using the simplified flat rate, add up your monthly claims (£10, £18, or £26 depending on your hours that month) and enter the total. If you use actual costs, enter the calculated figure.</p>
+<p>Sole traders and partners enter the figure in the "use of home as office" box within allowable expenses on the self-employment pages (SA103). Software such as FreeAgent, Xero, or QuickBooks has a dedicated field. Flat rate users total their monthly amounts (£10, £18, or £26 by month); actual costs users enter the calculated figure. You choose one method for the whole tax year and cannot mix them.</p>
 
-<p>Limited company directors claim home office costs through the company's accounts, not through personal self assessment. The company enters the reimbursement as an expense in its profit and loss account, and processes it through payroll or as a director's expense claim.</p>
-
-<p>If you are unsure which method applies to your situation, <a href="/contact">contact our team</a>. We can review your specific circumstances and confirm the correct approach for your 2025/26 return.</p>
+<p>Directors do not claim through Self Assessment for the £6 a week or reimbursement routes: the company records the payment as an expense in its accounts. Only the rental licence route touches your personal return, as property income on the property pages.</p>
 
 <h2>Common Mistakes</h2>
 
-<p>The most common mistake is claiming both the simplified flat rate and actual costs in the same year. You choose one method for the whole tax year. You cannot mix them.</p>
-
-<p>The second most common mistake is claiming a proportion of mortgage capital repayments. Only mortgage interest is allowable. Capital repayments reduce your loan balance and are not a deductible expense.</p>
-
-<p>The third mistake is claiming for a room that is used exclusively for business but also has personal items stored in it. If your "office" contains your child's toys, your Christmas decorations, or your personal filing cabinet, it is not exclusive. You need to apply the time apportionment.</p>
+<ul>
+<li><strong>Mixing methods in one year.</strong> Flat rate or actual costs, for the whole tax year, not both.</li>
+<li><strong>Claiming mortgage capital repayments.</strong> Only the interest element is allowable; capital repayments reduce your loan, not your tax.</li>
+<li><strong>A director using the sole trader flat rates.</strong> The £10/£18/£26 simplified expenses regime is for unincorporated businesses only. Directors use £6 a week, a costed reimbursement, or a rental licence.</li>
+<li><strong>Calling a room exclusive when it is not.</strong> If the "office" also stores personal items, apply the time apportionment. And deliberately keeping some personal use protects your capital gains position.</li>
+<li><strong>An employee claiming for chosen home working.</strong> Post-April-2022, preference and hybrid arrangements do not qualify under section 336.</li>
+</ul>
 
 <h2>When To Use an Accountant</h2>
 
-<p>The simplified flat rate is easy enough that most people can handle it themselves. The actual costs method is also manageable if your situation is straightforward. But if you have a complex home layout, multiple business activities, or a home office that is also used by employees, the calculations get harder.</p>
-
-<p>If your home office claim is over £1,000, or if you are unsure about the exclusivity of the room, speak to a qualified accountant. We are <a href="/about">experienced accountants</a> and deal with home office claims regularly for clients across all sectors. A small fee for a review can save you a much larger tax bill if HMRC challenges your claim.</p>
-
-<h2>Final Point on the Flat Rate</h2>
-
-<p>The simplified flat rates for sole traders have not changed for years. They are deliberately set at a level that suits light home working. If your actual costs are higher, do the calculation. The extra paperwork takes an hour once a year and can save you hundreds of pounds in tax.</p>
-
-<p>If your actual additional costs are lower than the applicable flat rate amount, use the simplified rate anyway. You are not required to prove your actual costs reach the flat-rate figure. The flat rate is an option, not a cap.</p>
-
-<p>For more guidance on running your business finances, visit our <a href="/fundamentals">business fundamentals page</a> or browse our <a href="/blog/bookkeeping-and-compliance">bookkeeping and compliance articles</a>.</p>
+<p>The flat rates need no help. The actual costs method is manageable where the layout is simple. Take advice where the claim is large (over £1,000), where you are weighing the rental licence route against the £6 allowance, where exclusivity and the capital gains interaction are in play, or where the home use sits alongside a wider structure decision. We are <a href="/about">experienced accountants</a> and deal with home office claims across every business type; <a href="/contact">contact our team</a> for a review of your position.</p>

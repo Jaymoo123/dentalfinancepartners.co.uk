@@ -1,13 +1,13 @@
 ---
-title: "What Are the Dividend Tax Rates for 2025/26 and How Do They Affect You?"
+title: "Dividend Tax Rates 2025/26: Rates, Bands and the £500 Allowance"
 slug: "dividend-tax-rates-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/dividend-tax-rates-2025-26"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
-metaTitle: "Dividend Tax Rates 2025/26: Full Guide for UK Business"
-metaDescription: "Dividend tax rates 2025/26 are 8.75%, 33.75% and 39.35% with a £500 allowance. See how this affects your Ltd company dividend strategy."
+metaTitle: "Dividend Tax Rates 2025/26: Bands, £500 Allowance, 2026/27 Rise"
+metaDescription: "Dividend tax rates 2025/26: 8.75%, 33.75% and 39.35% with a £500 allowance, rising to 10.75% and 35.75% from 6 April 2026. Tables and examples."
 altText: "Accountant reviewing dividend tax calculations for a limited company director on a laptop in a UK office"
 image: "/blog/dividend-tax-rates-2025-26.jpg"
 imageCredit:
@@ -15,119 +15,140 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@rdne"
   sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821470/"
   source: "Pexels"
-h1: "Dividend Tax Rates 2025/26: What Business Owners Need to Know"
-summary: "The dividend tax rates for 2025/26 remain at 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate), with the dividend allowance cut to £500. This guide explains how each rate applies, what your tax-free allowance covers, and how to structure your director pay to minimise your total tax bill."
+h1: "Dividend Tax Rates 2025/26: Rates, Bands and the £500 Allowance"
+summary: "The dividend tax rates for 2025/26 are 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate), with a £500 dividend allowance. From 6 April 2026 the ordinary and upper rates rise to 10.75% and 35.75% under Finance Act 2026. This guide sets out the rates and bands for both years, with worked examples for directors and contractors."
 schema: ""
-faqs: []
+faqs:
+  - question: "What are the dividend tax rates for 2025/26?"
+    answer: "For 2025/26 the dividend tax rates are 8.75% for basic rate taxpayers (total income £12,571 to £50,270), 33.75% for higher rate taxpayers (£50,271 to £125,140) and 39.35% for additional rate taxpayers (above £125,140). The first £500 of dividend income is covered by the dividend allowance."
+  - question: "What is the dividend allowance for 2025/26 and 2026/27?"
+    answer: "The dividend allowance is £500 in both 2025/26 and 2026/27. It is a zero-rate band, not a deduction: the first £500 of dividends is taxed at 0% but still uses up part of whichever tax band it falls into. The allowance was £1,000 in 2023/24 and £2,000 up to 2022/23."
+  - question: "When do dividend tax rates rise, and to what?"
+    answer: "From 6 April 2026, under Finance Act 2026 section 4 (Royal Assent 18 March 2026), the ordinary rate rises from 8.75% to 10.75% and the upper rate from 33.75% to 35.75%. The additional rate stays at 39.35%. The new rates apply to dividends received on or after 6 April 2026."
+  - question: "What is the dividend tax rate for a higher rate taxpayer in 2025/26?"
+    answer: "A higher rate taxpayer pays 33.75% on dividends above the £500 allowance in 2025/26. From 6 April 2026 this rises to 35.75%. You are a higher rate taxpayer where your total taxable income, with dividends counted as the top slice, falls between £50,271 and £125,140."
+  - question: "When do I report and pay tax on 2025/26 dividends?"
+    answer: "Dividends are reported on your self assessment return for the tax year you received them. For 2025/26 the online filing and payment deadline is 31 January 2027. If your liability is large enough you may also owe payments on account on 31 January and 31 July."
 keyTakeaways:
   - "The dividend tax rates for 2025/26 are 8.75% (basic rate, income £12,571 to £50,270), 33.75% (higher rate, £50,271 to £125,140) and 39.35% (additional rate, above £125,140)."
-  - "The dividend allowance for 2025/26 is £500, meaning any dividend income above that amount is taxed at your marginal dividend rate."
-  - "From 6 April 2026, FA 2026 (enacted 18 March 2026) raises the basic rate to 10.75% and the higher rate to 35.75%, while the additional rate stays at 39.35%."
-  - "Dividends are treated as the top slice of your income, stacking on top of salary and other earnings to determine which tax band applies."
-  - "For 2025/26, a basic rate taxpayer extracting profits as dividends faces a combined effective rate of about 26% (19% corporation tax plus 8.75% dividend tax on net profit)."
-  - "The self assessment filing deadline for 2025/26 dividend income is 31 January 2027."
+  - "The dividend allowance for 2025/26 is £500. It is unchanged for 2026/27."
+  - "From 6 April 2026, Finance Act 2026 (enacted 18 March 2026) raises the basic dividend rate to 10.75% and the higher rate to 35.75%; the additional rate stays at 39.35%."
+  - "Dividends are the top slice of your income, stacking on top of salary and other earnings to determine which band applies."
+  - "A basic rate taxpayer extracting small-company profit as dividends faces a combined effective rate of about 26% in 2025/26 (19% corporation tax plus 8.75% on the net), rising to about 28% in 2026/27."
+  - "The self assessment deadline for 2025/26 dividend income is 31 January 2027."
 ---
+
+<p>This guide owns the rates question: what the dividend tax rates, bands and allowance are for 2025/26, and how they rise in 2026/27. If your question is how dividends interact with savings interest, the Personal Savings Allowance or the starting rate for savings, see our companion guide on <a href="/blog/director-pay-and-dividends/dividend-tax-rates-2025-26-personal-savings-allowance">dividends and the Personal Savings Allowance</a>.</p>
 
 <h2>What Are the Dividend Tax Rates for 2025/26?</h2>
 
-<p>The dividend tax rates for 2025/26 are unchanged from the previous year. You pay tax on dividends above the £500 allowance at the same rate as the income tax band your total income falls into:</p>
+<p>The dividend tax rates for 2025/26 are unchanged from 2024/25. You pay tax on dividends above the £500 allowance at the rate matching the income tax band your total income falls into:</p>
 
 <ul>
-<li><strong>Basic rate (8.75%)</strong> - applies if your total taxable income is between £12,571 and £50,270.</li>
-<li><strong>Higher rate (33.75%)</strong> - applies if your total taxable income is between £50,271 and £125,140.</li>
-<li><strong>Additional rate (39.35%)</strong> - applies if your total taxable income exceeds £125,140.</li>
+<li><strong>Basic rate (8.75%)</strong>, where total taxable income is between £12,571 and £50,270.</li>
+<li><strong>Higher rate (33.75%)</strong>, where total taxable income is between £50,271 and £125,140.</li>
+<li><strong>Additional rate (39.35%)</strong>, where total taxable income exceeds £125,140.</li>
 </ul>
 
-<p>These rates apply to dividends received from UK companies, including your own limited company. The rates are lower than the equivalent income tax rates on salary (20%, 40%, 45%) because dividends are paid from profits that have already been subject to corporation tax.</p>
+<p>These rates apply to dividends from UK companies, including your own limited company. They are lower than the equivalent income tax rates on salary (20%, 40%, 45%) because dividends are paid from profits that have already borne corporation tax.</p>
 
-<p>If you are a director of a small limited company, these rates directly affect how much you take home after tax. Getting the mix right between salary and dividends is the single biggest tax planning decision you will make each year.</p>
+<h2>Dividend Tax Rates 2025/26 vs 2026/27: Comparison Table</h2>
 
-<h2>The £500 Dividend Allowance for 2025/26</h2>
+<p>Finance Act 2026 (Royal Assent 18 March 2026, section 4) raises the ordinary and upper dividend rates from 6 April 2026. The additional rate and the £500 allowance are unchanged. Every figure below is labelled with its tax year:</p>
 
-<p>The dividend allowance for 2025/26 is £500. This is the amount of dividend income you can receive each year without paying any dividend tax. It is not a tax-free allowance in the same way as the personal allowance. It is a zero-rate band. Any dividends you receive above £500 are taxed at the rates above.</p>
+<table>
+<thead>
+<tr><th>Band</th><th>Total income</th><th>2025/26 rate</th><th>2026/27 rate (from 6 Apr 2026)</th></tr>
+</thead>
+<tbody>
+<tr><td>Dividend allowance</td><td>First £500 of dividends</td><td>0%</td><td>0%</td></tr>
+<tr><td>Basic (ordinary) rate</td><td>£12,571 to £50,270</td><td>8.75%</td><td>10.75%</td></tr>
+<tr><td>Higher (upper) rate</td><td>£50,271 to £125,140</td><td>33.75%</td><td>35.75%</td></tr>
+<tr><td>Additional rate</td><td>Above £125,140</td><td>39.35%</td><td>39.35%</td></tr>
+</tbody>
+</table>
 
-<p>The allowance has dropped sharply in recent years. It was £5,000 in 2016/17, then £2,000 from 2018/19, then £1,000 in 2023/24, and finally £500 from 2024/25. For 2025/26, it stays at £500.</p>
+<p>The timing point matters. Dividends are taxed in the year you become entitled to them, so a final dividend declared and paid by 5 April 2026 is taxed at 8.75% or 33.75%, while the same dividend paid on 6 April 2026 or later is taxed at 10.75% or 35.75%. On £40,000 of basic rate dividends, that timing difference is £790 (£39,500 at 2% extra).</p>
 
-<p>This means if you are a director taking a small amount of dividends each year, you now pay tax on every pound above £500. For a basic rate taxpayer, that is 8.75p per pound. For a higher rate taxpayer, it is 33.75p per pound.</p>
+<h2>The £500 Dividend Allowance</h2>
 
-<h2>How Dividend Tax Works in Practice</h2>
+<p>The dividend allowance is £500 for 2025/26 and stays at £500 for 2026/27. It is a zero-rate band, not a deduction: the first £500 of dividends is taxed at 0% but still occupies part of whichever band it falls into. Any dividends above £500 are taxed at the rates above.</p>
 
-<p>Dividends are treated as the top slice of your income. You add your total dividend income to your other income (salary, rental income, savings interest, etc.) and then work out which tax band the dividends fall into. The dividend allowance sits within the basic rate band, but it is not part of your personal allowance.</p>
+<p>The allowance has dropped sharply: £5,000 in 2016/17, £2,000 from 2018/19, £1,000 in 2023/24, and £500 from 2024/25. A director taking modest dividends now pays tax on almost all of them: 8.75p per pound above £500 at basic rate in 2025/26 (10.75p from 6 April 2026).</p>
 
-<p>Here is a worked example. Say you are a director of a Manchester-based consultancy. You pay yourself a salary of £12,570 (which uses your personal allowance) and take dividends of £40,000. Your total income is £52,570. The first £12,570 is tax-free (salary). The next £500 of dividends is tax-free (dividend allowance). That leaves £39,500 of dividends to tax. The basic rate band runs from £12,571 to £50,270, so £37,700 of your dividends fall into the basic rate band. The remaining £1,800 falls into the higher rate band. Your dividend tax bill is £37,700 at 8.75% (£3,298.75) plus £1,800 at 33.75% (£607.50). Total dividend tax: £3,906.25.</p>
+<h2>How Dividend Tax Works: Worked Examples for Both Years</h2>
 
-<p>If you took the same dividends but paid yourself no salary, your total income would be £40,000. The first £12,570 is covered by the personal allowance. The next £500 is the dividend allowance. That leaves £26,930 of dividends taxed at 8.75%, giving a dividend tax bill of £2,356.38. Lower total tax, but you lose the benefit of National Insurance credits for state pension and you have no salary to count as deductible against company profits.</p>
+<p>Dividends are treated as the top slice of your income. Add your dividends to your other income (salary, rental income and so on), then work out which band the dividends land in.</p>
 
-<h2>Dividend Tax vs Salary: Which Is Better?</h2>
+<h3>Example 1: £12,570 salary plus £40,000 dividends, 2025/26</h3>
 
-<p>For most limited company directors, a combination of a small salary and dividends is the most tax-efficient approach. The standard structure is a salary set at the personal allowance level (£12,570) and dividends taken up to the basic rate band limit. This avoids both income tax and National Insurance on the salary, and keeps dividend tax at 8.75% on the dividend portion.</p>
+<p>Say you are a director of a Manchester consultancy. Salary £12,570 uses your personal allowance. Dividends £40,000. Total income £52,570. The first £500 of dividends is covered by the allowance. That leaves £39,500 to tax. The basic rate band above the salary runs from £12,571 to £50,270, which is £37,700 of headroom, but £500 of it is used by the allowance, leaving £37,200 of dividends taxed at 8.75% (£3,255.00). The remaining £2,300 falls into the higher rate band at 33.75% (£776.25). Total dividend tax for 2025/26: £4,031.25.</p>
 
-<p>However, the £500 dividend allowance means the first £500 of dividends is tax-free. Above that, you pay dividend tax at your marginal rate. If you are a basic rate taxpayer, the combined tax burden on company profits extracted as dividends is roughly 19% corporation tax plus 8.75% dividend tax on the net profit. That works out to an effective rate of around 26% on the original profit. Compare that to extracting the same profit as salary, where you pay corporation tax (19%) plus employer NI (15% from 6 April 2025) plus employee NI (8% above primary threshold) plus income tax (20%). The dividend route almost always wins.</p>
+<h3>Example 2: the same figures in 2026/27</h3>
 
-<p>There are exceptions. The secondary threshold dropped to £5,000 from 6 April 2025, so employer NIC at 15% now applies on any salary above that level. A sole director with no other employees cannot claim the Employment Allowance (up to £10,500 where eligible), so the employer NIC cost on a £12,570 salary is £7,570 x 15% = £1,135.50 with no offset available. The salary route can still be better if you need to build up qualifying years for state pension or if you are close to the state pension age.</p>
+<p>Identical income, one year later. The bands and the £500 allowance are the same, but the rates have risen. £37,200 at 10.75% is £3,999.00, and £2,300 at 35.75% is £822.25. Total dividend tax for 2026/27: £4,821.25. The rate rise alone costs this director £790 a year on unchanged income.</p>
+
+<h3>Example 3: dividends only, no salary, 2025/26</h3>
+
+<p>Take £40,000 of dividends with no salary. The personal allowance of £12,570 covers the first slice of the dividends, and the £500 dividend allowance covers the next. That leaves £26,930 taxed at 8.75%, a bill of £2,356.38. The trade-off: with no salary you build no qualifying years for the state pension and the company gets no deductible salary cost. Our guide to <a href="/blog/payroll-and-paye/national-insurance-for-directors">National Insurance for directors</a> covers why most directors keep at least a small salary.</p>
+
+<h2>Salary vs Dividends in 2025/26</h2>
+
+<p>For most limited company directors a small salary plus dividends remains the most tax-efficient structure. The common pattern is a salary at the personal allowance (£12,570) with dividends up to the top of the basic rate band.</p>
+
+<p>The employer NIC position changed from 6 April 2025: the secondary threshold fell to £5,000 and the employer rate rose to 15%. A single-director company cannot claim the Employment Allowance (£10,500 where eligible), so employer NIC on a £12,570 salary is £7,570 x 15% = £1,135.50 with no offset. Some single-director companies therefore set salary at £5,000 instead. The full mechanics, including the Employment Allowance test, are in our <a href="/blog/payroll-and-paye/national-insurance-for-directors">National Insurance for directors</a> guide.</p>
+
+<p>Extracting profit as dividends still usually beats a bonus or extra salary, because dividends carry no NIC. But the 2026/27 rate rise narrows the gap by 2 percentage points at basic and higher rate, so re-run the comparison for any decision straddling 6 April 2026.</p>
 
 <h2>Dividend Tax for Contractors Working Through a Ltd Company</h2>
 
-<p>Contractors operating outside IR35 through their own limited company face the same dividend tax rates as any other director. The key difference is that contractors often have higher profit margins, meaning they take more dividends and push into the higher rate band faster.</p>
+<p>Contractors outside IR35 face the same rates as any other director, but higher margins push them into the higher band faster. Take a contractor whose company can distribute £60,000 after corporation tax, on top of a £12,570 salary, in 2025/26. Total income £72,570. The allowance covers £500. Basic rate headroom above the salary is £37,700, of which £500 is used by the allowance, so £37,200 is taxed at 8.75% (£3,255.00) and the remaining £22,300 at 33.75% (£7,526.25). Total dividend tax: £10,781.25. In 2026/27 the same figures produce £3,999.00 plus £7,972.25, a total of £11,971.25.</p>
 
-<p>Take a contractor in Shoreditch earning £120,000 through their Ltd company. After salary of £12,570 and expenses, the remaining profit is around £95,000 after corporation tax. If they take all of that as dividends, their total income is £107,570. The personal allowance covers £12,570. The dividend allowance covers £500. That leaves £94,500 of dividends to tax. The basic rate band covers £37,700 of that at 8.75% (£3,298.75). The higher rate band covers the remaining £56,800 at 33.75% (£19,170). Total dividend tax: £22,468.75. That is a significant chunk of the profit.</p>
+<p>One caution at higher incomes: once total income passes £100,000 the personal allowance tapers away at £1 for every £2 over, which raises the effective marginal rate on dividends in the £100,000 to £125,140 band well above the headline 33.75% (35.75% from 6 April 2026). Model it before declaring a large dividend.</p>
 
-<p>For contractors inside IR35, dividends are less relevant because the client deducts tax and NI at source. The contractor's Ltd company receives the fee net of tax, and the contractor pays themselves a salary from that. Dividends may still be taken from retained profits, but the tax position is different.</p>
+<p>For contractors inside IR35 the client deducts tax and NIC at source, so dividends from the deemed payment are far less relevant.</p>
 
 <h2>Dividend Tax for Spouse Shareholdings</h2>
 
-<p>Many husband-and-wife limited companies use alphabet shares to split dividend income between spouses. This can keep both partners in the basic rate band, avoiding higher rate dividend tax. For example, a couple running a Birmingham café with £80,000 of distributable profit can each take £40,000 in dividends. Each pays dividend tax at 8.75% on the amount above the £500 allowance. Total tax: roughly £6,900. If one spouse took all £80,000, they would pay higher rate tax on most of it: around £24,000 in dividend tax.</p>
+<p>Many husband-and-wife companies use alphabet shares to split dividends and keep both spouses in the basic rate band. A couple with £80,000 of distributable profit in 2025/26 who take £40,000 each alongside £12,570 salaries pay basic and a little higher rate tax each (Example 1 above, twice: £8,062.50 in total). If one spouse took the whole £80,000, most of it would sit in the higher rate band at 33.75%.</p>
 
-<p>There is a catch. HMRC's settlement legislation can apply if shares are issued to a spouse purely to avoid tax. The legislation says that if the spouse receiving dividends has not genuinely contributed to the business, the dividends may be reattributed to the other spouse. The key is that both spouses must be actively involved in the business or have provided capital that contributed to the profits. Alphabet shares are legitimate if structured correctly. Our <a href="/blog/director-pay-and-dividends">director pay and dividends</a> guidance covers this in more detail.</p>
+<p>The caveat is the settlements legislation: HMRC can reattribute dividends where shares are given to a spouse purely to divert income and the spouse has no real stake. Shares must carry full rights and the arrangement must be genuine. Our <a href="/blog/director-pay-and-dividends">director pay and dividends</a> guidance covers the detail.</p>
 
-<h2>Dividend Tax for Sole Traders and Partnerships</h2>
+<h2>Dividend Tax and Corporation Tax: the Combined Rate</h2>
 
-<p>Sole traders and partnerships do not pay dividend tax. They are taxed on their business profits through self assessment at income tax rates. Dividends from investments in other companies are taxed at the same dividend rates above, but they are not a routine part of a sole trader's tax position. If you are a sole trader and you own shares in a separate company, the dividends from those shares are added to your other income and taxed at the relevant dividend rate.</p>
+<p>Dividends are paid from post-tax profit, so the true cost of extraction is the two layers combined. Corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between (an effective 26.5% on the slice in the band; see our <a href="/blog/corporation-tax/corporation-tax-marginal-relief-2025-26">marginal relief guide</a>). The combined effective rates on a pound of company profit extracted as dividend:</p>
 
-<p>If you are considering incorporating your sole trader business, the dividend tax rates for 2025/26 are a factor in that decision. The corporation tax saving (19% on profits up to £50,000) compared to income tax (20% or 40%) is attractive, but you then face dividend tax on extraction. The net benefit depends on how much profit you retain in the company versus extract. Our <a href="/incorporation">incorporation page</a> walks through the full comparison.</p>
+<table>
+<thead>
+<tr><th>Corporation tax rate</th><th>Dividend rate</th><th>Combined 2025/26</th><th>Combined 2026/27</th></tr>
+</thead>
+<tbody>
+<tr><td>19% (small profits)</td><td>Basic</td><td>26.1%</td><td>27.7%</td></tr>
+<tr><td>19% (small profits)</td><td>Higher</td><td>46.3%</td><td>48.0%</td></tr>
+<tr><td>25% (main rate)</td><td>Higher</td><td>50.3%</td><td>51.8%</td></tr>
+</tbody>
+</table>
+
+<p>The arithmetic behind the first row: £100 of profit bears £19 corporation tax, leaving £81; £81 at 8.75% is £7.09; £19 plus £7.09 is £26.09, so 26.1%. At 10.75% the dividend layer is £8.71, giving £27.71, so 27.7%. Higher combined rates strengthen the case for retaining profit, reinvesting, or extracting via employer pension contributions instead. For companies claiming <a href="/r-and-d-credits">R&D tax credits</a>, the credit reduces the corporation tax layer but the dividend layer is unchanged.</p>
 
 <h2>How to Report Dividends on Your Tax Return</h2>
 
-<p>Dividends are reported on your self assessment tax return. If you are a director of a limited company, you include the total dividends you received in the tax year on the dividend pages of the SA100. HMRC uses this information to calculate your dividend tax liability. You do not need to send anything to HMRC at the time you declare a dividend. You just report it on your annual return.</p>
+<p>Dividends go on the dividend pages of your self assessment return (SA100). Nothing is sent to HMRC when the dividend is declared; you report it annually. For 2025/26 the online filing and payment deadline is 31 January 2027. If your liability is large enough you may owe payments on account on 31 January and 31 July.</p>
 
-<p>If your only income is dividends below £10,000 and you have no other income to report, you may not need to file a return at all. But if you have dividend income above the £500 allowance, you will need to file a return to pay the tax due. The deadline is 31 January following the end of the tax year. For 2025/26, that means filing by 31 January 2027.</p>
+<p>If you are weighing up incorporation, the dividend rates for both years feed directly into the sole-trader-versus-company comparison; our <a href="/incorporation">incorporation page</a> walks through it.</p>
 
-<p>If you are a higher rate taxpayer and your dividend income is significant, you may need to make payments on account. These are half-yearly payments towards the following year's tax bill. The first payment is due on 31 January, the second on 31 July.</p>
-
-<h2>Dividend Tax Planning for 2025/26</h2>
-
-<p>Here are the practical steps you can take now to manage your dividend tax position:</p>
+<h2>Dividend Tax Planning for 2025/26 and the 2026/27 Rise</h2>
 
 <ul>
-<li><strong>Use the £500 allowance fully.</strong> If you are a basic rate taxpayer, taking £500 in dividends costs you nothing. If you are a higher rate taxpayer, it still costs nothing. Do not leave it unused.</li>
-<li><strong>Keep dividends within the basic rate band.</strong> Once your total income (including dividends) exceeds £50,270, every extra pound of dividend costs 33.75% in tax. That is a steep jump from 8.75%. If you have retained profits in the company, consider taking them in stages over multiple tax years to stay within the basic rate band each year.</li>
-<li><strong>Consider a pension contribution.</strong> A company pension contribution reduces your company's profits (saving corporation tax) and is not treated as income for you personally. It can keep your total income below the higher rate threshold, reducing the dividend tax you pay on the dividends you do take.</li>
-<li><strong>Review your spouse shareholding.</strong> If your spouse is a shareholder and genuinely involved in the business, splitting dividends can save significant tax. Make sure the share structure is documented properly with alphabet shares or a separate class of shares.</li>
-<li><strong>Plan for the 2026/27 changes.</strong> The dividend allowance continues at £500. However, FA 2026 (enacted 18 March 2026) raises the basic and higher dividend tax rates from 6 April 2026: the basic rate increases from 8.75% to 10.75%, and the higher rate from 33.75% to 35.75%. The additional rate stays at 39.35%. Dividends received on or after 6 April 2026 are taxed at these higher rates, so timing matters if you can influence when dividends are paid.</li>
+<li><strong>Use the £500 allowance every year.</strong> It costs nothing at any rate band.</li>
+<li><strong>Keep total income within the basic rate band where you can.</strong> Above £50,270 each extra pound of dividend jumps from 8.75% to 33.75% in 2025/26 (10.75% to 35.75% in 2026/27). Spreading retained profit over several years keeps more of it at the lower rate.</li>
+<li><strong>Mind the 6 April 2026 boundary.</strong> Where a dividend was genuinely available to declare in 2025/26, paying it before 6 April 2026 locks in the lower rates; the saving is 2% of everything above the allowance at basic and higher rate.</li>
+<li><strong>Consider company pension contributions.</strong> They reduce corporation tax, carry no NIC, and are not income for you personally, keeping your total income below band thresholds.</li>
+<li><strong>Review spouse shareholdings.</strong> Genuine alphabet-share structures let a couple use two allowances and two basic rate bands.</li>
 </ul>
 
-<p>If your company has retained profits of £100,000 or more, the dividend tax rates for 2025/26 mean that extracting those profits in one go will cost you 33.75% or 39.35% on most of the amount. That is a heavy tax bill. Spreading the extraction over several years, combined with pension contributions, can reduce the effective rate significantly.</p>
+<h2>Dividend Tax for Sole Traders and Non-UK Residents</h2>
 
-<h2>Dividend Tax and Corporation Tax Interaction</h2>
+<p>Sole traders and partnerships do not pay dividend tax on their own trading profits; those are taxed as income through self assessment. Dividends they receive from shares in other companies are taxed at the dividend rates above, as the top slice of income.</p>
 
-<p>Dividends are paid from post-tax profits. Your company pays corporation tax on its profits at 19% (up to £50,000) or 25% (above £250,000), with marginal relief in between. The profit left after corporation tax is available to distribute as dividends. You then pay dividend tax personally on the dividends you receive.</p>
-
-<p>This double layer of tax is the reason dividend tax rates are lower than income tax rates. The government does not want to tax the same pound twice at full rates. Even so, the combined effective rate on company profits extracted as dividends is roughly:</p>
-
-<ul>
-<li>19% corporation tax + 8.75% dividend tax on the net = 26% effective rate (basic rate taxpayer)</li>
-<li>19% corporation tax + 33.75% dividend tax on the net = 46% effective rate (higher rate taxpayer)</li>
-<li>25% corporation tax + 33.75% dividend tax on the net = 50% effective rate (higher rate taxpayer, above £250k profits)</li>
-</ul>
-
-<p>If your company pays corporation tax at 25%, the combined rate is higher. That makes the case for keeping profits within the company stronger, but you then face the question of what to do with retained cash. Reinvesting in the business, buying equipment, or funding R&D can be better than extracting and paying high personal tax.</p>
-
-<p>For companies doing <a href="/r-and-d-credits">R&D tax credits</a>, the interaction is different. R&D credits reduce your corporation tax bill or generate a cash payment. The dividend you take from the remaining profit is still subject to dividend tax at your personal rate.</p>
-
-<h2>Dividend Tax for Non-UK Residents</h2>
-
-<p>If you are a UK resident, you pay UK dividend tax on worldwide dividends. If you are non-UK resident, you pay UK dividend tax only on dividends from UK companies. The rates are the same. However, if you live in a country with a double taxation agreement with the UK, you may be able to claim relief to avoid paying tax twice on the same dividend.</p>
-
-<p>If you are a director of a UK limited company but live abroad, your dividend tax position depends on your residency status. HMRC uses the statutory residence test to determine this. If you are non-resident, you do not pay UK tax on dividends from your company. You pay tax in your country of residence instead. This is a common structure for contractors who move abroad but keep their UK company running.</p>
-
-<h2>Frequently Asked Questions</h2>
+<p>A UK resident pays UK dividend tax on worldwide dividends. A non-UK resident pays UK dividend tax only on UK-company dividends, subject to any double taxation agreement, and residency is decided by the statutory residence test. A director who has genuinely become non-resident is typically taxed in their country of residence instead.</p>

@@ -55,7 +55,7 @@ editorialNote: "metaTitle and metaDescription rewritten via meta_apply.py (SERP 
 
 <p>That date distinction matters far more than most business owners realise. A contractor who crosses £90,000 on 18 July has until 30 August to notify HMRC, and their registration becomes effective from 1 September. Every invoice raised from 1 September must carry VAT at the standard rate of 20% (or the applicable reduced or zero rate). If they raise invoices in September without VAT, they will owe the 20% to HMRC out of their own margin.</p>
 
-<p>This guide covers the rolling test in full with a worked numeric example, explains exactly what taxable turnover includes and excludes, sets out the penalty regime for late registration, compares the flat rate scheme against standard accounting, and addresses the deregistration threshold and voluntary registration logic. Every figure is drawn from the locked positions in the Holloway Davies ground-truth document (§7) and verified at <a href="https://www.gov.uk/vat-registration/when-to-register" rel="noopener noreferrer">GOV.UK</a>.</p>
+<p>This guide covers the rolling test in full with a worked numeric example, explains exactly what taxable turnover includes and excludes, sets out the penalty regime for late registration, compares the flat rate scheme against standard accounting, and addresses the deregistration threshold and voluntary registration logic. Every figure here is checked against current HMRC guidance and verified at <a href="https://www.gov.uk/vat-registration/when-to-register" rel="noopener noreferrer">GOV.UK</a>.</p>
 
 <h2>VAT Rates in the UK 2026: Standard, Reduced and Zero</h2>
 
