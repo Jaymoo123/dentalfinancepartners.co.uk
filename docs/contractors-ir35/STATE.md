@@ -2,6 +2,24 @@
 
 Last updated 2026-06-17 (**DEPLOYED + LIVE**). The 7th estate site, the first BORN on the standardised grid (machinery composed before launch rather than retrofitted). Built via `docs/_engines/SITE_SPINUP.md`; **LIVE at https://www.contractortaxaccountants.co.uk** (deployment `dpl_2yVWFsReapZveud5KYwsMj8hfD9W`, 2026-06-17).
 
+## 2026-08-25 — Port-branch merge: nothing pending for this site
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **21 commits** were on
+the branch and not in `origin/main`.
+
+**All 21 are already on production, so the merge ships nothing new here.** This site's
+live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
+(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
+READY, read 2026-08-25; this is what the production alias actually points at, which a
+`/v6/deployments` listing alone would not prove), and
+`git log 435cc12e..design/property-redesign-port --oneline -- 'contractors-ir35/'` returns 0.
+Main was BEHIND production for this site, not ahead of it.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'contractors-ir35/'`.
+Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
+sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
 ## ⚡ RESUME HERE (next manager)
 
 Launch build committed (`b8856199`) and **DEPLOYED 2026-06-17**. Live verification all green: all key routes 200 (home/calculator/research/glossary/location/blog/robots/sitemap/feed/llms), homepage serves real content (not the 404 trap), sitemap base URL = production domain, security headers present, **analytics ingest confirmed (21 web_events rows under site_key `contractors-ir35` → SERVICE_ROLE env set, /admin/analytics + estate console connected)**, an01 browser-pass ALL GREEN. Pre-deploy: build 153 pages green, vitest 39/39, spinup 12 PASS/0 GAP.

@@ -10,6 +10,18 @@ brand-agnostic (zero brand-name mentions) until then. Phases 0-5 complete on
 registration, 5 calculators + 2 research assets + 4 pillars + 3 commercial
 hubs. Phase 6 approved by owner 2026-07-28.
 
+## 2026-08-25 — Port-branch merge: 22 commits now in main, site not deployed
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **22 commits** were on
+the branch and not in `origin/main`; they are now in main.
+
+This site has **no Vercel project** (verified 2026-08-25 by enumerating
+`GET /v9/projects`: no project has rootDirectory `divorce-finances/web`), so nothing is
+deployed and nothing ships. The commits land at whatever deploy G1 eventually triggers.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'divorce-finances/'`.
+
 ## Identity
 
 - site_key `divorce-finances` | placeholder display name **TBD** | placeholder domain `www.placeholder-divorce-domain.example`

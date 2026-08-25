@@ -30,6 +30,18 @@ static pages); 4 posts with `metaDescription` over 160 chars trimmed; nurture
 confirmed fail-closed without `CRON_SECRET`. Full detail and G1 runbook:
 `docs/wills-probate/PHASE6_G1_RUNBOOK_2026-08-04.md`.
 
+## 2026-08-25 — Port-branch merge: 29 commits now in main, site not deployed
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **29 commits** were on
+the branch and not in `origin/main`; they are now in main.
+
+This site has **no Vercel project** (verified 2026-08-25 by enumerating
+`GET /v9/projects`: no project has rootDirectory `wills-probate/web`), so nothing is
+deployed and nothing ships. The commits land at whatever deploy G1 eventually triggers.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'wills-probate/'`.
+
 ## Identity
 
 - site_key `wills-probate` | placeholder display name **"Probate Compass"** | placeholder domain `www.probate-compass-placeholder.co.uk`

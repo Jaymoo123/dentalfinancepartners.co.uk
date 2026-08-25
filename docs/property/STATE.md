@@ -20,6 +20,24 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-08-25 — Port-branch merge: nothing pending for this site
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **183 commits** were on
+the branch and not in `origin/main`.
+
+**All 183 are already on production, so the merge ships nothing new here.** This site's
+live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
+(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
+READY, read 2026-08-25; this is what the production alias actually points at, which a
+`/v6/deployments` listing alone would not prove), and
+`git log 435cc12e..design/property-redesign-port --oneline -- 'Property/'` returns 0.
+Main was BEHIND production for this site, not ahead of it.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'Property/'`.
+Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
+sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
 ## 0.09 Growth diagnosis — READ BEFORE PLANNING GROWTH WORK (2026-08-16)
 
 **[`RESEARCH_2026-08-16.md`](RESEARCH_2026-08-16.md)** — fresh-pull diagnosis of what actually drives (and does not drive) rankings here. Headlines: **Bing is 67% of search clicks** (4,280 vs 1,655 over 88d) and its CTR-by-position curve is steep while Google's is flat, so measure on Bing; **Google +76.1% / Bing +52.7%** clicks 28d-over-28d, the site is compounding, not stalled; **every on-page lever tested came back null** (internal links, word count, H2s/tables, title-term match, page type, H1 match, competition density), including a natural experiment where our BTL mortgage calculator has effectively the same H1 and length as uklandlordtax's and sits at position 85 to their 1. The head-asset premise is therefore unproven, and the strategy doc's ~3,500-word teardown standard contradicts what the winning pages do. Technical foundation audited clean (0 canonical/title/description/sitemap/orphan/redirect-chain defects); 6 small live defects listed in §3; the 19.07 MB deployability "emergency" is **not live** (largest response 0.81 MB, 23x under). Also carries the triaged tail build list (24 clear / 86 to triage / 22 covered) and five corrections made mid-session with the parser-vs-API lesson behind them.
