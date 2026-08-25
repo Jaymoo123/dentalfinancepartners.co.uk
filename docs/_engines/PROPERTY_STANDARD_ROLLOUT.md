@@ -537,7 +537,7 @@ Every animation gated behind `@media (prefers-reduced-motion: no-preference)` AN
 
 ### A.8 Accessibility floors (hard, measured)
 
-- 4.5:1 contrast for ALL text including 11px fine print and 14px bold. slate-500 (4.76:1) never slate-400 (2.51:1) on light grounds.
+- 4.5:1 contrast for ALL text including 11px fine print and 14px bold. slate-500 (4.76:1) never slate-400 (2.56:1) on light grounds. (slate-400 was printed here as 2.51 until 2026-08-25; the true value is 2.5640. The rule is unchanged either way, since both are far under the 4.5 floor, but the number is now the one the instrument asserts.)
 - Known failure values to avoid on white: primary-400-tick ~1.9:1 (pass `tickClassName` at 600-level, 4.54:1); amber-600 3.19:1 (use amber-700, 5.02:1). Penalty ramp locked at amber-700 / orange-700 / red-600 / red-800 (5.02 / 5.18 / 4.83 / 8.31).
 - Touch targets ≥44px, ≥48px primary (btnPrimary min-h-12, burger h-12 w-12, `touch-manipulation` on both).
 - Wordmark aria-label built from the visible strings (WCAG 2.5.3). Footer links `py-0.5` for a 24px hit area at 12px visual gap (WCAG 2.5.8).
