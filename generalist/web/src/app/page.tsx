@@ -21,9 +21,9 @@ import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
 
 const activeCta = getActiveCta(niche);
 
-const META_TITLE = "Small Business Accountants UK | Holloway Davies";
+const META_TITLE = "Fixed-Fee Small Business Accountants UK | Holloway Davies";
 const META_DESC =
-  "Fixed-fee accountants for UK small businesses: limited companies, sole traders and contractors. Corporation tax, VAT, payroll, self assessment and MTD.";
+  "Fixed-fee online accountants for UK small businesses: limited companies, sole traders and contractors. Corporation tax, VAT, payroll, self assessment and MTD.";
 
 export const metadata: Metadata = {
   // `absolute` opts out of the layout title template so the brand is not doubled.
@@ -76,6 +76,19 @@ const segments = [
     href: "/fundamentals/limited-company-vs-sole-trader",
     linkLabel: "Sole trader vs limited company",
   },
+];
+
+// Trade and industry guides — the head-family demand is heavily trade-flavoured
+// ("plumbers accountant", "vet accountant", "accountant for cis contractors"...)
+// and lands on these blog pages at positions 11-35. The homepage names the
+// trades it serves and passes equity down; the guides carry the depth.
+const tradeGuides = [
+  { label: "Plumbers and heating engineers", href: "/blog/sole-trader-and-self-employment/accountant-for-plumbers-uk" },
+  { label: "Construction subcontractors (CIS)", href: "/blog/payroll-and-paye/accountant-for-construction-subcontractors-cis" },
+  { label: "Vets and veterinary practices", href: "/blog/limited-company-tax/accountant-for-vets-uk" },
+  { label: "Dentists", href: "/blog/limited-company-tax/accountants-for-dentists" },
+  { label: "Forex and day traders", href: "/blog/sole-trader-and-self-employment/accountant-for-forex-traders-uk" },
+  { label: "Photographers", href: "/blog/sole-trader-and-self-employment/accountant-for-photographers-uk" },
 ];
 
 // What we handle — entity coverage with an internal pillar link and an
@@ -312,7 +325,7 @@ export default function HomePage() {
               UK small business accountants
             </p>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-neutral-900 leading-[1.05] sm:text-5xl lg:text-6xl text-balance">
-              Small business accountants{" "}
+              Fixed-fee small business accountants{" "}
               <span className="text-orange-500">
                 for UK limited companies, sole traders and contractors.
               </span>
@@ -430,6 +443,29 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-10 border-t border-neutral-200 pt-7">
+                <h3 className="text-lg font-semibold tracking-tight text-neutral-900">
+                  Accountants by trade and industry
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-600 max-w-xl">
+                  Every trade has its own tax quirks: CIS deductions for
+                  subcontractors, equipment allowances for photographers, badges of
+                  trade for forex traders. We publish dedicated guides for the
+                  industries we work with most.
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+                  {tradeGuides.map((g) => (
+                    <li key={g.href}>
+                      <Link
+                        href={g.href}
+                        className="font-medium text-orange-600 hover:text-orange-700"
+                      >
+                        {g.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -597,6 +633,16 @@ export default function HomePage() {
                 we do not bill by the hour. The engagement letter is plain English, and
                 you can leave with reasonable notice. One-off projects outside the agreed
                 scope are always quoted before any work starts.
+              </p>
+              <p>
+                Wondering what accountants charge across the market?{" "}
+                <Link
+                  href="/blog/bookkeeping-and-compliance/accounting-fee-2025-26-uk-business-guide"
+                  className="font-medium text-orange-600 hover:text-orange-700"
+                >
+                  Read our guide to UK accountancy fees for 2025/26
+                </Link>
+                .
               </p>
             </div>
           </div>

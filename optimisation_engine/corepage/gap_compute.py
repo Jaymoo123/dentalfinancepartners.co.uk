@@ -15,19 +15,18 @@ from typing import Any
 COMMERCIAL_SCHEMA = ["LocalBusiness", "AccountingService", "Service",
                      "BreadcrumbList", "AggregateRating", "Review", "Organization", "FAQPage"]
 
-HEAD_TOKENS = ["property accountant", "property tax accountant", "landlord accountant",
-               "buy to let accountant", "property accountancy"]
-
-
 def _median(values: list[float]) -> float:
     vals = [v for v in values if v is not None]
     return round(statistics.median(vals), 1) if vals else 0.0
 
 
-def _has_head_token(text: str) -> str | None:
+def _has_head_token(text: str, head_terms: list[str]) -> str | None:
+    # Was a Property-hardcoded HEAD_TOKENS list, which false-flagged every other
+    # site's title/H1 as keywordless (found on the generalist run 2026-08-25).
+    # Use the site's own head_terms from CORE_PAGES config.
     t = (text or "").lower()
-    for tok in HEAD_TOKENS:
-        if tok in t:
+    for tok in head_terms:
+        if tok.lower() in t:
             return tok
     return None
 
@@ -59,8 +58,9 @@ def compute_gaps(our: dict | None, competitors: list[dict], cfg: dict) -> dict:
     }
 
     # Entity/keyword presence in our title + H1 (the headline gap).
-    title_token = _has_head_token(our.get("title", "")) if ours_ok else None
-    h1_token = _has_head_token(our.get("h1", "")) if ours_ok else None
+    head_terms = list(cfg.get("head_terms", []) or [])
+    title_token = _has_head_token(our.get("title", ""), head_terms) if ours_ok else None
+    h1_token = _has_head_token(our.get("h1", ""), head_terms) if ours_ok else None
 
     # Trust/component signals competitors lean on.
     comp_components: dict[str, int] = {}

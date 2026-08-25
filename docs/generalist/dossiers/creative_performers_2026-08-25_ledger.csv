@@ -1,0 +1,220 @@
+keyword,vol,sources,domains,bucket,detail
+a band,1900,comp,1,excluded,EX-BRAND brand/ambiguous noise
+accountant entertainment industry,110,comp,3,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+accountant for actors,90,comp,5,assigned,P-ACT
+accountant for influencer,170,comp,5,assigned,P-CRE
+accountant for influencers wimbledon,0,gsc,0,assigned,P-CRE
+accountant for musicians,50,comp,5,assigned,P-MUS
+accountants for actors,90,comp,5,assigned,P-ACT
+accountants for content creators,70,comp,6,assigned,P-CRE
+accountants for creatives,140,comp,6,assigned,P-ART
+accountants for influencers,170,comp+pool,4,assigned,P-CRE
+accountants for music industry,70,comp,6,assigned,P-MUS
+accountants for musicians,50,comp,6,assigned,P-MUS
+accounting for creatives,140,comp,5,assigned,P-ART
+accounting for music industry,70,comp,5,assigned,P-MUS
+accounting for musicians,50,comp,6,assigned,P-MUS
+accounting for performers,0,gsc,0,assigned,P-ACT
+accounting in entertainment,110,comp,3,assigned,P-ACT
+accounting in entertainment industry,110,comp,3,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+accounting in music industry,70,comp,5,assigned,P-MUS
+accounting in the music industry,70,comp,6,assigned,P-MUS
+actor accountant,90,comp,1,assigned,P-ACT
+actor tax,110,comp,3,assigned,P-ACT
+actors accountant,90,comp,5,assigned,P-ACT
+actors accountants,90,comp,5,assigned,P-ACT
+actors tax,110,comp,3,assigned,P-ACT
+actors taxes,110,comp,3,assigned,P-ACT
+at music group,260,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+average income of a photographer,110,comp,1,excluded,EX-CAREER earnings/career content
+average photographer salary,110,comp,1,excluded,EX-CAREER earnings/career content
+average salaries for photographers,110,comp,1,excluded,EX-CAREER earnings/career content
+average salary of a photographer,110,comp,1,excluded,EX-CAREER earnings/career content
+average salary photographer,90,comp,1,excluded,EX-CAREER earnings/career content
+band,18100,comp,1,excluded,EX-BRAND brand/ambiguous noise
+band 1,1000,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band advisory group,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band application,590,comp,1,excluded,EX-BRAND brand/ambiguous noise
+band d,260,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band group,90,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band log in,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band login,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band management,70,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+band manager,90,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band site,170,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+band-band,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+business entertainment,110,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+business entertainment expense,90,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+business entertainment expenses,90,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+business entertainment vat,170,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+business for creatives,170,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+can i claim vat on staff entertainment,90,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+can vat be claimed on staff entertainment,90,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+can you claim vat on staff entertainment,260,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+care band,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+client band,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+client entertainment,140,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+client entertainment vat,320,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+content creator accountant,70,comp,6,assigned,P-CRE
+content creator accountants,70,comp,6,assigned,P-CRE
+corporate band,90,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+creative consultancy,90,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+creative funding,90,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+creative industries tax relief,110,comp,1,assigned,P-REL
+creative industry accountants near me,0,gsc,0,assigned,P-ART
+creative industry tax relief,110,comp,1,assigned,P-REL
+creative industry tax reliefs,110,comp,1,assigned,P-REL
+creative tax relief,70,comp,2,assigned,P-REL
+creative tax reliefs,70,comp,1,assigned,P-REL
+do influencers pay tax,90,comp+pool,3,assigned,P-CRE
+do influencers pay taxes,90,comp+pool,3,assigned,P-CRE
+do youtubers pay tax,90,comp+pool,3,assigned,P-CRE
+do youtubers pay taxes,90,comp+pool,3,assigned,P-CRE
+entertainment accountant,110,comp,4,assigned,P-ACT
+entertainment accountants,110,comp,5,assigned,P-ACT
+entertainment accounting,110,comp,3,assigned,P-ACT
+entertainment and media,170,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+entertainment and media law,110,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+entertainment business expense,90,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+entertainment industries,260,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+entertainment industry,260,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+entertainment industry accountants,110,comp,4,assigned,P-ACT
+entertainment industry accounting,90,comp,3,assigned,P-ACT
+entertainment industry sectors,260,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+entertainment media,170,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+entertainment rights,320,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+entertainment vat,210,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+finance jobs music industry,140,comp,1,excluded,EX-CAREER earnings/career content
+fine bands,170,comp,1,excluded,EX-BRAND brand/ambiguous noise
+group band,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+how much can a photographer earn,880,comp,1,excluded,EX-CAREER earnings/career content
+how much can a wedding photographer make,170,comp,1,excluded,EX-CAREER earnings/career content
+how much can photographers make,880,comp,1,excluded,EX-CAREER earnings/career content
+how much do a photographer make a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much do influencers make uk,110,comp+pool,1,excluded,EX-CAREER earnings/career content
+how much do photographer get paid,880,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers earn,880,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers earn a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers earn uk,90,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers get paid,880,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers make,880,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers make a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers make for a wedding,170,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers make in a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much do photographers make uk,90,comp,1,excluded,EX-CAREER earnings/career content
+how much do wedding photographers earn,170,comp,1,excluded,EX-CAREER earnings/career content
+how much do wedding photographers make,170,comp,1,excluded,EX-CAREER earnings/career content
+how much does a photographer earn,880,comp,1,excluded,EX-CAREER earnings/career content
+how much does a photographer earn a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much does a photographer make,880,comp,1,excluded,EX-CAREER earnings/career content
+how much does a photographer make a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much does a photographer make for a wedding,170,comp,1,excluded,EX-CAREER earnings/career content
+how much does a photographer make uk,90,comp,1,excluded,EX-CAREER earnings/career content
+how much does a wedding photographer earn,170,comp,1,excluded,EX-CAREER earnings/career content
+how much does a wedding photographer make,170,comp,1,excluded,EX-CAREER earnings/career content
+how much does photographer earn,880,comp,1,excluded,EX-CAREER earnings/career content
+how much does photographer make,880,comp,1,excluded,EX-CAREER earnings/career content
+how much does photographer make a year,70,comp,1,excluded,EX-CAREER earnings/career content
+how much does wedding photographer make,170,comp,1,excluded,EX-CAREER earnings/career content
+how much does wedding photographers make,170,comp,1,excluded,EX-CAREER earnings/career content
+how much money do photographers earn,90,comp,1,excluded,EX-CAREER earnings/career content
+how much money do photographers make,90,comp,1,excluded,EX-CAREER earnings/career content
+how much money does a photographer make,90,comp,1,excluded,EX-CAREER earnings/career content
+how much money does photographers make,90,comp,1,excluded,EX-CAREER earnings/career content
+income from royalties,50,comp,1,assigned,P-ROY
+industry creative ltd,50,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+influencers pay,50,comp,1,assigned,P-CRE
+is client entertainment tax deductible,210,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+is entertainment tax deductible,50,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+is staff entertainment tax deductible,140,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+linkedin band,140,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+london music management companies,50,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+manufacture band,70,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+media & entertainment,170,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+media & entertainment consulting,70,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media and entertainment,170,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media and entertainment consulting,50,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media and entertainment consulting firms,50,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media and entertainment law,140,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media as entertainment,170,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media entertainment,50,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+media entertainment consulting,70,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+media for entertainment,170,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+music accountants,140,comp,6,assigned,P-MUS
+music band,1000,comp,1,excluded,EX-BRAND brand/ambiguous noise
+music company london,320,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+music industry accountants,70,comp,6,assigned,P-MUS
+music industry accounting,70,comp,6,assigned,P-MUS
+music industry consultants,50,comp,2,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+music management companies in london,50,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+music management company london,50,comp,1,excluded,EX-OFFNICHE management/law/consulting/industry-definition
+music royalties company,50,comp,1,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
+music royalty co,50,comp,1,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
+music royalty companies,50,comp,1,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
+music royalty company,50,comp,1,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
+musical band,90,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+musician accountant,140,comp,6,assigned,P-MUS
+musician accountants,110,comp,6,assigned,P-MUS
+musician group,480,comp,1,excluded,EX-BRAND brand/ambiguous noise
+onlyfans accountants,70,comp+pool,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans accounting,0,pool,0,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans creator vat,0,bing,0,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans earnings uk,210,comp,1,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans tax,70,comp,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans tax id number,90,comp,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans tax id number uk,140,comp,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans taxes,70,comp,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+onlyfans uk how to pay tax,0,bing,0,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+photographer average salary,110,comp,1,excluded,EX-CAREER earnings/career content
+photographer average salary uk,50,comp,1,excluded,EX-CAREER earnings/career content
+photographer income,390,comp,1,excluded,EX-CAREER earnings/career content
+photographer pay,390,comp,1,excluded,EX-CAREER earnings/career content
+photographer pay rate,390,comp,1,excluded,EX-CAREER earnings/career content
+photographer salaries,390,comp,1,excluded,EX-CAREER earnings/career content
+photographer salary uk,140,comp,1,excluded,EX-CAREER earnings/career content
+photographer uk salary,10,comp,1,excluded,EX-CAREER earnings/career content
+photographer wage,40,comp,1,excluded,EX-CAREER earnings/career content
+photographers average salary,110,comp,1,excluded,EX-CAREER earnings/career content
+photographers salary uk,140,comp,1,excluded,EX-CAREER earnings/career content
+photography earnings,110,comp,1,excluded,EX-CAREER earnings/career content
+photography income,110,comp,1,excluded,EX-CAREER earnings/career content
+photography pay rate,110,comp,1,excluded,EX-CAREER earnings/career content
+photography salary,110,comp,1,excluded,EX-CAREER earnings/career content
+photography wage,110,comp,1,excluded,EX-CAREER earnings/career content
+photography wages,110,comp,1,excluded,EX-CAREER earnings/career content
+profile band,170,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+royalties business,70,comp,1,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
+royalties studio,390,comp,1,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
+royalty accounting,50,comp,1,assigned,P-ROY
+royalty pro,50,comp,1,excluded,EX-BRAND brand/ambiguous noise
+salary for a photographer,390,comp,1,excluded,EX-CAREER earnings/career content
+salary for wedding photographers,110,comp,1,excluded,EX-CAREER earnings/career content
+salary of a photographer,390,comp,1,excluded,EX-CAREER earnings/career content
+salary of a wedding photographer,110,comp,1,excluded,EX-CAREER earnings/career content
+salary of photographers,390,comp,1,excluded,EX-CAREER earnings/career content
+tax for actors,110,comp,2,assigned,P-ACT
+tax id number onlyfans,110,comp,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+tax id number uk onlyfans,50,comp,2,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+taxes for actors,110,comp,3,assigned,P-ACT
+the band trust,50,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+theatre accountants,70,comp,4,assigned,P-ACT
+theatre accounts,110,comp,3,assigned,P-ACT
+tiktok accountant,40,comp,2,assigned,P-CRE
+vat business entertainment,170,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+vat entertainment,210,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+vat for onlyfans in the uk for self employed,0,bing,0,deferred,"row-38 OnlyFans, separate niche (C1 CONDITIONAL)"
+vat on business entertainment,170,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+vat on employee entertainment,320,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+vat on entertainment,210,comp,1,deferred,"business-entertaining expenses = generalist core, not this cluster"
+vat on royalties,50,comp,2,assigned,P-ROY
+vat on royalty,50,comp,1,assigned,P-ROY
+vat on royalty payments,50,comp,1,assigned,P-ROY
+wallsman creative,110,comp,2,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+we are band,50,comp,1,excluded,EX-BRAND brand/ambiguous noise (weareband/at-music navigational)
+wedding photographer earnings,110,comp,1,excluded,EX-CAREER earnings/career content
+wedding photographer income,110,comp,1,excluded,EX-CAREER earnings/career content
+wedding photographer salary,110,comp,1,excluded,EX-CAREER earnings/career content
+wedding photographer salary uk,40,comp,1,excluded,EX-CAREER earnings/career content
+wedding photographers salary,110,comp,1,excluded,EX-CAREER earnings/career content
+what band is,480,comp,1,excluded,EX-BRAND brand/ambiguous noise
+y royalties,140,comp,3,excluded,"EX-OFFNICHE royalty-collection navigation, not tax"
