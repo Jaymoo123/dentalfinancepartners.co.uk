@@ -1,13 +1,13 @@
 ---
-title: "Can I Use the Cash Basis If My Sole Trader Business Has a Loss?"
+title: "Cash Basis Losses: Every Sole Trader Relief for 2025/26"
 slug: "cash-basis-sole-trader-loss"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/cash-basis-sole-trader-loss"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Cash basis sole trader loss: can you still use it? 2025/26"
-metaDescription: "Yes, you can use the cash basis even with a loss. But the interaction with loss relief rules matters. Here's how it works for sole traders in 2025/26."
+metaTitle: "Cash Basis Losses: Sole Trader Loss Relief 2025/26"
+metaDescription: "Cash basis trading losses can be set against other income, including pension income, or carried back. The 2025/26 options, the relief cap and a worked example."
 altText: "Sole trader reviewing business accounts on a laptop with a calculator and paperwork on a desk in a UK home office"
 image: "/blog/cash-basis-sole-trader-loss.jpg"
 imageCredit:
@@ -15,140 +15,134 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@printexstar"
   sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-paper-money-11624813/"
   source: "Pexels"
-h1: "Can I Use the Cash Basis If My Sole Trader Business Has a Loss?"
-summary: "Yes, you can use the cash basis if your sole trader business makes a loss. But the accounting method affects how you claim loss relief. This article explains the rules for 2025/26."
+h1: "Cash Basis Losses for Sole Traders: Every Relief Option in 2025/26"
+summary: "A cash basis trading loss now carries the same relief options as an accruals loss: sideways against your general income (including employment and pension income), carry back 12 months, early years relief, terminal loss relief, or carry forward. The old restriction that trapped cash basis losses in the same trade was removed from 6 April 2024. We set out each option for 2025/26, the £50,000 or 25% relief cap, and a worked loss-then-recovery example."
 schema: ""
 faqs:
-  - question: "Can I claim loss relief on a cash basis loss against my employed income?"
-    answer: "Yes. Under s.64 ITA 2007, you can offset a sole trader loss against your total income for the same tax year or the previous tax year. This includes employment income, pension income, and investment income. The cash basis does not prevent this claim. You must claim within 12 months of the 31 January following the tax year."
-  - question: "Does using the cash basis affect how much loss I can carry forward?"
-    answer: "No. The loss carried forward is simply the loss figure calculated under the cash basis. You carry it forward against future profits from the same trade. The accounting method does not change the carry forward rules. The only difference is the timing of when income and expenses are recognised, which affects the loss figure itself."
-  - question: "Can I switch from cash basis to accruals basis in a loss year?"
-    answer: "Yes. You can opt out of the cash basis on your self assessment return for any year. Since 2024/25 there is no turnover limit on cash basis eligibility, so you can choose either method each year regardless of your turnover. Switching in a loss year might be beneficial if the accruals basis gives you a smaller loss or a profit, depending on your other income. But once you opt out, you must generally stay on accruals for at least one tax year."
-  - question: "What if my cash basis loss is from buying equipment?"
-    answer: "That is fine. Under the cash basis, the full cost of plant and machinery is deductible as an expense in the year you pay for it. This includes vans, tools, computers, and machinery. The resulting loss is treated the same as any other trading loss. You can claim loss relief against it, including sideways relief or carry forward."
+  - question: "Can cash basis losses be used against pension income?"
+    answer: "Yes. Sideways relief under s.64 ITA 2007 sets a trading loss against your total income for the same tax year or the previous tax year, and total income includes pension income (state, workplace and private pensions are all taxable income), employment income and rental profits. Since 6 April 2024 this claim is fully available for cash basis losses; the old cash basis restriction in ITA 2007 s.74E was repealed by Finance Act 2024. Claim by 31 January 2028 for a 2025/26 loss."
+  - question: "Can I carry a cash basis loss back to the previous tax year?"
+    answer: "Yes. The s.64 claim lets you set the loss against your total income of the previous tax year instead of, or as well as, the current year. A 2025/26 loss can be carried back against 2024/25 income, generating a repayment of tax already paid for that year. If the loss arose in your first four tax years of trading, early trade loss relief under s.72 ITA 2007 reaches back further, up to three years."
+  - question: "Is there a limit on how much loss relief I can claim?"
+    answer: "Sideways relief and early trade loss relief are subject to the general limit on income tax reliefs in ITA 2007 s.24A: the greater of £50,000 or 25% of your adjusted total income for the year of the claim. The cap does not apply to losses set against profits of the same trade, so carry forward relief and terminal loss relief are uncapped, and neither is a loss set against same-trade profits in a carry-back year. Most sole trader losses sit well below £50,000 and are unaffected."
+  - question: "Do I have to switch to accruals accounting to get loss relief?"
+    answer: "No. Since 2024/25 the relief options for a cash basis loss and an accruals loss are identical. The accounting basis can change the size and timing of the loss, because income counts when received and expenses when paid, but once the loss figure is computed the relief rules are the same. Advice to elect out of the cash basis purely to preserve loss relief expired in April 2024."
+  - question: "What if my cash basis loss comes from buying equipment or a van?"
+    answer: "Under the cash basis the full cost of plant, machinery and vans is deducted as an expense in the year you pay for it (s.33A ITTOIA 2005), so a heavy investment year often produces a loss. That loss is an ordinary trading loss with every relief option available. Cars are the exception: a car's purchase price is never a cash basis expense; you claim capital allowances on the car or approved mileage instead."
 keyTakeaways:
-  - "The cash basis is the default accounting method for sole traders from 2024/25, with no turnover limit, and can be used in any year including loss-making years."
-  - "Sole traders on the cash basis can claim sideways loss relief under s.64 ITA 2007, offsetting a trading loss against total income in the same or the previous tax year."
-  - "For a 2025/26 trading loss, the deadline to claim sideways relief is 31 January 2028; missing that deadline means the relief is permanently lost."
-  - "Under the cash basis, plant and machinery is deducted in full in the year of payment, not through capital allowances, producing larger losses in heavy-investment years."
-  - "Early trade loss relief under s.72 ITA 2007 lets losses in the first four tax years of trading offset total income from the three preceding years."
-  - "From April 2026, sole traders with qualifying income over £50,000 must use MTD-compatible software; the threshold drops to £30,000 from April 2027 and £20,000 from April 2028."
+  - "From 2024/25 a cash basis trading loss has the same relief options as an accruals loss: the restriction in ITA 2007 s.74E that limited cash basis losses to carry forward was repealed by Finance Act 2024 from 6 April 2024."
+  - "Sideways relief under s.64 ITA 2007 sets a 2025/26 loss against total income of 2025/26 or 2024/25, including employment income, pension income and rental profits; claim by 31 January 2028."
+  - "Sideways and early years claims are capped at the greater of £50,000 or 25% of adjusted total income (ITA 2007 s.24A); carry forward and terminal loss relief against the same trade are uncapped."
+  - "Carrying a loss forward against future profits of the same trade relieves both income tax and Class 4 NIC, while sideways relief against employment or pension income relieves income tax only, so the cheaper-looking option is not always the richer one."
+  - "Equipment and van purchases are deducted in full when paid under the cash basis (s.33A ITTOIA 2005), so investment-heavy years commonly create relievable losses; cars are excluded and take capital allowances or mileage instead."
+  - "Early trade loss relief (s.72 ITA 2007) covers losses in the first four tax years, carried back up to three years, and terminal loss relief (s.89 ITA 2007) covers the final 12 months of trading against the same trade's prior profits."
 ---
 
-<p>If your sole trader business makes a loss, you can still use the cash basis to report it. The cash basis is not restricted to profitable years. But the interaction between the cash basis and loss relief rules is where things get specific. Get it wrong and you could miss out on tax relief worth thousands of pounds.</p>
+<h2>The Rule That Changed: Cash Basis Losses Are No Longer Trapped</h2>
 
-<p>This article explains how the cash basis works with losses for the 2025/26 tax year, which loss relief options are available, and what you need to tell HMRC.</p>
+<p>Before 6 April 2024, a sole trader using the cash basis had one option for a trading loss: carry it forward against future profits of the same trade. Sideways relief against other income and carry back were blocked by ITA 2007 s.74E. That section was repealed by Finance Act 2024, effective from the 2024/25 tax year, at the same time as the cash basis became the default method with no turnover limit.</p>
 
-<h2>What Is the Cash Basis for Sole Traders?</h2>
+<p>So for 2025/26 the position is simple: a cash basis loss carries exactly the same relief menu as an accruals loss. The restriction is gone, and the planning options are meaningfully better.</p>
 
-<p>The cash basis is a simplified accounting method for sole traders and partnerships. You record income when you actually receive it and expenses when you actually pay them. No accruals, no debtors, no creditors. It is the default method for sole traders from 2024/25 onwards, with no turnover limit; you only move to accruals if you actively opt out.</p>
-
-<p>Under the traditional accruals basis, you record income when you invoice it and expenses when you incur them, regardless of when cash changes hands. The cash basis is simpler, but it can produce different profit or loss figures in any given year.</p>
-
-<p>For a sole trader running a consultancy in Manchester's Northern Quarter, the difference is clear. If you issue a £5,000 invoice in March 2026 but the client pays in May 2026, the cash basis records that income in 2026/27. The accruals basis records it in 2025/26. That timing difference matters when you are trying to work out whether you have a loss.</p>
-
-<h2>Can You Use the Cash Basis With a Loss?</h2>
-
-<p>Yes. There is no rule that says you must switch to accruals accounting just because you have made a loss. HMRC accepts the cash basis for loss-making years in exactly the same way as for profitable years.</p>
-
-<p>However, you need to be careful about one thing. If your business has made losses in several consecutive years, HMRC may question whether you are genuinely trading. That is a separate issue from the accounting method. But if you are trading with a genuine intention to make a profit, and the losses are temporary or part of a startup phase, the cash basis is fine.</p>
-
-<p>We see this most often with new sole traders in their first year. A freelance graphic designer in Shoreditch might spend £8,000 on a new MacBook, software licences, and website costs before earning a single invoice. That first year loss is perfectly normal, and the cash basis handles it cleanly.</p>
-
-<h2>How Loss Relief Works Under the Cash Basis</h2>
-
-<p>The loss relief rules work the same way regardless of whether you use the cash basis or accruals basis. The loss figure itself is calculated differently, but once you have that figure, the relief options are identical.</p>
-
-<p>Your main options for a sole trader loss in 2025/26 are:</p>
+<p>Your options for a 2025/26 cash basis loss:</p>
 
 <ul>
-<li><strong>Carry the loss forward</strong> against future profits from the same trade. This is automatic. You do not need to claim it. The loss is deducted from your first available profits in later years.</li>
-<li><strong>Claim loss relief against other income</strong> (also called sideways relief or s.64 ITA 2007). You offset the loss against your total income for the same tax year, or the previous tax year. This can generate a tax refund.</li>
-<li><strong>Claim early trade loss relief</strong> (s.72 ITA 2007). If your loss arises in the first four tax years of trading, you can offset it against your total income in the three years before the trade started. This is useful for new businesses.</li>
-<li><strong>Claim terminal loss relief</strong> if you cease trading. The loss in your final 12 months can be offset against profits from the same trade in the previous three tax years.</li>
+<li><strong>Sideways relief (s.64 ITA 2007):</strong> set the loss against your total income of 2025/26, or of 2024/25, or both. Total income includes employment income, pension income and rental profits.</li>
+<li><strong>Carry back:</strong> the same s.64 claim pointed at the previous tax year, generating a repayment of tax already paid.</li>
+<li><strong>Early trade loss relief (s.72 ITA 2007):</strong> a loss in any of your first four tax years of trading can be carried back against your total income of the three preceding years, earliest year first.</li>
+<li><strong>Terminal loss relief (s.89 ITA 2007):</strong> a loss in your final 12 months of trading set against profits of the same trade in the final year and the three years before it.</li>
+<li><strong>Carry forward:</strong> automatic if you claim nothing else; the loss reduces your first available profits from the same trade.</li>
 </ul>
 
-<p>Each option has different rules about timing, amounts, and whether you can restrict the claim. The cash basis does not change any of these rules.</p>
+<h2>Can Cash Basis Losses Be Used Against Pension Income?</h2>
 
-<h3>Worked Example: Cash Basis Loss Relief</h3>
+<p>Yes. Semi-retired traders with pension income feel this most. Sideways relief works against your <em>total income</em>, and pension income (state pension, workplace pensions, private pension drawdown) is taxable income like any other. A part-time consultant in Norwich drawing £18,000 of pension while running a trade at a £6,000 cash basis loss can set that loss against the pension income and recover tax paid through PAYE on the pension.</p>
 
-<p>Let us use a real example. A self-employed plumber in Leeds runs a sole trader business. In 2025/26, his cash basis accounts show:</p>
+<p>The same applies to employment income and rental profits. Until April 2024 this exact claim was barred for cash basis users; from 2024/25 onwards it is fully available.</p>
+
+<h2>The Cap: £50,000 or 25% of Income</h2>
+
+<p>Sideways relief and early trade loss relief are subject to the general limit on income tax reliefs in ITA 2007 s.24A. The limit is the greater of <strong>£50,000</strong> or <strong>25% of your adjusted total income</strong> for the year the relief is claimed against (HMRC helpsheet HS204). Adjusted total income is broadly total income plus charity payroll giving, less gross personal pension contributions.</p>
+
+<p>What the cap does and does not touch:</p>
 
 <ul>
-<li>Income received: £28,000</li>
-<li>Expenses paid: £36,400</li>
-<li>Loss: £8,400</li>
+<li><strong>Capped:</strong> trade loss relief against general income (s.64), early trade loss relief (s.72), and a handful of other reliefs claimed alongside them.</li>
+<li><strong>Not capped:</strong> losses set against profits of the same trade. That means carry forward relief, terminal loss relief, and the portion of a carried-back loss that covers profits of the same trade in the earlier year.</li>
 </ul>
 
-<p>He also has a part-time employed job earning £22,000 per year. He can claim sideways relief under s.64 ITA 2007 to offset the £8,400 loss against his employment income for 2025/26. That reduces his total income to £13,600. His personal allowance of £12,570 means he only pays tax on £1,030. He gets a refund of the tax already deducted from his employment pay.</p>
+<p>In practice most sole trader losses are nowhere near £50,000 and the cap never bites. It matters when a large loss (say a first-year loss with heavy equipment spend) meets a high other income, for example a trader in Brighton with £180,000 of employment income and a £70,000 startup loss: 25% of income is £45,000, so the cap is £50,000 and £20,000 of the loss must take another route, typically carry forward.</p>
 
-<p>If he had used the accruals basis, his loss might have been different. Perhaps he invoiced £4,000 in March 2026 that was not paid until May 2026. Under accruals, that £4,000 counts as income in 2025/26, reducing the loss to £4,400. Under cash basis, it is not income until 2026/27, so the loss stays at £8,400. The cash basis loss is larger in this case, giving him more relief now.</p>
+<h2>Worked Example: Loss Year, Then Recovery Year</h2>
 
-<p>That is the key point. The cash basis can produce a larger loss in some years and a smaller loss in others, depending on the timing of receipts and payments.</p>
+<p>Rob is a self-employed carpet fitter in Coventry, on the default cash basis, with a part-time employed job paying £26,000 a year.</p>
 
-<h2>Cash Basis Loss and Capital Allowances</h2>
+<p><strong>2025/26 (loss year).</strong> His cash basis figures:</p>
 
-<p>Under the cash basis, you cannot claim capital allowances on most assets. Instead, you deduct the full cost of plant and machinery as an expense in the year you pay for it. This includes laptops, tools, vans, and equipment.</p>
-
-<p>If you buy a van for £18,000 in 2025/26, you deduct the full £18,000 as an expense in that year under the cash basis. Under accruals, you would claim capital allowances, typically Annual Investment Allowance at 100% for the first £1,000,000, but the principle is the same. The difference is that capital allowances require a specific claim on your tax return, while the cash basis just treats it as an ordinary expense.</p>
-
-<p>This means the cash basis can create larger losses in years where you invest heavily in equipment. A sole trader electrician in Birmingham's Jewellery Quarter might buy £12,000 of new tools and a £15,000 van in one year. Under the cash basis, that is £27,000 of expenses immediately. Under accruals, you might spread some of that through writing down allowances if you opted out of AIA, but most sole traders using accruals would claim AIA anyway. The net effect is often similar, but the cash basis is simpler to record.</p>
-
-<p>If your loss arises partly from asset purchases, you still get the loss relief. There is no restriction that says capital expenditure losses cannot be relieved.</p>
-
-<h2>When the Cash Basis Might Not Be Best for a Loss Year</h2>
-
-<p>There are situations where the accruals basis gives you better loss relief. If you have significant unpaid invoices at the year end, the accruals basis recognises that income in the current year. That could turn a loss into a profit, or reduce the loss, which might be beneficial if you want to use sideways relief against other income in a year when you have high earnings.</p>
-
-<p>Conversely, if you have paid expenses in advance (prepayments), the cash basis deducts them immediately. The accruals basis spreads them over the period they relate to. If you prepaid £6,000 of business insurance for 12 months in March 2026, the cash basis deducts the full £6,000 in 2025/26. Accruals would only deduct £500 (one month). The cash basis gives you a larger loss now.</p>
-
-<p>You can opt out of the cash basis if it does not suit your circumstances. You do that on your self assessment tax return by ticking the box to use accruals accounting instead. Since 2024/25 there is no turnover limit, so you can choose either method each year. You are not locked in.</p>
-
-<h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
-
-<p>From April 2026, sole traders with qualifying income over £50,000 must use MTD-compatible software and submit quarterly updates to HMRC. The cash basis is fully compatible with MTD. If you are making a loss, you still submit the same quarterly updates showing your income and expenses. The loss is carried forward or claimed through your annual declaration.</p>
-
-<p>From April 2027, the threshold drops to £30,000. From April 2028, it drops to £20,000. Most sole traders will be in MTD within three years. If you are already using the cash basis, your bookkeeping software like FreeAgent or Xero will handle the quarterly reporting automatically.</p>
-
-<p>Losses under MTD work exactly the same way as on paper. The quarterly updates are cumulative, so your year-to-date loss shows clearly. When you submit your final declaration, you make your loss relief claim.</p>
-
-<h2>What to Put on Your Self Assessment Tax Return</h2>
-
-<p>When you complete your SA100 and SA103 (self-employment pages) for 2025/26, you enter your income and expenses as usual. The tax return calculates the profit or loss automatically. If the result is a loss, you enter that figure in the loss relief boxes.</p>
-
-<p>On the SA103, there are specific boxes for:</p>
 <ul>
-<li>Loss brought forward from earlier years (box 72)</li>
-<li>Loss to carry forward to later years (box 73)</li>
-<li>Loss claimed against other income for the same year (box 74)</li>
-<li>Loss claimed against other income for the previous year (box 75)</li>
+<li>Income received: £30,000</li>
+<li>Expenses paid: £41,500 (including a £14,000 van, deducted in full when paid under s.33A ITTOIA 2005)</li>
+<li>Trading loss: £11,500</li>
 </ul>
 
-<p>You also need to complete the white space on the return or attach a separate computation explaining how the loss arose, especially if you are claiming sideways relief. HMRC may ask for evidence, so keep your records organised.</p>
+<p><strong>Option 1: sideways relief now.</strong> Rob claims s.64 against his 2025/26 total income. Employment income £26,000 less the £11,500 loss leaves £14,500. After the £12,570 personal allowance he is taxable on £1,930, so £386 of tax. PAYE will have collected roughly £2,686 on his job ((£26,000 − £12,570) × 20%), so the claim repays about <strong>£2,300</strong>. The £11,500 loss is far below the s.24A cap. Note the relief reduces income tax only; it does not touch the NIC on his employment.</p>
 
-<p>If you are claiming early trade loss relief, you complete form HS227 and submit it with your return. For terminal loss relief, use form HS227 as well.</p>
+<p><strong>Option 2: carry forward instead.</strong> In 2026/27 the trade recovers to a £24,000 profit. The loss brought forward cuts taxable trading profit to £12,500. Because it reduces trading profit, it saves both income tax at 20% and Class 4 NIC at 6% on the £11,500: £2,300 + £690 = <strong>£2,990</strong>.</p>
 
-<h2>Cash Basis Loss and Partnership Businesses</h2>
+<p>Carry forward is worth £690 more here, because relief against trading profit also relieves Class 4 NIC, while sideways relief against employment income does not. Sideways wins when you need the cash now, when future profits are uncertain, or when the carried-back or sideways year has income taxed at 40% while future profits will sit in the basic rate band. Run both before claiming; the claim, once made, quantifies how much loss is used.</p>
 
-<p>Partnerships can also use the cash basis, with no turnover limit since 2024/25. If a partnership makes a loss, each partner's share of the loss is calculated under the cash basis. Each partner then claims loss relief on their individual tax return.</p>
+<h2>How the Basis Affects the Size of the Loss</h2>
 
-<p>The same rules apply. A partner in a small design partnership in Bristol's Harbourside can offset their share of the partnership loss against their other income, carry it forward, or use early trade loss relief if the partnership is new.</p>
+<p>The relief rules are identical across the two bases, but the loss figure itself is not. Under the cash basis income counts when received and expenses when paid, so unpaid invoices at 5 April are not income yet, and a prepaid annual insurance bill is deductible in full when paid. Either can enlarge a cash basis loss relative to accruals. Equipment cuts the other way too: a £14,000 van is a day-one cash basis expense, where accruals routes it through capital allowances (usually reaching the same 100% via the Annual Investment Allowance). Cars are the standing exception on both bases: never a cash basis expense, relieved by capital allowances or approved mileage instead.</p>
 
-<p>Partnerships using the cash basis must still prepare a partnership tax return (SA800) showing the loss allocation to each partner. The accounting method is declared on the partnership return.</p>
+<p>For the full comparison of the two methods, including who cannot use the cash basis and the transition adjustments when you switch (spread over six years by default under ITTOIA 2005 s.239A/s.239B), see our guide to <a href="/blog/sole-trader-and-self-employment/cash-basis-vs-accruals-sole-trader">cash basis vs accruals for sole traders</a>.</p>
 
-<h2>Common Mistakes With Cash Basis Losses</h2>
+<h2>Does Accruals Ever Win For Losses Now?</h2>
 
-<p>Three mistakes come up regularly:</p>
+<p>Not as a matter of relief rules. Since 2024/25 there is no loss relief a cash basis user is denied, so electing out of the cash basis buys you nothing on the relief side. The honest residual case is about the loss <em>figure</em>: if significant invoices were unpaid at the year end, accruals recognises them and shows a smaller loss or a profit, and if you carry stock the accruals matching can move the loss into a different year. Those are timing choices about how big the loss is and when it lands, not about what you can do with it. If you are choosing a basis purely because you expect losses, the choice no longer matters for relief.</p>
 
-<p><strong>1. Assuming you cannot claim loss relief because you use the cash basis.</strong> You can. The loss relief rules are independent of the accounting method.</p>
+<h2>Old Rule vs New Rule at a Glance</h2>
 
-<p><strong>2. Forgetting to claim sideways relief within the time limit.</strong> You must claim within 12 months of the 31 January following the tax year. For 2025/26, that means by 31 January 2028. Miss the deadline and you lose the relief.</p>
+<table>
+<thead>
+<tr><th>Relief for a cash basis loss</th><th>To 5 April 2024</th><th>From 6 April 2024 (2024/25 onwards)</th></tr>
+</thead>
+<tbody>
+<tr><td>Carry forward against same trade</td><td>Available (the only option)</td><td>Available, uncapped</td></tr>
+<tr><td>Sideways against general income (s.64)</td><td>Blocked (ITA 2007 s.74E)</td><td>Available, s.24A cap applies</td></tr>
+<tr><td>Carry back to the previous year (s.64)</td><td>Blocked</td><td>Available</td></tr>
+<tr><td>Early trade loss relief (s.72)</td><td>Blocked</td><td>Available, s.24A cap applies</td></tr>
+<tr><td>Terminal loss relief (s.89)</td><td>Blocked for the sideways element</td><td>Available against same-trade profits, uncapped</td></tr>
+<tr><td>Cash basis eligibility</td><td>Opt-in, £150,000 turnover limit</td><td>Default, no turnover limit</td></tr>
+</tbody>
+</table>
 
-<p><strong>3. Not keeping records of unpaid invoices.</strong> Even on the cash basis, you need to know what is outstanding. If HMRC queries your loss, you need to show that the income genuinely was not received in the year. A schedule of unpaid invoices is your evidence.</p>
+<h2>Making the Claim</h2>
 
-<p>If you are unsure whether the cash basis or accruals basis gives you better loss relief in a specific year, run the numbers both ways. The difference can be significant, especially if you have large timing differences between invoicing and payment.</p>
+<p>Sideways relief and carry back are claimed on your Self Assessment return, in the loss boxes of the self-employment pages (SA103), or by a standalone written claim. The deadline is the first anniversary of the 31 January filing deadline for the loss year: <strong>31 January 2028 for a 2025/26 loss</strong>. Miss it and only carry forward remains. Early trade loss relief and terminal loss relief follow the same deadline pattern, and HMRC helpsheet HS227 walks through the computations.</p>
 
-<p>For more detailed guidance on sole trader accounting methods, see our <a href="/fundamentals">fundamentals section</a>. If you need help preparing your self assessment return or claiming loss relief, <a href="/contact">get in touch with our team</a>. We handle loss claims regularly for sole traders across every sector.</p>
+<p>Carry forward needs no claim as such, but record the figure: it goes in the loss-brought-forward box in the first profitable year, and HMRC expects continuity year to year.</p>
 
-<p>And if you are considering incorporating your business to access different loss relief options, our <a href="/incorporation">incorporation guide</a> explains the trade-offs.</p>
+<p>Three practical points before you file:</p>
+
+<ul>
+<li><strong>Keep the payment evidence.</strong> A cash basis loss stands on when money actually moved. A schedule of unpaid invoices at 5 April is your proof that the missing income genuinely was not received.</li>
+<li><strong>Watch the NIC asymmetry.</strong> Relief against non-trade income saves income tax only; relief against trade profits also saves Class 4 NIC (6% in the £12,570 to £50,270 band for 2025/26).</li>
+<li><strong>Loss years and the state pension.</strong> With profits below the small profits threshold (£6,845 for 2025/26), you are not treated as having paid Class 2, so a loss year can leave a gap in your NI record. Voluntary Class 2 is a cheap fix; check your record before the year drops off.</li>
+</ul>
+
+<h2>Losses Under Making Tax Digital</h2>
+
+<p>From April 2026, sole traders with qualifying income over £50,000 fall into MTD for Income Tax; the threshold drops to £30,000 in April 2027 and £20,000 in April 2028. Quarterly updates report income and expenses on your basis as normal; a loss simply shows as cumulative expenses exceeding income, and the relief claim is made in the final declaration for the year, exactly as on a paper computation. See our guide to the <a href="/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline">MTD ITSA April 2026 deadline</a> for who is caught first.</p>
+
+<h2>Partnerships</h2>
+
+<p>Ordinary partnerships of individuals use the cash basis by default too, and the same relief menu applies to each partner's share of a loss. The firm's SA800 allocates the loss per the profit-sharing arrangement; each partner then chooses their own relief route on their personal return. One partner in a Plymouth design partnership can carry forward while another claims sideways against employment income; the choices are independent.</p>
+
+<p>If your loss year has you weighing up whether the trade belongs in a company instead, our <a href="/incorporation">incorporation guide</a> covers the trade-offs, and company losses work very differently. For help running your own numbers both ways before the claim deadline, <a href="/contact">get in touch with our team</a>.</p>
+
+<h2>Related articles in Sole Trader and Self Employment</h2>
+<ul>
+    <li><a href="/blog/sole-trader-and-self-employment/cash-basis-vs-accruals-sole-trader">Cash Basis vs Accruals Sole Trader</a></li>
+    <li><a href="/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist">Allowable Expenses Sole Trader Checklist</a></li>
+</ul>

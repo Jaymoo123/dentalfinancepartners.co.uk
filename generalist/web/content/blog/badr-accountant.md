@@ -1,141 +1,117 @@
 ---
-title: "Do I Need a BADR Accountant to Sell My Business at 18% CGT?"
+title: "BADR Accountant: The Checks Before You Sell at 18%"
 slug: "badr-accountant"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-accountant"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
-metaTitle: "BADR Accountant: Cut CGT to 18% on Your Business Sale"
-metaDescription: "Selling your Ltd company? A BADR accountant ensures you qualify for 18% CGT instead of 24%. We explain the rules, traps and timing for 2026/27 disposals."
-altText: "Specialist accountant reviewing BADR paperwork with a business owner in a modern Manchester city centre office"
+metaTitle: "BADR Accountant: The Checks Before You Sell at 18%"
+metaDescription: "What a BADR accountant checks before a business sale: the 5% tests, trading status, EMI shares, associated disposals, the MVL route and the claim deadline."
+altText: "Specialist accountant reviewing BADR paperwork with a business owner in a modern Derby city centre office"
 image: "/blog/badr-accountant.jpg"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
   photographerUrl: "https://www.pexels.com/@n-voitkevich"
   sourceUrl: "https://www.pexels.com/photo/black-smartphone-on-top-of-documents-6863260/"
   source: "Pexels"
-h1: "Do I Need a BADR Accountant to Sell My Business at 18% CGT?"
-summary: "Business Asset Disposal Relief (formerly Entrepreneurs’ Relief) lets you pay 18% CGT (the rate from 6 April 2026) instead of 24% on the first £1 million of gains when selling your company. But the rules are strict, and HMRC rejects claims that miss the details. A BADR accountant checks your shareholding, holding period, and trading status to lock in the relief."
+h1: "BADR Accountant: What a Specialist Checks Before You Sell Your Business"
+summary: "Business Asset Disposal Relief taxes qualifying gains at 18% for 2026/27 instead of the standard 24%, on the first £1 million of lifetime gains. The relief is a claim with strict conditions tested to the day, and most failed claims fail on details an adviser would have caught: the second 5% test, the trading status of the company, a resignation that broke the officer condition. Here is what a BADR accountant actually checks, and when to bring one in."
 schema: ""
 faqs:
   - question: "Can I claim BADR if I hold 4.9% of the shares?"
-    answer: "No. BADR requires you to hold at least 5% of the ordinary share capital and voting rights throughout the 2 years (24 months) before disposal. 4.9% fails the test. Joint shareholdings with a spouse do not aggregate unless the shares are held jointly in both names. If you are close to the threshold, a share restructure before the 2-year qualifying period may solve it."
-  - question: "Does holding too much cash in the company stop me qualifying for BADR?"
-    answer: "It can. HMRC treats cash reserves that exceed the company's trading needs as non-trading assets. If non-trading assets exceed 20% of total assets, the company may fail the trading test. The solution is to pay dividends, invest in capital assets, or use the cash for trading purposes before the sale. A BADR accountant can calculate the safe level and plan the timing."
+    answer: "Usually not through the main test. BADR requires at least 5% of the ordinary share capital and 5% of the voting rights throughout the 2 years ending with the disposal, so 4.9% fails. There is an alternative economic test: instead of the 5% profits-and-assets entitlement, you can qualify if you would be entitled to at least 5% of the sale proceeds if the whole company were sold. EMI option shares are also exempt from the 5% tests entirely. An accountant checks which route, if any, your holding satisfies."
+  - question: "Do EMI shares qualify for BADR without the 5% test?"
+    answer: "Yes. Shares acquired by exercising a qualifying EMI option are exempt from the 5% shareholding tests. The 2-year clock runs from the date the option was granted, not the date of exercise, and you must still be an employee or officer of the company throughout that period, with the company trading. Many EMI holders qualify for BADR on far less than 5% of the company."
+  - question: "What is the deadline for claiming BADR?"
+    answer: "The claim must be made by the first anniversary of the 31 January following the tax year of the disposal. For a disposal in 2026/27 the return is due by 31 January 2028 and the BADR claim deadline is 31 January 2029. BADR is not automatic: no claim, no relief, and the gain is taxed at the standard 18% and 24% CGT rates instead of 18% flat within the lifetime limit."
   - question: "How long before selling my company should I speak to a BADR accountant?"
-    answer: "Ideally 18 to 24 months before the planned exit. That gives time to restructure shareholdings, manage the trading test, and ensure the 2-year qualifying period is met. If the sale is within 6 months, speak to an accountant immediately. There may still be time to fix issues, but the options are limited."
-  - question: "What is the BADR rate for disposals after 5 April 2026?"
-    answer: "The BADR rate rises to 18% for disposals on or after 6 April 2026. The £1 million lifetime limit stays the same. Selling before 6 April 2026 locks in 14%. Waiting until 2026/27 costs an extra 4% on the gain, which on £1 million is an extra £40,000 in tax."
+    answer: "Ideally 2 years or more before the planned exit, because every condition is tested throughout the 2 years ending with the disposal. A share restructure, a change of role or a build-up of surplus cash inside that window can cost the relief. If the sale is months away, a review is still worth doing immediately: some problems, such as surplus cash, can be fixed late; others, such as a broken officer condition, cannot."
 keyTakeaways:
-  - "BADR cuts CGT to 18% on the first £1 million of qualifying lifetime gains for disposals from 6 April 2026 (the rate was 14% in 2025/26 and 10% before April 2025)."
-  - "Delaying a sale from 2025/26 to 2026/27 costs an extra 4% in tax, which amounts to £40,000 additional tax on a £1 million gain."
-  - "To qualify on company shares, you must hold at least 5% of ordinary share capital, voting rights, and distributable profits for the full 24 months ending on the disposal date."
-  - "You must also be a director or employee of the company throughout that 2-year qualifying period; a break or resignation resets the clock."
-  - "HMRC treats non-trading assets exceeding 20% of total assets as substantial, which can cause the trading company test to fail and BADR to be denied entirely."
-  - "BADR claims must be made on your self assessment return; you can amend within 12 months of the 31 January deadline, but HMRC often refuses requests made after that window."
+  - "BADR taxes qualifying gains at 18% for disposals from 6 April 2026, against standard CGT rates of 18% and 24%, on the first £1 million of lifetime gains."
+  - "On a £600,000 qualifying gain the relief is worth £35,820 for a higher rate taxpayer: £107,460 with BADR against £143,280 at 24%."
+  - "The 5% test has two limbs: 5% of ordinary share capital and voting rights, plus either a 5% profits-and-assets entitlement or a 5% entitlement to sale proceeds. EMI option shares skip the 5% tests entirely."
+  - "You must be an officer or employee throughout the 2 years ending with the disposal; a resignation before completion breaks the condition and there is no cure."
+  - "The company must be a trading company without substantial non-trading activities; HMRC's working benchmark for substantial is around 20%, judged in the round, not on a single ratio."
+  - "BADR is a claim, not a default: the deadline is the first anniversary of the 31 January after the tax year of disposal, so 31 January 2029 for a 2026/27 sale."
 ---
 
-<p>If you are selling your limited company shares, the difference between 18% and 24% Capital Gains Tax is not small. On a £1 million gain, that is £60,000 in your pocket versus HMRC's. Business Asset Disposal Relief (BADR) locks in the lower rate. But HMRC does not hand it out automatically. You have to qualify, claim it correctly, and avoid the common traps that turn an 18% gain into a 24% one.</p>
+<p>Business Asset Disposal Relief is worth up to £35,820 on a £600,000 gain and up to £59,820 across a full £1 million lifetime limit, against the standard 24% higher rate. It is also the relief HMRC sees claimed wrongly most often, because every condition is tested throughout a 2 year period and to the day. A BADR accountant earns their fee not by filling in the claim but by finding the condition you are about to fail while there is still time to fix it.</p>
 
-<p>That is where a BADR accountant comes in. Not every accountant works with business exit planning. A general bookkeeper will file your year-end accounts but may not spot that your share structure fails the 5% test, or that your company has accumulated too much non-trading cash to qualify as a trading company. Those details cost you tens of thousands.</p>
+<p>Holloway Davies reviews BADR eligibility for directors and business owners ahead of a sale. Below is the checklist we actually run, the conditions most often failed by owners who assumed they qualified, and the deadlines that turn a valid position into no relief at all. For the current rates in context, see our guide to <a href="/blog/exit-and-capital-gains/capital-gains-tax-rates-2025-26">capital gains tax rates 2025/26 and 2026/27</a>, and to model your own numbers use our <a href="/calculators/badr-cgt-calculator">BADR CGT calculator</a>.</p>
 
-<p>This article explains exactly what BADR requires, where claims go wrong, and why using a specialist BADR accountant is often the difference between a clean sale and a costly HMRC enquiry.</p>
+<h2>What BADR Is Worth in 2026/27</h2>
 
-<h2>What Is Business Asset Disposal Relief?</h2>
+<p>BADR (formerly Entrepreneurs' Relief) taxes qualifying business disposals at <strong>18%</strong> for disposals on or after 6 April 2026, up to a <strong>£1 million lifetime limit</strong> per individual. The rate was 14% for 2025/26 and 10% before 6 April 2025; the increases were legislated at Autumn Budget 2024 and the 18% rate is now in force. The history and the timing rules around the change belong to our companion piece on the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">BADR 2026 rate change</a>; this page is about qualifying.</p>
 
-<p>BADR replaced Entrepreneurs' Relief in April 2020. The name changed but the rules stayed largely the same. It reduces the CGT rate on qualifying gains to 14% for disposals between 6 April 2025 and 5 April 2026. From 6 April 2026 the rate rises to 18%. Before 6 April 2025 it was 10%.</p>
-
-<p>The relief applies to the first £1 million of qualifying gains over your lifetime. You can use it more than once, across multiple disposals, until you hit the cap. After that, gains are taxed at the standard CGT rates: 18% for basic rate taxpayers and 24% for higher rate taxpayers on most assets, or 24% for residential property gains.</p>
-
-<p>For most business owners selling their limited company shares, BADR is the single most valuable relief available. The question is whether you qualify.</p>
-
-<h2>Who Qualifies for BADR on Company Shares?</h2>
-
-<p>To claim BADR on shares in your own trading company, you must meet three conditions throughout the 2 years (24 months) ending with the date of disposal:</p>
+<p>Without BADR, gains are taxed at the standard CGT rates: 18% within your unused basic rate band and 24% above it, with a £3,000 annual exempt amount. Take a director selling her trading company shares for a qualifying gain of £600,000. After the £3,000 exempt amount the chargeable gain is £597,000:</p>
 
 <ul>
-<li><strong>You hold at least 5% of the ordinary share capital and voting rights.</strong> This is the 5% test. If you hold 4.9%, you fail. Joint shareholdings with a spouse do not aggregate unless the shares are held jointly in both names.</li>
-<li><strong>You are entitled to at least 5% of the distributable profits and assets on a winding up.</strong> This catches people who hold 5% of shares but have different economic rights through alphabet shares or preference shares.</li>
-<li><strong>The company is a trading company</strong> (or the holding company of a trading group). It must not have substantial non-trading activities. HMRC generally treats more than 20% non-trading income or assets as substantial.</li>
+<li><strong>With BADR:</strong> £597,000 at 18% = <strong>£107,460</strong>.</li>
+<li><strong>Without BADR (higher rate taxpayer):</strong> £597,000 at 24% = <strong>£143,280</strong>.</li>
 </ul>
 
-<p>You must also be an employee or officer (director) of the company throughout that 2-year qualifying period. That means you cannot sell the shares and resign on the same day. You need to hold the shares and the role for the full 2 years.</p>
+<p>The relief is worth <strong>£35,820</strong> on that sale. The 6 point gap is narrower than it was when BADR sat at 10%, but on any six-figure gain it still comfortably pays for the professional time spent securing it.</p>
 
-<h3>The Trading Company Test</h3>
+<h2>The Two 5% Tests, and the Proceeds Alternative Most People Miss</h2>
 
-<p>This is where most BADR claims fail. HMRC defines a trading company as one that carries on a trade and whose activities do not include substantial non-trading activities. Non-trading activities include investment income, property rental, holding cash reserves that are not needed for the trade, and owning investment properties.</p>
-
-<p>If your company has accumulated £200,000 of retained profits sat in a bank account with no specific trading use, HMRC may argue those are non-trading assets. If they exceed 20% of total assets, the company fails the trading test. The same applies if you own a commercial property personally but rent it to your company. That rental income counts as non-trading for the company.</p>
-
-<p>We see this trap most often with contractors and consultants who have built up large cash reserves over years of trading. They assume the company is a trading company because it delivers services. But if the balance sheet shows £500,000 cash against £600,000 total assets, that is 83% non-trading assets. The claim fails.</p>
-
-<p>There are solutions. Paying dividends before a sale, investing in capital assets, or restructuring the balance sheet can bring the company back inside the test. But these need planning months or years ahead, not the week before exchange.</p>
-
-<h2>What a BADR Accountant Checks Before a Sale</h2>
-
-<p>A general accountant files your annual accounts. A BADR accountant audits your exit readiness. Here is what we check:</p>
+<p>For a share sale, the company must be your <strong>personal company</strong> throughout the 2 years ending with the disposal. That means two things at once:</p>
 
 <ul>
-<li><strong>Share structure:</strong> Do you hold 5% of ordinary share capital and voting rights? Are there any alphabet shares that dilute your economic entitlement? Do any shareholder agreements override the default rights?</li>
-<li><strong>Employment status:</strong> Have you been a director or employee for the full 2 years? If you took a break or resigned and rejoined, the clock resets.</li>
-<li><strong>Trading status:</strong> We run the balance sheet test. What percentage of total assets are non-trading? What percentage of income is non-trading? We look at the last 12 months and the longer trend.</li>
-<li><strong>Group structures:</strong> If you hold shares in a holding company that owns trading subsidiaries, the group must pass the trading test. We check each subsidiary and the group as a whole.</li>
-<li><strong>Associated disposals:</strong> If you are selling your shares and also personally selling an asset used by the business (like a van or equipment), you may claim BADR on that disposal too. But the conditions are different and often missed.</li>
+<li><strong>Limb one:</strong> you hold at least <strong>5% of the ordinary share capital</strong> and at least <strong>5% of the voting rights</strong>.</li>
+<li><strong>Limb two, an either/or economic test:</strong> you are entitled to at least 5% of the profits available for distribution and 5% of the assets on a winding up, <strong>or</strong> you would be entitled to at least <strong>5% of the proceeds</strong> if the whole ordinary share capital were sold at market value.</li>
 </ul>
 
-<p>We also check the timing. BADR claims must be made on your self assessment return (SA100 or SA108 for capital gains). If you miss the 31 January filing deadline, you can amend within 12 months. After that, you must write to HMRC and hope they accept a late claim. They often do not.</p>
+<p>The proceeds-entitlement alternative exists because alphabet shares, preference shares and investor rights routinely distort dividend and winding-up entitlements. A founder diluted by a funding round can hold 6% of the votes but under 5% of distributable profits on paper, and still qualify through the proceeds route. Equally, the trap runs the other way: 5.1% of the shares with restricted rights in the articles can fail limb two on both alternatives. This is a documents check, not a cap-table check, and it is the first thing we read.</p>
 
-<h2>How a BADR Accountant Prevents HMRC Enquiries</h2>
+<p>Spousal holdings do not aggregate. Each spouse is tested on their own shares, their own 5% and their own role, which is also why a genuine transfer between spouses well ahead of a sale can double the relief available to a couple; the mechanics sit with the rate-change planning covered in the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">companion article</a>.</p>
 
-<p>BADR claims are a red flag for HMRC. They know the relief is valuable and that some people push the boundaries. A well-prepared claim with supporting documentation reduces the chance of an enquiry.</p>
+<h2>The EMI Exception</h2>
 
-<p>A BADR accountant prepares a trading status letter, a balance sheet analysis showing non-trading assets as a percentage of total assets, and a narrative explaining the company's trading activities. If HMRC opens an enquiry, that evidence is ready. Without it, you are writing letters from memory trying to justify why a cash balance was needed for the trade.</p>
+<p>Shares acquired by exercising a qualifying <strong>EMI option</strong> are exempt from the 5% tests altogether. Two conditions still bite: the 2 year qualifying period runs from the <strong>grant</strong> of the option (not exercise), and the employment condition must hold throughout. An employee holding 1% through EMI can take the 18% rate on a sale where a 4% non-EMI shareholder cannot. On an exit where option holders exercise at completion, checking grant dates against the 2 year clock is a standard part of the review, and one that deal timetables regularly ignore.</p>
 
-<p>We also check the associated company rules. If you own shares in multiple companies, they may be associated for BADR purposes. That can affect the trading test at group level. It can also affect the £1 million lifetime limit if you have used BADR before on another company.</p>
+<h2>Officer or Employee, Throughout, With No Gap</h2>
 
-<h2>When to Start Planning with a BADR Accountant</h2>
+<p>You must be an officer or employee of the company (or a group company) throughout the 2 years ending with the disposal. Hours and pay are irrelevant; continuity is everything. A director who resigns during a protracted negotiation and completes the sale three months later has broken the condition and there is no cure. If you resigned some time ago and are only now selling, the position depends on exactly when the disposal falls; our piece on <a href="/blog/exit-and-capital-gains/can-a-director-claim-badr-after-leaving-role-2-years-ago">claiming BADR after leaving a director role</a> works through the scenarios. The practical rule we give clients: do not resign before completion, however done you feel.</p>
 
-<p>The answer is: as soon as you know you want to sell. Ideally 18 to 24 months before the planned exit date. That gives time to restructure the balance sheet, pay down non-trading assets, and ensure the 2-year qualifying period is met.</p>
+<h2>Trading Status and the Substantial Non-Trading Risk</h2>
 
-<p>If you are planning to sell in the next 6 months and have not checked your BADR eligibility, do it now. If you fail the trading test, there may still be time to take dividends or make capital investments that shift the balance. But the window is tight.</p>
+<p>The company must be a <strong>trading company</strong> (or the holding company of a trading group) without <strong>substantial</strong> non-trading activities. HMRC's long-standing working benchmark for substantial is around <strong>20%</strong>, applied in the round across several indicators: income, asset base, expenses, and management time devoted to non-trading activity. It is not a single mechanical ratio, which cuts both ways: a large cash balance genuinely held for the trade can be defensible, and a modest investment property portfolio can still tip a company over.</p>
 
-<p>If you are further out, say 3 to 5 years, the planning is more flexible. We can structure shareholdings, add family members as shareholders (using alphabet shares to control dividend rights), and manage the trading status year by year so there are no surprises at exit.</p>
+<p>The most common version of this risk is retained cash in a service company. A consultancy with £500,000 of accumulated cash against £600,000 of total assets has a serious question to answer, and the answer needs evidence: working capital cycles, planned capital spend, board minutes. Fixes exist (pre-sale dividends, genuine reinvestment) but they need months, not days. This topic has its own detailed treatment in <a href="/blog/exit-and-capital-gains/badr-cash-reserves-company-sale">BADR and large cash reserves</a>; on a review we run the balance sheet test over the whole 2 year window, not just the latest accounts.</p>
 
-<h2>What Happens If You Do Not Use a BADR Accountant</h2>
+<h2>Associated Disposals: The Personally Held Asset</h2>
 
-<p>You file your self assessment, claim BADR, and hope HMRC accepts it. If they do, you pay 18% instead of 24%. If they challenge it, you face an enquiry that can take 12 to 18 months, cost thousands in professional fees, and potentially result in the relief being denied plus interest and penalties.</p>
+<p>If you personally own an asset the company uses, most commonly the trading premises, and you sell it as part of withdrawing from the business alongside a qualifying share sale, that <strong>associated disposal</strong> can also attract BADR. The conditions are separate and stricter than people expect: the disposal must be linked to a material disposal of shares or business interest, the asset must have been used in the business throughout the qualifying period, and relief is restricted where the company paid you <strong>rent</strong> for the asset (full market rent since 2008 means no relief on that asset). Directors who charged their company rent on the premises for years are routinely surprised by this at the point of sale. It is a standard line on our checklist precisely because nobody thinks to mention the building until heads of terms are signed.</p>
 
-<p>Even if the claim is valid, the enquiry process is stressful. HMRC will ask for evidence of trading status, shareholdings, and employment. If your records are not clear, they may argue the claim fails on technical grounds even if the substance is correct.</p>
+<h2>The MVL Route, and the Phoenixing Warning</h2>
 
-<p>We have seen cases where a director held 5.1% of shares but the company's articles gave different voting rights, reducing the effective holding below 5%. The director thought they qualified. They did not. The relief was denied and the gain taxed at 24%.</p>
+<p>If the exit is a closure rather than a sale, a <strong>members' voluntary liquidation</strong> distributes the company's reserves as capital rather than income, and BADR can apply to those distributions if the share and trading conditions are met, with distributions generally needing to land within 3 years of cessation of trade. At 18% against dividend rates of up to 39.35%, the MVL route remains clearly worthwhile for a company with significant reserves.</p>
 
-<p>That is the value of a BADR accountant. Not just filing the claim, but checking every detail before you commit to a sale.</p>
+<p>The warning is the <strong>Targeted Anti-Avoidance Rule</strong>: if within 2 years of the distribution you carry on the same or a similar trade or activity, and the winding up had a main purpose of obtaining a tax advantage, the capital distribution is recharacterised as income and taxed as a dividend. A contractor who liquidates, banks the 18% treatment and starts a near-identical company six months later is the textbook target. An adviser's job here is partly the computation and partly an honest conversation about what you plan to do next. The wider comparison of exit routes, including EOT sales and trade sales, is in <a href="/blog/exit-and-capital-gains/selling-a-business-tax-cgt-badr">selling a business: tax, CGT and BADR</a>.</p>
 
-<h2>Cost of a BADR Accountant vs the Tax Saved</h2>
+<h2>The Claim, the Deadline and the Lifetime Limit Ledger</h2>
 
-<p>On a £500,000 gain, BADR saves you £30,000 compared to the 24% rate (18% vs 24% = 6% saving). Even on a £200,000 gain, the saving is £12,000. A BADR review and claim preparation typically costs a fraction of that. The return on investment is obvious.</p>
+<p>BADR is a <strong>claim</strong>, made in your self assessment return, with a hard deadline: the <strong>first anniversary of the 31 January following the tax year of the disposal</strong>. For a disposal in 2026/27, the return is due by 31 January 2028 and the claim deadline is <strong>31 January 2029</strong>. Miss it and the gain falls back to the standard 18% and 24% rates. HMRC has no general discretion to accept a late BADR claim.</p>
 
-<p>If your gain is smaller, say £50,000, the saving is £5,000. Still worth paying for specialist advice if your situation is complex. For straightforward claims with a clean trading company and clear shareholding, a good accountant can handle it without a separate BADR specialist. But if there is any doubt on the trading test, share structure, or associated companies, bring in someone who does this regularly.</p>
+<p>The £1 million lifetime limit is cumulative across every disposal you have ever claimed on, including old Entrepreneurs' Relief claims. Part of a proper review is reconstructing that ledger from prior returns, because relief claimed on a disposal in, say, 2019 reduces what is left today. Where a sale spans more than one tax year, or shares are sold down in tranches, the interaction of the limit, the rates and the claims needs modelling in advance; see <a href="/blog/exit-and-capital-gains/badr-relief-multiple-tax-years">BADR across multiple tax years</a>.</p>
 
-<h2>How to Find a BADR Accountant</h2>
+<h2>When You Need the Specialist and When You Do Not</h2>
 
-<p>Look for an accountant who specifically mentions business exit planning, capital gains tax, and BADR on their services page. Ask them how many BADR claims they have handled in the last 12 months. Ask if they prepare a trading status letter as standard. Ask if they review the balance sheet for non-trading assets before the sale.</p>
+<p>A clean case, a 100% shareholder-director of an obviously trading company with no prior claims and no personally held assets, can be handled by any competent accountant: check the conditions, run the numbers through the <a href="/calculators/badr-cgt-calculator">calculator</a>, make the claim on time. Bring in specialist review when any of these apply:</p>
 
-<p>At Holloway Davies, we work with business owners across every sector on exit planning. We review your full position, identify any gaps, and structure the exit to lock in the relief. If you are thinking about selling, <a href="/contact">contact us</a> for a BADR readiness review.</p>
+<ul>
+<li>alphabet shares, preference shares, growth shares or investor rights anywhere in the capital structure;</li>
+<li>meaningful cash reserves, investment property or other non-trading assets on the balance sheet;</li>
+<li>EMI options exercising at completion;</li>
+<li>a personally held asset used by the business, especially where rent was charged;</li>
+<li>an MVL where you intend to work in the same field afterwards;</li>
+<li>prior disposals that have used part of the lifetime limit;</li>
+<li>a group structure, a holding company, or shares held via a trust.</li>
+</ul>
 
-<h2>BADR Rate Changes for 2025/26 and 2026/27</h2>
+<p>Each of those is a place where the default answer on the tax return is wrong often enough to justify the review. On a gain of £500,000 the relief is worth £29,820 against the 24% rate; the review costs a small fraction of that.</p>
 
-<p>The rate changes are already legislated. For disposals on or after 6 April 2025, BADR applies at 14%. From 6 April 2026, it rises to 18%. The £1 million lifetime limit remains unchanged.</p>
+<h2>Getting a BADR Review</h2>
 
-<p>If you sold before 6 April 2025 the rate was 10%; disposals in 2025/26 locked in 14%. For disposals from 6 April 2026 onward the rate is 18%. The disposal date for CGT is normally the date of unconditional exchange of contracts, so the rate is fixed by when you exchange, not when you complete.</p>
-
-<p>That does not mean you should rush a sale if the business is not ready. The 18% rate is still meaningfully better than the standard 24%, and qualifying (or failing to qualify) matters far more to your net proceeds than fine-tuning the sale date.</p>
-
-<h2>What to Do Next</h2>
-
-<p>If you are a limited company director considering an exit, start the BADR planning process now. Even if the sale is 2 or 3 years away, the decisions you make today about dividends, capital investments, and share structure affect your eligibility.</p>
-
-<p>If the sale is imminent, book a BADR review immediately. We can assess your position, identify any issues, and advise on whether a restructure is possible before completion.</p>
-
-<p>For more detail on the technical rules, see our <a href="/glossary">glossary entry on BADR</a> and our <a href="/blog/exit-and-capital-gains">exit and capital gains blog</a>. If you are also considering <a href="/r-and-d-credits">R&D tax credits</a> or <a href="/incorporation">incorporation</a>, those interact with exit planning too.</p>
+<p>The right time to check eligibility is at least 2 years before the exit, because that is the length of the qualifying window everything is tested against. The second-best time is now. Holloway Davies runs BADR readiness reviews covering the share structure, the trading status evidence, associated disposals, the lifetime limit ledger and the claim itself. If a sale or an MVL is on your horizon, <a href="/contact">get in touch</a> before you sign anything.</p>

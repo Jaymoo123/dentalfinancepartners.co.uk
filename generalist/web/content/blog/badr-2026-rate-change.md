@@ -1,178 +1,119 @@
 ---
-title: "BADR 2026 Rate Change: What It Means for UK Business Owners Selling Up"
+title: "BADR 2026 Rate Change: The 18% Rate, the Dates and the Anti-Forestalling Rules"
 slug: "badr-2026-rate-change"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/badr-2026-rate-change"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
 metaTitle: "BADR 2026 Rate Change: 18% CGT from April 2026"
-metaDescription: "The BADR 2026 rate change raises CGT to 18% from 6 April 2026. If you are selling your company or shares, the timing matters. Here is how to plan."
-altText: "Business owner reviewing documents with accountant, UK office setting"
+metaDescription: "The BADR rate is 18% for disposals from 6 April 2026, after 14% in 2025/26 and 10% before. The dates, the anti-forestalling rules and the worked numbers."
+altText: "Business owner reviewing disposal computations with an accountant in an Aberdeen office"
 image: "/blog/badr-2026-rate-change.jpg"
 imageCredit:
   photographer: "Nataliya Vaitkevich"
   photographerUrl: "https://www.pexels.com/@n-voitkevich"
   sourceUrl: "https://www.pexels.com/photo/white-and-black-heart-shape-illustration-6120216/"
   source: "Pexels"
-h1: "BADR 2026 Rate Change: What UK Business Owners Need to Know Before April 2026"
-summary: "The BADR rate rises from 14% to 18% on 6 April 2026. If you are planning to sell your business or shares, the difference is significant. Here is what you need to know and how to plan."
+h1: "BADR 2026 Rate Change: The 18% Rate, the Dates and the Anti-Forestalling Rules"
+summary: "The Business Asset Disposal Relief rate rose to 18% for disposals on or after 6 April 2026, the final step in the schedule set at Autumn Budget 2024: 10% to 5 April 2025, 14% for 2025/26, 18% now. Which rate applies to a given sale turns on the disposal date rules and the Finance Act 2025 anti-forestalling provisions. Here is the full schedule, the timing law, and the numbers at several gain sizes."
 schema: ""
 faqs:
-  - question: "What is the BADR rate from April 2026?"
-    answer: "The BADR rate rises to 18% from 6 April 2026. It was 10% up to 5 April 2025, then 14% from 6 April 2025 to 5 April 2026. The 18% rate applies to disposals made on or after 6 April 2026."
-  - question: "Can I still get the 10% BADR rate?"
-    answer: "No. The 10% rate applied to disposals up to 5 April 2025. From 6 April 2025 to 5 April 2026 the rate is 14%. From 6 April 2026 it is 18%."
-  - question: "Does the £1 million lifetime limit change?"
-    answer: "No. The £1 million lifetime limit for BADR remains unchanged. What changes is the rate applied to gains within that limit."
-  - question: "Does BADR apply to selling a rental property?"
-    answer: "No. BADR only applies to disposals of business assets: shares in a trading company, a business you run as a sole trader or partnership, or assets used in your business. Rental property does not qualify unless it is part of a genuine trading business (e.g., a hotel or guest house)."
+  - question: "What is the BADR rate for 2026/27?"
+    answer: "18%. Business Asset Disposal Relief applies at 18% to qualifying disposals made on or after 6 April 2026, up to the £1 million lifetime limit. The rate was 14% for disposals between 6 April 2025 and 5 April 2026, and 10% for disposals up to 5 April 2025. The 10% and 14% rates cannot be accessed for a new disposal made now."
+  - question: "My contract exchanged before 6 April 2026 but completed after. Which BADR rate applies?"
+    answer: "Under the normal rule in section 28 TCGA 1992 the disposal date is the date of an unconditional contract, which would give 14%. But the Finance Act 2025 anti-forestalling rules fix the rate by the completion date instead, so 18% applies, unless the contract is an excluded contract: entered into with no purpose of gaining a tax advantage from the timing rule, and on wholly commercial terms where the parties are connected. Relying on the exclusion requires a statement in your return where the gains exceed £100,000."
+  - question: "In an MVL, are old profits taxed at the old BADR rates?"
+    answer: "No. The rate is set by the date of each capital distribution, not by when the company earned the money. Reserves accumulated across 2023, 2024 and 2025 and distributed in a members' voluntary liquidation during 2026/27 are all taxed at 18% if BADR applies. There is no apportionment of a distribution back to the years the profits arose."
+  - question: "Did the £1 million lifetime limit change in April 2026?"
+    answer: "No. The lifetime limit stays at £1 million per individual, where it has been since March 2020, and it is not indexed. The qualifying conditions, including the 5% personal company tests and the 2 year qualifying period, are also unchanged. Only the rate moved: 14% to 18% on 6 April 2026."
 keyTakeaways:
-  - "The BADR rate rises from 14% to 18% on 6 April 2026, applying to all qualifying business disposals made on or after that date."
-  - "BADR was 10% up to 5 April 2025, rose to 14% from 6 April 2025, then 18% from 6 April 2026, an 80% rise in under two years."
-  - "The £1 million lifetime limit for BADR is unchanged; only the CGT rate applied to gains within that limit increases."
-  - "On a £500,000 qualifying gain, the 4 percentage point increase from 14% to 18% adds roughly £20,000 in additional tax."
-  - "To qualify for BADR, you must hold at least 5% of shares and voting rights in a trading company for at least 2 years before disposal."
-  - "Once the £1 million BADR limit is exhausted, further gains are taxed at standard CGT rates of 18% (basic rate) or 24% (higher rate) on non-residential assets."
+  - "BADR is charged at 18% for qualifying disposals on or after 6 April 2026, after 14% in 2025/26 and 10% up to 5 April 2025, the schedule legislated from Autumn Budget 2024."
+  - "On a £400,000 gain the step from 14% to 18% added £15,880: £55,580 became £71,460 on the chargeable £397,000."
+  - "Finance Act 2025 Schedule 2 fixes the rate by completion date for contracts straddling 6 April 2026, unless the contract is an excluded contract with no tax-timing purpose."
+  - "A section 169Q election on a share exchange made on or after 30 October 2024 is charged at the rate in force when the election takes effect, so elections cannot resurrect the 10% or 14% rates."
+  - "In an MVL the rate follows the date of each capital distribution, never the years in which the company earned the reserves."
+  - "The £1 million lifetime limit, the 5% tests and the 2 year qualifying period were all untouched; only the rate changed."
 ---
 
-<p>The BADR 2026 rate change is one of the most significant tax shifts for UK business owners in years. From 6 April 2026, the rate of Business Asset Disposal Relief (formerly Entrepreneurs' Relief) rises from 14% to 18%. That is a 4 percentage point increase on gains above your annual exempt amount. For a business sale worth £500,000, the difference is roughly £20,000 in extra tax.</p>
+<p>The BADR 2026 rate change is now in force. Since 6 April 2026, Business Asset Disposal Relief taxes qualifying gains at <strong>18%</strong>, the last step in a schedule that took the relief from 10% to 18% in eighteen months. For anyone selling or winding up a business in 2026/27 the live questions are no longer about beating a deadline: they are which rate a given disposal actually gets under the timing rules, what the anti-forestalling legislation blocks, and what the relief is still worth against the standard rates. This page covers the rate change itself; the qualifying conditions and the traps an adviser checks are covered separately in our <a href="/blog/exit-and-capital-gains/badr-accountant">BADR accountant guide</a>.</p>
 
-<p>If you are considering selling your company, your shares, or your business assets, the timing of that sale matters more than ever. This article explains what the BADR 2026 rate change means, who it affects, and how to plan around it.</p>
+<h2>The 10% to 14% to 18% Schedule, With Exact Dates</h2>
 
-<p>We work with business owners across the UK who are navigating these changes. This guidance is general. Your situation may differ, so speak to a qualified accountant before making any decisions.</p>
+<p>The full schedule, announced at Autumn Budget 2024 and legislated in Finance Act 2025:</p>
 
-<h2>What is BADR and Why Does the Rate Matter?</h2>
+<table>
+<thead>
+<tr><th>Disposal date</th><th>BADR rate</th><th>Standard CGT rates in force</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to 5 April 2025</td><td>10%</td><td>18% / 24% from 30 Oct 2024 (10% / 20% before)</td></tr>
+<tr><td>6 April 2025 to 5 April 2026</td><td>14%</td><td>18% / 24%</td></tr>
+<tr><td>On or after 6 April 2026</td><td>18%</td><td>18% / 24%</td></tr>
+</tbody>
+</table>
 
-<p>Business Asset Disposal Relief (BADR) reduces the Capital Gains Tax (CGT) rate on qualifying business disposals. It applies when you sell or dispose of:</p>
+<p>The £1 million lifetime limit runs through all three periods unchanged. Investors' Relief follows the same 14% then 18% schedule, with its own lifetime limit cut to £1 million for disposals from 30 October 2024. The standard rates, the £3,000 annual exempt amount and how BADR gains interact with the basic rate band are set out in our guide to <a href="/blog/exit-and-capital-gains/capital-gains-tax-rates-2025-26">capital gains tax rates 2025/26 and 2026/27</a>.</p>
 
-<ul>
-<li>Shares in your personal trading company (you must hold at least 5% of the shares and voting rights)</li>
-<li>All or part of your unincorporated business (sole trader or partnership)</li>
-<li>Assets you used in your business after you cease trading (within 3 years)</li>
-</ul>
+<p>Note what the 18% rate means structurally: a basic rate taxpayer's standard CGT rate is also 18%, so BADR now only saves tax against the <strong>24%</strong> higher rate band. The relief went from a 14 point advantage in 2024/25 to a 6 point advantage today.</p>
 
-<p>The relief has a £1 million lifetime limit. Once you have used that limit, any further gains are taxed at the standard CGT rates: 18% for basic rate taxpayers and 24% for higher rate taxpayers (non-residential assets).</p>
+<h2>How the Disposal Date Is Fixed: Section 28 and Completion</h2>
 
-<p>The rate history matters here. Up to 5 April 2025, BADR was 10%. The Autumn Budget 2024 raised it to 14% for disposals from 6 April 2025. The BADR 2026 rate change takes it to 18% from 6 April 2026. That is an 80% increase in the tax rate in under two years.</p>
+<p>For CGT, the disposal date under an unconditional contract is the date of <strong>exchange</strong>, not completion (section 28 TCGA 1992); a conditional contract disposes on the date the condition is satisfied. That rule decided which side of each April step a sale fell. A share sale exchanged on 20 March 2026 and completed in May 2026 is, under the general rule, a 2025/26 disposal at 14%.</p>
 
-<h2>Who Does the BADR 2026 Rate Change Affect?</h2>
+<p>That is exactly the door the anti-forestalling legislation part-closes.</p>
 
-<p>If you are a director-shareholder of a trading company, a sole trader, or a partner in a business partnership, you are likely affected. The change hits hardest if:</p>
+<h2>The Anti-Forestalling Rules in Finance Act 2025</h2>
 
-<ul>
-<li>You plan to sell your company in the next 12 to 24 months</li>
-<li>You are approaching retirement and planning to exit</li>
-<li>You hold shares in a trading company that you intend to sell</li>
-<li>You are a contractor or freelancer with a personal service company (PSC) and plan to close it</li>
-</ul>
-
-<p>For example, take a director in Birmingham who owns 100% of a software consultancy. They sell the company for £800,000 in May 2026. Their gain is £790,000 after the annual exempt amount. Under the 14% rate (April 2025 to April 2026), the tax would be £110,600. Under the 18% rate from April 2026, the tax jumps to £142,200. That is an extra £31,600.</p>
-
-<p>That difference is real money. It could fund a new venture, a pension contribution, or a property purchase.</p>
-
-<h2>How the BADR 2026 Rate Change Interacts with Other CGT Rules</h2>
-
-<p>The BADR rate is not the only CGT change to watch. The standard CGT rates for business assets also rose in the Autumn Budget 2024. The old 10% basic rate and 20% higher rate for non-residential assets were replaced by 18% and 24% respectively from 30 October 2024.</p>
-
-<p>This means that once you exhaust your £1 million BADR lifetime limit, any further gains are taxed at 18% or 24%. That is a significant jump from the old 10% and 20% rates.</p>
-
-<p>For residential property, the rates are the same: 18% basic rate and 24% higher rate. The 60-day reporting requirement for UK residential property gains still applies. If you sell a buy-to-let property or second home, you must report and pay the CGT within 60 days of completion.</p>
-
-<p>The BADR 2026 rate change does not affect the £1 million lifetime limit. That limit remains. What changes is the rate applied to gains within that limit.</p>
-
-<h2>Planning Around the BADR 2026 Rate Change</h2>
-
-<p>If you are considering a business exit, the window between 6 April 2025 and 5 April 2026 is your opportunity to use the 14% rate. After that, the rate rises to 18%.</p>
-
-<p>Here are the practical options to consider.</p>
-
-<h3>Bring Forward Your Exit</h3>
-
-<p>If your business is ready for sale and you can complete the transaction before 6 April 2026, you lock in the 14% rate. That is a 4% saving on gains up to £1 million.</p>
-
-<p>For a £500,000 gain, the saving is £20,000. For a £1 million gain, the saving is £40,000.</p>
-
-<p>This only works if the sale is genuinely ready. Rushing a sale to hit a tax deadline can backfire if you accept a lower price or miss due diligence issues.</p>
-
-<h3>Use the Annual Exempt Amount</h3>
-
-<p>Each individual has an annual CGT exempt amount. For 2025/26, that is £3,000. You can crystallise gains up to that amount each year tax-free. If you hold shares in your company, you could sell a portion each year to use the exemption, then reinvest or hold the cash.</p>
-
-<p>This is most practical if you have a minority stake or are selling down gradually. For a full business sale, it rarely works because buyers want 100% control.</p>
-
-<h3>Transfer Shares to a Spouse</h3>
-
-<p>You can transfer shares to your spouse tax-free (the no gain/no loss rule). They then have their own £1 million BADR lifetime limit and their own annual exempt amount. This effectively doubles the relief available to a couple.</p>
-
-<p>There are conditions. The shares must be held for at least 2 years before disposal. The spouse must also meet the 5% shareholding and voting rights test. And the transfer must be genuine, not a tax avoidance scheme.</p>
-
-<p>If you are a husband-and-wife team running a limited company in Leeds, this is worth discussing with your accountant. It can save significant tax on a joint exit.</p>
-
-<h3>Consider a Share Buyback</h3>
-
-<p>If you want to extract value from your company without selling to a third party, a share buyback can work. The company purchases your shares. This counts as a disposal for CGT purposes and can qualify for BADR if the conditions are met.</p>
-
-<p>Share buybacks are more complex than a straightforward sale. They require distributable reserves, shareholder approval, and compliance with Companies Act 2006 rules. Professional advice is essential.</p>
-
-<h3>Use Pension Contributions to Offset Gains</h3>
-
-<p>If you have made a gain and want to reduce the tax, pension contributions can help. Contributions to a registered pension scheme attract tax relief at your marginal rate. For a higher rate taxpayer, a £40,000 contribution costs £24,000 net and adds £40,000 to your pension pot.</p>
-
-<p>This does not reduce the CGT directly. But it reduces your overall income tax bill, which can free up cash to pay the CGT. It is a timing and cashflow strategy, not a direct avoidance method.</p>
-
-<h2>What About Closing a Limited Company?</h2>
-
-<p>If you are closing your limited company rather than selling it, the rules differ. A formal winding up (Members' Voluntary Liquidation or MVL) treats distributions as capital, not income. That means they are subject to CGT rather than income tax and dividend tax.</p>
-
-<p>BADR can apply to the distributions from an MVL, as long as the company is a trading company and you meet the 5% shareholding and 2-year holding conditions. The BADR 2026 rate change applies here too. If you close your company after 6 April 2026, the gain on the distributions is taxed at 18% rather than 14%.</p>
-
-<p>An MVL is more expensive than a simple strike-off (dissolution). But for companies with significant retained profits, the CGT treatment under BADR usually beats paying income tax on dividends. The numbers need to stack up for your specific case.</p>
-
-<p>For a contractor in Manchester with £100,000 retained in their PSC, the difference between an MVL with BADR and a strike-off (where funds are treated as dividends) can be substantial. The MVL route saves thousands in tax, even after the professional fees.</p>
-
-<h2>What Does Not Change in the BADR 2026 Rate Change</h2>
-
-<p>Some things stay the same. The £1 million lifetime limit remains. The qualifying conditions for BADR are unchanged. You still need to hold at least 5% of the shares and voting rights in a trading company for at least 2 years. The company must be a trading company (not an investment company or one holding significant non-trading assets).</p>
-
-<p>The rules around associated companies and the 5% test also remain. If you hold shares through a trust or another company, the attribution rules can affect your eligibility. This is a complex area where professional advice is essential.</p>
-
-<p>For unincorporated businesses (sole traders and partnerships), the same conditions apply. You must have owned the business for at least 2 years and the disposal must be of the whole or part of the business.</p>
-
-<h2>What Should You Do Now?</h2>
-
-<p>If you are planning a business exit within the next 2 years, the BADR 2026 rate change is a factor you cannot ignore. Here is a practical checklist.</p>
+<p>Schedule 2 of Finance Act 2025 contains targeted rules for arrangements designed to capture the 10% or 14% rates ahead of each step (HMRC guidance at CG10249 to CG10251):</p>
 
 <ul>
-<li><strong>Review your timeline.</strong> When do you realistically plan to sell or close your business? If it is before April 2026, you lock in the 14% rate.</li>
-<li><strong>Check your BADR usage.</strong> Have you used any of your £1 million lifetime limit on previous disposals? You can check your CGT records or ask your accountant.</li>
-<li><strong>Consider your spouse.</strong> If you are married or in a civil partnership, transferring shares to use both allowances could save tax.</li>
-<li><strong>Get professional advice early.</strong> Tax planning for a business exit should start at least 12 months before the sale. Last-minute planning is less effective and more stressful.</li>
-<li><strong>Talk to your accountant about the numbers.</strong> Model the tax under both rates. Know what the difference is for your specific gain.</li>
+<li><strong>Straddling unconditional contracts.</strong> Where a contract was exchanged before a rate-change date but completed on or after it, the disposal is treated as taking place at <strong>completion</strong> for the purpose of the CGT rate, overriding section 28 for that purpose only. So a contract exchanged in 2025/26 completing after 6 April 2026 is charged at 18%, not 14%, by default.</li>
+<li><strong>The excluded contract escape.</strong> The completion-date rule does not apply where the contract was entered into with <strong>no purpose of obtaining a tax advantage</strong> from the section 28 timing rule, and, where the parties are connected, was entered into for <strong>wholly commercial reasons</strong>. A genuine arm's length sale that happened to exchange in March and complete in April keeps its exchange-date rate.</li>
+<li><strong>The statement requirement.</strong> Relying on the exclusion requires a statement in the self assessment return (white space or attachment) that the contract had no tax-timing purpose, unless total gains on such contracts are no more than <strong>£100,000</strong>.</li>
+<li><strong>Share exchanges and section 169Q elections.</strong> On a share-for-share exchange, gains are normally rolled into the new shares; a section 169Q election disapplies that rollover to crystallise the gain and bank BADR at the old rate. For exchanges on or after 30 October 2024, an election no longer locks the rate at the exchange date: the crystallised gain is charged under the rules in force when the <strong>election</strong> is made. Exchanging into a holding company in early 2025 and electing now still produces an 18% charge.</li>
 </ul>
 
-<p>If your business is worth selling and you are ready, the next 12 months offer a lower tax rate. That is not a reason to sell if you are not ready. But it is a reason to start the planning process now.</p>
+<p>The practical summary for 2026/27: the 14% rate is only still reachable for a disposal genuinely made before 6 April 2026 under the ordinary rules, including a straddling contract that qualifies as an excluded contract. Nothing signed or elected today can reach it.</p>
 
-<p>For more on exit planning, see our <a href="/blog/exit-and-capital-gains">exit and capital gains</a> articles. If you need to check your company structure, our <a href="/blog/incorporation-and-structure">incorporation and structure</a> resources cover the basics. And for a full list of the services we offer, visit our <a href="/services">services page</a>.</p>
+<h2>Worked Numbers: The Same Gain at 14%, 18% and Without Relief</h2>
 
-<h2>Frequently Asked Questions</h2>
+<p>Each computation deducts the £3,000 annual exempt amount first, and assumes the gain is fully within the £1 million lifetime limit. The comparison column is a higher rate taxpayer without BADR at 24%.</p>
 
-<p><strong>What is the BADR rate from April 2026?</strong><br>
-The BADR rate rises to 18% from 6 April 2026. It was 10% up to 5 April 2025, then 14% from 6 April 2025 to 5 April 2026. The 18% rate applies to disposals made on or after 6 April 2026.</p>
+<table>
+<thead>
+<tr><th>Qualifying gain</th><th>Chargeable</th><th>2025/26 at 14%</th><th>2026/27 at 18%</th><th>No BADR at 24%</th><th>Cost of the step</th></tr>
+</thead>
+<tbody>
+<tr><td>£100,000</td><td>£97,000</td><td>£13,580</td><td>£17,460</td><td>£23,280</td><td>£3,880</td></tr>
+<tr><td>£400,000</td><td>£397,000</td><td>£55,580</td><td>£71,460</td><td>£95,280</td><td>£15,880</td></tr>
+<tr><td>£1,000,000</td><td>£997,000</td><td>£139,580</td><td>£179,460</td><td>£239,280</td><td>£39,880</td></tr>
+</tbody>
+</table>
 
-<p><strong>Can I still get the 10% BADR rate?</strong><br>
-No. The 10% rate applied to disposals up to 5 April 2025. From 6 April 2025 to 5 April 2026 the rate is 14%. From 6 April 2026 it is 18%.</p>
+<p>Two readings of the same table. Against last year, the step costs 4 points, just under £40,000 at the full lifetime limit. Against no relief at all, BADR in 2026/27 is still worth 6 points, £59,820 on a £1 million gain, which is why qualifying (and claiming by the deadline) matters more than mourning the old rate.</p>
 
-<p><strong>Does the £1 million lifetime limit change?</strong><br>
-No. The £1 million lifetime limit for BADR remains unchanged. What changes is the rate applied to gains within that limit.</p>
+<h2>MVL Distributions: The Date That Sets the Rate</h2>
 
-<p><strong>Does BADR apply to selling a rental property?</strong><br>
-No. BADR only applies to disposals of business assets: shares in a trading company, a business you run as a sole trader or partnership, or assets used in your business. Rental property does not qualify unless it is part of a genuine trading business (e.g., a hotel or guest house).</p>
+<p>A recurring question from company owners closing up through a members' voluntary liquidation: if the reserves were earned back when BADR was 10% or 14%, is some of the money taxed at the old rates? <strong>No.</strong> Each capital distribution in a winding up is a disposal (or part disposal) of the shares dated when the distribution is made. Reserves earned in 2023 and distributed in 2026/27 are charged at 18% if BADR applies, in full; there is no tracing of the cash back to the years the profits arose. A liquidator making distributions either side of a 5 April can produce two rates on one liquidation, which is a genuine timing point to plan with the liquidator, but the company's earning history is irrelevant. The wider choice between an MVL, a strike-off and a sale is compared in <a href="/blog/exit-and-capital-gains/selling-a-business-tax-cgt-badr">selling a business: tax, CGT and BADR</a>, and the anti-phoenixing rule that polices MVLs is covered in the <a href="/blog/exit-and-capital-gains/badr-accountant">adviser checklist</a>.</p>
 
-<p><strong>What happens if I sell my company shares gradually?</strong><br>
-You can use BADR on each disposal as long as you meet the conditions at the time of each sale. If you sell some shares before April 2026 and some after, the later sales are taxed at the higher rate. The £1 million lifetime limit applies across all disposals.</p>
+<h2>Planning That Still Works After the Rise</h2>
 
-<p><strong>Do I need an accountant to claim BADR?</strong><br>
-You can claim BADR on your self assessment tax return yourself. But the rules are detailed and HMRC can challenge claims. An accountant can help you structure the disposal to qualify, calculate the gain correctly, and complete the return. Given the sums involved, professional advice is usually worth the cost.</p>
+<p>The rate schedule is done moving; no further BADR rate change is currently legislated. What remains is ordinary, legitimate planning under the settled rules:</p>
 
-<p>If you are planning a business exit and want to discuss the BADR 2026 rate change in your specific situation, <a href="/contact">get in touch</a>. Our experienced team works with business owners across the UK, from Shoreditch to the Northern Quarter, helping them plan exits that minimise tax and maximise value.</p>
+<ul>
+<li><strong>Two spouses, two limits.</strong> An outright transfer of shares between spouses is no gain no loss, and each spouse has their own £1 million lifetime limit, but the recipient must independently satisfy the personal company, officer-or-employee and 2 year conditions before their disposal. Started early, this can take a joint exit of up to £2 million of gains at 18% rather than 24%.</li>
+<li><strong>Ordering losses and the exempt amount.</strong> Set capital losses and the £3,000 exempt amount against standard-rate gains before BADR gains: relief at 24% beats relief at 18%.</li>
+<li><strong>Banking the limit across years.</strong> Phased disposals can spread gains across tax years and annual exempt amounts; the mechanics are in <a href="/blog/exit-and-capital-gains/badr-relief-multiple-tax-years">BADR across multiple tax years</a>.</li>
+<li><strong>Keeping the conditions alive.</strong> The most valuable planning is defensive: not resigning before completion, not letting surplus cash erode trading status, checking the 5% tests after any restructure.</li>
+</ul>
+
+<p>What does not work: engineering a disposal date backwards. Backdating, conditional contracts contrived to complete early, and post-hoc section 169Q elections are precisely what Schedule 2 and the exchange-election rule were written for.</p>
+
+<h2>What the Rate Change Did Not Touch</h2>
+
+<p>Everything else about BADR survived April 2026 intact: the £1 million lifetime limit (fixed since March 2020, not indexed), the 5% personal company tests and their proceeds-entitlement alternative, the EMI exception, the 2 year qualifying period, the trading company requirement, the 3 year window after cessation for sole traders and partners, and the claim deadline of the first anniversary of the 31 January following the tax year of disposal. A director in Preston asking whether the goalposts moved as well as the rate can be told plainly: the conditions are the same, they are simply worth 6 points now instead of 14.</p>
+
+<h2>What to Do in 2026/27</h2>
+
+<p>Model any planned exit at 18% and check the claim mechanics early: for a 2026/27 disposal the return is due by 31 January 2028 and the BADR claim by 31 January 2029. If you exchanged before 6 April 2026 and completed after, take advice on the excluded contract position and the return statement before filing. And if the numbers matter to a decision you have not yet made, run them through our <a href="/calculators/badr-cgt-calculator">BADR CGT calculator</a> or <a href="/contact">talk to us</a>; Holloway Davies models disposals under the current rates and handles the claim end to end.</p>

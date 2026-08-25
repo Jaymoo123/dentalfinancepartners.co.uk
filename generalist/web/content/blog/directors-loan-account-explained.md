@@ -1,13 +1,13 @@
 ---
-title: "Directors Loan Account Explained: What Every UK Director Needs to Know"
+title: "Director's Loan Account: S455, Repayment Rules and Exits"
 slug: "directors-loan-account-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/directors-loan-account-explained"
-date: "2026-05-17"
-generator: unverified/claude-era
+date: "2026-08-25"
+generator: rewrite/track2-full
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
-metaTitle: "Directors Loan Account Explained for UK Company Directors"
-metaDescription: "Directors loan account explained simply. What it is, how S455 tax works, repayment deadlines, and what happens if you overdraw. Practical guidance"
+metaTitle: "Director's Loan Account: S455 Tax and Repayment Rules"
+metaDescription: "How a director's loan account works: S455 at 33.75% or 35.75% by loan date, the 9 month window, the £10,000 benefit in kind rule and exit routes compared."
 altText: "Director reviewing a director's loan account statement with a calculator and company accounts on a desk in a UK office"
 image: "/blog/directors-loan-account-explained.jpg"
 imageCredit:
@@ -15,145 +15,141 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@rdne"
   sourceUrl: "https://www.pexels.com/photo/person-writing-on-white-paper-7821513/"
   source: "Pexels"
-h1: "Directors Loan Account Explained: What Every UK Director Needs to Know"
-summary: "A director's loan account records money owed between you and your limited company. If you take more out than you put in, the company must pay S455 tax at 33.75% (for loans made in 2025/26) or 35.75% (for loans made on or after 6 April 2026) unless you repay within 9 months and 1 day of year end. This guide covers everything from setting it up to avoiding the tax traps."
+h1: "Director's Loan Account Explained: S455 Tax, Repayment Rules and Exit Routes"
+summary: "A director's loan account records every pound that moves between you and your limited company outside salary, dividends and expenses. Overdrawn, it triggers S455 tax at 33.75% for loans made in 2025/26 or 35.75% for loans made on or after 6 April 2026 unless repaid within 9 months and 1 day of year end, plus a benefit in kind if the balance tops £10,000. In credit, it is money the company owes you, repayable tax-free. This page covers both directions, the repayment traps, and every route out of an overdrawn balance."
 schema: ""
 faqs:
-  - question: "What is the S455 tax rate for directors loans in 2025/26?"
-    answer: "The S455 rate is 33.75% for loans made in 2025/26, rising to 35.75% for loans made on or after 6 April 2026 (FA 2026 s.4). It applies to the full amount of the overdrawn directors loan account that is not repaid within 9 months and 1 day of the company's year end. The company pays this tax to HMRC and can reclaim it when the loan is repaid."
-  - question: "How long do I have to repay a directors loan before S455 tax applies?"
-    answer: "You have 9 months and 1 day from the end of the company's accounting period to repay the loan. For a company with a 31 March year end, the deadline is 1 January. If you repay after that date, the company must pay S455 tax on the loan balance at 33.75% for loans made in 2025/26, or 35.75% for loans made on or after 6 April 2026 (FA 2026 s.4)."
-  - question: "Can I avoid the benefit in kind charge on a directors loan?"
-    answer: "Yes. If the loan balance is £10,000 or less throughout the tax year, no benefit in kind charge applies. If it exceeds £10,000, you can avoid the charge by paying interest at the official rate (3.75% for 2025/26) on the average loan balance. Document the interest payments properly."
-  - question: "What happens if my directors loan account is in credit (the company owes me money)?"
-    answer: "A credit balance means the company owes you money. This is not a tax problem. The company can repay you at any time without triggering tax charges. If the company becomes insolvent, you are an unsecured creditor for that amount and may not recover it. Keep records of what you have put into the company."
+  - question: "What is the S455 tax rate on a director's loan?"
+    answer: "The rate is fixed by the date the loan is made, not the date it is assessed. Loans made in 2025/26 carry S455 at 33.75%. Loans made on or after 6 April 2026 carry 35.75%, because CTA 2010 s.455 tracks the dividend upper rate, which FA 2026 raised from that date. The company pays the charge on any balance still outstanding 9 months and 1 day after its year end, and can recover it under s.458 once the loan is repaid, released or written off."
+  - question: "How long do I have to repay a director's loan before S455 tax applies?"
+    answer: "9 months and 1 day from the end of the accounting period in which the loan was made. For a 31 March 2026 year end that is 1 January 2027, the same day the corporation tax falls due. Repay in full by that date and no S455 is payable, though the loan must still be disclosed on the CT600 supplementary pages."
+  - question: "Is S455 tax permanent, or does the company get it back?"
+    answer: "It is repayable, not permanent. When the loan is repaid, released or written off, the company reclaims the S455 under CTA 2010 s.458. The relief is deferred: HMRC repays it 9 months and 1 day after the end of the accounting period in which the repayment happened, and the claim must be made within 4 years. The real cost of S455 is therefore cash flow, not a lost tax."
+  - question: "Can I avoid the benefit in kind charge on a director's loan?"
+    answer: "Yes, two ways. Keep the combined loan balance at £10,000 or below throughout the tax year, in which case no benefit arises at all. Or, above £10,000, pay the company interest at the official rate, 3.75% for 2025/26 and continuing at 3.75% from 6 April 2026, so there is no cheap-loan benefit to tax. Otherwise the notional interest is a taxable benefit reported on a P11D, with Class 1A NIC at 15% for the company."
+  - question: "Can I repay my director's loan just before year end and draw it again after?"
+    answer: "Not without consequences. The 30-day rule in CTA 2010 s.464ZA matches repayments of £5,000 or more against new drawings within 30 days either side, so the repayment is treated as never made. For balances of £15,000 or more, the arrangements rule in s.464C catches redrawing even outside 30 days if the intention to redraw existed at the time of repayment. Repayments funded by a genuinely taxed dividend or bonus escape both rules."
+  - question: "What happens if my director's loan account is in credit?"
+    answer: "A credit balance means the company owes you money, typically from personal spending on company costs or capital you introduced. The company can repay you at any time with no tax charge, because it is simply returning your own money. You can also charge the company interest, which is deductible for the company; it must withhold 20% at source and report it quarterly on form CT61. If the company fails, you rank as an unsecured creditor for the balance."
 keyTakeaways:
-  - "An overdrawn directors loan account attracts S455 tax at 35.75% on loans from 6 April 2026 (33.75% before) if not repaid within 9 months and 1 day."
-  - "If an overdrawn loan exceeds £10,000 and no interest is paid at the official rate (3.75% for 2025/26), a benefit in kind charge applies and is reported on a P11D."
-  - "Once a director's loan is repaid, the company can reclaim the S455 tax, but must claim within 4 years of the accounting period end in which repayment was made."
-  - "HMRC's bed and breakfasting rules treat a loan repayment as void if a new loan is taken within 30 days, so directors must wait at least 31 days before redrawing."
-  - "If a company writes off a director's loan, the amount is treated as a distribution and taxed at dividend rates in the director's hands."
-  - "In a company insolvency, an overdrawn directors loan account remains a personal debt and the liquidator will pursue the director for repayment."
+  - "S455 tax is fixed by the date the loan is made: 33.75% for loans made in 2025/26, 35.75% for loans made on or after 6 April 2026, payable on balances outstanding 9 months and 1 day after year end."
+  - "S455 is repayable under s.458 once the loan clears, but the refund is deferred to 9 months and 1 day after the year of repayment and must be claimed within 4 years."
+  - "A loan over £10,000 at any point in the tax year is a benefit in kind unless you pay interest at the official rate of 3.75%, reported on a P11D with Class 1A NIC at 15% for the company."
+  - "The 30-day rule (s.464ZA) voids repayments of £5,000 or more matched with redrawing within 30 days, and the intentions rule (s.464C) catches planned redrawing on balances of £15,000 or more with no time limit."
+  - "Writing off a director's loan taxes the director at dividend rates (35.75% higher rate for 2026/27) and HMRC frequently argues Class 1 NIC is due on top; the company gets no corporation tax deduction."
+  - "A credit balance is tax-free money on demand; interest you charge the company is deductible for it, paid under 20% withholding through quarterly CT61 returns."
 ---
 
-<p>A director's loan account is one of those things that sounds more complicated than it actually is. It is simply the record of money flowing between you and your limited company. Money you put in and money you take out. If you take more out than you have put in, you have a loan from the company to you. That triggers tax consequences you need to understand before you spend the money.</p>
+<p>A director's loan account is the running record of money moving between you and your limited company in ways that are not salary, dividends or expense reimbursement. It runs in both directions. If you have put more in than you have taken out, the company owes you money and the balance is a tax-free asset. If you have drawn more than you have put in, you owe the company money, and three separate charges start circling: S455 tax on the company, a benefit in kind on you, and, if the loan is ever written off, income tax at dividend rates plus a possible National Insurance bill.</p>
 
-<p>This guide covers the directors loan account explained from start to finish. What it is, how to use it properly, the tax charges that apply, and the deadlines that matter. If you are a director of a UK limited company, this affects you whether you know it or not.</p>
+<p>The rules changed in one important way from 6 April 2026. The S455 rate tracks the dividend upper rate, and FA 2026 raised that rate, so the loan's date now decides its cost. This page sets out both directions of the account, the full consequences ladder for an overdrawn balance with worked figures you can recompute, and a comparison of every exit route.</p>
 
-<h2>What Is a Directors Loan Account?</h2>
+<h2>What Is a Director's Loan Account?</h2>
 
-<p>Every limited company has a directors loan account. It is a running balance that tracks what you owe the company and what the company owes you. When you start the company, you might pay for things personally before the company bank account is open. That goes in as money owed to you. When you take a dividend or salary that exceeds the profit available, you start owing the company.</p>
+<p>Every limited company with a director-shareholder effectively has one, whether or not the bookkeeping labels it. It is a balance-sheet account, not a bank account: a ledger that captures money you lend the company (start-up costs paid personally, company bills on your own card, salary or dividends declared but left in the business) and money the company lends you (cash drawn without a matching dividend or payroll entry, personal costs on the company card, a dividend declared without sufficient distributable profit to cover it).</p>
 
-<p>The account sits in the company's balance sheet under debtors (if you owe the company) or creditors (if the company owes you). Most small limited company directors will see this account in their bookkeeping software as a nominal code, often 1200 or 2200 depending on the direction of the balance.</p>
+<p>At any moment the account is either in credit (the company owes you) or overdrawn (you owe the company). The two positions have completely different tax treatment, so we take them in turn, starting with the one that generates the tax bills.</p>
 
-<p>It is not a formal loan agreement. There is no credit check and no interest rate set by the bank. But HMRC treats it as a loan for tax purposes, and that is where the rules get strict.</p>
+<h2>The Overdrawn DLA: The Consequences Ladder</h2>
 
-<h2>When Does a Directors Loan Account Become a Problem?</h2>
+<p>An owner-managed company is almost always a close company, and a loan from a close company to a participator (a director-shareholder) sits inside a purpose-built anti-avoidance regime. Three rungs, from the routine to the expensive.</p>
 
-<p>The problems start when the balance is overdrawn. That means you have taken more money out of the company than you have put in. The company has lent you money. HMRC does not like directors treating their company bank account like a personal current account.</p>
+<h3>Rung 1: S455 Tax and the 9 Month and 1 Day Window</h3>
 
-<p>An overdrawn directors loan account triggers two potential tax charges. The first is a benefit in kind charge on you personally if the loan exceeds £10,000 and is interest-free or below the official rate of interest (3.75% for 2025/26). You report this on your P11D and pay tax on the notional interest benefit.</p>
+<p>CTA 2010 s.455 charges the company a percentage of any loan to a participator still outstanding 9 months and 1 day after the end of the accounting period in which the loan was made. The rate equals the dividend upper rate for the tax year the loan was made, which means it is now date-banded:</p>
 
-<p>The second is the big one. Section 455 of the Corporation Tax Act 2010. If the loan is not repaid within 9 months and 1 day of the company's year end, the company must pay S455 tax at 33.75% (for loans made in 2025/26) or 35.75% (for loans made on or after 6 April 2026, FA 2026 s.4) of the loan amount. This is not a penalty. It is a tax charge designed to discourage directors from taking money out of the company rather than paying themselves properly through salary or dividends.</p>
+<ul>
+<li><strong>Loans made in 2025/26 (up to 5 April 2026): 33.75%</strong></li>
+<li><strong>Loans made on or after 6 April 2026: 35.75%</strong> (the FA 2026 dividend-rate rise flows straight through)</li>
+</ul>
 
-<h2>S455 Tax: The High Cost of an Overdrawn Loan Account</h2>
+<p>The band follows the loan, not the assessment. A loan you took in February 2026 stays at 33.75% however long it runs; a fresh drawing in May 2026 is at 35.75% even if it sits in the same account.</p>
 
-<p>Let us use a real example. You are a director of a Manchester-based consultancy. Your company year end is 31 March 2025. On 1 April 2024, you took £40,000 from the company account for a personal house deposit. You did not process it as a dividend or salary. It just went out as a director's loan.</p>
+<p><strong>Worked example.</strong> You run a Leeds design consultancy with a 31 March year end. On 1 August 2025 you drew £40,000 for a house purchase without processing it as salary or dividend. Your accounting period ends 31 March 2026, so the repayment deadline is 1 January 2027, which is also the day the corporation tax is due. If the £40,000 is still outstanding on that date, the company pays S455 of £40,000 × 33.75% = £13,500. Had the same loan been drawn on 1 August 2026 instead (year end 31 March 2027, deadline 1 January 2028), the charge would be £40,000 × 35.75% = £14,300, an extra £800 purely from the date band.</p>
 
-<p>By 31 December 2025, 9 months and 1 day after your year end, you have not repaid that £40,000. The company must pay S455 tax of 33.75% on £40,000, which is £13,500. That is due alongside the corporation tax payment for the year, which falls due on 1 January 2026 (9 months and 1 day after the year end).</p>
+<p>Two things S455 is not. It is not a penalty, and it is not permanent. When the loan is repaid, released or written off, the company reclaims it under CTA 2010 s.458. But the relief is deferred: HMRC repays 9 months and 1 day after the end of the accounting period in which the repayment happened, not when you repay, and the claim must be made within 4 years of the end of that period. Repay the Leeds loan in June 2027 and the company sees its £13,500 again on 1 January 2029. The true cost of S455 is the company losing use of a third of the loan for years.</p>
 
-<p>The company pays that £13,500 to HMRC. It is not lost forever. When you eventually repay the loan, the company can reclaim the S455 tax. But that could be years later, and in the meantime the company has lost the use of that cash.</p>
+<h3>Rung 2: The Benefit in Kind on Loans Over £10,000</h3>
 
-<h3>How to Reclaim S455 Tax</h3>
+<p>Separately from S455, an interest-free or cheap loan is a taxable employment benefit under ITEPA 2003 ss.173 to 191 if the balance exceeds <strong>£10,000 at any point in the tax year</strong>. The taxable amount is the interest you would have paid at HMRC's official rate of interest, minus any interest you actually paid. The official rate is <strong>3.75% for 2025/26 and continues at 3.75% from 6 April 2026</strong> (HMRC now reviews it in-year, so check before relying on it for a future year).</p>
 
-<p>When you repay the loan, the company claims the S455 tax back. You do this on the corporation tax return for the year of repayment. The repayment is treated as reducing the tax liability for that year, or HMRC will repay it directly if the company has no tax due.</p>
+<p><strong>Worked example.</strong> An Ipswich contractor has a £24,000 interest-free loan outstanding for the whole of 2026/27. The cash equivalent under the averaging method is £24,000 × 3.75% = £900. As a higher-rate taxpayer she pays £900 × 40% = £360. The company reports the benefit on a P11D and pays Class 1A NIC of £900 × 15% = £135 (the Class 1A rate follows the 15% employer rate that has applied since 6 April 2025). Total leakage: £495 a year, on top of any S455 exposure.</p>
 
-<p>There is a time limit. The claim must be made within 4 years of the end of the accounting period in which the loan was repaid. If you miss that window, the tax is lost.</p>
+<p>Two clean escapes: keep the balance at £10,000 or below throughout the year, or formally charge yourself interest at the official rate and actually pay it, which extinguishes the benefit entirely.</p>
 
-<h2>What Counts as Repayment of a Directors Loan?</h2>
+<h3>Rung 3: Bed and Breakfasting, the 30-Day Rule and the Intentions Rule</h3>
 
-<p>Repayment is straightforward. You pay money back into the company bank account. It can be a lump sum or regular payments. It can come from your personal savings, from a bonus the company pays you, or from dividends the company declares and you leave in the company rather than taking out.</p>
+<p>The obvious dodge, repay just before the 9 month deadline and redraw straight after, is blocked twice over.</p>
 
-<p>But there is a trap. HMRC applies the "bed and breakfasting" rules. If you repay a loan and then take another loan within 30 days, HMRC treats the repayment as not having happened. The loan is still outstanding for S455 purposes. This stops directors from cycling money in and out just before the year end to avoid the tax charge.</p>
+<p>The <strong>30-day rule (CTA 2010 s.464ZA)</strong>: where repayments of £5,000 or more are made and, within 30 days before or after, new loans are drawn, the repayment is matched against the new drawing and treated as never made. The S455 clock keeps running on the original loan.</p>
 
-<p>If you need to clear the loan before the 9 month deadline, make sure you do not take another loan within 30 days of the repayment. Wait at least 31 days before drawing again.</p>
+<p>The <strong>arrangements rule (s.464C and s.464D)</strong>: where the outstanding balance is £15,000 or more and, at the time of repayment, there is an intention or arrangement to redraw, the repayment is denied relief however long you wait. Thirty-one days of patience does not defeat this one; it turns on intention, not timing.</p>
 
-<h2>Directors Loan Account vs Salary vs Dividends</h2>
+<p>The safe harbour in both cases is repayment that is itself taxed: a dividend or bonus credited against the loan is real income that has borne tax, so the matching rules do not apply to it. Cash repayments from savings are also fine, provided you do not draw the money straight back out.</p>
 
-<p>Many directors use the loan account as a default. They take money out of the company whenever they need it, and sort out the paperwork at year end. This is common but risky. The loan account is not designed to be your regular payment method.</p>
+<h2>The Credit DLA: When the Company Owes You</h2>
 
-<p>Salary and dividends are the proper ways to pay yourself. Salary goes through payroll, triggers PAYE and NI, but counts as an allowable expense for the company. Dividends come from post-tax profits and are taxed at 10.75%, 35.75% or 39.35% depending on your income tax band (2026/27 rates). Both are cleaner than running a loan balance.</p>
+<p>The mirror position is a balance in your favour, usually built from incorporation costs you funded personally, company expenses on your own card, or declared dividends left in the business. This is the benign direction. The company can repay you at any time, in any amount, with no tax on either side, because it is returning your own money. For many directors a healthy credit balance is the most flexible reserve they have: drawable in a lean month without touching payroll or profits.</p>
 
-<p>If you take a dividend that exceeds the company's distributable profits, that is an illegal dividend. The loan account catches that too. You cannot declare a dividend if the company does not have enough retained earnings to cover it. If you do, the excess sits in the loan account as an overdrawn balance.</p>
+<h3>Charging the Company Interest and the CT61</h3>
 
-<p>Our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a> covers the optimal salary and dividend strategy for 2025/26.</p>
+<p>You can go further and charge the company interest on what it owes you, at a commercial rate. Done properly it is efficient in both directions: the interest is a deductible expense for the company, and in your hands it is savings income that can shelter under the personal savings allowance and, for low earners, the starting rate for savings.</p>
 
-<h2>What Happens if the Loan Is Written Off?</h2>
+<p>The mechanics matter. When a company pays interest to an individual it must deduct 20% income tax at source and account for it to HMRC on <strong>form CT61</strong>, filed quarterly. Lend the company £50,000 at 5% and the gross interest is £2,500 a year; the company pays you £2,000 and remits £500 to HMRC through the CT61. You declare the gross £2,500 on your return and credit the £500 already deducted. Skipping the CT61 does not remove the obligation, it just creates late-filing exposure, so set the process up before the first payment.</p>
 
-<p>If the company cannot recover the loan and decides to write it off, that is treated as a distribution for tax purposes. It is effectively a dividend. You pay income tax on the written-off amount at the dividend rates. The company does not get a deduction for it.</p>
+<p>One caution: in an insolvency a credit balance makes you an unsecured creditor, at the back of the queue. Money left in a struggling company is at risk like any other creditor's.</p>
 
-<p>Writing off a loan is not a way to avoid S455 tax. It triggers a different tax charge on you personally. And the company still has to account for the write-off in its accounts. It is a messy outcome that is best avoided.</p>
+<h2>Writing Off the Loan: The Expensive Exit</h2>
 
-<h2>How to Keep Your Directors Loan Account Clean</h2>
+<p>If the company releases or writes off an overdrawn loan, the amount written off is taxed on you as if it were a dividend: 10.75%, 35.75% or 39.35% for 2026/27 depending on your band. Write off £30,000 as a higher-rate taxpayer and the personal bill is £30,000 × 35.75% = £10,725.</p>
 
-<p>Here is what we recommend to our clients at Holloway Davies. Our team sees loan account problems regularly, and they are almost always avoidable.</p>
+<p>The trap that surprises people is <strong>National Insurance</strong>. HMRC's long-standing position is that where the loan is written off by reason of the employment, the release is earnings for NIC even though it is dividend income for income tax, so Class 1 NIC can be due through payroll on top of the dividend-rate charge. The company also gets no corporation tax deduction for the write-off. The one consolation: a release counts as the loan clearing, so the company recovers its S455 under s.458 on the usual deferred timetable. The full mechanics are in our guide to <a href="/blog/limited-company-tax/directors-loan-written-off-tax-implications">the tax implications of a director's loan written off</a>.</p>
+
+<h2>How the DLA Fits Your Salary and Dividend Strategy</h2>
+
+<p>An overdrawn loan account is usually a symptom: drawings running ahead of the salary and dividends actually declared. The structural fix is a payment plan that covers what you actually spend. The standard owner-manager pattern, a small salary with the balance in dividends, is worked through in our guide to the <a href="/blog/director-pay-and-dividends/tax-efficient-salary-dividend-split-director-2025-26">most tax-efficient salary and dividend split for 2026/27</a>, with the underlying rates in <a href="/blog/director-pay-and-dividends/dividend-tax-rates-2026-27">dividend tax rates 2026/27</a> and the payroll side in <a href="/blog/payroll-and-paye/national-insurance-for-directors">National Insurance for directors</a>.</p>
+
+<p>Three interactions worth knowing:</p>
+
+<ul>
+<li><strong>Leaving dividends in the loan account works.</strong> A properly declared dividend credited to your DLA rather than paid out is real income; it clears or builds the balance and is safe from the bed-and-breakfasting rules. The declaration must be valid, with distributable profits and board minutes, at the date it is made.</li>
+<li><strong>A dividend without profits becomes a loan.</strong> If you pay a dividend the company's distributable reserves cannot cover, the unlawful excess is repayable and sits in the DLA as an overdrawn balance, with the whole S455 apparatus attached.</li>
+<li><strong>Timing is not retrospective.</strong> A dividend declared after year end reduces next year's balance, not the one just closed. To clear this year's overdrawn DLA before the S455 date, the dividend or bonus must be credited before 9 months and 1 day have run.</li>
+</ul>
+
+<h2>Exit Routes From an Overdrawn DLA Compared</h2>
+
+<table>
+<thead>
+<tr><th>Exit route</th><th>Tax cost</th><th>Watch for</th></tr>
+</thead>
+<tbody>
+<tr><td>Repay in cash before 9 months and 1 day</td><td>None</td><td>The 30-day and intentions rules if you redraw; still disclose on the CT600</td></tr>
+<tr><td>Declare a dividend against the balance</td><td>Dividend tax: 10.75% / 35.75% / 39.35% (2026/27)</td><td>Needs distributable profits and proper paperwork; safe from bed-and-breakfasting because it is taxed income</td></tr>
+<tr><td>Vote a bonus against the balance</td><td>PAYE at your marginal rate plus employee NIC, employer NIC at 15%; corporation-tax deductible for the company</td><td>Usually dearer than a dividend, but works when reserves are thin</td></tr>
+<tr><td>Write the loan off</td><td>Dividend rates on you, likely Class 1 NIC on top, no CT deduction for the company</td><td>The most expensive route; S455 does come back under s.458</td></tr>
+<tr><td>Leave it outstanding and pay S455</td><td>33.75% or 35.75% by loan date, repayable later</td><td>Cash-flow cost only, but adds the £10,000 benefit in kind each year it runs</td></tr>
+</tbody>
+</table>
+
+<p>For most directors the ranking is: cash repayment if you have it, a dividend if the company has profits, a bonus if it does not, S455 as a deliberate short-term bridge, and a write-off only when nothing else is realistic. If you are approaching a year end with an overdrawn balance, our walkthrough on <a href="/blog/director-pay-and-dividends/reconcile-directors-loan-account-year-end-s455-tax">reconciling your director's loan account before year end</a> covers the clean-up sequence step by step.</p>
+
+<h2>Reporting: What Goes Where</h2>
+
+<p>On the company side, loans to participators are disclosed on the CT600A supplementary pages whether or not S455 is ultimately payable; a loan repaid inside the 9 month window is still disclosed. On your side, a benefit in kind on a loan over £10,000 flows from the P11D to the employment pages of your Self Assessment return. Interest the company pays you on a credit balance goes through the quarterly CT61 at the company and the savings income boxes on your return.</p>
+
+<h2>Insolvency: The Balance Survives</h2>
+
+<p>An overdrawn DLA does not disappear if the company fails. It is an asset of the company, and a liquidator will pursue you personally for it, often as the largest recoverable asset on the books. A credit balance flips you to unsecured creditor, typically recovering little. Either way, the loan account is one of the first documents an insolvency practitioner reads, which is a good argument for keeping it reconciled while times are good.</p>
+
+<h2>Keeping the Account Clean</h2>
 
 <ol>
-<li>Process all payments to yourself through payroll or dividend vouchers at the time you take them. Do not leave them sitting in the loan account.</li>
-<li>If you need a short-term loan from the company, document it. Set a repayment schedule. Charge interest at the official rate (3.75% for 2025/26) to avoid the benefit in kind charge.</li>
-<li>Review the loan account balance at least quarterly. Do not wait until year end to discover a problem.</li>
-<li>If the balance is overdrawn at year end, plan the repayment before the 9 month and 1 day deadline.</li>
-<li>Keep the loan balance below £10,000 if possible to avoid the benefit in kind reporting requirement.</li>
+<li>Process regular drawings through payroll or dividend vouchers at the time you take them, not at year end.</li>
+<li>Review the balance quarterly; an overdrawn position spotted in month three is fixable, one discovered at the year-end meeting often is not.</li>
+<li>Keep the peak balance at £10,000 or below where you can, or charge yourself the official rate of 3.75% where you cannot.</li>
+<li>Diarise the 9 month and 1 day date the moment the year closes, and decide the exit route early.</li>
+<li>Document any deliberate loan: amount, date, planned repayment. The date now sets the S455 band, so it matters more than it used to.</li>
 </ol>
 
-<h2>Directors Loan Account and Company Insolvency</h2>
-
-<p>If your company becomes insolvent and you have an overdrawn directors loan account, the liquidator will pursue you for repayment. It is a debt you owe to the company, and the liquidator's job is to recover company assets for creditors. This is one of the most common reasons directors face personal financial difficulty after a company failure.</p>
-
-<p>The loan account balance is not written off in the insolvency. You remain personally liable for it. And if the company cannot repay what it owes you (a credit balance on your loan account), you become a creditor in the insolvency, usually an unsecured one who gets little or nothing back.</p>
-
-<h2>Directors Loan Account for Husband and Wife Companies</h2>
-
-<p>If you run a company with your spouse, each director has their own loan account. They are separate. You cannot net one against the other. If you have a credit balance of £15,000 and your spouse has a debit balance of £12,000, the company still has a loan to your spouse of £12,000. The S455 tax applies on that £12,000.</p>
-
-<p>Alphabet shares can help with flexible dividend allocation, which reduces the need to use loan accounts for balancing drawings. Our <a href="/incorporation">incorporation and structure</a> page covers how to set up share structures properly.</p>
-
-<h2>Reporting the Directors Loan Account on Your Tax Return</h2>
-
-<p>On your personal self assessment tax return (SA100), you report the loan on the employment pages. If the loan exceeds £10,000 and is interest-free, you report the benefit in kind. HMRC calculates the taxable benefit as the difference between the official rate of interest and any interest you actually paid.</p>
-
-<p>On the company side, the loan is reported on the corporation tax return (CT600). The company must disclose loans to participators (directors and shareholders) in the supplementary pages. HMRC uses this information to check whether S455 tax is due.</p>
-
-<p>If the loan is repaid after the year end but before the 9 month deadline, you still disclose it on the CT600 but no S455 tax is due. The disclosure is still required.</p>
-
-<h2>Common Mistakes Directors Make With Loan Accounts</h2>
-
-<p><strong>Mistake 1:</strong> Treating personal expenses paid by the company as non-loan items. If you use the company credit card for a personal purchase, that is a loan. It goes into the loan account. Do not hide it in sundry expenses.</p>
-
-<p><strong>Mistake 2:</strong> Thinking dividends declared at year end can clear the loan retrospectively. A dividend declared after the year end does not count as repayment before the 9 month deadline. The dividend must be declared and paid before the year end to reduce the loan balance for that year.</p>
-
-<p><strong>Mistake 3:</strong> Ignoring the loan account entirely. Many directors never look at it until their accountant raises it at year end. By then, the S455 tax may already be triggered with no time to fix it.</p>
-
-<p><strong>Mistake 4:</strong> Repaying the loan just before year end and redrawing immediately after. HMRC's bed and breakfasting rules catch this. You need a 30 day gap between repayment and any new borrowing.</p>
-
-<h2>When Should You Use a Directors Loan Account?</h2>
-
-<p>There are legitimate uses. A short-term loan to cover a personal emergency, repaid within a few months. A loan to buy a company asset personally and then sell it to the company. A bridging loan while waiting for a property sale to complete. These are fine as long as you document them and repay within the 9 month window.</p>
-
-<p>The problem is when the loan account becomes a permanent feature. If your loan balance has been overdrawn for years, that is a sign that your payment structure is wrong. You are either taking too much out of the company, or you are not processing your drawings correctly through payroll and dividends.</p>
-
-<h2>What If You Cannot Repay the Loan Before the Deadline?</h2>
-
-<p>If you cannot repay the loan before the 9 month and 1 day deadline, the company pays the S455 tax. That is the default outcome. It is not ideal, but it is better than an illegal dividend or a personal tax charge on a write-off.</p>
-
-<p>You can then repay the loan later and reclaim the S455 tax. The company will have lost the use of that cash in the meantime, but the tax is recoverable. Just make sure the company claims it within the 4 year time limit.</p>
-
-<p>If the loan is large and you have no realistic prospect of repaying it, speak to an accountant. There may be options to restructure, such as converting the loan to a dividend if the company has sufficient retained profits, or agreeing a repayment plan with HMRC.</p>
-
-<h2>Final Thoughts on Directors Loan Accounts</h2>
-
-<p>The directors loan account is a useful tool for short-term borrowing between you and your company. It is not a substitute for proper salary and dividend planning. If you treat it as such, you will eventually face S455 tax, benefit in kind charges, or worse.</p>
-
-<p>Keep the balance below £10,000 if possible. Repay any overdrawn balance within 9 months and 1 day of year end. Document everything. And if you are unsure about the balance, check it. Your accountant can run a loan account report from your bookkeeping software in minutes.</p>
-
-<p>If your turnover crossed the VAT threshold in the last 30 days, or you are considering restructuring your director pay, our <a href="/contact">contact page</a> connects you with a specialist accountant who can review your specific situation.</p>
+<p>If your loan account is overdrawn and the deadline is approaching, or you want a payment structure that stops the balance building in the first place, our <a href="/contact">contact page</a> connects you with an accountant who deals with this weekly.</p>

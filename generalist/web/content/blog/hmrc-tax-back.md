@@ -1,152 +1,147 @@
 ---
-title: 'HMRC Tax Back: How to Claim a Refund on Overpaid Tax'
+title: 'HMRC Tax Back: Every Way to Claim, Free and Direct'
 slug: hmrc-tax-back
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/hmrc-tax-back
 date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
-metaTitle: 'HMRC Tax Back: How to Claim a Refund on Overpaid Tax'
-metaDescription: Learn how to claim an HMRC tax back refund if you've overpaid. We cover PAYE, self assessment, expenses, and the correct forms to use.
+metaTitle: 'HMRC Tax Back: Every Way to Claim, Free and Direct'
+metaDescription: How to claim tax back from HMRC yourself, for free. Covers overpaid PAYE, work expenses and form P87, uniform flat rates, marriage allowance and P50.
 altText: Accountant reviewing HMRC tax back paperwork at a desk in a UK office
 image: https://images.pexels.com/photos/6863330/pexels-photo-6863330.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'HMRC Tax Back: How to Claim a Refund on Overpaid Tax'
-summary: If you've paid too much tax, you may be entitled to a refund. This guide covers the most common scenarios for claiming HMRC tax back, from PAYE overpayments to self assessment corrections, and explains the practical steps you need to take.
+h1: 'HMRC Tax Back: Every Way to Claim, Free and Direct'
+summary: If you have overpaid tax, you can claim it back from HMRC yourself, for free, without a refund company. This page covers the claim routes that put money back in your pocket, from overpaid PAYE and work expenses to marriage allowance and leaving a job part way through the year.
 schema: ''
 faqs:
-- question: Can I claim HMRC tax back for more than one tax year?
-  answer: Yes. You can usually claim for up to four previous tax years. For employment expenses, you can use form P87 for claims under £2,500 per year. For larger amounts, you need to submit a self assessment return. Refund and relief claims must reach HMRC within 4 years of the end of the relevant tax year (for example, a 2021/22 claim must arrive by 5 April 2026). If you filed a self assessment return, you also have a separate window of up to 12 months from the filing deadline to amend it directly; after that, you may need to write to HMRC to request overpayment relief.
-- question: How do I check if I have overpaid tax through PAYE?
-  answer: Log into your personal tax account on GOV.UK. It shows your estimated income, tax code, and the tax deducted for the current year. You can also check your P60 from your employer. If the figures do not match your actual income, you may have overpaid. The HMRC online tool can then tell you what to do next. You cannot claim a refund directly through the tool, but it gives you the correct steps.
-- question: What if my employer made a mistake on my tax?
-  answer: If your employer used the wrong tax code or deducted too much, you should contact HMRC first. They can adjust your tax code and issue a refund. If the error was on your payslip but HMRC has the correct information, the refund may come automatically. If not, you can claim through your personal tax account or by writing to HMRC. Your employer cannot refund tax directly; only HMRC can do that.
-- question: Do I need an accountant to claim an HMRC tax back refund?
-  answer: Not necessarily. Many claims are straightforward and can be done online for free. But if your situation is complex, such as having multiple income sources, foreign income, or claiming for several years, an accountant can ensure you claim everything correctly. They can also handle correspondence with HMRC and avoid common mistakes. If you are unsure, a free initial chat with an accountant can help you decide.
-dateModified: '2026-05-20'
-sourcesVerifiedAt: '2026-05-20'
+- question: Can I claim tax back for previous years?
+  answer: Yes. A claim must reach HMRC within 4 years of the end of the tax year it relates to, so during 2026/27 the oldest year you can still claim for is 2022/23. Work expense claims for earlier years go through the same online service or form P87, one year at a time. Marriage allowance backdates on the same basis. Miss the 4-year window and the money is gone, so check old years before checking the current one.
+- question: Can I get tax back on PAYE I overpaid last year?
+  answer: Yes. If you overpaid PAYE last year, sign in to your personal tax account on GOV.UK and check how much income tax you paid for that year. If HMRC's records already show the overpayment, a P800 calculation is usually on its way and you claim from that. If nothing shows, the usual causes are an unclaimed expense, a wrong code that HMRC has not spotted, or income that ended mid year, and you can contact HMRC or claim the specific relief directly.
+- question: Do I need a refund company to claim tax back?
+  answer: No, and we recommend you never use one. Every claim on this page, expenses, uniform flat rates, marriage allowance, leaving a job, is free to make directly with HMRC online. Refund companies charge a cut of your money, historically up to 30 percent or more, for filling in the same free forms. Some have also used assignment paperwork that directed future refunds to them. If a claim is genuinely complex, a regulated accountant charging a transparent fixed fee is the alternative, not a rebate firm.
+- question: What is the difference between form P87 and self assessment for expense claims?
+  answer: Form P87 (or the equivalent online service) is for employees claiming tax relief on work expenses of £2,500 or less in a tax year. If your allowable expenses for a year are more than £2,500, HMRC requires a self assessment tax return for that year instead. The relief itself is the same either way, it is only the claim route that changes.
+dateModified: '2026-08-25'
+sourcesVerifiedAt: '2026-08-25'
 sourceDomains:
-- aka.hmrc.gov.uk
-- bda.org
 - gov.uk
 imageCredit:
   photographer: Nataliya Vaitkevich
-  photographer_url: https://www.pexels.com/@n-voitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
   source: Pexels
-  source_url: https://www.pexels.com/photo/person-filing-tax-documents-6863330/
+  sourceUrl: https://www.pexels.com/photo/person-filing-tax-documents-6863330/
 keyTakeaways:
-  - "You can claim HMRC tax back for up to four previous tax years."
-  - "For employment expense claims under £2,500, use form P87; larger amounts require a full self assessment tax return."
-  - "The first £30,000 of a statutory redundancy payment is tax-free, so tax wrongly deducted on that portion can be reclaimed from HMRC."
-  - "Online refund claims through your personal tax account are typically processed within 5 to 10 working days, while paper claims can take up to 8 weeks."
-  - "Third-party claims companies can charge up to 30% of your refund, but the same claim can be made for free using HMRC's own online tools."
-  - "For self assessment returns, you have up to 12 months from the filing deadline to amend directly; after that, you may need to write to HMRC for overpayment relief."
+  - "Every claim route on this page is free: you claim tax back directly from HMRC online, and a refund company adds nothing except its fee."
+  - "Claims must reach HMRC within 4 years of the end of the tax year, so in 2026/27 the oldest claimable year is 2022/23."
+  - "Employees claim work expenses of £2,500 or less per year through the online service or form P87; above £2,500 the claim goes through a self assessment return."
+  - "Uniform and tool claims use HMRC flat rate expenses, £60 a year for the standard uniform allowance, worth £12 a year at the basic rate."
+  - "Marriage allowance transfers £1,260 of personal allowance between spouses or civil partners, worth up to £252 a year, and can be backdated."
+  - "If you stop working part way through a tax year and are out of work for 4 weeks or more, form P50 reclaims the overpaid tax without waiting for the year end."
 ---
-<h2>What Does HMRC Tax Back Mean?</h2>
+<h2>Who Can Get Tax Back From HMRC?</h2>
 
-<p>If you have paid more tax than you owe, you can claim the difference back from HMRC. This is commonly called an HMRC tax back, a tax rebate, or a tax refund. The principle is straightforward: HMRC should only collect the correct amount of tax based on your income, allowances, and reliefs. When too much is taken, you are entitled to a refund. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
+<p>Anyone who has paid more tax than the law requires can claim the difference back. That includes tax back on pay from a job, work expenses your employer did not reimburse, a pension, a redundancy payment, savings interest, and UK income if you live abroad <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The common thread is that HMRC does not always know you overpaid, so the money sits unclaimed until you act.</p>
 
-<p>The most common reasons for overpaying include:</p>
+<p>One rule sits above everything else on this page: every claim here is free to make yourself, directly with HMRC. You never need a refund company, and we explain why in the final section. The claim routes are:</p>
+
 <ul>
-<li>Being on the wrong tax code through your employer or pension provider.</li>
-<li>Having emergency tax applied when you start a new job.</li>
-<li>Claiming employment expenses that reduce your taxable pay.</li>
-<li>Overpaying tax on a self assessment return.</li>
-<li>Receiving redundancy pay that triggers an incorrect tax calculation.</li>
-<li>Having UK income while living abroad.</li>
-<li>Overpaying tax on savings interest or PPI payouts.</li>
+<li>Correcting a wrong tax code (overpaid PAYE).</li>
+<li>Claiming work expenses through the online service or form P87.</li>
+<li>Claiming flat rate expenses for uniforms and tools.</li>
+<li>Transferring marriage allowance between spouses or civil partners.</li>
+<li>Reclaiming tax after leaving a job or paying emergency tax, using form P50.</li>
 </ul>
 
-<p>Each scenario has a different process. We will walk through the main ones below.</p>
+<p>This page covers how to make each claim. For what happens after you claim, how HMRC actually pays refunds, the P800 letter, bank transfer against cheque and the timescales, see our companion page on <a href="/blog/bookkeeping-and-compliance/hm-revenue-customs-tax-refund">how HMRC tax refunds are paid</a>.</p>
 
-<h2>How to Claim HMRC Tax Back Through PAYE</h2>
+<h2>Check Your Tax Code First</h2>
 
-<p>If you are an employee or receive a pension, your tax is usually deducted through PAYE. If HMRC calculates that you have overpaid, they will often issue a refund automatically. But this is not guaranteed. You may need to take action yourself. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
+<p>The single most common reason for overpaid PAYE is a wrong tax code. Your code is on every payslip and on your P60. For 2026/27 the standard code is 1257L, reflecting the £12,570 personal allowance. Codes go wrong when you change jobs, take on a second job or pension, or when an old benefit in kind stays in the code after it stopped.</p>
 
-<p>The first step is to check your tax code. Your tax code is shown on your payslip or your P60 (the year-end summary from your employer). If the code is wrong, your tax deduction will be wrong. Common codes like 1257L (standard personal allowance) or BR (basic rate on all income) can be incorrect if your circumstances have changed.</p>
+<p>Sign in to your personal tax account on GOV.UK, check the code HMRC holds and the estimated income behind it, and report anything wrong online. HMRC corrects the code, and tax overpaid in the current year comes back through your pay. For an earlier year, the correction feeds into a P800 calculation instead.</p>
 
-<p>You can check your tax code and estimated income for the current year through your personal tax account on GOV.UK. If you spot an error, you can report it online. HMRC will then adjust your code and issue a refund for any overpaid tax from the current or previous tax year.</p>
+<p>If you overpaid tax last year and want a refund from HMRC, this is where to start: the personal tax account shows how much income tax you paid in each of the last few years, which tells you whether there is anything to reclaim before you fill in a single form.</p>
 
-<p>For previous tax years, you can use the HMRC tool to check what you need to do. The tool covers overpayments from pay, job expenses, pensions, self assessment, redundancy, UK income if you live abroad, savings interest, PPI, annuities, foreign income, and UK income earned before leaving the UK. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
+<h2>Claiming Work Expenses: P87 and the £2,500 Rule</h2>
 
-<p>Important: you cannot claim a refund directly through this tool. It tells you what to do next. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
+<p>Employees who pay for work costs their employer does not reimburse can claim tax relief on them. Qualifying costs include working from home (where your employer requires it), business mileage paid below the approved rates, professional subscriptions on HMRC's approved list, and the tools and specialist clothing covered by the flat rates below.</p>
 
-<h3>Claiming Employment Expenses</h3>
+<p>The claim route depends on the size of the claim:</p>
 
-<p>If you have paid for work-related expenses that your employer did not reimburse, you may be able to claim tax relief. Common examples include:</p>
+<table>
+<thead><tr><th>Expenses in the tax year</th><th>Claim route</th></tr></thead>
+<tbody>
+<tr><td>£2,500 or less</td><td>HMRC's online service or form P87, per year, up to 4 years back</td></tr>
+<tr><td>More than £2,500</td><td>Self assessment tax return for that year</td></tr>
+</tbody>
+</table>
+
+<p>This is why a large mileage or subscription claim sometimes pulls an employee into self assessment: a self assessment tax refund for expenses works exactly like a P87 claim, the return is simply the required route once a year's expenses pass £2,500. Relief is given at your marginal rate, so a basic rate taxpayer claiming £60 of allowable costs gets £12 back (20% of £60) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. For the current year HMRC usually adjusts your tax code; for earlier years it issues a refund <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Keep receipts, HMRC can ask for evidence.</p>
+
+<h3>Uniform and Tool Flat Rate Expenses</h3>
+
+<p>If you wash, repair or replace a recognisable work uniform, or buy small tools for the job, HMRC's flat rate expenses let you claim a fixed annual amount with no receipts. The standard uniform allowance is £60 a year; many trades have higher occupation-specific rates listed in HMRC's flat rate expenses table, so check your occupation before defaulting to £60. At the basic rate, £60 of relief is worth £12 a year, and a backdated 4-year claim multiplies that.</p>
+
+<h3>Worked Example: A Uniform and Tools Claim</h3>
+
+<p>Nadia is a lab technician in Swansea on the basic rate (20%). In 2026/27 she spends £350 on required equipment her employer does not reimburse, and she also qualifies for the £60 standard uniform flat rate. She has never claimed before and was eligible for the uniform flat rate in the 3 earlier years still inside the 4-year window.</p>
+
 <ul>
-<li>Working from home costs (if your employer does not cover them).</li>
-<li>Fuel costs for business travel.</li>
-<li>Work clothing, tools, or specialist equipment.</li>
-<li>Professional subscriptions and fees.</li>
+<li>2026/27 claim: £350 + £60 = £410 of allowable expenses. Under £2,500, so the online service or P87 applies. Relief: £410 × 20% = £82.</li>
+<li>Backdated uniform claims: £60 × 3 earlier years = £180. Relief: £180 × 20% = £36.</li>
+<li>Total tax back: £82 + £36 = £118, claimed free, directly from HMRC.</li>
 </ul>
 
-<p>For employed dentists, HMRC restricts tax relief to 90% of a subscription. Dentists who are not employed can claim on 100% of the fee. All submissions must be made by 5 April each year. The tax relief is then reimbursed via your tax code for the following year. <sup><a href="#ref-3" id="cite-3">[3]</a></sup></p>
+<h2>Marriage Allowance: The Claim Couples Miss</h2>
 
-<p>You can claim for up to four previous tax years. Use form P87 if your total claim is under £2,500. For larger amounts, you will need to complete a self assessment tax return.</p>
+<p>Marriage allowance lets a spouse or civil partner who earns below the personal allowance (usually £12,570) transfer £1,260 of that allowance to their partner, provided the partner is a basic rate taxpayer (income between £12,571 and £50,270 outside Scotland). It reduces the receiving partner's tax by up to £252 a year <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
-<h2>Claiming HMRC Tax Back Through Self Assessment</h2>
+<p>The claim is made online by the lower earner, takes minutes, and can be backdated to include earlier eligible years within the claim window <sup><a href="#ref-3" id="cite-3">[3]</a></sup>, so a first-time claim covering several years can be worth close to £1,000 as a lump sum refund. Once claimed, it renews automatically until you cancel it, so remember to cancel if the lower earner's income rises above the allowance.</p>
 
-<p>If you submit a self assessment tax return, you may discover that you have overpaid tax. This can happen if you overestimated your income, missed a relief, or paid too much on account.</p>
+<h2>Getting Tax Back After Leaving a Job</h2>
 
-<p>When you file your return, HMRC calculates the tax due. If you have already paid more than that amount through PAYE or payments on account, the system will show a refund due. You can request this refund when you submit the return online. HMRC will usually process it within a few weeks.</p>
+<p>PAYE spreads your personal allowance evenly across the year. Stop working in, say, September and you have only used half a year's pay against a code that assumed twelve months, so you have usually overpaid. Two situations, two answers:</p>
 
-<p>If you realise you overpaid in a previous year, you can amend your return. For most people, you have up to 12 months from the filing deadline to make a correction. After that, you may need to write to HMRC.</p>
-
-<p>We see many business owners miss out on refunds simply because they do not check their tax position regularly. A quick review of your tax account each year can save you money.</p>
-
-<h2>What About Redundancy Pay?</h2>
-
-<p>Redundancy payments can trigger incorrect tax deductions. The first £30,000 of a statutory redundancy payment is tax-free. But if your employer applies tax to the full amount, you will overpay. You can claim the overpaid tax back from HMRC using the online tool or by writing to them. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
-
-<p>Similarly, if you receive a termination payment that includes pay in lieu of notice, the tax treatment can be complex. It is worth checking your P45 and the tax deducted.</p>
-
-<h2>Claiming Tax Back on Savings and PPI</h2>
-
-<p>If you have savings interest that was taxed at source (basic rate), and you are a non-taxpayer, you can claim the tax back. The same applies to PPI payouts that had tax deducted. Use the HMRC tool to check what you need to do. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
-
-<p>For pension annuities, tax is deducted at source. If your total income is below the personal allowance, you can reclaim the overpaid tax.</p>
-
-<h2>Claiming Tax Back if You Live Abroad</h2>
-
-<p>If you have UK income while living abroad, you may have overpaid tax. This includes rental income, pension income, or investment income. You can use the HMRC tool to check what you need to do. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
-
-<p>You may also be able to claim relief under a double taxation agreement. This prevents you from paying tax twice on the same income. The process varies by country, so it is worth getting professional advice.</p>
-
-<h2>How Long Does an HMRC Tax Back Refund Take?</h2>
-
-<p>If you claim online through your personal tax account, refunds are usually processed within 5 to 10 working days. If you submit a paper claim, it can take up to 8 weeks. For self assessment refunds, the timeline is similar once the return is processed.</p>
-
-<p>If you have already claimed a tax refund, you can check when to expect a reply on the HMRC website. <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup></p>
-
-<h2>Common Mistakes to Avoid</h2>
-
-<p>Do not use a third-party claims company without checking their fees first. Many charge a percentage of your refund, sometimes up to 30%. You can do the same work yourself for free using the HMRC online tools.</p>
-
-<p>Do not ignore a tax code notice. If HMRC sends you a coding notice (P2), read it carefully. It shows the allowances and deductions HMRC is using. If it is wrong, tell them immediately.</p>
-
-<p>Do not assume HMRC will automatically correct an overpayment. While they do catch many errors, they also miss some. It is your responsibility to check your tax position.</p>
-
-<h2>When to Get Professional Help</h2>
-
-<p>Most HMRC tax back claims are straightforward. But some situations are more complex:</p>
 <ul>
-<li>If you have multiple income sources and complex reliefs.</li>
-<li>If you are claiming for several previous tax years.</li>
-<li>If you have been overpaid tax due to an error by your employer.</li>
-<li>If you are a contractor caught by IR35 and need to adjust your tax position.</li>
-<li>If you are claiming R&D tax credits alongside a refund.</li>
+<li><strong>Starting another job within 4 weeks:</strong> do nothing. Hand your new employer your P45 and the new payroll refunds the overpayment through your first pay.</li>
+<li><strong>Out of work for 4 weeks or more, and not claiming taxable state benefits or drawing a pension:</strong> claim now with form P50, online or by post, using parts 2 and 3 of your P45 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. You do not have to wait until the end of the tax year.</li>
 </ul>
 
-<p>In these cases, speaking to an accountant can save you time and ensure you claim everything you are entitled to. Our <a href="/services">services</a> team can review your tax position and handle the claim on your behalf.</p>
+<p>The same logic applies to emergency tax. A new employer without your P45 puts you on an emergency code and often deducts too much in the first month or two. Usually this self-corrects once HMRC issues the right code, but if the year ends before it does, the overpayment comes back through the P800 process.</p>
 
-<p>If you are unsure about your tax code or whether you have overpaid, start by checking your personal tax account online. From there, you can decide whether to claim yourself or get professional support. Our <a href="/contact">contact</a> page has details for a free initial chat.</p>
+<h2>The Four-Year Deadline</h2>
 
-<p>For more guidance on tax basics, see our <a href="/fundamentals">fundamentals</a> page. It covers tax codes, allowances, and common reliefs in plain English.</p>
+<p>A claim must reach HMRC within 4 years of the end of the tax year it relates to. During 2026/27, that means:</p>
+
+<table>
+<thead><tr><th>Tax year</th><th>Claim deadline</th></tr></thead>
+<tbody>
+<tr><td>2022/23</td><td>5 April 2027</td></tr>
+<tr><td>2023/24</td><td>5 April 2028</td></tr>
+<tr><td>2024/25</td><td>5 April 2029</td></tr>
+<tr><td>2025/26</td><td>5 April 2030</td></tr>
+</tbody>
+</table>
+
+<p>The practical rule: check your oldest claimable year first. Every 6 April, one year drops off the table for good.</p>
+
+<h2>Why You Should Never Pay a Refund Company</h2>
+
+<p>Search any of these claims and adverts for tax rebate firms appear above the free HMRC route. Our position is blunt: do not use them. They complete the same forms you can complete yourself, then keep a slice of your money as their fee. Some have used deeds of assignment or nomination paperwork so that refunds, including future ones, were paid to the firm rather than to the taxpayer, a practice HMRC has moved against with its repayment agent rules.</p>
+
+<p>We are an accountancy firm and we do not process rebate claims either: this page exists so you can claim free, directly from HMRC. If your affairs are genuinely complicated, pay a regulated accountant a transparent fee for advice, never a percentage of a refund that was always yours.</p>
+
+<h2>When an Accountant Genuinely Helps</h2>
+
+<p>Most of the claims above take minutes online. Professional help earns its fee when the underlying position is complex rather than the form: multiple income sources across PAYE and self employment, expense claims above £2,500 that pull you into a return, foreign income and double taxation relief, or an employer error running across several years. Our <a href="/services">services</a> team handles these, and our <a href="/contact">contact</a> page has details for a free initial chat.</p>
+
+<p>For tax code and allowance basics in plain English, see our <a href="/fundamentals">fundamentals</a> page. And once your claim is in, our companion page explains <a href="/blog/bookkeeping-and-compliance/hm-revenue-customs-tax-refund">how and when HMRC will actually pay the refund</a>.</p>
 
 <h2>Sources</h2>
 <ol>
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/claim-tax-refund" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
-  <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/incometax/refund-reclaim.htm" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
-  <li id="ref-3"><strong>bda.org</strong>: <a href="https://www.bda.org/become-a-bda-member/fees/reclaim-my-tax/" rel="noopener noreferrer">Reclaim my tax - British Dental Association</a></li>
+  <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/tax-relief-for-employees/how-to-claim" rel="noopener noreferrer">Claim tax relief for your job expenses - GOV.UK</a></li>
+  <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/marriage-allowance" rel="noopener noreferrer">Marriage Allowance - GOV.UK</a></li>
+  <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/government/publications/income-tax-claiming-tax-back-when-you-have-stopped-working-p50" rel="noopener noreferrer">Claim back Income Tax when you've stopped working (P50) - GOV.UK</a></li>
 </ol>
-

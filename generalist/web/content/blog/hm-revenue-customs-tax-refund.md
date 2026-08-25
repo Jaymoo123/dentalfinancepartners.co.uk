@@ -1,166 +1,135 @@
 ---
-title: 'How to Claim an HM Revenue & Customs Tax Refund: A Practical Guide'
+title: 'HM Revenue & Customs Tax Refund: How Refunds Are Paid'
 slug: hm-revenue-customs-tax-refund
 canonical: https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/hm-revenue-customs-tax-refund
 date: '2026-05-20'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
-metaTitle: 'HM Revenue & Customs Tax Refund: How to Claim Your Tax Back'
-metaDescription: Learn how to claim an HM Revenue & Customs tax refund if you've overpaid tax. Covers P800, Self Assessment, job expenses, and common pitfalls.
+metaTitle: 'HM Revenue & Customs Tax Refund: How Refunds Are Paid'
+metaDescription: How an HM Revenue & Customs tax refund actually reaches you. P800 letters, bank transfer in 5 working days or a cheque in 14, and spotting refund scams.
 altText: UK business owner reviewing HMRC tax refund paperwork on a laptop in a modern office
 image: https://images.pexels.com/photos/16124523/pexels-photo-16124523.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'How to Claim an HM Revenue & Customs Tax Refund: A Practical Guide'
-summary: A practical guide to claiming a tax refund from HMRC. Covers the P800 process, Self Assessment adjustments, job expenses, and what to watch out for.
+h1: 'HM Revenue & Customs Tax Refund: How Refunds Are Paid'
+summary: What happens between HMRC deciding you overpaid and the money reaching your account. The P800 calculation, bank transfer against cheque, self assessment repayments, the real timescales, and how to tell a genuine refund from a scam email.
 schema: ''
 faqs:
-- question: How long does an HMRC tax refund take?
-  answer: If you claim online through your Personal Tax Account, HMRC typically processes the refund within 5 to 10 working days. Postal claims take longer, often 6 to 8 weeks. If you have already claimed, you can check the expected reply time on the gov.uk website. Delays are more common during peak periods, such as after the 31 January Self Assessment deadline.
-- question: Can I claim a tax refund for working from home?
-  answer: Yes, if you worked from home and your employer did not reimburse you for the additional costs, you can claim tax relief. This covers heating, electricity, and broadband for your work area. You do not need to calculate exact costs if you use the HMRC flat rate of £6 per week. For the 2024/25 tax year, that gives you a refund of £1.20 per week at the basic rate.
+- question: Do HMRC automatically refund overpaid tax?
+  answer: Sometimes. After the tax year ends, HMRC reconciles PAYE records and sends a P800 calculation to anyone who overpaid, usually between June and the following March. If the letter says a cheque is coming, it arrives automatically within 14 days of the letter date with no action needed. If the letter invites you to claim online, the refund is not automatic, you must request it, and unclaimed amounts eventually default to a cheque. Self assessment overpayments are not refunded automatically either, you request repayment through the return or your online account.
+- question: How long does an HM Revenue & Customs tax refund take to arrive?
+  answer: Once a P800 says you are due money, an online bank transfer claim is paid within 5 working days, and an automatic cheque arrives within 14 days of the date on the letter. The longer wait is usually upstream of that, HMRC issues P800s between June and the following March, so a refund for a year that ended in April may not be calculated until months later. Self assessment repayments typically arrive within a few weeks of the return being processed, longer around the 31 January peak.
 - question: What is a P800 tax calculation letter?
-  answer: A P800 is a letter from HMRC that tells you if you have paid too much or too little Income Tax. It is sent after the end of the tax year, usually between June and November. If you are due a refund, the letter will explain how to claim it online. If you owe tax, it will tell you how to pay. Check the figures carefully before acting.
-- question: Can I claim a tax refund if I am self-employed?
-  answer: Yes, but the process is different. If you file a Self Assessment return, any overpayment is reconciled when your return is processed. You do not receive a P800. If you have overpaid, HMRC will issue a refund after the return is processed. You can also reduce your payments on account if your income has dropped, which prevents overpayment in the first place.
-dateModified: '2026-05-20'
-sourcesVerifiedAt: '2026-05-20'
+  answer: A P800 is HMRC's end-of-year reconciliation for people taxed under PAYE. It compares the tax you actually paid with the tax due on your income and says whether you overpaid or underpaid. It shows the income and allowance figures HMRC used, which is why you should check it against your P60 before accepting it. Self assessment filers do not get a P800, their reconciliation happens through the return.
+- question: How do I get a self assessment overpayment refunded?
+  answer: Request it. When your return shows you paid more than the final liability, through payments on account or PAYE, you can ask for repayment on the return itself by entering your bank details, or afterwards through your online self assessment account. Without a request, HMRC tends to hold the credit against your next liability. If your income has dropped, you can also apply to reduce your payments on account so the overpayment never builds up in the first place.
+dateModified: '2026-08-25'
+sourcesVerifiedAt: '2026-08-25'
 sourceDomains:
-- acas.org.uk
-- aka.hmrc.gov.uk
-- fca.org.uk
-- gdc-uk.org
 - gov.uk
-- taxscape.deloitte.com
 imageCredit:
   photographer: Mathias Reding
-  photographer_url: https://www.pexels.com/@matreding
+  photographerUrl: https://www.pexels.com/@matreding
   source: Pexels
-  source_url: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
+  sourceUrl: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
 keyTakeaways:
-  - "HMRC typically processes online tax refund claims within 5 to 10 working days; postal claims take longer, often 6 to 8 weeks."
-  - "Self Assessment filers do not receive a P800 letter; any overpayment is reconciled when the return is processed and HMRC issues a refund after that point."
-  - "Employees can claim tax relief on job expenses including working from home costs, fuel, work clothing and tools, provided their employer did not reimburse those costs."
-  - "HMRC sends a P800 tax calculation letter if it believes you overpaid or underpaid; if a refund is due, you can often claim it online."
-  - "Tax refund claims can be made for free through HMRC directly, so there is no need to use a third-party refund company that charges a percentage of your refund."
-  - "Tax avoidance scheme users risk large tax bills, sometimes paying far more than the tax they tried to avoid, including interest and penalties, according to HMRC."
-howToSteps:
-  - name: "Check your tax position"
-    text: "Log in to your Personal Tax Account on gov.uk or open the HMRC app to see how much Income Tax you paid in previous years."
-  - name: "Review any P800 letter"
-    text: "If HMRC sends a P800, read it carefully against your own records and claim online through your Personal Tax Account if the letter says you are eligible."
-  - name: "Submit your Self Assessment return"
-    text: "If you are on Self Assessment, submit your return; HMRC will reconcile your tax position and issue a refund for any overpayment after the return is processed."
-  - name: "Claim job expenses"
-    text: "Claim relief on working from home costs, fuel, work clothing and tools through your Personal Tax Account or the relevant section of your Self Assessment return."
-  - name: "Keep expense records"
-    text: "Retain receipts and evidence for every expense you claim, as HMRC may ask for proof and can audit claims going back several years."
-  - name: "Non-residents with UK income"
-    text: "If you live abroad and receive UK income, use the non-resident landlord scheme or file a Self Assessment return."
+  - "HMRC issues P800 tax calculation letters between June and the following March; the letter tells you whether you overpaid and how the refund will be paid."
+  - "An online bank transfer claim from a P800 is paid within 5 working days; an automatic cheque arrives within 14 days of the date on the letter."
+  - "If you are owed tax from more than one year, HMRC pays it as a single cheque for the whole amount."
+  - "Self assessment overpayments are repaid on request through the return or your online account, not through a P800."
+  - "Always check a P800 against your P60 before accepting it; the calculation is only as good as the income figures behind it."
+  - "HMRC never emails or texts a refund link asking for bank or personal details; forward scam texts to 60599 and emails to phishing@hmrc.gov.uk."
 ---
-<p>If you have paid too much tax to HM Revenue & Customs, you may be due a refund. This is more common than many business owners realise. Overpayments happen for several reasons: a change in employment, working from home, claiming job expenses, or a redundancy payment that pushed you into a higher tax bracket temporarily.</p>
+<h2>The Two Routes an HMRC Refund Can Take</h2>
 
-<p>This guide explains the practical steps to claim your money back. We cover the different routes depending on how you pay tax, what HMRC will ask for, and the warning signs of tax refund scams.</p>
-
-<h2>How Do You Know If You Have Overpaid Tax?</h2>
-
-<p>The most reliable way to check is through your Personal Tax Account on the gov.uk website. You can use this service to see how much Income Tax you paid last year, provided you did not pay any of that tax through Self Assessment <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. If you file a Self Assessment return, your tax position is reconciled through that process instead.</p>
-
-<p>HMRC will send you a tax calculation letter, known as a P800, if they believe you have overpaid or underpaid. The P800 will tell you the amount and, in many cases, allow you to claim the refund online <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. You can also use the HMRC app to check your tax position for previous years <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-
-<p>If you cannot create a Personal Tax Account, contact HMRC directly for advice <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. You can also estimate your Income Tax for previous years without signing in, though this is less precise <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-
-<h2>What Can You Claim a Refund For?</h2>
-
-<p>HMRC's online tool lists the most common reasons for overpayment. You may have paid too much tax on pay from a job, a pension, a redundancy payment, UK income if you live abroad, interest from savings or Payment Protection Insurance (PPI), income from a life or pension annuity, or foreign income <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-
-<p>You can also claim for job expenses. These include working from home costs, fuel, work clothing, and tools <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you are an employee and your employer did not reimburse you for these, you can claim tax relief on the amount you spent.</p>
-
-<p>For example, if you spent £60 on specialist work boots and your employer did not pay you back, you can claim tax relief on that £60. At the basic rate of 20%, that means a refund of £12. It is not a huge sum, but it adds up across multiple claims.</p>
-
-<p>One important point: you cannot claim a refund directly through the HMRC tool. The tool tells you what you need to do next, which is usually to submit a claim through your Personal Tax Account or by post <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-
-<h2>The P800 Process: What to Expect</h2>
-
-<p>If HMRC sends you a P800, read it carefully. The letter will state whether you are due a refund or owe tax. If you are due a refund and the letter says you can claim online, you can do so through your Personal Tax Account <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-
-<p>HMRC will typically process the refund within 5 to 10 working days if you claim online. Postal claims take longer, often 6 to 8 weeks. If you have already claimed a tax refund, you can check the expected reply time on the gov.uk website <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-
-<p>Do not assume a P800 is correct. Check the figures against your own records. If something does not match, contact HMRC before accepting the calculation.</p>
-
-<h2>Self Assessment and Tax Refunds</h2>
-
-<p>If you file a Self Assessment tax return, your refund is handled differently. You do not receive a P800. Instead, your tax position is reconciled when you submit your return. If you have overpaid, HMRC will issue a refund after the return is processed.</p>
-
-<p>You can also adjust your tax payments on account if your income has dropped. This prevents you from overpaying in the first place. Many sole traders and contractors miss this step and end up waiting for a refund later.</p>
-
-<p>We see this regularly with clients who have had a quiet year. If your 2024/25 income was significantly lower than 2023/24, you can apply to reduce your payments on account for 2025/26. This keeps your cash in your business rather than sitting with HMRC.</p>
-
-<p>For more on Self Assessment, see our <a href="/blog/sole-trader-and-self-employment">sole trader and self employment blog</a>.</p>
-
-<h2>Employer Deductions: What Is and Is Not Allowed</h2>
-
-<p>By law, under the Employment Rights Act 1996, an employer can only make a deduction from wages if it is required by law, such as tax and National Insurance <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. If you are an employee or worker, your employer must deduct tax and NI and pass it to HMRC <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
-
-<p>Employers cannot deduct from tips, service charges, or gratuities that they control or have significant influence over, except for the usual tax and NI deductions <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. In retail, an employer can take a maximum of 10% of gross pay for till shortages or stock shortfalls <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
-
-<p>If you believe your employer has made an incorrect deduction, you should raise it with them first. If that does not resolve it, you can contact HMRC or Acas for advice.</p>
-
-<h2>Pension Lump Sums and Tax Refunds</h2>
-
-<p>Taking a Pension Commencement Lump Sum (PCLS), commonly known as a tax-free lump sum, does not trigger cancellation rights under FCA rules <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. However, if you take a PCLS and later wish to return the money to your pension, the tax implications are complex.</p>
-
-<p>HMRC published newsletter 173 on 25 September 2025, which explains how tax legislation applies to tax-free lump sums and the tax implications when lump sums are returned to pensions <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. If you are considering this, speak to a qualified financial adviser first. The tax charge can be significant.</p>
-
-<h2>Warning: Tax Avoidance Schemes</h2>
-
-<p>If someone offers to get you a tax refund quickly or promises a refund that seems too good to be true, it is likely a tax avoidance scheme. Jonathan Smith, Director of Counter Avoidance at HMRC, states that these schemes rarely work as promoters claim, and users can end up with large tax bills, sometimes paying far more than the tax they tried to avoid, including interest and penalties <sup><a href="#ref-5" id="cite-5">[5]</a></sup>.</p>
-
-<p>Around 40% of dental professionals surveyed in 2020 were self-employed or working as a freelancer or locum <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. That is around 46,000 dental professionals <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. This group is a common target for avoidance scheme promoters. The same applies to contractors in IT, construction, and consulting.</p>
-
-<p>Stick to legitimate claims. If you are unsure, ask a qualified accountant before signing anything.</p>
-
-<h2>How to Claim: Step by Step</h2>
-
-<p>Here is the practical process for most refund claims:</p>
+<p>Every HM Revenue & Customs tax refund reaches you down one of two tracks, and which one applies depends on how you pay tax, not on how much you are owed.</p>
 
 <ul>
-<li>Check your tax position through your Personal Tax Account or the HMRC app <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
-<li>If you receive a P800, review it and claim online if eligible <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
-<li>If you file Self Assessment, submit your return and any overpayment will be refunded after processing.</li>
-<li>For job expenses, claim through your Personal Tax Account or by completing the relevant section of your Self Assessment return.</li>
-<li>Keep records of your expenses. HMRC may ask for evidence.</li>
-<li>If you live abroad and have UK income, use the non-resident landlord scheme or file a Self Assessment return <sup><a href="#ref-6" id="cite-6">[6]</a></sup>.</li>
+<li><strong>PAYE route:</strong> HMRC reconciles employer and pension payroll data after the year end, and if you overpaid it sends a P800 tax calculation letter. The refund follows from that letter.</li>
+<li><strong>Self assessment route:</strong> there is no P800. Your return is the reconciliation, and any overpayment becomes a credit you ask HMRC to repay.</li>
 </ul>
 
-<p>For a full breakdown of the services we offer, see our <a href="/services">services page</a>. If you need help with a specific claim, <a href="/contact">contact us</a>.</p>
+<p>This page is about that machinery: what the P800 says, how the money is actually paid, the real timescales, and how to spot the scam messages that imitate the process. If you have not yet made a claim and want to know what you can claim for, expenses, marriage allowance, leaving a job, start with our companion page on <a href="/blog/bookkeeping-and-compliance/hmrc-tax-back">how to claim tax back from HMRC</a>.</p>
 
-<h2>Common Mistakes to Avoid</h2>
+<h2>What a P800 Tax Calculation Says</h2>
 
-<p>Do not assume a P800 is final. Check it. If you disagree, you have the right to challenge it.</p>
+<p>HMRC sends P800 letters between June and the following March, once employers' final year-end submissions have been processed <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The letter sets out your income, allowances, the tax due, the tax actually deducted, and the difference. Three outcomes are possible: you overpaid and are due a refund, you underpaid and the letter explains how the shortfall will be collected, or (where more than £3,000 is owed or it cannot be coded out) HMRC issues a Simple Assessment instead <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
-<p>Do not use a third-party refund company that charges a percentage of your refund. You can do it yourself for free through HMRC.</p>
+<p>Treat the P800 as a proposal, not a verdict. It is built from the figures HMRC holds, and if an employment is missing or a benefit in kind is doubled up, the arithmetic will be faithfully wrong. Check it against your P60 and payslips before you accept it.</p>
 
-<p>Do not ignore a P800 that says you owe tax. Interest and penalties will accrue.</p>
+<h2>Bank Transfer or Cheque: How the Money Is Paid</h2>
 
-<p>Do not claim expenses you did not actually incur. HMRC can audit claims going back several years.</p>
+<p>The P800 itself tells you which payment method applies <sup><a href="#ref-2" id="cite-2">[2]</a></sup>:</p>
 
-<p>For more on staying compliant, see our <a href="/blog/bookkeeping-and-compliance">bookkeeping and compliance blog</a>.</p>
+<table>
+<thead><tr><th>What the letter says</th><th>What you do</th><th>When the money arrives</th></tr></thead>
+<tbody>
+<tr><td>You can claim online</td><td>Claim via the online service, your personal tax account or the HMRC app, using the P800 reference and your National Insurance number</td><td>Bank transfer within 5 working days</td></tr>
+<tr><td>You will be sent a cheque</td><td>Nothing, it is automatic</td><td>Within 14 days of the date on the letter</td></tr>
+</tbody>
+</table>
 
-<h2>When to Speak to an Accountant</h2>
+<p>Two useful details. First, if you are owed tax from more than one year, HMRC pays a single cheque for the entire amount rather than one per year <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Second, the online claim service can also be used to request a cheque if you prefer one, but the bank transfer is faster and removes the risk of a cheque going to an old address, so keep your address current in your personal tax account.</p>
 
-<p>If your tax affairs are straightforward, you can handle a refund claim yourself. But if you have multiple income sources, foreign income, or complex expenses, it is worth getting professional advice. The cost of an accountant is often less than the tax you might miss or the penalties from a mistake.</p>
+<h2>Worked Example: Reading a P800</h2>
 
-<p>Our <a href="/about">team</a> can help you review your tax position and ensure you are claiming everything you are entitled to. We also have a range of <a href="/calculators">calculators</a> to help you estimate your tax liability.</p>
+<p>Marcus, an employee in Derby, gets a P800 for 2025/26. It shows taxable pay of £28,000 and the standard personal allowance of £12,570.</p>
 
-<p>If your turnover crossed the VAT threshold in the last 30 days, register inside the 30-day window. If you are considering incorporating, read our <a href="/incorporation">incorporation guide</a> first.</p>
+<ul>
+<li>Taxable income: £28,000 − £12,570 = £15,430.</li>
+<li>Tax due at the basic rate: £15,430 × 20% = £3,086.</li>
+<li>Tax actually deducted under PAYE (a wrong code ran for part of the year): £3,406.</li>
+<li>Refund due: £3,406 − £3,086 = £320.</li>
+</ul>
+
+<p>Marcus checks the £28,000 and £3,406 against his P60, they match, so he claims online and the £320 lands by bank transfer within 5 working days. If his P60 had shown different figures, the right move would be to contact HMRC before claiming, because a P800 built on wrong inputs can just as easily under-refund as over-refund.</p>
+
+<h2>Self Assessment Overpayments: Repayment on Request</h2>
+
+<p>If you file a self assessment return, your refund mechanics are different in three ways:</p>
+
+<ul>
+<li><strong>No P800.</strong> The return itself reconciles your position, so the refund shows up as a credit on your self assessment statement once the return is processed.</li>
+<li><strong>You must request repayment.</strong> Enter your bank details in the repayment section of the return, or request it afterwards through your online account. Left alone, HMRC will typically set the credit against your next payment on account or balancing payment.</li>
+<li><strong>You can stop the overpayment at source.</strong> Payments on account are based on last year's liability. If this year's income is lower, apply to reduce them rather than overpaying and waiting for the money back. We see this every year with clients whose trading dipped: reducing the July payment keeps the cash in the business instead of lodging it with HMRC.</li>
+</ul>
+
+<p>Repayments requested with the return usually arrive within a few weeks of processing, though security checks and the post-31-January peak both stretch that. For the wider return process, see our <a href="/blog/sole-trader-and-self-employment">sole trader and self employment blog</a>.</p>
+
+<h2>Checking the Status of a Refund</h2>
+
+<p>Three places to look, in order:</p>
+
+<ul>
+<li><strong>Your personal tax account or the HMRC app</strong>, which shows the tax you paid for previous years and any calculation in progress <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</li>
+<li><strong>GOV.UK's "check when you can expect a reply" tool</strong>, if you have already submitted a claim and are waiting <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
+<li><strong>HMRC by phone or webchat</strong>, once the published timescale has passed. Have your National Insurance number and any P800 reference to hand.</li>
+</ul>
+
+<p>Chasing before the published date rarely speeds anything up; the queue is the queue. What does help is making sure the claim went in by bank transfer rather than cheque, and that HMRC holds your current address and bank details.</p>
+
+<h2>Refund Scam Emails and Texts</h2>
+
+<p>The refund process is the single most imitated piece of HMRC correspondence, and the scam pattern exploits exactly the timeline above: messages spike in summer, when genuine P800s start arriving. The tells are consistent:</p>
+
+<ul>
+<li>HMRC advises you not to open links or reply to any text offering a tax refund in exchange for personal or financial details <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. A message that "offers a refund, tax rebate or grant" and asks for details is the scam signature <sup><a href="#ref-5" id="cite-5">[5]</a></sup>.</li>
+<li>A genuine refund starts with a letter, or appears inside your personal tax account when you sign in through GOV.UK yourself. It never starts with a link in an email or text asking for card or bank details.</li>
+<li>Urgency is a red flag. Real P800 refunds have no expiry countdown; unclaimed online refunds simply default to a cheque.</li>
+</ul>
+
+<p>Forward suspect texts to 60599 and emails to phishing@hmrc.gov.uk, then delete them <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. If you have already entered details on a fake site, contact your bank first, then report it.</p>
+
+<h2>If the Calculation Is Wrong</h2>
+
+<p>Do not accept a P800 or Simple Assessment you cannot reconcile to your own records. Contact HMRC with the evidence, your P60, P45 or payslips, and ask for the calculation to be reworked. If the letter says you owe tax, do not simply ignore it either: query it promptly, because an unchallenged underpayment will be collected through your tax code or fall due for direct payment.</p>
+
+<p>Where the numbers involve several employments, benefits in kind or years of errors, professional help pays for itself. Our <a href="/about">team</a> can review the calculation against your records, and our <a href="/calculators">calculators</a> help you sense-check the tax due on a given income. For help with a specific case, <a href="/contact">contact us</a>, or browse the <a href="/blog/bookkeeping-and-compliance">bookkeeping and compliance blog</a> for related guides. And if the reason you overpaid is an unclaimed relief rather than a payroll error, our guide to <a href="/blog/bookkeeping-and-compliance/hmrc-tax-back">claiming tax back from HMRC</a> walks through every free claim route.</p>
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/check-income-tax-last-year" rel="noopener noreferrer">Check how much Income Tax you paid last year - GOV.UK</a></li>
-  <li id="ref-2"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/incometax/refund-reclaim.htm" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
-  <li id="ref-3"><strong>acas.org.uk</strong>: <a href="https://www.acas.org.uk/deductions-from-pay-and-wages" rel="noopener noreferrer">Making and checking deductions - Deductions from pay and wages</a></li>
-  <li id="ref-4"><strong>fca.org.uk</strong>: <a href="https://www.fca.org.uk/news/statements/tax-free-pension-lump-sums-cancellation-rights" rel="noopener noreferrer">Tax-free pension lump sums and cancellation rights - FCA</a></li>
-  <li id="ref-5"><strong>gdc-uk.org</strong>: <a href="https://www.gdc-uk.org/news-blogs/blog/detail/blogs/2023/10/04/tax-avoidance-don-t-get-caught-out" rel="noopener noreferrer">Tax avoidance: don't get caught out - General Dental Council</a></li>
-  <li id="ref-6"><strong>taxscape.deloitte.com</strong>: <a href="https://taxscape.deloitte.com/article/non-resident-landlords-scheme.aspx" rel="noopener noreferrer">Non-resident landlords scheme - TaxScape | Deloitte</a></li>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/tax-overpayments-and-underpayments" rel="noopener noreferrer">Tax overpayments and underpayments - GOV.UK</a></li>
+  <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/tax-overpayments-and-underpayments/if-youre-due-a-refund" rel="noopener noreferrer">If your tax calculation letter (P800) says you're due a refund - GOV.UK</a></li>
+  <li id="ref-3"><strong>gov.uk</strong>: <a href="https://www.gov.uk/check-income-tax-last-year" rel="noopener noreferrer">Check how much Income Tax you paid last year - GOV.UK</a></li>
+  <li id="ref-4"><strong>gov.uk</strong>: <a href="https://www.gov.uk/claim-tax-refund" rel="noopener noreferrer">Check how to claim a tax refund - GOV.UK</a></li>
+  <li id="ref-5"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/identify-hmrc-related-scam-phone-calls-emails-and-text-messages" rel="noopener noreferrer">Identify tax scam phone calls, emails and text messages - GOV.UK</a></li>
 </ol>
-
