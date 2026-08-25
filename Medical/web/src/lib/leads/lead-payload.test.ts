@@ -21,10 +21,8 @@ describe("lead payload — consent text contract", () => {
     expect(consentText).not.toContain("David James Holloway");
   });
 
-  it("consent text is non-empty and references the site", () => {
+  it("consent text is non-empty", () => {
     expect(siteConfig.leadConsentText.length).toBeGreaterThan(20);
-    // Notice-only acknowledgement: must reference the display name.
-    expect(siteConfig.leadConsentText).toContain(niche.display_name);
   });
 
   it("source identifier is 'medical'", () => {
@@ -43,12 +41,21 @@ describe("lead payload — partner consent wording", () => {
     expect(siteConfig.leadConsentText).toContain("specialist partner network");
   });
 
-  // Layer one of the layered notice (DSA Annex B.1). Cascade, the maximum number and
-  // the fee moved to layer two, the privacy policy, on 17 August 2026. What layer one
-  // still has to carry is plurality: LIA section 3.2 turns on the enquirer seeing that
-  // the recipients are firms in a network, not one nominated adviser.
-  it("consent notice discloses plural firms, never a single firm", () => {
-    expect(siteConfig.leadConsentText).toContain("regulated firms");
-    expect(siteConfig.leadConsentText).not.toMatch(/\ba (?:relevant |regulated )?firm\b/);
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts). Pinned
+  // verbatim so the test fails immediately if the config wording changes.
+  //
+  // This file was MISSED by 435cc12e, which updated the other seven sites' copies.
+  // Theirs live at web/src/tests/lead-payload.test.ts; Medical's is the only one
+  // under web/src/lib/leads/, so a path-shaped sweep skipped it and the suite has
+  // been red on the port branch since 2026-08-24. Brought into line 2026-08-25.
+  const EXPECTED_CONSENT =
+    "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", () => {
+    expect(siteConfig.leadConsentText).toBe(EXPECTED_CONSENT);
   });
 });

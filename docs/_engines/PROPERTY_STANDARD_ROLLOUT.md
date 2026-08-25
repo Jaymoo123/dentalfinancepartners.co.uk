@@ -844,7 +844,9 @@ Spawn an agent that did NOT build the phase. Its prompt carries this contract:
 
 **Browser check (`browser_check.mjs` equivalent).** Headless Chromium against `next start` (dev server gives false CSP reds). Per route at 390 and 1440: `document.documentElement.scrollWidth <= clientWidth` (horizontal overflow, zero tolerance at 390), computed text colour vs computed background for every text node under 15px and every `text-slate-*`/fine-print class (floor 4.5:1; composite alpha before computing; normalise oklch; the Property instrument was materially wrong three times on exactly those two operations), presence of `scroll-mt-24` on every element addressed by an in-page anchor, console errors excluding the known Speed Insights path. Pass `--out` per run or runs clobber each other (this happened twice). Build in an isolated worktree if any other dev server may be running (a foreign `next dev` clobbered a phase build mid-measurement).
 
-**Contrast maths note:** ratio = (L1+0.05)/(L2+0.05) on WCAG relative luminance; verify the instrument against two known pairs before trusting it (slate-500 on white = 4.76, slate-400 on white = 2.51).
+**Contrast maths note:** ratio = (L1+0.05)/(L2+0.05) on WCAG relative luminance; verify the instrument against two known pairs before trusting it: **slate-500 (`#64748b`) on white = 4.76, slate-400 (`#94a3b8`) on white = 2.56.**
+
+**CORRECTED 2026-08-25.** This note previously gave the second pair as 2.51. That was wrong, and the reference instrument's self-test caught it the day it was built. slate-400's WCAG relative luminance is 0.359547, so the ratio against white is 1.05 / 0.409547 = 2.5640. Confirmed two independent ways agreeing to four decimals (the instrument's canvas path in real Edge, and a standalone Python recompute); no Tailwind 400-step neutral yields 2.51 (gray-400 = 2.5388, zinc-400 = 2.5629). The reason this is worth a paragraph rather than a silent edit: the instruction says to validate the instrument against the doc, so an agent that trusted this line would have "fixed" a correct instrument until it matched a wrong number, and every contrast finding in the programme would have been skewed by it. When instrument and doc disagree, recompute by hand and correct whichever is wrong. **The instruments now exist** at `docs/_engines/instruments/` (`sweep.mjs`, `browser_check.mjs`, `README.md`), built 2026-08-25; `browser_check.mjs` runs this self-test on every launch and exits 2 without reporting if it fails.
 
 ## O. The extraction work plan (§3, item level)
 
@@ -896,7 +898,7 @@ Known open items the dry-run surfaced that a doc cannot fix (owner or build work
 
 1. **New-source lead-routing defaults** (`DEFAULT_CC_EXCLUDED_SOURCES` covers only property,test; per-source offer sending): any new source key configures its posture explicitly at migration time, verifying against `lead-routing.ts` at that moment (§6 precedence list).
 2. **Niche screener G0 false-pass** (settlement agreements): the instrument needs its regulatory gate fixed or its output permanently subordinated to the manual REGULATORY_POSITION doc (§6.2). Instrument work, separate backlog.
-3. **The reference instruments do not exist yet** (`docs/_engines/instruments/`, from appendix N): built once in the first execution session.
+3. ~~**The reference instruments do not exist yet**~~ **CLOSED 2026-08-25.** Built in session 1 at `docs/_engines/instruments/`: `sweep.mjs` (route sweep + link floor + data-cta floor + dash/artefact grep), `browser_check.mjs` (overflow, painted-background contrast, anchor scroll-margin, computed heading typography, console noise) and `README.md`. Both are site-parameterised via `--site`. Two spec gaps were closed while building them: the link floor was absent from the Property original (it did dead-link checking but never counted links per URL), and the appendix N contrast constant was wrong (see the maths note above).
 4. **SITE_SPINUP.md staleness** (prefix table 9/18 rows, dead CENTRAL_LEAD_PIPELINE pointer, superseded consent STOP condition): corrected in that doc when next touched; this doc's precedence rules cover the interim.
 5. **Stale per-site STATE.md files estate-wide** (wave-2 "GSC remaining" items done long ago; construction-cis counts two months old): each site's Stage 0 refreshes its STATE.md as its first output.
 
@@ -911,6 +913,20 @@ Round-2 residual: **"whether CLI worktree deploys attach git metadata" is CLOSED
 Each runbook is complete: an agent given one of these plus this doc needs nothing else. Every runbook implicitly starts with the START-HERE five steps and ends with the living-doc reconciliation + a session summary to the owner (what shipped, what's blocked, what's next, any noise generated).
 
 ### R.1 SESSION 1: merge + instruments + extraction start
+
+> **RUN 2026-08-25. Steps 1, 2 and 4 DONE. Step 3 is with the owner. Step 5 NOT STARTED.**
+> The next session picks up at step 5 (appendix O), and should re-read this block first.
+>
+> - **Step 1 DONE.** 442 branch commits enumerated per site dir against `origin/main` and annotated into all 17 `docs/<site>/STATE.md` files. Headline: the passenger risk was empty. All 15 live projects already served `435cc12e`, and `git log 435cc12e..design/property-redesign-port -- '<dir>/'` returned 0 for every site dir plus `packages/`, `scripts/`, `console/`. Main was BEHIND production, not ahead.
+> - **Step 2 DONE.** Merged at `c969fc22`, ordinary merge, no squash. The merged tree is byte-identical to the branch tip: main's two tripwire commits (#24, #25) were the same changes that landed on the branch as `2a2e05d2`/`5c156c51`/`c718d183`, cherry-picked, so nothing was lost either way. **NOT PUSHED in session 1** (see the blocker below).
+> - **Step 3 WITH THE OWNER.** Property verify deploy from main not yet requested/run. Note it is a re-deploy of code already live, not a cutover, so the §0.23 consent-watch hold does not block it.
+> - **Step 4 DONE.** Instruments built at `docs/_engines/instruments/`; appendix N's contrast constant corrected (2.51 to 2.56) after the self-test caught it.
+> - **Step 5 NOT STARTED.** Appendix O.0 / O.0b / O.1 / O.2 are the next session's opening work.
+>
+> **Carried blocker for the next session: the merge is committed locally but NOT pushed.** A push to main runs the FULL 18-site CI matrix (lint + tsc + vitest + build each), and a red run emails the owner, so session 1 ran those gates locally first instead of discovering failures in his inbox. That sweep found ONE genuine failure, now fixed: `Medical/web/src/lib/leads/lead-payload.test.ts` still asserted the pre-revert consent wording. `435cc12e` had updated the other seven sites' copies but Medical's is the only one under `web/src/lib/leads/` rather than `web/src/tests/`, so a path-shaped sweep skipped it and the suite was red on the branch from 2026-08-24. Verify the local sweep finished clean, then push.
+>
+> **Generalised rule from that miss (fix the class, not the instance):** when an estate-wide sweep edits "every site's X", enumerate the targets by CONTENT (`grep -rl` for the assertion or string) and not by PATH. Medical is the estate's habitual path outlier (it is also the FLAT-routing exception); any sweep that globs `*/web/src/tests/` will silently miss it.
+
 Preconditions: §8 decisions 10, 1, 2 recorded taken. Steps:
 1. Passenger enumeration: for every site dir, `git log main..design/property-redesign-port --oneline -- '<Site>/'`; write the list into each affected site's STATE.md ("rides the next deploy of this site").
 2. Merge `design/property-redesign-port` to main (no squash; ordinary merge). Do not deploy anything.
