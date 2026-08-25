@@ -44,6 +44,14 @@ He is the CEO. He is often away from the keyboard and has less context than you.
   with the single decision you need, if any. *(2026-08-13, after a BLUF
   readout: "that's a hell of a lot of information… i'm the CEO here". A long
   answer makes him do the summarising.)*
+- **Ask decisions in plain everyday language.** When a question goes to him:
+  the situation in one plain sentence, 2-3 options in everyday words with what
+  each means in practice, a recommendation with a one-line why. No jargon, no
+  file paths, no acronyms in the question itself; technical detail below a
+  divider for reference. He should be able to decide in ten seconds from his
+  phone. Bundle accumulated questions into one message, never a drip.
+  *(2026-08-25, on agent handoffs: "really easy basic language so that I can
+  make decisions".)*
 - Pair any recommendation with **blast radius and revert path**, one line each.
 - Depth is right for reports, diagnostics, "what does the data say", and
   handoff docs. It is wrong for status and for decisions.
