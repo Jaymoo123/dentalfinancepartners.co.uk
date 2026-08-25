@@ -151,3 +151,23 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - Rewrite worklist: `docs/generalist/rewrite_worklist_2026-06-12.md`. Tier A+B = 26 pages (waves GEN-R1/R2); 10 executable immediately after HP lock, 16 in SERP meta cooldown until 2026-06-26; 344 pages on GSC-maturation watch.
 - generator: frontmatter field now stamped on all posts and written by all pipelines going forward (see docs/_engines/ENGINE_MAP_AND_ONBOARDING.md section 5).
 - Methodology: docs/deepseek_quality_audit_2026-06-12.md + docs/provenance_summary_2026-06-12.md + docs/_engines/rewrite_gold_patterns.md.
+
+## Track 2 / R.5 progress 2026-08-25 (evening session)
+
+- Stage 2 started: corepage homepage pass SHIPPED to main (`6c86fc28`), rewrite batch 1
+  SHIPPED to main (`b6c151b8`): 8 top-ROI pages (Bing page 1 / Google invisible), full
+  overhaul, dual-QA passed. Live factual errors found and fixed in the OLD pages: VAT FRS
+  (7, incl. pandemic-era hotel rate and inverted 16.5% discount claim), dividend pair
+  (3 arithmetic errors), NI page (false pension-entitlement implication).
+- Stage 3 research COMPLETE for all 28 absorb niches: 6 family dossiers frozen (creative,
+  trades_transport, care_education PROVISIONAL, personal_care_fitness, retail_product,
+  specialist_professions) in `docs/generalist/dossiers/`. ~57 planned surfaces.
+  house_positions.md sections 14-22 lock all families' ground truth.
+- Deltas open: care_education D1 harvest (~$0.40) + small gate-blocked pulls (~$1 total),
+  next budget day. Daily $5 DataForSEO gate was the binding constraint, respected by all
+  agents; account balance ~$50.
+- HELD BACK from rewriting (estate-assignment questions, owner bundle): forex-traders
+  page (crypto site's ground, generalist out-ranks the pilot), dentistry-compliance
+  (dentists' ground), 2x CGT-on-property pages (property site's ground).
+- Next: remaining rewrite batches from the worklist (298 eligible), research packs +
+  language pass per cluster, then net-new waves. Nothing deployed; all owner-gated.
