@@ -26,10 +26,10 @@ faqs:
 - question: Will my side hustle affect my main job tax code?
   answer: It can. If HMRC adjusts your tax code to collect tax on your side hustle income, your main job PAYE code may change. That is normal. Your total tax bill stays the same. It just gets collected through your salary rather than a direct payment. Check your tax code each year to make sure it is correct.
 - question: What National Insurance do I pay on a side hustle if I already pay Class 1 through my job?
-  answer: Class 2 NIC was abolished from 6 April 2024, so there is no weekly Class 2 charge. You pay Class 4 NIC at 6% on self-employed profits between £12,570 and £50,270, then 2% above £50,270. Profits between £6,725 and £12,570 attract an automatic NI credit toward your state pension with no payment required. Your day job Class 1 contributions are separate. Both count towards your NI record, but you cannot exceed the maximum for state pension purposes.
+  answer: Class 2 NIC was abolished from 6 April 2024, so there is no weekly Class 2 charge. You pay Class 4 NIC at 6% on self-employed profits between £12,570 and £50,270, then 2% above £50,270. Profits between £6,845 and £12,570 attract an automatic NI credit toward your state pension with no payment required. Your day job Class 1 contributions are separate. Both count towards your NI record, but you cannot exceed the maximum for state pension purposes.
 metaTitle_prev: How to Register as Self Employed UK With a Full Time Job
 metaDescription_prev: Register as self employed UK while working full time. We explain the HMRC notification rules, trading allowance, tax returns, and National Insurance
-dateModified: '2026-06-12'
+dateModified: '2026-08-25'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
@@ -38,7 +38,7 @@ keyTakeaways:
   - "You must register with HMRC by 5 October following the end of the tax year in which you started trading, or risk a penalty."
   - "The £1,000 trading allowance exempts small casual earnings from tax, but does not exempt you from registering if you carry on a regular trade, even with profits under £1,000."
   - "Class 2 National Insurance was abolished from 6 April 2024; Class 4 NIC is charged at 6% on self-employed profits between £12,570 and £50,270, and 2% above £50,270."
-  - "Self-employed profits between £6,725 and £12,570 attract an automatic National Insurance credit toward the state pension, with no payment required."
+  - "Self-employed profits between £6,845 and £12,570 attract an automatic National Insurance credit toward the state pension, with no payment required."
   - "VAT registration is compulsory once your total taxable turnover exceeds £90,000 in any rolling 12-month period, even if you also hold a full-time job."
   - "File your Self Assessment tax return online by 31 January each year; if your side hustle tax bill exceeds £1,000, HMRC may require payments on account."
 howToSteps:
@@ -97,7 +97,7 @@ howToSteps:
 
 <p>Your day job income is already taxed through PAYE. Your side hustle income is taxed separately through Self Assessment. You pay income tax on your total income (day job plus side hustle profit) minus your personal allowance. And you pay Class 4 National Insurance on your self employed profits.</p>
 
-<p>Class 2 NIC was abolished from 6 April 2024. There is no weekly Class 2 charge. If your profits fall between £6,725 and £12,570, you receive an automatic NI credit toward your state pension without paying anything.</p>
+<p>Class 2 NIC was abolished from 6 April 2024. There is no weekly Class 2 charge. If your profits fall between £6,845 and £12,570, you receive an automatic NI credit toward your state pension without paying anything.</p>
 
 <p>Class 4 NIC is 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270.</p>
 
@@ -113,7 +113,7 @@ howToSteps:
 
 <p>This is where it gets a bit nuanced. You already pay Class 1 National Insurance through your day job. That counts towards your state pension and other contributory benefits.</p>
 
-<p>Your side hustle triggers Class 4 National Insurance on your self employed profits. Class 2 NIC was abolished from 6 April 2024, so there is no weekly Class 2 charge. You do not pay Class 4 at all if your self employed profits are under £12,570. Profits between £6,725 and £12,570 attract an automatic NI credit toward your state pension with no payment due.</p>
+<p>Your side hustle triggers Class 4 National Insurance on your self employed profits. Class 2 NIC was abolished from 6 April 2024, so there is no weekly Class 2 charge. You do not pay Class 4 at all if your self employed profits are under £12,570. Profits between £6,845 and £12,570 attract an automatic NI credit toward your state pension with no payment due.</p>
 
 <p>There is no double counting. Your day job NI contributions are separate from your self employed NI contributions. Both count towards your NI record for state pension purposes, but you cannot exceed the maximum. So if your day job already gives you a full NI year, your self employed NI does not add anything extra to your pension. But you still have to pay Class 4 if your profits are above £12,570.</p>
 

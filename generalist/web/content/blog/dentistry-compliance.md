@@ -22,7 +22,7 @@ faqs:
   answer: Most associate dentists are self-employed for tax purposes. They register for self assessment, pay their own tax and NI, and file their own returns. The practice does not operate PAYE on associate payments. But HMRC can challenge the status if the working relationship looks like employment. Key factors supporting self-employed status include a genuine right to send a substitute, bearing financial risk, and controlling your own working pattern.
 - question: What are the main tax deadlines for a dental practice limited company?
   answer: Corporation tax is due 9 months and 1 day after the company year-end. The corporation tax return (CT600) must be filed within 12 months of the year-end. The confirmation statement must be filed with Companies House every 12 months. If you operate payroll, RTI submissions go to HMRC on or before each pay day. VAT returns are usually quarterly, due one month and seven days after the quarter end.
-dateModified: '2026-05-20'
+dateModified: '2026-08-25'
 sourcesVerifiedAt: '2026-05-20'
 sourceDomains: []
 imageCredit:
@@ -144,7 +144,7 @@ keyTakeaways:
 
 <p><strong>Missing corporation tax payment deadlines.</strong> The payment deadline is 9 months and 1 day after the year-end. The filing deadline is 12 months. Many directors pay the tax on the filing deadline and incur interest. Set a calendar reminder for the payment date.</p>
 
-<p><strong>Failing to file confirmation statements.</strong> Limited companies and LLPs must file a confirmation statement with Companies House every 12 months. The fee is £34 online. Late filing does not carry a penalty for the confirmation statement itself, but it can delay other filings and cause your company to be struck off.</p>
+<p><strong>Failing to file confirmation statements.</strong> Limited companies and LLPs must file a confirmation statement with Companies House every 12 months. The fee is £50 online. There is no automatic banded penalty for a late confirmation statement, but failing to file is an offence, Companies House can fine the company, and it can delay other filings and cause your company to be struck off.</p>
 
 <h2>How We Help Dental Practices Stay Compliant</h2>
 

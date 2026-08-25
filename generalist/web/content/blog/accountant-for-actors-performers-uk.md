@@ -1,13 +1,13 @@
 ---
-title: "What Should an Actor or Performer Look for in an Accountant in the UK?"
+title: "Accountant for Actors and Performers UK: The Rules That Decide Your Tax"
 slug: "accountant-for-actors-performers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-actors-performers-uk"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Actors: UK Specialist for Performers"
-metaDescription: "Looking for an accountant for actors and performers in the UK? We explain the tax rules that matter most: IR35, expenses, flat rate VAT, and why sector"
+metaTitle: "Accountant for Actors &amp; Performers UK: Tax Rules"
+metaDescription: "The 2014 entertainers NIC change, the 17.5% agent fee cap, the costume rule and theatre accounts. The tax law an accountant for actors must know cold."
 altText: "Actor reviewing financial paperwork with an accountant in a London office near Soho"
 image: "/blog/accountant-for-actors-performers-uk.jpg"
 imageCredit:
@@ -15,158 +15,97 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@cottonbro"
   sourceUrl: "https://www.pexels.com/photo/man-sitting-on-a-chair-6896220/"
   source: "Pexels"
-h1: "What Should an Actor or Performer Look for in an Accountant in the UK?"
-summary: "Actors and performers face a unique set of tax challenges: irregular income, multiple engagements, IR35 determinations, and specific expense rules. This guide explains what to look for in an accountant who genuinely understands the performing arts sector in the UK."
+h1: "Accountant for Actors and Performers UK: The Rules That Decide Your Tax"
+summary: "Performer tax runs on a handful of specific rules: the 6 April 2014 entertainers National Insurance change, the 17.5% agent fee cap for employed performers, the costume-versus-civilian-clothing line from Mallalieu v Drummond, and the touring travel rules. Most accountants have never applied any of them. Here is what the law actually says, and what a specialist accountant for actors and performers should be doing with it."
 schema: ""
 faqs:
-  - question: "Can I claim driving lessons or travel expenses as an actor?"
-    answer: "You can claim travel expenses for journeys made specifically for auditions, rehearsals, or performances. This includes train fares, tube tickets, taxis, and mileage at 55p per mile for the first 10,000 business miles (2026/27 rate; 45p applied up to 2025/26), then 25p per mile above 10,000. You cannot claim the cost of learning to drive (that is a personal expense). You also cannot claim travel from your home to a permanent workplace if you have one. Keep a log of every business journey with dates, destinations, and purpose."
-  - question: "Do I need to register for VAT if I earn less than £90,000 as a performer?"
-    answer: "No, you are not required to register until your VAT-taxable turnover exceeds £90,000 in any rolling 12-month period. But you can register voluntarily before that threshold. Many performers do this to use the Flat Rate Scheme, where you charge 20% VAT but pay HMRC a fixed percentage (12.5% for the Entertainment or journalism sector). You keep the difference. Check with your accountant whether you qualify as a limited cost trader first, as that changes the rate to 16.5%."
-  - question: "Should I set up a limited company as an actor?"
-    answer: "It depends on your income level and the type of work you do. If your annual profits consistently exceed £50,000 and most of your engagements fall outside IR35, a limited company is usually more tax-efficient. You can retain profits, split income with a spouse through dividends, and claim employer pension contributions as a deductible expense. If your income is lower or most of your work is inside IR35, staying as a sole trader is simpler and cheaper. Your accountant should model both scenarios with your actual numbers before you decide."
-  - question: "What happens if I miss the self assessment deadline?"
-    answer: "HMRC charges an automatic £100 late filing penalty if your return is not submitted by 31 January. If it is more than three months late, the penalty increases to £10 per day (up to a maximum of £900). After six months, you face an additional £300 or 5% of the tax due (whichever is higher). Interest also accrues on any unpaid tax from 31 January onwards. If you know you will miss the deadline, submit a paper return or file online as soon as you can. The penalty clock starts on 1 February regardless."
+  - question: "Are actors employed or self-employed for tax in the UK?"
+    answer: "Most actors and performers engaged under a contract for services are self-employed for both tax and National Insurance, judged on the ordinary status factors (control, personal service, mutuality of obligation), not the contract label. Before 6 April 2014, special regulations treated many self-employed entertainers as employed earners for Class 1 National Insurance, so producers deducted NIC at source. That regime was repealed for entertainers from 6 April 2014 (SI 2014/635): engagers now pay you gross and you pay Class 4 National Insurance through Self Assessment like any other self-employed person. Performers on genuine employment contracts, such as some long-run theatre engagements or salaried orchestral posts, remain employees with PAYE and Class 1."
+  - question: "Can actors claim agent fees against tax?"
+    answer: "Yes, but the rule depends on your status for that engagement. A self-employed performer deducts agent commission in full as an ordinary business expense under the wholly-and-exclusively rule, with no percentage cap. An employed theatrical performer (actor, singer, musician, dancer or theatrical artist, including TV and film work) can deduct agent fees against employment earnings under a specific statutory rule, ITEPA 2003 section 352, but only up to 17.5% of those earnings including VAT. A typical 10% to 15% commission plus VAT fits inside the cap; anything above 17.5% is lost."
+  - question: "Can actors claim clothing, haircuts or gym membership?"
+    answer: "The controlling case is Mallalieu v Drummond (1983): ordinary everyday clothing is not deductible even if you bought it solely for work, because keeping yourself clothed always has a private purpose. The test is the nature of the item, not your intention. A costume, a stage outfit you would not wear off-stage, or a performance-specific item is allowable. The same logic disallows ordinary grooming and general fitness spend, while genuinely performance-specific items can qualify. These claims are fact-specific, so take advice before relying on one."
+  - question: "What do theatre accountants do that a general accountant does not?"
+    answer: "On the performer side, theatre accountants deal with the mix of employed and self-employed engagements a stage career produces, apply the 17.5% agent fee cap correctly to employed runs, and handle touring travel and the 24-month temporary workplace rule. On the production side, theatre accounts involve Theatre Tax Relief, worth 40% for non-touring and 45% for touring productions from 1 April 2025, claimed by the production company through Corporation Tax, never by the performer. If your accountant cannot tell you which side of that line each engagement sits on, they do not know the sector."
 keyTakeaways:
-  - "Actors can claim mileage at 55p per mile for the first 10,000 business miles in 2026/27 (45p applied up to 2025/26), falling to 25p per mile above that threshold."
-  - "VAT registration is compulsory once VAT-taxable turnover exceeds £90,000 in a rolling 12-month period; performers using the Flat Rate Scheme pay HMRC 12.5% of VAT-inclusive turnover."
-  - "A limited company is typically more tax-efficient than sole-trader status when annual profits consistently exceed £50,000, provided most engagements fall outside IR35."
-  - "From April 2026, actors with self-employment income over £50,000 must keep digital records and file quarterly MTD for Income Tax updates; thresholds fall to £30,000 in 2027, £20,000 in 2028."
-  - "Missing the 31 January self assessment deadline triggers an automatic £100 penalty, rising to £10 per day if the return is more than three months late."
-  - "Performers are advised to set aside 25% to 30% of every gross payment into a separate account to cover income tax, National Insurance, and payments on account."
+  - "Since 6 April 2014 (SI 2014/635), engagers pay self-employed performers gross: the old system of deducting Class 1 National Insurance from entertainers ended, and performers pay Class 4 through Self Assessment instead."
+  - "Employed theatrical performers can deduct agent fees up to 17.5% of employment earnings including VAT under ITEPA 2003 s.352; self-employed performers deduct commission in full with no cap."
+  - "Ordinary clothing is not deductible even if bought only for work (Mallalieu v Drummond); costume and stage wear that is not civilian clothing is allowable."
+  - "Theatre Tax Relief runs at a permanent 40% (non-touring) or 45% (touring) from 1 April 2025, claimed by the production company, never the individual performer."
+  - "Travel to auditions, rehearsals and short engagements is claimable at 55p per mile for the first 10,000 business miles from 2026/27 (45p up to 2025/26), but a workplace you expect to attend for more than 24 months becomes permanent and travel to it becomes non-deductible commuting."
+  - "From April 2026, self-employment income over £50,000 brings quarterly Making Tax Digital reporting; the threshold falls to £30,000 in 2027 and £20,000 in 2028."
 ---
 
-<h2>Why Actors and Performers Need a Specialist Accountant</h2>
+<h2>Are Actors Employed or Self-Employed? The 2014 Rule Most Accountants Missed</h2>
 
-<p>Your income as an actor or performer does not arrive in a steady monthly salary. It comes in bursts. A West End run paying £900 a week for six months. A three-day TV commercial shoot paying £2,500. A voiceover session that pays out six months after recording. A pantomime season that covers Christmas. Then nothing for eight weeks between jobs.</p>
+<p>Most actors, musicians and other performers working under a contract for services are self-employed for both income tax and National Insurance. Status is decided by the usual factors, control, personal service, mutuality of obligation, financial risk, not by what the contract calls you.</p>
 
-<p>That irregular cash flow creates specific tax problems. HMRC expects you to pay tax on time even when your next job is not confirmed. Your expenses look different to a standard freelancer's. And your employment status changes with every single engagement.</p>
+<p>The part almost nobody explains is what changed on 6 April 2014. Before that date, special regulations (the Social Security Categorisation of Earners Regulations 1978) treated many self-employed entertainers as employed earners for National Insurance only. Producers and engagers deducted Class 1 NIC from performers' fees at source, even though the performer was self-employed for income tax. It was a genuinely odd hybrid, and it generated decades of confusion.</p>
 
-<p>This is why you need an <strong>accountant for actors</strong> who understands the performing arts sector, not a generalist who treats your tax return like a plumber's.</p>
+<p>That regime was repealed for entertainers by SI 2014/635. Since 6 April 2014, the position is clean: engagers pay self-employed performers gross, and the performer pays Class 4 National Insurance through Self Assessment on their profits, exactly like any other self-employed person. For 2025/26 that means 6% on profits between £12,570 and £50,270 and 2% above, on top of income tax at your marginal rate. Class 2 stopped being payable from 6 April 2024; profits above the small profits threshold earn your state pension credit automatically.</p>
 
-<h2>What Makes Acting Income Different for Tax Purposes</h2>
+<p>The exception is performers on genuine employment contracts. Some long-run theatre engagements and salaried orchestral positions are employment, with PAYE and Class 1 deducted as normal. Many working performers hold both kinds of engagement in the same tax year, and that mix is exactly where the next rule bites.</p>
 
-<p>Most actors work as sole traders or through a limited company. Either way, the core tax rules apply. But the detail matters more in this sector than almost any other.</p>
+<h2>Agent Fees: One Expense, Two Completely Different Rules</h2>
 
-<h3>IR35 and Off-Payroll Working</h3>
+<p>Every performer pays commission. How much of it you can deduct depends entirely on your status for the engagement it relates to, and this fork is invisible on almost every accountancy website.</p>
 
-<p>IR35 is the single biggest tax risk for actors who operate through a limited company. HMRC treats engagements differently depending on whether you are genuinely self-employed or effectively an employee for that specific job.</p>
+<p><strong>Self-employed engagements:</strong> agent commission is an ordinary business expense under the wholly-and-exclusively rule (ITTOIA 2005 s.34). There is no percentage cap. A self-employed actor paying 15% plus VAT deducts the full amount.</p>
 
-<p>For example: you are cast in a six-month TV series. The production company controls your hours, provides the equipment (costume, makeup, set), directs your performance, and you cannot send a substitute. That looks like employment for IR35 purposes. Your limited company's income from that engagement would be caught inside IR35, meaning you pay tax and NI broadly as if you were an employee.</p>
+<p><strong>Employed engagements:</strong> employees normally cannot deduct agent fees at all, because the employee expenses test is brutally strict. Theatrical performers get a rare statutory exception. Under ITEPA 2003 section 352, an employed theatrical performer, defined widely as an actor, singer, musician, dancer or theatrical artist, and covering TV and film work as well as the stage (confirmed in Madeley and Finnigan v HMRC, 2006), can deduct agent fees against employment earnings up to a cap of <strong>17.5% of those earnings, VAT-inclusive</strong>.</p>
 
-<p>But a one-day voiceover session where you work from your own home studio, use your own equipment, and take direction via Zoom? That is almost certainly outside IR35.</p>
+<p>The cap is workable in practice. Take an actor earning £30,000 from an employed television engagement, with an agent charging 12% plus VAT. Commission is £3,600, VAT adds £720, total £4,320, which is 14.4% of the £30,000 earnings. The cap allows up to £5,250 (17.5% of £30,000), so the full £4,320 is deductible. A 15% commission plus VAT comes to 18% including VAT, so £150 of it would fall outside the cap on the same earnings. An accountant for actors should be running this calculation per engagement, not lumping every fee into one line.</p>
 
-<p>An <strong>accountant for actors</strong> who knows the sector will help you assess each engagement correctly and structure your company's contracts and working practices to stay on the right side of the rules. Get it wrong and you face backdated tax bills, interest, and penalties.</p>
+<h2>Clothing and Appearance: The Mallalieu Line</h2>
 
-<p>If the production company is a medium or large business (most TV and film production companies are), they are responsible for issuing the Status Determination Statement (SDS). But you still need your own advice to challenge a determination you disagree with or to plan around the tax impact.</p>
+<p>The controlling authority is Mallalieu v Drummond (1983), a House of Lords case about a barrister's court clothes. The principle: ordinary everyday clothing is not deductible <strong>even if you bought it solely for work</strong>, because clothing yourself always has an intrinsic private purpose. "I only wear it for performances" is not the test. The nature of the item is.</p>
 
-<h3>Expenses That Actors Can and Cannot Claim</h3>
+<p>So a period costume, a stage outfit no one would wear on the street, or a performance-specific item is allowable. Jeans bought for a modern-dress role are not, however clearly you can show you bought them for the production. The same logic applies to grooming and fitness: ordinary haircuts and gym memberships carry a private purpose and HMRC will refuse them, while genuinely performance-specific spend can qualify. These claims turn on their facts, so treat any confident blanket promise, in either direction, as a red flag on the accountant making it.</p>
 
-<p>Actors can claim a wide range of expenses, but HMRC is strict on the "wholly and exclusively for the purposes of the trade" rule. Here is what typically qualifies:</p>
+<h2>Travel, Touring and the 24-Month Rule</h2>
 
-<ul>
-<li>Agent's commission and fees (usually 10% to 20% of gross income)</li>
-<li>Showreel production and editing costs</li>
-<li>Headshot photography and printing</li>
-<li>Audition travel (train fares, tube, taxis, mileage at 55p per mile for the first 10,000 business miles (2026/27 rate; 45p applied up to 2025/26), then 25p per mile above 10,000)</li>
-<li>Sheet music, scripts, and learning materials specific to an audition or role</li>
-<li>Dance classes, singing lessons, and acting workshops that maintain or improve skills for current work</li>
-<li>Costume and makeup for specific roles (not everyday wear)</li>
-<li>Union subscriptions (Equity, Spotlight, BECTU)</li>
-<li>Professional insurance (public liability, equipment insurance)</li>
-<li>Accountancy fees</li>
-<li>Home office costs if you regularly rehearse, learn lines, or manage bookings from home</li>
-</ul>
+<p>Travel to auditions, rehearsals and engagements is claimable where it is genuinely business travel: mileage at 55p per mile for the first 10,000 business miles from 2026/27 (45p applied up to 2025/26), then 25p, or actual costs apportioned. Ordinary commuting from home to a permanent workplace is never claimable.</p>
 
-<p>What you cannot claim: clothing that could be worn off-stage (even if you only wear it for performances), gym memberships (unless prescribed for a specific role and evidenced), travel from home to a permanent workplace (if you have one), and "general" upkeep that is not role-specific.</p>
+<p>The trap for performers is the 24-month rule. A workplace stays temporary only while you expect to attend it for 24 months or less and for less than 40% of your working time. The moment a theatre run or a production base is expected to pass that line, it becomes a permanent workplace and travel to it becomes non-deductible commuting, from the date your expectation changed, not from month 24. A long West End contract can flip mid-run. This is a live judgement your accountant should be tracking against your contract dates.</p>
 
-<p>A good <strong>accountant for actors</strong> will know the difference between a deductible costume for a period drama and a pair of jeans you bought for a modern role but also wear socially. The line is thin. HMRC challenges actors on these claims regularly.</p>
+<h2>What an Accountant for Actors Should Actually Handle</h2>
 
-<h3>Flat Rate VAT for Performers</h3>
-
-<p>If your VAT-registrable turnover exceeds £90,000 in any rolling 12-month period, you must register for VAT. But many performers choose to register voluntarily before that threshold because of the Flat Rate Scheme.</p>
-
-<p>Under the Flat Rate Scheme, you charge your clients 20% VAT but pay HMRC a fixed percentage based on your sector. For performers in the Entertainment or journalism sector, the flat rate is 12.5%. You pay 12.5% of your VAT-inclusive turnover to HMRC and keep the remainder of the VAT you collected.</p>
-
-<p>On a £10,000 engagement, you charge £12,000 including VAT. You pay HMRC £1,500 (12.5% of £12,000). You keep £500. Over a year of multiple engagements, that adds up.</p>
-
-<p>There is a catch. If you are a "limited cost trader" (your VAT-inclusive spend on relevant goods is less than 2% of your VAT-inclusive turnover or less than £1,000 per year), you must use the 16.5% flat rate. Many performers fall into this category because their main costs are services (agent fees, studio hire) rather than goods. Your accountant should check your eligibility before you join the scheme.</p>
-
-<h2>Should You Operate as a Sole Trader or Through a Limited Company?</h2>
-
-<p>Most actors start as sole traders. It is simpler. You register with HMRC for self assessment, file an SA100 return each year, and pay tax on your profits. No Companies House filings, no corporation tax returns, no payroll.</p>
-
-<p>But as your income grows, a limited company can be more tax-efficient. Here is when it typically makes sense:</p>
+<p>The rules above are the sector-specific core. Around them sits the ordinary machinery, and a specialist earns their fee by running all of it against a performer's irregular, mixed-status income:</p>
 
 <ul>
-<li>Your annual profits consistently exceed £50,000</li>
-<li>You work on multiple engagements where IR35 is not an issue</li>
-<li>You want to retain profits in the company to smooth out income between jobs</li>
-<li>You want to split income with a spouse or partner through dividends</li>
-<li>You need the limited liability protection (though most performers have insurance for this anyway)</li>
+<li><strong>Self Assessment.</strong> Registration, the SA103 self-employment pages, employed engagements alongside, payments on account and the first-year double bill in January. We walk the whole process, with a worked example, in our <a href="/blog/sole-trader-and-self-employment/actor-tax-self-assessment-uk">actor tax and Self Assessment guide</a>.</li>
+<li><strong>Status per engagement.</strong> Each contract assessed on the factors, not filed by habit. Where you work through your own limited company for medium or large productions, the off-payroll rules put the Status Determination Statement with the client; our <a href="/blog/limited-company-tax/ir35-explained-contractor-separate-limited-company">IR35 guide</a> covers how that works and how to challenge a determination.</li>
+<li><strong>Expenses done to the case law.</strong> Agent fees split employed versus self-employed, clothing tested against Mallalieu, travel tested against the 24-month rule, plus the uncontroversial claims: Spotlight and Equity subscriptions, showreels, headshots, coaching that maintains existing skills, insurance, accountancy fees.</li>
+<li><strong>Structure.</strong> Sole trader suits most performers. A limited company can help at consistently higher profits, taking a small salary plus dividends (taxed at 10.75%, 35.75% and 39.35% for 2026/27 above the £500 allowance), but only where engagements sit outside the off-payroll rules. Modelled with your numbers, not a rule of thumb.</li>
+<li><strong>Cash flow for gap months.</strong> Setting aside a fixed share of every gross payment so January and July payments on account are funded before the quiet spells arrive.</li>
+<li><strong>VAT.</strong> Registration is compulsory once VAT-taxable turnover passes £90,000 in any rolling 12 months. Mixed income can cross it unnoticed.</li>
+<li><strong>Making Tax Digital.</strong> Quarterly digital reporting starts April 2026 for self-employment income over £50,000, £30,000 from 2027, £20,000 from 2028. Most working performers land in scope within that window.</li>
 </ul>
 
-<p>If you do incorporate, you will need to run a payroll for yourself. The most common approach is a salary of £12,570 per year (matching the personal allowance and primary NI threshold) plus dividends drawn from retained profits. For the 2026/27 tax year, dividends are taxed at 10.75% within the basic rate band, 35.75% within the higher rate band, and 39.35% above that. The annual dividend allowance is £500.</p>
+<h2>Entertainment Accountants: What the Industry Firms Cover</h2>
 
-<p>Your accountant should model both scenarios for you with real numbers. A performer earning £60,000 gross through a limited company can often take home £4,000 to £6,000 more per year than the same performer as a sole trader, after all taxes and costs. But that gap narrows if most of your work falls inside IR35.</p>
+<p>Entertainment accountancy as a specialism grew up around touring artists, broadcast talent and rights income: tour budgets, foreign withholding tax on overseas performance income, royalty statements and multi-territory VAT. The established entertainment industry accountants sell that breadth on brand heritage, and for a touring headline act the breadth is real.</p>
 
-<h2>Cash Flow Planning for Irregular Income</h2>
+<p>For a working actor or performer, most of that stack is irrelevant most of the time. What matters is whether the firm gets the individual-performer rules right: the 2014 NIC position, the s.352 fork, the Mallalieu line. Accounting in entertainment at the individual level is those rules applied engagement by engagement. If royalties are a serious income stream for you, from recordings, writing or sync, the tax treatment has its own logic, which we cover in our <a href="/blog/sole-trader-and-self-employment/accountant-for-musicians-uk">guide for musicians</a>: for a working performer, royalties are trading income of the profession, and they count toward the VAT threshold.</p>
 
-<p>This is where most actors get caught out. HMRC expects you to pay tax on your profits, not on when the cash arrives. If you earn £40,000 in a six-month West End run but have no work for the other six months, you still owe tax based on the £40,000 profit for that year.</p>
+<h2>Theatre Accountants and Theatre Accounts</h2>
 
-<p>Your accountant should help you set up a budgeting system. The standard approach: put 25% to 30% of every gross payment into a separate tax savings account. That covers income tax, NI (if you are a sole trader), and any payments on account due in January and July.</p>
+<p>Theatre accounting splits cleanly in two, and a good theatre accountant is precise about which side they are advising.</p>
 
-<p>If you are a limited company director, your corporation tax bill is due 9 months and 1 day after your year-end. If your company's taxable profits exceed £1.5 million, you pay by quarterly instalments. Most performers are well below that threshold, but the point stands: set aside 19% to 25% of profits for corporation tax from day one.</p>
+<p><strong>The performer side.</strong> Stage careers produce exactly the mix this page describes: self-employed engagements paid gross since 2014, employed long runs under PAYE where the 17.5% agent fee cap applies, touring travel against the 24-month rule, costume claims against Mallalieu.</p>
 
-<h2>What to Look for in an Accountant for Actors</h2>
+<p><strong>The production side.</strong> Theatre accounts for a production company involve Theatre Tax Relief, worth a permanent 40% for non-touring and 45% for touring productions from 1 April 2025. The claimant is the production company through Corporation Tax, never the individual performer, and from April 2025 qualifying spend must be used or consumed in the UK. If you run or are setting up a production company, the rates and conditions across the creative reliefs are summarised in our <a href="/blog/corporation-tax/creative-industry-tax-reliefs-uk">creative industry tax reliefs guide</a>.</p>
 
-<p>Not all accountants understand the performing arts. Here is what to check before you appoint one:</p>
+<h2>Accounting for Performers: Questions That Sort Specialists from Generalists</h2>
+
+<p>Accounting for performers is a small, learnable body of law, but an accountant who has never worked the sector will not know it exists. Before appointing anyone, ask:</p>
 
 <ul>
-<li><strong>Do they know IR35 inside out?</strong> Ask them to explain the difference between inside and outside IR35 for a TV actor versus a theatre actor. If they cannot give you a clear answer, move on.</li>
-<li><strong>Can they name the main union rates?</strong> Equity minimums, Spotlight fees, and the NUJ rates for voiceover work. If they do not know these exist, they do not work with performers.</li>
-<li><strong>Do they understand flat rate VAT for performers?</strong> Ask them about the limited cost trader test and the correct FRS sector rate for performers (Entertainment or journalism, currently 12.5%). A generalist may not know this exists.</li>
-<li><strong>Can they handle multiple income streams?</strong> Acting income, voiceover royalties, teaching work, commercial residuals. Your accountant needs to track each one separately for HMRC purposes.</li>
-<li><strong>Are they familiar with the creative sector's expense rules?</strong> The line between deductible and non-deductible clothing is specific to performers. A good accountant will know HMRC's guidance on this.</li>
-<li><strong>Do they offer year-round support or just a January rush?</strong> Actors need advice throughout the year, not just at tax return time. Can you email them with a quick question about an IR35 contract at 9pm on a Tuesday?</li>
+<li><strong>What changed for entertainers' National Insurance in April 2014?</strong> The right answer names the end of Class 1 deductions at source and the move to Class 4 through Self Assessment. A blank look means they will misclassify your engagements.</li>
+<li><strong>How do agent fees work for an employed theatre run versus a self-employed job?</strong> They should reach for the 17.5% VAT-inclusive cap without prompting.</li>
+<li><strong>Can I claim the clothes I bought for a role?</strong> The right answer starts with Mallalieu and the costume-versus-civilian test, not with "keep the receipt and we'll see".</li>
+<li><strong>How do you track mixed employed and self-employed income?</strong> Each stream needs its own treatment on the return, with the employment pages and self-employment pages reconciled against your P60s and remittances.</li>
+<li><strong>Do you offer year-round advice?</strong> Contract and status questions arrive when the offer does, not in January.</li>
 </ul>
 
-<p>At Holloway Davies, our experienced team works with performers across theatre, TV, film, voiceover, and commercial work. We are based in the UK and understand the sector's specific challenges. You can see our full <a href="/services">services for creative professionals here</a>.</p>
-
-<h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
-
-<p>From April 2026, if your self-employment or property income exceeds £50,000 per year, you must keep digital records and submit quarterly updates to HMRC using MTD-compatible software. From April 2027, the threshold drops to £30,000. From April 2028, it drops to £20,000.</p>
-
-<p>Most actors and performers will be affected within the next two to three years. Your accountant should be helping you prepare now. That means choosing MTD-compatible software (Xero, FreeAgent, QuickBooks, or GoSimpleTax are the most common for sole traders) and setting up your digital record-keeping before the deadline hits.</p>
-
-<p>If you operate through a limited company, MTD for ITSA does not apply to you directly. But your company will still need to file its corporation tax return (CT600) digitally, and Making Tax Digital for Corporation Tax is coming. The timeline is not yet confirmed, but expect it within the next few years.</p>
-
-<h2>Pensions and Retirement Planning for Performers</h2>
-
-<p>Actors do not have a standard employer pension. You are responsible for your own retirement savings. If you operate through a limited company, you can make employer pension contributions directly from the company. These are deductible against corporation tax, and no NI is due on them.</p>
-
-<p>For the 2025/26 tax year, the annual allowance is £60,000 (tapered down for high earners). You can carry forward unused allowances from the previous three tax years. Your accountant should review your pension position annually as part of your tax planning.</p>
-
-<p>Sole traders can claim pension contributions as a trading expense, but the rules are tighter. The contribution must be paid directly from your business bank account to the pension provider, and it must be for your own benefit (not a general savings plan).</p>
-
-<h2>Common Tax Mistakes Actors Make</h2>
-
-<p>Here are the ones we see most often:</p>
-
-<ul>
-<li><strong>Missing the 31 January self assessment deadline.</strong> Late filing penalty starts at £100. If you are more than three months late, it increases to £10 per day. Set a calendar reminder for 1 December, not 30 January.</li>
-<li><strong>Not registering for VAT when you hit £90,000.</strong> HMRC will backdate the registration and charge you the VAT you should have collected. You cannot bill clients retrospectively for VAT you did not charge.</li>
-<li><strong>Claiming expenses that are not allowable.</strong> HMRC's creative sector team is experienced. They know the difference between a legitimate costume and a personal wardrobe item. Keep receipts and a log of why each item was purchased.</li>
-<li><strong>Ignoring IR35 determinations.</strong> If you receive an inside-IR35 determination and do nothing, you will owe extra tax and NI. Challenge it with evidence if you disagree, or plan your finances around it if you accept it.</li>
-<li><strong>Mixing personal and business finances.</strong> If you are a sole trader, you can use a personal account, but a separate business account makes bookkeeping much cleaner. If you are a limited company, you must have a separate business bank account. HMRC can and does check.</li>
-</ul>
-
-<h2>Getting Started with the Right Accountant</h2>
-
-<p>If you are an actor or performer looking for an accountant who genuinely understands your work, start by checking whether they have experience with the performing arts sector. Ask the questions listed above. Get a quote that covers the full year, not just the tax return filing.</p>
-
-<p>You can <a href="/contact">contact our team</a> to discuss your specific situation. We work with performers across the UK, from actors in London's West End and Soho to voiceover artists in Manchester's Northern Quarter and theatre performers in Bristol's Harbourside. We also have a <a href="/locations">page showing the areas we cover</a>.</p>
-
-<p>If you are just starting out and want to understand the basics first, our <a href="/fundamentals">fundamentals guide</a> covers the key tax rules for self-employed people in the UK. And if you are thinking about incorporating, our <a href="/incorporation">incorporation page</a> explains the process step by step.</p>
-
-<p>Your tax situation as a performer is not complicated in theory. But it is specific. Get the right advice and you will keep more of what you earn, avoid HMRC penalties, and have one less thing to worry about between auditions.</p>
+<p>At Holloway Davies we work with actors, performers and creatives across the UK on exactly these rules. If you want your engagements, expenses and filings handled by people who knew about section 352 before you asked, <a href="/contact">contact our team</a>. If you would rather understand the filing process itself first, start with the <a href="/blog/sole-trader-and-self-employment/actor-tax-self-assessment-uk">actor tax and Self Assessment walkthrough</a>.</p>

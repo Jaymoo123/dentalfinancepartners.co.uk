@@ -227,7 +227,7 @@ howToSteps:
 
 <h2>Filing the Abbreviated Accounts at Companies House</h2>
 
-<p>Once the trial balance is adjusted and the abbreviated balance sheet is prepared, you file online through the Companies House WebFiling service or through your accountant's software. There is no filing fee for annual or abbreviated accounts at Companies House. (The Confirmation Statement is a separate annual return and is not accounts; it costs £34 online or £62 paper since 1 May 2024.)</p>
+<p>Once the trial balance is adjusted and the abbreviated balance sheet is prepared, you file online through the Companies House WebFiling service or through your accountant's software. There is no filing fee for annual or abbreviated accounts at Companies House. (The Confirmation Statement is a separate annual return and is not accounts; it costs £50 online or £110 paper.)</p>
 
 <p>The deadline is 9 months after your accounting reference date. For a 31 March year-end, that means filing by 31 December. Miss it and the late filing penalties start at £150 for a private company, rising to £1,500 if you are more than 6 months late.</p>
 

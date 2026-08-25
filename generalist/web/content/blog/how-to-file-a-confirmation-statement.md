@@ -24,12 +24,12 @@ faqs:
   - question: "Can I file a confirmation statement early?"
     answer: "Yes, you can file early. But your next deadline moves forward to 12 months from the early filing date. If you file on 1 March instead of 15 March, your next deadline becomes 1 March. This can help align filing dates with your year-end."
   - question: "How much does it cost to file a confirmation statement?"
-    answer: "Online filing costs £34. Paper filing by post costs £62. Online is faster and cheaper. There is no automatic late filing penalty for the confirmation statement itself, but non-compliance is a criminal offence."
+    answer: "Online filing costs £50. Paper filing by post costs £110. Online is faster and cheaper. There is no automatic late filing penalty for the confirmation statement itself, but non-compliance is a criminal offence."
   - question: "Do I need to file a confirmation statement if my company is dormant?"
     answer: "Yes. Dormant companies must still file a confirmation statement every 12 months. There is no exemption. If you no longer need the company, consider voluntary strike off using form DS01 instead of letting it fall into default."
 keyTakeaways:
   - "Every UK limited company must file a confirmation statement (form CS01) at least once every 12 months under the Companies Act 2006."
-  - "Online filing costs £34 and takes about 10 minutes; paper filing by post to Companies House costs £62 and takes 5 to 10 working days to process."
+  - "Online filing costs £50 and takes about 10 minutes; paper filing by post to Companies House costs £110 and takes 5 to 10 working days to process."
   - "Missing the deadline can result in a fine of up to £5,000 and a criminal record for the director, and the company can be struck off the register."
   - "If a company is struck off, all assets including bank accounts and property become property of the Crown."
   - "Any individual or legal entity owning more than 25% of shares or voting rights must be listed as a person with significant control (PSC)."
@@ -42,7 +42,7 @@ howToSteps:
   - name: "Update any changes"
     text: "Update changed details directly in the form, such as director service addresses, shareholder addresses, or SIC codes; for major changes like director appointments or resignations, file the relevant form (AP01, TM01) first."
   - name: "Confirm the statement and pay"
-    text: "Tick the boxes confirming the details are correct, submit the form, and pay the £34 fee by debit or credit card."
+    text: "Tick the boxes confirming the details are correct, submit the form, and pay the £50 fee by debit or credit card."
   - name: "Save the confirmation receipt"
     text: "Download and save the PDF receipt issued by Companies House as proof of timely filing and to track your next 12-month deadline."
 ---
@@ -89,7 +89,7 @@ howToSteps:
 
 <h2>How to File a Confirmation Statement Online</h2>
 
-<p>Online filing is the fastest and cheapest method. It costs £34 and takes about 10 minutes if you have all the information ready. Here is the step-by-step process.</p>
+<p>Online filing is the fastest and cheapest method. It costs £50 and takes about 10 minutes if you have all the information ready. Here is the step-by-step process.</p>
 
 <h3>Step 1: Log Into WebFiling</h3>
 
@@ -105,7 +105,7 @@ howToSteps:
 
 <h3>Step 4: Confirm the Statement</h3>
 
-<p>Once you have reviewed and updated all the information, you tick the boxes confirming that the details are correct. You then submit the form and pay the £34 fee by debit or credit card.</p>
+<p>Once you have reviewed and updated all the information, you tick the boxes confirming that the details are correct. You then submit the form and pay the £50 fee by debit or credit card.</p>
 
 <h3>Step 5: Save the Receipt</h3>
 
@@ -113,7 +113,7 @@ howToSteps:
 
 <h2>How to File a Confirmation Statement by Post</h2>
 
-<p>Paper filing costs £62 and takes longer. You use form CS01, which you can download from the Companies House website. Complete it by hand or type into the PDF, then post it to Companies House, Crown Way, Cardiff, CF14 3UZ.</p>
+<p>Paper filing costs £110 and takes longer. You use form CS01, which you can download from the Companies House website. Complete it by hand or type into the PDF, then post it to Companies House, Crown Way, Cardiff, CF14 3UZ.</p>
 
 <p>Paper filing takes around 5 to 10 working days to process. Online filing is processed within hours. There is rarely a good reason to use paper unless you have no internet access or your authentication code is lost and you cannot wait for a replacement.</p>
 
@@ -191,7 +191,7 @@ howToSteps:
 <li>Are all PSC details current?</li>
 <li>Is your SIC code correct for your current business activity?</li>
 <li>Have you filed any necessary change forms (AP01, TM01, SH01, AD01) before the confirmation statement?</li>
-<li>Do you have the £34 fee ready for online filing?</li>
+<li>Do you have the £50 fee ready for online filing?</li>
 </ul>
 
 <p>If you can answer yes to all of these, you are ready to file. The process takes 10 minutes online.</p>

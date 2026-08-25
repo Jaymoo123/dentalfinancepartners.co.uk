@@ -1,13 +1,13 @@
 ---
-title: "How to Find the Right Accountant for Influencers in the UK"
+title: "Accountant for Influencers: Four Decisions Your Choice Should Turn On"
 slug: "accountant-for-influencers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-influencers-uk"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Influencers UK: Tax & Structure Guide"
-metaDescription: "We work with UK influencers on tax planning, IR35, VAT and company structure. Find out what an accountant for influencers actually does."
+metaTitle: "Accountant for Influencers UK: How to Choose (2026/27)"
+metaDescription: "Choosing an accountant for influencers? Test them on PR gift tax, the £1,000 trading allowance, the £90,000 VAT threshold and company structure for 2026/27."
 altText: "UK influencer working on a laptop in a bright home office in Manchester, with camera equipment and a ring light visible in the background"
 image: "/blog/accountant-for-influencers-uk.jpg"
 imageCredit:
@@ -15,129 +15,143 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@shvets-production"
   sourceUrl: "https://www.pexels.com/photo/a-person-using-a-calculator-9052475/"
   source: "Pexels"
-h1: "How to Find the Right Accountant for Influencers in the UK"
-summary: "We explain what an accountant for influencers does, from IR35 checks and VAT registration to company structure and expense claims. If you are a UK influencer earning from brand deals, ads, affiliate links or subscriptions, this guide covers the tax and compliance decisions you need to make."
+h1: "Accountant for Influencers: Four Decisions Your Choice Should Turn On"
+summary: "The right accountant for influencers is the one who gets four decisions correct: whether your PR gifts are taxable, how to use the £1,000 trading allowance, when the £90,000 VAT threshold bites, and whether a limited company still pays after the 2026/27 dividend rate rise. We set out each decision with current figures so you can test any firm before you sign."
 schema: ""
-faqs: []
+faqs:
+  - question: "Are PR gifts and gifted products taxable for UK influencers?"
+    answer: "If you received the product in return for content, promotion or an agreed post, it is a taxable trading receipt at its market value, even though no cash changed hands. An unsolicited freebie sent with no obligation or expectation of content is not automatically taxable, and an item you genuinely could not sell may fall outside the charge, but both of those are fact-specific, so take advice rather than assume. There is no £50 tax-free threshold for PR gifts, whatever some websites claim."
+  - question: "Do I need a limited company as an influencer?"
+    answer: "Not by default. A sole trader structure is simpler and cheaper at modest profits, and the dividend tax rise from 6 April 2026 (basic rate 10.75%, higher 35.75%) has narrowed the saving from incorporating. A company also blocks the £1,000 trading allowance against anything it pays you. Ask an accountant to model both structures on your actual figures before you form anything."
+  - question: "When do influencers have to register for VAT?"
+    answer: "When taxable turnover passes £90,000 in any rolling 12 months, or is expected to pass it in the next 30 days. UK brand-deal income counts toward the threshold. Ad revenue and services supplied to overseas platforms are typically outside the scope under business-to-business place-of-supply rules, but get the split checked rather than guessing, because misreading it moves your registration date."
+  - question: "Do I need a local accountant for influencer work, for example in Wimbledon or elsewhere in London?"
+    answer: "No. The work is records, returns and advice, and it is all done online with cloud software. Whether you are searching for an accountant for influencers in Wimbledon, Manchester or anywhere else in the UK, judge the firm on whether it answers the gift, allowance, VAT and structure questions correctly, not on its postcode. A near-me search finds you a commute, not sector knowledge."
 keyTakeaways:
-  - "UK influencers must register for VAT once turnover exceeds £90,000 in a rolling 12-month period; voluntary registration before that threshold allows input VAT to be reclaimed on equipment and software."
-  - "Making Tax Digital for Income Tax becomes mandatory from April 2026 for sole-trader influencers with qualifying income over £50,000, dropping to £30,000 from April 2027 and £20,000 from April 2028."
-  - "At £80,000 income in 2025/26, operating through a limited company saves a UK influencer roughly £4,300 per year in tax compared with a sole trader structure on the same income."
-  - "If influencer contracts fall inside IR35, the limited company must account for PAYE, employee NIC and employer NIC, wiping out the tax advantage of incorporating."
-  - "Limited companies pay corporation tax at 19% on profits up to £50,000 and 25% above that; paying a director salary of £12,570 attracts no income tax or NIC."
-  - "Equipment purchases qualify for the Annual Investment Allowance up to £1 million per 12 months; remaining costs use the writing-down allowance, which falls from 18% to 14% from April 2026."
+  - "A product received in return for content is a taxable trading receipt at market value; there is no £50 tax-free threshold for PR gifts, that figure comes from employee benefit rules that do not apply to a sole trader."
+  - "The £1,000 trading allowance is either/or: you deduct the allowance or your actual expenses, never both, and the £1,000 test uses gross income including the market value of contentful gifts."
+  - "The trading allowance is not available against income from your own or a connected company, so incorporating removes it, a trap for influencers who form a company early."
+  - "VAT registration is compulsory once taxable turnover passes £90,000 in a rolling 12 months; UK brand-deal income counts, while overseas platform ad revenue is typically outside the scope."
+  - "From 6 April 2026 dividends are taxed at 10.75% (basic), 35.75% (higher) and 39.35% (additional) with a £500 allowance, which narrows the tax saving from running a limited company."
+  - "Register for Self Assessment by 5 October after the end of the first tax year in which gross trading income, including gift value, exceeds £1,000."
 ---
 
-<p>If you are a UK influencer earning from brand deals, affiliate links, ad revenue, subscriptions or sponsored content, your tax situation is not the same as a standard freelancer. You face specific issues around IR35, VAT on digital services, mixed-use expenses and the right company structure. An accountant for influencers needs to understand these areas, not just general self-employment tax.</p>
+<p>Plenty of firms now advertise themselves as an accountant for influencers. Most of them recycle general self-employment advice with the word influencer pasted in, and some publish figures that are simply wrong, including a supposed £50 tax-free limit for PR gifts that does not exist. The way to choose is not the website or the follower-count name-dropping. It is whether the firm gets four specific decisions right: gifted products, the £1,000 trading allowance, VAT, and business structure. This page walks through each one with 2026/27 figures so you can test any accountant before you hand over your records.</p>
 
-<p>This guide covers what you should expect from an accountant for influencers, the key tax decisions you will face, and how to choose someone who actually knows the sector.</p>
+<h2>What Does an Influencer Accountant Actually Do?</h2>
 
-<h2>Why Influencers Have Different Tax Needs</h2>
-
-<p>Most accountants are generalists. They handle a mix of plumbers, consultants and shopkeepers. That works fine for straightforward sole traders. But influencers operate in a grey area that general accountants often miss.</p>
-
-<p>Here is what makes influencer tax different:</p>
+<p>The core work is the same as for any sole trader: bookkeeping, a Self Assessment return, and tax planning. UK influencers pay income tax and Class 4 National Insurance on their trading profit, exactly like any other self-employed person. What a genuine influencer accountant adds is the sector layer on top:</p>
 
 <ul>
-<li><strong>IR35 risk.</strong> If you work exclusively with one brand on long-term contracts, HMRC may treat you as a deemed employee. That means you pay employee and employer NIC, plus PAYE on the full amount. A good accountant for influencers will review your contracts and working practices to assess this.</li>
-<li><strong>VAT on digital services.</strong> If you sell digital products, courses or subscriptions, VAT applies differently. The place of supply rules mean you may need to register for VAT in other countries, not just the UK.</li>
-<li><strong>Mixed-use expenses.</strong> Your phone, laptop, camera, internet, home office and even your clothing may be partly personal and partly business. HMRC expects a clear apportionment. A general accountant might miss the specific rules around clothing that is not normal daywear.</li>
-<li><strong>Multiple income streams.</strong> Brand deals, affiliate commissions, ad revenue, speaking fees, product sales. Each may be taxed differently. Some fall inside IR35, some outside. Some are subject to VAT, some are exempt.</li>
-<li><strong>International income.</strong> If you work with brands based outside the UK, or earn from platforms like YouTube or Patreon that pay from overseas, the tax treatment depends on the double taxation treaty and your residency status.</li>
+<li><strong>Valuing non-cash income.</strong> Gifted products, press trips and barter deals received in return for content are trading receipts at market value. Someone has to put a defensible figure on them.</li>
+<li><strong>Gross-versus-net platform income.</strong> Income counts gross, before platform or agency commission; the commission is then an expense. Reporting the net figure understates turnover and can hide a VAT problem.</li>
+<li><strong>Multi-stream records.</strong> Brand deals, affiliate commission, ad revenue and digital product sales each need tracking, because they behave differently for VAT.</li>
+<li><strong>The allowance and structure calls below,</strong> which is where the real money sits.</li>
 </ul>
 
-<p>A general accountant may not know to ask about these things. An accountant for influencers should.</p>
+<p>If your income is spread across several platforms and you want the per-platform mechanics rather than the accountant-choice question, our <a href="/blog/sole-trader-and-self-employment/accountant-for-content-creators-uk">accountant for content creators guide</a> covers that ground.</p>
 
-<h2>Sole Trader vs Limited Company for Influencers</h2>
+<h2>Decision One: Which of Your PR Gifts Are Taxable</h2>
 
-<p>Most influencers start as sole traders. That is fine up to a point. But once your income crosses around £40,000 to £50,000, a limited company often makes more sense.</p>
-
-<p>Here is the difference in numbers for the 2025/26 tax year.</p>
-
-<p><strong>Sole trader example.</strong> You earn £80,000 from brand deals and ad revenue. After allowable expenses of £12,000, your profit is £68,000. You pay Class 4 NIC on the self-employed profits (6% on profits between £12,570 and £50,270, then 2% above; Class 2 NIC was abolished from 6 April 2024), plus income tax at 20% and 40% on the amounts above the basic rate band. Your total tax bill is roughly £17,250.</p>
-
-<p><strong>Limited company example.</strong> You earn £80,000 through your company. The company pays corporation tax at 19% on profits up to £50,000 and 25% on the rest (with marginal relief in between). You pay yourself a salary of £12,570 (no income tax or NI) and take the rest as dividends. Your total tax bill, combining corporation tax and dividend tax, is roughly £14,200.</p>
-
-<p>The difference is about £4,300 per year in tax saved. That is significant. But a limited company also means more compliance: annual accounts, confirmation statements, payroll, corporation tax returns. You need an accountant for influencers who can handle that without charging you for unnecessary extras.</p>
-
-<p>There is a catch. If you fall inside IR35, the limited company advantage disappears. You end up paying the same tax as an employee, plus employer NI. So the company structure only works if your contracts genuinely fall outside IR35. A good accountant will tell you honestly whether you qualify, not just push you into a company for the fees.</p>
-
-<h2>VAT and Making Tax Digital for Influencers</h2>
-
-<p>The VAT registration threshold is £90,000 in a rolling 12-month period. Once your turnover hits that, you must register. But many influencers register voluntarily before that threshold because they can reclaim VAT on their equipment and software.</p>
-
-<p>If you buy cameras, lighting, laptops, editing software, studio space or props, the VAT on those purchases can be significant. Registering voluntarily lets you reclaim that input VAT. You then charge VAT on your fees. For most influencers working with UK brands, that is fine. The brand reclaims the VAT anyway.</p>
-
-<p>But if you work directly with consumers (selling courses, merchandise, or subscriptions), adding 20% VAT makes your prices less competitive. In that case, you might stay below the threshold or use the Flat Rate Scheme, which lets you keep some of the VAT you charge.</p>
-
-<p>From April 2026, Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) becomes mandatory for self-employed people and landlords with qualifying income over £50,000. From April 2027, that drops to £30,000. From April 2028, it drops to £20,000. If you are a sole trader influencer earning above those thresholds, you will need compatible software and quarterly digital updates to HMRC. An accountant for influencers should be able to set this up for you and explain which software works best for your income streams.</p>
-
-<h2>Expenses Influencers Can Claim</h2>
-
-<p>HMRC allows you to deduct expenses that are "wholly and exclusively" for your business. For influencers, that includes:</p>
+<p>This is the question that separates specialists from pretenders. The law counts trading receipts in money's worth, not just cash (HMRC's Business Income Manual at BIM40051). Applied to influencer income, the position is:</p>
 
 <ul>
-<li><strong>Equipment.</strong> Cameras, lenses, tripods, lighting, microphones, ring lights, backdrops. You can claim the full cost under the Annual Investment Allowance (AIA) up to £1 million per 12 months. Amounts above the AIA, or where you choose not to use it, go into the main pool at an 18% writing-down allowance (reducing to 14% from April 2026).</li>
-<li><strong>Software and subscriptions.</strong> Editing software (Adobe Creative Cloud, Final Cut Pro), scheduling tools (Later, Buffer), analytics tools, stock photo subscriptions, music licensing.</li>
-<li><strong>Home office.</strong> You can claim a proportion of your rent or mortgage interest, council tax, utilities and internet. HMRC accepts a simplified rate of £6 per week for a home office, but if your actual costs are higher, you should calculate the business proportion of your total household costs.</li>
-<li><strong>Travel.</strong> Flights, trains, taxis, accommodation for work trips. If you attend a brand event in another city, the travel costs are allowable. The daily commute to a co-working space is not.</li>
-<li><strong>Clothing and makeup.</strong> This is a grey area. HMRC generally does not allow clothing that could be worn outside work. But if you buy items specifically for a brand shoot and they are not suitable for everyday wear (costumes, branded clothing, specific outfits for a campaign), you can claim them. Keep receipts and a note explaining the business purpose.</li>
-<li><strong>Professional fees.</strong> Accountant fees, legal fees for contract review, agent commissions, management fees.</li>
-<li><strong>Marketing.</strong> Paid ads, sponsored posts on other accounts, website hosting, domain names.</li>
+<li><strong>Contentful gifts are taxable at market value.</strong> A product or service received in return for content, promotion or an agreed post goes into your turnover at what it would cost to buy, even though no cash arrived.</li>
+<li><strong>Unsolicited no-strings freebies are not automatically taxable.</strong> A brand sending you something with no obligation and no expectation of content is a different situation, but it is fact-specific, so take advice rather than assume.</li>
+<li><strong>Genuinely unconvertible items may fall outside the charge.</strong> Something you could not realistically sell is fact-specific too. Hedge, do not assume.</li>
 </ul>
 
-<p>An accountant for influencers will help you separate personal from business use. If you use your phone 60% for work and 40% for personal calls, you claim 60% of the bill. Same for your internet and laptop.</p>
+<p>Two claims you will see on competitor sites are wrong. Gifts are not tax-free, and there is no £50 threshold below which PR gifts escape tax. The £50 figure is lifted from the trivial benefits rules for employees, which are benefit-in-kind rules. A sole trader has no benefit-in-kind regime, so importing that threshold into influencer tax is a category error. Any accountant who quotes it has failed the test.</p>
 
-<h2>IR35 and Influencer Contracts</h2>
+<h2>Decision Two: Trading Allowance or Actual Expenses</h2>
 
-<p>IR35 is the biggest risk for influencers working through a limited company. HMRC looks at whether you would be an employee if you were paid directly. The key factors are:</p>
+<p>The first £1,000 of gross trading income each tax year is tax-free under the trading allowance, with nothing to report if you stay under it. Above £1,000, the allowance becomes a choice: deduct the flat £1,000 <em>or</em> your actual expenses, never both. Three mechanics matter for influencers:</p>
 
 <ul>
-<li><strong>Control.</strong> Does the brand tell you exactly what to say, when to post, and how to edit? Or do you have creative freedom?</li>
-<li><strong>Substitution.</strong> Can you send someone else to do the work? If the contract says the brand wants you personally, that points to employment.</li>
-<li><strong>Mutuality of obligation.</strong> Does the brand have to offer you work, and do you have to accept it? If yes, that is employment.</li>
-<li><strong>Financial risk.</strong> Do you bear the costs if something goes wrong? Do you have to re-shoot at your own expense? If yes, that points to self-employment.</li>
+<li><strong>The £1,000 test uses gross income including gift value.</strong> £600 of cash plus a contentful gift worth £500 puts you over the line, even though your bank statement says £600.</li>
+<li><strong>Low-expense years favour the allowance; kit-heavy years favour actual costs.</strong> If you spent £300 on the business, the £1,000 allowance beats it. If you spent £4,000 on cameras and software, claim the actual costs instead.</li>
+<li><strong>The allowance dies on incorporation.</strong> It is not available against income from your own or a connected person's company, so an influencer who forms a limited company cannot use it against anything the company pays them.</li>
 </ul>
 
-<p>Most influencer contracts score badly on substitution and control. If a brand hires you for a campaign and wants your face, your voice, your style, you cannot substitute someone else. That is a red flag for HMRC.</p>
+<p>For what counts as an allowable cost in the first place, see our <a href="/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist">sole trader expenses checklist</a>.</p>
 
-<p>If you are inside IR35, your company must deduct PAYE and employee NIC from the fees, plus employer NIC. That wipes out the tax advantage of being a limited company. In that case, you may be better off as a sole trader or umbrella employee.</p>
+<h2>A Worked Example: Gifts Inside a Real Profit Computation</h2>
 
-<p>An accountant for influencers should review your contracts and tell you where you stand. If you have multiple brand deals, some may fall inside IR35 and some outside. That is common. Your accountant should help you separate them and handle the PAYE on the inside-IR35 income.</p>
+<p>Maya is a sole-trader influencer in 2026/27. Her year looks like this:</p>
 
-<h2>What to Look for in an Accountant for Influencers</h2>
+<table>
+<thead><tr><th>Item</th><th>Amount</th></tr></thead>
+<tbody>
+<tr><td>Cash brand-deal income</td><td>£24,000</td></tr>
+<tr><td>Affiliate commission</td><td>£1,500</td></tr>
+<tr><td>Gifted tech and clothing, received under contracts to post, at market value</td><td>£3,000</td></tr>
+<tr><td><strong>Gross trading income</strong></td><td><strong>£28,500</strong></td></tr>
+<tr><td>Actual expenses (equipment, editing software, business share of phone and internet)</td><td>£4,200</td></tr>
+<tr><td><strong>Taxable profit</strong> (actual expenses beat the £1,000 allowance, so she claims them)</td><td><strong>£24,300</strong></td></tr>
+</tbody>
+</table>
 
-<p>Not every accountant who claims to work with influencers actually understands the sector. Here is what to check:</p>
+<p>Her tax on that profit, using 2026/27 figures for the rest of the UK: income tax of 20% on £24,300 minus the £12,570 personal allowance, which is 20% of £11,730, so £2,346. Class 4 National Insurance of 6% on the same £11,730 band, so £703.80. Total £3,049.80.</p>
+
+<p>Notice what the gifts did. £3,000 of Maya's turnover never touched her bank account, but it added £780 to her bill (£3,000 at 20% plus 6%). An accountant who leaves contentful gifts out of the computation is storing up an HMRC problem, not saving you tax.</p>
+
+<h2>Decision Three: VAT for Influencers</h2>
+
+<p>You must register for VAT when taxable turnover passes £90,000 in any rolling 12 months, or is expected to pass it in the next 30 days. The influencer-specific points:</p>
 
 <ul>
-<li><strong>Do they know IR35 inside out?</strong> Ask them to explain how they assess IR35 for influencer contracts. If they cannot give you a clear answer, move on.</li>
-<li><strong>Do they understand VAT on digital services?</strong> If you sell courses or subscriptions, ask about the place of supply rules. They should know the difference between B2B and B2C digital services.</li>
-<li><strong>Do they use cloud accounting software?</strong> Xero, FreeAgent and QuickBooks are the standards. If they still want paper receipts and spreadsheets, you will waste time.</li>
-<li><strong>Do they offer fixed fees?</strong> Influencer income can be lumpy. You do not want an accountant charging by the hour for every brand deal you land. Fixed monthly fees are standard for good firms.</li>
-<li><strong>Do they have other influencer clients?</strong> That is not essential, but it helps. They will already know the common issues and the HMRC enquiry triggers.</li>
+<li><strong>UK brand-deal and platform turnover counts toward the £90,000.</strong> A good year of sponsorships can cross the line before you notice, because the test is rolling, not tax-year based.</li>
+<li><strong>Ad revenue and services supplied to overseas platforms are typically outside the scope</strong> under business-to-business place-of-supply rules, so they usually do not count toward the threshold. The split between UK and overseas customers therefore decides when you register, which is why your records need to track who the customer actually is.</li>
+<li><strong>Voluntary registration can pay</strong> if your customers are VAT-registered UK brands (they reclaim what you charge, and you reclaim VAT on cameras, lighting and software). It hurts if you sell courses or merchandise to consumers, who cannot reclaim the 20%.</li>
 </ul>
 
-<p>We work with influencers across the UK. We review contracts, set up the right company structure, handle VAT registration and MTD compliance, and file your annual accounts and tax returns. If you are earning from brand deals, ad revenue or digital products, we can help.</p>
+<p>The mechanics of registering, and the schemes available once you do, are in our <a href="/fundamentals/when-to-register-for-vat-uk">when to register for VAT guide</a>.</p>
 
-<p>You can <a href="/contact">contact us</a> to discuss your situation. Or read our <a href="/blog/limited-company-tax">limited company tax guide</a> for more on how the numbers work.</p>
+<h2>Decision Four: Sole Trader or Limited Company</h2>
 
-<h2>Frequently Asked Questions</h2>
+<p>Old advice said incorporate once profits pass £40,000 or so. The 2026/27 rules have shifted the arithmetic and any accountant still quoting pre-2026 savings figures is out of date:</p>
 
-<h3>Do I need a limited company as an influencer?</h3>
-<p>Not always. If your profit is under £40,000, a sole trader structure is simpler and cheaper. Above that, a limited company usually saves you tax, but only if your contracts fall outside IR35. An accountant can run the numbers for your specific income and expenses.</p>
+<ul>
+<li><strong>Dividend tax rose on 6 April 2026.</strong> The ordinary rate is now 10.75%, the upper rate 35.75% and the additional rate 39.35%, with a £500 dividend allowance. That narrows the gap between extracting dividends and simply paying income tax as a sole trader.</li>
+<li><strong>Incorporating removes your trading allowance</strong> against company income, per decision two.</li>
+<li><strong>A company adds real running costs:</strong> statutory accounts, a confirmation statement, payroll and a corporation tax return, before any fee saving materialises.</li>
+</ul>
 
-<h3>Can I claim my phone and internet as expenses?</h3>
-<p>Yes, but only the business proportion. If you use your phone 70% for work, you claim 70% of the bill. Keep a log for a month to show the split. HMRC may ask for it in an enquiry.</p>
+<p>A company still makes sense for some: consistent high profits being partly retained in the business, liability concerns, or brands that insist on contracting with a company. If you do work through your own company for a medium or large end client, off-payroll working can also enter the picture; <a href="/fundamentals/ir35-explained">our IR35 guide</a> explains when it actually applies. The honest answer is a calculation on your numbers, not a default, and our <a href="/fundamentals/limited-company-vs-sole-trader">limited company vs sole trader guide</a> shows how the comparison is built.</p>
 
-<h3>Do I have to register for VAT as an influencer?</h3>
-<p>Only if your turnover exceeds £90,000 in a rolling 12-month period. But you can register voluntarily if you want to reclaim VAT on equipment and software. Talk to an accountant before registering, because it affects your pricing for consumer-facing sales.</p>
+<h2>Registration and Deadlines</h2>
 
-<h3>What happens if HMRC investigates my influencer income?</h3>
-<p>HMRC can open an enquiry into your tax return up to 12 months after you file it. If they suspect undeclared income, they can go back further. An accountant who understands the sector can help you prepare, keep the right records, and respond to HMRC's questions. If you have not declared all your income, speak to an accountant before HMRC contacts you. The penalties for deliberate non-disclosure are higher than for correcting a return voluntarily.</p>
+<p>Once gross trading income (including gift value) first exceeds £1,000 in a tax year, register for Self Assessment by 5 October after the end of that tax year. The online return and any balancing payment are due the following 31 January. From April 2026, Making Tax Digital for Income Tax adds quarterly digital updates for sole traders with qualifying income over £50,000, extending to £30,000 from April 2027 and £20,000 from April 2028, so software choice is now part of the accountant conversation. Our <a href="/fundamentals/self-assessment-tax-return-guide">Self Assessment guide</a> covers the full timetable.</p>
+
+<h2>Key 2026/27 Figures at a Glance</h2>
+
+<table>
+<thead><tr><th>Item</th><th>Figure (2026/27)</th></tr></thead>
+<tbody>
+<tr><td>Trading allowance (either/or against expenses)</td><td>£1,000 of gross income, including gift value</td></tr>
+<tr><td>Self Assessment registration deadline</td><td>5 October after the end of the first tax year over £1,000</td></tr>
+<tr><td>Personal allowance (rest of UK)</td><td>£12,570</td></tr>
+<tr><td>Class 4 National Insurance</td><td>6% on profits £12,570 to £50,270, 2% above</td></tr>
+<tr><td>VAT registration threshold</td><td>£90,000 taxable turnover in any rolling 12 months</td></tr>
+<tr><td>Dividend rates (from 6 April 2026)</td><td>10.75% / 35.75% / 39.35%, £500 allowance</td></tr>
+</tbody>
+</table>
+
+<h2>How to Test an Accountant Before You Sign</h2>
+
+<p>Ask three questions in the first call:</p>
+
+<ul>
+<li><strong>"Is there a tax-free limit for PR gifts?"</strong> The correct answer distinguishes contentful gifts (taxable at market value) from unsolicited freebies (fact-specific), and rejects the £50 myth. Anything else, walk away.</li>
+<li><strong>"Should I claim the trading allowance or my expenses?"</strong> The correct answer is "whichever is bigger, and we check it every year", plus the warning that incorporating kills the allowance.</li>
+<li><strong>"What counts toward my VAT threshold?"</strong> The correct answer separates UK brand income from overseas platform income and mentions the rolling 12-month test.</li>
+</ul>
+
+<p>Then the ordinary checks: fixed monthly fees rather than hourly billing (influencer income is lumpy, your accountancy bill should not be), cloud software as standard, and comfort with valuing non-cash income. We work with influencers across the UK on exactly these questions; <a href="/contact">contact us</a> if you want your own figures modelled.</p>
 
 <h2>Related articles in Sole Trader and Self Employment</h2>
 <ul>
+    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-content-creators-uk">Accountant For Content Creators UK</a></li>
     <li><a href="/blog/sole-trader-and-self-employment/accountant-for-photographers-uk">Accountant For Photographers UK</a></li>
-    <li><a href="/blog/sole-trader-and-self-employment/accountant-for-designers-uk-guide">Accountant For Designers UK</a></li>
+    <li><a href="/blog/sole-trader-and-self-employment/allowable-expenses-sole-trader-checklist">Allowable Expenses: Sole Trader Checklist</a></li>
 </ul>
-

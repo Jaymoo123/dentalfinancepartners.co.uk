@@ -22,7 +22,7 @@ faqs:
   - question: "Is it better to take salary or dividends in 2026/27?"
     answer: "For most directors, a salary up to £12,570 (using your personal allowance) and dividends up to the basic rate band remains the most efficient. Salary reduces corporation tax and builds your NI record. Dividends are taxed at lower rates than salary above the personal allowance. The exact split depends on your company's profit, whether you have employees, and your personal tax position."
   - question: "What is the minimum salary for a director to get a state pension qualifying year in 2026/27?"
-    answer: "You need to earn at least £6,725 from a single employer in 2026/27 to get a qualifying year for state pension. Below that, you get no NI credit. Between £6,725 and £12,570, you get a qualifying year but pay no employee NI. Above £12,570, you start paying employee NI at 8%."
+    answer: "You need to earn at least the Lower Earnings Limit from a single employer to get a qualifying year for state pension (£6,500 for 2025/26; the 2026/27 figure is confirmed each year on GOV.UK). Below that, you get no NI credit. Between the Lower Earnings Limit and £12,570, you get a qualifying year but pay no employee NI. Above £12,570, you start paying employee NI at 8%."
   - question: "Can I pay my spouse a salary and dividends through my limited company?"
     answer: "Yes, provided your spouse is genuinely involved in the business. They must do real work (not just hold shares). If HMRC applies the settlements legislation, dividends paid to a non-working spouse can be re-allocated back to you for tax. Alphabet shares can help structure the split, but the underlying economic activity must support it."
   - question: "What happens if I take more dividends than the company has profits?"
@@ -61,7 +61,7 @@ keyTakeaways:
 <h3>1. You Have Other Income</h3>
 <p>If you have rental income, a second job, or a side hustle, your personal allowance may already be partially used. Every £1 of other income above £100,000 reduces your personal allowance by 50p. If your other income is £20,000, your salary of £12,570 is still tax-free, but your basic rate band is partially consumed. You may push into higher rate tax sooner, making dividends less efficient.</p>
 
-<p>In that scenario, consider paying a smaller salary (just enough to preserve your NI record, around £6,725 for 2026/27) and taking the rest as dividends. Or pay no salary at all and rely entirely on dividends. The corporation tax saving on a small salary may not be worth the admin if your other income already covers your personal allowance.</p>
+<p>In that scenario, consider paying a smaller salary (just enough to preserve your NI record, at least the Lower Earnings Limit, which was £6,500 for 2025/26; check the 2026/27 figure on GOV.UK) and taking the rest as dividends. Or pay no salary at all and rely entirely on dividends. The corporation tax saving on a small salary may not be worth the admin if your other income already covers your personal allowance.</p>
 
 <h3>2. You Have Employees</h3>
 <p>Once you employ someone else (even a part-time admin), the Employment Allowance becomes available. The allowance is up to £10,500 for 2026/27. It covers your employer NI on the first £10,500 of salary across all employees. If you have the allowance, paying yourself £12,570 costs zero employer NI. That makes the salary more attractive.</p>
@@ -78,7 +78,7 @@ keyTakeaways:
 <h2>Salary Below £12,570: The NI Record Trap</h2>
 <p>Some directors pay themselves a salary of just £5,000 (the secondary threshold) to avoid employer NI entirely. That saves the £1,135.50. But it creates a problem. A salary below £12,570 means you do not make full NI contributions for the year. That can affect your state pension entitlement.</p>
 
-<p>For 2026/27, you need to earn at least £6,725 in a single job to get a qualifying year for NI. Below that, you get nothing. Between £6,725 and £12,570, you get a qualifying year but pay no NI. Above £12,570, you start paying employee NI (8% on earnings between £12,570 and £50,270).</p>
+<p>For 2026/27, you need to earn at least the Lower Earnings Limit in a single job to get a qualifying year for NI (£6,500 for 2025/26; the 2026/27 figure is confirmed each year on GOV.UK). Below that, you get nothing. Between the Lower Earnings Limit and £12,570, you get a qualifying year but pay no NI. Above £12,570, you start paying employee NI (8% on earnings between £12,570 and £50,270).</p>
 
 <p>If you are young and far from retirement, the NI record gap may not matter. If you are over 50, it probably does. The £1,135.50 employer NI saving is small compared to a lost year of state pension (worth about £241 per week at current rates). Weigh the trade-off carefully.</p>
 
@@ -133,7 +133,7 @@ keyTakeaways:
 <p>Here is a simple decision tree for the most tax efficient salary dividend split 2026/27:</p>
 
 <ul>
-<li><strong>Step 1:</strong> Do you have other income above £12,570? If yes, reduce salary to preserve your NI record only (£6,725 minimum). Take dividends up to your remaining basic rate band.</li>
+<li><strong>Step 1:</strong> Do you have other income above £12,570? If yes, reduce salary to preserve your NI record only (the Lower Earnings Limit as a minimum). Take dividends up to your remaining basic rate band.</li>
 <li><strong>Step 2:</strong> Do you have employees (and therefore the Employment Allowance)? If yes, pay yourself £12,570 salary. If no, consider £5,000 salary (avoid employer NI) or £12,570 (accept £1,135.50 employer NI for better NI record).</li>
 <li><strong>Step 3:</strong> Do you have a spouse who can take dividends? If yes, split dividends to use both basic rate bands. Ensure genuine involvement to avoid settlement rules.</li>
 <li><strong>Step 4:</strong> Do you have surplus profit above your basic rate band? Consider pension contributions before taking higher rate dividends.</li>

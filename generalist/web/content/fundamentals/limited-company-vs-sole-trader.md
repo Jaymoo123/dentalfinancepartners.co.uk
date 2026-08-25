@@ -338,7 +338,7 @@ faqs:
 <p>No. You can use your personal bank account. However, a separate business account makes bookkeeping much easier and looks more professional. Most sole traders open a separate account once their turnover exceeds £10,000 to £15,000.</p>
 
 <p><strong>How much does it cost to run a limited company?</strong></p>
-<p>Companies House fees are £12 to register and £13 per year for the confirmation statement. Accountant fees typically range from £500 to £1,500 per year. Software costs £10 to £50 per month. Total: roughly £750 to £2,500 per year.</p>
+<p>Companies House fees are £50 to register online and £50 per year for the confirmation statement. Accountant fees typically range from £500 to £1,500 per year. Software costs £10 to £50 per month. Total: roughly £750 to £2,500 per year.</p>
 
 <p><strong>What is the best accounting software for a limited company?</strong></p>
 <p>Xero, QuickBooks, and FreeAgent are the most popular. FreeAgent is included with some bank accounts (like Mettle and NatWest). Sage is also widely used, especially in manufacturing and construction. Your choice should depend on your accountant's recommendation, most accountants specialise in one or two platforms.</p>

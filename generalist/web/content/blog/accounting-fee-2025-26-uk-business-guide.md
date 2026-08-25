@@ -1,13 +1,14 @@
 ---
-title: "What Determines an Accounting Fee in 2025/26? A UK Business Owner's Guide"
+title: "Accountant Fees in the UK: What Businesses Actually Pay in 2026/27"
 slug: "accounting-fee-2025-26-uk-business-guide"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/accounting-fee-2025-26-uk-business-guide"
 date: "2026-05-17"
+dateModified: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
-metaTitle: "Accounting Fee 2025/26: What UK Businesses Pay & Why"
-metaDescription: "What drives an accounting fee in 2025/26? We break down typical costs for Ltd companies, sole traders, and contractors. No fluff, just real numbers."
+metaTitle: "Accountant Fees UK 2026/27: What Businesses Really Pay"
+metaDescription: "Typical UK accountant fees by service: self assessment, ltd company year-end, VAT, payroll and one-off advice, plus what a £99 year-end really includes."
 altText: "UK accountant reviewing financial documents at a desk in a modern office with a calculator and laptop"
 image: "/blog/accounting-fee-2025-26-uk-business-guide.jpg"
 imageCredit:
@@ -15,196 +16,167 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
   sourceUrl: "https://www.pexels.com/photo/euro-banknotes-with-calculator-and-laptop-keyboard-29262989/"
   source: "Pexels"
-h1: "What Determines an Accounting Fee in 2025/26?"
-summary: "Accounting fees vary wildly depending on your business structure, turnover, and compliance needs. This guide breaks down what you can expect to pay in 2025/26, what drives the cost, and how to avoid common pricing traps. Real numbers for real businesses."
+h1: "Accountant Fees in the UK: What Businesses Actually Pay in 2026/27"
+summary: "Typical UK accountant fees by service, from a self assessment return to a full limited company package, with the honest reasons prices vary, a comparison of fixed fee, hourly and percentage pricing, what a £99 year-end really includes, and how to switch accountants without a gap. Ranges are typical advertised prices checked in August 2026."
 schema: ""
 faqs:
-  - question: "What is the average accounting fee for a limited company in 2025/26?"
-    answer: "For a single-director limited company with no employees and no VAT, expect to pay between £600 and £1,200 per year. Add VAT and payroll and it rises to £1,200 to £2,400. Larger or more complex companies pay £2,400 to £5,000+. Always ask for a written scope of work."
+  - question: "What is the average accounting fee for a limited company in 2026/27?"
+    answer: "For a single-director limited company with no employees and no VAT, typical advertised fees run £600 to £1,200 per year for year-end accounts, the CT600 and a director's personal return. Add quarterly VAT and a small payroll and £1,200 to £2,400 is normal. Larger or more complex companies pay £2,400 to £5,000 or more. Always ask for a written scope of work."
   - question: "Are accounting fees tax deductible?"
-    answer: "Yes. Accounting fees are an allowable business expense for sole traders, partnerships, and limited companies. They reduce your taxable profits. For limited companies, the fee is deducted before corporation tax is calculated. For sole traders, it goes on the self employment pages."
+    answer: "Yes. Accounting fees for the business are an allowable expense for sole traders, partnerships and limited companies, so they reduce taxable profit. A limited company deducts the fee before corporation tax is calculated. A sole trader claims it on the self-employment pages. Fees for purely personal tax work are the usual exception, so ask how your accountant splits the invoice."
   - question: "Why do some accountants charge much less than others?"
-    answer: "Lower fees often mean a more limited service. A cheap accountant may file your return but offer no tax planning, no proactive advice, and no support if HMRC queries your return. They may also use less efficient processes. Compare the full scope of work, not just the headline price."
-  - question: "Should I pay my accountant monthly or annually?"
-    answer: "Monthly payments spread the cost and suit businesses with ongoing needs like VAT and payroll. Annual fees work well for sole traders with simple year-end compliance. Most accountants offer both options. Choose the one that fits your cash flow and service requirements."
+    answer: "A lower fee usually buys a narrower scope. A budget service may file your accounts from the figures you supply, with no checking of your bookkeeping, no tax planning and no support if HMRC opens an enquiry. That can be a fair deal for a very simple company. Compare the written scope of work line by line, not the headline price."
+  - question: "How do I switch accountants without causing problems?"
+    answer: "Tell your current accountant you are leaving, sign the new firm's engagement letter, and let the new accountant send a professional clearance letter requesting your records. The handover normally completes within two to three weeks. The cleanest time to switch is just after a year-end or tax return is filed, so one firm owns one complete year."
 keyTakeaways:
-  - "Sole traders with straightforward income, no VAT, and no employees typically pay £300 to £600 per year for a self assessment return."
-  - "A single-director limited company with no staff and no VAT typically pays £600 to £1,200 per year, covering year-end accounts, corporation tax, and a personal tax return."
-  - "Adding quarterly VAT returns and a small payroll of 2 to 3 employees raises a limited company's annual accounting fee to £1,200 to £2,400."
-  - "Larger limited companies with multiple directors, employees, and complex needs typically pay £2,400 to £5,000 or more per year."
-  - "Making Tax Digital for income tax starts April 2026 for businesses with turnover over £50,000, so your accountant should already be preparing."
-  - "The UK VAT registration threshold is £90,000 turnover in a rolling 12 months, and businesses must register within 30 days of crossing it."
+  - "A straightforward self assessment return typically costs £150 to £400; sole traders with bookkeeping support pay £300 to £600 per year."
+  - "A single-director limited company with no staff and no VAT typically pays £600 to £1,200 per year for accounts, CT600 and a personal return; VAT and a small payroll lift that to £1,200 to £2,400."
+  - "Quarterly VAT returns are typically £40 to £100 each, payroll runs about £20 to £50 per month for the first employee, and one-off tax advice is commonly £150 to £350 per hour or a fixed project quote."
+  - "Three pricing models dominate: fixed fee (predictable, now the norm), hourly (£100 to £250 per hour for qualified accountants), and percentage pricing, which survives mainly in R&D and tax-recovery work."
+  - "A £99 year-end usually covers filing only, from figures you supply, with no review, no tax planning and no HMRC enquiry support. That is a scope difference, not a scam."
+  - "Making Tax Digital for Income Tax started in April 2026 for self-employed and landlord income over £50,000, extends to £30,000 in April 2027, and is already changing what accountants charge sole traders."
 ---
 
-<h2>How Much Should You Pay for an Accounting Fee in 2025/26?</h2>
+<h2>What Should an Accountant Cost in 2026/27?</h2>
 
-<p>If you are a UK business owner asking what an <strong>accounting fee</strong> should cost in 2025/26, the honest answer is: it depends on what you need. A sole trader filing a straightforward self assessment return will pay very different <strong>accounting fees</strong> compared to a limited company with employees, VAT, and R&D claims.</p>
+<p>Two businesses can ask the same accountant for a quote and get numbers five times apart, and both quotes can be fair. An <strong>accounting fee</strong> is a price for a bundle of work, and the bundle varies more than the hourly rate ever does. A sole trader with one income stream needs a few hours a year. A VAT-registered company with staff needs attention every month.</p>
 
-<p>At Holloway Davies, we see business owners every week who are confused by pricing. Some pay £300 a year for a basic return. Others pay £3,000 for a full service. Both can be right. The trick is knowing which you need.</p>
+<p>The ranges below are typical advertised prices from UK firms, checked in August 2026. They are a sanity check for quotes, not a survey statistic. Online-first firms advertise from around £10 to £30 per month at the bottom of the market, while traditional practices quote annually and land higher. Both models are covered here.</p>
 
-<p>This guide covers typical <strong>accountant fees</strong> for different business types, what drives the cost, and how to avoid paying for services you do not need.</p>
+<h2>Typical Accountant Fees by Service</h2>
 
-<h2>What Does an Accounting Fee Actually Cover?</h2>
+<p>Most quotes are built from the same components. Here is what each typically costs on its own, based on advertised UK pricing as at August 2026:</p>
 
-<p>An <strong>accountant fee</strong> is not a single product. It is a bundle of services. The price depends on how many of those services you use. Here is what a typical fee might include:</p>
+<table>
+<thead>
+<tr><th>Service</th><th>Typical advertised range</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Self assessment return (simple)</td><td>£150 to £400 one-off</td><td>SA100 plus employment or self-employment pages; rental or capital gains pages add more</td></tr>
+<tr><td>Limited company year-end (accounts + CT600)</td><td>£600 to £1,200 per year</td><td>Statutory accounts, corporation tax return, usually the confirmation statement and one director's return</td></tr>
+<tr><td>Bookkeeping</td><td>£100 to £500+ per month</td><td>Depends on transaction volume; see the dedicated bookkeeping cost guide below</td></tr>
+<tr><td>Payroll</td><td>£20 to £50 per month for 1 employee, roughly £4 to £10 per extra payslip</td><td>RTI submissions, payslips, pension filings</td></tr>
+<tr><td>VAT returns</td><td>£40 to £100 per quarterly return</td><td>More if the accountant also does the bookkeeping behind it</td></tr>
+<tr><td>One-off tax advice</td><td>£150 to £350 per hour, or a fixed project quote</td><td>Incorporation, share structures, exit planning, HMRC enquiries</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><strong>Year-end accounts preparation</strong> and filing at Companies House</li>
-<li><strong>Corporation tax return (CT600)</strong> calculation and submission to HMRC</li>
-<li><strong>Self assessment tax return (SA100)</strong> for directors or sole traders</li>
-<li><strong>VAT returns</strong> (quarterly or monthly)</li>
-<li><strong>Payroll processing</strong> (RTI submissions, pension contributions, P32 summaries)</li>
-<li><strong>Management accounts</strong> (monthly or quarterly profit and loss reports)</li>
-<li><strong>Bookkeeping</strong> (categorising transactions, reconciling bank accounts)</li>
-<li><strong>Tax planning advice</strong> (dividend strategy, pension contributions, capital allowances)</li>
-<li><strong>HMRC correspondence</strong> handling</li>
-<li><strong>Software licences</strong> (Xero, FreeAgent, QuickBooks, Dext, etc.)</li>
-</ul>
+<p>Bookkeeping is its own market with its own pricing logic, from hourly freelancers to per-transaction software bundles. We cover it properly in <a href="/blog/bookkeeping-and-compliance/how-much-does-a-bookkeeper-cost">how much a bookkeeper costs for a UK small business</a>, so this page keeps to the accountancy side.</p>
 
-<p>Some firms bundle everything into one monthly or annual fee. Others charge per service. Always ask for a breakdown before you sign up.</p>
-
-<h2>Typical Accounting Fees by Business Type (2025/26)</h2>
+<h2>Typical Packages by Business Type</h2>
 
 <h3>Sole Trader and Freelancer</h3>
-<p>A sole trader with straightforward income and expenses, no employees, and no VAT will typically pay between <strong>£300 and £600</strong> per year for their self assessment return. This covers the SA100 form plus the self-employment pages (SA103). If you have rental income too, expect to pay a bit more.</p>
-
-<p>If you use cloud accounting software like FreeAgent or QuickBooks and keep your records tidy, the <strong>accounting fee</strong> will sit at the lower end. If you hand over a shoebox of receipts, expect to pay more for the extra time your accountant spends organising them.</p>
+<p>A sole trader with straightforward income, no employees and no VAT typically pays <strong>£300 to £600</strong> per year for a package covering the self assessment return plus records support. A bare return with tidy figures supplied sits at the £150 to £400 one-off level. Since April 2026, Making Tax Digital for Income Tax has applied to self-employed and property income over £50,000, which means quarterly digital updates as well as the year-end return, and many firms have repriced sole trader packages upwards to reflect the extra filings. The £30,000 threshold follows in April 2027.</p>
 
 <h3>Limited Company (Single Director, No Employees)</h3>
-<p>A typical limited company with one director, no staff, no VAT, and straightforward transactions will pay between <strong>£600 and £1,200</strong> per year. This normally includes:</p>
-<ul>
-<li>Year-end accounts</li>
-<li>Corporation tax return (CT600)</li>
-<li>Personal tax return for the director</li>
-<li>Dividend paperwork</li>
-<li>Confirmation statement filing</li>
-</ul>
-
-<p>If you are a contractor working through your own limited company, expect to pay towards the top end of that range if your accountant also handles IR35 assessments and regular dividend calculations.</p>
+<p>A company with one director, no staff, no VAT and clean records typically pays <strong>£600 to £1,200</strong> per year. That normally includes year-end accounts, the CT600, the director's personal return, dividend paperwork and the confirmation statement. Contractors whose accountant also handles IR35 reviews and regular dividend planning tend to sit at the top of the range.</p>
 
 <h3>Limited Company with VAT and Payroll</h3>
-<p>Add VAT returns (quarterly) and a small payroll (say 2-3 employees) and the <strong>accountants fees</strong> rise to between <strong>£1,200 and £2,400</strong> per year. Each VAT return takes time to prepare and submit. Payroll has monthly RTI submissions and pension reporting.</p>
+<p>Add quarterly VAT returns and a payroll of two or three employees and the annual total typically runs <strong>£1,200 to £2,400</strong>. Each VAT quarter and each payroll month is recurring work, so the fee shifts from a yearly job to a standing relationship, which is why most firms price this tier as a monthly direct debit.</p>
 
-<p>If you are a <a href="/services">business using Xero or FreeAgent</a> with bank feeds connected automatically, the bookkeeping side is faster. That keeps costs down.</p>
-
-<h3>Larger Limited Company (Multiple Directors, Employees, Complex)</h3>
-<p>Once you have multiple directors, several employees, a pension scheme, quarterly VAT, and perhaps rental income or overseas transactions, <strong>accounting fees</strong> typically start at <strong>£2,400 and go up to £5,000+</strong> per year. At this level you should also expect proactive tax planning, not just compliance.</p>
-
-<p>If your business qualifies for R&D tax credits, expect an additional fee for preparing the R&D report and the Additional Information Form (AIF). Some firms charge a flat fee. Others take a percentage of the claim. We generally recommend a flat fee because it keeps the incentive aligned with genuine eligibility.</p>
+<h3>Larger or More Complex Companies</h3>
+<p>Multiple directors, several employees, a pension scheme, stock, or overseas income typically starts at <strong>£2,400 and runs to £5,000+</strong> per year, and at this level you should be getting proactive planning, not just filings. R&D claims are usually priced separately, either a flat fee or a percentage of the claim; we prefer flat fees because they keep the incentive aligned with genuine eligibility.</p>
 
 <h3>Partnership</h3>
-<p>Partnerships file a partnership return (SA800) plus individual returns for each partner. Typical fees range from <strong>£500 to £1,500</strong> depending on the number of partners and complexity. If the partnership has property or investment income, expect the higher end.</p>
+<p>A partnership files an SA800 plus a return for each partner. Typical fees run <strong>£500 to £1,500</strong> depending on partner count and whether the firm has property or investment income.</p>
 
-<h2>What Drives the Cost of an Accounting Fee?</h2>
+<h2>What Actually Drives the Price</h2>
 
-<h3>Turnover and Transaction Volume</h3>
-<p>The single biggest factor is how many transactions you have. A freelance consultant with 50 invoices a year is quick to process. An ecommerce business with 5,000 transactions a month takes much longer. Accountants charge for time. More transactions means more time.</p>
+<h3>Transaction Volume</h3>
+<p>The biggest single factor. A consultant in Nottingham raising 40 invoices a year is quick to process. An online retailer with 3,000 transactions a month is not. Accountants price time, and transactions are time.</p>
 
-<h3>VAT Registration</h3>
-<p>If you are VAT registered, your accountant submits returns every quarter (or monthly). Each return requires reconciling sales and purchase data, checking partial exemption calculations if relevant, and submitting via MTD-compatible software. That adds recurring work.</p>
+<h3>How Clean Your Records Are</h3>
+<p>The same business can be a cheap client or an expensive one depending on what lands on the accountant's desk. Reconciled software with receipts attached is the cheap version. A carrier bag of statements and a year of unexplained transfers is the expensive one, and most firms now either surcharge for it or decline it. If your quote seems high, ask what it assumes about your records.</p>
 
-<h3>Payroll Complexity</h3>
-<p>A single director taking a small salary is simple. A payroll with 10 employees, variable hours, statutory payments (sick pay, maternity pay), and a workplace pension scheme is not. The <strong>fee accounting</strong> for payroll reflects the ongoing monthly commitment.</p>
+<h3>Deadlines</h3>
+<p>Work handed over in good time is scheduled work. Records delivered three weeks before a filing deadline are a rush job, and January self assessment rescue work routinely carries a premium of 25 to 50 percent. The cheapest fee you will ever get is the one quoted in the quiet months for records delivered early.</p>
 
-<h3>Year-End vs Ongoing Support</h3>
-<p>Some business owners want a once-a-year compliance service. Others want monthly management accounts, cash flow forecasts, and quarterly tax planning calls. The latter costs more because the accountant is on retainer, not just doing a fixed piece of work.</p>
+<h3>Recurring Obligations</h3>
+<p>VAT registration, payroll, CIS returns for construction businesses and MTD quarterly updates each convert the relationship from annual to monthly. Every recurring filing adds recurring cost, which is why crossing the £90,000 VAT registration threshold is usually the point where a fee steps up meaningfully.</p>
 
-<h3>Industry Complexity</h3>
-<p>Certain sectors attract higher <strong>accountant fees</strong>. Construction businesses using the CIS scheme need monthly CIS300 returns. Property developers need capital gains calculations and 60-day reporting for residential property disposals. Freelance consultants working through multiple contracts need IR35 reviews. Each adds specialist work.</p>
+<h2>Fixed Fee vs Hourly vs Percentage Pricing</h2>
 
-<h3>Software and Technology</h3>
-<p>Most modern accountants include software licences in their fee. A Xero subscription costs roughly £30 to £70 per month depending on the plan. FreeAgent is typically included in the fee if the firm uses it. Sage 50 licences are more expensive. Ask whether the quoted <strong>accounting fee</strong> includes software or whether that is billed separately.</p>
+<p><strong>Fixed fee</strong> is now the dominant model for ongoing work: a set monthly or annual price for a written scope. You can budget it, and routine questions do not generate invoices. The catch is the scope boundary, so read what is excluded. Our comparison of <a href="/blog/bookkeeping-and-compliance/fixed-fee-vs-hourly-accountant">fixed fee vs hourly accountants</a> works through the numbers in detail.</p>
 
-<h2>How to Compare Accounting Fees Without Getting Burned</h2>
+<p><strong>Hourly billing</strong> runs roughly <strong>£100 to £250 per hour</strong> for qualified accountants, and can be the cheaper option for genuinely one-off work: a single simple return, a piece of advice, a valuation. It punishes contact, since many firms bill in six-minute units, so a chatty client on hourly rates pays for every call.</p>
 
-<h3>Ask for a Detailed Scope of Work</h3>
-<p>Never accept a quote that just says "accounts and tax return". Ask for a written breakdown. What exactly is included? How many director tax returns? Does it cover the confirmation statement? Is VAT included? What about HMRC correspondence if you get a compliance check?</p>
+<p><strong>Percentage pricing</strong> survives mainly in recovery-style work, R&D claims and fee structures tied to a refund or a claim value. It aligns the adviser with the size of the claim rather than its accuracy, which is exactly why HMRC has tightened R&D agent rules and why we recommend flat fees for claims work.</p>
 
-<h3>Check What Is Excluded</h3>
-<p>Some firms quote a low base fee then charge extra for everything else. Common exclusions include:</p>
-<ul>
-<li>VAT returns (charged per return)</li>
-<li>Payroll (charged per month)</li>
-<li>Self assessment returns for spouses or partners</li>
-<li>Capital gains calculations</li>
-<li>R&D tax credit claims</li>
-<li>Company formations</li>
-</ul>
+<h2>The £99 Year-End: What Cheap Actually Buys</h2>
 
-<p>Read the small print. A £600 quote that excludes VAT returns could become £1,200 once you add four quarterly submissions.</p>
-
-<h3>Consider Fixed Fee vs Time Spent</h3>
-<p>Most good accountants offer fixed monthly or annual fees for ongoing work. This gives you certainty. Time-based billing (hourly rates) can work for ad hoc projects but is harder to budget for. Typical hourly rates for qualified accountants range from £100 to £250 per hour depending on location and specialism.</p>
-
-<h3>Look Beyond Price</h3>
-<p>The cheapest <strong>accountant fees</strong> often come with the least proactive service. A £300 accountant might file your return on time but never call you to discuss tax planning. A £1,500 accountant might save you £5,000 in tax through proper structuring. Price is only one factor.</p>
-
-<h2>Should You Pay Monthly or Annually?</h2>
-
-<p>Most accountants offer both. Monthly fees are common for ongoing services like bookkeeping, VAT, and payroll. Annual fees suit businesses that only need year-end compliance.</p>
-
-<p>If you are a limited company, monthly payments spread the cost and avoid a large bill at year-end. Many firms charge a fixed monthly direct debit that covers everything. This is common for contractor accountants and small Ltd companies.</p>
-
-<p>Sole traders often prefer an annual fee because their compliance needs are simpler. Just make sure you know when the fee is due. Some firms require payment before they file your return.</p>
-
-<h2>Red Flags When Choosing an Accountant</h2>
+<p>Ultra-low advertised prices are real, and for the right client they are not a trick. But it is worth being precise about what a £99 or from-£10-per-month service typically includes:</p>
 
 <ul>
-<li><strong>No ACCA or CIMA qualification.</strong> Anyone can call themselves an accountant. Qualified accountants carry professional indemnity insurance and follow ethical standards.</li>
-<li><strong>Vague pricing.</strong> If they will not give you a written quote, walk away.</li>
-<li><strong>No software integration.</strong> In 2025/26, your accountant should use cloud accounting software. If they still ask for paper records, you are paying for their inefficiency.</li>
-<li><strong>No mention of MTD.</strong> Making Tax Digital for income tax starts April 2026 for businesses with turnover over £50,000. Your accountant should already be preparing for it.</li>
-<li><strong>No fixed fee option.</strong> If they only offer hourly billing and cannot estimate the total, you risk budget surprises.</li>
+<li><strong>Filing from your figures.</strong> You supply a completed trial balance or software file; the firm formats and files it. Nobody checks whether your bookkeeping is right.</li>
+<li><strong>Software-driven, minimal contact.</strong> The margin only works if you never speak to anyone. Questions are chargeable extras or answered from a help desk.</li>
+<li><strong>No tax planning.</strong> Salary and dividend mix, timing of spend, capital allowances claims: not in scope. For many companies the planning is worth more than the fee difference.</li>
+<li><strong>No HMRC enquiry support.</strong> If HMRC asks questions, defending the return is a new engagement at a new price.</li>
+<li><strong>Per-item extras.</strong> Confirmation statement, director's personal return, dividend vouchers and references are often priced separately, so compare the total, not the headline.</li>
 </ul>
 
-<h2>What About the First Year?</h2>
+<p>If you are a dormant or very simple company and you genuinely need filing only, a budget service can be rational. The mistake is buying filing-only while believing you bought an accountant.</p>
 
-<p>Your first year with a new accountant often costs more. They need to set up your accounting software, bring historical records up to date, and understand your business. Some firms charge a setup fee. Others spread it across the first few months.</p>
+<h2>When and How to Switch Accountants</h2>
 
-<p>If you are incorporating for the first time, your <a href="/incorporation">accountant may offer a formation package</a> that includes the company registration, first set of accounts, and initial tax planning. These packages typically range from £200 to £500 on top of the annual fee.</p>
-
-<h2>How to Reduce Your Accounting Fee</h2>
+<p>Switching is easier than most owners expect, and fear of the process keeps too many businesses overpaying or under-served. The mechanics:</p>
 
 <ul>
-<li><strong>Keep digital records.</strong> Use cloud software. Reconcile your bank accounts monthly. Your accountant spends less time on clean data.</li>
-<li><strong>Submit receipts promptly.</strong> Use Dext or a similar receipt capture app. Do not let paperwork pile up.</li>
-<li><strong>Ask for a checklist.</strong> Most accountants provide a year-end checklist. Follow it. Missing information means follow-up emails and extra charges.</li>
-<li><strong>Separate business and personal spending.</strong> A separate business bank account saves hours of sorting.</li>
-<li><strong>Review your service level annually.</strong> If your business has simplified, ask if your fee can reduce. If it has grown, expect it to rise.</li>
+<li><strong>Pick the moment.</strong> The cleanest handover is just after a year-end or a filed return, so one firm owns one complete year. Mid-year switches work but mean splitting a year's records.</li>
+<li><strong>Settle up and give notice.</strong> Check your engagement letter for a notice period and clear any outstanding fees; a firm can hold work-in-progress until paid.</li>
+<li><strong>Professional clearance.</strong> Your new accountant writes to the old one asking whether there is any professional reason not to act, and requests your records: accounts, tax computations, capital allowances pools. This is standard etiquette under professional body rules; a reputable outgoing firm cooperates.</li>
+<li><strong>Re-authorise HMRC.</strong> New 64-8 agent authorisations for each tax, and a transfer of your software subscriptions if the old firm held them.</li>
 </ul>
 
-<h2>Real Examples: What Different Businesses Pay</h2>
+<p>Most transfers complete within two to three weeks. Good times to start the conversation are March to May and August to October, well clear of the January rush.</p>
 
-<p><strong>Freelance graphic designer in Manchester (sole trader, no VAT):</strong> £420 per year. Covers self assessment, bookkeeping advice, and one tax planning call. Uses FreeAgent included in the fee.</p>
+<h2>A Worked Year: What a Typical Company Actually Spends</h2>
 
-<p><strong>IT contractor in Reading (limited company, no VAT, no staff):</strong> £960 per year. Covers year-end accounts, corporation tax, personal tax return, dividend paperwork, and IR35 contract reviews. Monthly direct debit of £80.</p>
+<p>Take a VAT-registered limited company in Glasgow with one director, two employees and tidy software records:</p>
 
-<p><strong>Building contractor in Birmingham (limited company, VAT, CIS, 3 employees):</strong> £2,400 per year. Covers quarterly VAT returns, monthly CIS300 returns, payroll, year-end accounts, and personal tax returns for the director and spouse.</p>
+<table>
+<thead>
+<tr><th>Item</th><th>Basis</th><th>Annual cost</th></tr>
+</thead>
+<tbody>
+<tr><td>Year-end accounts + CT600 + confirmation statement</td><td>Fixed annual fee</td><td>£850</td></tr>
+<tr><td>Director's self assessment return</td><td>Fixed annual fee</td><td>£200</td></tr>
+<tr><td>VAT returns</td><td>4 quarters at £75</td><td>£300</td></tr>
+<tr><td>Payroll (3 people)</td><td>12 months at £40</td><td>£480</td></tr>
+<tr><td><strong>Total</strong></td><td></td><td><strong>£1,830</strong></td></tr>
+</tbody>
+</table>
 
-<p><strong>Ecommerce business in Bristol (limited company, VAT, 8 employees, stock, Amazon FBA):</strong> £4,800 per year. Covers monthly management accounts, quarterly VAT, payroll, year-end accounts, stock valuation, and ongoing tax planning.</p>
+<p>That is just over £150 per month, squarely inside the £1,200 to £2,400 band for this profile, and the whole amount is deductible against corporation tax as a business expense. Add bookkeeping if nobody in the business does it, and add one-off advice as projects arise.</p>
 
-<p>These are real ranges from our experience. Your <strong>accounting fee</strong> will depend on your specific circumstances.</p>
+<h2>How Fees Have Moved Since 2025</h2>
 
-<h2>What If Your Business Is Growing?</h2>
+<p>If you searched for accountant fees 2025 and are re-checking the market now, the bands themselves have moved less than the scope behind them. The visible shifts from 2025/26 into 2026/27: sole trader packages have risen where MTD quarterly filing now applies, payroll pricing has firmed as employer NIC changes made payroll advice more valuable, and online-first firms have pushed entry pricing lower while moving more items to per-item extras. The comparison discipline is unchanged: same scope, same year, line by line.</p>
 
-<p>As your turnover increases, your compliance needs become more complex. You may cross the VAT threshold (£90,000 turnover in a rolling 12 months). You may take on employees. You may start trading internationally. Each change adds to the <strong>accounting fees</strong>.</p>
+<h2>How to Pay Less Without Buying Less</h2>
 
-<p>Do not be tempted to stick with a basic service as you grow. Underpaying for compliance can lead to missed deadlines, incorrect filings, and HMRC penalties. A good accountant grows with you.</p>
+<ul>
+<li><strong>Keep digital records and reconcile monthly.</strong> Clean data is the single biggest discount you control.</li>
+<li><strong>Capture receipts as you go</strong> with an app rather than in a year-end scramble.</li>
+<li><strong>Deliver early.</strong> Records in well before the deadline get scheduled rates, not rush rates.</li>
+<li><strong>Separate business and personal banking.</strong> Untangling mixed accounts is billable time.</li>
+<li><strong>Review scope annually.</strong> If the business has simplified, ask for the fee to follow; if it has grown, expect the reverse and budget for it.</li>
+</ul>
 
-<p>If your turnover crossed the VAT threshold in the last 30 days, you must register for VAT inside the 30-day window. Your accountant should flag this before it happens, not after.</p>
+<h2>Red Flags in Any Quote</h2>
 
-<h2>How We Structure Our Fees at Holloway Davies</h2>
+<ul>
+<li><strong>No written scope.</strong> "Accounts and tax return" is not a scope. Ask exactly what is included, how many personal returns, and what an HMRC enquiry would cost.</li>
+<li><strong>No qualification or supervision.</strong> Anyone can trade as an accountant. Membership of a professional body (ICAEW, ACCA, CIMA, AAT) brings professional indemnity insurance, ethical rules and a complaints route.</li>
+<li><strong>Silence on MTD.</strong> Making Tax Digital for Income Tax is live for the £50,000 tier and extends to £30,000 in April 2027. A firm with no MTD plan for its sole trader clients is behind.</li>
+<li><strong>Only hourly, no estimate.</strong> Hourly billing is legitimate, but a refusal to estimate the total is a budgeting risk you do not need to take.</li>
+</ul>
 
-<p>We offer transparent fixed fees. We will tell you exactly what is included and what is not. No hidden charges. No surprise bills.</p>
+<h2>How We Price at Holloway Davies</h2>
 
-<p>We work with businesses across every sector: trades, consultancies, ecommerce, creative, tech, services, retail. Whether you are a sole trader in Sheffield or a limited company in Shoreditch, we tailor the service to what you actually need.</p>
+<p>We work on transparent fixed fees with a written scope: what is included, what is not, and what a change in your circumstances would do to the price. Whether you are a sole trader in Swansea or a limited company in Leicester, the fee follows the work, and you see the workings.</p>
 
-<p>If you want a no-obligation quote, <a href="/contact">get in touch</a>. Tell us about your business. We will tell you what a fair <strong>accounting fee</strong> looks like for you.</p>
+<p>If you want a like-for-like quote against what you pay now, <a href="/contact">get in touch</a> and bring your current engagement letter. We will tell you honestly if your existing fee is fair.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>An <strong>accounting fee</strong> is an investment, not an expense. A good accountant saves you more than they cost through tax planning, compliance avoidance, and business advice. The cheapest option is rarely the best value.</p>
-
-<p>Know what you need. Ask for a clear scope. Compare like for like. And if something feels off, trust your instinct.</p>
-
-<p>If your business is straightforward, you do not need to overpay. If it is complex, do not underinvest. The right <strong>accountant fee</strong> sits exactly where your needs meet fair pricing.</p>
+<p>The right question is not "what is the cheapest accountant" but "what does my business need, and what is a fair price for exactly that". Simple business, simple needs: do not overpay for planning you will never use. Growing business with VAT, payroll and decisions to make: do not buy filing-only and call it an accountant. Get the scope in writing, compare like for like, and the fee usually takes care of itself.</p>

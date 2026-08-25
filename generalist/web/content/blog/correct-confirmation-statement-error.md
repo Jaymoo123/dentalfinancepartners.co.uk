@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Bookkeeping and Compliance
 metaTitle: Correct a Confirmation Statement Error at Companies House
-metaDescription: Spotted a mistake on a filed confirmation statement? Minor fixes by letter or form RP02 are free; a replacement CS01 costs £34 online (£62 paper).
+metaDescription: Spotted a mistake on a filed confirmation statement? Minor fixes by letter or form RP02 are free; a replacement CS01 costs £50 online (£110 paper).
 altText: UK accountant reviewing a confirmation statement correction form at a desk in a Manchester office
 image: /blog/correct-confirmation-statement-error.jpg
 imageCredit:
@@ -20,7 +20,7 @@ summary: Made a mistake on your confirmation statement? We walk through the corr
 schema: ""
 faqs:
 - question: Can I correct a confirmation statement error for free?
-  answer: Minor errors corrected by writing to Companies House or using form RP02 are free. Substantive errors requiring a new CS01 cost £34 online (£62 by paper), the standard filing fee. There is no reduced fee for corrections.
+  answer: Minor errors corrected by writing to Companies House or using form RP02 are free. Substantive errors requiring a new CS01 cost £50 online (£110 by paper), the standard filing fee. There is no reduced fee for corrections.
 - question: How long does Companies House take to correct a confirmation statement error?
   answer: Minor corrections typically take 5 to 10 working days. Substantive corrections filed as a new CS01 are processed within 24 to 48 hours online, though the updated register may take a few days to reflect the change.
 - question: What if I need to correct an error from three years ago?
@@ -29,14 +29,14 @@ faqs:
   answer: No. HMRC does not receive confirmation statement data. However, if the error relates to director details or company address that HMRC holds, you should update HMRC separately through your Government Gateway account or by writing to them.
 metaTitle_prev: 'Correct Confirmation Statement Error: UK Companies House'
 metaDescription_prev: Made a mistake on your confirmation statement? We explain the correction process, forms needed, and when you must file a full update instead.
-dateModified: '2026-06-12'
+dateModified: '2026-08-25'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 keyTakeaways:
   - "Minor errors such as misspelled names, address typos, or inexact SIC codes can be corrected free of charge by writing to Companies House or using form RP02."
-  - "Substantive errors including an omitted director, wrong shareholding, or missed PSC require filing a replacement CS01, costing £34 online or £62 by paper."
+  - "Substantive errors including an omitted director, wrong shareholding, or missed PSC require filing a replacement CS01, costing £50 online or £110 by paper."
   - "There is no reduced fee for a correction filing; the standard confirmation statement fee applies again in full."
   - "Minor corrections typically take 5 to 10 working days to appear on the public register after submission."
   - "Companies House does not automatically correct errors; you must actively submit a correction letter, form RP02, or a replacement CS01."
@@ -103,7 +103,7 @@ howToSteps:
 
 <p>For these errors, you file a new CS01 form online through the Companies House WebFiling service or using third-party software like Xero or FreeAgent. Mark the filing as a "replacement" or "correction" in the notes section. The new statement will supersede the previous one.</p>
 
-<p>You must pay the standard filing fee again: £34 online or £62 by paper. There is no reduced fee for corrections.</p>
+<p>You must pay the standard filing fee again: £50 online or £110 by paper. There is no reduced fee for corrections.</p>
 
 <p>If the error is on a confirmation statement filed more than 12 months ago, you may need to file a full update rather than a correction. Companies House will advise on the specific process for historical errors.</p>
 

@@ -92,7 +92,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>Annual accounts</strong> to Companies House within 9 months of the year end. Late filing penalties start at £150 for a private company and escalate quickly.</li>
-<li><strong>Confirmation statement</strong> to Companies House every 12 months. £34 filing fee online.</li>
+<li><strong>Confirmation statement</strong> to Companies House every 12 months. £50 filing fee online.</li>
 <li><strong>Corporation tax return (CT600)</strong> to HMRC within 12 months of the year end. But the tax is due 9 months and 1 day after the year end.</li>
 <li><strong>Self assessment return (SA100)</strong> for your personal tax, including the dividend income from your company. Due 31 January.</li>
 <li><strong>Payroll reporting</strong> if you pay yourself a salary through the company. Even a small salary requires RTI (Real Time Information) submissions to HMRC every month or quarter.</li>

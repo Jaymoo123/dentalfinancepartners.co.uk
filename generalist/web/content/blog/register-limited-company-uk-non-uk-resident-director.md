@@ -29,7 +29,7 @@ faqs:
   answer: No. The registered office must be a physical address in the UK. It cannot be a PO Box. You can use an accountant's address or a registered office service. Your personal residential address can remain private if you use a service address for the director's details on the public register.
 metaTitle_prev: How to Register a Limited Company UK with a Non-UK Resident
 metaDescription_prev: Non-UK resident directors can register a UK limited company online via Companies House. But the process has extra steps. Here is what you need to know.
-dateModified: '2026-06-12'
+dateModified: '2026-08-25'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
@@ -39,7 +39,7 @@ keyTakeaways:
   - "Dividend rates 10.75/35.75/39.35 + £500 allowance match 2026/27 ground truth"
   - "Corporation tax scoped to 2025/26 in body, 19%/25% consistent"
   - "Employer NI in body correctly stated as 15% above £5,000 from 6 Apr 2025"
-  - "VAT threshold £90,000 and confirmation statement £34 verified against body"
+  - "VAT threshold £90,000 and confirmation statement £50 verified against body"
   - "No stale figures detected; remediation pass holds up"
 ---
 <p>You can register a limited company in the UK even if you live outside the country. Companies House does not require directors to be UK residents. The process to <strong>how to register a limited company uk</strong> is the same online application. But the compliance picture changes once the company is active.</p>
@@ -116,7 +116,7 @@ keyTakeaways:
 
 <h3>Companies House Filing</h3>
 
-<p>Every UK limited company must file a confirmation statement every 12 months. The fee is £34 for online filing (£62 by paper), since 1 May 2024. You must also file annual accounts within 9 months of the year end.</p>
+<p>Every UK limited company must file a confirmation statement every 12 months. The fee is £50 for online filing (£110 by paper). You must also file annual accounts within 9 months of the year end.</p>
 
 <p>Late filing penalties for accounts start at £150 for a private company one month late and rise to £1,500 for six months late. These apply regardless of where the director lives.</p>
 

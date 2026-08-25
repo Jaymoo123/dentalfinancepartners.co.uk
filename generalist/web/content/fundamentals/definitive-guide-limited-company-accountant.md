@@ -44,7 +44,7 @@ faqs:
 
 <p>Your accountant also handles:</p>
 <ul>
-<li>Confirmation Statement filing (annual, £34 filing fee)</li>
+<li>Confirmation Statement filing (annual, £50 filing fee)</li>
 <li>PAYE and RTI submissions if you pay yourself a salary</li>
 <li>P11D and P11D(b) for benefits in kind</li>
 <li>VAT returns if you are registered</li>

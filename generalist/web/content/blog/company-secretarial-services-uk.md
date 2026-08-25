@@ -28,7 +28,7 @@ faqs:
   - question: "What happens if I miss the confirmation statement deadline?"
     answer: "There is no automatic late filing penalty for a late confirmation statement, unlike annual accounts. However, if you do not file it for a prolonged period, Companies House may start the process to strike off your company. Once struck off, all company assets revert to the Crown. To avoid this, file your confirmation statement within 14 days of the due date shown on your Companies House account."
 keyTakeaways:
-  - "The online confirmation statement filing fee is £34 (£62 on paper, since 1 May 2024), and every UK limited company must file one at least once every 12 months."
+  - "The online confirmation statement filing fee is £50 (£110 on paper), and every UK limited company must file one at least once every 12 months."
   - "Late filing penalties for annual accounts start at £150 one month late, rising to £375, £750, and £1,500 more than six months late."
   - "Private limited companies have not been legally required to appoint a company secretary since the Companies Act 2006, but directors remain jointly responsible for all statutory compliance."
   - "Basic company secretarial services covering confirmation statement filing and registered office provision typically cost £100 to £250 per year."
@@ -49,7 +49,7 @@ keyTakeaways:
 <h3>Confirmation Statement Filing</h3>
 <p>Every UK limited company must file a confirmation statement at least once every 12 months. This is not the same as your annual accounts. The confirmation statement confirms that the information Companies House holds about your company is correct: registered office address, director details, shareholder information, and people with significant control (PSC register).</p>
 
-<p>A company secretarial service will prepare and file this on your behalf, checking the information against your statutory registers before submission. The filing fee is £34 (or £62 if filed on paper, which nobody should do), since 1 May 2024. A good service will diarise the 12-month deadline and file it before the due date, not after.</p>
+<p>A company secretarial service will prepare and file this on your behalf, checking the information against your statutory registers before submission. The filing fee is £50 (or £110 if filed on paper, which nobody should do). A good service will diarise the 12-month deadline and file it before the due date, not after.</p>
 
 <h3>Maintaining Statutory Registers</h3>
 <p>Every limited company must maintain several statutory registers. These include the register of directors, register of directors' residential addresses (not open to public inspection), register of secretaries (if you have one), register of members (shareholders), register of people with significant control, and register of charges (mortgages or loans secured against company assets).</p>
@@ -113,7 +113,7 @@ keyTakeaways:
 
 <p><strong>Software and technology.</strong> A good provider uses specialist software for company secretarial work, not just spreadsheets. Software like Inform Direct, Company Watch, or Iris Company Secretary ensures registers are properly formatted, deadlines are tracked, and filings are made electronically.</p>
 
-<p><strong>Scope of service.</strong> Check exactly what is included. Does the fee cover the confirmation statement filing fee (£34 online, or £62 by paper, since 1 May 2024) or is that added on? Does it include filing director changes? Does it include maintaining the PSC register? Does it cover annual accounts filing with Companies House, or only the confirmation statement? Get the scope in writing.</p>
+<p><strong>Scope of service.</strong> Check exactly what is included. Does the fee cover the confirmation statement filing fee (£50 online, or £110 by paper) or is that added on? Does it include filing director changes? Does it include maintaining the PSC register? Does it cover annual accounts filing with Companies House, or only the confirmation statement? Get the scope in writing.</p>
 
 <p><strong>Deadline management.</strong> The provider should have a clear process for tracking and managing deadlines. Ask how they handle it. Do they send reminders? Do they file automatically? What happens if a deadline is missed?</p>
 

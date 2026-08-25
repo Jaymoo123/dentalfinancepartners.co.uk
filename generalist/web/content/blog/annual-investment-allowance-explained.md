@@ -1,186 +1,161 @@
 ---
-title: "Annual Investment Allowance Explained: How UK Businesses Claim 100% Tax Relief on Plant and Machinery"
+title: "Annual Investment Allowance Explained: How AIA Works and When to Use It"
 slug: "annual-investment-allowance-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/annual-investment-allowance-explained"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
-metaTitle: "Annual Investment Allowance Explained: 100% Tax Relief"
-metaDescription: "Annual investment allowance explained simply for UK business owners. Claim 100% tax relief on plant and machinery up to £1m. Real examples, eligibility"
-altText: "UK accountant explaining annual investment allowance to a business owner in a modern Manchester office with a laptop and paperwork visible"
+metaTitle: "Annual Investment Allowance Explained: How AIA Works"
+metaDescription: "The Annual Investment Allowance explained: 100% relief on plant and machinery up to a permanent £1m, how AIA compares with WDAs, full expensing and the 40% FYA."
+altText: "UK accountant explaining annual investment allowance to a business owner with a laptop and paperwork visible"
 image: "/blog/annual-investment-allowance-explained.jpg"
 imageCredit:
   photographer: "Towfiqu barbhuiya"
   photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
   sourceUrl: "https://www.pexels.com/photo/a-person-holding-silver-and-gold-coins-10972831/"
   source: "Pexels"
-h1: "Annual Investment Allowance Explained: How UK Businesses Claim 100% Tax Relief on Plant and Machinery"
-summary: "The annual investment allowance (AIA) lets UK businesses deduct the full cost of qualifying plant and machinery from their taxable profits in the year of purchase. This guide explains how it works, what qualifies, and how to maximise the relief."
+h1: "Annual Investment Allowance Explained: How AIA Works and When to Use It"
+summary: "The annual investment allowance (AIA) lets a UK business deduct the full cost of qualifying plant and machinery from taxable profits in the year of purchase, up to a permanent £1,000,000 cap. This guide explains what the AIA is, how much tax it actually saves, how it compares with writing down allowances, full expensing and the new 40% first-year allowance, and the situations where claiming it is the wrong move."
 schema: ""
 faqs:
-  - question: "Can I claim the annual investment allowance on a car?"
-    answer: "No. The AIA does not apply to cars. Cars go into the main capital allowance pool (14% per year from April 2026; 18% up to 31 March/5 April 2026) or the special rate pool (6% per year for high-emission cars). Zero-emission new cars qualify for a 100% First Year Allowance instead, which gives similar upfront relief but is a different relief."
-  - question: "What is the annual investment allowance limit for 2025/26?"
-    answer: "The AIA limit is £1,000,000 per 12-month accounting period until 31 March 2026. After that date, the limit is scheduled to revert to £200,000, though the government has extended the £1m cap before. If your accounting period straddles the change, the cap is calculated on a time-apportioned basis."
-  - question: "Does the annual investment allowance apply to second-hand equipment?"
-    answer: "Yes. The AIA applies to both new and second-hand plant and machinery, provided you buy the asset for your business. If you transfer an asset you already owned personally into the business, it does not qualify because you did not buy it for the business. Hire purchase agreements also qualify."
-  - question: "Can a sole trader claim the annual investment allowance?"
-    answer: "Yes. Sole traders and partnerships can claim the AIA on qualifying plant and machinery, just like limited companies. The same £1m cap applies. The only difference is that limited companies can also use Full Expensing (uncapped 100% relief) for main-rate assets, while sole traders and partnerships cannot."
+  - question: "What is the annual investment allowance in simple terms?"
+    answer: "The AIA is a tax relief that lets a business deduct 100% of the cost of qualifying plant and machinery (equipment, vans, tools, computers, fixtures) from its taxable profits in the year of purchase, instead of spreading the relief over many years. The cap is £1,000,000 of spend per 12-month accounting period, and it is available to limited companies, sole traders and most partnerships."
+  - question: "Is the annual investment allowance being reduced to £200,000?"
+    answer: "No. The £1,000,000 AIA limit is permanent. The cap was temporarily raised from £200,000 to £1m in January 2019 and repeated extensions followed, which is why older articles talk about a reversion date, but the £1m level was made permanent from April 2023 and no reduction is scheduled."
+  - question: "Should I claim the AIA or full expensing?"
+    answer: "If you are a limited company buying new and unused main-rate plant, the two give the same 100% relief, and full expensing has no monetary cap, so companies with large spend usually claim full expensing on new plant and save their AIA for second-hand assets and special rate spend. Sole traders and partnerships cannot use full expensing, so the AIA is their main upfront relief."
+  - question: "When is it better not to claim the annual investment allowance?"
+    answer: "When the relief is worth more later than now. If your profits are low this year (relieved at 19% or covered by losses) but expected to rise into the 25% main rate or the 26.5% marginal band, disclaiming AIA and taking writing down allowances spreads the relief into higher-rate years. The trade-off got worse from April 2026 because the main pool rate fell from 18% to 14%, so the deferred relief arrives more slowly. Model it before choosing."
 keyTakeaways:
-  - "UK businesses can claim 100% tax relief on qualifying plant and machinery up to £1,000,000 per 12-month accounting period until 31 March 2026."
-  - "After 31 March 2026, the AIA limit is scheduled to revert to £200,000, making the timing of large capital purchases important."
-  - "Cars are excluded from the AIA entirely; commercial vehicles such as vans, lorries and pickup trucks do qualify."
-  - "Sole traders, partnerships and limited companies can all claim AIA, with the same £1m cap applying across each business type."
-  - "Limited companies can claim Full Expensing from 1 April 2023, giving 100% uncapped relief on main-rate plant and machinery; sole traders and partnerships cannot."
-  - "Where the same person controls multiple companies, the £1m AIA cap is shared across all entities, not granted per company."
+  - "The AIA gives 100% tax relief on qualifying plant and machinery up to £1,000,000 per 12-month period, and the £1m cap is permanent, not reverting to £200,000."
+  - "For a company in the corporation tax marginal-relief band, £74,000 of AIA-relieved spend saves £19,610 of tax; for a higher-rate sole trader the effective saving rate can exceed 40%."
+  - "AIA is one of four routes to relief: compare it against full expensing (companies only, uncapped, new plant), the 40% first-year allowance (from 1 January 2026, new plant) and writing down allowances (14% main pool from April 2026)."
+  - "Companies buying new plant usually claim full expensing first and preserve AIA for second-hand and special rate spend; unincorporated businesses lead with AIA."
+  - "AIA is a claim, not a default: claiming less than the maximum, or nothing, is sometimes the better move when profits are low now and rising."
+  - "The 40% FYA matters mainly once the £1m AIA is exhausted, giving 40% upfront with the balance going to the main pool."
 ---
 
-<p>If you buy a piece of equipment for your business, you do not deduct the full cost from your profits in one go under normal accounting rules. Instead, you spread the cost over the asset's useful life as depreciation. But for tax purposes, the <strong>annual investment allowance explained</strong> here gives you a much better outcome: 100% relief in the year you buy the asset.</p>
+<p>Buy a piece of equipment and, under normal accounting rules, you depreciate it over its useful life. Tax does not work that way: depreciation is not deductible, and capital allowances take its place. The <strong>annual investment allowance (AIA)</strong> is the most widely used of them, and the most generous for most businesses: 100% relief on qualifying plant and machinery in the year you buy it, up to £1,000,000 of spend per 12-month accounting period.<sup><a href="#ref-1">[1]</a></sup></p>
 
-<p>The AIA is one of the most valuable capital allowances available to UK businesses. It lets you deduct the full cost of qualifying plant and machinery from your taxable profits immediately, up to an annual limit of £1,000,000. That limit applies until 31 March 2026, after which it is due to revert to £200,000 (though the government has extended the £1m cap before).</p>
+<p>The £1m cap is <strong>permanent</strong>. You may still find guidance quoting a £200,000 reversion date; that reversion was cancelled when the £1m level, previously a temporary measure on repeated extensions, was made permanent from April 2023, and no reduction is scheduled. Plan on £1m.</p>
 
-<p>We see business owners regularly miss out on AIA claims simply because they do not know what qualifies or how the rules work. This guide fixes that.</p>
+<p>This page explains what the AIA is, what it is actually worth in tax saved, how it compares with the other capital allowance reliefs, and when not claiming it is the smarter move. The claiming mechanics (exactly what qualifies, vans versus cars, second-hand assets, the shared group limit, the boxes on the return) live in our companion guide, <a href="/blog/corporation-tax/aia-capital-allowances">AIA capital allowances: what qualifies and how to claim</a>.</p>
 
 <h2>What Is the Annual Investment Allowance?</h2>
 
-<p>The AIA is a capital allowance that gives you 100% tax relief on qualifying plant and machinery costs in the accounting period you incur them. You do not spread the relief over several years. You get it all upfront.</p>
+<p>The AIA is a 100% first-year deduction for qualifying plant and machinery: equipment, machinery, commercial vehicles, computers, office furniture, fixtures and integral features. Spend £50,000 on a machine, deduct £50,000 from taxable profit in that period. No spreading, no pooling, no waiting.</p>
 
-<p>For a limited company paying corporation tax at 19%, a £50,000 piece of machinery effectively costs £40,500 after the AIA saves you £9,500 in tax. For a sole trader paying 40% income tax, the same £50,000 saves £20,000 in tax. That is a significant cash flow benefit.</p>
+<p>It is available to limited companies, sole traders and partnerships (except partnerships with a corporate partner), against the same £1m cap, on both new and second-hand assets. Cars are the one headline exclusion. The rate on plant and machinery within the cap is simply 100%.</p>
 
-<p>The current AIA limit is £1,000,000 per 12-month accounting period. This applies to most businesses: limited companies, sole traders, partnerships. There are some exclusions we cover below.</p>
+<p>Anything the AIA does not cover, either because the cap is exhausted or because you chose not to claim, falls into a pool for <a href="/blog/corporation-tax/writing-down-allowance-rates">writing down allowances</a>: 14% a year on the main pool for periods beginning from April 2026, 6% on the special rate pool.</p>
 
-<h2>What Qualifies for the Annual Investment Allowance?</h2>
+<h2>How Much Tax Does the AIA Actually Save?</h2>
 
-<p>The AIA covers most plant and machinery. HMRC defines plant and machinery broadly, but common qualifying assets include:</p>
+<p>The cash value of the deduction depends on your marginal tax rate, which is where the AIA gets interesting for planning.</p>
 
-<ul>
-<li>Commercial vehicles: vans, lorries, pickup trucks</li>
-<li>Machinery and manufacturing equipment: lathes, presses, conveyor systems</li>
-<li>Office furniture: desks, chairs, shelving, filing cabinets</li>
-<li>Computer equipment: servers, laptops, desktop computers, monitors</li>
-<li>Fixtures and fittings: kitchen equipment in a café, display shelving in a shop</li>
-<li>Building services: heating systems, air conditioning, ventilation, lifts, electrical systems</li>
-<li>Agricultural equipment: tractors, harvesters, milking equipment</li>
-<li>Construction equipment: excavators, dumpers, scaffolding</li>
-</ul>
+<h3>Worked Example: Limited Company in the Marginal-Relief Band</h3>
 
-<p>There are important exclusions. The AIA does not apply to:</p>
+<p>A Sheffield design studio buys £74,000 of computer equipment and furniture in its year ending 31 March 2026. Taxable profit before capital allowances is £210,000.</p>
 
-<ul>
-<li>Cars (most cars go into a separate capital allowance pool at 6% or 14% per year from April 2026; 18% applied up to 31 March/5 April 2026)</li>
-<li>Land and buildings (though integral features within buildings may qualify)</li>
-<li>Assets bought before you started the business</li>
-<li>Assets gifted to you or inherited</li>
-<li>Assets used partly for non-business purposes (you claim AIA on the business proportion only)</li>
-</ul>
+<p>Without the claim, corporation tax on £210,000 is 25% x £210,000 = £52,500, minus marginal relief of 3/200 x (£250,000 - £210,000) = £600, so <strong>£51,900</strong>. With a full AIA claim, profit falls to £136,000 and the tax is 25% x £136,000 = £34,000, minus 3/200 x (£250,000 - £136,000) = £1,710, so <strong>£32,290</strong>. The AIA saves <strong>£19,610</strong>, an effective 26.5% on every pound of spend, because the whole deduction lands inside the marginal-relief band.</p>
 
-<p>If you are unsure whether an asset qualifies, check the specific HMRC guidance or ask your accountant. We handle this regularly for clients across every sector from a <a href="/locations">Birmingham</a> joinery workshop buying a new CNC router to a Manchester consultancy buying a server stack.</p>
+<h3>Worked Example: Higher-Rate Sole Trader</h3>
 
-<h2>How the AIA Limit Works in Practice</h2>
+<p>A sole trader electrician in Swansea buys a van for £38,000 and £2,000 of tools: £40,000 of qualifying spend against profits of £85,000 (2025/26). The claim takes taxable profit to £45,000. The relieved slice from £45,000 to £50,270 saves 20% income tax plus 6% Class 4 NIC (26%), and the slice from £50,270 to £85,000 saves 40% plus 2% (42%): £5,270 x 26% = £1,370 plus £34,730 x 42% = £14,587, a total saving of about <strong>£15,957</strong>. Nearly 40p per pound spent, all in year one.</p>
 
-<p>The £1,000,000 limit applies per accounting period. If your accounting period is shorter than 12 months, the limit reduces proportionally. A 6-month period gives a £500,000 limit.</p>
+<h2>AIA vs WDA vs Full Expensing vs the 40% FYA</h2>
 
-<p>If your business is part of a group or you run multiple businesses under common control, the £1m limit is shared across all of them. You cannot claim £1m per company if the same person controls them all. The associated companies rules apply.</p>
+<p>The AIA is one of four routes to relief on the same pound of plant and machinery spend, and you choose per asset:</p>
 
-<p>If your total qualifying spend in a period exceeds the AIA limit, the excess goes into the main pool and attracts writing down allowances at 14% per year (reducing balance) from April 2026 (FA 2026 s.28 cut the rate from 18%, which applied up to 31 March 2026 for CT and 5 April 2026 for IT). For very large capital investments, you may want to consider whether Full Expensing (available to limited companies only) gives a better result.</p>
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Relief</th>
+      <th>Rate and cap</th>
+      <th>Who can claim</th>
+      <th>New or second-hand?</th>
+      <th>Best used for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Annual Investment Allowance</td>
+      <td>100%, capped at £1m per 12 months (permanent)</td>
+      <td>Companies, sole traders, partnerships</td>
+      <td>Both</td>
+      <td>Second-hand assets, special rate spend, and all unincorporated-business spend</td>
+    </tr>
+    <tr>
+      <td><a href="/blog/corporation-tax/full-expensing-capital-allowances">Full expensing</a></td>
+      <td>100% main rate / 50% special rate, uncapped</td>
+      <td>Companies only</td>
+      <td>New and unused only</td>
+      <td>A company's new main-rate plant, preserving the AIA for everything else</td>
+    </tr>
+    <tr>
+      <td>40% first-year allowance (FA 2026, expenditure from 1 January 2026)</td>
+      <td>40% in year one, balance to the main pool; uncapped</td>
+      <td>Companies, sole traders, partnerships</td>
+      <td>New and unused only (not cars)</td>
+      <td>New plant once the £1m AIA is exhausted, mainly for unincorporated businesses</td>
+    </tr>
+    <tr>
+      <td><a href="/blog/corporation-tax/writing-down-allowance-rates">Writing down allowance</a></td>
+      <td>14% main pool / 6% special rate (periods from April 2026), reducing balance</td>
+      <td>Everyone</td>
+      <td>Both (and the only route for cars)</td>
+      <td>The backstop: whatever no first-year relief covers, plus deliberate deferrals</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-<h3>Real Example: Limited Company Buying Equipment</h3>
+<p>The WDA rate change (18% down to 14% from April 2026, with a hybrid rate for straddling periods) is covered in depth in our <a href="/blog/corporation-tax/writing-down-allowance-rates">writing down allowance rates guide</a>; the point for AIA decisions is simply that the pool got slower, so upfront reliefs are worth more than they used to be.</p>
 
-<p>Shoreditch-based design studio Ltd buys £74,000 of new computer equipment and office furniture in the 2025/26 tax year. The company's taxable profit before capital allowances is £210,000.</p>
+<h2>Which Relief Should You Claim First?</h2>
 
-<p>The company claims AIA on the full £74,000. Taxable profit reduces to £136,000. Corporation tax on £136,000 falls in the marginal-relief band (£50,000 to £250,000). Applying the marginal relief formula (25% on profits, minus 3/200 of the difference between £250,000 and augmented profits) gives CT of £32,290. Without the AIA, CT on £210,000 would be approximately £51,900. The AIA saves roughly £19,600 in corporation tax.</p>
+<p><strong>Limited company buying new main-rate plant:</strong> claim full expensing. It gives the same 100% as AIA with no cap, so using it first preserves your £1m AIA for the things full expensing cannot touch: second-hand assets, and special rate assets (integral features, long-life assets) where full expensing only gives 50% but AIA gives 100%.</p>
 
-<h3>Real Example: Sole Trader Buying a Van</h3>
+<p><strong>Limited company buying second-hand kit or integral features:</strong> AIA first. A £60,000 second-hand machine gets 100% under AIA and nothing under full expensing. A £100,000 electrical system gets 100% under AIA against 50% under special-rate full expensing.</p>
 
-<p>A sole trader electrician in Bristol buys a new van for £38,000 plus £2,000 of tools. Total qualifying spend: £40,000. The business is profitable, with net profits of £85,000 before capital allowances.</p>
+<p><strong>Sole trader or partnership:</strong> AIA first, always, because full expensing is closed to you. If your spend on new plant exceeds the £1m cap, the 40% first-year allowance takes the next slice: 40% relief in year one on the excess, with the remaining 60% entering the main pool for WDAs. A £1.2m spend on new machinery by a large partnership gets £1m at 100% (AIA) plus £80,000 (40% of the £200,000 excess), relieving £1,080,000, or 90% of the total, in year one.</p>
 
-<p>The AIA claim reduces taxable profits to £45,000. The sole trader pays basic rate income tax at 20% and Class 4 NIC at 6% (2025/26 rate, reducing to 2% above £50,270). The combined tax saving is roughly £10,400. Without the AIA, the van would attract writing down allowances at 14% per year from April 2026 (18% applied in 2025/26; FA 2026 s.28), giving £5,600 in year-one relief at the current rate.</p>
+<p>Our <a href="/blog/corporation-tax/capital-allowances-2026-27-guide">consolidated 2026/27 capital allowances guide</a> walks the full claiming order, and our <a href="/blog/corporation-tax/capital-allowances-example">worked capital allowances example</a> runs one purchase through the whole system.</p>
 
-<h2>Annual Investment Allowance and Cars</h2>
+<h2>When NOT to Claim the AIA</h2>
 
-<p>Cars are the most common trap. The AIA does not apply to cars at all. You claim capital allowances on cars through the main pool or special rate pool depending on CO2 emissions.</p>
-
-<p>New zero-emission cars (electric vans and cars with zero CO2 emissions) qualify for 100% First Year Allowances. That gives similar upfront relief to the AIA, but it is a different relief. Used electric cars go into the main pool at 14% from April 2026 (18% up to 31 March/5 April 2026).</p>
-
-<p>If you buy a van, the AIA applies. If you buy a car, it does not. That distinction matters when you are looking at a dual-purpose vehicle like a crew cab pickup. Some double cab pickups with payload over 1 tonne are treated as vans for capital allowances. Others are cars. The classification depends on the specific vehicle's design and HMRC's published list. Check before you buy.</p>
-
-<h2>Full Expensing vs Annual Investment Allowance</h2>
-
-<p>From 1 April 2023, limited companies can also claim Full Expensing on most main-rate plant and machinery. Full Expensing gives 100% relief with no cap. It applies only to limited companies, not to sole traders or partnerships.</p>
-
-<p>For a limited company spending more than £1m on qualifying assets in a year, Full Expensing may be better. For spending under £1m, the AIA gives the same result. The key difference is that Full Expensing does not have a monetary cap, but it only covers main-rate assets (not special rate assets like integral features or long-life assets).</p>
-
-<p>Sole traders and partnerships cannot use Full Expensing. The AIA is their primary route to upfront relief on plant and machinery.</p>
-
-<h2>How to Claim the Annual Investment Allowance</h2>
-
-<p>You claim the AIA through your tax return. For a limited company, that means the corporation tax return (CT600) and the accompanying computations. For a sole trader or partnership, you claim on the self assessment return (SA100 with SA103 or SA800).</p>
-
-<p>You do not need to submit a separate form. Your accountant will include the AIA claim in the capital allowances computation that accompanies the return. HMRC may ask for evidence of the expenditure if they open a compliance check, so keep your invoices and proof of payment.</p>
-
-<p>The claim must be made within the normal time limits. For corporation tax, you have up to 12 months after the filing deadline to amend the return. For self assessment, you have up to 12 months after 31 January filing deadline to amend.</p>
-
-<h2>What Happens If You Sell an Asset You Claimed AIA On</h2>
-
-<p>If you sell an asset that you claimed AIA on, the proceeds go into the appropriate capital allowance pool. This is called a disposal. If the proceeds are less than the original cost, the difference stays in the pool. If the proceeds are more than the pool balance, you may get a balancing charge (effectively clawing back some of the relief).</p>
-
-<p>This matters most for businesses that regularly buy and sell assets, like plant hire companies or vehicle traders. For most businesses buying equipment they keep for years, disposals are rare and the impact is minimal.</p>
-
-<h2>Common Mistakes with the Annual Investment Allowance</h2>
-
-<p>We see these errors regularly:</p>
+<p>The AIA is a claim, not a default, and there are three situations where claiming the maximum wastes relief:</p>
 
 <ul>
-<li><strong>Claiming AIA on cars.</strong> It does not apply. Use the main pool or special rate pool instead.</li>
-<li><strong>Missing the associated companies rule.</strong> If you control multiple companies, the £1m cap is shared. Splitting the cap incorrectly can lead to overclaimed AIA and penalties.</li>
-<li><strong>Not claiming on integral features.</strong> Heating, lighting, air conditioning, lifts, and electrical systems within a building qualify as plant and machinery. Many business owners miss these.</li>
-<li><strong>Forgetting the business use proportion.</strong> If an asset is used 60% for business and 40% privately, you claim AIA on 60% of the cost only.</li>
-<li><strong>Assuming the AIA cap is permanent.</strong> It is currently £1m until 31 March 2026. Plan your capital spending before the cap potentially drops to £200,000.</li>
+<li><strong>Profits too low to use the deduction well.</strong> A company with £48,000 of profit relieves every AIA pound at 19% (the small profits rate). If next year's profits will sit in the 26.5% marginal band or at the 25% main rate, a pound of relief deferred is worth up to 7.5p more, at the cost of arriving slowly through 14% WDAs.</li>
+<li><strong>A loss you cannot use.</strong> AIA in a loss year deepens the loss. If you can carry it back 12 months against tax already paid, that is often fine; if the loss can only crawl forward, disclaiming and pooling keeps the relief flexible.</li>
+<li><strong>Managing the corporation tax bands.</strong> Profit just above £50,000 pays 26.5% on the excess. A partial AIA claim sized to bring profit down to £50,000 relieves spend at 26.5% and parks the rest in the pool for later, rather than wasting relief at 19% below the threshold.</li>
 </ul>
 
-<h2>Planning Your Capital Spending Around the AIA</h2>
+<p>You do not have to choose all or nothing: claim any amount up to the cap and pool the rest. The mechanics of partial claims and disclaimers are on the <a href="/blog/corporation-tax/aia-capital-allowances">claiming guide</a>.</p>
 
-<p>If you are considering a large capital purchase, timing matters. If your accounting period ends on 31 March 2026, the AIA cap for that period is still £1m. But if your period straddles the change, the cap is calculated on a time-apportioned basis. A 12-month period from 1 July 2025 to 30 June 2026 would have a cap of approximately £750,000 (9 months at £1m, 3 months at £200,000).</p>
+<h2>A Worked Planning Example</h2>
 
-<p>If you are planning significant investment, consider bringing it forward to benefit from the higher cap. If you have already spent up to the cap in a period, delay further spending to the next period if possible.</p>
+<p>A Norwich engineering company, year ending 31 March 2027, expects £60,000 of profit before allowances this year and £300,000 next year. It is buying £45,000 of new machinery in February 2027.</p>
 
-<p>For businesses with profits close to the corporation tax thresholds (£50,000 and £250,000), the AIA can be used strategically to keep profits within a lower tax bracket. The marginal relief fraction between £50,000 and £250,000 means effective tax rates rise gradually from 19% to 25%. Reducing profits through AIA claims can keep you in the 19% band.</p>
+<p><strong>Option 1: full relief now</strong> (full expensing or AIA, both 100% here). Profit falls to £15,000, taxed at 19%. The £45,000 deduction saves £45,000 x 19% = <strong>£8,550</strong>, all this year.</p>
 
-<p>Our <a href="/services">services</a> include detailed capital allowance planning for exactly this kind of scenario. We help clients model the tax impact of different spending timings.</p>
+<p><strong>Option 2: defer into the pool.</strong> Claim nothing upfront; the £45,000 enters the main pool. Next year's WDA is £45,000 x 14% = £6,300, saving £6,300 x 25% = <strong>£1,575</strong> in year one of the deferral, with the £38,700 balance relieving at 14% reducing balance in the years after, each pound at 25% rather than 19%.</p>
 
-<h2>Structures and Buildings Allowance vs AIA</h2>
-
-<p>The Structures and Buildings Allowance (SBA) gives 3% per year straight-line relief on the cost of constructing new commercial buildings. This is not the same as the AIA. The AIA covers plant and machinery inside a building. The SBA covers the building structure itself. Both can apply to the same project: AIA on the fit-out and equipment, SBA on the building shell.</p>
-
-<p>If you are building or significantly refurbishing commercial premises, you should claim both. The AIA gives immediate relief on the equipment and integral features. The SBA gives slower relief on the structure. We regularly prepare capital allowance schedules for construction projects to split the costs correctly.</p>
-
-<h2>Does the Annual Investment Allowance Apply to Second-Hand Assets?</h2>
-
-<p>Yes. The AIA applies to both new and second-hand plant and machinery, provided the asset has not been used in your business before. If you buy a second-hand lathe from another business, it qualifies. If you transfer an asset you already owned personally into the business, it does not qualify (because it was not bought for the business).</p>
-
-<p>The same rules apply to leased assets. You cannot claim AIA on assets you lease. Only the owner of the asset can claim capital allowances. If you lease equipment, the leasing company claims the allowances and passes some of the benefit to you through lower lease payments.</p>
-
-<h2>What About Hire Purchase and Finance Leases?</h2>
-
-<p>If you buy an asset under a hire purchase agreement, you can claim AIA on the capital cost of the asset as if you had bought it outright. The timing of the claim depends on when the asset is brought into use, not when you make the payments.</p>
-
-<p>Under a finance lease, the position is more complex. Generally, the lessee can claim capital allowances on the capital element of the lease. The accounting treatment under FRS 102 or IAS 17 determines the qualifying expenditure. If you use finance leases, ask your accountant to check the capital allowance position.</p>
+<p>Deferring earns up to 6p more per pound eventually (25% against 19%) but at 14% reducing balance roughly half the cost is still unrelieved after five years, so the extra rate rarely beats the wait unless profits are rising sharply and cash flow is comfortable. A middle path often wins: claim enough AIA to use up the 19%-band profit and defer the rest. This is exactly the modelling we do for clients before year end.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>The annual investment allowance is one of the most straightforward and valuable tax reliefs available to UK businesses. It rewards investment in plant and machinery with immediate tax relief. For a growing business buying equipment, the cash flow benefit can be substantial.</p>
+<p>The annual investment allowance is the workhorse of UK capital allowances: 100% relief, a permanent £1m cap, open to every business structure, new or second-hand. The decisions worth actual money are the ones around it: companies sequencing full expensing before AIA, unincorporated businesses layering the 40% FYA on top, and anyone with low-but-rising profits deciding how much relief to take now versus later.</p>
 
-<p>The key points to remember:</p>
+<p>For the claiming detail (what qualifies, vehicles, connected parties, the shared group limit, the return boxes) see <a href="/blog/corporation-tax/aia-capital-allowances">AIA capital allowances: what qualifies and how to claim</a>. To model a specific purchase before you commit, <a href="/contact">contact our team</a> or browse our <a href="/services">services</a>.</p>
 
-<ul>
-<li>£1m cap until 31 March 2026, then likely £200,000</li>
-<li>Cars are excluded, vans are included</li>
-li>Claim through your tax return with proper supporting records</li>
-<li>Plan the timing of large purchases to maximise relief</li>
-<li>If you control multiple companies, the cap is shared</li>
-</ul>
+<h2>Sources</h2>
 
-<p>If you are planning a capital investment and want to know the exact tax impact, speak to us. We work with businesses across every sector, from a <a href="/blog/sole-trader-and-self-employment">sole trader in Leeds</a> buying a new van to a <a href="/blog/limited-company-tax">limited company in Glasgow</a> investing £800,000 in manufacturing equipment. We can model the numbers and help you decide the best timing.</p>
-
-<p>For a full breakdown of how capital allowances interact with your specific circumstances, <a href="/contact">contact our team</a>. We are specialist accountants with deep experience in capital allowance planning.</p>
+<ol>
+<li id="ref-1">Claim capital allowances: annual investment allowance. GOV.UK. <a href="https://www.gov.uk/capital-allowances/annual-investment-allowance" target="_blank" rel="noopener noreferrer">gov.uk/capital-allowances/annual-investment-allowance</a>. Retrieved 2026-08-25.</li>
+<li id="ref-2">Rates and allowances for corporation tax. GOV.UK. <a href="https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax" target="_blank" rel="noopener noreferrer">gov.uk/government/publications/rates-and-allowances-corporation-tax</a>. Retrieved 2026-08-25.</li>
+<li id="ref-3">Finance Act 2026, section 29 (40% first-year allowance, inserting Capital Allowances Act 2001 sections 45U and 45V). legislation.gov.uk. <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/29" target="_blank" rel="noopener noreferrer">legislation.gov.uk/ukpga/2026/11/section/29</a>. Retrieved 2026-08-25.</li>
+</ol>

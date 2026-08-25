@@ -3,6 +3,8 @@ title: "Creative Industry Tax Reliefs UK: A Complete Guide for Film, TV, Video G
 slug: "creative-industry-tax-reliefs-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/creative-industry-tax-reliefs-uk"
 date: "2026-05-17"
+dateModified: "2026-08-25"
+sourcesVerifiedAt: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
@@ -25,12 +27,18 @@ faqs:
     answer: "Yes. For film, high-end TV, animation, and children's television, you need a provisional certificate from the BFI confirming the production passes the cultural test. You submit this with your corporation tax return. The BFI typically processes applications within 28 days."
   - question: "Can a video game studio claim both VGTR and R&D tax credits?"
     answer: "Yes, but the expenditure must be separate. VGTR covers the game development costs. R&D tax credits cover technological innovation, like developing new graphics engines or AI systems. You cannot claim the same costs under both reliefs. Speak to an accountant to split the expenditure correctly."
+  - question: "What is the Audio-Visual Expenditure Credit (AVEC)?"
+    answer: "AVEC is the expenditure credit that replaced Film Tax Relief, High-End TV Tax Relief, Animation Tax Relief, and Children's TV Tax Relief for expenditure from 1 January 2024. The credit rate is 34% for film and high-end TV, and 39% for animation and children's TV. From 1 April 2025 there is also a 53% Independent Film Tax Credit for qualifying lower-budget films and a 39% rate on visual effects costs. The credit is taxable, so the net benefit is lower than the headline rate."
+  - question: "What are the theatre and orchestra tax relief rates now?"
+    answer: "From 1 April 2025 the rates are permanently 45% for touring theatre productions and orchestral concerts and 40% for non-touring theatre productions. From the same date, eligible expenditure must be on goods and services used or consumed in the UK."
+  - question: "Can an actor or musician claim creative industry tax relief?"
+    answer: "No. Creative industry tax reliefs are corporation tax reliefs claimed by the production or development company, never by the individual performer. Actors, musicians, and other creatives working on a qualifying production are paid as normal and taxed on their own income in the usual way; the relief sits with the company that makes the production."
   - question: "What is the minimum UK expenditure for creative industry tax reliefs?"
     answer: "At least 10% of the qualifying core expenditure must be on goods or services provided from within the UK. This is the UK expenditure condition. If you spend heavily on overseas production or post-production, check this condition carefully before claiming."
 keyTakeaways:
   - "From 1 April 2025, FTR, HTR, ATR, CTR, and VGTR closed to new productions, replaced by AVEC and VGEC; the legacy reliefs end entirely from 1 April 2027."
   - "Under legacy Film Tax Relief, productions get a 100% additional deduction on core expenditure plus a 25% payable credit on the surrenderable loss (20% for films over £15 million)."
-  - "Theatre Tax Relief gives a 25% payable credit for touring productions (100% additional deduction) and 20% for non-touring productions (80% additional deduction)."
+  - "Theatre Tax Relief and Orchestra Tax Relief credit rates are permanently 45% for touring productions and orchestral concerts and 40% for non-touring productions from 1 April 2025; from the same date eligible expenditure must be on goods and services used or consumed in the UK."
   - "Film, high-end TV, animation, and children's television productions must obtain a provisional BFI cultural test certificate confirming at least 16 out of 31 points before submitting a corporation tax claim."
   - "At least 10% of qualifying core expenditure must be on goods or services from within the UK; marketing, distribution, and financing costs do not count as qualifying core expenditure."
   - "All creative industry tax relief claims must be submitted within two years of the end of the accounting period in which the production completed, via the company's CT600 return."
@@ -111,15 +119,15 @@ keyTakeaways:
 
 <p>Theatre Tax Relief covers theatrical productions, including plays, musicals, opera, ballet, and dance. The production must be intended for public performance before a paying audience. It does not cover amateur productions, film or TV adaptations, or productions that are primarily educational.</p>
 
-<p>TTR has two rates. For touring productions, the additional deduction is 100%, and the payable credit rate is 25%. For non-touring productions, the additional deduction is 80%, and the payable credit rate is 20%.</p>
+<p>TTR has two rates. From 1 April 2025 the payable credit rates are permanently 45% for touring productions and 40% for non-touring productions. Before the temporary uplift introduced in 2021, the rates were 25% touring and 20% non-touring; those older figures no longer apply. Also from 1 April 2025, eligible expenditure narrows to goods and services used or consumed in the UK.</p>
 
-<p>A touring theatre company based in Liverpool's Baltic Triangle spends £300,000 on a qualifying production. Core expenditure is £280,000. The additional deduction is £280,000. If loss-making, the payable credit is £70,000 (25% of £280,000, as the surrenderable loss is capped at the additional deduction).</p>
+<p>A touring theatre company based in Liverpool's Baltic Triangle spends £300,000 on a qualifying production. Core expenditure is £280,000. The additional deduction is £280,000. If loss-making, at the 45% touring rate that applies from 1 April 2025, the payable credit is £126,000 (45% of £280,000, as the surrenderable loss is capped at the additional deduction).</p>
 
 <h2>Orchestra Tax Relief (OTR) and Museums and Galleries Exhibition Tax Relief (MGETR)</h2>
 
-<p>Orchestra Tax Relief covers orchestral concerts that are open to the public and involve at least 12 musicians. The relief rate is 100% additional deduction with a 25% payable credit. This is less commonly claimed but relevant for professional orchestras and concert promoters operating through a limited company.</p>
+<p>Orchestra Tax Relief covers orchestral concerts that are open to the public and involve at least 12 musicians. From 1 April 2025 the payable credit rate is permanently 45% for orchestral concerts, and eligible expenditure must be used or consumed in the UK. This is less commonly claimed but relevant for professional orchestras and concert promoters operating through a limited company.</p>
 
-<p>Museums and Galleries Exhibition Tax Relief covers temporary exhibitions of art, artefacts, or scientific objects. The exhibition must be open to the public and last between 2 weeks and 12 months. The relief rate is 100% additional deduction with a 25% payable credit. This relief is available to both charitable and non-charitable companies running qualifying exhibitions.</p>
+<p>Museums and Galleries Exhibition Tax Relief covers temporary exhibitions of art, artefacts, or scientific objects. The exhibition must be open to the public and last between 2 weeks and 12 months. Under the government's permanent-rates policy paper, MGETR shares the permanent 40% and 45% rate structure applying from 1 April 2025. This relief is available to both charitable and non-charitable companies running qualifying exhibitions.</p>
 
 <h2>Qualifying Core Expenditure</h2>
 
@@ -161,6 +169,33 @@ keyTakeaways:
 
 <p>If your business is involved in both creative production and technological innovation, speak to an accountant who understands both reliefs. Our <a href="/services">services page</a> covers how we help creative businesses navigate these complex areas.</p>
 
+<h2>Current Creative Relief Rates at a Glance (Dated)</h2>
+
+<p>The table below sets out the current headline rates for the reliefs that apply to new productions, with the date each rate took effect. All of these are corporation tax reliefs claimed by the company.</p>
+
+<table>
+<thead>
+<tr><th>Relief</th><th>Rate</th><th>Applies from</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>AVEC: film and high-end TV</td><td>34% expenditure credit</td><td>Expenditure from 1 January 2024</td><td>Qualifying expenditure capped at 80% of total core costs; minimum 10% of core costs on UK activities</td></tr>
+<tr><td>AVEC: animation and children's TV</td><td>39% expenditure credit</td><td>Expenditure from 1 January 2024</td><td>Same 80% cap and 10% UK minimum</td></tr>
+<tr><td>Independent Film Tax Credit (within AVEC)</td><td>53% expenditure credit</td><td>1 April 2025 (principal photography on or after 1 April 2024)</td><td>Core costs under £23.5 million; relief capped at £15 million of core costs</td></tr>
+<tr><td>AVEC: visual effects costs</td><td>39% expenditure credit</td><td>1 April 2025</td><td>For 34%-rate productions; VFX costs sit outside the 80% cap</td></tr>
+<tr><td>VGEC: video games</td><td>34% expenditure credit</td><td>Expenditure from 1 January 2024</td><td>New games must use VGEC from 1 April 2025; legacy VGTR ends entirely on 1 April 2027</td></tr>
+<tr><td>Theatre Tax Relief</td><td>40% non-touring / 45% touring</td><td>Permanent from 1 April 2025</td><td>Expenditure must be used or consumed in the UK from 1 April 2025</td></tr>
+<tr><td>Orchestra Tax Relief</td><td>45%</td><td>Permanent from 1 April 2025</td><td>Same used-or-consumed-in-the-UK test</td></tr>
+</tbody>
+</table>
+
+<p>One point the headline rates hide: the AVEC and VGEC expenditure credits are themselves taxable, in the same way as the R&D expenditure credit. The net benefit to the company is therefore lower than the headline percentage. They are not tax-free cash.</p>
+
+<h2>Who Claims Creative Industry Tax Reliefs?</h2>
+
+<p>The claimant is always the company. For AVEC and VGEC that means the production or development company responsible for the film, programme, or game; for theatre and orchestra reliefs it means the production company staging the performances. An individual actor, musician, writer, or crew member cannot claim any of these reliefs personally, even when their work is central to a qualifying production.</p>
+
+<p>If you are an individual creative working on a qualifying production, the relief does not change your own tax position. You are paid and taxed in the usual way, whether as an employee, a self-employed performer, or through your own company. The production company's relief claim happens entirely at company level. What it can mean in practice is better-funded productions and, for lower-budget independent film, more projects getting made under the 53% Independent Film Tax Credit.</p>
+
 <h2>Practical Steps for Creative Businesses</h2>
 
 <p>If you are a creative business owner considering a claim, here is what to do:</p>
@@ -173,6 +208,6 @@ keyTakeaways:
 <li>File your claim within the two-year window. Mark the deadline in your calendar.</li>
 </ul>
 
-<p>Creative industry tax reliefs can make a significant difference to your bottom line. Under the legacy FTR mechanism, the worked example above shows a film production with £380,000 core expenditure generating a £95,000 payable credit (25% of the £380,000 capped surrenderable loss). Under TTR, a £300,000 theatre tour can generate a £70,000 credit (25% of the £280,000 additional deduction). For small and growing creative businesses, that cash can fund the next production or pay down debt.</p>
+<p>Creative industry tax reliefs can make a significant difference to your bottom line. Under the legacy FTR mechanism, the worked example above shows a film production with £380,000 core expenditure generating a £95,000 payable credit (25% of the £380,000 capped surrenderable loss). Under TTR at the permanent 45% touring rate from 1 April 2025, a £300,000 theatre tour can generate a £126,000 credit (45% of the £280,000 additional deduction). For small and growing creative businesses, that cash can fund the next production or pay down debt.</p>
 
 <p>If you are unsure whether your production qualifies, or if you want help preparing a claim, <a href="/contact">contact our team</a>. We are experienced accountants with practical experience across the creative sectors.</p>

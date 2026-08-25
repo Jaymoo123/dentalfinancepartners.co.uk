@@ -21,7 +21,7 @@ faqs:
   - question: "Do I need a sole trader accountant if I only earn a small amount?"
     answer: "If your profit is below £12,570 and your affairs are simple, you may not need an accountant. But even a small error in your return can trigger an HMRC enquiry. A good accountant will cost £150-£300 and will usually save you more than that in identified expenses and correct tax calculations. It is worth a conversation."
   - question: "What is the difference between a sole trader accountant and a limited company accountant?"
-    answer: "A sole trader accountant focuses on Self Assessment tax returns, Class 2 and Class 4 NIC, and cash basis accounting. A limited company accountant deals with Corporation Tax, payroll, dividends, and annual accounts filed at Companies House. Many accountants handle both, but the compliance requirements are very different. If you are considering incorporating, your accountant should be able to advise on both structures."
+    answer: "A sole trader accountant focuses on Self Assessment tax returns, Class 4 NIC, and cash basis accounting. A limited company accountant deals with Corporation Tax, payroll, dividends, and annual accounts filed at Companies House. Many accountants handle both, but the compliance requirements are very different. If you are considering incorporating, your accountant should be able to advise on both structures."
   - question: "Can a sole trader accountant help with VAT registration?"
     answer: "Yes. Your accountant should monitor your turnover and advise you on when to register. They can also handle your VAT returns, advise on the Flat Rate Scheme (if it still benefits you), and help you reclaim input VAT on purchases. VAT is one of the most common areas where sole traders get into trouble. An accountant prevents that."
   - question: "How do I find a good sole trader accountant near me?"
@@ -42,7 +42,7 @@ faqs:
 
 <h3>Self Assessment Tax Return Preparation and Filing</h3>
 
-<p>This is the obvious one. Your accountant prepares your annual Self Assessment return (form SA100, plus SA103S or SA103L depending on your turnover) and files it with HMRC by the 31 January deadline. They calculate your Class 2 and Class 4 National Insurance, your Income Tax liability, and any Student Loan repayments due.</p>
+<p>This is the obvious one. Your accountant prepares your annual Self Assessment return (form SA100, plus SA103S or SA103L depending on your turnover) and files it with HMRC by the 31 January deadline. They calculate your Class 4 National Insurance, your Income Tax liability, and any Student Loan repayments due.</p>
 
 <p>A good accountant does not just enter the numbers you give them. They review your records, identify missing expenses, and check that you have claimed everything you are entitled to. They also check that HMRC's tax calculation is correct. It is not uncommon for HMRC to make errors. We see it regularly.</p>
 
@@ -181,16 +181,16 @@ faqs:
 <p>Your Personal Allowance reduces by £1 for every £2 of income above £100,000. If your profit exceeds £125,140, you lose your Personal Allowance entirely.</p>
 
 <h3>National Insurance Contributions</h3>
-<p>Sole traders pay two types of NIC:</p>
+<p>Sole traders need to know about two classes of NIC:</p>
 <ul>
-<li><strong>Class 2</strong>: £3.45 per week for 2025/26. If your profits are below £6,725, you can pay voluntarily to protect your State Pension.</li>
-<li><strong>Class 4</strong>: 9% on profits between £12,570 and £50,270, and 2% on profits above £50,270.</li>
+<li><strong>Class 2</strong>: no longer payable from 6 April 2024. If your profits are below the Small Profits Threshold (£6,845 for 2025/26), you can pay voluntary contributions of £3.50 per week to protect your State Pension.</li>
+<li><strong>Class 4</strong>: 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270.</li>
 </ul>
 
 <h3>The Cash Basis vs Accrual Basis</h3>
 <p>Most sole traders can use the <strong>cash basis</strong>, meaning you record income when it hits your bank account and expenses when they leave it. This is simpler and often more tax-efficient if you have unpaid invoices at year-end.</p>
 
-<p>The <strong>accrual basis</strong> records income when you invoice and expenses when you incur them. It is mandatory if your turnover exceeds £150,000 (rising to £300,000 from April 2024, but check the latest thresholds).</p>
+<p>The <strong>accrual basis</strong> records income when you invoice and expenses when you incur them. Since April 2024 the cash basis has been the default for sole traders with no turnover limit, so accruals now applies only if you elect for it (or run an excluded trade), though stock-heavy businesses and anyone showing accounts to a lender often still prefer it.</p>
 
 <p>Your accountant should advise you on which basis is right for you. Many sole traders are better off on the cash basis.</p>
 
@@ -206,7 +206,7 @@ faqs:
 
 <h2>Worked Example: How an Accountant Saves You Money</h2>
 
-<p>Let us look at a realistic example. <strong>Sarah</strong> is a freelance graphic designer based in the Northern Quarter in Manchester. She trades as a sole trader. Her 2024/25 accounts show:</p>
+<p>Let us look at a realistic example. <strong>Sarah</strong> is a freelance graphic designer based in the Northern Quarter in Manchester. She trades as a sole trader. Her 2025/26 accounts show:</p>
 
 <ul>
 <li>Gross fees invoiced: £63,400</li>
@@ -214,7 +214,7 @@ faqs:
 <li>Net profit: £48,680</li>
 </ul>
 
-<p>Sarah files her own Self Assessment. She uses the accrual basis because she does not know about the cash basis. She has £8,200 of unpaid invoices at 5 April 2025. She also misses claiming £2,100 of legitimate expenses because she did not keep proper receipts.</p>
+<p>Sarah files her own Self Assessment. She uses the accrual basis because she does not know about the cash basis. She has £8,200 of unpaid invoices at 5 April 2026. She also misses claiming £2,100 of legitimate expenses because she did not keep proper receipts.</p>
 
 <p><strong>Her actual tax bill (self-filed):</strong></p>
 <ul>
@@ -222,14 +222,14 @@ faqs:
 <li>Personal Allowance: £12,570</li>
 <li>Taxable income: £36,110</li>
 <li>Income Tax (20%): £7,222</li>
-<li>Class 4 NIC (9% on £36,110): £3,250</li>
-<li>Class 2 NIC (52 weeks × £3.45): £179</li>
-<li><strong>Total: £10,651</strong></li>
+<li>Class 4 NIC (6% on £36,110): £2,167</li>
+<li>Class 2 NIC: nil (no longer payable from 6 April 2024, and her profits are well above the £6,845 Small Profits Threshold, so her State Pension record is protected automatically)</li>
+<li><strong>Total: £9,389</strong></li>
 </ul>
 
 <p>Now let us say Sarah hires a <strong>sole trader accountant</strong>. The accountant:</p>
 <ul>
-<li>Switches her to the cash basis, so the £8,200 of unpaid invoices are not taxed until 2025/26</li>
+<li>Switches her to the cash basis, so the £8,200 of unpaid invoices are not taxed until 2026/27</li>
 <li>Identifies the £2,100 of missed expenses</li>
 <li>Advises her to bring forward a £3,500 equipment purchase before year-end (claiming Annual Investment Allowance)</li>
 </ul>
@@ -242,12 +242,11 @@ faqs:
 <li>Personal Allowance: £12,570</li>
 <li>Taxable income: £22,310</li>
 <li>Income Tax (20%): £4,462</li>
-<li>Class 4 NIC (9% on £22,310): £2,008</li>
-<li>Class 2 NIC: £179</li>
-<li><strong>Total: £6,649</strong></li>
+<li>Class 4 NIC (6% on £22,310): £1,339</li>
+<li><strong>Total: £5,801</strong></li>
 </ul>
 
-<p>Sarah saves <strong>£4,002</strong> in tax. Her accountant's fee is £500. She is £3,502 better off, and she did not have to do any of the work herself.</p>
+<p>Sarah saves <strong>£3,588</strong> in tax. Her accountant's fee is £500. She is £3,088 better off, and she did not have to do any of the work herself.</p>
 
 <p>That is the value of a good accountant.</p>
 

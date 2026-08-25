@@ -1,13 +1,13 @@
 ---
-title: "What Does an Accountant for Musicians Actually Do? A UK Guide to Music Industry Accounting"
+title: "Accountant for Musicians: How a Working Musician's Year Is Taxed in the UK"
 slug: "accountant-for-musicians-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-musicians-uk"
-date: "2026-05-17"
+date: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Musicians UK: Tax, Royalties &amp; Tour"
-metaDescription: "UK musicians face complex tax on royalties, tours, and merchandise. Here is exactly what an accountant for musicians handles and why it matters for your"
+metaTitle: "Musician Accountant UK: Royalties, VAT and Tax 2026/27"
+metaDescription: "How a musician accountant handles UK tax on gigs, PRS and PPL royalties, sync fees and touring, with 2026/27 figures and a worked example of a full year."
 altText: "A UK musician reviewing financial paperwork with their accountant in a modern office, London"
 image: "/blog/accountant-for-musicians-uk.jpg"
 imageCredit:
@@ -15,171 +15,137 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@pam-crane-3712506"
   sourceUrl: "https://www.pexels.com/photo/street-musicians-performing-in-canterbury-uk-33605460/"
   source: "Pexels"
-h1: "What Does an Accountant for Musicians Actually Do?"
-summary: "UK musicians face a unique set of tax challenges: royalties from multiple sources, tour income across borders, irregular cash flow, and a mix of employed and self-employed engagements. An accountant who specialises in music industry accounting can save you thousands in tax and hours of HMRC headaches. Here is exactly what they do and when you need one."
+h1: "Accountant for Musicians: How a Working Musician's Year Is Taxed in the UK"
+summary: "A working musician's income arrives from gigs, PRS and PPL royalty statements, sync fees and teaching, and each stream has its own tax and VAT treatment. Follow one musician's full year through to the tax bill, see how royalties are taxed and why they count toward the £90,000 VAT threshold, and learn what a specialist musician accountant should be checking for you."
 schema: ""
 faqs:
-  - question: "Do I need an accountant if I only earn a few thousand pounds from music?"
-    answer: "If you earn under £15,000 from music and your affairs are simple, you can file your own Self Assessment using software like FreeAgent or GoSimpleTax. But if you have multiple income sources, foreign income, or are unsure what expenses to claim, an accountant will likely save you more in tax than their fee costs. Many musicians start with DIY filing and switch to an accountant once their income grows or becomes more complex."
-  - question: "What expenses can a musician claim against tax?"
-    answer: "Common allowable expenses include instrument costs and repairs, studio hire, travel to gigs (55p per mile for the first 10,000 business miles from 2026/27; 45p applied up to 2025/26), equipment and accessories, practice space rent, website and marketing costs, professional memberships (PRS, PPL, MU), public liability insurance, and a proportion of phone and internet bills. Your accountant will help you identify everything that applies to your specific situation."
+  - question: "How are music royalties taxed in the UK?"
+    answer: "For a working musician, songwriter or composer, royalties from PRS, PPL, MCPS, publishing, streaming and sync licensing are receipts of your profession. They are taxed as trading income through Self Assessment at your marginal income tax rate plus Class 4 National Insurance, alongside your gig and session income. The position differs only where the recipient is not carrying on the profession, for example an heir who inherits a song catalogue, whose royalties are taxed as income from intellectual property with no Class 4. Royalties that arrive after you stop performing professionally are taxed as post-cessation receipts."
+  - question: "Do PRS and PPL payments count toward the VAT registration threshold?"
+    answer: "Yes. UK royalty income, including PRS and PPL distributions, is payment for a standard-rated supply of services (the licensing of your rights), so it counts toward the £90,000 VAT registration threshold alongside your gig fees, teaching and merchandise. You will sometimes see claims that collection-society income sits outside the threshold. That is not the position: a musician whose gig income plus growing royalties exceeds £90,000 in any rolling 12 months must register, even though no single stream crossed the line on its own."
+  - question: "Can I claim stage clothes as a musician?"
+    answer: "Ordinary everyday clothing is not deductible, even if you bought it only for performing. The courts settled this in Mallalieu v Drummond: normal clothes keep you warm and decent, which gives them a private purpose regardless of your intention. Genuine costume and stage wear is different. An outfit that is not ordinary civilian clothing, something you would not realistically wear off stage, is allowable. The test is the nature of the item, not why you bought it, and borderline items are fact-specific, so take advice before claiming."
   - question: "Should I set up a limited company as a musician?"
-    answer: "It depends on your income level and structure. A limited company can be more tax efficient once your profits exceed around £40,000 to £50,000 per year, because you pay corporation tax instead of income tax and national insurance on dividends. But a company also means more administrative work, filing annual accounts at Companies House, and running payroll. Your accountant can run the numbers for your specific situation and advise whether incorporation makes sense."
-  - question: "How do I handle VAT on merchandise sales at EU gigs post Brexit?"
-    answer: "Post Brexit, selling merchandise at EU gigs can trigger VAT registration obligations in each country you sell in, depending on volume and value. The IOSS (Import One Stop Shop) scheme can simplify VAT on low value distance sales to EU consumers. Your accountant should advise on whether you need to register in each country or can use IOSS. This is a complex area where specialist advice is essential."
+    answer: "It can make sense once profits are consistently above roughly £50,000, or where you want to hold rights and retain income inside a company, but it changes how your royalties are taxed: a company holding your rights pays corporation tax on them under the intangibles rules rather than income tax. It also adds Companies House filings, payroll and stricter accounting. At lower profits the sole trader route is usually simpler and cheaper. Ask an accountant to model both routes with your actual figures before deciding."
+  - question: "What expenses can a musician claim against tax?"
+    answer: "Typical allowable costs include instruments and repairs, strings and consumables, studio and rehearsal hire, agent and manager commission, travel to gigs (mileage at 55p per mile for the first 10,000 business miles from 2026/27, then 25p), professional memberships such as the MU, public liability and instrument insurance, website and promotion, and a business proportion of phone and internet. The test for a self-employed musician is that the cost is wholly and exclusively for the profession. Ordinary clothing and everyday grooming fail that test."
 keyTakeaways:
-  - "Musicians can claim travel to gigs at 55p per mile for the first 10,000 business miles from 2026/27, a rate that was 45p per mile up to 2025/26."
-  - "VAT registration becomes compulsory once a musician's turnover exceeds £90,000 in any rolling 12-month period."
-  - "Making Tax Digital for Income Tax Self Assessment is mandatory from April 2026 for self-employment income above £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028."
-  - "Musicians earning under £15,000 a year from straightforward affairs can typically file their own Self Assessment using software such as GoSimpleTax or FreeAgent."
-  - "A musician operating through a limited company pays corporation tax at 19% to 25% on profits and takes a combination of salary and dividends."
-  - "Sole trader musician accountancy fees are typically £600 to £1,200 per year; limited company musicians with VAT, payroll and foreign income typically pay £1,500 to £3,500 per year."
+  - "A musician's royalties (PRS, PPL, MCPS, publishing, streaming, sync) are trading income of the profession, taxed with gig income at 2026/27 rates through Self Assessment."
+  - "UK royalty income is standard-rated for VAT and counts toward the £90,000 registration threshold; gig income plus growing royalties can cross it unnoticed."
+  - "PRS for Music and PPL run VAT self-billing for registered members, but the member still has to account for the output VAT added to their statements."
+  - "The special regime that deducted Class 1 National Insurance from entertainers ended on 6 April 2014; self-employed musicians now pay Class 4 on profits as normal."
+  - "Employed performers can deduct agent fees up to 17.5% of the employment earnings (VAT-inclusive); self-employed musicians deduct commission in full with no cap."
+  - "A musician with £43,000 of gross income and £35,080 of profit pays £5,852.60 in income tax and Class 4 NIC for 2026/27, plus payments on account."
 ---
 
-<h2>Why Most Musicians Need Specialist Accounting</h2>
+<h2>A Working Musician's Year: Where the Money Comes From</h2>
 
-<p>If you earn money from music in the UK, your tax affairs are rarely straightforward. You might have income from Spotify streams, Apple Music, and Amazon Music. You might sell merchandise at gigs, teach lessons, do session work, or license tracks for TV and film. You might tour in Europe, the US, or Asia. Each income stream has different tax rules.</p>
+<p>Take Amara, a session guitarist and function-band player. Her year to 5 April 2027 looks like this: £31,000 from gigs, sessions and dep work, £6,200 in PRS royalties from co-writes on two commercially released tracks, £1,800 from PPL for recordings she played on, and a £4,000 sync fee for a track licensed to a streaming series. Gross income: £43,000, from four sources, on four different payment schedules.</p>
 
-<p>An <strong>accountant for musicians</strong> understands these specific income types. A general high street accountant might not know the difference between mechanical royalties and performance royalties. They might not know that HMRC has specific rules around foreign tour income. They might not realise that your Spotify payout statement needs decoding before it can be entered into bookkeeping software.</p>
+<p>Every one of those streams is taxable, but they do not all behave the same way. The gig income is straightforward trading income. The royalties are also trading income, because Amara earns them through her profession, though a different rule applies to someone who merely inherits a catalogue. The sync fee is a licensing supply with its own VAT consequences. An <strong>accountant for musicians</strong> earns their fee by knowing which rule attaches to which line on the statement, and this page walks through all of them using Amara's numbers.</p>
 
-<p>This guide covers what a music industry accountant actually does, when you should hire one, and what to look for. We are specialist accountants at Holloway Davies, and we work with musicians across the UK from our bases in Manchester and London.</p>
+<p>Her expenses for the year: £4,950 of mileage (9,000 business miles at 55p per mile, the 2026/27 rate for the first 10,000 miles), £1,400 of agent commission on booked function work, £600 of strings, repairs and consumables, £370 of MU membership and instrument insurance, and £600 for her share of a rehearsal and recording space. Total: £7,920. Taxable profit: £43,000 minus £7,920 = £35,080.</p>
 
-<h2>The Core Services an Accountant for Musicians Provides</h2>
+<h2>The Tax Bill on That Year, Line by Line</h2>
 
-<h3>Self Assessment and Tax Return Filing</h3>
-
-<p>Most musicians are sole traders. You register as self employed with HMRC and file a Self Assessment tax return (SA100 with SA103 self employment pages) each year. Your accountant handles this end to end.</p>
-
-<p>But the real value is in what goes on the return. A specialist accountant knows how to claim legitimate expenses that many musicians miss. Examples include:</p>
+<p>Amara is a sole trader, so her profit is taxed through Self Assessment at 2026/27 rates. The personal allowance is £12,570 and the basic rate is 20% (rUK rates; Scotland sets its own bands).</p>
 
 <ul>
-<li>Instrument costs, repairs, and depreciation</li>
-<li>Studio hire and recording costs</li>
-<li>Travel to and from gigs (mileage at 55p per mile for the first 10,000 business miles from 2026/27; 45p applied up to 2025/26)</li>
-<li>Public liability insurance and instrument insurance</li>
-<li>Website hosting, domain fees, and social media advertising</li>
-<li>Music equipment, cables, stands, cases</li>
-<li>Practice space rent</li>
-<li>Professional memberships (PRS, PPL, MU)</li>
-<li>Marketing and promotional costs</li>
-<li>Phone and internet (apportioned for business use)</li>
+<li>Income tax: £35,080 minus the £12,570 personal allowance = £22,510 taxable at 20% = <strong>£4,502.00</strong></li>
+<li>Class 4 National Insurance: 6% on profits between £12,570 and £50,270 = £22,510 at 6% = <strong>£1,350.60</strong></li>
+<li>Class 2: nothing to pay. Class 2 liability was removed from 6 April 2024, and Amara keeps her state pension entitlement because her profits sit above the small profits threshold.</li>
+<li>Total for the year: <strong>£5,852.60</strong></li>
 </ul>
 
-<p>Getting these wrong costs you money. Overclaim and you risk an HMRC enquiry. Underclaim and you pay more tax than you need to.</p>
+<p>Because her liability is over £1,000 and none of it was collected at source, Amara also makes payments on account toward the following year: £2,926.30 on 31 January and £2,926.30 on 31 July, each half of this year's bill. In her first self-employed year that produces the notorious double bill, the full year-one liability plus the first payment on account, both due on the same 31 January. A good accountant warns you about that in month one, not in January.</p>
 
-<h3>Royalty Income Tracking and Reporting</h3>
+<p>One more check on the same numbers: VAT. Amara's taxable turnover is £43,000, comfortably under the £90,000 registration threshold. But the threshold is tested on any rolling 12 months, not the tax year, and every stream counts: gigs, teaching, merchandise and, critically, royalties. If her sync work takes off, she could cross £90,000 without any single income type looking large. More on why royalties count below.</p>
 
-<p>Royalties arrive from multiple sources. PRS for Music handles performance royalties. PPL handles neighbouring rights. Your distributor (DistroKid, TuneCore, CD Baby, AWAL) pays you for streams and downloads. Publishers handle mechanical royalties. Each sends a different statement on a different schedule.</p>
+<h2>How Are Music Royalties Taxed?</h2>
 
-<p>An <strong>accountant for musicians</strong> sets up a system to track all these income streams. They reconcile statements against your bookkeeping records. They ensure royalties are declared in the correct tax year, which matters when you receive a statement in January for income earned the previous June.</p>
+<p>For a working musician, royalties are receipts of your profession and are taxed as trading income, exactly like gig fees. HMRC's Business Income Manual treats authors' and composers' royalties this way. That means your PRS, PPL, MCPS, publishing, streaming and sync income all lands in the same Self Assessment computation as Amara's above, at your marginal rate plus Class 4.</p>
 
-<p>This is where using software like Xero or FreeAgent becomes essential. Your accountant can connect bank feeds, automate categorisation, and generate reports that show exactly how much you earned from each source in each period.</p>
-
-<h3>Tour Income and Foreign Tax</h3>
-
-<p>Touring outside the UK creates cross border tax obligations. If you play a show in Germany, French tax authorities may want a cut. If you sell merchandise in the US, US tax rules apply. Each country has different withholding tax rates on performance fees.</p>
-
-<p>A music industry accountant helps you navigate this. They can advise on double taxation treaties, claim foreign tax credit relief on your UK return, and help you structure touring entities to minimise tax leakage. For serious touring artists, this alone justifies the accountant's fee.</p>
-
-<p>You also need to consider VAT. If you sell merchandise at EU gigs post Brexit, you may need to register for VAT in each country you sell in. The distance selling thresholds and IOSS scheme add another layer of complexity.</p>
-
-<h3>IR35 and Engagements</h3>
-
-<p>Many musicians work through a limited company for larger engagements. A West End theatre run, a cruise ship contract, a tour with a major artist. These engagements often come via an agency or production company. HMRC may argue you are caught by IR35, meaning you pay tax as if you were an employee despite invoicing through your limited company.</p>
-
-<p>Your accountant assesses each contract against the IR35 criteria. They help you structure your company and your working practices to sit outside IR35 where genuinely appropriate. They also handle the payroll if you are inside IR35, running PAYE through software like BrightPay or Sage 50.</p>
-
-<h3>Limited Company Structure for Musicians</h3>
-
-<p>Some musicians operate through a limited company full time. This is common for established artists, producers, and composers with multiple income streams. The company pays corporation tax at 19% to 25% on profits. You take a salary and dividends.</p>
-
-<p>The most efficient salary in 2025/26 is typically £12,570, matching the personal allowance and primary NI threshold. Above that, dividends are more tax efficient than salary. Your accountant runs the numbers each year based on your actual profit.</p>
-
-<p>If you have bandmates or collaborators as shareholders, you might use alphabet shares to allocate dividends flexibly. Your accountant structures the share capital and shareholder agreements to avoid settlement legislation issues.</p>
-
-<p>For more detail on director pay, see our guide on <a href="/blog/director-pay-and-dividends">director pay and dividends</a>.</p>
-
-<h3>VAT and Making Tax Digital</h3>
-
-<p>If your turnover exceeds £90,000 in a rolling 12 month period, you must register for VAT. Many musicians hit this threshold through a combination of touring, merchandise, streaming, and licensing. Once registered, you charge 20% VAT on most sales and reclaim VAT on your business purchases.</p>
-
-<p>There are special schemes that may benefit musicians. The Flat Rate Scheme lets you keep some of the VAT you charge if your business type qualifies. The Annual Accounting Scheme means you file one VAT return per year instead of four. Your accountant advises which scheme suits your cash flow and margin.</p>
-
-<p>From April 2026, Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) becomes mandatory if your self employment or property income exceeds £50,000. From April 2027 it applies above £30,000. From April 2028 it applies above £20,000. This means you must use compatible software to keep digital records and submit quarterly updates to HMRC. Your accountant sets this up for you.</p>
-
-<p>Read more on <a href="/blog/vat-and-making-tax-digital">VAT and Making Tax Digital</a> for the full details.</p>
-
-<h3>HMRC Enquiries and Compliance</h3>
-
-<p>Musicians are a common target for HMRC enquiries. Irregular income patterns, cash payments at gigs, and complex royalty structures can all trigger a compliance check. If HMRC opens an enquiry into your return, you need an accountant who can handle it.</p>
-
-<p>Your accountant prepares the evidence, drafts the response, and represents you to HMRC. They know what HMRC looks for in music industry cases. They can spot potential issues before HMRC does and advise you to adjust your approach.</p>
-
-<h2>When Should You Hire an Accountant for Musicians?</h2>
-
-<p>If you earn less than £15,000 a year from music and your affairs are simple, you can probably file your own Self Assessment using software like GoSimpleTax or FreeAgent. Many musicians do this for their first year or two.</p>
-
-<p>You should hire an accountant when any of these apply:</p>
+<p>The treatment forks on who receives the money, so it is wrong to say royalties are taxed one way for everyone:</p>
 
 <ul>
-<li>You have income from three or more sources (streaming, gigs, merch, teaching, licensing)</li>
-<li>You tour outside the UK regularly</li>
-<li>Your turnover exceeds the VAT threshold or is close to it</li>
-<li>You have been offered a contract through a limited company and need IR35 advice</li>
-<li>HMRC has opened an enquiry into your tax affairs</li>
-<li>You want to incorporate your music business as a limited company</li>
-<li>You are applying for R&D tax credits for music technology or software development</li>
-<li>You simply do not have time to manage your own bookkeeping and tax</li>
+<li><strong>You, while working as a musician:</strong> trading income of the profession, income tax plus Class 4.</li>
+<li><strong>Someone not carrying on the profession</strong> (an heir, or an investor who bought a catalogue): income from intellectual property under the miscellaneous income rules, income tax but no Class 4.</li>
+<li><strong>After you retire from the profession:</strong> post-cessation receipts, still taxable, under their own rules.</li>
+<li><strong>A company holding your rights:</strong> corporation tax under the intangible assets regime, not income tax at all.</li>
 </ul>
 
-<p>The cost of an accountant is tax deductible. Their fee reduces your taxable profit. And in most cases, the tax savings they identify more than cover their fee.</p>
+<p>Here is how the common sources break down for a working, UK-resident musician:</p>
 
-<h2>What to Look for in a Music Industry Accountant</h2>
+<table>
+<thead>
+<tr><th>Royalty source</th><th>Income tax treatment</th><th>VAT treatment</th></tr>
+</thead>
+<tbody>
+<tr><td>PRS for Music (performance royalties)</td><td>Trading income of the profession</td><td>Standard-rated at 20%; PRS operates self-billing for VAT-registered members</td></tr>
+<tr><td>PPL (recording and neighbouring rights)</td><td>Trading income of the profession</td><td>Standard-rated at 20%; PPL operates self-billing for VAT-registered members</td></tr>
+<tr><td>MCPS / publishing (mechanical royalties)</td><td>Trading income of the profession</td><td>Standard-rated where the customer belongs in the UK</td></tr>
+<tr><td>Streaming and download income via a distributor</td><td>Trading income of the profession</td><td>Depends where the customer belongs; overseas B2B supplies are generally outside the scope of UK VAT</td></tr>
+<tr><td>Sync fees (TV, film, adverts, games)</td><td>Trading income of the profession</td><td>Standard-rated for UK licensees; overseas B2B generally outside the scope</td></tr>
+<tr><td>Overseas royalties with foreign tax deducted</td><td>Taxable on the gross amount; claim treaty relief or foreign tax credit relief on your UK return</td><td>Generally outside the scope under place-of-supply rules</td></tr>
+</tbody>
+</table>
 
-<p>Not every accountant who claims to work with musicians actually understands the industry. Ask these questions before hiring:</p>
+<p>The overseas row deserves its own sentence. Foreign societies and licensees often withhold tax before paying you. You are still taxable in the UK on the gross amount, and you then claim relief for the foreign tax, at whichever rate the relevant double tax agreement allows. The rate varies by country and by treaty, so never assume zero withholding and never assume full credit: check the DTA for the country in question, or have your accountant do it. There is a mirror rule too: a UK payer sending royalties to an owner based abroad must usually deduct 20% basic-rate tax at source unless treaty clearance is in place, which matters if your company ever pays royalties out.</p>
+
+<h2>Is VAT Charged on Royalties?</h2>
+
+<p>Yes, where the place of supply is the UK. Royalty income is payment for a standard-rated supply of services, the licensing of your rights, and it <strong>counts toward the £90,000 VAT registration threshold</strong>. You may read elsewhere that collection-society income does not count toward the threshold. That is not correct, and relying on it is how musicians end up registered late with a backdated VAT bill.</p>
+
+<p>The trap is the mix. A musician with £70,000 of gig and teaching income is nowhere near the threshold on gigs alone. Add £15,000 of PRS and PPL distributions and a £10,000 sync deal and the rolling 12-month total is £95,000: registration is compulsory, and it became compulsory the month the rolling total crossed £90,000, not at the year end. The threshold is tested continuously, so this needs monitoring, not an annual glance.</p>
+
+<p>Once you are VAT-registered, PRS for Music and PPL make the mechanics easier through self-billing: you notify them of your registration and they add VAT to your royalty statements, so you do not raise invoices to the societies. Easier is not the same as done for you. The output VAT added to those statements is yours to account for on your VAT return; self-billing moves the paperwork, not the liability. Royalties also have their own VAT timing rules, broadly triggered when payment is received or the amount becomes ascertainable, which is one of the reasons royalty-heavy VAT returns benefit from a specialist eye.</p>
+
+<p>If you are approaching the threshold, or wondering whether voluntary registration would let you reclaim input VAT on equipment and studio costs, start with our guide on <a href="/fundamentals/when-to-register-for-vat-uk">when to register for VAT</a>.</p>
+
+<h2>Employment Status, Agent Fees and Stage Clothes</h2>
+
+<p>Most musicians engaged for gigs, sessions and functions are self-employed: they work under contracts for services, judged on the ordinary status factors, and the label on the contract does not decide it. Some are employees, most commonly salaried orchestral players and musicians on long-run theatre contracts, and they are on PAYE with Class 1 National Insurance like any other employee.</p>
+
+<p>One piece of history still causes confusion. Until 6 April 2014, special rules treated many self-employed entertainers as employed earners for National Insurance only, so engagers deducted Class 1 from their fees. That regime was repealed for entertainers from 6 April 2014. Since then, engagers pay self-employed musicians gross, and the musician pays Class 4 on profits through Self Assessment, as in Amara's computation above. If anyone tells you a promoter should still be deducting NI from your self-employed fee, they are a decade out of date.</p>
+
+<p>Status also changes the expense rules:</p>
 
 <ul>
-<li>Do you have current musician clients? Can you name the types of income they earn?</li>
-<li>Do you understand PRS, PPL, and distributor statements?</li>
-<li>Have you handled foreign tour income and double taxation relief?</li>
-<li>Do you know the IR35 rules for performance contracts?</li>
-<li>What software do you recommend and why?</li>
-<li>How do you communicate? Monthly check ins? Quarterly reviews? Ad hoc email support?</li>
+<li><strong>Agent and manager commission.</strong> Self-employed: an ordinary business expense, deductible in full under the wholly-and-exclusively rule, no cap. Amara's £1,400 of commission simply reduces her profit. Employed performers get a rare statutory concession instead: agent fees are deductible against employment income up to 17.5% of the earnings from that employment, VAT-inclusive. Typical agency rates of 10% to 15% plus VAT fit inside the cap.</li>
+<li><strong>Clothing.</strong> The controlling case is Mallalieu v Drummond: ordinary everyday clothing is not deductible even if you bought it solely for work, because keeping you warm and decent is a private purpose built into the clothes themselves. Genuine costume and stage wear that is not ordinary civilian clothing is allowable. The test is what the item is, not why you bought it. A sequinned stage outfit you would never wear to the shops: claimable. A smart black suit for orchestra pit work: not, however work-only your intention. Borderline items are fact-specific, so take advice rather than guessing.</li>
 </ul>
 
-<p>At Holloway Davies, we work with musicians across the UK, from session players in Manchester to touring artists based in London. We use Xero and FreeAgent for bookkeeping, and we offer a free initial consultation to discuss your situation.</p>
+<h2>Touring and Foreign Income</h2>
 
-<p>You can <a href="/contact">contact us here</a> to book that call.</p>
+<p>Touring adds two layers. First, foreign withholding on performance fees: many countries take tax off the top of what a visiting musician earns there. As with overseas royalties, you are taxable in the UK on the gross and claim treaty relief or foreign tax credit relief on your return, at the rate the relevant DTA permits, which your accountant should check country by country rather than assume.</p>
 
-<h2>How Much Does an Accountant for Musicians Cost?</h2>
+<p>Second, travel. UK mileage to gigs is claimable at 55p per mile for the first 10,000 business miles from 2026/27 (45p applied up to 2025/26), then 25p. Home-to-venue travel is business travel for a self-employed musician working at a string of different venues, but a regular engagement can harden into a permanent workplace: for employees the test is the 24-month rule, under which a workplace stops being temporary once you expect to attend it for more than 24 months and for 40% or more of your working time. A long residency or pit contract can quietly cross that line and turn the commute non-deductible, so flag long engagements to your accountant early.</p>
 
-<p>Fees vary widely depending on the complexity of your affairs and the level of service you need. A sole trader musician with straightforward income might pay £600 to £1,200 per year for Self Assessment filing and basic bookkeeping support. A limited company musician with multiple income streams, VAT, payroll, and foreign income might pay £1,500 to £3,500 per year.</p>
+<p>Selling merchandise at overseas shows brings local VAT obligations on top, which vary by country and sales channel. This is specialist territory; get advice before the tour, not after it.</p>
 
-<p>Some accountants charge a fixed annual fee. Others charge monthly. Some charge per return. Always ask for a full breakdown of what is included and what costs extra.</p>
+<h2>Sole Trader or Limited Company?</h2>
 
-<p>Remember that the fee is tax deductible. And if your accountant saves you £2,000 in tax by claiming legitimate expenses you would have missed, a £1,000 fee is a net gain of £1,000.</p>
+<p>Amara is better off simple: at £35,080 of profit, sole trader status keeps her admin light and her overall tax cost competitive. Incorporation starts to justify itself when profits sit consistently above roughly £50,000, or when there is a reason to hold rights inside a company, for example a writer building a catalogue who wants royalties taxed at corporation tax rates and reinvested. Remember from the royalties table that a company holding your rights changes the tax regime entirely: corporation tax under the intangibles rules, not income tax and Class 4.</p>
 
-<h2>Getting Started: What to Prepare</h2>
+<p>A company also brings Companies House accounts, payroll for your salary, dividend planning and, for larger engagements offered through your company, IR35 assessments on each contract. None of that is a reason to avoid incorporating; it is a reason to have the numbers modelled with your actual income mix first. Our <a href="/fundamentals/definitive-guide-sole-trader-accountant">sole trader accountant guide</a> covers the baseline, and an accountant can compare both routes using your figures.</p>
 
-<p>If you decide to hire an <strong>accountant for musicians</strong>, here is what to have ready for your first meeting:</p>
+<p>One adjacent point: the creative-sector tax reliefs you may have heard of, such as Orchestra Tax Relief at 45% for touring orchestral concerts, are claimed by the production company, never by the individual performer. If you play on a qualifying production, the relief is the producer's affair, not a line on your return. See <a href="/blog/corporation-tax/creative-industry-tax-reliefs-uk">creative industry tax reliefs</a> for what exists and who claims it.</p>
+
+<h2>What a Musician Accountant Should Actually Do for You</h2>
+
+<p>Measured against Amara's year, a specialist should be doing all of the following, and you can use this list as interview questions:</p>
 
 <ul>
-<li>Your last 12 months of bank statements (business and personal if mixed)</li>
-<li>Details of all income sources (streaming platforms, PRS, PPL, gigs, merch, teaching, licensing)</li>
-<li>Your expenses receipts and invoices (or a rough list if you do not have them organised)</li>
-<li>Any contracts or agreements (record deals, publishing deals, tour contracts)</li>
-<li>Your previous tax returns if you have filed them</li>
-<li>Your UTR number and HMRC online account login</li>
+<li>Reconcile PRS, PPL, MCPS, distributor and publisher statements into one set of accounts, in the right tax year, and treat them as trading income of your profession.</li>
+<li>Run a rolling 12-month VAT turnover check that includes royalties, and set up self-billing correctly with the societies if you register.</li>
+<li>Claim the expenses that survive the wholly-and-exclusively test, including full agent commission and genuine stage wear, and keep you away from the ones that do not.</li>
+<li>Handle foreign withholding: gross up overseas income, claim treaty relief, and check the actual DTA rather than assuming a rate.</li>
+<li>Forecast your January and July payments on account so tax money is set aside before it is due.</li>
+<li>Model sole trader against limited company with your real numbers when profits grow, including what incorporation does to your royalty taxation.</li>
 </ul>
 
-<p>Your accountant will use this information to set up your bookkeeping, review your tax position, and give you a forward looking plan for the year ahead.</p>
+<p>Fees for this vary with complexity. A sole trader musician with a handful of income streams typically pays £600 to £1,200 a year; a limited company with VAT, payroll and foreign income typically pays £1,500 to £3,500. The fee is itself deductible.</p>
 
-<p>If you are considering incorporating your music business, read our guide on <a href="/incorporation">incorporation</a> first.</p>
+<p>Actors and other performers share most of these rules with a few twists of their own; our guide to <a href="/blog/sole-trader-and-self-employment/accountant-for-actors-performers-uk">accountants for actors and performers</a> covers that ground. And if music is still a side income alongside employment, note the £1,000 trading allowance: your first £1,000 of gross trading income in a tax year is tax-free, and above it you deduct either the £1,000 or actual expenses, never both.</p>
 
-<h2>Summary: Is a Music Industry Accountant Worth It?</h2>
-
-<p>For most UK musicians earning above £15,000 a year, the answer is yes. A specialist accountant saves you time, reduces your tax bill, keeps you compliant with HMRC, and helps you plan for growth. They understand the specific challenges of music industry income and can structure your affairs to keep more money in your pocket.</p>
-
-<p>The key is finding an accountant who genuinely knows the industry, not one who just says they do. Ask the right questions. Check their credentials. And if you want to talk to us, <a href="/contact">get in touch</a>.</p>
-
-<p>We work with musicians across the UK from our offices in Manchester and London. We have been helping creative businesses manage their tax for years.</p>
+<p>We work with musicians across the UK from Manchester and London, and the first conversation is free. <a href="/contact">Get in touch</a> with your income streams listed, even roughly, and we will tell you what your year looks like from a tax point of view.</p>

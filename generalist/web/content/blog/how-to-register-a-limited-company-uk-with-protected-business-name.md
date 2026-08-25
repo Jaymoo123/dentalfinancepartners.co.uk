@@ -33,7 +33,7 @@ keyTakeaways:
   - "A Companies House clearance is not a clearance to trade: the IPO trademark register is separate, and trademark holders can pursue legal action even after Companies House approves the name."
   - "Before submitting the IN01 form, search the IPO database at gov.uk/search-for-trademark for your proposed name and close variations across relevant classes, such as class 35 and class 42."
   - "Registering a trademark before incorporating costs around £170 plus VAT for one class via the IPO online system, giving you priority over later challengers."
-  - "Every company must file a confirmation statement at least once every 12 months, with a £13 online fee; missing the deadline can ultimately get the company struck off."
+  - "Every company must file a confirmation statement at least once every 12 months, with a £50 online fee; missing the deadline can ultimately get the company struck off."
 howToSteps:
   - name: "Check Companies House name availability"
     text: "Enter your proposed name exactly as you plan to register it in the Companies House name availability checker to confirm there is no exact match on the register."
@@ -48,7 +48,7 @@ howToSteps:
   - name: "Register for Corporation Tax and VAT with HMRC"
     text: "Register for Corporation Tax within three months of starting to trade; also register for VAT if your turnover is expected to exceed £90,000 in the next 30 days, or voluntarily if you wish to reclaim VAT on purchases."
   - name: "Set up statutory records and file confirmation statements"
-    text: "Maintain registers of directors, shareholders, PSCs, and directors' residential addresses at your registered office or a SAIL address, and file a confirmation statement at least once every 12 months at an online fee of £13."
+    text: "Maintain registers of directors, shareholders, PSCs, and directors' residential addresses at your registered office or a SAIL address, and file a confirmation statement at least once every 12 months at an online fee of £50."
 ---
 
 <p>Registering a limited company in the UK is a process you can complete online in under 30 minutes. Companies House processes most applications within 24 hours, often the same day. The basic steps are simple: choose a name, provide a registered office address, appoint at least one director, and submit the IN01 form with a £50 fee.</p>
@@ -131,7 +131,7 @@ howToSteps:
 
 <p>Another mistake is using a home address as the registered office without considering privacy. The registered office is public. Anyone can look it up on the Companies House register. If you work from home and do not want clients or competitors knowing your home address, use a registered office service. Many accountants offer this as part of their incorporation package.</p>
 
-<p>A third mistake is failing to file the confirmation statement on time. Every company must file a confirmation statement at least once every 12 months. The fee is £34 online. If you miss the deadline, Companies House will issue a warning, and eventually strike the company off the register. Set a reminder in your calendar as soon as you incorporate.</p>
+<p>A third mistake is failing to file the confirmation statement on time. Every company must file a confirmation statement at least once every 12 months. The fee is £50 online. If you miss the deadline, Companies House will issue a warning, and eventually strike the company off the register. Set a reminder in your calendar as soon as you incorporate.</p>
 
 <h2>When to Speak to an Accountant Before Incorporating</h2>
 

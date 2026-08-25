@@ -29,12 +29,12 @@ faqs:
 - question: Can I file dormant accounts myself without an accountant?
   answer: Yes. You can file dormant accounts online through Companies House WebFiling. The process is straightforward if your company has no transactions. You need your company authentication code and a basic balance sheet. If you have any income, even bank interest, you cannot use dormant accounts.
 - question: What happens if I miss the confirmation statement deadline for a dormant company?
-  answer: The confirmation statement has no late filing penalty from Companies House, but if you do not file it for 12 months, Companies House will send a reminder. If you still do not file, the company can be struck off. The confirmation statement is separate from your accounts and must be filed every 12 months.
+  answer: There is no automatic banded penalty like the one for late accounts, but failing to file a confirmation statement is an offence, Companies House can fine the company, and if you still do not file, the company can be struck off. The confirmation statement is separate from your accounts and must be filed every 12 months.
 - question: Can I keep a dormant company indefinitely?
   answer: Yes. There is no time limit on dormancy. You must continue filing dormant accounts and confirmation statements each year. If the company has no assets and no activity, the annual cost is low. If you have assets like cash or property, you need to consider whether keeping the company dormant is the best structure for those assets.
 metaTitle_prev: 'Dormant Company Filing Requirements UK: What You Must Do'
 metaDescription_prev: Keep your dormant limited company compliant. We explain the annual accounts, confirmation statement, and corporation tax filings you cannot ignore.
-dateModified: '2026-06-12'
+dateModified: '2026-08-25'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
@@ -78,7 +78,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The confirmation statement (form CS01) is separate from your annual accounts. It confirms that the information Companies House holds about your company is correct. This includes registered office address, director details, shareholder information, and people with significant control (PSC register).</p>
 
-<p>You must file a confirmation statement at least once every 12 months. There is no exemption for dormant companies. The filing fee is £13 online or £40 by post. You can file it any time within the 12-month period from your last confirmation statement date.</p>
+<p>You must file a confirmation statement at least once every 12 months. There is no exemption for dormant companies. The filing fee is £50 online or £110 by post. You can file it any time within the 12-month period from your last confirmation statement date.</p>
 
 <h3>3. Corporation Tax Return To HMRC</h3>
 
@@ -152,7 +152,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>That is common. Many business owners keep a dormant company to protect the company name, to hold an asset like a domain name or intellectual property, or because they plan to restart trading later. That is fine. Just keep up with the filings.</p>
 
-<p>If the company has no assets and no activity, the annual cost of compliance is minimal. The filing fees are £13 for the confirmation statement and nothing for the accounts (if you file online). The time cost is perhaps 30 minutes per year.</p>
+<p>If the company has no assets and no activity, the annual cost of compliance is minimal. The filing fees are £50 for the confirmation statement and nothing for the accounts (if you file online). The time cost is perhaps 30 minutes per year.</p>
 
 <p>Compare that to the cost of late filing penalties, which can run into hundreds or thousands of pounds. The compliance is cheap. The non-compliance is expensive.</p>
 

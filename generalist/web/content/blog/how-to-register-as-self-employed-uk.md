@@ -1,13 +1,13 @@
 ---
-title: "How to Register as Self Employed UK: The Step by Step Guide for 2025/26"
+title: "How to Register as Self Employed UK: Step by Step for 2025/26"
 slug: "how-to-register-as-self-employed-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/how-to-register-as-self-employed-uk"
-date: "2026-05-17"
-generator: unverified/claude-era
+date: "2026-08-25"
+generator: "manual/opus"
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "How to Register as Self Employed UK: Step by Step Guide"
-metaDescription: "Step by step guide on how to register as self employed UK. HMRC registration, tax returns, NI, MTD. Practical advice from our specialist accountants."
+metaTitle: "How to Register as Self Employed UK: Step by Step 2025/26"
+metaDescription: "How to register as self employed with HMRC: the £1,000 rule, 5 October deadline, CWF1 vs SA1, UTR timeline, payments on account and MTD dates."
 altText: "Sole trader working on a laptop in a home office in Manchester, UK, with a notebook and calculator"
 image: "/blog/how-to-register-as-self-employed-uk.jpg"
 imageCredit:
@@ -15,203 +15,206 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@ono-kosuki"
   sourceUrl: "https://www.pexels.com/photo/focused-carpenter-making-notes-while-using-laptop-in-studio-5973928/"
   source: "Pexels"
-h1: "How to Register as Self Employed UK: The Step by Step Guide for 2025/26"
-summary: "A practical guide on how to register as self employed UK. Covers HMRC registration process, Class 2 and 4 National Insurance, self assessment deadlines, and Making Tax Digital requirements. Written for sole traders, contractors, and freelancers starting out."
+h1: "How to Register as Self Employed UK: Step by Step for 2025/26"
+summary: "How to register as self employed with HMRC, and when you actually have to. Covers the £1,000 trading allowance test, the 5 October deadline and what the penalty really is, CWF1 versus SA1, the UTR timeline, payments on account with a worked example, the current Class 2 and Class 4 position, Making Tax Digital dates, and why platform sellers should register before HMRC's nudge letter arrives."
 schema: ""
 faqs:
   - question: "How long does it take to register as self employed with HMRC?"
-    answer: "The online registration takes about 15 minutes. HMRC sends your UTR by post within 10 working days. Your Government Gateway activation code arrives separately, also by post, within 7 days. So allow 2 to 3 weeks from registration to having everything you need to file a return."
+    answer: "The online form takes about 15 minutes. HMRC then posts your Unique Taxpayer Reference (UTR) within about 10 working days, and a Government Gateway activation code arrives separately within about 7 days. Allow 2 to 3 weeks from registering to being fully set up to file a return, longer near the January peak."
   - question: "Do I need to register as self employed if I earn under £1,000?"
-    answer: "No. If your gross self employment income is under £1,000 in a tax year, you do not need to register or file a tax return. This is the trading allowance. But once your income goes over £1,000, you must register. And if you have expenses above £1,000, it is usually better to claim actual expenses instead of the allowance."
-  - question: "What is the difference between registering as self employed and setting up a limited company?"
-    answer: "Registering as self employed makes you a sole trader. You and the business are the same legal entity. You keep all profits but have unlimited personal liability. Setting up a limited company creates a separate legal entity. You become a director and employee. The company pays corporation tax, and you pay income tax on your salary and dividends. Limited companies offer limited liability and can be more tax efficient at higher profit levels, but involve more admin and filing requirements."
-  - question: "What happens if I do not register as self employed on time?"
-    answer: "If you miss the 5 October deadline, HMRC can charge a penalty of £100. If you still do not register, further daily penalties of £10 per day can apply, up to a maximum of £900. On top of that, you will still owe the tax on your profits, plus interest. It is much better to register early, even if you are unsure about your exact start date."
+    answer: "Usually not. If your gross self employment income (before any expenses) is £1,000 or less in a tax year, the trading allowance means you have no obligation to register or file a return for that income. Once gross income goes over £1,000 you must register by the 5 October deadline. You can also register voluntarily below £1,000, for example to claim a loss or pay voluntary Class 2 NIC."
+  - question: "What is the difference between CWF1 and SA1?"
+    answer: "CWF1 registers you as self employed: it puts you into Self Assessment and sets up your National Insurance record as a sole trader. SA1 only registers you for Self Assessment for other reasons, such as untaxed rental or investment income, and does not tell HMRC you are trading. If you use SA1 by mistake for a business, your Class 2 and Class 4 NIC position is not set up properly. Sole traders should always use the self employment route (CWF1 or the online equivalent)."
+  - question: "What happens if I miss the 5 October registration deadline?"
+    answer: "The failure to notify penalty is a percentage of the tax that remains unpaid at the following 31 January, not a fixed fine. If you register late but still file and pay everything by 31 January, the penalty normally works out at nil because there is no unpaid tax to apply it to. Miss the payment as well and the penalty scales with how late and how deliberate HMRC judges the failure, on top of the tax and interest."
+  - question: "Do I pay Class 2 National Insurance when I register?"
+    answer: "For most people, no. Class 2 stopped being a compulsory charge on 6 April 2024. If your 2025/26 profits are £6,845 or more, HMRC treats Class 2 as paid and your state pension record is protected at no cost. Below £6,845 you can pay voluntary Class 2 at £3.50 per week to keep the year qualifying. What you actually pay on profits is Class 4: 6% between £12,570 and £50,270, then 2% above."
+  - question: "Will HMRC know about my Etsy, Vinted, Uber or Deliveroo income?"
+    answer: "Yes. Since 1 January 2024 digital platforms must report each seller's identity, tax reference and income to HMRC every year, with the first reports filed in January 2025. Service income (driving, delivering, tasking) is reportable from the first pound; casual goods sellers are excluded only below 30 sales and about £1,700 in a year. Reporting does not create new tax, but it means HMRC can match platform income against registrations, so register before the nudge letter rather than after it."
 keyTakeaways:
-  - "You must register with HMRC by 5 October in your second tax year, but register immediately because your UTR takes up to 10 working days to arrive."
-  - "If your gross self-employment income is under £1,000 in a tax year, the trading allowance means you do not need to register or file a self assessment return."
-  - "Class 4 National Insurance is charged at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270."
-  - "If turnover in any rolling 12-month period exceeds £90,000, you must register for VAT within 30 days of the end of the month you crossed the threshold."
-  - "From April 2026, sole traders with self-employment turnover above £50,000 must keep digital records and submit quarterly updates to HMRC under Making Tax Digital for Income Tax."
-  - "HMRC business records must be kept for at least 5 years after the 31 January filing deadline of the relevant tax year."
+  - "You only have to register once gross self employment income passes £1,000 in a tax year: below that, the trading allowance covers you, though voluntary registration is sometimes worthwhile."
+  - "The legal deadline is 5 October after the end of your first tax year of trading, and the failure to notify penalty is a percentage of tax unpaid at 31 January, so registering late but paying on time usually costs nothing except stress."
+  - "Register through the self employment route (CWF1 or the online service), not SA1, so your National Insurance record is set up correctly; your UTR arrives by post in about 10 working days."
+  - "Class 2 NIC stopped being a compulsory charge from 6 April 2024: profits of £6,845 or more in 2025/26 earn an automatic credit, and you pay Class 4 at 6% between £12,570 and £50,270, then 2% above."
+  - "Payments on account start once your first bill tops £1,000: the first 31 January brings the whole year one bill plus 50% of next year on the same day."
+  - "MTD for Income Tax starts April 2026 for turnover over £50,000, April 2027 over £30,000 and April 2028 over £20,000, so a new sole trader should pick MTD compatible software from day one."
+  - "Digital platforms have reported seller income to HMRC since January 2024, so gig and marketplace earners should register before HMRC writes first."
 howToSteps:
+  - name: "Check whether you need to register at all"
+    text: "If your gross self employment income is £1,000 or less in the tax year, the trading allowance means registration is optional. Over £1,000, registration is required."
   - name: "Check for an existing UTR"
-    text: "Search old HMRC correspondence for a Unique Taxpayer Reference; if you already have one from a previous self assessment, you do not need to register again."
-  - name: "Register online with HMRC"
-    text: "Complete the online registration form, which takes about 15 minutes, using your National Insurance number, full name, address, date of birth, and the date you started self-employment."
+    text: "Search old HMRC correspondence for a 10 digit Unique Taxpayer Reference. If you have filed Self Assessment before, you re-register as self employed against the same UTR rather than creating a new record."
+  - name: "Register online with HMRC via the self employment route"
+    text: "Use HMRC's register for Self Assessment service and choose self employed (the CWF1 route), not SA1. You need your National Insurance number, personal details, start date and a short business description. The form takes about 15 minutes."
   - name: "Wait for your UTR and activation code"
-    text: "HMRC sends your UTR by post within 10 working days and a Government Gateway activation code separately; allow 2 to 3 weeks in total."
-  - name: "Set up your Government Gateway account"
-    text: "Use the activation code to access your Government Gateway account, which you will use to file your self assessment return, check your tax bill, and manage payments."
-  - name: "Check your Class 2 National Insurance position"
-    text: "If your profits are below £6,725 (the Small Profits Threshold for 2025/26), you can choose to pay voluntary Class 2 NIC at £3.50 per week to protect your state pension entitlement."
-  - name: "Register for VAT if your turnover exceeds £90,000"
-    text: "If your turnover in any rolling 12-month period goes over £90,000, register for VAT using form VAT1 or online through Government Gateway within 30 days of the end of that month."
-  - name: "File your self assessment return and keep records"
-    text: "Submit your online return by 31 January each year, pay any tax due, and retain all business records for at least 5 years after the 31 January deadline of the relevant tax year."
+    text: "HMRC posts your UTR within about 10 working days and a Government Gateway activation code separately within about 7 days. Allow 2 to 3 weeks in total."
+  - name: "Activate your Government Gateway account"
+    text: "Use the activation code to finish setting up your online account. This is where you file returns, check statements and set up payment plans."
+  - name: "Understand your NIC position"
+    text: "Class 2 is credited automatically for 2025/26 profits of £6,845 or more. Below that, consider voluntary Class 2 at £3.50 per week to protect your state pension record. Class 4 is collected through your tax return."
+  - name: "Plan for the first tax bill and payments on account"
+    text: "Your first 31 January bill can include the whole first year plus a 50% payment on account for the next year. Set aside 25% to 30% of profits from the start."
+  - name: "File your return and keep records"
+    text: "Submit the online return by 31 January, pay what is due, and keep business records for at least 5 years after the 31 January deadline of the relevant tax year."
 ---
 
-<h2>What Does Registering as Self Employed Actually Mean?</h2>
+<h2>Do You Actually Need to Register? The £1,000 Test</h2>
 
-<p>Registering as self employed means telling HMRC that you are working for yourself, not as an employee. You take on the legal status of a sole trader. This is the simplest business structure in the UK. You are the business. There is no separate legal entity like a limited company.</p>
-
-<p>As a sole trader, you keep all the profits after tax. But you are also personally liable for any debts the business runs up. That unlimited liability is the main downside. For many freelancers, contractors, and small business owners, it is still the right choice. Especially when you are starting out and want to keep things simple.</p>
-
-<p>Registering triggers a few things. You must file a self assessment tax return each year. You pay income tax and National Insurance on your profits. And from April 2026, if your turnover is over £50,000, you will need to follow Making Tax Digital (MTD) for Income Tax rules.</p>
-
-<h2>Who Needs to Register as Self Employed?</h2>
-
-<p>You need to register if you are working for yourself in any of these situations:</p>
+<p>Start with the question most articles skip. Registration is not triggered by working for yourself; it is triggered by income. The trading allowance exempts the first £1,000 of gross trading income in a tax year, and gross means your takings before any expenses come off.</p>
 
 <ul>
-<li>You are a freelancer, contractor, or consultant taking on your own clients</li>
-<li>You run a small business as a sole trader, like a plumber, hairdresser, or electrician</li>
-<li>You are a partner in a business partnership (partners register separately, not the partnership itself)</li>
-<li>You earn income from casual work, gig economy jobs, or side hustles that are not employment</li>
-<li>You are a landlord renting out property (this counts as self employment if you are letting as a business, not just renting out your own home)</li>
+<li><strong>Gross income £1,000 or less:</strong> you do not have to register, file a return or tell HMRC anything about that income. A few weekend sales, some ad hoc tutoring, a one-off commission: covered.</li>
+<li><strong>Gross income over £1,000:</strong> you must register for Self Assessment. The allowance may still reduce the bill, but the registration duty is now live.</li>
 </ul>
 
-<p>If you are unsure whether you count as self employed or employed, HMRC has a tool called Check Employment Status for Tax (CEST). It is not perfect, but it gives you a starting point. The key test is whether you have control over how, when, and where you work, and whether you take financial risk.</p>
+<p>Two refinements worth knowing. First, the £1,000 test uses gross income, so £1,200 of sales with £800 of costs still means you must register even though the profit is only £400. Second, registering below £1,000 is sometimes the smart move anyway: you might want to claim a trading loss against other income, or pay voluntary Class 2 National Insurance to bank a state pension year. The allowance removes the obligation, not the option.</p>
 
-<p>One common mistake: people think they are self employed because they get a CIS (Construction Industry Scheme) deduction on their pay. That is not the same thing. You still need to register as self employed and file a tax return.</p>
+<p>Once you are over £1,000, the allowance becomes an either/or choice on the return itself: deduct the flat £1,000, or deduct actual expenses, never both. With real business costs above £1,000, actual expenses win.</p>
 
-<h2>When Should You Register as Self Employed?</h2>
+<h2>The 5 October Deadline, and What the Penalty Actually Is</h2>
 
-<p>You must register with HMRC by 5 October in your business's second tax year. That sounds complicated, but here is how it works in practice.</p>
+<p>The legal deadline is 5 October after the end of the tax year in which you started trading. Tax years run 6 April to 5 April, so if you started on 1 September 2025 (the 2025/26 tax year), you must notify HMRC by 5 October 2026.</p>
 
-<p>Tax years run from 6 April to 5 April. If you started self employment on 1 September 2025, your first tax year runs from 6 April 2025 to 5 April 2026. You must register by 5 October 2026. That gives you over a year from when you started.</p>
-
-<p>But do not wait that long. Register as soon as you start trading. Here is why:</p>
+<p>Miss it and you are into failure to notify territory, and it is worth being precise here because most write-ups get it wrong. The penalty is not an automatic £100. It is a percentage of the tax that is still unpaid at the following 31 January, scaled by how late you were and whether HMRC sees the failure as careless or deliberate. The practical consequence:</p>
 
 <ul>
-<li>You need a Unique Taxpayer Reference (UTR) to file your tax return. It takes HMRC up to 10 working days to send it out.</li>
-<li>You need to set up your Government Gateway account, which can take time.</li>
-<li>If you miss the 5 October deadline, HMRC can fine you.</li>
-<li>You may need to pay tax on account from year two, so early registration helps you plan.</li>
+<li><strong>Register late but file and pay by 31 January:</strong> the penalty is a percentage of zero, so it normally comes to nothing.</li>
+<li><strong>Register late and pay late:</strong> the penalty bites on the unpaid tax, on top of the tax itself, interest and late payment surcharges.</li>
 </ul>
 
-<p>Registering early costs nothing. It just gets you into the system.</p>
+<p>The separate £100 fixed penalty belongs to late filing of a return you have been asked to complete, with daily penalties after 3 months; our <a href="/blog/sole-trader-and-self-employment/hmrc-penalties-self-assessment-late-filing-2025-26">Self Assessment penalties guide</a> covers that regime. Either way the advice is the same: register as soon as you start trading, because your Unique Taxpayer Reference takes time to arrive and January is a bad month to discover you cannot log in.</p>
 
-<h2>How to Register as Self Employed UK: The Exact Steps</h2>
+<h2>CWF1 vs SA1: Use the Right Route</h2>
 
-<h3>Step 1: Check If You Are Already Registered</h3>
+<p>HMRC has two registration routes and they are not interchangeable.</p>
 
-<p>If you have ever filed a self assessment tax return before, you may already have a UTR. Check any old correspondence from HMRC. If you have one, you do not need to register again. You just need to tell HMRC that you have started self employment. You do this on your tax return each year.</p>
+<ul>
+<li><strong>The self employment route (form CWF1, or the online register as self employed service):</strong> registers you for Self Assessment and tells HMRC you are trading, which sets up your Class 2 and Class 4 National Insurance record as a sole trader.</li>
+<li><strong>SA1:</strong> registers you for Self Assessment only, for people with other untaxed income such as rental profits or investment income. It does not create a self employment record.</li>
+</ul>
 
-<h3>Step 2: Register Online via HMRC</h3>
+<p>The classic mistake is registering a new business through SA1. You get a UTR, you can file a return, and everything looks fine until you discover your National Insurance record has no self employment on it, which matters for the state pension credit explained below. If that has happened to you, a CWF1 against your existing UTR fixes it.</p>
 
-<p>The quickest way to register is online through the HMRC website. You will need:</p>
+<p>Already filed Self Assessment before, perhaps as a landlord or higher earner? You keep the same UTR for life. You do not register from scratch; you notify the new self employment against the existing record via the CWF1 route.</p>
+
+<h2>How to Register as Self Employed: The Exact Steps</h2>
+
+<h3>Step 1: Check for an Existing UTR</h3>
+
+<p>Dig out any old HMRC letters. The UTR is a 10 digit number on Self Assessment correspondence. If you have one, use it; a second UTR causes duplicate record problems that take months to unwind. Our <a href="/blog/sole-trader-and-self-employment/unique-taxpayer-reference-utr-uk">UTR guide</a> shows exactly where to find it.</p>
+
+<h3>Step 2: Register Online via Government Gateway</h3>
+
+<p>Use HMRC's register for Self Assessment service on gov.uk, choosing the self employed option. You will need:</p>
 
 <ul>
 <li>Your National Insurance number</li>
-<li>Your full name, address, and date of birth</li>
-<li>Your phone number and email address</li>
+<li>Full name, address and date of birth</li>
+<li>Phone number and email address</li>
 <li>The date you started self employment</li>
-<li>A brief description of what your business does</li>
-<li>Your business address (this can be your home address)</li>
+<li>A short description of the business</li>
+<li>A business address, which can be your home</li>
 </ul>
 
-<p>The online registration form takes about 15 minutes to complete. HMRC will send you your UTR by post within 10 working days. You will also get an activation code for your Government Gateway account, which you need to file your tax return online.</p>
+<p>The form takes about 15 minutes. If you cannot get online, HMRC's Self Assessment helpline is 0300 200 3310, but expect a wait.</p>
 
-<p>If you cannot register online, you can call HMRC's self assessment helpline on 0300 200 3310. But expect to wait. The online route is faster.</p>
+<h3>Step 3: Wait for the Post</h3>
 
-<h3>Step 3: Set Up Your Government Gateway Account</h3>
+<p>Two letters arrive separately: your UTR within about 10 working days, and a Government Gateway activation code within about 7 days. The activation code expires, so use it promptly. Allow 2 to 3 weeks end to end before you can actually file anything.</p>
 
-<p>Once you have your activation code, log in to your Government Gateway account. This is your portal for all HMRC online services. You will use it to file your self assessment return, check your tax bill, and manage payments.</p>
+<h3>Step 4: Activate Your Government Gateway Account</h3>
 
-<p>If you lose your activation code, you can request a new one online. It takes about 7 days to arrive by post.</p>
+<p>This account is your portal for everything: filing returns, viewing statements, checking payments on account and setting up a payment plan if you ever need one. Lose the activation code and you can request a replacement, which is another 7 day wait, which is another reason not to leave registration until January.</p>
 
-<h3>Step 4: Register for Class 2 National Insurance (If Needed)</h3>
+<h2>Class 2 and Class 4 National Insurance: The Current Position</h2>
 
-<p>When you register as self employed, HMRC automatically sets you up for Class 2 National Insurance. But there is a catch. If your profits are below £6,725 (the Small Profits Threshold for 2025/26), you do not have to pay Class 2 NIC. You can choose to pay voluntarily to protect your entitlement to certain state benefits, like the state pension and Maternity Allowance.</p>
+<p>National Insurance for the self employed changed fundamentally on 6 April 2024, and a lot of older guidance still describes the old weekly Class 2 charge. The 2025/26 position:</p>
 
-<p>From 6 April 2024, Class 2 NIC was abolished for self-employed people with profits above the Small Profits Threshold. If your profits are above £6,725, HMRC credits your National Insurance record automatically and there is no weekly charge to pay.</p>
+<table>
+<thead>
+<tr><th>Profits (2025/26)</th><th>Class 2</th><th>Class 4</th></tr>
+</thead>
+<tbody>
+<tr><td>Under £6,845</td><td>Nothing due; voluntary Class 2 at £3.50 per week available to protect your state pension record</td><td>Nil</td></tr>
+<tr><td>£6,845 to £12,570</td><td>Treated as paid automatically: a free National Insurance credit, nothing to pay</td><td>Nil</td></tr>
+<tr><td>£12,570 to £50,270</td><td>Treated as paid automatically</td><td>6% on profits in this band</td></tr>
+<tr><td>Over £50,270</td><td>Treated as paid automatically</td><td>6% to £50,270, then 2% above</td></tr>
+</tbody>
+</table>
 
-<h3>Step 5: Register for VAT (If Your Turnover Exceeds the Threshold)</h3>
+<p>So when you register, do not expect a weekly Class 2 bill: the compulsory charge was abolished from 6 April 2024. What you will actually pay is Class 4, collected through your Self Assessment return alongside income tax. The one action point is for low profit years: below £6,845 there is no automatic credit, so voluntary Class 2 at £3.50 per week (£182 for a full year) is one of the cheapest ways to buy a qualifying state pension year.</p>
 
-<p>If your turnover in any rolling 12 month period goes over £90,000, you must register for VAT. You do this separately using form VAT1 or online through your Government Gateway account. You have 30 days from the end of the month in which you exceeded the threshold to register. Miss that window and HMRC can charge penalties.</p>
-
-<p>Many sole traders register voluntarily before hitting the threshold. It can make your business look more professional and let you reclaim VAT on your purchases. But it also means you have to charge VAT to your customers, which may put some off. Think carefully before registering voluntarily.</p>
-
-<h2>What Happens After You Register?</h2>
-
-<p>Once you are registered, HMRC will expect you to file a self assessment tax return each year. The deadlines are:</p>
+<h2>What Happens After You Register: The Deadlines</h2>
 
 <ul>
-<li><strong>31 October</strong> (paper return, if you still file on paper)</li>
-<li><strong>31 January</strong> (online return, plus payment of any tax due)</li>
-<li><strong>31 July</strong> (second payment on account, if applicable)</li>
+<li><strong>31 October:</strong> paper return deadline, if you still file on paper</li>
+<li><strong>31 January:</strong> online return, balancing payment and (if applicable) first payment on account</li>
+<li><strong>31 July:</strong> second payment on account, if applicable</li>
 </ul>
 
-<p>Your first tax return will cover the period from when you started trading to the following 5 April. You will report your income and expenses, and HMRC calculates your tax bill based on your profits.</p>
+<p>Your first return covers the period from your start date to the following 5 April. Since 2024/25 all sole traders are taxed on the tax year basis, so profits are measured to 5 April (or 31 March, treated as the same thing) regardless of what accounting date you fancy. Picking a 31 March or 5 April year end from day one avoids messy apportionment forever. While you are choosing, decide your accounting method too: our <a href="/blog/sole-trader-and-self-employment/cash-basis-vs-accruals-sole-trader">cash basis vs accruals guide</a> explains the fork, and cash basis is now the default for most sole traders.</p>
 
-<p>You will pay:</p>
-<ul>
-<li><strong>Income tax</strong> on your profits at the usual rates: 0% on the first £12,570, 20% on £12,571 to £50,270, 40% on £50,271 to £125,140, and 45% above that.</li>
-<li><strong>Class 4 National Insurance</strong> at 6% on profits between £12,570 and £50,270, and 2% on profits above £50,270.</li>
-<li><strong>Class 2 National Insurance</strong>: abolished from 6 April 2024 for profits above the £6,725 Small Profits Threshold. Your NI record is credited automatically and there is no weekly charge. Voluntary Class 2 (£3.50 per week in 2025/26) remains available only to those with profits below £6,725 who want to protect entitlement to the state pension and other contributory benefits.</li>
-</ul>
+<h2>Payments on Account: The First Year Shock, Worked Through</h2>
 
-<h2>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA)</h2>
+<p>Payments on account catch almost every new sole trader off guard. Once your Self Assessment bill exceeds £1,000 (and less than 80% of your tax was collected at source), HMRC requires two advance payments toward the next year, each 50% of the current year's income tax plus Class 4 bill.</p>
 
-<p>From April 2026, if your self employment turnover is over £50,000, you must follow MTD for ITSA rules. This means keeping digital records using compatible software and sending quarterly updates to HMRC, not just an annual return.</p>
-
-<p>From April 2027, the threshold drops to £30,000. From April 2028, it drops to £20,000. If you are a sole trader with turnover above these levels, you need to start preparing now.</p>
-
-<p>The software you use must be MTD compatible. Popular options include Xero, QuickBooks, FreeAgent, and Sage. If you use spreadsheets, you will need bridging software to submit the quarterly updates. We recommend getting set up early rather than scrambling at the deadline.</p>
-
-<h2>What Records Do You Need to Keep as a Sole Trader?</h2>
-
-<p>HMRC expects you to keep accurate records of your income and expenses. You do not need to use accounting software, but it makes life much easier. You can use a simple spreadsheet or even a notebook if you are disciplined about it.</p>
-
-<p>You must keep:</p>
-<ul>
-<li>Records of all sales and income (invoices, bank statements, receipts)</li>
-<li>Records of all business expenses (receipts, bills, bank statements)</li>
-<li>Records of any personal money you put into or take out of the business (drawings)</li>
-<li>Records of any assets you buy and sell for the business</li>
-</ul>
-
-<p>You need to keep these records for at least 5 years after the 31 January deadline of the relevant tax year. So for the 2025/26 tax year, keep records until at least January 2032.</p>
-
-<p>If HMRC investigates you and you do not have proper records, they can charge penalties of up to 100% of the tax underpaid. That is not a risk worth taking.</p>
-
-<h2>Do You Need an Accountant as a Sole Trader?</h2>
-
-<p>Legally, no. You can file your own tax return and manage your own records. Many sole traders do exactly that, especially in the early years when things are simple.</p>
-
-<p>But an accountant saves you time and money in most cases. We spot deductions you might miss. We keep you compliant with changing rules like MTD. We help you plan for tax bills so you do not get a nasty surprise in January.</p>
-
-<p>If your turnover is over £30,000, you have employees, or you are unsure about any aspect of your tax affairs, it is worth speaking to a professional. You can <a href="/contact">contact our team</a> for a no obligation chat about your situation.</p>
-
-<h2>Common Mistakes When Registering as Self Employed</h2>
-
-<p>Here are the ones we see most often:</p>
+<p>Worked example. Amira starts as a freelance designer in Leeds on 6 April 2025 and makes a £30,000 profit in 2025/26, with no other income:</p>
 
 <ul>
-<li><strong>Registering too late.</strong> You have until 5 October of your second tax year, but do not leave it that long. You need your UTR to file your return.</li>
-<li><strong>Not registering at all.</strong> Some people think they do not need to register if their earnings are low. You do. If you earn over £1,000 in a tax year from self employment, you must register and file a return (unless you use the Trading Allowance).</li>
-<li><strong>Confusing self employment with being a limited company director.</strong> They are different. If you set up a limited company, you are not self employed. You are a director and employee of your own company. You need to register for payroll and file company accounts, not just self assessment.</li>
-<li><strong>Forgetting to register for VAT.</strong> If your turnover goes over £90,000 and you do not register, HMRC will backdate your VAT registration and charge penalties.</li>
-<li><strong>Not keeping proper records.</strong> HMRC can ask to see them up to 5 years after the tax year. If you cannot produce them, you face penalties.</li>
+<li>Income tax: £30,000 minus the £12,570 personal allowance = £17,430 at 20% = <strong>£3,486.00</strong></li>
+<li>Class 4 NIC: £17,430 at 6% = <strong>£1,045.80</strong></li>
+<li>Total 2025/26 liability: <strong>£4,531.80</strong></li>
 </ul>
 
-<h2>Self Employed vs Limited Company: Which Is Right for You?</h2>
+<p>Her payment schedule:</p>
 
-<p>This is one of the biggest decisions you will make. A sole trader structure is simple and cheap to set up. But a limited company offers limited liability and potential tax advantages, especially if your profits are over £50,000 a year.</p>
+<ul>
+<li><strong>31 January 2027:</strong> £4,531.80 for 2025/26, plus a first payment on account of £2,265.90 toward 2026/27. Total due on one day: <strong>£6,797.70</strong>.</li>
+<li><strong>31 July 2027:</strong> second payment on account of £2,265.90.</li>
+</ul>
 
-<p>As a sole trader, you pay income tax and NI on all your profits. As a limited company director, you pay corporation tax on the company's profits at 19% to 25%, then income tax and NI on the salary and dividends you take out. The overall tax bill can be lower, but the admin is heavier.</p>
+<p>That first January bill is 150% of a full year's tax. It is not extra tax, just prepayment, and the payments on account are credited against the 2026/27 bill, but the cash has to be there. The fix is boring and effective: move 25% to 30% of every payment you receive into a separate account from day one. If profits fall, you can apply to reduce the payments on account, though reduce them too far and HMRC charges interest on the shortfall.</p>
 
-<p>If you are just starting out and your profits are under £30,000, sole trader is usually the right call. If your profits are higher or you want to limit your personal liability, it is worth looking at incorporation. Our <a href="/incorporation">incorporation guide</a> explains the process in detail.</p>
+<h2>Making Tax Digital for Income Tax: What a New Sole Trader Must Plan For</h2>
 
-<h2>What About the Trading Allowance?</h2>
+<p>Making Tax Digital for Income Tax (MTD for ITSA) replaces the single annual return with digital record keeping, quarterly updates and a final declaration. The phase-in runs on turnover, not profit:</p>
 
-<p>The trading allowance lets you earn up to £1,000 from self employment without registering or paying tax. If your gross income is under £1,000 in a tax year, you do not need to tell HMRC. It is a simple way to handle small side hustles or occasional freelance work.</p>
+<ul>
+<li><strong>6 April 2026:</strong> qualifying income over £50,000 (tested on your 2024/25 return)</li>
+<li><strong>6 April 2027:</strong> over £30,000</li>
+<li><strong>6 April 2028:</strong> over £20,000</li>
+</ul>
 
-<p>But once your income goes over £1,000, you must register. And if you claim the trading allowance, you cannot also claim expenses. For most people with genuine business costs, claiming actual expenses works out better.</p>
+<p>Qualifying income means combined gross self employment and property income before expenses. A new sole trader registering now should assume MTD is their near future and start with MTD compatible software (Xero, QuickBooks, FreeAgent, Sage and others) rather than a shoebox of receipts they will have to digitise later. Spreadsheet loyalists can use bridging software, but starting digital is easier than converting.</p>
 
-<h2>Final Thoughts</h2>
+<h2>Selling Through a Platform? HMRC Already Sees Your Income</h2>
 
-<p>Registering as self employed is straightforward. Do it early. Keep good records. Understand your tax obligations. And if you are unsure about anything, get professional advice. The cost of a mistake is almost always higher than the cost of an accountant.</p>
+<p>If your self employment runs through Etsy, Vinted, eBay, Uber, Deliveroo, Amazon Flex, Airbnb or a tutoring marketplace, one more fact should shape your timing. Since 1 January 2024 digital platforms have been legally required to report each seller's identity, tax reference and platform income to HMRC every calendar year, with the first reports filed by 31 January 2025. You get a copy of what was reported about you.</p>
 
-<p>If you want to understand the full picture of what it means to be self employed, including how to manage your tax bills and plan for retirement, our <a href="/fundamentals">fundamentals section</a> has detailed guides. For specific questions about your situation, <a href="/contact">get in touch with us</a>. We work with sole traders across the UK, from freelancers in Shoreditch to tradespeople in the Jewellery Quarter in Birmingham.</p>
+<p>Two details matter. Casual sellers of goods are excluded only if they made fewer than 30 sales and received less than 2,000 euros (about £1,700) in the year. There is no exclusion at all for services, so drivers, riders and taskers are reportable from the first pound.</p>
+
+<p>To be clear, platform reporting is not a new tax. Being reported does not make income taxable, and not being reported does not make it tax free; the £1,000 trading allowance and the 5 October rule above are unchanged. What has changed is visibility: HMRC can now match platform data against Self Assessment records and write to people who appear on one list but not the other. Registering because you crossed £1,000 is routine; explaining yourself after a nudge letter, with the failure to notify clock already running, is not. Get in first.</p>
+
+<h2>Worked Example: When a Side Hustle Becomes a Business</h2>
+
+<p>Priya works full time in Bristol and starts selling prints online in May 2025. By 5 April 2026 her gross sales are £4,200, with £600 of material and postage costs.</p>
+
+<ul>
+<li><strong>Registration:</strong> gross income is over £1,000, so she must register by 5 October 2026.</li>
+<li><strong>Allowance or expenses:</strong> the £1,000 trading allowance beats her £600 of actual costs, so she claims the allowance. Taxable profit: £4,200 minus £1,000 = <strong>£3,200</strong>.</li>
+<li><strong>Income tax:</strong> her day job already uses her personal allowance, so the £3,200 is taxed at 20% = <strong>£640.00</strong>.</li>
+<li><strong>Class 4 NIC:</strong> her self employed profits are below £12,570, so <strong>nil</strong>.</li>
+<li><strong>Payments on account:</strong> her bill is under £1,000, so none are triggered.</li>
+</ul>
+
+<p>Total cost of the side hustle's first year: £640, due 31 January 2027. If you are juggling employment and self employment, our guide to <a href="/blog/sole-trader-and-self-employment/how-to-register-as-self-employed-uk-while-keeping-full-time-job">registering as self employed while keeping your full time job</a> covers the PAYE interactions in detail. And once profits grow, the sole trader vs company question opens up: see <a href="/blog/incorporation-and-structure/limited-company-vs-sole-trader-side-hustle">limited company or sole trader for a side hustle</a>. Setting up a company is a different path entirely: a director of their own company is not self employed, and registers the company for corporation tax and PAYE instead.</p>
+
+<h2>Records, VAT and the Other Obligations</h2>
+
+<p>Keep records of all income, expenses, drawings and business assets for at least 5 years after the 31 January deadline of the relevant tax year; for 2025/26 that means until at least 31 January 2032. Poor records in an enquiry can mean penalties of up to 100% of tax underpaid.</p>
+
+<p>VAT is separate from all of the above. Registration becomes compulsory only when taxable turnover exceeds £90,000 in any rolling 12 months (or will in the next 30 days), with 30 days from the end of the month you crossed it to register. Most new sole traders are nowhere near it, but watch the rolling total as you grow, because HMRC backdates late registrations.</p>
+
+<h2>Do You Need an Accountant to Register?</h2>
+
+<p>No. Registration itself is a 15 minute form, and plenty of sole traders in their first year or two manage the whole cycle themselves. Where professional help earns its fee is the surrounding decisions: allowance versus expenses, accounting date, cash basis versus accruals, planning for the first 150% January bill, and getting MTD ready before it is compulsory. If any of those feel uncertain, <a href="/contact">talk to our team</a>; we work with sole traders from delivery riders in Stockport to consultants in Edinburgh, and the cost of a mistake is almost always higher than the cost of advice.</p>

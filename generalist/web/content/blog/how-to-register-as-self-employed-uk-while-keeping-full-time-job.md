@@ -31,7 +31,7 @@ keyTakeaways:
   - "You must register as self-employed with HMRC by 5 October after the tax year in which your gross self-employed income first exceeds the £1,000 trading allowance."
   - "The trading allowance is £1,000 per tax year; earnings at or below this threshold require no registration, no self assessment return, and no tax."
   - "Class 4 National Insurance is charged at 6% on self-employed profits between £12,570 and £50,270, and at 2% above £50,270, independently of your employment income."
-  - "For 2025/26, Class 2 National Insurance is effectively abolished; self-employed profits above £6,725 are treated as paid, protecting your state pension record at no cost."
+  - "For 2025/26, Class 2 National Insurance is effectively abolished; self-employed profits above £6,845 are treated as paid, protecting your state pension record at no cost."
   - "Your self-employed profit is added to your employment income and taxed at your marginal rate through self assessment: 20% basic rate or 40% higher rate."
   - "HMRC does not notify your employer that you have registered as self-employed; your employer sees only your PAYE tax code, which HMRC may adjust to collect tax on side income."
 howToSteps:
@@ -100,7 +100,7 @@ howToSteps:
 
 <p>This is where most people get confused. Your full time job pays Class 1 National Insurance through PAYE. Your self employment triggers Class 2 and Class 4 National Insurance. But the rules changed in 2024/25.</p>
 
-<p>For 2025/26, Class 2 National Insurance is effectively abolished for most self employed people. If your self employed profits are above £6,725, you are treated as having paid Class 2 NIC, which counts towards your National Insurance record for state pension and benefits. You do not pay anything. If your profits are below £6,725, you can choose to pay voluntary Class 2 NIC to protect your record.</p>
+<p>For 2025/26, Class 2 National Insurance is effectively abolished for most self employed people. If your self employed profits are above £6,845, you are treated as having paid Class 2 NIC, which counts towards your National Insurance record for state pension and benefits. You do not pay anything. If your profits are below £6,845, you can choose to pay voluntary Class 2 NIC to protect your record.</p>
 
 <p>Class 4 National Insurance is charged at 6% on self employed profits between £12,570 and £50,270, and at 2% on profits above £50,270. The £12,570 Lower Profits Limit applies to your self-employed profits independently of your employment income. Your salaried earnings do not reduce or remove this threshold for Class 4 purposes.</p>
 

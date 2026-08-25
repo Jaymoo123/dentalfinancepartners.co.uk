@@ -398,7 +398,7 @@ faqs:
 
 <p>Ongoing costs include:</p>
 <ul>
-<li>Annual Confirmation Statement: £34 (filed online with Companies House)</li>
+<li>Annual Confirmation Statement: £50 (filed online with Companies House)</li>
 <li>Annual accounts preparation: £500-£2,000 depending on complexity (your accountant's fee)</li>
 <li>Corporation Tax return filing: usually included in the accounts fee</li>
 <li>Payroll processing: £50-£200 per year if done by your accountant</li>

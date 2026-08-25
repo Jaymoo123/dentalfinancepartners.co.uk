@@ -28,7 +28,7 @@ faqs:
   - question: "When should I definitely use a limited company accountant?"
     answer: "Use an accountant if any of these apply: you have employees, you are VAT registered, you have director's loan account activity over £10,000, you buy or sell business assets, you claim R&D tax credits, you operate in the construction industry (CIS), you have foreign income, or you are selling or closing the company. Also use one if you are unsure about any aspect of your tax position. The cost of getting it wrong is usually higher than the fee."
 keyTakeaways:
-  - "Dormant company accounts can be filed online by the director for a £34 confirmation statement fee, compared to accountant fees of £150 to £400 plus VAT per year."
+  - "Dormant company accounts can be filed online by the director for a £50 confirmation statement fee, compared to accountant fees of £150 to £400 plus VAT per year."
   - "A single director using accounting software (£240 to £480 per year) saves £360 to £720 annually versus an accountant charging £600 to £1,200 for the same work."
   - "A limited company with turnover below the £90,000 VAT threshold and no employees requires roughly 12 hours of annual bookkeeping and filing when using accounting software."
   - "Late limited company accounts cost £150 at one month late and £1,500 at six or more months late, and late corporation tax payment attracts interest at 7.25%."
@@ -46,9 +46,9 @@ keyTakeaways:
 
 <p>A dormant company is one with no significant accounting transactions in the year. No income, no expenses, no dividends, no director loans. Just the company sitting there, registered at Companies House, doing nothing.</p>
 
-<p>If that is your situation, you can file dormant company accounts yourself for free. Companies House provides a simple online filing service. You submit a confirmation statement every 12 months (£34 filing fee online, or £62 if you file by paper). No corporation tax return is needed if the company has notified HMRC it is dormant.</p>
+<p>If that is your situation, you can file dormant company accounts yourself for free. Companies House provides a simple online filing service. You submit a confirmation statement every 12 months (£50 filing fee online, or £110 if you file by paper). No corporation tax return is needed if the company has notified HMRC it is dormant.</p>
 
-<p>The process takes about 20 minutes per year. The cost is £34. Compare that to an accountant's annual fee, which for a dormant company typically runs between £150 and £400 plus VAT.</p>
+<p>The process takes about 20 minutes per year. The cost is £50. Compare that to an accountant's annual fee, which for a dormant company typically runs between £150 and £400 plus VAT.</p>
 
 <p><strong>The maths:</strong> You save £150 to £400 per year. The risk is near zero because there are no transactions to get wrong.</p>
 
@@ -69,7 +69,7 @@ keyTakeaways:
 
 <p>If you use accounting software like FreeAgent or Xero, these tasks are largely automated. FreeAgent, for example, generates your annual accounts and CT600 with a few clicks. It handles RTI payroll submissions automatically. You file the CT600 through the software's HMRC integration.</p>
 
-<p>The software costs roughly £20 to £40 per month. Your total annual cost is £240 to £480 plus the £34 confirmation statement fee. An accountant doing the same work would charge £600 to £1,200 per year.</p>
+<p>The software costs roughly £20 to £40 per month. Your total annual cost is £240 to £480 plus the £50 confirmation statement fee. An accountant doing the same work would charge £600 to £1,200 per year.</p>
 
 <p><strong>The maths:</strong> You save £360 to £720 per year. The risk is low because the transactions are simple and the software flags obvious errors.</p>
 

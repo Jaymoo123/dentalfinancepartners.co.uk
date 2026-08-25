@@ -90,7 +90,7 @@ keyTakeaways:
 
 <p>Class 2 NIC was abolished from 6 April 2024. The old £3.45 per week charge no longer applies for 2024/25 or 2025/26. From 2024/25 onwards, sole traders with profits above the Lower Profits Limit pay only Class 4 NIC: 6% on profits between £12,570 and £50,270, then 2% on anything above. Class 4 is calculated and collected through your self assessment return, not as a separate bill.</p>
 
-<p>If your profits are below the Small Profits Threshold (£6,725 for 2025/26), you can make voluntary contributions to protect your State Pension record. A sole trader accountant makes sure your self assessment includes the correct Class 4 calculation and advises whether voluntary contributions make sense for your situation. Missing NIC contributions can create gaps in your National Insurance record, affecting your State Pension entitlement later. It is a long-term cost that is invisible until retirement.</p>
+<p>If your profits are below the Small Profits Threshold (£6,845 for 2025/26), you can make voluntary contributions to protect your State Pension record. A sole trader accountant makes sure your self assessment includes the correct Class 4 calculation and advises whether voluntary contributions make sense for your situation. Missing NIC contributions can create gaps in your National Insurance record, affecting your State Pension entitlement later. It is a long-term cost that is invisible until retirement.</p>
 
 <h2>How a Sole Trader Accountant Stops You Missing These Deadlines</h2>
 
