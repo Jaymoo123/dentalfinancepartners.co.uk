@@ -97,6 +97,22 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+
+  /* Brand ramp, tokenised. Extracted shared components address the brand as
+     `primary-*` so a sibling site swaps its whole brand by redefining this
+     scale. Property pins it to Tailwind's emerald so the rename is a no-op
+     here: every `bg-primary-600` computes exactly as `bg-emerald-600` did. */
+  --color-primary-50: oklch(97.9% 0.021 166.113);
+  --color-primary-100: oklch(95% 0.052 163.051);
+  --color-primary-200: oklch(90.5% 0.093 164.15);
+  --color-primary-300: oklch(84.5% 0.143 164.978);
+  --color-primary-400: oklch(76.5% 0.177 163.223);
+  --color-primary-500: oklch(69.6% 0.17 162.48);
+  --color-primary-600: oklch(59.6% 0.145 163.225);
+  --color-primary-700: oklch(50.8% 0.118 165.612);
+  --color-primary-800: oklch(43.2% 0.095 166.913);
+  --color-primary-900: oklch(37.8% 0.077 168.94);
+  --color-primary-950: oklch(26.2% 0.051 172.552);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted-surface);
