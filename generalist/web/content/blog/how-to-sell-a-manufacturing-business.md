@@ -1,150 +1,218 @@
 ---
-title: "How to Sell a Manufacturing Business: Valuation, Assets and Tax"
+title: "How to Sell a Manufacturing Business: The Tax at Every Deal Stage"
 slug: "how-to-sell-a-manufacturing-business"
 canonical: "https://www.hollowaydavies.co.uk/blog/exit-and-capital-gains/how-to-sell-a-manufacturing-business"
 date: "2026-07-30"
+generator: unverified/claude-era
+updatedDate: "2026-08-25"
 author: "Holloway Davies Editorial Team"
 category: "Exit and Capital Gains"
-metaTitle: "How to Sell a Manufacturing Business (2026)"
-metaDescription: "Manufacturing sells at 4 to 6x EBITDA plus asset backing. How plant, freehold and WIP are valued, plus CGT, BADR at 18% and the EOT 50% rule."
+metaTitle: "Selling a Manufacturing Business: Tax by Deal Stage"
+metaDescription: "The sale of a factory stage by stage, with the tax attached to each: grooming, heads of terms, the share versus asset fork, completion accounts and earn-outs."
 altText: "Factory production floor with CNC machinery and a manager reviewing output on a tablet"
 image: ""
 h1: "How to Sell a Manufacturing Business"
-summary: "Manufacturing businesses are valued on earnings and on their assets, and the two rarely agree. This guide covers the 4 to 6x EBITDA multiple, how plant and freehold are valued separately, the diligence traps unique to manufacturing (capital allowances, contaminated land, TUPE, customer concentration), and the CGT, BADR and EOT tax position for 2026/27."
+summary: "A manufacturing sale runs through a fixed sequence, and each stage in it has a tax consequence you can still change while the stage is open. This page walks the sequence from the grooming year through heads of terms, diligence, completion accounts and the earn-out, and works one Blackburn factory sale both ways, as a share sale and as an asset sale, to a net-of-tax figure at 2026/27 rates."
 schema: ''
 faqs:
-  - question: "What is a manufacturing business worth?"
-    answer: "Most trading manufacturers sell on a multiple of adjusted EBITDA, typically 4 to 6 times, with stronger, less owner-dependent businesses at the top of that range. The difference from many other sectors is asset backing. Plant, machinery and any freehold premises give a manufacturer an adjusted net asset floor that the earnings multiple must clear. If the multiple values the business below its tangible assets, a buyer prices on assets instead. Get an indicative figure both ways before you speak to anyone."
-  - question: "How is the factory or freehold valued in the sale?"
-    answer: "Freehold premises are usually valued separately from the trading business, on an open market or vacant possession basis, not lumped into the EBITDA multiple. A buyer may purchase the property with the business, leave it behind, or take a lease from you. If the premises are held in a SIPP or SSAS, they are outside the company and sold or leased separately, which can be tax efficient. Land and buildings often carry the largest single value in a manufacturing deal, so commission a proper survey early."
-  - question: "Should I sell the shares or just the assets of my manufacturing company?"
-    answer: "Sellers usually prefer a share sale because the whole company transfers, including contracts and employees, and Business Asset Disposal Relief can apply to reduce Capital Gains Tax. Buyers often prefer an asset sale to cherry pick plant and goodwill and leave behind liabilities such as historic environmental risk. Asset sales can trigger double taxation, corporation tax in the company and then tax on extracting the proceeds. The structure drives the tax, so model both before agreeing heads of terms."
-  - question: "What happens to capital allowances when I sell the plant and machinery?"
-    answer: "On an asset sale, plant and machinery that has attracted capital allowances is subject to a balancing charge or allowance, and buyer and seller usually agree a section 198 election to fix the value passing across. This matters because it changes the tax bill on both sides. On a share sale the company keeps its pools and no balancing event arises. Machinery bought under full expensing or the annual investment allowance needs particular care, as a disposal can claw back relief already given."
-  - question: "How does contaminated land affect the sale?"
-    answer: "Environmental liability is one of the biggest diligence traps in manufacturing. A buyer will commission a Phase 1 environmental survey, and any sign of contamination from solvents, oils, metals or historic processes can trigger a Phase 2 investigation. Findings routinely lead to price reductions, retentions held back from the proceeds, or environmental indemnities in the sale agreement. If your site has decades of production history, get ahead of it with your own survey so the issue does not surface late and stall the deal."
-  - question: "Who buys manufacturing businesses?"
-    answer: "The two main buyer types are trade competitors and private equity. Trade buyers want capacity, customers, a skilled workforce, specific capabilities or a geographic foothold, and can often pay more because of the synergies they unlock. Private equity buys platforms it can grow and consolidate, and looks hard at recurring revenue, margin and management depth. Overseas trade buyers are common in specialist manufacturing. Each type values the business differently, so understanding who your natural buyer is shapes how you prepare and price."
-  - question: "How does customer concentration affect the price?"
-    answer: "Customer concentration is a classic value killer in manufacturing. If one customer is more than about 25 to 30 percent of revenue, a buyer sees fragility, because losing that account after completion could gut the business. Concentration usually leads to a lower multiple, a larger earn out, or consideration deferred and tied to those customers staying. The fix takes time. Spread revenue across more accounts, lock in supply agreements and reduce reliance on any single relationship in the two to three years before you sell."
   - question: "What tax will I pay when I sell my manufacturing business?"
-    answer: "If you sell company shares, you pay Capital Gains Tax on the gain after your £3,000 annual exempt amount. Business Asset Disposal Relief can cut the rate to 18% on the first £1,000,000 of qualifying lifetime gains from 6 April 2026, up from 14% in 2025/26. Gains above the BADR limit are taxed at 18% or 24% depending on your income. Selling to an Employee Ownership Trust changed materially on 26 November 2025. Model your position before you sign anything."
-  - question: "Could an Employee Ownership Trust work for a manufacturing business?"
-    answer: "Yes. An EOT lets you sell a controlling stake to a trust that holds the company for employees, funded from future profits, which suits skilled, stable workforces common in manufacturing. The tax case weakened sharply on 26 November 2025. The Capital Gains Tax relief was cut from 100% to 50%, so half your gain is now taxable at the point of sale, with no BADR available on it. Guides still promising a fully tax free EOT sale are out of date."
-  - question: "Is selling to an EOT still tax free?"
-    answer: "No, not since 26 November 2025. Before that date a qualifying sale of a controlling interest to an Employee Ownership Trust was 100% relieved from Capital Gains Tax. From that date the relief was cut to 50%. Half the gain is now chargeable at the time of sale at ordinary CGT rates, with Business Asset Disposal Relief and Investors' Relief specifically blocked on that half. The other half is held over and taxed on the trustees when they later dispose of the shares. Any content saying otherwise predates the change."
-  - question: "How long does it take to sell a manufacturing business?"
-    answer: "Allow nine to eighteen months from decision to completion, and longer if the business needs tidying up first. Manufacturing deals run slower than service businesses because there is more to check: plant valuations, property surveys, environmental reports, stock and work in progress, supply contracts and TUPE obligations on the workforce. Preparation you do beforehand, clean management accounts, a data room, resolved property and environmental questions, is the single biggest lever on both timescale and final price."
+    answer: "If you sell the shares in your company you pay Capital Gains Tax on the gain, after the annual exempt amount of £3,000 for 2026/27. Business Asset Disposal Relief can cut the rate to 18% on the first £1,000,000 of qualifying lifetime gains for disposals from 6 April 2026, up from 14% for disposals between 6 April 2025 and 5 April 2026 and 10% before that. Gains above the £1,000,000 lifetime limit are taxed at 18% or 24% depending on where they sit against your income. If instead the company sells its trade and assets, the company pays corporation tax on the profits and gains first, and you are taxed again when you take the money out, so the same headline price produces a different figure in your bank account."
+  - question: "Should I sell the shares or the assets of my manufacturing company?"
+    answer: "You will usually want a share sale and the buyer will usually want an asset sale, and that is a tax argument as much as a legal one. On a share sale you make one disposal, Business Asset Disposal Relief can apply, and the company keeps its capital allowance pools and its history. On an asset sale the company sells plant, goodwill, property and stock, pays corporation tax on the profits and gains, and you face a second layer of tax when the net cash is extracted. The gap between the two on the same business is usually six figures for a capital-intensive manufacturer, so model both before you sign heads of terms rather than after."
+  - question: "What is Business Asset Disposal Relief worth on a factory sale?"
+    answer: "Business Asset Disposal Relief, or BADR, reduces the Capital Gains Tax rate to 18% for disposals from 6 April 2026, on the first £1,000,000 of qualifying gains you make in your lifetime. Against the 24% main rate that is a saving of 6 percentage points on £1,000,000, so up to £60,000. The rate was 14% for disposals between 6 April 2025 and 5 April 2026 and 10% before 6 April 2025, so published material quoting a 10% BADR rate is out of date. The lifetime limit is per person and has not been indexed since 11 March 2020."
+  - question: "How do I qualify for BADR on my company shares?"
+    answer: "For a share sale you generally need, throughout the two years ending on the day of disposal, at least 5% of the ordinary share capital and 5% of the voting rights, a 5% economic entitlement to proceeds, and to have been an officer or employee of the company while it carried on a trade. The conditions are in TCGA 1992 sections 169H to 169S and HMRC sets out how it reads them at CG63950 onwards. Two years is a long lead time, so if your shareholding or your directorship has changed recently, check the clock before you start a process rather than during one."
+  - question: "What happens to capital allowances when I sell the plant and machinery?"
+    answer: "On an asset sale, plant and machinery that has attracted capital allowances leaves the pool at a disposal value, and if that value exceeds the written-down value in the pool the difference is a balancing charge, taxed as trading profit in the company. On fixtures in a building, buyer and seller usually agree a section 198 election to fix the value passing across, which has to be made within two years of the transfer. On a share sale nothing happens: the company keeps its pools intact and there is no balancing event. Machinery bought under the annual investment allowance, full expensing or the 40% first-year allowance available from 1 January 2026 needs particular attention, because relief given up front is what the balancing charge claws back."
+  - question: "How much of the price is held back until the completion accounts are agreed?"
+    answer: "In most manufacturing deals the price is fixed on a set of assumptions about cash, debt and working capital at the completion date, then adjusted up or down once completion accounts are drawn up. Stock, work in progress and trade debtors are the lines that move, and in a factory they can be large and lumpy. The adjustment is not a tax event on its own, it changes the consideration, and therefore the gain. An accurate stock count and a written valuation policy applied consistently for at least the previous two year ends is the cheapest protection available at this stage."
+  - question: "How are earn-outs taxed when I sell a manufacturing business?"
+    answer: "An earn-out is a right to further consideration, and where the amount is not yet known that right is itself an asset valued at completion under the Marren v Ingles principle, so tax can fall due on a figure you have not yet received. When the earn-out later pays out, the difference between what you receive and the value put on the right is a separate gain, and BADR is not automatically available on it. Where the earn-out is satisfied in shares or loan notes, different rules can apply and an election may be needed. Get the earn-out clause drafted with the tax treatment in mind, not attached at the end."
+  - question: "What should I fix in the accounts in the year before I sell?"
+    answer: "Four things carry the most weight in a manufacturing sale: a fixed asset register that reconciles to the capital allowance pools, a written and consistently applied stock and work in progress valuation policy, management accounts that are prepared monthly and agree to the statutory accounts, and revenue that is not concentrated in one or two customers. All four take months rather than weeks, and all four are things a buyer will otherwise price against you in diligence. See our <a href=\"/blog/exit-and-capital-gains/preparing-a-business-for-sale\">preparing a business for sale</a> guide for the full readiness list."
+  - question: "How does contaminated land affect a factory sale?"
+    answer: "A buyer will commission a Phase 1 environmental survey on any site with production history, and evidence of solvents, oils, heavy metals, fuel storage or historic processes can trigger a deeper Phase 2 investigation. The commercial outcomes are a price reduction, a retention held back from your proceeds, or an environmental indemnity that keeps you exposed for years after completion. Commissioning your own survey before you go to market means the issue is priced in at the start rather than discovered mid-process, which is when it costs the most."
   - question: "What happens to my employees when I sell?"
-    answer: "On a share sale employees stay with the company automatically, as their employer has not changed. On an asset sale the Transfer of Undertakings (Protection of Employment) regulations, TUPE, usually apply, so staff transfer to the buyer on their existing terms with continuity of service preserved. Manufacturers often have long serving, unionised or highly skilled workforces, so a buyer scrutinises pension liabilities, redundancy exposure and any collective agreements closely. Employee stability is an asset in a sale, not just a cost, and buyers pay for it."
-  - question: "How is work in progress and stock valued in the deal?"
-    answer: "Stock and work in progress are usually valued at the lower of cost and net realisable value and settled through a completion accounts adjustment, so the final price flexes with the level on the day you complete. Manufacturers can carry large, lumpy balances of raw materials, part finished goods and finished stock, plus long production cycles. Buyers check for obsolete or slow moving inventory and write it down. Get your stock records accurate and your valuation policy documented well before diligence starts."
-  - question: "Should I get the CGT modelled before I agree a price?"
-    answer: "Yes. The tax on exit can move by six figures depending on whether you do a share sale, an asset sale or an EOT, whether BADR is available, and the timing around the 6 April 2026 rate and the 26 November 2025 EOT change. The number that matters is what reaches your bank account after tax, not the headline price. Have the Capital Gains Tax modelled before you sign heads of terms, while the deal structure is still open to change."
+    answer: "On a share sale nothing changes for them: their employer is still the same company. On an asset sale the Transfer of Undertakings (Protection of Employment) regulations, TUPE, normally apply, so employees transfer to the buyer on their existing terms with continuity of service preserved, and there is a duty to inform and consult. Manufacturing workforces are often long serving and sometimes unionised, so a buyer will look closely at pension liabilities, redundancy exposure and any collective agreements. A stable, skilled workforce is something buyers pay for rather than merely accept."
+  - question: "Is selling to an Employee Ownership Trust still tax free?"
+    answer: "No, not for disposals on or after 26 November 2025. Before that date a qualifying sale of a controlling interest to an Employee Ownership Trust, an EOT, was fully relieved from Capital Gains Tax. From that date the relief is 50%, so half the gain is chargeable at the time of sale at ordinary CGT rates, with Business Asset Disposal Relief and Investors' Relief specifically unavailable on that half. The other half is held over and taxed on the trustees when they later dispose of the shares. Anything you read describing an EOT sale as entirely tax free was written before 26 November 2025."
+  - question: "How long does a manufacturing sale take?"
+    answer: "Allow nine to eighteen months from decision to completion, and longer if the grooming year has not been done. Factory deals run slower than service-business deals because there is more to verify: plant condition and ownership, property title and survey, environmental reports, stock and work in progress, supply and customer contracts, and TUPE obligations. Nearly all of the time you can save is saved before you go to market, not during the process."
+  - question: "Can I do anything about the tax after heads of terms are signed?"
+    answer: "Much less than you could before. Heads of terms fix whether the deal is a share sale or an asset sale, how much of the price is deferred, and what sits in an earn-out, and those three choices drive most of the tax outcome. Renegotiating them later means reopening a deal the buyer thinks is settled, which costs goodwill and sometimes price. Model the net-of-tax position while heads of terms are still in draft, because that is the last stage at which the structure is genuinely open."
 keyTakeaways:
-  - "Manufacturing typically sells at 4 to 6x adjusted EBITDA, but asset backing sets a floor: plant and freehold are valued separately and the earnings multiple must clear the adjusted net asset value."
-  - "Freehold premises are usually valued and sold apart from the trading business; premises held in a SIPP or SSAS sit outside the company entirely."
-  - "The three big manufacturing diligence traps are contaminated land, customer concentration and capital allowances balancing charges on plant."
-  - "On a share sale, BADR can cut CGT to 18% on the first £1,000,000 of qualifying gains from 6 April 2026 (up from 14%)."
-  - "Selling to an EOT is no longer tax free: from 26 November 2025 only 50% of the gain is relieved, with no BADR on the taxable half."
-  - "Model the tax on exit before heads of terms, because share sale, asset sale and EOT can differ by six figures on the same business."
+  - "A manufacturing sale runs through a fixed sequence, and the tax on each stage is decided while that stage is open, not at completion."
+  - "Heads of terms is the last cheap moment: it fixes the share sale versus asset sale fork, the deferred element and the earn-out, and those three decisions drive the tax."
+  - "BADR cuts Capital Gains Tax to 18% on the first £1,000,000 of qualifying lifetime gains for disposals from 6 April 2026, up from 14% for 2025/26 disposals and 10% before 6 April 2025."
+  - "On the worked example below, the same £1,800,000 factory leaves £1,428,744 after tax as a share sale and £1,200,744 as an asset sale plus liquidation, a difference of £228,000."
+  - "An asset sale creates a balancing charge where plant leaves the pool above its written-down value; a share sale creates no balancing event at all."
+  - "Stock and work in progress move the final price through completion accounts, so the valuation policy you use at the year end before the sale is worth real money."
+  - "Selling to an EOT is no longer fully relieved: from 26 November 2025 only 50% of the gain is relieved, with no BADR on the taxable half."
 ---
 
-<p>Selling a manufacturing business is not like selling a service company. A consultancy is worth what it earns. A manufacturer is worth what it earns and what it owns, and the two numbers rarely agree. You have a factory, a yard, tooling, machinery, raw materials, part finished goods and a workforce, and every one of those becomes a line in a buyer's diligence checklist. This guide walks through how manufacturing businesses are actually valued, the diligence traps unique to the sector, and the tax you will pay on exit at 2026/27 rates.</p>
+<p>Selling a factory is a sequence, not an event. It runs from the year you spend tidying the accounts, through the letter that sets out heads of terms, into diligence, completion accounts and whatever is left hanging on an earn-out. Each stage in that sequence closes behind you, and each one has a tax consequence attached that you can still influence while it is open and not afterwards. The most expensive mistake owner directors make is treating tax as something the accountant works out at the end, when in fact most of it was settled in a two-page heads of terms document signed months earlier.</p>
 
-<p>This is general guidance for owner directors planning a sale, not advice on your specific numbers. Where the figures matter, and in a manufacturing deal they always do, model your own position with an accountant before you commit.</p>
+<p>What follows walks that sequence in order, with the tax attached to each stage, and then runs one Blackburn factory sale both ways to a net figure. Rates are 2026/27 unless dated otherwise. This is general guidance for owner directors, not advice on your own numbers.</p>
 
-<h2>What a Manufacturing Business Is Worth: Earnings and Assets</h2>
+<h2>Stage One: The Grooming Year, and the Four Things Worth Fixing</h2>
 
-<p>Most trading manufacturers are valued on a multiple of adjusted EBITDA (earnings before interest, tax, depreciation and amortisation, adjusted for one off costs and owner benefits). The typical range is <strong>4 to 6 times adjusted EBITDA</strong>. Where you land depends on margin, growth, customer spread, how dependent the business is on you personally, and the quality of the order book. A commodity job shop with lumpy orders sits at the bottom of that range. A specialist manufacturer with proprietary products, long term contracts and a management team that runs the place without the owner sits at the top, and sometimes above it.</p>
+<p>The twelve to twenty-four months before you go to market are the only period in which you can change what a buyer finds. Four items carry disproportionate weight in a manufacturing deal, and none of them can be fixed quickly.</p>
 
-<p>The feature that sets manufacturing apart from most sectors is <strong>asset backing</strong>. Plant, machinery and any freehold premises are real, tangible value that a buyer can see, finance against and sell on. This creates an <strong>adjusted net asset floor</strong>. If the earnings multiple produces a number lower than the tangible net assets, a buyer will price on the assets instead, because it makes no sense to pay a goodwill premium for a business worth more broken up. The practical result is that manufacturers are valued twice, on earnings and on assets, and the higher of the two usually wins.</p>
+<p><strong>The fixed asset register.</strong> It needs to reconcile to your capital allowance pools, item by item, with acquisition dates and the relief claimed against each. A register that does not reconcile is the single most common reason a plant-heavy deal stalls at diligence, because the buyer cannot price the tax position on the assets they are buying. If yours has drifted, the reconciliation is a job for a quiet quarter, not for the middle of a process. Our page on <a href="/blog/corporation-tax/capital-allowances-for-manufacturers">plant and machinery capital allowances for manufacturers</a> sets out how the pools work and what the FA 2026 changes did to them.</p>
 
-<p>Because of that, plant and property are commonly valued <strong>separately</strong> from the trading business rather than swept into the multiple. A machinery valuer prices the equipment on a fair market or in situ basis, a surveyor prices the freehold, and the goodwill sits on top. For the underlying method, from EBITDA multiples to asset based approaches, see our <a href="/fundamentals/business-valuation-guide">business valuation guide</a>, and get an indicative figure on both bases using the <a href="/tools/business-valuation-calculator">business valuation calculator</a> before you talk to any buyer.</p>
+<p><strong>Stock and work in progress policy.</strong> Buyers do not object to a conservative valuation policy. They object to one that changed. Write down how you value raw materials, part-finished work and finished goods, including how production overhead is absorbed, and apply it consistently through at least two year ends before you sell. The detail is in our guide to <a href="/blog/corporation-tax/manufacturing-costing-and-stock-uk">manufacturing costing, work in progress and year-end stock</a>, and it matters here because the same policy governs the completion accounts adjustment at stage five.</p>
 
-<aside><p><strong>Value it both ways first.</strong> Run your numbers on an earnings multiple and on adjusted net assets. Knowing which one a buyer will use, and why, is the difference between a confident negotiation and being talked down. <a href="/contact">Book an exit review</a> to pressure test both figures.</p></aside>
+<p><strong>Monthly management accounts.</strong> Prepared monthly, reconciled to the statutory accounts, with the adjustments between the two documented. A buyer running a data room wants twenty-four months of them.</p>
 
-<h2>Who Buys Manufacturing Businesses</h2>
+<p><strong>Customer spread.</strong> If a single customer is a quarter or more of revenue, a buyer sees the risk of losing the business after completion, and responds by deferring more of the price, extending the earn-out, or reducing what they pay. Spreading revenue takes years, which is exactly why it belongs in this stage rather than any later one. The full readiness list is in our <a href="/blog/exit-and-capital-gains/preparing-a-business-for-sale">preparing a business for sale</a> guide.</p>
 
-<p>Two buyer types dominate. <strong>Trade buyers</strong>, meaning competitors, customers or suppliers, want your capacity, your customer base, your skilled workforce, a specific capability or a geographic foothold. They can often pay the most because they extract synergies, cross selling into your customers, closing duplicate overhead, or bringing a process in house. Overseas trade buyers are common in specialist and precision manufacturing, where a UK capability plugs a gap in a global group.</p>
+<aside><p><strong>The grooming year is the cheap year.</strong> Everything on this list costs a fraction here of what it costs once a buyer has found it. <a href="/contact">Book an exit review</a> to work out which of the four is actually holding your position back.</p></aside>
 
-<p>The second type is <strong>private equity</strong>. PE buys platforms it can grow and bolt other businesses onto, and it looks hard at margin, recurring or repeat revenue, management depth and the scope to professionalise. If your business depends heavily on you, PE will structure a chunk of the price as deferred or earn out consideration to keep you engaged, or discount for the transition risk. Knowing which buyer is your natural home shapes how you prepare, because a trade buyer and a PE house want to see very different things. The end to end route to a sale, and how these buyers compare, is covered in our <a href="/fundamentals/sell-my-business-guide">guide to selling your business</a>.</p>
+<h2>Stage Two: Deciding Who You Are Selling To</h2>
 
-<h2>The Manufacturing Diligence Traps That Move the Price</h2>
+<p>Buyer type shapes structure, and structure shapes tax, so this decision belongs before heads of terms rather than after. Trade buyers, meaning competitors, customers or suppliers, want capacity, a customer base, a specific capability or a geographic foothold, and they are usually comfortable buying shares because they intend to run the business on. Private equity buys platforms to grow and consolidate, and will typically want a meaningful part of the price deferred or tied to performance if the business still depends on you personally, which pushes tax into stage six.</p>
 
-<p>This is where manufacturing deals are won and lost. Four issues, specific to the sector, routinely knock money off the price or stall the process entirely.</p>
+<h3>If the buyer is your own workforce</h3>
 
-<h3>Plant, machinery and capital allowances</h3>
+<p>An Employee Ownership Trust, or EOT, lets you sell a controlling interest to a trust holding the company for its employees, funded out of future profits rather than a buyer's cash. It suits the skilled, long-serving workforces common in manufacturing, and it keeps the business independent. The tax case changed sharply on <strong>26 November 2025</strong>: for disposals on or after that date the Capital Gains Tax relief on a qualifying disposal to an EOT was cut from 100% to <strong>50%</strong>. Half the gain is chargeable at the point of sale at ordinary CGT rates, with Business Asset Disposal Relief and Investors' Relief both unavailable on that half, and the other half is held over to be taxed on the trustees when they later dispose of the shares. Material describing an EOT sale as entirely tax free predates that change. An EOT can still be the right answer on continuity and culture; it is no longer the automatic tax answer it once was.</p>
 
-<p>Your equipment is both an asset and a tax question. On an <strong>asset sale</strong>, plant and machinery that has attracted capital allowances triggers a balancing charge or balancing allowance, and buyer and seller usually agree a <strong>section 198 election</strong> to fix the value passing across on fixtures. Get this wrong and you can face a tax bill on a claw back of relief already claimed, particularly on kit bought under full expensing or the annual investment allowance. On a <strong>share sale</strong> the company keeps its capital allowance pools intact and no balancing event arises, which is one reason sellers usually prefer share sales. Either way, an accurate fixed asset register and a clear allowances history make diligence faster and protect the price.</p>
+<h2>Stage Three: Heads of Terms, Where the Fork Is Actually Decided</h2>
 
-<h3>Freehold premises, SDLT and pension held property</h3>
+<p>Heads of terms is usually two or three pages and usually not legally binding, and it is nonetheless the most tax-significant document in the whole process. It fixes three things: whether you are selling <strong>shares</strong> or the company is selling its <strong>trade and assets</strong>, how much of the price is paid at completion, and what hangs on an earn-out. Reopening any of the three afterwards means reopening a deal the buyer believes is settled.</p>
 
-<p>If you own your factory, the freehold is often the single largest value in the deal. A buyer may want the property with the business, may prefer to leave it behind and take a lease from you (giving you an ongoing rental income), or may not want it at all. Where the property transfers, <strong>Stamp Duty Land Tax</strong> falls on the buyer and shapes their appetite. Many owner managers hold their trading premises inside a <strong>SIPP or SSAS pension</strong>, which sits outside the company. That can be highly tax efficient, the company pays rent to your pension, and on exit the premises are dealt with separately from the trading sale, often leased to the buyer. Commission a proper survey and valuation of the freehold early, because property questions left late are a common reason deals slip.</p>
+<p>The fork itself is a straightforward conflict of interest. You want a <strong>share sale</strong>: one disposal, one layer of tax, Business Asset Disposal Relief potentially available, the company's capital allowance pools untouched. The buyer often wants an <strong>asset sale</strong>: they pick the assets they want, they leave behind the history and the latent liabilities, and they get a fresh base cost for capital allowances on the plant. For a manufacturer with decades of production on a site, the buyer's preference for leaving history behind is not theoretical, and environmental exposure is often the reason behind it.</p>
 
-<h3>Contaminated land</h3>
+<p>On an asset sale the company is taxed on what it sells. Gains on land and buildings are chargeable gains; goodwill created after March 2002 goes through the corporate intangibles regime as income rather than as a chargeable gain; plant leaving the pool above its written-down value produces a <strong>balancing charge</strong> taxed as trading profit. All of it is charged to corporation tax, at <strong>19%</strong> where augmented profits do not exceed £50,000 and <strong>25%</strong> where they exceed £250,000, with marginal relief in between, and those rates and limits apply for both the financial year 2025 and the financial year 2026. Then the net cash has to reach you, which is a second tax event.</p>
 
-<p>Environmental liability is the trap that surprises manufacturers most. A buyer will run a <strong>Phase 1 environmental survey</strong>, and any indication of contamination, from solvents, oils, heavy metals, fuel storage or historic industrial processes on the site, can trigger a deeper Phase 2 investigation. Findings lead to price chips, retentions held back from your proceeds, or environmental indemnities that leave you carrying the risk for years after you have sold. A site with decades of production history is exactly where this bites. The defensive move is to commission your own survey before you go to market, so you control the narrative and any issue is priced in, not discovered late.</p>
+<p>Where fixtures within a building pass across on an asset sale, buyer and seller normally agree a <strong>section 198 election</strong> fixing the value attributed to them, which must be made within two years of the transfer. The election is a negotiation, because the figure that suits the seller reduces the buyer's future allowances and the other way round. We keep the depth of that on the <a href="/blog/corporation-tax/capital-allowances-for-manufacturers">capital allowances for manufacturers</a> page; what matters at heads of terms is that the number is a term of the deal and not an accounting formality.</p>
 
-<h3>Customer concentration, stock and WIP</h3>
+<h2>The Fork Worked Through: One Factory, Sold Two Ways</h2>
 
-<p>If a single customer is more than roughly a quarter of revenue, a buyer sees fragility and responds with a lower multiple, a bigger earn out, or consideration tied to those accounts staying. Manufacturers also carry lumpy balances of raw materials, work in progress and finished stock, usually valued at the lower of cost and net realisable value and settled through a completion accounts adjustment, so the final price flexes with stock levels on the day. Buyers hunt for obsolete or slow moving inventory to write down. Accurate stock records and a documented valuation policy stop this becoming a late deduction. Do not overlook <strong>TUPE</strong> either: on an asset sale your workforce transfers on existing terms, and buyers scrutinise pension, redundancy and any collective agreements closely.</p>
+<p>Rhian owns all the shares in a sheet metal fabrication company in Blackburn. She subscribed for the shares at incorporation for <strong>£100</strong>, has been a director throughout, and has not used any of her Business Asset Disposal Relief lifetime limit. She is a higher-rate taxpayer, so gains above the BADR limit fall in the 24% band. The business is worth <strong>£1,800,000</strong>, and both routes below are priced at that figure so the comparison is like for like. All figures are 2026/27 and the disposal is assumed to happen on or after 6 April 2026.</p>
 
-<aside><p><strong>Get ahead of the traps.</strong> Contaminated land, customer concentration and a messy fixed asset register are the three most common reasons a manufacturing price gets chipped in diligence. Fixing them takes months, not weeks. Our <a href="/blog/exit-and-capital-gains/preparing-a-business-for-sale">preparing a business for sale</a> guide sets out the readiness checklist.</p></aside>
-
-<h2>Tax When You Sell: CGT and BADR at 2026/27 Rates</h2>
-
-<p>If you sell the <strong>shares</strong> in your manufacturing company, you pay Capital Gains Tax on the gain, after deducting your annual exempt amount of <strong>£3,000</strong>. <strong>Business Asset Disposal Relief</strong> can reduce the rate to <strong>18% on the first £1,000,000</strong> of qualifying lifetime gains for disposals from 6 April 2026, up from 14% in 2025/26 and 10% before that. Gains above the £1,000,000 lifetime limit are taxed at 18% or 24% depending on your income. To qualify for BADR you generally need to have held at least 5% of the shares and voting rights in a trading company for at least two years.</p>
-
-<p>An <strong>asset sale</strong> works differently and can be materially worse for tax, because the company is taxed on the sale of its assets and you are then taxed again on getting the money out. That is why the share sale versus asset sale question is really a tax question. We do not re-explain the full BADR mechanics here, our <a href="/resources/exit-cgt">selling your business CGT and BADR guide</a> and <a href="/fundamentals/business-asset-disposal-relief-explained">BADR fundamentals</a> cover the qualifying conditions and rate detail, and the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">2026 BADR rate change</a> post explains the timing. For a side by side of trade sale, EOT and winding up on the same numbers, see our <a href="/blog/exit-and-capital-gains/selling-a-business-tax-cgt-badr">tax on selling a business</a> comparison.</p>
-
-<h2>Could an Employee Ownership Trust Work for a Manufacturer?</h2>
-
-<p>An <strong>Employee Ownership Trust (EOT)</strong> lets you sell a controlling interest to a trust that holds the company on behalf of its employees, funded from future profits rather than an external buyer's cash. For manufacturers this can be attractive: skilled, long serving workforces are common, and an EOT keeps the business independent, protects jobs and rewards the people who built it. It is a phased exit rather than a clean break, though, because you are usually paid out of profits over several years and carry the risk until you are.</p>
-
-<p>The tax case for an EOT changed sharply, and this is where most guidance on the web is now wrong. At the <strong>Autumn Budget on 26 November 2025</strong>, the Capital Gains Tax relief on a disposal to an EOT was <strong>cut from 100% to 50%, with immediate effect</strong> for disposals on or after that date. Under the new rule, <strong>50% of the gain is your chargeable gain at the point of sale</strong>. The other 50% is held over and bites on the <strong>trustees'</strong> future disposal of the shares. Critically, <strong>Business Asset Disposal Relief and Investors' Relief cannot be claimed on the taxable half</strong>, so it is taxed at the ordinary CGT rate for shares. Guides that still say a sale to an EOT is entirely CGT free were written before 26 November 2025 and are now out of date.</p>
-
-<h3>What the change looks like in numbers</h3>
+<h3>Route A: she sells the shares</h3>
 
 <table>
 <thead>
-<tr><th>Item</th><th>Figure</th></tr>
+<tr><th>Line</th><th>Figure</th></tr>
 </thead>
 <tbody>
-<tr><td>Sale value (market value to EOT)</td><td>£4,000,000</td></tr>
-<tr><td>Original base cost</td><td>£200,000</td></tr>
-<tr><td>Total gain</td><td>£3,800,000</td></tr>
-<tr><td>Old rule (pre-26 Nov 2025): 100% relieved</td><td><strong>£0 CGT at sale</strong></td></tr>
-<tr><td>New rule (on/after 26 Nov 2025): chargeable now = 50% × £3,800,000</td><td>£1,900,000</td></tr>
-<tr><td>Less annual exempt amount</td><td>£3,000</td></tr>
-<tr><td>Taxable now</td><td>£1,897,000</td></tr>
-<tr><td>CGT rate (BADR / IR not available on this slice)</td><td>24%</td></tr>
-<tr><td><strong>CGT payable now</strong></td><td><strong>£455,280</strong></td></tr>
-<tr><td>Remaining 50% (£1,900,000)</td><td>latent gain, bites the trustees on a future disposal</td></tr>
+<tr><td>Consideration for the shares</td><td>£1,800,000</td></tr>
+<tr><td>Less base cost of the shares</td><td>(£100)</td></tr>
+<tr><td><strong>Chargeable gain</strong></td><td><strong>£1,799,900</strong></td></tr>
+<tr><td>Slice within the BADR lifetime limit</td><td>£1,000,000</td></tr>
+<tr><td>Capital Gains Tax on that slice at 18% (BADR, from 6 April 2026)</td><td>£180,000</td></tr>
+<tr><td>Remaining gain</td><td>£799,900</td></tr>
+<tr><td>Less annual exempt amount (2026/27)</td><td>(£3,000)</td></tr>
+<tr><td>Taxable at the main rate</td><td>£796,900</td></tr>
+<tr><td>Capital Gains Tax on that slice at 24%</td><td>£191,256</td></tr>
+<tr><td><strong>Total Capital Gains Tax</strong></td><td><strong>£371,256</strong></td></tr>
+<tr><td><strong>Net proceeds to Rhian</strong></td><td><strong>£1,428,744</strong></td></tr>
 </tbody>
 </table>
 
-<p>Before 26 November 2025 this exit was tax free. The same sale today triggers roughly <strong>£455,000</strong> of CGT and leaves a further <strong>£1.9m</strong> of latent gain sitting inside the trust. An EOT can still be the right answer for the right manufacturer, on culture, continuity and control, but the tax headline that once drove the decision is now half of what the old guides claim. For the full mechanics of the 50% charge, see our <a href="/fundamentals/employee-ownership-trust-guide">employee ownership trust guide</a>.</p>
+<h3>Route B: the company sells the trade and assets, then is wound up</h3>
 
-<h2>Getting a Manufacturing Business Ready to Sell</h2>
+<p>The buyer takes the business for the same £1,800,000, allocated across the assets as follows. Assume the plant originally cost more than the £600,000 attributed to it, so the whole excess over the pool value is a balancing charge and none of it is a chargeable gain.</p>
 
-<p>The single biggest lever on both price and timescale is preparation, and manufacturing rewards it more than most sectors because there is more to tidy. In the two to three years before a sale, work on the things a buyer will pay for and the things that would otherwise be chipped in diligence. Reduce customer concentration by winning and spreading accounts. Clean up the fixed asset register and document your capital allowances history. Get an environmental survey done on your own terms. Sort out any pension held property arrangements. Reduce how much the business depends on you personally, because owner dependence is the most common reason a good manufacturer sells at the bottom of the range instead of the top.</p>
+<table>
+<thead>
+<tr><th>Asset</th><th>Consideration</th><th>Tax base</th><th>Taxable in the company</th></tr>
+</thead>
+<tbody>
+<tr><td>Goodwill</td><td>£700,000</td><td>nil</td><td>£700,000</td></tr>
+<tr><td>Plant and machinery</td><td>£600,000</td><td>pool written-down value £250,000</td><td>£350,000 balancing charge</td></tr>
+<tr><td>Freehold factory</td><td>£450,000</td><td>base cost £300,000</td><td>£150,000</td></tr>
+<tr><td>Stock and work in progress</td><td>£50,000</td><td>at cost £50,000</td><td>nil</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>£1,800,000</strong></td><td></td><td><strong>£1,200,000</strong></td></tr>
+</tbody>
+</table>
 
-<p>Clean, normalised management accounts and an organised data room, contracts, plant records, stock policy, environmental reports, employee and pension details, do more to protect your price than any negotiating tactic on the day. Allow nine to eighteen months from decision to completion, longer if the business needs work first. Our <a href="/blog/exit-and-capital-gains/preparing-a-business-for-sale">preparing a business for sale</a> guide sets out the readiness and due diligence checklist in full.</p>
+<table>
+<thead>
+<tr><th>Line</th><th>Figure</th></tr>
+</thead>
+<tbody>
+<tr><td>Taxable profits and gains in the company</td><td>£1,200,000</td></tr>
+<tr><td>Corporation tax at the main rate of 25% (profits above £250,000, financial year 2026)</td><td>(£300,000)</td></tr>
+<tr><td>Cash in the company after tax</td><td>£1,500,000</td></tr>
+<tr><td>Capital distribution on winding up, less base cost of £100</td><td>£1,499,900</td></tr>
+<tr><td>Capital Gains Tax on the first £1,000,000 at 18% (BADR)</td><td>£180,000</td></tr>
+<tr><td>Remaining gain £499,900 less the £3,000 annual exempt amount, at 24%</td><td>£119,256</td></tr>
+<tr><td><strong>Total Capital Gains Tax</strong></td><td><strong>£299,256</strong></td></tr>
+<tr><td><strong>Net proceeds to Rhian</strong></td><td><strong>£1,200,744</strong></td></tr>
+</tbody>
+</table>
 
-<h2>Get the Numbers Modelled Before You Sign</h2>
+<p>The same business, the same price, and <strong>£228,000</strong> of difference. Route B also assumes the winding up delivers a capital distribution taxed under CGT rules rather than as income, which requires a Members' Voluntary Liquidation and is subject to the targeted anti-avoidance rule aimed at owners who liquidate and start again in the same trade. It also takes months longer and costs liquidator's fees the share route does not. Change the allocation between goodwill, plant and property and the corporation tax layer moves with it, which is why the asset allocation schedule in an asset sale is a negotiated document rather than an arithmetic exercise.</p>
 
-<p>Manufacturing is the sector where the gap between headline price and after tax proceeds is widest, because so much value sits in assets, property and stock, and because share sale, asset sale and EOT can differ by six figures on the same business. The number that matters is what reaches your bank account, not the figure on the letter of intent. Have the valuation stress tested on both an earnings and an asset basis, and have the Capital Gains Tax modelled, before you sign heads of terms, while the deal structure is still open to change.</p>
+<p>Every line above is reproducible from the figures printed on the page. Your own position will differ on base cost, on how much of your BADR lifetime limit is already used, on whether the property sits inside the company at all, and on your income in the year of sale. For the general framework behind both routes, see our <a href="/blog/exit-and-capital-gains/selling-a-business-tax-cgt-badr">tax on selling a business</a> comparison and the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">2026 BADR rate change</a> explainer.</p>
 
-<p>We help manufacturing owner directors plan an exit and, as accountants, model the CGT and BADR position on the sale so you go into negotiations knowing your real net figure. To book an exit and tax review, <a href="/contact">get in touch</a>. This is unregulated exit and succession advice: arranging the sale of a company by way of its shares is exempt under Article 70 of the Regulated Activities Order. We do not arrange, source or introduce the finance that funds a buyout or acquisition, which is regulated credit broking handled by an authorised commercial finance broker.</p>
+<h2>The BADR Rate Position, Dated</h2>
+
+<p>Business Asset Disposal Relief reduces the rate of Capital Gains Tax on qualifying business disposals, up to a lifetime limit of <strong>£1,000,000</strong> per person, a limit fixed since 11 March 2020 and not indexed since. The rate has moved twice in two years:</p>
+
+<table>
+<thead>
+<tr><th>Disposal date</th><th>BADR rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to 5 April 2025</td><td>10%</td></tr>
+<tr><td>6 April 2025 to 5 April 2026</td><td>14%</td></tr>
+<tr><td>From 6 April 2026</td><td><strong>18%</strong></td></tr>
+</tbody>
+</table>
+
+<p>The main Capital Gains Tax rates for individuals are <strong>18%</strong> on gains falling within the basic-rate band and <strong>24%</strong> above it, applying to all chargeable assets since 30 October 2024, with an annual exempt amount of <strong>£3,000</strong> for 2026/27. Because the BADR rate and the lower main rate are now both 18%, the relief is worth nothing at all on gains that would otherwise sit inside your basic-rate band, and up to 6 percentage points on gains above it. Whether your gain sits above the band depends on your other income against the higher-rate threshold, which was £50,270 for 2025/26 and was still current when this page was checked in August 2026.</p>
+
+<p>To qualify on a share sale you generally need to have held, throughout the two years ending with the disposal, at least 5% of the ordinary share capital and 5% of the voting rights together with a 5% economic entitlement, and to have been an officer or employee of a trading company. The conditions sit in TCGA 1992 sections 169H to 169S, and HMRC's reading of them runs from CG63950 in the Capital Gains Manual. Two years is long enough that a recent share reorganisation or a resignation can quietly disqualify you, so check the clock before a process starts.</p>
+
+<h2>Stage Four: Diligence on a Machinery-Heavy Balance Sheet</h2>
+
+<p>Diligence on a manufacturer is longer than on a service business because there is more that can be independently verified, and three items generate most of the price movement.</p>
+
+<p><strong>Environmental condition.</strong> A buyer commissions a Phase 1 survey on any site with production history. Solvents, oils, heavy metals, fuel storage and historic processes all trigger a closer look, and findings turn into a price reduction, a retention out of your proceeds, or an indemnity that keeps you exposed for years after you have gone. Commissioning your own survey before you go to market puts the issue in the price from the start instead of into a renegotiation halfway through.</p>
+
+<p><strong>Plant ownership and condition.</strong> Machines on hire purchase, on lease, or subject to a supplier's retention of title are not yours to sell in the way the balance sheet implies. Reconciling the physical assets on the floor to the register, and the register to the finance agreements, is a job worth doing before a buyer does it for you. Where machinery is financed rather than owned outright, our page on <a href="/blog/business-finance/invoice-finance-for-manufacturing">manufacturing finance</a> covers how those facilities behave.</p>
+
+<p><strong>Property.</strong> If you own the freehold it is frequently the largest single item in the deal, and a buyer may want it, may want to leave it with you and take a lease, or may not want it at all. Where the premises are held inside a <strong>SIPP or SSAS pension scheme</strong> rather than by the company, they sit outside the trading sale entirely and are dealt with separately, commonly by granting the buyer a lease. That is a structural fact about where the asset is, not a recommendation about what to do with your pension, which is regulated advice and a conversation for an authorised adviser.</p>
+
+<h2>Stage Five: Completion Accounts, Where Stock Moves the Final Price</h2>
+
+<p>Most manufacturing deals fix the headline price on assumptions about cash, debt and working capital at completion, then true it up once completion accounts have been prepared and agreed. In a factory the lines that move are stock, work in progress and trade debtors, and they can move by a lot: raw materials bought ahead of a long production run, part-finished assemblies, finished goods awaiting despatch. Buyers hunt for slow-moving and obsolete inventory in this exercise because every pound they write off comes back out of the price.</p>
+
+<p>This is where the policy you wrote in the grooming year earns its keep. A stock valuation applied consistently across the two preceding year ends is difficult to argue with. One that tightened in the year of sale, or loosened, invites a line-by-line challenge you will lose more often than you win. The adjustment itself is not a separate tax event, it simply changes the consideration and therefore the gain, but a £60,000 working capital adjustment is £60,000 less in your hands either way.</p>
+
+<h2>Stage Six: Earn-Outs, and Being Taxed Before You Are Paid</h2>
+
+<p>Where part of the price depends on future performance, you are not simply waiting for money. Under the principle from <em>Marren v Ingles</em>, an unascertainable right to further consideration is itself a chargeable asset, valued at completion and brought into the gain then, so tax can fall due on an amount you have not yet received and might never receive. When the earn-out later pays, the difference between the cash and the value originally placed on the right is a separate gain, and Business Asset Disposal Relief is not automatically available on that second gain in the way it was on the first.</p>
+
+<p>Where the earn-out is satisfied in shares or loan notes rather than cash, different rules can apply and an election may be required to get the treatment you expect. The practical point is that an earn-out clause drafted purely commercially, and shown to a tax adviser afterwards, is the most common way a manufacturing seller ends up with a tax bill they did not model. Get the clause and the tax treatment drafted together, and the time to do that is while heads of terms are still open.</p>
+
+<h2>Stage Seven: After Completion</h2>
+
+<p>The gain is reported through Self Assessment for the tax year of disposal, with payment due by the following 31 January. Where the sale included UK residential property held directly by an individual, that element carries a separate 60-day reporting and payment obligation, which rarely bites on a factory sale but does catch owners who sell an associated house or flat in the same transaction.</p>
+
+<p>If the deal was an asset sale, the company still exists after completion, holding cash and whatever liabilities did not transfer. Getting the cash out is its own project with its own timetable, and the corporation tax on the disposal falls due nine months and one day after the end of the accounting period in which the sale happened, which is often before the liquidation completes. Plan the cash for that payment date rather than assuming the sale proceeds cover it on demand.</p>
+
+<h2>Where the Sequence Usually Goes Wrong</h2>
+
+<p>In our experience the pattern is consistent. Sellers spend heavily on advice at completion, when the structure is fixed and the only remaining questions are drafting ones, and spend nothing at heads of terms, when every question is still open. The worked example above is a £228,000 difference decided in a two-page document that most sellers treat as a formality.</p>
+
+<p>We work with manufacturing owner directors on the grooming year and model the Capital Gains Tax and corporation tax position on both routes before heads of terms are signed, so the number you negotiate against is the one that reaches your bank account. If you want to know which route your business actually suits, and what it is worth doing in the meantime, <a href="/contact">get in touch</a>. For the wider planning framework, see our <a href="/blog/exit-and-capital-gains/business-exit-planning">business exit planning</a> guide, and for the day-to-day accounting side of a factory, our page for <a href="/blog/limited-company-tax/accountants-for-manufacturers">accountants for manufacturers</a>.</p>
+
+<p>This is unregulated exit and succession advice: arranging the sale of a company by way of its shares is exempt under Article 70 of the Regulated Activities Order. We do not arrange, source or introduce the finance that funds a buyout or acquisition, which is regulated credit broking handled by an authorised commercial finance broker, and we do not advise on what to do with sale proceeds, which is regulated investment advice.</p>
 
 <h2>Authoritative Sources</h2>
 
 <ul>
 <li><a href="https://www.gov.uk/business-asset-disposal-relief">gov.uk: Business Asset Disposal Relief</a></li>
 <li><a href="https://www.gov.uk/capital-gains-tax/rates">gov.uk: Capital Gains Tax rates and annual exempt amount</a></li>
+<li><a href="https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax">gov.uk: Corporation Tax rates and allowances</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1992/12">TCGA 1992 (BADR at ss.169H to 169S; CGT rates at s.1H and s.4)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg63950">HMRC Capital Gains Manual CG63950 (Business Asset Disposal Relief)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg67800">HMRC Capital Gains Manual CG67800 (disposals to Employee Ownership Trusts)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1992/12/section/236H">TCGA 1992 s.236H onwards (EOT relief, inserted by Finance Act 2014 Schedule 37)</a></li>
-<li><a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10437/">House of Commons Library CBP-10437: Employee ownership trusts</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca26800">HMRC Capital Allowances Manual CA26800 (fixtures and section 198 elections)</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg14850">HMRC Capital Gains Manual CG14850 (deferred and unascertainable consideration, Marren v Ingles)</a></li>
 </ul>

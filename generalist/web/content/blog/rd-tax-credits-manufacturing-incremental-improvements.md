@@ -1,13 +1,13 @@
 ---
-title: "Can a Manufacturing Company Claim R&D Tax Credits for Incremental Improvements?"
+title: "Does Your Incremental Production Improvement Qualify for R&D Tax Relief?"
 slug: "rd-tax-credits-manufacturing-incremental-improvements"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/rd-tax-credits-manufacturing-incremental-improvements"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
-metaTitle: "R&D Tax Credits for Manufacturing: Incremental Improvements"
-metaDescription: "R&D tax credits aren't just for software. Manufacturing companies doing incremental production line improvements can claim. Here's how."
+metaTitle: "Does an Incremental Factory Improvement Qualify for R&D?"
+metaDescription: "A four-question eligibility test for manufacturers, applied to two Peterborough line changes: one fails, one passes. Merged-scheme credit worked through at 20%."
 altText: "Manufacturing engineer reviewing production line data on a tablet in a UK factory"
 image: "/blog/rd-tax-credits-manufacturing-incremental-improvements.jpg"
 imageCredit:
@@ -15,150 +15,111 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@jefferson-rodrigo-gomes-correa-307185079"
   sourceUrl: "https://www.pexels.com/photo/sparkles-around-working-welder-13528982/"
   source: "Pexels"
-h1: "Can a Manufacturing Company Claim R&D Tax Credits for Incremental Improvements?"
-summary: "R&D tax credits aren't just for software startups and science labs. Manufacturing companies making incremental improvements to production processes, materials, or tooling can qualify. Here's what counts and what doesn't."
+h1: "Does Your Incremental Production Improvement Qualify for R&D Tax Relief?"
+summary: "Four questions decide whether a production change is research and development for tax purposes. Most incremental improvements on a factory floor fail at least one of them. Here is the test, applied to two real-shaped line changes, and the arithmetic on what a project that passes is actually worth."
 schema: ""
 faqs:
-  - question: "What counts as an \"advance in the field\" for a small manufacturing company?"
-    answer: "It means your solution goes beyond what was already known or standard practice in your specific industry sector. If you developed a method for welding a new alloy that no trade publication, supplier, or competitor had documented, that is an advance. It does not have to be new to the world. It has to be new to your field."
-  - question: "Can we claim if we used standard equipment and just experimented with settings?"
-    answer: "Yes. The equipment is not the deciding factor. What matters is whether the experimentation involved technical uncertainty. If you ran multiple trials with different parameters because you did not know which combination would work, and a competent engineer in your sector could not have predicted the outcome, that qualifies."
-  - question: "How far back can we claim for R&D work we already did?"
-    answer: "You can amend corporation tax returns for the last two accounting periods that have been filed. For most companies, that means the current year plus the previous year. If you have been doing qualifying work for longer, you can still claim for the most recent two years. Act quickly because the deadlines are strict."
-  - question: "Do we need formal project documentation to claim?"
-    answer: "No. HMRC accepts contemporaneous records like production logs, emails between engineers, quality control reports, and shift notes. The key is that the records exist and show the technical uncertainty and the work done to resolve it. You do not need to create formal project files after the fact."
+  - question: "Does a small improvement count, or does it have to be a breakthrough?"
+    answer: "Size is not the test and neither is novelty to the world. The test is whether there was a scientific or technological uncertainty that a competent professional in your field could not resolve from published knowledge, and whether the work sought to advance that field rather than only your own position. A small change can clear that bar and a large, expensive change can fail it. Judge each project on the uncertainty, not on the budget."
+  - question: "Our material supplier told us how to fix the problem. Does the work still count?"
+    answer: "No. If the answer was available by asking a supplier, reading a datasheet, buying a standard product or hiring someone who already knew, there was no technological uncertainty to resolve. That is the single most common reason a factory improvement fails the test, and it is worth checking first because it is quick to check."
+  - question: "We were the first company in our sector to do this. Is that an advance?"
+    answer: "Not on its own. Being first to adopt something, first to apply a known method to your own line, or first to reach a commercial result is business novelty, not an advance in science or technology. HMRC looks at whether the underlying knowledge or capability moved forward, not at who got there first commercially."
+  - question: "We pay corporation tax at the 19% small profits rate. Is the credit worth more or less to us?"
+    answer: "Slightly more in net terms, because the expenditure credit is itself taxable income. A 20% credit on £120,000 of qualifying spend is £24,000. Taxed at 19% that is £4,560 of corporation tax on the credit, leaving £19,440. Taxed at the 25% main rate it is £6,000, leaving £18,000. In the £50,000 to £250,000 marginal relief band the effective rate is 26.5%: £24,000 x 26.5% = £6,360, leaving £17,640, which is 14.7% of the qualifying spend. Those rates have applied since 1 April 2023 and were still current when this page was checked in August 2026."
+  - question: "Where is HMRC's own definition of qualifying research and development?"
+    answer: "The statutory definition runs off the guidelines issued by the Department for Science, Innovation and Technology (formerly BEIS), and HMRC's working interpretation sits in its Corporate Intangibles Research and Development manual from CIRD81900 onwards. The gov.uk pages on the merged scheme and on Enhanced R&D Intensive Support carry the current rates and dates. Read the guidelines before you read any adviser's summary of them, including this one."
 keyTakeaways:
-  - "For accounting periods starting on or after 1 April 2024, the merged R&D scheme applies to companies claiming R&D tax relief."
-  - "Loss-making manufacturers spending more than 30% of total costs on R&D can use the Enhanced R&D Intensive Scheme (ERIS), which can pay a higher payable credit."
-  - "At the 20% RDEC rate on £100,000 of qualifying costs, a company paying 25% corporation tax nets roughly £15,000 after the CT charge on the credit."
-  - "A qualifying R&D advance needs to be new to the industry sector, not new to the world, so documented methods copied from trade publications or suppliers do not qualify."
-  - "Claimable manufacturing R&D costs include staff salaries, employer NI and pension contributions, consumables used in testing, software licences and eligible subcontractor costs, but capital equipment is excluded."
-  - "Companies can amend corporation tax returns for the last two accounting periods, so manufacturers who have not yet claimed can still recover costs for qualifying work in those years."
+  - "Four questions decide eligibility: was the outcome genuinely uncertain, was the advance in science or technology rather than in your commercial position, was the work systematic, and was the answer already available by reading, buying or asking."
+  - "Routine production work does not qualify. Retuning a line to published parameters, replacing worn tooling, meeting a standard everyone in the sector already meets, and improving how a product looks are all outside the definition however much they cost."
+  - "For accounting periods beginning on or after 1 April 2024 the merged scheme applies, giving a Research and Development Expenditure Credit at 20% of qualifying spend."
+  - "The credit is taxable, so £120,000 of qualifying spend produces a £24,000 credit and a net £18,000 at the 25% corporation tax main rate, or £19,440 at the 19% small profits rate."
+  - "Loss-making companies whose qualifying spend is at least 30% of total relevant expenditure may instead fall within Enhanced R&D Intensive Support, on the same 1 April 2024 start date."
+  - "A project that fails the test does not become eligible because the paperwork is written well. Decide eligibility first, and only then look at how a claim is made."
 ---
 
-<p>If you run a manufacturing business in the UK and your team spends time tweaking production lines, testing new materials, or improving tooling to make things faster or better, you might be sitting on a legitimate R&D tax credit claim. The misconception that R&D credits are only for pharmaceutical labs or software developers is costing manufacturers real money.</p>
+<p>Ines runs a plastics extrusion plant on an industrial estate outside Peterborough. Last year her team spent four months getting a recycled-content blend to run without cracking, and eight weeks fitting a faster die that lifted throughput. Both felt like hard work. Only one of them is research and development for tax purposes.</p>
 
-<p>We see manufacturing clients claim successfully for work that looks like day-to-day problem solving. The key is understanding where routine troubleshooting ends and qualifying R&D begins. This article explains exactly where that line sits for a manufacturing company doing incremental improvement work.</p>
+<p>Four questions separate them. Apply all four to a single project, in order, and answer honestly. A no at any point ends it, and on a factory floor most projects end at question one or question four.</p>
 
-<h2>What Actually Qualifies as R&D in Manufacturing?</h2>
+<h2>Question One: Was the Outcome Genuinely Uncertain to a Competent Engineer?</h2>
 
-<p>HMRC's definition of R&D for tax purposes is broader than most business owners assume. The test is not whether you invented something world-changing. The test is whether your project sought to resolve a scientific or technological uncertainty that a competent professional in your field could not readily resolve.</p>
+<p>Not uncertain to you. Uncertain to a competent professional working in your field, holding the knowledge that is publicly available in it.</p>
 
-<p>For a manufacturing company, that means you need to show that you were trying to achieve an advance in your field, not just a commercial improvement for your own business. But here is the critical detail. An advance in your field can be specific to your industry sector. If you are a precision engineering firm in Sheffield developing a new method for machining a particular alloy, and no one in your sector has solved that problem before, that is an advance in your field.</p>
+<p>That is a harder test than it sounds, because engineers are used to describing anything unfinished as uncertain. The question is whether the outcome could have been predicted. If an experienced process engineer, given your constraints and the published literature, would have known which approach would work and roughly what result it would produce, there was no technological uncertainty. Difficulty is not uncertainty. Cost is not uncertainty. A tight deadline is not uncertainty.</p>
 
-<p>The advance does not have to be global. It has to be new to your industry, not new to you personally. If you copied a method from a trade journal or a supplier, that is not R&D. If you worked through multiple iterations, testing and failing, to arrive at a solution that does not exist in the public domain, that likely is R&D.</p>
+<p>Genuine technological uncertainty on a production line usually looks like an absence of data: a material with no published processing window at the temperature you need, an interaction between two process steps that nobody has characterised, a tolerance nobody in the sector has held on that geometry. If you can point at what was not known and by whom, you are on solid ground. If the honest answer is "we knew it would work, we just had to do it", stop here.</p>
 
-<h2>Why Competitors Overlook Production Line Tweaks</h2>
+<h2>Question Two: Is the Advance in Science or Technology, or Only in Your Own Business?</h2>
 
-<p>The accounting and advisory firms that dominate R&D marketing tend to focus on software and life sciences. Those sectors produce clean, documentable projects with clear technical uncertainties. Manufacturing improvements are messier. They happen on the shop floor, documented in maintenance logs and shift notes, not in formal project files.</p>
+<p>The advance has to be in the field, meaning the state of knowledge or capability that competent professionals in your sector share. An improvement that only moves your business forward is a commercial gain, and commercial gain is not what the relief is for.</p>
 
-<p>This is where an <strong>r&d tax credit specialist</strong> who understands manufacturing makes the difference. A generalist accountant might look at your production line improvements and see routine maintenance or operational efficiency. A specialist sees a series of technical projects that each potentially qualify for relief.</p>
+<p>This is where the majority of manufacturing projects that pass question one still fail. Catching up with what your competitors already do is not an advance. Bringing in-house a process that specialist subcontractors have run for a decade is not an advance. Being first in your sector to buy a machine is not an advance, and neither is being first to sell the resulting product. Aesthetics, packaging, branding and market fit sit outside the definition entirely, and so does work whose only novelty is that it is new to you.</p>
 
-<p>Consider a concrete example. A manufacturer of automotive components in Birmingham was struggling with surface finish defects on a new aluminium alloy. The standard machining parameters produced unacceptable scrap rates. Over six months, the production engineer tested 14 different combinations of spindle speed, feed rate, coolant pressure, and tool geometry. The solution they eventually found is now used across their entire product line. Their previous accountant told them this was just process optimisation. An R&D specialist identified three distinct qualifying projects within that work.</p>
+<p>A useful phrasing: could you write two sentences explaining what competent professionals in your field could not do before, and what they can do now? If those two sentences only describe your own factory, the answer to question two is no.</p>
 
-<h2>The Three Tests Your Manufacturing Project Must Pass</h2>
+<h2>Question Three: Was the Work Systematic?</h2>
 
-<p>HMRC applies three tests to every R&D claim. If your project passes all three, the costs qualify. If it fails any one, it does not.</p>
+<p>Relief attaches to work that sought to resolve the uncertainty, not to the fact that the uncertainty existed. That means a structured attempt: a hypothesis about what might work, trials designed to test it, results recorded, and the next trial informed by the last.</p>
 
-<h3>1. Was there a technical uncertainty?</h3>
+<p>Trial and error qualifies when it is systematic. Changing one variable at a time across a planned matrix is systematic. Twisting dials until the parts stop failing and then moving on is not, and it also leaves nothing behind to demonstrate later. The work does not need a project file, a stage-gate process or a named research team. It needs to have been done deliberately, and it needs some contemporaneous trace, which on most sites already exists in production logs, quality reports and dated emails between engineers.</p>
 
-<p>You must have been unable to determine the solution using standard practice. If you knew what to do but just had not done it yet, that is not R&D. If you tried something and it did not work, and you did not know why, that is a technical uncertainty.</p>
+<h2>Question Four: Was the Answer Available by Reading, Buying or Asking?</h2>
 
-<p>Examples of technical uncertainty in manufacturing:</p>
-<ul>
-<li>You cannot achieve required tolerances with existing tooling and do not know which alternative will work.</li>
-<li>A new material behaves unpredictably under heat treatment and standard reference sources offer no guidance.</li>
-<li>Your automation system produces intermittent faults that cannot be diagnosed using standard diagnostic procedures.</li>
-</ul>
+<p>Run this last, because it is the one that reopens a project you had already talked yourself into.</p>
 
-<h3>2. Was there an attempt to overcome that uncertainty?</h3>
+<p>If the solution was in a datasheet, a published standard, a trade journal, a supplier's application note, a machine manufacturer's manual, or the head of a consultant you could have hired, then it was deducible from existing knowledge and there was no uncertainty to resolve. The relief does not follow effort spent rediscovering something. It follows work that had to happen because the knowledge was not there to be had.</p>
 
-<p>You need to show that you actively worked on the problem. This means records of trials, test results, design iterations, or computational modelling. It does not require formal project documentation. Emails between engineers, production logs, and quality control reports all count.</p>
+<p>Ask the supplier before you decide. It is an uncomfortable call to make and it is the cheapest possible way to find out that a project does not qualify.</p>
 
-<h3>3. Did the work constitute an advance in your field?</h3>
+<h2>Two Peterborough Line Changes: One Fails, One Passes</h2>
 
-<p>This is where many manufacturing claims fall down, not because the work was not an advance, but because the company cannot articulate why it was an advance. You need to explain what was already known in your industry and why your solution goes beyond that.</p>
+<p><strong>The die replacement fails.</strong> Ines fitted a new die profile recommended by the tooling supplier, ran it at the supplier's stated pressure and temperature range, and lifted throughput by roughly 8%. Question one: the supplier predicted the outcome, so there was no uncertainty. Question four confirms it, because the answer arrived in an application note. The eight weeks of work were real and the throughput gain is real. Neither makes it research and development. This is ordinary production improvement, and it is where most factory projects land.</p>
 
-<p>If you developed a new welding technique that reduces distortion in thin-gauge stainless steel, and that technique is not described in any published standard or trade literature, you have an advance in your field. The fact that your competitors could replicate it once you showed them is irrelevant. The advance is the discovery, not the commercialisation.</p>
+<p><strong>The recycled blend passes, on its facts.</strong> A customer specified a minimum recycled content that no published processing window covered for that polymer family at the wall thickness required. Parts cracked at the weld line under conditions the material data did not explain. The supplier confirmed it had no parameters to offer. Over four months the team ran a planned series of trials across melt temperature, screw speed and cooling profile, recorded each run, and characterised the interaction that was causing the failure. Question one passes because nobody knew whether it could be run at all. Question two passes because the capability now exists in the field rather than only in the plant. Question three passes because the trials were designed and logged. Question four passes because there was nothing to read or buy.</p>
 
-<h2>What Manufacturing Costs Can You Claim?</h2>
+<p>Note how narrow the passing case is. That is not caution for its own sake. The definition is genuinely narrow, and any page implying that a typical factory year contains several qualifying projects is describing a different test from the one HMRC applies.</p>
 
-<p>If your project qualifies, you can claim relief on the following costs:</p>
+<h2>What the Test Rules Out</h2>
+
+<p>Stated plainly, because a page that never says no to anything is not an eligibility test:</p>
 
 <ul>
-<li><strong>Staff costs:</strong> Salaries, employer NI, and pension contributions for employees directly involved in the R&D. This includes production engineers, technicians, and supervisors who spend time on qualifying projects. You apportion their time based on actual hours worked on R&D.</li>
-<li><strong>Consumables:</strong> Materials used up or transformed in the R&D process. If you ran 200 test batches of a new polymer blend and scrapped them, the raw material cost is claimable. If you produced saleable goods during the testing, you must deduct the sale proceeds.</li>
-<li><strong>Software:</strong> Licences for CAD, simulation, or analysis software used directly in the R&D.</li>
-<li><strong>Subcontractors:</strong> If you paid an external specialist to help resolve the technical uncertainty, their costs can be claimable. The rules differ depending on whether the subcontractor is connected to your company.</li>
-<li><strong>Externally provided workers:</strong> Agency staff working under your direction on qualifying projects.</li>
+<li>Retuning a line to parameters the equipment maker publishes.</li>
+<li>Replacing worn tooling, bearings or dies with better ones off the shelf.</li>
+<li>Scaling up a process you already know works, at a bigger volume.</li>
+<li>Meeting a standard, certification or customer specification that others in your sector already meet routinely.</li>
+<li>Improving appearance, finish quality or packaging without a technological problem underneath.</li>
+<li>Cost reduction achieved by buying differently, negotiating differently or reorganising labour.</li>
+<li>Routine quality control, calibration and inspection.</li>
+<li>Software configuration where the vendor supports the configuration you used.</li>
 </ul>
 
-<p>You cannot claim for capital equipment, land, or routine production costs. If you bought a new CNC machine to produce the parts, the machine itself is not claimable, but the consumables used in the test runs are.</p>
+<p>Any of these can consume a year of engineering time and still sit outside the relief entirely.</p>
 
-<h2>Common Manufacturing R&D Projects That Qualify</h2>
+<h2>What a Passing Project Is Worth</h2>
 
-<p>Based on claims we have prepared for manufacturing clients across the UK, these project types frequently qualify:</p>
+<p>For accounting periods beginning on or after 1 April 2024, one merged scheme applies to companies of all sizes. It gives a Research and Development Expenditure Credit, usually shortened to RDEC, at <strong>20% of qualifying expenditure</strong>. The credit is taxable income, which is why the headline rate and the money that reaches you are different numbers.</p>
+
+<p>Take the recycled blend project. Suppose the qualifying spend across the four months came to £86,000 of staff cost (salary, employer National Insurance contributions and pension for the time actually spent on the trials) plus £34,000 of material consumed in testing and scrapped. That is <strong>£120,000</strong> of qualifying expenditure.</p>
 
 <ul>
-<li><strong>New material formulation:</strong> Developing a new composite, alloy, or coating with specific properties not available from standard suppliers.</li>
-<li><strong>Process automation:</strong> Designing and programming bespoke automation systems where off-the-shelf solutions cannot achieve the required precision or throughput.</li>
-<li><strong>Tooling development:</strong> Creating custom jigs, fixtures, or cutting tools to handle non-standard geometries or materials.</li>
-<li><strong>Waste reduction:</strong> Developing processes to reduce scrap rates where the cause of waste is technically uncertain.</li>
-<li><strong>Energy efficiency:</strong> Designing heat recovery or process optimisation systems that go beyond standard engineering practice.</li>
-<li><strong>Quality improvement:</strong> Developing inspection or testing methods that detect defects standard methods miss.</li>
+<li>Expenditure credit: £120,000 × 20% = <strong>£24,000</strong>.</li>
+<li>The credit is taxed. At the corporation tax main rate of 25%: £24,000 × 25% = £6,000, leaving <strong>£18,000</strong>, which is 15% of the qualifying spend.</li>
+<li>At the small profits rate of 19%: £24,000 × 19% = £4,560, leaving <strong>£19,440</strong>, which is 16.2% of the qualifying spend.</li>
+<li>In the £50,000 to £250,000 marginal relief band the effective rate is 26.5%: £24,000 × 26.5% = £6,360, leaving <strong>£17,640</strong>, which is 14.7% of the qualifying spend.</li>
 </ul>
 
-<p>Each of these needs to be assessed individually. A project to reduce energy consumption by installing a more efficient motor is not R&D. A project to develop a novel heat recovery system that uses waste heat to preheat feedstock at temperatures no existing system can achieve is R&D.</p>
+<p>The 25% main rate and the 19% small profits rate have applied since 1 April 2023 and were still current when this page was checked in August 2026. Whether the net amount reduces a corporation tax bill or is paid over in cash depends on the company's position and the order in which the credit is set against liabilities.</p>
 
-<h2>The Documentation You Need</h2>
+<p>A separate route exists for loss-making companies that spend heavily on research: <strong>Enhanced R&D Intensive Support</strong>, or ERIS, where qualifying expenditure is at least <strong>30%</strong> of total relevant expenditure. It runs from the same start date, accounting periods beginning on or after 1 April 2024. It is a different calculation from the one above and does not change any of the four eligibility questions.</p>
 
-<p>HMRC does not require a specific format for R&D documentation. But they will ask questions if your claim looks high relative to your turnover or if the technical narrative is vague. The single best thing you can do is keep contemporaneous records of your technical work.</p>
+<p>Capital equipment does not enter this arithmetic. The extruder itself is plant and machinery, dealt with through capital allowances, not through research and development relief.</p>
 
-<p>For a manufacturing company, that means:</p>
-<ul>
-<li>Production logs showing test runs and their outcomes.</li>
-<li>Email chains between engineers discussing technical problems and proposed solutions.</li>
-<li>Design drawings marked up with revisions and reasons for changes.</li>
-<li>Quality control reports showing defect analysis and corrective actions.</li>
-<li>Minutes of team meetings where technical problems were discussed.</li>
-</ul>
+<h2>Where This Page Stops</h2>
 
-<p>You do not need to create new documents. You need to preserve what you already generate. The mistake most manufacturers make is throwing away test records once the problem is solved. Keep them. They are evidence of R&D.</p>
+<p>Everything above is about whether a project qualifies. Nothing above is about how a claim is made, what forms exist, when they are due or what HMRC asks for. Those are separate questions and they only matter once the answer here is yes.</p>
 
-<h2>How an R&D Tax Credit Specialist Helps</h2>
+<p>Our companion page on <a href="/blog/randd-tax-credits/r-and-d-tax-credit-specialist-manufacturing-incremental-improvements">what an R&D claim actually involves for a manufacturing company</a> covers the forms, the deadlines and the evidence, and says who does the work. If you are searching for R&D tax credits for manufacturers and want the mechanics rather than the eligibility rule, start there instead.</p>
 
-<p>A specialist does two things a generalist cannot. First, they identify qualifying projects that look like routine work to an untrained eye. Second, they prepare the technical narrative in language HMRC will accept.</p>
-
-<p>HMRC's R&D inspectors are not manufacturing engineers. They need to understand why your work was technically uncertain and why your solution was an advance. A good <strong>r&d tax credit specialist</strong> translates your engineering language into the framework HMRC uses. They ask the right questions: What did you try? Why did it fail? What did the industry know before you started? What did you discover?</p>
-
-<p>At Holloway Davies, our <a href="/r-and-d-credits">R&D tax credit service</a> is built around exactly this kind of technical assessment. We work with manufacturing clients across the UK, from a 4-person precision engineering shop in the Jewellery Quarter in Birmingham to a 50-employee fabrication company in the Northern Quarter in Manchester. The size does not matter. What matters is whether the work qualifies.</p>
-
-<p>We also handle the corporation tax computation side. The claim is submitted through your CT600 (corporation tax return) using the relevant boxes. For accounting periods starting on or after 1 April 2024, the merged R&D scheme applies. Loss-making companies that spend more than 30% of their total costs on R&D can use the enhanced R&D Intensive Scheme (ERIS). Profitable companies claim a payable credit or reduced corporation tax liability depending on their circumstances.</p>
-
-<h2>The Cost of Not Claiming</h2>
-
-<p>Consider a manufacturing company with £80,000 of qualifying R&D staff costs and £20,000 of consumables. Under the current rules, that company can claim a payable tax credit or reduce its corporation tax liability significantly. For a profitable company paying 25% corporation tax, the RDEC credit is £20,000 (20% of qualifying costs), and after the CT charge on that credit at 25%, the net benefit is roughly £15,000. For a loss-making intensive company, the payable credit can be even higher.</p>
-
-<p>If you have been doing this work for three years and not claimed, you have potentially left £45,000 on the table. You can amend previous corporation tax returns going back up to two years from the end of each accounting period. For the current year, you include the claim in your return.</p>
-
-<h2>Common Misconceptions</h2>
-
-<p>Let me address the objections we hear most often from manufacturing directors.</p>
-
-<p><strong>"We didn't invent anything new."</strong> You do not need to invent. You need to resolve a technical uncertainty. If you solved a problem your industry had not solved before, that is enough.</p>
-
-<p><strong>"It was just trial and error."</strong> Trial and error is a valid R&D methodology. HMRC recognises systematic experimentation as qualifying activity. The key is that you were testing hypotheses, not guessing randomly.</p>
-
-<p><strong>"We used standard equipment."</strong> The equipment is irrelevant. What matters is what you did with it. Using a standard CNC machine to develop a non-standard machining process is R&D.</p>
-
-<p><strong>"Our accountant said we don't qualify."</strong> Many general practice accountants are not familiar with manufacturing R&D. They see process improvement and assume it is routine. If your accountant does not have an <strong>r&d tax credit specialist</strong> on their team, get a second opinion from someone who does.</p>
-
-<h2>Next Steps</h2>
-
-<p>If you think your manufacturing company might have qualifying R&D projects, the first step is a review of your technical work over the last two to three years. Pull together your production logs, project notes, and any records of testing or experimentation. If you have a list of problems your team solved that involved uncertainty and experimentation, you have a starting point.</p>
-
-<p>Our team at Holloway Davies offers an initial R&D review where we assess your projects against HMRC's criteria. We do not charge for the review. If we see qualifying work, we will prepare the claim on a no-claim-no-fee basis. If we do not see qualifying work, we will tell you honestly and explain why.</p>
-
-<p>You can read more about <a href="/fundamentals">how R&D tax credits work</a> on our site, or <a href="/contact">contact us directly</a> to start the review process. If your manufacturing company is based in or around <a href="/locations">our locations</a>, we can visit your site to review the work in person.</p>
-
-<p>Do not let the misconception that R&D is only for labs and coders cost your business money. If your team is advancing what is possible in your field, the relief is there for you to claim.</p>
+<p>Holloway Davies does not prepare or process research and development claims and does not act as a claim agent. What we do is ordinary company accounting and corporation tax work, which includes telling you when a project you were told to claim for does not meet the definition. If you want a second reading of your corporation tax position, <a href="/contact">get in touch</a>. Related reading: <a href="/blog/business-finance/invoice-finance-for-manufacturing">invoice finance for manufacturing</a> and <a href="/blog/exit-and-capital-gains/how-to-sell-a-manufacturing-business">selling a manufacturing business</a>.</p>

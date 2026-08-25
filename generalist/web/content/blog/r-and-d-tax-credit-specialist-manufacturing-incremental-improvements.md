@@ -1,13 +1,13 @@
 ---
-title: "Can a Manufacturing Company Claim R&D Tax Credits for Incremental Production Improvements?"
+title: "How an R&D Tax Relief Claim Works for a Manufacturing Company"
 slug: "r-and-d-tax-credit-specialist-manufacturing-incremental-improvements"
 canonical: "https://www.hollowaydavies.co.uk/blog/randd-tax-credits/r-and-d-tax-credit-specialist-manufacturing-incremental-improvements"
 date: "2026-05-17"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "R&D Tax Credits"
-metaTitle: "R&D Tax Credit Specialist for Manufacturing: Incremental"
-metaDescription: "Yes, routine production line tweaks can qualify. Our R&D tax credit specialist team explains what counts, what doesn't, and how to structure a claim."
+metaTitle: "R&D Claim Process for Manufacturers: Forms and Deadlines"
+metaDescription: "What an R&D claim involves once a production project qualifies: notification, the information form, the cost schedule, records and compliance checks."
 altText: "R&D tax credit specialist reviewing manufacturing production line improvements with factory engineer"
 image: "/blog/r-and-d-tax-credit-specialist-manufacturing-incremental-improvements.jpg"
 imageCredit:
@@ -15,151 +15,113 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@jefferson-rodrigo-gomes-correa-307185079"
   sourceUrl: "https://www.pexels.com/photo/sparkles-around-working-welder-13528982/"
   source: "Pexels"
-h1: "Can a Manufacturing Company Claim R&D Tax Credits for Incremental Production Improvements?"
-summary: "Many manufacturers assume R&D credits are only for radical breakthroughs. But the rules cover incremental improvements that advance the field. Here is what qualifies and how to claim."
+h1: "How an R&D Tax Relief Claim Works for a Manufacturing Company"
+summary: "Assume a production project already meets the definition. This page covers what happens next: the notification and information forms, how the cost schedule is built out of payroll and the purchase ledger, what records a factory already holds, what a compliance check involves, and what the merged scheme changed."
 schema: ""
 faqs:
-  - question: "What counts as a technical uncertainty in manufacturing R&D?"
-    answer: "A technical uncertainty exists when a competent professional in your field could not know, at the outset, whether your proposed approach would work, or how to make it work within your constraints. For manufacturing, this often involves material behaviour, process parameters, or tooling performance that cannot be predicted from published knowledge."
-  - question: "Can we claim for work that used standard machinery?"
-    answer: "Yes. Using standard equipment to solve a non-standard problem can qualify. The advance is in how you use the equipment, not the equipment itself. For example, modifying cutting parameters on a standard CNC machine to machine a new alloy with no published data qualifies, because the solution required systematic testing."
-  - question: "What costs can we include in an R&D claim for manufacturing?"
-    answer: "Qualifying costs include staff salaries (with employer NI and pension) for time spent on R&D, materials consumed in testing, subcontractor costs for R&D work (subject to limits), and software licences used directly in the R&D. Exclude routine production costs, selling costs, and capital expenditure on plant and machinery."
-  - question: "What if our R&D project failed and we never achieved the improvement?"
-    answer: "Failed projects can still qualify. R&D includes unsuccessful work. If you systematically investigated a technical uncertainty and it did not work out, the work may still be qualifying R&D. The key is that you attempted to resolve a genuine uncertainty through a structured process."
+  - question: "Which forms does a research and development claim need?"
+    answer: "The claim itself is made in the company tax return, the CT600, with the supporting pages. Two additional forms sit around it. An additional information form must reach HMRC before or on the same day as the return, and without it HMRC removes the claim from the return. A separate claim notification form applies to some companies for accounting periods beginning on or after 1 April 2023, with a much earlier deadline, and companies that have claimed recently may be outside it. Check the current gov.uk notification page against your own claim history before assuming either way."
+  - question: "How far back can a company go?"
+    answer: "A company tax return can normally be amended up to 12 months after its statutory filing date, and the filing date is normally 12 months after the end of the accounting period. That gives roughly two years from the period end. The notification requirement can close the door earlier than the amendment window does, which is the trap: an amendment made in time is still refused if the earlier notification was missed."
+  - question: "What records does HMRC expect a factory to have?"
+    answer: "Contemporaneous ones, not reconstructed ones. Production and trial logs, dated quality reports, marked-up drawings with the reason for the revision, emails between engineers describing what failed, purchase orders for trial material, and timesheets or shift records showing who worked on what. HMRC does not prescribe a format. It does distinguish between records written at the time and a narrative assembled afterwards."
+  - question: "What does the merged scheme change for a manufacturer?"
+    answer: "For accounting periods beginning on or after 1 April 2024, one scheme applies to companies of all sizes, giving a Research and Development Expenditure Credit at 20% of qualifying expenditure, taxable as income. Loss-making companies whose qualifying spend is at least 30% of total relevant expenditure may instead fall within Enhanced R&D Intensive Support. Periods straddling that start date follow the old rules until the new period begins, so two adjacent years can be computed differently."
+  - question: "Who should prepare the claim?"
+    answer: "Whoever is willing to say no. The technical content has to come from the engineers who did the work, and the tax computation has to come from whoever prepares the company's corporation tax return, so the two sit close together. Holloway Davies does not prepare or process research and development claims and does not act as a claim agent, so this is a description of the process and not an offer to run it."
 keyTakeaways:
-  - "Incremental manufacturing improvements qualify as R&D when they resolve a technical uncertainty that a competent professional in the field could not have predicted at the outset."
-  - "HMRC's internal manuals (CIRD81900 and CIRD82000) confirm that an advance can be small, incremental, and achieved through trial and error."
-  - "Under the merged R&D scheme (post-1 April 2024), profitable companies receive a 20% above-the-line expenditure credit, yielding a net saving of approximately 15% to 16% of qualifying R&D spend."
-  - "A manufacturing company spending £100,000 on qualifying R&D can expect a corporation tax saving of roughly £15,000 to £16,000."
-  - "Failed projects can still qualify as R&D if the company systematically investigated a genuine technical uncertainty, even when the intended improvement was never achieved."
-  - "The R&D additional information form (AIF) must be submitted within 12 months of the company's year end alongside the CT600 corporation tax return."
+  - "Eligibility is decided before any of this. A well-written claim does not rescue a project that fails the definition."
+  - "The claim is made in the CT600 company tax return, but an additional information form must reach HMRC before or on the same day, or the claim is removed from the return."
+  - "A claim notification form applies to some companies for accounting periods beginning on or after 1 April 2023, and its deadline falls long before the return is due."
+  - "For a 31 March 2026 year end, the return is due 31 March 2027 and the amendment window closes 31 March 2028, while any notification deadline falls in 2026."
+  - "The cost schedule is built from payroll and the purchase ledger, apportioned by time actually spent, and capital spend on plant belongs in capital allowances instead."
+  - "For accounting periods beginning on or after 1 April 2024 the merged scheme gives a 20% expenditure credit, with Enhanced R&D Intensive Support available at a 30% intensity threshold for loss-making companies."
 howToSteps:
-  - name: "Identify qualifying projects"
-    text: "Review the last two accounting periods for any project where a technical uncertainty took sustained, systematic testing to resolve, including new processes, new materials, or significant improvements."
-  - name: "Gather evidence"
-    text: "Collect design notes, test records, emails discussing technical problems, and purchase orders for trial materials to demonstrate both the uncertainty and the systematic work undertaken to resolve it."
-  - name: "Quantify the costs"
-    text: "Qualifying costs include staff salaries (with employer NI and pension contributions) for R&D time, materials consumed in testing, subcontractor costs for R&D work (subject to limits), and software licences used directly in the R&D."
-  - name: "Prepare the technical narrative"
-    text: "Set out what the technical uncertainty was, why it could not be resolved using standard knowledge, what systematic work was carried out, and what advance was achieved (or attempted, for failed projects)."
-  - name: "Submit the claim"
-    text: "For accounting periods starting on or after 1 April 2024, submit via the CT600 corporation tax return and the additional information form (R&D AIF), which must be filed within 12 months of the company's year end."
+  - name: "Fix the accounting period and check the notification position"
+    text: "Identify the accounting period the work falls in, then check whether a claim notification form is required for that period and whether its deadline has already passed. This is done first because it can close the claim before anything else matters."
+  - name: "Build the cost schedule from payroll and the purchase ledger"
+    text: "Pull staff cost for the time actually spent on qualifying work, including employer National Insurance contributions and pension, then materials consumed and scrapped in testing, directly used software, and externally provided workers or subcontracted work under the applicable rules. Exclude capital equipment, production costs and selling costs."
+  - name: "Assemble the contemporaneous records"
+    text: "Collect trial logs, dated quality reports, marked-up drawings, engineer emails and purchase orders for trial material. Preserve what already exists rather than writing new documents after the event."
+  - name: "Write the technical account from the engineers' words"
+    text: "Set out what was not known at the outset, why published knowledge did not answer it, what was tried in what order, and what the field can now do that it could not before. The engineer who ran the trials supplies the substance."
+  - name: "File the additional information form, then the return"
+    text: "Submit the additional information form before or on the same day as the CT600, and keep the filing receipt. A claim submitted without the form is removed from the return."
 ---
 
-<p>If you run a manufacturing company in the UK, you have probably heard about R&D tax credits. You may have dismissed them because your work is not like the pharmaceutical labs or software startups you read about. You are making incremental improvements to production processes, not inventing a new class of drugs.</p>
+<p>A production project has been tested against the definition and it qualifies. Everything from that point is administration, and the administration has a shape worth knowing before you start, because two of its steps are timed and one of them can close a claim that would otherwise have been perfectly good.</p>
 
-<p>That assumption costs manufacturing businesses millions in unclaimed tax relief every year. The reality is that the UK's R&D tax credit rules explicitly cover incremental improvements to production methods, materials, and processes. You do not need a breakthrough. You need to have resolved a technical uncertainty that a competent professional in your field could not easily work out.</p>
+<p>What follows assumes the eligibility question is settled. If it is not, settle it first, because nothing on this page improves a project that does not meet the test.</p>
 
-<p>Working with manufacturers across the UK, we see claims succeed for businesses that made what they thought were routine production line tweaks. The key is understanding where the line falls between standard development work and qualifying R&D. This article explains that line, with real manufacturing examples.</p>
+<h2>The Dates Come Before the Substance</h2>
 
-<h2>What the Rules Actually Say</h2>
-
-<p>The HMRC guidelines for R&D tax credits define qualifying activity as work that seeks an advance in science or technology. That advance must be in the field of your business, not just an advance for your company. But the bar is not as high as many directors assume.</p>
-
-<p>HMRC's internal manuals (CIRD81900 and CIRD82000) make clear that an advance can be small, incremental, and achieved through trial and error. The advance must resolve a scientific or technological uncertainty. That uncertainty exists when a competent professional working in your field could not know, at the outset, whether your proposed approach would work, or how to make it work within cost or performance constraints.</p>
-
-<p>For a manufacturing business, this means:</p>
+<p>Work out the accounting period the qualifying work falls into, and then work out the dates, before anyone starts writing anything. Take a company with a <strong>31 March 2026 year end</strong>, a period that began on 1 April 2025 and therefore sits inside the merged scheme.</p>
 
 <ul>
-<li>Designing a new production process because existing methods cannot achieve the required tolerances</li>
-<li>Adapting standard machinery to handle a new material that behaves differently under heat or pressure</li>
-<li>Developing a new quality testing method because off-the-shelf inspection equipment cannot detect the defect you need to eliminate</li>
-<li>Modifying a production line to reduce waste while maintaining throughput, when the standard engineering knowledge does not tell you whether the change will work</li>
+<li>Company tax return due: <strong>31 March 2027</strong>, being 12 months after the end of the accounting period.</li>
+<li>Amendment window closes: <strong>31 March 2028</strong>, being 12 months after that filing date. A claim made by amendment has to land inside this.</li>
+<li>Any claim notification deadline: <strong>during 2026</strong>, six months after the end of the period of account, so 30 September 2026 for this company.</li>
 </ul>
 
-<p>Each of these examples involves a technical uncertainty that required systematic investigation to resolve. That is the core of a valid R&D claim.</p>
+<p>The notification date is roughly eighteen months earlier than the amendment date. That gap is where claims die. A company that discovers in early 2028 that it should have claimed for the year to March 2026 is inside the amendment window and may still be refused, because the earlier step was missed and it cannot be taken late.</p>
 
-<h2>Where Manufacturers Go Wrong</h2>
+<h2>The Claim Notification Form, and Who It Catches</h2>
 
-<p>The most common mistake we see is self-exclusion. A director tells us: "We just tweaked the line. We didn't invent anything."</p>
+<p>For accounting periods beginning on or after 1 April 2023, HMRC requires some companies to notify it in advance that a research and development claim is coming. The form is short and it is not the claim. It records the period, the company, the contact who will handle the claim and a summary of the planned work.</p>
 
-<p>But that tweak may have taken six months of iterative testing. You may have tried seven different temperature profiles, three different tooling materials, and two different coolant formulations before you found a combination that stopped the parts cracking. A competent manufacturing engineer could not have predicted the solution at the start. That is qualifying R&D.</p>
+<p>Companies with a recent claim history can fall outside the requirement, and the rule that decides this is drafted narrowly, by reference to when earlier claims were actually made rather than to which years they covered. It is genuinely easy to get wrong from memory. Check the current gov.uk claim notification guidance against your own filing history, in writing, and keep the answer with the working papers. Assuming exemption because "we claimed last year" is the version of this that fails.</p>
 
-<p>The second mistake is poor record keeping. HMRC expects to see evidence of the uncertainty and the systematic work undertaken to resolve it. If you have no project notes, no test records, no design iterations documented, your claim will struggle. An <a href="/r-and-d-credits">R&D tax credit specialist</a> can help you structure the narrative, but the underlying records need to exist.</p>
+<h2>Building the Cost Schedule Out of Payroll and the Purchase Ledger</h2>
 
-<p>The third mistake is confusing routine development with R&D. If you are simply applying known techniques to a standard problem, that is not R&D. For example, buying a standard CNC machine and using it in the way the manufacturer specifies does not qualify. But modifying that machine to cut a new alloy that no one has machined before, with no published cutting parameters, likely does.</p>
+<p>The schedule is an accounting exercise sitting on two systems you already run.</p>
 
-<h2>Real Manufacturing Examples That Qualify</h2>
+<p>From <strong>payroll</strong>: gross salary, employer National Insurance contributions and employer pension for the people who did the work, apportioned by the time actually spent on the qualifying project. Apportionment is the part HMRC probes. A process engineer who spent one day a week on trials for four months is a defensible fraction supported by shift records. A flat 30% of the engineering department applied across a year is not, and it invites the enquiry it deserves.</p>
 
-<p>Let us look at three scenarios that our team has seen succeed. Names and identifying details are changed, but the technical substance is real.</p>
+<p>From the <strong>purchase ledger</strong>: material consumed and transformed in testing, including scrapped output from trial runs. Where trial output was sold, the proceeds come off. Software licences used directly in the work. Externally provided workers and subcontracted work go in under their own rules, which differ depending on connection between the parties and on the arrangements in place for the period, so identify those contracts early rather than at the end.</p>
 
-<h3>Example 1: A Birmingham precision engineering company</h3>
+<p>Out entirely: capital spend on plant and machinery, production overheads, rent, rates, distribution and anything to do with selling the resulting product. A new machine bought to run the process belongs in capital allowances, and that is a different computation with different rates and its own timing.</p>
 
-<p>This business machines components for aerospace clients. They won a contract to produce a part from a new nickel-based superalloy. Standard carbide tooling wore out after 12 parts, making the job uneconomical. The company spent eight months testing different tool coatings, cutting speeds, feed rates, and coolant formulations. They eventually developed a proprietary tool path strategy and a specific coating combination that extended tool life to 200 parts.</p>
+<h2>What Records a Factory Already Holds</h2>
 
-<p>No textbook told them the answer. The alloy supplier could not provide machining parameters. The company resolved a genuine technical uncertainty through systematic testing. The project qualified as R&D. The claim covered staff time, materials consumed in testing, and a portion of the subcontractor costs for specialist coating trials.</p>
-
-<h3>Example 2: A Manchester packaging manufacturer</h3>
-
-<p>This business makes bespoke cardboard packaging for ecommerce clients. They needed to produce a box that could withstand a 30kg load while using 20% less material than their standard grade. Standard corrugated board collapsed under the load. They tested 14 different flute profiles, three different linerboard grades, and five different adhesive formulations. They built a custom compression testing rig because off-the-shelf testers could not simulate the real-world stacking conditions.</p>
-
-<p>The final design used a non-standard flute geometry combined with a specific adhesive pattern. The company had not seen this combination used anywhere in the packaging industry. The work qualified because the solution was not obvious to a competent packaging engineer at the outset.</p>
-
-<h3>Example 3: A Sheffield metal finishing company</h3>
-
-<p>This business applies protective coatings to steel components. A client required a coating that could withstand 1,000 hours of salt spray testing, double the industry standard. The company tried 22 different powder formulations, varied application temperatures, and tested different surface preparation methods. They eventually developed a two-coat system with a specific curing cycle that passed the test.</p>
-
-<p>The coating raw materials were standard. The innovation was in how they were combined and applied. The technical uncertainty was whether any combination could achieve the required corrosion resistance. The systematic testing resolved that uncertainty. The claim succeeded.</p>
-
-<h2>What Does Not Qualify</h2>
-
-<p>Not every production improvement qualifies. HMRC will reject claims where the work involved:</p>
+<p>Most manufacturers believe they have no research records and are wrong. What they lack is a folder with the word "project" on it. The evidence is scattered across systems that were running anyway.</p>
 
 <ul>
-<li>Routine optimisation using standard engineering knowledge. If a competent engineer would know the answer without testing, it is not R&D.</li>
-<li>Work to improve aesthetics or commercial appeal without a technical advance. Making a product look better is not R&D.</li>
-<li>Market research or customer surveys. These are commercial activities, not technological.</li>
-<li>Routine data collection or quality control testing that does not resolve a technical uncertainty.</li>
-<li>Work that is entirely within published standards or established industry practice.</li>
+<li>Trial and run logs with dates, settings and outcomes.</li>
+<li>Quality reports showing failure modes and rates, before and after.</li>
+<li>Drawings marked up with revisions and the reason for each change.</li>
+<li>Emails between engineers, including the ones saying an approach did not work.</li>
+<li>Purchase orders for trial material, and scrap records for what came off the line.</li>
+<li>Shift records or timesheets that support the payroll apportionment.</li>
 </ul>
 
-<p>The distinction is often subtle. That is why working with an <a href="/services">experienced R&D tax credit specialist</a> matters. They can help you identify which projects qualify and which do not, before you submit a claim.</p>
+<p>Preserve those rather than writing new ones. Contemporaneous material carries weight precisely because it was not written for HMRC, and a tidy narrative composed two years later with no underlying trace is the weakest position a company can be in when questions arrive.</p>
 
-<h2>How to Structure Your Claim</h2>
+<h2>Writing the Technical Account</h2>
 
-<p>If you think your manufacturing business has qualifying R&D, here is the process we recommend.</p>
+<p>The technical account explains four things, in the engineers' own terms: what was not known when the work started, why the published knowledge in the field did not answer it, what was attempted in what order and what happened, and what the field can now do that it could not before.</p>
 
-<p><strong>Step 1: Identify qualifying projects.</strong> Go back through the last two accounting periods. Look for any project where you faced a technical uncertainty that took time and testing to resolve. This could be a new product, a new process, or a significant improvement to an existing product or process.</p>
+<p>Failed work belongs in it. An attempt that never reached its target can still be qualifying work, and describing the failure honestly is usually more convincing than describing a success, because it shows the uncertainty was real. What does not belong is marketing language, superlatives, or a description that could apply to any factory in the sector. The account is written by whoever ran the trials, with an accountant checking that the costs attached to it match the periods described.</p>
 
-<p><strong>Step 2: Gather evidence.</strong> Collect design notes, test records, emails discussing technical problems, purchase orders for trial materials, and any other documentation that shows the uncertainty and the systematic work. HMRC does not expect perfect records, but they expect something.</p>
+<h2>The Additional Information Form and the Return</h2>
 
-<p><strong>Step 3: Quantify the costs.</strong> Qualifying costs include staff salaries (including employer NI and pension contributions) for time spent on R&D, materials consumed in testing, subcontractor costs for R&D work (subject to limits), and software licences used directly in the R&D. Exclude routine production costs, selling costs, and capital expenditure on plant and machinery (though capital allowances may be available separately).</p>
+<p>The claim is made in the company tax return, the CT600, with the relevant supporting pages. Alongside it, an <strong>additional information form</strong> has to reach HMRC before or on the same day as the return. It sets out the projects, the qualifying costs by category, the contact details of the person responsible for the claim and the agent involved if there is one.</p>
 
-<p><strong>Step 4: Prepare the technical narrative.</strong> This is the most important part. The narrative must explain what the technical uncertainty was, why it could not be resolved using standard knowledge, what systematic work you did, and what advance you achieved. A good <a href="/r-and-d-credits">R&D tax credit specialist</a> will help you write this in language HMRC accepts.</p>
+<p>The consequence of missing it is blunt: HMRC removes the claim from the return. The return is still filed, the claim is simply not there, and by the time that surfaces the amendment window may be short. Submit the form first, keep the submission receipt, and file the return afterwards.</p>
 
-<p><strong>Step 5: Submit the claim.</strong> For accounting periods starting on or after 1 April 2024, the merged R&D scheme applies. You submit the claim through your corporation tax return (CT600) and the additional information form (R&D AIF). The AIF must be submitted within 12 months of your company's year end.</p>
+<h2>If HMRC Opens a Compliance Check</h2>
 
-<h2>What You Can Claim</h2>
+<p>Checks are routine in this area, they are not an accusation, and they are handled on paper. HMRC typically asks for the technical account in more detail, the basis of the cost apportionment, and the contemporaneous records behind both. Answer with the material that already existed, name the competent professional whose knowledge sets the baseline, and be willing to withdraw part of a claim that does not hold.</p>
 
-<p>For a profitable manufacturing company, the benefit is a reduction in your corporation tax liability. The amount depends on your qualifying R&D spend and your company's size.</p>
+<p>A company that decided eligibility honestly before it started has very little to fear here. A company that claimed on someone else's assurance that its sector routinely qualifies has a difficult correspondence ahead, and the exposure runs beyond repaying the credit.</p>
 
-<p>Under the merged scheme (post-1 April 2024), the payable credit rate for loss-making R&D-intensive companies (ERIS) is 14.5%. For profitable companies, the benefit comes through a 20% above-the-line expenditure credit (RDEC). This credit is taxable income, so it offsets the corporation tax liability. After accounting for the tax on the credit itself, the net saving is approximately 15% to 16% of your qualifying R&D spend, depending on your corporation tax rate (around 16% at the 19% small-profits rate and around 15% at the 25% main rate).</p>
+<h2>What the Merged Scheme Changed</h2>
 
-<p>For a company spending £100,000 on qualifying R&D, the corporation tax saving is roughly £15,000 to £16,000. That is real money that can fund further innovation or improve your bottom line.</p>
+<p>For accounting periods beginning on or after <strong>1 April 2024</strong>, the separate small company and large company schemes are replaced by a single merged scheme. It gives a Research and Development Expenditure Credit at <strong>20%</strong> of qualifying expenditure, taxable as income, for companies of all sizes. Loss-making companies whose qualifying expenditure is at least <strong>30%</strong> of total relevant expenditure may instead fall within <strong>Enhanced R&D Intensive Support</strong>, from the same start date.</p>
 
-<h2>Common Questions from Manufacturing Directors</h2>
+<p>The practical effect for a manufacturer with a year end other than 31 March is that two consecutive periods can be computed under different regimes, so the older year is not a template for the newer one. Research and development rates and thresholds have moved repeatedly since 2022. Check the current gov.uk merged scheme page for the period you are actually claiming for rather than relying on any summary, this one included.</p>
 
-<p><strong>"We used standard equipment. Does that disqualify us?"</strong></p>
-<p>No. Using standard equipment to solve a non-standard problem can qualify. The advance is in how you use the equipment, not the equipment itself.</p>
+<h2>Who Should Do This</h2>
 
-<p><strong>"Our improvement was small. Does that matter?"</strong></p>
-<p>No. The size of the advance does not determine eligibility. What matters is that an advance occurred and that it resolved a technical uncertainty.</p>
+<p>The technical substance can only come from the people who ran the trials, and the computation has to sit with whoever prepares the company's corporation tax return, so keeping those two close is the whole trick. Contingent fees paid to a third party who identified the projects, wrote the account and never met the engineers are how a large number of the claims now under compliance check came into being.</p>
 
-<p><strong>"We failed. We never got the improvement to work."</strong></p>
-<p>That can still qualify. R&D includes unsuccessful projects. If you systematically investigated a technical uncertainty and it did not work out, the work may still be qualifying R&D.</p>
-
-<p><strong>"We did the work three years ago. Can we still claim?"</strong></p>
-<p>You can amend a corporation tax return within 12 months of the filing deadline. For most companies, that means you can go back up to two years from the current date. If you are unsure, check with an R&D specialist.</p>
-
-<h2>Why Work with an R&D Tax Credit Specialist</h2>
-
-<p>HMRC is scrutinising R&D claims more closely than ever. The number of compliance checks has increased significantly since 2023. A poorly prepared claim can trigger a full enquiry that takes months to resolve and may result in a reduced or rejected claim.</p>
-
-<p>An R&D tax credit specialist who understands manufacturing can make the difference between a successful claim and a rejected one. They know what evidence HMRC expects, how to write a technical narrative that passes review, and how to identify qualifying projects you might have overlooked.</p>
-
-<p>At Holloway Davies, our experienced team has experience across manufacturing sectors: precision engineering, packaging, metal finishing, plastics, food production, electronics assembly, and more. We see qualifying R&D in production lines every week. We also see businesses that missed claims because they thought their work was too routine.</p>
-
-<p>If you are a manufacturing director who has dismissed R&D tax credits as not relevant to your business, it is worth a second look. The cost is a conversation. The potential benefit is tens of thousands of pounds in tax relief you are already entitled to.</p>
-
-<p><a href="/contact">Contact our team</a> to discuss your manufacturing R&D. We will tell you honestly whether you have a claim worth pursuing.</p>
+<p>Holloway Davies does not prepare or process research and development claims and does not act as a claim agent. This page describes the process; it is not an offer to run it. For the question that comes before any of it, our companion page sets out <a href="/blog/randd-tax-credits/rd-tax-credits-manufacturing-incremental-improvements">the four-question test for whether a production improvement qualifies at all</a>, with the credit arithmetic worked through. If you want an ordinary second opinion on your company's corporation tax position, <a href="/contact">get in touch</a>.</p>
