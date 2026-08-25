@@ -18,6 +18,264 @@ brand_locked: true
 > `expansion_research/tier1_crypto/BRAND_SHORTLIST.md` (fallback: Cryptoasset
 > Tax Partners).
 
+## 2026-08-25 TRACK 2 STAGE 0 DIAGNOSIS: cluster-coverage discovery pass (research only, nothing built)
+
+**Headline: crypto does not need more pages. It needs the pages it already has rewritten
+against the market's vocabulary.** 25 of 332 of the market's top phrasings (7.5%) appear
+verbatim anywhere in the site's 74,611-word corpus. Every cluster with real demand already
+has a page. The binding constraint is phrase coverage and discovery, not corpus size.
+
+Method: `REWRITE_PROGRAM.md` §9.2 (six steps) + §9.7 (source union, reconciliation ledger),
+run per `PROPERTY_STANDARD_ROLLOUT.md` §5.0 Stage 0 and §5.1 steps 2-4. Nothing deployed,
+nothing published, nothing committed by the pass itself.
+
+### Spend, measured not estimated
+
+| Item | Value |
+|---|---|
+| Endpoint for balance | `GET https://api.dataforseo.com/v3/appendix/user_data`, field `tasks[0].result[0].money.balance` |
+| Balance before | **$4.017324** (NOT the $4.78 recorded at 2026-08-21 in the rollout doc; $0.76 had already gone) |
+| Actual spend | **$1.1947** (sum of `body["cost"]` over 39 saved responses; reconciles exactly to the balance delta) |
+| Balance after | **$2.822604** |
+| Documented model | `DISCOVERY_ENGINE_V2.md` §4 says ~$2.30/site. The real Labs prices are lower: `competitors_domain` cost $0.0180 against a $0.05 estimate; `ranked_keywords` at 1,000 rows cost $0.1320; `serp/google/organic/live/advanced` cost $0.0020 each. |
+
+Budget was never the constraint. The pass fitted with $2.82 to spare.
+
+### What crypto is today (read from the repo 2026-08-25)
+
+36 substantive pages: **19 blog posts**, **6 `/for` hubs** (investors, day-traders,
+defi-and-staking, nft-creators-and-flippers, miners, businesses), **5 `/services`**
+(hmrc-disclosure, crypto-self-assessment, koinly-recap-reconciliation, crypto-cgt-planning,
+investor-vs-trader-status), **4 calculators** (crypto-cgt-estimator, crypto-disclosure-estimator,
+investor-vs-trader-checker, staking-mining-income-estimator), **1 research asset**
+(crypto-tax-gap-index), homepage. Plus index/legal/utility routes.
+
+Coverage is structurally complete: every cluster the data found already has at least one
+page, except four (below).
+
+### Both engines, pulled fresh (§9.7 makes these mandatory)
+
+- **Google (GSC, `sc-domain:cryptotaxpartners.co.uk`, 2026-05-27 to 2026-08-23):** 47 queries,
+  **174 impressions, 0 clicks**. Best average positions are day-trader terms: "day trader tax uk"
+  17 impressions at 17.8, "day trading uk tax" 23 at 27.3, "day trader status" 2 at 18.5.
+  Everything commercial sits at position 60-90.
+- **Bing (`GetQueryStats`):** 8 queries, **11 impressions, 0 clicks**.
+- Site went live 2026-07-16, so this is ~38 days of real history. Young-data rules apply
+  (§5.0): grade REFRAME-heavy, label every artefact with this window.
+
+### Sources harvested (named, with row counts, per §9.7)
+
+`ranked_keywords/live` UK (location 2826, `en`), ordered by volume desc, limit 1,000/domain:
+koinly.io 1,000 of 1,741 · coinledger.io 1,000 of 1,323 · mmba.co.uk 1,000 of 5,215 ·
+blockpit.io 670 of 670 · cryptotaxation.co.uk 407 of 407 · recap.io 361 of 361 ·
+hodgebakshi.com 125 of 125 · cryptocountancy.co.uk 54 · mycryptotax.co.uk 32 ·
+ukcryptocurrencyaccountant.co.uk 10 · hashtax.io 8 · crypto-tax-accountant.co.uk 6 ·
+cryptotaxcalculator.io 5 · cryptotaxpartners.co.uk (ours) 5.
+Plus `keyword_ideas` 1,000, `keyword_suggestions` on three seeds (1,000 + 756 + 267),
+`competitors_domain` 50, and 18 live SERPs.
+
+**Stated limitation:** three domains were capped at 1,000 rows rather than paginated to
+exhaustion as §9.7 requires (koinly 741 rows unseen, coinledger 323, mmba 4,215). The client
+wrapper exposes no offset parameter, and adding one is a code change this pass was not
+authorised to make. The unseen rows are the lowest-volume tail, which is exactly the tail
+§9.2 says carries the phrasings, so this is a real gap, not a formality.
+
+### The reconciliation ledger (§9.7, must balance)
+
+| Bucket | Count | Note |
+|---|---|---|
+| assigned | 1,828 | in the crypto-tax term family, one cluster each |
+| excluded | 408 | 362 foreign-jurisdiction, 28 news-cycle, 11 adjacent-not-crypto-tax, 7 off-niche |
+| deferred | 4,165 | pulled but outside the crypto-tax family (generic crypto, generic accountancy) |
+| **universe** | **6,401** | 1,828 + 408 + 4,165 = 6,401 ✓ |
+
+Named exclusions with their volume, never dropped silently: "mining pools" (320), "mining pool
+stats" (210), "miner pool stats" (210), "stake pools" (140) are mining infrastructure, not its
+tax. "trading allowance" (1,300) and "trading income allowance" (880) are the generic £1,000
+self-employment allowance and belong to a generalist cluster. "is kraken liable for your losses"
+(170) is consumer redress. Together 3,630/mo of demand that would have flattered this niche.
+
+### TRAP: never sum a cluster's keyword volumes
+
+Google Ads reports one volume for a whole close-variant group. "crypto uk tax", "cryptocurrency
+and uk tax", "tax for cryptocurrency uk", "tax on cryptocurrency uk" and "cryptocurrency tax uk"
+all report 880. Summed that is 4,400 of demand that does not exist. Measured inflation across
+this family: **2.32x**. Raw-sum 39,400/mo deduplicates to **17,010/mo**. Every figure below is
+deduplicated (one row per close-variant group, carrying the group's max volume).
+
+### 1. The clusters, ranked by peer-winnable volume
+
+Peer-winnable = the volume of groups that at least 2 of the 14 harvested competitor domains
+actually rank for. §9.3 prioritises on that number, never raw volume.
+
+| # | Cluster | Groups | Vol/mo | Peer-winnable | Median KD | Max CPC | Head term (vol, KD, CPC) |
+|---|---|---|---|---|---|---|---|
+| 1 | core-primer | 395 | 5,870 | **2,720** | 18 | £20.78 | crypto uk tax (880, KD 19, £7.03) |
+| 2 | hmrc-disclosure-enforcement | 35 | 2,330 | **2,060** | 11 | £7.13 | hmrc cryptocurrency information sharing (480, KD 9) |
+| 3 | calculator-tool | 56 | 1,920 | **1,270** | 7 | £18.19 | crypto tax calculator (880, KD 0, £14.20) |
+| 4 | accountant-commercial | 50 | 1,440 | **950** | 0 | £34.12 | accountant cryptocurrency (320, KD 0) |
+| 5 | cgt-disposals | 75 | 1,410 | **840** | 15 | £28.21 | crypto capital gains tax (170, KD 6) |
+| 6 | software-reconciliation | 49 | 690 | 210 | 21 | £8.46 | crypto tax software (110, KD 21, £5.25) |
+| 7 | planning-mitigation | 42 | 460 | 210 | 1 | £2.49 | how to avoid tax on crypto uk (110, KD 0, £1.75) |
+| 8 | rates-allowances | 66 | 820 | 100 | 16 | £15.17 | how much crypto is tax-free uk (50, KD 10) |
+| 9 | income-side | 19 | 210 | 100 | 12 | - | crypto passive income (50, KD 12) |
+| 10 | jurisdiction-relocation | 73 | 740 | 90 | 5 | £0.03 | crypto tax free countries (90, KD 5) |
+| 11 | filing-self-assessment | 33 | 370 | 70 | 33 | - | crypto reporting (70, KD 33) |
+| 12 | trader-status | 12 | 420 | 0 | 0 | **£59.38** | cfd trading uk tax (170, KD 0) |
+| 13 | staking-mining-airdrops | 22 | 150 | 0 | 39 | - | crypto staking tax uk (20, KD 39) |
+| 14 | losses-reliefs | 19 | 140 | 0 | 13 | - | tax deduction crypto losses (10) |
+| 15 | defi | 6 | 30 | 0 | 55 | £5.04 | liquidity pools vs staking (10, KD 55) |
+| 16 | nft | 2 | 0 | 0 | - | - | nft tax (0) |
+| 17 | business-corporate | 2 | 10 | 0 | - | - | corporation tax cryptocurrency (10) |
+
+**Total addressable UK crypto-tax demand: 17,010/mo, of which 8,620/mo is peer-winnable.**
+This is a small niche won on breadth of long tail, not on head terms. The largest single
+head term in the whole niche is 880/mo.
+
+**Difficulty is the story.** The entire commercial layer is KD 0: "crypto accountants uk"
+(320, KD 0, CPC £18.59), "crypto tax accountant uk" (110, KD 0, CPC £11.61), "crypto tax
+calculator" (880, KD 0, CPC £14.20), "crypto tax calculator uk" (390, KD 2, CPC £7.56).
+
+### 1a. SERP screen (§9.2 step 3): zero clusters are locked out
+
+18 live SERPs pulled (`serp/google/organic/live/advanced`, depth 10, UK). Every one has
+between 3 and 7 peer-authority organic slots. **Not one is owned end-to-end by gov.uk or a
+national brand**, so §9.2 step 3's structural exclusion fires on nothing.
+
+Two findings that change the plan:
+
+- **`ai_overview` appears on 12 of 18 SERPs; `people_also_ask` on all 18.** AI-surface and
+  answer-block readiness is a first-order lever in this niche, not garnish.
+- **`local_pack` appears on all three commercial accountant SERPs** ("crypto accountants uk",
+  "crypto tax accountant uk", "crypto tax accountant london"). That surface needs Google
+  Business Profile, which is a standing NO estate-wide (suspension risk). We compete for the
+  6 to 7 organic slots below it and must not plan around the pack.
+
+The harvest was seeded on mycryptotax.co.uk, which turned out to rank for only 32 UK keywords.
+The live SERPs corrected that: **mmba.co.uk appears in 8 of 18 SERPs** and was missing from the
+first harvest. It was added ($0.132) and is the real content leader. Recurring peer domains
+worth watching: mmba.co.uk, hodgebakshi.com, litrg.org.uk, taxfix.com, alexander.co.uk,
+bkl.co.uk, charltonbaker.co.uk, mjkane.co.uk, uk.andersen.com, crunch.co.uk, theaccountancy.co.uk.
+
+### 2. The diagnosis: 7.5% phrase coverage
+
+Same measurement Property's SDLT audit ran. Corpus = 19 blog `.md` + hub/service data files +
+calculator definitions + every non-admin `page.tsx`, 74,611 words across 45 files.
+
+**25 of the 332 top-25-per-cluster phrasings appear verbatim. 7.5%.**
+
+Spot-checked by direct grep, because the claim is load-bearing: `"crypto accountants uk"` appears
+in **0** files. `"crypto uk tax"` appears in **0** files. `"crypto tax accountant"` appears in 2.
+A site whose entire business is being a UK crypto tax accountant does not say so in the words
+the market searches.
+
+Worst offenders, by missing volume: core-primer 2,600/mo missing, hmrc-disclosure 2,070,
+accountant-commercial 1,180, cgt-disposals 850, calculator-tool 780, rates-allowances 560
+(0 of 25 present), jurisdiction-relocation 410 (0 of 25), trader-status 420 (0 of 12).
+
+### 3. Page inventory: 16 pages, 4 net-new, 12 rewrites
+
+Estate rule applied throughout: if a page already covers a query it is a rewrite candidate,
+never a new page. Never collapse, never duplicate.
+
+**REWRITES (12).** Grade is REFRAME for all of them under §9.2 step 5: Google impressions are
+under 300 and Bing clicks are 0 on every page, so metaTitle, H1, H2s, body and FAQ are all in
+scope. No URL changes.
+
+| # | Page | Cluster | Missing phrasings to place (vol, KD) |
+|---|---|---|---|
+| R1 | `can-hmrc-track-crypto-wallets` | hmrc | hmrc cryptocurrency information sharing (480, 9); hmrc cryptocurrency data collection (90, 19); do coinbase report to hmrc (70, 0); do binance report to hmrc (50, 0). **Biggest single miss on the site.** |
+| R2 | `how-crypto-is-taxed-uk` | core-primer | crypto uk tax (880, 19); do you pay tax on crypto (170, 18); crypto tax rules uk (110, 15); is crypto taxable in uk (110, 20); is crypto taxed in uk (110, 19) |
+| R3 | homepage | accountant-commercial | crypto accountants uk (320, 0, £18.59); accountant cryptocurrency (320, 0); crypto tax accountant uk (110, 0, £11.61) |
+| R4 | `calculators/crypto-cgt-estimator` | calculator-tool | crypto tax calculator uk (390, 2); crypto capital gains tax calculator (40, 7, £18.19); hmrc crypto tax calculator (30, 7). Retitle to own the 880/mo head. |
+| R5 | `carf-crypto-reporting-2026-explained` | hmrc | hmrc mandatory crypto disclosure (260, 13); crypto asset reporting framework (90, 20) |
+| R6 | `hmrc-crypto-crackdown-2026` | hmrc | hmrc crypto tax (390, 24); hmrc crypto tax crackdown (90, 0); hmrc crypto tax rules 2026 (90, 3); uk crypto tax crackdown 2026 (90, 7) |
+| R7 | `crypto-to-crypto-swaps-are-disposals` | cgt-disposals | capital gains tax on crypto uk (140, 13); cryptocurrency capital gains uk (110, 15); cgt on crypto uk (90, 9) |
+| R8 | `crypto-same-day-30-day-rules-worked-example` | cgt-disposals | taxes on crypto gains (90, 15); do you pay tax on crypto gains (70, 3); tax on crypto gains uk (50, 15) |
+| R9 | `day-trader-forex-spread-betting-tax-uk` | trader-status | cfd trading uk tax (170, 0); is cfd trading tax free in uk (70, 0, **£59.38**); cfd trading and tax (70, 0); tax for day trading (70, 6). Already our best-positioned page (17.8 on Google). |
+| R10 | `legitimate-ways-reduce-crypto-cgt-uk` | planning-mitigation | how to avoid tax on crypto uk (110, 0); how to avoid capital gains tax on cryptocurrency uk (70, 1); can you gift crypto tax free uk (20) |
+| R11 | `services/crypto-self-assessment` | accountant-commercial | crypto tax advisor (40, 0); crypto tax advisory (40); crypto tax advisor uk (30, 0); crypto tax advice uk (30, 32) |
+| R12 | `services/koinly-recap-reconciliation` | software-reconciliation | best crypto tax software (50, 8); crypto accounting software (50, 26); recap crypto tax (50, 7); crypto tax software uk (40, 4) |
+
+**NET-NEW (4).** Only clusters where no page of ours scores at all (§9.2 step 4, NO-PAGE).
+
+| # | Proposed page | Type | Cluster | Target query (vol, KD) | Why new |
+|---|---|---|---|---|---|
+| N1 | How much tax do you pay on crypto in the UK: rates, allowances and thresholds 2026/27 | supporting article | rates-allowances (66 groups, 820/mo) | how much crypto is tax-free uk (50, 10); how much tax do you pay on crypto uk (50, 13); crypto tax free allowance uk (20, 16) | **0 of our pages serve it and 0 of 25 phrasings present.** Largest uncovered cluster. |
+| N2 | Crypto tax-free countries, and what actually happens to your UK tax if you move | supporting article | jurisdiction-relocation (73 groups, 740/mo) | crypto tax free countries (90, 5); thailand/cyprus/malta/switzerland crypto tax (20-40 each, KD 0-5) | 0 pages, 0 of 25 phrasings. UK-resident searchers, so a UK-rules answer is the honest angle. |
+| N3 | How to declare crypto on your Self Assessment: SA100 and SA108 walkthrough | supporting article | filing-self-assessment (33 groups, 370/mo) | crypto reporting (70, 33); how to declare crypto on tax return (10, 17); crypto tax deadline (10) | Only the service page touches it; no procedural page exists. |
+| N4 | Crypto passive income and UK tax: staking, lending and yield | supporting article | income-side (19 groups, 210/mo) | crypto passive income (50, 12); passive income from cryptocurrency (50, 8) | 0 pages. Bridges the staking corpus to how people actually phrase it. |
+
+No pillar pages proposed: the pillars exist. No location pages proposed (see §5 below).
+
+### 4. Calculators: build zero new ones
+
+`PROPERTY_STANDARD_ROLLOUT.md` §6.2 requires the fleet size to be data-derived, never a round
+number. The data derives **zero**.
+
+The calculator-tool cluster is 56 groups and 1,920/mo, and it is the highest-CPC winnable
+surface on the site (head £14.20, max £18.19, KD 0-2). But every group in it is a variant of
+two intents the existing fleet already serves: whole-liability estimate and CGT-specific
+estimate. The only calculator query that is not is "crypto return calculator" (70/mo, KD 11),
+which is an investment-return tool, off-brief for a tax firm.
+
+Action is a **reframe, not a build**: `crypto-cgt-estimator` is retitled and rewritten to own
+"crypto tax calculator uk" (390, KD 2) and "crypto tax calculator" (880, KD 0). Our own GSC
+already shows this is what Google surfaces us for ("crypto capital gains tax calculator" 15
+impressions at 62.9, "crypto tax calculator uk" 11 at 63.9, our two biggest impression earners).
+§9.12's lever board rates page shape (a working tool) as a live lever; the tool exists and is
+mis-titled, which is the cheapest version of that lever.
+
+### 5. Honest gaps: what the data killed
+
+| Killed | Number | Why |
+|---|---|---|
+| **NFT expansion** | 2 keywords, **0/mo** combined ("crypto nft tax software", "best crypto nft tax software", both 10/mo and both software queries) | There is no UK NFT-tax search demand in this dataset. The site has a whole `/for/nft-creators-and-flippers` hub plus a blog post for it. Keep both as differentiators and as sales surfaces; do not write more, and do not expect traffic. |
+| **DeFi expansion** | 6 keywords, **30/mo**, median KD 55 | Same shape. Three pages already exist. DeFi is a service differentiator and a credibility signal, not a traffic channel. |
+| **Location pages** | 21 keywords, **310/mo total** | 13 of them are "near me" variants, which resolve to the local pack, and Google Business Profile is a standing estate-wide NO. The only real city term is "crypto accountant london" (40/mo). Not worth a page, let alone a fleet. |
+| **Business/corporate expansion** | 2 keywords, **10/mo** | "corporation tax cryptocurrency" at 10/mo. Two pages and a hub already exist. Sales asset, not a content target. |
+| **Staking and mining expansion** | 22 groups, **150/mo** after excluding mining-infrastructure terms | The headline 1,030/mo was 880 of "mining pools" and "stake pool stats", which are people running mining rigs, not people paying tax on them. Three pages already cover the real 150/mo. |
+| **Losses and reliefs expansion** | 19 groups, **140/mo** after excluding "is kraken liable for your losses" (170) | One page already covers it. |
+| **"Crypto tax software" as a content play** | 690/mo, median KD 21, SERP is 5 of 10 software vendors | We are not a software vendor. Serve it from the existing reconciliation service page only. |
+
+### 6. Where the method did not match reality (report, do not work around)
+
+1. **`sites/crypto.discovery.json` does not exist.** Eight sites have one; crypto is not among
+   them. `candidate_pool.py` / `lane_map.py` / `competitor_watch.py` cannot run for crypto as
+   `DISCOVERY_ENGINE_V2.md` describes, and `lane_map._blog_dir()` would silently fall back to
+   Property's blog directory. §5.1 step 1 calls this out; it is still true. The cluster-coverage
+   method (§9) needs no such config, which is why this pass used it directly.
+2. **The $2.30/site cost model is stale and high.** Real prices measured above. Good news, but
+   the rollout doc's estate-sweep arithmetic is built on the wrong number.
+3. **The $4.78 balance recorded at 2026-08-21 was $4.017324 by 2026-08-25.** Balance figures in
+   the doc decay; re-read before planning spend.
+4. **§9.2 step 2's page-node merge degenerates on this niche.** Merging competitor URLs at 30%
+   keyword overlap produced one blob of 105 keywords across 12 domains plus six singletons,
+   because crypto competitor pages are thin (only 40 of 648 harvested pages carry 3+ tax-family
+   keywords). The method assumes competitors give each topic a page; here most rank a handful of
+   pages for everything. Clustering fell back to the estate's own `assign_lane` marker-substring
+   primitive, keeping per-keyword domain count as the confidence score. Recorded so the next
+   small niche does not rediscover it.
+5. **`ranked_keywords()` has no offset parameter**, so §9.7's "paginate to exhaustion" is not
+   reachable through the existing client. See the stated limitation above.
+6. **Marker false-positive caught in-flight:** an unbounded `defi` token matched "definition"
+   and pulled "tax rebate definition" (590/mo) into the crypto family. Same class of trap
+   `DISCOVERY_ENGINE_V2.md` §2.3 documents for lane tokens. Word-bounded in this pass.
+
+### 7. What to do next, in order
+
+1. **R1 through R4 first** (HMRC-tracking rewrite, core primer, homepage, calculator retitle).
+   Together they carry 2,930/mo of missing phrasings at KD 0-19, and three of the four are the
+   commercial surfaces. One change class per page per window (§9.3), Bing read at 14 and 28 days.
+2. Author `docs/crypto/house_positions.md` currency check before any writing (it exists; verify).
+3. Author `sites/crypto.discovery.json` with a lane taxonomy if the discovery engine is ever to
+   run here. Not required for the rewrites.
+4. Do NOT spend the remaining $2.82 on more crypto discovery. The cluster picture is settled;
+   the next dollar is better spent on a sibling site's Stage 0.
+
+Raw responses for this pass were written to the session scratchpad and are not retained in the
+repo. Re-deriving costs about $1.19.
+
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
 `design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
