@@ -132,10 +132,47 @@ export type LeadEmailOptions = {
   omitSourcePage?: boolean;
 };
 
-function detailFields(opts: LeadEmailOptions): DetailField[] {
-  return opts.omitSourcePage
+// Extras keys that are internal plumbing, never operator-facing content. Any
+// OTHER extras key is a form qualifier (trade, situation, segment, subbie_count,
+// ...) that the Tier-2/3 forms collect instead of or alongside the free-text
+// message; those must render, or the enquiry content silently vanishes from the
+// email (2026-08-25: a care lead arrived as "Message: Not provided" while the
+// actual enquiry sat in extras.situation).
+const INTERNAL_EXTRAS_KEYS = new Set([
+  "role_detail",
+  "form_id",
+  "qa",
+  "resource_gate",
+  "capture_channel",
+  "trigger",
+  "channel",
+  "recorded_by",
+]);
+
+function qualifierFields(r: LeadRecord): DetailField[] {
+  return Object.entries(r.extras ?? {})
+    .filter(
+      ([k, v]) =>
+        !INTERNAL_EXTRAS_KEYS.has(k) &&
+        (typeof v === "string" || typeof v === "number") &&
+        String(v).trim() !== "",
+    )
+    .map(([k, v]) => ({
+      label: prettySource(k),
+      get: () => String(v),
+      optional: true,
+    }));
+}
+
+function detailFields(r: LeadRecord, opts: LeadEmailOptions): DetailField[] {
+  const base = opts.omitSourcePage
     ? DETAIL_FIELDS.filter((f) => f.label !== "Source page")
     : DETAIL_FIELDS;
+  // Qualifiers slot in after "Came via" so enquiry content sits above the
+  // housekeeping rows (site, source page, timestamps).
+  const at = base.findIndex((f) => f.label === "Company / practice");
+  const cut = at === -1 ? base.length : at;
+  return [...base.slice(0, cut), ...qualifierFields(r), ...base.slice(cut)];
 }
 
 export function buildLeadHtml(r: LeadRecord, opts: LeadEmailOptions = {}): string {
@@ -144,7 +181,7 @@ export function buildLeadHtml(r: LeadRecord, opts: LeadEmailOptions = {}): strin
   const received = formatTimestamp(r.created_at);
   const message = (r.message ?? "").trim();
 
-  const detailRows = detailFields(opts)
+  const detailRows = detailFields(r, opts)
     .filter((field) => {
       if (!field.optional) return true;
       const val = (field.get(r) ?? "").toString().trim();
@@ -246,7 +283,7 @@ export function buildLeadText(r: LeadRecord, opts: LeadEmailOptions = {}): strin
       "NURTURE IN PROGRESS. Do NOT forward this yet. Wait for the separate READY handoff email, which arrives only once the lead is verified and has actively responded.",
     );
   lines.push("", "LEAD DETAILS");
-  for (const field of detailFields(opts)) {
+  for (const field of detailFields(r, opts)) {
     const raw = (field.get(r) ?? "").toString().trim();
     if (field.optional && !raw) continue;
     lines.push(`${field.label}: ${raw || "Not provided"}`);

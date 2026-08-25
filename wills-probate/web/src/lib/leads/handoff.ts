@@ -119,6 +119,19 @@ export function buildHandoffEmail(
   const extras = lead.extras ?? {};
   const roleDetail = typeof extras.role_detail === "string" && extras.role_detail ? extras.role_detail : null;
   const formId = typeof extras.form_id === "string" && extras.form_id ? extras.form_id : null;
+  // Form-qualifier extras (trade, situation, segment, ...) carry the enquiry
+  // content on forms whose free-text message is optional; render them or the
+  // handoff arrives with "(no message)" while the answer sits in extras
+  // (2026-08-25 care/construction-cis incident).
+  const INTERNAL_EXTRAS = new Set([
+    "role_detail", "form_id", "qa", "resource_gate", "capture_channel", "trigger", "channel", "recorded_by",
+  ]);
+  const qualifiers = Object.entries(extras).filter(
+    ([k, v]) =>
+      !INTERNAL_EXTRAS.has(k) && (typeof v === "string" || typeof v === "number") && String(v).trim() !== "",
+  );
+  const qualifierLabel = (k: string) =>
+    k.split(/[-_]/).map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w)).join(" ");
 
   const detail = [
     row("Name", esc(lead.full_name)),
@@ -130,6 +143,7 @@ export function buildHandoffEmail(
     row("Role", esc(roleLabel(lead.role))),
     roleDetail ? row("In their words", esc(roleDetail)) : "",
     formId ? row("Came via", esc(surfaceLabel(formId) ?? formId)) : "",
+    ...qualifiers.map(([k, v]) => row(qualifierLabel(k), esc(String(v)))),
     row("How they responded", `<strong style="color:#047857;">${esc(responseStory(d, reason))}</strong>`),
     d.responseLatencyMs !== null
       ? row("Response time", esc(`${formatLatency(d.responseLatencyMs)} after enquiring`))
@@ -211,6 +225,9 @@ ${timelineHtml}
     (d.callWindow ? `${d.callWindow}.\n` : "") +
     (lastReply ? `Last reply (${lastReply.channel}): "${lastReply.body}"\n` : "") +
     (journeyStory(d) ? `On-site journey: ${journeyStory(d)}\n` : "") +
+    (qualifiers.length
+      ? qualifiers.map(([k, v]) => `${qualifierLabel(k)}: ${v}`).join("\n") + "\n"
+      : "") +
     `Enquiry: ${lead.message || "(none)"}`;
 
   return { subject, html, text };
