@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Manufacturing UK Companies"
 metaDescription: "Manufacturers wait 20 weeks from raw materials to payment. See how invoice finance releases up to 90% of B2B order invoices, plus what it will not fund."
 altText: "Machinist inspecting a part on a CNC milling machine inside a UK manufacturing facility"
-image: ""
+image: "/blog/invoice-finance-for-manufacturing.jpg"
+imageCredit:
+  photographer: "EqualStock IN"
+  photographerUrl: "https://www.pexels.com/@equalstock"
+  sourceUrl: "https://www.pexels.com/photo/female-textile-worker-in-industrial-setting-32048386/"
+  source: "Pexels"
 h1: "Invoice Finance for Manufacturing: Closing the Order-to-Cash Gap"
 summary: "A manufacturing company pays for raw materials in week one, builds for ten weeks, then waits another ten for a B2B customer to settle. That order-to-cash gap ties up cash you need for the next order. This guide explains where invoice finance helps a limited-company manufacturer, the one phase it cannot fund, and how it pairs with asset finance for plant."
 schema: ''

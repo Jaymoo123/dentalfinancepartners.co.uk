@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "Preparing a Business for Sale: Buyer-Ready Guide"
 metaDescription: "Preparing a business for sale in 2026: clean the books, cut owner dependence and build a data room to protect your multiple before due diligence."
 altText: "Business owner organising financial records and contracts ahead of a company sale"
-image: ""
+image: "/blog/preparing-a-business-for-sale.jpg"
+imageCredit:
+  photographer: "Possessed Photography"
+  photographerUrl: "https://www.pexels.com/@possessed-photography-145486498"
+  sourceUrl: "https://www.pexels.com/photo/glass-panel-window-on-white-concrete-wall-10902544/"
+  source: "Pexels"
 h1: "Preparing a Business for Sale: The Buyer-Ready Checklist"
 summary: "A ready business sells for more, faster, and with fewer price chips at completion. This is the practical pre-sale checklist: cleaning the financials, cutting owner dependence, tidying contracts, building the data room, and fixing the value-killers before a buyer finds them."
 schema: ''

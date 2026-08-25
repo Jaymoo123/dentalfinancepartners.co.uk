@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Value a Business: 2026 UK Owner's Guide"
 metaDescription: "Value your business in five steps: adjust profit, apply a sector multiple, add surplus cash, subtract debt. A 2026 UK worked example from £380k EBITDA."
 altText: "UK business owner reviewing profit and loss figures to estimate company value"
-image: ""
+image: "/blog/how-to-value-a-business.jpg"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-report-33175667/"
+  source: "Pexels"
 h1: "How to Value a Business: A Step-by-Step Guide for UK Owners"
 summary: "A practical, do-it-yourself walkthrough for putting a defensible number on your own company before you speak to a buyer or adviser. Adjust your profit, pick a method, apply a sensible multiple, then bridge from enterprise value to what actually lands in your pocket, with a full worked example at 2026/27 figures."
 schema: ''

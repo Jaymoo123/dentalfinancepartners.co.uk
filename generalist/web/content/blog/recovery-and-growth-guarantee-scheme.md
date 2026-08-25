@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Growth Guarantee Scheme Explained for Companies"
 metaDescription: "The Growth Guarantee Scheme gives lenders a 70% government guarantee on SME facilities up to £2m. How it works for UK limited companies in 2026/27."
 altText: "company director reading a government-backed loan agreement at a desk in a UK office"
-image: ""
+image: "/blog/recovery-and-growth-guarantee-scheme.jpg"
+imageCredit:
+  photographer: "Ketut Subiyanto"
+  photographerUrl: "https://www.pexels.com/@ketut-subiyanto"
+  sourceUrl: "https://www.pexels.com/photo/photo-of-woman-putting-wooden-signage-on-doorknob-4473093/"
+  source: "Pexels"
 h1: "The Growth Guarantee Scheme: What It Means for Your Limited Company"
 summary: "A plain-English guide to the British Business Bank Growth Guarantee Scheme (the successor to the Recovery Loan Scheme) for UK limited companies. What the 70% government guarantee actually protects, who is eligible, which facilities it covers, the personal-guarantee reality, and how it compares with a standard commercial loan. Company borrowers only. We introduce your company to a panel of commercial-finance brokers working with accredited lenders, we are not a lender."
 schema: ''

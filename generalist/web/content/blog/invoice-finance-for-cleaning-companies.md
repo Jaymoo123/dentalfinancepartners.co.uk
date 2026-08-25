@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Cleaning Companies UK"
 metaDescription: "A £1.5m contract cleaner waiting 55 days on FM primes can release 90% of each invoice within 24 hours. How factoring funds weekly cleaning payroll."
 altText: "Commercial cleaning team servicing a corporate office at night while an operations manager reviews a facilities-management contract schedule"
-image: ""
+image: "/blog/invoice-finance-for-cleaning-companies.jpg"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  sourceUrl: "https://www.pexels.com/photo/women-cleaning-inside-of-a-house-6195274/"
+  source: "Pexels"
 h1: "Invoice Finance for Cleaning Companies"
 summary: "Contract cleaning runs on weekly wages but gets paid on 45 to 60 day terms by a handful of facilities-management primes. This guide shows UK limited-company cleaners how whole-turnover factoring closes that payroll-to-payment gap, how debtor concentration and TUPE on contract wins affect the funding, and when it is the right tool."
 schema: ''

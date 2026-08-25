@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "EOT Tax Relief and CGT: The New 50% Rule"
 metaDescription: "From 26 November 2025, CGT relief on a sale to an EOT is 50%, not 100%. A £4m sale now triggers around £455,000 of CGT. Here is the new rule."
 altText: "Business owner reviewing capital gains tax figures on an employee ownership trust sale"
-image: ""
+image: "/blog/eot-tax-relief-and-cgt.jpg"
+imageCredit:
+  photographer: "Pixabay"
+  photographerUrl: "https://www.pexels.com/@pixabay"
+  sourceUrl: "https://www.pexels.com/photo/person-signing-in-documentation-paper-48148/"
+  source: "Pexels"
 h1: "EOT Tax Relief and CGT: How the New 50% Rule Works"
 summary: "At the Autumn Budget on 26 November 2025 the Capital Gains Tax relief on a sale to an Employee Ownership Trust was cut from 100% to 50%, with immediate effect. Half of the gain is now taxable at the point of sale, BADR cannot rescue it, and the other half is held over onto the trustees. Here is exactly how the new charge works, with the numbers."
 schema: ''

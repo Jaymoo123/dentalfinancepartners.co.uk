@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Factoring UK: Costs, Fees and Exit Traps"
 metaDescription: "Invoice factoring releases up to 90% of a B2B invoice in 24 hours. We show the 2026/27 costs, recourse rules, and the termination-notice trap buyers miss."
 altText: "UK finance director reviewing a sales ledger and factoring agreement at a desk"
-image: ""
+image: "/blog/invoice-factoring.jpg"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  sourceUrl: "https://www.pexels.com/photo/receipts-and-documents-on-top-of-a-desk-7680681/"
+  source: "Pexels"
 h1: "Invoice Factoring for UK Limited Companies: What It Costs and the Exit Traps to Watch"
 summary: "Invoice factoring turns your company's unpaid B2B invoices into cash, with the lender advancing most of the value and running credit control on your behalf. It is fast and flexible, but the real cost sits in the service fee, the discount margin, and the termination clauses most buyers never read. This guide sets out how factoring works, what it costs in 2026/27, and how to avoid the trailing-commission and notice-period traps on exit."
 schema: ''

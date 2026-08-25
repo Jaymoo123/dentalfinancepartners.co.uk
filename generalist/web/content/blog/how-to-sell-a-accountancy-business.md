@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Sell an Accountancy Practice in the UK"
 metaDescription: "Accountancy practices sell at 0.8-1.4x gross recurring fees, with price held back on clawback. How to value, sell and tax-plan your exit in 2026/27."
 altText: "Accountancy practice owner reviewing a client fee ledger before a practice sale"
-image: ""
+image: "/blog/how-to-sell-a-accountancy-business.jpg"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-documents-33175651/"
+  source: "Pexels"
 h1: "How to Sell an Accountancy Practice: Recurring Fees, Clawback and the Tax on Exit"
 summary: "Accountancy practices are priced on gross recurring fees, not profit, and most of the price is held back against client retention. This guide covers the GRF multiple, how clawback works, and the CGT, BADR and EOT position at 2026/27 rates."
 schema: ''

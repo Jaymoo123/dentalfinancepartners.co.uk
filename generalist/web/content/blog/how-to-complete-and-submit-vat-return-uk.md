@@ -8,7 +8,12 @@ category: "VAT and Making Tax Digital"
 metaTitle: "How to Complete a UK VAT Return: The 9-Box Guide (MTD)"
 metaDescription: "A box-by-box walkthrough for completing and submitting your UK VAT return via MTD software, with a worked example, deadlines, and error correction guidance."
 altText: "UK business owner completing a VAT return on a laptop with accounting records and a calculator on the desk"
-image: ""
+image: "/blog/how-to-complete-and-submit-vat-return-uk.jpg"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  sourceUrl: "https://www.pexels.com/photo/gray-calculator-and-black-magnifying-glass-on-brown-wooden-surface-7821685/"
+  source: "Pexels"
 imageCredit:
 schema: ""
 h1: "How to complete a UK VAT return: the 9-box walkthrough"

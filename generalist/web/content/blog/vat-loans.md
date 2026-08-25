@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "VAT Loans for Limited Companies: 2026 Guide"
 metaDescription: "A £40,000 quarterly VAT bill spread over 3 to 12 months: how VAT loans work for UK limited companies, what they cost, and when HMRC Time to Pay beats one."
 altText: "Company finance director reviewing a quarterly VAT return and cash-flow forecast on a laptop in a UK office"
-image: ""
+image: "/blog/vat-loans.jpg"
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  sourceUrl: "https://www.pexels.com/photo/a-person-holding-a-tax-form-7247409/"
+  source: "Pexels"
 h1: "VAT Loans for Limited Companies"
 summary: "A VAT loan spreads a lumpy quarterly VAT bill over 3 to 12 months so it does not drain your company's cash in one hit. Here is how the facility works, what it typically costs, how it compares with an HMRC Time to Pay arrangement, and how the same idea funds a corporation-tax bill."
 schema: ''

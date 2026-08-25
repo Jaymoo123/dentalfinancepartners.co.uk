@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "Management Buyout Guide: How an MBO Works"
 metaDescription: "How a management buyout works in the UK: Newco structure, funding, MBO vs EOT vs trade sale, and the seller's CGT and BADR at 18% in 2026/27."
 altText: "Management team reviewing a share purchase agreement in a UK office"
-image: ""
+image: "/blog/management-buyout-guide.jpg"
+imageCredit:
+  photographer: "Vlada Karpovich"
+  photographerUrl: "https://www.pexels.com/@vlada-karpovich"
+  sourceUrl: "https://www.pexels.com/photo/elderly-man-and-woman-discussing-business-in-a-meeting-7433853/"
+  source: "Pexels"
 h1: "Management Buyout Guide: How an MBO Works and What It Means for the Seller"
 summary: "A management buyout lets your existing team buy the business you built. This guide explains the Newco structure, how MBOs are funded in principle, how an MBO compares with an EOT or trade sale, and the seller's CGT and BADR position at 2026/27 rates."
 schema: ''

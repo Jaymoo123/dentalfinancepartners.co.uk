@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Dentists: Does It Fit?"
 metaDescription: "Most dental practices earn NHS UDA and card income, not trade invoices, so invoice finance rarely fits. It suits dental labs and B2B suppliers. 2026 guide."
 altText: "A dental laboratory technician preparing crowns and dentures alongside invoices sent to dental practices on 30-day payment terms."
-image: ""
+image: "/blog/invoice-finance-for-dentists.jpg"
+imageCredit:
+  photographer: "Daniel Frank"
+  photographerUrl: "https://www.pexels.com/@fr3nks"
+  sourceUrl: "https://www.pexels.com/photo/white-dental-equipment-near-wall-305567/"
+  source: "Pexels"
 h1: "Invoice Finance for Dentists: Does It Actually Fit?"
 summary: "Invoice finance advances cash against unpaid B2B invoices. A patient-facing dental practice earns NHS UDA contract payments and private card income, which is not a trade-debtor book, so invoice finance rarely fits. It does fit dental laboratories and B2B dental suppliers that invoice practices on credit terms. This guide is honest about which is which and where a practice should look instead."
 schema: ''

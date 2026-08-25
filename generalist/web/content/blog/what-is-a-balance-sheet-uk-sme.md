@@ -8,7 +8,12 @@ category: "Bookkeeping and Compliance"
 metaTitle: "What is a Balance Sheet? Plain Guide for UK Directors"
 metaDescription: "Plain English guide to reading a balance sheet for UK directors. Covers assets, liabilities, equity, the directors loan account and what lenders look for."
 altText: "UK director reviewing a printed balance sheet at a desk with a laptop and notepad"
-image: ""
+image: "/blog/what-is-a-balance-sheet-uk-sme.jpg"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  sourceUrl: "https://www.pexels.com/photo/business-data-printout-on-white-paper-6694560/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

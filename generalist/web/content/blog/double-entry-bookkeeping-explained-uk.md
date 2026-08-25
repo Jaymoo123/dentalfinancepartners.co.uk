@@ -8,7 +8,12 @@ category: "Bookkeeping and Compliance"
 metaTitle: "Double-Entry Bookkeeping Explained | UK Business Guide"
 metaDescription: "How double-entry bookkeeping works: debits, credits, ledgers and a full 5-transaction trial balance walk-through for UK sole traders and companies."
 altText: "UK business owner reviewing bookkeeping ledger entries at a desk with a laptop showing accounting software"
-image: ""
+image: "/blog/double-entry-bookkeeping-explained-uk.jpg"
+imageCredit:
+  photographer: "Strange Happenings"
+  photographerUrl: "https://www.pexels.com/@strangehappenings"
+  sourceUrl: "https://www.pexels.com/photo/abandoned-book-in-close-up-shot-12983115/"
+  source: "Pexels"
 imageCredit:
 h1: "Double-Entry Bookkeeping Explained for UK Business Owners"
 summary: "Double-entry bookkeeping records every transaction in two accounts simultaneously. This guide explains debits, credits, ledgers and T-accounts, then walks through a full five-transaction worked example from journal entry to balanced trial balance."

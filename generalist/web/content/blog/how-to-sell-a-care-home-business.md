@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Sell a Care Home Business in the UK"
 metaDescription: "Care homes sell on EBITDARM x yield or per bed, and CQC ratings move the price. How to value, sell and tax-plan a care home exit in 2026/27."
 altText: "Registered residential care home building with garden, UK setting"
-image: ""
+image: "/blog/how-to-sell-a-care-home-business.jpg"
+imageCredit:
+  photographer: "snazzy  Photography"
+  photographerUrl: "https://www.pexels.com/@snazzy-photography-2155042261"
+  sourceUrl: "https://www.pexels.com/photo/modern-leather-armchairs-in-elegant-lounge-setting-33646085/"
+  source: "Pexels"
 h1: "How to Sell a Care Home Business: Valuation, CQC and Tax"
 summary: "Care homes are valued differently from most trading businesses: on EBITDARM against a yield, or per registered bed, with the freehold often the largest single asset. This guide covers how a care home is priced, who buys them, the CQC registration and property traps that sink deals, and the CGT position for 2026/27."
 schema: ''

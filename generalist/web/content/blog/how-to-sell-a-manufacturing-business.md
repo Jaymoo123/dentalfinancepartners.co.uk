@@ -10,7 +10,12 @@ category: "Exit and Capital Gains"
 metaTitle: "Selling a Manufacturing Business: Tax by Deal Stage"
 metaDescription: "The sale of a factory stage by stage, with the tax attached to each: grooming, heads of terms, the share versus asset fork, completion accounts and earn-outs."
 altText: "Factory production floor with CNC machinery and a manager reviewing output on a tablet"
-image: ""
+image: "/blog/how-to-sell-a-manufacturing-business.jpg"
+imageCredit:
+  photographer: "Freek Wolsink"
+  photographerUrl: "https://www.pexels.com/@freek-wolsink-508219"
+  sourceUrl: "https://www.pexels.com/photo/industrial-robot-arm-in-a-manufacturing-facility-34207359/"
+  source: "Pexels"
 h1: "How to Sell a Manufacturing Business"
 summary: "A manufacturing sale runs through a fixed sequence, and each stage in it has a tax consequence you can still change while the stage is open. This page walks the sequence from the grooming year through heads of terms, diligence, completion accounts and the earn-out, and works one Blackburn factory sale both ways, as a share sale and as an asset sale, to a net-of-tax figure at 2026/27 rates."
 schema: ''

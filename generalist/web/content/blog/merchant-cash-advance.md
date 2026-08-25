@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Merchant Cash Advance UK: Costs & Company Rules"
 metaDescription: "A £40k merchant cash advance at a 1.3 factor rate repays £52k, well above a term loan. How company MCA costs, repayment and factor rates work in 2026/27."
 altText: "Card payment terminal on a retail counter representing merchant cash advance repayment from daily card takings"
-image: ""
+image: "/blog/merchant-cash-advance.jpg"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  sourceUrl: "https://www.pexels.com/photo/digital-terminal-beside-a-white-box-5239814/"
+  source: "Pexels"
 h1: "Merchant Cash Advance for UK Companies: Costs, Rules and Alternatives"
 summary: "A merchant cash advance lets a card-led company borrow against future card takings and repay as a fixed percentage of each day's settlement. This guide explains the holdback mechanic, factor rates versus APR, why an MCA is one of the most expensive facilities on the market, and when a revolving credit facility or invoice finance is the cheaper route. Company borrowers only."
 schema: ''

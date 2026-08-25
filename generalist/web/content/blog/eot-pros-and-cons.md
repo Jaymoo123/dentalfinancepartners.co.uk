@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "EOT Pros and Cons: The Honest 2026 Verdict"
 metaDescription: "Since 26 Nov 2025 an EOT sale is 50% CGT-taxed, not tax-free. A balanced look at EOT advantages and disadvantages at 2026/27 rates."
 altText: "Business owner weighing employee ownership trust options at a UK office desk"
-image: ""
+image: "/blog/eot-pros-and-cons.jpg"
+imageCredit:
+  photographer: "Yan Krukau"
+  photographerUrl: "https://www.pexels.com/@yankrukov"
+  sourceUrl: "https://www.pexels.com/photo/office-team-having-a-meeting-at-the-table-7640810/"
+  source: "Pexels"
 h1: "EOT Pros and Cons: A Balanced Look After the 2025 CGT Cut"
 summary: "Employee ownership trusts still offer a clean, phased exit and a strong culture story, but the tax case changed on 26 November 2025 when CGT relief was cut from 100% to 50%. This is an honest, up-to-date weigh-up of the real advantages and disadvantages for a UK owner-director deciding how to exit."
 schema: ''

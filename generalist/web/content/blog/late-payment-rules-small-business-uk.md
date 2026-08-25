@@ -8,7 +8,12 @@ category: "Bookkeeping and Compliance"
 metaTitle: "Late Payment Rules for Small Businesses UK 2026"
 metaDescription: "Statutory interest, fixed compensation and bad-debt VAT relief explained. Know your rights under the Late Payment of Commercial Debts Act 1998."
 altText: "UK small business owner reviewing an overdue invoice at a desk with a laptop and calculator"
-image: ""
+image: "/blog/late-payment-rules-small-business-uk.jpg"
+imageCredit:
+  photographer: "Tara Winstead"
+  photographerUrl: "https://www.pexels.com/@tara-winstead"
+  sourceUrl: "https://www.pexels.com/photo/dollar-bills-used-for-bills-payment-7111954/"
+  source: "Pexels"
 h1: "Late Payment Rules for UK Small Businesses: Statutory Interest, Compensation and Bad-Debt Relief"
 summary: "If a business owes you money and has missed the agreed payment date, UK law gives you automatic rights to charge statutory interest, claim fixed compensation and, eventually, reclaim the VAT you already paid to HMRC. This guide covers the exact figures, the worked arithmetic and the escalation steps you need."
 keyTakeaways:

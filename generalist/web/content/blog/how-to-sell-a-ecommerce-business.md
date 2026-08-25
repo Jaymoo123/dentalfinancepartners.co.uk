@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Sell an Ecommerce Business: 2026 Guide"
 metaDescription: "UK ecommerce businesses sell for roughly 2.5 to 4x SDE. How to value, transfer Amazon and Shopify accounts, and plan CGT on sale in 2026/27."
 altText: "Ecommerce business owner reviewing sales dashboards and inventory ahead of a sale"
-image: ""
+image: "/blog/how-to-sell-a-ecommerce-business.jpg"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  sourceUrl: "https://www.pexels.com/photo/brown-cardboard-boxes-on-a-concrete-ground-6169055/"
+  source: "Pexels"
 h1: "How to Sell an Ecommerce Business"
 summary: "Ecommerce businesses are valued on a multiple of seller's discretionary earnings, usually 2.5 to 4x for smaller stores. The deal lives or dies on whether the buyer can actually take over your Amazon, Shopify and ad accounts. Here is how to value it, who buys, the platform-transfer trap, and the CGT, BADR and EOT position for 2026/27."
 schema: ''

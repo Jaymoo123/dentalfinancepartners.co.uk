@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Equipment & Machinery Finance for UK Companies"
 metaDescription: "Finance an £80k machine on HP with 100% full expensing (about £20k CT saved) or lease it. HP vs lease vs refinance for UK limited companies in 2026/27."
 altText: "Industrial CNC machine and packaging line on a factory floor financed by a UK limited company"
-image: ""
+image: "/blog/equipment-and-machinery-finance.jpg"
+imageCredit:
+  photographer: "Alexas Fotos"
+  photographerUrl: "https://www.pexels.com/@alexasfotos"
+  sourceUrl: "https://www.pexels.com/photo/heavy-machinery-at-construction-site-with-excavator-33870733/"
+  source: "Pexels"
 h1: "Equipment and Machinery Finance for Limited Companies"
 summary: "How UK limited companies fund plant, machinery and equipment. Hire purchase versus finance lease versus operating lease, why new-or-used changes the tax answer, refinancing kit you already own, and a worked £80k HP-versus-lease comparison tied to full expensing."
 schema: ''

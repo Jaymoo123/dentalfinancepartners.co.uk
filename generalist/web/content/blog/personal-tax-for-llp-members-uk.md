@@ -8,7 +8,12 @@ category: "Sole Trader and Self Employment"
 metaTitle: "Personal Tax for LLP Members: Profits, NIC and Self Assessment"
 metaDescription: "LLP members pay income tax and Class 4 NIC on their profit share, not on what they draw. Here is how the self assessment system works for members."
 altText: "A UK accountant explaining LLP profit allocation and self assessment obligations to two members of a professional partnership"
-image: ""
+image: "/blog/personal-tax-for-llp-members-uk.jpg"
+imageCredit:
+  photographer: "Gustavo Fring"
+  photographerUrl: "https://www.pexels.com/@gustavo-fring"
+  sourceUrl: "https://www.pexels.com/photo/focused-diverse-coworkers-using-laptop-in-office-corridor-4173357/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

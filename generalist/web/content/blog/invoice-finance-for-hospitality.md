@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Hospitality: Does It Fit?"
 metaDescription: "Most hospitality income is card takings, not invoices, so invoice finance rarely fits. Which B2B caterers it suits, and where card-led venues go instead."
 altText: "Contract caterer reviewing corporate event invoices and a sales ledger on a laptop"
-image: ""
+image: "/blog/invoice-finance-for-hospitality.jpg"
+imageCredit:
+  photographer: "Andrea Piacquadio"
+  photographerUrl: "https://www.pexels.com/@olly"
+  sourceUrl: "https://www.pexels.com/photo/waiter-with-tray-working-in-stylish-restaurant-3769740/"
+  source: "Pexels"
 h1: "Invoice Finance for Hospitality Companies: Where It Works and Where It Is the Wrong Tool"
 summary: "Invoice finance releases cash tied up in unpaid business-to-business invoices, but most hospitality income arrives as card or cash at the point of sale, not as a trade-debtor book. That makes invoice finance the wrong tool for a typical restaurant, pub, cafe or hotel. It fits a narrower slice: contract and event caterers, corporate hospitality firms, and wholesale suppliers to venues, all invoicing other companies on credit terms. This guide is honest about the split, works through a caterer versus a restaurant, and points card-led venues to the finance that actually suits them."
 schema: ''

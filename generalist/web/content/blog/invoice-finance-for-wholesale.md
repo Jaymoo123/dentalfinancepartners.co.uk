@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Wholesale Companies UK"
 metaDescription: "Wholesale distributors face a double cash squeeze: stock paid upfront, retailers on 45-day terms. See how factoring plus stock finance releases up to 90%."
 altText: "Wholesale distribution warehouse with pallet racking and stock ready for despatch to independent retailers"
-image: ""
+image: "/blog/invoice-finance-for-wholesale.jpg"
+imageCredit:
+  photographer: "Handi   Boyz LLC"
+  photographerUrl: "https://www.pexels.com/@handiboyz"
+  sourceUrl: "https://www.pexels.com/photo/stacks-of-cardboard-boxes-5775099/"
+  source: "Pexels"
 h1: "Invoice Finance for Wholesale Companies: Funding the Double Squeeze"
 summary: "Wholesalers pay for stock long before their retail customers pay them. That double squeeze, made worse by seasonal builds and import lead times, is exactly what invoice finance was designed to bridge. This guide explains how factoring fits a wholesale debtor book of many small retailers, how it stacks with stock and trade finance, and how much cash your limited company could release."
 schema: ''

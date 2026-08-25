@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Small Business Loans for UK Limited Companies"
 metaDescription: "What a small UK limited company actually borrows in 2026/27: typical amounts (£10k to £500k), rate bands, eligibility, and a worked £30k example."
 altText: "Director of a small UK limited company reviewing a business loan offer on a laptop in an office"
-image: ""
+image: "/blog/small-business-loans.jpg"
+imageCredit:
+  photographer: "Polina Tankilevitch"
+  photographerUrl: "https://www.pexels.com/@polina-tankilevitch"
+  sourceUrl: "https://www.pexels.com/photo/cashier-in-store-3735172/"
+  source: "Pexels"
 h1: "Small Business Loans for Limited Companies: What You Actually Get Approved For"
 summary: "A practical guide to small-business loans for UK limited companies in 2026/27: how much a small company borrows, secured versus unsecured, bank versus alternative lenders, eligibility on one or two years of accounts, and a worked cost example. Company borrowers only."
 schema: ''

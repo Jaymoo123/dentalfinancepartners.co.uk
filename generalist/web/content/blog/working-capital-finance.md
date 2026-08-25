@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Working Capital Finance: Match the Product to the Gap"
 metaDescription: "A 45-day cash gap on £100k monthly turnover costs less on an RCF than an MCA. Compare working capital finance products for UK limited companies in 2026/27."
 altText: "UK company director reviewing a cash-flow forecast and working capital finance options at a desk"
-image: ""
+image: "/blog/working-capital-finance.jpg"
+imageCredit:
+  photographer: "Angie Reyes"
+  photographerUrl: "https://www.pexels.com/@anjreyes"
+  sourceUrl: "https://www.pexels.com/photo/philippine-money-on-black-surface-6921969/"
+  source: "Pexels"
 h1: "Working Capital Finance for UK Limited Companies: Which Product Bridges Your Cash-Flow Gap"
 summary: "Working capital finance is not one product, it is a shortlist. The right facility depends on what is actually causing your cash-flow gap: a slow debtor book points to invoice finance, a lumpy seasonal swing points to a revolving credit facility, a one-off tax bill points to a short-term loan. This guide maps your company's cash cycle to the facility that fits, compares the real cost of each on a worked £100k example, and shows where the cheap option and the expensive option diverge sharply."
 schema: ''

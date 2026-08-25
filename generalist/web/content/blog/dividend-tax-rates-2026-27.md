@@ -8,7 +8,12 @@ category: "Director Pay and Dividends"
 metaTitle: "Dividend Tax Rates 2026/27: 10.75%, 35.75%, 39.35%"
 metaDescription: "Dividend tax rose on 6 April 2026: basic rate 10.75%, higher 35.75%, additional 39.35%. What the FA 2026 change costs directors, with worked 2026/27 numbers."
 altText: "Company director comparing 2025/26 and 2026/27 dividend tax calculations on a laptop with HMRC guidance open"
-image: ""
+image: "/blog/dividend-tax-rates-2026-27.jpg"
+imageCredit:
+  photographer: "Rômulo Queiroz"
+  photographerUrl: "https://www.pexels.com/@romulo-queiroz-424988940"
+  sourceUrl: "https://www.pexels.com/photo/sound-program-on-a-screen-16594725/"
+  source: "Pexels"
 h1: "Dividend Tax Rates 2026/27: What the FA 2026 Rate Rise Costs You"
 summary: "From 6 April 2026, Finance Act 2026 raised the dividend ordinary rate from 8.75% to 10.75% and the upper rate from 33.75% to 35.75%. The additional rate stays at 39.35% and the dividend allowance stays at £500. This is the 2026/27 edition of our dividend rates coverage: exactly what changed, what it costs at typical director profit-extraction levels, and the timing and planning points that follow from a two percentage point rise."
 keyTakeaways:

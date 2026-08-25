@@ -8,7 +8,12 @@ category: "Bookkeeping and Compliance"
 metaTitle: "Do I Need a Business Bank Account? UK Guide [2025/26]"
 metaDescription: "Sole traders and limited companies: what the law actually says, why separation is still essential in practice, and what to look for in a business account."
 altText: "UK business owner reviewing bank statements and receipts at a desk with a laptop"
-image: ""
+image: "/blog/do-i-need-a-separate-business-bank-account-uk.jpg"
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  sourceUrl: "https://www.pexels.com/photo/cards-on-top-of-a-laptop-8937437/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

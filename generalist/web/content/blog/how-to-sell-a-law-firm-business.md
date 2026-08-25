@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Sell a Law Firm: SRA, Run-Off and Tax"
 metaDescription: "Selling a law firm in 2026/27: SRA change-of-control approval, 6-year PII run-off cost, WIP and the EOT 50% CGT rule after 26 Nov 2025."
 altText: "Solicitor reviewing a firm sale file in a UK law office"
-image: ""
+image: "/blog/how-to-sell-a-law-firm-business.jpg"
+imageCredit:
+  photographer: "KATRIN  BOLOVTSOVA"
+  photographerUrl: "https://www.pexels.com/@ekaterina-bolovtsova"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-sitting-at-the-table-6077296/"
+  source: "Pexels"
 h1: "How to Sell a Law Firm or Solicitors' Business"
 summary: "Selling a law firm turns on things a normal trade sale never touches: SRA change-of-control approval, six-year PII run-off cover, unbilled WIP and disbursements, and the client account. Here is how firms are valued, who buys them, and what tax you pay at 2026/27 rates, including the EOT relief that was cut to 50% on 26 November 2025."
 schema: ''

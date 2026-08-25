@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Recruitment Agencies UK"
 metaDescription: "How UK recruitment agencies fund a £35k weekly wage run while clients pay at 55 days: pay-and-bill factoring, 90% advances and perm clawback risk."
 altText: "Recruitment agency director reviewing a temp payroll run and client aged debtor report"
-image: ""
+image: "/blog/invoice-finance-for-recruitment-agencies.jpg"
+imageCredit:
+  photographer: "Resume Genius"
+  photographerUrl: "https://www.pexels.com/@resumegenius"
+  sourceUrl: "https://www.pexels.com/photo/young-woman-in-business-attire-shaking-hands-with-recruiting-manager-after-job-interview-18848927/"
+  source: "Pexels"
 h1: "Invoice Finance for Recruitment Agencies"
 summary: "Temp desks pay contractors every Friday but wait 45 to 60 days for clients to settle. This guide shows UK recruitment companies how pay-and-bill factoring closes that structural payroll gap, why perm placement fees behave differently, and how to choose a facility that funds the wage run without swallowing the margin."
 schema: ''

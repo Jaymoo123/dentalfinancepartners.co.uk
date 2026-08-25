@@ -8,7 +8,12 @@ category: "Director Pay and Dividends"
 metaTitle: "High Income Child Benefit Charge: Director Guide 2026/27"
 metaDescription: "Dividends count toward HICBC adjusted net income. Directors can use pension contributions and dividend planning to cut or eliminate the charge."
 altText: "UK limited company director reviewing child benefit and pension planning figures on a laptop at a home office desk"
-image: ""
+image: "/blog/high-income-child-benefit-charge-business-owners-uk.jpg"
+imageCredit:
+  photographer: "Kampus Production"
+  photographerUrl: "https://www.pexels.com/@kampus"
+  sourceUrl: "https://www.pexels.com/photo/a-family-spending-time-together-on-a-park-6182127/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

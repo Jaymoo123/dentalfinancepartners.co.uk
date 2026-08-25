@@ -9,7 +9,12 @@ category: "Bookkeeping and Compliance"
 metaTitle: "Cash Flow Management for Small Businesses UK Guide"
 metaDescription: "Learn to forecast cash, reduce debtor lock-up and run credit control systematically. Practical 13-week forecast, debtor-days arithmetic and worked examples."
 altText: "Small business owner reviewing a cash flow forecast spreadsheet at a desk with a calculator and bank statements"
-image: ""
+image: "/blog/cash-flow-management-small-business-uk.jpg"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  sourceUrl: "https://www.pexels.com/photo/a-person-counting-money-6694965/"
+  source: "Pexels"
 h1: "Cash Flow Management for Small UK Businesses: Forecasting, Lock-Up and Credit Control"
 summary: "A systematic cash management practice for UK small business owners. Covers 13-week rolling forecasts, debtor-days arithmetic, the cash conversion cycle, and a credit-control operating rhythm. Number-first, with worked examples you can run on your own figures."
 keyTakeaways:

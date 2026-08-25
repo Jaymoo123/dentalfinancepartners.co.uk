@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Revolving Credit Facility: UK Company Guide"
 metaDescription: "A £100k revolving credit facility with £30k average drawn can cost under £3,600 a year in 2026/27. How RCFs work and fit for UK limited companies."
 altText: "UK company director reviewing a revolving credit facility drawdown schedule on a laptop in an office"
-image: ""
+image: "/blog/revolving-credit-facility.jpg"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  sourceUrl: "https://www.pexels.com/photo/green-credit-card-on-top-of-papers-7821472/"
+  source: "Pexels"
 h1: "Revolving Credit Facility: The Flexible Credit Line for UK Companies"
 summary: "A revolving credit facility lets your company draw, repay and redraw against a set limit, paying interest only on the balance actually drawn. This guide covers how an RCF works, what it costs (arrangement fee, interest, non-utilisation fee), how it compares to an overdraft and a term loan, and when it is the right tool for lumpy or seasonal company cash flow."
 schema: ''

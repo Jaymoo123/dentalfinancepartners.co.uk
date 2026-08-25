@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Security Firms UK Guide"
 metaDescription: "A £48k weekly guard wage run against clients paying at 60 days: how invoice finance funds SIA-licensed security company payroll in the 2026/27 year."
 altText: "SIA-licensed security officers on a night shift at a commercial site reception in the UK"
-image: ""
+image: "/blog/invoice-finance-for-security-firms.jpg"
+imageCredit:
+  photographer: "Click Jeth"
+  photographerUrl: "https://www.pexels.com/@click-jeth-703137695"
+  sourceUrl: "https://www.pexels.com/photo/security-guard-in-uniform-18530600/"
+  source: "Pexels"
 h1: "Invoice Finance for Security Firms"
 summary: "SIA-licensed manned-guarding companies pay officers weekly on 24/7 rotas but wait 30 to 60 days for corporate and public-sector clients to settle. That structural gap, made worse by single-client concentration and thin margins, is exactly what invoice finance is built to close. This guide shows how factoring with payroll funding works for a limited-company guarding business, what advance rate to expect, and where concentration risk bites."
 schema: ''

@@ -8,7 +8,12 @@ category: "Bookkeeping and Compliance"
 metaTitle: "UK Late Payment Times 2026: 33.5-Day Average"
 metaDescription: "Large UK buyers took 33.5 days to pay in H1 2026, down from 39.1 in 2017. Statutory payment data on what's improving and the levers you control."
 altText: "Small business owner reviewing an aged-debtor report and invoice ledger on a laptop"
-image: ""
+image: "/blog/uk-late-payment-times-2026.jpg"
+imageCredit:
+  photographer: "Towfiqu barbhuiya"
+  photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
+  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-an-alarm-clock-and-a-calendar-on-a-pink-surface-8541753/"
+  source: "Pexels"
 h1: "UK Late Payment Times 2026: Improving, But a Month-Plus Wait Is Still Normal"
 summary: "Large UK buyers took an average of 33.5 days to pay their suppliers in the first half of 2026, the fastest figure since statutory reporting began in 2017. This article works through the full trend using our proprietary UK Late Payment Index, built entirely from the statutory Payment Practices Reporting dataset, and covers what a month-plus wait still means for a small supplier's cash flow, and the three levers an owner controls: payment terms, credit control, and invoice financing."
 keyTakeaways:

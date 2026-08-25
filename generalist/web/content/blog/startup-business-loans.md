@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Startup Business Loans for a New UK Company"
 metaDescription: "The government Start Up Loan is a £25,000 personal loan, not company finance. How a new UK limited company funds fit-out, vans and stock in 2026/27."
 altText: "Founder of a new UK limited company reviewing startup finance options with a laptop and business plan on a desk"
-image: ""
+image: "/blog/startup-business-loans.jpg"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  sourceUrl: "https://www.pexels.com/photo/a-person-pointing-at-a-whiteboard-using-a-pen-7413910/"
+  source: "Pexels"
 h1: "Startup Business Loans for a New Limited Company"
 summary: "A new limited company can borrow, but the routes differ from the government Start Up Loan (which is personal, capped at £25,000). This guide maps the company facilities that fund fit-out, vehicles and stock, and how to improve your odds of approval."
 schema: ''

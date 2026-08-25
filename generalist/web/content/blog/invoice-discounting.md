@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Discounting UK: Costs and Who Qualifies"
 metaDescription: "Confidential invoice discounting releases up to 90% of your ledger while customers stay unaware. See 2026/27 CID costs, eligibility and lender criteria."
 altText: "Finance director reviewing a company sales ledger and a confidential invoice discounting facility on screen"
-image: ""
+image: "/blog/invoice-discounting.jpg"
+imageCredit:
+  photographer: "Kindel Media"
+  photographerUrl: "https://www.pexels.com/@kindelmedia"
+  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-using-calculator-7688524/"
+  source: "Pexels"
 h1: "Invoice Discounting for UK Limited Companies: Confidential Funding on Your Own Ledger"
 summary: "Confidential invoice discounting (CID) lets your company draw cash against its unpaid B2B invoices while keeping collections in-house and your customers unaware a funder is involved. It is cheaper than factoring because you run your own credit control, but lenders reserve it for companies with the turnover, covenant and systems to manage their ledger to a funder's standard. This guide sets out how CID works, what it costs in 2026/27, the eligibility bar, and how it differs from factoring, selective discounting and supply-chain finance."
 schema: ''

@@ -8,7 +8,12 @@ category: "Payroll and PAYE"
 metaTitle: "Employer NIC 2026/27: The True Cost of an Employee"
 metaDescription: "What an employee really costs in 2026/27: 15% employer NIC above £5,000, 3% pension, apprenticeship levy. Worked examples at £30k, £45k and £70k salaries."
 altText: "UK business owner reviewing payroll costs and employer National Insurance figures on a laptop before making a hiring decision"
-image: ""
+image: "/blog/employer-nic-true-cost-of-employee-2026-27.jpg"
+imageCredit:
+  photographer: "olia danilevich"
+  photographerUrl: "https://www.pexels.com/@olia-danilevich"
+  sourceUrl: "https://www.pexels.com/photo/people-working-together-at-the-office-6326260/"
+  source: "Pexels"
 h1: "Employer NIC and the True Cost of an Employee in 2026/27"
 summary: "The salary you agree with a new employee is not what they cost you. In 2026/27 you add employer National Insurance at 15% on everything above £5,000, a minimum 3% pension contribution on qualifying earnings, and, for larger payrolls, the 0.5% apprenticeship levy. This guide works through the full true cost at £30,000, £45,000 and £70,000 salaries, explains the £10,500 Employment Allowance, and shows the marginal cost of every pay rise you award."
 keyTakeaways:

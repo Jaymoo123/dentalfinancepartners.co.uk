@@ -9,7 +9,12 @@ category: "Sole Trader and Self Employment"
 metaTitle: "How to Set Up a Business Partnership in the UK"
 metaDescription: "Step-by-step guide to forming a UK business partnership: nominated partner, HMRC registration, SA800, partnership agreement, joint liability and VAT."
 altText: "Two business partners reviewing a partnership agreement at a desk in a modern UK office"
-image: ""
+image: "/blog/how-to-set-up-a-business-partnership-uk.jpg"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  sourceUrl: "https://www.pexels.com/photo/business-handshake-signifying-partnership-33175648/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

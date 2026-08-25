@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Sell a Recruitment Business (2026 Guide)"
 metaDescription: "Selling a recruitment business in 2026/27: temp-book vs perm valuation, NFI multiples, invoice-finance novation, CGT, BADR at 18% and the EOT option."
 altText: "Recruitment agency owner reviewing consultant placement figures before a business sale"
-image: ""
+image: "/blog/how-to-sell-a-recruitment-business.jpg"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  sourceUrl: "https://www.pexels.com/photo/businessman-looking-at-employee-5439368/"
+  source: "Pexels"
 h1: "How to Sell a Recruitment Business"
 summary: "What a UK recruitment agency is really worth, why a temp and contractor book sells for more than a perm desk, the diligence traps around consultants, covenants and invoice finance, and the tax on exit at 2026/27 rates."
 schema: ''

@@ -8,7 +8,12 @@ category: "Corporation Tax"
 metaTitle: "Corporation Tax Early Payment and Instalments: UK Guide"
 metaDescription: "Pay corporation tax early and HMRC pays you credit interest. Large companies must use quarterly instalments. Here is how both routes work."
 altText: "UK accountant reviewing a corporation tax payment schedule on a laptop with a calendar and calculator on the desk"
-image: ""
+image: "/blog/corporation-tax-paying-early-or-in-instalments-uk.jpg"
+imageCredit:
+  photographer: "Towfiqu barbhuiya"
+  photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
+  sourceUrl: "https://www.pexels.com/photo/a-person-holding-black-pen-pointing-on-calendar-11773871/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

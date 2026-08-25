@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Unsecured Business Loans: Rates, PGs, Eligibility"
 metaDescription: "Unsecured business loans from £25k for UK limited companies in 2026/27: how lenders price risk, the personal guarantee reality, rates and eligibility."
 altText: "UK company director reviewing an unsecured business loan agreement and personal guarantee at an office desk"
-image: ""
+image: "/blog/unsecured-business-loans.jpg"
+imageCredit:
+  photographer: "Andrea Piacquadio"
+  photographerUrl: "https://www.pexels.com/@olly"
+  sourceUrl: "https://www.pexels.com/photo/crop-businessman-giving-contract-to-woman-to-sign-3760067/"
+  source: "Pexels"
 h1: "Unsecured Business Loans for Limited Companies"
 summary: "Unsecured business loans give a UK limited company capital without pledging assets, but approval rests on trading strength and, almost always, a director's personal guarantee. We explain how lenders price the risk, what you will pay versus a secured loan, and when the higher rate is worth it."
 schema: ''

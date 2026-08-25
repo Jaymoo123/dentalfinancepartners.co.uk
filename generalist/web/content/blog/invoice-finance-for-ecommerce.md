@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Ecommerce Sellers UK"
 metaDescription: "A £1.2m ecommerce seller with 60% on Amazon reserves can only factor the wholesale slice. When invoice finance fits online sellers and when an MCA fits."
 altText: "Ecommerce warehouse with packed parcels waiting for marketplace dispatch and settlement"
-image: ""
+image: "/blog/invoice-finance-for-ecommerce.jpg"
+imageCredit:
+  photographer: "Yetkin Ağaç"
+  photographerUrl: "https://www.pexels.com/@yetkin-agac-664866326"
+  sourceUrl: "https://www.pexels.com/photo/industrial-factory-floor-with-machinery-and-crates-34718922/"
+  source: "Pexels"
 h1: "Invoice Finance for Ecommerce Companies: What Is Actually Financeable"
 summary: "Most ecommerce cash is trapped in marketplace payout holds and unsold stock, not in a debtor book, so classic invoice finance rarely fits a B2C seller. Only the B2B and wholesale slice of your sales is factorable. This guide shows a limited-company seller which part qualifies, models the release on a £1.2m book, and routes the rest to the right product."
 schema: ''

@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Set Up an EOT: 2026 Step-by-Step Guide"
 metaDescription: "How to set up an EOT in 2026: qualifying conditions, trustee rules, valuation, funding and the 3-6 month timeline, with the new 50% CGT charge explained."
 altText: "Business owner and adviser reviewing an employee ownership trust deed in a UK office"
-image: ""
+image: "/blog/how-to-set-up-an-eot.jpg"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  sourceUrl: "https://www.pexels.com/photo/colleagues-standing-and-holding-books-inside-an-office-8297454/"
+  source: "Pexels"
 h1: "How to Set Up an EOT: A Step-by-Step Guide for 2026"
 summary: "Setting up an Employee Ownership Trust means meeting strict qualifying conditions, building a compliant trustee structure, valuing the company and funding the sale from future profits. This guide walks through each step, the 3 to 6 month timeline, typical costs, and the tightened trustee rules that now apply."
 schema: ''

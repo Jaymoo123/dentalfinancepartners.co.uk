@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "How to Sell a Construction Business (2026/27)"
 metaDescription: "Sell a construction business in 2026/27: why multiples are a lumpy 2-4x EBITDA, how CIS, retentions and PI run-off are handled, plus BADR at 18%."
 altText: "Construction company director reviewing project accounts and work-in-progress on a UK building site office"
-image: ""
+image: "/blog/how-to-sell-a-construction-business.jpg"
+imageCredit:
+  photographer: "Aimee"
+  photographerUrl: "https://www.pexels.com/@aimee-14619056"
+  sourceUrl: "https://www.pexels.com/photo/tower-cranes-on-the-buildings-6309085/"
+  source: "Pexels"
 h1: "How to Sell a Construction Business: Valuation, CIS and Tax in 2026/27"
 summary: "Construction businesses sell on lower, lumpier multiples than most sectors: typically 2 to 4 times EBITDA, propped up by net assets and work in progress. This guide covers what a contractor is worth, who buys them, and the CIS, retention, novation and latent-defect traps that decide your final price, plus the tax on exit at 2026/27 rates."
 schema: ''

@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Haulage & Transport UK"
 metaDescription: "Transport factoring bridges the gap between £18k weekly diesel bills and 75-day shipper terms. How UK haulage companies release cash from unpaid invoices."
 altText: "Articulated lorries parked at a UK logistics depot at dusk"
-image: ""
+image: "/blog/invoice-finance-for-haulage-and-transport.jpg"
+imageCredit:
+  photographer: "Tom Jackson"
+  photographerUrl: "https://www.pexels.com/@tom-jackson-1238161"
+  sourceUrl: "https://www.pexels.com/photo/trailers-on-a-parking-lot-27099093/"
+  source: "Pexels"
 h1: "Invoice Finance for Haulage and Transport Companies"
 summary: "Haulage runs on a brutal timing mismatch: you pay for diesel, driver wages and tolls this week, but your shipper clients settle at 60 to 90 days. Invoice finance, and transport factoring in particular, releases most of an invoice's value the day you raise it. This guide explains how it works for UK limited-company hauliers, where fuel advances fit, and why the fleet itself is a separate asset-finance question."
 schema: ''

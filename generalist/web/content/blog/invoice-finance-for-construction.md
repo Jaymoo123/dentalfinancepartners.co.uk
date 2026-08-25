@@ -8,7 +8,12 @@ category: "Business Finance"
 metaTitle: "Invoice Finance for Construction UK Guide"
 metaDescription: "A £500k contract with 5% retention held a year, 60-day AfP terms and 20% CIS at source: how construction finance funds subcontractor cash flow in 2026/27."
 altText: "A UK construction subcontractor reviewing an application for payment on a commercial building site"
-image: ""
+image: "/blog/invoice-finance-for-construction.jpg"
+imageCredit:
+  photographer: "Mathias Reding"
+  photographerUrl: "https://www.pexels.com/@matreding"
+  sourceUrl: "https://www.pexels.com/photo/a-person-in-orange-long-sleeve-shirt-standing-on-gray-scaffolding-12008095/"
+  source: "Pexels"
 h1: "Invoice Finance for Construction"
 summary: "Construction subcontractors do not raise ordinary invoices. They submit applications for payment, wait through a certification and pay-less cycle, suffer 20 percent CIS deducted at source, and leave 5 percent retention locked up for a year or more. That is why standard factoring usually declines construction and why a specialist construction-finance facility that understands applications for payment and retention exists. This guide, written for limited-company subcontractors, shows how the funding works, what to watch, and where the true cash is trapped."
 schema: ''

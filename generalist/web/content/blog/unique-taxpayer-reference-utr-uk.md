@@ -9,7 +9,12 @@ category: "Sole Trader and Self Employment"
 metaTitle: "Unique Taxpayer Reference (UTR): What It Is and How to Find It"
 metaDescription: "Your UTR is a 10-digit tax reference from HMRC. Learn what it is, where to find it, what to do if you lose it, and when each type of UTR applies."
 altText: "Person reviewing HMRC correspondence showing a Unique Taxpayer Reference number at a home office desk"
-image: ""
+image: "/blog/unique-taxpayer-reference-utr-uk.jpg"
+imageCredit:
+  photographer: "Emily Wilkinson"
+  photographerUrl: "https://www.pexels.com/@ewilko"
+  sourceUrl: "https://www.pexels.com/photo/a-letter-on-a-wooden-flooring-4237460/"
+  source: "Pexels"
 imageCredit:
   photographer: ""
   photographerUrl: ""

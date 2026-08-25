@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "Selling a Business Tax: CGT & BADR 2026/27"
 metaDescription: "At 2026/27 rates a £4m business sale costs about £851k CGT via a trade sale with BADR at 18%, or £455k via an EOT. Compare the routes before you sign."
 altText: "Business owner comparing exit routes and capital gains tax figures on paper"
-image: ""
+image: "/blog/selling-a-business-tax-cgt-badr.jpg"
+imageCredit:
+  photographer: "Ron Lach"
+  photographerUrl: "https://www.pexels.com/@ron-lach"
+  sourceUrl: "https://www.pexels.com/photo/unrecognizable-hands-handshaking-over-table-9870223/"
+  source: "Pexels"
 h1: "Selling a Business: the Tax on Each Exit Route in 2026/27"
 summary: "The tax you pay on selling a business depends on the route, not just the price. This page compares a trade sale with BADR at 18%, a sale to an EOT under the new 50% charge, a members' voluntary liquidation and a family share gift on the same £4m business, at 2026/27 rates."
 schema: ''

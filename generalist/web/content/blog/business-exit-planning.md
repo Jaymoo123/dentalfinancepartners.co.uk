@@ -8,7 +8,12 @@ category: "Exit and Capital Gains"
 metaTitle: "Business Exit Planning: A 3-Year UK Tax Runway"
 metaDescription: "Start business exit planning 2-3 years out to lock in BADR at 18% and pick the right route. A year-by-year UK tax runway to a tax-efficient sale."
 altText: "Business owner mapping a multi-year exit timeline on a whiteboard in a UK office"
-image: ""
+image: "/blog/business-exit-planning.jpg"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  sourceUrl: "https://www.pexels.com/photo/professional-handshake-in-business-meeting-33175650/"
+  source: "Pexels"
 h1: "Business Exit Planning: How to Make Your Company Sellable and Tax-Efficient Years Before You Sell"
 summary: "Good exit planning starts two to three years before completion, not the month you decide to sell. This guide sets out the exit routes, the tax runway that locks in Business Asset Disposal Relief at 18%, the EOT 50% timing lever after 26 November 2025, and a year-by-year plan to make your business genuinely sellable."
 schema: ''
