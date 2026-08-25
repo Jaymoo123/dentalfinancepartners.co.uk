@@ -6,7 +6,7 @@ import type { BreadcrumbItem, SchemaThing, SiteSchemaOpts } from "./types";
  */
 export function buildBreadcrumb(
   items: BreadcrumbItem[],
-  opts: SiteSchemaOpts,
+  opts: Pick<SiteSchemaOpts, "siteUrl">,
 ): SchemaThing {
   return {
     "@context": "https://schema.org",
