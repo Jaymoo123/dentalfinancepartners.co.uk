@@ -171,3 +171,26 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
   (dentists' ground), 2x CGT-on-property pages (property site's ground).
 - Next: remaining rewrite batches from the worklist (298 eligible), research packs +
   language pass per cluster, then net-new waves. Nothing deployed; all owner-gated.
+
+## Track 2 / R.5 progress 2026-08-25 (late session, PAUSED here)
+
+- Rewrite batches 1-3 SHIPPED to main: 30 legacy pages fully overhauled, dual-QA'd,
+  fix lists applied (`b6c151b8`, `33ef519b`, `369dc4ee`). Live factual errors fixed
+  across the corpus incl. wrong BIK band tables, inverted marginal-relief formula,
+  fabricated FTR/HETV relief rates, stale AIA-reversion claims, wrong dividend
+  arithmetic, plus the stale-figure class sweep (SPT, Companies House fees, 18 files).
+- creative_performers wave COMPLETE end to end (`c4afb3d5`): 9 surfaces (4 reframe,
+  3 net-new, 2 extend), dual-QA + all fixes applied. First of 6 niche waves DONE.
+- trades_transport wave READY TO WRITE: packs + language spec frozen at
+  docs/generalist/dossiers/trades_packs/ (9 packs; the SERP edge = zero worked
+  examples anywhere in the field). NEXT ACTION: launch 9 Opus writers per pack,
+  then dual-QA, exactly the creative-wave pattern.
+- After trades: personal_care_fitness, retail_product, specialist_professions waves
+  (dossiers frozen, packs not yet built); care_education needs its ~$0.40 D1 harvest
+  (gate-blocked 08-25) before packs.
+- Remaining rewrite worklist: ~270 lower-ROI pages (top-40 ROI set is done except
+  the 4 held-back cross-site pages: forex-traders, dentistry-compliance, 2x
+  CGT-on-property; owner decision pending).
+- NOTHING DEPLOYED. Owner will deploy at end. Local commits ready to push.
+- Note: research packs reference the 08-25 scratchpad GSC/Bing pulls; a resumed
+  session should re-pull fresh data if more than ~a week has passed.
