@@ -14,7 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@rdne"
   sourceUrl: "https://www.pexels.com/photo/gray-calculator-and-black-magnifying-glass-on-brown-wooden-surface-7821685/"
   source: "Pexels"
-imageCredit:
 schema: ""
 h1: "How to complete a UK VAT return: the 9-box walkthrough"
 summary: "Every VAT-registered UK business must file a VAT return each tax period using MTD-compatible software. This guide walks through all nine boxes, shows a worked example with real figures flowing through every box, covers the submission deadline and payment options, and explains what to do if you find an error after submitting."

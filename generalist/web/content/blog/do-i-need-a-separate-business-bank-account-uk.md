@@ -14,11 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@leeloothefirst"
   sourceUrl: "https://www.pexels.com/photo/cards-on-top-of-a-laptop-8937437/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: ""
 h1: "Do I need a separate business bank account in the UK?"
 summary: "The legal answer depends on your business structure, and many people are surprised by what the law actually says. This guide explains the position for sole traders, limited companies and partnerships, covers the HMRC record-keeping angle, and walks through what good separation looks like in practice."
 schema: ""

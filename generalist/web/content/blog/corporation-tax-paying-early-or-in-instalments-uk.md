@@ -14,11 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
   sourceUrl: "https://www.pexels.com/photo/a-person-holding-black-pen-pointing-on-calendar-11773871/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: ""
 h1: "Corporation Tax: Should You Pay Early or in Quarterly Instalments?"
 summary: "Most companies pay corporation tax in a single payment 9 months and 1 day after their accounting period ends. If you pay early, HMRC pays you credit interest at 2.75% (from 9 January 2026) on any overpayment. If your company's augmented profits exceed £1.5 million, quarterly instalment payments (QIPs) are compulsory, and very large companies with profits over £20 million must pay even earlier."
 schema: ""

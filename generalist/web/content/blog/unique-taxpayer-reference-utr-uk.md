@@ -15,11 +15,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@ewilko"
   sourceUrl: "https://www.pexels.com/photo/a-letter-on-a-wooden-flooring-4237460/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: ""
 h1: "Unique Taxpayer Reference (UTR): what it is and how to find it"
 summary: "A UTR is a 10-digit reference number HMRC uses to identify you or your business for tax purposes. This guide explains all three types (personal, corporation tax, and partnership), where to find each one, what to do if you have lost it, and when HMRC actually requires it."
 schema: ""

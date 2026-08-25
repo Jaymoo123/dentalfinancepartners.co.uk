@@ -14,7 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@strangehappenings"
   sourceUrl: "https://www.pexels.com/photo/abandoned-book-in-close-up-shot-12983115/"
   source: "Pexels"
-imageCredit:
 h1: "Double-Entry Bookkeeping Explained for UK Business Owners"
 summary: "Double-entry bookkeeping records every transaction in two accounts simultaneously. This guide explains debits, credits, ledgers and T-accounts, then walks through a full five-transaction worked example from journal entry to balanced trial balance."
 keyTakeaways:

@@ -14,11 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
   sourceUrl: "https://www.pexels.com/photo/business-data-printout-on-white-paper-6694560/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: ""
 h1: "What is a balance sheet? A plain guide for UK directors"
 summary: "A balance sheet is a financial snapshot of your company at one date, showing everything it owns, everything it owes and what remains for shareholders. This guide walks through every section of a UK small-company balance sheet in plain English, including a worked illustrative example, the directors loan account, and the three patterns lenders look for in your Companies House filing."
 schema: ""

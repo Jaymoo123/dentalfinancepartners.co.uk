@@ -15,11 +15,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
   sourceUrl: "https://www.pexels.com/photo/business-handshake-signifying-partnership-33175648/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: "Pexels"
 h1: "How to Set Up a Business Partnership in the UK"
 summary: "Setting up a business partnership in the UK is straightforward but carries one risk most new partners overlook: unlimited joint and several liability. This guide covers every formation step, from choosing a nominated partner and registering with HMRC, to drafting a partnership agreement, filing your first SA800 and getting your records, VAT and bank account in order."
 schema: ""

@@ -14,11 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@kampus"
   sourceUrl: "https://www.pexels.com/photo/a-family-spending-time-together-on-a-park-6182127/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: ""
 h1: "High Income Child Benefit Charge: The Director and Business Owner Guide"
 summary: "If you run a limited company and receive child benefit, dividends from your company count toward the adjusted net income that triggers the High Income Child Benefit Charge. This guide explains the director-specific planning levers: pension contributions, Gift Aid, and dividend timing, and shows worked examples of how each reduces or eliminates the charge."
 keyTakeaways:

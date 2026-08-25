@@ -15,7 +15,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@cottonbro"
   sourceUrl: "https://www.pexels.com/photo/a-happy-family-sitting-on-the-couch-5998712/"
   source: "Pexels"
-imageCredit:
 h1: "Accountant for Foster Carers: Work Out What You Actually Owe"
 summary: "Foster carers are self-employed for tax and file a self assessment return, but most owe nothing once qualifying care relief is applied. This page does the sum in full, with the fixed household amount and the weekly amounts for 2026/27 and 2025/26 dated separately, a complete worked return, and the National Insurance point that matters most when your taxable profit is nil."
 schema: ""

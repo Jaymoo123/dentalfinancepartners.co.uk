@@ -14,11 +14,6 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@gustavo-fring"
   sourceUrl: "https://www.pexels.com/photo/focused-diverse-coworkers-using-laptop-in-office-corridor-4173357/"
   source: "Pexels"
-imageCredit:
-  photographer: ""
-  photographerUrl: ""
-  sourceUrl: ""
-  source: ""
 h1: "Personal Tax for LLP Members: What You Actually Owe and When"
 summary: "LLP members are taxed on their allocated profit share for the tax year, not on the cash they draw from the partnership. This guide explains how profit allocation works, how to calculate your income tax and Class 4 NIC bill for 2026/27, how to handle payments on account, and when the salaried-member rules might change your treatment entirely."
 schema: ""
