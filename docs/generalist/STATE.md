@@ -181,10 +181,21 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
   arithmetic, plus the stale-figure class sweep (SPT, Companies House fees, 18 files).
 - creative_performers wave COMPLETE end to end (`c4afb3d5`): 9 surfaces (4 reframe,
   3 net-new, 2 extend), dual-QA + all fixes applied. First of 6 niche waves DONE.
-- trades_transport wave READY TO WRITE: packs + language spec frozen at
-  docs/generalist/dossiers/trades_packs/ (9 packs; the SERP edge = zero worked
-  examples anywhere in the field). NEXT ACTION: launch 9 Opus writers per pack,
-  then dual-QA, exactly the creative-wave pattern.
+- trades_transport wave WRITTEN 2026-08-25/26 (`4e6a69f7`): 8 net-new pages (N1-N8),
+  dual-QA + all fixes applied (71 published house-position citations stripped wave-wide,
+  TOMS position VERIFIED IN FORCE and rewritten from the fallback hedge per RC Brief 8
+  (2025) / effect 2 Jan 2026, EA cap + MTD income test fixed on security, marginal
+  relief added on cleaning, CO2 pool assumption on taxi SA). All 47 worked-example
+  figures recomputed clean. Tests 285/285, build green. Images empty: run
+  scripts/blog_image_backfill.py for the 8 slugs around deploy.
+- **E1 uber/delivery EXTEND DEFERRED**: both seeds inside armed monitored_pages
+  windows (accountant-for-delivery-drivers-uk to 2026-09-10, accountant-for-uber-drivers
+  to 2026-10-06). Pack stays frozen; run E1 when the windows expire (delivery editable
+  from 09-11). Wave pages link the existing seeds as-is.
+- QA note for future waves: §2 locks Class 4 6% for 2025/26 only, and the £12,570 /
+  £50,270 / £125,140 bands are tagged 2025/26; pages using them in 2026/27 copy carry
+  a dated "still current when checked" tag. Consider a house_positions 2026/27
+  currency pass for §2 bands.
 - After trades: personal_care_fitness, retail_product, specialist_professions waves
   (dossiers frozen, packs not yet built); care_education needs its ~$0.40 D1 harvest
   (gate-blocked 08-25) before packs.
