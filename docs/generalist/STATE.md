@@ -8,6 +8,90 @@
 
 > **LATEST (2026-06-30, local / UNDEPLOYED):** active **Property-standard PARITY programme** — full handover in **`docs/generalist/PARITY_PROGRAMME_HANDOVER.md`**. Done this run: Waves 0-2 + GEO schema/code; site-wide credential strip; **full factual-accuracy remediation COMPLETE** (356 audited, 281 corrected + 3 fabrications rewritten on-URL); **Wave 3 + 3b GEO keyTakeaways backfill COMPLETE** — answer-boxes now on ALL 356 audited posts (Wave 3 = 74 clean, committed `1e60bf37`; Wave 3b = 282 now-corrected, run `wf_377cb19e-2ad`, incl. regenerating 5 stale pilot boxes); build green, `npm test` 33/33, render/schema verified. Records: `wave3_geo_2026-06-30.md`. **Wave 3b's QA flagged ~60 residual BODY issues** (stale-as-current figures the 1st remediation missed; answer-boxes clean) → `wave3b_body_issues_2026-06-30.md` = **remediation round 2 (manager-direct, owner steer pending).** Then Wave 4 GEN-R2 rewrites (needs fresh GSC pull) or deploy (gated). **Spend posture relaxed 2026-06-30 (owner upgraded); still no waste.**
 
+## Stage 0 diagnosis 2026-08-25 (Track 2 / R.5)
+
+**Binding constraint: ELIGIBILITY (position), not indexation, not conversion, not corpus.**
+Google crawls and indexes the corpus and shows it heavily (52,772 impressions / 90d) but
+almost never on page 1 for the demand-carrying families, so clicks are 222 / 90d
+(CTR 0.42%). The funnel behind the click converts fine; the site just does not rank
+where the volume is. Track 2 work here should be the §5.0a optimisation baseline
+(corpus has NEVER had one) plus cluster deepening on the families below, before any
+net-new volume.
+
+All numbers from fresh API pulls 2026-08-25 (never stored snapshots; `gsc_query_data`
+not used, no SUMs of it). Raw outputs saved to session scratchpad
+`generalist_stage0/` (gsc_90d.json, bing.json, sitemap_urls.txt; scratch, not repo).
+
+### Search reality (fresh pulls)
+- **GSC** (OAuth API, property `sc-domain:hollowaydavies.co.uk`, window 2026-05-27 to
+  2026-08-25, **data through 2026-08-23**, date-dimension = unsampled):
+  **222 clicks, 52,772 impressions / 90d.** Query dim: 2,182 rows (sampled; reference
+  only). Page dim: 625 pages with >=1 impression.
+- **Bing** (`GetRankAndTrafficStats`, site truth per the top-N trap memo; data through
+  2026-08-23, 96 daily rows): **1,717 clicks, 122,934 impressions / 90d-ish window.**
+  Bing out-clicks Google ~8x on this site. 1,202 queries in GetQueryStats (top-N),
+  665 pages in GetPageStats.
+
+### Indexation check — PASS
+- Sitemap (`/sitemap.xml`, fetched live 2026-08-25): **729 URLs**, of which 429 blog.
+- **619 / 729 sitemap URLs (85%) earned >=1 GSC impression in 90d**; blog: 371/429 (86%).
+- Corpus on disk: **418 posts** (`generalist/web/content/blog`, .md count), not the
+  "448+" sometimes quoted. Sitemap blog count 429 (11 extra = category/route pages).
+- Verdict: Google IS crawling and surfacing the corpus. This is not the agency/medical
+  indexation pattern. No remediation-first exception applies.
+
+### Conversion funnel — NOT the constraint
+- **Leads `source='generalist'` (NOT 'general'; 'general' has 0 rows ever — the memory
+  saying 'general' is stale), test-excluded per migration 20260819000003:**
+  **15 leads / 90d** (Jun 4, Jul 4, Aug 7). Supabase Mgmt API, project dhlxwmvmkrfnmcgjbntk.
+- `estate_kpis('2026-08-23'..now)` (post bot-gate, only trustworthy window): 167
+  sessions, 146 humans, 103 engaged, 1 lead in ~2 days. 90d KPI figures
+  (2,825 sessions, 15 leads) are pre-gate inflated on the traffic side; leads are real.
+- ~15 leads from ~1,939 search clicks (222 G + 1,717 B) is a healthy small-site rate;
+  more page-1 positions is the lever, not funnel surgery. (Known LeadForm
+  invisible-label bug still LIVE here per §5.0a item 7; fix in Stage 2, cheap.)
+
+### Structure vs competitors (from GSC query data, no paid API)
+Top poor-position families (impressions >=30, position >10, 90d):
+1. **Construction/contractor accounting SOFTWARE** family, the biggest by far
+   (~4,300 impr across ~10 variants, pos 20-31: "construction accounting software" 842i
+   pos 27, "accounting software for construction" 685i pos 30, "contractor accounting
+   software" 568i pos 25...). SERP is owned by software vendors (Xero/Sage/QuickBooks)
+   and comparison/listicle sites; software intent, accountant-secondary. Also a
+   cannibalisation-watch item: construction is construction-cis's niche (R.5 rule 4).
+2. **CGT reporting 2026** ("hmrc cgt reporting requirements/deadlines 2026", 317i pos 13
+   + 227i pos 18): winnable, publisher/firm-guide SERP, nearest to page 1.
+3. **Service charge accounts/accounting** (207i pos 79 + 191i pos 71): specialist
+   block-management accountants dominate; needs a real pillar or NO-PAGE.
+4. **Xero vs QuickBooks UK** (240i pos 88 + 156i pos 81): comparison-site SERP, weak fit.
+5. **ACCA vs ICAEW** family (~660i pos 22-26): professional bodies/education sites; info
+   traffic, low commercial value.
+6. **Local St Albans** ("corporation tax advisers st albans" 215i pos 51, "business
+   advisers st albans" 193i pos 68): local firms + directories; local landing page gap.
+7. **Plumbers accountant** (250i pos 32), **MTD for income tax** (220i pos 85),
+   **fixed fee accounts** (207i pos 67), **incorporation accounting** (169i pos 39).
+
+### Tooling gaps — CONFIRMED, not fixed (Stage 2/3 prerequisites)
+1. `sites/generalist.discovery.json`: legacy schema, **no `lanes` /
+   `lane_negative_tokens`** keys (candidate_pool silently skips the lane gate).
+2. `sites/generalist.json` `paths.topicPool` = **null** (Property points at a
+   nonexistent doc too; author the topic-pool doc as first Stage 3 artefact).
+3. `scripts/track2_worklist.py` is a **Property REBUILD, not a flag pass**: hardcoded
+   `docs/property/track2_universe_2026-05-23.md`, Property DONE-slug lists and
+   Property cluster regexes (lines 22-57).
+
+### Armed monitored windows — FROZEN, excluded from every sweep
+`monitored_pages` site_key='generalist': **79 active rows with monitor_until in the
+future (2026-09-10 to 2026-10-07)** + 109 already-flagged rows (expired from arming
+purposes). The 79 are excluded from the Stage 2 equity sweep per §4.7; earliest
+windows open 2026-09-10.
+
+### Next (Stage 2, when authorised)
+Optimisation baseline §5.0a on the existing 418-post corpus (house_positions currency
+pass, corepage, SERP meta, equity-graded sweep minus the 79 frozen pages, GEO backfill
+check, link hygiene, LeadForm label fix), then §5.1 discovery for the 28 C2 clusters.
+DataForSEO balance ~$2.82 (08-25), pool run needs top-up (owner decision, open).
+
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
 `design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard

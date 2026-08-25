@@ -1,26 +1,32 @@
 """Build the comprehensive Track 2 legacy-rewrite worklist.
 
-Takes the 234-slug residual universe, removes everything already handled
-(Track 2 Phase 3 + anything registered in monitored_pages), attaches GSC ROI
-(impressions / weighted position / clicks from the fresh 90d pull), assigns a
-topic cluster, and emits a ROI-ranked, clustered worklist (md + json).
+Takes the site's residual universe, removes everything already handled
+(site DONE lists + anything registered in monitored_pages, which is a superset
+of the armed windows and so keeps every frozen page out of the sweep),
+attaches GSC ROI (impressions / weighted position / clicks from the fresh 90d
+pull), assigns a topic cluster, and emits a ROI-ranked, clustered worklist
+(md + json).
 
-Read-only. Usage: python scripts/track2_worklist.py
+Read-only against the DB; writes docs/<site>/track2_worklist_<date>.{md,json}.
+Usage: python scripts/track2_worklist.py [--site property|generalist]
 """
 import os
 import re
+import sys
 import json
 import pathlib
+import argparse
 import collections
 import httpx
 from dotenv import load_dotenv
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
 load_dotenv()
 PROJECT_REF = "dhlxwmvmkrfnmcgjbntk"
 TOKEN = os.environ["SUPABASE_ACCESS_TOKEN"]
 URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
-UNIVERSE = pathlib.Path("docs/property/track2_universe_2026-05-23.md")
-BLOG_DIR = pathlib.Path("Property/web/content/blog")
 
 
 def sql(q):
@@ -31,8 +37,9 @@ def sql(q):
     return r.json()
 
 
+# ---------------------------------------------------------------- property
 # Track 2 Phase 3 slugs already executed (16 rewrites + 6 redirects)
-HANDLED_PHASE3 = {
+PROPERTY_HANDLED_PHASE3 = {
     "cgt-deferral-strategies-property-investors-uk", "reduce-cgt-property-disposal-uk",
     "cgt-property-sold-loss-claim-capital-losses", "principal-private-residence-relief-landlords",
     "rollover-relief-property-landlords", "letting-relief-landlords-2026-changes",
@@ -47,7 +54,7 @@ HANDLED_PHASE3 = {
 }
 
 # Cluster rules: (regex, cluster). First match wins, most specific first.
-CLUSTER_RULES = [
+PROPERTY_CLUSTER_RULES = [
     (r"section-?24|finance-costs-section|mortgage-interest-restriction|can-section-24", "Section24"),
     (r"\baia\b|annual-investment-allowance|capital-allowance|full-expensing|integral-features|writing-down-allowance|what-is-aia", "CapitalAllowances"),
     (r"incorporat|limited-company|property-company|section-162|transfer-propert|family-investment-company|^llp-|should-i-incorporate|types-of-property-company|holding-company|director-loan|retained-profits|sdlt-transfer-property-company|profit-extraction|dividend|corporation-tax", "Incorporation"),
@@ -67,26 +74,83 @@ CLUSTER_RULES = [
 ]
 
 
-def cluster_of(slug):
-    for rx, name in CLUSTER_RULES:
+def property_cluster_of(slug):
+    for rx, name in PROPERTY_CLUSTER_RULES:
         if re.search(rx, slug):
             return name
     return "GeneralGuides"
 
 
-def load_residual():
-    text = UNIVERSE.read_text(encoding="utf-8")
+def property_universe():
+    # The universe doc was archived 2026-08 (docs reorg); check both homes.
+    p = ROOT / "docs/property/track2_universe_2026-05-23.md"
+    if not p.exists():
+        p = ROOT / "docs/property/_archive/track2_universe_2026-05-23.md"
+    text = p.read_text(encoding="utf-8")
     block = text.split("```")[1]
     return [s.strip() for s in block.splitlines() if s.strip()]
 
 
+# ---------------------------------------------------------------- generalist
+def lane_cluster_fn(site_key):
+    """Cluster taxonomy = the v2 lane taxonomy in sites/<site>.discovery.json
+    (single source of truth, stays in sync with the discovery lane gate)."""
+    from optimisation_engine.discovery.lane_map import assign_lane
+    disc = json.loads((ROOT / "sites" / f"{site_key}.discovery.json").read_text(encoding="utf-8"))
+    lanes, negs = disc["lanes"], disc.get("lane_negative_tokens") or []
+    # ponytail: negatives are query-intent vetoes, not slug vetoes; our own
+    # slugs never carry portal/job phrases, so passing them is harmless.
+    return lambda slug: assign_lane(slug, lanes, negs) or "GeneralGuides"
+
+
+def blog_dir_universe(blog_dir):
+    """No residual-universe doc exists for siblings; the on-disk corpus IS the
+    legacy universe (everything already-handled is subtracted downstream)."""
+    return sorted(p.stem for p in blog_dir.glob("*.md"))
+
+
+# ---------------------------------------------------------------- site config
+SITES = {
+    "property": {
+        "blog_dir": ROOT / "Property/web/content/blog",
+        "universe": property_universe,
+        "handled": PROPERTY_HANDLED_PHASE3,
+        "cluster_of": lambda: property_cluster_of,
+        "out_stem": "docs/property/track2_worklist_2026-05-29",  # keep historic path
+        "universe_note": "Residual universe",
+        "title": "# Track 2 legacy-rewrite worklist (2026-05-29)",
+        "gsc_note": ("GSC = 90d (2026-02-28..2026-05-29) page-level aggregate. Pages with impr>0 but "
+                     "weak position are highest rewrite ROI; impr=0 pages are INVISIBLE (rewrite-or-collapse)."),
+    },
+    "generalist": {
+        "blog_dir": ROOT / "generalist/web/content/blog",
+        "universe": None,  # -> blog_dir_universe
+        "handled": set(),  # no prior Track 2 phase on this site
+        "cluster_of": lambda: lane_cluster_fn("generalist"),
+        "out_stem": "docs/generalist/track2_worklist_2026-08-25",
+        "universe_note": "Universe = on-disk corpus",
+        "title": "# Track 2 legacy-rewrite worklist (generalist, 2026-08-25)",
+        "gsc_note": ("GSC = 90d page-level aggregate (fresh pull cadence; see STATE.md Stage 0 for the "
+                     "data-through date). Pages with impr>0 but weak position are highest rewrite ROI; "
+                     "impr=0 pages are INVISIBLE (rewrite-or-collapse)."),
+    },
+}
+
+
 def main():
-    residual = load_residual()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--site", default="property", choices=sorted(SITES))
+    args = ap.parse_args()
+    site = args.site
+    cfg = SITES[site]
+
+    residual = cfg["universe"]() if cfg["universe"] else blog_dir_universe(cfg["blog_dir"])
+    cluster_of = cfg["cluster_of"]()
     # page-level GSC aggregates (one query)
-    rows = sql("""
+    rows = sql(f"""
         SELECT page_url, SUM(impressions) AS impr, SUM(clicks) AS clk,
                ROUND((SUM(position*impressions)/NULLIF(SUM(impressions),0))::numeric,1) AS wpos
-        FROM gsc_query_data WHERE site_key='property' GROUP BY page_url;
+        FROM gsc_query_data WHERE site_key='{site}' GROUP BY page_url;
     """)
     gsc = {}
     for r in rows:
@@ -99,11 +163,11 @@ def main():
     # Bing page-level aggregate (latest snapshot). Legacy pages routinely rank
     # page-1 on Bing while page 4-8 on Google, so a Google-only ROI buries the
     # best lift targets (a 0-Google / page-1-Bing page is a TOP rewrite target).
-    brows = sql("""
+    brows = sql(f"""
         SELECT page_url, SUM(impressions) AS impr, SUM(clicks) AS clk,
                ROUND((SUM(position*impressions)/NULLIF(SUM(impressions),0))::numeric,1) AS wpos
-        FROM bing_query_data WHERE site_key='property'
-          AND date=(SELECT MAX(date) FROM bing_query_data WHERE site_key='property')
+        FROM bing_query_data WHERE site_key='{site}'
+          AND date=(SELECT MAX(date) FROM bing_query_data WHERE site_key='{site}')
         GROUP BY page_url;
     """)
     bing = {}
@@ -112,12 +176,15 @@ def main():
         prev = bing.get(slug)
         if not prev or (r["impr"] or 0) > prev["impr"]:
             bing[slug] = {"impr": r["impr"] or 0, "clk": r["clk"] or 0, "wpos": r["wpos"]}
-    monitored = {r["slug"] for r in sql("SELECT slug FROM monitored_pages WHERE site_key='property';")}
-    live_files = {p.stem for p in BLOG_DIR.glob("*.md")}
+    # Every monitored_pages row for the site is excluded (superset of the armed
+    # windows, so frozen pages can never enter the sweep).
+    monitored = {r["slug"] for r in sql(
+        f"SELECT slug FROM monitored_pages WHERE site_key='{site}';")}
+    live_files = {p.stem for p in cfg["blog_dir"].glob("*.md")}
 
     work = []
     for slug in residual:
-        handled = slug in HANDLED_PHASE3 or slug in monitored
+        handled = slug in cfg["handled"] or slug in monitored
         g = gsc.get(slug, {})
         b = bing.get(slug, {})
         gi, bi = g.get("impr", 0), b.get("impr", 0)
@@ -139,12 +206,11 @@ def main():
     for w in todo:
         impr_by_cluster[w["cluster"]] += w["combined_impr"]
 
-    out = pathlib.Path("docs/property/track2_worklist_2026-05-29.md")
-    L = ["# Track 2 legacy-rewrite worklist (2026-05-29)", "",
-         f"Residual universe: {len(residual)} | already handled: {len(work)-len(todo)} "
+    out = ROOT / f"{cfg['out_stem']}.md"
+    L = [cfg["title"], "",
+         f"{cfg['universe_note']}: {len(residual)} | already handled: {len(work)-len(todo)} "
          f"| **remaining to process: {len(todo)}**", "",
-         "GSC = 90d (2026-02-28..2026-05-29) page-level aggregate. Pages with impr>0 but "
-         "weak position are highest rewrite ROI; impr=0 pages are INVISIBLE (rewrite-or-collapse).", "",
+         cfg["gsc_note"], "",
          "## Clusters (remaining), by combined Google+Bing impressions", "",
          "| Cluster | Pages | Total impr (G+Bing) |", "|---|---:|---:|"]
     for cl, _ in impr_by_cluster.most_common():
@@ -159,7 +225,7 @@ def main():
                  f"| {w['clk']} | {w['cluster']} | {w['slug']} | {'y' if w['on_disk'] else 'n'} |")
     out.write_text("\n".join(L), encoding="utf-8")
 
-    pathlib.Path("docs/property/track2_worklist_2026-05-29.json").write_text(
+    (ROOT / f"{cfg['out_stem']}.json").write_text(
         json.dumps(todo, indent=2), encoding="utf-8")
 
     print(f"residual={len(residual)} handled={len(work)-len(todo)} remaining={len(todo)}")
