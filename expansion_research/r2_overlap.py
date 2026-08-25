@@ -13,12 +13,22 @@ for flagged rows live in JUDGMENT_OVERRIDES below with reasons.
 
 Run: python r2_overlap.py   (from expansion_research/)
 """
-import csv, json, re, sys
+import csv, json, os, re, sys
 from pathlib import Path
 
 HERE = Path(__file__).parent
 SITES = ["property", "dentists", "solicitors", "medical", "generalist",
          "agency", "contractors-ir35", "construction-cis"]
+
+# ponytail: the 8 above are the sites that existed at the 2026-07-11 run; sites/
+# now carries 15 live configs. Override both the site list and the corpus dir
+# without touching this file, so a re-run never has to fork the script:
+#   R2_SITES="property,dentists,...,startups-tech" R2_CORPORA=/path/to/corpora python r2_overlap.py
+# Outputs still land next to this file; point R2_OUT at a scratchpad to keep
+# R2C_OVERLAP.md (the historical record) untouched.
+SITES = os.environ.get("R2_SITES", ",".join(SITES)).split(",")
+CORPORA = Path(os.environ.get("R2_CORPORA", HERE / "corpora"))
+OUT = Path(os.environ.get("R2_OUT", HERE))
 
 # Tokens carried by virtually every query on an accountancy estate; they say
 # nothing about *niche* overlap so they are stripped before comparing.
@@ -124,7 +134,7 @@ def load_corpora():
     corpora = {}
     for site in SITES:
         qs = set()
-        with open(HERE / "corpora" / f"{site}_queries.csv", encoding="utf-8") as f:
+        with open(CORPORA / f"{site}_queries.csv", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 q = norm(row["query"])
                 if q:
@@ -301,7 +311,7 @@ def main():
                        "jaccard_role": "secondary/confirmatory only"},
         "candidates": results,
     }
-    (HERE / "r2_overlap.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
+    (OUT / "r2_overlap.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     write_md(results)
     dist = {}
     for r in results:
@@ -344,7 +354,7 @@ def write_md(results):
         for r in flagged:
             lines.append(f"- #{r['id']} **{r['name']}** — {r['flag']} "
                          f"(suspect: {r['overlap_suspect']}; cont {r['containment']:.2f} on {r['max_overlap_site']})")
-    (HERE / "R2C_OVERLAP.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (OUT / "R2C_OVERLAP.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
