@@ -10,11 +10,21 @@ Date: 2026-08-24. Status: PLAN. Dry-run tested 2026-08-24 (three adversarial exe
 
 **Why it exists.** The Property redesign and expansion worked as a process, not just an outcome, and most of the process record lives in gitignored `tmp/design_migration/` (CONTEXT.md, PLAN.md, EXECUTION.md, 15 reports, phase and fidelity logs), which will not survive a machine change. This doc durably records the repeatable recipe and composes the engine docs that already exist. It does not duplicate them.
 
-**Reading order for an executing agent:**
-1. This doc, in full.
+## START HERE if you are the fresh executing agent
+
+You were pointed at this doc with a scope (e.g. "run session 1", "port crypto", "Track 2 on Dentists"). Do these five things in order, before any other action:
+
+1. **Load `standard_terms`** (the repo skill) if not already loaded.
+2. **Find your scope in appendix R** (kickoff runbooks). If the owner's message matches one, follow that runbook literally; it sequences everything. If no runbook matches, read this doc in full and ask the owner ONE bundled clarifying question before acting.
+3. **Check the gate register (§8)**: which decisions are recorded taken. Act only inside your authorised scope; the per-item owner gates in appendix K always stand regardless of scope.
+4. **Check the branch tip** (`git log --oneline -5` on the working branch) and the target site's `docs/<site>/STATE.md` date. Other sessions land work between yours; anything dated is a claim to re-derive, not a fact (trap 5).
+5. **Know the confusion protocol.** When you hit something unclear, in order: (a) re-read the specific section; this doc resolves most conflicts explicitly; (b) if doc and repo disagree, the repo is right: re-derive, fix the doc in the same session (living-doc contract); (c) if two DOCUMENTS disagree, precedence is: current owner instruction > this doc > `DESIGN_SYSTEM.md` + Property source (visual spec) > engine docs (REWRITE/NETNEW/DISCOVERY) > playbook > SITE_SPINUP > STATE.md/memory (pointers only); (d) still stuck = one bundled question to the owner listing every open item at once, never a drip of questions, and never a guess on anything appendix K owner-gates. Reversible non-gated items: decide, record, proceed.
+
+**Reading order after that:**
+1. This doc, in full (skim appendices you won't touch this session, read the ones you will).
 2. `docs/property/DESIGN_SYSTEM.md` §0 (the page contract) in full, before writing any TSX.
 3. The track-specific engine doc: `docs/_engines/REWRITE_PROGRAM.md` §9 + `docs/_engines/NETNEW_PROGRAM.md` + `docs/_engines/DISCOVERY_ENGINE_V2.md` (Track 2), or `docs/_engines/SITE_BUILD_PLAYBOOK_2026-07-24.md` + `docs/_engines/SITE_SPINUP.md` (Track 3).
-4. `docs/<site>/STATE.md` for the target site.
+4. `docs/<site>/STATE.md` for the target site (as a claim-map, then re-derive what you use).
 
 ---
 
@@ -894,3 +904,37 @@ Re-verify cheap claims at execution time; this record is a snapshot, and trap 5 
 **ROUND 2 (2026-08-24, same day, against the hardened doc, testers bound by the trap-5 re-derivation rule).** Three simulations: crypto pilot retest, construction-cis retest, Dentists Track 2 (new). Every round-1 fix re-verified HOLDS against code except one: the §4.6.2 ExitIntentModal example was itself a round-1 false fact (corrected in place; the file is dead unmounted code, disposition DELETE). New findings incorporated: the O.0b theming mechanism (primary-* tokenisation; round 2's only true blocker); O steps 3-5 API-surgery, import-census, supersede-content/, and guard-registry rules; §4.7 derivation-commands table (deployed SHA, auto-deploy posture, armed-window SQL, sites-row SQL); the L.2/A.8 lock-scope rule; the §5.0 Track-2-first variant with the stranded-passenger reconciliation (`d3e705dd`, `b8ae2269` verified NOT in main); §5.0a worklist-rebuild and GEO-reference corrections (the GEO doc's expired full-auto grant got a superseded banner in the doc itself); topic-pool dead-path and run-wave hardcoding notes; template-coverage census (~55% of a family-B surface rides §4.6.4) with the revised 2-4 day estimate; J's Dentists/Medical boundary. Code fixed same session: `deploy-and-index.ps1` stale "only property" docstring; `AI_SEARCH_GEO_PROGRAM.md` superseded banner.
 
 Round-2 residual (open, priced, non-blocking): whether CLI worktree deploys attach git metadata (determines the §4.7 SHA path's primary vs fallback branch); crypto's missing `@source` line may mean some web-shared-only utility classes are absent from its production CSS TODAY, so the port's cutover read should expect visible changes on existing pages from the O.2 fix alone (one `next build` + DOM check settles it at pilot time); Dentists' 53 armed windows expire Sep-Oct 2026, sequencing its Stage 2 sweep after expiry or around the exclusions.
+
+## R. Kickoff runbooks (the fresh agent's front door; one per session type)
+
+Each runbook is complete: an agent given one of these plus this doc needs nothing else. Every runbook implicitly starts with the START-HERE five steps and ends with the living-doc reconciliation + a session summary to the owner (what shipped, what's blocked, what's next, any noise generated).
+
+### R.1 SESSION 1: merge + instruments + extraction start
+Preconditions: §8 decisions 10, 1, 2 recorded taken. Steps:
+1. Passenger enumeration: for every site dir, `git log main..design/property-redesign-port --oneline -- '<Site>/'`; write the list into each affected site's STATE.md ("rides the next deploy of this site").
+2. Merge `design/property-redesign-port` to main (no squash; ordinary merge). Do not deploy anything.
+3. Ask the owner to trigger the Property verify deploy from main (§4.7 gives the deploy command; owner triggers, you verify the live HTML markers per §1.1's precedent).
+4. Build the reference instruments from appendix N into `docs/_engines/instruments/` (sweep + browser check); validate the contrast maths against the two known pairs.
+5. Begin appendix O in order: O.0 plumbing, O.0b theming mechanism, then steps 1-2. Commit per step. STOP at end of session or at any K gate; report.
+
+### R.2 PILOT BUILD: <site> (first use: crypto)
+Preconditions: R.1 complete (shared core steps 1-2 exist), scope authorised. Steps:
+1. Phase 0 per §4.4 + §4.6: disposition list with deriving commands into `docs/<site>/_port/`; §4.7 table executed in full; STATE.md refreshed.
+2. Complete appendix O steps 3-8 (extraction finishes inside the pilot; O.8 parity check gates everything after it).
+3. Author `docs/<site>/DESIGN_DELTA.md` (template L.1; L.2 flow for the ramp; §4.6 dispositions for capture surfaces and site-specific components).
+4. THE BUNDLED ASK to the owner: ramp candidates + contrast tables, wordmark icon, font proposal, capture-surface list, anything else K-gated that has accumulated. One message. STOP until answered.
+5. Build phases per §4.4 (foundation, chrome, templates, pages), one commit per item, tag per phase, fidelity review (appendix M) per phase, gates per §4.5.
+6. Owner dev-server walk; capture new rules into this doc / the delta same session.
+7. Cutover only on explicit owner yes: §4.7 SHA + §6-style deploy from clean worktree, post-deploy sweep, before/after SQL authored with caveats per §7.7.
+
+### R.3 TRACK 2: <site> (first use: Dentists)
+Preconditions: owner authorised Track 2 on the site; DataForSEO balance checked. Steps:
+1. §5.0 Track-2-first rules if the site's port hasn't happened: branch from main, reconcile stranded passengers first.
+2. Stage 0 in full (§5.0 + §4.7 commands): fresh pulls, indexation check, armed-window SQL, discovery.json v2 upgrade/authoring (owner-skim of lanes goes into the next bundled ask), STATE.md refresh with the diagnosis.
+3. Stage 2 per §5.0a in order, with the runnability warnings heeded (author CORE_PAGES entry; rebuild worklist inputs; armed windows excluded from every sweep).
+4. Stage 3 per §5.1: dossiers, packs, language pass, waves at batch size 1, QA chain, gates.
+5. Per-batch deploy asks to the owner; registration + IndexNow only after each yes.
+6. Reads per §5.1 step 8 cadence; record cohort verdicts in STATE.md.
+
+### R.4 FAN-OUT sessions
+Same as R.2/R.3 with the pilot's measured numbers replacing the estimates; check this doc's §8/§9 for queue position first, and appendix P for the site's prerequisites row.
