@@ -273,8 +273,13 @@ mis-titled, which is the cheapest version of that lever.
 4. Do NOT spend the remaining $2.82 on more crypto discovery. The cluster picture is settled;
    the next dollar is better spent on a sibling site's Stage 0.
 
-Raw responses for this pass were written to the session scratchpad and are not retained in the
-repo. Re-deriving costs about $1.19.
+Raw responses for this pass ARE retained, at `expansion_research/crypto/raw_2026-08-25.tar.gz`
+(2.2 MB gzipped, 38 MB expanded), with the deduplicated cluster map alongside at
+`clusters_dedup_2026-08-25.json.gz` (gzipped because `.gitignore:52` excludes raw `.json` under
+`expansion_research/`). Re-deriving them would cost about $1.19, but the reason to
+keep them is that re-analysis is free and has already paid twice: the close-variant inflation
+trap and the September-peak effect were both found by re-reading saved responses, not by
+buying new ones.
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
