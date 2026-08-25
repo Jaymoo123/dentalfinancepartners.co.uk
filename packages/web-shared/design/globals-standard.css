@@ -1,0 +1,295 @@
+/* ============================================================
+   PROPERTY STANDARD - SHARED DESIGN LAYER
+   ============================================================
+   This is the design layer of the Property design system: the type-rhythm,
+   motion and glow rules extracted from Property/web/src/app/globals.css so
+   sibling sites can import them instead of re-authoring them. Brand colour
+   values (the actual --primary/--accent/etc tokens) stay per-site; this
+   file carries only shape and motion rules plus a small set of channel
+   tokens the glow rules key off.
+
+   Consuming sites import this AFTER `@import "tailwindcss"` and BEFORE
+   their own `:root` token block, in exactly this order:
+
+     @import "tailwindcss" source("..");
+     @source "../../../../packages/web-shared";
+     @import "tw-animate-css";
+     @import "@accounting-network/web-shared/design/globals-standard.css";
+     :root { ... per-site tokens ... }
+
+   The `@source` line is MANDATORY. Without it Tailwind never scans the
+   shared components in packages/web-shared, and their utility classes
+   silently vanish from the built CSS. `tw-animate-css` is not bundled by
+   this file - it must be listed in the consuming site's own dependencies.
+
+   Brand-glow channel tokens (the swap surface for a sibling site's colour,
+   each carrying Property's current value as its CSS fallback so Property
+   itself needs no edit):
+     --brand-glow        16 185 129   (Property emerald-500, "R G B" channels)
+     --brand-glow-deep    5 150 105   (Property emerald-600, "R G B" channels)
+     --brand-glow-edge   52 211 153   (Property emerald-400, "R G B" channels)
+     --brand-glow-faint  209 250 229  (Property emerald-100, "R G B" channels)
+   Consumed as `rgb(var(--token, <property-default>) / alpha)`. Declare the
+   token in a sibling's :root to override; leave it undeclared to inherit
+   Property's value byte-identically.
+   ============================================================ */
+
+@theme {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --btn-radius: var(--radius-xl);
+}
+
+/* House heading defaults. Deliberately split across two blocks. Read this before merging
+   them back together, because both halves are load-bearing and they are load-bearing for
+   OPPOSITE reasons.
+
+   Background. Tailwind v4's `@import "tailwindcss"` declares the layer order
+   `theme, base, components, utilities` and puts every generated utility in `utilities`.
+   Unlayered author CSS outranks EVERY layered rule regardless of specificity. This whole
+   block used to sit outside a layer, so it silently beat every font-*, leading-* and
+   tracking-* utility ever written on a heading element, site-wide. The designer hit the same
+   thing in their own tree (their globals.css carries the identical unlayered rule and has no
+   @layer either) and documented it at DESIGN_GUIDELINES.md:67-76, with the `!` important
+   modifier as the escape hatch.
+
+   1. font-weight and letter-spacing move INTO @layer base, so utilities now win. Neither
+      property is bundled into any other Tailwind utility, so the blast radius of this half
+      is exactly the heading tags that carry a font-* or tracking-* utility, and every one
+      was enumerated and decided before this shipped.
+
+   2. line-height STAYS UNLAYERED, and that is not an oversight. Tailwind's `text-*` size
+      utilities carry a bundled line-height (text-base 1.5, text-lg 1.556, text-2xl 1.333,
+      text-4xl 1.111, text-6xl 1.0, ...). Layering this declaration hands every heading on
+      the site over to those per-size defaults: measured, it moved 2214 headings across 163
+      route/width combinations, including every hero h1 from 72px to 60px leading, which is
+      Tailwind's default and not a value anyone here chose. The designer authored, eyeballed
+      and shipped the entire visual system at a uniform 1.2 heading rhythm, and
+      DESIGN_GUIDELINES.md:280-286 confirms 1.2 is the deliberate house default by naming the
+      one deliberate exception (blog article-title cards at 1.375, written with `leading-snug!`
+      precisely because of this rule). Keeping it unlayered keeps the approved rhythm and
+      keeps the documented `!` escape hatch working for deliberate deviations. */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-reveal {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.hero-reveal-delay {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Vertical marquee (homepage "Sound familiar?" prompt column).
+   The track holds the card set twice; each set carries a bottom margin equal to
+   the inter-card gap, so the set block is exactly half the track and a -50%
+   translate loops seamlessly with no drift. Pauses on hover and on keyboard
+   focus so the cards can actually be read, and stops entirely under
+   prefers-reduced-motion, where the column becomes a normal scroll area. */
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-y 33s linear infinite;
+  will-change: transform;
+}
+
+.marquee-viewport:hover .marquee-track,
+.marquee-viewport:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .marquee-viewport {
+    overflow-y: auto;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+/* "Why choose us" 01-04 figures: staggered light-up when the list scrolls in */
+@keyframes num-glow {
+  0% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  35% {
+    opacity: 1;
+    text-shadow: 0 0 22px rgb(var(--brand-glow, 16 185 129) / 0.95), 0 0 44px rgb(var(--brand-glow, 16 185 129) / 0.45);
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 22px rgb(var(--brand-glow, 16 185 129) / 0.95), 0 0 44px rgb(var(--brand-glow, 16 185 129) / 0.45);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 rgb(var(--brand-glow, 16 185 129) / 0);
+  }
+}
+
+/* Client-tier cards (/services "Who we work with"): a one-two-three glow that
+   runs once when the group is fully on screen. Sibling of num-glow above, same
+   idea applied to a box-shadow instead of a text-shadow.
+
+   Start and end frames are the card's resting shadow, so the animation needs no
+   fill-mode and hands the card back to its normal hover shadow when it ends.
+   The stagger is nth-child rather than an inline animationDelay because the
+   cards are server-rendered and passed to ScrollGlowGroup as opaque children. */
+@keyframes card-glow {
+  0% {
+    box-shadow: 0 6px 20px -8px rgb(var(--brand-glow-deep, 5 150 105) / 0.28);
+    border-color: rgb(var(--brand-glow-faint, 209 250 229));
+  }
+  40% {
+    box-shadow:
+      0 0 0 3px rgb(var(--brand-glow, 16 185 129) / 0.22),
+      0 18px 40px -10px rgb(var(--brand-glow-deep, 5 150 105) / 0.6);
+    border-color: rgb(var(--brand-glow-edge, 52 211 153));
+  }
+  100% {
+    box-shadow: 0 6px 20px -8px rgb(var(--brand-glow-deep, 5 150 105) / 0.28);
+    border-color: rgb(var(--brand-glow-faint, 209 250 229));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-glow="on"] > * {
+    animation: card-glow 3.4s ease-in-out;
+    /* Overridable per group via the `delay` prop. The :nth-child rules below
+       are more specific, so a staggered row is unaffected by it. */
+    animation-delay: var(--glow-delay, 0s);
+  }
+
+  /* Stagger is shorter than the duration on purpose: the glows overlap, so the
+     sequence reads as one wave crossing the row rather than three separate
+     pulses. Whole run is 1.4s + 3.4s ≈ 4.8s. */
+  [data-glow="on"] > *:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+
+  [data-glow="on"] > *:nth-child(3) {
+    animation-delay: 1.4s;
+  }
+
+  /* A fourth step, for 2x2 grids. Without it the fourth card inherits the
+     0s default and glows in unison with the first, which in a 2x2 reads as
+     two opposite corners flashing rather than a wave. No existing three-card
+     group has a fourth child, so this changes nothing that already shipped. */
+  [data-glow="on"] > *:nth-child(4) {
+    animation-delay: 2.1s;
+  }
+}
+
+/* Related-article cards: the same green glow as `card-glow` above, but held as a
+   hover STATE rather than played as a one-shot animation. The values are lifted
+   from that keyframe's 40% peak on purpose, so a reader who has already seen the
+   scroll glow reads this as the same material responding to the pointer, not as
+   a second unrelated effect.
+
+   `(hover: hover)` is what keeps it a mouse affordance. Without it a touch tap
+   leaves the glow burnt into the card until the next tap lands somewhere else,
+   because :hover sticks on touch. Keyboard users get the same treatment through
+   :focus-visible, which is not gated: it is the only way the card can indicate
+   focus, and the focus ring alone does not say "this is the one you are on".
+
+   The card's resting shadow is deliberately none. A resting glow would make
+   every card look hovered, which is the thing being fixed. */
+.related-card {
+  transition:
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+@media (hover: hover) {
+  .related-card:hover {
+    border-color: rgb(var(--brand-glow-edge, 52 211 153));
+    box-shadow:
+      0 0 0 3px rgb(var(--brand-glow, 16 185 129) / 0.22),
+      0 18px 40px -10px rgb(var(--brand-glow-deep, 5 150 105) / 0.6);
+  }
+}
+
+.related-card:focus-within {
+  border-color: rgb(var(--brand-glow-edge, 52 211 153));
+  box-shadow:
+    0 0 0 3px rgb(var(--brand-glow, 16 185 129) / 0.22),
+    0 18px 40px -10px rgb(var(--brand-glow-deep, 5 150 105) / 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .related-card {
+    transition: none;
+  }
+}
+
+/* Eyebrow rule: draws left to right the first time its label scrolls into view.
+   The bar is collapsed from its left edge and released once the observer flips
+   data-draw, so the growth is a transform rather than a width animation and
+   costs no layout.
+
+   The collapsed state is scoped to [data-draw="off"]. That attribute is in the
+   server HTML too, so the no-JS case is covered by a <noscript> override in the
+   root layout, which releases every rule rather than leaving the marks hidden
+   on a page that can never run the observer. */
+.eyebrow-rule {
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .eyebrow-rule {
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .eyebrow-rule[data-draw="off"] {
+    transform: scaleX(0);
+  }
+}
+
+/* Deliverables ticks: each mark is painted along its own path the first time
+   the list scrolls into view, staggered by an inline transition-delay.
+
+   Same posture as the eyebrow rule above. The undrawn state is scoped to
+   [data-draw="off"], which is in the server HTML, so the no-JS case is released
+   by the <noscript> override in the root layout rather than leaving a column of
+   empty boxes next to a list of promises. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-draw="off"] .tick-draw {
+    stroke-dashoffset: 24;
+  }
+
+  .tick-draw {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 420ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+}
