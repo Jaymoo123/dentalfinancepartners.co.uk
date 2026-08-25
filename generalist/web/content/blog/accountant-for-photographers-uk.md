@@ -36,7 +36,7 @@ faqs:
     answer: "The first £1,000 of gross trading income in a tax year is covered by the trading allowance, so occasional paid shoots below that level are tax free and do not need reporting. Above £1,000 you must register for Self Assessment by 5 October after the end of the tax year. You then deduct either the £1,000 allowance or your actual expenses, never both. Because camera kit is expensive, actual expenses usually beat the allowance for anyone shooting seriously."
 keyTakeaways:
   - "A limited company typically makes financial sense for photographers once annual net profit exceeds £40,000 to £50,000, where tax savings outweigh the extra admin costs."
-  - "At £70,000 net profit in 2025/26, a limited company saves a photographer around £2,500 to £3,000 per year compared with the sole trader route."
+  - "At £70,000 net profit in 2025/26, corporation tax is £14,800 after marginal relief; the saving against the sole trader route depends on how much profit you extract, and is largest when profit is retained in the company or paid into a pension."
   - "The VAT registration threshold is £90,000 in a rolling 12-month period; the Flat Rate VAT rate for photography is 11% in 2025/26, but limited cost traders must use 16.5%."
   - "Limited companies can claim Full Expensing for 100% tax relief on equipment in the year of purchase; sole traders use the Annual Investment Allowance (AIA) of £1,000,000."
   - "Limited company directors can pay employer pension contributions directly from the company, deductible against corporation tax and not subject to NI, up to £60,000 per year."
@@ -60,10 +60,10 @@ keyTakeaways:
 
 <ul>
 <li><strong>Sole trader:</strong> You pay income tax at 20% on the first £37,700 of taxable income (the basic-rate band, £12,570 to £50,270) and 40% on the £19,730 above £50,270 (income tax: approximately £15,432). Class 4 NIC is 6% on profits £12,570 to £50,270 and 2% above (approximately £2,657). Class 2 NIC was abolished from 6 April 2024. Total income tax and Class 4 NIC is roughly £18,090.</li>
-<li><strong>Limited company:</strong> Corporation tax at 19% on the first £50,000 and 25% on the remaining £20,000 (marginal relief applies). That is roughly £14,500 corporation tax. You then extract the rest as salary and dividends. Total tax burden is typically £15,500 to £16,000, depending on how you pay yourself.</li>
+<li><strong>Limited company:</strong> Corporation tax at 19% up to £50,000, with marginal relief between £50,000 and £250,000, which works out at an effective 26.5% on the slice above £50,000. On £70,000 that is £14,800 corporation tax (2025/26). You then extract what you need as salary and dividends, and the personal tax on extraction depends on how much you take out.</li>
 </ul>
 
-<p>The limited company saves you around £2,500 to £3,000 per year at that profit level. And that gap widens as your earnings grow.</p>
+<p>If you draw every pound out as salary and dividends, the total tax burden lands close to the sole trader figure at 2025/26 rates. The company structure pays off when you do not need all the profit personally: retaining profit in the company, paying employer pension contributions, or timing dividends across years can save a few thousand pounds a year, and the gap widens as earnings grow.</p>
 
 <h3>When to Stay as a Sole Trader</h3>
 
@@ -99,7 +99,7 @@ keyTakeaways:
 
 <h3>Insurance and Professional Fees</h3>
 
-<p>Public liability insurance, professional indemnity insurance, equipment insurance, and any other business-related policies are deductible. Accountant fees, legal fees for contract reviews, and copyright registration costs also qualify.</p>
+<p>Public liability insurance, professional indemnity insurance, equipment insurance, and any other business-related policies are deductible. Accountant fees, legal fees for contract reviews, and other professional fees also qualify.</p>
 
 <h2>VAT for Photographers</h2>
 
@@ -113,17 +113,17 @@ keyTakeaways:
 
 <h2>Copyright and Intellectual Property</h2>
 
-<p>When you take a photograph, you own the copyright. That is an intangible asset. If you sell the copyright outright (not just a licence), the tax treatment differs. A sale of copyright is treated as a disposal of a capital asset, potentially subject to Capital Gains Tax, not income tax.</p>
+<p>When you take a photograph, you own the copyright. For a working photographer, money from exploiting or even selling that copyright is normally a receipt of the profession, taxed as trading income. In limited circumstances an outright sale of copyright can fall outside the trade and into capital gains territory, but do not assume that: for a professional photographer the default treatment is income.</p>
 
-<p>Most photographers license images, not sell copyright. That is fine. Licensing income is standard trading income. But if you ever sell a full copyright buyout (common in commercial advertising work), tell your accountant. The tax treatment changes.</p>
+<p>Most photographers license images, not sell copyright. That is fine. Licensing income is standard trading income. If you ever sell a full copyright buyout (common in commercial advertising work), tell your accountant so the treatment is checked rather than assumed.</p>
 
-<p>Keep records of every licence agreement. HMRC can ask to see them. And register your copyright with the UK Copyright Service or a similar body for legal protection, though copyright exists automatically under UK law.</p>
+<p>Keep records of every licence agreement. HMRC can ask to see them. Copyright exists automatically under UK law; there is no UK copyright register, so you do not need any paid registration service to protect it.</p>
 
 <h2>IR35 and Photography Contracts</h2>
 
-<p>If you shoot for a single client for long periods (common in ecommerce photography or corporate headshots), IR35 may apply. IR35 is the off-payroll working rule that catches disguised employment. If you are deemed an employee for tax purposes, you lose the ability to take dividends and must pay PAYE and employer NI on your entire income.</p>
+<p>If you shoot for a single client for long periods (common in ecommerce photography or corporate headshots), IR35 may apply. IR35 is the off-payroll working rule that catches disguised employment. It works engagement by engagement: if a contract is deemed employment for tax purposes, PAYE and NIC are due on the fees from that engagement, not on your entire income. Other contracts you hold are assessed on their own terms.</p>
 
-<p>Medium and large clients are responsible for determining your IR35 status and issuing a Status Determination Statement (SDS). If they say you are inside IR35, you cannot operate through your limited company in the usual way. You would need to work through an umbrella company or take a salary from your own company, paying full PAYE.</p>
+<p>Medium and large clients are responsible for determining your IR35 status and issuing a Status Determination Statement (SDS). If they decide an engagement is inside IR35, the fee-payer deducts PAYE and NIC before paying your limited company, so the fees for that job arrive already taxed. You can still operate through your company; some photographers use an umbrella company for inside-IR35 work, but nothing forces you to.</p>
 
 <p>If you are a sole trader, IR35 does not apply. But you still need to demonstrate self employment to HMRC. Multiple clients, control over your schedule, and providing your own equipment all help.</p>
 
@@ -131,7 +131,7 @@ keyTakeaways:
 
 <p>Photography is physically demanding. Wedding photographers carry heavy kit for 12-hour days. Commercial photographers climb ladders, crouch for hours, and work in uncomfortable positions. You need a retirement plan that does not rely on selling your gear.</p>
 
-<p>Limited company directors can pay employer pension contributions directly from the company. These are deductible against corporation tax and do not trigger NI. You can contribute up to £60,000 per year (or 100% of your earnings, whichever is lower) without incurring tax charges.</p>
+<p>Limited company directors can pay employer pension contributions directly from the company. These are deductible against corporation tax, provided they pass HMRC's wholly and exclusively test, and do not trigger NI. Employer contributions are not capped by your salary (that 100%-of-earnings limit applies to personal contributions); the limit that matters is the £60,000 annual allowance, plus any unused allowance carried forward from the previous three years.</p>
 
 <p>Sole traders pay into a personal pension from their net income. The tax relief is added at source (20%) and higher rate relief claimed through self assessment.</p>
 
@@ -156,13 +156,13 @@ keyTakeaways:
 
 <h2>What a Good Accountant Saves You</h2>
 
-<p>Let's use a real example. A wedding photographer in Bristol earning £65,000 profit as a sole trader. They are paying roughly £16,500 in tax and NI. Their accountant charges £1,200 per year.</p>
+<p>Let's use a real example. A wedding photographer in Bristol earning £65,000 profit as a sole trader in 2025/26. They are paying roughly £15,990 in income tax and Class 4 NIC. Their accountant charges £1,200 per year.</p>
 
-<p>Switch to a limited company structure with proper tax planning. Corporation tax is £13,200. Dividends and salary extraction costs are £2,500. Total tax: £15,700. Accountant fee: £1,500. Net saving: £500.</p>
+<p>Switch to a limited company and corporation tax on £65,000 is £13,475 after marginal relief (2025/26). Add the personal tax on extracting the profit as salary and dividends and the structure saving on full extraction is marginal at current rates; it grows if you retain profit in the company or extract through employer pension contributions.</p>
 
 <p>But the real saving comes from claiming missed expenses. That same photographer was not claiming mileage, home office costs, or capital allowances. Their accountant had them on a flat rate VAT scheme when standard VAT would have reclaimed £2,000 on a new camera and lens. Total additional savings: £3,000.</p>
 
-<p>Net result: the accountant costs £1,500 but saves £3,500. That is a 133% return on investment. And that is before you factor in the time saved not dealing with HMRC queries or late filing penalties.</p>
+<p>Net result: the accountant costs £1,500 and the expense corrections alone save £3,000, twice the fee. And that is before you factor in the time saved not dealing with HMRC queries or late filing penalties.</p>
 
 <h2>Next Steps</h2>
 

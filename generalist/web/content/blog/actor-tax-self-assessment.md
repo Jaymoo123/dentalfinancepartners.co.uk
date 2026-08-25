@@ -3,12 +3,13 @@ title: "Actor Tax: How Self Assessment Works for UK Actors in 2026/27"
 slug: "actor-tax-self-assessment"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/actor-tax-self-assessment"
 date: "2026-08-25"
+generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Actor Tax UK: Self Assessment Walkthrough 2026/27"
 metaDescription: "How actor tax works in the UK: register by 5 October, claim agent fees and costume costs, and follow a full 2026/27 worked example with payments on account."
 altText: "Actor at a desk working through self assessment paperwork between rehearsals"
-image: "https://images.pexels.com/photos/6896220/pexels-photo-6896220.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "/blog/actor-tax-self-assessment.jpg"
 imageCredit:
   photographer: "cottonbro studio"
   photographerUrl: "https://www.pexels.com/@cottonbro"
@@ -22,8 +23,8 @@ faqs:
     answer: "Usually, yes. Most actors work under contracts for services, which makes them self-employed for tax. Engagers have paid self-employed performers gross since 6 April 2014, when the old rules treating entertainers as employed earners for Class 1 National Insurance were repealed. You register for Self Assessment, report every engagement on your return, and pay income tax plus Class 4 National Insurance on your profit. The exception is a genuine employment contract, such as some long-run theatre or orchestral engagements, where the employer runs PAYE as normal."
   - question: "Are agent fees tax deductible for actors?"
     answer: "Yes, but the rule depends on how you were engaged. On self-employed work, agent commission (including the VAT on it) is an ordinary business expense under the wholly and exclusively rule, with no percentage cap. On employed work, ITEPA 2003 s.352 gives theatrical performers a rare statutory deduction for agent fees of up to 17.5% of the employment earnings, VAT inclusive. Typical commission of 10% to 15% plus VAT fits inside that cap. Deduct the self-employed commission on your self-employment pages and claim the employed-fee deduction against the employment income."
-  - question: "Can actors claim clothes, haircuts and gym membership?"
-    answer: "Ordinary everyday clothing is not deductible, even if you bought it only for work. The House of Lords settled this in Mallalieu v Drummond: normal clothes keep you warm and decent, so they always carry a private purpose. Genuine costume and stage wear that is not ordinary civilian clothing is allowable. The same logic blocks ordinary haircuts, grooming and gym costs, while genuinely performance-specific items can qualify. The line is the nature of the item, not your intention when you bought it, and borderline cases are fact-specific, so take advice before claiming."
+  - question: "What clothing can an actor claim on Self Assessment?"
+    answer: "Genuine costume and stage wear: a costume proper, a stage outfit you would not realistically wear off stage, or protective and performance-specific items. Ordinary everyday clothing is not deductible, even if you bought it only for a role. The House of Lords settled this in Mallalieu v Drummond: normal clothes keep you warm and decent, so they always carry a private purpose. The line is the nature of the item, not your intention when you bought it, and borderline cases are fact-specific, so take advice before claiming."
   - question: "When is the actor tax return due?"
     answer: "The online return and the balancing payment for the 2026/27 tax year are due by 31 January 2028. A paper return is due earlier, by 31 October 2027. If 2026/27 was your first year of self-employed acting income, you must register for Self Assessment by 5 October 2027. Missing the filing deadline triggers an automatic £100 penalty, with daily and further penalties after that, and late payment adds interest plus surcharges."
   - question: "Do actors pay National Insurance?"
@@ -110,19 +111,19 @@ keyTakeaways:
 
 <h2>Worked Example: a Mixed PAYE and Self-Employed Year</h2>
 
-<p>Maya is an actor with a mixed 2026/27. She earns £30,000 gross from self-employed screen and commercial work, and £8,000 from a twelve-week theatre contract that was a genuine employment, run through PAYE on a standard tax code with no tax deducted (her salary sat below the code's allowance).</p>
+<p>Daniel is an actor with a mixed 2026/27. He earns £30,000 gross from self-employed screen and commercial work, and £8,000 from a twelve-week theatre contract that was a genuine employment, run through PAYE on a standard tax code with no tax deducted (his salary sat below the code's allowance).</p>
 
-<p>Her self-employed expenses: her agent takes 12% commission plus VAT on the self-employed work, £3,600 plus £720 VAT, £4,320 in total. Travel to auditions and sets, Spotlight and Equity subscriptions, headshots, self-tape kit and classes add £1,180. Total expenses £5,500, so her self-employed profit is £24,500.</p>
+<p>His self-employed expenses: his agent takes 12% commission plus VAT on the self-employed work, £3,600 plus £720 VAT, £4,320 in total. Travel to auditions and sets, Spotlight and Equity subscriptions, headshots, self-tape kit and classes add £1,180. Total expenses £5,500, so his self-employed profit is £24,500.</p>
 
-<p><strong>Income tax.</strong> Total income is £8,000 employment plus £24,500 profit, £32,500. Her personal allowance of £12,570 comes off, leaving £19,930 taxable, all within the basic-rate band, so tax is £19,930 x 20% = <strong>£3,986</strong> (2026/27, rUK rates). PAYE deducted nothing, so the return collects the lot: the allowance her employer's payroll assumed was available now has to cover both income streams.</p>
+<p><strong>Income tax.</strong> Total income is £8,000 employment plus £24,500 profit, £32,500. His personal allowance of £12,570 comes off, leaving £19,930 taxable, all within the basic-rate band, so tax is £19,930 x 20% = <strong>£3,986</strong> (2026/27, rUK rates). PAYE deducted nothing, so the return collects the lot: the allowance his employer's payroll assumed was available now has to cover both income streams.</p>
 
-<p><strong>National Insurance.</strong> Class 4 is charged on profits only: (£24,500 − £12,570) x 6% = <strong>£715.80</strong>. Class 2 is not payable (removed from 6 April 2024); her profits are high enough that she is treated as having paid it, protecting her State Pension record.</p>
+<p><strong>National Insurance.</strong> Class 4 is charged on profits only: (£24,500 − £12,570) x 6% = <strong>£715.80</strong>. Class 2 is not payable (removed from 6 April 2024); his profits are high enough that he is treated as having paid it, protecting his State Pension record.</p>
 
-<p><strong>The bill.</strong> Total 2026/27 liability: £3,986 + £715.80 = <strong>£4,701.80</strong>, due 31 January 2028. It exceeds £1,000 and almost none of it was collected at source, so payments on account kick in at £2,350.90 each. Her 31 January 2028 payment is therefore £4,701.80 + £2,350.90 = <strong>£7,052.70</strong>, with another £2,350.90 due 31 July 2028. She earned £38,000 gross; setting aside 25% of each fee (£9,500 across the year) would have covered it with room to spare.</p>
+<p><strong>The bill.</strong> Total 2026/27 liability: £3,986 + £715.80 = <strong>£4,701.80</strong>, due 31 January 2028. It exceeds £1,000 and almost none of it was collected at source, so payments on account kick in at £2,350.90 each. His 31 January 2028 payment is therefore £4,701.80 + £2,350.90 = <strong>£7,052.70</strong>, with another £2,350.90 due 31 July 2028. He earned £38,000 gross; setting aside 25% of each fee (£9,500 across the year) would have covered it with room to spare.</p>
 
 <h2>When Does Making Tax Digital Apply to Actors?</h2>
 
-<p>Making Tax Digital for Income Tax replaces the single annual return with digital records, four quarterly updates and a final declaration. It applies from 6 April 2026 where qualifying income exceeds £50,000 (tested on the 2024/25 return), from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. The test uses gross self-employment and property income before expenses, not profit, so a busy actor grossing £55,000 is in from April 2026 even if profit is far lower. Maya, at £30,000 gross, sits exactly on the 2027 line: one more pound of gross income in the test year and she joins from April 2027.</p>
+<p>Making Tax Digital for Income Tax replaces the single annual return with digital records, four quarterly updates and a final declaration. It applies from 6 April 2026 where qualifying income exceeds £50,000 (tested on the 2024/25 return), from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. The test uses gross self-employment and property income before expenses, not profit, so a busy actor grossing £55,000 is in from April 2026 even if profit is far lower. Daniel, at £30,000 gross, sits exactly on the 2027 line: one more pound of gross income in the test year and he joins from April 2027.</p>
 
 <h2>Where to Get Help</h2>
 

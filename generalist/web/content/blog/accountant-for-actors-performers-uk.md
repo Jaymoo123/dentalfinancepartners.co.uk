@@ -3,10 +3,11 @@ title: "Accountant for Actors and Performers UK: The Rules That Decide Your Tax"
 slug: "accountant-for-actors-performers-uk"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/accountant-for-actors-performers-uk"
 date: "2026-05-17"
+dateModified: "2026-08-25"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "Accountant for Actors &amp; Performers UK: Tax Rules"
+metaTitle: "Accountant for Actors and Performers UK: Tax Rules"
 metaDescription: "The 2014 entertainers NIC change, the 17.5% agent fee cap, the costume rule and theatre accounts. The tax law an accountant for actors must know cold."
 altText: "Actor reviewing financial paperwork with an accountant in a London office near Soho"
 image: "/blog/accountant-for-actors-performers-uk.jpg"
@@ -42,7 +43,7 @@ keyTakeaways:
 
 <p>The part almost nobody explains is what changed on 6 April 2014. Before that date, special regulations (the Social Security Categorisation of Earners Regulations 1978) treated many self-employed entertainers as employed earners for National Insurance only. Producers and engagers deducted Class 1 NIC from performers' fees at source, even though the performer was self-employed for income tax. It was a genuinely odd hybrid, and it generated decades of confusion.</p>
 
-<p>That regime was repealed for entertainers by SI 2014/635. Since 6 April 2014, the position is clean: engagers pay self-employed performers gross, and the performer pays Class 4 National Insurance through Self Assessment on their profits, exactly like any other self-employed person. For 2025/26 that means 6% on profits between £12,570 and £50,270 and 2% above, on top of income tax at your marginal rate. Class 2 stopped being payable from 6 April 2024; profits above the small profits threshold earn your state pension credit automatically.</p>
+<p>That regime was repealed for entertainers by SI 2014/635. Since 6 April 2014, the position is clean: engagers pay self-employed performers gross, and the performer pays Class 4 National Insurance through Self Assessment on their profits, exactly like any other self-employed person. For 2026/27 that means 6% on profits between £12,570 and £50,270 and 2% above, on top of income tax at your marginal rate. Class 2 stopped being payable from 6 April 2024; profits above the small profits threshold earn your state pension credit automatically.</p>
 
 <p>The exception is performers on genuine employment contracts. Some long-run theatre engagements and salaried orchestral positions are employment, with PAYE and Class 1 deducted as normal. Many working performers hold both kinds of engagement in the same tax year, and that mix is exactly where the next rule bites.</p>
 
@@ -73,7 +74,7 @@ keyTakeaways:
 <p>The rules above are the sector-specific core. Around them sits the ordinary machinery, and a specialist earns their fee by running all of it against a performer's irregular, mixed-status income:</p>
 
 <ul>
-<li><strong>Self Assessment.</strong> Registration, the SA103 self-employment pages, employed engagements alongside, payments on account and the first-year double bill in January. We walk the whole process, with a worked example, in our <a href="/blog/sole-trader-and-self-employment/actor-tax-self-assessment-uk">actor tax and Self Assessment guide</a>.</li>
+<li><strong>Self Assessment.</strong> Registration, the SA103 self-employment pages, employed engagements alongside, payments on account and the first-year double bill in January. We walk the whole process, with a worked example, in our <a href="/blog/sole-trader-and-self-employment/actor-tax-self-assessment">actor tax and Self Assessment guide</a>.</li>
 <li><strong>Status per engagement.</strong> Each contract assessed on the factors, not filed by habit. Where you work through your own limited company for medium or large productions, the off-payroll rules put the Status Determination Statement with the client; our <a href="/blog/limited-company-tax/ir35-explained-contractor-separate-limited-company">IR35 guide</a> covers how that works and how to challenge a determination.</li>
 <li><strong>Expenses done to the case law.</strong> Agent fees split employed versus self-employed, clothing tested against Mallalieu, travel tested against the 24-month rule, plus the uncontroversial claims: Spotlight and Equity subscriptions, showreels, headshots, coaching that maintains existing skills, insurance, accountancy fees.</li>
 <li><strong>Structure.</strong> Sole trader suits most performers. A limited company can help at consistently higher profits, taking a small salary plus dividends (taxed at 10.75%, 35.75% and 39.35% for 2026/27 above the £500 allowance), but only where engagements sit outside the off-payroll rules. Modelled with your numbers, not a rule of thumb.</li>
@@ -108,4 +109,4 @@ keyTakeaways:
 <li><strong>Do you offer year-round advice?</strong> Contract and status questions arrive when the offer does, not in January.</li>
 </ul>
 
-<p>At Holloway Davies we work with actors, performers and creatives across the UK on exactly these rules. If you want your engagements, expenses and filings handled by people who knew about section 352 before you asked, <a href="/contact">contact our team</a>. If you would rather understand the filing process itself first, start with the <a href="/blog/sole-trader-and-self-employment/actor-tax-self-assessment-uk">actor tax and Self Assessment walkthrough</a>.</p>
+<p>At Holloway Davies we work with actors, performers and creatives across the UK on exactly these rules. If you want your engagements, expenses and filings handled by people who knew about section 352 before you asked, <a href="/contact">contact our team</a>. If you would rather understand the filing process itself first, start with the <a href="/blog/sole-trader-and-self-employment/actor-tax-self-assessment">actor tax and Self Assessment walkthrough</a>.</p>

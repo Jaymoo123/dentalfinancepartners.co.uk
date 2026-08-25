@@ -94,7 +94,7 @@ keyTakeaways:
 
 <h2>Is VAT Charged on Royalties?</h2>
 
-<p>Yes, where the place of supply is the UK. Royalty income is payment for a standard-rated supply of services, the licensing of your rights, and it <strong>counts toward the £90,000 VAT registration threshold</strong>. You may read elsewhere that collection-society income does not count toward the threshold. That is not correct, and relying on it is how musicians end up registered late with a backdated VAT bill.</p>
+<p>Yes, where the place of supply is the UK. Royalty income is payment for a standard-rated supply of services, the licensing of your rights, and it <strong>counts toward the £90,000 VAT registration threshold</strong>. Collection-society income counts like any other UK royalty income; treating it as excluded is how musicians end up registered late with a backdated VAT bill.</p>
 
 <p>The trap is the mix. A musician with £70,000 of gig and teaching income is nowhere near the threshold on gigs alone. Add £15,000 of PRS and PPL distributions and a £10,000 sync deal and the rolling 12-month total is £95,000: registration is compulsory, and it became compulsory the month the rolling total crossed £90,000, not at the year end. The threshold is tested continuously, so this needs monitoring, not an annual glance.</p>
 

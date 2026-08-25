@@ -8,6 +8,13 @@ author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
 metaTitle: "Do Influencers and YouTubers Pay Tax in the UK?"
 metaDescription: "Yes, once gross creator income passes £1,000 a year. When to register, 2026/27 rates, tax on PR gifts, VAT and a worked example on £25,000 of profit."
+altText: "Content creator setting up a smartphone and ring light to record a video at home"
+image: "/blog/do-influencers-youtubers-pay-tax.jpg"
+imageCredit:
+  photographer: "Sasha Kim"
+  photographerUrl: "https://www.pexels.com/@sasha-kim"
+  sourceUrl: "https://www.pexels.com/photo/woman-setting-up-a-smartphone-for-vlogging-9413658/"
+  source: "Pexels"
 h1: "Do Influencers and YouTubers Pay Tax in the UK?"
 summary: "Yes. Once your gross income from YouTube, TikTok, Instagram, brand deals or affiliate links passes £1,000 in a tax year, you must register with HMRC and pay income tax and Class 4 National Insurance on your profits. We cover when to register, how much you will pay at 2026/27 rates, how gifted products are taxed, and when VAT starts to matter."
 schema: ""
@@ -28,7 +35,7 @@ keyTakeaways:
   - "At 2026/27 rates, £25,000 of creator profit produces £2,486 income tax plus £745.80 Class 4 NIC, £3,231.80 in total."
   - "Products received in return for content or an agreed post are taxable trading receipts at market value under HMRC's money's worth rule (BIM40051); there is no £50 gift exemption."
   - "Class 2 National Insurance is no longer payable from 6 April 2024; creators with profits above the small profits threshold keep state pension entitlement automatically."
-  - "VAT registration becomes compulsory once taxable turnover exceeds £90,000 in a rolling 12-month period, counting brand deals and platform income."
+  - "VAT registration becomes compulsory once taxable turnover exceeds £90,000 in a rolling 12-month period; UK brand deals and UK sales count, while overseas platform payments such as AdSense generally do not."
 ---
 
 <p>Yes. If you are a UK resident earning from YouTube, TikTok, Instagram, Twitch, brand deals, affiliate links or any other platform, HMRC treats that as self-employed trading income once your gross income passes £1,000 in a tax year. From that point you must register for Self Assessment and pay income tax plus Class 4 National Insurance on your profits, exactly like any other sole trader.</p>
@@ -63,9 +70,9 @@ keyTakeaways:
 
 <h2>How much tax will I pay on my creator income?</h2>
 
-<p>For 2026/27, you pay income tax at 20% on profits above the £12,570 personal allowance (40% above £50,270, 45% above £125,140, with Scotland setting its own bands), plus Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above that. Class 2 National Insurance was abolished from 6 April 2024, so ignore any article telling you to pay a weekly Class 2 charge; profits above the small profits threshold keep your state pension entitlement automatically.</p>
+<p>For 2026/27, you pay income tax at 20% on profits above the £12,570 personal allowance (40% above £50,270, 45% above £125,140, with Scotland setting its own bands), plus Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above that. Class 2 National Insurance was abolished from 6 April 2024, so there is no weekly Class 2 charge to pay; profits above the small profits threshold keep your state pension entitlement automatically.</p>
 
-<p>Here is a full example. Amara runs a YouTube channel and Instagram account as her only income, and her 2026/27 profit (income minus allowable expenses) is £25,000:</p>
+<p>Here is a full example. Sophie runs a YouTube channel and Instagram account as her only income, and her 2026/27 profit (income minus allowable expenses) is £25,000:</p>
 
 <ul>
 <li>Taxable profit: £25,000 minus the £12,570 personal allowance = £12,430</li>
@@ -78,7 +85,7 @@ keyTakeaways:
 
 <h2>Do I pay tax on gifts and PR products?</h2>
 
-<p>Often yes. HMRC's rule (manual reference BIM40051) is that trading receipts include money's worth, not just cash. A product or service you receive in return for content, promotion or an agreed post is a taxable trading receipt at its market value. If a brand sends you a £600 camera on the understanding you will feature it, that is £600 of income, the same as being paid £600 in cash. You may have seen a "£50 PR gift threshold" quoted online; no such threshold exists.</p>
+<p>Often yes. HMRC's rule (manual reference BIM40051) is that trading receipts include money's worth, not just cash. A product or service you receive in return for content, promotion or an agreed post is a taxable trading receipt at its market value. If a brand sends you a £600 camera on the understanding you will feature it, that is £600 of income, the same as being paid £600 in cash. There is no £50 tax-free threshold for PR gifts.</p>
 
 <p>Two situations are genuinely less clear-cut. An item that is not convertible into money (it cannot realistically be sold) may fall outside the charge, and unsolicited freebies sent with no obligation or expectation of content are not automatically trading receipts. Both depend heavily on the facts, so if serious value is involved, take advice rather than assume either way.</p>
 
@@ -92,7 +99,7 @@ keyTakeaways:
 
 <h2>Do I charge VAT?</h2>
 
-<p>Only once you are VAT registered, which becomes compulsory when your taxable turnover exceeds £90,000 in any rolling 12-month period. Brand deals, sponsorships and platform income all count toward the threshold. Once registered, you charge 20% VAT on work invoiced to UK brands; services supplied to overseas business customers, such as ad revenue from a US platform, are typically outside the scope of UK VAT under place-of-supply rules, though they still need correct treatment on your returns. Most smaller creators are nowhere near £90,000 and can ignore VAT for now, but watch the rolling total in a growth year because the test is not tax-year based.</p>
+<p>Only once you are VAT registered, which becomes compulsory when your taxable turnover exceeds £90,000 in any rolling 12-month period. UK brand deals, sponsorships and sales to UK customers count toward the threshold; services supplied to overseas business customers, such as ad revenue from a US platform, are typically outside the scope of UK VAT under place-of-supply rules, so they generally do not count, though they still need correct treatment on your returns. Once registered, you charge 20% VAT on work invoiced to UK brands. Most smaller creators are nowhere near £90,000 and can ignore VAT for now, but watch the rolling total in a growth year because the test is not tax-year based.</p>
 
 <h2>Where to get help</h2>
 
