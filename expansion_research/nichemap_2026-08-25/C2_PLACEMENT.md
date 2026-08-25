@@ -12,6 +12,33 @@ Webmaster Tools (our own free APIs) or from files already on disk.
 `expansion_research/R2C_OVERLAP.md` is untouched. It remains the historical record of
 the 2026-07-11 run.
 
+> **AMENDED 2026-08-25 (independent audit, owner-approved).** Four parallel agents
+> re-derived all 89 rows from repo content, ignoring this file's numbers. 84 of 89
+> confirmed. Changes applied in place below:
+> 1. **Rows 37, 41, 42, 44, 46 (content creators, musicians, actors, artists,
+>    photographers): host changed agency -> `generalist`** (owner decision 2026-08-25).
+>    "Agency Founder Finance" sells to agency OWNERS, not individual creators; generalist
+>    already holds the seed "accountant for X" pages for every one of these plus
+>    `creative-industry-tax-reliefs-uk.md`. ABSORB-by-host tallies updated:
+>    generalist 23 -> 28, agency 8 -> 3.
+> 2. **Row 36 Amazon FBA: ABSORBED-ALREADY -> ABSORB -> `ecommerce` (thin).** Ecommerce
+>    has 1 Amazon page; the only dedicated FBA page sits on generalist. Headline tallies
+>    now **31 ABSORBED-ALREADY / 55 ABSORB**.
+> 3. **Row 43 Film & TV: "zero coverage anywhere" was false** (generalist's
+>    `creative-industry-tax-reliefs-uk.md` covers the reliefs). STANDALONE stands on
+>    demand + brand fit, not on zero coverage.
+> 4. Page-count inflations noted, verdicts unaffected: row 7 landed estates ~10 pages
+>    not 18; row 68 farming ~1 hub + 8 posts not 5+18; row 80 expat slugs ~31 not 62;
+>    row 8's ~110 includes 46 thin `/for/<trade>` stubs.
+> 5. **Cannibalisation watch-list for the build program:** generalist holds stray
+>    one-off pages for churches, schools, hotels, restaurants (x2), photographers and
+>    Amazon FBA. When each cluster builds on its proper host, differentiate or
+>    (owner-gated) redirect the stray; never silently duplicate.
+> 6. Row 31 freelancers: ABSORBED-ALREADY on contractors-ir35 is weakly supported
+>    (zero freelancer-targeted slugs there; freelancer pages live on generalist +
+>    agency). Kept, but the contractors-ir35 Track 2 pass should treat freelancers as
+>    a thin cluster to deepen, not done.
+
 ---
 
 ## 0. Commands and data-through dates (trap 5: a value without its deriving command is inadmissible)
@@ -158,8 +185,8 @@ never produce a NO-BUILD. Shapes used: `section + 1-2 pages` / `cluster 3-5` /
 
 | Verdict | Count |
 |---|---|
-| **ABSORBED-ALREADY** (a live site covers it today) | **32** |
-| **ABSORB into a named live site** | **54** |
+| **ABSORBED-ALREADY** (a live site covers it today) | **31** (audit: FBA moved out) |
+| **ABSORB into a named live site** | **55** |
 | **STANDALONE** (needs its own site) | **2** |
 | **NO-BUILD** (C1 BLOCKED) | **1** |
 | **Total** | **89** |
@@ -173,8 +200,8 @@ convert and already have a running domain-trust clock.
 
 | Host | New niches | Also already hosts |
 |---|---|---|
-| `generalist` (Holloway Davies) | **23** | 0 |
-| `agency` (Agency Founder Finance) | **8** | 1 |
+| `generalist` (Holloway Davies) | **28** (audit: +5 creator niches) | 0 |
+| `agency` (Agency Founder Finance) | **3** (audit: -5) | 1 |
 | `hospitality` (Hospitality Tax) | **5** | 3 |
 | `construction-cis` (Trade Tax Specialists) | **4** | 3 |
 | `medical` (Medical Accounts) | **4** | 2 |
@@ -184,10 +211,11 @@ convert and already have a running domain-trust clock.
 | `care` (Care Home Tax) | **1** | 1 |
 | `solicitors` (Accounts for Lawyers) | **1** | 1 |
 | `startups-tech` (Founder Tax Partners) | **1** | 2 |
-| `crypto`, `dentists`, `ecommerce`, `pharmacies` | **0** | 2 / 1 / 2 / 2 |
+| `ecommerce` | **1** (audit: FBA is thin, not done) | 1 |
+| `crypto`, `dentists`, `pharmacies` | **0** | 2 / 1 / 2 |
 
-**The generalist load is the single most important operational finding.** 23 of the 54
-absorbs route to one site, because 23 niches have no estate brand that names their
+**The generalist load is the single most important operational finding.** 28 of the 55
+absorbs route to one site, because these niches have no estate brand that names their
 audience and generalist is the estate's designed catch-all (§6.1's own precedent: retail
 became a generalist cluster). That is a sequencing problem, not a placement error, but
 it means generalist becomes the busiest build queue in the estate and its 448-page
@@ -481,17 +509,17 @@ the §4 disagreements.
 | 33 | Startups | CONDITIONAL | 0.64 | 6 | EXCLUDE | generalist 0.64 | **ABSORBED-ALREADY** -> `startups-tech` | live: 23 pages | 890 | 0.36 (generalist) | yes | core audience |
 | 34 | Tech / SaaS companies | CONDITIONAL | 0.32 | 2 | CAUTION | startups-tech 0.32 / generalist 0.16 | **ABSORBED-ALREADY** -> `startups-tech` | live: 16 pages (thin, deepen) | 530 | 0.16 (generalist) |  | core audience; cont 0.32 on host |
 | 35 | Ecommerce sellers | CLEAR | 0.54 | 106 | EXCLUDE | generalist 0.54 / ecommerce 0.40 / agency 0.27 | **ABSORBED-ALREADY** -> `ecommerce` | live: 16 pages | 980 | 0.42 (generalist) | yes | core audience |
-| 36 | Amazon FBA sellers | CLEAR | 0.50 | 2 | EXCLUDE | ecommerce 0.50 | **ABSORBED-ALREADY** -> `ecommerce` | live: 5 pages | 300 | 0.00 (generalist) |  | core audience; cont 0.50 on host |
-| 37 | Content creators / influencers | CLEAR | 0.24 | 1 | CAUTION | generalist 0.24 | **ABSORB** -> `agency` | cluster 3-5 | 310 | 0.00 (construction-cis) | yes | agency = the estate's creative-sector brand, 23 creative pages; GT 0, so lock positions first |
+| 36 | Amazon FBA sellers | CLEAR | 0.50 | 2 | EXCLUDE | ecommerce 0.50 | **ABSORB** -> `ecommerce` | cluster 3-5 | 300 | 0.00 (generalist) |  | AUDIT 08-25: only 1 Amazon page on host; the sole FBA-dedicated page is on generalist (redirect/differentiate when cluster builds) |
+| 37 | Content creators / influencers | CLEAR | 0.24 | 1 | CAUTION | generalist 0.24 | **ABSORB** -> `generalist` | cluster 3-5 | 310 | 0.00 (construction-cis) |  | AUDIT 08-25 host change: generalist already holds creator + influencer seed pages; agency brand = agency owners, not creators |
 | 38 | OnlyFans creators | CONDITIONAL | 0.50 | 1 | EXCLUDE | generalist 0.50 | **STANDALONE** | site | 160 | 0.00 (dentists) |  | BRAND FIT fails on every live brand; C1 itself specifies a separate domain, no adult imagery, no paid search |
 | 39 | Crypto traders / investors | CONDITIONAL | 0.56 | 22 | EXCLUDE | crypto 0.56 / property 0.30 | **ABSORBED-ALREADY** -> `crypto` | live: 30 pages | 1,360 | 0.30 (property) |  | core audience; pilot site |
 | 40 | Day / forex traders | CONDITIONAL | 1.00 | 29 | EXCLUDE | generalist 1.00 / crypto 0.52 / construction-cis 0.43 | **ABSORBED-ALREADY** -> `crypto` | live: 5 pages (thin, deepen) | 130 | 0.43 (generalist) | yes | inside crypto's recorded scope wall (crypto, day trading, forex) |
-| 41 | Musicians | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **ABSORB** -> `agency` | cluster 3-5 | 50 | 0.00 (property) |  | creative-sector host; mass 1 on generalist; brand = creative businesses |
-| 42 | Actors / entertainment industry | CLEAR | 0.44 | 10 | CAUTION | agency 0.44 / generalist 0.22 | **ABSORB** -> `agency` | cluster 3-5 | 200 | 0.22 (agency) |  | cont 0.44/s10 on host; mass 23 creative pages; brand fits |
-| 43 | Film & TV production | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **STANDALONE** | site | 1,710 | 0.00 (construction-cis) |  | ALL THREE fail on the best candidate (agency): GT 0 creative-sector relief positions anywhere, mass 0 pages, brand does not name production companies |
-| 44 | Artists / creatives | CLEAR | 0.48 | 1 | EXCLUDE | generalist 0.48 / agency 0.24 | **ABSORB** -> `agency` | cluster 3-5 | 220 | 0.48 (generalist) | yes | mass 8; cont 0.24/s6 on host; brand fits |
+| 41 | Musicians | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **ABSORB** -> `generalist` | cluster 3-5 | 50 | 0.00 (property) |  | AUDIT 08-25 host change: `accountant-for-musicians-uk.md` already on generalist |
+| 42 | Actors / entertainment industry | CLEAR | 0.44 | 10 | CAUTION | agency 0.44 / generalist 0.22 | **ABSORB** -> `generalist` | cluster 3-5 | 200 | 0.22 (agency) |  | AUDIT 08-25 host change: `accountant-for-actors-performers-uk.md` already on generalist; agency brand = founders |
+| 43 | Film & TV production | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **STANDALONE** | site | 1,710 | 0.00 (construction-cis) |  | AUDIT 08-25: "zero coverage anywhere" was FALSE (generalist `creative-industry-tax-reliefs-uk.md`); STANDALONE stands on demand + brand fit |
+| 44 | Artists / creatives | CLEAR | 0.48 | 1 | EXCLUDE | generalist 0.48 / agency 0.24 | **ABSORB** -> `generalist` | cluster 3-5 | 220 | 0.48 (generalist) |  | AUDIT 08-25 host change: generalist holds the creative-reliefs pillar + performer seeds |
 | 45 | Authors / writers | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **ABSORB** -> `agency` | section + 1-2 pages | 20 | 0.00 (solicitors) |  | mass 2; brand fits (creative sole traders) |
-| 46 | Photographers | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **ABSORB** -> `agency` | cluster 3-5 | 50 | 0.00 (property) |  | creative-sector host; brand fits |
+| 46 | Photographers | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **ABSORB** -> `generalist` | cluster 3-5 | 50 | 0.00 (property) |  | AUDIT 08-25 host change: `accountant-for-photographers-uk.md` already on generalist |
 | 47 | Interior designers | CLEAR | 0.00 | 0 | CLEAR | all sites 0.00 | **ABSORB** -> `agency` | cluster 3-5 | 40 | 0.00 (solicitors) |  | design services = agency-shaped business; brand fits |
 | 48 | Marketing agencies | CLEAR | 0.32 | 1 | CAUTION | agency 0.32 | **ABSORBED-ALREADY** -> `agency` | live: 239 pages | - | 0.00 (construction-cis) |  | core audience |
 | 49 | Recruitment agencies | CLEAR | 0.54 | 3 | EXCLUDE | agency 0.54 | **ABSORB** -> `agency` | hub 12-15 + supporting | 1,150 | 0.00 (construction-cis) |  | cont 0.54/s3 on host; mass 6; brand literally names agencies. Largest ABSORB by demand (1,150/mo) |

@@ -623,6 +623,8 @@ The full incident log is in the Property STATE/DESIGN_SYSTEM docs; these are the
 | 11 | Settlement agreements structure (§6.1 regulatory hold) | Site with ad/sponsorship model (needs a new conversion-architecture spec), Solicitors cluster (fails the fit test: consumer legal intent vs law-firm-principal audience), or skip. No build under the per-lead model, in any form | OPEN |
 | 12 | Adopt §6.3 (the coverage-verdict test) as the standing per-niche rule, and sign off its remaining UNBACKED items | Adopt, as rewritten on 2026-08-25 under decision 13. Everything in §6.3 reuses an instrument that already exists at its already-calibrated threshold. Sub-items: (a) **WITHDRAWN 2026-08-25, not open.** This proposed a STANDALONE floor of lead-value >= 4 of 5 on the `R2B_LEAD_VALUE.md` scale. The owner deleted commercial-value-per-lead as a criterion entirely (decision 13), so there is nothing left to sign off. `R2B_LEAD_VALUE.md` is background reading and gates nothing. It was already falsified on file: farming scored 5 of 5 and was still correctly not built standalone (§6.3.7); (b) **an ABSORB or NO-BUILD verdict older than 12 months is re-tested before it is reused**, because C2 containment is corpus-relative and every receiving corpus grows. STILL OPEN, and unaffected by decision 13 since it is about host selection, not demand; (c) **C2 selects candidate hosts, not the host.** Below the 0.45 EXCLUDE line the receiving site is chosen by three host-fit tests (ground truth already in that site's `house_positions.md`; binding mass counted by grep; brand fit), all three required. Run literally, today's C2 would have sent farming to construction-cis (containment 0.00) or generalist (0.35) instead of Property. Applied as a binding correction in §6.3.7 pending this sign-off. STILL OPEN, and MORE load-bearing after decision 13, because host selection is now most of what the test does; (d) **PROPOSED criterion C4b, conversion-model fit**, rescoped 2026-08-25: where a niche's observed buying process cannot complete through a faceless web form, the shape is ABSORB rather than STANDALONE. It can never produce a NO-BUILD. This is what actually killed farming as a site (`tier2_farmers/VERDICT.md`). STILL OPEN. Blast radius of adopting: none until the next niche decision. Revert: delete §6.3 and the ledger fields | OPEN on (b), (c), (d); (a) WITHDRAWN 2026-08-25 |
 | 13 | **Strategic correction, 2026-08-25: coverage over selection.** Volume and lead value stop being build gates; every accounting niche gets covered somewhere; the only hard gate is regulatory | No recommendation needed, this is a recorded owner instruction, not a proposal. Verbatim in §6.3. Effects, all applied to this doc in the same session: C5 DELETED as a criterion and decision 12(a) WITHDRAWN; C3 demoted from gate to description with its G2 and G3 floors removed; C4 demoted from gate to difficulty input; C6 demoted to a sizing input; NO-BUILD narrowed to regulatory failures and explicit owner vetoes; decision 7 narrowed to regulatory NO-GOs only; the §6.1 ledger's demand-killed NO-GOs reclassified as un-hosted coverage candidates. Evidence: §6.3.0, leads per 100 published pages measured 2026-08-25 off the live `leads` table with test rows excluded per `supabase/migrations/20260819000003_test_leads_excluded_from_kpis.sql:7`. Nothing locked is touched: no page collapsing, no redirects, no Google Business Profile, FCA #52 still locked, settlement agreements still on regulatory hold (decision 11) | **TAKEN 2026-08-25: owner instruction, recorded.** Superseded thresholds are marked in place in §6.3.2 rather than deleted, so a future reader sees the change |
+| 14 | Niche-map audit + creator-family host | Accept the 4-agent independent audit of all 89 placements (84 confirmed) and move the 5 creator niches (content creators, musicians, actors, artists, photographers) from agency to generalist, where the seed pages already live | **TAKEN 2026-08-25: APPROVED (generalist).** Amendments applied in place to `expansion_research/nichemap_2026-08-25/C2_PLACEMENT.md`; appendix J carries the supersession note. Tallies now 31/55/2/1 |
+| 15 | **Decouple the tracks: run corpus expansion (Track 2) separately from the design port (Track 1), merges first** | Owner instruction 2026-08-25: doing both at once is impractical; the expansion program runs on existing sites first (the 55 ABSORB + thin ABSORBED-ALREADY clusters), under the §5.0 Track-2-first rules; design ports continue as their own workstream | **TAKEN 2026-08-25: owner instruction, recorded.** Runbook R.5 is the front door |
 
 ## 9. Recommended sequencing (pending decision 2)
 
@@ -985,6 +987,19 @@ British English. No em-dashes anywhere in user-facing copy (grep gate). No claim
 
 ## J. The estate niche-cluster registry (which niche lives on which site)
 
+> **SUPERSEDED FOR PLACEMENT 2026-08-25.** The binding per-niche registry is now
+> `expansion_research/nichemap_2026-08-25/C2_PLACEMENT.md` §10 **as amended 2026-08-25**
+> (all 89 rows placed; independently audited by four agents re-deriving from repo
+> content; owner approved the amendments). Where the table below disagrees with the
+> amended C2 table, C2 wins. Headline differences: creators/musicians/actors/artists/
+> photographers -> `generalist` NOT digital-agency (owner decision 08-25); OnlyFans =
+> STANDALONE by constraint; film & TV = STANDALONE (1,710/mo); recruitment agencies =
+> ABSORB -> agency hub (not killed); financial advisers = the only NO-BUILD; used-car
+> dealers -> generalist; travel agents (TOMS) -> hospitality; energy & renewables ->
+> generalist (3-way split flagged); architects -> generalist; Amazon FBA = thin ABSORB
+> on ecommerce. Tallies: 31 ABSORBED-ALREADY / 55 ABSORB / 2 STANDALONE / 1 NO-BUILD.
+> The unique-assignment principle and the three-options paragraph below remain binding.
+
 The unique-assignment principle from `REWRITE_PROGRAM.md` §9.4 applies at ESTATE level, not just page level: at the moment a niche is WRITTEN anywhere, it is owned by exactly ONE site. Two sites writing the same niche is estate-level cannibalisation; before any site opens a cluster, check this table, and record the assignment here in the same session.
 
 What this table is NOT: a mandate to force all 89 niches into the existing sites. Each row is the DEFAULT HOME if and only if the niche is pursued as a cluster; for every niche the executing agent still holds three options, decided on discovery evidence and fit, in this order: (1) fold into the listed site where the audience genuinely overlaps that site's reader; (2) promote to its own Track 3 site where the evidence supports a standalone brand (the §6.1 queue); (3) skip for now, recorded with a reason. A niche whose audience does not fit any site's voice is skipped or promoted, never shoehorned: a page for taxi drivers on a generic-small-business site fits; a farmers cluster on the crypto site does not, and forcing fit produces the off-topic content the A* bar prohibits. Volumes are the R2D cluster figures (`expansion_research/R2D_VOLUMES.md`); the owner's coverage directive means low demand alone is not a reason to skip, but fit is.
@@ -1281,3 +1296,48 @@ Preconditions: owner authorised Track 2 on the site; DataForSEO balance checked.
 
 ### R.4 FAN-OUT sessions
 Same as R.2/R.3 with the pilot's measured numbers replacing the estimates; check this doc's §8/§9 for queue position first, and appendix P for the site's prerequisites row.
+
+### R.5 MERGE EXPANSION (Track 2 coverage queue; decisions 13/14/15)
+
+The standing session type for the "be everywhere a specialist accountant can be"
+program. One site per session. Scope: the 55 ABSORB clusters plus thin
+ABSORBED-ALREADY deepens, per the amended
+`expansion_research/nichemap_2026-08-25/C2_PLACEMENT.md` §10 (the binding registry;
+appendix J's table is superseded where they disagree).
+
+Standing rules for every R.5 session:
+1. **This is R.3 with the niche map as the cluster queue.** Run Stage 0 then Stage 2
+   then Stage 3 exactly per §5.0/§5.0a/§5.1. No design-port work in the same session
+   (decision 15); Track-2-first rules apply (branch from origin/main, reconcile
+   stranded content first, armed windows excluded).
+2. **Cluster selection per site = that site's rows in the amended C2 table**, sized by
+   the Shape column, ordered by peer-winnable volume once the dossier exists. Research
+   is mandatory before writing: fresh GSC + Bing pulls, competitor universe +
+   dossiers, the optimisation baseline on the existing corpus first (most sites have
+   NEVER had one, §5's opening fact).
+3. **C1 gates bind copy**: rows marked NEEDS-REVIEW/CONDITIONAL in C2 §8 need their
+   position doc or wording fence before their pages ship (property mgmt cos, schools,
+   nurses, crypto §6.2 doc, etc.).
+4. **Cannibalisation watch-list** (C2 amendment note 5): when a cluster builds on its
+   host, any stray page for that niche on another site (mostly generalist:
+   churches, schools, hotels, restaurants, photographers, Amazon FBA) gets
+   differentiated, or redirected only with owner sign-off (never-collapse rule).
+5. Suggested queue (owner may reorder): start where data is richest and load biggest:
+   generalist (28 clusters, batch them), then agency, hospitality, construction-cis,
+   medical, charities, then the rest per §9 step 4. Stage 0 may sweep all sites up
+   front in one session (cheap, independent) and re-order the queue on evidence.
+6. Per-site outputs land in `docs/<site>/STATE.md`; deploys owner-triggered per batch;
+   DataForSEO spend within `DATAFORSEO_ABORT_AT`, balance checked first (decision 5
+   still OPEN: balance ~$2.82 at 08-25, an estate sweep needs a top-up).
+
+**Pickup prompt for a fresh agent (owner: paste this, optionally naming a site):**
+
+> Load standard_terms. Read `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md` runbook R.5,
+> then §5.0-5.3, then the amended
+> `expansion_research/nichemap_2026-08-25/C2_PLACEMENT.md`. You are running the merge
+> expansion program on ONE existing site: <SITE, or "propose the next site per R.5
+> point 5 and confirm with me in one line">. Follow R.5's standing rules exactly:
+> Stage 0 diagnosis with fresh GSC + Bing pulls, then the §5.0a optimisation baseline,
+> then §5.1 discovery, dossiers and net-new waves for that site's niche clusters from
+> the C2 table. No design-port work, no deploys without my yes, batch owner questions,
+> CEO-style updates.
