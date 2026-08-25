@@ -1,0 +1,27 @@
+{
+  "candidate_id": "self-assessment-timely-payments-in-year-income-tax-regchurn-2026-07",
+  "vertical": "self assessment timely payments (in-year income tax)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/timely-payments-in-income-tax-self-assessment",
+      "excerpt": "This consultation seeks views on implementing more timely payment in Income Tax Self Assessment (ITSA), following the government’s announcement at Budget 2025.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "timely payments in income tax self assessment"
+  ],
+  "buyer_hypothesis": {
+    "who": "ITSA population of c. 12m filers, initially sole traders and landlords (consultation scope)",
+    "proof": "stated in https://www.gov.uk/government/consultations/timely-payments-in-income-tax-self-assessment"
+  },
+  "event_hypothesis": {
+    "what": "earlier and more frequent income tax payment, cashflow impact, penalty regime",
+    "date": "unnamed",
+    "source": "https://www.gov.uk/government/consultations/timely-payments-in-income-tax-self-assessment"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

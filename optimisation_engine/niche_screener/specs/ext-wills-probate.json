@@ -1,0 +1,30 @@
+{
+  "name": "ext-wills-probate",
+  "vertical": "wills and probate",
+  "provider_terms": [
+    "solicitor",
+    "will writer",
+    "probate specialist",
+    "estate planner"
+  ],
+  "pain_seeds": [
+    "do i need probate",
+    "probate cost",
+    "how long does probate take",
+    "inheritance tax threshold",
+    "making a will",
+    "executor duties",
+    "probate forms",
+    "contest a will"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "Out-of-family backtest control: known paid-lead market (estate planning leads ~25 GBP). Prereg expectation HIGH. Also the leading Zone-A candidate."
+  ],
+  "audience_terms": [
+    "probate",
+    "wills",
+    "executors"
+  ]
+}

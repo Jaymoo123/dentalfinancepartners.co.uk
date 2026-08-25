@@ -178,6 +178,6 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A15. Procedural-case-analysis page
 <li><strong>HMRC v Katib [2019] UKUT 189 (TCC)</strong>: agent failures versus taxpayer personal responsibility.</li>
 <li><strong>Denton v TH White [2014] EWCA Civ 906</strong>: the civil-procedure approach imported into the tax-tribunal late-appeal framework via Martland.</li>
 <li><strong>R &amp; E Goonesena v HMRC [2024] UKFTT 619 (TC)</strong> (TC09240, 25 June 2024, Tribunal Judge Abigail McGregor): <a href="https://caselaw.nationalarchives.gov.uk/ukftt/tc/2024/619">caselaw.nationalarchives.gov.uk/ukftt/tc/2024/619</a></li>
-<li><strong>HMRC Compliance Handbook ARTG2000+</strong> (Appeals, Reviews and Tribunals Guidance): <a href="https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-tribunals-guidance/artg2000">gov.uk ARTG2000</a></li>
+<li><strong>HMRC Compliance Handbook ARTG2000+</strong> (Appeals, Reviews and Tribunals Guidance): <a href="https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2000">gov.uk ARTG2000</a></li>
 <li><strong>FA 2007 Schedule 24</strong> (penalty regime for inaccuracies in documents).</li>
 </ul>

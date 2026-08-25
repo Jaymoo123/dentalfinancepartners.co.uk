@@ -1,0 +1,4210 @@
+{
+  "metadata": {
+    "site_key": "dentists",
+    "generated": "2026-07-17",
+    "gsc_max_date": "2026-07-15",
+    "gsc_lag_days": 2,
+    "pages": 39,
+    "action_counts": {
+      "ambiguous": 30,
+      "hold": 4,
+      "expand": 2,
+      "healthy": 2,
+      "consolidate_candidate": 1
+    },
+    "sampling_loss_pct": 52.9,
+    "expected_ctr_curve": {
+      "1": {
+        "expected_ctr": 0.00464,
+        "impressions": 359,
+        "interpolated": true
+      },
+      "2": {
+        "expected_ctr": 0.00464,
+        "impressions": 267,
+        "interpolated": true
+      },
+      "3": {
+        "expected_ctr": 0.00464,
+        "impressions": 646,
+        "interpolated": false
+      },
+      "4": {
+        "expected_ctr": 0.00429,
+        "impressions": 699,
+        "interpolated": false
+      },
+      "5": {
+        "expected_ctr": 0.00429,
+        "impressions": 963,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "6": {
+        "expected_ctr": 0.00094,
+        "impressions": 1060,
+        "interpolated": false
+      },
+      "7": {
+        "expected_ctr": 0.00094,
+        "impressions": 1016,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "8": {
+        "expected_ctr": 0.00066,
+        "impressions": 1506,
+        "interpolated": false
+      },
+      "9": {
+        "expected_ctr": 0.00066,
+        "impressions": 1663,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "10": {
+        "expected_ctr": 0.00066,
+        "impressions": 645,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "11-15": {
+        "expected_ctr": 0.00051,
+        "impressions": 1976,
+        "interpolated": false
+      },
+      "16-20": {
+        "expected_ctr": 0.0,
+        "impressions": 2652,
+        "interpolated": false
+      },
+      "21+": {
+        "expected_ctr": 0.0,
+        "impressions": 33508,
+        "interpolated": false,
+        "monotonic_clipped": true
+      }
+    },
+    "gap_wave_slugs": [],
+    "notes": [
+      "meta batch-2 hold source = optimisation_changes title_meta_rewrite rows shipped 2026-07-05..2026-07-12 (batch 2 = solicitors 19 / generalist 12 / dentists 10 per SERP_META_PROGRAM.md; property had no batch-2 pages).",
+      "property miniform hold covers conversion-surface routes ('/calculators', '/tools', '/resources', '/thank-you', '/contact') while the deploy_watch miniform gates are pending."
+    ]
+  },
+  "pages": [
+    {
+      "page": "https://dentalfinancepartners.co.uk/",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/"
+      ],
+      "impressions_90d": 4837,
+      "clicks_90d": 1,
+      "weighted_position_90d": 53.49,
+      "band_mix": {
+        "6": 0.0,
+        "16-20": 0.001,
+        "21+": 0.998
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.454,
+      "top_queries": [
+        {
+          "query": "accountants for dentists",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 84,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 343,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1157,
+            "clicks": 0,
+            "position": 53.44
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental accountants",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 144,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 858,
+            "clicks": 0,
+            "position": 59.82
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "specialist dental accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 46,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 202,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 709,
+            "clicks": 1,
+            "position": 41.92
+          },
+          "ctr_90d": 0.00141,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.00141
+        },
+        {
+          "query": "dental accounting",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 31,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 252,
+            "clicks": 0,
+            "position": 71.7
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountant for dentists",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 51,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 244,
+            "clicks": 0,
+            "position": 59.43
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dentist accountants",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 20,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 235,
+            "clicks": 0,
+            "position": 68.36
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accounting for dentists",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 20,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 155,
+            "clicks": 0,
+            "position": 57.41
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental accountant",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 18,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 151,
+            "clicks": 0,
+            "position": 58.21
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dentist accountants near me",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 20,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 125,
+            "clicks": 0,
+            "position": 40.97
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "specialist accountants for dentists",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 18,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 116,
+            "clicks": 0,
+            "position": 54.48
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "dental tax accountant london",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "specialist dental accountants london",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dental practice accountants uk",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dental finance partners",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dental accountants uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dental accountants",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dentanl accounting uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [
+        {
+          "query": "dentist accountants near me",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
+          ]
+        },
+        {
+          "query": "specialist accountants for dentists",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
+          ]
+        },
+        {
+          "query": "specialist dental accountants london",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "consolidate_candidate",
+        "refresh"
+      ],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#common-questions-about-uda-values",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#how-is-a-uda-value-calculated",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#how-to-check-your-uda-value",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#how-to-find-your-own-uda-value",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#how-treatment-bands-convert-into-udas",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#the-value-clawback-and-your-delivery-target",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#uda-value-and-associate-agreements",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#uda-value-and-practice-profitability",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#uda-value-and-practice-sale",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#value-contract-type-and-region",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#what-a-uda-value-actually-is",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#what-is-a-uda-value",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#what-the-value-means-for-associates-and-locums",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#why-does-uda-value-matter-for-uk-dentists",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#why-the-value-matters-for-practice-finances",
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/uda-value-explained-for-uk-dentists#why-there-is-no-national-rate-the-2006-baseline"
+      ],
+      "impressions_90d": 485,
+      "clicks_90d": 7,
+      "weighted_position_90d": 10.68,
+      "band_mix": {
+        "1": 0.016,
+        "2": 0.033,
+        "3": 0.004,
+        "4": 0.008,
+        "5": 0.002,
+        "6": 0.054,
+        "7": 0.002,
+        "8": 0.01,
+        "9": 0.548,
+        "10": 0.132,
+        "11-15": 0.091,
+        "16-20": 0.027,
+        "21+": 0.072
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.542,
+      "top_queries": [
+        {
+          "query": "nhs uda rates",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 132,
+            "clicks": 2
+          },
+          "d90": {
+            "impressions": 167,
+            "clicks": 3,
+            "position": 9.35
+          },
+          "ctr_90d": 0.01796,
+          "expected_ctr": 0.00066,
+          "ctr_gap": 0.0173
+        },
+        {
+          "query": "uda value checker",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 33,
+            "clicks": 2
+          },
+          "d90": {
+            "impressions": 91,
+            "clicks": 3,
+            "position": 9.38
+          },
+          "ctr_90d": 0.03297,
+          "expected_ctr": 0.00066,
+          "ctr_gap": 0.03231
+        },
+        {
+          "query": "uda rate",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 20,
+            "clicks": 1,
+            "position": 6.42
+          },
+          "ctr_90d": 0.05,
+          "expected_ctr": 0.00094,
+          "ctr_gap": 0.04906
+        },
+        {
+          "query": "what is a uda",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 19,
+            "clicks": 0,
+            "position": 9.8
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "what is uda in dentistry",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 14,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 9.71
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "what is a uda in dentistry",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 11,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 15,
+            "clicks": 0,
+            "position": 11.2
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "uda system explained",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 11.9
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "how much is 1 uda dental",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 10.1
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "udas",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 22.61
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "uda",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 2.14
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "uda system explained",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what is a uda rate",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "bda uda rate",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what is annual uda remuneration",
+          "impressions": 2,
+          "clicks": 1,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs uda cutoff",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs perio band uda rate",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "uda form nhs",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 5.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs uda values",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "uda value new nhs contract",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "uda nhs premormed metal crown",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand",
+        "refresh"
+      ],
+      "first_seen": "2026-05-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"
+      ],
+      "impressions_90d": 330,
+      "clicks_90d": 0,
+      "weighted_position_90d": 17.19,
+      "band_mix": {
+        "1": 0.006,
+        "2": 0.003,
+        "6": 0.006,
+        "9": 0.003,
+        "11-15": 0.155,
+        "16-20": 0.694,
+        "21+": 0.133
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.041,
+      "top_queries": [
+        {
+          "query": "selling a dental practice taxes",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 15,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 44,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 59,
+            "clicks": 0,
+            "position": 17.68
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes manchester",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 36,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 44,
+            "clicks": 0,
+            "position": 15.4
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "goodwill funding practice purchase",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 13,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 29,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 42,
+            "clicks": 0,
+            "position": 10.89
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "dental practice valuation uk",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 13,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 22,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 35,
+            "clicks": 0,
+            "position": 26.98
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes uk",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 21,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 29,
+            "clicks": 0,
+            "position": 16.4
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes london",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 22,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 28,
+            "clicks": 0,
+            "position": 16.27
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes leeds",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 22,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 27,
+            "clicks": 0,
+            "position": 18.21
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes birmingham",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 19,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 16.41
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes wales",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 19,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 15.45
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice goodwill values",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 11.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "dental goodwill valuations",
+          "impressions": 3,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [
+        {
+          "query": "dental practice valuation uk",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk",
+            "https://dentalfinancepartners.co.uk/blog/dental-practice-goodwill-buying-selling"
+          ]
+        }
+      ],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-06-23 — ranking-maturation watch",
+          "window_close": "2026-08-04"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "consolidate_candidate",
+        "expand"
+      ],
+      "first_seen": "2026-06-23"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk"
+      ],
+      "impressions_90d": 238,
+      "clicks_90d": 0,
+      "weighted_position_90d": 35.56,
+      "band_mix": {
+        "4": 0.004,
+        "16-20": 0.055,
+        "21+": 0.941
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.432,
+      "top_queries": [
+        {
+          "query": "dental practice valuation uk",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 11,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 45,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 65,
+            "clicks": 0,
+            "position": 41.44
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much is my dental practice worth wales",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 31,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 43,
+            "clicks": 0,
+            "position": 30.23
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much is my dental practice worth london",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 22,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 32,
+            "clicks": 0,
+            "position": 30.93
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much is my dental practice worth uk",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 23,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 30,
+            "clicks": 0,
+            "position": 30.91
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much do dental practices sell for uk",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 20,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 27,
+            "clicks": 0,
+            "position": 45.91
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice valuation formula uk",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 19.23
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice valuation wales",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 37.9
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much is my dental practice worth leeds",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 37.71
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice valuation london",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 39.86
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "ebitda dental practices",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 38.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "what is the average nhs dental practice valuation formula",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [
+        {
+          "query": "dental practice valuation uk",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling",
+            "https://dentalfinancepartners.co.uk/blog/dental-practice-goodwill-buying-selling"
+          ]
+        }
+      ],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "serp_meta_batch2",
+          "reason": "SERP meta batch-2 page under 28d outcome watch",
+          "window_close": "2026-08-05"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "consolidate_candidate",
+        "refresh"
+      ],
+      "first_seen": "2026-06-14"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog"
+      ],
+      "impressions_90d": 175,
+      "clicks_90d": 0,
+      "weighted_position_90d": 43.04,
+      "band_mix": {
+        "11-15": 0.057,
+        "16-20": 0.2,
+        "21+": 0.743
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -0.175,
+      "top_queries": [
+        {
+          "query": "dental accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 49,
+            "clicks": 0,
+            "position": 66.77
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice tax",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 15,
+            "clicks": 0,
+            "position": 19.39
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "tax dental practice",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 7,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 17.2
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dentist tax",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 28.66
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "tax for dentists",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 26.16
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "tax planning for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 39.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "selling a dental practice taxes uk",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 68.19
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "buying a dental practice checklist manchester",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 8,
+            "clicks": 0,
+            "position": 69.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice payroll",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 15.39
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat loan uk for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 10.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "expand",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand"
+      ],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
+      ],
+      "impressions_90d": 165,
+      "clicks_90d": 0,
+      "weighted_position_90d": 22.74,
+      "band_mix": {
+        "11-15": 0.709,
+        "21+": 0.291
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -0.427,
+      "top_queries": [
+        {
+          "query": "specialist dental accountants london",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 58,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 88,
+            "clicks": 0,
+            "position": 11.7
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "dental tax accountant london",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 25,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 29,
+            "clicks": 0,
+            "position": 14.61
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "dentist accountants near me",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 19,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 28,
+            "clicks": 0,
+            "position": 60.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "specialist accountants for dentists",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 30.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountants for associate dentists",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 31.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "specialist accountant for dentists",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 32.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental specialists accountants",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 32.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [
+        {
+          "query": "dentist accountants near me",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/"
+          ]
+        },
+        {
+          "query": "specialist accountants for dentists",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/"
+          ]
+        },
+        {
+          "query": "specialist dental accountants london",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "consolidate_candidate",
+        "expand",
+        "refresh"
+      ],
+      "first_seen": "2026-06-03"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-software-accounting-integration",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-software-accounting-integration"
+      ],
+      "impressions_90d": 156,
+      "clicks_90d": 0,
+      "weighted_position_90d": 9.65,
+      "band_mix": {
+        "6": 0.083,
+        "8": 0.051,
+        "9": 0.301,
+        "10": 0.519,
+        "11-15": 0.038,
+        "21+": 0.006
+      },
+      "trajectory": "dormant",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "accounting software for dental clinics",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 27,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 81,
+            "clicks": 0,
+            "position": 10.08
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "cloud accounting for dentists",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 14,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 41,
+            "clicks": 0,
+            "position": 9.05
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "xero dental accounting",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 6.39
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        },
+        {
+          "query": "dental practice xero",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 8,
+            "clicks": 0,
+            "position": 8.38
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "xero accountant for dentists",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 9.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "dentist xero",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 12.44
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "dentist accounting software",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 13.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "bookkeeping software for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 9.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "dental practice management integrations",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 38.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "is dental wallet can be connected in xero?",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "does carestack dental software import to myob or xero and can it be reconciled to bank accounts?",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "is dental web can be integrate in xero",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand",
+        "meta_fix",
+        "refresh"
+      ],
+      "first_seen": "2026-04-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026"
+      ],
+      "impressions_90d": 142,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-23"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-finance/hiring-first-associate-costs-structure-uk-dental",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/practice-finance/hiring-first-associate-costs-structure-uk-dental"
+      ],
+      "impressions_90d": 93,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-25"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-dentist-agreements-financial-clauses",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/associate-dentist-agreements-financial-clauses"
+      ],
+      "impressions_90d": 85,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk"
+      ],
+      "impressions_90d": 83,
+      "clicks_90d": 0,
+      "weighted_position_90d": 11.77,
+      "band_mix": {
+        "2": 0.06,
+        "3": 0.036,
+        "4": 0.169,
+        "5": 0.217,
+        "6": 0.084,
+        "8": 0.012,
+        "9": 0.012,
+        "10": 0.012,
+        "11-15": 0.12,
+        "21+": 0.277
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -0.073,
+      "top_queries": [
+        {
+          "query": "dental practice owner salary",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 14,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 17,
+            "clicks": 0,
+            "position": 4.85
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00429,
+          "ctr_gap": -0.00429
+        },
+        {
+          "query": "how much does a dental practice owner make uk",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 11,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 12,
+            "clicks": 0,
+            "position": 4.42
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00429,
+          "ctr_gap": -0.00429
+        },
+        {
+          "query": "clinic owner take home pay uk",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 25.2
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much does a dental practice owner make",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 6.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        },
+        {
+          "query": "private practice owner salary uk",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 23.83
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice owner salary uk",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 13.12
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "private practice owner pay uk 2026",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 10.69
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "how much do dental practice owners make",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 22.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dentist owner salary",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 3.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "dividends+dentist",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 4.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00429,
+          "ctr_gap": -0.00429
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand",
+        "refresh"
+      ],
+      "first_seen": "2026-04-21"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/when-hmrc-may-challenge-associate-self-employment",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/associate-tax/when-hmrc-may-challenge-associate-self-employment"
+      ],
+      "impressions_90d": 73,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-21"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/self-assessment-registration-dentist-uk",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/associate-tax/self-assessment-registration-dentist-uk"
+      ],
+      "impressions_90d": 69,
+      "clicks_90d": 2,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-27"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/locum-tax/dft-to-dct-specialty-training-pay-tax-progression",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/locum-tax/dft-to-dct-specialty-training-pay-tax-progression"
+      ],
+      "impressions_90d": 53,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-06-06"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/dental-practice-software-accounting-integration",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/dental-practice-software-accounting-integration"
+      ],
+      "impressions_90d": 50,
+      "clicks_90d": 0,
+      "weighted_position_90d": 16.42,
+      "band_mix": {
+        "16-20": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "accounting software for dental clinics",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 50,
+            "clicks": 0,
+            "position": 16.42
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "expand",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand"
+      ],
+      "first_seen": "2026-04-21"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/self-assessment-registration-dentist-uk",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/self-assessment-registration-dentist-uk"
+      ],
+      "impressions_90d": 49,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-finance/employer-pension-contributions-dental-company-profit-extraction",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/practice-finance/employer-pension-contributions-dental-company-profit-extraction"
+      ],
+      "impressions_90d": 29,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-06-05"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"
+      ],
+      "impressions_90d": 22,
+      "clicks_90d": 1,
+      "weighted_position_90d": 19.07,
+      "band_mix": {
+        "1": 0.091,
+        "3": 0.045,
+        "21+": 0.864
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.8,
+      "top_queries": [
+        {
+          "query": "dentist self employed or limited company",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 7,
+            "clicks": 1
+          },
+          "d90": {
+            "impressions": 18,
+            "clicks": 1,
+            "position": 21.09
+          },
+          "ctr_90d": 0.05556,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.05556
+        },
+        {
+          "query": "tax brackets",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 3.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "own company",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 35.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "yes",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "sole trader",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "\"sole trader dentist\" da1 2 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"sole trader dentist\" da1 4 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"sole trader dentist\" ct3 1 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"sole trader dentist\" ct20 3 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what costs will i incur as a private sole trader dentist",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 5.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"sole trader dentist\" ct2 7 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"sole trader dentist\" ct7 0 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"sole trader dentist\" ct2 9 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "advantages of being a limited company as a dentist",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 5.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-27"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/pension-contributions-dentists-tax-relief-annual-allowance",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/pension-contributions-dentists-tax-relief-annual-allowance"
+      ],
+      "impressions_90d": 20,
+      "clicks_90d": 0,
+      "weighted_position_90d": 15.39,
+      "band_mix": {
+        "10": 0.7,
+        "21+": 0.3
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "ptm044100 tax relief on contributions paid by general practitioners and dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 10.06
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "pension advice for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 29.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "pensions for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 24.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/dentist-self-assessment-filing-guide-2026",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/dentist-self-assessment-filing-guide-2026"
+      ],
+      "impressions_90d": 18,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-day-rate-vs-percentage-tax",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/locum-tax/locum-dentist-day-rate-vs-percentage-tax"
+      ],
+      "impressions_90d": 17,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-21"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"
+      ],
+      "impressions_90d": 16,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/capital-allowances-dental-equipment-tax-relief-guide-2026",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/capital-allowances-dental-equipment-tax-relief-guide-2026"
+      ],
+      "impressions_90d": 15,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/dental-practice-goodwill-buying-selling",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/dental-practice-goodwill-buying-selling"
+      ],
+      "impressions_90d": 10,
+      "clicks_90d": 0,
+      "weighted_position_90d": 15.68,
+      "band_mix": {
+        "6": 0.1,
+        "10": 0.2,
+        "11-15": 0.4,
+        "21+": 0.3
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "dental practice valuation uk",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 25.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how to value a dental practice goodwill",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 13.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "goodwill funding practice purchase",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 10.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "dental practice goodwill values",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 15.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "goodwill dentist",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 6.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [
+        {
+          "query": "dental practice valuation uk",
+          "partners": [
+            "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling",
+            "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "consolidate_candidate",
+      "action_source": "deterministic",
+      "owner_approval_required": true,
+      "signals": [
+        "consolidate_candidate"
+      ],
+      "first_seen": "2026-04-19"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/associate-cpd-courses-tax-deductible-uk",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-cpd-courses-tax-deductible-uk"
+      ],
+      "impressions_90d": 9,
+      "clicks_90d": 0,
+      "weighted_position_90d": 16.69,
+      "band_mix": {
+        "3": 0.111,
+        "9": 0.111,
+        "16-20": 0.778
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cpd allowance for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 19.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "yes please",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 3.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "are cpd courses tax deductible",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 9.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-03"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-agreements-financial-clauses",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-agreements-financial-clauses"
+      ],
+      "impressions_90d": 9,
+      "clicks_90d": 0,
+      "weighted_position_90d": 38.0,
+      "band_mix": {
+        "2": 0.111,
+        "21+": 0.889
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "dental associate agreement",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 41.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "associate dentist contract",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 42.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "yes",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "associate contract",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 54.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "associate agreement",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 44.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental associate contract",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 33.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "how does associate dentist pay work in the private sector uk",
+          "impressions": 2,
+          "clicks": 1,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what is a fairway to pay a dental associate when treating a denplan patient and providing a crown",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dental associate 50%",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-03"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/about",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/about"
+      ],
+      "impressions_90d": 8,
+      "clicks_90d": 0,
+      "weighted_position_90d": 90.19,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "dental accountant wales",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 94.88
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental accountants south wales",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 82.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "tax accountant for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 95.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-03"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-insurance-tax-deductible-expenses-guide",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-insurance-tax-deductible-expenses-guide"
+      ],
+      "impressions_90d": 7,
+      "clicks_90d": 0,
+      "weighted_position_90d": 17.07,
+      "band_mix": {
+        "7": 0.143,
+        "10": 0.143,
+        "11-15": 0.286,
+        "21+": 0.429
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "dental practice insurance policy",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 26.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice business insurance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 11.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "dental practice insurance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "dental practice insurance cost",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 7.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        },
+        {
+          "query": "dental office business insurance cost",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 12.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-22"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/dentist-pension-contributions-tax-relief-uk",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-pension-contributions-tax-relief-uk"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": 43.0,
+      "band_mix": {
+        "10": 0.2,
+        "21+": 0.8
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": 1.0,
+      "top_queries": [
+        {
+          "query": "pension advice for dentists",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 55.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "nhs",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "nhs dentist pension",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 41.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dentist nhs pension",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 54.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "is a associate dentist nhs pension relief at source or net pay arrangement",
+          "impressions": 2,
+          "clicks": 2,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "tax relief on dental",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "pension dental insurance",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "performers' superannuation contribution uk dentist",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "bsa dental superannuation",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what percentage of slary should a dentist save into a penion",
+          "impressions": 1,
+          "clicks": 2,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs dentist pension contributions",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 5.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "serp_meta_batch2",
+          "reason": "SERP meta batch-2 page under 28d outcome watch",
+          "window_close": "2026-08-05"
+        },
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-06-28 — ranking-maturation watch",
+          "window_close": "2026-08-09"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-28"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-lease-vs-buy-decision-framework",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-lease-vs-buy-decision-framework"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": 22.4,
+      "band_mix": {
+        "7": 0.2,
+        "21+": 0.8
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "dental practice property conditions guide",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 23.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "dental practice property requirements guide",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 29.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "is it better to lease dental office space or rent by the session in london? london",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 7.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-25"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/dental-practice-sale-goodwill-equipment-price-apportionment",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/dental-practice-sale-goodwill-equipment-price-apportionment"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-06-08"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/for-principals",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/for-principals"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-06-02"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": 25.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "dental associate accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 25.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "what is the minimum percentage a hygienist can be recharged if self-employed",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 5.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "difference between employed dentist vs self employed in uk",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"self employed dentist\" ct3 1 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 1.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "\"self employed dentist\" ct3 3 uk",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "quiva employment tax",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "what is the minimum percentage a hygienist can be recharged if self-employed bda information",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/wales-nhs-dental-contract-reform-2026"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": 15.25,
+      "band_mix": {
+        "1": 0.25,
+        "8": 0.25,
+        "11-15": 0.25,
+        "21+": 0.25
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "yes",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 8.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "nhs dental changes 2026 wales",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 38.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "nhs wales dental contract 2026",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "nhs dental contract reform 2026",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 14.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "nhs dental contracts wales april 2026",
+          "impressions": 3,
+          "clicks": 1,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs dental contracts wales",
+          "impressions": 3,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs wales dental contract 2026 breakdown",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs wales dentistry contract changes",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dentistry nhs wales new contract scenarios",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 5.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs wales dental contract 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "dental core trinae wales contract reform",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "nhs dental contract clawback in wales 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "wales nhs dental care funding and regulation",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "wales dental contract 2026 care packages",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 10.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-21"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/making-tax-digital-dental-practices-mtd-guide",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/blog/making-tax-digital-dental-practices-mtd-guide"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-04-20"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/buying-a-practice/associate-to-practice-owner-financial-planning-uk",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/associate-to-practice-owner-financial-planning-uk"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 31.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "selling a dental practice taxes wales",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 31.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-04-24"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/associate-tax",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/associate-tax"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 42.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "dental associate accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 42.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-06-05"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/blog/practice-accounting/capital-allowances-dental-equipment-tax-relief-guide-2026",
+      "variants": [
+        "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/capital-allowances-dental-equipment-tax-relief-guide-2026"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 75.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "medical facilities capital allowance advisors",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 75.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-28"
+    },
+    {
+      "page": "https://dentalfinancepartners.co.uk/for-associates",
+      "variants": [
+        "https://dentalfinancepartners.co.uk/for-associates"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": true,
+      "hold_reasons": [
+        {
+          "source": "ranking_maturation",
+          "reason": "first GSC impression 2026-06-27 — ranking-maturation watch",
+          "window_close": "2026-08-08"
+        }
+      ],
+      "action": "hold",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-06-27"
+    }
+  ],
+  "unowned_queries": [
+    {
+      "query": "accountants for dentists",
+      "impressions_90d": 1157,
+      "best_position": 43.5,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental accountants",
+      "impressions_90d": 858,
+      "best_position": 46.0,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "specialist dental accountants",
+      "impressions_90d": 709,
+      "best_position": 41.8,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental accounting",
+      "impressions_90d": 301,
+      "best_position": 59.0,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "accountant for dentists",
+      "impressions_90d": 244,
+      "best_position": 53.3,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dentist accountants",
+      "impressions_90d": 235,
+      "best_position": 62.9,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "accounting for dentists",
+      "impressions_90d": 156,
+      "best_position": 43.0,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dentist accountants near me",
+      "impressions_90d": 153,
+      "best_position": 37.3,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental accountant",
+      "impressions_90d": 151,
+      "best_position": 44.5,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental practice accountant",
+      "impressions_90d": 104,
+      "best_position": 42.9,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental accountants london",
+      "impressions_90d": 66,
+      "best_position": 35.2,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dentist accountant",
+      "impressions_90d": 44,
+      "best_position": 56.8,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "specialist accountant for dentists",
+      "impressions_90d": 39,
+      "best_position": 32.0,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental practice accounting",
+      "impressions_90d": 37,
+      "best_position": 43.2,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "doctors and dentists accountant",
+      "impressions_90d": 34,
+      "best_position": 75.8,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "dental accountant wales",
+      "impressions_90d": 31,
+      "best_position": 42.5,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ category: "Capital Gains Tax"
 metaTitle: "PRR on Joint-Owned Property: Spouses' Election and Rules"
 metaDescription: "How PRR applies to a jointly owned home, the s.222(5) main-residence nomination, the one-residence rule for spouses, and the Form 17 / PRR interaction."
 altText: "Exterior of a UK terraced house with a sold sign, representing a jointly owned main residence on disposal"
-image: "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Curtis Adams"
   photographer_url: "https://www.pexels.com/@curtis-adams-1694007"

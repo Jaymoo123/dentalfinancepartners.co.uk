@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specia
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
-metaTitle: "HMO and Selective Licensing UK: Landlord Compliance Guide 2026"
-metaDescription: "Mandatory, additional and selective licensing under Housing Act 2004 explained: thresholds, fees, the £40,000 civil penalty under s.249A, RRO 2-year window."
+metaTitle: "HMO and Selective Licensing UK: Landlord Compliance 2026"
+metaDescription: "Mandatory, additional and selective licensing under Housing Act 2004 explained: thresholds, fees, the £40,000 civil penalty under s.249A"
 altText: "Terraced UK residential street showing the type of multi-let property subject to HMO and selective licensing under Housing Act 2004"
 image: "https://images.pexels.com/photos/35402056/pexels-photo-35402056.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 h1: "HMO and Selective Licensing Compliance: Housing Act 2004 Landlord Mechanics"
@@ -45,7 +45,7 @@ faqs:
 
 <h2>Three Regimes, One Statute: Why Landlords Confuse Them</h2>
 
-<p>All three licensing regimes sit inside the same Act. They share the same enforcement architecture, the same civil-penalty machinery, and the same routes to rent repayment orders and banning orders. What differs is the threshold that brings a property inside the regime and the designation route a council uses to create scope. The cleanest mental model is to treat the regimes as three layers of a single licensing system, applied in this order of geographic coverage.</p>
+<p>All three licensing regimes sit inside the same Act. They share the same enforcement architecture, the same civil-penalty machinery, and the same routes to rent repayment orders and banning orders. What differs is the threshold that brings a property inside the regime and the designation route a council uses to create scope. The cleanest mental model, set out in plainer terms in our overview of <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">how landlord licensing works</a>, is to treat the regimes as three layers of a single licensing system, applied in this order of geographic coverage.</p>
 
 <table>
 <thead>

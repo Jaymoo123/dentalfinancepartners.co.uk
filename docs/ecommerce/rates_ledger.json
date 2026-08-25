@@ -1,0 +1,372 @@
+[
+  {
+    "key": "vat_registration_threshold",
+    "value": "90000",
+    "unit": "£ taxable turnover",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/vat-registration",
+    "verified_at": "2026-07-15",
+    "notes": "Rolling 12-month taxable turnover; gross marketplace sales, not net platform payout; 30-day forward-look test also applies"
+  },
+  {
+    "key": "overseas_seller_registration_threshold",
+    "value": "0",
+    "unit": "£ (no threshold)",
+    "applies_from": "2021-01-01",
+    "source_url": "https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces",
+    "verified_at": "2026-07-15",
+    "notes": "Non-UK-established seller on an online marketplace: marketplace is deemed supplier and accounts for UK VAT; UK-established sellers remain liable themselves"
+  },
+  {
+    "key": "import_low_value_consignment_uk",
+    "value": "135",
+    "unit": "£ consignment value",
+    "applies_from": "2021-01-01",
+    "source_url": "https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk",
+    "verified_at": "2026-07-15",
+    "notes": "Consignments £135 or less sold direct to UK consumers: supply VAT at point of sale, not import VAT at border; marketplace accounts for VAT if sold through one"
+  },
+  {
+    "key": "flat_rate_scheme_limited_cost_rate",
+    "value": "16.5",
+    "unit": "%",
+    "applies_from": "2017-04-01",
+    "source_url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+    "verified_at": "2026-07-15",
+    "notes": "Limited cost business rate; applies where relevant goods spend is under 2% of turnover or under £1,000/year; usually a false economy for goods sellers"
+  },
+  {
+    "key": "ioss_eu_consignment_ceiling",
+    "value": "150",
+    "unit": "€ consignment value",
+    "applies_from": "2021-07-01",
+    "source_url": "https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en",
+    "verified_at": "2026-07-15",
+    "notes": "EU import-scheme (IOSS) intrinsic-value ceiling; EU law, cite the EU Commission OSS page, never the gov.uk IOSS page (which carries the UK/NI £135 figure). Flag cleared 2026-07-15."
+  },
+  {
+    "key": "oss_ni_to_eu_distance_selling_threshold",
+    "value": "8818",
+    "unit": "£ (=€10,000)",
+    "applies_from": "2021-07-01",
+    "source_url": "https://www.gov.uk/guidance/register-to-report-and-pay-vat-on-distance-sales-of-goods-from-northern-ireland-to-the-eu",
+    "verified_at": "2026-07-15",
+    "notes": "FLAGGED: cited gov.uk OSS page confirms the NI-to-EU mechanism but does NOT carry the £8,818/€10,000 figure; add a second citation before asserting. GB sellers do not distance-sell under OSS"
+  },
+  {
+    "key": "platform_reporting_in_force",
+    "value": "in force",
+    "unit": "date",
+    "applies_from": "2024-01-01",
+    "source_url": "https://www.gov.uk/government/publications/reporting-rules-for-digital-platforms/reporting-rules-for-digital-platforms",
+    "verified_at": "2026-07-15",
+    "notes": "OECD model reporting rules for digital platforms apply from 1 January 2024; first reports due from January 2025 (annual deadline 31 January) covering the 2024 period"
+  },
+  {
+    "key": "platform_reporting_seller_exclusion",
+    "value": "2000",
+    "unit": "€ (approx £1,700) AND fewer than 30 sales",
+    "applies_from": "2024-01-01",
+    "source_url": "https://www.gov.uk/guidance/reporting-rules-for-digital-platforms",
+    "verified_at": "2026-07-15",
+    "notes": "Report-exclusion trigger for goods sellers (fewer than 30 sales AND €2,000 or less), NOT a tax threshold; tax follows trading status"
+  },
+  {
+    "key": "trading_allowance",
+    "value": "1000",
+    "unit": "£/year gross trading income",
+    "applies_from": "2017-04-06",
+    "source_url": "https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income",
+    "verified_at": "2026-07-15",
+    "notes": "Income £1,000 or less may need no return; above it, allowance can replace actual expenses (usually a bad swap for goods sellers with real COGS)"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_apr_2026",
+    "value": "50000",
+    "unit": "£ annual income",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-15",
+    "notes": "Sole traders and landlords with combined self-employment and property income over £50,000"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_apr_2027",
+    "value": "30000",
+    "unit": "£ annual income",
+    "applies_from": "2027-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_apr_2028",
+    "value": "20000",
+    "unit": "£ annual income",
+    "applies_from": "2028-04-06",
+    "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "self_assessment_registration_deadline",
+    "value": "5 October",
+    "unit": "date after tax year end",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/register-for-self-assessment",
+    "verified_at": "2026-07-15",
+    "notes": "Notify HMRC by 5 October following the end of the tax year in which the income arose (e.g. 5 Oct 2026 for year to 5 Apr 2026)"
+  },
+  {
+    "key": "corporation_tax_small_profits_rate",
+    "value": "19",
+    "unit": "%",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Applies to profits up to £50,000; associated company rules reduce threshold"
+  },
+  {
+    "key": "corporation_tax_main_rate",
+    "value": "25",
+    "unit": "%",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Applies to profits above £250,000; marginal relief between £50,000 and £250,000"
+  },
+  {
+    "key": "dividend_rate_basic",
+    "value": "10.75",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-15",
+    "notes": "FA 2026 s.4"
+  },
+  {
+    "key": "dividend_rate_higher",
+    "value": "35.75",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-15",
+    "notes": "FA 2026 s.4"
+  },
+  {
+    "key": "dividend_rate_additional",
+    "value": "39.35",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-15",
+    "notes": "FA 2026 s.4"
+  },
+  {
+    "key": "dividend_allowance",
+    "value": "500",
+    "unit": "£/year",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "aia_limit",
+    "value": "1000000",
+    "unit": "£/year",
+    "applies_from": "2019-01-01",
+    "source_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "wda_main_rate_plant_machinery",
+    "value": "14",
+    "unit": "%",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.legislation.gov.uk/ukpga/2026/11/section/28",
+    "verified_at": "2026-07-15",
+    "notes": "Finance Act 2026 c.11 s.28; reduced from 18%; CT from 1 April 2026, IT from 6 April 2026; blended rate for straddling periods"
+  },
+  {
+    "key": "fya_rate_main_pool",
+    "value": "40",
+    "unit": "%",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.legislation.gov.uk/ukpga/2026/11/section/29",
+    "verified_at": "2026-07-15",
+    "notes": "Finance Act 2026 c.11 s.29; new s.45U CAA 2001; new, unused main-pool plant only"
+  },
+  {
+    "key": "wda_special_rate",
+    "value": "6",
+    "unit": "%",
+    "applies_from": "2019-04-01",
+    "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+    "verified_at": "2026-07-15",
+    "notes": "Special rate pool unchanged by FA 2026"
+  },
+  {
+    "key": "employer_nic_rate",
+    "value": "15",
+    "unit": "%",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-15",
+    "notes": "Rate above secondary threshold; same rate for 2025-26 and 2026-27"
+  },
+  {
+    "key": "employer_nic_secondary_threshold_annual",
+    "value": "5000",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-15",
+    "notes": "£96/week, £417/month"
+  },
+  {
+    "key": "employment_allowance",
+    "value": "10500",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/claim-employment-allowance",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "mileage_rate_cars_first_10k",
+    "value": "55",
+    "unit": "p/mile",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "mileage_rate_cars_above_10k",
+    "value": "25",
+    "unit": "p/mile",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "badr_rate_from_apr_2026",
+    "value": "18",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/business-asset-disposal-relief",
+    "verified_at": "2026-07-15",
+    "notes": "Disposals from 6 April 2026; prior rate 14% (6 Apr 2025 to 5 Apr 2026); prior rate 10% (to 5 Apr 2025); £1m lifetime limit"
+  },
+  {
+    "key": "cgt_higher_rate_from_apr_2026",
+    "value": "24",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-15",
+    "notes": "Standard CGT rate for higher/additional rate taxpayers from 6 April 2026; basic rate taxpayers pay 18%"
+  },
+  {
+    "key": "cgt_annual_exempt_amount",
+    "value": "3000",
+    "unit": "£/year",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-15"
+  },
+  {
+    "key": "personal_allowance",
+    "value": "12570",
+    "unit": "£",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Standard personal allowance 2026/27; tapered £1 per £2 of adjusted net income above £100,000, nil at £125,140"
+  },
+  {
+    "key": "income_tax_basic_rate",
+    "value": "20",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Basic rate on taxable income £12,571 to £50,270 (2026/27)"
+  },
+  {
+    "key": "income_tax_higher_rate",
+    "value": "40",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Higher rate on taxable income £50,271 to £125,140 (2026/27)"
+  },
+  {
+    "key": "income_tax_additional_rate",
+    "value": "45",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Additional rate on taxable income over £125,140 (2026/27)"
+  },
+  {
+    "key": "basic_rate_band_ceiling",
+    "value": "37700",
+    "unit": "£",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/income-tax-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Taxable-income ceiling of the basic-rate band 2026/27 (£50,270 minus £12,570 allowance)"
+  },
+  {
+    "key": "class4_nic_main_rate",
+    "value": "6",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Class 4 NIC on profits £12,570 to £50,270 (2026/27)"
+  },
+  {
+    "key": "class4_nic_upper_rate",
+    "value": "2",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Class 4 NIC on profits above £50,270 (2026/27)"
+  },
+  {
+    "key": "class4_lower_profits_limit",
+    "value": "12570",
+    "unit": "£",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Class 4 lower profits limit 2026/27; Class 2 treated as paid at profits of £7,105+"
+  },
+  {
+    "key": "class4_upper_profits_limit",
+    "value": "50270",
+    "unit": "£",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+    "verified_at": "2026-07-15",
+    "notes": "Class 4 upper profits limit 2026/27"
+  },
+  {
+    "key": "vat_standard_rate",
+    "value": "20",
+    "unit": "%",
+    "applies_from": "2011-01-04",
+    "source_url": "https://www.gov.uk/vat-rates",
+    "verified_at": "2026-07-15",
+    "notes": "UK standard VAT rate; used for worked margin-scheme and threshold examples"
+  },
+  {
+    "key": "oss_ni_distance_selling_threshold",
+    "value": "8818",
+    "unit": "£ (= €10,000) per year",
+    "applies_from": "2021-07-01",
+    "source_url": "https://www.gov.uk/guidance/check-how-to-report-and-pay-vat-on-distance-sales-of-goods-from-northern-ireland-to-the-eu",
+    "verified_at": "2026-07-15",
+    "notes": "NI-to-EU distance-selling threshold for the OSS Union scheme; gov.uk states 'more than £8,818 (10,000 euros) a year'. GB sellers do not distance-sell under OSS. Flag cleared 2026-07-15."
+  }
+]

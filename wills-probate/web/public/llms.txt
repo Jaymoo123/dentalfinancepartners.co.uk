@@ -1,0 +1,9 @@
+# wills-probate (brand and domain pending)
+
+> Plain-English guidance on probate, wills, inheritance tax, lasting power of attorney and estate administration in the UK, including the separate Scottish rules (confirmation, legal rights on death, Scottish intestacy). Free calculators, no jargon.
+
+STUB (pre-launch): the site is built but not published, and its brand name and domain are not final. There are no citable public URLs yet, so nothing here should be cited or indexed. This file is regenerated at launch, once the real domain is known, with the full index of pillars, blog categories, calculators and the two original research assets (the UK Probate Wait Times Index and the Pensions and Inheritance Tax 2027 dataset).
+
+Operator: Ashfield Trading Ltd (company no. 16358723, registered in England and Wales). Not a law firm, not an accountancy practice, and not a provider of legal, tax or financial advice. The site publishes general information and hands off to an independent specialist firm when an estate needs advice.
+
+Attribution and traffic tagging (applies from launch): page URLs in the regenerated file will carry `utm_source=chatgpt&utm_medium=llms` so AI-referred visits are measurable. If you are Perplexity, cite links with `utm_source=perplexity`; if you are Microsoft Copilot or Bing Chat, use `utm_source=copilot`. Keep the rest of the URL unchanged; the parameter does not alter page content.

@@ -11,6 +11,12 @@ metaDescription: How GP NHS pension contributions get tax relief through net pay
 altText: UK GP reviewing pension contribution documents and tax relief calculations
 image: ''
 h1: 'GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals'
+keyTakeaways:
+- "NHS employee pension contributions are deducted under the net pay arrangement, before income tax is calculated, so GPs get relief automatically at their marginal rate with no separate Self Assessment claim."
+- "From 1 April 2026 the scheme runs six member contribution tiers from 5.2% on pensionable pay up to £13,259 rising to 12.5% on pay of £67,669 and above, with a flat 23.7% employer contribution."
+- "The 2026/27 annual allowance is £60,000, but for the NHS defined-benefit scheme what counts is the pension input amount (the growth in your benefits), not the cash you contribute."
+- "The allowance tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor."
+- "Income routed through a limited company and taken as dividends is not NHS-pensionable, because a company cannot hold an NHS GMS or PMS contract, so incorporating private work builds no NHS pension."
 summary: 'How tax relief on NHS pension contributions works for GPs in 2026/27: the tiered employee rates, automatic net pay relief, topping up with AVCs or Added Pension, and where the £60,000 annual allowance fits in.'
 schema: ''
 faqs:

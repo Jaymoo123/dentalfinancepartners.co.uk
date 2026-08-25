@@ -155,7 +155,7 @@ faqs:
 
 <h3>Nil-rate band and transferable nil-rate band</h3>
 
-<p>Every individual has an NRB of £325,000 (frozen until at least April 2030). A surviving spouse or civil partner can inherit the unused NRB, giving a combined NRB of up to £650,000 on the second death. For a smaller portfolio this can eliminate IHT entirely, but for a multi-property portfolio the relief is limited.</p>
+<p>Every individual has an NRB of £325,000 (frozen until at least 5 April 2031). A surviving spouse or civil partner can inherit the unused NRB, giving a combined NRB of up to £650,000 on the second death. For a smaller portfolio this can eliminate IHT entirely, but for a multi-property portfolio the relief is limited.</p>
 
 <h3>Potentially exempt transfers and the 7-year clock</h3>
 

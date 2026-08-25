@@ -14,7 +14,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
+  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.medicalaccounts.co.uk",
   "tagline": "Specialist accountants for UK medical professionals",
   "description": "Expert accounting for GPs, consultants and medical practices. NHS pension advice, locum tax planning, private practice incorporation and expense claims.",
@@ -38,7 +38,8 @@
     },
     {
       "label": "Free health check",
-      "href": "/free-practice-health-check"
+      "href": "/free-practice-health-check",
+      "hide_in_packages": true
     },
     {
       "label": "About",
@@ -191,6 +192,79 @@
     }
   },
   "cta": {
+    "variant": "leadgen",
+    "variants": {
+      "packages": {
+        "header_primary": {
+          "label": "See pricing",
+          "href": "/pricing"
+        },
+        "hero_primary": {
+          "label": "See plans from £29/mo",
+          "href": "/pricing"
+        },
+        "hero_secondary": {
+          "label": "Not sure? Book a free 15-min call",
+          "href": "/contact"
+        },
+        "sticky": {
+          "primary": "Fixed monthly plans from £29",
+          "secondary": "Locum, GP and consultant tax handled for a fixed monthly fee. Cancel with 1 month's notice.",
+          "button": "See pricing",
+          "href": "/pricing"
+        },
+        "blog": {
+          "cta_heading": "Ready for a medical accountant with clear monthly pricing?",
+          "cta_body": "Plans start at £29 a month for locum self assessment and £59 for locums with a limited company, with no fixed term. Not sure which plan fits? Fill in the form below and we will recommend the right one, no obligation.",
+          "cta_button": "Send enquiry"
+        },
+        "home_cta": {
+          "heading": "Pick a plan today. Cancel with one month's notice.",
+          "body": "Fixed monthly fees for locums, GPs and consultants, agreed up front. NHS pension certificates, locum self assessment and private practice accounts all covered. If you would rather talk it through first, a free 15-minute call sorts the right plan in one go.",
+          "primary": {
+            "label": "See plans and pricing",
+            "href": "/pricing"
+          },
+          "secondary": {
+            "label": "Book a free 15-min call",
+            "href": "/contact"
+          }
+        }
+      },
+      "leadgen": {
+        "header_primary": {
+          "label": "Book a call",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "Speak to a medical accountant",
+          "href": "/contact"
+        },
+        "hero_secondary": {
+          "label": "Free practice health check",
+          "href": "/free-practice-health-check"
+        },
+        "sticky": {
+          "primary": "Ready to work with a medical accountant?",
+          "secondary": "Book your free consultation today",
+          "button": "Get started",
+          "href": "/contact"
+        },
+        "blog": {
+          "cta_heading": "Get specialist advice for your situation",
+          "cta_body": "Every medical professional's tax situation is different. If you would like to discuss how this applies to your specific circumstances, fill in the form below and we will arrange a short introductory call.",
+          "cta_button": "Request a callback"
+        },
+        "home_cta": {
+          "heading": "Speak with GP accountants who specialize in the medical profession",
+          "body": "GP partners, salaried GPs, hospital consultants, or locum doctors—our GP accountants handle NHS pension planning, mixed income tax optimization, and practice financial structures. Initial consultation with a medical accountant is free and obligation-free.",
+          "primary": {
+            "label": "Book your free consultation",
+            "href": "/contact"
+          }
+        }
+      }
+    },
     "sticky_primary": "Ready to work with a medical accountant?",
     "sticky_secondary": "Book your free consultation today",
     "sticky_button": "Get started"

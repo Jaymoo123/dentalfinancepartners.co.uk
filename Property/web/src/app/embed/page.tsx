@@ -3,14 +3,20 @@ import Link from "next/link";
 import { EmbedSnippet } from "@/components/embed/EmbedSnippet";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/calculators/registry";
 
 export const metadata: Metadata = {
-  title: "Embed Our Free Property Tax Calculators | Property Tax Partners",
+  // Ours (0c57b7bd): the brand suffix is already added by layout.tsx's
+  // title.template, and the description is shortened to fit the snippet.
+  title: "Embed Our Free Property Tax Calculators",
   description:
-    "Add our free, always-current UK property tax calculators to your own website. Stamp duty, Section 24, incorporation cost, MTD checker and portfolio profitability. One iframe, mobile-friendly, no cost.",
+    "Add our free UK property tax calculators to your website: stamp duty, Section 24, incorporation, MTD checker, portfolio yield. One iframe, no cost.",
   alternates: { canonical: `${siteConfig.url}/embed` },
+  // The hub page is indexable (its audience is agents searching for embeddable
+  // tools); the per-calculator /embed/[slug] iframe routes stay noindexed.
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Embed Our Free Property Tax Calculators",
     description:
@@ -48,9 +54,16 @@ function iframeSnippet(slug: string, name: string, height: number): string {
 export default function EmbedGalleryPage() {
   return (
     <>
-      <section className="bg-slate-900 py-14 sm:py-20">
-        <div className={siteContainerLg}>
+      {/* Brickwork hero, matching /calculators and the rest of the site. The
+          backdrop needs the section to be `relative` and the content `z-10`,
+          otherwise the copy renders underneath the etching. */}
+      <section className="relative overflow-hidden bg-slate-900 py-14 sm:py-20">
+        <HeroBrickBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          {/* onDark: the trail was rendering slate-600 on slate-900, which is
+              close to invisible. */}
           <Breadcrumb
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Embed our calculators" },
@@ -59,23 +72,35 @@ export default function EmbedGalleryPage() {
           <h1 className="mt-6 max-w-3xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             Add our free property tax calculators to your site
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
+          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
             Free, mobile-friendly and always kept current with UK tax rates. If you advise or write for
             landlords and property investors, drop any of these into your own pages with a single line of
             HTML. We keep them up to date; you keep your readers on your site.
           </p>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-400">
             Built for mortgage brokers, conveyancers, letting and estate agents, and buy-to-let blogs. The
             only condition is that you leave the small &ldquo;Powered by Property Tax Partners&rdquo; line in
             place.
           </p>
+          <div className="mt-8">
+            <Link
+              href="/contact?utm_source=embed-gallery&utm_medium=site&utm_campaign=partnerships"
+              data-cta="embed_hero_partnership"
+              data-cta-placement="hero"
+              className={`${btnPrimary} bg-emerald-600 text-base px-6 py-3 sm:px-8 sm:py-4`}
+            >
+              Talk to us about a partnership
+            </Link>
+          </div>
         </div>
       </section>
 
       <section className="bg-white py-12 sm:py-16">
+        {/* Body copy runs the full container, like every other body section on
+            the site; `max-w-3xl` is the measure reserved for hero paragraphs. */}
         <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">How to embed (2 steps)</h2>
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">How to embed (2 steps)</h2>
             <ol className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
               <li>
                 <strong>1. Paste the calculator.</strong> Copy the iframe snippet for the calculator you want
@@ -96,15 +121,15 @@ export default function EmbedGalleryPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">The calculators</h2>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">The calculators</h2>
           <div className="mt-8 space-y-10">
             {CALCULATORS.map((c) => (
-              <div key={c.slug} className="rounded-2xl border-2 border-slate-200 bg-white p-6 sm:p-8">
+              <div key={c.slug} className="rounded-xl border-2 border-slate-200 bg-white p-6 sm:p-8">
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                   <h3 className="text-xl font-bold text-slate-900 sm:text-2xl">{c.name}</h3>
                   <Link
                     href={`/calculators/${c.slug}`}
-                    className="text-sm font-semibold text-emerald-700 hover:text-emerald-800"
+                    className="inline-block py-0.5 text-sm font-semibold text-emerald-700 hover:text-emerald-800"
                   >
                     Preview the full page →
                   </Link>
@@ -122,17 +147,20 @@ export default function EmbedGalleryPage() {
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl bg-slate-900 p-8 text-center text-white sm:p-10">
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">Want a calculator built for your audience?</h2>
+            <h2 className="text-2xl font-bold text-white sm:text-4xl">Talk to us about a partnership</h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-200">
-              If you run a property-related site and want a co-branded tool or a calculator tailored to your
-              readers, we are happy to help. Get in touch and tell us what you need.
+              The embed codes above are free and need nothing from us. If you want more than that, a
+              co-branded tool or a calculator built for your own readers, tell us what you have in mind and
+              we will build it.
             </p>
             <div className="mt-8">
               <Link
                 href="/contact?utm_source=embed-gallery&utm_medium=site&utm_campaign=partnerships"
-                className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-base px-6 py-3 sm:px-8 sm:py-4`}
+                data-cta="embed_footer_partnership"
+                data-cta-placement="closing"
+                className={`${btnPrimary} bg-emerald-600 text-base px-6 py-3 sm:px-8 sm:py-4`}
               >
-                Talk to us about a partnership
+                Start the conversation
               </Link>
             </div>
           </div>

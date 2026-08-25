@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation and Company Structures"
-metaTitle: "SDLT Linked Transactions FA 2003 s.108: Aggregation Mechanics"
-metaDescription: "FA 2003 s.108 linked transactions for landlord portfolios: connected vendor/purchaser test, rate aggregation, s.108(1A) Scotland/Wales out, s.116(7) election."
+metaTitle: "SDLT Linked Transactions FA 2003 s.108: Rate Aggregation"
+metaDescription: "FA 2003 s.108 linked transactions for landlord portfolios: connected vendor/purchaser test, rate aggregation, s.116(7) six-dwellings election."
 altText: "A landlord and adviser reviewing a multi-property portfolio acquisition contract at a table"
 image: "https://images.pexels.com/photos/34369598/pexels-photo-34369598.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

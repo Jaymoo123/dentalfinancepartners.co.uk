@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "SDLT Six-Dwellings Rule: Non-Residential Rates Saving"
 metaDescription: "How s.116(7) FA 2003 automatically treats bulk buys of six or more dwellings as non-residential for SDLT: single-transaction test, worked saving, traps."
 altText: "A row of UK Victorian terraced houses, illustrating a portfolio acquisition that qualifies for non-residential SDLT treatment under the six-dwellings rule"
-image: "https://images.pexels.com/photos/11935240/pexels-photo-11935240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/11935240/pexels-photo-11935240.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Boys in Bristol Photography"
   photographer_url: "https://www.pexels.com/@lebele"
@@ -144,7 +144,7 @@ editorialNote: "Mechanics page for portfolio acquisitions. Worked saving against
 
 <h2>How the SDLT return is completed</h2>
 
-<p>The buyer's SDLT return (form SDLT1, filed within 14 days of the effective date) is completed using the non-residential property code. No separate election box is ticked; the non-residential treatment is reflected by the rate code applied. HMRC's <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-online-and-paper-returns">SDLT return guidance</a> sets out the codes; the practical effect is that the return is filed at non-residential bands with no surcharge.</p>
+<p>The buyer's SDLT return (form SDLT1, filed within 14 days of the effective date) is completed using the non-residential property code. No separate election box is ticked; the non-residential treatment is reflected by the rate code applied. HMRC's <a href="https://www.gov.uk/guidance/stamp-duty-land-tax-online-and-paper-returns">SDLT return guidance</a> sets out the codes; the practical effect is that the return is filed at non-residential bands with no surcharge.</p>
 
 <p>Where the original return was filed at residential rates by mistake, an amendment within 12 months of the original filing date corrects it and triggers a repayment. Beyond 12 months, overpayment relief under paragraph 34 Schedule 10 FA 2003 may be available within four years of the effective date but is subject to closer HMRC scrutiny. Repayment interest under section 89 FA 2009 runs from the date the surcharge was paid to the date the repayment is issued.</p>
 

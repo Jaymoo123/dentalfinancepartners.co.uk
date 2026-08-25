@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Growth and Exit
 metaTitle: 'BADR 2-Year Holding Period: Agency Founder Exit Guide'
-metaDescription: The 2-year BADR holding period disqualifies many agency sellers. Learn the exact rules, common traps, and how to protect your 10% tax rate.
+metaDescription: The 2-year BADR holding period disqualifies many agency sellers. Learn the exact rules, common traps, and how to protect your reduced BADR rate.
 altText: Agency founder reviewing shareholding documents and exit timeline with accountant in a London office meeting room
 image: /blog/badr-2-year-holding-period-agency-founders.jpg
 imageCredit:

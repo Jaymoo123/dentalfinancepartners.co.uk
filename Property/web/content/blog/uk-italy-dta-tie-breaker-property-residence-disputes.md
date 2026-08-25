@@ -6,9 +6,9 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "UK-Italy Dual Residence: Article 4 Tie-Breaker Guide"
-metaDescription: "How HMRC and the Italian Agenzia delle Entrate apply the UK-Italy treaty Article 4 tie-breaker for executives, split-family households, and property owners."
+metaDescription: "How HMRC and the Italian Agenzia delle Entrate apply the UK-Italy treaty Article 4 tie-breaker for executives, split-family households"
 altText: "Duomo di Milano cathedral, representing the Italian residence side of UK-Italy dual-residence tie-breaker scenarios for split-family property owners"
-image: "https://images.pexels.com/photos/15939547/pexels-photo-15939547.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/15939547/pexels-photo-15939547.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Lauren Cuddy
   photographer_url: https://www.pexels.com/@laurencuddy

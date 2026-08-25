@@ -1,0 +1,1183 @@
+{
+  "meta": {
+    "generated_at": "2026-07-20",
+    "data_through": "2026-06",
+    "coverage": "2015-01/2026-06",
+    "sic_codes": "69101,69102,69109",
+    "sic_label": "Legal activities (SIC 69101, 69102, 69109)",
+    "method": "Companies House Advanced Search API, company_type=ltd + total",
+    "note_on_llp": "LLP incorporation counts are not obtainable via the CH advanced-search API with SIC code filtering: law firm LLPs rarely file SIC codes on incorporation, so SIC+LLP queries return zero hits in almost all monthly windows. The LLP vs incorporated firm structure series uses SRA Regulated Community Statistics instead (see sra_structure_series below).",
+    "sources": [
+      {
+        "name": "Companies House Advanced Search API",
+        "publisher": "Companies House (Crown copyright)",
+        "url": "https://api.company-information.service.gov.uk/advanced-search/companies",
+        "licence": "Open Government Licence v3.0",
+        "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      {
+        "name": "SRA Regulated Community Statistics: Solicitor Firms",
+        "publisher": "Solicitors Regulation Authority",
+        "url": "https://www.sra.org.uk/sra/research-publications/regulated-community-statistics/data/solicitor_firms/",
+        "licence": "SRA custom licence -- aggregate statistics only; no named-firm data",
+        "attribution": "Source: Solicitors Regulation Authority"
+      }
+    ]
+  },
+  "headline": {
+    "ttm_total": 2645,
+    "ttm_ltd": 2606,
+    "ttm_ltd_share_pct": 98.5,
+    "period_change_pct": 13.2,
+    "from_year": 2015,
+    "to_year": 2025,
+    "from_total": 2302,
+    "to_total": 2607,
+    "sra_incorporated_2011_pct": 22,
+    "sra_incorporated_latest_pct": 59,
+    "sra_incorporated_latest_year": 2026,
+    "sra_incorporated_latest_month": "June",
+    "sra_llp_latest_pct": 16,
+    "sra_total_firms_latest": 8916
+  },
+  "incorporations": {
+    "monthly": [
+      {
+        "month": "2015-01",
+        "total": 193,
+        "ltd": 191,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2015-02",
+        "total": 204,
+        "ltd": 203,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2015-03",
+        "total": 282,
+        "ltd": 280,
+        "ltd_share_pct": 99.3
+      },
+      {
+        "month": "2015-04",
+        "total": 222,
+        "ltd": 221,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2015-05",
+        "total": 201,
+        "ltd": 201,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2015-06",
+        "total": 177,
+        "ltd": 176,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2015-07",
+        "total": 200,
+        "ltd": 196,
+        "ltd_share_pct": 98.0
+      },
+      {
+        "month": "2015-08",
+        "total": 171,
+        "ltd": 168,
+        "ltd_share_pct": 98.2
+      },
+      {
+        "month": "2015-09",
+        "total": 164,
+        "ltd": 163,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2015-10",
+        "total": 177,
+        "ltd": 175,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2015-11",
+        "total": 171,
+        "ltd": 169,
+        "ltd_share_pct": 98.8
+      },
+      {
+        "month": "2015-12",
+        "total": 140,
+        "ltd": 138,
+        "ltd_share_pct": 98.6
+      },
+      {
+        "month": "2016-01",
+        "total": 166,
+        "ltd": 165,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2016-02",
+        "total": 201,
+        "ltd": 200,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2016-03",
+        "total": 210,
+        "ltd": 209,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2016-04",
+        "total": 201,
+        "ltd": 200,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2016-05",
+        "total": 213,
+        "ltd": 209,
+        "ltd_share_pct": 98.1
+      },
+      {
+        "month": "2016-06",
+        "total": 215,
+        "ltd": 215,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2016-07",
+        "total": 198,
+        "ltd": 196,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2016-08",
+        "total": 217,
+        "ltd": 217,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2016-09",
+        "total": 208,
+        "ltd": 203,
+        "ltd_share_pct": 97.6
+      },
+      {
+        "month": "2016-10",
+        "total": 212,
+        "ltd": 212,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2016-11",
+        "total": 197,
+        "ltd": 195,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2016-12",
+        "total": 151,
+        "ltd": 151,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2017-01",
+        "total": 240,
+        "ltd": 239,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2017-02",
+        "total": 223,
+        "ltd": 220,
+        "ltd_share_pct": 98.7
+      },
+      {
+        "month": "2017-03",
+        "total": 244,
+        "ltd": 244,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2017-04",
+        "total": 206,
+        "ltd": 204,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2017-05",
+        "total": 247,
+        "ltd": 243,
+        "ltd_share_pct": 98.4
+      },
+      {
+        "month": "2017-06",
+        "total": 202,
+        "ltd": 200,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2017-07",
+        "total": 190,
+        "ltd": 187,
+        "ltd_share_pct": 98.4
+      },
+      {
+        "month": "2017-08",
+        "total": 194,
+        "ltd": 194,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2017-09",
+        "total": 226,
+        "ltd": 225,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2017-10",
+        "total": 230,
+        "ltd": 229,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2017-11",
+        "total": 233,
+        "ltd": 233,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2017-12",
+        "total": 163,
+        "ltd": 161,
+        "ltd_share_pct": 98.8
+      },
+      {
+        "month": "2018-01",
+        "total": 206,
+        "ltd": 206,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2018-02",
+        "total": 197,
+        "ltd": 196,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2018-03",
+        "total": 226,
+        "ltd": 225,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2018-04",
+        "total": 224,
+        "ltd": 224,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2018-05",
+        "total": 228,
+        "ltd": 226,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2018-06",
+        "total": 208,
+        "ltd": 207,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2018-07",
+        "total": 218,
+        "ltd": 216,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2018-08",
+        "total": 226,
+        "ltd": 223,
+        "ltd_share_pct": 98.7
+      },
+      {
+        "month": "2018-09",
+        "total": 206,
+        "ltd": 203,
+        "ltd_share_pct": 98.5
+      },
+      {
+        "month": "2018-10",
+        "total": 311,
+        "ltd": 309,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2018-11",
+        "total": 207,
+        "ltd": 205,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2018-12",
+        "total": 163,
+        "ltd": 163,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2019-01",
+        "total": 214,
+        "ltd": 211,
+        "ltd_share_pct": 98.6
+      },
+      {
+        "month": "2019-02",
+        "total": 205,
+        "ltd": 203,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2019-03",
+        "total": 232,
+        "ltd": 231,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2019-04",
+        "total": 210,
+        "ltd": 207,
+        "ltd_share_pct": 98.6
+      },
+      {
+        "month": "2019-05",
+        "total": 231,
+        "ltd": 228,
+        "ltd_share_pct": 98.7
+      },
+      {
+        "month": "2019-06",
+        "total": 253,
+        "ltd": 250,
+        "ltd_share_pct": 98.8
+      },
+      {
+        "month": "2019-07",
+        "total": 227,
+        "ltd": 224,
+        "ltd_share_pct": 98.7
+      },
+      {
+        "month": "2019-08",
+        "total": 219,
+        "ltd": 217,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2019-09",
+        "total": 203,
+        "ltd": 203,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2019-10",
+        "total": 237,
+        "ltd": 236,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2019-11",
+        "total": 186,
+        "ltd": 186,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2019-12",
+        "total": 172,
+        "ltd": 166,
+        "ltd_share_pct": 96.5
+      },
+      {
+        "month": "2020-01",
+        "total": 218,
+        "ltd": 216,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2020-02",
+        "total": 194,
+        "ltd": 192,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2020-03",
+        "total": 197,
+        "ltd": 193,
+        "ltd_share_pct": 98.0
+      },
+      {
+        "month": "2020-04",
+        "total": 146,
+        "ltd": 143,
+        "ltd_share_pct": 97.9
+      },
+      {
+        "month": "2020-05",
+        "total": 195,
+        "ltd": 188,
+        "ltd_share_pct": 96.4
+      },
+      {
+        "month": "2020-06",
+        "total": 237,
+        "ltd": 233,
+        "ltd_share_pct": 98.3
+      },
+      {
+        "month": "2020-07",
+        "total": 253,
+        "ltd": 249,
+        "ltd_share_pct": 98.4
+      },
+      {
+        "month": "2020-08",
+        "total": 209,
+        "ltd": 208,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2020-09",
+        "total": 242,
+        "ltd": 236,
+        "ltd_share_pct": 97.5
+      },
+      {
+        "month": "2020-10",
+        "total": 241,
+        "ltd": 235,
+        "ltd_share_pct": 97.5
+      },
+      {
+        "month": "2020-11",
+        "total": 238,
+        "ltd": 236,
+        "ltd_share_pct": 99.2
+      },
+      {
+        "month": "2020-12",
+        "total": 218,
+        "ltd": 214,
+        "ltd_share_pct": 98.2
+      },
+      {
+        "month": "2021-01",
+        "total": 195,
+        "ltd": 189,
+        "ltd_share_pct": 96.9
+      },
+      {
+        "month": "2021-02",
+        "total": 231,
+        "ltd": 229,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2021-03",
+        "total": 242,
+        "ltd": 241,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2021-04",
+        "total": 208,
+        "ltd": 203,
+        "ltd_share_pct": 97.6
+      },
+      {
+        "month": "2021-05",
+        "total": 183,
+        "ltd": 180,
+        "ltd_share_pct": 98.4
+      },
+      {
+        "month": "2021-06",
+        "total": 219,
+        "ltd": 215,
+        "ltd_share_pct": 98.2
+      },
+      {
+        "month": "2021-07",
+        "total": 188,
+        "ltd": 183,
+        "ltd_share_pct": 97.3
+      },
+      {
+        "month": "2021-08",
+        "total": 172,
+        "ltd": 167,
+        "ltd_share_pct": 97.1
+      },
+      {
+        "month": "2021-09",
+        "total": 202,
+        "ltd": 198,
+        "ltd_share_pct": 98.0
+      },
+      {
+        "month": "2021-10",
+        "total": 196,
+        "ltd": 195,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2021-11",
+        "total": 206,
+        "ltd": 203,
+        "ltd_share_pct": 98.5
+      },
+      {
+        "month": "2021-12",
+        "total": 172,
+        "ltd": 171,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2022-01",
+        "total": 183,
+        "ltd": 181,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2022-02",
+        "total": 199,
+        "ltd": 195,
+        "ltd_share_pct": 98.0
+      },
+      {
+        "month": "2022-03",
+        "total": 229,
+        "ltd": 219,
+        "ltd_share_pct": 95.6
+      },
+      {
+        "month": "2022-04",
+        "total": 186,
+        "ltd": 184,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2022-05",
+        "total": 203,
+        "ltd": 202,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2022-06",
+        "total": 181,
+        "ltd": 175,
+        "ltd_share_pct": 96.7
+      },
+      {
+        "month": "2022-07",
+        "total": 194,
+        "ltd": 191,
+        "ltd_share_pct": 98.5
+      },
+      {
+        "month": "2022-08",
+        "total": 187,
+        "ltd": 184,
+        "ltd_share_pct": 98.4
+      },
+      {
+        "month": "2022-09",
+        "total": 174,
+        "ltd": 172,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2022-10",
+        "total": 192,
+        "ltd": 191,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2022-11",
+        "total": 215,
+        "ltd": 211,
+        "ltd_share_pct": 98.1
+      },
+      {
+        "month": "2022-12",
+        "total": 145,
+        "ltd": 142,
+        "ltd_share_pct": 97.9
+      },
+      {
+        "month": "2023-01",
+        "total": 193,
+        "ltd": 192,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2023-02",
+        "total": 197,
+        "ltd": 197,
+        "ltd_share_pct": 100.0
+      },
+      {
+        "month": "2023-03",
+        "total": 263,
+        "ltd": 260,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2023-04",
+        "total": 202,
+        "ltd": 199,
+        "ltd_share_pct": 98.5
+      },
+      {
+        "month": "2023-05",
+        "total": 219,
+        "ltd": 218,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2023-06",
+        "total": 181,
+        "ltd": 176,
+        "ltd_share_pct": 97.2
+      },
+      {
+        "month": "2023-07",
+        "total": 177,
+        "ltd": 175,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2023-08",
+        "total": 187,
+        "ltd": 183,
+        "ltd_share_pct": 97.9
+      },
+      {
+        "month": "2023-09",
+        "total": 238,
+        "ltd": 234,
+        "ltd_share_pct": 98.3
+      },
+      {
+        "month": "2023-10",
+        "total": 245,
+        "ltd": 242,
+        "ltd_share_pct": 98.8
+      },
+      {
+        "month": "2023-11",
+        "total": 224,
+        "ltd": 221,
+        "ltd_share_pct": 98.7
+      },
+      {
+        "month": "2023-12",
+        "total": 166,
+        "ltd": 162,
+        "ltd_share_pct": 97.6
+      },
+      {
+        "month": "2024-01",
+        "total": 213,
+        "ltd": 208,
+        "ltd_share_pct": 97.7
+      },
+      {
+        "month": "2024-02",
+        "total": 226,
+        "ltd": 221,
+        "ltd_share_pct": 97.8
+      },
+      {
+        "month": "2024-03",
+        "total": 225,
+        "ltd": 223,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2024-04",
+        "total": 260,
+        "ltd": 256,
+        "ltd_share_pct": 98.5
+      },
+      {
+        "month": "2024-05",
+        "total": 175,
+        "ltd": 172,
+        "ltd_share_pct": 98.3
+      },
+      {
+        "month": "2024-06",
+        "total": 174,
+        "ltd": 173,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2024-07",
+        "total": 194,
+        "ltd": 191,
+        "ltd_share_pct": 98.5
+      },
+      {
+        "month": "2024-08",
+        "total": 200,
+        "ltd": 198,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2024-09",
+        "total": 193,
+        "ltd": 189,
+        "ltd_share_pct": 97.9
+      },
+      {
+        "month": "2024-10",
+        "total": 244,
+        "ltd": 233,
+        "ltd_share_pct": 95.5
+      },
+      {
+        "month": "2024-11",
+        "total": 201,
+        "ltd": 197,
+        "ltd_share_pct": 98.0
+      },
+      {
+        "month": "2024-12",
+        "total": 163,
+        "ltd": 162,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "month": "2025-01",
+        "total": 208,
+        "ltd": 205,
+        "ltd_share_pct": 98.6
+      },
+      {
+        "month": "2025-02",
+        "total": 206,
+        "ltd": 205,
+        "ltd_share_pct": 99.5
+      },
+      {
+        "month": "2025-03",
+        "total": 223,
+        "ltd": 222,
+        "ltd_share_pct": 99.6
+      },
+      {
+        "month": "2025-04",
+        "total": 236,
+        "ltd": 226,
+        "ltd_share_pct": 95.8
+      },
+      {
+        "month": "2025-05",
+        "total": 234,
+        "ltd": 227,
+        "ltd_share_pct": 97.0
+      },
+      {
+        "month": "2025-06",
+        "total": 201,
+        "ltd": 196,
+        "ltd_share_pct": 97.5
+      },
+      {
+        "month": "2025-07",
+        "total": 225,
+        "ltd": 219,
+        "ltd_share_pct": 97.3
+      },
+      {
+        "month": "2025-08",
+        "total": 233,
+        "ltd": 229,
+        "ltd_share_pct": 98.3
+      },
+      {
+        "month": "2025-09",
+        "total": 254,
+        "ltd": 245,
+        "ltd_share_pct": 96.5
+      },
+      {
+        "month": "2025-10",
+        "total": 224,
+        "ltd": 219,
+        "ltd_share_pct": 97.8
+      },
+      {
+        "month": "2025-11",
+        "total": 226,
+        "ltd": 224,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2025-12",
+        "total": 137,
+        "ltd": 136,
+        "ltd_share_pct": 99.3
+      },
+      {
+        "month": "2026-01",
+        "total": 208,
+        "ltd": 206,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "month": "2026-02",
+        "total": 174,
+        "ltd": 172,
+        "ltd_share_pct": 98.9
+      },
+      {
+        "month": "2026-03",
+        "total": 260,
+        "ltd": 257,
+        "ltd_share_pct": 98.8
+      },
+      {
+        "month": "2026-04",
+        "total": 266,
+        "ltd": 264,
+        "ltd_share_pct": 99.2
+      },
+      {
+        "month": "2026-05",
+        "total": 221,
+        "ltd": 219,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "month": "2026-06",
+        "total": 217,
+        "ltd": 216,
+        "ltd_share_pct": 99.5
+      }
+    ],
+    "annual": [
+      {
+        "year": 2015,
+        "total": 2302,
+        "ltd": 2281,
+        "ltd_share_pct": 99.1
+      },
+      {
+        "year": 2016,
+        "total": 2389,
+        "ltd": 2372,
+        "ltd_share_pct": 99.3
+      },
+      {
+        "year": 2017,
+        "total": 2598,
+        "ltd": 2579,
+        "ltd_share_pct": 99.3
+      },
+      {
+        "year": 2018,
+        "total": 2620,
+        "ltd": 2603,
+        "ltd_share_pct": 99.4
+      },
+      {
+        "year": 2019,
+        "total": 2589,
+        "ltd": 2562,
+        "ltd_share_pct": 99.0
+      },
+      {
+        "year": 2020,
+        "total": 2588,
+        "ltd": 2543,
+        "ltd_share_pct": 98.3
+      },
+      {
+        "year": 2021,
+        "total": 2414,
+        "ltd": 2374,
+        "ltd_share_pct": 98.3
+      },
+      {
+        "year": 2022,
+        "total": 2288,
+        "ltd": 2247,
+        "ltd_share_pct": 98.2
+      },
+      {
+        "year": 2023,
+        "total": 2492,
+        "ltd": 2459,
+        "ltd_share_pct": 98.7
+      },
+      {
+        "year": 2024,
+        "total": 2468,
+        "ltd": 2423,
+        "ltd_share_pct": 98.2
+      },
+      {
+        "year": 2025,
+        "total": 2607,
+        "ltd": 2553,
+        "ltd_share_pct": 97.9
+      }
+    ]
+  },
+  "sra_structure_series": [
+    {
+      "year": 2010,
+      "month": "July",
+      "sole_pct": 37,
+      "partnership_pct": 33,
+      "incorporated_pct": 17,
+      "llp_pct": 11,
+      "other_pct": 1,
+      "total": 10885,
+      "sole": 4030,
+      "partnership": 3620,
+      "incorporated": 1898,
+      "llp": 1262
+    },
+    {
+      "year": 2011,
+      "month": "July",
+      "sole_pct": 33,
+      "partnership_pct": 30,
+      "incorporated_pct": 22,
+      "llp_pct": 13,
+      "other_pct": 1,
+      "total": 10867,
+      "sole": 3640,
+      "partnership": 3309,
+      "incorporated": 2400,
+      "llp": 1398
+    },
+    {
+      "year": 2012,
+      "month": "July",
+      "sole_pct": 31,
+      "partnership_pct": 28,
+      "incorporated_pct": 25,
+      "llp_pct": 14,
+      "other_pct": 2,
+      "total": 11172,
+      "sole": 3487,
+      "partnership": 3115,
+      "incorporated": 2843,
+      "llp": 1550
+    },
+    {
+      "year": 2013,
+      "month": "July",
+      "sole_pct": 30,
+      "partnership_pct": 26,
+      "incorporated_pct": 29,
+      "llp_pct": 14,
+      "other_pct": 2,
+      "total": 10866,
+      "sole": 3225,
+      "partnership": 2783,
+      "incorporated": 3103,
+      "llp": 1559
+    },
+    {
+      "year": 2014,
+      "month": "July",
+      "sole_pct": 28,
+      "partnership_pct": 24,
+      "incorporated_pct": 33,
+      "llp_pct": 15,
+      "other_pct": 1,
+      "total": 10592,
+      "sole": 2937,
+      "partnership": 2502,
+      "incorporated": 3462,
+      "llp": 1591
+    },
+    {
+      "year": 2015,
+      "month": "July",
+      "sole_pct": 27,
+      "partnership_pct": 22,
+      "incorporated_pct": 36,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 10412,
+      "sole": 2796,
+      "partnership": 2278,
+      "incorporated": 3729,
+      "llp": 1563
+    },
+    {
+      "year": 2016,
+      "month": "July",
+      "sole_pct": 26,
+      "partnership_pct": 20,
+      "incorporated_pct": 39,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 10482,
+      "sole": 2687,
+      "partnership": 2046,
+      "incorporated": 4133,
+      "llp": 1570
+    },
+    {
+      "year": 2017,
+      "month": "July",
+      "sole_pct": 24,
+      "partnership_pct": 18,
+      "incorporated_pct": 43,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 10471,
+      "sole": 2549,
+      "partnership": 1841,
+      "incorporated": 4482,
+      "llp": 1559
+    },
+    {
+      "year": 2018,
+      "month": "July",
+      "sole_pct": 23,
+      "partnership_pct": 16,
+      "incorporated_pct": 45,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 10415,
+      "sole": 2405,
+      "partnership": 1714,
+      "incorporated": 4710,
+      "llp": 1546
+    },
+    {
+      "year": 2019,
+      "month": "July",
+      "sole_pct": 22,
+      "partnership_pct": 16,
+      "incorporated_pct": 47,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 10385,
+      "sole": 2277,
+      "partnership": 1612,
+      "incorporated": 4907,
+      "llp": 1551
+    },
+    {
+      "year": 2020,
+      "month": "July",
+      "sole_pct": 21,
+      "partnership_pct": 15,
+      "incorporated_pct": 49,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 10132,
+      "sole": 2114,
+      "partnership": 1499,
+      "incorporated": 4955,
+      "llp": 1527
+    },
+    {
+      "year": 2021,
+      "month": "July",
+      "sole_pct": 20,
+      "partnership_pct": 14,
+      "incorporated_pct": 51,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 9943,
+      "sole": 1940,
+      "partnership": 1384,
+      "incorporated": 5085,
+      "llp": 1501
+    },
+    {
+      "year": 2022,
+      "month": "July",
+      "sole_pct": 18,
+      "partnership_pct": 13,
+      "incorporated_pct": 53,
+      "llp_pct": 15,
+      "other_pct": 0,
+      "total": 9731,
+      "sole": 1777,
+      "partnership": 1265,
+      "incorporated": 5157,
+      "llp": 1497
+    },
+    {
+      "year": 2023,
+      "month": "July",
+      "sole_pct": 17,
+      "partnership_pct": 12,
+      "incorporated_pct": 55,
+      "llp_pct": 16,
+      "other_pct": 0,
+      "total": 9471,
+      "sole": 1638,
+      "partnership": 1143,
+      "incorporated": 5175,
+      "llp": 1481
+    },
+    {
+      "year": 2024,
+      "month": "July",
+      "sole_pct": 16,
+      "partnership_pct": 11,
+      "incorporated_pct": 56,
+      "llp_pct": 16,
+      "other_pct": 0,
+      "total": 9301,
+      "sole": 1525,
+      "partnership": 1061,
+      "incorporated": 5221,
+      "llp": 1463
+    },
+    {
+      "year": 2025,
+      "month": "July",
+      "sole_pct": 16,
+      "partnership_pct": 11,
+      "incorporated_pct": 57,
+      "llp_pct": 16,
+      "other_pct": 0,
+      "total": 9053,
+      "sole": 1410,
+      "partnership": 972,
+      "incorporated": 5206,
+      "llp": 1436
+    },
+    {
+      "year": 2026,
+      "month": "June",
+      "sole_pct": 15,
+      "partnership_pct": 10,
+      "incorporated_pct": 59,
+      "llp_pct": 16,
+      "other_pct": 0,
+      "total": 8916,
+      "sole": 1327,
+      "partnership": 906,
+      "incorporated": 5234,
+      "llp": 1421
+    }
+  ]
+}

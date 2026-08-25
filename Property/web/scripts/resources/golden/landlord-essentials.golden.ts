@@ -26,14 +26,29 @@ const XLSX_PATH = path.resolve(
   "../../../public/resources/landlord-essentials/landlord-essentials-model.xlsx",
 );
 
-// Sample: a higher-rate landlord with two properties (matches the workbook's
-// default first row plus a second property, and a £40,000 other income).
-const PROPERTIES: PropertyInput[] = [
-  { name: "Property 1", rent: 18000, expenses: 3000, interest: 6000 },
-  { name: "Property 2", rent: 14000, expenses: 2500, interest: 4000 },
-];
-const OTHER_INCOME = 40000;
 const YEAR = "2026-27" as const;
+
+const SCENARIOS: Array<{ label: string; properties: PropertyInput[]; otherIncome: number }> = [
+  {
+    // A higher-rate landlord with two properties (matches the workbook's default
+    // first row plus a second property, and a £40,000 other income).
+    label: "higher-rate, £40k other income",
+    properties: [
+      { name: "Property 1", rent: 18000, expenses: 3000, interest: 6000 },
+      { name: "Property 2", rent: 14000, expenses: 2500, interest: 4000 },
+    ],
+    otherIncome: 40000,
+  },
+  {
+    // Runs through the £100k taper and into the additional rate, which is where
+    // the additional-rate threshold's units actually bite. Total income £140,000:
+    // personal allowance nil, so the 45% band starts at £125,140 of taxable
+    // income, NOT at £112,570.
+    label: "taper zone + additional rate, £90k other income",
+    properties: [{ name: "Property 1", rent: 62000, expenses: 12000, interest: 20000 }],
+    otherIncome: 90000,
+  },
+];
 
 function main() {
   const wb = new ExcelJS.Workbook();
@@ -57,7 +72,7 @@ function main() {
     const taperStart = byLabel["Personal-allowance taper start (£)"];
     const taperEnd = byLabel["Personal allowance fully withdrawn (£)"];
     const basicLimit = byLabel["Top of basic-rate band — taxable income (£)"];
-    const higherLimit = byLabel["Top of higher-rate band — taxable income (£)"];
+    const addlThreshold = byLabel["Additional-rate threshold — total income (£)"];
     const propAllowance = byLabel["Property allowance (£)"];
 
     const taperedPA = (income: number) => {
@@ -68,38 +83,49 @@ function main() {
     const bandedTax = (income: number) => {
       const pa = taperedPA(income);
       const taxable = Math.max(0, income - pa);
+      // £125,140 is a TOTAL-income threshold: convert it onto the taxable axis
+      // using the PA left after the taper (nil at £125,140 and above).
+      const addlLimit = Math.max(basicLimit, addlThreshold - pa);
       const b = Math.min(taxable, basicLimit);
-      const h = Math.min(Math.max(0, taxable - basicLimit), higherLimit - basicLimit);
-      const a = Math.max(0, taxable - higherLimit);
+      const h = Math.min(Math.max(0, taxable - basicLimit), addlLimit - basicLimit);
+      const a = Math.max(0, taxable - addlLimit);
       return b * basic + h * higher + a * additional;
     };
 
     // Per-property taxable profit with the £1,000 allowance choice.
     const profitOf = (p: PropertyInput) =>
       p.rent <= propAllowance ? 0 : Math.max(0, p.rent - Math.max(p.expenses, propAllowance));
-    const totProfit = PROPERTIES.reduce((s, p) => s + profitOf(p), 0);
-    const totInterest = PROPERTIES.reduce((s, p) => s + p.interest, 0);
-
-    const incWith = OTHER_INCOME + totProfit;
-    const taxBeforeCredit = Math.max(0, bandedTax(incWith) - bandedTax(OTHER_INCOME));
-    const ati = Math.max(0, incWith - taperedPA(incWith));
-    const credit = Math.min(totInterest, Math.max(0, totProfit), ati) * reducer;
-    const incomeTax = Math.max(0, taxBeforeCredit - credit);
-
-    const ts = computePortfolio({ properties: PROPERTIES, otherIncome: OTHER_INCOME, year: YEAR });
-
-    const checks: Array<[string, number, number]> = [
-      ["Taxable rental profit", Math.round(totProfit), ts.totalTaxableProfit],
-      ["Tax before credit", Math.round(taxBeforeCredit), ts.taxBeforeCredit],
-      ["Finance-cost credit", Math.round(credit), ts.financeCredit],
-      ["Income tax payable", Math.round(incomeTax), ts.incomeTax],
-    ];
 
     let failed = 0;
-    for (const [name, xlsx, tsv] of checks) {
-      const ok = xlsx === tsv;
-      if (!ok) failed++;
-      console.log(`${ok ? "PASS" : "FAIL"}  ${name}: xlsx=${xlsx}  ts=${tsv}`);
+    for (const s of SCENARIOS) {
+      const totProfit = s.properties.reduce((acc, p) => acc + profitOf(p), 0);
+      const totInterest = s.properties.reduce((acc, p) => acc + p.interest, 0);
+
+      const incWith = s.otherIncome + totProfit;
+      const taxBeforeCredit = Math.max(0, bandedTax(incWith) - bandedTax(s.otherIncome));
+      const ati = Math.max(0, incWith - taperedPA(incWith));
+      const credit = Math.min(totInterest, Math.max(0, totProfit), ati) * reducer;
+      const incomeTax = Math.max(0, taxBeforeCredit - credit);
+
+      const ts = computePortfolio({
+        properties: s.properties,
+        otherIncome: s.otherIncome,
+        year: YEAR,
+      });
+
+      const checks: Array<[string, number, number]> = [
+        ["Taxable rental profit", Math.round(totProfit), ts.totalTaxableProfit],
+        ["Tax before credit", Math.round(taxBeforeCredit), ts.taxBeforeCredit],
+        ["Finance-cost credit", Math.round(credit), ts.financeCredit],
+        ["Income tax payable", Math.round(incomeTax), ts.incomeTax],
+      ];
+
+      console.log(`\n[${s.label}]`);
+      for (const [name, xlsx, tsv] of checks) {
+        const ok = xlsx === tsv;
+        if (!ok) failed++;
+        console.log(`${ok ? "PASS" : "FAIL"}  ${name}: xlsx=${xlsx}  ts=${tsv}`);
+      }
     }
 
     if (failed > 0) {

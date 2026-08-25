@@ -26,7 +26,7 @@ faqs:
 - question: Does fine-tuning an open-source model like Llama 3 qualify for R&D?
   answer: It can, but only if the fine-tuning process itself resolved technological uncertainty. If you ran a standard fine-tuning script on your data and it worked first time, that is routine. If you had to experiment with different architectures, training strategies, or evaluation methods because standard approaches failed, that is R&D. The key is whether a competent machine learning engineer would have known the outcome in advance.
 - question: How much does an AI agency typically claim for R&D?
-  answer: It varies widely based on the agency's size and the nature of its work. A small agency with two qualifying projects might claim £50,000 to £100,000 in costs. A larger agency doing substantial model training work could claim £300,000 to £500,000 or more. The average claim we see for AI-focused agencies is around £180,000 in qualifying costs, which generates a tax saving or cash payment of roughly £25,000 to £45,000 depending on profitability.
+  answer: It varies widely based on the agency's size and the nature of its work. A small agency with two qualifying projects might claim £50,000 to £100,000 in costs. A larger agency doing substantial model training work could claim £300,000 to £500,000 or more. The average claim we see for AI-focused agencies is around £180,000 in qualifying costs, which under the merged R&D scheme generates a 20% credit of £36,000, worth roughly £27,000 to £29,000 net depending on profitability.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -137,15 +137,17 @@ keyTakeaways:
 
 <p>Most AI agencies use cloud compute extensively. That is a qualifying cost, but only for the compute used directly in R&D activity. Your production inference costs do not qualify. Your staging environment for testing routine deployments does not qualify. Only the compute used for experimentation, training, and evaluation counts.</p>
 
-<h2>The Two R&D Schemes: SME vs RDEC</h2>
+<h2>How the Merged R&D Scheme Pays Out</h2>
 
-<p>Most agencies qualify under the SME scheme. If your agency has fewer than 500 employees and either turnover under €100m or a balance sheet under €86m, you are an SME for R&D purposes.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the old SME and RDEC schemes were replaced by a single merged R&D scheme. Most agencies now claim under this one set of rules regardless of size.</p>
 
-<p>The SME scheme gives you an enhanced deduction of 186% on qualifying costs. That means if you spent £50,000 on R&D, you can deduct £143,000 from your taxable profits. If you are loss-making, you can surrender the loss for a cash payment worth up to 14.5% of the qualifying costs.</p>
+<p>The merged scheme gives a 20% above-the-line credit on qualifying costs. The credit is taxable, so the net benefit after corporation tax is roughly 15% for a main-rate payer and about 16.2% for a loss-maker. That means if you spent £50,000 on qualifying R&D, the credit is £10,000, worth around £7,500 to £8,100 net.</p>
 
-<p>If your agency is larger, or if the R&D was subcontracted to you by a larger company, you may fall under the RDEC scheme. RDEC gives a 20% taxable credit on qualifying costs. The net benefit is lower than the SME scheme, but it is still significant.</p>
+<p>There is a more generous route for loss-making, research-intensive SMEs. Under Enhanced R&D Intensive Support (ERIS), if your R&D is at least 30% of your total spend, you get an extra 86% deduction plus a payable credit worth 14.5% of the surrenderable loss. That works out at up to around 27p in the pound of qualifying spend.</p>
 
-<p>Your accountant should determine which scheme applies. It is not always obvious. If your agency has received grant funding or is part of a group, the rules change.</p>
+<p>Older rates no longer apply to current periods. The former SME 186% enhanced deduction (with a 10% payable credit for loss-makers) applied only to accounting periods beginning between 1 April 2023 and 31 March 2024, and the pre-2023 SME rate was a 130% enhancement with a 14.5% credit. If you read about a "186% deduction" online, check the date it refers to.</p>
+
+<p>Your accountant should confirm how the rules apply to you. If your agency has received grant funding, is part of a group, or had R&D subcontracted to it, the position needs checking.</p>
 
 <h2>Common Mistakes AI Agencies Make on R&D Claims</h2>
 
@@ -171,7 +173,7 @@ keyTakeaways:
 <li>A failed project to build a model that could predict litigation outcomes. Two staff, three months, £50,000 in staff costs, £15,000 in compute.</li>
 </ul>
 
-<p>Total qualifying costs: £330,000. Under the SME scheme, the enhanced deduction is £613,800. If the agency is profitable, that saves them approximately £153,450 in corporation tax at 25%. If they are loss-making, they could claim a cash payment of around £47,850.</p>
+<p>Total qualifying costs: £330,000. Under the merged R&D scheme, that generates a 20% credit of £66,000. After corporation tax, the net benefit is roughly £49,500 for a main-rate payer, rising to around £53,460 for a loss-maker. If the agency is a loss-making, research-intensive SME (with R&D at least 30% of total spend), it could instead claim under ERIS, worth up to around £88,999.</p>
 
 <p>That is real money. It funds the next project.</p>
 

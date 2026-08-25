@@ -8,6 +8,24 @@
 
 > **LATEST (2026-06-30, local / UNDEPLOYED):** active **Property-standard PARITY programme** — full handover in **`docs/generalist/PARITY_PROGRAMME_HANDOVER.md`**. Done this run: Waves 0-2 + GEO schema/code; site-wide credential strip; **full factual-accuracy remediation COMPLETE** (356 audited, 281 corrected + 3 fabrications rewritten on-URL); **Wave 3 + 3b GEO keyTakeaways backfill COMPLETE** — answer-boxes now on ALL 356 audited posts (Wave 3 = 74 clean, committed `1e60bf37`; Wave 3b = 282 now-corrected, run `wf_377cb19e-2ad`, incl. regenerating 5 stale pilot boxes); build green, `npm test` 33/33, render/schema verified. Records: `wave3_geo_2026-06-30.md`. **Wave 3b's QA flagged ~60 residual BODY issues** (stale-as-current figures the 1st remediation missed; answer-boxes clean) → `wave3b_body_issues_2026-06-30.md` = **remediation round 2 (manager-direct, owner steer pending).** Then Wave 4 GEN-R2 rewrites (needs fresh GSC pull) or deploy (gated). **Spend posture relaxed 2026-06-30 (owner upgraded); still no waste.**
 
+## 2026-08-25 — Port-branch merge: nothing pending for this site
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **44 commits** were on
+the branch and not in `origin/main`.
+
+**All 44 are already on production, so the merge ships nothing new here.** This site's
+live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
+(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
+READY, read 2026-08-25; this is what the production alias actually points at, which a
+`/v6/deployments` listing alone would not prove), and
+`git log 435cc12e..design/property-redesign-port --oneline -- 'generalist/'` returns 0.
+Main was BEHIND production for this site, not ahead of it.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'generalist/'`.
+Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
+sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
 ## Wave 4 net-new (gap-discovery batch) - WRITTEN + QA CLEAN 2026-07-09, AWAITING DEPLOY WORD
 
 - First NET-NEW content wave (waves 0-3b were the parity/GEO programme). Source: gap discovery 2026-07 curated batch (13 topics; A13 company-car BIK STRUCK at page-level collision verify - limited-company-car-tax-relief-2025-26 already owns it, rejected in blog_topics, routed to rewrite/refresh).

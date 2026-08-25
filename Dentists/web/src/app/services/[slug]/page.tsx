@@ -22,7 +22,7 @@ type Params = Promise<{ slug: string }>;
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;
   const page = SERVICE_SUB_PAGES[slug];
-  if (!page) return { title: `Service | ${siteConfig.name}` };
+  if (!page) return { title: "Service" };
   const url = `${siteConfig.url}/services/${slug}`;
   return {
     title: page.metaTitle,

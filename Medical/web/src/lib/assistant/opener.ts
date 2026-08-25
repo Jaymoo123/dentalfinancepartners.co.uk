@@ -12,7 +12,7 @@
  * - Never claim the firm is chartered, qualified or MLR-supervised.
  * - Generic-helpful: references only what the visitor self-evidently did.
  * - No "we noticed you're struggling" surveillance framing.
- * - No "DJH", no "Reflex" in any copy here.
+ * - No named firms (e.g. "DJH") in any copy here.
  * - No booking branch: the "call" chip points to /contact (no /book on Medical).
  *
  * OPENER_LLM_ENRICHMENT_ENABLED = false (deterministic Phase-0 only).

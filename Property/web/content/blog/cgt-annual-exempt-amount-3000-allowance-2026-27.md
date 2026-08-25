@@ -44,6 +44,19 @@ faqs:
 <p>The CGT annual exempt amount is the total capital gains you can make in a tax year before capital gains tax becomes payable. For 2026/27, this figure is £3,000 per person.</p>
 <p>The allowance applies to your total gains across all assets. If you sell multiple properties or other chargeable assets in the same tax year, the £3,000 exemption covers your combined gains, not each disposal separately.</p>
 <p>For married couples and civil partners, each person gets their own £3,000 allowance, potentially allowing £6,000 of gains to be made tax-free if assets are held in joint names or transferred between spouses.</p>
+<p>The table below shows how the allowance has moved to reach the current £3,000 figure.</p>
+<table>
+<thead>
+<tr><th>Tax year</th><th>Annual exempt amount</th><th>Change on prior year</th></tr>
+</thead>
+<tbody>
+<tr><td>2022/23</td><td>£12,300</td><td>Pre-reduction level</td></tr>
+<tr><td>2023/24</td><td>£6,000</td><td>Reduced</td></tr>
+<tr><td>2024/25</td><td>£3,000</td><td>Reduced</td></tr>
+<tr><td>2025/26</td><td>£3,000</td><td>Unchanged</td></tr>
+<tr><td>2026/27</td><td>£3,000</td><td>Unchanged</td></tr>
+</tbody>
+</table>
 
 <h2>How CGT Rates Apply After Your Allowance</h2>
 <p>Once your gains exceed £3,000, capital gains tax applies at the following rates for property disposals in 2026/27:</p>

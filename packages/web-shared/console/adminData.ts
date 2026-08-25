@@ -202,6 +202,7 @@ export type LeadInfo = {
   created_at: string;
   visitor_id: string | null;
   session_id: string | null;
+  extras: Record<string, unknown> | null;
 };
 
 export type FormFieldDropoff = {
@@ -328,7 +329,7 @@ export type PersonalizationResult = {
 // ── Query functions ───────────────────────────────────────────────────────
 
 const LEAD_COLS =
-  "id,full_name,email,phone,role,source,message,created_at,visitor_id,session_id";
+  "id,full_name,email,phone,role,source,message,created_at,visitor_id,session_id,extras";
 
 export function getFunnelDaily(siteKey: string, country?: string) {
   return rest<FunnelDay>(
@@ -430,8 +431,11 @@ export function getVisitorEvents(siteKey: string, visitorId: string) {
 }
 
 export function getLeadsForSite(siteKey: string, limit = 200) {
+  // Test traffic never reaches an operator surface: excludes both the reserved
+  // source and rows flagged is_test (real-shaped walk/QA leads).
   return rest<LeadInfo>("leads", {
     source: `eq.${siteKey}`,
+    is_test: "not.is.true",
     select: LEAD_COLS,
     order: "created_at.desc",
     limit: String(limit),
@@ -440,6 +444,8 @@ export function getLeadsForSite(siteKey: string, limit = 200) {
 
 export function getAllLeads(limit = 2000) {
   return rest<LeadInfo>("leads", {
+    source: "neq.test",
+    is_test: "not.is.true",
     select: LEAD_COLS,
     order: "created_at.desc",
     limit: String(limit),

@@ -47,7 +47,7 @@ imageCredit:
 <p>You can claim up to £1 million on certain plant and machinery under the annual investment allowance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is the most generous relief available to most agencies. It gives you 100% tax relief in the year you buy the asset. Spend £20,000 on laptops, and you deduct £20,000 from your profits in the same accounting period. The £1m AIA is available until 31 March 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <h3>Writing-Down Allowances</h3>
-<p>If your total qualifying spend exceeds £1m in a single year, or if you buy assets that do not qualify for AIA, you claim writing-down allowances instead. The main rate pool for plant and machinery has a writing-down allowance of 18% per annum on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The special rate pool for long-life assets and integral features has a writing-down allowance of 6% per annum on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>If your total qualifying spend exceeds £1m in a single year, or if you buy assets that do not qualify for AIA, you claim writing-down allowances instead. The main rate pool for plant and machinery has a writing-down allowance of 14% per annum on a reducing balance basis (reduced from 18% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The special rate pool for long-life assets and integral features has a writing-down allowance of 6% per annum on a reducing balance basis <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 <p>Most agency equipment falls into the main rate pool. Integral features like electrical systems, air conditioning, and lifts fall into the special rate pool.</p>
 
 <h3>Full Expensing</h3>
@@ -89,7 +89,7 @@ imageCredit:
 <p>That is a real cash saving. The founder effectively gets the government to fund a quarter of the equipment cost.</p>
 
 <h3>Step 3: What If Spend Exceeds £1m?</h3>
-<p>Suppose the same agency spent £1.2m on a full office fit-out and new equipment. The AIA covers the first £1m. The remaining £200,000 would go into the main rate pool and attract writing-down allowances at 18% in year one (£36,000), then 18% of the reducing balance in year two, and so on. Alternatively, if the agency is a company, full expensing could apply to the main rate portion with no cap, giving 100% relief on that element too.</p>
+<p>Suppose the same agency spent £1.2m on a full office fit-out and new equipment. The AIA covers the first £1m. The remaining £200,000 would go into the main rate pool and attract writing-down allowances at 14% in year one (£28,000), then 14% of the reducing balance in year two, and so on. Alternatively, if the agency is a company, full expensing could apply to the main rate portion with no cap, giving 100% relief on that element too.</p>
 
 <h2>What Qualifies as Plant and Machinery for an Agency?</h2>
 <p>HMRC defines plant and machinery broadly. For agency founders, the following items typically qualify:</p>
@@ -113,7 +113,7 @@ imageCredit:
 <p>I see three recurring errors when reviewing capital allowances claims for agency clients.</p>
 <p><strong>1. Treating everything as a revenue expense.</strong> Some founders put laptops and furniture through the profit and loss as general expenses. That is technically incorrect. HMRC expects capital items to be capitalised and claimed through allowances. In practice, many small agencies get away with it, but if HMRC opens a compliance check, they will adjust the return and possibly charge penalties.</p>
 <p><strong>2. Missing the AIA cap.</strong> The £1m AIA is generous, but it is not permanent. It has changed several times in the last decade. Always check the current limit before filing. As of 2025/26, it is £1m until 31 March 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
-<p><strong>3. Forgetting the special rate pool.</strong> Integral features like air conditioning and electrical systems go into the special rate pool at 6% writing-down allowance, not the main pool at 18%. If you lump them together, you overclaim relief in year one and HMRC will adjust it later.</p>
+<p><strong>3. Forgetting the special rate pool.</strong> Integral features like air conditioning and electrical systems go into the special rate pool at 6% writing-down allowance, not the main pool at 14%. If you lump them together, you overclaim relief in year one and HMRC will adjust it later.</p>
 
 <h2>How to Claim Capital Allowances</h2>
 <p>You claim capital allowances in your company tax return (CT600) or self-assessment return (SA100 for sole traders). The calculation goes into the capital allowances computation, which is part of the tax computation that supports the return.</p>

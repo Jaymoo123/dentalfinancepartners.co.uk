@@ -8,7 +8,7 @@ category: "Portfolio Management"
 metaTitle: "Plymouth vs Cardiff BTL: After-Tax Yield Comparison"
 metaDescription: "SDLT vs Welsh LTT, council-tax premium variation, Rent Smart Wales vs Plymouth selective licensing, plus Section 24 and CGT 18%/24% applied uniformly."
 altText: "A UK property tax adviser comparing a Plymouth flat purchase and a Cardiff flat purchase on a desk with FA 2003 Sch 4ZA, LTTADA 2017 Sch 5, and Rent Smart Wales licence guidance visible"
-image: "https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit: "Photo by Aleksandar Pasaric on Pexels"
 h1: "Plymouth vs Cardiff: The After-Tax BTL Yield Comparison Most Hotspot Pages Skip"
 summary: "If you are weighing your next BTL between Plymouth and Cardiff, the headline yield ranking on the property portal is not the decision you are actually making. The real differences sit in the cross-border tax-and-regulatory layer: SDLT additional-dwellings 5% (FA 2003 Sch 4ZA) on the Plymouth side, Welsh LTT Higher Residential Property rates (LTTADA 2017 Sch 5, no nil-rate band on HRP) on the Cardiff side, England's LURA 2023 Part 4 council-tax premium framework against Wales's LGF(W)A 2024 framework with its 300% premium ceiling, Plymouth's selective licensing in designated wards under Housing Act 2004 Part 3 against Rent Smart Wales mandatory all-landlord registration under Housing (Wales) Act 2014 Part 1, Cardiff's Article 4 directions on C4 to C3 conversions in Plasnewydd, Cathays and Roath, and the Renters' Rights Act 2025 (England) versus Renting Homes (Wales) Act 2016 tenancy split. Section 24 (ITTOIA 2005 s.272A) and CGT residential 18%/24% (TCGA 1992 with FA 2024 from 30 October 2024) apply uniformly UK-wide, so neither gives you a planning lever for picking one city over the other."
@@ -108,7 +108,7 @@ editorialNote: "MW3 Bucket C C13: cross-jurisdictional England-Wales BTL decisio
 
 <p>Mandatory HMO licensing under Housing Act 2004 Part 2 applies UK-wide where the property is occupied by 5 or more unrelated occupants forming 2 or more households and sharing basic amenities. That Part 2 floor is the same in Plymouth and Cardiff.</p>
 
-<p>On the Plymouth side, selected wards can add additional HMO licensing under Housing Act 2004 s.56, capturing smaller HMOs below the 5+/2+ Part 2 threshold. Check Plymouth City Council's additional HMO licensing designation orders against your specific property.</p>
+<p>On the Plymouth side, selected wards can add <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">additional HMO licensing under Housing Act 2004 s.56</a>, capturing smaller HMOs below the 5+/2+ Part 2 threshold. Check Plymouth City Council's additional HMO licensing designation orders against your specific property.</p>
 
 <p>On the Cardiff side, Article 4 directions in Plasnewydd, Cathays, and Roath remove the permitted-development right to convert a Class C3 dwelling-house to a Class C4 small HMO without planning permission. In those wards, turning a single-let into an HMO means a planning application, with the cost, delay, and refusal risk that brings. The student-let market in Cathays and Plasnewydd is shaped by these directions, so if you are eyeing an HMO conversion in the catchment, price in the planning step before you assume those HMO yields are yours to take.</p>
 

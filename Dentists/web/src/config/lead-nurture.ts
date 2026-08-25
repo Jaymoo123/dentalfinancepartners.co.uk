@@ -218,7 +218,8 @@ function buildBookingUrl(lead: NurtureLead, b: string): string {
 
 function buildDetailsUrl(lead: NurtureLead, b: string): string {
   try {
-    return `${b}/contact?t=${encodeURIComponent(mintLeadToken(lead.id, "profile"))}`;
+    // /complete is the page that reads the profile token; /contact ignores it.
+    return `${b}/complete?t=${encodeURIComponent(mintLeadToken(lead.id, "profile"))}`;
   } catch {
     return `${b}/contact`;
   }

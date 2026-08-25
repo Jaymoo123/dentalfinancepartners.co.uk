@@ -2,7 +2,7 @@
  * Daily digest composer and runner for the Dentists lead-nurture system.
  *
  * Mirrors Property/web/src/lib/leads/nurture-digest.ts with:
- *   - gatherDigestData('dentists') and resolveLeadTo('dentists')
+ *   - gatherDigestData('dentists')
  *   - Footer: "Dental Finance Partners"
  *   - site_key filter on stuck-leads query
  *   - JS-filter on failed-send events: leads.source === 'dentists'
@@ -13,8 +13,6 @@
  */
 
 import { adminSelect } from "@/lib/supabase/admin";
-import { getResend, getFromAddress } from "@/lib/resend";
-import { resolveLeadTo } from "@/lib/lead-routing";
 import { getNurtureControl } from "./nurture-control";
 import { getNurtureHealth } from "./nurture-health";
 import type { NurtureHealth } from "./nurture-health";
@@ -346,30 +344,31 @@ export function composeDigestEmail(d: DigestData): {
 
 // ── runNurtureDigest ──────────────────────────────────────────────────────────
 
+/**
+ * Gather today's digest and write it to the function log. Does NOT email.
+ *
+ * Why it no longer emails: nine sites each sent one near-identical daily mail
+ * to the same operator inbox, and every exception this digest reports
+ * (complaints 24h/7d, failed-send rate, hard bounce rate, opt-outs, stuck
+ * leads) is already covered by runNurtureGuardrails in nurture-health.ts,
+ * which runs hourly, emails only when the breach SET changes, and can
+ * autopause. The daily mail was redundancy, not signal.
+ *
+ * Where to read it instead: the console/web operator dashboard renders every
+ * one of these metrics live, per site; the composed digest text is also
+ * console.info'd below under the [nurture-digest] prefix, so it stays
+ * readable in this cron's Vercel function log.
+ *
+ * What still emails: runNurtureGuardrails in nurture-health.ts. Nothing here.
+ *
+ * The cron and its lastDigestRunAt stamping are deliberately left intact: a
+ * frozen lastDigestRunAt is a watched liveness signal, so the job must keep
+ * running. Always returns {sent:false}; the return shape is kept so callers
+ * and tests still compile.
+ */
 export async function runNurtureDigest(): Promise<{ sent: boolean }> {
   const d = await gatherDigestData("dentists");
-
-  const noActivity =
-    (d.health === null || d.health.sends24h === 0) &&
-    d.stuck.length === 0 &&
-    d.failedSends.length === 0;
-
-  if (noActivity) return { sent: false };
-
-  if (!process.env.RESEND_API_KEY) return { sent: false };
-
   const { subject, text } = composeDigestEmail(d);
-
-  try {
-    await getResend().emails.send({
-      from: getFromAddress(),
-      to: resolveLeadTo("dentists"),
-      subject,
-      text,
-    });
-    return { sent: true };
-  } catch (err) {
-    console.error("[nurture-digest/dentists] digest email send failed", err);
-    return { sent: false };
-  }
+  console.info(`[nurture-digest] ${subject}\n${text}`);
+  return { sent: false };
 }

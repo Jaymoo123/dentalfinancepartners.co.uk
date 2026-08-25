@@ -11,6 +11,12 @@ metaDescription: "Enhanced and locally commissioned GP services: DES and LES inc
 altText: "GP practice team reviewing a list of enhanced service offers and the income they generate"
 image: ""
 h1: "Enhanced and Locally Commissioned Services: Extra GP Practice Income and How It Is Taxed"
+keyTakeaways:
+- "A Directed Enhanced Service (DES) is nationally specified with funding set centrally and must be offered to every practice in England, while a Local Enhanced Service (LES) is commissioned locally by the ICB so its scope and fee vary by area."
+- "Enhanced-services income is ordinary practice trading profit, allocated under the profit-sharing agreement and taxed on each partner's profit share with Class 4 National Insurance through the SA800 and SA104."
+- "Most enhanced services are NHS-commissioned medical care that is exempt or outside the scope of VAT and does not count towards the VAT registration threshold."
+- "The principal-purpose test can make work standard-rated where its primary purpose is not the protection, maintenance or restoration of health, such as purely cosmetic, administrative or third-party-report work, so taxable (non-exempt) turnover must be watched against the registration threshold."
+- "NHS-commissioned work feeding partnership profit is pensionable for a Type 1 practitioner via the Annual Certificate of Pensionable Profits, whereas income routed through a limited company is not NHS-pensionable because a company cannot hold a GMS or PMS contract."
 summary: "Beyond the core Global Sum and QOF, a GP practice can earn a long tail of extra income from enhanced services: nationally directed schemes (DES) the practice can opt into, and locally commissioned services (LES) that vary by area and ICB. This guide explains what these streams are, who commissions them and how to weigh whether a service is worth signing up to, then covers the part competitors skip: how the income is taxed as ordinary practice trading profit and where the VAT line falls."
 schema: ""
 faqs:

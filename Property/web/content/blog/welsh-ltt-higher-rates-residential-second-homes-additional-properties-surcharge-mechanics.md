@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "Welsh LTT Higher Rates 2026/27: Mechanics for BTL Buyers"
 metaDescription: "Welsh LTT higher rates from 11 December 2024: 5% to 17% standalone band structure, £40k threshold, 36-month replacement window, spousal aggregation rules."
 altText: "Traditional Welsh village architecture with terraced houses, illustrating the residential property purchases that attract Welsh LTT higher rates"
-image: "https://images.pexels.com/photos/35860843/pexels-photo-35860843.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/35860843/pexels-photo-35860843.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Harrison Balmer"
   photographer_url: "https://www.pexels.com/@harrisonkbalmer"

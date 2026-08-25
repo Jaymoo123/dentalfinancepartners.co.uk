@@ -1,0 +1,281 @@
+{
+  "categories": {
+    "landlord_income_tax": {
+      "topics": [
+        {
+          "topic_title": "How is rental income taxed in the UK (rates, bands, what you pay)",
+          "search_intent": "informational",
+          "n_competitors": 17,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "rental-income-tax-uk-complete-guide-landlords",
+          "suggested_angle": "Core income-tax-on-rent intent fully owned by rental-income pillar + how-much-tax-rental-income-uk + calculator.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Tax deductions / allowable expenses for landlords",
+          "search_intent": "informational",
+          "n_competitors": 27,
+          "verdict": "already_covered",
+          "closest_our_page": "landlord-tax-deductions-uk-2026-complete-list",
+          "demand": [],
+          "suggested_angle": "Deductions list pillar + what-repairs-can-landlords-deduct already own this intent.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Crucial tax tips for landlords / recent tax changes hitting landlords",
+          "search_intent": "informational",
+          "n_competitors": 37,
+          "verdict": "already_covered",
+          "closest_our_page": "landlord-tax-changes-2026-complete-guide",
+          "demand": [],
+          "suggested_angle": "Tax-changes pillar covers the 'landlords bear the brunt' / tips-roundup angle; no separate listicle needed.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Marriage allowance for landlord couples",
+          "search_intent": "informational",
+          "n_competitors": 15,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision",
+          "suggested_angle": "Narrow landlord lens: when a basic-rate-spouse landlord couple can transfer 10% personal allowance, interaction with Section 24 tax credit and rental income splitting; eligibility checker framing. NOT a generic marriage-allowance explainer.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Do landlords need to file / be taxed on furnished holiday lets and short-term (vacation) rentals",
+          "search_intent": "informational",
+          "n_competitors": 10,
+          "verdict": "already_covered",
+          "closest_our_page": "airbnb-tax-uk-short-term-rental-income-taxed",
+          "demand": [],
+          "suggested_angle": "Airbnb/short-term + serviced-accommodation + FHL-abolition pages own the UK vacation-rental tax intent (US 'vacation rental' framing is off-mission noise).",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Income-tax threshold freeze / fiscal drag impact on landlords",
+          "search_intent": "informational",
+          "n_competitors": 30,
+          "verdict": "expand",
+          "demand": [],
+          "closest_our_page": "section-24-personal-allowance-60-percent-tax-rate-landlords",
+          "suggested_angle": "Most of this core is generic political commentary (drop), but 'threshold freeze 2028-31 pushes landlords into higher rate' is a real landlord angle; fold into the existing 60% trap / higher-rate-threshold Section 24 pages rather than a standalone post.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Claiming capital allowances to maximise tax relief",
+          "search_intent": "informational",
+          "n_competitors": 13,
+          "verdict": "already_covered",
+          "closest_our_page": "capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework",
+          "demand": [],
+          "suggested_angle": "Deep capital-allowances pillar + AIA + integral-features + commercial pages saturate this; the generic 'maximise tax relief' angle is business-wide, not landlord-specific.",
+          "priority": "none"
+        }
+      ],
+      "counts": {
+        "net_new": 1,
+        "expand": 1,
+        "already_covered": 5,
+        "off_mission_dropped": 20
+      }
+    },
+    "mtd_records_software": {
+      "topics": [
+        {
+          "topic_title": "Making Tax Digital for Income Tax (ITSA) — landlord readiness overview",
+          "search_intent": "informational",
+          "n_competitors": 96,
+          "verdict": "already_covered",
+          "closest_our_page": "mtd-itsa-overview-six-changes-residential-landlords",
+          "demand": [
+            {"query": "mtd for property income", "imp": 24},
+            {"query": "landlord mtd", "imp": 9},
+            {"query": "mtd rental income", "imp": 7}
+          ],
+          "suggested_angle": "30+ MTD-ITSA pages already own the landlord MTD-readiness cluster; the broadest 'what is MTD' intent is the overview pillar.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "MTD ITSA thresholds and registration for landlords",
+          "search_intent": "transactional",
+          "n_competitors": 31,
+          "verdict": "already_covered",
+          "closest_our_page": "how-to-register-mtd-landlord-step-by-step-guide",
+          "demand": [
+            {"query": "mtd thresholds", "imp": 85},
+            {"query": "mtd registration", "imp": 45},
+            {"query": "mtd for property income below £20000", "imp": 9},
+            {"query": "mtd thresholds for landlords", "imp": 6},
+            {"query": "mtd 20000 threshold 2028", "imp": 6}
+          ],
+          "suggested_angle": "Register guide + qualifying-income-test + jointly-owned-threshold-split + threshold-exemptions pages cover thresholds & registration; high demand but well served. Consider a single canonical 'MTD thresholds 2026/27/28 timeline' refresh if the overview lacks the year-by-year £50k/£30k/£20k table.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Best MTD-compatible software for landlords (and free options)",
+          "search_intent": "commercial",
+          "n_competitors": 8,
+          "verdict": "already_covered",
+          "closest_our_page": "best-mtd-software-landlords-2026",
+          "demand": [
+            {"query": "mtd landlord software", "imp": 15},
+            {"query": "best mtd software for landlords", "imp": 6},
+            {"query": "best free mtd software for landlords", "imp": 9},
+            {"query": "xero mtd for landlords", "imp": 8},
+            {"query": "free mtd tax software", "imp": 4}
+          ],
+          "suggested_angle": "best-mtd-software + free-vs-paid + choosing-software-by-scenario-decision-tree + property-accounting-software already own software intent.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "MTD for non-resident landlords — when does it apply",
+          "search_intent": "informational",
+          "n_competitors": 19,
+          "verdict": "expand",
+          "demand": [
+            {"query": "when is the first year mtd will apply for non residents landlords", "imp": 9},
+            {"query": "mtd and non resident landlords", "imp": 6},
+            {"query": "how to sign up for mtd in property and landlords scotland", "imp": 6}
+          ],
+          "suggested_angle": "Real unmet demand: non-resident-landlord MTD timing/sign-up is asked repeatedly but we have only non-resident SA filing + generic MTD. Add a non-resident-landlord MTD section/page covering NRL scheme interaction, qualifying income test on UK-sourced rent, and first mandation year.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Bookkeeping best practice / record-keeping for landlords",
+          "search_intent": "informational",
+          "n_competitors": 11,
+          "verdict": "already_covered",
+          "closest_our_page": "mtd-record-keeping-landlords-digital-requirements",
+          "demand": [],
+          "suggested_angle": "record-keeping-landlords-what-track + mtd-digital-records + accounting-spreadsheet-template cover bookkeeping basics; common-mistakes angle can be a section, not a new page.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Making Tax Digital for VAT",
+          "search_intent": "informational",
+          "n_competitors": 57,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "MTD-for-VAT is general business compliance; residential landlords are VAT-exempt. Drop (commercial-VAT landlords are a thin edge already served by landlord-vat pages).",
+          "priority": "none"
+        }
+      ],
+      "counts": {
+        "net_new": 0,
+        "expand": 1,
+        "already_covered": 4,
+        "off_mission_dropped": 4
+      }
+    },
+    "section_24_finance_costs": {
+      "topics": [
+        {
+          "topic_title": "Section 24 finance-cost restriction / mortgage interest relief for landlords",
+          "search_intent": "informational",
+          "n_competitors": 27,
+          "verdict": "already_covered",
+          "closest_our_page": "finance-costs-section-24-complete-guide",
+          "demand": [],
+          "suggested_angle": "The single core in this bundle is foreign (Indian Income Tax Act s115E/194C/206AB notice-response content) — entirely off-mission noise and dropped. Our own 25-page Section 24 cluster already saturates the genuine UK Section 24 / finance-cost intent.",
+          "priority": "none"
+        }
+      ],
+      "counts": {
+        "net_new": 0,
+        "expand": 0,
+        "already_covered": 1,
+        "off_mission_dropped": 1
+      }
+    },
+    "cost_value_worth_it": {
+      "topics": [
+        {
+          "topic_title": "Tax relief on mortgage arrangement / refinancing / product fees (rental property)",
+          "search_intent": "informational",
+          "n_competitors": 0,
+          "verdict": "already_covered",
+          "closest_our_page": "mortgage-arrangement-fees-deductible-landlord",
+          "demand": [
+            {"query": "tax relief on mortgage arrangement fees rental property", "imp": 6},
+            {"query": "tax deductible fees for loan refinancing", "imp": 6},
+            {"query": "are mortgage booking fees tax deductible hmrc", "imp": 3},
+            {"query": "are mortgage product fees tax deductible uk", "imp": 1}
+          ],
+          "suggested_angle": "mortgage-arrangement-fees-deductible-landlord directly answers fee-deductibility (incl. Section 24 finance-cost treatment of arrangement/booking/product fees). Demand exists but is served; ensure the page explicitly covers 'product fee' and 'booking fee' wording.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Deductibility of accountancy / landlord-accountant fees against rental income",
+          "search_intent": "informational",
+          "n_competitors": 0,
+          "verdict": "expand",
+          "demand": [
+            {"query": "deductions for accountancy fees rental income", "imp": 6},
+            {"query": "landlord accountant fees", "imp": 2},
+            {"query": "landlord accountant fees london", "imp": 2}
+          ],
+          "suggested_angle": "No page confirms accountancy fees are an allowable rental expense. Small but clear demand. Best handled as an FAQ/section inside landlord-tax-deductions list or the property-accountant-cost page rather than a standalone post.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Tenant fees ban / costs and fees of buying property",
+          "search_intent": "informational",
+          "n_competitors": 24,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Tenant-fees-ban is lettings regulation, costs-of-buying is conveyancing; neither is property-tax. Drop. Remaining cores (transfer pricing, P&L worksheets, city 'property-taxes-fees' programmatic spam, Colliers surveys) are all off-mission/noise.",
+          "priority": "none"
+        }
+      ],
+      "counts": {
+        "net_new": 0,
+        "expand": 1,
+        "already_covered": 1,
+        "off_mission_dropped": 7
+      }
+    },
+    "choosing_property_accountant": {
+      "topics": [
+        {
+          "topic_title": "Do I need an accountant as a landlord (when to hire one)",
+          "search_intent": "commercial",
+          "n_competitors": 16,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "how-to-choose-a-property-accountant",
+          "suggested_angle": "Bottom-of-funnel decision page: 'Do I need a property accountant as a landlord?' — DIY vs accountant by portfolio size, MTD trigger, incorporation/Section 24 complexity, cost-vs-saving. Pairs with how-much-cost + how-to-choose to complete the hiring journey. Strong commercial/lead-gen intent.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "How to choose a property accountant / what they do / cost",
+          "search_intent": "commercial",
+          "n_competitors": 16,
+          "verdict": "already_covered",
+          "closest_our_page": "how-to-choose-a-property-accountant",
+          "demand": [],
+          "suggested_angle": "how-to-choose + what-does-a-property-accountant-do + how-much-does-it-cost + 40 city pages own selection/cost intent.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Do I need an accountant for a limited company",
+          "search_intent": "commercial",
+          "n_competitors": 13,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "Generic limited-company accounting question, not landlord/property-SPV specific. Drop (property-SPV accountant need is the landlord-framed net-new above).",
+          "priority": "none"
+        }
+      ],
+      "counts": {
+        "net_new": 1,
+        "expand": 0,
+        "already_covered": 1,
+        "off_mission_dropped": 1
+      }
+    }
+  }
+}

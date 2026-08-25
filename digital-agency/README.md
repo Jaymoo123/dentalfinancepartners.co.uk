@@ -105,7 +105,7 @@ All content uses 2025/26 UK tax figures:
 - BADR: 14% (rising to 18% on 6 April 2026), £1M lifetime limit
 - CGT main rate (non-residential): 18% basic, 24% higher
 - Corporation tax: 19% small / 25% main, marginal relief £50k-£250k
-- Dividend tax: 8.75% / 33.75% / 39.35%
+- Dividend tax 2026/27: 10.75% / 35.75% / 39.35% (FA 2026 s.4)
 - Dividend allowance: £500
 - VAT threshold: £90,000 (from 1 April 2024)
 - MTD ITSA: April 2026 for £50k+, April 2027 for £30k+

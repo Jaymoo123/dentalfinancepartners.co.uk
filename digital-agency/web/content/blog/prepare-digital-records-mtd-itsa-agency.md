@@ -161,7 +161,7 @@ keyTakeaways:
 
 <h2>How Your Accountant Can Help</h2>
 
-<p>If you work with an specialist agency accountant like Agency Founder Finance, they handle the technical compliance. You handle the record-keeping. Under MTD ITSA, that division of labour becomes even more important.</p>
+<p>If you work with a specialist agency accountant like Agency Founder Finance, they handle the technical compliance. You handle the record-keeping. Under MTD ITSA, that division of labour becomes even more important.</p>
 
 <p>Your accountant can:</p>
 <ul>

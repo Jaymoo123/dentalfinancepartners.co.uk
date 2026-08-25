@@ -1,0 +1,43 @@
+{
+  "candidate_id": "hr-consultancy-leadmkt-2026-07",
+  "vertical": "hr consultancy",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.referr.co.uk/categories/professional-services/hr-services",
+      "excerpt": "Earn £50.00 per lead HR Consultant leads Clare is looking for HR Consulting leads. Earn £20.00 per lead HR and Payroll",
+      "metric": {
+        "price_gbp": 50
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.corporatewebpro.co.uk/hr-consultancy-digital-marketing-london.html",
+      "excerpt": "Cost -per-lead reduced by 35% while consultations ... Generate immediate HR consultancy leads with targeted Google Ads campaigns optimised for conversions. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://mileads.in/",
+      "excerpt": "Targeted leads for every business vertical with industry-specific filtering and scoring. HR Consultancy Leads. 500+ leads/month. Recruitment Agency Leads. 450+ ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "hr consultancy",
+    "hr consultancy digital marketing services london | near me",
+    "hr services lead requests",
+    "mi leads | verified business leads & lead generation services"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK hr consultancy providers already paying per lead",
+    "proof": "3 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

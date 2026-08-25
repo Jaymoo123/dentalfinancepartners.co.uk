@@ -5,10 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
-metaTitle: "Consequences for Register of Overseas Entities Non-Compliance"
+metaTitle: "Register of Overseas Entities: Non-Compliance Consequences"
 metaDescription: "HMLR disposition-block under LRA 2002 Sch 4A, civil penalty under operative SI, criminal offence under ECTEA 2022 s.8, plus s.34 compulsory-registration."
 altText: "A prime London commercial building owned by an overseas-incorporated company subject to the Register of Overseas Entities consequence stack"
-image: "https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit: "Photo by Pixabay on Pexels"
 h1: "Consequences for Register of Overseas Entities Non-Compliance: The Full UK Penalty, HMLR Disposition-Block, and Criminal Offence Stack"
 summary: "If your overseas company owns UK property and you miss the Register of Overseas Entities annual update deadline, the consequence you will feel first is not the financial penalty. It is the HM Land Registry disposition-block under Schedule 4A of the Land Registration Act 2002, which refuses to register any sale, lease over seven years, or legal mortgage by the company until compliance is restored. The civil financial penalty under the operative Penalties Regulations issued under the Economic Crime (Transparency and Enforcement) Act 2022 (ECTEA 2022), the criminal offence under ECTEA 2022 section 8 (against the entity and every officer in default), the compulsory-registration-notice power under ECTEA 2022 section 34, the false-statement offences under sections 15A, 15B, and 32A, and the reputational flag on the public Companies House register all operate in parallel on the same default. This page walks the consequence stack in order of operational severity, then sets out the four-to-ten-week restoration sequence."
@@ -188,7 +188,7 @@ editorialNote: "MW2 Bucket B B13: consequences-led entry-point for the bare quer
 <li><a href="https://www.legislation.gov.uk/ukpga/2002/9/schedule/4A" rel="nofollow">Land Registration Act 2002 Schedule 4A (inserted by ECTEA 2022 Sch 3)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2023/56/contents" rel="nofollow">Economic Crime and Corporate Transparency Act 2023 (contents)</a></li>
 <li><a href="https://www.legislation.gov.uk/uksi/2022/725/contents" rel="nofollow">Register of Overseas Entities (Verification and Provision of Information) Regulations 2022 (SI 2022/725)</a></li>
-<li><a href="https://www.gov.uk/government/publications/register-of-overseas-entities-companies-house-guidance" rel="nofollow">Companies House guidance on the Register of Overseas Entities</a></li>
+<li><a href="https://www.gov.uk/government/collections/register-of-overseas-entities" rel="nofollow">Companies House guidance on the Register of Overseas Entities</a></li>
 <li><a href="https://changestoukcompanylaw.campaign.gov.uk/" rel="nofollow">Companies House Changes to UK Company Law campaign page</a></li>
 <li><a href="https://find-and-update.company-information.service.gov.uk/" rel="nofollow">Companies House Find and update company information service</a></li>
 </ul>

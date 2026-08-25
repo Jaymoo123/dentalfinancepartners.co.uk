@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Financial Planning 2026/27: Pension, Tax & Protection"
-metaDescription: "GP financial planning for 2026/27: NHS pension annual allowance and taper, profit extraction, protection and retirement. High-level guide for partners, salaried GPs and locums."
+metaDescription: "GP financial planning for 2026/27: NHS pension allowance and taper, profit extraction, protection and retirement for partners, salaried GPs and locums."
 altText: "UK GP reviewing financial planning documents and NHS pension statements"
 image: ""
 h1: "GP Financial Planning: A Complete Guide for UK General Practitioners"
+keyTakeaways:
+- "The standard NHS pension annual allowance is £60,000 for 2026/27, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) to a £10,000 floor."
+- "For the defined-benefit NHS scheme the annual allowance measures the growth in your benefits (the pension input amount), not the contributions you paid, so a good profit year can trigger a charge."
+- "Business mileage between sites is claimable at the HMRC approved rate of 55p per mile for the first 10,000 miles in 2026/27 (up from 45p on 6 April 2026), then 25p."
+- "NHS GP goodwill cannot be sold, prohibited since 1 April 2004 and currently under SI 2019/251, so a partner's exit returns their capital account and asset share rather than selling goodwill."
+- "Business Asset Disposal Relief is 18% for disposals on or after 6 April 2026 (14% from 6 April 2025, 10% before) and applies only to a genuine private-practice disposal, never the NHS practice."
 summary: "GP financial planning means joining up the NHS pension, your practice or locum income, protection and retirement into one plan. This 2026/27 guide covers the priorities for partners, salaried GPs and locums, and links to the tax deep-dives for the detail."
 schema: ""
 faqs:

@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "Medical Accounting Services for Doctors UK | Overview"
-metaDescription: "What specialist medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, for 2026/27."
+metaDescription: "What medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, 2026/27."
 altText: "Specialist medical accountant reviewing NHS pension and partnership tax figures with a doctor"
 image: ""
 h1: "Medical Accounting Services for Doctors: A Complete Overview"
+keyTakeaways:
+- "NHS GP goodwill cannot be sold, a prohibition in force since 1 April 2004 and currently under SI 2019/251, so the sell-your-goodwill-and-claim-relief route does not apply to an NHS practice."
+- "For 2025/26 the NHS Pension annual allowance is £60,000, and the tapered allowance bites where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 over to a £10,000 floor."
+- "Dividend tax rises from 8.75% and 33.75% to 10.75% ordinary and 35.75% upper from 6 April 2026, with the additional rate staying 39.35% and a £500 dividend allowance."
+- "HMRC's approved mileage rate rose from 45p to 55p for the first 10,000 business miles on 6 April 2026, then 25p above that."
+- "Making Tax Digital for Income Tax begins on 6 April 2026 for sole-trader and landlord income over £50,000, catching most full-time locums and unincorporated private GPs."
 summary: "An overview of the accounting services UK doctors, GPs and consultants actually need, from NHS pension annual allowance work to partnership tax, locum IR35 and private income, with the 2026/27 figures that matter and links to the right specialist guide for your situation."
 schema: ""
 faqs:

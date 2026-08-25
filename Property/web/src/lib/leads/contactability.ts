@@ -1,6 +1,6 @@
 /**
  * The contactability gate: the rule that decides whether a lead is genuinely
- * reachable AND has actively responded, so it is safe to hand to DJH. This is
+ * reachable AND has actively responded, so it is safe to hand to the receiving partner firm. This is
  * the direct fix for "only 3 of 9 were contactable".
  *
  * Rule table (strict, per owner decision):
@@ -16,7 +16,7 @@
  *
  *   An email reply proves engagement but NOT that the phone is callable. It is
  *   treated exactly like a one-tap confirm: qualifying only when the stored phone
- *   is not known-bad, so DJH can still reach the lead by phone.
+ *   is not known-bad, so the partner firm can still reach the lead by phone.
  *
  *   A lead with a known-bad phone who only confirms/books/email-replies is held
  *   for manual review rather than auto-forwarded.
@@ -28,10 +28,15 @@
 
 import { adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
-import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
+import { mirrorOptOutToSiblings } from "@accounting-network/web-shared/lead-nurture/opt-out";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadTo } from "@/lib/lead-routing";
 import { sendContactableHandoff, type HandoffResult } from "./handoff";
+import { botArmed } from "@/lib/telegram";
+import { isBotPaused } from "./nurture-control";
+import { ensureCaseTier } from "./case-tier";
+import { notifyLeadVerified, notifySuppliedLeadResponded } from "./bot-notify";
+import { isRawSupplied } from "./offer-send";
 
 type EventRow = { event_type: string; channel: string | null; ts?: string | null };
 type VerRow = { phone_status: string | null };
@@ -88,7 +93,7 @@ export async function evaluateContactability(leadId: string): Promise<Contactabi
   const responded = repliedViaPhone || repliedViaEmail || confirmed || booked;
 
   const phoneStatus = verRes.data[0]?.phone_status ?? null;
-  // 'invalid' and 'voip' are both not-callable-by-DJH: a booking/confirm on one
+  // 'invalid' and 'voip' both mean the partner firm cannot call: a booking/confirm on one
   // is held for manual review. A live SMS/WhatsApp reply still proves the number.
   const phoneKnownBad = phoneStatus === "invalid" || phoneStatus === "voip";
   const phoneGood = phoneStatus === "valid_mobile" || phoneStatus === "valid_landline";
@@ -133,11 +138,14 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
     // lead promoted while still in detail-capture is halted too. Aux sequences
     // (booking_reminder:*, abandoned_booking) are intentionally left running, since a
     // now-contactable lead who booked still wants their booking reminder.
+    // Suffix match, not this site's literal names: the shared Twilio number lands
+    // every site's SMS replies here, so a sibling lead promoted by this route needs
+    // ITS chase (<source>_contactability / <source>_detail_capture) halted too.
     await adminUpdate(
       "lead_nurture_state",
       {
         lead_id: `eq.${leadId}`,
-        sequence: `in.(${LEAD_SEQUENCE_NAMES.contactability},${LEAD_SEQUENCE_NAMES.detail_capture})`,
+        or: "(sequence.like.*_contactability,sequence.like.*_detail_capture)",
       },
       { status: "contactable", next_action_at: null, updated_at: nowIso },
     );
@@ -149,21 +157,45 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       { id: `eq.${leadId}`, status: "in.(new,nurturing)" },
       { status: "contactable" },
     );
+    // A failed WRITE is not "already promoted": before 2026-08-15 both returned
+    // alreadyPromoted:true, so a lost promotion looked like a duplicate and
+    // never retried. On !ok the lead keeps status new/nurturing, so the next
+    // evaluation retries the flip naturally.
+    if (!flip.ok) {
+      console.error(`[contactability] promote flip failed for ${leadId} (${flip.status})`);
+      return { promoted: false, alreadyPromoted: false, reason: "db-error" };
+    }
     if (flip.data.length === 0) {
       return { promoted: false, alreadyPromoted: true, reason: verdict.reason };
+    }
+
+    // Telegram lead-ops ping (additive, never load-bearing): the handoff email
+    // below still fires regardless and carries the "Offer to buyers" link, so
+    // a Telegram failure costs nothing but convenience. Best-effort by design.
+    if (botArmed()) {
+      try {
+        if (!(await isBotPaused())) {
+          const grade = await ensureCaseTier(leadId);
+          if (grade) await notifyLeadVerified(leadId, grade);
+        }
+      } catch (err) {
+        console.error("[contactability] bot verify ping failed (handoff email still sent)", err);
+      }
     }
 
     // Fire the handoff first; the audit event is recorded only once we know the outcome.
     const handoff = await sendContactableHandoff(leadId, verdict.reason);
 
-    if (handoff.sent === true || handoff.skipped) {
+    if (handoff.sent === true || (handoff.skipped && handoff.skipped !== "db-error")) {
       // Sent successfully, or a known/expected skip (test, no-resend, no-lead):
-      // record the standard handed-off event.
+      // record the standard handed-off event. A "db-error" skip is NOT expected
+      // (the leads read failed, the email was never built) and falls through to
+      // the failure branch so the handoff is retried and the operator alerted.
       await recordLeadContactEvent(leadId, "handed_off", "system", { reason: verdict.reason });
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
-      // it happens when the operator clicks "I have forwarded this to DJH" in the
+      // it happens when the operator clicks "I have forwarded this to the partner firm" in the
       // handoff email (POST /api/leads/forwarded/[token]), so 'forwarded' means a
-      // real DJH hand-over, not merely that our brief email was delivered.
+      // real partner hand-over, not merely that our brief email was delivered.
     } else {
       // Real send failure after retries: audit it, then alert the operator.
       // leads.status remains 'contactable' so the handoff can be re-attempted later.
@@ -195,8 +227,8 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
             from: getFromAddress(),
             to: handoff.to,
             subject: `Handoff email failed: ${alertName}`,
-            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the READY-FOR-DJH handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
-            text: `${alertName} has passed the contactability gate (status: contactable) but the READY-FOR-DJH handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
+            html: `<p><strong>${safeAlertName}</strong> has passed the contactability gate and their status is now <strong>contactable</strong>, but the handoff email did not send after 3 attempts.</p><p>Please check the console for this lead and follow up manually. The lead has not been lost.</p><p>Failure reason: ${safeReason}</p>`,
+            text: `${alertName} has passed the contactability gate (status: contactable) but the handoff email failed after 3 attempts. Please check the console and follow up manually. Failure reason: ${handoff.reason ?? "unknown"}`,
           });
         }
       } catch (alertErr) {
@@ -222,6 +254,18 @@ export async function recordResponseAndEvaluate(
   meta?: Record<string, unknown>,
 ): Promise<PromoteResult> {
   await recordLeadContactEvent(leadId, eventType, channel, meta);
+  // A raw-supplied lead responding is an FYI to the owner only: its status is
+  // 'forwarded' so the promote latch below is inert, and the raw buyer owns
+  // the relationship. Best-effort, never blocks the evaluation path.
+  if (botArmed()) {
+    try {
+      if (await isRawSupplied(leadId, { failClosed: false })) {
+        await notifySuppliedLeadResponded(leadId);
+      }
+    } catch (err) {
+      console.error("[contactability] supplied-lead response notice failed", err);
+    }
+  }
   // When a lead replies (any channel), flag the active nurture state for copy regeneration
   // so the AI copy layer can weave their reply into remaining touches.
   // Best-effort: errors are swallowed so a DB hiccup never blocks the contactability path.
@@ -262,7 +306,12 @@ export async function stopNurture(
     { status: "closed" },
   );
 
-  // Detect post-handoff opt-outs and alert the operator so DJH can be notified
+  // The person opted out, not the row: mirror onto every same-person sibling
+  // lead row, estate-wide. Shared implementation (web-shared/lead-nurture/opt-out)
+  // so every site's stopNurture behaves identically. Best-effort by contract.
+  await mirrorOptOutToSiblings(leadId, channel);
+
+  // Detect post-handoff opt-outs and alert the operator so the partner firm can be notified
   // of the objection within 2 working days, as required by the data-sharing agreement.
   // Wrapped entirely in try/catch so it can never throw out of this webhook path.
   try {
@@ -323,14 +372,14 @@ export async function stopNurture(
         subject: `Post-handoff opt-out: ${leadName}`,
         html:
           `<p><strong>${safeName}</strong> has opted out of further contact via ${channel} ` +
-          `AFTER their enquiry was forwarded to DJH.</p>` +
-          `<p>Under the data-sharing agreement, DJH must be notified of this objection ` +
-          `within 2 working days. Please contact DJH directly to inform them that this ` +
+          `AFTER their enquiry was forwarded to the partner firm.</p>` +
+          `<p>Under the data-sharing agreement, the partner firm must be notified of this objection ` +
+          `within 2 working days. Please contact the partner firm directly to inform them that this ` +
           `lead has withdrawn consent and must not be contacted further.</p>`,
         text:
           `${leadName} has opted out of further contact via ${channel} AFTER their enquiry ` +
-          `was forwarded to DJH. Under the data-sharing agreement, DJH must be notified of ` +
-          `this objection within 2 working days. Please contact DJH directly to inform them ` +
+          `was forwarded to the partner firm. Under the data-sharing agreement, the partner firm must be notified of ` +
+          `this objection within 2 working days. Please contact the partner firm directly to inform them ` +
           `that this lead has withdrawn consent and must not be contacted further.`,
       });
     }

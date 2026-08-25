@@ -1,11 +1,12 @@
 /**
  * Take-home pay calculator (PAYE employee).
  * Pure compute, no React, no window/document/fetch. TL-03 clean.
- * 2025/26 rates.
+ * 2026/27 income tax and NI rates (bands frozen, unchanged from 2025/26).
  *
- * Student loan thresholds are 2025/26 SLC values:
- * plan1=26,065, plan2=28,470, plan4=32,745.
- * Source: Student Loans Company thresholds effective 6 April 2025.
+ * Student loan thresholds are 2026/27 values:
+ * plan1=26,900, plan2=29,385, plan4=33,795, plan5=25,000 (held), pg=21,000 (held).
+ * Source: canonical rates module rolled to 2026/27 and primary-source verified
+ * (gov.uk) on 2026-06-30, recorded in docs/generalist/PARITY_PROGRAMME_HANDOVER.md.
  */
 
 const PERSONAL_ALLOWANCE = 12570;
@@ -21,12 +22,12 @@ const INCOME_ADDITIONAL = 0.45;
 
 export type StudentLoanPlan = "none" | "plan1" | "plan2" | "plan4" | "plan5" | "pg";
 
-/** 2025/26 SLC thresholds (effective 6 April 2025). */
+/** 2026/27 thresholds (effective 6 April 2026). */
 const SL_THRESHOLDS: Record<StudentLoanPlan, { threshold: number; rate: number }> = {
   none: { threshold: 0, rate: 0 },
-  plan1: { threshold: 26065, rate: 0.09 },
-  plan2: { threshold: 28470, rate: 0.09 },
-  plan4: { threshold: 32745, rate: 0.09 },
+  plan1: { threshold: 26900, rate: 0.09 },
+  plan2: { threshold: 29385, rate: 0.09 },
+  plan4: { threshold: 33795, rate: 0.09 },
   plan5: { threshold: 25000, rate: 0.09 },
   pg: { threshold: 21000, rate: 0.06 },
 };

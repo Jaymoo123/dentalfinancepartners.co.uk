@@ -7,7 +7,7 @@ import { getAllGuides } from "@/lib/solicitor-guides";
 import { buildBreadcrumbJsonLd, buildCollectionPage, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
-  title: `Pillar Guides for UK Solicitors and Law Firms | ${siteConfig.name}`,
+  title: `Pillar Guides for UK Solicitors and Law Firms`,
   description:
     "Long-form pillar guides on the decisions UK solicitor firms actually face. SRA Accounts Rules, partnership vs LLP, post-merger integration, PII, COFA, fee-share vs equity partner.",
   alternates: {

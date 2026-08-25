@@ -804,7 +804,8 @@ describe("inbound email route: prospect ack email", () => {
     expect(call.from).toMatch(/<.+@.+>/);
     expect(call.replyTo).toMatch(/@/);
     expect(call.html).toContain("Got your reply, thank you. That is everything we need.");
-    expect(call.text).toContain("One of our property tax specialists will call you");
+    // Partner-firm wording (2026-08): the operator introduces, the partner firm calls.
+    expect(call.text).toContain("The partner firm we introduce you to will call you");
     // Reply-only service email: no booking CTA button.
     expect(call.text).not.toContain("Pick a time");
     // House style: no em or en dashes anywhere in the copy.

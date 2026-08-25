@@ -1,21 +1,210 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
+import BookingPicker from "@/components/forms/BookingPicker";
+import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 
 export const metadata: Metadata = {
   title: "Thank you",
-  robots: { index: false, follow: false },
+  description: "Your enquiry has been received.",
+  robots: { index: false, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: `Thank you | ${siteConfig.name}`,
+    description: "Your enquiry has been received.",
+  },
 };
 
-export default function ThankYouPage() {
+const CheckIcon = () => (
+  <div className="mb-8 inline-block bg-neutral-900 p-6">
+    <svg
+      className="h-16 w-16 text-[var(--brand-primary)]"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+);
+
+export default async function ThankYouPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ confirmed?: string; bt?: string; optout?: string; rt?: string }>;
+}) {
+  const params = await searchParams;
+  const confirmed = params.confirmed === "1";
+  const optedOut = params.optout === "1";
+  // Signed booking token from the submit response: enables the inline native
+  // slot picker at the highest-intent moment, straight after the form.
+  const bookingToken = (params.bt ?? "").trim() || null;
+  const rawRt = params.rt ?? "";
+  const returnPath = isSafeReturnPath(rawRt) ? rawRt : null;
+  // The enhanced "we have just messaged you" copy is only truthful once nurture
+  // is armed. While dormant we must not tell people to watch for outreach that
+  // will never arrive, so we fall back to honest "we will be in touch" copy.
+  const nurtureArmed = ["1", "true", "yes"].includes(
+    (process.env.LEAD_NURTURE_ENABLED ?? "").trim().toLowerCase(),
+  );
+
+  if (optedOut) {
+    return (
+      <section className="bg-white py-20 sm:py-24">
+        <div className={`${siteContainerLg} text-center`}>
+          <div className="mx-auto max-w-2xl">
+            <CheckIcon />
+            <h1 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
+              You will not hear from us again about this enquiry
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+              We have stopped the reminders. If you change your mind, the contact form is always
+              open.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+              <Link href="/" className={btnPrimary}>
+                Back to home
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (confirmed) {
+    return (
+      <section className="bg-white py-20 sm:py-24">
+        <div className={`${siteContainerLg} text-center`}>
+          <div className="mx-auto max-w-2xl">
+            <CheckIcon />
+            <h1 className="text-4xl font-bold text-neutral-900 sm:text-5xl">Confirmed</h1>
+            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+              Thanks, that is confirmed. A specialist firm from our partner network will contact you
+              directly.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+              <Link href="/" className={btnPrimary}>
+                Back to home
+              </Link>
+              <Link href="/calculators" className={btnSecondary}>
+                Explore our seller calculators
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <main className="mx-auto max-w-2xl px-6 py-24 text-center">
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
-        Thanks, your enquiry is on its way.
-      </h1>
-      <p className="mt-4 text-neutral-600">We&apos;ll come back to you within 24 hours.</p>
-      <Link href="/" className="mt-8 inline-block font-medium underline">
-        Back to the homepage
-      </Link>
-    </main>
+    <section className="bg-white py-20 sm:py-24">
+      <div className={`${siteContainerLg} text-center`}>
+        <div className="mx-auto max-w-2xl">
+          <CheckIcon />
+          <h1 className="text-4xl font-bold text-neutral-900 sm:text-5xl">Thank you</h1>
+          {nurtureArmed ? (
+            <>
+              <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+                We have just sent you a message to arrange your free review call. Please check your
+                email and phone, and confirm to lock in your callback slot.
+              </p>
+              <p className="mt-4 text-base text-neutral-500">
+                A specialist firm from our partner network may contact you directly about your
+                enquiry. We aim to respond within 24 hours, usually same day.
+              </p>
+              <p className="mt-4 text-sm text-neutral-500">
+                Cannot see our email? Please check your spam or junk folder, and mark it as not spam
+                so our messages reach you.
+              </p>
+            </>
+          ) : (
+            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+              Your enquiry has been received. A specialist firm from our partner network may contact
+              you directly about your enquiry, within one working day, usually the same day. You can
+              also pick a callback time below.
+            </p>
+          )}
+
+          {/* Endowed progress: 3-step journey. Step 2 is "Details received"; the
+              live step is picking a callback window. */}
+          <ol className="mx-auto mt-8 flex max-w-xl flex-col gap-3 text-left sm:flex-row sm:items-center sm:justify-center sm:gap-6">
+            <li className="flex items-center gap-2">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-neutral-900">
+                <svg
+                  className="h-4 w-4 text-[var(--brand-primary)]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-sm font-semibold text-neutral-500">1. Enquiry received</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-neutral-900">
+                <svg
+                  className="h-4 w-4 text-[var(--brand-primary)]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-sm font-semibold text-neutral-500">2. Details received</span>
+            </li>
+            <li aria-current="step" className="flex items-center gap-2">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center border-2 border-[var(--brand-primary)] bg-white text-xs font-bold text-neutral-900">
+                3
+              </span>
+              <span className="text-sm font-bold text-neutral-900">3. Pick your callback time</span>
+            </li>
+          </ol>
+
+          {bookingToken ? (
+            <div className="mt-8 border border-neutral-200 bg-white p-3 text-left sm:p-8">
+              <p className="mb-6 text-center text-base font-semibold text-neutral-900">
+                Want to skip the back and forth? Pick a time for your call now.
+              </p>
+              <BookingPicker token={bookingToken} />
+            </div>
+          ) : (
+            <div className="mt-8">
+              <p className="mb-4 text-sm font-semibold text-neutral-600">
+                Ready to book a time that works for you?
+              </p>
+              <Link href="/contact" className={btnPrimary}>
+                Book your free review
+              </Link>
+            </div>
+          )}
+
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link href="/" className={btnSecondary}>
+              Back to home
+            </Link>
+            <Link href="/calculators" className={btnSecondary}>
+              Explore seller calculators
+            </Link>
+            {returnPath && (
+              <Link
+                href={returnPath}
+                data-cta="thankyou-return-article"
+                data-cta-placement="thank_you"
+                className={btnSecondary}
+              >
+                Back to the page you were reading
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

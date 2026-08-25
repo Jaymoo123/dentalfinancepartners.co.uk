@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "Cladding Remediation VAT UK: BSA 2022 Cost Waterfall"
 metaDescription: "VAT on cladding remediation: standard-rated 20% by default. BSA 2022 Sch 8 protects qualifying leaseholders from the VAT-inclusive cost. Worked waterfall."
 altText: "High-rise residential building with cladding remediation works in progress, the practical scenario engaging Building Safety Act 2022 Schedule 8 leaseholder cost protections"
-image: "https://images.pexels.com/photos/2137670/pexels-photo-2137670.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/2137670/pexels-photo-2137670.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit: "Photo by Quang Nguyen Vinh on Pexels"
 h1: "Cladding Remediation VAT: The Standard 20%, the Snagging Exception, and the Building Safety Act Waterfall"
 summary: "Despite frequent commentary suggesting otherwise, there is no general VAT zero-rate or reduced-rate for cladding remediation works on existing residential buildings. The default treatment is standard-rated at 20 percent. The only material exception is the narrow snagging rule in VAT Notice 708 paragraph 3.3.3 (remediation as continuation of the original new-build contract by the original contractor is zero-rated). What materially changed in 2022 is who bears the cost, not the VAT rate: the Building Safety Act 2022 Schedule 8 protects qualifying leaseholders from cladding remediation costs (the cladding carve-out at Sch 8 para 8 is absolute, no caps) and imposes a waterfall of liability starting with the developer. This page sets out the actual VAT position, the BSA 2022 leaseholder protections, the cost waterfall, and a worked example on a 14-storey residential block."
@@ -125,7 +125,7 @@ editorialNote: "Bucket A specialist page. The brief framing differentiator incor
 
 <p>For unprotected leaseholders (commercial leases, short residential tenancies, dwellings under 11 metres, leases granted after the qualifying date, leaseholders with portfolios above three properties), the remediation cost is recharged through the building service-charge mechanism under sections 18 to 30 of the Landlord and Tenant Act 1985. The standard service-charge framework applies.</p>
 
-<p>The cost must be reasonably incurred (s.19 LTA 1985). The s.20 consultation regime applies where the cost per dwelling exceeds £250: a notice of intention, a notice of estimates, and a response window for leaseholders. Failure to consult limits the recoverable amount to £250 per dwelling unless the FTT (Property Chamber) grants dispensation. Service-charge accounts must be transparent under s.21B and the standard demand requirements.</p>
+<p>The cost must be <a href="/blog/property-types-and-specialist-tax/service-charge-disputes-leaseholders">reasonably incurred</a> (s.19 LTA 1985). The s.20 consultation regime applies where the cost per dwelling exceeds £250: a notice of intention, a notice of estimates, and a response window for leaseholders. Failure to consult limits the recoverable amount to £250 per dwelling unless the FTT (Property Chamber) grants dispensation. Service-charge accounts must be transparent under s.21B and the standard demand requirements.</p>
 
 <p>The VAT element of the cost is generally irrecoverable by the leaseholder. A residential occupier is not VAT-registered and has no input-tax recovery. A buy-to-let landlord letting on AST is making exempt supplies under VATA 1994 Sch 9 Group 1 and again has no recovery. A commercial leaseholder using the unit for taxable supplies may recover the input VAT on its service-charge if the landlord issues a valid VAT invoice for the recharge, but most service-charge recharges in residential blocks are not issued in a VAT-recoverable form. Practitioners should review each leaseholder's position before assuming recovery.</p>
 
@@ -162,6 +162,6 @@ editorialNote: "Bucket A specialist page. The brief framing differentiator incor
 <li><a href="https://www.legislation.gov.uk/ukpga/2022/30/contents" rel="nofollow">Building Safety Act 2022 (full text)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2022/30/schedule/8" rel="nofollow">Building Safety Act 2022 Schedule 8 (leaseholder protections)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1985/70" rel="nofollow">Landlord and Tenant Act 1985 (service-charge reasonableness s.19 + s.20 consultation)</a></li>
-<li><a href="https://www.gov.uk/guidance/building-safety-fund" rel="nofollow">Government Building Safety Fund grant scheme</a></li>
-<li><a href="https://www.gov.uk/government/publications/responsible-actors-scheme-prospectus" rel="nofollow">Responsible Actors Scheme prospectus</a></li>
+<li><a href="https://www.gov.uk/guidance/leaseholder-and-resident-information-on-the-building-safety-fund" rel="nofollow">Government Building Safety Fund grant scheme</a></li>
+<li><a href="https://www.gov.uk/government/publications/responsible-actors-scheme/responsible-actors-scheme-key-features" rel="nofollow">Responsible Actors Scheme prospectus</a></li>
 </ul>

@@ -94,7 +94,7 @@ editorialNote: "Wave 8 Bucket A (A3). Post-window FIG-cliff planning companion t
 
 <aside>
 <p>Pre-LTR-threshold trust settlements are a one-time structural opportunity for new arrivals.</p>
-<p>Our team works the s.48ZA(2) excluded-property locking with the offshore trust deed drafting and the trustee tax-tracking obligations identified on the trust-side companion page.</p>
+<p>Our team works the s.48ZA(2) excluded-property locking with the offshore trust deed drafting and the trustees' tax-tracking obligations identified on the trust-side companion page.</p>
 </aside>
 
 <h2>Pre-cliff lever 3: foreign income acceleration</h2>

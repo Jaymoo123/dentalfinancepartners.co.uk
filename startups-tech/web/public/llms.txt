@@ -28,11 +28,14 @@ Founder Tax Partners is a UK accountancy practice focused exclusively on funded 
 - [Founder dividend vs salary calculator](https://www.foundertaxpartners.co.uk/calculators/founder-dividend-vs-salary-calculator): After-tax income comparison between salary and dividend extraction, including employer NIC at 15% above the £5,000 secondary threshold.
 - [EMI vs unapproved options calculator](https://www.foundertaxpartners.co.uk/calculators/emi-vs-unapproved-calculator): Tax cost at exercise and disposal: EMI (BADR at 18%, no NIC) versus unapproved options (income tax and NIC on the spread).
 - [R&D relief estimator](https://www.foundertaxpartners.co.uk/calculators/rd-relief-estimator): Estimated merged-scheme credit (20%) or ERIS benefit (86% deduction plus 14.5% payable credit) on qualifying R&D expenditure.
-- [Embed these calculators](https://www.foundertaxpartners.co.uk/embed): Free iframe embeds of the calculator tools for partner and adjacent sites.
 
 ## Original research
 
-- [UK Startup Formation Survival Index](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index): Cohort survival analysis of UK technology company formations by year and sector, built from Companies House bulk data.
+- [UK Tech-Funding Reliefs Index (SEIS/EIS)](https://www.foundertaxpartners.co.uk/research/uk-tech-funding-reliefs-index): EIS and SEIS company and funding statistics by sector and region, from HMRC official statistics (EIS from 1993-94, SEIS from 2012-13). Tech is the top sector for both schemes.
+- [R&D Tax Relief Usage Index](https://www.foundertaxpartners.co.uk/research/rd-tax-relief-index): Annual R&D tax credit claims, cost and qualifying expenditure by sector and region, from HMRC official statistics. Covers the post-clampdown claim collapse.
+- [UK Tech Startup Survival Curves](https://www.foundertaxpartners.co.uk/research/tech-startup-survival-index): Cohort survival by year after birth, tech vs all-industry baseline, from ONS Business Demography official statistics.
+- [UK Tech Formations Index](https://www.foundertaxpartners.co.uk/research/uk-tech-formations-index): Monthly new tech company formation trend and tax-year seasonality by SIC code, from Companies House official data.
+- [UK Startup Formation Survival Index](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index): Formation and register status of UK tech and software companies across eight SIC codes, from live Companies House Advanced Search API counts: active and dissolved companies on the register, annual formations, and quarterly churn. It is a register snapshot, not a cohort survival curve, and the page states that limit.
 
 ## Key facts (current UK startup and founder tax figures, 2026/27)
 
@@ -59,12 +62,11 @@ These figures are verified against primary sources (HMRC, legislation.gov.uk) as
 
 ## Blog categories
 
-- [R&D Tax Relief](https://www.foundertaxpartners.co.uk/blog/rd-tax-relief)
+- [R&D Tax Relief](https://www.foundertaxpartners.co.uk/blog/research-and-development)
 - [SEIS and EIS](https://www.foundertaxpartners.co.uk/blog/seis-and-eis)
 - [Share Schemes and EMI](https://www.foundertaxpartners.co.uk/blog/share-schemes-and-emi)
-- [Founder Tax and Extraction](https://www.foundertaxpartners.co.uk/blog/founder-tax-and-extraction)
-- [SaaS and Tech Finance](https://www.foundertaxpartners.co.uk/blog/saas-and-tech-finance)
 - [Startup Compliance](https://www.foundertaxpartners.co.uk/blog/startup-compliance)
+- [SaaS and Tech Finance](https://www.foundertaxpartners.co.uk/blog/saas-and-tech-finance)
 
 ## Key pages
 
@@ -72,7 +74,7 @@ These figures are verified against primary sources (HMRC, legislation.gov.uk) as
 - [Services](https://www.foundertaxpartners.co.uk/services)
 - [Who we help](https://www.foundertaxpartners.co.uk/for)
 - [Calculators](https://www.foundertaxpartners.co.uk/calculators)
-- [Research](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index)
+- [Research](https://www.foundertaxpartners.co.uk/research)
 - [Blog](https://www.foundertaxpartners.co.uk/blog)
 - [About](https://www.foundertaxpartners.co.uk/about)
 - [Contact](https://www.foundertaxpartners.co.uk/contact)

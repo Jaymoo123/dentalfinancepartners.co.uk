@@ -5,13 +5,13 @@ date: "2026-07-15"
 author: ""
 category: "Independent Examination and Audit"
 metaTitle: "Independent Examiner's Report: Example & What to Include"
-metaDescription: "What an independent examiner's report must contain, a worked example, who can sign it above £250,000, and how it differs from an audit report."
+metaDescription: "What an independent examiner's report must contain, a worked example, who can sign it above the qualified-examiner threshold, and how it differs from an audit report."
 h1: "The Independent Examiner's Report: Worked Example and What to Include"
 summary: "The independent examiner's report is the document the examiner attaches to your charity's accounts, confirming they have examined them and giving a negative-assurance conclusion. This post explains what the report must contain, walks through an illustrative example section by section, and sets out who can sign it."
 keyTakeaways:
-  - "An independent examination is required once a charity's gross income exceeds £25,000, unless the higher audit thresholds apply."
+  - "An independent examination is required once a charity's gross income exceeds £25,000 (£40,000 for financial years ending on or after 30 September 2026), unless the higher audit thresholds apply."
   - "The report is not a free-form letter; it contains prescribed statements covering the examiner's status, the basis of examination and a negative-assurance conclusion."
-  - "Above £250,000 gross income, the examiner must be a member of one of 13 bodies listed in the Charities Act; below that threshold, any suitably experienced independent person may examine."
+  - "Above £250,000 gross income (£500,000 for financial years ending on or after 30 September 2026), the examiner must be a member of one of 13 bodies listed in the Charities Act; below that threshold, any suitably experienced independent person may examine."
   - "The report provides negative assurance (nothing has come to the examiner's attention giving cause for concern), not the positive assurance given by an audit."
   - "The worked example here is illustrative only. The exact prescribed wording must be verified against the Charity Commission's CC32 guidance before the report is signed and filed."
 faqs:
@@ -22,7 +22,7 @@ faqs:
   - question: "What must the report include?"
     answer: "The report must state: the examiner's name and that they are independent of the charity; the respective responsibilities of the trustees and the examiner; the basis on which the examination was carried out; the negative-assurance conclusion; and any matters the examiner is required to draw to the trustees' attention or, in serious cases, report to the Charity Commission."
   - question: "Who signs the independent examiner's report?"
-    answer: "The independent examiner signs it. Where gross income exceeds £250,000, the examiner must be a member of one of 13 bodies listed in the Charities Act, including ICAEW, ACCA, ICAS, AAT and CIMA. At or below £250,000, any suitably experienced independent person may sign."
+    answer: "The independent examiner signs it. Where gross income exceeds £250,000 (£500,000 for financial years ending on or after 30 September 2026), the examiner must be a member of one of 13 bodies listed in the Charities Act, including ICAEW, ACCA, ICAS, AAT and CIMA. Below that threshold, any suitably experienced independent person may sign."
   - question: "Does the report go to the Charity Commission?"
     answer: "The report forms part of the charity's accounts, which are submitted with the annual return when gross income exceeds £25,000. The report itself is not sent separately to the Commission; it accompanies the accounts package. If the examiner has a serious concern, they have a separate statutory power to report directly to the Commission."
   - question: "How is it different from an audit report?"
@@ -57,7 +57,7 @@ faqs:
   <tbody>
     <tr>
       <td>Examiner's name and status</td>
-      <td>The full name of the examiner and, where gross income exceeds £250,000, the professional body they belong to. The report must make clear the examiner is independent of the charity.</td>
+      <td>The full name of the examiner and, where gross income exceeds £250,000 (£500,000 for financial years ending on or after 30 Sep 2026), the professional body they belong to. The report must make clear the examiner is independent of the charity.</td>
       <td>Omitting the professional-body membership where income is above £250,000, or not stating the basis of independence.</td>
     </tr>
     <tr>
@@ -98,7 +98,7 @@ faqs:
     <strong>Heading and addressee.</strong> The report is headed "Independent Examiner's Report to the Trustees of [Full Registered Name of Charity] (Charity Registration Number [XXXXXX])". It is addressed to the trustees of the charity, not to the Charity Commission or to third parties.
   </li>
   <li>
-    <strong>Examiner's independence and status.</strong> A statement such as: "I report on the accounts of [Charity Name] for the year ended [Date], which are set out on pages [X] to [Y]. I am independent of the charity [and I confirm that I am a member of [Professional Body], which is one of the bodies listed in the Charities Act 2011, this sentence is required where gross income exceeds £250,000; omit it at or below that threshold where no listed-body membership is needed]."
+    <strong>Examiner's independence and status.</strong> A statement such as: "I report on the accounts of [Charity Name] for the year ended [Date], which are set out on pages [X] to [Y]. I am independent of the charity [and I confirm that I am a member of [Professional Body], which is one of the bodies listed in the Charities Act 2011, this sentence is required where gross income exceeds £250,000 (£500,000 for financial years ending on or after 30 September 2026); omit it at or below that threshold where no listed-body membership is needed]."
   </li>
   <li>
     <strong>Respective responsibilities.</strong> A statement along the lines of: "The charity's trustees are responsible for the preparation of the accounts. I have been appointed as independent examiner to examine the accounts and to report in accordance with the Charities Act 2011." The exact wording required by the Commission's directions should be taken from CC32.
@@ -120,10 +120,10 @@ faqs:
 <p>The report is placed immediately after the trustee annual report and before the accounts pages. It does not go to the Charity Commission separately; it forms part of the accounts package submitted with the <a href="/blog/trustee-compliance/charity-commission-annual-return-guide">annual return</a> when income exceeds £25,000.</p>
 
 <h2>Who can sign the report</h2>
-<p>At or below <strong>£250,000 gross income</strong>, any person who is independent of the charity and has the requisite ability and practical experience to examine the accounts may act as examiner. They do not need to be a member of a professional body. "Independent" means not a trustee, employee or connected person.</p>
+<p>At or below the qualified-examiner threshold of <strong>£250,000 gross income</strong> (£500,000 for financial years ending on or after 30 September 2026), any person who is independent of the charity and has the requisite ability and practical experience to examine the accounts may act as examiner. They do not need to be a member of a professional body. "Independent" means not a trustee, employee or connected person.</p>
 <p>Above <strong>£250,000 gross income</strong>, the examiner must be a member of one of the 13 bodies listed in the <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">Charities Act</a>: ICAEW, ICAS, ICAI, ACCA, AAPA, AAT, AIA, CIMA, the Chartered Governance Institute, CIPFA, ACIE, IFA and CPAA. A person who is experienced but not a member of one of these bodies cannot examine a charity above this threshold, even if they are otherwise qualified.</p>
 <p>The <a href="/blog/independent-examination-and-audit/who-can-do-an-independent-examination">guide to who can do an independent examination</a> covers eligibility in full, including what "requisite ability and practical experience" means in practice for smaller charities.</p>
-<p>Note that the audit thresholds above the IE band (income over £1 million, or income over £250,000 with gross assets over £3.26 million) mean independent examination is not available at all at that scale. Our <a href="/services/independent-examination">independent examination service</a> covers the full range from the £25,000 gate up to the audit threshold.</p>
+<p>Note that the audit thresholds above the IE band (income over £1 million, or income over £250,000 with gross assets over £3.26 million; £1.5 million, £500,000 and £5 million for financial years ending on or after 30 September 2026) mean independent examination is not available at all at that scale. Our <a href="/services/independent-examination">independent examination service</a> covers the full range from the examination gate up to the audit threshold.</p>
 
 <h2>How the report differs from an audit report</h2>
 <p>The fundamental difference is the type of assurance given.</p>
@@ -157,7 +157,7 @@ faqs:
 <p>The report must state: the examiner's name and that they are independent of the charity; the respective responsibilities of the trustees and the examiner; the basis on which the examination was carried out (by reference to the CC32 directions); the negative-assurance conclusion; and any matters the examiner is required to draw to the trustees' attention.</p>
 
 <h3>Who signs the independent examiner's report?</h3>
-<p>The independent examiner signs it. Where gross income exceeds <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">£250,000</a>, the examiner must be a member of one of 13 bodies listed in the Charities Act, including ICAEW, ACCA, ICAS, AAT and CIMA. At or below £250,000, any suitably experienced independent person may sign.</p>
+<p>The independent examiner signs it. Where gross income exceeds <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">£250,000</a> (£500,000 for financial years ending on or after 30 September 2026), the examiner must be a member of one of 13 bodies listed in the Charities Act, including ICAEW, ACCA, ICAS, AAT and CIMA. Below that threshold, any suitably experienced independent person may sign.</p>
 
 <h3>Does the report go to the Charity Commission?</h3>
 <p>The report forms part of the charity's accounts, which are submitted with the annual return when gross income exceeds £25,000. The report is not sent separately to the Commission; it accompanies the accounts package. If the examiner identifies a serious concern, they have a separate statutory power to report directly to the Commission under the Charities Act.</p>

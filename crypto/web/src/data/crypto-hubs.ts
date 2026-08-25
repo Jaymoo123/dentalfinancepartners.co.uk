@@ -382,7 +382,7 @@ export const cryptoHubs: CryptoHub[] = [
       },
       {
         title: "Paying staff in tokens triggers PAYE and NIC",
-        body: "Where tokens paid to employees are readily convertible assets (broadly, where they can be exchanged for cash), they are treated as earnings. PAYE and NIC apply. Employer Class 1 NIC is charged at 15% above the £5,000 secondary threshold from 6 April 2025. The previous rate of 13.8% above £9,100 is stale and must not be used.",
+        body: "Where tokens paid to employees are readily convertible assets (broadly, where they can be exchanged for cash), they are treated as earnings. PAYE and NIC apply. Employer Class 1 NIC is charged at 15% above the £5,000 secondary threshold from 6 April 2025. The previous rate of 13.8% above £9,100 applied only up to 5 April 2025.",
       },
       {
         title: "CARF: company accounts are now visible",

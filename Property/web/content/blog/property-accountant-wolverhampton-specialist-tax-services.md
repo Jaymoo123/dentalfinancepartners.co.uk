@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Wolverhampton | BTL & Landlord Specialists"
+metaTitle: "Property Accountant Wolverhampton | BTL & Landlord Experts"
 metaDescription: "Specialist property accountants for Wolverhampton landlords. Section 24 modelling, incorporation, MTD prep, HMO and selective licensing. Free consultation."
 altText: "Wolverhampton property accountant reviewing landlord tax documents with calculator and property portfolio files"
 image: ""
@@ -67,7 +67,7 @@ faqs:
 <p>From 6 April 2027, rental profit faces separate rates of 22% basic, 42% higher, and 47% additional, 2 percentage points above the equivalent general income tax bands. For a higher-rate Wolverhampton landlord with £25,000 of rental profit, the rate change adds roughly £500 to the annual tax bill before any behavioural response.</p>
 
 <h3>HMO licensing and selective licensing in Wolverhampton</h3>
-<p>Wolverhampton City Council operates both national mandatory HMO licensing (for any HMO with 5+ occupants forming 2+ households) and selective licensing schemes in defined wards. Selective licensing fees typically sit at £400-£800 per five-year licence; mandatory HMO licences sit higher at £700-£1,200. Both are deductible. The bigger risk is buying a property intended for HMO conversion in a ward where additional planning consent is required (Article 4 directions, where they apply, remove permitted development rights for C3 to C4 conversion). Check the council's planning portal at <a href="https://www.wolverhampton.gov.uk" target="_blank" rel="noopener noreferrer">wolverhampton.gov.uk</a> before exchange.</p>
+<p>Wolverhampton City Council operates both <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">national mandatory HMO licensing</a> (for any HMO with 5+ occupants forming 2+ households) and selective licensing schemes in defined wards. Selective licensing fees typically sit at £400-£800 per five-year licence; mandatory HMO licences sit higher at £700-£1,200. Both are deductible. The bigger risk is buying a property intended for HMO conversion in a ward where additional planning consent is required (Article 4 directions, where they apply, remove permitted development rights for C3 to C4 conversion). Check the council's planning portal at <a href="https://www.wolverhampton.gov.uk" target="_blank" rel="noopener noreferrer">wolverhampton.gov.uk</a> before exchange.</p>
 
 <h2>Worked Example: Section 24 Impact on a Wolverhampton BTL Portfolio</h2>
 

@@ -1,0 +1,43 @@
+{
+  "candidate_id": "private-tutoring-leadmkt-2026-07",
+  "vertical": "private tutoring",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://devweboic.com/top-10-lead-generation-strategies-for-private-tutors/",
+      "excerpt": "24 Dec 2025 — This blog is all about effective lead generation strategies that are specifically for tutors and will assist them in increasing enrollments, ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pay-per-lead.co.uk/",
+      "excerpt": "",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/AskMarketing/comments/1720anx/cost_per_lead/",
+      "excerpt": "Hey guys,\n\nI was wondering if you guys knew what the average cost per lead was (roughly) for coaching/tutoring students?\n\nThank you!",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "cost per lead? : r/askmarketing",
+    "pay per lead",
+    "private tutoring",
+    "top 10 lead generation strategies for private tutors"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK private tutoring providers already paying per lead",
+    "proof": "3 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

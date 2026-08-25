@@ -40,6 +40,26 @@ const nextConfig: NextConfig = {
         destination: "/blog/practice-succession-sale",
         permanent: true,
       },
+      // 2026-07-23: 8 posts carried canonical URLs under the never-live
+      // "vat-and-compliance" category path (GSC picked up 40 impressions on
+      // it). Canonicals corrected to /blog/vat-compliance/; 301 the stray
+      // path so any indexed variants consolidate.
+      {
+        source: "/blog/vat-and-compliance/:slug*",
+        destination: "/blog/vat-compliance/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/blog/vat-and-compliance",
+        destination: "/blog/vat-compliance",
+        permanent: true,
+      },
+      // 2026-08-06: packages/pricing experiment removed; /pricing page deleted.
+      {
+        source: "/pricing",
+        destination: "/services",
+        permanent: true,
+      },
     ];
   },
   async headers() {

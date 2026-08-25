@@ -44,7 +44,7 @@ keyTakeaways:
 
 <h2>Why Your Agency Needs to Audit Contractor Engagements for IR35 Compliance</h2>
 
-<p>The off-payroll working rules (commonly called IR35) shifted liability from the contractor to the client and fee-paying agency in April 2021 for medium and large organisations. Your agency counts if it meets two of these three criteria: annual turnover over £10.2 million, balance sheet over £5.1 million, or more than 50 employees.</p>
+<p>The off-payroll working rules (commonly called IR35) shifted liability from the contractor to the client and fee-paying agency in April 2021 for medium and large organisations. Your agency counts if it meets two of these three criteria: annual turnover over £15 million, balance sheet over £7.5 million, or more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2 million and £5.1 million). Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>Most agencies with 10+ people and £1m+ revenue will be medium or large. Many smaller agencies are too but don't realise it. If you're caught, you are responsible for determining the contractor's employment status and issuing a Status Determination Statement (SDS) before the engagement starts. You are also liable for any unpaid tax and National Insurance if HMRC later decides the determination was wrong.</p>
 

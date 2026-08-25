@@ -1,12 +1,12 @@
 ---
-title: Can My Company Claim Enhanced Capital Allowances for Electric Vehicle Charging Points Installed in 2025/26?
+title: Can My Company Claim Enhanced Capital Allowances for Electric Vehicle Charging Points Installed in 2026/27?
 slug: enhanced-capital-allowances-ev-charging-points-2025-26
 canonical: https://www.hollowaydavies.co.uk/blog/corporation-tax/enhanced-capital-allowances-ev-charging-points-2025-26
-date: '2026-05-17'
+date: '2026-07-28'
 generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: Corporation Tax
-metaTitle: EV Charging Point Capital Allowances 2025/26 Explained
+metaTitle: EV Charging Point Capital Allowances 2026/27 Explained
 metaDescription: Install an EV charging point and claim 100% tax relief in the year of purchase through full expensing or the first year allowance.
 altText: Electric vehicle charging point installed outside a UK office building, with a company car plugged in and charging
 image: /blog/enhanced-capital-allowances-ev-charging-points-2025-26.jpg
@@ -15,18 +15,18 @@ imageCredit:
   photographerUrl: https://www.pexels.com/@vlad-deep-29415806
   sourceUrl: https://www.pexels.com/photo/magnifying-glass-and-a-document-10341357/
   source: Pexels
-h1: Can My Company Claim Enhanced Capital Allowances for Electric Vehicle Charging Points Installed in 2025/26?
-summary: Electric vehicle charging points installed by your company can qualify for 100% first year allowances or full expensing in 2025/26. The rules depend on whether you install them for staff, customers, or as part of a property development. We explain exactly what qualifies and how to claim.
+h1: Can My Company Claim Enhanced Capital Allowances for Electric Vehicle Charging Points Installed in 2026/27?
+summary: Electric vehicle charging points installed by your company can qualify for 100% first year allowances or full expensing in 2026/27. The rules depend on whether you install them for staff, customers, or as part of a property development. We explain exactly what qualifies and how to claim.
 schema: ""
 faqs:
-- question: Do EV charging points qualify for the 100% first year allowance in 2025/26?
+- question: Do EV charging points qualify for the 100% first year allowance in 2026/27?
   answer: Yes. Electric vehicle charging points are designated as environmentally beneficial technology and qualify for a 100% first year allowance. This applies to both limited companies (via full expensing) and unincorporated businesses (via the specific 100% FYA). The charger must be new and used for business purposes.
 - question: Can I claim capital allowances on a charging point installed at my home for my company car?
   answer: Yes, provided the company owns the charger and it is used for business purposes. If the company pays for the charger and it is installed at your home for charging a company car, the company can claim full expensing or the 100% FYA. If you pay personally and the company does not reimburse you, no claim is available.
 - question: What is the difference between full expensing and the 100% first year allowance for EV chargers?
   answer: Full expensing is available only to limited companies and applies to all new main-rate plant and machinery, including EV chargers. The 100% first year allowance is available to all businesses (including sole traders and partnerships) but only for designated environmentally beneficial assets. Both give 100% relief in the year of purchase.
 - question: Can I claim capital allowances on a second-hand EV charging point?
-  answer: No. Both full expensing and the 100% first year allowance require the asset to be new and unused. If you buy a second-hand charger, it goes into the main rate pool and attracts writing down allowances at 18% per year on a reducing balance basis in 2025/26, reducing to 14% from April 2026 under Finance Act 2026. The same applies to any charger that is not brand new.
+  answer: No. Both full expensing and the 100% first year allowance require the asset to be new and unused. If you buy a second-hand charger, it goes into the main rate pool and attracts writing down allowances at 14% per year on a reducing balance basis in 2026/27 (cut from 18% under Finance Act 2026). The same applies to any charger that is not brand new.
 metaTitle_prev: Enhanced Capital Allowances EV Charging Points 2025/26
 metaDescription_prev: Claim enhanced capital allowances for EV charging points in 2025/26. Full expensing, AIA, and 100% first year allowances explained for UK limited
 dateModified: '2026-06-12'
@@ -35,16 +35,16 @@ reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 keyTakeaways:
-  - "New EV charging points installed in 2025/26 qualify for 100% capital allowances in the year of purchase, delivering full immediate tax relief for both limited companies and unincorporated businesses."
+  - "New EV charging points installed in 2026/27 qualify for 100% capital allowances in the year of purchase, delivering full immediate tax relief for both limited companies and unincorporated businesses."
   - "Full expensing for limited companies is permanent and uncapped: spending £500,000 on new charging points means a £500,000 deduction in the same accounting period."
   - "The dedicated s.45EA first year allowance ran to 31 March 2025 (corporation tax) and 5 April 2025 (income tax); afterwards full expensing and the £1,000,000 AIA still deliver 100% relief."
   - "Both full expensing and the 100% first year allowance require the charger to be new and unused; second-hand chargers only attract main-pool writing down allowances instead."
   - "Claimable costs extend beyond the charger unit to include cabling, wiring, electrical connection work, groundworks, ducting, trenching, and directly related installation labour."
   - "Where a charger is used partly for business and partly privately, only the business-use proportion qualifies, so 60% business use means a claim on 60% of the cost."
 ---
-<p>If your company installs electric vehicle charging points in 2025/26, the tax treatment depends on who uses them and where they are installed. The headline is this: most charging points qualify for 100% capital allowances in the year of purchase, giving you full tax relief immediately rather than spreading it over several years. But the specific relief available changes depending on whether you are a limited company or an unincorporated business, and whether you install the charger for staff, customers, or as part of a new build.</p>
+<p>If your company installs electric vehicle charging points in 2026/27, the tax treatment depends on who uses them and where they are installed. The headline is this: most charging points qualify for 100% capital allowances in the year of purchase, giving you full tax relief immediately rather than spreading it over several years. But the specific relief available changes depending on whether you are a limited company or an unincorporated business, and whether you install the charger for staff, customers, or as part of a new build.</p>
 
-<p>We work with UK businesses across every sector. We see a lot of confusion around the different capital allowance regimes that apply to EV charging equipment. This article cuts through that confusion and gives you the specific rules for 2025/26.</p>
+<p>We work with UK businesses across every sector. We see a lot of confusion around the different capital allowance regimes that apply to EV charging equipment. This article cuts through that confusion and gives you the specific rules for 2026/27.</p>
 
 <h2>What Are Enhanced Capital Allowances for EV Charging Points?</h2>
 
@@ -56,15 +56,15 @@ keyTakeaways:
 <li><strong>Annual Investment Allowance (AIA)</strong> at £1,000,000 per year, which also covers chargers but is not limited to them.</li>
 </ul>
 
-<p>The key distinction for 2025/26 is that full expensing and the 100% FYA both give you immediate relief. The difference is that full expensing is a general relief for limited companies, while the 100% FYA is a specific relief that also applies to unincorporated businesses (sole traders and partnerships) for designated environmentally beneficial technologies.</p>
+<p>The key distinction for 2026/27 is that full expensing and the 100% FYA both give you immediate relief. The difference is that full expensing is a general relief for limited companies, while the 100% FYA is a specific relief that also applies to unincorporated businesses (sole traders and partnerships) for designated environmentally beneficial technologies.</p>
 
-<h2>Do EV Charging Points Qualify for Full Expensing in 2025/26?</h2>
+<h2>Do EV Charging Points Qualify for Full Expensing in 2026/27?</h2>
 
 <p>Yes. Full expensing allows limited companies to claim a 100% deduction on most new main-rate plant and machinery assets. Electric vehicle charging points fall squarely within this category. If your company buys a new charger, installs it, and puts it into use for your business, you can deduct the full cost from your taxable profits in the same accounting period.</p>
 
 <p>There is no upper limit on full expensing. If you spend £50,000 on charging points for your office car park, you deduct £50,000. If you spend £500,000, you deduct £500,000. The relief is uncapped.</p>
 
-<p>There is one important condition: the charging point must be new and unused. Second-hand chargers do not qualify for full expensing. They would instead attract writing down allowances at 18% per year on a reducing balance basis in 2025/26, reducing to 14% from April 2026.</p>
+<p>There is one important condition: the charging point must be new and unused. Second-hand chargers do not qualify for full expensing. They would instead attract writing down allowances at 14% per year on a reducing balance basis in 2026/27, cut from 18% under Finance Act 2026.</p>
 
 <h2>Can Sole Traders and Partnerships Claim 100% Relief on EV Chargers?</h2>
 
@@ -84,9 +84,9 @@ keyTakeaways:
 
 <h2>Enhanced Capital Allowances EV Charging Points: The Specific Legislation</h2>
 
-<p>The 100% first year allowance for electric vehicle charging points is provided under the Capital Allowances Act 2001, Part 2A, which designates certain technologies as environmentally beneficial. The relief was originally time-limited and has been extended several times. For 2025/26, the relief remains in place. HMRC has confirmed that charging points installed on or before 31 March 2025 (for corporation tax) or 5 April 2025 (for income tax) qualify for the 100% FYA under the current rules.</p>
+<p>The 100% first year allowance for electric vehicle charging points is provided under the Capital Allowances Act 2001, Part 2A, which designates certain technologies as environmentally beneficial. The relief was originally time-limited and has been extended several times. The dedicated s.45EA first year allowance ran to 31 March 2025 (for corporation tax) and 5 April 2025 (for income tax) and has not been extended, so it does not apply in 2026/27. Charging points installed on or before those dates qualified for the 100% FYA under those rules.</p>
 
-<p>For chargers installed after those dates (from 1 April 2025 for corporation tax, or 6 April 2025 for income tax), no verified extension of the s.45EA FYA has been enacted. However, 100% relief remains fully available in 2025/26 through other routes: limited companies use full expensing (permanent and uncapped) and unincorporated businesses use the Annual Investment Allowance up to £1,000,000. The practical outcome is unchanged for most businesses.</p>
+<p>For chargers installed after those dates (from 1 April 2025 for corporation tax, or 6 April 2025 for income tax), no verified extension of the s.45EA FYA has been enacted. However, 100% relief remains fully available in 2026/27 through other routes: limited companies use full expensing (permanent and uncapped) and unincorporated businesses use the Annual Investment Allowance up to £1,000,000. The practical outcome is unchanged for most businesses.</p>
 
 <h2>What Costs Can You Include in the Claim?</h2>
 
@@ -123,7 +123,7 @@ keyTakeaways:
 
 <p>If you pay for the charger personally and the company reimburses you, the company can still claim capital allowances on the reimbursement. The key is that the company must bear the cost and own the asset. If you buy the charger personally and the company does not reimburse you, the company cannot claim anything, and you as an individual cannot claim capital allowances against your employment income.</p>
 
-<p>This area often intersects with the <a href="/blog/director-pay-and-dividends">director pay and dividends</a> planning, particularly if the company also provides you with a company electric car. The benefit in kind on electric cars is low for 2025/26 (3% of list price, rising to 4% in 2026/27 and 5% in 2027/28), so the combination of a company car and a home charger can be highly tax efficient. But the charger itself must be correctly structured as a company asset.</p>
+<p>This area often intersects with the <a href="/blog/director-pay-and-dividends">director pay and dividends</a> planning, particularly if the company also provides you with a company electric car. The benefit in kind on electric cars is low for 2026/27 (4% of list price, rising to 5% in 2027/28 and 7% in 2028/29), so the combination of a company car and a home charger can be highly tax efficient. But the charger itself must be correctly structured as a company asset.</p>
 
 <h2>Record Keeping and Compliance</h2>
 
@@ -161,7 +161,7 @@ keyTakeaways:
 
 <p>The tax treatment of EV charging points is straightforward for most businesses. If you buy a new charger and use it for your trade, you get 100% relief in the year of purchase. Limited companies use full expensing. Unincorporated businesses use the 100% first year allowance. Both give the same result: full deduction in year one.</p>
 
-<p>While the dedicated s.45EA 100% FYA ran to 31 March 2025 (CT) and 5 April 2025 (IT), 100% relief on new EV chargers remains fully available in 2025/26: limited companies through full expensing (permanent and uncapped), and unincorporated businesses through the Annual Investment Allowance up to £1,000,000. If you are planning to install chargers, there is no reason to wait. The tax benefit is available now.</p>
+<p>While the dedicated s.45EA 100% FYA ran to 31 March 2025 (CT) and 5 April 2025 (IT), 100% relief on new EV chargers remains fully available in 2026/27: limited companies through full expensing (permanent and uncapped), and unincorporated businesses through the Annual Investment Allowance up to £1,000,000. If you are planning to install chargers, there is no reason to wait. The tax benefit is available now.</p>
 
 <p>If you are unsure whether your specific installation qualifies, or if you are installing chargers as part of a larger property development, <a href="/contact">get in touch with our team</a>. We can review your plans and confirm the correct capital allowance treatment.</p>
 

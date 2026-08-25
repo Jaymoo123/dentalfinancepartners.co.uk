@@ -2,7 +2,11 @@
   "niche_id": "pharmacies",
   "display_name": "Pharmacy Tax",
   "legal_name": "Ashfield Trading Ltd",
-  "partner": null,
+  "partner": {
+    "name": "regulated firms in our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
+  },
   "company": {
     "number": "16358723",
     "place_of_registration": "England and Wales",

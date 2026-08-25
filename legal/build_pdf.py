@@ -31,6 +31,13 @@ STYLES = {
                             textColor=BLACK, spaceAfter=8),
     "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=12.5, leading=15,
                          textColor=BLACK, spaceBefore=12, spaceAfter=3),
+    # Levels 3 and 4 are used by the signature details blocks and by the rubric in
+    # Schedule 1. Until 2026-08-17 only "# " and "## " were handled, so "### Recipient
+    # details" and "#### Advisory" printed as literal hashes.
+    "h3": ParagraphStyle("h3", fontName="Helvetica-Bold", fontSize=11, leading=14,
+                         textColor=BLACK, spaceBefore=9, spaceAfter=2),
+    "h4": ParagraphStyle("h4", fontName="Helvetica-Bold", fontSize=10.3, leading=13,
+                         textColor=BLACK, spaceBefore=7, spaceAfter=1),
     "body": ParagraphStyle("body", fontName="Helvetica", fontSize=10.3, leading=14,
                            textColor=BLACK, spaceAfter=6),
     "cell": ParagraphStyle("cell", fontName="Helvetica", fontSize=9.8, leading=12.5, textColor=BLACK),
@@ -65,7 +72,12 @@ def is_sep(line):
 def main():
     src = pathlib.Path(sys.argv[1])
     out = pathlib.Path(sys.argv[2]) if len(sys.argv) > 2 else src.with_suffix(".pdf")
-    lines = src.read_text(encoding="utf-8").splitlines()
+    text = src.read_text(encoding="utf-8")
+    text = re.sub(r"<!--.*?-->\n?", "", text, flags=re.DOTALL)  # never render internal notes
+    for marker in ("{{", "[INSERT"):  # warn: unfilled placeholder reaching a PDF
+        if marker in text:
+            print(f"WARNING: {src.name} still contains '{marker}' - not a final signing copy.")
+    lines = text.splitlines()
     usable = A4[0] - 36 * mm
     story = []
     bullets = []
@@ -115,10 +127,13 @@ def main():
             flush_bullets()
             story.append(Paragraph(inline(s[2:].strip()), STYLES["title"]))
             story.append(HRFlowable(width="100%", thickness=1.2, color=BLACK, spaceBefore=4, spaceAfter=8))
-        elif s.startswith("## "):
+        elif re.match(r"#{2,6} ", s):
             flush_bullets()
-            story.append(Paragraph(inline(s[3:].strip()), STYLES["h2"]))
-            story.append(HRFlowable(width="100%", thickness=0.5, color=GREY, spaceBefore=1, spaceAfter=6))
+            hashes = len(s) - len(s.lstrip("#"))
+            story.append(Paragraph(inline(s[hashes:].strip()), STYLES[f"h{min(hashes, 4)}"]))
+            if hashes == 2:
+                story.append(HRFlowable(width="100%", thickness=0.5, color=GREY,
+                                        spaceBefore=1, spaceAfter=6))
         elif s.startswith("- "):
             bullets.append(s[2:].strip())
         elif s.startswith("*") and s.endswith("*") and not s.startswith("**"):

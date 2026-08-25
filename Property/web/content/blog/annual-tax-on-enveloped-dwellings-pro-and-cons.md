@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "ATED Pros and Cons: Should You Envelope UK Property?"
 metaDescription: "Should you envelope a UK BTL or family-home property? Honest ATED pros and cons walkthrough: bands, SDLT 15%, CIHC, RoE, LTR IHT, de-enveloping."
 altText: "Exterior of classic London hotel with Union Jack flags, evoking the upper-band UK residential property context typical of Annual Tax on Enveloped Dwellings decisions"
-image: "https://images.pexels.com/photos/37020455/pexels-photo-37020455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/37020455/pexels-photo-37020455.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Sevdefatima
   photographer_url: https://www.pexels.com/@sevdefatima-2160666440

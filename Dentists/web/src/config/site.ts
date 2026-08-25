@@ -3,22 +3,20 @@
  * This allows centralized management while keeping niche-specific settings.
  */
 import { niche, getSiteUrl } from "./niche-loader";
+import { getActiveNav } from "@accounting-network/web-shared/lib/niche-config";
 
 const office = niche.company.registered_office;
 const registeredOfficeLine = [office.line1, office.line2, office.city, office.postcode]
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
 
-// Specialist partner firm that enquiries are shared with. Single source of truth.
-// null = enquiries are handled in-house and NOT shared with any third-party firm.
+// Specialist partner network that enquiries are shared with. Single source of truth.
 const partner = niche.partner;
-// Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that). Driven by `partner` so the policy and the forms can
-// never drift, and so re-adding a partner later is a one-line config change.
-// Swapped live 2026-07-19 per owner approval (follow-up / nurture wording).
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`
-  : `I agree to Dental Finance Partners using my details to respond to my enquiry and provide the advice I have requested, including contacting me about it by email, phone and text message. I can ask them to stop at any time by replying STOP or clicking unsubscribe.`;
+// Lead-form acknowledgement wording WITHOUT the trailing "See our Privacy Policy." link
+// (each form appends that). Notice-only legitimate-interests acknowledgement: submitting
+// the enquiry is the affirmative act, so this is shown as a notice, not a tick-box
+// (pool model, 2026-08-10). Names the network category, never a single firm.
+const leadConsentText = `To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
 
 export const siteConfig = {
   name: niche.display_name,
@@ -34,7 +32,8 @@ export const siteConfig = {
   // NOTE: contact.email is an internal-routing value only (e.g. nurture reply-to).
   // It is intentionally NOT displayed publicly — public contact goes via /contact.
   contact: niche.contact,
-  nav: niche.navigation,
+  // Variant-filtered: items flagged hide_in_packages drop out in packages mode.
+  nav: getActiveNav(niche),
   footer: niche.footer_links,
   locations: niche.locations,
   // Registered company / legal entity. Single source of truth = niche.config.json.
@@ -56,11 +55,11 @@ export const siteConfig = {
       `${niche.company.place_of_registration} (company no. ${niche.company.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
-  // Specialist partner firm enquiries are shared with (null = handled in-house).
+  // Specialist partner network enquiries are shared with (category label, never a named firm).
   partner: partner
     ? { name: partner.name, privacyPolicyUrl: partner.privacy_policy_url ?? null }
     : null,
-  // Canonical lead-form consent text (see derivation above). Forms append the link.
+  // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
   // leadConsentTextWithFollowUp: swapped live into leadConsentText 2026-07-19 per owner approval.
   /**

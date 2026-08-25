@@ -108,7 +108,7 @@ faqs:
 <ul>
 <li><strong>Communal running costs:</strong> cleaning of shared areas, communal repairs and redecoration, gardening, waste and recycling, communal lighting and security systems.</li>
 <li><strong>Landlord-paid utilities and council tax:</strong> gas, electricity, water and broadband where you provide them inclusively, and council tax where you are the liable person.</li>
-<li><strong>Compliance and safety:</strong> HMO licence fees and renewals, annual gas safety certificates, the five-yearly electrical (EICR) inspection, fire risk assessments, fire alarm and emergency lighting servicing, and PAT testing.</li>
+<li><strong>Compliance and safety:</strong> HMO licence fees and renewals, annual gas safety certificates, the five-yearly electrical (EICR) inspection, <a href="/blog/landlord-tax-essentials/fire-risk-assessment-cost">fire risk assessments</a>, fire alarm and emergency lighting servicing, and PAT testing.</li>
 <li><strong>Professional and management costs:</strong> letting and management agent fees, accountancy, and legal fees on routine tenancy and compliance matters.</li>
 <li><strong>Insurance:</strong> specialist HMO buildings, contents and landlord liability cover.</li>
 <li><strong>Finance costs other than interest:</strong> for example, mortgage arrangement and broker fees on a residential let are subject to the Section 24 restriction rather than a straight deduction (see below).</li>

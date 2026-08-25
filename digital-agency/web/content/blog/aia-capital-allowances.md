@@ -17,7 +17,7 @@ faqs:
 - question: What is the current AIA limit for 2025/26?
   answer: The AIA limit is £1 million per 12-month accounting period. This limit was made permanent by the Growth Plan 2022, so it no longer reverts to £200,000. If your accounting period is shorter than 12 months, the limit is pro-rated accordingly. For example, a 9-month period gives a £750,000 limit.
 - question: Can I claim AIA on a car for my agency?
-  answer: No. Business cars (passenger cars) do not qualify for the Annual Investment Allowance. You must claim capital allowances on cars through the standard writing-down allowance pool instead, at either 18% or 6% per year depending on CO2 emissions. Motorcycles, vans, and trucks do qualify for AIA.
+  answer: No. Business cars (passenger cars) do not qualify for the Annual Investment Allowance. You must claim capital allowances on cars through the standard writing-down allowance pool instead, at either 14% or 6% per year depending on CO2 emissions. Motorcycles, vans, and trucks do qualify for AIA.
 - question: What happens if I buy equipment just before my year end?
   answer: You claim AIA in the period you bought the item, which is when you signed the contract if payment is due within less than 4 months. So if you sign a contract on 31 March but take delivery in April, the claim belongs to the earlier tax year. Plan your purchases carefully around year-end to maximise relief.
 - question: Can I claim AIA if my agency is a partnership?
@@ -80,7 +80,7 @@ imageCredit:
 <li>Transactions with a connected person</li>
 </ul>
 
-<p>If you buy a car for your agency, you cannot claim AIA on it. Instead, you claim capital allowances at the standard writing-down allowance rates (18% or 6% per year depending on CO2 emissions).</p>
+<p>If you buy a car for your agency, you cannot claim AIA on it. Instead, you claim capital allowances at the standard writing-down allowance rates (14% or 6% per year depending on CO2 emissions). The main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax.</p>
 
 <h2>When Can You Claim the AIA?</h2>
 

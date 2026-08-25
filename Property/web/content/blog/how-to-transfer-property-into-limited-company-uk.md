@@ -153,7 +153,7 @@ faqs:
 <li>The activity must amount to a <strong>business</strong>. Following Ramsay v HMRC [2013], a property letting operation can qualify where there is genuine, active management (typically a portfolio rather than one passive let).</li>
 </ul>
 
-<p>One change catches people out. From 18 March 2026, Finance Act 2026 made s.162 relief a <strong>claim</strong> rather than an automatic relief. You must claim it, with the information HMRC requires, by the first anniversary of the 31 January following the tax year in which the business was transferred. Miss the deadline and the deferral is lost even though the transfer qualified. Our deeper guide on how to <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporate without triggering CGT</a> walks through the claim and the going-concern evidence in full.</p>
+<p>One change catches people out. For transfers on or after 6 April 2026, Finance Act 2026 s.39 made s.162 relief a <strong>claim</strong> rather than an automatic relief. You must claim it, with the information HMRC requires, by the first anniversary of the 31 January following the tax year in which the business was transferred. Miss the deadline and the deferral is lost even though the transfer qualified. Our deeper guide on how to <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporate without triggering CGT</a> walks through the claim and the going-concern evidence in full.</p>
 
 <h3>3. Transfer at undervalue</h3>
 

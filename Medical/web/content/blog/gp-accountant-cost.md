@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Cost UK: What Drives the Fee (2026/27)"
-metaDescription: "What actually drives the cost of a GP accountant: practice size, partner count, payroll, NHS pension certificates and tax complexity. The value, and the right questions to ask."
+metaDescription: "What drives the cost of a GP accountant: practice size, partner count, payroll, NHS pension certificates and tax complexity, and the questions to ask."
 altText: "UK medical professional reviewing accountant fees and services on laptop"
 image: ""
 h1: "GP Accountant Cost: What Drives the Fee for UK Medical Accounting"
+keyTakeaways:
+- "The NHS pension annual allowance is 60,000 pounds for 2025/26, tapering where threshold income exceeds 200,000 pounds and adjusted income exceeds 260,000 pounds, down to a 10,000 pounds floor."
+- "MTD for Income Tax applies to sole traders and landlords with qualifying income over 50,000 pounds from 6 April 2026, then 30,000 pounds from April 2027 and 20,000 pounds from April 2028."
+- "A GP partnership files an SA800, each partner's share flows to their SA104 partnership pages, and partners are taxed on their profit share, not the drawings they take."
+- "A limited company cannot hold an NHS GMS or PMS contract and its income is not NHS-pensionable, so incorporation is a private-work-only decision."
+- "The VAT registration threshold is 90,000 pounds of taxable (non-exempt) turnover for 2024/25 onwards, and genuine NHS and private medical care is generally exempt."
 summary: "What a GP accountant costs is driven by your structure and complexity, not a one-size fee: practice size, partner numbers, payroll, NHS pension certification and the depth of tax planning you need. This guide explains the factors and the value, so you can compare quotes like for like."
 schema: ""
 faqs:

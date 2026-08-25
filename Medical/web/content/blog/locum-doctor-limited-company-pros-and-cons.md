@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Limited Company: Pros and Cons (2026/27)"
-metaDescription: "Should a locum doctor use a limited company (PSC)? Outside vs inside IR35, 2026/27 dividend rates, VAT at £90k and the NHS pension loss, weighed in plain English."
+metaDescription: "Should a locum doctor use a limited company (PSC)? Outside vs inside IR35, 2026/27 dividend rates, VAT at £90k and the NHS pension loss, in plain English."
 altText: "UK locum doctor reviewing limited company structure documents with calculator and medical equipment"
 image: ""
 h1: "Locum Doctor Limited Company: Pros and Cons Explained"
+keyTakeaways:
+- "A locum company only saves tax on work that is outside IR35, because inside-IR35 engagements are paid net of PAYE and employee NIC by the fee-payer."
+- "Since 6 April 2017 NHS Trusts and other public-sector hirers decide your IR35 status, and medium and large private-sector hirers have issued a Status Determination Statement since 6 April 2021."
+- "From 6 April 2026 dividends above the £500 allowance are taxed at 10.75%, 35.75% and 39.35%, up from 8.75% and 33.75% in 2025/26."
+- "Income routed through a company is not NHS-pensionable, so dividends build no NHS pension, whereas a sole-trader locum can pension eligible work via Locum forms A and B."
+- "Clinical medical care is VAT-exempt, so you register only if taxable (non-exempt) turnover such as cosmetic or medico-legal work exceeds £90,000 in any rolling 12 months."
 summary: "Wondering whether to operate through a limited company (a personal service company) as a locum doctor? We weigh the real pros and cons for 2026/27, from IR35 status and dividend tax to the NHS pension you give up."
 schema: ""
 faqs:

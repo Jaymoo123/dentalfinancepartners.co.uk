@@ -19,7 +19,8 @@
   skill after close-wave -Step build PASSes and conductor approves deploy.
 
 .PARAMETER Site
-  Site key (currently only 'property' is supported). Required.
+  Site key. Any site with a sites/<site>.json config is supported (resolved
+  via Get-SiteConfig). Required.
 
 .PARAMETER DryRun
   Show what would be done without making any changes.

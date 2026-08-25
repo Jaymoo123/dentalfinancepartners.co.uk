@@ -3,7 +3,7 @@
  *
  * Verifies:
  *  - calculatorMessagePrefix and exitIntentMessagePrefix produce correct output.
- *  - The consent text includes "Reflex" (the partner name per data-sharing agreement)
+ *  - The consent notice names the specialist partner network, discloses re-referral,
  *    and never "DJH" (internal name; must not appear in user-facing copy).
  *
  * TL-03: pure Node.js module tests only -- no React, no window, no fetch.
@@ -56,24 +56,26 @@ describe("exitIntentMessagePrefix", () => {
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text includes 'Reflex' (partner name required by data-sharing agreement)", async () => {
-    // The niche.config.json partner is "Reflex Accounting". The siteConfig
-    // leadConsentText must mention the partner so the disclosure is accurate.
-    // We import the site config here rather than duplicating the string in tests
-    // so this test fails immediately when the config changes.
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts). The
+  // wording is brand-free (identical across sites), so the old brand-mention
+  // assertion is gone too. We import the site config rather than duplicating the
+  // string so this fails the moment the config changes.
+  const EXPECTED_CONSENT =
+    "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", async () => {
     const { siteConfig } = await import("@/config/site");
-    const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("Reflex");
+    expect(siteConfig.leadConsentText).toBe(EXPECTED_CONSENT);
   });
 
-  it("consent text never contains 'DJH' (copy discipline: internal name must not appear)", async () => {
+  it("consent text never contains 'DJH' or 'Reflex' (copy discipline: no internal/named-partner mentions)", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
     expect(consentText).not.toContain("DJH");
-  });
-
-  it("consent text mentions 'Dental Finance Partners' brand", async () => {
-    const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("Dental Finance Partners");
+    expect(consentText).not.toContain("Reflex");
   });
 });

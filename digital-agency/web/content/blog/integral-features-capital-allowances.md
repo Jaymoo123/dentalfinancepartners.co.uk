@@ -71,7 +71,7 @@ imageCredit:
 
 <p>Integral features qualify for capital allowances at a special rate. You can claim writing-down allowances at 6% per year on the cost of the asset <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
-<p>For most plant and machinery, the standard rate is 18% per year. Integral features fall into the special rate pool because they are long-life assets <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
+<p>For most plant and machinery, the standard main-pool rate is 14% per year, reduced from 18% by Finance Act 2026 section 28 with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax. Integral features fall into the special rate pool because they are long-life assets <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
 <p>However, in most cases you can deduct the full cost of items from your profits before tax using the Annual Investment Allowance (AIA) <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The AIA currently stands at £1 million per year. That means if you spend £50,000 on a new air conditioning system for your agency office, you can write off the full amount against your taxable profits in the same year.</p>
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Making Tax Digital (MTD) Checker",
   description:
     "Free checker: whether a UK landlord must comply with Making Tax Digital for Income Tax, and from when.",
-  // Embed surface — do not index (the canonical, indexable version lives at
+  // Embed surface, do not index (the canonical, indexable version lives at
   // /calculators/mtd-checker).
   robots: { index: false, follow: false },
   alternates: { canonical: "https://www.propertytaxpartners.co.uk/calculators/mtd-checker" },

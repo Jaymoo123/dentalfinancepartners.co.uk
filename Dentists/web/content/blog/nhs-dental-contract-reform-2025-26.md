@@ -1,15 +1,15 @@
 ---
-title: "What Does NHS Dental Contract Reform Mean for Your Practice Finances in 2025/26?"
+title: "What Does NHS Dental Contract Reform Mean for Your Practice Finances in 2026/27?"
 slug: "nhs-dental-contract-reform-2025-26"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/nhs-contracts/nhs-dental-contract-reform-2025-26"
-date: "2026-05-18"
+date: "2026-07-28"
 generator: deepseek-chat/legacy-bulk
 updatedDate: "2026-06-03"
 sourcesVerifiedAt: "2026-06-03"
 author: "Dental Finance Partners Editorial Team"
 category: "NHS Contracts"
-metaTitle: "NHS Dental Contract Reform 2025/26: What It Means"
-metaDescription: "How England's incremental NHS dental contract reform affects practice income and planning for 2025/26 and 2026/27, and why the UDA model still applies."
+metaTitle: "NHS Dental Contract Reform 2026/27: What It Means"
+metaDescription: "How England's incremental NHS dental contract reform affects practice income and planning for 2026/27, and why the UDA model still applies."
 altText: "UK dentist reviewing NHS contract documents in a modern practice office"
 image: "https://images.pexels.com/photos/305567/pexels-photo-305567.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
 imageCredit:
@@ -17,8 +17,8 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@fr3nks"
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/white-dental-equipment-near-wall-305567/"
-h1: "What Does NHS Dental Contract Reform Mean for Your Practice Finances in 2025/26?"
-summary: "NHS dental contract reform in England is incremental, not a wholesale replacement. The UDA mechanism continues through 2025/26 into 2026/27, with phased changes to urgent care, prevention and quality. This article explains what has actually changed and the practical message for practice owners and associates: plan on the contract as it stands."
+h1: "What Does NHS Dental Contract Reform Mean for Your Practice Finances in 2026/27?"
+summary: "NHS dental contract reform in England is incremental, not a wholesale replacement. The UDA mechanism continues through 2026/27, with phased changes to urgent care, prevention and quality. This article explains what has actually changed and the practical message for practice owners and associates: plan on the contract as it stands."
 keyTakeaways:
   - "NHS dental contract reform in England is incremental: the UDA mechanism continues and the GDS/PDS contracts are amended, not replaced, for 2026/27."
   - "Urgent care moves from the historic 1.2-UDA basis to a separate fixed and activity-based crediting arrangement, with a minimum unscheduled-care requirement for larger contracts."
@@ -27,7 +27,7 @@ keyTakeaways:
   - "VAT exemption, NHS Pension rules and the income tax treatment of contract income are unchanged by reform; new payment credits still form part of the UDA-based contract value."
 schema: ""
 faqs:
-  - question: "Is the UDA system being scrapped in 2025/26 or 2026/27?"
+  - question: "Is the UDA system being scrapped in 2026/27?"
     answer: "No. Despite years of debate about replacing it, the Units of Dental Activity (UDA) mechanism continues. The reforms confirmed for 2026/27 amend the existing General Dental Services and Personal Dental Services contracts rather than replacing them. New payment credits introduced by the reforms still form part of your contract value, which remains a UDA-based contract. For financial planning, you should assume the UDA model continues and plan on the contract as it stands, not on assumed wholesale reform."
   - question: "Will the reforms increase or reduce my NHS contract value?"
     answer: "It depends on your specific contract and how you deliver care. The reforms reshape how parts of the contract value are earned, for example by changing how urgent care and prevention are credited and by introducing minimum delivery requirements for some activity. They do not, of themselves, hand every practice a larger budget. The practical question is whether the change in how you earn your existing value helps or hinders your delivery profile. Model it against your own activity data with your accountant rather than assuming an uplift."
@@ -39,7 +39,7 @@ faqs:
     answer: "The NHS Pension Scheme rules are not changed by contract reform. Your pensionable earnings flow from your contract value in the usual way, so a change in how that value is earned does not, by itself, change the pension framework. The tax position also follows the existing rules: NHS contract income is recognised when earned and taxed under self assessment or corporation tax depending on your structure. The reform changes the composition of your income, not the tax treatment of it. Speak to a dental-specialist accountant if your delivery profile is changing materially."
 ---
 
-<p>NHS dental contract reform has been discussed for over a decade, and the noise often runs ahead of the substance. For practice owners and associates trying to plan, the question that matters is simple: what has actually changed, and what should you assume when you price a deal, set a budget or negotiate an associate agreement? This article answers that question for 2025/26 and the 2026/27 contract year that follows it.</p>
+<p>NHS dental contract reform has been discussed for over a decade, and the noise often runs ahead of the substance. For practice owners and associates trying to plan, the question that matters is simple: what has actually changed, and what should you assume when you price a deal, set a budget or negotiate an associate agreement? This article answers that question for the 2026/27 contract year.</p>
 
 <p>The short version is that reform in England is incremental. The Units of Dental Activity (UDA) mechanism continues. The General Dental Services (GDS) and Personal Dental Services (PDS) contracts are being amended, not torn up and replaced. That single fact should anchor your planning. We focus here on the practical financial implications, not the policy debate, and we point you to NHS England and your commissioner for the confirmed detail that applies to your individual contract.</p>
 
@@ -51,7 +51,7 @@ faqs:
 
 <p>Wales, Scotland and Northern Ireland operate under separate arrangements (Scotland does not use UDAs at all), and similar reform pressures exist in each nation. This article is about England. If you hold a contract elsewhere, check your own national framework.</p>
 
-<p>The practical headline for your finances is this: through 2025/26 and into 2026/27, plan on the contract as it stands. Do not price a practice purchase, sale or budget on assumed reform upside that has not been confirmed for your contract.</p>
+<p>The practical headline for your finances is this: for 2026/27, plan on the contract as it stands. Do not price a practice purchase, sale or budget on assumed reform upside that has not been confirmed for your contract.</p>
 
 <h2>What the 2026/27 Reforms Change (and What They Do Not)</h2>
 

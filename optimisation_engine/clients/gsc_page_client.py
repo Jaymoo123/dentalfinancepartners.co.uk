@@ -38,14 +38,21 @@ _SITE_URL_MAP = {
     "property":          "sc-domain:propertytaxpartners.co.uk",
     "dentists":          "sc-domain:dentalfinancepartners.co.uk",
     "medical":           "sc-domain:medicalaccounts.co.uk",
+    "wills-probate":     "sc-domain:probate-compass-placeholder.co.uk",
+    "divorce-finances":  "sc-domain:placeholder-divorce-domain.example",
     "solicitors":        "sc-domain:accountsforlawyers.co.uk",
     "agency":            "sc-domain:agencyfounderfinance.co.uk",
     "generalist":        "sc-domain:hollowaydavies.co.uk",
     "contractors-ir35":  "sc-domain:contractortaxaccountants.co.uk",
     "construction-cis":  "sc-domain:tradetaxspecialists.co.uk",
-    "charities":         "sc-domain:brand-tbd-charities.invalid",
-    "hospitality":       "sc-domain:brand-tbd-hospitality.invalid",
-    "care":              "sc-domain:brand-tbd-care.invalid",
+    # Wave-2 entries verified against GSC sites.list 2026-08-24 (all siteOwner)
+    "charities":         "sc-domain:trusteetax.co.uk",
+    "hospitality":       "sc-domain:hospitalitytax.co.uk",
+    "care":              "sc-domain:carehometax.co.uk",
+    "pharmacies":        "sc-domain:pharmacytax.co.uk",
+    "crypto":            "sc-domain:cryptotaxpartners.co.uk",
+    "ecommerce":         "sc-domain:ecommercefinance.co.uk",
+    "startups-tech":     "sc-domain:foundertaxpartners.co.uk",
 }
 
 
@@ -126,6 +133,7 @@ class GSCPageFetcher:
             return 0
 
         inserted = 0
+        rejected = 0
         chunk_size = 500
         for i in range(0, len(records), chunk_size):
             chunk = records[i: i + chunk_size]
@@ -151,7 +159,16 @@ class GSCPageFetcher:
                 _mgmt_sql(sql)
                 inserted += len(chunk)
             except Exception as exc:
+                rejected += len(chunk)
                 print(f"[GSC-P] {self.site_key} chunk {i} upsert failed: {exc}")
 
         print(f"[GSC-P] {self.site_key} upserted {inserted} rows to gsc_page_performance")
+        if rejected:
+            # Never report a silent zero. A rejected write means this site is
+            # invisible to every aggregate that reads gsc_page_performance, and
+            # that stayed hidden for months behind a printed "upserted 0 rows".
+            raise RuntimeError(
+                f"gsc_page_performance: {rejected}/{len(records)} rows rejected for "
+                f"niche={self.site_key!r} (check the niche CHECK constraint covers this site)"
+            )
         return inserted

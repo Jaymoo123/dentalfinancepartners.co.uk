@@ -254,3 +254,53 @@ describe("classifyEmailReplyIntent — real opt-outs still honoured", () => {
     expect(classifyEmailReplyIntent("see subject", "unsubscribe")).toBe("opt_out");
   });
 });
+
+// Regression suite for the 2026-08-07 incident: a lead replied "STOP" but his
+// mail client appended a signature block, pushing the body over the short-email
+// threshold, so the reply was classified genuine, the lead was promoted +
+// handed off, and a branded ack was sent to someone who had just opted out.
+describe("classifyEmailReplyIntent — signed short replies (2026-08-07 incident)", () => {
+  const SIG =
+    "Paul Wilson MIAP MBCS MRI CSM CSSE\nWilson Green\n" +
+    "E: paul.wilson@wilsongreen.co.uk\nM: +44 (0)7467 147187";
+
+  it("the exact incident body: 'STOP' + blank line + signature is an opt-out", () => {
+    expect(classifyEmailReplyIntent(`STOP\n\n${SIG}`)).toBe("opt_out");
+  });
+
+  it.each([["STOP"], ["No"], ["unsubscribe"], ["Please stop"], ["opt out"]])(
+    "short typed reply '%s' above a signature is an opt-out",
+    (typed) => {
+      expect(classifyEmailReplyIntent(`${typed}\n\n${SIG}`)).toBe("opt_out");
+    },
+  );
+
+  it("signature with NO blank line and NO sign-off marker is still an opt-out", () => {
+    expect(classifyEmailReplyIntent(`STOP\nPaul Wilson\nWilson Green\nM: 07467 147187`)).toBe(
+      "opt_out",
+    );
+  });
+
+  it("signature introduced by 'Regards' with no blank line is still stripped", () => {
+    expect(classifyEmailReplyIntent(`STOP\nKind regards\nPaul Wilson`)).toBe("opt_out");
+  });
+
+  it("a genuine short reply above a signature stays genuine", () => {
+    expect(classifyEmailReplyIntent(`Yes please call me tomorrow afternoon\n\n${SIG}`)).toBe(
+      "genuine",
+    );
+  });
+
+  it("a long typed reply above a signature stays genuine even if it contains 'stop'", () => {
+    const typed =
+      "Happy to talk this through, you could even stop by the office if easier. " +
+      "I have three buy to lets and want to discuss incorporation options soon.";
+    expect(classifyEmailReplyIntent(`${typed}\n\n${SIG}`)).toBe("genuine");
+  });
+
+  it("our quoted footer below the typed text still cannot drive an opt-out", () => {
+    expect(
+      classifyEmailReplyIntent(`Yes tomorrow works\n\nTo opt out, just reply STOP.\n\n${SIG}`),
+    ).toBe("genuine");
+  });
+});

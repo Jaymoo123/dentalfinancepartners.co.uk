@@ -131,7 +131,7 @@ imageCredit:
 
 <p>The agency calculates total staff costs for these three developers: salaries £120,000, employer NI £15,750, pension contributions £4,800. Total: £140,550. The R&D proportion is 50%, so the qualifying staff cost is £70,275.</p>
 
-<p>Under the merged RDEC scheme, the agency claims a 20% credit on that £69,300, giving a credit of £13,860 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If the agency is loss-making and meets the intensity condition, they might claim ERIS instead, allowing an extra 86% deduction on qualifying costs <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>Under the merged RDEC scheme, the agency claims a 20% credit on that £70,275, giving a credit of £14,055 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. After 25% corporation tax on the credit, the net benefit is approximately £10,541. If the agency is loss-making and meets the intensity condition, they might claim ERIS instead, allowing an extra 86% deduction on qualifying costs <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <h2>What About Contractors and Freelancers?</h2>
 

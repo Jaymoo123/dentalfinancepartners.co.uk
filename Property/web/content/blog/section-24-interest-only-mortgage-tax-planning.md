@@ -34,7 +34,7 @@ faqs:
   - question: "Does incorporating remove Section 24 on an interest-only mortgage?"
     answer: "Yes, within the company. A limited company deducts mortgage interest in full against its rental profits before corporation tax, so Section 24 does not apply to company-held property. That makes an interest-only structure considerably more tax-efficient inside a company. Incorporation is not free of cost or complexity though: there is potential capital gains tax and stamp duty land tax on transferring property in, tighter lending criteria, and tax on extracting the profit. Model the whole picture using our Section 24 versus incorporation comparison before deciding."
   - question: "How does Making Tax Digital affect interest-only landlords?"
-    answer: "Making Tax Digital for Income Tax is live and phased by income. From 6 April 2026 it applies to landlords and sole traders with qualifying income over GBP50,000, from 6 April 2027 the threshold drops to GBP30,000, and from 6 April 2028 to GBP20,000. You will keep digital records and file quarterly updates plus a final declaration. Mortgage interest must be recorded separately as a finance cost (not lumped with other expenses) because it is restricted, not deducted. Interest-only loans are slightly simpler here because the whole payment is interest, with no capital element to strip out."
+    answer: "Making Tax Digital for Income Tax is live and phased by income. From 6 April 2026 it applies to landlords and sole traders with qualifying income over £50,000, from 6 April 2027 the threshold drops to £30,000, and from 6 April 2028 to £20,000. You will keep digital records and file quarterly updates plus a final declaration. Mortgage interest must be recorded separately as a finance cost (not lumped with other expenses) because it is restricted, not deducted. Interest-only loans are slightly simpler here because the whole payment is interest, with no capital element to strip out."
   - question: "Will Section 24 be repealed or reversed?"
     answer: "There is no announced plan to repeal Section 24, and it is fully in force. The 2027 reforms keep the restriction in place and simply align the finance-cost reducer with the new 22% property basic rate. Planning should assume Section 24 stays. We track the policy position in our guide on whether Section 24 will be reversed."
 howToSteps:
@@ -93,7 +93,7 @@ reviewedAt: "2026-05-31"
 
 <h2>Worked example: higher-rate landlord, interest-only vs repayment</h2>
 
-<p>Take a higher-rate landlord with a single buy-to-let property let at GBP18,000 a year, GBP2,000 of allowable non-finance costs, and a GBP200,000 mortgage at 5%. We compare interest-only against a repayment mortgage in its first year, on 2026/27 figures.</p>
+<p>Take a higher-rate landlord with a single buy-to-let property let at £18,000 a year, £2,000 of allowable non-finance costs, and a £200,000 mortgage at 5%. We compare interest-only against a repayment mortgage in its first year, on 2026/27 figures.</p>
 
 <table>
 <thead>
@@ -106,49 +106,49 @@ reviewedAt: "2026-05-31"
 <tbody>
 <tr>
 <td>Annual mortgage interest</td>
-<td>GBP10,000</td>
-<td>GBP9,906 (interest element)</td>
+<td>£10,000</td>
+<td>£9,906 (interest element)</td>
 </tr>
 <tr>
 <td>Rental income</td>
-<td>GBP18,000</td>
-<td>GBP18,000</td>
+<td>£18,000</td>
+<td>£18,000</td>
 </tr>
 <tr>
 <td>Less non-finance costs</td>
-<td>(GBP2,000)</td>
-<td>(GBP2,000)</td>
+<td>(£2,000)</td>
+<td>(£2,000)</td>
 </tr>
 <tr>
 <td>Taxable rental profit (interest not deducted)</td>
-<td>GBP16,000</td>
-<td>GBP16,000</td>
+<td>£16,000</td>
+<td>£16,000</td>
 </tr>
 <tr>
 <td>Income tax at 40%</td>
-<td>GBP6,400</td>
-<td>GBP6,400</td>
+<td>£6,400</td>
+<td>£6,400</td>
 </tr>
 <tr>
 <td>Section 24 credit (20% of interest)</td>
-<td>(GBP2,000)</td>
-<td>(GBP1,981)</td>
+<td>(£2,000)</td>
+<td>(£1,981)</td>
 </tr>
 <tr>
 <td>Net tax on the let</td>
-<td>GBP4,400</td>
-<td>GBP4,419</td>
+<td>£4,400</td>
+<td>£4,419</td>
 </tr>
 </tbody>
 </table>
 
-<p>The GBP6,400 income-tax line is the marginal tax attributable to the let (the GBP16,000 of rental profit taxed at 40% on top of the landlord's other income), not the landlord's whole income-tax bill, which is the standard way these examples are set out. In year one the tax bills are almost identical, because the interest figures are close. The picture diverges over time. On the repayment mortgage the balance falls, the interest element shrinks each year, and so does the Section 24 restriction, so the net tax slowly improves. On the interest-only mortgage the GBP10,000 interest and the GBP2,000 credit repeat every year, unchanged, for the full term.</p>
+<p>The £6,400 income-tax line is the marginal tax attributable to the let (the £16,000 of rental profit taxed at 40% on top of the landlord's other income), not the landlord's whole income-tax bill, which is the standard way these examples are set out. In year one the tax bills are almost identical, because the interest figures are close. The picture diverges over time. On the repayment mortgage the balance falls, the interest element shrinks each year, and so does the Section 24 restriction, so the net tax slowly improves. On the interest-only mortgage the £10,000 interest and the £2,000 credit repeat every year, unchanged, for the full term.</p>
 
 <p>The point the table makes clear: Section 24 does not single out interest-only mortgages. The two structures start in roughly the same tax position. What separates them is the trajectory, and that is a debt-reduction question, not a tax-relief one.</p>
 
 <h2>The cash-flow trade-off</h2>
 
-<p>Where interest-only pulls ahead is monthly cash. Using the same GBP200,000 loan at 5%, the contrast is stark before any tax:</p>
+<p>Where interest-only pulls ahead is monthly cash. Using the same £200,000 loan at 5%, the contrast is stark before any tax:</p>
 
 <table>
 <thead>
@@ -161,18 +161,18 @@ reviewedAt: "2026-05-31"
 <tbody>
 <tr>
 <td>Rent received</td>
-<td>GBP1,500</td>
-<td>GBP1,500</td>
+<td>£1,500</td>
+<td>£1,500</td>
 </tr>
 <tr>
 <td>Mortgage payment</td>
-<td>GBP833</td>
-<td>GBP1,169</td>
+<td>£833</td>
+<td>£1,169</td>
 </tr>
 <tr>
 <td>Surplus before other costs and tax</td>
-<td>GBP667</td>
-<td>GBP331</td>
+<td>£667</td>
+<td>£331</td>
 </tr>
 </tbody>
 </table>
@@ -255,13 +255,13 @@ reviewedAt: "2026-05-31"
 
 <h2>Making Tax Digital and record keeping</h2>
 
-<p>Making Tax Digital for Income Tax is live and phased by qualifying income: GBP50,000 from 6 April 2026, GBP30,000 from 6 April 2027, and GBP20,000 from 6 April 2028. Once you are in, you keep digital records, file quarterly updates, and submit a final declaration after the tax year.</p>
+<p>Making Tax Digital for Income Tax is live and phased by qualifying income: £50,000 from 6 April 2026, £30,000 from 6 April 2027, and £20,000 from 6 April 2028. Once you are in, you keep digital records, file quarterly updates, and submit a final declaration after the tax year.</p>
 
 <p>For Section 24 the critical record-keeping point is that mortgage interest must be tracked separately as a finance cost, not blended with repairs, insurance or agent fees, because it is restricted rather than deducted. Interest-only mortgages are slightly simpler here: the whole payment is interest, so there is no capital element to strip out of each statement. Repayment landlords must separate the interest from the capital every period. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords guide</a> walks the timeline and the digital-records floor.</p>
 
 <h2>Capital gains on the eventual sale</h2>
 
-<p>Whatever mortgage you choose, capital gains tax on a residential disposal is unaffected by Section 24. Mortgage interest, and indeed the capital you repay on a repayment loan, is irrelevant to the CGT computation: you are taxed on the gain (proceeds less original cost and qualifying improvements), not on the equity. For 2026/27 residential gains are taxed at 18% within the basic-rate band and 24% above it, after the GBP3,000 annual exempt amount.</p>
+<p>Whatever mortgage you choose, capital gains tax on a residential disposal is unaffected by Section 24. Mortgage interest, and indeed the capital you repay on a repayment loan, is irrelevant to the CGT computation: you are taxed on the gain (proceeds less original cost and qualifying improvements), not on the equity. For 2026/27 residential gains are taxed at 18% within the basic-rate band and 24% above it, after the £3,000 annual exempt amount.</p>
 
 <p>The interest-only borrower's preserved capital does not increase the gain; the repayment borrower's paid-down balance does not reduce it. The difference between the structures shows up purely in how much cash you walk away with after redeeming the loan, not in the tax on the gain itself.</p>
 

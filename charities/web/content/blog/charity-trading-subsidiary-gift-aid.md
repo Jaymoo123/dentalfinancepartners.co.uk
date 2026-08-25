@@ -118,7 +118,7 @@ faqs:
 </ul>
 
 <h3>The charity's group reporting</h3>
-<p>Where the charity controls the subsidiary (which it usually does, as the sole or majority shareholder), the subsidiary's results are consolidated into the charity's group accounts under the Charities SORP (FRS 102). This applies once the charity meets the thresholds that require accruals accounts: a charitable company always, or a non-company charity with income over £250,000. The group consolidation adds complexity to the annual accounts preparation and the independent examination or audit process.</p>
+<p>Where the charity controls the subsidiary (which it usually does, as the sole or majority shareholder), the subsidiary's results are consolidated into the charity's group accounts under the Charities SORP (FRS 102). This applies once the charity meets the thresholds that require accruals accounts: a charitable company always, or a non-company charity with income over £250,000 (£500,000 for financial years ending on or after 30 September 2026). The group consolidation adds complexity to the annual accounts preparation and the independent examination or audit process.</p>
 
 <h3>Governance pitfalls</h3>
 <p>Shared trustees or directors between the charity and the subsidiary create connected-party relationships. Any transactions between the two entities (loans, charges, services) must be on arm's-length terms and properly documented. The Charity Commission requires trustees to manage conflicts of interest; where individuals sit on both boards, a formal conflict management protocol is essential.</p>

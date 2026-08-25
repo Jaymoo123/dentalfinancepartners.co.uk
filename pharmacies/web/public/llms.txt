@@ -25,7 +25,8 @@ Pharmacy Tax is a UK accounting practice focused exclusively on community pharma
 
 ## Original research and data
 
-- [UK Community Pharmacy Openings and Closures Index](https://www.pharmacytax.co.uk/research/pharmacy-openings-closures-index): Data on NHS-contracted community pharmacy openings and closures in England, drawn from official NHS sources. Tracks the structural shift in the community pharmacy estate over time.
+- [UK Community Pharmacy Openings and Closures Index](https://www.pharmacytax.co.uk/research/pharmacy-openings-closures-index): Monthly, owner-segmented data on NHS-contracted community pharmacy openings and closures in England (NHSBSA), paired with Companies House SIC 47730 corporate-formations data. Tracks the structural shift in the community pharmacy estate over time.
+- [Pharmacy Density and Dispensing Workload Index](https://www.pharmacytax.co.uk/research/pharmacy-density-and-workload-index): NHS pharmacies per 100,000 population by region (NHSBSA Contractor Details + ONS population), and the rise in prescription items dispensed per pharmacy as the network has shrunk.
 
 ## Free calculators and tools
 

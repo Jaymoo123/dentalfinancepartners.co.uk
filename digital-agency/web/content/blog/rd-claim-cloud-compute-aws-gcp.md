@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credits on Cloud Compute: AWS and GCP Costs'
-metaDescription: Claim R&D relief on AWS, GCP and GPU costs used for model training. The merged scheme gives a 20% taxable credit on qualifying R&D spend. See what qualifies.
+metaDescription: Claim R&D relief on AWS, GCP and GPU costs used for model training. The merged scheme gives a 20% taxable credit on qualifying spend. See what qualifies.
 altText: Agency founder reviewing AWS and GCP cloud compute invoices for R&D tax credit claim with accountant in UK office
 image: /blog/rd-claim-cloud-compute-aws-gcp.jpg
 imageCredit:
@@ -52,7 +52,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>HMRC defines R&D for tax purposes as work that seeks to achieve an advance in science or technology. For a digital or creative agency, that typically means developing new software, algorithms, or data processing methods that solve a technical uncertainty. It does not mean routine website builds, standard integrations, or using off-the-shelf tools in the way they were designed to be used.</p>
 
-<p>Cloud compute costs qualify where they are directly attributable to qualifying R&D activities. If you are training a proprietary machine learning model on AWS SageMaker, that qualifies. If you are running A/B tests on a standard WordPress hosting setup, it does not.</p>
+<p>Cloud compute costs qualify where they are directly attributable to qualifying R&D activities. If you are training a proprietary machine learning model on AWS SageMaker, that qualifies. If you are running A/B tests on a standard WordPress hosting setup, it does not. Note that cloud computing and data costs only became qualifying R&D cost categories for accounting periods beginning on or after 1 April 2023, so periods starting before that date cannot include them.</p>
 
 <h3>The Three Conditions for Cloud Compute Costs</h3>
 
@@ -126,7 +126,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Total qualifying cloud compute costs: £63,400 + £8,200 + £14,700 + (£9,100 x 60%) = £91,760.</p>
 
-<p><strong>Scheme note:</strong> for accounting periods beginning on or after 1 April 2024, the merged scheme applies. The £91,760 of qualifying cloud compute spend would attract a 20% taxable credit of £18,352. At 25% corporation tax on the credit, the net benefit is approximately £13,764. Under the old SME scheme (for pre-April 2024 periods only), the 186% enhanced deduction would have given a higher saving for profitable agencies. Do not apply the 186% deduction to post-April 2024 periods.</p>
+<p><strong>Scheme note:</strong> for accounting periods beginning on or after 1 April 2024, the merged scheme applies. The £91,760 of qualifying cloud compute spend would attract a 20% taxable credit of £18,352. At 25% corporation tax on the credit, the net benefit is approximately £13,764. Under the old SME scheme (for accounting periods beginning 1 April 2023 to 31 March 2024), the 186% enhanced deduction would have given a higher saving for profitable agencies. Do not apply the 186% deduction to periods beginning on or after 1 April 2024.</p>
 
 <p>That is a real return for proper record-keeping.</p>
 

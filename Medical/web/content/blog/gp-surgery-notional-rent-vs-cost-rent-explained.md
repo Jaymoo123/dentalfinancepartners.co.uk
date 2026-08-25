@@ -7,10 +7,16 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Notional Rent vs Cost Rent: GP Surgery Premises Guide"
-metaDescription: "How NHS notional rent, cost rent and improvement grants fund a GP surgery, who sets the figure, and how each is taxed for the owners. A UK guide for partners."
+metaDescription: "How NHS notional rent, cost rent and improvement grants fund a GP surgery, who sets the figure, and how each is taxed for owners. A UK guide for partners."
 altText: "GP partners reviewing surgery premises funding statements and a property loan agreement"
 image: ""
 h1: "Notional Rent vs Cost Rent: How NHS Funds (and Taxes) Your GP Surgery Premises"
+keyTakeaways:
+- "The current framework is the NHS (GMS - Premises Costs) Directions 2024, in force from 10 May 2024, which replaced the 2013 Directions (revoked 9 May 2024)."
+- "Notional rent is a District-Valuer-assessed current-market-rent figure, typically on notional lease terms around a fifteen-year term, and is reviewed periodically (commonly about every three years)."
+- "Cost rent is a legacy borrowing-based scheme closed to new schemes, and a practice on it must convert to notional rent once the underlying mortgage is repaid."
+- "Notional rent and cost rent are taxable income to whoever owns the premises, and only the interest element of the loan (never the capital repayment) is deductible against it."
+- "Under the 2024 Directions improvement grants can fund up to 100% of project value but carry a rent-abatement period scaled to the grant size, with a proportion repayable if the practice leaves within the relevant period."
 summary: "When a GP partnership owns its surgery, the NHS reimburses the cost of providing those premises through notional rent, the legacy cost rent scheme, or improvement grants. This guide explains how each route works, who sets the figure, and the tax point practices most often get wrong: that the reimbursement is taxable income to whoever owns the building, set against the loan interest and running costs."
 schema: ""
 faqs:

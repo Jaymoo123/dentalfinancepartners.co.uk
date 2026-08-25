@@ -26,7 +26,7 @@ faqs:
   - question: "Can the director reimburse the company for private fuel after the P11D is filed?"
     answer: "No. The reimbursement must be made before the P11D is filed to avoid the fuel benefit charge. If you reimburse after the deadline, the fuel benefit applies for that tax year. The reimbursement is then treated separately. It is best to reimburse monthly to keep clean records."
   - question: "What is the car fuel multiplier for 2025/26?"
-    answer: "The car fuel multiplier for 2025/26 is £27,800. This figure is multiplied by the same CO2-based percentage used for the car benefit to calculate the fuel benefit charge. For example, if the appropriate percentage is 20%, the fuel benefit is £27,800 × 20% = £5,560."
+    answer: "The car fuel multiplier is £28,200 for 2025/26 and £29,200 for 2026/27. This figure is multiplied by the same CO2-based percentage used for the car benefit to calculate the fuel benefit charge. For example, if the appropriate percentage is 20%, the 2025/26 fuel benefit is £28,200 × 20% = £5,640."
 keyTakeaways:
   - "A company car available for private use always requires a P11D entry for the car benefit, even if the director pays for all fuel personally."
   - "If the company pays for any private fuel at all, the full fuel benefit charge applies with no partial relief, regardless of how much fuel the director paid for."
@@ -51,13 +51,13 @@ keyTakeaways:
 
 <p>Take a concrete example. A director in Bristol runs a marketing consultancy through their limited company. The company provides a Tesla Model 3 with a list price of £48,000. The CO2 emissions are 0g/km, so the appropriate percentage for 2025/26 is 2%. The car benefit is £48,000 × 2% = £960. That goes on the P11D regardless of who pays for fuel.</p>
 
-<p>The fuel benefit would be £27,800 (the car fuel multiplier for 2025/26) × 2% = £556. But if the director pays for all fuel personally, the fuel benefit is zero. The P11D shows £960 for the car and nothing for fuel.</p>
+<p>The fuel benefit would be £28,200 (the car fuel multiplier for 2025/26) × 2% = £564. But if the director pays for all fuel personally, the fuel benefit is zero. The P11D shows £960 for the car and nothing for fuel.</p>
 
 <h2>What Counts as "Paying for All Fuel"</h2>
 
 <p>HMRC is specific about what this means. The director must pay for all fuel used in the car. Not just private fuel. All of it. If the company reimburses the director for any business fuel, that counts as the company paying for fuel. And if the company pays for any private fuel, the full fuel benefit charge applies.</p>
 
-<p>There is no partial relief. If the company pays for one tank of private fuel in the year, the entire fuel benefit charge is triggered. The full £27,800 × appropriate percentage applies, with no reduction for the fuel the director paid themselves.</p>
+<p>There is no partial relief. If the company pays for one tank of private fuel in the year, the entire fuel benefit charge is triggered. The full multiplier (£28,200 for 2025/26, £29,200 for 2026/27) × appropriate percentage applies, with no reduction for the fuel the director paid themselves.</p>
 
 <p>This is the trap. A director might think "I pay for most fuel, the company only paid for a couple of business fill-ups." That couple of fill-ups triggers the full fuel benefit charge. The director ends up paying tax on a benefit they barely used.</p>
 

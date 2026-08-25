@@ -1,0 +1,27 @@
+{
+  "name": "ext-rd-tax",
+  "vertical": "r&d tax credits",
+  "provider_terms": [
+    "adviser",
+    "advisor",
+    "consultant",
+    "accountant",
+    "specialist"
+  ],
+  "pain_seeds": [
+    "r&d tax credit claim",
+    "r&d tax relief eligibility",
+    "hmrc r&d enquiry",
+    "r&d claim calculation",
+    "qualifying r&d activities"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "Out-of-family backtest control: known shrinking/tainted market (claims down 21 percent, HMRC crackdown). Prereg expectation LOW/FAIL."
+  ],
+  "audience_terms": [
+    "r&d claims",
+    "r&d tax relief"
+  ]
+}

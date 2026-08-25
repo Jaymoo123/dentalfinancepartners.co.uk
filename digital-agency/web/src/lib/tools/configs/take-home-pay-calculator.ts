@@ -1,11 +1,8 @@
 /**
  * Take-Home Pay Calculator — GenericTool config.
- * 2025/26 UK PAYE rates.
- *
- * STALE-FIGURE NOTICE: Student loan thresholds plan1/plan2/plan4 in the
- * compute lib are 2024/25 values (24,990 / 27,295 / 31,395).
- * Correct 2025/26 values are 26,065 / 28,470 / 32,745 (SLC 2025).
- * A deliberate correction commit must follow with user notification.
+ * 2026/27 UK PAYE rates (income tax bands and NI thresholds frozen, unchanged from 2025/26).
+ * Student loan thresholds below must stay in step with SL_THRESHOLDS in
+ * ../compute/take-home-pay.ts (2026/27 values).
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -20,12 +17,12 @@ export const takeHomePayTool: GenericTool = {
   name: "Take-Home Pay Calculator",
   category: "Tax planning",
   oneLiner:
-    "Standard UK PAYE salary calculator. 2025/26 income tax, NI, student loan plans and salary-sacrifice pension. Annual, monthly and weekly net.",
-  metaTitle: "Take-Home Pay Calculator 2025/26 | UK PAYE Net Pay",
+    "Standard UK PAYE salary calculator. 2026/27 income tax, NI, student loan plans and salary-sacrifice pension. Annual, monthly and weekly net.",
+  metaTitle: "Take-Home Pay Calculator 2026/27 | UK PAYE Net Pay",
   metaDescription:
-    "Free UK PAYE take-home pay calculator. 2025/26 income tax, employee NI, student loan plans 1-5 and pension sacrifice. Annual, monthly, weekly.",
+    "Free UK PAYE take-home pay calculator. 2026/27 income tax, employee NI, student loan plans 1-5 and pension sacrifice. Annual, monthly, weekly.",
   intro:
-    "Calculate your net take-home pay as an employee under UK PAYE. Includes income tax, employee NI, student loan repayment and salary-sacrifice pension. Uses 2025/26 rates.",
+    "Calculate your net take-home pay as an employee under UK PAYE. Includes income tax, employee NI, student loan repayment and salary-sacrifice pension. Uses 2026/27 rates.",
   embedHeight: 380,
   fields: [
     {
@@ -55,9 +52,9 @@ export const takeHomePayTool: GenericTool = {
       default: "none",
       options: [
         { value: "none", label: "None" },
-        { value: "plan1", label: "Plan 1 (pre-2012, threshold £24,990)" },
-        { value: "plan2", label: "Plan 2 (post-2012, threshold £27,295)" },
-        { value: "plan4", label: "Plan 4 (Scottish, threshold £31,395)" },
+        { value: "plan1", label: "Plan 1 (pre-2012, threshold £26,900)" },
+        { value: "plan2", label: "Plan 2 (post-2012, threshold £29,385)" },
+        { value: "plan4", label: "Plan 4 (Scottish, threshold £33,795)" },
         { value: "plan5", label: "Plan 5 (post-Aug 2023, threshold £25,000)" },
         { value: "pg", label: "Postgraduate (threshold £21,000)" },
       ],
@@ -95,7 +92,7 @@ export const takeHomePayTool: GenericTool = {
   explainer: {
     heading: "How UK PAYE works",
     paragraphs: [
-      "Under PAYE, your employer deducts income tax, employee NI and student loan repayments before paying you. The personal allowance (£12,570 in 2025/26) is the amount you can earn before income tax starts.",
+      "Under PAYE, your employer deducts income tax, employee NI and student loan repayments before paying you. The personal allowance (£12,570 in 2026/27) is the amount you can earn before income tax starts.",
       "Salary-sacrifice pension contributions reduce your taxable pay, saving both income tax and employee NI on the sacrificed amount.",
     ],
   },
@@ -103,7 +100,7 @@ export const takeHomePayTool: GenericTool = {
     {
       question: "What are the student loan thresholds?",
       answer:
-        "Plan 1 (pre-2012 English/Welsh loans): £24,990. Plan 2 (post-2012 English/Welsh): £27,295. Plan 4 (Scottish): £31,395. Plan 5 (post-Aug 2023): £25,000. Postgraduate: £21,000. All rates 9% except postgraduate at 6%.",
+        "For 2026/27: Plan 1 (pre-2012 English/Welsh loans) £26,900. Plan 2 (post-2012 English/Welsh) £29,385. Plan 4 (Scottish) £33,795. Plan 5 (post-Aug 2023) £25,000. Postgraduate £21,000. All rates 9% except postgraduate at 6%.",
     },
   ],
 };

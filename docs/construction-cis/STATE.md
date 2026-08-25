@@ -2,6 +2,24 @@
 
 Last updated 2026-06-16. The 8th estate site. **LIVE + HEALTHY at www.tradetaxspecialists.co.uk** (227 routes). Deployed to prod 2026-06-16 (the DB migrations had ALREADY been applied in the rushed pre-break session, so the site was serving traffic before this session; this deploy shipped the QA-clean content + 4 conversion levers).
 
+## 2026-08-25 — Port-branch merge: nothing pending for this site
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **30 commits** were on
+the branch and not in `origin/main`.
+
+**All 30 are already on production, so the merge ships nothing new here.** This site's
+live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
+(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
+READY, read 2026-08-25; this is what the production alias actually points at, which a
+`/v6/deployments` listing alone would not prove), and
+`git log 435cc12e..design/property-redesign-port --oneline -- 'construction-cis/'` returns 0.
+Main was BEHIND production for this site, not ahead of it.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'construction-cis/'`.
+Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
+sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
 ## 2026-06-16 session — finish + nail it (DONE)
 
 - **Content QA:** the 41 un-QA'd wave-2/3 posts taken through the Opus independent-QA chain over **4 rounds** to all_clear; pre-deploy gate `predeploy_gate.py --site construction-cis --qa-batch cc_wave2_3` = **PASS**. Corpus-wide seeded-error fixes (manager-direct): **s.62B = 100% not 20%**, **PDS deadline = 14 days after end of tax month**, **Reg 24ZA → 23A** (public-sector exemption, verified SI 2026/289 enacted — HP §10 + SITE_PLAN §8 corrected), CIS300 penalty maths, deemed-contractor £3m-rolling exit, retention tax-year allocation, stale software prices, cis-vs-paye take-home→tax-saving reframe.

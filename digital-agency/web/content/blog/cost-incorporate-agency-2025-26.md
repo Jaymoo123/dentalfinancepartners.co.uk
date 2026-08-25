@@ -105,7 +105,7 @@ keyTakeaways:
 <p>You open a business bank account. This can take one to two weeks depending on the bank. We recommend applying as soon as you have your company number. While you wait, we register for PAYE (employer reference) and VAT if needed. HMRC typically issues the VAT number within 10 working days.</p>
 
 <h3>Week 4: Transfer Assets and Start Trading</h3>
-<p>You sign the incorporation agreement (sometimes called a Section 162 election) to transfer assets to the company. You issue shares to yourself and any co-founders. You set up your director salary at £12,570 per year to stay within the primary NI threshold. You start billing clients from the limited company from this date.</p>
+<p>You sign the incorporation agreement to transfer assets to the company (Section 162 relief on the gain is a separate claim on your tax return, not part of this agreement, and for transfers on or after 6 April 2026 it must be claimed by the first anniversary of the 31 January following the tax year of the transfer). You issue shares to yourself and any co-founders. You set up your director salary at £12,570 per year to stay within the primary NI threshold. You start billing clients from the limited company from this date.</p>
 
 <p>Total time from decision to trading: four to six weeks. If you need it faster, you can compress this to two weeks by using the premium Companies House service and a bank that opens accounts within 48 hours (like Tide, Starling, or Monese).</p>
 

@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "Horton Hall SDLT Case: FTT on Residential Grounds Test"
 metaDescription: "White & Kane v HMRC [2023] UKFTT 866 (TC) confirmed the fields at Horton Hall were residential grounds under FA 2003 s.116(1)(b)."
 altText: "A view of a country estate with surrounding fields and outbuildings illustrating the residential grounds test under FA 2003 s.116(1)(b) addressed in White & Kane v HMRC (the Horton Hall SDLT case)"
-image: "https://images.pexels.com/photos/1500459/pexels-photo-1500459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/1500459/pexels-photo-1500459.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"
@@ -187,6 +187,6 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A16. Case-analysis deep-dive on Wh
 <li><strong>Hyman v HMRC [2022] EWCA Civ 185</strong>: Court of Appeal controlling authority on FA 2003 s.116(1)(b) grounds limb.</li>
 <li><strong>The How Development 1 Ltd v HMRC [2023] UKUT 84 (TCC)</strong>: Upper Tribunal leading application of the Hyman test.</li>
 <li><strong>Suterwalla v HMRC [2024] UKUT 188 (TCC)</strong>: Upper Tribunal authority on paddock-with-grazing-licence sub-line.</li>
-<li><strong>HMRC SDLT Manual SDLTM00385+</strong> "Gardens and grounds": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00385">gov.uk SDLTM00385</a></li>
-<li><strong>HMRC SDLT Manual SDLTM00370+</strong> "Residential property definition": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00370">gov.uk SDLTM00370</a></li>
+<li><strong>HMRC SDLT Manual SDLTM00440+</strong> "Gardens and grounds": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00440">gov.uk SDLTM00440</a></li>
+<li><strong>HMRC SDLT Manual SDLTM00365+</strong> "Residential property definition": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00365">gov.uk SDLTM00365</a></li>
 </ul>

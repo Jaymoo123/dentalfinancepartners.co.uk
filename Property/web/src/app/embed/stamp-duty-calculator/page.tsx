@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Stamp Duty Calculator",
   description:
     "Free SDLT (stamp duty) calculator for England & Northern Ireland, including the 5% additional-dwelling surcharge.",
-  // Embed surface — do not index (the canonical, indexable version lives at
+  // Embed surface, do not index (the canonical, indexable version lives at
   // /calculators/stamp-duty-calculator).
   robots: { index: false, follow: false },
   alternates: { canonical: "https://www.propertytaxpartners.co.uk/calculators/stamp-duty-calculator" },

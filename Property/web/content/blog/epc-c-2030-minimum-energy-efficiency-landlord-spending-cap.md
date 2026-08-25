@@ -5,10 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/e
 date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "EPC C 2030 Landlord Guide: Enacted Floor vs Policy Aspiration"
+metaTitle: "EPC C 2030 for Landlords: Enacted Floor vs Policy Aspiration"
 metaDescription: "The EPC E + £3,500 cap floor is enacted statute (SI 2015/962). EPC C by 2030 is policy aspiration only with no Statutory Instrument laid as at 2026-05-24."
 altText: "Landlord reviewing an EPC certificate and an MEES exemption-register printout, planning energy-efficiency upgrades to a rental property"
-image: "https://images.pexels.com/photos/5273548/pexels-photo-5273548.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/5273548/pexels-photo-5273548.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 h1: "EPC C by 2030 and the Landlord Spending Cap: What Is Enacted vs What Is Policy"
 summary: "The current enacted minimum energy-efficiency standard for private-rented properties in England and Wales is EPC E, with a landlord spending cap of £3,500 (including VAT) under The Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 (SI 2015/962). The widely-cited EPC C by 2030 trajectory (and the £10,000 cap that goes with it) is government policy aspiration only; no Statutory Instrument has been laid to give it statutory force as of 2026-05-24. This guide separates the enacted current state from the policy direction, explains how the current MEES regime operates in practice, and sets out the planning position landlords should adopt for the coming years."
 schema: ""
@@ -18,11 +18,11 @@ faqs:
   - question: "Is EPC C by 2030 now law?"
     answer: "No, as of 2026-05-24. The EPC C by 2030 trajectory (and the related EPC C by 2028 for new tenancies) is government policy aspiration. The current MEES floor remains EPC E. No Statutory Instrument has been laid to give the EPC C trajectory statutory force. Verified at the gov.uk Domestic Private Rented Property Minimum Energy Efficiency Standard landlord guidance page on 2026-05-24. The government has stated it is exploring policy design options following the 2026 consultation, but the consultation outcome has not yet been translated into legislation."
   - question: "What is the landlord spending cap on energy-efficiency improvements?"
-    answer: "£3,500 (including VAT) for domestic properties under reg.25(2) of SI 2015/962. The cap is the maximum a landlord must spend on energy-efficiency improvements before being entitled to register a high-cost exemption. The exemption is registered on the PRS Exemptions Register and is valid for 5 years; the landlord must reassess on renewal. The widely-cited £10,000 cap is the figure consulted on for the EPC C trajectory but has not been legislated; the £3,500 cap remains the enacted figure as of 2026-05-24."
+    answer: "£3,500 (including VAT) for domestic properties under reg 24 of SI 2015/962 (as amended in 2019); the high-cost exemption itself is registered under reg 25. The cap is the maximum a landlord must spend on energy-efficiency improvements before being entitled to register a high-cost exemption. The exemption is registered on the PRS Exemptions Register and is valid for 5 years; the landlord must reassess on renewal. The widely-cited £10,000 cap is the figure consulted on for the EPC C trajectory but has not been legislated; the £3,500 cap remains the enacted figure as of 2026-05-24."
   - question: "What happens if my rental property is EPC F or G?"
     answer: "You cannot lawfully let it without either bringing it up to EPC E (typically through insulation, double glazing, heating upgrades, or a combination) or registering an exemption on the PRS Exemptions Register. The exemptions available include: spent the £3,500 cap and unable to reach EPC E; landlord cannot access third-party consent; landlord cannot get green-mortgage finance; works would devalue the property by more than 5%; new landlord (6-month grace from purchase); temporary exemption (6 months) where works have just started but not yet certified. Each exemption requires evidence and the register entry must be kept current."
   - question: "What is the penalty for letting a property below the MEES floor?"
-    answer: "Civil penalty up to £5,000 per breach for domestic properties (reg.39 of SI 2015/962), or up to £150,000 per breach for non-domestic properties. Enforced by local weights and measures authorities under the Energy Performance of Buildings Regulations 2012 framework. The penalty regime has been in place since 2018 for domestic; enforcement activity historically has been patchy but increased after 2023 with several high-profile prosecutions. Repeat breaches and intentional sub-standard letting attract higher penalties within the cap. There is no statutory uplift to these figures as of 2026-05-24."
+    answer: "Domestic: civil penalties under reg 40 of SI 2015/962, £2,000 where the breach is under 3 months and £4,000 where it is 3 months or more, plus £1,000 for false or misleading register information and £2,000 for failing to comply with a compliance notice, all subject to a £5,000 aggregate cap per property per breach period under reg 40(6). Non-domestic: reg 41, up to £150,000 for the most serious breaches (scaled by rateable value and duration). Enforced by local weights and measures authorities. Enforcement activity increased after 2023. Citations corrected and re-verified against the SI on 2026-08-15."
   - question: "Can I claim tax relief on energy-efficiency improvements I make to a rental property?"
     answer: "The capital-versus-revenue split applies. Improvements that materially upgrade the property's specification (replacing single-glazing with double-glazing, adding insulation where there was none, replacing an old boiler with a high-efficiency heat pump) are typically capital expenditure: they add to the CGT base cost rather than reducing this year's rental tax bill. Like-for-like maintenance (replacing a broken double-glazed unit with an equivalent unit, replacing an EPC-equivalent boiler) is revenue and deductible against rental income. Grant receipts (ECO4, GBIS, BUS) reduce the CGT base cost of the underlying capital expenditure rather than counting as rental income."
   - question: "Does the £3,500 cap apply per property or per landlord?"
@@ -53,7 +53,7 @@ faqs:
 <li><strong>1 April 2023:</strong> all continuing tenancies of non-domestic properties must meet EPC E or be registered for exemption (new non-domestic lets have been subject to MEES since 1 April 2018).</li>
 </ul>
 
-<p>The landlord spending cap is set at <strong>£3,500 (including VAT)</strong> under reg.25(2) for domestic properties. The cap is the maximum sum a landlord must spend on energy-efficiency improvements before being entitled to register a high-cost exemption. The cap is property-specific; a portfolio landlord faces a notional total cap of (number of sub-standard properties × £3,500).</p>
+<p>The landlord spending cap is set at <strong>£3,500 (including VAT)</strong> under reg 24 of SI 2015/962 (as amended in 2019) for domestic properties. The cap is the maximum sum a landlord must spend on energy-efficiency improvements before being entitled to register a high-cost exemption. The cap is property-specific; a portfolio landlord faces a notional total cap of (number of sub-standard properties × £3,500).</p>
 
 <h3>What the Cap Buys</h3>
 
@@ -75,7 +75,7 @@ faqs:
 
 <p>SI 2015/962 includes a range of exemptions from the EPC E floor. Each exemption requires registration on the PRS Exemptions Register and is valid for a defined period (typically 5 years; some 6 months for transitional cases). The available exemptions:</p>
 
-<h3>High-Cost Exemption (Reg.25(2))</h3>
+<h3>High-Cost Exemption (reg 25; the £3,500 cap sits in reg 24)</h3>
 
 <p>The landlord has spent £3,500 (including VAT) on energy-efficiency improvements identified by an EPC or by independent expert advice as appropriate, and the property still does not reach EPC E. The exemption is valid for 5 years; on renewal the landlord must reassess against any improvements achievable within a fresh cap (though in practice many properties remain at the same band on renewal).</p>
 
@@ -96,7 +96,7 @@ faqs:
 <p>Works to bring the property to EPC E have started but cannot be completed before the tenancy starts. Valid for 6 months from the date the works started.</p>
 
 <aside>
-<p><strong>Many portfolio landlords carry exemptions across multiple properties that have not been reassessed at the 5-year renewal point. The exemption regime is honest-broker: enforcement authorities can and do check the register, and an expired exemption converts the property into an unlawful let with civil-penalty exposure under reg.39. A periodic exemption audit (typically at the same time as the annual gas-safety renewal) is good portfolio hygiene.</strong></p>
+<p><strong>Many portfolio landlords carry exemptions across multiple properties that have not been reassessed at the 5-year renewal point. The exemption regime is honest-broker: enforcement authorities can and do check the register, and an expired exemption converts the property into an unlawful let with civil-penalty exposure under reg 40. A periodic exemption audit (typically at the same time as the annual gas-safety renewal) is good portfolio hygiene.</strong></p>
 </aside>
 
 <h2>The Policy Aspiration: Why EPC C 2030 Is Not Yet Law</h2>
@@ -121,14 +121,14 @@ faqs:
 
 <h2>Compliance Posture for the Enacted Current State</h2>
 
-<p>For each property in a rental portfolio, the compliance position should be assessed against the EPC E floor:</p>
+<p>For each property in a rental portfolio, the compliance position should be assessed against the EPC E floor set by <a href="/blog/landlord-tax-essentials/mees-regulations-landlords">how the MEES regulations apply to landlords</a>:</p>
 
 <ol>
 <li><strong>Pull the current EPC.</strong> Check the EPC register (gov.uk/find-energy-certificate). If the current EPC is more than 5 years old, consider a refresh for accuracy.</li>
 <li><strong>Is the EPC band E or above?</strong> If yes, MEES is satisfied as long as the property continues to be capable of an E rating; no further action needed beyond annual document refresh.</li>
 <li><strong>Is the EPC band F or G?</strong> The property cannot lawfully be let without either reaching EPC E or registering an exemption.</li>
 <li><strong>If F/G and not yet remediated:</strong> commission a consultant or surveyor to identify the works needed to reach EPC E within the £3,500 cap. Implement them.</li>
-<li><strong>If the works cost more than £3,500 and the property still cannot reach E:</strong> register a high-cost exemption (reg.25(2)).</li>
+<li><strong>If the works cost more than £3,500 and the property still cannot reach E:</strong> register a high-cost exemption (reg 25; cap set by reg 24 as amended).</li>
 <li><strong>If consent is unavailable for needed works:</strong> register the third-party-consent exemption (reg.31) with evidence of refusal.</li>
 <li><strong>If works would devalue the property by 5%+:</strong> obtain RICS valuation opinion and register the devaluation exemption (reg.32).</li>
 </ol>
@@ -171,7 +171,7 @@ faqs:
 
 <h3>VAT Treatment</h3>
 
-<p>Most residential lettings are exempt from VAT. The landlord pays VAT-inclusive on inputs (the £3,500 cap is explicitly inclusive of VAT under reg.25(2)). VAT cannot be reclaimed because the rental business is exempt. The VAT-inclusive cost is the relevant figure for both the cap calculation and the CGT base-cost or revenue-deduction calculation.</p>
+<p>Most residential lettings are exempt from VAT. The landlord pays VAT-inclusive on inputs (the £3,500 cap is explicitly inclusive of VAT under reg 24 of SI 2015/962 as amended). VAT cannot be reclaimed because the rental business is exempt. The VAT-inclusive cost is the relevant figure for both the cap calculation and the CGT base-cost or revenue-deduction calculation.</p>
 
 <h2>What Happens If You Just Wait for the EPC C Trajectory to Be Legislated</h2>
 
@@ -195,7 +195,7 @@ faqs:
 
 <h3>"The cap is now £10,000"</h3>
 
-<p>False. The £3,500 cap under reg.25(2) of SI 2015/962 remains the enacted figure. The £10,000 cap is a consulted-on figure for the EPC C trajectory; it has not been legislated.</p>
+<p>False. The £3,500 cap under reg 24 of SI 2015/962 (as amended in 2019) remains the enacted figure. The £10,000 cap is a consulted-on figure for the EPC C trajectory; it has not been legislated.</p>
 
 <h3>"Properties at EPC D can be let without further action"</h3>
 

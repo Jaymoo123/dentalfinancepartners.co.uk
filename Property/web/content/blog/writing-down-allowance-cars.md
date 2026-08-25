@@ -8,7 +8,7 @@ category: Section 24 & Tax Relief
 metaTitle: 'Writing Down Allowance on Cars 2026/27 | 14% & 6% Rates'
 metaDescription: 'Writing down allowance on cars for UK landlords: main rate cut to 14% from April 2026, 6% special rate, 100% FYA for zero-emission cars, worked examples.'
 altText: "UK property investor reviewing car capital allowance figures and CO2 emissions paperwork at a desk"
-image: https://images.pexels.com/photos/7519351/pexels-photo-7519351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/7519351/pexels-photo-7519351.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 h1: 'Writing Down Allowance on Cars: 2026/27 Rules for UK Property Investors'
 summary: 'Writing down allowance (WDA) lets you deduct the cost of a business car against your property profits over time. The main pool rate falls from 18% to 14% from April 2026 (CAA 2001 s.56, as amended by Finance Act 2026), the special rate pool stays at 6%, and only new and unused zero-emission (0g/km) cars qualify for the 100% first-year allowance under CAA 2001 s.45D. This guide explains which pool your car sits in, how the reducing-balance calculation works, the April 2026 rate change, electric-car treatment, and how WDA interacts with Section 24 and Making Tax Digital.'
 schema: ''
@@ -126,6 +126,18 @@ imageCredit:
 <h2>Making Tax Digital and car allowances</h2>
 <p>Making Tax Digital (MTD) for Income Tax is live and is being phased in by income level: landlords and sole traders with gross income over <strong>£50,000</strong> are mandated from <strong>6 April 2026</strong>, over <strong>£30,000</strong> from <strong>6 April 2027</strong>, and over <strong>£20,000</strong> from <strong>6 April 2028</strong>. The gross income test for property looks at rental turnover, not profit.</p>
 <p>Once in scope you must keep digital records and file quarterly updates. Capital allowances, including your car WDA, are dealt with in the year-end final declaration rather than in the quarterly updates, but you still need clean digital records of the car cost, disposal proceeds and business-mileage split. For the mandation detail and what counts towards the threshold, see our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords guide</a>.</p>
+
+<h2>Pools, rates and what actually limits a car claim</h2>
+<h3>What does writing down allowance mean?</h3>
+<p>WDA is the writing down allowance, a capital allowance that deducts a set percentage of an asset's remaining cost from taxable profit each year. For cars that percentage is 14% in the main pool or 6% in the special rate pool for 2026/27, applied to the balance brought forward rather than to the original cost. Because the balance shrinks every year, so does the deduction, which is why WDA spreads relief over a long period instead of giving it up front.</p>
+<h3>Do cars qualify for writing down allowance?</h3>
+<p>Almost every business car does, in one pool or the other, so the CO2 figure changes the rate rather than whether you can claim at all: 14% for a car emitting 50g/km or less, 6% above that. The exception is the new unused zero-emission car, which never reaches a pool because it takes the 100% first-year allowance instead. Where a company owns the car, the company claims the allowance in full and the director is taxed on the car benefit in kind, rather than the allowance being restricted for private use.</p>
+<h3>What goes in the special rate pool, and what is the rate for 2026/27?</h3>
+<p>Cars with CO2 emissions above 50g/km go into the special rate pool, and the rate is <strong>6%</strong> for 2026/27, unchanged by the April 2026 reform. Only the main pool rate moved, from 18% to 14%. The difference compounds: a £20,000 car in the special rate pool gives £1,200 of relief in year one and carries £18,800 forward, against £2,800 and £17,200 for the same car in the main pool.</p>
+<h3>Is there a maximum value for a writing down allowance claim on a car?</h3>
+<p>No, there is no cap on the cost of a car for writing down allowance purposes. Which pool the car falls into depends on its CO2 emissions and whether it is new and unused, not on its price, and the rate is applied to the whole cost. What does limit the claim is business use: where the car has private use it sits in a single-asset pool and only the business proportion is allowable, so 70% business use on a main-pool car turns a £2,800 first-year allowance into £1,960 of relief.</p>
+<h3>When does the Annual Investment Allowance apply to vehicles?</h3>
+<p>Never to cars, but it does apply to vans and other goods vehicles, up to £1 million. Cars are excluded from the AIA outright, and from the 40% first-year allowance introduced for main-pool plant and machinery from 1 January 2026, which leaves only the pool-based WDA at 14% or 6% or the 100% first-year allowance for a new, unused zero-emission car. A van is plant and machinery rather than a car, so the AIA can write off its full cost in the year of purchase.</p>
 
 <h2>Common mistakes to avoid</h2>
 <ul>

@@ -14,6 +14,8 @@ Every site's lead lands in the shared `leads` table (the system of record, LD-07
 
 A Google Sheets mirror (`/api/leads/sync`) exists on the same host (built, pending Google-side setup).
 
+The Telegram lead-ops approval bot (2026-08-19) also lives on this host (`/api/telegram/webhook`, `/api/cron/lead-raw-batch`); its runbook is `docs/_engines/LEAD_OPS_BOT.md`.
+
 **Plainly: lead notification emails and AI enrichment for ALL SIX sites are processed by code deployed inside Property's Vercel app.** A lead is never lost if the host is down (LD-07 fail-open: the row is durable before any webhook fires, and pg_net failures don't roll back the insert), but notifications/enrichment for any site silently stop if:
 
 - Property's deployment is broken or rolled back to a build missing these routes

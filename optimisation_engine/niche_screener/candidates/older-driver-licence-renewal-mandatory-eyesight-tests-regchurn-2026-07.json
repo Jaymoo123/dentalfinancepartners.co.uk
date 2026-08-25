@@ -1,0 +1,27 @@
+{
+  "candidate_id": "older-driver-licence-renewal-mandatory-eyesight-tests-regchurn-2026-07",
+  "vertical": "older driver licence renewal (mandatory eyesight tests)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/introducing-mandatory-eyesight-testing-for-older-drivers",
+      "excerpt": "Seeks views on the proposals to introduce mandatory eyesight testing for older drivers in Great Britain. ",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "introducing mandatory eyesight testing for older drivers"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 6m licence holders aged 70+ in Great Britain (DVLA scale)",
+    "proof": "stated in https://www.gov.uk/government/consultations/introducing-mandatory-eyesight-testing-for-older-drivers"
+  },
+  "event_hypothesis": {
+    "what": "test cost at each 3-year renewal, risk of licence loss",
+    "date": "unnamed",
+    "source": "https://www.gov.uk/government/consultations/introducing-mandatory-eyesight-testing-for-older-drivers"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

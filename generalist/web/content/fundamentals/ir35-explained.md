@@ -21,7 +21,7 @@ faqs:
   - question: "What is the difference between inside IR35 and outside IR35?"
     answer: "Inside IR35 means HMRC considers you a disguised employee. Your limited company must deduct PAYE and NI from your income, and you cannot take dividends from that contract income. Outside IR35 means you are genuinely self-employed. You can pay yourself through dividends, benefit from lower tax rates, and control your own tax planning. The distinction affects your take-home pay significantly, often by 10-20 percentage points."
   - question: "Who is responsible for determining IR35 status?"
-    answer: "For medium and large private sector clients (turnover above £10.2m, balance sheet above £5.1m, or more than 50 employees), the client determines IR35 status and issues a Status Determination Statement. For small clients (below those thresholds), the contractor is responsible for their own determination. Public sector clients have been responsible since 2017. If you are unsure about your client's size, ask them or check their latest filed accounts at Companies House."
+    answer: "For medium and large private sector clients (turnover above £15m, balance sheet above £7.5m, or more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), the client determines IR35 status and issues a Status Determination Statement. For small clients (below those thresholds), the contractor is responsible for their own determination. Public sector clients have been responsible since 2017. If you are unsure about your client's size, ask them or check their latest filed accounts at Companies House."
   - question: "Can I still claim the 5% allowance if I am inside IR35?"
     answer: "Yes. The 5% allowance is a flat-rate deduction from your contract income when calculating the deemed employment payment. It covers the administrative and overhead costs of running your limited company, including accountancy fees, insurance, and software. You get the full 5% regardless of your actual overheads. You cannot claim actual expenses instead of the 5% allowance."
   - question: "What happens if HMRC decides I was inside IR35 but I was paying myself through dividends?"
@@ -54,7 +54,7 @@ faqs:
 
 <p><strong>Inside IR35:</strong> Your limited company receives the contract income, but must deduct PAYE and employee NI before paying you. Your company also pays employer NI. You cannot take dividends from that income. Your effective tax rate is significantly higher, often leaving you with around 60-70% of the contract value after all taxes, compared to 75-85% outside IR35.</p>
 
-<p><strong>Outside IR35:</strong> Your limited company receives the contract income gross. You can pay yourself a small salary (typically up to the NI threshold) and take the rest as dividends, paying corporation tax at 19% or 25% on the profit and dividend tax at 8.75%, 33.75% or 39.35% depending on your total income. You control your own tax planning.</p>
+<p><strong>Outside IR35:</strong> Your limited company receives the contract income gross. You can pay yourself a small salary (typically up to the NI threshold) and take the rest as dividends, paying corporation tax at 19% or 25% on the profit and dividend tax at 10.75%, 35.75% or 39.35% (2026/27 rates) depending on your total income. You control your own tax planning.</p>
 
 <h3>The Three Key Tests HMRC Uses</h3>
 
@@ -124,7 +124,7 @@ faqs:
 
 <p>From 6 April 2021, the off-payroll working rules were extended to medium and large private sector clients. This was the change that sent shockwaves through the UK contracting community. Many contractors saw their outside IR35 contracts reclassified as inside IR35 overnight. Some took rate increases to compensate. Others moved to umbrella companies or left contracting entirely.</p>
 
-<p>A medium or large client is one that meets two of the following three criteria: annual turnover above £10.2 million, balance sheet total above £5.1 million, or more than 50 employees. If the client is small (turnover below £10.2 million, balance sheet below £5.1 million, and fewer than 50 employees), the contractor remains responsible for their own IR35 determination, just as before 2021.</p>
+<p>A medium or large client is one that meets two of the following three criteria: annual turnover above £15 million, balance sheet total above £7.5 million, or more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2 million and £5.1 million). If the client is small (within those thresholds), the contractor remains responsible for their own IR35 determination, just as before 2021. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <h3>Small Clients: The Contractor Remains Responsible</h3>
 
@@ -192,7 +192,7 @@ faqs:
 <li>Deemed employment payment: £92,800 - £12,570 - £4,640 - £8,000 = £67,590</li>
 </ul>
 
-<p>JamesTech Ltd must process the deemed payment of £67,590 through payroll. The company pays employer NI of 13.8% on the amount above the secondary threshold (£9,100 for 2025/26). James pays employee NI at 8% on the amount above the primary threshold (£12,570) and 2% above the upper earnings limit (£50,270). He also pays income tax at 20% on the basic rate band and 40% on the higher rate band.</p>
+<p>JamesTech Ltd must process the deemed payment of £67,590 through payroll. The company pays employer NI of 15% on the amount above the secondary threshold (£5,000 from 6 April 2025). James pays employee NI at 8% on the amount above the primary threshold (£12,570) and 2% above the upper earnings limit (£50,270). He also pays income tax at 20% on the basic rate band and 40% on the higher rate band.</p>
 
 <p>The total tax and NI cost is significantly higher than if James were outside IR35 and taking dividends. This is why contractors fight to stay outside IR35.</p>
 
@@ -304,7 +304,7 @@ faqs:
 
 <h3>IR35 and Business Asset Disposal Relief</h3>
 
-<p>Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, allows you to pay 14% CGT on the first £1 million of gains when you sell or close your company. But BADR has strict conditions. You must have been an officer or employee of the company for at least two years, and you must hold at least 5% of the shares and 5% of the voting rights.</p>
+<p>Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, allows you to pay 18% CGT (the rate from 6 April 2026) on the first £1 million of gains when you sell or close your company. But BADR has strict conditions. You must have been an officer or employee of the company for at least two years, and you must hold at least 5% of the shares and 5% of the voting rights.</p>
 
 <p>If you have been inside IR35 for the entire life of your company, HMRC may argue that you were not genuinely trading, and therefore BADR does not apply. This is a complex area. If you are planning to close your company and claim BADR, you need to show that your company was a genuine business, not just a vehicle for disguised employment.</p>
 

@@ -5,10 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "ATED Rental Property Relief: Mechanics for Property Companies"
+metaTitle: "ATED Rental Property Relief: Mechanics for Companies"
 metaDescription: "How ATED Property Rental Business Relief works in 2026/27: the connected-person test, commercial terms, vacancies that still qualify, and how to claim."
 altText: "Red brick London apartment building, representing a corporate-owned residential let qualifying for ATED rental property relief"
-image: "https://images.pexels.com/photos/16010070/pexels-photo-16010070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/16010070/pexels-photo-16010070.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Aleksandar Spasojevic
   photographer_url: https://www.pexels.com/@spal

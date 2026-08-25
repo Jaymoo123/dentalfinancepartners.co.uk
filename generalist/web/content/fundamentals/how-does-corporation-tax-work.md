@@ -115,7 +115,7 @@ faqs:
 <li><strong>Annual Investment Allowance (AIA)</strong>: 100% relief on the first £1,000,000 of qualifying expenditure per year (until 31 March 2026, then confirmed at £500,000 from April 2026)</li>
 <li><strong>Full Expensing</strong>: 100% relief on main-rate plant and machinery (new, not second-hand) for limited companies. This is permanent from 1 April 2023.</li>
 <li><strong>Special Rate Pool</strong>: 6% per year on integral features, long-life assets, and cars with CO2 emissions above 50g/km</li>
-<li><strong>Main Rate Pool</strong>: 18% per year on general plant and machinery not covered by AIA or Full Expensing</li>
+<li><strong>Main Rate Pool</strong>: 14% per year on general plant and machinery not covered by AIA or Full Expensing, for accounting periods beginning on or after 1 April 2026 (it was 18% for earlier periods, cut by FA 2026 s.28)</li>
 </ul>
 <p>If you buy a new laptop for £1,200, you can claim Full Expensing and deduct the full £1,200 from your profits in the year of purchase. If you buy a second-hand van for £18,000, you claim AIA and deduct the full amount. Capital allowances are a powerful tool for reducing your tax bill.</p>
 

@@ -1,0 +1,79 @@
+{
+  "candidate_id": "immigration-solicitor-leadmkt-2026-07",
+  "vertical": "immigration solicitor",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.promo-seo.uk/lead-generation/industries/law-firm/immigration/",
+      "excerpt": "Generate high intent immigration solicitor leads ... PromoSEO operates on fixed cost per lead and pay per conversion pricing because performance alignment reduces ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.clio.com/blog/immigration-law-lead-generation/",
+      "excerpt": "15 Apr 2025 — Here are 10 lead generation tactics specifically for immigration law firms, along with real-world examples you can start using now. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkedin.com/pulse/3-unconventional-lead-generation-hacks-immigration-lawyers-kirtunia-tyyrc",
+      "excerpt": "I went down a rabbit hole and found an offbeat lead generation hack that's quietly bringing immigration attorneys a steady stream of new clients. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://eqnexus.org/lead-generation",
+      "excerpt": "We generate leads across core legal areas including family law, immigration, conveyancing, employment disputes and more. You choose your focus and we do the ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadgen.click-vision.com/immigration-law-firm-leads",
+      "excerpt": "Lead Brokers, Our Service. Shared or sold-to-many leads, Fresh, exclusive immigration law firm leads. Pay per call or per lead, One flat service fee. Calls from ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://legalconversioncenter.com/blog/lead-generation-strategies/",
+      "excerpt": "16 Oct 2022 — Legal Conversion Center discusses nine lead generation strategies to help immigration attorneys boost leads and conversions.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lucrativelegal.com/law-firm-marketing/immigration-attorney-advertising/",
+      "excerpt": "Legal Leads Group is a leading Immigration Law Firm lead generation agency that sets itself apart by offering a comprehensive and tailored approach. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "3 unconventional lead generation hacks for immigration ...",
+    "9 lead generation strategies for immigration lawyers",
+    "immigration law firm leads | lead generation & marketing",
+    "immigration law firm marketing",
+    "immigration lead generation - immigration solicitor leads",
+    "immigration solicitor",
+    "lead generation - eqnexus.org",
+    "lead generation strategies for immigration law firms - clio"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK immigration solicitor providers already paying per lead",
+    "proof": "7 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

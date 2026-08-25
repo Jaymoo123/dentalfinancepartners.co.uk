@@ -115,7 +115,7 @@ imageCredit:
 
 <p>To support an AIA claim, you need to keep records of each qualifying asset: the purchase invoice, proof of ownership, the date of acquisition, and the cost. HMRC may ask for these records during a compliance check. For assets bought as part of a practice acquisition, you also need the Section 198 election and the seller's capital allowances pool history.</p>
 
-<p>Good record-keeping also helps you track the capital allowances pool balance for assets that do not qualify for AIA or for which you have claimed only partial AIA. Writing down allowances at 18% (main pool) or 6% (special rate pool) apply to the remaining balance.</p>
+<p>Good record-keeping also helps you track the capital allowances pool balance for assets that do not qualify for AIA or for which you have claimed only partial AIA. Writing down allowances at 14% (main pool) or 6% (special rate pool) apply to the remaining balance. The main pool rate was 18% before April 2026 and was cut to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax.</p>
 
 <h2>When to Seek Specialist Advice</h2>
 

@@ -1,0 +1,28 @@
+{
+  "candidate_id": "landlord-compliance-renters-rights-act-penalties-regchurn-2026-07",
+  "vertical": "landlord compliance (Renters' Rights Act penalties)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "legislation",
+      "url": "http://www.legislation.gov.uk/uksi/2026/319/made",
+      "excerpt": "These Regulations amend the Housing Act 2004 (c. 34) and the Housing and Planning Act 2016 (c. 22) to increase the maximum penalty which may be imposed for certain housing offences and breach of banning orders under section 249A(1) of the Housing Act 2004 and section 23(1) of the Housing and Plannin",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "the financial penalties (housing offences and breach of banning orders) regulations 2026",
+    "financial penalties housing offences and breach of banning orders"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 2.3m private landlords in England (English Private Landlord Survey scale)",
+    "proof": "stated in http://www.legislation.gov.uk/uksi/2026/319/made"
+  },
+  "event_hypothesis": {
+    "what": "civil financial penalties for housing offences and banning-order breaches under the Renters' Rights framework",
+    "date": "unnamed",
+    "source": "http://www.legislation.gov.uk/uksi/2026/319/made"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

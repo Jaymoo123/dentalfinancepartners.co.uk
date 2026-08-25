@@ -9,12 +9,17 @@
  * calculator config lives separately in lib/calculators/premium/registry.ts so
  * the indexable calculator fleet / sitemap / gallery are never touched.
  *
- * FEATURE FLAGS (the whole point of Phase A): every asset carries `enabled`.
- * Nothing is ever rendered/linked/emailed for an asset whose `enabled` is false
- * (or whose underlying file does not yet exist). In Phase A every flag is false,
- * so resourceForTopic() reports "nothing enabled" for every topic and the live
- * site renders identically to today. Onboarding a category = author the asset,
- * drop the file in public/resources, then flip the single `enabled` flag.
+ * FEATURE FLAGS: every asset carries `enabled`. Nothing is rendered or linked
+ * for an asset whose `enabled` is false (or whose underlying file does not yet
+ * exist). Onboarding a category = author the asset, drop the file in
+ * public/resources, then flip the single `enabled` flag.
+ *
+ * NOT Phase A any more, whatever an older copy of this comment said: twelve
+ * assets are enabled and their .xlsx files are served publicly from
+ * /resources/<topic>, with no email gate in front of them since ResourceGate
+ * lost its A/B on 2026-06-16. Capture happens through the qualified
+ * GateOrForm/MiniCapture block instead. Whether an ungated download is the
+ * intended end state is an open product question, not a bug.
  */
 import type { TopicKey } from "@/lib/intent/taxonomy";
 
@@ -133,6 +138,21 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     magnetBlurbTemplate:
       "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
   },
+  "landlord-compliance": {
+    topic: "landlord-compliance",
+    toolId: "landlord-compliance-premium",
+    // ponytail: guide only. No spreadsheet exists for this topic and the duty
+    // map does not need one; add an xlsx entry if a model is ever authored.
+    xlsx: null,
+    guide: {
+      slug: "landlord-compliance",
+      label: "Landlord compliance guide",
+      enabled: true,
+    },
+    magnetTitle: "The landlord compliance duty map",
+    magnetBlurbTemplate:
+      "Every safety, energy and licensing duty in one place, with the source law and the tax treatment. Enter your email and we'll send it over.",
+  },
   "stamp-duty": {
     topic: "stamp-duty",
     toolId: "stamp-duty-premium",
@@ -196,6 +216,22 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     magnetTitle: "The specialist property tax toolkit",
     magnetBlurbTemplate:
       "A working Excel model with live formulas, plus the plain-English written guide. Enter your email and we'll send you both.",
+  },
+  // Guide-only topic: the written hub exists, there is no Excel model and there
+  // is unlikely ever to be one (leasehold premiums are a surveyor's valuation,
+  // not a spreadsheet). Linked directly from the /leasehold pillar.
+  leasehold: {
+    topic: "leasehold",
+    toolId: "leasehold-premium",
+    xlsx: null,
+    guide: {
+      slug: "leasehold",
+      label: "Leasehold resource hub",
+      enabled: true,
+    },
+    magnetTitle: "The leasehold resource hub",
+    magnetBlurbTemplate:
+      "Every statute, commencement instrument and HMRC reference a leaseholder needs, with what each one settles.",
   },
   services: {
     topic: "services",

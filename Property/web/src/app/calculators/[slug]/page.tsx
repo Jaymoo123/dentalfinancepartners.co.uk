@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { relatedItemsFromLinks } from "@/lib/blog";
+import { FaqSection } from "@/components/ui/FaqSection";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { Eyebrow, Prose } from "@/components/ui/page-blocks";
 import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
@@ -63,6 +67,7 @@ export default async function CalculatorToolPage({ params }: Props) {
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Calculators", href: "/calculators" },
@@ -70,59 +75,142 @@ export default async function CalculatorToolPage({ params }: Props) {
             ]}
           />
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{tool.name}</h1>
-          <p className="mt-4 max-w-2xl text-lg text-slate-300">{tool.intro}</p>
+          <p className="mt-4 max-w-3xl text-lg text-slate-300">{tool.intro}</p>
         </div>
       </section>
 
       <section className="bg-slate-50 py-12 sm:py-16">
+        {/* No inner clamp: `max-w-5xl` left the calculator 64px narrower than
+            every other section on the page, so its left and right edges did not
+            line up with the heading above it or the FAQ below. */}
         <div className={siteContainerLg}>
-          <div className="max-w-5xl">
-            <CalculatorClient slug={tool.slug} variant="page" />
-            <CalculatorPageResources slug={tool.slug} pageTitle={tool.name} />
-          </div>
+          <CalculatorClient slug={tool.slug} variant="page" />
+          <CalculatorPageResources slug={tool.slug} />
         </div>
       </section>
 
+      {/* Body copy runs the full container width, like every other body section
+          on the site. It used to sit in a `max-w-3xl` box, which is the measure
+          the resources pages reserve for HERO paragraphs only.
+
+          CARVE-OUT 5: the worked examples below are OURS. The designer's version
+          of this page has no `workedExamples` block at all, because it predates
+          Waves 11 and 12. Seven tools populate it today, so taking their page
+          whole would silently delete authored content from seven pages. */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">{tool.explainer.heading}</h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
-              {tool.explainer.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">{tool.explainer.heading}</h2>
+          <Prose>
+            {tool.explainer.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </Prose>
 
-            {tool.faqs && tool.faqs.length > 0 && (
-              <div className="mt-12">
-                <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Frequently asked questions</h2>
-                <div className="mt-6 space-y-6">
-                  {tool.faqs.map((f, i) => (
+          {tool.workedExamples && tool.workedExamples.length > 0 && (
+            <div className="mt-12">
+              <Eyebrow>Worked examples</Eyebrow>
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+                How the numbers come out
+              </h2>
+              <div className="mt-6 space-y-8">
+                {tool.workedExamples.map((ex, i) => {
+                  const heading = "title" in ex ? ex.title : ex.heading;
+                  const description = "description" in ex ? ex.description : undefined;
+                  const inputs = "inputs" in ex ? ex.inputs : undefined;
+                  const steps = "steps" in ex ? ex.steps : undefined;
+                  const result = "result" in ex ? ex.result : undefined;
+                  return (
                     <div key={i}>
-                      <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
-                      <p className="mt-2 text-base leading-relaxed text-slate-700">{f.answer}</p>
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900">{heading}</h3>
+                      {description && (
+                        <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700">
+                          {description}
+                        </p>
+                      )}
+                      {typeof inputs === "string" && (
+                        <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700">{inputs}</p>
+                      )}
+                      {steps && steps.length > 0 && (
+                        <ol className="mt-2 list-decimal space-y-1 pl-6 text-sm sm:text-base leading-relaxed text-slate-700">
+                          {steps.map((s, j) => (
+                            <li key={j}>{s}</li>
+                          ))}
+                        </ol>
+                      )}
+                      {result && (
+                        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm sm:text-base leading-relaxed text-slate-700">
+                          {Object.entries(result).map(([k, val]) => (
+                            <li key={k}>
+                              <span className="font-medium">{k}:</span> {String(val)}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div
-              id="get-expert-help"
-              className="mt-12 scroll-mt-24 border-2 border-emerald-600/20 bg-gradient-to-br from-emerald-50 to-teal-50 p-8 sm:p-10 rounded-2xl"
-            >
-              <h2 className="text-2xl font-bold text-emerald-700 sm:text-3xl">Want to be sure of your position?</h2>
-              <p className="mt-4 text-base leading-relaxed text-slate-600">
-                A calculator gives you the shape of the answer. We confirm your exact figure and the reliefs that
-                apply to you. Tell us about your situation for a no-obligation review.
-              </p>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Request a review" />
+                  );
+                })}
               </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
+
+      {/* CARVE-OUT 5, the binding half. `tool.related` is a set of crawlable
+          internal links into the blog clusters, shipped by Waves 11 and 12 and
+          absent from the designer's page. The link floor is the one thing in
+          this migration that is genuinely hard to rebuild, so this block is
+          restored rather than styled away. */}
+      {tool.related && tool.related.length > 0 && (
+        <section className="bg-slate-50 py-12 sm:py-16">
+          <div className={siteContainerLg}>
+            <Eyebrow>Related reading</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Read further on this</h2>
+            {/* The last inline related-reading list on the site, now the same
+                card grid as everywhere else (owner, 2026-08-23). The pill earns
+                its place here more than anywhere: `tool.related` deliberately
+                mixes blog posts with sibling calculators, and a reader could not
+                previously tell which was which until they clicked. The curated
+                labels are kept as the card titles, because they are the
+                hand-written anchor text carve-out 5 protects. */}
+            <div className="mt-6">
+              <RelatedArticles items={relatedItemsFromLinks(tool.related)} columns={3} />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Was a pale mint gradient card holding a bare LeadForm, boxed to
+          `max-w-3xl` at the very foot of the page: the least assertive block on
+          a page whose reader has just typed their own figures in. Now the same
+          full-bleed navy brick panel every other page converts on.
+
+          It sits ABOVE the FAQ deliberately. LeadCTAPanel's adjacency rule is
+          that navy must not land on navy, and the footer is slate-900 carrying
+          the same brick backdrop, so a panel placed last would merge into it.
+          The white FAQ below is what separates them. This is the same tail order
+          as /landlord-tax and /property-tax-rates: panel, FAQ, footer. If the FAQ
+          is ever made conditional here, re-check this. Every generic tool in the
+          registry currently defines `faqs`, which is why the section below is
+          unconditional.
+
+          `id` is kept: StampDutyCalculator links to #get-expert-help. */}
+      <div id="get-expert-help" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Free review"
+          title="Want to be sure of your position?"
+          description="A calculator gives you the shape of the answer. We confirm your exact figure and the reliefs that apply to you. Tell us about your situation for a no-obligation review."
+          proofPoints={[
+            { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
+            { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
+            { title: "24-hour response", detail: "Usually the same working day" },
+          ]}
+          submitLabel="Request a review"
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+          redirectOnSuccess={false}
+        />
+      </div>
+
+      <FaqSection faqs={tool.faqs ?? []} title="Frequently asked questions" />
     </>
   );
 }

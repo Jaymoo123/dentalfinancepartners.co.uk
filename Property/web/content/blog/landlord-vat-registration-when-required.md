@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Landlord VAT Registration 2026/27: When You Must Register"
-metaDescription: "Residential rent is VAT-exempt. Commercial lets (with option to tax), holiday accommodation, and bundled services can trigger registration at £90,000. 2026/27 guide."
+metaDescription: "Residential rent is VAT-exempt. Commercial lets (with option to tax), holiday accommodation, and bundled services can trigger registration at £90,000."
 altText: "UK landlord reviewing VAT registration documents with calculator and property paperwork"
 image: ""
 h1: "Landlord VAT Registration 2026/27: When Is It Required?"
@@ -75,7 +75,7 @@ faqs:
 <li>You have reasonable grounds to expect taxable supplies in the next 30 days alone to exceed £90,000.</li>
 </ul>
 
-<p>The £90,000 figure has applied since 1 April 2024 (up from £85,000 in the previous decade). It is reviewed at each Budget but has not been raised since. Reference: <a href="https://www.gov.uk/vat-registration/when-to-register" rel="external nofollow" target="_blank">gov.uk/vat-registration/when-to-register</a>.</p>
+<p>The £90,000 figure has applied since 1 April 2024 (up from £85,000 in the previous decade). It is reviewed at each Budget but has not been raised since. Reference: <a href="https://www.gov.uk/vat-registration/when-to-register" rel="external nofollow noopener" target="_blank">gov.uk/vat-registration/when-to-register</a>.</p>
 
 <h3>Worked example: holiday-let landlord crossing the threshold mid-year</h3>
 
@@ -130,7 +130,7 @@ faqs:
 <li>The tenant is not entitled to recover at least 80% of the VAT it pays.</li>
 </ul>
 
-<p>This catches the typical arrangement where a property is opted to recover input VAT and then let to a connected exempt tenant. VATA 1994 Sch 10 paras 12-17 set out the detail. The HMRC reference is <a href="https://www.gov.uk/guidance/vat-on-land-and-property-notice-742" rel="external nofollow" target="_blank">VAT Notice 742</a> for the general rules and <a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow" target="_blank">VAT Notice 742A</a> for the option to tax.</p>
+<p>This catches the typical arrangement where a property is opted to recover input VAT and then let to a connected exempt tenant. VATA 1994 Sch 10 paras 12-17 set out the detail. The HMRC reference is <a href="https://www.gov.uk/guidance/vat-on-land-and-property-notice-742" rel="external nofollow noopener" target="_blank">VAT Notice 742</a> for the general rules and <a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow noopener" target="_blank">VAT Notice 742A</a> for the option to tax.</p>
 
 <h2>Holiday Accommodation VAT (Unchanged by FHL Abolition)</h2>
 
@@ -161,7 +161,7 @@ faqs:
 <p>The case law from Card Protection Plan (C-349/96) onwards distinguishes between a single composite supply (one VAT treatment for the whole) and multiple supplies (each element taxed in its own right). For landlords, the question typically arises with service charges and bundled facilities:</p>
 
 <ul>
-<li><strong>Standard residential service charge</strong> (block insurance, communal cleaning, repairs to common parts, recharged at cost to leaseholders or tenants): generally follows the principal supply of the residential let and is exempt. HMRC's <a href="https://www.gov.uk/government/publications/revenue-and-customs-brief-6-2018-vat-exemption-for-all-domestic-service-charges" rel="external nofollow" target="_blank">Brief 6 (2018)</a> confirms the exempt treatment for domestic service charges levied by landlords on residential leaseholders or tenants.</li>
+<li><strong>Standard residential service charge</strong> (block insurance, communal cleaning, repairs to common parts, recharged at cost to leaseholders or tenants): generally follows the principal supply of the residential let and is exempt. HMRC's <a href="https://www.gov.uk/government/publications/revenue-and-customs-brief-6-2018-vat-exemption-for-all-domestic-service-charges" rel="external nofollow noopener" target="_blank">Brief 6 (2018)</a> confirms the exempt treatment for domestic service charges levied by landlords on residential leaseholders or tenants.</li>
 <li><strong>Separately charged optional services</strong> (paid laundry per use, paid concierge, paid car park access): genuinely separate supplies, standard-rated.</li>
 <li><strong>Serviced accommodation</strong> (rent that includes daily housekeeping, linen change, reception, breakfast, or other significant services): generally a single composite supply, standard-rated as holiday/serviced accommodation.</li>
 </ul>
@@ -179,7 +179,7 @@ faqs:
 <li>Records kept for six years.</li>
 </ul>
 
-<p>Typical compliant software costs £100-£300 a year. Hand-kept spreadsheets are not sufficient under MTD unless they are linked to an MTD bridging app. The full HMRC reference is <a href="https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat" rel="external nofollow" target="_blank">VAT Notice 700/22</a>.</p>
+<p>Typical compliant software costs £100-£300 a year. Hand-kept spreadsheets are not sufficient under MTD unless they are linked to an MTD bridging app. The full HMRC reference is <a href="https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat" rel="external nofollow noopener" target="_blank">VAT Notice 700/22</a>.</p>
 
 <h2>De-registration: The £88,000 Threshold</h2>
 

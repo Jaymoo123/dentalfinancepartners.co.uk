@@ -6,7 +6,7 @@ import { btnPrimary, sectionY, siteContainerLg } from "@/components/ui/layout-ut
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `SRA Compliance & Trust Accounting | ${siteConfig.name}`,
+  title: `SRA Compliance & Trust Accounting`,
   description: "Expert SRA Accounts Rules compliance for solicitors. Client money handling, trust accounting, 5-week reconciliations, and annual Accountant's Reports. COFA support and breach prevention.",
   alternates: { canonical: `${siteConfig.url}/sra-compliance` },
   openGraph: {

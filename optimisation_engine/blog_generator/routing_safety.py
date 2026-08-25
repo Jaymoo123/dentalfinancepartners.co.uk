@@ -40,6 +40,8 @@ EXPECTED_SITE_PREFIXES: dict[str, str] = {
     "charities": "charities",
     "contractors-ir35": "contractors-ir35",
     "construction-cis": "construction-cis",
+    "wills-probate": "wills-probate",
+    "divorce-finances": "divorce-finances",
 }
 
 # Post Phase 4 (2026-05-20): all sites share a single `blog_topics` table.

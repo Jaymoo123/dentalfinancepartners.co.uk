@@ -2,6 +2,8 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import {
   createLeadSubmitHandler,
   mergeLeadMessages,
+  normalizeEmailForDedupe,
+  phoneDedupeKey,
   __resetLeadSubmitRateLimiter,
 } from "./createLeadSubmitHandler";
 
@@ -197,6 +199,142 @@ describe("dedupe adopt-and-merge", () => {
     const get = fetchCalls.find((c) => (c.init.method ?? "GET") === "GET");
     expect(get!.url).toContain(encodeURIComponent("a+tag@example.com"));
     expect(get!.url).not.toContain("a+tag@example.com&");
+  });
+
+  it("exact-eq fast path still merges without a second-pass candidate fetch", async () => {
+    fetchImpl = (url, init) => {
+      if ((init.method ?? "GET") === "GET") {
+        return jsonRes([
+          { id: "lead-old-9", full_name: "Jane Example", phone: "07123456789", message: "First" },
+        ]);
+      }
+      return jsonRes([]);
+    };
+    const POST = createLeadSubmitHandler({ source: "generalist" });
+    const res = await POST(makeReq(VALID));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ success: true, leadId: "lead-old-9", merged: true });
+    const gets = fetchCalls.filter((c) => (c.init.method ?? "GET") === "GET");
+    expect(gets).toHaveLength(1);
+    expect(fetchCalls.filter((c) => c.init.method === "POST")).toHaveLength(0);
+  });
+});
+
+describe("dedupe second pass (2026-08-19 incident: plus-alias + phone matching)", () => {
+  /** Exact-eq lookup misses; the candidate list holds the prior wizard row. */
+  function secondPassBackend(candidates: unknown[]): typeof fetchImpl {
+    return (url, init) => {
+      if ((init.method ?? "GET") === "GET") {
+        return url.includes("email=eq.") ? jsonRes([]) : jsonRes(candidates);
+      }
+      if (init.method === "POST") return jsonRes([{ id: "lead-new-1" }], 201);
+      return jsonRes([]);
+    };
+  }
+
+  it("merges the plus-alias wizard row into the real enquiry (extras survive, merged flag set)", async () => {
+    fetchImpl = secondPassBackend([
+      {
+        id: "lead-wizard-1",
+        full_name: "Ken Dlc",
+        phone: "",
+        message: "Wizard summary",
+        email: "kendlc2026+ma@gmail.com",
+        extras: { health_check: { score: 42, answers: ["a", "b"] } },
+      },
+    ]);
+    const POST = createLeadSubmitHandler({ source: "medical" });
+    const res = await POST(
+      makeReq({
+        ...VALID,
+        full_name: "Ken Dlc",
+        email: "kendlc2026@gmail.com",
+        phone: "07123 456789",
+        message: "Please call me about the health check.",
+      }),
+    );
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ success: true, leadId: "lead-wizard-1", merged: true });
+    const patch = fetchCalls.find((c) => c.init.method === "PATCH");
+    expect(patch).toBeDefined();
+    expect(patch!.url).toContain("id=eq.lead-wizard-1");
+    const body = JSON.parse(String(patch!.init.body)) as Record<string, unknown>;
+    expect(body.message).toBe("Wizard summary\n\n---\nPlease call me about the health check.");
+    expect(body.phone).toBe("07123 456789");
+    expect(body.extras).toEqual({ health_check: { score: 42, answers: ["a", "b"] } });
+    expect(fetchCalls.filter((c) => c.init.method === "POST")).toHaveLength(0);
+    const candGet = fetchCalls.find(
+      (c) => (c.init.method ?? "GET") === "GET" && !c.url.includes("email=eq."),
+    );
+    expect(candGet!.url).toContain("select=id,full_name,phone,message,email,extras");
+    expect(candGet!.url).toContain("limit=50");
+  });
+
+  it("matches on the phone key when the emails differ entirely", async () => {
+    fetchImpl = secondPassBackend([
+      {
+        id: "lead-phone-1",
+        full_name: "Jane Example",
+        phone: "+44 7123 456789",
+        message: "First enquiry",
+        email: "jane.other@hotmail.com",
+        extras: null,
+      },
+    ]);
+    const POST = createLeadSubmitHandler({ source: "generalist" });
+    const res = await POST(makeReq({ ...VALID, message: "Second enquiry" }));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ success: true, leadId: "lead-phone-1", merged: true });
+    const patch = fetchCalls.find((c) => c.init.method === "PATCH");
+    const body = JSON.parse(String(patch!.init.body)) as Record<string, unknown>;
+    expect(body.message).toBe("First enquiry\n\n---\nSecond enquiry");
+  });
+
+  it("a different person (different email, different phone) still inserts fresh", async () => {
+    fetchImpl = secondPassBackend([
+      {
+        id: "lead-other-1",
+        full_name: "Someone Else",
+        phone: "07999 888777",
+        message: "Unrelated",
+        email: "someone.else@example.org",
+        extras: null,
+      },
+    ]);
+    const POST = createLeadSubmitHandler({ source: "generalist" });
+    const res = await POST(makeReq(VALID));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ success: true, leadId: "lead-new-1" });
+    expect(fetchCalls.filter((c) => c.init.method === "PATCH")).toHaveLength(0);
+  });
+
+  it("falls through to insert when the dedupe lookup fails (never loses a lead)", async () => {
+    fetchImpl = (url, init) => {
+      if ((init.method ?? "GET") === "GET") throw new Error("postgrest down");
+      if (init.method === "POST") return jsonRes([{ id: "lead-new-1" }], 201);
+      return jsonRes([]);
+    };
+    const POST = createLeadSubmitHandler({ source: "generalist" });
+    const res = await POST(makeReq(VALID));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ success: true, leadId: "lead-new-1" });
+  });
+});
+
+describe("dedupe key helpers (unit)", () => {
+  it("normalizeEmailForDedupe trims, lowercases and strips plus-addressing but not dots", () => {
+    expect(normalizeEmailForDedupe("  KendLC2026+MA@Gmail.COM ")).toBe("kendlc2026@gmail.com");
+    expect(normalizeEmailForDedupe("kendlc2026@gmail.com")).toBe("kendlc2026@gmail.com");
+    expect(normalizeEmailForDedupe("a.b+tag@c.d")).toBe("a.b@c.d");
+    expect(normalizeEmailForDedupe("a.b@c.d")).toBe("a.b@c.d");
+    expect(normalizeEmailForDedupe("not-an-email")).toBe("not-an-email");
+  });
+
+  it("phoneDedupeKey keeps the last 10 digits, null under 10", () => {
+    expect(phoneDedupeKey("07123 456789")).toBe("7123456789");
+    expect(phoneDedupeKey("+44 7123 456789")).toBe("7123456789");
+    expect(phoneDedupeKey("0712")).toBeNull();
+    expect(phoneDedupeKey("")).toBeNull();
   });
 });
 

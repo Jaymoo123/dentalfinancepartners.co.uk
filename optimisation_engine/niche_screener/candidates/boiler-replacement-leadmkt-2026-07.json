@@ -1,0 +1,124 @@
+{
+  "candidate_id": "boiler-replacement-leadmkt-2026-07",
+  "vertical": "boiler replacement",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/boiler-repairs-and-servicing",
+      "excerpt": "We generate exclusive, high-quality leads for boiler repair and servicing engineers across the UK. call 0333 0 424 424 20,000+ s Run Across the UK 1M+ … or ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.gmsleads.co.uk/atp-boiler-finance-leads.html",
+      "excerpt": "GMS Leads provides ATP and Finance Qualified Leads for both Gas and Non-Gas boilers. We offer a nine (9) consecutive day replacement period. Comprehensive 9- ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://boilerwebleads.co.uk/",
+      "excerpt": "You can trust Boiler Web Leads to provide some of the highest quality boiler leads delivered to you, in real time! Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://sales-fuel.co.uk/lead-generation/product/home-improvements/boiler-leads/",
+      "excerpt": "Boiler Replacement Leads. Fill your pipeline with enquiries from qualified ... Buy boiler leads in bulk on a weekly basis and reduce your cost-per-lead. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/boiler-lead-generation/",
+      "excerpt": "Generate Your Own Exclusive Boiler Leads ... You can try and generate your own exclusive boiler leads, boiler replacement leads, boiler quotes, and boiler prices. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leads2trade.co.uk/news/leads-2-trade-celebrates-15-years-at-the-top/",
+      "excerpt": "2 Nov 2021 — In 2007 Leads 2 Trade moved from partnerships and commissions to a cost per lead ... boiler replacement leads not far behind in 2012. The company ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadgenera.com/knowledge-hub/lead-generation/how-to-generate-leads-for-your-boiler-company/",
+      "excerpt": "When you work with Lead Genera, you're moving outside of the £30 per lead rat race. ... Generating Boiler Replacement Leads Using Google Ads (PPC). With Google ... Read more",
+      "metric": {
+        "price_gbp": 30
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadhero.ai/blog/top-5-places-to-get-boiler-leads-in-the-uk",
+      "excerpt": "23 May 2026 — Boiler Guide for flexible no-contract leads, Google Local Services Ads for the lowest long-term cost-per-lead, and Meta Ads for volume you ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ci.buyeralerts.co.uk/leads-for-plumbers-heating-engineers-and-boiler-installers",
+      "excerpt": "Are you looking to reach homeowners who need a boiler replacement or plumbing work? Our home improvement lead generation tool is for you. Are you paying over ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://trademastermind.co.uk/boiler-lead-generation/",
+      "excerpt": "Pay -Per-Click Advertising Google Ads and Facebook ads can be highly effective for boiler lead generation when done right.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.boilerguide.co.uk/trade/boiler-heating-leads/",
+      "excerpt": "We only charge you for the leads you want to buy which start at just £6 per lead. we generate across the UK in our online marketplace. Generating high quality ...",
+      "metric": {
+        "price_gbp": 6
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.opinionukdata.co.uk/boiler-leads/",
+      "excerpt": "How much do I need to pay for boiler leads? As a general rule, the expense of leads will depend on the strictness of the criteria. However, we always offer a ...",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "boiler lead generation",
+    "boiler lead generation services in london - opinion uk data",
+    "boiler repairs & servicing lead generation",
+    "boiler replacement",
+    "buy atp finance boiler leads",
+    "buy boiler leads | new & replacement boiler leads | eco ...",
+    "how to attract boiler leads for steady business growth",
+    "how to generate boiler leads for your boiler company",
+    "leads 2 trade celebrates 15 years at the top",
+    "leads for plumbers, heating engineers and boiler installers",
+    "qualified boiler leads for uk installers",
+    "qualified boiler leads | quote on boiler & heating jobs",
+    "top 5 places to get boiler leads in the uk (2026)"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK boiler replacement providers already paying per lead",
+    "proof": "12 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "key": "rd_merged_scheme_credit_rate",
+    "value": "20",
+    "unit": "%",
+    "note": "R&D expenditure credit, above the line and taxable; replaces SME super-deduction and RDEC",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-large-companies",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "rd_eris_additional_deduction",
+    "value": "86",
+    "unit": "%",
+    "note": "ERIS additional deduction for loss-making SME with qualifying R&D >=30% of total expenditure",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "rd_eris_payable_credit_rate",
+    "value": "14.5",
+    "unit": "%",
+    "note": "ERIS payable credit rate for R&D-intensive loss-making SMEs",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "rd_eris_intensity_threshold",
+    "value": "30",
+    "unit": "%",
+    "note": "qualifying R&D as share of total expenditure to keep SME route via ERIS",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "rd_claim_notification_window",
+    "value": "6",
+    "unit": "months",
+    "note": "first-time claimant notification window from end of accounting period; miss it and claim is invalid",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "seis_company_raise_limit",
+    "value": "250000",
+    "unit": "£",
+    "note": "maximum SEIS raise per company",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "seis_gross_assets_limit",
+    "value": "350000",
+    "unit": "£",
+    "note": "maximum gross assets at time of SEIS investment",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "seis_employee_limit",
+    "value": "25",
+    "unit": "count",
+    "note": "fewer than this many full-time-equivalent employees for SEIS",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "seis_investor_relief_rate",
+    "value": "50",
+    "unit": "%",
+    "note": "SEIS investor income tax relief rate",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/guidance/seed-enterprise-investment-scheme-background",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "seis_investor_annual_limit",
+    "value": "200000",
+    "unit": "£",
+    "note": "maximum SEIS investment per investor per tax year attracting relief",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/guidance/seed-enterprise-investment-scheme-background",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "eis_company_annual_limit",
+    "value": "5000000",
+    "unit": "£",
+    "note": "maximum EIS/venture-capital-scheme raise per year (higher for knowledge-intensive companies)",
+    "applies_from": "2018-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "eis_company_lifetime_limit",
+    "value": "12000000",
+    "unit": "£",
+    "note": "EIS lifetime venture-capital-scheme funding limit (higher for knowledge-intensive companies)",
+    "applies_from": "2018-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "eis_investor_relief_rate",
+    "value": "30",
+    "unit": "%",
+    "note": "EIS investor income tax relief rate",
+    "applies_from": "2011-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "eis_investor_annual_limit",
+    "value": "1000000",
+    "unit": "£",
+    "note": "EIS investment per investor per year (£2m where excess is in knowledge-intensive companies)",
+    "applies_from": "2018-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "eis_investor_kic_annual_limit",
+    "value": "2000000",
+    "unit": "£",
+    "note": "EIS investor annual cap where the excess above £1m is in knowledge-intensive companies",
+    "applies_from": "2018-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "eis_minimum_holding_period",
+    "value": "3",
+    "unit": "years",
+    "note": "minimum holding period to retain EIS relief (also SEIS CGT-free disposal window)",
+    "applies_from": "2011-04-06",
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "emi_option_value_per_employee",
+    "value": "250000",
+    "unit": "£",
+    "note": "maximum unexercised EMI option value per employee over rolling 3-year window",
+    "applies_from": "2012-04-06",
+    "source_url": "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "emi_company_total_option_value",
+    "value": "3000000",
+    "unit": "£",
+    "note": "maximum total unexercised EMI options across the company",
+    "applies_from": "2012-04-06",
+    "source_url": "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "emi_company_gross_assets_limit",
+    "value": "30000000",
+    "unit": "£",
+    "note": "maximum gross assets for an EMI qualifying company",
+    "applies_from": "2008-04-06",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/employee-tax-advantaged-share-scheme-user-manual/etassum52030",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "emi_company_fte_limit",
+    "value": "250",
+    "unit": "count",
+    "note": "fewer than this many full-time-equivalent employees for an EMI qualifying company",
+    "applies_from": "2008-04-06",
+    "source_url": "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "csop_option_limit_per_employee",
+    "value": "60000",
+    "unit": "£",
+    "note": "maximum CSOP option value per employee; fallback once EMI limits/tests breached",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/tax-employee-share-schemes/company-share-option-plan",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "s431_election_window",
+    "value": "14",
+    "unit": "days",
+    "note": "joint election window on restricted securities from acquisition",
+    "applies_from": "2003-09-01",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm30450",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "ers_return_deadline",
+    "value": "6 July",
+    "unit": "date",
+    "note": "annual ERS return (including nil) and EMI grant notification due by 6 July after tax year end",
+    "applies_from": "2023-04-06",
+    "source_url": "https://www.gov.uk/guidance/submit-your-employment-related-securities-ers-return",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "badr_rate",
+    "value": "18",
+    "unit": "%",
+    "note": "Business Asset Disposal Relief rate; current for this 2026/27-launch site. History: 14% for 2025/26, 10% before. EMI shares qualify on 2-year rule without the 5% personal-company test",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/business-asset-disposal-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "badr_lifetime_limit",
+    "value": "1000000",
+    "unit": "£",
+    "note": "BADR lifetime limit on qualifying gains",
+    "applies_from": "2020-03-11",
+    "source_url": "https://www.gov.uk/business-asset-disposal-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "cgt_rate_shares_within_band",
+    "value": "18",
+    "unit": "%",
+    "note": "CGT main rate on share gains within remaining basic-rate band",
+    "applies_from": "2024-10-30",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "cgt_rate_shares_above_band",
+    "value": "24",
+    "unit": "%",
+    "note": "CGT main rate on share gains above the basic-rate band",
+    "applies_from": "2024-10-30",
+    "source_url": "https://www.gov.uk/capital-gains-tax/rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "ct_small_profits_rate",
+    "value": "19",
+    "unit": "%",
+    "note": "corporation tax small profits rate on profits up to £50,000; limit divided by associated companies",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "ct_main_rate",
+    "value": "25",
+    "unit": "%",
+    "note": "corporation tax main rate on profits of £250,000 or more; marginal relief between thresholds",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "ct_small_profits_upper_limit",
+    "value": "50000",
+    "unit": "£",
+    "note": "upper limit for the 19% small profits rate; divided by associated companies",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "ct_main_rate_lower_limit",
+    "value": "250000",
+    "unit": "£",
+    "note": "profit level at which the 25% main rate applies in full; divided by associated companies",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_ordinary_rate",
+    "value": "10.75",
+    "unit": "%",
+    "note": "dividend ordinary rate 2026/27 (FA 2026 s.4)",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_upper_rate",
+    "value": "35.75",
+    "unit": "%",
+    "note": "dividend upper rate 2026/27 (FA 2026 s.4)",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_additional_rate",
+    "value": "39.35",
+    "unit": "%",
+    "note": "dividend additional rate 2026/27 (FA 2026 s.4)",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "dividend_allowance",
+    "value": "500",
+    "unit": "£",
+    "note": "annual dividend allowance",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "employer_nic_rate",
+    "value": "15",
+    "unit": "%",
+    "note": "employer (secondary) NIC rate on earnings above the secondary threshold",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/national-insurance-rates-letters",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "employer_nic_secondary_threshold",
+    "value": "5000",
+    "unit": "£",
+    "note": "secondary threshold above which employer NIC is charged",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/national-insurance-rates-letters",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "employment_allowance",
+    "value": "10500",
+    "unit": "£",
+    "note": "maximum Employment Allowance; solo-director-only companies are excluded",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/claim-employment-allowance",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "pre_trading_expenditure_window",
+    "value": "7",
+    "unit": "years",
+    "note": "pre-trading expenditure allowable if incurred within this window before trade starts; treated as day-one",
+    "applies_from": "2009-04-01",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim46351",
+    "verified_at": "2026-07-14"
+  },
+  {
+    "key": "vat_registration_threshold",
+    "value": "90000",
+    "unit": "£",
+    "note": "rolling 12-month UK taxable turnover threshold; SaaS place-of-supply may exclude overseas B2B revenue",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/register-for-vat",
+    "verified_at": "2026-07-14"
+  }
+]

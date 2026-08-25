@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for Social Media Agencies | ${siteConfig.name}`,
+  title: `Accountants for Social Media Agencies`,
   description: "Specialist accountants for UK social media agency founders. Content production costs, paid social spend treatment, retainer cash flow. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/social-media-agencies` },
   openGraph: {

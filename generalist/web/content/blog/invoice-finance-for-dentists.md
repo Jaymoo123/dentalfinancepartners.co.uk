@@ -1,0 +1,119 @@
+---
+title: "Invoice Finance for Dentists: Does It Actually Fit?"
+slug: "invoice-finance-for-dentists"
+canonical: "https://www.hollowaydavies.co.uk/blog/business-finance/invoice-finance-for-dentists"
+date: "2026-07-30"
+author: "Holloway Davies Editorial Team"
+category: "Business Finance"
+metaTitle: "Invoice Finance for Dentists: Does It Fit?"
+metaDescription: "Most dental practices earn NHS UDA and card income, not trade invoices, so invoice finance rarely fits. It suits dental labs and B2B suppliers. 2026 guide."
+altText: "A dental laboratory technician preparing crowns and dentures alongside invoices sent to dental practices on 30-day payment terms."
+image: ""
+h1: "Invoice Finance for Dentists: Does It Actually Fit?"
+summary: "Invoice finance advances cash against unpaid B2B invoices. A patient-facing dental practice earns NHS UDA contract payments and private card income, which is not a trade-debtor book, so invoice finance rarely fits. It does fit dental laboratories and B2B dental suppliers that invoice practices on credit terms. This guide is honest about which is which and where a practice should look instead."
+schema: ''
+faqs:
+  - question: "Does invoice finance suit a dental practice?"
+    answer: "Usually not. A patient-facing practice is paid by NHS England through monthly BSA contract payments and by patients at the point of care by card, plan, or cash. None of that is a book of unpaid B2B invoices, and invoice finance can only advance against invoices you have raised to business customers on credit terms. With almost nothing to factor, a practice gains little from an invoice facility. Practice cash-flow gaps are better closed with practice working-capital finance, an overdraft or revolving facility, or asset finance for equipment."
+  - question: "So who in dentistry can actually use invoice finance?"
+    answer: "Dental laboratories and B2B dental suppliers. A lab making crowns, dentures, aligners, and other prosthetics invoices the practices it serves and then waits 30 to 60 days to be paid, so it holds a genuine trade-debtor book. Dental wholesalers, equipment dealers, consumables distributors, and practice-management or domiciliary-care contractors billing other businesses are in the same position. These companies can release cash tied up in unpaid invoices. The patient-facing surgery generally cannot, because its income is contract and card, not invoiced credit sales."
+  - question: "Is NHS UDA contract income financeable?"
+    answer: "Not through invoice finance. NHS dental income arrives as scheduled monthly contract payments from the NHS Business Services Authority against your Units of Dental Activity, reconciled at year end. It is a public-sector contract payment stream, not an invoice you raise and chase, so there is no invoice for a funder to advance against. Some specialist lenders will lend against a stable NHS contract as security for a term facility or working-capital line, but that is contract-backed lending arranged as practice finance, not invoice factoring or discounting."
+  - question: "What finance do dental practices actually use?"
+    answer: "For buying or expanding a practice, a commercial mortgage or acquisition loan. For chairs, scanners, CBCT machines, and surgery fit-outs, asset finance (hire purchase or lease), which also interacts with capital allowances. For short-term cash gaps around tax bills, staff costs, or a slow NHS reconciliation, an overdraft, a revolving credit facility, or a dedicated practice working-capital loan. A squat (new-build) practice ramping up to full patient numbers typically needs a working-capital runway. Invoice finance rarely features because there is no debtor book to lend against."
+  - question: "My practice trades as a limited company. Does that change anything?"
+    answer: "It changes who we can introduce you to, but not the underlying fit. We introduce UK limited companies and LLPs to a commercial-finance broker panel; that is why the company gate exists. But even as a limited company, if your income is NHS contract payments plus patient card and plan income, you still do not have a trade-debtor book to factor. The company structure makes practice-finance, asset-finance, and working-capital routes available to you on the panel; it does not create invoices where there are none."
+  - question: "How much could a dental laboratory release with invoice finance?"
+    answer: "It depends on your ledger size, your advance rate, and how spread your customers are. As a rough guide, a lab invoicing 30 practices with a live debtor ledger of about £120,000 on 30-day terms might see 85 to 90 per cent advanced, releasing roughly £100,000 to £108,000 within a day of raising each invoice, against a service fee and a discount margin over base rate. The exact figures come from a broker quote once your customer spread, invoice values, and turnover are assessed."
+  - question: "Factoring or invoice discounting for a dental lab?"
+    answer: "Factoring means the funder is disclosed to your practice customers and runs credit control, chasing payment for you. That suits a smaller lab or supplier without a dedicated finance team. Invoice discounting is confidential, so your practice customers never know, and you keep running your own credit control, which suits a larger lab with strong systems and covenant. Discounting usually costs less but demands more turnover and better internal processes. A broker will match your size and set-up to the right structure."
+  - question: "Are these finance introductions regulated?"
+    answer: "Introducing a UK limited company or LLP to a commercial-finance broker or lender for business-purpose borrowing is not a regulated activity under the Financial Services and Markets Act 2000 (Regulated Activities) Order 2001, because effecting an introduction of a body corporate falls outside the Article 36A credit-broking perimeter. We are not a lender and we do not give regulated credit advice. Sole-trader, partnership, or personal borrowing can be regulated consumer credit, which is why we fence those to FCA-authorised firms and route them away."
+  - question: "I am a self-employed associate dentist. Can I use this?"
+    answer: "Not through this service. An associate paid as a sole trader is an individual, and personal or sole-trader borrowing can be regulated consumer credit that requires an FCA-authorised firm. Our finance introductions are for UK limited companies and LLPs borrowing for business purposes only. If you incorporate a company (for example to hold a practice or a lab business), the company can be introduced to the panel. Until then, speak to an FCA-authorised consumer-credit provider, and speak to an accountant about whether incorporating makes sense."
+  - question: "Will my practice customers know my lab uses invoice finance?"
+    answer: "Only if you choose a factoring facility, where the funder is disclosed and collects payment from your customers directly, which many practices are entirely used to seeing from their suppliers. If confidentiality matters to you, confidential invoice discounting keeps the arrangement invisible: your practice customers pay into a trust account in your name and never know a funder is involved. You keep issuing statements and chasing payment as normal. The trade-off is that discounting needs a larger, better-run ledger to qualify."
+  - question: "What happens if a practice does not pay my lab's invoice?"
+    answer: "That depends on whether the facility is recourse or non-recourse. Under recourse factoring, the funder can reclaim the advance if the invoice stays unpaid past an agreed period, so the bad-debt risk stays with you. Under non-recourse, the funder takes on approved bad-debt risk for an extra fee, protecting you if a practice becomes insolvent. Given that dental labs often depend on a handful of practice customers, non-recourse cover can be worth the premium. A broker will price both against your customer concentration."
+  - question: "Is invoice finance tax-deductible for my lab company?"
+    answer: "The service fee and discount margin on an invoice-finance facility are ordinarily deductible business finance costs for your company, reducing taxable profit, and VAT treatment follows the nature of the charges. The mechanics and any limits sit with the tax rules rather than the finance itself, so this is one to confirm with your accountant rather than assume. If you also buy lab equipment, the interaction with capital allowances is a separate and often more valuable question. Our accountant team can walk through both alongside the facility."
+  - question: "Can a dental supplier combine invoice finance with other funding?"
+    answer: "Yes. A dental wholesaler or consumables distributor commonly stacks invoice finance (to release cash from the debtor book) with stock or trade finance (to fund inventory bought before it sells) and asset finance (for vehicles or warehouse equipment). A broker panel can structure these together so the facilities complement rather than clash. The point is to match each facility to the specific gap: debtor days, stock holding, or capital purchases. For a patient-facing practice, none of these is invoice finance, which is the honest distinction this page draws."
+---
+
+<h2>The dental cash-flow reality: contract payments and card income, not invoices</h2>
+<p>Before you shop for invoice finance, look honestly at how money actually reaches a dental business, because it decides whether the product can help you at all.</p>
+<p>A patient-facing practice is paid two ways. NHS work arrives as scheduled monthly contract payments from the <a href="https://www.nhsbsa.nhs.uk/">NHS Business Services Authority</a>, calculated against your annual Units of Dental Activity target and reconciled at year end. Private work is paid at the point of care: patients tap a card, settle a monthly capitation or maintenance plan by direct debit, or pay cash. That is a contract-and-card income stream. It is predictable, and it is mostly not a book of unpaid invoices you have raised to business customers on credit terms.</p>
+<p>Invoice finance exists to solve one specific problem: you have sold something to another business, raised an invoice, and now have to wait 30, 60, or 90 days to be paid while your own costs fall due immediately. A funder advances most of that invoice value straight away and takes its cut when the customer pays. If your income is a monthly NHS contract payment and a card terminal, there is almost nothing for that machine to work on. This is the distinction most sector pages skip, and it is the whole point of this one.</p>
+
+<h2>Why invoice finance usually does not fit a patient-facing practice</h2>
+<p>Run the test that any funder runs. Invoice finance needs a live trade-debtor book: business customers who owe you money on credit terms, evidenced by invoices you can assign to the funder. A typical mixed NHS and private practice fails that test on every line.</p>
+<ul>
+<li><strong>NHS income</strong> is a public-sector contract payment, not an invoice. There is no document for a funder to advance against, and the payment already arrives on a monthly cycle.</li>
+<li><strong>Private patient income</strong> is settled immediately by card, cash, or plan direct debit. Money you have already collected cannot be factored.</li>
+<li><strong>Plan income</strong> (capitation and maintenance schemes) is administered by a plan provider and paid over to you monthly. Again, a stream, not a debtor ledger.</li>
+</ul>
+<p>Put those together and a practice simply has no meaningful invoiced credit sales to finance. A funder looking at the ledger sees a business that is paid promptly and on a schedule, which is a good position to be in, but not one invoice finance can improve. When a practice does hit a cash-flow squeeze (a tax bill lands, a slow NHS reconciliation bites, a key associate leaves), the fix is a different product entirely, covered further down.</p>
+<p>There is a narrow exception worth naming. A stable NHS contract can be used as security for a term loan or a working-capital line with a specialist lender. That is contract-backed lending arranged as practice finance, not invoice factoring or discounting, and it belongs in the practice-finance conversation rather than here.</p>
+
+<aside><p><strong>Not sure your dental business has a debtor book to finance?</strong> Answer the qualifying questions in the form below. If you run a patient-facing practice, we will point you at the right practice-finance route instead of selling you a product that cannot help.</p></aside>
+
+<h2>Where invoice finance genuinely fits: dental labs and B2B suppliers</h2>
+<p>The dental supply chain is a different story. Step back from the surgery and you find companies whose entire model is selling to other businesses on credit, which is exactly the shape invoice finance was built for.</p>
+<p>A <strong>dental laboratory</strong> makes crowns, bridges, dentures, aligners, and other prosthetics to prescription, then invoices the practice that ordered them and waits 30 to 60 days to be paid. In the meantime the lab has already paid technicians, bought precious-metal alloys, zirconia, and ceramics, and covered milling and furnace costs. That gap between doing the work and being paid is textbook working-capital pressure, and every job is backed by a real invoice to a business customer.</p>
+<p>The same is true across the B2B side of dentistry:</p>
+<ul>
+<li><strong>Dental wholesalers and consumables distributors</strong> selling gloves, composites, impression materials, and instruments to practices on account.</li>
+<li><strong>Equipment dealers</strong> invoicing practices for chairs, handpieces, and imaging kit.</li>
+<li><strong>Domiciliary and contract dental providers</strong> billing care homes, corporate occupational-health schemes, or NHS trusts on credit terms.</li>
+</ul>
+<p>These companies hold genuine debtor books. For them, invoice finance can release cash tied up in unpaid invoices within a day of raising each one, smoothing the gap between production and payment without taking on a term loan. The <a href="https://www.ukfinance.org.uk/">UK Finance</a> invoice-finance and asset-based-lending figures show tens of billions advanced to businesses this way each year, and gov.uk's <a href="https://www.gov.uk/business-finance-support">business finance support</a> pages set out where it sits alongside other options.</p>
+
+<h2>Factoring or invoice discounting for a dental lab</h2>
+<p>If you run a lab or a supply business that does qualify, the next decision is which type of facility. The two mainstream forms differ mainly in who chases payment and whether your customers know.</p>
+<p><strong>Factoring</strong> is disclosed. The funder is named to your practice customers and runs credit control, chasing invoices and collecting payment for you. That removes a job most labs would rather not do and is well suited to a smaller lab without a dedicated finance person. Practices are entirely used to paying a supplier's finance provider, so disclosure rarely causes friction. You can read the mechanics in detail in our guide to <a href="/blog/business-finance/invoice-factoring">invoice factoring</a>.</p>
+<p><strong>Invoice discounting</strong> is confidential. Your practice customers pay into a trust account in your name and never know a funder is involved; you keep running your own credit control. It usually costs less than factoring but demands more turnover, stronger systems, and a better covenant, so it suits a larger, well-run lab. The full comparison is in our guide to <a href="/blog/business-finance/invoice-discounting">invoice discounting</a>.</p>
+<p>Whichever you pick, you also choose between <strong>recourse</strong> (the bad-debt risk stays with you if a practice does not pay) and <strong>non-recourse</strong> (the funder takes approved bad-debt risk for an extra fee). Labs that depend on a handful of practice customers should weigh non-recourse cover seriously, because losing one large account to insolvency can hurt. For the wider picture across both structures, see our <a href="/fundamentals/invoice-finance-guide">invoice finance guide</a>.</p>
+
+<h2>How much a dental lab could release: a worked example</h2>
+<p>Take a mid-sized dental laboratory that supplies 30 practices across a region. It invoices on 30-day terms and, at any moment, carries a live debtor ledger of about £120,000 of unpaid invoices out with those practices.</p>
+<table>
+<thead><tr><th>Item</th><th>Figure</th></tr></thead>
+<tbody>
+<tr><td>Practices invoiced (spread of debtors)</td><td>30</td></tr>
+<tr><td>Live debtor ledger</td><td>£120,000</td></tr>
+<tr><td>Payment terms</td><td>30 days</td></tr>
+<tr><td>Advance rate (indicative)</td><td>85 to 90%</td></tr>
+<tr><td>Cash released up front</td><td>~£102,000 to £108,000</td></tr>
+<tr><td>Cost</td><td>Service fee (% of turnover) + discount margin over base rate</td></tr>
+</tbody>
+</table>
+<p>Instead of waiting a month for each invoice, the lab has more than £100,000 working in the business within a day of billing: paying technicians, buying alloys and ceramics, and taking on more cases without a cash bottleneck. A well-spread book of 30 practices is a strength here, because no single customer dominates the risk. The service fee and discount margin are the price of that speed, and the real numbers come from a broker quote once your ledger and customer spread are assessed.</p>
+<p>Now hold that against a <strong>mixed NHS and private practice</strong>. Its income is a monthly BSA contract payment plus card and plan takings collected at the chair. There is no ledger of unpaid business invoices to advance against, so the same worked example simply cannot be built. One business is factorable; the other is not. That contrast is the honest heart of invoice finance for dentistry.</p>
+
+<aside><p><strong>Run a dental lab or a B2B dental supplier with a real debtor book?</strong> Tell us your turnover, your customer spread, and the value of your live ledger in the form below and we will introduce your company to our commercial-finance broker panel for competing quotes.</p></aside>
+
+<h2>Eligibility and the company gate</h2>
+<p><strong>Company borrowers only.</strong> The finance introductions on this page are for UK limited companies and limited liability partnerships borrowing for business purposes. We introduce your company to a panel of commercial-finance brokers; we are not a lender and we do not give regulated credit advice. If you are a sole trader, an individual, or borrowing for personal or household purposes, this service is not for you and you should speak to an FCA-authorised consumer-credit firm.</p>
+<p>That gate matters in dentistry specifically, because a lot of the sector trades in exactly the forms we fence off. A self-employed <strong>associate dentist</strong> paid as a sole trader is an individual, so any borrowing is potentially regulated consumer credit and belongs with an FCA-authorised firm, not here. The same applies to a small unincorporated practice or a partnership below the relevant thresholds. Introducing a company (a body corporate) to a broker or lender is outside the Article 36A credit-broking perimeter under the <a href="https://www.legislation.gov.uk/uksi/2001/544/contents">Financial Services and Markets Act 2000 (Regulated Activities) Order 2001</a>, which is why the whole service is fenced to companies. If you incorporate a lab or supply business, the company can be introduced to the panel.</p>
+<p>For a dental lab or supplier that is a limited company, funders will typically look at:</p>
+<ul>
+<li>A genuine <strong>B2B debtor book</strong>: invoices raised to business customers (practices, trusts, care providers) on credit terms.</li>
+<li><strong>Debtor spread</strong>: a range of customers rather than one dominant account, which reduces concentration risk (though non-recourse cover can offset this).</li>
+<li><strong>Turnover and trading history</strong>: discounting in particular needs scale and clean systems.</li>
+<li>Clean invoicing: clear terms, no contra-arrangements or long-standing disputes.</li>
+</ul>
+
+<h2>What a dental practice actually needs instead</h2>
+<p>If you run a patient-facing practice and you have read this far, you probably have a real cash-flow question that invoice finance cannot answer. Here is where it does get answered.</p>
+<ul>
+<li><strong>Buying, buying into, or expanding a practice:</strong> a commercial mortgage or acquisition loan, sometimes up to full value for the right buyer. See the dentists-site guide to <a href="https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-working-capital-overdraft-finance-options">practice working-capital and overdraft options</a> for the funding map.</li>
+<li><strong>Chairs, scanners, CBCT, and fit-outs:</strong> asset finance (hire purchase or lease), which also interacts with capital allowances so the tax timing is worth planning. Start with the dentists-site guide to <a href="https://www.dentalfinancepartners.co.uk/blog/capital-allowances-and-equipment/dental-equipment-and-chair-finance">dental equipment and chair finance</a>, and see our business-wide <a href="/fundamentals/asset-finance-guide">asset finance guide</a> for the hire-purchase-versus-lease decision.</li>
+<li><strong>Short-term cash gaps</strong> (a tax bill, a slow NHS reconciliation, a staffing wobble, or a squat practice ramping up): a <a href="/blog/business-finance/working-capital-finance">working-capital facility</a>, an overdraft, or a <a href="/blog/business-finance/revolving-credit-facility">revolving credit facility</a> that you draw and repay as the cycle turns.</li>
+<li><strong>Card-led private clinics</strong> with heavy card takings and no debtor book: a <a href="/blog/business-finance/merchant-cash-advance">merchant cash advance</a> advances against future card settlements, though it is an expensive tool and a company-only one (a sole-trader MCA can be regulated consumer credit, so we fence that away).</li>
+</ul>
+<p>On the tax side, whichever route you take, the VAT position of a mixed NHS and private practice is its own puzzle (NHS and most clinical private treatment is exempt, purely cosmetic work can be standard-rated, and the £90,000 registration threshold still bites). We do not re-explain it here; our <a href="/blog/vat-and-making-tax-digital/vat-threshold-2025-26">VAT registration threshold guide</a> covers it, and our accountant team can structure the finance and the tax together.</p>
+
+<h2>How to apply</h2>
+<p>The process is deliberately short. Use the form below and confirm, first, whether your dental business is a limited company. If it is, tell us what it is (a lab, a supplier, a practice) and, for a lab or supplier, your turnover, your live debtor-ledger value, and your customer spread. We pass that to our commercial-finance broker panel, and brokers come back with competing quotes for the facility that fits, whether that is invoice finance for a genuine debtor book or a practice-finance route for a surgery. For independent background on the funding types available to smaller companies, the <a href="https://www.british-business-bank.co.uk/">British Business Bank</a> finance guide is a good neutral reference.</p>
+<p>If your business is not a limited company, or if you are a self-employed associate, we will not push you at a product that cannot help. We will flag the practice-finance or FCA-authorised route that actually fits, and if a company structure would change your options, our accountant team can talk you through incorporation and the tax that goes with it. The aim is to send you to the right funder, not simply any funder.</p>

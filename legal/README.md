@@ -1,30 +1,72 @@
-# Property Tax Partners - Lead Generation & Data Sharing Agreement (draft pack)
+# Legal pack: partner-network data sharing
 
-First-draft contract pack for the exclusive lead arrangement between **Ashfield Trading Limited** (trading as Property Tax Partners) and **DJH Business Advisers Limited**. Drafted as an aid, in British English, under the law of **England and Wales**. **Not legal advice** - have a qualified solicitor and a data protection specialist review before signing.
+Controller-to-controller data-sharing pack for **Ashfield Trading Limited** (company number 16358723), which operates a portfolio of specialist enquiry websites and supplies enquiries to a network of partner firms trading as the **Ashfield Partner Network**. British English, law of **England and Wales**. **Not legal advice** - have a qualified solicitor and a data protection specialist review before signing or first delivery.
 
-## Contents
+## How this is structured (read this first)
+
+There are **two layers and two ways to send them**.
+
+The **data protection layer** is `DSA_TEMPLATE.md`: firm-agnostic, never redrafted per prospect, and the single place the data protection wording exists. The **commercial layer** is `PARTNER_AGREEMENT_TEMPLATE.md` plus a Schedule 1 generated from `config/tiers.json`, `config/standard_terms.md` and the classification rubric in `docs/CLASSIFY.md`.
+
+`build_agreement.py` assembles the two into **one combined document** that a firm signs once. It lifts the DSA in verbatim rather than copying it, so the data protection layer physically cannot fork between the standalone document and the combined one. `test_build_agreement.py` proves that on every build.
+
+Send the combined agreement by default. Send the standalone DSA where a firm, or its solicitor, wants to review the data protection layer on its own.
 
 | File | What it is |
 |---|---|
-| **Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.docx** | **The operative signing copy for DocuSign / Word — send this to DJH.** Lean version (~13-14pp): comments stripped, figures finalised, optional extras condensed, only genuine signing blanks left (date, DJH signatory, DJH inbox/email). Built from the `_FOR_SIGNATURE.md` source. |
-| **Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.md** | Markdown source of the lean signing copy (edit this, then rebuild the .docx). This is the authoritative version of the terms. |
-| **build_signing_docx.py** | Rebuilds the signing-copy `.docx` from the `.md` using python-docx (no pandoc needed). After editing the `.md`, run `python build_signing_docx.py` in this folder. Matches the original look (US Letter, Calibri 11, Heading 1/2 styles, the three tables, page breaks before each Schedule). `*.bak-YYYY-MM-DD` files are pre-edit backups. |
-| **[Lead_Generation_and_Data_Sharing_Agreement.md](Lead_Generation_and_Data_Sharing_Agreement.md)** | The **long-form annotated reference** with full `<!-- LAW: -->` legal-reasoning comments — internal only, NOT for sending. It is more verbose and carries a few optional clauses the lean signing copy condenses or drops (see Review Checklist Part I); rely on the lean version for the actual terms. |
-| **[Plain_English_Summary.md](Plain_English_Summary.md)** | One-page plain-English summary of the key terms. |
-| **[Review_Checklist_and_Placeholders.md](Review_Checklist_and_Placeholders.md)** | What to have a professional review (prioritised), plus a checklist of every `[PLACEHOLDER]` to complete. |
-| **[Questions_for_Supplier.md](Questions_for_Supplier.md)** | What I still need from you to finish the draft. |
+| **PARTNER_AGREEMENT_TEMPLATE.md** | The commercial layer, clauses 1 to 21 (version 17 August 2026). Firm-agnostic. Carries three markers that `build_agreement.py` fills. **Never paste prices, caps, the rubric or the DSA into this file by hand.** |
+| **DSA_TEMPLATE.md** | The single standing Data Sharing Agreement (version 14 August 2026). Data protection only. Also the source of Schedule 2 and Annexes A and B of the combined agreement, extracted between its `dsa:` and `dsaannex:` markers. Keep those markers in place. |
+| **Legitimate_Interests_Assessment.md** | Standing, firm-agnostic LIA (**complete reassessment, 14 August 2026**, review 14 August 2027). Assesses the pool model as it actually runs. Its conclusion is expressly conditional: see "The conditions the LIA imposes" below. |
+| **build_agreement.py** | Assembles the combined agreement into `out/`. Run this first. |
+| **test_build_agreement.py** | Self-check: prices trace to config, caps match the engine, Schedule 2 reproduces the DSA verbatim and Schedule 1 paragraph 7 reproduces the rubric verbatim, neither repeats the commercial clauses, no placeholders, no retired model wording, and the result is fit to send. Run after any change to either template or to the rubric. |
+| **build_pdf.py** | Renders any `.md` to a clean black-text A4 PDF (reportlab). |
+| **docprep.py** | The house rules for anything that leaves this repo: no em-dashes, horizontal rules, bold, HTML comments, internal file paths, bracket placeholders or duplicated sentences. Both builders clean the source through it and refuse to write a file that still breaks a rule. |
+| **build_signing_docx.py** | Renders a `.md` to a `.docx` for recipients who prefer to type into a document. Defaults now point at the built combined agreement. |
+| **_archive/** | Superseded instances and historical drafts (DJH pack, Haines Watts pack, the old combined agreement, stale rendered PDFs). See `_archive/README.md`. Never delete executed contracts. |
+| **out/** | Build output. Regenerate rather than edit. |
 
-## Legal grounding (researched 20 June 2026)
-- **UK GDPR + Data Protection Act 2018**, as amended by the **Data (Use and Access) Act 2025** (main provisions in force 5 Feb 2026; new controller complaints-handling duty in force 19 June 2026). **PECR 2003** for electronic marketing.
-- **ICO Data Sharing Code of Practice** (s.121 DPA 2018) - controller-to-controller sharing.
-- **Data Protection (Charges and Information) Regulations 2018** - ICO registration fee.
-- **Late Payment of Commercial Debts (Interest) Act 1998** - interest and fixed compensation.
-- **Unfair Contract Terms Act 1977** - B2B limitation/exclusion enforceability.
-- **Companies House** register checked for DJH (no. 03451690): Active; incorporated 17 Oct 1997; registered office confirmed; formerly Mitten Clarke Limited / DJH Mitten Clarke Limited.
+## The operating model the pack reflects
 
-This is **draft v2**, revised after a five-lens adversarial legal review (data protection, UCTA/enforceability, internal consistency, commercial balance, completeness). See Review Checklist Part C for what changed.
+Owner-locked 12 to 14 August 2026. Recorded here because every document in the pack depends on it.
 
-## Three things to decide first
-1. **Lawful basis for the share (the biggest call):** consent vs "necessary to act on the enquiry" (Art 6(1)(b)/(f)). Left as a documented choice for your DP adviser in Schedule 2, para 3, with frozen wording to settle in Annex B. See Review Checklist Part A, item 1.
-2. **Liability cap:** drafted as a **mutual** cap at "greater of £floor or **12 months'** fees" rather than the 3 months you mentioned (a 3-month, one-way cap risks being struck down under UCTA, leaving you *uncapped*). Plus set the £ floor, super-cap and insurance limit together. See Review Checklist Part A, item 3.
-3. **Your entity details:** likely Ashfield Trading Ltd (16358723) trading as Property Tax Partners - confirm so I can fill the party block, plus your ICO registration number.
+- Enquiries come from the whole website portfolio, not one site. Each site collects under the estate-standard on-site notice in Annex B of the DSA: recipients disclosed as a **category**, never named on-site, with the sharing itself disclosed on the form and the number of firms disclosed one layer down, in the privacy policy the form links to.
+- A verified enquiry is graded by case type under `docs/CLASSIFY.md` and offered to the network as a **redacted alert**. The alert carries the enquiry in the enquirer's own words with names, phone numbers, email addresses, postcodes, links and company names stripped, and no contact details. A firm decides from that; the unredacted enquiry and the contact details go out only on claim.
+- A firm **claims** an enquiry to receive it in full. Claims run in two independent, capped lanes: **up to 3 accounting firms** and **up to 3 firms in other professions**. The maximum number of firms that can receive one enquirer's details is therefore **6**.
+- A firm may instead claim **exclusively**, at 3 times the price, which locks its own lane. Exclusivity is per enquiry only; no firm is ever promised a site's flow.
+- An enquiry no firm claims holds its price and cascades to the other lane after 48 hours. There is no last-call discount.
+- Enquiries we could never verify are supplied after a 7-day window as a **Bulk Supply**: a batch, to **one** firm, with no alert and no per-enquiry claim. Bulk Supply is defined separately from a Referral because it has no acceptance step.
+- Each receiving firm identifies itself to the enquirer under its own Article 14 notice at first contact.
+
+## The conditions the LIA imposes
+
+The LIA's conclusion is conditional, and the conditions are operational, not drafting flourishes. If any fails, the lawful basis for the sharing fails with it.
+
+1. **The caps stay at 3 and 3.** Raising either, or setting the adjacent lane back to uncapped, requires the LIA balancing test to be redone **first**. `lead_engine/scripts/test_lanes.py` fails if a lane is uncapped.
+2. **Both layers of the transparency are live on a site before its enquiries enter the pool.** Layer one is the enquiry form, which must disclose that details are shared with regulated firms in the partner network and must link to the privacy policy (DSA Annex B.2). Layer two is that privacy policy, which must carry the full detail in Annex B.4: more than one firm, both professions, the maximum number, cascade, bulk supply, the fee and the right to object. A site missing either layer must not be routed into the network. Revised 17 August 2026; before that the maximum number sat on the form itself.
+3. **The redacted-alert step stays.** A firm learns the enquirer's identity only after claiming. This is what keeps the real number of recipients below the disclosed ceiling, and the LIA leans on it harder under the layered notice.
+4. **Bulk Supply goes to one firm per batch and excludes anyone who has objected.**
+
+## The prospect flow
+
+1. Prospect asks to join the network.
+2. `python legal/build_agreement.py`, then `python legal/build_signing_docx.py` for the signing copy or `build_pdf.py` for a review PDF.
+3. You sign and date the Supplier signature block. Everything else on the Supplier side is already filled in.
+4. They complete the Recipient details block, sign, and send it back.
+5. Record the signed date against the firm before it receives any alert. **A firm must not be alerted before its agreement is signed**, per the LIA and DSA clause 3.
+
+Nothing to redraft per prospect. A price agreed differently from the published card goes in Schedule 1 paragraph 7 ("Agreed variations"), not into the body. If a clause needs improving, edit the template and rebuild; git is the version history. Already-signed copies are frozen.
+
+## Owner items (before first pool delivery)
+
+- [ ] Complete ICO registration and record the reference in the Supplier details block ("Available on request" is a placeholder).
+- [x] Carry out and document the Supplier DPIA required by DSA clause 11.3. Done 14 August 2026, `DPIA.md`, review 14 August 2027.
+- [ ] Solicitor review of the set as a whole: the combined agreement (which contains both layers) plus `Legitimate_Interests_Assessment.md` and the on-site notice wording, reviewed together, before the first delivery to a pool recipient. The commercial layer is new drafting as of 14 August 2026 and the LIA is a complete reassessment, so this review matters more than it did.
+- [x] Signed-agreement gate enforced in code, not just in the runbook: `matchingBuyers` filters on `dsa_signed_at`, and the dry-run engine refuses to ping or accept a claim from a firm with no `dsa_signed_date`.
+
+## Legal grounding
+
+- **UK GDPR + Data Protection Act 2018**, as amended by the **Data (Use and Access) Act 2025** (controller complaints-handling duty in force 19 June 2026). **PECR 2003** for electronic marketing.
+- **ICO Data Sharing Code of Practice** - controller-to-controller sharing; documented Legitimate Interests Assessment.
+- **Late Payment of Commercial Debts (Interest) Act 1998**; **Unfair Contract Terms Act 1977** (B2B limitation enforceability).
+
+Each firm's agreement is executed bilaterally and separately; each firm sees only its own agreement, and is never told which other firms are in the network.

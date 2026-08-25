@@ -1,0 +1,36 @@
+{
+  "batch_id": "M3-A-B3",
+  "phase": "RUN",
+  "lane": "A",
+  "bucket": "MTD for ITSA + Penalties & enquiries + Penalties, enquiries & HMRC nudge letters + Let Property Campaign & HMRC voluntary disclosure + Self-assessment mechanics",
+  "agent_id": "MW3-RUN-a",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave3-a",
+  "branch": "property-megawave3-a",
+  "completed_at": "2026-05-28T10:30:00Z",
+  "commit_shas": [
+    "f5b0a9ff",
+    "4063548e",
+    "b2eb05d1",
+    "85f19ae6",
+    "c50de274",
+    "ee990e76"
+  ],
+  "slugs_done": [
+    "late-filing-and-late-payment-penalties",
+    "let-property-campaign-penalty-calculator",
+    "let-property-campaign-why-voluntary-disclosure-makes-sense",
+    "making-tax-digital-major-self-assessment-overhaul-ahead",
+    "missed-taxes-let-property-campaign-to-the-rescue",
+    "what-is-qualifying-income-for-mtd"
+  ],
+  "output_dir": "Property/web/content/blog/",
+  "wordcounts": {
+    "late-filing-and-late-payment-penalties": 5877,
+    "let-property-campaign-penalty-calculator": 5852,
+    "let-property-campaign-why-voluntary-disclosure-makes-sense": 5400,
+    "making-tax-digital-major-self-assessment-overhaul-ahead": 5960,
+    "missed-taxes-let-property-campaign-to-the-rescue": 5666,
+    "what-is-qualifying-income-for-mtd": 5644
+  },
+  "notes": "All 6 picks written as full published blog pages. Per-page checks at write time: 0 em-dashes (Grep-verified each file), 0 Tailwind/className strings, metaTitle <= 62 chars, metaDescription <= 158 chars, 12-13 FAQs per page in YAML frontmatter array, HTML body (semantic only), anonymised personas per brief (Pemberton/Whitfield/Cordwell/Marwood for A13; Hollingsworth/Rashleigh/Belmount/Vandenberg/Padworth for A14; Stratton/Underhill/Westhampnett/Hollybank/Penbury for A15; Ainsworth/Browning/Crowther/Davenport for A16; Kettering/Linstead/Mortlake/Norcombe/Ottershaw for A17; Pevensey/Quenington/Rochester/Stapleford/Thirling/Underbrook for A18), statutory citations verbatim from brief authority lists (FA 2009 Sch 55 paras 3-6 + Sch 56 para 3 + FA 2021 Sch 24 points regime + Spring Statement 2025 3%/3%/10% on 15/30/31 day-triggers verbatim per §19.7 lock; Sch 41 FA 2008 paras 5/6A/13/20 + 12-month qualifier in para 13 per F-5 Wave 7 lock + Cat 1/2/3 uplift; TMA 1970 ss.7/28A/29/34/36/36A/86 + Perrin v HMRC [2018] UKUT 156 + HMRC v Tooth [2021] UKSC 17 + HMRC v Hicks [2020] UKUT 12 + Martland v HMRC [2018] UKUT 178; TMA 1970 Sch A1 inserted by F(No.2)A 2017 Sch 14 + SI 2021/1076 regs 4/20/21/22 + £50k/£30k/£20k phased thresholds per §19.1 lock + £10k abandoned threshold callout per §19.8 lock). Anti-templating maintained: A13 individual-landlord SA penalty regime held distinct from sibling A1 PAYE / A5 CT / A20 MTD-catalogue; A14 calculator-led held distinct from sibling A3 benefits-tally / A12 orientation / A15 strategic-rationale / A17 emotional-rescue; A15 5-strand strategic-philosophical depth held distinct from A3's tactical-numerical framing; A16 4-axis overhaul orientation held distinct from A18 qualifying-income deep-dive / A19 joint-owner / A20 penalty catalogue; A17 emotional-rescue tonal register (calm + structural + action-oriented) held distinct from sibling narrative LPC pages; A18 gross-not-net headline pedagogical line led the page with Pevensey-Estate worked example per Wave 3 §19.2 lock. F-1-adjacent drift watchpoint navigated: 15/30/31 day-triggers used with 3%/3%/10% rates throughout MTD ITSA cascade content; legacy 30-day/6-month/12-month triggers used with 5%/5%/5% rates throughout pre-MTD Sch 56 content; never crossed. FA 2021 Sch 24 vs FA 2007 Sch 24 numerical-name collision navigated: explicit naming both schedules with parent-Act year disambiguator throughout penalty content. £10k-abandoned threshold called out as stale watchpoint on A16 and A18. Letting-agent net-of-fees trap taught with worked example on A18. Joint-property share-of-gross (regulation 21) treated as one worked example on A18 with cross-link to A19 primary deep-dive. LtdCo and SIPP/SSAS cross-stream boundaries taught with worked examples on A18. CoP9 boundary taught explicitly on A14 + A15 + A17 with routing-to-specialist triggers. No build step run in worktree (manager runs npm build after merge to main). No tracker / monitored_pages updates from worktree (manager handles main-side flips per pickup doc). No site-wide flags raised this batch."
+}

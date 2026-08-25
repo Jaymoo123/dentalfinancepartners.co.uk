@@ -135,7 +135,7 @@ function compute(ctx: PremiumComputeContext) {
       ],
     },
     note:
-      `${scopeNote} The company figure is Corporation Tax on retained profit only — extracting it as ` +
+      `${scopeNote} The company figure is Corporation Tax on retained profit only. Extracting it as ` +
       "salary or dividends is taxed again personally (the calculator does not model extraction). " +
       "The Section 24 reducer is also capped by your total taxable income, which a single tool cannot see. " +
       "Incorporating an existing portfolio can trigger CGT and SDLT. These are estimates, not advice for your situation.",

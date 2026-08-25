@@ -42,8 +42,9 @@ export function marginalSdlt(price: number, bands: SdltBand[] = STANDARD_SDLT_BA
 /**
  * SDLT on an additional dwelling: standard bands PLUS the 5% surcharge on the
  * whole price. This is the figure a company pays when a rental is transferred
- * into it (a genuine property-letting company is relieved from the 15% Sch 4A
- * rate, so it pays standard rates plus the surcharge).
+ * into it (a genuine property-letting company is relieved from the 17% Sch 4A
+ * rate, 15% before 31 October 2024, so it pays standard rates plus the
+ * surcharge).
  */
 export function additionalDwellingSdlt(price: number): number {
   return marginalSdlt(price, STANDARD_SDLT_BANDS) + price * ADDITIONAL_DWELLING_SURCHARGE;

@@ -47,7 +47,7 @@ faqs:
   - question: "Does a spreadsheet count as a digital record for MTD?"
     answer: "Yes. Records kept in spreadsheet cells are digital records for Making Tax Digital, as are bank-feed CSV files and photographs of receipts. The point is that the records are held digitally and can be transferred by a digital link. Paper receipts kept in a shoebox are not digital records on their own, so you would need to digitise them (a clear photo or scan is sufficient). The spreadsheet itself, properly structured, is exactly the kind of digital record HMRC expects."
   - question: "How long must I keep my landlord records?"
-    answer: "If you let property as an individual, you must keep your records until five years after the 31 January filing deadline for that tax year. So records for 2026/27 must be kept until 31 January 2033. Landlords who hold property through a limited company keep accounting records for six years from the end of the accounting period under the corporation-tax record-keeping rules (the Companies Act 2006 minimum is three years from the date a record is made for a private company, but the six-year tax rule governs in practice). The penalty for failing to keep adequate records can be up to GBP3,000 a year. Many landlords keep everything for around seven years as a practical buffer, especially where a property might be sold and capital gains records are needed."
+    answer: "If you let property as an individual, you must keep your records until five years after the 31 January filing deadline for that tax year. So records for 2026/27 must be kept until 31 January 2033. Landlords who hold property through a limited company keep accounting records for six years from the end of the accounting period under the corporation-tax record-keeping rules (the Companies Act 2006 minimum is three years from the date a record is made for a private company, but the six-year tax rule governs in practice). The penalty for failing to keep adequate records can be up to £3,000 a year. Many landlords keep everything for around seven years as a practical buffer, especially where a property might be sold and capital gains records are needed."
   - question: "What is the difference between a landlord bookkeeping spreadsheet and accounting software?"
     answer: "A landlord bookkeeping spreadsheet is something you build and control: you decide the columns, enter the data and run the totals. Accounting software automates bank feeds, categorisation and filing, and submits to HMRC directly. A spreadsheet is cheaper and flexible and stays MTD-compatible through bridging software, but it relies on disciplined manual entry. Software reduces that effort as portfolios grow. Neither is wrong; it is a question of how much volume and complexity you are managing."
   - question: "How do I track rental income from multiple properties in one spreadsheet?"
@@ -57,7 +57,7 @@ faqs:
   - question: "Should I record rental income when it is due or when it is received?"
     answer: "Most individual landlords use the cash basis, which is now the default, so you record rent when the money is actually received and expenses when they are paid. This is why the income worksheet has a date-received column. If you have elected to use the accruals basis instead, you would record income when it is due and expenses when incurred. Be consistent, and label your basis on the spreadsheet so figures reconcile to the return."
   - question: "Can a spreadsheet handle capital gains tax when I sell a property?"
-    answer: "A spreadsheet cannot file the capital gains tax, but it should hold the records that make the calculation straightforward: the original purchase price and acquisition costs, every capital improvement with its cost and evidence, and the disposal costs when you sell. Residential property gains are taxed at 18% and 24% after the annual exempt amount of GBP3,000, and a UK residential disposal must be reported and paid within 60 days. Keeping the capital improvements log from day one means the base cost is ready when you need it."
+    answer: "A spreadsheet cannot file the capital gains tax, but it should hold the records that make the calculation straightforward: the original purchase price and acquisition costs, every capital improvement with its cost and evidence, and the disposal costs when you sell. Residential property gains are taxed at 18% and 24% after the annual exempt amount of £3,000, and a UK residential disposal must be reported and paid within 60 days. Keeping the capital improvements log from day one means the base cost is ready when you need it."
 ---
 
 <p>Most landlord spreadsheet guides describe a template and then leave you to build it yourself. This one gives you the actual structure. Below are the column layouts for the four worksheets every UK landlord needs, written so you can copy them straight into Excel or Google Sheets, with each column mapped to the box it feeds on your <strong>SA105</strong> property pages. There is no gated download and no product to buy, just the schema itself.</p>
@@ -77,9 +77,9 @@ faqs:
 <tr><th>Gross qualifying income</th><th>MTD for Income Tax mandatory from</th></tr>
 </thead>
 <tbody>
-<tr><td>Over GBP50,000</td><td>6 April 2026</td></tr>
-<tr><td>Over GBP30,000</td><td>6 April 2027</td></tr>
-<tr><td>Over GBP20,000</td><td>6 April 2028</td></tr>
+<tr><td>Over £50,000</td><td>6 April 2026</td></tr>
+<tr><td>Over £30,000</td><td>6 April 2027</td></tr>
+<tr><td>Over £20,000</td><td>6 April 2028</td></tr>
 </tbody>
 </table>
 
@@ -162,7 +162,7 @@ faqs:
 </tbody>
 </table>
 
-<p>When you sell, this log feeds directly into your capital gains tax calculation. UK residential property gains are taxed at 18% and 24% after the annual exempt amount of GBP3,000, and a UK residential disposal must be reported and the tax paid within 60 days of completion. Do not try to compute the gain inside this spreadsheet; just keep the records clean. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a> covers the calculation, and our <a href="/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long">CGT record-keeping guide</a> sets out exactly what to retain and for how long.</p>
+<p>When you sell, this log feeds directly into your capital gains tax calculation. UK residential property gains are taxed at 18% and 24% after the annual exempt amount of £3,000, and a UK residential disposal must be reported and the tax paid within 60 days of completion. Do not try to compute the gain inside this spreadsheet; just keep the records clean. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property guide</a> covers the calculation, and our <a href="/blog/capital-gains-tax/cgt-record-keeping-property-sales-what-to-save-how-long">CGT record-keeping guide</a> sets out exactly what to retain and for how long.</p>
 
 <h2>Setting up and maintaining the spreadsheet</h2>
 
@@ -181,7 +181,7 @@ faqs:
 
 <h2>How long to keep your landlord records</h2>
 
-<p>The retention rule is set by <a href="https://www.legislation.gov.uk/ukpga/1970/9/section/12B" rel="nofollow">section 12B of the Taxes Management Act 1970</a>. If you let property as an individual, you must keep your records until <strong>five years after the 31 January filing deadline</strong> for that tax year. In practice that means records for the 2026/27 tax year must be kept until 31 January 2033. The penalty for failing to keep adequate records can be up to GBP3,000 for each year.</p>
+<p>The retention rule is set by <a href="https://www.legislation.gov.uk/ukpga/1970/9/section/12B" rel="nofollow">section 12B of the Taxes Management Act 1970</a>. If you let property as an individual, you must keep your records until <strong>five years after the 31 January filing deadline</strong> for that tax year. In practice that means records for the 2026/27 tax year must be kept until 31 January 2033. The penalty for failing to keep adequate records can be up to £3,000 for each year.</p>
 
 <p>Landlords who hold property through a limited company are on a different footing: the Companies Act 2006 sets a minimum of three years from the date a record is made for a private company (the structure of nearly every landlord SPV), but the corporation-tax record-keeping rules require records to be kept for <strong>six years from the end of the accounting period</strong>, so six years is the figure that governs in practice. As a practical buffer, and because capital gains records may be needed long after the income-tax window closes, many landlords retain everything for around seven years. Our <a href="/blog/landlord-tax-essentials/record-keeping-landlords-what-track-how-long-keep">record-keeping guide</a> sets out the full picture of what to track and how long to keep it.</p>
 

@@ -91,7 +91,7 @@ faqs:
 <li>Tax: the sale of goodwill is a capital gain, eligible for Business Asset Disposal Relief (BADR) at 14% in 2025/26, rising to 18% from April 2026. The lifetime limit is £1 million.</li>
 </ul>
 
-<p>Worked example: Sale of goodwill for £150,000. After annual exempt amount (£3,000), the gain is £147,000. BADR at 14% gives tax of £20,580. Without BADR, the gain would be taxed at 24% (higher rate) = £35,280. The BADR saving is £14,700.</p>
+<p>Worked example: Sale of goodwill for £150,000. After annual exempt amount (£3,000), the gain is £147,000. BADR at 18% (the rate from 6 April 2026) gives tax of £26,460. Without BADR, the gain would be taxed at 24% (higher rate) = £35,280. The BADR saving is £8,820.</p>
 
 <h3>Route 2: Gradual Handover with a Locum or Associate</h3>
 
@@ -144,13 +144,13 @@ faqs:
 <p>Tax is a major factor in succession planning. The key areas to address:</p>
 
 <ul>
-<li><strong>Goodwill disposal:</strong> As noted, BADR at 14% (2025/26) or 18% (from April 2026) applies to the first £1 million of lifetime gains on qualifying business assets. Plan to use your BADR allowance before the rate rises.</li>
+<li><strong>Goodwill disposal:</strong> As noted, BADR at 18% (from 6 April 2026; 14% applied in 2025/26) applies to the first £1 million of lifetime gains on qualifying business assets.</li>
 <li><strong>WIP and debtors:</strong> These are usually sold as part of the practice. WIP is taxed as trading income in the year it is realised. Debtors are taxed when collected. Consider a staggered sale to spread the tax liability.</li>
 <li><strong>Pension contributions:</strong> If you have unused annual allowance from previous years, make large pension contributions before the sale to reduce your taxable income in the final year.</li>
 <li><strong>Capital allowances:</strong> Claim capital allowances on office equipment and fixtures before the sale. The buyer will want a clean balance sheet.</li>
 </ul>
 
-<p>Worked example: A sole practitioner sells the practice for £200,000 (goodwill £150,000, WIP £30,000, debtors £20,000). The goodwill gain of £147,000 after the annual exempt amount is taxed at 14% BADR = £20,580. The WIP of £30,000 is taxed as trading income at 40% = £12,000. The debtors of £20,000 are taxed when collected. Total tax on the sale: approximately £32,580 plus NIC on the trading income element.</p>
+<p>Worked example: A sole practitioner sells the practice for £200,000 (goodwill £150,000, WIP £30,000, debtors £20,000). The goodwill gain of £147,000 after the annual exempt amount is taxed at 18% BADR (2026/27 rate) = £26,460. The WIP of £30,000 is taxed as trading income at 40% = £12,000. The debtors of £20,000 are taxed when collected. Total tax on the sale: approximately £38,460 plus NIC on the trading income element.</p>
 
 <p>For a full analysis of how your specific circumstances affect tax, speak to a <a href="/services/solicitor-accountants">solicitor accountant</a> who specialises in law firm succession.</p>
 

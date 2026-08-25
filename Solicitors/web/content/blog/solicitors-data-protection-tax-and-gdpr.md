@@ -6,7 +6,7 @@ date: "2026-05-18"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Compliance & Risk (COLP / COFA)"
-metaTitle: "GDPR Tax Relief for Law Firms: Solicitor Data Protection Costs"
+metaTitle: "GDPR Tax Relief for Law Firms: Data Protection Costs"
 metaDescription: "Can a law firm claim tax relief on GDPR compliance costs? We explain what data protection costs are deductible for solicitors and what HMRC looks for."
 altText: "Solicitor reviewing GDPR data protection documents in a law firm office"
 image: ""
@@ -14,7 +14,7 @@ h1: "Can a Law Firm Claim Tax Relief on GDPR Compliance Costs?"
 summary: "GDPR compliance costs are generally tax-deductible for law firms as a trade expense, but the treatment depends on whether the cost is revenue or capital in nature. We explain the distinction for solicitors and what records a COFA should keep."
 keyTakeaways:
   - "GDPR training, software subscriptions, data audits, and policy drafting are revenue expenses, fully deductible in the year incurred."
-  - "IT hardware bought for GDPR compliance is capital, claimed via capital allowances at 18% or 6%, or in full through the AIA up to £1 million."
+  - "IT hardware bought for GDPR compliance is capital, claimed via capital allowances at 14% or 6%, or in full through the AIA up to £1 million."
   - "ICO fines for data breaches are never deductible, but remedial costs such as a cybersecurity consultant generally are."
   - "An external DPO service fee is fully deductible revenue expenditure; an internal DPO or COFA salary is already a trade expense."
   - "The COFA should keep itemised invoices, contracts, and capital expenditure records to support every deduction against HMRC challenge."
@@ -27,7 +27,7 @@ faqs:
   - question: "Are ICO fines for data breaches tax-deductible for solicitors?"
     answer: "No. Fines imposed by the ICO are never deductible, regardless of the circumstances. However, the cost of remedial action after a breach (such as hiring a cybersecurity consultant) is generally deductible, provided it is wholly and exclusively for the trade and not caused by wilful default."
   - question: "Can a law firm claim capital allowances on IT hardware bought for GDPR compliance?"
-    answer: "Yes. IT hardware such as encrypted laptops, servers, and network equipment is capital expenditure. The firm can claim capital allowances (18% or 6% per year on the reducing balance) or use the Annual Investment Allowance (AIA) to deduct the full cost in the year of purchase, up to £1 million."
+    answer: "Yes. IT hardware such as encrypted laptops, servers, and network equipment is capital expenditure. The firm can claim capital allowances (14% main rate or 6% special rate per year on the reducing balance, the main rate having fallen from 18% in April 2026) or use the Annual Investment Allowance (AIA) to deduct the full cost in the year of purchase, up to £1 million."
 ---
 
 <h2>Introduction: Data Protection as a Trade Expense for Solicitors</h2>
@@ -51,7 +51,7 @@ faqs:
 <tr><td>Staff training</td><td>GDPR awareness course for fee-earners</td><td>Revenue: fully deductible in year</td></tr>
 <tr><td>Software subscription</td><td>Annual fee for encrypted document management</td><td>Revenue: fully deductible in year</td></tr>
 <tr><td>Data audit</td><td>External consultant reviews client data processing</td><td>Revenue: fully deductible in year</td></tr>
-<tr><td>New IT hardware</td><td>Purchase of encrypted laptops for remote working</td><td>Capital: capital allowances at 18% or 6% per year</td></tr>
+<tr><td>New IT hardware</td><td>Purchase of encrypted laptops for remote working</td><td>Capital: capital allowances at 14% or 6% per year</td></tr>
 <tr><td>Policy drafting</td><td>External solicitor drafts privacy notices and consent forms</td><td>Revenue: fully deductible in year</td></tr>
 <tr><td>Breach response</td><td>Cost of notifying ICO and affected clients after a breach</td><td>Revenue: fully deductible in year (but may be disallowed if caused by wilful default)</td></tr>
 </table>
@@ -72,7 +72,7 @@ faqs:
 
 <p>Software subscriptions paid annually or monthly are revenue. A firm paying £3,600 per year for a cloud-based practice management system with GDPR-compliant data storage can deduct the full amount each year.</p>
 
-<p>Hardware is different. A firm buying £15,000 of encrypted laptops for fee-earners is acquiring capital assets. The cost is not deductible in one go. Instead, the firm claims capital allowances: 18% per year on the reducing balance for most IT equipment (main pool). Some servers and network equipment may qualify for the 6% special rate pool.</p>
+<p>Hardware is different. A firm buying £15,000 of encrypted laptops for fee-earners is acquiring capital assets. The cost is not deductible in one go. Instead, the firm claims capital allowances: 14% per year on the reducing balance for most IT equipment (main pool), down from 18% under Finance Act 2026 section 28 with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax. Some servers and network equipment may qualify for the 6% special rate pool.</p>
 
 <p>If the firm uses the Annual Investment Allowance (AIA), the first £1 million of qualifying expenditure is deductible in full in the year of purchase. Most law firms can claim AIA on IT hardware, provided the equipment is used wholly for the trade. A partner using a laptop partly for personal purposes would need to apportion the cost.</p>
 

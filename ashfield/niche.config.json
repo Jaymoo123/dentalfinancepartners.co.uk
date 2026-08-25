@@ -1,0 +1,94 @@
+{
+  "niche_id": "ashfield",
+  "display_name": "Ashfield Trading",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 3
+  },
+  "partner": null,
+  "domain": "www.ashfieldtrading.co.uk",
+  "tagline": "The company behind the UK accounting lead network",
+  "description": "Ashfield Trading Ltd builds and operates a network of specialist UK accounting websites. Rent a site, buy leads, or partner with us for growth.",
+  "brand": {
+    "primary_color": "#1e2a5e",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/og-placeholder.svg"
+  },
+  "contact": {
+    "email": "hello@ashfieldtrading.co.uk",
+    "phone": "+44 20 3026 1111"
+  },
+  "navigation": [
+    { "label": "Value", "href": "/value" },
+    { "label": "Rent a Site", "href": "/rent-a-site" },
+    { "label": "Buy Leads", "href": "/buy-leads" },
+    { "label": "Growth", "href": "/growth" },
+    { "label": "How it works", "href": "/how-it-works" },
+    { "label": "Insights", "href": "/insights" },
+    { "label": "Brands", "href": "/brands" },
+    { "label": "Vision", "href": "/vision" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer_links": [
+    { "label": "Privacy policy", "href": "/privacy-policy" },
+    { "label": "Terms", "href": "/terms" },
+    { "label": "Cookie policy", "href": "/cookie-policy" }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK accounting firms and partners interested in lead generation, site rental, and digital growth",
+    "categories": ["Lead Generation", "Digital Growth", "Network Insights"],
+    "supabase_table": "blog_topics",
+    "site_key": "ashfield",
+    "source_identifier": "ashfield"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "Organization",
+    "service_areas": ["United Kingdom"],
+    "google_analytics_id": "",
+    "theme_color": "#1e2a5e",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    }
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "Accounting firm", "label": "Accounting firm" },
+      { "value": "Marketing agency", "label": "Marketing agency" },
+      { "value": "Other", "label": "Something else" }
+    ],
+    "placeholders": {
+      "name": "John Smith",
+      "email": "john@example.com",
+      "phone": "07700 000000",
+      "message": "e.g. I would like to know more about renting a site or buying leads..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Grow your firm with our network",
+    "sticky_secondary": "Talk to us about site rental and lead supply",
+    "sticky_button": "Get in touch"
+  },
+  "blog": {
+    "cta_heading": "Want to work with the network?",
+    "cta_body": "Talk to us about renting a site, buying leads, or partnering for growth.",
+    "cta_button": "Contact us"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}

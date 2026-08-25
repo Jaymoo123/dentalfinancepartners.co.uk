@@ -1,0 +1,43 @@
+{
+  "batch_id": "M2-A-B1",
+  "stage": 2,
+  "agent_id": "MW2-Stage2-A",
+  "completed_at": "2026-05-27T11:24:15Z",
+  "commit_shas": [
+    "7059f56",
+    "909d09c",
+    "7fdb5c1",
+    "b2c432b",
+    "f5f16f4",
+    "21cd1cf"
+  ],
+  "slugs_done": [
+    "a-complete-guide-on-incorporating-a-company-in-uk",
+    "a-guide-for-shareholders-in-the-uk",
+    "companies-house-changes-limited-partnership-requirements",
+    "corporate-tax-planning-strategies-for-uk-clients",
+    "corporation-tax-marginal-relief-uk-guide",
+    "directors-loan-accountsdla-uk-guide"
+  ],
+  "flags_raised": [
+    "F-7 BRIEF_DRIFT + EXISTING_PAGE_STALE — CTA 2010 ss.464C + 464D OMITTED by FA 2025 s.81(3)(b)-(4) from 30 October 2024 (residual anti-avoidance is s.464A). Consolidates with site-wide F-10 from Wave 6. Existing slug `directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d` encodes omitted-section numbers; back-patch decision deferred to wave-close manager."
+  ],
+  "drift_catches": [
+    "§16.40 — Stage 1 seed for A6 cited CTA 2010 ss.464C + 464D as live primary anti-avoidance. WebFetch against legislation.gov.uk confirmed omission by FA 2025 s.81(3)(b)-(4) from 30 October 2024. Corrected in-place in A6 brief extension; F-7 raised."
+  ],
+  "url_verification_summary": {
+    "authority_urls_verified_live": 23,
+    "competitor_urls_attempted": 11,
+    "competitor_urls_verified_live": 0,
+    "competitor_section_strategy": "session-side WebSearch at write time per Wave 8 F-1 + Wave 9 Bucket C 5/5 dead-rate pattern — RUN session sources via Google Search; Stage 2 did not invent plausible firm URLs",
+    "legislation_govuk_jsbypass": "WebFetch DID return live legislation.gov.uk pages this session (CTA 2010 s.18A / s.18D / s.18E / s.18N / s.455 / s.464A / s.464C / LPA 1907 / ECCTA Part 2). The §16.44 image-bound summarizer limitation confirmed only for s.18D formula display. Treat the prior 202-stub observation as env-state-dependent, not absolute."
+  },
+  "discoveries_logged": [
+    "D-6 §16.40 LESSON CONFIRMED — Stage 2 statutory cross-check (§16.36 gate) caught the ss.464C/D Stage 1 seed drift even after Stage 1b sign-off. Per-write §16.35 discipline remains load-bearing — Stage 1b is not the final defence.",
+    "D-7 URL_PATTERN — gov.uk + legislation.gov.uk URLs verified at 23/23 success in this session; competitor firm domains 0/11 (all 403/404). Pattern recommendation: future Stage 2 dispatches should pre-load authority URLs and treat competitor section as session-side at write time by default, not by exception.",
+    "D-8 SLUG_STALE_TENSION — existing slug `directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d` literally encodes the now-omitted CTA 2010 section numbers. Wave-close manager decision required (content back-patch vs URL repoint with redirect). Lower-cost option: content back-patch to cite s.464A current architecture + frame ss.464C/D historically."
+  ],
+  "anti_templating_check": "Six briefs read as a set. Boilerplate sections (Voice + style, 19-step workflow, Quality bar six checks) are deliberately verbatim per §4.8 and §7. Substantive content (framing differentiators, worked examples, FAQ phrasing, statutory-anchor depth) is distinct per pick. No same-sentence drift detected in customer-facing content.",
+  "branch": "main",
+  "worktree": "C:/Users/user/Documents/Accounting (main repo, Stage 2 commits to main per dispatch prompt)"
+}

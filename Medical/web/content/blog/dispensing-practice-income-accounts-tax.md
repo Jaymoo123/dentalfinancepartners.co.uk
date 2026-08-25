@@ -11,6 +11,12 @@ metaDescription: "How a dispensing GP practice earns from drug reimbursement and
 altText: "Dispensary shelves of medicines in a rural GP practice ready to be supplied to patients"
 image: ""
 h1: "Dispensing Practice Income: How It Works in the Accounts and How It Is Taxed"
+keyTakeaways:
+- "NHS prescription drugs a dispensing patient takes away are zero-rated (a taxable supply at 0%) under VATA 1994 Schedule 8 Group 12, so the input VAT on them is recoverable."
+- "Personally administered drugs such as vaccines and injections are exempt under VATA 1994 Schedule 9 Group 7, which carries no input-VAT recovery, while private-prescription drugs are standard-rated."
+- "Because zero-rated dispensing income is taxable turnover, it counts towards the £90,000 VAT registration threshold, unlike exempt NHS clinical care which does not."
+- "Most drug reimbursement is not profit: it simply returns the cost of drugs already bought at Drug Tariff prices published monthly by the NHS Business Services Authority, so the profit is the dispensing fees plus net buying margin after the margin adjustment."
+- "Drug stock held at the year-end is an asset carried forward and only drugs actually dispensed in the year are a cost of that year, so a weak stock count distorts the dispensing profit that flows to each partner's share."
 summary: "A dispensing GP practice supplies medicines directly to eligible patients and earns an income stream most practices never see. This guide explains how dispensing income is generated through drug reimbursement and dispensing fees, how it sits in the practice accounts as turnover with a matching drug-purchase cost and stock, how it is taxed as trading income, and the unusual VAT position where NHS dispensed drugs are zero-rated, personally administered drugs are exempt and private-prescription drugs are standard-rated."
 schema: ""
 faqs:

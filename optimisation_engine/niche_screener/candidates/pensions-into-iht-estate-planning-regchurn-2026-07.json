@@ -1,0 +1,28 @@
+{
+  "candidate_id": "pensions-into-iht-estate-planning-regchurn-2026-07",
+  "vertical": "pensions into IHT estate planning",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment",
+      "excerpt": "We welcome views on this technical consultation on the processes required to implement changes to Inheritance Tax rules for pension funds and death benefits.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "inheritance tax on pensions: liability, reporting and payment",
+    "inheritance tax on pensions liability reporting and payment"
+  ],
+  "buyer_hypothesis": {
+    "who": "HMRC impact assessment: c. 10,500 estates newly liable and c. 38,500 paying more IHT per year from 2027",
+    "proof": "stated in https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment"
+  },
+  "event_hypothesis": {
+    "what": "unused pension pots in scope of 40 percent IHT; reporting duties on personal representatives",
+    "date": "2027-04-06",
+    "source": "https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

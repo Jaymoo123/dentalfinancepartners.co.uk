@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "5% SDLT Surcharge Refund: How to Claim When Old Home Sells"
-metaDescription: "Step-by-step claim process for the 5% SDLT additional dwellings surcharge: deadlines, evidence, exceptional circumstances under SDLTM09807, and common traps."
+metaDescription: "Step-by-step claim process for the 5% SDLT additional dwellings surcharge: deadlines, evidence, exceptional circumstances under SDLTM09807"
 altText: "Miniature UK houses and a set of keys representing a property sale that triggers an SDLT surcharge refund claim"
 image: "https://images.pexels.com/photos/34134899/pexels-photo-34134899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -100,7 +100,7 @@ editorialNote: "Process-focused complement to our SDLT rates pillar, written to 
 
 <p><strong>Step 5: Note the submission reference and diarise the response window.</strong> HMRC's published service standard is 15 working days. Plan against three to nine months. If no acknowledgement arrives within four weeks, write to HMRC's SDLT helpline quoting the submission reference and UTRN.</p>
 
-<p>The full HMRC guidance is at <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-apply-for-a-repayment-of-the-higher-rates-for-additional-dwellings">apply for a repayment of the higher rates of SDLT</a> on gov.uk.</p>
+<p>The full HMRC guidance is at <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-apply-for-a-repayment-of-the-higher-rates-for-additional-properties">apply for a repayment of the higher rates of SDLT</a> on gov.uk.</p>
 
 <h2>Evidence HMRC will expect to see</h2>
 

@@ -1,0 +1,88 @@
+{
+  "candidate_id": "kitchen-fitting-leadmkt-2026-07",
+  "vertical": "kitchen fitting",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/kitchen-and-bathroom-fitters",
+      "excerpt": "Get More Kitchen & Bathroom Fitting Jobs. Every Single Day. We generate exclusive, high-quality leads for kitchen and bathroom fitters across the UK. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://godigitool.com/lead-generation-for-uk-kitchen-fitters/",
+      "excerpt": "Connect with your perfect customers! We generate sales leads for UK kitchen fitting businesses. Proven results with a money back guarantee.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.zapo.com/ads/kitchen-fitting",
+      "excerpt": "We've delivered £460m kitchen fitting leads using Google Ads • 100% positive customer reviews on Trustpilot • Sign up to the UK's #1 lead generation ...",
+      "metric": {
+        "price_gbp": 460
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.promo-seo.uk/lead-generation/industries/kitchen-fitters/",
+      "excerpt": "PromoSEO delivers exclusive kitchen fitting leads across the UK because installers need consistent access to homeowners ready to invest in renovation work.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://mulloysystems.com/web-design-lead-generation-kitchen-fitters",
+      "excerpt": "Professional kitchen fitter website showcasing your installations, materials, and process with instant quote requests. Qualified kitchen fitting leads from ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://godigitool.com/twist-of-silver-79-bathroom-kitchen-fitting-leads/",
+      "excerpt": "... kitchen fitting leads for their business. The ... That's a total of 79 new leads (with an average cost per lead of £16.48) ... 78 leads per month at £12 for a Blind ...",
+      "metric": {
+        "price_gbp": 16
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadhack.co.uk/locations/norwich/kitchen-fitters",
+      "excerpt": "We specialise in lead generation for kitchen fitting businesses across the UK. We understand that kitchen fitting leads need to convert into profitable outcomes ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadsnurtured.com/kitchen-fitters",
+      "excerpt": "Discover how our lead generation strategies helped Kitchen Fitters business, grow from 5 leads to 30+ leads a month with consistent, local clients. Forget ...",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "kitchen & bathroom fitters lead generation",
+    "kitchen fitters lead generation - kitchen installation leads",
+    "kitchen fitters leads",
+    "kitchen fitting",
+    "lead generation for kitchen fitters norwich | lead hack",
+    "lead generation for kitchen fitting",
+    "leads for kitchen fitters | zapo ads",
+    "twist of silver - 79 bathroom & kitchen fitting leads",
+    "web design & lead generation for kitchen fitters | get more ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK kitchen fitting providers already paying per lead",
+    "proof": "7 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

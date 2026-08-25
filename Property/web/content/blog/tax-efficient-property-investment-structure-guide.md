@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Tax-Efficient Property Investment Structure 2026/27 (UK)"
-metaDescription: "Sole trader vs limited company vs joint ownership vs LLP for UK landlords in 2026/27. Decision matrix, worked figures, and the SDLT, CGT, and MTD interactions."
+metaDescription: "Sole trader vs limited company vs joint ownership vs LLP for UK landlords 2026/27. Decision matrix, worked figures, and SDLT, CGT and MTD analysis."
 altText: "UK property investor reviewing different business structures and tax implications on documents"
 image: ""
 h1: "What Is the Most Tax-Efficient Property Investment Structure for UK Landlords in 2026/27?"
@@ -281,7 +281,7 @@ faqs:
 
 <h2>How MTD for ITSA Tilts the Structure Decision</h2>
 
-<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. Compliance involves MTD-compatible software (typically £100-£300 a year per business), four quarterly digital submissions, plus a Final Declaration. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. Compliance involves MTD-compatible software (typically £100-£300 a year per business), four quarterly digital submissions, plus a Final Declaration. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <p>Limited companies are outside MTD for ITSA entirely. The compliance cost difference is part of the total-cost-of-ownership maths, especially for landlords sitting just above the threshold.</p>
 

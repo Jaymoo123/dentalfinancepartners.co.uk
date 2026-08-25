@@ -69,7 +69,7 @@ export function MiniGrid({
   return (
     <div className="space-y-3">
       {config.heading && (
-        <h4 className="text-sm font-semibold text-slate-700">{config.heading}</h4>
+        <h4 className="text-sm font-bold text-slate-700">{config.heading}</h4>
       )}
 
       {rows.map((row, idx) => {
@@ -86,7 +86,7 @@ export function MiniGrid({
                   type="text"
                   value={String(row[nameCol.id] ?? "")}
                   onChange={(e) => update(row.id, nameCol.id, e.target.value)}
-                  className="min-w-0 flex-1 rounded-md bg-transparent px-1 py-0.5 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/30"
+                  className="min-w-0 flex-1 rounded-xl bg-transparent px-1 py-0.5 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/30"
                   aria-label={`Row ${idx + 1} name`}
                 />
               ) : (
@@ -98,7 +98,7 @@ export function MiniGrid({
                 <button
                   type="button"
                   onClick={() => remove(row.id)}
-                  className="shrink-0 rounded-md p-1 text-slate-400 transition-colors hover:bg-slate-200/70 hover:text-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-300"
+                  className="shrink-0 rounded-xl p-1 text-slate-400 transition-colors hover:bg-slate-200/70 hover:text-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-300"
                   aria-label={`Remove row ${idx + 1}`}
                 >
                   <X className="h-4 w-4" />
@@ -119,7 +119,7 @@ export function MiniGrid({
                         id={inputId}
                         value={String(row[col.id] ?? "")}
                         onChange={(e) => update(row.id, col.id, e.target.value)}
-                        className="h-9 w-full rounded-md border border-slate-200 bg-white px-2.5 text-sm text-slate-900 transition-colors focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        className="h-9 w-full rounded-xl border border-slate-200 bg-white px-2.5 text-sm text-slate-900 transition-colors focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                       >
                         {col.options?.map((o) => (
                           <option key={o.value} value={o.value}>

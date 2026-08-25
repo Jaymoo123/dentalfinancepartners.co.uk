@@ -221,12 +221,12 @@ editorialNote: "Wave 8 Bucket C C1 PILLAR, option-to-tax cluster framework page.
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="external nofollow" target="_blank">VATA 1994 Schedule 10 (option to tax buildings and land)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/2" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 2 (effect of the option to tax: exempt supplies become taxable)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/21" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 21 (real estate elections)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/25" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 25 (revocation after 20 years)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/28" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 28 (prior permission for pre-option exempt grants)</a></li>
-<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow" target="_blank">Form VAT1614A: Tell HMRC about an option to tax land and buildings</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-application-for-permission-to-opt-vat1614h" rel="external nofollow" target="_blank">Form VAT1614H: Apply for permission to opt to tax land or buildings</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="external nofollow noopener" target="_blank">VATA 1994 Schedule 10 (option to tax buildings and land)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/2" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 2 (effect of the option to tax: exempt supplies become taxable)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/21" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 21 (real estate elections)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/25" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 25 (revocation after 20 years)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/28" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 28 (prior permission for pre-option exempt grants)</a></li>
+<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow noopener" target="_blank">Form VAT1614A: Tell HMRC about an option to tax land and buildings</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-application-for-permission-to-opt-vat1614h" rel="external nofollow noopener" target="_blank">Form VAT1614H: Apply for permission to opt to tax land or buildings</a></li>
 </ul>

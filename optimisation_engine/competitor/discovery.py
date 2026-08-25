@@ -27,7 +27,7 @@ if ROOT not in sys.path:
 
 from optimisation_engine.competitor._db import _arr, _esc, _jsonb, _sql, parse_llm_json
 from optimisation_engine.competitor._fetch import fetch_url
-from optimisation_engine.clients.ddg_serp_client import fetch_organic_results
+from optimisation_engine.clients.serp_provider import fetch_serp
 from optimisation_engine.blog_generator.llm_providers import call_anthropic, LLMError
 from optimisation_engine.config import SONNET_MODEL
 
@@ -256,12 +256,16 @@ def run_discovery(
         our_pos = page_row.get("avg_position") or "?"
         print(f"\n[{i}/{len(sample)}] query={query!r} our_pos={our_pos}")
 
-        # Fetch Serper SERP
+        # Fetch SERP
         try:
-            serp = fetch_organic_results(query, num=n_competitors + 2, site_key=site_key)
+            serp_result = fetch_serp(query, num=n_competitors + 2, site_key=site_key)
         except Exception as exc:
             print(f"  CSE error: {exc}")
             continue
+
+        serp = serp_result["organic"]
+        print(f"  provider={serp_result['provider_used']}" +
+              (f" divergence={serp_result['divergence']}" if serp_result["divergence"] is not None else ""))
 
         if not serp:
             print(f"  Serper: no results (idempotency hit?)")

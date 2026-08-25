@@ -10,7 +10,7 @@ import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { buildService, buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
-  title: `Specialist Dental Accountants UK | ${siteConfig.name}`,
+  title: "Specialist Dental Accountants UK",
   description:
     "Specialist dental accountants for UK practices, principals, associates and locum dentists. NHS contract accounting, profit extraction, practice valuation. Fixed fees.",
   alternates: {
@@ -218,6 +218,7 @@ export default function ServicesPage() {
       <div className={`${siteContainerLg} py-8`}>
         <StatsBar stats={siteStats} />
       </div>
+
 
       {/* Service tiers */}
       <section className="bg-[var(--surface)] border-b border-[var(--border)]">

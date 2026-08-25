@@ -1,16 +1,16 @@
 # Property Lead Contactability & Nurture System
 
-*Built 2026-07-01. Fixes the "only 3 of 9 leads were contactable" problem by verifying, nurturing, and gating leads on our side BEFORE the manual DJH forward, so only verified + genuinely responsive leads are handed over.*
+*Built 2026-07-01. Fixes the "only 3 of 9 leads were contactable" problem by verifying, nurturing, and gating leads on our side BEFORE the manual partner forward, so only verified + genuinely responsive leads are handed over.*
 
 ## The problem
-Before this, submitting a form inserted a lead straight into Supabase (client-side, anon key) and showed a static thank-you page. Nothing verified the phone/email, nothing followed up, nothing proved the lead would respond. DJH (who call the leads) found most uncontactable.
+Before this, submitting a form inserted a lead straight into Supabase (client-side, anon key) and showed a static thank-you page. Nothing verified the phone/email, nothing followed up, nothing proved the lead would respond. The partner firm (who call the leads) found most uncontactable.
 
 ## What it does
 1. **Server chokepoint** (`/api/leads/submit`) replaces the direct insert for phone-bearing forms.
-2. **Real-time verification** at submit (the "verifying your details" moment): Twilio Lookup line-type (real, live, mobile?) + email deliverability. Catches dead/mistyped/non-mobile numbers before DJH ever sees them.
+2. **Real-time verification** at submit (the "verifying your details" moment): Twilio Lookup line-type (real, live, mobile?) + email deliverability. Catches dead/mistyped/non-mobile numbers before the partner firm ever sees them.
 3. **Instant multi-channel touch** fired synchronously (sub-5-minute speed-to-lead is the #1 lever): email + SMS + WhatsApp confirming the enquiry and inviting a self-booked review.
 4. **Reactive cadence** (hourly cron) of ~8 service follow-ups over 11 days (7 touches + a VIP same-day extra; full table in `LEAD_NURTURE_PROGRAMME.md`). Any two-way response halts the chase.
-5. **Contactability gate**: only leads that pass verification AND actively respond (reply / book / confirm) are promoted to `contactable`, which fires an enriched "READY FOR DJH" email to the operator. Unresponsive leads are marked `unreachable` and never forwarded.
+5. **Contactability gate**: only leads that pass verification AND actively respond (reply / book / confirm) are promoted to `contactable`, which fires an enriched ready-for-handover email to the operator. Unresponsive leads are marked `unreachable` and never forwarded.
 6. **Readiness dossier** (2026-07-01): the handoff email is a full evidence pack: explainable A/B/C readiness grade (0-10 score with per-point reasons), verbatim reply transcript with timestamps, response latency, best-call-window (from when they actually reply, London time), what they read on the site + calculator usage (from `web_events`), device/location, AI + Companies House enrichment. `lib/leads/dossier.ts`; pure scoring functions unit-tested.
 7. **Reply auto-ack** (2026-07-01): the first genuine SMS/WhatsApp reply gets ONE immediate service-only acknowledgement ("the team will call you soon; reply with the best time and roughly how many properties you own; or pick a slot"). Their answer arrives as a normal inbound reply and lands verbatim in the dossier. Idempotent via the `ack_sent` event; fully dormancy-gated through the same ChannelSender. Replies arriving after handoff trigger a short "Lead update" email to the operator (capped at 3 per lead, `operator_update` events). `lib/leads/reply-ack.ts`.
 
@@ -54,12 +54,12 @@ All RLS service-role-only. Additive + idempotent. Apply via `python scripts/appl
 - Property: `src/lib/leads/{verify,channels,contactability,handoff,dossier,reply-ack,submit-client}.ts`, `src/config/lead-nurture.ts` (sequence copy + buildContext), `src/lib/emails/lead-service-template.ts`.
 - Routes: `src/app/api/leads/{submit,confirm/[token],inbound/twilio,book}/route.ts`, `src/app/api/cron/lead-nurture/route.ts`.
 - Forms/UX: `src/components/forms/{LeadForm,MiniCapture,BookingPicker}.tsx`, `src/app/{thank-you,book}/page.tsx`, `src/lib/leads/booking.ts`, `src/config/site.ts` (notice).
-- **Native booking (2026-07-01, replaces Cal.com)**: nobody on our side attends a calendar, so booking is our own `/book` page (signed lead token `t`, minted at submit + in every nurture message): next 10 weekdays x 3 call windows (morning 9-12 / afternoon 12-3 / late afternoon 3-5:30). Picking a slot posts to `/api/leads/book`, records a `booked` event with the human slot label, and promotes through the same gate; the slot lands in the DJH dossier ("Booked callback: Tue 14 Jul, morning (9am to 12pm)"). The thank-you page embeds the picker inline right after submit via a `bt` token in the redirect. Re-booking is allowed (latest slot wins). No external scheduler, no Cal.com env, no webhook secret.
+- **Native booking (2026-07-01, replaces Cal.com)**: nobody on our side attends a calendar, so booking is our own `/book` page (signed lead token `t`, minted at submit + in every nurture message): next 10 weekdays x 3 call windows (morning 9-12 / afternoon 12-3 / late afternoon 3-5:30). Picking a slot posts to `/api/leads/book`, records a `booked` event with the human slot label, and promotes through the same gate; the slot lands in the partner dossier ("Booked callback: Tue 14 Jul, morning (9am to 12pm)"). The thank-you page embeds the picker inline right after submit via a `bt` token in the redirect. Re-booking is allowed (latest slot wins). No external scheduler, no Cal.com env, no webhook secret.
 
 ## Contactability gate rule
 `contactable` iff the lead has RESPONDED and the PHONE is proven:
 - Reply via SMS/WhatsApp -> proves the number -> contactable.
-- Booked callback OR email one-tap confirm -> contactable, provided the phone is not known-invalid (DJH call by phone).
+- Booked callback OR email one-tap confirm -> contactable, provided the phone is not known-invalid (the partner firm calls by phone).
 - Booked/confirmed but phone invalid -> surfaced for manual review, not auto-promoted.
 Promotion is idempotent (status filter) so the handoff email fires exactly once.
 
@@ -89,7 +89,7 @@ New:
 New (2026-07-02 psychology/AI programme; all default OFF):
 | Var | Purpose |
 |---|---|
-| `ANTHROPIC_API_KEY` | Server-only. Powers AI copy generation, the DJH call brief, inbound-email classification, and concierge intent classification (Claude via `lib/ai/anthropic.ts`; the model never receives name/email/phone). |
+| `ANTHROPIC_API_KEY` | Server-only. Powers AI copy generation, the partner call brief, inbound-email classification, and concierge intent classification (Claude via `lib/ai/anthropic.ts`; the model never receives name/email/phone). |
 | `LEAD_COPY_AI_ENABLED` | "true" arms per-lead AI-personalised sequence copy (QA-gated, static fallback per step). GATED on the privacy-notice update naming Anthropic as processor. |
 | `LEAD_CONCIERGE_ENABLED` | "true" arms the bounded SMS/WhatsApp booking concierge (closed template set, intent-classification only, turn cap, tax questions always escalate). GATED on owner review of the red-team suite. Off = the original single auto-ack. |
 | `LEAD_RESEND_WEBHOOK_SECRET` | Svix secret for the lead-scoped Resend events webhook (`/api/leads/events`: opened/clicked/bounced/complained). |
@@ -105,7 +105,7 @@ Retired 2026-07-01 (native `/book` replaced Cal.com): `LEAD_BOOKING_URL`, `NEXT_
 - **Aftercare**: booked-slot reminders (T-24h email; same-day SMS for afternoon/late windows) + `/api/leads/ics` calendar file + prep copy; abandoned-booking one-off nudge (`lib/leads/aux-cron.ts`, runs inside the hourly cron).
 - **Reactivity**: Resend opened/clicked -> hesitation variant (clicked-not-booked) and email->SMS channel shift (3 unopened); `booking_viewed` beacon; inbound EMAIL replies now count as responses (gate: like `confirmed`, phone must not be known-bad); spam complaints alert the operator (alert-only v1).
 - **Concierge**: `lib/leads/concierge.ts` books slots / captures best-time + portfolio / answers 5 fixed FAQs / escalates everything else by SMS reply. The model ONLY classifies intent; every outbound reply is a fixed template; 74-test adversarial suite. Live red-team with a real key + owner transcript review is an ARMING gate.
-- **DJH call brief**: `lib/leads/call-brief.ts` adds a QA-gated "How to open this call" section to the handoff dossier, grounded in the lead's verbatim enquiry.
+- **Partner call brief**: `lib/leads/call-brief.ts` adds a QA-gated "How to open this call" section to the handoff dossier, grounded in the lead's verbatim enquiry.
 - **On-site continuity**: booking token persisted client-side at submit; returning unbooked leads get "Pick your callback slot" via ReturningBar/StickyCTA and the assistant widget switches to booking-concierge mode instead of going silent; thank-you page shows a 3-step endowed-progress rail.
 - **Deliverability**: List-Unsubscribe + one-click headers on every nurture email; `/api/leads/optout/[token]` route.
 
@@ -128,4 +128,4 @@ Retired 2026-07-01 (native `/book` replaced Cal.com): `LEAD_BOOKING_URL`, `NEXT_
 ## Testing / verification
 - Unit + golden tests under the Property/web + web-shared test suites (verify verdict, gate, scheduler claim-before-send + advance, tokens, keyword parsing, dedupe, templates).
 - Non-polluting synthetic probe: submit a `source='test'` lead -> stubbed verify -> simulate a reply -> assert `contactable` -> assert the handoff was skipped-for-test (never emailed) -> clean up.
-- Kill switch: unset `LEAD_NURTURE_ENABLED` -> system inert. Migrations additive; the manual DJH forward is the ultimate human backstop.
+- Kill switch: unset `LEAD_NURTURE_ENABLED` -> system inert. Migrations additive; the manual partner forward is the ultimate human backstop.

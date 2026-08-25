@@ -9,9 +9,9 @@ export const lbttCalculator: GenericTool = {
   category: "Stamp duty",
   oneLiner:
     "Land and Buildings Transaction Tax for Scotland, including the 8% Additional Dwelling Supplement on second homes and buy-to-lets.",
-  metaTitle: "LBTT Calculator Scotland | incl. 8% ADS (2026/27)",
+  metaTitle: "LBTT Calculator Scotland 2026/27: Instant LBTT and 8% ADS",
   metaDescription:
-    "Free LBTT calculator for Scotland. Work out Land and Buildings Transaction Tax, including the 8% Additional Dwelling Supplement on buy-to-lets and second homes, and first-time-buyer relief.",
+    "Work out Scottish LBTT in seconds: 2026/27 bands, the 8% Additional Dwelling Supplement on second homes, and first-time-buyer relief lifting the nil band to £175,000.",
   intro:
     "Work out the Land and Buildings Transaction Tax on a Scottish property purchase, including the 8% Additional Dwelling Supplement.",
   ctaLabel: "Buying in Scotland? We'll handle the tax →",
@@ -20,13 +20,13 @@ export const lbttCalculator: GenericTool = {
     { id: "price", label: "Property price", type: "currency", default: 250_000, step: 5000 },
     {
       id: "additional",
-      label: "Additional property (buy-to-let or second home) — adds the 8% ADS",
+      label: "Additional property (buy-to-let or second home): adds the 8% ADS",
       type: "toggle",
       default: true,
     },
     {
       id: "firstTimeBuyer",
-      label: "First-time buyer — relief raises the nil band to £175,000",
+      label: "First-time buyer: relief raises the nil band to £175,000",
       type: "toggle",
       default: false,
     },

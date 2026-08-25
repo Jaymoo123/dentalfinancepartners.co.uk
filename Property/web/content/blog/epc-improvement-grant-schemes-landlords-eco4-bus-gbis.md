@@ -207,7 +207,7 @@ faqs:
 <h2>Application Pitfalls and Common Errors</h2>
 
 <ul>
-<li><strong>EPC out of date.</strong> Most schemes require an EPC issued within the last 10 years. A 2014-issued EPC may need refresh before application. EPC refresh takes 1-2 weeks and costs £60-£120.</li>
+<li><strong>EPC out of date.</strong> Most schemes require an EPC issued within the last 10 years. A 2014-issued EPC may need refresh before application. <a href="/blog/landlord-tax-essentials/epc-certificate-cost-uk">EPC refresh</a> takes 1-2 weeks and costs £60-£120.</li>
 <li><strong>MCS installer not certified for the specific measure.</strong> BUS requires the installer to be MCS-certified for the specific installation type (ASHP, GSHP, biomass). Generic MCS membership does not suffice. Confirm certification before signing the installer contract.</li>
 <li><strong>Outstanding insulation recommendations.</strong> BUS requires that the EPC does not list loft or cavity wall insulation as outstanding recommendations (unless exemption applies). Address insulation gaps before applying for BUS, or apply for the insulation work first under ECO4 / GBIS.</li>
 <li><strong>Tenant consent forgotten.</strong> Some schemes require tenant consent as part of the application; engaging the tenant early avoids delays.</li>

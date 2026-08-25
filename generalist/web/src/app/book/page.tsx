@@ -12,7 +12,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: `Book your free review | ${siteConfig.name}`,
+  title: `Book your free review`,
   description: "Pick a time for your free accounting review call.",
   robots: { index: false, follow: false },
 };

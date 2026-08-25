@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Succession & Sale"
 metaTitle: "Goodwill tax on a law firm sale: BADR rate, s.162, CGT"
-metaDescription: "How goodwill is taxed when a UK law firm is sold: capital disposal not income, BADR by date band, the buyer's 6.5% relief and its conditions, and section 162."
+metaDescription: "How goodwill is taxed when a UK law firm is sold: capital disposal not income, BADR by date band, the buyer's 6.5% relief and its conditions, and s.162."
 altText: "Solicitor reviewing law firm sale documents with goodwill valuation report on desk"
 image: ""
 h1: "How Is Goodwill Taxed When a Law Firm Is Sold? A Solicitor's Guide to Capital Disposal, BADR and Section 162"
@@ -104,7 +104,7 @@ faqs:
 
 <p>If, rather than selling to an outside buyer, you are moving an unincorporated practice into a company (for example incorporating a partnership or LLP as a recognised body or ABS), <strong>section 162 incorporation relief</strong> (TCGA 1992 s.162) can defer the CGT on the goodwill.</p>
 
-<p>Section 162 applies automatically where you transfer the <strong>whole business as a going concern</strong> to a company in exchange for shares. The gain on the goodwill and the other chargeable assets is not taxed at the point of incorporation. Instead it is rolled into the base cost of the shares you receive, and the tax surfaces only when you later dispose of those shares.</p>
+<p>Section 162 applies where you transfer the <strong>whole business as a going concern</strong> to a company in exchange for shares. It is no longer automatic: for transfers on or after 6 April 2026, Finance Act 2026 s.39 requires you to <strong>claim</strong> the relief, on or before the first anniversary of the 31 January following the tax year of the transfer (so an incorporation in 2026/27 must be claimed by 31 January 2029). The same section repealed section 162A, the old election to disapply the relief, so if you would rather crystallise the gain you simply do not claim. The gain on the goodwill and the other chargeable assets is not taxed at the point of incorporation. Instead it is rolled into the base cost of the shares you receive, and the tax surfaces only when you later dispose of those shares.</p>
 
 <p>Two conditions do the heavy lifting. First, the whole business (or substantially all of its assets, broadly excluding cash) must transfer. Second, the consideration must be <strong>shares</strong>. If you take part of the value as cash, the relief is restricted in proportion to the cash element, and that proportion of the gain becomes chargeable immediately. Used well, section 162 lets an owner roll an unincorporated firm into a company and then, in time, structure a share sale that can itself access BADR, subject to the share-sale conditions above.</p>
 

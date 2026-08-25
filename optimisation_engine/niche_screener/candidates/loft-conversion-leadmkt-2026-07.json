@@ -1,0 +1,77 @@
+{
+  "candidate_id": "loft-conversion-leadmkt-2026-07",
+  "vertical": "loft conversion",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/loft-conversion",
+      "excerpt": "We generate exclusive, high-quality leads for loft conversion specialists across the UK. Whether you offer dormer conversions, hip-to-gable, Velux installations ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/loft-conversion-lead-generation/",
+      "excerpt": "Need Loft Conversion Leads? We Can Help! We help them contact you when your potential customers are searching for the best loft converters in the UK.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.buildalert.uk/who-uses-us/loft-conversion-companies",
+      "excerpt": "16 hours ago — Generate More Loft Conversion Leads for Less. Traditional loft conversion lead generation services often charge hundreds of pounds every month ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=qXwGbp9FF3w",
+      "excerpt": "How to grow a loft conversion business? | Loft Conversion Business Lead Generation https ... Loft Conversion Leads, Increase Loft Conversion Leads ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://wiizardmarketing.co.uk/lead-generation/loft-conversion-leads/",
+      "excerpt": "Unlock More Projects – Premium Loft Conversion Leads Delivered Daily · Pay-Per-Lead or Flexible Revenue Options · 100% Exclusive Loft Conversion Enquiries. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adbetter.com/blog/loft-conversion-lead-generation/",
+      "excerpt": "24 Feb 2026 — Use pay per click platforms to zero in on a local audience that's showing key signs of being highly interested in a loft conversion",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.promo-seo.uk/lead-generation/industries/loft-conversion/",
+      "excerpt": "PromoSEO Packages start at £500 per month. Pay per conversion pricing varies according to region, property demand and project complexity.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "how to grow a loft conversion business? | loft conversion ...",
+    "loft conversion",
+    "loft conversion lead generation",
+    "loft conversion lead generation that works | wiizard leads",
+    "loft conversion leads for uk companies",
+    "loft conversions lead generation"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK loft conversion providers already paying per lead",
+    "proof": "7 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

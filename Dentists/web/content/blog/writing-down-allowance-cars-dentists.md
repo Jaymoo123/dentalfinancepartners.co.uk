@@ -6,12 +6,12 @@ date: '2026-05-20'
 generator: deepseek-chat/unverified
 author: Dental Finance Partners Editorial Team
 category: Capital Allowances & Equipment
-metaTitle: 'Writing Down Allowance Cars: UK Dentist Tax Guide 2025/26'
-metaDescription: How writing down allowance on cars works for UK dentists in 2025/26. Rates for electric, hybrid, and petrol cars. New rules from April 2026 explained.
+metaTitle: 'Writing Down Allowance on Cars: UK Dentist Guide 2026/27'
+metaDescription: How writing down allowance on cars works for UK dentists in 2026/27. Main rate now 14%, special rate 6%, 100% first-year allowance for electric cars.
 altText: Dentist reviewing car tax paperwork in a UK dental practice office
 image: https://images.pexels.com/photos/8413333/pexels-photo-8413333.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Writing Down Allowance on Cars: A Guide for UK Dentists'
-summary: Writing down allowance lets you deduct the value of a business car from your profits over several years. The rate depends on the car's CO2 emissions and when you bought it. Rates are changing from April 2026.
+summary: Writing down allowance lets you deduct the value of a business car from your profits over several years. The rate depends on the car's CO2 emissions and when you bought it. The main rate fell from 18% to 14% in April 2026.
 schema: ''
 faqs:
 - question: Can I claim writing down allowance on a car I use for both business and personal journeys?
@@ -44,26 +44,26 @@ imageCredit:
 
 <p>If you are a sole trader or partnership using the cash basis of accounting, you can only claim capital allowances on business cars <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. For most dentists operating through a limited company or on traditional accruals accounting, the standard capital allowance rules apply.</p>
 
-<h2>Current Writing Down Allowance Rates for Cars (2025/26)</h2>
+<h2>Current Writing Down Allowance Rates for Cars (2026/27)</h2>
 
-<p>For the 2025/26 tax year, there are three main categories of car for WDA purposes. The rates apply from 1 April for companies paying corporation tax and from 6 April for sole traders and partnerships paying income tax <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
+<p>For the 2026/27 tax year, there are three main categories of car for WDA purposes. The rates apply from 1 April for companies paying corporation tax and from 6 April for sole traders and partnerships paying income tax <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
-<h3>Main Rate Cars (18% WDA)</h3>
-<p>Cars with CO2 emissions of 50g/km or less qualify for the main rate writing down allowance of 18% per year on the reducing balance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This category includes most hybrid cars and some of the more efficient plug-in hybrids. For example, if you buy a qualifying hybrid car for £30,000, you claim 18% (£5,400) in year one, leaving a written-down value of £24,600. In year two, you claim 18% of £24,600 (£4,428), and so on.</p>
+<h3>Main Rate Cars (14% WDA)</h3>
+<p>Cars with CO2 emissions of 50g/km or less qualify for the main rate writing down allowance of 14% per year on the reducing balance (18% before April 2026, cut by Finance Act 2026) <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This category includes most hybrid cars and some of the more efficient plug-in hybrids. For example, if you buy a qualifying hybrid car for £30,000, you claim 14% (£4,200) in year one, leaving a written-down value of £25,800. In year two, you claim 14% of £25,800 (£3,612), and so on.</p>
 
 <h3>Special Rate Cars (6% WDA)</h3>
 <p>Cars with CO2 emissions above 50g/km fall into the special rate pool and attract a 6% writing down allowance per year <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This covers the vast majority of petrol and diesel cars used by dentists. A £25,000 diesel car would give you £1,500 relief in year one, then 6% of the remaining £23,500 (£1,410) in year two.</p>
 
 <h3>Zero-Emission Cars (100% First Year Allowance)</h3>
-<p>New and unused cars with CO2 emissions of 0g/km (fully electric cars) qualify for a 100% first year allowance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This means you can deduct the entire purchase cost from your profits in the year of purchase. For cars with CO2 emissions of 50g/km or less, the main rate writing down allowance is 100% in the first year (first year allowance) and then 18% per annum on the reducing balance <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
+<p>New and unused cars with CO2 emissions of 0g/km (fully electric cars) qualify for a 100% first year allowance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This means you can deduct the entire purchase cost from your profits in the year of purchase. The 100% first year allowance applies only to new and unused zero-emission cars; cars with CO2 emissions above 0g/km but not more than 50g/km take the main rate writing down allowance of 14% per annum on the reducing balance instead <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
 
 <p>This 100% first year allowance for zero-emission vehicles (ZEVs) and chargepoints has been extended to 31 March 2027 for corporation tax purposes and 5 April 2027 for income tax purposes <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. If you are a practice owner considering a new car, an electric vehicle could give you significant upfront tax relief.</p>
 
 <h2>Changes to Writing Down Allowance Rates from April 2026</h2>
 
-<p>The rules are changing. From 1 April 2026 for corporation tax and 6 April 2026 for income tax, the main rate writing down allowance will reduce from 18% to 14% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This means cars that currently attract 18% WDA will only attract 14% from that date.</p>
+<p>The rules have now changed. From 1 April 2026 for corporation tax and 6 April 2026 for income tax, the main rate writing down allowance reduced from 18% to 14% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Cars that attracted 18% WDA before that date now attract 14%, including on the remaining pool balance of cars bought in earlier years.</p>
 
-<p>To preserve incentives to invest, a new first year allowance of 40% for main-rate assets is being introduced from 1 January 2026 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This is a transitional measure designed to soften the impact of the rate reduction. If you are planning to buy a qualifying car, the timing of your purchase could affect how much tax relief you receive.</p>
+<p>To preserve incentives to invest, a new first year allowance of 40% for new and unused main-rate assets was introduced from 1 January 2026 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Note that this 40% allowance specifically excludes cars, so it does not soften the rate cut for car purchases; new and unused zero-emission cars keep their own 100% first year allowance instead.</p>
 
 <p>The special rate of 6% for cars above 50g/km CO2 remains unchanged for now, though the government keeps these rates under review.</p>
 
@@ -121,7 +121,7 @@ imageCredit:
 
 <p>Another mistake is failing to restrict the claim for private use. HMRC routinely challenges claims where the business-use percentage appears unrealistic. If you use your car for commuting to your practice and for personal journeys, you must apportion the claim accordingly.</p>
 
-<p>Some dentists also forget that writing down allowance is claimed on the reducing balance, not the original cost. If you buy a car for £40,000 and claim 18% in year one (£7,200), the following year's claim is 18% of the remaining £32,800 (£5,904), not 18% of £40,000 again.</p>
+<p>Some dentists also forget that writing down allowance is claimed on the reducing balance, not the original cost. If you buy a main rate car for £40,000 and claim 14% in year one (£5,600), the following year's claim is 14% of the remaining £34,400 (£4,816), not 14% of £40,000 again.</p>
 
 <p>If you are unsure about your car capital allowance position, a <a href="/services/dental-accountants">dental accountant</a> can review your records and ensure you are claiming the correct amount.</p>
 
@@ -130,8 +130,8 @@ imageCredit:
 <p>Here are the key dates every dentist should know:</p>
 
 <ul>
-<li><strong>1 January 2026</strong>: New 40% first year allowance for main-rate assets introduced <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
-<li><strong>1 April 2026 (companies) / 6 April 2026 (sole traders)</strong>: Main rate WDA reduces from 18% to 14% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
+<li><strong>1 January 2026</strong>: New 40% first year allowance for new and unused main-rate assets introduced (cars excluded) <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
+<li><strong>1 April 2026 (companies) / 6 April 2026 (sole traders)</strong>: Main rate WDA reduced from 18% to 14% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
 <li><strong>31 March 2027 (companies) / 5 April 2027 (sole traders)</strong>: 100% first year allowance for zero-emission cars ends <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
 <li><strong>April 2028</strong>: Electric Vehicle Excise Duty (eVED) introduced <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>
 <li><strong>6 April 2030</strong>: Employee car-ownership schemes brought within benefit in kind rules <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</li>

@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Partial Exemption for Mixed-Portfolio Landlords UK 2026"
-metaDescription: "Partial exemption for UK mixed-portfolio landlords: standard method attribution, £625 de-minimis test, annual adjustment, when to apply for a special method."
+metaDescription: "Partial exemption for UK mixed-portfolio landlords: standard method attribution, £625 de-minimis test, annual adjustment"
 altText: "UK landlord reviewing partial-exemption working papers across mixed residential and commercial property portfolio"
 image: ""
 h1: "VAT Partial Exemption for Mixed-Portfolio Landlords: Standard Method Mechanic"
@@ -262,12 +262,12 @@ editorialNote: "Bucket A operational mechanic. Partial exemption is the period-b
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/contents" rel="external nofollow" target="_blank">VAT Regulations 1995 (SI 1995/2518), full contents</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/99" rel="external nofollow" target="_blank">Reg 99 (attribution of input tax)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/101" rel="external nofollow" target="_blank">Reg 101 (standard method)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/102" rel="external nofollow" target="_blank">Reg 102 (special method)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/106" rel="external nofollow" target="_blank">Reg 106 (de-minimis limit)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/107" rel="external nofollow" target="_blank">Reg 107 (annual adjustment)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-706-partial-exemption" rel="external nofollow" target="_blank">HMRC VAT Notice 706: Partial Exemption</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/partial-exemption-guidance" rel="external nofollow" target="_blank">HMRC Partial Exemption Manual (PE10000+)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/contents" rel="external nofollow noopener" target="_blank">VAT Regulations 1995 (SI 1995/2518), full contents</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/99" rel="external nofollow noopener" target="_blank">Reg 99 (attribution of input tax)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/101" rel="external nofollow noopener" target="_blank">Reg 101 (standard method)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/102" rel="external nofollow noopener" target="_blank">Reg 102 (special method)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/106" rel="external nofollow noopener" target="_blank">Reg 106 (de-minimis limit)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/107" rel="external nofollow noopener" target="_blank">Reg 107 (annual adjustment)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-706-partial-exemption" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 706: Partial Exemption</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-partial-exemption-guidance" rel="external nofollow noopener" target="_blank">HMRC Partial Exemption Manual (PE10000+)</a></li>
 </ul>

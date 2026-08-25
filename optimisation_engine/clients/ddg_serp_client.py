@@ -59,7 +59,7 @@ def _domain_of(url: str) -> str:
     if not url:
         return ""
     netloc = urlparse(url).netloc.lower()
-    return netloc.lstrip("www.").split(":")[0]
+    return netloc.removeprefix("www.").split(":")[0]
 
 
 # ---------------------------------------------------------------------------

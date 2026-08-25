@@ -125,7 +125,7 @@ keyTakeaways:
 
 <p>They claim AIA on the full £105,000. Their taxable profit for the year is £180,000. After the AIA claim, it drops to £75,000. Corporation tax on the £75,000 profit is £16,125 (marginal relief applies: 25% x £75,000 = £18,750, less £175,000 x 3/200 = £2,625), compared with £43,950 on the full £180,000 (25% x £180,000 = £45,000, less £70,000 x 3/200 = £1,050). That is a saving of £27,825 in the year.</p>
 
-<p>Without AIA, they would have claimed writing down allowances at 18% on the main pool, giving relief of about £18,900 in year one. The AIA gives them the full £105,000 relief immediately.</p>
+<p>Without AIA, they would have claimed writing down allowances at 18% on the main pool, the rate for that year to 31 March 2025, giving relief of about £18,900 in year one. The same spend in a year beginning on or after 1 April 2026 would attract 14%, giving about £14,700. The AIA gives them the full £105,000 relief immediately.</p>
 
 <h2>Planning Your Capital Purchases</h2>
 

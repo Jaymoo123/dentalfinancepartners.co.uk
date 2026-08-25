@@ -36,10 +36,12 @@ faqs:
 
 <p>A practice is small if it meets at least two of these criteria in the current or previous financial year:</p>
 <ul>
-<li>Annual turnover of £10.2 million or less</li>
-<li>Balance sheet total of £5.1 million or less</li>
+<li>Annual turnover of £15 million or less (previously £10.2 million)</li>
+<li>Balance sheet total of £7.5 million or less (previously £5.1 million)</li>
 <li>50 employees or fewer</li>
 </ul>
+
+<p>The higher limits apply for financial years beginning on or after 6 April 2025. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>Most single-handed NHS practices and small partnerships will be small. Multi-site groups, corporate-owned practices, and larger partnerships are likely medium or large. If the practice is medium or large, it must decide whether the engagement is inside or outside IR35. If it is small, the locum's PSC retains the responsibility for determining status.</p>
 

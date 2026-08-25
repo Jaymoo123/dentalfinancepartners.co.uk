@@ -1,12 +1,12 @@
 ---
 title: "When Should a UK Law Firm Register for VAT? A Solicitor's Guide to Threshold, Timing and Scheme Choice"
 slug: "vat-registration-for-uk-law-firms"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/vat-registration-for-uk-law-firms"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-registration-for-uk-law-firms"
 date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
-metaTitle: "VAT Registration for UK Law Firms: Threshold, Timing & Scheme Choice"
+metaTitle: "VAT Registration for UK Law Firms: Threshold & Timing"
 metaDescription: "When must a solicitor register for VAT? Guide to the £90k threshold, registration timing, scheme choice, and cash-flow impact for UK law firms."
 altText: "UK solicitor reviewing VAT registration paperwork at a law firm desk with calculator and HMRC guidance"
 image: ""

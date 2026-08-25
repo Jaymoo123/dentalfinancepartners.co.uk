@@ -11,13 +11,13 @@ metaDescription: Understand writing down allowance rates for dental practice pla
 altText: Dental practice surgery with modern dental chair and equipment, UK setting
 image: https://images.pexels.com/photos/8413186/pexels-photo-8413186.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'Writing Down Allowance Rates for Dental Practices: A Complete Guide'
-summary: Writing down allowance rates for dental practices changed from April 2026. The main pool rate dropped from 18% to 14%, while the special rate pool remains at 6% (falling to 4% from April 2026 for corporation tax). This guide explains which dental assets go in which pool and how to maximise your claims.
+summary: Writing down allowance rates for dental practices changed from April 2026. The main pool rate dropped from 18% to 14%, while the special rate pool is unchanged at 6%. This guide explains which dental assets go in which pool and how to maximise your claims.
 schema: ''
 faqs:
 - question: What is the writing down allowance rate for dental chairs and X-ray machines?
   answer: Dental chairs and X-ray machines (including OPGs) are general plant and machinery. They go into the main pool, which has a writing down allowance rate of 14% from April 2026. Before April 2026, the rate was 18%. If you buy new equipment, you should claim the Annual Investment Allowance first at £1 million, which gives 100% relief in year one. Writing down allowances only apply if you have used up your AIA or if you buy second-hand assets with a section 198 election.
 - question: How do writing down allowance rates differ between main pool and special rate pool?
-  answer: The main pool covers most dental practice equipment (chairs, X-rays, autoclaves, compressors) at 14% from April 2026. The special rate pool covers integral building features (electrics, plumbing, heating) and long-life assets at 6% (reducing to 4% from 1 April 2026 for corporation tax). The special rate pool gives slower relief because the assets have longer useful lives. You cannot choose which pool an asset goes into; HMRC rules determine the classification based on the asset type.
+  answer: The main pool covers most dental practice equipment (chairs, X-rays, autoclaves, compressors) at 14% from April 2026. The special rate pool covers integral building features (electrics, plumbing, heating) and long-life assets at 6%, a rate Finance Act 2026 left unchanged. The special rate pool gives slower relief because the assets have longer useful lives. You cannot choose which pool an asset goes into; HMRC rules determine the classification based on the asset type.
 - question: Can I claim writing down allowances on a second-hand dental practice purchase?
   answer: Yes, but you and the seller must make a joint election under section 198 of the Capital Allowances Act 2001 within two years of the purchase. This election transfers the seller's capital allowances pool balances to you. Without it, you cannot claim writing down allowances on the existing fixtures. The election is common in dental practice acquisitions and should be handled by your solicitor and accountant during the due diligence process.
 - question: What happens to writing down allowance rates when I sell my dental practice?
@@ -38,7 +38,7 @@ imageCredit:
 
 <p>Writing down allowance rates determine how quickly you can claim tax relief on the cost of plant and machinery used in your dental practice. When you buy equipment such as a dental chair, an OPG X-ray machine, or a compressor, you cannot deduct the full cost from your profits in one year (unless you use the Annual Investment Allowance). Instead, the cost enters a "pool" and you claim a percentage of the remaining value each year. That percentage is the writing down allowance rate.</p>
 
-<p>From April 2026, the main rate of writing down allowance for general pool assets changed from 18% to 14% for corporation tax (1 April 2026) and income tax (6 April 2026) <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The special rate pool remains at 6% for now, but will reduce to 4% from 1 April 2026 for corporation tax purposes <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. These changes directly affect how much tax relief you can claim each year on your dental practice equipment.</p>
+<p>From April 2026, the main rate of writing down allowance for general pool assets changed from 18% to 14% for corporation tax (1 April 2026) and income tax (6 April 2026) <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The special rate pool is unchanged at 6% (CAA 2001 section 104D); Finance Act 2026 cut only the main-pool rate <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. These changes directly affect how much tax relief you can claim each year on your dental practice equipment.</p>
 
 <p>This guide covers the rates, which assets go in which pool, and how to structure your claims for maximum benefit. It is written for UK dentists, associates, and practice owners who need practical, grounded advice.</p>
 
@@ -64,13 +64,13 @@ imageCredit:
 
 <ul>
 <li><strong>Main pool (general plant and machinery):</strong> 14% from April 2026 (was 18% before) <sup><a href="#ref-1" id="cite-1">[1]</a></sup></li>
-<li><strong>Special rate pool (integral features, long-life assets):</strong> 6% from April 2026, reducing to 4% from 1 April 2026 for corporation tax <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
+<li><strong>Special rate pool (integral features, long-life assets):</strong> 6%, unchanged by Finance Act 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
 <li><strong>Structures and Buildings Allowance (SBA):</strong> 3% per year on qualifying construction or renovation costs of non-residential buildings <sup><a href="#ref-1" id="cite-1">[1]</a></sup></li>
 <li><strong>Annual Investment Allowance:</strong> £1 million for 2026/27 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
 <li><strong>First-year allowance for zero-emission cars and goods vehicles:</strong> 100% for 2026/27 <sup><a href="#ref-2" id="cite-2">[2]</a></sup></li>
 </ul>
 
-<p>Note that the special rate pool reduction to 4% applies to corporation tax from 1 April 2026. For income tax purposes (sole traders and partnerships), the rate remains at 6% for 2026/27 unless further legislation is introduced <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>Note that the special rate pool stays at 6% for both corporation tax and income tax. The Finance Act 2026 change was confined to the main pool, so any guidance suggesting the special rate falls to 4% is wrong <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <h2>Worked Example: Dental Practice Equipment Purchase</h2>
 
@@ -102,7 +102,7 @@ imageCredit:
 <li>Handpieces and instruments (if capitalised rather than expensed)</li>
 </ul>
 
-<h3>Special Rate Pool (6% rate, reducing to 4%)</h3>
+<h3>Special Rate Pool (6% rate, unchanged)</h3>
 <ul>
 <li>Electrical systems (rewiring, distribution boards)</li>
 <li>Water and drainage systems</li>
@@ -176,7 +176,7 @@ imageCredit:
 <p>The sale proceeds (up to the original cost) are deducted from the main pool. If the pool balance becomes negative, a balancing charge arises and is added to your taxable profits. If the pool balance remains positive, you continue claiming writing down allowances on the reduced balance.</p>
 
 <p><strong>Do writing down allowance rates apply to cars used in my dental practice?</strong></p>
-<p>Yes, but cars have their own rules. Cars with CO2 emissions above 50g/km go into the main pool (14% rate) or special rate pool (6% rate) depending on emissions. Zero-emission cars qualify for a 100% first-year allowance. Cars are not eligible for the AIA.</p>
+<p>Yes, but cars have their own rules. Cars with CO2 emissions of 50g/km or less go into the main pool (14% rate); cars above 50g/km go into the special rate pool (6% rate). New and unused zero-emission cars qualify for a 100% first-year allowance. Cars are not eligible for the AIA.</p>
 
 <p><strong>Can I claim writing down allowances on practice software?</strong></p>
 <p>Software that you buy outright (not subscription-based) and capitalise as a fixed asset qualifies for writing down allowances. It goes into the main pool at 14%. Subscription-based software is typically expensed as a revenue cost and does not enter the capital allowances pool.</p>

@@ -69,7 +69,7 @@ reviewedAt: "2026-05-26"
 
 <h3>3. MEES Capped Threshold exemption application</h3>
 
-<p>The <a href="https://www.legislation.gov.uk/uksi/2015/962/contents" rel="nofollow noopener" target="_blank">Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 (SI 2015/962)</a> prohibits letting a sub-EPC-E residential property without a registered exemption. The "Cost Cap" exemption applies where the cost of improving the property to EPC E exceeds £3,500. The seven-year-payback exemption (the energy-cost-saving versus rental-income test) requires rental-income evidence in some fact patterns. The Capped Threshold mechanism is a niche but high-stakes valuation point. The proposed EPC-C-from-2030 reform is NOT in force as at the date of this page.</p>
+<p>The <a href="https://www.legislation.gov.uk/uksi/2015/962/contents" rel="nofollow noopener" target="_blank">Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 (SI 2015/962)</a> prohibits letting a residential property with <a href="/blog/landlord-tax-essentials/how-to-book-an-epc">a current EPC rating</a> below E without a registered exemption. The "Cost Cap" exemption applies where the cost of improving the property to EPC E exceeds £3,500. The seven-year-payback exemption (the energy-cost-saving versus rental-income test) requires rental-income evidence in some fact patterns. The Capped Threshold mechanism is a niche but high-stakes valuation point. The proposed EPC-C-from-2030 reform is NOT in force as at the date of this page.</p>
 
 <h3>4. Lender refinancing or remortgage</h3>
 

@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ECCTA Companies House ID Verification: Landlord LtdCo Guide"
 metaDescription: "Mandatory from 18 November 2025 for new directors and PSCs, 12-month transition for existing roles. The multi-SPV landlord-LtdCo operational walkthrough."
 altText: "Macro of multiple European passports and a national identity card laid out on a wooden surface, representing the natural-person identity documents required for Companies House verification by landlord-LtdCo directors and PSCs"
-image: "https://images.pexels.com/photos/32081456/pexels-photo-32081456.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/32081456/pexels-photo-32081456.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Marta Branco"
   photographer_url: "https://www.pexels.com/@martabranco"
@@ -196,7 +196,7 @@ editorialNote: "Multi-SPV landlord-LtdCo operational walkthrough for the post-18
 <li>The Companies House campaign page at <a href="https://changestoukcompanylaw.campaign.gov.uk/">changestoukcompanylaw.campaign.gov.uk</a> is the canonical commencement-state tracker, with sub-pages for identity verification, ACSPs, confirmation-statement changes and the abolition of local registers.</li>
 <li>The Companies House blog at <a href="https://companieshouse.blog.gov.uk/">companieshouse.blog.gov.uk</a> publishes operational posts as each commencement phase lands.</li>
 <li>The statutory text sits at <a href="https://www.legislation.gov.uk/ukpga/2023/56/contents">legislation.gov.uk/ukpga/2023/56/contents</a> for ECCTA 2023 and at the Companies Act 2006 contents page for the inserted provisions.</li>
-<li>The gov.uk guidance pages at <a href="https://www.gov.uk/guidance/verify-your-identity-for-companies-house">gov.uk/guidance/verify-your-identity-for-companies-house</a> and at <a href="https://www.gov.uk/guidance/become-an-authorised-corporate-service-provider">gov.uk/guidance/become-an-authorised-corporate-service-provider</a> carry the operative how-to guidance for the One Login and ACSP routes respectively.</li>
+<li>The gov.uk guidance pages at <a href="https://www.gov.uk/guidance/verify-your-identity-for-companies-house">gov.uk/guidance/verify-your-identity-for-companies-house</a> and at <a href="https://www.gov.uk/guidance/applying-to-register-as-a-companies-house-authorised-agent">gov.uk/guidance/applying-to-register-as-a-companies-house-authorised-agent</a> carry the operative how-to guidance for the One Login and ACSP routes respectively.</li>
 </ul>
 
 <aside>

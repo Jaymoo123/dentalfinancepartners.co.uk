@@ -102,6 +102,35 @@ MIGRATIONS = [
     # web_timeseries/estate_timeseries to read the rollup (kills 89s all-time
     # scans / 7d-hourly 500s). Backfill run separately after apply.
     "20260707000002_web_timeseries_rollups.sql",
+    # ---------------------------------------------------------------------
+    # Retroactive registration 2026-08-19 (lead offer/claim pipeline): the
+    # three migrations below were applied to prod ad hoc in August but never
+    # added to this list (staging verified missing lead_buyers on 08-19).
+    # Apply-by-substring only, same rule as the 07-05 block above.
+    # ---------------------------------------------------------------------
+    "20260709000001_lead_value_scores.sql",
+    "20260807000001_lead_buyers_and_offers.sql",
+    "20260810000001_case_tiers.sql",
+    "20260814000001_case_classification.sql",
+    # Telegram lead-ops bot: lead_supply raw ledger, lead_offers.nudged_at,
+    # bot kill switch on lead_nurture_control, scored_by provenance widening.
+    "20260819000001_telegram_lead_ops.sql",
+    # Claim-race port: shared cap 3, exclusive 3x lock, test buyers exempt
+    # from allocation; atomic claim_lead_offer() replaces the one-claim index.
+    "20260819000002_claim_race.sql",
+    # Dashboard KPI functions exclude test leads (source='test' OR is_test):
+    # real-shaped walk/QA leads were counting in the console lead tiles.
+    "20260819000003_test_leads_excluded_from_kpis.sql",
+    # Chart regression fix: 20260819000003 re-created web_timeseries and
+    # estate_timeseries from the rollup-reading 20260707000002 base, but prod
+    # was reverted to live scans out-of-band on 2026-07-08 and web_rollup is
+    # dormant (last bucket 07-07). Restores the live 20260704000001 bodies with
+    # the test-lead filter kept.
+    "20260820000001_restore_live_timeseries.sql",
+    # Claim-race fix: a test buyer's exclusive claim must not lock real firms
+    # out (is_test joined into the exclusive-lock count). Diff
+    # pg_get_functiondef on prod before applying (out-of-band drift trap).
+    "20260820000002_claim_race_test_exclusive.sql",
 ]
 
 

@@ -1,0 +1,80 @@
+Wave 11 Stage 2 dispatch prompt (conductor-authored 2026-08-15). Executed via
+conductor subagents in 3 cluster batches, as Stage 1 was.
+
+---
+
+You are a Stage 2 Sub-Agent for Property Wave 11. You extend the Stage 1 SEED
+briefs in briefs/property/wave11/ into FULL briefs, in place (append a
+"## Stage 2 extensions" section per brief; never delete Stage 1 content).
+You are a LEAF AGENT: no sub-agents. Work autonomously between briefs; stop
+only at completion or a real blocker (raise `## [Q-N]` in
+docs/property/wave11_questions_session_A.md, N continuing from Q-1, then
+carry on with other briefs).
+
+READ FIRST: docs/property/house_positions.md - the NEW Wave 11 locks
+(§26.10-§26.13, §26.3a, §31.C, §31.D, §31.E, plus §31.3a and §31.9) and any
+section your seeds cite; briefs/property/wave11/_WRITER_SPEC_WAVE11.md;
+your cluster's seeds in full.
+
+YOUR JOBS, per brief:
+
+1. RESOLVE THE VERIFY-AT-WRITE ITEMS THAT GATE WRITING. The locks name them.
+   Highest value this stage (fetch primary sources; if legislation.gov.uk
+   504s, retry, then try the /made version or the print view; record the URL
+   + date + verbatim-relevant text in the brief):
+   - SI 2012/3118 reg 38 penalty AMOUNTS (domestic figure + non-domestic
+     rateable-value formula) - gates A6, A17, A18.
+   - GSIUR 1998 reg 36 sub-provisions (28-day copy, retention period,
+     reg 36(3A) 10-12 month flexibility) - gates A5.
+   - CLRA 2002 internal day-counts (s.78-s.90 windows, incl. the claimed
+     35-day counter-notice window) - gates A13; verify from section text.
+   - LFRA 2024 Part 4 (service-charge transparency) commencement position -
+     gates A14; check commencement SIs.
+   - LR(GR)A 2022 commencement date (the commonly-stated 30 Jun 2022) +
+     s.8 penalties + HA 1988 Sch 1 AST interaction - gates A15.
+   - FSA 2021 + BSA 2022 s.156 layering - gates A3.
+   - SI 2020/312 Sch 1 excluded tenancies - gates A1/A2.
+   Record each resolution in the brief AND note "resolved for lock §X" so the
+   conductor can patch the lock's verify-at-write list at Stage 2b. If a
+   source cannot be reached, the item stays flagged and the WRITER must not
+   assert it - say so explicitly in the brief.
+
+2. COMPETITOR EXPLOITATION PLAN. The seed carries its verified competitor
+   pack. Spot-recheck ONE pack URL per brief still returns 200 (packs were
+   verified earlier today; a dead one = drop it and note). Then write the
+   beat-them plan: the 3-5 concrete elements this page has that the ranking
+   pages lack (from the pack's gap lines): the missing cost table, the
+   corrected fine figure (eicrcert.co.uk still quotes £30k max under HA 2004
+   where £40k applies - exploit precisely, per §26.10's two-regime
+   paragraph), the in-force ledger, the tax layer. Name each element and
+   where in the page it sits.
+
+3. QUERY COVERAGE MAP. From WAVE11_HANDOFF §3 + the pack: the primary query,
+   3-6 secondary queries, and where each is served (H2-level mapping). The
+   predeploy gate runs --coverage on this wave; the brief is the source of
+   truth for targets. Respect the lane rulings: A7 = long-tail process
+   queries NOT the transactional head term; A9 = cost cluster NOT solicitor
+   terms.
+
+4. STRUCTURE + WORKED EXAMPLES. H2 skeleton (6-10 sections), the cost-table
+   spec for cost pages (columns, ranges, drivers, source per figure), 1-2
+   worked examples with persona + numbers plan (numbers must trace to a
+   verified source or be labelled illustrative-range), FAQ list (10-14,
+   drawn from the pack's PAA-adjacent gaps), internal links (per spec: trio
+   siblings, partial-pick forward-links, calculator if one fits, established
+   adjacent pages - name exact paths).
+
+5. STATUTORY CROSS-CHECK (§16.36). Re-read every citation the seed asserts
+   against the new HP locks; any mismatch between seed and lock = the LOCK
+   wins; note corrections in the brief work log. Do not edit
+   house_positions.md - flag drift with an F-flag (range F-81 to F-99)
+   instead.
+
+HOUSE RULES: British English, no em-dashes anywhere including in copied pack
+text. Do not touch pages, the tracker header, other clusters' briefs, or any
+file outside briefs/property/wave11/ except the Q&A + flags files. When your
+cluster is done, flip your rows to "Stage2 ✅" in the tracker and update
+nothing else.
+
+RETURN per brief: verify-at-write items resolved (with the decisive figure) /
+still-blocked items / new flags raised / one-line beat-them summary.

@@ -27,7 +27,7 @@ export function IncorporationCostCalculator() {
   const companyProfit = Math.max(0, annualRentalIncome - mortgageInterest);
   const corporationTax = companyProfit * 0.19;
   const dividendAfterCorpTax = companyProfit - corporationTax;
-  const dividendTaxRate = taxBand === "basic" ? 0.0875 : taxBand === "higher" ? 0.3375 : 0.3935;
+  const dividendTaxRate = taxBand === "basic" ? 0.1075 : taxBand === "higher" ? 0.3575 : 0.3935; // 2026/27, FA 2026 s.4
   const dividendTax = dividendAfterCorpTax * dividendTaxRate;
   const totalCompanyTax = corporationTax + dividendTax;
   

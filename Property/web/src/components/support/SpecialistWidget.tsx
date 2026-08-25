@@ -17,7 +17,7 @@
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { niche } from "@/config/niche-loader";
+import { niche, sourceIdentifier } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitPropertyLead } from "@/lib/leads/submit-client";
 import {
@@ -383,7 +383,7 @@ export function SpecialistWidget() {
       phone: "",
       role: "Other",
       message: `[Specialist question${topicTag}] ${question}`,
-      source: niche.content_strategy.source_identifier,
+      source: sourceIdentifier,
       source_url: typeof window !== "undefined" ? window.location.href : "",
       submitted_at: new Date().toISOString(),
       // Legitimate-interests acknowledgement: submitting IS the affirmative act, so
@@ -400,7 +400,7 @@ export function SpecialistWidget() {
         trigger: (lastPropsRef.current?.trigger as string) ?? "widget",
       },
       // Email + message only; the server routes this into the detail-capture
-      // sequence, which collects the missing name/phone before any DJH handoff.
+      // sequence, which collects the missing name/phone before any partner handoff.
       captureMode: "email_only" as const,
     };
     const result = await submitPropertyLead(payload, honeypot);
@@ -462,7 +462,7 @@ export function SpecialistWidget() {
       phone: "",
       role,
       message: `[Specialist question${topicTag}] ${question.trim()}`,
-      source: niche.content_strategy.source_identifier,
+      source: sourceIdentifier,
       source_url: typeof window !== "undefined" ? window.location.href : "",
       submitted_at: new Date().toISOString(),
       consent_given: true,
@@ -479,7 +479,7 @@ export function SpecialistWidget() {
         ...(buildRoleExtras(role, roleDetail) ?? {}),
       },
       // Email + message only; the server routes this into the detail-capture
-      // sequence, which collects the missing name/phone before any DJH handoff.
+      // sequence, which collects the missing name/phone before any partner handoff.
       captureMode: "email_only" as const,
     };
     const result = await submitPropertyLead(payload, honeypot);

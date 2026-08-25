@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-a-white-surface-10044789/"
   source: "Pexels"
 h1: "Business Asset Disposal Relief Explained For A Company With A Property Investment Subsidiary"
-summary: "Business Asset Disposal Relief (BADR) lets you pay 14% CGT on qualifying share disposals, but the rules are strict. If your company owns a property investment subsidiary, HMRC may treat the group's activities as wholly or mainly investment, blocking the relief. Here is what you need to check before you sell."
+summary: "Business Asset Disposal Relief (BADR) lets you pay 18% CGT (from 6 April 2026) on qualifying share disposals, but the rules are strict. If your company owns a property investment subsidiary, HMRC may treat the group's activities as wholly or mainly investment, blocking the relief. Here is what you need to check before you sell."
 schema: ""
 faqs:
   - question: "Can I claim BADR if my company owns a property investment subsidiary that holds a property let to the trading company?"
@@ -33,7 +33,7 @@ keyTakeaways:
   - "Letting property to a third party, or even to the trading company itself, counts as investment activity rather than trading in HMRC's view."
   - "If investment property is transferred out of the group within two years of a share sale, HMRC may still assess the group's position at the date of disposal."
   - "The £1 million BADR lifetime limit applies per individual across all companies, not per company, and is all-or-nothing on each disposal."
-  - "On a £500,000 gain, losing BADR means paying £120,000 in CGT at 24% rather than £70,000 at 14%, a £50,000 difference."
+  - "On a £500,000 gain, losing BADR means paying £120,000 in CGT at 24% rather than £90,000 at 18% (the rate from 6 April 2026), a £30,000 difference."
 ---
 
 <h2>What Is Business Asset Disposal Relief and Why Does It Matter?</h2>
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>On a pure turnover basis, the investment activity is about 6% of the total. But on an asset basis, the investment activity is 75%. HMRC looks at all factors. In this scenario, the group is likely to be treated as wholly or mainly investment because the investment assets dominate. The director who sells their shares would not qualify for BADR on the gain.</p>
 
-<p>The result? They pay 24% CGT instead of 14%. On a £500,000 gain, that is £120,000 in tax instead of £70,000. A £50,000 difference.</p>
+<p>The result? They pay 24% CGT instead of 18%. On a £500,000 gain, that is £120,000 in tax instead of £90,000. A £30,000 difference.</p>
 
 <h2>Can You Restructure to Qualify?</h2>
 

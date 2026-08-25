@@ -6,7 +6,7 @@ date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Stockport | Landlord Tax & MTD Help"
-metaDescription: "Property accountant guidance for Stockport landlords: Section 24, MTD for ITSA from April 2026, CGT on disposal and incorporation across Greater Manchester."
+metaDescription: "Property accountant guidance for Stockport landlords: Section 24, MTD for ITSA from April 2026, CGT on disposal, incorporation and portfolio structuring."
 altText: "Property accountant reviewing Stockport landlord tax records, with the town centre and Pennine foothills in the background"
 image: ""
 h1: "Property Accountant in Stockport: A Landlord Tax Guide"
@@ -142,7 +142,7 @@ faqs:
 <li><strong>Strategic range.</strong> Can they model incorporation, ownership splits and disposal timing, not just file a return after the fact?</li>
 </ul>
 
-<p>Our guides on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> and <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">how property accountants are typically engaged</a> go further into what to look for. If you let elsewhere across the conurbation as well as in Stockport, our <a href="/blog/property-accountant-services/manchester-property-accountant">Manchester property accountant guide</a> covers the wider Greater Manchester picture.</p>
+<p>Our guides on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">how to choose a property accountant</a> and <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">how property accountants are typically engaged</a> go further into what to look for. If you let elsewhere across the conurbation as well as in Stockport, our <a href="/locations/manchester">Manchester property accountant guide</a> covers the wider Greater Manchester picture.</p>
 
 <h2>Getting Your Stockport Portfolio Reviewed</h2>
 

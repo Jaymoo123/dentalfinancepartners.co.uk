@@ -1,16 +1,16 @@
 ---
-title: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
+title: "How Does IR35 Apply to a Locum Solicitor in 2026/27?"
 slug: "locum-solicitor-ir35-rules-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/locum-solicitor-ir35-rules-2025-26"
-date: "2026-05-18"
+date: "2026-07-28"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
-metaTitle: "Locum Solicitor IR35 Rules 2025/26 | Off-Payroll Working"
-metaDescription: "How IR35 applies to locum solicitors in 2025/26. Off-payroll rules, SDS engaging firm obligations, inside IR35 vs outside IR35 for legal professionals."
+metaTitle: "Locum Solicitor IR35 Rules 2026/27 | Off-Payroll Working"
+metaDescription: "How IR35 applies to locum solicitors in 2026/27. Off-payroll rules, SDS engaging firm obligations, inside IR35 vs outside IR35 for legal professionals."
 altText: "Locum solicitor reviewing IR35 contract in a law firm office with a laptop and legal documents"
 image: ""
-h1: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
+h1: "How Does IR35 Apply to a Locum Solicitor in 2026/27?"
 summary: "IR35 rules affect locum solicitors who work through a personal service company (PSC). The engaging firm, if medium or large, determines the locum's employment status for tax. Getting the determination wrong can mean unpaid tax, NIC and penalties for both parties."
 keyTakeaways:
   - "IR35 applies to locum solicitors working through a PSC, deciding whether they are taxed broadly as an employee."
@@ -34,13 +34,13 @@ faqs:
 
 <p>IR35, also known as the off-payroll working rules, determines whether a locum solicitor who provides services through a personal service company (PSC) should be treated as an employee for tax purposes. If the rules apply, the locum solicitor pays income tax and National Insurance Contributions (NIC) broadly as if they were a direct employee of the engaging firm, rather than as a self-employed contractor through their PSC.</p>
 
-<p>For the 2025/26 tax year, the rules are unchanged from the 2021 reform that extended them to medium and large organisations in the private sector. The key change for locum solicitors is that the engaging firm (the client law firm) is now responsible for determining the locum's employment status and, if inside IR35, for deducting PAYE and NIC from fees paid to the locum's PSC.</p>
+<p>For the 2026/27 tax year, the rules are unchanged from the 2021 reform that extended them to medium and large organisations in the private sector. The key change for locum solicitors is that the engaging firm (the client law firm) is now responsible for determining the locum's employment status and, if inside IR35, for deducting PAYE and NIC from fees paid to the locum's PSC.</p>
 
 <p>Getting the IR35 determination wrong carries significant financial risk. HMRC can pursue unpaid tax, NIC and interest, plus penalties of up to 100% of the tax due in deliberate non-compliance cases. Both the engaging firm and the locum solicitor can be liable, depending on who made the incorrect determination.</p>
 
 <h2>Who Is the "Engaging Firm" for a Locum Solicitor?</h2>
 
-<p>The engaging firm is the law firm that contracts for the locum solicitor's services. Under the off-payroll rules, the engaging firm is responsible for determining the locum's employment status if the firm is medium or large under the Companies Act 2006 definition. A firm is medium or large if it meets two of three conditions: turnover above £10.2 million, balance sheet total above £5.1 million, or more than 50 employees.</p>
+<p>The engaging firm is the law firm that contracts for the locum solicitor's services. Under the off-payroll rules, the engaging firm is responsible for determining the locum's employment status if the firm is medium or large under the Companies Act 2006 definition. A firm is medium or large if it meets two of three conditions: turnover above £10.2 million, balance sheet total above £5.1 million, or more than 50 employees (the limits rise to £15m/£7.5m for financial years beginning on or after 6 April 2025, first affecting off-payroll determinations in 2027/28).</p>
 
 <p>Most multi-partner law firms and LLPs will meet this threshold. Sole practitioners and small high-street firms with fewer than 50 employees and turnover below £10.2 million may be small. If the engaging firm is small, the locum solicitor's PSC remains responsible for determining its own IR35 status, as was the case before April 2021.</p>
 
@@ -74,7 +74,7 @@ faqs:
 
 <p>HMRC's Check Employment Status for Tax (CEST) tool is often used by engaging firms to support their SDS. However, CEST has limitations, particularly for professional services engagements like locum solicitors where the facts are nuanced. A written contract that accurately reflects the working practices is essential, but HMRC will look at the actual working arrangements, not just the contract terms.</p>
 
-<h2>How Should a Locum Solicitor Prepare for IR35 in 2025/26?</h2>
+<h2>How Should a Locum Solicitor Prepare for IR35 in 2026/27?</h2>
 
 <p>If you are a locum solicitor working through a PSC, you should take the following steps:</p>
 

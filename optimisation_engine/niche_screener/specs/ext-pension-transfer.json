@@ -1,0 +1,25 @@
+{
+  "name": "ext-pension-transfer",
+  "vertical": "final salary pension transfer",
+  "provider_terms": [
+    "adviser",
+    "advisor",
+    "ifa",
+    "financial adviser"
+  ],
+  "pain_seeds": [
+    "defined benefit pension transfer",
+    "final salary transfer value",
+    "pension transfer advice cost",
+    "should i transfer my pension",
+    "cetv calculation"
+  ],
+  "regulatory_gate": "banned",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "Out-of-family backtest control: FCA dismantled this lead market (contingent charging ban). regulatory_gate set banned as G0 test case. Prereg expectation FAIL at G0."
+  ],
+  "audience_terms": [
+    "pension transfers"
+  ]
+}

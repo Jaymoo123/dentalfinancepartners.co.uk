@@ -10,6 +10,12 @@ metaDescription: 'What UK doctors claim against tax: the GMC fee and List 3 subs
 altText: UK medical professional reviewing claimable expenses including stethoscope, calculator and tax documents
 image: ''
 h1: 'Medical Professional Expenses: What Can UK Doctors Claim Against Tax?'
+keyTakeaways:
+- "The GMC annual retention fee sits on HMRC's approved List 3, so it is tax-deductible, but restoration fees and penalty fees are not."
+- "HMRC's approved mileage rate rose from 45p to 55p per business mile for the first 10,000 miles on 6 April 2026, then 25p per mile thereafter."
+- "Since 1 April 2019 the state-backed CNSGP has covered NHS general-practice clinical negligence in England at no subscription, so a GP's own paid indemnity is mainly for private work and regulatory matters."
+- "From 6 April 2026 Making Tax Digital for Income Tax applies to sole traders and landlords with qualifying income over £50,000, falling to £30,000 from April 2027 and £20,000 from April 2028."
+- "A GP partner is taxed on their allocated profit share rather than their drawings, and the Annual Investment Allowance gives 100% relief on up to £1,000,000 of qualifying plant and machinery a year."
 summary: UK doctors can claim a wide range of tax-deductible expenses, including the GMC retention fee, medical indemnity, List 3 professional subscriptions, CPD, equipment and business mileage at 55p per mile in 2026/27. How you claim depends on whether you are a GP partner, salaried GP, consultant or locum. This guide is general information, not advice.
 schema: ''
 canonical: https://www.medicalaccounts.co.uk/blog/medical-professional-expenses-what-is-claimable

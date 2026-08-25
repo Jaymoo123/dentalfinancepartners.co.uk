@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, afterEach } from "vitest";
 import type { LeadSubmission } from "./supabase-client";
-import { getSupabaseConfig } from "./supabase-client";
+import { getSupabaseConfig, cleanSupabaseEnv } from "./supabase-client";
 
 describe("supabase-client", () => {
   it("getSupabaseConfig returns an object with supabaseUrl and supabaseKey keys", () => {
@@ -14,6 +14,39 @@ describe("supabase-client", () => {
     // In the test environment no Supabase env vars are set
     expect(cfg.supabaseUrl).toBeUndefined();
     expect(cfg.supabaseKey).toBeUndefined();
+  });
+});
+
+describe("cleanSupabaseEnv — env-paste newline guard", () => {
+  it("strips a pasted trailing newline from a URL/JWT", () => {
+    expect(cleanSupabaseEnv("https://x.supabase.co\n")).toBe("https://x.supabase.co");
+    expect(cleanSupabaseEnv("eyJhbGci.payload.sig\n")).toBe("eyJhbGci.payload.sig");
+  });
+  it("strips embedded whitespace anywhere", () => {
+    expect(cleanSupabaseEnv(" eyJ abc \r\n")).toBe("eyJabc");
+  });
+  it("returns undefined for empty/absent/whitespace-only", () => {
+    expect(cleanSupabaseEnv(undefined)).toBeUndefined();
+    expect(cleanSupabaseEnv("")).toBeUndefined();
+    expect(cleanSupabaseEnv("   ")).toBeUndefined();
+  });
+  it("leaves a clean value untouched", () => {
+    expect(cleanSupabaseEnv("https://x.supabase.co")).toBe("https://x.supabase.co");
+  });
+
+  describe("getSupabaseConfig sanitises corrupted env", () => {
+    const orig = { ...process.env };
+    afterEach(() => {
+      process.env = { ...orig };
+    });
+    it("removes a newline pasted into NEXT_PUBLIC_SUPABASE_*", () => {
+      process.env.NEXT_PUBLIC_SUPABASE_URL = "https://proj.supabase.co\n";
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGci.payload.sig\n";
+      const { supabaseUrl, supabaseKey } = getSupabaseConfig();
+      expect(supabaseUrl).toBe("https://proj.supabase.co");
+      expect(supabaseKey).toBe("eyJhbGci.payload.sig");
+      expect(supabaseKey).not.toContain("\n");
+    });
   });
 });
 

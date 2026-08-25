@@ -17,7 +17,7 @@ howToSteps:
   - name: "Apply to HMRC for charity recognition"
     text: "Commission registration does not give Gift Aid or tax reliefs. Apply separately to HMRC once you have your charity registration number. HMRC recognition is required before collecting Gift Aid declarations or claiming tax exemptions."
   - name: "File your first annual return and accounts"
-    text: "All registered charities must submit an annual return to the Commission within 10 months of the financial year end. Above £25,000 income you must also attach the trustee annual report and accounts; above £25,000 an independent examination or audit is required."
+    text: "All registered charities must submit an annual return to the Commission within 10 months of the financial year end. Above £25,000 income you must also attach the trustee annual report and accounts; an independent examination or audit is required above £25,000 (£40,000 for financial years ending on or after 30 September 2026)."
 ---
 
 <p>Setting up a charity or charitable incorporated organisation (CIO) in England and Wales means registering with the Charity Commission, not Companies House. This guide covers structure choice, the registration process, the separate HMRC recognition step that founders most commonly miss, and your first-year compliance calendar.</p>
@@ -116,8 +116,8 @@ howToSteps:
 
 <ul>
   <li><strong>Annual return:</strong> <a href="https://www.gov.uk/guidance/prepare-a-charity-annual-return">All registered charities must submit an annual return</a> to the Commission within <strong>10 months of the financial year end</strong>. What you file is tiered by income: under £10,000 you report income and spending only; £10,000 to £25,000 you answer the annual return questions; over £25,000 you also attach the trustee annual report and accounts.</li>
-  <li><strong>Accounts:</strong> Charities below £250,000 gross income (and not a company) may prepare simpler receipts and payments accounts. Above £250,000, and all charitable companies, must prepare accruals accounts under the <a href="https://www.charitysorp.org/">Charities SORP</a>.</li>
-  <li><strong>External scrutiny:</strong> Once gross income exceeds £25,000, an <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">independent examination or audit</a> is required. At or below £25,000 there is no statutory external scrutiny requirement (though your governing document may impose one).</li>
+  <li><strong>Accounts:</strong> Charities below £250,000 gross income (£500,000 for financial years ending on or after 30 September 2026, and not a company) may prepare simpler receipts and payments accounts. Above that threshold, and all charitable companies, must prepare accruals accounts under the <a href="https://www.charitysorp.org/">Charities SORP</a>.</li>
+  <li><strong>External scrutiny:</strong> Once gross income exceeds £25,000 (£40,000 for financial years ending on or after 30 September 2026), an <a href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31">independent examination or audit</a> is required. At or below that gate there is no statutory external scrutiny requirement (though your governing document may impose one).</li>
   <li><strong>Trustee annual report:</strong> A narrative report from the trustees is required for charities over £25,000; smaller charities include a simpler report in their annual return.</li>
 </ul>
 

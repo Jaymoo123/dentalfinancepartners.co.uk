@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "First-Time Buyer SDLT Relief and the Deposit Question"
 metaDescription: "How the SDLT first-time buyer relief frees up to £5,000 toward your deposit, combined with Lifetime ISA and Help to Buy ISA. Honest expectation-setting."
 altText: "A young couple counting savings and reviewing a deposit budget for their first home purchase, illustrating how SDLT first-time buyer relief frees up cash for the deposit"
-image: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Karolina Grabowska"
   photographer_url: "https://www.pexels.com/@karolina-grabowska"

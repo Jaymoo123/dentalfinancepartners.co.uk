@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/s
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Shared Ownership SDLT: Market Value Election vs Pay-in-Stages"
+metaTitle: "Shared Ownership SDLT: Market Value Election vs Stages"
 metaDescription: "SDLT on shared ownership purchases and staircasing: market value election, pay-in-stages NPV rent, 80% trigger, surcharges, full 25/50/80 worked example."
 altText: "Modern UK new-build apartment block, illustrating a shared ownership property where SDLT applies on initial purchase and on staircasing increments"
 image: "https://images.pexels.com/photos/5674684/pexels-photo-5674684.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -169,7 +169,7 @@ editorialNote: "Decision-framework page for shared-ownership buyers facing the m
 
 <h2>How the SDLT return is completed</h2>
 
-<p>The first SDLT return is filed by the buyer's conveyancer within 14 days of completion of the initial shared-ownership grant. The election (if made) is recorded in the dedicated election fields on the SDLT1; the NPV rent calculation (if no election) is computed and the rent SDLT entered on the return. Subsequent chargeable staircasing transactions (above 80%) are reported on a fresh SDLT return within 14 days of each effective date. HMRC's guidance on the return is at <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-online-and-paper-returns">gov.uk's SDLT return guidance</a>, and the underlying SDLT Manual at <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">SDLTM</a>.</p>
+<p>The first SDLT return is filed by the buyer's conveyancer within 14 days of completion of the initial shared-ownership grant. The election (if made) is recorded in the dedicated election fields on the SDLT1; the NPV rent calculation (if no election) is computed and the rent SDLT entered on the return. Subsequent chargeable staircasing transactions (above 80%) are reported on a fresh SDLT return within 14 days of each effective date. HMRC's guidance on the return is at <a href="https://www.gov.uk/guidance/stamp-duty-land-tax-online-and-paper-returns">gov.uk's SDLT return guidance</a>, and the underlying SDLT Manual at <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">SDLTM</a>.</p>
 
 <h2>Decision framework</h2>
 

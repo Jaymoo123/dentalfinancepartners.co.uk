@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "Special Method Reg 102, Override Reg 107A: Partial Exemption"
 metaDescription: "Mixed-portfolio landlords: SI 1995/2518 reg 102 special method, reg 107A override (SI 2002/1074), reg 102B HMRC direction, PESMs for property."
 altText: "Close-up of a modern residential and commercial brick-and-glass mixed-use building facade in the UK"
-image: "https://images.pexels.com/photos/18883970/pexels-photo-18883970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/18883970/pexels-photo-18883970.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Patrick"
   photographer_url: "https://www.pexels.com/@jaralol"
@@ -181,12 +181,12 @@ editorialNote: "Wave 8 Bucket C C5, partial-exemption special-method depth. Refr
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/101" rel="external nofollow" target="_blank">SI 1995/2518 reg 101 (standard method)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/102" rel="external nofollow" target="_blank">SI 1995/2518 reg 102 (Use of other methods, special-method approval)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/107A" rel="external nofollow" target="_blank">SI 1995/2518 reg 107A (Adjustment of attribution, standard-method override)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/106" rel="external nofollow" target="_blank">SI 1995/2518 reg 106 (de minimis)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/107" rel="external nofollow" target="_blank">SI 1995/2518 reg 107 (longer-period adjustment)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-706-partial-exemption" rel="external nofollow" target="_blank">HMRC VAT Notice 706: Partial exemption</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-partial-exemption-guidance" rel="external nofollow" target="_blank">HMRC VAT Partial Exemption Manual</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/2002/1074" rel="external nofollow" target="_blank">SI 2002/1074 (inserting reg 107A effective 18 April 2002)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/101" rel="external nofollow noopener" target="_blank">SI 1995/2518 reg 101 (standard method)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/102" rel="external nofollow noopener" target="_blank">SI 1995/2518 reg 102 (Use of other methods, special-method approval)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/107A" rel="external nofollow noopener" target="_blank">SI 1995/2518 reg 107A (Adjustment of attribution, standard-method override)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/106" rel="external nofollow noopener" target="_blank">SI 1995/2518 reg 106 (de minimis)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/107" rel="external nofollow noopener" target="_blank">SI 1995/2518 reg 107 (longer-period adjustment)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-706-partial-exemption" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 706: Partial exemption</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-partial-exemption-guidance" rel="external nofollow noopener" target="_blank">HMRC VAT Partial Exemption Manual</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/2002/1074" rel="external nofollow noopener" target="_blank">SI 2002/1074 (inserting reg 107A effective 18 April 2002)</a></li>
 </ul>

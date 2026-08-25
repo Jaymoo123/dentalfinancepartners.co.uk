@@ -29,7 +29,7 @@ faqs:
     answer: "HMRC will object if the company owes tax, has not filed returns, or if they suspect tax avoidance. The strike off is suspended. You must resolve the issue with HMRC before reapplying. If the objection is valid, you may need to file outstanding returns and pay the tax before proceeding. If you cannot resolve it, an MVL or CVL may be the only option."
 keyTakeaways:
   - "A voluntary strike off costs £8 via form DS01 to Companies House and takes around 3 months if no objections arise."
-  - "An MVL typically costs £3,000 to £6,000 plus VAT and takes 4 to 6 months in total from start to finish."
+  - "An MVL typically costs £4,000 to £6,000 plus VAT and takes 4 to 6 months in total from start to finish."
   - "Higher-rate taxpayers pay 35.75% dividend tax on profits extracted at strike off (2026/27), versus 18% CGT under BADR via an MVL from 6 April 2026."
   - "On £100,000 of retained profits, an MVL saves roughly £18,000 in tax over a strike off; after the liquidator fee, the net saving is around £12,000 to £14,000."
   - "Strike off is usually the cheaper option when retained profits are below £25,000; an MVL becomes worthwhile at £50,000 or more."

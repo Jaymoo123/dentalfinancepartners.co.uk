@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Free Care Sector Finance Calculators | ${site.name}`,
+  title: `Free Care Sector Finance Calculators`,
   description:
     "Free calculators for UK care providers: true cost of a care hour, sleep-in NMW compliance, care home staffing margin, and funded nursing care fee-mix. Built on current HMRC and NHS England rules.",
   alternates: { canonical: `${site.url}/calculators` },

@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Free Crypto Tax Calculators | ${site.name}`,
+  title: `Free Crypto Tax Calculators`,
   description: "Free crypto tax calculators for UK holders: CGT estimator, HMRC disclosure scope, investor vs trader checker, and staking/mining income estimator. Built on 2026/27 HMRC rules.",
   alternates: { canonical: `${site.url}/calculators` },
 };

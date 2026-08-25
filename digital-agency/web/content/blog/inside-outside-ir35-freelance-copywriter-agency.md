@@ -34,7 +34,7 @@ keyTakeaways:
 - 'Control is the biggest IR35 factor for copywriters: if you dictate hours, location, or specific wording, the engagement is likely inside IR35.'
 - A substitution clause on paper is not enough; HMRC will check whether the copywriter could realistically send a replacement in practice.
 - Since April 2021, medium and large agencies must issue a Status Determination Statement before engaging a copywriter, or risk HMRC penalties.
-- If your agency is small (under £10.2m turnover, under £5.1m balance sheet, under 50 employees), the copywriter's limited company bears IR35 responsibility, but HMRC can still reclassify the engagement.
+- If your agency is small (not more than £15m turnover, not more than £7.5m balance sheet, not more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), the copywriter's limited company bears IR35 responsibility, but HMRC can still reclassify the engagement.
 ---
 <p>If you run an agency that regularly hires freelance copywriters, you need to know where you stand on IR35. Get it wrong, and HMRC can come after you for unpaid tax, National Insurance, and interest on the copywriter's deemed employment income. That bill can run into five figures for a single engagement.</p>
 
@@ -46,7 +46,7 @@ keyTakeaways:
 
 <p>IR35 is HMRC's off-payroll working legislation. It is designed to catch individuals who work like employees but structure themselves as limited company contractors to pay less tax. When IR35 applies, the copywriter is treated as a deemed employee for tax purposes. The agency (or the fee payer) must deduct PAYE and National Insurance from the copywriter's invoices and pay employer NI on top.</p>
 
-<p>Since April 2021, medium and large agencies in the UK are responsible for determining the IR35 status of their contractors and issuing a Status Determination Statement (SDS) before the engagement starts. If you are a small agency (meeting two of: turnover under £10.2m, balance sheet under £5.1m, under 50 employees), the responsibility sits with the copywriter's own limited company. But even then, HMRC can still investigate and reclassify the engagement.</p>
+<p>Since April 2021, medium and large agencies in the UK are responsible for determining the IR35 status of their contractors and issuing a Status Determination Statement (SDS) before the engagement starts. If you are a small agency (meeting two of: turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), the responsibility sits with the copywriter's own limited company. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest. But even then, HMRC can still investigate and reclassify the engagement.</p>
 
 <p>For most agency founders reading this, you are the fee payer. That means you carry the risk.</p>
 

@@ -9,10 +9,10 @@
 export const UK_TAX_RATES = {
   currency: "GBP",
   country: "GB",
-  taxYear: "2025-26",
-  taxYearStart: "2025-04-06",
-  taxYearEnd: "2026-04-05",
-  lastUpdated: "2026-06-17",
+  taxYear: "2026-27",
+  taxYearStart: "2026-04-06",
+  taxYearEnd: "2027-04-05",
+  lastUpdated: "2026-08-03",
   publisher: {
     name: "Agency Founder Finance",
     url: "https://www.agencyfounderfinance.co.uk",
@@ -59,9 +59,9 @@ export const UK_TAX_RATES = {
       employmentAllowance: 10500,
     },
     selfEmployed: {
-      smallProfitsThreshold: 6845,
+      smallProfitsThreshold: 7105,
       lowerProfitsThreshold: 12570,
-      class2VoluntaryWeekly: 3.50,
+      class2VoluntaryWeekly: 3.65,
       class4MainRate: 0.06,
       class4UpperRate: 0.02,
     },
@@ -137,11 +137,11 @@ export const UK_TAX_RATES = {
     juniorIsaAnnual: 9000,
   },
   studentLoans: {
-    planOneThreshold: 26065,
+    planOneThreshold: 26900,
     planOneRate: 0.09,
-    planTwoThreshold: 28470,
+    planTwoThreshold: 29385,
     planTwoRate: 0.09,
-    planFourThreshold: 32745,
+    planFourThreshold: 33795,
     planFourRate: 0.09,
     planFiveThreshold: 25000,
     planFiveRate: 0.09,
@@ -156,8 +156,10 @@ export const UK_TAX_RATES = {
     reducedRateCharityGiftThreshold: 0.10,
     businessRelief: {
       unquotedShares: 1.00,
-      qualifyingBusinessAssets_above_1m_from_apr_2026: 0.50,
-      apr2026CapNote: "From 6 April 2026: 100% BPR/APR capped at £1m combined, then 50% thereafter.",
+      combinedAllowance_from_apr_2026: 2500000,
+      qualifyingBusinessAssets_above_allowance_from_apr_2026: 0.50,
+      apr2026CapNote:
+        "From 6 April 2026: 100% BPR/APR capped at £2.5m combined (transferable between spouses, so up to £5m), then 50% above. The October 2024 £1m figure was superseded on 23 December 2025. AIM/unlisted shares drop to 50% in all circumstances, outside the allowance.",
     },
   },
   sources: [

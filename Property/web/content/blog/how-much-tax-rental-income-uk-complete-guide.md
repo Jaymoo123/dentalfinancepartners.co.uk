@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "How Much Tax on UK Rental Income 2026/27? Worked Examples"
-metaDescription: "Step-by-step UK rental income tax calculation for 2026/27: bands, Section 24 credit mechanics, four worked landlord profiles, and the property allowance choice."
+metaDescription: "Step-by-step UK rental income tax calculation for 2026/27: bands, Section 24 credit mechanics, four worked landlord profiles"
 altText: "UK landlord calculating rental income tax on laptop with property documents and calculator"
 image: ""
 h1: "How Much Tax Do I Pay on UK Rental Income? 2026/27 Calculation Walkthrough"
@@ -240,7 +240,7 @@ faqs:
 <li>Final Declaration: 31 January following the tax year.</li>
 </ul>
 
-<p>The Final Declaration replaces the traditional Self Assessment SA100 for those in MTD. Threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Sign-up checker: <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>The Final Declaration replaces the traditional Self Assessment SA100 for those in MTD. Threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Sign-up checker: <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <h2>Could a limited company cut your rental income tax?</h2>
 

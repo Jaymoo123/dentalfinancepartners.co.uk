@@ -6,7 +6,7 @@ import { btnPrimary, sectionY, siteContainerLg } from "@/components/ui/layout-ut
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `About | ${siteConfig.name}`,
+  title: `About`,
   description: "Specialist accountants for UK solicitors and law firms. SRA compliance expertise, partnership tax knowledge, and practice succession planning. Learn about our legal sector focus and approach.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {

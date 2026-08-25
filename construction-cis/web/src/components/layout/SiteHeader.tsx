@@ -5,7 +5,12 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
 import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
+// siteConfig.nav replaced by getActiveNav(niche) for variant-aware nav.
+import { getActiveCta, getActiveNav } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
+const nav = getActiveNav(niche);
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -57,14 +62,14 @@ export function SiteHeader() {
       <div className={`${siteContainerLg} flex min-h-14 items-center justify-between gap-3 py-3 sm:min-h-16 sm:gap-6`}>
         <BrandWordmarkHomeLink />
 
-        <nav aria-label="Primary" className="hidden min-w-0 items-center gap-8 md:flex">
-          {siteConfig.nav.map((item) => {
+        <nav aria-label="Primary" className="hidden min-w-0 items-center gap-4 lg:flex xl:gap-6">
+          {nav.map((item) => {
             const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium tracking-tight transition-colors ${focusRing} ${
+                className={`whitespace-nowrap text-sm font-medium tracking-tight transition-colors ${focusRing} ${
                   active ? "text-orange-600" : "text-neutral-600 hover:text-neutral-900"
                 }`}
               >
@@ -75,16 +80,29 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
+          {activeCta.header_secondary ? (
+            <Link
+              href={activeCta.header_secondary.href}
+              className={`hidden whitespace-nowrap text-sm font-medium tracking-tight text-neutral-600 transition-colors hover:text-neutral-900 xl:inline-flex ${focusRing}`}
+              data-cta="header_nav_secondary" data-cta-goal="contact" data-cta-placement="header"
+              data-cta-variant={niche.cta.variant}
+            >
+              {activeCta.header_secondary.label}
+            </Link>
+          ) : null}
           <Link
-            href="/contact"
+            href={activeCta.header_primary.href}
             className={`${btnPrimary} hidden min-h-10 px-5 py-2 text-xs sm:inline-flex`}
+            data-cta="header_nav_primary" data-cta-placement="header"
+            data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}
+            data-cta-variant={niche.cta.variant}
           >
-            Book a free call
+            {activeCta.header_primary.label}
           </Link>
 
           <button
             type="button"
-            className={`flex h-11 w-11 touch-manipulation items-center justify-center border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50 md:hidden ${focusRing}`}
+            className={`flex h-11 w-11 touch-manipulation items-center justify-center border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50 lg:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -133,7 +151,7 @@ export function SiteHeader() {
               <BrandWordmarkHomeLink />
             </div>
             <nav aria-label="Mobile" className="flex flex-1 flex-col gap-0 overflow-y-auto px-5 py-4">
-              {siteConfig.nav.map((item) => {
+              {nav.map((item) => {
                 const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
                 return (
                   <div key={item.href} className="border-b border-neutral-200 py-1">
@@ -152,12 +170,26 @@ export function SiteHeader() {
             </nav>
             <div className="border-t border-neutral-200 px-5 py-4">
               <Link
-                href="/contact"
+                href={activeCta.header_primary.href}
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
+                data-cta="header_mobile_primary" data-cta-placement="header_mobile"
+                data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}
+                data-cta-variant={niche.cta.variant}
               >
-                Book a free call
+                {activeCta.header_primary.label}
               </Link>
+              {activeCta.header_secondary ? (
+                <Link
+                  href={activeCta.header_secondary.href}
+                  className={`mt-3 block text-center text-sm font-medium text-neutral-600 hover:text-neutral-900 ${focusRing}`}
+                  onClick={() => setOpen(false)}
+                  data-cta="header_mobile_secondary" data-cta-goal="contact" data-cta-placement="header_mobile"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.header_secondary.label}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>

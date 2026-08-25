@@ -1,0 +1,26 @@
+{
+  "batch_id": "M1-C-B2",
+  "stage": "RUN",
+  "agent_id": "MW1-RUN-C-B2",
+  "completed_at": "2026-05-26T21:15:00Z",
+  "branch": "property-megawave1-c",
+  "commit_shas": [
+    "a4cf9a1",
+    "60d9e5b",
+    "31d9965",
+    "24a2884",
+    "a8666c3",
+    "8447833",
+    "021c419",
+    "d00c0d9",
+    "3597f8b",
+    "e9fd8f8",
+    "066e7c1",
+    "d3f5705",
+    "c8a95f1",
+    "37803dc",
+    "f2570e7"
+  ],
+  "slugs_done": [],
+  "notes": "Marker synthesised post-hoc from commit log (sub-agent used commit-as-marker convention)."
+}

@@ -1,7 +1,75 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+// City consolidation 2026-08-05: the five city blog posts were merged into their
+// /locations/<slug> pages and deleted. Their URLs 301 to the location page.
+// These are spread into DUPLICATE_REDIRECTS below, which is already applied to
+// both the flat /blog/<slug> and nested /blog/<category>/<slug> forms.
+const BLOG_TO_LOCATION: Record<string, string> = {
+  "london-property-accountant": "/locations/london",
+  "manchester-property-accountant": "/locations/manchester",
+  "birmingham-property-accountant": "/locations/birmingham",
+  "bristol-property-accountant": "/locations/bristol",
+  "leeds-property-accountant-specialist-tax-services": "/locations/leeds",
+};
+
 const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  // --- agents1 cluster (2026-08-21): letting-agent-facing explainers.
+  "rra-2026-whats-in-force-letting-agents": "landlord-tax-essentials",
+  "mees-epc-rules-what-your-landlords-think": "landlord-tax-essentials",
+  "tenancy-deposits-landlord-tax-position": "landlord-tax-essentials",
+  // --- end agents1 cluster block ---
+  // --- Wave 12 cost-of-selling (2026-08-21): 13 net-new pages.
+  "how-much-do-estate-agents-charge-to-sell-a-house": "capital-gains-tax",
+  "cheapest-estate-agent-fees-uk": "capital-gains-tax",
+  "sell-house-without-estate-agent": "capital-gains-tax",
+  "can-you-sell-a-house-without-an-estate-agent": "capital-gains-tax",
+  "online-estate-agents-uk": "capital-gains-tax",
+  "estate-agent-fees-for-renting": "capital-gains-tax",
+  "average-london-estate-agent-fees": "capital-gains-tax",
+  "estate-agent-contract-tie-in-periods": "capital-gains-tax",
+  "cost-of-moving-house-uk": "capital-gains-tax",
+  "selling-a-house-at-auction-uk": "capital-gains-tax",
+  "modern-method-of-auction-explained": "capital-gains-tax",
+  "part-exchange-house-uk": "capital-gains-tax",
+  "selling-a-probate-property": "capital-gains-tax",
+  // --- end Wave 12 block ---
+  // --- Rural/landed-estates cluster (2026-08-21): three net-new pages.
+  "inheritance-tax-on-farms": "property-types-and-specialist-tax",
+  "farm-tax-uk-guide": "property-types-and-specialist-tax",
+  "how-to-avoid-inheritance-tax-on-a-farm": "property-types-and-specialist-tax",
+  // --- end rural cluster block ---
+  // --- CGT cluster batch (2026-08-20): three net-new pages from the CGT dossier.
+  "do-limited-companies-pay-capital-gains-tax-property": "capital-gains-tax",
+  "capital-gains-tax-second-home-sale": "capital-gains-tax",
+  "capital-gains-tax-on-shares-uk": "capital-gains-tax",
+  // --- end CGT cluster block ---
+  // --- Wave 11 (2026-08): landlord compliance + leasehold + commercial.
+  // Registered ahead of the wave (P6 precondition) so canonical URLs resolve
+  // the moment each page lands; dynamicParams=false 404s them until then,
+  // which is correct pre-publication behaviour.
+  // Rental cluster (2026-08-21)
+  "national-insurance-on-rental-income": "landlord-tax-essentials",
+  "eicr-certificate-cost-landlords": "landlord-tax-essentials",
+  "landlord-electrical-safety-certificate": "landlord-tax-essentials",
+  "fire-risk-assessment-cost": "landlord-tax-essentials",
+  "landlord-licensing-explained": "landlord-tax-essentials",
+  "gas-safety-certificate-cost": "landlord-tax-essentials",
+  "epc-certificate-cost-uk": "landlord-tax-essentials",
+  "how-to-book-an-epc": "landlord-tax-essentials",
+  "mees-regulations-landlords": "landlord-tax-essentials",
+  "lease-extension-cost-uk": "property-types-and-specialist-tax",
+  "lease-extension-solicitor-what-they-do": "property-types-and-specialist-tax",
+  "right-to-manage-explained": "property-types-and-specialist-tax",
+  "right-to-manage-company-setup": "property-types-and-specialist-tax",
+  "right-to-manage-process-steps": "property-types-and-specialist-tax",
+  "service-charge-disputes-leaseholders": "property-types-and-specialist-tax",
+  "ground-rent-rules-uk": "property-types-and-specialist-tax",
+  "leasehold-reform-act-2024-what-is-in-force": "property-types-and-specialist-tax",
+  "commercial-epc-requirements": "property-types-and-specialist-tax",
+  "commercial-energy-performance-certificate-cost": "property-types-and-specialist-tax",
+  "commercial-property-mees-compliance": "property-types-and-specialist-tax",
+  // --- end Wave 11 block ---
   "accountant-accounting-services": "property-accountant-services",
   "accountant-corporation-tax-property-companies": "incorporation-and-company-structures",
   "accountant-payroll-services": "incorporation-and-company-structures",
@@ -94,7 +162,9 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "property-accountant-salary-complete-guide": "property-accountant-services",
   "property-accountant-salary-london": "portfolio-management",
   "property-accountant-salary-uk-guide": "portfolio-management",
-  "property-accountant-services": "property-accountant-services",
+  // "property-accountant-services" is the CATEGORY hub slug, not an article slug.
+  // Listing it here (or in DUPLICATE_REDIRECTS) shadowed /blog/property-accountant-services
+  // so the hub page could never render. Removed 2026-08-22; see the assert below.
   "property-accountant-services-expert-solutions": "portfolio-management",
   "property-accountant-vs-general-accountant": "property-accountant-services",
   "property-accountants-manchester": "portfolio-management",
@@ -348,18 +418,18 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "landlord-expenses-allowable-uk-2026": "/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list",
   // Track 2 CityService cluster-collapse (2026-05-29): 8 weak/duplicate pages merged
   // into 2 canonicals after their query coverage was lifted in first (lossless merge).
-  "property-specialist-accountant-london": "/blog/property-accountant-services/london-property-accountant",
-  "best-property-accountant-london": "/blog/property-accountant-services/london-property-accountant",
+  "property-specialist-accountant-london": "/locations/london",
+  "best-property-accountant-london": "/locations/london",
   "what-services-buy-to-let-accountant": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "online-property-accountant-remote-accounting": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accountant-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
+  // "property-accountant-services" removed here too - see the note in SLUG_TO_CATEGORY_MAP.
   "property-accountant-vs-general-accountant": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "accountant-accounting-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "what-should-property-investors-expect-from-specialist-accountants": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "accountants-that-specialise-in-property": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "average-accountant-salary-manchester": "/blog/property-accountant-services/property-accountant-salary-complete-guide",
   "best-property-accountant-near-me": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
-  "best-property-accountants-london": "/blog/property-accountant-services/london-property-accountant",
+  "best-property-accountants-london": "/locations/london",
   "best-property-accountants-uk": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   "buy-to-let-limited-company-mortgage": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options",
   "capital-gains-tax-property-sale-uk-2026": "/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances",
@@ -381,12 +451,12 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "landlord-tax-accountant-when-you-need-professional-help": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   "landlord-tax-return-self-assessment": "/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026",
   "local-property-accountant-expert-services": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
-  "london-property-accountants-expert-services": "/blog/property-accountant-services/london-property-accountant",
+  "london-property-accountants-expert-services": "/locations/london",
   "making-tax-digital-landlords-april-2026": "/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline",
   "mortgage-interest-tax-relief-changes-landlords": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
   "property-accountant-advice-complete-guide": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accountant-birmingham": "/blog/property-accountant-services/birmingham-property-accountant",
-  "property-accountant-bristol": "/blog/property-accountant-services/bristol-property-accountant",
+  "property-accountant-birmingham": "/locations/birmingham",
+  "property-accountant-bristol": "/locations/bristol",
   "property-accountant-cost-complete-guide": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
   "property-accountant-cost-guide": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
   "property-accountant-fees-complete-guide": "/blog/property-accountant-services/how-much-does-a-property-accountant-cost",
@@ -398,17 +468,17 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "property-accountant-jobs-manchester": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "property-accountant-jobs-near-me": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "property-accountant-jobs-remote": "/blog/property-accountant-services/property-accountant-jobs-uk",
-  "property-accountant-london-expert-services": "/blog/property-accountant-services/london-property-accountant",
+  "property-accountant-london-expert-services": "/locations/london",
   "property-accountant-london-jobs": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "property-accountant-responsibilities-complete-guide": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-accountant-salary-london": "/blog/property-accountant-services/property-accountant-salary-complete-guide",
   "property-accountant-salary-uk-guide": "/blog/property-accountant-services/property-accountant-salary-complete-guide",
   "property-accountant-services-expert-solutions": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accountants-manchester": "/blog/property-accountant-services/manchester-property-accountant",
+  "property-accountants-manchester": "/locations/manchester",
   "property-accountants-near-me": "/blog/property-accountant-services/property-accountant-near-me",
   "property-accounting-course-uk-expert-services": "/blog/property-accountant-services/how-to-become-property-accountant",
   "property-accounting-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-accounting-services-london": "/blog/property-accountant-services/london-property-accountant",
+  "property-accounting-services-london": "/locations/london",
   "property-bookkeeping-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-disposal-tax-planning-minimize-cgt": "/blog/capital-gains-tax/reduce-cgt-property-disposal-uk",
   "property-financial-planning-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -419,9 +489,9 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "property-self-assessment-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-specialist-accountant-near-me": "/blog/property-accountant-services/property-accountant-near-me",
   "property-specialist-tax-accountant-uk": "/blog/property-accountant-services/what-does-a-property-accountant-do",
-  "property-tax-accountant-birmingham": "/blog/property-accountant-services/birmingham-property-accountant",
-  "property-tax-accountant-london": "/blog/property-accountant-services/london-property-accountant",
-  "property-tax-accountant-manchester": "/blog/property-accountant-services/manchester-property-accountant",
+  "property-tax-accountant-birmingham": "/locations/birmingham",
+  "property-tax-accountant-london": "/locations/london",
+  "property-tax-accountant-manchester": "/locations/manchester",
   "property-tax-accountant-near-me": "/blog/property-accountant-services/property-accountant-near-me",
   "property-tax-advice-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
   "property-tax-planning-expert-services": "/blog/property-accountant-services/what-does-a-property-accountant-do",
@@ -436,7 +506,7 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "section-24-vs-incorporation-tax-savings": "/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax",
   "senior-property-accountant-london": "/blog/property-accountant-services/property-accountant-jobs-uk",
   "stamp-duty-buy-to-let-surcharge-explained": "/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge",
-  "uk-property-accountants-london-expert-services": "/blog/property-accountant-services/london-property-accountant",
+  "uk-property-accountants-london-expert-services": "/locations/london",
   "when-to-incorporate-property-portfolio-timing": "/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio",
   "why-do-we-need-accountants-property-investors": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   // Consolidated dead posts → keepers
@@ -464,26 +534,51 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "report-property-sale-hmrc-60-days-guide": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
   // Track 2 Phase 3 REDIRECT bundle (2026-05-24) — B2-A3 single-page collapse to BTL CGT calculation canonical (Cannib Index §6 cross-source pair)
   "capital-gains-tax-selling-rental-property-uk": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide",
+  ...BLOG_TO_LOCATION,
 };
 
-const LOCATION_TO_BLOG: Record<string, string> = {
-  "london": "/blog/property-accountant-services/london-property-accountant",
-  "manchester": "/blog/property-accountant-services/manchester-property-accountant",
-  "birmingham": "/blog/property-accountant-services/birmingham-property-accountant",
-  "bristol": "/blog/property-accountant-services/bristol-property-accountant",
-};
+// The live /blog/<hub> routes (one directory each under src/app/blog). A slug key equal to
+// one of these shadows the hub: the flat-slug handler below fires first and 301s the hub
+// away, so it can never render. Keep in sync when a hub is added or removed.
+const CATEGORY_HUB_SLUGS = [
+  "capital-gains-tax",
+  "incorporation-and-company-structures",
+  "landlord-tax-essentials",
+  "making-tax-digital-mtd",
+  "non-resident-landlord-tax",
+  "portfolio-management",
+  "property-accountant-services",
+  "property-finance",
+  "property-types-and-specialist-tax",
+  "section-24-and-tax-relief",
+];
+
+if (process.env.NODE_ENV !== "production") {
+  const shadowed = CATEGORY_HUB_SLUGS.filter(
+    (hub) => hub in SLUG_TO_CATEGORY_MAP || hub in DUPLICATE_REDIRECTS,
+  );
+  if (shadowed.length > 0) {
+    throw new Error(
+      `middleware: these category hub slugs are keyed as article slugs and can never render: ${shadowed.join(", ")}`,
+    );
+  }
+}
+
+const CANONICAL_HOST = "www.propertytaxpartners.co.uk";
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Redirect /locations/[city] to corresponding blog post
-  const locationMatch = pathname.match(/^\/locations\/([^\/]+)$/);
-  if (locationMatch) {
-    const city = locationMatch[1];
-    const blogTarget = LOCATION_TO_BLOG[city];
-    if (blogTarget) {
-      return NextResponse.redirect(new URL(blogTarget, request.url), 301);
-    }
+  // Enforce canonical host: the bare apex 308s to www, preserving path + query.
+  // GSC showed both hosts serving the same pages split traffic (e.g.
+  // /locations/leeds 805 www / 140 non-www). Scoped to the apex only so
+  // localhost and Vercel preview hosts are never redirected.
+  const host = request.headers.get("host");
+  if (host === "propertytaxpartners.co.uk") {
+    const url = new URL(request.url);
+    url.host = CANONICAL_HOST;
+    url.protocol = "https";
+    return NextResponse.redirect(url, 308);
   }
 
   // Redirect old flat /blog/[slug] to nested /blog/[category]/[slug]
@@ -526,5 +621,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/blog/:path*", "/locations/:path*"],
+  // Broadened from /blog + /locations only so the host redirect above applies
+  // site-wide; excludes static assets and Next internals per standard pattern.
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };

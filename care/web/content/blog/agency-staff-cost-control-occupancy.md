@@ -241,6 +241,6 @@ faqs:
 
 <p>The <a href="/calculators/true-cost-care-hour-calculator">true cost of a care hour calculator</a> builds the loaded cost from your actual pay rates and hours. The <a href="/calculators/care-staffing-cost-margin-calculator">staffing margin calculator</a> models agency-versus-substantive comparisons and break-even occupancy with your own inputs.</p>
 
-<p>The <a href="/for/care-homes">care homes finance hub</a> covers how these cost lines interact with your fee negotiation position, your CQC financial viability requirements and your broader care business structure. The <a href="/research/care-provider-business-index">care provider business index</a> tracks sector-level financial data for context.</p>
+<p>The <a href="/for/care-homes">care homes finance hub</a> covers how these cost lines interact with your fee negotiation position, your CQC financial viability requirements and your broader care business structure. The <a href="/research/care-provider-business-index">care provider business index</a> tracks how many care companies are forming and dissolving each quarter, for market context.</p>
 
 <p>If you want a finance review that covers staffing costs, occupancy modelling and the tax position for your home specifically, the <a href="/for/care-homes">care homes hub</a> sets out what that engagement covers and how to get started.</p>

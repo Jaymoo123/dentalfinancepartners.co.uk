@@ -6,7 +6,7 @@ date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation and Company Structures"
 metaTitle: "SIPP / SSAS Commercial Property: FA 2004 Sch 29A Mechanics"
-metaDescription: "SIPP and SSAS commercial property purchase: Sch 29A taxable-property regime, residential 55-70% penalty, in-specie contributions, FA 2024 lump-sum allowance."
+metaDescription: "SIPP and SSAS commercial property purchase: Sch 29A taxable-property regime, residential 55-70% penalty, in-specie contributions"
 altText: "An investor and pension trustee reviewing a commercial property acquisition document and lease agreement at a meeting table"
 image: "https://images.pexels.com/photos/36729679/pexels-photo-36729679.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

@@ -237,12 +237,12 @@ editorialNote: "Bucket A operational mechanic. CGS is the downstream consequence
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/contents" rel="external nofollow" target="_blank">VAT Regulations 1995 (SI 1995/2518), full contents</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/112" rel="external nofollow" target="_blank">Reg 112 (CGS application)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/113" rel="external nofollow" target="_blank">Reg 113 (£250,000 and £50,000 thresholds, capital-item classes)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/114" rel="external nofollow" target="_blank">Reg 114 (interval definition)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/115" rel="external nofollow" target="_blank">Reg 115 (adjustment formula, final-interval rule)</a></li>
-<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/116" rel="external nofollow" target="_blank">Reg 116 (CGS records)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-7062-capital-goods-scheme" rel="external nofollow" target="_blank">HMRC VAT Notice 706/2: Capital Goods Scheme</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/partial-exemption-guidance" rel="external nofollow" target="_blank">HMRC Partial Exemption Manual (CGS chapter at PE63000+)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/contents" rel="external nofollow noopener" target="_blank">VAT Regulations 1995 (SI 1995/2518), full contents</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/112" rel="external nofollow noopener" target="_blank">Reg 112 (CGS application)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/113" rel="external nofollow noopener" target="_blank">Reg 113 (£250,000 and £50,000 thresholds, capital-item classes)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/114" rel="external nofollow noopener" target="_blank">Reg 114 (interval definition)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/115" rel="external nofollow noopener" target="_blank">Reg 115 (adjustment formula, final-interval rule)</a></li>
+<li><a href="https://www.legislation.gov.uk/uksi/1995/2518/regulation/116" rel="external nofollow noopener" target="_blank">Reg 116 (CGS records)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-7062-capital-goods-scheme" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 706/2: Capital Goods Scheme</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-partial-exemption-guidance" rel="external nofollow noopener" target="_blank">HMRC Partial Exemption Manual (CGS chapter at PE63000+)</a></li>
 </ul>

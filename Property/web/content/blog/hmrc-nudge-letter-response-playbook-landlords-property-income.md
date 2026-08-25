@@ -6,7 +6,7 @@ date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "HMRC Nudge Letter Response Playbook for Landlords"
-metaDescription: "HMRC nudge letters on property income: four response options for landlords, the DAC7 platform-data trigger, and how to preserve the unprompted disclosure floor."
+metaDescription: "HMRC nudge letters on property income: four response options for landlords, the DAC7 platform-data trigger"
 altText: "UK landlord reviewing HMRC nudge letter on rental income with accountant"
 image: ""
 h1: "HMRC Nudge Letter Response Playbook for Landlords with Property Income"
@@ -54,7 +54,7 @@ faqs:
 <p>Four data sources have come together over recent tax years to drive the current nudge-letter volume:</p>
 
 <ul>
-<li><strong>DAC7 platform reporting.</strong> Online accommodation, transport and personal-service platforms must report annual host income and identifying data to HMRC under <a href="https://www.gov.uk/government/publications/digital-platform-reporting" rel="nofollow noopener" target="_blank">the UK's implementation of the EU DAC7 directive</a> (effective 1 January 2024). Hosts on Airbnb, Booking.com, Vrbo, SpareRoom and similar platforms are now visible to HMRC at a transactional level. UK-resident host income that does not match self-assessment returns is the single largest current trigger.</li>
+<li><strong>DAC7 platform reporting.</strong> Online accommodation, transport and personal-service platforms must report annual host income and identifying data to HMRC under <a href="https://www.gov.uk/government/publications/reporting-rules-for-digital-platforms/reporting-rules-for-digital-platforms" rel="nofollow noopener" target="_blank">the UK's implementation of the EU DAC7 directive</a> (effective 1 January 2024). Hosts on Airbnb, Booking.com, Vrbo, SpareRoom and similar platforms are now visible to HMRC at a transactional level. UK-resident host income that does not match self-assessment returns is the single largest current trigger.</li>
 <li><strong>Land Registry cross-matching.</strong> HMRC routinely cross-matches Land Registry property-ownership data against self-assessment returns. Multi-property owners with no rental income declared (or with mismatched rental figures across years) are flagged.</li>
 <li><strong>Tenancy deposit scheme records.</strong> The mandatory deposit-protection schemes (DPS, MyDeposits, TDS) provide HMRC with tenant-deposit data that confirms a property is being rented even where the rental income is not declared.</li>
 <li><strong>Mortgage data + Connect.</strong> Buy-to-let mortgage data, council-tax records, insurance records and other administrative data sources feed HMRC's Connect risk-scoring system, which surfaces multi-source matches as nudge-letter targets.</li>

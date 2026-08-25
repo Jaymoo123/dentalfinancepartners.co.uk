@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Birmingham"
-metaDescription: "Specialist GP accountant in Birmingham for NHS partners, salaried GPs and locums. NHS pension annual allowance, profit-share accounts and 2026/27 tax planning across the Midlands."
+metaDescription: "GP accountant in Birmingham for NHS partners, salaried GPs and locums. NHS pension allowance, profit-share accounts, 2026/27 tax planning in the Midlands."
 altText: "Professional accountant working with GP practice financial documents in Birmingham office"
 image: ""
 h1: "GP Accountant Birmingham: Specialist Medical Accounting Services"
+keyTakeaways:
+- "Since 1 April 2022 every active NHS scheme member accrues in the 2015 CARE section at 1/54th of each year's pensionable earnings, revalued at CPI plus 1.5 per cent."
+- "For 2025/26 the NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
+- "GP partners are taxed on their profit share, not the drawings they actually take, which is one of the most common points of confusion for practices."
+- "From 6 April 2026 dividend tax rises to 10.75 per cent ordinary and 35.75 per cent upper (additional rate stays 39.35 per cent), narrowing the saving from incorporating private work."
+- "MTD for Income Tax starts at a £50,000 qualifying-income threshold from 6 April 2026, but limited companies are excluded and general partnerships are deferred with no confirmed date."
 summary: "Looking for a specialist GP accountant in Birmingham? We work with NHS partners, salaried GPs, locums and consultants across the Midlands on practice accounts, NHS pension annual allowance planning and 2026/27 tax."
 schema: ""
 faqs:

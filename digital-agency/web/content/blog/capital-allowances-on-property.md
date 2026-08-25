@@ -84,7 +84,7 @@ imageCredit:
 
 <p>Full expensing is available for companies only. Sole traders and partnerships cannot use it. If you are incorporated, full expensing is often more generous than the AIA because there is no £1 million limit. But you cannot claim both full expensing and the AIA on the same asset. Your accountant will help you decide which gives the better result.</p>
 
-<p>Looking ahead, a 40% first-year allowance will be available for qualifying plant and machinery purchased after 1 January 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. That is still a few years away, but worth noting if you are planning a major capital spend.</p>
+<p>A 40% first-year allowance is now available for qualifying new and unused main-rate plant and machinery, on expenditure incurred on or after 1 January 2026 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Cars and second-hand assets are excluded, but it is worth factoring in if you are planning a major capital spend.</p>
 
 <h2>Structures and Buildings Allowance (SBA)</h2>
 
@@ -99,11 +99,11 @@ imageCredit:
 <p>If you cannot claim the AIA or full expensing on an asset, you put it into a pool and claim writing-down allowances each year. There are two pools:</p>
 
 <ul>
-<li><strong>Main rate pool</strong>, general plant and machinery. Writing-down allowance: 18% per annum on the reducing balance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
+<li><strong>Main rate pool</strong>, general plant and machinery. Writing-down allowance: 14% per annum on the reducing balance (reduced from 18% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax) <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
 <li><strong>Special rate pool</strong>, integral features (like lifts, air conditioning, electrical systems) and long-life assets. Writing-down allowance: 6% per annum on the reducing balance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
 </ul>
 
-<p>For example, if you buy a server for £10,000 and put it in the main rate pool, you claim £1,800 in year one. The remaining £8,200 carries forward, and you claim 18% of that (£1,476) in year two, and so on. The relief tapers over time.</p>
+<p>For example, if you buy a server for £10,000 and put it in the main rate pool, you claim £1,400 in year one. The remaining £8,600 carries forward, and you claim 14% of that (£1,204) in year two, and so on. The relief tapers over time.</p>
 
 <h2>Claiming Capital Allowances on Property: The Process</h2>
 

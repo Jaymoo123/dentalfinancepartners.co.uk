@@ -24,7 +24,7 @@ faqs:
 - question: What is the safest way to pay a multi-client contractor on a retainer?
   answer: Structure the retainer around defined deliverables, not time. Include a genuine substitution clause with no veto rights. Set a fixed term (e.g., three months) with regular reviews. Ensure the contractor bears financial risk and does not receive employee benefits. Invoice monthly based on output, not hours.
 - question: Do I need to issue an SDS for a contractor who works for other agencies?
-  answer: Yes, if your agency is medium or large (turnover over £10.2m, balance sheet over £5.1m, or over 50 employees). You must issue a Status Determination Statement before the contractor starts, regardless of their other clients. Small agencies are not required to issue an SDS but should still assess IR35 risk to avoid liability.
+  answer: Yes, if your agency is medium or large (turnover over £15m, balance sheet over £7.5m, or over 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m). You must issue a Status Determination Statement before the contractor starts, regardless of their other clients. Small agencies are not required to issue an SDS but should still assess IR35 risk to avoid liability.
 - question: Can HMRC pursue me for IR35 if the contractor works for multiple agencies?
   answer: Yes. HMRC can pursue the fee-paying agency (you) for unpaid tax and NI if the contractor is found to be inside IR35. The contractor's other clients do not affect your liability. If your engagement shows employment characteristics, you are responsible for the tax and NI due on the payments you made.
 authorSlug: james-whitfield
@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h2>The Status Determination Statement (SDS) Requirement</h2>
 
-<p>If your agency is medium or large (meeting two of three criteria: turnover over £10.2m, balance sheet over £5.1m, over 50 employees), you are legally required to issue a Status Determination Statement (SDS) to the contractor before they start work. This applies regardless of whether the contractor works for other clients.</p>
+<p>If your agency is medium or large (meeting two of three criteria: turnover over £15m, balance sheet over £7.5m, over 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you are legally required to issue a Status Determination Statement (SDS) to the contractor before they start work. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest. This applies regardless of whether the contractor works for other clients.</p>
 
 <p>You must also pass the SDS down the chain. If you use an agency or umbrella company, you still need to determine the status and communicate it.</p>
 

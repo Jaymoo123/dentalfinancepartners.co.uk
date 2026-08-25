@@ -127,7 +127,7 @@ keyTakeaways:
 
 <p><strong>Mistake 4: Ignoring the five-year rule on capital gains.</strong> If you sell shares in your agency within five years of returning to the UK, the gain becomes taxable. If you are planning to return, think carefully about the timing of any exit.</p>
 
-<p><strong>Mistake 5: Not getting professional advice.</strong> The split year rules are detailed and fact-specific. A mistake can cost you tens of thousands in unexpected tax. <a href="/contact">Speak to an specialist agency accountant</a> who works with agency founders before you book the flight.</p>
+<p><strong>Mistake 5: Not getting professional advice.</strong> The split year rules are detailed and fact-specific. A mistake can cost you tens of thousands in unexpected tax. <a href="/contact">Speak to a specialist agency accountant</a> who works with agency founders before you book the flight.</p>
 
 <h2>What Should You Do Before You Move?</h2>
 

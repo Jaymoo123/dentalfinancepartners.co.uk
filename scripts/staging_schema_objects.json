@@ -1,0 +1,14 @@
+{
+  "_comment": "Runtime DB objects referenced by Property/web + packages/web-shared (excl. console), mapped 2026-07-01. The four lead_* nurture tables are NOT here: they come from migration 20260701000001, applied after this sync. FK-referenced tables are pulled in automatically by staging_schema_sync.py.",
+  "tables": [
+    "leads",
+    "subscribers",
+    "web_sessions",
+    "web_events",
+    "nurture_sends",
+    "nurture_state",
+    "lead_enrichment"
+  ],
+  "views": ["vw_visitor_journey"],
+  "functions": ["ingest_web_events"]
+}

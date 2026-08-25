@@ -5,7 +5,7 @@ import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-s
 import BookingPicker from "@/components/forms/BookingPicker";
 
 export const metadata: Metadata = {
-  title: "Thank you | We'll be in touch",
+  title: "Thank you | Your enquiry is on its way",
   description:
     "Thanks for contacting Trade Tax Specialists. A specialist CIS accountant will be in touch within one working day.",
   robots: { index: false },
@@ -63,8 +63,8 @@ export default async function ThankYouPage({
             Thank you.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
-            Your enquiry is with a specialist on the team. We aim to reply within one working day,
-            usually the same day.
+            Your enquiry is on its way to a specialist firm from our partner network, who may
+            contact you directly. You should hear back within one working day, usually the same day.
           </p>
 
           {bookingToken ? (

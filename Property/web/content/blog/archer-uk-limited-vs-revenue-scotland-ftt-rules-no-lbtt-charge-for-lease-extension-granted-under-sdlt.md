@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specia
 date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types and Specialist Tax"
-metaTitle: "Archer v Revenue Scotland: No LBTT on SDLT-Era Lease Extension"
+metaTitle: "Archer v Revenue Scotland: No LBTT on SDLT-Era Extension"
 metaDescription: "Scottish FTT [2025] FTSTC 10 ruled a 2020 extension of a 2014 SDLT-era lease did not trigger LBTT. Statute, reasoning, and refund implications."
 altText: "A Scottish commercial office building with a long lease document in the foreground, illustrating the LBTT treatment of pre-2015 lease extensions"
 image: "https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

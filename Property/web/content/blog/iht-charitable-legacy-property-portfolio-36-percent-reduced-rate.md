@@ -8,7 +8,7 @@ category: "Landlord Tax Essentials"
 metaTitle: "36% Charitable IHT Rate: Sch 1A Mechanics for Landlords"
 metaDescription: "How a 10% charitable legacy drops IHT from 40% to 36% on landlord estates: Sch 1A components, merger election, break-point maths, deed-of-variation route."
 altText: "Countryside English house in lush greenery representing a typical UK property estate that may benefit from the 36% reduced inheritance tax rate"
-image: "https://images.pexels.com/photos/37518584/pexels-photo-37518584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/37518584/pexels-photo-37518584.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Neville Hawkins
   photographer_url: https://www.pexels.com/@neville-hawkins-558322852

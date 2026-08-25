@@ -6,9 +6,9 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "SDLT on Lease Extensions: Premium, Surcharge, Worked Example"
-metaDescription: "How SDLT applies to leasehold extensions: chargeable premium, NPV of rent, the 5% surcharge trap for landlords, and how the SDLT compares to a fresh purchase."
+metaDescription: "How SDLT applies to leasehold extensions: chargeable premium, NPV of rent, the 5% surcharge trap for landlords"
 altText: "Contemporary London apartment building, illustrating a leasehold flat where the SDLT on a statutory lease extension differs from the SDLT on a fresh purchase"
-image: "https://images.pexels.com/photos/11789752/pexels-photo-11789752.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/11789752/pexels-photo-11789752.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "JR Bradbury"
   photographer_url: "https://www.pexels.com/@jr-bradbury-200025550"
@@ -21,9 +21,9 @@ faqs:
   - question: "Is a leasehold extension subject to SDLT at all?"
     answer: "Yes, in most cases. A leasehold extension is technically a surrender of the existing lease and a regrant of a new longer lease. The new lease is a chargeable land transaction under section 43 FA 2003. The chargeable consideration is the premium paid to the freeholder for the extension, plus the net present value of any rent payable under the new lease. Where the new lease is granted at a peppercorn rent (typical for statutory extensions), the rent NPV is nil and only the premium is taxed."
   - question: "What does a statutory lease extension involve?"
-    answer: "Under the Leasehold Reform, Housing and Urban Development Act 1993 (LRHUDA), a qualifying flat leaseholder who has owned the flat for at least 2 years could (until 2024 reforms) demand a 90-year extension to the existing lease at a peppercorn ground rent, against a premium calculated under the statutory formula in Schedule 13 of the Act. The Leasehold and Freehold Reform Act 2024 extends the statutory term to 990 years and abolishes the 2-year ownership requirement. For houses, the Leasehold Reform Act 1967 provides equivalent (though somewhat different) extension and enfranchisement rights."
+    answer: "Under the Leasehold Reform, Housing and Urban Development Act 1993 (LRHUDA), a qualifying flat leaseholder can demand a 90-year extension to the existing lease at a peppercorn ground rent, against a premium calculated under the statutory formula in Schedule 13 of the Act. The Leasehold and Freehold Reform Act 2024 abolished the 2-year ownership requirement (in force since January 2025) and legislates a fresh 990-year statutory term, but the 990-year provision is not yet in force, so an extension completed today is still the existing lease plus 90 years. For houses, the Leasehold Reform Act 1967 provides equivalent (though somewhat different) extension and enfranchisement rights."
   - question: "What did the Leasehold and Freehold Reform Act 2024 change?"
-    answer: "The 2024 Act made four headline changes to the statutory lease extension regime: (a) the new statutory extension term increases from the existing lease + 90 years to a fresh 990-year term; (b) the 2-year qualifying ownership period is abolished, so a new buyer can extend immediately; (c) marriage value (the uplift in value at the 80-year boundary) is abolished, materially reducing premiums on leases below 80 years; (d) the premium formula is otherwise broadly preserved. Most provisions are commencing on phased dates through 2026 and 2027; some require secondary legislation that is in progress."
+    answer: "The 2024 Act made four headline changes to the statutory lease extension regime: (a) the new statutory extension term increases from the existing lease + 90 years to a fresh 990-year term (not yet in force); (b) the 2-year qualifying ownership period is abolished, so a new buyer can extend immediately (in force since January 2025); (c) marriage value (the uplift in value at the 80-year boundary) is abolished, but that provision is not yet in force, so marriage value remains payable on a claim made today and premiums on leases below 80 years only fall once it is commenced; (d) the premium formula is otherwise broadly preserved. Only the 2-year-rule abolition and the Right to Manage reforms are in force so far; the valuation provisions require secondary legislation that is still in progress."
   - question: "Does the 5% additional dwellings surcharge apply to a lease extension?"
     answer: "It can. The HRAD surcharge applies to the chargeable consideration where the buyer owns another residential property and the consideration is £40,000 or more. On a £45,000 extension premium for a leaseholder who already owns a separate buy-to-let, HRAD adds 5% × £45,000 = £2,250 to the SDLT bill (which would otherwise be nil under the nil-rate band). On a £150,000 extension premium for a London prime-central flat, HRAD adds £7,500. The £40,000 threshold catches a meaningful proportion of extensions in higher-value markets."
   - question: "Is the rent under the new extended lease subject to SDLT?"
@@ -42,14 +42,14 @@ faqs:
     answer: "Both Scottish LBTT and Welsh LTT have parallel rules. LBTT is charged on the premium and NPV under Schedule 19 of the Land and Buildings Transaction Tax (Scotland) Act 2013; LTT under Schedule 5 of the Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017. Both regimes have analogous rules to SDLT but with different rates and bands. The Archer UK Ltd v Revenue Scotland case confirmed that a lease originally granted under SDLT (pre-LBTT) does not attract LBTT on a subsequent statutory extension, applying the transitional provisions strictly."
   - question: "Does the SDLT paid on the extension feed into the CGT base cost when I later sell?"
     answer: "Yes. SDLT paid on the lease extension is part of the incidental cost of the extension and is added to the leaseholder's CGT base cost of the flat. On a future sale, the base cost is the original purchase price plus the extension premium plus the SDLT paid on the extension plus any allowable improvement expenditure. This reduces the future CGT gain. For a buy-to-let landlord, this is a real planning point: the SDLT is recoverable as part of the eventual capital gains tax calculation, not just a sunk cost."
-dateModified: "2026-05-22"
+dateModified: "2026-08-15"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
 editorialNote: "Comparison page for leaseholders deciding between a lease extension and a fresh purchase. Covers the chargeable consideration calculation, the LRHUDA 1993 / LFRA 2024 statutory regime, the HRAD trap above £40,000, and a worked example."
 ---
 
-<p>A leasehold extension is a routine event in the life cycle of a UK leasehold flat. The lease has fewer than 80 years remaining, mortgage finance becomes harder, sale becomes harder, and the leaseholder either negotiates a voluntary extension with the freeholder or invokes the statutory rights under the Leasehold Reform, Housing and Urban Development Act 1993 (now amended by the Leasehold and Freehold Reform Act 2024). What is less routine is the SDLT consequence: the extension is a chargeable land transaction, and a buy-to-let landlord can be surprised by an SDLT bill above the £40,000 threshold where the 5% additional dwellings surcharge bites.</p>
+<p>A leasehold extension is a routine event in the life cycle of a UK leasehold flat. The lease has fewer than 80 years remaining, mortgage finance becomes harder, sale becomes harder, and the leaseholder either negotiates a voluntary extension with the freeholder or invokes the statutory rights under the Leasehold Reform, Housing and Urban Development Act 1993 (with amendments legislated by the Leasehold and Freehold Reform Act 2024, only partly in force). What is less routine is the SDLT consequence: the extension is a chargeable land transaction, and a buy-to-let landlord can be surprised by an SDLT bill above the £40,000 threshold where the 5% additional dwellings surcharge bites.</p>
 
 <p>This page sets out how SDLT applies to a lease extension, why it is structurally much smaller than the SDLT on a fresh purchase of the same flat, how the 2024 reforms change the statutory premium formula, and a worked comparison of the two paths. For leaseholders contemplating whether to extend now or sell and let the new buyer extend, the SDLT calculation is one (among several) inputs to the decision.</p>
 
@@ -66,25 +66,25 @@ editorialNote: "Comparison page for leaseholders deciding between a lease extens
 
 <h2>The statutory regime: LRHUDA 1993 and the 2024 reforms</h2>
 
-<p>Until the Leasehold and Freehold Reform Act 2024, qualifying flat leaseholders who had owned the flat for at least 2 years could demand a statutory extension under LRHUDA 1993. The new lease added 90 years to the existing term and reduced the ground rent to a peppercorn. The premium was calculated under Schedule 13 LRHUDA, comprising the freeholder's lost ground rent, any "marriage value" where the existing lease was under 80 years, and compensation for any diminution in value.</p>
+<p>Qualifying flat leaseholders can demand a statutory extension under LRHUDA 1993. The new lease adds 90 years to the existing term and reduces the ground rent to a peppercorn. The premium is calculated under Schedule 13 LRHUDA, comprising the freeholder's lost ground rent, any "marriage value" where the existing lease is under 80 years, and compensation for any diminution in value. Until the Leasehold and Freehold Reform Act 2024, a 2-year qualifying-ownership period also applied; its abolition is the one headline change already in force (January 2025).</p>
 
-<p>The 2024 Act makes four headline changes:</p>
+<p>The 2024 Act makes four headline changes, with sharply different in-force positions:</p>
 
 <table>
 <thead>
-<tr><th>Change</th><th>Old position</th><th>New position</th></tr>
+<tr><th>Change</th><th>Position today</th><th>LFRA 2024 position (in-force status)</th></tr>
 </thead>
 <tbody>
-<tr><td>Length of statutory extension</td><td>Existing term + 90 years</td><td>Fresh 990-year term</td></tr>
-<tr><td>Qualifying ownership period</td><td>2 years</td><td>Immediate on acquisition</td></tr>
-<tr><td>Marriage value (uplift below 80 years)</td><td>Payable to freeholder</td><td>Abolished</td></tr>
+<tr><td>Length of statutory extension</td><td>Existing term + 90 years</td><td>Fresh 990-year term (not yet in force)</td></tr>
+<tr><td>Qualifying ownership period</td><td>Immediate on acquisition</td><td>2-year rule abolished (in force since January 2025)</td></tr>
+<tr><td>Marriage value (uplift below 80 years)</td><td>Payable to freeholder</td><td>Abolished (not yet in force; still payable on a claim made today)</td></tr>
 <tr><td>Ground rent under new lease</td><td>Peppercorn</td><td>Peppercorn (unchanged)</td></tr>
 </tbody>
 </table>
 
-<p>The marriage-value abolition is the largest practical change. A flat with a 75-year lease (under the 80-year boundary) used to attract a substantially higher premium because of the marriage-value component; post-reform, the premium is materially lower. Premiums also typically come down at the 90- to 80-year band because the freeholder's diminution in value calculation changes. For SDLT purposes, the practical consequence is that the chargeable consideration on a statutory extension is often smaller than it would have been pre-2024, so SDLT bills are correspondingly smaller, though the HRAD threshold trap remains live.</p>
+<p>The marriage-value abolition is the largest practical change, and it is not yet in force. A flat with a 75-year lease (under the 80-year boundary) still attracts a substantially higher premium today because of the marriage-value component; once the abolition is commenced, the premium will be materially lower. For SDLT purposes, the practical consequence will be a smaller chargeable consideration on a statutory extension, and correspondingly smaller SDLT bills, once commencement happens. A claim made today is valued under the existing rules, marriage value included, and the HRAD threshold trap is live either way.</p>
 
-<p>The 2024 Act is being commenced in phases through 2026 and 2027. Some provisions require secondary legislation. The current state of commencement should be checked at the date of any extension because the position has moved several times since Royal Assent in May 2024.</p>
+<p>The 2024 Act is being commenced in phases. So far the 2-year-rule abolition (January 2025) and the Right to Manage reforms (March 2025) are in force; the 990-year term, the marriage-value abolition and the prescribed valuation rates are not, and the valuation provisions require secondary legislation (the consultation on prescribed deferment and capitalisation rates closes on 23 September 2026). The current state of commencement should be checked at the date of any extension because the position has moved several times since Royal Assent in May 2024.</p>
 
 <h2>The £40,000 threshold and the HRAD trap</h2>
 
@@ -107,9 +107,9 @@ editorialNote: "Comparison page for leaseholders deciding between a lease extens
 
 <h2>Worked comparison: extension vs fresh purchase on a £350,000 flat</h2>
 
-<p>Consider Priya, a buy-to-let landlord who bought a 2-bed flat in Wandsworth in 2014 for £290,000. The lease had 76 years remaining at acquisition; it now has 64 years. The flat's current freehold value (lease-extended to 990 years) would be £350,000; with 64 years remaining the lease is worth around £305,000 (the 'short lease' discount). Priya is considering two paths.</p>
+<p>Consider Priya, a buy-to-let landlord who bought a 2-bed flat in Wandsworth in 2014 for £290,000. The lease had 76 years remaining at acquisition; it now has 64 years. The flat's value with a long extended lease would be £350,000; with 64 years remaining the lease is worth around £305,000 (the 'short lease' discount). Priya is considering two paths.</p>
 
-<p><strong>Path 1: Extend the lease under the 2024 statutory regime.</strong> Premium under the new formula (no marriage value, fresh 990-year term, peppercorn rent): estimated £42,000. SDLT consequences:</p>
+<p><strong>Path 1: Extend the lease under the statutory regime.</strong> Premium under the current formula (including marriage value, since 64 years is below the 80-year boundary and the LFRA 2024 abolition is not yet in force; new lease = existing term plus 90 years at a peppercorn rent): estimated £42,000. SDLT consequences:</p>
 
 <ul>
 <li>Notifiable: yes (premium ≥ £40,000).</li>
@@ -139,13 +139,13 @@ editorialNote: "Comparison page for leaseholders deciding between a lease extens
 
 <p>The calculus shifts in only a few situations: (a) the existing lease is so short that the freeholder is uncooperative and statutory enforcement would take 18+ months; (b) the leaseholder wants to dispose of the flat anyway for non-SDLT reasons (location, condition, rental yield); or (c) the freeholder is willing to sell the freehold to a collective enfranchisement of all the building's leaseholders, in which case the SDLT calculus changes again.</p>
 
-<h2>The £80,000-marriage-value moment, pre and post 2024</h2>
+<h2>The 80-year marriage-value cliff, today and after LFRA 2024 commencement</h2>
 
-<p>Under the old (pre-LFRA 2024) regime, the 80-year boundary mattered enormously. A lease at 81 years remaining attracted a modest extension premium because the freeholder had no marriage value. A lease at 79 years remaining attracted a substantially higher premium because the freeholder gained a 50% share of the marriage value (the uplift between short-lease and long-lease values).</p>
+<p>Under the current regime the 80-year boundary matters enormously. A lease at 81 years remaining attracts a modest extension premium because the freeholder has no marriage value. A lease at 79 years remaining attracts a substantially higher premium because the freeholder gains a 50% share of the marriage value (the uplift between short-lease and long-lease values).</p>
 
-<p>Post-LFRA 2024 (commencement subject to phased commencement orders), marriage value is abolished. The 80-year cliff edge is gone; premiums change continuously with the remaining term rather than stepping up at the 80-year threshold. For SDLT purposes this means premiums on leases close to (and below) 80 years are typically lower than they were pre-2024, so SDLT bills are correspondingly lower. Where a leaseholder had been deferring an extension because the marriage-value premium was prohibitive, the 2024 reforms reduce both the underlying cost and the SDLT consequence.</p>
+<p>LFRA 2024 abolishes marriage value, but that provision is not yet in force. Once it is commenced, the 80-year cliff edge goes: premiums will change continuously with the remaining term rather than stepping up at the 80-year threshold, premiums on leases close to (and below) 80 years will typically be lower, and SDLT bills will be correspondingly lower. Until then, a leaseholder whose lease is approaching 80 years faces the same timing pressure as ever: cross the boundary before extending and the marriage-value component is added to the premium. Waiting for commencement is a gamble rather than a plan, because no commencement date has been set and the new prescribed valuation rates could move premiums either way.</p>
 
-<aside><p>Have a lease with under 80 years remaining and not yet extended?</p><p>The 2024 reform abolishes marriage value and materially reduces the premium. The SDLT consequence follows; on a £45,000 premium, HRAD saves about £2,000 for a landlord vs the pre-reform position. We model the timing of the extension against commencement of the relevant LFRA 2024 provisions.</p></aside>
+<aside><p>Have a lease with under 80 years remaining and not yet extended?</p><p>The 2024 reform abolishes marriage value, but that provision is not yet in force; a claim made today still pays it. Whether to extend now or wait for commencement is a genuine timing decision, and the new prescribed valuation rates could move premiums either way. We model the timing of the extension against commencement of the relevant LFRA 2024 provisions.</p></aside>
 
 <h2>Devolved tax: LBTT and LTT</h2>
 
@@ -163,7 +163,7 @@ editorialNote: "Comparison page for leaseholders deciding between a lease extens
 
 <p>An alternative to individual statutory extension is collective enfranchisement: the leaseholders of a building exercise their statutory right under Chapter 1 of LRHUDA 1993 to acquire the freehold collectively. Once the freehold is owned by a nominee company (typically a Right To Manage company or similar), each leaseholder can have their lease extended to a peppercorn 999-year term at no further SDLT cost, because the extension is granted by their own collectively-owned freeholder.</p>
 
-<p>The SDLT consequence is on the freehold acquisition itself rather than on subsequent extensions. The nominee company pays SDLT on the price paid for the freehold, computed at residential rates. The price is typically substantial (a multi-flat building's freehold is rarely a small sum), so the SDLT can run into five or six figures. The 2024 LFRA reforms reduce the freehold price under the new formula (no marriage value), which correspondingly reduces the SDLT bill on the freehold acquisition.</p>
+<p>The SDLT consequence is on the freehold acquisition itself rather than on subsequent extensions. The nominee company pays SDLT on the price paid for the freehold, computed at residential rates. The price is typically substantial (a multi-flat building's freehold is rarely a small sum), so the SDLT can run into five or six figures. Once the LFRA 2024 valuation reforms are commenced, the freehold price under the new formula (no marriage value) will fall, correspondingly reducing the SDLT bill on the freehold acquisition; a claim made today is priced under the existing formula, marriage value included.</p>
 
 <p>For groups of leaseholders facing materially short leases, the collective route can be cheaper across the cohort than each leaseholder paying separately for an individual extension. The SDLT calculation needs to be done on the freehold acquisition (typically by a tax adviser working with the leaseholders' enfranchisement solicitor), and the leaseholders need to model their share of the freehold cost plus their share of the SDLT against the individual-extension alternative.</p>
 

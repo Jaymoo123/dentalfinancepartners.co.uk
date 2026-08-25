@@ -24,7 +24,7 @@ faqs:
 - question: How far back can I claim R&D tax credits for headless commerce work?
   answer: You can claim for the current accounting period and amend returns for the previous two financial years. So if your agency's year-end is 31 March 2025, you can claim for the year ended 31 March 2025, and amend your returns for the years ended 31 March 2024 and 31 March 2023. Claims for older periods are generally not accepted unless you have a very good reason for the delay.
 - question: What costs can I include in my headless commerce R&D claim?
-  answer: You can include staff salaries (including employer NI and pension contributions), subcontractor costs (65% of qualifying payments under the SME scheme, or 100% if you use the PAYE route), software licenses directly used in the R&D, and consumable items like cloud hosting costs. You cannot include general overheads, marketing costs, or the client's costs. Your accountant will help you identify which costs qualify.
+  answer: You can include staff salaries (including employer NI and pension contributions), payments to unconnected subcontractors (restricted to 65% of each qualifying payment under the merged R&D scheme), software licenses directly used in the R&D, and consumable items like cloud hosting costs. You cannot include general overheads, marketing costs, or the client's costs. Under the merged scheme it is the decision-maker, the business that decided to undertake the R&D and bears the risk, that claims. Your accountant will help you identify which costs qualify.
 - question: Will HMRC investigate my R&D claim for headless commerce work?
   answer: HMRC has increased its scrutiny of R&D claims in recent years, particularly for digital and tech businesses. Claims over £50,000 are more likely to be reviewed. To survive an investigation, you need robust technical documentation showing the uncertainty you faced, the standard approaches you tried, and the novel solution you developed. A well-structured claim with proper evidence is far less likely to be challenged.
 authorSlug: james-whitfield
@@ -138,11 +138,13 @@ keyTakeaways:
 
 <p>Total qualifying expenditure: £104,000</p>
 
-<p>Under the SME R&D scheme, the enhanced deduction is 186% of qualifying costs. That gives you an additional deduction of £104,000 x 86% = £89,440. If your agency is profitable and paying corporation tax at 19%, that extra deduction saves you £89,440 x 19% = £16,994 in tax.</p>
+<p>For accounting periods beginning on or after 1 April 2024, R&D relief runs through the merged scheme. This gives a single 20% above-the-line expenditure credit, calculated as a percentage of your qualifying costs. On £104,000 that is a credit of £104,000 x 20% = £20,800.</p>
 
-<p>If your agency is loss-making, you can surrender the loss for a payable tax credit of up to 10% of the surrenderable loss. That's real cash in your bank account.</p>
+<p>The credit is itself taxable, so the net benefit depends on your corporation tax position. A profitable agency paying the 25% main rate keeps roughly 15% of qualifying spend, about £15,600. A loss-making agency, where the credit is notionally taxed at the 19% small-profits rate, keeps roughly 16.2%, about £16,848. Either way the net benefit lands between £15,600 and £16,848 as a reduction in your tax bill or as payable cash.</p>
 
-<p>For a 10-person agency, a single qualifying project can yield £15,000 to £20,000 in tax savings or cash. Over a year with multiple qualifying projects, that adds up quickly.</p>
+<p>There is a more generous route if your agency is both loss-making and R&D-intensive, meaning qualifying R&D is at least 30% of your total expenditure. This is ERIS (Enhanced R&D Intensive Support), which sits alongside the merged scheme rather than being replaced by it. Under ERIS you claim an extra 86% deduction and can surrender the resulting loss for a payable credit worth 14.5% of the surrenderable loss. On £104,000 of qualifying spend that works out at roughly £28,049 in cash. Most established agencies will not meet the 30% intensity threshold, but a young or R&D-heavy studio might.</p>
+
+<p>For a 10-person agency, a single qualifying project can yield around £15,600 to £16,848 under the merged scheme, or up to roughly £28,049 if you qualify for ERIS. Over a year with multiple qualifying projects, that adds up quickly.</p>
 
 <h2>Common Mistakes E-commerce Agencies Make</h2>
 

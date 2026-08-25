@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Free Startup Tax Calculators | ${site.name}`,
+  title: `Free Startup Tax Calculators`,
   description: "Free startup tax calculators: R&D relief estimator, SEIS and EIS relief calculator, EMI vs unapproved options comparison, and founder dividend vs salary calculator. Built on 2026/27 HMRC rules.",
   alternates: { canonical: `${site.url}/calculators` },
 };

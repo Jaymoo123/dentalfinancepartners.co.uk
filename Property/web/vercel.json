@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "cd ../.. && npm install --no-audit --no-fund",
+  "installCommand": "cd ../.. && npm ci --workspace=Property/web --include-workspace-root --no-audit --no-fund",
   "buildCommand": "npm run build",
   "framework": "nextjs",
   "crons": [
@@ -8,6 +8,7 @@
     { "path": "/api/cron/lead-nurture-digest", "schedule": "0 7 * * *" },
     { "path": "/api/cron/lead-retention", "schedule": "30 3 * * *" },
     { "path": "/api/cron/lead-reconcile", "schedule": "30 4 * * *" },
-    { "path": "/api/cron/deploy-watch", "schedule": "30 7 * * *" }
+    { "path": "/api/cron/deploy-watch", "schedule": "30 7 * * *" },
+    { "path": "/api/cron/lead-raw-batch", "schedule": "0 8 * * *" }
   ]
 }

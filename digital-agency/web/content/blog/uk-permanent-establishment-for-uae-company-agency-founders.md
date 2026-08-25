@@ -158,7 +158,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Second, review your client contracts. Where were they signed? Where are the services delivered? Where do your staff work from?</p>
 
-<p>Third, speak to an specialist agency accountant who specialises in cross-border structures. Do not use a generalist. You need someone who understands both the UK tax rules and the UAE substance requirements.</p>
+<p>Third, speak to a specialist agency accountant who specialises in cross-border structures. Do not use a generalist. You need someone who understands both the UK tax rules and the UAE substance requirements.</p>
 
 <p>Fourth, consider a disclosure to HMRC under the Worldwide Disclosure Facility or the Contractual Disclosure Facility if you believe there is unpaid tax. Voluntary disclosure significantly reduces penalties.</p>
 

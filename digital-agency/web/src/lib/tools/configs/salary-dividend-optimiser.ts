@@ -1,6 +1,6 @@
 /**
  * Salary & Dividend Optimiser — GenericTool config.
- * 2025/26 UK rates.
+ * 2026/27 UK rates.
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -13,12 +13,12 @@ export const salaryDividendTool: GenericTool = {
   slug: "salary-dividend-optimiser",
   name: "Salary & Dividend Optimiser",
   category: "Tax planning",
-  oneLiner: "Find the most tax-efficient mix of salary and dividends for a UK limited company agency director. 2025/26 rates.",
-  metaTitle: "Salary & Dividend Optimiser 2025/26 | Free UK Calculator",
+  oneLiner: "Find the most tax-efficient mix of salary and dividends for a UK limited company agency director. 2026/27 rates.",
+  metaTitle: "Salary & Dividend Optimiser 2026/27 | Free UK Calculator",
   metaDescription:
     "Free salary vs dividend calculator for UK limited company agency directors. Optimal split using 2026/27 tax rates.",
   intro:
-    "Find the optimal salary and dividend mix for a UK limited company director. Models corporation tax, employer NI, employee NI, income tax and dividend tax together so you see the true net position. 2025/26 rates.",
+    "Find the optimal salary and dividend mix for a UK limited company director. Models corporation tax, employer NI, employee NI, income tax and dividend tax together so you see the true net position. 2026/27 rates.",
   embedHeight: 480,
   fields: [
     {
@@ -77,7 +77,7 @@ export const salaryDividendTool: GenericTool = {
     {
       question: "What rates does this calculator use?",
       answer:
-        "UK 2025/26 rates. PA £12,570. Basic rate 20% (up to £50,270). Higher rate 40% (up to £125,140). Additional rate 45%. Dividend allowance £500. Dividend rates 10.75% / 35.75% / 39.35% (FA 2026, from 6 Apr 2026). Employer NI 15% above £5,000 secondary threshold. Employee NI 8% above £12,570. Corporation tax 19% small profits / 25% main rate.",
+        "UK 2026/27 rates. PA £12,570. Basic rate 20% (up to £50,270). Higher rate 40% (up to £125,140). Additional rate 45%. Dividend allowance £500. Dividend rates 10.75% / 35.75% / 39.35% (FA 2026, from 6 Apr 2026). Employer NI 15% above £5,000 secondary threshold. Employee NI 8% above £12,570. Corporation tax 19% small profits / 25% main rate.",
     },
     {
       question: "Does it cover the marginal corporation tax rate?",
@@ -87,7 +87,7 @@ export const salaryDividendTool: GenericTool = {
     {
       question: "Is the result personal tax advice?",
       answer:
-        "No. This is a model based on standard 2025/26 thresholds. It assumes no other income, no student loans, no pension contributions and standard personal allowance. For advice specific to your agency, book a free call.",
+        "No. This is a model based on standard 2026/27 thresholds. It assumes no other income, no student loans, no pension contributions and standard personal allowance. For advice specific to your agency, book a free call.",
     },
   ],
 };

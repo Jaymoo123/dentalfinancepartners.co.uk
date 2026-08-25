@@ -58,7 +58,7 @@ Tax & NI:
 - Employer NI: 15% above £5,000/year (Autumn Budget 2024).
 - Employment Allowance: £10,500.
 - Corporation tax: 19% small profits (<=£50k), 25% main rate (>£250k), marginal relief between.
-- Dividend allowance: £500. Dividend tax: 8.75%/33.75%/39.35%.
+- Dividend allowance: £500. Dividend tax 2026/27 (FA 2026 s.4): 10.75%/35.75%/39.35% (8.75%/33.75% applied only up to 5 April 2026).
 - VAT registration threshold: £90,000.
 - AIA: £1,000,000 (excludes cars, land, buildings).
 - BADR: 14% in 2025/26, rising to 18% from 6 April 2026. £1m lifetime limit.

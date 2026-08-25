@@ -155,7 +155,7 @@ faqs:
 
 <ul>
 <li>Monitor the gov.uk landlord-guidance pages quarterly for updates on the s.64-74 commencement and any approved-scheme designation.</li>
-<li>Maintain a central compliance file per property covering existing obligations (gas safety, EICR, EPC, RTR, deposit protection, tenancy agreement). This file will be the primary input when the scheme-membership identifier is added to it post-commencement.</li>
+<li>Maintain a central compliance file per property covering existing obligations (gas safety, the <a href="/blog/landlord-tax-essentials/eicr-certificate-cost-landlords">EICR</a>, EPC, RTR, deposit protection, tenancy agreement). This file will be the primary input when the scheme-membership identifier is added to it post-commencement.</li>
 <li>Where letting agents are used, confirm the agent's TPO/PRS membership is current and the agent has internal procedures for receiving and escalating tenant complaints.</li>
 <li>Do not assume the agent's membership extends to landlord coverage. Plan for separate landlord enrolment when the regime commences.</li>
 </ul>

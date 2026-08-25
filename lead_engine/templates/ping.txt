@@ -1,0 +1,18 @@
+NEW LEAD | {{TIER_LABEL}} | {{PRICE}}
+
+Tier:      {{TIER_LABEL}}
+Case type: {{CASE_TYPE}}
+Area:      {{AREA}}
+Intent:    {{INTENT_LINE}}
+Price:     {{PRICE}} per claimed lead {{SHARE_NOTE}}
+{{EXCLUSIVE_LINE}}
+THE ENQUIRY, IN THEIR WORDS
+{{REDACTED_MESSAGE}}
+
+Names, phone numbers, email addresses, postcodes, web addresses and company
+names are removed above. You get the enquiry in full, unredacted, with the
+enquirer's contact details, only if you claim it.
+
+Claim this lead: {{CLAIM_URL}}
+
+{{CLAIM_NOTE}}

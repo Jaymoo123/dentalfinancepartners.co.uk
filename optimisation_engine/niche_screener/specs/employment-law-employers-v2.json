@@ -1,0 +1,35 @@
+{
+  "vertical": "employment law for employers",
+  "provider_terms": [
+    "employment solicitor",
+    "hr consultant",
+    "employment lawyer"
+  ],
+  "pain_seeds": [
+    "employee grievance procedure",
+    "how to dismiss an employee legally",
+    "settlement agreement cost",
+    "employment tribunal defence",
+    "redundancy process steps",
+    "day one unfair dismissal rights",
+    "disciplinary procedure",
+    "employee threatening employment tribunal",
+    "can i sack someone for gross misconduct",
+    "employee off sick long term what can i do",
+    "how much does an employment tribunal cost employer",
+    "tupe transfer employer obligations",
+    "employment rights act 2025 what employers must do",
+    "settlement agreement employer template"
+  ],
+  "audience_terms": [
+    "employers",
+    "small business owners"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate employment-law-leadmkt (11 sellers); ERA rollout 2025-27 churn per strategy scan",
+    "RE-SCREEN 2026-08-03: original spec failed G2 at 1,630. CROSS_DOMAIN_LEAGUE_2026-07-24 flagged the seeds as too procedural and hypothesised employers search reactively in bursts; 7 reactive/crisis-shaped seeds added plus the Employment Rights Act rollout term."
+  ],
+  "name": "employment-law-employers-v2"
+}

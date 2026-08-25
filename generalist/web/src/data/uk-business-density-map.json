@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "as_of": "start of 2025",
+    "sources": [
+      {
+        "name": "Business Population Estimates for the UK and regions -- Tables 8 and 9",
+        "publisher": "Department for Business and Trade / Office for National Statistics",
+        "url": "https://assets.publishing.service.gov.uk/media/68dbccc9c487360cc70c9f4e/BPE_2025_detailed_tables.xlsx",
+        "release_page": "https://www.gov.uk/government/statistics/business-population-estimates-2025",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23"
+      }
+    ],
+    "notes": "Density is businesses per 10,000 resident adults (aged 16 and over, mid-2023 population estimates), from Table 8 of the Business Population Estimates detailed tables. Business counts and size mix are from Table 9. Figures are for the whole private sector (companies, sole proprietorships and partnerships) at the start of 2025. Regional and national totals are official DBT/ONS statistics, not derived by us.",
+    "attribution": "UK Business Density Map compiled from Business Population Estimates for the UK and regions (Open Government Licence v3.0). Free to cite with attribution to Holloway Davies."
+  },
+  "headline": {
+    "uk_density_per_10k_adults": 1020,
+    "uk_total_businesses": 5690265,
+    "highest_region": "London",
+    "highest_density_per_10k_adults": 1436,
+    "lowest_region": "Wales",
+    "lowest_density_per_10k_adults": 742,
+    "density_ratio_highest_to_lowest": 1.94,
+    "as_of": "start of 2025"
+  },
+  "regions": [
+    {
+      "region": "London",
+      "resident_adults": 7254923,
+      "density_per_10k_adults": 1436,
+      "businesses": 1041565,
+      "pct_zero_employees": 75.2,
+      "pct_1_to_49_employees": 23.9,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.2
+    },
+    {
+      "region": "South West",
+      "resident_adults": 4836730,
+      "density_per_10k_adults": 1163,
+      "businesses": 562390,
+      "pct_zero_employees": 78.1,
+      "pct_1_to_49_employees": 21.3,
+      "pct_50_to_249_employees": 0.6,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "South East",
+      "resident_adults": 7720417,
+      "density_per_10k_adults": 1135,
+      "businesses": 876625,
+      "pct_zero_employees": 76.5,
+      "pct_1_to_49_employees": 22.8,
+      "pct_50_to_249_employees": 0.6,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "East of England",
+      "resident_adults": 5252234,
+      "density_per_10k_adults": 1102,
+      "businesses": 578755,
+      "pct_zero_employees": 75.8,
+      "pct_1_to_49_employees": 23.5,
+      "pct_50_to_249_employees": 0.6,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "East Midlands",
+      "resident_adults": 4090152,
+      "density_per_10k_adults": 984,
+      "businesses": 402475,
+      "pct_zero_employees": 76.1,
+      "pct_1_to_49_employees": 23.1,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "West Midlands",
+      "resident_adults": 4908883,
+      "density_per_10k_adults": 918,
+      "businesses": 450770,
+      "pct_zero_employees": 74.1,
+      "pct_1_to_49_employees": 25.0,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "Northern Ireland",
+      "resident_adults": 1532163,
+      "density_per_10k_adults": 905,
+      "businesses": 138735,
+      "pct_zero_employees": 71.9,
+      "pct_1_to_49_employees": 27.2,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "Yorkshire and the Humber",
+      "resident_adults": 4560796,
+      "density_per_10k_adults": 895,
+      "businesses": 408380,
+      "pct_zero_employees": 74.3,
+      "pct_1_to_49_employees": 24.8,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "North West",
+      "resident_adults": 6180504,
+      "density_per_10k_adults": 823,
+      "businesses": 508785,
+      "pct_zero_employees": 71.8,
+      "pct_1_to_49_employees": 27.2,
+      "pct_50_to_249_employees": 0.8,
+      "pct_250_plus_employees": 0.2
+    },
+    {
+      "region": "Scotland",
+      "resident_adults": 4595405,
+      "density_per_10k_adults": 786,
+      "businesses": 361075,
+      "pct_zero_employees": 73.9,
+      "pct_1_to_49_employees": 25.2,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "North East",
+      "resident_adults": 2237334,
+      "density_per_10k_adults": 744,
+      "businesses": 166510,
+      "pct_zero_employees": 75.4,
+      "pct_1_to_49_employees": 23.8,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    },
+    {
+      "region": "Wales",
+      "resident_adults": 2615889,
+      "density_per_10k_adults": 742,
+      "businesses": 194200,
+      "pct_zero_employees": 71.8,
+      "pct_1_to_49_employees": 27.4,
+      "pct_50_to_249_employees": 0.7,
+      "pct_250_plus_employees": 0.1
+    }
+  ]
+}

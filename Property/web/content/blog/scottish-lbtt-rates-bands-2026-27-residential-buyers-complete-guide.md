@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Scottish LBTT 2026/27 Rates and Bands: Buyer Guide"
-metaDescription: "Scottish LBTT residential rates 2026/27 confirmed frozen by Scottish Budget: £145k nil, 2/5/10/12% bands, £175k FTB relief with no value cap, no NR surcharge."
+metaDescription: "Scottish LBTT residential rates 2026/27 confirmed frozen by Scottish Budget: £145k nil, 2/5/10/12% bands, £175k FTB relief with no value cap"
 altText: "View along Edinburgh's Royal Mile with traditional tenement buildings and townhouses, illustrating the Scottish residential property market that falls under LBTT not SDLT"
 image: "https://images.pexels.com/photos/3596197/pexels-photo-3596197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

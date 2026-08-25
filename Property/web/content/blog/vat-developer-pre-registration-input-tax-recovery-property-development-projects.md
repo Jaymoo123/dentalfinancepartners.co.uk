@@ -168,6 +168,6 @@ editorialNote: "Bucket A operational page. Reg 111 is canonical, statute-led, an
 <li><a href="https://www.gov.uk/government/publications/vat-notice-700-the-vat-guide" rel="nofollow">HMRC VAT Notice 700 (the VAT guide, chapter 11 on input tax)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-input-tax/vit32000" rel="nofollow">HMRC VIT32000 (Input Tax Manual, pre-registration)</a></li>
 <li><a href="https://www.gov.uk/government/publications/vat-notice-742a-opting-to-tax-land-and-buildings" rel="nofollow">HMRC VAT Notice 742A (Opting to tax land and buildings)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-700-45-how-to-correct-vat-errors-and-make-adjustments-or-claims" rel="nofollow">HMRC VAT Notice 700/45 (Correcting errors)</a></li>
+<li><a href="https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045" rel="nofollow">HMRC VAT Notice 700/45 (Correcting errors)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="nofollow">HMRC VATLAND VAT Land and Property Manual</a></li>
 </ul>

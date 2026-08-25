@@ -23,7 +23,7 @@ Crypto Tax Partners works exclusively with UK cryptoasset holders: investors, da
 
 ## Original research and data
 
-- [UK Crypto Tax Gap and Compliance Index](https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index): Index modelling the estimated gap between cryptoasset CGT and income tax theoretically due and the tax actually reported, drawing on HMRC compliance data and CARF timelines.
+- [UK Crypto Tax Compliance Index](https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index): HMRC publishes no crypto-specific tax gap, so this index does not state one. It sets out the verified compliance picture instead: UK cryptoasset ownership from FCA consumer research (12% of adults, roughly 7 million people, YouGov sample of 2,199, survey date August 2024), the CARF exchange-reporting timeline with a live countdown to the 31 May 2027 first-report deadline, current CGT parameters for crypto disposals, and HMRC's 4, 6 and 20-year assessment windows by taxpayer behaviour. Every figure is cited to a primary source and the ownership figure is refreshed on each new FCA wave.
 
 ## Free calculators and tools
 

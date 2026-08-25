@@ -16,7 +16,7 @@
 
 ## 1. Why this was built
 
-On 2026-07-07 two leads arrived via mini-form surfaces with role "Other" and thin free-text messages, providing no actionable context for DJH qualification. Investigation found that six mini-surfaces had no role question at all and accepted any message above a 10-character floor, silently hardcoding `role:"Other"` on every submission. The DJH handover and notify emails printed the raw role value without a readable definition, so recipients could not tell what "Other" meant. Mini-form surfaces also never routed the submitter to the `/thank-you` page, so the "check your email and phone" prompt was never seen.
+On 2026-07-07 two leads arrived via mini-form surfaces with role "Other" and thin free-text messages, providing no actionable context for partner qualification. Investigation found that six mini-surfaces had no role question at all and accepted any message above a 10-character floor, silently hardcoding `role:"Other"` on every submission. The partner handover and notify emails printed the raw role value without a readable definition, so recipients could not tell what "Other" meant. Mini-form surfaces also never routed the submitter to the `/thank-you` page, so the "check your email and phone" prompt was never seen.
 
 ---
 
@@ -27,13 +27,13 @@ On 2026-07-07 two leads arrived via mini-form surfaces with role "Other" and thi
 MiniCapture is now a two-step progressive form housed inside a single `<form>` element (both panels stay mounted; hidden panel uses `display:none` so FormData reads across steps and Back costs nothing):
 
 - **Step 1 "About you"**: role select drawn from `niche.lead_form.role_options`; conditional `role_detail` free-text field shown when role value is `"Other"` (required); message textarea with a 40-character / 8-word floor and a guided placeholder.
-- **Step 2 "Contact details"**: name, email, phone, consent notice co-located with the submit button (DJH Annex B.1 wording; do not soften), and a Back button.
+- **Step 2 "Contact details"**: name, email, phone, consent notice co-located with the submit button (DSA Annex B.1 wording; do not soften), and a Back button.
 - **Transition**: slide-in-from-right on forward, slide-in-from-left on Back (`tw-animate-css` utilities already in the global bundle; `motion-reduce:animate-none` honoured). No exit animation; `overflow-hidden` wrapper prevents layout shift in modals.
 - **Focus/a11y**: step-header focus on panel change (`tabIndex={-1}`, `preventScroll`; avoids iOS keyboard auto-pop in fixed modals); `aria-live="polite"` step announcement; `aria-invalid` + `aria-describedby` error pattern (brings MiniCapture to LeadForm parity); focus jumps to first invalid field on a failed Continue press.
 - **Role select**: native `<select>` (not radio chips; five long labels wrap badly at 320-360 px).
 - **"Other" relabelled**: the option label displayed to users is **"Something else"**; the stored value remains `"Other"` for database and analytics stability.
 - **`role_detail`** stored in `extras.role_detail`. If "Something else" is selected and the field is empty, submission is blocked at step 1.
-- **Message prefix removed from payload**: the `[Surface name]` prefix previously prepended to the message body is moved to `extras.form_id` so the message column is clean for AI classification and the DJH email reads naturally.
+- **Message prefix removed from payload**: the `[Surface name]` prefix previously prepended to the message body is moved to `extras.form_id` so the message column is clean for AI classification and the handover email reads naturally.
 - **`postSubmit` prop**: new optional prop on MiniCapture; default is `"inline"` so callers that do not pass it are unchanged. Callers in the redirect allowlist below pass `postSubmit="redirect"`.
 
 ### SpecialistWidget
@@ -42,7 +42,7 @@ The composer step 1 now shows the question plus a role select (with conditional 
 
 ### "Something else" free text in the handover and notify emails
 
-Both the DJH handover email (`handoff.ts`) and the instant notify email (`notify/route.ts`) now render:
+Both the partner handover email (`handoff.ts`) and the instant notify email (`notify/route.ts`) now render:
 
 - Role label with its definition in parentheses, e.g. "Portfolio owner (4-10 properties)".
 - A **"In their words"** row showing `role_detail` when present, e.g. "Something else — estate executor with mixed residential use".

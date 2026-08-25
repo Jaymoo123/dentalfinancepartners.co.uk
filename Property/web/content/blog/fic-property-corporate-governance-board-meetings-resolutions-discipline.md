@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "FIC Governance Discipline: Minutes, Resolutions, Risk"
-metaDescription: "Property FIC governance discipline: board cadence, minutes, written resolutions, statutory registers, substance-over-form risk, the dividend-mechanic rules."
+metaDescription: "Property FIC governance discipline: board cadence, minutes, written resolutions, statutory registers, substance-over-form risk"
 altText: "Sleek office conference room with a laptop, notebook, and glass of water on a table, representing the operational discipline of a Family Investment Company's board"
 image: "https://images.pexels.com/photos/5717315/pexels-photo-5717315.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

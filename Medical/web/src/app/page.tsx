@@ -11,6 +11,11 @@ import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
+const packagesMode = isPackagesMode(niche);
 
 // FAQPage JSON-LD for the homepage's single visible Q&A (the "Do I need a
 // specialist accountant" details block). Schema-only: this mirrors the on-page
@@ -200,15 +205,24 @@ export default function HomePage() {
             Serving GPs, consultants, and locum doctors in London, Manchester, Birmingham, Leeds, and Bristol.
           </p>
           <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
-            <Link href="/contact" className={`${btnPrimary} min-w-0`}>
-              Speak to a medical accountant
-            </Link>
             <Link
-              href="/free-practice-health-check"
-              className={`inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10 ${focusRing}`}
+              href={activeCta.hero_primary.href}
+              className={`${btnPrimary} min-w-0`}
+              data-cta="hero_primary" data-cta-placement="hero"
+              data-cta-variant={niche.cta.variant}
             >
-              Free practice health check
+              {activeCta.hero_primary.label}
             </Link>
+            {activeCta.hero_secondary ? (
+              <Link
+                href={activeCta.hero_secondary.href}
+                className={`inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10 ${focusRing}`}
+                data-cta="hero_secondary" data-cta-placement="hero"
+                data-cta-variant={niche.cta.variant}
+              >
+                {activeCta.hero_secondary.label}
+              </Link>
+            ) : null}
           </div>
         </div>
       </section>
@@ -462,6 +476,41 @@ export default function HomePage() {
       <section className="bg-[var(--surface)]">
         <div className={siteContainerLg}>
           <div className={`${sectionYLoose} grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16`}>
+            {packagesMode ? (
+            <div className="min-w-0">
+              <p className="section-label">Get started</p>
+              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+                {activeCta.home_cta.heading}
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+                {activeCta.home_cta.body}
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href={activeCta.home_cta.primary.href}
+                  className={`${btnPrimary}`}
+                  data-cta="home_cta_primary" data-cta-placement="home_cta"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.home_cta.primary.label}
+                </Link>
+                {activeCta.home_cta.secondary ? (
+                  <Link
+                    href={activeCta.home_cta.secondary.href}
+                    className={btnMailOutline}
+                    data-cta="home_cta_secondary" data-cta-placement="home_cta"
+                    data-cta-variant={niche.cta.variant}
+                  >
+                    {activeCta.home_cta.secondary.label}
+                  </Link>
+                ) : null}
+              </div>
+              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
+              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+                Prefer to write? Use the form and one of our medical accountants will come back to you, usually the same working day.
+              </p>
+            </div>
+            ) : (
             <div className="min-w-0">
               <p className="section-label">Get started</p>
               <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
@@ -487,6 +536,7 @@ export default function HomePage() {
               </p>
               <p className="mt-6 text-sm text-[var(--muted)]">All initial conversations are confidential and carry no obligation.</p>
             </div>
+            )}
             <div className="card-flat p-6 sm:p-8 lg:p-10">
               <LeadForm submitLabel="Send enquiry" />
             </div>

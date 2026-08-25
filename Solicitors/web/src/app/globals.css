@@ -1,10 +1,11 @@
-/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+﻿/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
 @import "tailwindcss" source("..");
+@source "../../../../packages/web-shared";
 
 /*
-  UI ground rules (mobile-first) — Accounts for Lawyers
+  UI ground rules (mobile-first) â€” Accounts for Lawyers
   - Burgundy + gold brand; traditional legal aesthetic, professional authority.
-  - Touch targets ≥44px; no horizontal bleed; form inputs 16px on mobile.
+  - Touch targets â‰¥44px; no horizontal bleed; form inputs 16px on mobile.
   - Professional, trustworthy aesthetic for legal sector
 */
 

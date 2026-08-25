@@ -22,6 +22,11 @@ _POST_CATEGORIES = [
 
 # Slugs that will exist after the first content batch. Used for internal linking.
 _INTERNAL_LINK_SLUGS = [
+    # MTD salvage wave 2026-08-04
+    "how-to-sign-up-for-making-tax-digital",
+    "do-i-need-an-accountant-for-mtd",
+    "mtd-deadline-extended",
+    "mtd-compatible-software-contractors",
     "what-is-ir35",
     "inside-ir35",
     "outside-ir35",

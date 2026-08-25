@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "Averdieck v HMRC: PROW and the SDLT Mixed-Use Boundary"
 metaDescription: "FTT in Averdieck [2022] TC 8623 rejected the public right of way mixed-use claim on a £3m purchase. £119k SDLT refund was clawed back."
 altText: "A country lane with a public footpath sign crossing the grounds of a large English residential property, illustrating the SDLT mixed-use claim issue in Averdieck v HMRC"
-image: "https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"

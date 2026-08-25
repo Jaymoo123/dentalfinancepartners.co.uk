@@ -1,0 +1,49 @@
+{
+  "note": "Seed corpus for BUYER-SIDE demand capture. Buckets = who would pay us for a lead.",
+  "buckets": {
+    "accounting_leads_core": [
+      "buy accounting leads", "accounting leads", "accountancy leads", "accountant leads",
+      "leads for accountants", "accounting leads uk", "accountancy leads uk",
+      "lead generation for accountants", "lead generation for accountants uk",
+      "accountant lead generation", "accounting client leads", "tax leads",
+      "buy tax leads", "bookkeeping leads", "payroll leads", "self assessment leads",
+      "vat leads", "r&d tax credit leads", "cis leads", "ir35 leads"
+    ],
+    "accounting_practice_growth": [
+      "how to get accounting clients", "how to get clients for accounting firm",
+      "get more accountancy clients", "grow my accountancy practice",
+      "accountancy practice marketing", "marketing for accountants uk",
+      "accountancy client acquisition", "buy accountancy practice",
+      "buy block of fees", "block of fees for sale", "accountancy fee block for sale",
+      "sell my accountancy practice", "accountancy practice for sale uk"
+    ],
+    "property_niche": [
+      "landlord leads", "buy landlord leads", "property investor leads",
+      "buy to let leads", "property leads uk", "property tax leads",
+      "letting agent leads", "estate agent leads", "estate agent leads uk",
+      "property management leads", "hmo leads", "property sourcing leads",
+      "landlord data list", "landlord contact list uk", "landlord database uk"
+    ],
+    "adjacent_buyers_same_lead": [
+      "mortgage leads", "mortgage leads uk", "buy mortgage leads",
+      "btl mortgage leads", "conveyancing leads", "buy conveyancing leads",
+      "solicitor leads uk", "legal leads uk", "probate leads", "will writing leads",
+      "financial advisor leads", "ifa leads", "ifa leads uk", "wealth management leads",
+      "insurance broker leads", "commercial insurance leads",
+      "capital allowances leads", "sdlt refund leads", "tax investigation leads",
+      "epc leads", "surveyor leads", "architect leads", "construction leads uk"
+    ],
+    "model_and_pricing_language": [
+      "pay per lead", "pay per lead uk", "cost per lead accounting",
+      "exclusive leads", "exclusive leads uk", "shared leads vs exclusive leads",
+      "lead generation agency uk", "white label lead generation",
+      "b2b lead generation uk", "lead generation pricing uk",
+      "pay per lead marketing agency", "buy uk business leads"
+    ],
+    "supply_side_partner_language": [
+      "become a partner accountant", "accountant referral programme",
+      "referral partner accountants uk", "introducer agreement leads",
+      "lead generation partnership uk"
+    ]
+  }
+}

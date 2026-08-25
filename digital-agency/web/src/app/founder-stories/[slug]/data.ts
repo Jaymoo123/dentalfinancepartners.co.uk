@@ -42,7 +42,7 @@ export const STORIES: Record<string, FounderStory> = {
 
 <h2>The outcome</h2>
 <p>The founders chose Option B2. They invested £100,000 into new equipment (Macs, monitors, a server, and a high-end colour calibration system) and contributed £40,000 into a SIPP for one director who had low pension savings. The remaining £40,000 was used to pay down a small director's loan account, further cleaning the balance sheet. The restructuring was completed by August 2025, well within the 14-month window.</p>
-<p>The sale completed in June 2026 as planned. Each founder claimed BADR on their share of the gain, paying 14% on the first £1m and 24% on the remainder. Total CGT bill: £252,000. Compared to the baseline of £432,000, they saved £180,000 in tax. After accounting for the £40,000 pension contribution (which reduced corporation tax by £7,600 at 19%), the net saving was approximately £187,600. But the headline figure they cared about was the £43,000 each saved on their personal tax bill, a combined £86,000 reduction in CGT.</p>
+<p>The sale completed in June 2026 as planned. Each founder claimed BADR on their share of the gain, paying the 18% BADR rate that applies to disposals from 6 April 2026. Total CGT bill: £324,000. Compared to the baseline of £432,000 with no BADR, they saved £108,000 in tax (£54,000 each). After accounting for the £40,000 pension contribution (which reduced corporation tax by £7,600 at 19%), the net saving was approximately £115,600.</p>
 <p>The agency continued to trade under the new ownership, with the founders staying on as creative directors for the earn-out period. The new equipment and pension contribution were seen as sensible investments that also served the business post-sale.</p>
 
 <h2>What others can learn</h2>
@@ -246,7 +246,7 @@ Year two eligible costs were higher at £210,000, reflecting more staff time and
 <h2>The decision</h2>
 <p>The founder needed to decide whether to restructure the agency into a holding company structure before accepting the investment. The investor made it clear they would prefer a clean parent-subsidiary arrangement, with the holding company holding the shares of the trading company and any future subsidiaries. The founder’s core concerns were:</p>
 <ul>
-<li>Preserving the ability to sell shares in the future under Business Asset Disposal Relief (BADR) at 14% CGT, rather than the higher 24% rate for non-qualifying disposals.</li>
+<li>Preserving the ability to sell shares in the future under Business Asset Disposal Relief (BADR) at 18% CGT (the rate from 6 April 2026), rather than the higher 24% rate for non-qualifying disposals.</li>
 <li>Ensuring the holding company could issue share options to key employees without diluting the founder’s personal stake in the trading company.</li>
 <li>Avoiding a tax charge on the transfer of the trading company’s shares to the new holding company.</li>
 <li>Getting the structure in place within 8 weeks to meet the investor’s due diligence timeline.</li>
@@ -261,7 +261,7 @@ Year two eligible costs were higher at £210,000, reflecting more staff time and
 <h2>The outcome</h2>
 <p>The founder chose Option 3. The share-for-share exchange was completed in 7 weeks, just ahead of the investor’s deadline. The holding company (PR Group Ltd) was incorporated, and the founder received 100% of its shares in exchange for their shares in the trading company (PR Agency Ltd). The IP company (PR IP Ltd) was set up as a wholly-owned subsidiary of the holding company, and the trademarks and software were transferred to it at market value, with a deferred tax election to avoid an immediate CGT charge.</p>
 <p>The investor subscribed for £1.5m of new shares in the holding company, giving them 20% of the group. The founder retained 80% of the holding company, which in turn owned 100% of the trading company and 100% of the IP company. The cap table was clean: three entities, one holding company, one investor, one founder.</p>
-<p>The financial result: the founder’s effective tax rate on a future exit would be 14% under BADR, rather than 24% – a saving of £240,000 on every £1m of gain above the annual exempt amount. The IP company’s royalty income was taxed at 19% corporation tax, compared to the 25% the trading company would have paid on the same profits, saving approximately £12,000 per year in tax. The total cost of the restructuring was £19,000, which was fully deductible against the holding company’s future corporation tax.</p>
+<p>The financial result: the founder’s effective tax rate on a future exit would be 18% under BADR (the rate from 6 April 2026), rather than 24% – a saving of £60,000 on every £1m of gain above the annual exempt amount. The IP company’s royalty income was taxed at 19% corporation tax, compared to the 25% the trading company would have paid on the same profits, saving approximately £12,000 per year in tax. The total cost of the restructuring was £19,000, which was fully deductible against the holding company’s future corporation tax.</p>
 <p>The agency continued to trade profitably, and the investor’s due diligence was completed without any structural issues. The founder reported that the clean cap table made it easier to recruit a finance director and a head of growth, both of whom received EMI share options in the holding company.</p>
 
 <h2>What others can learn</h2>

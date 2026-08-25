@@ -105,7 +105,7 @@ keyTakeaways:
 <p>For accounting periods beginning on or after 1 April 2024, a single merged scheme replaces the old SME and RDEC regimes. Under the merged scheme, all companies (regardless of size) receive a taxable expenditure credit of 20% of qualifying R&D spend. After 25% corporation tax on the credit, the net benefit is approximately 15% of qualifying costs. Loss-making R&D-intensive SMEs (qualifying R&D at least 30% of total costs) may instead claim under Enhanced R&D Intensive Support (ERIS), giving an 86% enhanced deduction and a 14.5% payable credit.</p>
 
 <h3>The old SME scheme and RDEC (pre-1 April 2024)</h3>
-<p>For accounting periods beginning before 1 April 2024, the old two-scheme structure applied. SMEs (under 500 employees and either turnover under €100m or a balance sheet under €86m) could claim an enhanced deduction of 186% of qualifying R&D expenditure. Loss-making SMEs could surrender the loss for a cash payment of up to 14.5% of the surrendered amount. Larger companies used the RDEC scheme at a 20% credit rate. These rates do not apply to post-1-April-2024 periods.</p>
+<p>For accounting periods beginning before 1 April 2024, the old two-scheme structure applied. For accounting periods beginning 1 April 2023 to 31 March 2024, SMEs (under 500 employees and either turnover under €100m or a balance sheet under €86m) could claim an enhanced deduction of 186% of qualifying R&D expenditure (it was 230% for periods beginning before 1 April 2023). Loss-making SMEs could surrender the loss for a cash payment of up to 14.5% of the surrendered amount. Larger companies used the RDEC scheme at a 20% credit rate. These rates do not apply to post-1-April-2024 periods.</p>
 
 <h2>What Costs Qualify</h2>
 
@@ -114,7 +114,7 @@ keyTakeaways:
 <ul>
 <li><strong>Staff costs.</strong> Salaries, employer NI, and pension contributions for employees directly working on qualifying projects. If someone splits their time between R&D and client work, you apportion.</li>
 <li><strong>Software licences.</strong> If you used specific software to conduct the R&D, the licence costs qualify. AWS compute time for training ML models is a common example.</li>
-<li><strong>Subcontractors.</strong> If you paid another company to do qualifying R&D work, up to 65% of the payment qualifies under the SME scheme. If you used externally provided workers (individual contractors on your payroll), 100% qualifies.</li>
+<li><strong>Subcontractors.</strong> If you paid another company to do qualifying R&D work, up to 65% of the payment to an unconnected subcontractor qualifies under the merged scheme. Payments to unconnected externally provided workers are also restricted to 65%; only your own employees' costs qualify at 100%.</li>
 <li><strong>Consumables.</strong> Materials used up in the R&D process. Cloud credits, data sets, API usage fees.</li>
 </ul>
 

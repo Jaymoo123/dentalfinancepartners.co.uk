@@ -1,0 +1,70 @@
+{
+  "candidate_id": "recruitment-agency-leadmkt-2026-07",
+  "vertical": "recruitment agency",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.straightaheaduk.com/sectors/recruitment-agencies/",
+      "excerpt": "We generate lead for recruitment agencies by identify their prospects' inclination to partner with an agency before advancing the conversation.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.wiredmedia.co.uk/recruitment-digital-marketing/lead-generation/",
+      "excerpt": "Lead Generation Agency for Recruitment Companies ... Our team are ready to help take your digital marketing to the next level and grow your business online. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://agency-leads.com/",
+      "excerpt": "Agency Leads is the best lead generation tool for staffing agencies. Updated daily, access over 225000 verified leads for recruiters.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://theleadgenerationagency.uk/services/lead-generation-for-recruitment-agencies/",
+      "excerpt": "UK lead generation agency booking 40+ qualified B2B meetings a month via LinkedIn, cold email, SEO, PPC and cold calling. Pay-per-lead available.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.munro.agency/top-lead-generation-companies-in-the-uk/",
+      "excerpt": "Discover the top 20 lead generation companies in the UK for 2026. Boost conversions with expert strategies and quality leads.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fi.freelancer.com/projects/business-development/generate-leads-for-recruitment-agency",
+      "excerpt": "Hello, I have gone through your proposal and I understood that you are searching for recruitment agency leads. ... Digital Marketing Lead Generation for Gangajal. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "agency leads: leads for staffing agencies & recruiters",
+    "generate me a leads for recruitment agency",
+    "lead generation agency for recruitment companies",
+    "lead generation for recruitment agencies uk",
+    "recruitment agencies lead generation",
+    "recruitment agency",
+    "top 20 lead generation companies in the uk for 2026"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK recruitment agency providers already paying per lead",
+    "proof": "6 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

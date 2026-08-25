@@ -7,15 +7,15 @@ generator: deepseek-chat/legacy-bulk
 author: Dental Finance Partners Editorial Team
 category: Goodwill & Practice Sale
 metaTitle: 'Selling a Dental Practice: Tax Implications & Exit Planning'
-metaDescription: Understand the tax implications of selling a dental practice in the UK, including CGT, BADR, goodwill, and NHS pension considerations. A practical exit
+metaDescription: 'The tax implications of selling a dental practice in 2026/27: CGT, BADR at 18%, goodwill, and NHS pension considerations for your exit plan.'
 altText: Dental practice principal reviewing sale documents with accountant in a UK practice setting
 image: https://images.pexels.com/photos/8962520/pexels-photo-8962520.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: What Are the Tax Implications When Selling a Dental Practice? An Exit Planning Guide
-summary: Selling a dental practice triggers capital gains tax (CGT) on goodwill and assets, but Business Asset Disposal Relief (BADR) can reduce the rate to 14% in 2025/26. This guide explains the key tax implications, valuation methods, and steps to structure your exit efficiently.
+summary: Selling a dental practice triggers capital gains tax (CGT) on goodwill and assets, but Business Asset Disposal Relief (BADR) can reduce the rate to 18% in 2026/27. This guide explains the key tax implications, valuation methods, and steps to structure your exit efficiently.
 schema: ''
 faqs:
-- question: What is the CGT rate on selling a dental practice in 2025/26?
-  answer: For the 2025/26 tax year, the CGT rate on most assets (including goodwill) is 18% for basic rate taxpayers and 24% for higher rate taxpayers. However, if you qualify for Business Asset Disposal Relief (BADR), the rate on the first £1 million of gains is 14% for 2025/26, rising to 18% from 6 April 2026. The rate depends on your total income and gains for the year.
+- question: What is the CGT rate on selling a dental practice in 2026/27?
+  answer: For the 2026/27 tax year, the CGT rate on most assets (including goodwill) is 18% for basic rate taxpayers and 24% for higher rate taxpayers. However, if you qualify for Business Asset Disposal Relief (BADR), the rate on the first £1 million of gains is 18% (up from 14% in 2025/26). The rate depends on your total income and gains for the year.
 - question: Can I claim Business Asset Disposal Relief on a dental practice sale?
   answer: Yes, if you meet the conditions. For a sole trader or partnership, you must have owned the business for at least two years before the sale. For a company sale, you must hold at least 5% of the shares and voting rights and be an employee or officer for the same period. The relief applies to the first £1 million of qualifying gains. HMRC scrutinises claims, so ensure your working practices meet the requirements.
 - question: How does selling my practice affect my NHS pension?
@@ -41,13 +41,13 @@ imageCredit:
 
 <p>When you sell your dental practice, the profit you make is a capital gain, not trading income. This means it is subject to Capital Gains Tax (CGT), not income tax. The gain is calculated as the sale price minus the original cost of the assets (including goodwill) and any allowable costs of acquisition and disposal.</p>
 
-<p>For the 2025/26 tax year, the CGT annual exempt amount is £3,000. Gains above this are taxed at 18% for basic rate taxpayers and 24% for higher rate taxpayers on most assets, including shares and goodwill. These rates apply to disposals after 30 October 2024. If you are selling a practice you own personally (as a sole trader or partnership), the gain on goodwill and other assets will be subject to these rates.</p>
+<p>For the 2026/27 tax year, the CGT annual exempt amount is £3,000. Gains above this are taxed at 18% for basic rate taxpayers and 24% for higher rate taxpayers on most assets, including shares and goodwill. These rates apply to disposals after 30 October 2024. If you are selling a practice you own personally (as a sole trader or partnership), the gain on goodwill and other assets will be subject to these rates.</p>
 
 <p>If you have incorporated your practice into a limited company, the gain is on the shares you sell, not the underlying assets. This can change the reliefs available and the tax treatment. Many principals sell their company shares rather than the practice assets directly, which can be more tax-efficient depending on your circumstances.</p>
 
 <h2>Business Asset Disposal Relief (BADR): Reducing Your CGT Rate</h2>
 
-<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) is one of the most valuable tax reliefs for a dental practice sale. It reduces the CGT rate on qualifying gains to 14% for 2025/26, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains. This means the first £1 million of gain on selling your practice could be taxed at 14% rather than 24%.</p>
+<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) is one of the most valuable tax reliefs for a dental practice sale. It reduces the CGT rate on qualifying gains to 18% for 2026/27 (the rate rose from 14% on 6 April 2026). The lifetime limit is £1 million of gains. This means the first £1 million of gain on selling your practice could be taxed at 18% rather than 24%.</p>
 
 <p>To qualify for BADR, you must meet certain conditions. For a sole trader or partnership, you must have owned the business for at least two years before the sale. For a company sale, you must hold at least 5% of the shares and voting rights and be an employee or officer of the company for the same period. The conditions are strict, and HMRC scrutinises claims closely.</p>
 
@@ -75,7 +75,7 @@ imageCredit:
 
 <h2>Inheritance Tax (IHT) and Estate Planning</h2>
 
-<p>If you hold the practice personally, the value of the business may be subject to Inheritance Tax on your death. Business Property Relief (BPR) can reduce or eliminate IHT on qualifying business assets, including a dental practice. However, the relief is not automatic. You must have owned the business for at least two years, and the business must be trading (not investment-based).</p>
+<p>If you hold the practice personally, the value of the business may be subject to Inheritance Tax on your death. Business Property Relief (BPR) can reduce or eliminate IHT on qualifying business assets, including a dental practice. However, the relief is not automatic. You must have owned the business for at least two years, and the business must be trading (not investment-based). In addition, from 6 April 2026, 100% relief applies only to the first £2.5 million of combined qualifying business and agricultural property per person; value above that cap qualifies for relief at 50%.</p>
 
 <p>If you sell the practice, the cash proceeds lose BPR protection. This means the sale proceeds become part of your estate and could be subject to IHT at 40% above the nil-rate band (£325,000) and residence nil-rate band (£175,000). Planning your exit to minimise IHT is important, especially if you have a large estate.</p>
 
@@ -91,7 +91,7 @@ imageCredit:
 
 <h2>Structuring the Sale: Asset Sale vs Share Sale</h2>
 
-<p>If you operate as a limited company, you can sell either the company shares or the underlying assets. A share sale is usually more tax-efficient for the seller because you pay CGT on the gain (with BADR potentially reducing the rate to 14%). The buyer, however, may prefer an asset sale because they can claim capital allowances on the assets and amortise goodwill.</p>
+<p>If you operate as a limited company, you can sell either the company shares or the underlying assets. A share sale is usually more tax-efficient for the seller because you pay CGT on the gain (with BADR potentially reducing the rate to 18% for disposals from 6 April 2026). The buyer, however, may prefer an asset sale because they can claim capital allowances on the assets and amortise goodwill.</p>
 
 <p>An asset sale means the company sells its assets (goodwill, equipment, patient list) and then distributes the proceeds to you as a dividend or capital distribution. This can trigger both corporation tax and dividend tax, making it less efficient. Most dental practice sales are structured as share sales when the seller is a company.</p>
 

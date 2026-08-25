@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "Property Conversion VAT UK: Zero-Rate and 5% Reliefs"
 metaDescription: "Three property conversion VAT reliefs: zero-rate Sch 8 Group 5 Item 1(b), 5% Sch 7A Group 6, 5% Sch 7A Group 7 empty-home. Mechanics + worked examples."
 altText: "Vintage brick warehouse converted with a contemporary glass facade, illustrating a non-residential-to-residential conversion under VATA 1994 Sch 8 Group 5 Item 1(b)"
-image: "https://images.pexels.com/photos/5505928/pexels-photo-5505928.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/5505928/pexels-photo-5505928.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit: "Photo by Mike van Schoonderwalt on Pexels"
 h1: "Property Conversion and VAT: Zero-Rate, 5%, and the Certification Mechanic"
 summary: "Property conversion projects in the UK sit at the relief end of the construction-VAT spectrum, with three distinct statutory reliefs depending on the direction and type of the conversion. The first grant of a major interest in a converted non-residential building is zero-rated under VATA 1994 Schedule 8 Group 5 Item 1(b). The 5% reduced rate under Schedule 7A Group 6 covers conversions that change the number of single-household dwellings. The 5% reduced rate under Schedule 7A Group 7 covers renovation of a dwelling that has been empty for at least two years. Each relief has its own qualifying conditions, evidence requirements, and certification mechanic. This page sets out the three reliefs, the developer-versus-DIY route choice, and the downstream sale-or-let VAT position with two worked examples."
@@ -206,7 +206,7 @@ editorialNote: "Bucket A applied page. Sibling to existing new-build (Sch 8 Grou
 <li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="nofollow">VATA 1994 Sch 8 Group 5 (zero-rated construction of dwellings and converted non-residential)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/7A" rel="nofollow">VATA 1994 Sch 7A (reduced-rate supplies)</a></li>
 <li><a href="https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708" rel="nofollow">HMRC VAT Notice 708 (Buildings and construction)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-refunds-for-diy-housebuilders-claim-form-and-notes-for-new-houses" rel="nofollow">HMRC VAT Notice 719 (DIY refund scheme)</a></li>
+<li><a href="https://www.gov.uk/guidance/vat-refunds-for-conversions-if-youre-a-diy-housebuilder" rel="nofollow">HMRC VAT Notice 719 (DIY refund scheme)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-construction" rel="nofollow">HMRC VCONST VAT Construction Manual</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="nofollow">HMRC VATLAND VAT Land and Property Manual</a></li>
 <li><a href="https://www.gov.uk/guidance/vat-domestic-reverse-charge-for-building-and-construction-services" rel="nofollow">HMRC VAT Domestic Reverse Charge for Construction Services (effective 1 March 2021)</a></li>

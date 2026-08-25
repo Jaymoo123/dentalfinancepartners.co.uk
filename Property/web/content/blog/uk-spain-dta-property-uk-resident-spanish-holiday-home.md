@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "UK-Spain Tax Treaty: Property, Holiday Homes, Wealth Tax"
-metaDescription: "How the 2013 UK-Spain treaty works for UK landlords with Spanish holiday lets and Spanish residents with UK property, plus IRNR, Patrimonio, and Brexit traps."
+metaDescription: "How the 2013 UK-Spain treaty works for UK landlords with Spanish holiday lets and Spanish residents with UK property, plus IRNR, Patrimonio"
 altText: "Coastal town of Nerja on the Costa del Sol, representing the cross-border UK-Spain property tax position"
 image: "https://images.pexels.com/photos/17740863/pexels-photo-17740863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

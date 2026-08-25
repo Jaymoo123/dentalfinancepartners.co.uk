@@ -89,7 +89,9 @@ export default function LeadAnalyticsTable({ rows }: { rows: LeadRow[] }) {
           ) : (
             sorted.map((r) => (
               <tr key={r.id} className="border-t border-slate-100" title={r.rationale ?? undefined}>
-                <td className="px-3 py-2 font-medium text-slate-800">{r.name || "-"}</td>
+                <td className="px-3 py-2 font-medium text-slate-800">
+                  {r.name || "-"}
+                </td>
                 <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-400">{r.date.slice(0, 10)}</td>
                 <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-500">{r.site}</td>
                 <td className="hidden px-3 py-2 text-xs text-slate-500 md:table-cell">{r.role || "-"}</td>

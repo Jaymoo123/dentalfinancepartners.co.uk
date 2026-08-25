@@ -1,0 +1,106 @@
+{
+  "candidate_id": "invoice-finance-leadmkt-2026-07",
+  "vertical": "invoice finance",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://parkrow.marketing/invoice-finance-lead-generation",
+      "excerpt": "Maximize cash flow with our Pay-Per-Lead invoice finance web chat. We deliver pre-qualified leads and appointments, optimizing your sales team's efficiency.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lurvodigital.com/leads/invoice-finance-leads/",
+      "excerpt": "Buy exclusive invoice finance leads from £50-£100. Real-time delivery, SMS verified. No contracts. Invoice factoring and discounting enquiries from UK ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://qualifiedleads.com/industry/invoice-finance-marketing-services/",
+      "excerpt": "How do I get more Invoice Finance leads? The following infrastructure ... The Cost Per Lead (CPL) for commercial finance is naturally high, often ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://weboost.co.uk/invoice-finance-leads-south-east",
+      "excerpt": "Own exclusive invoice finance enquiries in South East from £1395/month. One partner only, no per-lead fees.",
+      "metric": {
+        "price_gbp": 1395
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.activatedigital.co.uk/service/lead-generation-agency-uk/",
+      "excerpt": "As a UK lead generation agency, we supercharge your growth through powerful, scalable and cost-effective pay-per-lead campaigns.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Who Are the Top Pay Per Lead Agencies in the UK? · 1. Push · 2. Corner House Media · 3. Bark · 4. More Demand · 5. The First Line · 6. MVF Global · 7. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://flexxable.com/blog-b-2-b-and-the-pay-per-lead-model/",
+      "excerpt": "Today's blog post is all about B2B Leads and whether you can sell them on a pay per lead basis. Invoice Financing Tow. AI-Powered Lead Reactivation System.  ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/pay-per-lead-generation/",
+      "excerpt": "Pay Per Lead, often known as cost per lead, is essentially an agreement between a firm and us to produce leads in exchange for a commission.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/pay-per-lead/",
+      "excerpt": "Want leads that truly convert? Our pay per lead service delivers verified prospects aligned with your business goals and drives measurable results.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://gitnux.org/service/pay-per-lead-generation/",
+      "excerpt": "3 Jul 2026 — Pay per lead generation services convert ad traffic into validated leads using tracking schemas, attribution rules, and qualification ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "b2b and the pay per lead model",
+    "best pay per lead generation services | ranked for 2026",
+    "buy invoice finance leads uk — exclusive & real-time",
+    "invoice finance",
+    "invoice finance enquiries in south east | weboost",
+    "invoice finance lead generation",
+    "invoice finance marketing services",
+    "lead generation agency in the uk | pay-per-lead",
+    "pay per lead generation",
+    "premier pay per lead service to generate quality leads",
+    "top 9 pay per lead agencies in the uk (2026)"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK invoice finance providers already paying per lead",
+    "proof": "10 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

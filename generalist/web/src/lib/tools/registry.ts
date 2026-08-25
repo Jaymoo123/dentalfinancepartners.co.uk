@@ -25,6 +25,10 @@ import { p11dBikTool } from "./configs/p11d-bik-calculator";
 import { mileageClaimTool } from "./configs/mileage-claim";
 import { mtdItsaTool } from "./configs/mtd-itsa-readiness";
 import { cisSubcontractorTool } from "./configs/cis-subcontractor-deduction";
+import { businessLoanCalculatorTool } from "./configs/business-loan-calculator";
+import { assetFinanceCalculatorTool } from "./configs/asset-finance-calculator";
+import { eotTaxSavingCalculatorTool } from "./configs/eot-tax-saving-calculator";
+import { businessValuationCalculatorTool } from "./configs/business-valuation-calculator";
 
 const tools = [
   // Income Tax & Salary
@@ -50,6 +54,12 @@ const tools = [
   // Employment Taxes & Compliance
   p11dBikTool,
   mtdItsaTool,
+  // Business Finance
+  businessLoanCalculatorTool,
+  assetFinanceCalculatorTool,
+  // Exit and Capital Gains (Business Exit & Succession)
+  eotTaxSavingCalculatorTool,
+  businessValuationCalculatorTool,
 ] as const;
 
 export const { allTools, genericTools, getGenericTool, toolPath } = makeRegistryHelpers([...tools]);

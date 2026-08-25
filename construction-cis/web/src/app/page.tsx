@@ -23,9 +23,14 @@ import { tradeTypes } from "@/data/trade-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { UnionJack } from "@/components/brand/UnionJack";
 import { HeroOffer } from "@/components/intent/HeroOffer";
-import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
+const packagesMode = isPackagesMode(niche);
 
 export const metadata: Metadata = {
   title: "CIS Accountants & Construction Tax Specialists | UK",
@@ -194,6 +199,14 @@ export default function HomePage() {
                   className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
                 >
                   Gross payment status
+                </Link>
+                <Link
+                  href={activeCta.hero_primary.href}
+                  className={`inline-flex min-h-12 items-center justify-center text-base sm:text-lg font-medium text-orange-300 hover:text-orange-200 transition-colors text-center underline underline-offset-4 ${focusRing}`}
+                  data-cta="hero_primary" data-cta-placement="hero" data-cta-goal="lead"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.hero_primary.label}
                 </Link>
               </div>
               <div className="mt-8 flex items-center gap-2.5 text-sm text-neutral-400">
@@ -466,19 +479,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
+      {/* Contact CTA — variant branch: packages = pricing-led closing, leadgen = original free-call section */}
       <section className="relative overflow-hidden bg-[#1e293b]">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
         <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-                Find out what you are owed
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-neutral-200">
-                Book a free call. We will review your CIS deductions, identify what you are owed, and explain your options. No hard sell, no obligation.
-              </p>
+              {packagesMode ? (
+                <>
+                  <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
+                    {activeCta.home_cta.heading}
+                  </h2>
+                  <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-neutral-200">
+                    {activeCta.home_cta.body}
+                  </p>
+                  <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                    <Link
+                      href={activeCta.home_cta.primary.href}
+                      className={btnPrimary}
+                      data-cta="home_cta_primary" data-cta-placement="home_cta" data-cta-goal="lead"
+                      data-cta-variant={niche.cta.variant}
+                    >
+                      {activeCta.home_cta.primary.label}
+                    </Link>
+                    {activeCta.home_cta.secondary ? (
+                      <Link
+                        href={activeCta.home_cta.secondary.href}
+                        className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 text-base font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                        data-cta="home_cta_secondary" data-cta-placement="home_cta" data-cta-goal="contact"
+                        data-cta-variant={niche.cta.variant}
+                      >
+                        {activeCta.home_cta.secondary.label}
+                      </Link>
+                    ) : null}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
+                    Find out what you are owed
+                  </h2>
+                  <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-neutral-200">
+                    Book a free call. We will review your CIS deductions, identify what you are owed, and explain your options. No hard sell, no obligation.
+                  </p>
+                </>
+              )}
               <div className="mt-8 space-y-4">
                 {[
                   { title: "CIS specialists only", sub: "We do not work with non-construction clients" },
@@ -499,8 +545,18 @@ export default function HomePage() {
               </div>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Book your free call</h3>
-              <LeadForm submitLabel="Request a callback" />
+              {packagesMode ? (
+                <>
+                  <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-2">Prefer to send a message?</h3>
+                  <p className="text-sm text-neutral-600 mb-4 sm:mb-6">Tell us where you are up to and we will come back within one working day.</p>
+                  <LeadForm submitLabel="Send enquiry" />
+                </>
+              ) : (
+                <>
+                  <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Book your free call</h3>
+                  <LeadForm submitLabel="Request a callback" />
+                </>
+              )}
             </div>
           </div>
         </div>

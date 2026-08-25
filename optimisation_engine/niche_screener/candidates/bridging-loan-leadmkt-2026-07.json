@@ -1,0 +1,88 @@
+{
+  "candidate_id": "bridging-loan-leadmkt-2026-07",
+  "vertical": "bridging loan",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.lendingexpert.co.uk/partnerships/buy-bridging-loan-leads/",
+      "excerpt": "Lending Expert can help you grow your bridging finance business with high quality Bridging Loan leads. Leads are delivered in real time direct from the website. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.simplyonlineleads.com/buy-leads/secured-loans/",
+      "excerpt": "Simply Online Leads have a range of loan lead types to purchase from homeowner loans to usecured loans. Real time, high quality lead generation company.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/auction-bridging-development-loan/",
+      "excerpt": "For bridging loan leads, the cost per lead starts at £100. Discounts are ... for sale at a reduced price. The older the lead, the lower the price and ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lurvodigital.com/resources/how-much-do-bridging-loan-leads-cost/",
+      "excerpt": "Bridging Loan Leads pricing in the UK generally falls between £25-£50 per lead. The range depends on several factors including exclusivity, qualification depth, ...",
+      "metric": {
+        "price_gbp": 50
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.loan-rates.co.uk/are-you-an-advisor/",
+      "excerpt": "Buy Loan Leads, Secured Loan Leads, Homeowner Loan Leads, Bridging Loan Leads, Commercial Loan Leads, Business Loan Leads, Auction Finance Leads.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/financial-loan-lead-generation/",
+      "excerpt": "We generate 1000s of high quality leads … from personal loans to bridging loans, Pay-Per-Lead Model Instantly fill your sales pipeline with a predictable flow ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://insiteweb.co.uk/the-money-hub-ppc-for-lead-generation/",
+      "excerpt": "Improve lead generation with a focus on adverse remortgages and bridging loans ・ 25% saving in cost per click ・ bridging finance for property development and ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://salesleadagent.com/blog/lead-generation-cost-benchmarks-2026",
+      "excerpt": "Commercial lending leads: $25-$200 per lead. · Equipment financing leads: $50-$200 per lead (aged $25-$75). · SBA / business loan leads: $50-$150 per lead. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "are you an advisor? - loan-rates.co.uk",
+    "auction, bridging & development loan leads",
+    "bridging loan",
+    "buy bridging loan leads",
+    "buy secured and unsecured loan leads",
+    "financial loan leads uk",
+    "how much do bridging loan leads cost?",
+    "lead generation cost 2026: buy vs build benchmarks",
+    "the money hub ppc for lead generation - insite web"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK bridging loan providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -1,0 +1,29 @@
+{
+  "batch_id": "M3-C-B1",
+  "agent_id": "MW3-Stage1-C-B1",
+  "completed_at": "2026-05-27T20:30:00Z",
+  "commit_shas": [
+    "3a9e4e604bd98534a463e2ee629a784833b0768b",
+    "898d9960282905e050ed6181146d2b85c9f5cd2c",
+    "283aab937e28b5bcae497889e3a9a9d5849d83b1",
+    "1983921232d51cfb52487155e9cc67a2ff43ac29",
+    "403a257be4c3d95b67d54a926e53e40c348b875f",
+    "22ed98034959517700b3f26267973498852a0103"
+  ],
+  "slugs_done": [
+    "3m-mortgage-fraud-convicts-accountant-and-financial-adviser",
+    "accidental-landlord-taxes-a-complete-guide",
+    "a-complete-guide-to-periodic-tenancy",
+    "air-bnb-and-post-covid",
+    "airbnb-landlords",
+    "anti-avoidance-rules-share-exchanges-and-reorganisations"
+  ],
+  "flags_raised": [
+    "F-100 (HP-extension candidate, §36 professional-conduct floor)",
+    "F-101 (HP-extension candidate, §37 share-exchange/reconstruction anti-avoidance)",
+    "F-102 (BRIEF_DRIFT cannibalisation watch on C4 + C5 vs five existing serviced-accomm pages)"
+  ],
+  "branch": "property-megawave3-c",
+  "worktree": "C:\\Users\\user\\Documents\\Accounting-wt-property-megawave3-c",
+  "notes": "All 6 seeds committed on worktree branch property-megawave3-c. Briefs additionally written to main absolute path (canonical brief location per prompt). Manager merges branch back to main via git merge --no-ff per established MW2 rolling-arch pattern (compensates for the known sub-agent drift bug). Statute verifications at write time (legislation.gov.uk): Fraud Act 2006 s.2; TCGA 1992 s.135 + s.137 + s.138; ITA 2007 Pt 13 Ch 1; MLR 2017 SI 2017/692 reg 8; TCGA 1992 s.223; ITTOIA 2005 s.311A. HP-pre-locked anchors used per §16.36: §4 + §5 + §6 + §17 + §19 + §20 + §21 + §22 + §25 + §27 + §28 + §29 + §30. Category-routing override applied at C2 + C5 (queue labels said 'Property accountant for cities / regions'; slug-and-content test routes both to substantive-tax categories — landlord-tax-essentials + property-types-and-specialist-tax). Batch-done timestamp ISO Z is approximate."
+}

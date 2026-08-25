@@ -177,6 +177,6 @@ editorialNote: "Bucket A specialist deepening of the long-stay variant of hotel/
 <li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9" rel="nofollow">VATA 1994 Sch 9 Group 1 Note 9 (Item 1: hotel and similar accommodation standard-rated)</a></li>
 <li><a href="https://www.gov.uk/government/publications/vat-notice-7093-hotels-and-holiday-accommodation" rel="nofollow">HMRC VAT Notice 709/3 (Hotels and holiday accommodation)</a></li>
 <li><a href="https://www.gov.uk/government/publications/vat-notice-7095-tour-operators-margin-scheme" rel="nofollow">HMRC VAT Notice 709/5 (Tour Operators Margin Scheme)</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-tour-operators-margin-scheme" rel="nofollow">HMRC VAT Tour Operators Margin Scheme Manual (VATTOS)</a></li>
+<li>HMRC VAT Tour Operators Margin Scheme Manual (VATTOS)</li>
 <li><a href="https://www.gov.uk/tax-and-chancery-tribunal-decisions" rel="nofollow">Sonder Europe Ltd v HMRC [2025] UKUT 14 (TCC) Upper Tribunal on TOMS applicability to leased apartments sub-let</a></li>
 </ul>

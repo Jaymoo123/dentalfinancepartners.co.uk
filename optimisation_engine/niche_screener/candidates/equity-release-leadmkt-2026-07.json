@@ -1,0 +1,95 @@
+{
+  "candidate_id": "equity-release-leadmkt-2026-07",
+  "vertical": "equity release",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/equity-release/",
+      "excerpt": "For equity release leads, the cost per lead starts at £110. We generate leads for advisors all over the UK.",
+      "metric": {
+        "price_gbp": 110
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://digitalroo.co.uk/leads/equity-release-leads/",
+      "excerpt": "We're one of the UK's leading equity release lead providers. Leads are delivered in real-time & 100% exclusive. No setup fees. Get started within 1 week.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.equityreleasecouncil.com/newsletter/advice-on-buying-leads/",
+      "excerpt": "6 Nov 2020 — If your firm buys or generates equity release leads, taking the time to understand the rules now could save you time and money in the future. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.rmtdirect.com/equity_release_leads.php",
+      "excerpt": "RMT Direct Leads provides equity release leads to specialist equity release firms throughout the UK. £90 per lead (no VAT). Call us on020 3468 4215Lines are ...",
+      "metric": {
+        "price_gbp": 90
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/equity-release-lead-generation/",
+      "excerpt": "Need Equity Release Leads? Equity Release Lead Generation is the process of generating leads through contact forms via various methods of digital marketing. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.lendingexpert.co.uk/partnerships/buy-equity-release-leads/",
+      "excerpt": "Buy Equity Release Leads delivered in real time with Lending Expert. £50 – £100 Loans. Email team@lendingexpert.co.uk. Tel: 0161 820 8099",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "http://lurvodigital.com/resources/how-much-do-equity-release-leads-cost/",
+      "excerpt": "Equity release leads in the UK cost between £30-£70 per lead. We explain what drives pricing, realistic conversion rates, and how to evaluate ROI for your ...",
+      "metric": {
+        "price_gbp": 70
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.promo-seo.uk/lead-generation/industries/equity-release/",
+      "excerpt": "Are PromoSEO's Equity Release Leads Exclusive or Shared? PromoSEO supplies 100% exclusive equity release leads. No enquiry is shared with other advisers or ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adbetter.com/blog/equity-release-lead/",
+      "excerpt": "25 May 2026 — 10-second summary: Pay per click advertising is one of the most effective forms of lead generation for equity release providers. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "advice on buying leads",
+    "buy equity release leads",
+    "buy equity release leads online",
+    "buy equity release leads | real time leads",
+    "equity release",
+    "equity release lead generation",
+    "equity release leads",
+    "how much do equity release leads cost? uk price guide"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK equity release providers already paying per lead",
+    "proof": "9 domains selling per-lead"
+  },
+  "regulatory_gate": "IAR",
+  "accounting_adjacent": false
+}

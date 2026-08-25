@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "Labour SDLT Hike for Overseas Buyers: 2% to 3% Status"
 metaDescription: "Labour's 2024 manifesto committed to lifting the non-resident SDLT surcharge from 2% to 3%. As at 26 May 2026"
 altText: "A union jack flag flying above a London residential skyline representing the non-resident SDLT surcharge under FA 2003 Schedule 9A and Labour's 2024 manifesto commitment to lift the rate from 2% to 3% for overseas buyers"
-image: "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"
@@ -159,9 +159,9 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A18 (final pick of batch). Policy-
 <li><strong>FA 2003 Schedule 9A</strong> "Higher rates for non-resident transactions" (inserted by FA 2021 s.86 and Schedule 16; in force from 1 April 2021; 2% rate operative as at 26 May 2026): <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A">legislation.gov.uk/ukpga/2003/14/schedule/9A</a></li>
 <li><strong>FA 2003 Schedule 9A paragraph 4</strong> (SDLT-specific 183-day residence test for individuals; distinct from FA 2013 SRT).</li>
 <li><strong>FA 2003 Schedule 9A paragraph 5</strong> (residence test for company buyers; covers non-UK-resident companies and UK-resident companies close-controlled by non-UK-resident participators).</li>
-<li><strong>FA 2003 s.55C</strong> (non-resident higher-rate computation; added by FA 2021 Schedule 16; band-additive): <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55C">legislation.gov.uk/ukpga/2003/14/section/55C</a></li>
+<li><strong>FA 2003 s.55C</strong> (non-resident higher-rate computation; added by FA 2021 Schedule 16; band-additive): legislation.gov.uk/ukpga/2003/14/section/55C</li>
 <li><strong>FA 2003 s.55</strong> (residential rates Table A; post 1 April 2025 reverted bands): <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55">legislation.gov.uk/ukpga/2003/14/section/55</a></li>
-<li><strong>FA 2003 s.55B</strong> (additional dwellings higher-rate computation; band-additive; for the Schedule 4ZA stacking interaction): <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55B">legislation.gov.uk/ukpga/2003/14/section/55B</a></li>
+<li><strong>FA 2003 s.55B</strong> (additional dwellings higher-rate computation; band-additive; for the Schedule 4ZA stacking interaction): legislation.gov.uk/ukpga/2003/14/section/55B</li>
 <li><strong>FA 2003 Schedule 4ZA</strong> "Higher rates for additional dwellings" (5% rate from 31 October 2024 per FA 2025 s.51): <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA">legislation.gov.uk/ukpga/2003/14/schedule/4ZA</a></li>
 <li><strong>FA 2003 Schedule 6ZA</strong> "Relief for first-time buyers" (relief not residence-conditional; applies to non-resident buyers meeting the Schedule 6ZA tests): <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA">legislation.gov.uk/ukpga/2003/14/schedule/6ZA</a></li>
 <li><strong>FA 2021 s.86 + Schedule 16</strong> (introduction of the non-resident surcharge; in force 1 April 2021).</li>

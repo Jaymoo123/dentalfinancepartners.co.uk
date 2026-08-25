@@ -10,9 +10,9 @@ export const independentExaminationAuditChecker: GenericTool = {
     "Check whether your charity needs an independent examination or a full statutory audit under the England and Wales thresholds.",
   metaTitle: "Charity Audit Threshold Checker | Independent Examination or Audit?",
   metaDescription:
-    "Enter your charity's gross income and assets to see whether you need no external scrutiny, an independent examination, or a statutory audit under the Charities Act thresholds (England and Wales, 2026/27).",
+    "Enter your charity's gross income and assets to see whether you need no external scrutiny, an independent examination, or a statutory audit under the Charities Act thresholds (England and Wales), including the higher thresholds for financial years ending on or after 30 September 2026.",
   intro:
-    "The Charities Act sets clear gates: independent examination once gross income passes £25,000, a qualified examiner and accruals accounts above £250,000, and a statutory audit above £1m income (or £250,000 income with assets over £3.26m). Enter your figures to see where your charity sits.",
+    "The Charities Act sets clear gates. For financial years ending before 30 September 2026: independent examination once gross income passes £25,000, a qualified examiner and accruals accounts above £250,000, and a statutory audit above £1m income (or £250,000 income with assets over £3.26m). For financial years ending on or after 30 September 2026 the gates rise to £40,000, £500,000, and £1.5m income (or £500,000 income with assets over £5m). Enter your figures and financial year to see where your charity sits.",
   ctaLabel: "Speak to us about your independent examination",
   embedHeight: 680,
   fields: [
@@ -30,7 +30,14 @@ export const independentExaminationAuditChecker: GenericTool = {
       type: "currency",
       default: 100000,
       step: 10000,
-      help: "The aggregate value of assets before deducting liabilities. Only relevant once income exceeds £250,000.",
+      help: "The aggregate value of assets before deducting liabilities. Only relevant once income exceeds the accruals threshold (£250,000, or £500,000 for financial years ending on or after 30 September 2026).",
+    },
+    {
+      id: "newRegime",
+      label: "Financial year ends on or after 30 September 2026",
+      type: "toggle",
+      default: false,
+      help: "The thresholds rise for financial years ending on or after 30 September 2026: examination above £40,000, qualified examiner and accruals above £500,000, audit above £1.5m income (or £500,000 income with assets over £5m). Years ending before that date use the old figures.",
     },
     {
       id: "isCompany",
@@ -69,6 +76,7 @@ export const independentExaminationAuditChecker: GenericTool = {
       assets: Number(v.assets),
       isCompany: Boolean(v.isCompany),
       governingDocRequiresAudit: Boolean(v.governingDocRequiresAudit),
+      fyEndsOnOrAfter30Sep2026: Boolean(v.newRegime),
     });
     const levelLabel =
       r.level === "audit"
@@ -84,6 +92,12 @@ export const independentExaminationAuditChecker: GenericTool = {
       },
       rows: [
         { label: "External scrutiny", value: levelLabel, strong: true },
+        {
+          label: "Threshold regime",
+          value: v.newRegime
+            ? "Financial years ending on or after 30 Sep 2026 (£40,000 / £500,000 / £1.5m)"
+            : "Financial years ending before 30 Sep 2026 (£25,000 / £250,000 / £1m)",
+        },
         {
           label: "Accounts basis",
           value: r.accrualsRequired ? "Accruals accounts (Charities SORP)" : "Receipts and payments allowed",
@@ -106,9 +120,9 @@ export const independentExaminationAuditChecker: GenericTool = {
   explainer: {
     heading: "Charity audit and independent examination thresholds explained",
     paragraphs: [
-      "England and Wales charities face three levels of external scrutiny, driven mainly by gross income. Up to £25,000 the Charities Act requires no external scrutiny at all, although trustees must still prepare accounts and, if registered, file an annual return. Once gross income exceeds £25,000, the accounts must at least be independently examined.",
-      "Independent examination is a lighter-touch review than an audit. Below £250,000 of income the examiner simply needs to be an independent person with the requisite ability and experience. Once income exceeds £250,000, two things change: the charity must prepare accruals accounts under the Charities SORP, and the independent examiner must be a member of one of the professional bodies listed in the Charities Act, such as ICAEW, ACCA or AAT.",
-      "A full statutory audit by a registered auditor becomes compulsory when gross income exceeds £1m, or when income exceeds £250,000 and gross assets exceed £3.26m. On top of the statutory gates, your governing document or a funding agreement can require an audit at any size, so always check both before appointing an examiner.",
+      "England and Wales charities face three levels of external scrutiny, driven mainly by gross income. For financial years ending before 30 September 2026, the Charities Act requires no external scrutiny at all up to £25,000, although trustees must still prepare accounts and, if registered, file an annual return. Once gross income exceeds £25,000, the accounts must at least be independently examined.",
+      "Independent examination is a lighter-touch review than an audit. Below £250,000 of income the examiner simply needs to be an independent person with the requisite ability and experience. Once income exceeds £250,000, two things change: the charity must prepare accruals accounts under the Charities SORP, and the independent examiner must be a member of one of the professional bodies listed in the Charities Act, such as ICAEW, ACCA or AAT. A full statutory audit by a registered auditor becomes compulsory when gross income exceeds £1m, or when income exceeds £250,000 and gross assets exceed £3.26m.",
+      "The thresholds rise on 30 September 2026, applying to financial years ending on or after that date: no external scrutiny up to £40,000, a qualified examiner and accruals accounts above £500,000, and a statutory audit above £1.5m income (or £500,000 income with gross assets over £5m). Use the financial-year toggle above to apply the right set. On top of the statutory gates, your governing document or a funding agreement can require an audit at any size, so always check both before appointing an examiner.",
       "Scotland runs a separate regime under OSCR: every Scottish charity needs some form of external scrutiny regardless of income, and the detailed thresholds differ. This checker applies the England and Wales rules only.",
     ],
   },
@@ -116,12 +130,17 @@ export const independentExaminationAuditChecker: GenericTool = {
     {
       question: "What is the charity audit threshold in England and Wales?",
       answer:
-        "A statutory audit is required when gross income exceeds £1m, or when gross income exceeds £250,000 and gross assets exceed £3.26m. Below those levels an independent examination normally suffices, provided nothing in your governing document requires an audit.",
+        "For financial years ending before 30 September 2026, a statutory audit is required when gross income exceeds £1m, or when gross income exceeds £250,000 and gross assets exceed £3.26m. For financial years ending on or after 30 September 2026 the audit thresholds rise to £1.5m income, or £500,000 income with gross assets over £5m. Below those levels an independent examination normally suffices, provided nothing in your governing document requires an audit.",
     },
     {
       question: "Who can carry out an independent examination?",
       answer:
-        "For charities with income of £250,000 or less, any independent person the trustees reasonably believe has the ability and experience to do it. Once income exceeds £250,000, the examiner must belong to one of the bodies listed in the Charities Act, which includes ICAEW, ACCA, AAT and several others.",
+        "For charities with income at or below the qualified-examiner threshold (£250,000, rising to £500,000 for financial years ending on or after 30 September 2026), any independent person the trustees reasonably believe has the ability and experience to do it. Above that threshold, the examiner must belong to one of the bodies listed in the Charities Act, which includes ICAEW, ACCA, AAT and several others.",
+    },
+    {
+      question: "How are the thresholds changing on 30 September 2026?",
+      answer:
+        "The Department for Culture, Media and Sport has raised the scrutiny thresholds with effect from 30 September 2026, applying to financial years ending on or after that date. Independent examination is required above £40,000 gross income (previously £25,000), a qualified examiner and accruals accounts above £500,000 (previously £250,000), and a statutory audit above £1.5m income or £500,000 income with gross assets over £5m (previously £1m and £3.26m). Financial years ending before 30 September 2026 keep the old thresholds.",
     },
     {
       question: "What is the difference between an audit and an independent examination?",

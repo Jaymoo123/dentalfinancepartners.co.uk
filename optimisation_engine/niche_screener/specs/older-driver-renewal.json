@@ -1,0 +1,26 @@
+{
+  "vertical": "older driver licence renewal",
+  "provider_terms": [
+    "optician",
+    "driving assessor",
+    "driving instructor"
+  ],
+  "pain_seeds": [
+    "renew driving licence at 70",
+    "eyesight test for driving",
+    "dvla medical conditions",
+    "driving licence renewal over 70 form",
+    "giving up driving licence",
+    "driving assessment older drivers"
+  ],
+  "audience_terms": [
+    "older drivers",
+    "drivers over 70"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "reg-churn candidate older-driver-licence-renewal-mandatory-eyesight-tests (6m licence holders 70+)"
+  ],
+  "name": "older-driver-renewal"
+}

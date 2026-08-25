@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "Welsh LTT Refund for Derelict Property: Claim Pathway"
 metaDescription: "Welsh LTT paid at residential rates can be refunded where the property was uninhabitable at completion. TCMA 2016 s.41 + s.63 paths, evidence, WRA review."
 altText: "Abandoned stone cottage with collapsed roof and overgrown garden in rural Wales, illustrating the kind of derelict property that can qualify for non-residential LTT reclassification"
-image: "https://images.pexels.com/photos/1374295/pexels-photo-1374295.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/1374295/pexels-photo-1374295.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Roman Pohorecki"
   photographer_url: "https://www.pexels.com/@pixabay"

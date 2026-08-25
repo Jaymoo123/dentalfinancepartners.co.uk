@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation and Company Structures"
 metaTitle: "Scottish LBTT Bare Trust + Acquisition Relief Mechanics"
-metaDescription: "Scottish LBTT bare-trust transparency principle and Sch 11 acquisition relief for corporate-restructure share-for-property transactions, with worked examples."
+metaDescription: "Scottish LBTT bare-trust transparency principle and Sch 11 acquisition relief for corporate-restructure share-for-property transactions"
 altText: "Scottish family home with traditional architecture, illustrating the family-trust and corporate-restructure acquisitions that engage LBTT bare-trust and acquisition relief mechanics"
 image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

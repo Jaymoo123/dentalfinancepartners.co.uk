@@ -1,16 +1,16 @@
 ---
-title: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
+title: "How Does IR35 Apply to a Locum Solicitor in 2026/27?"
 slug: "locum-solicitor-tax-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/locum-solicitor-tax/locum-solicitor-tax-uk-2025-26"
-date: "2026-05-18"
+date: "2026-07-28"
 generator: opus-4.8/track2-rewrite
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
-metaTitle: "Locum Solicitor Tax UK 2025/26: IR35, VAT & Self-Employed Status"
-metaDescription: "Understand the tax rules for locum solicitors in 2025/26: IR35, VAT on fees, self-employed vs limited company, and practical compliance steps."
+metaTitle: "Locum Solicitor Tax 2026/27: IR35, VAT & Self-Employed"
+metaDescription: "Understand the tax rules for locum solicitors in 2026/27: IR35, VAT on fees, self-employed vs limited company, and practical compliance steps."
 altText: "UK locum solicitor reviewing tax documents in a modern law office"
 image: ""
-h1: "How Does IR35 Apply to a Locum Solicitor in 2025/26?"
+h1: "How Does IR35 Apply to a Locum Solicitor in 2026/27?"
 summary: "A clear guide for locum solicitors and the firms that engage them, covering IR35 status, VAT registration thresholds, and the practical tax implications of working as a self-employed solicitor or through a personal service company."
 keyTakeaways:
   - "A locum solicitor's tax depends on the engagement structure, not the job title, so HMRC examines the real working relationship."
@@ -34,7 +34,7 @@ faqs:
 
 <p>The way a locum solicitor is taxed depends on their engagement structure, not their job title. HMRC and the SRA both take an interest in how locum solicitors are paid, whether they are genuinely self-employed, and whether the correct tax has been deducted at source.</p>
 
-<p>For the 2025/26 tax year, the key questions are: Does IR35 apply to your contract? Do you need to charge VAT? And are you genuinely self-employed for tax purposes? This article answers those questions for locum solicitors and the firms that engage them.</p>
+<p>For the 2026/27 tax year, the key questions are: Does IR35 apply to your contract? Do you need to charge VAT? And are you genuinely self-employed for tax purposes? This article answers those questions for locum solicitors and the firms that engage them.</p>
 
 <h2>What Is a Locum Solicitor for Tax Purposes?</h2>
 
@@ -52,7 +52,7 @@ faqs:
 
 <h3>Locum Self-Employed Status: Sole Trader vs Limited Company</h3>
 
-<p>Many locum solicitors operate as sole traders. This is simpler: you invoice the firm, pay Class 2 and Class 4 National Insurance on your profits, and file a self-assessment tax return. You do not have a separate legal entity. The firm does not deduct tax at source, but it must still check your self-employed status is genuine.</p>
+<p>Many locum solicitors operate as sole traders. This is simpler: you invoice the firm, pay Class 4 National Insurance on your profits, and file a self-assessment tax return. You do not have a separate legal entity. The firm does not deduct tax at source, but it must still check your self-employed status is genuine.</p>
 
 <p>Operating through a limited company offers potential tax advantages: you can pay yourself a small salary and take the rest as dividends, which attract lower tax rates than employment income. But the company must pay corporation tax on its profits, and you must comply with Companies House filing requirements. The IR35 risk is higher because HMRC specifically targets PSC structures.</p>
 
@@ -60,7 +60,7 @@ faqs:
 
 <h2>Locum VAT: When Must You Register?</h2>
 
-<p>A locum solicitor must register for VAT if their taxable turnover exceeds the VAT threshold, which is £90,000 for 2025/26. This applies to the total fees you charge for your legal services, whether you are a sole trader or a limited company. If you work through a limited company, the company's turnover is the relevant figure, not your personal income.</p>
+<p>A locum solicitor must register for VAT if their taxable turnover exceeds the VAT threshold, which is £90,000 for 2026/27. This applies to the total fees you charge for your legal services, whether you are a sole trader or a limited company. If you work through a limited company, the company's turnover is the relevant figure, not your personal income.</p>
 
 <p>If you are a sole trader locum solicitor, your VAT registration threshold is based on your total fee income from all clients in a rolling 12-month period. Once you exceed £90,000, you must register within 30 days. You then charge 20% VAT on your invoices, which you must account for to HMRC via VAT returns.</p>
 

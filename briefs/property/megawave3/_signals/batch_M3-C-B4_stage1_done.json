@@ -1,0 +1,17 @@
+{
+  "batch_id": "M3-C-B4",
+  "agent_id": "MW3-Stage1-C",
+  "completed_at": "2026-05-27T00:00:00Z",
+  "commit_shas": [
+    "de997cc20d676e3fec43cd25499726b6a753c2c9",
+    "b43a3cc10bdea725f6a0e0c8fd52c0802d489050"
+  ],
+  "slugs_done": [
+    "cis-templates",
+    "commonhold-and-leasehold-reform-bill"
+  ],
+  "flags_raised": [
+    "F-103: HOUSE_POSITION_EXTENSION proposing §31.B Commonhold White Paper 2025 + forthcoming Bill live pipeline floor"
+  ],
+  "notes": "Both seeds anchored to verbatim-verified statutes (legislation.gov.uk WebFetch 2026-05-27): SI 2005/2045 reg 4(1)-(7) + reg 4(8) PDS contents (cis-templates); FA 2004 s.70 returns hook (cis-templates); CLRA 2002 Part 1 + Part 2 structure with post-LFRA-2024 + post-BSA-2022 amendments (commonhold-and-leasehold-reform-bill); Commonhold White Paper 3 March 2025 (commonhold-and-leasehold-reform-bill). C19 routed to property-types-and-specialist-tax (consistent with C18 sibling); C20 routed to property-types-and-specialist-tax (cluster-label widening flagged for manager). No HP locks needed for C19 (§33 fully pre-locked MW2 Stage 1b); §31.B HP-lock proposed for C20 via F-103."
+}

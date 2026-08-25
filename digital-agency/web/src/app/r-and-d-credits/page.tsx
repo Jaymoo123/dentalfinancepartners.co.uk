@@ -22,7 +22,7 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "R&D Tax Credits for UK Agencies | Specialist Claims",
   description:
-    "Specialist R&D tax credit claims for UK agencies. AI, SaaS, performance marketing, e-commerce builds, most agencies leave money on the table. Agency specialist claims, no-win-no-fee available.",
+    "Specialist R&D tax credit claims for UK agencies. AI, SaaS, performance marketing and e-commerce builds. No-win-no-fee available.",
   alternates: { canonical: `${siteConfig.url}/r-and-d-credits` },
   openGraph: {
     title: "R&D Tax Credits for UK Agencies",

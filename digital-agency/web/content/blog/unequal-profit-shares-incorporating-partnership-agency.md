@@ -50,7 +50,7 @@ keyTakeaways:
 
 <p>Two partners, each entitled to 50% of the partnership profits. They decide to incorporate. The partnership transfers its trade, assets, and goodwill to a new limited company. In return, the company issues shares to the partners, 50% each.</p>
 
-<p>Under UK tax law, this transfer is treated as a disposal of the partnership assets by the partners. But because the consideration is shares, not cash, the gain is automatically deferred under <strong>Incorporation Relief</strong> (TCGA 1992, s162). No tax is payable at the point of incorporation. The partners simply inherit a lower base cost in their new shares, and the gain is deferred until they sell those shares later.</p>
+<p>Under UK tax law, this transfer is treated as a disposal of the partnership assets by the partners. But because the consideration is shares, not cash, the gain can be deferred under <strong>Incorporation Relief</strong> (TCGA 1992, s162). For transfers on or after 6 April 2026 that deferral is not automatic: Finance Act 2026 s.39 made the relief a claim, due by the first anniversary of the 31 January following the tax year of the transfer (so a 2026/27 incorporation must be claimed by 31 January 2029). Claim it and no tax is payable at the point of incorporation. The partners simply inherit a lower base cost in their new shares, and the gain is deferred until they sell those shares later.</p>
 
 <p>That works perfectly when the share split matches the profit share. The tax deferral applies to each partner's share of the gain, and the shares they receive match their economic interest in the business.</p>
 

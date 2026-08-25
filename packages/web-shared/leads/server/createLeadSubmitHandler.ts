@@ -18,9 +18,15 @@
  *   2. Server-side validation with field floors (values mirror
  *      Property/web/src/lib/leads/field-floors.ts; inlined here deliberately so
  *      this module never imports lead-nurture/* into non-Property bundles).
- *   3. Dedupe against a recent same-source+email lead with adopt-and-merge
- *      semantics (blanks never overwrite good values; messages append with a
- *      separator, capped at 4000 chars trimming from the front).
+ *   3. Dedupe against a recent same-source lead with adopt-and-merge semantics
+ *      (blanks never overwrite good values; messages append with a separator,
+ *      capped at 4000 chars trimming from the front; extras shallow-merge with
+ *      incoming keys winning). Exact source+email eq fast path first; on a miss,
+ *      a second pass over recent same-source rows matches on the plus-alias
+ *      normalised email OR the last-10-digits phone key, so `x+tag@` then `x@`
+ *      (or same phone, different email) merge into one row instead of two.
+ *      Merged responses carry `merged: true` so site route tails can skip
+ *      re-enrolment.
  * Property's steps 4-6 (Twilio/email verification, nurture enrolment, booking
  * token) are deliberately NOT ported: no partner qualification bar exists for
  * these sites and nurture is out of scope. The estate-level pg_net triggers on
@@ -96,6 +102,28 @@ function secretMatches(candidate: string, expected: string): boolean {
   const b = Buffer.from(expected);
   if (a.length !== b.length) return false;
   return timingSafeEqual(a, b);
+}
+
+/**
+ * Canonical email for dedupe matching: trimmed, lowercased, plus-addressing
+ * stripped from the local part (`kendlc2026+ma@gmail.com` -> `kendlc2026@gmail.com`).
+ * Dots are deliberately NOT stripped (Gmail-only semantics; too aggressive).
+ */
+export function normalizeEmailForDedupe(email: string): string {
+  const e = email.trim().toLowerCase();
+  const at = e.indexOf("@");
+  if (at === -1) return e;
+  const plus = e.slice(0, at).indexOf("+");
+  return plus === -1 ? e : e.slice(0, plus) + e.slice(at);
+}
+
+/**
+ * Canonical phone for dedupe matching: last 10 digits (drops country code /
+ * leading zero differences), or null when there are fewer than 10 digits.
+ */
+export function phoneDedupeKey(phone: string): string | null {
+  const d = (phone.match(/\d/g) || []).join("");
+  return d.length < 10 ? null : d.slice(-10);
 }
 
 /** Merge a prior stored message with a resubmitted one (Property semantics). */
@@ -264,30 +292,56 @@ export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
       );
     }
 
-    // 3. Dedupe (best-effort) against a recent same-source+email lead.
+    // 3. Dedupe (best-effort): exact source+email eq fast path, then a second
+    //    pass over recent same-source rows on normalised email / phone key.
     let leadId: string | null = null;
-    let existing: { id: string; full_name: string; phone: string; message: string } | null = null;
+    type DedupeCandidate = {
+      id: string;
+      full_name: string;
+      phone: string;
+      message: string;
+      email?: string;
+      extras?: Record<string, unknown> | null;
+    };
+    let existing: DedupeCandidate | null = null;
     try {
       const since = new Date(Date.now() - dedupeWindowMs).toISOString();
       const qs =
-        `select=id,full_name,phone,message` +
+        `select=id,full_name,phone,message,extras` +
         `&source=eq.${encodeURIComponent(source)}` +
         `&email=eq.${encodeURIComponent(email)}` +
         `&created_at=gte.${encodeURIComponent(since)}` +
         `&order=created_at.desc&limit=1`;
       const res = await postgrest(env.supabaseUrl, env.serviceKey, `leads?${qs}`, { method: "GET" });
       if (res.ok) {
-        const rows = (await res.json()) as Array<{
-          id: string;
-          full_name: string;
-          phone: string;
-          message: string;
-        }>;
-        if (rows.length) {
-          existing = rows[0];
-          leadId = rows[0].id;
+        const rows = (await res.json()) as DedupeCandidate[];
+        if (rows.length) existing = rows[0];
+      }
+      if (!existing) {
+        // Second pass: same person on a plus-alias email or a phone-only match
+        // (real incident 2026-08-19: wizard with `x+ma@` then form with `x@`
+        // four minutes later created two rows and two nurture sequences).
+        const candQs =
+          `select=id,full_name,phone,message,email,extras` +
+          `&source=eq.${encodeURIComponent(source)}` +
+          `&created_at=gte.${encodeURIComponent(since)}` +
+          `&order=created_at.desc&limit=50`;
+        const candRes = await postgrest(env.supabaseUrl, env.serviceKey, `leads?${candQs}`, {
+          method: "GET",
+        });
+        if (candRes.ok) {
+          const rows = (await candRes.json()) as DedupeCandidate[];
+          const emailKey = normalizeEmailForDedupe(email);
+          const phoneKey = phoneDedupeKey(phone);
+          existing =
+            rows.find(
+              (r) =>
+                normalizeEmailForDedupe(r.email ?? "") === emailKey ||
+                (phoneKey !== null && phoneDedupeKey(r.phone ?? "") === phoneKey),
+            ) ?? null;
         }
       }
+      leadId = existing?.id ?? null;
     } catch (e) {
       console.error("[leads/submit] dedupe lookup failed (non-fatal)", e);
     }
@@ -302,6 +356,13 @@ export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
         // Never overwrite a good stored value with a blank.
         if (full_name) update.full_name = full_name;
         if (phone) update.phone = phone;
+        // Merge extras Property-style so e.g. wizard answers on the prior row
+        // survive a plain-form resubmission (and vice versa). Incoming wins.
+        const priorExtras =
+          existing.extras && typeof existing.extras === "object" ? existing.extras : null;
+        if (priorExtras || baseRow.extras) {
+          update.extras = { ...(priorExtras ?? {}), ...(baseRow.extras ?? {}) };
+        }
         const res = await postgrest(
           env.supabaseUrl,
           env.serviceKey,
@@ -312,7 +373,9 @@ export function createLeadSubmitHandler(opts: LeadSubmitOptions) {
       } catch (e) {
         console.error("[leads/submit] dedupe update failed (non-fatal)", e);
       }
-      return NextResponse.json({ success: true, leadId });
+      // merged:true lets site route tails (nurture enrolment etc.) skip
+      // re-enrolling an inbox that is already in a sequence.
+      return NextResponse.json({ success: true, leadId, merged: true });
     }
 
     try {

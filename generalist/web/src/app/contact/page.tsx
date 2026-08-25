@@ -3,6 +3,9 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { JsonLd, referencedOrganization } from "@/lib/schema";
+import { niche } from "@/config/niche-loader";
+import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: `Contact`,
@@ -58,6 +61,23 @@ export default function ContactPage() {
                 back with a short note on what the engagement would look like and what it would
                 cost. No pitch, no follow-up sequence.
               </p>
+
+              {isPackagesMode(niche) ? (
+                <p className="mt-6 max-w-prose text-base leading-relaxed text-neutral-600">
+                  Already know what you need? Our fixed monthly plans start at £24 a
+                  month and you can{" "}
+                  <Link
+                    href="/pricing"
+                    className="font-medium text-orange-600 hover:text-orange-700"
+                    data-cta="contact_pricing_link"
+                    data-cta-placement="contact"
+                    data-cta-variant={niche.cta.variant}
+                  >
+                    sign up online in a couple of minutes
+                  </Link>
+                  .
+                </p>
+              ) : null}
 
               <div className="mt-12">
                 <p className="font-mono text-xs uppercase tracking-widest text-neutral-500 mb-4">

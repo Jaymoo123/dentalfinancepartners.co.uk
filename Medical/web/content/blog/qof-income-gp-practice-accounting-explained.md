@@ -11,6 +11,12 @@ metaDescription: "How QOF pays a GP practice: points, aspiration and achievement
 altText: "GP partner reviewing QOF achievement and aspiration payment figures in practice accounts"
 image: ""
 h1: "QOF Income Explained: How the Quality and Outcomes Framework Pays Your Practice"
+keyTakeaways:
+- "QOF is a voluntary annual quality-and-incentive scheme that sits alongside the core Global Sum rather than inside it, and a practice chooses whether to take part each year."
+- "QOF cash arrives in two parts across two financial years: monthly aspiration payments in advance during the year, then a year-end achievement payment reconciling the balance once actual achievement is measured."
+- "The national base value of a QOF point is uplifted annually and then adjusted at practice level by two factors, list size relative to the national average list and the adjusted disease prevalence factor."
+- "QOF income must be recognised on an accruals basis (the expected achievement earned in the period, carried as a debtor with aspiration offset), not on the cash that happens to arrive, which is why QOF in the accounts never matches QOF in the bank."
+- "QOF is ordinary practice trading income taxed on each partner's profit share with Class 4 National Insurance through the SA800 and SA104, and it is NHS-pensionable for a Type 1 partner but not when routed through a limited company."
 summary: "QOF confuses partners because the cash arrives in two parts and across two financial years: monthly aspiration payments through the year, then an achievement reconciliation after year-end. This guide explains the points-based mechanics, then does the bit competitors skip: how QOF income should be recognised in the practice accounts on an accruals basis, and how it is taxed as ordinary practice trading profit. The aim is a partner who knows why the QOF cash and the QOF profit never match in any one year."
 schema: ""
 faqs:

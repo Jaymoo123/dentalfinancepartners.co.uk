@@ -1,12 +1,14 @@
 /**
  * Unit tests for lead-message helpers and the consent text guard.
  *
- * The consent guard asserts the partner firm name is present and that the
- * string "DJH" (an internal firm identifier that must never appear in
- * user-facing copy) is absent.
+ * The consent guard pins the estate-standard sharing notice verbatim (reverted
+ * 2026-08-24 to the pre-2026-08-15 wording; see the test file for why), and
+ * asserts that the string "DJH" (an internal firm identifier that must never
+ * appear in user-facing copy) is absent.
  */
 import { describe, it, expect } from "vitest";
 import { calculatorMessagePrefix, exitIntentMessagePrefix } from "@/lib/lead-message";
+import { siteConfig } from "@/config/site";
 import nicheConfig from "../../../niche.config.json";
 
 // ---------------------------------------------------------------------------
@@ -49,22 +51,25 @@ describe("exitIntentMessagePrefix", () => {
 // text derivation from generalist/web/src/config/site.ts.
 // ---------------------------------------------------------------------------
 describe("lead consent text", () => {
-  const partner = nicheConfig.partner;
   const displayName = nicheConfig.display_name;
-  const partnerName = partner?.name ?? "";
 
-  // Replicates the partner-path derivation in site.ts.
-  const consentText = partner
-    ? `I agree to my details being shared by ${displayName} with our specialist partner firm ${partnerName}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-    : `I agree to ${displayName} using my details to respond to my enquiry and provide the advice I have requested.`;
+  // The real constant, not a copy of it. A replica here passed no matter what the
+  // site actually rendered, which is the opposite of what this guard is for.
+  const consentText = siteConfig.leadConsentText;
 
-  it("partner firm is Reflex Accounting", () => {
-    expect(partner).not.toBeNull();
-    expect(partner?.name).toBe("Reflex Accounting");
+  it("partner config carries the network category label, never a named firm", () => {
+    expect(nicheConfig.partner?.name).toBe("regulated firms in our specialist partner network");
   });
 
-  it("consent text includes the partner firm name (Reflex)", () => {
-    expect(consentText).toContain("Reflex");
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts).
+  const EXPECTED_CONSENT =
+    "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.";
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", () => {
+    expect(consentText).toBe(EXPECTED_CONSENT);
   });
 
   it("consent text does NOT contain the string DJH", () => {

@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Glasgow | Scottish Medical Tax Specialists"
-metaDescription: "GP accountant in Glasgow for partners, salaried GPs, locums and consultants. Scottish income tax bands, NHS pension annual allowance and GP partnership accounts."
+metaDescription: "GP accountant in Glasgow for partners, salaried GPs, locums and consultants. Scottish tax bands, NHS pension annual allowance and GP partnership accounts."
 altText: "Glasgow city skyline with medical professionals discussing financial planning"
 image: ""
 h1: "GP Accountant in Glasgow: Specialist Medical Accounting for Scottish Doctors"
+keyTakeaways:
+- "For 2026/27 the Scottish higher rate of 42% starts at £43,663, well below the £50,270 point in England, so a Glasgow GP's partnership profits move into the higher band sooner."
+- "NHS GP goodwill cannot be sold: the prohibition has applied since 1 April 2004 and now sits in the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019."
+- "A limited company cannot hold an NHS GMS or PMS contract and company income and dividends are not NHS-pensionable, so incorporation only ever applies to private or non-NHS work."
+- "Business Asset Disposal Relief on a qualifying private-practice disposal is now 18% on or after 6 April 2026 (up from 14% for 2025/26 and 10% before), subject to the £1m lifetime limit."
+- "Making Tax Digital for Income Tax starts on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, catching most full-time locums and unincorporated private GPs."
 summary: "Looking for a specialist GP accountant in Glasgow? Get medical accounting, Scottish income tax planning and NHS pension advice built around GP partners, salaried GPs, locums and consultants."
 schema: ""
 faqs:

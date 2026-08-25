@@ -85,9 +85,9 @@ imageCredit:
 
 <h2>Writing-Down Allowances: When You Exceed the AIA</h2>
 
-<p>If your agency spends more than £1 million on plant and machinery in a single year, the excess goes into a pool and attracts writing-down allowances. For capital expenditure over the annual investment allowance, capital allowances are claimed as writing-down allowances, allowing you to claim 18% for the cost of most plant and machinery each year or 6% on special rate pool <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>If your agency spends more than £1 million on plant and machinery in a single year, the excess goes into a pool and attracts writing-down allowances. For capital expenditure over the annual investment allowance, capital allowances are claimed as writing-down allowances, allowing you to claim 14% for the cost of most plant and machinery each year or 6% on special rate pool <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax.</p>
 
-<p>For a van, the rate is 18% per year on a reducing balance basis. So if you spend £1.2 million on assets, you claim £1 million under AIA and the remaining £200,000 attracts an 18% writing-down allowance of £36,000 in year one. The balance of £164,000 carries forward to the next year.</p>
+<p>For a van, the rate is 14% per year on a reducing balance basis. So if you spend £1.2 million on assets, you claim £1 million under AIA and the remaining £200,000 attracts a 14% writing-down allowance of £28,000 in year one. The balance of £172,000 carries forward to the next year.</p>
 
 <p>For most agency founders, this scenario is unlikely. A single van purchase of £30,000 to £50,000 fits comfortably within the AIA or full expensing limits.</p>
 

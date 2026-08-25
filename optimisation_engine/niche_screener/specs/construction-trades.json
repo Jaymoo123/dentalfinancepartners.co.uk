@@ -1,0 +1,28 @@
+{
+  "name": "construction-trades",
+  "vertical": "trade and CIS tax",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "bookkeeper"
+  ],
+  "pain_seeds": [
+    "cis tax refund",
+    "self employed builder tax",
+    "cis deduction statement",
+    "tradesman allowable expenses",
+    "van capital allowances",
+    "subcontractor tax return"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "construction-cis GSC early signals per docs/PORTFOLIO_LEAD_AUDIT_2026-07-10.md (expected mid-to-upper per prereg)"
+  ],
+  "audience_terms": [
+    "builders",
+    "tradesmen",
+    "subcontractors"
+  ]
+}

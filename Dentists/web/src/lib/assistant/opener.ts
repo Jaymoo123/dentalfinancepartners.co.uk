@@ -12,7 +12,7 @@
  * - Never claim the firm is chartered, qualified or MLR-supervised.
  * - Generic-helpful: references only what the visitor self-evidently did.
  * - No "we noticed you're struggling" surveillance framing.
- * - No "DJH", no "Reflex" in any copy here.
+ * - No "DJH", no named partner firm in any copy here.
  *
  * OPENER_LLM_ENRICHMENT_ENABLED = false (deterministic Phase-0 only).
  */

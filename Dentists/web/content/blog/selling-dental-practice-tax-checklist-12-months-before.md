@@ -6,7 +6,7 @@ date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
-metaTitle: "Selling a Dental Practice: Tax Planning Checklist 12 Months Out"
+metaTitle: "Selling a Dental Practice: 12-Month Tax Planning Checklist"
 metaDescription: "Selling a dental practice without a tax plan can cost you six figures. Here is the 12-month pre-sale checklist every principal needs to follow."
 altText: "Dental practice principal reviewing financial documents with an accountant in a UK dental surgery setting"
 image: ""
@@ -15,18 +15,18 @@ summary: "Selling a dental practice is a capital event, not a trading one. Witho
 schema: ""
 faqs:
   - question: "What is the best tax structure for selling a dental practice?"
-    answer: "The best structure depends on your circumstances. A share sale (if you trade through a limited company) usually gives a single layer of CGT with BADR at 14% (2025/26). An asset sale by a sole trader or partnership also qualifies for BADR on goodwill. The buyer's preference matters too. Many buyers want to buy assets (not shares) to get a step-up in base cost for capital allowances. Your accountant should model both scenarios before you negotiate."
+    answer: "The best structure depends on your circumstances. A share sale (if you trade through a limited company) usually gives a single layer of CGT with BADR at 18% (2026/27). An asset sale by a sole trader or partnership also qualifies for BADR on goodwill. The buyer's preference matters too. Many buyers want to buy assets (not shares) to get a step-up in base cost for capital allowances. Your accountant should model both scenarios before you negotiate."
   - question: "Can I claim BADR if I sell my practice within two years of incorporation?"
     answer: "Possibly, but it is complicated. If you incorporated the practice under Section 162 relief, the two-year holding period for BADR on the shares runs from the date of incorporation, not from when you started the original business. If you sell the shares within two years of incorporation, you do not qualify for BADR on the share gain. You may still qualify for BADR on the original goodwill if you sold the business as a going concern, but the rules are strict. Take advice before incorporating if a sale is on the horizon."
   - question: "How does the NHS Pension affect the tax on a practice sale?"
-    answer: "The sale itself does not directly affect your NHS Pension, but the capital gain can push your total income above the tapered annual allowance threshold (adjusted income over £260,000). If that happens, your annual allowance drops to as low as £10,000, and you may face an annual allowance tax charge on any pension growth above that. Also, selling mid-year reduces your pensionable earnings for that year, which may lower your final pension accrual. Timing the sale to a new tax year or deferring drawings can help."
+    answer: "The sale itself does not directly affect your NHS Pension, and the capital gain is not income, so it does not count towards the tapered annual allowance thresholds. But a sale year often brings higher income (final drawings, a handover role), and if adjusted income exceeds £260,000 your annual allowance drops to as low as £10,000, with a tax charge on any pension growth above that. Also, selling mid-year reduces your pensionable earnings for that year, which may lower your final pension accrual. Timing the sale to a new tax year or deferring drawings can help."
   - question: "What happens if I sell my practice and the buyer wants to buy the shares, not the assets?"
     answer: "A share sale means the buyer acquires the company itself, including all its assets, liabilities, and tax history. For you as the seller, a share sale is usually more tax-efficient because you get CGT treatment with BADR on the entire gain. For the buyer, a share sale means they inherit the company's capital allowance pool and any historic tax risks. Many buyers prefer an asset purchase to avoid inheriting unknown liabilities. Your negotiation should account for this. Your accountant can model the net proceeds under both scenarios."
 ---
 
 <h2>Why Selling a Dental Practice Is a Capital Event, Not a Trading One</h2>
 
-<p>When you sell a dental practice, the profit is a capital gain, not trading income. That means it is subject to Capital Gains Tax (CGT), not income tax or National Insurance. The difference matters. A principal selling a practice worth £800,000 with a base cost of £200,000 faces a gain of £600,000. At the higher rate of CGT (24% for 2025/26), the tax bill could be £144,000. With Business Asset Disposal Relief (BADR) at 14%, that drops to £84,000. The saving of £60,000 depends on planning done well before the sale.</p>
+<p>When you sell a dental practice, the profit is a capital gain, not trading income. That means it is subject to Capital Gains Tax (CGT), not income tax or National Insurance. The difference matters. A principal selling a practice worth £800,000 with a base cost of £200,000 faces a gain of £600,000. At the higher rate of CGT (24% for 2026/27), the tax bill could be £144,000. With Business Asset Disposal Relief (BADR) at 18%, that drops to £108,000. The saving of £36,000 depends on planning done well before the sale.</p>
 
 <p>This article is a practical 12-month pre-sale checklist for UK dental practice principals. It covers the tax reliefs, timing decisions, and structural steps you need to take before you put the practice on the market. Every practice is different, so treat this as a starting point, not a substitute for professional advice from a dental-specialist accountant.</p>
 
@@ -56,7 +56,7 @@ faqs:
 
 <h2>Step 3: Maximise Business Asset Disposal Relief (BADR)</h2>
 
-<p>BADR is the most valuable relief for a dental practice sale. It taxes qualifying gains at 14% in 2025/26, rising to 18% from 6 April 2026. The lifetime limit is £1 million of gains. For a practice sale, that £1 million limit typically covers the goodwill element.</p>
+<p>BADR is the most valuable relief for a dental practice sale. It taxes qualifying gains at 18% for 2026/27, following the rise from 14% on 6 April 2026. The lifetime limit is £1 million of gains. For a practice sale, that £1 million limit typically covers the goodwill element.</p>
 
 <p>To qualify for BADR, you must meet these conditions:</p>
 <ul>
@@ -75,7 +75,7 @@ faqs:
 
 <p>First, your final pensionable earnings in the 2015 CARE scheme are used to calculate your annual pension accrual. If you sell mid-year, your pensionable pay for that year may be lower than usual, reducing the pension you build up. You can sometimes mitigate this by deferring the sale to a new tax year or by ensuring your NHS contract continues until the sale completes.</p>
 
-<p>Second, if you are over 55 and considering taking your NHS pension benefits, the timing of the sale matters. Taking pension benefits before the sale can affect your annual allowance and may interact with the tapered annual allowance if your total income (including the capital gain) pushes you over the threshold. The tapered annual allowance starts at £10,000 when adjusted income exceeds £260,000. A large capital gain can easily trigger that taper.</p>
+<p>Second, if you are over 55 and considering taking your NHS pension benefits, the timing of the sale matters. Taking pension benefits before the sale can affect your annual allowance and may interact with the tapered annual allowance if your income in the sale year pushes you over the threshold. The annual allowance tapers down to as little as £10,000 once adjusted income exceeds £260,000. The capital gain itself is not income for the taper, but the higher drawings and consultancy income that often accompany a sale year can trigger it.</p>
 
 <p>Speak to a <a href="/services/dental-accountants">dental-specialist accountant</a> who understands the NHS Pension Scheme rules. The NHS Business Services Authority (NHSBSA) can also provide a pension forecast to help with timing decisions.</p>
 
@@ -97,15 +97,15 @@ faqs:
 
 <h2>Step 6: Consider the Timing of the Sale</h2>
 
-<p>The tax year runs 6 April to 5 April. Selling in one tax year versus the next can affect your overall tax position. For example, if you sell in March 2026, the gain is taxed in 2025/26 at 14% (BADR) or 24% (standard higher rate). If you sell in May 2026, the gain is taxed in 2026/27 at 18% (BADR) or 24% (standard higher rate). The BADR rate increase from 14% to 18% from 6 April 2026 means selling before that date saves 4% on qualifying gains.</p>
+<p>The tax year runs 6 April to 5 April. Selling in one tax year versus the next can affect your overall tax position. The BADR rate rose from 14% to 18% on 6 April 2026, so if you completed before that date your qualifying gain was taxed at the old 14% rate. For sales completing in 2026/27, qualifying gains are taxed at 18% (BADR) or 24% (standard higher rate), so the timing question is now about which tax year the gain and your other income fall into, not about beating a rate change.</p>
 
-<p>Also consider your personal income in the year of sale. If you have high practice profits plus a large capital gain, your total income may exceed £125,140, removing your personal allowance and potentially triggering the tapered annual allowance on your pension. You can sometimes manage this by defering some practice drawings or by selling in a year when your practice income is lower.</p>
+<p>Also consider your personal income in the year of sale. If you have high practice profits in that year, your income may exceed £125,140, removing your personal allowance and potentially triggering the tapered annual allowance on your pension (the capital gain itself does not count as income for these thresholds, but the drawings and handover income that come with a sale year do). You can sometimes manage this by deferring some practice drawings or by selling in a year when your practice income is lower.</p>
 
 <p>A <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> can give you a rough estimate of the sale price, but the tax modelling requires a full financial projection. Do not rely on a single year's figures.</p>
 
 <h2>Step 7: Review Your Will and Estate Planning</h2>
 
-<p>If you die before the sale completes, the practice passes to your estate. The inheritance tax (IHT) position depends on whether the practice qualifies for Business Property Relief (BPR). A trading dental practice typically qualifies for 100% BPR, meaning it is exempt from IHT. But if you have already agreed a sale and the contract is unconditional, HMRC may argue that the asset is no longer a trading business but a right to proceeds, which does not qualify for BPR.</p>
+<p>If you die before the sale completes, the practice passes to your estate. The inheritance tax (IHT) position depends on whether the practice qualifies for Business Property Relief (BPR). A trading dental practice typically qualifies for BPR, but since 6 April 2026 the 100% rate applies only to the first £2.5 million of combined qualifying business and agricultural property per person, with relief at 50% above that cap. But if you have already agreed a sale and the contract is unconditional, HMRC may argue that the asset is no longer a trading business but a right to proceeds, which does not qualify for BPR.</p>
 
 <p>Review your will and consider a lasting power of attorney. If you become incapacitated during the sale process, your attorney needs authority to complete the transaction. This is a low-probability, high-impact risk that is easy to fix with a simple document.</p>
 

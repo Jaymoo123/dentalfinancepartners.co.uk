@@ -21,5 +21,6 @@ given agency, see https://${niche.domain}/contact.
   sections: [
     { dir: "fundamentals", prefix: "fundamentals", title: "PILLAR GUIDES" },
     { dir: "blog", prefix: "blog", title: "BLOG POSTS" },
+    { dir: "research", prefix: "research", title: "RESEARCH & DATA" },
   ],
 });

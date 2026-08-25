@@ -764,12 +764,14 @@ def _detect_opening_type(zone: Tag) -> str:
 # On-page SEO
 # ---------------------------------------------------------------------------
 
-def _onpage_seo(soup: BeautifulSoup, zone: Tag, query: str | None) -> dict:
+def _onpage_seo(soup: BeautifulSoup, zone: Tag, query: str | None, pre_strip_h1_text: str = "") -> dict:
     title_tag = _text(soup.find("title")) if soup.find("title") else ""
     meta_el = soup.find("meta", attrs={"name": "description"})
     meta_desc = (meta_el.get("content") or "") if meta_el else ""
     h1_el = zone.find("h1") or soup.find("h1")
-    h1_text = _text(h1_el) if h1_el else ""
+    # Fall back to the pre-strip H1 text (many sites wrap <h1> in <header>,
+    # which _strip_noise() decomposes before this function ever runs).
+    h1_text = _text(h1_el) if h1_el else pre_strip_h1_text
 
     # First paragraph
     first_para = ""
@@ -878,7 +880,11 @@ def parse_page(
         return result
 
     soup = BeautifulSoup(html, "lxml")
-    _pre_strip_h1 = soup.find("h1")  # ponytail: capture before _strip_noise() removes header elements
+    _pre_strip_h1_el = soup.find("h1")
+    # ponytail: extract the TEXT now, not the Tag — bs4's decompose() clears a
+    # decomposed subtree's __dict__/contents in place, so a Tag reference taken
+    # here would go blank once _strip_noise() decomposes an enclosing <header>.
+    _pre_strip_h1_text = _text(_pre_strip_h1_el) if _pre_strip_h1_el else ""
     _pre_strip_schema = _extract_schema(soup)  # ponytail: capture before _strip_noise() removes <script> tags
     _strip_noise(soup)
     zone = _find_main_zone(soup)
@@ -891,9 +897,7 @@ def parse_page(
         result["js_rendered"] = True
 
     # On-page SEO + metadata
-    seo = _onpage_seo(soup, zone, primary_query)
-    if not seo.get("h1_text") and _pre_strip_h1:
-        seo["h1_text"] = _pre_strip_h1.get_text(" ", strip=True)
+    seo = _onpage_seo(soup, zone, primary_query, _pre_strip_h1_text)
     result.update(seo)
 
     # Sections

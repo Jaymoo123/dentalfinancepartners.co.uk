@@ -1,4 +1,5 @@
 import nicheConfigJson from "../../../niche.config.json";
+import type { CtaVariantConfig } from "@accounting-network/web-shared/lib/niche-config";
 
 export interface NicheConfig {
   niche_id: string;
@@ -30,7 +31,7 @@ export interface NicheConfig {
     email: string;
     phone: string;
   };
-  navigation: Array<{ label: string; href: string }>;
+  navigation: Array<{ label: string; href: string; hide_in_packages?: boolean }>;
   footer_links: Array<{ label: string; href: string }>;
   locations: Array<{ slug: string; title: string }>;
   content_strategy: {
@@ -59,6 +60,9 @@ export interface NicheConfig {
     };
   };
   cta: {
+    /** Active CTA model; see packages/web-shared/lib/niche-config.ts. */
+    variant?: "packages" | "leadgen";
+    variants?: { packages: CtaVariantConfig; leadgen: CtaVariantConfig };
     sticky_primary: string;
     sticky_secondary: string;
     sticky_button: string;

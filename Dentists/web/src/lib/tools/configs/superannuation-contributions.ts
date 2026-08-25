@@ -15,7 +15,7 @@ export const superannuationContributionsTool: GenericTool = {
   oneLiner:
     "Superannuable earnings from NHS fee income, member contribution tier rate, employer cost, tax relief saving, and projected CARE pension growth.",
   embedHeight: 620,
-  metaTitle: "NHS Dentist Superannuation Calculator UK 2026 | Dental Finance Partners",
+  metaTitle: "NHS Dentist Superannuation Calculator UK 2026",
   metaDescription:
     "Calculate your NHS superannuable earnings as a dental associate or principal. Member contribution tier, employer 23.7%, net-of-tax cost, and 1/54th CARE pension accrual. England and Wales rates.",
   intro:

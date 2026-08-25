@@ -24,7 +24,7 @@ faqs:
 - question: What is the difference between a fixed retainer and a project fee for IR35 purposes?
   answer: A fixed retainer pays the same amount each month regardless of workload, which looks like a salary. A project fee pays for a specific outcome, and the contractor bears the risk if the project takes longer than expected. Project fees generally support an outside-IR35 position because they introduce financial risk and focus on outcomes rather than time.
 - question: Do I need to issue an SDS for a contractor on a retainer?
-  answer: 'If your agency is medium or large (meeting two of: turnover over £10.2m, balance sheet over £5.1m, more than 50 employees), you must issue a Status Determination Statement before the contractor starts work. Smaller agencies do not have this legal requirement but are still responsible for getting the IR35 status right.'
+  answer: 'If your agency is medium or large (meeting two of: turnover over £15m, balance sheet over £7.5m, more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you must issue a Status Determination Statement before the contractor starts work. Smaller agencies do not have this legal requirement but are still responsible for getting the IR35 status right.'
 - question: What happens if HMRC decides my contractor retainer is inside IR35?
   answer: Your agency becomes liable for the contractor's unpaid income tax and National Insurance, plus interest and penalties. The contractor may also face a personal tax bill. In serious cases, HMRC can investigate multiple years. The total bill can easily exceed £50,000 for a single contractor engagement.
 authorSlug: james-whitfield
@@ -133,7 +133,7 @@ keyTakeaways:
 
 <h2>The Status Determination Statement Requirement</h2>
 
-<p>Since April 2021, medium and large agencies (those that meet two of three criteria: turnover over £10.2m, balance sheet over £5.1m, more than 50 employees) must issue a <strong>Status Determination Statement (SDS)</strong> to each contractor before work begins. The SDS must state whether the contractor is inside or outside IR35 and give the reasons for that determination.</p>
+<p>Since April 2021, medium and large agencies (those that meet two of three criteria: turnover over £15m, balance sheet over £7.5m, more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m) must issue a <strong>Status Determination Statement (SDS)</strong> to each contractor before work begins. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest. The SDS must state whether the contractor is inside or outside IR35 and give the reasons for that determination.</p>
 
 <p>If you are a smaller agency, you are not required to issue an SDS. But you are still responsible for getting the IR35 status right. If you get it wrong, HMRC can come after you for the unpaid tax.</p>
 

@@ -8,7 +8,7 @@ category: "Non-Resident Landlord Tax"
 metaTitle: "UK-Jersey, Guernsey, IoM DTAs: Property Investor Guide"
 metaDescription: "How the 2018 UK Crown Dependency treaties (Jersey, Guernsey, IoM) work for UK property: Art 13(4) indirect disposal + Sch A1 IHT look-through."
 altText: "Jersey coastline with rocky cliffs and sea, representing the Crown Dependency jurisdictions whose modern 2018 double taxation agreements with the UK ended the historic asset-protection shelter for UK property structures"
-image: "https://images.pexels.com/photos/29975346/pexels-photo-29975346.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/29975346/pexels-photo-29975346.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Bob Jenkin
   photographer_url: https://www.pexels.com/@bob-jenkin-2007649943

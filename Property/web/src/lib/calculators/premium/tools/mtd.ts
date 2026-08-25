@@ -72,11 +72,11 @@ function readinessRows() {
     },
     {
       label: "File a final declaration",
-      value: `The annual wrap-up that replaces the old Self Assessment return — confirms the year's figures and any other income, due ${FINAL_DECLARATION_DUE}.`,
+      value: `The annual wrap-up that replaces the old Self Assessment return: it confirms the year's figures and any other income, due ${FINAL_DECLARATION_DUE}.`,
     },
     {
       label: "If you use an accountant",
-      value: "They must connect via an Agent Services Account (ASA) and you re-authorise them specifically for MTD — old 64-8 authorisations do not carry across.",
+      value: "They must connect via an Agent Services Account (ASA) and you re-authorise them specifically for MTD; old 64-8 authorisations do not carry across.",
     },
   ];
 }
@@ -109,7 +109,7 @@ function compute(ctx: PremiumComputeContext) {
     res.status === "out-of-scope"
       ? [
           { label: "Qualifying income entered", value: gbp(res.qualifyingIncome) },
-          { label: "MTD ITSA applies?", value: "No — out of scope", strong: true },
+          { label: "MTD ITSA applies?", value: "No, out of scope", strong: true },
         ]
       : res.status === "mandated" && res.tier
         ? [
@@ -147,10 +147,10 @@ function compute(ctx: PremiumComputeContext) {
     verdict: {
       text:
         res.status === "out-of-scope"
-          ? "Out of scope — MTD ITSA does not apply"
+          ? "Out of scope: MTD ITSA does not apply"
           : res.status === "mandated" && res.tier
-            ? `Yes — MTD applies from ${res.tier.fromLabel}`
-            : "Not yet — below the threshold",
+            ? `Yes, MTD applies from ${res.tier.fromLabel}`
+            : "Not yet, below the threshold",
       positive,
     },
     // The readiness checklist is shown for individuals who are (or will be) in.
@@ -171,7 +171,7 @@ function compute(ctx: PremiumComputeContext) {
     note:
       scopeNote +
       checklistNote +
-      "Qualifying income is your GROSS rental income plus GROSS sole-trade turnover, before any expenses — not your profit. Employment (PAYE), pension, dividend and savings income do NOT count towards it. Joint owners test their SHARE of the rent, not the property's total. This checker is general guidance based on the published schedule, not advice for your specific situation.",
+      "Qualifying income is your GROSS rental income plus GROSS sole-trade turnover, before any expenses, not your profit. Employment (PAYE), pension, dividend and savings income do NOT count towards it. Joint owners test their SHARE of the rent, not the property's total. This checker is general guidance based on the published schedule, not advice for your specific situation.",
   };
 }
 

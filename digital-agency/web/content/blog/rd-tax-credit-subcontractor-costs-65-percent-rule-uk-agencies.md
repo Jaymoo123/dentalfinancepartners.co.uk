@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK'
-metaDescription: HMRC caps subcontractor R&D costs at 65% for agencies. Here's how the subcontractor 65 percent rule works, what qualifies, and how to maximise your claim.
+metaDescription: The 65% rule restricts each unconnected subcontractor R&D payment to 65%, not an aggregate cap. See how it works under the merged R&D scheme for agencies.
 altText: Agency founder reviewing R&D tax credit claim documents on a desk in a Manchester office
 image: /blog/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies.jpg
 imageCredit:
@@ -16,174 +16,188 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821463/
   source: Pexels
 h1: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies'
-summary: HMRC limits the subcontractor costs you can include in an R&D tax credit claim to 65% of the total qualifying expenditure. This rule catches many agency founders off guard. Here is exactly how it works, what counts as a subcontractor, and how to structure your projects to avoid losing thousands.
-schema: ''
+summary: The 65% rule restricts each payment you make to an unconnected subcontractor for R&D to 65% of its value. It is not an aggregate cap and there is no way to raise it. Here is exactly how it works under the merged R&D scheme, how connected and overseas contractors are treated, and how it feeds into your claim.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"]},{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk"}},{"@type":"Article","headline":"R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies","description":"The 65% rule restricts each unconnected subcontractor R&D payment to 65%, not an aggregate cap. See how it works under the merged R&D scheme for agencies.","url":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies","datePublished":"2026-05-16","dateModified":"2026-07-28","author":{"@type":"Person","name":"Agency Founder Finance Editorial Team","jobTitle":"Specialist agency accountant","knowsAbout":["UK agency taxation","IR35","Agency incorporation","Marketing agency finance","UAE tax for UK founders"],"worksFor":{"@type":"Organization","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk"}},"publisher":{"@type":"AccountingService","name":"Agency Founder Finance","url":"https://www.agencyfounderfinance.co.uk","areaServed":["United Kingdom","United Arab Emirates"],"knowsAbout":["Agency tax planning","Creative agency accounting","Digital agency finance","IR35 for contractors","Agency exit and acquisition","UAE corporate tax","R&D tax credits for digital agencies"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies"},"inLanguage":"en-GB","image":"https://www.agencyfounderfinance.co.uk/blog/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.agencyfounderfinance.co.uk"},{"@type":"ListItem","position":2,"name":"Tax and Compliance","item":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance"},{"@type":"ListItem","position":3,"name":"R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies","item":"https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the 65% rule for subcontractor R&D costs?","acceptedAnswer":{"@type":"Answer","text":"The 65% rule restricts the qualifying amount of each payment you make to an unconnected subcontractor for R&D to 65% of that payment. It is not an aggregate cap on your claim and it is not a proportion limit across your total spend. Each unconnected subcontractor payment is simply included at 65% of its value, and the remaining 35% never qualifies."}},{"@type":"Question","name":"Does the 65% restriction apply under the merged R&D scheme?","acceptedAnswer":{"@type":"Answer","text":"Yes. For accounting periods beginning on or after 1 April 2024 the merged R&D expenditure credit scheme carries the same 65% restriction on unconnected contractor and externally provided worker payments. The company that decides to undertake the R&D, the decision-maker, is usually the one entitled to claim."}},{"@type":"Question","name":"How are connected subcontractors treated?","acceptedAnswer":{"@type":"Answer","text":"If you pay a connected party to carry out R&D, the 65% restriction does not apply. Instead the qualifying amount is the lower of the payment you made and the connected party''s actual relevant cost of doing the work. There is no 65% profit mark-up rule."}},{"@type":"Question","name":"Do overseas subcontractors still qualify?","acceptedAnswer":{"@type":"Answer","text":"For accounting periods beginning on or after 1 April 2024, contractor and externally provided worker payments generally only qualify where the work is carried out in the UK, or the worker''s earnings are subject to UK PAYE and National Insurance. Narrow exceptions apply where the conditions cannot reasonably be replicated in the UK, so most offshore development spend is excluded."}}]}]}'
 faqs:
 - question: What is the 65% rule for subcontractor R&D costs?
-  answer: The 65% rule applies to SME R&D tax credit claims. It says your qualifying subcontractor costs cannot exceed 65% of your total qualifying R&D expenditure for the period. If they do, HMRC restricts the qualifying amount to 65% of the total. The excess is not eligible for relief.
-- question: Does the 65% rule apply to all external workers?
-  answer: No. It applies to subcontractors, external individuals or companies you pay to carry out R&D work without your day-to-day supervision. Externally provided workers (EPWs) who work under your direction and control are not subject to the cap. Getting the classification right is critical.
-- question: Can I avoid the 65% cap by hiring contractors through an agency?
-  answer: It depends on the arrangement. If you use a recruitment agency to place a contractor who works under your supervision and control, that is likely an EPW arrangement and not subject to the cap. But if you hire a specialist agency to deliver a module of work independently, that is a subcontractor arrangement and the cap applies.
-- question: How do I calculate the 65% cap on my R&D claim?
-  answer: 'Add up all your qualifying R&D expenditure for the accounting period: staff costs, subcontractor costs, consumables, software, and EPW costs. Multiply that total by 65%. If your subcontractor costs exceed that figure, only the capped amount qualifies for relief. Your accountant should run this calculation as part of preparing the claim.'
+  answer: The 65% rule restricts the qualifying amount of each payment you make to an unconnected subcontractor for R&D to 65% of that payment. It is not an aggregate cap on your claim and it is not a proportion limit across your total spend. Each unconnected subcontractor payment is simply included at 65% of its value, and the remaining 35% never qualifies.
+- question: Does the 65% restriction apply under the merged R&D scheme?
+  answer: Yes. For accounting periods beginning on or after 1 April 2024 the merged R&D expenditure credit scheme carries the same 65% restriction on unconnected contractor and externally provided worker payments. The company that decides to undertake the R&D, the decision-maker, is usually the one entitled to claim.
+- question: How are connected subcontractors treated?
+  answer: If you pay a connected party (for example a company under common control) to carry out R&D, the 65% restriction does not apply. Instead the qualifying amount is the lower of the payment you made and the connected party's actual relevant cost of doing the work. There is no 65% profit mark-up rule.
+- question: Do overseas subcontractors still qualify?
+  answer: For accounting periods beginning on or after 1 April 2024, contractor and externally provided worker payments generally only qualify where the work is carried out in the UK, or the worker's earnings are subject to UK PAYE and National Insurance. Narrow exceptions apply where the conditions cannot reasonably be replicated in the UK, so most offshore development spend is excluded.
 authorSlug: james-whitfield
-updatedDate: '2026-05-17'
+updatedDate: '2026-07-28'
 keyTakeaways:
-- HMRC caps subcontractor costs at 65% of total qualifying R&D expenditure under the SME scheme, not a deduction limit.
-- If subcontractor costs exceed 65% of total qualifying R&D spend, only the amount up to the cap qualifies for relief.
-- Subcontractors are external parties not under your day-to-day supervision; misclassifying them is a common error.
-- Including more in-house staff costs or consumables can increase the 65% cap and allow higher subcontractor claims.
-- At 19% corporation tax and 186% enhanced deduction, losing £14,800 of subcontractor relief costs roughly £525 per project.
+- The 65% rule restricts each unconnected subcontractor R&D payment to 65% of its value. It is not an aggregate cap, so there is nothing to raise or offset.
+- The same 65% restriction applies to externally provided worker payments. Only your own employees' staff costs, plus consumables, software and data, qualify at 100%.
+- For connected subcontractors the qualifying amount is the lower of the payment and the subcontractor's actual cost. There is no 65% profit mark-up rule.
+- Under the merged R&D scheme (accounting periods beginning on or after 1 April 2024) the decision-maker claims a 20% taxable expenditure credit, worth about 15% net for main-rate payers and 16.2% for loss-makers.
+- Overseas contractor and EPW costs are largely excluded under the merged scheme unless the work genuinely has to be done outside the UK.
 ---
-<p>You ran a development project for a client. You subcontracted a specialist developer for six weeks. The work was genuinely innovative: building a new machine learning model to automate content tagging across video assets. You spent £42,000 on the subcontractor. You are preparing your R&D tax credit claim and expecting to claim relief on the full amount.</p>
+<p>You ran a development project for a client. You subcontracted a specialist developer for six weeks. The work was genuinely innovative: building a new machine learning model to automate content tagging across video assets. You spent £42,000 on the subcontractor. You are preparing your R&D tax credit claim and expecting to include the full amount.</p>
 
-<p>Then your accountant tells you HMRC caps subcontractor costs at 65% of your total qualifying R&D expenditure.</p>
+<p>Then your accountant tells you only 65% of that payment, £27,300, counts as qualifying R&D expenditure. The other £14,700 does not qualify at all.</p>
 
-<p>This is the subcontractor R&D 65 percent rule, and it catches more agency founders than almost any other R&D rule. It is not a deduction limit. It is a <strong>proportion</strong> limit. And it changes how you structure your projects if you want to maximise your claim.</p>
+<p>This is the subcontractor 65% restriction, and it trips up more agency founders than almost any other R&D rule. Not because the rule is complicated, but because it is widely described wrongly. You will see it called an aggregate cap, a proportion limit, or a ceiling you can raise by adding more in-house cost. It is none of those things. It is a flat haircut applied to each payment you make to an outside party for R&D.</p>
 
-<p>Here is exactly how it works, what qualifies, and what to do about it.</p>
+<p>Here is exactly how it works, how it feeds into a claim under the current merged scheme, and what it means for the way agencies resource their projects.</p>
 
-<h2>What Is the 65% Rule for Subcontractor Costs in R&D Claims?</h2>
+<h2>What the 65% Rule Actually Is</h2>
 
-<p>The 65% rule applies to companies claiming under the <strong>SME R&D tax relief scheme</strong>. It states that the total qualifying expenditure on <strong>subcontracted R&D</strong> (paid to external parties) cannot exceed 65% of the total qualifying R&D expenditure for the project.</p>
+<p>When your company pays a third party to carry out qualifying R&D on its behalf, you cannot include the whole payment in your claim. You include <strong>65% of each unconnected payment</strong>. The remaining 35% is disallowed. That is the rule, in full.</p>
 
-<p>Total qualifying expenditure includes:</p>
-
-<ul>
-<li>Staff costs (salaries, employer NI, pension contributions) for directly employed R&D staff</li>
-<li>Subcontractor costs (payments to external individuals or companies for R&D work)</li>
-<li>Consumables and software used directly in R&D</li>
-<li>Externally provided workers (EPWs), staff provided by an external agency but under your supervision</li>
-<li>Clinical trial costs (rarely relevant for agencies)</li>
-</ul>
-
-<p>If your subcontractor costs exceed 65% of that total, HMRC restricts the qualifying amount to 65%. The excess is simply not eligible for relief.</p>
-
-<p>This is not a penalty. It is a structural rule designed to prevent companies from routing most of their R&D through subcontractors to inflate claims. HMRC expects the company making the claim to be the <strong>principal</strong> in the R&D, meaning you direct, control, and take the financial risk on the project.</p>
-
-<h2>How the 65% Rule Works in Practice</h2>
-
-<p>Let us run through a real example. You run a 15-person digital agency in Bristol Harbourside. You take on a project to build a new AI-driven content personalisation engine for a retailer. The work involves genuine technological uncertainty: no off-the-shelf solution exists for the specific dataset and integration requirements.</p>
-
-<p>Your qualifying R&D costs for the project look like this:</p>
+<p>It applies to two categories of outside spend:</p>
 
 <ul>
-<li>Direct staff costs (your in-house developers and project lead): £48,000</li>
-<li>Subcontractor costs (a specialist data science contractor): £62,000</li>
-<li>Software licences and cloud compute costs: £12,000</li>
-<li>Total qualifying expenditure: £122,000</li>
+<li><strong>Contracted-out (subcontracted) R&D.</strong> You pay another business or freelancer to undertake R&D work for you.</li>
+<li><strong>Externally provided workers (EPWs).</strong> You pay a staff provider (typically an agency) for workers who carry out R&D under your direction.</li>
 </ul>
 
-<p>Now apply the 65% rule. HMRC says subcontractor costs cannot exceed 65% of £122,000, which is £79,300. Your subcontractor costs are £62,000, so you are under the cap. You claim relief on the full £122,000.</p>
+<p>Both are restricted to 65% of the payment where the other party is unconnected to you. This restriction has been part of UK R&D relief since its inception and it carries straight through into the merged R&D expenditure credit scheme that now applies.</p>
 
-<p>But what if the numbers looked different? Suppose your in-house staff costs were only £18,000, subcontractor costs were £85,000, and consumables were £5,000. Total: £108,000. The 65% cap is £70,200. Your subcontractor costs are £85,000, so only £70,200 qualifies. You lose relief on £14,800 of subcontractor spend.</p>
+<p>The crucial point, and the one most articles get wrong, is that this is <strong>not</strong> an aggregate test. There is no calculation where you total your qualifying spend and check that subcontractor costs sit below 65% of it. There is no ceiling that rises when you add staff or consumables. Each subcontractor payment is included at 65%, on its own, every time. If you have one subcontractor payment or twenty, each is haircut individually and the results are added together.</p>
 
-<p>At the SME enhanced deduction rate of 186% and 19% corporation tax, that lost relief is worth roughly £525. Not a disaster, but it adds up across multiple projects and years.</p>
+<p>If you have read that the 65% rule is a proportion cap on your total claim, unlearn it. It will cause you to over-claim on subcontractor-light projects and mis-plan on subcontractor-heavy ones.</p>
 
-<h2>Who Counts as a Subcontractor for R&D Purposes?</h2>
+<h2>How the 65% Restriction Works in Practice</h2>
 
-<p>HMRC draws a distinction between three categories of external worker. Getting this wrong is the most common error agency founders make.</p>
+<p>Let us run two examples. You run a 15-person digital agency in Bristol Harbourside. You take on a project to build an AI-driven content personalisation engine for a retailer. The work involves genuine technological uncertainty: no off-the-shelf solution handles the specific dataset and integration requirements.</p>
+
+<h3>Example one: a balanced project</h3>
+
+<p>Your R&D costs before the restriction:</p>
+
+<ul>
+<li>Direct staff costs (your employed developers and project lead): £48,000</li>
+<li>Subcontractor cost (an unconnected UK data science contractor): £62,000</li>
+<li>Software licences and cloud compute: £12,000</li>
+</ul>
+
+<p>Apply the 65% restriction to the subcontractor payment only. £62,000 × 65% = £40,300. Your employees' staff costs qualify in full, and so do your software and cloud costs. Your qualifying expenditure is therefore £48,000 + £40,300 + £12,000 = <strong>£100,300</strong>. Not the £122,000 headline figure, because £21,700 of the subcontractor payment never qualifies.</p>
+
+<p>Under the merged scheme that £100,300 attracts a 20% expenditure credit of £20,060. After corporation tax on the credit, the net benefit is about £15,045 for a company paying the 25% main rate, or roughly £16,249 for a loss-making company (a net rate of about 16.2%).</p>
+
+<h3>Example two: a subcontractor-heavy project</h3>
+
+<p>Now flip the resourcing. Your in-house involvement is light and one external specialist does most of the build:</p>
+
+<ul>
+<li>Direct staff costs (employees): £18,000</li>
+<li>Subcontractor cost (one unconnected contractor): £85,000</li>
+<li>Consumables and data costs: £5,000</li>
+</ul>
+
+<p>The £85,000 is restricted to £55,250 (65%). Your qualifying expenditure is £18,000 + £55,250 + £5,000 = <strong>£78,250</strong>. The 35% you cannot claim on that payment, £29,750, is worth roughly £4,463 in net benefit at the main rate that simply never lands.</p>
+
+<p>Notice there is nothing to "restructure" after the fact. The £29,750 is lost the moment the work is contracted out to an unconnected party. Adding more consumables or software to the claim does not recover it, because there is no aggregate cap for those costs to lift. The only lever is whether the R&D is done by your own people or by someone else's.</p>
+
+<h2>Which Scheme You Are Actually In Now</h2>
+
+<p>Before you calculate any benefit, be clear about which scheme applies, because the old figures are still quoted everywhere and they are wrong for current claims.</p>
+
+<p>For <strong>accounting periods beginning on or after 1 April 2024</strong>, a single merged R&D expenditure credit scheme replaced the separate SME and RDEC regimes. Under it, companies of all sizes claim a <strong>20% taxable above-the-line credit</strong> on qualifying R&D expenditure. The credit is itself taxable, so the net cash benefit is about <strong>15%</strong> for a company paying the 25% main rate, and about <strong>16.2%</strong> for a loss-making company (where the notional tax is charged at the 19% small-profits rate).</p>
+
+<p>There is one alternative. A loss-making, R&D-intensive SME (where qualifying R&D is at least 30% of total expenditure) can instead claim under Enhanced R&D Intensive Support (ERIS), which gives an 86% additional deduction and a payable credit worth 14.5% of the surrenderable loss. ERIS is a separate route with its own rules, not the default.</p>
+
+<p>You will still see the old SME headline of an "186% enhanced deduction" and a "14.5% payable credit". Those applied to accounting periods <strong>beginning 1 April 2023 to 31 March 2024</strong>, and to a shrinking pool of even older periods before that. They do not apply to current claims and you should not size a benefit against them.</p>
+
+<p>What has not changed across all of this is the 65% restriction on unconnected third-party R&D. It sat in the old SME rules, it sits in the merged scheme, and it applies to the examples above regardless of which period you are in.</p>
+
+<h2>Who Is Caught: Subcontractors, EPWs and Employees</h2>
+
+<p>The 65% restriction turns on <strong>who</strong> you are paying, not on job titles. Three categories matter, and getting them wrong is the most common error agency founders make.</p>
 
 <h3>Subcontractors</h3>
 
-<p>A subcontractor is an external individual or company you pay to carry out R&D activities. They are not under your day-to-day supervision or control. They decide how and when to do the work. You provide the brief and the outcome, but not the direction.</p>
+<p>A subcontractor is an external business or individual you pay to carry out R&D activities. You set the brief and the outcome; they decide how the work is done. Most freelancers, specialist studios and independent developers you engage for project work fall here. Payments to an unconnected subcontractor are included at 65%.</p>
 
-<p>Most freelancers, specialist agencies, and independent developers you engage for project work fall into this category. Their costs are subject to the 65% cap.</p>
+<h3>Externally provided workers (EPWs)</h3>
 
-<h3>Externally Provided Workers (EPWs)</h3>
+<p>An EPW is a worker supplied by a third-party staff provider (an agency) who then works under your supervision, direction and control. You pay the agency; the agency pays the worker. A common myth is that EPWs escape the 65% restriction because they feel like part of your team. They do not. Payments to an unconnected staff provider for EPWs are <strong>also restricted to 65%</strong>. The EPW category matters for eligibility (it lets agency-supplied labour qualify at all), but it does not lift the haircut.</p>
 
-<p>An EPW is a worker provided by a third-party agency but under your supervision, direction, and control. You tell them what to do, when to do it, and how to do it. They work on your premises (or remotely under your direction). You pay the agency, and the agency pays the worker.</p>
+<h3>Your own employees</h3>
 
-<p>EPW costs are <strong>not</strong> subject to the 65% cap. They are treated more like direct staff costs. But the conditions are strict: you must have the right to supervise and control the worker, and the worker must be providing their own services (not the agency's).</p>
+<p>The only R&D labour that qualifies at 100% is your own employees: people on your payroll whose salary, employer National Insurance and pension contributions you pay directly. This is the single most important structural fact in the whole area. Employee staff costs are not restricted; unconnected subcontractor and EPW payments are. Consumables, software and data used in the R&D also qualify in full.</p>
 
-<p>If you use a recruiter to place a contractor who then works under your project manager's direction, that is likely an EPW arrangement. If you hire a specialist agency to deliver a module of work with their own project manager, that is a subcontractor.</p>
+<h2>Connected Subcontractors: A Different Rule Entirely</h2>
 
-<h3>Connected Parties</h3>
+<p>If you contract R&D to a <strong>connected party</strong> (for example a sister company under common control, or a company you also own), the 65% restriction does not apply. A different, and generally stricter, test replaces it.</p>
 
-<p>If you subcontract R&D work to a <strong>connected party</strong> (for example, a separate company you also control), the rules tighten further. The connected subcontractor can only include its direct costs plus a 65% profit mark-up. No overheads. No indirect costs. And the 65% cap still applies at your level.</p>
+<p>For connected parties the qualifying amount is the <strong>lower of</strong> the payment you made and the connected subcontractor's <strong>actual relevant cost</strong> of doing the work. In other words, you cannot claim on a marked-up intra-group invoice; you claim on what it genuinely cost the connected company, capped at what you actually paid.</p>
 
-<p>This makes holding company structures with separate trading entities tricky. If your agency subcontracts R&D to a sister company, HMRC will scrutinise the arrangement closely.</p>
+<p>There is no "65% plus a profit mark-up" rule for connected parties, despite what you may have read. The mechanism is the lower-of test, full stop. This makes group structures with a separate development entity workable but tightly evidenced: you need the connected company's real cost records, not just the invoice, and HMRC will ask for them.</p>
 
-<h2>Why the 65% Rule Matters More for Agencies Than Other Businesses</h2>
+<h2>Overseas Subcontractors: Now Largely Excluded</h2>
 
-<p>Agencies are structurally more likely to hit the 65% cap than, say, a manufacturing company. Here is why.</p>
+<p>The merged scheme also narrowed where the work can be done. For accounting periods beginning on or after 1 April 2024, payments for contracted-out R&D and for EPWs generally only qualify where the work is carried out <strong>in the UK</strong>, or where the worker's earnings are subject to UK PAYE and National Insurance.</p>
 
-<p>Most agencies operate with a lean core team and scale up with freelancers and subcontractors. A typical project might have one or two in-house developers overseeing the work and a team of external contractors doing the heavy lifting. That means subcontractor costs can easily exceed 65% of total qualifying spend.</p>
+<p>There are narrow exceptions where the conditions genuinely cannot be replicated in the UK (geography, regulatory or environmental factors). Cost and availability of labour do not count as exceptions. For agencies that lean on offshore development teams, this is the bigger issue than the 65% haircut: much of that spend does not qualify at all, before you even reach the restriction.</p>
 
-<p>If you are a web design agency building a custom platform, a creative agency developing a new AR experience, or a PR agency building a proprietary media monitoring tool, you are likely subcontracting specialist skills you do not keep in-house. That is fine commercially. But it limits your R&D claim.</p>
+<h2>Why This Matters More for Agencies</h2>
 
-<p>The solution is not to stop subcontracting. It is to structure the work so that more of the cost falls under direct staff or EPW categories, or to increase your in-house R&D headcount on qualifying projects.</p>
+<p>Agencies are structurally more exposed to the 65% restriction than, say, a manufacturer. Most agencies run a lean core team and scale delivery with freelancers, specialist studios and offshore developers. On a typical build, one or two employees oversee the work while external contractors do the heavy lifting.</p>
 
-<h2>How to Structure Your Agency to Maximise R&D Claims Within the 65% Rule</h2>
+<p>Every pound of that external R&D labour is included at 65% if the party is unconnected and UK-based, and at nil if the work is done overseas without an exception. A web agency building a custom platform, a creative agency prototyping an AR experience, or a PR agency building a proprietary monitoring tool is likely to be subcontracting the very skills that make the project innovative. That is fine commercially. It just means the claim is smaller than the headline spend, and planning matters.</p>
 
-<p>There are legitimate ways to reduce the impact of the subcontractor R&D 65 percent rule. These are not loopholes. They are structural choices that reflect genuine R&D activity.</p>
+<h2>What You Can Actually Do About It</h2>
 
-<h3>1. Bring More R&D Work In-House</h3>
+<p>Because there is no cap to raise, the levers are narrower and more honest than the "add more in-house cost to lift the ceiling" advice you will see elsewhere. Here is what genuinely moves the number.</p>
 
-<p>If you have a consistent pipeline of R&D projects, consider hiring a permanent specialist rather than subcontracting. A permanent employee's salary, employer NI, and pension contributions all count as direct staff costs. They are not subject to the 65% cap. And they increase your total qualifying expenditure, which raises the 65% cap for any remaining subcontractor spend.</p>
+<h3>1. Employ the people doing your core, repeatable R&D</h3>
 
-<p>Run the numbers. If you pay a contractor £80,000 per year, a permanent hire on £70,000 plus £10,500 in employer NI and pension costs gives you £80,500 in qualifying costs. That is comparable. And it pushes your cap higher for future projects.</p>
+<p>If you have a consistent pipeline of qualifying work, an employee beats a contractor on relief because their cost qualifies in full. Pay a contractor £80,000 a year and only £52,000 qualifies. Employ someone on £70,000 with about £10,500 of employer NI and pension on top, and the full £80,500 qualifies. Comparable gross cost, materially larger claim, and you keep the capability in-house.</p>
 
-<h3>2. Use EPW Arrangements Where Possible</h3>
+<h3>2. Keep genuinely innovative work onshore</h3>
 
-<p>If you use a recruitment agency to place a contractor who works under your supervision, make sure the contract reflects that. The worker should be on your premises (or working under your direction), using your tools, and reporting to your project manager. The agency should be providing a worker, not a service.</p>
+<p>Given the overseas restriction, R&D done outside the UK by unconnected parties will usually not qualify at all. Where the innovative element can reasonably be done in the UK, keeping it here is often the difference between a claimable cost and a non-claimable one.</p>
 
-<p>HMRC looks at the reality of the arrangement, not the paperwork. If the contractor works independently, decides their own hours, uses their own equipment, and delivers a finished module, they are a subcontractor regardless of what the contract says.</p>
+<h3>3. Separate qualifying R&D from routine subcontractor work</h3>
 
-<h3>3. Segregate R&D and Non-R&D Subcontractor Costs</h3>
+<p>Not every subcontractor cost on an R&D project is R&D. Routine integration, standard UI build and non-innovative testing are not qualifying expenditure and should be excluded entirely, before any 65% calculation. Getting this split right protects the claim from challenge and keeps the qualifying figure defensible.</p>
 
-<p>Not every subcontractor cost on an R&D project is automatically an R&D subcontractor cost. If a subcontractor does routine integration work, standard UI development, or non-innovative testing, those costs are not qualifying R&D expenditure at all. They should be excluded from your claim entirely.</p>
+<h3>4. Evidence connected-party costs properly</h3>
 
-<p>This reduces your total qualifying expenditure, which lowers the 65% cap. But it also removes non-qualifying costs from the calculation. The net effect is often neutral or positive, because you are not diluting your claim with non-qualifying spend.</p>
-
-<p>Work with your accountant to split subcontractor costs into qualifying and non-qualifying categories. HMRC expects this level of granularity.</p>
-
-<h3>4. Consider the RDEC Scheme for Larger Projects</h3>
-
-<p>If your agency is large enough (typically over 500 employees or turnover over €100m), you fall under the <strong>RDEC (Research and Development Expenditure Credit)</strong> scheme instead of the SME scheme. RDEC does not have a 65% subcontractor cap. Subcontractor costs are restricted to 65% of the total project cost, but the calculation is different and often more generous for subcontractor-heavy projects.</p>
-
-<p>Most agencies are not large enough for RDEC. But if you are part of a group or approaching that threshold, it is worth discussing with your accountant.</p>
+<p>If you use a connected development company, keep its actual cost records, not just intra-group invoices. The lower-of test needs the real cost to work, and without it HMRC can disallow the lot.</p>
 
 <h2>What HMRC Looks For in Agency R&D Claims</h2>
 
-<p>HMRC has increased its scrutiny of R&D claims across the board, and agency claims are a particular focus. The subcontractor 65 percent rule is one of the first things a compliance officer checks.</p>
-
-<p>When HMRC reviews your claim, they will want to see:</p>
+<p>HMRC has increased its scrutiny of R&D claims across the board, and agency claims are a particular focus. Third-party costs are one of the first things a compliance officer checks. When HMRC reviews your claim they will want to see:</p>
 
 <ul>
 <li>A clear narrative of the technological uncertainty you faced and how you resolved it</li>
-<li>Timesheets or project records showing which staff worked on R&D and for how long</li>
-<li>Contracts with subcontractors showing the scope of work and payment terms</li>
-<li>Evidence that you were the principal in the R&D, directing the work, taking the risk, owning the IP</li>
-<li>A breakdown of costs by category (staff, subcontractor, consumables, EPW)</li>
+<li>Timesheets or project records showing which people worked on the R&D and for how long</li>
+<li>Contracts with subcontractors and staff providers showing scope, terms and where the work was done</li>
+<li>Evidence that your company was the decision-maker: that it decided to undertake the R&D and bore the financial risk</li>
+<li>A cost breakdown by category (employee staff, subcontractor, EPW, consumables, software), with the 65% restriction correctly applied to the third-party lines</li>
 </ul>
 
-<p>If your claim has high subcontractor costs relative to staff costs, expect questions. HMRC wants to know why you could not do the work in-house and whether the subcontractor was genuinely undertaking R&D or just routine development.</p>
+<p>Under the merged scheme, entitlement usually follows the <strong>decision-maker</strong>: the company that decided to carry out the R&D and took the risk is the one that claims, not necessarily whoever physically did the work. If a client contracted you to solve a defined problem and took the risk, the claim may sit with them, not you. Your contracts decide this, so read them before you claim.</p>
 
-<p>Working exclusively with agency founders, we see HMRC open more enquiries into agency R&D claims than almost any other sector. The 65% rule is rarely the only issue, but it is often the trigger.</p>
+<p>Working exclusively with agency founders, we see HMRC open more enquiries into agency R&D claims than almost any other sector. Mishandled third-party costs are rarely the only issue, but they are often the trigger.</p>
 
-<h2>Common Mistakes Agency Founders Make With the 65% Rule</h2>
+<h2>Common Mistakes Agency Founders Make</h2>
 
-<p>I see the same errors repeatedly. Here are the ones to avoid.</p>
+<p>The same errors come up again and again. Here are the ones to avoid.</p>
 
-<p><strong>Mistake 1: Including non-R&D subcontractor costs in the calculation.</strong> If a subcontractor does standard development work that is not innovative, do not include it. It inflates your total qualifying expenditure but also inflates your subcontractor costs. The cap calculation becomes distorted.</p>
+<p><strong>Mistake 1: Treating the 65% rule as an aggregate cap.</strong> It is not a proportion test across your total spend and there is no ceiling to raise. Each unconnected subcontractor and EPW payment is included at 65%, individually. Modelling it as a cap will systematically misstate the claim.</p>
 
-<p><strong>Mistake 2: Treating all external workers as subcontractors.</strong> If you supervise and control a contractor, document that. An EPW classification removes the cost from the 65% cap entirely.</p>
+<p><strong>Mistake 2: Assuming EPWs escape the restriction.</strong> Payments to an unconnected staff provider for externally provided workers are restricted to 65% too. Only your own employees qualify at 100%.</p>
 
-<p><strong>Mistake 3: Ignoring the cap until the claim is prepared.</strong> By the time your accountant runs the numbers, the project is finished. You cannot go back and restructure. Plan for the cap at the project briefing stage.</p>
+<p><strong>Mistake 3: Claiming overseas contractor costs.</strong> For periods beginning on or after 1 April 2024, R&D contracted out to unconnected parties doing the work outside the UK generally does not qualify at all. Check where the work was performed before you include it.</p>
 
-<p><strong>Mistake 4: Assuming the 65% rule applies per project.</strong> It applies to the <strong>total</strong> qualifying R&D expenditure across all projects in the accounting period. If you have multiple R&D projects, the cap is calculated on the aggregate. A project with low subcontractor costs can offset a project with high subcontractor costs.</p>
+<p><strong>Mistake 4: Marking up connected-party invoices.</strong> For connected subcontractors you claim the lower of the payment and their actual cost. An intra-group invoice with a margin baked in will be cut back to real cost, or disallowed if you cannot evidence it.</p>
+
+<p><strong>Mistake 5: Using the old SME figures.</strong> The 186% deduction and 10% or 14.5% payable credit belong to periods beginning 1 April 2023 to 31 March 2024 and earlier. Current claims use the merged scheme's 20% credit, netting about 15% or 16.2%. Sizing a benefit on the old rates overstates it badly.</p>
 
 <h2>What to Do Next</h2>
 
-<p>If you are preparing an R&D tax credit claim and you use subcontractors, the first step is to map out your qualifying costs by category. Identify which costs are staff, which are subcontractor, and which are EPW. Then calculate the 65% cap on your total qualifying expenditure.</p>
+<p>If you are preparing an R&D claim and you use subcontractors, first map your qualifying costs by category: employee staff, subcontractor, EPW, consumables and software. Strip out non-R&D work. Then apply the 65% restriction to each unconnected subcontractor and EPW payment, check that the work was done in the UK, and use the lower-of test for anything connected.</p>
 
-<p>If you are over the cap, you have two options: restructure future projects to increase in-house or EPW costs, or accept the restriction and claim what you can.</p>
+<p>The strategic question is not how to raise a cap that does not exist. It is which R&D belongs in-house as employed effort (qualifying in full) and which is genuinely specialist enough to buy in at 65%. For a consistent R&D pipeline, employing the core capability usually wins on both relief and control.</p>
 
-<p>For most agencies, the best approach is a combination: increase in-house R&D headcount where the work is consistent, use EPW arrangements where you supervise the work, and subcontract only the specialist work you cannot justify keeping in-house.</p>
-
-<p>If your contractor mix has changed in the last 12 months, or you are planning a new R&D project, ask your accountant before you commit to the resourcing model. A small structural change at the start can save thousands in lost relief.</p>
+<p>If your resourcing model has changed in the last year, or you are planning a new R&D project, ask your accountant before you commit. A small change to who does the work, and where, can move the claim by thousands.</p>
 
 <p>We help agency founders across the UK, from Soho to Manchester Northern Quarter to Bristol Harbourside, structure their R&D claims to maximise relief within the rules. If you want to run through your numbers, <a href="/contact">get in touch</a>.</p>
 
@@ -192,4 +206,3 @@ keyTakeaways:
     <li><a href="/blog/tax-and-compliance/document-rd-activity-agency-year-round">How to Document R&D Activity in an Agency Throughout the Year</a></li>
     <li><a href="/blog/tax-and-compliance/klaviyo-custom-flow-rd-tax-credits">R&D Tax Credits for Custom Klaviyo Flows and Email Automation Builds</a></li>
 </ul>
-

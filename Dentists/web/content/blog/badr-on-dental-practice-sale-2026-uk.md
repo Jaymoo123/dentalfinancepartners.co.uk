@@ -1,17 +1,17 @@
 ---
-title: "How Does Business Asset Disposal Relief Apply to a Dental Practice Sale in 2025/26?"
+title: "How Does Business Asset Disposal Relief Apply to a Dental Practice Sale in 2026/27?"
 slug: "badr-on-dental-practice-sale-2026-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/goodwill-and-practice-sale/badr-on-dental-practice-sale-2026-uk"
 date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Dental Finance Partners Editorial Team"
 category: "Goodwill & Practice Sale"
-metaTitle: "BADR on Dental Practice Sale 2025/26 | CGT Relief for UK Dentists"
-metaDescription: "Business Asset Disposal Relief (formerly Entrepreneurs' Relief) on a dental practice sale. Rates, lifetime limit, conditions, and pitfalls explained for UK principals and partners."
+metaTitle: "BADR on a Dental Practice Sale 2026/27: CGT for Dentists"
+metaDescription: "Business Asset Disposal Relief on a dental practice sale: the 18% rate for 2026/27, the £1m lifetime limit, conditions, and pitfalls for UK principals."
 altText: "Dental practice owner reviewing sale documents with accountant, UK dental surgery background"
 image: ""
-h1: "How Does Business Asset Disposal Relief Apply to a Dental Practice Sale in 2025/26?"
-summary: "Business Asset Disposal Relief (BADR) can cut your CGT rate to 14% on the first £1m of gains from a dental practice sale in 2025/26. But the conditions are strict: you must be a sole trader, partnership member, or director/employee of the practice company for at least 24 months before disposal. Get the rules wrong and you pay 24% on the whole gain."
+h1: "How Does Business Asset Disposal Relief Apply to a Dental Practice Sale in 2026/27?"
+summary: "Business Asset Disposal Relief (BADR) cuts your CGT rate to 18% on the first £1m of gains from a dental practice sale in 2026/27, against the standard 24%. But the conditions are strict: you must be a sole trader, partnership member, or director/employee of the practice company for at least 24 months before disposal. Get the rules wrong and you pay 24% on the whole gain."
 schema: ""
 faqs:
   - question: "Can I claim BADR if I sell my dental practice as a limited company but only hold 4% of the shares?"
@@ -21,14 +21,14 @@ faqs:
   - question: "What happens to BADR if I die before selling my practice?"
     answer: "If you die while owning the practice, your heirs inherit the assets at their market value at the date of death. There is no CGT charge on death. The heirs do not inherit your BADR lifetime limit. If they later sell the practice, they must meet the BADR conditions themselves, including the 24-month ownership period. This is a common reason for estate planning to accelerate a sale or transfer before death."
   - question: "Can I claim BADR on a practice sale if I have already used my £1m lifetime limit on a previous business?"
-    answer: "No. The £1m lifetime limit is cumulative across all disposals. If you have already claimed BADR on £1m of gains from a previous business sale, you have no remaining allowance. Any further gains from a dental practice sale will be taxed at the standard CGT rates (24% for higher-rate taxpayers in 2025/26). You cannot claim BADR again, even if the new practice is a completely different business."
+    answer: "No. The £1m lifetime limit is cumulative across all disposals. If you have already claimed BADR on £1m of gains from a previous business sale, you have no remaining allowance. Any further gains from a dental practice sale will be taxed at the standard CGT rates (24% for higher-rate taxpayers in 2026/27). You cannot claim BADR again, even if the new practice is a completely different business."
 ---
 
-<p>If you are planning to sell your dental practice, the tax treatment of your gain is one of the most important financial decisions you will make. Business Asset Disposal Relief (BADR), formerly known as Entrepreneurs' Relief, can reduce the Capital Gains Tax (CGT) rate on your practice sale from 24% to just 14% in the 2025/26 tax year. For a practice worth £1m, that is a potential saving of £100,000. But the relief is not automatic. HMRC imposes strict conditions, and the rules have changed several times in recent years. This article explains exactly how BADR applies to a dental practice sale, what you need to qualify, and the common traps that cost dentists thousands.</p>
+<p>If you are planning to sell your dental practice, the tax treatment of your gain is one of the most important financial decisions you will make. Business Asset Disposal Relief (BADR), formerly known as Entrepreneurs' Relief, reduces the Capital Gains Tax (CGT) rate on your practice sale from 24% to 18% in the 2026/27 tax year. For a £1m gain, that is a potential saving of £60,000. (Disposals made on or before 5 April 2026 attracted the old 14% rate.) But the relief is not automatic. HMRC imposes strict conditions, and the rules have changed several times in recent years. This article explains exactly how BADR applies to a dental practice sale, what you need to qualify, and the common traps that cost dentists thousands.</p>
 
 <h2>What Is Business Asset Disposal Relief?</h2>
 <p>Business Asset Disposal Relief is a CGT relief that applies when you sell or dispose of certain business assets. It was introduced in 2008 as Entrepreneurs' Relief and was renamed in the 2020 Budget. The core benefit is a reduced CGT rate on qualifying gains, subject to a lifetime limit.</p>
-<p>For 2025/26, the BADR rate is 14% on gains up to £1m. From 6 April 2026, the rate rises to 18%. Gains above the £1m lifetime limit are taxed at the standard CGT rate: 24% for higher-rate taxpayers (which most practice sellers will be) or 18% for basic-rate taxpayers.</p>
+<p>For 2026/27, the BADR rate is 18% on gains up to £1m. The rate was 14% for disposals in 2025/26 and 10% for disposals before 6 April 2025, so always read the rate alongside the disposal date. Gains above the £1m lifetime limit are taxed at the standard CGT rate: 24% for higher-rate taxpayers (which most practice sellers will be) or 18% for basic-rate taxpayers.</p>
 <p>The relief applies to disposals of:</p>
 <ul>
 <li>A business (or part of a business) carried on as a sole trader or partnership.</li>
@@ -47,7 +47,7 @@ faqs:
 <li>The business must be a trading business (dental practice qualifies as trading for these purposes).</li>
 <li>The disposal must be of the whole business or a significant part of it. Selling individual assets piecemeal may not qualify.</li>
 </ul>
-<p>For a typical single-handed principal selling their practice as a going concern, this is straightforward. The 24-month ownership period is usually met. However, if you recently incorporated the practice into a limited company and then sell the company shares, the 24-month period runs from incorporation, not from when you started the practice as a a sole trader.</p>
+<p>For a typical single-handed principal selling their practice as a going concern, this is straightforward. The 24-month ownership period is usually met. However, if you recently incorporated the practice into a limited company and then sell the company shares, the 24-month period runs from incorporation, not from when you started the practice as a sole trader.</p>
 
 <h3>Company Share Sale</h3>
 <p>If you operate the practice through a limited company and sell the company shares, the conditions are stricter:</p>
@@ -63,17 +63,17 @@ faqs:
 <h2>The £1m Lifetime Limit</h2>
 <p>The BADR lifetime limit is £1m per individual. This means you can claim relief on total gains of up to £1m across your lifetime. If you have already used some of your allowance on a previous business sale, the remaining amount is reduced.</p>
 <p>For a dental practice sale, the gain is typically the sale price minus the original cost (and any allowable costs such as professional fees). If the practice is owned jointly by two partners, each partner has their own £1m limit. So a practice sold for £2m with two equal partners could see each partner claim BADR on their £1m gain, provided the conditions are met.</p>
-<p>If the gain exceeds £1m, the excess is taxed at the standard CGT rate (24% for higher-rate taxpayers in 2025/26). This is a common scenario for high-value practices in London or the South East.</p>
+<p>If the gain exceeds £1m, the excess is taxed at the standard CGT rate (24% for higher-rate taxpayers in 2026/27). This is a common scenario for high-value practices in London or the South East.</p>
 
 <h2>Worked Example: Dr Patel Sells Her Practice</h2>
-<p>Dr Patel has owned a single-handed NHS and private dental practice as a sole trader for 12 years. She sells the practice as a going concern on 1 September 2025 for £1.4m. The goodwill and assets are sold together. Her base cost (what she originally paid for the practice plus improvements) is £200,000. Her gain is £1.2m.</p>
-<p>She qualifies for BADR because she has owned the business for more than 24 months. Her CGT calculation is:</p>
+<p>Dr Patel has owned a single-handed NHS and private dental practice as a sole trader for 12 years. She sells the practice as a going concern on 1 September 2026 for £1.4m. The goodwill and assets are sold together. Her base cost (what she originally paid for the practice plus improvements) is £200,000. Her gain is £1.2m.</p>
+<p>She qualifies for BADR because she has owned the business for more than 24 months. Her CGT calculation at the 2026/27 rates is:</p>
 <ul>
-<li>First £1m gain: taxed at 14% = £140,000</li>
+<li>First £1m gain: taxed at 18% = £180,000</li>
 <li>Remaining £200,000 gain: taxed at 24% = £48,000</li>
-<li>Total CGT: £188,000</li>
+<li>Total CGT: £228,000</li>
 </ul>
-<p>Without BADR, the whole £1.2m would be taxed at 24% = £288,000. The relief saves her £100,000.</p>
+<p>Without BADR, the whole £1.2m would be taxed at 24% = £288,000. The relief saves her £60,000. (Had her disposal date fallen on or before 5 April 2026, the first £1m would have been taxed at the old 14% rate, £140,000, a total of £188,000.)</p>
 
 <h2>Common Pitfalls for Dentists</h2>
 <p>Several specific issues trip up dentists when claiming BADR on a practice sale.</p>
@@ -91,7 +91,7 @@ faqs:
 <p>If you sell the practice assets (goodwill, equipment, lease) rather than the company shares, the relief may still apply if you are selling as a sole trader or partnership. But if you are selling through a company and the buyer wants to buy assets rather than shares, the company pays corporation tax on the gain (at 19% or 25%), and then you extract the proceeds as dividends or salary, which are taxed again. BADR does not apply to asset sales by a company; it only applies to share disposals by individuals.</p>
 
 <h2>BADR vs. Investors' Relief</h2>
-<p>There is a separate relief called Investors' Relief, which also has a 14% rate for 2025/26 and a £10m lifetime limit. However, it applies only to shares subscribed for in unlisted trading companies and held for at least three years. It is rarely relevant for practice owners selling their own business, but it may apply to external investors who put money into a dental corporate group.</p>
+<p>There is a separate relief called Investors' Relief, which carries the same 18% rate for 2026/27 (it moved in step with BADR, from 14% in 2025/26) and its own £1m lifetime limit, cut from £10m for disposals on or after 30 October 2024. However, it applies only to shares subscribed for in unlisted trading companies and held for at least three years. It is rarely relevant for practice owners selling their own business, but it may apply to external investors who put money into a dental corporate group.</p>
 
 <h2>Planning Before the Sale</h2>
 <p>If you are considering selling your dental practice, BADR planning should start at least two years before the expected sale date. Key steps include:</p>
@@ -104,8 +104,8 @@ faqs:
 </ul>
 <p>For more detailed guidance on practice valuation and sale structure, see our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a>.</p>
 
-<h2>What Happens After 5 April 2026?</h2>
-<p>The BADR rate increases to 18% from 6 April 2026. If you are planning a sale in 2026/27, the tax saving compared to the standard 24% rate is smaller but still significant. The £1m lifetime limit remains unchanged. If you can complete the sale before 6 April 2026, you lock in the 14% rate. But do not rush a sale purely for tax reasons if the commercial terms are not right.</p>
+<h2>What Changed on 6 April 2026?</h2>
+<p>The BADR rate increased from 14% to 18% on 6 April 2026. For a sale in 2026/27, the tax saving compared to the standard 24% rate is smaller than it was but still significant: up to £60,000 on the first £1m of gains. The £1m lifetime limit is unchanged. One transitional point still matters: for CGT the disposal date follows the contract, so if you exchanged unconditionally on or before 5 April 2026, your disposal keeps the 14% rate even if completion happened after that date. For everyone else, model the sale at 18%, and do not let the rate change push you into a sale on the wrong commercial terms.</p>
 
 <h2>Interaction with NHS Pension and Other Considerations</h2>
 <p>Selling a practice can also affect your NHS Pension. If you are in the 1995 section and take early retirement, there may be actuarial reductions. If you are in the 2015 CARE scheme, the sale does not directly affect your pension benefits, but the proceeds from the sale may push you into a higher tax bracket for the year, potentially triggering the annual allowance taper or the money purchase annual allowance (MPAA) if you contribute to a personal pension.</p>
@@ -129,8 +129,8 @@ faqs:
 
 <h2>Summary of Key Points</h2>
 <ul>
-<li>BADR reduces CGT to 14% on the first £1m of gains from a dental practice sale in 2025/26.</li>
-<li>The rate rises to 18% from 6 April 2026.</li>
+<li>BADR reduces CGT to 18% on the first £1m of gains from a dental practice sale in 2026/27.</li>
+<li>The rate was 14% for disposals in 2025/26 and rose to 18% on 6 April 2026.</li>
 <li>You must own the business or shares for at least 24 months before disposal.</li>
 <li>For company share sales, you must be a director/employee with at least 5% shareholding.</li>
 <li>The £1m lifetime limit is per individual, not per practice.</li>

@@ -1,0 +1,21 @@
+{
+  "batch_id": "M3-B-B1",
+  "agent_id": "MW3-Stage1-B (queue agent_id 0403c24f-ae61-4c10-a665-c53008d9db92)",
+  "completed_at": "2026-05-27T19:55:00Z",
+  "commit_shas": [
+    "fa1a46e",
+    "388cac4",
+    "150acfc",
+    "aa5520c",
+    "f5e47df",
+    "0deb867"
+  ],
+  "slugs_done": [
+    "double-taxation-agreement-uk-and-isle-of-man",
+    "double-taxation-convention-dta-uk-and-spain",
+    "double-taxation-convention-uk-and-india",
+    "hmrcs-otm-letters-campaign-directed-at-ated-avoidance",
+    "annual-tax-on-enveloped-dwellings-pro-and-cons",
+    "are-you-leaving-the-uk-permanently"
+  ]
+}

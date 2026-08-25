@@ -1,13 +1,13 @@
 ---
-title: "How Much Are HMRC Penalties for Late Self Assessment in 2025/26?"
+title: "How Much Are HMRC Penalties for Late Self Assessment in 2026/27?"
 slug: "hmrc-penalties-self-assessment-late-filing-2025-26"
 canonical: "https://www.hollowaydavies.co.uk/blog/sole-trader-and-self-employment/hmrc-penalties-self-assessment-late-filing-2025-26"
-date: "2026-05-17"
+date: "2026-07-28"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Sole Trader and Self Employment"
-metaTitle: "HMRC Penalties Self Assessment: Late Filing Fines 2025/26"
-metaDescription: "Late filing a Self Assessment return triggers an instant £100 penalty. We explain the full penalty structure, interest rates, and how to appeal. 2025/26"
+metaTitle: "HMRC Penalties Self Assessment: Late Filing Fines 2026/27"
+metaDescription: "Late filing a Self Assessment return triggers an instant £100 penalty. We explain the full penalty structure, interest rates, and how to appeal. 2026/27"
 altText: "UK accountant reviewing Self Assessment penalty notice from HMRC in a Manchester office"
 image: "/blog/hmrc-penalties-self-assessment-late-filing-2025-26.jpg"
 imageCredit:
@@ -15,7 +15,7 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@535150482"
   sourceUrl: "https://www.pexels.com/photo/referee-showing-red-card-to-goalkeeper-16543118/"
   source: "Pexels"
-h1: "HMRC Penalties for Late Self Assessment: The Complete Guide for 2025/26"
+h1: "HMRC Penalties for Late Self Assessment: The Complete Guide for 2026/27"
 summary: "Miss the 31 January deadline and HMRC charges an automatic £100 penalty. The fines escalate the longer you delay, reaching up to £1,600 plus daily penalties and tax-geared penalties. Here is exactly how the system works and what to do if you have missed the deadline."
 schema: ""
 faqs:
@@ -28,21 +28,21 @@ faqs:
   - question: "How do I check if I have received a Self Assessment penalty?"
     answer: "Log into your HMRC online account. Go to the Self Assessment section and look for \"Penalties and appeals\". You can also check your post, as HMRC sends penalty notices by letter. If you have registered for paperless communications, check your HMRC messages."
 keyTakeaways:
-  - "Missing the 31 January online filing deadline triggers an automatic £100 penalty from 1 February 2026, even if you owe no tax."
-  - "From 3 months late (1 May 2026 for the 2024/25 return), HMRC charges £10 per day for up to 90 days, a maximum of £900."
+  - "Missing the 31 January online filing deadline triggers an automatic £100 penalty from 1 February 2027, even if you owe no tax."
+  - "From 3 months late (1 May 2027 for the 2025/26 return), HMRC charges £10 per day for up to 90 days, a maximum of £900."
   - "At 6 months and 12 months late, HMRC adds a further penalty of £300 or 5% of the tax due, whichever is higher."
   - "The maximum fixed penalties for a return filed more than 12 months late total £1,600, before any tax-geared penalties for deliberate non-compliance."
-  - "Late payment interest runs at the Bank of England base rate plus 4 percentage points from 6 April 2025, approximately 8% to 8.5% through 2025/26."
+  - "Late payment interest runs at the Bank of England base rate plus 4 percentage points, approximately 8% through 2026/27."
   - "You can appeal a late filing penalty on grounds of reasonable excuse, but must submit the appeal within 30 days of receiving the penalty notice."
 ---
 
 <p>If you miss the 31 January deadline for filing your Self Assessment tax return, HMRC charges an automatic £100 penalty. That is the starting point, not the full picture. The penalties escalate quickly the longer you delay, and they can reach thousands of pounds for returns filed more than 12 months late.</p>
 
-<p>This guide covers the complete HMRC penalties self assessment structure for the 2025/26 tax year, using the standard Schedule 55 FA 2009 regime that has applied to Self Assessment since the 2010/11 return. We explain the exact amounts, when interest kicks in, and how to appeal if you have a reasonable excuse.</p>
+<p>This guide covers the complete HMRC penalties self assessment structure for the 2026/27 tax year, using the standard Schedule 55 FA 2009 regime that has applied to Self Assessment since the 2010/11 return. We explain the exact amounts, when interest kicks in, and how to appeal if you have a reasonable excuse.</p>
 
 <h2>The Filing Deadline and When Penalties Start</h2>
 
-<p>The filing deadline for online Self Assessment returns is midnight on 31 January following the end of the tax year. For the 2024/25 tax year (ending 5 April 2025), the deadline is 31 January 2026.</p>
+<p>The filing deadline for online Self Assessment returns is midnight on 31 January following the end of the tax year. For the 2025/26 tax year (ending 5 April 2026), the deadline is 31 January 2027.</p>
 
 <p>The automatic £100 penalty applies from 1 February if you miss the 31 January deadline. There is no standing three-day grace period. HMRC has occasionally announced one-off short extensions in specific years (for example, the COVID-related extensions to 28 February 2021 and 2022), but these were exceptional announcements and cannot be relied upon. In a normal year, file by 31 January.</p>
 
@@ -59,7 +59,7 @@ keyTakeaways:
 <li><strong>12 months late (1 February):</strong> £300 or 5% of the tax due (whichever is higher)</li>
 </ul>
 
-<p>The daily penalties run from the day after the three-month point. That means from 1 May 2026, you incur £10 per day until you file or reach 90 days. The maximum daily penalty is £900.</p>
+<p>The daily penalties run from the day after the three-month point. That means from 1 May 2027, you incur £10 per day until you file or reach 90 days. The maximum daily penalty is £900.</p>
 
 <p>At six months late, you face an additional penalty of £300 or 5% of the tax due. HMRC charges whichever is higher. If your tax bill is £10,000, the 5% penalty is £500, so you pay £500 instead of £300.</p>
 
@@ -77,7 +77,7 @@ keyTakeaways:
 
 <p>Filing late and paying late are separate issues. You can file on time but pay late, and vice versa.</p>
 
-<p>If you pay your tax bill after the 31 January deadline, HMRC charges interest on the outstanding amount. The late payment interest rate is set at the Bank of England base rate plus 4 percentage points (this margin increased from base + 2.5% to base + 4% from 6 April 2025). With the base rate at approximately 4-4.5% through 2025/26, HMRC late payment interest ran at around 8 to 8.5%. The rate changes when the base rate moves.</p>
+<p>If you pay your tax bill after the 31 January deadline, HMRC charges interest on the outstanding amount. The late payment interest rate is set at the Bank of England base rate plus 4 percentage points (this margin increased from base + 2.5% to base + 4% from 6 April 2025). With the base rate at approximately 4% through 2026/27, HMRC late payment interest ran at around 8%. The rate changes when the base rate moves.</p>
 
 <p>In addition to interest, HMRC charges a late payment penalty if you have not paid after 30 days. The structure is:</p>
 
@@ -165,23 +165,23 @@ keyTakeaways:
 
 <p>If your turnover is approaching the VAT registration threshold (£90,000), or if you are already VAT registered, late filing of your Self Assessment is separate from any VAT penalties. They are different obligations with different penalty systems.</p>
 
-<h2>The 2025/26 Filing Season</h2>
+<h2>The 2026/27 Filing Season</h2>
 
-<p>The 2024/25 tax year ends on 5 April 2025. The filing deadline for online returns is 31 January 2026. Paper returns must be filed by 31 October 2025.</p>
+<p>The 2025/26 tax year ends on 5 April 2026. The filing deadline for online returns is 31 January 2027. Paper returns must be filed by 31 October 2026.</p>
 
 <p>If you use accounting software like Xero, FreeAgent, or QuickBooks, most of them integrate with HMRC's systems for Making Tax Digital for Income Tax (MTD for ITSA). From April 2026, MTD for ITSA becomes mandatory for sole traders and landlords with qualifying income over £50,000. From April 2027, it drops to £30,000. From April 2028, it drops to £20,000.</p>
 
 <p>MTD for ITSA requires you to file quarterly updates to HMRC, not just an annual return. The penalty system for MTD is different. Late quarterly submissions attract points-based penalties rather than the fixed £100 starting point. But the annual final declaration still uses the standard late filing penalties.</p>
 
-<h2>Summary of Key Numbers for 2025/26</h2>
+<h2>Summary of Key Numbers for 2026/27</h2>
 
 <ul>
-<li>Filing deadline: 31 January 2026</li>
-<li>First penalty: £100 from 1 February 2026</li>
-<li>Daily penalties: £10 per day from 1 May 2026 (max £900)</li>
+<li>Filing deadline: 31 January 2027</li>
+<li>First penalty: £100 from 1 February 2027</li>
+<li>Daily penalties: £10 per day from 1 May 2027 (max £900)</li>
 <li>6-month penalty: £300 or 5% of tax due</li>
 <li>12-month penalty: £300 or 5% of tax due</li>
-<li>Late payment interest: approximately 8% in 2025/26 (base rate + 4 percentage points since 6 April 2025; subject to change with the base rate)</li>
+<li>Late payment interest: approximately 8% in 2026/27 (base rate + 4 percentage points since 6 April 2025; subject to change with the base rate)</li>
 <li>Late payment penalties: 5% at 30 days, 5% at 6 months, 5% at 12 months</li>
 </ul>
 

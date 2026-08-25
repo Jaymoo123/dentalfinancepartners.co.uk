@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specia
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
-metaTitle: "Are HMO Licensing Fees Tax Deductible? UK Landlord Guide 2026"
-metaDescription: "Yes, HMO licensing fees are tax deductible for UK landlords. Cash basis vs accruals timing, capital vs revenue split on conversion costs, council fee table."
+metaTitle: "Are HMO Licensing Fees Tax Deductible? UK Guide 2026"
+metaDescription: "Yes, HMO licensing fees are tax deductible for UK landlords. Cash basis vs accruals timing, capital vs revenue split on conversion costs"
 altText: "UK landlord reviewing HMO licensing documents and tax deduction paperwork on desk"
 image: ""
 h1: "Are HMO Licensing Fees Tax Deductible for UK Landlords?"
@@ -62,7 +62,7 @@ faqs:
 </tbody>
 </table>
 
-<p>A single property can require more than one licence type. A 5-bedroom HMO in a council ward with selective licensing needs both the mandatory HMO licence and the selective licence. Both fees are independently deductible.</p>
+<p>A single property can require more than one licence type, so it is worth confirming <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">which licensing regimes cover the property</a> before budgeting for the fees. A 5-bedroom HMO in a council ward with selective licensing needs both the mandatory HMO licence and the selective licence. Both fees are independently deductible.</p>
 
 <h2>Cash Basis vs Accruals: Which Year Do You Claim?</h2>
 

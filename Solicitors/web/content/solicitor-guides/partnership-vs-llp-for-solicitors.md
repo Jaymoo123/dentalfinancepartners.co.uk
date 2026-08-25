@@ -57,7 +57,7 @@ ctaBody: "30-minute scoping call. We model partnership vs LLP on your actual num
 
 <h3>Limited company — corporation tax + dividend tax stack</h3>
 
-<p>The company pays corporation tax on its profits: 19% on the first £50,000, marginal relief between £50,000 and £250,000, 25% above £250,000. Shareholders then pay dividend tax on dividends received: 8.75% / 33.75% / 39.35% over the £500 dividend allowance. The two layers stacked typically equal or slightly beat the partnership/LLP personal rate for higher earners, but the headline saving is smaller than commonly believed.</p>
+<p>The company pays corporation tax on its profits: 19% on the first £50,000, marginal relief between £50,000 and £250,000, 25% above £250,000. Shareholders then pay dividend tax on dividends received: 10.75% / 35.75% / 39.35% (2026/27 rates, FA 2026 s.4) over the £500 dividend allowance. The two layers stacked typically equal or slightly beat the partnership/LLP personal rate for higher earners, but the headline saving is smaller than commonly believed.</p>
 
 <h2>The FA 2014 Salaried Member Rules</h2>
 

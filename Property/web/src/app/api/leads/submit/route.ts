@@ -10,8 +10,10 @@
  *     specialist" widget). Validation is relaxed to email + message; the lead is
  *     routed by its missing contact fields into the detail-capture sequence,
  *     which collects the missing name/phone before it can be forwarded.
- * The ResourceGate download surface keeps the shared direct-insert path (Annex
- * B.2 in-house consent, never forwarded, so intentionally not nurtured here).
+ * EVERY live lead surface posts here. The old ResourceGate download gate was the
+ * last direct-to-Supabase inserter and is retired (GateOrForm renders MiniCapture
+ * instead: "50 views, 0 unlocks"), so this route is now the single chokepoint and
+ * no client-side Supabase config is shipped at all.
  *
  * Flow:
  *   1. Honeypot -> store flagged (never silently lose a possible real lead) + skip.
@@ -35,6 +37,10 @@ import { verifyLead } from "@/lib/leads/verify";
 import { enrollLead } from "@/lib/leads/enroll";
 import { routePrimarySequence, LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
+import {
+  normalizeEmailForDedupe,
+  phoneDedupeKey,
+} from "@accounting-network/web-shared/leads/server";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { copyAiEnabled } from "@/lib/leads/sequence-gen";
@@ -134,13 +140,17 @@ export async function POST(req: Request) {
   // 3. Dedupe (best-effort) against a recent same-email/phone lead, else insert.
   //    A dedupe hiccup must NEVER lose a lead, so it is isolated from the insert.
   let leadId: string | null = null;
-  let existingRow: { id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null } | null = null;
+  type DedupeRow = { id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null; email?: string };
+  let existingRow: DedupeRow | null = null;
   try {
-    // Dedupe on email only. Email is regex-validated and (as a standalone eq
-    // filter) safe; folding phone into an `or=(...)` group risked breaking the
-    // PostgREST filter on stray characters, and stored phones are raw anyway.
+    // Exact source+email eq fast path first (regex-validated, safe as a
+    // standalone eq filter). On a miss, a second pass over recent same-source
+    // rows matches on the plus-alias normalised email OR the last-10-digits
+    // phone key, in JS rather than an `or=(...)` PostgREST group (which risked
+    // breaking on stray characters in raw stored phones). Real incident
+    // 2026-08-19: `kendlc2026+ma@` then `kendlc2026@` created two rows.
     const since = new Date(Date.now() - DEDUPE_WINDOW_MS).toISOString();
-    const existing = await adminSelect<{ id: string; full_name: string; phone: string; message: string; status: string; extras: Record<string, unknown> | null }>("leads", {
+    const existing = await adminSelect<DedupeRow>("leads", {
       select: "id,full_name,phone,message,status,extras",
       source: `eq.${source}`,
       email: `eq.${email}`,
@@ -152,15 +162,36 @@ export async function POST(req: Request) {
       leadId = existing.data[0].id;
       existingRow = existing.data[0];
     }
+    if (!existingRow) {
+      const cand = await adminSelect<DedupeRow>("leads", {
+        select: "id,full_name,phone,message,status,extras,email",
+        source: `eq.${source}`,
+        created_at: `gte.${since}`,
+        order: "created_at.desc",
+        limit: "50",
+      });
+      const emailKey = normalizeEmailForDedupe(email);
+      const phoneKey = phoneDedupeKey(phone);
+      const hit = cand.data.find(
+        (r) =>
+          normalizeEmailForDedupe(r.email ?? "") === emailKey ||
+          (phoneKey !== null && phoneDedupeKey(r.phone ?? "") === phoneKey),
+      );
+      if (hit) {
+        leadId = hit.id;
+        existingRow = hit;
+      }
+    }
   } catch (e) {
     console.error("[leads/submit] dedupe lookup failed (non-fatal)", e);
   }
 
+  const mergedLead = leadId !== null;
   if (leadId) {
     try {
       // Adopt corrections: use the newly submitted value when non-empty, so a
       // resubmit can fix a wrong stored phone or populate an email-only prior
-      // row (SpecialistWidget/ResourceGate inserts full_name:"", phone:"").
+      // row (SpecialistWidget inserts full_name:"", phone:"").
       // Append messages: combine so no context is lost; cap at 4 000 chars,
       // trimming from the front so the most recent context is always retained.
       const MAX_MSG = 4_000;
@@ -239,42 +270,55 @@ export async function POST(req: Request) {
   }
 
   // 4. Real-time verification (best-effort, never blocks).
+  //    verifyLead spends a Twilio Lookup and, where EMAIL_VERIFY_API_KEY is set,
+  //    a ZeroBounce credit on EVERY call, so an automated prober hitting this
+  //    route on a schedule bills real money forever and invisibly. A caller can
+  //    opt out with skip_verification, honoured only for a test lead so no real
+  //    submission can ever dodge verification by setting a flag. Test leads still
+  //    verify by DEFAULT: QA exercising the whole path, verification included, is
+  //    the point of a synthetic lead.
+  const skipVerification = isTestLead && body.skip_verification === true;
   let verifyPhone: string | undefined;
   let verifyEmail: string | undefined;
-  try {
-    const v = await verifyLead({ email, phone });
-    verifyPhone = v.phone.status;
-    verifyEmail = v.email.status;
-    await adminInsert(
-      "lead_verification",
-      {
-        lead_id: leadId,
-        phone_status: v.phone.status,
-        phone_line_type: v.phone.line_type,
-        phone_carrier: v.phone.carrier,
-        phone_e164: v.phone.e164,
-        email_status: v.email.status,
-        email_domain: v.email.domain,
-        verify_pass: v.verify_pass,
-        provider: v.provider,
-        raw: v.raw,
-      },
-      { onConflict: "lead_id" },
-    );
-    await recordLeadContactEvent(leadId, v.verify_pass ? "verify_pass" : "verify_fail", "system", {
-      phone: v.phone.status,
-      email: v.email.status,
-    });
-  } catch (e) {
-    console.error("[leads/submit] verification failed", e);
+  if (!skipVerification) {
+    try {
+      const v = await verifyLead({ email, phone });
+      verifyPhone = v.phone.status;
+      verifyEmail = v.email.status;
+      await adminInsert(
+        "lead_verification",
+        {
+          lead_id: leadId,
+          phone_status: v.phone.status,
+          phone_line_type: v.phone.line_type,
+          phone_carrier: v.phone.carrier,
+          phone_e164: v.phone.e164,
+          email_status: v.email.status,
+          email_domain: v.email.domain,
+          verify_pass: v.verify_pass,
+          provider: v.provider,
+          raw: v.raw,
+        },
+        { onConflict: "lead_id" },
+      );
+      await recordLeadContactEvent(leadId, v.verify_pass ? "verify_pass" : "verify_fail", "system", {
+        phone: v.phone.status,
+        email: v.email.status,
+      });
+    } catch (e) {
+      console.error("[leads/submit] verification failed", e);
+    }
   }
 
   // 5. Enrol + fire the instant touch via the shared enrolment path. enrollLead
   //    no-ops while dormant, routes the lead by its missing contact fields
   //    (full form -> contactability; email_only widget -> detail-capture), and
   //    fires the instant touch only on a brand-new enrolment. Best-effort: never
-  //    blocks or loses the lead.
-  try {
+  //    blocks or loses the lead. Brand-new inserts only: a dedupe merge is an
+  //    inbox already in a sequence, and re-routing it (e.g. detail-capture ->
+  //    contactability once the phone arrives) would start a second sequence
+  //    that double-chases the same person. Verification above still runs.
+  if (!mergedLead) try {
     const lead: NurtureLead = { id: leadId, full_name, email, phone, role, source, message };
     const sequenceName = routePrimarySequence(lead);
     const result = await enrollLead(lead, {

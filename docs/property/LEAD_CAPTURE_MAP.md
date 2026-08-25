@@ -6,28 +6,60 @@
 
 Many placements, few parts: every lead on the site is captured by one of **three components**, every submission flows through **one server chokepoint** (`/api/leads/submit`), into **one table** (`leads`), with **one attribution scheme** (`form_id`). What looks like "lots of different forms" is one shared form rendered in different places.
 
-## The three components (plus one deliberate exception)
+> **CORRECTED 2026-08-23 (design migration, Phase 8 item 10).** Three claims in the two
+> tables below had gone stale and are fixed in place. Each was verified against the code, not
+> assumed:
+>
+> 1. **`ResourceGate` is GONE, not a live exception.** `src/components/resources/` contains
+>    only `CalculatorPageResources.tsx` and `GateOrForm.tsx`; there is no `ResourceGate.tsx`
+>    and no `resources` component by that name anywhere. `ResourceGate`, `ResourceGateLazy`,
+>    `ExcelPreview` and `/api/resources/deliver` were deleted in `5c156c51` because the gate
+>    wrote **direct to PostgREST, bypassing `/api/leads/submit`**, and shipped client-side
+>    Supabase keys. It stays deleted (design-migration carve-out 2). The restyled twin in the
+>    designer's snapshot must not be ported back.
+> 2. **`MiniCapture`'s path and placement count were both wrong.**
+>    `src/components/forms/MiniCapture.tsx` is now a **42-line Property wrapper**; the real
+>    component was extracted to `@accounting-network/web-shared/leads/MiniCapture`
+>    (the "we deleted 739 lines" change). It has **two** consumers, not six:
+>    `blog/InlineMiniLeadForm.tsx` (`inline_mini`) and `resources/GateOrForm.tsx`
+>    (`resource_block`). Two further surfaces, `calculators/premium/MobileToolSlot.tsx`
+>    (`mobile_tool`) and `calculators/ResultGateModal.tsx` (`calc_result_gate`), import the
+>    SHARED component directly and carry their own `MiniCaptureConfig` and submit function,
+>    so "there is no per-placement form code" is no longer true of those two.
+> 3. **`exit_intent` is not live.** `ExitIntentModal` was removed on **2026-07-09** and
+>    `src/app/layout.tsx:122` still carries the comment recording it ("inert since 06-29,
+>    assistant supersedes it"). The `SpecialistWidget` handles exit intent itself with a
+>    single tailored ping (`SpecialistWidget.tsx:196`). The `exit_intent` /
+>    `exit_intent_form` ids survive in `role-labels.ts`, `value-score.ts` and
+>    `config/deploy-watch.ts` on purpose, because historical leads carry them; a live
+>    `form_id` and a historical one are different things and this table lists live ones.
+>
+> Also refreshed while here: **`calc_result` was removed on 2026-08-22** in the commit that
+> deleted `CalcResultCta` (DECISION C2), with `deploy-watch.ts:149,176-177` restating the
+> baseline in the same change. It contributed 3 starts and zero leads.
+
+## The three components (the fourth row is a deletion, kept so nobody re-adds it)
 
 | Component | File | What it is |
 |---|---|---|
 | `LeadForm` | `src/components/forms/LeadForm.tsx` | The full qualified enquiry (role, 3-part guided message, contact details). The contact page and blog side panels. |
-| `MiniCapture` | `src/components/forms/MiniCapture.tsx` | THE shared mini-form. Six placements render it with different props; there is no per-placement form code. Two-step since 2026-07 (role + situation, then contact details). |
+| `MiniCapture` | `src/components/forms/MiniCapture.tsx` (42-line Property wrapper) over `@accounting-network/web-shared/leads/MiniCapture` (the component) | THE shared mini-form. Two-step since 2026-07 (role + situation, then contact details). The wrapper has **two** consumers (`inline_mini`, `resource_block`); `mobile_tool` and `calc_result_gate` bind the shared component directly with their own config. |
 | `SpecialistWidget` | `src/components/support/SpecialistWidget.tsx` | The floating assistant. Email-only capture by design; the nurture detail-capture sequence collects name/phone afterwards. |
-| `ResourceGate` (exception) | `src/components/resources/ResourceGate.tsx` | Download gate. Email + marketing consent only, `role="resource"`, direct insert, **never forwarded to DJH** (agreement Annex B.2) and excluded from nurture reconciliation. Deliberately outside the pipeline; leave it alone. |
+| ~~`ResourceGate` (exception)~~ | ~~`src/components/resources/ResourceGate.tsx`~~ | **DELETED in `5c156c51`** and staying deleted. It wrote direct to PostgREST, bypassing `/api/leads/submit`, and shipped client-side Supabase keys. There is no download gate on the site. |
 
 ## Placement inventory (what renders where)
 
 | `form_id` | Component | Where the visitor meets it | Post-submit |
 |---|---|---|---|
 | `lead_form` | LeadForm | /contact + blog side panel | redirect to /thank-you |
-| `inline_mini` | MiniCapture | mid-article, posts without a premium tool | redirect |
-| `exit_intent` | MiniCapture | modal when leaving a blog/calculator page (stands down when the assistant is active) | redirect |
-| `calc_result_gate` | MiniCapture | before a calculator result is revealed | stays in place (must reveal the result) |
-| `calc_result` | MiniCapture | after a calculator result | redirect |
-| `mobile_tool` | MiniCapture | mobile fallback where premium tools do not fit | redirect |
-| `resource_block` | MiniCapture | in-article resource block | redirect |
+| `inline_mini` | MiniCapture (Property wrapper) | mid-article, posts without a premium tool | redirect |
+| `calc_result_gate` | shared MiniCapture, bound in `ResultGateModal.tsx` | before a calculator result is revealed | stays in place (must reveal the result) |
+| `mobile_tool` | shared MiniCapture, bound in `MobileToolSlot.tsx` | mobile fallback where premium tools do not fit | redirect |
+| `resource_block` | MiniCapture (Property wrapper) | in-article resource block | redirect |
 | `specialist_widget` | SpecialistWidget | floating, site-wide | in-thread confirmation |
-| (resource gate) | ResourceGate | gated downloads | inline, download unlocked |
+| ~~`exit_intent`~~ | ~~MiniCapture~~ | **RETIRED 2026-07-09.** `ExitIntentModal` deleted; `SpecialistWidget` handles exit intent itself. The id survives in `role-labels.ts` / `value-score.ts` / `deploy-watch.ts` for historical leads only. | n/a |
+| ~~`calc_result`~~ | ~~MiniCapture~~ | **RETIRED 2026-08-22** with `CalcResultCta` (DECISION C2). 3 starts, zero leads. `deploy-watch`'s baseline was restated in the same commit. | n/a |
+| ~~(resource gate)~~ | ~~ResourceGate~~ | **DELETED in `5c156c51`.** No gated downloads exist. | n/a |
 
 ## Attribution: one chain end to end
 

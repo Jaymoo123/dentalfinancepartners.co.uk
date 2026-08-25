@@ -176,7 +176,7 @@ faqs:
 
 <h3>Energy efficiency (MEES)</h3>
 
-<p>The current minimum is EPC band E. Since 1 April 2020 you cannot continue to let a domestic property rated F or G without a registered exemption, subject to the £3,500 (including VAT) landlord cost cap. Check every EPC's rating and expiry. The government has set out an intention to raise the minimum towards EPC band C later this decade, but no Statutory Instrument has been laid to make that law, so plan for it as likely future direction, not a current obligation. Where you do spend on insulation or heating to lift a property above the floor, note that genuine improvements add to your CGT base cost, while like-for-like repairs are a revenue expense.</p>
+<p>The current minimum is EPC band E. Since 1 April 2020 you cannot continue to let a domestic property rated F or G without a registered exemption, subject to the £3,500 (including VAT) landlord cost cap. Check <a href="/blog/landlord-tax-essentials/epc-certificate-cost-uk">every EPC's rating and expiry date</a>. The government has set out an intention to raise the minimum towards EPC band C later this decade, but no Statutory Instrument has been laid to make that law, so plan for it as likely future direction, not a current obligation. Where you do spend on insulation or heating to lift a property above the floor, note that genuine improvements add to your CGT base cost, while like-for-like repairs are a revenue expense.</p>
 
 <h3>Safety, deposits and licensing</h3>
 

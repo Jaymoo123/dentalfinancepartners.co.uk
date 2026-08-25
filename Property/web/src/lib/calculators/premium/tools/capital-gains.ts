@@ -139,7 +139,7 @@ function compute(ctx: PremiumComputeContext) {
     scenarioResults,
     breakdown: [
       { label: "Net cash after CGT (sole owner)", value: gbp(soleRes.netAfterTax), strong: true },
-      { label: "60-day report-and-pay needed?", value: sixtyDay ? "Yes — within 60 days of completion" : "No CGT due, so no 60-day return" },
+      { label: "60-day report-and-pay needed?", value: sixtyDay ? "Yes, within 60 days of completion" : "No CGT due, so no 60-day return" },
     ],
     chart: {
       data: [
@@ -169,7 +169,7 @@ export const capitalGainsPremiumTool: PremiumToolConfig = {
   topic: "capital-gains",
   title: "Capital Gains Tax on property: sole vs joint ownership",
   intro:
-    "Work out the CGT on selling a buy-to-let or second home — the gain after costs and improvements, your £3,000 allowance, Private Residence Relief for a former home, and the 18%/24% split — then see how holding it jointly with a spouse changes the bill.",
+    "Work out the CGT on selling a buy-to-let or second home: the gain after costs and improvements, your £3,000 allowance, Private Residence Relief for a former home, and the 18%/24% split. Then see how holding it jointly with a spouse changes the bill.",
   // All inputs are shown in order; PremiumCalculator caps the inputs panel height
   // and scrolls it on the compact (blog) layout, so a long list never runs tall.
   fields: [

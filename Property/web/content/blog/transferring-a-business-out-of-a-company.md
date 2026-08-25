@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Transferring Business Out of UK Limited Company: 5-Route Frame"
+metaTitle: "Transferring Business Out of UK Ltd Company: 5-Route Frame"
 metaDescription: "Property LtdCo exit routes 2026/27: asset sale, share sale, in-specie, MVL, strike-off. Disincorporation relief expired 2018. Honest tax cost comparison."
 altText: "A property founder sitting at a meeting-room table with a closed company file, dissolution form, and a property portfolio summary, representing the decision frame for transferring a property business out of a UK limited company"
 image: "https://images.pexels.com/photos/8730028/pexels-photo-8730028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -211,7 +211,7 @@ editorialNote: "Honest entity-exit decision frame for property LtdCo founders, F
 
 <h2>Strike-off with the £25,000 cap: the small-LtdCo hybrid</h2>
 
-<p>For sub-£25,000-net-assets companies, the strike-off route with FA 2012 s.1030A capital treatment is the cheapest exit. The route requires the CA 2006 s.1004 conditions (no trading in the last 3 months, no name change in the last 3 months, no application to court, no creditors owed more than £15,000 in the last 3 months) and runs through a DS01 form filing at <a href="https://www.gov.uk/government/publications/companies-house-form-ds01-strike-off-application-by-a-company">Companies House</a> with a 2-month objection window for HMRC and creditors.</p>
+<p>For sub-£25,000-net-assets companies, the strike-off route with FA 2012 s.1030A capital treatment is the cheapest exit. The route requires the CA 2006 s.1004 conditions (no trading in the last 3 months, no name change in the last 3 months, no application to court, no creditors owed more than £15,000 in the last 3 months) and runs through a DS01 form filing at <a href="https://www.gov.uk/government/publications/strike-off-a-company-from-the-register-ds01">Companies House</a> with a 2-month objection window for HMRC and creditors.</p>
 
 <p>For companies sitting just above the £25,000 cap, a hybrid route extracts the excess as a dividend before the DS01 application, leaving £25,000 of distributable reserves to flow through the capital treatment on dissolution.</p>
 

@@ -4,17 +4,25 @@ import type { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
+import type { NavItem } from "@/config/site";
 
 type PageShellProps = {
   children: ReactNode;
+  /**
+   * Primary nav, built server-side so the tool registry stays off the client.
+   * Shared with SiteFooter so the footer columns mirror the header exactly.
+   */
+  nav?: NavItem[];
 };
 
-export function PageShell({ children }: PageShellProps) {
+export function PageShell({ children, nav }: PageShellProps) {
   const pathname = usePathname();
 
   // Embeddable widgets (/embed/*) render chrome-free so they sit natively inside
-  // a partner's iframe — no site header, footer, or sticky CTA.
-  if (pathname?.startsWith("/embed")) {
+  // a partner's iframe — no site header, footer, or sticky CTA. The trailing slash
+  // matters: "/embed" is the public, indexable gallery where partners come to find
+  // the embed codes, and it needs the full site chrome.
+  if (pathname?.startsWith("/embed/")) {
     return <>{children}</>;
   }
 
@@ -26,11 +34,11 @@ export function PageShell({ children }: PageShellProps) {
       >
         Skip to content
       </a>
-      <SiteHeader />
+      <SiteHeader nav={nav} />
       <main id="main" className="flex-1">
         {children}
       </main>
-      <SiteFooter />
+      <SiteFooter nav={nav} />
     </div>
   );
 }

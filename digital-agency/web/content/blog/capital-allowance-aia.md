@@ -19,7 +19,7 @@ faqs:
 - question: Can I claim the AIA on laptops and office furniture for my agency?
   answer: Yes. Laptops, desktops, monitors, servers, office furniture, and most equipment you use to run your agency qualifies for the AIA. The key condition is that the asset must be used for business purposes. Cars, assets used for leasing, and assets with a life of more than 100 years do not qualify. Keep your invoices and claim the relief in the period you bought the item.
 - question: What happens if I miss claiming the AIA in the right tax year?
-  answer: You cannot claim the AIA for an asset after the period you bought it. If you miss the window, you must claim writing down allowances instead, which spread the relief over several years at 18% or 6% per year. This is a common mistake. Check your capital purchases before filing your tax return to ensure you capture the full relief.
+  answer: You cannot claim the AIA for an asset after the period you bought it. If you miss the window, you must claim writing down allowances instead, which spread the relief over several years at 14% or 6% per year. This is a common mistake. Check your capital purchases before filing your tax return to ensure you capture the full relief.
 - question: Do I need to be a limited company to claim the AIA?
   answer: No. The AIA is available to sole traders, partnerships, and limited companies. The £1 million limit applies to all business types. However, if you are a sole trader or partnership using the cash basis of accounting, you can only claim capital allowances on business cars. For limited companies, full expensing is also available from 1 April 2023 as an alternative with no upper limit.
 dateModified: '2026-05-20'
@@ -74,7 +74,7 @@ imageCredit:
 
 <p>The AIA does not apply to cars, assets used for leasing, or assets with a life of more than 100 years <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. It also excludes buildings and most structures, though there are specific exceptions for integral features like lifts and electrical systems.</p>
 
-<p>If you buy a company car for a director, you cannot claim the AIA on it. You would claim writing down allowances instead, at 18% or 6% per year depending on the car's CO2 emissions.</p>
+<p>If you buy a company car for a director, you cannot claim the AIA on it. You would claim writing down allowances instead, at 14% or 6% per year depending on the car's CO2 emissions. The main pool rate was reduced from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax.</p>
 
 <h2>Full Expensing: The Alternative for Companies</h2>
 

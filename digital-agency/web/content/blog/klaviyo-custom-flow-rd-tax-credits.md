@@ -26,7 +26,7 @@ faqs:
 - question: Do I need to have failed attempts to claim R&D tax credits for custom Klaviyo flows?
   answer: Not necessarily, but documented failures strengthen your claim significantly. HMRC wants to see evidence of genuine technical uncertainty. If you tried three approaches before finding one that worked, and you can describe what you learned from each failure, that is powerful evidence. If you built it first time with no uncertainty, it is probably not R&D.
 - question: Can I claim for subcontractor costs if I hired a freelance Klaviyo developer?
-  answer: Yes, but only 65% of the payments qualify under the SME scheme unless the freelancer is connected to your company (a director, shareholder, or family member). For connected subcontractors, you can claim 100% of their costs. You must also ensure the freelancer's work was genuinely R&D, not routine development.
+  answer: Yes, but only 65% of the payments to an unconnected freelancer qualify under the merged R&D scheme. If the freelancer is connected to your company (a director, shareholder, or family member), you can instead claim their actual relevant cost. You must also ensure the freelancer's work was genuinely R&D, not routine development.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -82,20 +82,20 @@ keyTakeaways:
 
 <h2>How the R&D Tax Credit Scheme Works for Agencies</h2>
 
-<p>For most agencies structured as limited companies, you claim under the <strong>SME R&D tax relief scheme</strong>. The enhanced deduction is currently 186% of qualifying expenditure (for accounting periods starting on or after 1 April 2023). That means if you spend £100,000 on qualifying R&D, you can deduct £186,000 from your taxable profits.</p>
+<p>For accounting periods beginning on or after 1 April 2024, the old separate SME and RDEC schemes were combined into a single <strong>merged R&D expenditure credit scheme</strong>. It gives a 20% taxable above-the-line credit on your qualifying expenditure, regardless of company size. Because the credit is itself taxable, the net benefit works out at roughly 15% of qualifying spend for an agency paying the 25% main rate of corporation tax, and around 16.2% for a loss-maker taxed at the 19% small-profits rate.</p>
 
-<p>If your agency is loss-making, you can surrender those losses for a payable tax credit. The credit rate for loss-making SMEs is 10% of the surrenderable loss (for periods starting on or after 1 April 2023).</p>
+<p>If your agency is loss-making, the merged-scheme credit can still be paid out as cash, subject to a PAYE and NIC cap. Loss-making SMEs that are R&D-intensive, meaning qualifying R&D is at least 30% of total expenditure, can instead claim under <strong>Enhanced R&D Intensive Support (ERIS)</strong>. ERIS keeps the more generous route of an 86% enhanced deduction plus a 14.5% payable credit, worth up to around 27p for every £1 of qualifying spend.</p>
 
-<p>For a profitable agency paying 25% corporation tax, every £100,000 of qualifying R&D spend saves you £21,500 in tax (25% of the £86,000 additional deduction). That is real money that can fund more development or improve your bottom line.</p>
+<p>For a profitable agency, every £100,000 of qualifying R&D spend generates a £20,000 credit under the merged scheme. After 25% corporation tax on that credit, the net benefit is around £15,000. That is real money that can fund more development or improve your bottom line.</p>
 
-<p>If your agency is part of a larger group or has received notifiable grants, you may need to use the <strong>RDEC (Research and Development Expenditure Credit)</strong> scheme instead. That is less generous but still worthwhile.</p>
+<p>Historically (for accounting periods beginning 1 April 2023 to 31 March 2024), most agencies claimed under the separate SME scheme, which gave a 186% enhanced deduction and a 10% payable credit for loss-makers. Those rules no longer apply to periods that begin on or after 1 April 2024.</p>
 
 <h2>What Costs You Can Claim</h2>
 
 <p>For a klaviyo custom flow r&d project, the main qualifying costs are:</p>
 <ul>
 <li><strong>Staff costs:</strong> Salaries, employer NI, and pension contributions for the developers, testers, and project managers directly working on the R&D project. You apportion their time based on the hours they spent on qualifying work.</li>
-<li><strong>Subcontractor costs:</strong> If you use external developers, 65% of the payments to them qualify under the SME scheme (unless they are connected to your company).</li>
+<li><strong>Subcontractor costs:</strong> If you use external developers, 65% of the payments to unconnected subcontractors qualify under the merged scheme. Payments to a connected subcontractor are claimed at their actual relevant cost instead.</li>
 <li><strong>Software licences:</strong> If you needed specific tools or cloud infrastructure to run the experiments, those costs can qualify. Klaviyo subscription costs themselves do not qualify unless you used a separate development instance purely for R&D.</li>
 <li><strong>Consumables:</strong> Data storage, API call costs, and any other items consumed in the R&D process.</li>
 </ul>
@@ -142,7 +142,7 @@ keyTakeaways:
 
 <p>If you are just building well-crafted automations for clients, keep doing that. It is valuable work. But do not put an R&D claim around it. The risk of an HMRC enquiry is not worth the relatively small relief you might get.</p>
 
-<p>For agencies that do have qualifying projects, the relief is substantial. A £50,000 qualifying project saves around £10,750 in corporation tax for a profitable agency. That is a meaningful amount of cash to reinvest in your team or your own technology stack.</p>
+<p>For agencies that do have qualifying projects, the relief is substantial. A £50,000 qualifying project generates a £10,000 credit under the merged scheme, worth around £7,500 in net benefit after corporation tax for a profitable agency. That is a meaningful amount of cash to reinvest in your team or your own technology stack.</p>
 
 <p>If your contractor mix has changed in the last 12 months, or if you have taken on a project that required genuine technical problem-solving, <a href="/contact">ask your accountant before year-end</a>. The claim must be made within two years of the end of the accounting period in which the R&D work took place. Miss that window, and the relief is gone permanently.</p>
 

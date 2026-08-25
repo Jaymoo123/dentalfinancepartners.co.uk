@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "generated_at": "2026-08-03",
+    "reference_year": "2024/25",
+    "edition": "Dental Earnings and Expenses Estimates, 2024/25",
+    "edition_published": "2026-07-30",
+    "timeseries_coverage": "2017/18 to 2024/25",
+    "sources": [
+      {
+        "name": "Dental Earnings and Expenses Estimates, 2024/25 (CSV)",
+        "publisher": "NHS England / NHS Digital",
+        "url": "https://files.digital.nhs.uk/EC/30B458/dentearexp_202425_csv.csv",
+        "publication_page": "https://digital.nhs.uk/data-and-information/publications/statistical/dental-earnings-and-expenses-estimates/2024-25",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-08-03",
+        "attribution": "Data sourced from NHS England Digital under the Open Government Licence v3.0. Free to cite with attribution to Dental Finance Partners."
+      },
+      {
+        "name": "Dental Earnings and Expenses UK Timeseries 2024/25 (XLSX)",
+        "publisher": "NHS England / NHS Digital",
+        "url": "https://files.digital.nhs.uk/02/EA6696/Dental%20Earnings%20and%20Expenses%20UK%20Timeseries%20202425.xlsx",
+        "publication_page": "https://digital.nhs.uk/data-and-information/publications/statistical/dental-earnings-and-expenses-estimates/2024-25",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-08-03",
+        "timeseries_source": "parsed_from_xlsx:Table 1.1 Earn - Contract Type"
+      }
+    ],
+    "notes": "Figures cover self-employed primary-care NHS dentists. The headline and the time series are ENGLAND only, taken from Table 1.1 of the UK time series workbook (Country = England, Dental Type = All, Contract Type = All). The country table also reports Wales; Scotland and Northern Ireland report on different contract categories and have no comparable All/All row. The time series starts at 2017/18 because the workbook marks England 'z Not applicable' for 2008/09 to 2016/17. Average Income Before Tax = average gross earnings minus average expenses (before income tax and national insurance). 2020/21 figures are distorted by NHS Covid support payments to dental contractors. Values are rounded to the nearest hundred pounds as published by NHS England Digital. Private earnings of dentists who are primarily private are not represented."
+  },
+  "headline": {
+    "reference_year": "2024/25",
+    "avg_net_income_england": 83000.0,
+    "median_net_income_england": 69200.0,
+    "avg_gross_earnings_england": 167500.0,
+    "avg_expenses_england": 84500.0,
+    "estimated_population_england": 20250.0,
+    "net_income_change_yoy": 4800,
+    "prior_year": "2023/24",
+    "prior_year_avg_net_income": 78200
+  },
+  "cross_sectional_latest": {
+    "national": {
+      "country": "England",
+      "year": "2024/25",
+      "avg_gross_earnings": 167500.0,
+      "avg_expenses": 84500.0,
+      "avg_net_income": 83000.0,
+      "median_net_income": 69200.0,
+      "sample_count": 14650.0,
+      "estimated_population": 20250.0
+    },
+    "by_country": [
+      {
+        "country": "England",
+        "year": "2024/25",
+        "avg_gross_earnings": 167500.0,
+        "avg_expenses": 84500.0,
+        "avg_net_income": 83000.0,
+        "median_net_income": 69200.0
+      },
+      {
+        "country": "Wales",
+        "year": "2024/25",
+        "avg_gross_earnings": 169000.0,
+        "avg_expenses": 82900.0,
+        "avg_net_income": 86100.0,
+        "median_net_income": 77600.0
+      }
+    ],
+    "by_region_england": [
+      {
+        "region_code": "East of England",
+        "year": "2024/25",
+        "avg_gross_earnings": 190500.0,
+        "avg_expenses": 100000.0,
+        "avg_net_income": 90500.0,
+        "median_net_income": 72100.0
+      },
+      {
+        "region_code": "London",
+        "year": "2024/25",
+        "avg_gross_earnings": 168000.0,
+        "avg_expenses": 91100.0,
+        "avg_net_income": 76800.0,
+        "median_net_income": 61600.0
+      },
+      {
+        "region_code": "Midlands",
+        "year": "2024/25",
+        "avg_gross_earnings": 170300.0,
+        "avg_expenses": 89100.0,
+        "avg_net_income": 81200.0,
+        "median_net_income": 68900.0
+      },
+      {
+        "region_code": "North East and Yorkshire",
+        "year": "2024/25",
+        "avg_gross_earnings": 167100.0,
+        "avg_expenses": 79200.0,
+        "avg_net_income": 87900.0,
+        "median_net_income": 74800.0
+      },
+      {
+        "region_code": "North West",
+        "year": "2024/25",
+        "avg_gross_earnings": 162700.0,
+        "avg_expenses": 82000.0,
+        "avg_net_income": 80700.0,
+        "median_net_income": 66800.0
+      },
+      {
+        "region_code": "South East",
+        "year": "2024/25",
+        "avg_gross_earnings": 155500.0,
+        "avg_expenses": 74700.0,
+        "avg_net_income": 80700.0,
+        "median_net_income": 67600.0
+      },
+      {
+        "region_code": "South West",
+        "year": "2024/25",
+        "avg_gross_earnings": 160300.0,
+        "avg_expenses": 71600.0,
+        "avg_net_income": 88700.0,
+        "median_net_income": 76600.0
+      }
+    ]
+  },
+  "timeseries_england": [
+    {
+      "year": "2017/18",
+      "avg_gross_earnings": 146700,
+      "avg_expenses": 78100,
+      "avg_net_income": 68500
+    },
+    {
+      "year": "2018/19",
+      "avg_gross_earnings": 147100,
+      "avg_expenses": 78500,
+      "avg_net_income": 68600
+    },
+    {
+      "year": "2019/20",
+      "avg_gross_earnings": 144700,
+      "avg_expenses": 76100,
+      "avg_net_income": 68600
+    },
+    {
+      "year": "2020/21",
+      "avg_gross_earnings": 141400,
+      "avg_expenses": 68900,
+      "avg_net_income": 72500
+    },
+    {
+      "year": "2021/22",
+      "avg_gross_earnings": 156100,
+      "avg_expenses": 78200,
+      "avg_net_income": 77900
+    },
+    {
+      "year": "2022/23",
+      "avg_gross_earnings": 155200,
+      "avg_expenses": 79300,
+      "avg_net_income": 75800
+    },
+    {
+      "year": "2023/24",
+      "avg_gross_earnings": 158100,
+      "avg_expenses": 79900,
+      "avg_net_income": 78200
+    },
+    {
+      "year": "2024/25",
+      "avg_gross_earnings": 167500,
+      "avg_expenses": 84500,
+      "avg_net_income": 83000
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 ---
-title: What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How to Achieve It
+title: What Is a Healthy Net Profit Margin for a Small Agency in 2026/27 and How to Achieve It
 slug: healthy-net-profit-margin-small-agency-2025-26
 canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/healthy-net-profit-margin-small-agency-2025-26
-date: '2026-05-16'
+date: '2026-07-28'
 generator: unverified/claude-era
 author: Agency Founder Finance Editorial Team
 category: Agency Finance Essentials
-metaTitle: Healthy net profit margin for a small agency in 2025/26
+metaTitle: Healthy net profit margin for a small agency in 2026/27
 metaDescription: Small agencies should target 15-25% net profit margin. Here is how to measure yours, what drives it, and where to fix leakage before year-end.
 altText: Agency founder reviewing monthly management accounts on a laptop in a UK office with a coffee cup and calculator
 image: /blog/healthy-net-profit-margin-small-agency-2025-26.jpg
@@ -15,14 +15,14 @@ imageCredit:
   photographerUrl: https://www.pexels.com/@kindelmedia
   sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
   source: Pexels
-h1: What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How to Achieve It
-summary: Most agency owners track revenue and gross margin but ignore net profit until it is too late. This article sets realistic net profit margin targets for small UK agencies in 2025/26 and walks through the specific cost lines that eat into your bottom line. You will know exactly where to look and what to fix.
+h1: What Is a Healthy Net Profit Margin for a Small Agency in 2026/27 and How to Achieve It
+summary: Most agency owners track revenue and gross margin but ignore net profit until it is too late. This article sets realistic net profit margin targets for small UK agencies in 2026/27 and walks through the specific cost lines that eat into your bottom line. You will know exactly where to look and what to fix.
 schema: ''
 faqs:
 - question: What is the difference between gross margin and net profit margin for an agency?
   answer: Gross margin is revenue minus direct costs (salaries of delivery staff, freelancers, software tools). Net profit margin is revenue minus all costs, including overheads, director salary, and tax. Gross margin tells you if your service delivery is profitable. Net profit margin tells you if your whole business model works.
 - question: Is a 10% net profit margin bad for a small agency?
-  answer: It is not terrible, but it is fragile. At 10%, a single bad month, a client loss, or an unexpected tax bill can tip you into a loss. For a small agency in 2025/26, 15-25% is the healthy target range. If you are at 10%, focus on pricing, overhead control, and client profitability before you try to grow.
+  answer: It is not terrible, but it is fragile. At 10%, a single bad month, a client loss, or an unexpected tax bill can tip you into a loss. For a small agency in 2026/27, 15-25% is the healthy target range. If you are at 10%, focus on pricing, overhead control, and client profitability before you try to grow.
 - question: How often should I check my net profit margin?
   answer: Monthly. Do not wait for year-end. Produce a profit and loss account every month using your accounting software (Xero, QuickBooks, FreeAgent). Compare your actual margin to your target. If it drops below 15% for two consecutive months, investigate the cause immediately.
 - question: Can I improve net profit margin without raising prices?
@@ -30,7 +30,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- A healthy net profit margin for a small UK agency in 2025/26 is 15% to 25%; below 10% means you are working for a wage, not building a business.
+- A healthy net profit margin for a small UK agency in 2026/27 is 15% to 25%; below 10% means you are working for a wage, not building a business.
 - Net profit margin is calculated as (Revenue minus all expenses) divided by Revenue times 100; it reveals whether your business model works, not just service delivery.
 - Most small agencies fall below 10% net profit due to scope creep, underpricing, or uncontrolled overheads; these are fixable with pricing discipline and cost management.
 - A digital agency billing £600,000 with a 20% net profit margin makes £120,000 profit, enough for dividends, pension, and reinvestment; at 8% it makes only £48,000.
@@ -40,7 +40,7 @@ keyTakeaways:
 
 <p>But nobody talks about net profit margin. Not in real numbers, anyway. The industry glosses over it because net profit is where the uncomfortable truths live. It is the number that tells you whether your agency is actually making money or just keeping you busy.</p>
 
-<p>This article gives you a specific target range for net profit margin in 2025/26, explains why most small agencies fall short, and walks through the exact cost lines you need to manage to get there. No theory. Just the numbers that matter.</p>
+<p>This article gives you a specific target range for net profit margin in 2026/27, explains why most small agencies fall short, and walks through the exact cost lines you need to manage to get there. No theory. Just the numbers that matter.</p>
 
 <h2>What Net Profit Margin Actually Means for an Agency</h2>
 
@@ -54,13 +54,13 @@ keyTakeaways:
 
 <p>Gross margin only tells you about your service delivery. Net profit margin tells you whether your business model actually works.</p>
 
-<h2>The Target: What Is Healthy for a Small Agency in 2025/26</h2>
+<h2>The Target: What Is Healthy for a Small Agency in 2026/27</h2>
 
 <p>For a small UK agency with 2-15 people and turnover between £200k and £1.5m, the healthy net profit margin range is <strong>15% to 25%</strong>.</p>
 
 <p>Below 10% and you are effectively working for a wage. Your agency is a job, not a business. Above 25% and you are either running a very lean operation, charging premium rates, or both. That is excellent, but it is not the norm.</p>
 
-<p>Here is how the ranges break down in practice for the 2025/26 tax year:</p>
+<p>Here is how the ranges break down in practice for the 2026/27 tax year:</p>
 
 <ul>
 <li><strong>Below 10%:</strong> Red flag. Your cost base is too high, your pricing is too low, or both. You are generating revenue but not building value. Exit will be difficult because buyers buy profit, not turnover.</li>
@@ -106,13 +106,13 @@ keyTakeaways:
 
 <p>Many agency founders pay themselves a salary above the £12,570 primary NI threshold. That means they pay employee NI and employer NI on the excess. On a £30,000 salary, the extra NI costs roughly £2,500 per year. That comes out of net profit.</p>
 
-<p>The standard efficient structure for 2025/26 is a salary of £12,570 (no NI due) and the rest as dividends. Dividends are paid from post-tax profits, so the company pays corporation tax on the profit first, then you take the dividend. That is still more efficient than paying yourself a higher salary because corporation tax at 19% or 25% is lower than the combined income tax and NI on salary.</p>
+<p>The standard efficient structure for 2026/27 is a salary of £12,570 (no NI due) and the rest as dividends. Dividends are paid from post-tax profits, so the company pays corporation tax on the profit first, then you take the dividend. That is still more efficient than paying yourself a higher salary because corporation tax at 19% or 25% is lower than the combined income tax and NI on salary.</p>
 
 <p>If you are paying yourself £40,000 in salary and wondering why your net profit margin is thin, that is likely a factor. Speak to your accountant about restructuring. Our <a href="/blog/salary-and-dividends">salary and dividends</a> guides cover the numbers in detail.</p>
 
 <h3>4. Corporation Tax Is a Real Cost, Not an Afterthought</h3>
 
-<p>For the 2025/26 tax year, corporation tax is 19% on profits up to £50,000, 25% on profits above £250,000, and marginal relief between those figures. If your agency makes £150,000 profit, your corporation tax bill is roughly £33,000. That is 22% of your profit gone before you take a penny.</p>
+<p>For the 2026/27 tax year, corporation tax is 19% on profits up to £50,000, 25% on profits above £250,000, and marginal relief between those figures. If your agency makes £150,000 profit, your corporation tax bill is roughly £36,000. That is 24% of your profit gone before you take a penny.</p>
 
 <p>Some founders treat corporation tax as a surprise. It should be a line item in your monthly management accounts. Forecast it. Set it aside. If you are not putting 20-25% of your net profit into a tax reserve account every month, you are misreading your true net profit margin.</p>
 
@@ -179,9 +179,9 @@ keyTakeaways:
 <li>Overheads (rent, admin, marketing, insurance, accountancy, travel): £200,000</li>
 <li>Directors' salary: £12,570</li>
 <li>Net profit before tax: £212,430</li>
-<li>Corporation tax (estimated at 22% marginal rate): £46,735</li>
-<li>Net profit after tax: £165,695</li>
-<li>Net profit margin: 19.5%</li>
+<li>Corporation tax (estimated at marginal rate): £52,544</li>
+<li>Net profit after tax: £159,886</li>
+<li>Net profit margin: 18.8%</li>
 </ul>
 
 <p>That is a healthy agency. They have a 50% gross margin, controlled overheads at 23.5% of revenue, and a net profit margin just under 20%. They could improve by raising rates or cutting overheads further, but they are in the target zone.</p>
@@ -200,4 +200,4 @@ keyTakeaways:
 
 <p>Net profit margin is the single most important number in your agency. Not revenue. Not gross margin. Not headcount. Net profit margin tells you whether your business is sustainable, whether it has value, and whether it is worth the stress.</p>
 
-<p>Target 15-25% for 2025/26. Measure it monthly. Fix the leaks. And if you are not there yet, start with the five actions above. You will see a difference within a quarter.</p>
+<p>Target 15-25% for 2026/27. Measure it monthly. Fix the leaks. And if you are not there yet, start with the five actions above. You will see a difference within a quarter.</p>

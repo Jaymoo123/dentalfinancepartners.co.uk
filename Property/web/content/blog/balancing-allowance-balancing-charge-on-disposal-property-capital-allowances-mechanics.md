@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "Balancing Allowance / Charge on Property CA Disposal"
 metaDescription: "How CAA 2001 ss.55 and 61 work on commercial property disposal. AQE vs TDR, the eight disposal events, the s.198 election trap, MVL clawback, SBA contrast."
 altText: "Exterior view of contemporary office buildings under a clear blue sky, representing the kind of commercial property sale that triggers balancing-allowance and balancing-charge events under the Capital Allowances Act 2001"
-image: "https://images.pexels.com/photos/16495231/pexels-photo-16495231.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/16495231/pexels-photo-16495231.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pablo Di Zara"
   photographer_url: "https://www.pexels.com/@pablo-di-zara-532634209"

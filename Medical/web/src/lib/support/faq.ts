@@ -6,7 +6,7 @@
  *
  * Every answer is short, accurate (no personal calculations), HP-traced with
  * tax-year tags, points to the matching calculator, and ends the deep cases at
- * "ask a specialist for your practice's numbers". No em-dashes. No Reflex/DJH
+ * "ask a specialist for your practice's numbers". No em-dashes. No named firms
  * mention. No chartered/qualified/MLR claim.
  *
  * NHS pension / annual allowance / incorporation and the salaried-vs-partner-vs-locum

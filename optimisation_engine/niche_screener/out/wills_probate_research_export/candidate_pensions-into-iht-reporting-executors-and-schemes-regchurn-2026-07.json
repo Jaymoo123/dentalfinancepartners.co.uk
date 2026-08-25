@@ -1,0 +1,28 @@
+{
+  "candidate_id": "pensions-into-iht-reporting-executors-and-schemes-regchurn-2026-07",
+  "vertical": "pensions into IHT reporting (executors and schemes)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-information-sharing-regulations",
+      "excerpt": "This technical consultation seeks comments on the draft secondary legislation on changes to the information sharing regulations in connection with Inheritance Tax on Pensions.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "inheritance tax on pensions — information sharing regulations",
+    "inheritance tax on pensions information sharing"
+  ],
+  "buyer_hypothesis": {
+    "who": "personal representatives of estates with pension wealth; c. 49,000 affected estates per year (HMRC figures)",
+    "proof": "stated in https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-information-sharing-regulations"
+  },
+  "event_hypothesis": {
+    "what": "IHT due on pension pots; information duties between executors and schemes",
+    "date": "2027-04-06",
+    "source": "https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-information-sharing-regulations"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

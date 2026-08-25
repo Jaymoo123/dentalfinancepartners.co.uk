@@ -1,0 +1,492 @@
+{
+  "generated": "2026-07-24",
+  "scope": "UK divorce finances competitor corpus. Harvested via sitemap mining, finance-relevant URLs only.",
+  "domains_ok": [
+    "stowefamilylaw.co.uk", "mediateuk.co.uk", "divorce-online.co.uk", "amicable.io",
+    "wiselaw.co.uk", "unwildered.co.uk", "evolvefamilylaw.co.uk", "familylawpartners.co.uk",
+    "harbourfamilylaw.co.uk", "raydensolicitors.co.uk", "divorcesolicitors.com",
+    "family-lawfirm.co.uk", "onlinedivorce.co.uk", "cleanbreakdivorce.co.uk", "ribetmyles.co.uk"
+  ],
+  "domains_failed": {
+    "crispandco.com": "HTTP 522 origin down (2 attempts)",
+    "moneyhelper.org.uk": "HTTP 403 bot-gated",
+    "nicolawilliams.co.uk": "sitemap 404"
+  },
+  "topics": [
+    {
+      "topic": "Pensions on divorce",
+      "coverage": 13,
+      "must_have": true,
+      "member_urls": [
+        "https://www.mediateuk.co.uk/the-ultimate-guide-to-pensions-on-divorce/",
+        "https://www.divorce-online.co.uk/blog/what-is-pension-offsetting-in-divorce/",
+        "https://www.divorce-online.co.uk/blog/pension-valuation-for-divorce/",
+        "https://www.divorce-online.co.uk/blog/pension-earmarking-attachment/",
+        "https://www.divorce-online.co.uk/divorce-and-pensions-division/pension-sharing-orders-in-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/pension-splitting-in-divorce/",
+        "https://www.stowefamilylaw.co.uk/stowe-support/understanding-pensions-in-divorce-what-is-a-cetv/",
+        "https://amicable.io/divorce-and-pension-sharing-orders",
+        "https://www.familylawpartners.co.uk/blog/how-much-of-my-armed-forces-pension-is-my-ex-entitled-to",
+        "https://www.unwildered.co.uk/legal-blog/police-pension-divorce-uk",
+        "https://www.wiselaw.co.uk/claim-half-state-pension-after-divorce/",
+        "https://www.harbourfamilylaw.co.uk/pension-sharing-order-guide",
+        "https://www.evolvefamilylaw.co.uk/blog/how-to-offset-pension-claims-on-divorce/",
+        "https://www.family-lawfirm.co.uk/blog/pension-sharing-orders-a-guide/",
+        "https://www.divorcesolicitors.com/pensions-divorce-or-dissolution/",
+        "https://onlinedivorce.co.uk/guidance/how-does-a-pension-sharing-order-work/",
+        "https://www.ribetmyles.co.uk/news/divorce-and-pensions"
+      ]
+    },
+    {
+      "topic": "Family home and property division",
+      "coverage": 12,
+      "must_have": true,
+      "member_urls": [
+        "https://www.mediateuk.co.uk/who-gets-the-house-in-a-divorce-uk/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-happens-to-the-house-after-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/property-adjustment-orders/",
+        "https://www.stowefamilylaw.co.uk/stowe-support/property-and-divorce-mesher-orders-and-martin-orders/",
+        "https://www.divorce-online.co.uk/blog/can-i-force-the-sale-of-my-house-in-a-divorce/",
+        "https://www.divorce-online.co.uk/divorce-and-property-division/transfer-of-equity-and-property-ownership-after-divorce-uk/",
+        "https://amicable.io/what-is-a-mesher-order",
+        "https://amicable.io/guide-to-dividing-property-after-divorce",
+        "https://www.evolvefamilylaw.co.uk/blog/who-gets-the-house-in-a-divorce/",
+        "https://www.evolvefamilylaw.co.uk/blog/valuing-property-in-your-divorce/",
+        "https://www.familylawpartners.co.uk/blog/does-the-family-home-have-to-be-sold-immediately-if-you-get-divorced",
+        "https://www.harbourfamilylaw.co.uk/who-gets-the-house-in-a-divorce",
+        "https://www.family-lawfirm.co.uk/blog/will-i-lose-my-family-home-if-we-divorce/",
+        "https://onlinedivorce.co.uk/guidance/keeping-the-family-home-after-a-divorce/",
+        "https://www.wiselaw.co.uk/spouse-paid-nothing-towards-mortgage-get-half/",
+        "https://www.ribetmyles.co.uk/news/what-happens-to-the-house-in-a-divorce",
+        "https://www.unwildered.co.uk/legal-blog/surviving-divorce-mortgage-deadlock-practical-help-for-parents"
+      ]
+    },
+    {
+      "topic": "Financial settlement basics and entitlement",
+      "coverage": 11,
+      "must_have": true,
+      "member_urls": [
+        "https://www.divorce-online.co.uk/blog/what-am-i-entitled-to-in-divorce/",
+        "https://www.divorce-online.co.uk/blog/is-divorce-always-split-50-50/",
+        "https://www.divorce-online.co.uk/blog/typical-uk-fair-divorce-settlement-examples/",
+        "https://www.divorce-online.co.uk/blog/matrimonial-vs-non-matrimonial-assets-in-divorce/",
+        "https://www.mediateuk.co.uk/divorce-70-30-asset-split-is-it-fair/",
+        "https://www.mediateuk.co.uk/section-25-marital-factors/",
+        "https://www.stowefamilylaw.co.uk/stowe-support/divorce-finances-explained-what-do-needs-and-sharing-really-mean/",
+        "https://amicable.io/is-50-50-fair-when-dividing-money-and-property",
+        "https://www.evolvefamilylaw.co.uk/blog/will-i-get-half-in-a-divorce-settlement-uk/",
+        "https://www.familylawpartners.co.uk/blog/what-am-i-entitled-to-in-a-divorce",
+        "https://www.harbourfamilylaw.co.uk/our-guide-to-reaching-a-financial-settlement",
+        "https://www.family-lawfirm.co.uk/blog/what-am-i-entitled-to-in-a-divorce-settlement/",
+        "https://www.divorcesolicitors.com/uk-divorce-settlement/",
+        "https://www.wiselaw.co.uk/what-assets-typically-split-divorce/",
+        "https://www.unwildered.co.uk/legal-blog/divorce-70-30-asset-split-uk-when-and-why-does-it-happen"
+      ]
+    },
+    {
+      "topic": "Spousal maintenance",
+      "coverage": 11,
+      "must_have": true,
+      "member_urls": [
+        "https://www.mediateuk.co.uk/how-spousal-maintenance-is-calculated-a-step-by-step-guide/",
+        "https://www.mediateuk.co.uk/can-spousal-maintenance-be-changed-after-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-is-spousal-maintenance-uk/",
+        "https://amicable.io/what-is-spousal-maintenance",
+        "https://www.evolvefamilylaw.co.uk/blog/can-i-stop-spousal-maintenance-for-life/",
+        "https://www.familylawpartners.co.uk/blog/can-a-spousal-maintenance-order-be-varied",
+        "https://www.familylawpartners.co.uk/blog/rpi-and-cpi-indexing-spousal-maintenance-and-inflation",
+        "https://www.harbourfamilylaw.co.uk/a-guide-to-spousal-maintenance",
+        "https://www.family-lawfirm.co.uk/blog/how-long-is-spousal-maintenance-paid-for/",
+        "https://www.family-lawfirm.co.uk/blog/nominal-spousal-maintenance-order-what-is-it/",
+        "https://onlinedivorce.co.uk/guidance/d81-spousal-maintenance/",
+        "https://www.wiselaw.co.uk/lump-sum-or-maintenance-after-divorce/",
+        "https://www.ribetmyles.co.uk/news/a-guide-to-spousal-maintenance"
+      ]
+    },
+    {
+      "topic": "Divorce costs and funding",
+      "coverage": 11,
+      "must_have": true,
+      "member_urls": [
+        "https://www.mediateuk.co.uk/the-realistic-costs-of-divorce-uk/",
+        "https://www.mediateuk.co.uk/how-to-pay-for-your-divorce/",
+        "https://www.divorce-online.co.uk/blog/how-much-does-a-divorce-cost/",
+        "https://www.divorce-online.co.uk/blog/who-pays-the-legal-fees-in-a-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/who-pays-legal-fees-divorce/",
+        "https://amicable.io/how-much-does-divorce-cost",
+        "https://www.evolvefamilylaw.co.uk/blog/how-much-does-a-divorce-cost/",
+        "https://www.familylawpartners.co.uk/blog/how-can-i-fund-my-family-law-case",
+        "https://www.harbourfamilylaw.co.uk/what-is-the-average-cost-of-divorce-in-england",
+        "https://www.family-lawfirm.co.uk/blog/divorce-costs-uk-who-pays/",
+        "https://onlinedivorce.co.uk/guidance/help-with-court-fees/",
+        "https://www.cleanbreakdivorce.co.uk/post/how-to-get-help-with-court-fees-for-divorce-applications-in-the-uk",
+        "https://www.wiselaw.co.uk/how-much-does-a-divorce-cost-if-both-parties-agree/"
+      ]
+    },
+    {
+      "topic": "Financial disclosure and Form E / D81",
+      "coverage": 11,
+      "must_have": true,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-is-form-e/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-is-financial-disclosure-divorce/",
+        "https://www.mediateuk.co.uk/what-is-form-e-divorce-and-do-i-need-to-complete-it/",
+        "https://www.mediateuk.co.uk/guide-to-the-new-form-d81/",
+        "https://www.divorce-online.co.uk/blog/form-e-divorce-explained/",
+        "https://www.divorce-online.co.uk/blog/d81-form-ex-refuses-to-complete/",
+        "https://amicable.io/financial-disclosure-and-divorce",
+        "https://www.evolvefamilylaw.co.uk/blog/is-form-e-compulsory-in-divorce/",
+        "https://www.evolvefamilylaw.co.uk/blog/failure-disclose-financial-information-divorce-uk/",
+        "https://www.familylawpartners.co.uk/blog/what-is-financial-disclosure",
+        "https://www.family-lawfirm.co.uk/blog/how-to-complete-a-form-e-financial-disclosure-document/",
+        "https://onlinedivorce.co.uk/guidance/d81-statement-of-information-overview/",
+        "https://www.wiselaw.co.uk/can-i-refuse-financial-disclosure/",
+        "https://www.cleanbreakdivorce.co.uk/post/financial-disclosure-for-a-consent-order-what-you-need-to-know"
+      ]
+    },
+    {
+      "topic": "Prenups, postnups and asset protection",
+      "coverage": 11,
+      "must_have": true,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-is-a-prenup/",
+        "https://www.divorce-online.co.uk/blog/prenup-pros-and-cons-uk/",
+        "https://www.divorce-online.co.uk/blog/what-is-a-postnuptial-agreement/",
+        "https://www.evolvefamilylaw.co.uk/blog/are-prenuptial-agreements-legally-binding-in-the-uk/",
+        "https://www.evolvefamilylaw.co.uk/blog/prenups-for-pensioners/",
+        "https://www.familylawpartners.co.uk/blog/what-are-pre-nuptial-and-post-nuptial-agreements-what-are-their-advantages-and-disadvantages",
+        "https://www.harbourfamilylaw.co.uk/pre-nuptial-agreements-and-divorce",
+        "https://raydensolicitors.co.uk/areas/prenuptial-agreement-solicitors-uk/",
+        "https://www.divorcesolicitors.com/prenuptial-agreements/",
+        "https://www.family-lawfirm.co.uk/blog/are-prenups-legally-binding-in-the-uk/",
+        "https://www.wiselaw.co.uk/write-your-own-prenup/",
+        "https://www.ribetmyles.co.uk/news/complete-guide-to-prenups-in-england-and-wales-high-net-worth-individuals"
+      ]
+    },
+    {
+      "topic": "Consent orders",
+      "coverage": 9,
+      "must_have": true,
+      "member_urls": [
+        "https://www.mediateuk.co.uk/consent-order-cost/",
+        "https://www.mediateuk.co.uk/consent-order-rejected/",
+        "https://www.mediateuk.co.uk/what-happens-if-a-consent-order-is-breached/",
+        "https://www.divorce-online.co.uk/consent-order/what-is-a-financial-consent-order/",
+        "https://amicable.io/what-is-a-consent-order",
+        "https://amicable.io/can-i-draft-my-own-consent-order",
+        "https://www.evolvefamilylaw.co.uk/blog/how-to-write-a-consent-order-for-divorce/",
+        "https://www.familylawpartners.co.uk/blog/what-is-a-consent-order-in-divorce-and-why-do-i-need-one",
+        "https://www.family-lawfirm.co.uk/blog/can-a-consent-order-be-changed-2/",
+        "https://onlinedivorce.co.uk/guidance/how-to-make-the-application-for-a-consent-order/",
+        "https://www.cleanbreakdivorce.co.uk/post/what-is-a-consent-order-a-complete-guide-for-divorcing-couples-in-the-uk",
+        "https://www.wiselaw.co.uk/judge-refuse-consent-order/"
+      ]
+    },
+    {
+      "topic": "Business assets and company divorce",
+      "coverage": 9,
+      "must_have": true,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/limited-company-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/companies-and-divorce/",
+        "https://www.mediateuk.co.uk/business-assets-in-divorce/",
+        "https://www.mediateuk.co.uk/divorce-and-the-family-business/",
+        "https://www.divorce-online.co.uk/blog/is-a-limited-company-protected-from-divorce/",
+        "https://www.unwildered.co.uk/legal-blog/divorce-business-valuation-uk",
+        "https://www.familylawpartners.co.uk/blog/businesses-and-divorce-what-approach-does-the-court-take",
+        "https://www.familylawpartners.co.uk/blog/shareholder-agreements-and-divorce",
+        "https://raydensolicitors.co.uk/areas/family-business-dividing-assets-divorce/",
+        "https://www.family-lawfirm.co.uk/blog/divorce-and-business-will-you-have-to-sell-the-golden-goose/",
+        "https://www.ribetmyles.co.uk/news/divorce-business-assets-division"
+      ]
+    },
+    {
+      "topic": "Clean break orders",
+      "coverage": 8,
+      "must_have": true,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/clean-break-orders/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/clean-break-or-spousal-maintenance/",
+        "https://www.mediateuk.co.uk/ex-wont-sign-a-clean-break-order/",
+        "https://www.divorce-online.co.uk/consent-order/clean-break-order/what-is-a-clean-break-financial-order/",
+        "https://www.divorce-online.co.uk/consent-order/do-you-need-a-clean-break-order-if-you-have-no-assets/",
+        "https://amicable.io/what-is-a-clean-break-following-divorce",
+        "https://www.familylawpartners.co.uk/blog/what-is-a-clean-break-order",
+        "https://www.family-lawfirm.co.uk/blog/how-important-is-a-clean-break-in-divorce/",
+        "https://onlinedivorce.co.uk/guidance/clean-break-clause-explained/",
+        "https://www.cleanbreakdivorce.co.uk/post/do-i-need-a-consent-order-for-divorce"
+      ]
+    },
+    {
+      "topic": "Crypto and digital assets in divorce",
+      "coverage": 8,
+      "must_have": false,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/cryptocurrency-and-divorce/",
+        "https://amicable.io/cryptocurrency-and-divorce",
+        "https://www.divorce-online.co.uk/blog/hidden-cryptocurrency-assets-divorce-uk/",
+        "https://www.evolvefamilylaw.co.uk/blog/divorce-cryptocurrency/",
+        "https://www.family-lawfirm.co.uk/blog/new-ways-of-hiding-assets-in-divorce-bitcoin-and-paypal/",
+        "https://www.ribetmyles.co.uk/news/cryptoassets-nfts-and-digital-assets-in-divorce-england-amp-wales-a-practical-guide",
+        "https://www.unwildered.co.uk/legal-blog/suspect-your-hubby-is-diding-crypto-how-to-trace-it",
+        "https://www.wiselaw.co.uk/declare-hide-crypto-assets-divorce/"
+      ]
+    },
+    {
+      "topic": "Post-divorce claims and finality (remarriage trap, reopening settlements)",
+      "coverage": 7,
+      "must_have": false,
+      "member_urls": [
+        "https://www.divorce-online.co.uk/blog/can-my-ex-claim-money-after-divorce/",
+        "https://www.divorce-online.co.uk/the-remarriage-trap-explained/",
+        "https://www.divorce-online.co.uk/blog/can-divorce-settlements-be-reopened-or-do-they-expire/",
+        "https://www.mediateuk.co.uk/can-i-remarry-without-a-financial-consent-order/",
+        "https://www.harbourfamilylaw.co.uk/can-my-ex-claim-money-after-divorce",
+        "https://www.evolvefamilylaw.co.uk/blog/reopening-a-financial-claim-after-a-divorce/",
+        "https://www.family-lawfirm.co.uk/blog/vince-v-wyatt-case-shows-consent-orders-are-essential/",
+        "https://www.unwildered.co.uk/legal-blog/challenge-or-appeal-your-financial-remedy-order-hidden-assets-barder-events",
+        "https://www.unwildered.co.uk/legal-blog/can-my-ex-wife-claim-money-after-i-remarry-uk"
+      ]
+    },
+    {
+      "topic": "Inheritance, gifts and family money",
+      "coverage": 7,
+      "must_have": false,
+      "member_urls": [
+        "https://amicable.io/inheritance-and-divorce",
+        "https://amicable.io/gift-or-loan-in-divorce",
+        "https://www.divorce-online.co.uk/blog/how-does-the-law-treat-gifts-in-a-divorce/",
+        "https://www.divorce-online.co.uk/consent-order/inheritance-and-divorce/",
+        "https://www.evolvefamilylaw.co.uk/blog/treatment-of-family-loans-in-divorce-and-financial-settlement-proceedings/",
+        "https://www.evolvefamilylaw.co.uk/blog/gifted-deposits-and-how-to-protect-them/",
+        "https://www.familylawpartners.co.uk/blog/the-bank-of-mum-and-dad-to-lend-to-gift-or-to-not-to-advance-at-all",
+        "https://www.harbourfamilylaw.co.uk/important-consideration-for-couples-buying-home-using-bomad",
+        "https://www.wiselaw.co.uk/early-inheritance-divorce/",
+        "https://www.ribetmyles.co.uk/news/divorce-and-inheritance"
+      ]
+    },
+    {
+      "topic": "Separation and cohabitation agreements, unmarried splits",
+      "coverage": 7,
+      "must_have": false,
+      "member_urls": [
+        "https://www.family-lawfirm.co.uk/blog/separation-agreements-are-they-legally-binding/",
+        "https://www.mediateuk.co.uk/marital-rights-vs-co-habiting-rights/",
+        "https://www.mediateuk.co.uk/non-married-couple-property-rights/",
+        "https://www.divorce-online.co.uk/blog/can-you-draft-your-own-cohabitation-agreement/",
+        "https://amicable.io/financial-separation",
+        "https://www.familylawpartners.co.uk/blog/equitable-accounting-what-unmarried-home-owners-need-to-know",
+        "https://raydensolicitors.co.uk/areas/cohabitation-agreements-solicitors/",
+        "https://onlinedivorce.co.uk/guidance/why-you-need-a-cohabitation-agreement/",
+        "https://www.cleanbreakdivorce.co.uk/post/are-separation-agreements-legally-binding-for-divorce"
+      ]
+    },
+    {
+      "topic": "Hidden assets and enforcement (tracing, penalties, freezing orders, forensic accountants)",
+      "coverage": 6,
+      "must_have": false,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/stowe-support/hidden-financial-assets-in-divorce/",
+        "https://www.stowefamilylaw.co.uk/stowe-support/heres-why-you-need-a-forensic-accountant-on-your-divorce-team/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-is-a-freezing-order/",
+        "https://www.divorce-online.co.uk/blog/penalty-for-hiding-assets-in-divorce/",
+        "https://www.evolvefamilylaw.co.uk/blog/how-are-lawyers-able-to-find-hidden-assets-during-a-divorce/",
+        "https://www.evolvefamilylaw.co.uk/blog/applying-for-a-freezing-injunction-order-to-stop-my-ex-partner-from-selling-assets/",
+        "https://www.wiselaw.co.uk/find-hidden-bank-account-spouse-divorce/",
+        "https://www.ribetmyles.co.uk/news/hiding-assets-in-a-divorce-a-costly-and-risky-mistake",
+        "https://www.unwildered.co.uk/legal-blog/challenge-or-appeal-your-financial-remedy-order-hidden-assets-barder-events"
+      ]
+    },
+    {
+      "topic": "Financial court process (Form A, financial remedy, FDR, hearings, order types)",
+      "coverage": 6,
+      "must_have": false,
+      "member_urls": [
+        "https://www.mediateuk.co.uk/form-a-divorce/",
+        "https://www.mediateuk.co.uk/what-happens-after-form-a-is-filed/",
+        "https://www.divorce-online.co.uk/blog/financial-remedy-order-and-proceedings/",
+        "https://www.divorce-online.co.uk/blog/what-is-a-lump-sum-order-in-divorce/",
+        "https://www.stowefamilylaw.co.uk/stowe-support/a-guide-to-financial-dispute-resolution/",
+        "https://www.familylawpartners.co.uk/blog/final-financial-hearings-on-divorce-what-to-expect",
+        "https://www.familylawpartners.co.uk/blog/financial-dispute-resolution-fdr-appointments-10-things-to-think-about",
+        "https://onlinedivorce.co.uk/guidance/making-the-application-for-a-contested-financial-order/",
+        "https://www.unwildered.co.uk/legal-blog/vary-financial-order-or-maintenance-pending-suit"
+      ]
+    },
+    {
+      "topic": "Mortgages and credit after divorce",
+      "coverage": 6,
+      "must_have": false,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/what-happens-to-joint-mortgage-when-you-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/does-divorce-affect-credit-rating/",
+        "https://www.wiselaw.co.uk/remove-ex-mortgage-title-deeds/",
+        "https://www.wiselaw.co.uk/divorce-affect-mortgage-credit-score/",
+        "https://www.ribetmyles.co.uk/news/divorce-your-mortgage-the-essential-guide-for-homeowners-in-england-wales",
+        "https://www.ribetmyles.co.uk/news/divorce-and-credit-score-what-you-need-to-know",
+        "https://www.family-lawfirm.co.uk/blog/divorce-mortgages-help-for-divorcing-couples/",
+        "https://amicable.io/silver-splitters-lifetime-mortgage-help-separate-later-life",
+        "https://www.unwildered.co.uk/legal-blog/surviving-divorce-mortgage-deadlock-practical-help-for-parents"
+      ]
+    },
+    {
+      "topic": "High net worth divorce (Duxbury, trusts, share options, bonuses, private equity)",
+      "coverage": 6,
+      "must_have": false,
+      "member_urls": [
+        "https://www.ribetmyles.co.uk/news/duxbury-calculations",
+        "https://www.ribetmyles.co.uk/news/divorce-private-equity",
+        "https://www.ribetmyles.co.uk/news/divorce-and-share-options",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/trusts-during-divorce/",
+        "https://www.unwildered.co.uk/legal-blog/high-net-worth-divorce-in-england-and-wales-uk",
+        "https://raydensolicitors.co.uk/areas/family-trusts-assets-solicitors/",
+        "https://www.familylawpartners.co.uk/blog/will-i-have-to-share-my-bonus-payments-if-we-divorce",
+        "https://www.wiselaw.co.uk/bonuses-treated-divorce/"
+      ]
+    },
+    {
+      "topic": "Tax on divorce (CGT, stamp duty, maintenance taxation)",
+      "coverage": 5,
+      "must_have": true,
+      "whitespace": true,
+      "member_urls": [
+        "https://amicable.io/capital-gains-tax-and-divorce-or-separation",
+        "https://www.familylawpartners.co.uk/blog/capital-gains-tax-recent-changes-for-separating-couples",
+        "https://www.wiselaw.co.uk/capital-gains-tax-divorce/",
+        "https://www.wiselaw.co.uk/how-stamp-duty-affected-when-divorcing/",
+        "https://www.wiselaw.co.uk/divorce-costs-tax-deductible-claim-vat-back/",
+        "https://www.mediateuk.co.uk/is-spousal-maintenance-classed-as-income/",
+        "https://www.evolvefamilylaw.co.uk/blog/divorce-and-tax/",
+        "https://raydensolicitors.co.uk/areas/tax-implications/"
+      ]
+    },
+    {
+      "topic": "Child maintenance finance edges (school fees, Schedule 1, savings)",
+      "coverage": 5,
+      "must_have": false,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/who-pays-school-fees-after-divorce/",
+        "https://www.stowefamilylaw.co.uk/family-law/finance/offshore-income-and-child-support/",
+        "https://www.mediateuk.co.uk/what-is-a-schedule-1-application/",
+        "https://www.familylawpartners.co.uk/blog/who-pays-the-school-fees-on-divorce",
+        "https://amicable.io/guide-to-child-maintenance",
+        "https://www.wiselaw.co.uk/savings-count-towards-child-maintenance-calculations/"
+      ]
+    },
+    {
+      "topic": "Money after divorce (budgeting, income impact, rebuilding)",
+      "coverage": 5,
+      "must_have": false,
+      "member_urls": [
+        "https://amicable.io/how-to-budget-following-separation",
+        "https://amicable.io/relationship-with-money-after-divorce",
+        "https://www.unwildered.co.uk/legal-blog/how-can-i-afford-to-live-on-my-own-after-divorce-uk",
+        "https://www.evolvefamilylaw.co.uk/blog/the-impact-of-divorce-on-your-income/",
+        "https://www.stowefamilylaw.co.uk/stowe-support/take-control-of-your-finances-after-divorce/",
+        "https://www.wiselaw.co.uk/side-jobs-after-divorce/"
+      ]
+    },
+    {
+      "topic": "Debt and divorce",
+      "coverage": 4,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/how-is-debt-divided-in-divorce/",
+        "https://amicable.io/debt-and-divorce",
+        "https://www.divorce-online.co.uk/blog/am-i-responsible-for-my-exs-debt-following-a-divorce/",
+        "https://www.divorce-online.co.uk/blog/who-pays-the-household-bills-during-a-divorce/",
+        "https://www.wiselaw.co.uk/liable-husband-wife-debt-die/"
+      ]
+    },
+    {
+      "topic": "Later-life divorce (silver splitters)",
+      "coverage": 4,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.divorce-online.co.uk/blog/silver-splitters-divorce-explained/",
+        "https://www.divorce-online.co.uk/blog/financial-consequences-of-getting-divorced-later-in-life/",
+        "https://amicable.io/silver-splitters-state-pensions",
+        "https://amicable.io/silver-splitters-lifetime-mortgage-help-separate-later-life",
+        "https://www.evolvefamilylaw.co.uk/blog/prenups-for-pensioners/",
+        "https://www.wiselaw.co.uk/claim-half-state-pension-after-divorce/"
+      ]
+    },
+    {
+      "topic": "Pension sharing implementation mechanics",
+      "coverage": 3,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.unwildered.co.uk/legal-blog/pension-sharing-order-what-does-the-four-month-rule-mean",
+        "https://onlinedivorce.co.uk/guidance/how-long-does-pension-sharing-take/",
+        "https://www.divorce-online.co.uk/blog/how-to-implement-a-pension-sharing-order/",
+        "https://www.divorce-online.co.uk/blog/how-long-after-a-divorce-can-you-claim-pension/"
+      ]
+    },
+    {
+      "topic": "Interim support (maintenance pending suit, legal services payment orders)",
+      "coverage": 3,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.unwildered.co.uk/legal-blog/maintenance-pending-suit-steps-towards-winning",
+        "https://www.wiselaw.co.uk/legal-services-payments-orders/",
+        "https://www.family-lawfirm.co.uk/blog/financial-support-even-before-divorce-is-granted/",
+        "https://onlinedivorce.co.uk/guidance/d81-interim-maintenance/"
+      ]
+    },
+    {
+      "topic": "Financial abuse",
+      "coverage": 3,
+      "must_have": false,
+      "member_urls": [
+        "https://amicable.io/financial-abuse-and-divorce-or-separation",
+        "https://www.stowefamilylaw.co.uk/stowe-support/financial-abuse-what-is-it-and-what-are-the-signs/",
+        "https://www.wiselaw.co.uk/financial-abuse-family-proceedings/"
+      ]
+    },
+    {
+      "topic": "Employment money events (redundancy, bonuses, earning capacity)",
+      "coverage": 3,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.stowefamilylaw.co.uk/family-law/finance/redundancy-financial-settlement/",
+        "https://www.wiselaw.co.uk/husband-wife-entitled-redundancy-after-divorce/",
+        "https://www.wiselaw.co.uk/future-earning-potential-affect-divorce-settlement/",
+        "https://www.familylawpartners.co.uk/blog/waggott-v-waggott-is-earning-capacity-an-asset-that-should-be-shared-on-divorce"
+      ]
+    },
+    {
+      "topic": "Settlement calculators and worked examples",
+      "coverage": 2,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.divorce-online.co.uk/divorce-settlement-calculator/",
+        "https://www.divorce-online.co.uk/blog/typical-uk-fair-divorce-settlement-examples/",
+        "https://amicable.io/divorce-court-fees-calculator"
+      ]
+    },
+    {
+      "topic": "Benefits and divorce (universal credit)",
+      "coverage": 1,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.wiselaw.co.uk/how-does-divorce-affect-universal-credit/"
+      ]
+    },
+    {
+      "topic": "Insurance after divorce (life cover securing maintenance)",
+      "coverage": 1,
+      "must_have": false,
+      "whitespace": true,
+      "member_urls": [
+        "https://www.wiselaw.co.uk/life-insurance-health-insurance-after-divorce/"
+      ]
+    }
+  ]
+}

@@ -513,10 +513,12 @@ export default function HomePage() {
                 Online Seller Index.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Data for UK marketplace sellers: platform-registered seller counts, VAT registration
-                rates by category, platform-reporting volumes and the tax metrics that seller
-                businesses use to benchmark their position. An evidence base for the seller community,
-                not a marketing piece.
+                Data for UK marketplace sellers: how many SIC 47910 online retail companies sit on
+                the Companies House register, how many have dissolved, quarterly formation and
+                dissolution churn, survival by formation-year cohort, and the ONS internet share of
+                retail sales as a demand-side anchor. It measures the incorporated layer only, since
+                marketplace-only sole traders never reach the register. An evidence base for the
+                seller community, not a marketing piece.
               </p>
               <div className="mt-6">
                 <Link

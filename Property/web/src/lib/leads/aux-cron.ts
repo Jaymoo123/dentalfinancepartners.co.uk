@@ -17,6 +17,11 @@ import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
 import { getSiteUrl } from "@/config/niche-loader";
 import { firstNameOf } from "@accounting-network/web-shared/lead-nurture/config";
 import { LEAD_SEQUENCE_NAMES } from "@/config/lead-nurture";
+import { botArmed } from "@/lib/telegram";
+import { isBotPaused } from "@/lib/leads/nurture-control";
+import { notifyExpiredOffer, notifyClaimHeld, leadRef } from "@/lib/leads/bot-notify";
+import { getResend, getFromAddress } from "@/lib/resend";
+import { resolveLeadTo } from "@/lib/lead-routing";
 
 // ---------------------------------------------------------------------------
 // Window bounds (Europe/London wall-clock)
@@ -227,8 +232,10 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         email: string;
         phone: string | null;
         source: string | null;
+        status: string | null;
       }>("leads", {
-        select: "id,full_name,email,phone,source",
+        select: "id,full_name,email,phone,source,status",
+        source: "eq.property",
         id: `in.(${leadIds.join(",")})`,
       });
       const leadsById = new Map(leadsRes.data.map((l) => [l.id, l]));
@@ -245,6 +252,10 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         if (!lead) continue;
         if (optedOutLeads.has(leadId)) continue;
         if (lead.source === "test") continue;
+        // A sold or binned lead never gets a "the partner firm will ring you"
+        // reminder: the buyer owns the relationship now ('forwarded' = pool
+        // release, raw supply or Sid hand-off; 'closed' = binned).
+        if (lead.status === "forwarded" || lead.status === "closed") continue;
 
         const bounds = WINDOW_BOUNDS[meta.window];
         if (!bounds) continue;
@@ -272,7 +283,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
                   `Your free property tax review call is tomorrow, ${windowPhrase}.`,
-                  "One of our property tax specialists will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+                  "The partner firm we introduce you to will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
                   "If the time no longer works, just reply to this email and I will move it to one that does.",
                 ],
                 signoff: SIGNOFF,
@@ -420,6 +431,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
             source: string | null;
           }>("leads", {
             select: "id,full_name,phone,source",
+            source: "eq.property",
             id: `in.(${eligibleIds.join(",")})`,
           });
 
@@ -460,6 +472,140 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
     }
   } catch (err) {
     console.error("[lead-aux-cron] unexpected top-level error", err);
+  }
+
+  // ── Scan C: buyer offer expiry ───────────────────────────────────────────
+  // Estate-wide sweep (lives in Property only, like the notify route): any
+  // offer still 'offered' past its expires_at flips to 'expired'. The flip is
+  // state truth and runs regardless of the bot; but it also destroys the
+  // dedupe, so every lead the bot cannot or does not alert must reach the
+  // owner by email instead (runbook rule: every bot send is fail-open with an
+  // email fallback), or the [Re-offer]/[Send to Sid] decision is lost forever.
+  try {
+    const expired = await adminUpdate<{
+      id: string;
+      lead_id: string;
+      price_gbp: number;
+      teaser?: { tier?: string } | null;
+    }>(
+      "lead_offers",
+      { status: "eq.offered", expires_at: `lt.${new Date().toISOString()}` },
+      { status: "expired" },
+    );
+    if (expired.ok && expired.data.length > 0) {
+      // One alert per lead, and none when the lead already sold: sibling offers
+      // expiring after a claim is the expected end-state, not news (owner
+      // decision 2026-08-20 after five noise pings in one sweep). The alert
+      // carries the highest-priced expired offer for the lead.
+      const byLead = new Map<string, (typeof expired.data)[number]>();
+      for (const row of expired.data) {
+        const cur = byLead.get(row.lead_id);
+        if (!cur || row.price_gbp > cur.price_gbp) byLead.set(row.lead_id, row);
+      }
+      const soldRes = await adminSelect<{ lead_id: string; buyer_id: string }>("lead_offers", {
+        select: "lead_id,buyer_id",
+        lead_id: `in.(${[...byLead.keys()].join(",")})`,
+        status: "in.(claimed,credited)",
+      });
+      // A claim by a test buyer (owner's shadow inbox, Sid) is QA or
+      // contingency, never a sale: it must not suppress the expiry alert
+      // (2026-08-20 fix: QA-walk claims silenced two genuinely unsold leads).
+      const testBuyers = await adminSelect<{ id: string }>("lead_buyers", {
+        select: "id",
+        is_test: "eq.true",
+      });
+      const testIds = new Set((testBuyers.ok ? testBuyers.data : []).map((b) => b.id));
+      const sold = new Set(
+        (soldRes.ok ? soldRes.data : [])
+          .filter((r) => !testIds.has(r.buyer_id))
+          .map((r) => r.lead_id),
+      );
+      const armed = botArmed() && !(await isBotPaused());
+      const unnotified: (typeof expired.data)[number][] = [];
+      for (const row of byLead.values()) {
+        if (sold.has(row.lead_id)) continue;
+        if (!armed) {
+          unnotified.push(row);
+          continue;
+        }
+        try {
+          if (!(await notifyExpiredOffer(row))) unnotified.push(row);
+        } catch (err) {
+          console.error("[lead-aux-cron] expiry notify failed", row.id, err);
+          unnotified.push(row);
+        }
+      }
+      if (unnotified.length > 0 && process.env.RESEND_API_KEY) {
+        // ONE batched email for the whole sweep, mirroring the raw-batch
+        // cron's fallback (ids only, no PII).
+        try {
+          await getResend().emails.send({
+            from: getFromAddress(),
+            to: resolveLeadTo(undefined),
+            subject: `Offers expired unclaimed: ${unnotified.length} lead${unnotified.length === 1 ? "" : "s"} (no Telegram alert)`,
+            text: [
+              "These leads' offers expired unclaimed and no Telegram alert reached you:",
+              ...unnotified.map(
+                (r) =>
+                  `${leadRef(r.lead_id)} · ${r.teaser?.tier ? `${r.teaser.tier} tier · ` : ""}£${r.price_gbp}`,
+              ),
+              "The [Re-offer] and [Send to Sid] buttons are only in Telegram; open the bot to act on these.",
+            ].join("\n"),
+          });
+        } catch (err) {
+          console.error("[lead-aux-cron] expiry email fallback failed", err);
+        }
+      }
+    }
+  } catch (err) {
+    console.error("[lead-aux-cron] offer expiry sweep error", err);
+  }
+
+  // ── Scan D: held-release nudge ───────────────────────────────────────────
+  // A claim held for the owner's [Release details] tap gets ONE reminder after
+  // an hour, stamped on nudged_at only when the send succeeded (a failed send
+  // retries next hour; a second nudge never fires). No silent auto-release:
+  // approve-each-release is owner-locked.
+  try {
+    if (botArmed() && !(await isBotPaused())) {
+      const cutoff = new Date(Date.now() - 3600_000).toISOString();
+      const stuck = await adminSelect<{
+        id: string;
+        lead_id: string;
+        buyer_id: string;
+        price_gbp: number;
+      }>("lead_offers", {
+        select: "id,lead_id,buyer_id,price_gbp",
+        status: "eq.claimed",
+        released_at: "is.null",
+        nudged_at: "is.null",
+        claimed_at: `lt.${cutoff}`,
+        limit: "10",
+      });
+      for (const offer of stuck.ok ? stuck.data : []) {
+        let firm = "A partner firm";
+        try {
+          const b = await adminSelect<{ firm_name: string }>("lead_buyers", {
+            select: "firm_name",
+            id: `eq.${offer.buyer_id}`,
+            limit: "1",
+          });
+          if (b.ok && b.data[0]?.firm_name) firm = b.data[0].firm_name;
+        } catch {
+          // generic label is fine
+        }
+        const sent = await notifyClaimHeld(offer, firm, { nudge: true });
+        if (sent) {
+          await adminUpdate(
+            "lead_offers",
+            { id: `eq.${offer.id}`, nudged_at: "is.null" },
+            { nudged_at: new Date().toISOString() },
+          ).catch(() => {});
+        }
+      }
+    }
+  } catch (err) {
+    console.error("[lead-aux-cron] held-release nudge error", err);
   }
 
   return { reminders, nudges };

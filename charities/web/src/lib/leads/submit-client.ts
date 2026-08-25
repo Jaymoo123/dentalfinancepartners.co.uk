@@ -1,21 +1,17 @@
 /**
- * Client-side helper: submit a lead through the server chokepoint
- * (/api/leads/submit) rather than inserting directly from the browser. The
- * server validates, deduplicates, stores with the service-role key, and fires
- * estate notifications.
+ * Client-side helper: submit a Trustee Tax lead through the server
+ * chokepoint (/api/leads/submit) instead of a direct PostgREST insert.
  *
- * Fallback: on a network error OR a 5xx response the function falls back to
- * the shared submitLead() so a broken route degrades to the behaviour that
- * existed before this chokepoint was introduced. A honeypot-flagged submit
- * in the fallback path is stored with extras {honeypot:true, suspected_spam:true}
- * rather than being silently dropped.
+ * The server validates, dedupes, verifies the phone/email in real time, saves
+ * with the service role, and enrols the lead into nurture. There is NO anon-key
+ * fallback: it bypassed every server check (honeypot handling, dedupe,
+ * verification), so a server error now surfaces to the form instead of writing
+ * an unverified row (matches Property, 2026-08).
+ *
+ * Honeypot: the enquiry_ref field value is forwarded in the JSON body. The
+ * server stores the row flagged when it is non-empty and returns a success shape
+ * so a bot receives no signal.
  */
-
-import {
-  submitLead,
-  getSupabaseConfig,
-  type LeadSubmission,
-} from "@accounting-network/web-shared/lib/supabase-client";
 
 export interface SiteLeadPayload {
   full_name: string;
@@ -32,80 +28,56 @@ export interface SiteLeadPayload {
   visitor_id?: string;
   session_id?: string;
   extras?: Record<string, unknown>;
+  /**
+   * "email_only" relaxes server validation to email + message (name/phone
+   * optional). Defaults to the full form when omitted.
+   */
   captureMode?: "full" | "email_only";
 }
 
 export interface SiteLeadResult {
   success: boolean;
   error?: string;
-  leadId?: string;
+  leadId?: string | null;
+  /** Signed token for the native /book slot picker (thank-you page embed). */
+  bookingToken?: string;
+  verify?: {
+    phone: "valid_mobile" | "valid_landline" | "voip" | "invalid" | "unknown";
+    email: "deliverable" | "undeliverable" | "risky" | "unknown";
+  };
+  /** True when the saved contact details look wrong and the user should re-check. */
+  needsCheck?: boolean;
 }
 
+/**
+ * Submit a lead through the site chokepoint with honeypot forwarding.
+ *
+ * enquiryRef: the honeypot field value, whatever the hidden input holds.
+ * When non-empty the server stores the row flagged and returns success so neither
+ * a bot nor a real user with browser autofill sees an error.
+ */
 export async function submitSiteLead(
   payload: SiteLeadPayload,
-  honeypot = "",
+  enquiryRef = "",
 ): Promise<SiteLeadResult> {
-  // Attempt via the server chokepoint.
-  let useRoute = true;
-  let res: Response | undefined;
-
   try {
-    res = await fetch("/api/leads/submit", {
+    const res = await fetch("/api/leads/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      // LD-03: non-semantic honeypot field name — never a real-looking field.
-      body: JSON.stringify({ ...payload, enquiry_ref: honeypot }),
+      body: JSON.stringify({ ...payload, enquiry_ref: enquiryRef }),
     });
-  } catch {
-    useRoute = false;
-  }
-
-  if (useRoute && res) {
-    if (res.status < 500) {
-      let json: SiteLeadResult = { success: false };
-      try {
-        json = (await res.json()) as SiteLeadResult;
-      } catch {
-        /* non-JSON body */
-      }
-      if (!res.ok) {
-        return { success: false, error: json.error || `Request failed (${res.status})` };
-      }
-      return { success: true, leadId: json.leadId };
-    }
+    let json: SiteLeadResult = { success: false };
     try {
-      await res.body?.cancel();
+      json = (await res.json()) as SiteLeadResult;
     } catch {
-      /* ignore */
+      /* non-JSON body */
     }
+    if (!res.ok) {
+      return { success: false, error: json.error || `Request failed (${res.status})` };
+    }
+    const needsCheck = json.verify?.phone === "invalid";
+    return { ...json, success: true, needsCheck };
+  } catch {
+    return { success: false, error: "Network error. Please try again." };
   }
-
-  // Fallback: direct Supabase insert via shared helper (anon key).
-  // Honeypot-flagged submits are stored flagged, never silently dropped.
-  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-  if (!supabaseUrl || !supabaseKey) {
-    return { success: false, error: "Form not connected. Please try again shortly." };
-  }
-
-  const fallbackPayload: LeadSubmission = {
-    full_name: payload.full_name,
-    email: payload.email,
-    phone: payload.phone,
-    role: payload.role,
-    message: payload.message,
-    source: payload.source,
-    source_url: payload.source_url ?? "",
-    submitted_at: payload.submitted_at ?? new Date().toISOString(),
-    consent_given: payload.consent_given ?? true,
-    consent_text: payload.consent_text ?? "",
-    consent_at: payload.consent_at ?? new Date().toISOString(),
-    visitor_id: payload.visitor_id,
-    session_id: payload.session_id,
-    extras:
-      honeypot
-        ? { ...(payload.extras ?? {}), honeypot: true, suspected_spam: true }
-        : payload.extras,
-  };
-
-  return submitLead(fallbackPayload, supabaseUrl, supabaseKey);
 }

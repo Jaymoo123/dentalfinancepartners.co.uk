@@ -30,11 +30,11 @@ faqs:
   - question: "What stamp duty will I pay on a buy-to-let in 2026?"
     answer: "In England and Northern Ireland a buy-to-let or second property attracts the 5% additional dwellings surcharge on top of standard SDLT rates (the surcharge rose from 3% to 5% on 31 October 2024). Scotland charges LBTT plus the 8% Additional Dwelling Supplement, and Wales charges LTT at its higher residential rates. Budget for this separately; it is cash on top of the deposit."
   - question: "Does a bigger deposit reduce capital gains tax when I sell?"
-    answer: "No. Capital gains tax is charged on the gain (sale proceeds less purchase price and qualifying costs), not on how the purchase was financed, so the deposit size makes no difference to the CGT bill. Residential property gains are taxed at 18% for basic-rate and 24% for higher-rate taxpayers, after the annual exempt amount of GBP3,000."
+    answer: "No. Capital gains tax is charged on the gain (sale proceeds less purchase price and qualifying costs), not on how the purchase was financed, so the deposit size makes no difference to the CGT bill. Residential property gains are taxed at 18% for basic-rate and 24% for higher-rate taxpayers, after the annual exempt amount of £3,000."
   - question: "Will the April 2027 property income tax changes affect my deposit strategy?"
     answer: "From 6 April 2027, rental profits in England, Wales and Northern Ireland are taxed at separate property rates of 22%, 42% and 47% (Scotland sets its own), enacted by Finance Act 2026. Crucially the Section 24 finance-cost credit rises in step to 22%, so no new wedge opens for basic-rate landlords. The change does not alter how much deposit a lender requires, but it sharpens the personal-versus-company question for highly geared higher-rate landlords."
   - question: "Do I need to report rental income under Making Tax Digital from April 2026?"
-    answer: "Making Tax Digital for Income Tax is now live. You are mandated from 6 April 2026 if your combined self-employment and property income exceeds GBP50,000, from 6 April 2027 above GBP30,000, and from 6 April 2028 above GBP20,000. In scope means keeping digital records and filing quarterly updates through compatible software rather than a single annual return."
+    answer: "Making Tax Digital for Income Tax is now live. You are mandated from 6 April 2026 if your combined self-employment and property income exceeds £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. In scope means keeping digital records and filing quarterly updates through compatible software rather than a single annual return."
   - question: "Is the deposit higher for HMOs and ex-local authority properties?"
     answer: "Often. HMOs are specialist lending and commonly need 30% to 40% with a smaller pool of lenders, and many lenders apply a higher minimum (around 30% to 35%) to ex-local authority flats and certain new builds because they expect more value volatility. Lease length and service charges on leasehold flats can also tighten what a lender will offer."
   - question: "What other cash costs come on top of the deposit?"
@@ -75,11 +75,11 @@ faqs:
 
 <p>The ICR is the margin by which rent must exceed the mortgage payment. Common thresholds are 125% for a basic-rate taxpayer and 145% for a higher-rate taxpayer, with limited company applications often assessed around 125%. The stress rate is the inflated interest rate the lender uses for that test, typically a notch above the pay rate and frequently in the region of 7% to 8% in the current environment, even when the rate you actually pay is lower. The point is to check the property still washes its face if rates climb.</p>
 
-<p>A worked example shows how this drives the deposit. Take a property valued at GBP200,000 with GBP1,100 monthly rent:</p>
+<p>A worked example shows how this drives the deposit. Take a property valued at £200,000 with £1,100 monthly rent:</p>
 
 <ul>
-<li><strong>At a 25% deposit:</strong> the loan is GBP150,000. Stressed at 8%, annual interest is GBP12,000, or GBP1,000 a month. A higher-rate landlord needs 145% coverage, so the rent must clear GBP1,450. At GBP1,100, it does not, and the application fails.</li>
-<li><strong>At a 40% deposit:</strong> the loan drops to GBP120,000. Stressed at 8%, annual interest is GBP9,600, or GBP800 a month. The 145% requirement is now GBP1,160. The GBP1,100 rent is close but still short, so this landlord either needs slightly more deposit again, a higher achievable rent, or a five-year fixed product (many lenders stress-test five-year fixes more gently).</li>
+<li><strong>At a 25% deposit:</strong> the loan is £150,000. Stressed at 8%, annual interest is £12,000, or £1,000 a month. A higher-rate landlord needs 145% coverage, so the rent must clear £1,450. At £1,100, it does not, and the application fails.</li>
+<li><strong>At a 40% deposit:</strong> the loan drops to £120,000. Stressed at 8%, annual interest is £9,600, or £800 a month. The 145% requirement is now £1,160. The £1,100 rent is close but still short, so this landlord either needs slightly more deposit again, a higher achievable rent, or a five-year fixed product (many lenders stress-test five-year fixes more gently).</li>
 </ul>
 
 <p>That is the real reason deposits cluster at 30% to 40%. The headline 25% is a regulatory floor; the ICR-times-stress-rate calculation is what the loan has to survive. If you are weighing leverage against cash flow, our guide to <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax in the UK</a> sets the financing decision in its wider context.</p>
@@ -126,13 +126,13 @@ faqs:
 <p>Because the restriction bites on the interest you pay, the size of your loan, and therefore your deposit, directly affects it. A worked example for a higher-rate landlord:</p>
 
 <ul>
-<li><strong>Rental profit before interest:</strong> GBP12,000.</li>
-<li><strong>Mortgage interest:</strong> GBP6,000.</li>
-<li><strong>Old rules (pre-2017):</strong> taxable profit GBP6,000, tax at 40% is GBP2,400.</li>
-<li><strong>Section 24 rules now:</strong> tax due on the full GBP12,000 at 40% is GBP4,800, less a 20% credit on the GBP6,000 interest (GBP1,200), giving GBP3,600.</li>
+<li><strong>Rental profit before interest:</strong> £12,000.</li>
+<li><strong>Mortgage interest:</strong> £6,000.</li>
+<li><strong>Old rules (pre-2017):</strong> taxable profit £6,000, tax at 40% is £2,400.</li>
+<li><strong>Section 24 rules now:</strong> tax due on the full £12,000 at 40% is £4,800, less a 20% credit on the £6,000 interest (£1,200), giving £3,600.</li>
 </ul>
 
-<p>That extra GBP1,200 is the Section 24 cost on this single property, and it scales with the interest. Put down a larger deposit and the interest figure falls, shrinking the amount caught by the restriction. There is a balance to strike: tying up more capital in deposits has its own opportunity cost, and the answer differs for basic-rate and higher-rate landlords. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a> walks through the calculation, and the <a href="/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">Section 24 impact on higher-rate taxpayers</a> page focuses on where it hurts most.</p>
+<p>That extra £1,200 is the Section 24 cost on this single property, and it scales with the interest. Put down a larger deposit and the interest figure falls, shrinking the amount caught by the restriction. There is a balance to strike: tying up more capital in deposits has its own opportunity cost, and the answer differs for basic-rate and higher-rate landlords. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a> walks through the calculation, and the <a href="/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">Section 24 impact on higher-rate taxpayers</a> page focuses on where it hurts most.</p>
 
 <h3>What changes from April 2027</h3>
 
@@ -154,7 +154,7 @@ faqs:
 
 <p>A common assumption is that putting down more deposit somehow softens the eventual tax on sale. It does not. Capital gains tax is charged on the gain, the sale proceeds less the purchase price and qualifying acquisition and improvement costs, and how you financed the purchase is irrelevant to that calculation. A 25% deposit and a 40% deposit on the same property produce the same gain and the same CGT.</p>
 
-<p>What you should know is the current regime. Residential property gains are taxed at 18% for basic-rate taxpayers and 24% for higher-rate taxpayers, against an annual exempt amount of GBP3,000. A residential disposal must be reported and the tax paid within 60 days of completion through HMRC's property disposal return, separately from your annual filing. The full mechanics are in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">capital gains tax on property guide</a>.</p>
+<p>What you should know is the current regime. Residential property gains are taxed at 18% for basic-rate taxpayers and 24% for higher-rate taxpayers, against an annual exempt amount of £3,000. A residential disposal must be reported and the tax paid within 60 days of completion through HMRC's property disposal return, separately from your annual filing. The full mechanics are in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">capital gains tax on property guide</a>.</p>
 
 <h2>Getting MTD-ready before you buy</h2>
 
@@ -165,9 +165,9 @@ faqs:
 <tr><th>Mandated from</th><th>Combined income over</th></tr>
 </thead>
 <tbody>
-<tr><td>6 April 2026</td><td>GBP50,000</td></tr>
-<tr><td>6 April 2027</td><td>GBP30,000</td></tr>
-<tr><td>6 April 2028</td><td>GBP20,000</td></tr>
+<tr><td>6 April 2026</td><td>£50,000</td></tr>
+<tr><td>6 April 2027</td><td>£30,000</td></tr>
+<tr><td>6 April 2028</td><td>£20,000</td></tr>
 </tbody>
 </table>
 

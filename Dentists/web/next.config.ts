@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
   async headers() {
     return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
   },
+  async redirects() {
+    return [
+      { source: "/pricing", destination: "/services", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

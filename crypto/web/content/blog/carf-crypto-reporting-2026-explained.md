@@ -128,4 +128,4 @@ howToSteps:
 
 <p>If you want to talk through your situation before committing to a disclosure, <a href="/services/hmrc-disclosure">our HMRC disclosure service page</a> explains how the process works and what to expect. You can also read the related guide on <a href="/blog/hmrc-disclosure-and-compliance/hmrc-crypto-nudge-letter-what-to-do">what to do if you have received an HMRC nudge letter about cryptoassets</a>.</p>
 
-<p>For a broader picture of how far HMRC's current visibility extends across the UK crypto population, the <a href="/research/crypto-tax-gap-index">Crypto Tax Gap Index</a> sets out the data.</p>
+<p>For the size of the UK crypto population and a running countdown to the first CARF report deadline, the <a href="/research/crypto-tax-gap-index">UK Crypto Tax Compliance Index</a> sets out the FCA ownership figures and the HMRC reporting timeline, each cited to source.</p>

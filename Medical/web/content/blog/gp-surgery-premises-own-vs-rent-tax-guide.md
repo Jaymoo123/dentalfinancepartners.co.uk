@@ -11,6 +11,12 @@ metaDescription: "Owning vs renting a GP surgery: the property partnership, SDLT
 altText: "GP partners comparing the cost of owning versus renting a surgery building with a property loan and tax figures"
 image: ""
 h1: "Owning vs Renting Your GP Surgery: The Property Partnership, SDLT and the Tax Trade-Offs"
+keyTakeaways:
+- "Freehold SDLT on a surgery in England or Northern Ireland is banded at 0% up to £150,000, 2% from £150,001 to £250,000, and 5% above £250,000, so a £600,000 purchase costs £19,500."
+- "When you buy a surgery containing fixtures, a CAA 2001 s.198 election must be made within a strict 2-year limit under CAA 2001 s.201, or the fixtures capital allowances can be lost entirely."
+- "The Annual Investment Allowance of £1,000,000 gives 100% relief and is best directed first at the special-rate (6%) integral features, while the main-rate writing-down allowance falls from 18% to 14% under Finance Act 2026 section 28."
+- "Business Asset Disposal Relief is 10% up to 5 April 2025, 14% from 6 April 2025 to 5 April 2026, and 18% from 6 April 2026, with a £1,000,000 lifetime limit per individual."
+- "SDLT does not apply in Scotland (Land and Buildings Transaction Tax) or Wales (Land Transaction Tax), and transfers into or out of a property partnership trigger special sum-of-lower-proportions rules rather than the ordinary purchase rates."
 summary: "A GP partnership choosing between renting its surgery and owning it is making a tax decision as much as a clinical one. Ownership unlocks notional rent, asset growth and capital allowances, but brings SDLT on purchase, illiquidity and a CGT bill on the way out. This guide walks the whole own-versus-rent tax picture, from SDLT in to CGT out, with the capital allowances and the fixtures election in between."
 schema: ""
 faqs:
@@ -29,7 +35,7 @@ faqs:
   - question: "What is the fixtures election and why is the 2-year deadline so important?"
     answer: "When you buy a surgery that already contains fixtures, a CAA 2001 s.198 election fixes, jointly with the seller, the value attributed to those fixtures, which determines the allowances the buyer can claim. There is a strict 2-year time limit under CAA 2001 s.201: the election must be made by notice to HMRC no later than 2 years after you acquire the interest. Miss it, and the fixtures allowances can be lost entirely, which is a common and wholly preventable loss."
   - question: "What capital allowances can I claim on a surgery fit-out?"
-    answer: "A fit-out splits between integral features (special-rate pool, 6% writing-down allowance) and general plant and machinery (main-rate pool). The Annual Investment Allowance of £1,000,000 a year gives 100% relief on qualifying plant and machinery and is best directed at the special-rate items first. The main-rate writing-down allowance is 18%, falling to 14% from 1 April 2026 for corporation tax and 6 April 2026 for income tax under Finance Act 2026 section 28, while the special-rate pool stays at 6%. On new (unused, not second-hand) main-rate plant there is also a 40% first-year allowance from 1 January 2026 under section 29. Identifying and pooling the qualifying spend properly is where the value is."
+    answer: "A fit-out splits between integral features (special-rate pool, 6% writing-down allowance) and general plant and machinery (main-rate pool). The Annual Investment Allowance of £1,000,000 a year gives 100% relief on qualifying plant and machinery and is best directed at the special-rate items first. The main-rate writing-down allowance is 14%, reduced from 18% by Finance Act 2026 section 28 with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax (periods straddling those dates use a time-apportioned hybrid rate), while the special-rate pool stays at 6%. On new (unused, not second-hand) main-rate plant there is also a 40% first-year allowance from 1 January 2026 under section 29. Identifying and pooling the qualifying spend properly is where the value is."
   - question: "Will I pay capital gains tax when we sell the surgery?"
     answer: "When the premises, or a partner's share, is sold for more than its cost, capital gains tax applies to the gain. For a building used in the partnership trade, the gain may qualify for relief, but the rules are specific and depend on how the premises are held and who is disposing of what. Because the position turns on the structure and the surrounding circumstances, it is a specialist area where you should take practice-specific advice before committing to a sale."
   - question: "Does Business Asset Disposal Relief apply to selling a GP surgery?"
@@ -106,7 +112,7 @@ faqs:
 
 <h3>AIA and the rates</h3>
 
-<p>The <strong>Annual Investment Allowance (AIA)</strong> of <strong>£1,000,000</strong> a year gives 100% relief on qualifying plant and machinery, and is best directed at the special-rate (6%) integral features first, because those would otherwise attract relief only slowly. The main-rate writing-down allowance is <strong>18%, reducing to 14% from 1 April 2026 for corporation tax and 6 April 2026 for income tax</strong>, under Finance Act 2026 section 28; the special-rate pool stays at <strong>6%</strong>. For the wider equipment and allowances picture, see our guide to <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions</a>.</p>
+<p>The <strong>Annual Investment Allowance (AIA)</strong> of <strong>£1,000,000</strong> a year gives 100% relief on qualifying plant and machinery, and is best directed at the special-rate (6%) integral features first, because those would otherwise attract relief only slowly. The main-rate writing-down allowance is <strong>14%, reduced from 18% with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax</strong>, under Finance Act 2026 section 28; the special-rate pool stays at <strong>6%</strong>. For the wider equipment and allowances picture, see our guide to <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions</a>.</p>
 
 <h3>The fixtures election on a purchase (the big one)</h3>
 

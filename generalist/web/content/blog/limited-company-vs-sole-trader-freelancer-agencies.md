@@ -94,13 +94,13 @@ keyTakeaways:
 <li>Profit after tax: £50,271.46</li>
 <li>Dividend taken: £50,271.46</li>
 <li>Dividend allowance: £500</li>
-<li>Dividend taxed at basic rate (8.75% on £37,700): £3,298.75</li>
-<li>Dividend taxed at higher rate (33.75% on £12,071.46): £4,074.12</li>
-<li><strong>Total tax and NI: £1,135.50 (employer NIC) + £13,023.04 (CT) + £3,298.75 + £4,074.12 = £21,531.41</strong></li>
-<li><strong>Net income: £55,468.59</strong></li>
+<li>Dividend taxed at basic rate (10.75% on £37,700, the 2026/27 rate): £4,052.75</li>
+<li>Dividend taxed at higher rate (35.75% on £12,071.46): £4,315.55</li>
+<li><strong>Total tax and NI: £1,135.50 (employer NIC) + £13,023.04 (CT) + £4,052.75 + £4,315.55 = £22,526.84</strong></li>
+<li><strong>Net income: £54,473.16</strong></li>
 </ul>
 
-<p>In this example, once employer NIC on the director salary and the correct marginal relief CT calculation are applied, the two structures are close. The sole trader takes home approximately £55,971, the limited company director approximately £55,469. At £80,000 with a single-director salary, the limited company is marginally more expensive in tax terms, primarily because Employment Allowance is not available to a sole-director company. Add compliance costs of £800 to £1,500 per year for a good accountant and the tax case for incorporating at this earnings level is tighter than it might appear.</p>
+<p>In this example, once employer NIC on the director salary and the correct marginal relief CT calculation are applied, the two structures are close. The sole trader takes home approximately £55,971, the limited company director approximately £54,473. At £80,000 with a single-director salary, the limited company is around £1,500 more expensive in tax terms at 2026/27 dividend rates, primarily because Employment Allowance is not available to a sole-director company. Add compliance costs of £800 to £1,500 per year for a good accountant and the tax case for incorporating at this earnings level is tighter than it might appear.</p>
 
 <p>But here is the catch. That saving only exists if your contract is <strong>outside IR35</strong>. If it is inside IR35, the limited company calculation changes dramatically. You would pay PAYE and NI on the deemed employment income, and the net saving shrinks to a few hundred pounds or disappears entirely.</p>
 

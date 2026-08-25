@@ -105,7 +105,6 @@ keyTakeaways:
 
 <ul>
 <li>If you are a non-resident and your only UK income is from a source that is specifically exempt from UK tax under the treaty (e.g., certain types of pension income)</li>
-<li>If you are a non-resident and you elect to be taxed on the remittance basis (rare for UAE residents, but possible if you have significant UK investment income)</li>
 <li>If you are a non-resident and your UK income is below the personal allowance anyway, in that case, you don't need to claim it because you pay no tax regardless</li>
 </ul>
 

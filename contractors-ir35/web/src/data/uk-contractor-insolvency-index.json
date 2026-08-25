@@ -1,0 +1,2965 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "data_through": "2026-06",
+    "coverage": "England, Wales and Scotland",
+    "sic_sections": {
+      "J": "Information and communication",
+      "M": "Professional, scientific and technical activities"
+    },
+    "captured_divisions": {
+      "62": "Computer programming, consultancy and related activities",
+      "70": "Activities of head offices; management consultancy activities",
+      "71": "Architectural and engineering activities; technical testing and analysis"
+    },
+    "procedure_labels": {
+      "cvl": "Creditors Voluntary Liquidation (CVL)",
+      "compulsory": "Compulsory Liquidation",
+      "administration": "Administration",
+      "administration_to_cvl": "Administration converting to CVL",
+      "cva": "Company Voluntary Arrangement (CVA)",
+      "receivership": "Administrative Receivership",
+      "moratorium": "Moratorium"
+    },
+    "sources": [
+      {
+        "name": "Company Insolvency Statistics -- Record-Level Data",
+        "publisher": "The Insolvency Service",
+        "url": "https://assets.publishing.service.gov.uk/media/6a57978e31fb6daf3141374c/Record-level_data_for_England_Wales_and_Scotland_-_Company_Insolvency_Statistics_June_2026.zip",
+        "release_page": "https://www.gov.uk/government/statistics/company-insolvencies-june-2026",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23",
+        "release_date": "2026-07-17",
+        "attribution": "Data sourced from The Insolvency Service under the Open Government Licence v3.0. Free to cite with attribution to Contractor Tax Accountants."
+      }
+    ],
+    "notes": "Counts cover England, Wales and Scotland. Contractors sit across two SIC 2007 1-digit sections: J (Information and communication, which captures IT contracting) and M (Professional, scientific and technical activities, which captures management consultancy and engineering). Both sections are coarse: J also covers publishing, broadcasting and telecoms; M also covers legal and accounting, advertising, R&D and veterinary activities, none of which are contractor-heavy. The 'captured' series narrows to the specific 2-digit SIC divisions that overlap the UK Contractor Index SIC set (62 IT consultancy, 70 management consultancy, 71 engineering), so the 'share of industry captured' figure shows what fraction of the coarser J+M section total sits in the divisions this site actually tracks. Totals are gross registered insolvencies: each procedure entry is counted once on the date the insolvency was registered, not the underlying trading activity. Counts are not rates: they are not adjusted for the number of active companies in each sector or division, so a rising count can partly reflect sector growth rather than worsening conditions. 2026 data is a partial year.",
+    "attribution": "UK Contractor Insolvency Index compiled from Insolvency Service public records (Open Government Licence v3.0). Free to cite with attribution to Contractor Tax Accountants."
+  },
+  "headline": {
+    "last_settled_month": "2026-06",
+    "last_month_total": 237,
+    "last_month_cvl": 190,
+    "last_month_compulsory": 23,
+    "last_month_administration": 14,
+    "yoy_pct": -17.7,
+    "ttm_total": 3547,
+    "peak_month": "2024-11",
+    "peak_total": 374,
+    "decade": {
+      "from_year": 2016,
+      "to_year": 2025,
+      "from_total": 2304,
+      "to_total": 3698,
+      "change_pct": 60.5
+    },
+    "sections_ttm": {
+      "J": 1481,
+      "M": 2066
+    },
+    "captured_ttm": 2092,
+    "captured_share_pct": 59.0,
+    "captured_decade": {
+      "from_year": 2016,
+      "to_year": 2025,
+      "from_total": 1247,
+      "to_total": 2175,
+      "change_pct": 74.4
+    }
+  },
+  "insolvencies": {
+    "monthly": [
+      {
+        "month": "2016-01",
+        "cvl": 96,
+        "compulsory": 54,
+        "administration": 13,
+        "administration_to_cvl": 1,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 169
+      },
+      {
+        "month": "2016-02",
+        "cvl": 104,
+        "compulsory": 54,
+        "administration": 15,
+        "administration_to_cvl": 8,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 183
+      },
+      {
+        "month": "2016-03",
+        "cvl": 127,
+        "compulsory": 45,
+        "administration": 14,
+        "administration_to_cvl": 3,
+        "cva": 6,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 195
+      },
+      {
+        "month": "2016-04",
+        "cvl": 142,
+        "compulsory": 42,
+        "administration": 20,
+        "administration_to_cvl": 10,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 218
+      },
+      {
+        "month": "2016-05",
+        "cvl": 110,
+        "compulsory": 26,
+        "administration": 16,
+        "administration_to_cvl": 6,
+        "cva": 6,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 164
+      },
+      {
+        "month": "2016-06",
+        "cvl": 138,
+        "compulsory": 37,
+        "administration": 18,
+        "administration_to_cvl": 6,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 202
+      },
+      {
+        "month": "2016-07",
+        "cvl": 120,
+        "compulsory": 37,
+        "administration": 22,
+        "administration_to_cvl": 5,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 189
+      },
+      {
+        "month": "2016-08",
+        "cvl": 126,
+        "compulsory": 21,
+        "administration": 18,
+        "administration_to_cvl": 8,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 175
+      },
+      {
+        "month": "2016-09",
+        "cvl": 135,
+        "compulsory": 43,
+        "administration": 26,
+        "administration_to_cvl": 6,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 214
+      },
+      {
+        "month": "2016-10",
+        "cvl": 92,
+        "compulsory": 60,
+        "administration": 21,
+        "administration_to_cvl": 12,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 186
+      },
+      {
+        "month": "2016-11",
+        "cvl": 133,
+        "compulsory": 63,
+        "administration": 21,
+        "administration_to_cvl": 4,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 226
+      },
+      {
+        "month": "2016-12",
+        "cvl": 125,
+        "compulsory": 39,
+        "administration": 14,
+        "administration_to_cvl": 1,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 183
+      },
+      {
+        "month": "2017-01",
+        "cvl": 141,
+        "compulsory": 67,
+        "administration": 11,
+        "administration_to_cvl": 3,
+        "cva": 6,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 228
+      },
+      {
+        "month": "2017-02",
+        "cvl": 114,
+        "compulsory": 46,
+        "administration": 21,
+        "administration_to_cvl": 4,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 189
+      },
+      {
+        "month": "2017-03",
+        "cvl": 138,
+        "compulsory": 38,
+        "administration": 11,
+        "administration_to_cvl": 11,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 202
+      },
+      {
+        "month": "2017-04",
+        "cvl": 145,
+        "compulsory": 34,
+        "administration": 10,
+        "administration_to_cvl": 6,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 200
+      },
+      {
+        "month": "2017-05",
+        "cvl": 104,
+        "compulsory": 42,
+        "administration": 10,
+        "administration_to_cvl": 6,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 166
+      },
+      {
+        "month": "2017-06",
+        "cvl": 103,
+        "compulsory": 31,
+        "administration": 25,
+        "administration_to_cvl": 2,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 163
+      },
+      {
+        "month": "2017-07",
+        "cvl": 108,
+        "compulsory": 36,
+        "administration": 12,
+        "administration_to_cvl": 6,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 167
+      },
+      {
+        "month": "2017-08",
+        "cvl": 105,
+        "compulsory": 30,
+        "administration": 17,
+        "administration_to_cvl": 4,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 160
+      },
+      {
+        "month": "2017-09",
+        "cvl": 127,
+        "compulsory": 49,
+        "administration": 24,
+        "administration_to_cvl": 8,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 213
+      },
+      {
+        "month": "2017-10",
+        "cvl": 100,
+        "compulsory": 40,
+        "administration": 14,
+        "administration_to_cvl": 1,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 155
+      },
+      {
+        "month": "2017-11",
+        "cvl": 138,
+        "compulsory": 36,
+        "administration": 9,
+        "administration_to_cvl": 5,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 193
+      },
+      {
+        "month": "2017-12",
+        "cvl": 122,
+        "compulsory": 28,
+        "administration": 15,
+        "administration_to_cvl": 6,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 172
+      },
+      {
+        "month": "2018-01",
+        "cvl": 158,
+        "compulsory": 40,
+        "administration": 16,
+        "administration_to_cvl": 3,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 221
+      },
+      {
+        "month": "2018-02",
+        "cvl": 117,
+        "compulsory": 40,
+        "administration": 12,
+        "administration_to_cvl": 9,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 180
+      },
+      {
+        "month": "2018-03",
+        "cvl": 118,
+        "compulsory": 37,
+        "administration": 15,
+        "administration_to_cvl": 5,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 179
+      },
+      {
+        "month": "2018-04",
+        "cvl": 115,
+        "compulsory": 34,
+        "administration": 16,
+        "administration_to_cvl": 6,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 175
+      },
+      {
+        "month": "2018-05",
+        "cvl": 124,
+        "compulsory": 38,
+        "administration": 14,
+        "administration_to_cvl": 6,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 185
+      },
+      {
+        "month": "2018-06",
+        "cvl": 138,
+        "compulsory": 47,
+        "administration": 13,
+        "administration_to_cvl": 7,
+        "cva": 8,
+        "receivership": 1,
+        "moratorium": 0,
+        "total": 214
+      },
+      {
+        "month": "2018-07",
+        "cvl": 111,
+        "compulsory": 39,
+        "administration": 16,
+        "administration_to_cvl": 7,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 177
+      },
+      {
+        "month": "2018-08",
+        "cvl": 135,
+        "compulsory": 46,
+        "administration": 12,
+        "administration_to_cvl": 8,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 206
+      },
+      {
+        "month": "2018-09",
+        "cvl": 134,
+        "compulsory": 38,
+        "administration": 14,
+        "administration_to_cvl": 6,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 195
+      },
+      {
+        "month": "2018-10",
+        "cvl": 136,
+        "compulsory": 72,
+        "administration": 16,
+        "administration_to_cvl": 5,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 233
+      },
+      {
+        "month": "2018-11",
+        "cvl": 142,
+        "compulsory": 42,
+        "administration": 25,
+        "administration_to_cvl": 5,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 215
+      },
+      {
+        "month": "2018-12",
+        "cvl": 75,
+        "compulsory": 37,
+        "administration": 33,
+        "administration_to_cvl": 2,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 151
+      },
+      {
+        "month": "2019-01",
+        "cvl": 156,
+        "compulsory": 68,
+        "administration": 18,
+        "administration_to_cvl": 3,
+        "cva": 7,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 252
+      },
+      {
+        "month": "2019-02",
+        "cvl": 106,
+        "compulsory": 54,
+        "administration": 17,
+        "administration_to_cvl": 7,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 187
+      },
+      {
+        "month": "2019-03",
+        "cvl": 133,
+        "compulsory": 35,
+        "administration": 19,
+        "administration_to_cvl": 7,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 197
+      },
+      {
+        "month": "2019-04",
+        "cvl": 144,
+        "compulsory": 47,
+        "administration": 25,
+        "administration_to_cvl": 3,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 224
+      },
+      {
+        "month": "2019-05",
+        "cvl": 138,
+        "compulsory": 40,
+        "administration": 19,
+        "administration_to_cvl": 5,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 206
+      },
+      {
+        "month": "2019-06",
+        "cvl": 114,
+        "compulsory": 51,
+        "administration": 17,
+        "administration_to_cvl": 6,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 192
+      },
+      {
+        "month": "2019-07",
+        "cvl": 144,
+        "compulsory": 31,
+        "administration": 17,
+        "administration_to_cvl": 1,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 195
+      },
+      {
+        "month": "2019-08",
+        "cvl": 152,
+        "compulsory": 28,
+        "administration": 20,
+        "administration_to_cvl": 3,
+        "cva": 6,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 209
+      },
+      {
+        "month": "2019-09",
+        "cvl": 138,
+        "compulsory": 39,
+        "administration": 18,
+        "administration_to_cvl": 11,
+        "cva": 8,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 214
+      },
+      {
+        "month": "2019-10",
+        "cvl": 132,
+        "compulsory": 39,
+        "administration": 27,
+        "administration_to_cvl": 8,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 211
+      },
+      {
+        "month": "2019-11",
+        "cvl": 140,
+        "compulsory": 42,
+        "administration": 23,
+        "administration_to_cvl": 7,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 215
+      },
+      {
+        "month": "2019-12",
+        "cvl": 103,
+        "compulsory": 22,
+        "administration": 11,
+        "administration_to_cvl": 5,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 142
+      },
+      {
+        "month": "2020-01",
+        "cvl": 125,
+        "compulsory": 44,
+        "administration": 21,
+        "administration_to_cvl": 4,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 199
+      },
+      {
+        "month": "2020-02",
+        "cvl": 99,
+        "compulsory": 35,
+        "administration": 21,
+        "administration_to_cvl": 9,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 164
+      },
+      {
+        "month": "2020-03",
+        "cvl": 117,
+        "compulsory": 30,
+        "administration": 14,
+        "administration_to_cvl": 7,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 171
+      },
+      {
+        "month": "2020-04",
+        "cvl": 129,
+        "compulsory": 11,
+        "administration": 10,
+        "administration_to_cvl": 5,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 158
+      },
+      {
+        "month": "2020-05",
+        "cvl": 127,
+        "compulsory": 5,
+        "administration": 15,
+        "administration_to_cvl": 7,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 157
+      },
+      {
+        "month": "2020-06",
+        "cvl": 79,
+        "compulsory": 12,
+        "administration": 15,
+        "administration_to_cvl": 4,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 110
+      },
+      {
+        "month": "2020-07",
+        "cvl": 78,
+        "compulsory": 25,
+        "administration": 21,
+        "administration_to_cvl": 7,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 133
+      },
+      {
+        "month": "2020-08",
+        "cvl": 86,
+        "compulsory": 13,
+        "administration": 11,
+        "administration_to_cvl": 9,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 122
+      },
+      {
+        "month": "2020-09",
+        "cvl": 120,
+        "compulsory": 4,
+        "administration": 18,
+        "administration_to_cvl": 7,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 150
+      },
+      {
+        "month": "2020-10",
+        "cvl": 128,
+        "compulsory": 9,
+        "administration": 11,
+        "administration_to_cvl": 5,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 157
+      },
+      {
+        "month": "2020-11",
+        "cvl": 103,
+        "compulsory": 9,
+        "administration": 12,
+        "administration_to_cvl": 5,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 130
+      },
+      {
+        "month": "2020-12",
+        "cvl": 158,
+        "compulsory": 7,
+        "administration": 23,
+        "administration_to_cvl": 7,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 197
+      },
+      {
+        "month": "2021-01",
+        "cvl": 92,
+        "compulsory": 7,
+        "administration": 9,
+        "administration_to_cvl": 9,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 117
+      },
+      {
+        "month": "2021-02",
+        "cvl": 108,
+        "compulsory": 5,
+        "administration": 7,
+        "administration_to_cvl": 3,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 123
+      },
+      {
+        "month": "2021-03",
+        "cvl": 149,
+        "compulsory": 14,
+        "administration": 12,
+        "administration_to_cvl": 7,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 183
+      },
+      {
+        "month": "2021-04",
+        "cvl": 156,
+        "compulsory": 6,
+        "administration": 7,
+        "administration_to_cvl": 2,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 171
+      },
+      {
+        "month": "2021-05",
+        "cvl": 165,
+        "compulsory": 7,
+        "administration": 7,
+        "administration_to_cvl": 3,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 183
+      },
+      {
+        "month": "2021-06",
+        "cvl": 207,
+        "compulsory": 6,
+        "administration": 6,
+        "administration_to_cvl": 5,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 226
+      },
+      {
+        "month": "2021-07",
+        "cvl": 172,
+        "compulsory": 4,
+        "administration": 4,
+        "administration_to_cvl": 1,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 2,
+        "total": 183
+      },
+      {
+        "month": "2021-08",
+        "cvl": 228,
+        "compulsory": 2,
+        "administration": 7,
+        "administration_to_cvl": 5,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 242
+      },
+      {
+        "month": "2021-09",
+        "cvl": 254,
+        "compulsory": 2,
+        "administration": 7,
+        "administration_to_cvl": 9,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 274
+      },
+      {
+        "month": "2021-10",
+        "cvl": 209,
+        "compulsory": 6,
+        "administration": 10,
+        "administration_to_cvl": 6,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 232
+      },
+      {
+        "month": "2021-11",
+        "cvl": 256,
+        "compulsory": 7,
+        "administration": 20,
+        "administration_to_cvl": 3,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 287
+      },
+      {
+        "month": "2021-12",
+        "cvl": 218,
+        "compulsory": 13,
+        "administration": 16,
+        "administration_to_cvl": 0,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 247
+      },
+      {
+        "month": "2022-01",
+        "cvl": 229,
+        "compulsory": 14,
+        "administration": 9,
+        "administration_to_cvl": 2,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 257
+      },
+      {
+        "month": "2022-02",
+        "cvl": 198,
+        "compulsory": 5,
+        "administration": 9,
+        "administration_to_cvl": 5,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 217
+      },
+      {
+        "month": "2022-03",
+        "cvl": 314,
+        "compulsory": 21,
+        "administration": 9,
+        "administration_to_cvl": 2,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 346
+      },
+      {
+        "month": "2022-04",
+        "cvl": 264,
+        "compulsory": 19,
+        "administration": 15,
+        "administration_to_cvl": 4,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 303
+      },
+      {
+        "month": "2022-05",
+        "cvl": 254,
+        "compulsory": 23,
+        "administration": 8,
+        "administration_to_cvl": 1,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 287
+      },
+      {
+        "month": "2022-06",
+        "cvl": 216,
+        "compulsory": 22,
+        "administration": 13,
+        "administration_to_cvl": 5,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 256
+      },
+      {
+        "month": "2022-07",
+        "cvl": 251,
+        "compulsory": 18,
+        "administration": 5,
+        "administration_to_cvl": 2,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 277
+      },
+      {
+        "month": "2022-08",
+        "cvl": 260,
+        "compulsory": 26,
+        "administration": 14,
+        "administration_to_cvl": 0,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 301
+      },
+      {
+        "month": "2022-09",
+        "cvl": 185,
+        "compulsory": 32,
+        "administration": 7,
+        "administration_to_cvl": 0,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 226
+      },
+      {
+        "month": "2022-10",
+        "cvl": 209,
+        "compulsory": 35,
+        "administration": 15,
+        "administration_to_cvl": 3,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 262
+      },
+      {
+        "month": "2022-11",
+        "cvl": 216,
+        "compulsory": 49,
+        "administration": 17,
+        "administration_to_cvl": 1,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 285
+      },
+      {
+        "month": "2022-12",
+        "cvl": 223,
+        "compulsory": 32,
+        "administration": 16,
+        "administration_to_cvl": 1,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 272
+      },
+      {
+        "month": "2023-01",
+        "cvl": 193,
+        "compulsory": 37,
+        "administration": 10,
+        "administration_to_cvl": 0,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 243
+      },
+      {
+        "month": "2023-02",
+        "cvl": 192,
+        "compulsory": 17,
+        "administration": 14,
+        "administration_to_cvl": 3,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 228
+      },
+      {
+        "month": "2023-03",
+        "cvl": 252,
+        "compulsory": 58,
+        "administration": 22,
+        "administration_to_cvl": 1,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 334
+      },
+      {
+        "month": "2023-04",
+        "cvl": 199,
+        "compulsory": 30,
+        "administration": 22,
+        "administration_to_cvl": 1,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 254
+      },
+      {
+        "month": "2023-05",
+        "cvl": 298,
+        "compulsory": 26,
+        "administration": 14,
+        "administration_to_cvl": 3,
+        "cva": 6,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 347
+      },
+      {
+        "month": "2023-06",
+        "cvl": 214,
+        "compulsory": 49,
+        "administration": 24,
+        "administration_to_cvl": 5,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 294
+      },
+      {
+        "month": "2023-07",
+        "cvl": 210,
+        "compulsory": 37,
+        "administration": 12,
+        "administration_to_cvl": 0,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 263
+      },
+      {
+        "month": "2023-08",
+        "cvl": 279,
+        "compulsory": 44,
+        "administration": 22,
+        "administration_to_cvl": 3,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 351
+      },
+      {
+        "month": "2023-09",
+        "cvl": 221,
+        "compulsory": 49,
+        "administration": 15,
+        "administration_to_cvl": 1,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 291
+      },
+      {
+        "month": "2023-10",
+        "cvl": 260,
+        "compulsory": 46,
+        "administration": 18,
+        "administration_to_cvl": 1,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 330
+      },
+      {
+        "month": "2023-11",
+        "cvl": 269,
+        "compulsory": 75,
+        "administration": 25,
+        "administration_to_cvl": 3,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 372
+      },
+      {
+        "month": "2023-12",
+        "cvl": 225,
+        "compulsory": 31,
+        "administration": 16,
+        "administration_to_cvl": 3,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 280
+      },
+      {
+        "month": "2024-01",
+        "cvl": 188,
+        "compulsory": 57,
+        "administration": 21,
+        "administration_to_cvl": 1,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 271
+      },
+      {
+        "month": "2024-02",
+        "cvl": 239,
+        "compulsory": 39,
+        "administration": 20,
+        "administration_to_cvl": 2,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 302
+      },
+      {
+        "month": "2024-03",
+        "cvl": 216,
+        "compulsory": 44,
+        "administration": 20,
+        "administration_to_cvl": 2,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 283
+      },
+      {
+        "month": "2024-04",
+        "cvl": 270,
+        "compulsory": 54,
+        "administration": 30,
+        "administration_to_cvl": 2,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 358
+      },
+      {
+        "month": "2024-05",
+        "cvl": 222,
+        "compulsory": 29,
+        "administration": 12,
+        "administration_to_cvl": 4,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 268
+      },
+      {
+        "month": "2024-06",
+        "cvl": 258,
+        "compulsory": 44,
+        "administration": 24,
+        "administration_to_cvl": 5,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 334
+      },
+      {
+        "month": "2024-07",
+        "cvl": 245,
+        "compulsory": 50,
+        "administration": 30,
+        "administration_to_cvl": 5,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 335
+      },
+      {
+        "month": "2024-08",
+        "cvl": 203,
+        "compulsory": 45,
+        "administration": 15,
+        "administration_to_cvl": 9,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 277
+      },
+      {
+        "month": "2024-09",
+        "cvl": 191,
+        "compulsory": 43,
+        "administration": 23,
+        "administration_to_cvl": 0,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 262
+      },
+      {
+        "month": "2024-10",
+        "cvl": 207,
+        "compulsory": 37,
+        "administration": 20,
+        "administration_to_cvl": 4,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 268
+      },
+      {
+        "month": "2024-11",
+        "cvl": 270,
+        "compulsory": 64,
+        "administration": 35,
+        "administration_to_cvl": 3,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 374
+      },
+      {
+        "month": "2024-12",
+        "cvl": 201,
+        "compulsory": 43,
+        "administration": 18,
+        "administration_to_cvl": 1,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 268
+      },
+      {
+        "month": "2025-01",
+        "cvl": 209,
+        "compulsory": 54,
+        "administration": 25,
+        "administration_to_cvl": 2,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 293
+      },
+      {
+        "month": "2025-02",
+        "cvl": 177,
+        "compulsory": 58,
+        "administration": 15,
+        "administration_to_cvl": 2,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 253
+      },
+      {
+        "month": "2025-03",
+        "cvl": 254,
+        "compulsory": 44,
+        "administration": 21,
+        "administration_to_cvl": 4,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 327
+      },
+      {
+        "month": "2025-04",
+        "cvl": 220,
+        "compulsory": 68,
+        "administration": 20,
+        "administration_to_cvl": 4,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 316
+      },
+      {
+        "month": "2025-05",
+        "cvl": 257,
+        "compulsory": 58,
+        "administration": 17,
+        "administration_to_cvl": 6,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 340
+      },
+      {
+        "month": "2025-06",
+        "cvl": 217,
+        "compulsory": 44,
+        "administration": 17,
+        "administration_to_cvl": 7,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 288
+      },
+      {
+        "month": "2025-07",
+        "cvl": 256,
+        "compulsory": 73,
+        "administration": 23,
+        "administration_to_cvl": 2,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 356
+      },
+      {
+        "month": "2025-08",
+        "cvl": 242,
+        "compulsory": 37,
+        "administration": 18,
+        "administration_to_cvl": 10,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 307
+      },
+      {
+        "month": "2025-09",
+        "cvl": 222,
+        "compulsory": 45,
+        "administration": 20,
+        "administration_to_cvl": 7,
+        "cva": 1,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 295
+      },
+      {
+        "month": "2025-10",
+        "cvl": 248,
+        "compulsory": 70,
+        "administration": 17,
+        "administration_to_cvl": 8,
+        "cva": 4,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 347
+      },
+      {
+        "month": "2025-11",
+        "cvl": 225,
+        "compulsory": 40,
+        "administration": 27,
+        "administration_to_cvl": 5,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 301
+      },
+      {
+        "month": "2025-12",
+        "cvl": 215,
+        "compulsory": 38,
+        "administration": 16,
+        "administration_to_cvl": 4,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 275
+      },
+      {
+        "month": "2026-01",
+        "cvl": 176,
+        "compulsory": 48,
+        "administration": 16,
+        "administration_to_cvl": 3,
+        "cva": 3,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 246
+      },
+      {
+        "month": "2026-02",
+        "cvl": 210,
+        "compulsory": 34,
+        "administration": 16,
+        "administration_to_cvl": 8,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 270
+      },
+      {
+        "month": "2026-03",
+        "cvl": 250,
+        "compulsory": 43,
+        "administration": 26,
+        "administration_to_cvl": 7,
+        "cva": 0,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 326
+      },
+      {
+        "month": "2026-04",
+        "cvl": 209,
+        "compulsory": 60,
+        "administration": 14,
+        "administration_to_cvl": 5,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 290
+      },
+      {
+        "month": "2026-05",
+        "cvl": 227,
+        "compulsory": 46,
+        "administration": 20,
+        "administration_to_cvl": 1,
+        "cva": 2,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 297
+      },
+      {
+        "month": "2026-06",
+        "cvl": 190,
+        "compulsory": 23,
+        "administration": 14,
+        "administration_to_cvl": 5,
+        "cva": 5,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 237
+      }
+    ],
+    "annual": [
+      {
+        "year": 2016,
+        "cvl": 1448,
+        "compulsory": 521,
+        "administration": 218,
+        "administration_to_cvl": 70,
+        "cva": 47,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 2304
+      },
+      {
+        "year": 2017,
+        "cvl": 1445,
+        "compulsory": 477,
+        "administration": 179,
+        "administration_to_cvl": 62,
+        "cva": 45,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 2208
+      },
+      {
+        "year": 2018,
+        "cvl": 1503,
+        "compulsory": 510,
+        "administration": 202,
+        "administration_to_cvl": 69,
+        "cva": 46,
+        "receivership": 1,
+        "moratorium": 0,
+        "total": 2331
+      },
+      {
+        "year": 2019,
+        "cvl": 1600,
+        "compulsory": 496,
+        "administration": 231,
+        "administration_to_cvl": 66,
+        "cva": 51,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 2444
+      },
+      {
+        "year": 2020,
+        "cvl": 1349,
+        "compulsory": 204,
+        "administration": 192,
+        "administration_to_cvl": 76,
+        "cva": 27,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 1848
+      },
+      {
+        "year": 2021,
+        "cvl": 2214,
+        "compulsory": 79,
+        "administration": 112,
+        "administration_to_cvl": 53,
+        "cva": 6,
+        "receivership": 0,
+        "moratorium": 4,
+        "total": 2468
+      },
+      {
+        "year": 2022,
+        "cvl": 2819,
+        "compulsory": 296,
+        "administration": 137,
+        "administration_to_cvl": 26,
+        "cva": 11,
+        "receivership": 0,
+        "moratorium": 0,
+        "total": 3289
+      },
+      {
+        "year": 2023,
+        "cvl": 2812,
+        "compulsory": 499,
+        "administration": 214,
+        "administration_to_cvl": 24,
+        "cva": 35,
+        "receivership": 0,
+        "moratorium": 3,
+        "total": 3587
+      },
+      {
+        "year": 2024,
+        "cvl": 2710,
+        "compulsory": 549,
+        "administration": 268,
+        "administration_to_cvl": 38,
+        "cva": 33,
+        "receivership": 0,
+        "moratorium": 2,
+        "total": 3600
+      },
+      {
+        "year": 2025,
+        "cvl": 2742,
+        "compulsory": 629,
+        "administration": 236,
+        "administration_to_cvl": 61,
+        "cva": 28,
+        "receivership": 0,
+        "moratorium": 2,
+        "total": 3698
+      },
+      {
+        "year": 2026,
+        "cvl": 1262,
+        "compulsory": 254,
+        "administration": 106,
+        "administration_to_cvl": 29,
+        "cva": 14,
+        "receivership": 0,
+        "moratorium": 1,
+        "total": 1666
+      }
+    ]
+  },
+  "sections": {
+    "monthly": [
+      {
+        "month": "2016-01",
+        "J": 69,
+        "M": 100,
+        "total": 169
+      },
+      {
+        "month": "2016-02",
+        "J": 76,
+        "M": 107,
+        "total": 183
+      },
+      {
+        "month": "2016-03",
+        "J": 76,
+        "M": 119,
+        "total": 195
+      },
+      {
+        "month": "2016-04",
+        "J": 81,
+        "M": 137,
+        "total": 218
+      },
+      {
+        "month": "2016-05",
+        "J": 60,
+        "M": 104,
+        "total": 164
+      },
+      {
+        "month": "2016-06",
+        "J": 88,
+        "M": 114,
+        "total": 202
+      },
+      {
+        "month": "2016-07",
+        "J": 86,
+        "M": 103,
+        "total": 189
+      },
+      {
+        "month": "2016-08",
+        "J": 68,
+        "M": 107,
+        "total": 175
+      },
+      {
+        "month": "2016-09",
+        "J": 79,
+        "M": 135,
+        "total": 214
+      },
+      {
+        "month": "2016-10",
+        "J": 76,
+        "M": 110,
+        "total": 186
+      },
+      {
+        "month": "2016-11",
+        "J": 99,
+        "M": 127,
+        "total": 226
+      },
+      {
+        "month": "2016-12",
+        "J": 84,
+        "M": 99,
+        "total": 183
+      },
+      {
+        "month": "2017-01",
+        "J": 109,
+        "M": 119,
+        "total": 228
+      },
+      {
+        "month": "2017-02",
+        "J": 79,
+        "M": 110,
+        "total": 189
+      },
+      {
+        "month": "2017-03",
+        "J": 88,
+        "M": 114,
+        "total": 202
+      },
+      {
+        "month": "2017-04",
+        "J": 82,
+        "M": 118,
+        "total": 200
+      },
+      {
+        "month": "2017-05",
+        "J": 66,
+        "M": 100,
+        "total": 166
+      },
+      {
+        "month": "2017-06",
+        "J": 69,
+        "M": 94,
+        "total": 163
+      },
+      {
+        "month": "2017-07",
+        "J": 79,
+        "M": 88,
+        "total": 167
+      },
+      {
+        "month": "2017-08",
+        "J": 58,
+        "M": 102,
+        "total": 160
+      },
+      {
+        "month": "2017-09",
+        "J": 95,
+        "M": 118,
+        "total": 213
+      },
+      {
+        "month": "2017-10",
+        "J": 62,
+        "M": 93,
+        "total": 155
+      },
+      {
+        "month": "2017-11",
+        "J": 70,
+        "M": 123,
+        "total": 193
+      },
+      {
+        "month": "2017-12",
+        "J": 73,
+        "M": 99,
+        "total": 172
+      },
+      {
+        "month": "2018-01",
+        "J": 95,
+        "M": 126,
+        "total": 221
+      },
+      {
+        "month": "2018-02",
+        "J": 61,
+        "M": 119,
+        "total": 180
+      },
+      {
+        "month": "2018-03",
+        "J": 74,
+        "M": 105,
+        "total": 179
+      },
+      {
+        "month": "2018-04",
+        "J": 77,
+        "M": 98,
+        "total": 175
+      },
+      {
+        "month": "2018-05",
+        "J": 65,
+        "M": 120,
+        "total": 185
+      },
+      {
+        "month": "2018-06",
+        "J": 90,
+        "M": 124,
+        "total": 214
+      },
+      {
+        "month": "2018-07",
+        "J": 64,
+        "M": 113,
+        "total": 177
+      },
+      {
+        "month": "2018-08",
+        "J": 79,
+        "M": 127,
+        "total": 206
+      },
+      {
+        "month": "2018-09",
+        "J": 88,
+        "M": 107,
+        "total": 195
+      },
+      {
+        "month": "2018-10",
+        "J": 107,
+        "M": 126,
+        "total": 233
+      },
+      {
+        "month": "2018-11",
+        "J": 110,
+        "M": 105,
+        "total": 215
+      },
+      {
+        "month": "2018-12",
+        "J": 74,
+        "M": 77,
+        "total": 151
+      },
+      {
+        "month": "2019-01",
+        "J": 114,
+        "M": 138,
+        "total": 252
+      },
+      {
+        "month": "2019-02",
+        "J": 79,
+        "M": 108,
+        "total": 187
+      },
+      {
+        "month": "2019-03",
+        "J": 84,
+        "M": 113,
+        "total": 197
+      },
+      {
+        "month": "2019-04",
+        "J": 95,
+        "M": 129,
+        "total": 224
+      },
+      {
+        "month": "2019-05",
+        "J": 82,
+        "M": 124,
+        "total": 206
+      },
+      {
+        "month": "2019-06",
+        "J": 61,
+        "M": 131,
+        "total": 192
+      },
+      {
+        "month": "2019-07",
+        "J": 71,
+        "M": 124,
+        "total": 195
+      },
+      {
+        "month": "2019-08",
+        "J": 88,
+        "M": 121,
+        "total": 209
+      },
+      {
+        "month": "2019-09",
+        "J": 89,
+        "M": 125,
+        "total": 214
+      },
+      {
+        "month": "2019-10",
+        "J": 91,
+        "M": 120,
+        "total": 211
+      },
+      {
+        "month": "2019-11",
+        "J": 74,
+        "M": 141,
+        "total": 215
+      },
+      {
+        "month": "2019-12",
+        "J": 52,
+        "M": 90,
+        "total": 142
+      },
+      {
+        "month": "2020-01",
+        "J": 82,
+        "M": 117,
+        "total": 199
+      },
+      {
+        "month": "2020-02",
+        "J": 69,
+        "M": 95,
+        "total": 164
+      },
+      {
+        "month": "2020-03",
+        "J": 79,
+        "M": 92,
+        "total": 171
+      },
+      {
+        "month": "2020-04",
+        "J": 64,
+        "M": 94,
+        "total": 158
+      },
+      {
+        "month": "2020-05",
+        "J": 61,
+        "M": 96,
+        "total": 157
+      },
+      {
+        "month": "2020-06",
+        "J": 45,
+        "M": 65,
+        "total": 110
+      },
+      {
+        "month": "2020-07",
+        "J": 54,
+        "M": 79,
+        "total": 133
+      },
+      {
+        "month": "2020-08",
+        "J": 41,
+        "M": 81,
+        "total": 122
+      },
+      {
+        "month": "2020-09",
+        "J": 58,
+        "M": 92,
+        "total": 150
+      },
+      {
+        "month": "2020-10",
+        "J": 64,
+        "M": 93,
+        "total": 157
+      },
+      {
+        "month": "2020-11",
+        "J": 50,
+        "M": 80,
+        "total": 130
+      },
+      {
+        "month": "2020-12",
+        "J": 80,
+        "M": 117,
+        "total": 197
+      },
+      {
+        "month": "2021-01",
+        "J": 50,
+        "M": 67,
+        "total": 117
+      },
+      {
+        "month": "2021-02",
+        "J": 48,
+        "M": 75,
+        "total": 123
+      },
+      {
+        "month": "2021-03",
+        "J": 78,
+        "M": 105,
+        "total": 183
+      },
+      {
+        "month": "2021-04",
+        "J": 71,
+        "M": 100,
+        "total": 171
+      },
+      {
+        "month": "2021-05",
+        "J": 74,
+        "M": 109,
+        "total": 183
+      },
+      {
+        "month": "2021-06",
+        "J": 85,
+        "M": 141,
+        "total": 226
+      },
+      {
+        "month": "2021-07",
+        "J": 67,
+        "M": 116,
+        "total": 183
+      },
+      {
+        "month": "2021-08",
+        "J": 108,
+        "M": 134,
+        "total": 242
+      },
+      {
+        "month": "2021-09",
+        "J": 103,
+        "M": 171,
+        "total": 274
+      },
+      {
+        "month": "2021-10",
+        "J": 82,
+        "M": 150,
+        "total": 232
+      },
+      {
+        "month": "2021-11",
+        "J": 105,
+        "M": 182,
+        "total": 287
+      },
+      {
+        "month": "2021-12",
+        "J": 90,
+        "M": 157,
+        "total": 247
+      },
+      {
+        "month": "2022-01",
+        "J": 98,
+        "M": 159,
+        "total": 257
+      },
+      {
+        "month": "2022-02",
+        "J": 87,
+        "M": 130,
+        "total": 217
+      },
+      {
+        "month": "2022-03",
+        "J": 149,
+        "M": 197,
+        "total": 346
+      },
+      {
+        "month": "2022-04",
+        "J": 122,
+        "M": 181,
+        "total": 303
+      },
+      {
+        "month": "2022-05",
+        "J": 114,
+        "M": 173,
+        "total": 287
+      },
+      {
+        "month": "2022-06",
+        "J": 99,
+        "M": 157,
+        "total": 256
+      },
+      {
+        "month": "2022-07",
+        "J": 103,
+        "M": 174,
+        "total": 277
+      },
+      {
+        "month": "2022-08",
+        "J": 118,
+        "M": 183,
+        "total": 301
+      },
+      {
+        "month": "2022-09",
+        "J": 82,
+        "M": 144,
+        "total": 226
+      },
+      {
+        "month": "2022-10",
+        "J": 124,
+        "M": 138,
+        "total": 262
+      },
+      {
+        "month": "2022-11",
+        "J": 114,
+        "M": 171,
+        "total": 285
+      },
+      {
+        "month": "2022-12",
+        "J": 134,
+        "M": 138,
+        "total": 272
+      },
+      {
+        "month": "2023-01",
+        "J": 99,
+        "M": 144,
+        "total": 243
+      },
+      {
+        "month": "2023-02",
+        "J": 75,
+        "M": 153,
+        "total": 228
+      },
+      {
+        "month": "2023-03",
+        "J": 131,
+        "M": 203,
+        "total": 334
+      },
+      {
+        "month": "2023-04",
+        "J": 93,
+        "M": 161,
+        "total": 254
+      },
+      {
+        "month": "2023-05",
+        "J": 129,
+        "M": 218,
+        "total": 347
+      },
+      {
+        "month": "2023-06",
+        "J": 112,
+        "M": 182,
+        "total": 294
+      },
+      {
+        "month": "2023-07",
+        "J": 117,
+        "M": 146,
+        "total": 263
+      },
+      {
+        "month": "2023-08",
+        "J": 135,
+        "M": 216,
+        "total": 351
+      },
+      {
+        "month": "2023-09",
+        "J": 128,
+        "M": 163,
+        "total": 291
+      },
+      {
+        "month": "2023-10",
+        "J": 146,
+        "M": 184,
+        "total": 330
+      },
+      {
+        "month": "2023-11",
+        "J": 169,
+        "M": 203,
+        "total": 372
+      },
+      {
+        "month": "2023-12",
+        "J": 122,
+        "M": 158,
+        "total": 280
+      },
+      {
+        "month": "2024-01",
+        "J": 107,
+        "M": 164,
+        "total": 271
+      },
+      {
+        "month": "2024-02",
+        "J": 139,
+        "M": 163,
+        "total": 302
+      },
+      {
+        "month": "2024-03",
+        "J": 131,
+        "M": 152,
+        "total": 283
+      },
+      {
+        "month": "2024-04",
+        "J": 154,
+        "M": 204,
+        "total": 358
+      },
+      {
+        "month": "2024-05",
+        "J": 110,
+        "M": 158,
+        "total": 268
+      },
+      {
+        "month": "2024-06",
+        "J": 163,
+        "M": 171,
+        "total": 334
+      },
+      {
+        "month": "2024-07",
+        "J": 135,
+        "M": 200,
+        "total": 335
+      },
+      {
+        "month": "2024-08",
+        "J": 129,
+        "M": 148,
+        "total": 277
+      },
+      {
+        "month": "2024-09",
+        "J": 107,
+        "M": 155,
+        "total": 262
+      },
+      {
+        "month": "2024-10",
+        "J": 105,
+        "M": 163,
+        "total": 268
+      },
+      {
+        "month": "2024-11",
+        "J": 186,
+        "M": 188,
+        "total": 374
+      },
+      {
+        "month": "2024-12",
+        "J": 114,
+        "M": 154,
+        "total": 268
+      },
+      {
+        "month": "2025-01",
+        "J": 119,
+        "M": 174,
+        "total": 293
+      },
+      {
+        "month": "2025-02",
+        "J": 108,
+        "M": 145,
+        "total": 253
+      },
+      {
+        "month": "2025-03",
+        "J": 156,
+        "M": 171,
+        "total": 327
+      },
+      {
+        "month": "2025-04",
+        "J": 128,
+        "M": 188,
+        "total": 316
+      },
+      {
+        "month": "2025-05",
+        "J": 148,
+        "M": 192,
+        "total": 340
+      },
+      {
+        "month": "2025-06",
+        "J": 121,
+        "M": 167,
+        "total": 288
+      },
+      {
+        "month": "2025-07",
+        "J": 160,
+        "M": 196,
+        "total": 356
+      },
+      {
+        "month": "2025-08",
+        "J": 129,
+        "M": 178,
+        "total": 307
+      },
+      {
+        "month": "2025-09",
+        "J": 136,
+        "M": 159,
+        "total": 295
+      },
+      {
+        "month": "2025-10",
+        "J": 156,
+        "M": 191,
+        "total": 347
+      },
+      {
+        "month": "2025-11",
+        "J": 103,
+        "M": 198,
+        "total": 301
+      },
+      {
+        "month": "2025-12",
+        "J": 103,
+        "M": 172,
+        "total": 275
+      },
+      {
+        "month": "2026-01",
+        "J": 97,
+        "M": 149,
+        "total": 246
+      },
+      {
+        "month": "2026-02",
+        "J": 115,
+        "M": 155,
+        "total": 270
+      },
+      {
+        "month": "2026-03",
+        "J": 135,
+        "M": 191,
+        "total": 326
+      },
+      {
+        "month": "2026-04",
+        "J": 119,
+        "M": 171,
+        "total": 290
+      },
+      {
+        "month": "2026-05",
+        "J": 126,
+        "M": 171,
+        "total": 297
+      },
+      {
+        "month": "2026-06",
+        "J": 102,
+        "M": 135,
+        "total": 237
+      }
+    ],
+    "annual": [
+      {
+        "year": 2016,
+        "J": 942,
+        "M": 1362,
+        "total": 2304
+      },
+      {
+        "year": 2017,
+        "J": 930,
+        "M": 1278,
+        "total": 2208
+      },
+      {
+        "year": 2018,
+        "J": 984,
+        "M": 1347,
+        "total": 2331
+      },
+      {
+        "year": 2019,
+        "J": 980,
+        "M": 1464,
+        "total": 2444
+      },
+      {
+        "year": 2020,
+        "J": 747,
+        "M": 1101,
+        "total": 1848
+      },
+      {
+        "year": 2021,
+        "J": 961,
+        "M": 1507,
+        "total": 2468
+      },
+      {
+        "year": 2022,
+        "J": 1344,
+        "M": 1945,
+        "total": 3289
+      },
+      {
+        "year": 2023,
+        "J": 1456,
+        "M": 2131,
+        "total": 3587
+      },
+      {
+        "year": 2024,
+        "J": 1580,
+        "M": 2020,
+        "total": 3600
+      },
+      {
+        "year": 2025,
+        "J": 1567,
+        "M": 2131,
+        "total": 3698
+      },
+      {
+        "year": 2026,
+        "J": 694,
+        "M": 972,
+        "total": 1666
+      }
+    ]
+  },
+  "captured": {
+    "monthly": [
+      {
+        "month": "2016-01",
+        "total": 90
+      },
+      {
+        "month": "2016-02",
+        "total": 99
+      },
+      {
+        "month": "2016-03",
+        "total": 106
+      },
+      {
+        "month": "2016-04",
+        "total": 106
+      },
+      {
+        "month": "2016-05",
+        "total": 82
+      },
+      {
+        "month": "2016-06",
+        "total": 105
+      },
+      {
+        "month": "2016-07",
+        "total": 101
+      },
+      {
+        "month": "2016-08",
+        "total": 99
+      },
+      {
+        "month": "2016-09",
+        "total": 134
+      },
+      {
+        "month": "2016-10",
+        "total": 96
+      },
+      {
+        "month": "2016-11",
+        "total": 126
+      },
+      {
+        "month": "2016-12",
+        "total": 103
+      },
+      {
+        "month": "2017-01",
+        "total": 123
+      },
+      {
+        "month": "2017-02",
+        "total": 95
+      },
+      {
+        "month": "2017-03",
+        "total": 123
+      },
+      {
+        "month": "2017-04",
+        "total": 104
+      },
+      {
+        "month": "2017-05",
+        "total": 89
+      },
+      {
+        "month": "2017-06",
+        "total": 80
+      },
+      {
+        "month": "2017-07",
+        "total": 101
+      },
+      {
+        "month": "2017-08",
+        "total": 94
+      },
+      {
+        "month": "2017-09",
+        "total": 130
+      },
+      {
+        "month": "2017-10",
+        "total": 84
+      },
+      {
+        "month": "2017-11",
+        "total": 119
+      },
+      {
+        "month": "2017-12",
+        "total": 106
+      },
+      {
+        "month": "2018-01",
+        "total": 129
+      },
+      {
+        "month": "2018-02",
+        "total": 108
+      },
+      {
+        "month": "2018-03",
+        "total": 104
+      },
+      {
+        "month": "2018-04",
+        "total": 97
+      },
+      {
+        "month": "2018-05",
+        "total": 107
+      },
+      {
+        "month": "2018-06",
+        "total": 129
+      },
+      {
+        "month": "2018-07",
+        "total": 95
+      },
+      {
+        "month": "2018-08",
+        "total": 107
+      },
+      {
+        "month": "2018-09",
+        "total": 111
+      },
+      {
+        "month": "2018-10",
+        "total": 128
+      },
+      {
+        "month": "2018-11",
+        "total": 128
+      },
+      {
+        "month": "2018-12",
+        "total": 76
+      },
+      {
+        "month": "2019-01",
+        "total": 146
+      },
+      {
+        "month": "2019-02",
+        "total": 106
+      },
+      {
+        "month": "2019-03",
+        "total": 111
+      },
+      {
+        "month": "2019-04",
+        "total": 125
+      },
+      {
+        "month": "2019-05",
+        "total": 107
+      },
+      {
+        "month": "2019-06",
+        "total": 104
+      },
+      {
+        "month": "2019-07",
+        "total": 116
+      },
+      {
+        "month": "2019-08",
+        "total": 116
+      },
+      {
+        "month": "2019-09",
+        "total": 126
+      },
+      {
+        "month": "2019-10",
+        "total": 130
+      },
+      {
+        "month": "2019-11",
+        "total": 122
+      },
+      {
+        "month": "2019-12",
+        "total": 80
+      },
+      {
+        "month": "2020-01",
+        "total": 109
+      },
+      {
+        "month": "2020-02",
+        "total": 98
+      },
+      {
+        "month": "2020-03",
+        "total": 101
+      },
+      {
+        "month": "2020-04",
+        "total": 87
+      },
+      {
+        "month": "2020-05",
+        "total": 98
+      },
+      {
+        "month": "2020-06",
+        "total": 69
+      },
+      {
+        "month": "2020-07",
+        "total": 85
+      },
+      {
+        "month": "2020-08",
+        "total": 71
+      },
+      {
+        "month": "2020-09",
+        "total": 91
+      },
+      {
+        "month": "2020-10",
+        "total": 99
+      },
+      {
+        "month": "2020-11",
+        "total": 68
+      },
+      {
+        "month": "2020-12",
+        "total": 115
+      },
+      {
+        "month": "2021-01",
+        "total": 79
+      },
+      {
+        "month": "2021-02",
+        "total": 75
+      },
+      {
+        "month": "2021-03",
+        "total": 111
+      },
+      {
+        "month": "2021-04",
+        "total": 102
+      },
+      {
+        "month": "2021-05",
+        "total": 118
+      },
+      {
+        "month": "2021-06",
+        "total": 143
+      },
+      {
+        "month": "2021-07",
+        "total": 110
+      },
+      {
+        "month": "2021-08",
+        "total": 156
+      },
+      {
+        "month": "2021-09",
+        "total": 180
+      },
+      {
+        "month": "2021-10",
+        "total": 140
+      },
+      {
+        "month": "2021-11",
+        "total": 186
+      },
+      {
+        "month": "2021-12",
+        "total": 144
+      },
+      {
+        "month": "2022-01",
+        "total": 170
+      },
+      {
+        "month": "2022-02",
+        "total": 135
+      },
+      {
+        "month": "2022-03",
+        "total": 199
+      },
+      {
+        "month": "2022-04",
+        "total": 183
+      },
+      {
+        "month": "2022-05",
+        "total": 172
+      },
+      {
+        "month": "2022-06",
+        "total": 158
+      },
+      {
+        "month": "2022-07",
+        "total": 159
+      },
+      {
+        "month": "2022-08",
+        "total": 195
+      },
+      {
+        "month": "2022-09",
+        "total": 125
+      },
+      {
+        "month": "2022-10",
+        "total": 152
+      },
+      {
+        "month": "2022-11",
+        "total": 160
+      },
+      {
+        "month": "2022-12",
+        "total": 152
+      },
+      {
+        "month": "2023-01",
+        "total": 154
+      },
+      {
+        "month": "2023-02",
+        "total": 120
+      },
+      {
+        "month": "2023-03",
+        "total": 208
+      },
+      {
+        "month": "2023-04",
+        "total": 150
+      },
+      {
+        "month": "2023-05",
+        "total": 201
+      },
+      {
+        "month": "2023-06",
+        "total": 160
+      },
+      {
+        "month": "2023-07",
+        "total": 141
+      },
+      {
+        "month": "2023-08",
+        "total": 221
+      },
+      {
+        "month": "2023-09",
+        "total": 179
+      },
+      {
+        "month": "2023-10",
+        "total": 194
+      },
+      {
+        "month": "2023-11",
+        "total": 235
+      },
+      {
+        "month": "2023-12",
+        "total": 162
+      },
+      {
+        "month": "2024-01",
+        "total": 164
+      },
+      {
+        "month": "2024-02",
+        "total": 181
+      },
+      {
+        "month": "2024-03",
+        "total": 182
+      },
+      {
+        "month": "2024-04",
+        "total": 220
+      },
+      {
+        "month": "2024-05",
+        "total": 158
+      },
+      {
+        "month": "2024-06",
+        "total": 192
+      },
+      {
+        "month": "2024-07",
+        "total": 200
+      },
+      {
+        "month": "2024-08",
+        "total": 167
+      },
+      {
+        "month": "2024-09",
+        "total": 140
+      },
+      {
+        "month": "2024-10",
+        "total": 153
+      },
+      {
+        "month": "2024-11",
+        "total": 223
+      },
+      {
+        "month": "2024-12",
+        "total": 158
+      },
+      {
+        "month": "2025-01",
+        "total": 168
+      },
+      {
+        "month": "2025-02",
+        "total": 158
+      },
+      {
+        "month": "2025-03",
+        "total": 185
+      },
+      {
+        "month": "2025-04",
+        "total": 183
+      },
+      {
+        "month": "2025-05",
+        "total": 203
+      },
+      {
+        "month": "2025-06",
+        "total": 166
+      },
+      {
+        "month": "2025-07",
+        "total": 224
+      },
+      {
+        "month": "2025-08",
+        "total": 162
+      },
+      {
+        "month": "2025-09",
+        "total": 173
+      },
+      {
+        "month": "2025-10",
+        "total": 209
+      },
+      {
+        "month": "2025-11",
+        "total": 182
+      },
+      {
+        "month": "2025-12",
+        "total": 162
+      },
+      {
+        "month": "2026-01",
+        "total": 136
+      },
+      {
+        "month": "2026-02",
+        "total": 152
+      },
+      {
+        "month": "2026-03",
+        "total": 187
+      },
+      {
+        "month": "2026-04",
+        "total": 178
+      },
+      {
+        "month": "2026-05",
+        "total": 175
+      },
+      {
+        "month": "2026-06",
+        "total": 152
+      }
+    ],
+    "annual": [
+      {
+        "year": 2016,
+        "total": 1247
+      },
+      {
+        "year": 2017,
+        "total": 1248
+      },
+      {
+        "year": 2018,
+        "total": 1319
+      },
+      {
+        "year": 2019,
+        "total": 1389
+      },
+      {
+        "year": 2020,
+        "total": 1091
+      },
+      {
+        "year": 2021,
+        "total": 1544
+      },
+      {
+        "year": 2022,
+        "total": 1960
+      },
+      {
+        "year": 2023,
+        "total": 2125
+      },
+      {
+        "year": 2024,
+        "total": 2138
+      },
+      {
+        "year": 2025,
+        "total": 2175
+      },
+      {
+        "year": 2026,
+        "total": 980
+      }
+    ]
+  }
+}

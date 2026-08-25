@@ -12,7 +12,7 @@ There are now TWO primary nurture sequences. A lead is in exactly one of them at
 
 | Sequence name | For | Goal | Channels |
 |---|---|---|---|
-| `property_contactability` | Leads that already have a name and a usable phone | Prove the lead is responsive, promote to `contactable`, hand to DJH | email + SMS + WhatsApp |
+| `property_contactability` | Leads that already have a name and a usable phone | Prove the lead is responsive, promote to `contactable`, hand to the partner firm | email + SMS + WhatsApp |
 | `property_detail_capture` | Leads missing a name and/or a phone (typically email-only widget leads) | Collect the missing contact detail(s), then route into the standard flow | email only |
 
 Both are declared once in `Property/web/src/config/lead-nurture.ts`:
@@ -47,7 +47,7 @@ Note: the capture surface is defined by the token + the `/api/leads/complete` en
 
 ## Phone-aware completeness and exhaustion rules
 
-Supplying the LAST missing field is the moment a lead can be promoted, so a full completion runs the same contactability gate as a booking or a one-tap confirm. The phone determines what happens, because DJH call by phone:
+Supplying the LAST missing field is the moment a lead can be promoted, so a full completion runs the same contactability gate as a booking or a one-tap confirm. The phone determines what happens, because the partner firm calls by phone:
 
 - **Partial completion** (still short of a full contact record): do NOT record a response or promote. Leave the detail-capture chase active so its next scheduled email asks for the remaining field. Returns `{ stillMissing }`.
 - **Full completion, phone known-bad** (newly verified `invalid` or `voip`): the lead is not callable, so do NOT promote. Record a `phone_recheck_needed` event, and `stop` the detail-capture state so no further "add your details" emails fire. Returns `{ invalidPhone: true }`.

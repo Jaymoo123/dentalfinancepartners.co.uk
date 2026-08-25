@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "DIY Housebuilders' VAT Refund: Self-Builder Reclaim Guide"
 metaDescription: "How private self-builders reclaim VAT on materials under s.35 VATA 1994: eligible costs, the six-month deadline, form VAT431NB, and the common rejections."
 altText: "A traditional English family home in Farnham, representing a completed self-build dwelling eligible for the DIY housebuilders' VAT refund scheme"
-image: "https://images.pexels.com/photos/14078226/pexels-photo-14078226.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/14078226/pexels-photo-14078226.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Ryan Collis
   photographer_url: https://www.pexels.com/@ryan-collis-179324118

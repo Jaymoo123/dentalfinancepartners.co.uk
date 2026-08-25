@@ -1,0 +1,38 @@
+LEAD DELIVERY | {{LEAD_ID}} | {{TIER_LABEL}} | {{PRICE}}
+
+You claimed this lead. Full verified details below.
+
+Basis:        {{BASIS}}
+Source site:  {{SOURCE_SITE}}
+Tier:         {{TIER_LABEL}}
+Case type:    {{CASE_TYPE}}
+Intent:       {{INTENT_LINE}}
+Area:         {{AREA}}
+Price:        {{PRICE}}
+
+CONTACT
+Name:   {{NAME}}
+Phone:  {{PHONE}}
+Email:  {{EMAIL}}
+
+FULL MESSAGE
+{{MESSAGE}}
+
+Verified:      {{VERIFIED}}
+Verified at:   {{VERIFIED_AT}}
+Delivered at:  {{DELIVERED_AT}}
+
+LAWFUL BASIS AND WHAT YOU MUST DO NEXT
+This enquiry is shared with you under our legitimate interests (Article 6(1)(f)
+UK GDPR) and the data sharing agreement between us. You are an independent
+controller of it from delivery. You must identify yourself to the enquirer and
+give them your own privacy information when you first make contact (Article 14,
+normally at first contact and within one month). Your first contact is a response
+to their enquiry, not marketing. Do not pass this data to any other controller,
+sell it or list-broker it. Tell us within 2 working days if they object or opt out.
+
+Notice shown to the enquirer when they submitted:
+{{CONSENT_TEXT}}
+
+STANDARD TERMS
+{{TERMS}}

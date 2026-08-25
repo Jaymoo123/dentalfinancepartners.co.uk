@@ -41,11 +41,83 @@ faqs:
     answer: "Where Private Residence Relief covers the full gain, no 60-day filing is required. Letting Relief, where it applies (now narrowly, only for periods of shared occupation with a tenant), can reduce the chargeable gain below the annual exempt amount and remove the filing obligation. Rollover relief and incorporation relief defer the gain rather than reduce it, but they generally require formal claims and the underlying disposal still needs to be reported. There is no provision to defer payment of CGT on a residential disposal beyond the 60-day window, even where the seller is short of cash."
   - question: "What records should I keep, and for how long?"
     answer: "Keep the original purchase documents (contract, completion statement, SDLT return, legal invoices), all improvement invoices with supporting plans where relevant, evidence of any PRR periods (council tax records, utility bills, electoral roll entries), the sale completion statement, estate agent and legal fees on disposal, and a calculation of the gain. HMRC requires records to be retained for at least 22 months after the end of the relevant tax year for non-business taxpayers, and five years and 10 months for business taxpayers (which includes most landlords). In practice, keep them for at least six years after disposal."
+  - question: "How do I report capital gains tax to HMRC?"
+    answer: "There are two routes and the one you use depends on what you sold. A UK residential property sale with tax to pay is reported through HMRC's Capital Gains Tax on UK property service within 60 days of completion, and the tax is paid at the end of the same submission. Every other disposal, including commercial property, land, shares and overseas property, is reported on the SA108 capital gains pages of your Self Assessment tax return if you are within Self Assessment, or through HMRC's real time capital gains tax service if you are not, with tax due by the 31 January after the tax year ends. Where a property gain has gone through the 60-day service and you are within Self Assessment, you report the same gain again on your tax return and the tax already paid is credited against the final liability."
+  - question: "How do I pay capital gains tax to HMRC?"
+    answer: "Paying capital gains tax online is the last step of the same 60-day return that reports the gain, so there is nothing separate to set up. You use the payment reference HMRC gives you at submission, and the money has to reach HMRC by the same 60-day deadline. The service accepts a bank transfer, a debit card or a corporate credit card. Where the gain runs through Self Assessment instead, it is settled as part of your balancing payment by the 31 January after the tax year ends, so a 2026/27 disposal is payable by 31 January 2028. Self Assessment payments on account do not apply to capital gains tax."
+  - question: "How do I sign in to my capital gains tax account?"
+    answer: "Use your Government Gateway user ID and password on the Capital Gains Tax on UK property account sign in page. HMRC issues a CGT on UK property account number that identifies your returns. Keep that number: you need it to view or amend a return you have already filed, and your accountant needs it before they can be authorised to act on the disposal. It is a separate account from Self Assessment, so a Self Assessment login on its own will not get you into the property return."
+  - question: "Which form do I use to report capital gains tax?"
+    answer: "The HMRC capital gains tax form you need depends on the route. For a UK residential property disposal filed online, the return is the CGT on UK property service itself rather than a numbered form. If you cannot or do not want to file online, the paper CGT return is the interactive PPDCGT form, which you complete on screen, print and post, still within 60 days of completion. For gains reported through Self Assessment, the form is the SA108 capital gains pages filed with your SA100 tax return by 31 January after the end of the tax year."
+  - question: "Can I use HMRC's real time capital gains tax service to report a property sale?"
+    answer: "No. You report CGT on a UK residential property disposal with tax to pay through the Capital Gains Tax on UK property service, within 60 days of completion, and the same gain is then reported again on your Self Assessment return if you file one. HMRC's real time capital gains tax service is a route for gains on other assets, and neither it nor Self Assessment substitutes for the 60-day property return."
+dateModified: "2026-08-20"
+reviewedAt: "2026-08-20"
 ---
 
-<p>Capital Gains Tax on a UK residential property sale has two distinct reporting and payment touch points: the 60-day CGT on UK property return and the annual Self Assessment return. Missing the 60-day window triggers automatic penalties from day 61, even if the eventual tax bill turns out to be zero. This guide sets out who has to file, when, how the two systems interact, and what to do if a deadline has been missed.</p>
+<p>Capital Gains Tax on a UK residential property sale has two distinct reporting and payment touch points: the 60-day CGT on UK property return and the annual Self Assessment return. Where a return is due, missing the 60-day window triggers automatic penalties from day 61, and for a non-resident that is true even if the eventual tax bill turns out to be zero. This guide sets out who has to file, when, how the two systems interact, and what to do if a deadline has been missed.</p>
 
 <p>For broader CGT mechanics (rates, the annual exempt amount, computational reliefs) see the <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>. This page focuses on the timing and compliance side.</p>
+
+<h2>You have 60 days to report and pay CGT after completion</h2>
+
+<p>If you are UK resident and you sell a UK residential property at a gain that leaves tax to pay, you have 60 days from the completion date to report and pay capital gains tax to HMRC. Both jobs share one date, so your capital gains tax payment deadline is also your filing deadline. A sale completing on 1 June 2026 has to be reported and paid by 31 July 2026.</p>
+
+<p>The rule reaches you only if you are UK resident, selling UK residential property, with tax actually due after your reliefs and your £3,000 annual exempt amount for 2026/27. Where your gain is covered in full by Private Residence Relief, by capital losses or by the annual exempt amount, you have nothing to file inside 60 days.</p>
+
+<p>Miss the date and a £100 penalty lands on day 61 whether or not the tax itself turns out to be small. That is why the deadline is worth putting in the diary the day your sale is agreed rather than the week it completes.</p>
+
+<h2>How do you report capital gains tax to HMRC?</h2>
+
+<p>Capital gains tax reporting runs through one of two HMRC routes, and which one you use depends on what you sold. You report a UK residential property sale with tax to pay through HMRC's Capital Gains Tax on UK property service, within 60 days of completion. Everything else, including the later true-up of that same gain, goes on the Self Assessment capital gains pages if you file a tax return, or through HMRC's real time capital gains tax service if you do not. The asset decides the route, not the size of the gain.</p>
+
+<p>Reporting capital gains tax on UK property through the 60-day route works like this:</p>
+
+<ul>
+<li><strong>Sign in.</strong> You need a Government Gateway user ID.</li>
+<li><strong>Gather your figures before you start.</strong> What you sold for, what you paid, your capital improvement costs, your buying and selling costs, and an estimate of your income for the tax year.</li>
+<li><strong>Work out the gain and the tax.</strong> Deduct your costs, apply any Private Residence Relief, deduct losses brought forward and your annual exempt amount, then apply 18% or 24% depending on where the gain sits against your income.</li>
+<li><strong>Submit the return and pay.</strong> HMRC gives you a payment reference once the return is in, and the tax is due by the same 60-day deadline.</li>
+<li><strong>Keep the submission.</strong> You will need those figures again when you declare the same gain on your tax return.</li>
+</ul>
+
+<p>If an accountant files for you, ask to see the calculation before it goes in, because the return is submitted under your name and the responsibility for it stays with you.</p>
+
+<h2>How do you pay capital gains tax to HMRC?</h2>
+
+<p>How to pay capital gains tax on property depends on which return carries the gain. Inside the 60-day rule you pay CGT online at the end of the same submission that reports it, using the payment reference HMRC issues when the return goes in. The payment deadline is the filing deadline.</p>
+
+<h3>When do you pay capital gains tax on property?</h3>
+
+<p>Sixty days after completion, where the sale is UK residential and there is tax to pay. CGT on property sales outside that rule follows Self Assessment instead, so if you sold commercial property, land, shares or an overseas property, you pay CGT to HMRC with your balancing payment by the 31 January after the tax year ends. A 2026/27 disposal is payable by 31 January 2028. Self Assessment payments on account do not apply to capital gains tax, so the whole amount falls due on that one date.</p>
+
+<h2>What is the HMRC capital gains tax account and how do you sign in?</h2>
+
+<p>The capital gains tax account is the part of HMRC online services where your UK property return lives. You sign in with your Government Gateway user ID and password. There is no separate CGT login to set up.</p>
+
+<p>Keep your CGT on UK property account number somewhere you can find it. You need it to view or amend a return you have already filed, and your accountant needs it from you before they can be authorised to act on the disposal.</p>
+
+<p>The capital gains tax account is not the same thing as your Self Assessment account. A Self Assessment login on its own will not get you into the property return, and being registered for Self Assessment does not create the CGT on UK property account for you.</p>
+
+<h2>Which capital gains tax form do you need?</h2>
+
+<p>There is no single capital gains tax form. Which capital gains tax return you file depends on what you sold and how you are filing it.</p>
+
+<table>
+<thead>
+<tr><th>Your situation</th><th>Form or service</th><th>Deadline</th></tr>
+</thead>
+<tbody>
+<tr><td>UK residential property, tax due, filing online</td><td>CGT on UK property service (online return)</td><td>60 days from completion</td></tr>
+<tr><td>UK residential property, filing on paper</td><td>PPDCGT paper return, completed then posted</td><td>60 days from completion</td></tr>
+<tr><td>Any gain reported through Self Assessment</td><td>SA108 capital gains pages, filed with the SA100</td><td>31 January after the tax year</td></tr>
+<tr><td>Non-resident disposal of UK land</td><td>CGT on UK property service</td><td>60 days from completion, tax due or not</td></tr>
+</tbody>
+</table>
+
+<p>The paper form for capital gains tax on UK property is the interactive PPDCGT return, which you complete on screen, print and post.</p>
+
+<p>For everything else the form is the SA108, and it is not a standalone document: it is a set of pages attached to your ordinary Self Assessment return. People call the 60-day filing a CGT return, and it is one, but it is not your tax return, and filing it does not remove the Self Assessment step.</p>
 
 <h2>Who is in scope of the 60-day return</h2>
 
@@ -67,6 +139,14 @@ faqs:
 </table>
 
 <p>The asymmetry between UK and non-UK residents is the easiest point to get wrong. A non-UK resident landlord who sells a property at a loss, or whose gain is fully covered by losses, still has to file the 60-day return. A UK resident in the same position does not.</p>
+
+<h2>Do you report a land sale or a commercial property sale within 60 days?</h2>
+
+<p>If you are UK resident, no. The 60-day service covers UK residential property only, so capital gains tax on sale of land or commercial premises goes on your Self Assessment return instead, with the tax due by the 31 January after the tax year ends. Land held as an investment is taxed at the same 18% and 24% rates as a residential gain in 2026/27; only the reporting route and the payment date change.</p>
+
+<p>If you are not UK resident the answer flips. Every disposal of UK land goes through the 60-day return, residential or commercial, and so does an indirect disposal of shares in a UK property-rich company. The rates and mechanics are in the <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates and reporting guide</a>.</p>
+
+<p>Land you sell together with a dwelling, including a garden or grounds that form part of that dwelling, counts as residential for this purpose and sits back inside the 60-day rule. Where you sell a mixed-use building, it is the residential element that drives the 60-day filing. If the split is not obvious on your sale, the <a href="/blog/capital-gains-tax/cgt-commercial-property-different-residential">commercial versus residential CGT guide</a> sets out how the line is drawn.</p>
 
 <h2>The 60-day clock</h2>
 
@@ -123,13 +203,14 @@ faqs:
 
 <table>
 <thead>
-<tr><th>Days past the deadline</th><th>Late filing</th><th>Late payment</th></tr>
+<tr><th>Time past the 60-day deadline</th><th>Late filing</th><th>Late payment</th></tr>
 </thead>
 <tbody>
-<tr><td>Day 1 to 90</td><td>£100 fixed penalty</td><td>Interest accruing daily from day 61</td></tr>
-<tr><td>Day 91 to 180</td><td>Plus daily £10 penalties, capped at £900</td><td>5% surcharge at day 91</td></tr>
-<tr><td>Day 181 to 365</td><td>Plus £300 (or 5% of tax if higher)</td><td>Further 5% surcharge at day 181</td></tr>
-<tr><td>Day 365 plus</td><td>Plus another £300 (or 5% of tax if higher)</td><td>Further 5% surcharge at day 365</td></tr>
+<tr><td>Day 1</td><td>£100 fixed penalty</td><td>Interest accrues daily from this point</td></tr>
+<tr><td>Day 30</td><td>-</td><td>5% of the unpaid tax</td></tr>
+<tr><td>Day 91</td><td>Plus daily £10 penalties, capped at £900</td><td>-</td></tr>
+<tr><td>6 months</td><td>Plus £300 (or 5% of tax if higher)</td><td>Further 5% of the unpaid tax</td></tr>
+<tr><td>12 months</td><td>Plus another £300 (or 5% of tax if higher)</td><td>Further 5% of the unpaid tax</td></tr>
 <tr><td>Deliberate or concealed default</td><td>Tax-geared penalties of up to 100% of tax due</td><td>Tax-geared, in addition</td></tr>
 </tbody>
 </table>
@@ -156,6 +237,11 @@ faqs:
 <p>Filing both returns and reconciling the two</p>
 <p>Mismatches between the 60-day return and the Self Assessment return are a common source of HMRC enquiry letters. We file both as a paired exercise to keep figures aligned, and reconcile any timing-driven adjustments cleanly. The form below routes to the team that handles this end to end.</p>
 </aside>
+
+<h2>Do you report capital gains on your Self Assessment tax return as well?</h2>
+
+<p>Yes, and the CGT Self Assessment step is the one most often forgotten once the 60-day return has been filed and paid. The capital gain reported on the SA108 pages is the final version of the figure rather than the estimate you filed at 60 days. You need to complete them if you disposed of chargeable assets and either there is tax to pay, or your total disposal proceeds for the year were above HMRC's reporting threshold, or you want to claim a capital loss and carry it forward. Claiming a loss is worth doing even in a year with no gain, because <a href="/blog/capital-gains-tax/cgt-property-sold-loss-claim-capital-losses">a capital loss carried forward</a> reduces a future bill.</p>
+
 
 <h2>Worked timeline: a 2026/27 disposal</h2>
 

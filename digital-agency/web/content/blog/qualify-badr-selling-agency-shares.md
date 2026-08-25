@@ -20,7 +20,7 @@ summary: Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets yo
 schema: ''
 faqs:
 - question: Can I claim BADR if I sell my agency's assets instead of shares?
-  answer: No. BADR only applies to the disposal of shares in a trading company. If you sell the business assets (client contracts, equipment, goodwill) directly, you pay 20% CGT on the gain. Always structure an agency sale as a share sale if you want the 10% rate. If the buyer insists on an asset purchase, you lose the relief.
+  answer: No. BADR only applies to the disposal of shares in a trading company. If you sell the business assets (client contracts, equipment, goodwill) directly, you pay 24% CGT on the gain. Always structure an agency sale as a share sale if you want the reduced BADR rate (18% from 6 April 2026). If the buyer insists on an asset purchase, you lose the relief.
 - question: What happens if I hold less than 5% of the shares but my spouse holds the rest?
   answer: You cannot combine your holding with your spouse's to meet the 5% test. Each shareholder is assessed individually. If you hold 3% and your spouse holds 7%, your spouse qualifies for BADR on their shares. You do not. The only exception is shares held jointly, which are treated as a single holding.
 - question: Does the two-year holding period reset if I transfer shares into a holding company?

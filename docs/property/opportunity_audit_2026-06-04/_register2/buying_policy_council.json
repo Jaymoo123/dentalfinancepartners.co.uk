@@ -1,0 +1,242 @@
+{
+  "categories": {
+    "buying_selling_conveyancing": {
+      "topics": [
+        {
+          "topic_title": "Freehold vs leasehold for landlords: which to buy and the tax/cost differences",
+          "search_intent": "informational; buyer comparing the two tenures before purchase, including ground rent, service charge and how each is taxed/treated",
+          "n_competitors": 60,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "lease-extension-vs-freehold-purchase.md / commonhold-and-leasehold-reform-bill.md",
+          "suggested_angle": "Existing pages cover lease extension vs freehold and the reform bill; the pure definitional freehold-vs-leasehold split is a thin generic-conveyancing topic with no distinct tax hook. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Buying a leasehold flat: short leases, ground rent and the SDLT/cost checks",
+          "search_intent": "transactional/informational; investor buying a leasehold flat wanting to understand short-lease risk, marriage value and stamp duty on the purchase",
+          "n_competitors": 46,
+          "verdict": "expand_existing",
+          "demand": [{"query": "leasehold reform marriage value", "imp": 1}],
+          "closest_our_page": "lease-extension-vs-freehold-purchase.md",
+          "suggested_angle": "Add a marriage-value / short-lease buyer angle (post-2024 reform abolition of marriage value) onto the existing lease-extension page rather than a generic conveyancing how-to. Tax/cost hook only.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Buying property at auction: tax, SDLT timing and completion deadlines for investors",
+          "search_intent": "transactional; investor researching auction purchase mechanics, the 28-day completion and when SDLT/CGT clocks start",
+          "n_competitors": 37,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "selling-house-below-market-value.md (only loosely related; no auction page exists)",
+          "suggested_angle": "Auction-specific tax/finance guide for landlords: SDLT due on hammer-price plus premium, 28-day completion vs mortgage timing, surcharge applicability, treating refurb auction lots as trading vs investment. Distinct tax hook, no current page.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Selling a probate property: tax for executors and beneficiaries",
+          "search_intent": "informational; executor or beneficiary selling an inherited/probate property, CGT uplift to date-of-death value, IHT interaction",
+          "n_competitors": 30,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "inheriting-uk-rental-property-executors-step-by-step.md / a-complete-guide-to-stamp-duty-relief-for-probate-properties.md / cgt-inherited-rental-property-calculation-uk.md",
+          "suggested_angle": "Executor sale, CGT rebasing on death and SDLT probate relief are all covered. Generic 'can an executor sell' legal-process variants are off our tax mission. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Do you pay tax when you sell your house? Private residence relief explained",
+          "search_intent": "informational; homeowner/landlord checking whether a sale triggers CGT and how PPR relief applies",
+          "n_competitors": 28,
+          "verdict": "already_covered",
+          "demand": [{"query": "when is critical date for capital gains on house sale - exchange or completion", "imp": 1}],
+          "closest_our_page": "principal-private-residence-relief-landlords.md / ppr-relief-calculation-former-home-step-by-step.md / cgt-payment-deadlines-property-sales-2026.md",
+          "suggested_angle": "PPR, the exchange-vs-completion CGT trigger date and payment deadlines are already covered. The single-impression query on disposal date could be a one-line FAQ addition to the CGT deadlines page. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Buying and selling a house at the same time: tax and SDLT chain considerations",
+          "search_intent": "transactional; mover/landlord coordinating a simultaneous sale and purchase, replacement-of-main-residence SDLT surcharge refund",
+          "n_competitors": 27,
+          "verdict": "already_covered",
+          "closest_our_page": "a-complete-guide-to-5-sdlt-surcharge-refund-claims.md / a-complete-guide-to-stamp-duty-refund.md",
+          "suggested_angle": "The tax-relevant slice (3%/5% surcharge then refund when replacing a main residence within the window) is covered by the SDLT refund pages. The rest is generic conveyancing chain logistics, off mission. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "How soon can you sell a house after buying it? Tax on a quick resale",
+          "search_intent": "informational; owner wanting to sell shortly after purchase, worried about CGT, trading treatment and flipping",
+          "n_competitors": 17,
+          "verdict": "already_covered",
+          "closest_our_page": "badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords.md / property-development-tax-trading-vs-investment-income.md",
+          "suggested_angle": "Quick-resale tax (badges of trade, flipping vs investment, no minimum holding period for CGT) is covered. The legal 'how fast can I sell' angle is generic conveyancing. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Buy property in your own name or through a limited company?",
+          "search_intent": "decision; landlord choosing personal vs SPV ownership for a purchase, tax comparison",
+          "n_competitors": 12,
+          "verdict": "already_covered",
+          "closest_our_page": "limited-company-vs-personal-ownership-tax-comparison-2026.md / should-i-incorporate-buy-to-let-portfolio-2026.md / spv-property-investment-special-purpose-vehicle-guide.md",
+          "suggested_angle": "Core decision page already exists with current 2026 figures. Strongly covered. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Do you need a solicitor to buy property, and what does conveyancing cost?",
+          "search_intent": "informational; buyer researching the role/cost of a solicitor in a purchase",
+          "n_competitors": 11,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "suggested_angle": "Generic conveyancing-firm process content with no property-tax hook; off mission for a tax brand. Dropped.",
+          "priority": "low"
+        }
+      ],
+      "counts": {"net_new": 1, "expand": 1, "already_covered": 6, "off_mission_dropped": 13}
+    },
+    "tax_policy_budget_commentary": {
+      "topics": [
+        {
+          "topic_title": "Agricultural and business property relief reform: the April 2026 GBP 1m cap explained",
+          "search_intent": "informational; landowner/farmer/mixed-estate owner understanding the IHT APR/BPR cap and what to do now",
+          "n_competitors": 28,
+          "verdict": "already_covered",
+          "closest_our_page": "iht-april-2026-bpr-apr-cap-property-impact.md / iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation.md / agricultural-property-relief-mixed-estate-1m-cap.md",
+          "suggested_angle": "The 1m cap and mixed-estate allocation are covered across three current pages. Strongly covered. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Renters' Rights Act / Renters Reform: what it means for landlords",
+          "search_intent": "informational; landlord wanting to know how the reform changes possession, rent increases and obligations, plus tax knock-ons",
+          "n_competitors": 20,
+          "verdict": "already_covered",
+          "demand": [{"query": "renters reform (filtered)", "imp": 2}],
+          "closest_our_page": "renters-rights-act-2026-tax-implications-landlords.md (+ section-21, section-8, periodic-tenancy, rent-increase, redress companion pages)",
+          "suggested_angle": "Full Renters' Rights Act cluster already shipped (possession grounds, s21 abolition, s13 rent increases, redress, tax implications). Comprehensively covered. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Ground rent and leasehold reform: what it means for long leaseholders",
+          "search_intent": "informational; leaseholder/landlord tracking ground-rent caps, marriage-value abolition and the leasehold reform programme",
+          "n_competitors": 16,
+          "verdict": "expand_existing",
+          "demand": [{"query": "leasehold reform marriage value", "imp": 1}],
+          "closest_our_page": "commonhold-and-leasehold-reform-bill.md",
+          "suggested_angle": "Existing reform-bill page can be refreshed to cover ground-rent caps and the abolition of marriage value as an evergreen explainer (with the tax/valuation angle for investor leaseholders) rather than a new page. Evergreen framing.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Scottish short-term let licensing and the tax/regulation picture for hosts",
+          "search_intent": "informational; Scottish FHL/Airbnb host navigating licensing plus the FHL tax abolition",
+          "n_competitors": 6,
+          "verdict": "already_covered",
+          "closest_our_page": "abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know.md / serviced-accommodation-tax-fhl-abolition-april-2025.md / airbnb-tax-uk-short-term-rental-income-taxed.md",
+          "suggested_angle": "The tax side (FHL abolition, Airbnb income tax) is well covered. Scottish licensing is a devolved regulatory/planning process with no tax hook, and most samples are trade-body (ASSC) news. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Should you allow pets in your rental property? (Renters' Rights Act duty)",
+          "search_intent": "informational; landlord weighing the pros/cons and the new statutory duty not to unreasonably refuse pets",
+          "n_competitors": 21,
+          "verdict": "already_covered",
+          "closest_our_page": "pet-rights-tenancy-landlord-refusal-reasonable-grounds.md",
+          "suggested_angle": "Dedicated page already exists covering the reasonable-grounds refusal test under the new regime. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Scottish income tax rates and bands for property owners",
+          "search_intent": "informational; Scottish taxpayer landlord checking income tax bands applied to rental profit",
+          "n_competitors": 43,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "suggested_angle": "Scottish income tax bands are a personal-tax/accountant-news topic; rental profit is taxed under UK income tax with Scottish rates only on non-savings non-dividend income. Mostly dated budget commentary, off our property-tax mission. Dropped (devolved property taxes LBTT already covered separately).",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Welsh income tax / devolved Welsh taxes",
+          "search_intent": "informational; Welsh taxpayer on income tax rates and devolution",
+          "n_competitors": 16,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "suggested_angle": "Welsh rate of income tax is personal-tax news; the property-relevant Welsh tax (LTT) is already covered. Off mission. Dropped.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "IR35 / personal service companies and HMRC investigations",
+          "search_intent": "informational; contractor on IR35 status and disputes",
+          "n_competitors": 23,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "suggested_angle": "Contractor employment-status tax, not property. Belongs to the contractors-ir35 site, not the property brand. Dropped (three IR35-related cores collapsed into one drop).",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Companies House / Economic Crime and Corporate Transparency Act reforms",
+          "search_intent": "informational; company director on identity verification and new filing duties",
+          "n_competitors": 28,
+          "verdict": "already_covered",
+          "closest_our_page": "companies-house-reforms.md / a-complete-guide-to-identity-verification-in-uk.md",
+          "suggested_angle": "Companies House reform and identity verification already covered; relevant to property SPVs. Generic corporate-governance-code variants are off mission. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Countries with no income tax / HMRC P87 expenses / SG&A / Odoo / income-expense worksheets",
+          "search_intent": "mixed noise; offshore-tax listicles, generic PAYE expenses, accounting-software and homework worksheet content",
+          "n_competitors": 11,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "suggested_angle": "Pure noise/off-niche cores (no-income-tax countries, P87 employment expenses, selling-general-admin expenses, insurance-company profit, Odoo accounting, school income/expense worksheets). None relate to UK property tax. Dropped (six noise cores collapsed).",
+          "priority": "low"
+        }
+      ],
+      "counts": {"net_new": 0, "expand": 1, "already_covered": 4, "off_mission_dropped": 14}
+    },
+    "council_tax_business_rates": {
+      "topics": [
+        {
+          "topic_title": "Business rates relief on empty commercial property: cutting the empty-rates bill",
+          "search_intent": "informational; commercial landlord with a vacant unit wanting to minimise empty business rates (3-month/6-month void, reliefs, mitigation)",
+          "n_competitors": 5,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "property-business-rates-council-tax-landlords.md / reduce-void-periods-rental-properties-uk-landlords.md",
+          "suggested_angle": "Dedicated empty-rates page for commercial landlords: the void exemption periods (3 months / 6 months for industrial), small business rate relief, charity occupation and legitimate mitigation. Existing page is a broad overview only; this is a distinct high-intent sub-topic with a clear cost/tax hook.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Reduced 5% VAT on renovating an empty residential property",
+          "search_intent": "informational; developer/landlord renovating a property empty 2+ years, claiming the reduced 5% VAT rate on works",
+          "n_competitors": 2,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "vat-commercial-to-residential-conversion-5-percent-reduced-rate-developer-recovery-mechanics.md / diy-housebuilders-vat-refund-scheme.md",
+          "suggested_angle": "The empty-home (2-year) reduced 5% VAT relief on renovation/conversion works is a distinct VAT relief from the commercial conversion and DIY housebuilder pages we already have. Strong tax hook, clearly within mission, no current page covers the empty-dwelling rule. Net-new.",
+          "priority": "medium"
+        }
+      ],
+      "counts": {"net_new": 2, "expand": 0, "already_covered": 0, "off_mission_dropped": 0}
+    },
+    "getting_started_first_btl": {
+      "topics": [
+        {
+          "topic_title": "How much can a landlord increase the rent? Section 13 and the tax angle",
+          "search_intent": "informational; landlord wanting to know the legal limits, process and frequency for raising rent, plus how higher rent is taxed",
+          "n_competitors": 36,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "renters-rights-act-rent-increase-section-13-tribunal-route.md",
+          "suggested_angle": "Section 13 rent-increase route, frequency limits and tribunal challenge already covered under the Renters' Rights Act page. Generic/US 'rent control' variants are off mission. Default covered.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Is a buy-to-let a good investment? First rental property starter guide (tax-led)",
+          "search_intent": "informational; first-time investor evaluating whether and how to buy a first rental, including the tax setup decisions (personal vs company, mortgage interest, SDLT surcharge)",
+          "n_competitors": 31,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "first-time-landlord-tax-guide-everything-you-need-to-know.md (tax-only) / what-is-good-gross-yield-buy-to-let-property-2026.md (yield-only)",
+          "suggested_angle": "A genuine getting-started pillar is missing: an evergreen first buy-to-let guide framed around the tax decisions a beginner faces (SDLT 5% surcharge, personal vs SPV, Section 24 mortgage-interest restriction, yield/cash-flow, MTD ITSA). The existing first-time-landlord page is narrow tax-return detail; this is the top-of-funnel investor entry point with the highest competitor convergence (31). Net-new pillar.",
+          "priority": "high"
+        }
+      ],
+      "counts": {"net_new": 1, "expand": 0, "already_covered": 1, "off_mission_dropped": 0}
+    }
+  }
+}

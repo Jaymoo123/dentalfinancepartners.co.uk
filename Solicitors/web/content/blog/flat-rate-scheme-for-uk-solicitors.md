@@ -1,7 +1,7 @@
 ---
 title: "Is the Flat Rate Scheme Right for Your Law Firm? A VAT Guide for UK Solicitors"
 slug: "flat-rate-scheme-for-uk-solicitors"
-canonical: "https://www.accountsforlawyers.co.uk/blog/vat-and-compliance/flat-rate-scheme-for-uk-solicitors"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/flat-rate-scheme-for-uk-solicitors"
 date: "2026-05-18"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"

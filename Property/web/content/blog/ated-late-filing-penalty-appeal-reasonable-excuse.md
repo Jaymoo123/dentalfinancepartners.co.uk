@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "ATED Penalty Appeals: Reasonable Excuse and FTT Route"
 metaDescription: "How to appeal an ATED late-filing penalty: Sch 55 FA 2009 reasonable-excuse test, Conchri Investments FTT precedent, 30-day window, special circumstances."
 altText: "Historic London courtroom interior representing the First-tier Tax Tribunal that hears ATED penalty appeals"
-image: "https://images.pexels.com/photos/33939971/pexels-photo-33939971.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/33939971/pexels-photo-33939971.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Michael D Beckwith"
   photographer_url: "https://www.pexels.com/@michael-d-beckwith-2150568551"
@@ -217,7 +217,7 @@ editorialNote: "Procedural deep-dive on appealing an ATED late-filing penalty. A
   <li><a href="https://www.legislation.gov.uk/ukpga/2009/10/schedule/56">Schedule 56 FA 2009 (late-payment penalties)</a> for the parallel late-payment regime.</li>
   <li><a href="https://www.gov.uk/tax-and-chancery-tribunal-decisions">First-tier Tax Tribunal decisions (gov.uk)</a> for the searchable database of FTT decisions, including Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC).</li>
   <li><a href="https://www.gov.uk/hmrc-internal-manuals/compliance-handbook">HMRC Compliance Handbook</a> at CH71500 onwards for HMRC's published treatment of reasonable excuse and special circumstances under Schedule 55.</li>
-  <li><a href="https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings">HMRC ATED Manual</a> for the ATED-specific penalty framework.</li>
+  <li><a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">HMRC ATED Manual</a> for the ATED-specific penalty framework.</li>
   <li><a href="https://www.gov.uk/tax-tribunal/appeal-to-tribunal">First-tier Tax Tribunal appeal guidance (gov.uk)</a> for the procedural mechanics of filing the notice of appeal.</li>
 </ul>
 

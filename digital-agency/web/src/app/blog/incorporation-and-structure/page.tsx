@@ -12,7 +12,7 @@ const categoryName = "Incorporation & Business Structure";
 const categorySlug = "incorporation-and-structure";
 
 export const metadata: Metadata = {
-  title: `Incorporation for Agency Founders | ${siteConfig.name}`,
+  title: `Incorporation for Agency Founders`,
   description: `Sole trader vs limited company, holding companies, alphabet shares and group structures for agency founders. Practical guidance on when and how to incorporate your agency.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

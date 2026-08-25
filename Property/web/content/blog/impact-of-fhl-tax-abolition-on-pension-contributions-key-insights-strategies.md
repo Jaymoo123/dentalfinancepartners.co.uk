@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "FHL Pension Impact: Relief Headroom After April 2025"
 metaDescription: "FHL profit stops being relevant UK earnings in 2025-26. The £3,600 floor, salary, employer contributions, and SIPP routes that restore headroom."
-altText: "A UK pension savings statement next to a calculator and a Cornish holiday cottage brochure, illustrating the collapse of relief-eligible pension contribution headroom for former Furnished Holiday Letting owners after Finance Act 2025 Schedule 5 removed FHL profit from the relevant UK earnings definition at FA 2004 s.189"
+altText: "A UK pension savings statement beside a calculator and a Cornish holiday cottage brochure"
 image: "https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
   photographer: "Pixabay"

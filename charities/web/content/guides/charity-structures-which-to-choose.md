@@ -46,7 +46,7 @@ lastReviewed: "2026-07-15"
       <td>Charity Commission only</td>
       <td>Charity Commission</td>
       <td>Yes, after separate <a href="https://www.gov.uk/charities-and-tax">HMRC recognition</a></td>
-      <td>Non-company: receipts &amp; payments up to £250,000 gross income; accruals above that</td>
+      <td>Non-company: receipts &amp; payments up to £250,000 gross income (£500,000 for years ending on or after 30 Sep 2026); accruals above that</td>
       <td>Most new charities wanting incorporation without Companies House filing</td>
     </tr>
     <tr>
@@ -64,7 +64,7 @@ lastReviewed: "2026-07-15"
       <td>Charity Commission (once income exceeds <a href="https://www.gov.uk/guidance/how-to-register-your-charity-cc21b">£5,000/year</a>)</td>
       <td>Charity Commission</td>
       <td>Yes, after separate <a href="https://www.gov.uk/charities-and-tax">HMRC recognition</a></td>
-      <td>Non-company: receipts &amp; payments up to £250,000 gross income; accruals above that</td>
+      <td>Non-company: receipts &amp; payments up to £250,000 gross income (£500,000 for years ending on or after 30 Sep 2026); accruals above that</td>
       <td>Small community groups with low liability exposure and simple finances</td>
     </tr>
     <tr>
@@ -90,7 +90,7 @@ lastReviewed: "2026-07-15"
 <ul>
   <li>A CIO must register with the Commission <strong>whatever its income</strong>, even before it has received any funds. Other structures must register once income exceeds <a href="https://www.gov.uk/guidance/how-to-register-your-charity-cc21b">£5,000 a year</a>.</li>
   <li>Trustees have limited liability. The CIO itself can hold property, enter contracts and employ staff in its own name.</li>
-  <li>Non-company charities (including CIOs) with gross income of £250,000 or less may prepare receipts and payments accounts rather than full accruals accounts. Above £250,000, accruals accounts following the Charities SORP (FRS 102) are required.</li>
+  <li>Non-company charities (including CIOs) with gross income of £250,000 or less (£500,000 for financial years ending on or after 30 September 2026) may prepare receipts and payments accounts rather than full accruals accounts. Above that threshold, accruals accounts following the Charities SORP (FRS 102) are required.</li>
   <li>Charity tax reliefs require a separate application to HMRC after registration. Commission registration alone does not deliver Gift Aid.</li>
 </ul>
 
@@ -108,7 +108,7 @@ lastReviewed: "2026-07-15"
   <li>The founders are already familiar with Companies House obligations from running other companies.</li>
 </ul>
 
-<p>A charitable company must prepare accruals accounts at <strong>all income levels</strong>, unlike a CIO or unincorporated charity which can use receipts and payments below £250,000. That adds to accountancy cost at smaller income levels.</p>
+<p>A charitable company must prepare accruals accounts at <strong>all income levels</strong>, unlike a CIO or unincorporated charity which can use receipts and payments below £250,000 (£500,000 for financial years ending on or after 30 September 2026). That adds to accountancy cost at smaller income levels.</p>
 
 <p>See the <a href="/services/charity-accounts">charity accounts service page</a> for the accounts frameworks that apply to each structure.</p>
 
@@ -179,7 +179,7 @@ lastReviewed: "2026-07-15"
 <h2>Frequently asked questions</h2>
 
 <h3>What is the difference between a CIO and a charitable company?</h3>
-<p>Both give trustees limited liability through incorporation. The key practical difference is that a CIO registers <strong>only with the Charity Commission</strong>, while a charitable company must register with <strong>both the Charity Commission and Companies House</strong>, creating dual annual filing obligations. A CIO also gives slightly more flexibility on accounts: non-company charities (including CIOs) with gross income below £250,000 may use receipts and payments accounts rather than full accruals. See <a href="https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure">the Commission's structure guidance</a> for detail.</p>
+<p>Both give trustees limited liability through incorporation. The key practical difference is that a CIO registers <strong>only with the Charity Commission</strong>, while a charitable company must register with <strong>both the Charity Commission and Companies House</strong>, creating dual annual filing obligations. A CIO also gives slightly more flexibility on accounts: non-company charities (including CIOs) with gross income below £250,000 (£500,000 for financial years ending on or after 30 September 2026) may use receipts and payments accounts rather than full accruals. See <a href="https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure">the Commission's structure guidance</a> for detail.</p>
 
 <h3>Which charity structure has limited liability?</h3>
 <p>The CIO and the charitable company both give trustees limited liability through incorporation. Unincorporated associations and trusts do not: trustees are personally liable for the organisation's debts and legal obligations. A CIC also provides limited liability but is not a charity.</p>

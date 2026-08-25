@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { getAllPosts, getCategorySlug, categoryDisplayName } from "@/lib/blog";
 
 // File-based posts only change at deploy, so prerender like sitemap.ts / the CSV route.
 export const dynamic = "force-static";
@@ -36,7 +36,9 @@ export function GET() {
       `      <guid isPermaLink="true">${escapeXml(url)}</guid>`,
       `      <pubDate>${pubDate}</pubDate>`,
       post.author ? `      <dc:creator>${escapeXml(post.author)}</dc:creator>` : "",
-      post.category ? `      <category>${escapeXml(post.category)}</category>` : "",
+      post.category
+        ? `      <category>${escapeXml(categoryDisplayName(getCategorySlug(post), post.category))}</category>`
+        : "",
       `      <description>${escapeXml(description)}</description>`,
       "    </item>",
     ]

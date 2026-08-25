@@ -9,6 +9,21 @@
  *
  * The lead is already durably stored in Supabase before this fires, so the Sheet
  * is a convenience mirror: an append failure never loses a lead.
+ *
+ * DORMANT, AND MUST STAY DORMANT UNTIL TWO THINGS ARE TRUE (noted 2026-08-14).
+ * It is inert only because GOOGLE_SHEETS_SPREADSHEET_ID and the service-account
+ * credentials are unset. If they are ever set, this writes full lead PII (name,
+ * email, phone, message) to a Google Sheet, and today:
+ *
+ *   1. Google is named as a processor in no site's privacy policy, so the sharing
+ *      would be undisclosed; and
+ *   2. the Sheet sits outside the retention purge entirely, so rows would outlive
+ *      the retention period every site publishes. There is no deletion path for it
+ *      anywhere in this repo.
+ *
+ * Before arming: add Google to the processor list in every site's privacy policy,
+ * and give the Sheet a purge that runs with lead-retention. Until then, leaving
+ * the env unset is the control.
  */
 import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";

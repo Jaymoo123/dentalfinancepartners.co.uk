@@ -11,6 +11,12 @@ metaDescription: "What happens when two GP practices merge: the partnerships, ca
 altText: "GP partners from two practices reviewing merger accounts and tax position"
 image: ""
 h1: "GP Practice Mergers: What Happens to the Accounts, the Partners and the Tax"
+keyTakeaways:
+- "A GP merger buys no NHS goodwill: its sale has been prohibited since 1 April 2004, currently under The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)."
+- "The pivotal income-tax question is whether the merger is a cessation and recommencement (PM135200, businesses different in nature) or a continuation of an enlarged existing business (PM135300, similar in nature and same accounting date)."
+- "On a cessation the closing-year position crystallises and any untaxed 2023/24 transition profit still spreading over the five-year window is generally accelerated into the year of cessation."
+- "Because a partnership is transparent for CGT, partners whose fractional interests in the premises reduce on a merger can face a CGT event, governed by Statement of Practice D12 with merger-specific guidance at CG27700."
+- "A merger of two purely NHS practices rarely changes the VAT position, since most core NHS GP income is exempt or outside the scope, but review it where either practice has taxable income such as a dispensary or private work."
 summary: "When two GP practices merge, the partners' first questions are about the accounts, the capital accounts, the contracts, the premises and the tax. This guide works through each strand and the pivotal income-tax question of whether the merger is a cessation and recommencement or a continuation, with the HMRC test and a checklist to settle with your accountant."
 schema: ""
 faqs:

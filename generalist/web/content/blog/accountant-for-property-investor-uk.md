@@ -30,7 +30,7 @@ faqs:
 keyTakeaways:
   - "Since April 2020, mortgage interest on personally held residential buy-to-let properties cannot be deducted from rental income; landlords receive a 20% tax credit instead."
   - "A UK residential property sold at a gain needs a CGT return filed and the tax paid within 60 days of completion, or HMRC charges interest plus a £100 penalty."
-  - "Properties worth more than £500,000 held in a company and used as dwellings face Annual Tax on Enveloped Dwellings (ATED) charges ranging from £4,250 to £280,000 per year."
+  - "Properties worth more than £500,000 held in a company and used as dwellings face Annual Tax on Enveloped Dwellings (ATED) charges ranging from £4,600 to £303,450 per year for 2026/27."
   - "The furnished holiday letting regime was abolished from 6 April 2025; FHL income is now taxed as ordinary property income, with the 20% finance-cost reducer replacing full mortgage interest relief."
   - "Corporation tax on company rental profits is 19% to 25%, compared with the 20% to 45% income tax rate that applies to personal rental profits."
 ---
@@ -75,7 +75,7 @@ keyTakeaways:
 
 <p>Your property company pays corporation tax on its net rental profits. You can deduct mortgage interest in full (the finance cost restriction does not apply to companies). You can claim capital allowances on furniture, fixtures, and equipment. You can claim Structures and Buildings Allowance at 3% per year on the cost of new commercial buildings.</p>
 
-<p>But you also face ATED if the property is worth more than £500,000 and is used as a dwelling. ATED charges range from £4,250 to £280,000 per year depending on the property value. Exemptions exist (property let to a third party, property open to the public, property held for development). A general accountant may not know the ATED filing deadlines or the exemption conditions. Miss an ATED return and the penalty is £100 per day after the initial £100 late filing penalty.</p>
+<p>But you also face ATED if the property is worth more than £500,000 and is used as a dwelling. ATED charges for 2026/27 range from £4,600 to £303,450 per year depending on the property value. Exemptions exist (property let to a third party, property open to the public, property held for development). A general accountant may not know the ATED filing deadlines or the exemption conditions. Miss an ATED return and the penalty is £100 per day after the initial £100 late filing penalty.</p>
 
 <h3>Dividend Planning for Property Companies</h3>
 

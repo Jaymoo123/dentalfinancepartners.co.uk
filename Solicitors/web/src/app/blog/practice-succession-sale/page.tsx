@@ -121,7 +121,7 @@ export default function PracticeSuccessionPillarPage() {
         <section>
           <h2 className="text-2xl font-bold text-[var(--ink)] mb-4">Tax-Efficient Exit Strategies</h2>
           <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
-            Practice sale proceeds may qualify for Business Asset Disposal Relief (formerly Entrepreneurs' Relief), reducing Capital Gains Tax to 10% on qualifying gains up to £1 million lifetime limit. Structuring the sale correctly ensures maximum tax efficiency.
+            Practice sale proceeds may qualify for Business Asset Disposal Relief (formerly Entrepreneurs' Relief), reducing Capital Gains Tax to 18% (from 6 April 2026) on qualifying gains up to the £1 million lifetime limit. Structuring the sale correctly ensures maximum tax efficiency.
           </p>
           <p className="text-base leading-relaxed text-[var(--ink-soft)]">
             Consider phased retirement, earn-out arrangements, and pension contributions as part of your exit strategy. Each approach has different tax implications and risk profiles. Specialist advice ensures you choose the optimal structure for your circumstances.

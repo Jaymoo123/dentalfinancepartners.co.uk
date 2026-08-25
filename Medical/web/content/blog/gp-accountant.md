@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant | What a Specialist Medical Accountant Does"
-metaDescription: "What a specialist GP accountant does and why it matters: partnership accounts, NHS pension annual allowance, GMS income and self-assessment, explained for 2026/27."
+metaDescription: "What a specialist GP accountant does: partnership accounts, NHS pension annual allowance, GMS income and self-assessment, explained for 2026/27."
 altText: "GP meeting with specialist medical accountant to discuss partnership finances and tax planning"
 image: ""
 h1: "Why Every GP Needs a Specialist GP Accountant"
+keyTakeaways:
+- "GP partners are taxed on their allocated profit share, not on the drawings they actually take, with the partnership filing an SA800 and each partner reporting on the SA104 pages."
+- "The sale of NHS GP goodwill has been prohibited since 1 April 2004 under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251), so no Business Asset Disposal Relief goodwill playbook applies."
+- "The pension annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income above £260,000 (once threshold income exceeds £200,000) down to a £10,000 floor."
+- "A limited company cannot hold a GMS or PMS contract and company-routed income is not NHS-pensionable, so incorporation is strictly a private-work decision."
+- "Making Tax Digital for Income Tax applies to sole traders and landlords with qualifying income over £50,000 from 6 April 2026, capturing most full-time locums while GP partnerships are not yet mandated."
 summary: "GP finances are complex, involving partnership accounts, NHS pension annual allowance issues, GMS contract income and self-assessment. A specialist GP accountant understands the medical-specific rules a general accountant often misses, and this guide explains what the service covers and why it matters."
 schema: ""
 faqs:

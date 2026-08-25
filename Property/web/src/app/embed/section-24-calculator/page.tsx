@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Section 24 Tax Calculator",
   description:
     "Free Section 24 calculator: how much extra income tax the mortgage-interest restriction costs UK landlords.",
-  // Embed surface — do not index (the canonical, indexable version lives at
+  // Embed surface, do not index (the canonical, indexable version lives at
   // /calculators/section-24-calculator).
   robots: { index: false, follow: false },
   alternates: { canonical: "https://www.propertytaxpartners.co.uk/calculators/section-24-calculator" },

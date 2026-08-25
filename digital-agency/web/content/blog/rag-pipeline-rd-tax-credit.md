@@ -22,7 +22,7 @@ faqs:
 - question: Can a RAG pipeline built for a client qualify for R&D tax credits?
   answer: Yes, if the work resolves technical uncertainty that couldn't be solved by a competent professional using standard methods. The client's industry doesn't matter. What matters is whether the technical challenge was genuinely uncertain at the outset. Document the uncertainty, the experiments, and the results.
 - question: What costs can I claim for RAG pipeline R&D work?
-  answer: Staff time spent directly on resolving technical uncertainty qualifies. So do subcontractor costs (at 65% under the SME scheme), software licenses used for R&D (OpenAI, Pinecone, cloud compute), and consumables. You cannot claim overheads, rent, or marketing costs. Apportion costs if the same resources are used for non-R&D work.
+  answer: Staff time spent directly on resolving technical uncertainty qualifies. So do subcontractor costs (under the merged scheme, 65% of each payment to an unconnected subcontractor qualifies), software licenses used for R&D (OpenAI, Pinecone, cloud compute), and consumables. You cannot claim overheads, rent, or marketing costs. Apportion costs if the same resources are used for non-R&D work.
 - question: How do I separate qualifying RAG work from routine implementation?
   answer: Track time against specific technical uncertainties, not against the whole project. If a developer spends 2 weeks building a custom chunking strategy (qualifying) and 1 week integrating it into a CMS (not qualifying), record both separately. Use project codes in your accounting software. HMRC will ask for this breakdown.
 - question: What happens if HMRC challenges my RAG pipeline R&D claim?
@@ -38,7 +38,7 @@ keyTakeaways:
 ---
 <p>If you're building RAG (Retrieval-Augmented Generation) pipelines for clients or your own agency, you've probably wondered whether the work qualifies for R&D tax credits. The short answer is: it can. But not all RAG work qualifies, and HMRC is paying closer attention to AI-related claims than ever before.</p>
 
-<p>This article explains exactly what HMRC looks for, what doesn't qualify, and how to structure a defensible claim for a <strong>rag pipeline r&d tax credit</strong>. We'll use real examples from agency work, not theoretical scenarios.</p>
+<p>This article explains exactly what HMRC looks for, what doesn't qualify, and how to structure a defensible claim for a RAG pipeline R&D tax credit. We'll use real examples from agency work, not theoretical scenarios.</p>
 
 <h2>What Is a RAG Pipeline?</h2>
 
@@ -60,7 +60,7 @@ keyTakeaways:
 
 <p>HMRC's R&D definition hasn't changed with the arrival of AI. The test is still whether your project sought to resolve <strong>scientific or technological uncertainty</strong>. Not whether you built something new to the world. Whether it was uncertain at the outset how to achieve the result.</p>
 
-<p>For a <strong>rag pipeline r&d tax credit</strong> claim, HMRC will want to see:</p>
+<p>For a RAG pipeline R&D tax credit claim, HMRC will want to see:</p>
 <ul>
 <li><strong>Technical uncertainty</strong> that couldn't be resolved by a competent professional in the field</li>
 <li><strong>A systematic approach</strong> to resolving that uncertainty (experiments, iterations, testing)</li>
@@ -126,7 +126,7 @@ keyTakeaways:
 
 <p><strong>Not documenting the uncertainty.</strong> HMRC doesn't accept "we built something new" as a justification. You need to show what was uncertain and how you resolved it.</p>
 
-<p><strong>Using subcontractors without proper agreements.</strong> If you subcontract RAG development to another company, the qualifying costs are limited to 65% of the subcontractor payments (under the SME scheme). Make sure your contracts specify the R&D work being done.</p>
+<p><strong>Using subcontractors without proper agreements.</strong> If you subcontract RAG development to another company, the current merged R&D scheme (a 20% expenditure credit for accounting periods beginning on or after 1 April 2024) limits qualifying costs to 65% of each payment to an unconnected subcontractor, and the company that decided to undertake the R&D is the one that claims. Make sure your contracts specify the R&D work being done.</p>
 
 <p><strong>Claiming for software costs incorrectly.</strong> OpenAI API credits, Pinecone subscriptions, and cloud compute costs can qualify as consumables. But only the portion used directly in the R&D activity. If you're using the same Pinecone instance for production client work, you need to apportion the costs.</p>
 
@@ -149,7 +149,7 @@ keyTakeaways:
 
 <p>RAG pipeline work can qualify for R&D tax credits, but only where it resolves genuine technical uncertainty. The agencies that claim successfully are the ones that document their uncertainty from day one, track their experiments systematically, and separate qualifying work from routine implementation.</p>
 
-<p>The <strong>rag pipeline r&d tax credit</strong> isn't a loophole. It's a legitimate relief for agencies doing genuine innovation. If that describes your work, it's worth pursuing.</p>
+<p>The RAG pipeline R&D tax credit isn't a loophole. It's a legitimate relief for agencies doing genuine innovation. If that describes your work, it's worth pursuing.</p>
 
 <p>If your contractor mix has changed in the last 12 months, or you've taken on RAG work that pushed your team into unfamiliar technical territory, ask your accountant before year-end. The deadlines for amended R&D claims are strict, and missing them costs real money.</p>
 

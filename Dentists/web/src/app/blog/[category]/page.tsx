@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!match) return { title: "Category not found" };
   const url = `${siteConfig.url}/blog/${category}`;
   return {
-    title: `${match.name} articles | Dental Finance Partners`,
+    title: `${match.name} articles`,
     description: `${match.name} articles for UK dental professionals, updated for current HMRC rules and NHS guidance.`,
     alternates: { canonical: url },
     openGraph: {

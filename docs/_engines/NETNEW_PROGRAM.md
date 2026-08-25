@@ -156,3 +156,85 @@ When starting this engine on the next site, reuse this doc verbatim and do the f
 8. **Carry the disciplines forward verbatim:** reasoning-first brief seeding; Stage 2 URL + statutory cross-check; the layered Bill-vs-enacted-Act verification; the six-check per-page floor; absolute-path tracker/flags/Q&A; commit-before-mark-done; manual `--no-ff` lane merges; deploy only on explicit user instruction.
 9. **Watch the platform deploy limits** as the corpus grows (e.g. the Vercel ISR `blog.fallback` 19.07 MB oversized-page ceiling) — record the threshold and workaround in the per-site state doc, not here, since the trigger point is site-specific.
 10. **Update the site's heartbeat** at every wave close and write a handover line before stopping if context fills.
+
+
+---
+
+## 8. Coverage selection: choosing subjects by measured demand (added 2026-08-17)
+
+This section replaces "competitors have a URL we do not" as the selection rule. It exists because a
+2026-08-17 measurement showed the current rule produces pages that mostly earn nothing: across 760
+Property posts, the median page earns **54 impressions in 90 days**, the mean is 390, and the top 10%
+of pages hold **72% of impressions and 77% of clicks**. Volume of pages is not the problem. Selection
+is.
+
+### 8.1 The unit: an eligibility gap, not a topic gap
+
+An eligibility gap is a subject where **we earn zero impressions on either engine** and a
+**peer-authority site already ranks**. The distinction matters because two different constraints are
+at work (evidence: `docs/property/STRUCTURE_VS_COMPETITORS_2026-08-17.md`):
+
+- Where we already appear, position is gated by domain trust, and on-page changes tested null. Same
+  pages sit at average position 12.0 on Google and 5.4 on Bing, which is not a content difference.
+- Where we do not appear at all, eligibility comes first. You cannot be outranked on a query you were
+  never eligible for. This is the part a new page fixes.
+
+Measured on Property SDLT: of 1,600 keywords competitors rank for, **we appear on 114 (7%)** and are
+absent from 1,486 (93%).
+
+### 8.2 The selection rules (all four must hold)
+
+1. **We are absent.** Zero impressions on the subject's keywords across GSC (90d) and Bing (91d).
+2. **A peer already ranks.** At least one specialist firm (not gov.uk, MoneyHelper, MSE, a bank, a
+   national brand) holds a top-20 position on the subject. This is the proof that a site of our class
+   can appear at all.
+3. **The demand is in the realistic band.** Subject volume between 100 and 5,000 a month per keyword.
+   Above that the SERP belongs to national brands; below it there is nothing to win. (Property SDLT:
+   188 keywords and 86,310 monthly searches survive all three filters, out of a 1.82M raw gap.)
+4. **No page of ours is the subject already.** Checked by impressions AND by subject match, not by
+   slug tokens. If a page of ours is already the subject, the correct action is EXTEND on that page,
+   not a new page.
+
+Everything failing rule 2 or 3 is recorded with its reason, never silently dropped.
+
+### 8.3 The page spec CHANGES: length floor withdrawn
+
+§5.2 sets 2,800-3,500 words for non-pillar and 3,500-4,500 for pillar. **That floor is withdrawn for
+coverage pages.** Measured on 2026-08-17, competitor pages holding top-10 positions run **777 to
+1,900 words** (provestor's SDLT silo, which holds 58 top-10 slots, runs 274 to 985), while our median
+page runs 4,350. Length is not the differentiator and the floor is manufacturing the wrong shape.
+
+Coverage page spec:
+
+- **800 to 1,200 words.** Longer only where the subject genuinely needs it, with a work-log reason.
+- **The subject is the title**, in the words people search, not the mechanism name.
+- Question-shaped H2s; the answer, with the number, in the first sentence under each.
+- **One current tax year leads.** Historical rates go in a subordinate block. (Property median page
+  currently names five different tax years.)
+- Direct address at 25+ per 1,000 words; statute references below 4 per 1,000 in the opening half.
+  (Winners run 0.1 statute references per 1,000 words; our median page runs 9.3.)
+- Every other §5.2 check still applies: no em-dashes, semantic HTML, FAQ schema parity, meta lengths,
+  internal links resolve, and the full statute-verification discipline in §5.3.
+
+### 8.4 Measurement and kill criteria
+
+Cohort-based, because per-page noise is large:
+
+- Register every page in `monitored_pages` with both engines' baselines at zero.
+- **Bing at 28 days** is the first read (Bing indexes our new pages within weeks and ranks the corpus
+  at 5.4 against Google's 12.0). **Google at 90 days** is the second.
+- **Base rate to beat:** 26% of existing pages reach 200+ impressions per 90 days; the median page
+  reaches 54.
+- **Success:** cohort median above 200 impressions at 90 days, i.e. the selection rule beats a random
+  page from the existing corpus by roughly 4x.
+- **Kill:** cohort median below 100 impressions at 90 days. That would mean demand-based selection is
+  no better than the topic-gap rule it replaced, and the programme stops rather than scaling.
+
+Run ONE cohort of 12 to 15 pages in a single cluster before any second cohort is authorised.
+
+### 8.5 What this costs
+
+Data: about $0.50 per cluster for the uncapped competitor keyword harvest (DataForSEO), plus free GSC
+and Bing pulls. Writing: Opus per page, per §2. No new tooling: the gap register, the ledger and the
+page inventory are the same artefacts built for the rewrite track's dossier (`REWRITE_PROGRAM.md` §9),
+read with a different filter.

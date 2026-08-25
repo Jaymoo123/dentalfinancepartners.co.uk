@@ -9,6 +9,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "/services",
+    "/services/property-accountant",
+    "/services/landlord-accountant",
+    "/services/property-tax-advice",
+    "/services/non-resident-landlord",
+    "/landlord-tax",
+    "/landlord-compliance",
+    "/section-24",
+    "/leasehold",
+    "/landed-estates",
+    "/cost-of-selling-a-property",
+    "/for-letting-agents",
+    "/making-tax-digital-landlords",
     "/about",
     "/contact",
     "/incorporation",
@@ -40,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   for (const loc of siteConfig.locations) {
+    // Every configured city renders live at /locations/<slug> since the city
+    // blog posts were merged in and reversed to 301 here.
     const url = `${base}/locations/${loc.slug}`;
     entries.push({
       url,
@@ -74,6 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const post of getAllPosts()) {
+    if (post.noindex) continue;
     const categorySlug = getCategorySlug(post);
     const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({

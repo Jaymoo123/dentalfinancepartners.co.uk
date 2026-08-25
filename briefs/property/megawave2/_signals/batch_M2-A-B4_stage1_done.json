@@ -1,0 +1,37 @@
+{
+  "batch_id": "M2-A-B4",
+  "agent_id": "MW2-stage1-A-B4",
+  "completed_at": "2026-05-27T00:00:00Z",
+  "branch": "property-megawave2-a",
+  "phase": "stage1",
+  "bucket": "A (Limited company / BTL company operation + Incorporation mechanics + Property partnership / LLP)",
+  "commit_shas": [
+    "edebcce",
+    "1763b78"
+  ],
+  "slugs_done": [
+    "substantial-shareholding-exemption-sse",
+    "transferring-a-business-out-of-a-company"
+  ],
+  "flags_raised": [],
+  "cannibalisation_notes": [
+    "substantial-shareholding-exemption-sse — HIGH CANNIBAL RISK with existing comprehensive page substantial-shareholding-exemption-property-companies (committed 2026-05-22). Existing page covers trading-vs-investment test, 10%/12-month test, FA 2017 reforms, automatic / loss-symmetry asymmetry, immediately-after rule, £8m DevCo worked example, buyer's asset-vs-share-sale preference, intra-group transfer interactions, para 5 anti-avoidance, foreign-subsidiary scope, group-relief interaction. Differentiator carved: positioning this pick as DEEPER STATUTORY-MECHANICS REFERENCE LAYER for property-advisor / FD audience — family of sub-exemptions (QII para 7A + para 3A subsidiary + para 15A repurchase interaction), s.179 degrouping FA 2011 modification mechanic, para 5 anti-avoidance depth + non-statutory clearance availability under CIRD80570+, pre-disposal sequencing playbook, property-group worked examples beyond £8m DevCo. STAGE 1B REVIEWER MUST DECIDE: (a) carve survives — proceed to Stage 2 with deeper-reference-layer positioning; (b) carve insufficient — REDIRECT slug to existing page (recommended fallback). If REDIRECT chosen, this pick consumes minimal Stage 2 effort (redirect record only) and slug retains generic-search-term capture funnelling to existing comprehensive page.",
+    "transferring-a-business-out-of-a-company — LOW-TO-MODERATE CANNIBAL RISK. Closest existing pages cover slices (MVL — depth; EOT — depth; SSE — sibling + existing page; portfolio-level exit — different scope; pre-sale extraction — one tactic; extraction-sequence pillar — cash-only; time-pressure — different time-frame) but the prior BROAD entity-exit decision frame is unaddressed. Differentiator: ENTITY-EXIT DECISION FRAME covering all 5 routes (asset sale + extract; share sale; in-specie + dissolution; MVL; strike-off) at the comparison layer + cross-links OUT to route-specific depth pages. Mirror-relationship to A1 M2-A-B1 a-complete-guide-on-incorporating-a-company-in-uk is the principal navigational anchor (this pick is the OUT-OF-LtdCo mirror to A1's INTO-LtdCo formation side). No CANNIBAL conclusion — fills clean entity-exit-decision-frame layer gap. Stage 1b reviewer to validate that the mirror-relationship + decision-frame positioning vs route-depth distinction is operationally sustainable."
+  ],
+  "hp_lock_consumption": [
+    "§21 + §21.A (Ltd Co + FIC + CT three-figure framework per F-31 lock Wave 8) — consumed by BOTH picks (entity-tax anchor for share disposals + asset disposals + cessation accounts)",
+    "§21.4 (dividend rates 10.75/35.75/39.35 per F-20 lock Wave 4) — consumed by transferring-business-out (income-vs-capital comparison worked examples)",
+    "§21.1 (DLA mechanics) — consumed by transferring-business-out (pre-exit DLA extraction sequencing)",
+    "§21.5 (FIC mechanics) — touched by transferring-business-out (FIC dissolution context)",
+    "§11 + §11.A (Companies House + ECCTA Part 1) — consumed by transferring-business-out (strike-off + dissolution + ID verification + ACSP framework)",
+    "F-3 (M2-A-B2) §21.8 multi-company group operation lock candidate — touched by BOTH picks (SSE intra-group transfer + s.179 degrouping interaction; transferring-business-out multi-company group exit sequencing)",
+    "§28 (trading-vs-investment Wave 8 cluster + Pawson investment-line) — consumed by substantial-shareholding-exemption-sse (Sch 7AC para 19 trading-company test)",
+    "§29 (VAT — CGS + OTT + TOGC mechanics) — consumed by transferring-business-out (VAT deregistration + CGS clawback on OTT commercial property exit)",
+    "§25 + §25.11 (CAA — disposal events + s.198 election limitations) — consumed by transferring-business-out (CAA disposal event 8 on plant + machinery + integral features at MV)",
+    "§27 (HMRC enquiry mechanics + cessation accounting period enquiry triggers) — consumed by transferring-business-out + touched by substantial-shareholding-exemption-sse (para 5 anti-avoidance challenge route)",
+    "§22 (IHT estate planning for landlords) — touched by transferring-business-out (shareholder receiving property in-specie + 7-year PET clock if onward gift planned)",
+    "§1 + §1.I (SDLT main + 5% additional-dwellings surcharge) — consumed by transferring-business-out (SDLT on property-out-to-shareholder transfers at MV)",
+    "§5 (CGT residential rates 24% / 28% surcharge) — consumed by transferring-business-out (shareholder-level capital treatment under MVL + strike-off £25k cap)"
+  ],
+  "no_new_hp_locks_requested": "Neither pick requests a new HP lock. Both rest on existing locks. substantial-shareholding-exemption-sse — Sch 7AC statute stable post-FA-2017 + no recent policy churn; transferring-business-out — entity-exit framework rests on §21 + §1 + §11 + §29 + §25 + §27 + §22 multi-lock consumption. Possible §21.X candidate for future HP extension if a unified entity-exit decision-framework lock proves operationally useful across multiple sibling picks (tentative; defer to Stage 1b reviewer)."
+}

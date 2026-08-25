@@ -1,62 +1,1819 @@
 {
   "meta": {
     "title": "UK Community Pharmacy Openings and Closures Index",
-    "description": "Verified data on England's community pharmacy network: NHS dispensing-contractor counts from NHSBSA open data and Companies House SIC 47730 corporate-churn data. Two independent official spines. Updated quarterly on NHSBSA publication.",
-    "lastUpdated": "2026-07-14",
-    "pullDate": "2026-07-14",
+    "description": "Monthly, owner-segmented data on England's NHS-contracted community pharmacy network from NHSBSA's Pharmacy Openings and Closures dataset, paired with Companies House SIC 47730 corporate-formations data. Two independent official spines, updated monthly on NHSBSA publication.",
+    "lastUpdated": "2026-07-23",
+    "pullDate": "2026-07-23",
     "licence": "Open Government Licence v3.0 (OGL3). Derived from NHSBSA open data and Companies House public register. Reuse with attribution.",
-    "citeAs": "UK Community Pharmacy Openings and Closures Index, derived from NHSBSA Pharmacy and Appliance Contractor Dispensing Data and Companies House Advanced Search API. Published under OGL3. Verified 2026-07-14.",
-    "methodology": "NHS dispensing-contractor counts: unique CONTRACTOR_CODE values with PHARMACY_ACCOUNT_TYPE='Pharmacy' in each monthly NHSBSA dispensing-contractors CSV (March snapshots used as the annual benchmark month to avoid seasonal noise). Appliance contractors are counted separately and excluded from the pharmacy total. Source: NHSBSA Pharmacy and Appliance Contractor Dispensing Data, opendata.nhsbsa.net. Companies House SIC 47730 corporate counts: live active-company and dissolved-company hit counts from the CH Advanced Search API (sic_codes=47730), pulled 2026-07-14. CH counts include incorporated companies only; sole traders and partnership pharmacies are not visible in CH data. Dissolution date is the formal strike-off date, which typically lags trading closure by several months.",
+    "citeAs": "UK Community Pharmacy Openings and Closures Index, derived from NHSBSA Pharmacy Openings and Closures (Pharmacy Openings and Closures - May 2026) and Companies House Advanced Search API (SIC 47730). Published under OGL3. Verified 2026-07-23.",
+    "methodology": "NHS dispensing-pharmacy counts: the last-calendar-day-of-month snapshot published in NHSBSA's Pharmacy Openings and Closures dataset, which segments every pharmacy on an NHS England Pharmaceutical List by owner-group size (Small = 1-5 premises, Medium = 6-99, Large = 100+), 100-hour contract status, and distance-selling status. The published monthly CSV is cumulative back to January 2021 and supersedes earlier files where NHSBSA has made backdated corrections, so this index always uses the single latest file rather than stitching together historic releases. Companies House SIC 47730 corporate counts: monthly incorporation counts from the CH Advanced Search API (sic_codes=47730), fetched via the same config-driven engine used across this site's research assets; the most recent 2 months are provisional (CH indexing lag) and excluded from headline and seasonality figures. Active/dissolved company totals are a live snapshot pulled 2026-07-14.",
     "caveats": [
-      "NHSBSA dispensing-contractor counts cover England only. Scotland uses PSD (Public Services Scotland) data; Wales uses NWSSP; Scotland and Wales v2 are queued.",
-      "NHSBSA counts include only pharmacies with active NHS dispensing contracts. Wholly private pharmacies without an NHS contract are not included.",
-      "Companies House SIC 47730 figures are UK-wide (not England-only) and include companies that may not hold NHS contracts or may be holding companies for pharmacy groups.",
-      "SIC codes are self-reported; occasional miscoding means SIC 47730 may exclude some pharmacy companies or include non-pharmacy retail health businesses.",
-      "March snapshots are used as the annual reference point. Intra-year data may show seasonal variation.",
-      "A contractor that submits no prescriptions in a given month does not appear in that month's NHSBSA CSV; the March count therefore reflects pharmacies that dispensed at least one prescription in March."
+      "NHSBSA pharmacy counts cover England only. Scotland uses Public Services Scotland (PSD) data; Wales uses NWSSP; neither is included in this index.",
+      "A pharmacy that changes ownership is recorded as a closure and a same-day reopening under the new owner. This does not affect net-change totals, but it means gross 'opened' and 'closed' counts overstate true market entry/exit -- use the net-change columns, not gross opened/closed, when describing churn.",
+      "NHSBSA states that total figures may not agree month to month, and that backdated amendments occur; the published file for each month is treated as the current source of truth, which can mean small revisions to earlier months versus a prior release of this index.",
+      "Companies House SIC 47730 figures are UK-wide (not England-only) and include holding companies, subsidiaries of pharmacy groups, and wholly private operators without an NHS contract -- they measure corporate-entity formation, not pharmacy premises opening.",
+      "SIC codes are self-reported at incorporation; some pharmacy companies may be coded elsewhere (e.g. general retail) and excluded from the 47730 count, or non-pharmacy businesses may be miscoded into it.",
+      "Small counts in any official NHSBSA or Companies House release may be subject to standard disclosure-control rounding or suppression; this index reports published totals as-is and does not attempt to reconstruct suppressed cells."
     ],
     "sources": {
-      "nhsbsa_dispensing": {
-        "name": "NHSBSA Pharmacy and Appliance Contractor Dispensing Data",
-        "url": "https://opendata.nhsbsa.net/dataset/pharmacy-and-appliance-contractor-dispensing-data",
+      "nhsbsa_openings_closures": {
+        "name": "NHSBSA Pharmacy Openings and Closures",
+        "url": "https://opendata.nhsbsa.net/dataset/pharmacy-openings-and-closures",
+        "resource": "Pharmacy Openings and Closures - May 2026",
         "licence": "Open Government Licence v3.0",
         "publisher": "NHS Business Services Authority",
-        "lastPublished": "2026-06-26"
+        "pullDate": "2026-07-23"
       },
       "companies_house": {
         "name": "Companies House Advanced Search API",
         "url": "https://developer.company-information.service.gov.uk/api/docs/",
         "licence": "Open Government Licence v3.0",
         "publisher": "Companies House",
-        "pullDate": "2026-07-14"
+        "pullDate": "2026-07-23"
       }
     }
   },
-  "nhsbsaContractors": {
-    "description": "England NHS dispensing-pharmacy contractor counts (March snapshots, NHSBSA open data). Appliance contractors excluded.",
-    "note": "Counts unique CONTRACTOR_CODE values with PHARMACY_ACCOUNT_TYPE='Pharmacy' in each March monthly file.",
-    "years": [
-      { "period": "March 2019", "isoMonth": "2019-03", "count": 11764, "source": "NHSBSA DISPENSING_DATA_201903" },
-      { "period": "March 2020", "isoMonth": "2020-03", "count": 11434, "source": "NHSBSA DISPENSING_DATA_202003" },
-      { "period": "March 2022", "isoMonth": "2022-03", "count": 11116, "source": "NHSBSA DISPENSING_DATA_202203" },
-      { "period": "March 2024", "isoMonth": "2024-03", "count": 10551, "source": "NHSBSA DISPENSING_DATA_202403" },
-      { "period": "March 2025", "isoMonth": "2025-03", "count": 10423, "source": "NHSBSA DISPENSING_DATA_202503" },
-      { "period": "March 2026", "isoMonth": "2026-03", "count": 10382, "source": "NHSBSA DISPENSING_DATA_202603" }
-    ],
-    "latestCount": 10382,
-    "latestCountLabel": "10,382",
-    "latestPeriod": "March 2026",
-    "latestIsoMonth": "2026-03",
-    "yoyChange": -41,
-    "yoyChangeLabel": "-41",
-    "yoyPeriod": "March 2025 to March 2026",
-    "fiveYearChange": -1382,
-    "fiveYearChangeLabel": "-1,382",
-    "fiveYearPeriod": "March 2019 to March 2026 (seven-year change)",
-    "sourceUrl": "https://opendata.nhsbsa.net/dataset/pharmacy-and-appliance-contractor-dispensing-data"
+  "headline": {
+    "latestMonth": "2026-05",
+    "latestMonthLabel": "May 2026",
+    "latestTotal": 10391,
+    "latestTotalLabel": "10,391",
+    "latestTotalExclDS": 9933,
+    "latestSmall": 5075,
+    "latestMedium": 1705,
+    "latestLarge": 3153,
+    "latestHundredHour": 785,
+    "latestDistanceSellers": 458,
+    "yoyChange": -11,
+    "yoyChangeLabel": "-11",
+    "yoyPeriod": "May 2025 to May 2026",
+    "baselineChange": -815,
+    "baselineChangeLabel": "-815",
+    "baselinePeriod": "January 2021 to May 2026",
+    "baselineFromTotal": 11206
   },
+  "monthly": [
+    {
+      "month": "2021-01",
+      "date": "20210131",
+      "total": 11206,
+      "total_excl_distance_sellers": 10837,
+      "distance_sellers": 369,
+      "hundred_hour": 1096,
+      "small": 4024,
+      "medium": 1593,
+      "large": 5220,
+      "opened_excl_ds": 18,
+      "closed_excl_ds": 60,
+      "net_change_excl_ds": -42,
+      "small_opened": 14,
+      "small_closed": 0,
+      "small_net": 14,
+      "medium_opened": 4,
+      "medium_closed": 26,
+      "medium_net": -22,
+      "large_opened": 0,
+      "large_closed": 34,
+      "large_net": -34,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2021-02",
+      "date": "20210228",
+      "total": 11184,
+      "total_excl_distance_sellers": 10815,
+      "distance_sellers": 369,
+      "hundred_hour": 1091,
+      "small": 4033,
+      "medium": 1584,
+      "large": 5198,
+      "opened_excl_ds": 32,
+      "closed_excl_ds": 54,
+      "net_change_excl_ds": -22,
+      "small_opened": 23,
+      "small_closed": 1,
+      "small_net": 22,
+      "medium_opened": 4,
+      "medium_closed": 26,
+      "medium_net": -22,
+      "large_opened": 5,
+      "large_closed": 27,
+      "large_net": -22,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2021-03",
+      "date": "20210331",
+      "total": 11186,
+      "total_excl_distance_sellers": 10816,
+      "distance_sellers": 370,
+      "hundred_hour": 1086,
+      "small": 4034,
+      "medium": 1602,
+      "large": 5180,
+      "opened_excl_ds": 41,
+      "closed_excl_ds": 40,
+      "net_change_excl_ds": 1,
+      "small_opened": 20,
+      "small_closed": 1,
+      "small_net": 19,
+      "medium_opened": 19,
+      "medium_closed": 18,
+      "medium_net": 1,
+      "large_opened": 2,
+      "large_closed": 21,
+      "large_net": -19,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2021-04",
+      "date": "20210430",
+      "total": 11194,
+      "total_excl_distance_sellers": 10817,
+      "distance_sellers": 377,
+      "hundred_hour": 1081,
+      "small": 4053,
+      "medium": 1597,
+      "large": 5167,
+      "opened_excl_ds": 32,
+      "closed_excl_ds": 31,
+      "net_change_excl_ds": 1,
+      "small_opened": 26,
+      "small_closed": 0,
+      "small_net": 26,
+      "medium_opened": 5,
+      "medium_closed": 17,
+      "medium_net": -12,
+      "large_opened": 1,
+      "large_closed": 14,
+      "large_net": -13,
+      "distance_sellers_opened": 7,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 7
+    },
+    {
+      "month": "2021-05",
+      "date": "20210531",
+      "total": 11185,
+      "total_excl_distance_sellers": 10810,
+      "distance_sellers": 375,
+      "hundred_hour": 1079,
+      "small": 4057,
+      "medium": 1598,
+      "large": 5155,
+      "opened_excl_ds": 25,
+      "closed_excl_ds": 32,
+      "net_change_excl_ds": -7,
+      "small_opened": 19,
+      "small_closed": 0,
+      "small_net": 19,
+      "medium_opened": 5,
+      "medium_closed": 19,
+      "medium_net": -14,
+      "large_opened": 1,
+      "large_closed": 13,
+      "large_net": -12,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": -2
+    },
+    {
+      "month": "2021-06",
+      "date": "20210630",
+      "total": 11175,
+      "total_excl_distance_sellers": 10799,
+      "distance_sellers": 376,
+      "hundred_hour": 1078,
+      "small": 4061,
+      "medium": 1693,
+      "large": 5045,
+      "opened_excl_ds": 25,
+      "closed_excl_ds": 36,
+      "net_change_excl_ds": -11,
+      "small_opened": 20,
+      "small_closed": 1,
+      "small_net": 19,
+      "medium_opened": 3,
+      "medium_closed": 22,
+      "medium_net": -19,
+      "large_opened": 2,
+      "large_closed": 13,
+      "large_net": -11,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2021-07",
+      "date": "20210731",
+      "total": 11180,
+      "total_excl_distance_sellers": 10805,
+      "distance_sellers": 375,
+      "hundred_hour": 1076,
+      "small": 4080,
+      "medium": 1690,
+      "large": 5035,
+      "opened_excl_ds": 27,
+      "closed_excl_ds": 21,
+      "net_change_excl_ds": 6,
+      "small_opened": 21,
+      "small_closed": 0,
+      "small_net": 21,
+      "medium_opened": 6,
+      "medium_closed": 11,
+      "medium_net": -5,
+      "large_opened": 0,
+      "large_closed": 10,
+      "large_net": -10,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": -1
+    },
+    {
+      "month": "2021-08",
+      "date": "20210831",
+      "total": 11153,
+      "total_excl_distance_sellers": 10777,
+      "distance_sellers": 376,
+      "hundred_hour": 1073,
+      "small": 4075,
+      "medium": 1686,
+      "large": 5016,
+      "opened_excl_ds": 19,
+      "closed_excl_ds": 47,
+      "net_change_excl_ds": -28,
+      "small_opened": 16,
+      "small_closed": 2,
+      "small_net": 14,
+      "medium_opened": 2,
+      "medium_closed": 25,
+      "medium_net": -23,
+      "large_opened": 1,
+      "large_closed": 20,
+      "large_net": -19,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2021-09",
+      "date": "20210930",
+      "total": 11158,
+      "total_excl_distance_sellers": 10779,
+      "distance_sellers": 379,
+      "hundred_hour": 1068,
+      "small": 4081,
+      "medium": 1691,
+      "large": 5007,
+      "opened_excl_ds": 23,
+      "closed_excl_ds": 21,
+      "net_change_excl_ds": 2,
+      "small_opened": 10,
+      "small_closed": 1,
+      "small_net": 9,
+      "medium_opened": 11,
+      "medium_closed": 9,
+      "medium_net": 2,
+      "large_opened": 2,
+      "large_closed": 11,
+      "large_net": -9,
+      "distance_sellers_opened": 5,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2021-10",
+      "date": "20211031",
+      "total": 11141,
+      "total_excl_distance_sellers": 10760,
+      "distance_sellers": 381,
+      "hundred_hour": 1072,
+      "small": 4080,
+      "medium": 1689,
+      "large": 4991,
+      "opened_excl_ds": 21,
+      "closed_excl_ds": 40,
+      "net_change_excl_ds": -19,
+      "small_opened": 13,
+      "small_closed": 1,
+      "small_net": 12,
+      "medium_opened": 7,
+      "medium_closed": 22,
+      "medium_net": -15,
+      "large_opened": 1,
+      "large_closed": 17,
+      "large_net": -16,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 2
+    },
+    {
+      "month": "2021-11",
+      "date": "20211130",
+      "total": 11146,
+      "total_excl_distance_sellers": 10764,
+      "distance_sellers": 382,
+      "hundred_hour": 1070,
+      "small": 4074,
+      "medium": 1709,
+      "large": 4981,
+      "opened_excl_ds": 23,
+      "closed_excl_ds": 19,
+      "net_change_excl_ds": 4,
+      "small_opened": 11,
+      "small_closed": 0,
+      "small_net": 11,
+      "medium_opened": 12,
+      "medium_closed": 9,
+      "medium_net": 3,
+      "large_opened": 0,
+      "large_closed": 10,
+      "large_net": -10,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2021-12",
+      "date": "20211231",
+      "total": 11148,
+      "total_excl_distance_sellers": 10767,
+      "distance_sellers": 381,
+      "hundred_hour": 1066,
+      "small": 4071,
+      "medium": 1716,
+      "large": 4980,
+      "opened_excl_ds": 17,
+      "closed_excl_ds": 14,
+      "net_change_excl_ds": 3,
+      "small_opened": 9,
+      "small_closed": 0,
+      "small_net": 9,
+      "medium_opened": 6,
+      "medium_closed": 11,
+      "medium_net": -5,
+      "large_opened": 2,
+      "large_closed": 3,
+      "large_net": -1,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": -1
+    },
+    {
+      "month": "2022-01",
+      "date": "20220131",
+      "total": 11121,
+      "total_excl_distance_sellers": 10739,
+      "distance_sellers": 382,
+      "hundred_hour": 1066,
+      "small": 4074,
+      "medium": 1708,
+      "large": 4957,
+      "opened_excl_ds": 21,
+      "closed_excl_ds": 49,
+      "net_change_excl_ds": -28,
+      "small_opened": 19,
+      "small_closed": 1,
+      "small_net": 18,
+      "medium_opened": 0,
+      "medium_closed": 23,
+      "medium_net": -23,
+      "large_opened": 2,
+      "large_closed": 25,
+      "large_net": -23,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2022-02",
+      "date": "20220228",
+      "total": 11117,
+      "total_excl_distance_sellers": 10736,
+      "distance_sellers": 381,
+      "hundred_hour": 1063,
+      "small": 4077,
+      "medium": 1717,
+      "large": 4942,
+      "opened_excl_ds": 29,
+      "closed_excl_ds": 32,
+      "net_change_excl_ds": -3,
+      "small_opened": 19,
+      "small_closed": 0,
+      "small_net": 19,
+      "medium_opened": 10,
+      "medium_closed": 17,
+      "medium_net": -7,
+      "large_opened": 0,
+      "large_closed": 15,
+      "large_net": -15,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": -1
+    },
+    {
+      "month": "2022-03",
+      "date": "20220331",
+      "total": 11121,
+      "total_excl_distance_sellers": 10739,
+      "distance_sellers": 382,
+      "hundred_hour": 1056,
+      "small": 4083,
+      "medium": 1720,
+      "large": 4936,
+      "opened_excl_ds": 18,
+      "closed_excl_ds": 15,
+      "net_change_excl_ds": 3,
+      "small_opened": 10,
+      "small_closed": 0,
+      "small_net": 10,
+      "medium_opened": 8,
+      "medium_closed": 9,
+      "medium_net": -1,
+      "large_opened": 0,
+      "large_closed": 6,
+      "large_net": -6,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2022-04",
+      "date": "20220430",
+      "total": 11113,
+      "total_excl_distance_sellers": 10729,
+      "distance_sellers": 384,
+      "hundred_hour": 1050,
+      "small": 4080,
+      "medium": 1721,
+      "large": 4928,
+      "opened_excl_ds": 10,
+      "closed_excl_ds": 19,
+      "net_change_excl_ds": -9,
+      "small_opened": 9,
+      "small_closed": 0,
+      "small_net": 9,
+      "medium_opened": 1,
+      "medium_closed": 11,
+      "medium_net": -10,
+      "large_opened": 0,
+      "large_closed": 8,
+      "large_net": -8,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2022-05",
+      "date": "20220531",
+      "total": 11099,
+      "total_excl_distance_sellers": 10713,
+      "distance_sellers": 386,
+      "hundred_hour": 1045,
+      "small": 4080,
+      "medium": 1720,
+      "large": 4913,
+      "opened_excl_ds": 18,
+      "closed_excl_ds": 34,
+      "net_change_excl_ds": -16,
+      "small_opened": 15,
+      "small_closed": 1,
+      "small_net": 14,
+      "medium_opened": 3,
+      "medium_closed": 18,
+      "medium_net": -15,
+      "large_opened": 0,
+      "large_closed": 15,
+      "large_net": -15,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 2
+    },
+    {
+      "month": "2022-06",
+      "date": "20220630",
+      "total": 11093,
+      "total_excl_distance_sellers": 10704,
+      "distance_sellers": 389,
+      "hundred_hour": 1043,
+      "small": 4082,
+      "medium": 1721,
+      "large": 4901,
+      "opened_excl_ds": 18,
+      "closed_excl_ds": 27,
+      "net_change_excl_ds": -9,
+      "small_opened": 14,
+      "small_closed": 0,
+      "small_net": 14,
+      "medium_opened": 4,
+      "medium_closed": 15,
+      "medium_net": -11,
+      "large_opened": 0,
+      "large_closed": 12,
+      "large_net": -12,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2022-07",
+      "date": "20220731",
+      "total": 11080,
+      "total_excl_distance_sellers": 10692,
+      "distance_sellers": 388,
+      "hundred_hour": 1036,
+      "small": 4077,
+      "medium": 1723,
+      "large": 4892,
+      "opened_excl_ds": 16,
+      "closed_excl_ds": 28,
+      "net_change_excl_ds": -12,
+      "small_opened": 13,
+      "small_closed": 1,
+      "small_net": 12,
+      "medium_opened": 3,
+      "medium_closed": 18,
+      "medium_net": -15,
+      "large_opened": 0,
+      "large_closed": 9,
+      "large_net": -9,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": -1
+    },
+    {
+      "month": "2022-08",
+      "date": "20220831",
+      "total": 11083,
+      "total_excl_distance_sellers": 10691,
+      "distance_sellers": 392,
+      "hundred_hour": 1032,
+      "small": 4082,
+      "medium": 1727,
+      "large": 4882,
+      "opened_excl_ds": 23,
+      "closed_excl_ds": 24,
+      "net_change_excl_ds": -1,
+      "small_opened": 19,
+      "small_closed": 1,
+      "small_net": 18,
+      "medium_opened": 4,
+      "medium_closed": 13,
+      "medium_net": -9,
+      "large_opened": 0,
+      "large_closed": 10,
+      "large_net": -10,
+      "distance_sellers_opened": 5,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 4
+    },
+    {
+      "month": "2022-09",
+      "date": "20220930",
+      "total": 11071,
+      "total_excl_distance_sellers": 10681,
+      "distance_sellers": 390,
+      "hundred_hour": 1027,
+      "small": 4077,
+      "medium": 1730,
+      "large": 4874,
+      "opened_excl_ds": 15,
+      "closed_excl_ds": 25,
+      "net_change_excl_ds": -10,
+      "small_opened": 12,
+      "small_closed": 0,
+      "small_net": 12,
+      "medium_opened": 0,
+      "medium_closed": 14,
+      "medium_net": -14,
+      "large_opened": 3,
+      "large_closed": 11,
+      "large_net": -8,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 4,
+      "distance_sellers_net": -2
+    },
+    {
+      "month": "2022-10",
+      "date": "20221031",
+      "total": 11046,
+      "total_excl_distance_sellers": 10658,
+      "distance_sellers": 388,
+      "hundred_hour": 1024,
+      "small": 4079,
+      "medium": 1731,
+      "large": 4848,
+      "opened_excl_ds": 15,
+      "closed_excl_ds": 38,
+      "net_change_excl_ds": -23,
+      "small_opened": 10,
+      "small_closed": 0,
+      "small_net": 10,
+      "medium_opened": 4,
+      "medium_closed": 11,
+      "medium_net": -7,
+      "large_opened": 1,
+      "large_closed": 27,
+      "large_net": -26,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 6,
+      "distance_sellers_net": -2
+    },
+    {
+      "month": "2022-11",
+      "date": "20221130",
+      "total": 11059,
+      "total_excl_distance_sellers": 10668,
+      "distance_sellers": 391,
+      "hundred_hour": 1022,
+      "small": 4092,
+      "medium": 1735,
+      "large": 4841,
+      "opened_excl_ds": 32,
+      "closed_excl_ds": 22,
+      "net_change_excl_ds": 10,
+      "small_opened": 20,
+      "small_closed": 0,
+      "small_net": 20,
+      "medium_opened": 8,
+      "medium_closed": 11,
+      "medium_net": -3,
+      "large_opened": 4,
+      "large_closed": 11,
+      "large_net": -7,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2022-12",
+      "date": "20221231",
+      "total": 11067,
+      "total_excl_distance_sellers": 10676,
+      "distance_sellers": 391,
+      "hundred_hour": 1022,
+      "small": 4257,
+      "medium": 1614,
+      "large": 4805,
+      "opened_excl_ds": 24,
+      "closed_excl_ds": 16,
+      "net_change_excl_ds": 8,
+      "small_opened": 15,
+      "small_closed": 1,
+      "small_net": 14,
+      "medium_opened": 9,
+      "medium_closed": 5,
+      "medium_net": 4,
+      "large_opened": 0,
+      "large_closed": 10,
+      "large_net": -10,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2023-01",
+      "date": "20230131",
+      "total": 11045,
+      "total_excl_distance_sellers": 10654,
+      "distance_sellers": 391,
+      "hundred_hour": 1018,
+      "small": 4259,
+      "medium": 1616,
+      "large": 4779,
+      "opened_excl_ds": 20,
+      "closed_excl_ds": 42,
+      "net_change_excl_ds": -22,
+      "small_opened": 16,
+      "small_closed": 13,
+      "small_net": 3,
+      "medium_opened": 3,
+      "medium_closed": 1,
+      "medium_net": 2,
+      "large_opened": 1,
+      "large_closed": 28,
+      "large_net": -27,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2023-02",
+      "date": "20230228",
+      "total": 11041,
+      "total_excl_distance_sellers": 10652,
+      "distance_sellers": 389,
+      "hundred_hour": 1014,
+      "small": 4283,
+      "medium": 1617,
+      "large": 4752,
+      "opened_excl_ds": 39,
+      "closed_excl_ds": 40,
+      "net_change_excl_ds": -1,
+      "small_opened": 36,
+      "small_closed": 9,
+      "small_net": 27,
+      "medium_opened": 2,
+      "medium_closed": 2,
+      "medium_net": 0,
+      "large_opened": 1,
+      "large_closed": 29,
+      "large_net": -28,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 5,
+      "distance_sellers_net": -2
+    },
+    {
+      "month": "2023-03",
+      "date": "20230331",
+      "total": 11026,
+      "total_excl_distance_sellers": 10635,
+      "distance_sellers": 391,
+      "hundred_hour": 1006,
+      "small": 4293,
+      "medium": 1629,
+      "large": 4713,
+      "opened_excl_ds": 40,
+      "closed_excl_ds": 56,
+      "net_change_excl_ds": -16,
+      "small_opened": 21,
+      "small_closed": 7,
+      "small_net": 14,
+      "medium_opened": 16,
+      "medium_closed": 6,
+      "medium_net": 10,
+      "large_opened": 3,
+      "large_closed": 43,
+      "large_net": -40,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2023-04",
+      "date": "20230430",
+      "total": 10954,
+      "total_excl_distance_sellers": 10560,
+      "distance_sellers": 394,
+      "hundred_hour": 1002,
+      "small": 4320,
+      "medium": 1661,
+      "large": 4579,
+      "opened_excl_ds": 72,
+      "closed_excl_ds": 145,
+      "net_change_excl_ds": -73,
+      "small_opened": 34,
+      "small_closed": 6,
+      "small_net": 28,
+      "medium_opened": 36,
+      "medium_closed": 4,
+      "medium_net": 32,
+      "large_opened": 2,
+      "large_closed": 135,
+      "large_net": -133,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 4
+    },
+    {
+      "month": "2023-05",
+      "date": "20230531",
+      "total": 10894,
+      "total_excl_distance_sellers": 10503,
+      "distance_sellers": 391,
+      "hundred_hour": 984,
+      "small": 4366,
+      "medium": 1687,
+      "large": 4450,
+      "opened_excl_ds": 88,
+      "closed_excl_ds": 131,
+      "net_change_excl_ds": -43,
+      "small_opened": 58,
+      "small_closed": 7,
+      "small_net": 51,
+      "medium_opened": 29,
+      "medium_closed": 2,
+      "medium_net": 27,
+      "large_opened": 1,
+      "large_closed": 122,
+      "large_net": -121,
+      "distance_sellers_opened": 0,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": -3
+    },
+    {
+      "month": "2023-06",
+      "date": "20230630",
+      "total": 10845,
+      "total_excl_distance_sellers": 10450,
+      "distance_sellers": 395,
+      "hundred_hour": 932,
+      "small": 4413,
+      "medium": 1720,
+      "large": 4317,
+      "opened_excl_ds": 89,
+      "closed_excl_ds": 142,
+      "net_change_excl_ds": -53,
+      "small_opened": 68,
+      "small_closed": 4,
+      "small_net": 64,
+      "medium_opened": 21,
+      "medium_closed": 1,
+      "medium_net": 20,
+      "large_opened": 0,
+      "large_closed": 137,
+      "large_net": -137,
+      "distance_sellers_opened": 5,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 5
+    },
+    {
+      "month": "2023-07",
+      "date": "20230731",
+      "total": 10800,
+      "total_excl_distance_sellers": 10405,
+      "distance_sellers": 395,
+      "hundred_hour": 903,
+      "small": 4485,
+      "medium": 1757,
+      "large": 4163,
+      "opened_excl_ds": 122,
+      "closed_excl_ds": 156,
+      "net_change_excl_ds": -34,
+      "small_opened": 89,
+      "small_closed": 6,
+      "small_net": 83,
+      "medium_opened": 32,
+      "medium_closed": 4,
+      "medium_net": 28,
+      "large_opened": 1,
+      "large_closed": 146,
+      "large_net": -145,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 2
+    },
+    {
+      "month": "2023-08",
+      "date": "20230831",
+      "total": 10775,
+      "total_excl_distance_sellers": 10380,
+      "distance_sellers": 395,
+      "hundred_hour": 880,
+      "small": 4612,
+      "medium": 1790,
+      "large": 3978,
+      "opened_excl_ds": 185,
+      "closed_excl_ds": 199,
+      "net_change_excl_ds": -14,
+      "small_opened": 142,
+      "small_closed": 12,
+      "small_net": 130,
+      "medium_opened": 40,
+      "medium_closed": 4,
+      "medium_net": 36,
+      "large_opened": 3,
+      "large_closed": 183,
+      "large_net": -180,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2023-09",
+      "date": "20230930",
+      "total": 10757,
+      "total_excl_distance_sellers": 10364,
+      "distance_sellers": 393,
+      "hundred_hour": 871,
+      "small": 4717,
+      "medium": 1892,
+      "large": 3755,
+      "opened_excl_ds": 146,
+      "closed_excl_ds": 146,
+      "net_change_excl_ds": 0,
+      "small_opened": 127,
+      "small_closed": 14,
+      "small_net": 113,
+      "medium_opened": 18,
+      "medium_closed": 114,
+      "medium_net": -96,
+      "large_opened": 1,
+      "large_closed": 18,
+      "large_net": -17,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 5,
+      "distance_sellers_net": -3
+    },
+    {
+      "month": "2023-10",
+      "date": "20231031",
+      "total": 10707,
+      "total_excl_distance_sellers": 10307,
+      "distance_sellers": 400,
+      "hundred_hour": 861,
+      "small": 4796,
+      "medium": 1804,
+      "large": 3707,
+      "opened_excl_ds": 110,
+      "closed_excl_ds": 153,
+      "net_change_excl_ds": -43,
+      "small_opened": 96,
+      "small_closed": 13,
+      "small_net": 83,
+      "medium_opened": 13,
+      "medium_closed": 91,
+      "medium_net": -78,
+      "large_opened": 1,
+      "large_closed": 49,
+      "large_net": -48,
+      "distance_sellers_opened": 9,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 7
+    },
+    {
+      "month": "2023-11",
+      "date": "20231130",
+      "total": 10671,
+      "total_excl_distance_sellers": 10272,
+      "distance_sellers": 399,
+      "hundred_hour": 852,
+      "small": 4811,
+      "medium": 1799,
+      "large": 3662,
+      "opened_excl_ds": 47,
+      "closed_excl_ds": 70,
+      "net_change_excl_ds": -23,
+      "small_opened": 42,
+      "small_closed": 18,
+      "small_net": 24,
+      "medium_opened": 4,
+      "medium_closed": 10,
+      "medium_net": -6,
+      "large_opened": 1,
+      "large_closed": 42,
+      "large_net": -41,
+      "distance_sellers_opened": 0,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": -1
+    },
+    {
+      "month": "2023-12",
+      "date": "20231231",
+      "total": 10673,
+      "total_excl_distance_sellers": 10273,
+      "distance_sellers": 400,
+      "hundred_hour": 848,
+      "small": 4815,
+      "medium": 1799,
+      "large": 3659,
+      "opened_excl_ds": 32,
+      "closed_excl_ds": 27,
+      "net_change_excl_ds": 5,
+      "small_opened": 26,
+      "small_closed": 10,
+      "small_net": 16,
+      "medium_opened": 6,
+      "medium_closed": 4,
+      "medium_net": 2,
+      "large_opened": 0,
+      "large_closed": 13,
+      "large_net": -13,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2024-01",
+      "date": "20240131",
+      "total": 10613,
+      "total_excl_distance_sellers": 10209,
+      "distance_sellers": 404,
+      "hundred_hour": 844,
+      "small": 4816,
+      "medium": 1772,
+      "large": 3621,
+      "opened_excl_ds": 25,
+      "closed_excl_ds": 86,
+      "net_change_excl_ds": -61,
+      "small_opened": 20,
+      "small_closed": 15,
+      "small_net": 5,
+      "medium_opened": 4,
+      "medium_closed": 7,
+      "medium_net": -3,
+      "large_opened": 1,
+      "large_closed": 64,
+      "large_net": -63,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2024-02",
+      "date": "20240229",
+      "total": 10558,
+      "total_excl_distance_sellers": 10153,
+      "distance_sellers": 405,
+      "hundred_hour": 841,
+      "small": 4816,
+      "medium": 1793,
+      "large": 3544,
+      "opened_excl_ds": 45,
+      "closed_excl_ds": 98,
+      "net_change_excl_ds": -53,
+      "small_opened": 26,
+      "small_closed": 13,
+      "small_net": 13,
+      "medium_opened": 17,
+      "medium_closed": 8,
+      "medium_net": 9,
+      "large_opened": 2,
+      "large_closed": 77,
+      "large_net": -75,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 2
+    },
+    {
+      "month": "2024-03",
+      "date": "20240331",
+      "total": 10519,
+      "total_excl_distance_sellers": 10112,
+      "distance_sellers": 407,
+      "hundred_hour": 839,
+      "small": 4820,
+      "medium": 1804,
+      "large": 3488,
+      "opened_excl_ds": 43,
+      "closed_excl_ds": 83,
+      "net_change_excl_ds": -40,
+      "small_opened": 29,
+      "small_closed": 20,
+      "small_net": 9,
+      "medium_opened": 12,
+      "medium_closed": 5,
+      "medium_net": 7,
+      "large_opened": 2,
+      "large_closed": 58,
+      "large_net": -56,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 2
+    },
+    {
+      "month": "2024-04",
+      "date": "20240430",
+      "total": 10506,
+      "total_excl_distance_sellers": 10096,
+      "distance_sellers": 410,
+      "hundred_hour": 838,
+      "small": 4822,
+      "medium": 1818,
+      "large": 3456,
+      "opened_excl_ds": 49,
+      "closed_excl_ds": 61,
+      "net_change_excl_ds": -12,
+      "small_opened": 29,
+      "small_closed": 19,
+      "small_net": 10,
+      "medium_opened": 17,
+      "medium_closed": 8,
+      "medium_net": 9,
+      "large_opened": 3,
+      "large_closed": 34,
+      "large_net": -31,
+      "distance_sellers_opened": 5,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2024-05",
+      "date": "20240531",
+      "total": 10498,
+      "total_excl_distance_sellers": 10090,
+      "distance_sellers": 408,
+      "hundred_hour": 832,
+      "small": 4810,
+      "medium": 1843,
+      "large": 3437,
+      "opened_excl_ds": 35,
+      "closed_excl_ds": 38,
+      "net_change_excl_ds": -3,
+      "small_opened": 23,
+      "small_closed": 13,
+      "small_net": 10,
+      "medium_opened": 11,
+      "medium_closed": 5,
+      "medium_net": 6,
+      "large_opened": 1,
+      "large_closed": 20,
+      "large_net": -19,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 4,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2024-06",
+      "date": "20240630",
+      "total": 10489,
+      "total_excl_distance_sellers": 10079,
+      "distance_sellers": 410,
+      "hundred_hour": 828,
+      "small": 4833,
+      "medium": 1849,
+      "large": 3397,
+      "opened_excl_ds": 59,
+      "closed_excl_ds": 69,
+      "net_change_excl_ds": -10,
+      "small_opened": 48,
+      "small_closed": 13,
+      "small_net": 35,
+      "medium_opened": 11,
+      "medium_closed": 16,
+      "medium_net": -5,
+      "large_opened": 0,
+      "large_closed": 40,
+      "large_net": -40,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 4
+    },
+    {
+      "month": "2024-07",
+      "date": "20240731",
+      "total": 10465,
+      "total_excl_distance_sellers": 10054,
+      "distance_sellers": 411,
+      "hundred_hour": 816,
+      "small": 4840,
+      "medium": 1842,
+      "large": 3372,
+      "opened_excl_ds": 50,
+      "closed_excl_ds": 73,
+      "net_change_excl_ds": -23,
+      "small_opened": 35,
+      "small_closed": 22,
+      "small_net": 13,
+      "medium_opened": 14,
+      "medium_closed": 26,
+      "medium_net": -12,
+      "large_opened": 1,
+      "large_closed": 25,
+      "large_net": -24,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2024-08",
+      "date": "20240831",
+      "total": 10471,
+      "total_excl_distance_sellers": 10059,
+      "distance_sellers": 412,
+      "hundred_hour": 810,
+      "small": 4865,
+      "medium": 1839,
+      "large": 3355,
+      "opened_excl_ds": 51,
+      "closed_excl_ds": 45,
+      "net_change_excl_ds": 6,
+      "small_opened": 40,
+      "small_closed": 14,
+      "small_net": 26,
+      "medium_opened": 11,
+      "medium_closed": 13,
+      "medium_net": -2,
+      "large_opened": 0,
+      "large_closed": 18,
+      "large_net": -18,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2024-09",
+      "date": "20240930",
+      "total": 10458,
+      "total_excl_distance_sellers": 10046,
+      "distance_sellers": 412,
+      "hundred_hour": 806,
+      "small": 4875,
+      "medium": 1831,
+      "large": 3340,
+      "opened_excl_ds": 47,
+      "closed_excl_ds": 54,
+      "net_change_excl_ds": -7,
+      "small_opened": 40,
+      "small_closed": 20,
+      "small_net": 20,
+      "medium_opened": 6,
+      "medium_closed": 19,
+      "medium_net": -13,
+      "large_opened": 1,
+      "large_closed": 15,
+      "large_net": -14,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 4,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2024-10",
+      "date": "20241031",
+      "total": 10450,
+      "total_excl_distance_sellers": 10043,
+      "distance_sellers": 407,
+      "hundred_hour": 803,
+      "small": 4882,
+      "medium": 1834,
+      "large": 3327,
+      "opened_excl_ds": 47,
+      "closed_excl_ds": 46,
+      "net_change_excl_ds": 1,
+      "small_opened": 35,
+      "small_closed": 15,
+      "small_net": 20,
+      "medium_opened": 12,
+      "medium_closed": 18,
+      "medium_net": -6,
+      "large_opened": 0,
+      "large_closed": 13,
+      "large_net": -13,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 5,
+      "distance_sellers_net": -4
+    },
+    {
+      "month": "2024-11",
+      "date": "20241130",
+      "total": 10454,
+      "total_excl_distance_sellers": 10044,
+      "distance_sellers": 410,
+      "hundred_hour": 797,
+      "small": 4901,
+      "medium": 1826,
+      "large": 3317,
+      "opened_excl_ds": 46,
+      "closed_excl_ds": 47,
+      "net_change_excl_ds": -1,
+      "small_opened": 41,
+      "small_closed": 20,
+      "small_net": 21,
+      "medium_opened": 5,
+      "medium_closed": 16,
+      "medium_net": -11,
+      "large_opened": 0,
+      "large_closed": 11,
+      "large_net": -11,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2024-12",
+      "date": "20241231",
+      "total": 10451,
+      "total_excl_distance_sellers": 10044,
+      "distance_sellers": 407,
+      "hundred_hour": 794,
+      "small": 4899,
+      "medium": 1837,
+      "large": 3308,
+      "opened_excl_ds": 33,
+      "closed_excl_ds": 31,
+      "net_change_excl_ds": 2,
+      "small_opened": 25,
+      "small_closed": 17,
+      "small_net": 8,
+      "medium_opened": 8,
+      "medium_closed": 4,
+      "medium_net": 4,
+      "large_opened": 0,
+      "large_closed": 10,
+      "large_net": -10,
+      "distance_sellers_opened": 0,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": -3
+    },
+    {
+      "month": "2025-01",
+      "date": "20250131",
+      "total": 10436,
+      "total_excl_distance_sellers": 10025,
+      "distance_sellers": 411,
+      "hundred_hour": 791,
+      "small": 4900,
+      "medium": 1823,
+      "large": 3302,
+      "opened_excl_ds": 25,
+      "closed_excl_ds": 36,
+      "net_change_excl_ds": -11,
+      "small_opened": 17,
+      "small_closed": 11,
+      "small_net": 6,
+      "medium_opened": 8,
+      "medium_closed": 19,
+      "medium_net": -11,
+      "large_opened": 0,
+      "large_closed": 6,
+      "large_net": -6,
+      "distance_sellers_opened": 7,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": 4
+    },
+    {
+      "month": "2025-02",
+      "date": "20250228",
+      "total": 10424,
+      "total_excl_distance_sellers": 10015,
+      "distance_sellers": 409,
+      "hundred_hour": 789,
+      "small": 4911,
+      "medium": 1811,
+      "large": 3293,
+      "opened_excl_ds": 45,
+      "closed_excl_ds": 52,
+      "net_change_excl_ds": -7,
+      "small_opened": 35,
+      "small_closed": 23,
+      "small_net": 12,
+      "medium_opened": 9,
+      "medium_closed": 19,
+      "medium_net": -10,
+      "large_opened": 1,
+      "large_closed": 10,
+      "large_net": -9,
+      "distance_sellers_opened": 1,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": -2
+    },
+    {
+      "month": "2025-03",
+      "date": "20250331",
+      "total": 10407,
+      "total_excl_distance_sellers": 9999,
+      "distance_sellers": 408,
+      "hundred_hour": 784,
+      "small": 4910,
+      "medium": 1807,
+      "large": 3282,
+      "opened_excl_ds": 59,
+      "closed_excl_ds": 69,
+      "net_change_excl_ds": -10,
+      "small_opened": 38,
+      "small_closed": 29,
+      "small_net": 9,
+      "medium_opened": 21,
+      "medium_closed": 31,
+      "medium_net": -10,
+      "large_opened": 0,
+      "large_closed": 9,
+      "large_net": -9,
+      "distance_sellers_opened": 6,
+      "distance_sellers_closed": 5,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2025-04",
+      "date": "20250430",
+      "total": 10394,
+      "total_excl_distance_sellers": 9984,
+      "distance_sellers": 410,
+      "hundred_hour": 782,
+      "small": 4905,
+      "medium": 1810,
+      "large": 3269,
+      "opened_excl_ds": 31,
+      "closed_excl_ds": 40,
+      "net_change_excl_ds": -9,
+      "small_opened": 21,
+      "small_closed": 17,
+      "small_net": 4,
+      "medium_opened": 10,
+      "medium_closed": 11,
+      "medium_net": -1,
+      "large_opened": 0,
+      "large_closed": 12,
+      "large_net": -12,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 2
+    },
+    {
+      "month": "2025-05",
+      "date": "20250531",
+      "total": 10402,
+      "total_excl_distance_sellers": 9986,
+      "distance_sellers": 416,
+      "hundred_hour": 784,
+      "small": 4918,
+      "medium": 1816,
+      "large": 3252,
+      "opened_excl_ds": 47,
+      "closed_excl_ds": 42,
+      "net_change_excl_ds": 5,
+      "small_opened": 33,
+      "small_closed": 13,
+      "small_net": 20,
+      "medium_opened": 14,
+      "medium_closed": 12,
+      "medium_net": 2,
+      "large_opened": 0,
+      "large_closed": 17,
+      "large_net": -17,
+      "distance_sellers_opened": 9,
+      "distance_sellers_closed": 3,
+      "distance_sellers_net": 6
+    },
+    {
+      "month": "2025-06",
+      "date": "20250630",
+      "total": 10405,
+      "total_excl_distance_sellers": 9984,
+      "distance_sellers": 421,
+      "hundred_hour": 782,
+      "small": 4935,
+      "medium": 1815,
+      "large": 3234,
+      "opened_excl_ds": 49,
+      "closed_excl_ds": 44,
+      "net_change_excl_ds": 5,
+      "small_opened": 28,
+      "small_closed": 13,
+      "small_net": 15,
+      "medium_opened": 21,
+      "medium_closed": 14,
+      "medium_net": 7,
+      "large_opened": 0,
+      "large_closed": 17,
+      "large_net": -17,
+      "distance_sellers_opened": 6,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 5
+    },
+    {
+      "month": "2025-07",
+      "date": "20250731",
+      "total": 10399,
+      "total_excl_distance_sellers": 9972,
+      "distance_sellers": 427,
+      "hundred_hour": 778,
+      "small": 4940,
+      "medium": 1798,
+      "large": 3234,
+      "opened_excl_ds": 31,
+      "closed_excl_ds": 36,
+      "net_change_excl_ds": -5,
+      "small_opened": 22,
+      "small_closed": 15,
+      "small_net": 7,
+      "medium_opened": 9,
+      "medium_closed": 21,
+      "medium_net": -12,
+      "large_opened": 0,
+      "large_closed": 0,
+      "large_net": 0,
+      "distance_sellers_opened": 6,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 6
+    },
+    {
+      "month": "2025-08",
+      "date": "20250831",
+      "total": 10412,
+      "total_excl_distance_sellers": 9981,
+      "distance_sellers": 431,
+      "hundred_hour": 775,
+      "small": 4940,
+      "medium": 1814,
+      "large": 3227,
+      "opened_excl_ds": 46,
+      "closed_excl_ds": 35,
+      "net_change_excl_ds": 11,
+      "small_opened": 26,
+      "small_closed": 20,
+      "small_net": 6,
+      "medium_opened": 20,
+      "medium_closed": 7,
+      "medium_net": 13,
+      "large_opened": 0,
+      "large_closed": 8,
+      "large_net": -8,
+      "distance_sellers_opened": 6,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 4
+    },
+    {
+      "month": "2025-09",
+      "date": "20250930",
+      "total": 10402,
+      "total_excl_distance_sellers": 9970,
+      "distance_sellers": 432,
+      "hundred_hour": 774,
+      "small": 4952,
+      "medium": 1794,
+      "large": 3224,
+      "opened_excl_ds": 30,
+      "closed_excl_ds": 35,
+      "net_change_excl_ds": -5,
+      "small_opened": 27,
+      "small_closed": 15,
+      "small_net": 12,
+      "medium_opened": 3,
+      "medium_closed": 18,
+      "medium_net": -15,
+      "large_opened": 0,
+      "large_closed": 2,
+      "large_net": -2,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2025-10",
+      "date": "20251031",
+      "total": 10401,
+      "total_excl_distance_sellers": 9969,
+      "distance_sellers": 432,
+      "hundred_hour": 794,
+      "small": 4980,
+      "medium": 1774,
+      "large": 3215,
+      "opened_excl_ds": 44,
+      "closed_excl_ds": 43,
+      "net_change_excl_ds": 1,
+      "small_opened": 40,
+      "small_closed": 12,
+      "small_net": 28,
+      "medium_opened": 4,
+      "medium_closed": 23,
+      "medium_net": -19,
+      "large_opened": 0,
+      "large_closed": 8,
+      "large_net": -8,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 1
+    },
+    {
+      "month": "2025-11",
+      "date": "20251130",
+      "total": 10397,
+      "total_excl_distance_sellers": 9962,
+      "distance_sellers": 435,
+      "hundred_hour": 791,
+      "small": 4995,
+      "medium": 1760,
+      "large": 3207,
+      "opened_excl_ds": 39,
+      "closed_excl_ds": 44,
+      "net_change_excl_ds": -5,
+      "small_opened": 29,
+      "small_closed": 14,
+      "small_net": 15,
+      "medium_opened": 10,
+      "medium_closed": 22,
+      "medium_net": -12,
+      "large_opened": 0,
+      "large_closed": 8,
+      "large_net": -8,
+      "distance_sellers_opened": 5,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2025-12",
+      "date": "20251231",
+      "total": 10406,
+      "total_excl_distance_sellers": 9971,
+      "distance_sellers": 435,
+      "hundred_hour": 789,
+      "small": 5002,
+      "medium": 1764,
+      "large": 3205,
+      "opened_excl_ds": 32,
+      "closed_excl_ds": 21,
+      "net_change_excl_ds": 11,
+      "small_opened": 26,
+      "small_closed": 14,
+      "small_net": 12,
+      "medium_opened": 6,
+      "medium_closed": 5,
+      "medium_net": 1,
+      "large_opened": 0,
+      "large_closed": 2,
+      "large_net": -2,
+      "distance_sellers_opened": 2,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 0
+    },
+    {
+      "month": "2026-01",
+      "date": "20260131",
+      "total": 10402,
+      "total_excl_distance_sellers": 9963,
+      "distance_sellers": 439,
+      "hundred_hour": 789,
+      "small": 5011,
+      "medium": 1749,
+      "large": 3203,
+      "opened_excl_ds": 40,
+      "closed_excl_ds": 44,
+      "net_change_excl_ds": -4,
+      "small_opened": 33,
+      "small_closed": 18,
+      "small_net": 15,
+      "medium_opened": 5,
+      "medium_closed": 21,
+      "medium_net": -16,
+      "large_opened": 2,
+      "large_closed": 5,
+      "large_net": -3,
+      "distance_sellers_opened": 7,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 5
+    },
+    {
+      "month": "2026-02",
+      "date": "20260228",
+      "total": 10399,
+      "total_excl_distance_sellers": 9958,
+      "distance_sellers": 441,
+      "hundred_hour": 788,
+      "small": 5031,
+      "medium": 1733,
+      "large": 3194,
+      "opened_excl_ds": 64,
+      "closed_excl_ds": 66,
+      "net_change_excl_ds": -2,
+      "small_opened": 53,
+      "small_closed": 32,
+      "small_net": 21,
+      "medium_opened": 10,
+      "medium_closed": 25,
+      "medium_net": -15,
+      "large_opened": 1,
+      "large_closed": 9,
+      "large_net": -8,
+      "distance_sellers_opened": 3,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 3
+    },
+    {
+      "month": "2026-03",
+      "date": "20260331",
+      "total": 10388,
+      "total_excl_distance_sellers": 9944,
+      "distance_sellers": 444,
+      "hundred_hour": 788,
+      "small": 5050,
+      "medium": 1715,
+      "large": 3179,
+      "opened_excl_ds": 74,
+      "closed_excl_ds": 82,
+      "net_change_excl_ds": -8,
+      "small_opened": 60,
+      "small_closed": 43,
+      "small_net": 17,
+      "medium_opened": 14,
+      "medium_closed": 23,
+      "medium_net": -9,
+      "large_opened": 0,
+      "large_closed": 16,
+      "large_net": -16,
+      "distance_sellers_opened": 6,
+      "distance_sellers_closed": 2,
+      "distance_sellers_net": 4
+    },
+    {
+      "month": "2026-04",
+      "date": "20260430",
+      "total": 10394,
+      "total_excl_distance_sellers": 9940,
+      "distance_sellers": 454,
+      "hundred_hour": 786,
+      "small": 5067,
+      "medium": 1706,
+      "large": 3167,
+      "opened_excl_ds": 49,
+      "closed_excl_ds": 47,
+      "net_change_excl_ds": 2,
+      "small_opened": 46,
+      "small_closed": 23,
+      "small_net": 23,
+      "medium_opened": 3,
+      "medium_closed": 13,
+      "medium_net": -10,
+      "large_opened": 0,
+      "large_closed": 11,
+      "large_net": -11,
+      "distance_sellers_opened": 11,
+      "distance_sellers_closed": 1,
+      "distance_sellers_net": 10
+    },
+    {
+      "month": "2026-05",
+      "date": "20260531",
+      "total": 10391,
+      "total_excl_distance_sellers": 9933,
+      "distance_sellers": 458,
+      "hundred_hour": 785,
+      "small": 5075,
+      "medium": 1705,
+      "large": 3153,
+      "opened_excl_ds": 44,
+      "closed_excl_ds": 50,
+      "net_change_excl_ds": -6,
+      "small_opened": 28,
+      "small_closed": 21,
+      "small_net": 7,
+      "medium_opened": 16,
+      "medium_closed": 14,
+      "medium_net": 2,
+      "large_opened": 0,
+      "large_closed": 15,
+      "large_net": -15,
+      "distance_sellers_opened": 4,
+      "distance_sellers_closed": 0,
+      "distance_sellers_net": 4
+    }
+  ],
+  "annualSnapshot": [
+    {
+      "year": 2021,
+      "month": "2021-12",
+      "monthLabel": "December 2021",
+      "total": 11148,
+      "small": 4071,
+      "medium": 1716,
+      "large": 4980,
+      "hundredHour": 1066,
+      "distanceSellers": 381
+    },
+    {
+      "year": 2022,
+      "month": "2022-12",
+      "monthLabel": "December 2022",
+      "total": 11067,
+      "small": 4257,
+      "medium": 1614,
+      "large": 4805,
+      "hundredHour": 1022,
+      "distanceSellers": 391
+    },
+    {
+      "year": 2023,
+      "month": "2023-12",
+      "monthLabel": "December 2023",
+      "total": 10673,
+      "small": 4815,
+      "medium": 1799,
+      "large": 3659,
+      "hundredHour": 848,
+      "distanceSellers": 400
+    },
+    {
+      "year": 2024,
+      "month": "2024-12",
+      "monthLabel": "December 2024",
+      "total": 10451,
+      "small": 4899,
+      "medium": 1837,
+      "large": 3308,
+      "hundredHour": 794,
+      "distanceSellers": 407
+    },
+    {
+      "year": 2025,
+      "month": "2025-12",
+      "monthLabel": "December 2025",
+      "total": 10406,
+      "small": 5002,
+      "medium": 1764,
+      "large": 3205,
+      "hundredHour": 789,
+      "distanceSellers": 435
+    },
+    {
+      "year": 2026,
+      "month": "2026-05",
+      "monthLabel": "May 2026 (latest)",
+      "total": 10391,
+      "small": 5075,
+      "medium": 1705,
+      "large": 3153,
+      "hundredHour": 785,
+      "distanceSellers": 458
+    }
+  ],
   "companiesHouseSIC47730": {
-    "description": "Companies House SIC 47730 ('Dispensing chemist in specialised stores'), UK-wide incorporated companies. Active and dissolved counts from CH Advanced Search API, pulled 2026-07-14.",
+    "description": "Companies House SIC 47730 ('Dispensing chemist in specialised stores'), UK-wide incorporated companies. Monthly incorporation counts from the CH Advanced Search API; active/dissolved totals are a live snapshot as of 2026-07-14.",
     "sicCode": 47730,
     "sicLabel": "Dispensing chemist in specialised stores",
     "activeCompanies": {
@@ -70,78 +1827,678 @@
       "label": "2,615"
     },
     "sourceUrl": "https://developer.company-information.service.gov.uk/api/docs/",
-    "note": "Active count includes all company statuses returned as 'active' by CH. Dissolved count uses company_status=dissolved filter. Both are UK-wide, not England-only.",
-    "quarterlyChurn": {
-      "description": "Quarterly incorporations and dissolutions for SIC 47730 by CH incorporated_from/dissolved_from date ranges. Pulled 2026-07-14.",
-      "quarters": [
-        {
-          "quarter": "2024-Q1",
-          "incorporations": 225,
-          "dissolutions": 60,
-          "net": 165
-        },
-        {
-          "quarter": "2024-Q2",
-          "incorporations": 156,
-          "dissolutions": 83,
-          "net": 73
-        },
-        {
-          "quarter": "2024-Q3",
-          "incorporations": 204,
-          "dissolutions": 85,
-          "net": 119
-        },
-        {
-          "quarter": "2024-Q4",
-          "incorporations": 136,
-          "dissolutions": 112,
-          "net": 24
-        },
-        {
-          "quarter": "2025-Q1",
-          "incorporations": 282,
-          "dissolutions": 109,
-          "net": 173
-        },
-        {
-          "quarter": "2025-Q2",
-          "incorporations": 232,
-          "dissolutions": 64,
-          "net": 168
-        },
-        {
-          "quarter": "2025-Q3",
-          "incorporations": 204,
-          "dissolutions": 102,
-          "net": 102
-        },
-        {
-          "quarter": "2025-Q4",
-          "incorporations": 223,
-          "dissolutions": 89,
-          "net": 134
-        },
-        {
-          "quarter": "2026-Q1",
-          "incorporations": 156,
-          "dissolutions": 94,
-          "net": 62
-        },
-        {
-          "quarter": "2026-Q2",
-          "incorporations": 163,
-          "dissolutions": 100,
-          "net": 63
-        }
-      ],
-      "caveat": "CH incorporations/dissolutions measure corporate-entity churn. A new incorporation may be a group restrucuring, a new entrant, or a change of legal form; it does not always correspond to a new pharmacy opening. Similarly, dissolution may lag trading closure by many months. CH data is complementary to NHSBSA contractor counts, not a substitute."
-    }
+    "monthly": [
+      {
+        "month": "2015-07",
+        "count": 11
+      },
+      {
+        "month": "2015-08",
+        "count": 18
+      },
+      {
+        "month": "2015-09",
+        "count": 22
+      },
+      {
+        "month": "2015-10",
+        "count": 16
+      },
+      {
+        "month": "2015-11",
+        "count": 21
+      },
+      {
+        "month": "2015-12",
+        "count": 16
+      },
+      {
+        "month": "2016-01",
+        "count": 18
+      },
+      {
+        "month": "2016-02",
+        "count": 17
+      },
+      {
+        "month": "2016-03",
+        "count": 18
+      },
+      {
+        "month": "2016-04",
+        "count": 19
+      },
+      {
+        "month": "2016-05",
+        "count": 12
+      },
+      {
+        "month": "2016-06",
+        "count": 20
+      },
+      {
+        "month": "2016-07",
+        "count": 18
+      },
+      {
+        "month": "2016-08",
+        "count": 28
+      },
+      {
+        "month": "2016-09",
+        "count": 16
+      },
+      {
+        "month": "2016-10",
+        "count": 19
+      },
+      {
+        "month": "2016-11",
+        "count": 29
+      },
+      {
+        "month": "2016-12",
+        "count": 13
+      },
+      {
+        "month": "2017-01",
+        "count": 26
+      },
+      {
+        "month": "2017-02",
+        "count": 16
+      },
+      {
+        "month": "2017-03",
+        "count": 30
+      },
+      {
+        "month": "2017-04",
+        "count": 19
+      },
+      {
+        "month": "2017-05",
+        "count": 20
+      },
+      {
+        "month": "2017-06",
+        "count": 15
+      },
+      {
+        "month": "2017-07",
+        "count": 17
+      },
+      {
+        "month": "2017-08",
+        "count": 29
+      },
+      {
+        "month": "2017-09",
+        "count": 33
+      },
+      {
+        "month": "2017-10",
+        "count": 26
+      },
+      {
+        "month": "2017-11",
+        "count": 28
+      },
+      {
+        "month": "2017-12",
+        "count": 22
+      },
+      {
+        "month": "2018-01",
+        "count": 32
+      },
+      {
+        "month": "2018-02",
+        "count": 32
+      },
+      {
+        "month": "2018-03",
+        "count": 25
+      },
+      {
+        "month": "2018-04",
+        "count": 24
+      },
+      {
+        "month": "2018-05",
+        "count": 28
+      },
+      {
+        "month": "2018-06",
+        "count": 20
+      },
+      {
+        "month": "2018-07",
+        "count": 32
+      },
+      {
+        "month": "2018-08",
+        "count": 30
+      },
+      {
+        "month": "2018-09",
+        "count": 28
+      },
+      {
+        "month": "2018-10",
+        "count": 37
+      },
+      {
+        "month": "2018-11",
+        "count": 41
+      },
+      {
+        "month": "2018-12",
+        "count": 24
+      },
+      {
+        "month": "2019-01",
+        "count": 23
+      },
+      {
+        "month": "2019-02",
+        "count": 34
+      },
+      {
+        "month": "2019-03",
+        "count": 23
+      },
+      {
+        "month": "2019-04",
+        "count": 33
+      },
+      {
+        "month": "2019-05",
+        "count": 30
+      },
+      {
+        "month": "2019-06",
+        "count": 17
+      },
+      {
+        "month": "2019-07",
+        "count": 38
+      },
+      {
+        "month": "2019-08",
+        "count": 29
+      },
+      {
+        "month": "2019-09",
+        "count": 29
+      },
+      {
+        "month": "2019-10",
+        "count": 35
+      },
+      {
+        "month": "2019-11",
+        "count": 38
+      },
+      {
+        "month": "2019-12",
+        "count": 36
+      },
+      {
+        "month": "2020-01",
+        "count": 33
+      },
+      {
+        "month": "2020-02",
+        "count": 40
+      },
+      {
+        "month": "2020-03",
+        "count": 45
+      },
+      {
+        "month": "2020-04",
+        "count": 33
+      },
+      {
+        "month": "2020-05",
+        "count": 27
+      },
+      {
+        "month": "2020-06",
+        "count": 35
+      },
+      {
+        "month": "2020-07",
+        "count": 36
+      },
+      {
+        "month": "2020-08",
+        "count": 31
+      },
+      {
+        "month": "2020-09",
+        "count": 35
+      },
+      {
+        "month": "2020-10",
+        "count": 48
+      },
+      {
+        "month": "2020-11",
+        "count": 48
+      },
+      {
+        "month": "2020-12",
+        "count": 30
+      },
+      {
+        "month": "2021-01",
+        "count": 35
+      },
+      {
+        "month": "2021-02",
+        "count": 46
+      },
+      {
+        "month": "2021-03",
+        "count": 31
+      },
+      {
+        "month": "2021-04",
+        "count": 21
+      },
+      {
+        "month": "2021-05",
+        "count": 56
+      },
+      {
+        "month": "2021-06",
+        "count": 56
+      },
+      {
+        "month": "2021-07",
+        "count": 30
+      },
+      {
+        "month": "2021-08",
+        "count": 51
+      },
+      {
+        "month": "2021-09",
+        "count": 65
+      },
+      {
+        "month": "2021-10",
+        "count": 70
+      },
+      {
+        "month": "2021-11",
+        "count": 64
+      },
+      {
+        "month": "2021-12",
+        "count": 62
+      },
+      {
+        "month": "2022-01",
+        "count": 97
+      },
+      {
+        "month": "2022-02",
+        "count": 77
+      },
+      {
+        "month": "2022-03",
+        "count": 86
+      },
+      {
+        "month": "2022-04",
+        "count": 71
+      },
+      {
+        "month": "2022-05",
+        "count": 80
+      },
+      {
+        "month": "2022-06",
+        "count": 65
+      },
+      {
+        "month": "2022-07",
+        "count": 74
+      },
+      {
+        "month": "2022-08",
+        "count": 107
+      },
+      {
+        "month": "2022-09",
+        "count": 89
+      },
+      {
+        "month": "2022-10",
+        "count": 77
+      },
+      {
+        "month": "2022-11",
+        "count": 84
+      },
+      {
+        "month": "2022-12",
+        "count": 79
+      },
+      {
+        "month": "2023-01",
+        "count": 83
+      },
+      {
+        "month": "2023-02",
+        "count": 133
+      },
+      {
+        "month": "2023-03",
+        "count": 146
+      },
+      {
+        "month": "2023-04",
+        "count": 108
+      },
+      {
+        "month": "2023-05",
+        "count": 88
+      },
+      {
+        "month": "2023-06",
+        "count": 60
+      },
+      {
+        "month": "2023-07",
+        "count": 67
+      },
+      {
+        "month": "2023-08",
+        "count": 186
+      },
+      {
+        "month": "2023-09",
+        "count": 80
+      },
+      {
+        "month": "2023-10",
+        "count": 63
+      },
+      {
+        "month": "2023-11",
+        "count": 71
+      },
+      {
+        "month": "2023-12",
+        "count": 78
+      },
+      {
+        "month": "2024-01",
+        "count": 85
+      },
+      {
+        "month": "2024-02",
+        "count": 73
+      },
+      {
+        "month": "2024-03",
+        "count": 67
+      },
+      {
+        "month": "2024-04",
+        "count": 53
+      },
+      {
+        "month": "2024-05",
+        "count": 50
+      },
+      {
+        "month": "2024-06",
+        "count": 53
+      },
+      {
+        "month": "2024-07",
+        "count": 63
+      },
+      {
+        "month": "2024-08",
+        "count": 72
+      },
+      {
+        "month": "2024-09",
+        "count": 69
+      },
+      {
+        "month": "2024-10",
+        "count": 50
+      },
+      {
+        "month": "2024-11",
+        "count": 59
+      },
+      {
+        "month": "2024-12",
+        "count": 27
+      },
+      {
+        "month": "2025-01",
+        "count": 68
+      },
+      {
+        "month": "2025-02",
+        "count": 57
+      },
+      {
+        "month": "2025-03",
+        "count": 157
+      },
+      {
+        "month": "2025-04",
+        "count": 66
+      },
+      {
+        "month": "2025-05",
+        "count": 60
+      },
+      {
+        "month": "2025-06",
+        "count": 106
+      },
+      {
+        "month": "2025-07",
+        "count": 54
+      },
+      {
+        "month": "2025-08",
+        "count": 79
+      },
+      {
+        "month": "2025-09",
+        "count": 70
+      },
+      {
+        "month": "2025-10",
+        "count": 56
+      },
+      {
+        "month": "2025-11",
+        "count": 77
+      },
+      {
+        "month": "2025-12",
+        "count": 90
+      },
+      {
+        "month": "2026-01",
+        "count": 43
+      },
+      {
+        "month": "2026-02",
+        "count": 52
+      },
+      {
+        "month": "2026-03",
+        "count": 61
+      },
+      {
+        "month": "2026-04",
+        "count": 54
+      },
+      {
+        "month": "2026-05",
+        "count": 59
+      },
+      {
+        "month": "2026-06",
+        "count": 50
+      }
+    ],
+    "annual": [
+      {
+        "year": 2016,
+        "count": 227
+      },
+      {
+        "year": 2017,
+        "count": 281
+      },
+      {
+        "year": 2018,
+        "count": 353
+      },
+      {
+        "year": 2019,
+        "count": 365
+      },
+      {
+        "year": 2020,
+        "count": 441
+      },
+      {
+        "year": 2021,
+        "count": 587
+      },
+      {
+        "year": 2022,
+        "count": 986
+      },
+      {
+        "year": 2023,
+        "count": 1163
+      },
+      {
+        "year": 2024,
+        "count": 721
+      },
+      {
+        "year": 2025,
+        "count": 940
+      }
+    ],
+    "lastSettledMonth": "2026-04",
+    "ttm": 802,
+    "yoyPct": -18.2,
+    "decade": {
+      "from_year": 2016,
+      "to_year": 2025,
+      "from_value": 227,
+      "to_value": 940,
+      "multiple": 4.1,
+      "change_pct": 314.1,
+      "union_from": 227,
+      "union_to": 940,
+      "union_change_pct": 314.1
+    },
+    "seasonality": [
+      {
+        "monthNum": 1,
+        "monthName": "Jan",
+        "avgCount": 49.4,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 2,
+        "monthName": "Feb",
+        "avgCount": 52.5,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 3,
+        "monthName": "Mar",
+        "avgCount": 62.6,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 4,
+        "monthName": "Apr",
+        "avgCount": 45.5,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 5,
+        "monthName": "May",
+        "avgCount": 45.1,
+        "yearsOfData": 10
+      },
+      {
+        "monthNum": 6,
+        "monthName": "Jun",
+        "avgCount": 44.7,
+        "yearsOfData": 10
+      },
+      {
+        "monthNum": 7,
+        "monthName": "Jul",
+        "avgCount": 40.0,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 8,
+        "monthName": "Aug",
+        "avgCount": 60.0,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 9,
+        "monthName": "Sep",
+        "avgCount": 48.7,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 10,
+        "monthName": "Oct",
+        "avgCount": 45.2,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 11,
+        "monthName": "Nov",
+        "avgCount": 50.9,
+        "yearsOfData": 11
+      },
+      {
+        "monthNum": 12,
+        "monthName": "Dec",
+        "avgCount": 43.4,
+        "yearsOfData": 11
+      }
+    ],
+    "peakMonth": "2023-08",
+    "peakValue": 186,
+    "provisionalMonths": [
+      "2026-05",
+      "2026-06"
+    ],
+    "caveat": "Incorporation counts measure new corporate entities registering under SIC 47730 -- a new incorporation may be a group restructuring, a new entrant, or a holding company, and does not always correspond to a new pharmacy premises opening. Dissolution can lag actual trading closure by many months. This corporate layer is complementary to the NHSBSA contractor count above, not a substitute for it: the two have diverged sharply since 2016 (SIC 47730 annual incorporations up more than 4x while NHS dispensing-pharmacy numbers have fallen every year), which is itself part of the story -- corporate/holding-company formation around pharmacy groups and online-only operators continues even as the physical NHS network shrinks."
   },
   "networkContext": {
     "englandFocus": true,
-    "scotlandWalesNote": "Scotland dispensing data is published by Public Services Scotland (PSD); Wales by NHS Wales Shared Services Partnership (NWSSP). These devolved datasets are not included in v1 of this index. UK-wide comparison will be added in v2.",
-    "fundingContext": "England's community pharmacy network is funded primarily under the Community Pharmacy Contractual Framework (CPCF). The NHSBSA contractor count is the most granular public signal of network size: a contractor that disappears from the monthly dispensing register has either closed, surrendered its NHS contract, or merged into another pharmacy. The 1,382-contractor decline since March 2019 reflects the sustained funding and margin pressure that has driven trade press coverage of the 'pharmacy closures crisis'.",
-    "ownershipNote": "NHSBSA dispensing data does not distinguish independent pharmacies from multiples. The Companies House data, filtered to SIC 47730, captures the corporate layer but cannot cleanly separate independent single-site operators from holding companies and subsidiaries of multiples. Ownership-split analysis requires cross-referencing NHSBSA contractor names against CH group structures, which is the planned v2 enhancement."
+    "scotlandWalesNote": "Scotland dispensing data is published by Public Services Scotland (PSD); Wales by NHS Wales Shared Services Partnership (NWSSP). These devolved datasets are not included in v1 of this index.",
+    "fundingContext": "England's community pharmacy network is funded primarily under the Community Pharmacy Contractual Framework (CPCF). The NHSBSA Pharmacy Openings and Closures dataset is the most granular public signal of network size: a pharmacy that disappears from the monthly list has either closed, surrendered its NHS contract, or been absorbed into another site under new ownership. The Companies House formations data shows the corporate layer moving in the opposite direction -- a divergence that reflects consolidation, group restructuring, and online-only entrants rather than growth in the physical dispensing network.",
+    "ownershipNote": "The NHSBSA dataset's Small/Medium/Large owner-group segmentation is the cleanest public split between independents (Small, 1-5 premises) and multiples (Medium/Large). Since January 2021, Small-group pharmacies have grown from 4,024 to 5,075 while Large-group pharmacies have fallen from 5,220 to 3,153 -- independents are gaining share of a shrinking total as the big multiples close and rationalise estates faster than independents are exiting."
   }
 }

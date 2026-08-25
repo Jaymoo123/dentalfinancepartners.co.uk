@@ -23,7 +23,10 @@
     "crypto/web",
     "pharmacies/web",
     "startups-tech/web",
-    "ecommerce/web"
+    "ecommerce/web",
+    "ashfield/web",
+    "wills-probate/web",
+    "divorce-finances/web"
   ],
   "engines": {
     "node": ">=20"

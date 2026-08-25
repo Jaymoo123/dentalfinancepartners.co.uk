@@ -515,6 +515,81 @@ describe("dedupe extras merge (role_detail coherence)", () => {
   });
 });
 
+// ── 3c. Dedupe second pass (alias email / phone key) ─────────────────────────
+
+describe("dedupe second pass (alias email / phone key)", () => {
+  const ALIAS_ID = "existing-lead-alias-004";
+
+  /** Exact source+email eq lookup misses; candidate fetch returns `candidate`. */
+  function stubSecondPass(candidate: Record<string, unknown> | null) {
+    mockAdminSelect.mockReset();
+    mockAdminSelect
+      .mockResolvedValueOnce({ ok: true, status: 200, data: [] }) // exact eq miss
+      .mockResolvedValueOnce({ ok: true, status: 200, data: candidate ? [candidate] : [] })
+      .mockResolvedValue({ ok: true, status: 200, data: [] });
+  }
+
+  const CANDIDATE = {
+    id: ALIAS_ID,
+    full_name: "Ken D",
+    phone: "07700900123",
+    message: "Wizard enquiry about my portfolio",
+    status: "new",
+    extras: null,
+    email: "kendlc2026+ma@gmail.com",
+  };
+
+  it("merges when the stored email is a plus-alias of the submitted email (no second row)", async () => {
+    stubSecondPass(CANDIDATE);
+    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+    const res = await POST(
+      makeReq({ ...VALID_BODY, email: "kendlc2026@gmail.com", phone: "07911000111" }),
+    );
+    expect(res.status).toBe(200);
+    const leadInserts = mockAdminInsert.mock.calls.filter(([t]) => t === "leads");
+    expect(leadInserts).toHaveLength(0);
+    const updates = mockAdminUpdate.mock.calls.filter(([t]) => t === "leads");
+    expect(updates.length).toBeGreaterThanOrEqual(1);
+    const [, idFilter] = updates[0] as [string, Record<string, string>];
+    expect(idFilter.id).toBe(`eq.${ALIAS_ID}`);
+  });
+
+  it("merges on a matching phone key even when the email is entirely different", async () => {
+    stubSecondPass({ ...CANDIDATE, email: "someoneelse@other.com", phone: "+44 7700 900000" });
+    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+    await POST(makeReq({ ...VALID_BODY, phone: "07700900000" }));
+    const leadInserts = mockAdminInsert.mock.calls.filter(([t]) => t === "leads");
+    expect(leadInserts).toHaveLength(0);
+    const updates = mockAdminUpdate.mock.calls.filter(([t]) => t === "leads");
+    const [, idFilter] = updates[0] as [string, Record<string, string>];
+    expect(idFilter.id).toBe(`eq.${ALIAS_ID}`);
+  });
+
+  it("inserts a fresh lead when neither email key nor phone key matches", async () => {
+    stubSecondPass({ ...CANDIDATE, email: "other@elsewhere.com", phone: "07000000000" });
+    await POST(makeReq({ ...VALID_BODY, phone: "07700900000" }));
+    const leadInserts = mockAdminInsert.mock.calls.filter(([t]) => t === "leads");
+    expect(leadInserts).toHaveLength(1);
+    const updates = mockAdminUpdate.mock.calls.filter(([t]) => t === "leads");
+    expect(updates).toHaveLength(0);
+  });
+
+  it("does NOT enrol a merged lead even when armed (no second sequence)", async () => {
+    stubSecondPass(CANDIDATE);
+    mockAdminInsert.mockResolvedValue({ ok: true, status: 201, data: [] });
+    stubArmed(true);
+    stubSender();
+    stubNurtureInfra();
+    await POST(makeReq({ ...VALID_BODY, email: "kendlc2026@gmail.com" }));
+    const enrolInserts = mockAdminInsert.mock.calls.filter(
+      ([t]) => t === "lead_nurture_state",
+    );
+    expect(enrolInserts).toHaveLength(0);
+    expect(mockProcessLeadStep).not.toHaveBeenCalled();
+    expect(mockVerifyLead).toHaveBeenCalledOnce(); // verification still runs on merges
+  });
+});
+
 // ── 4. New lead insert + enrolment ────────────────────────────────────────────
 
 describe("new lead (no dedupe match)", () => {
@@ -704,6 +779,20 @@ describe("test source isolation (source='test')", () => {
       ([table]) => table === "leads",
     );
     expect(leadInserts).toHaveLength(1);
+    expect(mockVerifyLead).toHaveBeenCalledOnce();
+  });
+
+  it("skip_verification suppresses paid verification for a test lead", async () => {
+    stubSender();
+    await POST(makeReq({ ...VALID_BODY, source: "test", skip_verification: true }));
+    const leadInserts = mockAdminInsert.mock.calls.filter(([table]) => table === "leads");
+    expect(leadInserts).toHaveLength(1); // the lead still lands
+    expect(mockVerifyLead).not.toHaveBeenCalled(); // but Twilio/ZeroBounce are not billed
+  });
+
+  it("skip_verification is ignored on a real lead, so nothing can dodge verification", async () => {
+    stubSender();
+    await POST(makeReq({ ...VALID_BODY, email: "real@ashfieldtrading.com", skip_verification: true }));
     expect(mockVerifyLead).toHaveBeenCalledOnce();
   });
 

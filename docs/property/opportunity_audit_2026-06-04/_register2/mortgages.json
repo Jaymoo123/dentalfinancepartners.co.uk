@@ -1,0 +1,528 @@
+{
+  "categories": {
+    "mortgages_property_finance": {
+      "topics": [
+        {
+          "topic_title": "Is mortgage interest deductible for UK landlords (Section 24)",
+          "search_intent": "Landlords asking whether mortgage interest can be deducted from rental income and how the relief works",
+          "n_competitors": 30,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "mortgage interest relief", "imp": 18},
+            {"query": "mortgage interest on rental property", "imp": 14},
+            {"query": "tax relief on mortgage interest on rented property", "imp": 12},
+            {"query": "is mortgage interest deductible for uk landlords 2026", "imp": 9}
+          ],
+          "closest_our_page": "mortgage-interest-deductible-landlords-uk-2026.md",
+          "suggested_angle": "Core relief question; thoroughly covered across mortgage-interest-deductible-landlords-uk-2026, tax-relief-mortgage-interest-rented-property-guide, claim-mortgage-interest-rental-property-uk-section-24 and the full section-24 cluster. Samples skew US (standard deduction) but UK demand is huge.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Are mortgage arrangement / broker fees tax deductible for landlords",
+          "search_intent": "Landlords checking whether finance costs (arrangement fees, broker fees) are deductible or caught by Section 24",
+          "n_competitors": 0,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "is a mortgage broker fee deductible from buy to let rental income", "imp": 6},
+            {"query": "mortgage arrangement fee tax deductible hmrc", "imp": 6},
+            {"query": "mortgage arrangement fee tax deductible hmrc corporation tax", "imp": 6}
+          ],
+          "closest_our_page": "mortgage-arrangement-fees-deductible-landlord.md",
+          "suggested_angle": "Demand-query-driven (not a competitor core) but high-imp; already covered directly by mortgage-arrangement-fees-deductible-landlord.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "SPV / limited company buy-to-let mortgages",
+          "search_intent": "Investors researching Ltd-company / SPV BTL mortgages, eligibility, rates and tax interaction",
+          "n_competitors": 14,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "uk residential property held personally versus company tax guidance 2026 rental income mortgage interest", "imp": 15}
+          ],
+          "closest_our_page": "buy-to-let-limited-company-mortgage-options.md",
+          "suggested_angle": "Covered by buy-to-let-limited-company-mortgage-options and buy-to-let-limited-company-mortgage-rates-2026-market-guide (eligibility, SIC, personal guarantees, ICR, Section 24 interaction).",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Buy-to-let deposit / minimum LTV requirements",
+          "search_intent": "Landlords checking the minimum deposit / max LTV for a BTL mortgage",
+          "n_competitors": 62,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "deposit-buy-to-let-2026-mortgage-requirements.md",
+          "suggested_angle": "Samples are mostly residential FTB LTV tiers (1%-40%), but the landlord-relevant deposit question is covered by deposit-buy-to-let-2026-mortgage-requirements (rental coverage, stress testing). No additional tax angle to add.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Section 24 and remortgaging / equity release on a BTL",
+          "search_intent": "Landlords asking how remortgaging or releasing equity is treated for interest relief",
+          "n_competitors": 17,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "can i claim for finance costs of gaining a mortgage and re-mortgage costs that apply to the sale of a property", "imp": 6}
+          ],
+          "closest_our_page": "section-24-remortgaging-btl-property-tax-implications.md",
+          "suggested_angle": "The 'remortgage your property' core is generic letting/remortgage; the tax-relevant slice is covered by section-24-remortgaging-btl-property-tax-implications and buy-to-let-refinancing-when-does-it-make-sense.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Rising interest rates squeezing landlord profits / rental market",
+          "search_intent": "Landlords concerned about how rate rises hit BTL profitability and the rental market",
+          "n_competitors": 12,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "section-24-interest-only-mortgage-tax-planning.md",
+          "suggested_angle": "Mostly news/commentary; the durable tax-and-profitability angle is covered by the Section 24 cluster (interest-only, higher-rate, multiple-properties) and buy-to-let-refinancing. Not worth a dated news page.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Landlords struggling with / new BTL mortgage deals",
+          "search_intent": "Landlord BTL lending market news and affordability struggles",
+          "n_competitors": 38,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "buy-to-let-refinancing-when-does-it-make-sense.md",
+          "suggested_angle": "Lender/market PR; the evergreen affordability-and-tax core is covered by Section 24 affordability pages + refinancing. No net-new tax page warranted.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Two mortgages / mixed-use / second-property borrowing",
+          "search_intent": "Investors asking about multiple mortgages, second-property and mixed-use lending",
+          "n_competitors": 12,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "sdlt-buy-to-let-rates-surcharge-guide-2025.md",
+          "suggested_angle": "Tax-relevant slice (second property SDLT surcharge, mixed-use rates) covered by sdlt-buy-to-let-rates-surcharge-guide-2025 and how-to-scale-buy-to-let-portfolio. Pure lending mechanics off-mission.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "HMO mortgages for UK landlords",
+          "search_intent": "Landlords researching how HMO mortgages work, criteria and lending for multi-tenant property",
+          "n_competitors": 20,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "hmo-vs-standard-buy-to-let-tax-comparison.md",
+          "suggested_angle": "Net-new HMO-mortgage explainer with the tax angle: how HMO mortgage interest is restricted under Section 24 for individuals vs deductible in an SPV, ICR/stress differences for HMOs, and why HMO investors often hold in a company. Links to hmo-tax-guide and buy-to-let-limited-company-mortgage-options. Strong: high n, clear net-new, tax angle exists.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "Expat / non-resident UK buy-to-let mortgages",
+          "search_intent": "British expats and non-residents seeking a UK BTL mortgage and the tax that follows",
+          "n_competitors": 17,
+          "verdict": "net_new",
+          "closest_our_page": "non-resident-landlord-scheme-uk-complete-guide.md",
+          "demand": [],
+          "suggested_angle": "Net-new expat-BTL-mortgage piece bridging finance to tax: getting a UK BTL mortgage as a non-resident, then the Non-Resident Landlord Scheme withholding, Section 24 relief still applying, and self-assessment obligations. Ties NRL pages to a finance entry point. Strong: high n, distinct intent, deep tax hook.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "Self-employed / rental income evidence for a mortgage",
+          "search_intent": "Self-employed buyers and landlords asking how lenders assess income (net profit, SA302) for a mortgage",
+          "n_competitors": 16,
+          "verdict": "net_new",
+          "closest_our_page": "buy-to-let-limited-company-mortgage-rates-2026-market-guide.md",
+          "demand": [],
+          "suggested_angle": "Net-new piece on how lenders evidence self-employed/landlord income (SA302, tax year overviews, net vs gross profit, retained company profit) and the tax-return practicalities that flow from it. Natural cross-sell to accounts/SA filing. Moderate: solid n, genuine tax/accounting hook.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Renting out a home on a residential mortgage (consent to let)",
+          "search_intent": "Owners asking if they can let their house on a normal/residential mortgage and what changes",
+          "n_competitors": 13,
+          "verdict": "net_new",
+          "closest_our_page": "accidental-landlord-taxes-a-complete-guide.md",
+          "demand": [],
+          "suggested_angle": "Net-new consent-to-let explainer with the tax transition: consent to let vs switching to BTL, when rental income becomes taxable, accidental-landlord obligations (self-assessment, Section 24), and Airbnb/letting on a residential mortgage. Links accidental-landlord and airbnb-tax pages. Solid: clear net-new, strong tax bridge.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Gifted deposits and the tax angle (IHT / CGT)",
+          "search_intent": "Buyers and parents asking about gifted deposits for a mortgage and the tax implications of the gift",
+          "n_competitors": 13,
+          "verdict": "net_new",
+          "closest_our_page": "iht-lifetime-gifts-7-year-rule-property-taper.md",
+          "demand": [],
+          "suggested_angle": "Net-new gifted-deposit piece favouring the tax angle: gifted deposit letters and lender rules, then the IHT side (PET, 7-year rule, gift with reservation if parents retain benefit) and CGT where the gift is of property/equity rather than cash. Bridges mortgage intent to our IHT/gifting cluster. Solid: distinct intent, deep tax hook.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Can a first-time buyer get a buy-to-let mortgage",
+          "search_intent": "First-time buyers asking whether they can take a BTL mortgage and the restrictions",
+          "n_competitors": 11,
+          "verdict": "net_new",
+          "closest_our_page": "deposit-buy-to-let-2026-mortgage-requirements.md",
+          "demand": [],
+          "suggested_angle": "Net-new piece on FTB doing BTL: lender restrictions, and the tax angle that buying a BTL forfeits first-time-buyer SDLT relief and exposes the 5% additional-property surcharge, plus Section 24 on the rental income. Bridges to first-time-buyer-relief and sdlt-buy-to-let-surcharge pages. Moderate.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Mortgage interest rate predictions / are rates going down",
+          "search_intent": "Consumers asking whether mortgage interest rates will rise or fall",
+          "n_competitors": 109,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: rate-prediction/forecast commentary (and reverse-mortgage US content) with no durable property-tax angle; huge n but wrong intent for a tax brand.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "HMRC late-payment / repayment interest rate changes",
+          "search_intent": "Taxpayers tracking HMRC late-payment and repayment interest rate changes",
+          "n_competitors": 56,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped from this category: it is HMRC tax-admin interest (not property finance / mortgages). A tax topic but belongs to a compliance/penalties category, not mortgages.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Mortgage income multiples (5x-7x income)",
+          "search_intent": "Borrowers asking how many times income they can borrow",
+          "n_competitors": 18,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: pure residential affordability / income-multiple lending with no property-tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "US-style mortgage refinancing (30-year, cash-out, home equity)",
+          "search_intent": "US homeowners researching refinancing to a shorter term / cash-out",
+          "n_competitors": 38,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: US refinance content (30-year terms, home equity loans, college tuition). UK BTL refinancing is separately covered.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "VAT penalty and interest system changes",
+          "search_intent": "Businesses tracking the new VAT late-payment penalty/interest regime",
+          "n_competitors": 25,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: VAT compliance topic, not property finance/mortgages.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Interest rates and the real-estate / investment market",
+          "search_intent": "Investors on how rates affect real estate / multifamily investing",
+          "n_competitors": 18,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: US/generic real-estate-investing commentary; UK landlord rate impact is covered evergreen via Section 24 cluster.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Freehold / flying-freehold / multi-unit-freehold-block mortgages",
+          "search_intent": "Buyers asking whether/how to mortgage flying-freehold flats or MUFBs",
+          "n_competitors": 13,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: lender-niche conveyancing/lending topic; the only tax thread (MUFB SDLT/MDR) is too thin to anchor a page here.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Lender product transfers",
+          "search_intent": "Borrowers researching product-transfer deals with named lenders",
+          "n_competitors": 12,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: lender-specific product PR (Halifax/Santander/Nationwide), no tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Low-income / bad-credit mortgages",
+          "search_intent": "Borrowers seeking a mortgage on low income or poor credit",
+          "n_competitors": 14,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: generic affordability/credit lending, no property-tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Mortgages for overseas property / buying abroad",
+          "search_intent": "Buyers seeking mortgages to buy property abroad / on foreign income",
+          "n_competitors": 14,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: foreign (overseas) property purchase finance, off-mission for a UK property-tax brand.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Bonus / commission income for mortgages",
+          "search_intent": "Borrowers asking if bonus/overtime/commission income counts for a mortgage",
+          "n_competitors": 10,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: residential affordability / income-type lending, no property-tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Refinance mortgage calculators",
+          "search_intent": "Users looking for refinance cost/payment calculators",
+          "n_competitors": 10,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: US-style refinance calculators, no UK property-tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Porting / transferring a mortgage to another property or person",
+          "search_intent": "Borrowers asking if they can port a mortgage or transfer it to someone else",
+          "n_competitors": 11,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: mostly porting mechanics; the transfer-of-equity tax slice (SDLT/CGT) is already served by our incorporation/transfer pages and too thin to anchor here.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Retirement interest-only (RIO) mortgages",
+          "search_intent": "Older borrowers researching RIO / later-life lending",
+          "n_competitors": 6,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: consumer later-life lending product; estate-planning/IHT thread too weak to justify a page in a landlord-tax brand.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Income needed for a £Xk mortgage / salary multiples",
+          "search_intent": "Borrowers asking what income is needed for a given mortgage size",
+          "n_competitors": 6,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: residential affordability sizing, no tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "What a Bank of England rate decision means for your mortgage",
+          "search_intent": "Consumers reacting to BoE base-rate decisions",
+          "n_competitors": 7,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: dated rate-decision news/commentary, no durable tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Remortgage with part-time / variable income",
+          "search_intent": "Borrowers asking how part-time, bonus or lodger income affects a remortgage",
+          "n_competitors": 6,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: income-type remortgage affordability, no property-tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "How much of monthly income should go to your mortgage",
+          "search_intent": "Consumers asking the ideal income-to-mortgage ratio",
+          "n_competitors": 8,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: personal-budgeting ratio, no tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Fixed deposit / savings interest rates",
+          "search_intent": "Savers comparing fixed-deposit interest rates (largely India/overseas)",
+          "n_competitors": 10,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: savings-product interest (FD, senior citizens, Angola/Kenya/Tanzania); not property finance.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Future value / simple-interest deposit maths",
+          "search_intent": "Students solving compound/simple-interest deposit problems",
+          "n_competitors": 8,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: textbook maths problems (rupee/crore examples), pure noise.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Scottish Mortgage investment trust / Elliott stake",
+          "search_intent": "Investors researching the Scottish Mortgage Investment Trust",
+          "n_competitors": 9,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: investment trust equity news, nothing to do with property mortgages despite the name.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "BTL mortgage market PR (cheaper than 3 years ago / market shrinks)",
+          "search_intent": "Readers of BTL lending market news",
+          "n_competitors": 8,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: dated lender/market PR, no evergreen tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Bank profits and mortgage competition (Lloyds/Barclays)",
+          "search_intent": "Readers of bank earnings news",
+          "n_competitors": 6,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: bank earnings PR, off-mission.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Savills priced-out / BTL lender rate-cut news",
+          "search_intent": "Readers of BTL lender rate-change and sentiment news",
+          "n_competitors": 11,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: BTL lender rate-change PR; evergreen landlord profitability is covered by Section 24 cluster.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "The Mortgage Works cuts BTL rates (lender PR, two cores)",
+          "search_intent": "Readers of named-lender BTL rate-cut announcements",
+          "n_competitors": 4,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: two near-identical lender-PR cores (TMW/CHL/Precise rate cuts), no tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Casino bank-transfer deposit spam",
+          "search_intent": "Casino/gambling deposit-bonus pages",
+          "n_competitors": 3,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: gambling spam, pure noise.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Mortgage broker / company directory listings",
+          "search_intent": "Brand/company name listings for mortgage firms",
+          "n_competitors": 3,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: broker-directory '...mortgages-ltd' name listings, no content intent.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "UK property and mortgage case-study series (broker)",
+          "search_intent": "Broker case-study series for large/complex mortgages",
+          "n_competitors": 2,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: paginated broker case-study series (£7m Chelsea etc.), lead-gen PR not tax content.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "Mortgage rates dip - what London landlords need to know (PR)",
+          "search_intent": "Readers of London-landlord rate-change news",
+          "n_competitors": 2,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: templated lender rate-change PR for London landlords, no durable tax angle.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "US mortgage company directory (city pages)",
+          "search_intent": "US users finding mortgage companies by city",
+          "n_competitors": 2,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: US city directory ('mortgage-companies-in-akron-oh'), off-geo.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "US CRE dealmaker financings (Northmarq/Meridian)",
+          "search_intent": "US commercial-real-estate financing news",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: US commercial real-estate deal news, off-mission.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "OFW / Philippines home-loan refinance",
+          "search_intent": "Overseas Filipino workers refinancing home loans",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: Philippines/OFW home-loan content, off-geo.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "US mortgage litigation case names",
+          "search_intent": "Legal-record lookups for US mortgage corporation lawsuits",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: three cores of US court-case docket names (Freedom/PHH/AmeriHome/Federal Home Loan), pure noise.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "BGC / Antipolo / Philippines property refinance",
+          "search_intent": "Philippines property refinance landing pages",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: three cores of Philippines property-refinance spam (Verve/Antipolo/variable-income PH), off-geo.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "deposit-*.htm / deposit-company spam templates",
+          "search_intent": "Auto-generated template filename pages",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: two cores of templated .htm filename spam (deposit-lease, deposit-company-paper), pure noise.",
+          "priority": "n/a"
+        },
+        {
+          "topic_title": "What mortgage can I get with £Xk income (salary multiples)",
+          "search_intent": "Borrowers checking borrowing power by salary band",
+          "n_competitors": 1,
+          "verdict": "off_mission_dropped",
+          "closest_our_page": null,
+          "demand": [],
+          "suggested_angle": "Dropped: residential salary-band affordability listing, no tax angle.",
+          "priority": "n/a"
+        }
+      ],
+      "counts": {
+        "net_new": 6,
+        "expand": 0,
+        "already_covered": 7,
+        "off_mission_dropped": 44,
+        "_note": "57 input cores: 6 net-new + 7 already-covered + 44 off-mission/noise dropped. The 'mortgage arrangement fees' already-covered row is demand-query-driven (n_competitors=0), not one of the 57 cores, so it is excluded from these core counts. Several drop rows merge near-identical cores (e.g. US litigation x3, Philippines refinance x3, .htm spam x2, 'TMW cuts BTL rates' x2)."
+      }
+    }
+  }
+}

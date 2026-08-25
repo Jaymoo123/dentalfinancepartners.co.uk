@@ -25,8 +25,8 @@
  *
  * Chip: "Book a free call" -> /contact (no /book path on Dentists).
  * Widget capture: email + message via email_only captureMode through submitDentistLead.
- * Consent: uses siteConfig.leadConsentText (the Reflex-aware line; the widget
- *   IS an enquiry, so this is correct).
+ * Consent: uses siteConfig.leadConsentText (the partner-network-aware line;
+ *   the widget IS an enquiry, so this is correct).
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -320,7 +320,7 @@ export function SpecialistWidget() {
     ft.onSubmit(2);
     setStatus("loading");
     const topicTag = topic ? ` (${topic.key})` : "";
-    // The widget IS an enquiry, so the Reflex-aware leadConsentText is correct here.
+    // The widget IS an enquiry, so the partner-network-aware leadConsentText is correct here.
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
     const payload = {
       full_name: "",

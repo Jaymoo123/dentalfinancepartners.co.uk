@@ -129,7 +129,7 @@ faqs:
 
 <p>If your agency is medium or large under the off-payroll working rules, you must issue a Status Determination Statement to the copywriter before they start work. The SDS must explain your reasoning and include the client's view if the copywriter is working on a client project.</p>
 
-<p>Most agencies serving the UK market are medium or large. The threshold is two of the following: turnover over £10.2 million, balance sheet over £5.1 million, or more than 50 employees. If you are below that, the copywriter is responsible for their own IR35 status. But the client may still be medium or large, and the rules can cascade down the chain.</p>
+<p>Most agencies serving the UK market are medium or large. The threshold is two of the following: turnover over £15 million, balance sheet over £7.5 million, or more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2 million and £5.1 million). Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest. If you are below that, the copywriter is responsible for their own IR35 status. But the client may still be medium or large, and the rules can cascade down the chain.</p>
 
 <p>Check with your accountant before every new contractor engagement. Do not assume you are small enough to avoid the rules.</p>
 

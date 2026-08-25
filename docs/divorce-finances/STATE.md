@@ -1,0 +1,59 @@
+# divorce-finances (placeholder brand) site state
+
+Last updated 2026-08-04 (waves 1-4 written, content COMPLETE; Phase 6 = deploy plumbing remaining).
+
+brand_locked: true
+
+Real brand and domain deferred to owner gate G1; all content bodies must stay
+brand-agnostic (zero brand-name mentions) until then. Phases 0-5 complete on
+`expansion/phase-0`: scaffold, staging integrated, fact-verify done, engine
+registration, 5 calculators + 2 research assets + 4 pillars + 3 commercial
+hubs. Phase 6 approved by owner 2026-07-28.
+
+## 2026-08-25 — Port-branch merge: 22 commits now in main, site not deployed
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **22 commits** were on
+the branch and not in `origin/main`; they are now in main.
+
+This site has **no Vercel project** (verified 2026-08-25 by enumerating
+`GET /v9/projects`: no project has rootDirectory `divorce-finances/web`), so nothing is
+deployed and nothing ships. The commits land at whatever deploy G1 eventually triggers.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'divorce-finances/'`.
+
+## Identity
+
+- site_key `divorce-finances` | placeholder display name **TBD** | placeholder domain `www.placeholder-divorce-domain.example`
+- IndexNow key registered in `optimisation_engine/indexing/config.py` (`4d2abeb261e1ca7875c6f16ee1257ac4`); public `<key>.txt` file NOT yet created (created at G1 rename, per the real domain)
+- Real brand + domain: TBD at owner gate G1
+
+## Content state (2026-08-03)
+
+- Wave 1: 8 spokes, committed (Phase 5)
+- Wave 2: 4 spokes, committed `3c0b8f99` (earlier "5 wave-2 spokes UNTRACKED" note is stale; resolved as 4 committed)
+- Wave 3: 16 spokes, committed `e35d6d11`
+- Table backfill on the 12 legacy (wave 1 + 2) posts: DONE
+- Wave 4: 13 spokes written 2026-08-04 (joint debts, mortgage-during-separation, stay-at-home parent, litigant in person, settlement examples, checklist, adultery, inheritance, legal aid, Scotland, expert costs, money after divorce, financial abuse). Content build COMPLETE; no wave 5 planned.
+- Live blog corpus: 45 posts in `divorce-finances/web/content/blog/` (4 pillars + 41 spokes)
+- `optimisation_engine/blog_generator/site_configs/divorce_finances.py` `_INTERNAL_LINK_SLUGS` refreshed 2026-08-04 (45 posts + 3 hubs)
+
+## Phase 6 remaining
+
+Full owner runbook: `docs/divorce-finances/PHASE6_G1_RUNBOOK_2026-08-04.md`
+(mirrors `docs/wills-probate/PHASE6_G1_RUNBOOK_2026-08-04.md`). All items
+below verified code-ready 2026-08-04; nothing executed yet.
+
+- [ ] Supabase migration APPLY (owner / SQL editor) — file exists:
+      `supabase/migrations/20260803000002_add_divorce_finances_to_leads_and_sites.sql`
+- [ ] Vercel project (Root Directory `divorce-finances/web`, org
+      `team_XF9WAygZX7SGk9Fo4tOAnihH`)
+- [ ] Test-lead cycle end to end
+- [ ] G1: real brand + domain decision (shortlist ready, see below),
+      MoneyHelper/FMCA external-link allowlist call, metadata swap, deploy
+
+## Notes
+
+- Jurisdiction default: England and Wales; state explicitly where Scotland differs.
+- Prohibited-topics / hallucination-zone discipline enforced via
+  `divorce_finances.py` site_config (mirrors the wills-probate build).

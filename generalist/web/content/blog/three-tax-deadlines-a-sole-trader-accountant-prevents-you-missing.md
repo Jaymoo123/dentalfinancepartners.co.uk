@@ -24,7 +24,7 @@ faqs:
   - question: "Do I have to make payments on account if my tax bill is under £1,000?"
     answer: "No. Payments on account only apply if your tax bill (after tax deducted at source) is more than £1,000. If your bill is under that threshold, you pay the full amount by 31 January and no July payment is needed. A sole trader accountant calculates this for you each year."
   - question: "What happens if I miss the 31 July payment on account?"
-    answer: "HMRC charges late payment interest from 31 July at the Bank of England base rate plus 2.5%. If the amount remains unpaid after 30 days, a 5% surcharge applies, with further 5% surcharges at six and twelve months. A sole trader accountant reminds you of the July payment when they prepare your January return."
+    answer: "HMRC charges late payment interest from 31 July at the Bank of England base rate plus 4 percentage points (currently 7.75%). Payments on account attract interest only; the 5% late payment penalties (at 30 days, six months and twelve months) apply to the balancing payment, not to payments on account. A sole trader accountant reminds you of the July payment when they prepare your January return."
   - question: "Can I register for self assessment after the 5 October deadline?"
     answer: "Yes, but you may face a late registration penalty of £100. More importantly, you cannot file a return until you are registered, and HMRC may issue a determination of your tax based on their estimate. A sole trader accountant registers you within days of you starting self employment, so the 5 October deadline never becomes an issue."
 keyTakeaways:
@@ -66,7 +66,7 @@ keyTakeaways:
 
 <p>Here is a concrete example. You are a plumber in Manchester's Northern Quarter. Your 2024/25 tax bill is £9,600. HMRC calculates your payments on account for 2025/26 as two payments of £4,800 each. The first £4,800 is due by 31 January 2026 alongside any balancing payment for 2024/25. The second £4,800 is due by 31 July 2026.</p>
 
-<p>Miss the 31 July payment and HMRC charges late payment interest from that date. At 7.0%, £4,800 for three months costs about £84 in interest. A 5% surcharge also applies on any amount still unpaid after 30 days, with further 5% surcharges at six and twelve months.</p>
+<p>Miss the 31 July payment and HMRC charges late payment interest from that date. At 7.75%, £4,800 for three months costs about £93 in interest. Payments on account attract interest only; the 5% late payment penalties (after 30 days, then at six and twelve months) bite on a late balancing payment, not on a late payment on account.</p>
 
 <p>Most sole traders do not budget for payments on account. They see the 31 January bill, pay it, and forget about July. A <strong>sole trader accountant</strong> flags the July payment at the same time as the January one. We send reminders. We help you set aside the money monthly so the July payment is not a surprise. If your income has dropped significantly, we can apply to reduce your payments on account using form SA303. But that needs to be done before the deadline, not after.</p>
 

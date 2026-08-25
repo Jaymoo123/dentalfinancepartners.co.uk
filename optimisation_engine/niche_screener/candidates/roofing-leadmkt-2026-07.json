@@ -1,0 +1,132 @@
+{
+  "candidate_id": "roofing-leadmkt-2026-07",
+  "vertical": "roofing",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://leads.work/leads/roofing.html",
+      "excerpt": "Get quality roofing job leads for pitched and flat roofs. Pay-per-lead or weekly subscription options. Verified customer enquiries across the UK.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/roofing-lead-generation/",
+      "excerpt": "If you are a roofer, looking to generate more unique enquiries, you can buy leads from us! You should only buy leads from a reputable lead generation company ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/roof-repairs",
+      "excerpt": "Get exclusive roof repair leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.geordieleads.co.uk/roofing-leads.html",
+      "excerpt": "Buy fresh roofing leads for commercial and residential properties across the UK. Call 07894 282 889 to discuss volumes, pricing, and coverage areas. Contact ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://sales-fuel.co.uk/lead-generation/product/home-improvements/roofing-leads/",
+      "excerpt": "View how many roofing leads you convert and how much they cost per lead and per sale for full insights into your roofing lead ROI. alt=\"\". No Contracts. Just ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/Roofing/comments/11rwgto/how_much_should_i_get_paid_for_a_lead/",
+      "excerpt": "Recommended payment for roofing leads. Clear search. Ask. Recommended ... For Google Ad campaigns we see the cost per lead a lot lower ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://roofflowai.co.uk/roofing-lead-generation.html",
+      "excerpt": "Checkatrade, MyBuilder, Rated People — real cost-per-lead breakdown. ... How a speed-to-lead system qualifies roofing leads 24/7. The Speed-to-Lead ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://bullseyeinternet.com/roofing-pay-per-lead-101/",
+      "excerpt": "4 Feb 2026 — Are exclusive roofing leads worth the extra cost? Yes, for most roofing businesses, exclusive leads are worth the higher cost ($30-$185 vs. $15 ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ukroofingleads.com/pages/blog/pay-per-lead-vs-monthly-retainer-roofers.html",
+      "excerpt": "22 Apr 2026 — ... cost per won job is much higher than the headline price per lead. ... How long does it take for a monthly retainer to generate roofing leads? Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://roofr.com/blog/how-to-generate-more-roofing-leads",
+      "excerpt": "Roofing leads typically cost $15–$300 depending on the source — Google Ads leads average $50–$150, while lead services like Angi can reach $200–$300 per lead. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/roofing-leads/",
+      "excerpt": "Pay-Per-Lead Model Instantly fill your sales pipeline with a predictable flow of verified, high-intent opportunities.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/RoofingSales/comments/1idpxmp/lead_generation_tools_worth/",
+      "excerpt": "Helping my company with building business.\n\nI canvassed a bit but due to circumstances I can’t physically knock or run inspections/appointments anymore. ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://activeprospect.com/blog/buy-roofing-leads/",
+      "excerpt": "2 Apr 2026 — Pay-per-lead models typically range from $30 to $100+, while exclusive leads or live calls can cost more but often convert better.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "buy roofing leads: the 5 best lead providers",
+    "exclusive roofing lead generation uk | roofflow",
+    "exclusive roofing leads for uk contractors",
+    "how much should i get paid for a lead? : r/roofing",
+    "how to generate more roofing leads in 2026: 15+ proven ...",
+    "lead generation tools worth? : r/roofingsales",
+    "pay per lead vs monthly retainer: what works better for ...",
+    "roof repairs lead generation",
+    "roofing",
+    "roofing job leads | verified work for roof repairs & ...",
+    "roofing lead generation",
+    "roofing leads",
+    "roofing pay per lead 101"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK roofing providers already paying per lead",
+    "proof": "12 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

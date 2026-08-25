@@ -9,12 +9,12 @@ metaDescription: "When a UK charity needs an independent examination instead of 
 h1: "What is an independent examination of charity accounts?"
 summary: "An independent examination is the lighter-touch external scrutiny option for smaller UK charities, sitting below a full statutory audit."
 ---
-<p>An independent examination is the external scrutiny option available to most smaller UK charities. It sits below a full statutory audit in depth and cost, and is the route the majority of registered charities with gross income between £25,000 and £1 million take each year. Charities below £25,000 gross income need no external scrutiny; charities above £1 million (or above £250,000 with gross assets over £3.26 million) require a statutory audit instead. For everything in between, an independent examination applies.</p>
+<p>An independent examination is the external scrutiny option available to most smaller UK charities. It sits below a full statutory audit in depth and cost, and is the route the majority of registered charities with gross income between £25,000 and £1 million take each year. For financial years ending before 30 September 2026: charities below £25,000 gross income need no external scrutiny; charities above £1 million (or above £250,000 with gross assets over £3.26 million) require a statutory audit instead. For everything in between, an independent examination applies. For financial years ending on or after 30 September 2026 the gates rise: no scrutiny up to £40,000, audit above £1.5 million (or above £500,000 with gross assets over £5 million).</p>
 
 <table>
   <thead>
     <tr>
-      <th>Gross income (England and Wales)</th>
+      <th>Gross income (England and Wales, financial years ending before 30 Sep 2026)</th>
       <th>Required scrutiny</th>
     </tr>
   </thead>
@@ -39,6 +39,6 @@ summary: "An independent examination is the lighter-touch external scrutiny opti
 </table>
 
 <h2>When is an independent examination enough?</h2>
-<p>Broadly, a registered charity in England and Wales needs some form of external scrutiny once gross income passes £25,000. A full audit is only required once gross income exceeds £1 million, or where income exceeds £250,000 and gross assets exceed £3.26 million, or where the governing document demands one.</p>
+<p>Broadly, a registered charity in England and Wales needs some form of external scrutiny once gross income passes £25,000 (£40,000 for financial years ending on or after 30 September 2026). A full audit is only required once gross income exceeds £1 million, or where income exceeds £250,000 and gross assets exceed £3.26 million (£1.5 million, £500,000 and £5 million for years ending on or after that date), or where the governing document demands one.</p>
 <h2>What does the examiner check?</h2>
 <p>The examiner reviews the accounting records and the accounts, and confirms whether anything suggests the accounts have not been prepared properly. It is a review, not the evidence-gathering exercise an audit is.</p>

@@ -357,13 +357,15 @@ describe("calcTakeHomePay", () => {
     expect(out.incomeTax).toBe(0);
   });
 
-  it("plan2 student loan threshold is 28470 (2025/26 SLC value)", () => {
-    // Threshold 28470 — 2025/26 SLC value
-    const below = calcTakeHomePay({ salary: 28470, pensionPercent: 0, plan: "plan2" });
+  it("plan2 student loan threshold is 29385 (2026/27 value, not stale 28470)", () => {
+    const below = calcTakeHomePay({ salary: 29385, pensionPercent: 0, plan: "plan2" });
     expect(below.studentLoan).toBeCloseTo(0, 0);
-    const above = calcTakeHomePay({ salary: 38470, pensionPercent: 0, plan: "plan2" });
-    // 38470 - 28470 = 10000 * 0.09 = 900
+    const above = calcTakeHomePay({ salary: 39385, pensionPercent: 0, plan: "plan2" });
+    // 39385 - 29385 = 10000 * 0.09 = 900
     expect(above.studentLoan).toBeCloseTo(900, 0);
+    // the stale 28470 threshold would have charged 9% on an extra 915
+    const atOldThreshold = calcTakeHomePay({ salary: 28470, pensionPercent: 0, plan: "plan2" });
+    expect(atOldThreshold.studentLoan).toBe(0);
   });
 
   it("salary=0: all zeroes", () => {

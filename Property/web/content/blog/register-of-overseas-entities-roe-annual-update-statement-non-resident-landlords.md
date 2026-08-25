@@ -8,7 +8,7 @@ category: "Non-Resident Landlord Tax"
 metaTitle: "Register of Overseas Entities Annual Update Statement Guide"
 metaDescription: "ECTEA 2022 s.7 14-day update window, the LRA 2002 Sch 4A HMLR disposition block, dual civil and criminal penalty regimes, for offshore landlord corporates."
 altText: "Modern city skyline of London with prime tall buildings under cloudy blue sky, representing the UK property estate held by overseas-incorporated landlord companies subject to the Register of Overseas Entities annual update statement obligation"
-image: "https://images.pexels.com/photos/7245374/pexels-photo-7245374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/7245374/pexels-photo-7245374.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Olga Lioncat"
   photographer_url: "https://www.pexels.com/@olgalioncat"

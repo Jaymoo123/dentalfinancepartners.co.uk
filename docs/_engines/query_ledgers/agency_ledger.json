@@ -1,0 +1,3000 @@
+{
+  "metadata": {
+    "site_key": "agency",
+    "generated": "2026-07-17",
+    "gsc_max_date": "2026-07-15",
+    "gsc_lag_days": 2,
+    "pages": 40,
+    "action_counts": {
+      "healthy": 9,
+      "expand": 1,
+      "ambiguous": 30
+    },
+    "sampling_loss_pct": 37.4,
+    "expected_ctr_curve": {
+      "1": {
+        "expected_ctr": 0.00464,
+        "impressions": 359,
+        "interpolated": true
+      },
+      "2": {
+        "expected_ctr": 0.00464,
+        "impressions": 267,
+        "interpolated": true
+      },
+      "3": {
+        "expected_ctr": 0.00464,
+        "impressions": 646,
+        "interpolated": false
+      },
+      "4": {
+        "expected_ctr": 0.00429,
+        "impressions": 699,
+        "interpolated": false
+      },
+      "5": {
+        "expected_ctr": 0.00429,
+        "impressions": 963,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "6": {
+        "expected_ctr": 0.00094,
+        "impressions": 1060,
+        "interpolated": false
+      },
+      "7": {
+        "expected_ctr": 0.00094,
+        "impressions": 1016,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "8": {
+        "expected_ctr": 0.00066,
+        "impressions": 1506,
+        "interpolated": false
+      },
+      "9": {
+        "expected_ctr": 0.00066,
+        "impressions": 1663,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "10": {
+        "expected_ctr": 0.00066,
+        "impressions": 645,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "11-15": {
+        "expected_ctr": 0.00051,
+        "impressions": 1976,
+        "interpolated": false
+      },
+      "16-20": {
+        "expected_ctr": 0.0,
+        "impressions": 2652,
+        "interpolated": false
+      },
+      "21+": {
+        "expected_ctr": 0.0,
+        "impressions": 33508,
+        "interpolated": false,
+        "monotonic_clipped": true
+      }
+    },
+    "gap_wave_slugs": [],
+    "notes": [
+      "meta batch-2 hold source = optimisation_changes title_meta_rewrite rows shipped 2026-07-05..2026-07-12 (batch 2 = solicitors 19 / generalist 12 / dentists 10 per SERP_META_PROGRAM.md; property had no batch-2 pages).",
+      "property miniform hold covers conversion-surface routes ('/calculators', '/tools', '/resources', '/thank-you', '/contact') while the deploy_watch miniform gates are pending."
+    ]
+  },
+  "pages": [
+    {
+      "page": "https://agencyfounderfinance.co.uk/agencies/pr-agencies",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/agencies/pr-agencies"
+      ],
+      "impressions_90d": 525,
+      "clicks_90d": 0,
+      "weighted_position_90d": 31.97,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.179,
+      "top_queries": [
+        {
+          "query": "accountants for pr agencies",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 21,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 77,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 235,
+            "clicks": 0,
+            "position": 27.51
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "pr agency for accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 14,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 57,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 166,
+            "clicks": 0,
+            "position": 39.49
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accounting for pr agencies",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 26,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 81,
+            "clicks": 0,
+            "position": 24.4
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountancy pr agency",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 20,
+            "clicks": 0,
+            "position": 44.11
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "pr agency accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 37.53
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "pr accounting",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 37.64
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountancy firm pr",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 78.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-17"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-2024-25",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-2024-25"
+      ],
+      "impressions_90d": 340,
+      "clicks_90d": 0,
+      "weighted_position_90d": 65.08,
+      "band_mix": {
+        "2": 0.003,
+        "7": 0.032,
+        "21+": 0.965
+      },
+      "trajectory": "improving",
+      "trajectory_delta_pct": -0.116,
+      "top_queries": [
+        {
+          "query": "annual investment allowance",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 18,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 28,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 82,
+            "clicks": 0,
+            "position": 62.88
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "annual investment allowance calculator",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 19,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 53,
+            "clicks": 0,
+            "position": 51.34
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "investment allowance",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 27,
+            "clicks": 0,
+            "position": 84.44
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "aia allowance",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 11,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 25,
+            "clicks": 0,
+            "position": 67.62
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is annual investment allowance",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 17,
+            "clicks": 0,
+            "position": 79.27
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "annual investment allowance uk",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 17,
+            "clicks": 0,
+            "position": 61.82
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "annual investment account investment allowance",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 84.15
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is the annual investment allowance",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 12,
+            "clicks": 0,
+            "position": 63.3
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "annual investment allowance 2024/25",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 7.45
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        },
+        {
+          "query": "annual investment allowance 2025",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 77.51
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-20"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/glossary/cis",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/glossary/cis"
+      ],
+      "impressions_90d": 246,
+      "clicks_90d": 0,
+      "weighted_position_90d": 73.19,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 138,
+            "clicks": 0,
+            "position": 70.3
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 80.06
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 94.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 85.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis construction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 66.17
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis worker",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 83.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis contracts",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 69.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis registered meaning",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 81.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis contractors",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 77.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis deemed contractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 51.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-17"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/glossary/vat-threshold",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/glossary/vat-threshold"
+      ],
+      "impressions_90d": 159,
+      "clicks_90d": 0,
+      "weighted_position_90d": 76.49,
+      "band_mix": {
+        "11-15": 0.006,
+        "16-20": 0.006,
+        "21+": 0.987
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "self employed vat threshold",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 17,
+            "clicks": 0,
+            "position": 78.83
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat threshold",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 88.99
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much do you have to earn to be vat registered",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 72.84
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much to be vat registered",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 64.05
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat threshold uk",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 7,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 78.7
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how much do you need to earn to be vat registered",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 69.72
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat registration limit",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 96.89
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat registration threshold",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 59.3
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "ltd company vat threshold",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 74.65
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat registration amount uk",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 96.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "expand",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand"
+      ],
+      "first_seen": "2026-05-17"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/hiring-remote-employee-spain-uk-agency-tax-compliance",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/hiring-remote-employee-spain-uk-agency-tax-compliance"
+      ],
+      "impressions_90d": 122,
+      "clicks_90d": 1,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-19"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-registration-threshold-small-agency-founder",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-registration-threshold-small-agency-founder"
+      ],
+      "impressions_90d": 54,
+      "clicks_90d": 0,
+      "weighted_position_90d": 75.03,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "uae corporate tax 0% up to aed 375,000",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 15,
+            "clicks": 0,
+            "position": 74.46
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "uae corporate tax 9% above aed 375,000",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 15,
+            "clicks": 0,
+            "position": 70.27
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "uae corporate tax threshold aed 375,000",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 90.54
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "aed 3 million threshold uae",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 44.2
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "corporate tax uae turnover limit",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 61.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "corporate tax threshold",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 93.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is the threshold for corporate tax in uae",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 89.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "threshold for corporate tax in uae",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 87.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-17"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/"
+      ],
+      "impressions_90d": 49,
+      "clicks_90d": 0,
+      "weighted_position_90d": 55.78,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "dormant",
+      "trajectory_delta_pct": -0.323,
+      "top_queries": [
+        {
+          "query": "agency accounting",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 18,
+            "clicks": 0,
+            "position": 75.07
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "agency for finance",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 11,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 17,
+            "clicks": 0,
+            "position": 41.71
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "agency finance",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 39.89
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "agency financial",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 72.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "agency fund accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 76.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "financial advisor marketing agencyfinance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 22.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/aia-capital-allowance-agency-equipment",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/aia-capital-allowance-agency-equipment"
+      ],
+      "impressions_90d": 49,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-25"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-software-xero-agency-reporting",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-software-xero-agency-reporting"
+      ],
+      "impressions_90d": 36,
+      "clicks_90d": 0,
+      "weighted_position_90d": 53.54,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.333,
+      "top_queries": [
+        {
+          "query": "xero mtd",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 53.79
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "mtd xero",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 57.27
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "is xero mtd ready",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 59.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "xero mtd software",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 27.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "xero mtd for income tax",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 46.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "xero mtd itsa",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 55.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "xero mtd for it",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 50.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/agencies/creative-agencies",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/agencies/creative-agencies"
+      ],
+      "impressions_90d": 27,
+      "clicks_90d": 0,
+      "weighted_position_90d": 63.95,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "accountants for creative agencies",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 58.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "creative agency accountants",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 65.17
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "advisors & accountants for creative agencies london",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 79.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountants for creative agencies london",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 62.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "advisors & accountants for creative agencies",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 82.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/glossary/aia",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/glossary/aia"
+      ],
+      "impressions_90d": 24,
+      "clicks_90d": 0,
+      "weighted_position_90d": 66.93,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "aia allowance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 81.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "aia tax",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 75.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "aia",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 61.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "aia meaning",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 48.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "annual investment allowance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 85.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "definition of aia",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 55.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "meaning of aia",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 40.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "aia limits",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 77.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is the annual investment allowance",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 90.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is aia",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 79.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-17"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/making-tax-digital/chart-of-accounts-mtd-itsa-agency",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/making-tax-digital/chart-of-accounts-mtd-itsa-agency"
+      ],
+      "impressions_90d": 20,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [
+        {
+          "query": "mtd income mapping codes in quickbooks",
+          "impressions": 2,
+          "clicks": 1,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "setup mtd itsa in quickbooks",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "quickbooks hmrc agency settings mtd",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "xero how to map codes for mtd itsa",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "mtd nominal code mapping in quickbooks",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "set up quckbooks itsa",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-29"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"
+      ],
+      "impressions_90d": 19,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [
+        {
+          "query": "hmrc taxation of founders on sale",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 10.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "earn out income capital hmrc",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "earn out hmrc",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "is badr available on the value of an earn out",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "hmrc guidance on earn out",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "hmrc founders pay during sale scrutiny",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "earn outs + hmrc manuals",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "doe earn outs from a business sale count towards uk relevant earnings",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "badr and earn outs",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 9.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "hmrc earn out rules",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-29"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/what-counts-as-a-uk-day-statutory-residence-test-agency-founders"
+      ],
+      "impressions_90d": 19,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-26"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-agency-uae-corporate-tax-return-loss",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-agency-uae-corporate-tax-return-loss"
+      ],
+      "impressions_90d": 15,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-19"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-rate-small-business-relief-agency-founders",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-rate-small-business-relief-agency-founders"
+      ],
+      "impressions_90d": 12,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-28"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/making-tax-digital/missed-mtd-filing-deadline-penalties-appeals-mitigation",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/missed-mtd-filing-deadline-penalties-appeals-mitigation"
+      ],
+      "impressions_90d": 11,
+      "clicks_90d": 0,
+      "weighted_position_90d": 83.55,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "mtd deadline",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 76.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "mtd itsa penalty holiday",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 99.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "mtd penalties late submission uk",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 80.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "mtd itsa penalties",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 80.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/malta-relocation",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/malta-relocation"
+      ],
+      "impressions_90d": 8,
+      "clicks_90d": 0,
+      "weighted_position_90d": 58.71,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "relocation malta",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 8,
+            "clicks": 0,
+            "position": 58.71
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-22"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/uk-permanent-establishment-for-uae-company-agency-founders",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/uk-permanent-establishment-for-uae-company-agency-founders"
+      ],
+      "impressions_90d": 8,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-25"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/glossary/gross-margin",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/glossary/gross-margin"
+      ],
+      "impressions_90d": 8,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/glossary/section-455",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/glossary/section-455"
+      ],
+      "impressions_90d": 6,
+      "clicks_90d": 0,
+      "weighted_position_90d": 70.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "s455 tax charge",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 53.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "section 455 tax charge",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 64.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "s445 tax",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 89.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "s455 charge",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 84.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "s455 tax",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 80.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/does-fine-tuning-llm-qualify-rd-tax-credits",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/does-fine-tuning-llm-qualify-rd-tax-credits"
+      ],
+      "impressions_90d": 6,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-agency-exit-tax-goodwill",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-agency-exit-tax-goodwill"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-22"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-minimum-office-space-requirement-flexi-desk",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-minimum-office-space-requirement-flexi-desk"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 68.33,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "flexi desk dmcc license",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 68.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/calculators/salary-dividend-optimiser",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/calculators/salary-dividend-optimiser"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 93.67,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "tax calculator director",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 89.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "ltd company director salary calculator",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 92.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "director salary calculator",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 100.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-golden-visa-uk-citizens-revenue-threshold-agency-founders",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-golden-visa-uk-citizens-revenue-threshold-agency-founders"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-30"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/what-is-aia-in-tax",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/what-is-aia-in-tax"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-27"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/agency-finance-essentials/13-week-cash-flow-forecast-agency-insolvency",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/agency-finance-essentials/13-week-cash-flow-forecast-agency-insolvency"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-27"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/growth-and-exit/prepare-financials-due-diligence-agency-sale",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/growth-and-exit/prepare-financials-due-diligence-agency-sale"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-28"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/growth-and-exit/selling-agency-tax-implications"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-28"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/incorporation-and-structure",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/incorporation-and-structure"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-06-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-setup-visa-sponsorship-solo-founder",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-setup-visa-sponsorship-solo-founder"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-30"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/attribution-tool-r-and-d-tax-credit-performance-marketing-agency",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/attribution-tool-r-and-d-tax-credit-performance-marketing-agency"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-29"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/merged-r-and-d-scheme-agency-2023",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/merged-r-and-d-scheme-agency-2023"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/dubai-freelancer-vs-company-for-agency",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-freelancer-vs-company-for-agency"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 8.0,
+      "band_mix": {
+        "8": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "whats the difference between using agency vs doing self setup in dubai",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 8.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-18"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/r-and-d-credits",
+      "variants": [
+        "https://www.agencyfounderfinance.co.uk/r-and-d-credits"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 75.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "ai-driven r&d tax credit solutions",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 75.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": "2026-05-19"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/international-agencies/srt-flowchart-deferred-revenue-agency-founders",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/international-agencies/srt-flowchart-deferred-revenue-agency-founders"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-22"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-feast-famine-income",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-feast-famine-income"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-19"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-claim-cloud-compute-aws-gcp",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-claim-cloud-compute-aws-gcp"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-22"
+    },
+    {
+      "page": "https://agencyfounderfinance.co.uk/founder-stories/creative-agency-badr-exit",
+      "variants": [
+        "https://agencyfounderfinance.co.uk/founder-stories/creative-agency-badr-exit"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": null,
+      "band_mix": {},
+      "trajectory": null,
+      "trajectory_delta_pct": null,
+      "top_queries": [],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "query_data_thin"
+      ],
+      "first_seen": "2026-05-19"
+    }
+  ],
+  "unowned_queries": [
+    {
+      "query": "pr agency for accountants",
+      "impressions_90d": 166,
+      "best_position": 34.4,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "cis accountant",
+      "impressions_90d": 138,
+      "best_position": 70.3,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "annual investment allowance",
+      "impressions_90d": 84,
+      "best_position": 48.1,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "annual investment allowance calculator",
+      "impressions_90d": 53,
+      "best_position": 34.0,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    }
+  ]
+}

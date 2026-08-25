@@ -2,8 +2,8 @@
  * Tests for the Trade Tax Specialists lead consent text and payload helpers.
  *
  * Verifies:
- *  - The consent text includes the partner name ("Reflex") per the data-sharing
- *    agreement (owner decision: partner = "Reflex Accounting").
+ *  - The consent text names a generic "specialist partner network" per the
+ *    data-sharing agreement (owner decision: no named partner firm).
  *  - The consent text never contains "DJH" (internal name; must not appear in
  *    user-facing copy on non-Property sites, per estate rule).
  *  - The consent text includes the brand name "Trade Tax Specialists".
@@ -19,10 +19,23 @@ import { composeLeadMessage } from "@/lib/lead-message";
 // ── Consent text wiring ──────────────────────────────────────────────────────
 
 describe("consent text wiring", () => {
-  it("consent text includes 'Reflex' (partner name required by data-sharing agreement)", async () => {
+  it("consent text names a generic 'specialist partner network', never 'Reflex'", async () => {
     const { siteConfig } = await import("@/config/site");
     const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    expect(consentText).toContain("Reflex");
+    expect(consentText).toContain("specialist partner network");
+    expect(consentText).not.toContain("Reflex");
+  });
+
+  // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the
+  // estate mini-form conversion collapse (step-2 completion went to zero under the
+  // "will share ... regulated firms" notice). Plurality disclosure now lives in the
+  // privacy policy (layer 2); the pool gate anchor phrase is
+  // "a firm from our specialist partner network" (Property offer-send.ts).
+  it("consent notice is the estate-standard sharing wording, pinned verbatim", async () => {
+    const { siteConfig } = await import("@/config/site");
+    expect(siteConfig.leadConsentText).toBe(
+      "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.",
+    );
   });
 
   it("consent text never contains 'DJH' (estate rule: internal name must not appear)", async () => {
@@ -31,15 +44,11 @@ describe("consent text wiring", () => {
     expect(consentText).not.toContain("DJH");
   });
 
-  it("consent text mentions 'Trade Tax Specialists' brand", async () => {
-    const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.leadConsentText).toContain("Trade Tax Specialists");
-  });
 });
 
 // ── Extras qualifiers (moved out of message) ─────────────────────────────────
 
-describe("extras qualifiers — not in message string", () => {
+describe("extras qualifiers - not in message string", () => {
   it("composeLeadMessage with no trade or subbieCount returns just the user message", () => {
     const msg = composeLeadMessage({ message: "I need help with my CIS refund." });
     expect(msg).toBe("I need help with my CIS refund.");

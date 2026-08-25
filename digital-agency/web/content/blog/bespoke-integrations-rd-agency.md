@@ -26,7 +26,7 @@ faqs:
 - question: Can I claim R&D tax credits if the integration was built for a client?
   answer: Generally no, if the client paid you for the work. R&D relief is for the company bearing the financial risk of the development. If the client is paying regardless of outcome, the risk sits with them. The exception is where you build the integration as part of your own product development, not a client project. If you are unsure, speak to your accountant before filing.
 - question: What is the tax saving from an R&D claim for integration work?
-  answer: For a profitable SME agency, the saving is typically 19-25% of the qualifying expenditure, depending on your profit level. For loss-making agencies, you can surrender the loss for a cash payment of up to 14.5% of the enhanced expenditure. A claim on £39,000 of qualifying costs could yield a tax saving of approximately £13,783 or a cash payment of around £10,518.
+  answer: Under the merged R&D scheme, which applies to accounting periods beginning on or after 1 April 2024, qualifying expenditure attracts a 20% taxable above-the-line credit. Because the credit is itself taxable, the net benefit is around 15% for a main-rate payer and about 16.2% for a loss-making company. A claim on £39,000 of qualifying costs would generate a headline credit of £7,800, worth roughly £5,850 to £6,318 net.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -137,9 +137,11 @@ keyTakeaways:
 
 <p>Staff costs for that 400 hours: £28,000 (salary plus employer NI and pension). Software licenses and cloud hosting directly attributable to the R&D: £3,200. Subcontractor costs for a specialist data architect: £12,000 (65% of this qualifies, so £7,800).</p>
 
-<p>Total qualifying expenditure: £39,000. Under the SME scheme, the enhanced deduction is 186% of that figure, giving a total deduction of £72,540. If the agency is paying 19% corporation tax on profits up to £50k, the tax saving is approximately £13,783. If the agency is loss-making, it can surrender the loss for a cash credit of up to 14.5% of the enhanced expenditure, which would give a cash payment of approximately £10,518.</p>
+<p>Total qualifying expenditure: £39,000. Under the merged R&D scheme, which applies to accounting periods beginning on or after 1 April 2024, that expenditure attracts a 20% taxable above-the-line credit, giving a headline credit of £7,800. Because the credit is itself taxable, the net benefit is around £5,850 for a main-rate payer. A loss-making company, where the credit is notionally taxed at the 19% small-profits rate, keeps about £6,318.</p>
 
 <p>Those numbers are real. That is not theoretical. That is cash back in your business or tax you do not pay.</p>
+
+<p>For context, an earlier and more generous regime applied for accounting periods beginning between 1 April 2023 and 31 March 2024, when a loss-making SME could enhance its expenditure by 86% and surrender the loss for a 10% payable credit (or 14.5% if it met the R&D-intensive test). That old SME scheme has now closed to new periods and been replaced by the single merged credit above.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 

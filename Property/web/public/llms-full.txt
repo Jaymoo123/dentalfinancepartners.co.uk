@@ -7,7 +7,7 @@
 Property Tax Partners provides specialist accounting, tax planning, and compliance services to UK landlords and property investors. We cover the full lifecycle: first-property advisory through to multi-property portfolio restructuring and disposal planning. We focus exclusively on residential and mixed-use property: buy-to-let, HMO, holiday lets, mixed portfolios, and incorporation candidates.
 
 Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, and Bristol. All tax content is current to 2026/27 UK figures, including:
-- Section 24 finance-cost restriction at 20% basic-rate tax credit
+- Section 24 finance-cost restriction: 20% tax credit now; from 6 April 2027 separate property income rates of 22%/42%/47% apply (England, Wales, NI) and the credit moves to 22%
 - Corporation tax: 19% small-profits rate, 25% main rate, marginal relief between £50,000 and £250,000
 - CGT on residential property: 18% basic rate, 24% higher rate
 - SDLT: standard residential bands plus 5% additional-dwelling surcharge (since 31 October 2024)
@@ -23,6 +23,13 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Incorporation analysis: https://www.propertytaxpartners.co.uk/incorporation
 - Calculators (index): https://www.propertytaxpartners.co.uk/calculators
 - About: https://www.propertytaxpartners.co.uk/about
+- Property accountant service: https://www.propertytaxpartners.co.uk/services/property-accountant
+- Landlord accountant service: https://www.propertytaxpartners.co.uk/services/landlord-accountant
+- Property tax advice service: https://www.propertytaxpartners.co.uk/services/property-tax-advice
+- Non-resident landlord service: https://www.propertytaxpartners.co.uk/services/non-resident-landlord
+- Landlord tax guide: https://www.propertytaxpartners.co.uk/landlord-tax
+- Section 24 guide: https://www.propertytaxpartners.co.uk/section-24
+- Making Tax Digital guide: https://www.propertytaxpartners.co.uk/making-tax-digital-landlords
 - Contact: https://www.propertytaxpartners.co.uk/contact
 
 ## Free Calculators
@@ -31,6 +38,13 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Incorporation cost calculator (CGT, SDLT, and break-even projection for moving a portfolio into a limited company)
 - MTD checker (whether you cross the income threshold for digital quarterly reporting)
 - Portfolio profitability calculator (per-property yield, cash flow, and ROI)
+- Capital allowances calculator (estimate embedded fixtures relief on a commercial property purchase or fit-out by sector)
+- R&D tax credit calculator (estimate merged-scheme and ERIS benefit from qualifying spend)
+- Buy-to-let mortgage calculator (monthly BTL mortgage payments, interest-only versus capital repayment)
+- Buy-to-let stress test calculator (maximum indicative loan a rent supports at a lender's ICR and stress rate)
+- Commercial mortgage calculator (monthly commercial mortgage payments and the debt service cover ratio)
+- Bridging loan calculator (total cost of a bridging loan from the monthly rate, term, and fees)
+- Development finance calculator (maximum facility from gross development value and loan-to-cost, and profit on cost)
 
 ## Blog Categories
 
@@ -41,14 +55,16 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Portfolio Management: https://www.propertytaxpartners.co.uk/blog/portfolio-management
 - Property Accountant Services: https://www.propertytaxpartners.co.uk/blog/property-accountant-services
 - Landlord Tax Essentials: https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials
+- Property Types and Specialist Tax: https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax
+- Property Finance: https://www.propertytaxpartners.co.uk/blog/property-finance
 
 ## City Pages (LocalBusiness schema)
 
-- London: https://www.propertytaxpartners.co.uk/locations/london
-- Manchester: https://www.propertytaxpartners.co.uk/locations/manchester
-- Birmingham: https://www.propertytaxpartners.co.uk/locations/birmingham
+- London: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/london-property-accountant
+- Manchester: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/manchester-property-accountant
+- Birmingham: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/birmingham-property-accountant
 - Leeds: https://www.propertytaxpartners.co.uk/locations/leeds
-- Bristol: https://www.propertytaxpartners.co.uk/locations/bristol
+- Bristol: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/bristol-property-accountant
 
 ## Who We Help
 
@@ -65,6 +81,10 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - HMO and holiday-let specifics: capital allowances, planning permission and licensing, business-rates treatment
 - Non-resident landlord rules and double-tax treatment
 - Property company running costs, director loan accounts, dividend strategy, pension contributions from a property company
+- Capital allowances on commercial property: embedded fixtures and integral features, the section 198 election and fixtures pooling requirement, and applied sector claims (hotels, offices, industrial units, care homes, GP and dental surgeries, student accommodation, pubs and restaurants, hospitality)
+- Land Remediation Relief: the 150% corporation-tax deduction and 16% payable credit for contaminated or derelict land, alongside SBA and full expensing on brownfield schemes
+- Capital allowances rates for 2026/27: main-pool WDA reduced to 14% from April 2026, the new 40% first-year allowance from 1 January 2026, AIA £1m, and 100% full expensing for companies
+- Property finance, as education alongside the tax (unregulated business lending, not regulated consumer mortgages, not a financial promotion): how buy-to-let and limited-company (SPV) mortgages are stress-tested on ICR and LTV, commercial mortgages, bridging finance for auctions and refurbishments, development finance on GDV and loan-to-cost, and the tax treatment of finance costs (Section 24, allowable interest, trading versus investment)
 
 ## Schema And Discovery
 

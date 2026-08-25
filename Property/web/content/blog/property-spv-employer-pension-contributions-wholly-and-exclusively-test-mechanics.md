@@ -111,7 +111,7 @@ editorialNote: "Supersedes the legacy `property-company-employer-pension-contrib
 
 <h2>Worked scenario A: £20,000 routine annual contribution</h2>
 
-<p>Riverbend Properties Ltd is a single-director SPV with five rental properties producing £120,000 of annual profit. The director, Priya, takes a £6,500 salary at the LEL, leaves £40,000 of dividends in 2026/27 within the basic-rate band, and the SPV makes a £20,000 employer pension contribution to her SIPP each year. Priya is in her early 50s; she has been a member of a registered pension scheme for 15 years; she has no flexibly-accessed DC pensions so the MPAA does not bite.</p>
+<p>Riverbend Properties Ltd is a single-director SPV with five rental properties producing £120,000 of annual profit. The director, Priya, takes a £6,708 salary at the LEL, leaves £40,000 of dividends in 2026/27 within the basic-rate band, and the SPV makes a £20,000 employer pension contribution to her SIPP each year. Priya is in her early 50s; she has been a member of a registered pension scheme for 15 years; she has no flexibly-accessed DC pensions so the MPAA does not bite.</p>
 
 <p>W&E analysis. Priya spends 15 to 20 hours a week on portfolio management (tenant matters, mortgage reviews, refurbishment decisions, agent oversight). Sector pay for a property-portfolio manager of similar scale is approximately £40,000 to £60,000 plus pension. Priya's overall package (£6,500 salary plus £40,000 dividends plus £20,000 pension contribution, totalling £66,500) is in line with the comparator. BIM46035's W&E gate is clear. The £20,000 contribution is fully CT-deductible.</p>
 

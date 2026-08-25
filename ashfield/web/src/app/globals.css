@@ -1,0 +1,469 @@
+/* Tailwind source("..") scans from src/ relative to this file */
+@import "tailwindcss" source("..");
+@import "tw-animate-css";
+
+/* ============================================================
+   ASHFIELD TRADING design system (Design & UX spec §0-§7)
+   Light editorial premium: paper + ink + navy, Fraunces + Inter,
+   liquid glass, hairlines, scroll-driven reveals.
+   ============================================================ */
+
+/* ---------- §0 tokens ---------- */
+@theme {
+  --color-paper: #faf8f5;
+  --color-paper-2: #f3f0ea;
+  --color-paper-3: #ece8e0;
+  --color-ink: #14161a;
+  --color-ink-70: #14161ab3;
+  --color-ink-45: #14161a73;
+  --color-navy: #1e2a5e;
+  --color-navy-70: #1e2a5eb3;
+  --color-navy-08: #1e2a5e14;
+  --color-hairline: #14161a1f;
+  --color-hairline-strong: #14161a33;
+  --color-glass: #ffffffa6;
+  --color-glass-hover: #ffffffbf;
+  --radius-panel: 20px;
+  --radius-card: 14px;
+  --radius-pill: 999px;
+}
+
+:root {
+  --measure: 62ch;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --ease-out: cubic-bezier(0.22, 0.61, 0.15, 1);
+  --dur-reveal: 700ms;
+  --dur-micro: 180ms;
+
+  /* §2 fluid type scale */
+  --text-display: clamp(3rem, 1.2rem + 7.2vw, 7.5rem);
+  --text-h1: clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
+  --text-h2: clamp(1.9rem, 1.4rem + 2vw, 3rem);
+  --text-h3: clamp(1.35rem, 1.15rem + 0.8vw, 1.75rem);
+  --text-lead: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --text-body: 1.0625rem;
+  --text-caption: 0.8125rem;
+  --text-eyebrow: 0.75rem;
+  --text-stat: clamp(3.5rem, 2rem + 6vw, 6.5rem);
+
+  /* Legacy aliases used by baseline scaffold + legal pages */
+  --surface: var(--color-paper);
+  --surface-elevated: #ffffff;
+  --ink: var(--color-ink);
+  --ink-soft: var(--color-ink-70);
+  --hairline: var(--color-hairline);
+  --accent: var(--color-navy);
+  --accent-strong: #141d42;
+
+  /* Tailwind v4 semantic tokens */
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --card: var(--surface-elevated);
+  --card-foreground: var(--color-ink);
+  --primary: var(--color-navy);
+  --primary-foreground: #ffffff;
+  --border: var(--color-hairline);
+  --input: var(--color-hairline);
+  --ring: var(--color-navy);
+  --radius: 0rem;
+
+  /* Canonical brand tokens for @accounting-network/web-shared components */
+  --brand-primary: var(--color-navy);
+  --brand-primary-strong: var(--accent-strong);
+  --brand-on-primary: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-inter), "Inter Fallback", system-ui, sans-serif;
+  --font-display: var(--font-fraunces), "Fraunces Fallback", Georgia, serif;
+}
+
+/* ---------- base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.65;
+  font-variant-numeric: oldstyle-nums;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+  }
+}
+
+/* §7 focus, always visible */
+:focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 3px;
+}
+
+/* ---------- §2 type utilities ---------- */
+@utility type-display {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 480;
+  font-variation-settings: "opsz" 144;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+@utility type-h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 500;
+  font-variation-settings: "opsz" 100;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+@utility type-h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 500;
+  font-variation-settings: "opsz" 72;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+@utility type-h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+@utility type-lead {
+  font-family: var(--font-sans);
+  font-size: var(--text-lead);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-ink-70);
+}
+@utility type-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.65;
+}
+@utility type-caption {
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--color-ink-45);
+}
+@utility type-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  font-variant-caps: all-small-caps;
+  color: var(--color-ink-70);
+}
+@utility type-stat {
+  font-family: var(--font-display);
+  font-size: var(--text-stat);
+  font-weight: 400;
+  font-variation-settings: "opsz" 144;
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+@utility nums-lining {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+@utility measure {
+  max-width: var(--measure);
+}
+
+/* ---------- hairlines ---------- */
+@utility rule {
+  height: 1px;
+  background: var(--color-hairline);
+  border: 0;
+}
+@utility rule-strong {
+  height: 1px;
+  background: var(--color-hairline-strong);
+  border: 0;
+}
+@utility hairline-t {
+  border-top: 1px solid var(--color-hairline);
+}
+@utility hairline-b {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+/* Ghost backdrop numeral/word (§1.4) */
+@utility ghost-numeral {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 144;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-hairline-strong);
+  user-select: none;
+  pointer-events: none;
+  line-height: 1;
+}
+
+/* Below-fold paint skip (§7) */
+@utility cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* ---------- §4 liquid glass ---------- */
+.glass {
+  position: relative; /* required by ::before sheen */
+  background: linear-gradient(180deg, #ffffffcc 0%, #ffffff99 100%);
+  -webkit-backdrop-filter: blur(18px) saturate(1.35);
+  backdrop-filter: blur(18px) saturate(1.35);
+  border-radius: var(--radius-panel);
+  border: 1px solid #ffffff;
+  box-shadow:
+    inset 0 1px 0 #ffffffe6,
+    inset 0 -1px 0 #14161a0a,
+    0 1px 2px #14161a0a,
+    0 12px 32px -8px #14161a1a;
+  outline: 1px solid #14161a0f;
+}
+.glass::before {
+  /* specular top-left sheen */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(120deg, #ffffff 0%, #ffffff00 22%);
+  opacity: 0.55;
+  mask: linear-gradient(#000, #0000 40%);
+  -webkit-mask: linear-gradient(#000, #0000 40%);
+}
+.glass-interactive {
+  transition:
+    background var(--dur-micro) var(--ease-out),
+    transform var(--dur-micro) var(--ease-out),
+    box-shadow var(--dur-micro) var(--ease-out);
+}
+.glass-interactive:hover {
+  background: linear-gradient(180deg, #ffffffdd, #ffffffb3);
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 2px 4px #14161a0d,
+    0 20px 48px -12px #14161a26;
+}
+.glass-interactive:active {
+  transform: translateY(0) scale(0.995);
+  background: #fffffff2;
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .glass {
+    background: #fffffff0;
+  }
+}
+
+/* ---------- grain (paper-2/-3 sections only, never over glass) ---------- */
+.grain {
+  position: relative;
+}
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/noise.svg");
+  background-size: 200px 200px;
+  opacity: 0.035;
+  pointer-events: none;
+}
+
+/* ---------- sticky nav frost-on-scroll (§5) ---------- */
+/* Glass lives on .nav-inner, a CHILD of the sticky header (Safari). */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  will-change: transform;
+}
+.nav-inner {
+  border-bottom: 1px solid transparent;
+  padding-block: 1.1rem;
+  transition:
+    background var(--dur-micro) var(--ease-out),
+    border-color var(--dur-micro) var(--ease-out),
+    box-shadow var(--dur-micro) var(--ease-out),
+    padding var(--dur-micro) var(--ease-out);
+}
+.site-nav.scrolled .nav-inner {
+  background: linear-gradient(180deg, #ffffffcc 0%, #ffffff99 100%);
+  -webkit-backdrop-filter: blur(12px) saturate(1.35);
+  backdrop-filter: blur(12px) saturate(1.35);
+  border-bottom-color: var(--color-hairline);
+  box-shadow: 0 1px 2px #14161a0a;
+  padding-block: 0.65rem;
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .site-nav.scrolled .nav-inner {
+    background: #fffffff0;
+  }
+}
+
+/* ---------- §5 reveals + motion ---------- */
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Native scroll-driven path (Chromium). JS-gated so no-JS is always visible. */
+  @supports (animation-timeline: view()) {
+    html.js [data-reveal] {
+      animation: reveal-in both var(--ease-out);
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+  /* IO fallback: interactions.ts adds .no-sda + toggles .in-view */
+  html.js.no-sda [data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity var(--dur-reveal) var(--ease-out),
+      transform var(--dur-reveal) var(--ease-out);
+    transition-delay: calc(min(var(--i, 0), 5) * 60ms);
+  }
+  html.js.no-sda [data-reveal].in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 150ms !important;
+    transition-duration: 150ms !important;
+  }
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* No-JS safety net: everything visible, always */
+html:not(.js) [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+/* Chart draw-in (§5): only under html.js, chart complete without JS */
+@media (prefers-reduced-motion: no-preference) {
+  html.js .chart-draw [data-chartline] {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
+  html.js .chart-draw.in-view [data-chartline] {
+    transition: stroke-dashoffset 1100ms var(--ease-out);
+    stroke-dashoffset: 0;
+  }
+  html.js .chart-draw [data-chartfill] {
+    opacity: 0;
+  }
+  html.js .chart-draw.in-view [data-chartfill] {
+    transition: opacity 500ms var(--ease-out) 400ms;
+    opacity: 1;
+  }
+}
+
+/* ============================================================
+   Legal-page prose (shared with sibling sites) - keep working
+   ============================================================ */
+.prose-blog {
+  max-width: 65ch;
+  color: var(--ink);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.prose-blog h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.prose-blog h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.prose-blog p,
+.prose-blog ul,
+.prose-blog ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--ink-soft);
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  padding-left: 1.5rem;
+}
+
+.prose-blog li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-blog strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.prose-blog a {
+  color: var(--accent-strong);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}

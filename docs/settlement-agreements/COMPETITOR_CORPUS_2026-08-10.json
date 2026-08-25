@@ -1,0 +1,707 @@
+{
+  "date": "2026-08-10",
+  "domains": [
+    {
+      "domain": "settlementagreement.com",
+      "sitemap_found": true,
+      "content_urls_harvested": 8
+    },
+    {
+      "domain": "gte-settlementagreements.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 37
+    },
+    {
+      "domain": "monacosolicitors.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 136
+    },
+    {
+      "domain": "landaulaw.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 222
+    },
+    {
+      "domain": "redmans.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 1595
+    },
+    {
+      "domain": "springhouselaw.com",
+      "sitemap_found": true,
+      "content_urls_harvested": 637
+    },
+    {
+      "domain": "doyleclayton.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 42
+    },
+    {
+      "domain": "tribunalclaimsolicitors.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 371
+    },
+    {
+      "domain": "mccabeandco.com",
+      "sitemap_found": true,
+      "content_urls_harvested": 521
+    },
+    {
+      "domain": "masonbullock.co.uk",
+      "sitemap_found": true,
+      "content_urls_harvested": 84
+    },
+    {
+      "domain": "didlaw.com",
+      "sitemap_found": true,
+      "content_urls_harvested": 952
+    },
+    {
+      "domain": "employmentsolicitor.com",
+      "sitemap_found": true,
+      "content_urls_harvested": 653
+    }
+  ],
+  "topics": [
+    {
+      "topic": "Redundancy rights and process",
+      "domain_coverage": 12,
+      "example_titles": [
+        "Redundancy before during and after maternity leave",
+        "Collective redundancy legal guide",
+        "Redundancy"
+      ],
+      "example_urls": [
+        "https://www.settlementagreement.com/redundancy-before-during-and-after-maternity-leave/",
+        "https://www.gte-settlementagreements.co.uk/blog/collective-redundancy-legal-guide/",
+        "https://www.monacosolicitors.co.uk/redundancy"
+      ]
+    },
+    {
+      "topic": "Settlement agreement basics, process and legal requirements",
+      "domain_coverage": 11,
+      "example_titles": [
+        "Start settlement",
+        "Can a settlement agreement be withdrawn",
+        "Settlement agreements"
+      ],
+      "example_urls": [
+        "https://www.settlementagreement.com/start-settlement/",
+        "https://www.gte-settlementagreements.co.uk/blog/can-a-settlement-agreement-be-withdrawn/",
+        "https://www.monacosolicitors.co.uk/settlement-agreements"
+      ]
+    },
+    {
+      "topic": "Family rights and flexible working",
+      "domain_coverage": 11,
+      "example_titles": [
+        "Flexible working requests on the increase post lockdown",
+        "Flexible working",
+        "Acas issues good practice guide for shared parental leave"
+      ],
+      "example_urls": [
+        "https://www.gte-settlementagreements.co.uk/guides/flexible-working-requests-on-the-increase-post-lockdown/",
+        "https://www.monacosolicitors.co.uk/flexible-working",
+        "https://landaulaw.co.uk/acas-issues-good-practice-guide-for-shared-parental-leave/"
+      ]
+    },
+    {
+      "topic": "Unfair dismissal",
+      "domain_coverage": 10,
+      "example_titles": [
+        "How to deal with an unfair dismissal",
+        "Unfair dismissal paycuts bullying coronavirus health safety at work",
+        "Asserting a statutory right in unfair dismissal"
+      ],
+      "example_urls": [
+        "https://www.settlementagreement.com/how-to-deal-with-an-unfair-dismissal/",
+        "https://www.monacosolicitors.co.uk/coronavirus/unfair-dismissal-paycuts-bullying-coronavirus-health-safety-at-work",
+        "https://landaulaw.co.uk/asserting-a-statutory-right-in-unfair-dismissal/"
+      ]
+    },
+    {
+      "topic": "Discrimination at work (general)",
+      "domain_coverage": 10,
+      "example_titles": [
+        "Discrimination",
+        "Continuing acts discrimination",
+        "Direct discrimination"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination",
+        "https://landaulaw.co.uk/continuing-acts-discrimination/",
+        "https://redmans.co.uk/employment-law-solicitors/direct-discrimination/"
+      ]
+    },
+    {
+      "topic": "Mental health, stress and sickness absence",
+      "domain_coverage": 10,
+      "example_titles": [
+        "Sick pay",
+        "How easy is it for my employer to dismiss me on the grounds of ill health",
+        "Mental health at work"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/sick-pay",
+        "https://landaulaw.co.uk/faqs/how-easy-is-it-for-my-employer-to-dismiss-me-on-the-grounds-of-ill-health/",
+        "https://redmans.co.uk/employment-law-solicitors/mental-health-at-work/"
+      ]
+    },
+    {
+      "topic": "Gross misconduct and disciplinary procedures",
+      "domain_coverage": 10,
+      "example_titles": [
+        "Disciplinaries",
+        "Am i under a duty to disclose allegations of misconduct that took place in my prior job to my new employer",
+        "Disciplinary and dismissal"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/disciplinaries",
+        "https://landaulaw.co.uk/faqs/am-i-under-a-duty-to-disclose-allegations-of-misconduct-that-took-place-in-my-prior-job-to-my-new-employer/",
+        "https://redmans.co.uk/employment-law-solicitors/disciplinary-and-dismissal/"
+      ]
+    },
+    {
+      "topic": "Employment status, IR35 and gig economy",
+      "domain_coverage": 10,
+      "example_titles": [
+        "Government pay for self employed",
+        "Agency workers",
+        "Agency workers rights"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/coronavirus/government-pay-for-self-employed",
+        "https://landaulaw.co.uk/agency-workers/",
+        "https://redmans.co.uk/employment-law-solicitors/agency-workers-rights/"
+      ]
+    },
+    {
+      "topic": "Employment contracts and terms",
+      "domain_coverage": 10,
+      "example_titles": [
+        "Can post termination covenants in your employment contract restrict your settlement",
+        "Contract of employment review",
+        "Breach of contract of employment"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/blog/can-post-termination-covenants-in-your-employment-contract-restrict-your-settlement",
+        "https://landaulaw.co.uk/contract-of-employment-review/",
+        "https://redmans.co.uk/employment-law-solicitors/breach-of-contract-of-employment/"
+      ]
+    },
+    {
+      "topic": "Grievances at work",
+      "domain_coverage": 10,
+      "example_titles": [
+        "Grumble or grievance",
+        "Grievances",
+        "Grievance at work"
+      ],
+      "example_urls": [
+        "https://www.gte-settlementagreements.co.uk/guides/grumble-or-grievance/",
+        "https://www.monacosolicitors.co.uk/grievances",
+        "https://landaulaw.co.uk/grievance-at-work/"
+      ]
+    },
+    {
+      "topic": "Employment tribunal claims process",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Appeals",
+        "Appeal",
+        "Employment tribunal claims"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/appeals",
+        "https://landaulaw.co.uk/appeal/",
+        "https://redmans.co.uk/employment-law-solicitors/employment-tribunal-claims/"
+      ]
+    },
+    {
+      "topic": "Disability discrimination and reasonable adjustments",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Disability",
+        "Diabetes cannot be a disability says the employment appeals tribunal",
+        "Disability discrimination"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination/disability",
+        "https://landaulaw.co.uk/diabetes-cannot-be-a-disability-says-the-employment-appeals-tribunal/",
+        "https://redmans.co.uk/employment-law-solicitors/disability-discrimination/"
+      ]
+    },
+    {
+      "topic": "Employment law changes and news",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Brexit employment rights update",
+        "Brexit",
+        "Brexit"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/blog/brexit-employment-rights-update",
+        "https://landaulaw.co.uk/brexit/",
+        "https://redmans.co.uk/employment-law-solicitors/brexit/"
+      ]
+    },
+    {
+      "topic": "Pregnancy and maternity discrimination",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Maternity and pregnancy",
+        "Pregnancy discrimination",
+        "Pregnancy discrimination solicitors"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination/maternity-and-pregnancy",
+        "https://landaulaw.co.uk/pregnancy-discrimination/",
+        "https://redmans.co.uk/employment-law-solicitors/pregnancy-discrimination-solicitors/"
+      ]
+    },
+    {
+      "topic": "Holiday pay and working time",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Holiday pay must include commission says eu",
+        "Holidays",
+        "Holiday employees"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/holiday-pay-must-include-commission-says-eu/",
+        "https://redmans.co.uk/employment-law-solicitors/holidays/",
+        "https://www.springhouselaw.com/employee/holiday-employees"
+      ]
+    },
+    {
+      "topic": "Constructive dismissal",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Constructive dismissal",
+        "Constructive dismissal",
+        "Constructive dismissal"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/constructive-dismissal",
+        "https://landaulaw.co.uk/constructive-dismissal/",
+        "https://redmans.co.uk/employment-law-solicitors/constructive-dismissal/"
+      ]
+    },
+    {
+      "topic": "Whistleblowing",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Whistleblowing",
+        "New rules whistleblowing see blog",
+        "Whistleblowing guide for employees"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/whistleblowing",
+        "https://landaulaw.co.uk/new-rules-whistleblowing-see-blog/",
+        "https://redmans.co.uk/employment-law-solicitors/whistleblowing-guide-for-employees/"
+      ]
+    },
+    {
+      "topic": "Data protection, monitoring and workplace evidence",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Emails letters documents",
+        "Data protection",
+        "Data protection"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/evidence/emails-letters-documents",
+        "https://landaulaw.co.uk/data-protection/",
+        "https://redmans.co.uk/employment-law-solicitors/data-protection/"
+      ]
+    },
+    {
+      "topic": "Age discrimination and retirement",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Early retirement ill health",
+        "Age discrimination",
+        "Age discrimination"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination/early-retirement-ill-health",
+        "https://landaulaw.co.uk/age-discrimination/",
+        "https://redmans.co.uk/employment-law-solicitors/age-discrimination/"
+      ]
+    },
+    {
+      "topic": "Religion or belief discrimination",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Religion or belief",
+        "Religion or belief discrimination",
+        "Religious belief discrimination"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination/religion-or-belief",
+        "https://landaulaw.co.uk/religion-or-belief-discrimination/",
+        "https://redmans.co.uk/employment-law-solicitors/religious-belief-discrimination/"
+      ]
+    },
+    {
+      "topic": "Notice periods and notice pay (incl. PILON)",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Statutory notice period",
+        "Notice period",
+        "Do i need to state the reason for my departure in my resignation letter"
+      ],
+      "example_urls": [
+        "https://www.gte-settlementagreements.co.uk/blog/statutory-notice-period/",
+        "https://www.monacosolicitors.co.uk/notice-period",
+        "https://landaulaw.co.uk/faqs/do-i-need-to-state-the-reason-for-my-departure-in-my-resignation-letter/"
+      ]
+    },
+    {
+      "topic": "Settlement agreement negotiation and increasing the offer",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Top tips for settlement agreement negotiations",
+        "Negotiating a settlement agreement",
+        "Negotiations"
+      ],
+      "example_urls": [
+        "https://www.settlementagreement.com/top-tips-for-settlement-agreement-negotiations/",
+        "https://www.gte-settlementagreements.co.uk/guides/negotiating-a-settlement-agreement/",
+        "https://www.monacosolicitors.co.uk/negotiations"
+      ]
+    },
+    {
+      "topic": "Settlement agreement tax treatment",
+      "domain_coverage": 9,
+      "example_titles": [
+        "Are settlement agreements taxable",
+        "Ex gratia payments",
+        "How will the payments under your settlement agreement be taxed"
+      ],
+      "example_urls": [
+        "https://www.gte-settlementagreements.co.uk/blog/are-settlement-agreements-taxable/",
+        "https://www.monacosolicitors.co.uk/settlement-agreements/ex-gratia-payments",
+        "https://landaulaw.co.uk/faqs/how-will-the-payments-under-your-settlement-agreement-be-taxed/"
+      ]
+    },
+    {
+      "topic": "Sexual harassment at work",
+      "domain_coverage": 8,
+      "example_titles": [
+        "Sexual harassment",
+        "Sexual harassment at work",
+        "Sexual harassment at work"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination/sexual-harassment",
+        "https://landaulaw.co.uk/sexual-harassment-at-work/",
+        "https://redmans.co.uk/employment-law-solicitors/sexual-harassment-at-work/"
+      ]
+    },
+    {
+      "topic": "Pay disputes: deductions, wages, bonuses and minimum wage",
+      "domain_coverage": 8,
+      "example_titles": [
+        "2 year cap on claims for unlawful deductions kicks in on 1st july 2015",
+        "Bonuses",
+        "Argos forced repay 2 4 million wages"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/2-year-cap-on-claims-for-unlawful-deductions-kicks-in-on-1st-july-2015/",
+        "https://redmans.co.uk/employment-law-solicitors/bonuses/",
+        "https://www.springhouselaw.com/knowledge/argos-forced-repay-2-4-million-wages"
+      ]
+    },
+    {
+      "topic": "COVID-19 and employment",
+      "domain_coverage": 8,
+      "example_titles": [
+        "Coronavirus 2",
+        "Can an employer force you to have the covid 19 vaccine or wear a mask at work",
+        "Furlough an faq for employees and employers"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/coronavirus-2",
+        "https://landaulaw.co.uk/can-an-employer-force-you-to-have-the-covid-19-vaccine-or-wear-a-mask-at-work/",
+        "https://redmans.co.uk/insights/furlough-an-faq-for-employees-and-employers/"
+      ]
+    },
+    {
+      "topic": "NDAs and confidentiality clauses",
+      "domain_coverage": 8,
+      "example_titles": [
+        "Phillip green should gagging orders be banned",
+        "Ban on non disclosure agreements",
+        "New restrictions on use of confidentiality clauses"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/blog/phillip-green-should-gagging-orders-be-banned",
+        "https://redmans.co.uk/insights/ban-on-non-disclosure-agreements/",
+        "https://www.springhouselaw.com/knowledge/new-restrictions-on-use-of-confidentiality-clauses"
+      ]
+    },
+    {
+      "topic": "References after settlement or dismissal",
+      "domain_coverage": 8,
+      "example_titles": [
+        "References",
+        "Can your employer give you a bad reference",
+        "Work references"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/settlement-agreements/references",
+        "https://landaulaw.co.uk/faqs/can-your-employer-give-you-a-bad-reference/",
+        "https://redmans.co.uk/employment-law-solicitors/work-references/"
+      ]
+    },
+    {
+      "topic": "Sex discrimination and equal pay",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Equal pay",
+        "Equal pay",
+        "Shared parental pay and sex discrimination another decision"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/equal-pay/",
+        "https://redmans.co.uk/employment-law-solicitors/equal-pay/",
+        "https://www.springhouselaw.com/knowledge-hub/family-rights-and-flexible-working/shared-parental-pay-and-sex-discrimination-another-decision"
+      ]
+    },
+    {
+      "topic": "Bullying and harassment at work",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Acas says workplace bullying is on the increase",
+        "Bullying in the workplace",
+        "Bullying and toxic workplaces what employees should know about their legal rights"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/acas-says-workplace-bullying-is-on-the-increase/",
+        "https://redmans.co.uk/employment-law-solicitors/bullying-in-the-workplace/",
+        "https://www.springhouselaw.com/bullying-and-toxic-workplaces-what-employees-should-know-about-their-legal-rights"
+      ]
+    },
+    {
+      "topic": "Trade unions and industrial action",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Landau law supporting change in law by chefs union",
+        "Labour repeals anti strike laws uk 2024",
+        "Industrial action"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/landau-law-supporting-change-in-law-by-chefs-union/",
+        "https://redmans.co.uk/insights/labour-repeals-anti-strike-laws-uk-2024/",
+        "https://www.springhouselaw.com/glossary/industrial-action"
+      ]
+    },
+    {
+      "topic": "TUPE transfers",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Tupe",
+        "Gabriel v peninsula business services ltd anor tupe employment transfers",
+        "Tupe"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/tupe/",
+        "https://redmans.co.uk/insights/gabriel-v-peninsula-business-services-ltd-anor-tupe-employment-transfers/",
+        "https://www.springhouselaw.com/glossary/tupe"
+      ]
+    },
+    {
+      "topic": "Restrictive covenants and non-compete clauses",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Are restrictive covenants enforceable",
+        "Restrictive covenants employee guide meaning types enforceability",
+        "Restrictive covenant"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/faqs/are-restrictive-covenants-enforceable/",
+        "https://redmans.co.uk/employment-law-solicitors/restrictive-covenants-employee-guide-meaning-types-enforceability/",
+        "https://www.springhouselaw.com/glossary/restrictive-covenant"
+      ]
+    },
+    {
+      "topic": "Sexual orientation and gender reassignment discrimination",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Gender reassignment",
+        "Gender reassignment discrimination",
+        "Gender reassignment discrimination"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/discrimination/gender-reassignment",
+        "https://landaulaw.co.uk/gender-reassignment-discrimination/",
+        "https://redmans.co.uk/employment-law-solicitors/gender-reassignment-discrimination/"
+      ]
+    },
+    {
+      "topic": "Without prejudice and protected conversations",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Without prejudice",
+        "Protected conversation",
+        "Protected conversations at work"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/without-prejudice",
+        "https://landaulaw.co.uk/protected-conversation/",
+        "https://redmans.co.uk/employment-law-solicitors/protected-conversations-at-work/"
+      ]
+    },
+    {
+      "topic": "Menopause at work",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Asking a colleague if theyre going through the change doesnt constitute menopause harassment at work et rules",
+        "What are the rules surrounding menopause in the workplace",
+        "Equality action plans supporting employees through the menopause"
+      ],
+      "example_urls": [
+        "https://redmans.co.uk/insights/asking-a-colleague-if-theyre-going-through-the-change-doesnt-constitute-menopause-harassment-at-work-et-rules/",
+        "https://www.springhouselaw.com/knowledge/what-are-the-rules-surrounding-menopause-in-the-workplace",
+        "https://doyleclayton.co.uk/equality-action-plans-supporting-employees-through-the-menopause/"
+      ]
+    },
+    {
+      "topic": "Wrongful dismissal",
+      "domain_coverage": 7,
+      "example_titles": [
+        "Wrongful dismissal",
+        "Wrongful dismissal",
+        "Wrongful dismissal"
+      ],
+      "example_urls": [
+        "https://www.monacosolicitors.co.uk/wrongful-dismissal",
+        "https://landaulaw.co.uk/wrongful-dismissal/",
+        "https://redmans.co.uk/employment-law-solicitors/wrongful-dismissal/"
+      ]
+    },
+    {
+      "topic": "Race discrimination",
+      "domain_coverage": 6,
+      "example_titles": [
+        "Race discrimination",
+        "Race discrimination employee guide",
+        "Racial discrimination"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/race-discrimination/",
+        "https://redmans.co.uk/employment-law-solicitors/race-discrimination-employee-guide/",
+        "https://www.tribunalclaimsolicitors.co.uk/discrimination-at-work/racial-discrimination/"
+      ]
+    },
+    {
+      "topic": "Performance management, PIPs and capability",
+      "domain_coverage": 6,
+      "example_titles": [
+        "Know performance plan unfair",
+        "Performance issues at work",
+        "Dismissal due to capability"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/faqs/know-performance-plan-unfair/",
+        "https://redmans.co.uk/employment-law-solicitors/performance-issues-at-work/",
+        "https://www.springhouselaw.com/knowledge/dismissal-due-to-capability"
+      ]
+    },
+    {
+      "topic": "Directors and senior executives",
+      "domain_coverage": 5,
+      "example_titles": [
+        "Directors",
+        "Directors",
+        "Senior executives"
+      ],
+      "example_urls": [
+        "https://landaulaw.co.uk/directors/",
+        "https://redmans.co.uk/employment-law-solicitors/directors/",
+        "https://www.mccabeandco.com/employee/senior-executives/"
+      ]
+    },
+    {
+      "topic": "Settlement agreement calculators and tools",
+      "domain_coverage": 5,
+      "example_titles": [
+        "Settlement calculator",
+        "Settlement agreement calculator",
+        "Free settlement agreement calculator"
+      ],
+      "example_urls": [
+        "https://www.settlementagreement.com/settlement-calculator/",
+        "https://www.gte-settlementagreements.co.uk/settlement-agreement-calculator/",
+        "https://www.monacosolicitors.co.uk/free-settlement-agreement-calculator"
+      ]
+    },
+    {
+      "topic": "Redundancy vs settlement agreement",
+      "domain_coverage": 5,
+      "example_titles": [
+        "Settlement agreement or voluntary redundancy",
+        "Redundancy settlement agreement 10 top tips for employees",
+        "Can i offer redundant employees a settlement agreement"
+      ],
+      "example_urls": [
+        "https://www.settlementagreement.com/settlement-agreement-or-voluntary-redundancy/",
+        "https://redmans.co.uk/insights/redundancy-settlement-agreement-10-top-tips-for-employees/",
+        "https://www.springhouselaw.com/can-i-offer-redundant-employees-a-settlement-agreement"
+      ]
+    },
+    {
+      "topic": "Tribunal case law commentary",
+      "domain_coverage": 4,
+      "example_titles": [
+        "The operation of a contractual mobility clause the case of aziz v the freemantle trust 2018 ewca civ 2605",
+        "A case study lauryn goodman v kyle walker",
+        "A look at the overturning of roe v wade"
+      ],
+      "example_urls": [
+        "https://redmans.co.uk/insights/%ef%bb%bfthe-operation-of-a-contractual-mobility-clause-the-case-of-aziz-v-the-freemantle-trust-2018-ewca-civ-2605/",
+        "https://www.mccabeandco.com/news/a-case-study-lauryn-goodman-v-kyle-walker/",
+        "https://didlaw.com/a-look-at-the-overturning-of-roe-v-wade"
+      ]
+    },
+    {
+      "topic": "How much should I get (settlement amounts)",
+      "domain_coverage": 4,
+      "example_titles": [
+        "What is a reasonable settlement agreement",
+        "264k win unfairly dismissed cleaner secures massive tribunal payout",
+        "What is a reasonable settlement agreement"
+      ],
+      "example_urls": [
+        "https://www.gte-settlementagreements.co.uk/blog/what-is-a-reasonable-settlement-agreement/",
+        "https://redmans.co.uk/insights/264k-win-unfairly-dismissed-cleaner-secures-massive-tribunal-payout/",
+        "https://www.springhouselaw.com/knowledge/what-is-a-reasonable-settlement-agreement"
+      ]
+    },
+    {
+      "topic": "Garden leave",
+      "domain_coverage": 3,
+      "example_titles": [
+        "Garden leave in the uk",
+        "Should i stay or should i go now garden leave or pay in lieu of notice",
+        "Garden leave a thorny issue"
+      ],
+      "example_urls": [
+        "https://redmans.co.uk/employment-law-solicitors/garden-leave-in-the-uk/",
+        "https://didlaw.com/should-i-stay-or-should-i-go-now-garden-leave-or-pay-in-lieu-of-notice",
+        "https://www.employmentsolicitor.com/garden-leave-a-thorny-issue/"
+      ]
+    },
+    {
+      "topic": "Getting a new job after a settlement agreement",
+      "domain_coverage": 1,
+      "example_titles": [
+        "Getting a job after a settlement agreement"
+      ],
+      "example_urls": [
+        "https://www.gte-settlementagreements.co.uk/blog/getting-a-job-after-a-settlement-agreement/"
+      ]
+    }
+  ]
+}

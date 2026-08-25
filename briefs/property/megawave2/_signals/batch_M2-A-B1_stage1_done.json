@@ -1,0 +1,39 @@
+{
+  "batch_id": "M2-A-B1",
+  "agent_id": "MW2-Stage1-A",
+  "completed_at": "2026-05-26T22:15:52Z",
+  "commit_shas": [
+    "0e90605",
+    "97d42d3",
+    "c5d6ce5",
+    "4becd47",
+    "1f45394",
+    "6226093"
+  ],
+  "slugs_done": [
+    "a-complete-guide-on-incorporating-a-company-in-uk",
+    "a-guide-for-shareholders-in-the-uk",
+    "companies-house-changes-limited-partnership-requirements",
+    "corporate-tax-planning-strategies-for-uk-clients",
+    "corporation-tax-marginal-relief-uk-guide",
+    "directors-loan-accountsdla-uk-guide"
+  ],
+  "flags_raised": [
+    "F-1 HOUSE_POSITION_EXTENSION — ECCTA 2023 Part 2 + LPA 1907 LP reforms (proposed §11.B mini-lock; touched A3 + upstream-relevant for A7/A16/A18)"
+  ],
+  "discoveries_logged": [
+    "D-1 SITE_WIDE_PATTERN — generic-pillar / property-application sibling-pair architecture (A4/A5/A6 reusable pattern)",
+    "D-2 FUTURE_WAVE_PICK — ECCTA Part 2 LP commencement-state tracking page",
+    "D-3 FUTURE_WAVE_PICK — property-LtdCo Day-1-after-incorporation checklist / PDF template",
+    "D-4 CALCULATOR_IDEA — associated-companies divisor + augmented-profits multi-SPV CT calculator",
+    "D-5 SITE_WIDE_PATTERN — §11.A F-12 deprecated-URL back-patch sweep across blog/"
+  ],
+  "stage1b_attention": [
+    "F-1 §11.B HP-extension request — recommended drafted in tandem with reviewing A3 + A7 + A16 + A18 seed framing",
+    "A4 anti-templating discipline — pillar/orchestration framing must NOT collapse into child-page restatement",
+    "A5 §21.A.2 do-not-write grep — Stage 2 must verify draft against all 8 drift patterns before commit",
+    "A6 s.455 rate-by-reference at 35.75% from 6 April 2026 — Stage 2 must verify gov.uk + FA 2026 s.4 at write time"
+  ],
+  "branch": "property-megawave2-a",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave2-a"
+}

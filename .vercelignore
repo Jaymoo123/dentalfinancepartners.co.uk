@@ -1,19 +1,101 @@
-# Keep the vercel upload set sane (2026-07-09: agent worktrees under .claude/
-# ballooned the upload to 2.8GB and broke deploys). Vercel auto-ignores
-# node_modules and .git; everything else scratch/non-site goes here.
-# NEVER exclude */web/** paths - blog content lives there.
-# Patterns are ROOT-ANCHORED (leading /): an unanchored `supabase/` also matched
-# Property/web/src/lib/supabase/ and broke the build (module-not-found).
-/.claude/
-/.cache/
-/expense-reconciliation/
-/invoicing/
-/briefs/
-/docs/
-/legal/
-/supabase/
-/optimisation_engine/
-/templates/
-/_audit_digest.txt
-/icaew_extract.txt
-/icaew_lines.txt
+# ALLOWLIST (2026-08-15). Deny everything, then re-include only what a Vercel
+# build of any <site>/web actually needs. The old denylist uploaded 620 MB per
+# deploy of which ~28 MB was the site being deployed (gitignored research raws,
+# pipeline data and sibling scratch all went up; 2026-07-09 it hit 2.8 GB and
+# broke deploys). With a denylist every new heavy directory is a new incident;
+# with this allowlist it is excluded by default.
+#
+# Builds need: <site>/web (all of it), <site>/niche.config.json (imported by
+# web/src via relative path), /packages (workspace dep, transpilePackages +
+# outputFileTracingRoot), root package.json + lockfile, /config + /sites
+# (tiny, read by tooling). NOTHING else.
+#
+# gitignore semantics: a file inside an excluded parent cannot be re-included,
+# so each site needs the include-dir / exclude-contents / re-include-web chain.
+/*
+!/package.json
+!/package-lock.json
+!/packages
+!/config
+!/sites
+
+!/Dentists
+/Dentists/*
+!/Dentists/web
+!/Dentists/niche.config.json
+!/Medical
+/Medical/*
+!/Medical/web
+!/Medical/niche.config.json
+!/Property
+/Property/*
+!/Property/web
+!/Property/niche.config.json
+!/Solicitors
+/Solicitors/*
+!/Solicitors/web
+!/Solicitors/niche.config.json
+!/ashfield
+/ashfield/*
+!/ashfield/web
+!/ashfield/niche.config.json
+!/care
+/care/*
+!/care/web
+!/care/niche.config.json
+!/charities
+/charities/*
+!/charities/web
+!/charities/niche.config.json
+!/console
+/console/*
+!/console/web
+!/console/niche.config.json
+!/construction-cis
+/construction-cis/*
+!/construction-cis/web
+!/construction-cis/niche.config.json
+!/contractors-ir35
+/contractors-ir35/*
+!/contractors-ir35/web
+!/contractors-ir35/niche.config.json
+!/crypto
+/crypto/*
+!/crypto/web
+!/crypto/niche.config.json
+!/digital-agency
+/digital-agency/*
+!/digital-agency/web
+!/digital-agency/niche.config.json
+!/divorce-finances
+/divorce-finances/*
+!/divorce-finances/web
+!/divorce-finances/niche.config.json
+!/ecommerce
+/ecommerce/*
+!/ecommerce/web
+!/ecommerce/niche.config.json
+!/generalist
+/generalist/*
+!/generalist/web
+!/generalist/niche.config.json
+!/hospitality
+/hospitality/*
+!/hospitality/web
+!/hospitality/niche.config.json
+!/pharmacies
+/pharmacies/*
+!/pharmacies/web
+!/pharmacies/niche.config.json
+!/startups-tech
+/startups-tech/*
+!/startups-tech/web
+!/startups-tech/niche.config.json
+!/wills-probate
+/wills-probate/*
+!/wills-probate/web
+!/wills-probate/niche.config.json
+
+# Heavy content that lives INSIDE web dirs but is never part of a build:
+**/web/.next
+**/web/node_modules

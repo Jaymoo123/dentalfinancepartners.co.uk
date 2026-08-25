@@ -11,6 +11,12 @@ metaDescription: "How the Additional Roles Reimbursement Scheme works: reimbursa
 altText: "Primary care network pharmacist and physiotherapist working alongside GP practice staff"
 image: ""
 h1: "ARRS Explained: Reimbursement, Employing PCN Staff and the Tax Consequences"
+keyTakeaways:
+- "ARRS reimburses actual salary plus defined employer on-costs (employer National Insurance and employer pension) up to a per-whole-time-equivalent maximum, so anything paid above the cap is a real net cost the network funds itself."
+- "For 2025/26 the separate GP ARRS pot was merged into the main scheme, practice nurses were added, and there is no cap on the number of GPs who can be engaged."
+- "When one entity employs staff and recharges them to member practices for consideration, HMRC is likely to treat that as a standard-rated supply of staff at 20%, which GP practices largely cannot recover because their income is mostly exempt."
+- "Joint or concurrent employment avoids the supply-of-staff VAT problem because there is no supply between separate organisations, and a properly constituted Cost Sharing Group supplying members at cost can be VAT-exempt."
+- "The Employment Allowance is 10,500 pounds for 2025/26, and HMRC treats providers of NHS primary medical services (GP practices) as outside the public-sector restriction so a practice can generally claim it, though a separate PCN company should take advice."
 summary: "The Additional Roles Reimbursement Scheme is widely misread as free money for extra staff, when it is a reimbursement of defined employment costs up to a capped maximum, with real tax and VAT consequences for whoever does the employing. This guide takes the practical employer view: which roles are reimbursable, how the cap works, who can legally employ the staff and how each model changes the payroll, the NHS pension, the Employment Allowance and, most importantly, the VAT supply-of-staff question. It closes with how the reimbursement should sit in the accounts."
 schema: ""
 faqs:

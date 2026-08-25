@@ -31,7 +31,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Since April 2021, medium and large agencies must determine IR35 status for freelancers working through their own limited company.
-- If your agency meets two of three criteria (turnover over £10.2m, balance sheet over £5.1m, over 50 employees), you are medium or large and must issue a Status Determination Statement.
+- If your agency meets two of three criteria (turnover over £15m, balance sheet over £7.5m, over 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you are medium or large and must issue a Status Determination Statement.
 - Small agencies are exempt from making IR35 determinations, but freelancers remain responsible; HMRC can still challenge and pursue the agency for knowingly facilitating avoidance.
 - When a freelancer is inside IR35, you must deduct PAYE income tax and employee NI, pay employer NI at 15%, and may need to make pension contributions.
 - Engaging a freelancer inside IR35 increases your cost beyond their day rate due to employer NI, and the freelancer receives less net pay, often leading to a higher negotiated rate.
@@ -70,10 +70,11 @@ keyTakeaways:
 <p>How do you know if your agency is medium or large? You meet two of the following three criteria in the current or previous financial year:</p>
 
 <ul>
-<li>Annual turnover over £10.2 million</li>
-<li>Balance sheet total over £5.1 million</li>
+<li>Annual turnover over £15 million (previously £10.2 million)</li>
+<li>Balance sheet total over £7.5 million (previously £5.1 million)</li>
 <li>More than 50 employees</li>
 </ul>
+<p>The higher limits apply for financial years beginning on or after 6 April 2025. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>If your agency is below these thresholds, you are small. The freelancer must determine their own IR35 status. But here is the catch: HMRC can still challenge the freelancer's determination, and if they find it wrong, the freelancer pays the tax. That does not mean you are off the hook entirely. If HMRC believes you knowingly facilitated tax avoidance, they can come after you.</p>
 

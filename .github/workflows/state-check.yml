@@ -1,0 +1,99 @@
+name: State check
+
+# Walks the estate every morning and reports what drifted: balances running
+# down, migrations not in prod, data feeds that stopped, flags never set,
+# secrets a live workflow needs but the repo lacks, lead flow per site.
+#
+# It only ever READS. It cannot fix, change or delete anything. A red run here
+# means "go and look", never "something was done".
+#
+# The snapshot from the previous run is restored from cache so the script can
+# say what is NEW or GONE since yesterday. That comparison is what stops this
+# becoming another stale checklist: a new cron, table or env var announces
+# itself without anyone remembering to add it.
+#
+# Secrets it uses. Missing ones do not break the run: the lane reports BLIND,
+# which is itself a finding.
+#   SUPABASE_ACCESS_TOKEN  (have)  schema, freshness, jobs, leads lanes
+#   VERCEL_TOKEN           (ADD)   vercel_env lane
+#   VERCEL_ORG_ID          (ADD)   vercel_env lane
+#   TWILIO_ACCOUNT_SID     (ADD)   money lane - the one with a clock on it
+#   TWILIO_AUTH_TOKEN      (ADD)   money lane
+#
+# KNOWN GAP: a failed run emails via GitHub's own notification, but a run that
+# never happens is silent. A real dead-man's switch needs an external pinger.
+# The 6-hourly lead-capture tripwire gives partial independent cover meanwhile.
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily, 06:00 UTC, before the working day
+  workflow_dispatch: {}
+
+jobs:
+  state-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install --quiet httpx python-dotenv
+
+      - name: Restore yesterday's snapshot
+        uses: actions/cache@v4
+        with:
+          path: out
+          key: state-check-${{ github.run_id }}
+          restore-keys: state-check-
+
+      - name: Run state check
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # --json to out/run.json for the email step; the table reprint keeps the
+        # run log human-readable; the exit code still turns the run red on
+        # ALARM/BLIND so GitHub's own notification remains the backstop.
+        run: |
+          set +e
+          python scripts/state_check.py --json > out/run.json
+          code=$?
+          python - <<'PY'
+          import json
+          d = json.load(open("out/run.json"))
+          for f in d.get("findings", []):
+              print(f"{f['status']:8} {f.get('lane','-'):11} {f['name']:44} {f.get('detail','')}")
+          PY
+          exit $code
+
+      - name: Email when the alarm set changes (deduped, never a daily nag)
+        if: always()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+          TRIPWIRE_NOTIFY_TO: ${{ secrets.TRIPWIRE_NOTIFY_TO }}
+        run: python scripts/state_check_email.py
+
+      - name: Dead-man ping (silence at Better Stack = this workflow died)
+        if: always()
+        env:
+          HEARTBEAT_STATE_CHECK: ${{ secrets.HEARTBEAT_STATE_CHECK }}
+        # Pings only when the check actually produced output - a crashed run
+        # must NOT ping, that silence is exactly the alert.
+        run: |
+          if [ -s out/run.json ] && [ -n "$HEARTBEAT_STATE_CHECK" ]; then
+            curl -fsS --max-time 10 "$HEARTBEAT_STATE_CHECK" || true
+          fi
+
+      - name: Keep the snapshot even when the check goes red
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-check-snapshot
+          path: out/state_check_*.json
+          retention-days: 90

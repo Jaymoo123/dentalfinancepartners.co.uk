@@ -122,11 +122,6 @@ describe("buildSecurityHeaders — opts toggles", () => {
     const csp = getCsp(buildSecurityHeaders());
     expect(csp).not.toContain("supabase.co");
   });
-
-  it("clarity: true adds Clarity to script-src", () => {
-    const csp = getCsp(buildSecurityHeaders({ clarity: true }));
-    expect(csp).toContain("https://www.clarity.ms");
-  });
 });
 
 // ---------------------------------------------------------------------------

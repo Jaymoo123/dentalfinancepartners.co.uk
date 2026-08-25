@@ -48,8 +48,11 @@ if not SUPABASE_URL or not SUPABASE_KEY:
 # Owner ruling 2026-07-11: the $0.85/day default exists for AUTOMATED runs;
 # interactive/manager-driven research may override via the env var. Sub-agents
 # still must never set it themselves.
-DATAFORSEO_CEILING_USD: float = 1.00
-DATAFORSEO_ABORT_AT: float = float(os.environ.get("DATAFORSEO_ABORT_AT", "0.85"))
+# Owner ruling 2026-08-15: approved raising the automated default to $5.00/day
+# to cover the dual-source SERP provider's DFS side (serp_provider.py). Env
+# override semantics unchanged.
+DATAFORSEO_CEILING_USD: float = 5.00
+DATAFORSEO_ABORT_AT: float = float(os.environ.get("DATAFORSEO_ABORT_AT", "5.00"))
 
 # Per-site allocations for the first run (priority order from the brief).
 # These are SOFT ceilings used by the planner; the abort-at value above is the
@@ -77,6 +80,16 @@ DATAFORSEO_COSTS: dict[str, dict[str, Any]] = {
     # Google Ads keyword data (NOT Labs): flat per task, up to 1000 keywords.
     # Verified 2026-07-11 probe: $0.075 base + $0.0015 per keyword (10 kw cost $0.09).
     "keywords_data/google_ads/search_volume/live": {"base": 0.075, "per_row": 0.0015},
+    # Labs historical volume (niche_screener rule-churn spikes + time-travel backtest)
+    "historical_search_volume/live": {"base": 0.01, "per_row": 0.0001},
+    # SERP organic live advanced (niche_screener long-tail sampling; Serper is primary,
+    # this is the fallback). Verified pricing 2026: ~$0.002/request at depth 10.
+    "serp/google/organic/live/advanced": {"base": 0.002, "per_row": 0.0},
+    # Backlinks bulk domain-rank score for niche_screener new_domain_viability.
+    # UNVERIFIED estimate (mirrors bulk_keyword_difficulty's flat-per-task
+    # shape) - sanity-check against get_account_balance()/pricing page before
+    # a real batch, same as every other unverified row in this table.
+    "backlinks/bulk_ranks/live": {"base": 0.01, "per_row": 0.0001},
     # Free endpoints (used for credential check + balance read)
     "appendix/user_data":       {"base": 0.0,  "per_row": 0.0},
 }

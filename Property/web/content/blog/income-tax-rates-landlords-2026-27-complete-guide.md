@@ -164,6 +164,24 @@ faqs:
 
 <p>For the full 2027/28 mechanics and the legislation status, see our dedicated <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates guide</a>.</p>
 
+<h2>Company Rates, Marginal Rates and the Scottish Position</h2>
+
+<h3>What is the UK company rental income tax rate for 2026?</h3>
+
+<p>A company pays corporation tax on rental profit at 19% on profits up to £50,000, 25% on profits above £250,000, and an effective 26.5% on the slice between the two where marginal relief applies. There are no 20/40/45% bands inside a company, and Section 24 does not apply, so mortgage interest is deducted in full before the tax is calculated. The £50,000 and £250,000 limits are divided by the number of associated companies, so a landlord holding five SPVs under common control has a £10,000 small profits limit and a £50,000 upper limit in each one. And a company that lets to connected persons or their family is a close investment-holding company, taxed at 25% at every profit level: the 19% small profits rate survives only where the letting is commercial and to unconnected tenants.</p>
+
+<h3>What is a landlord's marginal tax rate, basic rate versus higher rate?</h3>
+
+<p>Your marginal rate is 20% while total income sits at or below £50,270 and 40% above it, and only the slice above £50,270 is taxed at 40%. A landlord with a £45,000 salary and £10,000 of rental profit pays 20% on the first £5,270 of that profit and 40% on the remaining £4,730, not 40% on all of it. Between £100,000 and £125,140 the personal allowance taper lifts the effective marginal rate to 60%. And because Section 24 taxes rental profit calculated before mortgage interest, your marginal rate applies to a bigger figure than the cash you keep, which is why the effective rate on real profit can run far above 40%. Scottish taxpayers cross into their 42% higher rate at £43,663, not £50,270.</p>
+
+<h3>What is the taxable income on a second property let in Scotland in 2026/27?</h3>
+
+<p>The taxable figure is the rental profit, not the rent: gross rent less allowable expenses, calculated before any mortgage interest, and it stacks on top of your other income. A second property carries no allowance or band of its own. Take a Scottish taxpayer with a £35,000 salary who receives £8,000 of rent and has £2,000 of allowable expenses. The £6,000 profit sits inside the Scottish intermediate band, so the tax is 21%, or £1,260. Push the same profit above £43,663 of total income and the rate on the excess is 42%. Where there is a mortgage, the Section 24 reducer is then given at the UK basic rate of 20%, not at a Scottish rate.</p>
+
+<h3>Can you still make money as a landlord in 2027?</h3>
+
+<p>Yes, but the margin narrows most for geared higher-rate landlords. From 6 April 2027 property income in England, Wales and Northern Ireland is taxed at 22% basic, 42% higher and 47% additional; only Scotland is carved out, where Holyrood-set rates continue to apply. The Section 24 reducer rises from 20% to 22% at the same time, so a basic-rate landlord sees no new wedge open at all, and a higher-rate landlord's relief improves by 2 percentage points while the rate on their profit also rises by 2. Taking the rate change on its own, a higher-rate landlord with £40,000 of rental profit pays roughly £800 more tax a year; where the property is geared, the reducer moving from 20% to 22% offsets part of that, and on a heavily mortgaged let it can offset most of it. Gearing, not the rate change, is what decides whether a property makes money: an unmortgaged let, a basic-rate owner, or a company structure all absorb the 2027 change comfortably, while a highly geared property in higher-rate hands was already the difficult case under Section 24.</p>
+
 <h2>Common Mistakes Landlords Make on the 2026/27 Return</h2>
 
 <ul>

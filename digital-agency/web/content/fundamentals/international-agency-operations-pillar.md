@@ -21,7 +21,7 @@ faqs:
   - question: "Do I need to register for VAT in the EU if I invoice a single EU client?"
     answer: "If your client is a business (B2B), the reverse charge applies, and you do not need to register for VAT in their country. If your client is a consumer (B2C), and your total sales to that country exceed the local VAT registration threshold (typically €10,000-€35,000), you must register. Use the VAT MOSS system to simplify this."
   - question: "Can I pay myself a dividend from my UAE company without UK tax?"
-    answer: "If you are a UK resident, dividends from a foreign company are taxable in the UK in the same way as UK dividends. You would pay dividend tax at 10.75%, 35.75%, or 39.35%, depending on your income band. However, if you are a non-dom and you do not remit the dividend to the UK, it is tax-free under the remittance basis (subject to the remittance basis charge)."
+    answer: "If you are a UK resident, dividends from a foreign company are taxable in the UK in the same way as UK dividends. You would pay dividend tax at 10.75%, 35.75%, or 39.35%, depending on your income band. However, if you are in one of your first 4 tax years of UK residence after at least 10 consecutive tax years of non-UK residence, you can claim the 4-year FIG regime and the dividend is relieved from UK tax, and you can bring it to the UK with no tax charge (the old remittance basis was abolished from 6 April 2025)."
   - question: "What happens if HMRC challenges my UAE entity as a sham?"
     answer: "HMRC can challenge any structure they believe is artificial. To defend against this, your UAE entity must have real economic substance: a physical office, local staff, local bank accounts, and genuine business activity. A shell company with no substance will be attacked. We recommend a minimum of two full-time UAE-based staff and a physical office (not just a flexi-desk)."
   - question: "Is it worth setting up a UAE entity if I only have £100,000 of international profits?"
@@ -39,7 +39,7 @@ faqs:
 <h3>The shift from domestic to global</h3>
 <p>UK agencies have always served international clients. But the landscape has changed. A digital agency in Shoreditch can win a retainer with a Dubai-based tech firm without leaving their desk. A PR agency in Manchester Northern Quarter can manage a global campaign for a US brand. The opportunity is real. So are the tax risks.</p>
 
-<p>If you invoice a US client from your UK company, you must consider US withholding tax. If you set up a UAE entity, you must manage transfer pricing. If you are a non-dom founder, your remittance basis election affects every pound you bring into the UK. Get it wrong, and HMRC will find you. Get it right, and you can legitimately reduce your tax bill and grow your agency faster.</p>
+<p>If you invoice a US client from your UK company, you must consider US withholding tax. If you set up a UAE entity, you must manage transfer pricing. If you are a recent arriver, whether you qualify for and claim the 4-year FIG regime affects how your foreign income is taxed. Get it wrong, and HMRC will find you. Get it right, and you can legitimately reduce your tax bill and grow your agency faster.</p>
 
 <h3>Common international structures for agencies</h3>
 <p>Most agency founders we see use one of three structures:</p>
@@ -132,25 +132,23 @@ faqs:
 
 <h2>Non-Dom Rules: What Every Agency Founder Needs to Know</h2>
 
-<h3>The remittance basis explained</h3>
-<p>If you are a UK resident but not domiciled in the UK (a non-dom), you can elect to be taxed on the remittance basis. This means you only pay UK tax on foreign income and gains if you bring them into the UK. Keep them outside the UK, and they are tax-free.</p>
+<h3>The remittance basis: now historic</h3>
+<p>If you were a UK resident but not domiciled in the UK (a non-dom), you could elect to be taxed on the remittance basis, paying UK tax on foreign income and gains only if you brought them into the UK. The remittance basis was abolished from 6 April 2025 and replaced by the 4-year FIG regime for qualifying new residents.</p>
 
-<p>For agency founders, this is powerful. If you have a UAE company that generates profits, and you leave those profits in the UAE, you pay no UK tax on them. You can use them to fund your lifestyle in the UAE, invest in global assets, or build a war chest for your next venture.</p>
+<p>Under the FIG regime, if you are in one of your first 4 tax years of UK residence following at least 10 consecutive tax years of non-UK residence, you can claim full relief on foreign income and gains each year via Self Assessment. Claiming costs your personal allowance and CGT annual exempt amount, but the relieved income can be brought to the UK with no tax charge. So UAE company profits earned during those years can fund your life wherever you choose, including the UK.</p>
 
-<p>But the remittance basis comes with a cost. If you have been UK resident for 7 of the last 9 tax years, you must pay the remittance basis charge: £30,000 per year. After 12 years, it rises to £60,000 per year. After 15 years, you become deemed domiciled, and the remittance basis is no longer available.</p>
+<p>The old remittance basis charges (£30,000 after 7 of the last 9 tax years of UK residence, £60,000 after 12 years) applied up to 5 April 2025 and are now historic.</p>
 
-<h3>Deemed domicile: the 15-year rule</h3>
-<p>If you have been UK resident for 15 of the last 20 tax years, you are deemed domiciled in the UK. This means you are taxed on your worldwide income and gains, regardless of where they are. You cannot use the remittance basis. Your UAE company profits become taxable in the UK.</p>
+<h3>Domicile no longer drives income tax and CGT</h3>
+<p>The old deemed-domicile 15-year rule is also historic. From 6 April 2025, income tax and CGT are residence-based: domicile no longer determines them. Inheritance tax now uses a long-term-residence test instead of domicile.</p>
 
-<p>This is a hard deadline. If you are a non-dom founder approaching year 15, you have a choice: leave the UK before the 15-year point, or accept that your global income will be taxed in the UK. Many agency founders we work with plan their exit from the UK around this rule.</p>
+<p>For founders who previously used the remittance basis, the Temporary Repatriation Facility (TRF) lets you designate pre-6 April 2025 foreign income and gains at 12% in 2025/26 and 2026/27 and 15% in 2027/28. The facility closes on 5 April 2028.</p>
 
-<p>Note: the UK government has proposed abolishing the non-dom regime from April 2025, replacing it with a four-year foreign income exemption for new arrivals. At the time of writing (August 2025), this has not been enacted. But it is coming. If you are a non-dom, you need to be planning for this change now.</p>
-
-<h3>Structuring your agency for non-dom status</h3>
-<p>If you are a non-dom, your agency structure should reflect your status. The typical approach is:</p>
+<h3>Structuring your agency as an internationally mobile founder</h3>
+<p>If you are a recent arriver claiming the FIG regime, or planning around it, your agency structure should reflect that. The typical approach is:</p>
 <ul>
 <li><strong>UK company</strong>, holds UK clients and UK staff. You draw a salary and dividends from this company, which are taxed in the UK.</li>
-<li><strong>Offshore company</strong> (UAE, Hong Kong, Singapore), holds international clients and international staff. You do not draw income from this company into the UK. You keep it offshore.</li>
+<li><strong>Offshore company</strong> (UAE, Hong Kong, Singapore), holds international clients and international staff. Income from this company is relieved from UK tax during your FIG-regime years if you claim, and can be brought to the UK with no tax charge; once the 4-year window ends it is taxed on the arising basis.</li>
 <li><strong>Personal offshore trust</strong>, holds your shares in the offshore company. This protects the assets from UK inheritance tax and gives you flexibility to pass wealth to your children.</li>
 </ul>
 <p>This structure is not tax evasion. It is legitimate tax planning using the rules Parliament created. But it must be documented properly. HMRC will ask questions. You need professional advice from an accountant who understands both UK and UAE tax law.</p>
@@ -232,7 +230,7 @@ faqs:
 <li>A UAE trading company that services international clients.</li>
 <li>The holding company owns the shares of both trading companies.</li>
 </ul>
-<p>When you sell, you sell the holding company shares. The buyer gets the whole group. You pay 18% CGT on the gain (up to £1M, with BADR) and 24% on the rest. If you are a non-dom, you might sell the UAE company separately and keep the proceeds offshore.</p>
+<p>When you sell, you sell the holding company shares. The buyer gets the whole group. You pay 18% CGT on the gain (up to £1M, with BADR) and 24% on the rest. If you qualify for the FIG regime at the time of sale, a gain on a separate UAE company can be relieved from UK CGT if you claim, and the proceeds can be brought to the UK with no tax charge.</p>
 
 <p>We have seen agency founders sell their UAE company for £2M, pay 0% UAE CGT, and keep the entire £2M outside the UK. This is legal if structured correctly. But it requires planning years in advance.</p>
 
@@ -246,8 +244,8 @@ faqs:
 <li><strong>Set up your accounting software.</strong> Use Xero or QuickBooks with multi-currency capability. Set up separate bank accounts for each entity. Use Dext to capture receipts in different currencies.</li>
 <li><strong>Register for VAT where needed.</strong> If you invoice EU consumers, register for VAT MOSS. If you invoice UAE clients from your UAE entity, register for UAE VAT (5%).</li>
 <li><strong>Prepare your W-8BEN-E forms.</strong> If you invoice US clients, have these ready. Update them every three years.</li>
-<li><strong>Review your non-dom status.</strong> If you are a non-dom, calculate your remittance basis charge and plan for the 15-year rule. Consider whether to leave the UK before April 2025.</li>
-<li><strong>Plan your exit.</strong> Structure your group so that you can sell tax-efficiently. If you are a non-dom, consider keeping your UAE company separate from your UK company.</li>
+<li><strong>Review your residence position.</strong> Check whether you qualify for the 4-year FIG regime and, if you previously used the remittance basis, whether to use the Temporary Repatriation Facility before it closes on 5 April 2028.</li>
+<li><strong>Plan your exit.</strong> Structure your group so that you can sell tax-efficiently. If you qualify for the FIG regime, consider keeping your UAE company separate from your UK company.</li>
 <li><strong>Get professional advice.</strong> This is not a DIY project. You need an accountant who specialises in international agency structures. <a href="/contact">Contact us</a> to discuss your situation.</li>
 </ol>
 

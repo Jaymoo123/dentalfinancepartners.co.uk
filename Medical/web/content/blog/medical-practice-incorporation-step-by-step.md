@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Medical Practice Incorporation: Step-by-Step Guide 2026/27"
-metaDescription: "How UK doctors incorporate private practice work, step by step: form the company, transfer the business, banking, VAT, payroll and the NHS pension trap to avoid."
+metaDescription: "How UK doctors incorporate private practice work, step by step: form the company, transfer the business, banking, VAT, payroll and the NHS pension trap."
 altText: "Professional medical office environment showing incorporation documents and financial planning materials for UK doctors"
 image: ""
 h1: "Medical Practice Incorporation Step by Step: Complete Guide for UK Doctors"
@@ -28,6 +28,12 @@ howtoSteps:
     text: "Register only if standard-rated taxable turnover exceeds £90,000 in any rolling 12 months. Most medical care is exempt, but cosmetic, medico-legal or some occupational-health work can push you over."
   - name: "Set up payroll and decide your extraction"
     text: "If you take a salary, register as an employer and operate PAYE with Real Time Information reporting, then run the ongoing bookkeeping, annual accounts and corporation tax return."
+keyTakeaways:
+- "A limited company cannot hold an NHS GMS or PMS contract, so incorporation is a decision about your private work only, never your NHS post."
+- "Private or locum income taken as dividends is not NHS-pensionable, so you must price the lost pension accrual in alongside any tax saving before incorporating."
+- "The sale of NHS GP goodwill has been prohibited since 1 April 2004 (current instrument SI 2019/251), so only transferable private-practice goodwill can change hands on incorporation."
+- "VAT registration is required only where standard-rated turnover (cosmetic, medico-legal or some occupational-health work) exceeds £90,000 in any rolling 12 months, because genuine medical care is exempt under VATA 1994 Schedule 9 Group 7."
+- "An overdrawn director's loan in a close company triggers an s.455 charge on the balance outstanding 9 months and 1 day after the period-end, at 33.75% for 2025/26 loans and 35.75% for loans made on or after 6 April 2026."
 summary: "A practical, step-by-step guide to incorporating private medical work in the UK: the decision first (private work only, plus the NHS pension trap), then forming the company, transferring the business, banking, VAT, payroll and dividends, and the pitfalls to avoid."
 schema: ""
 faqs:

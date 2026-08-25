@@ -15,9 +15,9 @@ summary: The Annual Investment Allowance (AIA) gives 100% tax relief on qualifyi
 schema: ''
 faqs:
 - question: Can I claim the AIA on a car?
-  answer: No. Cars are specifically excluded from the AIA. They go into the main pool at 18% writing down allowance (for cars with CO2 emissions up to 50g/km) or the special rate pool at 6% (for cars over 50g/km). Electric cars qualify for 100% first-year allowances, but that is a separate relief from the AIA. If you buy a van or a lorry, those qualify for the AIA.
+  answer: No. Cars are specifically excluded from the AIA. They go into the main pool (18% writing down allowance for 2024/25, 14% for chargeable periods beginning on or after 1 April 2026 for companies and 6 April 2026 for income tax under FA 2026 s.28) for cars with CO2 emissions up to 50g/km, or the special rate pool at 6% for cars over 50g/km. Electric cars qualify for 100% first-year allowances, but that is a separate relief from the AIA. If you buy a van or a lorry, those qualify for the AIA.
 - question: What happens if I spend more than £1m on qualifying plant?
-  answer: You claim the AIA on the first £1m of qualifying expenditure. The remaining amount goes into the main pool or special rate pool and attracts writing down allowances at 18% or 6% per year. For limited companies, Full Expensing may cover the excess if the assets are main-rate plant and machinery. Sole traders and partnerships cannot use Full Expensing, so the excess is relieved more slowly.
+  answer: You claim the AIA on the first £1m of qualifying expenditure. The remaining amount goes into the main pool or special rate pool and attracts writing down allowances at 18% (2024/25 main-pool rate, cut to 14% from April 2026 by FA 2026 s.28) or 6% per year. For limited companies, Full Expensing may cover the excess if the assets are main-rate plant and machinery. Sole traders and partnerships cannot use Full Expensing, so the excess is relieved more slowly.
 - question: Do I need to claim the AIA in the same year I buy the asset?
   answer: Yes. The AIA is a first-year allowance. You must claim it in the accounting period when the expenditure is incurred. You cannot defer the claim to a later year. If you miss the deadline, you lose the relief. You have 12 months from the filing date of the return to amend it and add the claim. After that, the claim is permanently lost.
 - question: Does the AIA apply to second-hand assets?
@@ -32,7 +32,7 @@ imageCredit:
   source_url: https://www.pexels.com/photo/ukrainian-hryvnia-banknotes-and-coins-closeup-34926375/
 keyTakeaways:
   - "The Annual Investment Allowance for 2024/25 is permanently set at £1,000,000 per 12-month accounting period, giving 100% tax relief on qualifying plant and machinery in the year of purchase."
-  - "Cars are excluded from the AIA and instead attract writing down allowances of 18% in the main pool, or 6% in the special rate pool, depending on CO2 emissions."
+  - "Cars are excluded from the AIA and instead attract writing down allowances of 18% in the main pool for 2024/25 (14% from April 2026 under FA 2026 s.28), or 6% in the special rate pool, depending on CO2 emissions."
   - "When a business controls multiple associated companies, the £1m AIA limit is shared between them, so two companies under common control each receive £500,000."
   - "For accounting periods shorter than 12 months, the AIA limit is reduced proportionally; a six-month period gives a limit of £500,000."
   - "Full Expensing, introduced from 1 April 2023, provides 100% first-year relief with no cap, but is only available to limited companies and not to sole traders or partnerships."
@@ -76,7 +76,7 @@ keyTakeaways:
 <p>There are important exclusions. The AIA does not cover:</p>
 
 <ul>
-<li>Cars (these go into the main pool at 18% or special rate pool at 6%)</li>
+<li>Cars (these go into the main pool at 18% for 2024/25, 14% from April 2026, or the special rate pool at 6%)</li>
 <li>Land and buildings (structures and buildings get a separate 3% allowance)</li>
 <li>Assets used partly for non-business purposes</li>
 <li>Assets bought before you started the trade</li>
@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p>Here is a worked example. A Manchester-based software consultancy buys £80,000 of new servers and networking equipment in the year to 31 March 2025. The company has taxable profits of £420,000. The full £80,000 qualifies for AIA. The company deducts £80,000 from its profits, reducing taxable profits to £340,000. Corporation tax at 25% on the reduced profit saves £20,000 in tax compared to not claiming the AIA.</p>
 
-<p>If the same company spent £1.2m on qualifying plant, only the first £1m gets AIA relief. The remaining £200,000 goes into the main pool at 18% writing down allowance. That is still good relief, just not immediate.</p>
+<p>If the same company spent £1.2m on qualifying plant, only the first £1m gets AIA relief. The remaining £200,000 goes into the main pool at the 18% writing down allowance that applied to that year to 31 March 2025, giving £36,000 in year one. For a year beginning on or after 1 April 2026 the rate is 14%, giving £28,000. That is still good relief, just not immediate.</p>
 
 <h2>How to claim the AIA</h2>
 
@@ -121,7 +121,7 @@ keyTakeaways:
 
 <p>Several errors crop up regularly when businesses claim the AIA.</p>
 
-<p><strong>Claiming on cars.</strong> Cars are excluded from the AIA. They go into the main pool at 18% or the special rate pool at 6%, depending on CO2 emissions. Electric cars get 100% first-year allowances, but that is a different relief.</p>
+<p><strong>Claiming on cars.</strong> Cars are excluded from the AIA. They go into the main pool at 18% for 2024/25 (14% from April 2026 under FA 2026 s.28) or the special rate pool at 6%, depending on CO2 emissions. Electric cars get 100% first-year allowances, but that is a different relief.</p>
 
 <p><strong>Forgetting the connected party rule.</strong> If you buy an asset from your spouse or a company you control, the AIA is not available. The same applies if you buy from a partnership you are a member of.</p>
 

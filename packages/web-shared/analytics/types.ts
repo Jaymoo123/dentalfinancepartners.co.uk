@@ -67,6 +67,14 @@ export function isKnownEvent(name: string): name is EventName {
  * The ingest endpoint flips web_sessions.human_confirmed=true on the first of
  * these. engagement_time is included because the client only emits it AFTER a
  * genuine pointer/keyboard/touch/scroll input has been seen this session.
+ *
+ * `support_opened` is deliberately NOT here. SpecialistWidget auto-opens and
+ * emits it with props.via="auto": 99.4% of the 08-20..08-23 volume across the
+ * estate (1,921 of 1,934) was via="auto", i.e. the page opening a widget at
+ * itself, not a person doing anything. Counting it confirmed a "human" on every
+ * headless hit that merely loaded a page, which is what let the 2026-08-22 bot
+ * fleet through the analytics bot gate. If a click-only signal is wanted, gate
+ * on props.via !== "auto" at the call site, not on the event name.
  */
 export const INTERACTION_EVENTS: ReadonlySet<string> = new Set([
   "engagement_time",
@@ -92,7 +100,6 @@ export const INTERACTION_EVENTS: ReadonlySet<string> = new Set([
   "form_step_back",
   "lead_submitted",
   "personalization_clicked",
-  "support_opened",
   "subscribe_submitted",
   "experiment_action",
 ]);

@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/locations`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/research`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/research/uk-contractor-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/research/uk-contractor-survival-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/research/uk-contractor-insolvency-index`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },

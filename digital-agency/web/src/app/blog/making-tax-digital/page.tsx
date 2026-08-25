@@ -12,7 +12,7 @@ const categoryName = "Making Tax Digital";
 const categorySlug = "making-tax-digital";
 
 export const metadata: Metadata = {
-  title: `Making Tax Digital for Agency Founders | ${siteConfig.name}`,
+  title: `Making Tax Digital for Agency Founders`,
   description: `MTD for Income Tax and MTD for VAT explained for agency founders. Deadlines, compatible software and what you need to do to comply. Practical guidance from specialist agency accountants.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

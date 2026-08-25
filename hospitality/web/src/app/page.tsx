@@ -29,7 +29,7 @@ import { buildFaqJsonLd, buildOrganizationJsonLd } from "@/lib/schema";
 
 export function generateMetadata(): Metadata {
   return {
-    title: `Specialist Hospitality Accountants UK | ${siteConfig.name}`,
+    title: `Specialist Hospitality Accountants UK`,
     description:
       `Specialist accountants for UK restaurants, pubs, hotels, takeaways, cafes and caterers. Tronc and tips compliance, food VAT, hospitality payroll, TOMS and business rates advice.`,
     alternates: { canonical: siteConfig.url },
@@ -624,8 +624,8 @@ export default function HomePage() {
                 A regularly updated index of UK hospitality company registrations and
                 dissolutions, drawn from Companies House SIC 55/56 data (accommodation
                 and food service activities). SIC codes are self-reported at incorporation;
-                the index carries this caveat prominently. Dissolutions are cross-referenced
-                against Insolvency Service statistics.
+                the index carries this caveat prominently. Dissolutions are counted from the
+                Companies House register, so they cover strike-off as well as insolvency.
               </p>
               <div className="mt-6">
                 <Link

@@ -14,7 +14,7 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "Reflex Accounting", "privacy_policy_url": null },
+  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.accountsforlawyers.co.uk",
   "tagline": "Specialist accounting for UK solicitors and law firms",
   "description": "Expert accountants for solicitors, law firms, and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
@@ -43,7 +43,8 @@
     },
     {
       "label": "Health Check",
-      "href": "/free-firm-health-check"
+      "href": "/free-firm-health-check",
+      "hide_in_packages": true
     },
     {
       "label": "Blog",
@@ -168,6 +169,79 @@
     }
   },
   "cta": {
+    "variant": "leadgen",
+    "variants": {
+      "packages": {
+        "header_primary": {
+          "label": "See pricing",
+          "href": "/pricing"
+        },
+        "hero_primary": {
+          "label": "See plans from £49/mo",
+          "href": "/pricing"
+        },
+        "hero_secondary": {
+          "label": "Not sure? Book a free 15-min call",
+          "href": "/contact"
+        },
+        "sticky": {
+          "primary": "Fixed monthly plans from £49",
+          "secondary": "SRA Accounts Rules compliance and partner tax handled. Cancel with 1 month's notice.",
+          "button": "See pricing",
+          "href": "/pricing"
+        },
+        "blog": {
+          "cta_heading": "Ready for a solicitor accountant with clear monthly pricing?",
+          "cta_body": "Plans start at £49 a month for sole practitioners, with SRA Accounts Rules compliance and partnership tax covered as your firm grows. Not sure which plan fits your practice? Send an enquiry below and we will recommend the right one, no obligation.",
+          "cta_button": "Send enquiry"
+        },
+        "home_cta": {
+          "heading": "Pick a plan today. Cancel with one month's notice.",
+          "body": "Fixed monthly fees for sole practitioners, partnerships and LLPs, agreed up front. If you would rather talk it through first, a free 15-minute call sorts the right plan for your firm in one go.",
+          "primary": {
+            "label": "See plans and pricing",
+            "href": "/pricing"
+          },
+          "secondary": {
+            "label": "Book a free 15-min call",
+            "href": "/contact"
+          }
+        }
+      },
+      "leadgen": {
+        "header_primary": {
+          "label": "Book a call",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "Book free consultation",
+          "href": "/contact"
+        },
+        "hero_secondary": {
+          "label": "Our services",
+          "href": "/services"
+        },
+        "sticky": {
+          "primary": "Ready to work with a specialist solicitor accountant?",
+          "secondary": "Book your free consultation today",
+          "button": "Get started",
+          "href": "/contact"
+        },
+        "blog": {
+          "cta_heading": "Get specialist advice for your law firm",
+          "cta_body": "Every legal practice is different. If you would like to discuss how this applies to your specific circumstances, fill in the form below and we will arrange a short introductory call.",
+          "cta_button": "Request a callback"
+        },
+        "home_cta": {
+          "heading": "Book your free consultation",
+          "body": "Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs.",
+          "primary": {
+            "label": "Book your free consultation",
+            "href": "/contact"
+          }
+        }
+      }
+    },
     "sticky_primary": "Ready to work with a specialist solicitor accountant?",
     "sticky_secondary": "Book your free consultation today",
     "sticky_button": "Get started"

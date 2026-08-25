@@ -6,7 +6,7 @@ date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Avoiding Common ATED Mistakes: 12 Myths and Prevention"
-metaDescription: "The 12 most common ATED mistakes for chargeable persons and advisers: who is in scope, when reliefs need claiming, when 2027 bites, what RoE does not cover."
+metaDescription: "The 12 most common ATED mistakes for chargeable persons and advisers: who is in scope, when reliefs need claiming, when 2027 bites"
 altText: "An accountant's desk with a property file open beside a calculator and a return form, representing pre-filing review of an ATED position"
 image: "https://images.pexels.com/photos/6863250/pexels-photo-6863250.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

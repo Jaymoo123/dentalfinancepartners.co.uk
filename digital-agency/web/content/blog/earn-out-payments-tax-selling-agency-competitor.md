@@ -131,7 +131,7 @@ keyTakeaways:
 
 <p>Loan notes are similar. You receive loan notes that pay interest and are redeemed after a set period. The interest is taxable as income. The gain on redemption is capital. The structure of the loan notes (qualifying corporate bonds vs. non-qualifying) affects whether you can defer the gain or must pay it immediately.</p>
 
-<p>This is specialist territory. Do not try to structure loan notes yourself. You need a corporate finance solicitor and an specialist agency accountant who have done this before.</p>
+<p>This is specialist territory. Do not try to structure loan notes yourself. You need a corporate finance solicitor and a specialist agency accountant who have done this before.</p>
 
 <h2>Badr and Earn-Outs: The Two-Year Rule</h2>
 

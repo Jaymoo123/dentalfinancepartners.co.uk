@@ -11,6 +11,12 @@ metaDescription: "Which self-assessment forms a GP files by role (SA800, SA104, 
 altText: "UK GP reviewing self-assessment tax return forms and partnership statement at desk"
 image: ""
 h1: "GP Tax Return: Complete Guide for UK General Practitioners"
+keyTakeaways:
+- "A GP partner is taxed on their allocated profit share flowing from the SA800 onto their personal SA104, not on the drawings actually withdrawn during the year."
+- "For 2025/26 the online filing and payment deadline is 31 January 2027, while the paper deadline was the earlier 31 October 2026."
+- "Payments on account of 50% each are due on 31 January and 31 July where the prior-year bill exceeded £1,000 and under 80% of tax was collected at source."
+- "Self-employed GPs pay Class 4 NIC at 6% on profits between £12,570 and £50,270 and 2% above, after the main rate fell from 9% on 6 April 2024."
+- "MTD for Income Tax caught sole-trader and locum GPs with qualifying income over £50,000 from 6 April 2026, but general partnerships are deferred with no confirmed date."
 summary: "How GPs file self-assessment by role: the partnership SA800, the SA104 partnership pages, the SA103 self-employment pages and the SA100, plus deadlines, payments on account, Class 4 NIC and Making Tax Digital for 2026/27."
 schema: ""
 faqs:

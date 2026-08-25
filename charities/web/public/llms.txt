@@ -9,7 +9,7 @@ Sitemap: https://www.trusteetax.co.uk/sitemap.xml
 
 ## Services
 
-- [Independent examination](https://www.trusteetax.co.uk/services/independent-examination): Independent examination of charity accounts for charities between the £25,000 and £1m income thresholds.
+- [Independent examination](https://www.trusteetax.co.uk/services/independent-examination): Independent examination of charity accounts for charities between the examination and audit income thresholds (£25,000 and £1m; £40,000 and £1.5m for financial years ending on or after 30 September 2026).
 - [Charity accounts (SORP)](https://www.trusteetax.co.uk/services/charity-accounts): SORP-compliant accruals accounts and receipts and payments accounts for charities and CIOs.
 - [Charity bookkeeping](https://www.trusteetax.co.uk/services/charity-bookkeeping): Ongoing bookkeeping for charities, including fund accounting and restricted grant coding.
 - [Gift Aid](https://www.trusteetax.co.uk/services/gift-aid): Gift Aid and GASDS claim preparation and submission for charities and CASCs.
@@ -33,12 +33,17 @@ Sitemap: https://www.trusteetax.co.uk/sitemap.xml
 
 - [All calculators](https://www.trusteetax.co.uk/calculators): Hub for the three free interactive tools below.
 - [Gift Aid calculator](https://www.trusteetax.co.uk/calculators/gift-aid-calculator): How much a charity can reclaim from HMRC on a donation (25p per £1).
-- [Independent examination and audit checker](https://www.trusteetax.co.uk/calculators/independent-examination-audit-checker): Whether a charity needs an independent examination or a full audit, based on income and assets (England and Wales).
-- [GASDS calculator](https://www.trusteetax.co.uk/calculators/gasds-calculator): Maximum GASDS top-up claimable given Gift Aid donations in the same tax year.
+- [Independent examination and audit checker](https://www.trusteetax.co.uk/calculators/independent-examination-vs-audit-checker): Whether a charity needs an independent examination or a full audit, based on income and assets (England and Wales).
+- [GASDS calculator](https://www.trusteetax.co.uk/calculators/gasds-small-donations-calculator): Maximum GASDS top-up claimable given Gift Aid donations in the same tax year.
 
-## Original research
+## Research and data
 
-- [UK Small Charity Finance Index](https://www.trusteetax.co.uk/research/uk-small-charity-finance-index): Data on UK charity income, scrutiny levels and compliance trends from the Charity Commission public register.
+Datasets compiled from the Charity Commission full register extract, published under the Open Government Licence v3.0 (OGL). Cite as Trustee Tax analysis of Charity Commission data.
+
+- [UK Small Charity Finance Index](https://www.trusteetax.co.uk/research/uk-small-charity-finance-index): Income, scrutiny-band and financial-flow aggregates for the small-charity sector, drawn from Charity Commission open data.
+- [UK Charity Survival and Longevity Index](https://www.trusteetax.co.uk/research/uk-charity-survival-index): How long registered charities last: cohort survival rates from 1980 to 2016, median age at removal, and survival by income band. Data source: Charity Commission full register extract (OGL v3.0).
+- [UK Charity Scrutiny Cliff-Edge Monitor](https://www.trusteetax.co.uk/research/uk-charity-scrutiny-cliff): Count of England and Wales charities sitting within 10% below each statutory scrutiny threshold (£25,000 independent examination gate, £250,000 accruals/qualified examiner gate, £1,000,000 audit gate). Data source: Charity Commission full register extract (OGL v3.0).
+- [UK Charity Cause Income and Reserves Health Index](https://www.trusteetax.co.uk/research/uk-charity-cause-income?utm_source=chatgpt&utm_medium=llms): Median gross income and free-reserves health for every charitable cause classification in England and Wales, including median months of reserves and the share of charities under three months of reserves per cause. Data source: Charity Commission full register extract (OGL v3.0).
 
 ## Key facts (current UK charity figures)
 
@@ -46,9 +51,10 @@ These figures are maintained against primary sources (Charity Commission, HMRC, 
 
 - Registration threshold: charities in England and Wales must register with the Charity Commission once income exceeds £5,000 per year. A CIO must register whatever its income.
 - Annual return: all registered charities must file an annual return within 10 months of their financial year end. Content is tiered: under £10,000 income and spending only; £10,000 to £25,000 adds annual return questions; over £25,000 must also attach the trustee annual report and accounts.
-- Independent examination gate: gross income over £25,000 requires external scrutiny (independent examination or audit).
-- Audit thresholds: statutory audit mandatory when income exceeds £1,000,000, or when income exceeds £250,000 and gross assets exceed £3,260,000.
-- Qualified examiner rule: where gross income exceeds £250,000, the examiner must belong to one of the 13 listed professional bodies (ICAEW, ACCA, AAT, CIMA, etc.).
+- Independent examination gate: gross income over £25,000 requires external scrutiny (independent examination or audit) for financial years ending before 30 September 2026; the gate rises to £40,000 for financial years ending on or after 30 September 2026.
+- Audit thresholds: for financial years ending before 30 September 2026, statutory audit mandatory when income exceeds £1,000,000, or when income exceeds £250,000 and gross assets exceed £3,260,000. For financial years ending on or after 30 September 2026, the gates rise to £1,500,000 income, or £500,000 income with gross assets over £5,000,000.
+- Qualified examiner rule: where gross income exceeds £250,000 (£500,000 for financial years ending on or after 30 September 2026), the examiner must belong to one of the 13 listed professional bodies (ICAEW, ACCA, AAT, CIMA, etc.).
+- Threshold change source: DCMS threshold uplift effective 30 September 2026, applying to accounting years ending on or after that date (https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting).
 - Gift Aid basic rate: 25p reclaimed per £1 donated (£100 gift equals £125 gross, £25 claim). Requires a valid declaration; donor must have paid at least as much UK income or capital gains tax as all charities will reclaim.
 - GASDS: top-up on cash or contactless donations of £30 or less, on up to £8,000 per tax year (max £2,000 top-up). Must not exceed 10 times the Gift Aid donations in the same year. Claims within 2 years of the tax year end.
 - Gift Aid declaration retention: 6 years from the end of the accounting period (enduring declarations kept permanently).

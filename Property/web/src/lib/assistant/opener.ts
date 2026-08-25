@@ -22,11 +22,13 @@ const TOPIC_NOUN: Record<TopicKey, string> = {
   incorporation: "going limited",
   "capital-gains": "capital gains tax",
   "landlord-essentials": "your landlord tax",
+  "landlord-compliance": "your landlord compliance costs",
   mtd: "Making Tax Digital",
   portfolio: "your portfolio",
   "non-resident": "non-resident landlord tax",
   "property-types": "the tax on your property",
   "stamp-duty": "stamp duty",
+  leasehold: "your lease",
   services: "your situation",
 };
 

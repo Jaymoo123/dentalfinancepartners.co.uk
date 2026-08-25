@@ -7,10 +7,16 @@ generator: "opus-4.8/netnew-wave"
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Family Investment Company for Doctors and Consultants"
-metaDescription: "How a family investment company works for high-earning consultants and GPs, the tax on retained investment income, share-class and IHT planning, and the settlements traps."
+metaDescription: "How a family investment company works for consultants and GPs: tax on retained investment income, share-class and IHT planning, and settlements traps."
 altText: "A consultant and accountant reviewing a family investment company structure"
 image: ""
 h1: "Family Investment Companies for Doctors and Consultants: What They Are and When They Fit"
+keyTakeaways:
+- "A FIC pays corporation tax on retained investment income at 19% up to £50,000 of profits and 25% above £250,000, with marginal relief (standard fraction 3/200) between, against 45% personal income tax above the additional-rate threshold of £125,140."
+- "Most UK dividends received by the FIC are exempt from corporation tax under the dividend-exemption rules (CTA 2009 Part 9A), so a FIC holding UK equities broadly pays no CT on those dividends."
+- "Extracting income straight back to the additional-rate founder produces a combined effective rate of around 50.5% (CT plus 39.35% dividend tax), which is worse than the 45% personal route, so the FIC earns its keep through deferral and redirection to basic-rate family members taxed at 10.75% (2026/27)."
+- "Under the parental settlement rule (ITTOIA 2005 s.629) dividends above £100 per year paid to an unmarried minor child are taxed as the parent's income, so income splitting to under-18s gives no benefit until the child turns 18 or marries."
+- "A FIC is an investment company by design, so it qualifies for neither Business Property Relief nor Business Asset Disposal Relief (BADR at 18% from 6 April 2026 on the first £1 million of gains), leaving its IHT planning to rest entirely on PETs and the seven-year rule."
 summary: "A family investment company (FIC) is a bespoke private limited company holding investments rather than running a medical practice. For a high-earning consultant or GP with income already in the additional-rate band and surplus wealth beyond the NHS pension, it can shelter retained income at corporation-tax rates of 19-25% instead of 45% personal tax and keep future growth outside the estate. This guide explains the tax, share classes, IHT planning, and the settlements, minor-children and BADR traps that mean a FIC suits only doctors with genuine scale and a long-run family-wealth goal."
 schema: ""
 faqs:
@@ -43,6 +49,8 @@ faqs:
 <!-- §2.C: a FIC cannot hold an NHS GMS/PMS contract and its income is not NHS-pensionable -->
 
 <p>A FIC is not a trading company and does not hold an NHS GMS or PMS contract. It is a bespoke private limited company designed to hold investments: UK equities, bonds, cash deposits, property or a combination. The company is owned by family members through different classes of shares carrying different dividend, voting and capital rights. The founding doctor typically holds shares with strong voting rights to retain control over investment decisions, while a spouse or adult children hold shares carrying dividend or capital entitlements with limited or no votes.</p>
+
+<p>Where a FIC holds residential property rather than listed investments, the tax picture is more involved: a company buying higher-value residential property faces the 15% flat rate of SDLT and the annual ATED charge, and rental profits are taxed inside the company rather than benefiting from the dividend exemption. Doctors weighing a property-heavy structure often take specialist input on that side, and property-focused firms such as <a href="https://www.propertytaxpartners.co.uk" target="_blank" rel="nofollow noopener noreferrer">Property Tax Partners</a> deal with exactly these questions.</p>
 
 <p>When the company receives investment income, it pays corporation tax at the rates applicable to companies. Shareholders receive income from the FIC as dividends, taxed at their individual rates. Because different shareholders have different tax rates, the structure allows income to flow to whoever can receive it at the lowest marginal rate in any given year. The IHT angle works because gifted shares, and future growth on those shares, sit with the shareholder recipients rather than in the founder's estate.</p>
 

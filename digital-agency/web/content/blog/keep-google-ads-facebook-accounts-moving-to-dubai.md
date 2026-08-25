@@ -111,7 +111,7 @@ keyTakeaways:
 
 <p>This is where it gets specific to agency founders. Your ad accounts are a paper trail. HMRC can see where your business was based by looking at the billing address on your Google Ads invoices.</p>
 
-<p>If you move to Dubai but keep your UK billing address on your ad accounts, you're telling Google (and by extension HMRC) that your business is still in the UK. That undermines your non-dom or non-resident tax position.</p>
+<p>If you move to Dubai but keep your UK billing address on your ad accounts, you're telling Google (and by extension HMRC) that your business is still in the UK. That undermines your non-resident tax position.</p>
 
 <p>Conversely, if you update your billing address to a UAE address on 1 March but your UK company is still trading until 31 March, you've created a mismatch. Your ad spend is being billed to a UAE address while your UK company is still earning the revenue.</p>
 

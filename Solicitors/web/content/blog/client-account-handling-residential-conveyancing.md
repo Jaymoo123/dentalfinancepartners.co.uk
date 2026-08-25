@@ -6,8 +6,8 @@ date: "2026-05-18"
 generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "SRA Accounts Rules"
-metaTitle: "Client Account Handling for Residential Conveyancing Solicitors"
-metaDescription: "A practical guide for solicitors on SRA client account rules during residential conveyancing, covering deposit handling, exchange, completion, and reconciliation."
+metaTitle: "Client Account Handling: Residential Conveyancing Solicitors"
+metaDescription: "A practical guide for solicitors on SRA client account rules in residential conveyancing: deposit handling, exchange, completion, and reconciliation."
 altText: "Solicitor reviewing client account statements and conveyancing files in a law firm office"
 image: ""
 h1: "How Should a Solicitor Handle Client Account Money During a Residential Conveyancing Transaction?"
@@ -60,6 +60,8 @@ faqs:
 <p><strong>Worked example:</strong> Buyer B purchases a house for £300,000. They paid a £30,000 deposit. The mortgage lender advances £240,000. Buyer B must provide the remaining £30,000. At completion, the buyer's solicitor transfers £270,000 (the £240,000 mortgage plus the £30,000 balance) to the seller's solicitor. The seller's solicitor then releases the deposit (£30,000) plus the balance (£270,000) to the seller, less their fees of £1,500 and SDLT of £5,000. The seller receives £293,500.</p>
 
 <p>Each of these transfers must be recorded in the client account ledger. The five-week reconciliation must show that the total of all client account balances matches the total of all client ledger balances. Any discrepancy is a red flag.</p>
+
+<p>SDLT is only one of the property taxes a conveyancing client meets. Buy-to-let and investor clients also face capital gains tax on disposal, the higher rates of SDLT for additional dwellings, and, where property is held through a company, the annual ATED charge, areas most conveyancing firms refer out rather than advise on in-house. A property-focused accountant such as <a href="https://www.propertytaxpartners.co.uk" target="_blank" rel="nofollow noopener noreferrer">Property Tax Partners</a> handles that client-side work.</p>
 
 <h2>Residential Conveyancing Money and the Five-Week Reconciliation</h2>
 

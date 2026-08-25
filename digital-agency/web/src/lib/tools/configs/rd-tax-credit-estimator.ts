@@ -1,6 +1,6 @@
 /**
  * R&D Tax Credit Estimator — GenericTool config.
- * Post-April 2023 merged scheme. 2025/26.
+ * Merged scheme (APs beginning on/after 1 April 2024). 2026/27.
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -15,12 +15,12 @@ export const rdTaxCreditTool: GenericTool = {
   name: "R&D Tax Credit Estimator",
   category: "Tax planning",
   oneLiner:
-    "Directional estimate of your R&D tax credit under the post-April 2023 merged scheme, including the R&D-intensive enhanced rate.",
-  metaTitle: "R&D Tax Credit Estimator 2025/26 | Free UK Calculator",
+    "Directional estimate of your R&D tax credit under the merged scheme (accounting periods beginning on or after 1 April 2024), including ERIS for loss-making R&D-intensive SMEs.",
+  metaTitle: "R&D Tax Credit Estimator 2026/27 | Free UK Calculator",
   metaDescription:
-    "Free R&D tax credit estimator for UK agencies. Post-April 2023 merged scheme. Standard 20% and intensive 27% rates. No sign-up.",
+    "Free R&D tax credit estimator for UK agencies. Merged scheme from April 2024. 20% credit, ERIS worth up to ~27p per £1 net. No sign-up.",
   intro:
-    "Estimate your R&D tax credit under HMRC's merged scheme. Standard rate is 20%; R&D-intensive SMEs (40%+ of total expenditure on qualifying R&D) get 27%. This is a directional estimate only.",
+    "Estimate your R&D tax credit under HMRC's merged scheme (accounting periods beginning on or after 1 April 2024). The standard rate is a 20% taxable credit; loss-making R&D-intensive SMEs (30%+ of total expenditure on qualifying R&D) can instead claim ERIS, worth up to ~27p per £1 of qualifying spend. This is a directional estimate only.",
   embedHeight: 420,
   fields: [
     {
@@ -51,7 +51,7 @@ export const rdTaxCreditTool: GenericTool = {
       min: 0,
       max: 1000000,
       step: 1000,
-      help: "UK subcontractor invoices for R&D work. HMRC caps claim at 65% of this.",
+      help: "UK subcontractor invoices for R&D work. HMRC allows 65% of each unconnected payment; modelled here on the total.",
     },
     {
       id: "consumablesCost",
@@ -86,36 +86,50 @@ export const rdTaxCreditTool: GenericTool = {
       headline: {
         label: "Estimated net benefit",
         value: fmt(out.netBenefit),
-        sub: `Gross credit: ${fmt(out.grossCredit)} at ${pct(out.creditRate)} rate`,
+        sub: out.usedEris
+          ? `ERIS payable credit: ${fmt(out.grossCredit)} (~27p per £1 qualifying)`
+          : `Gross credit: ${fmt(out.grossCredit)} at ${pct(out.creditRate)} rate`,
         tone: out.grossCredit > 0 ? "good" : "default",
       },
       rows: [
         { label: "Qualifying expenditure", value: fmt(out.qualifying) },
         { label: "R&D intensity ratio", value: pct(out.intensityRatio) },
-        { label: "R&D intensive SME?", value: out.isIntensive ? "Yes (27% rate)" : "No (20% rate)" },
-        { label: "Gross above-the-line credit", value: fmt(out.grossCredit), strong: true },
-        { label: "Est. net benefit (after 25% CT)", value: fmt(out.netBenefit), strong: true },
+        {
+          label: "R&D intensive SME?",
+          value: out.isIntensive ? "Yes (ERIS, if loss-making)" : "No (20% credit)",
+        },
+        {
+          label: out.usedEris ? "ERIS payable credit" : "Gross above-the-line credit",
+          value: fmt(out.grossCredit),
+          strong: true,
+        },
+        {
+          label: out.usedEris ? "Est. net benefit (payable credit)" : "Est. net benefit (after 25% CT)",
+          value: fmt(out.netBenefit),
+          strong: true,
+        },
       ],
-      note: "Directional estimate only. Does not model the PAYE-NI cap, contractor restrictions in detail, or consumables/software apportionment rules. Get a scoping call for an accurate claim.",
+      note: "Directional estimate only. ERIS applies only to loss-making SMEs; profit-makers claim the 20% merged credit instead. Net benefit assumes the 25% main CT rate (19% small-profits payers keep ~16.2p per £1). Does not model the PAYE-NI cap, contractor restrictions in detail, or consumables/software apportionment rules. Get a scoping call for an accurate claim.",
     };
   },
   explainer: {
     heading: "How R&D tax credits work",
     paragraphs: [
-      "Under the merged RDEC scheme (April 2023+), companies get an above-the-line credit of 20% on qualifying expenditure. For R&D-intensive SMEs (where qualifying R&D is 40%+ of total spend), the rate rises to 27%. The credit is taxable income, so the net benefit is approximately 75% of the gross credit for a company paying 25% corporation tax.",
-      "Qualifying expenditure includes staff time on R&D, 65% of subcontractor costs, consumables and software/cloud used for R&D. Actual claims involve detailed scoping and HMRC-specific rules not fully modelled here.",
+      "Under the merged RDEC scheme (accounting periods beginning on or after 1 April 2024), companies get an above-the-line credit of 20% on qualifying expenditure. The credit is taxable income, so the net benefit is roughly 15p per £1 of qualifying spend at the 25% main corporation tax rate, or about 16.2p at the 19% small-profits rate.",
+      "Loss-making R&D-intensive SMEs (where qualifying R&D is 30%+ of total spend, lowered from 40% for accounting periods beginning on or after 1 April 2024) can instead claim ERIS: an extra 86% deduction plus a payable credit of 14.5% of the surrenderable loss, worth up to ~27p per £1 of qualifying spend. 27% is not a credit rate applied to your costs.",
+      "Qualifying expenditure includes staff time on R&D, 65% of each unconnected subcontractor payment, consumables and software/cloud used for R&D. Actual claims involve detailed scoping and HMRC-specific rules not fully modelled here.",
     ],
   },
   faqs: [
     {
       question: "What is the merged RDEC scheme?",
       answer:
-        "From April 2023, HMRC merged the SME and RDEC schemes into a single scheme for most companies. The headline rate is 20% above-the-line credit on qualifying expenditure. R&D-intensive SMEs (40%+ intensity) get a higher 27% rate.",
+        "For accounting periods beginning on or after 1 April 2024, HMRC merged the SME and RDEC schemes into a single scheme for most companies. The headline rate is a 20% above-the-line credit on qualifying expenditure. Loss-making R&D-intensive SMEs (30%+ intensity) can instead claim ERIS: an 86% extra deduction plus 14.5% of the surrenderable loss, worth up to ~27p per £1 net.",
     },
     {
       question: "Why is only 65% of subcontractor cost claimable?",
       answer:
-        "HMRC restricts claims on UK subcontractor invoices to 65% of the cost. For overseas subcontractors the rules are different and generally more restrictive.",
+        "HMRC restricts claims to 65% of each unconnected UK subcontractor payment. For overseas subcontractors the rules are different and generally more restrictive.",
     },
   ],
 };

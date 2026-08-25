@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/s
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "SDLT Refund Scams: Red Flags, Real Routes, and What HMRC Pays"
+metaTitle: "SDLT Refund Scams: Red Flags, Real Routes, What HMRC Pays"
 metaDescription: "Cold-call SDLT refund firms claim HMRC owes you money. Most fail, leaving you with HMRC interest and penalties. Red flags, real routes, what to do."
 altText: "Businessman taking a phone call on a refund claim, illustrating the cold-call sales approach used by SDLT refund scam firms"
 image: "https://images.pexels.com/photos/3760604/pexels-photo-3760604.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -146,7 +146,7 @@ editorialNote: "Consumer-protection piece. Explains the cold-call SDLT refund sc
 
 <p>The strategy in this position depends on the merits of the original claim. Where the claim was genuinely arguable on the facts, defending the enquiry through statutory review and tribunal is rational and the refund firm's engagement should commit to that defence at their cost. Where the claim was speculative and tribunal authority is squarely against the position, voluntary disclosure to HMRC under the Contractual Disclosure Facility or by simple letter usually reduces the penalty position and limits the downstream cost. Disclosure made before HMRC opens an enquiry attracts the lower penalty band; disclosure prompted by HMRC's enquiry attracts the higher band.</p>
 
-<p>Recovering the contingency fee from a refund firm where the underlying claim fails is hard. Most engagement letters disclaim liability for HMRC outcomes. Where the firm misrepresented its regulatory status, or where the engagement was procured through high-pressure cold-call sales tactics that breached the Consumer Protection from Unfair Trading Regulations 2008, a civil claim or trading-standards complaint may be available, but the recovery rate is low.</p>
+<p>Recovering the contingency fee from a refund firm where the underlying claim fails is hard. Most engagement letters disclaim liability for HMRC outcomes. Where the firm misrepresented its regulatory status, or where the engagement was procured through high-pressure cold-call sales tactics that breach the unfair commercial practices rules in Part 4 of the Digital Markets, Competition and Consumers Act 2024 (which replaced the Consumer Protection from Unfair Trading Regulations 2008 for conduct from 6 April 2025), a civil claim or trading-standards complaint may be available, but the recovery rate is low.</p>
 
 <h2>Internal links and further reading</h2>
 
@@ -156,5 +156,5 @@ editorialNote: "Consumer-protection piece. Explains the cold-call SDLT refund sc
 <li><a href="/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025">SDLT rates for buy-to-let and limited companies, 2026/27</a> , the underlying rates that any refund claim is offsetting against.</li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">HMRC SDLT Manual</a> , including SDLTM00390 on grounds and gardens.</li>
 <li><a href="https://www.tax.org.uk">Chartered Institute of Taxation</a> , public register and the 2024 warning on SDLT refund schemes.</li>
-<li><a href="https://www.gov.uk/government/publications/spotlight-63-property-business-arrangements">HMRC Spotlight 63</a> , HMRC's published consumer guidance on property-business avoidance arrangements.</li>
+<li><a href="https://www.gov.uk/guidance/property-business-arrangements-involving-hybrid-partnerships-spotlight-63">HMRC Spotlight 63</a> , HMRC's published consumer guidance on property-business avoidance arrangements.</li>
 </ul>

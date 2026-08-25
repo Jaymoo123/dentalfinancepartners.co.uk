@@ -38,11 +38,25 @@ export function Calculator({
   tool,
   variant = "page",
   resultCta,
+  eyebrow,
 }: {
   tool: GenericTool;
   variant?: "page" | "embed";
   /** Optional CTA rendered below the result (page variant). Pass a React node. */
   resultCta?: React.ReactNode;
+  /**
+   * Replaces the default black "Calculator" tag above the tool name.
+   *
+   * Same posture as `resultCta`: a React node, so a site can substitute its own
+   * pre-header without this component knowing anything about that site's design
+   * system. Eighteen sites render this component and pass nothing, so the black
+   * tag stays exactly as it was for all of them.
+   *
+   * Property passes its `<Eyebrow>`, because its five bespoke calculators
+   * already head themselves that way and the black tag was the only calculator
+   * on the site wearing a different hat.
+   */
+  eyebrow?: React.ReactNode;
 }) {
   const [values, setValues] = useState<CalcValues>(() => defaultValues(tool.fields));
   const interactedRef = useRef(false);
@@ -79,9 +93,11 @@ export function Calculator({
   return (
     <div ref={rootRef} className="bg-white border-l-4 border-[var(--brand-primary)] p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
-          Calculator
-        </div>
+        {eyebrow ?? (
+          <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
+            Calculator
+          </div>
+        )}
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">{tool.name}</h3>
         <p className="mt-2 text-sm sm:text-base text-slate-600">{tool.intro}</p>
       </div>

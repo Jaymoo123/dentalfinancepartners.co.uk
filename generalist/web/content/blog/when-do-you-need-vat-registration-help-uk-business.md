@@ -32,7 +32,7 @@ keyTakeaways:
   - "Once the £90,000 threshold is crossed, you must notify HMRC by the end of the month following the month the threshold was exceeded."
   - "A forward-looking test also applies: if you expect turnover to exceed £90,000 in the next 30 days alone, you must register immediately."
   - "Late registration carries a penalty of up to 30% of the VAT due from the period of late registration, though voluntary disclosure can reduce this."
-  - "Around 40% of UK businesses that register for VAT do so voluntarily before reaching the £90,000 threshold, mainly to reclaim input VAT on purchases."
+  - "Many UK businesses register for VAT voluntarily before reaching the £90,000 threshold, mainly to reclaim input VAT on purchases and to look established to larger customers."
   - "HMRC typically issues a VAT registration certificate within 10 working days, but the VAT number is valid from the effective date of registration so you must charge VAT immediately."
 ---
 

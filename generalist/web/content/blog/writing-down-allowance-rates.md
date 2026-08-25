@@ -51,13 +51,13 @@ keyTakeaways:
 <p>Two rates apply depending on the type of asset:</p>
 
 <ul>
-<li><strong>Main pool: 18%</strong> per year on a reducing balance basis. This covers most plant and machinery: office furniture, computers, vans, tools, and general equipment.</li>
+<li><strong>Main pool: 18%</strong> per year on a reducing balance basis for 2025/26, falling to <strong>14%</strong> for chargeable periods beginning on or after 1 April 2026 (companies) or 6 April 2026 (income tax) under FA 2026 s.28. This covers most plant and machinery: office furniture, computers, vans, tools, and general equipment.</li>
 <li><strong>Special rate pool: 6%</strong> per year on a reducing balance basis. This covers integral features (lifts, air conditioning, electrical systems), long-life assets (expected life over 25 years), thermal insulation, and cars with CO2 emissions over 50g/km.</li>
 </ul>
 
 <p>You calculate the WDA on the pool value at the end of your accounting period. The pool value is the total cost of all assets in that pool, minus any WDAs claimed in previous years.</p>
 
-<p>Here is a worked example. A Manchester-based consultancy buys office furniture for £12,000 in June 2025. They do not use the AIA on this purchase. The main pool WDA for the year ending 31 March 2026 is £12,000 x 18% = £2,160. The pool carries forward at £9,840 for the next year.</p>
+<p>Here is a worked example. A Manchester-based consultancy buys office furniture for £12,000 in June 2025. They do not use the AIA on this purchase. The main pool WDA for the year ending 31 March 2026 is £12,000 x 18% = £2,160, using the rate that applied to that pre-April 2026 period. The pool carries forward at £9,840, and the WDA for the year ending 31 March 2027 is £9,840 x 14% = £1,377.60.</p>
 
 <p>If that same consultancy installs a new air conditioning system costing £28,000, that goes into the special rate pool. The WDA is £28,000 x 6% = £1,680. The pool carries forward at £26,320.</p>
 
@@ -99,7 +99,7 @@ keyTakeaways:
 
 <p>If the pool balance is negative after a disposal, the negative amount is treated as a balancing charge in full. You do not spread it.</p>
 
-<p>Here is an example. A Bristol-based café sells a commercial oven for £3,500. The oven originally cost £8,000 and was in the main pool. The main pool balance before the sale is £12,000. After deducting £3,500, the pool balance is £8,500. The WDA for the year is £8,500 x 18% = £1,530.</p>
+<p>Here is an example. A Bristol-based café sells a commercial oven for £3,500. The oven originally cost £8,000 and was in the main pool. The main pool balance before the sale is £12,000. After deducting £3,500, the pool balance is £8,500. For a year beginning on or after 1 April 2026 the WDA is £8,500 x 14% = £1,190 (it would have been £8,500 x 18% = £1,530 for an earlier period).</p>
 
 <p>If the pool balance was £2,000 and the oven sold for £3,500, the pool goes negative by £1,500. That £1,500 is a balancing charge added to taxable profits.</p>
 
@@ -131,9 +131,9 @@ keyTakeaways:
 
 <p>Three errors we see regularly:</p>
 
-<p><strong>1. Claiming WDAs on assets that qualify for AIA without considering the interaction.</strong> You can claim AIA on most plant and machinery. If you forget to claim AIA and leave the asset in the pool, you get 18% relief instead of 100%. Check your return before filing.</p>
+<p><strong>1. Claiming WDAs on assets that qualify for AIA without considering the interaction.</strong> You can claim AIA on most plant and machinery. If you forget to claim AIA and leave the asset in the pool, you get 14% relief instead of 100% (18% for periods before April 2026). Check your return before filing.</p>
 
-<p><strong>2. Misclassifying assets between pools.</strong> Integral features like electrical systems and air conditioning must go into the special rate pool at 6%. Putting them in the main pool at 18% overclaims relief and HMRC will adjust it on enquiry.</p>
+<p><strong>2. Misclassifying assets between pools.</strong> Integral features like electrical systems and air conditioning must go into the special rate pool at 6%. Putting them in the main pool at 14% (18% before April 2026) overclaims relief and HMRC will adjust it on enquiry.</p>
 
 <p><strong>3. Forgetting the small pools allowance.</strong> If your pool balance is under £1,000, claim the full write-off. Many businesses miss this and carry forward tiny balances for years.</p>
 

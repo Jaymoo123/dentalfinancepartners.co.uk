@@ -150,4 +150,14 @@ def write_blog(
     fm_yaml = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, width=4096)
     contents = f"---\n{fm_yaml}---\n{body_html}\n"
     out_path.write_text(contents, encoding="utf-8")
+
+    # Queue for the next IndexNow drain. Best-effort: an unconfigured site or an
+    # unwritable queue must never fail a published post.
+    try:
+        from optimisation_engine.indexing.submit_indexnow import enqueue
+
+        enqueue(site_config["site_key"], fm.get("canonical", ""))
+    except Exception as exc:  # noqa: BLE001 - indexing is best-effort
+        print(f"[indexnow] skipped {site_config['site_key']}: {type(exc).__name__}: {exc}")
+
     return out_path

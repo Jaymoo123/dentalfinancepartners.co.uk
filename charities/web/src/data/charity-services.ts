@@ -20,16 +20,16 @@ export const charityServices: CharityService[] = [
     metaDescription:
       "Independent examination of charity accounts required by the Charities Act. Fixed fee, Charity Commission compliant, completed within agreed timescales.",
     intro:
-      "Charities with gross income between £25,000 and £1 million (in England and Wales) must have their accounts independently examined rather than audited. The examination provides trustees and the Charity Commission with assurance that the accounts are presented fairly and comply with the Charities SORP.",
+      "Charities with gross income between £25,000 and £1 million (in England and Wales; £40,000 and £1.5 million for financial years ending on or after 30 September 2026) must have their accounts independently examined rather than audited. The examination provides trustees and the Charity Commission with assurance that the accounts are presented fairly and comply with the Charities SORP.",
     stats: [
-      { value: "£25k", label: "Gross income threshold triggering examination" },
+      { value: "£25k", label: "Examination threshold (£40k for years ending on or after 30 Sep 2026)" },
       { value: "10 months", label: "Filing deadline after year end (Charity Commission)" },
       { value: "SORP", label: "Accounting standard all charity accounts must follow" },
     ],
     challenges: [
       {
         title: "Finding a suitably qualified examiner",
-        body: "The Charity Commission requires examiners to be independent of the charity and to have the relevant knowledge and experience. For charities with income over £250,000, the examiner must hold a specific professional qualification. Many trustees do not know where to start.",
+        body: "The Charity Commission requires examiners to be independent of the charity and to have the relevant knowledge and experience. For charities with income over £250,000 (£500,000 for financial years ending on or after 30 September 2026), the examiner must hold a specific professional qualification. Many trustees do not know where to start.",
       },
       {
         title: "Accounts prepared to the right standard",
@@ -61,11 +61,11 @@ export const charityServices: CharityService[] = [
     faqs: [
       {
         question: "Does my charity need an independent examination or a full audit?",
-        answer: "In England and Wales, charities with gross income below £25,000 need neither. Between £25,000 and £1 million an independent examination is required unless income also exceeds £250,000 and gross assets exceed £3.26 million, or its governing document requires an audit. Above £1 million a full audit is required. Scottish and Northern Irish charities have different thresholds.",
+        answer: "In England and Wales, for financial years ending before 30 September 2026: charities with gross income below £25,000 need neither. Between £25,000 and £1 million an independent examination is required unless income also exceeds £250,000 and gross assets exceed £3.26 million, or its governing document requires an audit. Above £1 million a full audit is required. For financial years ending on or after 30 September 2026 those gates rise to £40,000, £1.5 million, and £500,000 with £5 million of gross assets. Scottish and Northern Irish charities have different thresholds.",
       },
       {
         question: "Who can carry out an independent examination?",
-        answer: "For charities with income under £250,000, the examiner must be independent and have the relevant knowledge and experience but does not need a specific qualification. For income over £250,000, the examiner must hold a qualification from a list specified by the Charity Commission, which includes members of ICAEW, ACCA, CIPFA and certain other bodies.",
+        answer: "For charities with income under the qualified-examiner threshold (£250,000, rising to £500,000 for financial years ending on or after 30 September 2026), the examiner must be independent and have the relevant knowledge and experience but does not need a specific qualification. Above that threshold, the examiner must hold a qualification from a list specified by the Charity Commission, which includes members of ICAEW, ACCA, CIPFA and certain other bodies.",
       },
     ],
   },

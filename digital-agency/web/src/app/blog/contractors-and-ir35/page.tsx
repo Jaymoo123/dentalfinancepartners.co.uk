@@ -12,7 +12,7 @@ const categoryName = "Contractors & IR35";
 const categorySlug = "contractors-and-ir35";
 
 export const metadata: Metadata = {
-  title: `IR35 and Contractors for Agencies | ${siteConfig.name}`,
+  title: `IR35 and Contractors for Agencies`,
   description: `IR35 rules for agency owners and contractors working in the agency sector. How to assess employment status, set up compliant contractor relationships and avoid HMRC investigations.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

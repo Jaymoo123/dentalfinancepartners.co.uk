@@ -1,41 +1,41 @@
 ---
-title: "ATED and the 15% Flat-Rate SDLT: How the Two Charges Interact"
+title: "ATED and the 17% Flat-Rate SDLT: How the Two Charges Interact"
 slug: "ated-15-percent-flat-rate-sdlt-interaction"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction"
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "ATED and the 15% Flat-Rate SDLT: How They Interact"
-metaDescription: "Sch 4A FA 2003 imposes a 15% flat SDLT rate when a company buys a £500k+ dwelling. How the SDLT and ATED reliefs lock together, with worked examples."
+metaTitle: "ATED and the 17% Flat-Rate SDLT: How They Interact"
+metaDescription: "Sch 4A FA 2003 imposes a 17% flat SDLT rate when a company buys a £500k+ dwelling (raised from 15% on 31 Oct 2024). How SDLT and ATED reliefs lock together."
 altText: "Traditional London mews houses with painted front doors, representing high-value residential property purchased through a corporate structure"
-image: "https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/18729447/pexels-photo-18729447.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: AXP Photography
   photographer_url: https://www.pexels.com/@axp-photography-500641970
   source: Pexels
   source_url: https://www.pexels.com/photo/house-buildings-by-the-street-in-london-18729447/
-h1: "ATED and the 15% Flat-Rate SDLT: How the Two Charges Lock Together"
-summary: "When a non-natural person buys a UK dwelling for more than £500,000, Schedule 4A FA 2003 imposes a flat 15% SDLT rate at acquisition and ATED can bite annually. The reliefs are aligned but the sequence and the three-year clawback window are easy to get wrong."
+h1: "ATED and the 17% Flat-Rate SDLT: How the Two Charges Lock Together"
+summary: "When a non-natural person buys a UK dwelling for more than £500,000, Schedule 4A FA 2003 imposes a flat 17% SDLT rate at acquisition (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53) and ATED can bite annually. The reliefs are aligned but the sequence and the three-year clawback window are easy to get wrong."
 schema: ""
 faqs:
-  - question: "When does the 15% flat-rate SDLT actually apply?"
-    answer: "Schedule 4A FA 2003 applies a flat 15% SDLT rate when a non-natural person (a company, a partnership with a corporate member, or a collective investment scheme) acquires a single-dwelling chargeable interest for consideration of more than £500,000. The 15% rate replaces the ordinary residential rates, the 5% additional dwellings surcharge, and the 2% non-resident surcharge for that transaction."
-  - question: "What reliefs are available against the 15% flat rate?"
+  - question: "When does the 17% flat-rate SDLT actually apply?"
+    answer: "Schedule 4A FA 2003 applies a flat 17% SDLT rate when a non-natural person (a company, a partnership with a corporate member, or a collective investment scheme) acquires a single-dwelling chargeable interest for consideration of more than £500,000. The rate was raised from 15% to 17% for transactions with an effective date on or after 31 October 2024 (FA 2025 s.53). The 17% rate replaces the ordinary residential rates and the 5% additional dwellings surcharge for that transaction; the 2% non-resident surcharge still applies on top where the buyer is also non-UK-resident."
+  - question: "What reliefs are available against the 17% flat rate?"
     answer: "The Schedule 4A reliefs broadly mirror the ATED reliefs: property bought for commercial letting to unconnected tenants (Property Rental Business Relief), held as trading stock by a property developer, acquired by a property trader, used for employee accommodation, used as a farmhouse, opened to the public, used for charitable purposes, or used by a registered provider of social housing. The relief takes the transaction back to the ordinary residential SDLT rates plus the 5% additional dwellings surcharge."
-  - question: "How is the 15% relief claimed at completion?"
-    answer: "The relief is claimed on the SDLT return (form SDLT1) filed by the buyer within 14 days of completion. The buyer ticks the relevant relief code, calculates SDLT at the ordinary residential rates (with the 5% additional dwellings surcharge), and pays that lower amount instead of the 15% flat rate. Missing the claim at completion means paying the full 15% upfront."
-  - question: "Can the 15% rate be reclaimed if relief is missed on the original return?"
+  - question: "How is the 17% relief claimed at completion?"
+    answer: "The relief is claimed on the SDLT return (form SDLT1) filed by the buyer within 14 days of completion. The buyer ticks the relevant relief code, calculates SDLT at the ordinary residential rates (with the 5% additional dwellings surcharge), and pays that lower amount instead of the 17% flat rate. Missing the claim at completion means paying the full 17% upfront."
+  - question: "Can the 17% rate be reclaimed if relief is missed on the original return?"
     answer: "Yes, an SDLT return can be amended within 12 months of the filing date to claim a relief that was missed. The repayment is processed by HMRC after the amended return is filed. After the 12-month window, recovery is by overpayment relief under FA 2003 Sch 10 para 34, which is slower and subject to more conditions."
   - question: "What happens if the property's use changes within three years of acquisition?"
-    answer: "Schedule 4A paragraph 5G imposes a clawback if relief is lost within three years of the effective date of the transaction. The buyer must file a further return under FA 2003 section 81ZA within 30 days of the disqualifying event and pay the difference between the 15% flat rate and the SDLT that was originally paid under the relief."
-  - question: "Does the 15% rate apply to commercial property or mixed-use property?"
-    answer: "No. The 15% rate applies only to single-dwelling chargeable interests. Pure commercial property is taxed at non-residential SDLT rates throughout. Mixed-use property (a building that is partly residential and partly commercial) is taxed at non-residential rates, which is often a planning consideration when a company acquires a property with a shop on the ground floor and flats above."
+    answer: "Schedule 4A paragraph 5G imposes a clawback if relief is lost within three years of the effective date of the transaction. The buyer must file a further return under FA 2003 section 81ZA within 30 days of the disqualifying event and pay the difference between the 17% flat rate and the SDLT that was originally paid under the relief."
+  - question: "Does the 17% rate apply to commercial property or mixed-use property?"
+    answer: "No. The 17% rate applies only to single-dwelling chargeable interests. Pure commercial property is taxed at non-residential SDLT rates throughout. Mixed-use property (a building that is partly residential and partly commercial) is taxed at non-residential rates, which is often a planning consideration when a company acquires a property with a shop on the ground floor and flats above."
   - question: "What if six or more dwellings are acquired in a single transaction?"
-    answer: "Under section 116(7) FA 2003, an acquisition of six or more dwellings in a single transaction is automatically treated as non-residential, taking the SDLT to the lower non-residential rates and removing the 15% flat-rate question entirely. The treatment is a statutory deeming, not an election. The ATED position on the dwellings is separate and is tested annually against the £500,000 threshold for each individual dwelling."
-  - question: "Are spousal transfers into a company within the 15% flat rate?"
-    answer: "A market-value transfer of a £500k+ dwelling from an individual to their wholly-owned company is treated as consideration at market value under FA 2003 s.53 and is within Schedule 4A if the other conditions are met. The 15% bites unless a relief is claimed (typically Property Rental Business Relief where the property will be let commercially)."
-  - question: "Does the non-resident 2% surcharge apply on top of the 15% flat rate?"
-    answer: "No. The 15% flat rate is a single rate that replaces the ordinary residential bands, the 5% additional dwellings surcharge, and the 2% non-resident surcharge. A non-resident company buying a £1.5m London dwelling without a relief pays 15% flat (£225,000), not 15% plus 2% (£255,000)."
+    answer: "Under section 116(7) FA 2003, an acquisition of six or more dwellings in a single transaction is automatically treated as non-residential, taking the SDLT to the lower non-residential rates and removing the 17% flat-rate question entirely. The treatment is a statutory deeming, not an election. The ATED position on the dwellings is separate and is tested annually against the £500,000 threshold for each individual dwelling."
+  - question: "Are spousal transfers into a company within the 17% flat rate?"
+    answer: "A market-value transfer of a £500k+ dwelling from an individual to their wholly-owned company is treated as consideration at market value under FA 2003 s.53 and is within Schedule 4A if the other conditions are met. The 17% bites unless a relief is claimed (typically Property Rental Business Relief where the property will be let commercially)."
+  - question: "Does the non-resident 2% surcharge apply on top of the 17% flat rate?"
+    answer: "Yes, for a non-resident non-natural person. The 17% flat rate replaces the ordinary residential bands and the 5% additional dwellings surcharge, but the 2% non-resident surcharge still applies on top where the buyer is also non-UK-resident, taking the effective rate to 19%. A non-resident company buying a £1.5m London dwelling without a relief pays 19% (£285,000), not 17% flat (£255,000). (Before 31 October 2024, the equivalent stack was 15% plus 2%, or 17% effective.)"
   - question: "If the SDLT relief is claimed and ATED rental relief is later denied, do I owe the SDLT clawback?"
     answer: "Not necessarily. The two reliefs are aligned but separately tested. ATED relief is tested daily during each annual chargeable period; SDLT relief is tested at acquisition with a clawback only if the qualifying use is lost within three years of completion. A property that qualified at acquisition for commercial letting, was let commercially for two and a half years, and then had connected-person occupation for three months is at risk of both an apportioned ATED charge for the connected days AND an SDLT clawback if the connected use is within the three-year window."
   - question: "Does the three-year clawback apply if the property is sold within three years?"
@@ -46,18 +46,18 @@ dateModified: "2026-05-22"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
-editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus is the cross-tax interaction between the 15% flat-rate SDLT under Schedule 4A FA 2003 and the annual ATED charge under FA 2013 Part 3."
+editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus is the cross-tax interaction between the 17% flat-rate SDLT under Schedule 4A FA 2003 (raised from 15% on 31 October 2024, FA 2025 s.53) and the annual ATED charge under FA 2013 Part 3."
 ---
 
-<p>Schedule 4A FA 2003 imposes a flat 15% Stamp Duty Land Tax rate when a company, a partnership with a corporate member, or a collective investment scheme buys a UK residential dwelling for more than £500,000. The 15% rate replaces the ordinary residential rates, the 5% additional dwellings surcharge, and the 2% non-resident surcharge for that transaction. It is the most expensive single SDLT charge in the system: a £1.5 million dwelling generates £225,000 of SDLT if the relief is missed.</p>
+<p>Schedule 4A FA 2003 imposes a flat 17% Stamp Duty Land Tax rate when a company, a partnership with a corporate member, or a collective investment scheme buys a UK residential dwelling for more than £500,000. The rate was 15% until 30 October 2024 and rose to 17% for transactions with an effective date on or after 31 October 2024 (FA 2025 s.53). The 17% rate replaces the ordinary residential rates and the 5% additional dwellings surcharge for that transaction; the 2% non-resident surcharge still applies on top where the buyer is also non-UK-resident, taking the effective rate to 19%. It is the most expensive single SDLT charge in the system: a £1.5 million dwelling generates £255,000 of SDLT if the relief is missed.</p>
 
-<p>That acquisition-side charge sits alongside the Annual Tax on Enveloped Dwellings, which can bite annually on the same property. The two charges are deliberately aligned: the reliefs from one broadly mirror the reliefs from the other, the qualifying-use tests run on the same logic, and a property that escapes the 15% flat-rate SDLT typically also escapes ATED on day one of ownership.</p>
+<p>That acquisition-side charge sits alongside the Annual Tax on Enveloped Dwellings, which can bite annually on the same property. The two charges are deliberately aligned: the reliefs from one broadly mirror the reliefs from the other, the qualifying-use tests run on the same logic, and a property that escapes the 17% flat-rate SDLT typically also escapes ATED on day one of ownership.</p>
 
 <p>The interactions matter because the two filings are out of sync. The SDLT return is due within 14 days of completion, the ATED return is due annually by 30 April, and the three-year clawback window for the SDLT relief overlaps with the day-by-day ATED apportionment in a way that catches buyers out. This page walks through the architecture, the sequencing, and the joint-failure modes.</p>
 
 <p>For the wider ATED regime (2026/27 bands, valuation, the full relief catalogue, the late-filing penalty cascade, the dis-envelope decision), see our <a href="/blog/incorporation-and-company-structures/ated-complete-guide-2026-27">complete ATED guide for 2026/27</a>.</p>
 
-<h2>The Architecture of the 15% Flat-Rate SDLT</h2>
+<h2>The Architecture of the 17% Flat-Rate SDLT</h2>
 
 <p>Schedule 4A FA 2003 creates a category called a "higher rate transaction". A transaction is a higher rate transaction where:</p>
 
@@ -68,15 +68,15 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
   <li>No Schedule 4A relief applies.</li>
 </ul>
 
-<p>If all four conditions are met, the SDLT rate is a flat 15% on the whole chargeable consideration. There is no progressive banding; the £500,000 threshold is an entry condition, not a starting point above which lower rates apply.</p>
+<p>If all four conditions are met, the SDLT rate is a flat 17% on the whole chargeable consideration (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53). There is no progressive banding; the £500,000 threshold is an entry condition, not a starting point above which lower rates apply.</p>
 
-<p>The 15% rate is not stacked on top of other surcharges. The ordinary residential bands, the 5% additional dwellings surcharge under Schedule 4ZA, and the 2% non-resident surcharge under Schedule 9A do not apply to a higher rate transaction. The 15% is the whole charge.</p>
+<p>The 17% rate replaces the ordinary residential bands and the 5% additional dwellings surcharge under Schedule 4ZA. It does not displace the 2% non-resident surcharge under Schedule 9A: that surcharge still applies on top of the 17% where the buyer is also non-UK-resident, taking the effective rate to 19%.</p>
 
 <h3>What Is and Is Not a Single Dwelling for Schedule 4A</h3>
 
-<p>The 15% rate bites on single-dwelling interests, defined the same way as for ATED. A house, a flat, or a unit that is used or suitable for use as a single residence is a dwelling. A building sub-divided into multiple self-contained units is multiple dwellings, and each is tested separately against the £500,000 threshold.</p>
+<p>The 17% rate bites on single-dwelling interests, defined the same way as for ATED. A house, a flat, or a unit that is used or suitable for use as a single residence is a dwelling. A building sub-divided into multiple self-contained units is multiple dwellings, and each is tested separately against the £500,000 threshold.</p>
 
-<p>An acquisition of <strong>six or more dwellings in a single transaction</strong> is treated as non-residential under section 116(7) FA 2003. The treatment is automatic, not an election, and it takes the transaction to the lower non-residential SDLT rates (0% to £150k, 2% £150k to £250k, 5% above £250k). The 15% flat rate does not apply to a six-dwelling-or-more transaction. The ATED position on each individual dwelling is separate and is tested annually for each dwelling against the £500,000 threshold.</p>
+<p>An acquisition of <strong>six or more dwellings in a single transaction</strong> is treated as non-residential under section 116(7) FA 2003. The treatment is automatic, not an election, and it takes the transaction to the lower non-residential SDLT rates (0% to £150k, 2% £150k to £250k, 5% above £250k). The 17% flat rate does not apply to a six-dwelling-or-more transaction. The ATED position on each individual dwelling is separate and is tested annually for each dwelling against the £500,000 threshold.</p>
 
 <h2>The Schedule 4A Reliefs (Acquisition-Side)</h2>
 
@@ -107,11 +107,11 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
   <li>Pays that lower amount within the 14-day window.</li>
 </ol>
 
-<p>Missing the relief claim on the original return triggers the full 15% upfront. The relief can be added by amending the return within 12 months of the filing date, and the overpayment is refunded by HMRC. After the 12-month window, recovery is by overpayment relief claim under FA 2003 Schedule 10 paragraph 34, which is slower and subject to more conditions.</p>
+<p>Missing the relief claim on the original return triggers the full 17% upfront. The relief can be added by amending the return within 12 months of the filing date, and the overpayment is refunded by HMRC. After the 12-month window, recovery is by overpayment relief claim under FA 2003 Schedule 10 paragraph 34, which is slower and subject to more conditions.</p>
 
 <aside>
 <p>The 14-day SDLT return window is the most common point of failure on enveloped acquisitions.</p>
-<p>A conveyancer filing under residential-property time pressure can default to "company buyer = 15% flat rate" and miss the relief claim, leaving the company to recover the difference by amendment. If you are buying a £500k+ dwelling into a Ltd with a commercial letting intention, brief the conveyancer on the relief code before completion, not after.</p>
+<p>A conveyancer filing under residential-property time pressure can default to "company buyer = 17% flat rate" and miss the relief claim, leaving the company to recover the difference by amendment. If you are buying a £500k+ dwelling into a Ltd with a commercial letting intention, brief the conveyancer on the relief code before completion, not after.</p>
 </aside>
 
 <h2>The Three-Year Clawback Window</h2>
@@ -126,13 +126,13 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
   <li>A change in the trade of the holder that means the relief no longer applies (eg a property developer's stock being transferred to a holding-and-letting use).</li>
 </ul>
 
-<p>The buyer must file a <strong>further return under FA 2003 section 81ZA</strong> within 30 days of the disqualifying event, identifying the loss of relief, and pay the difference between the 15% flat rate and the SDLT that was originally paid under the relief. Interest runs on the additional tax from the original 14-day filing window, not from the disqualifying event.</p>
+<p>The buyer must file a <strong>further return under FA 2003 section 81ZA</strong> within 30 days of the disqualifying event, identifying the loss of relief, and pay the difference between the 17% flat rate and the SDLT that was originally paid under the relief. Interest runs on the additional tax from the original 14-day filing window, not from the disqualifying event.</p>
 
 <p>The three-year clock runs from the effective date of the original transaction (typically completion). A disqualifying event on day 1,096 (three years and one day after completion) is outside the clawback window, even if the use change is the same. The day-count discipline is critical for advisers managing wealth-planning timelines around the property.</p>
 
 <h2>The Annual ATED Side</h2>
 
-<p>While the 15% SDLT is settled at completion (subject to the three-year clawback), the ATED side runs annually. The first ATED return covers the chargeable period from acquisition to the next 31 March, and is due within 30 days of acquisition (or 90 days for a newly-built dwelling). Subsequent returns are due by 30 April each year for the chargeable period starting on that 1 April.</p>
+<p>While the 17% SDLT is settled at completion (subject to the three-year clawback), the ATED side runs annually. The first ATED return covers the chargeable period from acquisition to the next 31 March, and is due within 30 days of acquisition (or 90 days for a newly-built dwelling). Subsequent returns are due by 30 April each year for the chargeable period starting on that 1 April.</p>
 
 <p>The same reliefs that applied at acquisition apply annually for ATED. A property let commercially to unconnected tenants from day one of ownership, and continuously thereafter, generates a Relief Declaration Return on the ATED side every year and no annual charge. The acquisition-side relief and the annual relief sit on parallel tracks.</p>
 
@@ -142,7 +142,7 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
 
 <p>ABC Property Holdings Ltd, controlled by Mr Patel, completes the acquisition of a £1.5m Wandsworth flat on 15 May 2026. The intention is to let the flat commercially through a lettings agent to unconnected professional tenants.</p>
 
-<p><strong>Without any relief</strong>: the 15% flat rate applies and the SDLT is £225,000, payable within 14 days of completion.</p>
+<p><strong>Without any relief</strong>: the 17% flat rate applies and the SDLT is £255,000, payable within 14 days of completion.</p>
 
 <p><strong>With Property Rental Business Relief claimed on the SDLT1</strong>: the transaction reverts to the ordinary residential rates plus the 5% additional dwellings surcharge.</p>
 
@@ -157,7 +157,7 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
   </tbody>
 </table>
 
-<p>The relief saves £56,250 against the 15% flat rate (£225,000 − £168,750). The £56,250 is conditional on maintaining the qualifying use for three years.</p>
+<p>The relief saves £86,250 against the 17% flat rate (£255,000 − £168,750). The £86,250 is conditional on maintaining the qualifying use for three years.</p>
 
 <p>The annual ATED side: the flat is in the "More than £1m, up to £2m" band, annual charge £9,450 for 2026/27. With Property Rental Business Relief claimed annually, the ATED charge is £0.</p>
 
@@ -167,11 +167,11 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
 
 <p>The use of the flat is now occupation by a connected person on non-commercial terms. The qualifying use under Schedule 4A has ended within the three-year window.</p>
 
-<p><strong>SDLT clawback</strong>: a further return under section 81ZA is due within 30 days of 1 December 2027 (so by 31 December 2027). The clawback is the difference between the 15% flat rate (£225,000) and the SDLT originally paid (£168,750), or <strong>£56,250</strong>. Interest runs on the £56,250 from 29 May 2026 (14 days after the original completion).</p>
+<p><strong>SDLT clawback</strong>: a further return under section 81ZA is due within 30 days of 1 December 2027 (so by 31 December 2027). The clawback is the difference between the 17% flat rate (£255,000) and the SDLT originally paid (£168,750), or <strong>£86,250</strong>. Interest runs on the £86,250 from 29 May 2026 (14 days after the original completion).</p>
 
 <p><strong>ATED apportionment</strong>: for the 2027/28 chargeable period, the connected-person occupation period (1 December 2027 to 31 March 2028, 122 days out of 366) is non-relievable. The apportioned charge is 122 / 366 × (2027/28 band charge for £1m to £2m, indexed from the 2026/27 figure of £9,450) ≈ £3,200. An ordinary ATED return with a Schedule of Reliefs is filed within 30 days of the loss of relief.</p>
 
-<p>The two charges run together: £56,250 SDLT clawback plus interest, plus £3,200 ATED for the connected-occupation days. The decision to put the flat into the company and let the daughter live there for a study year has cost the family nearly £60,000 of additional tax, on top of the foregone rental income.</p>
+<p>The two charges run together: £86,250 SDLT clawback plus interest, plus £3,200 ATED for the connected-occupation days. The decision to put the flat into the company and let the daughter live there for a study year has cost the family nearly £90,000 of additional tax, on top of the foregone rental income.</p>
 
 <aside>
 <p>The three-year SDLT clawback window and the annual ATED window are not coterminous.</p>
@@ -182,9 +182,9 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
 
 <p>An offshore-incorporated company acquires a £600,000 flat in central Manchester for commercial letting through a UK lettings agent. The company is a non-natural person and the consideration is above £500,000, so Schedule 4A applies. The buyer is also non-resident.</p>
 
-<p><strong>Without relief</strong>: the 15% flat rate applies. SDLT = £90,000. The non-resident 2% surcharge does <strong>not</strong> stack on top; the 15% is the whole charge.</p>
+<p><strong>Without relief</strong>: the 17% flat rate applies, and because the buyer is also non-UK-resident the 2% non-resident surcharge stacks on top, taking the effective rate to 19%. SDLT = £600,000 × 19% = <strong>£114,000</strong>.</p>
 
-<p><strong>With Property Rental Business Relief</strong>: SDLT calculated at ordinary residential rates plus the 5% additional dwellings surcharge plus the 2% non-resident surcharge (because the non-resident surcharge applies when the 15% does not, but the 5% additional dwellings surcharge sits underneath the relief).</p>
+<p><strong>With Property Rental Business Relief</strong>: SDLT calculated at ordinary residential rates plus the 5% additional dwellings surcharge plus the 2% non-resident surcharge (the relief takes the transaction out of the 17% flat rate, but the 5% additional dwellings surcharge and the 2% non-resident surcharge both still apply underneath it).</p>
 
 <table>
   <thead><tr><th>Band</th><th>Rate (with 5% additional + 2% non-resident = 7% above base)</th><th>SDLT</th></tr></thead>
@@ -196,7 +196,7 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
   </tbody>
 </table>
 
-<p>The relief saves £28,000 (£90,000 − £62,000), conditional on the three-year qualifying-use test. The annual ATED side: the £600k flat is in the smallest band, annual charge £4,600 for 2026/27, reduced to £0 by claiming the rental relief on the annual return.</p>
+<p>The relief saves £52,000 (£114,000 − £62,000), conditional on the three-year qualifying-use test. The annual ATED side: the £600k flat is in the smallest band, annual charge £4,600 for 2026/27, reduced to £0 by claiming the rental relief on the annual return.</p>
 
 <p>The non-resident dimension also engages the Register of Overseas Entities (a separate annual filing) and, on eventual disposal, the non-resident company corporation tax on chargeable gains regime that replaced the abolished ATED-related CGT in April 2019. Those are out of scope here; the SDLT × ATED interaction at acquisition stands on its own.</p>
 
@@ -216,8 +216,8 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
 
 <h2>Strategic Question: Is the Envelope Still Worth It?</h2>
 
-<p>The 15% flat rate is so punitive that the historical case for enveloping a high-value family home through an offshore company collapsed after the threshold dropped from £2m to £500,000 in 2016. For a non-relievable £5m London home, the acquisition cost of putting it into a company is £750,000 SDLT plus £75,450 annual ATED. For commercially-let portfolios, both reliefs apply, and the corporate structure makes the same economic sense it did before the 2016 changes.</p>
+<p>The 17% flat rate (15% until 30 October 2024) is so punitive that the historical case for enveloping a high-value family home through an offshore company collapsed after the threshold dropped from £2m to £500,000 in 2016. For a non-relievable £5m London home, the acquisition cost of putting it into a company is £850,000 SDLT plus £75,450 annual ATED. For commercially-let portfolios, both reliefs apply, and the corporate structure makes the same economic sense it did before the 2016 changes.</p>
 
-<p>The decision rests on the use, the value, the wider tax position (income tax on rents, corporation tax on rents and gains, dividend tax on extraction), and the personal-counterfactual under <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords in 2026/27</a> and <a href="/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27">corporation tax rates for property companies in 2026/27</a>. The 15% SDLT and ATED interaction is one component; it is not the whole calculus.</p>
+<p>The decision rests on the use, the value, the wider tax position (income tax on rents, corporation tax on rents and gains, dividend tax on extraction), and the personal-counterfactual under <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">income tax rates for landlords in 2026/27</a> and <a href="/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27">corporation tax rates for property companies in 2026/27</a>. The 17% SDLT and ATED interaction is one component; it is not the whole calculus.</p>
 
-<p>What it is, reliably, is the most expensive component to get wrong. A £225,000 SDLT bill on a £1.5m flat for a missed relief code on day one is a self-inflicted loss that the rest of the structuring cannot recover.</p>
+<p>What it is, reliably, is the most expensive component to get wrong. A £255,000 SDLT bill on a £1.5m flat for a missed relief code on day one is a self-inflicted loss that the rest of the structuring cannot recover.</p>

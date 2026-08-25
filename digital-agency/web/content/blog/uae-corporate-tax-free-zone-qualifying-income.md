@@ -26,7 +26,7 @@ faqs:
 - question: What happens if I incorrectly claim 0% tax on non-qualifying income?
   answer: The UAE Federal Tax Authority can impose penalties, interest, and reassess your tax liability. Penalties start at AED 500 per error and can reach 50% of the tax due for deliberate non-compliance. You would owe the 9% tax on the non-qualifying income plus late payment charges.
 - question: Is there any relief if my non-qualifying income is small?
-  answer: Yes. A de minimis rule allows you to treat all income as qualifying if your non-qualifying income is less than 5% of total revenue, capped at AED 5 million. If you exceed that threshold, you must split your income and pay 9% on the non-qualifying portion.
+  answer: Yes. A de minimis rule allows you to treat all income as qualifying if your non-qualifying income is no more than 5% of total revenue or AED 5 million, whichever is lower. If you exceed that threshold, you must split your income and pay 9% on the non-qualifying portion.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -45,7 +45,7 @@ keyTakeaways:
 
 <p>To get the 0% rate, your free zone entity must:</p>
 <ul>
-<li>Be a Qualifying Free Zone Person (QFZP), registered in a designated free zone</li>
+<li>Be a Qualifying Free Zone Person (QFZP), registered in a UAE free zone</li>
 <li>Maintain adequate substance in the UAE (office, staff, bank account, real decision-making)</li>
 <li>Derive income that qualifies under the Ministerial Decision No. 100 of 2023</li>
 <li>Not have elected to be subject to the standard 9% regime</li>
@@ -101,7 +101,7 @@ keyTakeaways:
 <p>If you have mixed income, some qualifying, some not, you can still benefit from the 0% rate on the qualifying portion. But you must file separate computations and pay 9% on the non-qualifying income.</p>
 
 <h3>De Minimis Rule: A Safety Net</h3>
-<p>There is a de minimis rule. If your non-qualifying income is less than 5% of your total revenue (capped at AED 5 million), you can treat all your income as qualifying. This helps agencies with a small amount of mainland UAE consultancy work. But if your non-qualifying income exceeds that threshold, the 0% rate applies only to the qualifying portion.</p>
+<p>There is a de minimis rule. If your non-qualifying income is no more than 5% of your total revenue or AED 5 million, whichever is lower, you can treat all your income as qualifying. This helps agencies with a small amount of mainland UAE consultancy work. But if your non-qualifying income exceeds that threshold, the 0% rate applies only to the qualifying portion.</p>
 
 <p>For example, if your total revenue is AED 2 million and your non-qualifying income is AED 80,000 (4%), you are under the 5% threshold. All AED 2 million qualifies for 0%. But if your non-qualifying income hits AED 110,000 (5.5%), you lose the de minimis relief and must split your income.</p>
 

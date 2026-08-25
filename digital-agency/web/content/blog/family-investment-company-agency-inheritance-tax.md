@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Tax and Compliance
 metaTitle: Family Investment Company for Agency Inheritance Tax Savings
 metaDescription: Set up a family investment company to pass your agency to your children without a 40% inheritance tax bill. Practical guide for UK agency founders.
-altText: Agency founder reviewing estate planning documents with an specialist agency accountant in a modern UK office
+altText: Agency founder reviewing estate planning documents with a specialist agency accountant in a modern UK office
 image: /blog/family-investment-company-agency-inheritance-tax.jpg
 imageCredit:
   photographer: Ann H

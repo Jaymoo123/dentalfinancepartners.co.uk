@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./[slug]/data";
 
 export const metadata: Metadata = {
-  title: `Glossary | ${siteConfig.name}`,
+  title: `Glossary`,
   description:
     "Plain-English definitions of UK tax, finance, and accounting terms for agency founders. BADR, IR35, MTD, R&D credits, VAT schemes and more.",
   alternates: { canonical: `${siteConfig.url}/glossary` },

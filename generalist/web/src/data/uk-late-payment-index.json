@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "sources": [
+      {
+        "name": "Payment Practices Reporting -- full CSV export",
+        "publisher": "Department for Business and Trade",
+        "url": "https://check-payment-practices.service.gov.uk/export/csv/",
+        "release_page": "https://www.gov.uk/check-when-businesses-pay-invoices",
+        "licence": "Statutory public disclosure (Reporting on Payment Practices and Performance Regulations 2017)",
+        "retrieved": "2026-07-23"
+      }
+    ],
+    "notes": "Every large UK business (broadly, meeting at least two of: turnover above GBP 36 million, balance sheet above GBP 18 million, more than 250 employees) must publish this statutory return twice a year. Figures here are aggregated across every qualifying filing in each half-year reporting period (bucketed by each filing's own period end date, not a fixed calendar half); this page never names or ranks individual companies. 'Average time to pay' is each filer's own self-reported figure across all its supplier invoices. A small number of filings with implausible values (outside 0-365 days) are excluded as data-entry errors. The earliest and latest half-years are shown in the full series but excluded from the headline trend where filing volume is still sparse (regime start-up or reporting lag).",
+    "attribution": "UK Late Payment Index compiled from the Payment Practices Reporting service (gov.uk), a statutory disclosure every large UK business must publish twice yearly. Aggregate figures only; no individual company is named or ranked on this page. Free to cite with attribution to Holloway Davies.",
+    "data_quality": {
+      "total_rows_in_export": 111614,
+      "rows_dropped_bad_date": 2,
+      "atp_values_dropped_as_outliers": 47
+    }
+  },
+  "headline": {
+    "latest_period": "2026H1",
+    "latest_mean_days_to_pay": 33.5,
+    "latest_median_days_to_pay": 31.0,
+    "latest_pct_within_30d": 60.5,
+    "latest_pct_not_paid_on_time": 20.6,
+    "latest_n_companies": 3120,
+    "series_from_period": "2017H2",
+    "series_from_mean_days_to_pay": 39.1,
+    "change_pct": -14.3
+  },
+  "periods": [
+    {
+      "period": "2017H1",
+      "n_filings": 13,
+      "n_companies": 13,
+      "mean_days_to_pay": 33.9,
+      "median_days_to_pay": 30.0,
+      "mean_pct_within_30d": 67.7,
+      "mean_pct_not_paid_on_time": 15.5
+    },
+    {
+      "period": "2017H2",
+      "n_filings": 743,
+      "n_companies": 833,
+      "mean_days_to_pay": 39.1,
+      "median_days_to_pay": 36.0,
+      "mean_pct_within_30d": 49.8,
+      "mean_pct_not_paid_on_time": 30.3
+    },
+    {
+      "period": "2018H1",
+      "n_filings": 5346,
+      "n_companies": 5824,
+      "mean_days_to_pay": 37.3,
+      "median_days_to_pay": 35.0,
+      "mean_pct_within_30d": 53.1,
+      "mean_pct_not_paid_on_time": 32.1
+    },
+    {
+      "period": "2018H2",
+      "n_filings": 6683,
+      "n_companies": 7183,
+      "mean_days_to_pay": 36.8,
+      "median_days_to_pay": 35.0,
+      "mean_pct_within_30d": 53.6,
+      "mean_pct_not_paid_on_time": 30.4
+    },
+    {
+      "period": "2019H1",
+      "n_filings": 6884,
+      "n_companies": 7418,
+      "mean_days_to_pay": 36.8,
+      "median_days_to_pay": 35.0,
+      "mean_pct_within_30d": 54.4,
+      "mean_pct_not_paid_on_time": 29.3
+    },
+    {
+      "period": "2019H2",
+      "n_filings": 6664,
+      "n_companies": 7155,
+      "mean_days_to_pay": 35.9,
+      "median_days_to_pay": 34.0,
+      "mean_pct_within_30d": 55.5,
+      "mean_pct_not_paid_on_time": 28.0
+    },
+    {
+      "period": "2020H1",
+      "n_filings": 6349,
+      "n_companies": 6828,
+      "mean_days_to_pay": 36.9,
+      "median_days_to_pay": 34.0,
+      "mean_pct_within_30d": 54.7,
+      "mean_pct_not_paid_on_time": 29.4
+    },
+    {
+      "period": "2020H2",
+      "n_filings": 6254,
+      "n_companies": 6669,
+      "mean_days_to_pay": 37.7,
+      "median_days_to_pay": 35.0,
+      "mean_pct_within_30d": 55.2,
+      "mean_pct_not_paid_on_time": 28.8
+    },
+    {
+      "period": "2021H1",
+      "n_filings": 6231,
+      "n_companies": 6638,
+      "mean_days_to_pay": 36.8,
+      "median_days_to_pay": 34.0,
+      "mean_pct_within_30d": 56.2,
+      "mean_pct_not_paid_on_time": 27.3
+    },
+    {
+      "period": "2021H2",
+      "n_filings": 6135,
+      "n_companies": 6503,
+      "mean_days_to_pay": 35.8,
+      "median_days_to_pay": 33.0,
+      "mean_pct_within_30d": 57.3,
+      "mean_pct_not_paid_on_time": 26.0
+    },
+    {
+      "period": "2022H1",
+      "n_filings": 6056,
+      "n_companies": 6429,
+      "mean_days_to_pay": 35.6,
+      "median_days_to_pay": 33.0,
+      "mean_pct_within_30d": 57.2,
+      "mean_pct_not_paid_on_time": 26.2
+    },
+    {
+      "period": "2022H2",
+      "n_filings": 6027,
+      "n_companies": 6330,
+      "mean_days_to_pay": 35.5,
+      "median_days_to_pay": 33.0,
+      "mean_pct_within_30d": 57.9,
+      "mean_pct_not_paid_on_time": 25.5
+    },
+    {
+      "period": "2023H1",
+      "n_filings": 5922,
+      "n_companies": 6292,
+      "mean_days_to_pay": 35.5,
+      "median_days_to_pay": 32.0,
+      "mean_pct_within_30d": 58.2,
+      "mean_pct_not_paid_on_time": 25.5
+    },
+    {
+      "period": "2023H2",
+      "n_filings": 6149,
+      "n_companies": 6486,
+      "mean_days_to_pay": 34.9,
+      "median_days_to_pay": 32.0,
+      "mean_pct_within_30d": 58.6,
+      "mean_pct_not_paid_on_time": 24.4
+    },
+    {
+      "period": "2024H1",
+      "n_filings": 6085,
+      "n_companies": 6482,
+      "mean_days_to_pay": 34.7,
+      "median_days_to_pay": 32.0,
+      "mean_pct_within_30d": 59.2,
+      "mean_pct_not_paid_on_time": 23.5
+    },
+    {
+      "period": "2024H2",
+      "n_filings": 6064,
+      "n_companies": 6450,
+      "mean_days_to_pay": 34.3,
+      "median_days_to_pay": 32.0,
+      "mean_pct_within_30d": 59.8,
+      "mean_pct_not_paid_on_time": 22.9
+    },
+    {
+      "period": "2025H1",
+      "n_filings": 5901,
+      "n_companies": 6237,
+      "mean_days_to_pay": 34.4,
+      "median_days_to_pay": 32.0,
+      "mean_pct_within_30d": 59.5,
+      "mean_pct_not_paid_on_time": 22.4
+    },
+    {
+      "period": "2025H2",
+      "n_filings": 5825,
+      "n_companies": 6167,
+      "mean_days_to_pay": 34.6,
+      "median_days_to_pay": 32.0,
+      "mean_pct_within_30d": 59.5,
+      "mean_pct_not_paid_on_time": 21.7
+    },
+    {
+      "period": "2026H1",
+      "n_filings": 2964,
+      "n_companies": 3120,
+      "mean_days_to_pay": 33.5,
+      "median_days_to_pay": 31.0,
+      "mean_pct_within_30d": 60.5,
+      "mean_pct_not_paid_on_time": 20.6
+    },
+    {
+      "period": "2026H2",
+      "n_filings": 26,
+      "n_companies": 28,
+      "mean_days_to_pay": 32.1,
+      "median_days_to_pay": 31.0,
+      "mean_pct_within_30d": 59.5,
+      "mean_pct_not_paid_on_time": 21.8
+    }
+  ]
+}

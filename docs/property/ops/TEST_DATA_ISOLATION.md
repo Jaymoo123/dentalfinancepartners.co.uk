@@ -7,7 +7,7 @@
 **1. Leads -> reserved `source='test'`**
 - Migration `supabase/migrations/20260624000001_test_data_isolation.sql` adds `'test'` to the `leads_source_valid` CHECK (strictly additive).
 - `Property/web/src/lib/lead-routing.ts`:
-  - `DEFAULT_CC_EXCLUDED_SOURCES = "property,test"` -> a test lead is **never** copied to a vendor (DJH or Reflex).
+  - `DEFAULT_CC_EXCLUDED_SOURCES = "property,test"` -> a test lead is **never** copied to a vendor (any partner firm).
   - `resolveLeadTo("test")` -> the operator only (`LEADS_NOTIFY_TO_TEST` || `LEADS_NOTIFY_TO` || default internal inbox).
 - `Property/web/src/app/api/leads/enrich/route.ts` skips `source='test'` -> no paid Opus call, no `lead_enrichment` row.
 - Billing/reconciliation (the Delivery Log + Tide breakdown) excludes `source='test'`.

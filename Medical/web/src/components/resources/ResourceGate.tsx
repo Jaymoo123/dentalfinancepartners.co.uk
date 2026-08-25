@@ -13,7 +13,7 @@
  * --surface, --surface-elevated, --border, --ink, --ink-soft, --muted.
  *
  * Consent: uses siteConfig.resourceConsentText (in-house-only wording, never
- * names Reflex). Resource downloads are NOT shared with the partner firm.
+ * names a specific partner). Resource downloads are NOT shared with the partner firm.
  *
  * Submit: goes through submitMedicalLead with extras { resource_gate: true }
  * and captureMode "email_only" so the server chokepoint:

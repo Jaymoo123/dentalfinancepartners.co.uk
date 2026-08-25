@@ -11,6 +11,12 @@ metaDescription: "Expense sharing versus a full GP partnership: sharing costs as
 altText: "Two GPs comparing an expense-sharing arrangement against a full partnership"
 image: ""
 h1: "Expense Sharing Versus a Full GP Partnership: The Difference and the Tax"
+keyTakeaways:
+- "Partnership is defined by the Partnership Act 1890 section 1(1) as the relation between persons carrying on a business in common with a view of profit, and it is judged on the substance, not the label on the door."
+- "HMRC's Partnership Manual at PM133000 treats a share of net profits as prima facie but not conclusive evidence of partnership, while an obligation to share net losses is an even stronger indicator."
+- "In an expense-sharing arrangement each GP files their own self-employment return with no partnership return, whereas a full partnership files a single SA800 with each partner's share flowing to the SA104 pages."
+- "In a full partnership a partner is taxed on their allocated profit share, not on the drawings actually taken during the year."
+- "A general partnership is currently deferred from Making Tax Digital for Income Tax with no confirmed start date, so an expense-sharing GP taxed as a sole trader can be brought into quarterly reporting before a comparable partnership is."
 summary: "Two GPs can work side by side under very different legal arrangements. In an expense-sharing arrangement each GP is effectively a separate practitioner sharing premises and staff costs; in a full partnership the GPs pool and share profit. This guide explains the difference, the legal test that decides which one you are in, and the tax, accounting and liability consequences of each."
 schema: ""
 faqs:

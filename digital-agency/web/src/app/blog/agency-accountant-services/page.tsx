@@ -12,7 +12,7 @@ const categoryName = "Agency Accountant Services";
 const categorySlug = "agency-accountant-services";
 
 export const metadata: Metadata = {
-  title: `Specialist Agency Accountant Services | ${siteConfig.name}`,
+  title: `Specialist Agency Accountant Services`,
   description: `What a specialist agency accountant does and why it matters. Management accounts, R&D tax credits, cash flow forecasting and financial advisory services built for agency founders.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

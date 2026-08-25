@@ -2,7 +2,7 @@
   "name": "@accounting-network/web-shared",
   "version": "0.0.1",
   "private": true,
-  "description": "Shared web code (TypeScript + React) used across the niche-site Next.js apps. Pure source code \u2014 consumers compile via Next.js transpilePackages.",
+  "description": "Shared web code (TypeScript + React) used across the niche-site Next.js apps. Pure source code — consumers compile via Next.js transpilePackages.",
   "type": "module",
   "main": "./index.ts",
   "types": "./index.ts",
@@ -39,7 +39,6 @@
     "./analytics/react/ConsentBanner": "./analytics/react/ConsentBanner.tsx",
     "./analytics/react/ConsentedScripts": "./analytics/react/ConsentedScripts.tsx",
     "./analytics/react/GoogleAnalytics": "./analytics/react/GoogleAnalytics.tsx",
-    "./analytics/react/Clarity": "./analytics/react/Clarity.tsx",
     "./analytics/react/WebVitals": "./analytics/react/WebVitals.tsx",
     "./analytics/react/AnalyticsProvider": "./analytics/react/AnalyticsProvider.tsx",
     "./analytics/react/useFormTracking": "./analytics/react/useFormTracking.ts",
@@ -94,6 +93,7 @@
     "./lead-nurture/config": "./lead-nurture/config.ts",
     "./lead-nurture/tokens": "./lead-nurture/tokens.ts",
     "./lead-nurture/send": "./lead-nurture/send.ts",
+    "./lead-nurture/opt-out": "./lead-nurture/opt-out.ts",
     "./lead-nurture/cron": "./lead-nurture/cron.ts",
     "./lead-nurture/t0": "./lead-nurture/t0.ts",
     "./lead-nurture/lead-nurture-shared": "./lead-nurture/lead-nurture-shared.ts",
@@ -108,12 +108,15 @@
     "./components/StatsBar": "./components/StatsBar.tsx"
   },
   "optionalPeerDependencies": {
-    "@microsoft/clarity": ">=1",
     "botid": ">=1",
     "web-vitals": ">=3"
   },
   "scripts": {
     "test": "vitest run"
+  },
+  "dependencies": {
+    "botid": "^1.5.11",
+    "web-vitals": "^5.3.0"
   },
   "peerDependencies": {
     "react": ">=18",

@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Claim Mortgage Interest on UK Rental Property 2025/26"
-metaDescription: "Practical Section 24 claim guide: which box on SA105, the three-way cap on the 20% credit, what counts as a finance cost, and carry-forward when the cap bites."
+metaDescription: "Practical Section 24 claim guide: which box on SA105, the three-way cap on the 20% credit, what counts as a finance cost"
 altText: "UK landlord reviewing mortgage interest tax relief calculations on rental property investment documents"
 image: ""
 h1: "How to Claim Mortgage Interest on UK Rental Property 2025/26 (Section 24 in Practice)"
@@ -62,7 +62,7 @@ faqs:
 
 <h2>What Counts as a Residential Finance Cost</h2>
 
-<p>The legislation (ITTOIA 2005 s.272A-272B) and HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2056" rel="external nofollow" target="_blank">PIM2056</a> include:</p>
+<p>The legislation (ITTOIA 2005 s.272A-272B) and HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2056" rel="external nofollow noopener" target="_blank">PIM2056</a> include:</p>
 
 <ul>
 <li><strong>Mortgage interest</strong> on loans used to buy residential rental property.</li>

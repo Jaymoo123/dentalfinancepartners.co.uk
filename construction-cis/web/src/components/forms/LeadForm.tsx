@@ -61,7 +61,6 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
   // Honeypot ref value — read from the hidden input at submit time.
   const [honeypotValue, setHoneypotValue] = useState("");
 
@@ -110,8 +109,6 @@ export function LeadForm({
       errs.message = "Add a sentence or two if you have a specific question.";
     }
 
-    if (!data.get("consent")) errs.consent = "Please tick the box to continue.";
-
     return errs;
   }, []);
 
@@ -141,7 +138,6 @@ export function LeadForm({
     const baseFields = ["fullName", "email", "phone", "role", "message"] as const;
     const completedCount =
       baseFields.filter((f) => String(data.get(f) || "").trim()).length
-      + (consent ? 1 : 0)
       + (selectedTrade ? 1 : 0)
       + (selectedSubbieCount ? 1 : 0);
     trackFormSubmit(completedCount);
@@ -164,7 +160,10 @@ export function LeadForm({
       source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
-      consent_given: consent,
+      // Legitimate-interests acknowledgement: submitting the form IS the affirmative
+      // act, so this is always true; consent_text records the exact wording shown
+      // as the audit trail.
+      consent_given: true,
       consent_text: consentText,
       consent_at: new Date().toISOString(),
       visitor_id: getVisitorId() ?? undefined,
@@ -185,7 +184,6 @@ export function LeadForm({
     setStatus("success");
     onLead({ role: payload.role });
     form.reset();
-    setConsent(false);
     setSelectedRole("");
     setSelectedTrade("");
     setSelectedSubbieCount("");
@@ -474,30 +472,16 @@ export function LeadForm({
         </div>
       </details>
 
-      <div>
-        <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-neutral-600">
-          <input
-            type="checkbox"
-            id="consent"
-            name="consent"
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 shrink-0 accent-orange-500"
-            aria-invalid={!!fieldErrors.consent}
-            aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
-          />
-          <span>
-            {siteConfig.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-orange-600 underline">
-              Privacy Policy
-            </a>
-            .
-          </span>
-        </label>
-        {fieldErrors.consent && (
-          <p id="consent-error" className={errorClass}>{fieldErrors.consent}</p>
-        )}
-      </div>
+      {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
+          the enquiry is the affirmative act, so this is shown as a notice, not a
+          tick-box. */}
+      <p className="text-xs leading-relaxed text-neutral-600">
+        {siteConfig.leadConsentText} See our{" "}
+        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-orange-600 underline">
+          Privacy Policy
+        </a>
+        .
+      </p>
 
       {errorMessage && (
         <div role="alert" className="border border-red-200 bg-red-50 p-4">
@@ -508,21 +492,21 @@ export function LeadForm({
       {status === "success" && !redirectOnSuccess && (
         <div role="status" className="border border-orange-200 bg-orange-50 p-4">
           <p className="text-sm font-medium text-orange-900">
-            Thanks. We&apos;ll be in touch within 24 hours.
+            Thanks. You will hear back within 24 hours.
           </p>
         </div>
       )}
 
       <button
         type="submit"
-        disabled={status === "loading" || status === "success" || !consent}
+        disabled={status === "loading" || status === "success"}
         className={`${btnPrimary} w-full`}
       >
         {status === "loading" ? "Sending..." : status === "success" ? "Sent" : submitLabel}
       </button>
 
       <p className="text-xs leading-relaxed text-neutral-500">
-        We respond within 24 hours and store your details securely.
+        You will hear back within 24 hours. Your details are stored securely.
       </p>
     </form>
   );

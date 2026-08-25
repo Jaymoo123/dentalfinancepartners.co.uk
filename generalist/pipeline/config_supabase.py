@@ -165,12 +165,12 @@ SEO:
 - Answer the title question directly in the first 2 paragraphs (featured snippet opportunity).
 - Write for humans first. Keyword density is secondary to clarity.
 
-UK TAX CONTEXT (use correct figures for 2025/26):
+UK TAX CONTEXT (use correct figures for 2026/27):
 - Corporation tax: 19% small profits rate (up to £50k profits), 25% main rate (above £250k), marginal relief applies between £50k and £250k.
 - Income tax bands: £0 to £12,570 personal allowance, £12,571 to £50,270 basic rate 20%, £50,271 to £125,140 higher rate 40%, above £125,140 additional rate 45%.
-- Dividend tax rates: 8.75% basic, 33.75% higher, 39.35% additional. Annual dividend allowance: £500.
-- National Insurance: primary threshold £12,570. Employer NI 13.8% above secondary threshold. Employment Allowance up to £10,500 (where eligible).
-- BADR (Business Asset Disposal Relief): 14% CGT for disposals from 6 April 2025, rising to 18% from 6 April 2026. £1M lifetime limit. Shares must be held 2+ years. Old 10% rate applied to disposals before 6 April 2025.
+- Dividend tax rates (2026/27, FA 2026 s.4): 10.75% basic, 35.75% higher, 39.35% additional. Annual dividend allowance: £500. (8.75%/33.75% applied only up to 5 April 2026.)
+- National Insurance: primary threshold £12,570. Employer NI 15% above the £5,000 secondary threshold (from 6 April 2025; the old 13.8%/£9,100 is stale). Employment Allowance up to £10,500 (single-director companies excluded).
+- BADR (Business Asset Disposal Relief): 18% CGT for disposals from 6 April 2026 (14% in 2025/26, 10% before 6 April 2025). £1M lifetime limit. Shares must be held 2+ years.
 - CGT main rates (non-residential): 18% basic rate, 24% higher rate. These rates apply above the BADR £1M limit. Old 10%/20% rates applied before 30 October 2024.
 - CGT residential property: 18% basic rate, 24% higher rate. 60-day reporting required for UK residential property gains.
 - VAT registration threshold: £90,000 turnover (rolling 12-month).
@@ -179,12 +179,12 @@ UK TAX CONTEXT (use correct figures for 2025/26):
 - IR35 (off-payroll working): applies where contractor would be deemed an employee. Medium and large clients are responsible for determining status and issuing the Status Determination Statement (SDS). Small clients leave the determination with the contractor.
 - MTD for ITSA: mandatory from April 2026 for self-employed and landlords with qualifying income over £50,000. From April 2027 for £30,000+. From April 2028 for £20,000+.
 - Annual Investment Allowance (AIA): £1,000,000 per year. Full Expensing also available for limited companies on most main-rate plant and machinery.
-- Director's loan account: interest-free loans from the company to a director are taxable if over £10,000 (benefit in kind, beneficial loan) or trigger S455 tax (33.75%) if not repaid within 9 months and 1 day of year-end.
+- Director's loan account: interest-free loans from the company to a director are taxable if over £10,000 (benefit in kind, beneficial loan) or trigger S455 tax (35.75% on loans made on/after 6 April 2026; 33.75% for earlier loans) if not repaid within 9 months and 1 day of year-end.
 - Capital allowances: AIA, FYA for low-emission cars, structures and buildings allowance (3% per year).
 
 GENERALIST BUSINESS FINANCE SPECIFICS:
 - Director salary planning: most efficient floor is £12,570 (matches personal allowance and primary NI threshold) plus dividends to the basic rate band, then case-by-case.
-- Salary above secondary threshold (£9,100) triggers employer NI of 13.8%. The maths still favours £12,570 when Employment Allowance covers the NI, common for multi-director Ltds.
+- Salary above the £5,000 secondary threshold triggers employer NI of 15%. The maths still favours £12,570 when Employment Allowance covers the NI, common for multi-director Ltds; sole-director companies (no Employment Allowance) often use £5,000 or the lower earnings limit.
 - Spouse shareholding: alphabet shares allow flexible dividend allocation. Beware settlement legislation if shares are gifted to a non-spouse.
 - Trivial benefits: £50 limit per gift, £300 annual cap for directors of close companies.
 - Annual accounts deadlines: 9 months after year-end (private company), confirmation statement every 12 months.
@@ -315,12 +315,12 @@ INTERNAL LINKING. REQUIRED:
 - Always include at least one link to /services, one to /contact, one to /fundamentals.
 - Use <a href="/page-slug">descriptive anchor text</a>. Do not use "click here" or generic anchors.
 
-UK TAX CONTEXT (2025/26):
+UK TAX CONTEXT (2026/27):
 - Corporation tax: 19% small profits (up to £50k), 25% main rate (above £250k), marginal relief £50k to £250k.
 - Income tax: £0 to £12,570 PA, £12,571 to £50,270 basic 20%, £50,271 to £125,140 higher 40%, above £125,140 additional 45%.
-- Dividend tax: 8.75% basic, 33.75% higher, 39.35% additional. Annual dividend allowance £500.
-- NI: primary threshold £12,570. Employer NI 13.8% above secondary threshold. Employment Allowance up to £10,500.
-- BADR: 14% CGT for disposals from 6 April 2025, rising to 18% from 6 April 2026. £1M lifetime limit. 5% shareholding, 2 years held, officer or employee.
+- Dividend tax (2026/27, FA 2026 s.4): 10.75% basic, 35.75% higher, 39.35% additional. Annual dividend allowance £500.
+- NI: primary threshold £12,570. Employer NI 15% above the £5,000 secondary threshold (from 6 April 2025). Employment Allowance up to £10,500 (single-director companies excluded).
+- BADR: 18% CGT for disposals from 6 April 2026 (14% in 2025/26, 10% before). £1M lifetime limit. 5% shareholding, 2 years held, officer or employee.
 - CGT main rates (non-residential, used above BADR limit): 18% basic, 24% higher (changed 30 October 2024).
 - CGT residential property: 18% basic, 24% higher. 60-day reporting required.
 - VAT registration threshold: £90,000 turnover (rolling 12-month).
@@ -329,7 +329,7 @@ UK TAX CONTEXT (2025/26):
 - IR35: medium and large clients determine status and issue SDS. Small clients leave determination with the contractor.
 - MTD for ITSA: mandatory from April 2026 (£50,000+), April 2027 (£30,000+), April 2028 (£20,000+).
 - AIA: £1,000,000 per year. Full Expensing also available for Ltds on main-rate plant.
-- Director's loan: S455 charge 33.75% on loans over £10,000 not repaid within 9 months and 1 day of year-end.
+- Director's loan: S455 charge 35.75% (loans made on/after 6 April 2026; 33.75% earlier) on loans over £10,000 not repaid within 9 months and 1 day of year-end.
 
 ICAEW TRUST SIGNALS:
 - Reference "as ICAEW qualified accountants" once or twice where genuinely relevant.

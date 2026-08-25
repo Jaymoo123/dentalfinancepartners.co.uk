@@ -8,20 +8,24 @@
  *
  * Deliberately NOT a month calendar: the lead is telling us when to call them,
  * not booking a scarce resource, so two taps beat a date grid (mobile-first).
- * House style: sharp corners, emerald/slate, no em-dashes in copy.
+ * House style: rounded-xl and hairline rings (the post-redesign recipe), plus
+ * emerald/slate and no em-dashes in copy. The chips were square with
+ * `border-2 border-slate-300` until 2026-08-23, which was the last
+ * pre-redesign treatment left on /thank-you and /book.
  */
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@/components/ui/NoticeCard";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 import { setBookingDone } from "@accounting-network/web-shared/analytics/visitMemory";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600";
-const chipIdle = "border-slate-300 bg-white text-slate-900 hover:border-emerald-600 hover:bg-emerald-50";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-xl border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600";
+const chipIdle = "border-slate-200 bg-white text-slate-900 hover:border-emerald-600 hover:bg-emerald-50";
 const chipSelected = "border-emerald-600 bg-emerald-600 text-white";
 
 export default function BookingPicker({ token }: { token: string }) {
@@ -74,9 +78,8 @@ export default function BookingPicker({ token }: { token: string }) {
 
   if (status === "done") {
     return (
-      <div className="border-2 border-emerald-600 bg-emerald-50 p-6 text-center">
-        <p className="text-lg font-bold text-slate-900">Callback booked</p>
-        <p className="mt-2 text-base text-slate-700">
+      <NoticeCard tone="emerald" title="Callback booked">
+        <p className="text-base leading-relaxed text-slate-700">
           {confirmedLabel ? (
             <>
               We have you down for <strong>{confirmedLabel}</strong>.
@@ -91,21 +94,21 @@ export default function BookingPicker({ token }: { token: string }) {
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "expired") {
     return (
-      <div className="border-2 border-slate-300 bg-slate-50 p-6 text-center">
-        <p className="text-base text-slate-700">
+      <NoticeCard>
+        <p className="text-base leading-relaxed text-slate-700">
           This booking link has expired. No problem, you can still reach us through the contact
           form and we will arrange your review.
         </p>
-        <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+        <Link href="/contact" className={`${btnPrimary} mt-4`}>
           Go to the contact form
         </Link>
-      </div>
+      </NoticeCard>
     );
   }
 

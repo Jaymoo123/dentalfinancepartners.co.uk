@@ -6,7 +6,7 @@ date: "2026-05-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Land Transaction Tax (LTT) Wales: Complete 2026/27 Guide"
-metaDescription: "Welsh LTT replaced SDLT in 2018. Main rates, higher rates, MDR (modified), non-residential bands, reliefs, returns. 2026/27 figures, four-nation comparison."
+metaDescription: "Welsh LTT replaced SDLT in 2018. Main rates, higher rates, MDR (modified), non-residential bands, reliefs, returns."
 altText: "Welsh property landscape with chapel and farmhouse, illustrating the residential market on which Land Transaction Tax has been charged by the Welsh Revenue Authority since 1 April 2018"
 image: "https://images.pexels.com/photos/2113554/pexels-photo-2113554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

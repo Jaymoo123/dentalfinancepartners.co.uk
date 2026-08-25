@@ -84,7 +84,7 @@ editorialNote: "Bucket A anchor page. OTT is the upstream entry-decision for the
 
 <ol>
 <li><strong>Make the underlying decision</strong>, formally documented. A board minute, a written advice file from your accountant, an email to your VAT adviser confirming the decision and the date.</li>
-<li><strong>Notify HMRC within 30 days</strong> on form VAT1614A. The form requires the property address, the date the option takes effect (which is the date of the decision or a future date you specify), and the signature of an authorised signatory. The form can be completed online and printed, or completed by hand, and is sent to the address on the form. Reference: <a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow" target="_blank">gov.uk VAT1614A</a>.</li>
+<li><strong>Notify HMRC within 30 days</strong> on form VAT1614A. The form requires the property address, the date the option takes effect (which is the date of the decision or a future date you specify), and the signature of an authorised signatory. The form can be completed online and printed, or completed by hand, and is sent to the address on the form. Reference: <a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow noopener" target="_blank">gov.uk VAT1614A</a>.</li>
 <li><strong>Retain HMRC's acknowledgement</strong>. HMRC issues a date-stamped acknowledgement on receipt; keep this together with the underlying decision evidence indefinitely.</li>
 </ol>
 
@@ -246,11 +246,11 @@ editorialNote: "Bucket A anchor page. OTT is the upstream entry-decision for the
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="external nofollow" target="_blank">VATA 1994 Schedule 10 (buildings and land, option to tax)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/2" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 2 (election to waive exemption)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/12" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 12 (developer anti-avoidance)</a></li>
-<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow" target="_blank">HMRC VAT Notice 742A: opting to tax land and buildings</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow" target="_blank">Form VAT1614A: notification of option to tax</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-revoking-an-option-to-tax-within-6-month-cooling-off-period-vat1614c" rel="external nofollow" target="_blank">Form VAT1614C: revoke within 6-month cooling-off</a></li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="external nofollow" target="_blank">HMRC VAT Land and Property internal manual</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="external nofollow noopener" target="_blank">VATA 1994 Schedule 10 (buildings and land, option to tax)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/2" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 2 (election to waive exemption)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/12" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 12 (developer anti-avoidance)</a></li>
+<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742A: opting to tax land and buildings</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notification-of-an-option-to-tax-land-andor-buildings-vat1614a" rel="external nofollow noopener" target="_blank">Form VAT1614A: notification of option to tax</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-revoking-an-option-to-tax-within-6-month-cooling-off-period-vat1614c" rel="external nofollow noopener" target="_blank">Form VAT1614C: revoke within 6-month cooling-off</a></li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property" rel="external nofollow noopener" target="_blank">HMRC VAT Land and Property internal manual</a></li>
 </ul>

@@ -8,7 +8,7 @@ author: Agency Founder Finance Editorial Team
 category: Agency Accountant Services
 metaTitle: Agency Accountant Services for Strategic Financial Planning
 metaDescription: Most agency founders only use their accountant for compliance. Here's how to get strategic financial planning that drives growth, profitability, and exit
-altText: Agency founder reviewing financial forecasts with an specialist agency accountant in a modern UK office
+altText: Agency founder reviewing financial forecasts with a specialist agency accountant in a modern UK office
 image: /blog/agency-accountant-strategic-financial-planning.jpg
 imageCredit:
   photographer: Artem Podrez

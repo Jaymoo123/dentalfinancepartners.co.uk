@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Mortgage Fraud Convicting Accountants and Advisers: UK Cordon"
+metaTitle: "Mortgage Fraud Convicting Accountants and Advisers: AML"
 metaDescription: "Fraud Act 2006 s.2, POCA s.330 SAR reflex, s.333A tipping-off and MLR 2017 reg 8: the AML cordon around your UK property accountant explained."
 altText: "A UK property investor reviews a remortgage application with a chartered accountant during a customer due diligence onboarding conversation in a Cambridge office"
 image: "https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -77,7 +77,7 @@ editorialNote: "MW3 Bucket C C1: news-led professional-conduct briefing on the A
 <p>The s.330 reflex reaches well beyond mortgage fraud. It covers historic rental income concealment, undisclosed CGT on property disposals, undeclared share-of-rent received in cash, and unexplained deposit sources funding property purchases. Once the threshold is met, the accountant has no discretion: the SAR is mandatory.</p>
 
 <aside>
-  <p><strong>Need to understand the AML cordon before instructing a new accountant?</strong> We run a chartered, MLR 2017 supervised property accountancy practice and welcome the question. Get in touch and we will walk you through our customer due diligence, source-of-funds process, and engagement-letter terms in plain language before we ask you to sign anything.</p>
+  <p><strong>Need to understand the AML cordon before instructing a new accountant?</strong> We are not an accountancy practice ourselves. We introduce property investors to specialist firms and you deal with them directly from there. Before you sign anything, ask any firm you are considering to name its MLR 2017 supervisor and to walk you through its customer due diligence, its source-of-funds process, and its engagement-letter terms in plain language. Get in touch if you would like an introduction.</p>
 </aside>
 
 <h2>The Tipping-Off Prohibition: POCA Section 333A</h2>

@@ -78,7 +78,7 @@ function compute(ctx: PremiumComputeContext) {
     headline: {
       label: "The additional-property surcharge adds",
       value: gbp(surchargeCost),
-      sub: "5% of the price, on top of standard SDLT — the buy-to-let / second-home cost",
+      sub: "5% of the price, on top of standard SDLT: the buy-to-let / second-home cost",
       tone: "warn" as const,
     },
     scenarioResults: [
@@ -120,7 +120,7 @@ export const stampDutyPremiumTool: PremiumToolConfig = {
   topic: "stamp-duty",
   title: "Stamp Duty (SDLT) by buyer type",
   intro:
-    "Enter a purchase price and see the Stamp Duty Land Tax four ways at once — a standard main-home purchase, an additional property (the 5% buy-to-let / second-home surcharge), a non-UK-resident buy-to-let (the extra 2%), and first-time-buyer relief — so you can see exactly what each surcharge adds. England and Northern Ireland.",
+    "Enter a purchase price and see the Stamp Duty Land Tax four ways at once: a standard main-home purchase, an additional property (the 5% buy-to-let / second-home surcharge), a non-UK-resident buy-to-let (the extra 2%), and first-time-buyer relief, so you can see exactly what each surcharge adds. England and Northern Ireland.",
   fields: [
     {
       id: "price",
@@ -159,9 +159,9 @@ export const stampDutyPremiumTool: PremiumToolConfig = {
   explainer: {
     heading: "How the surcharges stack up",
     paragraphs: [
-      "Standard SDLT is charged in slices: nothing on the first £125,000, 2% on £125,001–£250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5m and 12% above that. Each rate applies only to the part of the price that falls in its band, so the effective rate is always lower than the top band you reach.",
-      "If the property is an additional dwelling — a buy-to-let, a second home, or any purchase by a company — a 5% surcharge is added to the whole price on top of those standard rates. That single flat 5% is usually the largest part of an investor's bill, and it is why the additional-property column jumps so far above a main-home purchase.",
-      "A non-UK resident buyer pays a further 2% surcharge on the whole price. A non-resident buying a buy-to-let therefore carries both the 5% and the 2%. First-time buyers go the other way: relief removes SDLT on the first £300,000 and charges 5% on £300,000–£500,000, but it is withdrawn completely once the price tops £500,000, and it never applies to an additional property.",
+      "Standard SDLT is charged in slices: nothing on the first £125,000, 2% on £125,001 to £250,000, 5% on £250,001 to £925,000, 10% on £925,001 to £1.5m and 12% above that. Each rate applies only to the part of the price that falls in its band, so the effective rate is always lower than the top band you reach.",
+      "If the property is an additional dwelling (a buy-to-let, a second home, or any purchase by a company), a 5% surcharge is added to the whole price on top of those standard rates. That single flat 5% is usually the largest part of an investor's bill, and it is why the additional-property column jumps so far above a main-home purchase.",
+      "A non-UK resident buyer pays a further 2% surcharge on the whole price. A non-resident buying a buy-to-let therefore carries both the 5% and the 2%. First-time buyers go the other way: relief removes SDLT on the first £300,000 and charges 5% on £300,000 to £500,000, but it is withdrawn completely once the price tops £500,000, and it never applies to an additional property.",
       "This is England and Northern Ireland only. Scotland charges LBTT (with an 8% Additional Dwelling Supplement) and Wales charges LTT, both with their own bands. Mixed-use property, deals of six or more dwellings, uninhabitable property and linked transactions can all move the figure, so treat this as a fast first pass and get the exact position confirmed before you exchange.",
     ],
   },

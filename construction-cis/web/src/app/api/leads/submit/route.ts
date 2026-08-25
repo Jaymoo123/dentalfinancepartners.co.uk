@@ -1,99 +1,166 @@
 /**
- * Trade Tax Specialists lead submission chokepoint.
+ * Server chokepoint for Trade Tax Specialists (CIS) lead submission.
  *
- * The factory handles:
- *   - Honeypot flagging (enquiry_ref non-empty -> store flagged, return success)
- *   - Server-side validation with field floors
- *   - Dedupe with adopt-and-merge semantics (24h window)
- *   - Environment isolation (preview/dev return no-op so the client fallback
- *     never triggers outside production)
- *   - Probe support (LEAD_PROBE_SECRET rewrites source='test')
- *
- * onLeadInserted: enrols every brand-new lead into the CIS nurture sequence.
- * Best-effort, never blocks or loses the lead. No-ops while LEAD_NURTURE_ENABLED
- * is unset (dormant/dry-run).
- *
- * After enrolment, mints a signed booking token and appends it to the response
- * so the thank-you page can render the inline BookingPicker.
- * Degrades silently if LEAD_NURTURE_TOKEN_SECRET is unset.
- *
- * // ponytail: phase-2 (inbound-reply, AI sequence-gen) NOT ported.
+ * Delegates validation, honeypot, and deduplication to the shared factory
+ * (createLeadSubmitHandler), then runs the Property-parity tail: real-time
+ * phone/email verification (Twilio Lookup + email deliverability, written to
+ * lead_verification with a verify_pass/verify_fail contact event) and
+ * enrolment into the nurture sequence so the instant touch fires after every
+ * new submission. Resource downloads (role "resource") are neither verified
+ * nor enrolled: they carry in-house consent and are never chased.
  */
-import { createLeadSubmitHandler } from "@accounting-network/web-shared/leads/server";
-import { NextResponse } from "next/server";
+
+import { NextResponse, type NextRequest } from "next/server";
+import { createLeadSubmitHandler, isTestLead } from "@accounting-network/web-shared/leads/server";
+import { adminConfigured, adminInsert } from "@/lib/supabase/admin";
 import { enrollLead } from "@/lib/leads/enroll";
+import { verifyLead } from "@/lib/leads/verify";
 import { routePrimarySequence } from "@/config/lead-nurture";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
 import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
+import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
 export const dynamic = "force-dynamic";
 
-const baseHandler = createLeadSubmitHandler({ source: "construction-cis" });
+// Shared handler: validates, dedupes, inserts lead, returns { success, leadId }.
+const sharedHandler = createLeadSubmitHandler({ source: "construction-cis" });
 
-export async function POST(req: Request): Promise<NextResponse> {
+export async function POST(req: NextRequest) {
+  if (!adminConfigured()) {
+    return NextResponse.json(
+      { success: false, error: "Service unavailable. Please try again shortly." },
+      { status: 503 },
+    );
+  }
+
+  // Clone the request so sharedHandler can consume the body and we can also
+  // read it for enrollment context.
   let body: Record<string, unknown> = {};
+  let clonedReq: Request;
   try {
-    const cloned = req.clone();
-    body = (await cloned.json()) as Record<string, unknown>;
+    const text = await req.text();
+    body = JSON.parse(text) as Record<string, unknown>;
+    clonedReq = new Request(req.url, {
+      method: req.method,
+      headers: req.headers,
+      body: text,
+    });
   } catch {
-    // best-effort; base handler will also parse/fail
+    return NextResponse.json({ success: false, error: "Bad request" }, { status: 400 });
   }
 
-  const response = await baseHandler(req);
-
-  let result: { success?: boolean; leadId?: string | null } = {};
+  // Run the shared handler (validates, dedupes, inserts).
+  const sharedRes = await sharedHandler(clonedReq as NextRequest);
+  let json: { success?: boolean; leadId?: string | null; merged?: boolean; error?: string } = {};
   try {
-    result = (await response.clone().json()) as typeof result;
+    json = (await sharedRes.json()) as typeof json;
   } catch {
-    return response;
+    return sharedRes;
   }
 
-  if (result.success && result.leadId) {
-    let bookingToken: string | undefined;
+  if (!json.success || !json.leadId) {
+    return NextResponse.json(json, { status: sharedRes.status });
+  }
+
+  const source = String(body.source ?? "construction-cis").toLowerCase();
+  const full_name = String(body.full_name ?? "").trim();
+  const email = String(body.email ?? "").trim();
+  const phone = String(body.phone ?? "").trim();
+  const role = String(body.role ?? "Other").trim() || "Other";
+  const message = String(body.message ?? "").trim();
+  const visitorId = (body.visitor_id as string | undefined) ?? null;
+
+  // Resource downloads are never verified, never enrolled, never chased
+  // (in-house consent; the enroll chokepoint refuses them too, this just
+  // avoids spending a Twilio Lookup on a download unlock).
+  const isResource = role === "resource";
+  const isTest = isTestLead({ email, full_name, qa: body.qa === true });
+
+  // Real-time verification (best-effort, never blocks). verifyLead spends a
+  // Twilio Lookup on EVERY call, so a caller can opt out with
+  // skip_verification, honoured only for a test lead so no real submission can
+  // ever dodge verification by setting a flag.
+  const skipVerification = isResource || (isTest && body.skip_verification === true);
+  let verifyPhone: string | undefined;
+  let verifyEmail: string | undefined;
+  if (!skipVerification) {
     try {
-      bookingToken = mintLeadToken(result.leadId, "book");
-    } catch {
-      // LEAD_NURTURE_TOKEN_SECRET unset: picker will not render, non-fatal
+      const v = await verifyLead({ email, phone });
+      verifyPhone = v.phone.status;
+      verifyEmail = v.email.status;
+      await adminInsert(
+        "lead_verification",
+        {
+          lead_id: json.leadId,
+          phone_status: v.phone.status,
+          phone_line_type: v.phone.line_type,
+          phone_carrier: v.phone.carrier,
+          phone_e164: v.phone.e164,
+          email_status: v.email.status,
+          email_domain: v.email.domain,
+          verify_pass: v.verify_pass,
+          provider: v.provider,
+          raw: v.raw,
+        },
+        { onConflict: "lead_id" },
+      );
+      await recordLeadContactEvent(
+        json.leadId,
+        v.verify_pass ? "verify_pass" : "verify_fail",
+        "system",
+        { phone: v.phone.status, email: v.email.status },
+      );
+    } catch (e) {
+      console.error("[leads/submit] verification failed", e);
     }
+  }
 
+  // Enrol into the nurture sequence (best-effort, never blocks or loses a lead).
+  // merged resubmission: already enrolled from the first pass, a second sequence would double-chase
+  if (!isResource && !json.merged) {
     try {
-      const full_name = String(body.full_name ?? "").trim();
-      const email = String(body.email ?? "").trim();
-      const phone = String(body.phone ?? "").trim();
-      const role = String(body.role ?? "Other").trim() || "Other";
-      const message = String(body.message ?? "").trim();
-      const visitorId = (body.visitor_id as string) ?? null;
-
       const lead: NurtureLead = {
-        id: result.leadId,
+        id: json.leadId,
         full_name,
         email,
         phone,
         role,
-        source: "construction-cis",
+        source,
         message,
       };
       const sequenceName = routePrimarySequence(lead);
       await enrollLead(lead, {
         sequenceName,
-        live: lead.source !== "test",
+        // A valid probe (LEAD_PROBE_SECRET) is stored as source "test" by the
+        // factory, but the route-local source is still the site literal, so
+        // gate live sends on the probe marker and the test heuristics too.
+        live: source !== "test" && !isTest && body.probe_secret === undefined,
         visitorId,
       });
-    } catch (err) {
-      console.error("[leads/submit/cis] enrol failed (non-fatal)", err);
-    }
-
-    if (bookingToken) {
-      try {
-        const base = (await response.clone().json()) as Record<string, unknown>;
-        return NextResponse.json({ ...base, bookingToken }, { status: response.status });
-      } catch {
-        // re-parse failed: return original response
-      }
+    } catch (e) {
+      console.error("[leads/submit/cis] enrol/instant-touch failed", e);
     }
   }
 
-  return response;
+  // Mint a signed booking token so the thank-you page can offer the inline slot
+  // picker at the highest-intent moment. Best-effort: never blocks the lead.
+  let bookingToken: string | undefined;
+  try {
+    bookingToken = mintLeadToken(json.leadId, "book");
+  } catch {
+    /* LEAD_NURTURE_TOKEN_SECRET unset -> thank-you page just omits the picker */
+  }
+
+  return NextResponse.json(
+    {
+      ...json,
+      bookingToken,
+      ...(verifyPhone || verifyEmail
+        ? { verify: { phone: verifyPhone ?? "unknown", email: verifyEmail ?? "unknown" } }
+        : {}),
+    },
+    { status: sharedRes.status },
+  );
 }

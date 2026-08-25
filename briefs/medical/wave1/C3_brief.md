@@ -59,7 +59,7 @@
   - State plainly: dividends are not pensionable. Always weigh the CGT deferral and ongoing corporation-tax/dividend position against the pension-accrual loss; never present the tax saving alone. Link `gp-limited-company-tax-benefits-drawbacks` and `private-practice-tax-nhs-and-private-income`.
   - Note also that incorporation does not let you sell NHS goodwill via shares (reg 4(3), §4); s.162 is about private goodwill only. Link C1.
 - **H2: s.162 vs the alternatives**
-  - H3: s.162 (this page): automatic deferral of the whole gain (if wholly for shares), but base cost rolls into the shares; no choice of how much to defer (it is all or the share-proportion).
+  - H3: s.162 (this page): deferral of the whole gain (if wholly for shares), but base cost rolls into the shares. NOT automatic since FA 2026 s.39: for transfers on/after 6 Apr 2026 it must be claimed, by the first anniversary of the 31 January following the tax year of the transfer (s.162A repealed); no choice of how much to defer (it is all or the share-proportion).
   - H3: Selling outright with BADR (C2): crystallise now at the reduced BADR rate; relevant if you are exiting rather than continuing through a company.
   - H3: Holdover/gift relief (s.165) and partial approaches: mention briefly that other reliefs exist for different facts; keep s.162 as the focus and signpost an adviser.
   - The decision turns on whether you are continuing the business through a company (defer with s.162) or selling out (BADR), and on the pension and extraction picture.

@@ -147,7 +147,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Missing the registration deadline. You must register within a specific period after incorporation. Late registration attracts a AED 10,000 penalty.</li>
 <li>Using management accounts instead of IFRS-compliant financial statements. The FTA expects proper accounts. If your free zone authority requires audited accounts, you need an audit before filing.</li>
 <li>Ignoring related party transactions. Even if your agency is loss-making, you need to disclose transactions with shareholders, directors, and connected companies. Transfer pricing documentation may be required if the transactions exceed AED 500,000.</li>
-<li>Failing to track qualifying vs non-qualifying income. If you claim QFZP status, you need to demonstrate that your qualifying income meets the de minimis threshold (95% or less of total income, depending on your free zone). A loss-making year makes this easier to calculate, but you still need the data.</li>
+<li>Failing to track qualifying vs non-qualifying income. If you claim QFZP status, you need to demonstrate that your non-qualifying revenue stays within the de minimis threshold (no more than 5% of total revenue or AED 5 million, whichever is lower; the same limit applies in every free zone). A loss-making year makes this easier to calculate, but you still need the data.</li>
 </ul>
 
 <h2>What You Should Do Now</h2>

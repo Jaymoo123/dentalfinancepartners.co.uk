@@ -154,7 +154,7 @@ keyTakeaways:
 
 <h2>Related articles in Bookkeeping and Compliance</h2>
 <ul>
-    <li><a href="/blog/bookkeeping-and-compliance/accounting-service-charges-2025-26-breakdown">Accounting Service Charges (2025/26)</a></li>
+    <li><a href="/blog/bookkeeping-and-compliance/accounting-for-service-charges-uk-guide-2025-26">Accounting Service Charges (2025/26)</a></li>
     <li><a href="/blog/bookkeeping-and-compliance/accountant-for-small-businesses-near-me">Accountant For Small Businesses Near Me</a></li>
 </ul>
 

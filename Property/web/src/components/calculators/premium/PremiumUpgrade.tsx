@@ -20,13 +20,14 @@ import { getTopic } from "@/lib/intent/taxonomy";
 import { resourceForTopic } from "@/lib/resources/registry";
 import { getPremiumTool } from "@/lib/calculators/premium/registry";
 import { MobileToolSlot } from "@/components/calculators/premium/MobileToolSlot";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 function ToolLoading() {
   // Sized, visible reserved-height placeholder: keeps the layout stable and
   // signals the interactive tool is loading rather than rendering nothing.
   return (
     <div
-      className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+      className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
       style={{ minHeight: 480 }}
       aria-busy="true"
     >
@@ -37,9 +38,9 @@ function ToolLoading() {
       </div>
       <div className="grid gap-6 p-5 sm:p-7 lg:grid-cols-2">
         <div className="space-y-5">
-          <div className="h-12 animate-pulse rounded-lg bg-slate-100" />
-          <div className="h-12 animate-pulse rounded-lg bg-slate-100" />
-          <div className="h-12 animate-pulse rounded-lg bg-slate-100" />
+          <div className="h-12 animate-pulse rounded-xl bg-slate-100" />
+          <div className="h-12 animate-pulse rounded-xl bg-slate-100" />
+          <div className="h-12 animate-pulse rounded-xl bg-slate-100" />
         </div>
         <div className="space-y-4">
           <div className="h-24 animate-pulse rounded-xl bg-slate-100" />
@@ -60,6 +61,7 @@ export function PremiumUpgrade({
   full = false,
   placement = "calculator",
   category,
+  mobileFallback = "capture",
 }: {
   topic: TopicKey | null | undefined;
   full?: boolean;
@@ -67,29 +69,58 @@ export function PremiumUpgrade({
   placement?: string;
   /** Blog category slug when placement === "blog". */
   category?: string;
+  /**
+   * What fills the slot below `sm`, where the premium tool does not run.
+   *
+   * "capture" (default, and what the blog uses) is MobileToolSlot: a qualified
+   * MiniCapture, shipped from the mobile_tool_capture test.
+   *
+   * "link" is form-free, and is what the calculator pages pass. Those pages
+   * carry exactly two asks — the calculator's own result gate and the navy
+   * LeadCTAPanel at the foot — so a MiniCapture here would be a third form on
+   * mobile only. Mid-page asks on this site are links to the panel, never
+   * embedded forms.
+   */
+  mobileFallback?: "capture" | "link";
 }) {
   if (!topic) return null;
   const resource = resourceForTopic(topic);
   const config = getPremiumTool(resource?.toolId);
   if (!config) return null;
 
-  const topicObj = getTopic(topic);
-  const label = topicObj?.label ?? "this topic";
+  const t = getTopic(topic);
+  const label = t?.label ?? "this topic";
 
   return (
     <section className="my-12 not-prose" aria-labelledby={`premium-tool-${topic}`}>
-      <div className="mb-3 flex items-center gap-2">
-        <span className="inline-block bg-emerald-600 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
-          Free interactive tool
-        </span>
-      </div>
+      {/* Was a filled emerald pill badge, which is not a mark this site uses
+          anywhere else. Eyebrow is the shared section label. */}
+      <Eyebrow>Free interactive tool</Eyebrow>
       <h2 id={`premium-tool-${topic}`} className="sr-only">
         Free {label} tool
       </h2>
-      {/* The interactive tool is desktop-only; on mobile the slot shows a
-          qualified capture (the mobile_tool_capture test concluded to this). */}
+      {/* The interactive tool is desktop-only. See `mobileFallback` for what
+          stands in below `sm` and why the calculator pages differ. */}
       <div className="sm:hidden">
-        <MobileToolSlot topic={topic} label={label} />
+        {mobileFallback === "link" ? (
+          <div className="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+            <p className="text-base font-bold text-slate-900">{t?.ctaCopy || `Get your ${label} figure`}</p>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              This interactive tool is built for a larger screen. On a phone, the quickest route is to send
+              us your numbers and have a specialist come back with the figure and the next sensible step.
+            </p>
+            <a
+              href="#get-expert-help"
+              data-cta="premium_tool_mobile"
+              data-cta-placement="calculator"
+              className="mt-4 inline-block py-0.5 text-sm font-semibold text-emerald-700 hover:text-emerald-800"
+            >
+              Ask a specialist for your figure →
+            </a>
+          </div>
+        ) : (
+          <MobileToolSlot topic={topic} label={label} />
+        )}
       </div>
       <div className="hidden sm:block">
         <PremiumCalculator config={config} full={full} placement={placement} category={category} />

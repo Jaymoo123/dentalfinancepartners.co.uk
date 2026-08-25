@@ -26,14 +26,14 @@ faqs:
 - question: What happens if the recruitment firm refuses to handle PAYE for an inside-IR35 contractor?
   answer: You have two options. First, restructure the engagement so your agency pays the contractor's intermediary directly, making you the fee-payer. You then handle the PAYE and NI deductions yourself. Second, find a different recruitment firm that is willing to handle the deductions. Do not proceed with the engagement without someone handling the tax, that creates a direct liability for your agency.
 - question: Does the small company exemption apply if my agency uses a recruitment firm?
-  answer: 'Yes, if your agency qualifies as a small company (turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees). The exemption means the contractor''s own limited company bears the IR35 responsibility, not your agency. But be careful: if you grow past the threshold during the engagement, the rules shift. And even if exempt, you should still take reasonable care to avoid the contractor coming after you later.'
+  answer: 'Yes, if your agency qualifies as a small company (turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m). The exemption means the contractor''s own limited company bears the IR35 responsibility, not your agency. But be careful: if you grow past the threshold during the engagement, the rules shift. And even if exempt, you should still take reasonable care to avoid the contractor coming after you later.'
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - If your agency is the end-client, you must issue a compliant Status Determination Statement or risk liability for unpaid tax even if a recruitment firm pays the contractor.
 - When a recruitment firm pays the contractor's intermediary, they handle PAYE and NI deductions only if your agency has correctly determined IR35 status and issued an SDS.
 - Failing to take reasonable care in determining IR35 status shifts the tax liability to your agency, regardless of who is the fee-payer in the chain.
-- 'Small companies exempt from off-payroll rules must meet two of three criteria: turnover under £10.2m, balance sheet under £5.1m, or fewer than 50 employees.'
+- 'Small companies exempt from off-payroll rules must meet two of three criteria: turnover not more than £15m, balance sheet not more than £7.5m, or not more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m).'
 - The end-client is always the organisation benefiting from the contractor's work, making your agency responsible for status determination even with a recruitment firm involved.
 ---
 <h2>Who Bears the IR35 Risk When a Recruitment Firm Is Involved?</h2>
@@ -48,7 +48,7 @@ keyTakeaways:
 
 <p>The off-payroll rules (commonly known as IR35) apply when a contractor provides their services through an intermediary, typically their own limited company. If the contractor would be classed as an employee if they were engaged directly, they are considered "inside IR35." The engager (the agency or end-client) then becomes responsible for deducting PAYE and National Insurance from the fees paid to the contractor's intermediary.</p>
 
-<p>Since April 2021, medium and large organisations in the private sector have been responsible for determining the contractor's status and issuing a Status Determination Statement (SDS). Small companies (meeting two of three criteria: turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees) are exempt, the contractor's own limited company bears the responsibility instead.</p>
+<p>Since April 2021, medium and large organisations in the private sector have been responsible for determining the contractor's status and issuing a Status Determination Statement (SDS). Small companies (meeting two of three criteria: turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m) are exempt, the contractor's own limited company bears the responsibility instead. Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest.</p>
 
 <p>But here is where it gets complicated. When a recruitment firm sits between your agency and the contractor, who is the "end-client" for IR35 purposes? And who is the "fee-payer"?</p>
 
@@ -112,7 +112,7 @@ keyTakeaways:
 
 <h2>What About Small Agencies? Are You Exempt?</h2>
 
-<p>If your agency qualifies as a small company under the Companies Act definitions (turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees), the off-payroll rules do not apply to you in the same way. The contractor's own limited company bears the responsibility for determining IR35 status.</p>
+<p>If your agency qualifies as a small company under the Companies Act definitions (turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), the off-payroll rules do not apply to you in the same way. The contractor's own limited company bears the responsibility for determining IR35 status.</p>
 
 <p>But be careful. The exemption only applies to engagements that start while you are still small. If you grow past the threshold during the engagement, the rules shift. And HMRC may look at the size of the end-client, not the recruitment firm, when determining who is responsible.</p>
 

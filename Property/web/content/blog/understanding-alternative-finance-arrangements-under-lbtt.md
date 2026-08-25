@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "LBTT Alternative Finance: Sch 7 Ijara, Musharaka, Murabaha"
 metaDescription: "LBTT(S)A 2013 Sch 7 relieves the institution's interim acquisition on Sharia-compliant home purchase plans; ITA 2007 s.564B definition; ADS still engages."
-altText: "A Scottish family home being acquired via a Sharia-compliant home purchase plan with a regulated financial institution, illustrating the LBTT(S)A 2013 Schedule 7 relief that eliminates the double charge across the institution's interim acquisition under Ijara, Diminishing Musharaka, and Murabaha structures"
+altText: "A Scottish family home bought through a Sharia-compliant home purchase plan"
 image: "https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
   photographer: "Pixabay"

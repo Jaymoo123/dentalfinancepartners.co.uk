@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Complete Guide to Buying a Dental Practice | Dental Finance Partners",
+  title: "Complete Guide to Buying a Dental Practice",
   description:
     "Comprehensive guide to buying a dental practice, including valuations, due diligence, financing options, legal considerations, and post-acquisition integration for UK dentists.",
   alternates: { canonical: `${siteConfig.url}/blog/buying-a-practice` },

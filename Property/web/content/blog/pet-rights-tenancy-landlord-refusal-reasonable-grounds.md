@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Pet Rights RRA 2025: Landlord Decision + Refusal Test"
-metaDescription: "Pet rights under the Renters' Rights Act 2025. The 28-day response window, narrow reasonable-refusal test under section 16B(4), court remedy, tax treatment."
+metaDescription: "Pet rights under the Renters' Rights Act 2025. The 28-day response window, narrow reasonable-refusal test under section 16B(4), court remedy"
 altText: "A child sitting on a wooden floor with a Labrador dog and cat, representing the household pet that triggers a statutory consent request to the landlord"
 image: "https://images.pexels.com/photos/10160237/pexels-photo-10160237.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

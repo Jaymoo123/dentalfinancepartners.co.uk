@@ -1,0 +1,1103 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "data_through": "2026-06",
+    "coverage": "England and Wales",
+    "sources": [
+      {
+        "name": "Company Insolvency Statistics -- Industry Tables (Table A1a)",
+        "publisher": "The Insolvency Service",
+        "url": "https://assets.publishing.service.gov.uk/media/6a58e5a15ca06bf11ccb4335/Industry_Tables_in_Excel__xlsx__Format_-_Company_Insolvency_Statistics_June_2026.xlsx",
+        "release_page": "https://www.gov.uk/government/statistics/company-insolvencies-june-2026",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23"
+      }
+    ],
+    "notes": "Trailing-12-month (TTM) totals are the sum of the most recent 12 monthly figures for each SIC 2007 one-digit section. Coverage is England and Wales; Scotland and Northern Ireland insolvencies are published separately by the Insolvency Service and are not included. A residual 'unclassified' category (companies without a captured SIC code at time of filing) exists in the source data and is shown separately, not ranked among the 21 SIC sections. Section totals are gross registered insolvency events, not rates against the number of active companies in each sector, so a high count partly reflects sector size.",
+    "attribution": "UK Sector Insolvency League compiled from The Insolvency Service Company Insolvency Statistics, Industry Tables (Open Government Licence v3.0). Free to cite with attribution to Holloway Davies."
+  },
+  "headline": {
+    "data_through": "2026-06",
+    "ttm_total_all_sectors": 23151,
+    "ttm_unclassified": 429,
+    "top_sector_code": "F",
+    "top_sector_label": "Construction",
+    "top_sector_ttm": 3805,
+    "top_sector_share_pct": 16.4,
+    "n_sections_ranked": 21,
+    "coverage": "England and Wales"
+  },
+  "sections": [
+    {
+      "code": "F",
+      "label": "Construction",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 2557
+        },
+        {
+          "year": 2017,
+          "total": 2633
+        },
+        {
+          "year": 2018,
+          "total": 2996
+        },
+        {
+          "year": 2019,
+          "total": 3221
+        },
+        {
+          "year": 2020,
+          "total": 2061
+        },
+        {
+          "year": 2021,
+          "total": 2581
+        },
+        {
+          "year": 2022,
+          "total": 4168
+        },
+        {
+          "year": 2023,
+          "total": 4389
+        },
+        {
+          "year": 2024,
+          "total": 4040
+        },
+        {
+          "year": 2025,
+          "total": 3948
+        }
+      ],
+      "ttm_total": 3805,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 54.4,
+      "ttm_share_pct": 16.4
+    },
+    {
+      "code": "G",
+      "label": "Wholesale and retail trade; repair of motor vehicles",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 2046
+        },
+        {
+          "year": 2017,
+          "total": 2152
+        },
+        {
+          "year": 2018,
+          "total": 2351
+        },
+        {
+          "year": 2019,
+          "total": 2458
+        },
+        {
+          "year": 2020,
+          "total": 1687
+        },
+        {
+          "year": 2021,
+          "total": 1722
+        },
+        {
+          "year": 2022,
+          "total": 3283
+        },
+        {
+          "year": 2023,
+          "total": 3948
+        },
+        {
+          "year": 2024,
+          "total": 3578
+        },
+        {
+          "year": 2025,
+          "total": 3737
+        }
+      ],
+      "ttm_total": 3463,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 82.6,
+      "ttm_share_pct": 15.0
+    },
+    {
+      "code": "I",
+      "label": "Accommodation and food service activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 1530
+        },
+        {
+          "year": 2017,
+          "total": 1698
+        },
+        {
+          "year": 2018,
+          "total": 2084
+        },
+        {
+          "year": 2019,
+          "total": 2323
+        },
+        {
+          "year": 2020,
+          "total": 1715
+        },
+        {
+          "year": 2021,
+          "total": 1676
+        },
+        {
+          "year": 2022,
+          "total": 2711
+        },
+        {
+          "year": 2023,
+          "total": 3738
+        },
+        {
+          "year": 2024,
+          "total": 3465
+        },
+        {
+          "year": 2025,
+          "total": 3361
+        }
+      ],
+      "ttm_total": 3233,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 119.7,
+      "ttm_share_pct": 14.0
+    },
+    {
+      "code": "N",
+      "label": "Administrative and support service activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 1714
+        },
+        {
+          "year": 2017,
+          "total": 1615
+        },
+        {
+          "year": 2018,
+          "total": 1788
+        },
+        {
+          "year": 2019,
+          "total": 1827
+        },
+        {
+          "year": 2020,
+          "total": 1441
+        },
+        {
+          "year": 2021,
+          "total": 1571
+        },
+        {
+          "year": 2022,
+          "total": 2214
+        },
+        {
+          "year": 2023,
+          "total": 2306
+        },
+        {
+          "year": 2024,
+          "total": 2369
+        },
+        {
+          "year": 2025,
+          "total": 2455
+        }
+      ],
+      "ttm_total": 2196,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 43.2,
+      "ttm_share_pct": 9.5
+    },
+    {
+      "code": "M",
+      "label": "Professional, scientific and technical activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 1203
+        },
+        {
+          "year": 2017,
+          "total": 1163
+        },
+        {
+          "year": 2018,
+          "total": 1229
+        },
+        {
+          "year": 2019,
+          "total": 1344
+        },
+        {
+          "year": 2020,
+          "total": 1007
+        },
+        {
+          "year": 2021,
+          "total": 1372
+        },
+        {
+          "year": 2022,
+          "total": 1807
+        },
+        {
+          "year": 2023,
+          "total": 2015
+        },
+        {
+          "year": 2024,
+          "total": 1920
+        },
+        {
+          "year": 2025,
+          "total": 2004
+        }
+      ],
+      "ttm_total": 1930,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 66.6,
+      "ttm_share_pct": 8.3
+    },
+    {
+      "code": "C",
+      "label": "Manufacturing",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 1347
+        },
+        {
+          "year": 2017,
+          "total": 1290
+        },
+        {
+          "year": 2018,
+          "total": 1361
+        },
+        {
+          "year": 2019,
+          "total": 1483
+        },
+        {
+          "year": 2020,
+          "total": 1170
+        },
+        {
+          "year": 2021,
+          "total": 1018
+        },
+        {
+          "year": 2022,
+          "total": 1687
+        },
+        {
+          "year": 2023,
+          "total": 1993
+        },
+        {
+          "year": 2024,
+          "total": 1929
+        },
+        {
+          "year": 2025,
+          "total": 1943
+        }
+      ],
+      "ttm_total": 1857,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 44.2,
+      "ttm_share_pct": 8.0
+    },
+    {
+      "code": "J",
+      "label": "Information and communication",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 886
+        },
+        {
+          "year": 2017,
+          "total": 867
+        },
+        {
+          "year": 2018,
+          "total": 898
+        },
+        {
+          "year": 2019,
+          "total": 908
+        },
+        {
+          "year": 2020,
+          "total": 690
+        },
+        {
+          "year": 2021,
+          "total": 908
+        },
+        {
+          "year": 2022,
+          "total": 1289
+        },
+        {
+          "year": 2023,
+          "total": 1396
+        },
+        {
+          "year": 2024,
+          "total": 1513
+        },
+        {
+          "year": 2025,
+          "total": 1465
+        }
+      ],
+      "ttm_total": 1393,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 65.3,
+      "ttm_share_pct": 6.0
+    },
+    {
+      "code": "L",
+      "label": "Real estate activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 380
+        },
+        {
+          "year": 2017,
+          "total": 365
+        },
+        {
+          "year": 2018,
+          "total": 370
+        },
+        {
+          "year": 2019,
+          "total": 494
+        },
+        {
+          "year": 2020,
+          "total": 367
+        },
+        {
+          "year": 2021,
+          "total": 413
+        },
+        {
+          "year": 2022,
+          "total": 720
+        },
+        {
+          "year": 2023,
+          "total": 750
+        },
+        {
+          "year": 2024,
+          "total": 734
+        },
+        {
+          "year": 2025,
+          "total": 773
+        }
+      ],
+      "ttm_total": 975,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 103.4,
+      "ttm_share_pct": 4.2
+    },
+    {
+      "code": "S",
+      "label": "Other service activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 552
+        },
+        {
+          "year": 2017,
+          "total": 558
+        },
+        {
+          "year": 2018,
+          "total": 680
+        },
+        {
+          "year": 2019,
+          "total": 763
+        },
+        {
+          "year": 2020,
+          "total": 604
+        },
+        {
+          "year": 2021,
+          "total": 733
+        },
+        {
+          "year": 2022,
+          "total": 1262
+        },
+        {
+          "year": 2023,
+          "total": 1350
+        },
+        {
+          "year": 2024,
+          "total": 1134
+        },
+        {
+          "year": 2025,
+          "total": 1059
+        }
+      ],
+      "ttm_total": 965,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 91.8,
+      "ttm_share_pct": 4.2
+    },
+    {
+      "code": "H",
+      "label": "Transportation and storage",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 346
+        },
+        {
+          "year": 2017,
+          "total": 413
+        },
+        {
+          "year": 2018,
+          "total": 519
+        },
+        {
+          "year": 2019,
+          "total": 545
+        },
+        {
+          "year": 2020,
+          "total": 436
+        },
+        {
+          "year": 2021,
+          "total": 532
+        },
+        {
+          "year": 2022,
+          "total": 785
+        },
+        {
+          "year": 2023,
+          "total": 881
+        },
+        {
+          "year": 2024,
+          "total": 861
+        },
+        {
+          "year": 2025,
+          "total": 752
+        }
+      ],
+      "ttm_total": 704,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 117.3,
+      "ttm_share_pct": 3.0
+    },
+    {
+      "code": "Q",
+      "label": "Human health and social work activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 299
+        },
+        {
+          "year": 2017,
+          "total": 352
+        },
+        {
+          "year": 2018,
+          "total": 355
+        },
+        {
+          "year": 2019,
+          "total": 369
+        },
+        {
+          "year": 2020,
+          "total": 274
+        },
+        {
+          "year": 2021,
+          "total": 278
+        },
+        {
+          "year": 2022,
+          "total": 464
+        },
+        {
+          "year": 2023,
+          "total": 515
+        },
+        {
+          "year": 2024,
+          "total": 512
+        },
+        {
+          "year": 2025,
+          "total": 607
+        }
+      ],
+      "ttm_total": 642,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 103.0,
+      "ttm_share_pct": 2.8
+    },
+    {
+      "code": "K",
+      "label": "Financial and insurance activities",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 265
+        },
+        {
+          "year": 2017,
+          "total": 248
+        },
+        {
+          "year": 2018,
+          "total": 302
+        },
+        {
+          "year": 2019,
+          "total": 320
+        },
+        {
+          "year": 2020,
+          "total": 327
+        },
+        {
+          "year": 2021,
+          "total": 304
+        },
+        {
+          "year": 2022,
+          "total": 414
+        },
+        {
+          "year": 2023,
+          "total": 420
+        },
+        {
+          "year": 2024,
+          "total": 505
+        },
+        {
+          "year": 2025,
+          "total": 459
+        }
+      ],
+      "ttm_total": 494,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 73.2,
+      "ttm_share_pct": 2.1
+    },
+    {
+      "code": "R",
+      "label": "Arts, entertainment and recreation",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 218
+        },
+        {
+          "year": 2017,
+          "total": 266
+        },
+        {
+          "year": 2018,
+          "total": 293
+        },
+        {
+          "year": 2019,
+          "total": 337
+        },
+        {
+          "year": 2020,
+          "total": 289
+        },
+        {
+          "year": 2021,
+          "total": 336
+        },
+        {
+          "year": 2022,
+          "total": 432
+        },
+        {
+          "year": 2023,
+          "total": 478
+        },
+        {
+          "year": 2024,
+          "total": 425
+        },
+        {
+          "year": 2025,
+          "total": 464
+        }
+      ],
+      "ttm_total": 469,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 112.8,
+      "ttm_share_pct": 2.0
+    },
+    {
+      "code": "P",
+      "label": "Education",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 170
+        },
+        {
+          "year": 2017,
+          "total": 169
+        },
+        {
+          "year": 2018,
+          "total": 179
+        },
+        {
+          "year": 2019,
+          "total": 151
+        },
+        {
+          "year": 2020,
+          "total": 154
+        },
+        {
+          "year": 2021,
+          "total": 181
+        },
+        {
+          "year": 2022,
+          "total": 270
+        },
+        {
+          "year": 2023,
+          "total": 314
+        },
+        {
+          "year": 2024,
+          "total": 265
+        },
+        {
+          "year": 2025,
+          "total": 249
+        }
+      ],
+      "ttm_total": 248,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 46.5,
+      "ttm_share_pct": 1.1
+    },
+    {
+      "code": "E",
+      "label": "Water supply, sewerage, waste management and remediation",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 131
+        },
+        {
+          "year": 2017,
+          "total": 132
+        },
+        {
+          "year": 2018,
+          "total": 98
+        },
+        {
+          "year": 2019,
+          "total": 135
+        },
+        {
+          "year": 2020,
+          "total": 75
+        },
+        {
+          "year": 2021,
+          "total": 71
+        },
+        {
+          "year": 2022,
+          "total": 119
+        },
+        {
+          "year": 2023,
+          "total": 134
+        },
+        {
+          "year": 2024,
+          "total": 141
+        },
+        {
+          "year": 2025,
+          "total": 145
+        }
+      ],
+      "ttm_total": 144,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 10.7,
+      "ttm_share_pct": 0.6
+    },
+    {
+      "code": "A",
+      "label": "Agriculture, forestry and fishing",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 46
+        },
+        {
+          "year": 2017,
+          "total": 51
+        },
+        {
+          "year": 2018,
+          "total": 48
+        },
+        {
+          "year": 2019,
+          "total": 53
+        },
+        {
+          "year": 2020,
+          "total": 40
+        },
+        {
+          "year": 2021,
+          "total": 38
+        },
+        {
+          "year": 2022,
+          "total": 84
+        },
+        {
+          "year": 2023,
+          "total": 84
+        },
+        {
+          "year": 2024,
+          "total": 98
+        },
+        {
+          "year": 2025,
+          "total": 91
+        }
+      ],
+      "ttm_total": 82,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 97.8,
+      "ttm_share_pct": 0.4
+    },
+    {
+      "code": "D",
+      "label": "Electricity, gas, steam and air conditioning supply",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 47
+        },
+        {
+          "year": 2017,
+          "total": 45
+        },
+        {
+          "year": 2018,
+          "total": 62
+        },
+        {
+          "year": 2019,
+          "total": 70
+        },
+        {
+          "year": 2020,
+          "total": 53
+        },
+        {
+          "year": 2021,
+          "total": 91
+        },
+        {
+          "year": 2022,
+          "total": 93
+        },
+        {
+          "year": 2023,
+          "total": 53
+        },
+        {
+          "year": 2024,
+          "total": 61
+        },
+        {
+          "year": 2025,
+          "total": 58
+        }
+      ],
+      "ttm_total": 58,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 23.4,
+      "ttm_share_pct": 0.3
+    },
+    {
+      "code": "O",
+      "label": "Public administration and defence; compulsory social security",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 10
+        },
+        {
+          "year": 2017,
+          "total": 10
+        },
+        {
+          "year": 2018,
+          "total": 14
+        },
+        {
+          "year": 2019,
+          "total": 16
+        },
+        {
+          "year": 2020,
+          "total": 11
+        },
+        {
+          "year": 2021,
+          "total": 22
+        },
+        {
+          "year": 2022,
+          "total": 32
+        },
+        {
+          "year": 2023,
+          "total": 23
+        },
+        {
+          "year": 2024,
+          "total": 24
+        },
+        {
+          "year": 2025,
+          "total": 25
+        }
+      ],
+      "ttm_total": 28,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 150.0,
+      "ttm_share_pct": 0.1
+    },
+    {
+      "code": "B",
+      "label": "Mining and quarrying",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 54
+        },
+        {
+          "year": 2017,
+          "total": 29
+        },
+        {
+          "year": 2018,
+          "total": 29
+        },
+        {
+          "year": 2019,
+          "total": 26
+        },
+        {
+          "year": 2020,
+          "total": 20
+        },
+        {
+          "year": 2021,
+          "total": 38
+        },
+        {
+          "year": 2022,
+          "total": 39
+        },
+        {
+          "year": 2023,
+          "total": 37
+        },
+        {
+          "year": 2024,
+          "total": 26
+        },
+        {
+          "year": 2025,
+          "total": 27
+        }
+      ],
+      "ttm_total": 25,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": -50.0,
+      "ttm_share_pct": 0.1
+    },
+    {
+      "code": "T",
+      "label": "Activities of households as employers",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 4
+        },
+        {
+          "year": 2017,
+          "total": 5
+        },
+        {
+          "year": 2018,
+          "total": 11
+        },
+        {
+          "year": 2019,
+          "total": 3
+        },
+        {
+          "year": 2020,
+          "total": 1
+        },
+        {
+          "year": 2021,
+          "total": 2
+        },
+        {
+          "year": 2022,
+          "total": 8
+        },
+        {
+          "year": 2023,
+          "total": 7
+        },
+        {
+          "year": 2024,
+          "total": 9
+        },
+        {
+          "year": 2025,
+          "total": 9
+        }
+      ],
+      "ttm_total": 8,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": 125.0,
+      "ttm_share_pct": 0.0
+    },
+    {
+      "code": "U",
+      "label": "Activities of extraterritorial organisations and bodies",
+      "annual": [
+        {
+          "year": 2016,
+          "total": 4
+        },
+        {
+          "year": 2017,
+          "total": 0
+        },
+        {
+          "year": 2018,
+          "total": 2
+        },
+        {
+          "year": 2019,
+          "total": 2
+        },
+        {
+          "year": 2020,
+          "total": 1
+        },
+        {
+          "year": 2021,
+          "total": 1
+        },
+        {
+          "year": 2022,
+          "total": 3
+        },
+        {
+          "year": 2023,
+          "total": 4
+        },
+        {
+          "year": 2024,
+          "total": 0
+        },
+        {
+          "year": 2025,
+          "total": 3
+        }
+      ],
+      "ttm_total": 3,
+      "decade_from_year": 2016,
+      "decade_to_year": 2025,
+      "decade_change_pct": -25.0,
+      "ttm_share_pct": 0.0
+    }
+  ]
+}

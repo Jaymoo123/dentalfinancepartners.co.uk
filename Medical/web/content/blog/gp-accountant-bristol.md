@@ -7,10 +7,16 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Bristol"
-metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, GP partnership accounts and locum tax. Free initial chat."
+metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, partnership accounts and locum tax. Free initial chat."
 altText: "Bristol GP practice accountant meeting with medical professionals to discuss tax planning and NHS pension annual allowance"
 image: ""
 h1: "GP Accountant in Bristol: Specialist Tax and Accounting for Doctors"
+keyTakeaways:
+- "NHS GP goodwill cannot be sold (prohibited since 1 April 2004, currently under SI 2019/251), so a Bristol practice entry or exit is priced on tangible assets and capital accounts, not a goodwill multiple."
+- "The 2025/26 NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income over £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
+- "For the NHS defined-benefit scheme the measure is your pension input amount (the capitalised growth in your benefits), not the contributions deducted from your pay, so a pay rise or step up to partner can generate input well above what reaches your bank account."
+- "Mandatory Scheme Pays is available where the charge exceeds £2,000 and your NHS pension input exceeds the £60,000 allowance, with the election due by 31 July in the year after the charge year (a 2025/26 charge by 31 July 2027)."
+- "Making Tax Digital for Income Tax started on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, so most full-time Bristol locums and unincorporated private GPs are in scope, while limited companies are out and general partnerships are deferred."
 summary: "Looking for a GP accountant in Bristol? We help partners, salaried GPs, consultants and locum doctors across Bristol with NHS pension annual allowance, GP partnership accounts and medical tax compliance for the 2026/27 tax year."
 schema: ""
 faqs:

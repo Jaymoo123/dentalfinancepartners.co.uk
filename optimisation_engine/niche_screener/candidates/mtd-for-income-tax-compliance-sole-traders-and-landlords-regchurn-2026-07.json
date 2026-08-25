@@ -1,0 +1,28 @@
+{
+  "candidate_id": "mtd-for-income-tax-compliance-sole-traders-and-landlords-regchurn-2026-07",
+  "vertical": "MTD for income tax compliance (sole traders and landlords)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "legislation",
+      "url": "http://www.legislation.gov.uk/uksi/2026/336/made",
+      "excerpt": "These Regulations make provision requiring the use of software to deliver information relating to income tax to His Majesty’s Revenue and Customs (“HMRC”) and to keep related records.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "the income tax (digital obligations) regulations 2026",
+    "income tax digital obligations"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 2.9m sole traders and landlords phased in from April 2026 (HMRC MTD ITSA estimates; qualifying income over 50k first)",
+    "proof": "stated in http://www.legislation.gov.uk/uksi/2026/336/made"
+  },
+  "event_hypothesis": {
+    "what": "compulsory quarterly digital filing, software cost, points-based late-submission penalties (paired SI uksi/2026/370)",
+    "date": "2026-04-06",
+    "source": "http://www.legislation.gov.uk/uksi/2026/336/made"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

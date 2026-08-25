@@ -1,0 +1,24 @@
+{
+  "batch_id": "M3-C-B1",
+  "agent_id": "MW3-RUN-c",
+  "completed_at": "2026-05-28T11:30:00Z",
+  "phase": "run",
+  "lane": "c",
+  "commit_shas": [
+    "caf76d02",
+    "85dc0a38",
+    "0aa761b4",
+    "87697bc9",
+    "96a38607",
+    "6b608694"
+  ],
+  "slugs_done": [
+    "3m-mortgage-fraud-convicts-accountant-and-financial-adviser",
+    "accidental-landlord-taxes-a-complete-guide",
+    "a-complete-guide-to-periodic-tenancy",
+    "air-bnb-and-post-covid",
+    "airbnb-landlords",
+    "anti-avoidance-rules-share-exchanges-and-reorganisations"
+  ],
+  "notes": "All 6 picks shipped as final published blog markdown on worktree branch property-megawave3-c. Body words 2,224-2,707 (all within target bands). 12 FAQs each. 0 em-dashes across all pages. metaTitle 48-62c, metaDesc 136-146c (all within bounds). POCA s.330 (Pick 1) and TCGA s.137 FA 2026 substitution (Pick 6) re-verified at write via WebFetch. F-104/F-105 corrections (SI 2023/817 title + LURA 2023 s.80 anchor) held across Picks 4 + 5. Tracker rows updated with body-words + FAQ counts + RUN SHA + 1-line note. No new HP-lock raised. No new F-flag raised. F-102 cannib watch held: temporal-narrative (Pick 4) vs operational-handbook (Pick 5) framings cleanly differentiated. Manager merges worktree to main via standard rolling-arch ff-merge per session pickup doc; batch ready for ff-merge."
+}

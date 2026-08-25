@@ -1,0 +1,88 @@
+{
+  "candidate_id": "invisalign-leadmkt-2026-07",
+  "vertical": "invisalign",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.dental-media.co.uk/marketing/social/lead-generation-investigated/",
+      "excerpt": "21 Nov 2022 — 30 Invisalign Leads Per Month? Inside the workings of an Invisalign ... lead generation” services, often at a significant price! You'll ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/lead-generation-for-dentists/",
+      "excerpt": "\"The team understood how to market high-value treatments compliantly. We now receive consistent Invisalign leads weekly.\" Dr. Matthew LewisOwner ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://upscaleleadmarketing.co.uk/lead-generation-for-dentists",
+      "excerpt": "Invisalign leads typically run £40 to £100 per qualified consultation booked. Implant leads £70 to £180 (case value justifies it). Veneers and smile makeovers £ ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://sixtyfourleads.com/invisalign-leads/",
+      "excerpt": "How Much Do Invisalign Leads Cost? The cost of Invisalign lead generation can vary based on your local market and competition. That's why we start by ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ads.tiktok.com/business/en-GB/inspiration/invisalign-smile-quiz-lead-generation",
+      "excerpt": "Utilizing the Question Card Instant Form transformed our lead gen campaign. The results were clear: increased form submissions and an 11% drop in cost-per-lead. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.dominatedental.com/best-invisalign-lead-generation-service-uk-dental-practices/",
+      "excerpt": "21 Jan 2026 — You pay £50 to £150 per lead, but get zero exclusivity. Conversion rates reach 15% to 25% Invisalign consultations monthly, with an average ...",
+      "metric": {
+        "price_gbp": 150
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://dentalmarketingexpert.co.uk/blog/pay-per-lead-does-this-actually-exist",
+      "excerpt": "2 Nov 2021 — Interested in only paying for qualified leads, not for the clicks? Take a look at our blog which explains exactly how to pay per lead.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://eightfigurepractice.com/invisalign-marketing-plan-must-haves/",
+      "excerpt": "Every Invisalign campaign should be tracked from lead generation to case start. CRM tools reveal whether leads came from Google, Facebook, email, or events. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "best invisalign lead generation 2026 – proven patient ...",
+    "get 30 invisalign leads per month | how does it work?",
+    "how invisalign generated leads with instant form",
+    "invisalign",
+    "invisalign leads (100% exclusive calls directly to you)",
+    "invisalign marketing plan must-haves",
+    "lead generation for dentists uk | fill your diary with ...",
+    "lead generation for dentists uk | implant & invisalign - upscale",
+    "pay per lead - does this actually exist for dentists?"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK invisalign providers already paying per lead",
+    "proof": "8 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

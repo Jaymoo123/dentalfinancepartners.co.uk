@@ -25,7 +25,7 @@ import {
   PA_TAPER_START,
   PA_TAPER_END,
   BASIC_RATE_LIMIT,
-  HIGHER_RATE_LIMIT,
+  ADDITIONAL_RATE_GROSS_THRESHOLD,
   PROPERTY_ALLOWANCE,
 } from "../../../src/lib/landlordTax";
 import {
@@ -89,7 +89,7 @@ export function build(): ExcelJS.Workbook {
     { name: "PA_TaperStart", label: "Personal-allowance taper start (£)", value: PA_TAPER_START },
     { name: "PA_TaperEnd", label: "Personal allowance fully withdrawn (£)", value: PA_TAPER_END },
     { name: "BasicLimit", label: "Top of basic-rate band — taxable income (£)", value: BASIC_RATE_LIMIT },
-    { name: "HigherLimit", label: "Top of higher-rate band — taxable income (£)", value: HIGHER_RATE_LIMIT },
+    { name: "AddlThreshold", label: "Additional-rate threshold — total income (£)", value: ADDITIONAL_RATE_GROSS_THRESHOLD },
     { name: "PropAllowance", label: "Property allowance (£)", value: PROPERTY_ALLOWANCE },
   ];
 
@@ -441,14 +441,19 @@ export function build(): ExcelJS.Workbook {
  * additional bands at the year's rates.
  *
  *   taxable        = MAX(0, income - pa)
+ *   addlLimit      = MAX(BasicLimit, AddlThreshold - pa)   [taxable-income terms]
  *   basicAmount    = MIN(taxable, BasicLimit)
- *   higherAmount   = MIN(MAX(0, taxable - BasicLimit), HigherLimit - BasicLimit)
- *   additionalAmt  = MAX(0, taxable - HigherLimit)
+ *   higherAmount   = MIN(MAX(0, taxable - BasicLimit), addlLimit - BasicLimit)
+ *   additionalAmt  = MAX(0, taxable - addlLimit)
+ *
+ * AddlThreshold is £125,140 of TOTAL income, so it is converted onto the
+ * taxable-income axis using the PA that survives the taper (nil at £125,140).
  */
 function bandedTaxFormula(income: string, pa: string): string {
   const taxable = `MAX(0,${income}-${pa})`;
+  const addlLimit = `MAX(BasicLimit,AddlThreshold-${pa})`;
   const basicAmt = `MIN(${taxable},BasicLimit)`;
-  const higherAmt = `MIN(MAX(0,${taxable}-BasicLimit),HigherLimit-BasicLimit)`;
-  const addlAmt = `MAX(0,${taxable}-HigherLimit)`;
+  const higherAmt = `MIN(MAX(0,${taxable}-BasicLimit),${addlLimit}-BasicLimit)`;
+  const addlAmt = `MAX(0,${taxable}-${addlLimit})`;
   return `${basicAmt}*BasicRate+${higherAmt}*HigherRate+${addlAmt}*AddlRate`;
 }

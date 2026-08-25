@@ -22,6 +22,7 @@
  */
 
 import { NextResponse, type NextRequest } from "next/server";
+import { pingHeartbeat } from "@/lib/heartbeat";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured, adminSelect, adminUpdate } from "@/lib/supabase/admin";
 import { getResend, getFromAddress } from "@/lib/resend";
@@ -196,6 +197,8 @@ async function run(req: NextRequest): Promise<NextResponse> {
   );
 
   if (due.length === 0) {
+    // Dead-man ping: a no-op run still proves the cron is alive.
+    await pingHeartbeat(process.env.HEARTBEAT_DEPLOY_WATCH);
     return NextResponse.json({ ok: true, processed: 0 });
   }
 
@@ -263,6 +266,8 @@ async function run(req: NextRequest): Promise<NextResponse> {
 
   const summary = { processed: due.length, sent, skipped, failed };
   console.log("[deploy-watch] summary", summary);
+  // Dead-man ping: fires only on a run that reached the end. Silence alerts.
+  await pingHeartbeat(process.env.HEARTBEAT_DEPLOY_WATCH);
   return NextResponse.json({ ok: true, ...summary });
 }
 

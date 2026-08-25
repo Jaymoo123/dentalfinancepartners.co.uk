@@ -15,11 +15,11 @@ summary: The Annual Investment Allowance (AIA) gives UK dentists 100% tax relief
 schema: ''
 faqs:
 - question: Can I claim AIA on a dental chair I bought last year?
-  answer: No. You can only claim AIA in the accounting period when you bought the item. If you bought the dental chair in a previous tax year and did not claim AIA, you may be able to amend your tax return within the statutory time limits (usually 12 months after the filing deadline). Otherwise, the expenditure goes into the general pool and attracts writing-down allowances at 18% per year instead.
+  answer: No. You can only claim AIA in the accounting period when you bought the item. If you bought the dental chair in a previous tax year and did not claim AIA, you may be able to amend your tax return within the statutory time limits (usually 12 months after the filing deadline). Otherwise, the expenditure goes into the general pool and attracts writing-down allowances at 14% per year instead, the main-pool rate from April 2026 (it was 18% before that).
 - question: Does the AIA apply to associates who buy their own equipment?
   answer: Yes, if you are a self-employed associate and you buy equipment for use in your dental practice (for example, loupes, a handpiece, or a portable X-ray unit), you can claim AIA on that expenditure up to the £1 million limit. The equipment must be used wholly and exclusively for your business. If you are a salaried associate, you cannot claim capital allowances because you are an employee, not a self-employed trader.
 - question: What happens if I spend more than £1 million on equipment in one year?
-  answer: If you are a sole trader or partnership, you claim AIA on the first £1 million of qualifying expenditure. The remaining expenditure goes into the main pool (18% writing-down allowance) or the special rate pool (6% writing-down allowance). If you are a limited company, you may be able to use full expensing instead, which has no cap. Full expensing is available only to limited companies, not to sole traders or partnerships.
+  answer: If you are a sole trader or partnership, you claim AIA on the first £1 million of qualifying expenditure. The remaining expenditure goes into the main pool (14% writing-down allowance from April 2026, 18% before) or the special rate pool (6% writing-down allowance). If you are a limited company, you may be able to use full expensing instead, which has no cap. Full expensing is available only to limited companies, not to sole traders or partnerships.
 - question: Is the £1 million AIA limit permanent?
   answer: No. The £1 million limit is temporary and is set to expire on 31 March 2026. After that date, the limit will revert to £200,000 unless the government extends it again. If you are planning significant capital expenditure, consider accelerating purchases into the current tax year to lock in the higher limit. Speak to a dental-specialist accountant for advice on timing your purchases.
 dateModified: '2026-05-19'
@@ -70,7 +70,7 @@ imageCredit:
 
 <h3>What Does Not Qualify</h3>
 
-<p>The AIA is not available for cars <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you buy a car for the practice, you must claim capital allowances through the general pool at 18% per year (or 6% for cars with CO2 emissions above 50g/km). Dental vans used solely for business may qualify, but check the specific rules.</p>
+<p>The AIA is not available for cars <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you buy a car for the practice, you must claim capital allowances through the general pool at 14% per year, cut from 18% by Finance Act 2026 section 28 from April 2026 (or 6% for cars with CO2 emissions above 50g/km). Dental vans used solely for business may qualify, but check the specific rules.</p>
 
 <p>Assets used for leasing also do not qualify <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you buy equipment and lease it to another practice, you cannot claim AIA on that equipment. Similarly, assets gifted to connected parties (for example, giving a used chair to a family member's practice) do not qualify.</p>
 
@@ -86,7 +86,7 @@ imageCredit:
 
 <p>Limited company dentists claim AIA through the company tax return. The £1 million limit applies to the company. If two or more limited companies are controlled by the same person, they only get one AIA between them <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This is a common trap for dentists who own multiple practice companies through a group structure.</p>
 
-<p>For example, Dr Khan owns two limited companies: Khan Dental Ltd and Khan Ortho Ltd. Both are controlled by him. If Khan Dental Ltd spends £600,000 on equipment and Khan Ortho Ltd spends £500,000, the total group expenditure is £1.1 million. The group can only claim AIA on £1 million. The remaining £100,000 goes into the general pool at 18% writing-down allowance.</p>
+<p>For example, Dr Khan owns two limited companies: Khan Dental Ltd and Khan Ortho Ltd. Both are controlled by him. If Khan Dental Ltd spends £600,000 on equipment and Khan Ortho Ltd spends £500,000, the total group expenditure is £1.1 million. The group can only claim AIA on £1 million. The remaining £100,000 goes into the general pool at the 14% writing-down allowance.</p>
 
 <h3>Accounting Periods Shorter or Longer Than 12 Months</h3>
 
@@ -98,7 +98,7 @@ imageCredit:
 
 <p>For most dental limited companies, full expensing is more generous than AIA because there is no £1 million cap. However, full expensing does not apply to special-rate assets (integral features, long-life assets) which get a 50% first-year allowance instead <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 
-<p>Sole traders and partnerships cannot use full expensing. They must rely on AIA (up to £1 million) and the general pool (18% or 6% writing-down allowance) for expenditure above the cap.</p>
+<p>Sole traders and partnerships cannot use full expensing. They must rely on AIA (up to £1 million), the general pool (14% or 6% writing-down allowance) and, on new and unused main-rate plant, the 40% first-year allowance, for expenditure above the cap.</p>
 
 <p>From 1 January 2026, a 40% first-year allowance will be available for qualifying plant and machinery purchased after that date <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This is a separate relief, not a replacement for AIA.</p>
 

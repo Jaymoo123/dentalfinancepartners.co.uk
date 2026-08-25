@@ -6,7 +6,7 @@ date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Artificial Separation and VAT: Sch 1 Para 2 Direction Cases"
-metaDescription: "HMRC can treat artificially separated businesses as a single taxable person under VATA 1994 Sch 1 para 2. We cover the three-link test and the leading cases."
+metaDescription: "HMRC can treat artificially separated businesses as a single taxable person under VATA 1994 Sch 1 para 2."
 altText: "A UK holiday park reception desk with multiple booking screens and shared staff, representing the integrated operations that often attract HMRC artificial-separation directions"
 image: "https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit: "Photo by Pixabay on Pexels"
@@ -168,7 +168,7 @@ editorialNote: "MW2 Bucket B B3: case-law-led explainer on VATA 1994 Sch 1 parag
 <li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10" rel="nofollow">VATA 1994 Schedule 10 (Option to tax, commercial property landlord interaction)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/83" rel="nofollow">VATA 1994 s.83 (Appeal rights, FTT appeal route on directions)</a></li>
 <li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/94" rel="nofollow">VATA 1994 s.94 (Meaning of business for VAT purposes)</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-notice-7001-who-should-register-for-vat" rel="nofollow">HMRC VAT Notice 700/1 (Who should register for VAT, with disaggregation guidance)</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-notice-7001-should-i-be-registered-for-vat" rel="nofollow">HMRC VAT Notice 700/1 (Who should register for VAT, with disaggregation guidance)</a></li>
 <li><a href="https://www.gov.uk/vat-registration-thresholds" rel="nofollow">GOV.UK VAT registration thresholds (current threshold figure)</a></li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/vat-business-non-business" rel="nofollow">HMRC VAT Business / Non-Business Manual (disaggregation chapter)</a></li>
 </ul>

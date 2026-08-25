@@ -40,7 +40,7 @@ keyTakeaways:
   - "Flat rate scheme businesses classed as limited cost traders (goods costing under 2% of turnover or £1,000 a year) use a 16.5% flat rate, whatever their trade sector."
   - "Export sales are zero rated, but you must hold evidence the goods left the UK within 3 months of supply, or HMRC treats the sale as standard rated at 20%."
   - "The VAT registration threshold is £90,000 of taxable turnover over a rolling 12-month period, and you must register within 30 days of crossing it; the de-registration threshold is £88,000."
-  - "VAT returns and payments are due one calendar month and seven days after the accounting period ends, and late payment interest runs at base rate plus 2.5% (currently 7%)."
+  - "VAT returns and payments are due one calendar month and seven days after the accounting period ends, and late payment interest runs at base rate plus 4 percentage points (currently 7.75%)."
 ---
 <p>If you are VAT registered in the UK, you need to know exactly what you owe HMRC each quarter. A <strong>vat tax calculator</strong> is the tool that does the maths for you. But the calculation depends on which scheme you use, what you sell, and who you sell to.</p>
 
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <p>HMRC provides a VAT payment deadline calculator on its website <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. You cannot use it if you make payments on account or use the annual accounting scheme <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. For most businesses on quarterly returns, it gives a clear date.</p>
 
-<p>Late payment interest is charged from the due date. The rate is set at Bank of England base rate plus 2.5%. The exact rate moves with Bank of England decisions, so check the current rate on <a href="https://www.gov.uk/guidance/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments" rel="noopener noreferrer">HMRC's interest rates page</a> before calculating a potential liability. That adds up quickly on a large VAT bill.</p>
+<p>Late payment interest is charged from the due date. The rate is set at Bank of England base rate plus 4 percentage points (7.75% as of January 2026). The exact rate moves with Bank of England decisions, so check the current rate on <a href="https://www.gov.uk/guidance/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments" rel="noopener noreferrer">HMRC's interest rates page</a> before calculating a potential liability. That adds up quickly on a large VAT bill.</p>
 
 <h2>Common Mistakes with VAT Calculators</h2>
 

@@ -193,7 +193,7 @@ faqs:
 
 <h3>The £1,000 Trading Allowance</h3>
 
-<p>Under ITTOIA 2005 Part 6A (ss.783AD onwards, inserted by Finance (No. 2) Act 2017), if your gross self-employed receipts in a tax year are £1,000 or less, you do not need to declare them or pay tax on them. Where receipts exceed £1,000, you can claim the allowance under partial relief (s.783AI) and pay tax only on the excess, or you can claim your actual allowable expenses instead. Claim whichever gives you the lower taxable profit. Most self-employed DCPs with meaningful income will have actual expenses (GDC fee alone is around £150 to £200; add indemnity, CPD and mileage) that exceed £1,000, making actual expenses the better route.</p>
+<p>Under ITTOIA 2005 Part 6A (ss.783AD onwards, inserted by Finance (No. 2) Act 2017), if your gross self-employed receipts in a tax year are £1,000 or less, you do not need to declare them or pay tax on them. Where receipts exceed £1,000, you can claim the allowance under partial relief (s.783AI) and pay tax only on the excess, or you can claim your actual allowable expenses instead. Claim whichever gives you the lower taxable profit. Most self-employed DCPs with meaningful income will have actual expenses (the GDC DCP retention fee is £108; add indemnity, CPD and mileage) that exceed £1,000, making actual expenses the better route.</p>
 
 <h2>VAT and the Dental Care Exemption</h2>
 
@@ -211,7 +211,7 @@ faqs:
 
 <h3>Example A: Mixed Income (2 days PAYE, 2 days Self-Employed), 2026/27</h3>
 
-<p><strong>Facts:</strong> a dental hygienist works two days per week as an employee at Practice A, earning a salary of £24,000 per year (PAYE, Class 1 NIC deducted at source). She also works two days per week as a self-employed hygienist at Practice B, with gross receipts of £28,000 and allowable expenses of £6,000 (GDC retention fee £200, indemnity £400, CPD £600, equipment £800, inter-practice mileage 3,000 miles at 55p = £1,650, professional subscriptions £200, accountancy £500, other £1,650). Net self-employed profit: £22,000.</p>
+<p><strong>Facts:</strong> a dental hygienist works two days per week as an employee at Practice A, earning a salary of £24,000 per year (PAYE, Class 1 NIC deducted at source). She also works two days per week as a self-employed hygienist at Practice B, with gross receipts of £28,000 and allowable expenses of £6,000 (GDC DCP retention fee £108, indemnity £400, CPD £600, equipment £800, inter-practice mileage 3,000 miles at 55p = £1,650, professional subscriptions £200, accountancy £500, other £1,742). Net self-employed profit: £22,000.</p>
 
 <p><strong>Income tax (2026/27):</strong></p>
 <ul>

@@ -207,8 +207,8 @@ The event table MUST be insert-only and time-partitioned, with a declared retent
 - **Verify (any site):** inspect the events table: partitioned, retention documented, a future-month partition already exists, and an anon-key SELECT fails.
 
 #### AN-09 — Third-party analytics: consent-gated, optional, one-way  `[SHOULD]` `[Mechanism]` `(Property: compliant)`
-Third-party analytics (GA4, Clarity, replay tools) SHOULD load only through the consent gate, be inert when their project id is unset, and receive data one-way: high-signal first-party events may be bridged TO them, but they never feed the first-party store, and the site must function fully without them.
-- **Evidence (Property, 2026-06):** `components/analytics/ConsentedScripts.tsx` (conditional mount), `Clarity.tsx` (inert without `NEXT_PUBLIC_CLARITY_ID`), `track.ts` `forwardToClarity()` (curated event bridge + session-upgrade for replay sampling at low traffic).
+Third-party analytics (GA4, replay tools) SHOULD load only through the consent gate, be inert when their project id is unset, and receive data one-way: high-signal first-party events may be bridged TO them, but they never feed the first-party store, and the site must function fully without them.
+- **Evidence (Property, 2026-06):** `analytics/react/ConsentedScripts.tsx` (conditional mount), `GoogleAnalytics.tsx` (inert without a measurement id). Microsoft Clarity was removed estate-wide on 2026-08-03; GA4 is the only third-party analytics tag left.
 - **Verify (any site):** unset the third-party ids and build/run — no errors, no script tags. Opt out of tracking — no third-party script loads. Grep: nothing reads FROM the third-party tool into the site's own tables.
 
 ---
@@ -470,7 +470,7 @@ Anything that exists as a fleet (tools, gated resources, premium overlays, nurtu
 
 #### ED-03 — Meta-principle: external dependencies fail open  `[MUST]` `[Mechanism]` `(Property: compliant)`
 No third-party dependency (AI provider, email service, spreadsheet mirror, registry API, replay tool) may break a user-facing action. The user's action durably completes against the site's own database first; integrations enhance afterwards and degrade to absence on error — logged, never thrown back to the page. Unconfigured means inert, not broken.
-- **Evidence (Property, 2026-06):** `lib/ai.ts` + `lib/companies-house.ts` (null on any error), `api/leads/notify/route.ts` (204 no-op), `Clarity.tsx` (inert without id), LD-07's pipeline ordering.
+- **Evidence (Property, 2026-06):** `lib/ai.ts` + `lib/companies-house.ts` (null on any error), `api/leads/notify/route.ts` (204 no-op), `GoogleAnalytics.tsx` (inert without id), LD-07's pipeline ordering.
 - **Verify (any site):** unset every optional integration env var and run the build + a lead submit + a page browse: everything user-facing works; only the enhancements are absent.
 
 #### ED-04 — Decisions documented at the point of surprise  `[SHOULD]` `[Mechanism]` `(Property: compliant)`

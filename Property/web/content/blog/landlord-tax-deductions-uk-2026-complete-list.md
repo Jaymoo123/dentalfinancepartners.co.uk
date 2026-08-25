@@ -3,13 +3,11 @@ title: "Landlord Tax Deductions UK 2026/27: Complete List"
 slug: "landlord-tax-deductions-uk-2026-complete-list"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list"
 date: "2026-03-31"
-dateModified: "2026-05-30"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Landlord Allowable Expenses 2026/27 | Full Deductions List"
-metaDescription: "Every allowable landlord expense for 2026/27: repairs, finance costs, RDI, travel at 55p/mile, plus the grey areas (insurance claims, the home-office CGT trap)."
-metaTitle_prev: "Landlord Expenses List: 2026 Allowable Deductions"
-metaDescription_prev: "Full list of allowable landlord expenses for 2026/27 including repairs, agent fees, travel at 45p/mile. Plan your deductions with our guide."
+metaDescription: "Allowable expenses for rental income in 2026/27: the full landlord deductions list, repairs vs improvements, travel at 55p/mile and mortgage interest."
 altText: "UK landlord reviewing tax deduction documents and receipts for rental property expenses"
 image: ""
 h1: "Landlord Tax Deductions UK 2026/27: The Complete List of Allowable Expenses"
@@ -19,7 +17,7 @@ faqs:
   - question: "What expenses can landlords claim on tax in the UK for 2026/27?"
     answer: "UK landlords can claim property running costs (utilities, council tax when liable, insurance, ground rent, service charges), repairs and maintenance, letting agent and management fees, accountancy and legal fees for the letting, advertising, travel at 55p per mile, office and home-office costs, and replacement furniture under Replacement of Domestic Items Relief. Mortgage interest is not deducted as an expense for individuals. Instead you receive a basic-rate tax reducer under Section 24. Limited companies deduct finance costs in full before corporation tax."
   - question: "What is the difference between repairs and improvements for landlord tax?"
-    answer: "Repairs restore the property to its original condition and are fully deductible against rental income (fixing a boiler, repainting after a tenancy, replacing a like-for-like worktop). Improvements make the property better than it was (a new extension, an upgraded kitchen, replacing single-glazing with double-glazing) and are capital, so they are not deductible as a revenue expense. They form part of your base cost for Capital Gains Tax when you sell. HMRC sets out the line at PIM2030."
+    answer: "Repairs restore the property to its original condition and are fully deductible against rental income (fixing a boiler, repainting after a tenancy, replacing a like-for-like worktop). Improvements make the property better than it was (a new extension, an upgraded kitchen, a first-time loft conversion) and are capital, so they are not deductible as a revenue expense. They form part of your base cost for Capital Gains Tax when you sell. Replacing single glazing with double glazing is normally a repair rather than an improvement, because double glazing is the modern equivalent of what was there. HMRC sets out the line at PIM2030."
   - question: "Can I claim mortgage interest as a landlord expense in 2026/27?"
     answer: "Individual landlords cannot deduct residential mortgage interest as an expense. Under Section 24 you receive a tax reducer worth 20% of the finance costs for 2026/27, applied against your income tax bill rather than your rental profit. The reducer is capped at the lower of 20% of finance costs, 20% of property profit, or 20% of income above your personal allowance. Limited companies still deduct mortgage interest in full before corporation tax."
   - question: "Can landlords claim a flat-rate home-office deduction in 2026/27?"
@@ -49,6 +47,14 @@ faqs:
 <p>Knowing exactly what you can deduct is the single biggest lever an individual landlord still controls. Since Section 24 removed the deduction for mortgage interest, allowable expenses are where most of the legitimate tax planning now sits. This guide is the complete list of <strong>landlord tax deductions</strong> for the 2026/27 tax year, including the grey areas that trip up even experienced landlords, with the relevant statute and HMRC manual references so you can check the position yourself.</p>
 
 <p>The legal basis for all of this is ITTOIA 2005 s.272, which applies the trading-income deduction rules to a property business for accounts drawn up under generally accepted accounting practice. The core test for almost every expense is whether it was incurred <em>wholly and exclusively</em> for the property business. With Making Tax Digital for Income Tax now live for landlords above £50,000 from 6 April 2026, keeping clean digital records of these deductions matters more than it ever has.</p>
+
+<h2>What expenses can you claim against rental income?</h2>
+
+<p>Every cost that is wholly and exclusively for the letting, and nothing else. The allowable expenses for rental income fall into nine categories in 2026/27: property running costs, repairs, professional fees, advertising, finance costs (relieved as a credit, not a deduction, for individuals), travel at 55p a mile, office and admin, replacement furniture, and bad debts. The deductible ones come off your rent, and what is left is the profit you pay tax on.</p>
+
+<p>Two rules sit on top of that list, and they are where most claims go wrong. Mortgage interest is not one of the deductions if you own the property personally: you get a 20% tax reducer instead, worked out against your tax bill rather than taken off your rent. And a cost that improves the property, rather than putting it back the way it was, is capital. Capital costs do not reduce this year's profit at all.</p>
+
+<p>A cost with a private element is not lost automatically, but you can claim only the business share of it. A trip that combined a property inspection with a family visit is claimable for the inspection leg alone. A cost with no business purpose, such as your own time, is not claimable at any percentage. An overnight stay and reasonable subsistence on a long trip to a distant property can be claimed where the journey itself is genuinely for the letting, but meals near home cannot. Compensation or contractual damages you pay a tenant are allowable on the same wholly-and-exclusively basis, provided the payment arose from running the letting.</p>
 
 <h2>The Complete List of Allowable Landlord Expenses</h2>
 
@@ -126,6 +132,7 @@ faqs:
 </tr>
 </tbody>
 </table>
+<p>Source: HMRC property income guidance on allowable expenses, gov.uk. Data to August 2026.</p>
 
 <h2>Property Running Costs</h2>
 
@@ -184,8 +191,8 @@ faqs:
 
 <p><strong>Looking ahead to April 2027.</strong> Finance Act 2026 (Royal Assent 18 March 2026) introduced separate property income tax rates from 6 April 2027, with a property basic rate of 22%. As an enacted consequence, the Section 24 reducer rises from 20% to 22% for 2027/28 onwards, tracking the new basic rate. A basic-rate landlord sees no new wedge from this change, while a higher or additional-rate landlord's relief edges up from 20% to 22% but still sits well below their marginal rate. See our guide to the <a href="/blog/section-24-and-tax-relief/2027-property-tax-rates-section-24-relief-uk-landlords">2027 property tax rates and Section 24 relief</a>.</p>
 
-<h3>Deductible Finance Costs That Survive Section 24</h3>
-<p>Section 24 restricts the interest itself, but several related finance costs are still relievable in the normal way:</p>
+<h3>Other Finance Costs That Also Run Through the Reducer</h3>
+<p>Section 24 restricts more than the interest. These related costs are finance costs too, so for individuals they are relieved through the 20% reducer rather than deducted from profit:</p>
 <ul>
 <li>Mortgage arrangement and product fees</li>
 <li>Broker and mortgage-adviser fees</li>
@@ -271,6 +278,115 @@ faqs:
 <li><strong>Sale costs:</strong> estate agent and legal fees on a sale (capital, into CGT base cost)</li>
 </ul>
 <p>Residential property gains are taxed at 18% within the basic-rate band and 24% above it, after the annual exempt amount of £3,000 for 2026/27. Costing your improvements and acquisition correctly now is what protects that base cost later.</p>
+
+<h2>Can you deduct mortgage interest from rental income?</h2>
+
+<p>No, not since 6 April 2020. If you hold a residential let in your own name, mortgage interest comes off your tax bill as a 20% reducer for 2026/27, and never off your rental profit. A company holding the same property still deducts the interest in full. The rules were changed so that every landlord gets relief at the same basic rate, whatever band they pay tax in.</p>
+
+<p>The restriction arrived in stages. From 6 April 2017 you could still deduct 75% of your finance costs, then 50% for 2018/19 and 25% for 2019/20, with the rest of the relief given as the basic-rate reducer each year. From 2020/21 the deductible share reached zero and the reducer carried all of it.</p>
+
+<p><strong>The 20% is not 20% off your rent.</strong> Say you pay £7,200 of mortgage interest in 2026/27. None of that reduces your rental profit. Instead £1,440, which is 20% of £7,200, comes off the income tax you owe, subject to the three-part cap described earlier. For a higher-rate taxpayer the difference is real money: the old rules gave relief at 40%, worth £2,880 on the same interest, so that loan now costs £1,440 more in tax every year. If you pay basic rate, 20% relief is what you always had.</p>
+
+<p><strong>What else counts as a finance cost.</strong> Capital repayments are never claimable, at any tax rate. Only the interest element counts, and only through the reducer. Arrangement fees, product-switch fees, remortgage fees, broker fees and early redemption charges are finance costs too, so they run through the same reducer rather than reducing your profit. Interest on a loan taken out for the property business, rather than secured on the property itself, follows the same treatment.</p>
+
+<h2>Which repairs count as allowable expenses, and which are improvements?</h2>
+
+<p>A repair puts the property back the way it was and comes off this year's rent in full. An improvement makes it better than it was, so it waits and joins your Capital Gains Tax base cost. The test is the standard of the property, not the size of the bill: a £9,000 re-roof can be a repair, while a £900 fitted wardrobe that was never there before is capital.</p>
+
+<table>
+<thead>
+<tr>
+<th>Work</th>
+<th>Normal treatment</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repointing brickwork</td>
+<td>Repair, deduct in full</td>
+<td>Restores the wall and adds nothing new</td>
+</tr>
+<tr>
+<td>Roof repair after a leak</td>
+<td>Repair, deduct in full</td>
+<td>Returns the roof to its former state</td>
+</tr>
+<tr>
+<td>Single glazing replaced with double glazing</td>
+<td>Repair, deduct in full</td>
+<td>Modern equivalent of what was there</td>
+</tr>
+<tr>
+<td>Re-tiling or re-laying flooring like for like</td>
+<td>Repair, deduct in full</td>
+<td>Fitted flooring is part of the property</td>
+</tr>
+<tr>
+<td>Replacing carpets, curtains or a washing machine</td>
+<td>Replacement of Domestic Items Relief</td>
+<td>Loose domestic items, net off what the old one fetched</td>
+</tr>
+<tr>
+<td>Worn bathroom suite replaced with a similar one</td>
+<td>Repair, deduct in full</td>
+<td>Same standard, nothing upgraded</td>
+</tr>
+<tr>
+<td>Boiler replaced with a modern equivalent</td>
+<td>Repair, deduct in full</td>
+<td>Like-for-like replacement of a fixture</td>
+</tr>
+<tr>
+<td>Adding a second bathroom or an en suite</td>
+<td>Capital, into your CGT base cost</td>
+<td>New to the property</td>
+</tr>
+<tr>
+<td>First-time central heating or air conditioning</td>
+<td>Capital, into your CGT base cost</td>
+<td>An installation, not a replacement</td>
+</tr>
+<tr>
+<td>Loft conversion or extension</td>
+<td>Capital, into your CGT base cost</td>
+<td>Makes the property bigger than it was</td>
+</tr>
+</tbody>
+</table>
+<p>Source: HMRC property income guidance on repairs and improvements, gov.uk. Data to August 2026.</p>
+
+<p><strong>Jobs that are part repair and part upgrade.</strong> Replacing defective cladding with a compliant equivalent is normally a repair, because it restores the building rather than bettering it. Where the same job also lifts the block above its former standard, the upgrading part is capital and the rest stays revenue. Split these on the invoice detail. A contractor's single-line invoice is what turns a defensible split into a disallowed claim.</p>
+
+<p><strong>Major works on a leasehold flat.</strong> Ground rent and the day-to-day part of your service charge are deductible in the normal way. Where the service charge includes a contribution to major works, the repair element is revenue and any part funding an improvement to the block is capital. Ask the managing agent for the breakdown, because the demand on its own rarely shows it.</p>
+
+<p><strong>Vans, cars and tools.</strong> A van bought for the property business is not a running cost. Under the cash basis you deduct the payment in the year you make it; on traditional accounting you claim capital allowances instead. Cars are excluded from that cash-basis deduction, so a car is claimed either through mileage at 55p or, on traditional accounting, through capital allowances plus apportioned running costs. You cannot use both methods on the same vehicle, and lease payments on a car you also drive privately are apportioned to the business share.</p>
+
+<h2>Which tax year do you claim a landlord expense in?</h2>
+
+<p>The tax year you pay it, in almost every case. The cash basis has been the default for individual landlords since 2017/18, and it applies unless your rental receipts pass £150,000 or you opt out and use traditional accounting. On the cash basis the payment date decides, and nothing else does.</p>
+
+<p>That settles the question landlords ask most often after a late invoice. A roof leak in March 2026, invoiced and paid in May 2026, is a 2026/27 expense on the cash basis, even though the damage happened in 2025/26. On traditional accounting the same repair belongs to 2025/26, because that is when the work was done. Companies, limited liability partnerships and trustees cannot use the cash basis at all.</p>
+
+<p>Spending before your first tenant has its own rule. Costs incurred in the seven years before the letting starts, which would have been allowable once it was running, are treated as incurred on the first day of the business. See our guide to <a href="/blog/landlord-tax-essentials/pre-letting-expenses-landlord-claim-before-first-tenant">pre-letting expenses you can claim before your first tenant</a>.</p>
+
+<h2>Is rent tax deductible?</h2>
+
+<p>Only when you pay it to run the letting. Rent on your own home is not deductible against anything, because the UK gives tenants no relief for it. Rent you pay to a superior landlord on a property you then sublet is an ordinary running cost of your property business, and it comes off your profit in full.</p>
+
+<p>Ground rent works the same way. If you let a leasehold flat and pay £300 a year of ground rent, that £300 is allowable, worth £60 off a basic-rate tax bill and £120 off a higher-rate one. Service charges follow it, and the two are among the most commonly missed claims on leasehold lets.</p>
+
+<p>The rent your tenant pays you is the other side of the coin. It is income rather than a deduction, and it is taxable even when it does not reach your own account. Rent collected and held by a letting agent still counts as yours, so you declare the gross rent and claim the agent's fee as an expense instead of netting it off.</p>
+
+<h2>Should you claim expenses or the £1,000 property income allowance?</h2>
+
+<p>Claim the £1,000 property income allowance only when your actual allowable expenses come to less than £1,000. It is one or the other in a tax year, never both, and the £1,000 is per person rather than per property, so joint owners each have their own against their share.</p>
+
+<p>If your total property receipts for the year are £1,000 or less, full relief applies without you doing anything. There is nothing to report and no expenses to add up. Above that, you elect to deduct £1,000 in place of your actual costs. On £4,000 of rent with £600 of expenses, the allowance leaves £3,000 of taxable profit instead of £3,400, which is £400 less profit and £80 less tax at the basic rate.</p>
+
+<p><strong>The trap if you have a mortgage.</strong> You cannot use the property income allowance in a year you claim the Section 24 finance-cost reducer. The two are mutually exclusive, so a mortgaged let is almost always better off claiming actual expenses. The narrow exception is a year in which the reducer works out at nil, which leaves the election open.</p>
+
+<p>Beyond this allowance, landlords have no flat-rate percentage to fall back on. The 10% wear and tear allowance ended in 2016 and nothing replaced it as a share of rent. Our guide to the <a href="/blog/landlord-tax-essentials/property-income-allowance-1000-exemption-vs-expenses">£1,000 property income allowance</a> runs the full comparison, including joint owners and the situations where the allowance is blocked.</p>
 
 <h2>Worked Example: Claiming Your Expenses Correctly</h2>
 

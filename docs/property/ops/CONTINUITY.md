@@ -1,5 +1,7 @@
 # Property Continuity & Recovery Record
 
+> **PARTIALLY SUPERSEDED 2026-08-14.** The named-partner forwarding and per-firm ICO details recorded here belong to the retired single-firm arrangement, and are kept as a compliance record of what was done at the time. Current model: `docs/LEAD_PRICING.md`, `legal/README.md`.
+
 *Created 2026-06-24 (Wave 0 of the process audit). Single source of truth for "what would we need to keep lead income running if something failed." Update this when any of it changes; do not let it go stale.*
 
 ## Code durability (risk C)

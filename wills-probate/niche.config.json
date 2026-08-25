@@ -1,0 +1,112 @@
+{
+  "niche_id": "wills-probate",
+  "display_name": "Probate Compass",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
+  "domain": "www.probate-compass-placeholder.co.uk",
+  "tagline": "Clear, practical guidance on probate, wills and inheritance tax in the UK",
+  "description": "Probate Compass. Plain-English guidance on probate, wills and inheritance tax for UK executors, administrators and people planning their estates. Free calculators, no jargon. We connect readers with specialist help when the estate needs it.",
+  "brand": {
+    "primary_color": "#0f766e",
+    "logo_path": "/brand/primary-logo.png",
+    "publisher_logo_url": "/brand/icon-alt.png"
+  },
+  "contact": {
+    "email": "hello@probate-compass-placeholder.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    { "label": "Probate", "href": "/probate" },
+    { "label": "Wills", "href": "/wills" },
+    { "label": "Inheritance Tax", "href": "/inheritance-tax" },
+    { "label": "Who we help", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer_links": [
+    { "label": "Probate", "href": "/probate" },
+    { "label": "Wills", "href": "/wills" },
+    { "label": "Inheritance Tax", "href": "/inheritance-tax" },
+    { "label": "Who we help", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Research", "href": "/research" },
+    { "label": "Glossary", "href": "/glossary" },
+    { "label": "Power of Attorney", "href": "/lasting-power-of-attorney" },
+    { "label": "About", "href": "/about" },
+    { "label": "Privacy policy", "href": "/privacy-policy" },
+    { "label": "Terms", "href": "/terms" },
+    { "label": "Cookie policy", "href": "/cookie-policy" }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK executors, administrators and people planning their estates",
+    "categories": [
+      "Probate Process",
+      "Making a Will",
+      "Inheritance Tax",
+      "Executors",
+      "Intestacy",
+      "Pensions and IHT 2027",
+      "Power of Attorney"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "wills-probate",
+    "source_identifier": "wills-probate"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [],
+    "google_analytics_id": "",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    },
+    "theme_color": "#0f766e"
+  },
+  "lead_form": {
+    "role_label": "I am...",
+    "role_options": [
+      { "value": "executor-administrator", "label": "An executor or administrator" },
+      { "value": "planning-will", "label": "Planning my will" },
+      { "value": "recently-bereaved", "label": "Recently bereaved" },
+      { "value": "iht-planning", "label": "Planning for inheritance tax" },
+      { "value": "other", "label": "Other" }
+    ],
+    "placeholders": {
+      "name": "Jamie Smith",
+      "email": "jamie@example.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. I need help applying for probate, or I want to understand inheritance tax..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Work out what this estate really owes",
+    "sticky_secondary": "Free calculators for probate costs, timelines and inheritance tax.",
+    "sticky_button": "Try the calculators"
+  },
+  "blog": {
+    "cta_heading": "Unsure whether you need probate or what it will cost?",
+    "cta_body": "Our free calculators give you a clear answer in minutes, and if the estate is complex we can point you to the right specialist.",
+    "cta_button": "Use the free calculators"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}

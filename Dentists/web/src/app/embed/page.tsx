@@ -4,7 +4,7 @@ import { allTools } from "@/lib/tools/registry";
 import { siteConfig } from "@/config/site";
 
 export const metadata = {
-  title: "Embed Calculators | Dental Finance Partners",
+  title: "Embed Calculators",
   robots: { index: false },
 };
 

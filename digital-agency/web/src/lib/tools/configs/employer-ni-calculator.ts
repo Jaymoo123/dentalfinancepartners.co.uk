@@ -1,6 +1,6 @@
 /**
  * Employer NI & Cost-to-Hire Calculator — GenericTool config.
- * 2025/26 rates (employer NI 15% / £5,000 secondary threshold / £10,500 EA from 6 Apr 2025).
+ * 2026/27 rates (employer NI 15% / £5,000 secondary threshold / £10,500 EA, unchanged since 6 Apr 2025).
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -15,9 +15,9 @@ export const employerNiTool: GenericTool = {
   category: "Tax planning",
   oneLiner:
     "Total annual cost of your agency team. Employer NI at 15%, Employment Allowance and minimum auto-enrolment pension.",
-  metaTitle: "Employer NI Calculator 2025/26 | Agency Cost-to-Hire",
+  metaTitle: "Employer NI Calculator 2026/27 | Agency Cost-to-Hire",
   metaDescription:
-    "Free employer NI calculator for UK agencies. Total employment cost including 15% NI, Employment Allowance and auto-enrolment pension. 2025/26.",
+    "Free employer NI calculator for UK agencies. Total employment cost including 15% NI, Employment Allowance and auto-enrolment pension. 2026/27.",
   intro:
     "Calculate the total cost of employing your agency team including employer NI at 15% (on earnings above the £5,000 secondary threshold), Employment Allowance (£10,500 off for eligible employers) and minimum auto-enrolment pension contributions.",
   embedHeight: 420,
@@ -93,7 +93,7 @@ export const employerNiTool: GenericTool = {
   explainer: {
     heading: "Employer NI and the Employment Allowance",
     paragraphs: [
-      "Employers pay 15% NI on earnings above the secondary threshold (£5,000 in 2025/26, reduced from £9,100). Eligible employers with 2+ employees can offset up to £10,500 via the Employment Allowance, reducing their NI bill.",
+      "Employers pay 15% NI on earnings above the secondary threshold (£5,000 in 2026/27, reduced from £9,100 in April 2025). Eligible employers with 2+ employees can offset up to £10,500 via the Employment Allowance, reducing their NI bill.",
       "Auto-enrolment minimum employer pension is 3% on qualifying earnings above £6,240.",
     ],
   },

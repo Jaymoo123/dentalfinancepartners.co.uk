@@ -114,7 +114,7 @@ keyTakeaways:
 
 <p>You need to plan the timing. If you are thinking of selling within the next 18 months, restructuring now might lock you out of BADR. In that scenario, it might be better to keep the LLP in place, complete the sale, and then set up the Dubai entity with the sale proceeds.</p>
 
-<p>This is not a decision to make alone. Speak to an specialist agency accountant who understands both UK and UAE structures before you change anything.</p>
+<p>This is not a decision to make alone. Speak to a specialist agency accountant who understands both UK and UAE structures before you change anything.</p>
 
 <h2>What About Free Zone vs Mainland Dubai?</h2>
 

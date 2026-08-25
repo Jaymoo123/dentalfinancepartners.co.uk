@@ -22,7 +22,7 @@ faqs:
 - question: Can I transfer my existing agency into a holding company without triggering a tax charge?
   answer: Yes, if done correctly. A share-for-share exchange under TCGA 1992 Section 135 is tax-neutral. You exchange your trading company shares for shares in the new holding company. No capital gain arises at that point. The holding company inherits the base cost of the trading company shares. You will need a solicitor or accountant to handle the paperwork properly.
 - question: Does a holding company need to file its own accounts and tax return?
-  answer: Yes. Each company in the group files separate annual accounts at Companies House and a separate CT600 corporation tax return with HMRC. If the group exceeds certain size thresholds (turnover over £10.2m, balance sheet over £5.1m, or more than 50 employees), you also need group accounts. Most agencies below £5m turnover do not need group accounts.
+  answer: Yes. Each company in the group files separate annual accounts at Companies House and a separate CT600 corporation tax return with HMRC. If the group exceeds certain size thresholds (net turnover over £15m, balance sheet over £7.5m, or more than 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you also need group accounts. Most agencies below £5m turnover do not need group accounts.
 - question: Can I pay myself from the holding company instead of the trading company?
   answer: You can, but the mechanics matter. The trading company pays tax-free dividends up to the holding company. The holding company then pays dividends to you personally. You pay dividend tax at your marginal rate on those personal dividends. Alternatively, the holding company can employ you, but that creates payroll costs. Most founders keep their salary in the trading company and take dividends from the holding company.
 - question: Does a holding company structure protect my personal assets from agency liabilities?
@@ -138,7 +138,7 @@ keyTakeaways:
 
 <p>Once the holding company is in place, the compliance requirements change slightly. Here is what you need to know.</p>
 
-<p><strong>Annual accounts:</strong> Each company files its own accounts at Companies House. If the group exceeds two of three thresholds (turnover £10.2m, balance sheet £5.1m, 50 employees), you also need group accounts. Most agencies below £5m turnover do not hit this threshold.</p>
+<p><strong>Annual accounts:</strong> Each company files its own accounts at Companies House. If the group exceeds two of three thresholds (net turnover £15m, balance sheet £7.5m, 50 employees, for financial years beginning on or after 6 April 2025; previously £10.2m and £5.1m), you also need group accounts. Most agencies below £5m turnover do not hit this threshold.</p>
 
 <p><strong>Corporation tax:</strong> Each company files its own CT600 return. The holding company typically has minimal taxable income, just dividends from the trading company, which are exempt from corporation tax under the substantial shareholding exemption in most cases.</p>
 

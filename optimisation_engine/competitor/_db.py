@@ -24,18 +24,27 @@ MGMT_URL = f"https://api.supabase.com/v1/projects/{PROJECT_REF}/database/query"
 def _sql(query: str, *, _retries: int = 4, _backoff: float = 2.0) -> list[dict]:
     """Execute raw SQL via Supabase Management API. Returns rows.
 
-    Retries on 429 (rate limit) with exponential backoff.
+    Retries on 429 (rate limit), 5xx server errors, and network
+    timeout/transport failures with exponential backoff.
     """
     headers = {
         "Authorization": f"Bearer {SUPABASE_ACCESS_TOKEN}",
         "Content-Type": "application/json",
     }
     for attempt in range(_retries + 1):
-        r = httpx.post(MGMT_URL, headers=headers, json={"query": query}, timeout=60.0)
-        if r.status_code == 429:
+        try:
+            r = httpx.post(MGMT_URL, headers=headers, json={"query": query}, timeout=60.0)
+        except (httpx.TimeoutException, httpx.TransportError) as exc:
+            wait = min(_backoff * (2 ** attempt), 60.0)
+            print(f"  [_sql] {type(exc).__name__} — waiting {wait:.0f}s (attempt {attempt+1}/{_retries+1})")
+            time.sleep(wait)
+            if attempt == _retries:
+                raise
+            continue
+        if r.status_code == 429 or r.status_code >= 500:
             retry_after = float(r.headers.get("Retry-After", _backoff * (2 ** attempt)))
             wait = min(retry_after, 60.0)
-            print(f"  [_sql] 429 rate limit — waiting {wait:.0f}s (attempt {attempt+1}/{_retries+1})")
+            print(f"  [_sql] {r.status_code} — waiting {wait:.0f}s (attempt {attempt+1}/{_retries+1})")
             time.sleep(wait)
             continue
         r.raise_for_status()

@@ -155,7 +155,7 @@ SEO:
 UK TAX CONTEXT (use correct figures for 2025/26):
 - Corporation tax: 19% small profits rate (up to £50k profits), 25% main rate (above £250k), marginal relief applies between £50k-£250k
 - Income tax bands: £0-£12,570 personal allowance, £12,571-£50,270 basic rate 20%, £50,271-£125,140 higher rate 40%, above £125,140 additional rate 45%
-- Dividend tax rates: 8.75% basic, 33.75% higher, 39.35% additional. Annual dividend allowance: £500
+- Dividend tax rates 2026/27 (FA 2026 s.4): 10.75% basic, 35.75% higher, 39.35% additional. Annual dividend allowance: £500
 - National Insurance: primary threshold £12,570. Employer NI 15% above the £5,000 secondary threshold (from 6 April 2025). Employment Allowance £10,500 (single-director companies excluded). The old 13.8% / £9,100 applied only up to 5 April 2025.
 - BADR (Business Asset Disposal Relief): 14% CGT for disposals from 6 April 2025, rising to 18% from 6 April 2026. £1M lifetime limit. Shares must be held 2+ years. Old 10% rate applied to disposals BEFORE 6 April 2025.
 - CGT main rates (non-residential): 18% basic rate, 24% higher rate. These rates apply ABOVE the BADR £1M limit. Old 10%/20% rates applied before 30 October 2024.
@@ -165,7 +165,7 @@ UK TAX CONTEXT (use correct figures for 2025/26):
 - IR35 (off-payroll working): applies where contractor would be deemed an employee. Medium/large agencies are responsible for determining status and issuing SDS.
 - MTD for ITSA: mandatory from April 2026 for self-employed with qualifying income over £50k, April 2027 for over £30k.
 - Annual Investment Allowance: £1M per year.
-- Directors' loan account: interest-free loans from the company to a director are taxable if over £10k or not repaid within 9 months of year end (S455 tax charge at 33.75%).
+- Directors' loan account: interest-free loans from the company to a director are taxable if over £10k or not repaid within 9 months of year end (S455 tax charge at 35.75% for loans made on/after 6 April 2026; 33.75% for earlier loans).
 
 AGENCY FINANCE SPECIFICS:
 - Standard founder salary: £12,570 (up to primary NI threshold) plus dividends — models for tax efficiency
@@ -301,7 +301,7 @@ INTERNAL LINKING — REQUIRED:
 UK TAX CONTEXT (2025/26):
 - Corporation tax: 19% small profits (up to £50k), 25% main rate (above £250k), marginal relief £50k-£250k
 - Income tax: £0-£12,570 PA, £12,571-£50,270 basic 20%, £50,271-£125,140 higher 40%, above £125,140 additional 45%
-- Dividend tax: 8.75% basic, 33.75% higher, 39.35% additional. Annual dividend allowance £500.
+- Dividend tax 2026/27 (FA 2026 s.4): 10.75% basic, 35.75% higher, 39.35% additional. Annual dividend allowance £500.
 - NI: primary threshold £12,570. Employer NI 15% above the £5,000 secondary threshold (from 6 April 2025). Employment Allowance £10,500 (single-director companies excluded). The old 13.8% / £9,100 applied only up to 5 April 2025.
 - BADR: 14% CGT for disposals from 6 April 2025 (was 10% before then), rising to 18% from 6 April 2026. £1M lifetime limit. 5% shareholding, 2 years held, officer or employee.
 - CGT main rates (non-residential, used above BADR limit): 18% basic, 24% higher (changed 30 October 2024, was 10%/20% previously).
@@ -311,7 +311,7 @@ UK TAX CONTEXT (2025/26):
 - IR35: medium/large agencies determine status, issue SDS.
 - MTD for ITSA: mandatory from April 2026 for self-employed with £50k+ qualifying income, April 2027 for £30k+.
 - AIA: £1M per year.
-- Director's loan: S455 charge 33.75% on loans over £10k not repaid within 9 months of year end.
+- Director's loan: S455 charge 35.75% (loans made on/after 6 April 2026; 33.75% earlier) on loans over £10k not repaid within 9 months of year end.
 
 ICAEW TRUST SIGNALS:
 - Reference "as ICAEW qualified accountants" once or twice where genuinely relevant.

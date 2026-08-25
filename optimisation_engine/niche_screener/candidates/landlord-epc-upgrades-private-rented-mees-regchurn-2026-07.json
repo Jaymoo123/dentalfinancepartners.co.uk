@@ -1,0 +1,28 @@
+{
+  "candidate_id": "landlord-epc-upgrades-private-rented-mees-regchurn-2026-07",
+  "vertical": "landlord EPC upgrades (private rented MEES)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/improving-the-energy-performance-of-privately-rented-homes-2025-update",
+      "excerpt": "We are seeking views on the government’s proposals to raise minimum energy efficiency standards for privately rented homes in England and Wales by 2030.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "improving the energy performance of privately rented homes: 2025 update",
+    "improving energy performance of privately rented homes update"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 2.5m privately rented homes below EPC C in England and Wales (consultation's own scope)",
+    "proof": "stated in https://www.gov.uk/government/consultations/improving-the-energy-performance-of-privately-rented-homes-2025-update"
+  },
+  "event_hypothesis": {
+    "what": "retrofit cost per property up to a proposed 15,000 GBP cap, penalties for non-compliance",
+    "date": "2030 (proposed EPC C for all private tenancies; 2028 for new tenancies)",
+    "source": "https://www.gov.uk/government/consultations/improving-the-energy-performance-of-privately-rented-homes-2025-update"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

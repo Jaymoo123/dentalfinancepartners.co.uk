@@ -6,7 +6,7 @@ date: "2026-05-25"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Disapplication Sch 10 Paras 5, 6, 12: Distinguished"
-metaDescription: "VATA 1994 Sch 10 disapplication paragraphs distinguished: para 5 automatic dwelling, para 6 recipient-certified (VAT1614D), para 12 developers of exempt land."
+metaDescription: "VATA 1994 Sch 10 disapplication paragraphs distinguished: para 5 automatic dwelling, para 6 recipient-certified (VAT1614D)"
 altText: "A tall residential apartment building with a classic facade in Brighton, England, representative of a dwelling supply automatically disapplied from an option to tax under VATA 1994 Sch 10 para 5"
 image: "https://images.pexels.com/photos/5502449/pexels-photo-5502449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -183,12 +183,12 @@ editorialNote: "Wave 8 Bucket C C7, disapplication paragraph walk under Sch 10 p
 <h2>Authorities</h2>
 
 <ul>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/5" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 5 (dwellings automatic disapplication)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/6" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 6 (conversion of buildings for use as dwelling, recipient certification)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/12" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 12 (developers of exempt land anti-avoidance)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/14" rel="external nofollow" target="_blank">VATA 1994 Sch 10 para 14 (development-financier definition)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/62" rel="external nofollow" target="_blank">VATA 1994 s.62 (incorrect-certificate penalty)</a></li>
-<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="external nofollow" target="_blank">VATA 1994 Sch 8 Group 5 Notes 4 and 6 (relevant residential and relevant charitable purpose definitions)</a></li>
-<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
-<li><a href="https://www.gov.uk/government/publications/vat-certificate-to-disapply-the-option-to-tax-buildings-for-conversion-into-dwellings-etc-vat1614d" rel="external nofollow" target="_blank">Form VAT1614D: Certificate to disapply the option to tax buildings</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/5" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 5 (dwellings automatic disapplication)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/6" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 6 (conversion of buildings for use as dwelling, recipient certification)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/12" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 12 (developers of exempt land anti-avoidance)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/10/paragraph/14" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 10 para 14 (development-financier definition)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/section/62" rel="external nofollow noopener" target="_blank">VATA 1994 s.62 (incorrect-certificate penalty)</a></li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/8" rel="external nofollow noopener" target="_blank">VATA 1994 Sch 8 Group 5 Notes 4 and 6 (relevant residential and relevant charitable purpose definitions)</a></li>
+<li><a href="https://www.gov.uk/guidance/opting-to-tax-land-and-buildings-notice-742a" rel="external nofollow noopener" target="_blank">HMRC VAT Notice 742A: Opting to tax land and buildings</a></li>
+<li><a href="https://www.gov.uk/government/publications/vat-certificate-to-disapply-the-option-to-tax-buildings-for-conversion-into-dwellings-etc-vat1614d" rel="external nofollow noopener" target="_blank">Form VAT1614D: Certificate to disapply the option to tax buildings</a></li>
 </ul>

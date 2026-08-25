@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-05-27"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "How US-Based Directors of UK Companies Can Verify Under ECCTA"
+metaTitle: "US-Based Directors of UK Companies: Verify Under ECCTA"
 metaDescription: "ACSP-led route for US-resident directors and PSCs, US documents acceptable under MLR 2017, video-verification mechanics, and the FATCA / Form 5471 overlap."
 altText: "A US-based investor on a remote video-verification call with a UK Authorised Corporate Service Provider holding a US passport up to the camera for the Companies House identity verification"
 image: "https://images.pexels.com/photos/3756879/pexels-photo-3756879.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -259,10 +259,10 @@ editorialNote: "MW2 Bucket B B18: US-resident-director-specific operational walk
 <li><a href="https://www.legislation.gov.uk/ukpga/2006/46/contents" rel="nofollow">Companies Act 2006 (contents)</a></li>
 <li><a href="https://www.legislation.gov.uk/uksi/2017/692/contents" rel="nofollow">Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017 (SI 2017/692)</a></li>
 <li><a href="https://changestoukcompanylaw.campaign.gov.uk/" rel="nofollow">Companies House Changes to UK Company Law campaign page</a></li>
-<li><a href="https://www.gov.uk/guidance/authorised-corporate-service-providers" rel="nofollow">gov.uk Authorised Corporate Service Provider guidance</a></li>
+<li><a href="https://www.gov.uk/guidance/using-an-authorised-corporate-service-provider-acsp-to-verify-your-identity" rel="nofollow">gov.uk Authorised Corporate Service Provider guidance</a></li>
 <li><a href="https://find-and-update.company-information.service.gov.uk/" rel="nofollow">Companies House Find and update company information service</a></li>
 <li><a href="https://www.irs.gov/forms-pubs/about-form-5471" rel="nofollow">IRS Form 5471 (US-side parallel reporting)</a></li>
 <li><a href="https://www.fincen.gov/resources/filing-information" rel="nofollow">FinCEN Form 114 / FBAR (US-side)</a></li>
 <li><a href="https://www.irs.gov/forms-pubs/about-form-8938" rel="nofollow">IRS Form 8938 / FATCA (US-side)</a></li>
-<li><a href="https://www.gov.uk/government/publications/uk-us-double-taxation-convention-2001-protocol-not-in-force" rel="nofollow">UK/US Double Tax Treaty</a></li>
+<li><a href="https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force" rel="nofollow">UK/US Double Tax Treaty</a></li>
 </ul>

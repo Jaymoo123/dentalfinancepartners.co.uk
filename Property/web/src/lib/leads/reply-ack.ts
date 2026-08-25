@@ -45,7 +45,7 @@ function hasRealFirstName(firstName: string): boolean {
 /** Post-YES SMS/WhatsApp ack. Under 160 chars, no STOP line (the lead just opted in). */
 function buildAckBody(firstName: string): string {
   const name = hasRealFirstName(firstName) ? ` ${firstName}` : "";
-  return `Great, thank you${name}. One of our specialists will call you shortly. Nothing to prepare. Speak soon.`;
+  return `Great, thank you${name}. A specialist partner firm will call you shortly. Nothing to prepare. Speak soon.`;
 }
 
 async function fetchLead(leadId: string): Promise<LeadRow | null> {
@@ -171,11 +171,11 @@ export async function acknowledgeEmailReply(opts: { leadId: string }): Promise<b
       : "Got your reply";
 
     const { html, text } = renderLeadServiceEmail({
-      preheader: "Thanks, that is everything we need. A specialist will call you.",
+      preheader: "Thanks, that is everything we need. A specialist firm will call you.",
       greeting: `Hi ${ctx.firstName},`,
       paragraphs: [
         "Got your reply, thank you. That is everything we need.",
-        "One of our property tax specialists will call you, and if you mentioned a day or time that suits, we will aim for it.",
+        "The partner firm we introduce you to will call you, and if you mentioned a day or time that suits, we will aim for it.",
         "There is nothing else for you to do. If anything changes in the meantime, just reply here and I will pick it up.",
       ],
       // No cta/secondary: this is a reply-only service email, nothing to click.
@@ -257,6 +257,23 @@ export async function notifyOperatorOfReply(opts: {
       }
     }
 
+    // A sold lead's reply still lands here: say so, so the owner knows a
+    // buyer already holds it. released_at on any offer row is the ledger.
+    let soldLine = "";
+    try {
+      const sold = await adminSelect<{ released_at: string | null }>("lead_offers", {
+        select: "released_at",
+        lead_id: `eq.${opts.leadId}`,
+        released_at: "not.is.null",
+        order: "released_at.desc",
+        limit: "1",
+      });
+      const at = sold.ok ? sold.data[0]?.released_at : null;
+      if (at) soldLine = `Note: this lead was released to a buyer on ${String(at).slice(0, 10)}.`;
+    } catch {
+      // best-effort; the note is informational only
+    }
+
     const who = (lead.full_name || "").trim() || lead.email;
     const quoted = opts.replyBody.slice(0, 500);
     const esc = (s: string) =>
@@ -272,8 +289,8 @@ export async function notifyOperatorOfReply(opts: {
 <p><strong>${esc(who)}</strong> replied by ${channelLabel}:</p>
 <div style="background:#f1f5f9;border-radius:6px;padding:10px 14px;font-style:italic;">&ldquo;${esc(quoted)}&rdquo;</div>
 <p style="font-size:13px;color:#64748b;">This reply may include their name, a phone number, or a preferred call time.</p>
-</div>`,
-      text: `${who} replied by ${channelLabel}: "${quoted}"`,
+${soldLine ? `<p style="font-size:13px;color:#64748b;">${esc(soldLine)}</p>\n` : ""}</div>`,
+      text: `${who} replied by ${channelLabel}: "${quoted}"${soldLine ? `\n${soldLine}` : ""}`,
     });
     if (error) throw new Error(`operator reply notify error: ${JSON.stringify(error)}`);
     await recordLeadContactEvent(opts.leadId, "operator_update", opts.channel, {

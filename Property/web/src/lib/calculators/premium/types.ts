@@ -85,7 +85,7 @@ export type ChartDatum = { name: string } & Record<string, string | number>;
 
 export interface ChartSpec {
   kind: ChartKind;
-  /** y-axis / tooltip value formatter id (resolved in ResultChart). */
+  /** tooltip value formatter id (resolved in PremiumCalculator's ComparisonChart). */
   valueFormat?: "currency" | "percent" | "number";
   series: ChartSeries[];
   /** axis label for the value axis, optional */

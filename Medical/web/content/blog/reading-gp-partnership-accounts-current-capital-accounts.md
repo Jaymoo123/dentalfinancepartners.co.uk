@@ -11,6 +11,12 @@ metaDescription: "Make sense of your GP partnership accounts: the current accoun
 altText: "GP partner reading a bound set of partnership accounts showing current and capital accounts"
 image: ""
 h1: "How to Read GP Partnership Accounts: Current Accounts, Capital Accounts and Drawings"
+keyTakeaways:
+- "Your capital account is your long-term stake in the practice's net assets and moves only on a buy-in, a buy-out or a property revaluation, whereas your current account changes every year as profit is credited and drawings debited."
+- "A credit current account balance is undrawn profit the partnership owes you, while a debit (overdrawn) balance means you have drawn more than your profit share supports and owe the difference back."
+- "You are taxed on your allocated profit share, not on your drawings, so you can owe tax on undrawn profit still sitting in the practice as a credit current account balance."
+- "Your capital account reflects tangible assets and premises but never NHS goodwill, because the sale of NHS GP goodwill has been prohibited since 1 April 2004 (currently under SI 2019/251)."
+- "The total of all partners' capital and current account balances equals the net assets figure on the balance sheet, which is the quickest way to sanity-check that the accounts hang together."
 summary: "Every year a GP partner is handed a bound set of partnership accounts to sign, and often understands very little of what the numbers mean. This is a plain-English reading guide to that document: the profit and loss account, the balance sheet and, the part that confuses partners most, the difference between your capital account (your long-term stake in the practice's net assets) and your current account (the running tally of profit allocated to you, less what you have drawn). The aim is comprehension of the accounts themselves, not a tax tutorial."
 schema: ""
 faqs:

@@ -11,6 +11,12 @@ metaDescription: 'Let the NHS scheme settle your annual allowance charge: the ma
 altText: Doctor reviewing an NHS pension savings statement and a Scheme Pays election form
 image: ''
 h1: 'NHS Pension Scheme Pays for Doctors: Deadlines, the Mandatory Test and How It Reduces Your Pension'
+keyTakeaways:
+- "Mandatory Scheme Pays applies only where both tests are met at once: the annual allowance charge exceeds £2,000 and your NHS scheme input alone exceeds the standard £60,000 annual allowance."
+- "The £60,000 input test looks at the NHS scheme input in isolation, so a doctor whose combined input across schemes is over £60,000 but whose NHS slice is below it has no mandatory right."
+- "A 2025/26 charge must be elected by 31 July 2027, because the deadline is 31 July in the year following the year in which the tax year ends, not the July straight after."
+- "Where the scheme notifies a revised input amount late, the deadline extends to the earlier of three months from that notification or six years from the end of the original tax year, which is what lets McCloud-revised charges be settled."
+- "A Scheme Pays election can be amended but never revoked, and the charge must still be reported on your Self Assessment return even when the scheme settles it."
 summary: When a doctor breaches the annual allowance, Scheme Pays lets the NHS pension settle the tax charge in exchange for a permanent reduction in benefits. This guide explains mandatory versus voluntary Scheme Pays, the precise test, the 31 July deadline and how to make and revise an election.
 schema: ''
 faqs:

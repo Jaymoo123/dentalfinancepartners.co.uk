@@ -10,6 +10,7 @@ Usage:
     python build_signing_docx.py [input.md] [output.docx]
 Defaults to the FOR_SIGNATURE pair in this folder.
 """
+import os
 import re
 import sys
 
@@ -19,8 +20,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
-DEFAULT_IN = "Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.md"
-DEFAULT_OUT = "Lead_Generation_and_Data_Sharing_Agreement_FOR_SIGNATURE.docx"
+# The combined agreement produced by build_agreement.py. Both defaults pointed at
+# archived DJH-era filenames until 2026-08-14; run build_agreement.py first.
+DEFAULT_IN = "out/Lead_Generation_and_Data_Sharing_Agreement.md"
+DEFAULT_OUT = "out/Lead_Generation_and_Data_Sharing_Agreement.docx"
 
 INLINE_RE = re.compile(r"(\*\*.+?\*\*|\*.+?\*)")
 SEP_CELL_RE = re.compile(r"^:?-{2,}:?$")
@@ -190,7 +193,16 @@ def main():
     out = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_OUT
 
     with open(src, encoding="utf-8") as fh:
-        lines = fh.read().splitlines()
+        raw = fh.read()
+
+    # Same cleaner the PDF and the agreement build use. Until 2026-08-14 this builder
+    # passed HTML comments straight through, so the signing copy opened with four
+    # lines of build notes naming internal file paths, above the title.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import docprep
+    text = docprep.clean(raw)
+    docprep.assert_sendable(text, os.path.basename(src))
+    lines = text.splitlines()
 
     doc = Document()
 
@@ -223,6 +235,20 @@ def main():
     h2.paragraph_format.space_before = Pt(10)
     h2.paragraph_format.space_after = Pt(3)
     h2.paragraph_format.keep_with_next = True
+
+    # Levels 3 and 4 are used by the signature details blocks and by the rubric in
+    # Schedule 1. Until 2026-08-17 only "# " and "## " were handled, so "### Recipient
+    # details" and "#### Advisory" rendered as literal hashes in the signing copy.
+    for level, size in ((3, 11), (4, 10.5)):
+        h = doc.styles[f"Heading {level}"]
+        h.font.name = "Calibri"
+        h.font.size = Pt(size)
+        h.font.bold = True
+        h.font.italic = False
+        h.font.color.rgb = INK
+        h.paragraph_format.space_before = Pt(8)
+        h.paragraph_format.space_after = Pt(2)
+        h.paragraph_format.keep_with_next = True
 
     _footer(sec, "Lead Generation and Data Sharing Agreement")
 
@@ -261,9 +287,15 @@ def main():
                 h = doc.add_heading(level=1)
                 add_inline(h, text)
                 _bottom_border(h)
-        elif stripped.startswith("## "):
-            h = doc.add_heading(level=2)
-            add_inline(h, stripped[3:].strip())
+        elif re.match(r"#{2,6} ", stripped):
+            hashes = len(stripped) - len(stripped.lstrip("#"))
+            h = doc.add_heading(level=min(hashes, 4))
+            add_inline(h, stripped[hashes:].strip())
+        elif stripped.startswith("- "):
+            # The standard terms in Schedule 1 are a bullet list. These rendered as
+            # paragraphs beginning with a literal hyphen until 2026-08-17.
+            p = doc.add_paragraph(style="List Bullet")
+            add_inline(p, stripped[2:].strip())
         elif stripped.startswith(">"):
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.3)
@@ -280,6 +312,13 @@ def main():
 
     if table_buf:
         flush_table(doc, [r for r in table_buf if not is_separator_row(r)])
+
+    # Refuse to write a signing copy that still shows its markup. An unhandled
+    # heading level does not fail loudly, it just prints "#### Advisory" to the
+    # counterparty, which is how it survived into a document that was ready to send.
+    leaked = [p.text for p in doc.paragraphs if re.match(r"#{1,6} |\*\*|^- ", p.text.strip())]
+    if leaked:
+        sys.exit("unrendered markdown reached the docx: " + "; ".join(leaked[:5]))
 
     doc.save(out)
     print(f"Wrote {out} ({len(doc.paragraphs)} paragraphs, {len(doc.tables)} tables)")

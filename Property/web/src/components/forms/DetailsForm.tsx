@@ -7,19 +7,21 @@
  * message): a lead who has already given their name only sees the phone box, and
  * vice versa. Posts to /api/leads/complete with the signed profile token.
  *
- * House style, shared with MiniCapture/BookingPicker: sharp-ish inputs, emerald/
- * slate, honeypot on a non-semantic field name, no em-dashes in copy.
+ * House style, shared with MiniCapture/BookingPicker: rounded-xl inputs and
+ * hairline-ringed outcome cards (the post-redesign recipe), emerald/slate,
+ * honeypot on a non-semantic field name, no em-dashes in copy.
  */
 
 import { useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@/components/ui/NoticeCard";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 // Same input styling as MiniCapture, so the completion form feels like the rest
 // of the capture surfaces.
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-xl border-2 border-slate-200 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
 
 type MissingField = "name" | "phone";
 
@@ -127,30 +129,28 @@ export default function DetailsForm({
 
   if (status === "success") {
     return (
-      <div className="border-2 border-emerald-600 bg-emerald-50 p-6 text-center">
-        <p className="text-lg font-bold text-slate-900">Thank you, that is everything we need</p>
-        <p className="mt-2 text-base text-slate-700">
+      <NoticeCard tone="emerald" title="Thank you, that is everything we need">
+        <p className="text-base leading-relaxed text-slate-700">
           A property tax specialist will be in touch shortly. If you would like to pick a time that
           suits you, you can book a callback below.
         </p>
         {bookingToken && (
-          <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+          <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4`}>
             Book a callback
           </Link>
         )}
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "partial") {
     return (
-      <div className="border-2 border-emerald-600 bg-emerald-50 p-6 text-center">
-        <p className="text-lg font-bold text-slate-900">Thank you</p>
-        <p className="mt-2 text-base text-slate-700">
+      <NoticeCard tone="emerald" title="Thank you">
+        <p className="text-base leading-relaxed text-slate-700">
           We have saved that. We still need {remainingLabel(remaining)}. We will pop you a quick note
           so you can add it, or you can reply to any of our messages.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 

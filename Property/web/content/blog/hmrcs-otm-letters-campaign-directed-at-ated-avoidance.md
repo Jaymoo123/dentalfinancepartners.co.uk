@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "HMRC OTM ATED Letter: First 30 Days Response Guide"
 metaDescription: "HMRC One-to-Many letter on ATED non-compliance: 10-step triage, DDS vs CoP9, Sch 55 / 56 / 24 penalties, s.133 relief, 90-day disclosure window."
 altText: "Row of classic London Victorian townhouses on a historic street, representing the UK residential property typically targeted by HMRC One-to-Many compliance letters on ATED non-compliance"
-image: "https://images.pexels.com/photos/3639507/pexels-photo-3639507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/3639507/pexels-photo-3639507.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Lina Kivaka
   photographer_url: https://www.pexels.com/@lina

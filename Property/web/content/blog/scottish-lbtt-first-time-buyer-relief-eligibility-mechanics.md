@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Scottish LBTT First-Time Buyer Relief: £175k Mechanics"
-metaDescription: "Scottish FTB relief raises the LBTT nil band to £175,000 with no upper value cap. £600 max saving. Eligibility, joint-buyer rules, ADS interaction explained."
+metaDescription: "Scottish FTB relief raises the LBTT nil band to £175,000 with no upper value cap. £600 max saving. Eligibility, joint-buyer rules"
 altText: "Modern Scottish flat development with for-sale signs, illustrating the first-time-buyer market that the £175,000 LBTT FTB relief is designed to serve"
 image: "https://images.pexels.com/photos/7937967/pexels-photo-7937967.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

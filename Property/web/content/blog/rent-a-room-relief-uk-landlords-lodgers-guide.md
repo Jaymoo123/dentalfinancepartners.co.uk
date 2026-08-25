@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Rent a Room Allowance 2026: £7,500 Tax-Free Guide"
-metaDescription: "Rent a Room allowance 2026/27 stays at £7,500. Eligibility, joint-owner £3,750 split, opt-out deadline, MTD impact, and how lodger income sits next to a BTL portfolio."
+metaDescription: "Rent a Room allowance 2026/27 stays at £7,500. Eligibility, joint-owner £3,750 split, opt-out deadline, MTD impact"
 altText: "UK landlord showing lodger around furnished bedroom with contract documents on table"
 image: ""
 h1: "Rent a Room Allowance 2026: £7,500 Tax-Free Guide for UK Landlords"
@@ -62,7 +62,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The legal basis is in Part 7, Chapter 1 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005), sections 784 to 802. HMRC publishes the operational detail in helpsheet <a href="https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet" rel="external nofollow" target="_blank">HS223 (Rent a Room Scheme)</a>, which is the authoritative reference and is updated each tax year.</p>
+<p>The legal basis is in Part 7, Chapter 1 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005), sections 784 to 802. HMRC publishes the operational detail in helpsheet <a href="https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet" rel="external nofollow noopener" target="_blank">HS223 (Rent a Room Scheme)</a>, which is the authoritative reference and is updated each tax year.</p>
 
 <h2>Who qualifies (and who does not)</h2>
 
@@ -154,7 +154,7 @@ faqs:
 
 <p>Under Method A (the scheme), the calculation simply cannot produce a loss: it is gross receipts minus the allowance, capped at zero. So if your apportioned expenses on the let portion of the home are very high in a particular year (a one-off repair to the let bedroom's plumbing, for example) and they exceed gross receipts, you cannot claim that excess as a loss against other property income, against your trading income, or carry it forward.</p>
 
-<p>The only way to access loss relief is to opt out for that year (within the one-year window) and use normal property rules. Any loss can then be carried forward against future UK property profits under <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4210" rel="external nofollow" target="_blank">PIM4210</a>.</p>
+<p>The only way to access loss relief is to opt out for that year (within the one-year window) and use normal property rules. Any loss can then be carried forward against future UK property profits under <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4210" rel="external nofollow noopener" target="_blank">PIM4210</a>.</p>
 
 <h2>Rent a Room and a buy-to-let portfolio</h2>
 
@@ -166,7 +166,7 @@ faqs:
 
 <h3>MTD for Income Tax interaction</h3>
 
-<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income (gross trading plus gross property receipts) above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
+<p>MTD for ITSA went live on 6 April 2026 for sole-trader landlords with qualifying income (gross trading plus gross property receipts) above £50,000. The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The official sign-up checker is at <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" rel="external nofollow noopener" target="_blank">gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax</a>.</p>
 
 <p>If you stay within the Rent a Room limit and use the scheme, that £7,500 is not property income for MTD purposes and does not count towards the qualifying income threshold. If you opt out, the gross receipts <em>do</em> count. So a landlord with a buy-to-let portfolio earning £45,000 in gross rents plus £6,000 in lodger receipts has two very different MTD outcomes depending on the election:</p>
 
@@ -188,7 +188,7 @@ faqs:
 
 <h2>Capital Gains Tax: Principal Private Residence Relief</h2>
 
-<p>Using part of your main residence for lodgers can in principle affect <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief (PPR)</a> when you eventually sell. In practice, HMRC accepts that a lodger sharing living areas with the homeowner does not amount to exclusive business use, so PPR continues to cover the full gain on sale. The supporting HMRC guidance is in the <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg64702" rel="external nofollow" target="_blank">Capital Gains Manual at CG64702</a>.</p>
+<p>Using part of your main residence for lodgers can in principle affect <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief (PPR)</a> when you eventually sell. In practice, HMRC accepts that a lodger sharing living areas with the homeowner does not amount to exclusive business use, so PPR continues to cover the full gain on sale. The supporting HMRC guidance is in the <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg64702" rel="external nofollow noopener" target="_blank">Capital Gains Manual at CG64702</a>.</p>
 
 <p>The risk arises when:</p>
 
@@ -198,7 +198,7 @@ faqs:
 <li>You move out entirely and let the whole property. PPR then runs only for the period you actually lived there, with a final 9 months of deemed occupation tacked on under the standard rules.</li>
 </ul>
 
-<p>Where any of those apply, the gain is apportioned on sale, and the let portion may need to be reported and paid within 60 days of completion under the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow" target="_blank">UK Property CGT service</a>.</p>
+<p>Where any of those apply, the gain is apportioned on sale, and the let portion may need to be reported and paid within 60 days of completion under the <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" rel="external nofollow noopener" target="_blank">UK Property CGT service</a>.</p>
 
 <h2>Mortgage, insurance and licensing</h2>
 
@@ -224,6 +224,24 @@ faqs:
 <p>Already over the £7,500 limit, or unsure which method to use?</p>
 <p>The choice between Method A and Method B is a one-line decision on the tax return, but it can be worth £1,000 to £2,000 a year for a typical two-lodger household. We will model both treatments for your 2026/27 figures alongside any Section 24 exposure on the rest of the portfolio. Scroll to the form below for a free 20-minute review.</p>
 </aside>
+
+<h2>Rent a Room questions for 2026/27</h2>
+
+<h3>Is the Rent a Room tax free allowance still £7,500 in 2026?</h3>
+
+<p>Yes. The Rent a Room allowance is £7,500 for the 2026/27 tax year, frozen at that level since 6 April 2016 and not index-linked, so it does not rise with inflation. It is one allowance per person receiving the income, not one per room or per lodger: two lodgers paying £5,000 each produce £10,000 of gross receipts against a single £7,500 allowance, so £2,500 is taxable if you elect for the rent-a-room basis. Where two people receive the lodger income from the same property, each gets £3,750 rather than £7,500.</p>
+
+<h3>Does the Rent a Room allowance include bill money?</h3>
+
+<p>It does, and that is the trap. Anything the lodger pays you towards bills and services counts towards the £7,500, because the limit is measured on gross receipts rather than profit. That includes utilities recharged, cleaning, meals and laundry, on top of the rent itself. Refundable deposits held against damage do not count. The arithmetic catches people out: rent of £600 a month is £7,200 a year and comfortably inside the limit, but a £50 monthly contribution to bills takes the receipts to £7,800 and puts you over it, which means a return, a choice between the two ways of being taxed, and tax on the excess.</p>
+
+<h3>Do you have to live in the property to claim Rent a Room relief?</h3>
+
+<p>Yes. The accommodation has to be in your only or main residence for at least part of the tax year, and the lodger has to share living space with you or another permitted occupier. That rules out the common travelling scenario: if you let your only house while you are backpacking or working abroad and the tenant has the run of the whole property, the scheme does not apply, however briefly you are away and whether or not you own anywhere else. The income is ordinary property income on the property pages of your return, with the Section 24 finance cost restriction applying to any mortgage interest. Letting a furnished room while you continue to live in the house and share the kitchen and bathroom is the arrangement the scheme is built for.</p>
+
+<h3>How do you deduct utility expenses from the £7,500 Rent a Room allowance?</h3>
+
+<p>You cannot, and that is the point of the trade-off. Once receipts pass £7,500 the default treatment is the normal property rules, taxing your actual profit: gross receipts less the allowable expenses apportioned to the let part of the home, which is where utilities, cleaning and repairs get their relief. The rent-a-room basis is the alternative, and it applies only if you elect for it. Elect, and the taxable figure is gross receipts minus £7,500 and nothing else, with no deduction for bills or any other expense. The election has to be made within one year of the 31 January following the tax year, so by 31 January 2029 for 2026/27, and it is only worth making where the apportioned expenses come to less than £7,500. Staying on the normal rules is the better answer where expenses run above that, or where you need to claim a loss, because the rent-a-room basis cannot produce one.</p>
 
 <h2>When professional advice pays for itself</h2>
 

@@ -1,0 +1,21 @@
+{
+  "batch_id": "M3-B-B3",
+  "agent_id": "MW3-Stage1-B",
+  "completed_at": "2026-05-27T00:00:00Z",
+  "commit_shas": [
+    "c6fd573",
+    "02006a2",
+    "6f5e2fe",
+    "21c9955",
+    "22d4f25",
+    "85606cf"
+  ],
+  "slugs_done": [
+    "ated-return-amendment-guide-when-how-tax-tips",
+    "ated-valuation-date",
+    "automatic-exchange-of-information",
+    "avoiding-common-mistakes-with-enveloped-dwelling-tax",
+    "changes-nrl-companies",
+    "contaminated-land-remediation-and-risk-assessment"
+  ]
+}

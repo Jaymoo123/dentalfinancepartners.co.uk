@@ -10,6 +10,12 @@ metaDescription: 'File your locum doctor self assessment right: the SA103 pages,
 altText: UK locum doctor reviewing self assessment tax forms and documents on desk
 image: ''
 h1: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
+keyTakeaways:
+- "The online return for 2025/26 and any tax owed are both due by 31 January 2027, while paper returns must be filed by 31 October 2026."
+- "Class 4 NIC is charged at 6% on profits between £12,570 and £50,270 and 2% above, the 6% main rate having replaced the old 9% from 6 April 2024."
+- "MTD for Income Tax started on 6 April 2026 for sole traders with qualifying income over £50,000, dropping to £30,000 in 2027 and £20,000 in 2028."
+- "Payments on account apply when your bill exceeds £1,000 and less than 80% of tax was collected at source, each instalment being half the current year's liability, due 31 January and 31 July."
+- "HMRC's approved mileage rate is 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p thereafter."
 summary: Step-by-step guide to filing self assessment as a locum doctor in 2026/27. Covers the SA103 self-employment pages, the 31 January deadline, payments on account, Class 4 NIC at 6% and Making Tax Digital from April 2026.
 schema: ''
 canonical: https://www.medicalaccounts.co.uk/blog/locum-doctor-self-assessment-filing-guide

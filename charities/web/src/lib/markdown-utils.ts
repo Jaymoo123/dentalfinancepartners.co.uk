@@ -30,3 +30,25 @@ export function extractHeadings(html: string): Array<{ id: string; text: string;
 
   return headings;
 }
+
+/**
+ * Extract Q&A pairs from a "Frequently asked questions" section:
+ * each <h3> is a question, everything until the next <h3>/<h2> is the answer.
+ * Returns plain-text pairs suitable for FAQPage JSON-LD (uses copy verbatim, tags stripped).
+ */
+export function extractFaqs(html: string): Array<{ question: string; answer: string }> {
+  const sectionMatch = /<h2[^>]*>\s*Frequently asked questions\s*<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/i.exec(html);
+  if (!sectionMatch) return [];
+
+  const faqs: Array<{ question: string; answer: string }> = [];
+  const qaRegex = /<h3[^>]*>([\s\S]*?)<\/h3>([\s\S]*?)(?=<h3[^>]*>|$)/gi;
+  const strip = (s: string) =>
+    s.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").replace(/ ([.,;:)])/g, "$1").trim();
+  let m;
+  while ((m = qaRegex.exec(sectionMatch[1])) !== null) {
+    const question = strip(m[1]);
+    const answer = strip(m[2]);
+    if (question && answer) faqs.push({ question, answer });
+  }
+  return faqs;
+}

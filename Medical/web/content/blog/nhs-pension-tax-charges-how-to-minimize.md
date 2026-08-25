@@ -7,7 +7,7 @@ generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
 category: "NHS Pension Planning"
 metaTitle: "How to Reduce NHS Pension Annual Allowance Charges"
-metaDescription: "How high-earning doctors cut NHS pension annual allowance charges in 2025/26 and 2026/27: carry forward, Scheme Pays, taper management and the incorporation trap."
+metaDescription: "How high-earning doctors cut NHS pension annual allowance charges in 2025/26 and 2026/27: carry forward, Scheme Pays, taper and the incorporation trap."
 altText: "UK doctor reviewing NHS pension annual allowance statements and tax calculations at desk"
 image: ""
 h1: "How to Minimise NHS Pension Annual Allowance Charges"
@@ -20,6 +20,12 @@ howtoSteps:
     text: "The allowance tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 above to a £10,000 floor. Keeping threshold income at or below £200,000 removes the taper."
   - name: "Decide whether to use Scheme Pays"
     text: "Where a charge remains, Scheme Pays settles it from your future pension via a permanent actuarial reduction. Mandatory Scheme Pays needs a charge over £2,000 and input over £60,000; elect by 31 July, so a 2025/26 charge by 31 July 2027."
+keyTakeaways:
+- "The charge is measured against your pension input amount, the capitalised growth in your defined-benefit NHS pension, not the contributions taken from your payslip."
+- "The standard annual allowance is £60,000 for 2025/26, and only the excess above your available allowance is charged at your marginal rate (up to 45%)."
+- "Carry forward lets you add unused allowance from the previous three tax years, but you must use the current year in full first and draw on the earliest year first."
+- "The taper bites where threshold income exceeds £200,000 and adjusted income exceeds £260,000, cutting the allowance by £1 for every £2 over, down to a £10,000 floor."
+- "Mandatory Scheme Pays needs a charge over £2,000 and NHS input above £60,000, and a 2025/26 charge must be elected by 31 July 2027."
 summary: "A high earner's strategy guide to cutting NHS pension annual allowance charges: how to use carry forward, when Scheme Pays makes sense, how to manage the taper, and the traps that cost doctors money. General information for UK doctors, GPs and consultants, not personal advice."
 schema: ""
 faqs:

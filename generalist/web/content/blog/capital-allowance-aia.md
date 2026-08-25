@@ -105,7 +105,7 @@ keyTakeaways:
 
 <p>Take a limited company running a software consultancy in Manchester's Northern Quarter. In the year to 31 March 2026, the company spends £47,500 on new computers, desks, monitors, and office furniture. All of it qualifies as plant and machinery.</p>
 
-<p>Without the AIA, the company would add the £47,500 to its main rate pool and claim 18% writing down allowance in year one: £8,550. The remaining £38,950 carries forward to the next year.</p>
+<p>Without the AIA, the company would add the £47,500 to its main rate pool and claim the 18% writing down allowance that applied to that year to 31 March 2026: £8,550. The remaining £38,950 carries forward to the next year. For an equivalent year to 31 March 2027 the rate would be 14%, giving £6,650 in year one and £40,850 carried forward.</p>
 
 <p>With the AIA, the company claims the full £47,500 in year one. That reduces its taxable profits by £47,500. At 19% corporation tax (small profits rate), that saves £9,025 in tax. At 25% (main rate), it saves £11,875.</p>
 

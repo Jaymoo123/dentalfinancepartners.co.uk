@@ -25,6 +25,9 @@ import {
   splitRemainderForGate,
   splitContentAtMidScroll,
 } from "@accounting-network/web-shared/content/blog-splits";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -319,13 +322,14 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <div className="mt-16 bg-slate-900 p-8 sm:p-10 text-white">
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                  {niche.blog.cta_heading}
+                  {activeCta.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-slate-200">
-                  {niche.blog.cta_body}
+                  {activeCta.blog.cta_body}
                 </p>
-                <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+                {/* LeadForm labels/consent copy are dark by design, so it must sit on a light surface. */}
+                <div className="mt-8 bg-white p-6 sm:p-8">
+                  <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
                 </div>
               </div>
 

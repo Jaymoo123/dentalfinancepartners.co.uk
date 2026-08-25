@@ -7,10 +7,16 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Last Man Standing: GP Partnership Premises Risk"
-metaDescription: "Why the last GP partner can be left holding the surgery lease or loan, why incoming partners resist buying in, and how the deed and structure manage the risk."
+metaDescription: "Why the last GP partner can be left holding the surgery lease or loan, why incoming partners resist buying in, and how the deed and structure manage risk."
 altText: "GP partners reviewing a surgery lease and partnership deed around a meeting table"
 image: ""
 h1: "The Last Man Standing Problem: GP Partnership Premises Liability and How to Manage It"
+keyTakeaways:
+- "Partners are usually jointly and severally liable on a surgery lease, so under the Partnership Act 1890 the landlord can pursue any single remaining partner for the whole of the rent and end-of-lease dilapidations."
+- "The NHS Property Services and BMA standard lease for health-centre occupiers typically includes a tenant break right tied to the core NHS contract, allowing the tenant to break if that contract is terminated or not renewed."
+- "Under the NHS Premises Costs Directions, an owner-occupier cannot be required to repay more than the actual sale price, or the best price reasonably obtainable on the open market, which limits grant-clawback negative equity."
+- "A well-drafted partnership deed can cap how many partners may retire within a single accounting period, staggering exits to prevent a domino collapse of partner numbers."
+- "A partnership with no deed or a lapsed deed is a partnership at will, which can be dissolved on notice and crystallise liabilities in an uncontrolled way."
 summary: "When partners leave a GP partnership faster than new ones join, liability for the surgery does not shrink to match. A leasehold practice can leave the remaining partners holding the whole lease, and an owner-occupier practice can leave departing partners unable to sell their premises share. This guide explains how the last man standing risk arises, the protections that exist, and how the partnership deed and ownership structure are used to manage it."
 schema: ""
 faqs:

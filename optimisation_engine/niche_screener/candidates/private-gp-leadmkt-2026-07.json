@@ -1,0 +1,97 @@
+{
+  "candidate_id": "private-gp-leadmkt-2026-07",
+  "vertical": "private gp",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/lead-generation-for-doctors/",
+      "excerpt": "As a dedicated lead generation agency for doctors, we create patient-focused campaigns designed to strengthen your practice and build loyalty.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://theleadgenerationagency.uk/services/lead-generation-for-doctors/",
+      "excerpt": "UK lead generation agency booking 40+ qualified B2B meetings a month via LinkedIn, cold email, SEO, PPC and cold calling. Pay-per-lead available.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pabau.com/blog/healthcare-lead-generation/",
+      "excerpt": "16 Jun 2026 — Paid search and social ads run on a cost-per-click or cost-per-lead basis, while agencies and pay-per-lead vendors charge per qualified lead or ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adbetter.com/sector/private-healthcare-lead-generation/",
+      "excerpt": "ONLY PAY PER QUALIFIED LEAD ... No retainers, no management fees, no hidden costs – you only pay when we deliver leads that meet your qualification criteria. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ineedleads.co.uk/blog/lead-generation-for-healthcare-and-medical-companies-in-nottingham",
+      "excerpt": "14 May 2026 — We offer 'Done-For-You' setup services starting from £2,500/mo,",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.automatenow.uk/blog/ethical-healthcare-lead-generation-for-medical-leads",
+      "excerpt": "18 Apr 2024 — For just a minimal cost per lead, they'll optimize your website, take over your email marketing to generate new leads, improve how you ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/personal-insurance/private-medical-insurance-pmi/",
+      "excerpt": "average daily advertising cost per lead generated is £50* and we charge £25. For private health leads, the cost per lead starts at £70.",
+      "metric": {
+        "price_gbp": 25
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://ciente.io/blogs/pay-per-appointment/",
+      "excerpt": "12 Jan 2026 — In simple terms, pay-per-appointment lead generation is a lead generation model that operates on a specific pricing structure.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://theb2cdataproviders.co.uk/healthcare-leads/",
+      "excerpt": "Buy verified UK healthcare leads & health insurance leads. Ideal for brokers and advisers working in private medical insurance (PMI)",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "6 mistakes to avoid in pay-per-appointment lead generation",
+    "buy healthcare leads uk | verified health insurance leads",
+    "buy private health insurance (phi) leads online",
+    "ethical healthcare lead generation for medical leads",
+    "expert lead generation agency for doctors",
+    "healthcare lead generation in nottingham",
+    "healthcare lead generation strategies for private clinics",
+    "lead generation for doctors uk — real patient bookings",
+    "private gp",
+    "private healthcare lead generation"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK private gp providers already paying per lead",
+    "proof": "9 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -8,6 +8,8 @@ import {
   marginalSdlt,
 } from "@/lib/sdlt";
 import { NumberInput } from "@/components/calculators/fields/NumberInput";
+import { ResultGate } from "@/components/calculators/ResultGate";
+import { Eyebrow } from "@/components/ui/page-blocks";
 
 /**
  * Stamp Duty Land Tax (SDLT) calculator — England & Northern Ireland.
@@ -63,11 +65,11 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
       : "Get expert help with your purchase →";
 
   return (
-    <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
+    <div className="rounded-xl bg-white p-6 sm:p-8 lg:p-10">
       <div className="mb-6 sm:mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
-          Calculator
-        </div>
+        {/* Was a filled navy pill badge. Eyebrow is the shared section
+            label; it carries its own bottom margin. */}
+        <Eyebrow>Calculator</Eyebrow>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">
           Stamp Duty (SDLT) Calculator
         </h3>
@@ -103,7 +105,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
               About this purchase
             </legend>
 
-            <label className="flex items-start gap-3 cursor-pointer rounded-lg border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
+            <label className="flex items-start gap-3 cursor-pointer rounded-xl border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
               <input
                 type="checkbox"
                 checked={additional}
@@ -111,12 +113,12 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
               />
               <span className="text-sm leading-snug text-slate-800">
-                <span className="font-bold">Additional property</span> (buy-to-let or second home) —
+                <span className="font-bold">Additional property</span> (buy-to-let or second home):
                 adds the <span className="font-semibold">5% surcharge</span>
               </span>
             </label>
 
-            <label className="flex items-start gap-3 cursor-pointer rounded-lg border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
+            <label className="flex items-start gap-3 cursor-pointer rounded-xl border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
               <input
                 type="checkbox"
                 checked={ftb}
@@ -124,11 +126,11 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
               />
               <span className="text-sm leading-snug text-slate-800">
-                <span className="font-bold">First-time buyer</span> — relief on the first £300,000 (price up to £500,000)
+                <span className="font-bold">First-time buyer</span>: relief on the first £300,000 (price up to £500,000)
               </span>
             </label>
 
-            <label className="flex items-start gap-3 cursor-pointer rounded-lg border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
+            <label className="flex items-start gap-3 cursor-pointer rounded-xl border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
               <input
                 type="checkbox"
                 checked={nonResident}
@@ -136,7 +138,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
               />
               <span className="text-sm leading-snug text-slate-800">
-                <span className="font-bold">Non-UK resident</span> — adds the <span className="font-semibold">2% surcharge</span>
+                <span className="font-bold">Non-UK resident</span>: adds the <span className="font-semibold">2% surcharge</span>
               </span>
             </label>
           </fieldset>
@@ -147,6 +149,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
         </div>
 
         {/* Result */}
+        <ResultGate campaign="stamp-duty-calculator" enabled={variant !== "embed"}>
         <div className="bg-slate-900 p-6 sm:p-8 text-white">
           <div className="mb-4 sm:mb-6">
             <div className="text-xs sm:text-sm font-bold text-emerald-400 uppercase tracking-wider mb-2">
@@ -192,16 +195,17 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
             <a
               href={ctaHref}
               {...(variant === "embed" ? { target: "_blank", rel: "noopener" } : {})}
-              className="inline-flex w-full items-center justify-center bg-emerald-600 px-6 py-3.5 text-sm sm:text-base font-bold text-white border-b-4 border-emerald-800 hover:bg-emerald-700 active:border-b-2 active:translate-y-0.5 transition-colors"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-6 py-3.5 text-sm sm:text-base font-bold text-white hover:bg-emerald-700 active:bg-emerald-800 transition-colors"
             >
               {ctaText}
             </a>
             <p className="mt-3 text-xs text-slate-400 leading-relaxed">
               An estimate based on current rates. Reliefs and edge cases (mixed-use, six-or-more dwellings,
-              uninhabitable property) can change the figure — we can confirm your exact position.
+              uninhabitable property) can change the figure, and we can confirm your exact position.
             </p>
           </div>
         </div>
+        </ResultGate>
       </div>
     </div>
   );

@@ -88,7 +88,7 @@ export default function CookiePolicyPage() {
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">On this site</h3>
         <p>
-          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics, Google Analytics and session-replay tools. Your choice is stored on your device and takes effect immediately. You can re-enable analytics from the same link.
+          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics and Google Analytics. Your choice is stored on your device and takes effect immediately. You can re-enable analytics from the same link.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Browser settings</h3>

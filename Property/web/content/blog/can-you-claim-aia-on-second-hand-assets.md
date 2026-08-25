@@ -8,7 +8,7 @@ category: Property Accountant Services
 metaTitle: 'AIA on Second-Hand Assets: Yes, With Limits | UK Rules'
 metaDescription: "AIA is available on second-hand plant and machinery, but not on assets you previously owned, were gifted, bought from a connected party, or in a let home."
 altText: Property investor reviewing a second-hand asset purchase receipt for an AIA claim
-image: https://images.pexels.com/photos/6069531/pexels-photo-6069531.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/6069531/pexels-photo-6069531.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 h1: Can You Claim AIA on Second-Hand Assets?
 summary: "Yes, the Annual Investment Allowance is available on genuine second-hand plant and machinery bought at arm's length. It is not available on assets you previously owned privately, were gifted, bought from a connected party, or use inside a let dwelling-house. Being second-hand-friendly is exactly what separates AIA from full expensing and the new 40% first-year allowance, which both exclude used assets. This guide draws the boundary precisely, including what happens when you buy and dispose of an asset in the same accounting period, with the post-Finance-Act-2026 position and the landlord-specific reality."
 schema: ''

@@ -3,10 +3,12 @@ title: "Principal Private Residence Relief for Landlords: 2026/27 UK Guide"
 slug: "principal-private-residence-relief-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/principal-private-residence-relief-landlords"
 date: "2026-05-24"
+dateModified: "2026-08-20"
+reviewedAt: "2026-08-20"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "PRR for Landlords UK 2026/27: Final 9 Months + Lettings Reframe"
-metaDescription: "PRR for accidental landlords 2026/27: s.222 framework, final 9 months, deemed occupation, half-hectare rule, and the post-April-2020 Lettings Relief reframe."
+metaTitle: "PRR for Landlords UK 2026/27: Final 9 Months + Lettings"
+metaDescription: "PRR for accidental landlords 2026/27: s.222 framework, final 9 months, deemed occupation, half-hectare rule"
 metaTitle_prev: "PPR Relief Calculation for Landlords (UK 2025/26)"
 metaDescription_prev: "Cut CGT on a former home with PPR relief. Includes the 9-month final period, the calculation formula, and letting relief examples for the 2025/26 tax year."
 altText: "UK property with sold sign showing principal private residence relief concept for landlords"
@@ -43,6 +45,20 @@ faqs:
     answer: "Yes. The Rent-a-Room scheme (ITTOIA 2005 ss.784-802) is an income tax relief on rental income up to £7,500 a year from letting furnished accommodation in your main residence. It is a separate relief from PRR, sitting on the income side. Taking in a lodger under Rent-a-Room does not disturb the property's status as your main residence for PRR, and you still get full PRR on the eventual sale. Where the let part of your home would otherwise produce a chargeable gain on sale (because PRR is restricted for that part), shared-occupation Lettings Relief under s.223B can apply: see the <a href=\"/blog/capital-gains-tax/letting-relief-landlords-2026-changes\">Lettings Relief guide</a>. HMRC's view on lodger-letting and PRR is at CG64702."
   - question: "What CGT rate applies to the residual taxable gain after PRR?"
     answer: "For individuals in 2026/27, the gain left after PRR, Lettings Relief, the AEA and any allowable losses is taxed at 18% where it falls within the basic-rate income tax band and 24% above it. The basic-rate band ceiling for 2026/27 is £50,270 of total taxable income plus chargeable gains. So if you have employment income of £40,000 and a £25,000 taxable gain after PRR, you have £10,270 of unused basic-rate band: the first £10,270 of the gain is taxed at 18% and the remaining £14,730 at 24%. The April 2027 property income tax surcharge (22% / 42% / 47%) announced at the Autumn Budget 2025 (and enacted in Finance Act 2026) applies to property INCOME, not to CGT: the 18% / 24% CGT rates on residential property stay in force for 2026/27 and 2027/28 on current law. The rate split is in the <a href=\"/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained\">2026/27 CGT rates guide</a>."
+  - question: "Do you pay capital gains tax when you sell your home?"
+    answer: "In most cases, no. If a property was your only or main home for the whole time you owned it, private residence relief exempts the entire gain and you have no capital gains tax to pay. You also do not need to file a 60-day capital gains tax on UK property return, because as a UK resident you only file that return where tax is actually due. You start paying capital gains tax on a home only when part of your ownership does not qualify: you moved out and let it, you used part of it exclusively for business, your garden and grounds run past half a hectare, or you owned a second property and this one was not the main residence. In those cases the relief covers a proportion of the gain rather than all of it, and what is left is taxed at 18% or 24% in 2026/27 after your £3,000 annual exempt amount."
+  - question: "Is there capital gains tax on a primary residence in the UK?"
+    answer: "There is no separate capital gains tax on a primary residence in the UK and no separate primary residence rate. 'Primary residence' is the everyday phrase for what the tax rules call your only or main residence, and the relief that covers it is private residence relief. If the property was your main home for the whole of your ownership, the gain is fully exempt: nothing to report, nothing to pay. If it was your main home for only part of the time, capital gains tax applies to the rest of the gain at 18% where it falls in your basic-rate band and 24% above it in 2026/27, after the £3,000 annual exempt amount. Owning it jointly gives each of you your own £3,000."
+  - question: "What is the main residence exemption for capital gains tax?"
+    answer: "The main residence exemption is a proportion of your gain, not a fixed sum of money. It exempts the share of the gain that matches the share of your ownership period when the property was your only or main home, plus the final 9 months of ownership. If you owned a home for 12 years and it was your main residence for 8 of them, the exemption covers 8 years plus 9 months out of 12 years, which is just under 73% of the gain. There is no cap and no lifetime limit on how much it can exempt, which is why it is usually the largest single figure on the computation when you sell a home you once lived in."
+  - question: "Is PPR the same as PRR?"
+    answer: "Yes. PPR (principal private residence relief) and PRR (private residence relief) are two names for the same capital gains tax relief on your home. HMRC's own helpsheet calls it private residence relief; accountants, older guidance and most search results say principal private residence relief or PPR. You will also see it called main residence relief or the main residence exemption. All four names describe the same thing: the relief that exempts the part of your gain falling in the period a property was your only or main residence, plus the final 9 months you owned it."
+  - question: "Do you have to tell HMRC when you sell your main home?"
+    answer: "Usually not. If private residence relief covers the whole gain there is no capital gains tax to pay, and as a UK resident you do not have to file the 60-day capital gains tax on UK property return. If any tax is left after the relief, you must report and pay it within 60 days of completion. Non-UK residents file the 60-day return on every UK land disposal whether or not tax is due. If you are already inside Self Assessment for another reason, show the disposal and the relief on the capital gains pages of your tax return. The filing mechanics are in the <a href=\"/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026\">60-day CGT deadlines guide</a>."
+  - question: "How much capital gains tax will you pay on a home you lived in and then rented out?"
+    answer: "It depends on how much of your ownership you spent living there. Take a home you owned for 12 years, lived in for the first 8 and let out for the last 4, sold at a £150,000 gain. Your qualifying period is 96 months of actual occupation plus the final 9 months, so 105 of 144 months qualify and the relief exempts just under 73% of the gain, which is £109,375. That leaves £40,625. Take off your £3,000 annual exempt amount and £37,625 is taxable: £9,030 at the 24% higher rate in 2026/27, or less if part of the gain falls in your basic-rate band at 18%. If you own the property jointly, each of you runs the same sum on your own half share with your own £3,000."
+  - question: "Does the relief stop as soon as you move out of your main residence?"
+    answer: "No, not straight away. The final 9 months of your ownership always count as though you were still living there, as long as the property genuinely was your main residence at some point. So if you move out and the sale completes inside 9 months, the whole of your ownership still qualifies and the gain stays exempt. If the sale drags on, or you let the property in the meantime, only the months before that final 9 fall outside the relief. Certain absences for work can also be treated as occupation, which can hold the relief over years rather than months."
 ---
 
 <p>If you once lived in a property and have since let it out, Principal Private Residence Relief is usually the single biggest number on your eventual CGT computation. Get it right and a large chunk of the gain is simply exempt. Get the residence test or the Lettings Relief position wrong and you can hand HMRC tens of thousands of pounds that you did not need to pay. Principal Private Residence Relief (PRR) under sections 222 to 226 of the Taxation of Chargeable Gains Act 1992 exempts the proportion of your gain that falls in the period the property was your only or main residence, plus the final 9 months of ownership.</p>
@@ -50,6 +66,68 @@ faqs:
 <p>The relief rewards the period you actually lived there and adds two extensions on top: the final-9-months rule (which always applies once the property has at some point been your main residence) and the deemed-occupation rules under s.223(3) (which preserve PRR over absences for work or other reasons). Lettings Relief under section 223B, inserted by Finance Act 2020 with effect from 6 April 2020, now reaches only narrow shared-occupation cases, and that 2020 change is what catches most accidental landlords out.</p>
 
 <p>This page sits inside the wider <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property guide</a>; the rate you will pay on whatever PRR does not exempt is in the <a href="/blog/capital-gains-tax/cgt-rates-property-2026-27-current-rates-explained">2026/27 CGT rates page</a>, and the deadline for reporting and paying is in the <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT payment deadlines guide</a>.</p>
+
+<h2>Do you pay capital gains tax on your main residence?</h2>
+
+<p>No, in almost every case you pay no capital gains tax on your main residence. Private residence relief exempts the whole gain where a property was your only or main home for the entire time you owned it, with no cap and no lifetime limit on the amount it can shelter. Sell the house you have lived in since the day you bought it and the gain, however large, is simply not taxed.</p>
+
+<p>Capital gains tax on homes only starts to bite when part of your ownership does not qualify. That happens when:</p>
+
+<ul>
+<li>You moved out and let the property, or left it standing empty, for longer than the final 9 months before the sale.</li>
+<li>You used part of the home exclusively for a business, so that part is treated separately from your home.</li>
+<li>Your garden and grounds run past half a hectare (about 1.24 acres, including the ground the house stands on) and you cannot show the extra land was needed for a house of that size.</li>
+<li>You owned more than one home and this was not the one treated as your main residence.</li>
+</ul>
+
+<p>Even then the relief still covers a proportion of the gain, so the choice is never between full exemption and nothing at all. It comes down to one question: for how many months of your ownership was the property your home? The rest of this page works out which proportion you keep.</p>
+
+<h2>Is there capital gains tax on a primary residence in the UK?</h2>
+
+<p>There is no separate capital gains tax on a primary residence in the UK, no special primary residence rate and nothing to claim on a form. 'Primary residence' is the everyday phrase for what the tax rules call your only or main residence, and the relief covering it is the same private residence relief. If the property was your main home throughout, the gain is fully exempt: nothing to report, nothing to pay.</p>
+
+<p>If the exemption does not cover everything, what is left is taxed at 18% where it falls inside your basic-rate income tax band and 24% on anything above it, for 2026/27. Your first £3,000 of gains in the tax year is covered by the annual exempt amount. Own the property jointly and each of you has your own £3,000 and your own rate band, which is worth real money on a large gain.</p>
+
+<p>People often expect a minimum residence period before a home counts as their primary residence. There is no such rule, although HMRC weighs the quality and permanence of the occupation rather than the calendar, so a token stay does not create a main residence. Nor does buying a second property retrospectively tax the first one. What decides your bill is which months of your ownership qualify.</p>
+
+<h2>What is the main residence exemption, and how much of your gain does it cover?</h2>
+
+<p>The capital gains tax main residence exemption covers a proportion of your gain, not a fixed sum of money. It exempts the share of the gain matching the share of your ownership period when the property was your only or main home, plus the final 9 months of ownership on top.</p>
+
+<p>Those final 9 months are the part most sellers miss. They count even if you had already moved out, even if tenants were living there, and even if the house sat empty on the market. They are there because a sale takes time and the rules do not punish you for the gap between moving on and completing.</p>
+
+<p>At its simplest: own a home for 12 years, live in it for 8 and let it for the last 4, and 8 years plus 9 months of that ownership qualifies. That is 105 months out of 144, so the CGT main residence exemption covers just under 73% of your gain and you are taxed on the rest. Live there the whole 12 years and the figure is 100%.</p>
+
+<h2>Are PRR, PPR and private residence relief different reliefs?</h2>
+
+<p>No, they are all one relief under different names. Capital gains tax private residence relief is what HMRC's own helpsheet calls it. Accountants, older guidance and most search results say principal private residence relief instead, shortened to PPR or PRR. Main residence relief and the main residence exemption are the same thing again.</p>
+
+<p>Where the names really do diverge is lettings relief. That is a separate and far narrower relief, and since April 2020 it only helps a landlord who shared the home with the tenant. It does not replace CGT private residence relief; it comes after it, in the few cases it still applies. Plenty of advice still online blurs the two and quotes a £40,000 lettings relief that most sellers can no longer claim.</p>
+
+<h2>How do you work out the capital gains tax on a home you have lived in?</h2>
+
+<p>Five steps, and the first four fit on the back of an envelope:</p>
+
+<ul>
+<li><strong>Step 1: work out the gain.</strong> Sale price, minus what you paid, minus your buying and selling costs (stamp duty on the purchase, legal fees, survey, estate agent), minus the cost of any improvements such as an extension.</li>
+<li><strong>Step 2: count the months of ownership.</strong> From the date contracts were exchanged on the purchase to the date contracts were exchanged on the sale. The 60-day filing clock is the one that runs from completion instead.</li>
+<li><strong>Step 3: count the months that qualify.</strong> The months you actually lived there as your main home, plus the final 9 months, plus any absence for work that counts as occupation.</li>
+<li><strong>Step 4: divide.</strong> Qualifying months divided by total months, multiplied by the gain, gives your exempt amount. Take it off the gain.</li>
+<li><strong>Step 5: apply your allowance and rate.</strong> Deduct your £3,000 annual exempt amount from what is left, then 18% on the part sitting inside your basic-rate band and 24% above it.</li>
+</ul>
+
+<p>Say you bought a flat, lived in it for 8 years, moved in with a partner and let the flat for the next 4 years, then sold it 12 years after you bought it at a gain of £150,000 after costs:</p>
+
+<ul>
+<li>Total ownership: 144 months</li>
+<li>Qualifying months: 96 months lived in, plus the final 9 = 105</li>
+<li>Exempt: 105/144 × £150,000 = £109,375</li>
+<li>Gain left: £40,625</li>
+<li>Less your £3,000 annual exempt amount: £37,625 taxable</li>
+<li>Tax at 24%: £9,030, and less than that if part of the gain falls in your basic-rate band at 18%</li>
+</ul>
+
+<p>Had you owned that flat jointly, each of you would run the same sum on half the gain with your own £3,000 allowance, saving £720 between you at the higher rate before any basic-rate band comes into it. The £9,030 goes on a <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT return</a>; the reporting section further down sets out when a return is needed and when it is not.</p>
 
 <h2>The section 222 framework</h2>
 

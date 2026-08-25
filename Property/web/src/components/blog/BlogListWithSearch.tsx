@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import Link from "next/link";
+import { Clock } from "lucide-react";
 import { focusRing } from "@/components/ui/layout-utils";
+import { NumberedPagination } from "@/components/blog/NumberedPagination";
 import type { BlogPost } from "@/types/blog";
 
 // Lightweight projection: only the fields the list actually renders.
@@ -32,6 +34,17 @@ export function BlogListWithSearch({
   const [sortBy, setSortBy] = useState<SortOption>("date-desc");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 12;
+  const listTopRef = useRef<HTMLDivElement>(null);
+
+  // Paging re-renders the list in place, which otherwise leaves the reader
+  // stranded at the bottom of the page looking at the footer. Jump back to the
+  // top of the list so page N starts where page N-1 did. Instant, not smooth:
+  // the site's reduced-motion posture, and a long programmatic scroll is
+  // disorienting anyway.
+  const goToPage = (page: number) => {
+    setCurrentPage(page);
+    listTopRef.current?.scrollIntoView();
+  };
 
   const filteredAndSortedPosts = useMemo(() => {
     let filtered = posts;
@@ -81,7 +94,7 @@ export function BlogListWithSearch({
   };
 
   return (
-    <div>
+    <div ref={listTopRef} className="scroll-mt-24">
       {/* Search Bar and Sort */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">
         <div className="flex-1">
@@ -100,7 +113,7 @@ export function BlogListWithSearch({
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
-              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
             />
           </div>
         </div>
@@ -113,7 +126,7 @@ export function BlogListWithSearch({
             id="blog-sort"
             value={sortBy}
             onChange={(e) => handleSortChange(e.target.value as SortOption)}
-            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
           >
             <option value="date-desc">Newest First</option>
             <option value="date-asc">Oldest First</option>
@@ -133,7 +146,7 @@ export function BlogListWithSearch({
 
       {/* Results */}
       {paginatedPosts.length === 0 ? (
-        <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">
+        <div className="mt-8 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">
           <p className="text-base text-[var(--muted)]">
             {searchQuery
               ? `No articles found matching "${searchQuery}". Try a different search term.`
@@ -147,11 +160,14 @@ export function BlogListWithSearch({
               const readTime = readTimes.get(p.slug) || 0;
               return (
                 <li key={p.slug}>
-                  <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
+                  <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-sm transition-shadow hover:shadow-md sm:p-7">
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
                       {p.category}
                     </p>
-                    <h2 className="mt-2 font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+                    {/* Site sans at the standard card tier, not serif: the serif
+                        appeared nowhere else on the site and made the archive
+                        read as a different product. */}
+                    <h2 className="mt-3 text-base font-bold! tracking-normal! leading-snug! text-[var(--ink)] sm:text-lg">
                       <Link
                         href={`/blog/${p.categorySlug}/${p.slug}`}
                         className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
@@ -159,18 +175,13 @@ export function BlogListWithSearch({
                         {p.title}
                       </Link>
                     </h2>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{p.summary}</p>
-                    <div className="mt-4 flex items-center gap-3 text-sm text-[var(--muted)]">
-                      {p.date ? (
-                        <time dateTime={p.date}>
-                          {new Intl.DateTimeFormat("en-GB", {
-                            day: "numeric",
-                            month: "long",
-                            year: "numeric",
-                          }).format(new Date(p.date))}
-                        </time>
-                      ) : null}
-                      <span>•</span>
+                    <p className="mt-3 text-sm leading-6 text-[var(--muted)] sm:text-base sm:leading-7 line-clamp-3">{p.summary}</p>
+                    {/* Read time only. Every post in the imported corpus carries
+                        the same date, so a visible date row was boilerplate that
+                        made the archive look auto-generated. `date` still drives
+                        the newest/oldest sort. */}
+                    <div className="mt-4 inline-flex items-center gap-1.5 text-sm text-[var(--muted)]">
+                      <Clock aria-hidden className="h-3.5 w-3.5 text-emerald-600" />
                       <span>{readTime} min read</span>
                     </div>
                   </article>
@@ -181,29 +192,14 @@ export function BlogListWithSearch({
 
           {totalPages > 1 && !searchQuery && (
             <div className="mt-8 sm:mt-12">
-              <nav aria-label="Pagination">
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  {currentPage > 1 && (
-                    <button
-                      onClick={() => setCurrentPage((p) => p - 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
-                    >
-                      Previous
-                    </button>
-                  )}
-                  <span className="text-sm text-[var(--muted)] font-medium px-4 py-2">
-                    Page {currentPage} of {totalPages}
-                  </span>
-                  {currentPage < totalPages && (
-                    <button
-                      onClick={() => setCurrentPage((p) => p + 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
-                    >
-                      Next
-                    </button>
-                  )}
-                </div>
-              </nav>
+              {/* With 59 pages, prev/next alone made anything past the first
+                  few pages effectively unreachable. Shared bar, see
+                  NumberedPagination. */}
+              <NumberedPagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={goToPage}
+              />
             </div>
           )}
         </>

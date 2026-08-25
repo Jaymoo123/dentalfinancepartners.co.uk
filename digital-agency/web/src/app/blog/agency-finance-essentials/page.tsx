@@ -12,7 +12,7 @@ const categoryName = "Agency Finance Essentials";
 const categorySlug = "agency-finance-essentials";
 
 export const metadata: Metadata = {
-  title: `${categoryName} for Agency Founders | ${siteConfig.name}`,
+  title: `${categoryName} for Agency Founders`,
   description: `Practical financial guidance for agency founders covering profit margins, cash flow, management accounts, bookkeeping and accounting software. Written by agency specialist accountants.`,
   alternates: { canonical: `${siteConfig.url}/blog/${categorySlug}` },
   openGraph: {

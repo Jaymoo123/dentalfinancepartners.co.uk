@@ -10,7 +10,7 @@ import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
-  title: `Accounting Services for Agency Founders | ${siteConfig.name}`,
+  title: `Accounting Services for Agency Founders`,
   description:
     "Specialist accounting and tax services for UK and UAE agency founders. Management accounts, tax planning, incorporation analysis, IR35 and R&D tax credits. Fixed fees, free consultation.",
   alternates: {

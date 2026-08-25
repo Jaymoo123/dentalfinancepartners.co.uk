@@ -8,6 +8,7 @@ import { submitSiteLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 
 const fieldClass =
   "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] focus:outline-none";
@@ -39,7 +40,6 @@ export function LeadForm({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [sourceUrl, setSourceUrl] = useState("");
-  const [consent, setConsent] = useState(false);
 
   const [role, setRole] = useState("");
   const [message, setMessage] = useState("");
@@ -81,7 +81,6 @@ export function LeadForm({
     } else if (phone.replace(/\D/g, "").length < 10) {
       errs.phone = "Enter at least 10 digits.";
     }
-    if (!consent) errs.consent = "Please tick the box to continue.";
     return errs;
   }
 
@@ -130,7 +129,7 @@ export function LeadForm({
     setStatus("loading");
 
     const completedCount =
-      [role, message, fullName, email, phone].filter((v) => v.trim()).length + (consent ? 1 : 0);
+      [role, message, fullName, email, phone].filter((v) => v.trim()).length;
     trackFormSubmit(completedCount);
     track("form_step_complete", { form_id: FORM_ID, step: 2, step_id: "your_details" });
 
@@ -149,7 +148,10 @@ export function LeadForm({
         source: niche.content_strategy.source_identifier,
         source_url: sourceUrl,
         submitted_at: new Date().toISOString(),
-        consent_given: consent,
+        // Legitimate-interests acknowledgement: submitting the form IS the affirmative
+        // act, so this is always true; consent_text records the exact wording shown
+        // as the audit trail.
+        consent_given: true,
         consent_text: consentText,
         consent_at: new Date().toISOString(),
         visitor_id: getVisitorId() ?? undefined,
@@ -169,7 +171,15 @@ export function LeadForm({
     onLead({ role });
 
     if (redirectOnSuccess) {
-      setTimeout(() => router.push(successRedirect), 800);
+      // Carry the signed booking token to /thank-you so the inline slot picker
+      // renders at the highest-intent moment, plus the page they came from.
+      const dest = result.bookingToken
+        ? buildThankYouUrl(
+            result.bookingToken,
+            window.location.pathname + window.location.search + window.location.hash,
+          )
+        : successRedirect;
+      setTimeout(() => router.push(dest), 800);
     }
   }
 
@@ -379,30 +389,16 @@ export function LeadForm({
             </div>
           </div>
 
-          <div>
-            <label htmlFor="consent" className="flex items-start gap-3 text-xs leading-relaxed text-neutral-600">
-              <input
-                type="checkbox"
-                id="consent"
-                name="consent"
-                checked={consent}
-                onChange={(e) => setConsent(e.target.checked)}
-                className="mt-0.5 h-4 w-4 shrink-0 accent-[#0e1a3a]"
-                aria-invalid={!!fieldErrors.consent}
-                aria-describedby={fieldErrors.consent ? "consent-error" : undefined}
-              />
-              <span>
-                {siteConfig.leadConsentText} See our{" "}
-                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
-                  Privacy Policy
-                </a>
-                .
-              </span>
-            </label>
-            {fieldErrors.consent && (
-              <p id="consent-error" className={errorClass}>{fieldErrors.consent}</p>
-            )}
-          </div>
+          {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
+              the enquiry is the affirmative act, so this is shown as a notice, not a
+              tick-box. */}
+          <p className="text-xs leading-relaxed text-neutral-600">
+            {siteConfig.leadConsentText} See our{" "}
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+              Privacy Policy
+            </a>
+            .
+          </p>
 
           {errorMessage && (
             <div role="alert" className="rounded-md border border-red-200 bg-red-50 p-4">
@@ -413,7 +409,7 @@ export function LeadForm({
           {status === "success" && !redirectOnSuccess && (
             <div role="status" className="rounded-md border border-emerald-200 bg-emerald-50 p-4">
               <p className="text-sm font-medium text-emerald-900">
-                Thanks. We&apos;ll be in touch within 24 hours.
+                Thanks. You will hear back within 24 hours.
               </p>
             </div>
           )}
@@ -421,7 +417,7 @@ export function LeadForm({
           <div className="flex flex-col gap-3">
             <button
               type="submit"
-              disabled={status === "loading" || status === "success" || !consent}
+              disabled={status === "loading" || status === "success"}
               className={btnClass}
             >
               {status === "loading" ? "Sending..." : status === "success" ? "Sent" : submitLabel}
@@ -436,7 +432,7 @@ export function LeadForm({
           </div>
 
           <p className="text-xs leading-relaxed text-neutral-500">
-            We respond within 24 hours and store your details securely.
+            You will hear back within 24 hours. Your details are stored securely.
           </p>
         </>
       )}

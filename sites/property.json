@@ -14,7 +14,7 @@
     "blogRoutesDir": "Property/web/src/app/blog",
     "buildDir": "Property/web",
     "housePositions": "docs/property/house_positions.md",
-    "netnewProgram": "docs/property/NETNEW_PROGRAM.md",
+    "netnewProgram": "docs/_engines/NETNEW_PROGRAM.md",
     "topicPool": "docs/property/topic_gaps_final.md",
     "siteConfigJson": "Property/niche.config.json"
   },

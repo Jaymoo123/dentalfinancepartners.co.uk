@@ -8,7 +8,7 @@ category: Incorporation & Company Structures
 metaTitle: 'CTA 2010 s.455 Rate: 33.75% Rises to 35.75% in 2026/27'
 metaDescription: 'Check the CTA 2010 s.455 rate: 33.75% for loans made up to 5 April 2026, then 35.75% from 6 April 2026 via the dividend upper rate. See when it applies.'
 altText: Tax forms laid out with a calculator and magnifying glass on a wooden surface, representing HMRC enquiry into directors loan account repayments
-image: https://images.pexels.com/photos/7821688/pexels-photo-7821688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/7821688/pexels-photo-7821688.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 imageCredit:
   photographer: RDNE Stock project
   photographer_url: https://www.pexels.com/@rdne

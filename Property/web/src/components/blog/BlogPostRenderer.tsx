@@ -1,20 +1,29 @@
 import Link from "next/link";
 import type { BlogPost } from "@/types/blog";
+import { CalendarDays, Clock, History, UserRound } from "lucide-react";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { Eyebrow } from "@/components/ui/page-blocks";
+import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { niche } from "@/config/niche-loader";
+import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { BlogSidebarCta } from "@/components/blog/BlogSidebarCta";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
-import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { extractHeadings } from "@/lib/markdown-utils";
-import { calculateReadTime } from "@/lib/blog";
+import { calculateReadTime, categoryDisplayName } from "@/lib/blog";
 import { topicForBlogSlug } from "@/lib/intent/taxonomy";
 import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
 import { hasPremiumTool } from "@/lib/calculators/premium/registry";
-import { gateCopy } from "@/lib/resources/copy";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import { GateOrForm } from "@/components/resources/GateOrForm";
 import { splitContentEarly, splitRemainderForGate, splitContentAtMidScroll } from "@accounting-network/web-shared/content/blog-splits";
@@ -27,48 +36,57 @@ type BlogPostRendererProps = {
 
 type CTACopy = { heading: string; body: string; button: string };
 
+// Keyed on the category SLUG, never the raw frontmatter string: three categories carry a
+// two-way spelling split ("&" vs "and", "(MTD)" vs "MTD") across 57 posts, and every variant
+// slugifies to the same hub. Keying on the label made those 57 miss every entry and fall
+// through to the generic CTA.
 const CTA_BY_CATEGORY: Record<string, CTACopy> = {
-  "Section 24 & Tax Relief": {
+  "section-24-and-tax-relief": {
     heading: "Want your Section 24 position checked?",
     body: "Get a property tax specialist to run the numbers on your portfolio under the s.24 finance cost restriction. Free 20-minute call, no hard sell.",
     button: "Book a Section 24 review",
   },
-  "Incorporation & Company Structures": {
+  "incorporation-and-company-structures": {
     heading: "Considering incorporating your portfolio?",
     body: "Incorporation is one of the most consequential decisions a landlord can make. Get a specialist to model the SDLT, CGT and ongoing tax impact for your specific portfolio.",
     button: "Book an incorporation review",
   },
-  "Making Tax Digital (MTD)": {
+  "making-tax-digital-mtd": {
     heading: "Get your MTD ITSA setup checked before April 2026",
     body: "Run a parallel-quarter dry run with us. We will check your records, your software, and your digital links so the mandate is a non-event.",
     button: "Book an MTD readiness call",
   },
-  "Capital Gains Tax": {
+  "capital-gains-tax": {
     heading: "Selling a property? Get the CGT position checked first",
     body: "The 60-day CGT reporting deadline is unforgiving. Get a specialist to compute your gain, model any reliefs, and file on time.",
     button: "Book a CGT review",
   },
-  "Portfolio Management": {
+  "portfolio-management": {
     heading: "Want a second pair of eyes on your portfolio?",
     body: "Get a property tax specialist to review your portfolio structure, reliefs, and tax exposure. Practical recommendations, no hard sell.",
     button: "Book a portfolio review",
   },
-  "Property Accountant Services": {
+  "property-accountant-services": {
     heading: "Want a fixed-fee property accountant?",
     body: "Get a property tax specialist to handle your accounts, tax returns, and ongoing advice. Fixed fees, 24-hour response, no surprises.",
     button: "Book an introduction call",
   },
-  "Landlord Tax Essentials": {
+  "landlord-tax-essentials": {
     heading: "Want your landlord tax position checked?",
     body: "Get a property tax specialist to run through your situation. Practical recommendations, no hard sell.",
     button: "Book a consultation",
   },
-  "Property Types & Specialist Tax": {
+  "property-types-and-specialist-tax": {
     heading: "Have a specialist property tax question?",
     body: "Furnished holiday lets, mixed-use, HMOs, commercial, agricultural. Get a specialist who has handled your property type before.",
     button: "Book a specialist call",
   },
-  "Non-Resident Landlord Tax": {
+  "property-finance": {
+    heading: "Financing a purchase or a refinance?",
+    body: "Get a property tax specialist to read the finance and the tax together, from SPV buy-to-let and interest relief to bridging costs and how development profits are taxed. Practical recommendations, no hard sell.",
+    button: "Book a finance and tax review",
+  },
+  "non-resident-landlord-tax": {
     heading: "UK property and a foreign tax position to manage?",
     body: "Get a property tax specialist with cross-border experience. NRL scheme, treaty credit, FIG regime, NRCGT, we have walked these for landlords like you.",
     button: "Book a cross-border review",
@@ -124,17 +142,29 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     earlySplit && hasGate ? splitRemainderForGate(earlySplit.after) : null;
   const fallbackSplit = showPremiumIslands ? null : splitContentAtMidScroll(decoratedHtml);
 
-  const ctaCopy: CTACopy = CTA_BY_CATEGORY[post.category] ?? {
-    heading: niche.blog.cta_heading,
-    body: niche.blog.cta_body,
-    button: niche.blog.cta_button,
-  };
-
-  const isMTDPost = post.category === "Making Tax Digital (MTD)";
+  // Packages mode bypasses the per-category consultation copy: one pricing-led
+  // CTA from the active variant. Leadgen keeps the category map.
+  const ctaCopy: CTACopy = isPackagesMode(niche)
+    ? {
+        heading: getActiveCta(niche).blog.cta_heading,
+        body: getActiveCta(niche).blog.cta_body,
+        button: getActiveCta(niche).blog.cta_button,
+      }
+    : (CTA_BY_CATEGORY[categorySlug] ?? {
+        heading: getActiveCta(niche).blog.cta_heading,
+        body: getActiveCta(niche).blog.cta_body,
+        button: getActiveCta(niche).blog.cta_button,
+      });
 
   const reviewerName = post.reviewedBy?.trim();
   const reviewerCreds = post.reviewerCredentials?.trim();
   const hasReviewer = !!(reviewerName && reviewerCreds);
+
+  const categoryLabel = categoryDisplayName(categorySlug, post.category);
+
+  const hasUpdate = !!(post.dateModified && post.dateModified !== post.date);
+  const metaPill =
+    "inline-flex min-h-7 items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 ring-1 ring-slate-200";
 
   return (
     <>
@@ -152,65 +182,63 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 items={[
                   { label: "Home", href: "/" },
                   { label: "Blog", href: "/blog" },
-                  { label: post.category, href: `/blog/${categorySlug}` },
+                  { label: categoryLabel, href: `/blog/${categorySlug}` },
                   { label: post.title },
                 ]}
               />
-              <header className="border-l-4 border-emerald-600 bg-slate-50 p-8 mt-6">
-                <p className="text-xs font-bold uppercase tracking-wider text-emerald-700">
-                  {post.category}
-                </p>
-                <h1 className="mt-3 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl md:text-5xl">
+              <header className="rounded-xl bg-slate-50 p-8 mt-6">
+                <Eyebrow>{categoryLabel}</Eyebrow>
+                <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl md:text-5xl">
                   {post.h1}
                 </h1>
-                <div className="mt-3 text-sm text-slate-500">
-                  {post.dateModified && post.dateModified !== post.date ? (
-                    <>
-                      {post.date && (
-                        <span className="block">
-                          First published{" "}
-                          <time dateTime={post.date}>{formatUkDate(post.date)}</time>
-                        </span>
-                      )}
-                      <span className="block">
-                        Last updated{" "}
-                        <time dateTime={post.dateModified}>{formatUkDate(post.dateModified)}</time>
-                      </span>
-                      {(post.author || readTime > 0) && (
-                        <span className="mt-1 block">
-                          {post.author ? <span>{post.author}</span> : null}
-                          {post.author && readTime > 0 ? " · " : null}
-                          {readTime > 0 ? <span>{readTime} min read</span> : null}
-                        </span>
-                      )}
-                    </>
-                  ) : (
-                    <>
-                      {post.date && (
+                {/* Meta as icon pills instead of a dot-separated text run: each
+                    fact reads at a glance, and "Updated" gets the emerald tint
+                    because recency is the one that earns trust on tax content. */}
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  {post.date ? (
+                    <span className={metaPill}>
+                      <CalendarDays aria-hidden className="h-3.5 w-3.5 text-emerald-600" />
+                      {hasUpdate ? (
+                        <>
+                          Published <time dateTime={post.date}>{formatUkDate(post.date)}</time>
+                        </>
+                      ) : (
                         <time dateTime={post.date}>{formatUkDate(post.date)}</time>
                       )}
-                      {post.author ? (
-                        <>
-                          {" · "}
-                          <span>{post.author}</span>
-                        </>
-                      ) : null}
-                      {readTime > 0 && (
-                        <>
-                          {" · "}
-                          <span>{readTime} min read</span>
-                        </>
-                      )}
-                    </>
-                  )}
+                    </span>
+                  ) : null}
+                  {hasUpdate ? (
+                    <span className="inline-flex min-h-7 items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-100">
+                      <History aria-hidden className="h-3.5 w-3.5" />
+                      Updated <time dateTime={post.dateModified}>{formatUkDate(post.dateModified!)}</time>
+                    </span>
+                  ) : null}
+                  {post.author ? (
+                    <span className={metaPill}>
+                      <UserRound aria-hidden className="h-3.5 w-3.5 text-emerald-600" />
+                      {post.author}
+                    </span>
+                  ) : null}
+                  {readTime > 0 ? (
+                    <span className={metaPill}>
+                      <Clock aria-hidden className="h-3.5 w-3.5 text-emerald-600" />
+                      {readTime} min read
+                    </span>
+                  ) : null}
                 </div>
+                {/* Summary at body size with looser leading: at text-lg it
+                    crowded the h1 and read as a second heading rather than a
+                    standfirst. */}
                 {post.summary ? (
-                  <p className="mt-4 text-lg text-slate-700 leading-relaxed">{post.summary}</p>
+                  <p className="mt-5 text-base leading-7 text-slate-600">{post.summary}</p>
                 ) : null}
                 <div className="mt-6">
                   <a
                     href="#enquiry-form"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:text-emerald-800 underline underline-offset-4"
+                    data-cta="blog_skip_to_form"
+                    data-cta-placement="article_header"
+                    data-cta-goal="form"
+                    className="inline-flex items-center gap-2 py-0.5 text-sm font-semibold text-emerald-700 hover:text-emerald-800 underline underline-offset-4"
                   >
                     Skip to enquiry form ↓
                   </a>
@@ -225,7 +253,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 <img
                   src={post.image}
                   alt={post.altText || post.title}
-                  className="mt-10 w-full border-2 border-slate-200 object-cover shadow-sm"
+                  className="mt-10 w-full rounded-xl border-2 border-slate-200 object-cover shadow-sm"
                   width={1200}
                   height={630}
                 />
@@ -247,26 +275,14 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                         {/* More content between the tool and the gate. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
                         {/* A STEP LATER: the email gate (ask). */}
-                        <GateOrForm
-                          topic={topic}
-                          copy={gateCopy(topic, post.title)}
-                          placement="blog"
-                          category={categorySlug}
-                        />
+                        <GateOrForm topic={topic} />
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
                       </>
                     ) : (
                       <>
                         {/* No later break: gate goes directly under the tool, then
                             the rest of the article. */}
-                        {hasGate ? (
-                          <GateOrForm
-                          topic={topic}
-                          copy={gateCopy(topic, post.title)}
-                          placement="blog"
-                          category={categorySlug}
-                        />
-                        ) : null}
+                        {hasGate ? <GateOrForm topic={topic} /> : null}
                         <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
                       </>
                     )}
@@ -286,25 +302,28 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 )}
               </div>
 
-              {isMTDPost ? (
-                <div className="mt-12">
-                  <MTDCountdown />
-                </div>
-              ) : null}
-
               <section
                 id="enquiry-form"
-                className="mt-16 bg-slate-900 p-8 sm:p-10 text-white scroll-mt-24"
+                className="relative mt-16 overflow-hidden rounded-xl bg-slate-900 p-8 sm:p-10 text-white scroll-mt-24"
                 aria-labelledby="enquiry-form-heading"
               >
-                <h2 id="enquiry-form-heading" className="text-2xl font-bold text-white sm:text-3xl">
-                  {ctaCopy.heading}
-                </h2>
-                <p className="mt-4 text-base leading-relaxed text-slate-200">
-                  {ctaCopy.body}
-                </p>
-                <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={ctaCopy.button} />
+                {/* Same etched-brick texture as LeadCTAPanel, so the article's
+                    conversion panel reads as the site's signature closing block
+                    rather than a flat navy box. */}
+                <HeroBrickBackdrop />
+                <div className="relative z-10">
+                  <h2 id="enquiry-form-heading" className="text-2xl font-bold text-white sm:text-3xl">
+                    {ctaCopy.heading}
+                  </h2>
+                  <p className="mt-4 text-base leading-relaxed text-slate-200">
+                    {ctaCopy.body}
+                  </p>
+                  {/* White card, same posture as LeadCTAPanel. LeadForm's labels
+                      are slate-900; rendered bare on this navy section they were
+                      invisible (slate-900 on slate-900). */}
+                  <div className="mt-8 rounded-xl bg-white p-6 sm:p-8">
+                    <LeadForm redirectOnSuccess={false} submitLabel={ctaCopy.button} />
+                  </div>
                 </div>
               </section>
 
@@ -313,19 +332,22 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <h2 id="faq-heading" className="text-3xl font-bold text-slate-900 mb-8">
                     Frequently asked questions
                   </h2>
-                  <dl className="space-y-4">
+                  {/* Same single-open accordion as the homepage and calculator
+                      FAQs. The FAQPage JSON-LD is emitted separately, so
+                      collapsing the answers costs nothing in search. */}
+                  <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                     {post.faqs.map((faq, i) => (
-                      <div key={i} className="border-l-4 border-slate-300 bg-slate-50 p-6">
-                        <dt className="text-lg font-bold text-slate-900">{faq.question}</dt>
-                        <dd className="mt-3 text-base text-slate-700 leading-relaxed">{faq.answer}</dd>
-                      </div>
+                      <AccordionItem key={i} value={`faq-${i}`} className="bg-slate-50">
+                        <AccordionTrigger>{faq.question}</AccordionTrigger>
+                        <AccordionContent>{faq.answer}</AccordionContent>
+                      </AccordionItem>
                     ))}
-                  </dl>
+                  </Accordion>
                 </section>
               ) : null}
 
-              <aside className="mt-16 flex gap-5 items-start bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center">
+              <aside className="mt-16 flex gap-5 items-start bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl">
+                <div className="hidden sm:flex shrink-0 w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
@@ -341,7 +363,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                           Last reviewed {formatUkDate(post.reviewedAt)}
                         </p>
                       ) : null}
-                      <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                      <Link href="/about" className="mt-3 inline-block py-0.5 text-sm font-semibold text-emerald-700 hover:text-emerald-800">
                         Learn more about our team →
                       </Link>
                     </>
@@ -363,19 +385,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <h2 id="related-heading" className="text-2xl font-bold text-slate-900 mb-8">
                     Related articles
                   </h2>
-                  <ul className="space-y-4">
-                    {related.map((r) => (
-                      <li key={r.slug}>
-                        <Link
-                          href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
-                        >
-                          <h3 className="text-lg font-bold text-slate-900">{r.title}</h3>
-                          <p className="mt-2 text-sm text-slate-600">{r.summary}</p>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  <RelatedArticles
+                    items={related.map((r) => ({
+                      href: `/blog/${r.categorySlug}/${r.slug}`,
+                      title: r.title,
+                      excerpt: r.summary,
+                    }))}
+                  />
                 </section>
               ) : null}
 
@@ -384,7 +400,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
             </div>
 
             <aside className="hidden lg:block">
-              <div className="sticky top-24">
+              {/* One sticky container for card + TOC. It owns the viewport
+                  clamp and scrolls internally when the pair is taller than the
+                  screen; TableOfContents no longer carries its own sticky. */}
+              <div className="sticky top-24 max-h-[calc(100vh-7rem)] space-y-5 overflow-y-auto">
+                <BlogSidebarCta copy={ctaCopy} />
                 <TableOfContents headings={headings} />
               </div>
             </aside>

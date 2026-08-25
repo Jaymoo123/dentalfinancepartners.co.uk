@@ -7,6 +7,23 @@
  * cacheable and reproducible from git.
  */
 
+export interface ConstructionSegment {
+  key: string;
+  label: string;
+  sic_codes: string[];
+  is_primary?: boolean;
+  division?: string;
+  monthly: Array<{ month: string; count: number }>;
+  annual: Array<{ year: number; count: number }>;
+  last_settled_month: string | null;
+  settled_value: number | null;
+  yoy_pct: number | null;
+  ttm: number | null;
+  peak_month: string | null;
+  peak_value: number;
+  thin_segment: boolean;
+}
+
 export interface ConstructionIndexSnapshot {
   meta: {
     generated_at: string;
@@ -36,7 +53,7 @@ export interface ConstructionIndexSnapshot {
       change_pct: number;
       union_from: number;
       union_to: number;
-      union_change_pct: number;
+      union_change_pct: number | null;
     };
     peak_month: string;
     peak_value: number;
@@ -54,6 +71,7 @@ export interface ConstructionIndexSnapshot {
     note: string;
     monthly: unknown[];
   };
+  segments?: ConstructionSegment[];
 }
 
 const MONTHS_SHORT = [

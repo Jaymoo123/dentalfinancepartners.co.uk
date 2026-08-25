@@ -23,15 +23,6 @@ export function SiteFooter() {
               <p className="mt-1 text-sm text-white/70">Specialist accounting for solicitors & law firms</p>
             </a>
             <a
-              href="https://www.propertytaxpartners.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
-            >
-              <h3 className="font-semibold text-white">Property Tax Partners</h3>
-              <p className="mt-1 text-sm text-white/70">Property investor & landlord accounting</p>
-            </a>
-            <a
               href="https://www.medicalaccounts.co.uk"
               target="_blank"
               rel="noopener noreferrer"

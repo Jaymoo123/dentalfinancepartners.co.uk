@@ -3,7 +3,7 @@
 /**
  * Quiet analytics opt-out control (footer). Analytics runs by default under
  * legitimate interest; this lets a visitor opt out (or back in). Opting out
- * writes "denied" to localStorage, which the SDK and GA/Clarity honour live.
+ * writes "denied" to localStorage, which the SDK and GA honour live.
  */
 import { useEffect, useState } from "react";
 import { getConsent, setConsent, type ConsentState } from "@accounting-network/web-shared/analytics/consent";

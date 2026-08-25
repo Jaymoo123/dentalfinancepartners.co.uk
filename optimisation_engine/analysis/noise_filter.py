@@ -69,6 +69,7 @@ GOV_NAVIGATIONAL_PATTERNS = [
 
 # Brand/company-name lookups (not our customers / not our topics)
 BRAND_PATTERNS = [
+    r"\bdjh( business)?( advisers| advisors| accountants)?( limited| ltd)?\b",
     r"\bbarclays( plc| bank| business| online| login)?\b",
     r"\bhsbc( bank| business| login)?\b",
     r"\blloyds( bank| business| login)?\b",

@@ -55,7 +55,7 @@ faqs:
 <ul>
   <li><strong>Income between £10,001 and £25,000:</strong> annual return only (financial summary questions within the portal). You are not required to file accounts or a trustees' annual report, though the Commission encourages uploading them voluntarily.</li>
   <li><strong>Income above £25,000:</strong> annual return plus your trustees' annual report (TAR) and the full accounts (receipts and payments or accruals, depending on your structure and income level). Both documents must be uploaded as PDFs within the portal.</li>
-  <li><strong>Income above £1 million, or income above £250,000 with gross assets above £3.26 million:</strong> accounts must have been subject to statutory audit rather than independent examination, and the signed audit report must be included in the accounts upload.</li>
+  <li><strong>Income above £1 million, or income above £250,000 with gross assets above £3.26 million</strong> (above £1.5 million, or £500,000 with gross assets above £5 million, for financial years ending on or after 30 September 2026)<strong>:</strong> accounts must have been subject to statutory audit rather than independent examination, and the signed audit report must be included in the accounts upload.</li>
 </ul>
 
 <h2>What the annual return asks</h2>
@@ -107,7 +107,7 @@ faqs:
   <li>Names of trustees who served during the year (at least one name must appear; others may be withheld on a case-by-case basis if there is a security risk, but you must contact the Commission before omitting names).</li>
 </ul>
 
-<p>Charities preparing accruals accounts under the full SORP (broadly those with income above £250,000, or those that choose accruals) must include additional disclosures including a fuller statement of financial activities, going-concern assessment, related-party transactions and details of restricted funds.</p>
+<p>Charities preparing accruals accounts under the full SORP (broadly those with income above £250,000, or £500,000 for financial years ending on or after 30 September 2026, or those that choose accruals) must include additional disclosures including a fuller statement of financial activities, going-concern assessment, related-party transactions and details of restricted funds.</p>
 
 <p>The Charity Commission's guidance document CC17a sets out the full requirements for the TAR. It is worth reading the current version each year, as the SORP is updated.</p>
 

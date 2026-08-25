@@ -36,7 +36,7 @@ export default function AboutPage() {
               The same applies to salary and dividend planning, contractor expenses, PSC pension strategy, and the mechanics of the off-payroll rules. These are not things that come up occasionally for us. They are the core of what we do.
             </p>
             <p>
-              We work on a fixed-fee basis. You know what you are paying before we start. We respond within one working day. You deal with specialist accountants, not a call centre.
+              We work on a fixed-fee basis. You know what you are paying before we start. You hear back within one working day. You deal with specialist accountants, not a call centre.
             </p>
           </div>
           <div className="mt-12">

@@ -2,18 +2,16 @@
  * Client-side helper: submit a Dental Finance Partners lead through the server
  * chokepoint (/api/leads/submit) instead of a direct PostgREST insert.
  *
- * The server validates, dedupes, and saves with the service role so client-side
- * anon-key calls are eliminated. On a >=500 or network error the helper falls
- * back to the shared submitLead (direct anon-key insert) so a lead is never
- * silently lost.
+ * The server validates, dedupes, verifies the phone/email in real time, saves
+ * with the service role, and enrols the lead into nurture. There is NO anon-key
+ * fallback: it bypassed every server check (honeypot handling, dedupe,
+ * verification), so a server error now surfaces to the form instead of writing
+ * an unverified row (matches Property, 2026-08).
  *
  * Honeypot: the enquiry_ref field value is forwarded in the JSON body. The
  * server stores the row flagged when it is non-empty and returns a success shape
- * so a bot receives no signal. Critically, this replaces the old client-side
- * silent drop (company_url) that destroyed real leads autofilled by browsers.
+ * so a bot receives no signal.
  */
-
-import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 
 export interface DentistLeadPayload {
   full_name: string;
@@ -43,6 +41,12 @@ export interface DentistLeadResult {
   leadId?: string | null;
   /** Signed token for the native /book slot picker (thank-you page embed). */
   bookingToken?: string;
+  verify?: {
+    phone: "valid_mobile" | "valid_landline" | "voip" | "invalid" | "unknown";
+    email: "deliverable" | "undeliverable" | "risky" | "unknown";
+  };
+  /** True when the saved contact details look wrong and the user should re-check. */
+  needsCheck?: boolean;
 }
 
 /**
@@ -62,82 +66,18 @@ export async function submitDentistLead(
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...payload, enquiry_ref: enquiryRef }),
     });
-
-    let json: DentistLeadResult & { bookingToken?: string } = { success: false };
+    let json: DentistLeadResult = { success: false };
     try {
-      json = (await res.json()) as typeof json;
+      json = (await res.json()) as DentistLeadResult;
     } catch {
       /* non-JSON body */
     }
-
-    if (res.status >= 500 || res.status === 0) {
-      // Server error or network failure: fall back to shared direct insert so
-      // the lead is never silently lost.
-      const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-      if (supabaseUrl && supabaseKey) {
-        const fallback = await submitLead(
-          {
-            full_name: payload.full_name,
-            email: payload.email,
-            phone: payload.phone,
-            role: payload.role,
-            message: payload.message,
-            source: payload.source,
-            source_url: payload.source_url ?? "",
-            submitted_at: payload.submitted_at ?? new Date().toISOString(),
-            consent_given: payload.consent_given ?? true,
-            consent_text: payload.consent_text ?? "",
-            consent_at: payload.consent_at ?? new Date().toISOString(),
-            visitor_id: payload.visitor_id,
-            session_id: payload.session_id,
-            extras: enquiryRef
-              ? { ...(payload.extras ?? {}), honeypot: true, suspected_spam: true }
-              : payload.extras,
-          },
-          supabaseUrl,
-          supabaseKey,
-        );
-        return fallback;
-      }
-    }
-
     if (!res.ok) {
       return { success: false, error: json.error || `Request failed (${res.status})` };
     }
-
-    return { success: true, leadId: json.leadId, bookingToken: json.bookingToken };
+    const needsCheck = json.verify?.phone === "invalid";
+    return { ...json, success: true, needsCheck };
   } catch {
-    // Network-level failure: attempt shared direct insert as fallback.
-    const { supabaseUrl, supabaseKey } = getSupabaseConfig();
-    if (supabaseUrl && supabaseKey) {
-      try {
-        const fallback = await submitLead(
-          {
-            full_name: payload.full_name,
-            email: payload.email,
-            phone: payload.phone,
-            role: payload.role,
-            message: payload.message,
-            source: payload.source,
-            source_url: payload.source_url ?? "",
-            submitted_at: payload.submitted_at ?? new Date().toISOString(),
-            consent_given: payload.consent_given ?? true,
-            consent_text: payload.consent_text ?? "",
-            consent_at: payload.consent_at ?? new Date().toISOString(),
-            visitor_id: payload.visitor_id,
-            session_id: payload.session_id,
-            extras: enquiryRef
-              ? { ...(payload.extras ?? {}), honeypot: true, suspected_spam: true }
-              : payload.extras,
-          },
-          supabaseUrl,
-          supabaseKey,
-        );
-        return fallback;
-      } catch {
-        /* fallback also failed */
-      }
-    }
     return { success: false, error: "Network error. Please try again." };
   }
 }

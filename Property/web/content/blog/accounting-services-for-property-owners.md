@@ -5,7 +5,7 @@ canonical: https://www.propertytaxpartners.co.uk/blog/property-accountant-servic
 date: '2026-05-20'
 author: "Property Tax Partners Editorial Team"
 category: Property Accountant Services
-metaTitle: 'Accounting for Landlords: What a Property Accountant Does'
+metaTitle: 'Landlord Accounting Services: What They Cover in 2026'
 metaDescription: "What landlord accounting services cover end to end: Self Assessment, Section 24, MTD, CGT and the new 2027 property income rates. A UK guide."
 altText: "Property accountant reviewing documents with a UK landlord in a modern office"
 image: https://images.pexels.com/photos/31425035/pexels-photo-31425035.jpeg?auto=compress&cs=tinysrgb&h=650&w=940

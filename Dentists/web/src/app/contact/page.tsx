@@ -3,6 +3,9 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import Link from "next/link";
+import { niche } from "@/config/niche-loader";
+import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -34,6 +37,21 @@ export default function ContactPage() {
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         New enquiries go through the form below. Fill it in and we will be in touch within one working day.
       </p>
+      {isPackagesMode(niche) ? (
+        <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+          Already know what you need? Our fixed monthly plans start at £29 a month and you can{" "}
+          <Link
+            href="/pricing"
+            className="font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4"
+            data-cta="contact_pricing_link"
+            data-cta-placement="contact"
+            data-cta-variant={niche.cta.variant}
+          >
+            sign up online in a couple of minutes
+          </Link>
+          .
+        </p>
+      ) : null}
       <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
         <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
           <h2 className="font-serif text-lg font-semibold text-[var(--ink)]">How to reach us</h2>

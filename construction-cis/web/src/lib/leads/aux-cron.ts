@@ -69,6 +69,47 @@ function londonToUtcMs(isoDate: string, hour: number, minute: number): number {
 }
 
 // ---------------------------------------------------------------------------
+// Pure ICS builder (exported for unit tests and the ICS route)
+// ---------------------------------------------------------------------------
+
+export interface IcsSlotParams {
+  leadId: string;
+  date: string;    // YYYY-MM-DD
+  windowKey: string;
+  label: string;   // human slot label, used in SUMMARY
+}
+
+function toIcsDtStamp(ms: number): string {
+  return new Date(ms).toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z");
+}
+
+export function buildIcsForSlot(params: IcsSlotParams): string {
+  const bounds = WINDOW_BOUNDS[params.windowKey];
+  if (!bounds) return "";
+
+  const startMs = londonToUtcMs(params.date, bounds.startH, bounds.startM);
+  const endMs   = londonToUtcMs(params.date, bounds.endH,   bounds.endM);
+
+  const uid     = `${params.leadId}-${params.date}-${params.windowKey}@tradetaxspecialists.co.uk`;
+  const summary = `CIS tax review call (${params.label})`;
+  const desc    = "A CIS tax specialist will call you in this window. Nothing to prepare.";
+
+  return [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Trade Tax Specialists//Lead Review//EN",
+    "BEGIN:VEVENT",
+    `UID:${uid}`,
+    `DTSTART:${toIcsDtStamp(startMs)}`,
+    `DTEND:${toIcsDtStamp(endMs)}`,
+    `SUMMARY:${summary}`,
+    `DESCRIPTION:${desc}`,
+    "END:VEVENT",
+    "END:VCALENDAR",
+  ].join("\r\n");
+}
+
+// ---------------------------------------------------------------------------
 // Claim helpers
 // ---------------------------------------------------------------------------
 
@@ -186,6 +227,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
         source: string | null;
       }>("leads", {
         select: "id,full_name,email,phone,source",
+        source: "eq.construction-cis",
         id: `in.(${leadIds.join(",")})`,
       });
       const leadsById = new Map(leadsRes.data.map((l) => [l.id, l]));
@@ -367,6 +409,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
             source: string | null;
           }>("leads", {
             select: "id,full_name,phone,source",
+            source: "eq.construction-cis",
             id: `in.(${eligibleIds.join(",")})`,
           });
 

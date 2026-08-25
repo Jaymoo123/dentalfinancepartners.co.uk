@@ -155,7 +155,7 @@ keyTakeaways:
 
 <p>All £78,000 qualifies for 100% relief under the AIA. The company deducts £78,000 from its taxable profits. At 19% corporation tax, that saves £14,820 in tax.</p>
 
-<p>The electric car goes through the main pool at 18% writing down allowance (or 100% first-year allowance if the company elects for it).</p>
+<p>The electric car goes through the main pool at 18% writing down allowance for 2025/26 (14% for chargeable periods beginning on or after 1 April 2026 under FA 2026 s.28), or 100% first-year allowance if the company elects for it.</p>
 
 <h2>Planning Points for 2025/26</h2>
 

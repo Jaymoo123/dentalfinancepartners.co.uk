@@ -1,6 +1,25 @@
 /**
  * Result-gate DEFAULT verifier (read-mostly, NON-POLLUTING).
  *
+ * *** STALE AS OF 2026-08-22. DO NOT TRUST A RUN OF THIS FILE UNTIL IT IS ***
+ * *** UPDATED. It asserts the pre-redesign gating model and will report a  ***
+ * *** FAIL against a site that is behaving correctly.                      ***
+ *
+ * Owner Decision C2 of the Property design port changed the model underneath it:
+ * CalcResultCta was deleted, so the inline `#calc_result` capture this probe
+ * looks for no longer exists anywhere (check 1 expects it ABSENT, which now
+ * passes for the wrong reason; check 3 expects it PRESENT for a converted
+ * visitor, which can no longer be true). Gating also widened from
+ * `placement === "blog"` to every non-embed placement, and the once-per-session
+ * bypass was removed.
+ *
+ * This probe is not scheduled, is not called by CI or by any caretaker script,
+ * and notifies nobody (grep: the only reference to it is its own usage line), so
+ * it is emitting no noise. It is flagged rather than rewritten because rewriting
+ * it is a caretaker-observability change, not a design port. Recorded here
+ * because 5c156c51 is the precedent: a stale docstring describing a dead surface
+ * in the present tense is what produced a false revenue-outage report.
+ *
  * The result_gate_capture experiment was CONCLUDED to treatment 2026-06-30: the
  * gate is now the default for EVERY in-blog non-converted visitor (no A/B split).
  * This probe confirms the conclusion shipped correctly on a live in-blog calculator.

@@ -154,7 +154,7 @@ faqs:
 <h3>Common Allowable Expenses for Sole Traders</h3>
 <ul>
 <li>Office costs: stationery, printing, postage, software subscriptions (Xero, QuickBooks, Dext)</li>
-<li>Travel: mileage at 45p per mile for the first 10,000 business miles, 25p thereafter. Train fares, parking, tolls. Not commuting from home to your regular workplace.</li>
+<li>Travel: mileage at 55p per mile for the first 10,000 business miles (from 6 April 2026; 45p applied up to 2025/26), 25p thereafter. Train fares, parking, tolls. Not commuting from home to your regular workplace.</li>
 <li>Professional fees: accountant, solicitor, surveyor, bookkeeper</li>
 <li>Premises costs: rent, rates, utilities, cleaning, insurance</li>
 <li>Staff costs: wages, pensions, training</li>
@@ -195,13 +195,13 @@ faqs:
 <p>Taxable income: £50,200 - £12,570 = £37,630.</p>
 <p>Basic rate band: £37,700. She is within it.</p>
 <p>Income tax on self-employment profit: £37,630 at 20% = £7,526.</p>
-<p>Dividend tax: £1,200 minus £500 allowance = £700 at 8.75% = £61.25.</p>
+<p>Dividend tax: £1,200 minus £500 allowance = £700 at 10.75% (the 2026/27 basic dividend rate) = £75.25.</p>
 <p>Bank interest: £320 minus £500 starting rate for savings (reduced because of her other income) = £0 tax.</p>
 <p>Class 4 NICs: 6% on profits between £12,570 and £50,270. £48,680 minus £12,570 = £36,110 at 6% = £2,166.60.</p>
 <p>Class 2 NICs: nil from 2024/25.</p>
-<p>Total tax and NICs: £7,526 + £61.25 + £2,166.60 = £9,753.85.</p>
+<p>Total tax and NICs: £7,526 + £75.25 + £2,166.60 = £9,767.85.</p>
 
-<p>Priya must pay this by 31 January 2027. Because her tax bill exceeds £1,000, she also makes payments on account. Her first payment on account (due 31 January 2027) is half of £9,753.85 = £4,876.93. Her second (due 31 July 2027) is the same. So on 31 January 2027, she pays £9,753.85 + £4,876.93 = £14,630.78.</p>
+<p>Priya must pay this by 31 January 2027. Because her tax bill exceeds £1,000, she also makes payments on account. Her first payment on account (due 31 January 2027) is half of £9,767.85 = £4,883.93. Her second (due 31 July 2027) is the same. So on 31 January 2027, she pays £9,767.85 + £4,883.93 = £14,651.78.</p>
 
 <h2>Payments on Account and Balancing Payments</h2>
 

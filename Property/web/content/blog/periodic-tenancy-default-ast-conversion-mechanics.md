@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/p
 date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "AST to Periodic Conversion: 1 May 2026 Mechanics for Landlords"
-metaDescription: "Every existing AST converted to a periodic assured tenancy on 1 May 2026. Conversion mechanics, what changes, what stays, the landlord checklist, carve-outs."
+metaTitle: "AST to Periodic Conversion: 1 May 2026 for Landlords"
+metaDescription: "Every existing AST converted to a periodic assured tenancy on 1 May 2026. Conversion mechanics, what changes, what stays, the landlord checklist"
 altText: "Overhead view of monthly calendar pages, representing the monthly default rent period that became the new statutory norm on 1 May 2026"
 image: "https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -82,7 +82,7 @@ editorialNote: "Conversion-mechanics page for the 1 May 2026 transition of exist
 <p>Five operational items needed action by the conversion date or shortly afterwards.</p>
 
 <ul>
-<li><strong>Gas safety certificate</strong> current; copy provided to tenant on initial occupation and within 28 days of each annual renewal.</li>
+<li><strong><a href="/blog/landlord-tax-essentials/gas-safety-certificate-cost">Gas safety certificate</a></strong> current; copy provided to tenant on initial occupation and within 28 days of each annual renewal.</li>
 <li><strong>EICR</strong> current on the 5-year cycle; copy provided to tenant.</li>
 <li><strong>EPC</strong> current on the 10-year cycle; minimum E rating under the PRS minimum energy efficiency standards.</li>
 <li><strong>Deposit protected</strong> in an approved scheme; prescribed information served on the tenant within 30 days of original receipt. No re-protection or re-issue of prescribed information is required by reason of the conversion itself, but the file should evidence the original timely service.</li>

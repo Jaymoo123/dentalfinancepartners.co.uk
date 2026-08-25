@@ -6,7 +6,7 @@ date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "ATED Penalty Appeal: Reasonable Excuse vs Para 16"
-metaDescription: "ATED late-filing appeal: Sch 55 para 23 reasonable excuse (Perrin four-stage test) vs para 16 special circumstances, 30-day clock, Martland late-appeal route."
+metaDescription: "ATED late-filing appeal: Sch 55 para 23 reasonable excuse (Perrin four-stage test) vs para 16 special circumstances, 30-day clock"
 altText: "An HMRC letter on a wooden desk beside a fountain pen, representing receipt of an ATED late-filing penalty notice"
 image: "https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

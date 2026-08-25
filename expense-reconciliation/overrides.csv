@@ -1,0 +1,36 @@
+pattern,business_relevance,category,canonical,is_subscription,confidence,note
+# Human/Opus-confirmed verdicts (regex matched against the merchant sample, case-insensitive).
+# Highest precedence — beats the LLM and the deterministic rules. First match wins, so
+# put exclusions (e.g. ATM) above broader patterns. Confirmed by owner 2026-07-01.
+ATM WITHDRAWAL,personal,cash_withdrawal,Cash withdrawal,false,0.9,cash - not evidenceable
+RYSONS,business,stock_inventory,Rysons (wholesale),false,1.0,confirmed stock/wholesale supplier for resale
+ALIBABA,business,stock_inventory,Alibaba,false,1.0,confirmed stock for resale
+ALIEXPRESS,business,stock_inventory,AliExpress,false,1.0,stock for resale
+DHGATE,business,stock_inventory,DHgate,false,1.0,stock for resale
+CASPER COMPUTER,business,hardware_equipment,Casper Computer,false,1.0,business computer - capital allowance candidate
+EMPLIFEX,business,software_saas,Emplifex,false,1.0,own business brand/domain
+POST OFFICE,mixed,postage_shipping,Post Office,false,0.9,postage for stock (some personal) - split with DJH
+BRADFORD BM,personal,vehicle,Bradford BM,false,1.0,personal car repairs
+BACK MARKET,personal,electronics,Back Market,false,1.0,personal Apple Watch
+ALA IB,personal,insurance,ALA IB,false,1.0,insurance
+DCBLTD|DCB LTD,personal,fines,DCB,false,1.0,fines - not tax deductible
+YOUR-SAVING,personal,other,your-saving.com,false,1.0,confirmed personal spending
+COSTCO,personal,fuel_transport,Costco,false,1.0,confirmed personal (petrol/bulk)
+PAYPAL \*EBAY|\bEBAY\b,business,stock_inventory,eBay (stock),false,1.0,confirmed business stock sourcing
+PEGASUS,personal,other,Pegasus UK,false,1.0,confirmed personal
+SPOT PROJECT,personal,other,Spot Project,false,1.0,confirmed personal
+BLUE GREEN,personal,retail,Shade Station (Blue Green Ltd),false,1.0,sunglasses - personal
+MEMBERSHIP FEE,personal,other,Membership Fee,false,1.0,confirmed personal
+MINTAPPLE,personal,electronics,SP Mintapple,false,1.0,confirmed personal
+36 CITY ROAD,personal,other,36 City Road,false,1.0,confirmed personal
+PAYPAL PAYMENT,business,freelance_services,Fiverr (via PayPal),false,1.0,PayPal CSV shows these 7 bank-funded PayPal debits = Fiverr
+VALLEY PARADE SERVICE|RONTEC|COSTCO PF|\bESSO\b|TEXACO|EG GROUP|APPLEGREEN|\bMFG |SHOOTERS HILL|\bMOTO |\bSHELL\b|\bBP \b|\bJET \b,personal,fuel_transport,Fuel station,false,0.85,fuel on personal account (business driving = mileage claim not fuel)
+ELEPHANT,personal,insurance,Elephant Insurance,false,0.95,car insurance
+AUTO TRADER,personal,vehicle,Auto Trader,false,0.9,car marketplace - personal
+THOMAS RECOVERY,personal,vehicle,Thomas Recovery,false,0.9,vehicle recovery - personal
+CBMDC,personal,council,Bradford Council,false,0.9,council payment
+BARCLAYS PRTNR FIN|BARCLAYS PARTNER,personal,finance,Barclays Partner Finance,false,0.9,personal finance/credit
+ROYAL MINT,personal,investment,Royal Mint,false,0.8,coins/bullion - not a business cost
+QUIZLET,personal,education,Quizlet,false,0.8,education subscription
+BSH HOME,personal,appliances,BSH Home Appliances,false,0.85,home appliance
+BRADFORD ENTER,personal,entertainment,Bradford Entertainment,false,0.8,entertainment

@@ -11,6 +11,16 @@ import { corporationTaxCalculator } from "./tools/corporation-tax-calculator";
 import { dividendTaxCalculator } from "./tools/dividend-tax-calculator";
 import { rentARoomReliefCalculator } from "./tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "./tools/property-allowance-checker";
+import { rdTaxCreditCalculator } from "./tools/rd-tax-credit-calculator";
+import { capitalAllowancesCalculator } from "./tools/capital-allowances-calculator";
+import { buyToLetMortgageCalculator } from "./tools/buy-to-let-mortgage-calculator";
+import { buyToLetRentalStressTestCalculator } from "./tools/buy-to-let-rental-stress-test-calculator";
+import { commercialMortgageCalculator } from "./tools/commercial-mortgage-calculator";
+import { bridgingLoanCalculator } from "./tools/bridging-loan-calculator";
+import { developmentFinanceCalculator } from "./tools/development-finance-calculator";
+import { leaseExtensionPremiumCalculator } from "./tools/lease-extension-premium-calculator";
+import { bprAprAllowanceCalculator } from "./tools/bpr-apr-allowance-calculator";
+import { costOfSellingCalculator } from "./tools/cost-of-selling-calculator";
 
 /**
  * The calculator fleet. "bespoke" tools have their own hand-built component +
@@ -86,6 +96,16 @@ const GENERIC: GenericTool[] = [
   dividendTaxCalculator,
   rentARoomReliefCalculator,
   propertyAllowanceChecker,
+  rdTaxCreditCalculator,
+  capitalAllowancesCalculator,
+  buyToLetMortgageCalculator,
+  buyToLetRentalStressTestCalculator,
+  commercialMortgageCalculator,
+  bridgingLoanCalculator,
+  developmentFinanceCalculator,
+  leaseExtensionPremiumCalculator,
+  bprAprAllowanceCalculator,
+  costOfSellingCalculator,
 ];
 
 export const TOOLS: Tool[] = [...BESPOKE, ...GENERIC];

@@ -1,0 +1,124 @@
+{
+  "candidate_id": "remortgage-leadmkt-2026-07",
+  "vertical": "remortgage",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.mortgagesbooked.co.uk/blog/mortgage-lead-costs",
+      "excerpt": "21 Apr 2026 — Rate-only remortgage leads tend to price in the same band; extra ... on top of the per-lead price. See our pricing Lead quality ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/remortgage/",
+      "excerpt": "For remortgage leads, the cost per lead starts at £40. Discounts are available through our Rewards scheme, which offers incentives for customers based on the ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://themortgagebrokerclub.co.uk/broker-tools/lead-generation-for-mortgage-brokers/",
+      "excerpt": "... remortgage leads via third-party marketing services help mortgage brokers ... Free listings and the potential for leads with no cost! As well as ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lurvodigital.com/resources/how-much-do-remortgage-leads-cost/",
+      "excerpt": "Remortgage Leads pricing in the UK generally falls between £10-£25 per lead. The range depends on several factors including exclusivity, qualification depth, ...",
+      "metric": {
+        "price_gbp": 25
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://phonexa.uk/blog/how-to-buy-mortgage-leads/",
+      "excerpt": "15 Jan 2026 — The loan-to-value (LTV) ratio is 95% for first-time buyers, 90% for purchase mortgage leads, 85% for remortgage leads, and 70% for buy-to-let ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.theppcmachine.co.uk/mortgage-broker-lead-generation-companies/",
+      "excerpt": "17 May 2023 — However, they do currently appear to have mortgage and remortgage leads available for £60 each. ... Instead of paying a fixed price per lead, you ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://adbetter.com/sector/financial-and-mortgage-lead-generation/",
+      "excerpt": "26% reduction in cost per lead (CPL) 100+ leads per month consistently generated 43% lead to mortgage in principle conversion rate.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/mortgage-leads/",
+      "excerpt": "We generate 1000s of leads ✅ for mortgage brokers and mortgage advisors relating to buyers at all stages of the property ladder. Pay-Per-Lead Model",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.promo-seo.uk/lead-generation/industries/financial-advisers/mortgages/",
+      "excerpt": "Lead packages start at £500 per month. Pay per conversion options are available depending on mortgage type, credit profile, region and expected case value. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=dUIxlAf425g",
+      "excerpt": "Gain insights on establishing strong branding, quick-win lead generation methods, effective use of social media, and enhancing your online ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/mortgage-leads/",
+      "excerpt": "pay-per-click advertising, Our remortgage lead generation targets homeowners whose fixed-rate deals are expiring. Facebook Lead Gen (£1,497+ Per Month) ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.driftrock.com/blog/lead-generation-for-mortgage-brokers",
+      "excerpt": "14 Jul 2023 — As brokers or real estate agents, here are 8 mortgage lead generation strategies you can experiment with to develop your lead generation setup. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "buy remortgage leads online",
+    "financial and mortgage lead generation",
+    "how much do mortgage leads cost in the uk?",
+    "how much do remortgage leads cost?",
+    "how to grow a mortgage business? | promoseo lead ...",
+    "lead generation for mortgage brokers | special offers",
+    "lead generation for mortgage brokers: everything you ...",
+    "mortgage leads services to fill your pipeline",
+    "mortgage leads uk",
+    "mortgage leads – the ultimate list of lead generation ...",
+    "mortgages lead generation",
+    "remortgage",
+    "where to buy mortgage leads in the uk: 36 best ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK remortgage providers already paying per lead",
+    "proof": "12 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

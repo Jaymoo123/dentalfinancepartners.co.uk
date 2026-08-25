@@ -1,0 +1,24 @@
+{
+  "batch_id": "M1-C-B3",
+  "stage": "RUN",
+  "agent_id": "MW1-RUN-C-B3",
+  "completed_at": "2026-05-26T21:55:00Z",
+  "branch": "property-megawave1-c",
+  "commit_shas": [
+    "8944785",
+    "696383e",
+    "87cd96a",
+    "5549bf2",
+    "2595201",
+    "0f430ea",
+    "ca93a6e",
+    "cb20889",
+    "8a98ce6"
+  ],
+  "slugs_done": [
+    "lease-extension-vs-freehold-purchase",
+    "lease-extensions-in-the-uk-surrender-and-regrant",
+    "lease-variation-and-lease-surrender"
+  ],
+  "notes": "Marker synthesised post-hoc (sub-agent used commit-as-marker)."
+}

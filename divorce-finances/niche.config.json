@@ -1,0 +1,109 @@
+{
+  "niche_id": "divorce-finances",
+  "display_name": "PLACEHOLDER-DIVORCE-BRAND",
+  "legal_name": "Ashfield Trading Ltd",
+  "company": {
+    "number": "16358723",
+    "place_of_registration": "England and Wales",
+    "registered_office": {
+      "line1": "20 Ashfield Avenue",
+      "line2": "Shipley",
+      "city": "Bradford",
+      "postcode": "BD18 3AL"
+    },
+    "vat_number": null,
+    "enquiry_retention_months": 24
+  },
+  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
+  "domain": "placeholder-divorce-domain.example",
+  "tagline": "Clear, practical guidance on the money side of divorce and separation in the UK",
+  "description": "Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon. We connect readers with specialist help when their situation needs it.",
+  "brand": {
+    "primary_color": "#1d4ed8",
+    "logo_path": "/brand/primary-logo.png",
+    "publisher_logo_url": "/brand/icon-alt.png"
+  },
+  "contact": {
+    "email": "hello@placeholder-divorce-domain.example",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    { "label": "Financial Settlements", "href": "/financial-settlements" },
+    { "label": "Pensions", "href": "/pension-sharing" },
+    { "label": "Tax", "href": "/capital-gains-tax-divorce" },
+    { "label": "Who we help", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer_links": [
+    { "label": "Financial Settlements", "href": "/financial-settlements" },
+    { "label": "Pension Sharing", "href": "/pension-sharing" },
+    { "label": "Capital Gains Tax", "href": "/capital-gains-tax-divorce" },
+    { "label": "Who we help", "href": "/for" },
+    { "label": "Calculators", "href": "/calculators" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Glossary", "href": "/glossary" },
+    { "label": "About", "href": "/about" },
+    { "label": "Privacy policy", "href": "/privacy-policy" },
+    { "label": "Terms", "href": "/terms" },
+    { "label": "Cookie policy", "href": "/cookie-policy" }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK people divorcing or separating who need to understand the financial side",
+    "categories": [
+      "Financial Settlements",
+      "Pensions and Divorce",
+      "Tax on Divorce",
+      "The Family Home",
+      "Maintenance and Support",
+      "Process and Costs"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "divorce-finances",
+    "source_identifier": "divorce-finances"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [],
+    "google_analytics_id": "",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    },
+    "theme_color": "#1d4ed8"
+  },
+  "lead_form": {
+    "role_label": "I am...",
+    "role_options": [
+      { "value": "starting-divorce", "label": "Starting a divorce or separation" },
+      { "value": "negotiating-settlement", "label": "Negotiating a financial settlement" },
+      { "value": "pension-questions", "label": "Working out pensions" },
+      { "value": "tax-questions", "label": "Working out tax on divorce" },
+      { "value": "other", "label": "Other" }
+    ],
+    "placeholders": {
+      "name": "Jamie Smith",
+      "email": "jamie@example.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. I need to understand how our pensions get split, or what a fair settlement looks like..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Work out where you really stand financially",
+    "sticky_secondary": "Free calculators for settlements, pensions and tax on divorce.",
+    "sticky_button": "Try the calculators"
+  },
+  "blog": {
+    "cta_heading": "Unsure what a fair settlement looks like?",
+    "cta_body": "Our free calculators give you a clear starting point in minutes, and if your situation is complex we can point you to the right specialist.",
+    "cta_button": "Use the free calculators"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}

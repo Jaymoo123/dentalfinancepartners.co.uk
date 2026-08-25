@@ -1,0 +1,1566 @@
+{
+  "accountant for landlords": {
+    "ai_overview": true,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Gorilla Accounting",
+      "Taxd"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 1,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 7,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 9,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/landlord-accountant/",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "www.pkb.co.uk",
+        "url": "https://www.pkb.co.uk/clients/landlords-property-owners/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.taxassist.co.uk",
+        "url": "https://www.taxassist.co.uk/who-we-help/landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "www.taxfile.co.uk",
+        "url": "https://www.taxfile.co.uk/landlords-property-tax-advisers/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "www.rogers-spencer.co.uk",
+        "url": "https://www.rogers-spencer.co.uk/our-specialist-teams/housing-associations/landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "leonandcompany.co.uk",
+        "url": "https://leonandcompany.co.uk/property-tax-accountant/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "accountant for property management": {
+    "ai_overview": false,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Naseems Accountants | Accountants in Birmingham",
+      "FHP Accounting Services Limited"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 4,
+        "domain": "www.davidhoward.co.uk",
+        "url": "https://www.davidhoward.co.uk/property-management-and-accounting",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/property-accountants-what-they-do-and-when-you-need-one-for-effective-financial-management/",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 9,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 10,
+        "domain": "www.thepropertyaccountant.co.uk",
+        "url": "https://www.thepropertyaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 11,
+        "domain": "hwfisher.co.uk",
+        "url": "https://hwfisher.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "www.mccaccountants.co.uk",
+        "url": "https://www.mccaccountants.co.uk/property-accountants/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "buy to let accountant": {
+    "ai_overview": false,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 1,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 2,
+        "domain": "www.thebuytoletaccountant.co.uk",
+        "url": "https://www.thebuytoletaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 3,
+        "domain": "www.thp.co.uk",
+        "url": "https://www.thp.co.uk/accountants-for-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "vantage-accounting.co.uk",
+        "url": "https://vantage-accounting.co.uk/accountancy-services/buy-to-let-accounting/",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "iwnaccountancy.co.uk",
+        "url": "https://iwnaccountancy.co.uk/accountancy-services/buy-to-let-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 8,
+        "domain": "buytolettaxaccountants.co.uk",
+        "url": "https://buytolettaxaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 9,
+        "domain": "www.elsbyandco.co.uk",
+        "url": "https://www.elsbyandco.co.uk/services/accounting-advisory/property-including-buy-to-let/",
+        "page_type": "service"
+      },
+      {
+        "rank": 11,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      }
+    ]
+  },
+  "buy to let tax advice": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/renting-out-a-property/paying-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.landc.co.uk",
+        "url": "https://www.landc.co.uk/mortgage-guides/tax-buy-to-let-property",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "www.sjp.co.uk",
+        "url": "https://www.sjp.co.uk/individuals/news/buy-to-let-are-the-tax-benefits-still-worth-it",
+        "page_type": "blog"
+      },
+      {
+        "rank": 6,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/what-we-do/tax-for-landlords/tax-for-landlords-for-uk-resident/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 8,
+        "domain": "www.propertymark.co.uk",
+        "url": "https://www.propertymark.co.uk/professional-standards/consumer-guides/landlords/landlord-tax.html",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.totallandlordinsurance.co.uk",
+        "url": "https://www.totallandlordinsurance.co.uk/knowledge-centre/taxes-for-uk-landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "connectbrokers.co.uk",
+        "url": "https://connectbrokers.co.uk/tax-changes-for-landlords/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "capital gains tax property": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/tax-sell-property",
+        "page_type": "other"
+      },
+      {
+        "rank": 3,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/capital-gains-tax/rates",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "hoa.org.uk",
+        "url": "https://hoa.org.uk/advice/guides-for-homeowners/i-am-selling/capital-gains-tax-selling-home/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 6,
+        "domain": "www.aviva.co.uk",
+        "url": "https://www.aviva.co.uk/investments/investment-account/capital-gains-tax-calculator/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.litrg.org.uk",
+        "url": "https://www.litrg.org.uk/savings-property/capital-gains-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.which.co.uk",
+        "url": "https://www.which.co.uk/money/tax/capital-gains-tax/capital-gains-tax-on-property-aUvSS1P7cdEV",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.taxadvisermagazine.com",
+        "url": "https://www.taxadvisermagazine.com/article/property-capital-gains-tax-comprehensive-guide",
+        "page_type": "blog"
+      },
+      {
+        "rank": 10,
+        "domain": "www.att.org.uk",
+        "url": "https://www.att.org.uk/cgt-uk-property-reporting-service-users-guide",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.mmba.co.uk",
+        "url": "https://www.mmba.co.uk/blog/how-to-avoid-capital-gains-tax-on-property/",
+        "page_type": "blog"
+      }
+    ]
+  },
+  "landlord accountant": {
+    "ai_overview": false,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Gorilla Accounting",
+      "Tax Space Ltd"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 4,
+        "domain": "www.taxassist.co.uk",
+        "url": "https://www.taxassist.co.uk/who-we-help/landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 8,
+        "domain": "a-wise.co.uk",
+        "url": "https://a-wise.co.uk/who-we-help/landlord-accounting/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 10,
+        "domain": "www.pkb.co.uk",
+        "url": "https://www.pkb.co.uk/clients/landlords-property-owners/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/landlord-accountant/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "www.mollan.co.uk",
+        "url": "https://www.mollan.co.uk/landlord-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "eastfieldaccountants.co.uk",
+        "url": "https://eastfieldaccountants.co.uk/services/landlord-accounting-tax-returns/",
+        "page_type": "service"
+      }
+    ]
+  },
+  "landlord accountant near me": {
+    "ai_overview": false,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Tax Space Ltd",
+      "Pro-Taxman - Property & Small Business Accountants"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 5,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.thomsoncooper.com",
+        "url": "https://www.thomsoncooper.com/sectors/landlord-property-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax",
+        "page_type": "service"
+      },
+      {
+        "rank": 8,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "chadwickaccountants.co.uk",
+        "url": "https://chadwickaccountants.co.uk/service/landlord-services",
+        "page_type": "service"
+      },
+      {
+        "rank": 10,
+        "domain": "eastfieldaccountants.co.uk",
+        "url": "https://eastfieldaccountants.co.uk/services/landlord-accounting-tax-returns/",
+        "page_type": "service"
+      },
+      {
+        "rank": 11,
+        "domain": "mjh.accountants",
+        "url": "https://mjh.accountants/advice-for-you-and-your-family/property-tax/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "www.elitefinancialaccounting.com",
+        "url": "https://www.elitefinancialaccounting.com/bristol-accountants/bristol-property-tax-service",
+        "page_type": "other"
+      }
+    ]
+  },
+  "landlord tax": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/renting-out-a-property/paying-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.propertymark.co.uk",
+        "url": "https://www.propertymark.co.uk/professional-standards/consumer-guides/landlords/landlord-tax.html",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "taxqube.co.uk",
+        "url": "https://taxqube.co.uk/what-is-section-24-known-as-the-landlord-tax/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.alanboswell.com",
+        "url": "https://www.alanboswell.com/resources/how-much-tax-do-i-need-to-pay-on-rental-income/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.litrg.org.uk",
+        "url": "https://www.litrg.org.uk/savings-property/property-income/reporting-property-income-hmrc",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.simplybusiness.co.uk",
+        "url": "https://www.simplybusiness.co.uk/knowledge/landlord-tax/tax-on-rental-income/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 10,
+        "domain": "landlordleaders.osb.co.uk",
+        "url": "https://landlordleaders.osb.co.uk/education/landlord-tax/buying-a-first-rental-property/landlord-tax/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.totallandlordinsurance.co.uk",
+        "url": "https://www.totallandlordinsurance.co.uk/knowledge-centre/taxes-for-uk-landlords",
+        "page_type": "other"
+      }
+    ]
+  },
+  "landlord tax advice": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax",
+        "page_type": "service"
+      },
+      {
+        "rank": 3,
+        "domain": "www.taxassist.co.uk",
+        "url": "https://www.taxassist.co.uk/who-we-help/landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/renting-out-a-property/paying-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "www.totallandlordinsurance.co.uk",
+        "url": "https://www.totallandlordinsurance.co.uk/knowledge-centre/taxes-for-uk-landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "perrysaccountants.co.uk",
+        "url": "https://perrysaccountants.co.uk/property-and-landlord-accountants",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.parkersproperties.co.uk",
+        "url": "https://www.parkersproperties.co.uk/guides/landlord/landlord-tax-advice/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 8,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 9,
+        "domain": "www.geraldedelman.com",
+        "url": "https://www.geraldedelman.com/insights/tax-advice-for-landlords-seven-key-tips/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      }
+    ]
+  },
+  "landlord tax calculator": {
+    "ai_overview": false,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": false,
+    "top10": [
+      {
+        "rank": 1,
+        "domain": "taxfix.com",
+        "url": "https://taxfix.com/en-uk/calculator/rental-income-tax/",
+        "page_type": "other"
+      },
+      {
+        "rank": 2,
+        "domain": "www.gosimpletax.com",
+        "url": "https://www.gosimpletax.com/rental-income-tax-calculator/",
+        "page_type": "other"
+      },
+      {
+        "rank": 3,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/self-assessment-tax-calculator",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "landlordcalculator.co.uk",
+        "url": "https://landlordcalculator.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 5,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "checkmytax.uk",
+        "url": "https://checkmytax.uk/rental-property-tax-calculator/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.riftrefunds.co.uk",
+        "url": "https://www.riftrefunds.co.uk/advice/tax-calculators/rental-income-tax-calculator/",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "q.tax",
+        "url": "https://q.tax/calculator/rental-income-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.freeagent.com",
+        "url": "https://www.freeagent.com/apps/landlords-allowable-expenses-calculator/",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "lendlord.io",
+        "url": "https://lendlord.io/uk-national-insurance-calculator",
+        "page_type": "other"
+      }
+    ]
+  },
+  "landlord tax return": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/renting-out-a-property/paying-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.litrg.org.uk",
+        "url": "https://www.litrg.org.uk/savings-property/property-income/reporting-property-income-hmrc",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "fixedfeetaxreturn.co.uk",
+        "url": "https://fixedfeetaxreturn.co.uk/who-we-help/landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.freeagent.com",
+        "url": "https://www.freeagent.com/blog/self-assessment-landlords/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 7,
+        "domain": "www.totallandlordinsurance.co.uk",
+        "url": "https://www.totallandlordinsurance.co.uk/knowledge-centre/landlord-tax-return",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.hiscox.co.uk",
+        "url": "https://www.hiscox.co.uk/landlords-blog/guide-to-taxes",
+        "page_type": "blog"
+      },
+      {
+        "rank": 10,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/guidance/help-with-property-on-your-self-assessment-tax-return",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=jPHMDsvM16I",
+        "page_type": "other"
+      }
+    ]
+  },
+  "making tax digital landlords": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step",
+        "page_type": "other"
+      },
+      {
+        "rank": 3,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/resources/tax/making-tax-digital",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.litrg.org.uk",
+        "url": "https://www.litrg.org.uk/tax-nic/making-tax-digital-income-tax/making-tax-digital-landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.sage.com",
+        "url": "https://www.sage.com/en-gb/making-tax-digital/landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.freeagent.com",
+        "url": "https://www.freeagent.com/guides/making-tax-digital/mtd-what-landlords-need-to-know/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 8,
+        "domain": "www.att.org.uk",
+        "url": "https://www.att.org.uk/making-tax-digital-frequently-asked-questions",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "makingtaxdigital.campaign.gov.uk",
+        "url": "https://makingtaxdigital.campaign.gov.uk/making-tax-digital-software/",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=aNYqsYZuO6U",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.bishopfleming.co.uk",
+        "url": "https://www.bishopfleming.co.uk/insights/making-tax-digital-change-how-landlords-and-sole-traders-record-their-income",
+        "page_type": "other"
+      }
+    ]
+  },
+  "non resident landlord tax": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 1,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/government/publications/non-resident-landord-guidance-notes-for-letting-agents-and-tenants-non-resident-landlords-scheme-guidance-notes/what-the-non-resident-landlords-scheme-is",
+        "page_type": "other"
+      },
+      {
+        "rank": 2,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/tax-uk-income-live-abroad/rent",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/tax-guide/are-you-leaving-the-uk-permanently/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.litrg.org.uk",
+        "url": "https://www.litrg.org.uk/savings-property/property-income/non-resident-landlord-scheme",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "titanwealthinternational.com",
+        "url": "https://titanwealthinternational.com/learn/non-resident-landlord-scheme/",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.theaccountancy.co.uk",
+        "url": "https://www.theaccountancy.co.uk/property/landlords/a-guide-to-the-non-resident-landlord-scheme-301755.html",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.1stformations.co.uk",
+        "url": "https://www.1stformations.co.uk/blog/paying-tax-on-uk-property-income-as-non-resident-landlord/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 10,
+        "domain": "garrettwhitelock.co.uk",
+        "url": "https://garrettwhitelock.co.uk/landlords/non-resident-landlord-scheme/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.gosimpletax.com",
+        "url": "https://www.gosimpletax.com/blog/non-resident-landlords-and-paying-uk-tax-on-rental-income/",
+        "page_type": "blog"
+      }
+    ]
+  },
+  "property accountant": {
+    "ai_overview": true,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Tax Space Ltd",
+      "Optimise Accountants Expat & Property Tax Specialists"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 1,
+        "domain": "www.thepropertyaccountant.co.uk",
+        "url": "https://www.thepropertyaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 6,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 8,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/property-accountants-what-they-do-and-when-you-need-one-for-effective-financial-management/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "hwfisher.co.uk",
+        "url": "https://hwfisher.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 11,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "www.mccaccountants.co.uk",
+        "url": "https://www.mccaccountants.co.uk/property-accountants/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "property accountant near me": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 4,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.dnsassociates.co.uk",
+        "url": "https://www.dnsassociates.co.uk/property-tax-accountants-in-maidstone",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.mccaccountants.co.uk",
+        "url": "https://www.mccaccountants.co.uk/property-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "gwaccounting.co.uk",
+        "url": "https://gwaccounting.co.uk/services/property-accountants/",
+        "page_type": "service"
+      },
+      {
+        "rank": 10,
+        "domain": "www.thepropertyaccountant.co.uk",
+        "url": "https://www.thepropertyaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 11,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax",
+        "page_type": "service"
+      }
+    ]
+  },
+  "property accountants": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 4,
+        "domain": "www.geraldedelman.com",
+        "url": "https://www.geraldedelman.com/services/property-tax-advisers/",
+        "page_type": "service"
+      },
+      {
+        "rank": 5,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 6,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.thepropertyaccountant.co.uk",
+        "url": "https://www.thepropertyaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 8,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "hwfisher.co.uk",
+        "url": "https://hwfisher.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "www.mccaccountants.co.uk",
+        "url": "https://www.mccaccountants.co.uk/property-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.jamestoddandco.co.uk",
+        "url": "https://www.jamestoddandco.co.uk/property/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "property incorporation": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "library.croneri.co.uk",
+        "url": "https://library.croneri.co.uk/cch_uk/cpi/15-4",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.pricebailey.co.uk",
+        "url": "https://www.pricebailey.co.uk/blog/incorporation-relief/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 5,
+        "domain": "www.myerson.co.uk",
+        "url": "https://www.myerson.co.uk/personal/residential-property/partnership-property-incorporations",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.pkfsmithcooper.com",
+        "url": "https://www.pkfsmithcooper.com/news-insights/incorporation-relief-explained-transferring-property-into-a-limited-company/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 7,
+        "domain": "hwfisher.co.uk",
+        "url": "https://hwfisher.co.uk/property-incorporation-planning-key-considerations-and-risks/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.freeagent.com",
+        "url": "https://www.freeagent.com/blog/incorporation-for-landlords/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 10,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/latest-news/specialisms/incorporating-your-property-portfolio-is-it-the-right-move-for-you/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/incorporation-relief",
+        "page_type": "other"
+      }
+    ]
+  },
+  "property investment accountant": {
+    "ai_overview": true,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Optimise Accountants Expat & Property Tax Specialists",
+      "Property Tax Advice"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 8,
+        "domain": "www.reynoldsandco.co.uk",
+        "url": "https://www.reynoldsandco.co.uk/specialist-sectors/property-investment",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.knightsgroup.co.uk",
+        "url": "https://www.knightsgroup.co.uk/factsheets/personal-tax/property-investment-tax-aspects",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "perrysaccountants.co.uk",
+        "url": "https://perrysaccountants.co.uk/property-and-landlord-accountants",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "www.mccaccountants.co.uk",
+        "url": "https://www.mccaccountants.co.uk/property-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "www.championgroup.co.uk",
+        "url": "https://www.championgroup.co.uk/services/property/",
+        "page_type": "service"
+      }
+    ]
+  },
+  "property tax accountant": {
+    "ai_overview": false,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Tax Space Ltd",
+      "Property Tax Advice"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 4,
+        "domain": "www.geraldedelman.com",
+        "url": "https://www.geraldedelman.com/services/property-tax-advisers/",
+        "page_type": "service"
+      },
+      {
+        "rank": 5,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 6,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 7,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 8,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.thepropertyaccountant.co.uk",
+        "url": "https://www.thepropertyaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 11,
+        "domain": "rppaccounts.co.uk",
+        "url": "https://rppaccounts.co.uk/our-services/taxation-planning-and-compliance/property-taxes/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "hwfisher.co.uk",
+        "url": "https://hwfisher.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/property-tax-accountants/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "property tax advisor": {
+    "ai_overview": false,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Property Tax Advice",
+      "PTRC - Capital Allowance Specialists"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 5,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 6,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 7,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "www.property-tax-advice.co.uk",
+        "url": "https://www.property-tax-advice.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 11,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "rppaccounts.co.uk",
+        "url": "https://rppaccounts.co.uk/our-services/taxation-planning-and-compliance/property-taxes/",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "www.arnoldhill.co.uk",
+        "url": "https://www.arnoldhill.co.uk/property",
+        "page_type": "other"
+      },
+      {
+        "rank": 15,
+        "domain": "scottishlandlords.com",
+        "url": "https://scottishlandlords.com/resources/suppliers-and-discounts/eq-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 16,
+        "domain": "www.hartshaw.co.uk",
+        "url": "https://www.hartshaw.co.uk/services/tax-advisory/personal/property",
+        "page_type": "service"
+      }
+    ]
+  },
+  "property tax specialist": {
+    "ai_overview": true,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Property Tax Advice",
+      "PTRC - Capital Allowance Specialists"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 6,
+        "domain": "www.geraldedelman.com",
+        "url": "https://www.geraldedelman.com/services/property-tax-advisers/",
+        "page_type": "service"
+      },
+      {
+        "rank": 8,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 9,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 10,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.arnoldhill.co.uk",
+        "url": "https://www.arnoldhill.co.uk/property",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "www.hartshaw.co.uk",
+        "url": "https://www.hartshaw.co.uk/services/tax-advisory/personal/property",
+        "page_type": "service"
+      },
+      {
+        "rank": 13,
+        "domain": "rppaccounts.co.uk",
+        "url": "https://rppaccounts.co.uk/our-services/taxation-planning-and-compliance/property-taxes/",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "www.perrigoconsultants.co.uk",
+        "url": "https://www.perrigoconsultants.co.uk/property-tax-consultants/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "rental property accountant": {
+    "ai_overview": false,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Tax Space Ltd",
+      "Alexander & Co"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 1,
+        "domain": "gorillaaccounting.com",
+        "url": "https://gorillaaccounting.com/accountants-for-buy-to-let-landlords/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "uklandlordtax.co.uk",
+        "url": "https://uklandlordtax.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 7,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 9,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 10,
+        "domain": "www.elsbyandco.co.uk",
+        "url": "https://www.elsbyandco.co.uk/services/accounting-advisory/property-including-buy-to-let/",
+        "page_type": "service"
+      },
+      {
+        "rank": 11,
+        "domain": "www.mjkane.co.uk",
+        "url": "https://www.mjkane.co.uk/rental-property-income-reporting/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/landlord-accountant/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "www.taxfile.co.uk",
+        "url": "https://www.taxfile.co.uk/landlords-property-tax-advisers/",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "eastfieldaccountants.co.uk",
+        "url": "https://eastfieldaccountants.co.uk/services/landlord-accounting-tax-returns/",
+        "page_type": "service"
+      }
+    ]
+  },
+  "section 24 tax": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.axa.co.uk",
+        "url": "https://www.axa.co.uk/landlord-insurance/guide-to-section-24-tax-changes/",
+        "page_type": "blog"
+      },
+      {
+        "rank": 4,
+        "domain": "taxqube.co.uk",
+        "url": "https://taxqube.co.uk/what-is-section-24-known-as-the-landlord-tax/",
+        "page_type": "other"
+      },
+      {
+        "rank": 5,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/guidance/changes-to-tax-relief-for-residential-landlords-how-its-worked-out-including-case-studies",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "www.legislation.gov.uk",
+        "url": "https://www.legislation.gov.uk/ukpga/2015/33/section/24",
+        "page_type": "other"
+      },
+      {
+        "rank": 7,
+        "domain": "www.alanboswell.com",
+        "url": "https://www.alanboswell.com/resources/what-is-section-24/",
+        "page_type": "other"
+      },
+      {
+        "rank": 8,
+        "domain": "blog.goodlord.co",
+        "url": "https://blog.goodlord.co/section-24-tax-relief-implications-landlords",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/section-24-and-mortgage-interest/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "bmimoney.co.uk",
+        "url": "https://bmimoney.co.uk/buy-to-let-mortgage-broker/understanding-section-24-tax-for-landlords/",
+        "page_type": "other"
+      }
+    ]
+  },
+  "specialist property accountant": {
+    "ai_overview": true,
+    "local_pack": true,
+    "local_pack_names": [
+      "UK Property Accountants",
+      "Property Tax Advice",
+      "Optimise Accountants Expat & Property Tax Specialists"
+    ],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "www.thepropertyaccountant.co.uk",
+        "url": "https://www.thepropertyaccountant.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 6,
+        "domain": "www.ukpropertyaccountants.co.uk",
+        "url": "https://www.ukpropertyaccountants.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 9,
+        "domain": "www.nrla.org.uk",
+        "url": "https://www.nrla.org.uk/services/tax/rita4rent",
+        "page_type": "service"
+      },
+      {
+        "rank": 10,
+        "domain": "www.djh.co.uk",
+        "url": "https://www.djh.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "bhp.co.uk",
+        "url": "https://bhp.co.uk/office/leeds/property-accountancy/",
+        "page_type": "other"
+      },
+      {
+        "rank": 12,
+        "domain": "hwfisher.co.uk",
+        "url": "https://hwfisher.co.uk/specialisms/property/",
+        "page_type": "other"
+      },
+      {
+        "rank": 13,
+        "domain": "fhpaccounting.co.uk",
+        "url": "https://fhpaccounting.co.uk/property-tax-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 14,
+        "domain": "www.mccaccountants.co.uk",
+        "url": "https://www.mccaccountants.co.uk/property-accountants/",
+        "page_type": "other"
+      },
+      {
+        "rank": 15,
+        "domain": "www.andrewpasser.com",
+        "url": "https://www.andrewpasser.com/property-tax-accountant-london",
+        "page_type": "other"
+      }
+    ]
+  },
+  "stamp duty advice": {
+    "ai_overview": true,
+    "local_pack": false,
+    "local_pack_names": [],
+    "paa": true,
+    "top10": [
+      {
+        "rank": 2,
+        "domain": "pkf-francisclark.co.uk",
+        "url": "https://pkf-francisclark.co.uk/services/tax-advice/stamp-duty-land-tax/",
+        "page_type": "service"
+      },
+      {
+        "rank": 3,
+        "domain": "www.gov.uk",
+        "url": "https://www.gov.uk/find-hmrc-contacts/stamp-duty-land-tax-general-enquiries",
+        "page_type": "other"
+      },
+      {
+        "rank": 4,
+        "domain": "www.patrickcannon.net",
+        "url": "https://www.patrickcannon.net/practice-areas/stamp-duty-land-tax-advisor/",
+        "page_type": "other"
+      },
+      {
+        "rank": 6,
+        "domain": "landtaxadvice.co.uk",
+        "url": "https://landtaxadvice.co.uk/",
+        "page_type": "homepage"
+      },
+      {
+        "rank": 8,
+        "domain": "www.pem.co.uk",
+        "url": "https://www.pem.co.uk/services/tax/stamp-duty-land-tax/",
+        "page_type": "service"
+      },
+      {
+        "rank": 9,
+        "domain": "smh.group",
+        "url": "https://smh.group/stamp-duty-land-tax-and-property-tax-advice-in-harrogate-and-garforth",
+        "page_type": "other"
+      },
+      {
+        "rank": 10,
+        "domain": "www.lawsociety.org.uk",
+        "url": "https://www.lawsociety.org.uk/topics/property/stamp-duty-land-tax",
+        "page_type": "other"
+      },
+      {
+        "rank": 11,
+        "domain": "www.moneyhelper.org.uk",
+        "url": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/everything-you-need-to-know-about-stamp-duty",
+        "page_type": "other"
+      }
+    ]
+  }
+}

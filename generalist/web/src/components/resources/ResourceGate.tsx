@@ -9,8 +9,8 @@
  * fired. When a verified Resend from-domain exists for hollowaydavies.co.uk the
  * flag can be flipped to true with no other code changes.
  *
- * Consent: uses siteConfig.resourceConsentText (in-house wording, NOT the Reflex
- * leadConsentText). Resource downloads are NOT shared with the partner firm.
+ * Consent: uses siteConfig.resourceConsentText (in-house wording, NOT the
+ * partner-network leadConsentText). Resource downloads are NOT shared with the partner firm.
  *
  * Submit: goes through submitGeneralistLead with extras { resource_gate: true }
  * rather than the shared submitLead direct insert, so the server chokepoint can
@@ -84,7 +84,7 @@ export function ResourceGate({
 
   const resource = resourceForTopic(topic);
 
-  // In-house consent wording (NOT Reflex leadConsentText).
+  // In-house consent wording (NOT the partner-network leadConsentText).
   const consentText = `${siteConfig.resourceConsentText} See our Privacy Policy.`;
 
   const validate = useCallback((data: FormData) => {

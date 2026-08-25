@@ -6,6 +6,10 @@ import { useEffect, useId, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
 import { btnPrimary, focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -84,12 +88,24 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
+          {activeCta.header_secondary ? (
+            <Link
+              href={activeCta.header_secondary.href}
+              className={`hidden rounded-full px-3 py-2 text-sm font-medium tracking-tight text-[var(--muted)] transition-colors hover:text-[var(--navy)] md:inline-flex ${focusRing}`}
+              data-cta="header_nav_secondary" data-cta-goal="contact" data-cta-placement="header"
+              data-cta-variant={niche.cta.variant}
+            >
+              {activeCta.header_secondary.label}
+            </Link>
+          ) : null}
           <Link
-            href="/contact"
+            href={activeCta.header_primary.href}
             className={`${btnPrimary} hidden min-h-11 min-w-0 px-4 sm:inline-flex md:min-h-12`}
-            data-cta="header-nav-cta"
+            data-cta="header-nav-cta" data-cta-placement="header"
+            data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}
+            data-cta-variant={niche.cta.variant}
           >
-            Book a call
+            {activeCta.header_primary.label}
           </Link>
 
           <button
@@ -163,13 +179,26 @@ export function SiteHeader() {
             </nav>
             <div className="border-t border-[var(--border)] p-3">
               <Link
-                href="/contact"
+                href={activeCta.header_primary.href}
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
-                data-cta="header-mobile-cta"
+                data-cta="header-mobile-cta" data-cta-placement="header_mobile"
+                data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}
+                data-cta-variant={niche.cta.variant}
               >
-                Book a call
+                {activeCta.header_primary.label}
               </Link>
+              {activeCta.header_secondary ? (
+                <Link
+                  href={activeCta.header_secondary.href}
+                  className={`mt-3 block text-center text-sm font-medium text-[var(--muted)] hover:text-[var(--navy)] ${focusRing}`}
+                  onClick={() => setOpen(false)}
+                  data-cta="header_mobile_secondary" data-cta-goal="contact" data-cta-placement="header_mobile"
+                  data-cta-variant={niche.cta.variant}
+                >
+                  {activeCta.header_secondary.label}
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>

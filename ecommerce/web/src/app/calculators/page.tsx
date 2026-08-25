@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Free Ecommerce Tax Calculators | ${site.name}`,
+  title: `Free Ecommerce Tax Calculators`,
   description: "Free calculators for UK online sellers: seller take-home after tax, VAT threshold tracker and sole trader vs limited company comparison. Built on current HMRC rates.",
   alternates: { canonical: `${site.url}/calculators` },
 };

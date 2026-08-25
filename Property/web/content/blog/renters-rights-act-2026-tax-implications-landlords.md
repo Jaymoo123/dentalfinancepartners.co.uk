@@ -6,7 +6,7 @@ date: "2026-05-24"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Renters' Rights Act 2025: Tax Implications for UK Landlords"
-metaDescription: "RRA 2025 tax position post-1-May-2026: Section 21 abolition, Ground 1A 12-month restriction, s.13 rent-review tax timing, EPC capex split, S.24 interaction."
+metaDescription: "RRA 2025 tax position post-1-May-2026: Section 21 abolition, Ground 1A 12-month restriction, s.13 rent-review tax timing, EPC capex split"
 altText: "UK landlord at a desk with the Renters' Rights Act 2025 printed and a portfolio tax-planning spreadsheet, considering the post-commencement tax position"
 image: "https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 h1: "Renters' Rights Act 2025: Tax Implications for UK Landlords"
@@ -123,7 +123,7 @@ faqs:
 
 <h3>MEES Energy-Efficiency Improvements</h3>
 
-<p>Most improvements (insulation, double glazing, heat-pump installation, structural improvements for thermal performance) are capital expenditure adding to the CGT base cost under TCGA 1992 s.38(1)(b). Like-for-like maintenance is revenue. Grant receipts (ECO4, BUS, GBIS, HUG2) reduce the CGT base-cost addition; grants are not income. The 0% VAT rate on energy-saving materials (in force April 2022 to March 2027) reduces gross costs significantly.</p>
+<p>Most improvements made to meet <a href="/blog/landlord-tax-essentials/mees-regulations-landlords">the MEES minimum energy efficiency standard</a> (insulation, double glazing, heat-pump installation, structural improvements for thermal performance) are capital expenditure adding to the CGT base cost under TCGA 1992 s.38(1)(b). Like-for-like maintenance is revenue. Grant receipts (ECO4, BUS, GBIS, HUG2) reduce the CGT base-cost addition; grants are not income. The 0% VAT rate on energy-saving materials (in force April 2022 to March 2027) reduces gross costs significantly.</p>
 
 <h3>BSA 2022 Building-Safety Remediation</h3>
 

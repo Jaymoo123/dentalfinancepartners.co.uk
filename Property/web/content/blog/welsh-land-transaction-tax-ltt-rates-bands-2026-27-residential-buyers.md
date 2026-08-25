@@ -8,7 +8,7 @@ category: Landlord Tax Essentials
 metaTitle: Welsh LTT Residential Rates and Bands 2026/27 Explained
 metaDescription: 'Check the Welsh LTT residential rates for 2026/27: 0% up to the £225,000 nil band then 6% to 12%, with no first-time-buyer relief. See worked examples.'
 altText: Stone bridge and autumn foliage at Betws-y-Coed in Wales, illustrating Welsh residential property purchases that fall under LTT rather than SDLT
-image: https://images.pexels.com/photos/5602100/pexels-photo-5602100.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+image: https://images.pexels.com/photos/5602100/pexels-photo-5602100.jpeg?auto=compress&cs=tinysrgb&h=440&w=640
 imageCredit:
   photographer: Lisa
   photographer_url: https://www.pexels.com/@fotios-photos

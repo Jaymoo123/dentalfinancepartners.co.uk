@@ -207,7 +207,7 @@ faqs:
 
 <p>Priya chooses Firm B. The all-inclusive fee of £1,740 per year is only £400 more than Firm A, but she gets unlimited VAT returns and quarterly management accounts. The management accounts help her see her gross margin and operating margin each quarter, which she uses to decide whether to reinvest in Google Ads or take a dividend.</p>
 
-<p>Her accountant at Firm B advises her to take a salary of £12,570 (no income tax, no NI) and dividends of £35,000. The dividend tax at the basic rate (8.75%) on £34,500 (after the £500 dividend allowance) is £3,018.75. Total tax on her drawings: £3,018.75. Her company pays corporation tax at 19% on profit after salary, approximately £15,200, giving a corporation tax bill of £2,888. Priya's total tax bill is £5,906.75, which her accountant confirms is optimal for her situation.</p>
+<p>Her accountant at Firm B advises her to take a salary of £12,570 (no income tax, no NI) and dividends of £35,000. The dividend tax at the basic rate (10.75% for 2026/27) on £34,500 (after the £500 dividend allowance) is £3,708.75. Total tax on her drawings: £3,708.75. Her company pays corporation tax at 19% on profit after salary, approximately £15,200, giving a corporation tax bill of £2,888. Priya's total tax bill is £6,596.75, which her accountant confirms is optimal for her situation.</p>
 
 <p>This is the value of a good online accountant UK firm, not just filing returns, but structuring your drawings to minimise tax.</p>
 

@@ -1,0 +1,730 @@
+[
+  {
+    "table_name": "agent_costs",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "ALL",
+        "with_check": "false",
+        "policy_name": "deny_anon_agent_costs"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_agent_costs"
+      }
+    ]
+  },
+  {
+    "table_name": "agent_executions",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "ALL",
+        "with_check": "false",
+        "policy_name": "deny_anon_agent_executions"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_agent_executions"
+      }
+    ]
+  },
+  {
+    "table_name": "api_cost_log",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "apply_attempts",
+    "rls_enabled": true,
+    "policy_count": 0,
+    "policies": []
+  },
+  {
+    "table_name": "bing_query_data",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_optimizations",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "true",
+        "policy_name": "Enable insert for all users"
+      },
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for all users"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_topics_agency",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_topics_dentists",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": [
+          "anon"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "anon_read_blog_topics_dentists"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_blog_topics_dentists"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_topics_generalist",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_topics_medical",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_topics_property",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": [
+          "anon"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "anon_read_blog_topics_property"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_blog_topics_property"
+      }
+    ]
+  },
+  {
+    "table_name": "blog_topics_solicitors",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "content_authority_score",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "dataforseo_competitor_data",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "dataforseo_keyword_data",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "gsc_indexing_issues",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "true",
+        "policy_name": "Enable insert for all users"
+      },
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for all users"
+      }
+    ]
+  },
+  {
+    "table_name": "gsc_page_performance",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "true",
+        "policy_name": "Enable insert for all users"
+      },
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for all users"
+      }
+    ]
+  },
+  {
+    "table_name": "gsc_query_data",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "health_check_submissions",
+    "rls_enabled": true,
+    "policy_count": 0,
+    "policies": []
+  },
+  {
+    "table_name": "leads",
+    "rls_enabled": true,
+    "policy_count": 7,
+    "policies": [
+      {
+        "qual": null,
+        "roles": [
+          "anon"
+        ],
+        "command": "INSERT",
+        "with_check": "true",
+        "policy_name": "anon_can_only_insert_leads"
+      },
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "anon_cannot_select_leads"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_can_read_leads"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "UPDATE",
+        "with_check": "true",
+        "policy_name": "authenticated_can_update_leads"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "DELETE",
+        "with_check": null,
+        "policy_name": "authenticated_can_delete_leads"
+      },
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "anon_cannot_update_leads"
+      },
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "DELETE",
+        "with_check": null,
+        "policy_name": "anon_cannot_delete_leads"
+      }
+    ]
+  },
+  {
+    "table_name": "meta_performance",
+    "rls_enabled": true,
+    "policy_count": 0,
+    "policies": []
+  },
+  {
+    "table_name": "newsletter_subscribers",
+    "rls_enabled": true,
+    "policy_count": 0,
+    "policies": []
+  },
+  {
+    "table_name": "niche_metrics",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "ALL",
+        "with_check": "false",
+        "policy_name": "deny_anon_niche_metrics"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_niche_metrics"
+      }
+    ]
+  },
+  {
+    "table_name": "optimisation_changes",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "optimisation_opportunities",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "published_content",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "ALL",
+        "with_check": "false",
+        "policy_name": "deny_anon_published_content"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_published_content"
+      }
+    ]
+  },
+  {
+    "table_name": "research_cache",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "seo_rankings",
+    "rls_enabled": true,
+    "policy_count": 2,
+    "policies": [
+      {
+        "qual": "false",
+        "roles": [
+          "anon"
+        ],
+        "command": "ALL",
+        "with_check": "false",
+        "policy_name": "deny_anon_seo_rankings"
+      },
+      {
+        "qual": "true",
+        "roles": [
+          "authenticated"
+        ],
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "authenticated_read_seo_rankings"
+      }
+    ]
+  },
+  {
+    "table_name": "session_events",
+    "rls_enabled": false,
+    "policy_count": 0,
+    "policies": []
+  },
+  {
+    "table_name": "session_sessions",
+    "rls_enabled": false,
+    "policy_count": 0,
+    "policies": []
+  },
+  {
+    "table_name": "sites",
+    "rls_enabled": true,
+    "policy_count": 3,
+    "policies": [
+      {
+        "qual": "true",
+        "roles": null,
+        "command": "SELECT",
+        "with_check": null,
+        "policy_name": "Enable read access for all users"
+      },
+      {
+        "qual": null,
+        "roles": null,
+        "command": "INSERT",
+        "with_check": "(auth.role() = 'authenticated'::text)",
+        "policy_name": "Enable insert for authenticated users only"
+      },
+      {
+        "qual": "(auth.role() = 'authenticated'::text)",
+        "roles": null,
+        "command": "UPDATE",
+        "with_check": null,
+        "policy_name": "Enable update for authenticated users only"
+      }
+    ]
+  },
+  {
+    "table_name": "tiktok_creatives",
+    "rls_enabled": false,
+    "policy_count": 0,
+    "policies": []
+  }
+]

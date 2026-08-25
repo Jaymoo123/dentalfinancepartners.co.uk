@@ -1,0 +1,115 @@
+{
+  "candidate_id": "conveyancing-leadmkt-2026-07",
+  "vertical": "conveyancing",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.theconveyancingnetwork.com/index.cfm/our-services/conveyancing-leads/",
+      "excerpt": "Are you a solicitor or licensed conveyancer looking to generate qualified residential conveyancing leads? Online lead generation from our UK conveyancing",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://legalbrokers.com/conveyancing-leads",
+      "excerpt": "Are you a solicitor looking to buy Conveyancing leads ? Please call 0345 603 0708. With over 20 years of experience providing conveyancing leads to solicitors,",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadsforlawyers.co.uk/",
+      "excerpt": "We can deliver your firm up to 750 leads per week. Our leads start from £5 + VAT per lead. We provide sale, purchase and joint sale & purchase leads as ...",
+      "metric": {
+        "price_gbp": 5
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadgenspecialists.co.uk/sector/legal-solicitors-conveyancers/",
+      "excerpt": "Generate high-quality leads for solicitors & conveyancers with compliant, conversion-focused campaigns from Lead Gen Specialists.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.leadsforlawyers.co.uk/conveyancing-leads.html",
+      "excerpt": "Our leads start from £5 + VAT per lead. Where are the leads from ... Simply complete the form below to request a free trial of our conveyancing leads today. Read more",
+      "metric": {
+        "price_gbp": 5
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://lurvodigital.com/resources/how-much-do-conveyancing-leads-cost/",
+      "excerpt": "Conveyancing Leads pricing in the UK generally falls between £10-£22 per lead. The range depends on several factors including exclusivity, qualification depth, ...",
+      "metric": {
+        "price_gbp": 22
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.magnifylab.com/blog/law-firm-lead-generation-guide/",
+      "excerpt": "Here are some strategies to generate new conveyancing leads: SEO. Keywords such as “conveyancing solicitor UK,” “home buying solicitor,” and “conveyancing ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://partners.first4lawyers.com/conveyancing",
+      "excerpt": "Get high-quality conveyancing leads for solicitors with expert property law lead generation. reliable, pay-per-lead solutions tailored to your needs. only pay ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://legal-case-leads.co.uk/conveyancing-leads-for-solicitors/",
+      "excerpt": "At Legal Case Leads we provide a solution to this problem by empowring your law firm to cultivate it's own conveyancing leads using paid marketing strategies. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://todaysconveyancer.co.uk/why-should-conveyancers-use-lead-generation/",
+      "excerpt": "28 May 2014 — As conveyancing is not restricted to locality, your firm is able to receive leads from all over England, Wales and/or Scotland. For firms not ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://fractional-cmo.com.au/blog/conveyancing-lead-generation-strategies",
+      "excerpt": "19 Nov 2025 — Cost per lead varies by location and competition: $50-150 for residential conveyancing, $200-500 for commercial property. Focus on lead quality ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "conveyancing",
+    "conveyancing lead generation strategies for law firms",
+    "conveyancing leads",
+    "conveyancing leads - new business enquiries for law firms",
+    "conveyancing leads for solicitors",
+    "how much do conveyancing leads cost?",
+    "law firm lead generation: 6 proven strategies to succeed",
+    "lead generation for conveyancing law firms",
+    "leads for lawyers - new business lead generation for law ...",
+    "legal, solicitors & conveyancers – expert lead generation",
+    "residential conveyancing leads for solicitors and licensed ...",
+    "why should conveyancers use lead generation?"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK conveyancing providers already paying per lead",
+    "proof": "10 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

@@ -5,19 +5,20 @@
   "competitors": [
     "ukpropertyaccountants.co.uk",
     "uklandlordtax.co.uk",
-    "landlordstax.co.uk",
-    "landlordaccountants.co.uk",
-    "dnsassociates.co.uk",
-    "taxaccountant.co.uk",
-    "propertyaccountant.co.uk",
-    "gorillaaccounting.com",
-    "geraldedelman.com",
+    "provestor.co.uk",
+    "landlordstudio.com",
     "thp.co.uk",
+    "optimiseaccountants.co.uk",
+    "landlordstax.co.uk",
+    "taxfix.com",
+    "getground.co.uk",
+    "propertyhub.net",
+    "dnsassociates.co.uk",
     "rossmartin.co.uk",
-    "mmba.co.uk",
-    "taxinsider.co.uk",
-    "propertytax.co.uk",
-    "gmprofessionalaccountants.co.uk"
+    "protaxaccountant.co.uk",
+    "landlordzone.co.uk",
+    "taxaccountant.co.uk",
+    "geraldedelman.com"
   ],
   "content_hints": [
     "/blog/",
@@ -359,5 +360,274 @@
         "bookkeeping"
       ]
     ]
+  ],
+  "lane_negative_tokens": [
+    "for sale",
+    "for rent",
+    "to rent",
+    "to let",
+    "for let",
+    "rightmove",
+    "zoopla",
+    "onthemarket",
+    "purplebricks",
+    "login",
+    "sign in",
+    "near me",
+    "estate agent",
+    "estate agents",
+    "houses for",
+    "flats for",
+    "homes for",
+    "property for sale",
+    "auction house",
+    "jobs",
+    "salary",
+    "reviews",
+    "log into",
+    "sign into",
+    "phone number",
+    "helpline",
+    "contact hmrc",
+    "childcare",
+    "take home",
+    "minimum wage",
+    "personal tax account",
+    "government gateway"
+  ],
+  "lanes": [
+    {
+      "_doc": "Specialism-lane taxonomy for optimisation_engine/discovery/lane_map.py. Tokens derived from topic_buckets above (bucket name noted per lane) plus a few additions named explicitly in the lane brief (LBTT/LTT, expat, EPC/EICR/gas/renters-rights) that had no existing bucket. landlord_ops is the adjacency catch-all for buckets with no dedicated specialism lane (buy-to-let essentials, development, portfolio, capital allowances, self-assessment, leasehold, rent-to-rent remainder, accountant services).",
+      "key": "mtd",
+      "label": "Making Tax Digital (MTD) for landlords",
+      "tokens": [
+        "mtd",
+        "making-tax-digital",
+        "quarterly",
+        "itsa",
+        "digital-record",
+        "basis-period"
+      ]
+    },
+    {
+      "key": "section24",
+      "label": "Section 24 & finance cost restriction",
+      "tokens": [
+        "section-24",
+        "s24",
+        "finance-cost",
+        "mortgage-interest",
+        "tax-credit",
+        "finance-cost-restriction",
+        "basic-rate-reduction"
+      ]
+    },
+    {
+      "key": "cgt_disposal",
+      "label": "Capital gains tax & disposal (incl. BADR)",
+      "tokens": [
+        "capital-gains",
+        "cgt",
+        "private-residence-relief",
+        "prr",
+        "lettings-relief",
+        "gift",
+        "disposal",
+        "principal-private-residence",
+        "badr",
+        "business-asset-disposal",
+        "entrepreneurs-relief",
+        "10-percent",
+        "qualifying-period",
+        "trading-company"
+      ]
+    },
+    {
+      "key": "incorporation_structures",
+      "label": "Incorporation & SPV structures",
+      "tokens": [
+        "incorporation",
+        "incorporate",
+        "spv",
+        "limited-company",
+        "ltd",
+        "dividend",
+        "salary-vs-dividend",
+        "profit-extraction",
+        "director-loan",
+        "partnership-vs-ltd"
+      ]
+    },
+    {
+      "key": "sdlt",
+      "label": "SDLT & property purchase tax (incl. LBTT/LTT)",
+      "tokens": [
+        "sdlt",
+        "stamp-duty",
+        "surcharge",
+        "additional-dwellings",
+        "additional-dwelling",
+        "first-time-buyer",
+        "ltt",
+        "lbtt",
+        "land-transaction",
+        "mdr",
+        "multiple-dwellings",
+        "scotland",
+        "scottish",
+        "welsh",
+        "wales"
+      ]
+    },
+    {
+      "key": "non_resident",
+      "label": "Non-resident landlord tax (incl. expat)",
+      "tokens": [
+        "non-resident",
+        "nrls",
+        "nrl",
+        "overseas-landlord",
+        "overseas",
+        "expat",
+        "withholding-tax",
+        "non-resident-landlord-scheme",
+        "double-tax-treaty"
+      ]
+    },
+    {
+      "key": "fhl_holiday_lets",
+      "label": "Furnished holiday lets & short-term letting",
+      "tokens": [
+        "furnished-holiday-let",
+        "fhl",
+        "holiday-let",
+        "qualifying-days",
+        "availability-days",
+        "actual-days",
+        "loss-relief",
+        "airbnb",
+        "short-let",
+        "serviced-accommodation"
+      ]
+    },
+    {
+      "key": "iht_estate",
+      "label": "Inheritance tax & estate planning",
+      "tokens": [
+        "inheritance-tax",
+        "iht",
+        "business-property-relief",
+        "bpr",
+        "agricultural-property-relief",
+        "apr",
+        "trust",
+        "nil-rate-band",
+        "residence-nil-rate-band"
+      ]
+    },
+    {
+      "key": "vat_commercial",
+      "label": "VAT & commercial/mixed-use property",
+      "tokens": [
+        "commercial",
+        "mixed-use",
+        "option-to-tax",
+        "vat",
+        "partial-exemption",
+        "business-rates"
+      ]
+    },
+    {
+      "key": "compliance_licensing",
+      "label": "Compliance & licensing (EPC/EICR/gas/HMO/renters rights)",
+      "tokens": [
+        "hmo",
+        "house-in-multiple-occupation",
+        "multi-let",
+        "room-by-room",
+        "landlord-licensing",
+        "epc",
+        "eicr",
+        "gas-safety",
+        "gas-certificate",
+        "licensing",
+        "selective-licensing",
+        "renters-rights",
+        "renters-reform",
+        "rra",
+        "tenancy",
+        "eviction",
+        "section-21",
+        "section-8"
+      ]
+    },
+    {
+      "key": "finance_mortgages",
+      "label": "Mortgage interest & finance",
+      "tokens": [
+        "mortgage",
+        "remortgage",
+        "bridging-loan",
+        "commercial-mortgage",
+        "buy-to-let-mortgage",
+        "interest-only",
+        "debt-financing"
+      ]
+    },
+    {
+      "key": "landlord_ops",
+      "label": "Landlord operations & adjacency",
+      "tokens": [
+        "buy-to-let",
+        "landlord-tax",
+        "rental-income",
+        "allowable-expenses",
+        "landlord-expenses",
+        "wear-and-tear",
+        "replacement-relief",
+        "developer",
+        "development",
+        "trading-stock",
+        "development-tax",
+        "build-to-sell",
+        "flip",
+        "renovation",
+        "portfolio",
+        "portfolio-landlord",
+        "portfolio-management",
+        "multi-property",
+        "restructure",
+        "family-investment-company",
+        "capital-allowance",
+        "annual-investment-allowance",
+        "aia",
+        "fixtures",
+        "integral-features",
+        "full-expensing",
+        "writing-down",
+        "self-assessment",
+        "tax-return",
+        "sa105",
+        "payments-on-account",
+        "pension-contribution",
+        "landlord-self-assessment",
+        "leasehold",
+        "freehold",
+        "ground-rent",
+        "service-charge",
+        "right-to-manage",
+        "lease-extension",
+        "enfranchisement",
+        "rent-to-rent",
+        "subletting",
+        "guaranteed-rent",
+        "property-accountant",
+        "landlord-accountant",
+        "property-tax-advice",
+        "specialist-accountant",
+        "accounts",
+        "bookkeeping"
+      ]
+    }
   ]
 }

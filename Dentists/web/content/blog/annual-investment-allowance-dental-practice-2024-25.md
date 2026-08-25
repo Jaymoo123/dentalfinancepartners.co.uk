@@ -73,7 +73,7 @@ imageCredit:
 <p>Several categories of expenditure are explicitly excluded from the AIA. Knowing these can save you from making a claim that HMRC will later reject.</p>
 
 <ul>
-<li><strong>Cars</strong>: The AIA does not apply to cars. You must claim capital allowances on cars using the standard writing-down allowance pool (18% or 6% per year depending on CO2 emissions) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</li>
+<li><strong>Cars</strong>: The AIA does not apply to cars. You must claim capital allowances on cars using the standard writing-down allowance pool (18% for 2024/25, falling to 14% from April 2026, or 6% per year depending on CO2 emissions) <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</li>
 <li><strong>Assets used partly for non-business purposes</strong>: If you buy a piece of equipment that you use 60% for the practice and 40% for personal use, the AIA is not available. You must claim on the business-use proportion using the normal writing-down allowance <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</li>
 <li><strong>Assets provided for the use of a person who is not a director or employee</strong>: For example, if you buy a laptop for your spouse who is not employed by the practice, the AIA does not apply <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</li>
 <li><strong>Assets used in a ring fence trade</strong>: This is not relevant for dental practices but applies to oil and gas extraction businesses.</li>
@@ -88,7 +88,7 @@ imageCredit:
 
 <p>For a <strong>limited company</strong>, the claim goes in the corporation tax return (CT600). The capital allowances computation is submitted as part of the company's tax computation, usually prepared by your accountant.</p>
 
-<p>If your total qualifying expenditure in the year exceeds £1 million, you can allocate the AIA to the assets that attract the lowest writing-down allowance rates first. This is a tax planning point: allocate the AIA to long-life assets or integral features (which normally get only 6% per year) and leave short-life assets (which get 18% per year) in the main pool. Your <a href="/services/dental-accountants">dental accountant</a> can model this for you.</p>
+<p>If your total qualifying expenditure in the year exceeds £1 million, you can allocate the AIA to the assets that attract the lowest writing-down allowance rates first. This is a tax planning point: allocate the AIA to long-life assets or integral features (which normally get only 6% per year) and leave short-life assets (which get the main-pool rate, 18% for 2024/25 and 14% from April 2026) in the main pool. Your <a href="/services/dental-accountants">dental accountant</a> can model this for you.</p>
 
 <h2>Worked Example: AIA for a Single-Handed Principal</h2>
 
@@ -105,7 +105,7 @@ imageCredit:
 
 <p>Total qualifying expenditure: £59,000. This is well within the £1 million AIA limit. Dr. Patel claims 100% relief on all £59,000 in her 2024/25 Self Assessment. Her taxable profit is reduced by £59,000, saving her income tax at her marginal rate (40% in this case) plus Class 4 National Insurance (6% on profits between £12,570 and £50,270, 2% above). The total tax saved is approximately £27,140.</p>
 
-<p>If Dr. Patel had instead bought a car for £30,000, that would not qualify for the AIA. She would claim writing-down allowances on the car at 18% per year, giving her only £5,400 relief in year one.</p>
+<p>If Dr. Patel had instead bought a car for £30,000, that would not qualify for the AIA. She would claim writing-down allowances on the car at the 2024/25 main-pool rate of 18% per year, giving her only £5,400 relief in year one. For a purchase made in 2026/27 the same car would attract the reduced 14% rate, or £4,200 in year one.</p>
 
 <h2>Worked Example: AIA for a Multi-Site Group</h2>
 
@@ -135,7 +135,7 @@ imageCredit:
 
 <h2>How the AIA Fits Into Your Overall Tax Strategy</h2>
 
-<p>The AIA is one of several capital allowances reliefs available to dental practices. Others include the <strong>writing-down allowance</strong> (18% per year on the main pool, 6% on the special rate pool), the <strong>structures and buildings allowance</strong> (3% per year), and <strong>full expensing</strong> for companies (100% on new assets, no cap).</p>
+<p>The AIA is one of several capital allowances reliefs available to dental practices. Others include the <strong>writing-down allowance</strong> (18% per year on the main pool for 2024/25, cut to 14% from April 2026 by Finance Act 2026 section 28, and 6% on the special rate pool), the <strong>structures and buildings allowance</strong> (3% per year), and <strong>full expensing</strong> for companies (100% on new assets, no cap).</p>
 
 <p>For most dental practices, the AIA is the most generous relief because it gives 100% upfront relief up to £1 million. If your annual equipment spend is below £1 million, you will likely use the AIA exclusively. If you spend more than £1 million in a year, the excess goes into the main pool or special rate pool, attracting writing-down allowances in future years.</p>
 

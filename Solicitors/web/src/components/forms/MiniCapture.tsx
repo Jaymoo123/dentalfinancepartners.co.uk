@@ -29,27 +29,22 @@ import { submitSolicitorLead } from "@/lib/leads/submit-client";
 // Site-level config (built once, stable reference across renders)
 // ---------------------------------------------------------------------------
 
-/** Firm-type segment options for the multi-step flow. */
-const ROLE_OPTIONS: MiniCaptureConfig["leadForm"]["roleOptions"] = [
-  { value: "LLP partner", label: "LLP partner" },
-  { value: "Sole practitioner", label: "Sole practitioner" },
-  { value: "Partnership", label: "Partnership" },
-  { value: "Barrister", label: "Barrister" },
-  { value: "Other", label: "Other" },
-];
-
+// Role options come from niche.config.json, the same source LeadForm reads.
+// The hardcoded list here (LLP partner / Sole practitioner / Partnership /
+// Barrister / Other) had drifted from it and dropped "Practice manager/COFA",
+// which is the dominant reader role on the SRA accounts-rules and
+// VAT-compliance posts that carry most of this site's traffic. A reader who
+// cannot describe themselves at step 1 abandons, which is where the funnel was
+// losing them (380 form views to 26 starts in the 30 days to 2026-08-03,
+// against Property's 1,717 to 362 on identical mechanics).
 const miniCaptureConfig: MiniCaptureConfig = {
   sourceIdentifier: niche.content_strategy.source_identifier, // "solicitors"
   consentText: siteConfig.leadConsentText,
   nicheId: niche.niche_id, // "solicitors"
   leadForm: {
-    roleLabel: "Firm type",
-    roleOptions: ROLE_OPTIONS,
-    placeholders: {
-      name: niche.lead_form.placeholders.name,
-      email: niche.lead_form.placeholders.email,
-      phone: niche.lead_form.placeholders.phone,
-    },
+    roleLabel: niche.lead_form.role_label,
+    roleOptions: niche.lead_form.role_options,
+    placeholders: niche.lead_form.placeholders,
   },
 };
 

@@ -2,6 +2,7 @@
 title: "How to Become a Property Accountant: Complete UK Career Guide"
 slug: "how-to-become-property-accountant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-become-property-accountant"
+noindex: true
 date: "2026-04-01"
 dateModified: "2026-05-29"
 author: "Property Tax Partners Editorial Team"

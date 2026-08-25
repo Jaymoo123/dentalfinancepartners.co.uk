@@ -298,7 +298,7 @@ faqs:
 <ul>
 <li>Home office costs (a proportion of rent, utilities, broadband, council tax)</li>
 <li>Business use of your phone (a percentage of your bill)</li>
-<li>Travel costs (mileage at 45p per mile for the first 10,000 business miles, 25p thereafter)</li>
+<li>Travel costs (mileage at 55p per mile for the first 10,000 business miles from 6 April 2026, 25p thereafter; 45p applied up to 2025/26)</li>
 <li>Professional subscriptions and training courses</li>
 <li>Bank charges and interest on business loans</li>
 <li>Software subscriptions (Adobe, Microsoft 365, Xero, etc.)</li>

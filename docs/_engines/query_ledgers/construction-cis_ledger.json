@@ -1,0 +1,6064 @@
+{
+  "metadata": {
+    "site_key": "construction-cis",
+    "generated": "2026-07-17",
+    "gsc_max_date": "2026-07-15",
+    "gsc_lag_days": 2,
+    "pages": 72,
+    "action_counts": {
+      "expand": 1,
+      "ambiguous": 52,
+      "healthy": 16,
+      "consolidate_candidate": 3
+    },
+    "sampling_loss_pct": null,
+    "expected_ctr_curve": {
+      "1": {
+        "expected_ctr": 0.00464,
+        "impressions": 359,
+        "interpolated": true
+      },
+      "2": {
+        "expected_ctr": 0.00464,
+        "impressions": 267,
+        "interpolated": true
+      },
+      "3": {
+        "expected_ctr": 0.00464,
+        "impressions": 646,
+        "interpolated": false
+      },
+      "4": {
+        "expected_ctr": 0.00429,
+        "impressions": 699,
+        "interpolated": false
+      },
+      "5": {
+        "expected_ctr": 0.00429,
+        "impressions": 963,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "6": {
+        "expected_ctr": 0.00094,
+        "impressions": 1060,
+        "interpolated": false
+      },
+      "7": {
+        "expected_ctr": 0.00094,
+        "impressions": 1016,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "8": {
+        "expected_ctr": 0.00066,
+        "impressions": 1506,
+        "interpolated": false
+      },
+      "9": {
+        "expected_ctr": 0.00066,
+        "impressions": 1663,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "10": {
+        "expected_ctr": 0.00066,
+        "impressions": 645,
+        "interpolated": false,
+        "monotonic_clipped": true
+      },
+      "11-15": {
+        "expected_ctr": 0.00051,
+        "impressions": 1976,
+        "interpolated": false
+      },
+      "16-20": {
+        "expected_ctr": 0.0,
+        "impressions": 2652,
+        "interpolated": false
+      },
+      "21+": {
+        "expected_ctr": 0.0,
+        "impressions": 33508,
+        "interpolated": false,
+        "monotonic_clipped": true
+      }
+    },
+    "gap_wave_slugs": [],
+    "notes": [
+      "meta batch-2 hold source = optimisation_changes title_meta_rewrite rows shipped 2026-07-05..2026-07-12 (batch 2 = solicitors 19 / generalist 12 / dentists 10 per SERP_META_PROGRAM.md; property had no batch-2 pages).",
+      "property miniform hold covers conversion-surface routes ('/calculators', '/tools', '/resources', '/thank-you', '/contact') while the deploy_watch miniform gates are pending."
+    ]
+  },
+  "pages": [
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/roofers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/roofers"
+      ],
+      "impressions_90d": 352,
+      "clicks_90d": 0,
+      "weighted_position_90d": 18.64,
+      "band_mix": {
+        "16-20": 0.665,
+        "21+": 0.335
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.061,
+      "top_queries": [
+        {
+          "query": "accountants for roofers",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 22,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 82,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 118,
+            "clicks": 0,
+            "position": 15.9
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "roofers accountant",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 26,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 83,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 117,
+            "clicks": 0,
+            "position": 22.09
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountant for roofers",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 29,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 81,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 116,
+            "clicks": 0,
+            "position": 17.81
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis roofing",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 35.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "expand",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand"
+      ],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations"
+      ],
+      "impressions_90d": 148,
+      "clicks_90d": 0,
+      "weighted_position_90d": 68.77,
+      "band_mix": {
+        "16-20": 0.007,
+        "21+": 0.993
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.723,
+      "top_queries": [
+        {
+          "query": "cis accountant cornwall",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 14,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 18,
+            "clicks": 0,
+            "position": 75.34
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants cornwall",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 18,
+            "clicks": 0,
+            "position": 73.83
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant cannock",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 83.85
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant norfolk",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 13,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 84.93
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax return bristol",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 83.7
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants near me",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 48.29
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant near me",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 47.56
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant peterborough",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 89.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "specialist cis accountants stoke-on-trent",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 32.83
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant leeds",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 32.54
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [
+        {
+          "query": "cis accountant cannock",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/contact",
+            "https://tradetaxspecialists.co.uk/locations/birmingham"
+          ]
+        },
+        {
+          "query": "cis accountants cornwall",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/contact"
+          ]
+        },
+        {
+          "query": "cis tax return bristol",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/locations/bristol"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "consolidate_candidate",
+        "expand"
+      ],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/software-and-tools/cis-payroll-software-guide",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/software-and-tools/cis-payroll-software-guide"
+      ],
+      "impressions_90d": 133,
+      "clicks_90d": 0,
+      "weighted_position_90d": 16.39,
+      "band_mix": {
+        "2": 0.008,
+        "5": 0.09,
+        "6": 0.015,
+        "9": 0.008,
+        "11-15": 0.368,
+        "16-20": 0.008,
+        "21+": 0.504
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": 0.866,
+      "top_queries": [
+        {
+          "query": "cis software free",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 35,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 44,
+            "clicks": 0,
+            "position": 21.24
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis payroll software",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 16,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 16,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 32,
+            "clicks": 0,
+            "position": 12.03
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "cis pay & bill software",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 22.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "payroll software for cis",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 12.88
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "top cis payroll management software in 2026",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 12,
+            "clicks": 0,
+            "position": 5.19
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00429,
+          "ctr_gap": -0.00429
+        },
+        {
+          "query": "cis pay & bill platform",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 26.13
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis payroll software free",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 5.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        },
+        {
+          "query": "contractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "cis agency software",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 20.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "best software for managing cis payroll",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 9.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [
+        "expand",
+        "refresh"
+      ],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/cis-refund",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/cis-refund"
+      ],
+      "impressions_90d": 65,
+      "clicks_90d": 0,
+      "weighted_position_90d": 62.7,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "claim cis refund",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 81.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis refund",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 47.37
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax refund",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 68.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis reclaim",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 60.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis refunds service",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 26.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis rebate",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 77.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "reclaim cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 77.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis refunds",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 41.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax refund services",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 26.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "hmrc cis refund",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 49.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/london",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/london"
+      ],
+      "impressions_90d": 46,
+      "clicks_90d": 0,
+      "weighted_position_90d": 50.43,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.333,
+      "top_queries": [
+        {
+          "query": "cis tax specialist near me",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 37.09
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax services near me",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 36.71
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis returns london",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 35.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax return accountants",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 93.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax specialist wallington",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 48.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants london",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 75.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax specialist london",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 36.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant london",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 60.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax specialist wimbledon",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 49.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant near me",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 31.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/cis-refund",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/cis-refund"
+      ],
+      "impressions_90d": 41,
+      "clicks_90d": 0,
+      "weighted_position_90d": 54.14,
+      "band_mix": {
+        "5": 0.024,
+        "21+": 0.976
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.273,
+      "top_queries": [
+        {
+          "query": "cis refunds service",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 20,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 25,
+            "clicks": 0,
+            "position": 45.79
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax refund services",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 69.92
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "yes",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 5.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00429,
+          "ctr_gap": -0.00429
+        },
+        {
+          "query": "cis reclaim services",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 80.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "reclaim cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 81.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/cis-deduction",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/cis-deduction"
+      ],
+      "impressions_90d": 35,
+      "clicks_90d": 0,
+      "weighted_position_90d": 73.6,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis deductions",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 56.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax deduction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 88.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis payment and deduction statement",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 60.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is cis tax deduction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 86.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis deduction certificate",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 73.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis deduction form",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 60.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis payment and deduction statement explained",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 84.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis standard rate deduction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 74.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is a cis deduction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 81.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis payment and deduction certificate",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 70.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/birmingham",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/birmingham"
+      ],
+      "impressions_90d": 29,
+      "clicks_90d": 0,
+      "weighted_position_90d": 64.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 83.0,
+      "top_queries": [
+        {
+          "query": "construction accountants west midlands",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 40.14
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountant for tradesmen west midlands",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 55.17
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant cannock",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 94.6
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax advice coventry",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 63.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountants for contractors birmingham",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 70.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "construction tax specialists",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 60.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant near me",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 83.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "contractor accountants birmingham",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 79.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "construction industry scheme accountants coventry",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 76.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [
+        {
+          "query": "cis accountant cannock",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/contact",
+            "https://tradetaxspecialists.co.uk/locations"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "consolidate_candidate",
+      "action_source": "deterministic",
+      "owner_approval_required": true,
+      "signals": [
+        "consolidate_candidate"
+      ],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/drainage-contractors",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/drainage-contractors"
+      ],
+      "impressions_90d": 25,
+      "clicks_90d": 0,
+      "weighted_position_90d": 49.77,
+      "band_mix": {
+        "11-15": 0.32,
+        "21+": 0.68
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.412,
+      "top_queries": [
+        {
+          "query": "drainage contractors insurance",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 11,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 68.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "drainage capital allowances",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 8,
+            "clicks": 0,
+            "position": 12.44
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "drain contractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 46.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/bristol",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/bristol"
+      ],
+      "impressions_90d": 25,
+      "clicks_90d": 0,
+      "weighted_position_90d": 33.42,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.412,
+      "top_queries": [
+        {
+          "query": "cis tax return bristol",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 8,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 17,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 25,
+            "clicks": 0,
+            "position": 33.42
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [
+        {
+          "query": "cis tax return bristol",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/locations"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "consolidate_candidate",
+      "action_source": "deterministic",
+      "owner_approval_required": true,
+      "signals": [
+        "consolidate_candidate"
+      ],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-advanced/cis-limited-company-reclaim",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-advanced/cis-limited-company-reclaim"
+      ],
+      "impressions_90d": 22,
+      "clicks_90d": 0,
+      "weighted_position_90d": 77.4,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.125,
+      "top_queries": [
+        {
+          "query": "cis reclaim services",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 15,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 77.18
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis reclaims and tax",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 82.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-refunds/cis-self-assessment-complete-guide",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-refunds/cis-self-assessment-complete-guide"
+      ],
+      "impressions_90d": 22,
+      "clicks_90d": 0,
+      "weighted_position_90d": 80.12,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.526,
+      "top_queries": [
+        {
+          "query": "self-assessment for cis subcontractors",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 19,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 22,
+            "clicks": 0,
+            "position": 80.12
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/carpenters",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/carpenters"
+      ],
+      "impressions_90d": 21,
+      "clicks_90d": 0,
+      "weighted_position_90d": 52.79,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": -0.062,
+      "top_queries": [
+        {
+          "query": "accounting for joiners",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 16,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 52.79
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-refunds/cis-tax-refund-how-to-claim",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-refunds/cis-tax-refund-how-to-claim"
+      ],
+      "impressions_90d": 19,
+      "clicks_90d": 0,
+      "weighted_position_90d": 62.89,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.071,
+      "top_queries": [
+        {
+          "query": "cis reclaims and tax",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 12,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 17,
+            "clicks": 0,
+            "position": 61.12
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis refunds colchester",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 78.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/bricklayers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/bricklayers"
+      ],
+      "impressions_90d": 18,
+      "clicks_90d": 0,
+      "weighted_position_90d": 31.98,
+      "band_mix": {
+        "1": 0.333,
+        "16-20": 0.333,
+        "21+": 0.333
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": 3.714,
+      "top_queries": [
+        {
+          "query": "accountants for bricklayers",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        },
+        {
+          "query": "bricklayer accountants",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 16.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "tax laws for bricklayers small businesses",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 78.61
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/contact",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/contact"
+      ],
+      "impressions_90d": 16,
+      "clicks_90d": 0,
+      "weighted_position_90d": 79.12,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.364,
+      "top_queries": [
+        {
+          "query": "cis accountant cannock",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 73.82
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants cornwall",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 90.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant leeds",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 93.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [
+        {
+          "query": "cis accountant cannock",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/locations",
+            "https://tradetaxspecialists.co.uk/locations/birmingham"
+          ]
+        },
+        {
+          "query": "cis accountants cornwall",
+          "partners": [
+            "https://tradetaxspecialists.co.uk/locations"
+          ]
+        }
+      ],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "consolidate_candidate",
+      "action_source": "deterministic",
+      "owner_approval_required": true,
+      "signals": [
+        "consolidate_candidate"
+      ],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/hull",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/hull"
+      ],
+      "impressions_90d": 15,
+      "clicks_90d": 0,
+      "weighted_position_90d": 69.47,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "dormant",
+      "trajectory_delta_pct": -0.538,
+      "top_queries": [
+        {
+          "query": "vat services hull",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 6,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 70.86
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "hull vat services",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 79.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "vat services in hull",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 60.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax specialist wimbledon",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 21.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis software hull",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 88.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/",
+      "variants": [
+        "https://tradetaxspecialists.co.uk/",
+        "https://www.tradetaxspecialists.co.uk/"
+      ],
+      "impressions_90d": 14,
+      "clicks_90d": 0,
+      "weighted_position_90d": 78.46,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "dormant",
+      "trajectory_delta_pct": -0.5,
+      "top_queries": [
+        {
+          "query": "cis tax return accountants",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 9,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 80.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax return accountant",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 87.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax specialist",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 34.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/stoke-on-trent",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/stoke-on-trent"
+      ],
+      "impressions_90d": 14,
+      "clicks_90d": 0,
+      "weighted_position_90d": 44.94,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.2,
+      "top_queries": [
+        {
+          "query": "cis returns stoke",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 44.94
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-basics/what-is-a-cis-accountant",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-basics/what-is-a-cis-accountant"
+      ],
+      "impressions_90d": 13,
+      "clicks_90d": 0,
+      "weighted_position_90d": 28.6,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "improving",
+      "trajectory_delta_pct": 15.5,
+      "top_queries": [
+        {
+          "query": "cis contractors accountant",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 10,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 12,
+            "clicks": 0,
+            "position": 28.15
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis subcontractor accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 34.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/employment-status",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/employment-status"
+      ],
+      "impressions_90d": 11,
+      "clicks_90d": 0,
+      "weighted_position_90d": 89.05,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "employment status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 90.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "different employment status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 93.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "employee status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 92.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "employment status options",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 95.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "employment statuses",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 96.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "i am a contractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 86.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "is a sub contractor self employed",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 89.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "status in employment",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 85.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "working status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 72.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/gross-payment-status",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/gross-payment-status"
+      ],
+      "impressions_90d": 11,
+      "clicks_90d": 0,
+      "weighted_position_90d": 78.91,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis gross payment status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 69.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "apply for cis gross status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 72.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis gross payment",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 74.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis gross payments",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 81.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gross cis status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 97.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gross payment",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 94.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gross payment status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 97.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gross payment status cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 71.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gross status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 69.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "gross status cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 74.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "healthy",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/software-and-tools",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/software-and-tools"
+      ],
+      "impressions_90d": 8,
+      "clicks_90d": 0,
+      "weighted_position_90d": 71.12,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "stable",
+      "trajectory_delta_pct": 0.2,
+      "top_queries": [
+        {
+          "query": "xero cis",
+          "trajectory": "stable",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 68.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accounting software",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 83.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis xero",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 68.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "freeagent cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 61.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-refunds",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-refunds"
+      ],
+      "impressions_90d": 7,
+      "clicks_90d": 0,
+      "weighted_position_90d": 83.18,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis deduction reclaimed",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 82.75
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax refund",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 91.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis refund",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 75.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/plasterers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/plasterers"
+      ],
+      "impressions_90d": 7,
+      "clicks_90d": 0,
+      "weighted_position_90d": 24.57,
+      "band_mix": {
+        "16-20": 0.286,
+        "21+": 0.714
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "plasterers accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 28.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "accountant for plasterers",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 16.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary"
+      ],
+      "impressions_90d": 7,
+      "clicks_90d": 0,
+      "weighted_position_90d": 64.86,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": 1.25,
+      "top_queries": [
+        {
+          "query": "tax code section 179",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 80.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "sic code 49410",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 40.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis305",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 61.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "interpretation note 17",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 78.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis304",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 48.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis 305",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 66.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/kitchen-fitters",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/kitchen-fitters"
+      ],
+      "impressions_90d": 6,
+      "clicks_90d": 0,
+      "weighted_position_90d": 34.36,
+      "band_mix": {
+        "2": 0.167,
+        "21+": 0.833
+      },
+      "trajectory": "dormant",
+      "trajectory_delta_pct": -0.4,
+      "top_queries": [
+        {
+          "query": "what happens if kitchen suppliers subcontract fitters?",
+          "trajectory": "dormant",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 5,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 40.84
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what about expenses",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/verification-number",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/verification-number"
+      ],
+      "impressions_90d": 6,
+      "clicks_90d": 0,
+      "weighted_position_90d": 46.17,
+      "band_mix": {
+        "7": 0.167,
+        "21+": 0.833
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis registration check",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 74.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis verification number",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 7.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00094,
+          "ctr_gap": -0.00094
+        },
+        {
+          "query": "cis number",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 49.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "find my cis number",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 56.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "how do i find my cis number",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 43.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "verify subcontractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 48.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/multi-trade-building-firms",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/multi-trade-building-firms"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": 77.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": 11.0,
+      "top_queries": [
+        {
+          "query": "cis subcontractor accountant",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 4,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 82.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "bnf cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 56.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/tilers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/tilers"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": 10.35,
+      "band_mix": {
+        "9": 0.4,
+        "11-15": 0.6
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "tilers accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 11.25
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        },
+        {
+          "query": "accountant for tilers",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 9.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/leicester",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/leicester"
+      ],
+      "impressions_90d": 5,
+      "clicks_90d": 0,
+      "weighted_position_90d": 84.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "construction accountants near me",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 82.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountant near me",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 80.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants cornwall",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 95.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/bridging-software",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/bridging-software"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": 65.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "bridging software hmrc",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 76.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "mtd itsa bridging",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 48.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "mtd itsa bridging software",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 60.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/retention-payments",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/retention-payments"
+      ],
+      "impressions_90d": 4,
+      "clicks_90d": 0,
+      "weighted_position_90d": 16.0,
+      "band_mix": {
+        "16-20": 1.0
+      },
+      "trajectory": "improving",
+      "trajectory_delta_pct": 2.0,
+      "top_queries": [
+        {
+          "query": "subcontractor tax retention",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 16.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/software-and-tools/xero-cis-guide",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/software-and-tools/xero-cis-guide"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 21.33,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "improving",
+      "trajectory_delta_pct": 5.0,
+      "top_queries": [
+        {
+          "query": "xero construction industry scheme",
+          "trajectory": "improving",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 21.33
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/calculators/cis-deduction-calculator",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/calculators/cis-deduction-calculator"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 76.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "how to work out cis tax deduction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 79.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis deduction calculation",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 70.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/calculators/cis-take-home-calculator",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/calculators/cis-take-home-calculator"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 73.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "how to work out cis tax deduction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 69.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis deduction calculation",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 80.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 11.67,
+      "band_mix": {
+        "8": 0.667,
+        "16-20": 0.333
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis trade",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 8.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "carpentry",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 18.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/civil-engineers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/civil-engineers"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 17.67,
+      "band_mix": {
+        "16-20": 1.0
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "accountant for structural engineer",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 3,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 17.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/citb-levy",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/citb-levy"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 61.67,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "what is the citb levy",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 59.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "what is citb levy",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 67.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/coventry",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/coventry"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 27.33,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": 0.5,
+      "top_queries": [
+        {
+          "query": "cis tax advice coventry",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 24.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis accountants coventry",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 22.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "subcontractor tax returns coventry",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 36.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/sheffield",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/sheffield"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 68.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "construction accountants",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 69.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "construction accountants near me",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 65.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/wolverhampton",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/wolverhampton"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 90.67,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis accountant cannock",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 90.67
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/services",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/services"
+      ],
+      "impressions_90d": 3,
+      "clicks_90d": 0,
+      "weighted_position_90d": 91.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "cis tax accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 88.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax return accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 90.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis tax return service oxford",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 95.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-basics/cis-national-insurance-guide",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-basics/cis-national-insurance-guide"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 11.0,
+      "band_mix": {
+        "11-15": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "hmrc cis deductions set against class 4 national insurance self assessment",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 11.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-basics/what-construction-work-is-not-cis",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-basics/what-construction-work-is-not-cis"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 29.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "what is excluded from the cis scheme",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 29.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-compliance",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-compliance"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 70.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis changes 2026",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 77.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis self assessment",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 63.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-compliance/cis-payment-deduction-statements-guide",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-compliance/cis-payment-deduction-statements-guide"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 69.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "cis payment and deduction certificate",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 69.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [
+        {
+          "query": "ads facades ltd cis summary tax month 2 (ending 5 june 2026) trading name total basicpay gross pay cost ofmaterials vat cis-deductiblepay cisdeduction net pay andrei nicusorzar 2000.00 2000.00 0.00 0.00 2000.00 400.00 1600.00 baucem ltd 25812.50 25812.50 0.00 0.00 25812.50 5162.50 20650.00 calitescu doru 3580.00 3580.00 0.00 0.00 3580.00 716.00 2864.00 cornel florin mitroi 3400.00 3400.00 0.00 0.00 3400.00 680.00 2720.00 florin ion zaromba 1000.00 1000.00 0.00 0.00 1000.00 200.00 800.00 m d zaromba 2000.00 2000.00 0.00 0.00 2000.00 400.00 1600.00 nicola cristianionut 1275.00 1275.00 0.00 0.00 1275.00 255.00 1020.00 total (7subcontractors) 39067.50 39067.50 0.00 0.00 39067.50 7813.50 31254.00",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "can you issue a cis payment snd deduction statement after each payment or once a month",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "cis upload evidence: invoices and payment and deduction statements subcontractorhat type of evidence do you want to upload?",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "cis upload evidence: invoices and payment and deduction statements what type of evidence do you want to upload?",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "hmrc cis pds",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 6.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "how does a cis statement of deduction look like",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 7.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "how to complete cis payment and deduction statement",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "how to write a cis payment deduction statement",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 8.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "if two payments are made in one month do you issue them on a single cis payment and deduction statement or can you issue the statement sepately for each payment",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4.0,
+          "source": "bing_snapshot"
+        },
+        {
+          "query": "is a digital cis payment deduction statement valid",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 10.0,
+          "source": "bing_snapshot"
+        }
+      ],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-refunds/how-much-cis-refund-will-i-get",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-refunds/how-much-cis-refund-will-i-get"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 56.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis refunds colchester",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 56.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/software-and-tools/free-cis-payroll-software",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/software-and-tools/free-cis-payroll-software"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 2.0,
+      "band_mix": {
+        "2": 1.0
+      },
+      "trajectory": "emerging",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis payroll software free",
+          "trajectory": "emerging",
+          "last_7d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 2.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/flooring-contractors",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/flooring-contractors"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 9.0,
+      "band_mix": {
+        "8": 0.5,
+        "10": 0.5
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "flooring+taxes",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 8.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        },
+        {
+          "query": "cis flooring",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/insulation-installers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/insulation-installers"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 1.0,
+      "band_mix": {
+        "1": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "accounting for insulation companies",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 1.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00464,
+          "ctr_gap": -0.00464
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/labour-agencies",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/labour-agencies"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 91.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "cis contractors accountant",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 91.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/verification",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/verification"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 58.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "verify subcontractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 76.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "cis checker",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 41.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/glasgow",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/glasgow"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 42.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis clydebank",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 40.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        },
+        {
+          "query": "plasterers accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 45.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/manchester",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/manchester"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 93.5,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": 2.0,
+      "top_queries": [
+        {
+          "query": "tax return services for construction",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 93.5
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/nottingham",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/nottingham"
+      ],
+      "impressions_90d": 2,
+      "clicks_90d": 0,
+      "weighted_position_90d": 21.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "declining",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "construction accountants nottingham",
+          "trajectory": "declining",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 2,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 21.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 42.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "subcontractor tax retention",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 42.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-advanced/cis-for-labour-agencies",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-advanced/cis-for-labour-agencies"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 26.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "are labour agencies in construction industry scheme",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 26.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-basics/cis-contractor-registration-guide",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-basics/cis-contractor-registration-guide"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 19.0,
+      "band_mix": {
+        "16-20": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "contractor certification registration",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 19.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/blog/cis-basics/how-to-register-for-cis",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/blog/cis-basics/how-to-register-for-cis"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 52.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis returns & registration",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 52.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/fencing-contractors",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/fencing-contractors"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 17.0,
+      "band_mix": {
+        "16-20": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "fencing contractor accountant",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 17.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/joiners",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/joiners"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 33.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "accounting for joiners",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 33.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/landscapers",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/landscapers"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 10.0,
+      "band_mix": {
+        "10": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "does landscaping come under cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/mechanical-electrical-contractors",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/mechanical-electrical-contractors"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 11.0,
+      "band_mix": {
+        "11-15": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "m&e accounting",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 11.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00051,
+          "ctr_gap": -0.00051
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/plant-hire-companies",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/plant-hire-companies"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 10.0,
+      "band_mix": {
+        "10": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "what does operator do",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.00066,
+          "ctr_gap": -0.00066
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/for/welder-fabricators",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/for/welder-fabricators"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 37.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "accounting for welding companies",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 37.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/gross-payment-status",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/gross-payment-status"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 85.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "cis gross payment status",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 85.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/late-filing-penalties-cis",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/late-filing-penalties-cis"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 34.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "appeal against a construction industry scheme late filing penalty",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 34.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/limited-company-subcontractor",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/limited-company-subcontractor"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 52.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "trade subcontractor",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 52.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/glossary/making-tax-digital-for-income-tax",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/glossary/making-tax-digital-for-income-tax"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 60.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "making tax digital cis",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 60.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/cardiff",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/cardiff"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 87.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": null,
+      "top_queries": [
+        {
+          "query": "contractor accountants cardiff",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 87.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    },
+    {
+      "page": "https://tradetaxspecialists.co.uk/locations/leeds",
+      "variants": [
+        "https://www.tradetaxspecialists.co.uk/locations/leeds"
+      ],
+      "impressions_90d": 1,
+      "clicks_90d": 0,
+      "weighted_position_90d": 67.0,
+      "band_mix": {
+        "21+": 1.0
+      },
+      "trajectory": "trivial",
+      "trajectory_delta_pct": -1.0,
+      "top_queries": [
+        {
+          "query": "cis accountants leeds",
+          "trajectory": "trivial",
+          "last_7d": {
+            "impressions": 0,
+            "clicks": 0
+          },
+          "prior_21d": {
+            "impressions": 1,
+            "clicks": 0
+          },
+          "d90": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 67.0
+          },
+          "ctr_90d": 0.0,
+          "expected_ctr": 0.0,
+          "ctr_gap": 0.0
+        }
+      ],
+      "bing_queries": [],
+      "cannibalisation_partners": [],
+      "hold": false,
+      "hold_reasons": [],
+      "action": "ambiguous",
+      "action_source": "deterministic",
+      "owner_approval_required": false,
+      "signals": [],
+      "first_seen": null
+    }
+  ],
+  "unowned_queries": [
+    {
+      "query": "cis tax return bristol",
+      "impressions_90d": 35,
+      "best_position": 33.2,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    },
+    {
+      "query": "cis accountant cannock",
+      "impressions_90d": 32,
+      "best_position": 67.6,
+      "action": "new_page_target",
+      "action_source": "deterministic"
+    }
+  ]
+}

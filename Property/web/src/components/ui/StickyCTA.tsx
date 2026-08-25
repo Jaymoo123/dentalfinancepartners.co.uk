@@ -2,9 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { btnPrimary } from "./layout-utils";
-import { niche } from "@/config/niche-loader";
+import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
 import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
+
+const activeSticky = getActiveCta(niche).sticky;
+const packagesMode = isPackagesMode(niche);
 
 type StickyCTAProps = {
   href?: string;
@@ -14,13 +18,14 @@ type StickyCTAProps = {
 };
 
 export function StickyCTA({
-  href = "/contact",
+  href,
   primary,
   secondary,
   buttonLabel,
 }: StickyCTAProps = {}) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const pathname = usePathname();
   const action = useIntent("sticky_cta");
   const shownRef = useRef(false);
 
@@ -40,29 +45,35 @@ export function StickyCTA({
 
   // Log a personalization impression the first time a tailored sticky shows.
   useEffect(() => {
-    if (visible && action && !shownRef.current) {
+    // Packages mode never renders the personalised offer, so don't count it.
+    if (visible && action && !shownRef.current && !packagesMode) {
       shownRef.current = true;
       trackPersonalization("shown", action);
     }
   }, [visible, action]);
 
   if (dismissed) return null;
+  // Packages mode sends the sticky to /pricing, so never overlay /pricing itself.
+  if (packagesMode && pathname.startsWith("/pricing")) return null;
 
   // Substantive, behaviour-matched offer (in-place swap, no layout shift). The
   // offer points at a REAL asset — the topic's calculator, its gated guide +
   // Excel, or a specialist. Falls back to the generic niche CTA when the page has
   // no topic (or the visitor is in the control arm, where action is null).
-  const offer = action?.offer ?? null;
-  const ctaHref = offer ? offer.href : href;
-  const primaryText = offer ? offer.title : (primary ?? niche.cta.sticky_primary);
-  const secondaryText = offer ? offer.blurb : (secondary ?? niche.cta.sticky_secondary);
+  // Packages mode disables intent offers: they resurface free-guide/free-call
+  // framing that competes with the pricing CTA. Explicit props still win over
+  // config defaults (unchanged precedence).
+  const offer = packagesMode ? null : (action?.offer ?? null);
+  const ctaHref = offer ? offer.href : (href ?? activeSticky.href);
+  const primaryText = offer ? offer.title : (primary ?? activeSticky.primary);
+  const secondaryText = offer ? offer.blurb : (secondary ?? activeSticky.secondary);
   const button = offer
     ? offer.kind === "tool"
       ? "Open the calculator"
       : offer.kind === "guide"
         ? "Get the free guide"
         : "Talk to a specialist"
-    : (buttonLabel ?? niche.cta.sticky_button);
+    : (buttonLabel ?? activeSticky.button);
 
   return (
     <div
@@ -89,9 +100,10 @@ export function StickyCTA({
             href={ctaHref}
             data-cta="sticky_cta"
             data-cta-placement="sticky"
+            data-cta-variant={niche.cta.variant}
             data-cta-goal={ctaHref.startsWith("/contact") ? "form" : undefined}
-            onClick={() => action && trackPersonalization("clicked", action)}
-            className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
+            onClick={() => !packagesMode && action && trackPersonalization("clicked", action)}
+            className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}
           >
             {button}
           </Link>

@@ -1,0 +1,70 @@
+{
+  "candidate_id": "funeral-plans-leadmkt-2026-07",
+  "vertical": "funeral plans",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/funeral-plan/",
+      "excerpt": "For funeral planning leads, the cost per lead starts at £58. LeadCrowd is the best place to buy Funeral Planning enquiries online. Call 0333 012 4004. Crowd ...",
+      "metric": {
+        "price_gbp": 58
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.contactstate.com/news/the-death-of-funeral-plan-lead-generation-a-warning-to-other-markets",
+      "excerpt": "25 Apr 2022 — New rules come into force in July 2022 which will mean selling funeral plans will be a regulated process.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.omg-ltd.co.uk/funeral-leads.html",
+      "excerpt": "The UK's premier end to end lead generation and customer acquisition provider of digital real-time Funeral web leads. Fully validated and 100% Exclusive.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadgulls.com/academic-articles/funeral-home-lead-generation-digital-marketing-2026",
+      "excerpt": "7 Apr 2026 — U.S.-based search campaigns ・ establishes a cross-industry average cost-per-lead of $70.11, up 5.13% from $66.69 in 2024 ・ $35--$45",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.warriorforum.com/main-internet-marketing-discussion-forum/1030015-what-would-you-charge-per-call-lead-generation-funeral-home.html",
+      "excerpt": "25 Dec 2014 — I would say around $20 - $30 per lead, at $20-$30 per lead when they might be paying $200-$300 per lead. Some funerals start at $10K … you ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fairerfinance.com/downloads/funeral-plan-report-july-2017.pdf",
+      "excerpt": "It also looked at online funeral plan advertising, with a specific focus on the emergence of lead generation websites which purport to be funeral plan. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "buy funeral planning leads online",
+    "funeral home lead generation: digital marketing ...",
+    "funeral leads | lead generation services - omg - ltd",
+    "funeral plans",
+    "prepaid funeral planning report",
+    "the death of funeral plan lead generation, a warning to ...",
+    "what would you charge per call for lead generation to a ..."
+  ],
+  "buyer_hypothesis": {
+    "who": "UK funeral plans providers already paying per lead",
+    "proof": "6 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

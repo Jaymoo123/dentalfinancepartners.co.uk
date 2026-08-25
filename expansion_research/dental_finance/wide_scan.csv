@@ -1,0 +1,96 @@
+cluster,keyword,search_volume,cpc,competition,kd
+business_finance,business loans,27100,66.11,HIGH,33
+business_finance,growth guarantee scheme,4400,21.79,HIGH,7
+business_finance,asset finance,1900,46.62,MEDIUM,4
+business_finance,invoice finance,1900,91.41,HIGH,13
+business_finance,unsecured business loan,1600,94.22,MEDIUM,0
+business_finance,invoice factoring,1300,144.77,HIGH,2
+business_finance,merchant cash advance,1300,42.32,MEDIUM,12
+business_finance,vat loan,480,81.91,LOW,0
+business_finance,equipment finance,320,35.17,MEDIUM,0
+business_finance,recovery loan scheme,260,42.31,MEDIUM,3
+business_finance,hire purchase business,210,25.59,HIGH,0
+business_finance,corporation tax loan,70,123.59,MEDIUM,0
+business_finance,tax loan,70,47.68,LOW,0
+business_finance,working capital finance,70,20.58,MEDIUM,8
+business_finance,revolving credit facility business,,,,
+exit_ma_eot,employee ownership trust,2400,7.96,MEDIUM,26
+exit_ma_eot,eot,2400,9.15,MEDIUM,12
+exit_ma_eot,management buyout,2400,3.04,LOW,5
+exit_ma_eot,how to value a business,1900,4.04,HIGH,7
+exit_ma_eot,business valuation,880,16.85,MEDIUM,15
+exit_ma_eot,sell my business,880,33.47,MEDIUM,17
+exit_ma_eot,business exit planning,390,10.83,LOW,0
+exit_ma_eot,selling a business tax,210,3.23,LOW,0
+exit_ma_eot,mbo finance,90,23.67,HIGH,0
+exit_ma_eot,employee ownership trust tax,50,20.33,MEDIUM,9
+exit_ma_eot,company exit strategy,10,,MEDIUM,
+exit_ma_eot,business sale accountant,,,,
+landlord_commercial_finance,bridging loan,18100,19.46,HIGH,23
+landlord_commercial_finance,bridging loan calculator,4400,10.44,HIGH,0
+landlord_commercial_finance,commercial mortgage,3600,21.06,HIGH,15
+landlord_commercial_finance,second charge mortgage,2900,130.67,HIGH,0
+landlord_commercial_finance,self build mortgage,2900,6.38,MEDIUM,0
+landlord_commercial_finance,bridging finance,2400,27.79,MEDIUM,22
+landlord_commercial_finance,commercial mortgage rates,1600,5.94,HIGH,0
+landlord_commercial_finance,development finance,1300,16.22,MEDIUM,23
+landlord_commercial_finance,bridging loan rates,880,11.15,HIGH,6
+landlord_commercial_finance,development exit finance,880,33.57,LOW,0
+landlord_commercial_finance,mezzanine finance,880,10.41,LOW,5
+landlord_commercial_finance,property development loan,720,13.12,MEDIUM,0
+landlord_commercial_finance,commercial bridging loan,590,49.05,MEDIUM,0
+landlord_commercial_finance,property development finance,590,21.67,MEDIUM,14
+landlord_commercial_finance,auction finance,480,15.79,MEDIUM,0
+landlord_commercial_finance,bridging loan for property,480,21.98,MEDIUM,13
+landlord_commercial_finance,semi commercial mortgage,480,18.1,HIGH,0
+landlord_commercial_finance,auction property finance,260,18.19,MEDIUM,2
+landlord_commercial_finance,refurbishment finance,170,13.6,MEDIUM,0
+landlord_commercial_finance,land finance,40,3.25,HIGH,0
+landlord_commercial_finance,brrr finance,10,31.17,MEDIUM,
+landlord_commercial_finance,portfolio refinance,10,,MEDIUM,
+law_firm_finance,litigation funding,880,5.53,LOW,15
+law_firm_finance,law firm finance,210,,LOW,0
+law_firm_finance,disbursement funding,40,,LOW,2
+law_firm_finance,partner capital loan,20,,MEDIUM,
+law_firm_finance,chambers finance,10,,LOW,
+law_firm_finance,legal disbursement funding,10,,,
+law_firm_finance,law firm cash flow finance,,,,
+law_firm_finance,law firm vat loan,,,,
+law_firm_finance,solicitors practice loan,,,,
+law_firm_finance,solicitors professional indemnity finance,,,,
+practice_finance_multisector,buy a care home,320,2.59,MEDIUM,0
+practice_finance_multisector,care home finance,90,5.1,MEDIUM,5
+practice_finance_multisector,buy a pharmacy,70,1.04,MEDIUM,0
+practice_finance_multisector,medical practice loan,40,,LOW,0
+practice_finance_multisector,pharmacy finance,20,10.73,MEDIUM,39
+practice_finance_multisector,pharmacy loan,20,11.04,HIGH,39
+practice_finance_multisector,gp practice finance,10,,LOW,
+practice_finance_multisector,healthcare business loans,10,,MEDIUM,
+practice_finance_multisector,nursery finance,10,,LOW,
+practice_finance_multisector,veterinary practice finance,10,,,
+practice_finance_multisector,buy a gp practice,,,,
+practice_finance_multisector,buy a vets practice,,,,
+practice_finance_multisector,children's nursery finance,,,,
+practice_finance_multisector,optician practice finance,,,,
+practice_finance_multisector,physiotherapy practice finance,,,,
+practice_finance_multisector,vet practice finance,,,,
+specialist_tax,capital allowances,2900,3.87,LOW,11
+specialist_tax,research and development tax relief,1000,20.31,MEDIUM,23
+specialist_tax,tax investigation insurance,590,8.32,HIGH,0
+specialist_tax,land remediation relief,320,5.75,LOW,0
+specialist_tax,capital allowances on furnished holiday lets,210,6.44,LOW,0
+specialist_tax,embedded capital allowances,170,5.48,MEDIUM,0
+specialist_tax,capital allowances claim,140,17.54,MEDIUM,2
+specialist_tax,fee protection insurance,110,3.96,LOW,1
+specialist_tax,capital allowances commercial property,40,7.53,MEDIUM,0
+specialist_tax,r d tax credits,20,30.8,MEDIUM,19
+specialist_tax,r d tax credit specialist,,,,
+trade_finance,van finance,6600,15.3,HIGH,9
+trade_finance,cis tax rebate,720,12.76,MEDIUM,9
+trade_finance,tool finance,590,2.52,HIGH,9
+trade_finance,van finance self employed,210,11.43,MEDIUM,0
+trade_finance,digger finance,140,8.12,HIGH,0
+trade_finance,construction equipment finance,90,,LOW,0
+trade_finance,contractor finance,50,59.78,MEDIUM,0
+trade_finance,excavator finance,50,8.11,HIGH,0
+trade_finance,plant finance,50,32.02,MEDIUM,0

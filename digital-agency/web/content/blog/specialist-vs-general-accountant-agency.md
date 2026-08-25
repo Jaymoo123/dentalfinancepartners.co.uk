@@ -74,7 +74,7 @@ keyTakeaways:
 <p>Take a digital agency making £180k profit. A general accountant might pay the full £180k as salary and dividends, pushing the director into higher rate tax. A specialist would structure a £12,570 salary plus dividends up to the basic rate threshold, saving the director thousands in income tax and National Insurance every year.</p>
 
 <h3>R&D Tax Credits</h3>
-<p>Many agencies qualify for R&D tax credits and do not know it. If you have built custom software, developed a proprietary analytics tool, or automated a manual process, you may have a claim. The enhanced deduction is 186% of qualifying costs under the current SME scheme.</p>
+<p>Many agencies qualify for R&D tax credits and do not know it. If you have built custom software, developed a proprietary analytics tool, or automated a manual process, you may have a claim. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme gives a single 20% taxable expenditure credit on qualifying costs, worth around 15% net after corporation tax (about 16.2% for a loss-maker). The old 186% SME enhanced deduction applied only to periods beginning before 1 April 2024; loss-making R&D-intensive SMEs can instead claim under ERIS.</p>
 <p>A general accountant will not ask about your development work. A specialist will run a full R&D review and identify qualifying projects you had not considered. We have seen agencies claim £40k-£80k in cash credits that their previous accountant missed entirely.</p>
 
 <h3>VAT Efficiency</h3>
@@ -83,7 +83,7 @@ keyTakeaways:
 
 <h3>Exit Planning and BADR</h3>
 <p>If you plan to sell your agency, Business Asset Disposal Relief (BADR) is worth up to £100k in tax savings on a £1m exit. But the conditions are strict. You must hold at least 5% of shares, be an officer or employee, and hold them for two years minimum before disposal.</p>
-<p>A general accountant will mention BADR when you say you are selling. A specialist will structure your shareholding and director arrangements from day one so that you qualify automatically when the time comes. That is the difference between paying 10% CGT and 20% CGT on your exit.</p>
+<p>A general accountant will mention BADR when you say you are selling. A specialist will structure your shareholding and director arrangements from day one so that you qualify automatically when the time comes. That is the difference between paying 18% CGT and 24% CGT on your exit.</p>
 
 <h2>When Should You Switch to a Specialist Accountant?</h2>
 <p>There is no single answer, but there are clear trigger points. If any of these apply to you, it is worth having a conversation.</p>

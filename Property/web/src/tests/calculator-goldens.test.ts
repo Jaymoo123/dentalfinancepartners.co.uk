@@ -44,8 +44,12 @@ import { gbp, pct } from "../lib/calculators/format";
 import { rentalIncomeTaxCalculator } from "../lib/calculators/tools/rental-income-tax-calculator";
 import { rentalYieldCalculator } from "../lib/calculators/tools/rental-yield-calculator";
 import { buyToLetCashflowCalculator } from "../lib/calculators/tools/buy-to-let-cashflow-calculator";
+import { buyToLetMortgageCalculator } from "../lib/calculators/tools/buy-to-let-mortgage-calculator";
 import { rentARoomReliefCalculator } from "../lib/calculators/tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "../lib/calculators/tools/property-allowance-checker";
+import { leaseExtensionPremiumCalculator } from "../lib/calculators/tools/lease-extension-premium-calculator";
+import { bprAprAllowanceCalculator } from "../lib/calculators/tools/bpr-apr-allowance-calculator";
+import { costOfSellingCalculator } from "../lib/calculators/tools/cost-of-selling-calculator";
 // Tools that call @/lib/* must be tested through the pure lib functions directly
 // (the @/ alias resolves in the app but the tool configs carry compute fns).
 
@@ -68,8 +72,8 @@ type V = Record<string, number | string | boolean>;
 // 1. Registry contract (TL-01)
 // ============================================================
 describe("registry contract (TL-01)", () => {
-  it("total fleet = 16 tools (5 bespoke + 11 generic)", () => {
-    expect(TOOLS.length).toBe(16);
+  it("total fleet = 26 tools (5 bespoke + 21 generic)", () => {
+    expect(TOOLS.length).toBe(26);
   });
 
   it("5 bespoke tools", () => {
@@ -77,13 +81,13 @@ describe("registry contract (TL-01)", () => {
     expect(bespoke.length).toBe(5);
   });
 
-  it("11 generic tools", () => {
+  it("21 generic tools", () => {
     const generic = genericTools();
-    expect(generic.length).toBe(11);
+    expect(generic.length).toBe(21);
   });
 
-  it("allTools returns 16 tools", () => {
-    expect(allTools().length).toBe(16);
+  it("allTools returns 26 tools", () => {
+    expect(allTools().length).toBe(26);
   });
 
   it("getGenericTool finds by slug", () => {
@@ -107,6 +111,7 @@ describe("registry contract (TL-01)", () => {
       "rental-income-tax-calculator",
       "rental-yield-calculator",
       "buy-to-let-cashflow-calculator",
+      "buy-to-let-mortgage-calculator",
       "lbtt-calculator-scotland",
       "ltt-calculator-wales",
       "first-time-buyer-stamp-duty-calculator",
@@ -114,6 +119,9 @@ describe("registry contract (TL-01)", () => {
       "dividend-tax-calculator",
       "rent-a-room-relief-calculator",
       "property-allowance-checker",
+      "lease-extension-premium-calculator",
+      "bpr-apr-allowance-calculator",
+      "cost-of-selling-calculator",
     ];
     for (const s of expected) {
       expect(slugs, `missing slug: ${s}`).toContain(s);
@@ -241,30 +249,273 @@ describe("GOLDEN: rental-income-tax-calculator (defaults)", () => {
 });
 
 // ============================================================
-// 5. GOLDEN: Rental Yield (at defaults)
-// Defaults: propertyValue=250000, annualRent=15000, annualCosts=4000
+// 5. GOLDEN: Rental Yield
+//
+// Fields: propertyValue, monthlyRent, lettingAgentPct, maintenancePct,
+//         insurance, serviceCharge, mortgageInterest.
+// Defaults: 250000 / 1250pm / 10% / 10% / 300 / 0 / 0
+//
+// Every expected figure below is hand-derived in the comment above it.
+// Shape of the maths:
+//   annual rent = monthly x 12
+//   costs       = agent% of rent + maintenance% of rent + insurance + service charge
+//   gross yield = annual rent / value x 100
+//   net yield   = (annual rent - costs) / value x 100
 // ============================================================
-describe("GOLDEN: rental-yield-calculator (defaults)", () => {
+const yieldRow = (result: ReturnType<typeof rentalYieldCalculator.compute>, label: string) =>
+  result.rows?.find((r) => r.label === label)?.value;
+
+describe("GOLDEN: rental-yield-calculator (defaults, net case)", () => {
   const result = rentalYieldCalculator.compute(defaults(rentalYieldCalculator.fields) as V);
 
-  it("gross yield = 6.0%", () => {
-    // 15000 / 250000 = 6%
+  it("annual rent = 15000 (1250 x 12)", () => {
+    expect(yieldRow(result, "Annual rent")).toBe("£15,000");
+  });
+
+  it("gross yield = 6.0% (15000 / 250000 x 100 = 6)", () => {
     expect(result.headline.value).toBe("6.0%");
   });
 
-  it("net yield shown in sub", () => {
-    // net = (15000 - 4000) / 250000 = 11000/250000 = 4.4%
-    expect(result.headline.sub).toBe("Net yield 4.4%");
+  it("agent 10% = 1500 and maintenance 10% = 1500 (of 15000)", () => {
+    expect(yieldRow(result, "Letting agent at 10.0%")).toBe("−£1,500");
+    expect(yieldRow(result, "Maintenance at 10.0%")).toBe("−£1,500");
   });
 
-  it("net income = 11000", () => {
-    const row = result.rows?.find((r) => r.label === "Net income before tax");
-    expect(row?.value).toBe("£11,000");
+  it("total running costs = 3300 (1500 + 1500 + 300 insurance + 0 service)", () => {
+    expect(yieldRow(result, "Total running costs")).toBe("−£3,300");
   });
 
-  it("monthly net = 917", () => {
-    const row = result.rows?.find((r) => r.label === "Net income per month");
-    expect(row?.value).toBe("£917"); // 11000/12 = 916.67 → rounds to 917
+  it("net income = 11700 (15000 - 3300)", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£11,700");
+  });
+
+  it("net yield = 4.7% (11700 / 250000 x 100 = 4.68)", () => {
+    expect(result.headline.sub).toBe("Net yield 4.7%");
+  });
+
+  it("monthly net = 975 (11700 / 12)", () => {
+    expect(yieldRow(result, "Net income per month")).toBe("£975");
+  });
+
+  it("payback = 21.4 years (250000 / 11700 = 21.3675)", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("21.4 years");
+  });
+
+  it("zero service charge and zero mortgage interest suppress their rows", () => {
+    expect(yieldRow(result, "Service charge and ground rent")).toBeUndefined();
+    expect(yieldRow(result, "Mortgage interest")).toBeUndefined();
+    expect(yieldRow(result, "Net yield after mortgage interest")).toBeUndefined();
+  });
+
+  it("costs are 22% of rent, so no warn flag", () => {
+    // 3300 / 15000 = 0.22, under the 0.5 warn share
+    expect(result.headline.tone).toBe("default");
+  });
+
+  it("note carries no statute reference", () => {
+    expect(result.note).not.toMatch(/Section 24|Finance Act|HMRC/);
+  });
+});
+
+// Every cost field populated, plus the optional mortgage interest.
+// value 320000, rent 1600pm, agent 10%, maintenance 10%, insurance 350,
+// service charge 1400, mortgage interest 9000.
+//   annual rent = 1600 x 12                = 19,200
+//   agent       = 10% of 19,200            =  1,920
+//   maintenance = 10% of 19,200            =  1,920
+//   costs       = 1920 + 1920 + 350 + 1400 =  5,590
+//   net income  = 19,200 - 5,590           = 13,610
+//   gross       = 19,200 / 320,000 x 100   = 6.0%    (exact)
+//   net         = 13,610 / 320,000 x 100   = 4.2531% -> 4.3%
+//   after int.  = 13,610 - 9,000           =  4,610
+//   net-of-fin. =  4,610 / 320,000 x 100   = 1.4406% -> 1.4%
+//   payback     = 320,000 / 13,610         = 23.5121 -> 23.5 years
+describe("GOLDEN: rental-yield-calculator (all costs + mortgage interest)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 320_000,
+    monthlyRent: 1_600,
+    lettingAgentPct: 10,
+    maintenancePct: 10,
+    insurance: 350,
+    serviceCharge: 1_400,
+    mortgageInterest: 9_000,
+  } as V);
+
+  it("gross yield = 6.0%", () => {
+    expect(result.headline.value).toBe("6.0%");
+  });
+
+  it("service charge row appears when non-zero", () => {
+    expect(yieldRow(result, "Service charge and ground rent")).toBe("−£1,400");
+  });
+
+  it("total running costs = 5590", () => {
+    expect(yieldRow(result, "Total running costs")).toBe("−£5,590");
+  });
+
+  it("net income = 13610", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£13,610");
+  });
+
+  it("net yield = 4.3%", () => {
+    expect(result.headline.sub).toBe("Net yield 4.3%");
+  });
+
+  it("net income after mortgage interest = 4610", () => {
+    expect(yieldRow(result, "Net income after mortgage interest")).toBe("£4,610");
+  });
+
+  it("net yield after mortgage interest = 1.4%", () => {
+    expect(yieldRow(result, "Net yield after mortgage interest")).toBe("1.4%");
+  });
+
+  it("payback = 23.5 years", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("23.5 years");
+  });
+});
+
+// Zero-cost case: the gross-only reading a listing quotes, and the proof that
+// net collapses onto gross when nothing is deducted.
+// value 180000, rent 850pm, all cost fields 0.
+//   annual rent = 850 x 12               = 10,200
+//   gross = net = 10,200 / 180,000 x 100 = 5.6667% -> 5.7%
+//   payback     = 180,000 / 10,200       = 17.647 -> 17.6 years
+describe("GOLDEN: rental-yield-calculator (zero costs, net == gross)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 180_000,
+    monthlyRent: 850,
+    lettingAgentPct: 0,
+    maintenancePct: 0,
+    insurance: 0,
+    serviceCharge: 0,
+    mortgageInterest: 0,
+  } as V);
+
+  it("gross yield = 5.7%", () => {
+    expect(result.headline.value).toBe("5.7%");
+  });
+
+  it("net yield equals gross yield when no costs are entered", () => {
+    expect(result.headline.sub).toBe(`Net yield ${result.headline.value}`);
+  });
+
+  it("total running costs = 0", () => {
+    expect(yieldRow(result, "Total running costs")).toBe("−£0");
+  });
+
+  it("net income = annual rent = 10200", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£10,200");
+  });
+
+  it("payback = 17.6 years", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("17.6 years");
+  });
+});
+
+// Rounding edge: three different roundings in one case, none of them exact.
+// value 265000, rent 1100pm, agent 10%, maintenance 5%, insurance 250.
+//   annual rent = 1100 x 12                    = 13,200
+//   agent  = 10% of 13,200 = 1,320; maint = 5% =    660
+//   costs  = 1320 + 660 + 250                  =  2,230
+//   net    = 13,200 - 2,230                    = 10,970
+//   gross  = 13,200 / 265,000 x 100 = 4.98113% -> "5.0%"  (rounds UP past a whole number)
+//   net    = 10,970 / 265,000 x 100 = 4.13962% -> "4.1%"  (rounds DOWN)
+//   monthly= 10,970 / 12 = 914.1667            -> "£914"  (gbp rounds DOWN)
+//   payback= 265,000 / 10,970 = 24.15679       -> "24.2"  (toFixed rounds UP)
+describe("GOLDEN: rental-yield-calculator (rounding edge)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 265_000,
+    monthlyRent: 1_100,
+    lettingAgentPct: 10,
+    maintenancePct: 5,
+    insurance: 250,
+    serviceCharge: 0,
+    mortgageInterest: 0,
+  } as V);
+
+  it("gross 4.98113% displays as 5.0%, not 4.9%", () => {
+    expect(result.headline.value).toBe("5.0%");
+  });
+
+  it("net 4.13962% displays as 4.1%", () => {
+    expect(result.headline.sub).toBe("Net yield 4.1%");
+  });
+
+  it("monthly net 914.1667 displays as £914", () => {
+    expect(yieldRow(result, "Net income per month")).toBe("£914");
+  });
+
+  it("payback 24.15679 displays as 24.2 years", () => {
+    expect(yieldRow(result, "Years of net income to earn the price back")).toBe("24.2 years");
+  });
+
+  it("maintenance label carries the rate to 1dp", () => {
+    expect(yieldRow(result, "Maintenance at 5.0%")).toBe("−£660");
+  });
+});
+
+// Warn tone: the ONLY thing the flag means is costs > half the rent, and the
+// note has to say so.
+// value 200000, rent 500pm, agent 15%, maintenance 15%, insurance 500, service 2000.
+//   annual rent = 6,000; agent = 900; maintenance = 900
+//   costs = 900 + 900 + 500 + 2000 = 4,300 = 71.7% of rent -> warn
+//   net   = 6,000 - 4,300 = 1,700
+//   net yield = 1,700 / 200,000 x 100 = 0.85% -> "0.9%"
+describe("GOLDEN: rental-yield-calculator (warn tone basis)", () => {
+  const result = rentalYieldCalculator.compute({
+    propertyValue: 200_000,
+    monthlyRent: 500,
+    lettingAgentPct: 15,
+    maintenancePct: 15,
+    insurance: 500,
+    serviceCharge: 2_000,
+    mortgageInterest: 0,
+  } as V);
+
+  it("costs of 4300 on 6000 rent trip the warn tone", () => {
+    expect(result.headline.tone).toBe("warn");
+  });
+
+  it("note states the basis for the flag", () => {
+    expect(result.note).toContain("more than half the rent");
+  });
+
+  it("net yield = 0.9% (0.85 rounded)", () => {
+    expect(result.headline.sub).toBe("Net yield 0.9%");
+  });
+
+  it("net income = 1700", () => {
+    expect(yieldRow(result, "Net income before tax")).toBe("£1,700");
+  });
+});
+
+describe("rental-yield-calculator: no good-yield figure is asserted anywhere", () => {
+  // The "what is a good yield" data lives on the benchmarks blog post, which is
+  // frozen; this page must link it, never quote it.
+  const prose = [
+    rentalYieldCalculator.intro,
+    ...rentalYieldCalculator.explainer.paragraphs,
+    ...(rentalYieldCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+  ].join(" ");
+
+  it("no statute references in the prose", () => {
+    expect(prose).not.toMatch(/Section 24|Finance Act|HMRC|Royal Assent/);
+  });
+
+  it("no em-dashes or en-dashes in the prose", () => {
+    expect(prose).not.toMatch(/[–—]/);
+  });
+
+  it("links the benchmarks post rather than quoting it", () => {
+    const hrefs = (rentalYieldCalculator.related ?? []).map((r) => r.href);
+    expect(hrefs).toContain(
+      "/blog/portfolio-management/property-investment-benchmarks-uk-2026-good-yield",
+    );
+  });
+
+  it("carries worked examples and related links for the SSR blocks", () => {
+    expect(rentalYieldCalculator.workedExamples?.length).toBe(2);
+    expect(rentalYieldCalculator.related?.length).toBeGreaterThanOrEqual(4);
   });
 });
 
@@ -286,6 +537,31 @@ describe("GOLDEN: buy-to-let-cashflow-calculator (defaults)", () => {
   it("annual cashflow = 4200", () => {
     const row = result.rows?.find((r) => r.label === "Annual cashflow");
     expect(row?.value).toBe("£4,200");
+  });
+
+  it("cashInvested defaults to 0 so no ROI row (4 rows)", () => {
+    expect(result.rows?.length).toBe(4);
+    expect(result.rows?.some((r) => r.label.startsWith("Cash-on-cash"))).toBe(false);
+  });
+});
+
+describe("GOLDEN: buy-to-let-cashflow-calculator (cash invested)", () => {
+  // 1450 - 720 - 330 = 400/mo; annual 4,800; 4,800 / 75,000 = 0.064 -> "6.4%"
+  // Matches the tool's own second worked example.
+  const result = buyToLetCashflowCalculator.compute({
+    monthlyRent: 1_450,
+    monthlyMortgage: 720,
+    monthlyCosts: 330,
+    cashInvested: 75_000,
+  } as V);
+
+  it("cash-on-cash return row = 6.4%", () => {
+    const row = result.rows?.find((r) => r.label === "Cash-on-cash return, before tax");
+    expect(row?.value).toBe("6.4%");
+  });
+
+  it("still 5 rows with the ROI row appended", () => {
+    expect(result.rows?.length).toBe(5);
   });
 });
 
@@ -561,5 +837,1259 @@ describe("stale-figure checks (ground-truth sentinels)", () => {
   it("CT small profits rate is 19% at lower limit", () => {
     const tax = corporationTax(50_000);
     expect(tax).toBe(9_500); // 50000 * 0.19
+  });
+});
+
+// ============================================================
+// 15. GOLDEN: Lease Extension Premium (LRHUDA 1993 Sch 13)
+//
+// Method under test (hand-derived below for every case):
+//   term       = groundRent * (1 - (1+c)^-t) / c          [c = capitalisation rate]
+//   reversion  = value * (1+d)^-t                          [d = deferment rate]
+//   relativity = piecewise-linear over the anchor table, anchors at
+//                60y=85.0, 70y=90.0, 80y=94.0, 90y=96.8
+//   marriage   = t > 80 ? 0 : value - value*rel - term - reversion   (Sch 13 para 4(2A):
+//                nil only where the unexpired term EXCEEDS 80 years, so 80.0 pays it)
+//   premium    = term + reversion + marriage/2
+//   headline   = premium +/- 20%
+//
+// Ground truth: house_positions.md §31.3a — marriage value abolition is NOT in
+// force in Aug 2026, so the sub-80 charge is live. A test failing here because
+// marriage value has been switched off = STOP, verify commencement first.
+// ============================================================
+describe("GOLDEN: lease-extension-premium-calculator (defaults, 82 years)", () => {
+  const result = leaseExtensionPremiumCalculator.compute(
+    defaults(leaseExtensionPremiumCalculator.fields) as V,
+  );
+
+  // Defaults: value 300000, 82 years, ground rent 150, deferment 5%, cap 7%, no override.
+  // term      = 150 * (1 - 1.07^-82) / 0.07 = 150 * 14.23005 = 2134.51 -> £2,135
+  // reversion = 300000 * 1.05^-82           = 5490.33         -> £5,490
+  // marriage  = 0 (82 > 80)
+  // premium   = 2134.51 + 5490.33           = 7624.84         -> £7,625
+  // range     = 6099.87 to 9149.81          -> £6,100 to £9,150
+  it("term (capitalised ground rent) = £2,135", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Capitalised ground rent"));
+    expect(row?.value).toBe("£2,135");
+  });
+
+  it("reversion = £5,490", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Reversion"));
+    expect(row?.value).toBe("£5,490");
+  });
+
+  it("no marriage value above 80 years", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("Nil, term is over 80 years");
+    const share = result.rows?.find((r) => r.label.startsWith("Freeholder's 50%"));
+    expect(share?.value).toBe("£0");
+  });
+
+  it("premium midpoint = £7,625", () => {
+    const row = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£7,625");
+  });
+
+  it("headline is a +/-20% range, not a single figure", () => {
+    expect(result.headline.value).toBe("£6,100 to £9,150");
+  });
+
+  it("tone = warn inside the 80-83 year cliff zone", () => {
+    expect(result.headline.tone).toBe("warn");
+  });
+
+  // Same flat re-run at 79 years: see the 79-year golden below (£13,844).
+  it("shows the cost of drifting past the cliff", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Premium midpoint if you wait"));
+    expect(row?.value).toBe("£13,844");
+  });
+
+  // Fee stack is pinned to content/blog/lease-extension-cost-uk.md (harmonised set, ex VAT).
+  it("fee stack = £2,750 to £4,700", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Professional fees"));
+    expect(row?.value).toBe("£2,750 to £4,700");
+  });
+
+  // all-in = 6099.87 + 2750 = 8849.87 -> £8,850; 9149.81 + 4700 = 13849.81 -> £13,850
+  it("all-in range adds the fee stack", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Indicative all-in"));
+    expect(row?.value).toBe("£8,850 to £13,850");
+  });
+
+  it("note carries the not-in-force discipline and the consultation date", () => {
+    expect(result.note).toContain("not in force");
+    expect(result.note).toContain("23 September 2026");
+    expect(result.note).toContain("RICS");
+  });
+});
+
+describe("GOLDEN: lease-extension-premium-calculator (79 years, marriage value live)", () => {
+  const result = leaseExtensionPremiumCalculator.compute({
+    propertyValue: 300_000,
+    unexpiredYears: 79,
+    groundRent: 150,
+    defermentRate: 5,
+    capitalisationRate: 7,
+    relativityOverride: 0,
+  } as V);
+
+  // term       = 150 * (1 - 1.07^-79) / 0.07 = 2132.63 -> £2,133
+  // reversion  = 300000 * 1.05^-79           = 6355.75 -> £6,356
+  // relativity = 90 + (79-70)/10 * (94-90)   = 93.6%
+  // short-lease value = 300000 * 0.936       = 280800
+  // marriage   = 300000 - 280800 - 2132.63 - 6355.75 = 10711.62 -> £10,712
+  // share      = 5355.81                                        -> £5,356
+  // premium    = 2132.63 + 6355.75 + 5355.81 = 13844.19         -> £13,844
+  // range      = 11075.35 to 16613.03                           -> £11,075 to £16,613
+  it("relativity = 93.6%", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Relativity"));
+    expect(row?.value).toBe("93.6%");
+  });
+
+  it("marriage value = £10,712", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("£10,712");
+  });
+
+  it("freeholder's 50% share = £5,356", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Freeholder's 50%"));
+    expect(row?.value).toBe("£5,356");
+  });
+
+  it("premium midpoint = £13,844", () => {
+    const row = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£13,844");
+  });
+
+  it("headline range = £11,075 to £16,613", () => {
+    expect(result.headline.value).toBe("£11,075 to £16,613");
+    expect(result.headline.sub).toContain("£5,356");
+  });
+
+  it("no cliff-cost row below 80 years (already over it)", () => {
+    expect(result.rows?.find((r) => r.label.startsWith("Premium midpoint if you wait"))).toBeUndefined();
+  });
+});
+
+describe("GOLDEN: lease-extension-premium-calculator (the 80-year boundary)", () => {
+  const at = (years: number) =>
+    leaseExtensionPremiumCalculator.compute({
+      propertyValue: 300_000,
+      unexpiredYears: years,
+      groundRent: 150,
+      defermentRate: 5,
+      capitalisationRate: 7,
+      relativityOverride: 0,
+    } as V);
+
+  // EXACTLY 80 years — Sch 13 para 4(2A) makes marriage value nil only where the
+  // term EXCEEDS 80, so 80.0 is inside the charge.
+  // term       = 150 * (1 - 1.07^-80) / 0.07 = 2133.30 -> £2,133
+  // reversion  = 300000 * 1.05^-80           = 6053.09 -> £6,053
+  // relativity = 94.0% (anchor)              -> short-lease value 282000
+  // marriage   = 300000 - 282000 - 2133.30 - 6053.09 = 9813.61 -> £9,814
+  // share      = 4906.80                                       -> £4,907
+  // premium    = 2133.30 + 6053.09 + 4906.80 = 13093.20        -> £13,093
+  const eighty = at(80);
+
+  it("at exactly 80 years marriage value IS payable", () => {
+    const row = eighty.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("£9,814");
+  });
+
+  it("at exactly 80 years the freeholder's share = £4,907", () => {
+    const row = eighty.rows?.find((r) => r.label.startsWith("Freeholder's 50%"));
+    expect(row?.value).toBe("£4,907");
+  });
+
+  it("at exactly 80 years premium = £13,093", () => {
+    const row = eighty.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£13,093");
+  });
+
+  // ONE YEAR ABOVE the cliff — same flat, no marriage value at all.
+  // term      = 150 * (1 - 1.07^-81) / 0.07 = 2133.93 -> £2,134
+  // reversion = 300000 * 1.05^-81           = 5764.85 -> £5,765
+  // premium   = 7898.78                               -> £7,899
+  const eightyOne = at(81);
+
+  it("at 81 years marriage value is nil", () => {
+    const row = eightyOne.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("Nil, term is over 80 years");
+  });
+
+  it("at 81 years premium = £7,899", () => {
+    const row = eightyOne.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£7,899");
+  });
+
+  it("crossing the cliff costs £5,194 on this flat (13093 - 7899)", () => {
+    expect(13_093 - 7_899).toBe(5_194);
+  });
+});
+
+describe("GOLDEN: lease-extension-premium-calculator (peppercorn / zero ground rent)", () => {
+  const result = leaseExtensionPremiumCalculator.compute({
+    propertyValue: 250_000,
+    unexpiredYears: 70,
+    groundRent: 0,
+    defermentRate: 5,
+    capitalisationRate: 7,
+    relativityOverride: 0,
+  } as V);
+
+  // term       = 0 * anything                = 0
+  // reversion  = 250000 * 1.05^-70           = 8216.54 -> £8,217
+  // relativity = 90.0% (anchor)              -> short-lease value 225000
+  // marriage   = 250000 - 225000 - 0 - 8216.54 = 16783.46 -> £16,783
+  // share      = 8391.73                                  -> £8,392
+  // premium    = 0 + 8216.54 + 8391.73 = 16608.27         -> £16,608
+  it("term component is £0 with no ground rent", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Capitalised ground rent"));
+    expect(row?.value).toBe("£0");
+  });
+
+  it("reversion = £8,217", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Reversion"));
+    expect(row?.value).toBe("£8,217");
+  });
+
+  it("marriage value still applies = £16,783", () => {
+    const row = result.rows?.find((r) => r.label.startsWith("Marriage value"));
+    expect(row?.value).toBe("£16,783");
+  });
+
+  it("premium = reversion + half the marriage value = £16,608", () => {
+    const row = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(row?.value).toBe("£16,608");
+  });
+});
+
+describe("lease-extension-premium-calculator: house-bar checks", () => {
+  it("relativity override wins over the derived curve", () => {
+    const result = leaseExtensionPremiumCalculator.compute({
+      propertyValue: 300_000,
+      unexpiredYears: 79,
+      groundRent: 150,
+      defermentRate: 5,
+      capitalisationRate: 7,
+      relativityOverride: 90,
+    } as V);
+    const row = result.rows?.find((r) => r.label.startsWith("Relativity"));
+    expect(row?.value).toBe("90.0%");
+    // marriage = 300000 - 270000 - 2132.63 - 6355.75 = 21511.62; share = 10755.81
+    // premium  = 2132.63 + 6355.75 + 10755.81 = 19244.19 -> £19,244
+    const premium = result.rows?.find((r) => r.label === "Premium midpoint");
+    expect(premium?.value).toBe("£19,244");
+  });
+
+  it("no em-dashes in any user-facing string", () => {
+    const result = leaseExtensionPremiumCalculator.compute(
+      defaults(leaseExtensionPremiumCalculator.fields) as V,
+    );
+    const copy = JSON.stringify(leaseExtensionPremiumCalculator) + JSON.stringify(result);
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+});
+
+// ============================================================
+// GOLDEN: Buy to Let Mortgage (T1 rework, 2026-08-21)
+//
+// Fields (5): propertyValue, deposit, annualRate, termYears, monthlyRent.
+// Defaults:   250000 / 62500 / 5.25% / 25 years / 1250pm
+//
+// The loan and the LTV are OUTPUTS now (they used to be the first input), and
+// interest-only + capital repayment are computed TOGETHER, not behind a select.
+//
+// Hand-derived, loan = 250,000 - 62,500 = 187,500, r = 0.0525/12 = 0.004375,
+// n = 300:
+//   LTV                = 187,500 / 250,000           = 75.0%
+//   deposit share      = 62,500 / 250,000            = 25.0%
+//   interest-only pm   = 187,500 x 0.0525 / 12       = 820.3125   -> £820
+//   repayment pm       = P r (1+r)^n / ((1+r)^n - 1) = 1,123.5895 -> £1,124
+//   extra pm           = 1,123.5895 - 820.3125       = 303.28     -> £303
+//   interest-only tot  = 820.3125 x 300              = 246,093.75 -> £246,094
+//   repayment total    = 1,123.5895 x 300            = 337,076.84 -> £337,077
+//   repayment interest = 337,076.84 - 187,500        = 149,576.84 -> £149,577
+//   rental cover       = 1,250 / 820.3125            = 152.38%    -> 152.4%
+//   rent for 125%      = 820.3125 x 1.25             = 1,025.39   -> £1,025
+//   rent for 145%      = 820.3125 x 1.45             = 1,189.45   -> £1,189
+// ============================================================
+const btlRow = (result: ReturnType<typeof buyToLetMortgageCalculator.compute>, startsWith: string) =>
+  result.rows?.find((r) => r.label.startsWith(startsWith))?.value;
+
+describe("GOLDEN: buy-to-let-mortgage-calculator (defaults)", () => {
+  const result = buyToLetMortgageCalculator.compute(defaults(buyToLetMortgageCalculator.fields) as V);
+
+  it("takes 5 inputs: price, deposit, rate, term, rent", () => {
+    expect(buyToLetMortgageCalculator.fields.map((f) => f.id)).toEqual([
+      "propertyValue",
+      "deposit",
+      "annualRate",
+      "termYears",
+      "monthlyRent",
+    ]);
+  });
+
+  it("loan = 187500 (price less deposit), an output not an input", () => {
+    expect(btlRow(result, "Loan amount")).toBe("£187,500");
+  });
+
+  it("LTV = 75.0% (187500 / 250000)", () => {
+    expect(btlRow(result, "Loan to value")).toBe("75.0%");
+  });
+
+  it("deposit share = 25.0% (62500 / 250000)", () => {
+    expect(btlRow(result, "Deposit as a share")).toBe("25.0%");
+  });
+
+  it("headline is the interest-only monthly payment = £820", () => {
+    expect(result.headline.label).toBe("Interest-only monthly payment");
+    expect(result.headline.value).toBe("£820");
+    expect(result.headline.tone).toBeUndefined(); // default tone
+  });
+
+  it("headline sub names the basis: loan, rate and the repayment alternative", () => {
+    expect(result.headline.sub).toContain("£187,500 borrowed at 5.25%");
+    expect(result.headline.sub).toContain("£1,124 a month");
+  });
+
+  it("interest-only and repayment are BOTH rows, side by side", () => {
+    expect(btlRow(result, "Interest-only,")).toBe("£820 a month");
+    expect(btlRow(result, "Capital repayment over 25 years")).toBe("£1,124 a month");
+    expect(btlRow(result, "Extra each month")).toBe("£303");
+  });
+
+  it("total cost over the term is shown for both bases", () => {
+    expect(btlRow(result, "Total paid over 25 years, interest-only")).toBe("£246,094");
+    expect(btlRow(result, "Still owed at the end")).toBe("£187,500");
+    expect(btlRow(result, "Total paid over 25 years, capital repayment")).toBe("£337,077");
+    expect(btlRow(result, "Interest paid over 25 years")).toBe("£149,577");
+  });
+
+  it("cross-check: repayment total less the loan equals the interest shown", () => {
+    // 337,076.84 - 187,500 = 149,576.84, and both round to the pinned figures.
+    expect(Math.round(337_076.84 - 187_500)).toBe(149_577);
+    // Interest-only over the term is cheaper by less than the capital it never repays.
+    expect(337_077 - 246_094).toBeLessThan(187_500);
+  });
+
+  it("rent drives the cover rows at 125% and 145%", () => {
+    expect(btlRow(result, "Rental cover")).toBe("152.4%");
+    expect(btlRow(result, "Rent needed for 125%")).toBe("£1,025 a month");
+    expect(btlRow(result, "Rent needed for 145%")).toBe("£1,189 a month");
+  });
+
+  it("note keeps the rate honest and points at the stress test", () => {
+    expect(result.note).toContain("not a live quote");
+    expect(result.note).toContain("stress");
+    expect(result.note).toContain("not a quote or an offer of finance");
+  });
+});
+
+describe("GOLDEN: buy-to-let-mortgage-calculator (no rent entered)", () => {
+  const result = buyToLetMortgageCalculator.compute({
+    propertyValue: 250_000,
+    deposit: 62_500,
+    annualRate: 5.25,
+    termYears: 25,
+    monthlyRent: 0,
+  } as V);
+
+  it("drops all three cover rows when rent is 0", () => {
+    expect(result.rows?.length).toBe(10);
+    expect(result.rows?.some((r) => r.label.startsWith("Rental cover"))).toBe(false);
+    expect(result.rows?.some((r) => r.label.startsWith("Rent needed"))).toBe(false);
+  });
+
+  it("the mortgage figures are unaffected by the missing rent", () => {
+    expect(result.headline.value).toBe("£820");
+    expect(btlRow(result, "Capital repayment over 25 years")).toBe("£1,124 a month");
+  });
+});
+
+describe("GOLDEN: buy-to-let-mortgage-calculator (LTV maths)", () => {
+  const at = (deposit: number) =>
+    buyToLetMortgageCalculator.compute({
+      propertyValue: 250_000,
+      deposit,
+      annualRate: 5.25,
+      termYears: 25,
+      monthlyRent: 1_250,
+    } as V);
+
+  // 40% deposit: loan = 150,000, LTV = 60.0%
+  //   interest-only = 150,000 x 0.0525 / 12 = 656.25 -> £656
+  //   repayment     = 898.8716                       -> £899
+  //   cover         = 1,250 / 656.25 = 190.48%       -> 190.5%
+  const bigger = at(100_000);
+
+  it("a 40% deposit gives a 60.0% LTV and a £150,000 loan", () => {
+    expect(btlRow(bigger, "Loan amount")).toBe("£150,000");
+    expect(btlRow(bigger, "Loan to value")).toBe("60.0%");
+    expect(btlRow(bigger, "Deposit as a share")).toBe("40.0%");
+  });
+
+  it("the smaller loan costs £656 interest-only and £899 on repayment", () => {
+    expect(bigger.headline.value).toBe("£656");
+    expect(btlRow(bigger, "Capital repayment over 25 years")).toBe("£899 a month");
+  });
+
+  it("and the same rent covers it 190.5% over", () => {
+    expect(btlRow(bigger, "Rental cover")).toBe("190.5%");
+  });
+
+  // A deposit larger than the price cannot produce a negative loan.
+  it("a deposit above the price floors the loan at zero", () => {
+    const cash = at(300_000);
+    expect(btlRow(cash, "Loan amount")).toBe("£0");
+    expect(btlRow(cash, "Loan to value")).toBe("0.0%");
+    expect(cash.headline.value).toBe("£0");
+  });
+});
+
+describe("buy-to-let-mortgage-calculator: house-bar checks", () => {
+  it("a 0% rate degenerates to straight-line capital, not NaN", () => {
+    // 187,500 / 300 = £625 a month, £187,500 over the term, £0 interest.
+    const result = buyToLetMortgageCalculator.compute({
+      propertyValue: 250_000,
+      deposit: 62_500,
+      annualRate: 0,
+      termYears: 25,
+      monthlyRent: 0,
+    } as V);
+    expect(result.headline.value).toBe("£0");
+    expect(btlRow(result, "Capital repayment over 25 years")).toBe("£625 a month");
+    expect(btlRow(result, "Total paid over 25 years, capital repayment")).toBe("£187,500");
+    expect(btlRow(result, "Interest paid over 25 years")).toBe("£0");
+  });
+
+  it("carries workedExamples and related links (both were empty before)", () => {
+    expect(buyToLetMortgageCalculator.workedExamples?.length).toBe(2);
+    expect(buyToLetMortgageCalculator.related?.length).toBeGreaterThanOrEqual(4);
+    const hrefs = buyToLetMortgageCalculator.related?.map((r) => r.href) ?? [];
+    expect(hrefs).toContain("/calculators/buy-to-let-rental-stress-test-calculator");
+    expect(hrefs).toContain("/calculators/section-24-calculator");
+  });
+
+  it("meta fields stay inside the 60 / 155 limits", () => {
+    expect(buyToLetMortgageCalculator.metaTitle.length).toBeLessThanOrEqual(60);
+    expect(buyToLetMortgageCalculator.metaDescription.length).toBeLessThanOrEqual(155);
+  });
+
+  it("at most one statute reference in the page prose", () => {
+    const prose = [
+      buyToLetMortgageCalculator.intro,
+      ...buyToLetMortgageCalculator.explainer.paragraphs,
+      ...(buyToLetMortgageCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+    ].join(" ");
+    expect((prose.match(/Section 24/g) ?? []).length).toBe(1);
+  });
+
+  it("no em-dashes in any user-facing string", () => {
+    const result = buyToLetMortgageCalculator.compute(
+      defaults(buyToLetMortgageCalculator.fields) as V,
+    );
+    const copy = JSON.stringify(buyToLetMortgageCalculator) + JSON.stringify(result);
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+});
+
+// ============================================================
+// 17. GOLDEN: Combined BPR + APR allowance (IHTA 1984 s.124D)
+//
+// Ground truth: docs/property/house_positions.md §15.4 (+ §22.1 Pawson line).
+//   allowance   = £2,500,000 per person, x2 when the couples toggle is on
+//   available   = max(0, allowance - gifts since 30 Oct 2024)   [anti-forestalling]
+//   relieved100 = min(apr + bpr, available)                     [100% relief]
+//   excess      = (apr + bpr) - relieved100                     [50% relief]
+//   chargeable  = excess * 50% + aim * 50%                      [AIM = separate tier]
+//   iht         = chargeable * 40%
+//   effective rate on the excess = 40% x 50% = 20%
+//
+// A test failing here because the quantum has moved off £2,500,000 = STOP.
+// The GOV.UK reforms summary still says £1m (announcement stage, never updated);
+// s.124D(2)(a) as inserted by FA 2026 Sch 12 para 4 is the authority.
+// ============================================================
+const bprRow = (r: ReturnType<typeof bprAprAllowanceCalculator.compute>, label: string) =>
+  r.rows?.find((x) => x.label === label)?.value;
+
+describe("GOLDEN: bpr-apr-allowance-calculator (defaults, estate over the allowance)", () => {
+  const result = bprAprAllowanceCalculator.compute(defaults(bprAprAllowanceCalculator.fields) as V);
+
+  // Defaults: APR 1,800,000 + BPR 1,200,000, AIM 200,000, nothing consumed, single.
+  // combined    = 1,800,000 + 1,200,000 = 3,000,000
+  // available   = 2,500,000
+  // relieved100 = min(3,000,000, 2,500,000) = 2,500,000  -> remaining 0
+  // excess      = 3,000,000 - 2,500,000     =   500,000
+  // chgExcess   = 500,000 * 0.5             =   250,000
+  // chgAim      = 200,000 * 0.5             =   100,000
+  // chargeable  = 250,000 + 100,000         =   350,000
+  // iht         = 350,000 * 0.4             =   140,000
+  // of which the excess contributes 250,000 * 0.4 = 100,000 = 20% of 500,000
+  it("combined APR + BPR = £3,000,000", () => {
+    expect(bprRow(result, "Combined APR and BPR value entered")).toBe("£3,000,000");
+  });
+
+  it("allowance available = £2,500,000 (s.124D quantum, not the stale £1m)", () => {
+    expect(bprRow(result, "Allowance available for this transfer")).toBe("£2,500,000");
+  });
+
+  it("allowance remaining = £0", () => {
+    expect(bprRow(result, "Allowance remaining")).toBe("£0");
+  });
+
+  it("value relieved at 100% = £2,500,000", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£2,500,000");
+  });
+
+  it("value relieved at 50% = £500,000, chargeable £250,000", () => {
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£500,000");
+    expect(bprRow(result, "Chargeable value from the excess")).toBe("£250,000");
+  });
+
+  it("AIM sits in its own 50% tier and leaves the allowance alone", () => {
+    expect(bprRow(result, "AIM and unquoted shares at 50%, separate sub-tier")).toBe(
+      "£200,000, allowance untouched",
+    );
+    expect(bprRow(result, "Chargeable value from AIM and unquoted shares")).toBe("£100,000");
+  });
+
+  it("total chargeable = £350,000 and IHT at 40% = £140,000", () => {
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£350,000");
+    expect(bprRow(result, "Inheritance tax at 40%")).toBe("£140,000");
+    expect(result.headline.value).toBe("£140,000");
+  });
+
+  it("effective rate line = 20.0% of £500,000, which is £100,000", () => {
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "20.0% of £500,000, which is £100,000",
+    );
+  });
+
+  it("tone = warn once value spills above the allowance", () => {
+    expect(result.headline.tone).toBe("warn");
+    expect(result.headline.sub).toContain("£500,000");
+  });
+
+  it("no couples row unless the toggle is on", () => {
+    expect(bprRow(result, "Couples view, the allowance is transferable")).toBeUndefined();
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (zero inputs)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 0,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // Nothing entered: combined 0, relieved100 0, excess 0, remaining 2,500,000,
+  // chargeable 0, iht 0. Every money row is £0 and nothing is NaN.
+  it("headline IHT = £0", () => expect(result.headline.value).toBe("£0"));
+
+  it("whole allowance is still available", () => {
+    expect(bprRow(result, "Allowance available for this transfer")).toBe("£2,500,000");
+    expect(bprRow(result, "Allowance remaining")).toBe("£2,500,000");
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£0");
+  });
+
+  it("no excess, no chargeable value", () => {
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£0");
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£0");
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "Nil, nothing sits above the allowance",
+    );
+  });
+
+  it("tone stays neutral with nothing entered", () => {
+    expect(result.headline.tone).toBe("default");
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (exactly £2,500,000 combined)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 1_500_000,
+    businessValue: 1_000_000,
+    aimShares: 0,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // combined    = 1,500,000 + 1,000,000 = 2,500,000, exactly the allowance
+  // relieved100 = 2,500,000, excess = 0, remaining = 0
+  // chargeable  = 0, iht = 0. The boundary is inclusive: £2.5m is all at 100%.
+  it("all £2,500,000 relieved at 100%", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£2,500,000");
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£0");
+  });
+
+  it("allowance exactly exhausted, nothing chargeable", () => {
+    expect(bprRow(result, "Allowance remaining")).toBe("£0");
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£0");
+    expect(result.headline.value).toBe("£0");
+  });
+
+  it("tone = good when qualifying value is fully sheltered", () => {
+    expect(result.headline.tone).toBe("good");
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (excess, effective 20% line)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 4_000_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // combined    = 4,000,000
+  // relieved100 = 2,500,000, excess = 1,500,000
+  // chargeable  = 1,500,000 * 0.5 = 750,000
+  // iht         =   750,000 * 0.4 = 300,000, which is 20% of 1,500,000 exactly
+  it("excess = £1,500,000 relieved at 50%", () => {
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe(
+      "£1,500,000",
+    );
+    expect(bprRow(result, "Chargeable value from the excess")).toBe("£750,000");
+  });
+
+  it("IHT = £300,000, an effective 20% of the excess", () => {
+    expect(bprRow(result, "Inheritance tax at 40%")).toBe("£300,000");
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "20.0% of £1,500,000, which is £300,000",
+    );
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (AIM-only estate, allowance untouched)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 0,
+    businessValue: 0,
+    aimShares: 1_000_000,
+    allowanceConsumed: 0,
+    couple: false,
+  } as V);
+
+  // AIM is a SEPARATE 50% sub-tier per §15.4: it neither consumes nor uses the
+  // allowance. combined = 0, so relieved100 = 0 and remaining = 2,500,000.
+  // chargeable = 1,000,000 * 0.5 = 500,000; iht = 500,000 * 0.4 = 200,000,
+  // an effective 20% on the AIM holding however small the rest of the estate.
+  it("allowance is completely untouched by AIM", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£0");
+    expect(bprRow(result, "Allowance remaining")).toBe("£2,500,000");
+  });
+
+  it("AIM charged at an effective 20%: IHT = £200,000", () => {
+    expect(bprRow(result, "Chargeable value from AIM and unquoted shares")).toBe("£500,000");
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£500,000");
+    expect(result.headline.value).toBe("£200,000");
+  });
+
+  it("no excess line, because nothing entered used the allowance", () => {
+    expect(bprRow(result, "Effective rate on the value above the allowance")).toBe(
+      "Nil, nothing sits above the allowance",
+    );
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (anti-forestalling consumption)", () => {
+  // Gift of £1,000,000 of qualifying property in Jan 2025 (on or after 30 Oct 2024),
+  // death after 6 Apr 2026 and within 7 years, so it consumes allowance.
+  // available   = 2,500,000 - 1,000,000 = 1,500,000
+  // combined    = 2,000,000
+  // relieved100 = 1,500,000, remaining 0, excess = 500,000
+  // chargeable  = 250,000, iht = 100,000
+  const partly = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 2_000_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 1_000_000,
+    couple: false,
+  } as V);
+
+  it("prior gifts cut the available allowance to £1,500,000", () => {
+    expect(bprRow(partly, "Allowance available for this transfer")).toBe("£1,500,000");
+    expect(bprRow(partly, "Value relieved at 100%")).toBe("£1,500,000");
+    expect(bprRow(partly, "Value relieved at 50%, the excess above the allowance")).toBe("£500,000");
+    expect(partly.headline.value).toBe("£100,000");
+  });
+
+  it("note explains the 30 October 2024 anti-forestalling trigger", () => {
+    expect(partly.note).toContain("30 October 2024");
+    expect(partly.note).toContain("6 April 2026");
+  });
+
+  // Headroom driven to exactly zero: available = 2,500,000 - 2,500,000 = 0.
+  // combined 1,000,000 all falls to 50% relief: chargeable 500,000, iht 200,000.
+  const exhausted = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 1_000_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 2_500_000,
+    couple: false,
+  } as V);
+
+  it("a fully consumed allowance puts everything in the 50% band", () => {
+    expect(bprRow(exhausted, "Allowance available for this transfer")).toBe("£0");
+    expect(bprRow(exhausted, "Value relieved at 100%")).toBe("£0");
+    expect(bprRow(exhausted, "Value relieved at 50%, the excess above the allowance")).toBe(
+      "£1,000,000",
+    );
+    expect(bprRow(exhausted, "Total chargeable value after relief")).toBe("£500,000");
+    expect(exhausted.headline.value).toBe("£200,000");
+  });
+
+  // Over-consumption cannot produce a negative allowance.
+  const over = bprAprAllowanceCalculator.compute({
+    agriculturalValue: 500_000,
+    businessValue: 0,
+    aimShares: 0,
+    allowanceConsumed: 4_000_000,
+    couple: false,
+  } as V);
+
+  it("consumption beyond the allowance floors at zero, never negative", () => {
+    expect(bprRow(over, "Allowance available for this transfer")).toBe("£0");
+    expect(bprRow(over, "Allowance remaining")).toBe("£0");
+    // 500,000 * 0.5 = 250,000 chargeable; 250,000 * 0.4 = 100,000
+    expect(over.headline.value).toBe("£100,000");
+  });
+});
+
+describe("GOLDEN: bpr-apr-allowance-calculator (couples toggle, £5m view)", () => {
+  const result = bprAprAllowanceCalculator.compute({
+    ...(defaults(bprAprAllowanceCalculator.fields) as V),
+    couple: true,
+  } as V);
+
+  // Same estate as the defaults golden, but two transferable allowances:
+  // available   = 2,500,000 x 2 = 5,000,000
+  // combined    = 3,000,000, so relieved100 = 3,000,000 and excess = 0
+  // remaining   = 5,000,000 - 3,000,000 = 2,000,000
+  // chargeable  = AIM only, 200,000 * 0.5 = 100,000
+  // iht         = 100,000 * 0.4 = 40,000 (down from 140,000 single)
+  it("two allowances give £5,000,000 of headroom", () => {
+    expect(bprRow(result, "Allowance available for this transfer")).toBe("£5,000,000");
+    expect(bprRow(result, "Couples view, the allowance is transferable")).toBe(
+      "£2,500,000 each, £5,000,000 combined",
+    );
+  });
+
+  it("the whole £3,000,000 is now relieved at 100%, £2,000,000 spare", () => {
+    expect(bprRow(result, "Value relieved at 100%")).toBe("£3,000,000");
+    expect(bprRow(result, "Value relieved at 50%, the excess above the allowance")).toBe("£0");
+    expect(bprRow(result, "Allowance remaining")).toBe("£2,000,000");
+  });
+
+  it("only the AIM tier remains chargeable: IHT = £40,000", () => {
+    expect(bprRow(result, "Total chargeable value after relief")).toBe("£100,000");
+    expect(result.headline.value).toBe("£40,000");
+    expect(result.headline.tone).toBe("good");
+  });
+});
+
+describe("bpr-apr-allowance-calculator: house-bar checks", () => {
+  const result = bprAprAllowanceCalculator.compute(defaults(bprAprAllowanceCalculator.fields) as V);
+
+  it("note is honest about qualification being the hard part", () => {
+    expect(result.note).toContain("already qualifies");
+    expect(result.note).toContain("Pawson");
+    expect(result.note).toContain("occupation");
+  });
+
+  it("note puts nil-rate bands and RNRB out of scope", () => {
+    expect(result.note).toContain("Nil-rate bands");
+    expect(result.note).toContain("residence nil-rate band");
+    expect(result.note).toContain("out of scope");
+  });
+
+  it("the stale £1m announcement figure is never quoted as the cap", () => {
+    const prose = [
+      bprAprAllowanceCalculator.intro,
+      ...bprAprAllowanceCalculator.explainer.paragraphs,
+      ...(bprAprAllowanceCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+    ].join(" ");
+    expect(prose).toContain("£2,500,000");
+    // £1 million appears only where the FAQ debunks it, never as the allowance.
+    expect(prose).not.toContain("allowance of £1 million");
+  });
+
+  it("carries workedExamples and related links", () => {
+    expect(bprAprAllowanceCalculator.workedExamples?.length).toBe(2);
+    expect(bprAprAllowanceCalculator.related?.length).toBeGreaterThanOrEqual(4);
+  });
+
+  it("meta fields stay inside the 60 / 155 limits", () => {
+    expect(bprAprAllowanceCalculator.metaTitle.length).toBeLessThanOrEqual(60);
+    expect(bprAprAllowanceCalculator.metaDescription.length).toBeLessThanOrEqual(155);
+  });
+
+  it("no pricing in any user-facing string", () => {
+    const copy = JSON.stringify(bprAprAllowanceCalculator);
+    expect(copy).not.toMatch(/\bfrom £\d/);
+    expect(copy).not.toMatch(/\bper (month|hour)\b/i);
+  });
+
+  it("no em-dashes in any user-facing string", () => {
+    const copy = JSON.stringify(bprAprAllowanceCalculator) + JSON.stringify(result);
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+});
+
+// ============================================================
+// GOLDEN: Cost of Selling a House (Wave 12 Cluster A, 2026-08-21)
+//
+// The differentiator under test is the SPLIT: which selling costs come off a
+// capital gain and which do not. Ground truth house_positions.md §5.B —
+// TCGA 1992 s.38(1)(c) with the exhaustive s.38(2) list (agent commission,
+// conveyancing, advertising to find a buyer, professional fees) IN; removals,
+// storage, cleaning and mortgage redemption OUT; s.38(3) rules out interest.
+// CG14300: a private seller with no VAT set-off deducts the GROSS agent fee,
+// so every fee figure here is inclusive of VAT.
+//
+// The CGT estimate runs the SAME computeCgt engine as
+// capital-gains-tax-calculator, which is the chain: the deductible subtotal is
+// surfaced as the figure to type into that tool's combined costs field. A
+// figure diverging between the two tools = STOP.
+//
+// Defaults: salePrice 293,000 (HM Land Registry England avg, June 2026),
+// agentFeePct 1.42 (HOA 2026 average inc VAT), conveyancing 700, epc 80,
+// advertising 0, removals 550, letOrSecond false, purchasePrice 200,000,
+// otherIncome 50,000.
+//
+// Hand-derived:
+//   agent fee   = 293,000 x 1.42%              = 4,160.60 -> £4,161
+//   deductible  = 4,160.60 + 700 + 80          = 4,940.60 -> £4,941
+//   removals    = 550, no relief at either end
+//   total       = 5,490.60                     -> £5,491
+//   share       = 5,490.60 / 293,000 x 100     = 1.8739%  -> "1.9%"
+// ============================================================
+const cosRow = (result: ReturnType<typeof costOfSellingCalculator.compute>, startsWith: string) =>
+  result.rows?.find((r) => r.label.startsWith(startsWith))?.value;
+
+describe("GOLDEN: cost-of-selling-calculator (defaults, main home)", () => {
+  const result = costOfSellingCalculator.compute(defaults(costOfSellingCalculator.fields) as V);
+
+  it("agent fee = £4,161 at 1.42% inc VAT, and the rate is in the label", () => {
+    expect(cosRow(result, "Estate agent fee at 1.42% including VAT")).toBe("£4,161");
+  });
+
+  it("the itemised sell-side lines are conveyancing, EPC and removals", () => {
+    expect(cosRow(result, "Conveyancing for the sale")).toBe("£700");
+    expect(cosRow(result, "Energy performance certificate")).toBe("£80");
+    expect(cosRow(result, "Removals, which get no tax relief")).toBe("£550");
+  });
+
+  it("no advertising row when the field is left at zero", () => {
+    expect(cosRow(result, "Advertising to find a buyer")).toBeUndefined();
+  });
+
+  it("deductible subtotal = £4,941 (agent + conveyancing + EPC, removals excluded)", () => {
+    expect(cosRow(result, "Costs that come off a capital gain")).toBe("£4,941");
+  });
+
+  it("total cost of selling = £5,491", () => {
+    expect(cosRow(result, "Total cost of selling")).toBe("£5,491");
+    expect(result.headline.value).toBe("£5,491");
+  });
+
+  it("headline ties the total to the stated property value and the share of price", () => {
+    expect(result.headline.sub).toBe("On a £293,000 sale that is 1.9% of the price, with no tax to pay");
+  });
+
+  it("MAIN-HOME PATH: no CGT rows at all", () => {
+    expect(cosRow(result, "Gain before allowances")).toBeUndefined();
+    expect(cosRow(result, "Taxable gain")).toBeUndefined();
+    expect(cosRow(result, "Taxed at 18%")).toBeUndefined();
+    expect(cosRow(result, "Taxed at 24%")).toBeUndefined();
+    expect(cosRow(result, "Capital gains tax, estimated")).toBeUndefined();
+    expect(cosRow(result, "Figure for the CGT calculator")).toBeUndefined();
+    expect(result.headline.tone).toBeUndefined();
+  });
+
+  it("MAIN-HOME PATH: the note says PRR covers it, in plain words", () => {
+    expect(result.note).toContain("private residence relief");
+    expect(result.note).toContain("no capital gains tax line");
+  });
+
+  it("note names every default's source and states the England scope", () => {
+    expect(result.note).toContain("HomeOwners Alliance");
+    expect(result.note).toContain("£35 to £120");
+    // ADV-C2 fix: the removals default is attributed, not "one published
+    // estimate". HOA publishes £334 one-bedroom local / £731 three-bedroom.
+    expect(result.note).toContain("£334 for a one-bedroom local move");
+    expect(result.note).toContain("£731 for a three-bedroom one");
+    expect(result.note).not.toContain("one published estimate");
+    expect(result.note).toContain("figures are for England");
+  });
+});
+
+// Let property, same sale. Hand-derived through computeCgt:
+//   gain        = 293,000 - 200,000 - 4,940.60 = 88,059.40 -> £88,059
+//   AEA         = 3,000                        -> "−£3,000"
+//   taxable     = 85,059.40                    -> £85,059
+//   income 50,000: PA 12,570 leaves 37,430 in band, basic band 37,700,
+//   so unused basic band = 270.
+//   at 18%      = 270 x 0.18      =      48.60 -> £49
+//   at 24%      = 84,789.40 x .24 = 20,349.456 -> £20,349
+//   CGT         = 20,398.056                   -> £20,398
+//   headline    = 5,490.60 + 20,398.056        = 25,888.66 -> £25,889
+describe("GOLDEN: cost-of-selling-calculator (let property, the split path)", () => {
+  const result = costOfSellingCalculator.compute({
+    ...(defaults(costOfSellingCalculator.fields) as V),
+    letOrSecond: true,
+  } as V);
+
+  it("gain = £88,059, struck after the DEDUCTIBLE costs only", () => {
+    expect(cosRow(result, "Gain before allowances")).toBe("£88,059");
+  });
+
+  it("AEA row = minus £3,000", () => {
+    expect(cosRow(result, "Less the £3,000 annual allowance")).toBe("−£3,000");
+    expect(cosRow(result, "Taxable gain")).toBe("£85,059");
+  });
+
+  it("bands split 18% / 24% on the unused basic-rate band", () => {
+    expect(cosRow(result, "Taxed at 18%")).toBe("£49");
+    expect(cosRow(result, "Taxed at 24%")).toBe("£20,349");
+  });
+
+  it("CGT estimate = £20,398", () => {
+    expect(cosRow(result, "Capital gains tax, estimated")).toBe("£20,398");
+  });
+
+  it("headline = selling costs plus tax = £25,889, and says which is which", () => {
+    expect(result.headline.value).toBe("£25,889");
+    expect(result.headline.sub).toBe("£5,491 of selling costs plus about £20,398 of capital gains tax");
+    expect(result.headline.tone).toBe("warn");
+  });
+
+  it("CHAIN ROW: hands the deductible subtotal to the CGT calculator, not the total", () => {
+    expect(cosRow(result, "Figure for the CGT calculator's costs box")).toBe(
+      "£4,941 plus your buying and improvement costs",
+    );
+  });
+
+  it("CHAIN: the same figures through computeCgt directly, so the two tools agree", () => {
+    const direct = computeCgt({
+      salePrice: 293_000,
+      purchasePrice: 200_000,
+      costs: 4_940.6,
+      otherIncome: 50_000,
+      aeaUsed: false,
+    });
+    expect(gbp(direct.tax)).toBe("£20,398");
+    expect(gbp(direct.gain)).toBe("£88,059");
+  });
+
+  it("note keeps removals out of the deductible total and points at the full tool", () => {
+    expect(result.note).toContain("Removals are kept out of the deductible total");
+    expect(result.note).toContain("capital gains tax calculator");
+    expect(result.note).toContain("£4,941");
+  });
+
+  // §5.B wave-close position (2026-08-21): the seller's EPC may sit in the
+  // deductible bucket ONLY on the s.38(2)(b) marketing limb and ALWAYS with a
+  // one-clause hedge, never as a bare assertion. A bare EPC claim = STOP.
+  it("note carries the §5.B EPC hedge: marketing-limb basis plus the caveat", () => {
+    expect(result.note).toContain("as part of the cost of marketing the property");
+    expect(result.note).toContain("the official list does not name it");
+  });
+
+  // ADV-C5: the tool hardcodes aeaUsed:false, so it must say so.
+  it("note discloses that the £3,000 allowance is assumed unused", () => {
+    expect(result.note).toContain("not already used your £3,000 allowance");
+  });
+});
+
+// The differentiator, isolated: multiplying the NON-deductible line by nine
+// changes the cost total and must not move the gain or the tax by a penny.
+describe("GOLDEN: cost-of-selling-calculator (removals never touch the gain)", () => {
+  const base = defaults(costOfSellingCalculator.fields) as V;
+  const cheap = costOfSellingCalculator.compute({ ...base, letOrSecond: true } as V);
+  const expensive = costOfSellingCalculator.compute({
+    ...base,
+    letOrSecond: true,
+    removals: 5_000,
+  } as V);
+
+  it("a £5,000 removal bill raises the cost total to £9,941", () => {
+    expect(cosRow(expensive, "Total cost of selling")).toBe("£9,941");
+    expect(cosRow(cheap, "Total cost of selling")).toBe("£5,491");
+  });
+
+  it("but the deductible subtotal, the gain and the tax are unchanged", () => {
+    expect(cosRow(expensive, "Costs that come off a capital gain")).toBe("£4,941");
+    expect(cosRow(expensive, "Gain before allowances")).toBe(cosRow(cheap, "Gain before allowances"));
+    expect(cosRow(expensive, "Capital gains tax, estimated")).toBe(
+      cosRow(cheap, "Capital gains tax, estimated"),
+    );
+  });
+
+  it("advertising to find a buyer DOES move the deductible subtotal", () => {
+    // s.38(2)(b): advertising to find a buyer is on the exhaustive list.
+    // deductible = 4,940.60 + 1,000 = 5,940.60 -> £5,941
+    const advertised = costOfSellingCalculator.compute({
+      ...base,
+      letOrSecond: true,
+      advertising: 1_000,
+    } as V);
+    expect(cosRow(advertised, "Advertising to find a buyer")).toBe("£1,000");
+    expect(cosRow(advertised, "Costs that come off a capital gain")).toBe("£5,941");
+    // gain falls by the same £1,000: 88,059.40 - 1,000 = 87,059.40
+    expect(cosRow(advertised, "Gain before allowances")).toBe("£87,059");
+  });
+});
+
+// Band boundary. otherIncome 12,570 = the personal allowance exactly, so the
+// whole £37,700 basic-rate band is unused.
+//   sale 250,000, fee 1.42% = 3,550, + 700 + 80 = 4,330 deductible
+//   purchase 204,970 -> gain 40,700 -> taxable 37,700, EXACTLY the band
+//   tax = 37,700 x 18% = 6,786, and nothing at 24%
+// One pound more of gain puts £1 into the 24% band.
+describe("GOLDEN: cost-of-selling-calculator (18% / 24% band boundary)", () => {
+  const at = (purchasePrice: number) =>
+    costOfSellingCalculator.compute({
+      salePrice: 250_000,
+      agentFeePct: 1.42,
+      conveyancing: 700,
+      epc: 80,
+      advertising: 0,
+      removals: 0,
+      letOrSecond: true,
+      purchasePrice,
+      otherIncome: 12_570,
+    } as V);
+
+  const exact = at(204_970);
+
+  it("taxable gain exactly fills the basic-rate band: all £6,786 at 18%", () => {
+    expect(cosRow(exact, "Taxable gain")).toBe("£37,700");
+    expect(cosRow(exact, "Taxed at 18%")).toBe("£6,786");
+    expect(cosRow(exact, "Capital gains tax, estimated")).toBe("£6,786");
+  });
+
+  it("no 24% row while the gain stays inside the band", () => {
+    expect(cosRow(exact, "Taxed at 24%")).toBeUndefined();
+  });
+
+  const overBy1 = at(204_969);
+
+  it("one pound over the band and the 24% row appears", () => {
+    expect(cosRow(overBy1, "Taxable gain")).toBe("£37,701");
+    expect(cosRow(overBy1, "Taxed at 18%")).toBe("£6,786");
+    // 24p of tax: the row exists, and it rounds to £0 on display.
+    expect(cosRow(overBy1, "Taxed at 24%")).toBe("£0");
+  });
+});
+
+// AEA. Same sale, purchase set so the gain is exactly the £3,000 annual
+// exempt amount: taxable gain nil, tax nil, and no rate rows at all.
+describe("GOLDEN: cost-of-selling-calculator (£3,000 annual exempt amount)", () => {
+  const at = (purchasePrice: number) =>
+    costOfSellingCalculator.compute({
+      salePrice: 250_000,
+      agentFeePct: 1.42,
+      conveyancing: 700,
+      epc: 80,
+      advertising: 0,
+      removals: 550,
+      letOrSecond: true,
+      purchasePrice,
+      otherIncome: 12_570,
+    } as V);
+
+  const covered = at(242_670);
+
+  it("a gain of exactly £3,000 is fully covered: no tax", () => {
+    expect(cosRow(covered, "Gain before allowances")).toBe("£3,000");
+    expect(cosRow(covered, "Less the £3,000 annual allowance")).toBe("−£3,000");
+    expect(cosRow(covered, "Taxable gain")).toBe("£0");
+    expect(cosRow(covered, "Capital gains tax, estimated")).toBe("£0");
+  });
+
+  it("no rate rows when nothing is taxable", () => {
+    expect(cosRow(covered, "Taxed at 18%")).toBeUndefined();
+    expect(cosRow(covered, "Taxed at 24%")).toBeUndefined();
+  });
+
+  it("tone stays neutral and the headline is just the selling costs", () => {
+    // deductible 4,330 + removals 550 = 4,880; tax 0
+    expect(covered.headline.value).toBe("£4,880");
+    expect(covered.headline.tone).toBe("default");
+  });
+
+  it("the chain row still fires, because a nil bill still needs the costs carried over", () => {
+    expect(cosRow(covered, "Figure for the CGT calculator's costs box")).toBe(
+      "£4,330 plus your buying and improvement costs",
+    );
+  });
+
+  it("AEA sentinel: the allowance is £3,000, not a stale £6,000 or £12,300", () => {
+    // £1 more of gain and £1 becomes taxable.
+    const overBy1 = at(242_669);
+    expect(cosRow(overBy1, "Taxable gain")).toBe("£1");
+  });
+});
+
+describe("GOLDEN: cost-of-selling-calculator (zero and negative-proofing)", () => {
+  const zeroed = costOfSellingCalculator.compute({
+    salePrice: 0,
+    agentFeePct: 0,
+    conveyancing: 0,
+    epc: 0,
+    advertising: 0,
+    removals: 0,
+    letOrSecond: false,
+    purchasePrice: 0,
+    otherIncome: 0,
+  } as V);
+
+  it("everything at zero gives £0 and no NaN, including the share of price", () => {
+    expect(zeroed.headline.value).toBe("£0");
+    expect(zeroed.headline.sub).toBe("On a £0 sale that is 0.0% of the price, with no tax to pay");
+  });
+
+  it("negative entries floor at zero rather than producing a credit", () => {
+    const negative = costOfSellingCalculator.compute({
+      salePrice: 200_000,
+      agentFeePct: -2,
+      conveyancing: -500,
+      epc: 0,
+      advertising: 0,
+      removals: -100,
+      letOrSecond: false,
+      purchasePrice: 0,
+      otherIncome: 0,
+    } as V);
+    expect(negative.headline.value).toBe("£0");
+    expect(cosRow(negative, "Costs that come off a capital gain")).toBe("£0");
+  });
+
+  it("a sale at a loss cannot produce negative tax", () => {
+    const loss = costOfSellingCalculator.compute({
+      ...(defaults(costOfSellingCalculator.fields) as V),
+      letOrSecond: true,
+      purchasePrice: 400_000,
+    } as V);
+    expect(cosRow(loss, "Gain before allowances")).toBe("£0");
+    expect(cosRow(loss, "Capital gains tax, estimated")).toBe("£0");
+    expect(loss.headline.tone).toBe("default");
+  });
+});
+
+describe("cost-of-selling-calculator: house-bar checks", () => {
+  const prose = [
+    costOfSellingCalculator.intro,
+    ...costOfSellingCalculator.explainer.paragraphs,
+    ...(costOfSellingCalculator.faqs ?? []).flatMap((f) => [f.question, f.answer]),
+  ].join(" ");
+
+  const notes = [
+    costOfSellingCalculator.compute(defaults(costOfSellingCalculator.fields) as V).note ?? "",
+    costOfSellingCalculator.compute({
+      ...(defaults(costOfSellingCalculator.fields) as V),
+      letOrSecond: true,
+    } as V).note ?? "",
+  ].join(" ");
+
+  it("meta fields stay inside the 60 / 155 limits", () => {
+    expect(costOfSellingCalculator.metaTitle.length).toBeLessThanOrEqual(60);
+    expect(costOfSellingCalculator.metaDescription.length).toBeLessThanOrEqual(155);
+  });
+
+  it("no em-dashes or en-dashes in any user-facing string", () => {
+    const copy = JSON.stringify(costOfSellingCalculator) + notes;
+    expect(copy).not.toContain("—");
+    expect(copy).not.toContain("–");
+  });
+
+  it("no pricing of our own services", () => {
+    const copy = JSON.stringify(costOfSellingCalculator);
+    expect(copy).not.toMatch(/\bfrom £\d/);
+    expect(copy).not.toMatch(/\bper (month|hour)\b/i);
+  });
+
+  // Wave 12 language spec hard rule 4: zero hard statutory references in body
+  // prose. Ten of twelve measured winners cite no statute at all. The citations
+  // for this tool live in its source comments, which never render.
+  it("no hard statutory references anywhere in body prose, notes included", () => {
+    const body = prose + " " + notes;
+    expect(body).not.toMatch(/TCGA|Finance Act|legislation\.gov\.uk|section \d/i);
+    expect(body).not.toMatch(/\bCG\d{4,}\b/);
+  });
+
+  it("the removals correction is stated in plain words on the page", () => {
+    expect(prose).toContain("The removal van does not");
+    expect(prose.toLowerCase()).toContain("removals are not on it");
+  });
+
+  it("PRR is stated in plain words for the main-home reader", () => {
+    expect(prose).toContain("Private residence relief covers the gain");
+  });
+
+  it("landing copy opens on the cost question, not on the tax", () => {
+    expect(costOfSellingCalculator.intro.startsWith("How much will it cost you to sell your house?")).toBe(
+      true,
+    );
+    expect(costOfSellingCalculator.explainer.heading).toBe("How much does it cost to sell a house?");
+  });
+
+  it("every FAQ heading is a question, per the cluster spec", () => {
+    for (const f of costOfSellingCalculator.faqs ?? []) {
+      expect(f.question.endsWith("?"), `not a question: ${f.question}`).toBe(true);
+    }
+  });
+
+  it("negotiation advice carries a target number, never just 'fees are negotiable'", () => {
+    expect(prose).toContain("1.2%");
+    expect(prose).toContain("three quotes");
+  });
+
+  it("carries worked examples and related links, and chains to the CGT calculator", () => {
+    expect(costOfSellingCalculator.workedExamples?.length).toBe(2);
+    expect(costOfSellingCalculator.related?.length).toBeGreaterThanOrEqual(4);
+    const hrefs = (costOfSellingCalculator.related ?? []).map((r) => r.href);
+    expect(hrefs).toContain("/calculators/capital-gains-tax-calculator");
+  });
+
+  it("no named worked-example personas (wave rule)", () => {
+    const examples = JSON.stringify(costOfSellingCalculator.workedExamples);
+    expect(examples).not.toMatch(/\b(Gwen|Sarah|John|Emma|David|Priya|Tom)\b/);
+  });
+
+  // BLK-C1 / CALC-1: the printed worked example must add up as printed. The
+  // compute rounds 4,160.60 to £4,161, so the example shows the pence and
+  // names the rounding rather than printing a sum that fails on inspection.
+  it("worked example 1 adds up as printed, pence and all", () => {
+    const steps = (costOfSellingCalculator.workedExamples?.[0] as { steps: string[] }).steps;
+    expect(steps[0]).toContain("£4,160.60");
+    expect(steps[3]).toContain("£4,160.60 + £700 + £80 = £4,940.60");
+    expect(steps[3]).toContain("£4,941");
+    expect(steps[5]).toContain("£4,940.60 + £550 = £5,490.60");
+    // 4,160.60 + 700 + 80 = 4,940.60, and + 550 = 5,490.60. Both hold.
+    expect(4_160.6 + 700 + 80).toBeCloseTo(4_940.6, 2);
+    expect(4_940.6 + 550).toBeCloseTo(5_490.6, 2);
+  });
+
+  it("no prose figure sits a pound below the tool's own agent-fee output", () => {
+    // ADV-C1: the explainer and two FAQs said "about £4,160" where the results
+    // table renders £4,161.
+    expect(prose).not.toContain("£4,160,");
+    expect(prose).not.toContain("£4,160.");
+    expect(prose).toContain("about £4,161");
+  });
+
+  // Batch ruling 1: the boast class is deleted wave-wide.
+  it("carries no self-referential boast line", () => {
+    const copy = prose + " " + notes + " " + costOfSellingCalculator.oneLiner;
+    expect(copy).not.toMatch(/nobody else|no other (guide|page|tool)|almost no|leave[s]? out/i);
   });
 });

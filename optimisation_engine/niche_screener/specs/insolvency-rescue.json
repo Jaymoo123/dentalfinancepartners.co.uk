@@ -1,0 +1,27 @@
+{
+  "vertical": "company insolvency and rescue",
+  "provider_terms": [
+    "insolvency practitioner",
+    "liquidator",
+    "insolvency adviser"
+  ],
+  "pain_seeds": [
+    "cant pay bounce back loan",
+    "company liquidation cost",
+    "winding up petition hmrc",
+    "creditors voluntary liquidation",
+    "director personal liability",
+    "overdrawn directors loan account",
+    "close company with debts"
+  ],
+  "audience_terms": [
+    "company directors",
+    "limited companies"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "lead-market candidate insolvency-leadmkt (9 seller domains); strategy scan case values 3k-20k GBP"
+  ],
+  "name": "insolvency-rescue"
+}

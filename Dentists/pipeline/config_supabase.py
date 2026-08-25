@@ -177,7 +177,7 @@ GENERIC UK TAX (applies to dentists too):
 - Employer NI: 15% on earnings above £5,000/year (raised from 13.8%, threshold dropped from £9,100 in Autumn Budget 2024).
 - Employment Allowance 2025/26: £10,500.
 - Corporation tax: 19% small profits (up to £50,000), 25% main rate (above £250,000), marginal relief between.
-- Dividend allowance: £500. Dividend tax: 8.75% basic / 33.75% higher / 39.35% additional.
+- Dividend allowance: £500. Dividend tax 2026/27 (FA 2026 s.4): 10.75% basic / 35.75% higher / 39.35% additional (8.75%/33.75% applied only up to 5 April 2026).
 - CGT on shares & most assets: 18% basic / 24% higher (aligned with residential property from 30 Oct 2024).
 - CGT annual exempt amount: £3,000.
 - Business Asset Disposal Relief (BADR): 14% for 2025/26, rising to 18% from 6 April 2026. Lifetime limit £1m.

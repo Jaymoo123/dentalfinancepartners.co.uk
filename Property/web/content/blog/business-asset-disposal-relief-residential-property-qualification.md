@@ -178,7 +178,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The statutory source is <a href="https://www.legislation.gov.uk/ukpga/2025/17/section/8" rel="nofollow noopener" target="_blank">Finance Act 2025 s.8</a>, which amends TCGA 1992 s.169N to set the 14% rate from 6 April 2025 and the 18% rate from 6 April 2026. The historical 10% rate does not apply to any disposal made on or after 6 April 2025.</p>
+<p>The statutory source is <a href="https://www.legislation.gov.uk/ukpga/2025/8/section/8" rel="nofollow noopener" target="_blank">Finance Act 2025 s.8</a>, which amends TCGA 1992 s.169N to set the 14% rate from 6 April 2025 and the 18% rate from 6 April 2026. The historical 10% rate does not apply to any disposal made on or after 6 April 2025.</p>
 
 <p>The lifetime limit under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/169N" rel="nofollow noopener" target="_blank">TCGA 1992 s.169N(4)</a> remains £1 million. This cap applies across all qualifying BADR disposals made in a lifetime, regardless of how many disposals are made or across how many tax years. Qualifying gains you claimed BADR on in earlier years (at 10% or 14%) reduce the remaining lifetime headroom. Once the cumulative total reaches £1 million, no further BADR applies to subsequent qualifying disposals.</p>
 

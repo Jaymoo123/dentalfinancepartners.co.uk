@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "title": "UK Tech Startup Survival Curves",
+    "description": "How many UK tech startups survive their first five years, compared against the all-industry baseline, compiled from ONS Business Demography reference tables. Tracks successive birth cohorts (2019 to 2023) through to their latest available survival anniversary.",
+    "pullDate": "2026-07-23",
+    "lastUpdated": "2026-07-23",
+    "licence": "Open Government Licence v3.0 (OGL3). Reuse with attribution.",
+    "citeAs": "UK Tech Startup Survival Curves, derived from ONS Business Demography, UK: 2024 (Table 4.2, reference tables). Published under OGL3. Data pulled 2026-07-23.",
+    "methodology": "All figures are read directly from ONS Business Demography Table 4.2 (Survival of newly born enterprises by broad industry group). An enterprise 'births' in a given year if it is a new legal unit with no predecessor. Survival at N years means the enterprise was still active N years after birth, regardless of employment or turnover change. 'Information and communication' is ONS's broad industry group covering publishing, software, telecoms, broadcasting and IT services (SIC sections 58 to 63), a broader grouping than software-only. Counts are control-rounded to the base 5 by ONS. Only the 2019 birth cohort has a complete 5-year survival window in this edition; more recent cohorts (2020 to 2023) have progressively shorter windows because fewer years have elapsed since birth.",
+    "caveats": [
+      "'Information and communication' is a broad ONS industry group (SIC sections 58-63: publishing, software, telecoms, broadcasting, IT services), not a software/SaaS-only cut. It is the closest available official grouping to 'tech startups'.",
+      "Survival counts are control-rounded by ONS to the nearest 5, so percentages calculated from the published counts may differ very slightly from ONS's own published percentages (both are shown here; ONS's own percentage is used).",
+      "Only the 2019 birth cohort has a full 5-year survival reading in this edition. Later cohorts (2020-2023) are shown with only the survival horizons that have actually elapsed; cells marked as unavailable in the source ('suppressed pending data') are omitted, not treated as zero.",
+      "'Survival' means the enterprise remained on the statistical business register (broadly, still trading or dormant with an active VAT/PAYE registration); it does not measure profitability, growth, or founder outcome. A company can survive while shrinking, and a company can be a successful trade sale or wind-down (not a 'failure') while counting as dissolved.",
+      "This is an enterprise-level series (ONS Business Demography), separate from and not directly comparable to the Companies House incorporation/dissolution snapshot used in this site's other formation-tracking research pages."
+    ],
+    "sources": {
+      "ons_business_demography": {
+        "name": "Business Demography, UK: 2024",
+        "url": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/businessdemography/2024",
+        "datasetUrl": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable",
+        "xlsxUrl": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+        "licence": "Open Government Licence v3.0",
+        "publisher": "Office for National Statistics",
+        "pullDate": "2026-07-23"
+      }
+    }
+  },
+  "cohortSeries": [
+    {
+      "cohortYear": "2019",
+      "techBirths": 30080,
+      "allIndustryBirths": 363825,
+      "techSurvival": {
+        "1": {
+          "count": 28835,
+          "pct": 95.9
+        },
+        "2": {
+          "count": 23060,
+          "pct": 76.7
+        },
+        "3": {
+          "count": 16830,
+          "pct": 56.0
+        },
+        "4": {
+          "count": 13170,
+          "pct": 43.8
+        },
+        "5": {
+          "count": 11135,
+          "pct": 37.0
+        }
+      },
+      "allIndustrySurvival": {
+        "1": {
+          "count": 344135,
+          "pct": 94.6
+        },
+        "2": {
+          "count": 271925,
+          "pct": 74.7
+        },
+        "3": {
+          "count": 203470,
+          "pct": 55.9
+        },
+        "4": {
+          "count": 163725,
+          "pct": 45.0
+        },
+        "5": {
+          "count": 139845,
+          "pct": 38.4
+        }
+      }
+    },
+    {
+      "cohortYear": "2020",
+      "techBirths": 22455,
+      "allIndustryBirths": 333015,
+      "techSurvival": {
+        "1": {
+          "count": 21160,
+          "pct": 94.2
+        },
+        "2": {
+          "count": 16660,
+          "pct": 74.2
+        },
+        "3": {
+          "count": 12475,
+          "pct": 55.6
+        },
+        "4": {
+          "count": 10420,
+          "pct": 46.4
+        }
+      },
+      "allIndustrySurvival": {
+        "1": {
+          "count": 309470,
+          "pct": 92.9
+        },
+        "2": {
+          "count": 237400,
+          "pct": 71.3
+        },
+        "3": {
+          "count": 176410,
+          "pct": 53.0
+        },
+        "4": {
+          "count": 146415,
+          "pct": 44.0
+        }
+      }
+    },
+    {
+      "cohortYear": "2021",
+      "techBirths": 22350,
+      "allIndustryBirths": 363995,
+      "techSurvival": {
+        "1": {
+          "count": 21240,
+          "pct": 95.0
+        },
+        "2": {
+          "count": 16820,
+          "pct": 75.3
+        },
+        "3": {
+          "count": 13445,
+          "pct": 60.2
+        }
+      },
+      "allIndustrySurvival": {
+        "1": {
+          "count": 339920,
+          "pct": 93.4
+        },
+        "2": {
+          "count": 256265,
+          "pct": 70.4
+        },
+        "3": {
+          "count": 194685,
+          "pct": 53.5
+        }
+      }
+    },
+    {
+      "cohortYear": "2022",
+      "techBirths": 22455,
+      "allIndustryBirths": 336925,
+      "techSurvival": {
+        "1": {
+          "count": 21265,
+          "pct": 94.7
+        },
+        "2": {
+          "count": 17135,
+          "pct": 76.3
+        }
+      },
+      "allIndustrySurvival": {
+        "1": {
+          "count": 311110,
+          "pct": 92.3
+        },
+        "2": {
+          "count": 232125,
+          "pct": 68.9
+        }
+      }
+    },
+    {
+      "cohortYear": "2023",
+      "techBirths": 22380,
+      "allIndustryBirths": 316025,
+      "techSurvival": {
+        "1": {
+          "count": 21230,
+          "pct": 94.9
+        }
+      },
+      "allIndustrySurvival": {
+        "1": {
+          "count": 295140,
+          "pct": 93.4
+        }
+      }
+    }
+  ],
+  "sectorTwoYear": {
+    "cohortYear": "2022",
+    "rows": [
+      {
+        "industry": "Health",
+        "births": 10890,
+        "oneYearSurvivalPct": 96.6,
+        "twoYearSurvivalPct": 83.3
+      },
+      {
+        "industry": "Finance and insurance (Excl 6420)",
+        "births": 2775,
+        "oneYearSurvivalPct": 93.2,
+        "twoYearSurvivalPct": 79.5
+      },
+      {
+        "industry": "Education",
+        "births": 5000,
+        "oneYearSurvivalPct": 93.7,
+        "twoYearSurvivalPct": 77.6
+      },
+      {
+        "industry": "Professional, scientific and technical",
+        "births": 47445,
+        "oneYearSurvivalPct": 94.6,
+        "twoYearSurvivalPct": 77.0
+      },
+      {
+        "industry": "Information and communication",
+        "births": 22455,
+        "oneYearSurvivalPct": 94.7,
+        "twoYearSurvivalPct": 76.3
+      },
+      {
+        "industry": "Arts, entertainment, recreation and other services",
+        "births": 19090,
+        "oneYearSurvivalPct": 93.5,
+        "twoYearSurvivalPct": 74.1
+      },
+      {
+        "industry": "Property",
+        "births": 11825,
+        "oneYearSurvivalPct": 94.5,
+        "twoYearSurvivalPct": 73.9
+      },
+      {
+        "industry": "Motor trades",
+        "births": 7570,
+        "oneYearSurvivalPct": 92.9,
+        "twoYearSurvivalPct": 72.3
+      },
+      {
+        "industry": "Business administration and support services",
+        "births": 39965,
+        "oneYearSurvivalPct": 93.8,
+        "twoYearSurvivalPct": 70.3
+      },
+      {
+        "industry": "Construction",
+        "births": 49390,
+        "oneYearSurvivalPct": 93.5,
+        "twoYearSurvivalPct": 69.0
+      },
+      {
+        "industry": "Accommodation and food services",
+        "births": 28550,
+        "oneYearSurvivalPct": 93.4,
+        "twoYearSurvivalPct": 67.8
+      },
+      {
+        "industry": "Production",
+        "births": 15325,
+        "oneYearSurvivalPct": 91.5,
+        "twoYearSurvivalPct": 65.2
+      },
+      {
+        "industry": "Retail",
+        "births": 29420,
+        "oneYearSurvivalPct": 89.6,
+        "twoYearSurvivalPct": 64.1
+      },
+      {
+        "industry": "Wholesale",
+        "births": 10765,
+        "oneYearSurvivalPct": 92.0,
+        "twoYearSurvivalPct": 60.1
+      },
+      {
+        "industry": "Transport and storage (inc. postal)",
+        "births": 36460,
+        "oneYearSurvivalPct": 83.7,
+        "twoYearSurvivalPct": 49.6
+      }
+    ]
+  },
+  "headline": {
+    "fullFiveYearCohort": "2019",
+    "techFiveYearSurvivalPct": 37.0,
+    "allIndustryFiveYearSurvivalPct": 38.4,
+    "latestCohortYear": "2023",
+    "techOneYearSurvivalPctLatest": 94.9
+  }
+}

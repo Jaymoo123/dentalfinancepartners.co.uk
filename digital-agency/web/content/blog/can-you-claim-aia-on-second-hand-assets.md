@@ -17,7 +17,7 @@ faqs:
 - question: Can I claim AIA on a second-hand laptop for my agency?
   answer: Yes, in most cases. If you buy a second-hand laptop from an unrelated seller (eBay, a refurbisher, a liquidator), it qualifies for AIA. You claim 100% relief on the cost in the year of purchase. The exception is if you buy it from a connected person, such as your spouse or a company you control. In that case, you cannot claim AIA and must use writing down allowances instead.
 - question: What if I transfer my personal laptop into my limited company?
-  answer: You cannot claim AIA on assets you owned personally before using them in the business. HMRC rules state you cannot claim AIA on items you owned for another reason before starting to use them in your business. Instead, use the market value of the laptop at the date of transfer and claim writing down allowances at 18% per year on a reducing balance basis.
+  answer: You cannot claim AIA on assets you owned personally before using them in the business. HMRC rules state you cannot claim AIA on items you owned for another reason before starting to use them in your business. Instead, use the market value of the laptop at the date of transfer and claim writing down allowances at 14% per year on a reducing balance basis.
 - question: Does the £1 million AIA limit apply to second-hand assets?
   answer: Yes. The £1 million AIA limit applies to all qualifying plant and machinery purchases, whether new or second-hand. If you buy £50,000 of second-hand servers and £30,000 of new laptops in the same year, both count towards the same £1 million cap. The limit is per business, not per asset type.
 - question: Can I claim AIA on a second-hand van for my agency?
@@ -65,7 +65,7 @@ imageCredit:
 <li>A partner in a business you are involved in</li>
 <li>A trust where you are a beneficiary or trustee</li>
 </ul>
-<p>If you buy a second-hand asset from any of these people, you cannot claim AIA on it. You can still claim capital allowances through the main pool, but at a lower rate (typically 18% or 6% per year on a reducing balance basis).</p>
+<p>If you buy a second-hand asset from any of these people, you cannot claim AIA on it. You can still claim capital allowances through the main pool, but at a lower rate (typically 14% or 6% per year on a reducing balance basis). The main pool rate was cut from 18% to 14% by Finance Act 2026 section 28, with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax.</p>
 
 <h2>What About Assets You Already Owned?</h2>
 
@@ -87,7 +87,7 @@ imageCredit:
 
 <p>Some assets are excluded from AIA entirely, whether new or second-hand:</p>
 <ul>
-<li><strong>Cars</strong>, you cannot claim AIA on cars. You claim writing down allowances at 18% or 6% depending on CO2 emissions.</li>
+<li><strong>Cars</strong>, you cannot claim AIA on cars. You claim writing down allowances at 14% or 6% depending on CO2 emissions.</li>
 <li><strong>Assets used for leasing</strong>, if you buy equipment to lease to clients, AIA does not apply.</li>
 <li><strong>Assets with a useful life under two years</strong>, HMRC will normally accept that expenditure on an asset with a useful economic life of less than two years is revenue in nature <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. That means you deduct it as an expense, not a capital allowance.</li>
 <li><strong>Assets bought from a connected person</strong>, as explained above.</li>

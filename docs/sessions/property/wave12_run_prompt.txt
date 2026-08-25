@@ -1,0 +1,86 @@
+Wave 12 RUN writer prompt (conductor-authored 2026-08-21). One Opus writer per
+pick, dispatched as conductor subagents (single-lane wave; wt tabs not used).
+
+---
+
+You are a RUN Sub-Agent for Property Wave 12 (cost-of-selling). You write ONE
+page. You are a LEAF AGENT: no sub-agents. Work autonomously - do NOT pause
+for instructions; stop only when your page is written, self-verified and the
+tracker row is flipped, or at a real blocker (raise `## [Q-N]` in
+docs/property/wave12_questions_session_A.md with STATUS: open, then wait is
+NOT allowed - if the blocker gates only part of the page, write the rest and
+mark the gap in the work log; if it gates the whole page, stop after raising).
+
+READ FIRST, in order, all in C:/Users/user/Documents/Accounting:
+1. Your brief in FULL: briefs/property/wave12/<your-slug>.md (Stage 1 seed +
+   "## Stage 2 extensions"). The brief is your whole world for scope: keyword
+   coverage map, H2 skeleton, cost-table spec with per-figure sources,
+   beat-them plan, internal-link map, FAQ list. Anything you believe is
+   missing goes to the brief's work log as a delta, never into the page.
+2. briefs/property/wave12/_language_spec.md - your page type's measured
+   targets and the 14 hard rules. The register bar: this cluster's winners
+   run second person at ~54/1k (it is the baseline, not a lever), mean
+   sentence 15-18 words (a REAL lever here), Flesch floor 62 (route pages
+   68), hard statute at effectively zero in prose. THE PAGE OPENS ON THE
+   READER'S COST QUESTION, never on tax.
+3. docs/property/house_positions.md - the sections your brief cites, AS
+   PATCHED 2026-08-21 EVE (Stage 2b): §5.B (exhaustive s.38(2) list incl the
+   statutory advertising limbs, s.38(3) interest bar, CG14300 VAT rule =
+   private sellers deduct the GROSS fee, exchange-vs-completion two-date
+   trap, reservation-fee conditional), §1.Q (Sch 6A paras 1/2/3/4 as
+   corrected; developer's relief framing rule), §26.14 (sales-agent
+   regulation; £1,000 redress penalty, gov.uk's own page is wrong; CPUTR
+   revoked), §26.15, §39.A (SP2/04 scale + s.38(1)(b) peg + s.1K(7)).
+   The LOCK wins over your brief on any conflict; note it in the work log.
+
+THE PAGE:
+- File: Property/web/content/blog/<your-slug>.md. Frontmatter field set and
+  order copied EXACTLY from
+  Property/web/content/blog/business-asset-disposal-relief-residential-property-qualification.md
+  (all values double-quoted). category "Capital Gains Tax". canonical
+  https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/<your-slug>.
+  date "2026-08-21". generator "opus-4.8/netnew-wave". metaTitle <=60 chars,
+  metaDescription <=155 chars (CI limits; tighter than the old 62/158).
+  Include reviewedBy "Property Tax Partners Editorial Team" + a page-specific
+  reader-voice reviewerCredentials (no internal vocabulary, no build stamps)
+  + reviewedAt "2026-08-21" if the model file carries those fields.
+- Body = RAW HTML directly after the frontmatter (never markdown): <p>, <h2>,
+  <ul>/<li>, <table> only per your brief's table spec. Internal links
+  <a href="/blog/<category-slug>/<slug>">; external links
+  rel="nofollow noopener" target="_blank". Word band per your page type's
+  language-spec row (the old 2,800-3,500 floor is WITHDRAWN; the spec's
+  measured band wins). FAQ block 10-14 entries in frontmatter faqs: (the
+  deterministic gate counts them), questions in the reader's words.
+- The CGT hook is MANDATORY but sized per the brief: the hook paragraph plus
+  one worked line is the ceiling; CGT mechanics LINK to the armed CGT-cluster
+  pages named in your brief, never restated. No competing calculator; the
+  page links /calculators/cost-of-selling-calculator and the pillar
+  /cost-of-selling-a-property as if live (both build in this wave).
+- Every market figure carries its brief-verified source (named + dated) in
+  prose attribution or is labelled an illustrative range. Any figure without
+  a brief source is DECLINED, not guessed. Statutory figures come from the
+  locks. NO figure from memory, ever.
+- NO named worked-example personas (second person carries every example).
+  ZERO em-dashes and zero en-dashes outside numeric ranges. UK English. No
+  pricing for our services. No shared CTA template; never "We can produce a
+  written {noun} for/on your {noun}"; close on the reader's next action.
+- Middleware: your slug's SLUG_TO_CATEGORY_MAP entry is ALREADY ADDED by the
+  conductor. Do NOT edit middleware.ts, the tracker header, other pages,
+  house_positions.md, or any file except: your page, your brief's work log,
+  the tracker (your row only), the flags file (new F-flags in range F-178+
+  claiming the next free number AFTER checking the file), and the questions
+  file.
+
+SELF-VERIFY before finishing (record results in the brief work log):
+em-dash/en-dash count 0; your page-type register numbers measured (words,
+mean sentence, Flesch, you/1k, question-H2 share) and inside the spec bands;
+every internal link target exists on disk EXCEPT the pillar, the calculator
+and sibling Wave 12 pages (link them exactly as spelled); every figure traced
+to brief source or lock; FAQ count 10-14; metaTitle/metaDescription lengths.
+
+THEN: flip ONLY your tracker row in docs/property/wave12_page_tracker.md to
+"written" with body words + FAQ count filled in. Do NOT commit anything (the
+conductor commits the batch).
+
+RETURN: H2 skeleton, self-measured register numbers, figures declined (if
+any), flags/questions raised, one line on how the beat-them plan landed.

@@ -25,7 +25,7 @@ import { buildFaqJsonLd, buildOrganizationJsonLd } from "@/lib/schema";
 
 export function generateMetadata(): Metadata {
   return {
-    title: `Specialist Charity Accountants UK | ${siteConfig.name}`,
+    title: `Specialist Charity Accountants UK`,
     description:
       `Specialist accountants for UK charities, CIOs, CICs and social enterprises. Independent examination, SORP-compliant accounts, Gift Aid, charity VAT and trustee compliance.`,
     alternates: { canonical: siteConfig.url },
@@ -36,12 +36,12 @@ export function generateMetadata(): Metadata {
 const keyStats = [
   {
     value: "£25,000",
-    label: "Income threshold triggering external scrutiny",
+    label: "External scrutiny threshold (£40,000 for financial years ending on or after 30 Sep 2026)",
     href: "https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31",
   },
   {
     value: "£1m",
-    label: "Income threshold where audit becomes mandatory",
+    label: "Audit threshold (£1.5m for financial years ending on or after 30 Sep 2026)",
     href: "https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d",
   },
   {
@@ -59,7 +59,7 @@ const keyStats = [
 const servicesOverview = [
   {
     title: "Independent examination",
-    body: "For charities with income between £25,000 and the audit threshold. We conduct the examination, produce the examiner's report, and file with the Commission on time.",
+    body: "For charities with income between the examination threshold (£25,000, or £40,000 for financial years ending on or after 30 September 2026) and the audit threshold. We conduct the examination, produce the examiner's report, and file with the Commission on time.",
     href: "/services/independent-examination",
     Icon: FileCheck,
   },
@@ -97,7 +97,7 @@ const servicesOverview = [
 
 const complianceMoments = [
   {
-    title: "Crossing the £25,000 income threshold",
+    title: "Crossing the external scrutiny income threshold",
     body: (
       <>
         Once gross income passes{" "}
@@ -106,10 +106,11 @@ const complianceMoments = [
           className="underline underline-offset-2"
         >
           £25,000
-        </a>
-        , trustees must arrange external scrutiny for the first time. Many boards reach this
-        point mid-year and are unsure whether they need an independent examination or an
-        audit. We assess the right route and handle the engagement from there.
+        </a>{" "}
+        (£40,000 for financial years ending on or after 30 September 2026), trustees must
+        arrange external scrutiny for the first time. Many boards reach this point mid-year
+        and are unsure whether they need an independent examination or an audit. We assess
+        the right route and handle the engagement from there.
       </>
     ),
   },
@@ -213,12 +214,12 @@ const faqs = [
   {
     question: "When does a charity need an independent examination?",
     answer:
-      "Once gross income exceeds £25,000, trustees must arrange an independent examination or a full audit. At or below £25,000 no external scrutiny is required by the Charities Act, though the governing document may still require one. Above £250,000 income the examiner must be a member of one of the professional bodies listed in the Act.",
+      "For financial years ending before 30 September 2026, trustees must arrange an independent examination or a full audit once gross income exceeds £25,000; at or below £25,000 no external scrutiny is required by the Charities Act, though the governing document may still require one. Above £250,000 income the examiner must be a member of one of the professional bodies listed in the Act. For financial years ending on or after 30 September 2026 those gates rise to £40,000 and £500,000.",
   },
   {
     question: "When does a charity need a full audit?",
     answer:
-      "A statutory audit is mandatory where income exceeds £1m in the year, or where income exceeds £250,000 AND gross assets exceed £3.26m. A funder or governing document can require an audit below these thresholds. Independent examination is not permitted once the statutory audit gates are crossed (save in Commission-approved exceptional cases).",
+      "For financial years ending before 30 September 2026, a statutory audit is mandatory where income exceeds £1m in the year, or where income exceeds £250,000 AND gross assets exceed £3.26m. For financial years ending on or after 30 September 2026 the gates rise to £1.5m income, or £500,000 income with gross assets over £5m. A funder or governing document can require an audit below these thresholds. Independent examination is not permitted once the statutory audit gates are crossed (save in Commission-approved exceptional cases).",
   },
   {
     question: "Do you work with CICs as well as charities?",
@@ -228,7 +229,7 @@ const faqs = [
   {
     question: "Can you prepare SORP-compliant accounts?",
     answer:
-      "Yes. We prepare accruals accounts to the Charities SORP (FRS 102). For accounting periods starting on or after 1 January 2026 we apply SORP 2026. Non-company charities with income at or below £250,000 may use receipts and payments accounts; charitable companies must prepare accruals accounts regardless of size.",
+      "Yes. We prepare accruals accounts to the Charities SORP (FRS 102). For accounting periods starting on or after 1 January 2026 we apply SORP 2026. Non-company charities with income at or below £250,000 (£500,000 for financial years ending on or after 30 September 2026) may use receipts and payments accounts; charitable companies must prepare accruals accounts regardless of size.",
   },
   {
     question: "Do you handle Gift Aid claims?",
@@ -437,7 +438,10 @@ export default function HomePage() {
               Charity scrutiny thresholds at a glance (England and Wales)
             </h2>
             <p className="mt-2 text-sm text-emerald-200">
-              Scotland is regulated by OSCR with different requirements.{" "}
+              These figures apply to financial years ending before 30 September 2026. For years
+              ending on or after that date the scrutiny gates rise: examination £40,000, qualified
+              examiner and accruals £500,000, audit £1.5m income (or £500,000 income with assets
+              over £5m). Scotland is regulated by OSCR with different requirements.{" "}
               <a href="https://www.oscr.org.uk/" className="underline underline-offset-2 text-emerald-100 hover:text-white">
                 See OSCR
               </a>
@@ -485,7 +489,7 @@ export default function HomePage() {
                       £25,000
                     </a>
                   </th>
-                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">External scrutiny required: independent examination or audit</td>
+                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">External scrutiny required: independent examination or audit (£40,000 for financial years ending on or after 30 Sep 2026)</td>
                   <td className="px-4 py-3.5 sm:px-6 sm:py-4">
                     <a
                       href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31"
@@ -505,7 +509,7 @@ export default function HomePage() {
                       £1m
                     </a>
                   </th>
-                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">Statutory audit mandatory (also triggered by income over £250,000 with gross assets over £3.26m)</td>
+                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">Statutory audit mandatory (also triggered by income over £250,000 with gross assets over £3.26m; gates rise to £1.5m / £500,000 / £5m for financial years ending on or after 30 Sep 2026)</td>
                   <td className="px-4 py-3.5 sm:px-6 sm:py-4">
                     <a
                       href="https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d"

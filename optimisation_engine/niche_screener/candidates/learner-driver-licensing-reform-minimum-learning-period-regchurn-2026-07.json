@@ -1,0 +1,27 @@
+{
+  "candidate_id": "learner-driver-licensing-reform-minimum-learning-period-regchurn-2026-07",
+  "vertical": "learner driver licensing reform (minimum learning period)",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/introducing-a-minimum-learning-period-for-learner-drivers",
+      "excerpt": "Seeks feedback on proposals to introduce mandatory requirements that learner drivers must meet before taking a practical driving test for a category B licence.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "introducing a minimum learning period for learner drivers"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 1.5m provisional licence applicants per year (DVSA test volumes scale)",
+    "proof": "stated in https://www.gov.uk/government/consultations/introducing-a-minimum-learning-period-for-learner-drivers"
+  },
+  "event_hypothesis": {
+    "what": "extended lesson and insurance spend before test eligibility",
+    "date": "unnamed",
+    "source": "https://www.gov.uk/government/consultations/introducing-a-minimum-learning-period-for-learner-drivers"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

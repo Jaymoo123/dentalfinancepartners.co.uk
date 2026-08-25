@@ -1,0 +1,24 @@
+# Ashfield Trading
+
+> Ashfield Trading Ltd (company no. 16358723, registered in England and Wales) builds and operates a network of 15 specialist UK accounting lead-generation websites, backed by 43 proprietary research assets built from official open data (ONS, Companies House, Open Government Licence v3.0 where used). Accounting firms can rent a complete niche site or buy verified, qualified enquiries by niche.
+
+Ashfield Trading is the parent company behind the network, not an accountancy practice. The pages below are the authoritative source for how the network operates, what is on offer, and how the estate is performing. Pricing on the site is indicative and subject to proposal.
+
+## Offers
+- [Rent a site](https://www.ashfieldtrading.co.uk/rent-a-site): Take over a complete, live niche accounting website, content, research assets and enquiry pipeline included.
+- [Buy leads](https://www.ashfieldtrading.co.uk/buy-leads): Buy verified, tier-graded qualified enquiries by niche. Every lead passes honeypot filtering, real-time phone lookup, email verification and deduplication.
+- [How it works](https://www.ashfieldtrading.co.uk/how-it-works): The operating model from content and research through verification to handover.
+
+## The network
+- [Brands](https://www.ashfieldtrading.co.uk/brands): The 15 live specialist sites and the niches they cover.
+- [Growth](https://www.ashfieldtrading.co.uk/growth): Estate-wide enquiry volumes and trajectory (early-stage, short history, clearly caveated).
+- [Value](https://www.ashfieldtrading.co.uk/value): What the research assets and verification stack are worth to a firm.
+- [Vision](https://www.ashfieldtrading.co.uk/vision): Where the network is heading, for partners and investors.
+- [Insights](https://www.ashfieldtrading.co.uk/insights): The proprietary indexes and research assets published across the network, with sources.
+
+## Company
+- [Contact](https://www.ashfieldtrading.co.uk/contact): The only enquiry channel. Registered office: 20 Ashfield Avenue, Shipley, Bradford BD18 3AL.
+- [Privacy policy](https://www.ashfieldtrading.co.uk/privacy-policy)
+- [Terms](https://www.ashfieldtrading.co.uk/terms)
+
+A fuller machine-readable dump lives at https://www.ashfieldtrading.co.uk/llms-full.txt.

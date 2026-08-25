@@ -1,0 +1,330 @@
+{
+  "categories": {
+    "inheritance_tax_estate": {
+      "topics": [
+        {
+          "topic_title": "The 7-year rule and IHT on gifting property",
+          "search_intent": "Landlord/parent wants to know how the 7-year clock, taper and PETs apply when gifting a property or portfolio to children.",
+          "n_competitors": 257,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "gifting property tax uk", "imp": 5},
+            {"query": "gifting property tax", "imp": 4},
+            {"query": "gifting property and capital gains tax", "imp": 3}
+          ],
+          "closest_our_page": "iht-lifetime-gifts-7-year-rule-property-taper",
+          "suggested_angle": "Covered by 7-year-taper + iht-7-year-clock-property-gifting-mid-life-landlord-strategy + gifting-property-to-adult-children decision tree. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Gifts out of surplus income IHT exemption for landlords",
+          "search_intent": "Investor with rental surplus wants the normal-expenditure-out-of-income exemption (s.21 IHTA): how to gift rent profits IHT-free immediately, record-keeping, the 'normal'/'standard of living' tests.",
+          "n_competitors": 35,
+          "verdict": "net_new",
+          "demand": [
+            {"query": "gifting property tax uk", "imp": 5}
+          ],
+          "closest_our_page": "iht-lifetime-gifts-7-year-rule-property-taper",
+          "suggested_angle": "Net-new: no existing surplus/normal-expenditure-out-of-income page. Frame for landlords gifting rental SURPLUS income (not capital) IHT-free with no 7-year wait; IHT403 schedule + expenditure log. High-value adjacency to the 7-year gifting cluster we already own.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "Pensions now in the IHT estate from April 2027 (landlord legacy)",
+          "search_intent": "Landlord planning legacy wants to understand unused pensions being brought into IHT from Apr 2027 and how that reshapes the property-vs-pension drawdown decision.",
+          "n_competitors": 52,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "changes to iht april 2027", "imp": 3}
+          ],
+          "closest_our_page": "pension-iht-april-2027-landlord-estate-planning",
+          "suggested_angle": "Already covered by pension-iht-april-2027 + pension-decumulation-property-portfolio-iht-2027-cohort-sequence. Refresh figures only.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "HMRC inheritance tax investigations and valuation scrutiny",
+          "search_intent": "Estate/executor of a property-heavy estate worried about HMRC probes, IHT toolkit, property-valuation challenges and compliance enquiries on death.",
+          "n_competitors": 24,
+          "verdict": "net_new",
+          "demand": [],
+          "closest_our_page": "iht-rental-property-uk-guide",
+          "suggested_angle": "Net-new: no compliance/enquiry page. Angle: HMRC clamps on IHT property valuations, what triggers an enquiry on a portfolio estate, executor evidence pack. Rising-receipts narrative is the hook but the durable page is the valuation-scrutiny how-to.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Transferable and residence nil-rate bands for property estates",
+          "search_intent": "Couple/estate wants to claim the transferable NRB and RNRB (incl. 2m taper) on a home-plus-portfolio estate.",
+          "n_competitors": 10,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "iht allowance for couples", "imp": 1}
+          ],
+          "closest_our_page": "iht-residence-nil-rate-band-2m-taper-property-portfolios",
+          "suggested_angle": "Covered by RNRB 2m taper page + residence-nil-rate-band-frozen + spouse-exemption pages. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Trust registration with HMRC (TRS) for property trusts",
+          "search_intent": "Trustee of a BTL-holding trust needs to know if/when to register on the Trust Registration Service and penalties.",
+          "n_competitors": 26,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017",
+          "suggested_angle": "Covered by the TRS/MLR-2017 trust-owned-BTL page. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Life interest / IPDI trusts for the family home",
+          "search_intent": "Person wanting to protect a home/portfolio for a spouse then children via life-interest (IPDI/FLIT) trust.",
+          "n_competitors": 13,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "immediate-post-death-interest-ipdi-rental-property-tax-iht-1984-s49a",
+          "suggested_angle": "Covered by IPDI rental-property page + interest-in-possession page. Generic family-home life-interest is partly off-mission (residential, not portfolio). No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "IHT receipts hitting record highs / threshold freeze",
+          "search_intent": "News-led: reader sees IHT receipts climbing and wants to know if they will be caught by the frozen thresholds.",
+          "n_competitors": 30,
+          "verdict": "expand_existing",
+          "demand": [
+            {"query": "1 million inheritance tax threshold", "imp": 1}
+          ],
+          "closest_our_page": "residence-nil-rate-band-frozen",
+          "suggested_angle": "News/stat angle, low durability. Fold the freeze-drags-more-estates-in stat into existing frozen-band + summary pages rather than a standalone net-new.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "REITs as a property investment vehicle",
+          "search_intent": "Investor comparing direct BTL vs Real Estate Investment Trusts.",
+          "n_competitors": 37,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "tax-efficient-property-investment-structure-guide",
+          "suggested_angle": "Off-mission edge (mostly US/listed-equity intent). We are a hands-on landlord-tax brand, not a fund-investing brand. Mention in structure guide; no net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Life insurance written in trust to cover an IHT bill",
+          "search_intent": "Estate owner wants whole-of-life cover in trust to fund the IHT liability.",
+          "n_competitors": 20,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "DROPPED: life-insurance-product noise; IFA/protection territory, not property tax. Off-mission.",
+          "priority": "none"
+        }
+      ],
+      "counts": {"net_new": 2, "expand": 1, "already_covered": 6, "off_mission_dropped": 13}
+    },
+    "portfolio_strategy_structuring": {
+      "topics": [
+        {
+          "topic_title": "Tax-efficient profit extraction from a property company",
+          "search_intent": "Limited-company landlord wants the most tax-efficient mix (salary, dividends, director's loan, pension) to draw profits.",
+          "n_competitors": 16,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "tax-efficient property investment structure", "imp": 29}
+          ],
+          "closest_our_page": "property-company-profit-extraction-salary-vs-dividends",
+          "suggested_angle": "Deeply covered: salary-vs-dividends, director-loan-repayment, multi-company-group-extraction, pre-sale-extraction, extracting-cash-from-spv-pillar. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "When to expand vs hold a BTL portfolio in the current market",
+          "search_intent": "Landlord deciding whether to buy more/diversify (commercial, semi-commercial) given market conditions.",
+          "n_competitors": 20,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "property-portfolio-review-checklist-landlords-2026",
+          "suggested_angle": "Market-timing/news content, low tax durability. Portfolio-review-checklist + incorporation-timing cover the decision frame. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Property protection trust / property trust will",
+          "search_intent": "Homeowner wanting to protect the home's value (care fees, blended family) via a protective property trust in their will.",
+          "n_competitors": 12,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": "putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack",
+          "suggested_angle": "DROPPED as primary: residential-home / care-fee / will-trust intent (solicitor territory), not landlord-portfolio tax. Landlord trust angle already held by excluded-property-trust + settlor-interested + putting-rental-property-into-trust. Off-mission.",
+          "priority": "none"
+        }
+      ],
+      "counts": {"net_new": 0, "expand": 0, "already_covered": 2, "off_mission_dropped": 2}
+    },
+    "incorporation_company_ownership": {
+      "topics": [
+        {
+          "topic_title": "What is a property SPV and why landlords use one",
+          "search_intent": "Landlord researching the special-purpose-vehicle concept: what an SPV is, SIC codes, why it is used for BTL.",
+          "n_competitors": 18,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "spv property", "imp": 7},
+            {"query": "what is an spv", "imp": 4},
+            {"query": "what is an spv in property", "imp": 3}
+          ],
+          "closest_our_page": "spv-property-investment-special-purpose-vehicle-guide",
+          "suggested_angle": "Strong existing pillar (spv-property-investment guide + buy-to-let-limited-company-complete-guide). High aggregate SPV demand (~70 imp) is a META/title optimisation opportunity on the existing pillar, not net-new.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "How to set up a property SPV: step-by-step (formation, SIC code, costs)",
+          "search_intent": "Landlord ready to act wants the practical formation walkthrough: Companies House, SIC code 68209/68100, costs, AML, bank/mortgage.",
+          "n_competitors": 18,
+          "verdict": "expand_existing",
+          "demand": [
+            {"query": "spv company formation", "imp": 2},
+            {"query": "how to set up a spv company", "imp": 1},
+            {"query": "spv costs", "imp": 1},
+            {"query": "what sic code are spvs", "imp": 1}
+          ],
+          "closest_our_page": "how-to-set-up-property-investment-company-uk-guide",
+          "suggested_angle": "Existing how-to-set-up page partially serves this. The SIC-code + AML (estate-agency-business question) + costs cluster is a concrete expansion of that page; only go net-new if the existing page lacks the formation-mechanics section. Default expand.",
+          "priority": "medium"
+        },
+        {
+          "topic_title": "Should landlords own property through a limited company",
+          "search_intent": "Landlord weighing personal vs company ownership ('limited company the new normal').",
+          "n_competitors": 18,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "limited-company-vs-personal-ownership-tax-comparison-2026",
+          "suggested_angle": "Saturated: ltd-vs-personal comparison, should-i-incorporate-2026, how-to-choose-right-structure, buy-to-let-ltd-complete-guide. No net-new.",
+          "priority": "none"
+        }
+      ],
+      "counts": {"net_new": 0, "expand": 1, "already_covered": 2, "off_mission_dropped": 1}
+    },
+    "capital_gains_tax_property": {
+      "topics": [
+        {
+          "topic_title": "60-day CGT reporting and payment deadline for UK residential property",
+          "search_intent": "Seller of a BTL/second home needs the 60-day report-and-pay rule, the UK Property Account process and 2026/27 deadlines.",
+          "n_competitors": 117,
+          "verdict": "expand_existing",
+          "demand": [
+            {"query": "hmrc cgt reporting deadlines 2026", "imp": 160},
+            {"query": "hmrc cgt reporting requirements 2026", "imp": 117},
+            {"query": "60 day cgt return", "imp": 21},
+            {"query": "cgt return uk property", "imp": 23}
+          ],
+          "closest_our_page": "cgt-payment-deadlines-property-sales-2026",
+          "suggested_angle": "Massive demand (300+ imp). We have cgt-payment-deadlines-property-sales-2026 + non-resident-cgt-uk-property-rates-reporting. This is the single biggest title/meta + on-page optimisation target in the audit. Expand existing to explicitly own '60-day / report and pay / UK Property Account 2026/27'; consider a tightly-scoped net-new ONLY for '60-day CGT return: step-by-step on the UK Property Account' if the deadline page does not carry the filing walkthrough.",
+          "priority": "high"
+        },
+        {
+          "topic_title": "UK CGT rates on residential property 2026/27 (higher-rate, 18/24)",
+          "search_intent": "Seller wants the current residential CGT rates and bands for 2026/27.",
+          "n_competitors": 117,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "uk cgt rates residential property 2026", "imp": 216},
+            {"query": "uk cgt rates on residential property 2026", "imp": 80},
+            {"query": "cgt rates residential property uk 2026", "imp": 41}
+          ],
+          "closest_our_page": "cgt-rates-property-2026-27-current-rates-explained",
+          "suggested_angle": "Highest single-query demand (216 imp) but already owned by cgt-rates-property-2026-27 + cgt-property-sale-2026-rates-allowances. META/freshness optimisation, not net-new.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Principal Private Residence (PPR) relief",
+          "search_intent": "Owner wants PPR relief mechanics, final-period, electing main residence, landlord overlap.",
+          "n_competitors": 16,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "ppr", "imp": 138},
+            {"query": "ppr relief", "imp": 20},
+            {"query": "ppr relief hmrc", "imp": 11}
+          ],
+          "closest_our_page": "principal-private-residence-relief-landlords",
+          "suggested_angle": "Strong demand but covered: ppr-relief-landlords + ppr-relief-calculation-former-home + main-residence-election. Letting-relief change already at letting-relief-landlords-2026-changes. Optimise titles for the bare 'ppr' query; no net-new.",
+          "priority": "low"
+        },
+        {
+          "topic_title": "Non-resident CGT on UK property (NRCGT) and property-rich disposals",
+          "search_intent": "Non-UK-resident owner wants NRCGT rules, 60-day reporting, rebasing, indirect/property-rich disposals.",
+          "n_competitors": 25,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "non resident cgt on uk property", "imp": 23},
+            {"query": "cgt for non uk residents", "imp": 12},
+            {"query": "property rich - 60 day cgt non resident", "imp": 12}
+          ],
+          "closest_our_page": "non-resident-cgt-uk-property-rates-reporting",
+          "suggested_angle": "Well covered: non-resident-cgt rates/reporting + selling-overseas guide + nrcgt-indirect-disposal-property-rich + indirect-disposals-section-356od. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "CGT annual exempt amount 2026/27 and the path to it",
+          "search_intent": "Seller wants the current 3,000 AEA, what changed and any 2027 changes.",
+          "n_competitors": 117,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "changes to cgt annual exemption 2027", "imp": 41},
+            {"query": "cgt annual exemption 2026/27", "imp": 24},
+            {"query": "uk cgt annual exempt amount 2026", "imp": 21}
+          ],
+          "closest_our_page": "cgt-annual-exempt-amount-3000-allowance-2026-27",
+          "suggested_angle": "Owned by cgt-annual-exempt-amount-3000-2026-27. Add a 2027-outlook note. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "CGT on separation and divorce (no gain/no loss rules)",
+          "search_intent": "Separating/divorcing couple wants the post-2023 no-gain-no-loss transfer window and deferred-sale rules on the home/rentals.",
+          "n_competitors": 25,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "cgt-divorce-property-transfer-tax-implications",
+          "suggested_angle": "Covered by cgt-divorce-property-transfer + sdlt-divorce-separation-relief + time-pressure-extraction-divorce. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Rollover relief and CGT business reliefs for property",
+          "search_intent": "Trader/FHL-era owner wants rollover/holdover/BADR reliefs on property disposals.",
+          "n_competitors": 21,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "rollover-relief-property-landlords",
+          "suggested_angle": "Covered by rollover-relief-property-landlords + cgt-deferral-strategies. Mostly trading-asset/general-business intent (off-mission edge). No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "Business Asset Disposal Relief on exit",
+          "search_intent": "Owner exiting a property company/business wants BADR rate and eligibility (post-budget changes).",
+          "n_competitors": 20,
+          "verdict": "already_covered",
+          "demand": [],
+          "closest_our_page": "hmrcs-nudge-letters-on-business-asset-disposal-relief",
+          "suggested_angle": "BADR rarely applies to pure investment BTL (off-mission for most landlords). Covered via nudge-letters page + mvl-property-company-cgt. No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "How to avoid/reduce CGT when selling a property",
+          "search_intent": "Seller looking for legitimate ways to reduce a CGT bill on a sale.",
+          "n_competitors": 16,
+          "verdict": "already_covered",
+          "demand": [
+            {"query": "cgt on property", "imp": 16}
+          ],
+          "closest_our_page": "reduce-cgt-property-disposal-uk",
+          "suggested_angle": "Covered by reduce-cgt-property-disposal + property-improvements-reduce-cgt + cgt-deferral-strategies. Much of cluster is US 'home sale exclusion' (off-mission). No net-new.",
+          "priority": "none"
+        },
+        {
+          "topic_title": "CGT indexation allowance (historic)",
+          "search_intent": "Lookup of historic indexation factors (pre-2018) for old disposals.",
+          "n_competitors": 3,
+          "verdict": "off_mission",
+          "demand": [],
+          "closest_our_page": null,
+          "suggested_angle": "DROPPED: thin (3 competitors), data-table/calculator-style and largely defunct for individuals since 2008/companies since 2017. Not worth a page.",
+          "priority": "none"
+        }
+      ],
+      "counts": {"net_new": 0, "expand": 1, "already_covered": 8, "off_mission_dropped": 1}
+    }
+  }
+}

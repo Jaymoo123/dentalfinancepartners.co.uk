@@ -15,6 +15,7 @@
  */
 
 import { NextResponse, type NextRequest } from "next/server";
+import { pingHeartbeat } from "@/lib/heartbeat";
 import { timingSafeEqual } from "crypto";
 import { adminConfigured } from "@/lib/supabase/admin";
 import { leadNurtureArmed } from "@/lib/leads/channels";
@@ -57,13 +58,17 @@ async function run(req: NextRequest): Promise<NextResponse> {
     console.error("[lead-nurture-digest] heartbeat write failed", err);
   }
 
-  // Dormancy: no digest when the nurture system is disarmed.
+  // Dormancy: no digest when the nurture system is disarmed. Still pings the
+  // dead-man heartbeat: a disarmed-but-alive cron is not an incident.
   if (!leadNurtureArmed()) {
+    await pingHeartbeat(process.env.HEARTBEAT_DIGEST);
     return NextResponse.json({ ok: true, sent: false });
   }
 
   try {
     const r = await runNurtureDigest();
+    // Dead-man ping: fires only on a run that reached the end. Silence alerts.
+    await pingHeartbeat(process.env.HEARTBEAT_DIGEST);
     return NextResponse.json({ ok: true, sent: r.sent });
   } catch (err) {
     console.error("[lead-nurture-digest] unexpected error", err);

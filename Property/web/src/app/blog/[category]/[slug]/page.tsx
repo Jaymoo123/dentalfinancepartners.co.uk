@@ -6,6 +6,8 @@ import {
   getPostByCategoryAndSlug,
   getCategorySlug,
   getRelatedPosts,
+  categoryDisplayName,
+  firstSentence,
 } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
@@ -45,6 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "x-default": post.canonical,
       },
     },
+    ...(post.noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
@@ -55,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: post.dateModified ?? post.date,
       images: [
         {
-          url: post.image || buildOgImageUrl(post.h1, post.category),
+          url: post.image || buildOgImageUrl(post.h1, categoryDisplayName(getCategorySlug(post), post.category)),
           width: 1200,
           height: 630,
           alt: post.altText || post.title,
@@ -66,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
-      images: [post.image || buildOgImageUrl(post.h1, post.category)],
+      images: [post.image || buildOgImageUrl(post.h1, categoryDisplayName(getCategorySlug(post), post.category))],
     },
   };
 }
@@ -87,7 +90,9 @@ export default async function BlogPostPage({ params }: Props) {
   const related = getRelatedPosts(post.slug, post.category, 3).map((r) => ({
     slug: r.slug,
     title: r.title,
-    summary: r.summary,
+    // The card shows the article's opening line, not the frontmatter summary,
+    // which is written for search and runs to 1,000+ characters on some posts.
+    summary: firstSentence(r.contentHtml, r.summary),
     categorySlug: getCategorySlug(r),
   }));
 

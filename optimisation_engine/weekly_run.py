@@ -204,6 +204,45 @@ def step_ingest_ga4(sites: list[str]) -> dict[str, dict]:
     return run_ga4_ingestion(site_keys=ga4_sites, days=28)
 
 
+def step_competitor_watch(sites: list[str]) -> dict[str, dict]:
+    """Weekly competitor sitemap/RSS diff -> competitor_urls_seen + discovery_log.
+
+    Free (no DFS spend unless a future call passes serp_check=True, which this
+    cron path does not). Resilient per-site and to the import itself: a site
+    with no discovery.json / no competitors is skipped, a fetch or DB error
+    (including migration 20260815000001 not yet applied) is logged and never
+    breaks the rest of the weekly run.
+    """
+    print("\n" + "=" * 80)
+    print("[Step 1.6] Competitor sitemap watch (free)")
+    print("=" * 80)
+    try:
+        from optimisation_engine.discovery.competitor_watch import run as run_competitor_watch
+    except Exception as exc:
+        print(f"  [competitor_watch] import failed: {type(exc).__name__}: {exc}")
+        return {"error": f"import failed: {exc}"}
+
+    out: dict[str, dict] = {}
+    for s in sites:
+        disc_path = os.path.join(ROOT, "sites", f"{s}.discovery.json")
+        if not os.path.exists(disc_path):
+            continue
+        try:
+            with open(disc_path, encoding="utf-8") as f:
+                disc = json.load(f)
+        except Exception as exc:
+            print(f"  [competitor_watch] {s}: could not read discovery.json: {exc}")
+            continue
+        if not disc.get("competitors"):
+            continue
+        try:
+            out[s] = run_competitor_watch(s, dry_run=False)
+        except Exception as exc:
+            print(f"  [competitor_watch] {s} failed: {type(exc).__name__}: {exc}")
+            out[s] = {"error": str(exc)}
+    return out
+
+
 def step_ingest_dataforseo(*, sites: list[str], execute: bool) -> list[dict]:
     print("\n" + "=" * 80)
     print(f"[Step 2] DataForSEO ingestion ({'EXECUTE' if execute else 'DRY-RUN'})")
@@ -418,6 +457,7 @@ def main() -> None:
     parser.add_argument("--skip-bing", action="store_true")
     parser.add_argument("--skip-bing-ai", action="store_true")
     parser.add_argument("--skip-ga4", action="store_true")
+    parser.add_argument("--skip-competitor-watch", action="store_true")
     parser.add_argument("--skip-dataforseo", action="store_true")
     parser.add_argument("--dataforseo-dry-run", action="store_true", help="Run DFS planning but do not spend")
     parser.add_argument("--skip-detect", action="store_true")
@@ -465,6 +505,13 @@ def main() -> None:
         report["ga4"] = "skipped"
     else:
         report["ga4"] = step_ingest_ga4(sites)
+
+    # Step 1.6: Competitor sitemap watch (free — sitemap/RSS fetches only)
+    if args.skip_competitor_watch:
+        print("\n[Step 1.6] Competitor watch skipped via --skip-competitor-watch")
+        report["competitor_watch"] = "skipped"
+    else:
+        report["competitor_watch"] = step_competitor_watch(sites)
 
     # Step 2: DataForSEO
     if args.skip_dataforseo:

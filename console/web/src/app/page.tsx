@@ -37,7 +37,10 @@ import {
   getEstateTimeseries,
   type SiteKpis,
 } from "@accounting-network/web-shared/console/estateData";
-import { getTimeseries, getFunnelDaily } from "@accounting-network/web-shared/console/adminData";
+import {
+  getTimeseries,
+  getFunnelDaily,
+} from "@accounting-network/web-shared/console/adminData";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";

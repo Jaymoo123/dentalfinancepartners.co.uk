@@ -8,7 +8,7 @@ category: "Property Types & Specialist Tax"
 metaTitle: "TOMS VAT and Serviced Accommodation: The Sonder Verdict"
 metaDescription: "Tour Operators' Margin Scheme for serviced accommodation after the Sonder Europe Upper Tribunal reversal. Mechanics, registration impact, what works."
 altText: "Modern London waterfront apartment buildings reflected in the river, representing serviced accommodation stock operated by UK short-let providers"
-image: "https://images.pexels.com/photos/12087178/pexels-photo-12087178.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/12087178/pexels-photo-12087178.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: Vaan Photography
   photographer_url: https://www.pexels.com/@vaan-photos

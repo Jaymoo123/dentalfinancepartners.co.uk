@@ -4,7 +4,7 @@ import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 
 export const metadata: Metadata = {
-  title: `Free Hospitality Finance Calculators | ${site.name}`,
+  title: `Free Hospitality Finance Calculators`,
   description:
     "Free calculators for UK hospitality businesses: tronc and tips PAYE, food and drink VAT rates, and staff cost and rota margin. Built on current HMRC and gov.uk rules.",
   alternates: { canonical: `${site.url}/calculators` },

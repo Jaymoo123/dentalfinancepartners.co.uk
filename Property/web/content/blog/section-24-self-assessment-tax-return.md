@@ -117,6 +117,17 @@ faqs:
 </tbody>
 </table>
 
+<h2>Getting the boxes right</h2>
+
+<h3>Can you claim mortgage payments on Self Assessment?</h3>
+<p>Not the mortgage payment, only the interest inside it, and only as a 20% credit rather than as an expense. The capital repayment part of a monthly payment is not a finance cost and does not belong anywhere on the return. What you can claim is interest on buy-to-let and remortgage borrowing, interest on loans used to buy or improve a let property, interest on a deposit loan including one from family where it was genuinely used for the property, interest on bridging and development-bridge finance, and loan arrangement and broker fees spread over the term of the loan.</p>
+
+<h3>Does mortgage interest go into the finance-costs box or the expense boxes?</h3>
+<p>The finance-costs box, never the ordinary expense boxes. Residential finance costs are restricted under Section 24, so they must not appear in boxes 24 to 29 with agent fees, repairs and insurance; putting them there gives full relief instead of the restricted credit, understates your tax, and is an inaccuracy HMRC can correct with interest and penalties. The exception is commercial property: interest on a loan for a commercial let is still fully deductible and stays in the ordinary expense boxes, so split the interest where you hold both.</p>
+
+<h3>Do you enter the 20% figure or the full interest paid?</h3>
+<p>The full figure. Enter 100% of your allowable residential finance costs in the finance-costs box, gross, and leave the arithmetic to HMRC. There is no box where you calculate the 20% credit yourself, and entering a reduced figure would cut your relief to a fifth of what it should be. HMRC applies the restriction to 20% of the lowest of your finance costs, your property profits and your total income above your personal allowance, and shows the result in the tax calculation rather than on the property pages.</p>
+
 <h2>Worked example: basic-rate landlord</h2>
 <p>Priya has one flat. Rent of 14,000 pounds, running costs of 2,000 pounds, mortgage interest of 5,000 pounds, and a salary that keeps her within the basic-rate band even after the rent is added.</p>
 <ul>

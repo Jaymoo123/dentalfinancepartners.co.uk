@@ -6,7 +6,7 @@ date: "2026-05-28"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "ATED Penalties and Appeals: Full Architecture Guide"
-metaDescription: "ATED penalties: Sch 55 late filing, Sch 56 late payment, Sch 24 inaccuracy + offshore Cat-3 200% uplift; two-routes appeal, 30-day clock, OTM-letter context."
+metaDescription: "ATED penalties: Sch 55 late filing, Sch 56 late payment, Sch 24 inaccuracy + offshore Cat-3 200% uplift; two-routes appeal, 30-day clock"
 altText: "A solicitor's desk with a tax-disputes file and statute book open at FA 2009 Schedule 55, representing the ATED penalty regime"
 image: "https://images.pexels.com/photos/5668856/pexels-photo-5668856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

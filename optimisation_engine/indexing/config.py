@@ -74,6 +74,14 @@ SITE_INDEXNOW_CONFIG: dict[str, dict[str, str]] = {
         "host": "www.accountsforlawyers.co.uk",
         "key": "b5e67f188da49b020b33f4e8d08cb384",
     },
+    "wills-probate": {
+        "host": "www.probate-compass-placeholder.co.uk",
+        "key": "37e0691c896359206d633a53c60877c0",
+    },
+    "divorce-finances": {
+        "host": "www.placeholder-divorce-domain.example",
+        "key": "4d2abeb261e1ca7875c6f16ee1257ac4",
+    },
 }
 
 

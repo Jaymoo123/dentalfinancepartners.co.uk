@@ -14,6 +14,7 @@ import {
 import {
   AnnualIncorporationsChart,
   MonthlyIncorporationsChart,
+  ReformOverlayChart,
 } from "@/components/research/ContractorIndexCharts";
 import {
   fmtNumber,
@@ -24,7 +25,7 @@ import {
 import snapshot from "@/data/uk-contractor-index.json";
 
 const data = snapshot as unknown as ContractorIndexSnapshot;
-const { meta, headline, incorporations } = data;
+const { meta, headline, incorporations, reform_overlay } = data;
 const { decade } = headline;
 const PRIMARY = headline.primary_sic;
 
@@ -50,7 +51,7 @@ const faqs = [
   {
     question: "What does the UK Contractor Index measure?",
     answer:
-      `It counts new companies incorporated each month across ${SIC_COUNT} contractor-heavy Standard Industrial Classification (SIC) codes, drawn from Companies House public records. The headline figure tracks SIC 62020 (information technology consultancy activities), the archetypal personal service company (PSC) sector, alongside the deduplicated union of all ${SIC_COUNT} codes as a broader all-contractor figure. It spans IT and software, management consultancy, engineering and technical consulting, and creative and design work. Counts are gross: companies that have since been dissolved remain on the register, so there is no survivorship bias.`,
+      `It counts new companies incorporated each month across ${SIC_COUNT} contractor-heavy Standard Industrial Classification (SIC) codes, drawn from Companies House public records. The headline figure tracks SIC 62020 (information technology consultancy activities), the archetypal personal service company (PSC) sector, alongside the deduplicated union of all ${SIC_COUNT} codes as a broader all-contractor figure. It spans IT and software, management consultancy, engineering and technical consulting, and creative and design work. Counts are gross: the Companies House Advanced Search API counts companies by incorporation date across all statuses, so companies dissolved since formation are still included in the year they were formed and the series carries no survivorship bias.`,
   },
   {
     question: "Why use company incorporations as a proxy for the contractor economy?",
@@ -280,6 +281,75 @@ export default function UKContractorIndexPage() {
               </div>
             </Section>
 
+            {reform_overlay ? (
+              <Section id="reform-overlay" title="Did IR35 kill the PSC? The two reform dates">
+                <p>
+                  All-contractor company formations (the deduplicated union across all{" "}
+                  {SIC_COUNT} SIC codes) by year, with the two off-payroll (IR35) reform dates
+                  marked: April 2017, when the rules extended to the public sector, and April
+                  2021, when they extended to medium and large private sector engagers, the point
+                  at which most of the contractor market became affected.
+                </p>
+                <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                  <ReformOverlayChart
+                    annual={incorporations.annual}
+                    reformYears={reform_overlay.reform_dates.map((r) => ({
+                      year: Number(r.date.slice(0, 4)),
+                      label: r.label.replace("Off-payroll reform: ", ""),
+                    }))}
+                  />
+                </div>
+                <div className="not-prose mt-6 overflow-x-auto">
+                  <table className="w-full border-collapse text-sm">
+                    <thead>
+                      <tr className="border-b-2 border-neutral-300 text-left">
+                        <th className="py-2 pr-4 font-bold text-neutral-900">Era</th>
+                        <th className="py-2 pr-4 font-bold text-neutral-900 text-right">
+                          TTM union formations
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {reform_overlay.periods.map((p) => (
+                        <tr key={p.key} className="border-b border-neutral-200">
+                          <td className="py-2 pr-4 text-neutral-700">{p.label}</td>
+                          <td className="py-2 pr-4 text-right font-semibold text-neutral-900">
+                            {fmtNumber(p.ttm_union)}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <ul className="mt-4 space-y-2">
+                  {reform_overlay.deltas.map((d) => (
+                    <li key={`${d.from_period}-${d.to_period}`}>
+                      <strong>{d.label}:</strong> {fmtPercent(d.change_pct, true)} in trailing-12-month
+                      union formations{d.cagr_pct !== null ? ` (${fmtPercent(d.cagr_pct, true)} CAGR over ${d.years} years)` : ""}.
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-sm text-neutral-600">
+                  As independent context, HMRC&apos;s own published estimate is that the private
+                  sector reform raised an additional {reform_overlay.hmrc_context.additional_tax_label}{" "}
+                  in tax, National Insurance and the Apprenticeship Levy between{" "}
+                  {reform_overlay.hmrc_context.period}, affecting around{" "}
+                  {fmtNumber(reform_overlay.hmrc_context.contractors_affected)} contractors. That
+                  figure is a separate HMRC estimate, not derived from this dataset; the
+                  formations trend above is this site&apos;s own independent read on the same
+                  question.{" "}
+                  <a
+                    href={reform_overlay.hmrc_context.source_url}
+                    className="font-semibold text-cyan-800 hover:text-cyan-900"
+                    rel="nofollow"
+                  >
+                    {reform_overlay.hmrc_context.source_name}
+                  </a>
+                  .
+                </p>
+              </Section>
+            ) : null}
+
             <Section id="breakdown" title="By contractor sector">
               <p>
                 The table below breaks down new company formations in{" "}
@@ -340,8 +410,9 @@ export default function UKContractorIndexPage() {
                 consultancy (Division 70), engineering and technical consulting (Division 71), and
                 creative and design work (Divisions 73 and 74). The deduplicated union counts each
                 company once even where it registers under multiple of these SIC codes. Counts are
-                gross: a company that has since been dissolved still appears on the register, so the
-                series carries no survivorship bias. The most recent {meta.provisional_months.length}{" "}
+                gross: the Advanced Search API counts companies by incorporation date across all
+                company statuses, so companies that have since been dissolved are still included in
+                the year they were formed and the series carries no survivorship bias. The most recent {meta.provisional_months.length}{" "}
                 months are provisional and excluded from headline figures.
               </p>
               <p>

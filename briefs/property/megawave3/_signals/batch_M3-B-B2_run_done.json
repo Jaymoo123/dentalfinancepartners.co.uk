@@ -1,0 +1,26 @@
+{
+  "batch_id": "M3-B-B2",
+  "phase": "RUN",
+  "agent_id": "property-megawave3-b",
+  "completed_at": "2026-05-28T10:35:00Z",
+  "commit_shas": [
+    "2ad8f26b",
+    "9906ae8a",
+    "5eae3698",
+    "8dc55992",
+    "03fc4768",
+    "edebc44c"
+  ],
+  "slugs_done": [
+    "arriving-in-the-uk",
+    "ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal",
+    "ated-penalties-and-appeals",
+    "ated-rates",
+    "ated-relief-clawback-occupation-by-a-non-qualifying-occupation",
+    "ated-relief-for-related-persons-and-market-rent-a-complete-guide"
+  ],
+  "branch": "property-megawave3-b",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave3-b",
+  "bucket": "B - Non-resident landlords / NRL + Double Taxation Agreements (DTAs) + Leaving the UK / expat landlord tax + Overseas / international property + ATED (Annual Tax on Enveloped Dwellings)",
+  "notes": "RUN-phase Sub-Agent leaf agent; 6/6 picks committed on property-megawave3-b. Per-page six verifications passed on each (0 em-dashes, 0 Tailwind classes, 12-14 FAQs, metaTitle <=62, metaDescription <=158). Build step (npm run build) not run in worktree (no node_modules); manager to verify build at merge to main. monitored_pages registration deferred to manager post-merge."
+}

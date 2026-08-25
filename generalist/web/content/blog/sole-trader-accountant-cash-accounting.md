@@ -30,7 +30,7 @@ faqs:
 keyTakeaways:
   - "Cash basis became the default for all sole traders from 6 April 2024 under the Finance (No. 2) Act 2023, with no turnover ceiling."
   - "Under cash accounting you cannot claim capital allowances; instead, you deduct the full cost of most plant and machinery as an expense in the year you pay for it."
-  - "Simplified vehicle expenses for 2025/26 are 45p per mile for the first 10,000 business miles and 25p per mile thereafter for cars and vans, with motorcycles at 24p per mile."
+  - "Simplified vehicle expenses are 55p per mile for the first 10,000 business miles from 6 April 2026 (45p applied up to 2025/26) and 25p per mile thereafter for cars and vans, with motorcycles at 24p per mile."
   - "Working-from-home flat rates for sole traders are £10 per month (25 to 50 hours), £18 per month (51 to 100 hours), and £26 per month (101 or more hours)."
   - "MTD for Income Tax becomes mandatory from April 2026 for qualifying income over £50,000, April 2027 over £30,000, and April 2028 over £20,000."
   - "Once you opt out of cash basis and elect for accruals, you cannot revert to cash basis for 12 months."

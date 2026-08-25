@@ -30,7 +30,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - A specialist agency accountant provides monthly management accounts including gross margin by client and service line, not just annual compliance.
-- Generalist accountants often miss R&D tax credits worth up to £47,000 for agencies qualifying under the SME scheme with 186% enhanced deduction.
+- Generalist accountants often miss R&D tax credits worth up to £47,000 for agencies claiming under the merged R&D scheme, a single 20% taxable expenditure credit.
 - A proactive accountant plans your tax position 12–18 months ahead, including BADR exit planning before the lifetime limit of £1 million.
 - For agencies turning over more than £250,000, monthly management accounts within 10 working days are non-negotiable for strategic oversight.
 - Specialist accountants identify IR35 risks from contractor setups that could cost £30,000 in back taxes, unlike generalist compliance clerks.
@@ -83,7 +83,7 @@ keyTakeaways:
 
 <h3>R&D Tax Credit Support</h3>
 
-<p>Many creative and digital agencies qualify for R&D tax credits under the SME scheme. The enhanced deduction is 186% of qualifying costs. For a £100,000 project, that is £186,000 of additional deduction. A generalist accountant will miss this. A specialist will help you document the technical uncertainty, the systematic investigation, and the qualifying costs.</p>
+<p>Many creative and digital agencies qualify for R&D tax credits. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme applies: a single 20% taxable expenditure credit on qualifying costs, worth roughly 15% net after corporation tax (about 16.2% for a loss-maker). For a £100,000 qualifying spend, that is a £20,000 credit, around £15,000 net. The old 186% SME enhanced deduction applied only to periods beginning before 1 April 2024; loss-making R&D-intensive SMEs (spending at least 30% of total costs on R&D) can instead claim under ERIS. A generalist accountant will miss this. A specialist will help you document the technical uncertainty, the systematic investigation, and the qualifying costs.</p>
 
 <h3>IR35 and Contractor Management</h3>
 
@@ -155,7 +155,7 @@ keyTakeaways:
 <p>They should be able to explain the SDS process, the status determination test, and the implications of getting it wrong. They should ask you about your contractor arrangements during the discovery call, not after you sign.</p>
 
 <h3>4. What is your approach to R&D tax credits?</h3>
-<p>They should have a process for identifying qualifying projects, documenting the technical work, and preparing the claim. They should tell you about the 186% enhanced deduction and the cap on payable credits for loss-making companies.</p>
+<p>They should have a process for identifying qualifying projects, documenting the technical work, and preparing the claim. They should tell you about the merged R&D scheme's 20% taxable expenditure credit, the ERIS route for loss-making R&D-intensive SMEs, and the PAYE/NIC cap on payable credits.</p>
 
 <h3>5. How do you handle Making Tax Digital for ITSA?</h3>
 <p>MTD for ITSA is mandatory from April 2026 for self-employed individuals with £50,000 or more of qualifying income. If you are a sole director drawing a salary and dividends, this affects your personal tax return. Your accountant should have a plan for digital record-keeping, quarterly updates, and the transition from the current system.</p>

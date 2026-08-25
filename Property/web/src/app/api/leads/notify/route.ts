@@ -15,36 +15,37 @@
  * Covers every site (one shared `leads` table; the `source` column distinguishes
  * them), so the same endpoint + trigger serves property, dentists, medical,
  * solicitors, generalist, agency and contractors-ir35.
+ *
+ * Buyer offer pipeline: when a lead qualifies (sellable tier, offered vertical,
+ * non-Property), the notify email additionally carries the anonymised buyer
+ * teaser and a one-click "Offer to buyers" action link (scanner-safe confirm
+ * page behind it). With LEAD_OFFER_AUTO=1 the offer is sent to buyers directly
+ * with no owner click. Offer machinery is wrapped so it can never break the
+ * plain notification.
  */
 import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";
 import { getResend, getFromAddress } from "@/lib/resend";
 import { resolveLeadCc, resolveLeadTo, ccExcludedSources } from "@/lib/lead-routing";
-import { roleLabel, surfaceLabel } from "@/lib/leads/role-labels";
 import { scoreLeadValue } from "@/lib/leads/value-score";
+import {
+  buildLeadHtml,
+  buildLeadText,
+  prettySource,
+  type LeadRecord,
+} from "@/lib/leads/notify-email";
+import { offerQualifies, offerAutoMode, offerTierFor, tierPrice } from "@/lib/leads/offer-config";
+import { buildTeaser, tierLabel } from "@/lib/leads/offer-teaser";
+import {
+  sendOffers,
+  renderTeaserHtml,
+  renderTeaserText,
+  offerBaseUrl,
+} from "@/lib/leads/offer-send";
+import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 
 export const runtime = "nodejs";
-export const maxDuration = 30;
-
-type LeadRecord = {
-  id?: string;
-  created_at?: string;
-  submitted_at?: string;
-  full_name?: string;
-  email?: string;
-  phone?: string;
-  role?: string;
-  practice_name?: string;
-  message?: string;
-  source?: string;
-  source_url?: string;
-  status?: string;
-  consent_given?: boolean;
-  consent_text?: string;
-  consent_at?: string;
-  extras?: Record<string, unknown> | null;
-  is_test?: boolean;
-};
+export const maxDuration = 60;
 
 type WebhookPayload = {
   type?: string;
@@ -53,49 +54,6 @@ type WebhookPayload = {
   record?: LeadRecord;
 };
 
-// Scalar fields shown in the details table, in order. The lead name, the received
-// timestamp, the free-text message and the lead id are presented separately (header,
-// message block and footer), so they are not listed here. To add, remove or reorder
-// a table row, edit this array; `kind` controls how the value renders.
-// `optional: true` suppresses the row entirely when the value is empty (rather than
-// showing "Not provided"), suitable for supplementary fields like role_detail.
-//
-// Single source of truth for both the HTML table and the plain-text fallback.
-type DetailField = {
-  label: string;
-  get: (r: LeadRecord) => string | undefined;
-  kind?: "url" | "pill";
-  optional?: boolean;
-};
-const DETAIL_FIELDS: DetailField[] = [
-  { label: "Email", get: (r) => r.email },
-  { label: "Phone", get: (r) => r.phone },
-  { label: "Role", get: (r) => roleLabel(r.role) || undefined },
-  {
-    label: "In their words",
-    get: (r) => {
-      const d = r.extras?.role_detail;
-      return typeof d === "string" && d ? d : undefined;
-    },
-    optional: true,
-  },
-  {
-    label: "Came via",
-    get: (r) => {
-      const fid = r.extras?.form_id;
-      if (typeof fid !== "string" || !fid) return undefined;
-      return surfaceLabel(fid) ?? fid;
-    },
-    optional: true,
-  },
-  { label: "Company / practice", get: (r) => r.practice_name },
-  { label: "Site", get: (r) => prettySource(r.source) },
-  { label: "Source page", get: (r) => r.source_url, kind: "url" },
-  { label: "Submitted at", get: (r) => formatTimestamp(r.submitted_at) },
-  { label: "Status", get: (r) => r.status, kind: "pill" },
-  { label: "Data sharing", get: (r) => (r.consent_given ? "Confirmed at submission" : undefined) },
-];
-
 function secretsMatch(provided: string, expected: string): boolean {
   const a = Buffer.from(provided);
   const b = Buffer.from(expected);
@@ -103,175 +61,61 @@ function secretsMatch(provided: string, expected: string): boolean {
   return crypto.timingSafeEqual(a, b);
 }
 
-function formatTimestamp(iso?: string): string {
-  if (!iso) return "";
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return iso;
+// ---------------------------------------------------------------------------
+// Buyer offer block (appended to the owner notify email)
+// ---------------------------------------------------------------------------
+
+type OfferBlock = { html: string; text: string };
+
+/**
+ * Scores the lead and, when it qualifies for the buyer pipeline, returns the
+ * teaser + action link block for the owner email (or sends offers directly in
+ * auto mode). Never throws; any failure returns null and the plain notify email
+ * goes out unchanged. Non-qualifying leads still get scored (fire-and-forget,
+ * exactly the old behaviour).
+ */
+async function buildOfferBlock(r: LeadRecord): Promise<OfferBlock | null> {
   try {
-    return d.toLocaleString("en-GB", { timeZone: "Europe/London" });
-  } catch {
-    return iso;
+    const score = await scoreLeadValue(r);
+    if (!score || !offerQualifies(r, score)) return null;
+
+    const teaser = await buildTeaser(r, score);
+    const offerTier = offerTierFor(score) ?? "";
+    const price = tierPrice(offerTier);
+
+    if (offerAutoMode()) {
+      const result = await sendOffers(r.id!, (r.source ?? "").toLowerCase(), teaser);
+      const line =
+        result.offered > 0
+          ? `Auto-offered to ${result.offered} buyer${result.offered === 1 ? "" : "s"}: ${result.buyers.join(", ")}.`
+          : result.matched > 0
+            ? "Auto-offer attempted but no buyer emails were sent (already offered or send failure, check logs)."
+            : "Auto-offer skipped: no active buyers subscribe to this vertical/tier.";
+      return {
+        html: `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Buyer pipeline</p>
+               <p style="margin:0;color:#334155;font-size:14px;">${line}</p>`,
+        text: `BUYER PIPELINE\n${line}`,
+      };
+    }
+
+    const offerUrl = `${offerBaseUrl()}/api/leads/offer/${mintLeadToken(r.id!, "offer")}`;
+    return {
+      html: `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Buyer teaser (${tierLabel(offerTier)}${price !== null ? ` · £${price}` : ""})</p>
+             ${renderTeaserHtml(teaser, price)}
+             <table role="presentation" cellpadding="0" cellspacing="0" style="margin:16px 0 0;"><tr><td style="border-radius:6px;background-color:#0f172a;">
+               <a href="${offerUrl}" style="display:inline-block;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;padding:11px 22px;border-radius:6px;">Offer to buyers</a>
+             </td></tr></table>`,
+      text: `BUYER TEASER (${tierLabel(offerTier)}${price !== null ? `, £${price}` : ""})\n${renderTeaserText(teaser, price)}\n\nOffer to buyers: ${offerUrl}`,
+    };
+  } catch (err) {
+    console.error("leads/notify: offer block failed", err);
+    return null;
   }
 }
 
-function prettySource(source?: string): string {
-  if (!source) return "";
-  // 'property' -> 'Property', 'contractors-ir35' -> 'Contractors Ir35'
-  return source
-    .split(/[-_]/)
-    .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
-    .join(" ");
-}
-
-// Lead-supplied values are untrusted; escape before embedding in HTML.
-function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-// Renders one detail value. Empty values become a muted "Not provided" so the
-// table stays complete without looking unfinished; URLs become a wrapping link
-// and the status renders as a small pill.
-function renderCell(field: DetailField, r: LeadRecord): string {
-  const raw = (field.get(r) ?? "").toString().trim();
-  if (!raw) return `<span style="color:#94a3b8;">Not provided</span>`;
-  if (field.kind === "pill") {
-    return `<span style="display:inline-block;padding:3px 11px;border-radius:999px;background:#f1f5f9;border:1px solid #e2e8f0;color:#334155;font-size:12px;font-weight:700;letter-spacing:0.3px;text-transform:capitalize;">${escapeHtml(raw)}</span>`;
-  }
-  if (field.kind === "url") {
-    return `<a href="${escapeHtml(raw)}" style="color:#334155;text-decoration:underline;word-break:break-all;overflow-wrap:break-word;">${escapeHtml(raw)}</a>`;
-  }
-  return escapeHtml(raw).replace(/\n/g, "<br>");
-}
-
-// Neutral, site-agnostic design: this same template emails leads from every site
-// (the header label and the "Site" row identify which one), so it carries no
-// per-site brand colour. Navy header, white card, slate detail rows; long values
-// wrap inside the card and the message gets its own full-width block.
-function buildHtml(r: LeadRecord, partnerCopied: boolean): string {
-  const siteLabel = prettySource(r.source) || "Website";
-  const headerName = (r.full_name ?? "").trim() || "New website enquiry";
-  const received = formatTimestamp(r.created_at);
-  const message = (r.message ?? "").trim();
-
-  const detailRows = DETAIL_FIELDS
-    .filter((field) => {
-      if (!field.optional) return true;
-      const val = (field.get(r) ?? "").toString().trim();
-      return val.length > 0;
-    })
-    .map(
-      (field) => `<tr>
-                  <td style="padding:11px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:13px;font-weight:600;vertical-align:top;word-break:break-word;">${escapeHtml(field.label)}</td>
-                  <td style="padding:11px 0 11px 16px;border-bottom:1px solid #f1f5f9;color:#0f172a;font-size:14px;font-weight:500;vertical-align:top;word-break:break-word;overflow-wrap:break-word;">${renderCell(field, r)}</td>
-                </tr>`,
-    ).join("");
-
-  // Always render the message block so the field never silently disappears; an
-  // empty message shows a muted "Not provided" like the other detail fields, so
-  // it is obvious there was no message rather than leaving the reader unsure.
-  const messageCell = message
-    ? escapeHtml(message).replace(/\n/g, "<br>")
-    : `<span style="color:#94a3b8;">Not provided</span>`;
-  const messageBlock = `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Message</p>
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
-                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:14px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${messageCell}</td></tr>
-                </table>`;
-
-  // The exact data-sharing wording the enquirer was shown at submission (the
-  // acknowledgement under legitimate interests, or the consent text on sites that
-  // use consent). Surfaced so the lead is forward-ready with its own audit trail.
-  const statement = (r.consent_text ?? "").trim();
-  const statementBlock = statement
-    ? `<p style="margin:24px 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Data-sharing notice shown</p>
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
-                  <tr><td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;color:#334155;font-size:13px;line-height:1.6;word-break:break-word;overflow-wrap:break-word;">${escapeHtml(statement)}</td></tr>
-                </table>`
-    : "";
-
-  return `<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light only" />
-  </head>
-  <body style="margin:0;padding:0;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;">
-    <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#f1f5f9;">New ${escapeHtml(siteLabel)} lead: ${escapeHtml(headerName)}</div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;background:#f1f5f9;">
-      <tr>
-        <td align="center" style="padding:24px 16px;">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;">
-            <tr>
-              <td style="background:#0f172a;padding:26px 28px;">
-                <p style="margin:0 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">New ${escapeHtml(siteLabel)} lead</p>
-                <h1 style="margin:0;color:#ffffff;font-size:21px;font-weight:700;line-height:1.3;word-break:break-word;">${escapeHtml(headerName)}</h1>
-                ${received ? `<p style="margin:8px 0 0;color:#94a3b8;font-size:13px;">Received ${escapeHtml(received)}</p>` : ""}
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:24px 28px 28px;">
-                ${
-                  partnerCopied
-                    ? ""
-                    : (r.source ?? "").toLowerCase() === "property"
-                      ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;">
-                  <tr><td style="background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #b91c1c;border-radius:8px;padding:12px 16px;color:#7f1d1d;font-size:14px;font-weight:600;">Nurture in progress. Do NOT forward this yet. Wait for the separate READY handoff email, which arrives only once the lead is verified and has actively responded.</td></tr>
-                </table>`
-                      : ""
-                }
-                <p style="margin:0 0 4px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Lead details</p>
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;table-layout:fixed;">
-                  <colgroup><col style="width:140px;" /><col /></colgroup>
-                  ${detailRows}
-                </table>
-                ${messageBlock}
-                ${statementBlock}
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:18px 28px 22px;border-top:1px solid #e2e8f0;background:#ffffff;">
-                <p style="margin:0 0 3px;color:#94a3b8;font-size:12px;word-break:break-word;">Lead ID: ${escapeHtml(r.id || "Not provided")}</p>
-                <p style="margin:0;color:#cbd5e1;font-size:12px;">Automated notification · lead capture system</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>`;
-}
-
-function buildText(r: LeadRecord, partnerCopied: boolean): string {
-  const siteLabel = prettySource(r.source) || "Website";
-  const headerName = (r.full_name ?? "").trim() || "New website enquiry";
-  const received = formatTimestamp(r.created_at);
-  const message = (r.message ?? "").trim();
-
-  const lines: string[] = [`NEW ${siteLabel.toUpperCase()} LEAD`, headerName];
-  if (received) lines.push(`Received ${received}`);
-  if (!partnerCopied && (r.source ?? "").toLowerCase() === "property")
-    lines.push(
-      "",
-      "NURTURE IN PROGRESS. Do NOT forward this yet. Wait for the separate READY handoff email, which arrives only once the lead is verified and has actively responded.",
-    );
-  lines.push("", "LEAD DETAILS");
-  for (const field of DETAIL_FIELDS) {
-    const raw = (field.get(r) ?? "").toString().trim();
-    if (field.optional && !raw) continue;
-    lines.push(`${field.label}: ${raw || "Not provided"}`);
-  }
-  lines.push("", "MESSAGE", message || "Not provided");
-  const statement = (r.consent_text ?? "").trim();
-  if (statement) lines.push("", "DATA-SHARING NOTICE SHOWN", statement);
-  lines.push("", `Lead ID: ${r.id || "Not provided"}`);
-  return lines.join("\n");
-}
+// ---------------------------------------------------------------------------
+// Route
+// ---------------------------------------------------------------------------
 
 // Health probe: confirms the route is deployed and whether env is wired,
 // without leaking any secret values.
@@ -324,10 +168,21 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, skipped: "test-lead" });
   }
 
-  // Value scoring for the console's Lead Analytics page. Fire-and-forget: it
-  // never throws, and the notification email must never fail or slow because
-  // scoring failed. ponytail: upgrade to waitUntil if Vercel kills it early.
-  void scoreLeadValue(r).catch(() => {});
+  // Scoring + buyer offer preparation. Both branches now AWAIT the score:
+  // the old fire-and-forget (`void scoreLeadValue(r).catch(() => {})`) is the
+  // proven cause of 193/193 leads being graded manually - the route returned
+  // before the promise settled, Vercel froze the invocation, and the catch
+  // swallowed the evidence. Scoring adds ~1-2s to a webhook nobody is waiting
+  // on; a loud failure here is Sentry-visible and the email still sends.
+  const source = (r.source ?? "").toLowerCase();
+  let offerBlock: OfferBlock | null = null;
+  if (source && source !== "property" && source !== "test") {
+    offerBlock = await buildOfferBlock(r);
+  } else {
+    await scoreLeadValue(r).catch((err) =>
+      console.error("[notify] scoreLeadValue failed", err),
+    );
+  }
 
   // Recipient is source-aware (this one route serves every site): Property's own
   // leads go to the Ashfield Trading inbox (junayd@ashfieldtrading.com); every
@@ -340,6 +195,7 @@ export async function POST(req: NextRequest) {
   // defaults to "property"); an empty list here means no CC header is sent.
   const cc = resolveLeadCc(r.source);
   const partnerCopied = cc.length > 0;
+  const nurtureBanner = !partnerCopied && source === "property";
   const subject = `New ${prettySource(r.source) || "website"} lead${r.full_name ? `: ${r.full_name}` : ""}`;
 
   try {
@@ -348,8 +204,8 @@ export async function POST(req: NextRequest) {
       to,
       ...(cc.length ? { cc } : {}),
       subject,
-      html: buildHtml(r, partnerCopied),
-      text: buildText(r, partnerCopied),
+      html: buildLeadHtml(r, { nurtureBanner, extraHtml: offerBlock?.html }),
+      text: buildLeadText(r, { nurtureBanner, extraText: offerBlock?.text }),
       // No reply-to: the lead's address is never placed in the email headers,
       // so the lead can never be contacted from this notification.
     });

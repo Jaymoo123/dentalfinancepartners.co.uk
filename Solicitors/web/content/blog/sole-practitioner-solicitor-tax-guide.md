@@ -157,7 +157,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Practice management software</li>
 </ul>
 
-<p>Where spend exceeds what the AIA absorbs, items fall into the writing-down pools instead. The main-rate writing-down allowance is 18%, reducing to 14% from April 2026, while integral features such as electrical and heating systems sit in the special-rate pool at 6%. Cars sit outside the AIA and follow their own rules, with the rate of allowance depending on CO2 emissions; fully electric cars qualify for a 100% first-year allowance, while higher-emission vehicles attract reduced relief.</p>
+<p>Where spend exceeds what the AIA absorbs, items fall into the writing-down pools instead. The main-rate writing-down allowance is 14%, reduced from 18% with effect from April 2026, while integral features such as electrical and heating systems sit in the special-rate pool at 6%. Cars sit outside the AIA and follow their own rules, with the rate of allowance depending on CO2 emissions; fully electric cars qualify for a 100% first-year allowance, while higher-emission vehicles attract reduced relief.</p>
 
 <h2>VAT Considerations</h2>
 

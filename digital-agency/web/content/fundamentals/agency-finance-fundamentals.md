@@ -210,7 +210,7 @@ keyTakeaways:
 <p>If your clients are mostly VAT-registered businesses, standard accounting is usually better. If you work with consumers or exempt businesses, the flat rate scheme might help. Run the numbers both ways before deciding. You can change schemes after 12 months.</p>
 
 <h3>R&D Tax Credits for Agencies</h3>
-<p>More agencies qualify for R&D tax credits than realise it. If you're developing new software tools, automating reporting, building proprietary processes, or solving technical challenges that aren't routine, you may qualify. The SME scheme offers an enhanced 186% deduction on qualifying costs (pre-April 2023 it was 230%). For loss-making companies, you can surrender losses for a cash payment.</p>
+<p>More agencies qualify for R&D tax credits than realise it. If you're developing new software tools, automating reporting, building proprietary processes, or solving technical challenges that aren't routine, you may qualify. For accounting periods beginning on or after 1 April 2024, the merged R&D scheme gives a 20% taxable above-the-line credit, worth roughly 15p to 16.2p per £1 of qualifying spend after corporation tax. Loss-making, R&D-intensive SMEs (R&D of at least 30% of total spend) can instead claim enhanced relief worth up to about 27p per £1. For loss-making companies, you can take the credit as a cash payment.</p>
 
 <p>Creative agencies doing genuinely novel work, not just applying existing techniques, should investigate this. We've seen claims of £15k-£80k for mid-sized agencies. It's not free money, you need to document the technical uncertainty and the work done to resolve it. But it's worth the effort.</p>
 

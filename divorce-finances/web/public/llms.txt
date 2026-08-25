@@ -1,0 +1,5 @@
+# divorce-finances (brand pending)
+
+> Plain-English guidance on the money side of divorce and separation in the UK: financial settlements, pension sharing, tax on divorce, the family home, maintenance and the process itself.
+
+STUB (scaffold phase): this file is regenerated when the site's content and brand are live. No pages to cite yet.

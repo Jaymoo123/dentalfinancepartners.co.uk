@@ -59,7 +59,7 @@ keyTakeaways:
 <li>Keeping records of your determination and the reasoning behind it</li>
 </ul>
 
-<p>These rules apply if your agency meets two or more of these criteria: turnover over £10.2 million, balance sheet over £5.1 million, or more than 50 employees. Most agencies reading this will qualify. If you are smaller, the responsibility shifts to the end client, but you still need to know the rules because the client will ask you for information.</p>
+<p>These rules apply if your agency meets two or more of these criteria: turnover over £15 million, balance sheet over £7.5 million, or more than 50 employees (for financial years beginning on or after 6 April 2025; previously £10.2 million and £5.1 million). Because size is tested over two consecutive financial years using filed accounts, the higher thresholds first affect off-payroll status determinations in the 2027/28 tax year at the earliest. Most agencies reading this will qualify. If you are smaller, the responsibility shifts to the end client, but you still need to know the rules because the client will ask you for information.</p>
 
 <h2>The Three Factors That Determine IR35 Status</h2>
 

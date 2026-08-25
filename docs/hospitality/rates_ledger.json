@@ -1,0 +1,273 @@
+[
+  {
+    "key": "nlw_rate_21_plus",
+    "value": "12.71",
+    "unit": "£/hour",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/national-minimum-wage-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "nmw_rate_18_to_20",
+    "value": "10.85",
+    "unit": "£/hour",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/national-minimum-wage-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "nmw_rate_under_18_and_apprentice",
+    "value": "8.00",
+    "unit": "£/hour",
+    "applies_from": "2026-04-01",
+    "source_url": "https://www.gov.uk/national-minimum-wage-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "vat_registration_threshold",
+    "value": "90000",
+    "unit": "£",
+    "applies_from": "2024-04-01",
+    "source_url": "https://www.gov.uk/vat-registration/when-to-register",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "vat_standard_rate",
+    "value": "20",
+    "unit": "%",
+    "applies_from": "2011-01-04",
+    "source_url": "https://www.gov.uk/guidance/catering-takeaway-food-and-vat-notice-7091",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "frs_catering_rate",
+    "value": "12.5",
+    "unit": "%",
+    "applies_from": "2021-10-01",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/vat-flat-rate-scheme/frs7300",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to catering, licensed and unlicensed restaurants, cafes, sandwich shops, takeaways and mobile stands"
+  },
+  {
+    "key": "frs_pubs_rate",
+    "value": "6.5",
+    "unit": "%",
+    "applies_from": "2021-10-01",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/vat-flat-rate-scheme/frs7300",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to licensed clubs and public houses however managed"
+  },
+  {
+    "key": "frs_hotels_accommodation_rate",
+    "value": "10.5",
+    "unit": "%",
+    "applies_from": "2021-10-01",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/vat-flat-rate-scheme/frs7300",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to bed and breakfast, hotels, motels, self-catering, youth hostels, camping and caravan sites"
+  },
+  {
+    "key": "employer_nic_rate",
+    "value": "15",
+    "unit": "%",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions",
+    "verified_at": "2026-07-12",
+    "notes": "Rate above secondary threshold; same rate for 2025-26 and 2026-27"
+  },
+  {
+    "key": "employer_nic_secondary_threshold_annual",
+    "value": "5000",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "employer_nic_secondary_threshold_weekly",
+    "value": "96",
+    "unit": "£/week",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "employment_allowance",
+    "value": "10500",
+    "unit": "£/year",
+    "applies_from": "2025-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "tronc_nic_exempt",
+    "value": "yes",
+    "unit": "boolean",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim02922",
+    "verified_at": "2026-07-12",
+    "notes": "Condition: employer must not be involved in allocation directly or indirectly; income tax via PAYE still due"
+  },
+  {
+    "key": "mileage_rate_cars_first_10k",
+    "value": "55",
+    "unit": "p/mile",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "mileage_rate_cars_above_10k",
+    "value": "25",
+    "unit": "p/mile",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_rate_basic",
+    "value": "10.75",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_rate_higher",
+    "value": "35.75",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_rate_additional",
+    "value": "39.35",
+    "unit": "%",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "dividend_allowance",
+    "value": "500",
+    "unit": "£/year",
+    "applies_from": "2024-04-06",
+    "source_url": "https://www.gov.uk/tax-on-dividends",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "corporation_tax_small_profits_rate",
+    "value": "19",
+    "unit": "%",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to profits up to £50,000"
+  },
+  {
+    "key": "corporation_tax_main_rate",
+    "value": "25",
+    "unit": "%",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Applies to profits above £250,000; marginal relief between £50,000 and £250,000"
+  },
+  {
+    "key": "corporation_tax_small_profits_threshold",
+    "value": "50000",
+    "unit": "£",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "corporation_tax_main_rate_threshold",
+    "value": "250000",
+    "unit": "£",
+    "applies_from": "2023-04-01",
+    "source_url": "https://www.gov.uk/corporation-tax-rates",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "aia_limit",
+    "value": "1000000",
+    "unit": "£/year",
+    "applies_from": "2019-01-01",
+    "source_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+    "verified_at": "2026-07-12"
+  },
+  {
+    "key": "sbrr_full_relief_rv_ceiling",
+    "value": "12000",
+    "unit": "£ rateable value",
+    "applies_from": "2017-04-01",
+    "source_url": "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief",
+    "verified_at": "2026-07-12",
+    "notes": "100% relief; single property condition applies"
+  },
+  {
+    "key": "sbrr_taper_ceiling",
+    "value": "15000",
+    "unit": "£ rateable value",
+    "applies_from": "2017-04-01",
+    "source_url": "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief",
+    "verified_at": "2026-07-12",
+    "notes": "Relief tapers from 100% at £12,000 to 0% at £15,000"
+  },
+  {
+    "key": "rent_a_room_threshold",
+    "value": "7500",
+    "unit": "£/year",
+    "applies_from": "2016-04-06",
+    "source_url": "https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme",
+    "verified_at": "2026-07-12",
+    "notes": "Halved to £3,750 when income shared with another person; owner must reside in the property"
+  },
+  {
+    "key": "draught_relief_beer_wine_spirits_3p5_to_8p5_abv",
+    "value": "19.45",
+    "unit": "£/litre pure alcohol",
+    "applies_from": "2023-08-01",
+    "source_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Draught rate for beer, spirits, wine and other fermented products 3.5% to below 8.5% ABV"
+  },
+  {
+    "key": "draught_relief_still_cider_3p5_to_8p5_abv",
+    "value": "8.95",
+    "unit": "£/litre pure alcohol",
+    "applies_from": "2023-08-01",
+    "source_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Draught rate for still cider and sparkling cider 3.5% to 5.5% ABV"
+  },
+  {
+    "key": "packaged_beer_duty_3p5_to_8p4_abv",
+    "value": "22.58",
+    "unit": "£/litre pure alcohol",
+    "applies_from": "2023-08-01",
+    "source_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
+    "verified_at": "2026-07-12",
+    "notes": "Standard packaged rate for comparison with draught relief rate"
+  },
+  {
+    "key": "mtd_itsa_threshold_from_april_2026",
+    "value": "50000",
+    "unit": "£ annual income",
+    "applies_from": "2026-04-06",
+    "source_url": "https://www.gov.uk/guidance/sign-up-your-client-for-making-tax-digital-for-income-tax",
+    "verified_at": "2026-07-12",
+    "notes": "Sole traders and landlords with combined self-employment and property income over £50,000 must use MTD for Income Tax from 6 April 2026"
+  },
+  {
+    "key": "food_business_registration_notice_days",
+    "value": "28",
+    "unit": "days before trading",
+    "applies_from": "historic",
+    "source_url": "https://www.gov.uk/food-business-registration",
+    "verified_at": "2026-07-12",
+    "notes": "England, Wales and Northern Ireland; Scotland has equivalent requirements under separate legislation"
+  }
+]

@@ -1,0 +1,33 @@
+# Wave 11 picks — landlord compliance, leasehold, commercial.
+# Source: docs/property/WAVE11_HANDOFF.md §1 (owner-approved 2026-08-08),
+# preconditions cleared per §0-PRE (2026-08-15). Single lane per the
+# 2026-07-08 owner ruling (sites/property.json wave.buckets = ["a"]).
+# Framing differentiators + competitor URLs are appended per pick at Stage 0b
+# (A* addition 1: competitor packs, non-accountancy SERP set for this wave).
+wave: 11
+buckets:
+  A:
+    label: "Bucket A — landlord compliance, leasehold, commercial"
+    picks:
+      # --- Cluster B: landlord compliance (category: Landlord Tax Essentials) ---
+      - { id: A1,  slug: "eicr-certificate-cost-landlords",            label: "EICR certificate cost + duty cycle for landlords" }
+      - { id: A2,  slug: "landlord-electrical-safety-certificate",      label: "Landlord electrical safety certificate (EICR) obligations" }
+      - { id: A3,  slug: "fire-risk-assessment-cost",                   label: "Fire risk assessment cost + when a landlord needs one" }
+      - { id: A4,  slug: "landlord-licensing-explained",                label: "Landlord licensing: mandatory, additional, selective" }
+      - { id: A5,  slug: "gas-safety-certificate-cost",                 label: "Gas safety certificate cost (CP12) - cost-led angle" }
+      - { id: A6,  slug: "epc-certificate-cost-uk",                     label: "EPC certificate cost UK" }
+      - { id: A7,  slug: "how-to-book-an-epc",                          label: "How to book an EPC (process, timing, who to use)" }
+      - { id: A8,  slug: "mees-regulations-landlords",                  label: "MEES minimum energy efficiency standard for landlords" }
+      # --- Cluster C: leasehold (category: Property Types & Specialist Tax) ---
+      - { id: A9,  slug: "lease-extension-cost-uk",                     label: "Lease extension cost UK incl. marriage value" }
+      - { id: A10, slug: "lease-extension-solicitor-what-they-do",      label: "What a lease extension solicitor does + fees" }
+      - { id: A11, slug: "right-to-manage-explained",                   label: "Right to Manage explained" }
+      - { id: A12, slug: "right-to-manage-company-setup",               label: "Setting up an RTM company" }
+      - { id: A13, slug: "right-to-manage-process-steps",               label: "RTM process step by step" }
+      - { id: A14, slug: "service-charge-disputes-leaseholders",        label: "Service charge disputes and challenges" }
+      - { id: A15, slug: "ground-rent-rules-uk",                        label: "Ground rent rules UK" }
+      - { id: A16, slug: "leasehold-reform-act-2024-what-is-in-force",  label: "LAFRA 2024: what is actually in force (correction of record)" }
+      # --- Cluster D: commercial (category: Property Types & Specialist Tax) ---
+      - { id: A17, slug: "commercial-epc-requirements",                 label: "Commercial EPC requirements" }
+      - { id: A18, slug: "commercial-energy-performance-certificate-cost", label: "Commercial EPC cost" }
+      - { id: A19, slug: "commercial-property-mees-compliance",         label: "Commercial property MEES compliance" }

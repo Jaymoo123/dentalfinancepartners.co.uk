@@ -11,6 +11,12 @@ metaDescription: "The McCloud remedy rolled your 2015 to 2022 NHS pension back t
 altText: "Doctor reviewing an NHS pension remediable service statement at a desk"
 image: ""
 h1: "The McCloud Remedy and Your NHS Pension: What Doctors Need to Do at Retirement"
+keyTakeaways:
+- "On 1 October 2023 the remedy period service of every eligible member was automatically rolled back into their legacy 1995 or 2008 section, with no action required from the member."
+- "You are eligible only if you both joined the NHS Pension Scheme on or before 31 March 2012 and were an active member on 1 April 2015."
+- "The remedy period runs from 1 April 2015 to 31 March 2022, and from 1 April 2022 every active member accrues in the 2015 section regardless of any earlier protection."
+- "Under the Deferred Choice Underpin you pick legacy or 2015 benefits for the remedy period when you apply to take your pension, not now, and you are guaranteed the better of the two."
+- "Because the pension input amounts for 2015/16 to 2021/22 can change, a historic annual allowance charge may be reduced, refunded or newly created, all reconciled through the HMRC public service pensions remedy digital service."
 summary: "The mandatory half of the McCloud remedy is finished. Your 2015 to 2022 service was rolled back to the legacy scheme on 1 October 2023, and the only live decision is the choice you make at retirement. This guide explains what happened automatically, who is eligible and how the tax side is reconciled."
 schema: ""
 faqs:

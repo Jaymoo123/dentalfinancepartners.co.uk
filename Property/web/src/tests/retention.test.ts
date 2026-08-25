@@ -26,7 +26,7 @@ vi.mock("@/lib/supabase/admin", () => ({
 }));
 
 vi.mock("@/config/site", () => ({
-  siteConfig: { company: { enquiryRetentionMonths: 3 } },
+  siteConfig: { company: { enquiryRetentionMonths: 24 } },
 }));
 
 // ---------------------------------------------------------------------------
@@ -120,6 +120,8 @@ describe("retentionCutoffIso", () => {
 const RET_LEAD_ID = "lead-ret-001";
 const RET_NOW_MS = Date.UTC(2026, 6, 7, 12, 0, 0); // 2026-07-07T12:00:00.000Z
 const RET_NOW_ISO = new Date(RET_NOW_MS).toISOString();
+// Well past the 24-month period Property publishes (3 months until 2026-08-17).
+const RET_OLD_ISO = "2024-01-05T09:00:00.000Z";
 
 describe("runLeadRetentionPurge extras scrub", () => {
   beforeEach(() => {
@@ -134,6 +136,8 @@ describe("runLeadRetentionPurge extras scrub", () => {
       data: [
         {
           id: RET_LEAD_ID,
+          source: "property",
+          created_at: RET_OLD_ISO,
           email: "jane@example.com",
           extras: {
             form_id: "exit_intent",
@@ -160,7 +164,8 @@ describe("runLeadRetentionPurge extras scrub", () => {
     mockAdminSelectRet.mockResolvedValue({
       ok: true,
       status: 200,
-      data: [{ id: RET_LEAD_ID, email: "jane@example.com", extras: null }],
+      data: [{ id: RET_LEAD_ID, email: "jane@example.com", source: "property",
+               created_at: RET_OLD_ISO, extras: null }],
     });
 
     await runLeadRetentionPurge({ dryRun: false, nowMs: RET_NOW_MS });
@@ -178,7 +183,8 @@ describe("runLeadRetentionPurge extras scrub", () => {
       ok: true,
       status: 200,
       data: [
-        { id: RET_LEAD_ID, email: "jane@example.com", extras: { role_detail: "Executor" } },
+        { id: RET_LEAD_ID, email: "jane@example.com", source: "property",
+          created_at: RET_OLD_ISO, extras: { role_detail: "Executor" } },
       ],
     });
 
@@ -196,6 +202,8 @@ describe("runLeadRetentionPurge extras scrub", () => {
       data: [
         {
           id: RET_LEAD_ID,
+          source: "property",
+          created_at: RET_OLD_ISO,
           email: "redacted@invalid",
           extras: { anonymised_at: "2026-04-01T00:00:00.000Z", role_detail: "old" },
         },

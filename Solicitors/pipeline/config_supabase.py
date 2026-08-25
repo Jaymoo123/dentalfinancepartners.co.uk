@@ -192,7 +192,7 @@ GENERIC UK TAX:
 - Self-employed NI: Class 4 at 6% (£12,570-£50,270), 2% above. Class 2 abolished April 2024.
 - Employer NI: 15% on earnings above £5,000/year (from Autumn Budget 2024).
 - Corporation tax: 19% (up to £50,000), 25% (above £250,000), marginal relief between.
-- Dividend allowance: £500. Dividend tax: 8.75% / 33.75% / 39.35%.
+- Dividend allowance: £500. Dividend tax 2026/27 (FA 2026 s.4): 10.75% / 35.75% / 39.35% (8.75%/33.75% applied only up to 5 April 2026).
 - CGT: 18% basic / 24% higher.
 - BADR: 14% in 2025/26, 18% from 6 April 2026. Lifetime limit £1m.
 - AIA: £1,000,000.

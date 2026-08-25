@@ -1,0 +1,10 @@
+{
+  "batch_id": "M3-A-B4",
+  "agent_id": "MW3-Stage1-A-B4",
+  "completed_at": "2026-05-27T20:50:00Z",
+  "commit_shas": ["687c1cb", "705caad"],
+  "slugs_done": [
+    "mtd-made-simple-for-landlords-with-jointly-owned-properties",
+    "mtd-penalties-exemptions-and-what-to-watch"
+  ]
+}

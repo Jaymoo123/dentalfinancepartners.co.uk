@@ -53,6 +53,13 @@ PILLAR_REJECT_THRESHOLD = 0.30
 MIN_IMPRESSIONS = 5           # 28d floor for report inclusion; below-floor kept in triage.json only
 SERP_SERVED_NEAR_DUPE = 0.8   # exclude phrasing variants of a SERP_SERVED query
 
+# Additive scoring inputs: a triage entry MAY optionally carry 'volume' (demand
+# override, e.g. from candidate_pool.py enrichment) and 'intent'
+# (informational/commercial/transactional). Plain triage.json rows have
+# neither, so entry.get(...) falls through to the original imp/1.0 behaviour
+# below and the score formula is unchanged.
+INTENT_WEIGHT = {"informational": 1.0, "commercial": 1.3, "transactional": 1.5}
+
 # Extra brand tokens per site, beyond competitor-domain stems from discovery.json
 BRAND_EXTRA = {
     "property": ["djh"],
@@ -442,7 +449,12 @@ def build(site_key: str, commit_topics: bool = False) -> list[dict]:
         # General cannibalisation
         max_overlap, nearest = _max_overlap(qt, all_inv)
 
-        score = imp * wf * (1.0 - max_overlap)
+        # demand/intent_weight are additive, optional (see INTENT_WEIGHT above) —
+        # absent on a plain triage.json entry, so this collapses to the
+        # original imp * wf * (1 - max_overlap) exactly.
+        demand = entry.get("volume") or imp
+        intent_weight = INTENT_WEIGHT.get(entry.get("intent"), 1.0)
+        score = demand * wf * (1.0 - max_overlap) * intent_weight
 
         # Top competitor URL (first result from SERP check if available)
         top_result = (serp.get("results") or [{}])[0]
@@ -655,5 +667,14 @@ if __name__ == "__main__":
     assert _jaccard(a, b) >= SERP_SERVED_NEAR_DUPE, "near-dupe phrasing should exceed threshold"
     c = _stem_tokens(_tokenise("stamp duty refund second home"))
     assert _jaccard(a, c) < SERP_SERVED_NEAR_DUPE
+    # Additive scoring: volume/intent optional, absent -> identical to the old formula
+    _plain = {"impressions": 100}
+    _demand = _plain.get("volume") or _plain["impressions"]
+    _iw = INTENT_WEIGHT.get(_plain.get("intent"), 1.0)
+    assert _demand * 1.0 * (1.0 - 0.0) * _iw == 100.0
+    _enriched = {"impressions": 100, "volume": 500, "intent": "transactional"}
+    _demand2 = _enriched.get("volume") or _enriched["impressions"]
+    _iw2 = INTENT_WEIGHT.get(_enriched.get("intent"), 1.0)
+    assert _demand2 * 1.0 * (1.0 - 0.0) * _iw2 == 750.0
     print("self-check OK")
     main()

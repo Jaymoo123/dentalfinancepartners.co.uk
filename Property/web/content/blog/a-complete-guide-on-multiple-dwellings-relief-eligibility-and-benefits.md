@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "MDR Eligibility and Benefits: Historical Sch 6B Guide"
 metaDescription: "Pre-abolition Sch 6B architecture for MDR. Para-by-para walk-through, enquiry defence, and transitional-cohort decision tree. Historical reference."
 altText: "Two adjoining UK terraced houses representing the kind of multi-dwelling transaction that historically claimed Multiple Dwellings Relief under FA 2003 Schedule 6B before its abolition on 1 June 2024"
-image: "https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Pixabay"
   photographer_url: "https://www.pexels.com/@pixabay"

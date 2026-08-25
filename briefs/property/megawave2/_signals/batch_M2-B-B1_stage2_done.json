@@ -1,0 +1,59 @@
+{
+  "batch_id": "M2-B-B1",
+  "stage": 2,
+  "agent_id": "MW2-Stage2-B-B1",
+  "completed_at": "2026-05-27T11:50:00Z",
+  "commit_shas": [
+    "b21d217",
+    "f365b3b",
+    "bde1c22",
+    "5c74658",
+    "47f334c",
+    "f8282d7"
+  ],
+  "slugs_done": [
+    "a-complete-guide-to-family-investment-companies-fics",
+    "a-complete-guide-to-identity-verification-in-uk",
+    "artificial-separation-and-vat-key-insights-from-cases",
+    "beginners-guide-to-cis-verification-in-the-uk",
+    "claim-home-office-deduction-landlords",
+    "companies-house-emails-directors-for-identity-verification-under-new-rules"
+  ],
+  "flags_raised": [],
+  "qna_raised": [],
+  "stage2_hp_locks_newly_threaded": [
+    "§29.12 VAT artificial separation — Sch 1 para 2 directions in property contexts (signed off 2026-05-27 closing F-50, threaded into B3)",
+    "§33 Construction Industry Scheme (FA 2004 Part 3) property-business context floor (signed off 2026-05-27 closing F-51, threaded into B4)",
+    "§34 Landlord allowable expenses + home-office cross-tax trap operational floor (signed off 2026-05-27 closing F-52, threaded into B5)"
+  ],
+  "stage2_hp_locks_carried_forward": [
+    "§11.A Wave 9 mini-lock (ECCTA 2023 Part 1 architecture + commencement chain + ACSP + multi-SPV per-natural-person rule + F-12 URL discipline) — confirmed for B2 and B6",
+    "§21.5 FIC corporate-side mechanics — confirmed for B1",
+    "§22.6 FIC IHT-side value-freeze framing — confirmed for B1",
+    "§22.1 BPR + Pawson investment line — confirmed for B1",
+    "§22.5 LTR-based spouse exemption post-FA-2025 — confirmed for B1",
+    "§15.3 GROB s.102 FA 1986 family-home pattern — confirmed for B1",
+    "§21.1 + §21.4 + §16.27 DLA + dividend rates + CT bands rate-by-reference discipline — confirmed for B1"
+  ],
+  "stage2_verifications_completed": [
+    "ECCTA 2023 s.64 verbatim verified at Stage 1 — carried forward across B2 + B6 (same WebFetch result; URL https://www.legislation.gov.uk/ukpga/2023/56/section/64 confirmed live)",
+    "CTA 2010 s.18N verbatim verified at Stage 1 — carried forward for B1 (URL https://www.legislation.gov.uk/ukpga/2010/4/section/18N confirmed live)",
+    "VATA 1994 Sch 1 paras 1A + 2 verbatim verified at Stage 1 — carried forward for B3 (URL https://www.legislation.gov.uk/ukpga/1994/23/schedule/1 confirmed live)",
+    "FA 2004 s.63 + s.69 verbatim verified at Stage 1 — carried forward for B4 (URLs https://www.legislation.gov.uk/ukpga/2004/12/section/63 and https://www.legislation.gov.uk/ukpga/2004/12/section/69 confirmed live)",
+    "ITTOIA 2005 s.272 verbatim verified at Stage 1 — carried forward for B5 (URL https://www.legislation.gov.uk/ukpga/2005/5/section/272 confirmed live)",
+    "All B1-B6 HP-lock threads confirmed against current house_positions.md (greps confirmed §29.12 + §33 + §34 present at lines 3671 / 3687 / 3704 respectively; §11.A Wave 9 mini-lock present; §21.5 + §22.6 + §22.1 + §22.5 + §15.3 + §21.1 + §21.4 + §16.27 present per house_positions.md baseline)",
+    "Middleware redirect overlap check — verified none of the 6 slugs overlap existing middleware redirects (Property/web/src/middleware.ts checked; only existing FIC-related entry is family-investment-company-property-worth-it which is a live page not a redirect target)",
+    "Closest-existing-pages cannibalisation check — verified 10 FIC cluster pages exist on site for B1 cross-link; ECCTA + confirmation-statement page exist for B2 and B6; 30+ VAT pages but NONE on artificial separation/disaggregation (B3 canonical); NO existing CIS page (B4 canonical); landlord-expenses-allowable-uk-2026 pillar + principal-private-residence-relief-landlords exist for B5"
+  ],
+  "stage2_extensions_per_brief": {
+    "a-complete-guide-to-family-investment-companies-fics": "Full Stage 2 extension: 6 Competitor URLs (BDO + Saffery + Crowe + Mishcon + ICAEW + FT), 6+ Closest-existing pages (decision pillar + mechanics reference + BPR myth + trust-comparison + growth-shares + gift-shares + 5 sibling FIC cluster pages), 8+ Authority links (CA 2006 + CTA 2010 s.18N + s.455 + ITTOIA s.624/s.626 + TCGA s.165 + Sch 7 + IHTA s.105 + s.6A + FA 1986 s.102 + Pawson/Jones v Garnett/Ramsay case-law), Universal rules, 19-step Workflow, Work-log skeleton. HP-lock thread confirmed §21.5 + §22.6 + §22.1 + §22.5 + §11.A + §15.3 + §21.1 + §21.4.",
+    "a-complete-guide-to-identity-verification-in-uk": "Full Stage 2 extension: 7 Competitor URLs (Companies House campaign + blog + BDO + PwC + Saffery + ICAEW + gov.uk verify-your-identity), 2 Closest-existing pages + 6 sibling MW2 forward-links, 11 Authority links (ECCTA ss.64-69 + Companies House campaign + gov.uk ACSP guidance), Universal rules (metaTitle prioritises Identity Verification UK SERP term per framing differentiator), 19-step Workflow, Work-log skeleton. HP-lock thread confirmed §11.A Wave 9 mini-lock. F-12 URL discipline observed.",
+    "artificial-separation-and-vat-key-insights-from-cases": "Full Stage 2 extension with §29.12 NEWLY THREADED (Stage 1b sign-off closing F-50): three-link test, property-business application matrix, prospective-only effective-date discipline, do-not-write list, leading-case map placeholder for RUN strict-verify per §16.36. 7 Competitor URLs, 7 Closest-existing VAT pages (B3 canonical entry point for disaggregation), 6+ Authority links (VATA 1994 Sch 1 + Sch 9 + Sch 10 + s.83 + HMRC VBNB + Notice 700/1), Universal rules (case-law-led, concept-led H2s, FTT-vignette opening), 19-step Workflow, Work-log skeleton. §16.36 case-citation strict-verify mandated for RUN.",
+    "beginners-guide-to-cis-verification-in-the-uk": "Full Stage 2 extension with §33 NEWLY THREADED (Stage 1b sign-off closing F-51): FA 2004 Part 3 + SI 2005/2045 architecture, in-scope categorisation (developers in / property-investment cos at £3m FA 2021 deemed-contractor / residential individuals out), verification process, 0%/20%/30% withholding with materials-exclusion at s.61(2) + reg 6, CIS300 nil-return rule, reverse-charge interaction, do-not-write list. 7 Competitor URLs, 2 Closest-existing pages (B4 canonical CIS entry point), 11+ Authority links (FA 2004 Part 3 + SI 2005/2045 + FA 2021 + HMRC CIS Manual + CIS340 + J P Whitter UKSC), Universal rules (process-led decision-tree, property-owner-scenario opening), 19-step Workflow, Work-log skeleton.",
+    "claim-home-office-deduction-landlords": "Full Stage 2 extension with §34 NEWLY THREADED (Stage 1b sign-off closing F-52): ITTOIA 2005 s.272 import gateway, home-office two-route choice + CGT-trap (s.94H simplified vs s.34 actual-cost — exclusive-business-use triggers TCGA 1992 s.224(1) PPR restriction, the differentiator hook), cross-tax discipline, Ltd Co-landlord mechanic via ITEPA 2003 ss.316A-317 + formal director rental + TCGA s.224(1) on director PPR, do-not-write list. 7 Competitor URLs (RITA4Rent + Provestor + Hammond & Co + Crowe + gov.uk simplified-expenses + HMRC PIM2120 + ICAEW PPR-business-use), 3 Closest-existing pages, 10+ Authority links (ITTOIA + TCGA + ITEPA + CTA + HMRC PIM/BIM/CGT), Universal rules (action-led, choice-as-opening), 19-step Workflow, Work-log skeleton. Out-of-wave back-patch candidate logged: landlord-expenses-allowable-uk-2026 pillar to add CGT-trap cross-link once B5 ships.",
+    "companies-house-emails-directors-for-identity-verification-under-new-rules": "Full Stage 2 extension: 7 Competitor URLs (Companies House campaign + blog + BDO + Saffery + ICAEW + Action Fraud + NCSC), 3 Closest-existing pages (operational walkthrough + B2 sibling + confirmation-statement), 12 Authority links (ECCTA ss.64-69 + CA 2006 ss.853A-G + Companies House campaign + Action Fraud + NCSC), Universal rules (operational-urgency tone, email-recipient scenario opening, shorter 1,800-2,200 word target), 19-step Workflow, Work-log skeleton. HP-lock thread confirmed §11.A Wave 9 mini-lock. F-12 URL discipline observed. §16.31 scam-vetting URL liveness mandated for RUN. B6 + B2 cannibal-pair coordination explicit: distinct reactive-vs-curious intent — no CANNIBAL flag."
+  },
+  "notes": "Stage 2 brief extensions for Bucket B batch M2-B-B1 (Family Investment Companies & FICs cluster, 6 picks). All 6 seed briefs extended in-place on main repo at C:\\Users\\user\\Documents\\Accounting\\briefs\\property\\megawave2\\<slug>.md via append-after-work-log pattern per prompt discipline; each commit lands on main (NOT on a worktree branch) per rolling-architecture Stage 2 convention. All 3 Stage-1-raised HP-lock candidates (F-50/F-51/F-52) NEWLY THREADED into B3/B4/B5 respectively post Stage 1b sign-off (commit 96ea3a6 closed those flags with §29.12/§33/§34). Pre-existing HP locks confirmed for B1 (§21.5 + §22.6 + §22.1 + §22.5 + §11.A + §15.3 + §21.1 + §21.4), B2 (§11.A Wave 9 mini-lock), B6 (§11.A Wave 9 mini-lock). No new HP-lock candidates raised by Stage 2 sub-agent. No Q-N raised. No blocker hit. §16.36 statutory cross-check: Stage 1 verbatim verifications (CTA 2010 s.18N, ECCTA 2023 s.64, VATA 1994 Sch 1 paras 1A+2, FA 2004 s.63/s.69, ITTOIA 2005 s.272) carried forward without re-fetch; RUN session re-verifies per §16.35 per-write discipline. Case-law citations across B1 (Pawson/Jones v Garnett/Ramsay), B3 (Glassborow/Trippitt/Belcher/Strawberry Fields/Spearman Cottages/Mooney/Vaughan-Jones), B4 (J P Whitter UKSC/G C Lockton) flagged for BAILII strict-verify by RUN session per §16.36 brief-citation gate. Scam-vetting URLs (Action Fraud + NCSC) on B6 flagged for §16.31 liveness verification by RUN session. Out-of-wave back-patch candidate logged on B5 work log: landlord-expenses-allowable-uk-2026 pillar should add home-office CGT-trap cross-link once B5 ships. Clean batch close — ready for RUN dispatch."
+  ,
+  "ready_for_stage": "RUN"
+}

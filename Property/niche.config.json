@@ -12,12 +12,12 @@
       "postcode": "BD18 3AL"
     },
     "vat_number": null,
-    "enquiry_retention_months": 3
+    "enquiry_retention_months": 24
   },
   "partner": {
-    "name": "DJH Business Advisers Limited",
-    "descriptor": "(part of the DJH group of companies)",
-    "privacy_policy_url": "https://www.djh.co.uk/privacy-policy/"
+    "name": "regulated firms in our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
   },
   "domain": "www.propertytaxpartners.co.uk",
   "tagline": "Get your property tax sorted",
@@ -34,11 +34,83 @@
   "navigation": [
     {
       "label": "Services",
-      "href": "/services"
+      "href": "/services",
+      "children": [
+        {
+          "label": "All services",
+          "href": "/services"
+        },
+        {
+          "label": "Property accountant",
+          "href": "/services/property-accountant"
+        },
+        {
+          "label": "Landlord accountant",
+          "href": "/services/landlord-accountant"
+        },
+        {
+          "label": "Property tax advice",
+          "href": "/services/property-tax-advice"
+        },
+        {
+          "label": "Non-resident landlords",
+          "href": "/services/non-resident-landlord"
+        },
+        {
+          "label": "Incorporation",
+          "href": "/incorporation"
+        }
+      ]
     },
     {
-      "label": "Incorporation",
-      "href": "/incorporation"
+      "label": "Resources",
+      "href": "/landlord-tax",
+      "children": [
+        {
+          "label": "Landlord tax guide",
+          "href": "/landlord-tax"
+        },
+        {
+          "label": "Section 24 explained",
+          "href": "/section-24"
+        },
+        {
+          "label": "Making Tax Digital",
+          "href": "/making-tax-digital-landlords"
+        },
+        {
+          "label": "Leasehold",
+          "href": "/leasehold"
+        },
+        {
+          "label": "Landlord compliance",
+          "href": "/landlord-compliance"
+        },
+        {
+          "label": "Landed estates",
+          "href": "/landed-estates"
+        },
+        {
+          "label": "Cost of selling a property",
+          "href": "/cost-of-selling-a-property"
+        },
+        {
+          "label": "For letting agents",
+          "href": "/for-letting-agents"
+        },
+        {
+          "label": "Property tax rates",
+          "href": "/property-tax-rates"
+        },
+        {
+          "label": "Landlord tax index",
+          "href": "/research/landlord-tax-index"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        }
+      ]
     },
     {
       "label": "Calculators",
@@ -49,19 +121,11 @@
       "href": "/about"
     },
     {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
       "label": "Contact",
       "href": "/contact"
     }
   ],
   "footer_links": [
-    {
-      "label": "Locations",
-      "href": "/locations"
-    },
     {
       "label": "Privacy policy",
       "href": "/privacy-policy"
@@ -108,7 +172,8 @@
       "Property Accountant Services",
       "Landlord Tax Essentials",
       "Property Types & Specialist Tax",
-      "Non-Resident Landlord Tax"
+      "Non-Resident Landlord Tax",
+      "Property Finance"
     ],
     "supabase_table": "blog_topics",
     "site_key": "property",
@@ -160,6 +225,87 @@
     }
   },
   "cta": {
+    "variant": "leadgen",
+    "variants": {
+      "packages": {
+        "header_primary": {
+          "label": "See pricing",
+          "href": "/pricing"
+        },
+        "header_secondary": {
+          "label": "Book consultation",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "See plans from £29/mo",
+          "href": "/pricing"
+        },
+        "hero_secondary": {
+          "label": "Try free calculators",
+          "href": "#calculators"
+        },
+        "sticky": {
+          "primary": "Fixed monthly plans from £29",
+          "secondary": "Landlord self assessment, portfolio returns and property company accounts. Cancel with 1 month's notice.",
+          "button": "See pricing",
+          "href": "/pricing"
+        },
+        "blog": {
+          "cta_heading": "Want a property accountant with clear monthly pricing?",
+          "cta_body": "Plans start at £29 a month for landlord self assessment, £59 for portfolio and non-resident landlords, and £99 for property companies, with no fixed term. Not sure which fits your portfolio? Send an enquiry below and we will recommend the right one, no obligation.",
+          "cta_button": "Send enquiry"
+        },
+        "home_cta": {
+          "heading": "Pick a plan today. Cancel with one month's notice.",
+          "body": "Fixed monthly fees for landlords and property companies, agreed up front. Section 24, MTD and capital gains handled by property-only specialists. If you would rather talk it through first, a free consultation sorts the right plan in one go.",
+          "primary": {
+            "label": "See plans and pricing",
+            "href": "/pricing"
+          },
+          "secondary": {
+            "label": "Book a free consultation",
+            "href": "/contact"
+          }
+        }
+      },
+      "leadgen": {
+        "header_primary": {
+          "label": "Book consultation",
+          "href": "/contact"
+        },
+        "header_secondary": {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        "hero_primary": {
+          "label": "Book free consultation",
+          "href": "#book"
+        },
+        "hero_secondary": {
+          "label": "Try free calculators",
+          "href": "#calculators"
+        },
+        "sticky": {
+          "primary": "Get your property tax sorted",
+          "secondary": "Book a free consultation with a property specialist",
+          "button": "Book now",
+          "href": "/contact"
+        },
+        "blog": {
+          "cta_heading": "Need help with your property tax?",
+          "cta_body": "Get practical advice from property tax specialists. Book a free consultation to discuss your situation - we'll give you clear recommendations, no hard sell.",
+          "cta_button": "Book consultation"
+        },
+        "home_cta": {
+          "heading": "Get your property tax sorted today",
+          "body": "Book a free consultation. We'll discuss your situation, model the numbers, and give you clear recommendations.",
+          "primary": {
+            "label": "Book free consultation",
+            "href": "/contact"
+          }
+        }
+      }
+    },
     "sticky_primary": "Get your property tax sorted",
     "sticky_secondary": "Book a free consultation with a property specialist",
     "sticky_button": "Book now"

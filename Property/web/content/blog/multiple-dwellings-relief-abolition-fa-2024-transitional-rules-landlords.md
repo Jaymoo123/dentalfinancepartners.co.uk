@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "MDR Abolished 1 June 2024: SDLT Transitional + Alternatives"
 metaDescription: "MDR abolished by F(No.2)A 2024 s.7 from 1 June 2024. Transitional rules, anti-forestalling carve-outs, and surviving SDLT alternatives for portfolios."
 altText: "Row of UK terraced houses representing a portfolio acquisition that would historically have qualified for Multiple Dwellings Relief before its abolition under Finance (No. 2) Act 2024 section 7"
-image: "https://images.pexels.com/photos/11935240/pexels-photo-11935240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/11935240/pexels-photo-11935240.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Boys in Bristol Photography"
   photographer_url: "https://www.pexels.com/@lebele"
@@ -161,5 +161,5 @@ editorialNote: "Wave 9 net-new on MDR abolition under F(No.2)A 2024 s.7. Statuto
 <li><a href="/blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition">Welsh LTT Multiple Dwellings Relief survives the SDLT abolition</a> , the cross-border position for buyers acquiring property in Wales.</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2024/12/section/7">Finance (No. 2) Act 2024 section 7</a> , the abolition statute with the section 7(3) 1-June-2024 effective-date trigger, the section 7(4)(a) and (b) transitional carve-outs, and the section 7(5) anti-forestalling exclusions.</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2003/14/section/116">FA 2003 section 116</a> , the residential-property definition with the section 116(7) six-or-more-dwellings statutory deeming as the surviving alternative.</li>
-<li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax/sdltm29900">HMRC SDLT Manual SDLTM29900</a> , HMRC's manual coverage of the (now historic) Multiple Dwellings Relief framework; reference for transitional and pre-abolition transactions.</li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29900">HMRC SDLT Manual SDLTM29900</a> , HMRC's manual coverage of the (now historic) Multiple Dwellings Relief framework; reference for transitional and pre-abolition transactions.</li>
 </ul>

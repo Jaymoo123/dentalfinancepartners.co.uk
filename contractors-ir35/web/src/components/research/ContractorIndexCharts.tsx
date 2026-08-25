@@ -15,6 +15,7 @@ type AnnualRow = Record<string, number> & { year: number };
 const CYAN = "#0e7490"; // cyan-700, primary brand accent
 const CYAN_FILL = "#0e7490";
 const CYAN_PROV = "#67e8f9"; // cyan-300, provisional tail
+const AMBER = "#b45309"; // amber-700, reform-date reference lines
 const GRID = "#e5e7eb"; // neutral-200
 const AXIS_TEXT = "#737373"; // neutral-500
 
@@ -223,6 +224,108 @@ export function MonthlyIncorporationsChart({
           <title>{`${monthLabel(p.month)}: ${p.value.toLocaleString("en-GB")}${p.prov ? " (provisional)" : ""}`}</title>
         </circle>
       ))}
+    </svg>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Reform-overlay chart: all-contractor union formations by year, with the two
+// off-payroll (IR35) reform dates marked as vertical reference lines.
+// ---------------------------------------------------------------------------
+
+export function ReformOverlayChart({
+  annual,
+  reformYears,
+}: {
+  annual: AnnualRow[];
+  reformYears: { year: number; label: string }[];
+}) {
+  const W = 720;
+  const H = 300;
+  const padL = 56;
+  const padR = 12;
+  const padT = 28;
+  const padB = 30;
+  const plotW = W - padL - padR;
+  const plotH = H - padT - padB;
+
+  const data = annual.map((a) => ({ year: a.year, value: Number(a.union ?? 0) }));
+  const maxV = niceMax(Math.max(1, ...data.map((d) => d.value)));
+  const n = data.length;
+  const slot = plotW / Math.max(1, n);
+  const barW = slot * 0.62;
+
+  const yTicks = 4;
+  const ticks = Array.from({ length: yTicks + 1 }, (_, i) => (maxV / yTicks) * i);
+
+  // A reform "year" line sits at the left edge of the bar for that year, since
+  // the reform (April) falls early in the calendar year.
+  const xForYearStart = (year: number) => {
+    const i = data.findIndex((d) => d.year === year);
+    if (i < 0) return null;
+    return padL + i * slot;
+  };
+
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      role="img"
+      aria-label="All-contractor company formations by year, with off-payroll reform dates marked"
+      className="h-[300px] w-full"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      {ticks.map((t, i) => {
+        const y = padT + plotH - (t / maxV) * plotH;
+        return (
+          <g key={i}>
+            <line x1={padL} y1={y} x2={W - padR} y2={y} stroke={GRID} strokeWidth={1} />
+            <text x={padL - 8} y={y + 3} textAnchor="end" fontSize={11} fill={AXIS_TEXT}>
+              {Math.round(t).toLocaleString("en-GB")}
+            </text>
+          </g>
+        );
+      })}
+      {data.map((d, i) => {
+        const h = (d.value / maxV) * plotH;
+        const x = padL + i * slot + (slot - barW) / 2;
+        const y = padT + plotH - h;
+        return (
+          <g key={d.year}>
+            <rect x={x} y={y} width={barW} height={Math.max(0, h)} rx={3} fill={CYAN_FILL}>
+              <title>{`${d.year}: ${d.value.toLocaleString("en-GB")} new contractor-sector companies`}</title>
+            </rect>
+            <text
+              x={x + barW / 2}
+              y={H - padB + 16}
+              textAnchor="middle"
+              fontSize={11}
+              fill={AXIS_TEXT}
+            >
+              {d.year}
+            </text>
+          </g>
+        );
+      })}
+      {reformYears.map((r) => {
+        const x = xForYearStart(r.year);
+        if (x === null) return null;
+        return (
+          <g key={r.year}>
+            <line
+              x1={x}
+              y1={padT - 14}
+              x2={x}
+              y2={padT + plotH}
+              stroke={AMBER}
+              strokeWidth={1.5}
+              strokeDasharray="5 3"
+            />
+            <text x={x + 4} y={padT - 4} fontSize={10.5} fontWeight={600} fill={AMBER}>
+              {r.label}
+            </text>
+          </g>
+        );
+      })}
     </svg>
   );
 }

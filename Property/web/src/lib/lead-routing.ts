@@ -26,9 +26,11 @@ export const DEFAULT_PARTNER_CC = "";
 export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
-// dedicated Ashfield Trading inbox (the DJH-deal inbox); every other site's leads
+// dedicated Ashfield Trading inbox (the partner-forwarding inbox); every other site's leads
 // keep going to the shared internal inbox, exactly as before. Both env-overridable.
-export const DEFAULT_NOTIFY_TO = "junaydmoughal@hotmail.co.uk";
+// Consolidated 2026-08-12 (owner instruction): the shared internal inbox is now
+// the Ashfield Trading inbox; the legacy hotmail inbox is retired as a default.
+export const DEFAULT_NOTIFY_TO = "junayd@ashfieldtrading.com";
 export const PROPERTY_NOTIFY_TO = "junayd@ashfieldtrading.com";
 
 function parseList(value: string | undefined, fallback: string): string[] {
@@ -62,8 +64,8 @@ export function resolveLeadCc(source: string | undefined, env: Env = process.env
  * The lead-notification recipient ("to") for a lead with the given `source`.
  * Property leads go to the Ashfield Trading inbox (LEADS_NOTIFY_TO_PROPERTY,
  * default junayd@ashfieldtrading.com); every other site goes to the shared
- * internal inbox (LEADS_NOTIFY_TO, default junaydmoughal@hotmail.co.uk). Property
- * therefore routes correctly from code even if LEADS_NOTIFY_TO is left unchanged.
+ * internal inbox (LEADS_NOTIFY_TO, default junayd@ashfieldtrading.com since
+ * 2026-08-12; previously the legacy hotmail inbox).
  */
 export function resolveLeadTo(source: string | undefined, env: Env = process.env): string {
   const sourceKey = (source ?? "").trim().toLowerCase();

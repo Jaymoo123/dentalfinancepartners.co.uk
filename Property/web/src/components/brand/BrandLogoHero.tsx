@@ -21,7 +21,7 @@ export function BrandLogoHero() {
             {secondLine}
           </span>
         )}
-        <span className="sr-only"> — {siteConfig.tagline}</span>
+        <span className="sr-only">, {siteConfig.tagline}</span>
       </Link>
     </div>
   );

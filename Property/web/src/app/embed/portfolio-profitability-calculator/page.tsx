@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Portfolio Profitability Calculator",
   description:
     "Free calculator: net profit and rental yield across every property in a UK landlord's portfolio.",
-  // Embed surface — do not index (the canonical, indexable version lives at
+  // Embed surface, do not index (the canonical, indexable version lives at
   // /calculators/portfolio-profitability-calculator).
   robots: { index: false, follow: false },
   alternates: { canonical: "https://www.propertytaxpartners.co.uk/calculators/portfolio-profitability-calculator" },

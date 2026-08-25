@@ -2,7 +2,7 @@
 title: "What Are Associated Companies and How Do They Affect Your Corporation Tax Rate?"
 slug: "associated-companies-corporation-tax"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/associated-companies-corporation-tax"
-date: "2026-05-17"
+date: "2026-07-28"
 generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
@@ -28,7 +28,7 @@ faqs:
   - question: "Do associated company rules apply to sole traders or partnerships?"
     answer: "No. The rules apply only to limited companies. If you are a sole trader and also control a limited company, the sole trader business does not count as an associated company. But the limited company is still a company, so if you control two limited companies alongside your sole trade, those two companies are associated with each other."
 keyTakeaways:
-  - "For 2025/26, a company with no associates pays corporation tax at 19% on profits up to £50,000 and at 25% above £250,000."
+  - "For 2026/27 (unchanged from 2025/26), a company with no associates pays corporation tax at 19% on profits up to £50,000 and at 25% above £250,000."
   - "Adding one associated company halves those thresholds, so the 19% rate applies only up to £25,000 and the 25% main rate begins above £125,000."
   - "The associated company rules are set out in CTA 2010, sections 25 to 30, and apply to accounting periods beginning on or after 1 April 2023."
   - "Control for association purposes means holding more than 50% of share capital, voting rights, or entitlement to profits on a winding-up."
@@ -46,7 +46,7 @@ keyTakeaways:
 
 <h2>How the Profit Thresholds Work With Associated Companies</h2>
 
-<p>For a single company with no associates, the corporation tax bands for 2025/26 are:</p>
+<p>For a single company with no associates, the corporation tax bands for 2026/27 are (these rates and thresholds are unchanged from 2025/26):</p>
 
 <ul>
 <li><strong>19% small profits rate:</strong> profits up to £50,000</li>
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <p>When associated companies exist, the lower limit and upper limit are both divided by the number of associated companies plus one. The marginal relief fraction also changes.</p>
 
-<p>The standard marginal relief fraction for 2025/26 is 3/200 (1.5%). But when associated companies reduce the limits, the relief is calculated using the reduced upper limit. HMRC publishes the exact formula in the CT600 computation guide, but the practical effect is that each company's effective tax rate depends on its own profits relative to the reduced thresholds.</p>
+<p>The standard marginal relief fraction for 2026/27 is 3/200 (1.5%), giving an effective marginal rate of 26.5% on profits within the band. But when associated companies reduce the limits, the relief is calculated using the reduced upper limit. HMRC publishes the exact formula in the CT600 computation guide, but the practical effect is that each company's effective tax rate depends on its own profits relative to the reduced thresholds.</p>
 
 <p>For most small groups, the key takeaway is this: if your combined profits across all associated companies exceed £50,000, you will pay more than 19% on at least some of your profits. The higher the combined profits, the closer you get to the full 25% rate.</p>
 

@@ -105,6 +105,13 @@ Coverage: UK (with city presence in London, Manchester, Birmingham, Leeds, Brist
 
 - Locations index: https://www.agencyfounderfinance.co.uk/locations
 
+## Research and data
+
+- Research hub (index): https://www.agencyfounderfinance.co.uk/research
+- UK Agency Formation Index (Companies House incorporations by SIC code): https://www.agencyfounderfinance.co.uk/research/uk-agency-formation-index
+- UK Agency Survival & Churn Index (flagship, ONS survival rates by agency segment): https://www.agencyfounderfinance.co.uk/research/uk-agency-survival-churn-index
+- UK Agency Insolvency Index (Insolvency Service, exact 7-code SIC cluster): https://www.agencyfounderfinance.co.uk/research/uk-agency-insolvency-index
+
 ## Reference
 
 - Glossary (plain-English UK agency tax & finance terms): https://www.agencyfounderfinance.co.uk/glossary

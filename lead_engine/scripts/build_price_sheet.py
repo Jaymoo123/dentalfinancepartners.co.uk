@@ -1,0 +1,184 @@
+"""build_price_sheet.py: generate docs/PRICE_SHEET.md and docs/price-sheet.html.
+
+Everything is derived at build time from config/tiers.json, the standard terms
+block in config/standard_terms.md (verbatim) and the philosophy block in
+docs/CLASSIFY.md (verbatim, between the philosophy markers). Never edit the
+generated files by hand; edit the sources and re-run this script.
+"""
+import argparse
+import html as _html
+import re
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import tiers
+
+INTRO = ("Verified, specialist enquiries from a portfolio of UK tax and accounting "
+         "information sites, delivered in real time. Firms join free, pay only for "
+         "the leads they claim, and carry no volume commitments in either direction.")
+
+def steps(cfg):
+    cap, mult = cfg["claim_slots_per_lead"], cfg["exclusive_multiplier"]
+    return [
+        "Join the pool free. No sign-up fee, no minimums, no caps.",
+        "Leads arrive as redacted alerts: tier, case type, area, a one-line intent summary, "
+        "the shared price and the exclusive price.",
+        f"Claim a lead to receive the full verified details instantly. Up to {cap} accountancy "
+        f"firms share each lead, first come, first served; the price is fixed at the first claim.",
+        f"Or claim exclusively at {mult} times the price to lock the lead to your firm. "
+        "Exclusive is available only while no other firm has claimed, and carries the credit protection.",
+        # The lane split makes the two claims above accounting-lane claims. Stating the
+        # adjacent lane here keeps "up to N firms" and "locked to your firm" true as written.
+        f"The figures above describe the accountancy lane. The same enquiry may also be offered "
+        f"on the Adjacent lane to up to {cfg['adjacent_claim_slots_per_lead']} non-accounting "
+        f"professions such as brokers, solicitors and surveyors, who do not compete with you for "
+        f"the work. Adjacent claims are separate from your slots and do not affect them, "
+        f"including on an exclusive claim.",
+        "Claimed leads are invoiced monthly in arrears, payable by bank transfer within 14 days.",
+    ]
+
+
+def philosophy_md():
+    raw = (tiers.ROOT / "docs" / "CLASSIFY.md").read_text(encoding="utf-8")
+    return raw.split("<!-- philosophy:start -->")[1].split("<!-- philosophy:end -->")[0].strip()
+
+
+def md_inline_to_html(text):
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", _html.escape(text))
+
+
+def philosophy_html():
+    """Minimal converter for the philosophy block only: ## heading, paragraphs,
+    a numbered list, **bold**. The wording itself stays verbatim."""
+    out, in_list = [], False
+    for line in philosophy_md().splitlines():
+        line = line.strip()
+        m = re.match(r"^(\d+)\.\s+(.*)$", line)
+        if m:
+            if not in_list:
+                out.append("<ol>")
+                in_list = True
+            out.append(f"  <li>{md_inline_to_html(m.group(2))}</li>")
+            continue
+        if in_list:
+            out.append("</ol>")
+            in_list = False
+        if line.startswith("## "):
+            out.append(f"<h2>{_html.escape(line[3:])}</h2>")
+        elif line:
+            out.append(f"<p>{md_inline_to_html(line)}</p>")
+    if in_list:
+        out.append("</ol>")
+    return "\n".join(out)
+
+
+def tier_rows(cfg):
+    """(label, what is in it, price text, volume text) per tier."""
+    rows = []
+    for t in cfg["tiers"]:
+        if "decay" in t:  # accounting lanes carry an exclusive option
+            price = (f"{tiers.gbp(t['price'])} shared · "
+                     f"{tiers.gbp(t['price'] * cfg['exclusive_multiplier'])} exclusive")
+        elif "price" in t:
+            # The adjacent lane is always shared: claim.py refuses an exclusive claim on
+            # it, so the price sheet and the agreement must not imply one is on offer.
+            price = f"{tiers.gbp(t['price'])} per claimed lead, shared only"
+        else:  # raw batch pricing
+            lo, hi = t["batch_price_range"]
+            # A determinable unit price, because a contract charges "the Raw price per
+            # lead". The range is the typical batch total, not the price itself.
+            price = (f"{tiers.gbp(t['price_per_lead_equiv'])} per lead in the batch, "
+                     f"invoiced monthly; a typical batch is "
+                     f"{tiers.gbp(lo)} to {tiers.gbp(hi)}")
+        if "examples" in t:
+            what = ", ".join(t["examples"])
+        elif t["id"] == "adjacent":
+            what = f"Any lead, offered to the {t['profession_lane']} lane in addition to accounting"
+        else:
+            what = t["eligibility"].capitalize()
+        vol = f"~{t['typical_monthly_volume']}" if "typical_monthly_volume" in t else "varies"
+        rows.append((t["label"], what, price, vol))
+    return rows
+
+
+def build_md(cfg):
+    lines = ["<!-- Generated by lead_engine/scripts/build_price_sheet.py from config/tiers.json,",
+             "     config/standard_terms.md and docs/CLASSIFY.md. Do not edit by hand. -->",
+             "", "# Lead price sheet", "", INTRO, "", philosophy_md(), "", "## Tiers and prices", "",
+             "| Tier | What is in it | Price | Typical monthly volume* |", "|---|---|---|---|"]
+    for label, what, price, vol in tier_rows(cfg):
+        lines.append(f"| {label} | {what} | {price} | {vol} |")
+    lines += ["", "\\* Typical, not guaranteed.", "", "## How it works", ""]
+    lines += [f"{i}. {s}" for i, s in enumerate(steps(cfg), 1)]
+    lines += ["", "## Standard terms", "", tiers.terms_text(), ""]
+    return "\n".join(lines)
+
+
+def build_html(cfg):
+    rows = "\n".join(
+        f"      <tr><td><strong>{_html.escape(label)}</strong></td><td>{_html.escape(what)}</td>"
+        f"<td>{_html.escape(price)}</td><td>{_html.escape(vol)}</td></tr>"
+        for label, what, price, vol in tier_rows(cfg))
+    steps_html = "\n".join(f"      <li>{_html.escape(s)}</li>" for s in steps(cfg))
+    return f"""<!DOCTYPE html>
+<!-- Generated by lead_engine/scripts/build_price_sheet.py. Do not edit by hand. -->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Lead price sheet</title>
+<style>
+  @page {{ size: A4; margin: 18mm; }}
+  body {{ font-family: Georgia, 'Times New Roman', serif; color: #1a1a1a; font-size: 12px;
+         line-height: 1.45; max-width: 174mm; margin: 0 auto; padding: 16px; }}
+  h1 {{ font-size: 20px; margin: 0 0 6px 0; border-bottom: 2px solid #1a1a1a; padding-bottom: 6px; }}
+  h2 {{ font-size: 14px; margin: 14px 0 4px 0; }}
+  p, ol {{ margin: 5px 0; }}
+  ol {{ padding-left: 20px; }}
+  li {{ margin: 3px 0; }}
+  table {{ border-collapse: collapse; width: 100%; font-size: 11px; margin: 6px 0; }}
+  th {{ text-align: left; border-bottom: 2px solid #1a1a1a; padding: 4px 8px 4px 0; }}
+  td {{ border-bottom: 1px solid #ddd; padding: 4px 8px 4px 0; vertical-align: top; }}
+  .small {{ font-size: 10px; color: #555; }}
+  ul.terms {{ font-size: 10.5px; color: #333; padding-left: 18px; }}
+</style>
+</head>
+<body>
+  <h1>Lead price sheet</h1>
+  <p>{_html.escape(INTRO)}</p>
+  {philosophy_html()}
+  <h2>Tiers and prices</h2>
+  <table>
+    <thead><tr><th>Tier</th><th>What is in it</th><th>Price</th><th>Typical monthly volume*</th></tr></thead>
+    <tbody>
+{rows}
+    </tbody>
+  </table>
+  <p class="small">* Typical, not guaranteed.</p>
+  <h2>How it works</h2>
+  <ol>
+{steps_html}
+  </ol>
+  <h2>Standard terms</h2>
+  <ul class="terms">
+{chr(10).join('    <li>' + _html.escape(l[2:] if l.startswith('- ') else l) + '</li>' for l in tiers.terms_lines())}
+  </ul>
+</body>
+</html>
+"""
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--dry-run", action="store_true", default=True, help="dry run (the only mode)")
+    p.parse_args()
+    cfg = tiers.load_tiers()
+    docs = tiers.ROOT / "docs"
+    (docs / "PRICE_SHEET.md").write_text(build_md(cfg), encoding="utf-8")
+    (docs / "price-sheet.html").write_text(build_html(cfg), encoding="utf-8")
+    print(f"Wrote {docs / 'PRICE_SHEET.md'}")
+    print(f"Wrote {docs / 'price-sheet.html'}")
+
+
+if __name__ == "__main__":
+    main()

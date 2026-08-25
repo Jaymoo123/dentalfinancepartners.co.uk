@@ -170,6 +170,6 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A14. Single-case-analysis page on 
 <li><strong>Sexton & Anor v HMRC [2023] UKFTT 73 (TC)</strong> (TC08708, 19 January 2023): line precedent on the same s.116(1)(c) point.</li>
 <li><strong>Hyman & Goodfellow v HMRC [2021] UKUT 68 (TCC)</strong>, affirmed [2022] EWCA Civ 185: grounds-classification sub-line.</li>
 <li><strong>Suterwalla v HMRC [2024] UKUT 188 (TCC)</strong>: paddock-and-grazing-licence sub-line.</li>
-<li><strong>HMRC SDLT Manual SDLTM00385+</strong> "Gardens and grounds": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00385">gov.uk SDLTM00385</a></li>
-<li><strong>HMRC SDLT Manual SDLTM00370+</strong> "Residential property definition": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00370">gov.uk SDLTM00370</a></li>
+<li><strong>HMRC SDLT Manual SDLTM00440+</strong> "Gardens and grounds": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00440">gov.uk SDLTM00440</a></li>
+<li><strong>HMRC SDLT Manual SDLTM00365+</strong> "Residential property definition": <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00365">gov.uk SDLTM00365</a></li>
 </ul>

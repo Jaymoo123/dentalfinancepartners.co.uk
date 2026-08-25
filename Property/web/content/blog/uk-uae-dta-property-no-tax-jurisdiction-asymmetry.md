@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Non-Resident Landlord Tax"
 metaTitle: "UK-UAE Tax Treaty: Property and the No-Tax Asymmetry"
-metaDescription: "The 2016 UK-UAE treaty allocates UK rental and CGT to the UK; UAE has no personal income tax to credit. Why Dubai residence does not reduce UK landlord tax."
+metaDescription: "The 2016 UK-UAE treaty allocates UK rental and CGT to the UK; UAE has no personal income tax to credit."
 altText: "Dubai skyline at dusk including the Burj Khalifa, representing the UAE jurisdiction for UK landlords who have relocated to the Emirates"
 image: "https://images.pexels.com/photos/18341554/pexels-photo-18341554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

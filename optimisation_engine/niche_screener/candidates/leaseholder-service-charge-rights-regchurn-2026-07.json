@@ -1,0 +1,28 @@
+{
+  "candidate_id": "leaseholder-service-charge-rights-regchurn-2026-07",
+  "vertical": "leaseholder service charge rights",
+  "generator": "reg-churn",
+  "evidence": [
+    {
+      "type": "consultation",
+      "url": "https://www.gov.uk/government/consultations/strengthening-leaseholder-protections-over-charges-and-services-consultation",
+      "excerpt": "Proposals to implement aspects of Part 4 of the Leasehold and Freehold Reform Act 2024 and future reform on leasehold charges and services.",
+      "metric": {}
+    }
+  ],
+  "seed_queries": [
+    "strengthening leaseholder protections over charges and services: consultation",
+    "strengthening leaseholder protections over charges and services"
+  ],
+  "buyer_hypothesis": {
+    "who": "c. 5m leaseholders in England (same estimate; billing transparency duties on all managing agents and freeholders)",
+    "proof": "stated in https://www.gov.uk/government/consultations/strengthening-leaseholder-protections-over-charges-and-services-consultation"
+  },
+  "event_hypothesis": {
+    "what": "standardised service charge demands, challenge rights, cost recovery limits",
+    "date": "unnamed (Leasehold and Freehold Reform Act 2024 secondary legislation)",
+    "source": "https://www.gov.uk/government/consultations/strengthening-leaseholder-protections-over-charges-and-services-consultation"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

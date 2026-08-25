@@ -47,10 +47,30 @@ export const PERSONAL_ALLOWANCE = 12_570;
 export const PA_TAPER_START = 100_000;
 /** Income at which the personal allowance is fully withdrawn (£100k + 2×£12,570). */
 export const PA_TAPER_END = 125_140;
-/** Top of the basic-rate band (taxable income, i.e. above the PA): £37,700. */
+/** Top of the basic-rate band, in TAXABLE-income terms (above the PA): £37,700. */
 export const BASIC_RATE_LIMIT = 37_700;
-/** Top of the higher-rate band (taxable income): £125,140 − £12,570. */
-export const HIGHER_RATE_LIMIT = PA_TAPER_END - PERSONAL_ALLOWANCE;
+/**
+ * Where the additional (45%) rate starts, in TOTAL-income terms: £125,140.
+ *
+ * UNITS MATTER HERE. Unlike the basic-rate limit, this does NOT convert to
+ * taxable terms by subtracting the personal allowance: by the time total income
+ * reaches £125,140 the allowance has fully tapered to nil, so taxable income
+ * equals total income at exactly that point. Subtracting £12,570 to get
+ * "£112,570 of taxable income" starts the 45% band a full allowance too early
+ * and overstates tax by up to ~£628. Use additionalRateLimitTaxable() to get
+ * the threshold on the taxable-income axis the bands are measured on.
+ */
+export const ADDITIONAL_RATE_GROSS_THRESHOLD = 125_140;
+
+/**
+ * The additional-rate threshold expressed on the TAXABLE-income axis, given the
+ * personal allowance that actually survives the taper. Nil PA (income ≥
+ * £125,140) gives £125,140; a full PA gives £112,570, which never binds because
+ * a taxpayer keeping the full allowance has under £87,430 of taxable income.
+ */
+export function additionalRateLimitTaxable(personalAllowance: number): number {
+  return Math.max(BASIC_RATE_LIMIT, ADDITIONAL_RATE_GROSS_THRESHOLD - personalAllowance);
+}
 
 /** The £1,000 property (trading and property) allowance. */
 export const PROPERTY_ALLOWANCE = 1_000;
@@ -158,9 +178,11 @@ function incomeTaxOn(income: number, year: TaxYear): number {
   const pa = taperedPersonalAllowance(income);
   const taxable = Math.max(0, income - pa);
 
+  const addlLimit = additionalRateLimitTaxable(pa);
+
   const basicAmount = Math.min(taxable, BASIC_RATE_LIMIT);
-  const higherAmount = Math.min(Math.max(0, taxable - BASIC_RATE_LIMIT), HIGHER_RATE_LIMIT - BASIC_RATE_LIMIT);
-  const additionalAmount = Math.max(0, taxable - HIGHER_RATE_LIMIT);
+  const higherAmount = Math.min(Math.max(0, taxable - BASIC_RATE_LIMIT), addlLimit - BASIC_RATE_LIMIT);
+  const additionalAmount = Math.max(0, taxable - addlLimit);
 
   return basicAmount * rates.basic + higherAmount * rates.higher + additionalAmount * rates.additional;
 }
@@ -269,8 +291,12 @@ export function computePortfolio(i: PortfolioInputs): PortfolioResult {
   const taxableTotal = Math.max(0, totalIncome - paLive);
   const rentalTaxableSlice = Math.max(0, taxableTotal - taxableOther);
 
+  // Both rooms are measured on the same taxable-income axis as taxableTotal, so
+  // the additional-rate threshold is converted using the PA that actually
+  // survives the taper at this total income.
+  const addlLimit = additionalRateLimitTaxable(paLive);
   const basicRoom = Math.max(0, BASIC_RATE_LIMIT - taxableOther);
-  const higherRoom = Math.max(0, HIGHER_RATE_LIMIT - Math.max(taxableOther, BASIC_RATE_LIMIT));
+  const higherRoom = Math.max(0, addlLimit - Math.max(taxableOther, BASIC_RATE_LIMIT));
 
   const rentalInBasic = Math.min(rentalTaxableSlice, basicRoom);
   const rentalInHigher = Math.min(Math.max(0, rentalTaxableSlice - rentalInBasic), higherRoom);

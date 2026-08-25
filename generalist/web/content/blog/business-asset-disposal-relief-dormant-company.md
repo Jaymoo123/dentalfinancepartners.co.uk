@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-a-white-surface-10044789/"
   source: "Pexels"
 h1: "Business Asset Disposal Relief Explained For A Company With A Dormant Period"
-summary: "A dormant period can jeopardise your Business Asset Disposal Relief claim if it breaks the two-year trading test. We explain when HMRC accepts dormancy, when it doesn't, and what planning steps protect your 14% CGT rate."
+summary: "A dormant period can jeopardise your Business Asset Disposal Relief claim if it breaks the two-year trading test. We explain when HMRC accepts dormancy, when it doesn't, and what planning steps protect your BADR rate (18% from 6 April 2026)."
 schema: ""
 faqs:
   - question: "Can I claim BADR if my company was dormant for the whole 24 months before sale?"

@@ -19,6 +19,9 @@ Hospitality Tax is a UK accountancy practice focused exclusively on the hospital
 - [Accountants for Caterers and Street Food](https://www.hospitalitytax.co.uk/for/caterers-and-street-food)
 
 ## Original research and data
+- [Research hub](https://www.hospitalitytax.co.uk/research): Index of all original hospitality research assets below.
+- [UK Hospitality Insolvency Index](https://www.hospitalitytax.co.uk/research/uk-hospitality-insolvency-index): Monthly UK hospitality (SIC Section I) company insolvencies by procedure type from Insolvency Service record-level data, paired with an ONS Business Demography 1-to-5-year survival curve by birth cohort. Flagship research asset.
+- [UK Hospitality Food Hygiene Map](https://www.hospitalitytax.co.uk/research/uk-hospitality-food-hygiene-map): Aggregate FHRS/FHIS food hygiene rating counts by local authority and business type (restaurants, pubs, hotels, takeaways, mobile caterers), from the FSA ratings API. Aggregate statistics only; no individual establishment is named.
 - [Hospitality Openings and Closures Index](https://www.hospitalitytax.co.uk/research/hospitality-openings-closures-index): UK hospitality company formation and dissolution data derived from Companies House SIC 55 and 56 registrations (accommodation, restaurants, cafes, takeaways, pubs and bars, licensed clubs). SIC codes are self-reported; the caveat is stated prominently on the research page.
 
 ## Key facts (current UK hospitality tax figures, 2026/27)
@@ -40,12 +43,14 @@ These figures are drawn from docs/hospitality/rates_ledger.json and docs/hospita
 - Food business registration with the local authority required at least 28 days before trading (England, Wales and Northern Ireland).
 
 ## Blog categories
-- [Accounts and Bookkeeping](https://www.hospitalitytax.co.uk/blog/accounts-and-bookkeeping)
-- [Food and Drink VAT](https://www.hospitalitytax.co.uk/blog/food-and-drink-vat)
-- [Tronc, Tips and Payroll](https://www.hospitalitytax.co.uk/blog/tronc-tips-and-payroll)
-- [Licensed Trade and Duty](https://www.hospitalitytax.co.uk/blog/licensed-trade-and-duty)
-- [Business Structure and Incorporation](https://www.hospitalitytax.co.uk/blog/business-structure-and-incorporation)
-- [Margins and Cost Control](https://www.hospitalitytax.co.uk/blog/margins-and-cost-control)
+- [Hospitality Accounts](https://www.hospitalitytax.co.uk/blog/hospitality-accounts)
+- [Hospitality VAT](https://www.hospitalitytax.co.uk/blog/hospitality-vat)
+- [Tips and Tronc](https://www.hospitalitytax.co.uk/blog/tips-and-tronc)
+- [Payroll and Employment](https://www.hospitalitytax.co.uk/blog/payroll-and-employment)
+- [Licensed Trade](https://www.hospitalitytax.co.uk/blog/licensed-trade)
+- [Business Rates](https://www.hospitalitytax.co.uk/blog/business-rates)
+- [Capital Allowances](https://www.hospitalitytax.co.uk/blog/capital-allowances)
+- [Making Tax Digital](https://www.hospitalitytax.co.uk/blog/making-tax-digital)
 
 ## Key pages
 - [Home](https://www.hospitalitytax.co.uk/)

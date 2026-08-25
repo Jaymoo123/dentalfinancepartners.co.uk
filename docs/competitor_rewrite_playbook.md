@@ -1,6 +1,6 @@
 # Competitor analysis → per-page rewrite playbook
 
-Last updated: 2026-05-21.
+Last updated: 2026-08-15.
 
 This document captures the end-to-end workflow we built for taking pages from "ranking somewhere but not converting" to "best-in-class for their query". It is the reference for repeating the process on Property's remaining pages and rolling it out to dentists / medical / solicitors / generalist / agency / contractors-ir35.
 
@@ -8,22 +8,22 @@ This document captures the end-to-end workflow we built for taking pages from "r
 
 ## 1. What we built
 
-### Pipeline (DeepSeek-driven analysis)
+### Pipeline (Sonnet-driven analysis)
 
 `optimisation_engine/competitor/` — runs end-to-end for any site_key:
 
 1. **`serp_runner.py`** — for every page in `gsc_query_data` with impressions in the last 28 days, picks the highest-impressions query as the page's "primary query", fetches the top N organic competitors via DuckDuckGo (`ddg_serp_client`), and stores them in `competitor_serps` + `competitor_pages`.
 2. **`page_parser.py`** — fetches our page + each competitor page (with SSRF blocking, robots.txt compliance, content-relevance filtering), extracts 14 categories of text-level signals (sections, FAQs, schema, E-E-A-T, CTAs, layout), stores in `page_content_map`.
-3. **`gap_analyser.py`** — computes quantitative gaps (word count / section count / FAQ count deltas) and calls DeepSeek to identify content gaps (`topic_gaps`, `query_gaps`, `structural_gaps`, `eeat_gaps`). Writes to `competitor_gap_reports`.
-4. **`brief_generator.py`** — calls DeepSeek again to turn each gap report into a specific actionable improvement brief (typically 4-8 KB of markdown per page). Stored in `competitor_gap_reports.improvement_brief`.
+3. **`gap_analyser.py`** — computes quantitative gaps (word count / section count / FAQ count deltas) and calls Anthropic Sonnet (`call_anthropic` with `model=SONNET_MODEL`, see `optimisation_engine/config.py`) to identify content gaps (`topic_gaps`, `query_gaps`, `structural_gaps`, `eeat_gaps`). Writes to `competitor_gap_reports`.
+4. **`brief_generator.py`** — calls Sonnet again to turn each gap report into a specific actionable improvement brief (typically 4-8 KB of markdown per page). Stored in `competitor_gap_reports.improvement_brief`.
 
-**Total DeepSeek cost for property's 93 pages:** ~$0.11. Cheap research, not cheap writing.
+**Total Sonnet cost for property's 93 pages:** ~$0.11. Cheap research, not cheap writing.
 
 ### Handover (Claude Opus 4.7-driven implementation)
 
 `optimisation_engine/competitor/brief_for_opus.py` — generates a self-contained markdown brief per page (`briefs/<site>/<slug>.md`) that a fresh Claude Opus session can pick up and execute end-to-end with no preliminary research. Each brief includes:
 - Page metadata, GSC query data, competitor URLs
-- Full DeepSeek gap report + improvement brief
+- Full Sonnet gap report + improvement brief
 - Cannibalisation context (pillar pages on the same site)
 - Site rules (voice, CSS, lead-gen architecture, schema)
 - External authority links to favour
@@ -37,18 +37,18 @@ python -m optimisation_engine.competitor.brief_for_opus --site property --top 63
 
 ---
 
-## 2. Why DeepSeek + Claude split
+## 2. Why Sonnet (analysis) + Opus (writing) split
 
-DeepSeek is fast and cheap for structured analysis at scale. It pattern-matches well, identifies what competitors have that we don't, and produces serviceable briefs. It is **not** the right tool for writing the actual content on a specialist accountancy site where every figure has to be technically accurate and every statute reference real.
+Sonnet is fast and cheap for structured analysis at scale. It pattern-matches well, identifies what competitors have that we don't, and produces serviceable briefs. It is **not** the right tool for writing the actual content on a specialist accountancy site where every figure has to be technically accurate and every statute reference real.
 
 Claude Opus 4.7 does the writing:
-- Verifies DeepSeek's competitor claims by re-fetching competitor pages
-- Cross-references DeepSeek's £ figures and statute citations against authoritative sources
+- Verifies Sonnet's competitor claims by re-fetching competitor pages
+- Cross-references Sonnet's £ figures and statute citations against authoritative sources
 - Writes the actual rewrite with site-specific voice rules applied
 - Integrates lead-gen CTAs at conversion moments
 - Handles cannibalisation cleanly (writes the applied/local version, not the comprehensive one, when a pillar exists)
 
-The DeepSeek brief is treated as a starting hypothesis. Claude verifies before transcribing.
+The Sonnet brief is treated as a starting hypothesis. Opus verifies before transcribing.
 
 ---
 
@@ -82,16 +82,16 @@ For every page in the queue:
 
 ### 4.1 Verify
 1. Read the source markdown file (path in brief).
-2. Read DeepSeek's gap report and improvement brief.
-3. **Fetch each competitor URL directly** (`optimisation_engine.competitor._fetch.fetch_url`) and check what they actually have. Verify DeepSeek's specific claims (figures, section structure, FAQ presence) against the real HTML.
+2. Read Sonnet's gap report and improvement brief.
+3. **Fetch each competitor URL directly** (`optimisation_engine.competitor._fetch.fetch_url`) and check what they actually have. Verify Sonnet's specific claims (figures, section structure, FAQ presence) against the real HTML.
 4. Pull GSC data for the page (queries already getting impressions, current position, CTR).
 5. Check cannibalisation: does any pillar page already rank for the queries this page is targeting? If so, write the applied/local version.
 
 ### 4.2 Write
 1. **Meta title** — lead with the highest-impression GSC query word order. Include a high-intent differentiator. Stay under 62 characters.
 2. **Meta description** — specific (not generic). Include the free consultation hook. Stay under 158 characters.
-3. **Body** — restructure to address each DeepSeek topic gap with depth. Add at least one worked numerical example with real figures. Add a comparison table if relevant. Add external authority links (HMRC manuals, legislation.gov.uk, gov.uk).
-4. **FAQs** — expand to 10-14 in the frontmatter. Cover: DeepSeek-surfaced gaps + GSC queries with impressions-but-no-clicks + competitor FAQ patterns + lead-form qualifier questions (one per role segment where relevant).
+3. **Body** — restructure to address each Sonnet topic gap with depth. Add at least one worked numerical example with real figures. Add a comparison table if relevant. Add external authority links (HMRC manuals, legislation.gov.uk, gov.uk).
+4. **FAQs** — expand to 10-14 in the frontmatter. Cover: Sonnet-surfaced gaps + GSC queries with impressions-but-no-clicks + competitor FAQ patterns + lead-form qualifier questions (one per role segment where relevant).
 5. **Inline CTAs** — 1-3 `<aside>` blocks at conversion moments (after worked examples, after comparison tables, after the trust-building section). Drive scroll-to-form, do not duplicate the form.
 
 ### 4.3 Check
@@ -140,19 +140,19 @@ These are the rules every rewrite must follow. They live in `optimisation_engine
 
 ## 6. Known issues in the analysis pipeline
 
-These are bugs in the parser layer that affected the DeepSeek briefs. They do NOT need to be fixed to use the briefs — Claude verifies against reality during the per-page rewrite — but they're worth knowing about and worth fixing before the next site's pipeline run.
+These were bugs in the parser layer that affected the Sonnet briefs. All four were **FIXED 2026-08-15**.
 
-### `page_parser.py` bugs to fix
+### `page_parser.py` bugs — FIXED 2026-08-15
 
-1. **H1 extraction returns empty** because the noise-stripping pass removes the header zone before H1 extraction. Every report shows `query_in_h1: false`.
-2. **JSON-LD schema extraction silently fails.** `schema_types` is `[]` on every page even when the live HTML clearly contains Article, FAQPage, BreadcrumbList. The schema parsing path is broken.
-3. **FAQ extraction misses `dl/dt/dd` patterns.** The parser looks for `<details>/<summary>` and class-based accordions only. Property's blog template uses `<dl><dt><dd>`, so all our pages report `faqs=0`.
-4. **The FAQ JSON-LD fallback is broken too** (consequence of bug 2). So competitor FAQ schema isn't counted either, making all "FAQs 0 vs 0" comparisons wrong.
+1. **H1 extraction returns empty** because the noise-stripping pass removes the header zone before H1 extraction. Every report shows `query_in_h1: false`. — FIXED: `parse_page()` now snapshots `<h1>` (`_pre_strip_h1`) before `_strip_noise()` runs and falls back to it if the post-strip zone has no H1.
+2. **JSON-LD schema extraction silently fails.** `schema_types` is `[]` on every page even when the live HTML clearly contains Article, FAQPage, BreadcrumbList. The schema parsing path is broken. — FIXED: `_extract_schema()` now runs before `_strip_noise()` removes `<script>` tags, tolerates `@graph`-wrapped and list-wrapped JSON-LD, and skips malformed JSON instead of failing silently.
+3. **FAQ extraction misses `dl/dt/dd` patterns.** The parser looks for `<details>/<summary>` and class-based accordions only. Property's blog template uses `<dl><dt><dd>`, so all our pages report `faqs=0`. — FIXED: `_extract_faqs()` now also walks `dl > dt/dd` pairs.
+4. **The FAQ JSON-LD fallback was broken too** (consequence of bug 2). So competitor FAQ schema wasn't counted either, making all "FAQs 0 vs 0" comparisons wrong. — FIXED as a consequence of the bug 2 fix.
 
-**Net effect:** topic gaps from DeepSeek (which come from reading the text) are reliable. Structural gaps from DeepSeek (which depend on the parser's counts) are partially unreliable. The brief generator includes explicit warnings about this.
+**Net effect:** topic gaps from Sonnet (which come from reading the text) were always reliable. Structural gaps from Sonnet (which depend on the parser's counts) were unreliable until 2026-08-15; re-run the pipeline for any site to get corrected structural gap data.
 
-### `_db.py` retry coverage
-The retry logic covers 429 (rate limit). It does not cover 503. Hit one 503 during the property run. Worth extending the retry block to cover transient 5xx.
+### `_db.py` retry coverage — FIXED 2026-08-15
+The retry logic previously covered only 429 (rate limit). It now also retries on 5xx status codes and `httpx` timeout/transport exceptions, using the same exponential backoff and max-retry count.
 
 ---
 
@@ -201,7 +201,7 @@ All tables in the public schema:
 - `competitor_serps` — one row per (site_key, query, fetch_date). Stores our position + competitor URLs.
 - `competitor_pages` — one row per competitor URL per SERP. Linked to `page_content_map` after parsing.
 - `page_content_map` — one row per page per day. 14 categories of extracted signals.
-- `competitor_discovery` — Phase 0 calibration output (DeepSeek analysis of top pages).
+- `competitor_discovery` — Phase 0 calibration output (Sonnet analysis of top pages).
 - `competitor_gap_reports` — one row per (site_key, our_page_url, primary_query). The full gap analysis + improvement brief.
 
 All upserts use `ON CONFLICT DO UPDATE` for idempotency. Re-running the pipeline on the same day is a no-op.
@@ -214,13 +214,13 @@ All upserts use `ON CONFLICT DO UPDATE` for idempotency. Re-running the pipeline
 |---|---|
 | `optimisation_engine/competitor/__init__.py` | Pipeline entry point |
 | `optimisation_engine/competitor/__main__.py` | CLI |
-| `optimisation_engine/competitor/_db.py` | Supabase Management API helpers (with 429 retry) |
+| `optimisation_engine/competitor/_db.py` | Supabase Management API helpers (with 429/5xx/timeout retry) |
 | `optimisation_engine/competitor/_fetch.py` | SSRF-blocked, robots-respecting HTTP fetcher |
-| `optimisation_engine/competitor/discovery.py` | Phase 0 DeepSeek pattern discovery |
+| `optimisation_engine/competitor/discovery.py` | Phase 0 Sonnet pattern discovery |
 | `optimisation_engine/competitor/serp_runner.py` | SERP fetch + competitor URL storage |
-| `optimisation_engine/competitor/page_parser.py` | Text-level HTML signal extraction (has known parser bugs, see Section 6) |
-| `optimisation_engine/competitor/gap_analyser.py` | Quantitative + DeepSeek content gap analysis |
-| `optimisation_engine/competitor/brief_generator.py` | DeepSeek improvement brief generation |
+| `optimisation_engine/competitor/page_parser.py` | Text-level HTML signal extraction (parser bugs fixed 2026-08-15, see Section 6) |
+| `optimisation_engine/competitor/gap_analyser.py` | Quantitative + Sonnet content gap analysis |
+| `optimisation_engine/competitor/brief_generator.py` | Sonnet improvement brief generation |
 | `optimisation_engine/competitor/brief_for_opus.py` | Per-page handover brief generator for Claude sessions |
 | `optimisation_engine/clients/ddg_serp_client.py` | DuckDuckGo SERP client (with bot-detection safety nets) |
 | `briefs/<site>/<slug>.md` | Per-page handover briefs (generated, not committed by default) |
@@ -230,7 +230,7 @@ All upserts use `ON CONFLICT DO UPDATE` for idempotency. Re-running the pipeline
 
 ## 10. Cost ledger
 
-- **Property pipeline run:** $0.11 (DeepSeek)
+- **Property pipeline run:** $0.11 (Sonnet)
 - **Per-page Claude rewrite cost:** harder to measure but ~30-60 minutes of Opus 4.7 wall time per page (includes verification, writing, build, check)
 - **Per-page DDG fetches:** free, but ~30-40 seconds of soft rate-limited wall time per page during pipeline run
 
@@ -241,4 +241,4 @@ All upserts use `ON CONFLICT DO UPDATE` for idempotency. Re-running the pipeline
 - Not a content-volume play. The audience is specialist; the bar is technical accuracy and depth, not throughput.
 - Not a programmatic SEO play. Pages are hand-tuned with real local data and verified figures.
 - Not a backlink play. Authority is built through HMRC/legislation.gov.uk/gov.uk outbound citations and the per-page depth, not link acquisition.
-- Not an automation-end-to-end play. DeepSeek is intentionally only used for analysis. The writing stays with Claude because the cost of a hallucinated statute reference or fabricated £ figure on a specialist accountancy site is much higher than the cost of writing it well.
+- Not an automation-end-to-end play. Sonnet is intentionally only used for analysis. The writing stays with Opus because the cost of a hallucinated statute reference or fabricated £ figure on a specialist accountancy site is much higher than the cost of writing it well.

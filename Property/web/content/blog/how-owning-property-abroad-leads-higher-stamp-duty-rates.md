@@ -120,6 +120,20 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A17. Worldwide-property-ownership 
 
 <p>The non-resident surcharge adds £8,000 on the £400,000 transaction. The combined uplift attributable to overseas-property ownership plus non-residence is £28,000 over the standard residential figure.</p>
 
+<p>The same £400,000 purchase, set out band by band across the three positions above:</p>
+
+<table>
+<thead>
+<tr><th>Band</th><th>No other dwelling, UK resident</th><th>Overseas dwelling over £40,000 (Sch 4ZA)</th><th>Overseas dwelling and non-resident (Sch 4ZA + Sch 9A)</th></tr>
+</thead>
+<tbody>
+<tr><td>First £125,000</td><td>0% (£0)</td><td>5% (£6,250)</td><td>7% (£8,750)</td></tr>
+<tr><td>Next £125,000</td><td>2% (£2,500)</td><td>7% (£8,750)</td><td>9% (£11,250)</td></tr>
+<tr><td>Next £150,000</td><td>5% (£7,500)</td><td>10% (£15,000)</td><td>12% (£18,000)</td></tr>
+<tr><td>Total SDLT on £400,000</td><td><strong>£10,000</strong></td><td><strong>£30,000</strong></td><td><strong>£38,000</strong></td></tr>
+</tbody>
+</table>
+
 <h2>The spouse and civil partner aggregation trap</h2>
 
 <p>FA 2003 Schedule 4ZA paragraph 9 attributes the worldwide-property ownership of one spouse or civil partner to the other for the additional dwellings surcharge test. The attribution applies where the couple are married or in a civil partnership and are not separated in circumstances likely to be permanent (the separation carve-out is at paragraph 9(3)). The most common trap: a UK-resident buyer with a UK-only background marries a partner who owns a family home in the partner's country of origin; the UK buyer's subsequent UK home purchase attracts the 5% surcharge on the basis of the partner's overseas property.</p>
@@ -177,8 +191,8 @@ editorialNote: "MegaWave 1 batch M1-A-B3 pick A17. Worldwide-property-ownership 
 <li><strong>FA 2003 Schedule 4ZA</strong> "Higher rates for additional dwellings" (paragraphs 2, 3, 6, 7, 9, 9A, 17): <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA">legislation.gov.uk/ukpga/2003/14/schedule/4ZA</a> (verified 2026-05-26).</li>
 <li><strong>FA 2003 Schedule 9A</strong> "Higher rates for non-resident transactions" (paragraphs 1 to 5; inserted by FA 2021 s.86, in force from 1 April 2021): <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A">legislation.gov.uk/ukpga/2003/14/schedule/9A</a></li>
 <li><strong>FA 2003 Schedule 6ZA</strong> "Relief for first-time buyers" (paragraph 6(2): FTB definition referring to 'any dwelling situated anywhere in the world'): <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA">legislation.gov.uk/ukpga/2003/14/schedule/6ZA</a></li>
-<li><strong>FA 2003 s.55B</strong> (additional dwellings higher-rate computation, band-additive): <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55B">legislation.gov.uk/ukpga/2003/14/section/55B</a></li>
-<li><strong>FA 2003 s.55C</strong> (non-resident higher-rate computation, added by FA 2021 Schedule 16): <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55C">legislation.gov.uk/ukpga/2003/14/section/55C</a></li>
+<li><strong>FA 2003 s.55B</strong> (additional dwellings higher-rate computation, band-additive): legislation.gov.uk/ukpga/2003/14/section/55B</li>
+<li><strong>FA 2003 s.55C</strong> (non-resident higher-rate computation, added by FA 2021 Schedule 16): legislation.gov.uk/ukpga/2003/14/section/55C</li>
 <li><strong>FA 2003 s.117</strong> "Major interest" (leasehold for a term certain of more than seven years; freehold equivalent for foreign jurisdictions): <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/117">legislation.gov.uk/ukpga/2003/14/section/117</a></li>
 <li><strong>FA 2025 c. 8 s.51</strong> (5% additional dwellings surcharge rate from 31 October 2024): <a href="https://www.legislation.gov.uk/ukpga/2025/8/section/51">legislation.gov.uk/ukpga/2025/8/section/51</a></li>
 <li><strong>FA 2021 s.86</strong> + Schedule 16 (non-resident surcharge introduction; in force 1 April 2021).</li>

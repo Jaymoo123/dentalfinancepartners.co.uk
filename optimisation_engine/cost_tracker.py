@@ -129,11 +129,13 @@ def _spent_today(api_provider: str) -> float:
 
 
 def _idempotency_hit(idempotency_key: str) -> Optional[dict]:
+    """Any row for this key, regardless of status. Failed rows are retryable:
+    guard() resets them to pending instead of inserting (the unique index on
+    idempotency_key covers failed rows too, so a blind insert would 409)."""
     url = f"{SUPABASE_URL}/rest/v1/api_cost_log"
     params = {
         "select": "id,status,cost_usd",
         "idempotency_key": f"eq.{idempotency_key}",
-        "status": "in.(pending,success)",
         "limit": "1",
     }
     r = httpx.get(url, headers=_supabase_headers(), params=params, timeout=15.0)
@@ -180,14 +182,18 @@ class CostTracker:
         idempotency_key: Optional[str] = None,
         skip_budget_check: bool = False,
     ) -> Generator[_PendingRecord, None, None]:
-        # Idempotency: refuse if this exact call was already logged today
+        # Idempotency: refuse if this exact call already succeeded (or is in
+        # flight) today. A previously FAILED row is retryable: reuse its id.
+        retry_row_id: Optional[str] = None
         if idempotency_key:
             existing = _idempotency_hit(idempotency_key)
-            if existing:
+            if existing and existing["status"] in ("pending", "success"):
                 raise IdempotencyHit(
                     f"{api_provider}/{endpoint} for {site_key} already recorded today "
                     f"(row {existing['id']}, status {existing['status']})."
                 )
+            if existing:  # failed -> retry by resetting the same row
+                retry_row_id = existing["id"]
 
         # Budget gate (DataForSEO only — others are unlimited for now)
         if not skip_budget_check and api_provider == "dataforseo" and estimated_cost_usd > 0:
@@ -211,7 +217,11 @@ class CostTracker:
             "request_payload": request_payload,
             "idempotency_key": idempotency_key,
         }
-        row_id = _insert_row(row)
+        if retry_row_id:
+            _update_row(retry_row_id, {**row, "error_message": None, "completed_at": None})
+            row_id = retry_row_id
+        else:
+            row_id = _insert_row(row)
         record = _PendingRecord(
             row_id=row_id,
             api_provider=api_provider,

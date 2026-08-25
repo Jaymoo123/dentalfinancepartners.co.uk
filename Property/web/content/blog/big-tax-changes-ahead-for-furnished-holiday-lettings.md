@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "FHL Tax Changes Timeline: 2024 to 2028 (Eight Dates)"
 metaDescription: "Chronological survey of the eight tax changes hitting former-FHL operators across 2024-2028: SDLT 5%, CGT, FA 2025 Sch 5, MTD-ITSA, IHT, 2027 surcharge."
-altText: "A calendar on a property accountant's desk marked with key tax change dates between 2024 and 2028, illustrating the cumulative impact on former Furnished Holiday Letting operators of the abolition under Finance Act 2025 Schedule 5 alongside SDLT, CGT, IHT, and MTD-ITSA reforms"
+altText: "A desk calendar marked with key property tax change dates between 2024 and 2028"
 image: "https://images.pexels.com/photos/273011/pexels-photo-273011.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
   photographer: "Pixabay"

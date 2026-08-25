@@ -1,0 +1,29 @@
+{
+  "name": "digital-agency",
+  "vertical": "digital agency accounting",
+  "provider_terms": [
+    "accountant",
+    "tax adviser",
+    "tax advisor",
+    "accounting firm",
+    "bookkeeper"
+  ],
+  "pain_seeds": [
+    "agency vat",
+    "creative agency accounts",
+    "agency r&d tax relief",
+    "freelancer to agency tax",
+    "agency profit margin accounting",
+    "digital agency expenses"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": true,
+  "seed_evidence": [
+    "agency site queries per docs/agency/DIAGNOSIS_2026-07_SYNTHESIS.md (scored separately per prereg - technical confound)"
+  ],
+  "audience_terms": [
+    "digital agencies",
+    "marketing agencies",
+    "creative agencies"
+  ]
+}

@@ -1,0 +1,35 @@
+<!-- Tokens: LEAD_ID, BASIS, TIER_LABEL, SOURCE_SITE, CASE_TYPE, INTENT_LINE, AREA, PRICE, NAME, PHONE, EMAIL, MESSAGE, VERIFIED, VERIFIED_AT, DELIVERED_AT, TERMS_HTML. TERMS_HTML is the standard terms reproduced verbatim from config/standard_terms.md. -->
+<div style="font-family: Georgia, 'Times New Roman', serif; max-width: 620px; margin: 0 auto; color: #1a1a1a;">
+  <h2 style="font-size: 18px; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px;">Lead delivery: {{LEAD_ID}} ({{TIER_LABEL}}, {{PRICE}})</h2>
+  <p style="font-size: 14px;">You claimed this lead. Full verified details below.</p>
+  <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Basis</td><td style="padding: 4px 0;"><strong>{{BASIS}}</strong></td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Source site</td><td style="padding: 4px 0;">{{SOURCE_SITE}}</td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Tier</td><td style="padding: 4px 0;"><strong>{{TIER_LABEL}}</strong></td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Case type</td><td style="padding: 4px 0;">{{CASE_TYPE}}</td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Intent</td><td style="padding: 4px 0;">{{INTENT_LINE}}</td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Area</td><td style="padding: 4px 0;">{{AREA}}</td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Price</td><td style="padding: 4px 0;"><strong>{{PRICE}}</strong></td></tr>
+  </table>
+  <h3 style="font-size: 15px; margin-bottom: 4px;">Contact</h3>
+  <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Name</td><td style="padding: 4px 0;"><strong>{{NAME}}</strong></td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Phone</td><td style="padding: 4px 0;">{{PHONE}}</td></tr>
+    <tr><td style="padding: 4px 12px 4px 0; color: #555;">Email</td><td style="padding: 4px 0;">{{EMAIL}}</td></tr>
+  </table>
+  <h3 style="font-size: 15px; margin-bottom: 4px;">Full message</h3>
+  <p style="font-size: 14px; background: #f5f4f0; padding: 12px;">{{MESSAGE}}</p>
+  <table style="border-collapse: collapse; width: 100%; font-size: 13px; color: #555;">
+    <tr><td style="padding: 2px 12px 2px 0;">Verified</td><td style="padding: 2px 0;">{{VERIFIED}}</td></tr>
+    <tr><td style="padding: 2px 12px 2px 0;">Verified at</td><td style="padding: 2px 0;">{{VERIFIED_AT}}</td></tr>
+    <tr><td style="padding: 2px 12px 2px 0;">Delivered at</td><td style="padding: 2px 0;">{{DELIVERED_AT}}</td></tr>
+  </table>
+  <h3 style="font-size: 14px; margin-bottom: 4px; border-top: 1px solid #ddd; padding-top: 12px;">Lawful basis and what you must do next</h3>
+  <div style="font-size: 12px; color: #555;">
+    <p style="margin: 0 0 8px;">This enquiry is shared with you under our legitimate interests (Article 6(1)(f) UK GDPR) and the data sharing agreement between us. You are an independent controller of it from delivery. You must identify yourself to the enquirer and give them your own privacy information when you first make contact (Article 14, normally at first contact and within one month). Your first contact is a response to their enquiry, not marketing. Do not pass this data to any other controller, sell it or list-broker it. Tell us within 2 working days if they object or opt out.</p>
+    <p style="margin: 0 0 4px;"><strong>Notice shown to the enquirer when they submitted:</strong></p>
+    <p style="margin: 0; font-style: italic;">{{CONSENT_TEXT}}</p>
+  </div>
+  <h3 style="font-size: 14px; margin-bottom: 4px; border-top: 1px solid #ddd; padding-top: 12px;">Standard terms</h3>
+  <div style="font-size: 12px; color: #555;">{{TERMS_HTML}}</div>
+</div>

@@ -7,10 +7,16 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "PCN Funding & the Network Contract DES Explained"
-metaDescription: "How money flows through a primary care network: the Network Contract DES, core PCN funding, ARRS reimbursement, the nominated payee and the practice accounts."
+metaDescription: "How money flows through a primary care network: the Network Contract DES, core PCN funding, ARRS reimbursement, the nominated payee and practice accounts."
 altText: "GP partners and a practice manager reviewing primary care network funding statements"
 image: ""
 h1: "PCN Funding Explained: The Network Contract DES and How the Money Flows"
+keyTakeaways:
+- "The Network Contract DES is a voluntary Directed Enhanced Service on top of the core GMS or PMS contract, so its funding and obligations are accounted for separately from the Global Sum and QOF."
+- "For 2025/26 core PCN funding was around £2.999 per patient (roughly £2.266 registered-list plus £0.733 adjusted-population) and the network participation payment was around £1.76 per registered patient, both uplifted annually."
+- "Core PCN funding now rolls in the clinical director, leadership and management funding, which was combined into it to give networks more autonomy over how they are led and resourced."
+- "ARRS is a reimbursement of the actual employment cost of defined additional roles up to a per-role maximum, not free money and not a grant, and any excess above the cap falls on the network."
+- "PCN money is paid to a nominated payee (commonly a lead host practice, a GP federation or a separate entity) that then distributes it under the network agreement, and what reaches a partner is taxed as their share of practice profit, not their drawings."
 summary: "Most GP partners know their practice belongs to a primary care network and that money arrives through it, but few have seen how the Network Contract DES actually channels that money or how it lands in the practice accounts. This guide maps the flow end to end: the Network Contract DES as a voluntary Directed Enhanced Service, the named funding streams (core PCN funding, ARRS reimbursement, enhanced access, capacity and access, and the Investment and Impact Fund), the nominated payee that receives the money, and how it is recognised in the practice and the partners' profit share."
 schema: ""
 faqs:

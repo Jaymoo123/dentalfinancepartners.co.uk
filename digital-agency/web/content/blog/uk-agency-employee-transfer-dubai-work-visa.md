@@ -116,7 +116,7 @@ keyTakeaways:
 
 <p>Document the commercial reasons for the move. Document the roles and responsibilities of each entity. Document how the employees' work changes post-relocation. If an employee does the same job for the same clients from a Dubai beach, HMRC will argue the move has no commercial substance. You need to show that the Dubai entity has real operational activity, real clients, real management, and real decision-making.</p>
 
-<p>This is where working with an specialist agency accountant who understands both UK and UAE tax is critical. We see agency founders set up Dubai entities that are shell companies on paper, then wonder why HMRC opens an enquiry. Do not be that person.</p>
+<p>This is where working with a specialist agency accountant who understands both UK and UAE tax is critical. We see agency founders set up Dubai entities that are shell companies on paper, then wonder why HMRC opens an enquiry. Do not be that person.</p>
 
 <h2>Healthcare and Insurance</h2>
 

@@ -7,10 +7,16 @@ generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partner Drawings vs Profit: How to Reserve for Tax"
-metaDescription: "Why a GP partner is taxed on profit share, not drawings, the cash-flow gap that creates, and how to reserve for tax, payments on account and superannuation."
+metaDescription: "Why a GP partner is taxed on profit share, not drawings, the cash-flow gap it creates, and how to reserve for tax, payments on account and superannuation."
 altText: "GP partner setting aside a tax reserve from monthly drawings against an annual profit share"
 image: ""
 h1: "Drawings Versus Profit for a GP Partner: Why They Differ and How to Reserve for Tax"
+keyTakeaways:
+- "A GP partner is taxed on their full allocated profit share for the year, not on the drawings they actually took as cash."
+- "Class 4 National Insurance runs at 6% on profits between £12,570 and £50,270, then 2% on profits above £50,270."
+- "Class 2 National Insurance is no longer a required payment from 6 April 2024 for profits at or above the Small Profits Threshold."
+- "Payments on account are two interim instalments of broadly 50% of the prior year's liability each, due 31 January and 31 July, where the prior-year liability exceeded £1,000 and less than 80% of tax was collected at source."
+- "A new partner's first January can carry the balancing payment plus the first payment on account, so roughly 150% of a single year's tax can fall due at once."
 summary: "A GP partner draws a steady monthly amount but is taxed on something different: their full allocated profit share, whether or not they drew it as cash. This page is the practical, cash-flow-first treatment of that gap: why the two figures diverge, the timing mismatch it creates (drawings now, tax bill later), and a workable method for reserving for income tax, Class 4 National Insurance, payments on account and superannuation, so the January and July bills never come as a shock."
 schema: ""
 faqs:

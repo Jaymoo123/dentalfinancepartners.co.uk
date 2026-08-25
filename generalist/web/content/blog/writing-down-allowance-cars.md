@@ -86,7 +86,7 @@ The reducing balance method means the allowance gets smaller each year. The car 
 
 The CO2 thresholds changed for cars bought on or after 1 April 2021. If you bought the car before that date, different thresholds apply.
 
-For cars bought before April 2021, the main rate pool (18%) applied to cars with CO2 emissions up to 110g/km. The special rate pool (6%) applied to cars with emissions above 110g/km.
+For cars bought before April 2021, the main rate pool applied to cars with CO2 emissions up to 110g/km. The special rate pool (6%) applied to cars with emissions above 110g/km. The pool rate itself follows the current law, so a pre-April 2021 car sitting in the main pool attracted 18% up to 31 March 2026 (CT) or 5 April 2026 (IT) and attracts 14% from April 2026 under FA 2026 s.28.
 
 If you still have a pre-April 2021 car on your asset register, keep using the old thresholds for that specific car. The new thresholds only apply to cars bought from 1 April 2021 onwards.
 

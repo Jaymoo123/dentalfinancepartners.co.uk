@@ -1,0 +1,28 @@
+{
+  "batch_id": "M3-A-B2",
+  "phase": "RUN",
+  "lane": "A",
+  "bucket": "MTD for ITSA + Penalties & enquiries + Penalties, enquiries & HMRC nudge letters + Let Property Campaign & HMRC voluntary disclosure + Self-assessment mechanics",
+  "agent_id": "manager-synth-post-stall",
+  "worktree": "C:/Users/user/Documents/Accounting-wt-property-megawave3-a",
+  "branch": "property-megawave3-a",
+  "completed_at": "2026-05-28T09:53:02Z",
+  "commit_shas": [
+    "84cc2a8e375afaf71c764653e313eb86b690ef87",
+    "29592ab621066d3b8744f7872702b5e66dcbdbb3",
+    "fed935a9d2db65159385332b01138c8882abf709",
+    "e658c19733b9032936e3ac48f6d79597edd20927",
+    "9a53f17d4fb37a5d4e054c87cfbcf8be9f9d1389",
+    "bdb4068fcd1275137e49f9f4813fa452dedac45d"
+  ],
+  "slugs_done": [
+    "heres-how-you-can-exit-mtd-if-your-income-falls",
+    "hmrcs-loan-charge-settling-disguised-remuneration-schemes",
+    "hmrcs-nudge-letters-demand-urgent-review-of-gift-hold-over-relief-claim",
+    "hmrcs-nudge-letters-on-business-asset-disposal-relief",
+    "how-making-tax-digital-affects-limited-companies",
+    "know-about-let-property-campaign"
+  ],
+  "output_dir": "Property/web/content/blog/",
+  "notes": "MANAGER-SYNTHESIZED post sub-agent stall. Sub-agent completed all 6 B2 picks on worktree branch property-megawave3-a but went idle before writing canonical marker. All 6 page files verified present on main via FF merge to bdb4068f. Marker synthesized from worktree commit log + queue_A B2 slug order. Original sub-agent stall: last commit 09:53:02; idle 55+ min by 10:48 detection."
+}

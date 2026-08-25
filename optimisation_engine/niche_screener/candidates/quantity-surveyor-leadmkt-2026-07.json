@@ -1,0 +1,61 @@
+{
+  "candidate_id": "quantity-surveyor-leadmkt-2026-07",
+  "vertical": "quantity surveyor",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://surveybooker.co.uk/optimising-processes/grow-sales-lead-generation-sites/",
+      "excerpt": "You'll pay a small fee for each lead you receive. It is then your job to convert these leads into sales.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.surventrix.com/blog/getting-more-leads-as-a-surveyor",
+      "excerpt": "9 Oct 2025 — Lead generation for your company: how to get them. 1. Create a pitch. It is important to have a good 'pitch' for your target clients before you ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.advance-connects.com/service/lead-generation/",
+      "excerpt": "Generate high-quality, pre-qualified leads for construction and industrial projects with our expert lead generation services. Call now.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://buildpartner.com/7-best-lead-generation-companies-for-uk-building-contractors/",
+      "excerpt": "29 Jun 2024 — Lead generation – pay companies per lead, such as Rated People and MyBuilder. is usually between £10 to £50, depending on the job's size and ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.scaleworks.ie/quantity-surveyors",
+      "excerpt": "We help quantity surveying firms in Ireland generate project enquiries and grow their pipeline with digital marketing. €4.4B Annual Construction Output €25K",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "7 best lead generation companies for uk building ...",
+    "b2b lead generation services uk",
+    "getting more leads as a surveyor",
+    "grow sales: lead generation sites",
+    "quantity surveyor",
+    "retrofit & construction qs lead generation | scaleworks"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK quantity surveyor providers already paying per lead",
+    "proof": "5 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

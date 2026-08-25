@@ -1,0 +1,87 @@
+{
+  "candidate_id": "garden-landscaping-leadmkt-2026-07",
+  "vertical": "garden landscaping",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadseveryday.co.uk/landscaping",
+      "excerpt": "Get exclusive landscaping leads delivered daily. We build your landing page, run targeted Google Ads, and send qualified customers straight to your phone.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.referr.co.uk/categories/home-garden/gardening-landscaping",
+      "excerpt": "Buy Leads Sell Leads All 9 Ending soon. Earn £5.00 / Lead. Kingdom Earn £87.50 / Lead Siluruin Gardens is looking for Gardening",
+      "metric": {
+        "price_gbp": 5
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/landscaping-leads/",
+      "excerpt": "We generate hundreds of landscaping leads each month to landscape design and gardening companies in the UK. Find new customers who are actively seeking a quote. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://referr.co.uk/sell-leads",
+      "excerpt": "Garden Landscaping Mike looking for Garden Landscaping leads in Bristol App ... Average Price per Lead £75. £5£55£105£150£200. Acceptance Rate 80%. 50%70 ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://referr.co.uk/buy-leads",
+      "excerpt": "Garden Landscaping New Garden Landscaping leads5 Mortgage Broker Hot ... “I was skeptical at first, but being able to set my own price per lead changed everything ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://onebasemedia.co.uk/landscaping-job-leads/",
+      "excerpt": "Pay on results lead generation for landscapers … scale your landscaping businesses to an extra £50-£100k/Per month WITHOUT spending a fortune on advertising.  ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/15r49w8/lead_generation/",
+      "excerpt": "I run a small landscaping business and am looking for ways to increase lead generation. main source of leads, have gotten maybe 2-5 leads. ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.landscapeleadership.com/blog/16-lawn-care-lead-generation-strategies-ranked-best-to-worst",
+      "excerpt": "If you do this correctly, you should be getting a cost per lead of $10-$35 for Google Ads (outside of what an agency charges for management). a minimum of $1, ...",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "16 lawn care lead generation strategies (ranked best to ...",
+    "buy qualified leads",
+    "garden landscaping",
+    "gardening & landscaping lead requests",
+    "landscaping & gardening job leads",
+    "landscaping lead generation",
+    "lead generation : r/smallbusiness",
+    "sell leads & earn money"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK garden landscaping providers already paying per lead",
+    "proof": "6 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

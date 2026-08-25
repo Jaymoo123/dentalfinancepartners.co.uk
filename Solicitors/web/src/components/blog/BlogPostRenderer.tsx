@@ -6,6 +6,9 @@ import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
+
+const activeCta = getActiveCta(niche);
 import { TableOfContents } from "@accounting-network/web-shared/content/TableOfContents";
 import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
 import { AuthorByline } from "./AuthorByline";
@@ -284,13 +287,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
                 <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
-                  {niche.blog.cta_heading}
+                  {activeCta.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
-                  {niche.blog.cta_body}
+                  {activeCta.blog.cta_body}
                 </p>
                 <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+                  <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
                 </div>
               </div>
 

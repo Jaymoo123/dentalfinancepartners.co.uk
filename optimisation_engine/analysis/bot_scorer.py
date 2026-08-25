@@ -147,9 +147,17 @@ HUMAN_SIGNAL_EVENTS = frozenset(
         "form_start",
         "form_field_focus",
         "form_submit",
+        "form_step_complete",
+        "form_step_back",
+        "resource_unlocked",
+        "subscribe_submitted",
+        "experiment_action",
         "lead_submitted",
         "personalization_clicked",
-        "support_opened",
+        # support_opened is NOT a human signal: SpecialistWidget auto-opens and
+        # emits it with via="auto" (99.4% of estate volume 08-20..08-23). It was
+        # granting humanity credit to headless page loads. See the matching note
+        # on INTERACTION_EVENTS in packages/web-shared/analytics/types.ts.
     }
 )
 FRUSTRATION_EVENTS = frozenset({"rage_click", "dead_click"})
@@ -369,6 +377,28 @@ def score_session(
         n_events >= 8 and mechanical_axes >= 3 and total_credit <= 0.0001
     )
 
+    # PASSIVE SESSION: emitted enough events to judge, yet produced no interaction
+    # event, no engaged time and no scroll at all. The client only emits
+    # engagement_time after a real pointer/keyboard/touch/scroll input and only
+    # emits scroll_depth on an actual scroll, so all three being empty together
+    # means nothing drove the page. A headless fetcher with a genuine Chrome UA
+    # scores near zero on every mechanical axis (its events are page_view,
+    # web_vital and whatever the page fires at itself), so the weighted score
+    # never reaches the threshold; this is the axis that catches it.
+    #
+    # Sized before shipping against 2026-08-01..08-23 estate-wide: it removes
+    # ~14% of a normal day (real zero-interaction bounces we cannot tell apart
+    # from bots, and which carry no behavioural data either way) and 47%/66% of
+    # 08-22 and 08-23, the two days the new fleet arrived.
+    passive_session = (
+        n_events >= MIN_EVENTS_TO_SCORE
+        and ev["n_human_types"] == 0
+        and not ev["has_frustration"]
+        and not ev["has_form"]
+        and engaged_ms == 0
+        and int(sess.get("max_scroll_pct") or 0) == 0
+    )
+
     # An ingest-time bot flag is STICKY (the ingest RPC OR-merges is_bot and never
     # clears it). We must mirror that: a session ingest already called a bot, or
     # whose bot_reason carries a UA-bot tag, can never be demoted to human here.
@@ -388,6 +418,10 @@ def score_session(
         is_bot = True
         score = max(score, threshold)
         decision_basis = "scripted_heartbeat"
+    elif passive_session:
+        is_bot = True
+        score = max(score, threshold)
+        decision_basis = "passive_session"
     elif n_events < MIN_EVENTS_TO_SCORE:
         # Too little evidence: keep current classification, don't invent a bot.
         is_bot = bool(sess.get("is_bot"))
@@ -582,7 +616,61 @@ def _parse_args(argv: list[str]) -> dict[str, Any]:
     return {"site": site, "dry_run": dry_run, "days": days, "threshold": threshold}
 
 
+def _self_check() -> None:
+    """Offline check of the passive-session rule and the support_opened demotion.
+
+    Run: python -m optimisation_engine.analysis.bot_scorer --self-check
+    """
+
+    def sess(**kw: Any) -> dict:
+        base = {
+            "started_at": "2026-08-23T10:00:00+00:00",
+            "last_seen_at": "2026-08-23T10:00:30+00:00",
+            "engaged_ms": 0,
+            "max_scroll_pct": 0,
+            "is_bot": False,
+            "bot_reason": None,
+            "ua_family": "Chrome",
+        }
+        base.update(kw)
+        return base
+
+    def evs(names: list[str]) -> list[dict]:
+        return [
+            {"event_name": n, "ts": f"2026-08-23T10:00:{i:02d}+00:00"}
+            for i, n in enumerate(names)
+        ]
+
+    # The 2026-08-22 fleet: real Chrome UA, page loads only, nothing drove it.
+    fleet = evs(["page_view", "web_vital", "web_vital", "support_opened"])
+    v = score_session(sess(), summarise_events(fleet))
+    assert v["is_bot"] is True, v
+    assert v["decision_basis"] == "passive_session", v
+
+    # support_opened must not rescue it -- that was the bug.
+    assert "support_opened" not in HUMAN_SIGNAL_EVENTS
+
+    # A real reader scrolled, so the rule must leave them alone.
+    human = evs(["page_view", "scroll_depth", "web_vital"])
+    v = score_session(sess(max_scroll_pct=64, engaged_ms=41_000), summarise_events(human))
+    assert v["is_bot"] is False, v
+
+    # Scroll alone, with no engaged time, is still a human.
+    v = score_session(sess(max_scroll_pct=22), summarise_events(evs(["page_view", "web_vital", "web_vital"])))
+    assert v["is_bot"] is False, v
+
+    # Too few events to judge: never invent a bot from absence of data.
+    v = score_session(sess(), summarise_events(evs(["page_view", "web_vital"])))
+    assert v["is_bot"] is False, v
+    assert v["decision_basis"] == "insufficient_evidence", v
+
+    print("[SCORE] self-check OK")
+
+
 if __name__ == "__main__":
+    if "--self-check" in sys.argv[1:]:
+        _self_check()
+        raise SystemExit(0)
     args = _parse_args(sys.argv[1:])
     print(
         reclassify_bots_scored(

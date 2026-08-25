@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Complete Associate Dentist Tax Guide | Dental Finance Partners",
+  title: "Complete Associate Dentist Tax Guide",
   description:
     "Comprehensive guide to associate dentist tax, self-assessment, expenses, National Insurance, and tax planning strategies for UK dental associates.",
   alternates: { canonical: `${siteConfig.url}/blog/associate-tax` },

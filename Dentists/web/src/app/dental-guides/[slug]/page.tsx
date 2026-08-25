@@ -27,7 +27,7 @@ type Params = Promise<{ slug: string }>;
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
-  if (!guide) return { title: `Pillar Guide | ${siteConfig.name}` };
+  if (!guide) return { title: "Pillar Guide" };
   const url = `${siteConfig.url}/dental-guides/${slug}`;
   return {
     title: guide.metaTitle,

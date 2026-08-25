@@ -1,0 +1,106 @@
+{
+  "candidate_id": "payroll-services-leadmkt-2026-07",
+  "vertical": "payroll services",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.searchprofessionals.co.uk/payroll_service_leads.html",
+      "excerpt": "If you are paying us on a price per lead basis all leads will be telephone qualified in our in-house call centre. We will only pass leads through to you",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://peakmarketingservice.com/payroll-services-leads/",
+      "excerpt": "17 Nov 2024 — Buy Payroll Service Leads – Guaranteed Leads. Pump up Your Close Rate by 90% With Exclusive Payroll Services Leads. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://weboost.co.uk/payroll-services-leads-northern-ireland",
+      "excerpt": "Own exclusive payroll services enquiries in Northern Ireland from £795/month. One partner only, no per-lead fees.",
+      "metric": {
+        "price_gbp": 795
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leads2results.com/business/payroll-services.aspx",
+      "excerpt": "Aged Payroll Services Leads — bulk pricing · How to Buy B2B Leads: What Every Business Should Know · Buy Leads Online: The Complete Guide ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.facebook.com/peakmarketingservice/",
+      "excerpt": "Now offering leads for payroll providers! Buy Payroll Services Leads – Guaranteed Leads | Peak Marketing Service. PEAKMARKETINGSERVICE.COM. Buy Payroll ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://employmenthero.com/uk/blog/lead-generation-for-outsourced-payroll-service-firm/",
+      "excerpt": "4 Sept 2025 — Building strategic partnerships can significantly boost lead generation for an accountancy, bookkeeping, or outsourced payroll service firm. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.guhroo.co/a-practical-guide-to-lead-generation-for-payroll-companies/",
+      "excerpt": "14 Jan 2026 — A practical guide to lead generation for payroll companies: what works in 2025, what to stop doing, and how to build a repeatable growth ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://clicksgeek.com/pay-per-lead-services/",
+      "excerpt": "3 May 2026 — Discover the 9 best pay per lead services that deliver qualified customers, not wasted clicks. Compare pricing, lead quality, and proven ROI ...",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkdigital.co.uk/services/pay-per-lead/",
+      "excerpt": "We provide high quality, qualified leads on a pay per lead basis, from 25 to 100's of leads per week. Fixed price leads with no advertising costs or agency fees ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://uk.linkedin.com/company/emediasolutions",
+      "excerpt": "We help B2B businesses grow quickly by connecting them with new buyers and opportunities using a very specific and unique B2B Digital Networking strategy. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "9 best pay per lead services for local businesses in 2026",
+    "a practical guide to lead generation for payroll companies",
+    "buy payroll service leads | real-time & aged",
+    "buy payroll service leads – guaranteed leads",
+    "lead generation: tips to gain more clients for your ...",
+    "pay per lead - b2b lead generation.",
+    "pay per lead services",
+    "payroll services",
+    "payroll services enquiries in northern ireland | weboost",
+    "payroll services leads",
+    "peak marketing service, llc | chesapeake va"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK payroll services providers already paying per lead",
+    "proof": "10 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": true
+}

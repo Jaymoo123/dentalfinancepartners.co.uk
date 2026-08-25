@@ -1,0 +1,37 @@
+{
+  "batch_id": "M2-A-B3",
+  "agent_id": "MW2-stage1-A-B3",
+  "completed_at": "2026-05-27T00:00:00Z",
+  "branch": "property-megawave2-a",
+  "phase": "stage1",
+  "bucket": "A (Limited company / BTL company operation + Incorporation mechanics + Property partnership / LLP)",
+  "commit_shas": [
+    "b4bd1e2",
+    "8f0d757",
+    "3d0ec55",
+    "a4025cb",
+    "c76d412",
+    "d513321"
+  ],
+  "slugs_done": [
+    "limited-companies-and-btl-properties",
+    "llp-accounts",
+    "llp-and-taxation-benefits",
+    "partnership-partnership-agreement-roles-types-benefits",
+    "register-for-uk-corporation-tax",
+    "sole-trader-vs-partnership"
+  ],
+  "flags_raised": [
+    "F-6 — HOUSE_POSITION_EXTENSION — LLP accounts + SORP + designated member framework (SI 2008/1911 + LLP SORP + FRS 102 Section 22 substance test) — raised via llp-accounts seed"
+  ],
+  "cannibalisation_notes": [
+    "limited-companies-and-btl-properties — HIGH CANNIBAL RISK with A20 entity pillar + existing buy-to-let-limited-company-complete-guide-uk; differentiator carved (operational handbook + accounts-treatment + lifecycle/exit decision tree); Stage 1b reviewer should validate the carve-out OR consider REDIRECT to A20/BTL-complete-guide as fallback."
+  ],
+  "hp_lock_consumption": [
+    "F-2 (M2-A-B2) §11.C partnership architecture lock — consumed by partnership-partnership-agreement-roles-types-benefits + sole-trader-vs-partnership + llp-and-taxation-benefits + llp-accounts seeds",
+    "F-4 (M2-A-B2) §11.C.X salaried-member sub-section — consumed by llp-and-taxation-benefits + partnership-partnership-agreement-roles-types-benefits + llp-accounts seeds",
+    "F-5 (M2-A-B2) §11.C.Y mixed-membership sub-section — consumed by llp-and-taxation-benefits + partnership-partnership-agreement-roles-types-benefits + llp-accounts seeds",
+    "F-3 (M2-A-B2) §21.8 multi-company group operation lock — touched by limited-companies-and-btl-properties + register-for-uk-corporation-tax seeds",
+    "F-1 (M2-A-B1) §11.B ECCTA Part 2 LP reforms lock — touched by partnership-partnership-agreement-roles-types-benefits + sole-trader-vs-partnership seeds"
+  ]
+}

@@ -9,14 +9,14 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", ");
 
-// Specialist partner firm enquiries are shared with. null = handled in-house.
+// Pool model: enquiries are shared with regulated firms from our
+// specialist partner network (category wording, never a named firm).
 const partner = niche.partner;
 
-// Lead-form consent wording WITHOUT the trailing "See our Privacy Policy." link
-// (each form appends that). Driven by `partner` so policy and forms never drift.
-const leadConsentText = partner
-  ? `I agree to my details being shared by ${niche.display_name} with our specialist partner firm ${partner.name}, an independent data controller that uses them under its own privacy policy, to respond to my enquiry and provide specialist advice.`
-  : `I agree to ${niche.display_name} using my details to respond to my enquiry and provide the advice I have requested.`;
+// Lead-form acknowledgement wording WITHOUT the trailing "See our Privacy
+// Policy." link (each form appends that). Static category wording; the
+// privacy policy carries the matching disclosure.
+const leadConsentText = `To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. By submitting this enquiry you confirm you understand this.`;
 
 export const siteConfig = {
   name: niche.display_name,

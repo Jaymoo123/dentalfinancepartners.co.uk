@@ -13,7 +13,7 @@
  * --border, --muted. Accent is indigo #4f46e5.
  *
  * Consent: uses siteConfig.resourceConsentText (in-house-only wording, never
- * names Reflex Accounting). Resource downloads are NOT shared with the partner firm.
+ * names a specific partner firm). Resource downloads are NOT shared with the partner firm.
  *
  * Submit: goes through submitAffLead with extras { resource_gate: true }
  * so the server chokepoint can exclude these rows from the partner-CC notify path.

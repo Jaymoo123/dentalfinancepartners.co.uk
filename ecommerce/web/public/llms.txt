@@ -36,7 +36,9 @@ Ecommerce Finance is a UK accountancy practice focused exclusively on ecommerce 
 
 ## Original research
 
-- [Online Seller Index](https://www.ecommercefinance.co.uk/research/online-seller-index): Data research on the UK ecommerce sector, including formation trends and compliance patterns.
+- [Research hub](https://www.ecommercefinance.co.uk/research): All original data research.
+- [Online Seller Index](https://www.ecommercefinance.co.uk/research/online-seller-index): Companies House SIC 47910 formation and dissolution trends paired with the ONS internet-retail sales share, plus formation seasonality.
+- [Online Seller Survival Index](https://www.ecommercefinance.co.uk/research/online-seller-survival-index): ONS Business Demography survival rates for UK retail-sector enterprises by birth-year cohort, versus the all-industries average.
 
 ## Key facts (current UK ecommerce and seller tax figures, 2026/27)
 

@@ -146,18 +146,18 @@ editorialNote: "Hybrid-LLP structure-explainer plus mixed-membership anti-avoida
 <p>Load-bearing pages for the hybrid-LLP audience:</p>
 
 <ul>
-<li><strong>PM214000</strong> – Overview of the mixed-membership rules.</li>
-<li><strong>PM218000</strong> and <strong>PM219000</strong> – Conditions X and Y (the operative gates).</li>
-<li><strong>PM220000</strong> – Appropriate notional profit.</li>
-<li><strong>PM221000</strong> – Notional return on capital.</li>
-<li><strong>PM222000</strong> and <strong>PM223000</strong> – Notional consideration for services and its restrictions.</li>
-<li><strong>PM224000</strong> – The power to enjoy. LOAD-BEARING for the substance test.</li>
-<li><strong>PM225000</strong> – Connected parties.</li>
-<li><strong>PM226000</strong> – Arrangements to secure CT rather than IT (the policy framing).</li>
-<li><strong>PM227000</strong> and <strong>PM228000</strong> – Enjoyment Conditions and influence of power to enjoy on the profit share.</li>
-<li><strong>PM230000</strong> and <strong>PM231000</strong> – Reallocations (individual and non-individual sides).</li>
-<li><strong>PM234000</strong> – Anti-avoidance overlay.</li>
-<li><strong>PM248000</strong> – Close companies: loans to participators and arrangements conferring benefit on participator. Bridges to CTA 2010 s.464A territory and connects with the broader close-company anti-avoidance framework.</li>
+<li><strong>PM214000</strong>: Overview of the mixed-membership rules.</li>
+<li><strong>PM218000</strong> and <strong>PM219000</strong>: Conditions X and Y (the operative gates).</li>
+<li><strong>PM220000</strong>: Appropriate notional profit.</li>
+<li><strong>PM221000</strong>: Notional return on capital.</li>
+<li><strong>PM222000</strong> and <strong>PM223000</strong>: Notional consideration for services and its restrictions.</li>
+<li><strong>PM224000</strong>: The power to enjoy. LOAD-BEARING for the substance test.</li>
+<li><strong>PM225000</strong>: Connected parties.</li>
+<li><strong>PM226000</strong>: Arrangements to secure CT rather than IT (the policy framing).</li>
+<li><strong>PM227000</strong> and <strong>PM228000</strong>: Enjoyment Conditions and influence of power to enjoy on the profit share.</li>
+<li><strong>PM230000</strong> and <strong>PM231000</strong>: Reallocations (individual and non-individual sides).</li>
+<li><strong>PM234000</strong>: Anti-avoidance overlay.</li>
+<li><strong>PM248000</strong>: Close companies: loans to participators and arrangements conferring benefit on participator. Bridges to CTA 2010 s.464A territory and connects with the broader close-company anti-avoidance framework.</li>
 </ul>
 
 <p>Verify the current PM214000-series wording at the time of any client decision; the framework is substantively unchanged since FA 2014 but periodic refreshes occur.</p>

@@ -5,14 +5,18 @@ import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { niche } from "@/config/niche-loader";
+import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+
+const packagesMode = isPackagesMode(niche);
 
 export const metadata: Metadata = {
-  title: `Contact ${siteConfig.name} | Book a Free Consultation`,
+  title: "Contact | Speak to a Solicitor Accountant",
   description: `Get in touch with ${siteConfig.name} to discuss SRA compliance, partnership tax or LLP conversion for your firm. Fixed-fee quotes, 24-hour response.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
-    description: "Book a free consultation to discuss SRA compliance, partnership tax and LLP advice. 24-hour response time.",
+    description: "Speak to a specialist solicitor accountant about SRA compliance, partnership tax and LLP advice. 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
@@ -45,6 +49,21 @@ export default function ContactPage() {
         </Link>{" "}
         service overview to see how we work and what fixed-fee engagement fits your firm.
       </p>
+      {packagesMode ? (
+        <p className="mt-3 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+          Already know what you need? Our fixed monthly plans start at £49 a month, with{" "}
+          <Link
+            className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
+            href="/pricing"
+            data-cta="contact_pricing_link"
+            data-cta-placement="contact"
+            data-cta-variant={niche.cta.variant}
+          >
+            full pricing published here
+          </Link>
+          .
+        </p>
+      ) : null}
       
       <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
         <div className="space-y-6">
@@ -91,7 +110,9 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 sm:p-8">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Book your free consultation</h2>
+          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+            {packagesMode ? "Send us your enquiry" : "Book your free consultation"}
+          </h2>
           <p className="mt-3 text-sm text-[var(--muted)]">
             Tell us about your situation and we'll arrange a short call to discuss how we can help.
           </p>

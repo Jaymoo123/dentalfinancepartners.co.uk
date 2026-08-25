@@ -38,7 +38,7 @@ keyTakeaways:
 
 <h2>Why a Salary Dividend Split Exists in the First Place</h2>
 
-<p>As an specialist agency accountant, I get asked this constantly: why not just take a big salary? Because salary attracts both income tax and National Insurance contributions from you and your company. Dividends do not attract National Insurance. That is the whole game.</p>
+<p>As a specialist agency accountant, I get asked this constantly: why not just take a big salary? Because salary attracts both income tax and National Insurance contributions from you and your company. Dividends do not attract National Insurance. That is the whole game.</p>
 
 <p>Your agency pays corporation tax on its profits. Then you extract those post-tax profits as dividends. You pay dividend tax on them, but at rates lower than equivalent salary income. And your agency saves the 15% employer NI it would have paid on a salary.</p>
 

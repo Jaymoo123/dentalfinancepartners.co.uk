@@ -150,7 +150,7 @@ faqs:
 <h2>A pre-sale planning checklist</h2>
 
 <ol>
-<li>Confirm your target sale date and whether an unconditional exchange before 6 April 2026 is realistic (it fixes BADR at 14%).</li>
+<li>Confirm your target sale date; disposals from 6 April 2026 pay BADR at 18% (an unconditional exchange on or before 5 April 2026 fixed the earlier 14% rate).</li>
 <li>Check BADR eligibility and how much of your £1m lifetime limit remains.</li>
 <li>Review distributable reserves before assuming any dividend is even lawful.</li>
 <li>Model the clean sale at 18% (or 14%) BADR as the baseline before considering any extraction.</li>

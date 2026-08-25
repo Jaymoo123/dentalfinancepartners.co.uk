@@ -1,7 +1,7 @@
 /**
  * Employer NI and cost-to-hire calculator.
  * Pure compute, no React, no window/document/fetch. TL-03 clean.
- * 2025/26 rates (employer NI 15% / £5,000 secondary threshold / £10,500 EA from 6 Apr 2025).
+ * 2026/27 rates (employer NI 15% / £5,000 secondary threshold / £10,500 EA, unchanged since 6 Apr 2025).
  */
 
 const SECONDARY_THRESHOLD = 5000;

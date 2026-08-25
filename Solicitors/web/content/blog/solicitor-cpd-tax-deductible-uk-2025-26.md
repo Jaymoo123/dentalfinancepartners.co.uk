@@ -1,23 +1,23 @@
 ---
-title: "Can a Solicitor Claim CPD Costs as a Tax Deductible Expense in 2025/26?"
+title: "Can a Solicitor Claim CPD Costs as a Tax Deductible Expense in 2026/27?"
 slug: "solicitor-cpd-tax-deductible-uk-2025-26"
 canonical: "https://www.accountsforlawyers.co.uk/blog/fee-earner-tax-and-compensation/solicitor-cpd-tax-deductible-uk-2025-26"
-date: "2026-05-18"
+date: "2026-07-28"
 generator: opus-4.8/netnew-wave
 author: "Accounts for Lawyers Editorial Team"
 category: "Fee-Earner Tax & Compensation"
-metaTitle: "Solicitor CPD Tax Deductible UK 2025/26 | SRA Training Costs"
-metaDescription: "Are your SRA continuing competence costs tax deductible? We explain when solicitor CPD is an allowable expense for partners, employees, and locums in 2025/26."
+metaTitle: "Solicitor CPD Tax Deductible UK 2026/27 | SRA Training Costs"
+metaDescription: "Are your SRA continuing competence costs tax deductible? We explain when solicitor CPD is an allowable expense for partners, staff and locums in 2026/27."
 altText: "UK solicitor reviewing CPD course options on a laptop in a law firm office"
 image: ""
-h1: "Can a Solicitor Claim CPD Costs as a Tax Deductible Expense in 2025/26?"
+h1: "Can a Solicitor Claim CPD Costs as a Tax Deductible Expense in 2026/27?"
 summary: "Solicitors can typically claim CPD costs as a tax deductible expense if the training maintains or improves existing knowledge and skills relevant to their current practice. The rules differ for employed solicitors, partners, and locums. We explain the HMRC position and common pitfalls."
 keyTakeaways:
   - "Most solicitor CPD is deductible where it maintains or improves competence in your current role, but not where it starts a new trade or profession."
   - "Employed solicitors face the stricter wholly, exclusively and necessarily test in s.336 ITEPA 2003, claimed under employment expenses if not reimbursed."
   - "Equity and fixed-share partners deduct CPD under the more generous wholly and exclusively trade test in s.34 ITTOIA 2005."
   - "The SRA practising certificate fee is also deductible as a regulatory expense, treated the same way as CPD costs."
-  - "Keep receipts and a relevance note, and retain records for at least 22 months after the tax year, so until at least February 2028 for 2025/26."
+  - "Keep receipts and a relevance note, and retain records for at least 22 months after the tax year, so until at least February 2029 for 2026/27."
 schema: ""
 faqs:
   - question: "Can I claim CPD costs if my employer pays for them?"
@@ -124,7 +124,7 @@ faqs:
 
 <h2>Record Keeping for CPD Costs</h2>
 
-<p>HMRC can enquire into a tax return up to 12 months after the filing date (or longer if there is suspicion of error). Keep records for at least 22 months from the end of the tax year. For 2025/26, keep records until at least February 2028.</p>
+<p>HMRC can enquire into a tax return up to 12 months after the filing date (or longer if there is suspicion of error). Keep records for at least 22 months from the end of the tax year. For 2026/27, keep records until at least February 2029.</p>
 
 <p>Records should include:</p>
 <ul>

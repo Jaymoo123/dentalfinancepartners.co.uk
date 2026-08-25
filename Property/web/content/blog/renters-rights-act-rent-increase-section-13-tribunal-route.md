@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Section 13 Rent Increase + Tribunal Challenge: 2026 Guide"
-metaDescription: "Section 13 is the only rent-rise route now. 2 months notice, once per 12 months, tribunal cannot exceed your proposed amount. Mechanics, evidence, S24 angle."
+metaDescription: "Section 13 is the only rent-rise route now. 2 months notice, once per 12 months, tribunal cannot exceed your proposed amount."
 altText: "A workspace with a calculator, coins and notepad, representing the landlord's annual Section 13 rent-increase calculation"
 image: "https://images.pexels.com/photos/7111496/pexels-photo-7111496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:

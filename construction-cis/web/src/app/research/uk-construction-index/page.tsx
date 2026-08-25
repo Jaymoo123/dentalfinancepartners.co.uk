@@ -10,6 +10,10 @@ import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import {
   AnnualIncorporationsChart,
   MonthlyIncorporationsChart,
+  SeasonalityChart,
+  TradeBreakdownTable,
+  NetFormationChart,
+  type SeasonalityPoint,
 } from "@/components/research/ConstructionIndexCharts";
 import {
   fmtNumber,
@@ -17,14 +21,43 @@ import {
   monthLabel,
   type ConstructionIndexSnapshot,
 } from "@/lib/research/construction-index";
+import type { NetFormationIndexSnapshot } from "@/lib/research/net-formation-index";
 import snapshot from "@/data/uk-construction-index.json";
+import netFormationSnapshot from "@/data/construction-net-formation-index.json";
 
 const data = snapshot as unknown as ConstructionIndexSnapshot;
-const { meta, headline, incorporations, construction_output } = data;
+const { meta, headline, incorporations, construction_output, segments } = data;
 const { decade } = headline;
 const PRIMARY = headline.primary_sic;
+const netFormation = netFormationSnapshot as unknown as NetFormationIndexSnapshot;
 
 const PAGE_PATH = "/research/uk-construction-index";
+
+// ---------------------------------------------------------------------------
+// Seasonality: average union incorporations by calendar month (2016-2025 full years)
+// ponytail: seasonality computed in page layer from snapshot monthly series;
+//           promote into snapshot.py if other niches need it
+// ---------------------------------------------------------------------------
+const MONTH_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+const seasonalityData: SeasonalityPoint[] = (() => {
+  const provisional = new Set(meta.provisional_months);
+  const sums: number[] = Array(12).fill(0);
+  const counts: number[] = Array(12).fill(0);
+  for (const row of incorporations.monthly) {
+    if (provisional.has(row.month)) continue;
+    const year = Number(row.month.slice(0, 4));
+    if (year < 2016 || year > 2025) continue;
+    const mi = Number(row.month.slice(5, 7)) - 1;
+    sums[mi] += Number(row["union"] ?? 0);
+    counts[mi]++;
+  }
+  return sums.map((s, i) => ({
+    month: MONTH_SHORT[i],
+    avg: counts[i] > 0 ? Math.round(s / counts[i]) : 0,
+    isMarch: i === 2, // March is the tax-year-boundary peak
+  }));
+})();
 
 const HEADLINE_SENTENCE = `New domestic-building companies in the UK rose ${fmtPercent(decade.change_pct, false)} between ${decade.from_year} and ${decade.to_year}`;
 
@@ -60,6 +93,11 @@ const faqs = [
     question: "What does 'provisional' mean on the chart?",
     answer:
       "Companies House indexes very recent incorporations with a short lag of four to six weeks. The two most recent months in the series are therefore provisional: they will be revised upward as late-indexed records are captured. These months are shown with a dashed line on the chart and are excluded from all headline figures and decade comparisons to avoid understating the trend.",
+  },
+  {
+    question: "Are more construction companies closing down than opening?",
+    answer:
+      "Not yet overall, but the gap has nearly closed. Net formation (new incorporations minus dissolutions) across all construction SIC codes fell from tens of thousands of companies a year in the mid-2010s to close to zero in 2025, because dissolutions have risen faster than incorporations. For domestic-building companies (SIC 41202) specifically, 2025 was the first year on record where dissolutions outnumbered incorporations. See the net formation section above for the full year-by-year breakdown.",
   },
   {
     question: "Am I better off as a CIS contractor operating through a limited company?",
@@ -114,10 +152,25 @@ const datasetSchema = {
       encodingFormat: "text/csv",
       contentUrl: `${siteConfig.url}${PAGE_PATH}/data`,
     },
+    {
+      "@type": "DataDownload",
+      encodingFormat: "text/csv",
+      contentUrl: `${siteConfig.url}${PAGE_PATH}/net-formation-data`,
+    },
   ],
   variableMeasured: [
     "Monthly company incorporations by construction SIC code",
     "Deduplicated union across all 19 construction SIC codes",
+    "Monthly company incorporations - Electricians (SIC 43210)",
+    "Monthly company incorporations - Plumbers and heating engineers (SIC 43220)",
+    "Monthly company incorporations - Painters and decorators (SIC 43341)",
+    "Monthly company incorporations - Joiners and carpenters (SIC 43320)",
+    "Monthly company incorporations - Plasterers (SIC 43310)",
+    "Monthly company incorporations - Flooring and wall tiling (SIC 43330)",
+    "Monthly company incorporations - Groundworks and site preparation (SIC 43120)",
+    "Monthly company incorporations - Demolition (SIC 43110)",
+    "Annual net formation (incorporations minus dissolutions) - all construction SIC codes",
+    "Annual net formation (incorporations minus dissolutions) - domestic buildings (SIC 41202)",
   ],
 };
 
@@ -331,6 +384,125 @@ export default function UKConstructionIndexPage() {
               </div>
             </Section>
 
+            <Section id="net-formation" title="Net formation: incorporations minus dissolutions">
+              <p>
+                Incorporations are only half the story. Every year, thousands of construction
+                companies are also dissolved, removed from the Companies House register through
+                strike-off, liquidation or administration. Net formation, incorporations minus
+                dissolutions in the same calendar year, tells you whether the population of
+                construction companies is actually growing.
+              </p>
+              <p>
+                Net formation across all 19 construction SIC codes fell{" "}
+                {fmtPercent(netFormation.headline.union_net_change_pct, false)} between{" "}
+                {netFormation.headline.from_year} and {netFormation.headline.to_year}, from{" "}
+                {fmtNumber(netFormation.headline.union_net_from)} more companies than were lost in{" "}
+                {netFormation.headline.from_year} to just{" "}
+                {fmtNumber(netFormation.headline.union_net_to)} in {netFormation.headline.to_year}.
+                Gross incorporations rose for most of that period before easing back from their
+                2022 peak, but dissolutions climbed in almost every single year, so the net
+                addition to the construction company population has nearly disappeared.
+                {netFormation.headline.primary_first_negative_year && (
+                  <>
+                    {" "}
+                    For domestic-building companies (SIC {PRIMARY}) specifically,{" "}
+                    {netFormation.headline.primary_first_negative_year} was the first year on
+                    record where more companies were dissolved than incorporated: a net loss of{" "}
+                    {fmtNumber(Math.abs(netFormation.headline.primary_net_to))} companies.
+                  </>
+                )}
+              </p>
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <p className="mb-3 text-xs text-neutral-500">
+                  All construction companies (19 SIC codes, deduplicated): incorporated vs
+                  dissolved each year, with net formation as the line.
+                </p>
+                <NetFormationChart annual={netFormation.annual} segment="union" />
+              </div>
+              <div className="not-prose mt-4 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-300 text-left">
+                      <th className="py-2 pr-4 font-bold text-neutral-900">Year</th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900 text-right">Incorporated</th>
+                      <th className="py-2 pr-4 font-bold text-neutral-900 text-right">Dissolved</th>
+                      <th className="py-2 font-bold text-neutral-900 text-right">Net formation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {netFormation.annual.map((r) => (
+                      <tr key={r.year} className="border-b border-neutral-200">
+                        <td className="py-2 pr-4 text-neutral-700">{r.year}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(r.union_inc)}</td>
+                        <td className="py-2 pr-4 text-right text-neutral-900">{fmtNumber(r.union_diss)}</td>
+                        <td
+                          className={`py-2 text-right font-semibold ${r.union_net < 0 ? "text-red-600" : "text-neutral-900"}`}
+                        >
+                          {r.union_net < 0 ? "-" : "+"}
+                          {fmtNumber(Math.abs(r.union_net))}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm text-neutral-600">
+                Dissolutions are companies actually removed from the Companies House register
+                (company_status = dissolved), not insolvency events specifically: a company can be
+                dissolved through simple voluntary strike-off as well as after liquidation or
+                administration. See the{" "}
+                <Link
+                  href="/research/uk-construction-insolvency-index"
+                  className="font-semibold text-orange-700 hover:text-orange-800"
+                >
+                  UK Construction Insolvency Index
+                </Link>{" "}
+                for insolvency-specific procedures.
+              </p>
+            </Section>
+
+            <Section id="trades" title="UK construction incorporations by trade">
+              <p>
+                The table ranks the eight main CIS subcontractor trades by new company formations in
+                the latest full calendar year, alongside the trailing 12-month total (settled data
+                only). Each trade is a single SIC code within the 19-code construction universe.
+                Thin segments (fewer than 120 formations in the trailing year) are not shown
+                separately.
+              </p>
+              <TradeBreakdownTable segments={segments ?? []} />
+            </Section>
+
+            <Section id="seasonality" title="Tax-year seasonality in construction incorporations">
+              <p>
+                Averaged across 2016 to 2025, new construction company formations show a consistent
+                March spike: the month before the UK tax year closes on 5 April runs roughly 15%
+                above the calendar-year monthly mean. The pattern is visible across all major
+                construction trades and in the all-construction union.
+              </p>
+              <p>
+                The most likely driver is tax-year-boundary planning. A sole trader who incorporates
+                before 6 April can open their company accounting period at the start of the new tax
+                year, avoiding the complication of overlapping tax years and capturing a full
+                year of company-level tax efficiency from day one. CIS contractors also benefit
+                immediately on incorporation: a limited company can reclaim its monthly CIS
+                deductions in-year via the Employer Payment Summary, whereas a sole trader waits
+                until the following January Self Assessment filing. Both incentives concentrate
+                activity in the final weeks of the tax year.
+              </p>
+              <p>
+                April itself falls back sharply (around 11% below March) as the pre-year-end rush
+                completes. December is the seasonal low, reflecting the general slowdown in company
+                formation over the Christmas period.
+              </p>
+              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <p className="mb-3 text-xs text-neutral-500">
+                  Average monthly incorporations (all-construction union, 2016-2025). March
+                  highlighted as the tax-year-boundary peak.
+                </p>
+                <SeasonalityChart data={seasonalityData} />
+              </div>
+            </Section>
+
             <Section id="methodology" title="Methodology and sources">
               <p>
                 <strong>Incorporations.</strong> For each month, we query the Companies House
@@ -344,8 +516,29 @@ export default function UKConstructionIndexPage() {
                 figures.
               </p>
               <p>
+                <strong>Trade segments.</strong> Each trade row is a single SIC code cut of the
+                19-code universe. The union count is unchanged: a company registered under multiple
+                construction SIC codes is still counted once. Roofing (SIC 43910) is a reserved
+                future addition and is deliberately excluded to avoid revising the published union.
+                Trade and division figures are additive within their SIC set but do not sum to the
+                union (which deduplicates cross-SIC registrations).
+              </p>
+              <p>
+                <strong>Net formation.</strong> Dissolutions are fetched from the same Companies
+                House Advanced Search API, filtering on company_status = dissolved with a
+                dissolved-date window instead of an incorporation-date window, for the same 19 SIC
+                codes and division/segment groupings used throughout this page. Net formation for
+                the in-progress current year is capped to the same settled-through month as
+                incorporations, so the partial-year figure compares like with like: dissolutions
+                data itself has no equivalent indexing lag, but capping it avoids an artificially
+                negative partial-year net formation figure caused only by counting more months of
+                dissolutions than incorporations.
+              </p>
+              <p>
                 <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)} (settled
-                data). Data generated {monthLabel(meta.generated_at.slice(0, 7))}.
+                data). Net formation (dissolutions) generated{" "}
+                {monthLabel(netFormation.meta.generated_at.slice(0, 7))}. Data generated{" "}
+                {monthLabel(meta.generated_at.slice(0, 7))}.
               </p>
               <ul className="not-prose mt-2 space-y-1 text-sm">
                 {meta.sources
@@ -369,6 +562,14 @@ export default function UKConstructionIndexPage() {
                   className="font-semibold text-orange-700 hover:text-orange-800"
                 >
                   Download the incorporation data (CSV)
+                </Link>
+              </p>
+              <p className="text-sm">
+                <Link
+                  href={`${PAGE_PATH}/net-formation-data`}
+                  className="font-semibold text-orange-700 hover:text-orange-800"
+                >
+                  Download the net formation data (CSV)
                 </Link>
               </p>
               <p className="text-sm text-neutral-500">

@@ -8,7 +8,7 @@ category: "Incorporation & Company Structures"
 metaTitle: "FIC Share Gift to Children: 7-Year PET + CGT Rules"
 metaDescription: "Gifting FIC growth shares to children: s.17 valuation, s.165 holdover denial for investment FICs, settlements legislation, 7-year PET clock at gift."
 altText: "Hands placing a wrapped gift together, representing the act of transferring Family Investment Company growth shares between generations"
-image: "https://images.pexels.com/photos/6190672/pexels-photo-6190672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/6190672/pexels-photo-6190672.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Askar Abayev"
   photographer_url: "https://www.pexels.com/@askar-abayev"

@@ -38,7 +38,7 @@ keyTakeaways:
 
 <p>But the gap between "it sounds good" and "it works for my agency" is wider than most founders expect. I have sat with agency owners who moved too fast, triggered UK tax charges they did not see coming, or set up structures that HMRC later challenged. The setup itself is straightforward. The UK tax and substance requirements are where it gets complicated.</p>
 
-<p>This guide covers what a UAE free zone company actually involves, how it interacts with your UK tax position, and what you need to have in place before you register. I am writing this as an specialist agency accountant who works with agency founders. None of this is personal advice. Your situation will differ. But these are the questions you need answers to before you spend a penny on setup fees.</p>
+<p>This guide covers what a UAE free zone company actually involves, how it interacts with your UK tax position, and what you need to have in place before you register. I am writing this as a specialist agency accountant who works with agency founders. None of this is personal advice. Your situation will differ. But these are the questions you need answers to before you spend a penny on setup fees.</p>
 
 <h2>What Is a UAE Free Zone Company?</h2>
 

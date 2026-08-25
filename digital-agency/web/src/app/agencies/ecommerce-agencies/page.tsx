@@ -3,7 +3,7 @@ import { AgencyTypeLayout } from "@/components/agency-type/AgencyTypeLayout";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Accountants for E-commerce Agencies | ${siteConfig.name}`,
+  title: `Accountants for E-commerce Agencies`,
   description: "Specialist accountants for UK e-commerce agency founders. Shopify Plus, Klaviyo partner commissions, project + retainer mix, performance fees. Agency-only focus.",
   alternates: { canonical: `${siteConfig.url}/agencies/ecommerce-agencies` },
   openGraph: {

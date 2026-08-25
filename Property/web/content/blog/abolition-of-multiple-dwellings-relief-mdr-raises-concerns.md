@@ -8,7 +8,7 @@ category: "Property Types and Specialist Tax"
 metaTitle: "MDR Abolition: Sector Concerns and Post-1-June-2024 Reality"
 metaDescription: "Four concern-clusters raised against MDR abolition under F(No.2)A 2024 s.7, tested against the post-1-June-2024 evidence. Who was right and who was wrong."
 altText: "Modern UK build-to-rent apartment block representing the bulk-acquisition market that raised concerns about the loss of Multiple Dwellings Relief from 1 June 2024"
-image: "https://images.pexels.com/photos/12915209/pexels-photo-12915209.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+image: "https://images.pexels.com/photos/28935961/pexels-photo-28935961.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
   photographer: "Kvnga"
   photographer_url: "https://www.pexels.com/@kvnga"

@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Complete Dental Practice Accounting Guide | Dental Finance Partners",
+  title: "Complete Dental Practice Accounting Guide",
   description:
     "Comprehensive guide to dental practice accounting, including bookkeeping, financial reporting, NHS contract accounting, Making Tax Digital, and accounting software for UK dental practices.",
   alternates: { canonical: `${siteConfig.url}/blog/practice-accounting` },

@@ -7,14 +7,14 @@ import { JsonLd, buildDataset, buildBreadcrumb } from "@/lib/schema";
 const pageUrl = `${siteConfig.url.replace(/\/$/, "")}/uk-tax-rates`;
 
 export const metadata: Metadata = {
-  title: "UK Tax Rates 2025/26, Reference for Agency Founders",
+  title: "UK Tax Rates 2026/27, Reference for Agency Founders",
   description:
-    "Canonical 2025/26 UK tax rates: corporation tax, dividend tax, BADR, CGT, VAT, R&D, MTD ITSA dates, NI, pensions and IHT. Updated and citable. Plain-English notes for agency founders.",
+    "Canonical 2026/27 UK tax rates: corporation tax, dividend tax, BADR, CGT, VAT, R&D, MTD ITSA dates, NI, pensions and IHT. Updated and citable. Plain-English notes for agency founders.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: "UK Tax Rates 2025/26, Agency Founder Finance",
+    title: "UK Tax Rates 2026/27, Agency Founder Finance",
     description:
-      "Machine-readable reference of every UK tax rate an agency founder needs in 2025/26.",
+      "Machine-readable reference of every UK tax rate an agency founder needs in 2026/27.",
     url: pageUrl,
     type: "article",
   },
@@ -64,15 +64,15 @@ export default function UkTaxRatesPage() {
   const r = UK_TAX_RATES;
 
   const dataset = buildDataset({
-    name: "UK Tax Rates 2025/26 (Agency Founder Finance reference)",
+    name: "UK Tax Rates 2026/27 (Agency Founder Finance reference)",
     description:
-      "Canonical machine-readable UK tax rates for the 2025/26 tax year: corporation tax, dividend tax, income tax, NI, CGT, BADR, VAT, R&D, MTD ITSA, pensions, IHT. Maintained and citable.",
+      "Canonical machine-readable UK tax rates for the 2026/27 tax year: corporation tax, dividend tax, income tax, NI, CGT, BADR, VAT, R&D, MTD ITSA, pensions, IHT. Maintained and citable.",
     path: "/uk-tax-rates",
     distributionPath: "/api/uk-tax-rates.json",
     dateModified: r.lastUpdated,
     temporalCoverage: `${r.taxYearStart}/${r.taxYearEnd}`,
     keywords: [
-      "UK tax rates 2025/26",
+      "UK tax rates 2026/27",
       "corporation tax",
       "dividend tax",
       "BADR",
@@ -88,7 +88,7 @@ export default function UkTaxRatesPage() {
 
   const breadcrumb = buildBreadcrumb([
     { label: "Home", href: "/" },
-    { label: "UK Tax Rates 2025/26" },
+    { label: "UK Tax Rates 2026/27" },
   ]);
 
   return (
@@ -98,9 +98,9 @@ export default function UkTaxRatesPage() {
         <p className="text-sm font-semibold uppercase tracking-wider text-indigo-600">
           Reference · Tax year {r.taxYear} · Updated {r.lastUpdated}
         </p>
-        <h1 className="mt-2 text-4xl font-bold text-slate-900">UK Tax Rates 2025/26</h1>
+        <h1 className="mt-2 text-4xl font-bold text-slate-900">UK Tax Rates 2026/27</h1>
         <p className="mt-4 text-lg text-slate-700">
-          Canonical, citable reference of every UK tax rate an agency founder needs in 2025/26.
+          Canonical, citable reference of every UK tax rate an agency founder needs in 2026/27.
           Maintained by Agency Founder Finance.{" "}
           <Link
             href="/api/uk-tax-rates.json"
@@ -189,10 +189,13 @@ export default function UkTaxRatesPage() {
 
       <Section id="badr" title="Business Asset Disposal Relief (BADR)">
         <Row label="Lifetime limit" value={gbp(r.capitalGainsTax.badr.lifetimeLimit)} />
-        <Row label="Rate (2025/26)" value={pct(r.capitalGainsTax.badr.rate_2025_26)} />
         <Row
-          label="Rate from 6 April 2026"
+          label="Rate (2026/27, from 6 April 2026)"
           value={pct(r.capitalGainsTax.badr.rate_2026_27_from)}
+        />
+        <Row
+          label="Rate (2025/26, superseded)"
+          value={pct(r.capitalGainsTax.badr.rate_2025_26)}
         />
         <Row
           label="Qualifying period"

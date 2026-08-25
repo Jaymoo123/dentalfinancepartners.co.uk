@@ -1,6 +1,6 @@
 /**
  * Pension Contribution Optimiser — GenericTool config.
- * 2025/26 rates. Employer pension from Ltd company.
+ * 2026/27 rates. Employer pension from Ltd company.
  */
 
 import type { GenericTool, CalcValues } from "@accounting-network/web-shared/tools/types";
@@ -18,7 +18,7 @@ export const pensionOptimiserTool: GenericTool = {
     "Model employer pension contributions from your limited company. Corp tax saving, real cost, and the advantage over taking dividends.",
   metaTitle: "Pension Contribution Optimiser | Limited Company Directors",
   metaDescription:
-    "Free pension optimiser for UK limited company directors. Models corporation tax saving, real cost to company vs taking dividends. 2025/26 rates.",
+    "Free pension optimiser for UK limited company directors. Models corporation tax saving, real cost to company vs taking dividends. 2026/27 rates.",
   intro:
     "Model the true cost and tax advantage of making employer pension contributions from your limited company. Shows the corporation tax saving, real cost to the company, and how it compares to taking the same amount as a dividend.",
   embedHeight: 420,
@@ -105,7 +105,7 @@ export const pensionOptimiserTool: GenericTool = {
     {
       question: "What is the pension annual allowance?",
       answer:
-        "The standard annual allowance is £60,000 (2025/26). This tapers for high earners: if your adjusted income exceeds £260,000, the allowance reduces by £1 for every £2 of income above that, down to a minimum of £10,000.",
+        "The standard annual allowance is £60,000 (2026/27). This tapers for high earners: if your adjusted income exceeds £260,000, the allowance reduces by £1 for every £2 of income above that, down to a minimum of £10,000.",
     },
   ],
 };

@@ -3,13 +3,13 @@ title: "CGT on Inherited Rental Property: Death-Uplift Calculation Guide 2026/27
 slug: "cgt-inherited-rental-property-calculation-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk"
 date: "2026-04-10"
-dateModified: "2026-05-24"
+dateModified: "2026-08-20"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-05-24"
+reviewedAt: "2026-08-20"
 category: "Capital Gains Tax"
-metaTitle: "Inherited Rental Property CGT: s.62 Death Uplift + 5 Examples"
+metaTitle: "Inherited Rental Property CGT: s.62 Death Uplift, 5 Examples"
 metaDescription: "How to compute CGT on an inherited rental property in 2026/27: TCGA s.62 death uplift, PR-sale vs assent decision, five worked examples, 60-day rule."
 metaTitle_prev: "CGT on Inherited Rental Property: UK Tax Calculation Guide"
 metaDescription_prev: "Learn how CGT is calculated on inherited rental properties in the UK. Covers probate value, base cost, reliefs, and tax rates for inherited buy to let."
@@ -45,11 +45,82 @@ faqs:
     answer: "The base cost is the death-uplift value at the date of death, not the value at the date you start letting and not your eventual sale price minus an indexed cost. Improvements between inheritance and sale add to the base cost; revenue repairs claimed against rental income during the let years do not. If you used the property as your main residence for any of the ownership period, PRR is available on a time-apportioned basis against the gain measured from the death-uplift base cost. Letting Relief applies only where you shared occupation with a tenant during a period of letting (the post-6 April 2020 restriction). The 60-day reporting rules apply on the eventual sale as they would on any disposal of UK residential property."
   - question: "What records should I keep to support the CGT calculation?"
     answer: "Keep the IHT400 and Schedule IHT405 with the surveyor's valuation report (the source of the death-uplift base cost), the grant of probate, the assent document (form AS1 or AS3) where applicable, all invoices for capital improvements after inheritance, the sale completion statement and disposal costs (legal fees, estate agent fees), council tax and utility records showing any period of personal occupation (for PRR), and the calculation worksheet linking everything together. HMRC's standard retention period for business taxpayers is five years and 10 months from the end of the tax year of disposal; in practice retain for at least six years, and longer where the inheritance and disposal are years apart."
+  - question: "Is capital gains tax payable on an inherited property?"
+    answer: "Not on the inheritance, only on a later sale. You pay nothing at the point you inherit, because death is not a disposal for capital gains tax. Your starting value is the open-market value of the property on the date of death, normally the probate figure. If you sell later, capital gains tax is payable on the growth above that value, at 18 per cent on the slice that fits your unused basic-rate income tax band and 24 per cent above it for residential property in 2026/27, after your £3,000 annual exempt amount."
+  - question: "How much capital gains tax will I pay when selling an inherited property?"
+    answer: "Take the sale price, take off your selling costs and the probate value, take off your £3,000 annual exempt amount, then apply 18 or 24 per cent. On a probate value of £280,000, a sale at £310,000 and £6,000 of legal and agent fees, the gain is £24,000, the taxable amount is £21,000, and the tax is £5,040 at 24 per cent or £3,780 at 18 per cent. You then have 60 days from completion to report the sale and pay."
+  - question: "Do I pay capital gains tax on a house inherited from my parents?"
+    answer: "Not on the inheritance, and often nothing at all if you sell quickly. Your parents' years of ownership are ignored: the clock starts at the value on the date of death, so a sale soon afterwards at close to that value can leave a gain small enough for your £3,000 allowance to cover. Where the house has risen since the death, the growth is taxed at 18 or 24 per cent depending on how much unused basic-rate income tax band you have, and living in it as your only or main home takes the period of your occupation out of charge."
+  - question: "Does a deceased estate pay capital gains tax?"
+    answer: "Only if the personal representatives actually sell an asset during the administration period. No capital gains tax arises on death itself. Where the executors do sell UK residential property, the estate pays 24 per cent throughout with no 18 per cent basic-rate slice, and has its own £3,000 annual exempt amount for the tax year of death and the two tax years after it, then nothing. The deceased's unused capital losses cannot be carried forward into the estate, though losses of the year of death can be carried back against the deceased's own gains of the three preceding tax years."
+  - question: "What happens if an inherited property sells for more than the probate value?"
+    answer: "The difference is a chargeable gain, taxed at 24 per cent if the executors sold inside the estate or at the beneficiaries' own 18 or 24 per cent rates if the property was transferred out first. A wide gap between the probate figure and an early sale price also invites HMRC to ask whether the probate valuation was right, which is why a dated surveyor's valuation with any tenanted-occupation and co-ownership adjustments recorded is worth keeping. If the property sells for less than the probate value, the seller usually has a capital loss instead, unless the executors claim the Inheritance Tax relief for estate land sold at a loss within three years of the death, which substitutes the sale price for the probate value and leaves no CGT loss."
 ---
 
 <p>When a rental property passes through an estate, the Capital Gains Tax position is built on a single statutory hinge: <strong>TCGA 1992 s.62</strong>. The personal representatives are deemed to acquire the property at its open-market value at the date of death, with no chargeable gain accruing to the deceased. That probate value is the CGT base cost for everyone downstream, whether the personal representatives sell during the administration period or assent to a beneficiary who later sells.</p>
 
 <p>This page walks the calculation in detail with five worked examples. It is the calculation-side companion to our <a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">executor's step-by-step guide</a>, which covers the operational sequence (probate valuation, IHT400, the grant, the administration period, the assent or sale decision, and the non-resident landlord handover). The wider CGT framework (rates, the annual exempt amount, the regime as a whole) sits in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property complete guide</a>.</p>
+
+<h2>Do you pay capital gains tax on inherited property?</h2>
+
+<p>No, not on the inheritance itself. Nothing is due at the moment you inherit a UK property, because death is not a disposal for capital gains tax. What you inherit is a fresh starting value: the open-market value of the property on the date the person died, which is normally the figure used for probate. Capital gains tax only comes into play if you later sell, and then only on the growth above that probate value.</p>
+
+<p>So this is a question about a future sale, not about the estate in front of you today. Two numbers decide your bill:</p>
+
+<ul>
+<li><strong>Your base cost:</strong> the probate value at the date of death, plus any capital improvements you pay for after you inherit, plus your costs of selling.</li>
+<li><strong>Your rate:</strong> for residential property in 2026/27, 18 per cent on the slice of gain that fits inside your unused basic-rate income tax band and 24 per cent on everything above it.</li>
+</ul>
+
+<p>Your first £3,000 of gains in a tax year is covered by the annual exempt amount, so a small gain on a quick sale can leave you with nothing to pay. Sell soon after the death for roughly the probate value and your selling costs alone can absorb the gain.</p>
+
+<p>Inheritance Tax is the separate tax that looks at the estate on death, and the executors settle it before you receive anything. The two do not net off: Inheritance Tax already paid does not reduce the gain you are taxed on later. The base-cost mechanics are taken apart in full in our <a href="/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost">probate base cost guide for inherited property</a>.</p>
+
+<h2>Is there capital gains tax on death, and does a deceased estate pay it?</h2>
+
+<p>No capital gains tax arises on death itself, and the gain built up during the deceased's lifetime is never taxed. A deceased estate pays capital gains tax only where the personal representatives actually sell something during the administration period, and then only on growth above the date-of-death value. Death resets the value; it does not create a charge.</p>
+
+<p>If you are the executor and you sell the property inside the estate:</p>
+
+<ul>
+<li>The estate's rate on residential property is 24 per cent throughout. Executors do not get the 18 per cent basic-rate slice an individual gets.</li>
+<li>The estate has its own £3,000 annual exempt amount for the tax year of the death and the two tax years after it, and none after that.</li>
+<li>The deceased's unused capital losses cannot be carried forward into the estate, though losses of the year of death can be carried back against the deceased's own gains of the three preceding tax years.</li>
+</ul>
+
+<p>CGT for deceased estates also runs on a shorter clock than most executors expect, because that allowance disappears once the second tax year after the death has passed. The sequencing table below sets out the three-year window, and the capital-loss section after it covers whose losses can be used against what.</p>
+
+<p>Transfer the property to the beneficiaries first and let them sell in their own names, and the tax moves to them, each with their own £3,000 allowance and their own 18 or 24 per cent rate. That single choice usually moves the bill more than anything else you decide as an executor, and the tables and worked examples further down this page price it both ways.</p>
+
+<h2>What capital gains tax do you pay on a house inherited from your parents?</h2>
+
+<p>Nothing when you inherit it, then 18 or 24 per cent on the growth above the value at the date your parent died if and when you sell. Inheriting a house from your parents works like any other inherited property: the value at death is your starting point, and everything your parents' own ownership gained falls out of account. The question people ask most is whether their parents' years of ownership count. They do not.</p>
+
+<p>What you do with the house next changes the answer. Move in and make it your only or main home, and private residence relief covers the part of your ownership when you genuinely live there, plus the final nine months; the tests are in our <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">private residence relief guide</a>. Let it out or leave it empty, and the whole gain above the date-of-death value is chargeable when you sell. Inherit it with brothers and sisters, and each of you is taxed on your own share, with your own £3,000 allowance and your own rate, so one gain split three ways usually costs less than the same gain taxed once inside the estate.</p>
+
+<h2>How much capital gains tax will you pay when selling an inherited property?</h2>
+
+<p>Take your sale price, take off your selling costs and the probate value, take off your £3,000 allowance, then apply 18 or 24 per cent. Selling an inherited property is an ordinary capital gains tax calculation with one difference: your purchase price is a value you never actually paid.</p>
+
+<p>Say the probate value was £280,000, you sell 18 months later for £310,000, and your legal and estate agent fees come to £6,000:</p>
+
+<ul>
+<li>Proceeds after costs: £310,000 − £6,000 = £304,000</li>
+<li>Less the probate value: £304,000 − £280,000 = £24,000 gain</li>
+<li>Less your £3,000 annual exempt amount: £21,000 taxable</li>
+<li>Higher-rate taxpayer: £21,000 × 24% = <strong>£5,040</strong></li>
+<li>Whole gain inside your unused basic-rate band: £21,000 × 18% = <strong>£3,780</strong></li>
+</ul>
+
+<p>CGT on inherited property is then reported on HMRC's capital gains tax on UK property service within 60 days of completion, and the separate rules for executors, UK-resident beneficiaries and beneficiaries living abroad are set out further down this page.</p>
+
+<h2>What if the property sells for more than the probate value?</h2>
+
+<p>You pay capital gains tax on the difference, which is exactly what the probate value is there to measure. A sale a few months after death at £30,000 above the probate figure produces a £30,000 gain before costs and allowances, and someone pays tax on it: the estate at 24 per cent if the executors sold, or the beneficiaries at their own rates if the property was transferred out first.</p>
+
+<p>A wide gap between the probate value and an early sale price also invites a question about whether the probate figure was right in the first place. Your defence is a dated surveyor's valuation at the date of death with any tenanted-occupation and co-ownership adjustments recorded, which is covered further down this page and in the <a href="/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost">probate base cost guide</a>.</p>
+
+<p>If the property sells for less than the probate value, the seller usually has a capital loss instead. An estate sets that loss against its other gains in the administration period; you as a beneficiary set it against your own gains and report it so you can carry forward anything unused. The exception is where the executors claim the Inheritance Tax relief for estate land sold at a loss within three years of the death, because that claim replaces the probate value with the sale price for Inheritance Tax and the substituted figure then carries through as the capital gains base cost, leaving no CGT loss to claim. An estate chooses one relief or the other, not both.</p>
 
 <h2>The death-uplift: TCGA 1992 s.62 in plain terms</h2>
 

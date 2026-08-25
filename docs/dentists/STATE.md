@@ -8,8 +8,27 @@ site-specific WHAT and the heartbeat. Ground-truth facts live in
 
 Last updated: 2026-07-19.
 
-## 2026-07-19 — Corepage B2 committed, NOT deployed
-- Homepage corepage rewrite committed (d3e705dd): head-token title/H1 + commercial schema. Dividend-rate fix on profit-extraction guide (88ee3a3d, 2026/27 rates 10.75/35.75). Awaiting deploy word.
+## 2026-08-25 — Port-branch merge: nothing pending for this site
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **48 commits** were on
+the branch and not in `origin/main`.
+
+**All 48 are already on production, so the merge ships nothing new here.** This site's
+live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
+(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
+READY, read 2026-08-25; this is what the production alias actually points at, which a
+`/v6/deployments` listing alone would not prove), and
+`git log 435cc12e..design/property-redesign-port --oneline -- 'Dentists/'` returns 0.
+Main was BEHIND production for this site, not ahead of it.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'Dentists/'`.
+Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
+sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
+## 2026-07-19 — Corepage B2 (DEPLOYED; heading corrected 2026-08-25)
+- Homepage corepage rewrite committed (d3e705dd): head-token title/H1 + commercial schema. Dividend-rate fix on profit-extraction guide (88ee3a3d, 2026/27 rates 10.75/35.75).
+- **CORRECTION 2026-08-25: this is LIVE, not "awaiting deploy word".** `d3e705dd` is an ancestor of the production SHA `435cc12e` (`git merge-base --is-ancestor d3e705dd 435cc12e` = 0) and it is also already in `origin/main`. It went live with the estate deploy of 2026-08-24 20:25 UTC. The rollout doc repeated this same "committed but NOT deployed" claim for Dentists and Solicitors and has been corrected too. Anyone reading this section for a before/after read should date the change from 2026-08-24, not 2026-07-19.
 - Dental Pay & Tax Index P1 manifest committed (53eed5d8): `docs/dentists/research/P1_DATA_MANIFEST.md` — awaiting owner data-source sign-off.
 - Log: `docs/_engines/logs/SESSION_2026-07-19_GROWTH_DAY1.md`.
 

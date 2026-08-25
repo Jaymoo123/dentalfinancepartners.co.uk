@@ -1,0 +1,29 @@
+{
+  "vertical": "leasehold and service charges",
+  "provider_terms": [
+    "solicitor",
+    "surveyor",
+    "enfranchisement specialist",
+    "managing agent"
+  ],
+  "pain_seeds": [
+    "service charge challenge",
+    "lease extension cost",
+    "ground rent",
+    "right to manage",
+    "commonhold conversion",
+    "section 20 notice",
+    "buy the freehold",
+    "leasehold reform"
+  ],
+  "audience_terms": [
+    "leaseholders",
+    "flat owners"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "reg-churn candidates leaseholder-service-charge-rights + leasehold-to-commonhold (LFRA 2024 secondary legislation, ~5m homes)"
+  ],
+  "name": "leasehold-rights"
+}

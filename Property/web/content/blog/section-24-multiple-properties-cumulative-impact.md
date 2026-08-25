@@ -22,9 +22,9 @@ faqs:
   - question: "How does Section 24 affect a higher-rate (40%) taxpayer with several properties?"
     answer: "Worst of anyone. A higher-rate taxpayer pays 40% on the full rental profit (interest is no longer deducted before the rate is applied) but only gets relief back at 20%. The gap is a real 20% of the mortgage interest. With multiple properties the interest figure is large, so the cost is large. It also works in reverse: the extra taxable income can be what tips a basic-rate landlord into the 40% band in the first place."
   - question: "Can Section 24 push me into the higher-rate tax bracket?"
-    answer: "Yes, and this is the trap that catches multi-property landlords. Because the mortgage interest is no longer deducted from your taxable rental profit, your stated income is higher than your real economic profit. That inflated figure is what HMRC measures against the GBP50,270 higher-rate threshold, so landlords whose true profit is modest can still be taxed at 40%. See our guide on whether Section 24 can push you into higher-rate tax."
+    answer: "Yes, and this is the trap that catches multi-property landlords. Because the mortgage interest is no longer deducted from your taxable rental profit, your stated income is higher than your real economic profit. That inflated figure is what HMRC measures against the £50,270 higher-rate threshold, so landlords whose true profit is modest can still be taxed at 40%. See our guide on whether Section 24 can push you into higher-rate tax."
   - question: "What is the Section 24 cliff edge with multiple mortgaged properties?"
-    answer: "Each property you add increases your taxable rental income, even though the cash you keep barely moves once the mortgage is paid. The threshold effect means one extra property can move you across the GBP50,270 line, at which point the additional band of income is taxed at 40% while the 20% credit stays fixed. The marginal property can therefore cost far more tax than its rent suggests."
+    answer: "Each property you add increases your taxable rental income, even though the cash you keep barely moves once the mortgage is paid. The threshold effect means one extra property can move you across the £50,270 line, at which point the additional band of income is taxed at 40% while the 20% credit stays fixed. The marginal property can therefore cost far more tax than its rent suggests."
   - question: "How will the April 2027 property tax rate changes affect multiple property owners?"
     answer: "From 6 April 2027, property income is taxed under separate rates of 22%, 42% and 47% (England, Wales and Northern Ireland; Scotland sets its own rates). Crucially, the Section 24 basic-rate credit rises in step from 20% to 22%, so no new basic-rate wedge opens up: a basic-rate landlord is broadly held neutral. The bite falls on higher-rate landlords, who pay 42% but still relieve interest at only 22%. With a big aggregate interest figure, that gap widens. See our guide on how the 2027 rates interact with Section 24 relief."
   - question: "Is incorporation worth it for a multi-property portfolio?"
@@ -38,7 +38,7 @@ faqs:
   - question: "How does the 20% mortgage interest tax credit actually work?"
     answer: "You calculate your rental profit ignoring the mortgage interest, tax that profit at your normal rates, then HMRC reduces the tax bill by a credit equal to 20% of the lower of your finance costs, your property profits, or your adjusted total income above the personal allowance. Because the credit is capped at the lower of those figures, landlords with high interest relative to profit can lose part of the credit in a given year and carry the unused finance costs forward."
   - question: "Do I now need to keep digital records for each property under MTD?"
-    answer: "From 6 April 2026, Making Tax Digital for Income Tax applies to landlords with qualifying income over GBP50,000, then over GBP30,000 from April 2027 and over GBP20,000 from April 2028. Qualifying income is gross rents (and any self-employment), measured before expenses, so multi-property landlords cross the threshold quickly. You will keep digital records and file quarterly updates, which makes per-property bookkeeping of rents and finance costs a practical necessity for an accurate Section 24 calculation."
+    answer: "From 6 April 2026, Making Tax Digital for Income Tax applies to landlords with qualifying income over £50,000, then over £30,000 from April 2027 and over £20,000 from April 2028. Qualifying income is gross rents (and any self-employment), measured before expenses, so multi-property landlords cross the threshold quickly. You will keep digital records and file quarterly updates, which makes per-property bookkeeping of rents and finance costs a practical necessity for an accurate Section 24 calculation."
   - question: "Will Section 24 ever be reversed or repealed?"
     answer: "There is no announced plan to repeal Section 24, and the 2027 reforms entrench it rather than reverse it (the credit simply rises to 22% in step with the new basic rate). Planning on the assumption that it will be scrapped is not prudent; the sensible position is to structure around it as it stands."
 ---
@@ -60,48 +60,48 @@ faqs:
 <p>Take a landlord with three buy-to-lets held personally:</p>
 
 <ul>
-<li>Property 1: GBP15,000 rent, GBP8,000 mortgage interest</li>
-<li>Property 2: GBP18,000 rent, GBP10,000 mortgage interest</li>
-<li>Property 3: GBP12,000 rent, GBP6,000 mortgage interest</li>
-<li>Other allowable expenses: GBP3,000 per property (GBP9,000 total)</li>
+<li>Property 1: £15,000 rent, £8,000 mortgage interest</li>
+<li>Property 2: £18,000 rent, £10,000 mortgage interest</li>
+<li>Property 3: £12,000 rent, £6,000 mortgage interest</li>
+<li>Other allowable expenses: £3,000 per property (£9,000 total)</li>
 </ul>
 
-<p>Aggregate rent is GBP45,000, aggregate mortgage interest is GBP24,000, and other expenses are GBP9,000. Assume this is the landlord's only income beyond a salary that already uses the personal allowance, so the rental profit sits in the higher-rate band.</p>
+<p>Aggregate rent is £45,000, aggregate mortgage interest is £24,000, and other expenses are £9,000. Assume this is the landlord's only income beyond a salary that already uses the personal allowance, so the rental profit sits in the higher-rate band.</p>
 
-<p>Under the pre-2017 rules, mortgage interest was a straight deduction. Taxable rental profit would have been GBP45,000 minus GBP9,000 minus GBP24,000, which is GBP12,000, taxed at 40% for GBP4,800 of tax.</p>
+<p>Under the pre-2017 rules, mortgage interest was a straight deduction. Taxable rental profit would have been £45,000 minus £9,000 minus £24,000, which is £12,000, taxed at 40% for £4,800 of tax.</p>
 
-<p>Under Section 24 as it now stands, the interest is no longer deducted from profit. Taxable profit is GBP45,000 minus GBP9,000, which is GBP36,000. Tax at 40% is GBP14,400. The 20% credit on GBP24,000 of interest is GBP4,800. Net tax is GBP9,600.</p>
+<p>Under Section 24 as it now stands, the interest is no longer deducted from profit. Taxable profit is £45,000 minus £9,000, which is £36,000. Tax at 40% is £14,400. The 20% credit on £24,000 of interest is £4,800. Net tax is £9,600.</p>
 
 <table>
 <thead>
 <tr><th>Three-property portfolio (higher-rate landlord)</th><th>Pre-2017 rules</th><th>Section 24 (now)</th></tr>
 </thead>
 <tbody>
-<tr><td>Aggregate rent</td><td>GBP45,000</td><td>GBP45,000</td></tr>
-<tr><td>Other expenses deducted</td><td>GBP9,000</td><td>GBP9,000</td></tr>
-<tr><td>Mortgage interest deducted from profit</td><td>GBP24,000</td><td>GBP0</td></tr>
-<tr><td>Taxable rental profit</td><td>GBP12,000</td><td>GBP36,000</td></tr>
-<tr><td>Tax at 40%</td><td>GBP4,800</td><td>GBP14,400</td></tr>
-<tr><td>Less 20% interest credit</td><td>n/a</td><td>GBP4,800</td></tr>
-<tr><td>Net tax</td><td>GBP4,800</td><td>GBP9,600</td></tr>
+<tr><td>Aggregate rent</td><td>£45,000</td><td>£45,000</td></tr>
+<tr><td>Other expenses deducted</td><td>£9,000</td><td>£9,000</td></tr>
+<tr><td>Mortgage interest deducted from profit</td><td>£24,000</td><td>£0</td></tr>
+<tr><td>Taxable rental profit</td><td>£12,000</td><td>£36,000</td></tr>
+<tr><td>Tax at 40%</td><td>£4,800</td><td>£14,400</td></tr>
+<tr><td>Less 20% interest credit</td><td>n/a</td><td>£4,800</td></tr>
+<tr><td>Net tax</td><td>£4,800</td><td>£9,600</td></tr>
 </tbody>
 </table>
 
-<p>Same properties, same rents, same interest. The tax bill doubles. The extra GBP4,800 is exactly 20% of the GBP24,000 mortgage interest, the gap between the 40% the landlord pays and the 20% they get back. That is the entire Section 24 cost in one line, and it scales directly with how much interest the portfolio carries.</p>
+<p>Same properties, same rents, same interest. The tax bill doubles. The extra £4,800 is exactly 20% of the £24,000 mortgage interest, the gap between the 40% the landlord pays and the 20% they get back. That is the entire Section 24 cost in one line, and it scales directly with how much interest the portfolio carries.</p>
 
 <h2>The higher-rate trap and the threshold effect</h2>
 
 <p>The example above assumed the landlord was already a higher-rate taxpayer. The more insidious version is the landlord who is not, until Section 24 makes them one.</p>
 
-<p>Because mortgage interest is stripped out of the profit figure, your reported property income is higher than the cash you actually keep. That inflated figure is what HMRC measures against the GBP50,270 higher-rate threshold. So a landlord whose genuine economic profit is GBP20,000 but whose accounts now show GBP44,000 of profit (because GBP24,000 of interest no longer reduces it) can find that adding one more property tips reported income over GBP50,270. From that point, the marginal band of income is taxed at 40% while the interest credit is stuck at 20%.</p>
+<p>Because mortgage interest is stripped out of the profit figure, your reported property income is higher than the cash you actually keep. That inflated figure is what HMRC measures against the £50,270 higher-rate threshold. So a landlord whose genuine economic profit is £20,000 but whose accounts now show £44,000 of profit (because £24,000 of interest no longer reduces it) can find that adding one more property tips reported income over £50,270. From that point, the marginal band of income is taxed at 40% while the interest credit is stuck at 20%.</p>
 
 <p>This is the cliff edge: the marginal property can cost far more in tax than its own rent would suggest, because it changes the rate that applies to your whole portfolio. It is also why two landlords with identical cash flow can pay very different tax depending on which side of the threshold their stripped-out interest leaves them. We cover the mechanics in detail in <a href="/blog/section-24-and-tax-relief/can-section-24-push-higher-rate-tax">can Section 24 push you into higher-rate tax</a>.</p>
 
-<p>At the top end the same compounding continues. A landlord whose stripped-out profit pushes adjusted income above GBP100,000 starts to lose the personal allowance at GBP1 for every GBP2, an effective 60% marginal rate on that band, and income above GBP125,140 attracts the 45% additional rate while the credit remains 20%. None of this reflects extra economic gain; it reflects the accounting profit that Section 24 manufactures.</p>
+<p>At the top end the same compounding continues. A landlord whose stripped-out profit pushes adjusted income above £100,000 starts to lose the personal allowance at £1 for every £2, an effective 60% marginal rate on that band, and income above £125,140 attracts the 45% additional rate while the credit remains 20%. None of this reflects extra economic gain; it reflects the accounting profit that Section 24 manufactures.</p>
 
 <h2>Cash flow: why the squeeze worsens with portfolio size</h2>
 
-<p>Section 24's deepest effect on multi-property landlords is on cash. In the three-property example the annual cash-flow reduction is GBP4,800, a real-terms cut despite identical property performance. Across a larger, more geared portfolio the gap is proportionally larger, and it lands at the worst possible moment, because higher interest rates simultaneously raise the mortgage payments and raise the restricted amount the tax credit fails to cover.</p>
+<p>Section 24's deepest effect on multi-property landlords is on cash. In the three-property example the annual cash-flow reduction is £4,800, a real-terms cut despite identical property performance. Across a larger, more geared portfolio the gap is proportionally larger, and it lands at the worst possible moment, because higher interest rates simultaneously raise the mortgage payments and raise the restricted amount the tax credit fails to cover.</p>
 
 <p>The hard cases are interest-only portfolios. Where the entire monthly payment is interest, the entire payment is caught by the restriction, and there is no capital repayment quietly reducing the debt over time. A landlord servicing several interest-only loans can find that rent comfortably covers the mortgage but not the mortgage plus the Section 24 tax, especially in a higher-rate year. Our guide on <a href="/blog/section-24-and-tax-relief/section-24-interest-only-mortgage-tax-planning">Section 24 and interest-only mortgages</a> sets out how repayment structure changes the position.</p>
 
@@ -131,7 +131,7 @@ faqs:
 </thead>
 <tbody>
 <tr><td>Mortgage interest relief</td><td>20% basic-rate credit only (22% from April 2027)</td><td>Full deduction against profit before corporation tax</td></tr>
-<tr><td>Rate on profit</td><td>20%, 40% or 45% (22%, 42% or 47% from April 2027)</td><td>19% to 25% corporation tax, with marginal relief between GBP50k and GBP250k</td></tr>
+<tr><td>Rate on profit</td><td>20%, 40% or 45% (22%, 42% or 47% from April 2027)</td><td>19% to 25% corporation tax, with marginal relief between £50k and £250k</td></tr>
 <tr><td>Getting cash out</td><td>Profit taxed once, then yours</td><td>Further tax on dividends or salary when extracted</td></tr>
 <tr><td>Cost to set up on existing portfolio</td><td>None (already held)</td><td>Potential CGT on transfer plus SDLT, unless relief applies</td></tr>
 <tr><td>Ongoing admin</td><td>Self Assessment, plus MTD quarterly updates</td><td>Company accounts, corporation tax return, payroll and dividend records</td></tr>
@@ -148,7 +148,7 @@ faqs:
 
 <h2>MTD readiness for multi-property landlords</h2>
 
-<p>Making Tax Digital for Income Tax is live. It applies to landlords with qualifying income over GBP50,000 from 6 April 2026, over GBP30,000 from April 2027 and over GBP20,000 from April 2028. Qualifying income is measured on gross rents (plus any self-employment turnover), before expenses, so a multi-property landlord crosses the threshold on rent alone well before profit suggests it.</p>
+<p>Making Tax Digital for Income Tax is live. It applies to landlords with qualifying income over £50,000 from 6 April 2026, over £30,000 from April 2027 and over £20,000 from April 2028. Qualifying income is measured on gross rents (plus any self-employment turnover), before expenses, so a multi-property landlord crosses the threshold on rent alone well before profit suggests it.</p>
 
 <p>In practice that means digital records and quarterly updates, and it makes clean per-property bookkeeping of rent received and mortgage interest paid (kept distinct from capital repayments) a working necessity rather than a year-end scramble. Those are exactly the figures a correct Section 24 calculation depends on. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords guide</a> sets out the timeline and what qualifying income includes.</p>
 

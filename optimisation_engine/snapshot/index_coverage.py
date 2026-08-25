@@ -142,13 +142,26 @@ def _call_inspection_with_status(
 def _fill_extended_fields(row: dict) -> dict:
     """Ensure coverage_state / robots_txt_state / page_fetch_state keys exist.
 
-    Cache reads via ``_load_inspection_cache`` do not select these columns (they
-    are not DB columns; they live in raw_response).  Fill with empty strings so
-    downstream code can safely call ``row.get(...)`` without conditionals.
+    These are not DB columns; they live inside ``raw_response``.  Cache reads
+    therefore arrive without them, so recover them from ``raw_response`` when it
+    is present and only fall back to empty strings when it genuinely is not.
+
+    This matters: ``_bucket`` needs ``coverage_state`` to tell "URL is unknown to
+    Google" apart from an excluded/redirected URL.  When it was blanked on every
+    cache read, whole cached sweeps reported ``excluded_or_redirect`` for URLs
+    Google had never even discovered, which inverts the diagnosis.
     """
     result = dict(row)
-    for field in ("coverage_state", "robots_txt_state", "page_fetch_state"):
-        result.setdefault(field, "")
+    index_result = ((result.get("raw_response") or {})
+                    .get("inspectionResult", {})
+                    .get("indexStatusResult", {}))
+    for field, api_key in (
+        ("coverage_state", "coverageState"),
+        ("robots_txt_state", "robotsTxtState"),
+        ("page_fetch_state", "pageFetchState"),
+    ):
+        if not result.get(field):
+            result[field] = index_result.get(api_key, "") or ""
     return result
 
 

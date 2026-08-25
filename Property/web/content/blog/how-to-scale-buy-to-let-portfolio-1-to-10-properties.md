@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/how-
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Portfolio Management"
-metaTitle: "Scale Buy-to-Let 1 to 10 Properties: Finance, Tax, MTD Roadmap"
-metaDescription: "Practical roadmap for scaling a UK BTL portfolio to 10 properties. Lender phases, deposit maths, Section 24 cash flow, MTD live, incorporation tipping points."
+metaTitle: "Scale Buy-to-Let 1 to 10 Properties: Tax, Finance, MTD"
+metaDescription: "Practical roadmap for scaling a UK BTL portfolio to 10 properties. Lender phases, deposit maths, Section 24 cash flow, MTD live"
 altText: "UK property investor reviewing portfolio expansion strategy documents with calculator and property listings"
 image: ""
 h1: "How to Scale a Buy-to-Let Portfolio from 1 to 10 Properties in 2026"
@@ -210,7 +210,7 @@ faqs:
 <h2>Compliance load that scales with portfolio size</h2>
 
 <ul>
-<li><strong>Licensing.</strong> Mandatory HMO from 5+ unrelated tenants in 2+ households. Selective licensing varies by council, citywide in Liverpool, Leeds, Birmingham, Newcastle, Brighton. Additional HMO licensing in many other wards. Check each property's address against the relevant council's licensing map.</li>
+<li><strong>Licensing.</strong> Mandatory HMO from 5+ unrelated tenants in 2+ households. <a href="/blog/landlord-tax-essentials/landlord-licensing-explained">Selective licensing varies by council</a>, citywide in Liverpool, Leeds, Birmingham, Newcastle, Brighton. Additional HMO licensing in many other wards. Check each property's address against the relevant council's licensing map.</li>
 <li><strong>Safety.</strong> Annual gas safety certificate per property, EICR every 5 years, smoke and carbon monoxide alarms, fire risk assessment in HMOs, EPC minimum E rising to C for new tenancies under MEES tightening.</li>
 <li><strong>Tenancy law.</strong> Renters' Rights Act 2025 abolished Section 21 no-fault evictions, all tenancies move to periodic structure, new fixed-period rules for student lets. Possession routes now run through Section 8 grounds only.</li>
 <li><strong>Tax filings.</strong> Personal SA105 + SA100 annually until incorporated. Then CT600 + statutory accounts + confirmation statement + ATED return (if any property over £500k). MTD for ITSA quarterly updates for sole-trader landlords above the threshold.</li>

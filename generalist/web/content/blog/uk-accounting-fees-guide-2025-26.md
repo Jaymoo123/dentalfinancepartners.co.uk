@@ -104,7 +104,7 @@ keyTakeaways:
 <ul>
 <li><strong>VAT registration:</strong> £150 to £400 one-off. Includes completing the VAT1 form and advising on the best scheme (flat rate, annual accounting, or standard).</li>
 <li><strong>R&D tax credits claim:</strong> 15-25% of the claim value, or a fixed fee of £500 to £2,000. The merged R&D scheme from April 2024 has made claims more detailed, so fees have risen.</li>
-<li><strong>Company incorporation:</strong> £50 to £200 plus Companies House fee (£50 for online, £40 for paper). Some firms include this in the first year's fee.</li>
+<li><strong>Company incorporation:</strong> £50 to £200 plus Companies House fee (£50 for online, £71 for paper). Some firms include this in the first year's fee.</li>
 <li><strong>Payroll only:</strong> £10 to £30 per month per employee. Covers RTI submissions, pension auto-enrolment, and P45/P60 processing.</li>
 <li><strong>Bookkeeping catch-up:</strong> £25 to £50 per hour. If your records are behind, expect to pay for the time to bring them up to date.</li>
 <li><strong>Self-assessment only (non-business):</strong> £150 to £300 per year. For employed people with a side income or rental property.</li>

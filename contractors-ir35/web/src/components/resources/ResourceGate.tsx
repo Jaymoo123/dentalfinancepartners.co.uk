@@ -35,7 +35,6 @@ export function ResourceGate({
   return (
     <MiniCapture
       formId="resource_block"
-      role="resource"
       messagePrefix={`[Resource block: ${topic}]`}
       heading={copy?.heading || t?.ctaCopy || "Get a free review of your contractor tax position"}
       blurb="Tell us about your situation and a specialist will confirm the numbers for your contract and the most efficient next step, with no obligation."

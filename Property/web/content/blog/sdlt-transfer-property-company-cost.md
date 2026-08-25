@@ -14,7 +14,7 @@ summary: Move a rental property into your own company and HMRC charges SDLT on t
 reviewedBy: Property Tax Partners Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-05-31'
-dateModified: '2026-05-31'
+dateModified: '2026-08-17'
 schema: ''
 faqs:
 - question: How is SDLT charged when I transfer property to my limited company in 2026 (connected party)?
@@ -41,6 +41,16 @@ faqs:
   answer: Often, yes, for the existing stock. New purchases made directly by the company still attract SDLT and the 5% surcharge, but they avoid the personal CGT disposal and the double valuation exercise that a transfer of existing property triggers. Many landlords keep mortgaged personal property where it is and use the company for new acquisitions, a hybrid approach that sidesteps the transfer SDLT and CGT on the legacy portfolio.
 - question: Does the company pay SDLT if I transfer a mortgaged property and the company takes over the debt?
   answer: Yes, and the debt does not reduce the charge here because the connected-party rule already substitutes market value as the chargeable consideration. For an unconnected sale, assumed debt would be the consideration. On a connected transfer to your own company, SDLT is the higher of the assumed debt and market value, and market value is almost always the operative figure. Lender consent to the transfer is a separate practical hurdle to plan for.
+- question: Does a limited company pay stamp duty?
+  answer: Yes. On a residential purchase of £40,000 or more your company pays from the first pound at 5%, because the 5% additional dwellings surcharge applies to company purchases and there is no nil-rate starting band for them. On a £150,000 flat that is £8,000, where an individual buying the same flat as their only home would pay £500. Below £40,000 the surcharge does not apply at all under FA 2003 Schedule 4ZA paragraph 3(2) and 3(3), and the standard rates give nil below £125,000, so a £35,000 dwelling costs your company no SDLT. Above £40,000 there is no discount for buying in a company name.
+- question: What are the stamp duty rates for a ltd company in 2026/27?
+  answer: 5% on the first £125,000, 7% from £125,001 to £250,000, 10% from £250,001 to £925,000, 15% from £925,001 to £1.5m and 17% above £1.5m. Those are the standard residential bands of 0%, 2%, 5%, 10% and 12% with the 5% additional dwellings surcharge added to each one. If your company is non-UK resident, add a further 2% to every band.
+- question: Is stamp duty tax deductible for a company?
+  answer: No. SDLT is a capital cost rather than a running cost, so your company cannot deduct it from rental profits in its corporation tax computation. It goes into the property's base cost instead, which reduces the chargeable gain when the company eventually sells. The relief is real but deferred, sometimes by decades, so budget the SDLT as cash out of the door at completion.
+- question: Does a limited company pay stamp duty on commercial property?
+  answer: Yes, but at the non-residential rates of 0% on the first £150,000, 2% from £150,001 to £250,000 and 5% above £250,000, with no additional dwellings surcharge. A £500,000 commercial unit costs your company £14,500, against £40,000 for a £500,000 residential property. Mixed-use property, and single transactions involving six or more dwellings, also use the non-residential table.
+- question: Is there a stamp duty calculator for a limited company purchase?
+  answer: Yes. Our stamp duty calculator applies the 2026/27 residential bands with the 5% company surcharge, so you can price either a market purchase or a connected-party transfer. Enter the price, or the open market value where you are transferring property you already own, and remember the tax is payable in cash within 14 days of completion.
 metaTitle_prev: SDLT on Property Transfer to a Limited Company (2026)
 metaDescription_prev: 'How SDLT works when you transfer property to your own company: the connected-party market-value rule, the 5% surcharge, 2026/27 bands and reliefs.'
 ---
@@ -161,6 +171,56 @@ metaDescription_prev: 'How SDLT works when you transfer property to your own com
 <h2>MTD readiness: a company sidesteps it, you do not</h2>
 
 <p>Making Tax Digital for Income Tax (MTD for ITSA) is live. It is mandatory for individual landlords with qualifying income above £50,000 from 6 April 2026, above £30,000 from 6 April 2027 and above £20,000 from 6 April 2028. Limited companies sit outside MTD for ITSA entirely; they file an annual CT600 instead. If your rental income crosses the MTD threshold, moving the portfolio into a company removes the quarterly-update obligation on that income, which is a genuine, if secondary, reason to incorporate. It does not, of course, change the SDLT entry cost.</p>
+
+<h2>Do limited companies pay stamp duty?</h2>
+
+<p>Yes, and on a residential purchase of £40,000 or more your company pays from the very first pound at 5%, because a company never gets the 0% starting band that an individual buying their only home gets. A £150,000 flat costs your company £8,000, where the same flat bought by an individual as their only home would cost £500. Below £40,000 the surcharge does not apply at all, under FA 2003 Schedule 4ZA paragraph 3(2) and 3(3), and the standard rates are nil below £125,000, so a £35,000 dwelling costs nothing.</p>
+
+<p>The answer is the same whether your company buys from a stranger or from you. As the worked examples above show, a transfer out of your own name is priced on market value rather than on whatever you put on the paperwork, so new purchases and portfolio transfers both land in the same rate table.</p>
+
+<h2>How much stamp duty does a limited company pay?</h2>
+
+<p>On a £250,000 purchase your company pays £15,000, and on a £350,000 purchase £25,000. The bands are marginal, so each slice of the price is charged at its own rate and the effective rate climbs gradually with value rather than jumping at each threshold.</p>
+
+<table>
+<thead>
+<tr><th>Price or market value</th><th>SDLT your company pays</th><th>Effective rate</th></tr>
+</thead>
+<tbody>
+<tr><td>£150,000</td><td>£8,000</td><td>5.3%</td></tr>
+<tr><td>£250,000</td><td>£15,000</td><td>6.0%</td></tr>
+<tr><td>£350,000</td><td>£25,000</td><td>7.1%</td></tr>
+</tbody>
+</table>
+
+<p>To price your own figure, run it through our <a href="/calculators/stamp-duty-calculator">limited company stamp duty calculator</a>, which applies the 5% surcharge to the 2026/27 bands for you.</p>
+
+<h2>SDLT rates for limited companies compared with individuals</h2>
+
+<p>Your company pays five percentage points more than an individual at every level of value, which is exactly what the two rate columns in the band table above show. Three further differences are worth knowing before you compare the two routes:</p>
+
+<ul>
+<li>First-time buyer relief, worth up to £5,000, belongs to individuals only. Your company cannot claim it, however new the company is.</li>
+<li>The rule that lets an individual reclaim the surcharge after replacing their main home is closed to your company, because a company cannot have a main home.</li>
+<li>If your company is non-UK resident, add a further 2% to every band, taking the top slice to 19%.</li>
+</ul>
+
+<h2>Stamp duty on business property bought through a company</h2>
+
+<p>Buy a shop, an office, a warehouse or bare land through your company and you pay nothing on the first £150,000, 2% on the slice up to £250,000 and 5% on everything above that, with no surcharge on top.</p>
+
+<table>
+<thead>
+<tr><th>Portion of the price</th><th>Non-residential rate</th></tr>
+</thead>
+<tbody>
+<tr><td>£0 to £150,000</td><td>0%</td></tr>
+<tr><td>£150,001 to £250,000</td><td>2%</td></tr>
+<tr><td>Above £250,000</td><td>5%</td></tr>
+</tbody>
+</table>
+
+<p>The gap is wide enough to change what you buy. A £500,000 shop costs your company £14,500, while a £500,000 house costs it £40,000. Mixed-use property, such as a flat above a let shop bought in one transaction, uses this same non-residential table, as does a bulk purchase caught by the six-dwellings rule above.</p>
 
 <h2>So when does the SDLT cost make sense?</h2>
 

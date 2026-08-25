@@ -35,6 +35,13 @@ jobs:
         with:
           fetch-depth: 0   # need base-branch history for git diff
 
+      # Runs on the cheap job, ahead of any build, and covers EVERY site rather
+      # than only the changed ones: an undeclared import in site A is caused by
+      # editing site A, but it breaks whichever site is unlucky enough to deploy
+      # next. On 2026-08-16 that cost the estate nine days of undeployability.
+      - name: Dependency closure (every site declares what it imports)
+        run: python scripts/check_dependency_closure.py --verbose
+
       - name: Compute site matrix
         id: detect
         env:
@@ -59,6 +66,8 @@ jobs:
           pharmacies|https://www.pharmacytax.co.uk
           startups-tech|https://www.foundertaxpartners.co.uk
           ecommerce|https://www.ecommercefinance.co.uk
+          wills-probate|https://www.probate-compass-placeholder.co.uk
+          divorce-finances|https://www.placeholder-divorce-domain.example
           '
 
           FULL=false

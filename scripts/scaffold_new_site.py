@@ -256,13 +256,38 @@ Return the following fields exactly as shown:
 
 
 def update_blog_content(target_dir: str, args):
-    """Clear existing blog posts (they belong to the reference site)."""
+    """Purge every reference-site content asset copytree dragged across.
+
+    copytree copies the whole reference site, so anything not cleared here ships
+    under the new brand. public/ is served verbatim by Next, so a stale asset
+    there resolves on the new domain at launch. Clearing only content/blog was
+    the gap that leaked CIS templates into wills-probate.
+    """
     blog_dir = os.path.join(target_dir, "web", "content", "blog")
     if os.path.exists(blog_dir):
         for f in os.listdir(blog_dir):
             if f.endswith(".md"):
                 os.remove(os.path.join(blog_dir, f))
         print(f"  Cleared {blog_dir}/ (reference site posts removed)")
+
+    # Downloadable assets and gated guides are always reference-site specific.
+    for rel in ("web/public/downloads", "web/public/resources", "web/content/resources"):
+        path = os.path.join(target_dir, *rel.split("/"))
+        if os.path.exists(path):
+            shutil.rmtree(path)
+            print(f"  Removed {rel}/ (reference site assets)")
+
+    # llms.txt is the one public file the scaffold never generated, so it stayed
+    # a byte-identical copy of the reference site's. Write a stub instead.
+    llms_path = os.path.join(target_dir, "web", "public", "llms.txt")
+    os.makedirs(os.path.dirname(llms_path), exist_ok=True)
+    with open(llms_path, "w", encoding="utf-8") as f:
+        f.write(
+            f"# {args.display_name}\n\n"
+            f"> TODO: one-line site description.\n\n"
+            f"Site: https://{args.domain}/\n"
+        )
+    print(f"  Wrote stub web/public/llms.txt ({args.display_name})")
 
 
 def update_globals_css(target_dir: str, args):
@@ -378,7 +403,7 @@ export default function {cat_slug.replace("-", "_").title().replace("_", "")}Hub
             <h2 className="text-lg font-semibold mb-2">{{post.title}}</h2>
             <p className="text-sm text-[var(--ink-soft)]">{{post.summary}}</p>
           </Link>
-        ))}
+        ))}}
       </div>
 
       <script
@@ -445,7 +470,8 @@ def print_post_scaffold_checklist(args):
     print(f"  [x] Pipeline config generated (config_supabase.py)")
     print(f"  [x] Pipeline generator updated (table name, audience)")
     print(f"  [x] globals.css primary color updated")
-    print(f"  [x] Reference blog posts cleared")
+    print(f"  [x] Reference blog posts, downloads and resources cleared")
+    print(f"  [x] public/llms.txt stub written")
     print(f"  [x] Hub page stubs created for all categories")
     print(f"  [x] package.json name updated")
     print(f"  [x] .env.local.example created")
@@ -466,7 +492,7 @@ def print_post_scaffold_checklist(args):
     print(f"  [ ] Create Vercel project pointing to {site_dir}/web/")
     print(f"  [ ] Set Vercel env vars (NEXT_PUBLIC_SITE_URL, SUPABASE_URL, SUPABASE_ANON_KEY)")
     print(f"  [ ] Run: cd {site_dir}/web && npm install && npm run build")
-    print(f"  [ ] Add public/llms.txt with site description")
+    print(f"  [ ] Fill in the public/llms.txt stub (description + key pages)")
     print(f"  [ ] Add public/favicon.ico")
     print(f"  [ ] Seed blog topics into Supabase table")
     print(f"  [ ] Run blog generation: python {site_dir}/pipeline/generate_blog_supabase.py")

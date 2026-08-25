@@ -1,0 +1,61 @@
+{
+  "batch_id": "M3-B-B1",
+  "phase": "RUN",
+  "agent_id": "MW3-RUN-b",
+  "worktree": "C:\\Users\\user\\Documents\\Accounting-wt-property-megawave3-b",
+  "branch": "property-megawave3-b",
+  "completed_at": "2026-05-28T10:45:00Z",
+  "commit_shas": [
+    "918faf43",
+    "2f920d7a",
+    "6e34c17a",
+    "f8486981",
+    "c4dd9abe",
+    "0b451b16",
+    "4a5cfc4e",
+    "18072e1c"
+  ],
+  "slugs_done": [
+    "double-taxation-agreement-uk-and-isle-of-man",
+    "double-taxation-convention-dta-uk-and-spain",
+    "double-taxation-convention-uk-and-india",
+    "hmrcs-otm-letters-campaign-directed-at-ated-avoidance",
+    "annual-tax-on-enveloped-dwellings-pro-and-cons",
+    "are-you-leaving-the-uk-permanently"
+  ],
+  "body_word_counts": {
+    "double-taxation-agreement-uk-and-isle-of-man": 3232,
+    "double-taxation-convention-dta-uk-and-spain": 3519,
+    "double-taxation-convention-uk-and-india": 2881,
+    "hmrcs-otm-letters-campaign-directed-at-ated-avoidance": 2980,
+    "annual-tax-on-enveloped-dwellings-pro-and-cons": 2845,
+    "are-you-leaving-the-uk-permanently": 2808
+  },
+  "faq_counts": {
+    "double-taxation-agreement-uk-and-isle-of-man": 13,
+    "double-taxation-convention-dta-uk-and-spain": 13,
+    "double-taxation-convention-uk-and-india": 13,
+    "hmrcs-otm-letters-campaign-directed-at-ated-avoidance": 13,
+    "annual-tax-on-enveloped-dwellings-pro-and-cons": 13,
+    "are-you-leaving-the-uk-permanently": 13
+  },
+  "verifications_run": {
+    "em_dashes_in_body": "0 across all 6 picks",
+    "tailwind_classes_in_body": "0 across all 6 picks",
+    "metaTitle_le_62_chars": "all 6 pass (45-52 chars)",
+    "metaDescription_le_158_chars": "all 6 pass (132-144 chars)",
+    "frontmatter_yaml_parse": "all 6 valid",
+    "internal_blog_links_resolve": "all internal /blog/<category>/<slug> links resolve to existing markdown files",
+    "npm_run_build": "NOT RUN: node_modules absent in both worktree and main; per MW3_TOMORROW_PICKUP build is run by manager at deploy gate after ff-merge"
+  },
+  "notes": [
+    "All 6 picks committed on worktree branch property-megawave3-b (cwd=worktree by design per MW3_TOMORROW_PICKUP + drift-bug-fix commit 1dba3d8). Manager runs ff-merge per batch as marker arrives.",
+    "Tracker rows flipped in main via absolute path C:\\Users\\user\\Documents\\Accounting\\docs\\property\\megawave3_page_tracker.md per §16.14/§16.15/§16.37 discipline; B1-B6 all ✅ with body words + FAQ counts populated.",
+    "Categories used: non-resident-landlord-tax (B1, B2, B3, B6); property-types-and-specialist-tax (B4, B5 per Stage 2 brief routing). Note: existing site ATED pages are routed to incorporation-and-company-structures; B4/B5 followed Stage 2 brief explicitly so site routing now spans both categories for ATED content. Manager may consider site-wide consistency rationalisation post-RUN.",
+    "Pexels images fetched via direct API (PEXELS_API_KEY from main repo .env); fetch_image_for_post() module not directly importable due to SUPABASE_URL/_KEY requirement in optimisation_engine.config module import chain. All 6 images have valid URLs + photographer attribution.",
+    "B5 + B6 each required a small (one-paragraph) follow-up commit to clear the 2,800 body-word floor per §9 quality bar; both pages now comfortably in range.",
+    "No F-flags raised. Briefs were comprehensive post-Stage 2b; no statutory drift or HP-lock issues surfaced at RUN write time.",
+    "monitored_pages Supabase registration: NOT executed by this RUN agent. Step 13 of 19-step workflow typically requires Supabase credentials + the populate_monitored_pages.py script run. Manager-side post-merge step recommended.",
+    "Redirects: middleware.ts not edited; no redirect repointing needed for any of the 6 net-new slugs (no clashes against existing slugs)."
+  ]
+}

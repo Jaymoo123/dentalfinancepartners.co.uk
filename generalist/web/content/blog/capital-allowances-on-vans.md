@@ -209,7 +209,7 @@ faqs:
 
 <h2>Electric Vans and Zero-Emission Treatment</h2>
 
-<p>Electric vans qualify for AIA, full expensing and the 40% FYA in the same way as diesel or petrol vans. Unlike cars, where CO2 emissions determine the applicable WDA rate (18% or 6%) and whether a 100% FYA applies, vans face no CO2-based restrictions. An electric van and a diesel van of the same cost receive identical capital allowances treatment.</p>
+<p>Electric vans qualify for AIA, full expensing and the 40% FYA in the same way as diesel or petrol vans. Unlike cars, where CO2 emissions determine the applicable WDA rate (14% from April 2026, previously 18%, or 6%) and whether a 100% FYA applies, vans face no CO2-based restrictions. An electric van and a diesel van of the same cost receive identical capital allowances treatment.</p>
 
 <p>The benefit-in-kind advantage for electric vans is significant. The van benefit is charged at 0% of the cash equivalent where the van's CO2 emissions are zero. The cash equivalent for a zero-emission van for 2025/26 is therefore £0. This makes an electric van particularly efficient for a limited company director who expects private use: the company claims 100% capital allowances, and the director pays no benefit-in-kind charge.</p>
 

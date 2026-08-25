@@ -1,5 +1,5 @@
 ---
-title: "How Do Corporation Tax and Dividend Tax Work Together for UK Directors in 2025/26?"
+title: "How Do Corporation Tax and Dividend Tax Work Together for UK Directors in 2026/27?"
 slug: "corporation-tax-and-dividend-tax-uk-directors"
 canonical: "https://www.hollowaydavies.co.uk/blog/corporation-tax/corporation-tax-and-dividend-tax-uk-directors"
 date: "2026-05-17"
@@ -7,7 +7,7 @@ generator: unverified/claude-era
 author: "Holloway Davies Editorial Team"
 category: "Corporation Tax"
 metaTitle: "Corporation Tax and Dividend Tax: UK Director's Guide"
-metaDescription: "Corporation tax and dividend tax explained for UK directors. How the two taxes interact, what rates apply in 2025/26, and how to plan your pay efficiently."
+metaDescription: "Corporation tax and dividend tax explained for UK directors. How the two taxes interact, what rates apply in 2026/27, and how to plan your pay efficiently."
 altText: "UK accountant explaining corporation tax and dividend tax planning to a company director in a modern office."
 image: "/blog/corporation-tax-and-dividend-tax-uk-directors.jpg"
 imageCredit:
@@ -16,7 +16,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
   source: "Pexels"
 h1: "How Corporation Tax and Dividend Tax Work Together for UK Directors"
-summary: "A clear explanation of how corporation tax and dividend tax interact for UK company directors. We cover the 2025/26 rates, the profit extraction process, and practical planning to keep your total tax bill lower than a sole trader's."
+summary: "A clear explanation of how corporation tax and dividend tax interact for UK company directors. We cover the 2026/27 rates, the profit extraction process, and practical planning now that the April 2026 dividend rate rise has narrowed the company's edge over a sole trader."
 schema: ""
 faqs:
   - question: "Do I pay corporation tax on dividends I take from my company?"
@@ -24,19 +24,19 @@ faqs:
   - question: "Can I avoid dividend tax by taking all profit as salary?"
     answer: "You can, but it is almost always worse from a tax perspective. Salary above the primary threshold (£12,570) attracts employee NI at 8% and employer NI at 15% (above the £5,000 secondary threshold, from 6 Apr 2025)."
 keyTakeaways:
-  - "In 2025/26, corporation tax is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applied between those thresholds."
-  - "In 2025/26 the dividend allowance fell to £500 per person (from £1,000), with dividend tax rates of 8.75% basic, 33.75% higher and 39.35% additional."
-  - "The most tax-efficient pay structure for directors in 2025/26 is a £12,570 salary plus about £37,200 in dividends, giving a personal tax bill of roughly £3,256."
+  - "In 2026/27, corporation tax is 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief applied between those thresholds."
+  - "For 2026/27 the dividend allowance stays at £500 per person, and the dividend rates rose on 6 April 2026 to 10.75% basic and 35.75% higher, with the additional rate unchanged at 39.35%."
+  - "The most tax-efficient pay structure for directors in 2026/27 is a £12,570 salary plus about £37,200 in dividends, giving a personal tax bill of roughly £3,999."
   - "A director's loan not repaid within 9 months and 1 day of the company's year-end triggers an S455 charge, which the company can reclaim only once the loan is repaid."
   - "Corporation tax is due 9 months and 1 day after the accounting period ends; dividend tax is reported via self assessment and paid by 31 January."
-  - "Once company profits exceed approximately £180,000, the limited company structure starts to become more tax efficient than operating as a sole trader."
+  - "Under 2026/27 rates a director extracting all profit generally pays more than a sole trader; the company's tax advantage now comes from retaining profit at 19% to 25% and timing extraction."
 ---
 
 <p>If you run your business through a limited company, you pay two separate taxes on your profits. Corporation tax is charged on the company's profits. Dividend tax is charged on the money you take out of those profits as a shareholder. Understanding how corporation tax and dividend tax work together is the single most important piece of tax planning you will do as a director.</p>
 
 <p>Get the balance right and you can save thousands each year compared to operating as a sole trader. Get it wrong and you could overpay tax, trigger unnecessary National Insurance, or create problems with your director's loan account.</p>
 
-<p>This guide explains the 2025/26 rates, how the two taxes interact, and the practical steps to structure your pay efficiently. Working with limited company directors across the UK, from freelance consultants in Bristol to husband-and-wife cafe owners in Birmingham, these are the numbers we run every day.</p>
+<p>This guide explains the 2026/27 rates, how the two taxes interact, and the practical steps to structure your pay efficiently. Working with limited company directors across the UK, from freelance consultants in Bristol to husband-and-wife cafe owners in Birmingham, these are the numbers we run every day.</p>
 
 <h2>The Two Taxes Explained Simply</h2>
 
@@ -44,11 +44,11 @@ keyTakeaways:
 
 <p>Dividends are not a deductible expense for the company. You pay them from post-tax profits. When you receive a dividend personally, you pay dividend tax on the amount above your annual allowance, at rates that depend on your total income for the year.</p>
 
-<p>This two-stage system is why corporation tax and dividend tax are often discussed together. The company pays first. You pay second. The total combined tax rate on each pound of profit is lower than the equivalent income tax and National Insurance a sole trader pays, up to a certain profit level.</p>
+<p>This two-stage system is why corporation tax and dividend tax are often discussed together. The company pays first. You pay second. Since the April 2026 dividend rate rise, the total combined rate on each pound of profit you extract is broadly similar to what a sole trader pays, and sometimes higher. The company's advantage now comes mainly from profit you retain, or extract in a later, lower-income year.</p>
 
-<h2>Corporation Tax Rates for 2025/26</h2>
+<h2>Corporation Tax Rates for 2026/27</h2>
 
-<p>Corporation tax rates for the 2025/26 tax year (accounting periods starting on or after 1 April 2025) are:</p>
+<p>Corporation tax rates for the 2026/27 tax year (financial year starting 1 April 2026) are:</p>
 
 <ul>
 <li><strong>Small profits rate:</strong> 19% on profits up to £50,000</li>
@@ -56,20 +56,22 @@ keyTakeaways:
 <li><strong>Marginal relief:</strong> applies between £50,000 and £250,000, giving an effective rate that rises gradually from 19% to 25%</li>
 </ul>
 
-<p>If your company's profits are £63,400, you do not pay a flat 25% on the whole amount. Marginal relief calculates a blended rate. The effective corporation tax rate on £63,400 of profit is approximately 20.5%. At £92,800, it is roughly 22.3%. At £150,000, it is around 23.5%.</p>
+<p>If your company's profits are £63,400, you do not pay a flat 25% on the whole amount. Marginal relief calculates a blended rate. The effective corporation tax rate on £63,400 of profit is approximately 20.6%. At £92,800, it is roughly 22.5%. At £150,000, it is 24%.</p>
 
 <p>These thresholds are divided by the number of associated companies. If you control two limited companies, each one's thresholds are halved. A company with one associated company gets a small profits rate on profits up to £25,000 and marginal relief up to £125,000.</p>
 
-<h2>Dividend Tax Rates for 2025/26</h2>
+<h2>Dividend Tax Rates for 2026/27</h2>
 
-<p>When you take dividends from your company, you pay dividend tax on the amount above your annual allowance. The rates for 2025/26 are:</p>
+<p>When you take dividends from your company, you pay dividend tax on the amount above your annual allowance. The rates for 2026/27 are:</p>
 
 <ul>
-<li><strong>Dividend allowance:</strong> £500 per person per year (down from £1,000 in 2024/25 and £2,000 in 2023/24)</li>
-<li><strong>Basic rate taxpayers:</strong> 8.75% on dividends above the allowance</li>
-<li><strong>Higher rate taxpayers:</strong> 33.75% on dividends above the allowance</li>
+<li><strong>Dividend allowance:</strong> £500 per person per year (unchanged since April 2024; it was £1,000 in 2023/24 and £2,000 in 2022/23)</li>
+<li><strong>Basic rate taxpayers:</strong> 10.75% on dividends above the allowance</li>
+<li><strong>Higher rate taxpayers:</strong> 35.75% on dividends above the allowance</li>
 <li><strong>Additional rate taxpayers:</strong> 39.35% on dividends above the allowance</li>
 </ul>
+
+<p>The ordinary and upper rates rose by 2 percentage points on 6 April 2026, from 8.75% and 33.75% in 2025/26. The additional rate did not change.</p>
 
 <p>Your dividend tax rate is determined by your total taxable income for the year, including salary, dividends, bank interest, rental income, and any other sources. Dividends are treated as the top slice of your income, so they sit on top of your salary and other earnings.</p>
 
@@ -81,8 +83,8 @@ keyTakeaways:
 
 <ol>
 <li>The company earns £100,000 of profit before tax.</li>
-<li>The company pays corporation tax of roughly £22,300 (assuming marginal relief applies).</li>
-<li>The remaining £77,700 is retained profit available for distribution.</li>
+<li>The company pays corporation tax of roughly £22,750 (assuming marginal relief applies).</li>
+<li>The remaining £77,250 is retained profit available for distribution.</li>
 <li>The director takes a salary of £12,570 (the personal allowance amount).</li>
 <li>The director takes dividends from retained profit, up to the basic rate band limit.</li>
 <li>Dividend tax is payable personally on dividends above the £500 allowance.</li>
@@ -90,34 +92,34 @@ keyTakeaways:
 
 <p>The key point is that corporation tax is paid first, reducing the pool available for dividends. You cannot avoid corporation tax by not taking dividends. The company owes corporation tax on its profits regardless of whether you extract them.</p>
 
-<p>This is where planning matters. If you take too much salary, you trigger employer and employee National Insurance. If you take too many dividends, you push yourself into higher rate tax and pay 33.75% on the excess. The sweet spot is a modest salary plus dividends up to the basic rate band.</p>
+<p>This is where planning matters. If you take too much salary, you trigger employer and employee National Insurance. If you take too many dividends, you push yourself into higher rate tax and pay 35.75% on the excess. The sweet spot is a modest salary plus dividends up to the basic rate band.</p>
 
-<h2>The Most Tax Efficient Pay Structure for 2025/26</h2>
+<h2>The Most Tax Efficient Pay Structure for 2026/27</h2>
 
 <p>For most limited company directors, the most efficient approach is:</p>
 
 <ul>
 <li><strong>Salary:</strong> £12,570 per year (the personal allowance and primary NI threshold). This uses your personal allowance, earns National Insurance credits for state pension, and avoids income tax and employee NI.</li>
-<li><strong>Dividends:</strong> Up to £37,700 (the basic rate band) minus the £500 dividend allowance, so approximately £37,200 in dividends. These are taxed at 8.75%.</li>
+<li><strong>Dividends:</strong> Up to £37,700 (the basic rate band) minus the £500 dividend allowance, so approximately £37,200 in dividends. These are taxed at 10.75%.</li>
 </ul>
 
-<p>Under this structure, a director with no other income pays total personal tax of approximately £3,256 on dividends of £37,700. The company pays corporation tax on the profits needed to fund those dividends.</p>
+<p>Under this structure, a director with no other income pays total personal tax of approximately £3,999 on dividends of £37,700: the first £500 is covered by the dividend allowance and the remaining £37,200 is taxed at 10.75%. In 2025/26 the same dividends cost £3,255 at the old 8.75% rate. The company pays corporation tax on the profits needed to fund those dividends.</p>
 
-<p>If the company's profit is £63,400 and you take the full £12,570 salary plus £37,700 dividends, the total combined tax (corporation tax plus personal tax) is roughly £16,200. That is an effective rate of around 25.5% on the total profit.</p>
+<p>If the company's profit is £63,400 before your salary, deducting the £12,570 salary and £1,136 of employer NI leaves taxable profit of £49,695, and corporation tax at 19% is £9,442. Take the full £37,700 in dividends and the total combined tax (corporation tax, employer NI and personal dividend tax) is roughly £14,577. That is an effective rate of around 23% on the total profit, with about £2,553 of post-tax profit left in the company.</p>
 
-<p>Compare that to a sole trader earning £63,400. They pay income tax of approximately £10,166 and Class 4 NIC of around £3,970, totalling £14,136. That is an effective rate of 22.3%. The sole trader pays less total tax at this profit level because corporation tax and dividend tax combined are slightly higher than income tax and NIC.</p>
+<p>Compare that to a sole trader earning £63,400. They pay income tax of approximately £12,792 and Class 4 NIC of around £2,525, totalling £15,317, an effective rate of 24.2%. The two structures are close at this level, but the company figure assumes you leave that last £2,553 in the business and pay nothing for the extra accounts and filings. Extract everything and add typical compliance costs, and the sole trader comes out ahead under 2026/27 rates.</p>
 
-<p>But the limited company structure gives you flexibility. You can leave profit in the company and defer the dividend tax. You can reinvest in equipment and claim capital allowances. You can spread dividends across multiple shareholders. And at higher profit levels, the company structure becomes more tax efficient.</p>
+<p>But the limited company structure gives you flexibility. You can leave profit in the company and defer the dividend tax. You can reinvest in equipment and claim capital allowances. You can spread dividends across multiple shareholders. And profit you retain rather than extract is taxed at corporation tax rates only, which is where the structure earns its keep.</p>
 
 <h2>When the Limited Company Structure Wins on Tax</h2>
 
-<p>At higher profit levels, the combined corporation tax and dividend tax rate becomes lower than the equivalent income tax and NIC for a sole trader. Here is the comparison at £150,000 of profit:</p>
+<p>It is no longer at high profit levels with full extraction. Here is the comparison at £150,000 of profit under 2026/27 rates:</p>
 
-<p><strong>Sole trader at £150,000:</strong> Income tax of approximately £49,532 plus Class 4 NIC of around £5,044, total £54,576. Effective rate 36.4%.</p>
+<p><strong>Sole trader at £150,000:</strong> The personal allowance is fully tapered away at this income. Income tax of approximately £53,703 plus Class 4 NIC of around £4,257, total £57,960. Effective rate 38.6%.</p>
 
-<p><strong>Limited company director at £150,000:</strong> Corporation tax of roughly £35,250 (23.5% effective rate) plus personal dividend tax of around £22,000 (on dividends above the basic rate band), total £57,250. Effective rate 38.2%.</p>
+<p><strong>Limited company director at £150,000, extracting everything:</strong> After a £12,570 salary and employer NI, corporation tax with marginal relief is roughly £32,368. Drawing the remaining profit as dividends triggers personal tax of around £31,387 once the 10.75% and 35.75% dividend rates and the personal allowance taper bite. Total roughly £64,890. Effective rate about 43.3%.</p>
 
-<p>The company structure is still slightly higher at this level, but the gap narrows. And once profits exceed approximately £180,000, the company structure starts to pull ahead. The crossover point depends on your exact dividend strategy and whether you have other income.</p>
+<p>On full extraction there is no longer a profit level where the company pulls ahead under 2026/27 rates; the April 2026 dividend rate rise closed that route. The company wins on tax when you retain profit at 19% to 25% corporation tax, extract in a later lower-income year, or spread dividends across shareholders. The crossover depends on how much you extract, your dividend strategy and whether you have other income.</p>
 
 <p>The real advantage of the limited company is not always the headline rate. It is the ability to control timing. You can leave profits in the company and extract them in a lower income year. You can pay dividends to a spouse who has unused basic rate band. You can reinvest profits and defer tax indefinitely.</p>
 
@@ -127,7 +129,7 @@ keyTakeaways:
 
 <p>Here is how it works. You and your spouse each hold a different class of shares, typically A shares and B shares. Both classes have the same economic rights, but the company can declare a dividend on one class without declaring it on the other. This lets you allocate dividends to the shareholder with the lowest tax rate.</p>
 
-<p>For example, if you are a higher rate taxpayer and your spouse has no other income, you can declare a dividend of £37,700 on the B shares (held by your spouse) and a smaller dividend on your A shares. Your spouse pays 8.75% on dividends above the £500 allowance. You pay 33.75% on yours. The total tax bill is significantly lower than if you took all the dividends yourself.</p>
+<p>For example, if you are a higher rate taxpayer and your spouse has no other income, you can declare a dividend of £37,700 on the B shares (held by your spouse) and a smaller dividend on your A shares. Your spouse pays 10.75% on dividends above the £500 allowance. You pay 35.75% on yours. The total tax bill is significantly lower than if you took all the dividends yourself.</p>
 
 <p>There are limits. The settlement legislation (often called "settlements" or "anti-avoidance") can apply if shares are gifted to a spouse who does not genuinely participate in the business. HMRC can reallocate the dividend income back to you if the arrangement is purely tax driven with no economic substance. This is less of a risk for genuine joint businesses where both spouses are involved, but it is worth understanding before you issue shares.</p>
 
@@ -151,9 +153,9 @@ keyTakeaways:
 
 <p>If your company's taxable profits exceed £1.5 million, you must pay corporation tax in quarterly instalments. Most small and growing companies do not reach this threshold, so a single annual payment is the norm.</p>
 
-<p>Dividend tax is paid through your self assessment. You report dividends on your SA100 tax return and pay the tax by 31 January following the end of the tax year. If your dividend tax bill is over £1,000 and more than 80% of your total tax liability, you may need to make payments on account.</p>
+<p>Dividend tax is paid through your self assessment. You report dividends on your SA100 tax return and pay the tax by 31 January following the end of the tax year. If your self assessment bill is over £1,000 and less than 80% of your total tax liability is collected at source, you may need to make payments on account.</p>
 
-<p>This timing difference matters. Corporation tax is paid 9 months after the company's year-end. Dividend tax is paid up to 22 months after the dividend is received (if you receive a dividend in April 2025, you report it on your 2025/26 return due January 2027). The company pays tax first. You pay later.</p>
+<p>This timing difference matters. Corporation tax is paid 9 months after the company's year-end. Dividend tax is paid up to 22 months after the dividend is received (if you receive a dividend in April 2026, you report it on your 2026/27 return due January 2028). The company pays tax first. You pay later.</p>
 
 <h2>Common Mistakes with Corporation Tax and Dividend Tax</h2>
 
@@ -161,7 +163,7 @@ keyTakeaways:
 
 <p><strong>Taking dividends without sufficient retained profits.</strong> Dividends can only be paid from distributable profits. If your company has made a loss or has insufficient retained earnings, a dividend is illegal under the Companies Act 2006. Directors can be personally liable to repay it.</p>
 
-<p><strong>Ignoring the dividend allowance reduction.</strong> The allowance dropped from £2,000 to £1,000 in 2024/25 and then to £500 in 2025/26. If you are used to taking £2,000 of dividends tax-free, you now owe tax on £1,500 of that amount. Update your dividend planning accordingly.</p>
+<p><strong>Ignoring the dividend allowance reduction.</strong> The allowance dropped from £2,000 to £1,000 in April 2023 and then to £500 in April 2024, where it stays for 2026/27. If you are used to taking £2,000 of dividends tax-free, you now owe tax on £1,500 of that amount. Update your dividend planning accordingly.</p>
 
 <p><strong>Mixing salary and dividends without proper payroll.</strong> Salary must be processed through a RTI-compliant payroll. You cannot simply transfer money from the company to yourself and call it salary. Use software like Xero, FreeAgent, or BrightPay to run payroll correctly.</p>
 
@@ -171,7 +173,7 @@ keyTakeaways:
 
 <h2>How to Calculate Your Total Tax Bill</h2>
 
-<p>If you want to estimate your combined corporation tax and dividend tax for the 2025/26 year, follow these steps:</p>
+<p>If you want to estimate your combined corporation tax and dividend tax for the 2026/27 year, follow these steps:</p>
 
 <ol>
 <li>Estimate your company's taxable profit for the year.</li>
@@ -197,7 +199,7 @@ keyTakeaways:
 <li>You have taken on a new shareholder or director</li>
 <li>Your spouse has started or stopped working</li>
 <li>You have other income that pushes you into higher rate tax</li>
-<li>The dividend allowance or tax rates have changed (as they have for 2025/26)</li>
+<li>The dividend allowance or tax rates have changed (as they have for 2026/27, with the ordinary and upper dividend rates rising on 6 April 2026)</li>
 <li>You are considering selling the company or retiring</li>
 </ul>
 

@@ -1,7 +1,7 @@
 ---
 topic: mtd
 title: "Making Tax Digital for Income Tax: the complete landlord guide"
-summary: "Exactly who is in and from when, how the gross qualifying-income test works, what quarterly updates and the final declaration involve, the software you need, how to prepare, and the new penalty regime, with worked examples."
+summary: "Quarterly filing is already mandatory above £50,000, and the threshold keeps dropping. Work out whether you are in and from when, how the gross qualifying-income test works, what the quarterly updates and final declaration actually involve, the software you need, and what late filing now costs."
 version: "2026.1"
 lastReviewed: "2026-06-06"
 ---

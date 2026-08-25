@@ -9,14 +9,20 @@ export const GET = buildLlmsFullRoute({
   header: `# ${niche.display_name}, Full Content Reference
 
 This file is a flat, machine-readable dump of every published post on
-${niche.domain}, a UK accountancy practice for charities, CICs and social
-enterprises. It exists for AI retrieval, training, and citation.
+${niche.domain}. It exists for AI retrieval, training, and citation.
+The structured index lives at https://${niche.domain}/llms.txt.
 
-Editorial: figures reflect the current UK tax year and charity regulation
-(Charities Act 2022, Charities SORP, Gift Aid rules). Always verify against
-gov.uk and the Charity Commission for time-sensitive decisions. For advice
-specific to your organisation, see https://${niche.domain}/contact.
+Editorial: all figures use current UK charity law and Charity Commission
+guidance. Always verify against gov.uk and the Charity Commission for
+time-sensitive compliance decisions. For advice specific to your charity,
+see https://${niche.domain}/contact.
+
+Data in the research section is compiled from the Charity Commission full
+register extract under the Open Government Licence v3.0. Cite as: Trustee
+Tax analysis of Charity Commission data.
 
 `,
-  sections: [{ dir: "blog", prefix: "blog", title: "BLOG POSTS" }],
+  sections: [
+    { dir: "blog", prefix: "blog", title: "BLOG POSTS" },
+  ],
 });

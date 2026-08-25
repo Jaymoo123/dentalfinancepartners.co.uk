@@ -49,9 +49,9 @@ faqs:
 <li>Additional rate: above £125,140, 45%</li>
 </ul>
 
-<p>You also pay Class 2 and Class 4 National Insurance. Class 2 is a flat £3.45 per week if your profits are over £6,845. Class 4 is 9% on profits between £12,570 and £50,270, and 2% above that.</p>
+<p>You also pay Class 4 National Insurance: 6% on profits between £12,570 and £50,270, and 2% above that (the main rate fell from 9% on 6 April 2024). Class 2 is no longer a required weekly payment from 6 April 2024; profits above the small profits threshold earn your state pension credit automatically.</p>
 
-<p>That means your combined marginal rate as a sole trader in the basic rate band is 29% (20% Income Tax + 9% Class 4 NI). In the higher rate band, it is 42% (40% + 2%).</p>
+<p>That means your combined marginal rate as a sole trader in the basic rate band is 26% (20% Income Tax + 6% Class 4 NI). In the higher rate band, it is 42% (40% + 2%).</p>
 
 <h3>Reporting and filing</h3>
 
@@ -104,7 +104,7 @@ faqs:
 
 <h2>Tax Comparison: Limited Company vs Sole Trader</h2>
 
-<p>Let us compare the total tax burden on the same level of profit under both structures. We will use 2025/26 rates throughout.</p>
+<p>Let us compare the total tax burden on the same level of profit under both structures. We will use 2026/27 rates throughout, including the dividend rates that rose on 6 April 2026 (Finance Act 2026): 10.75% basic, 35.75% higher.</p>
 
 <h3>Example: £45,000 profit</h3>
 
@@ -113,22 +113,22 @@ faqs:
 <p><strong>As a sole trader:</strong></p>
 <ul>
 <li>Income Tax: £45,000 - £12,570 = £32,430 taxable. £32,430 × 20% = £6,486</li>
-<li>Class 4 NI: (£50,270 - £12,570) × 9% = £3,393. But only on £32,430 of that band: £32,430 × 9% = £2,919</li>
-<li>Class 2 NI: £3.45 × 52 weeks = £179</li>
-<li>Total tax and NI: £6,486 + £2,919 + £179 = <strong>£9,584</strong></li>
-<li>Effective rate: 21.3%</li>
+<li>Class 4 NI: £32,430 × 6% = £1,946</li>
+<li>Class 2 NI: nil (no weekly charge from 6 April 2024)</li>
+<li>Total tax and NI: £6,486 + £1,946 = <strong>£8,432</strong></li>
+<li>Effective rate: 18.7%</li>
 </ul>
 
 <p><strong>As a limited company:</strong></p>
 <ul>
 <li>Corporation Tax at 19%: £45,000 × 19% = £8,550</li>
 <li>Profit after tax: £36,450</li>
-<li>Take as dividends (after £500 allowance): £35,950 taxable at 8.75% = £3,146</li>
-<li>Total tax: £8,550 + £3,146 = <strong>£11,696</strong></li>
-<li>Effective rate: 26.0%</li>
+<li>Take as dividends (after £500 allowance): £35,950 taxable at 10.75% = £3,865</li>
+<li>Total tax: £8,550 + £3,865 = <strong>£12,415</strong></li>
+<li>Effective rate: 27.6%</li>
 </ul>
 
-<p>At £45,000 profit, the sole trader pays £2,112 less in total tax. The limited company is not the winner here because the Corporation Tax rate (19%) plus dividend tax (8.75%) exceeds the sole trader's combined rate (29% at the margin) once you account for the personal allowance and NI thresholds.</p>
+<p>At £45,000 profit, the sole trader pays £3,983 less in total tax. The limited company is not the winner here because the Corporation Tax rate (19%) plus dividend tax (10.75%) exceeds the sole trader's combined rate (26% at the margin) once you account for the personal allowance and NI thresholds.</p>
 
 <h3>Example: £80,000 profit</h3>
 
@@ -137,22 +137,22 @@ faqs:
 <p><strong>As a sole trader:</strong></p>
 <ul>
 <li>Income Tax: £80,000 - £12,570 = £67,430 taxable. First £37,700 at 20% = £7,540. Remaining £29,730 at 40% = £11,892. Total: £19,432</li>
-<li>Class 4 NI: (£50,270 - £12,570) × 9% = £3,393. (£80,000 - £50,270) × 2% = £595. Total: £3,988</li>
-<li>Class 2 NI: £179</li>
-<li>Total tax and NI: £19,432 + £3,988 + £179 = <strong>£23,599</strong></li>
-<li>Effective rate: 29.5%</li>
+<li>Class 4 NI: (£50,270 - £12,570) × 6% = £2,262. (£80,000 - £50,270) × 2% = £595. Total: £2,857</li>
+<li>Class 2 NI: nil (no weekly charge from 6 April 2024)</li>
+<li>Total tax and NI: £19,432 + £2,857 = <strong>£22,289</strong></li>
+<li>Effective rate: 27.9%</li>
 </ul>
 
 <p><strong>As a limited company:</strong></p>
 <ul>
 <li>Corporation Tax at 19% on first £50,000 = £9,500. Marginal relief on next £30,000: effective rate approximately 21.5% on that slice. Let us calculate precisely: total CT = £50,000 × 19% + £30,000 × 25% = £9,500 + £7,500 = £17,000. But marginal relief reduces this. The exact CT using the marginal relief formula: (£80,000 × 25%) - (1/200 × (£250,000 - £80,000) × £80,000/£80,000) = £20,000 - £850 = £19,150. Effective rate: 23.9%.</li>
 <li>Profit after tax: £80,000 - £19,150 = £60,850</li>
-<li>Take as dividends: £60,350 taxable at 8.75% (basic rate band) and 33.75% (higher rate). Basic rate band available after personal allowance: £50,270 - £12,570 = £37,700. First £37,700 dividends at 8.75% = £3,299. Remaining £22,650 at 33.75% = £7,644. Total dividend tax: £10,943</li>
-<li>Total tax: £19,150 + £10,943 = <strong>£30,093</strong></li>
-<li>Effective rate: 37.6%</li>
+<li>Take as dividends: £60,350 taxable at 10.75% (basic rate band) and 35.75% (higher rate). Basic rate band available after personal allowance: £50,270 - £12,570 = £37,700. First £37,700 dividends at 10.75% = £4,053. Remaining £22,650 at 35.75% = £8,097. Total dividend tax: £12,150</li>
+<li>Total tax: £19,150 + £12,150 = <strong>£31,300</strong></li>
+<li>Effective rate: 39.1%</li>
 </ul>
 
-<p>At £80,000 profit, the sole trader pays £6,494 less in total tax. The limited company structure becomes less efficient as profits rise into the higher rate tax band, because dividend tax at 33.75% plus Corporation Tax at an effective 23.9% gives a combined rate of over 50% on the marginal pound above the basic rate threshold.</p>
+<p>At £80,000 profit, the sole trader pays £9,011 less in total tax. The limited company structure becomes less efficient as profits rise into the higher rate tax band, because dividend tax at 35.75% plus Corporation Tax at an effective 23.9% gives a combined rate of over 50% on the marginal pound above the basic rate threshold.</p>
 
 <p>Wait, this contradicts what many contractors and small business owners believe. Let us explain.</p>
 
@@ -168,12 +168,12 @@ faqs:
 <li>Company profit after salary and NI: £80,000 - £13,705.50 = £66,294.50</li>
 <li>Corporation Tax: £66,294.50 × 19% = £12,596 (assuming marginal relief still applies, but let us keep it simple at 19% for this level)</li>
 <li>Profit after CT: £53,698.50</li>
-<li>Tom's personal tax: salary £12,570 (no tax, no NI). Dividends: £53,698.50. £500 allowance. Taxable: £53,198.50. Basic rate band remaining: £50,270 - £12,570 = £37,700. First £37,700 at 8.75% = £3,299. Remaining £15,498.50 at 33.75% = £5,231. Total dividend tax: £8,530</li>
-<li>Total tax: £12,596 (CT) + £1,135.50 (Employer's NI) + £8,530 (dividend tax) = <strong>£22,262</strong></li>
-<li>Effective rate: 27.8%</li>
+<li>Tom's personal tax: salary £12,570 (no tax, no NI). Dividends: £53,698.50. £500 allowance. Taxable: £53,198.50. Basic rate band remaining: £50,270 - £12,570 = £37,700. First £37,700 at 10.75% = £4,053. Remaining £15,498.50 at 35.75% = £5,541. Total dividend tax: £9,594</li>
+<li>Total tax: £12,596 (CT) + £1,135.50 (Employer's NI) + £9,594 (dividend tax) = <strong>£23,326</strong></li>
+<li>Effective rate: 29.2%</li>
 </ul>
 
-<p>Now the limited company saves £1,337 compared to the sole trader. The salary strategy makes a significant difference.</p>
+<p>The salary strategy narrows the gap considerably, but at 2026/27 dividend rates the company still costs around £1,000 more than the sole trader on a full-extraction basis. The two structures are now close to neutral on extracted profit, which is why the deciding factor is what follows.</p>
 
 <p>The real benefit of a limited company appears when you retain profits in the business rather than extracting them all. If Tom only needs £40,000 to live on and leaves £26,294.50 in the company, he defers the dividend tax on that amount entirely. The retained profits are only taxed at 19% (or 25% depending on the level) until he takes them out. This is the core of the tax planning opportunity.</p>
 

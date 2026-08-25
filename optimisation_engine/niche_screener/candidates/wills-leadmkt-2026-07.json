@@ -1,0 +1,132 @@
+{
+  "candidate_id": "wills-leadmkt-2026-07",
+  "vertical": "wills",
+  "generator": "lead-market",
+  "evidence": [
+    {
+      "type": "serp",
+      "url": "https://www.leadcrowd.com/lead-types/financial-services/will-writing/",
+      "excerpt": "Leads From £25 SEO Leads From £50. For will writing leads, the cost per lead starts at £50. Discounts are available through our Rewards scheme,",
+      "metric": {
+        "price_gbp": 25
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.willswritingleads.co.uk/",
+      "excerpt": "High quality will writing leads for sale ! We are specialists in providing GDPR compliant, exclusive, will writing leads and profiled data.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.mightymarketinggroup.co.uk/will-writing-leads/",
+      "excerpt": "We pride ourselves on delivering high-quality, verified leads. Our Exclusive Will Writing Leads ensure that you receive current, robust data. Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.geordieleads.co.uk/wills-probate-leads.html",
+      "excerpt": "Buy wills and probate leads for solicitors across the UK. Call 07894 282 889 to discuss volumes, pricing, and coverage areas. Contact 07894 282 889",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://weboost.co.uk/wills-leads-north-west",
+      "excerpt": "Own exclusive wills enquiries in North West from £1195/month. One partner only, no per-lead fees.",
+      "metric": {
+        "price_gbp": 1195
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://leadpronto.co.uk/pay-per-lead-generation/",
+      "excerpt": "As a lead agency, we have a proven track record of generating ✓ 100,000s of high quality leads for our clients on a pay per lead basis, providing a great ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.linkdigital.co.uk/services/pay-per-lead/",
+      "excerpt": "We provide high quality, qualified leads on a pay per lead basis, from 25 to 100's of leads per week. Fixed price leads with no advertising costs or agency fees ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.pushgroup.co.uk/blog/top-9-pay-per-lead-agencies-in-the-uk",
+      "excerpt": "15 Oct 2024 — Compare the top pay per lead agencies in the UK. Exclusive leads, no wasted budget, real results. Updated for 2026.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.helloclicks.co.uk/lead-generation-company/",
+      "excerpt": "There are no long term commitments when you lead generation partner with us to generate leads. Our simple pay for performance service means that we have as much ... Read more",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://pearllemonleads.com/pay-per-lead/",
+      "excerpt": "Want leads that truly convert? Our pay per lead service delivers verified prospects aligned with your business goals and drives measurable results.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.fatrank.com/pay-per-lead-generation/",
+      "excerpt": "known as cost per. In the PPL model, businesses pay a set fee for each lead generated, regardless of whether the lead converts into a sale or desired action.",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.quora.com/How-can-I-find-businesses-that-will-pay-me-per-lead-I-generate",
+      "excerpt": "How can I find businesses that will pay me per lead I generate?",
+      "metric": {
+        "price_gbp": null
+      }
+    },
+    {
+      "type": "serp",
+      "url": "https://www.youtube.com/watch?v=-_uHG2CwBjA",
+      "excerpt": "Hit $1,000/day Profit Selling Leads with a Pay Per Lead Agency https://www.skool.com/... All My FREE Resources: https://www.skool.com/.",
+      "metric": {
+        "price_gbp": null
+      }
+    }
+  ],
+  "seed_queries": [
+    "buy will writing leads online",
+    "buy will writing leads uk",
+    "buy will writing leads uk | will writing web leads | will ...",
+    "how to find businesses that will pay me per lead i generate",
+    "pay per lead generation",
+    "pay per lead services",
+    "premier pay per lead service to generate quality leads",
+    "the lead generation company other agencies wants to ...",
+    "the pay per lead model quietly printing $75k/month for ...",
+    "top 9 pay per lead agencies in the uk (2026)",
+    "wills",
+    "wills and probate leads",
+    "wills enquiries in north west | weboost"
+  ],
+  "buyer_hypothesis": {
+    "who": "UK wills providers already paying per lead",
+    "proof": "13 domains selling per-lead"
+  },
+  "regulatory_gate": "unknown",
+  "accounting_adjacent": false
+}

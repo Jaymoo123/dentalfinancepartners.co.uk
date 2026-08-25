@@ -7,7 +7,7 @@ generator: deepseek-chat/legacy-bulk
 author: "Accounts for Lawyers Editorial Team"
 category: "Locum Solicitor Tax"
 metaTitle: "Locum Solicitor Expenses: Allowable UK Claims 2025/26"
-metaDescription: "UK locum solicitors: which expenses are tax-deductible? SRA fees, PII excess, training costs, travel, and home office claims explained with worked examples for 2025/26."
+metaDescription: "UK locum solicitors: which expenses are tax-deductible? SRA fees, PII excess, training, travel and home office claims, with worked examples for 2025/26."
 altText: "UK locum solicitor reviewing expense receipts and tax records at a desk with laptop and calculator"
 image: ""
 h1: "What Expenses Can a Locum Solicitor Claim in the UK for 2025/26?"
@@ -108,7 +108,7 @@ faqs:
 <p>As a locum solicitor, you may need to buy your own laptop, printer, phone, or legal software. The tax treatment depends on the cost:</p>
 <ul>
 <li><strong>Items costing less than £2,000:</strong> Claimed as an allowable expense in full in the year of purchase (using the Annual Investment Allowance if you are a sole trader).</li>
-<li><strong>Items costing £2,000 or more:</strong> Capital allowances claimed over several years (typically 18% per year on a reducing balance basis for most IT equipment).</li>
+<li><strong>Items costing £2,000 or more:</strong> Capital allowances claimed over several years (14% per year on a reducing balance basis for most IT equipment in the main pool from April 2026, down from 18%).</li>
 </ul>
 
 <p>Software subscriptions (e.g., case management systems, cloud storage) are revenue expenses and fully deductible in the year paid.</p>

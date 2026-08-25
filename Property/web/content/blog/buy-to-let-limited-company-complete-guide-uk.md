@@ -6,7 +6,7 @@ date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Buy-to-Let Limited Company UK: Tax, SDLT, S162 Relief, ATED"
-metaDescription: "Complete BTL limited company guide. Corporation tax 19-25%, full mortgage interest deduction, SDLT 5% on transfer, Section 162 relief, ATED, dividend strategy."
+metaDescription: "Complete BTL limited company guide. Corporation tax 19-25%, full mortgage interest deduction, SDLT 5% on transfer, Section 162 relief, ATED"
 altText: "UK landlord reviewing buy-to-let limited company paperwork at desk with property documents"
 image: ""
 h1: "Buy-to-Let Limited Company: Complete Guide UK 2026"
@@ -132,7 +132,7 @@ faqs:
 
 <h3>Salary</h3>
 
-<p>A small director's salary up to the National Insurance secondary threshold (around £9,100 in 2025-26) sits inside your personal allowance with no income tax and no employee NIC, and the company deducts it as an expense. Salary above that threshold attracts employer NIC at 15% (the rate rose on 6 April 2025) plus employee NIC and income tax. For most property company directors, a salary at or just below the secondary threshold is the sweet spot.</p>
+<p>A small director's salary up to the National Insurance secondary threshold (£5,000 from 6 April 2025) sits inside your personal allowance with no income tax and no employee NIC, and the company deducts it as an expense. Salary above that threshold attracts employer NIC at 15% (the rate rose on 6 April 2025) plus employee NIC and income tax. For most property company directors, a salary at or just below the secondary threshold is the sweet spot.</p>
 
 <h3>Dividends</h3>
 

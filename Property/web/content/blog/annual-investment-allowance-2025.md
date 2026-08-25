@@ -37,7 +37,7 @@ faqs:
   answer: No. Cars are excluded from the annual investment allowance under the general exclusions in the Capital Allowances Act 2001, and they are also outside the new 40% first-year allowance. Expenditure on a car is relieved through the writing-down allowance pools instead, at a rate that depends on the vehicle's CO2 emissions, with zero-emission cars eligible for their own first-year allowance.
 - question: Is the writing-down allowance changing in 2026?
   answer: Yes, but the AIA cap itself is not. From 1 April 2026 (corporation tax) and 6 April 2026 (income tax), the main-pool writing-down allowance falls from 18% to 14%, under section 28 of the Finance Act 2026 amending section 56(1) of the Capital Allowances Act 2001. The special rate pool stays at 6%. A new 40% first-year allowance for new and unused main-rate plant also applies from 1 January 2026. None of this changes the £1 million AIA limit for 2025/26; for the full 2026 transition timeline see our companion 2024/25 guide.
-dateModified: '2026-06-02'
+dateModified: '2026-08-03'
 sourcesVerifiedAt: '2026-06-02'
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
@@ -79,7 +79,7 @@ imageCredit:
 </tbody>
 </table>
 
-<p>The one change on the horizon is the main-pool writing-down rate, which drops from 18% to 14% from April 2026. That only affects expenditure above the £1 million cap that has rolled into the main pool, and it does not touch the AIA limit itself. We deal with the timing of that change below and link to the full transition timeline.</p>
+<p>The one change since this snapshot year is the main-pool writing-down rate, which fell from 18% to 14% in April 2026 and is now in force under section 28 of the Finance Act 2026. That only affects expenditure above the £1 million cap that has rolled into the main pool, and it does not touch the AIA limit itself. We deal with the timing of that change below and link to the full transition timeline.</p>
 
 <h2>What qualifies for the annual investment allowance?</h2>
 
@@ -137,7 +137,7 @@ imageCredit:
 <li><strong>AIA</strong>: 100% relief up to £1 million, available on new and second-hand qualifying plant, for incorporated and unincorporated businesses alike. The default for most landlord-scale spend.</li>
 <li><strong>The 40% first-year allowance</strong> (from 1 January 2026): new and unused main-rate plant only, not restricted by incorporation. A useful route for unincorporated landlords and for leasing, and for spend above the AIA cap. Because it requires new assets, it does not help with second-hand plant, where <a href="/blog/property-accountant-services/can-you-claim-aia-on-second-hand-assets">AIA on second-hand assets</a> is the route instead.</li>
 <li><strong>Full expensing</strong>: 100% relief on new and unused main-rate plant, but it is <strong>company-only</strong> (section 45S), so it is not open to individual landlords. We cover it in our <a href="/blog/property-types-and-specialist-tax/full-expensing-capital-allowances">full expensing guide</a>; if you are weighing a company structure, our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a> sets out the wider picture.</li>
-<li><strong>Writing-down allowances</strong>: the fallback for anything not relieved up front, at 18% (14% from April 2026) for the main pool and 6% for the special rate pool.</li>
+<li><strong>Writing-down allowances</strong>: the fallback for anything not relieved up front, at 14% for the main pool (18% before April 2026) and 6% for the special rate pool.</li>
 </ul>
 
 <p>One planning note for unincorporated landlords. The value of an AIA deduction tracks your marginal rate on property income, so the same £1 of relief is worth more the higher your rate. From 2027/28 the separate property income rates of 22%, 42% and 47% take effect for England, Wales and Northern Ireland under sections 6 and 7 of the Finance Act 2026 (Scotland sets its own rates), which means a deduction claimed at the higher property rates is worth proportionately more then. Our <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax guide</a> covers those rates in full.</p>
@@ -154,7 +154,7 @@ imageCredit:
 <li>The annual investment allowance is £1,000,000 for 2025/26, unchanged from 2024/25, and it is the permanent cap (section 51A(5) CAA 2001; section 8 F(No.2)A 2023), not a temporary figure.</li>
 <li>The cap is per accounting period, time-apportioned for short periods, and shared across groups and commonly controlled companies.</li>
 <li>Section 35 blocks AIA on plant inside a residential dwelling-house, so most standard buy-to-lets cannot claim; the base is commercial property, HMO and block common parts, and former FHL pools.</li>
-<li>From 2026 the main-pool writing-down rate falls from 18% to 14% and a new 40% first-year allowance starts, but neither changes the 2025/26 £1 million AIA limit.</li>
+<li>The main-pool writing-down rate is now 14% (down from 18% in April 2026) and a 40% first-year allowance applies from 1 January 2026, but neither changes the 2025/26 £1 million AIA limit.</li>
 </ul>
 
 <h2>Sources</h2>

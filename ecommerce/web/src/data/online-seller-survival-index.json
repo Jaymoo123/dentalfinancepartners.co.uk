@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "generated_at": "2026-07-23",
+    "source_url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+    "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current",
+    "release_date": "2025-11-20",
+    "publisher": "Office for National Statistics",
+    "licence": "Open Government Licence v3.0",
+    "broad_group": "Retail",
+    "sources": [
+      {
+        "name": "Business Demography, UK -- Table 4.2 (Survival of newly born enterprises, broad industry group)",
+        "publisher": "Office for National Statistics",
+        "url": "https://www.ons.gov.uk/file?uri=/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current/businessdemographyexceltables2024.xlsx",
+        "release_page": "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current",
+        "licence": "Open Government Licence v3.0",
+        "retrieved": "2026-07-23",
+        "release_date": "2025-11-20",
+        "attribution": "Data sourced from the Office for National Statistics (ONS) under the Open Government Licence v3.0. Free to cite with attribution to Ecommerce Finance."
+      }
+    ],
+    "notes": "Survival counts and percentages are for the 'Retail' broad industry group (ONS SIC 2007 broad grouping, aligned to SIC division 47 and neighbouring retail trade codes) as published in ONS Business Demography Table 4.2. This is NOT specific to online retail (SIC 47910): ONS Business Demography does not publish survival at 5-digit SIC granularity, so 'Retail' is the finest official survival cut available and mixes physical stores, market stalls and internet/mail-order retailers. Births are new enterprises (not necessarily companies -- ONS enterprise definition includes sole traders and partnerships registered for VAT or PAYE), counted in the year they were born, then tracked for up to 5 years. Control-rounded to base 5 by ONS; later survival years for the most recent cohorts are not yet available (fewer years have elapsed) and are omitted rather than shown as zero.",
+    "attribution": "Online Seller Survival Index compiled from ONS Business Demography data (Open Government Licence v3.0). Free to cite with attribution to Ecommerce Finance."
+  },
+  "headline": {
+    "latest_5yr_cohort_year": 2019,
+    "latest_5yr_retail_pct": 34.5,
+    "latest_5yr_all_industries_pct": 38.4,
+    "latest_1yr_cohort_year": 2023,
+    "latest_1yr_retail_pct": 92.2,
+    "latest_1yr_all_industries_pct": 93.4
+  },
+  "cohorts": [
+    {
+      "birth_year": 2019,
+      "retail": {
+        "births": 31935,
+        "y1_count": 30100,
+        "y1_pct": 94.3,
+        "y2_count": 23815,
+        "y2_pct": 74.6,
+        "y3_count": 16555,
+        "y3_pct": 51.8,
+        "y4_count": 12955,
+        "y4_pct": 40.6,
+        "y5_count": 11025,
+        "y5_pct": 34.5
+      },
+      "all_industries": {
+        "births": 363825,
+        "y1_count": 344135,
+        "y1_pct": 94.6,
+        "y2_count": 271925,
+        "y2_pct": 74.7,
+        "y3_count": 203470,
+        "y3_pct": 55.9,
+        "y4_count": 163725,
+        "y4_pct": 45.0,
+        "y5_count": 139845,
+        "y5_pct": 38.4
+      }
+    },
+    {
+      "birth_year": 2020,
+      "retail": {
+        "births": 34630,
+        "y1_count": 29925,
+        "y1_pct": 86.4,
+        "y2_count": 24990,
+        "y2_pct": 72.2,
+        "y3_count": 16750,
+        "y3_pct": 48.4,
+        "y4_count": 13505,
+        "y4_pct": 39.0,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 333015,
+        "y1_count": 309470,
+        "y1_pct": 92.9,
+        "y2_count": 237400,
+        "y2_pct": 71.3,
+        "y3_count": 176410,
+        "y3_pct": 53.0,
+        "y4_count": 146415,
+        "y4_pct": 44.0,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2021,
+      "retail": {
+        "births": 38865,
+        "y1_count": 36060,
+        "y1_pct": 92.8,
+        "y2_count": 25785,
+        "y2_pct": 66.3,
+        "y3_count": 18945,
+        "y3_pct": 48.7,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 363995,
+        "y1_count": 339920,
+        "y1_pct": 93.4,
+        "y2_count": 256265,
+        "y2_pct": 70.4,
+        "y3_count": 194685,
+        "y3_pct": 53.5,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2022,
+      "retail": {
+        "births": 29420,
+        "y1_count": 26355,
+        "y1_pct": 89.6,
+        "y2_count": 18855,
+        "y2_pct": 64.1,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 336925,
+        "y1_count": 311110,
+        "y1_pct": 92.3,
+        "y2_count": 232125,
+        "y2_pct": 68.9,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    },
+    {
+      "birth_year": 2023,
+      "retail": {
+        "births": 26730,
+        "y1_count": 24655,
+        "y1_pct": 92.2,
+        "y2_count": null,
+        "y2_pct": null,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      },
+      "all_industries": {
+        "births": 316025,
+        "y1_count": 295140,
+        "y1_pct": 93.4,
+        "y2_count": null,
+        "y2_pct": null,
+        "y3_count": null,
+        "y3_pct": null,
+        "y4_count": null,
+        "y4_pct": null,
+        "y5_count": null,
+        "y5_pct": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "batch_id": "M2-C-B4",
+  "agent_id": "stage2-sub-agent-M2-C-B4",
+  "completed_at": "2026-05-27T17:30:00Z",
+  "commit_shas": [
+    "8308ec0",
+    "de838bd"
+  ],
+  "slugs_done": [
+    "putting-a-rental-property-into-a-trust",
+    "residence-nil-rate-band-frozen"
+  ],
+  "flags_raised": [],
+  "drift_catches": 0,
+  "urls_verified_live": 0,
+  "urls_dead": 0,
+  "anti_templating_status": "PASS (2 distinct opening framings: (1) what-a-trust-IS orientation with CGT-vs-IHT trade-off backbone + GROB-as-elephant + explicit suited-vs-not-suited; (2) three-layer-freeze-announcement-timeline 2021→2022→2024→2030 + fiscal-drag mechanism + double-freeze callout + 21-year-frozen-NRB callout. 2 distinct worked-example architectures: (1) twin Holloway-family vignettes — suited £4.2m 8-unit portfolio retired widow honest-trade-off math vs not-suited £680k single-BTL mid-career married with explicit 'trust is wrong tool' framing; (2) Surrey-couple £2.45m→£2.59m at second-death RNRB-extinguishment with 2% vs 4% property-growth sensitivity + pre-freeze counterfactual £570k delta + £2m-taper marginal-IHT-rate illustration table. 2 distinct word-count targets both at 2,400-2,800 orientation-pillar depth, but structurally distinct framings — one trust-orientation, one news-fiscal-drag.)",
+  "notes": [
+    "Both picks anchored to MW2 Stage 1b locks: pick 1 (putting-a-rental-property-into-a-trust) to §15.1 + §15.3 + §22.2 + §22.5 + §22.11 + §22.13 + §22.14 + §22.16 + §22.X.4 + §11.A + §6.B + §24 (pre-decision orientation pillar above the existing operational decision-stack mechanics pillar); pick 2 (residence-nil-rate-band-frozen) to §15.1 + §22.X.1 + §22.1 + §22.5 + §15.3 + §22.2 + §22.11 + §22.13 + §15.4 + §22.17 + §22.X + §15.6 (news + fiscal-drag + planning-response pillar above the existing £2m-taper mechanics deep).",
+    "No new HP F-flag drift catches. M2-C-B4 picks thread through the locked §15 + §22 + §22.X + §22.X.1 + §22.X.4 + §24 + §11.A + §6.B cluster which was verified at Wave 6 close 2026-05-23, Wave 8 LTR-architecture lock 2026-05-25, and MW2 Stage 1b sign-off 2026-05-27.",
+    "Pick 2 (residence-nil-rate-band-frozen) preserves the Stage 1 FA 2025 conditional-framing discipline: the Autumn Budget 2024 second extension to April 2030 MUST be verified against legislation.gov.uk at RUN time before commencement-tense claims; conditional framing required if FA 2025 enactment cannot be confirmed. HP §22.X.1 mini-lock confirms the architecture (the freeze + fiscal-drag mechanism is locked); the brief threads to that lock with the RUN-session re-verification gate flagged in the work-log and the §16.35 verification block.",
+    "Cross-bucket sequencing: no constraints required for this batch. Both M2-C-B4 picks (C19 trust orientation pillar + C20 RNRB freeze pillar) cross-link to each other plus to all MW2 C-batch-1/2/3 IHT-cluster sibling pillars (declaration-of-trust, comparison-of-discretionary-trusts, IHT brief summary, GROB entry-tier, family-home decision pillar, lifetime-vs-death pillar, BPR planning pillar) which are all on main. Forward-links to existing site deeps (operational decision-stack pillar, £2m taper mechanics, 20% CLT entry-charge, settlor-interested + GROB double-trap, TRS compliance, FIC-vs-discretionary, bare-vs-nominee-vs-formal, declaration-of-trust mechanics, excluded-property-trust LTR pivot, trust-owned-SPV extraction, bare-trust-for-minors, RNRB taper portfolios, DoV mechanics, GROB mechanics, 7-year-clock strategy, taper relief deep, IHT broader-decision pillar 2026-onwards, BPR rental-property explainer, BPR April 2026 cap, IHT rental-property comprehensive) all exist on main.",
+    "§16.36 statutory-citation cross-check passed for both picks: Trustee Act 2000 s.1 + LPA 1925 s.53(1)(b) + TOLATA 1996; IHTA 1984 s.3/s.3A/s.7(2)/s.18/s.49(1A)/ss.58-65/ss.8D-8M (full RNRB suite)/s.49A/s.142/Sch 1A/ss.103-114; TCGA 1992 s.17/s.62/s.62(6)/s.165/s.260; FA 1986 s.102; FA 2003 Sch 4 para 8/Sch 4ZA/Sch 4A; FA 2021 s.86; FA 2023 (Autumn Statement Nov 2022 extension); FA 2025 (Autumn Budget Oct 2024 extension to April 2030 — RUN-session re-verification gate flagged); ITA 2007 ss.479-481; MLR 2017 SI 2017/692 reg 45; ECTEA 2022; ECCTA 2023; CGT residential rates 24%/18% under FA 2024 unification. All cite-checks consistent with locked HP §15 + §22 + §22.X + §22.X.1 + §22.X.4 + §24 + §11.A + §6.B architecture.",
+    "Anti-templating discipline: both personas use anonymised Holloway-family naming convention but each worked example is structurally distinct. Pick 1 uses TWIN vignettes (suited + not-suited) to balance framing — the not-suited vignette is deliberately blunt about 'trust is the wrong tool' to counter the typical pro-trust marketing framing of competitor pages. Pick 2 uses single Surrey-couple worked example WITH property-growth sensitivity (2% vs 4% pa) + pre-freeze counterfactual + £2m-taper marginal-IHT-rate illustration table — sensitivity layer is the anti-templating signature that distinguishes from competitor single-point-estimate framings. Both openings deliberately avoid statute-first headline-figure-first opening pattern: pick 1 opens with what-a-trust-IS orientation; pick 2 opens with three-layer-freeze-announcement-timeline. All FAQs structurally distinct from MW2 sibling and existing-site FAQs."
+  ]
+}

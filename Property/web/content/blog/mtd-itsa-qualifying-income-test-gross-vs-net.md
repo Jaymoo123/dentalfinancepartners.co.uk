@@ -57,7 +57,7 @@ editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Differentiated from
 
 <h2>The qualifying income test in one sentence</h2>
 
-<p>Qualifying income for MTD ITSA equals gross self-employment turnover plus gross UK and overseas property receipts, aggregated across all your trades and lets, measured for the reference year, before any expenses or reliefs come off. The statutory basis is Schedule A1 to the <a href="https://www.legislation.gov.uk/ukpga/2017/10/schedule/14">Finance (No. 2) Act 2017</a>, as amended by subsequent Finance Acts to install the £50,000 / £30,000 / £20,000 phased thresholds.</p>
+<p>Qualifying income for MTD ITSA equals gross self-employment turnover plus gross UK and overseas property receipts, aggregated across all your trades and lets, measured for the reference year, before any expenses or reliefs come off. The statutory basis is Schedule A1 to the <a href="https://www.legislation.gov.uk/ukpga/2017/32/schedule/14">Finance (No. 2) Act 2017</a>, as amended by subsequent Finance Acts to install the £50,000 / £30,000 / £20,000 phased thresholds.</p>
 
 <p>The legislation uses the words "relevant amount of qualifying income". HMRC's operational guidance translates that as the figure you would put in the gross turnover and gross rents boxes of your self assessment return, summed without netting off costs. The test does not look at your tax bill, your net profit, or your finance-cost tax reducer. It looks at money in.</p>
 
@@ -139,7 +139,7 @@ editorialNote: "Wave 3 net-new (Session B, MTD ITSA bucket). Differentiated from
 <li>Sole-trader turnover from any unincorporated business, regardless of sector.</li>
 </ul>
 
-<p>HMRC's own eligibility checker, the <a href="https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax">"Check if you're eligible" gov.uk page</a>, walks through these inclusions with worked examples; if a category is genuinely ambiguous (some service-charge structures sit on the border between rent and trust receipts), use the checker first and then take advice.</p>
+<p>HMRC's own eligibility checker, the <a href="https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax">"Check if you're eligible" gov.uk page</a>, walks through these inclusions with worked examples; if a category is genuinely ambiguous (some service-charge structures sit on the border between rent and trust receipts), use the checker first and then take advice.</p>
 
 <h2>What does NOT count</h2>
 

@@ -1,0 +1,27 @@
+{
+  "vertical": "employment law for employers",
+  "provider_terms": [
+    "employment solicitor",
+    "hr consultant",
+    "employment lawyer"
+  ],
+  "pain_seeds": [
+    "employee grievance procedure",
+    "how to dismiss an employee legally",
+    "settlement agreement cost",
+    "employment tribunal defence",
+    "redundancy process steps",
+    "day one unfair dismissal rights",
+    "disciplinary procedure"
+  ],
+  "audience_terms": [
+    "employers",
+    "small business owners"
+  ],
+  "regulatory_gate": "none",
+  "accounting_adjacent": false,
+  "seed_evidence": [
+    "lead-market candidate employment-law-leadmkt (11 sellers); ERA rollout 2025-27 churn per strategy scan"
+  ],
+  "name": "employment-law-employers"
+}

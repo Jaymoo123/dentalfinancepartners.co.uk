@@ -12,6 +12,24 @@ brand_locked: true
 > **Working brand, not final.** "Ecommerce Finance" is a build-time placeholder; owner picks
 > the FINAL brand + registers the domain at deploy (gate G1). Deploy HELD.
 
+## 2026-08-25 — Port-branch merge: nothing pending for this site
+
+`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
+rollout, decision §8.10). Passenger enumeration for this site: **17 commits** were on
+the branch and not in `origin/main`.
+
+**All 17 are already on production, so the merge ships nothing new here.** This site's
+live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
+(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
+READY, read 2026-08-25; this is what the production alias actually points at, which a
+`/v6/deployments` listing alone would not prove), and
+`git log 435cc12e..design/property-redesign-port --oneline -- 'ecommerce/'` returns 0.
+Main was BEHIND production for this site, not ahead of it.
+
+Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'ecommerce/'`.
+Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
+sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
 ## Identity
 
 - site_key `ecommerce` | display **"Ecommerce Finance"** | intended domain `www.ecommercefinance.co.uk`

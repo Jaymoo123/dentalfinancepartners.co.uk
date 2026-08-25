@@ -276,7 +276,7 @@ def build_mileage_log():
     base, h1, h2, intro, small = styles()
     story = [
         Paragraph("Business mileage log", h1),
-        Paragraph("Use HMRC's Approved Mileage Allowance Payment rates: 45p per mile for the first 10,000 business miles in the tax year, 25p thereafter for cars and vans. Motorcycles: 24p. Bicycles: 20p.", intro),
+        Paragraph("Use HMRC's Approved Mileage Allowance Payment rates: 55p per mile for the first 10,000 business miles in the tax year (from 6 April 2026; 45p applied up to 2025/26), 25p thereafter for cars and vans. Motorcycles: 24p. Bicycles: 20p.", intro),
         Spacer(1, 10),
     ]
     rows = [["Date", "From", "To", "Purpose", "Miles", "Rate", "Claim"]]
