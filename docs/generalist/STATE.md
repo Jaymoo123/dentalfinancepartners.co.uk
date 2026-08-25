@@ -172,6 +172,40 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - Next: remaining rewrite batches from the worklist (298 eligible), research packs +
   language pass per cluster, then net-new waves. Nothing deployed; all owner-gated.
 
+## Track 2 / R.5 progress 2026-08-25/26 (overnight session: ALL SIX NICHE WAVES COMPLETE)
+
+- **All 6 niche-family waves now written, dual-QA'd, fixed and committed** (nothing
+  deployed): creative_performers (prior session, `c4afb3d5`), trades_transport
+  (`4e6a69f7`, 8 pages; E1 uber/delivery EXTEND DEFERRED, seeds in armed windows to
+  09-10/10-06), specialist_professions (9 surfaces incl. architects reframe,
+  commit in log), personal_care_fitness (`f61c96c9`, 5 surfaces), care_education
+  (`07a7615f`, 6 surfaces), retail_product (`42cfd534`, 17 surfaces). ~45 new/
+  overhauled pages this session. Every wave: parallel Opus writers from frozen
+  packs, dual Opus QA (adversarial factual vs house_positions + editorial vs
+  language spec), fix agents, mechanical §/em-dash/link sweep, tests 285/285,
+  build green per wave.
+- **house_positions corrections shipped from write-time verification:** §19.1 QCR
+  year mapping was wrong by one year (CLOSED, corrected); §19.4 private-tuition
+  VAT exemption authored (primary-verified); §21.8 stock/WIP + §21.9 food VAT
+  authored (primary-verified, unblocked retail N4/N6).
+- **Owner-gated leftovers:** retail N7 exporters/CBAM (needs §21.7 authored + D3
+  volume check); trades E1 extend (windows expire 09-10 / 10-06); SED days
+  calculator T1; the 4 held-back cross-site pages (forex, dentistry-compliance,
+  2x CGT-property). DataForSEO spend today under the owner-lifted gate: ~$1.84
+  ($0.56 care D1, $1.28 personal_care D1 incl. a $1.10 crash loss).
+- **Estate-wide flags recorded:** late-payment interest 8% vs §3.A 7.75% needs a
+  corpus-wide base-rate decision; "Worked example:" H2 prefix on 14 legacy pages
+  and the empty trailing FAQ H2 on 6 legacy pages are estate patterns to sweep
+  separately; employer-NIC bulleted-ladder shape now on ~9 pages, future waves
+  should state it as prose; `generalist/.git` is a dead nested-repo husk
+  (files tracked by monorepo; deletion needs owner word).
+- Image backfill for the 90 empty-image posts (45 new + 45 legacy incl. the
+  wave-4 dozen) run via Pexels with curated per-slug queries, local jpgs,
+  creative-wave frontmatter convention.
+- Next after deploy: register monitored_pages rows per pack revert paths;
+  remaining ~270 lower-ROI rewrite worklist; delta back-patches (TOMS dated
+  block review each fiscal event, QCR CPI refresh each April).
+
 ## Track 2 / R.5 progress 2026-08-25 (late session, PAUSED here)
 
 - Rewrite batches 1-3 SHIPPED to main: 30 legacy pages fully overhauled, dual-QA'd,
