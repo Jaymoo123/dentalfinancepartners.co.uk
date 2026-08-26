@@ -113,6 +113,52 @@ The 2026-07-17 read ("~11/117 indexed", 68.8 impressions/day) is superseded by t
 named in this doc were never closed out in writing and are treated as lapsed; the 2026-08-26
 diagnosis replaces them.
 
+## Backlog raised during batch 1 (2026-08-26), not actioned mid-batch
+
+1. **The calculator renderer drops `workedExamples[]` entirely.** `Medical/web/src/app/calculators/[slug]/page.tsx`
+   renders `explainer.heading` plus two fixed headings, renders FAQ questions as `<dt>` rather than
+   headings, and never renders `workedExamples[]` even though the shared tool type carries the field.
+   Consequence: a worked example authored into any calculator config is INVISIBLE to readers and to
+   crawlers, and the language spec's heading-structure rules are unreachable on every calculator page
+   by construction. Found while writing `/calculators/nhs-pension-scheme-pays`, 2026-08-26. This is a
+   template fix affecting the whole calculator fleet, so it was deliberately not attempted mid-batch
+   while ten writers were live. Verify the same gap on the sibling sites before fixing, and fix the class.
+2. **Three `/resources/` pages are outside the whole Track 2 scope so far**: `/resources/nhs-pension`,
+   `/resources/locum`, `/resources/incorporation-private`. `/resources/nhs-pension` earns 49 Google
+   impressions at position 13.5, better than most counted pages. The live indexable corpus is 108
+   pages, not the 105 the dossier counted or the 79 a markdown glob returns.
+3. **Three `monitored_pages` rows sit at status `flagged`**, so they are caught by neither the armed
+   test nor the expired test. One is `nhs-pension-scheme-pays-doctors-deadlines`, which holds the
+   second-highest-confidence topic in the market map and the batch's biggest forgone prize. Resolve
+   the flag state, then take it as batch 2 item 1.
+4. **Dossier vs pack divergence on per-topic keyword counts is unreconciled** and in places flips
+   priority order (`/blog/nhs-pension-planning` peer-winnable 70 against 4,590; `/calculators/nhs-pension-scheme-pays`
+   91,230 against 2,880). The dossier's seed-node clustering both fragments term families and drops
+   1,336 below-threshold keywords. The packs rebuilt the sets locally with the regex printed. Neither
+   was harmonised, deliberately. Decide which is canonical before batch 2 sequencing.
+5. **Bing impressions are reported two different ways** (`GetPageStats` page-level against
+   `GetPageQueryStats` named-query level, 261 against 129 on the same page). Both are true and they are
+   never comparable to each other. The REWRITE_PROGRAM §9.2 equity grade test is written on
+   "impressions" without naming the endpoint. Name it before the next grading run or grades drift.
+7. **`medical-guides/[slug]/page.tsx` `renderBody()` injects a literal `<strong>` string into a React text
+   node** for any body line matching `^[A-Z0-9/]+ (section|trader|company|employees?):`, so the markup renders
+   as visible text rather than as bold. The live annual-allowance guide was hitting this on its "1995 section:"
+   lines. The batch-1 rewrite sidestepped it by restructuring those lines, so that one guide is clean, but the
+   bug remains for the other five guides and it is a rendering defect visible to readers. Fix the class.
+8. **`GenericTool` has no table field and the calculator route renders only one editable H2.** Consequence:
+   year-tagged allowance-history vocabulary cannot be placed on a calculator page without becoming a keyword
+   dump, and the language spec's heading rules are structurally unreachable there. A `table` field on the shared
+   type would close both. Deliberately not attempted mid-batch.
+9. **Live pipeline artefact found and fixed** on `/research/annual-allowance-pension-tax-index`: the page was
+   rendering a writer instruction as body copy ("Label clearly as a single-year illustration on a different
+   counting basis..."). An estate-wide grep for the class (`label clearly`, `verify at build`, `writer note`,
+   `per the brief`, `(HP<n>)`, `insert figure`) across every site's `web/content` and `web/src/app` on
+   2026-08-26 returned **zero** further instances, so this was an isolated escape, not a systemic one. The
+   only greps that matched elsewhere were `placeholder` attributes on admin login inputs, which are not copy.
+6. **bma.org.uk still publishes 2025/26 tier bands**, superseded by the 1 April 2026 uplift, so
+   `/calculators/nhs-superannuation-tiered-contribution` is worth a delta check against the current
+   NHS Employers table.
+
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
 `design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard

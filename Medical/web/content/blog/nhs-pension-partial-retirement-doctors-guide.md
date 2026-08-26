@@ -1,5 +1,5 @@
 ---
-title: "Partial (Flexible) Retirement for Doctors: The NHS Pension Guide"
+title: "Partial Retirement, Early Retirement and Retire and Return: The NHS Pension Guide for Doctors"
 slug: "nhs-pension-partial-retirement-doctors-guide"
 canonical: "https://www.medicalaccounts.co.uk/blog/nhs-pension-partial-retirement-doctors-guide"
 date: "2026-06-03"
@@ -12,149 +12,191 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/making-notes-and-calculations-based-on-charts-20251480/"
 category: "NHS Pension Planning"
-metaTitle: "NHS Pension Partial Retirement: A Doctor's Guide"
-metaDescription: "How NHS partial retirement lets doctors draw 20 to 100 percent of their pension while still working, the 10 percent pay-cut rule and 2015 re-accrual."
+metaTitle: "NHS Pension Partial Retirement and Early Retirement: Doctor's Guide"
+metaDescription: "Partial retirement, early retirement and retire and return compared for doctors: the 20 to 100 percent drawdown, the 10 percent pay rule and the 24 hour break."
 altText: "Senior doctor discussing a phased retirement plan with a colleague"
-h1: "NHS Pension Partial Retirement for Doctors: Drawing 20 to 100 Percent While Still Working"
+h1: "NHS Pension Partial Retirement and Early Retirement for Doctors"
 keyTakeaways:
-- "Partial retirement lets you draw between 20 and 100 percent of your accrued NHS pension while staying in the same post and continuing to accrue in the 2015 scheme."
-- "To qualify you must reduce your pensionable pay or commitment by at least 10 percent and hold that reduction for at least 12 months, or you lose eligibility for the benefits you took."
-- "From 1 October 2023 the regulations opened partial retirement to 1995 Section members, who previously could not use it (it was already available to 2008 Section and 2015 Scheme members)."
-- "You continue accruing in the 2015 scheme at 1/54th of pensionable earnings each year, so continued pension growth still counts toward your annual allowance after you start drawing benefits."
-- "Once you have taken all of your benefits you can no longer make a Scheme Pays election, so any election must come before a full 100 percent drawdown."
-summary: "Since 1 October 2023 a doctor can draw between 20 and 100 percent of their accrued NHS pension while staying in the same job and continuing to build new pension in the 2015 scheme, provided they reduce their pensionable pay or commitment by at least 10 percent. This guide explains the rules, the annual allowance and McCloud interactions, and how it compares with early retirement."
+- "Partial retirement lets you draw 20 to 100 percent of your accrued NHS pension, on up to two occasions, while staying in the same post and continuing to accrue in the 2015 Scheme."
+- "You must reduce pensionable pay by at least 10 percent and hold it there for 12 months, measured against your total pensionable pay in the 12 months before the partial retirement date."
+- "If your pensionable pay climbs back above 90 percent of the pre-partial-retirement figure inside that year, the pension in payment can be abated, which is to say stopped."
+- "Early retirement is the different route: benefits taken before your normal pension age carry a permanent actuarial reduction set by NHSBSA and Government Actuary's Department factors, and no third party can honestly quote you a percentage."
+- "Retire and return needs a break of at least 24 hours, and the 16 hour rule that used to cap the first month after returning was permanently removed on 1 April 2023."
+summary: "Since 1 October 2023 a doctor in any section of the NHS Pension Scheme can draw 20 to 100 percent of their accrued pension while staying in post, provided pensionable pay falls by at least 10 percent for 12 months. This guide compares that route with early retirement before normal pension age, which carries a permanent actuarial reduction, and with retire and return, which needs a 24 hour break. It covers the 1995, 2008 and 2015 rules, the annual allowance and Scheme Pays sequencing, the McCloud trigger, and the GP partner profit share problem."
 schema: ""
 faqs:
-  - question: "What is partial retirement on the NHS pension?"
-    answer: "Partial retirement, also called flexible retirement or drawdown, lets you draw some or all of your accrued NHS pension while you stay employed and keep building new pension in the 2015 scheme. It sits between full retirement, where you stop, and retire-and-return, where you leave and come back. The point is that you do not have to give up work to access your pension."
-  - question: "How much of my NHS pension can I take with partial retirement?"
-    answer: "You can draw a minimum of 20 percent and a maximum of 100 percent of your accrued benefits. So you choose anywhere within that range depending on how much income you want to release and how much pension you want to leave growing. Drawing 100 percent of your accrued benefits while continuing to work and accrue in the 2015 scheme is permitted."
-  - question: "How many times can I take partial retirement?"
-    answer: "You can take partial retirement in up to two drawdown events. So you might draw part of your pension at one point and the rest later, within that limit of two events. Planning the timing of the two events is part of getting the most from the facility."
-  - question: "Do I have to reduce my hours to take partial retirement?"
-    answer: "You have to reduce your pensionable pay or commitment, which usually means reducing hours or sessions, but the rule is about the level of pensionable pay rather than hours as such. You must agree a genuinely reduced working arrangement with your employer. Without a real reduction you do not qualify for partial retirement."
-  - question: "How big does the pay or commitment reduction have to be?"
-    answer: "The reduction has to be at least 10 percent of your pensionable pay or commitment. It must be a genuine, agreed reduction, not a temporary dip, and it has to be in place from the point you take partial retirement. A token or short-lived reduction does not satisfy the condition."
-  - question: "How long must I keep my pay reduced?"
-    answer: "You must keep the reduced arrangement in place for at least 12 months. If you reverse the reduction inside those 12 months, you lose eligibility for the benefits you took, which can cause real problems. So the reduction needs to be one you are content to live with for a full year at least."
-  - question: "Can I still build up pension after partial retirement?"
-    answer: "Yes. After partial retirement you continue as an active member accruing in the 2015 scheme at 1/54th of your pensionable earnings each year. So you are drawing your older benefits and building new ones at the same time. That continued accrual is one of the main attractions of the facility, but it also keeps you exposed to the annual allowance."
-  - question: "When did partial retirement become available to 1995 Section members?"
-    answer: "Partial retirement was already available to 2008 Section and 2015 Scheme members, and from 1 October 2023 the regulations changed so that 1995 Section members can take it too. That change was the key recent development, because it opened flexible retirement to the large group of longer-serving doctors whose legacy service is in the 1995 section."
-  - question: "What is the minimum age for partial retirement?"
-    answer: "The minimum pension age is 55, and partial retirement requires your employer's agreement. So from age 55, with your employer on board and a genuine reduction in pensionable pay or commitment of at least 10 percent, you can draw your accrued benefits while continuing to work."
-  - question: "How does partial retirement affect my annual allowance?"
-    answer: "Because you keep accruing in the 2015 scheme, you keep generating pension input, so you can still face an annual allowance charge after partial retirement, and the taper still applies to high earners. Reducing your pensionable pay may lower your threshold and adjusted income, which can ease taper exposure, but that depends on your circumstances. The annual allowance does not switch off just because you have started drawing benefits."
-  - question: "Will partial retirement trigger my McCloud choice?"
-    answer: "It can. Taking benefits is the point at which the Deferred Choice Underpin offers you the legacy or 2015 choice for the remedy period, so a partial retirement event can be the trigger for your McCloud choice. That makes it sensible to have your remediable service figures to hand when you plan a partial retirement, so the two decisions are made together."
-  - question: "What is the difference between partial retirement and early retirement?"
-    answer: "Partial retirement keeps you working and accruing while you draw some or all of your accrued benefits, with no automatic penalty for the drawdown itself. Early retirement before your normal pension age is a fuller exit that applies a permanent actuarial reduction to your benefits. They are different routes for different goals, and which suits you is an individual question."
-  - question: "What is ERRBO and can it reduce the early-retirement penalty?"
-    answer: "ERRBO, the Early Retirement Reduction Buy Out, is a facility in the 2015 scheme that lets a member pay extra contributions to buy out part of the reduction that would otherwise apply if they retire before their normal pension age. So it can soften the early-retirement penalty for 2015 scheme benefits, at a cost. It is worth modelling before committing, because the contributions are real and ongoing."
-  - question: "How does partial retirement work for a GP partner whose pay is profit share?"
-    answer: "For a GP partner the pensionable figure flows from profit share rather than a salary, so the 10 percent reduction has to be evidenced in the partnership arrangements, for example by genuinely reducing sessions or commitment and reflecting that in the profit-sharing agreement. The mechanics need to be set up correctly in the partnership deed so the reduction is real and documented. It is the area where GP partners most often need specialist help."
+  - question: "How is the NHS pension reduction for early retirement calculated?"
+    answer: "It is calculated from how far your retirement date sits before your normal pension age, using factors published by NHSBSA and set by the Government Actuary's Department, with incomplete months rounded up to the next whole month. The reduction is applied to the pension before any commutation of pension into lump sum. Those factors are revised from time to time, which is why no adviser, calculator or article can honestly quote you a fixed percentage. Take the figure from the current NHSBSA early retirement factsheet for your section and your exact age."
+  - question: "How does NHS pension 1995 early retirement differ from the 2015 scheme?"
+    answer: "The difference is the reference point. NHS pension 1995 early retirement is measured against a normal pension age of 60, so a doctor retiring at 60 takes those benefits unreduced. The 2015 Scheme's normal pension age is your State Pension age, or 65 if that is later, so the same retirement date can leave the 2015 slice heavily reduced while the 1995 slice is not reduced at all. That is why a single headline percentage across your whole record is meaningless."
+  - question: "What happens to NHS sick pay after retire and return?"
+    answer: "Sick pay depends on the new contract you return on, because retire and return ends one employment and starts another. The Department of Health and Social Care's stated expectation, in the November 2025 NHS Employers guidance, is that employers re-employ staff on the same terms and conditions, giving the same treatment on matters such as annual leave and sick pay, and do not insist on a longer break than 24 hours. It is an expectation rather than an entitlement, so confirm the sick pay terms in writing before you resign."
+  - question: "Can you take partial retirement and still use Scheme Pays?"
+    answer: "Yes, provided you have not taken all of your benefits. Scheme Pays is the arrangement where the scheme settles your annual allowance charge and permanently reduces your pension in return, at an interest cost. The notice deadline is normally 31 July in the year after the tax year ends, under section 237BA of the Finance Act 2004, but it is brought forward and must be given before you become entitled to all your benefits. A 100 percent partial retirement drawdown is that moment, so elect first."
+  - question: "How do early retirement and state pension entitlement fit together?"
+    answer: "They are separate systems on separate clocks. Leaving NHS work early does not move your State Pension age, which is set by National Insurance legislation and which you check on gov.uk. What early retirement can change is your National Insurance record, because you stop accruing qualifying years. A record that began after April 2016 needs 35 qualifying years for the full new State Pension, and doctors who were contracted out before April 2016 may need more, so check your forecast before you set a leaving date."
+  - question: "What is ERRBO and does it remove the NHS pension early retirement reduction?"
+    answer: "ERRBO, the Early Retirement Reduction Buy Out, is a 2015 Scheme facility that lets you pay extra contributions to buy out some or all of the reduction that would apply if you retire before your normal pension age. It softens or removes the reduction on 2015 Scheme benefits only, never on 1995 or 2008 legacy service. The contributions are ongoing and real, so a doctor who buys out three years and then works to normal pension age anyway has paid for protection they never used."
+  - question: "Do you have to reduce your hours to take partial retirement?"
+    answer: "You have to reduce pensionable pay by at least 10 percent, which is not quite the same thing as reducing hours. Fewer sessions or programmed activities is the usual route, but the test is the pay figure, measured against total pensionable pay in the 12 months before your partial retirement date. Where a reduction in commitment is not wanted on either side, the November 2025 NHS Employers guidance points employers at restructuring remuneration so more of it is non-pensionable, within the scheme regulations."
+  - question: "What is the minimum age for partial retirement, and is it changing?"
+    answer: "The minimum pension age is 55 for the 2008 Section and the 2015 Scheme, and for most 1995 Section members, and you also need your employer's agreement and an active membership. It is changing: the normal minimum pension age across UK pensions rises from 55 to 57 on 6 April 2028, so a doctor planning to draw at 55 or 56 in the late 2020s should check the date carefully. Some longer-serving members hold a protected pension age, which NHSBSA confirms from your record."
 ---
 
-<p>For many senior doctors, the choice used to feel binary: keep working at full tilt, or stop and retire. NHS partial retirement changes that. Since 1 October 2023 a doctor can draw between 20 percent and 100 percent of their accrued NHS pension while staying in the same job and continuing to build new pension in the 2015 scheme, provided they reduce their pensionable pay or commitment by at least 10 percent for the first 12 months. It is a genuine way to wind down without fully stopping, and to access pension income while still earning.</p>
+<p>NHS pension partial retirement lets a doctor draw 20 to 100 percent of their accrued NHS pension while staying in the same job. The condition is that pensionable pay falls by at least 10 percent for 12 months. Early retirement is the other route: benefits taken before your normal pension age carry a permanent actuarial reduction. Partial retirement only opened to 1995 Section members on 1 October 2023.</p>
 
-<p>This guide explains how partial (flexible) retirement actually works for doctors: the headline rules, how it interacts with the annual allowance and the McCloud remedy, and where it sits next to the alternative of taking benefits early with a permanent reduction. It is a planning page for consultants and GP partners thinking about easing off, not a substitute for advice on your own numbers. It links out to the annual allowance and <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays</a> guides for the detail of those topics rather than repeating it.</p>
+<h2>What is partial retirement, and how is it different from retire and return?</h2>
 
-<h2>What partial (flexible) retirement is</h2>
+<p>Partial retirement, also called flexible retirement or drawdown, lets you take part or all of your accrued NHS benefits while staying employed. You keep building new pension in the 2015 Scheme at the same time. NHS Employers puts it plainly in its November 2025 guidance: "There is no need for a new contract of employment or a break in service to access partial retirement."</p>
 
-<p>Partial retirement lets you draw some or all of your accrued NHS benefits while staying employed and continuing to accrue in the 2015 scheme. It is also called flexible retirement or drawdown. It is worth distinguishing it from two neighbours. Full retirement is where you stop work and take your pension. Retire-and-return is where you formally leave, take your pension, and then come back to NHS work, usually after a break. Partial retirement is neither of those: you stay in your post, you reduce your commitment, and you draw your pension alongside continued work. There is no break in employment and no need to leave.</p>
+<p>NHS pension retire and return is the second route, and it is a different transaction. You leave NHS employment, claim all your benefits, take a break of at least 24 hours, then come back on a new contract. Under NHS pensions retire and return arrangements the old employment ends, so annual leave, sick pay and continuity of service follow the new contract.</p>
 
-<p>That distinction is not just terminology. Under retire-and-return, you physically leave NHS employment, which can mean a formal break, a possible re-entry on different terms, and the administrative friction of leaving and rejoining. Under partial retirement you simply vary your existing role. For a consultant this might mean dropping from twelve programmed activities to ten or fewer; for a GP partner it might mean fewer clinical sessions and a corresponding adjustment to their commitment. The pension you have already built can start to pay out, while the role you keep continues to build new pension. For many senior doctors that combination, income from accrued benefits plus continued, lighter work, is the whole appeal, because it lets them taper their workload rather than face the cliff edge of stopping entirely.</p>
+<p>The retire and return NHS pension route suits the case where neither you nor your employer wants your commitment to fall. Partial retirement always requires a pay reduction. Retire and return does not.</p>
 
-<h2>The headline rules</h2>
+<p>Early retirement is the third route, and the one most doctors actually search for. It means taking benefits before your normal pension age, in full, at a permanently reduced rate. The mechanics are set out further down, because that is where the confusion lives.</p>
 
-<h3>How much you can draw</h3>
+<h2>How much of your pension can you draw, and how many times?</h2>
 
-<p>You can draw a <strong>minimum of 20 percent and a maximum of 100 percent</strong> of your accrued benefits. You choose where within that range to sit, depending on how much income you want to release now and how much pension you want to leave in payment terms. Taking the full 100 percent of accrued benefits while continuing to work and build new 2015 pension is allowed.</p>
+<p>You can draw between 20 percent and 100 percent of your accrued benefits, on up to two occasions. The two-event limit is a planning constraint, not a footnote. Spend both events early and nothing is left for a second step down at 62 or 64. Spend neither and you are carrying pension you could have been drawing.</p>
 
-<h3>How many times</h3>
-
-<p>You can take partial retirement in <strong>up to two drawdown events</strong>. So you might draw part of your accrued benefits now and the remainder at a later point, within that ceiling of two events. The two-event limit makes the timing of each drawdown a planning decision in its own right.</p>
-
-<h3>The 10 percent reduction condition</h3>
-
-<p>To qualify you must agree a new working arrangement that reduces your <strong>pensionable pay or commitment by at least 10 percent</strong>, and you must keep it at the reduced level for <strong>at least 12 months</strong>. If you do not, you lose eligibility for the benefits you took. The reduction has to be genuine and agreed with your employer, not a token or temporary dip. This is the condition that most often trips doctors up, so it is worth being deliberate about it.</p>
-
-<p>What counts is the reduction in pensionable pay or commitment, measured against your arrangement immediately before partial retirement. For a salaried doctor or consultant this is usually expressed through sessions or programmed activities and the pay that attaches to them. The risk to watch is inadvertently undoing the reduction: picking up extra sessions, additional waiting-list work or acting-up responsibilities that quietly push pensionable pay back above the threshold inside the 12 months. A reduction that is real on day one but eroded by extra work three months later can put the eligibility for the benefits you have already drawn at risk. The safe approach is to agree the reduced arrangement clearly, in writing, and to manage any additional work within the first year with the 10 percent condition firmly in mind.</p>
-
-<h3>Minimum age</h3>
-
-<p>Partial retirement is available from the <strong>minimum pension age of 55</strong>, with your employer's agreement. Employer agreement is part of the framework, not an optional extra, because partial retirement involves a change to your working arrangement that the employer has to sign up to.</p>
-
-<h3>The 1 October 2023 change</h3>
-
-<p>The key recent development is about who can use it. Partial retirement was already available to 2008 Section and 2015 Scheme members. From <strong>1 October 2023</strong> the regulations changed so that <strong>1995 Section members can take it too</strong>. That matters because the 1995 section holds the legacy service of many of the longest-serving doctors, who previously could not flex their retirement this way. If your legacy service is in the 1995 section, this change is what opened partial retirement to you.</p>
-
-<h2>Re-accrual: you keep building pension in the 2015 scheme</h2>
-
-<p>After partial retirement you continue as an active member accruing in the 2015 scheme, at <strong>1/54th of each year's pensionable earnings</strong>. This is the elegant part: you are drawing your older, accrued benefits at the same time as building new ones. Your continued work is still pensionable and still adds to your eventual pension. For the detail of how the 2015 scheme accrues and how that accrual is measured for tax, see the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a> rather than re-reading it here.</p>
-
-<p>It is worth dwelling on what continued accrual is worth, because it is sometimes overlooked by doctors who assume that once you start drawing a pension you stop building one. You do not. Every year you keep working on the reduced arrangement adds another slice of 1/54th career average benefit, revalued each year while you remain active. Over several years of phased working that can be a material addition to your eventual pension, on top of the benefits already in payment. The flip side, which the next section covers, is that this continued accrual is still pension growth for tax purposes, so it still counts toward your annual allowance. Partial retirement does not put you outside the annual allowance regime, it simply changes the shape of your working life while you remain within it.</p>
-
-<h2>How partial retirement interacts with the annual allowance</h2>
-
-<p>Because you keep accruing in the 2015 scheme, you keep generating pension input, and that means a doctor can still face an annual allowance charge after partial retirement. The taper still applies to high earners. Starting to draw benefits does not switch off the annual allowance on your continued accrual, so this needs watching.</p>
-
-<h3>The Scheme Pays timing point</h3>
-
-<p>There is a sequencing trap here. Once you have taken <strong>all</strong> of your benefits, you can no longer make a Scheme Pays election. So a doctor who is likely to incur an annual allowance charge needs to mind the order of events: a Scheme Pays election has to be made before all benefits are taken. Because partial retirement can involve drawing up to 100 percent of accrued benefits, this point is live. For the mechanics and deadlines, see our guide to <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">NHS pension Scheme Pays for doctors</a>.</p>
-
-<h3>Reducing hours can change taper exposure</h3>
-
-<p>A reduction of 10 percent or more in pensionable pay may, depending on your figures, lower your threshold income and adjusted income, which can reduce or remove taper exposure. That is not a guarantee, because the taper depends on total income from all sources, and a doctor with significant private income may see little change. Treat it as something to model rather than assume. For the taper itself, use the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered annual allowance calculator guide</a>.</p>
-
-<p>For context without re-teaching the detail, the taper reduces the standard £60,000 annual allowance where threshold income exceeds £200,000 and adjusted income exceeds £260,000, tapering by £1 for every £2 of adjusted income above £260,000, down to a £10,000 floor. Because reducing your clinical commitment reduces your pensionable pay, and may reduce your total income, a partial retirement that cuts hours can move a doctor below one or both of those income lines, which can restore some or all of the standard allowance. Whether it does depends on everything else in your income, including private practice earnings, investment income and any spouse-related planning, so it is genuinely a modelling exercise. The interaction runs both ways: a smaller allowance restored by lower income can offset some of the continued accrual that partial retirement keeps generating. Looking at the two together, rather than in isolation, is what produces a sensible answer.</p>
-
-<h2>How partial retirement interacts with McCloud</h2>
-
-<p>Taking benefits is the point at which the Deferred Choice Underpin offers you the legacy or 2015 choice for the remedy period. So a partial retirement event can be the trigger for your <a href="/blog/mccloud-remedy-nhs-pension-doctors-explained">McCloud</a> choice, because you are taking benefits. The practical consequence is that it is sensible to have your remediable service figures ready when you plan a partial retirement, so the McCloud choice for the remedy period and the partial retirement decision are made together, on a full picture, rather than one catching you out after the other.</p>
-
-<h2>Partial retirement versus early retirement</h2>
-
-<p>Partial retirement is one way to access your pension before you fully stop. The other is early retirement with an actuarial reduction. They are different things and are easily confused.</p>
-
-<h3>Early retirement before normal pension age</h3>
-
-<p>The minimum pension age is <strong>55</strong>. Your normal pension age depends on your section: <strong>60 for the 1995 section, 65 for the 2008 section, and your State Pension age for the 2015 section</strong>. Taking benefits before your normal pension age applies a <strong>permanent actuarial reduction</strong> to them, set by NHSBSA and Government Actuary's Department factors. Those factors are revised from time to time, so there is no fixed percentage to quote, and you should look at the current NHSBSA factor tables for your age and section. The principle is the constant: retire before your normal pension age and the benefits are permanently reduced to reflect being paid for longer.</p>
-
-<p>Because each section has a different normal pension age, the same retirement date can carry very different reductions across your benefits. A doctor with 1995 service (normal pension age 60), 2008 or rolled-back legacy service, and 2015 service (normal pension age tied to State Pension age) who retires at, say, 60 might take their 1995 benefits with no reduction while their 2015 benefits are reduced for being taken early. This is one of the reasons early retirement decisions are rarely a single number and benefit from being modelled section by section. The McCloud remedy adds a further layer here, because the basis on which your remedy period service is valued, legacy or 2015, interacts with which normal pension age applies to it. None of this is a reason to avoid early retirement, but it is a reason to look at the full picture rather than a headline percentage.</p>
-
-<h3>ERRBO: the Early Retirement Reduction Buy Out</h3>
-
-<p>In the 2015 scheme, ERRBO (the Early Retirement Reduction Buy Out) lets a member pay extra contributions to buy out part of the reduction, so they can retire earlier without taking the full cut on their 2015 benefits. It is an option, not a default, and the contributions are real and ongoing, so it is worth modelling the cost against the benefit before committing. It applies to 2015 scheme benefits rather than legacy service.</p>
-
-<p>The way ERRBO works is that you agree to buy out a chosen number of years of early retirement reduction, up to your normal pension age, and pay an additional contribution for it over your remaining working life. If you then retire early, the reduction that would otherwise apply to your 2015 benefits is removed or softened to the extent you bought out. The judgement is whether the extra contributions, paid over years, are worth the reduction avoided, and that depends on how confident you are about your retirement date. A doctor who commits to ERRBO and then works to their normal pension age anyway has paid for protection they did not use, while a doctor who genuinely intends to go early may find it good value. Because it interacts with partial retirement, the taper and your overall pension planning, it is one of those decisions that benefits from being modelled rather than taken on instinct.</p>
-
-<h3>Which route suits whom</h3>
-
-<p>Partial retirement keeps you working and accruing while drawing some or all of your accrued benefits, with no automatic penalty for the drawdown itself. Early retirement is a fuller exit, taken before your normal pension age, with a permanent reduction. A doctor who wants to keep one foot in clinical work and smooth the transition tends toward partial retirement; a doctor who wants to stop or nearly stop before their normal pension age is looking at the actuarial-reduction route, possibly softened by ERRBO. Which is right is genuinely individual and depends on age, section, earnings and what you want your working life to look like.</p>
-
-<h2>A worked illustration</h2>
-
-<p>Consider a GP partner aged 58 who wants to ease off without leaving the practice. He agrees with his partners to reduce his sessions by two, a cut of more than 10 percent in his commitment, and he documents that reduction properly in the partnership arrangements. He then draws 50 percent of his accrued benefits in a single drawdown event, leaving the rest growing, and he continues to accrue in the 2015 scheme on his reduced commitment.</p>
-
-<p>Two things he keeps in view. First, he must hold the reduced commitment for at least 12 months, or he risks losing eligibility for the benefits he took, so reversing the change quickly is not an option. Second, because he is still accruing, he checks the annual allowance impact of his continued accrual, and because he is taking benefits, he confirms whether his McCloud choice for the remedy period is triggered at the same time. The figures here are illustrative, but the discipline is the point: reduce genuinely, hold it for the year, and check the annual allowance and McCloud angles before you draw.</p>
-
-<p>The detail that makes the partner case harder than the salaried case is that his pensionable figure is not a salary line he can simply dial down. It flows from his share of practice profit, certified after the year end, so the 10 percent reduction has to be engineered through the partnership: fewer sessions, a revised commitment, and a profit-sharing arrangement that genuinely reflects the lower input. If the deed and the day-to-day reality do not match, for instance if he formally reduces his commitment but in practice carries the same workload and profit share, the reduction may not stand up. Getting the partnership mechanics right, so the reduction is real, documented and held for the full 12 months, is the single most important practical step for a GP partner taking partial retirement, and it is where specialist input usually earns its keep.</p>
-
-<h2>Practical steps and pitfalls for doctors</h2>
+<p>To be eligible for a partial retirement, the November 2025 NHS Employers guidance states that a member must:</p>
 
 <ul>
-<li><strong>Agree the reduced arrangement in writing</strong> with your employer or, for a partner, your fellow partners, so the reduction is documented and real.</li>
-<li><strong>Confirm the 10 percent reduction is genuine</strong> and that you can hold it for at least 12 months before you commit.</li>
-<li><strong>Check the partnership deed if you are a GP partner</strong>, because your pay is profit share, not salary, and the reduction has to be reflected in the profit-sharing mechanics correctly. See our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> for how profit share works.</li>
-<li><strong>Model the annual allowance impact</strong> of your continued 2015 accrual, and the taper if you are a high earner.</li>
-<li><strong>Check whether a McCloud choice is triggered</strong> by the drawdown, and have your remediable service figures ready.</li>
-<li><strong>Mind the Scheme Pays timing</strong>: if you might have a charge, make any election before you have taken all your benefits.</li>
-<li><strong>Avoid the headline pitfall</strong>: reversing the reduction inside 12 months and losing eligibility for the benefits you took.</li>
+<li>have reached minimum pension age, which is 55 for most members;</li>
+<li>be an active member of the scheme;</li>
+<li>have a change to their terms of employment which reduces pensionable pay by at least 10 percent, for at least 12 months from the partial retirement date;</li>
+<li>not already have claimed partial retirement on two occasions.</li>
 </ul>
 
-<h2>How we help doctors plan partial retirement</h2>
+<p>The paperwork is an AW8 retirement form plus a partial retirement supplementary form. If you hold a clinical excellence or clinical impact award, the same guidance tells employers to raise your plans with the awards secretariat early. Partial retirement is a job change, and the award travels with the job.</p>
 
-<p>Partial retirement looks simple on paper and gets complicated in the detail, especially for GP partners whose pensionable figure flows from profit share rather than a salary. We help doctors structure the 10 percent reduction so it is genuine and properly documented (in the partnership deed for partners, in the employment arrangement for salaried doctors and consultants), model the annual allowance impact of continued 2015 accrual, and coordinate the drawdown with any <a href="/blog/mccloud-remedy-nhs-pension-doctors-explained">McCloud</a> choice and any <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays</a> election so the sequencing is right.</p>
+<h2>How do you achieve the 10 percent pensionable pay reduction?</h2>
 
-<p>We also help doctors weigh partial retirement against early retirement and ERRBO, and against keeping private income flowing while NHS work winds down, which is covered in our guide to <a href="/blog/private-practice-tax-nhs-and-private-income">private practice tax and NHS and private income</a>. We work with consultants, GP partners and salaried GPs across the whole <a href="/nhs-pension">NHS pension</a> picture, including the contribution and relief mechanics in our <a href="/blog/gp-pension-contributions-tax-relief">GP pension contributions guide</a>. You can browse our wider <a href="/blog/nhs-pension-planning">NHS pension planning</a> guides, see how we support <a href="/for-gps">general practice</a>, or <a href="/contact">get in touch</a> to talk through your own timeline.</p>
+<p>The 10 percent is measured against your total pensionable pay over the 12 months before your chosen partial retirement date. It is not measured against your current annual rate. That matters if your pay has been lumpy, because a year containing extra sessions sets a higher baseline to cut from.</p>
+
+<p>Two features of the rule are widely missed. Annual pay awards and ordinary incremental progression do not count as an increase during the 12 months, so a national uplift will not break your eligibility. But there is a hard ceiling as well as a floor.</p>
+
+<p>NHS Employers states that a member's pension "may be abated (stopped) if the member's terms change again and this increases their pensionable pay to more than 90 per cent of their pre-partial retirement pensionable pay". Abatement means the pension in payment stops. It is not a penalty you pay; it is income that disappears.</p>
+
+<p>That is the erosion risk in a sentence. A reduction which is real on day one can be undone in month five by extra waiting list sessions, acting-up duties or additional programmed activities. Overtime is non-pensionable for the 12 months after partial retirement, and bank work is non-pensionable if you opt out of the scheme for it. The trap is pensionable extra work, not extra work as such.</p>
+
+<p>After 12 months your contract and hours can return to their previous level, if you and your employer both want that.</p>
+
+<h3>What does a 10 percent reduction look like on a consultant's pensionable pay?</h3>
+
+<p>Take Dr B, an illustrative hospital consultant with £120,000 of pensionable pay across the 12 months before partial retirement, working 12 programmed activities. One programmed activity is worth £120,000 divided by 12, so £10,000. The eligibility line sits at 90 percent of £120,000, which is £108,000, and the abatement line sits at the same figure.</p>
+
+<p>Dr B drops from 12 programmed activities to 10.5. That is 10.5 multiplied by £10,000, so £105,000 of pensionable pay. The cut is £15,000, or 12.5 percent, comfortably past the 10 percent test, with £3,000 of headroom below the £108,000 line.</p>
+
+<p>Now Dr B picks up one extra pensionable programmed activity in month seven. Pensionable pay becomes £105,000 plus £10,000, so £115,000. That is £7,000 above the line, and the pension in payment can be abated. What changes the answer is whether the extra activity is pensionable: taken as non-pensionable overtime or opted-out bank work, the same clinical hours leave £105,000 untouched.</p>
+
+<h2>Do you keep building pension after partial retirement?</h2>
+
+<p>Yes. You remain an active member accruing in the 2015 Scheme at 1/54th of each year's pensionable earnings, revalued while active at CPI plus 1.5 percent. You draw the old benefits and build new ones at once. The deduction your payslip still calls superannuation keeps coming off the reduced pay.</p>
+
+<p>The consequence is a tax one. Continued accrual is continued pension growth, and pension growth is what the annual allowance measures. Partial retirement does not take you outside the annual allowance regime, it changes the shape of your working life inside it. For how that growth is measured, see the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a>.</p>
+
+<h2>What does NHS pension early retirement actually cost?</h2>
+
+<p>NHS pensions early retirement gives you one answer per section rather than one answer overall, because your record is really several pensions side by side. Each section carries its own normal pension age. The reduction is calculated from the distance between your retirement date and that age.</p>
+
+<p><em>NHS Pension Scheme sections, position for 2026/27</em></p>
+
+<table>
+<thead>
+<tr><th>Section</th><th>Normal pension age</th><th>How pension builds up</th><th>Automatic lump sum</th><th>Effect of partial retirement</th></tr>
+</thead>
+<tbody>
+<tr><td>1995 Section (the NHS pension 1995 scheme)</td><td>60</td><td>1/80th, final salary</td><td>Yes, three times the annual pension</td><td>Drawable since 1 October 2023; new accrual goes to the 2015 Scheme</td></tr>
+<tr><td>2008 Section (the NHS pension 2008 scheme)</td><td>65</td><td>1/60th, final salary</td><td>No. A lump sum can be taken by giving up pension at £12 of lump sum for every £1 of annual pension, capped at 25 percent of the capital value of the benefits</td><td>Drawable; new accrual goes to the 2015 Scheme</td></tr>
+<tr><td>2015 Scheme</td><td>State Pension age, or 65 if later</td><td>1/54th career average, revalued at CPI plus 1.5 percent while active</td><td>No. Same basis as the 2008 Section: £12 per £1 of pension given up, capped at 25 percent of the capital value</td><td>Drawable, and this is where you carry on accruing</td></tr>
+</tbody>
+</table>
+
+<p>1995 NHS pension early retirement is measured against age 60. NHS pension 2015 early retirement is measured against your State Pension age. A doctor retiring at 60 with service in both takes the 1995 slice unreduced and the 2015 slice reduced by roughly seven years of early payment. The two slices need modelling separately.</p>
+
+<p>One principle runs through every section. A pension taken early is paid for longer, so it is paid at a lower rate. The reduction is permanent: it does not unwind at your normal pension age, and working on afterwards does not repay it.</p>
+
+<h3>Why nobody can quote you a percentage</h3>
+
+<p>The actuarial reduction NHS pension members face comes from factors published by NHSBSA and calculated by the Government Actuary's Department. Those factors are revised from time to time, and no single percentage applies to every doctor.</p>
+
+<p>The reduction depends on your section, your exact age at the payable date, and the whole months between that date and your normal pension age, with incomplete months rounded up. NHSBSA also confirms that the reduction is applied to the pension before commutation, so it feeds into any lump sum taken by exchanging pension.</p>
+
+<p>Two doors are left open. ERRBO, the Early Retirement Reduction Buy Out, lets a 2015 Scheme member pay extra contributions to buy out part of the reduction. It is worth modelling rather than assuming. A doctor who buys out three years and then works to normal pension age anyway has paid for protection they never used.</p>
+
+<p>Separately, a member made redundant on Agenda for Change terms can use the redundancy payment to buy out the early retirement reduction, by meeting the capitalised cost of the unreduced benefits. NHS Employers notes that medical staff and very senior managers have alternative contractual terms here, so check your own contract rather than the handbook.</p>
+
+<h2>Is there an NHS pension early retirement calculator?</h2>
+
+<p>NHS Pensions publishes its own partial retirement calculator on the member hub. The November 2025 employer guidance confirms it is built to show the McCloud impact of a drawdown decision. That is the tool to use, because it reads your record.</p>
+
+<p>What you will not find is a reliable third-party NHS pension early retirement calculator. Any page offering one is either reproducing a factor table that has since been revised, or applying one section's factors to a record spanning three. The honest substitutes are the current NHSBSA early retirement factsheet for the published factors, and an NHSBSA estimate for your own service. Take the number from those.</p>
+
+<h2>NHS pension retire and return: the 24 hour break and the 16 hour rule</h2>
+
+<p>Retire and return requires a break of at least 24 hours from all NHS employment. Where you hold two NHS posts, the break has to cover both. NHS Employers records the Department of Health and Social Care's expectation that employers "re-employ staff on the same terms and conditions so there is no change to their employment status and not insist on a longer break".</p>
+
+<p>The same guidance adds that where doctors on closed grades retire and return, employers may offer local terms mirroring the contract they have left. That is the practical answer on sick pay, annual leave and pay protection, and it is an expectation rather than a right.</p>
+
+<p>The 16 hour rule is gone. It capped weekly hours in the first month back and caught out a generation of returning consultants. NHS Employers states that it "was previously suspended on a temporary basis and was permanently removed from 1 April 2023". Anything describing a 16 hour restriction is describing the pre-2023 position.</p>
+
+<p>From the same date, doctors who have taken 1995 Section benefits and return to NHS work can join the 2015 Scheme and build further pension. That was not previously possible, and it changes the arithmetic on retire and return for anyone with a decade of work left.</p>
+
+<h2>How does early retirement affect your State Pension?</h2>
+
+<p>Early retirement and state pension age are separate clocks. Leaving NHS work early does not move the second one. Your State Pension age is set by National Insurance legislation, and you check it on gov.uk. The early retirement state pension UK question is a National Insurance question, not an NHS scheme question.</p>
+
+<p>Where early retirement pensions do interact with it is the record behind the entitlement. Stop working and you stop accruing qualifying years. A National Insurance record which began after April 2016 needs 35 qualifying years for the full rate of new State Pension. Gov.uk warns that a record starting earlier may need more where the person was contracted out, which describes almost every doctor with pre-2016 NHS service.</p>
+
+<p>A shortfall in your State Pension record can usually be fixed by voluntary contributions, but only if you spot it. Pull a State Pension forecast before you fix a leaving date, not after. There is a scheme-side link too: because the 2015 Scheme's normal pension age is your State Pension age, any future change to State Pension age moves the point at which those benefits become payable unreduced.</p>
+
+<h2>Partial retirement, the annual allowance and the Scheme Pays deadline</h2>
+
+<p>For 2026/27 the annual allowance is £60,000. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a £10,000 floor.</p>
+
+<p>What the allowance measures in a defined benefit scheme is the pension input amount, which is the growth in the value of your pension over the year rather than the contributions deducted from your pay. Doctors routinely misread that, and the misreading is expensive.</p>
+
+<p>Cutting pensionable pay by 10 percent or more can pull threshold income or adjusted income below one of those lines, restoring some or all of the standard allowance. It can also do very little, if private practice or investment income carries you over anyway. Model it with the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered annual allowance calculator guide</a> rather than assuming it.</p>
+
+<p>The sequencing point is sharper than the arithmetic. Scheme Pays is the arrangement under which the scheme settles an annual allowance charge and permanently reduces your pension in return, with an interest cost attached. Its notice deadline is normally 31 July in the year following the tax year.</p>
+
+<p>But HMRC's manual is explicit that the deadline "is brought forward for a pension scheme when the member is due to become entitled to all of their benefits", and that the member must notify before that entitlement occurs. A 100 percent partial retirement drawdown is exactly that event. Make any election first, and see the guide to <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">NHS pension Scheme Pays deadlines</a> for the mechanics.</p>
+
+<p>Taking benefits is also the trigger for the McCloud remedy choice. The remedy moved eligible members' 1 April 2015 to 31 March 2022 service back into the 1995 or 2008 section from 1 October 2023. The choice between legacy and 2015 terms for that period is made when you apply to take your pension.</p>
+
+<p>So a partial retirement application can be the moment your <a href="/blog/mccloud-remedy-nhs-pension-doctors-explained">McCloud</a> choice lands. Have the remediable pension savings statement figures in front of you when you plan the drawdown, not after it.</p>
+
+<h2>What does the 10 percent reduction mean for a GP partner on profit share?</h2>
+
+<p>A GP partner has no salary line to dial down. Pensionable pay flows from a share of practice profit, certified after the year end on the Type 1 Annual Certificate of Pensionable Profits. The 10 percent reduction has to be engineered through the partnership, not through a payroll instruction.</p>
+
+<p>That means fewer sessions, a genuinely revised commitment, and a profit sharing arrangement reflecting the lower input. Where the deed and the day-to-day reality diverge, the reduction may not stand up when the certificate is filed. A partner who formally cuts commitment but carries the same workload and the same profit share has not really cut anything.</p>
+
+<p>The certified figure is what NHS Pensions sees, and it arrives more than a year after the decision. That is the uncomfortable part: a partner can discover the reduction failed long after the pension started being paid. Model the profit share reduction before the partial retirement date, minute the change, and reflect it in the deed. See the <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> for how profit share and drawings interact.</p>
+
+<h2>Choosing between partial retirement, early retirement and retire and return</h2>
+
+<p>Partial retirement suits a doctor who wants the same job, a lower commitment, and pension income without a penalty for the drawdown itself. Early retirement suits a doctor who wants to stop, or nearly stop, before normal pension age and accepts a permanent reduction. Retire and return suits a doctor who wants all their benefits and no cut in commitment, and will take a 24 hour break and a new contract to get it.</p>
+
+<p>Before committing to any of them:</p>
+
+<ul>
+<li>Agree the new arrangement in writing, with your employer or your fellow partners, before the partial retirement date rather than after it.</li>
+<li>Check the pensionable pay figure for the 12 months before that date, because it is the baseline the 10 percent is measured from.</li>
+<li>Work out your 90 percent abatement line, and plan any additional work as non-pensionable overtime or opted-out bank work.</li>
+<li>Make any Scheme Pays election before a 100 percent drawdown, not after.</li>
+<li>Get the remediable pension savings statement figures for your McCloud choice ready in advance.</li>
+<li>Model each section separately, because 60, 65 and State Pension age give three different answers.</li>
+<li>Check the effect on a future contractual redundancy payment, because section 16.6 of the Agenda for Change handbook discounts service already used for pension benefits.</li>
+</ul>
+
+<p>One timing point applies to everyone. The normal minimum pension age across UK pensions rises from 55 to 57 on 6 April 2028. A plan built around drawing at 55 or 56 late this decade needs that date checked against your own record, including any protected pension age NHSBSA holds for you.</p>
+
+<h2>How we help doctors plan partial and early retirement</h2>
+
+<p>The rules are public; the modelling is not. This NHS pension partial retirement guide sets out the framework, and the work that follows is structuring the 10 percent reduction so it is genuine, documented and safely clear of the 90 percent abatement line. That means the partnership deed for GP partners, and the employment terms for salaried GPs and hospital consultants.</p>
+
+<p>Beyond that sits the annual allowance impact of continued 2015 Scheme accrual, the sequencing of any <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays</a> election ahead of the drawdown, and lining the decision up with the <a href="/blog/mccloud-remedy-nhs-pension-doctors-explained">McCloud</a> choice so both rest on one set of figures.</p>
+
+<p>The same ground covers how private income behaves while NHS work winds down, set out in the guide to <a href="/blog/private-practice-tax-nhs-and-private-income">private practice tax and NHS and private income</a>. Contribution and relief mechanics sit in the <a href="/blog/gp-pension-contributions-tax-relief">GP pension contributions guide</a>. Browse the wider <a href="/blog/nhs-pension-planning">NHS pension planning</a> guides, read the <a href="/nhs-pension">NHS pension</a> overview, see how <a href="/for-gps">general practice</a> is supported, or <a href="/contact">get in touch</a> to talk through your own timeline.</p>

@@ -34,8 +34,11 @@ const PAGE_PATH = "/research/annual-allowance-pension-tax-index";
 // Chart data arrays (plain serialisable; server -> client boundary)
 // ---------------------------------------------------------------------------
 
+// A year whose Accounting for Tax figures HMRC flags as materially incomplete is
+// excluded from this chart and from the derived mean below: its count and value
+// are not comparable with the other years, so plotting it would fake a trend.
 const schemePaysData: SchemePaysRow[] = hmrc.series
-  .filter((r) => r.aft_charges_value_gbp_m !== null)
+  .filter((r) => r.aft_charges_value_gbp_m !== null && !r.aft_incomplete)
   .map((r) => ({
     taxYear: r.tax_year,
     value: r.aft_charges_value_gbp_m as number,
@@ -61,39 +64,98 @@ const allowancePath: AllowanceRow[] = hmrc.series.map((r) => ({
 }));
 
 // ---------------------------------------------------------------------------
-// FAQs (§6, exact copy)
+// Standard lifetime allowance by tax year.
+// Source: gov.uk "Pension schemes rates", table headed "Lifetime allowance",
+// https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates
+// fetched 2026-08-26. That published table begins at 2011/12; earlier years are
+// not on it and are therefore not published here.
+// ---------------------------------------------------------------------------
+
+const ltaByYear: { taxYear: string; lta: number }[] = [
+  { taxYear: "2011/12", lta: 1800000 },
+  { taxYear: "2012/13", lta: 1500000 },
+  { taxYear: "2013/14", lta: 1500000 },
+  { taxYear: "2014/15", lta: 1250000 },
+  { taxYear: "2015/16", lta: 1250000 },
+  { taxYear: "2016/17", lta: 1000000 },
+  { taxYear: "2017/18", lta: 1000000 },
+  { taxYear: "2018/19", lta: 1030000 },
+  { taxYear: "2019/20", lta: 1055000 },
+  { taxYear: "2020/21", lta: 1073100 },
+  { taxYear: "2021/22", lta: 1073100 },
+  { taxYear: "2022/23", lta: 1073100 },
+  { taxYear: "2023/24", lta: 1073100 },
+];
+
+// Derived: lifetime allowance divided by the standard annual allowance for the
+// same year, i.e. years of maximum permitted growth to fill the lifetime cap.
+// Rounded half up to one decimal place, so 31.25 renders as 31.3.
+const allowanceRatioRows = ltaByYear.map((row) => {
+  const aa = hmrc.series.find((r) => r.tax_year === row.taxYear)?.standard_aa_gbp ?? null;
+  return {
+    taxYear: row.taxYear,
+    aa,
+    lta: row.lta,
+    years: aa ? (Math.floor((row.lta / aa) * 10 + 0.5) / 10).toFixed(1) : "n/a",
+  };
+});
+
+// Derived: mean annual allowance charge settled through Accounting for Tax
+// returns = value / count, both taken from the same HMRC Table 7 row.
+// Rounded to the nearest £100.
+const meanChargeRows = hmrc.series
+  .filter((r) => r.aft_charges_n && r.aft_charges_value_gbp_m && !r.aft_incomplete)
+  .map((r) => ({
+    taxYear: r.tax_year,
+    n: r.aft_charges_n as number,
+    valueM: r.aft_charges_value_gbp_m as number,
+    mean:
+      Math.round(
+        ((r.aft_charges_value_gbp_m as number) * 1000000) / (r.aft_charges_n as number) / 100
+      ) * 100,
+    provisional: r.provisional,
+  }));
+
+// ---------------------------------------------------------------------------
+// FAQs
 // ---------------------------------------------------------------------------
 
 const faqs = [
   {
-    question: "Does an annual allowance charge mean a doctor has to leave the NHS pension scheme?",
+    question: "What is the lifetime allowance in 2026/27?",
     answer:
-      "No. An annual allowance charge is a tax charge on pension growth above the allowance in a year, and it does not remove the member from the scheme or stop future accrual. Many members settle the charge through Scheme Pays, where the NHS scheme pays the charge to HMRC in exchange for a permanent, actuarially assessed reduction in that member's benefits. The figures in this report are gross counts of members and charges, so a member appearing in one year is still an active or deferred member of the scheme.",
+      "There is not one. The standard lifetime allowance was abolished from 6 April 2024, so no lifetime cap applies to the size of your pension in 2026/27 and no lifetime allowance charge can arise. Two caps on tax-free cash replaced it: a lump sum allowance of £268,275 and a lump sum and death benefit allowance of £1,073,100. Guidance still quoting a live lifetime allowance of £1,073,100 has confused the abolished cap with the death benefit allowance that inherited its value.",
   },
   {
-    question: "Why does this data lag by around two years?",
+    question:
+      "What is the lump sum allowance, and does an old lifetime allowance protection still raise it?",
     answer:
-      "HMRC publishes its Private pension statistics once a year, each July, and the newest tax year it covers is around 18 to 24 months behind because annual allowance charges are reported through Self Assessment and through schemes' Accounting for Tax returns, which are filed and processed after the tax year ends. The July 2025 edition used here reaches the 2023/24 tax year, and that year is still marked provisional. The next edition is due in summer 2026.",
+      "Your lump sum allowance is £268,275 for 2026/27, and it caps the tax-free lump sums you take across every pension you hold, not the NHS one alone. A protection you registered with HMRC before 6 April 2024 can lift it. HMRC's Pensions Tax Manual applies the £268,275 lump sum allowance and the £1,073,100 lump sum and death benefit allowance only where you hold no protected right to a higher amount (PTM174100 and PTM174200, read 26 August 2026). That is why a certificate issued years ago still carries cash value in 2026/27, and why the evidence is your own HMRC certificate or protection reference rather than a published table.",
   },
   {
-    question: "What changed in 2023/24?",
+    question: "How big is a typical annual allowance charge?",
     answer:
-      "The standard annual allowance rose from £40,000 to £60,000 from 6 April 2023, and the minimum tapered allowance rose from £4,000 to £10,000. A higher allowance means fewer members breach it, which is one reason Self Assessment counts fall in 2023/24. Because 2023/24 also overlaps the McCloud reporting change, the two effects should be read together, not treated as a single clean trend.",
+      "Smaller than the older guidance implies, and it has been falling. Dividing the value of annual allowance charges settled through schemes' Accounting for Tax returns by the number of them, both taken from the same HMRC table, gives a mean of about £23,700 across 590 charges in 2012/13 and about £6,300 across 55,070 charges in 2022/23. The count rose roughly ninety-three fold while the mean fell by nearly three quarters. That is a derived figure, one division of two published HMRC numbers, and it covers all UK registered pension schemes rather than the NHS alone. HMRC's 2024/25 Accounting for Tax figures are left out of that comparison because HMRC warns they may be revised substantially, some public sector schemes implementing the McCloud remedy having been delayed. Your own charge depends on your pension input amount and your marginal rate, so treat the mean as scale rather than as a prediction.",
   },
   {
     question: "What is Scheme Pays?",
     answer:
-      "Scheme Pays lets a pension scheme settle a member's annual allowance charge with HMRC, so the member does not have to fund it from cash, in exchange for a permanent reduction in their scheme benefits. In the NHS scheme, mandatory Scheme Pays is available where the charge is more than £2,000 and the member's pension input in the NHS scheme alone exceeds the £60,000 standard allowance; a charge driven only by the taper below £60,000 is voluntary Scheme Pays. The election deadline is 31 July in the year after the year the charge relates to, so a 2025/26 charge must be elected by 31 July 2027. The money series in this report is HMRC's national count of charges reported and paid this way, across all UK registered pension schemes.",
+      "Scheme Pays lets your pension scheme settle an annual allowance charge with HMRC, in exchange for a permanent, actuarially assessed reduction in your benefits. Mandatory Scheme Pays needs a charge above £2,000 and a pension input amount in the NHS scheme alone above the £60,000 standard allowance; a charge driven only by the taper below £60,000 is voluntary Scheme Pays. The statutory deadline is to give notice no later than 31 July in the year following the year in which the tax year ends, so 31 July 2028 for a 2026/27 charge (Finance Act 2004 section 237BA, read 26 August 2026).",
   },
   {
-    question: "Why did reported charges fall in 2022/23?",
+    question: "What if my NHS pension savings statement arrives late or is revised?",
     answer:
-      "The fall is a reporting artefact, not a real decline. For 2022/23, public-service pension members, a group that includes NHS doctors, were directed to report their annual allowance position through HMRC's public service pension adjustment service, set up for the McCloud remedy, rather than through Self Assessment. That pulled a large block of charges out of the Self Assessment count, which dropped from 56,270 individuals in 2021/22 to 34,190. The underlying burden did not fall; it was recorded elsewhere.",
+      "Your Scheme Pays deadline can extend. Section 237BA of the Finance Act 2004 covers a revised pension savings statement issued on or after 2 May. In that case you get the earlier of three months from the statement or six years from the end of the tax year, instead of the plain 31 July date. Late and revised NHSBSA statements are common rather than exceptional. The deadline is brought forward instead if you become entitled to all your benefits.",
+  },
+  {
+    question: "Why does this data lag by around two years?",
+    answer:
+      "HMRC publishes its Private pension statistics once a year, each July, and the newest tax year it covers is around 18 to 24 months behind. That gap exists because annual allowance charges are reported through Self Assessment and through schemes' Accounting for Tax returns, which are filed and processed after the tax year ends. This page reports the July 2026 edition, published on 30 July 2026 and incorporated here on 26 August 2026, which reaches the 2024/25 tax year. That edition also revised 2020/21 to 2023/24, and the figures on this page are the revised ones. HMRC warns that its 2024/25 Accounting for Tax figures may be revised substantially, because of delays in some public sector schemes implementing the McCloud remedy, so those figures are shown but excluded from the trend charts and the derived mean (gov.uk, Private pension statistics commentary, read 26 August 2026). The next edition is due Summer 2027.",
   },
   {
     question: "Is this an NHS-specific dataset?",
     answer:
-      "Partly. The recurring money and count series comes from HMRC and covers all UK registered pension schemes, not the NHS alone, although HMRC states that a significant share of annual allowance charges come from public-service scheme members. The NHS-specific layer comes from NHSBSA Freedom of Information data for the England and Wales scheme, which counts how many practitioner and officer members had pension growth above the standard allowance. We keep the two clearly separate throughout, and we do not present a national money figure as if it were NHS-only.",
+      "Partly. The recurring money and count series comes from HMRC and covers all UK registered pension schemes, not the NHS alone, although HMRC states that a significant share of annual allowance charges come from public-service scheme members. The NHS-specific layer comes from NHSBSA Freedom of Information data for the England and Wales scheme, which counts how many practitioner and officer members had pension growth above the standard annual allowance. Those two layers are kept separate throughout, and no national money figure is presented as if it were NHS-only.",
   },
   {
     question: "Can I use these figures?",
@@ -109,9 +171,9 @@ const faqs = [
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Annual Allowance Pension Tax Index",
+  headline: "Annual Allowance and Lifetime Allowance Pension Tax Index",
   description:
-    "How annual allowance pension tax charges have grown across UK registered pension schemes (HMRC), with an NHS Pension Scheme lens on doctors.",
+    "How annual allowance pension tax charges have grown across UK registered pension schemes (HMRC), set against the abolished lifetime allowance and the lump sum allowance that replaced it, with an NHS Pension Scheme lens on doctors.",
   inLanguage: "en-GB",
   datePublished: "2026-07-06",
   dateModified: meta.generated_at,
@@ -215,15 +277,15 @@ function Caption({ children }: { children: ReactNode }) {
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Annual Allowance Pension Tax Index | NHS & UK data",
+  title: "Annual Allowance & Lifetime Allowance Pension Tax Index | NHS & UK data",
   description:
-    "How annual allowance pension tax charges grew across UK pension schemes (HMRC data), with an NHS Pension Scheme lens on doctors. Free to cite.",
+    "The pension lifetime allowance was abolished on 6 April 2024 and replaced by a £268,275 lump sum allowance. Sourced HMRC and NHSBSA data on annual allowance pension tax charges. Free to cite.",
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
     type: "article",
-    title: "Annual Allowance Pension Tax Index | NHS & UK data",
+    title: "Annual Allowance & Lifetime Allowance Pension Tax Index | NHS & UK data",
     description:
-      "Annual allowance charges across UK pension schemes, with an NHS Pension Scheme lens, from official open data.",
+      "Annual allowance charges across UK pension schemes, the abolished lifetime allowance and the lump sum allowance that replaced it, from official open data.",
     url: `${siteConfig.url}${PAGE_PATH}`,
   },
 };
@@ -267,24 +329,24 @@ export default function AaIndexPage() {
               Annual Allowance Pension Tax Index
             </p>
             <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              The annual allowance and NHS doctors: pension tax charges across UK registered
-              pension schemes
+              The annual allowance, the lifetime allowance and NHS doctors: pension tax charges
+              across UK registered pension schemes
             </h1>
             <p className="mt-4 max-w-3xl text-lg text-white/80">
-              A sourced read on how annual allowance pension tax has grown in the UK. The
-              recurring money series is HMRC data for all UK registered pension schemes. A
-              separate NHS layer, from NHSBSA Freedom of Information data for the England and
-              Wales scheme, shows how doctors sit within it. Built entirely from official open
-              data. Annual data, published by HMRC each July, so the latest figures are around
-              two tax years behind.
+              The pension lifetime allowance was abolished on 6 April 2024. It was replaced by a
+              lump sum allowance of £268,275 and a lump sum and death benefit allowance of
+              £1,073,100, both unchanged for 2026/27. This page sets those caps against HMRC&rsquo;s
+              published record of annual allowance charges, so you can see how far pension tax now
+              reaches. Every figure below is official open data, free to cite, with its source and
+              tax year attached.
             </p>
 
             {/* 4 hero stats */}
             <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <Stat
                 value={`${fmtGBPm(headline.scheme_pays_value_latest_gbp_m)}`}
-                label={`annual allowance charges settled through schemes' Accounting for Tax returns (Scheme Pays) in ${headline.scheme_pays_value_latest_year}, across all UK registered pension schemes`}
-                flag="provisional"
+                label={`annual allowance charges settled through schemes' Accounting for Tax returns (Scheme Pays) in ${headline.scheme_pays_value_latest_year}, the latest year with complete Accounting for Tax reporting, across all UK registered pension schemes`}
+                flag="revised"
               />
               <Stat
                 value={fmtInt(headline.sa_peak_individuals)}
@@ -296,7 +358,7 @@ export default function AaIndexPage() {
               />
               <Stat
                 value="£215k → £60k"
-                label="the standard annual allowance in 2006/07 versus 2023/24: the cap has fallen while charges climbed (all UK schemes)"
+                label="the standard annual allowance in 2006/07 versus 2024/25: the cap has fallen while charges climbed (all UK schemes)"
               />
             </div>
           </div>
@@ -312,26 +374,37 @@ export default function AaIndexPage() {
 
             {/* Key facts box */}
             <div className="rounded-2xl border border-[var(--copper)]/20 bg-[var(--copper)]/5 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-[var(--copper-strong)]">Key facts</h2>
+              <h2 className="text-lg font-bold text-[var(--copper-strong)]">
+                Key facts on annual allowance and lifetime allowance pension tax
+              </h2>
               <ul className="mt-4 space-y-2 text-base leading-relaxed text-[var(--ink)]">
                 <li>
-                  Across all UK registered pension schemes, £350m of annual allowance charges were
+                  The lifetime allowance was abolished from 6 April 2024 and replaced by a lump sum
+                  allowance of £268,275 and a lump sum and death benefit allowance of £1,073,100,
+                  both unchanged for 2026/27 (gov.uk, fetched 26 August 2026).
+                </li>
+                <li>
+                  Across all UK registered pension schemes, £353m of annual allowance charges were
                   settled through pension schemes&rsquo; Accounting for Tax returns (Scheme Pays) in
-                  2023/24, provisional (HMRC).
+                  2023/24, revised (HMRC).
                 </li>
                 <li>
                   The value of annual allowance charges paid through Scheme Pays rose from £64m in
-                  2016/17 to £350m in 2023/24 (provisional), across all UK registered pension schemes
-                  (HMRC).
+                  2016/17 to £353m in 2023/24 (revised), across all UK registered pension schemes
+                  (HMRC). 2023/24 is the latest year whose Accounting for Tax reporting HMRC treats as
+                  complete: the 2024/25 figures are on the page but are excluded from this trend, for
+                  the reason set out below.
                 </li>
                 <li>
                   The number of people reporting pension savings above the annual allowance through
-                  Self Assessment peaked at 56,270 in 2021/22, up from 18,720 in 2016/17, across all
-                  UK registered schemes (HMRC). This is a count of individuals, not a tax charge value.
+                  Self Assessment peaked at 56,370 in 2021/22, up from 18,720 in 2016/17, across all
+                  UK registered schemes (HMRC). It fell to 24,950 in 2023/24 and rose again to 30,440
+                  in 2024/25. This is a count of individuals, not a tax charge value.
                 </li>
                 <li>
-                  The standard annual allowance was cut from £215,000 in 2006/07 to £40,000 for most
-                  of the 2016/17 to 2022/23 period, then raised to £60,000 from 2023/24, so more
+                  The standard annual allowance was cut from £215,000 in 2006/07 to £40,000, the level
+                  it held for every year from 2014/15 to 2022/23, then raised to £60,000 from 2023/24
+                  and held there for 2024/25, so more
                   savers were pulled over the threshold even before pensions grew (HMRC).
                 </li>
                 <li>
@@ -346,28 +419,55 @@ export default function AaIndexPage() {
                   mechanical effect of how defined-benefit growth is calculated, not a change in pay.
                 </li>
                 <li>
-                  Reported charges appear to fall in 2022/23, but this is a reporting artefact: NHS and
+                  Reported charges appear to fall in 2022/23, but this is a reporting artefact. NHS and
                   other public-service members were directed to report 2022/23 annual allowance charges
-                  through HMRC&rsquo;s public service pension adjustment service (the McCloud remedy
-                  route) rather than Self Assessment. The underlying burden did not fall.
+                  through HMRC&rsquo;s public service pension adjustment service, the McCloud remedy
+                  route, rather than Self Assessment. The underlying burden did not fall.
+                </li>
+                <li>
+                  HMRC&rsquo;s 2024/25 Accounting for Tax figures (15,250 charges, £164m) are on this
+                  page but are deliberately kept out of the Scheme Pays chart and the mean-charge
+                  table. HMRC states that revisions to them may be particularly substantial, because
+                  some public sector schemes implementing the McCloud remedy have been delayed and the
+                  reporting deadline for many 2024/25 Scheme Pays cases is February 2027. Dividing that
+                  incomplete value by that incomplete count would suggest the mean charge had jumped
+                  back to about £10,800, which would be an artefact of missing public sector schemes
+                  rather than a real reversal (HMRC, Private pension statistics commentary, read 26
+                  August 2026).
                 </li>
               </ul>
               <p className="mt-4 text-xs text-[var(--muted)]">
-                Source: Medical Accountants UK analysis of HMRC Private pension statistics (July 2025)
-                and NHSBSA data, all under the Open Government Licence v3.0. Free to cite with
-                attribution to Medical Accountants UK. This page is a data summary and not tax advice
-                on any individual situation.
+                Source: Medical Accountants UK analysis of HMRC Private pension statistics (July 2026),
+                HMRC and gov.uk published allowance rates, and NHSBSA data, all under the Open
+                Government Licence v3.0. The HMRC money and count series covers all UK registered
+                pension schemes; the NHS layer is England and Wales only, and the two are never
+                blended. Free to cite with attribution to Medical Accountants UK. This page is a data
+                summary and not tax advice on any individual situation.
               </p>
             </div>
 
             {/* Section 1: Scheme Pays value */}
-            <Section id="scheme-pays-value" title="The money settled through Scheme Pays is climbing">
+            <Section
+              id="scheme-pays-value"
+              title="How much money is settled through Scheme Pays each year?"
+            >
               <p>
                 Each bar is the total value of annual allowance charges settled through pension
                 schemes&rsquo; Accounting for Tax (AfT) returns in that year, across all UK registered
                 pension schemes (HMRC Private pension statistics, Table 7). This is the Scheme Pays
                 route: the scheme settles the charge with HMRC in exchange for a permanent reduction in
-                the member&rsquo;s benefits. The 2023/24 bar is provisional.
+                the member&rsquo;s benefits. The 2023/24 bar is HMRC&rsquo;s revised figure and is the
+                last bar in the chart. There is no 2024/25 bar: HMRC has published a 2024/25 figure of
+                £164m, but warns that revisions to its 2024/25 Accounting for Tax data may be
+                particularly substantial because of delays in some public sector schemes implementing
+                the McCloud remedy, with a reporting deadline of February 2027 for many 2024/25 Scheme
+                Pays cases. Charting an incomplete year next to complete ones would show a collapse
+                that has not happened, so it is stated here and left out of the series.
+              </p>
+              <p>
+                A charge does not push anyone out of the scheme. It is a tax charge on one year&rsquo;s
+                pension growth, and the member carries on accruing. These are gross counts, so a doctor
+                who appears in one year is still an active or deferred member of the scheme.
               </p>
               <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <SchemePaysValueChart series={schemePaysData} />
@@ -377,18 +477,88 @@ export default function AaIndexPage() {
                 series does not extend earlier. The PODS digital service (from 2020/21) improved
                 reporting and may lift later years. All UK registered pension schemes (HMRC).
               </Caption>
+
+              <p className="font-semibold text-[var(--navy)]">
+                The charges got smaller as they got commoner
+              </p>
+              <p>
+                One further figure comes out of the same HMRC table by division, and it is the finding
+                this page exists to publish. Divide the value of Scheme Pays charges in a year by the
+                number of them and you get the mean charge settled that way. In 2012/13 that was about
+                £23,700 across 590 charges. By 2022/23 it was about £6,300 across 55,070. The count
+                rose roughly ninety-three fold while the average charge fell by nearly three quarters.
+                HMRC&rsquo;s July 2026 edition revised the 2022/23 count from 54,920 to 55,070 and the
+                value from £348m to £349m, which moves the finding by less than a percentage point and
+                leaves it intact.
+              </p>
+              <p>
+                Read plainly, the annual allowance stopped being a large tax on a few very large
+                pensions and became a modest tax on a great many ordinary ones. That matters for how
+                you read your own position. If your first charge lands, you are joining a group of
+                roughly fifty thousand people a year, and your charge is more likely to look like the
+                mean than like the outliers the older guidance was written about. It is a routine
+                consequence of a good pay year in a defined-benefit scheme, not a signal that you have
+                done something wrong.
+              </p>
+
+              <div className="not-prose mt-6 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <caption className="mb-2 text-left text-xs text-[var(--muted)]">
+                    Derived. Mean annual allowance charge settled through Accounting for Tax returns,
+                    all UK registered pension schemes. Both inputs are HMRC Private pension statistics
+                    Table 7 (July 2026 edition, read 26 August 2026), the same population in the same
+                    table. The mean is the value divided by the count, rounded to the nearest £100.
+                    HMRC rounds counts to the nearest 10 and values to the nearest £1 million, so the
+                    mean carries roughly ±0.2% of rounding imprecision in the later years and roughly
+                    ±4% in 2012/13, where the count is small. Charges paid directly through Self
+                    Assessment are a different and larger population and are not in this table.
+                    2024/25 is deliberately absent: HMRC warns its 2024/25 Accounting for Tax figures
+                    may be revised substantially because of public sector McCloud reporting delays, and
+                    a mean drawn from an incomplete count and an incomplete value would not be
+                    comparable with the years above it.
+                  </caption>
+                  <thead>
+                    <tr className="border-b-2 border-[var(--copper)] text-left">
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">Tax year</th>
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">Charges settled (AfT)</th>
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">Total value</th>
+                      <th className="py-2 font-bold text-[var(--navy)]">Mean charge (derived)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {meanChargeRows.map((r) => (
+                      <tr key={r.taxYear} className="border-b border-[var(--border)]">
+                        <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                          {r.taxYear}
+                          {r.provisional ? " (provisional)" : ""}
+                        </td>
+                        <td className="py-2 pr-4 text-[var(--ink-soft)]">{fmtInt(r.n)}</td>
+                        <td className="py-2 pr-4 text-[var(--ink-soft)]">{fmtGBPm(r.valueM)}</td>
+                        <td className="py-2 font-semibold text-[var(--ink-soft)]">
+                          {fmtGBP(r.mean)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </Section>
 
             {/* Section 2: SA individuals */}
             <Section
               id="sa-individuals"
-              title="Reports of pension savings above the allowance"
+              title="How many people report pension savings above the allowance?"
             >
               <p>
                 Each bar shows the number of individuals who reported pension savings above the annual
                 allowance through Self Assessment that year, across all UK registered pension schemes
                 (HMRC). This is not a count of charges paid; it is a count of people whose pension
                 input exceeded the allowance and who reported it via Self Assessment.
+              </p>
+              <p>
+                Pension input amount is the phrase to hold on to here. It is the growth in the value of
+                your pension over the year, not the contributions you paid in, and in a defined-benefit
+                scheme like the NHS one those two numbers are nothing like each other.
               </p>
               <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <SaIndividualsChart series={saData} />
@@ -399,8 +569,10 @@ export default function AaIndexPage() {
                 purchase allowance, a definitional widening (visible step up), not purely a behavioural
                 rise. The McCloud marker (2022/23) shows where the fall occurred: public-service
                 members were directed to report 2022/23 charges through HMRC&rsquo;s public service
-                pension adjustment service instead of Self Assessment (see note below). 2023/24
-                provisional.
+                pension adjustment service instead of Self Assessment (see note below). The series runs
+                to 2024/25. HMRC&rsquo;s warning about incomplete 2024/25 data applies to the
+                Accounting for Tax figures, not to this Self Assessment count, so 2024/25 is charted
+                here.
               </Caption>
               <div className="rounded-xl border-l-4 border-[var(--copper)] bg-[var(--copper)]/5 p-4">
                 <p className="font-semibold text-[var(--navy)]">The 2016/17 taper widening</p>
@@ -413,38 +585,382 @@ export default function AaIndexPage() {
               <div className="rounded-xl border-l-4 border-[var(--copper)] bg-[var(--copper)]/5 p-4">
                 <p className="font-semibold text-[var(--navy)]">The 2022/23 McCloud reporting artefact</p>
                 <p className="mt-1 text-sm text-[var(--ink-soft)]">
-                  The 2022/23 fall (56,270 in 2021/22 to 34,190) is a reporting artefact:
-                  public-service (McCloud) members were told to report 2022/23 charges through
-                  HMRC&rsquo;s public service pension adjustment service instead of Self Assessment. It
-                  is not a real fall in the burden.
+                  The 2022/23 fall (56,370 in 2021/22 to 34,370) is a reporting artefact:
+                  public-service members were told to report 2022/23 charges through HMRC&rsquo;s
+                  public service pension adjustment service instead of Self Assessment. The McCloud
+                  remedy moved affected members&rsquo; 2015 to 2022 service back into their legacy
+                  scheme section, and the reporting service was built to handle the resulting
+                  recalculations. It is not a real fall in the burden.
                 </p>
               </div>
             </Section>
 
             {/* Section 3: Allowance path */}
-            <Section id="allowance-path" title="How the standard allowance has changed">
+            <Section
+              id="allowance-path"
+              title="How has the standard annual allowance changed?"
+            >
               <p>
                 The step chart below shows the standard annual allowance set by policy each tax year.
                 Falling allowances, not just larger pensions, drove the rise in the number of people
                 caught above the limit. The chart covers all UK registered pension schemes (HMRC). The
-                allowance rose from £40,000 to £60,000 from 2023/24; the 2023/24 £60,000 level is a
-                legislated figure (the provisional flag applies to the accompanying charge data, not to
-                the allowance itself).
+                allowance rose from £40,000 to £60,000 from 6 April 2023, and the minimum tapered
+                allowance rose from £4,000 to £10,000 at the same time. The allowance held at £60,000
+                for 2024/25 (gov.uk, Pension schemes rates, read 26 August 2026). Those are legislated
+                figures, so any incompleteness flag on this page attaches to the accompanying charge
+                data rather than to the allowance itself.
+              </p>
+              <p>
+                A higher allowance means fewer members breach it, which is part of why Self Assessment
+                counts fall in 2023/24. Because 2023/24 also overlaps the McCloud reporting change,
+                read the two effects together rather than as a single clean trend. The count then rose
+                again in 2024/25, from 24,950 to 30,440, with the allowance unchanged, so that rise is
+                pension growth and reporting catching up rather than a policy change.
               </p>
               <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <AllowancePathChart series={allowancePath} />
               </div>
               <Caption>
                 The standard annual allowance, set by policy. It fell from £215,000 (2006/07) to
-                £40,000, then rose to £60,000 from 2023/24. Falling allowances, not just larger
+                £40,000, then rose to £60,000 from 2023/24 and held there for 2024/25. Falling allowances, not just larger
                 pensions, drove the rise in charges. All UK schemes.
               </Caption>
             </Section>
 
-            {/* Section 4: NHS layer */}
+            {/* Section 4: The lifetime allowance and what replaced it */}
+            <Section
+              id="lifetime-allowance"
+              title="What was the pension lifetime allowance, and what replaced it?"
+            >
+              <p>
+                The pension lifetime allowance was a single cap on the total pension benefits you could
+                take before an extra tax charge applied. It was tested when you took benefits or died,
+                not every year, and that is what separated it from the annual allowance. The lifetime
+                allowance pension test ran from 6 April 2006 to 5 April 2024. Nothing has replaced the
+                cap itself.
+              </p>
+              <p>
+                Two dated steps ended it, and most published guidance describes only the first. The
+                lifetime allowance charge was reduced to nil from 6 April 2023. The lifetime allowance
+                legislation was then abolished from 6 April 2024, confirmed at gov.uk, Abolition of the
+                Lifetime Allowance from 6 April 2024, fetched 26 August 2026. Anything giving a single
+                abolition date of 2023 is describing the charge, not the allowance.
+              </p>
+              <p>
+                From 6 April 2024 two allowances took over, and both cap tax-free cash rather than the
+                size of your pension. Your pension lump sum allowance is £268,275 for 2026/27. Your
+                lump sum and death benefit allowance is £1,073,100 for 2026/27. Both are unchanged
+                from the previous year, so the lump sum allowance 2025 to 2026 figure was also
+                £268,275 (gov.uk, pension schemes rates, fetched 26 August 2026). For NHS doctors this
+                bites hardest in
+                the 1995 section, which pays an automatic tax-free lump sum of three times the annual
+                pension.
+              </p>
+
+              <div className="rounded-xl border-l-4 border-[var(--copper)] bg-[var(--copper)]/5 p-4">
+                <p className="font-semibold text-[var(--navy)]">
+                  How a 1995 section pension sits against the £268,275 cap
+                </p>
+                <p className="mt-1 text-sm text-[var(--ink-soft)]">
+                  Take Dr A, an illustrative hospital consultant retiring in 2026/27 on a 1995 section
+                  pension of £60,000 a year. The 1995 section pays an automatic lump sum of three times
+                  the annual pension, so her lump sum is 3 × £60,000 = £180,000. Her lump sum allowance
+                  for 2026/27 is £268,275. Subtract one from the other: £268,275 − £180,000 = £88,275
+                  of allowance left unused. Her tax-free cash sits comfortably inside the cap, so no
+                  lump sum allowance issue arises. Three things move that answer. Tax-free lump sums
+                  from any other pension count against the same £268,275. A registered protection can
+                  lift her allowance above it. Commuting pension for extra cash consumes more of it.
+                  Figures are illustrative and rounded.
+                </p>
+              </div>
+
+              <p>
+                £1,073,100 is the number that causes the confusion, and it is worth being blunt about
+                it. That was the standard lifetime allowance, frozen from 2020/21 through 2023/24, and
+                it is now the lump sum and death benefit allowance. The value survived. The allowance
+                did not. Two things changed at once, which is why the answer to what is lump sum
+                allowance only makes sense alongside what the lifetime allowance was.
+              </p>
+              <p>
+                There was never a maximum pension contribution lifetime allowance rule either. The
+                annual allowance capped the growth in your pension each year; the lifetime allowance
+                tested the benefits you eventually took. Read the table below as the answer to what is
+                a lifetime allowance in historic terms: one cap, tested once.
+              </p>
+              <p>
+                The pension LTA regime ran for eighteen tax years. There is no LTA pension test on
+                benefits you take from 6 April 2024, and there is no simple answer to what is LTA
+                pension shorthand for any more, because the allowance it names no longer exists. The
+                lifetime allowance (LTA) is history with a data series attached, which is exactly why
+                it belongs on a research page rather than a planning one.
+              </p>
+              <p>
+                The pension lifetime allowance UK savers were tested against applied to every UK
+                registered pension scheme, the NHS scheme included. Because it was a UK pension
+                lifetime allowance rather than a scheme rule, a doctor holding an NHS pension and a
+                private pension was tested on both together. The lifetime allowance UK doctors met was
+                a whole-of-life total, not an NHS figure. That is the NHS pension lifetime allowance
+                position in one line: there was never a separate NHS Pension Scheme lifetime allowance,
+                only the national one applied to NHS benefits. There is no lifetime allowance NHS
+                pension members must test against today, and NHS pensions lifetime allowance queries
+                about an old protection certificate go to HMRC and NHSBSA rather than to an employer.
+              </p>
+
+              <div className="not-prose mt-6 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <caption className="mb-2 text-left text-xs text-[var(--muted)]">
+                    Terms and their status on 26 August 2026. Allowance values from gov.uk, Pension
+                    schemes rates, fetched 26 August 2026. Abolition dates from gov.uk, Abolition of
+                    the Lifetime Allowance from 6 April 2024, fetched the same day. Charge rates that
+                    applied before 6 April 2023 are archived by HMRC at The National Archives and are
+                    deliberately not restated here.
+                  </caption>
+                  <thead>
+                    <tr className="border-b-2 border-[var(--copper)] text-left">
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">Term</th>
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">What it did</th>
+                      <th className="py-2 font-bold text-[var(--navy)]">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-[var(--border)]">
+                      <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                        Lifetime allowance (LTA, sometimes written LTA allowance)
+                      </td>
+                      <td className="py-2 pr-4 text-[var(--ink-soft)]">
+                        Capped total tax-privileged pension benefits, tested when benefits were taken
+                        or on death
+                      </td>
+                      <td className="py-2 text-[var(--ink-soft)]">
+                        Abolished from 6 April 2024. Final standard value £1,073,100
+                      </td>
+                    </tr>
+                    <tr className="border-b border-[var(--border)]">
+                      <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                        Standard lifetime allowance
+                      </td>
+                      <td className="py-2 pr-4 text-[var(--ink-soft)]">
+                        The default cap for a member holding no protection
+                      </td>
+                      <td className="py-2 text-[var(--ink-soft)]">Abolished from 6 April 2024</td>
+                    </tr>
+                    <tr className="border-b border-[var(--border)]">
+                      <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                        Lifetime allowance charge
+                      </td>
+                      <td className="py-2 pr-4 text-[var(--ink-soft)]">
+                        The tax charge that applied to benefits above the cap
+                      </td>
+                      <td className="py-2 text-[var(--ink-soft)]">
+                        Reduced to nil from 6 April 2023, then removed with the allowance from 6 April
+                        2024
+                      </td>
+                    </tr>
+                    <tr className="border-b border-[var(--border)]">
+                      <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                        Lump sum allowance (LSA)
+                      </td>
+                      <td className="py-2 pr-4 text-[var(--ink-soft)]">
+                        Caps the tax-free lump sums you take across all your pensions
+                      </td>
+                      <td className="py-2 text-[var(--ink-soft)]">Live. £268,275 for 2026/27</td>
+                    </tr>
+                    <tr className="border-b border-[var(--border)]">
+                      <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                        Lump sum and death benefit allowance (LSDBA)
+                      </td>
+                      <td className="py-2 pr-4 text-[var(--ink-soft)]">
+                        Caps tax-free lump sums including those paid on death
+                      </td>
+                      <td className="py-2 text-[var(--ink-soft)]">Live. £1,073,100 for 2026/27</td>
+                    </tr>
+                    <tr className="border-b border-[var(--border)]">
+                      <td className="py-2 pr-4 font-semibold text-[var(--navy)]">
+                        Lifetime allowance protection
+                      </td>
+                      <td className="py-2 pr-4 text-[var(--ink-soft)]">
+                        Fixed a higher personal cap for members who registered with HMRC
+                      </td>
+                      <td className="py-2 text-[var(--ink-soft)]">
+                        Still relevant: can give a protected right to a higher lump sum allowance
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </Section>
+
+            {/* Section 5: The derived index */}
+            <Section
+              id="allowance-ratio"
+              title="How far apart were the annual allowance and the lifetime allowance?"
+            >
+              <p>
+                This is the one figure on the page that is ours rather than HMRC&rsquo;s, and it is a
+                division rather than an estimate. Take the standard annual allowance for a tax year.
+                Take the standard lifetime allowance for the same year. Divide the second by the first.
+                The result is the number of years of maximum permitted pension growth it would have
+                taken to fill the lifetime cap.
+              </p>
+              <p>
+                In 2011/12 that was 36.0 years. By 2023/24 it was 17.9. The two caps closed on the
+                saver from opposite directions: the lifetime allowance fell from £1,800,000 to
+                £1,073,100, while the annual allowance was cut from £50,000 to £40,000 before rising to
+                £60,000. A career that cleared both comfortably at the start of the decade could breach
+                both by the end of it. If you trained through that period, your exposure to pension tax
+                rose without you changing anything about your pension.
+              </p>
+              <p>
+                The lifetime allowance 2023/24 figure of £1,073,100 was the last one that ever existed.
+                The pension lifetime allowance changes then arrived in two steps rather than one, which
+                is why so much published guidance is out by a year. Each lifetime allowance change is
+                dated in the table below. The pensions lifetime allowance changes did not touch the
+                annual allowance at all, and the charge data on this page runs on straight past them.
+              </p>
+
+              <div className="not-prose mt-6 overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <caption className="mb-2 text-left text-xs text-[var(--muted)]">
+                    Derived. Column 2 is the standard annual allowance from HMRC Private pension
+                    statistics Table 7 (July 2026 edition, read 26 August 2026). Column 3 is the standard lifetime allowance
+                    from gov.uk, Pension schemes rates, fetched 26 August 2026. Column 4 is column 3
+                    divided by column 2, rounded to one decimal place. It is arithmetic on two
+                    published series, not a measurement of anybody&rsquo;s pension, and both caps
+                    applied to all UK registered pension schemes. The gov.uk lifetime allowance table
+                    begins at 2011/12, so earlier years are not shown. There is no lifetime allowance
+                    2024/25 row: the allowance was abolished on the first day of that tax year.
+                  </caption>
+                  <thead>
+                    <tr className="border-b-2 border-[var(--copper)] text-left">
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">Tax year</th>
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">
+                        Standard annual allowance
+                      </th>
+                      <th className="py-2 pr-4 font-bold text-[var(--navy)]">
+                        Standard lifetime allowance
+                      </th>
+                      <th className="py-2 font-bold text-[var(--navy)]">
+                        Years of maximum growth to fill the lifetime cap (derived)
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {allowanceRatioRows.map((r) => (
+                      <tr key={r.taxYear} className="border-b border-[var(--border)]">
+                        <td className="py-2 pr-4 font-semibold text-[var(--navy)]">{r.taxYear}</td>
+                        <td className="py-2 pr-4 text-[var(--ink-soft)]">{fmtGBP(r.aa)}</td>
+                        <td className="py-2 pr-4 text-[var(--ink-soft)]">{fmtGBP(r.lta)}</td>
+                        <td className="py-2 font-semibold text-[var(--ink-soft)]">{r.years}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <p>
+                Every HMRC lifetime allowance value in that table is the published standard figure for
+                the tax year, taken from the gov.uk pension schemes rates page on 26 August 2026, under
+                the heading Lifetime allowance. That page is where the lifetime allowance HMRC set each
+                year still sits. Any pension LTA UK figure for a year before 2011/12 is absent from it,
+                and HMRC&rsquo;s pensions LTA guidance on protections and on the charge is archived at
+                The National Archives.
+              </p>
+            </Section>
+
+            {/* Section 6: Protection */}
+            <Section id="protections" title="Does lifetime allowance protection still matter?">
+              <p>
+                Yes, and this is where most published guidance stops. Lifetime allowance protection was
+                a registration you made with HMRC to fix a higher personal cap than the standard one.
+                The allowance it protected you against is gone. The protection itself is not.
+              </p>
+              <p>
+                HMRC&rsquo;s Pensions Tax Manual states the rule plainly. An individual&rsquo;s lump
+                sum allowance is £268,275 unless they have a protected right to a higher lump sum
+                allowance, or transitional rules apply (PTM174100). An individual&rsquo;s lump sum and
+                death benefit allowance is £1,073,100 unless they have a protected right to a higher
+                one (PTM174200). Both pages were fetched on 26 August 2026. So a pension lifetime
+                allowance protection registered before 6 April 2024 can still raise the tax-free cash
+                you are able to take.
+              </p>
+              <p>
+                The lifetime allowance protections that can do this are enhanced protection, primary
+                protection, fixed protection and individual protection. Each was fixed at the value in
+                force when it was taken, which is why the certificate matters more than the memory of
+                it. Find any lifetime allowance protection HMRC issued to you before 6 April 2024, and
+                find it before you take a lump sum rather than after, because the reference on it is
+                what your scheme administrator will ask for.
+              </p>
+              <p className="font-semibold text-[var(--navy)]">One figure this page will not give you</p>
+              <p>
+                The gov.uk protection guidance no longer lists the protected amount for each protection
+                type. On 26 August 2026 it carried only the line directing readers to read the previous
+                rates of standard lifetime allowance, and a link out. Per-protection amounts are
+                therefore stated here as a gap rather than guessed at. Confirm yours from your own HMRC
+                certificate or protection reference. The protected amount differs by protection type
+                and by the date of registration, and a figure quoted for the wrong type is worse than
+                no figure at all.
+              </p>
+            </Section>
+
+            {/* Section 7: Abatement */}
+            <Section id="abatement" title="What is pension abatement, and when does it apply?">
+              <p>
+                Pension abatement is a reduction of a pension already in payment when the pensioner
+                returns to work. The pension abatement meaning NHSBSA uses is narrow: your pension is
+                reduced, not stopped, and only in defined circumstances. Abatement of pension has
+                nothing to do with the annual allowance or the lifetime allowance, and it is the one
+                rule on this page that is not a tax rule at all. It is included because it is the other
+                thing that quietly cuts a doctor&rsquo;s pension, and because no published source
+                treats it with figures.
+              </p>
+              <p>
+                NHSBSA states that abatement takes effect if you are under your normal pension age and
+                return to NHS work having retired on one of five grounds. Those grounds are ill health
+                under the previous ill health retirement arrangements, ill health tier 1 or tier 2
+                under the current arrangements, early payment of preserved benefits due to ill health,
+                redundancy if you retired before 1 October 2011, and early retirement in the interests
+                of the efficiency of the service. NHSBSA also states that abatement rules stop once you
+                reach the normal pension age of the section or scheme you claimed your benefits from,
+                which is 60 in the 1995 section, 65 in the 2008 section, and state pension age or 65 if
+                later in the 2015 scheme. Two exclusions are easy to miss. The Department of Health and
+                Social Care removed abatement from 1 April 2023 for members with Special Class or
+                Mental Health Officer status and for those claiming age retirement benefits before age
+                60. Benefits are also unaffected where you took actuarially reduced early retirement,
+                or where you retired on redundancy on or after 1 October 2011, because in both cases
+                you have already funded the early payment (NHSBSA, Re-employment, read 26 August 2026).
+              </p>
+              <p className="font-semibold text-[var(--navy)]">
+                Why there is no abatement arithmetic here
+              </p>
+              <p>
+                NHSBSA does publish the principle, and it is worth having in plain words: the
+                regulations do not permit a re-employed pensioner to receive more in pension plus
+                re-employed salary than the salary they earned before retirement, and going over that
+                earnings margin reduces the pension rather than stopping it (NHSBSA, Re-employment,
+                read 26 August 2026). What is not restated here is the section by section arithmetic.
+                That sits on NHSBSA&rsquo;s knowledge base, which is served from a subdomain whose TLS
+                certificate had expired when we tried to read it on 26 August 2026, so we could not
+                open the page we would have been quoting. The rest of the NHSBSA site, including its
+                published scheme guides, serves normally. Rather than restate a calculation from a
+                source we could not open, the size of the reduction is recorded here as a gap. Ask
+                NHSBSA for an abatement estimate before you accept a post, not after you start it.
+              </p>
+              <p>
+                Abatement is not an NHS invention. Civil service pension abatement runs on the same
+                principle and is written down more plainly. The Civil Service scheme reduces a pension
+                where your combined post-retirement salary and pension is more than you earned before
+                retirement, measured against a salary of reference set before you retired (Civil
+                Service Pension Scheme, fetched 26 August 2026). Pension abatement civil service
+                questions go to that scheme&rsquo;s administrator. The schemes share the idea and not
+                the rules.
+              </p>
+            </Section>
+
+            {/* Section 8: NHS layer */}
             <Section
               id="nhs-layer"
-              title="Inside the NHS Pension Scheme (England and Wales)"
+              title="How many NHS Pension Scheme members exceeded the allowance?"
             >
               <p>
                 The chart below is drawn from NHSBSA Freedom of Information data (FOI-02228) for the
@@ -520,14 +1036,14 @@ export default function AaIndexPage() {
                       ?.scheme_pays_forms ?? null
                   )}
                   , together about 90% of the roughly 19,900 forms that year (NHSBSA FOI-02711,
-                  submission-date basis, England and Wales). Label clearly as a single-year illustration
-                  on a different counting basis from the table above, so it is not tied into any trend.
+                  submission-date basis, England and Wales). This is a single-year illustration on a
+                  different counting basis from the table above, so it is not tied into any trend.
                 </p>
               </div>
             </Section>
 
-            {/* Section 5: Full HMRC series table */}
-            <Section id="hmrc-series" title="The full HMRC series">
+            {/* Section 9: Full HMRC series table */}
+            <Section id="hmrc-series" title="The full HMRC annual allowance series">
               <div className="not-prose overflow-x-auto">
                 <table className="w-full border-collapse text-sm">
                   <caption className="mb-2 text-left text-xs text-[var(--muted)]">
@@ -537,6 +1053,12 @@ export default function AaIndexPage() {
                     Assessment count is a McCloud reporting artefact (public-service members reported
                     via HMRC&rsquo;s adjustment service, see the Self Assessment section above), not a
                     real decline. Counts rounded to the nearest 10, values to the nearest £1 million.
+                    HMRC Private pension statistics, July 2026 edition, published 30 July 2026. Rows to
+                    2023/24 are from the Table 7 CSV, read 26 August 2026; the 2024/25 row is not yet in
+                    that CSV and is taken from HMRC&rsquo;s published commentary of the same edition,
+                    read the same day, with its 2024/25 standard allowance from gov.uk, Pension schemes
+                    rates. The 2024/25 Accounting for Tax count and value are shown but marked
+                    incomplete and excluded from the chart and mean above.
                   </caption>
                   <thead>
                     <tr className="border-b-2 border-[var(--copper)] text-left">
@@ -559,7 +1081,9 @@ export default function AaIndexPage() {
                   </thead>
                   <tbody>
                     {hmrc.series.map((r) => {
-                      const status = r.provisional
+                      const status = r.aft_incomplete
+                        ? "AfT figures incomplete, excluded from trend"
+                        : r.provisional
                         ? "Provisional"
                         : r.revised
                         ? "Revised"
@@ -574,11 +1098,13 @@ export default function AaIndexPage() {
                           </td>
                           <td className="py-2 pr-3 text-[var(--ink-soft)] text-xs">
                             {r.aft_charges_n !== null ? fmtInt(r.aft_charges_n) : "n/a"}
+                            {r.aft_incomplete ? " (incomplete)" : ""}
                           </td>
                           <td className="py-2 pr-3 text-[var(--ink-soft)] text-xs">
                             {r.aft_charges_value_gbp_m !== null
                               ? fmtGBPm(r.aft_charges_value_gbp_m)
                               : "n/a"}
+                            {r.aft_incomplete ? " (incomplete)" : ""}
                           </td>
                           <td className="py-2 pr-3 text-[var(--ink-soft)] text-xs">
                             {fmtInt(r.sa_individuals_over_aa_n)}
@@ -595,17 +1121,76 @@ export default function AaIndexPage() {
               </div>
             </Section>
 
-            {/* Section 6: Methodology */}
-            <Section id="methodology" title="Methodology and sources">
+            {/* Section 10: Methodology */}
+            <Section
+              id="methodology"
+              title="Methodology: where the annual allowance and lifetime allowance figures come from"
+            >
               <p>
-                <strong>HMRC Private pension statistics, Table 7 (annual allowance), July 2025
-                edition.</strong>{" "}
-                Taken: the standard annual allowance by year; the number and value of annual allowance
-                charges reported through schemes&rsquo; Accounting for Tax returns (Scheme Pays),
-                2012/13 onward; and the number of individuals reporting pension savings above the
-                allowance through Self Assessment, plus the value of those excess contributions,
-                2006/07 onward. This is all UK registered pension schemes; there is no NHS split in
-                this source.
+                <strong>HMRC Private pension statistics, Table 7 (annual allowance), July 2026
+                edition, published 30 July 2026.</strong>{" "}
+                Taken: the standard annual allowance by year. Also taken: the number and value of
+                annual allowance charges reported through schemes&rsquo; Accounting for Tax returns
+                (Scheme Pays), 2012/13 onward. Also taken: the number of individuals reporting pension
+                savings above the allowance through Self Assessment, plus the value of those excess
+                contributions, 2006/07 onward. This is all UK registered pension schemes; there is no
+                NHS split in this source. Rows for 2006/07 to 2023/24 were read from the Table 7 CSV on
+                26 August 2026. That CSV did not carry a 2024/25 row on that date, so the 2024/25
+                figures come from the published commentary for the same edition, read the same day, and
+                the 2024/25 standard allowance of £60,000 comes from gov.uk, Pension schemes rates.
+              </p>
+              <p>
+                <strong>Why 2024/25 is on the page but out of the trend.</strong>{" "}
+                HMRC states that revisions may be particularly substantial for the 2024/25 Accounting
+                for Tax figures, because some public sector pension schemes have been delayed,
+                especially those implementing the McCloud remedy, and the deadline for reporting many
+                2024/25 Scheme Pays cases is February 2027. The published 2024/25 figures are 15,250
+                charges worth £164m. Dividing one by the other gives about £10,800, which would read as
+                a sharp reversal of the falling mean charge. It is not one. It is what a series looks
+                like when the large public sector schemes have not reported yet. So the row is
+                published, labelled incomplete, and excluded from the Scheme Pays chart and from the
+                derived mean-charge table, with the exclusion stated in both places. Suppressing the
+                row entirely would have hidden a published HMRC figure; charting it would have
+                published a false turning point. The 2024/25 Self Assessment count and value carry no
+                such warning and are charted normally.
+              </p>
+              <p>
+                <strong>gov.uk, Pension schemes rates, fetched 26 August 2026.</strong>{" "}
+                Taken: the standard lifetime allowance by tax year, 2011/12 to 2023/24, which is the
+                full span that page publishes. Also taken: the standard individual lump sum allowance
+                of £268,275 and the standard individual lump sum and death benefit allowance of
+                £1,073,100, both listed identically for 2025 to 2026 and 2026 to 2027. The same page
+                gives the 2026/27 annual allowance of £60,000, the money purchase annual allowance of
+                £10,000 and the minimum tapered annual allowance of £10,000. It also gives the
+                £200,000 threshold income limit and the £260,000 adjusted income limit.
+              </p>
+              <p>
+                <strong>
+                  gov.uk, Abolition of the Lifetime Allowance from 6 April 2024, fetched 26 August
+                  2026.
+                </strong>{" "}
+                Taken: the abolition date of 6 April 2024 and the confirmation that the measure was
+                delivered through Finance (No.2) Act 2023 and clarifies the position of individuals
+                holding protections. The separate reduction of the lifetime allowance charge to nil
+                from 6 April 2023 is the earlier step and is stated as such throughout.
+              </p>
+              <p>
+                <strong>HMRC Pensions Tax Manual, PTM174100 and PTM174200, fetched 26 August
+                2026.</strong>{" "}
+                Taken: the rule that the £268,275 lump sum allowance and the £1,073,100 lump sum and
+                death benefit allowance apply unless the individual has a protected right to a higher
+                amount. Per-protection amounts are not published on the current gov.uk protection page
+                and are not stated anywhere on this page.
+              </p>
+              <p>
+                <strong>NHSBSA Re-employment page and Civil Service Pension Scheme, both read 26 August
+                2026.</strong>{" "}
+                Taken: the NHS abatement grounds, the earnings margin principle, the exclusions from
+                1 April 2023, and the rule that abatement stops at normal pension age; and, for
+                contrast, the Civil Service definition of abatement against a salary of reference.
+                NHSBSA&rsquo;s section-by-section abatement arithmetic sits on its knowledge base
+                subdomain, which presented an expired TLS certificate to an automated request that day,
+                so it was not read and no abatement arithmetic is published here.
               </p>
               <p>
                 <strong>NHSBSA FOI-02228.</strong>{" "}
@@ -626,12 +1211,29 @@ export default function AaIndexPage() {
                 Taken: closing active, deferred and pensioner member counts at 31 March 2023, 2024 and
                 2025 (England and Wales), as population context.
               </p>
+              <p>
+                <strong>Two derived figures, and how to reproduce them.</strong>{" "}
+                The mean charge column divides the value of Scheme Pays charges by the number of them,
+                both from the same HMRC Table 7 row, rounded to the nearest £100. The years-of-growth
+                column divides the standard lifetime allowance for a tax year by the standard annual
+                allowance for the same year, rounded to one decimal place. Both are labelled derived
+                wherever they appear. Neither is an estimate, a model or a survey: each is one division
+                of two published figures, and any reader can reproduce them from the two source tables.
+              </p>
 
               <p className="font-semibold text-[var(--navy)]">Honesty caveats</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm">
                 <li>
-                  Annual data with a lag of roughly 18 to 24 months; HMRC publishes each July; the
-                  July 2025 edition reaches 2023/24, still provisional; next release summer 2026.
+                  Annual data with a lag of roughly 18 to 24 months, and HMRC publishes each July.
+                  Every HMRC figure on this page is from the July 2026 edition, published 30 July 2026
+                  and read on 26 August 2026, which reaches 2024/25. That edition revised 2020/21,
+                  2021/22, 2022/23 and 2023/24; 2006/07 to 2019/20 were unchanged. The next edition is
+                  due Summer 2027, and figures published now may be revised again then.
+                </li>
+                <li>
+                  HMRC&rsquo;s 2024/25 Accounting for Tax count and value are flagged incomplete and
+                  are excluded from the Scheme Pays chart and the derived mean-charge table. The Self
+                  Assessment figures for the same year are not affected and are included.
                 </li>
                 <li>
                   The Self Assessment money column is the value of contributions above the allowance,
@@ -677,6 +1279,46 @@ export default function AaIndexPage() {
                     <span className="text-[var(--muted)]">({s.publisher})</span>
                   </li>
                 ))}
+                <li>
+                  <a
+                    href="https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates"
+                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    rel="nofollow"
+                  >
+                    Pension schemes rates (allowances by tax year)
+                  </a>{" "}
+                  <span className="text-[var(--muted)]">(HM Revenue and Customs)</span>
+                </li>
+                <li>
+                  <a
+                    href="https://www.gov.uk/government/publications/abolition-of-the-lifetime-allowance-from-6-april-2024"
+                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    rel="nofollow"
+                  >
+                    Abolition of the Lifetime Allowance from 6 April 2024
+                  </a>{" "}
+                  <span className="text-[var(--muted)]">(HM Revenue and Customs)</span>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nhsbsa.nhs.uk/pensioner-hub/re-employment"
+                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    rel="nofollow"
+                  >
+                    Re-employment and abatement
+                  </a>{" "}
+                  <span className="text-[var(--muted)]">(NHS Business Services Authority)</span>
+                </li>
+                <li>
+                  <a
+                    href="https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm174100"
+                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    rel="nofollow"
+                  >
+                    Pensions Tax Manual PTM174100 (lump sum allowance)
+                  </a>{" "}
+                  <span className="text-[var(--muted)]">(HM Revenue and Customs)</span>
+                </li>
               </ul>
 
               <p className="text-sm">
@@ -690,19 +1332,23 @@ export default function AaIndexPage() {
 
               <p className="text-sm text-[var(--muted)]">
                 All sources are published under the Open Government Licence v3.0. This report is
-                Medical Accountants UK analysis of HMRC and NHSBSA data.
+                Medical Accountants UK analysis of HMRC and NHSBSA data. The downloadable CSV carries
+                the HMRC annual allowance series; the lifetime allowance and lump sum allowance figures
+                are reproduced on the page with their gov.uk source and fetch date.
               </p>
 
               <div className="rounded-xl bg-[var(--surface-elevated)] p-4 text-sm text-[var(--ink-soft)]">
                 <p className="font-semibold text-[var(--navy)]">How to cite</p>
                 <p className="mt-1">
                   Cite as: Medical Accountants UK, Annual Allowance Pension Tax Index, analysis of
-                  HMRC Private pension statistics (July 2025) and NHSBSA data, 2026. Free to reuse
-                  with attribution.
+                  HMRC Private pension statistics (July 2026), gov.uk published allowance rates and
+                  NHSBSA data, 2026. Free to reuse with attribution.
                 </p>
                 <p className="mt-2 text-xs text-[var(--muted)]">
-                  Reviewed on each HMRC annual publication (each July). This edition uses data to the
-                  2023/24 tax year.
+                  Reviewed on each HMRC annual publication (each July). The charge data here is
+                  HMRC&rsquo;s July 2026 edition, published 30 July 2026 and running to the 2024/25 tax
+                  year, incorporated on 26 August 2026. Allowance and lifetime allowance rates were
+                  checked the same day. Next release: HMRC&rsquo;s next annual edition, due Summer 2027.
                 </p>
               </div>
             </Section>
@@ -740,7 +1386,7 @@ export default function AaIndexPage() {
             {/* FAQ */}
             <div className="mt-12">
               <h2 className="text-2xl font-bold text-[var(--navy)] sm:text-3xl">
-                Frequently asked questions
+                Annual allowance and lifetime allowance questions
               </h2>
               <div className="mt-6 space-y-6">
                 {faqs.map((f, i) => (

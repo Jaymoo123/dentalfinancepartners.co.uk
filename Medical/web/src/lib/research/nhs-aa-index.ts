@@ -14,6 +14,8 @@ export interface AaIndexSnapshot {
     hmrc_edition: string;
     latest_year: string;
     provisional_years: string[];
+    /** Years whose Accounting for Tax figures HMRC flags as materially incomplete. */
+    aft_incomplete_years: string[];
     revised_years: string[];
     foi_snapshot_date: string;
     foi_safe_window: string[];
@@ -36,6 +38,13 @@ export interface AaIndexSnapshot {
       sa_excess_value_gbp_m: number;
       provisional: boolean;
       revised: boolean;
+      /**
+       * True where HMRC's Accounting for Tax count and value for the year are
+       * materially incomplete (public sector McCloud reporting delays).  Such a
+       * row is excluded from the derived mean-charge series and from the Scheme
+       * Pays value chart, because its inputs are not comparable with other years.
+       */
+      aft_incomplete?: boolean;
     }>;
   };
   nhs: {

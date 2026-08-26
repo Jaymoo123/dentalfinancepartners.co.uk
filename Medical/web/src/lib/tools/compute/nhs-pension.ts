@@ -4,7 +4,7 @@
  * TL-03: no React, no DOM, no window, no fetch.
  *
  * Calculates the tapered annual allowance and potential tax charge on NHS
- * pension growth for 2025/26.
+ * pension growth for 2026/27 (every figure unchanged from 2025/26).
  */
 
 export type TaxBand = "basic" | "higher" | "additional";
@@ -24,7 +24,8 @@ export type NHSPensionResult = {
   effectiveCost: number;
 };
 
-// 2025/26 (restored 2023) constants
+// 2026/27 constants, verified 2026-08-26 at gov.uk pension-schemes-rates.
+// Identical under "2026 to 2027" and "2025 to 2026"; do not re-tag without re-checking.
 const STANDARD_ALLOWANCE = 60000;
 const MIN_ALLOWANCE = 10000;
 const THRESHOLD_LIMIT = 200000;

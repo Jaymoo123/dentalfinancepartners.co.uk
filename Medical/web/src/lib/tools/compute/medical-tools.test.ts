@@ -18,7 +18,12 @@ import { calcLocumTax } from "./locum-tax";
 import { calcNHSPension } from "./nhs-pension";
 import { calcIncorporation } from "./incorporation";
 import { calcGpPartnerDrawings } from "./gp-partner-drawings";
-import { calcSchemePays } from "./nhs-pension-scheme-pays";
+import {
+  calcSchemePays,
+  getEstimatingFactor,
+  SCHEME_PAYS_CURRENT_REAL_INTEREST_RATE,
+  SCHEME_PAYS_REAL_INTEREST_RATES,
+} from "./nhs-pension-scheme-pays";
 import { calcConsultantPrivateVsNhs, calcIncomeTax, calcClass4, calcAA } from "./consultant-private-vs-nhs";
 import { calcNHSSuperTieredContribution } from "./nhs-superannuation-tiered-contribution";
 
@@ -306,33 +311,31 @@ describe("calcNHSSuperTieredContribution — golden tests (roster Tool 4 worked 
 // ── NHS Pension Scheme Pays golden tests ──────────────────────────────────────
 
 describe("calcSchemePays — golden tests (hand-verified)", () => {
-  it("roster example: charge=8000 growth=70000 age=45 higher", () => {
-    // factor age 45 (band 45-49) = 19.7; years to 68 = 23
-    // debit = 8000 * 1.0235^23 = 8000 * 1.7061648 = 13,649.32
-    // reduction = 13,649.32 / 19.7 = 692.86/yr
-    // break-even = 8000 / 692.86 = 11.55 years
+  it("roster example: charge=8000 growth=70000 age=45 higher, 2015 Scheme NPA 68", () => {
+    // NHSBSA Source A table 2, indexed by complete years to NPA: 68 - 45 = 23
+    // years, factor 12.1. Reduction = charge / factor = 8000 / 12.1 = 661.16/yr
+    // in current day terms. Break-even = charge / reduction = the factor.
     const r = calcSchemePays({ annualAllowanceCharge: 8000, schemeGrowth: 70000, age: 45, marginalRate: "higher" });
     expect(r.mandatoryEligible).toBe(true);
     expect(r.cashNow).toBe(8000);
     expect(r.yearsToRetirement).toBe(23);
-    expect(r.actuarialFactor).toBe(19.7);
-    expect(r.debitAtRetirement).toBeCloseTo(13649.32, 1);
-    expect(r.annualPensionReduction).toBeCloseTo(692.86, 1);
-    expect(r.breakEvenYears).toBeCloseTo(11.55, 2);
+    expect(r.factorTable).toBe("table2-2015");
+    expect(r.actuarialFactor).toBe(12.1);
+    expect(r.annualPensionReduction).toBeCloseTo(661.16, 2);
+    expect(r.breakEvenYears).toBeCloseTo(12.1, 2);
     expect(r.marginalRateValue).toBe(0.4);
+    // 2015 Scheme: pension only, no lump sum reduction.
+    expect(r.lumpSumReduction).toBe(0);
   });
 
-  it("older member: charge=25000 growth=85000 age=55 additional", () => {
-    // factor age 55 (band 55-59) = 16.6; years to 68 = 13
-    // debit = 25000 * 1.0235^13 = 25000 * 1.3525147 = 33,812.87
-    // reduction = 33,812.87 / 16.6 = 2,036.92/yr
-    // break-even = 25000 / 2036.92 = 12.27 years
+  it("older member: charge=25000 growth=85000 age=55 additional, 2015 Scheme NPA 68", () => {
+    // 68 - 55 = 13 years to NPA, table 2 factor 14.5.
+    // reduction = 25000 / 14.5 = 1,724.14/yr; break-even = 14.5 years.
     const r = calcSchemePays({ annualAllowanceCharge: 25000, schemeGrowth: 85000, age: 55, marginalRate: "additional" });
     expect(r.mandatoryEligible).toBe(true);
-    expect(r.actuarialFactor).toBe(16.6);
-    expect(r.debitAtRetirement).toBeCloseTo(33812.87, 1);
-    expect(r.annualPensionReduction).toBeCloseTo(2036.92, 1);
-    expect(r.breakEvenYears).toBeCloseTo(12.27, 2);
+    expect(r.actuarialFactor).toBe(14.5);
+    expect(r.annualPensionReduction).toBeCloseTo(1724.14, 2);
+    expect(r.breakEvenYears).toBeCloseTo(14.5, 2);
   });
 
   it("charge at £2,000 exactly: NOT mandatory (must exceed floor)", () => {
@@ -345,13 +348,12 @@ describe("calcSchemePays — golden tests (hand-verified)", () => {
     expect(r.mandatoryEligible).toBe(false);
   });
 
-  it("age 67 (last band): 1 year to NPA, factor 12.9", () => {
-    // debit = 10000 * 1.0235 = 10,235; reduction = 10235 / 12.9 = 793.41/yr
+  it("age 67: 1 year to NPA 68, table 2 first row factor 18.2", () => {
+    // reduction = 10000 / 18.2 = 549.45/yr
     const r = calcSchemePays({ annualAllowanceCharge: 10000, schemeGrowth: 90000, age: 67, marginalRate: "higher" });
     expect(r.yearsToRetirement).toBe(1);
-    expect(r.actuarialFactor).toBe(12.9);
-    expect(r.debitAtRetirement).toBeCloseTo(10235, 1);
-    expect(r.annualPensionReduction).toBeCloseTo(793.41, 1);
+    expect(r.actuarialFactor).toBe(18.2);
+    expect(r.annualPensionReduction).toBeCloseTo(549.45, 2);
   });
 
   it("zero charge: no reduction, null break-even", () => {
@@ -359,6 +361,99 @@ describe("calcSchemePays — golden tests (hand-verified)", () => {
     expect(r.mandatoryEligible).toBe(false);
     expect(r.annualPensionReduction).toBe(0);
     expect(r.breakEvenYears).toBeNull();
+  });
+});
+
+/**
+ * Source-tied checks, NOT restated constants.
+ *
+ * The previous version of this suite asserted an invented nine-band age table
+ * and an invented 2.35% nominal interest rate. It passed, because it only ever
+ * compared the code against itself. These assertions instead pin the code to
+ * figures NHSBSA states in its own words, so a factor table swapped for an
+ * invented one fails here even if every golden output is updated to match it.
+ *
+ * Source: NHSBSA member factsheet "NHS Pensions — Annual Allowance —
+ * Estimating the cost of Scheme Pays", V5, file stamped 20240712, read
+ * 2026-08-26. Tables stamped "Factors in force from 30 March 2023".
+ */
+describe("calcSchemePays — tied to NHSBSA's published worked examples", () => {
+  it("NHSBSA example 1: 1995 Section, NPA 60, currently aged 45 => factor 20.1", () => {
+    // Factsheet, verbatim: "If you are a member of the 1995 Section with a
+    // normal pension age of 60 and currently aged 45, the factor you would use
+    // is 20.1".
+    expect(getEstimatingFactor("1995-60", 45, 60).factor).toBe(20.1);
+    expect(getEstimatingFactor("1995-60", 45, 60).table).toBe("table1-1995-2008");
+  });
+
+  it("NHSBSA example 2: 2015 Scheme, 23 years from NPA 68 => factor 12.1", () => {
+    // Factsheet, verbatim: "If you are a member of the 2015 Scheme and 23 years
+    // away from your NPA of 68, the factor you would use is 12.1".
+    expect(getEstimatingFactor("2015", 45, 68).factor).toBe(12.1);
+    expect(getEstimatingFactor("2015", 45, 68).table).toBe("table2-2015");
+  });
+
+  it("published table endpoints match the factsheet as printed", () => {
+    // Table 1 first and last printed rows, all three NPA columns.
+    expect(getEstimatingFactor("1995-55", 22, 55).factor).toBe(17.1);
+    expect(getEstimatingFactor("1995-60", 22, 60).factor).toBe(14.2);
+    expect(getEstimatingFactor("2008", 22, 65).factor).toBe(10.1);
+    expect(getEstimatingFactor("1995-55", 70, 55).factor).toBe(18.8);
+    expect(getEstimatingFactor("2008", 70, 65).factor).toBe(15.8);
+    // Table 2 first and last printed rows: 1 year => 18.2, 50 years => 8.2.
+    expect(getEstimatingFactor("2015", 67, 68).factor).toBe(18.2);
+    expect(getEstimatingFactor("2015", 18, 68).factor).toBe(8.2);
+  });
+
+  it("factors fall with years to NPA and the table is monotonic, as published", () => {
+    // Table 2 is strictly non-increasing from 1 to 50 years. An age-banded or
+    // otherwise invented table would not reproduce this shape against
+    // years-to-NPA, which is how the fabricated table differed.
+    let previous = Infinity;
+    for (let years = 1; years <= 50; years += 1) {
+      const f = getEstimatingFactor("2015", 68 - years, 68).factor;
+      expect(f).toBeLessThanOrEqual(previous);
+      previous = f;
+    }
+  });
+
+  it("the published METHOD holds: reduction = charge / factor, lump sum = 3 x reduction", () => {
+    // Factsheet, verbatim: "Reduction to pension: Annual Allowance charge ÷
+    // [Factor 1 or Factor 2]" and "Reduction to lump sum (1995 Section members
+    // only): 3 x reduction in pension". No interest is compounded on top: the
+    // factsheet says the factors "do not include the relevant interest rate in
+    // excess of inflation up to retirement" and the answer is "in current day
+    // terms". Compounding a nominal rate here would break this identity.
+    const r = calcSchemePays({
+      annualAllowanceCharge: 8000,
+      schemeGrowth: 70000,
+      age: 45,
+      marginalRate: "higher",
+      section: "1995-60",
+    });
+    expect(r.actuarialFactor).toBe(20.1);
+    expect(r.annualPensionReduction).toBeCloseTo(8000 / 20.1, 10);
+    expect(r.lumpSumReduction).toBeCloseTo(3 * r.annualPensionReduction, 10);
+    // 2008 Section and 2015 Scheme reduce the pension only.
+    expect(
+      calcSchemePays({
+        annualAllowanceCharge: 8000,
+        schemeGrowth: 70000,
+        age: 45,
+        marginalRate: "higher",
+        section: "2008",
+      }).lumpSumReduction,
+    ).toBe(0);
+  });
+
+  it("interest is a real rate in excess of CPI, and is disclosure only", () => {
+    // Factsheet, verbatim: "interest applied from 31 March 2023: 1.7% in excess
+    // of inflation", with 2.4%, 2.8% and 3.0% for the earlier tranches. These
+    // are excess-over-CPI rates, never a nominal rate to compound.
+    expect(SCHEME_PAYS_CURRENT_REAL_INTEREST_RATE).toBe(0.017);
+    expect(SCHEME_PAYS_REAL_INTEREST_RATES.map((t) => t.excessOverCpi)).toEqual([
+      0.03, 0.028, 0.024, 0.017,
+    ]);
   });
 });
 

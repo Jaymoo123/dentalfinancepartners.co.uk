@@ -22,6 +22,8 @@ keyTakeaways:
 - "Statements are only visible to users holding the GPP - Statements role, which the practice's PCSE Online user administrator must assign before any reconciliation is possible."
 - "Global Sum follows the registered and Carr-Hill-weighted list, so a list that has grown but not been updated, or a stale weighting, quietly understates the payment."
 - "A partner is taxed on their profit share, not their drawings, so an unrecovered underpayment understates trading profit and therefore every partner's share."
+- "Every statement line carries a paycode assigned from the claim type and the contract type, and PCSE publishes the full list as its Paycodes and Payment Types file, so a code should be looked up rather than guessed at from its letters."
+- "Payment questions go through the PCSE Online enquiry form or the Customer Support Centre on 0333 014 2884, but a dispute about the contract value itself belongs to the ICB, because PCSE cannot pay what the contract does not say."
 summary: "A GP practice is paid for its NHS work through a monthly PCSE statement, but the amounts are not always right: Global Sum can lag a list-size or weighting change, QOF and enhanced-services payments can be late or short, and premises figures can drift. This guide explains how to read the PCSE Online statement, how to reconcile each line against the Statement of Financial Entitlements and the practice's contract, and how to spot, query and recover an underpayment, with the discipline tied back to accurate trading profit and the partners' shares."
 schema: ""
 faqs:
@@ -53,6 +55,14 @@ faqs:
     answer: "Because the partners are taxed on, and paid from, the practice's profit. An unrecovered underpayment understates the practice's trading profit, and therefore understates every partner's profit share. Recovering it is not just an administrative tidy-up; it is real money that belongs to the partners. That is why reconciliation is a year-end and partnership-fairness point, not only a cash-flow one."
   - question: "Where do I check what we should be paid?"
     answer: "Against the current Statement of Financial Entitlements and the practice's own contract and ICB agreements for locally commissioned services. Because the Global Sum, QOF point value, enhanced-service rates and premises figures are uplifted annually, always use the current-year source rather than a previous year's numbers. For how each stream is calculated, see our Global Sum, QOF, enhanced-services and PCN funding guides."
+  - question: "How do I contact PCSE about a payment query?"
+    answer: "Use the PCSE Online enquiry form for the GP Payments service, choosing a new enquiry to raise a claim or payment issue and an existing enquiry to follow up a case already open. Choosing the wrong one opens a second case rather than chasing the first. The Customer Support Centre takes calls on 0333 014 2884 between 8:00 and 17:00, Monday to Friday. Post goes to Primary Care Support England, PO Box 350, Darlington, DL1 9QN. A dispute about the contract value itself goes to the ICB, not to PCSE, because PCSE cannot pay what the contract does not say."
+  - question: "What is the PCSE phone number?"
+    answer: "The PCSE phone number for the Customer Support Centre is 0333 014 2884, covering all services from 8:00 to 17:00, Monday to Friday, as published on the PCSE contact us page and in the PCSE statements user guide. For a payment or statement question the online enquiry form is usually the better route, because it creates a case reference the practice can quote when following up. Keep the reference: a payment query rarely resolves inside one statement cycle, and the reference is what makes a follow-up a chase rather than a restart."
+  - question: "What is a PCSE type 2 form, and who has to file one?"
+    answer: "The Type 2 self-assessment, which practices usually call the PCSE type 2 form, is filed by a salaried GP so the correct tiered NHS pension contribution is recorded against their pension record. A GP partner or non-GP partner files the Type 1 Annual Certificate of Pensionable Profits instead. Both run to 28 February a year in arrears, so the 2025/26 pension year is due by 28 February 2027. The practice separately files an Estimate of Pensionable Profits, which sets the in-year contribution tier."
+  - question: "How do we change the email address our remittance advice goes to?"
+    answer: "Use the Remittance Advice Email Address Amendment form on PCSE's GP Payments resources page rather than raising a general enquiry, because the change needs the form to be actioned. Changing the practice bank details is a separate form again, the GP Practice Banking Declaration Form, on the same page. Both sit alongside the statements user guide and the Paycodes and Payment Types file. Getting the remittance address right matters for reconciliation, because the remittance advice is what ties a bank receipt back to a statement line."
 ---
 
 <p>A GP practice is paid for its NHS work through a monthly <strong>payment statement from PCSE</strong> (Primary Care Support England), and the amounts are set by the GMS Statement of Financial Entitlements and the practice's own contract. The problem is that the payments are not always right. Global Sum can be wrong if the list size or the Carr-Hill weighting is out of date, QOF and enhanced-services achievement can be paid late or short, and premises payments can drift.</p>
@@ -179,6 +189,99 @@ faqs:
 <p>Tie it to the accounts, because a clean reconciliation feeds accurate trading profit, which feeds the partners' profit share and the year-end accounts; see our <a href="/blog/gp-accounting-guide">GP accounting guide</a> and <a href="/blog/gp-bookkeeping-guide-uk">GP bookkeeping guide</a> for how it joins up. The reconciliation also makes the year-end smoother: when the accounts are prepared, the NHS income has already been checked line by line against source, so there are no late surprises and no scramble to explain a figure that does not match the statement. In effect, a good monthly reconciliation is most of the year-end income work done in advance.</p>
 
 <p>This is also a year-end and partnership-fairness point. An unrecovered underpayment understates the practice's trading profit and therefore every partner's share, and the partners are taxed on, and paid from, that profit. For how the reconciled profit is then taxed, see our <a href="/blog/gp-partnership-tax-complete-guide">complete guide to GP partnership tax</a>; the headline is that a partner is taxed on their profit share, not their drawings, so an accurate profit figure matters to every partner.</p>
+
+<h2>What Does PCSE Stand For, and How Do You Contact Them?</h2>
+
+<p>PCSE stands for Primary Care Support England, the service that administers GP payments, pension records and primary-care support in England on behalf of NHS England. The PCSE meaning matters for one practical reason: it tells you which body owns your problem. Wales is served by the local health board, and Scotland and Northern Ireland have separate arrangements, so these routes apply to English practices only.</p>
+
+<p>There are three live PCSE contact routes and they are not interchangeable. The <strong>PCSE Online enquiry form</strong> is the route for anything about a claim, a payment or a statement line. The PCSE contact number for the Customer Support Centre is <strong>0333 014 2884</strong>, open 8:00 to 17:00, Monday to Friday. Post goes to Primary Care Support England, PO Box 350, Darlington, DL1 9QN.</p>
+
+<p>The PCSE contact us page splits GP Payments enquiries into two forms, and picking the wrong one costs weeks. Use a <strong>new</strong> enquiry to submit a payments form, to query a particular claim or payment, or to ask for guidance. Use an <strong>existing</strong> enquiry when you are following up, or adding information to, a case you already have open. Raising a fresh case about an open issue starts a second queue instead of chasing the first.</p>
+
+<p>Where the PCSE enquiries route stalls, escalate in order rather than sideways. A dispute about the contract value itself goes to the commissioner, the ICB, because PCSE cannot pay what the contract does not say. A service failure goes to PCSE's own complaints route and then to NHS England if it stays unresolved. For a pension record specifically, the BMA publishes a further ladder that ends with the Pensions Ombudsman and the Pensions Regulator.</p>
+
+<p>Two routine changes have their own forms rather than an enquiry. Changing the practice bank details uses the GP Practice Banking Declaration Form. Changing the address that remittance advice is emailed to uses the Remittance Advice Email Address Amendment form. Both sit on PCSE's GP Payments resources page, alongside the statements user guide.</p>
+
+<h2>What Do the Paycodes on Your PCSE Statement Mean?</h2>
+
+<p>Every line on the expanded statement carries a paycode and a description, and the paycode is the field you can match reliably month to month. PCSE assigns it from the claim type your practice chose and the contract type your practice holds, so the same payment carries a different code under GMS, PMS and APMS. The full list is published as the Paycodes and Payment Types file on PCSE's GP Payments resources page.</p>
+
+<p>The final letter usually marks the contract type: G for GMS, P for PMS, A for APMS. A small number of codes in PCSE's own file break that pattern, so read the description rather than inferring a meaning from the letters. Most codes also appear a second time with an "(Adjustment)" payment type, which is how a correction to an earlier month arrives on a later statement.</p>
+
+<table>
+<caption>Common PCSE paycodes, GMS variants shown. Verified against PCSE's Paycodes and Payment Types file, updated December 2024, read 26 August 2026.</caption>
+<thead>
+<tr><th>Paycode</th><th>What the line is</th></tr>
+</thead>
+<tbody>
+<tr><td>GSUMG</td><td>Global Sum</td></tr>
+<tr><td>QUASPG</td><td>QOF aspiration payment</td></tr>
+<tr><td>QUACHG</td><td>QOF achievement payment</td></tr>
+<tr><td>SEN</td><td>Seniority Allowance</td></tr>
+<tr><td>COST</td><td>Cost rents and local authority economic rents</td></tr>
+<tr><td>PREMG</td><td>Premises, other</td></tr>
+<tr><td>DISPQG</td><td>Dispensing Scheme</td></tr>
+<tr><td>DESPRG</td><td>DES participation in the PCN</td></tr>
+<tr><td>GPFTG</td><td>GP Foundation Trainer Grant</td></tr>
+<tr><td>LOCADG</td><td>Locum allowances, maternity and paternity</td></tr>
+<tr><td>LOCSIG</td><td>Locum allowance, sickness</td></tr>
+<tr><td>ZNPT2G</td><td>Near patient testing, level 2</td></tr>
+</tbody>
+</table>
+
+<p>Do not guess at a code that is not in that table. PCSE's file lists more than a thousand of them, including every local enhanced service, and the letters are not a reliable clue. Look the code up in the published file first, then check the description on the statement line, and only raise a query if the two do not match what you claimed.</p>
+
+<h2>What Does GPP Mean on a PCSE Statement?</h2>
+
+<p>GPP is PCSE's shorthand for the GP Payments and Pensions service inside PCSE Online, which is where the practice statement lives. It is not a payment type and it is not a paycode, which is why looking for it in the paycode file returns nothing. Practices meet the abbreviation in two places: the <strong>GPP - Statements</strong> user role, and the way PCSE labels the statement screens themselves.</p>
+
+<p>To view a GPP statement, log in to PCSE Online, click GP Payments, choose Payments, then click Statements and search by organisation code, statement type or date. Anything produced before GP payments moved into PCSE Online sits separately, under Migrated Statements, where up to six years of your earlier statements were carried across. That is where to look for finance statements prior to PCSE Online rather than assuming they were lost.</p>
+
+<h2>Can Your Accountant See the PCSE Statements Directly?</h2>
+
+<p>Yes, and it is worth arranging. Statement access is controlled entirely by your own PCSE Online user administrator, who can assign the GPP - Statements role to any named user, including an external accountant working on the practice accounts. Direct access removes the monthly cycle of exporting PDFs and emailing them, and it means the reconciliation is done on the same expanded CSV you see.</p>
+
+<p>Treat it as a named-user permission, not a shared login. The role sits with an individual, so it is assigned when someone joins the work and removed when they leave it. That keeps your audit trail clean and avoids the common problem of a statement being invisible to the one person who needs it at year-end.</p>
+
+<h2>Which PCSE Pension Forms Does the Practice Still Have to File?</h2>
+
+<p>The PCSE pensions pages are a separate surface from your payment statement, and confusing the two wastes queries. The payment statement records what the practice was paid. The <strong>PCSE Contributions Statement</strong> records what was deducted and credited against pension records. A contribution that is missing from a pension record is a pensions query, not a payments query, and it goes down a different route.</p>
+
+<p>Three end-of-year filings run to <strong>28 February a year in arrears</strong>. A GP partner or non-GP partner files the Type 1 Annual Certificate of Pensionable Profits. A salaried GP files the Type 2 self-assessment, the form most practices refer to as the type 2 pension form. The practice files the forward-looking Estimate of Pensionable Profits, which sets the in-year contribution tier so the year-end reconciliation is small. On that cycle, the 2025/26 pension year is due by 28 February 2027.</p>
+
+<p>Freelance locum work runs on a far shorter clock. PCSE will not pension a period of freelance GP locum work that ended more than <strong>10 weeks</strong> ago, and forms received after that window are rejected. That is permanently lost pension accrual rather than a late-filing penalty, so if you engage freelance locums, approve Form A promptly rather than at month-end. Our guide to <a href="/blog/nhs-pension-for-locums-form-a-form-b">NHS pension Form A and Form B for locums</a> covers the mechanics.</p>
+
+<h2>When Should You Check Each Line, and What Do You Need to Hand?</h2>
+
+<p>Reconciliation works better as a rhythm than as a single annual sweep, because different lines go wrong at different points in your contract year. The contract year runs from 1 April, so the first statement of the year is the one to read hardest.</p>
+
+<table>
+<caption>A practical reconciliation year. Pension deadlines verified at PCSE, 26 August 2026; the contract year is the 2026/27 GMS year.</caption>
+<thead>
+<tr><th>When</th><th>What to check</th></tr>
+</thead>
+<tbody>
+<tr><td>Every month</td><td>Expanded CSV against expected income, line by line, including every adjustment and deduction</td></tr>
+<tr><td>April</td><td>That the first statement of the contract year has repriced the contract value and the enhanced-service rates</td></tr>
+<tr><td>Each quarter</td><td>That the list size and Carr-Hill weighting behind the Global Sum are current</td></tr>
+<tr><td>After the QOF year end</td><td>The achievement payment against the points actually recorded as achieved</td></tr>
+<tr><td>By 28 February</td><td>Type 1 certificate, Type 2 self-assessment and the practice Estimate of Pensionable Profits, for the year a year in arrears</td></tr>
+<tr><td>Within 10 weeks</td><td>Freelance locum Form A approval and Form B submission, or the accrual is lost</td></tr>
+</tbody>
+</table>
+
+<p>Before you raise any query, assemble the same short evidence pack every time:</p>
+
+<ul>
+<li>The expanded CSV statement for the month in question, and the month either side.</li>
+<li>The paycode and description of the line at issue.</li>
+<li>The claim you submitted, with its date and reference.</li>
+<li>The expected amount, and how it was calculated.</li>
+<li>The amount actually paid, and the variance between the two.</li>
+<li>Any earlier case reference, so the enquiry is filed as a follow-up.</li>
+</ul>
+
+<p>Take a practice that arranged sickness locum cover for six weeks and claimed cover at £1,400 a week, giving an expected £8,400 against paycode LOCSIG. The statement shows £5,600. Dividing £5,600 by the £1,400 weekly claim gives four weeks paid, so £8,400 less £5,600 leaves a £2,800 variance and two weeks unaccounted for. That is a specific, evidenced query rather than a vague one: two named weeks, one paycode, one figure. The figures here are illustrative, and what changes the answer is the claim you actually submitted, so check the weeks you claimed before assuming the payment is wrong.</p>
 
 <h2>How We Help Practices Reconcile NHS Income</h2>
 

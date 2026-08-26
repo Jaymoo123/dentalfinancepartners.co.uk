@@ -494,8 +494,6 @@
     "trustpilot",
     "companies-house",
     "contact-hmrc",
-    "helpline",
-    "phone-number",
     "government-gateway",
     "personal-tax-account",
     "minimum-wage",
@@ -949,5 +947,6 @@
         "performers-list"
       ]
     }
-  ]
+  ],
+  "_lane_negative_tokens_note": "helpline/phone-number style tokens were removed 2026-08-26: on this niche they carry REAL intent (the PCSE contact family is ~24,920/mo of genuine GP-practice demand and a named NO-PAGE topic in cluster_dossier_2026-08-26.md), not navigational noise. Re-adding them would veto a topic we have decided to cover."
 }

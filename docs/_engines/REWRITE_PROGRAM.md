@@ -240,7 +240,10 @@ Google (GSC 90d) and Bing (`GetRankAndTrafficStats` / page stats) figures onto t
 | Grade | Test | What is allowed |
 |---|---|---|
 | REFRAME | Google impressions < 300 AND Bing clicks = 0 AND Bing impressions < 300 | metaTitle, H1, H2s, body, FAQ. Full rewrite against the topic's keyword set. |
-| EXTEND | Bing clicks >= 3 OR Bing impressions >= 300 OR Google clicks >= 1 OR Google impressions >= 300 | ADDITIVE ONLY. Keep metaTitle, H1 and existing H2 order. Add new H2 blocks and FAQ entries carrying the missing phrasings. |
+| EXTEND | Bing clicks >= 3 OR Bing impressions >= 300 OR Google clicks >= 1 OR Google impressions >= 300 | ADDITIVE ONLY. Keep metaTitle, H1 and existing H2 order. Add new H2 blocks and FAQ entries carrying the missing phrasings. **Clarified 2026-08-26 (Medical batch 1): EXTEND restricts STRUCTURE AND POSITIONING, never TRUTH.** The additive-only constraint exists to protect the equity that lives in the metaTitle, H1, H2 order and matched queries. A factual correction inside frozen copy that changes no heading, reorders nothing and does not alter what the page is about carries no equity risk and is REQUIRED, not merely permitted: leaving a stale year tag or a wrong figure on a live page fails the quality bar regardless of grade. Writers note such edits in a one-line addendum so QA does not read them as scope creep. |
+
+**Corollary on scoring an EXTEND page (same date, same batch).** A frozen structure can make the language spec's structural bands unreachable: the Medical QOF page landed at 42% question-form headings against a 50-75% band, and 19 FAQs against a 4-8 band, purely because 7 existing H2s and 14 existing FAQs could not be touched. Those are consequences of the grade, not defects. Editorial QA scores an EXTEND page against the EXTEND reality, and a writer must never contort a page to hit a band the grade forbids it from reaching.
+
 | NO-PAGE | no page scores above threshold | Attach the cluster to the nearest hub as a new section, or queue a single new page. Never a page per keyword. |
 
 Bing is graded FIRST and more conservatively than Google. On Property, Bing returns roughly twice

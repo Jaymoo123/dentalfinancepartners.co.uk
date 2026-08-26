@@ -1,21 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-07-06",
-    "retrieved_date": "2026-07-06",
-    "hmrc_publication_date": "2025-07-31",
-    "hmrc_edition": "July 2025",
-    "latest_year": "2023/24",
-    "provisional_years": [
-      "2023/24"
+    "generated_at": "2026-08-26",
+    "retrieved_date": "2026-08-26",
+    "hmrc_publication_date": "2026-07-30",
+    "hmrc_edition": "July 2026",
+    "latest_year": "2024/25",
+    "provisional_years": [],
+    "aft_incomplete_years": [
+      "2024/25"
     ],
     "revised_years": [
-      "2016/17",
-      "2017/18",
-      "2018/19",
-      "2019/20",
       "2020/21",
       "2021/22",
-      "2022/23"
+      "2022/23",
+      "2023/24"
     ],
     "foi_snapshot_date": "2024-09-26",
     "foi_safe_window": [
@@ -28,11 +26,11 @@
       "2021/22"
     ],
     "nhs_scope": "England and Wales",
-    "temporal_coverage": "2006-04-06/2024-04-05",
+    "temporal_coverage": "2006-04-06/2025-04-05",
     "license": "Open Government Licence v3.0",
     "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "update_cadence": "Annual. HMRC publishes each July; the next edition is due Summer 2026.",
-    "next_release": "Summer 2026",
+    "update_cadence": "Annual. HMRC publishes each July; this is the July 2026 edition, published 30 July 2026, and the next edition is due Summer 2027.",
+    "next_release": "Summer 2027",
     "sources": [
       {
         "name": "Private pension statistics (Table 7, annual allowance)",
@@ -59,7 +57,7 @@
         "licence": "OGL v3.0"
       }
     ],
-    "notes": "The recurring money and count series is HMRC data for all UK registered pension schemes; there is no NHS split in that source. The NHS layer is an NHSBSA FOI snapshot for the England and Wales scheme. The Self Assessment value column is contributions above the allowance, not a tax charge. Scheme Pays (Accounting for Tax) values begin in 2012/13. FOI figures for 2022/23 and 2023/24 are excluded as undercounted at the snapshot date."
+    "notes": "The recurring money and count series is HMRC data for all UK registered pension schemes; there is no NHS split in that source. The NHS layer is an NHSBSA FOI snapshot for the England and Wales scheme. The Self Assessment value column is contributions above the allowance, not a tax charge. Scheme Pays (Accounting for Tax) values begin in 2012/13. FOI figures for 2022/23 and 2023/24 are excluded as undercounted at the snapshot date. Rows for 2006/07 to 2023/24 are taken from the Table 7 CSV of the July 2026 edition (read 26 August 2026). The 2024/25 row is not yet in that CSV and is taken from the HMRC Private pension statistics commentary of 30 July 2026 (read 26 August 2026); its Accounting for Tax count and value are flagged aft_incomplete because HMRC states revisions may be particularly substantial for 2024/25 AfT figures, some public sector schemes having been delayed by the McCloud remedy with a reporting deadline of February 2027. The aft_incomplete flag excludes that row from the derived mean-charge series and from the Scheme Pays chart. The 2024/25 standard annual allowance of GBP 60,000 is the legislated figure from gov.uk, Pension schemes rates, read 26 August 2026."
   },
   "hmrc": {
     "series": [
@@ -171,7 +169,7 @@
         "sa_individuals_over_aa_n": 18720,
         "sa_excess_value_gbp_m": 584,
         "provisional": false,
-        "revised": true
+        "revised": false
       },
       {
         "tax_year": "2017/18",
@@ -181,7 +179,7 @@
         "sa_individuals_over_aa_n": 29990,
         "sa_excess_value_gbp_m": 914,
         "provisional": false,
-        "revised": true
+        "revised": false
       },
       {
         "tax_year": "2018/19",
@@ -191,7 +189,7 @@
         "sa_individuals_over_aa_n": 34490,
         "sa_excess_value_gbp_m": 824,
         "provisional": false,
-        "revised": true
+        "revised": false
       },
       {
         "tax_year": "2019/20",
@@ -201,14 +199,14 @@
         "sa_individuals_over_aa_n": 45210,
         "sa_excess_value_gbp_m": 1011,
         "provisional": false,
-        "revised": true
+        "revised": false
       },
       {
         "tax_year": "2020/21",
         "standard_aa_gbp": 40000,
-        "aft_charges_n": 20070,
-        "aft_charges_value_gbp_m": 216,
-        "sa_individuals_over_aa_n": 44290,
+        "aft_charges_n": 20120,
+        "aft_charges_value_gbp_m": 217,
+        "sa_individuals_over_aa_n": 44300,
         "sa_excess_value_gbp_m": 822,
         "provisional": false,
         "revised": true
@@ -216,32 +214,43 @@
       {
         "tax_year": "2021/22",
         "standard_aa_gbp": 40000,
-        "aft_charges_n": 50590,
-        "aft_charges_value_gbp_m": 328,
-        "sa_individuals_over_aa_n": 56270,
-        "sa_excess_value_gbp_m": 1288,
+        "aft_charges_n": 50110,
+        "aft_charges_value_gbp_m": 329,
+        "sa_individuals_over_aa_n": 56370,
+        "sa_excess_value_gbp_m": 1290,
         "provisional": false,
         "revised": true
       },
       {
         "tax_year": "2022/23",
         "standard_aa_gbp": 40000,
-        "aft_charges_n": 54920,
-        "aft_charges_value_gbp_m": 348,
-        "sa_individuals_over_aa_n": 34190,
-        "sa_excess_value_gbp_m": 728,
+        "aft_charges_n": 55070,
+        "aft_charges_value_gbp_m": 349,
+        "sa_individuals_over_aa_n": 34370,
+        "sa_excess_value_gbp_m": 732,
         "provisional": false,
         "revised": true
       },
       {
         "tax_year": "2023/24",
         "standard_aa_gbp": 60000,
-        "aft_charges_n": 49590,
-        "aft_charges_value_gbp_m": 350,
-        "sa_individuals_over_aa_n": 23370,
-        "sa_excess_value_gbp_m": 466,
-        "provisional": true,
-        "revised": false
+        "aft_charges_n": 49790,
+        "aft_charges_value_gbp_m": 353,
+        "sa_individuals_over_aa_n": 24950,
+        "sa_excess_value_gbp_m": 505,
+        "provisional": false,
+        "revised": true
+      },
+      {
+        "tax_year": "2024/25",
+        "standard_aa_gbp": 60000,
+        "aft_charges_n": 15250,
+        "aft_charges_value_gbp_m": 164,
+        "sa_individuals_over_aa_n": 30440,
+        "sa_excess_value_gbp_m": 672,
+        "provisional": false,
+        "revised": false,
+        "aft_incomplete": true
       }
     ]
   },
@@ -376,17 +385,17 @@
     ]
   },
   "headline": {
-    "scheme_pays_value_latest_gbp_m": 350,
+    "scheme_pays_value_latest_gbp_m": 353,
     "scheme_pays_value_latest_year": "2023/24",
     "scheme_pays_value_2016_17_gbp_m": 64,
-    "sa_peak_individuals": 56270,
+    "sa_peak_individuals": 56370,
     "sa_peak_year": "2021/22",
     "sa_2016_17_individuals": 18720,
     "nhs_officer_peak_2021_22": 46135,
     "nhs_practitioner_2021_22": 7991,
     "aa_2006_07_gbp": 215000,
     "aa_latest_gbp": 60000,
-    "aa_latest_year": "2023/24",
+    "aa_latest_year": "2024/25",
     "member_active_latest": 1872287,
     "member_active_latest_as_at": "2025-03-31"
   }
