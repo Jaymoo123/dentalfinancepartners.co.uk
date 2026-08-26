@@ -13,6 +13,13 @@
 -- secret is never committed to the repo. Placeholders below:
 --   __ENDPOINT_URL__       e.g. https://www.propertytaxpartners.co.uk/api/leads/sync
 --   __LEADS_SYNC_SECRET__  matches the LEADS_SYNC_SECRET env var on the endpoint
+--
+-- APPLIED TO PRODUCTION 2026-08-26, verified end to end with a real insert.
+--
+-- Reaching api.supabase.com from this repo: use curl, NOT Python's urllib.
+-- Cloudflare fronts that host and blocks urllib on its fingerprint, returning a
+-- bare 403 whose body is "error code: 1010". It reads exactly like an expired
+-- token and cost an unnecessary token rotation on 2026-08-26.
 -- ============================================================================
 
 create extension if not exists pg_net;
@@ -44,9 +51,14 @@ $$;
 
 drop trigger if exists leads_to_sheets_trg on public.leads;
 
+-- The WHEN clause mirrors leads_to_email_trg and leads_to_enrich_trg: a
+-- resource-gate signup is somebody downloading a guide, not an enquiry, so it
+-- does not email anyone and must not appear in the triage tracker as a lead
+-- either. Without this the sheet quietly fills with non-leads.
 create trigger leads_to_sheets_trg
 after insert on public.leads
 for each row
+when (coalesce(new.extras ->> 'resource_gate', '') <> 'true')
 execute function public.leads_to_sheets();
 
 -- Rollback:

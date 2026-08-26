@@ -5,12 +5,21 @@ Tracker** Google Sheet within a second or two of submission, so whoever is
 triaging works from one list. Covers **all sites**, because they all write to the
 same `leads` table; the `Site` column says which site each lead came from.
 
+**LIVE since 2026-08-26**, verified end to end with a real insert: the row
+reached the sheet, landed in the right columns, and pushed the previous top lead
+down with its notes intact.
+
 ```
 Lead form submit  ->  row inserted into Supabase `leads`
-  ->  pg_net trigger POSTs the row (with a secret header) to
+  ->  leads_to_sheets_trg (pg_net) POSTs the row with a secret header to
       https://www.propertytaxpartners.co.uk/api/leads/sync
   ->  endpoint verifies the secret, inserts the lead as row 2 of the Sheet
 ```
+
+`leads_to_sheets_trg` carries the same `WHEN` guard as `leads_to_email_trg` and
+`leads_to_enrich_trg`, so resource-gate signups (someone downloading a guide
+rather than enquiring) never reach the tracker. It was created without that guard
+on 2026-08-26 and corrected the same day.
 
 The lead is durably stored in Supabase **before** this fires, and the separate
 `leads_to_email_trg` notification is unaffected by it, so a Sheets failure never
@@ -96,6 +105,32 @@ whose reply used opt-out or complaint language.
 
 **Re-seeding overwrites the triager's columns**, which exist nowhere else. Copy
 N-Q out first, or only re-seed before the sheet is in use.
+
+## Reaching api.supabase.com: use curl, not Python
+
+Cloudflare fronts `api.supabase.com` and blocks Python's `urllib` on its
+TLS/User-Agent fingerprint. Every endpoint, including `/v1/projects`, returns a
+bare **403 whose body is `error code: 1010`**, which reads exactly like an
+expired or unscoped access token. It is not. The identical request through `curl`
+returns 200.
+
+This cost an unnecessary token rotation on 2026-08-26. Before concluding a
+Supabase token is dead, retry the call with curl.
+
+## Testing it without emailing anyone
+
+A real insert into `leads` is the only way to exercise the trigger, but it also
+fires `leads_to_email_trg`, putting a fake lead in the owner's inbox. Insert with
+`extras = '{"resource_gate":"true"}'::jsonb` and `is_test = true`: the email and
+enrich triggers skip it and it stays out of exports and KPIs.
+
+Note this now also means the **sheets** trigger skips it, so that trick tests the
+insert path but no longer reaches the sheet. To test the endpoint and the sheet
+write on their own, POST a payload shaped like the trigger's directly at the
+endpoint with the `x-webhook-secret` header.
+
+Whichever route, delete the sheet row afterwards **by checking its contents
+first**, never by position alone. Row 2 is wherever the newest real lead lives.
 
 ## Health check
 
