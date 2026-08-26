@@ -12,177 +12,199 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/costwolds-28111463/"
 category: "GP Practice Management"
-metaTitle: "Own vs Rent Your GP Surgery: SDLT, CGT, Tax Guide"
-metaDescription: "Owning versus renting a GP surgery: SDLT of £19,500 on a £600,000 buy, capital allowances on fixtures, notional rent, and CGT and BADR when you sell."
+metaTitle: "Own vs Rent a GP Surgery: SDLT, Allowances, CGT"
+metaDescription: "Own or rent your GP surgery: £19,500 SDLT on a £600,000 freehold, capital allowances on the fixtures and the structure, and CGT and BADR when you sell."
 altText: "GP partners comparing the cost of owning versus renting a surgery building with a property loan and tax figures"
-h1: "Owning vs Renting Your GP Surgery: The Property Partnership, SDLT and the Tax Trade-Offs"
+h1: "Own or Rent Your GP Surgery: What Each Choice Costs in Tax"
 keyTakeaways:
-- "Freehold SDLT on a surgery in England or Northern Ireland is banded at 0% up to £150,000, 2% from £150,001 to £250,000, and 5% above £250,000, so a £600,000 purchase costs £19,500."
-- "When you buy a surgery containing fixtures, a CAA 2001 s.198 election must be made within a strict 2-year limit under CAA 2001 s.201, or the fixtures capital allowances can be lost entirely."
-- "The Annual Investment Allowance of £1,000,000 gives 100% relief and is best directed first at the special-rate (6%) integral features, while the main-rate writing-down allowance falls from 18% to 14% under Finance Act 2026 section 28."
-- "Business Asset Disposal Relief is 10% up to 5 April 2025, 14% from 6 April 2025 to 5 April 2026, and 18% from 6 April 2026, with a £1,000,000 lifetime limit per individual."
-- "SDLT does not apply in Scotland (Land and Buildings Transaction Tax) or Wales (Land Transaction Tax), and transfers into or out of a property partnership trigger special sum-of-lower-proportions rules rather than the ordinary purchase rates."
-summary: "A GP partnership choosing between renting its surgery and owning it is making a tax decision as much as a clinical one. Ownership unlocks notional rent, asset growth and capital allowances, but brings SDLT on purchase, illiquidity and a CGT bill on the way out. This guide walks the whole own-versus-rent tax picture, from SDLT in to CGT out, with the capital allowances and the fixtures election in between."
+- "Buying a surgery freehold in England or Northern Ireland is a non-residential purchase taxed at 0% to £150,000, 2% from £150,001 to £250,000 and 5% above £250,000, so a £600,000 building costs £19,500 and the return is due within 14 days of completion."
+- "You can claim capital allowances on the structure as well as the fixtures: structures and buildings allowance runs at 3% a year on a straight-line basis over 33 and one third years where the construction contracts were signed on or after 29 October 2018."
+- "On a purchase of existing premises the fixtures allowances turn on a CAA 2001 s.198 election made within the 2-year limit in CAA 2001 s.201, and missing that window forfeits them outright."
+- "The Annual Investment Allowance of £1,000,000 gives 100% relief and is best pointed at the 6% special-rate integral features first, because the main-rate writing-down allowance is now 14% under Finance Act 2026 section 28."
+- "Business Asset Disposal Relief is 18% for disposals from 6 April 2026, with a £1,000,000 lifetime limit per individual and conditions held throughout the 2 years to disposal, and it is restricted on an associated disposal where rent was charged."
+summary: "Owning a GP surgery and renting one are two different tax positions, not two prices for the same thing. This guide costs each limb of the ownership decision in turn: the SDLT on a purchase or a new lease, the capital allowances available on the fixtures and on the structure, the fixtures election that is so often lost, what a premises share does to a partner joining or leaving, and the capital gains tax and Business Asset Disposal Relief position on the way out."
 schema: ""
 faqs:
   - question: "Should a GP partnership own or rent its surgery?"
-    answer: "There is no single right answer; it depends on the partnership's appetite for capital outlay and asset risk, the local property market, and the partners' plans. Renting from a third party means no asset and no notional rent in your own pocket, but flexibility and no ownership liability. Owning, usually through a separate property partnership, unlocks notional rent, asset growth and capital allowances, but brings SDLT, a loan, illiquidity and a future capital gains tax bill. It is a specialist, practice-specific decision."
-  - question: "What is a property partnership and why hold the surgery in one?"
-    answer: "A property partnership (or LLP) is a separate vehicle that holds the surgery premises, distinct from the medical partnership that runs the practice. Holding the building separately ring-fences the property risk, lets clinical partners join the medical partnership without buying in to the premises, and cleanly separates the rent stream and its interest deduction. The structure has SDLT and capital gains consequences on transfers in and out, so it should be set up with specific advice."
-  - question: "How much SDLT do I pay buying a GP surgery?"
-    answer: "Buying the freehold of a surgery in England or Northern Ireland is a non-residential purchase. The rates are 0% up to £150,000, 2% on the slice from £150,001 to £250,000, and 5% on anything above £250,000. These are banded, so each slice is taxed at its own rate. The figures are England and Northern Ireland only; Scotland and Wales use different devolved taxes."
-  - question: "Is there SDLT on the rent when we take a new surgery lease?"
-    answer: "Yes, a new non-residential lease can attract SDLT on the net present value (NPV) of the rent, separately from any premium. The NPV rates are nil up to £150,000, 1% on the slice from £150,001 to £5,000,000, and 2% above £5,000,000. You do not pay SDLT on the rent where the NPV is below £150,000. As with a purchase, these are England and Northern Ireland figures."
-  - question: "Do SDLT rates apply to a surgery in Scotland or Wales?"
-    answer: "No. SDLT is the tax for England and Northern Ireland. A surgery in Scotland is subject to Land and Buildings Transaction Tax (LBTT), and one in Wales to Land Transaction Tax (LTT). These devolved taxes have their own rates and bands, which differ from SDLT, so a Scottish or Welsh purchase should be costed on the relevant devolved figures rather than the SDLT bands quoted here."
-  - question: "Can I claim capital allowances on a surgery building?"
-    answer: "You cannot claim allowances on the structure itself (the bricks and mortar), but you can claim on the integral features and fixtures within the surgery, such as electrical systems, heating, ventilation and air conditioning, cold and hot water systems and lifts, which fall in the special-rate pool. General plant within a fit-out goes in the main-rate pool. The Annual Investment Allowance can give 100% relief on much of this, so identifying the qualifying spend is valuable."
-  - question: "What is the fixtures election and why is the 2-year deadline so important?"
-    answer: "When you buy a surgery that already contains fixtures, a CAA 2001 s.198 election fixes, jointly with the seller, the value attributed to those fixtures, which determines the allowances the buyer can claim. There is a strict 2-year time limit under CAA 2001 s.201: the election must be made by notice to HMRC no later than 2 years after you acquire the interest. Miss it, and the fixtures allowances can be lost entirely, which is a common and wholly preventable loss."
-  - question: "What capital allowances can I claim on a surgery fit-out?"
-    answer: "A fit-out splits between integral features (special-rate pool, 6% writing-down allowance) and general plant and machinery (main-rate pool). The Annual Investment Allowance of £1,000,000 a year gives 100% relief on qualifying plant and machinery and is best directed at the special-rate items first. The main-rate writing-down allowance is 14%, reduced from 18% by Finance Act 2026 section 28 with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax (periods straddling those dates use a time-apportioned hybrid rate), while the special-rate pool stays at 6%. On new (unused, not second-hand) main-rate plant there is also a 40% first-year allowance from 1 January 2026 under section 29. Identifying and pooling the qualifying spend properly is where the value is."
-  - question: "Will I pay capital gains tax when we sell the surgery?"
-    answer: "When the premises, or a partner's share, is sold for more than its cost, capital gains tax applies to the gain. For a building used in the partnership trade, the gain may qualify for relief, but the rules are specific and depend on how the premises are held and who is disposing of what. Because the position turns on the structure and the surrounding circumstances, it is a specialist area where you should take practice-specific advice before committing to a sale."
-  - question: "Does Business Asset Disposal Relief apply to selling a GP surgery?"
-    answer: "It can, on a qualifying disposal of a share in the business, but it is not automatic for a premises disposal. Where premises are held in a property vehicle, or are disposed of alongside a withdrawal from the partnership as an associated disposal, specific conditions apply, including restrictions where rent has been charged. BADR on premises is a specialist point, so the availability and the amount should be checked with advice rather than assumed."
-  - question: "What is the current BADR rate and lifetime limit?"
-    answer: "Business Asset Disposal Relief is charged at 10% for disposals up to 5 April 2025, 14% for disposals from 6 April 2025 to 5 April 2026, and 18% for disposals from 6 April 2026. There is a £1,000,000 lifetime limit per individual, and the qualifying conditions must generally be met throughout the 2-year period to disposal. Because the rate steps up over time, the date of disposal can materially affect the tax, so timing is worth planning."
-  - question: "What is an associated disposal and can I use it for the premises?"
-    answer: "An associated disposal is the sale of an asset (such as the surgery, or a partner's share of it) that is used by the partnership, made alongside a qualifying withdrawal from the partnership itself. It can in principle bring the premises within Business Asset Disposal Relief, but the relief is restricted, particularly where rent was charged for the use of the premises. It is a specialist area with several conditions, so do not assume it is available without checking."
-  - question: "Is owning the surgery worth it given notional rent?"
-    answer: "Notional rent is the income that often makes owning pay: an owner-occupier receives a District-Valuer-assessed current market rent, taxable but set against the loan interest and premises costs, which supports the loan and rewards ownership. Whether that, combined with asset growth and capital allowances, outweighs the SDLT, illiquidity and future CGT depends on the practice's circumstances. Our notional rent guide covers the income side in full; the answer is practice-specific."
-  - question: "What are the SDLT rules when property moves into or out of a partnership?"
-    answer: "Transfers of property into or out of a partnership are subject to special SDLT rules, including a sum-of-lower-proportions calculation that can reduce or alter the charge depending on the partners' shares. These rules are genuinely complex and easy to get wrong, so they are a specialist area. Before moving a surgery into or out of a property partnership, take specific advice rather than assuming the ordinary purchase rates apply."
+    answer: "Own it if the partnership can fund the deposit and the borrowing and wants the building in partners' hands; rent it if capital, flexibility and ease of recruitment matter more. Owning brings SDLT on the purchase, a loan, an illiquid asset and a capital gains tax charge when the building is eventually sold, and it brings capital allowances and an asset that grows. Renting brings none of those. The answer turns on the partnership's own numbers and plans, so it should be costed with practice-specific advice."
+  - question: "Can we still claim property capital allowances if we bought the surgery years ago?"
+    answer: "Often yes. The 2-year deadline in CAA 2001 s.201 applies to the fixtures election on a transaction, not to expenditure you still own. Where a partnership has held its surgery for years and never had a capital allowances survey, the qualifying integral features inside the building may never have been identified or pooled, and the claim is made in a current tax return on the original expenditure. It is worth checking before a sale, because a disposal is the point at which the chance is lost."
+  - question: "What happens if the seller will not sign the fixtures election?"
+    answer: "Raise it before exchange, because after completion you have very little leverage. The s.198 election is a joint election, so a seller who refuses to sign can leave you without the fixtures allowances entirely once the 2-year s.201 window closes. The practical answers are to make the signed election a condition of the contract, to agree the figure as part of the price negotiation, and to have the position checked at the pre-contract enquiry stage rather than after the keys change hands."
+  - question: "How is a GP surgery for sale taxed when the partners own the freehold?"
+    answer: "As a capital disposal by whoever owns it. Each owning partner is taxed on their share of the gain, and the date of disposal for capital gains tax is the date contracts are exchanged where the contract is unconditional. Business Asset Disposal Relief may reduce the rate to 18% for disposals from 6 April 2026 within a £1,000,000 lifetime limit, but it is conditional. Any structures and buildings allowance claimed is added to the disposal proceeds, which increases the gain."
+  - question: "Is Business Asset Disposal Relief automatic on a premises disposal?"
+    answer: "No, and assuming it is one of the most expensive mistakes on this topic. BADR applies to a qualifying disposal, and premises held outside the trading partnership normally reach it only as an associated disposal made alongside a genuine withdrawal from the partnership. That relief is then restricted where rent was charged for the use of the premises, so charging a market rent can cut the relief you get years later. Check the position before the disposal, not after it."
+  - question: "Can a partner hold the surgery personally instead of in the property partnership?"
+    answer: "Yes, and it is common where one or two partners bought the building historically. The consequences differ: the rent and the loan interest sit in that partner's own tax return, and on a later sale the disposal is theirs alone, with the associated-disposal conditions and the rent restriction applying to them. Moving the building into or out of a partnership afterwards is not a neutral step, because the partnership SDLT rules and the capital gains position both bite on the transfer."
+  - question: "Does taking a new surgery lease cost you SDLT?"
+    answer: "It can. A new non-residential lease is charged on the net present value (NPV) of the rent over the term, at nil up to £150,000, 1% from £150,001 to £5,000,000 and 2% above that, and any premium you pay is taxed separately on the purchase bands. The NPV is not the annual rent multiplied by the term, because future rent is discounted back, so many surgery leases fall under £150,000 and pay nothing. Nil tax does not always mean a return: a new lease of less than 7 years is not notifiable at all where the chargeable consideration stays under the £150,000 non-residential threshold, and a new lease of 7 years or more is outside the return where the premium is under £40,000 and the annual rent under £1,000. A lease of 7 years or more with rent of £1,000 or more is notifiable, so the return is filed there even though the tax is nil."
 ---
 
-<p>A GP partnership choosing between renting its surgery from a third party and owning it (usually through a separate property partnership or LLP) is making a tax decision as much as a clinical one. Ownership unlocks <strong>notional rent</strong>, asset growth and capital allowances, but it brings <strong>SDLT</strong> on purchase, illiquidity and a <strong>capital gains tax</strong> bill on the way out. This guide walks the whole own-versus-rent tax picture for a GP surgery, from the SDLT on a freehold purchase, through the capital allowances on the integral features (and the fixtures election that is so often missed and lost), to capital gains tax and Business Asset Disposal Relief on an eventual disposal.</p>
+<p>Own the surgery if the partnership can fund it and wants the building in partners' hands; rent it if capital, flexibility and recruitment matter more.</p>
 
-<p>This is a specialist and practice-specific area, and the figures below for any individual surgery would depend on a valuation. The numbers used in the worked examples are clearly illustrative, chosen to show how the tax works rather than to suggest what any real surgery costs. Premises and partnership tax decisions should be taken with practice-specific advice.</p>
+<p>Owning a £600,000 freehold in England or Northern Ireland costs £19,500 in stamp duty land tax (SDLT), the tax on buying land and buildings. It then opens capital allowances on the fixtures and on the structure, and it ends in a capital gains tax bill. Renting costs you none of that and builds you nothing.</p>
 
-<h2>The decision in one paragraph</h2>
+<h2>Should your partnership own the surgery or rent it?</h2>
 
-<p>Rent from a third party (a private landlord, a developer, or the NHS-owned estate) and there is no capital outlay and no asset risk, but equally no asset and no notional rent in your own pocket: the NHS reimburses the rent and you remain a tenant. Own the surgery (usually through a property partnership or LLP) and notional rent reimburses you, you build an asset and you can claim capital allowances, but you take on SDLT, a loan, illiquidity and a future CGT bill. The right answer is genuinely practice-specific, and depends on the partnership's appetite for capital and risk, the local market and the partners' plans.</p>
+<p>Renting takes one of two forms. The first is a commercial lease from a private landlord or a developer, where you are a tenant and the rent you pay is reimbursed to you under the NHS premises schemes. The second is occupying NHS Property Services or other NHS-owned premises, where the commercial terms differ but your position does not: you occupy, you are reimbursed, and you own no asset.</p>
 
-<h2>The two ways to rent</h2>
+<p>Owning puts the building in partners' hands and puts an income stream against the loan. An owner-occupier practice is paid notional rent for its premises, and that is the income that services the borrowing, with the detail on the <a href="/blog/gp-surgery-notional-rent-vs-cost-rent-explained">notional rent guide</a>. Interest on the property loan is deductible against that income.</p>
 
-<p>The first route is a <strong>third-party commercial lease</strong>, from a private landlord or a developer. The practice is a tenant, and the NHS reimburses the rent through the leasehold reimbursement route under the Premises Costs Directions (the rent schemes are explained in our <a href="/blog/gp-surgery-notional-rent-vs-cost-rent-explained">notional rent vs cost rent guide</a>). There is no ownership and no asset growth, but there is flexibility, and the partners avoid the ownership exposure that drives the <a href="/blog/gp-partnership-last-man-standing-premises-risk">last man standing</a> problem (though a lease carries its own version of that risk, covered in that guide).</p>
+<p>What you are really choosing between is a fixed occupancy cost and a leveraged asset. The table below sets the two limbs side by side.</p>
 
-<p>The second route is the <strong>NHS Property Services or NHS-owned estate</strong>, where the practice occupies NHS-owned premises. The commercial terms differ, but the principle is the same as any tenancy: the practice occupies and is reimbursed, rather than owning. We keep this brief because the tax decision that follows is really about the alternative, ownership.</p>
-
-<h2>Owning the surgery: the property partnership or LLP</h2>
-
-<p>The common ownership structure is to hold the premises in a <strong>separate property partnership or LLP</strong>, outside the medical partnership, so that property ownership and the clinical partnership are not locked together. This is the single most important structural choice in owning a surgery, and it is the same structure that manages the liability risk we cover in the <a href="/blog/gp-partnership-last-man-standing-premises-risk">last man standing guide</a>.</p>
-
-<h3>Who owns and who occupies</h3>
-
-<p>The property vehicle owns the building. The medical partnership occupies it and runs the practice, and the NHS notional rent flows to the owners in the property vehicle. The rent and its tax are covered in full in the <a href="/blog/gp-surgery-notional-rent-vs-cost-rent-explained">notional rent guide</a>; here the point is simply that the income belongs to the owners, in whichever vehicle holds the building.</p>
-
-<h3>Why separate the vehicle</h3>
-
-<p>Separating the property vehicle ring-fences the premises risk from the clinical partnership, lets clinical partners join the medical partnership without a premises buy-in, and cleanly separates the rent stream and its interest deduction so income and relief sit on the same side. For a partnership trying to recruit, removing the premises buy-in as a barrier to entry is often the decisive practical advantage.</p>
-
-<h3>Property partnership vs LLP</h3>
-
-<p>At a high level, the choice is between a general property partnership and an LLP. An LLP gives limited liability and separate legal personality, with members taxed personally on their shares much as partners are. The SDLT and capital gains consequences of transfers into and out of the vehicle differ between the two, and depend on the partners' shares and the timing, so this is a point to settle with specific advice rather than a choice to make on general principle. We flag it rather than over-promise: the wrong vehicle, or a poorly timed transfer, can create avoidable tax, so it is worth getting right at the outset.</p>
-
-<h2>SDLT on buying the surgery (England and Northern Ireland)</h2>
-
-<p>Buying the freehold of a surgery is a non-residential (commercial) purchase. In <strong>England and Northern Ireland</strong> the SDLT rates are:</p>
-
-<ul>
-<li><strong>0%</strong> on the portion up to £150,000;</li>
-<li><strong>2%</strong> on the portion from £150,001 to £250,000;</li>
-<li><strong>5%</strong> on the portion above £250,000.</li>
-</ul>
-
-<p>The rates are banded, so each slice is taxed at its own rate. To illustrate with a clearly hypothetical figure: on a purchase of £600,000, the first £150,000 is free, the next £100,000 (to £250,000) is taxed at 2% (£2,000), and the remaining £350,000 is taxed at 5% (£17,500), giving £19,500 of SDLT. The figure is illustrative only and not a guide to any real surgery price, but it shows how the bands stack.</p>
-
-<h3>SDLT on a new lease</h3>
-
-<p>Taking a new non-residential lease can attract SDLT on the <strong>net present value (NPV) of the rent</strong>, separately from any premium paid. The NPV rates are nil up to £150,000, 1% on the slice from £150,001 to £5,000,000, and 2% above £5,000,000. Where the NPV of the rent is below £150,000, no SDLT is due on the rent. This is a point practices on new leases sometimes overlook, because they think of SDLT as only applying to purchases.</p>
-
-<p>The NPV is not simply the annual rent multiplied by the term: it discounts the future rent back to a present value using the prescribed rate, so longer leases and higher rents push the NPV up, but not in a straight line. The practical consequence for a typical surgery lease is that the NPV often falls below the £150,000 threshold, in which case no SDLT is due on the rent at all. On a larger or longer lease where the NPV does cross £150,000, only the slice above that threshold is charged, and at 1% rather than the freehold rates, so the figure is usually modest relative to a purchase. The point is to run the NPV calculation rather than assume, because the result drives whether anything is payable, and because the return still has to be filed even where the tax is nil. Where a lease is later extended or the rent reviewed upwards, a further SDLT charge can arise, which is another reason to keep the position under review rather than treating it as a one-off at grant.</p>
-
-<h3>Scotland and Wales use different taxes</h3>
-
-<p>The figures above are <strong>England and Northern Ireland only</strong>. A surgery in Scotland is subject to Land and Buildings Transaction Tax (LBTT), and one in Wales to Land Transaction Tax (LTT). These devolved taxes have their own rates and bands, which differ from SDLT, so a Scottish or Welsh transaction must be costed on the relevant devolved figures. We deliberately do not quote LBTT or LTT rates here, because the point is to flag that the SDLT bands do not apply, not to substitute one set of numbers for another.</p>
-
-<h3>Partnership SDLT rules</h3>
-
-<p>Transfers of property into or out of a partnership are subject to <strong>special SDLT rules</strong>, including a sum-of-lower-proportions calculation that can alter the charge depending on the partners' shares. These rules are genuinely complex, and the ordinary purchase rates above do not simply apply when a building moves into or out of a property partnership. This is a specialist area: before any such transfer, take specific advice. We flag it rather than attempt the calculation, because getting it wrong is both easy and expensive.</p>
-
-<h2>Capital allowances on the building's fixtures</h2>
-
-<p>You cannot claim capital allowances on the structure of the building, but you can claim on the <strong>integral features and fixtures</strong> within the surgery: electrical systems, heating, ventilation and air conditioning, cold and hot water systems, lifts and similar items go in the special-rate pool, while general plant within a fit-out goes in the main-rate pool. On a surgery, the integral features can represent a meaningful slice of the cost, so identifying them is worthwhile.</p>
-
-<h3>AIA and the rates</h3>
-
-<p>The <strong>Annual Investment Allowance (AIA)</strong> of <strong>£1,000,000</strong> a year gives 100% relief on qualifying plant and machinery, and is best directed at the special-rate (6%) integral features first, because those would otherwise attract relief only slowly. The main-rate writing-down allowance is <strong>14%, reduced from 18% with effect from 1 April 2026 for corporation tax and 6 April 2026 for income tax</strong>, under Finance Act 2026 section 28; the special-rate pool stays at <strong>6%</strong>. For the wider equipment and allowances picture, see our guide to <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions</a>.</p>
-
-<h3>The fixtures election on a purchase (the big one)</h3>
-
-<p>This is the point that most often costs practices money. When you <strong>buy</strong> a surgery that already contains fixtures, a <strong>CAA 2001 s.198 election</strong> fixes, jointly with the seller, the value attributed to those fixtures. That fixed value is what governs the allowances the buyer can claim going forward. Without the election (and the related pooling and fixed-value requirements), the buyer can lose the fixtures allowances <strong>entirely</strong>.</p>
-
-<p>There is a strict <strong>2-year time limit under CAA 2001 s.201</strong>: the election must be made by notice to HMRC no later than 2 years after the buyer acquires the qualifying interest. Miss that window and the relief is gone, with no second chance. This is a common, wholly preventable loss, and it is the single biggest reason to involve an accountant <strong>before completion</strong>, not after: the value of the fixtures has to be agreed with the seller and the election made in good time, which is far harder to organise once the transaction has closed.</p>
-
-<p>Two further mechanics sit alongside the election and are easy to overlook. The first is the <strong>fixed-value requirement</strong>: the s.198 election records a single agreed figure for the fixtures, jointly signed by buyer and seller, and that figure binds both sides. It cannot exceed the seller's original qualifying expenditure on the fixtures, so it is not a free hand to invent a number; it is an agreement on how the existing pool of allowances passes across. The second is the <strong>pooling requirement</strong>: broadly, the seller must have brought the fixtures into a capital allowances pool before the transfer for the buyer to be able to claim, which is why the position has to be checked on the seller's side as part of the purchase, not assumed. These are the kinds of detail that a surgery purchase can fall down on quietly, and they are exactly what an accountant reviewing the deal before exchange is looking for.</p>
-
-<p>The negotiating reality is worth noting too. The agreed fixtures figure is, in a sense, a zero-sum point between buyer and seller: a higher value gives the buyer more allowances to claim going forward but can increase the seller's balancing charge, so the number is something to settle commercially as part of the deal rather than after it. That is another reason it belongs in the pre-completion conversation, with advisers on both sides, rather than being left as an afterthought once the keys have changed hands.</p>
-
-<h3>New build versus existing build</h3>
-
-<p>On a <strong>new build or fit-out</strong>, both AIA and, for new (unused, not second-hand) main-rate plant, a <strong>40% first-year allowance</strong> from 1 January 2026 (Finance Act 2026 section 29) are available, so there is plenty of scope to relieve the qualifying spend quickly. On a <strong>second-hand purchase</strong> of existing premises, the s.198 election is the lever that preserves the fixtures allowances. Knowing which situation you are in, and acting accordingly, is what separates a well-handled purchase from a missed claim.</p>
-
-<h2>How notional rent makes owning pay</h2>
-
-<p>Briefly, because the detail belongs in the sibling guide: owner-occupiers receive <strong>notional rent</strong>, a District-Valuer-assessed current market rent, which is taxable but set against the loan interest and premises costs. That is the income that supports the loan and rewards ownership, and it is a large part of why owning can pay where renting cannot build an asset. The full mechanics, including who sets the figure, how it is reviewed and how it is taxed, are in our <a href="/blog/gp-surgery-notional-rent-vs-cost-rent-explained">notional rent vs cost rent guide</a>.</p>
-
-<h2>CGT and Business Asset Disposal Relief when you eventually sell</h2>
-
-<p>When the premises, or a partner's share of them, is sold for more than cost, <strong>capital gains tax</strong> applies to the gain. For a building used in the partnership trade, the gain may qualify for relief, but the rules are specific and depend on how the premises are held and what exactly is being disposed of.</p>
-
-<h3>Business Asset Disposal Relief</h3>
-
-<p><strong>Business Asset Disposal Relief (BADR)</strong> can apply on a qualifying disposal of a share in the business. The rate is <strong>10% for disposals up to 5 April 2025</strong>, <strong>14% for disposals from 6 April 2025 to 5 April 2026</strong>, and <strong>18% for disposals from 6 April 2026</strong>, with a <strong>£1,000,000 lifetime limit</strong> per individual and a qualifying period of generally <strong>2 years</strong> to the disposal. We date-tag the rate deliberately, because it steps up over time and the date of disposal changes the tax. BADR on premises held in a property vehicle, or claimed as an associated disposal alongside a withdrawal from the partnership, carries specific conditions, so its availability should not be assumed.</p>
-
-<h3>Associated disposals and personally-held premises</h3>
-
-<p>Where premises are held personally or in the property partnership but used by the trading partnership, an <strong>associated-disposal</strong> claim may be possible, made alongside a qualifying withdrawal from the partnership. But the relief is restricted, particularly where <strong>rent was charged</strong> for the use of the premises: charging a market rent can reduce or remove the relief on the associated disposal. This is a specialist point with several conditions, so it is one to check carefully with advice rather than to rely on. We flag it without over-claiming, because the interaction between charging notional rent and a later BADR claim is exactly the kind of detail that needs to be planned, not discovered at sale.</p>
-
-<h3>Timing</h3>
-
-<p>Because BADR steps to 18% from 6 April 2026, the <strong>timing of a disposal</strong> matters. The date of disposal for CGT is the contract date where the contract is unconditional, so the date contracts are exchanged, not completion, is generally what counts. Where a sale is genuinely conditional on a third-party consent, the disposal is dated when the condition is met. The interaction of timing with the rate is a planning point worth raising early; the right approach depends on the specific facts.</p>
-
-<h2>Own vs rent: a side-by-side</h2>
-
-<p>Pulling the threads together, balanced and non-advisory, because the answer is practice-specific:</p>
+<p><strong>Owning versus renting a GP surgery, on the tax rules in force for 2026/27</strong></p>
 
 <table>
-<tr><th>Factor</th><th>Rent (third party or NHS)</th><th>Own (via property partnership / LLP)</th></tr>
-<tr><td>Capital outlay</td><td>None</td><td>Deposit plus a development or purchase loan</td></tr>
-<tr><td>SDLT</td><td>Possible SDLT on lease NPV (often nil)</td><td>SDLT on the freehold purchase (England and NI)</td></tr>
-<tr><td>NHS income</td><td>Lease rent reimbursed</td><td>Notional rent (current market rent)</td></tr>
-<tr><td>Capital allowances</td><td>Limited (tenant's own fit-out only)</td><td>Integral features and fixtures, plus the s.198 election on purchase</td></tr>
-<tr><td>Asset growth</td><td>None to the practice</td><td>The partners build an asset</td></tr>
-<tr><td>Liquidity and exit</td><td>More flexible</td><td>Illiquid; reliant on a buyer for the share</td></tr>
-<tr><td>CGT on disposal</td><td>None (no asset owned)</td><td>CGT on the gain, with BADR possible but conditional</td></tr>
-<tr><td>Last man standing exposure</td><td>Lease version of the risk</td><td>Owner-occupier version of the risk</td></tr>
+<tr><th>Factor</th><th>Renting (third party or NHS estate)</th><th>Owning (usually via a property partnership or LLP)</th></tr>
+<tr><td>Capital outlay</td><td>None</td><td>Deposit plus a purchase or development loan</td></tr>
+<tr><td>SDLT</td><td>Possible charge on the lease NPV, often nil</td><td>0% to 5% on the freehold price, banded</td></tr>
+<tr><td>NHS premises income</td><td>Your rent is reimbursed to you</td><td>Reimbursement is paid to the owning partners</td></tr>
+<tr><td>Loan interest</td><td>Not applicable</td><td>Deductible against the premises income</td></tr>
+<tr><td>Capital allowances</td><td>Your own fit-out only</td><td>Fixtures, integral features and the structure</td></tr>
+<tr><td>Asset growth</td><td>None to the partners</td><td>The owning partners build an asset</td></tr>
+<tr><td>Joining and leaving</td><td>No premises buy-in</td><td>A premises buy-in, and a buy-out to fund on exit</td></tr>
+<tr><td>Tax on the way out</td><td>None, nothing is owned</td><td>Capital gains tax, with BADR possible but conditional</td></tr>
 </table>
 
-<p>Both columns carry a form of the last man standing risk, which is why the <a href="/blog/gp-partnership-last-man-standing-premises-risk">liability guide</a> is the natural companion to this one. The buy-in decision itself, where premises is one input among several, is covered in our guide to the <a href="/blog/becoming-gp-partner-financial-implications">financial implications of becoming a GP partner</a>.</p>
+<h2>Why is a surgery usually held in a property partnership or LLP?</h2>
 
-<h2>Common mistakes</h2>
+<p>The common structure is to hold the premises in a separate property partnership or LLP, outside the medical partnership. The property vehicle owns the freehold or the leasehold interest, the medical partnership occupies the building and runs the practice, and the premises income and its loan interest sit together in one place.</p>
 
-<ul>
-<li><strong>Missing the s.198 fixtures election on a purchase</strong>, or missing the 2-year s.201 deadline, and losing the fixtures allowances entirely. Involve an accountant before completion.</li>
-<li><strong>Assuming SDLT figures apply in Scotland or Wales.</strong> They do not; LBTT and LTT have their own rates.</li>
-<li><strong>Ignoring the partnership SDLT rules</strong> on transfers into or out of a property partnership, and assuming the ordinary purchase rates apply.</li>
-<li><strong>Not separating the property vehicle</strong>, so premises risk and the rent stream are locked into the clinical partnership.</li>
-<li><strong>Assuming BADR is automatic</strong> on a premises disposal, when it is conditional and can be restricted, especially where rent was charged.</li>
-</ul>
+<p>Separating the vehicle buys you several things. Premises risk is ring-fenced away from the clinical partnership. A clinician can join the medical partnership without also buying into the building. And the ownership of the property can be shared out differently from the clinical profit shares, which is what makes the recruitment point below workable.</p>
 
-<h2>How we help GP practices decide own vs rent</h2>
+<p>Between a general property partnership and an LLP, the LLP gives limited liability and separate legal personality, with members taxed personally on their shares much as partners are. The SDLT and capital gains consequences of moving a building into or out of each vehicle differ, and they turn on the partners' shares and on timing, so settle the vehicle at the outset with specific advice.</p>
 
-<p>We help GP partnerships and their property partnerships work through the own-versus-rent decision on the numbers. That means setting out the SDLT cost of a purchase or a new lease, identifying the capital allowances available on the fixtures (and, crucially, making sure the s.198 election is handled in good time on a purchase so the relief is not lost), modelling the notional rent against the loan interest, and looking ahead to the capital gains and BADR position on an eventual disposal.</p>
+<h2>What SDLT do you pay when the partnership buys the surgery?</h2>
 
-<p>Because the property vehicle, the rent income and the partners' personal tax all interact, the value is usually in joining them up so the structure is right from the start and the reliefs are actually captured. For the rent income and its tax, see our <a href="/blog/gp-surgery-notional-rent-vs-cost-rent-explained">notional rent vs cost rent guide</a>; for the liability side, the <a href="/blog/gp-partnership-last-man-standing-premises-risk">last man standing guide</a>; for partnership and capital-account basics, the <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a>; and where the property vehicle touches on incorporating private work, our guide to <a href="/blog/medical-practice-incorporation-step-by-step">medical practice incorporation</a>. For our wider work with GPs, see <a href="/for-gps">how we help GPs</a>, the rest of our <a href="/blog/gp-practice-management">practice management guides</a>, or <a href="/contact">get in touch</a>.</p>
+<p>Buying a surgery freehold is a non-residential purchase, so it is taxed on the commercial bands and not on the residential ones. The bands are sliced, so each portion of the price is taxed at its own rate.</p>
+
+<p><strong>Non residential SDLT rates, England and Northern Ireland, in force for 2026/27</strong></p>
+
+<table>
+<tr><th>Portion of the price</th><th>Rate</th></tr>
+<tr><td>Up to £150,000</td><td>0%</td></tr>
+<tr><td>£150,001 to £250,000</td><td>2%</td></tr>
+<tr><td>Above £250,000</td><td>5%</td></tr>
+</table>
+
+<p>Take Dr B's partnership, buying its surgery freehold for £600,000 in 2026/27. The first £150,000 is free. The next £100,000, up to £250,000, is charged at 2%, which is £2,000.</p>
+
+<p>The remaining £350,000 is charged at 5%, which is £17,500. The SDLT is £19,500, and the return and the payment are due within 14 days of completion.</p>
+
+<p>That price is illustrative, and any real figure would come from a valuation. Move the price and only the top slice changes, so £700,000 would cost £5,000 more.</p>
+
+<p>The non-residential SDLT rates apply to a purely commercial building. A surgery physically connected to a flat or a house is a mixed property, which gov.uk gives as one of its own examples of that, and mixed property is taxed on the same commercial table. The 14-day deadline runs from completion whether or not anyone has told you the figure.</p>
+
+<h3>What SDLT applies to a new surgery lease?</h3>
+
+<p>A new non-residential lease is charged on the net present value (NPV) of the rent over the term, which is the future rent discounted back to today's money. Any lease premium you pay is charged separately on the purchase bands above. The NPV bands are nil up to £150,000, 1% from £150,001 to £5,000,000, and 2% above £5,000,000.</p>
+
+<p>Because the NPV is not the annual rent multiplied by the term, many surgery leases land under £150,000 and pay nothing on the rent. Run the calculation before you assume it, and check separately whether a return is due at all, because nil tax and no return are not the same test.</p>
+
+<p>A new lease of less than 7 years is not notifiable where the chargeable consideration stays under the £150,000 non-residential threshold, so a surgery lease with an NPV under that figure and no premium needs no return. A new lease of 7 years or more is also outside the return where the premium is under £40,000 and the annual rent under £1,000. Where the lease runs 7 years or more and the rent is £1,000 or more, the return is filed even though the tax is nil. A later extension of the term or an increase in the rent under the lease can pull a further charge into scope.</p>
+
+<h3>Do the SDLT bands apply in Scotland and Wales?</h3>
+
+<p>No. SDLT covers England and Northern Ireland only. A surgery in Scotland is charged to Land and Buildings Transaction Tax (LBTT), and one in Wales to Land Transaction Tax (LTT).</p>
+
+<p>LBTT and LTT have their own rates and bands, which do not match the SDLT figures above, so cost a Scottish or Welsh transaction on the devolved tables. No devolved rate is quoted here, because the point is that the bands above do not apply to you.</p>
+
+<h3>What happens when the building moves into or out of the partnership?</h3>
+
+<p>Special SDLT rules apply to transfers of property into or out of a partnership, including a sum-of-lower-proportions calculation that reduces or alters the charge according to how the partners' shares line up before and after. The ordinary purchase bands do not simply apply. These rules are genuinely intricate and expensive to get wrong, so take specific advice before any transfer instead of pricing it off the table above.</p>
+
+<h2>What capital allowances property owners miss on a surgery purchase</h2>
+
+<p>Anyone with an interest in the building can claim: a freeholder, a leaseholder, and a tenant on its own fit-out. That last one matters to the decision, because a practice that rents still claims allowances on the equipment and fit-out it pays for itself, even though it will never own the walls.</p>
+
+<p>Inside the building the spend splits. Integral features, meaning the electrical, heating, ventilation, air conditioning, cold and hot water systems and lifts that are part of the fabric, go into the special-rate pool. General plant and machinery in a fit-out goes into the main-rate pool. On a purpose-built or heavily fitted surgery the integral features are a large slice of the cost, so identifying them is worth real money.</p>
+
+<p><strong>Capital allowance rates on surgery spend, 2026/27</strong></p>
+
+<table>
+<tr><th>Spend</th><th>Where it goes</th><th>Relief</th></tr>
+<tr><td>Qualifying plant and machinery, first £1,000,000 a year</td><td>Either pool</td><td>Annual Investment Allowance, 100%</td></tr>
+<tr><td>New and unused main-rate plant, from 1 January 2026</td><td>Main-rate pool</td><td>40% first-year allowance</td></tr>
+<tr><td>Other general plant</td><td>Main-rate pool</td><td>14% writing-down allowance</td></tr>
+<tr><td>Integral features and fixtures</td><td>Special-rate pool</td><td>6% writing-down allowance</td></tr>
+<tr><td>The structure itself, contracts signed on or after 29 October 2018</td><td>Neither pool</td><td>3% straight line</td></tr>
+</table>
+
+<p>The Annual Investment Allowance (AIA) of £1,000,000 a year gives 100% relief. Point it at the special-rate items first, because those would otherwise unwind at 6% a year.</p>
+
+<p>The main-rate writing-down allowance is 14%, cut from 18% by Finance Act 2026 section 28. That took effect on 1 April 2026 for corporation tax and 6 April 2026 for income tax, and a period straddling those dates uses a hybrid, time-apportioned rate. The special-rate pool stays at 6%.</p>
+
+<p>On new plant there is a further choice. A 40% first-year allowance applies from 1 January 2026 under Finance Act 2026 section 29, to new and unused assets only, so a second-hand item does not qualify. Full expensing and the 50% first-year allowance on new special-rate plant are companies only, which means a property partnership or LLP holding your surgery cannot use either and AIA remains its main lever.</p>
+
+<h3>Can you claim on the structure of the building?</h3>
+
+<p>Yes, and this is the part most practices are told they cannot have. Plant and machinery allowances do not touch the bricks and mortar, but structures and buildings allowance does, at 3% a year on a straight-line basis over an allowance period of 33 and one third years. It applies where all the construction contracts were signed on or after 29 October 2018, so it reaches a new-build surgery but not an older one.</p>
+
+<p>The conditions are narrow. The structure must not have been used as a residence, and you need a written allowance statement for it, which the first user has to create before anyone can claim.</p>
+
+<p>The catch comes on the exit. The total structures and buildings allowance you have claimed is added to your disposal proceeds when you sell, so it increases the gain and the capital gains tax on it. The relief is real and on a long hold it is worth having, but part of it is a deferral and should be modelled that way.</p>
+
+<h3>What is a section 198 election, and why is its deadline fatal?</h3>
+
+<p>When you buy premises that already contain fixtures, a CAA 2001 s.198 election is the joint notice by which you and the seller fix the value attributed to those fixtures. That agreed figure is what governs the allowances you can claim from then on. Without it, the allowances that came with the building can be lost completely, which is the single most expensive avoidable outcome on a surgery purchase.</p>
+
+<p>The fixed-value requirement sits behind the election: the agreed figure binds both sides and cannot exceed the seller's original qualifying expenditure on those fixtures. It is an agreement about how an existing pool passes across, not a free hand to pick a number.</p>
+
+<p>The pooling requirement, in CAA 2001 s.187A, is the other half. The seller must have brought the fixtures into a pool before the transfer for you to claim at all, so the seller's own position has to be checked as part of your purchase.</p>
+
+<p>The deadline is where practices lose the money. CAA 2001 s.201 gives a strict 2-year limit: the s.198 election must be made by notice no later than 2 years after you acquire the interest, and there is no second chance afterwards.</p>
+
+<p>The figure itself is a commercial negotiation. A higher value gives you more allowances while it can raise a balancing charge on the seller, which is a claw-back of relief the seller has already had. So an s198 point belongs in the pre-contract enquiries and in the price discussion, which is why an accountant should be involved before completion and not after it.</p>
+
+<p>Where the seller is a body that pays no tax, such as an NHS organisation or a charity, the negotiation looks different because the seller has nothing to claw back. The election still matters to you.</p>
+
+<h3>What if the practice already owns its surgery?</h3>
+
+<p>The 2-year limit above attaches to a transaction. It does not stop a partnership that has owned its surgery for fifteen years, and never had a survey, from identifying qualifying integral features inside the original cost and claiming on them in a current return. Most owner-occupier practices have never had that exercise done. Do it while you still own the building, because a disposal closes the door.</p>
+
+<h2>What does owning the surgery do to each partner's position?</h2>
+
+<p>Ownership adds a premises buy-in for anyone joining and a premises buy-out to fund for anyone leaving, on top of the ordinary working-capital position. Both are valued on the building, not on the annual accounts, and partners commonly hold the premises in different proportions from their profit shares. Where an exit is not funded, the building concentrates on whoever remains, and the buy-in, buy-out, valuation and concentration questions are all worked through on the <a href="/blog/gp-partnership-last-man-standing-premises-risk">last man standing</a> guide.</p>
+
+<p>A partner's premises stake sits in the partnership capital account, and how capital accounts work is set out in the <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a>.</p>
+
+<h2>What tax do you pay when the surgery is sold?</h2>
+
+<p>When the premises, or one partner's share of them, is sold for more than cost, capital gains tax applies to the gain, and each owner is taxed on their own slice. A GP practice for sale changes hands on its tangible assets, any owned premises and any private goodwill, because NHS GP goodwill cannot be sold. The building is therefore the largest single number in most GP transactions.</p>
+
+<p>Timing is a lever, so get it right deliberately. The date of disposal for capital gains tax is the contract date where the contract is unconditional, which means exchange rather than completion. Where a sale is genuinely conditional on a third party's consent, the disposal is dated when that condition is met.</p>
+
+<p><strong>Business Asset Disposal Relief rate by date of disposal, £1,000,000 lifetime limit per individual</strong></p>
+
+<table>
+<tr><th>Date of disposal</th><th>BADR rate</th></tr>
+<tr><td>From 6 April 2026 (current)</td><td>18%</td></tr>
+<tr><td>Earlier disposals</td><td>14% in 2025/26, 10% before 6 April 2025</td></tr>
+</table>
+
+<p>Business Asset Disposal Relief (BADR) reduces the capital gains tax rate on a qualifying disposal, and the current rate is 18%, within a £1,000,000 lifetime limit per individual and with the qualifying conditions met throughout the 2 years to disposal. It is not a premises relief by default. Where the building sits outside the trading partnership, it normally reaches BADR as an associated disposal, made alongside a genuine withdrawal from the partnership itself.</p>
+
+<p>Charging rent and claiming BADR pull against each other. An associated disposal is restricted where rent was charged for the partnership's use of the premises, so the arrangement that made ownership pay for twenty years can cut the relief on the sale that ends it.</p>
+
+<p>Add back any structures and buildings allowance claimed, and the gap between the expected tax and the actual tax widens again. Model both when you commit to a structure, not in the month you sell.</p>
+
+<h2>What each mistake costs</h2>
+
+<p><strong>The six errors that cost GP surgery owners money, and the price of each</strong></p>
+
+<table>
+<tr><th>Mistake</th><th>What it costs</th></tr>
+<tr><td>No s.198 election, or the s.201 2-year window missed</td><td>The fixtures allowances, permanently</td></tr>
+<tr><td>Assuming the structure qualifies for nothing</td><td>3% a year of the qualifying construction cost</td></tr>
+<tr><td>Never surveying a building you already own</td><td>A decade or more of unclaimed integral features</td></tr>
+<tr><td>Pricing a Scottish or Welsh purchase on the SDLT bands</td><td>A wrong figure: LBTT and LTT rates differ</td></tr>
+<tr><td>Using the ordinary bands on a transfer into or out of the partnership</td><td>SDLT mispriced, sum-of-lower-proportions ignored</td></tr>
+<tr><td>Treating BADR as automatic on a premises disposal</td><td>Up to 6 points of CGT on the whole gain</td></tr>
+</table>
+
+<h2>Costing a surgery purchase: SDLT, capital allowances and the exit</h2>
+
+<p>The own-versus-rent answer is practice-specific, and it is decided on your own numbers. Those numbers are the SDLT on the price, the allowances the building actually yields, what the borrowing costs against the premises income, and what the exit looks like for the partners who will fund it. The four sit together, and a decision costed on only one of them is usually costed on the wrong one.</p>
+
+<p>For the deductions side of practice spending, see the <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions guide</a>; for the wider buy-in decision, <a href="/blog/becoming-gp-partner-financial-implications">becoming a GP partner</a>; and where private work is being incorporated, <a href="/blog/medical-practice-incorporation-step-by-step">medical practice incorporation</a>. For how we work with GP practices, see <a href="/for-gps">our GP services</a>, the rest of our <a href="/blog/gp-practice-management">practice management guides</a>, or <a href="/contact">get in touch</a>.</p>

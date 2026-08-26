@@ -518,7 +518,45 @@ from dataforseo_competitor_data where site_key='medical';
 
 The dossier, `BATCH2_INDEX.md`, the batch-1 packs and this document's own writer brief all say **32,872 rows / 27 domains**. Four writers found the divergence independently. **This is not bookkeeping.** `BATCH2_INDEX.md` §7 concluded that opticians and allied health are unpackable, and that conclusion was reached against the smaller corpus. **It should be re-run against the full 44 domains before the $1.13 unblock is authorised**, which is free SQL against data already paid for.
 
-**D13. The peer set is 22 domains out of 44 harvested, and the other 22 are unclassified.** Peer-winnable counts only positions held by a **classified peer**, so an unclassified domain holding a top-20 slot is silently dropped from every peer-winnable figure in this programme. At least one (`mlaaccounting.co.uk`) and by one writer's read at least eight of the unclassified are plainly medical-accountancy specialists. Effect measured on two wave-B clusters was small (1.8% on one), **but peer-winnable is the column that ORDERS all the work under decision 21, and wave G is a 24-page commercial wave where it will not be small.** Every peer-winnable figure in this batch should be read as a **floor**. Re-classifying the 22 is free.
+> **RESOLVED 2026-08-26, later the same day. The §7 verdict survives the bigger corpus, and the $1.13 unblock is still the only route.** Re-run over all 44 domains, $0.00 spent, no DataForSEO call made:
+>
+> ```sql
+> -- opticians:     ranked_keyword ~* 'optic|optometr|eye ?care|spectacle'
+> -- allied health: ranked_keyword ~* 'physio|osteopath|chiroprac|podiatr|therapist|speech and language|dietit'
+> ```
+>
+> | Cluster | 27 domains | 44 domains |
+> |---|---|---|
+> | Opticians | 4 kws / 280 vol | **4 kws / 280 vol (unchanged)** |
+> | Allied health | 0 kws / 0 vol | **1 kw / 50 vol** (`physio business`) |
+>
+> All four optician keywords are the ones §7 already named: two brand terms for one Price Bailey case study, plus `vat on spectacles` / `is there vat on spectacles`. The 17 extra domains added no accountancy vocabulary to either cluster, because none of them runs such a page either. **No re-plan follows from D12.**
+
+**D13. The peer set is 22 domains out of 44 harvested, and the other 22 are unclassified.** *(Count corrected below: the unclassified set is 17, not 22.)* Peer-winnable counts only positions held by a **classified peer**, so an unclassified domain holding a top-20 slot is silently dropped from every peer-winnable figure in this programme. At least one (`mlaaccounting.co.uk`) and by one writer's read at least eight of the unclassified are plainly medical-accountancy specialists. Effect measured on two wave-B clusters was small (1.8% on one), **but peer-winnable is the column that ORDERS all the work under decision 21, and wave G is a 24-page commercial wave where it will not be small.** Every peer-winnable figure in this batch should be read as a **floor**. Re-classifying the 22 is free.
+
+> **RESOLVED 2026-08-26, later the same day. The classification was done and the column re-derived. D13's direction was right, its size was not: three rows move, none of the top four, and no wave is re-sequenced.** $0.00 spent, SQL only against the persisted harvest (`api_cost_log` shows zero DataForSEO calls after 15:26 UTC).
+>
+> **The unclassified set is 17, not 22.** 44 = 22 peers (`competitor_universe_2026-08-26.md` §2a) + 5 institutional non-peers (§2b: `bma.org.uk`, `themdu.com`, `aisma.org.uk`, `forvismazars.com`, `johnstoncarmichael.com`) + **17 never classified**. The "22 unclassified" figure double-counted the five §2b domains, which were classified all along.
+>
+> **All 17 are peers**, checked against §2a's rule (a private accountancy firm we could realistically outrank; institutions, gov, trade bodies and defence organisations are not):
+> `gmprofessionalaccountants.co.uk`, `e-accounts.co.uk`, `apexaccountants.tax`, `aims.co.uk`, `rsbc.uk`, `livingstonesaccountants.co.uk`, `thepeloton.co.uk`, `btbaccountants.co.uk`, `ainsworth-healthcare-accountants.co.uk`, `accurus.co.uk`, `leonandcompany.co.uk`, `mlaaccounting.co.uk`, `honeybarrettmedical.co.uk`, `yorkshiremedicalaccountants.co.uk`, `vanillaonlineaccountancy.co.uk`, `emaccountancy.co.uk`, `broadreachaccountancy.co.uk`.
+> Four are medical specialists (`ainsworth-healthcare-accountants`, `honeybarrettmedical`, `yorkshiremedicalaccountants`, `mlaaccounting`, the one D13 named); the rest are generalists, which §2a already admits (`lanop`, `taxqube`, `fkca` are all in the peer set on the same basis). **Peer set is therefore 39 of 44.**
+>
+> **Effect on the §4 column, measured both ways over identical clusters:**
+>
+> | §4 row | Topic | Peer-winnable, 22 peers | Peer-winnable, 39 peers |
+> |---|---|---|---|
+> | 4 | uniform tax rebate / work uniform tax relief | 27,550 | **30,860** |
+> | 9 | pharmacist accountant | 2,090 | **2,610** |
+> | all other 30 rows | | unchanged | unchanged |
+>
+> Row 4 stays first, row 9 stays ninth. **Nothing re-sequences.**
+>
+> **Why the effect is small, which is the part worth keeping.** Corpus-wide the widening adds 902 keywords and 710,410 volume to the peer-held set (7,213 kws / 3,688,140 vol at 22 peers, 8,115 / 4,398,550 at 39). But only **38 keywords / 82,550 volume** contain any medical, NHS, pension or practice vocabulary, and most of that is a single non-medical news family (`hmrc pensioner bank deduction` and variants) that `apexaccountants.tax` ranks for. The 17 domains are mostly generalist firms whose keyword sets are `shopify accountants` and `coffee shop profit margins`: they enlarge the harvest without touching this site's clusters. **Wave G's 24 commercial pages do not need re-scoping on this account.**
+>
+> **Method limitation, stated rather than hidden.** The dossier's original URL-node cluster grouping was never persisted (§4's own correction note says so), so the clusters were rebuilt here by keyword-family regex and calibrated against §4's published Kws and Total-volume columns restricted to the original 27 domains. The rebuild lands close on roughly two thirds of rows and runs wide on the rest. **The peer-set delta above is exact** because it is a domain-list change measured over identical clusters, both sides. The absolute cluster volumes are for ordering and must not be quoted to the pound, which is the same caveat §4 already carries.
+>
+> **The standing fix, so this does not recur.** `dataforseo_competitor_data` has no classification column, so peer status lives only in a markdown table and a harvest that grows past it silently drops domains out of every peer-winnable figure. Any future harvest that seeds new domains must reconcile them against the site's `competitor_universe_*.md` §2a/§2b tables in the same task, before any peer-winnable figure is published.
 
 **D14. `curl -A "Mozilla/5.0"` is not sufficient, and the prescribed fetch command is now wrong three times over.** `BATCH2_INDEX.md` §10B established that a plain user agent recovers `hawsons.co.uk` where `WebFetch` 403s. Wave-B writers found both `pricebailey.co.uk` URLs still 403 to that command and return **200 to a full browser header set**. Had those been logged as gaps, the single best staleness finding in the batch would have been lost: **pricebailey holds `capital allowances property` at position 5 with AIA stated at £200,000 and a 2017 worked example**, which is precisely the stale framing house positions warns against, live on a page outranking us. **Fix the class: the estate's competitor-fetch helper should send a full header set, not just a UA.**
 
@@ -629,3 +667,116 @@ domains are unclassified so every peer-winnable figure is a floor) are correct a
 first task of the next session, because they change the ORDER of the work and the order is the decision. The F5
 gate blocking a now-verified QOF figure is a stale gate, not a defect in the page: the figure was unverifiable
 this morning and was settled at source this afternoon.
+
+---
+
+## WAVES A AND B DRAFTED, 2026-08-26. Nine pages in the working tree, nothing deployed.
+
+Nine writers ran concurrently, one per pack, each fenced to its own file. Every page is drafted and in the
+working tree. **Nothing is committed, deployed or indexed, no `monitored_pages` row was written, no monitor,
+alert, cron or email was created, and no paid API call was made by any writer or by the conductor.** The only
+external calls were free reads of gov.uk, legislation.gov.uk, NHS England, NHSBSA and PCSE for facts the packs
+required to be verified at source.
+
+| Page | Wave | Grade | Diff |
+|---|---|---|---|
+| `how-gms-funding-works-global-sum-carr-hill-explained` | A | EXTEND | +63 / -0 |
+| `pcn-funding-network-contract-des-explained` | A | EXTEND | +88 / -6 |
+| `arrs-reimbursement-employing-pcn-staff-tax` | A | EXTEND | +77, 8 modified |
+| `enhanced-services-gp-practice-income-tax` | A | EXTEND | +38 / -4 |
+| `pcn-clinical-director-payments-tax` | A | EXTEND | +31 / -4 |
+| `dispensing-practice-income-accounts-tax` | A | REFRAME | full overhaul |
+| `gp-surgery-notional-rent-vs-cost-rent-explained` | B | EXTEND | anchors only, -1 |
+| `gp-partnership-last-man-standing-premises-risk` | B | EXTEND | +66 / -8 |
+| `gp-surgery-premises-own-vs-rent-tax-guide` | B | REFRAME | full overhaul |
+
+### Conductor rulings issued during the run, in addition to the three above
+
+4. **Ruling 1 extends to ALL process narration in frozen copy, not only to the instance a writer is told about.**
+   Issued on `enhanced-services`, which found two further breaches (a comparison paragraph and FAQ 11) that no
+   brief had named. The page has zero named Bing queries and zero Google rows, so the freeze was protecting no
+   measurement. Both fixed, `Network Contract DES` count held at 7, all 14 FAQ question strings untouched.
+5. **Superseded figures inside frozen copy are corrected, not merely re-tagged.** Issued on `pcn-funding`, which
+   found the live page stating 2025/26 rates as current. See D16 below. Five occurrences found, five corrected.
+6. **Stale year tags inside frozen copy are corrected, per STATE.md.** Issued on `arrs-reimbursement`. The writer
+   was right to ask rather than act, because its brief limited in-frozen deletion to ownership breaches. Split
+   deliberately into two cases: tag-only where the figure still holds (Employment Allowance, £10,500 confirmed
+   current at gov.uk), and factual correction where the figure is superseded (the GP ARRS maximum).
+
+**All six rulings are the same principle, now applied six times in two days: a rule that protects a measurement
+must never be allowed to preserve a defect.** It belongs in the shared engine doc, not here.
+
+### D16. The live PCN page was publishing superseded rates, and the base was wrong as well as the number
+
+`pcn-funding-network-contract-des-explained` stated £2.999 / £2.266 / £0.733 / £1.76 as current. The 2026/27
+specification gives **£3.059 (£2.311 registered list + £0.748 adjusted population, both at 1 January 2026)** and
+an NPP of **£1.761**. The conductor verified all four in the specification PDF directly rather than accepting the
+writer's read. The writer then caught a second error underneath the first: the live copy attached the NPP to a
+**registered patient** count, where paragraph 10.3.5 applies it to the **Contractor Weighted Population**.
+Correcting only the number would have preserved the subtler error. Both corrected, verified at source.
+
+**Recorded as a method rule:** a per-patient figure without its measurement date, and a rate without its base, are
+the same defect one layer down. Fix all three together or you have not fixed it.
+
+### D17. A search snippet is not a source, and the conductor was the one who got this wrong
+
+While ruling on the ARRS figure, the conductor passed the writer "£82,418 in 2025/26 rising to £118,759 in
+2026/27, £120,921 in London", taken from a web-search summary rather than from the specification. **The writer
+correctly refused it.** Neither number appears in the 2026/27 specification, the Part B guidance or the contract
+long-read, and £118,759 plus employer on-costs overshoots the published maximum. The specification's Table 3c
+gives **£152,900**, or **£155,698** with London weighting, as the annual equivalent maximum reimbursable amount
+per role for General Medical Practitioners, inclusive of on-costs. That is what the page now states. Recorded
+because the failure mode is the one trap 5 already names, arriving from the conductor's direction rather than the
+writer's.
+
+### D18. Ownership ruling: the accounting treatment of a dilapidations provision
+
+`gp-partnership-last-man-standing-premises-risk` now carries the largest new block in wave B on how a
+dilapidations liability is recognised and taxed, and **the ownership map has no row for it**. The pack proposed
+one (its correction C6) but it was never ratified, so the fact was written unowned.
+
+**RULING: it belongs to `gp-partnership-last-man-standing-premises-risk`, as new row O36.** The recognition test
+is inseparable from the last-man-standing risk that page exists to explain, and the page is where a reader meets
+the liability. `gp-surgery-premises-own-vs-rent-tax-guide` takes one sentence and a link if it needs it. Recorded
+here rather than in a second document; the map in section 6 should absorb O36 at its next edit.
+
+### Ground truth patched by the conductor, 2026-08-26, after the writers landed
+
+Both written directly to `house_positions.md` (manager-direct, no agent touched that file during the run):
+
+- **New §3.C, PCN and Network Contract DES payment rates 2026/27.** All five rates with their bases and the
+  1 January 2026 measurement date, read at pages 61, 62, 63 and 71 of the specification PDF. Also records the two
+  structural changes that outrank the numbers: Core PCN Funding now **absorbs** the Clinical Director Payment and
+  the PCN Leadership and Management Payment, and £292m has left the PCN-level Capacity and Access Payment for a
+  practice-level scheme, so the CAP is not a live PCN entitlement.
+- **New §7.B, Structures and Buildings Allowance.** 3% straight line, 33 and one third years, contracts on or
+  after 29 October 2018, written allowance statement, and the disposal add-back. This is the ground truth that
+  should have existed before a live page stated its absence as fact (D15). **Its amendment check against CAA 2001
+  Part 2A has NOT been run and the block says so.**
+
+### Pack defects found by writers, for the next pack-building pass
+
+1. `enhanced-services` §7.5 mis-cites the Health and Care Act 2022 for the abolition of CCGs. It says s.25 and
+   Sch 2; the correct hooks are **s.19 and Sch 4 para 100**, commenced by SI 2022/734. The date it asserts is right.
+2. `arrs-reimbursement` C5 asserts the file has no `title` frontmatter key. **It does.** The §7.3 byte-identity
+   list is built on a false premise, so QA should treat `title` as frozen on that file.
+3. **Zero-occurrence gates are unsatisfiable by construction on an additive-only grade.** `enhanced-services`
+   carries gates demanding zero page-wide occurrences of `Additional Roles` and `Carr-Hill` over frozen copy that
+   already contains both. Narrow them to the capitalised scheme name.
+4. **`dispensing` §7.1 and the language spec contradict each other and cannot both be met.** §7.1 requires five
+   Drug Tariff word orders present; V1 caps any idea at two. The writer followed the hard countable gate. **A V1
+   finding on that page should be waived, not fixed.**
+5. **G7 (worked example, 80 to 200 words) collides with C2 (paragraph maximum 75 words)** on two pages. The
+   example necessarily splits across paragraphs. QA should not read the split as a missing component.
+
+### Batch-level properties, not per-page defects
+
+- **The FAQ and word-count bands are unreachable under EXTEND and were missed on six of the nine pages.** Five
+  pages now sit at 16 to 18 FAQs against a band of 4 to 8, and four exceed the 2,000 to 3,200 word band, because
+  additive-only work on pages already 2,800 to 3,400 words long can only go one way. Every writer reported the
+  miss rather than padding or contorting, which is the behaviour the spec asks for. **The bands need an
+  EXTEND-specific form, or an explicit exemption, before batch 4.** Treating these as nine separate defects would
+  waste a QA cycle on arithmetic.
+- **The numeral-count paragraph opener reflex reproduced itself for a third batch**, in a writer who had read the
+  warning and then cut five of them to one on its own review. That makes it a property of the house voice rather
+  than a per-writer slip, and it is evidence for the wave fix pass rather than a finding.

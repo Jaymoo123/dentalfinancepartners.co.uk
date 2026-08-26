@@ -179,11 +179,17 @@ not the 86 a markdown glob returns; a glob misses 52 TSX, TS and derived surface
 
 ### THE FIRST THREE THINGS THE NEXT AGENT DOES, in this order
 
-1. **Re-derive the peer-winnable column before touching the batch 3 order.** The harvest is **39,296 rows across
-   44 domains**, not the 32,872 across 27 that most documents still repeat, and **22 of the 44 domains are
-   unclassified**, so every peer-winnable figure is a FLOOR. That column ORDERS all the work under decision 21, so
-   a floor is mis-sequencing the backlog. It is free SQL. Beware the paging trap (rollout doc trap 15): advance the
-   offset by rows RETURNED, never by the limit requested, or you get a tenth of the table and a false zero.
+1. ~~**Re-derive the peer-winnable column before touching the batch 3 order.**~~ **DONE 2026-08-26, same day.
+   Nothing re-sequences, so go straight to point 2.** The harvest is confirmed at **39,296 rows across 44 domains**,
+   not the 32,872 across 27 that most documents still repeat. The unclassified set was **17, not 22** (the 22 figure
+   double-counted the five §2b institutional non-peers, which were classified all along). All 17 are private
+   accountancy firms and therefore peers, so the peer set is **39 of 44**. Re-deriving the §4 column against it moves
+   **two rows** (uniform 27,550 to 30,860, pharmacist 2,090 to 2,610) and reorders none: row 4 stays first, row 9
+   stays ninth. The widening adds 902 keywords corpus-wide but only **38 of them carry any medical vocabulary**,
+   because the 17 domains are mostly generalists ranking for `shopify accountants` and the like. Full working,
+   including the exact peer list and the method's limits, is `BATCH3_INDEX.md` D13. D12 was closed in the same pass:
+   opticians and allied health are still unpackable on the full 44 domains, so the $1.13 unblock remains the only
+   route to them. **$0.00 spent, SQL only against the persisted harvest.**
 2. **Write batch 3 waves A and B.** Nine packs are frozen at `docs/medical/packs/PACK_B3_*` with an ownership map
    (rows O19 to O35) built BEFORE the packs and repeated inside each one. Wave A is GP funding, 6 pages; wave B is
    premises, 3. Conductor rulings that unblock them are in `BATCH3_INDEX.md` under "CONDUCTOR RULINGS".
