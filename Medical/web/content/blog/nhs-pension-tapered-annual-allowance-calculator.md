@@ -111,7 +111,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Profit timing for GP partners:</strong> the timing of partnership distributions interacts with both income measures, covered in our <a href="/blog/gp-partnership-profit-sharing-tax-planning">GP partnership profit sharing and tax planning</a> guide.</li>
 </ul>
 
-<p>One trap is worth flagging. Routing private income through a limited company to manage the taper also takes that income outside NHS pensionable pay, because a company cannot hold an NHS GMS or PMS contract and company dividends are not NHS-pensionable. Any tax saving from incorporation must therefore be weighed against the loss of pension accrual, never looked at in isolation.</p>
+<p>One trap is worth flagging. Routing private income through a limited company to manage the taper also takes that income outside NHS pensionable pay, because a doctor's personal service company cannot hold an NHS GMS or PMS contract, which is open only to a company whose shareholders all qualify, and company dividends are not NHS-pensionable. Any tax saving from incorporation must therefore be weighed against the loss of pension accrual, never looked at in isolation.</p>
 
 <h2>Common Calculation Mistakes</h2>
 

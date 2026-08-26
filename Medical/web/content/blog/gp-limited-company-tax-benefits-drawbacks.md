@@ -13,12 +13,12 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/a-person-signing-a-contract-6814521/"
 category: Incorporation & Company Structures
 metaTitle: 'GP Limited Company: Tax Benefits and Drawbacks 2026/27'
-metaDescription: 'Weigh a GP limited company honestly: corporation tax at 19% on profits up to £50,000 against no NHS contract and no NHS pension on dividends. Model both.'
+metaDescription: 'Weigh a GP limited company honestly: corporation tax at 19% on profits up to £50,000 against no NHS contract for your company and no NHS pension on dividends. Model both.'
 altText: UK GP weighing the tax benefits and drawbacks of running a limited company with accounts and a calculator
 h1: 'GP Limited Company Tax Benefits and Drawbacks: What You Need to Know'
 keyTakeaways:
 - "Corporation tax is 19% on profits up to £50,000 and 25% above £250,000, versus income tax up to 45%, but applies to private work only."
-- "A company cannot hold an NHS GMS or PMS contract and its income is not NHS-pensionable, so dividends build no NHS pension accrual."
+- "An NHS GMS or PMS contract sits with GPs, their partnership or a company whose shareholders all qualify, not a doctor's personal service company, and company income is not NHS-pensionable, so dividends build no NHS pension accrual."
 - "For 2026/27 the saving narrowed: dividend rates rose to 10.75% ordinary and 35.75% upper from 6 April 2026."
 - "IR35 still applies to a GP personal service company; inside-IR35 engagements deduct PAYE and NIC at source."
 - "Business Asset Disposal Relief can apply to a genuine private-practice disposal at 18% from 6 April 2026, never to NHS goodwill."
@@ -26,9 +26,9 @@ summary: Wondering whether a GP limited company is worth it? This guide weighs t
 schema: ''
 faqs:
 - question: What are the main tax benefits of a GP limited company?
-  answer: The headline benefits are corporation tax at 19% on profits up to £50,000 (25% above £250,000, with marginal relief between) instead of income tax up to 45%, the ability to retain profits in the company and time their extraction, and dividends taxed below salary. The catch is that these apply to private work only, because a company cannot hold an NHS GMS or PMS contract, and the saving has narrowed for 2026/27 because dividend rates rose to 10.75% and 35.75% from 6 April 2026.
+  answer: The headline benefits are corporation tax at 19% on profits up to £50,000 (25% above £250,000, with marginal relief between) instead of income tax up to 45%, the ability to retain profits in the company and time their extraction, and dividends taxed below salary. The catch is that these apply to private work only, because an NHS GMS or PMS contract sits with GPs, their partnership or a company whose shareholders all qualify, never a doctor's personal service company, and the saving has narrowed for 2026/27 because dividend rates rose to 10.75% and 35.75% from 6 April 2026.
 - question: Does a GP limited company affect my NHS pension?
-  answer: Yes, and this is usually the decisive drawback. A limited company cannot hold an NHS GMS or PMS contract, and income routed through a company is not NHS-pensionable. So private or locum income you take as dividends earns no NHS pension accrual at all. Any corporation tax saving must always be weighed against that lost defined-benefit accrual, not looked at on its own.
+  answer: Yes, and this is usually the decisive drawback. An NHS GMS or PMS contract sits with GPs, their partnership or a company limited by shares whose shareholders all qualify, not a doctor's personal service company, and income routed through a company is not NHS-pensionable. So private or locum income you take as dividends earns no NHS pension accrual at all. Any corporation tax saving must always be weighed against that lost defined-benefit accrual, not looked at on its own.
 - question: Do IR35 rules apply to a GP limited company?
   answer: They can. A GP working through a personal service company is within the off-payroll framework. For NHS Trust and other public-sector work, the hirer or fee-payer decides status from 6 April 2017, and for medium or large private hirers from 6 April 2021. Where an engagement is inside IR35 the fee deducts PAYE and NIC at source, so the salary and dividend extraction route is not available for that income. IR35 has not been abolished.
 - question: Can a GP sell company goodwill and claim Business Asset Disposal Relief?
@@ -44,9 +44,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>This guide gives an honest 2026/27 picture: what a company can and cannot do for a GP, the current dividend and corporation tax figures, and the pension trap that catches doctors who only look at the tax saving. It is general information, not advice for your situation. For the mechanics of forming the company see our <a href="/blog/medical-practice-incorporation-step-by-step">step-by-step incorporation guide</a>, and for the rates themselves see <a href="/blog/gp-corporation-tax">GP corporation tax explained</a>.</p>
 
-<h2>The big caveat first: a company cannot hold an NHS contract</h2>
+<h2>The big caveat first: your company cannot hold an NHS contract</h2>
 
-<p>Before any tax comparison, the single most important point for GPs: a <strong>limited company cannot hold an NHS GMS or PMS contract</strong>. NHS primary medical care funding (the Global Sum weighted by the Carr-Hill formula, plus QOF, enhanced services and PCN or Network Contract DES funding) is paid to the contract holder, a GP partnership or an individual, not to a company.</p>
+<p>Before any tax comparison, the single most important point for GPs: an <strong>NHS GMS or PMS contract sits with GPs, their partnership, or a company limited by shares whose shareholders all qualify</strong>, and a doctor's ordinary personal service company is not one, nor is any company with an outside shareholder such as a spouse. NHS primary medical care funding (the Global Sum weighted by the Carr-Hill formula, plus QOF, enhanced services and PCN or Network Contract DES funding) is paid to that contract holder, not to your company.</p>
 
 <p>So incorporation is a <strong>private-work decision only</strong>. The income that can sensibly go through a GP or doctor's company is private and non-NHS work: insurance medicals, medico-legal and expert-witness reporting, occupational health, cosmetic and self-pay clinics, education and media, and personal service company locum work that is genuinely outside IR35. Your NHS partnership or salaried income cannot be incorporated. Anyone telling you to "put your GP income through a company" has not understood the NHS contract rules.</p>
 
@@ -71,7 +71,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <h2>The drawbacks, starting with the NHS pension</h2>
 
 <h3>Dividends are not NHS-pensionable</h3>
-<p>This is the drawback that most often kills the case for incorporation. Because a company cannot hold an NHS contract, <strong>income taken through a company is not NHS-pensionable</strong>, and <strong>dividends are not pensionable income</strong> at all. The NHS Pension Scheme is a defined-benefit scheme (everyone now accruing in the 2015 CARE section at 1/54th of pensionable earnings each year), and that accrual is valuable. Every pound you route through a company as a dividend earns zero NHS pension.</p>
+<p>This is the drawback that most often kills the case for incorporation. Because your company cannot hold an NHS contract, <strong>income taken through a company is not NHS-pensionable</strong>, and <strong>dividends are not pensionable income</strong> at all. The NHS Pension Scheme is a defined-benefit scheme (everyone now accruing in the 2015 CARE section at 1/54th of pensionable earnings each year), and that accrual is valuable. Every pound you route through a company as a dividend earns zero NHS pension.</p>
 
 <p>For a GP partner, pensionable profit is certified each year on the Type 1 Annual Certificate of Pensionable Profits; for a salaried GP it is the Type 2 self-assessment; for a freelance locum it is Locum forms A and B. None of that machinery captures company dividends. A hospital consultant's NHS post is pensionable, but private work through a company is never pensionable. The honest comparison therefore always pairs the tax saving with the <a href="/blog/gp-pension-contributions-tax-relief">pension accrual you give up</a>, and for genuinely NHS-derived income that loss usually swamps the saving.</p>
 

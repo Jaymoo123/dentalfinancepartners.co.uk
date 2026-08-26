@@ -48,7 +48,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>How GP Practice Accounting Works</h2>
 
-<p>Most GP practices in England operate as a <strong>traditional partnership</strong>, where two or more GP partners run the practice jointly and share the profit. A minority use a limited liability partnership (LLP), and some single-handed practices run as a sole trader. A limited company cannot hold a GMS or PMS contract, so the company route is not available for core NHS general practice (it is only relevant to private or non-NHS work).</p>
+<p>Most GP practices in England operate as a <strong>traditional partnership</strong>, where two or more GP partners run the practice jointly and share the profit. A minority use a limited liability partnership (LLP), and some single-handed practices run as a sole trader. A GMS or PMS contract sits with GPs, their partnerships or a company limited by shares whose shareholders all qualify, so an ordinary personal service company route is not available for core NHS general practice (it is only relevant to private or non-NHS work).</p>
 
 <p>A partnership is <strong>transparent for tax</strong>. The partnership itself does not pay tax. Instead, the practice profit is calculated once, then allocated to the partners, and each partner pays their own income tax and National Insurance on their share. That single feature drives almost everything else in GP accounting.</p>
 

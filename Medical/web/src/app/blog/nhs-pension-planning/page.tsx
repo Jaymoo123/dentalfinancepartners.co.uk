@@ -379,8 +379,10 @@ export default function NHSPensionPlanningPillarPage() {
           <section>
             <h2 className={h2}>Dividends are not pensionable, and no calculator will tell you that</h2>
             <p className={`${p} mb-4`}>
-              A limited company cannot hold a GMS or PMS contract, and income routed through a
-              company is not NHS-pensionable. Private practice, medico-legal work or locum income
+              A doctor's ordinary personal service company cannot hold a GMS or PMS contract, and
+              income routed through a company is not NHS-pensionable. Those contracts sit with GPs,
+              their partnerships, or a company limited by shares whose shareholders all qualify.
+              Private practice, medico-legal work or locum income
               taken as dividends therefore builds no NHS accrual at all, however efficient the
               corporation tax position looks in isolation. For a hospital consultant, only the NHS
               employment is pensionable; private work never is, in any structure.

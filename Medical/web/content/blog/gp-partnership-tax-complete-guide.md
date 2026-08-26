@@ -159,7 +159,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Should a GP Partnership Incorporate?</h2>
 
-<p>This question comes up often, and the answer for the NHS side is straightforward: <strong>a limited company cannot hold an NHS GMS or PMS contract</strong>, and income routed through a company is <strong>not NHS-pensionable</strong>. Incorporation is therefore a <strong>private-work decision only</strong> (for example private clinics, medico-legal or occupational health income), never a way to run the core NHS partnership.</p>
+<p>This question comes up often, and the answer for the NHS side is straightforward: <strong>an NHS GMS or PMS contract sits with GPs, their partnership, or a company limited by shares whose shareholders all qualify, and a doctor's personal service company is not one</strong>, and income routed through a company is <strong>not NHS-pensionable</strong>. Incorporation is therefore a <strong>private-work decision only</strong> (for example private clinics, medico-legal or occupational health income), never a way to run the core NHS partnership.</p>
 
 <p>Even for private work, the case is rarely a clear win at typical profit levels, and the 2026/27 dividend rate rise narrows it further: dividend tax is 10.75% (ordinary), 35.75% (upper) and 39.35% (additional) from 6 April 2026, with a £500 dividend allowance, up from 8.75% and 33.75% in 2025/26. Any tax comparison must be paired with the loss of NHS pension accrual on income taken as dividends. See our guides to <a href="/blog/medical-practice-incorporation-step-by-step">incorporating private medical work step by step</a> and the <a href="/blog/gp-limited-company-tax-benefits-drawbacks">benefits and drawbacks of a GP limited company</a>.</p>
 

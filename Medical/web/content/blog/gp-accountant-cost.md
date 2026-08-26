@@ -20,7 +20,7 @@ keyTakeaways:
 - "The NHS pension annual allowance is 60,000 pounds for 2025/26, tapering where threshold income exceeds 200,000 pounds and adjusted income exceeds 260,000 pounds, down to a 10,000 pounds floor."
 - "MTD for Income Tax applies to sole traders and landlords with qualifying income over 50,000 pounds from 6 April 2026, then 30,000 pounds from April 2027 and 20,000 pounds from April 2028."
 - "A GP partnership files an SA800, each partner's share flows to their SA104 partnership pages, and partners are taxed on their profit share, not the drawings they take."
-- "A limited company cannot hold an NHS GMS or PMS contract and its income is not NHS-pensionable, so incorporation is a private-work-only decision."
+- "An NHS GMS or PMS contract sits with GPs, their partnerships or a company limited by shares whose shareholders all qualify, which an ordinary personal service company is not, and company income is not NHS-pensionable, so incorporation is a private-work-only decision."
 - "The VAT registration threshold is 90,000 pounds of taxable (non-exempt) turnover for 2024/25 onwards, and genuine NHS and private medical care is generally exempt."
 summary: "What a GP accountant costs is driven by your structure and complexity, not a one-size fee: practice size, partner numbers, payroll, NHS pension certification and the depth of tax planning you need. This guide explains the factors and the value, so you can compare quotes like for like."
 schema: ""
@@ -82,7 +82,7 @@ faqs:
 
 <ul>
 <li><strong>NHS pension annual-allowance planning.</strong> The annual allowance is 60,000 pounds for 2025/26, tapering where threshold income exceeds 200,000 pounds and adjusted income exceeds 260,000 pounds, down to a floor of 10,000 pounds. High-earning partners and consultants who breach it can use carry-forward and Scheme Pays. See our <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance guide</a> and <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays deadlines</a>.</li>
-<li><strong>Incorporation of private work.</strong> A limited company cannot hold an NHS GMS or PMS contract and company income is not NHS-pensionable, so incorporation is a private-work-only decision that must always be weighed against the pension-accrual loss. Our <a href="/blog/gp-limited-company-tax-benefits-drawbacks">limited company benefits and drawbacks</a> piece covers the trade-off.</li>
+<li><strong>Incorporation of private work.</strong> An NHS GMS or PMS contract sits with GPs, their partnerships or a company limited by shares whose shareholders all qualify, which an ordinary personal service company is not, and company income is not NHS-pensionable, so incorporation is a private-work-only decision that must always be weighed against the pension-accrual loss. Our <a href="/blog/gp-limited-company-tax-benefits-drawbacks">limited company benefits and drawbacks</a> piece covers the trade-off.</li>
 <li><strong>Making Tax Digital for Income Tax.</strong> MTD for Income Tax applies to sole traders and landlords with qualifying income over 50,000 pounds from 6 April 2026 (then 30,000 pounds from April 2027 and 20,000 pounds from April 2028). Most full-time locums and unincorporated private GPs are in scope from April 2026, which adds quarterly digital reporting to the workload. Limited companies are out and partnerships are deferred with no confirmed date.</li>
 </ul>
 

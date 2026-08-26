@@ -148,7 +148,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>The Incorporation Pension Trap</h2>
 
-<p>A recurring question is whether taking income through a limited company helps with annual allowance pressure. It can reduce the taper, but it carries a cost that is easy to overlook. A <strong>limited company cannot hold an NHS GMS or PMS contract, and income routed through a company is not NHS pensionable</strong>. Private or locum income taken as dividends therefore loses NHS pension accrual entirely. For a consultant, only the NHS employment is pensionable; private work, whether as a sole trader, partnership or company, is never pensionable.</p>
+<p>A recurring question is whether taking income through a limited company helps with annual allowance pressure. It can reduce the taper, but it carries a cost that is easy to overlook. A <strong>doctor's ordinary limited company cannot hold an NHS GMS or PMS contract, which is open only to a company whose shareholders all qualify, and income routed through a company is not NHS pensionable</strong>. Private or locum income taken as dividends therefore loses NHS pension accrual entirely. For a consultant, only the NHS employment is pensionable; private work, whether as a sole trader, partnership or company, is never pensionable.</p>
 
 <p>That means any incorporation decision has to weigh the tax saving against the lost pension growth, never the saving alone. Our <a href="/blog/medical-practice-incorporation-step-by-step">guide to medical practice incorporation</a> works through both sides of that trade off.</p>
 

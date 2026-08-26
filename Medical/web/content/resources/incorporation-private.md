@@ -52,7 +52,7 @@ author: "Medical Accountants UK"
 
 <h2 id="the-pension-omission">The factor the model does not price at all</h2>
 
-<p>Dividends are not NHS pensionable, and a limited company cannot hold a GMS or PMS contract. For a hospital consultant, only the NHS employment is ever pensionable and private work never is, whatever structure it sits in. For a GP, routing income through a company takes it out of pensionable earnings for good.</p>
+<p>Dividends are not NHS pensionable, and a doctor's ordinary personal service company cannot hold a GMS or PMS contract. For a hospital consultant, only the NHS employment is ever pensionable and private work never is, whatever structure it sits in. For a GP, routing income through a company takes it out of pensionable earnings for good.</p>
 
 <p>The workbook compares tax against tax. It has no cell for the pension accrual that the company column gives up, and that accrual is a defined benefit promise, index linked, accruing at 1/54th of pensionable earnings a year in the 2015 section. Whether it outweighs the tax saving depends on your section, your years to retirement and how much of the income was pensionable in the first place, which is precisely why the file cannot put a number on it and neither will this page. What it does mean is that a positive saving in the workbook is not on its own a reason to incorporate. Set it against <a href="/blog/gp-pension-contributions-tax-relief">how pension contributions and tax relief work for a doctor</a> before you act on it.</p>
 
@@ -72,7 +72,7 @@ author: "Medical Accountants UK"
 
 <h3 id="q-nhs-income">Can I put my NHS income through the company to increase the saving?</h3>
 
-<p>No. A limited company cannot hold an NHS primary care contract, and NHS employment income is employment income. The NHS figure in the model is there to set your tax bands, not to be incorporated.</p>
+<p>No. A doctor's ordinary personal service company cannot hold an NHS primary care contract, and NHS employment income is employment income. The NHS figure in the model is there to set your tax bands, not to be incorporated.</p>
 
 <h3 id="q-saving-negative">The saving is negative. Is the model broken?</h3>
 

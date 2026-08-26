@@ -21,7 +21,7 @@ keyTakeaways:
 - "From 1 April 2026 the scheme runs six member contribution tiers from 5.2% on pensionable pay up to £13,259 rising to 12.5% on pay of £67,669 and above, with a flat 23.7% employer contribution."
 - "The 2026/27 annual allowance is £60,000, but for the NHS defined-benefit scheme what counts is the pension input amount (the growth in your benefits), not the cash you contribute."
 - "The allowance tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor."
-- "Income routed through a limited company and taken as dividends is not NHS-pensionable, because a company cannot hold an NHS GMS or PMS contract, so incorporating private work builds no NHS pension."
+- "Income routed through a limited company and taken as dividends is not NHS-pensionable, whatever the company is, and an NHS GMS or PMS contract sits with GPs, their partnership or a company whose shareholders all qualify, not a personal service company, so incorporating private work builds no NHS pension."
 summary: 'How tax relief on NHS pension contributions works for GPs in 2026/27: the tiered employee rates, automatic net pay relief, topping up with AVCs or Added Pension, and where the £60,000 annual allowance fits in.'
 schema: ''
 faqs:
@@ -34,7 +34,7 @@ faqs:
 - question: Can GP partners top up the NHS pension and still get tax relief?
   answer: Yes. You can buy Added Pension (extra defined-benefit accrual inside the scheme) or pay Money Purchase Additional Voluntary Contributions into a separate defined-contribution pot. Both attract income tax relief, but both count towards your £60,000 annual allowance, so a GP near the taper should model the input amount before topping up.
 - question: Does taking private income as dividends affect my NHS pension?
-  answer: Yes, and it is a common trap. A limited company cannot hold an NHS GMS or PMS contract, and any income routed through a company and taken as dividends is not NHS-pensionable. So incorporating private work can cut tax but stops that income building NHS pension. Always weigh the tax saving against the lost pension accrual before incorporating.
+  answer: Yes, and it is a common trap. An NHS GMS or PMS contract sits with GPs, their partnership or a company whose shareholders all qualify, not a doctor's personal service company, and any income routed through a company and taken as dividends is not NHS-pensionable, whatever the company is. So incorporating private work can cut tax but stops that income building NHS pension. Always weigh the tax saving against the lost pension accrual before incorporating.
 metaTitle_prev: GP Pension Contributions Tax Relief 2026/27 | Medical Accountants UK
 metaDescription_prev: 'How NHS pension contributions get tax relief for GPs: the 2026/27 tiered employee rates, net pay relief, AVCs and Added Pension, and the £60,000 annual allowance.'
 dateModified: '2026-06-12'
@@ -128,7 +128,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Many GPs build a portfolio of private work (insurance medicals, medico-legal reports, occupational health, aesthetic or self-pay clinics) on top of their NHS role. There is a well-worn idea that incorporating this work into a limited company saves tax. It can, but there is a pension cost that is easy to miss.</p>
 
-<p>A limited company <strong>cannot hold an NHS GMS or PMS contract</strong>, and income routed through a company and taken as <strong>dividends is not NHS-pensionable</strong>. So if you incorporate private work and extract it as dividends, that income builds no NHS pension at all. The 2026/27 dividend rates (ordinary 10.75%, upper 35.75%, additional 39.35% unchanged, with a £500 dividend allowance) also narrowed the headline tax saving from 6 April 2026. The right answer is always to weigh any tax saving against the lost pension accrual, never the saving alone.</p>
+<p>An <strong>NHS GMS or PMS contract sits with GPs, their partnership, or a company limited by shares whose shareholders all qualify</strong>, and a doctor's personal service company is not one. Income routed through a company and taken as <strong>dividends is not NHS-pensionable</strong>, whatever the company is. So if you incorporate private work and extract it as dividends, that income builds no NHS pension at all. The 2026/27 dividend rates (ordinary 10.75%, upper 35.75%, additional 39.35% unchanged, with a £500 dividend allowance) also narrowed the headline tax saving from 6 April 2026. The right answer is always to weigh any tax saving against the lost pension accrual, never the saving alone.</p>
 
 <p>That said, routing private income outside pensionable pay can sometimes be a deliberate planning move for a GP who is already over the tapered allowance and gaining no further relief. This is exactly the kind of trade-off that needs modelling case by case. For the wider picture, see our guides to <a href="/blog/gp-limited-company-tax-benefits-drawbacks">the benefits and drawbacks of a GP limited company</a> and <a href="/blog/private-practice-tax-nhs-and-private-income">tax on combined NHS and private income</a>.</p>
 

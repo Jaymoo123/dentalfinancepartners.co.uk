@@ -104,7 +104,7 @@ const commonMistakes = [
   },
   {
     title: "Assuming private income builds NHS pension",
-    body: "Private practice and company income are not NHS pensionable at all. A limited company cannot hold a GMS or PMS contract, and for a hospital consultant only the NHS employment is pensionable. Private income still counts towards threshold and adjusted income, so it tightens the taper while adding nothing to the pension.",
+    body: "Private practice and company income are not NHS pensionable at all. A doctor's ordinary personal service company cannot hold a GMS or PMS contract, and for a hospital consultant only the NHS employment is pensionable. Private income still counts towards threshold and adjusted income, so it tightens the taper while adding nothing to the pension.",
   },
 ];
 

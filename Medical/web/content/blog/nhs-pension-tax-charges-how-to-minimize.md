@@ -49,7 +49,7 @@ faqs:
   - question: "Can I stop myself going over the annual allowance by contributing less to my pension?"
     answer: "No, and this is the most expensive misunderstanding in NHS pension tax. In a defined-benefit scheme the annual allowance measures the pension input amount, the capitalised growth in benefits over the year, not the contributions deducted from pay. Member contributions are tiered on pensionable pay and are not optional while in the scheme. Growth is driven by pay rises, merit awards, a return to full-time working and revaluation, so the lever is pensionable pay and accrual, not the contribution line on a payslip."
   - question: "Will incorporating my private work reduce my NHS pension charges?"
-    answer: "It can ease taper pressure, because income routed through a company is not pensionable NHS pay and so does not feed the pension input amount. The trade-off is that company income and dividends earn no NHS accrual at all, and a company cannot hold an NHS GMS or PMS contract. Dividend rates rose on 6 April 2026 to 10.75% ordinary and 35.75% upper, with the allowance at £500, which narrowed the residual saving. Model the accrual loss alongside the tax saving, never the saving alone."
+    answer: "It can ease taper pressure, because income routed through a company is not pensionable NHS pay and so does not feed the pension input amount. The trade-off is that company income and dividends earn no NHS accrual at all, and a doctor's ordinary company cannot hold an NHS GMS or PMS contract, which is open only to a company whose shareholders all qualify. Dividend rates rose on 6 April 2026 to 10.75% ordinary and 35.75% upper, with the allowance at £500, which narrowed the residual saving. Model the accrual loss alongside the tax saving, never the saving alone."
 ---
 
 <p>An NHS tax rebate, an NHS pension refund and Scheme Pays are three different things, and only one of them settles an annual allowance charge. A rebate returns overpaid income tax; a refund returns your pension contributions and cancels the pension they bought. Scheme Pays makes the NHS scheme settle the tax charge in exchange for a permanently smaller pension. This page separates the three, then sets out the order to work through a charge.</p>
@@ -173,7 +173,7 @@ faqs:
 
 <h3>The incorporation trap on private work</h3>
 
-<p>Consultants and GPs with private income sometimes look at a company to keep that income out of pensionable pay and ease the taper. It does that, with a hard limit: company income and dividends are not NHS-pensionable, and a company cannot hold an NHS GMS or PMS contract. So the taper headroom is bought by losing accrual on that slice entirely.</p>
+<p>Consultants and GPs with private income sometimes look at a company to keep that income out of pensionable pay and ease the taper. It does that, with a hard limit: company income and dividends are not NHS-pensionable, and a doctor's ordinary company cannot hold an NHS GMS or PMS contract, which is open only to a company whose shareholders all qualify. So the taper headroom is bought by losing accrual on that slice entirely.</p>
 
 <p>Dividend rates rose on 6 April 2026, from 8.75% to 10.75% ordinary and 33.75% to 35.75% upper, with the additional rate unchanged at 39.35% and the allowance at £500. That rise has already narrowed the residual saving. See <a href="/blog/gp-limited-company-tax-benefits-drawbacks">the limited-company decision for doctors</a>.</p>
 

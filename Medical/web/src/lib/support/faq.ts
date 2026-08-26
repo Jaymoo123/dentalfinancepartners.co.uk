@@ -57,7 +57,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "Does incorporating my private work cost me NHS pension?",
-      a: "Yes, on the incorporated portion. A limited company cannot hold a GMS or PMS contract and company dividends are not NHS pensionable, so private income taken as dividends builds no NHS benefits. For a consultant, only the NHS employment is pensionable, never the private work. Over years to retirement that lost accrual can outweigh the headline tax saving, so we model both sides before you decide.",
+      a: "Yes, on the incorporated portion. A doctor's ordinary personal service company cannot hold a GMS or PMS contract and company dividends are not NHS pensionable, so private income taken as dividends builds no NHS benefits. For a consultant, only the NHS employment is pensionable, never the private work. Over years to retirement that lost accrual can outweigh the headline tax saving, so we model both sides before you decide.",
     },
   ],
   "incorporation-private": [
@@ -71,7 +71,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "Can a limited company hold my NHS contract?",
-      a: "No. A GMS or PMS contract cannot be held by a company, and NHS income is not pensionable through a company. Incorporation is only ever about your private work: insurance medicals, medico-legal, occupational health, cosmetic or self-pay clinics, and PSC locum work that is outside IR35. We keep the NHS side out of the company.",
+      a: "Not your personal service company. A GMS or PMS contract sits with GPs, their partnerships, or a company limited by shares whose shareholders all qualify, which an ordinary PSC or any company with an outside shareholder is not. NHS income is also not pensionable through a company. Incorporation is only ever about your private work: insurance medicals, medico-legal, occupational health, cosmetic or self-pay clinics, and PSC locum work that is outside IR35. We keep the NHS side out of the company.",
     },
   ],
   locum: [

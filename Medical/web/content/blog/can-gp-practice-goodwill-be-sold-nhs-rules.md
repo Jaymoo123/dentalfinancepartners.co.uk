@@ -36,7 +36,7 @@ faqs:
   - question: "What is a partnership capital account buy-in?"
     answer: "A capital account is the running record of each partner's investment in the partnership: their share of net assets, undrawn profit and any property interest. On joining, an incoming partner pays for their share of net assets (the buy-in); on leaving, the outgoing partner's capital account balance is returned (the buy-out). This figure, not a goodwill multiple, is what actually gets negotiated."
   - question: "Can I get round the ban by incorporating and selling the company shares?"
-    answer: "No. Regulation 4(3) specifically blocks selling shares whose value includes the NHS goodwill element. On top of that, a limited company cannot hold a GMS or PMS contract at all, and company income is not NHS-pensionable. Incorporation cannot put a saleable value on an NHS patient list."
+    answer: "No. Regulation 4(3) specifically blocks selling shares whose value includes the NHS goodwill element. On top of that, a GMS or PMS contract can only be held by GPs, their partnerships, or a company limited by shares whose shareholders all qualify, never an ordinary personal service company, and company income is not NHS-pensionable. Incorporation cannot put a saleable value on an NHS patient list."
   - question: "Why are GPs different from dentists, who can sell goodwill?"
     answer: "The prohibition applies to NHS primary medical services (GP practices), not to NHS dentistry. NHS dental goodwill is routinely bought and sold, so the dentist style sell goodwill and claim relief playbook is real for dentists but does not translate to GPs. This is the most common source of confusion for GPs reading generic or dental-oriented advice."
   - question: "Can I sell the goodwill of my private (non-NHS) medical work?"
@@ -154,7 +154,7 @@ faqs:
 <p>A few recurring beliefs are worth tackling head on.</p>
 
 <ul>
-<li><strong>"I will incorporate and sell the company shares."</strong> Regulation 4(3) blocks selling shares whose value includes NHS goodwill, and a company cannot hold a GMS or PMS contract in any event. Incorporation is a private-work decision; it does not unlock a saleable NHS goodwill. We explain the incorporation position in full in our guide to <a href="/blog/incorporation-relief-private-medical-practice-s162">section 162 incorporation relief for a private medical practice</a>.</li>
+<li><strong>"I will incorporate and sell the company shares."</strong> Regulation 4(3) blocks selling shares whose value includes NHS goodwill, and an ordinary personal service company cannot hold a GMS or PMS contract in any event. Incorporation is a private-work decision; it does not unlock a saleable NHS goodwill. We explain the incorporation position in full in our guide to <a href="/blog/incorporation-relief-private-medical-practice-s162">section 162 incorporation relief for a private medical practice</a>.</li>
 <li><strong>"I will just call it something other than goodwill."</strong> The rule looks to substance over label. The prohibition catches the goodwill element of an NHS practice however it is described or routed, so a different name on the invoice does not change the answer.</li>
 <li><strong>"The rules changed recently."</strong> No. The ban dates from 1 April 2004 under SI 2004/906. The 2019 Regulations re-enacted it; they did not relax it. If anyone tells you NHS GP goodwill can now be sold, they are wrong.</li>
 </ul>

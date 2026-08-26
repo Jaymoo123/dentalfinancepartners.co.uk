@@ -760,7 +760,7 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(allText).toMatch(/dividend.*not.*pensionable|not.*pensionable.*dividend/i);
   });
 
-  it("nhs-pension FAQ confirms a company cannot hold GMS or PMS contract (HP 2.C)", () => {
+  it("nhs-pension FAQ confirms a doctor's personal service company cannot hold a GMS or PMS contract (HP 2.C)", () => {
     const faqs = faqForTopic("nhs-pension");
     const allText = faqs.map((f: Faq) => f.a).join(" ");
     expect(allText).toMatch(/gms|pms/i);
@@ -802,8 +802,8 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(allText).toMatch(/section 455|s\.455|s455/i);
   });
 
-  // incorporation-private: GMS/PMS cannot be held by a company (HP 2.C / 5)
-  it("incorporation-private FAQ confirms GMS/PMS cannot be held by a company (HP 2.C)", () => {
+  // incorporation-private: GMS/PMS cannot be held by a doctor's PSC (HP 2.C / 5)
+  it("incorporation-private FAQ confirms GMS/PMS cannot be held by a doctor's personal service company (HP 2.C)", () => {
     const faqs = faqForTopic("incorporation-private");
     const allText = faqs.map((f: Faq) => f.a).join(" ");
     expect(allText).toMatch(/gms|pms/i);

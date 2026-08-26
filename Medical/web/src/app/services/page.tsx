@@ -88,7 +88,7 @@ const SERVICES_FAQS = [
   {
     question: "Is incorporating my private practice worth it?",
     answer:
-      "Sometimes, but less often than the headline corporation tax rate suggests, and the arithmetic changed on 6 April 2026 when dividend rates rose. Corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between at an effective rate of about 26.5%. Against that, income routed through a company is not NHS-pensionable, so dividends buy no pension accrual at all, and a limited company cannot hold a GMS or PMS contract. For a GP partner with only NHS income it is usually the wrong answer. The genuine drivers are managing the annual allowance taper by keeping private income out of pensionable pay, retained earnings, and family shareholding, not the headline rate.",
+      "Sometimes, but less often than the headline corporation tax rate suggests, and the arithmetic changed on 6 April 2026 when dividend rates rose. Corporation tax is 19% on profits up to £50,000 and 25% above £250,000, with marginal relief between at an effective rate of about 26.5%. Against that, income routed through a company is not NHS-pensionable, so dividends buy no pension accrual at all, and a doctor's ordinary personal service company cannot hold a GMS or PMS contract. For a GP partner with only NHS income it is usually the wrong answer. The genuine drivers are managing the annual allowance taper by keeping private income out of pensionable pay, retained earnings, and family shareholding, not the headline rate.",
   },
   {
     question: "Is my private medical work subject to VAT?",

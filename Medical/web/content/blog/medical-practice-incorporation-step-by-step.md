@@ -34,7 +34,7 @@ howtoSteps:
   - name: "Set up payroll and decide your extraction"
     text: "If you take a salary, register as an employer and operate PAYE with Real Time Information reporting, then run the ongoing bookkeeping, annual accounts and corporation tax return."
 keyTakeaways:
-- "A limited company cannot hold an NHS GMS or PMS contract, so incorporation is a decision about your private work only, never your NHS post."
+- "An ordinary personal service company cannot hold an NHS GMS or PMS contract, so incorporation is a decision about your private work only, never your NHS post."
 - "Private or locum income taken as dividends is not NHS-pensionable, so you must price the lost pension accrual in alongside any tax saving before incorporating."
 - "The sale of NHS GP goodwill has been prohibited since 1 April 2004 (current instrument SI 2019/251), so only transferable private-practice goodwill can change hands on incorporation."
 - "VAT registration is required only where standard-rated turnover (cosmetic, medico-legal or some occupational-health work) exceeds £90,000 in any rolling 12 months, because genuine medical care is exempt under VATA 1994 Schedule 9 Group 7."
@@ -43,7 +43,7 @@ summary: "A practical, step-by-step guide to incorporating private medical work 
 schema: ""
 faqs:
   - question: "Can I put my NHS GP or consultant work through a limited company?"
-    answer: "No. A limited company cannot hold an NHS GMS or PMS contract, and NHS-derived income is not pensionable when routed through a company. Incorporation is a decision about private work only (private consultations, insurance medicals, medico-legal work, occupational health, self-pay and cosmetic clinics). Your NHS post stays as employment or as a GP partnership and continues to accrue NHS pension in the normal way."
+    answer: "No. An NHS GMS or PMS contract needs shareholders who all qualify, so an ordinary personal service company cannot hold one, and NHS-derived income is not pensionable when routed through a company. Incorporation is a decision about private work only (private consultations, insurance medicals, medico-legal work, occupational health, self-pay and cosmetic clinics). Your NHS post stays as employment or as a GP partnership and continues to accrue NHS pension in the normal way."
   - question: "Will incorporating my private practice cost me NHS pension?"
     answer: "Private or locum income taken from the company as dividends is not NHS-pensionable, so you lose NHS pension accrual on that income entirely. For a hospital consultant, only the NHS employment is pensionable in any case. This pension-accrual loss has to be weighed against the tax position before you incorporate. For some high earners hitting the tapered annual allowance, deliberately keeping private income outside pensionable pay is part of the point; for others, the lost accrual outweighs the tax saving."
   - question: "How much private income makes incorporation worth considering?"
@@ -62,7 +62,7 @@ faqs:
 
 <h2>Step 0: Understand what you can and cannot incorporate</h2>
 
-<p>A limited company <strong>cannot hold an NHS GMS or PMS contract</strong>, and income derived from NHS work is <strong>not NHS-pensionable</strong> if it is routed through a company. So you cannot "incorporate your NHS practice". What you can incorporate is your <strong>private and non-NHS work</strong>: private consultations and self-pay clinics, insurance medicals, medico-legal and expert-witness work, occupational health, cosmetic and aesthetic clinics, and private locum work that falls outside IR35.</p>
+<p>An NHS GMS or PMS contract needs shareholders who all qualify, so <strong>an ordinary personal service company cannot hold one</strong>, and income derived from NHS work is <strong>not NHS-pensionable</strong> if it is routed through a company. So you cannot "incorporate your NHS practice". What you can incorporate is your <strong>private and non-NHS work</strong>: private consultations and self-pay clinics, insurance medicals, medico-legal and expert-witness work, occupational health, cosmetic and aesthetic clinics, and private locum work that falls outside IR35.</p>
 
 <p>Your NHS role is unaffected by the company. A GP stays a partner or salaried GP in the practice; a hospital consultant stays an NHS employee. Only that NHS post (and a GP partnership's NHS profit share) is pensionable. Our overview of <a href="/blog/private-practice-tax-nhs-and-private-income">private practice tax and NHS and private income</a> explains how the two sides sit alongside each other.</p>
 
