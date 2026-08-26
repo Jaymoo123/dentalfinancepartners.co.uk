@@ -190,11 +190,31 @@ not the 86 a markdown glob returns; a glob misses 52 TSX, TS and derived surface
    including the exact peer list and the method's limits, is `BATCH3_INDEX.md` D13. D12 was closed in the same pass:
    opticians and allied health are still unpackable on the full 44 domains, so the $1.13 unblock remains the only
    route to them. **$0.00 spent, SQL only against the persisted harvest.**
-2. **Write batch 3 waves A and B.** Nine packs are frozen at `docs/medical/packs/PACK_B3_*` with an ownership map
-   (rows O19 to O35) built BEFORE the packs and repeated inside each one. Wave A is GP funding, 6 pages; wave B is
-   premises, 3. Conductor rulings that unblock them are in `BATCH3_INDEX.md` under "CONDUCTOR RULINGS".
-3. **Then the dual QA, both tracks, no exceptions.** Today the second track caught two blocking defects the first
-   had passed and the writers had each self-verified. That is the single highest-value step in the process.
+2. ~~**Write batch 3 waves A and B.**~~ **DONE 2026-08-26, committed `7f834d10`, NOT DEPLOYED.** Nine pages
+   through three rounds: written, fixed against dual QA, then subtracted. Four blocking factual defects were
+   caught by the adversarial track and none by the writers, including Employment Allowance advice that was
+   backwards in four places and an employer pension rate that overstated a funding gap by 118%. Two ground-truth
+   errors were found by writers refusing to assert what they could not verify, one of which (`a limited company
+   cannot hold a GMS or PMS contract`) is false and **still live on 39 further blog posts and 6 page files**.
+   Full account, including a `git stash` process incident and the three rules out of it, in `BATCH3_INDEX.md`
+   under "THE THREE ROUNDS".
+   The nine packs remain at `docs/medical/packs/PACK_B3_*` with the ownership map (rows O19 to O35) inside each
+   one, and the rulings that unblocked them are in `BATCH3_INDEX.md` under "CONDUCTOR RULINGS".
+3. ~~**Then the dual QA, both tracks, no exceptions.**~~ **DONE, and it earned its cost twice over.** Both tracks
+   ran, then BOTH RAN AGAIN over the fixes, which is what caught two round-2 fixes that renamed a defect instead
+   of removing it and a fourth voice tic already forming to replace the one round 2 killed. **Re-running QA over
+   the fix round is now part of the process, not an extra.** Self-verification by a fixer failed here exactly as
+   it failed for the writers.
+
+### THE NEXT THREE THINGS, in this order
+
+1. **Decide the corpus-wide sweep.** `a limited company cannot hold a GMS or PMS contract` is false and sits on
+   **39 Medical blog posts and 6 page files**. The corrected wording is settled and tested on nine pages, so the
+   work is mechanical. OWNER DECISION OPEN: sweep now, or queue it.
+2. **Waves C to H**, unchanged in plan. Wave C needs the ruling named in its section; waves D, E, F and H are
+   gated to 2026-09-11 by the frozen set; wave G waits on data to 2026-09-24.
+3. **The pack addenda and map row O36**, both listed at the end of `BATCH3_INDEX.md`. Small, and they stop a
+   future KEEP-list audit reading a deliberate override as a deviation.
 
 ### Standing state a new agent will get wrong without reading this
 

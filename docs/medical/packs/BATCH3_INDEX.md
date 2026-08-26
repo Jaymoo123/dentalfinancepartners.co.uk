@@ -780,3 +780,77 @@ Both written directly to `house_positions.md` (manager-direct, no agent touched 
 - **The numeral-count paragraph opener reflex reproduced itself for a third batch**, in a writer who had read the
   warning and then cut five of them to one on its own review. That makes it a property of the house voice rather
   than a per-writer slip, and it is evidence for the wave fix pass rather than a finding.
+
+---
+
+## THE THREE ROUNDS, AND WHAT EACH ONE WAS FOR. Committed `7f834d10`, 2026-08-26. NOT DEPLOYED.
+
+Round 1 wrote the nine pages. Round 2 fixed what dual QA found. Round 3 subtracted what the fixes left behind.
+**Every page came out of round 3 shorter except one**, which replaced stitching with substance and grew 72 words.
+Net across the batch: GMS -362, ARRS -360, notional rent -155, enhanced services -130, PCN funding -49,
+last man standing +72, the other three minimal.
+
+### What the two QA tracks caught that nine self-verifying writers did not
+
+**Four blocking factual defects**, all in round 2, all verified by the conductor at primary source before action:
+1. **The Employment Allowance advice was backwards**, in four places, and load-bearing: the page called it "the one
+   lever that reduces the employer National Insurance an ARRS post generates above the cap". HMRC NIM06530 lists
+   GP services as functions of a public nature. Now `house_positions.md` §8.A.
+2. **The employer NHS pension rate was the scheme rate, not the employer's.** 23.7% against a true 14.38%, with
+   9.4% funded centrally. It overstated the funding gap on a £50,000 post from £3,940 to £8,600 inside the page's
+   only worked example. Now a hard writing rule in §2.C.
+3. **Superseded PCN rates published as current**, plus a wrong population base underneath them. Correcting only the
+   numbers would have preserved the second error.
+4. **A live page denied Structures and Buildings Allowance exists.** Now §7.B.
+
+**Two ground-truth errors that reached far beyond this batch**, both found by writers refusing to assert something
+they could not verify:
+- **"A limited company cannot hold a GMS or PMS contract" is false as a flat statement** (NHS Act 2006 s.86(1)(c)).
+  The writer asked to become the owner of this fact went to write the mechanism out, found the house position
+  narrower than the statute, and stopped. **The claim had already propagated to five pages in this batch and is
+  still live on 39 further Medical blog posts and 6 page files, which is open work.**
+- **The 2024 Directions contain no cost-rent conversion rule.** Direction 40 and direction 42 carry an election.
+
+**And one the conductor got wrong.** A search-engine snippet was passed to a writer as an ARRS figure. The writer
+refused it, showed it could not be reconciled with the published maximum, and read Table 3c instead. Recorded at
+D17. A snippet is not a source, including when it arrives from the conductor.
+
+### Round 3, and why a second QA pass was necessary rather than tidy
+
+The re-QA found that **two round-2 fixes had renamed a defect instead of removing it**: "the part competitors skip"
+became "the part most guides skip", and "The Honest Answer" became "the honest headline". It also found **a fourth
+voice tic already forming to replace the one round 2 killed** (self-announcing sufficiency claims: "the point is
+worth labouring", "one line is enough here"), and that **seven of nine pages still ended with a near-identical
+"How we help" block**, three of them one synonym apart. All are now gone: `rather than` runs 0 to 2 per page
+against 12 to 21 before, and no page carries a "How we help" H2.
+
+### PROCESS INCIDENT, recorded because it nearly cost work
+
+**An agent ran `git stash` on a shared dirty tree to get a baseline word count.** The pop conflicted because a
+sibling file had changed underneath it, and it resolved the conflict by restoring that sibling to HEAD while
+another agent was editing it. Nothing was ultimately lost: the affected writer caught the reversion on a
+verification grep and reapplied its work. A second agent, in the same window, saw a disturbed tree, concluded its
+file had been reverted, and produced a detailed comparison of two versions plus a git SHA, **all of which was
+wrong** except the SHA, which was a real commit from earlier the same day. It offered to restore 211 lines from
+its own context and correctly refused to do so silently.
+
+**Three rules out of it:**
+1. **No subagent touches `git stash`, `git reset`, `git checkout` or any other repo-wide command.** "Edit only this
+   file" was in every brief; it was not enough, because it constrained the file and not the repository. Say both.
+2. **A claim about repository state is checked with a command, never inferred from a failed write.** "File has been
+   modified since read" on a single-agent file usually means your own earlier write landed.
+3. **Uncommitted batch work is exposed.** Commit at the end of each round rather than at the end of the session.
+   This batch is now committed at `7f834d10` for exactly that reason.
+
+### Still open after this batch
+
+- **The false company-contract claim on 39 Medical blog posts and 6 page files.** Owner decision pending on
+  whether to sweep now or queue it. The corrected wording is settled and tested on nine pages, so the sweep is
+  mechanical.
+- **Pack addenda owed:** the GMS pack's §5 KEEP list now contradicts the shipped page in two places, both accepted
+  knowingly (the "inventing multipliers" line and the funnel paragraph), and its §1 forbade replacing a body under
+  a frozen H2, which was done deliberately on the accounts section and accepted.
+- **Ownership map row O36** (dilapidations provision accounting, ruled to the last-man-standing page) is recorded
+  at D18 but not yet folded into section 6.
+- **`house_positions.md` §7.B carries an unrun amendment check** against CAA 2001 Part 2A, and the PMS limb of the
+  s.86 correction has no reading of the s.94 regulations behind it. Both are marked in place.
