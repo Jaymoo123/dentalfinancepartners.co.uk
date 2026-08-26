@@ -21,6 +21,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { getGuideByTopic, publishedGuideTopicsWithFile } from "@/lib/resources/content";
+import { resourceForTopic, isXlsxEnabled } from "@/lib/resources/registry";
+import type { TopicKey } from "@/lib/intent/taxonomy";
 
 export const dynamicParams = false;
 
@@ -51,6 +53,13 @@ export default async function ResourceGuidePage({
   const guide = getGuideByTopic(topic);
   if (!guide) notFound();
 
+  // ponytail: the page documents a workbook, so it offers it. Reuses the
+  // existing registry rather than adding a second source of truth; the xlsx
+  // is a static file under /public and needs no gate (RESOURCE_EMAIL_DELIVERY
+  // is off, so ResourceGate serves it ungated too).
+  const resource = resourceForTopic(topic as TopicKey);
+  const xlsx = isXlsxEnabled(resource) ? resource.xlsx : null;
+
   return (
     <article className="bg-white py-12 sm:py-16">
       <div className={siteContainerLg}>
@@ -75,6 +84,25 @@ export default async function ResourceGuidePage({
               </p>
             )}
           </div>
+
+          {/* The workbook this page documents */}
+          {xlsx && (
+            <div className="mb-8 rounded-lg border border-[var(--copper)] bg-[var(--surface-elevated)] p-5">
+              <p className="text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                The file this page documents
+              </p>
+              <a
+                href={xlsx.file}
+                download
+                className="mt-2 inline-block text-base font-bold text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4"
+              >
+                Download the {xlsx.label}
+              </a>
+              <p className="mt-2 text-sm text-[var(--ink-soft)]">
+                No email required. Open it alongside this page.
+              </p>
+            </div>
+          )}
 
           {/* Table of contents */}
           {guide.headings.length > 0 && (

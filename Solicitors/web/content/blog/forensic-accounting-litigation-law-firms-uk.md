@@ -28,7 +28,7 @@ faqs:
   - question: "What are Part 35 written questions and how long does the expert have to answer?"
     answer: "Under CPR r35.6(1) a party may put written questions about an expert's report, provided they are proportionate, submitted within 28 days of service of the report, and limited to clarifying the report rather than reopening issues or seeking new opinions. The answers are treated as part of the expert's report under r35.6(3). The rules do not prescribe a fixed time limit for the expert to respond, but the court expects answers within a reasonable time. Under r35.6(4) if an expert fails to answer, the court may order that the party cannot rely on the expert's evidence and/or that the expert's fees are not recoverable from any other party."
   - question: "Are forensic accountant fees a disbursement or part of the firm's own VAT supply?"
-    answer: "This depends on which of the two main instruction routes applies. Where the firm contracts with and instructs a party-appointed expert, the default under house position §6.K is a supply to the firm: the firm recovers input VAT and charges output VAT when it passes the cost to the client. Disbursement treatment (recharging at cost with no VAT added) is available only if all eight conditions in HMRC VTAXPER39000 are satisfied, including that the client was responsible for paying the expert and authorised that specific payment. Those conditions are rarely met where the firm has selected and shaped the instruction. In a single joint expert arrangement under CPR r35.8(5) the conditions are materially easier to satisfy because the parties are directly and jointly liable for the fees."
+    answer: "This depends on which of the two main instruction routes applies. Where the firm contracts with and instructs a party-appointed expert, the default treatment is a supply to the firm: the firm recovers input VAT and charges output VAT when it passes the cost to the client. Disbursement treatment (recharging at cost with no VAT added) is available only if all eight conditions in HMRC VTAXPER39000 are satisfied, including that the client was responsible for paying the expert and authorised that specific payment. Those conditions are rarely met where the firm has selected and shaped the instruction. In a single joint expert arrangement under CPR r35.8(5) the conditions are materially easier to satisfy because the parties are directly and jointly liable for the fees."
   - question: "If the expert is VAT-registered, how does the firm account for VAT on the recharge to the client?"
     answer: "If the supply-to-firm route applies (the party-appointed default), the expert's fee note carries 20% VAT which the firm recovers as input tax. On the recharge to the client, the firm charges output VAT on the full amount including the expert's fee. For example, an expert who invoices the firm at £10,000 plus £2,000 VAT creates a £12,000 cost; the firm recharges that £12,000 to the client and adds output VAT of £2,400, giving a total client charge of £14,400. The firm's net VAT position is the £400 difference between output and input tax. If the disbursement route genuinely applies, the firm passes through the VAT-inclusive amount (£12,000) at cost with no additional output VAT, and reclaims the expert's £2,000 input VAT separately."
   - question: "Can the court cap the amount the winning party recovers for expert fees?"
@@ -134,7 +134,7 @@ faqs:
 
 <h3>Party-appointed expert: the supply-to-firm default</h3>
 
-<p>Where the firm contracts with and instructs the expert, selects them, shapes the letter of instruction, and uses the report in its own case strategy, the default position under house position §6.K is a supply to the firm rather than a disbursement. Condition 1 (the firm acted as the client's agent) is the hardest to satisfy in this route because the firm is acting on its own professional judgment, not merely as conduit.</p>
+<p>Where the firm contracts with and instructs the expert, selects them, shapes the letter of instruction, and uses the report in its own case strategy, the default position is a supply to the firm rather than a disbursement. Condition 1 (the firm acted as the client's agent) is the hardest to satisfy in this route because the firm is acting on its own professional judgment, not merely as conduit.</p>
 
 <p>In this route: the expert's VAT-bearing fee note is received by the firm; the firm recovers the expert's VAT as input tax (assuming the firm makes standard-rated supplies); on recharging to the client the firm adds output VAT to the full amount including the expert's fee.</p>
 
@@ -148,7 +148,7 @@ faqs:
 
 <h3>Inter-partes recovery and VAT</h3>
 
-<p>Where expert fees are recovered from the other side, the VAT treatment follows house position §6.G. The amount claimed against the paying party depends on the receiving client's VAT position:</p>
+<p>Where expert fees are recovered from the other side, the VAT treatment follows the receiving party's ability to recover VAT. The amount claimed against the paying party depends on the receiving client's VAT position:</p>
 
 <ul>
 <li>Receiving client is VAT-registered and can recover input tax: the inter-partes bill claims the expert's fee net of VAT.</li>

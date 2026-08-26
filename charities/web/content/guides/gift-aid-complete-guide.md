@@ -93,7 +93,7 @@ lastReviewed: "2026-07-14"
   <li>Corrections to submitted claims are made by submitting an amended claim or an adjustment claim, not by phone.</li>
 </ul>
 
-<p><strong>How far back can a charity claim?</strong> The HMRC guidance and the House Positions document do not specify a definitive statutory time limit on the charity side, and this is flagged as an open question for this site. Do not rely on an informal figure that circulates in sector guidance. If you are catching up on unclaimed Gift Aid from prior years, confirm the applicable deadline directly with HMRC or with an adviser familiar with your specific position before submitting.</p>
+<p><strong>How far back can a charity claim?</strong> HMRC's published guidance does not set out a definitive statutory time limit on the charity side, so treat this as genuinely unsettled rather than assuming a deadline. Do not rely on an informal figure that circulates in sector guidance. If you are catching up on unclaimed Gift Aid from prior years, confirm the applicable deadline directly with HMRC or with an adviser familiar with your specific position before submitting.</p>
 
 <h2>The donor tax-paid condition: what happens when it fails</h2>
 

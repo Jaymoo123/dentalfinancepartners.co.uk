@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/calculator-beside-red-pens-7111516/"
 category: "NHS Pension Planning"
 metaTitle: "NHS Pension Tax Charges: Rebate, Refund or Scheme Pays"
-metaDescription: "An NHS tax rebate, an NHS pension refund and Scheme Pays are three different things. Which settles a 2026/27 annual allowance charge, and which costs you a pension."
+metaDescription: "An NHS tax rebate, an NHS pension refund and Scheme Pays are not the same. Which settles a 2026/27 annual allowance charge, and which costs you a pension."
 altText: "UK doctor reviewing NHS pension annual allowance statements and tax calculations at desk"
 h1: "NHS Pension Tax Charges: How to Minimise Your Annual Allowance Bill"
 howtoSteps:

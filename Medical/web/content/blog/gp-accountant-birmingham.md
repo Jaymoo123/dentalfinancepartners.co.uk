@@ -12,7 +12,7 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/man-and-woman-working-at-the-office-7654120/"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Birmingham"
+metaTitle: "Medical and GP Accountants Birmingham | NHS Pension Tax"
 metaDescription: "GP accountant in Birmingham for NHS partners, salaried GPs and locums. NHS pension allowance, profit-share accounts, 2026/27 tax planning in the Midlands."
 altText: "Professional accountant working with GP practice financial documents in Birmingham office"
 h1: "GP Accountant Birmingham: Specialist Medical Accounting Services"

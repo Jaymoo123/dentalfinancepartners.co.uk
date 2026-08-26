@@ -1,6 +1,13 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp, pct } from "@accounting-network/web-shared/tools/format";
-import { calcNHSPension, type TaxBand } from "@/lib/tools/compute/nhs-pension";
+import {
+  calcNHSPension,
+  CARRY_FORWARD_NOT_ENTERED,
+  CARRY_FORWARD_ENTERED,
+  NHS_ONLY_ASSUMED,
+  ALL_SCHEMES_ENTERED,
+  type TaxBand,
+} from "@/lib/tools/compute/nhs-pension";
 
 export const nhsPensionTool: GenericTool = {
   kind: "generic",
@@ -14,7 +21,7 @@ export const nhsPensionTool: GenericTool = {
   metaDescription:
     "Free NHS pension annual allowance calculator for doctors. Work out your 2026/27 tapered annual allowance and any annual allowance tax charge from threshold income and pension growth.",
   intro:
-    "The standard UK pension annual allowance is £60,000 for 2026/27, and it tapers to as little as £10,000 once threshold income passes £200,000 and adjusted income passes £260,000. Enter your threshold income, the pension growth shown on your NHS pension savings statement, and your tax band to see your allowance and any annual allowance tax charge.",
+    "The standard UK pension annual allowance is £60,000 for 2026/27, and it tapers to as little as £10,000 once threshold income passes £200,000 and adjusted income passes £260,000. Enter your threshold income, the pension growth shown on your NHS pension savings statement, anything going into a pension outside the NHS scheme, and your tax band. Add the unused allowance from your previous three years if you have the statements to hand, and the calculator will apply carry-forward; leave it at zero and it will tell you the charge is a before carry-forward figure.",
   fields: [
     {
       id: "thresholdIncome",
@@ -37,6 +44,16 @@ export const nhsPensionTool: GenericTool = {
       help: "The pension input amount on your NHS pension savings statement. It is growth in the value of your pension over the year, not what you paid in",
     },
     {
+      id: "otherPensionInput",
+      label: "Pension input to any other scheme",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 200000,
+      step: 1000,
+      help: "Gross contributions to a SIPP or personal pension, Money Purchase AVCs, or the input amount from another employer's scheme. The annual allowance covers every registered scheme together, and this figure raises adjusted income. Leave at zero only if the NHS scheme is your only pension",
+    },
+    {
       id: "taxBand",
       label: "Your income tax band",
       type: "select",
@@ -47,16 +64,45 @@ export const nhsPensionTool: GenericTool = {
         { value: "additional", label: "Additional rate (45%)" },
       ],
     },
+    {
+      id: "carryForward",
+      label: "Unused allowance from the previous three years",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 180000,
+      step: 1000,
+      help: "Total unused annual allowance carried forward from the three previous tax years, taken from your pension savings statements. Optional: leave at zero and the result will tell you the charge is a before carry-forward figure",
+    },
   ],
   compute(values) {
     const thresholdIncome = Number(values.thresholdIncome);
     const pensionGrowth = Number(values.pensionGrowth);
     const taxBand = String(values.taxBand) as TaxBand;
-    const r = calcNHSPension({ thresholdIncome, pensionGrowth, taxBand });
+    const otherPensionInput = Number(values.otherPensionInput) || 0;
+    const carryForward = Number(values.carryForward) || 0;
+    // The order carry-forward is consumed in only decides which year is used up,
+    // not the total offset, and this surface does not report per-year use. The
+    // workbook takes a figure per year because it is a working document.
+    const r = calcNHSPension({
+      thresholdIncome,
+      pensionGrowth,
+      taxBand,
+      otherPensionInput,
+      carryForward: [carryForward, 0, 0],
+    });
+
+    // Status lines carry the same wording as the workbook status rows, imported
+    // from the compute lib. They render as result rows, not as the small-print
+    // note, because a doctor who never scrolls must still see them.
+    const schemeStatus = otherPensionInput > 0 ? ALL_SCHEMES_ENTERED : NHS_ONLY_ASSUMED;
+    const carryForwardStatus = carryForward > 0 ? CARRY_FORWARD_ENTERED : CARRY_FORWARD_NOT_ENTERED;
 
     const rows = [
       { label: "Threshold income", value: gbp(thresholdIncome) },
-      { label: "Pension input amount (growth from statement)", value: gbp(pensionGrowth) },
+      { label: "NHS pension input amount (growth from statement)", value: gbp(pensionGrowth) },
+      { label: "Pension input to other schemes", value: gbp(otherPensionInput) },
+      { label: "Total pension input, all schemes", value: gbp(r.totalPensionInput), strong: true as const },
       { label: "Adjusted income", value: gbp(r.adjustedIncome) },
       {
         label: "Annual allowance 2026/27",
@@ -65,30 +111,51 @@ export const nhsPensionTool: GenericTool = {
       },
       ...(r.excess > 0
         ? [
-            { label: "Excess pension growth", value: gbp(r.excess) },
+            { label: "Excess before carry-forward", value: gbp(r.excess) },
+            { label: "Carry-forward applied", value: gbp(r.carryForwardUsed) },
+            { label: "Chargeable excess", value: gbp(r.chargeableExcess) },
             { label: "Annual allowance tax charge (estimate)", value: gbp(r.taxCharge), strong: true as const },
-            { label: "Effective cost as % of growth", value: pct(r.effectiveCost) },
+            ...(r.taxCharge > 0
+              ? [{ label: "Effective cost as % of total pension input", value: pct(r.effectiveCost) }]
+              : []),
           ]
         : []),
+      // The carry-forward line only says anything useful when there is an excess
+      // for it to bite on. The scheme-coverage line is an assumption about the
+      // whole answer, so it shows either way.
+      ...(r.excess > 0
+        ? [{ label: carryForwardStatus, value: carryForward > 0 ? gbp(carryForward) : "Not entered", strong: true as const }]
+        : []),
+      { label: schemeStatus, value: otherPensionInput > 0 ? gbp(otherPensionInput) : "Not entered", strong: true as const },
     ];
 
+    const chargeSub = [
+      `Allowance: ${gbp(r.annualAllowance)}`,
+      `Chargeable excess: ${gbp(r.chargeableExcess)}`,
+      ...(carryForward > 0 ? [] : ["Before carry-forward"]),
+    ].join(" · ");
+
     return {
-      headline: r.excess > 0
+      headline: r.taxCharge > 0
         ? {
             label: "Annual allowance charge",
             value: gbp(r.taxCharge),
-            sub: `Allowance: ${gbp(r.annualAllowance)} · Excess: ${gbp(r.excess)}`,
+            sub: chargeSub,
             tone: "warn" as const,
           }
         : {
             label: "Annual allowance",
             value: gbp(r.annualAllowance),
-            sub: r.isTapered ? "Tapered, no excess charge" : "Standard allowance, no excess charge",
+            sub: r.excess > 0
+              ? "Carry-forward removes the excess, no charge"
+              : r.isTapered
+                ? "Tapered, no excess charge"
+                : "Standard allowance, no excess charge",
             tone: "good" as const,
           },
       note: r.isTapered
-        ? "Your allowance is tapered because threshold income exceeds £200,000 and adjusted income exceeds £260,000. Allowance reduces by £1 for every £2 above £260,000, with a floor of £10,000. The charge shown is an estimate at the single marginal rate you selected, before carry forward."
-        : "Tapering only applies when threshold income exceeds £200,000 AND adjusted income exceeds £260,000. Your position does not currently meet both tests.",
+        ? "Your allowance is tapered because threshold income exceeds £200,000 and adjusted income exceeds £260,000. Allowance reduces by £1 for every £2 above £260,000, with a floor of £10,000. Adjusted income here is threshold income plus the total pension input across every scheme you entered, which is the statutory build-up in Finance Act 2004 s.228ZA. The charge shown is an estimate at the single marginal rate you selected."
+        : "Tapering only applies when threshold income exceeds £200,000 AND adjusted income exceeds £260,000. Your position does not currently meet both tests. Adjusted income here is threshold income plus the total pension input across every scheme you entered, so a pension outside the NHS scheme can change this answer.",
       rows,
     };
   },
@@ -100,7 +167,8 @@ export const nhsPensionTool: GenericTool = {
       "NHS doctors are exposed to the pension tapered annual allowance for a structural reason rather than a personal one. The employer contribution to the NHS Pension Scheme is 23.7% of pensionable pay, applicable from 1 April 2024 and current for 2026/27, and it is due to be re-set for four years from 1 April 2027 by the 2024 valuation. That employer money never reaches your bank account, but the growth it buys sits in your pension input amount and so inflates adjusted income. On an Agenda for Change band 8a salary the taper rarely bites; on a salary of £120,000 with private practice on top, the threshold income annual allowance test is often the only thing keeping you out of it.",
       "If your NHSBSA pension savings statement shows figures in brackets, that is negative pension growth for the year, usually where inflation uplift on your opening value outran the benefit you actually accrued. Negative growth in the 1995 or 2008 sections can offset positive growth in the 2015 section in the same year, which is why a statement showing a bracketed figure may still produce no charge. Enter a bracketed figure as zero growth for that section here and get the offset checked properly, because this tool does not net sections against each other.",
       "Standard annual allowance by tax year: 2022/23 £40,000; 2023/24 £60,000; 2024/25 £60,000; 2025/26 £60,000; 2026/27 £60,000. Minimum tapered annual allowance by tax year: 2022/23 £4,000; 2023/24 to 2026/27 £10,000. The tapered annual allowance 2025 26 minimum was £10,000 and it is unchanged for 2026/27. That annual allowance history matters because carry forward reaches back three tax years, so a 2026/27 calculation can use a historic pension annual allowance figure from as far back as 2023/24. Anyone assembling a pension annual allowance history for a carry forward claim needs the year each figure applied to, not just the current one.",
-      "Two limits on this tool, stated plainly. It applies one marginal rate to the whole excess, so a charge that straddles the higher and additional rate bands will be approximated. And it treats adjusted income as threshold income plus pension growth, which is right for a member whose only scheme is the NHS one and wrong for anyone with employer contributions to a separate arrangement. For the statutory position HMRC publishes its own annual allowance calculator, and the HMRC annual allowance calculator handles multiple schemes; use the annual allowance calculator HMRC provides alongside this one if your position spans more than the NHS scheme.",
+      "Adjusted income here follows the statutory build-up in Finance Act 2004 section 228ZA, worked through in HMRC's PTM057100: threshold income plus the total pension input amount across every registered scheme you belong to, not the NHS scheme alone. That is why there is a field for pension input to other schemes, and why leaving it at zero is a statement that the NHS scheme is your only pension rather than a neutral default. A SIPP or a second employer's scheme raises adjusted income pound for pound and can pull a doctor over the £260,000 line who looked clear without it.",
+      "Two limits on this tool, stated plainly. It applies one marginal rate to the whole excess, so a charge that straddles the higher and additional rate bands will be approximated. And it takes carry-forward as a single total rather than a figure per year, which gives the same answer but does not show you which year gets consumed; the downloadable workbook has a cell per year and shows that breakdown. It also has no money purchase annual allowance logic, so if you have flexibly accessed a defined contribution pot the answer here is incomplete. HMRC publishes its own annual allowance calculator for the statutory position.",
     ],
   },
   faqs: [

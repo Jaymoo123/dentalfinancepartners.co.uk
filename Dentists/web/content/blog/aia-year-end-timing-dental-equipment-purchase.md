@@ -94,7 +94,7 @@ faqs:
 <p>But the period of incurral still governs the year of relief. Full expensing and the 40% FYA change how much relief a given spend attracts and whether the cap binds, not which year it lands in. The year-end timing question survives: even with the cap lifted, the incurred date still decides the year. For companies weighing new versus second-hand and the cap, our <a href="https://www.dentalfinancepartners.co.uk/blog/general/full-expensing-capital-allowances-dentists">guide to full expensing for dentists</a> covers the company-side reliefs in full.</p>
 
 <h2>How the timing works on the numbers: four worked examples</h2>
-<p>These show the mechanics. They are tagged to our locked house position on capital allowances (§7), use the £1 million AIA and the current rates, and are illustrations rather than advice on a specific purchase.</p>
+<p>These show the mechanics. They use the £1 million AIA and the current 2026/27 rates, and are illustrations rather than advice on a specific purchase.</p>
 
 <h3>Example A: one week either side of the year-end</h3>
 <p>A practice with a 31 March year-end plans a £60,000 equipment order. If it is contracted and delivered on 28 March 2027, with payment due within four months, the £60,000 is incurred in 2026/27 and the AIA cuts that year's tax. If instead it is delivered on 6 April 2027, the relief slips into 2027/28. If 2026/27 is the higher-profit year, or carries the higher marginal rate, accelerating the order into late March saves tax a year earlier and at the better rate. Same kit, same price, one week apart, one tax year of difference in relief. (Tagged 2026/27 versus 2027/28, §7.)</p>

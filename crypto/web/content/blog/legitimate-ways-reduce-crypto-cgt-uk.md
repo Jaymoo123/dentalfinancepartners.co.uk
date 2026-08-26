@@ -36,39 +36,32 @@ faqs:
   <thead>
     <tr>
       <th>Legitimate lever</th>
-      <th>House position</th>
       <th>Non-strategy (does not work)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Use your <a href="https://www.gov.uk/capital-gains-tax/allowances">£3,000 annual exempt amount</a></td>
-      <td>HP 3</td>
       <td>"I never cashed out to pounds"</td>
     </tr>
     <tr>
       <td>Transfer to spouse or civil partner before disposal</td>
-      <td>HP 7</td>
       <td>Giving to children (a disposal at market value)</td>
     </tr>
     <tr>
       <td>Claim capital losses, including old unclaimed years</td>
-      <td>HP 19</td>
       <td>Concealment or non-disclosure</td>
     </tr>
     <tr>
       <td>Negligible value claim on genuinely worthless token</td>
-      <td>HP 21</td>
       <td>Claiming "lost keys" as a disposal loss</td>
     </tr>
     <tr>
       <td>Hold FCA-approved crypto ETNs inside an ISA</td>
-      <td>ISA/ETN brief</td>
       <td>Moving crypto to an offshore wallet</td>
     </tr>
     <tr>
       <td>Time disposals across tax years and within basic-rate band</td>
-      <td>HP 2</td>
       <td>Artificially back-dating disposals</td>
     </tr>
   </tbody>

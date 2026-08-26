@@ -48,7 +48,7 @@ faqs:
 
 <h2>The finance method is also a tax decision</h2>
 
-<p>Every route below resolves to one fork: do you get capital allowances, or do you get deductible rentals? That fork is set by who is treated as owning the asset for tax. Where you are the owner (outright purchase, hire purchase), you claim allowances on the cost and can front-load the relief through the AIA. Where you are renting (finance lease, operating lease), you do not own the asset for tax, so you claim no allowances and instead deduct what you pay. Both routes ultimately give relief; they differ in <em>when</em>. This is house position §7's lease-versus-buy treatment, and it is additive to the qualifying-equipment rules, not a replacement for them.</p>
+<p>Every route below resolves to one fork: do you get capital allowances, or do you get deductible rentals? That fork is set by who is treated as owning the asset for tax. Where you are the owner (outright purchase, hire purchase), you claim allowances on the cost and can front-load the relief through the AIA. Where you are renting (finance lease, operating lease), you do not own the asset for tax, so you claim no allowances and instead deduct what you pay. Both routes ultimately give relief; they differ in <em>when</em>. This is the lease-versus-buy treatment, and it is additive to the qualifying-equipment rules, not a replacement for them.</p>
 
 <h2>Route 1: outright purchase, capital allowances on the full cost</h2>
 
@@ -132,15 +132,15 @@ faqs:
 <li><strong>Finance lease:</strong> no allowances; deduct the rentals, roughly £10,000 a year over three years, as a revenue expense.</li>
 <li><strong>Operating lease:</strong> no allowances; deduct each rental as paid.</li>
 </ul>
-<p>Purchase and HP front-load the relief into year one; the two leases spread it across the term. The total relief is broadly similar over the life; the timing is not. (Tagged 2026/27, house position §7.)</p>
+<p>Purchase and HP front-load the relief into year one; the two leases spread it across the term. The total relief is broadly similar over the life; the timing is not. (Figures tagged 2026/27.)</p>
 
 <h3>Example B: the cash-flow versus timing trade-off</h3>
 
-<p>A higher-rate sole-trader associate weighs outright purchase against an operating lease on the same £30,000 chair. Outright purchase gives a full £30,000 deduction now, saving roughly £12,600 of tax at a combined marginal rate of about 42%, but it costs £30,000 of cash out the door. The operating lease gives smaller deductions each year and no large cash outflow. Set the year-one tax saving against the year-one cash position and the trade-off is clear: the purchase wins on speed of relief, the lease wins on cash preservation. There is no single right answer; it depends on the associate's cash and profit profile. (Tagged 2026/27, house position §7.)</p>
+<p>A higher-rate sole-trader associate weighs outright purchase against an operating lease on the same £30,000 chair. Outright purchase gives a full £30,000 deduction now, saving roughly £12,600 of tax at a combined marginal rate of about 42%, but it costs £30,000 of cash out the door. The operating lease gives smaller deductions each year and no large cash outflow. Set the year-one tax saving against the year-one cash position and the trade-off is clear: the purchase wins on speed of relief, the lease wins on cash preservation. There is no single right answer; it depends on the associate's cash and profit profile. (Figures tagged 2026/27.)</p>
 
 <h3>Example C: hire purchase brings the whole cash price into this year's AIA</h3>
 
-<p>A practice with a 31 March year-end signs an HP agreement and brings a £45,000 OPG machine into use in March 2027. The full £45,000 cash price enters the 2026/27 AIA, even though only the deposit has been paid, because HP is treated as a purchase for capital allowances under section 67. Contrast a finance lease on the same machine: nothing enters the AIA, and the practice simply deducts the rentals over the term. The HP route therefore pulls the whole relief into the year the asset is brought into use, which is exactly the lever the year-end timing decision turns on. (Tagged 2026/27, house position §7.)</p>
+<p>A practice with a 31 March year-end signs an HP agreement and brings a £45,000 OPG machine into use in March 2027. The full £45,000 cash price enters the 2026/27 AIA, even though only the deposit has been paid, because HP is treated as a purchase for capital allowances under section 67. Contrast a finance lease on the same machine: nothing enters the AIA, and the practice simply deducts the rentals over the term. The HP route therefore pulls the whole relief into the year the asset is brought into use, which is exactly the lever the year-end timing decision turns on. (Figures tagged 2026/27.)</p>
 
 <h2>Common errors</h2>
 

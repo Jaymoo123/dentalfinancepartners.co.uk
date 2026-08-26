@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/businessman-analyzing-financial-report-on-desk-30535786/"
 category: "Incorporation & Company Structures"
-metaTitle: "Family Investment Company for Doctors and Consultants"
-metaDescription: "How a family investment company works for consultants and GPs: tax on retained investment income, share-class and IHT planning, and settlements traps."
+metaTitle: "Is a Family Investment Company Worth It for Doctors?"
+metaDescription: "A family investment company defers tax, it does not cut it. An additional-rate founder faces around 50.5% combined, worse than the 45% personal route."
 altText: "A consultant and accountant reviewing a family investment company structure"
 h1: "Family Investment Companies for Doctors and Consultants: What They Are and When They Fit"
 keyTakeaways:

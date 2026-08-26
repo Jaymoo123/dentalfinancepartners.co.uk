@@ -144,7 +144,8 @@ function ValueCell({ value }: { value: Val }) {
 //   adjustedIncome=190000, NOT tapered, allowance=60000, excess=0, taxCharge=0
 //
 // Locum default: calcLocumTax({grossIncome:80000, expenses:5000, pensionContributions:10000, studentLoanPlan:"none"})
-//   netIncome=65000, incomeTax=13432, nationalInsurance=2556.6, totalDeductions=15988.6, netTakeHome=49011.4
+//   profit=75000, netIncome=65000, incomeTax=13432, nationalInsurance=2756.6 (Class 4 on
+//   profit, corrected 2026-08-26), totalDeductions=16188.6, netTakeHome=48811.4
 //
 // Incorporation default (INC-A): calcIncorporation({privateIncome:100000, expenses:15000, desiredSalary:12570, nhsIncome:50000})
 //   soleTraderTotalTax=44881.6, corporationTax=21250, dividendTax=18118.1, limitedCompanyTotalTax=46854.1, taxSavings=-1972.5
@@ -165,20 +166,21 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       { kind: "head", text: "Your figures (edit the blue cells)" },
       { kind: "data", label: "Threshold income", value: { text: "£150,000", v: "blue" } },
       { kind: "data", label: "NHS pension input amount (growth this year)", value: { text: "£40,000", v: "blue" } },
+      { kind: "data", label: "Pension input to all other schemes", value: { text: "£0", v: "blue" } },
       { kind: "data", label: "Marginal income tax rate", value: { text: "Higher rate 40%", v: "blueText" } },
+      { kind: "data", label: "Unused allowance carried forward (3 years)", value: { text: "£0", v: "blue" } },
       { kind: "head", text: "Your annual allowance position" },
       { kind: "data", label: "Annual allowance (tapered or standard)", value: { text: "£60,000 (standard)", v: "numStrong" } },
       { kind: "data", label: "Adjusted income", value: { text: "£190,000", v: "num" } },
       { kind: "data", label: "Excess over allowance", value: { text: "£0", v: "num" } },
       { kind: "headline", text: "Estimated annual allowance charge: £0 (within the standard £60,000 allowance)" },
-      { kind: "blank" },
-      { kind: "blank" },
     ],
   },
 
   // Asset 2: Doctor take-home model (topic locum and gp-tax alias)
   // Default: grossIncome=80000, expenses=5000, pension=10000, none
-  // netIncome=65000, incomeTax=13432, class4=2557 (rounded), totalDeductions=15989 (rounded), takeHome=49011
+  // profit=75000, netIncome=65000, incomeTax=13432, class4=2757 (rounded, charged on
+  // profit), totalDeductions=16189 (rounded), takeHome=48811
   locum: {
     layout: "single",
     file: "doctor-take-home-model.xlsx",
@@ -190,12 +192,12 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       { kind: "data", label: "Allowable business expenses", value: { text: "£5,000", v: "blue" } },
       { kind: "data", label: "Personal pension contributions", value: { text: "£10,000", v: "blue" } },
       { kind: "head", text: "Your take-home" },
+      { kind: "data", label: "Trading profit (the Class 4 base)", value: { text: "£75,000", v: "num" } },
       { kind: "data", label: "Net income after expenses and pension", value: { text: "£65,000", v: "num" } },
       { kind: "data", label: "Income tax", value: { text: "£13,432", v: "num" } },
-      { kind: "data", label: "Class 4 National Insurance", value: { text: "£2,557", v: "num" } },
-      { kind: "data", label: "Total deductions", value: { text: "£15,989", v: "num" } },
-      { kind: "headline", text: "Estimated take-home: £49,011 (effective deduction rate 24.6%)" },
-      { kind: "blank" },
+      { kind: "data", label: "Class 4 National Insurance (on profit)", value: { text: "£2,757", v: "num" } },
+      { kind: "data", label: "Total deductions", value: { text: "£16,189", v: "num" } },
+      { kind: "headline", text: "Estimated take-home: £48,811 (effective deduction rate 24.9%)" },
     ],
   },
 
@@ -251,12 +253,12 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       { kind: "data", label: "Allowable business expenses", value: { text: "£5,000", v: "blue" } },
       { kind: "data", label: "Personal pension contributions", value: { text: "£10,000", v: "blue" } },
       { kind: "head", text: "Your take-home" },
+      { kind: "data", label: "Trading profit (the Class 4 base)", value: { text: "£75,000", v: "num" } },
       { kind: "data", label: "Net income after expenses and pension", value: { text: "£65,000", v: "num" } },
       { kind: "data", label: "Income tax", value: { text: "£13,432", v: "num" } },
-      { kind: "data", label: "Class 4 National Insurance", value: { text: "£2,557", v: "num" } },
-      { kind: "data", label: "Total deductions", value: { text: "£15,989", v: "num" } },
-      { kind: "headline", text: "Estimated take-home: £49,011 (effective deduction rate 24.6%)" },
-      { kind: "blank" },
+      { kind: "data", label: "Class 4 National Insurance (on profit)", value: { text: "£2,757", v: "num" } },
+      { kind: "data", label: "Total deductions", value: { text: "£16,189", v: "num" } },
+      { kind: "headline", text: "Estimated take-home: £48,811 (effective deduction rate 24.9%)" },
     ],
   },
 };

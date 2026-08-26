@@ -6,19 +6,27 @@
  * from the compute lib (option 2 per section 0.E) with traced comments;
  * the golden test (locum.test.ts) is the drift guard.
  *
- * Golden cases (brief section 4.1):
+ * Golden case (2026-08-26 rebuild):
  *   DEFAULT: grossIncome=80000, expenses=5000, pension=10000, none
- *     -> netIncome=65000, incomeTax=13432, nationalInsurance=2556.6,
- *        totalDeductions=15988.6, netTakeHome=49011.4, effectiveRate=24.6%
- *   PLAN2 (LOC-B): grossIncome=80000, expenses=5000, pension=10000, plan2
- *     -> threshold=28470, SL=3287.70, netTakeHome=45723.7
+ *     -> profit=75000, netIncome=65000, incomeTax=13432,
+ *        Class 4 = 2756.6 (charged on PROFIT of 75000, not on 65000),
+ *        totalDeductions=16188.6, netTakeHome=48811.4, effectiveRate=24.9%
  *
  * Class 4 is 6% (not the abolished 9%): traced to locum-tax.ts.
  * Class 2 is removed from 6 April 2024 and is NOT in this model.
  *
+ * Class 4 base correction (2026-08-26): Class 4 NIC is charged on trading
+ * profits chargeable under ITTOIA 2005 Part 2 Ch 2 (SSCBA 1992 s.15(1)(b),
+ * https://www.legislation.gov.uk/ukpga/1992/4/section/15 , read 2026-08-26;
+ * HMRC NIM24001). Personal pension relief is given by extending the basic rate
+ * band (https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief ,
+ * read 2026-08-26), not by reducing trading profit, so the pension cell must
+ * not touch the Class 4 line. It previously did, understating Class 4 by 200
+ * on the default figures.
+ *
  * Brand: Medical Accountants UK (navy #001b3d, copper #b87333).
  * No em-dashes in any cell text. No "DJH". Creator = "Medical Accountants UK".
- * Date label: 2025/26 (income tax bands unchanged into 2026/27).
+ * Date label: 2026/27.
  */
 import ExcelJS from "exceljs";
 
@@ -30,19 +38,21 @@ const WHITE = "FFFFFFFF";
 const INK = "FF001b3d";
 
 // ---- Locked constants: traced to src/lib/tools/compute/locum-tax.ts ----
-// Income tax 2025/26
+// Income tax 2026/27 (unchanged from 2025/26; gov.uk/income-tax-rates, 2026-08-26)
 const PA = 12570;              // traced: PERSONAL_ALLOWANCE
 const BRL = 50270;             // traced: BASIC_RATE_LIMIT
 const HRL = 125140;            // traced: HIGHER_RATE_LIMIT
-// Class 4 NIC (self-employed) 2025/26
+// Class 4 NIC (self-employed) 2026/27 (unchanged; gov.uk/self-employed-national-insurance-rates, 2026-08-26)
 const NI_LOWER = 12570;        // traced: NI_LOWER_LIMIT
 const NI_UPPER = 50270;        // traced: NI_UPPER_LIMIT
 const C4_MAIN = 0.06;          // traced: 0.06 (6%: NOT the abolished 9%)
 const C4_UPPER = 0.02;         // traced: 0.02
-// Student loan thresholds 2025/26 (deliberate correction 2026-06-11)
-const SL_PLAN1 = 26065;        // traced: STUDENT_LOAN_THRESHOLDS.plan1
-const SL_PLAN2 = 28470;        // traced: STUDENT_LOAN_THRESHOLDS.plan2
-const SL_PLAN4 = 32745;        // traced: STUDENT_LOAN_THRESHOLDS.plan4
+// Student loan thresholds 2026/27 (re-pinned 2026-08-26 from
+// gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027; the previous
+// 26,065 / 28,470 / 32,745 were the 2025/26 figures and went stale on 6 Apr 2026)
+const SL_PLAN1 = 26900;        // traced: STUDENT_LOAN_THRESHOLDS.plan1
+const SL_PLAN2 = 29385;        // traced: STUDENT_LOAN_THRESHOLDS.plan2
+const SL_PLAN4 = 33795;        // traced: STUDENT_LOAN_THRESHOLDS.plan4
 const SL_RATE = 0.09;          // traced: 9%
 
 // ---- Shared style helpers ----
@@ -91,21 +101,21 @@ export function build(): ExcelJS.Workbook {
     { key: "label", width: 60 },
     { key: "value", width: 18 },
   ];
-  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2025/26 basis)");
+  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2026/27 basis, verified 26 August 2026)");
   rates.mergeCells("A1:B1");
 
   const rateRows: Array<{ name: string; label: string; value: number; pct?: boolean }> = [
-    { name: "PA", label: "Income tax: personal allowance (GBP): 2025/26", value: PA },
-    { name: "BRL", label: "Income tax: basic rate upper limit (GBP): 2025/26", value: BRL },
-    { name: "HRL", label: "Income tax: higher rate upper limit (GBP): 2025/26", value: HRL },
-    { name: "NI_LOWER", label: "Class 4 NIC: lower profits limit (GBP): 2025/26", value: NI_LOWER },
-    { name: "NI_UPPER", label: "Class 4 NIC: upper profits limit (GBP): 2025/26", value: NI_UPPER },
-    { name: "C4_MAIN", label: "Class 4 NIC: main rate (6%, between lower and upper limit): 2025/26", value: C4_MAIN, pct: true },
-    { name: "C4_UPPER_RATE", label: "Class 4 NIC: upper rate (2%, above upper limit): 2025/26", value: C4_UPPER, pct: true },
-    { name: "SL_PLAN1", label: "Student loan Plan 1: repayment threshold (GBP): 2025/26", value: SL_PLAN1 },
-    { name: "SL_PLAN2", label: "Student loan Plan 2: repayment threshold (GBP): 2025/26", value: SL_PLAN2 },
-    { name: "SL_PLAN4", label: "Student loan Plan 4: repayment threshold (GBP): 2025/26", value: SL_PLAN4 },
-    { name: "SL_RATE", label: "Student loan repayment rate (9% of income above threshold): 2025/26", value: SL_RATE, pct: true },
+    { name: "PA", label: "Income tax: personal allowance (GBP): 2026/27", value: PA },
+    { name: "BRL", label: "Income tax: basic rate upper limit (GBP): 2026/27", value: BRL },
+    { name: "HRL", label: "Income tax: higher rate upper limit (GBP): 2026/27", value: HRL },
+    { name: "NI_LOWER", label: "Class 4 NIC: lower profits limit (GBP): 2026/27", value: NI_LOWER },
+    { name: "NI_UPPER", label: "Class 4 NIC: upper profits limit (GBP): 2026/27", value: NI_UPPER },
+    { name: "C4_MAIN", label: "Class 4 NIC: main rate (6%, between lower and upper limit): 2026/27", value: C4_MAIN, pct: true },
+    { name: "C4_UPPER_RATE", label: "Class 4 NIC: upper rate (2%, above upper limit): 2026/27", value: C4_UPPER, pct: true },
+    { name: "SL_PLAN1", label: "Student loan Plan 1: repayment threshold (GBP): 2026/27", value: SL_PLAN1 },
+    { name: "SL_PLAN2", label: "Student loan Plan 2: repayment threshold (GBP): 2026/27", value: SL_PLAN2 },
+    { name: "SL_PLAN4", label: "Student loan Plan 4: repayment threshold (GBP): 2026/27", value: SL_PLAN4 },
+    { name: "SL_RATE", label: "Student loan repayment rate (9% of income above threshold): 2026/27", value: SL_RATE, pct: true },
   ];
 
   rateRows.forEach((r, i) => {
@@ -160,6 +170,13 @@ export function build(): ExcelJS.Workbook {
   wb.definedNames.add("'Your figures'!$B$6", "In_StudentLoanPlan");
 
   // ---- Intermediate calculations ----
+  // profit = grossIncome - expenses. This is the Class 4 NIC base.
+  labelCell(ws.getCell("A7"), "Trading profit after expenses (GBP): the Class 4 NIC base");
+  ws.getCell("A7").font = { bold: true, color: { argb: INK } };
+  ws.getCell("B7").value = { formula: "MAX(0,In_GrossIncome-In_Expenses)" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B7"));
+  wb.definedNames.add("'Your figures'!$B$7", "Profit");
+
   // netIncome = grossIncome - expenses - pension
   labelCell(ws.getCell("A8"), "Net income after expenses and pension (GBP)");
   ws.getCell("B8").value = { formula: "MAX(0,In_GrossIncome-In_Expenses-In_Pension)" } as ExcelJS.CellFormulaValue;
@@ -188,14 +205,16 @@ export function build(): ExcelJS.Workbook {
   moneyFmt(ws.getCell("B10"));
   wb.definedNames.add("'Your figures'!$B$10", "IncomeTax");
 
-  // Class 4 NIC: 6% between NI_LOWER and NI_UPPER, 2% above
-  // Computed on netIncome (not taxableIncome): matches locum-tax.ts behaviour
-  labelCell(ws.getCell("A11"), "Class 4 National Insurance (GBP)");
+  // Class 4 NIC: 6% between NI_LOWER and NI_UPPER, 2% above.
+  // Computed on Profit. The pension cell must NOT appear in this formula:
+  // SSCBA 1992 s.15 charges Class 4 on trading profits, and personal pension
+  // relief works by extending the basic rate band, not by reducing profit.
+  labelCell(ws.getCell("A11"), "Class 4 National Insurance (GBP): charged on profit, before pension");
   ws.getCell("B11").value = {
     formula:
-      "IF(NetIncome<=NI_LOWER,0," +
-      "(MIN(NetIncome,NI_UPPER)-NI_LOWER)*C4_MAIN+" +
-      "MAX(0,NetIncome-NI_UPPER)*C4_UPPER_RATE)",
+      "IF(Profit<=NI_LOWER,0," +
+      "(MIN(Profit,NI_UPPER)-NI_LOWER)*C4_MAIN+" +
+      "MAX(0,Profit-NI_UPPER)*C4_UPPER_RATE)",
   } as ExcelJS.CellFormulaValue;
   moneyFmt(ws.getCell("B11"));
   wb.definedNames.add("'Your figures'!$B$11", "Class4");
@@ -250,10 +269,11 @@ export function build(): ExcelJS.Workbook {
   const results: Array<{ row: number; label: string; formula: string; strong?: boolean }> = [
     { row: 3, label: "Gross income", formula: "In_GrossIncome" },
     { row: 4, label: "Expenses", formula: "In_Expenses" },
-    { row: 5, label: "Pension contributions", formula: "In_Pension" },
-    { row: 6, label: "Net income", formula: "NetIncome", strong: true },
+    { row: 5, label: "Trading profit (Class 4 base)", formula: "Profit", strong: true },
+    { row: 6, label: "Pension contributions", formula: "In_Pension" },
+    { row: 7, label: "Net income", formula: "NetIncome", strong: true },
     { row: 8, label: "Income tax", formula: "IncomeTax" },
-    { row: 9, label: "Class 4 NIC", formula: "Class4" },
+    { row: 9, label: "Class 4 NIC (on profit)", formula: "Class4" },
     { row: 10, label: "Student loan", formula: "StudentLoan" },
     { row: 11, label: "Total deductions", formula: "TotalDeductions", strong: true },
     { row: 13, label: "Net take-home", formula: "NetTakeHome", strong: true },
@@ -278,7 +298,7 @@ export function build(): ExcelJS.Workbook {
     ["Medical Accountants UK", false],
     ["", false],
     ["This model shows your estimated take-home pay as a locum or self-employed", false],
-    ["doctor, after income tax, Class 4 NIC and student loan, based on 2025/26 rates.", false],
+    ["doctor, after income tax, Class 4 NIC and student loan, based on 2026/27 rates.", false],
     ["", false],
     ["How to use:", true],
     ["1. Go to the 'Your figures' tab.", false],
@@ -290,7 +310,11 @@ export function build(): ExcelJS.Workbook {
     ["Class 4 NIC rate: 6% between 12,570 and 50,270, 2% above. Class 2 is no longer", false],
     ["a required payment from 6 April 2024.", false],
     ["", false],
-    ["The 'Rates' tab holds the locked 2025/26 rates. Do not edit it.", false],
+    ["Class 4 is charged on your TRADING PROFIT, which is gross fees less expenses.", true],
+    ["Your pension contribution does not reduce it. Row 7 shows the profit the Class 4", false],
+    ["line is built on, and it is deliberately higher than the net income figure below it.", false],
+    ["", false],
+    ["The 'Rates' tab holds the locked 2026/27 rates. Do not edit it.", false],
     ["See 'Notes' for assumptions and limitations.", false],
   ];
   startLines.forEach(([text, bold], i) => {
@@ -305,19 +329,29 @@ export function build(): ExcelJS.Workbook {
   const noteLines = [
     "Assumptions and limitations",
     "",
-    "2025/26 rates: personal allowance GBP12,570; basic rate 20% to GBP50,270;",
-    "higher rate 40% to GBP125,140; additional rate 45% above.",
+    "2026/27 rates, verified at gov.uk on 26 August 2026: personal allowance GBP12,570;",
+    "basic rate 20% to GBP50,270; higher rate 40% to GBP125,140; additional rate 45% above.",
     "",
     "Class 4 NIC: 6% on profits between GBP12,570 and GBP50,270, 2% above.",
     "Class 2 NIC: removed as a required payment from 6 April 2024 and is NOT included.",
+    "",
+    "Class 4 is charged on trading profit (gross fees less expenses). A personal pension",
+    "contribution does NOT reduce that profit: relief is given against income tax by",
+    "extending your basic rate band, not as a business deduction. This model therefore",
+    "computes Class 4 on row 7 (profit), not on row 8 (net income after pension).",
+    "",
+    "Income tax in this model is calculated on net income after the pension contribution.",
+    "That is a simplification of band extension. It lands in the same place for a",
+    "straightforward higher-rate case and diverges where the GBP100,000 personal",
+    "allowance taper or the additional rate is in play.",
     "",
     "This model covers self-employed and locum income (sole trader or PSC/outside-IR35).",
     "A salaried GP is taxed under PAYE with Class 1 NIC, not Class 4.",
     "Use this model for the self-employed portion only; PAYE income uses your allowance",
     "and basic-rate band first.",
     "",
-    "Student loan thresholds (2025/26): Plan 1 GBP26,065; Plan 2 GBP28,470; Plan 4 GBP32,745.",
-    "All repaid at 9% on income above the threshold.",
+    "Student loan thresholds (2026/27): Plan 1 GBP26,900; Plan 2 GBP29,385; Plan 4 GBP33,795.",
+    "All repaid at 9% on income above the threshold. Plan 5 is not modelled.",
     "",
     "MTD for ITSA: if gross self-employed income is over GBP50,000 you are in Making Tax",
     "Digital from 6 April 2026.",

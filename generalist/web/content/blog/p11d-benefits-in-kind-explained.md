@@ -257,7 +257,7 @@ faqs:
 
 <h2>Class 1A NIC: The Employer Charge on Benefits</h2>
 
-<p>Employers pay Class 1A National Insurance on the taxable value of most benefits in kind. For 2025/26 the Class 1A rate is <strong>15%</strong>, confirmed at <a href="https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026" target="_blank" rel="noopener">gov.uk rates and thresholds for employers 2025 to 2026</a>. This aligns with the secondary Class 1 NIC rate that applies to wages above the £5,000 secondary threshold from 6 April 2025 (per house position §4).</p>
+<p>Employers pay Class 1A National Insurance on the taxable value of most benefits in kind. For 2025/26 the Class 1A rate is <strong>15%</strong>, confirmed at <a href="https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026" target="_blank" rel="noopener">gov.uk rates and thresholds for employers 2025 to 2026</a>. This aligns with the secondary Class 1 NIC rate that applies to wages above the £5,000 secondary threshold from 6 April 2025.</p>
 
 <p><strong>Correction note:</strong> the previous version of this page stated the Class 1A rate as 13.8%. That rate applied only up to 5 April 2025. From 6 April 2025 onward the rate is 15%. Any P11D preparation using 13.8% for 2025/26 or later will underpay NIC.</p>
 
@@ -431,7 +431,7 @@ faqs:
 
 <p>The tax cost of a company car depends almost entirely on two numbers: the list price and the CO2 appropriate percentage. Shifting to a lower-emission vehicle, or to a zero-emission electric car at the 3% appropriate percentage, can dramatically reduce both the employee's income tax and the employer's Class 1A NIC.</p>
 
-<p>Detailed planning for a director with a company car sits alongside the wider question of whether a company-owned car or a personally-owned car with approved mileage payments produces the better tax outcome. That analysis draws on the car benefit rules above and the AMAP rules (55p per mile for the first 10,000 business miles from 6 April 2026, 45p for 2025/26 and earlier, per house position §12). For the P11D reporting rules where a director pays for their own fuel, see our specific page on <a href="/blog/payroll-and-paye/p11d-company-car-fuel-paid-by-director">P11D company car fuel paid by director</a>.</p>
+<p>Detailed planning for a director with a company car sits alongside the wider question of whether a company-owned car or a personally-owned car with approved mileage payments produces the better tax outcome. That analysis draws on the car benefit rules above and the AMAP rules (55p per mile for the first 10,000 business miles from 6 April 2026, 45p for 2025/26 and earlier). For the P11D reporting rules where a director pays for their own fuel, see our specific page on <a href="/blog/payroll-and-paye/p11d-company-car-fuel-paid-by-director">P11D company car fuel paid by director</a>.</p>
 
 <h2>What the Data Shows: Where P11D Compliance Goes Wrong</h2>
 

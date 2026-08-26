@@ -107,7 +107,7 @@ faqs:
 
 <h2>Adjusted EBITDA and asking price: what the listing implies and why you cannot verify it</h2>
 
-<p>Pharmacy valuations are typically expressed as a multiple of adjusted EBITDA, with goodwill treated as a separate component reflecting the NHS contract's value. The house positions on this site treat valuation as <a href="/services/pharmacy-valuation-goodwill">method-level only</a>: the multiple used in any given deal is market-specific and cannot be reliably stated as a benchmark.</p>
+<p>Pharmacy valuations are typically expressed as a multiple of adjusted EBITDA, with goodwill treated as a separate component reflecting the NHS contract's value. We treat valuation as <a href="/services/pharmacy-valuation-goodwill">method-level only</a>: the multiple used in any given deal is market-specific and cannot be reliably stated as a benchmark.</p>
 
 <p>What a buyer needs to understand is the chain of decisions behind a listing's asking price:</p>
 

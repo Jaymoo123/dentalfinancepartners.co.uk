@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/a-medical-staff-by-the-table-7108401/"
 category: "GP Practice Management"
 metaTitle: "ARRS: Employing PCN Staff, Reimbursement & the Tax"
-metaDescription: "How the Additional Roles Reimbursement Scheme works: reimbursable roles, who employs ARRS staff, the payroll and pension, the VAT trap and the accounting."
+metaDescription: "How the Additional Roles Reimbursement Scheme works: which roles qualify, who employs the staff, and why sharing them can become a 20% VAT supply."
 altText: "Primary care network pharmacist and physiotherapist working alongside GP practice staff"
 h1: "ARRS Explained: Reimbursement, Employing PCN Staff and the Tax Consequences"
 keyTakeaways:

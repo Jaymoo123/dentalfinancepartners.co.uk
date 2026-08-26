@@ -7,15 +7,26 @@
  * STALE-FIGURE NOTES (resolved):
  * - LocumTax student loan thresholds: extraction pinned the OLD 2024/25 values
  *   (24,990/27,295/31,395); the three SL tests below were then deliberately
- *   updated to the user-approved 2025/26 values (26,065/28,470/32,745) on
- *   2026-06-11, with derivations in each test.
+ *   updated to the user-approved 2025/26 values on 2026-06-11, then re-pinned to
+ *   the 2026/27 values (26,900/29,385/33,795) on 2026-08-26 from gov.uk
+ *   rates-and-thresholds-for-employers-2026-to-2027, with derivations in each test.
+ * - LocumTax Class 4: pinned values charged Class 4 on income after the pension.
+ *   That was a defect, not behaviour worth preserving. Corrected 2026-08-26 to
+ *   charge it on trading profit per SSCBA 1992 s.15; the affected expectations
+ *   carry the old figure in a comment.
  * - LocumTax plan4 label in old UI read "postgraduate" but threshold/rate
  *   matches Scottish Plan 4 — fixed in the new config ("Plan 4 (Scotland)").
  */
 
 import { describe, it, expect } from "vitest";
 import { calcLocumTax } from "./locum-tax";
-import { calcNHSPension } from "./nhs-pension";
+import {
+  calcNHSPension,
+  CARRY_FORWARD_NOT_ENTERED,
+  CARRY_FORWARD_ENTERED,
+  NHS_ONLY_ASSUMED,
+} from "./nhs-pension";
+import { nhsPensionTool } from "../configs/nhs-pension-calculator";
 import { calcIncorporation } from "./incorporation";
 import { calcGpPartnerDrawings } from "./gp-partner-drawings";
 import {
@@ -36,37 +47,60 @@ describe("calcLocumTax — golden tests (pinned to OLD component outputs)", () =
     // basicBandIncome = min(52430, 37700) = 37700 => 7540
     // higherBandIncome = min(52430 - 37700, 74870) = 14730 => 5892
     // incomeTax = 7540 + 5892 = 13432
-    // NI: niableBand1 = min(65000-12570, 37700) = 37700 * 0.06 = 2262
-    //     niableBand2 = (65000 - 50270) * 0.02 = 14730 * 0.02 = 294.6
-    // NI = 2262 + 294.6 = 2556.6
+    // Class 4 is charged on PROFIT (80000 - 5000 = 75000), NOT on net income
+    // after the pension. SSCBA 1992 s.15; verified 2026-08-26.
+    // NI: niableBand1 = min(75000-12570, 37700) = 37700 * 0.06 = 2262
+    //     niableBand2 = (75000 - 50270) * 0.02 = 24730 * 0.02 = 494.6
+    // NI = 2262 + 494.6 = 2756.6
+    // (pre-fix this asserted £2,556.60, computed on 65000, understating it by £200)
     const r = calcLocumTax({ grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "none" });
+    expect(r.profit).toBe(75000);
     expect(r.netIncome).toBe(65000);
     expect(r.incomeTax).toBeCloseTo(13432, 0);
-    expect(r.nationalInsurance).toBeCloseTo(2556.6, 1);
+    expect(r.nationalInsurance).toBeCloseTo(2756.6, 1);
     expect(r.studentLoanRepayment).toBe(0);
-    expect(r.netTakeHome).toBeCloseTo(65000 - 13432 - 2556.6, 0);
+    expect(r.netTakeHome).toBeCloseTo(65000 - 13432 - 2756.6, 0);
     expect(r.effectiveTaxRate).toBeGreaterThan(0);
   });
 
+  it("GUARD: Class 4 is computed on profit and is unaffected by the pension input", () => {
+    // The defect this replaces: pension contributions were deducted before
+    // Class 4. Same profit, three different pension figures, one Class 4 answer.
+    const base = { grossIncome: 80000, expenses: 5000, studentLoanPlan: "none" as const };
+    const noPension = calcLocumTax({ ...base, pensionContributions: 0 });
+    const somePension = calcLocumTax({ ...base, pensionContributions: 10000 });
+    const bigPension = calcLocumTax({ ...base, pensionContributions: 40000 });
+
+    expect(somePension.nationalInsurance).toBe(noPension.nationalInsurance);
+    expect(bigPension.nationalInsurance).toBe(noPension.nationalInsurance);
+
+    // And it equals Class 4 computed directly on the £75,000 profit.
+    const expected = (50270 - 12570) * 0.06 + (75000 - 50270) * 0.02;
+    expect(somePension.nationalInsurance).toBeCloseTo(expected, 6);
+
+    // Income tax, which pension relief genuinely does affect, must still move.
+    expect(somePension.incomeTax).toBeLessThan(noPension.incomeTax);
+  });
+
   it("plan2 student loan: gross=80000 expenses=5000 pension=10000", () => {
-    // netIncome = 65000; threshold plan2 = 28470 (2025/26, deliberate correction 2026-06-11)
-    // SL = (65000 - 28470) * 0.09 = 36530 * 0.09 = 3287.70
+    // netIncome = 65000; threshold plan2 = 29385 (2026/27, re-pinned 2026-08-26)
+    // SL = (65000 - 29385) * 0.09 = 35615 * 0.09 = 3205.35
     const r = calcLocumTax({ grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "plan2" });
-    expect(r.studentLoanRepayment).toBeCloseTo(3287.7, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(3205.35, 1);
   });
 
   it("plan1 student loan: gross=60000 expenses=3000 pension=5000", () => {
-    // netIncome = 52000; threshold plan1 = 26065 (2025/26, deliberate correction 2026-06-11)
-    // SL = (52000 - 26065) * 0.09 = 25935 * 0.09 = 2334.15
+    // netIncome = 52000; threshold plan1 = 26900 (2026/27, re-pinned 2026-08-26)
+    // SL = (52000 - 26900) * 0.09 = 25100 * 0.09 = 2259
     const r = calcLocumTax({ grossIncome: 60000, expenses: 3000, pensionContributions: 5000, studentLoanPlan: "plan1" });
-    expect(r.studentLoanRepayment).toBeCloseTo(2334.15, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(2259, 1);
   });
 
   it("plan4 student loan: gross=70000 expenses=4000 pension=8000", () => {
-    // netIncome = 58000; threshold plan4 = 32745 (2025/26, deliberate correction 2026-06-11)
-    // SL = (58000 - 32745) * 0.09 = 25255 * 0.09 = 2272.95
+    // netIncome = 58000; threshold plan4 = 33795 (2026/27, re-pinned 2026-08-26)
+    // SL = (58000 - 33795) * 0.09 = 24205 * 0.09 = 2178.45
     const r = calcLocumTax({ grossIncome: 70000, expenses: 4000, pensionContributions: 8000, studentLoanPlan: "plan4" });
-    expect(r.studentLoanRepayment).toBeCloseTo(2272.95, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(2178.45, 1);
   });
 
   it("income below personal allowance: no income tax", () => {
@@ -75,10 +109,18 @@ describe("calcLocumTax — golden tests (pinned to OLD component outputs)", () =
     expect(r.incomeTax).toBe(0);
   });
 
-  it("income below NI lower limit: no NI", () => {
+  it("profit below NI lower limit: no NI", () => {
+    // Profit, not net income, is the test. 13000 - 1000 = 12000 profit < 12570.
+    const r = calcLocumTax({ grossIncome: 13000, expenses: 1000, pensionContributions: 5000, studentLoanPlan: "none" });
+    expect(r.profit).toBe(12000);
+    expect(r.nationalInsurance).toBe(0);
+  });
+
+  it("profit above NI lower limit still pays Class 4 even when the pension takes net income below it", () => {
+    // 15000 - 1000 = 14000 profit; the 5000 pension does not shelter it.
     const r = calcLocumTax({ grossIncome: 15000, expenses: 1000, pensionContributions: 5000, studentLoanPlan: "none" });
     expect(r.netIncome).toBe(9000);
-    expect(r.nationalInsurance).toBe(0);
+    expect(r.nationalInsurance).toBeCloseTo((14000 - 12570) * 0.06, 6); // 85.80
   });
 
   it("additional rate income: gross=200000 expenses=10000 pension=0", () => {
@@ -104,10 +146,10 @@ describe("calcLocumTax — golden tests (pinned to OLD component outputs)", () =
     expect(r.incomeTax).toBeCloseTo(6486, 0);
   });
 
-  it("ED-01: break a constant — this test detects the change (guard test)", () => {
-    // Change: NI lower limit is 12570, so income at 12570 has no NI
-    const r = calcLocumTax({ grossIncome: 20000, expenses: 0, pensionContributions: 7430, studentLoanPlan: "none" });
-    // netIncome = 12570, NI threshold exactly met
+  it("ED-01: NI lower limit constant is 12570 (guard test)", () => {
+    // Profit exactly at the lower profits limit: no Class 4.
+    const r = calcLocumTax({ grossIncome: 20000, expenses: 7430, pensionContributions: 0, studentLoanPlan: "none" });
+    expect(r.profit).toBe(12570);
     expect(r.nationalInsurance).toBe(0);
   });
 });
@@ -126,6 +168,63 @@ describe("calcNHSPension — golden tests (pinned to OLD component outputs)", ()
     expect(r.isTapered).toBe(false);
     expect(r.excess).toBe(0);
     expect(r.taxCharge).toBe(0);
+  });
+
+  it("GUARD: adjusted income is threshold income plus TOTAL pension input, not the NHS input alone", () => {
+    // The defect this replaces: adjusted income was built from the NHS input
+    // amount only, so a doctor with a second scheme could be told they were not
+    // tapered when they were. FA 2004 s.228ZA; HMRC PTM057100, read 2026-08-26.
+    const nhsOnly = calcNHSPension({ thresholdIncome: 210000, pensionGrowth: 45000, taxBand: "higher" });
+    // 210000 + 45000 = 255000, below the 260000 adjusted income limit: no taper.
+    expect(nhsOnly.adjustedIncome).toBe(255000);
+    expect(nhsOnly.isTapered).toBe(false);
+
+    // Same doctor, £20,000 into a SIPP. Adjusted income must pick that up.
+    const withSipp = calcNHSPension({
+      thresholdIncome: 210000,
+      pensionGrowth: 45000,
+      taxBand: "higher",
+      otherPensionInput: 20000,
+    });
+    expect(withSipp.totalPensionInput).toBe(65000);
+    expect(withSipp.adjustedIncome).toBe(275000); // 210000 + 65000, NOT 255000
+    expect(withSipp.isTapered).toBe(true);
+    // reduction = (275000 - 260000) / 2 = 7500; allowance = 52500
+    expect(withSipp.annualAllowance).toBe(52500);
+    // excess is measured on total input across all schemes: 65000 - 52500
+    expect(withSipp.excess).toBe(12500);
+
+    // The shortcut construction must NOT be what the code computes.
+    expect(withSipp.adjustedIncome).not.toBe(210000 + 45000);
+  });
+
+  it("GUARD: carry-forward is applied, earliest year first, and can extinguish the charge", () => {
+    const before = calcNHSPension({ thresholdIncome: 210000, pensionGrowth: 70000, taxBand: "higher" });
+    expect(before.excess).toBe(20000);
+    expect(before.taxCharge).toBe(8000);
+
+    // £20,000 of unused allowance across the three prior years takes it to nil.
+    const after = calcNHSPension({
+      thresholdIncome: 210000,
+      pensionGrowth: 70000,
+      taxBand: "higher",
+      carryForward: [8000, 7000, 5000],
+    });
+    expect(after.excess).toBe(20000); // excess before carry-forward is unchanged
+    expect(after.carryForwardUsed).toBe(20000);
+    expect(after.chargeableExcess).toBe(0);
+    expect(after.taxCharge).toBe(0);
+
+    // Partial carry-forward reduces rather than removes.
+    const partial = calcNHSPension({
+      thresholdIncome: 210000,
+      pensionGrowth: 70000,
+      taxBand: "higher",
+      carryForward: [5000, 0, 0],
+    });
+    expect(partial.carryForwardUsed).toBe(5000);
+    expect(partial.chargeableExcess).toBe(15000);
+    expect(partial.taxCharge).toBe(6000);
   });
 
   it("tapered case: threshold=210000 growth=70000 taxBand=higher", () => {
@@ -593,5 +692,82 @@ describe("calcConsultantPrivateVsNhs — golden tests (roster Tool 10 worked exa
     });
     expect(r.netFromSession).toBe(0);
     expect(r.effectiveMarginalRate).toBe(0);
+  });
+});
+
+// ── NHS pension BROWSER CALCULATOR: the two inputs that carry the fix ─────────
+// The workbook was corrected on 2026-08-26; leaving these off the browser
+// surface would have recreated the same defect where more people meet it.
+
+describe("nhsPensionTool.compute (browser calculator)", () => {
+  const defaults = Object.fromEntries(nhsPensionTool.fields.map((f) => [f.id, f.default]));
+  const run = (over: Record<string, number | string | boolean> = {}) =>
+    nhsPensionTool.compute({ ...defaults, ...over });
+  const rowLabels = (r: ReturnType<typeof run>) => (r.rows ?? []).map((x) => x.label);
+
+  it("exposes an other-schemes input and a carry-forward input, both defaulting to zero", () => {
+    const ids = nhsPensionTool.fields.map((f) => f.id);
+    expect(ids).toContain("otherPensionInput");
+    expect(ids).toContain("carryForward");
+    expect(nhsPensionTool.fields.find((f) => f.id === "otherPensionInput")!.default).toBe(0);
+    expect(nhsPensionTool.fields.find((f) => f.id === "carryForward")!.default).toBe(0);
+  });
+
+  it("GUARD: the consultant with a SIPP is tapered and charged, not told they are fine", () => {
+    // £210,000 threshold, £45,000 NHS growth, £20,000 into a SIPP, higher rate.
+    // Old behaviour: adjusted income £255,000, no taper, no charge.
+    const withoutSipp = run({ thresholdIncome: 210000, pensionGrowth: 45000 });
+    expect(withoutSipp.headline.value).toBe("£60,000");
+
+    const r = run({ thresholdIncome: 210000, pensionGrowth: 45000, otherPensionInput: 20000 });
+    expect(r.headline.label).toBe("Annual allowance charge");
+    expect(r.headline.value).toBe("£5,000");
+    expect(r.headline.sub).toContain("Before carry-forward");
+    const rows = Object.fromEntries((r.rows ?? []).map((x) => [x.label, x.value]));
+    expect(rows["Total pension input, all schemes"]).toBe("£65,000");
+    expect(rows["Adjusted income"]).toBe("£275,000");
+    expect(rows["Annual allowance 2026/27"]).toBe("£52,500 (tapered)");
+    expect(rows["Chargeable excess"]).toBe("£12,500");
+  });
+
+  it("GUARD: carry-forward is applied and can take the charge to nil", () => {
+    const r = run({ thresholdIncome: 210000, pensionGrowth: 70000, carryForward: 20000 });
+    expect(r.headline.label).toBe("Annual allowance");
+    expect(r.headline.sub).toBe("Carry-forward removes the excess, no charge");
+    const rows = Object.fromEntries((r.rows ?? []).map((x) => [x.label, x.value]));
+    expect(rows["Carry-forward applied"]).toBe("£20,000");
+    expect(rows["Chargeable excess"]).toBe("£0");
+
+    const partial = run({ thresholdIncome: 210000, pensionGrowth: 70000, carryForward: 5000 });
+    expect(partial.headline.value).toBe("£6,000");
+    expect(partial.headline.sub).not.toContain("Before carry-forward");
+  });
+
+  it("GUARD: both status lines are result rows, in the workbook's own wording", () => {
+    const empty = run({ thresholdIncome: 210000, pensionGrowth: 70000 });
+    // Not the small-print `note`: these must be rows the reader cannot miss.
+    expect(rowLabels(empty)).toContain(CARRY_FORWARD_NOT_ENTERED);
+    expect(rowLabels(empty)).toContain(NHS_ONLY_ASSUMED);
+    expect(empty.note).not.toContain(CARRY_FORWARD_NOT_ENTERED);
+
+    const filled = run({ thresholdIncome: 210000, pensionGrowth: 70000, carryForward: 5000, otherPensionInput: 1000 });
+    expect(rowLabels(filled)).toContain(CARRY_FORWARD_ENTERED);
+    expect(rowLabels(filled)).not.toContain(CARRY_FORWARD_NOT_ENTERED);
+    expect(rowLabels(filled)).not.toContain(NHS_ONLY_ASSUMED);
+  });
+
+  it("GUARD: the calculator and the workbook share one copy of the status wording", async () => {
+    // The builder imports these constants rather than repeating the strings, so
+    // a reworded status line lands in the xlsx at the next resources:xlsx run.
+    const { build } = await import("../../../../scripts/resources/builders/nhs-pension.js");
+    const ws = build().getWorksheet("Your figures")!;
+    expect((ws.getCell("B25").value as { formula: string }).formula).toContain(CARRY_FORWARD_NOT_ENTERED);
+    expect((ws.getCell("B26").value as { formula: string }).formula).toContain(NHS_ONLY_ASSUMED);
+  });
+
+  it("the default NHS-only case still returns the standard allowance and no charge", () => {
+    const r = run();
+    expect(r.headline.value).toBe("£60,000");
+    expect(r.headline.sub).toBe("Standard allowance, no excess charge");
   });
 });

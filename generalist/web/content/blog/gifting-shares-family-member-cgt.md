@@ -61,7 +61,7 @@ faqs:
 
 <p>Under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/58" target="_blank" rel="noopener noreferrer">TCGA 1992 s.58</a>, a transfer between spouses or civil partners who are living together is treated as a no-gain, no-loss disposal. No CGT arises at the point of the gift. The recipient spouse inherits the donor's original base cost, and the gain is deferred until the recipient disposes of the shares.</p>
 
-<p>The practical effect is income-splitting and rate-band arbitrage. If your spouse has lower income than you, their marginal CGT rate on the eventual sale will be lower: 18% in the basic-rate band against your 24% above it. Both rates apply from 30 October 2024 to all chargeable assets (§5, house positions). The annual exempt amount is £3,000 for 2025/26 and 2026/27, and each spouse has their own entitlement.</p>
+<p>The practical effect is income-splitting and rate-band arbitrage. If your spouse has lower income than you, their marginal CGT rate on the eventual sale will be lower: 18% in the basic-rate band against your 24% above it. Both rates apply from 30 October 2024 to all chargeable assets. The annual exempt amount is £3,000 for 2025/26 and 2026/27, and each spouse has their own entitlement.</p>
 
 <h3>Worked example: spouse transfer before a company sale</h3>
 
@@ -87,7 +87,7 @@ faqs:
 
 <p>A gift to anyone other than a spouse is a disposal at market value for CGT purposes. There is no spouse exemption. HMRC treats you as if you sold the shares at their current open-market value on the date of the gift, and CGT is computed on the resulting gain.</p>
 
-<p>The CGT rates from 30 October 2024 onward are 18% (gains in the basic-rate band) and 24% (gains above it), with the £3,000 annual exempt amount (§5, house positions, confirmed at <a href="https://www.gov.uk/capital-gains-tax/rates" target="_blank" rel="noopener noreferrer">gov.uk CGT rates</a>).</p>
+<p>The CGT rates from 30 October 2024 onward are 18% (gains in the basic-rate band) and 24% (gains above it), with the £3,000 annual exempt amount (confirmed at <a href="https://www.gov.uk/capital-gains-tax/rates" target="_blank" rel="noopener noreferrer">gov.uk CGT rates</a>).</p>
 
 <h3>Worked example: gift to adult child, no holdover claim</h3>
 
@@ -101,7 +101,7 @@ faqs:
 
 <p>Where you gift shares in a qualifying trading company, holdover relief defers the CGT that would otherwise arise. Both you and the recipient make a joint claim. The gift is treated as a no-gain, no-loss disposal: you pay no CGT at the point of the gift, and the recipient's base cost is reduced by the amount of the held-over gain rather than being set at market value.</p>
 
-<h3>Qualifying conditions (§5 house positions; s.165 confirmed in force)</h3>
+<h3>Qualifying conditions (TCGA 1992 s.165)</h3>
 
 <ul>
 <li>The shares must be in a <strong>trading company</strong> or a holding company of a trading group. Investment companies and property investment companies do not qualify.</li>
@@ -120,7 +120,7 @@ faqs:
 
 <h2>How Holdover Relief Interacts with BADR</h2>
 
-<p>BADR gives a reduced CGT rate on qualifying business disposals up to a £1,000,000 lifetime limit per individual (confirmed at s.169N, TCGA 1992). The rate is 14% for disposals from 6 April 2025 to 5 April 2026, rising to <strong>18% from 6 April 2026</strong> per <a href="https://www.gov.uk/business-asset-disposal-relief" target="_blank" rel="noopener noreferrer">the BADR schedule</a> (§5, house positions). See our detailed guide on the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">BADR 2026 rate change</a> for the planning implications of that step.</p>
+<p>BADR gives a reduced CGT rate on qualifying business disposals up to a £1,000,000 lifetime limit per individual (confirmed at s.169N, TCGA 1992). The rate is 14% for disposals from 6 April 2025 to 5 April 2026, rising to <strong>18% from 6 April 2026</strong> per <a href="https://www.gov.uk/business-asset-disposal-relief" target="_blank" rel="noopener noreferrer">the BADR schedule</a>. See our detailed guide on the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">BADR 2026 rate change</a> for the planning implications of that step.</p>
 
 <p>The BADR conditions for a share disposal require that, throughout the two-year period ending on the date of disposal, the individual holds at least 5% of the ordinary shares and voting rights (and a 5% economic entitlement), is an officer or employee of the company, and the company is a trading company (ss.169H to 169S, TCGA 1992).</p>
 

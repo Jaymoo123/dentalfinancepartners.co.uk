@@ -96,7 +96,7 @@ faqs:
 
 <h2>Worked example: a domiciliary start-up pre-revenue cash timeline</h2>
 
-<p>The table below illustrates a month-by-month cumulative burn for a small domiciliary agency. Registration duration is an <strong>illustrative operator input</strong>: the example uses four months as a planning assumption, not a CQC-stated timeline. Actual duration varies. All rates are labelled to their house position; the model should be rebuilt with the rates current at the time of application.</p>
+<p>The table below illustrates a month-by-month cumulative burn for a small domiciliary agency. Registration duration is an <strong>illustrative operator input</strong>: the example uses four months as a planning assumption, not a CQC-stated timeline. Actual duration varies. Every rate used is date-tagged, and the model should be rebuilt with the rates current at the time of application.</p>
 
 <table>
   <thead>

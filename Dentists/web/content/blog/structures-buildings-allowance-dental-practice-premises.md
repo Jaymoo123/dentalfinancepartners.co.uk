@@ -113,7 +113,7 @@ faqs:
 <p>One spend, three regimes, three taxes, and three sets of paperwork. The point is not to master all three at once but to recognise that a big refurbishment is not a single tax event. Each regime claims its own slice of the project, and missing any one of them leaves relief on the table.</p>
 
 <h2>How SBA works on the numbers: three worked examples</h2>
-<p>These illustrate the mechanics. They are tagged to our locked house position on capital allowances (§7), use the current SBA rate of 3% and the £1 million AIA, and are not a substitute for advice on a specific project.</p>
+<p>These illustrate the mechanics. They use the current SBA rate of 3% and the £1 million AIA, and are not a substitute for advice on a specific project.</p>
 
 <h3>Example A: a squat build split between SBA and the plant pools</h3>
 <p>A dentist builds out a squat practice in 2026/27 for £400,000 (VAT-exclusive), having bought the land separately for £150,000. The apportionment is: building structure (shell, partitions, construction works, qualifying professional fees) £230,000; plant and integral features (chairs, X-ray, electrical, water, heating, ventilation) £170,000. The £170,000 of plant goes to AIA, giving 100% relief now (directed at the 6% integral features first). The £230,000 of structure gets SBA at 3%, which is £6,900 a year for 33 and one third years. The £150,000 of land gets nothing. One project, three outcomes, set by the split. (Tagged 2026/27, §7.)</p>

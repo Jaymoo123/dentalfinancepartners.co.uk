@@ -147,11 +147,62 @@ describe("NHS pension builder (workbook sanity)", () => {
   it("build() conservation check row contains a formula with OK/ERROR string", () => {
     const wb = build();
     const ws = wb.getWorksheet("Your figures");
-    // The conservation row at B15: checks excess + allowance = pension growth
-    const checkCell = ws!.getCell("B15");
+    // The conservation row moved to B27 when carry-forward was added.
+    const checkCell = ws!.getCell("B27");
     const fv = checkCell.value as ExcelJS.CellFormulaValue;
     expect(typeof fv).toBe("object");
     expect((fv as { formula: string }).formula).toContain("Excess");
+  });
+
+  it("GUARD: adjusted income uses the statutory construction, not the NHS-only shortcut", () => {
+    const wb = build();
+    const ws = wb.getWorksheet("Your figures");
+    const totalInput = (ws!.getCell("B12").value as { formula: string }).formula;
+    const adjusted = (ws!.getCell("B13").value as { formula: string }).formula;
+    // Total pension input must span every registered scheme.
+    expect(totalInput).toBe("In_PensionGrowth+In_OtherPensionInput");
+    // Adjusted income = threshold income + TOTAL pension input (FA 2004 s.228ZA,
+    // HMRC PTM057100). The old shortcut "In_ThresholdIncome+In_PensionGrowth"
+    // omitted every other scheme and understated the taper.
+    expect(adjusted).toBe("In_ThresholdIncome+TotalPensionInput");
+    expect(adjusted).not.toBe("In_ThresholdIncome+In_PensionGrowth");
+  });
+
+  it("GUARD: the excess is measured against total pension input, not the NHS input alone", () => {
+    const wb = build();
+    const ws = wb.getWorksheet("Your figures");
+    const excess = (ws!.getCell("B17").value as { formula: string }).formula;
+    expect(excess).toBe("MAX(0,TotalPensionInput-AnnualAllowance)");
+  });
+
+  it("GUARD: carry-forward has an input per year and reduces the charge", () => {
+    const wb = build();
+    const ws = wb.getWorksheet("Your figures");
+    // Three carry-forward input cells, all defaulting to zero.
+    expect(ws!.getCell("B8").value).toBe(0);
+    expect(ws!.getCell("B9").value).toBe(0);
+    expect(ws!.getCell("B10").value).toBe(0);
+    // Used earliest year first.
+    expect((ws!.getCell("B18").value as { formula: string }).formula).toBe("MIN(In_CF_Year3,Excess)");
+    // The charge is on the excess AFTER carry-forward.
+    expect((ws!.getCell("B22").value as { formula: string }).formula).toBe("MAX(0,Excess-CFUsed)");
+    expect((ws!.getCell("B23").value as { formula: string }).formula).toBe("ChargeableExcess*In_TaxRate");
+  });
+
+  it("GUARD: the workbook itself warns when carry-forward has not been entered", () => {
+    const wb = build();
+    const ws = wb.getWorksheet("Your figures");
+    const status = (ws!.getCell("B25").value as { formula: string }).formula;
+    expect(status).toContain("CARRY-FORWARD NOT ENTERED");
+    expect(status).toContain("BEFORE carry-forward");
+  });
+
+  it("build() Rates header is labelled 2026/27, not 2025/26", () => {
+    const wb = build();
+    const rates = wb.getWorksheet("Rates");
+    const header = String(rates!.getCell("A1").value);
+    expect(header).toContain("2026/27");
+    expect(header).not.toContain("2025/26 basis");
   });
 });
 

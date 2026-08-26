@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/desk-and-chairs-in-doctor-office-7789614/"
 category: "Private Practice"
 metaTitle: "Selling a Private Medical Practice: CGT and BADR"
-metaDescription: "How CGT and Business Asset Disposal Relief work on selling a private medical practice, plus why the 6 April 2026 BADR rise from 14% to 18% matters."
+metaDescription: "CGT and Business Asset Disposal Relief on selling a private medical practice. BADR rose from 14% to 18% on 6 April 2026, worth £40,000 on a £1m gain."
 altText: "Consultant and adviser reviewing the sale contract for a private medical clinic"
 h1: "Selling a Private Medical Practice: CGT, Business Asset Disposal Relief and the 2026 Rate Rise"
 keyTakeaways:

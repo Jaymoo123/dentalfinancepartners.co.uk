@@ -12,7 +12,7 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/employees-doing-accounting-in-the-office-7654438/"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Manchester | Medical Tax Specialists 2026/27"
+metaTitle: "GP Accountant Manchester: Carr-Hill, QOF and Pension Taper"
 metaDescription: "GP accountant in Manchester for partners, salaried GPs, and locums. NHS pension annual allowance, GMS practice accounts, and tax across Greater Manchester."
 altText: "Professional accountant meeting with GP partner in Manchester office discussing tax planning and practice finances"
 h1: "GP Accountant Manchester: Specialist Tax & Financial Services for Medical Professionals"

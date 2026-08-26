@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/making-notes-and-calculations-based-on-charts-20251480/"
 category: "NHS Pension Planning"
-metaTitle: "NHS Pension Partial Retirement and Early Retirement: Doctor's Guide"
-metaDescription: "Partial retirement, early retirement and retire and return compared for doctors: the 20 to 100 percent drawdown, the 10 percent pay rule and the 24 hour break."
+metaTitle: "NHS Pension Partial and Early Retirement: Doctor's Guide"
+metaDescription: "Partial retirement, early retirement and retire and return for doctors: the 20 to 100 percent drawdown, the 10 percent pay rule and the 24 hour break."
 altText: "Senior doctor discussing a phased retirement plan with a colleague"
 h1: "NHS Pension Partial Retirement and Early Retirement for Doctors"
 keyTakeaways:

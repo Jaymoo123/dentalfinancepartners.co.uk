@@ -11,8 +11,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/man-and-woman-working-in-the-office-8297484/"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant London"
-metaDescription: "GP accountant in London for practices, partners, salaried GPs and locums. Partnership accounts, NHS pension allowance, tax returns and MTD. Lead-gen guide."
+metaTitle: "GP Accountant London | Pension Taper and Partnership Tax"
+metaDescription: "GP accountant in London for practices, partners, salaried GPs and locums. Partnership accounts, the NHS pension taper, tax returns and Making Tax Digital."
 altText: "London GP consulting with specialist medical accountant about practice finances"
 h1: "GP Accountant in London: Specialist Accounting for Practices, Partners and Locums"
 keyTakeaways:

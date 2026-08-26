@@ -132,7 +132,7 @@ faqs:
 
 <h2>Take-home comparison at a realistic 2026/27 day rate</h2>
 
-<p>The worked example below uses a plumber working 200 days a year at £200 per day (£40,000 annual labour turnover). All figures are 2026/27 using HP-locked rates. The CIS sole-trader column assumes £5,000 of allowable expenses (tools, mileage at 55p per mile from 6 April 2026, professional fees). The agency PAYE column reflects a typical construction labour agency arrangement.</p>
+<p>The worked example below uses a plumber working 200 days a year at £200 per day (£40,000 annual labour turnover). All figures are 2026/27 rates. The CIS sole-trader column assumes £5,000 of allowable expenses (tools, mileage at 55p per mile from 6 April 2026, professional fees). The agency PAYE column reflects a typical construction labour agency arrangement.</p>
 
 <table>
 <tr><th></th><th>CIS sole trader (registered, 20%)</th><th>Agency PAYE</th></tr>

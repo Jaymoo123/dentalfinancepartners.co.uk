@@ -22,7 +22,7 @@ faqs:
   - question: "How do I agree an EMI valuation with HMRC Shares and Assets Valuation?"
     answer: "Prepare your company valuation basis and proposed option terms, then contact HMRC Shares and Assets Valuation to agree both the AMV and UMV before or at grant. Once HMRC confirms the agreed figures, grant the options at the agreed exercise price, register the scheme, and notify the grant by 6 July. Source: gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis."
   - question: "How long is an agreed EMI valuation valid?"
-    answer: "HMRC does not publish a fixed validity period for an agreed EMI valuation. If circumstances have changed materially since the agreement, such as a new funding round or a third-party offer, seek a fresh SAV agreement before the next grant. This is a qualitative judgement; no House Position gives a stated number of days."
+    answer: "HMRC does not publish a fixed validity period for an agreed EMI valuation. If circumstances have changed materially since the agreement, such as a new funding round or a third-party offer, seek a fresh SAV agreement before the next grant. This is a qualitative judgement rather than a fixed number of days."
   - question: "What is the difference between AMV and UMV for EMI options?"
     answer: "AMV (Actual Market Value) is the share value taking into account restrictions and sets the exercise price for income-tax-free treatment. UMV (Unrestricted Market Value) strips out restrictions and is higher; it feeds ERS reporting. For the full explanation and a worked example, see the EMI option valuation guide at /blog/share-schemes-and-emi/emi-option-valuation."
 ---

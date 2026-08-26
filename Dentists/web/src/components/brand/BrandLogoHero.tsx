@@ -19,7 +19,7 @@ export function BrandLogoHero() {
         <span className="mt-2 border-t-2 border-[var(--gold)] pt-2 text-sm font-semibold uppercase tracking-[0.34em] text-white sm:mt-2.5 sm:pt-2.5 sm:text-base sm:tracking-[0.38em] md:text-lg">
           Partners
         </span>
-        <span className="sr-only"> — {siteConfig.tagline}</span>
+        <span className="sr-only">, {siteConfig.tagline}</span>
       </Link>
     </div>
   );

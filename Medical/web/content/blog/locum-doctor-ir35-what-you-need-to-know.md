@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/female-hands-stamping-paper-7195195/"
 category: "Locum Tax"
-metaTitle: "Locum Doctor IR35 & Off-Payroll Rules Explained (2026/27)"
-metaDescription: "How IR35 and off-payroll rules affect locum doctors through a PSC: who decides status, the SDS, the April 2024 PAYE offset, and what inside IR35 costs you."
+metaTitle: "Are Locum Doctors Inside or Outside IR35? 2026/27"
+metaDescription: "Whether a locum doctor is inside or outside IR35, who decides it, how to challenge the determination, and what inside IR35 actually costs you in 2026/27."
 altText: "UK locum doctor reviewing IR35 status determination statement and off-payroll contracts on a desk"
 h1: "Locum Doctor IR35: What You Need to Know"
 keyTakeaways:

@@ -96,6 +96,31 @@ def check_file(p: pathlib.Path) -> str | None:
         return f"{getattr(e, 'problem', e)}{loc}"
 
 
+# SERP truncation points. Warn-only: at these limits ~364 of 2,628 estate pages
+# are already over, so a hard failure would red-CI the whole estate.
+# ponytail: warning not error; make it fatal only once the backlog is cleared.
+LEN_LIMITS = {"metaTitle": 60, "metaDescription": 155}
+
+
+def length_warnings(p: pathlib.Path) -> list[str]:
+    """Return 'file: key is N chars (M over the L limit)' lines for over-long meta."""
+    fm, _ = split_frontmatter(p.read_text(encoding="utf-8"))
+    if fm is None:
+        return []
+    try:
+        data = yaml.safe_load(fm)
+    except yaml.YAMLError:
+        return []  # invalid YAML is already reported by check_file
+    if not isinstance(data, dict):
+        return []
+    out = []
+    for key, limit in LEN_LIMITS.items():
+        v = data.get(key) or (data.get("title") if key == "metaTitle" else None)
+        if isinstance(v, str) and len(v) > limit:
+            out.append(f"{p}: {key} is {len(v)} chars, {len(v) - limit} over the {limit} limit")
+    return out
+
+
 def resolve(args) -> list[pathlib.Path]:
     files: list[pathlib.Path] = [pathlib.Path(f) for f in (args.files or [])]
     if args.site:
@@ -128,10 +153,16 @@ def main() -> int:
 
     if args.check:
         bad = []
+        warns = []
         for p in files:
             err = check_file(p)
             if err:
                 bad.append((p, err))
+            warns += length_warnings(p)
+        if warns:
+            print(f"META LENGTH WARNINGS ({len(warns)}), these truncate in search results:")
+            for w in warns:
+                print(f"  {w}")
         if bad:
             print(f"FRONTMATTER INVALID ({len(bad)} of {len(files)} file(s)):")
             for p, err in bad:

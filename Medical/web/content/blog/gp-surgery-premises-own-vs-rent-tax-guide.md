@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/costwolds-28111463/"
 category: "GP Practice Management"
 metaTitle: "Own vs Rent Your GP Surgery: SDLT, CGT, Tax Guide"
-metaDescription: "Owning vs renting a GP surgery: the property partnership, SDLT on a purchase, capital allowances on fixtures, and CGT and BADR when you eventually sell up."
+metaDescription: "Owning versus renting a GP surgery: SDLT of £19,500 on a £600,000 buy, capital allowances on fixtures, notional rent, and CGT and BADR when you sell."
 altText: "GP partners comparing the cost of owning versus renting a surgery building with a property loan and tax figures"
 h1: "Owning vs Renting Your GP Surgery: The Property Partnership, SDLT and the Tax Trade-Offs"
 keyTakeaways:

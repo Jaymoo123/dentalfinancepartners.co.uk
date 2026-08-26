@@ -117,7 +117,7 @@ faqs:
 
 <p>This catches subcontractors out every January. A year of 20% CIS deductions may have broadly covered the income tax due, leaving little or nothing to pay on that front. But the Class 4 NIC bill, which can easily reach £1,500 to £2,000 on a typical sole-trader profit, arrives on the same date and has not been collected at source at any point. If you have not put money aside for it, it is a shock.</p>
 
-<p>This guide explains exactly which NI classes apply to CIS subcontractors, the rates and thresholds for 2026/27, and worked examples for both the typical sole-trader and the limited-company director structure. The figures below are locked 2026/27 rates drawn from the Trade Tax Specialists house positions (FA 2026-verified).</p>
+<p>This guide explains exactly which NI classes apply to CIS subcontractors, the rates and thresholds for 2026/27, and worked examples for both the typical sole-trader and the limited-company director structure. The figures below are the 2026/27 rates as enacted by Finance Act 2026.</p>
 
 <h2>NI classes: a summary for CIS workers</h2>
 

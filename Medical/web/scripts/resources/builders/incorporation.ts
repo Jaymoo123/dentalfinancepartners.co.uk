@@ -35,7 +35,7 @@ const WHITE = "FFFFFFFF";
 const INK = "FF001b3d";
 
 // ---- Locked constants: traced to src/lib/tools/compute/incorporation.ts ----
-// Income tax 2025/26
+// Income tax 2026/27 (unchanged from 2025/26; gov.uk/income-tax-rates, verified 2026-08-26)
 const PA = 12570;                  // traced: PERSONAL_ALLOWANCE
 const BRL = 50270;                 // traced: BASIC_RATE_LIMIT
 const HRL = 125140;                // traced: HIGHER_RATE_LIMIT
@@ -111,17 +111,17 @@ export function build(): ExcelJS.Workbook {
     { key: "label", width: 72 },
     { key: "value", width: 18 },
   ];
-  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2026/27 dividend basis; CT 25% flat in this model: see notes)");
+  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2026/27 basis, verified 26 August 2026; CT 25% flat in this model: see notes)");
   rates.mergeCells("A1:B1");
 
   const rateRows: Array<{ name: string; label: string; value: number; pct?: boolean }> = [
-    { name: "PA", label: "Income tax: personal allowance (GBP): 2025/26", value: PA },
-    { name: "BRL", label: "Income tax: basic rate upper limit (GBP): 2025/26", value: BRL },
-    { name: "HRL", label: "Income tax: higher rate upper limit (GBP): 2025/26", value: HRL },
-    { name: "NI_LOWER", label: "Class 4 NIC: lower profits limit (GBP): 2025/26", value: NI_LOWER },
-    { name: "NI_UPPER", label: "Class 4 NIC: upper profits limit (GBP): 2025/26", value: NI_UPPER },
-    { name: "C4_MAIN", label: "Class 4 NIC: main rate 6% (NOT the abolished 9%): 2025/26", value: C4_MAIN, pct: true },
-    { name: "C4_UPPER_RATE", label: "Class 4 NIC: upper rate 2%: 2025/26", value: C4_UPPER, pct: true },
+    { name: "PA", label: "Income tax: personal allowance (GBP): 2026/27", value: PA },
+    { name: "BRL", label: "Income tax: basic rate upper limit (GBP): 2026/27", value: BRL },
+    { name: "HRL", label: "Income tax: higher rate upper limit (GBP): 2026/27", value: HRL },
+    { name: "NI_LOWER", label: "Class 4 NIC: lower profits limit (GBP): 2026/27", value: NI_LOWER },
+    { name: "NI_UPPER", label: "Class 4 NIC: upper profits limit (GBP): 2026/27", value: NI_UPPER },
+    { name: "C4_MAIN", label: "Class 4 NIC: main rate 6% (NOT the abolished 9%): 2026/27", value: C4_MAIN, pct: true },
+    { name: "C4_UPPER_RATE", label: "Class 4 NIC: upper rate 2%: 2026/27", value: C4_UPPER, pct: true },
     { name: "CT_RATE", label: "Corporation tax: flat 25% (model simplification; see Notes for true bands): F2", value: CT_RATE, pct: true },
     { name: "DIV_ALLOWANCE", label: "Dividend allowance (GBP): from 6 April 2026 (FA 2026 s.4)", value: DIV_ALLOWANCE },
     { name: "DIV_BASIC", label: "Dividend tax: basic rate 10.75%: from 6 April 2026 (FA 2026 s.4)", value: DIV_BASIC, pct: true },
@@ -391,8 +391,8 @@ export function build(): ExcelJS.Workbook {
     ["Medical Accountants UK", false],
     ["", false],
     ["This model compares the tax position of taking private practice income as a sole", false],
-    ["trader versus through a limited company, on the same income, using 2025/26 income", false],
-    ["tax and Class 4 NIC rates and 2026/27 dividend tax rates.", false],
+    ["trader versus through a limited company, on the same income, using 2026/27 income", false],
+    ["tax, Class 4 NIC and dividend tax rates.", false],
     ["", false],
     ["How to use:", true],
     ["1. Go to the 'Your figures' tab.", false],
@@ -433,8 +433,8 @@ export function build(): ExcelJS.Workbook {
     "The simplification overstates CT for practices with profits below GBP250,000 and thus",
     "understates the sole-trader advantage slightly. Speak to a specialist for the true position.",
     "",
-    "Income tax: 2025/26 rates. PA GBP12,570; basic 20% to GBP50,270; higher 40% to",
-    "GBP125,140; additional 45% above.",
+    "Income tax: 2026/27 rates, verified at gov.uk on 26 August 2026 and unchanged from",
+    "2025/26. PA GBP12,570; basic 20% to GBP50,270; higher 40% to GBP125,140; 45% above.",
     "",
     "Class 4 NIC: 6% on sole-trader private practice profit between GBP12,570 and GBP50,270,",
     "2% above. Class 2 removed from 6 April 2024.",

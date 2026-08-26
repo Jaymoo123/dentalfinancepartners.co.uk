@@ -1,3 +1,17 @@
+/**
+ * Split a guide bullet line into its leading label ("1995 section", "Sole trader",
+ * "PAYE company") and the remaining prose, so the caller can render the label as a
+ * real <strong> element. Returns label: null when the line carries no label.
+ *
+ * This exists because the guides template used to inject a literal "<strong>" string
+ * into a React text node, which React escapes, so readers saw the tag as visible text.
+ */
+export function splitLabelledLine(line: string): { label: string | null; rest: string } {
+  const text = line.replace(/^\d+\.\s/, "");
+  const match = /^([A-Za-z0-9/]+ (?:section|trader|company|employees?)):\s/.exec(text);
+  return match ? { label: match[1], rest: text.slice(match[0].length) } : { label: null, rest: text };
+}
+
 export function addHeadingIds(html: string): string {
   const headingRegex = /<(h[23])>(.*?)<\/\1>/gi;
   let counter = 0;

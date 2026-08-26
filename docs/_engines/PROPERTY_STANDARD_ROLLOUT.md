@@ -608,6 +608,27 @@ The full incident log is in the Property STATE/DESIGN_SYSTEM docs; these are the
 
 ---
 
+**FROZEN-SET DEFINITION, CORRECTED 2026-08-26. Binding estate-wide, and the old form is a live trap.**
+The armed set is **`monitor_until > now()`, with NO status predicate.** Every query in this repo and in
+the session that produced this correction used `status = 'active'` (or `lower(status)='active'`), which
+SILENTLY EXCUSES rows at status `'flagged'` that still have a live measurement window. On Medical that
+understated the frozen set by three pages: the true count was 19, not the 16 that the dossier, the batch-1
+packs, the SERP meta pass and this doc all reported.
+
+`'flagged'` does NOT mean cleared. It is written in exactly one place (`detectors.py:1400`) and nothing
+resets it: the regression detector fired DURING the window and stamped the row so the weekly job would not
+re-mail the same finding. It is a de-duplication marker on an OPEN regression, so a flagged row is arguably
+MORE sensitive than an active one, not less.
+
+Consequence on Medical, recorded rather than hidden: two flagged pages took an image-only frontmatter change
+(no text touched, no measurable effect) and the third, the homepage, stored under the slug `__home` with a
+window to 2026-10-06, was fully rewritten by the planned corepage pass. That window is knowingly re-baselined.
+The homepage was invisible to every exclusion list precisely because of this predicate plus its non-obvious slug.
+
+Derive the armed set with:
+`select slug, status, monitor_until from monitored_pages where site_key='<site>' and monitor_until > now();`
+and treat every row it returns as frozen, whatever the status says.
+
 ## 8. Owner decisions (the programme's gate register; record outcomes IN this table, with dates)
 
 | # | Decision | Recommendation | State |

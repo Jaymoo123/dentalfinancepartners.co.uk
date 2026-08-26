@@ -18,6 +18,12 @@
  * No em-dashes in any cell text. No "DJH". Creator = "Medical Accountants UK".
  */
 import ExcelJS from "exceljs";
+import {
+  CARRY_FORWARD_NOT_ENTERED,
+  CARRY_FORWARD_ENTERED,
+  NHS_ONLY_ASSUMED,
+  ALL_SCHEMES_ENTERED,
+} from "../../../src/lib/tools/compute/nhs-pension.js";
 
 // ---- Colours (Medical Accountants UK brand) ----
 const NAVY = "FF001b3d";   // #001b3d
@@ -83,14 +89,14 @@ export function build(): ExcelJS.Workbook {
     { key: "label", width: 60 },
     { key: "value", width: 18 },
   ];
-  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2025/26 basis)");
+  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2026/27 basis, verified 26 August 2026)");
   rates.mergeCells("A1:B1");
 
   const rateRows: Array<{ name: string; label: string; value: number; pct?: boolean }> = [
-    { name: "STANDARD_ALLOWANCE", label: "Standard annual allowance (GBP): 2025/26 basis", value: STANDARD_ALLOWANCE },
-    { name: "MIN_ALLOWANCE", label: "Minimum tapered allowance (GBP): 2025/26 basis", value: MIN_ALLOWANCE },
-    { name: "THRESHOLD_LIMIT", label: "Threshold income taper trigger (GBP): 2025/26 basis", value: THRESHOLD_LIMIT },
-    { name: "ADJUSTED_LIMIT", label: "Adjusted income taper trigger (GBP): 2025/26 basis", value: ADJUSTED_LIMIT },
+    { name: "STANDARD_ALLOWANCE", label: "Standard annual allowance (GBP): 2026/27 (unchanged from 2025/26)", value: STANDARD_ALLOWANCE },
+    { name: "MIN_ALLOWANCE", label: "Minimum tapered allowance (GBP): 2026/27 (unchanged from 2025/26)", value: MIN_ALLOWANCE },
+    { name: "THRESHOLD_LIMIT", label: "Threshold income taper trigger (GBP): 2026/27 (unchanged from 2025/26)", value: THRESHOLD_LIMIT },
+    { name: "ADJUSTED_LIMIT", label: "Adjusted income taper trigger (GBP): 2026/27 (unchanged from 2025/26)", value: ADJUSTED_LIMIT },
     { name: "RATE_BASIC", label: "Income tax: basic rate (for AA charge)", value: RATE_BASIC, pct: true },
     { name: "RATE_HIGHER", label: "Income tax: higher rate (for AA charge)", value: RATE_HIGHER, pct: true },
     { name: "RATE_ADDITIONAL", label: "Income tax: additional rate (for AA charge)", value: RATE_ADDITIONAL, pct: true },
@@ -137,77 +143,166 @@ export function build(): ExcelJS.Workbook {
   copperInput(ws.getCell("B4"));
   wb.definedNames.add("'Your figures'!$B$4", "In_PensionGrowth");
 
-  // Row 5: Tax band (1=basic, 2=higher, 3=additional): default 2 (higher)
-  // We store the rate directly as a selectable numeric for simplicity in formulas
-  // (the user edits this cell to 0.20, 0.40, or 0.45; we label it clearly)
-  labelCell(ws.getCell("A5"), "Marginal income tax rate (use: 0.20 / 0.40 / 0.45)");
-  ws.getCell("B5").value = 0.40; // default: higher rate
-  pctFmt(ws.getCell("B5"));
+  // Row 5: pension input amounts to every OTHER registered scheme.
+  // The annual allowance is measured across all registered schemes together, and
+  // adjusted income adds back the total pension input amount, not just the NHS
+  // one. Leaving this out was the reason the old adjusted income was understated
+  // for anyone with a second pension.
+  labelCell(ws.getCell("A5"), "Pension input to ALL other registered schemes (SIPP, AVCs, other employer, GBP)");
+  ws.getCell("B5").value = 0;
+  moneyFmt(ws.getCell("B5"));
   copperInput(ws.getCell("B5"));
-  wb.definedNames.add("'Your figures'!$B$5", "In_TaxRate");
+  wb.definedNames.add("'Your figures'!$B$5", "In_OtherPensionInput");
+
+  // Row 6: Tax band as a rate the user edits: 0.20, 0.40 or 0.45
+  labelCell(ws.getCell("A6"), "Marginal income tax rate (use: 0.20 / 0.40 / 0.45)");
+  ws.getCell("B6").value = 0.40; // default: higher rate
+  pctFmt(ws.getCell("B6"));
+  copperInput(ws.getCell("B6"));
+  wb.definedNames.add("'Your figures'!$B$6", "In_TaxRate");
+
+  // Rows 8 to 10: carry-forward, one input per year. Unused allowance is used
+  // earliest year first once the current year's allowance is exhausted
+  // (HMRC PTM055100, read 2026-08-26).
+  navyHeader(ws.getCell("A7"), "Unused annual allowance carried forward (enter one figure per year)");
+  ws.mergeCells("A7:B7");
+
+  labelCell(ws.getCell("A8"), "Unused allowance from 3 tax years ago (used first)");
+  ws.getCell("B8").value = 0;
+  moneyFmt(ws.getCell("B8"));
+  copperInput(ws.getCell("B8"));
+  wb.definedNames.add("'Your figures'!$B$8", "In_CF_Year3");
+
+  labelCell(ws.getCell("A9"), "Unused allowance from 2 tax years ago");
+  ws.getCell("B9").value = 0;
+  moneyFmt(ws.getCell("B9"));
+  copperInput(ws.getCell("B9"));
+  wb.definedNames.add("'Your figures'!$B$9", "In_CF_Year2");
+
+  labelCell(ws.getCell("A10"), "Unused allowance from last tax year (used last)");
+  ws.getCell("B10").value = 0;
+  moneyFmt(ws.getCell("B10"));
+  copperInput(ws.getCell("B10"));
+  wb.definedNames.add("'Your figures'!$B$10", "In_CF_Year1");
 
   // ---- Intermediate calculations ----
 
-  // Row 7: Adjusted income = threshold + pension growth
-  labelCell(ws.getCell("A7"), "Adjusted income (threshold + pension growth)");
-  ws.getCell("B7").value = { formula: "In_ThresholdIncome+In_PensionGrowth" } as ExcelJS.CellFormulaValue;
-  moneyFmt(ws.getCell("B7"));
-  wb.definedNames.add("'Your figures'!$B$7", "AdjustedIncome");
+  // Row 12: total pension input amount across every registered scheme
+  labelCell(ws.getCell("A12"), "Total pension input amount, all schemes (GBP)");
+  ws.getCell("B12").value = { formula: "In_PensionGrowth+In_OtherPensionInput" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B12"));
+  wb.definedNames.add("'Your figures'!$B$12", "TotalPensionInput");
 
-  // Row 8: Is tapered? (threshold > 200000 AND adjusted > 260000)
-  labelCell(ws.getCell("A8"), "Taper applies?");
-  ws.getCell("B8").value = {
+  // Row 13: adjusted income (FA 2004 s.228ZA; HMRC PTM057100)
+  // Adjusted income = net income, plus contributions relieved under net pay or
+  // FA 2004 s.194(1), plus the total pension input amount less the member's own
+  // contributions. Starting from threshold income (which is net income with
+  // relief-at-source contributions already deducted), that build-up collapses to
+  // threshold income plus the TOTAL pension input amount across all schemes.
+  labelCell(ws.getCell("A13"), "Adjusted income (threshold income + total pension input, all schemes)");
+  ws.getCell("B13").value = { formula: "In_ThresholdIncome+TotalPensionInput" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B13"));
+  wb.definedNames.add("'Your figures'!$B$13", "AdjustedIncome");
+
+  // Row 14: Is tapered? (threshold > 200000 AND adjusted > 260000)
+  labelCell(ws.getCell("A14"), "Taper applies?");
+  ws.getCell("B14").value = {
     formula: 'IF(AND(In_ThresholdIncome>THRESHOLD_LIMIT,AdjustedIncome>ADJUSTED_LIMIT),"Yes","No")',
   } as ExcelJS.CellFormulaValue;
-  wb.definedNames.add("'Your figures'!$B$8", "IsTapered");
+  wb.definedNames.add("'Your figures'!$B$14", "IsTapered");
 
-  // Row 9: Reduction = (adjustedIncome - ADJUSTED_LIMIT) / 2 (only if tapered)
-  labelCell(ws.getCell("A9"), "Taper reduction (GBP, 0 if not tapered)");
-  ws.getCell("B9").value = {
+  // Row 15: Reduction = (adjustedIncome - ADJUSTED_LIMIT) / 2 (only if tapered)
+  labelCell(ws.getCell("A15"), "Taper reduction (GBP, 0 if not tapered)");
+  ws.getCell("B15").value = {
     formula: "IF(AND(In_ThresholdIncome>THRESHOLD_LIMIT,AdjustedIncome>ADJUSTED_LIMIT),(AdjustedIncome-ADJUSTED_LIMIT)/2,0)",
   } as ExcelJS.CellFormulaValue;
-  moneyFmt(ws.getCell("B9"));
-  wb.definedNames.add("'Your figures'!$B$9", "TaperReduction");
+  moneyFmt(ws.getCell("B15"));
+  wb.definedNames.add("'Your figures'!$B$15", "TaperReduction");
 
-  // Row 10: Annual allowance = MAX(MIN_ALLOWANCE, STANDARD_ALLOWANCE - reduction)
-  labelCell(ws.getCell("A10"), "Your annual allowance (GBP)");
-  ws.getCell("B10").value = {
+  // Row 16: Annual allowance = MAX(MIN_ALLOWANCE, STANDARD_ALLOWANCE - reduction)
+  labelCell(ws.getCell("A16"), "Your annual allowance this year (GBP)");
+  ws.getCell("B16").value = {
     formula: "MAX(MIN_ALLOWANCE,STANDARD_ALLOWANCE-TaperReduction)",
   } as ExcelJS.CellFormulaValue;
-  moneyFmt(ws.getCell("B10"));
-  ws.getCell("B10").font = { bold: true };
-  ws.getCell("A10").font = { bold: true };
-  wb.definedNames.add("'Your figures'!$B$10", "AnnualAllowance");
+  moneyFmt(ws.getCell("B16"));
+  ws.getCell("B16").font = { bold: true };
+  ws.getCell("A16").font = { bold: true };
+  wb.definedNames.add("'Your figures'!$B$16", "AnnualAllowance");
 
-  // Row 11: Excess = MAX(0, pensionGrowth - annualAllowance)
-  labelCell(ws.getCell("A11"), "Excess over annual allowance (GBP)");
-  ws.getCell("B11").value = {
-    formula: "MAX(0,In_PensionGrowth-AnnualAllowance)",
+  // Row 17: Excess = MAX(0, total pension input - annual allowance)
+  labelCell(ws.getCell("A17"), "Excess over this year's allowance, before carry-forward (GBP)");
+  ws.getCell("B17").value = {
+    formula: "MAX(0,TotalPensionInput-AnnualAllowance)",
   } as ExcelJS.CellFormulaValue;
-  moneyFmt(ws.getCell("B11"));
-  wb.definedNames.add("'Your figures'!$B$11", "Excess");
+  moneyFmt(ws.getCell("B17"));
+  wb.definedNames.add("'Your figures'!$B$17", "Excess");
 
-  // Row 12: Tax charge = excess * tax rate
-  labelCell(ws.getCell("A12"), "Estimated annual allowance tax charge (GBP)");
-  ws.getCell("B12").value = {
-    formula: "Excess*In_TaxRate",
+  // Rows 18 to 20: carry-forward used, earliest year first.
+  labelCell(ws.getCell("A18"), "Carry-forward used from 3 tax years ago (GBP)");
+  ws.getCell("B18").value = { formula: "MIN(In_CF_Year3,Excess)" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B18"));
+  wb.definedNames.add("'Your figures'!$B$18", "CFUsed3");
+
+  labelCell(ws.getCell("A19"), "Carry-forward used from 2 tax years ago (GBP)");
+  ws.getCell("B19").value = { formula: "MIN(In_CF_Year2,MAX(0,Excess-CFUsed3))" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B19"));
+  wb.definedNames.add("'Your figures'!$B$19", "CFUsed2");
+
+  labelCell(ws.getCell("A20"), "Carry-forward used from last tax year (GBP)");
+  ws.getCell("B20").value = { formula: "MIN(In_CF_Year1,MAX(0,Excess-CFUsed3-CFUsed2))" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B20"));
+  wb.definedNames.add("'Your figures'!$B$20", "CFUsed1");
+
+  labelCell(ws.getCell("A21"), "Total carry-forward used (GBP)");
+  ws.getCell("B21").value = { formula: "CFUsed3+CFUsed2+CFUsed1" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B21"));
+  wb.definedNames.add("'Your figures'!$B$21", "CFUsed");
+
+  // Row 22: chargeable excess after carry-forward
+  labelCell(ws.getCell("A22"), "Chargeable excess after carry-forward (GBP)");
+  ws.getCell("B22").value = { formula: "MAX(0,Excess-CFUsed)" } as ExcelJS.CellFormulaValue;
+  moneyFmt(ws.getCell("B22"));
+  ws.getCell("A22").font = { bold: true };
+  ws.getCell("B22").font = { bold: true };
+  wb.definedNames.add("'Your figures'!$B$22", "ChargeableExcess");
+
+  // Row 23: Tax charge = chargeable excess * tax rate
+  labelCell(ws.getCell("A23"), "Estimated annual allowance tax charge (GBP)");
+  ws.getCell("B23").value = {
+    formula: "ChargeableExcess*In_TaxRate",
   } as ExcelJS.CellFormulaValue;
-  moneyFmt(ws.getCell("B12"));
-  ws.getCell("B12").font = { bold: true, color: { argb: NAVY } };
-  ws.getCell("A12").font = { bold: true };
-  wb.definedNames.add("'Your figures'!$B$12", "TaxCharge");
+  moneyFmt(ws.getCell("B23"));
+  ws.getCell("B23").font = { bold: true, color: { argb: NAVY } };
+  ws.getCell("A23").font = { bold: true };
+  wb.definedNames.add("'Your figures'!$B$23", "TaxCharge");
 
-  // Row 13: Effective cost as % of pension growth (only when both > 0)
-  labelCell(ws.getCell("A13"), "Effective cost as % of pension growth (when charge > 0)");
-  ws.getCell("B13").value = {
-    formula: "IF(AND(In_PensionGrowth>0,TaxCharge>0),TaxCharge/In_PensionGrowth,0)",
+  // Row 24: Effective cost as % of total pension input (only when both > 0)
+  labelCell(ws.getCell("A24"), "Effective cost as % of total pension input (when charge > 0)");
+  ws.getCell("B24").value = {
+    formula: "IF(AND(TotalPensionInput>0,TaxCharge>0),TaxCharge/TotalPensionInput,0)",
   } as ExcelJS.CellFormulaValue;
-  pctFmt(ws.getCell("B13"));
+  pctFmt(ws.getCell("B24"));
 
-  // Row 15: Conservation check
-  labelCell(ws.getCell("A15"), "Check: excess + allowance = pension growth");
-  ws.getCell("B15").value = {
-    formula: 'IF(ABS(Excess+AnnualAllowance-In_PensionGrowth)<0.01,"OK","ERROR")',
+  // Rows 25 and 26: status lines. Wording is imported from the compute lib so
+  // the workbook and the browser calculator cannot drift apart.
+  labelCell(ws.getCell("A25"), "Carry-forward status");
+  ws.getCell("B25").value = {
+    formula:
+      "IF(In_CF_Year1+In_CF_Year2+In_CF_Year3=0," +
+      `"${CARRY_FORWARD_NOT_ENTERED}","${CARRY_FORWARD_ENTERED}")`,
+  } as ExcelJS.CellFormulaValue;
+  ws.getCell("B25").font = { bold: true, color: { argb: COPPER } };
+
+  labelCell(ws.getCell("A26"), "Scheme coverage status");
+  ws.getCell("B26").value = {
+    formula: `IF(In_OtherPensionInput=0,"${NHS_ONLY_ASSUMED}","${ALL_SCHEMES_ENTERED}")`,
+  } as ExcelJS.CellFormulaValue;
+  ws.getCell("B26").font = { bold: true, color: { argb: COPPER } };
+
+  // Row 27: Conservation check
+  labelCell(ws.getCell("A27"), "Check: excess + allowance = total pension input");
+  ws.getCell("B27").value = {
+    formula: 'IF(ABS(Excess+AnnualAllowance-MAX(TotalPensionInput,AnnualAllowance))<0.01,"OK","ERROR")',
   } as ExcelJS.CellFormulaValue;
 
   // ---- Results panel (right side D/E columns) ----
@@ -216,13 +311,17 @@ export function build(): ExcelJS.Workbook {
 
   const results: Array<{ row: number; label: string; formula: string; strong?: boolean }> = [
     { row: 3, label: "Threshold income", formula: "In_ThresholdIncome" },
-    { row: 4, label: "Pension input amount (growth)", formula: "In_PensionGrowth" },
-    { row: 5, label: "Adjusted income", formula: "AdjustedIncome" },
-    { row: 6, label: "Taper applies?", formula: "IsTapered" },
-    { row: 7, label: "Annual allowance", formula: "AnnualAllowance", strong: true },
-    { row: 8, label: "Excess over allowance", formula: "Excess" },
-    { row: 10, label: "Annual allowance charge", formula: "TaxCharge", strong: true },
-    { row: 11, label: "Effective cost %", formula: "TaxCharge/MAX(In_PensionGrowth,1)*100" },
+    { row: 4, label: "NHS pension input amount", formula: "In_PensionGrowth" },
+    { row: 5, label: "Other schemes pension input", formula: "In_OtherPensionInput" },
+    { row: 6, label: "Total pension input amount", formula: "TotalPensionInput", strong: true },
+    { row: 7, label: "Adjusted income", formula: "AdjustedIncome" },
+    { row: 8, label: "Taper applies?", formula: "IsTapered" },
+    { row: 9, label: "Annual allowance", formula: "AnnualAllowance", strong: true },
+    { row: 10, label: "Excess before carry-forward", formula: "Excess" },
+    { row: 11, label: "Carry-forward used", formula: "CFUsed" },
+    { row: 12, label: "Chargeable excess", formula: "ChargeableExcess" },
+    { row: 14, label: "Annual allowance charge", formula: "TaxCharge", strong: true },
+    { row: 15, label: "Effective cost %", formula: "TaxCharge/MAX(TotalPensionInput,1)*100" },
   ];
 
   for (const r of results) {
@@ -255,24 +354,30 @@ export function build(): ExcelJS.Workbook {
     ["Medical Accountants UK", false],
     ["", false],
     ["This model estimates your NHS pension annual allowance position and any annual", false],
-    ["allowance charge, including the taper, for 2025/26.", false],
+    ["allowance charge, including the taper and three years of carry-forward, for 2026/27.", false],
     ["", false],
     ["How to use:", true],
     ["1. Go to the 'Your figures' tab.", false],
-    ["2. Edit the highlighted cells: threshold income, pension growth, tax rate.", false],
+    ["2. Edit the highlighted cells: threshold income, NHS pension input amount, pension", false],
+    ["   input to any other scheme, your tax rate, and unused allowance for each of the", false],
+    ["   previous three tax years.", false],
     ["3. Every figure recalculates automatically.", false],
     ["", false],
     ["Tax rate options: 0.20 (basic 20%), 0.40 (higher 40%), 0.45 (additional 45%).", false],
     ["", false],
-    ["The 'Rates' tab holds the locked 2025/26 rates. Do not edit it.", false],
+    ["Carry-forward matters more than anything else on the sheet.", true],
+    ["If you leave the three carry-forward cells at zero, the charge shown is the charge", false],
+    ["BEFORE carry-forward. Unused allowance from the previous three tax years can remove", false],
+    ["it entirely. The 'Carry-forward status' row says so while those cells are empty.", false],
+    ["", false],
+    ["The 'Rates' tab holds the locked 2026/27 rates. Do not edit it.", false],
     ["See 'Notes' for assumptions and limitations.", false],
     ["", false],
     ["The taper applies only when threshold income is over 200,000 AND adjusted income", false],
     ["is over 260,000. The minimum tapered allowance is 10,000.", false],
     ["", false],
-    ["Carry-forward from the previous three years can remove a charge entirely and is", false],
-    ["not modelled here. Scheme Pays is available where the charge is over 2,000 and", false],
-    ["NHS scheme growth alone exceeds 60,000. Speak to a specialist.", false],
+    ["Scheme Pays is available where the charge is over 2,000 and NHS scheme growth alone", false],
+    ["exceeds 60,000. Speak to a specialist.", false],
   ];
   startLines.forEach(([text, bold], i) => {
     const c = start.getCell(`A${i + 1}`);
@@ -286,9 +391,10 @@ export function build(): ExcelJS.Workbook {
   const noteLines = [
     "Assumptions and limitations",
     "",
-    "2025/26 rates (restored 2023): standard annual allowance GBP60,000;",
-    "minimum tapered allowance GBP10,000; threshold income trigger GBP200,000;",
-    "adjusted income trigger GBP260,000.",
+    "2026/27 figures, verified 26 August 2026 at gov.uk pension schemes rates and allowances,",
+    "which lists identical values under 2026 to 2027 and 2025 to 2026: standard annual",
+    "allowance GBP60,000; minimum tapered allowance GBP10,000; threshold income trigger",
+    "GBP200,000; adjusted income trigger GBP260,000.",
     "",
     "Taper: where threshold income is over GBP200,000 AND adjusted income is over GBP260,000,",
     "the allowance reduces by GBP1 for every GBP2 of excess adjusted income, down to GBP10,000.",
@@ -296,20 +402,36 @@ export function build(): ExcelJS.Workbook {
     "Pension input amount: this model uses the GROWTH in your pension benefits (the pension",
     "input amount), not the contributions you paid. These differ for defined-benefit schemes.",
     "",
-    "Carry-forward: unused annual allowance from the previous three tax years can offset a",
-    "current-year excess. Carry-forward is not modelled here.",
+    "Adjusted income: built as threshold income plus the TOTAL pension input amount across",
+    "every registered scheme you are in, not just the NHS one. That follows the statutory",
+    "definition in Finance Act 2004 s.228ZA and HMRC PTM057100: adjusted income starts from",
+    "net income, adds back contributions relieved under a net pay arrangement, and adds the",
+    "pension input amount less your own contributions. Starting from threshold income, which",
+    "already has relief-at-source contributions deducted, that build-up comes to threshold",
+    "income plus total pension input. Enter every scheme in the 'other schemes' cell or the",
+    "taper will read lower than it should.",
+    "",
+    "One case this does not catch: salary sacrifice arrangements entered into on or after",
+    "9 July 2015 are added back to threshold income and are also inside the pension input",
+    "amount, so adjusted income here reads high for them. Erring high means the model may",
+    "show more taper than applies, not less.",
+    "",
+    "Carry-forward: unused annual allowance from the previous three tax years is modelled,",
+    "one input cell per year. The current year's allowance is used first, then the earliest",
+    "of the three carry-forward years (HMRC PTM055100). You must have been a member of a",
+    "registered pension scheme in each year you carry forward from. Take the unused figures",
+    "from your NHSBSA pension savings statements rather than estimating them.",
     "",
     "Scheme Pays: where the annual allowance charge exceeds GBP2,000 and NHS scheme growth",
     "alone exceeds GBP60,000, Mandatory Scheme Pays lets the scheme settle the charge",
     "in exchange for a permanent pension reduction. Election deadline: 31 July in the",
-    "tax year after the charge (2025/26 charge: 31 July 2027).",
+    "second tax year after the charge (2026/27 charge: 31 July 2028). The Scheme Pays test",
+    "looks at the NHS scheme's own input amount, which is why it stays on the NHS cell.",
     "",
-    "CT 25% flat is used in the incorporation model (see incorporation-model.xlsx Notes).",
-    "This model is for NHS pension only.",
-    "",
-    "This is a directional model. Your actual position depends on carry-forward,",
-    "Scheme Pays eligibility, other income and pension inputs from non-NHS schemes.",
-    "Speak to a specialist for your exact position.",
+    "This is a directional model. Your actual position still depends on the accuracy of the",
+    "figures you enter, Scheme Pays eligibility, the money purchase annual allowance if you",
+    "have flexibly accessed a defined contribution pot, and revised savings statements under",
+    "the McCloud remedy. Speak to a specialist for your exact position.",
   ];
   noteLines.forEach((text, i) => {
     const c = notes.getCell(`A${i + 1}`);

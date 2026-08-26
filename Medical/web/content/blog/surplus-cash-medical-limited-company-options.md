@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/person-signing-a-contract-5387258/"
 category: "Incorporation & Company Structures"
 metaTitle: "Surplus Cash in a Medical Limited Company: Options"
-metaDescription: "Surplus cash options for a consultant's company, from employer pension contributions to investing in-company, and the BADR trading-status trap."
+metaDescription: "Five routes for surplus cash in a consultant's company on £100,000 of profit: employer pension, dividends, investing in-company, an FIC, and winding up."
 altText: "Consultant reviewing company accounts and investment options with an adviser at a desk"
 h1: "What To Do With Surplus Cash in a Medical or Consultant Limited Company"
 keyTakeaways:

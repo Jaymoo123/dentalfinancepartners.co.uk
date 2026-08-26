@@ -36,7 +36,7 @@ faqs:
 
 <p>This article explains what draught relief is, which products and containers qualify, the current duty rates, how to apply them to a real pint-pricing calculation, and what sits outside the relief entirely.</p>
 
-<p><strong>Note on rates:</strong> the figures in this article reflect the rates locked in our house positions, verified against <a href="https://www.gov.uk/guidance/alcohol-duty-rates">GOV.UK Alcohol duty rates</a> on 2026-07-12. Alcohol duty rates are set at each Autumn Budget and can change annually. Always verify the current rates against the HMRC page before finalising cost models.</p>
+<p><strong>Note on rates:</strong> the figures in this article were verified against <a href="https://www.gov.uk/guidance/alcohol-duty-rates">GOV.UK Alcohol duty rates</a> on 2026-07-12. Alcohol duty rates are set at each Autumn Budget and can change annually. Always verify the current rates against the HMRC page before finalising cost models.</p>
 
 <h2>What draught relief is (and the 20-litre rule)</h2>
 

@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/couple-looking-at-documents-in-reception-of-medical-center-7108325/"
 category: "GP Practice Management"
 metaTitle: "GMS Funding Explained: Global Sum & Carr-Hill Formula"
-metaDescription: "How an NHS GP practice is paid: the Global Sum per weighted patient, the Carr-Hill formula, the Statement of Financial Entitlements, and GMS, PMS and APMS."
+metaDescription: "How an NHS GP practice is paid: the Global Sum, Carr-Hill weighting, the Statement of Financial Entitlements, and how that money reaches a partner."
 altText: "GP practice manager reviewing NHS Global Sum funding statements at a desk"
 h1: "How GMS Practice Funding Works: The Global Sum, the Carr-Hill Formula and Weighted Patients"
 howtoSteps:
@@ -29,7 +29,7 @@ howtoSteps:
     text: "The Global Sum lands in the practice as trading income; after expenses the remaining profit is shared between partners, who are taxed on their profit share, not their drawings."
 keyTakeaways:
 - "The Global Sum is calculated as a national price per weighted patient multiplied by the practice's weighted list size, and it is paid monthly by the commissioner."
-- "For 2025/26 the Global Sum was uplifted to around £123 per weighted patient, but that figure is uplifted annually in the Statement of Financial Entitlements and changes every April."
+- "For 2026/27 the Global Sum is £130.07 per weighted patient, set in the Statement of Financial Entitlements Directions 2026, with a London Adjustment of £2.18 per registered patient inside the Greater London Authority area."
 - "The Carr-Hill formula weights the raw list across six factors: age and sex, additional needs, list turnover, a nursing and residential home factor, rurality and geography, and a staff market-forces adjustment."
 - "The weighted list is refreshed on a quarterly list-cleaning cycle, so a growing practice is briefly paid on a stale lower figure and a shrinking one on a higher figure, and neither is an error."
 - "A limited company cannot hold a GMS or PMS contract and company income is not NHS-pensionable, so dividends build no NHS pension at all."
@@ -47,7 +47,7 @@ faqs:
   - question: "Why are two GP practices with the same list size funded differently?"
     answer: "Because the Global Sum is paid on weighted patients, not raw headcount. Two practices can each have, say, 9,000 registered patients, but if one serves an older, higher-morbidity, high-turnover population it will weight up and receive more, while a young, stable, low-need list will weight down and receive less. The Carr-Hill formula is what produces that difference, so a like-for-like headcount comparison between practices can be misleading."
   - question: "How much is the Global Sum per patient?"
-    answer: "There is no permanent figure. The Global Sum per weighted patient is uplifted annually as part of the contract settlement and set in the Statement of Financial Entitlements. For 2025/26 it was uplifted to around £123 per weighted patient (the figure rose from the prior year), but that is illustrative and date-tagged, not a fixed fact, and you should always confirm the current figure in the latest Statement of Financial Entitlements."
+    answer: "For 2026/27 it is £130.07 per weighted patient. That figure is set at paragraph 3(4) of the General Medical Services Statement of Financial Entitlements Directions 2026, which came into force on 1 April 2026. A London Adjustment of £2.18 is added for each registered patient whose postcode falls inside the Greater London Authority area. The amount is uplifted annually as part of the contract settlement, so it is date-tagged rather than permanent, and the current Directions are always the figure to check."
   - question: "What is the Statement of Financial Entitlements?"
     answer: "The Statement of Financial Entitlements (SFE) is the Directions document that sets out the detailed payment entitlements for a GMS practice, including the Global Sum, QOF and enhanced payments. It is reissued and amended over time, and the per-patient and per-point values are uplifted in line with the annual contract settlement. It is the source of truth for the current figures, which is why core funding moves each April."
   - question: "What is the difference between GMS, PMS and APMS contracts?"
@@ -109,7 +109,9 @@ faqs:
 
 <p>The <strong>Global Sum</strong> is the main core funding payment. It is designed to cover the essential and additional services a practice provides to its registered patients. Mechanically, it is calculated as a national price per weighted patient multiplied by the practice's weighted list size, and it is paid <strong>monthly</strong> by the commissioner.</p>
 
-<p>The per-weighted-patient amount is <strong>uplifted annually</strong> as part of the contract settlement and is set in the Statement of Financial Entitlements. To illustrate only, for 2025/26 it was uplifted to around £123 per weighted patient (the figure rose from the prior year). Treat that purely as a date-tagged illustration, not a permanent fact: it changes every year, and you should always confirm the current figure in the latest Statement of Financial Entitlements rather than carrying forward last year's number.</p>
+<p>For <strong>2026/27 the figure is £130.07 per weighted patient</strong>. That is not a commentator's estimate: it is stated at paragraph 3(4) of the <a href="https://assets.publishing.service.gov.uk/media/69cbe5032d120d9d5ec0f352/general-medical-services-statement-of-financial-entitlements-directions-2026.pdf" rel="nofollow">General Medical Services Statement of Financial Entitlements Directions 2026</a>, which came into force on 1 April 2026. The same paragraph adds a <strong>London Adjustment of £2.18</strong> for every registered patient whose postcode falls inside the Greater London Authority area, so an inner-city London practice is funded slightly above the national rate before any weighting is applied.</p>
+
+<p>The per-weighted-patient amount is <strong>uplifted annually</strong> as part of the contract settlement. Treat £130.07 as date-tagged to 2026/27 rather than permanent: it moves every April, and the current Directions are always the figure to confirm against rather than carrying forward last year's number.</p>
 
 <h3>Registered list versus weighted list</h3>
 

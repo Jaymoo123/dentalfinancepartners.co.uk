@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-report-33175667/"
 category: "NHS Pension Planning"
 metaTitle: "McCloud Judgement and NHS Pension Remedy: Doctor's Guide"
-metaDescription: "The McCloud judgement rolled your 2015 to 2022 NHS pension back to the legacy scheme. The two statements, the retirement choice and the tax deadlines, for doctors."
+metaDescription: "The McCloud judgement rolled your 2015 to 2022 NHS pension into the legacy scheme. The two statements, the retirement choice and tax deadlines for doctors."
 altText: "Doctor reviewing an NHS pension remediable service statement at a desk"
 h1: "The McCloud Judgement and the McCloud Remedy: What They Mean for Your NHS Pension"
 keyTakeaways:

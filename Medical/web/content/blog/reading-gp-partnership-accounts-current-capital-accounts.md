@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/a-man-using-a-calculator-8297126/"
 category: "GP Tax & Accounts"
-metaTitle: "How to Read GP Partnership Accounts: A Partner's Guide"
-metaDescription: "Make sense of your GP partnership accounts: the current account, the capital account, drawings, reserves, the profit and loss and the balance sheet."
+metaTitle: "GP Partnership Accounts: Current vs Capital Account"
+metaDescription: "The two partner accounts in a set of GP practice accounts and why they differ: a £120,000 profit share with £105,000 of drawings leaves £32,000 undrawn."
 altText: "GP partner reading a bound set of partnership accounts showing current and capital accounts"
 h1: "How to Read GP Partnership Accounts: Current Accounts, Capital Accounts and Drawings"
 keyTakeaways:

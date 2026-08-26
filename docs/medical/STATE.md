@@ -113,6 +113,27 @@ The 2026-07-17 read ("~11/117 indexed", 68.8 impressions/day) is superseded by t
 named in this doc were never closed out in writing and are treated as lapsed; the 2026-08-26
 diagnosis replaces them.
 
+**FROZEN-SET DEFINITION, CORRECTED 2026-08-26. Binding estate-wide, and the old form is a live trap.**
+The armed set is **`monitor_until > now()`, with NO status predicate.** Every query in this repo and in
+the session that produced this correction used `status = 'active'` (or `lower(status)='active'`), which
+SILENTLY EXCUSES rows at status `'flagged'` that still have a live measurement window. On Medical that
+understated the frozen set by three pages: the true count was 19, not the 16 that the dossier, the batch-1
+packs, the SERP meta pass and this doc all reported.
+
+`'flagged'` does NOT mean cleared. It is written in exactly one place (`detectors.py:1400`) and nothing
+resets it: the regression detector fired DURING the window and stamped the row so the weekly job would not
+re-mail the same finding. It is a de-duplication marker on an OPEN regression, so a flagged row is arguably
+MORE sensitive than an active one, not less.
+
+Consequence on Medical, recorded rather than hidden: two flagged pages took an image-only frontmatter change
+(no text touched, no measurable effect) and the third, the homepage, stored under the slug `__home` with a
+window to 2026-10-06, was fully rewritten by the planned corepage pass. That window is knowingly re-baselined.
+The homepage was invisible to every exclusion list precisely because of this predicate plus its non-obvious slug.
+
+Derive the armed set with:
+`select slug, status, monitor_until from monitored_pages where site_key='<site>' and monitor_until > now();`
+and treat every row it returns as frozen, whatever the status says.
+
 ## Backlog raised during batch 1 (2026-08-26), not actioned mid-batch
 
 1. **The calculator renderer drops `workedExamples[]` entirely.** `Medical/web/src/app/calculators/[slug]/page.tsx`
@@ -140,12 +161,30 @@ diagnosis replaces them.
    `GetPageQueryStats` named-query level, 261 against 129 on the same page). Both are true and they are
    never comparable to each other. The REWRITE_PROGRAM §9.2 equity grade test is written on
    "impressions" without naming the endpoint. Name it before the next grading run or grades drift.
-7. **`medical-guides/[slug]/page.tsx` `renderBody()` injects a literal `<strong>` string into a React text
-   node** for any body line matching `^[A-Z0-9/]+ (section|trader|company|employees?):`, so the markup renders
+7. **~~Five guides render raw markup~~ CORRECTED 2026-08-26: the defect is REAL but currently UNREACHABLE, and
+   no guide renders broken today.** Verified by building the site and grepping all six built guide HTML files for
+   escaped markup: zero hits, and running the renderer logic over the live guide data matched 0 lines. The pattern's
+   character class is uppercase-only (`[A-Z0-9/]+`), so "Sole trader:", "The 1995 section formula" and similar never
+   matched; "1995 section:" did, which is why the annual allowance guide broke, and its batch-1 restructure removed
+   the only line in the corpus that could hit it. The earlier claim here that five other guides still carry it came
+   from a writer's report and was not re-derived. Fixed anyway at the root (`splitLabelledLine` in
+   `Medical/web/src/lib/markdown-utils.ts` returns the label as DATA so the template renders a real element), because
+   any future "NHS employees:" line would silently re-arm it. Test left behind walks the live corpus.
+   ORIGINAL DESCRIPTION, for the record: `medical-guides/[slug]/page.tsx` `renderBody()` injected a literal `<strong>`
+   string into a React text node** for any body line matching `^[A-Z0-9/]+ (section|trader|company|employees?):`, so the markup renders
    as visible text rather than as bold. The live annual-allowance guide was hitting this on its "1995 section:"
    lines. The batch-1 rewrite sidestepped it by restructuring those lines, so that one guide is clean, but the
    bug remains for the other five guides and it is a rendering defect visible to readers. Fix the class.
-8. **`GenericTool` has no table field and the calculator route renders only one editable H2.** Consequence:
+8. **CLOSED 2026-08-26: the calculator template silently dropped `workedExamples[]`, and it was reader-visible.**
+   Confirmed from the built DOM, not the code: `gp-partner-drawings-planner.html` contained none of its authored
+   worked example and none of its six computed figures, and the page had zero heading layer because FAQ questions
+   rendered as bare `<dt>`. Both fixed in Medical's calculator template (the `workedExamples` block was lifted from
+   the existing wills-probate implementation; `<dt>` now wraps an `<h3>`). Estate check: construction-cis,
+   divorce-finances, wills-probate and Property already rendered it; Medical was the only site with populated configs
+   and no renderer. Eleven other sites lack the renderer but populate nothing, so they carry a latent gap and no
+   defect. `GenericTool` still has no table field; DECIDED not to add one, since worked examples now carry what was
+   being forced into prose and a table field means a type change plus five templates plus config migration.
+   Dentists, digital-agency, generalist and Solicitors share the `<dt>`-without-heading weakness: recorded, not actioned. Consequence:
    year-tagged allowance-history vocabulary cannot be placed on a calculator page without becoming a keyword
    dump, and the language spec's heading rules are structurally unreachable there. A `table` field on the shared
    type would close both. Deliberately not attempted mid-batch.

@@ -12,7 +12,7 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/a-woman-writing-on-a-book-while-holding-a-calculator-8297034/"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Liverpool"
+metaTitle: "GP and Hospital Consultant Accountant, Liverpool"
 metaDescription: "Liverpool GP accountant for NHS partners, locums and consultants. NHS pension allowance, profit-share returns and private-practice tax across Merseyside."
 altText: "Liverpool medical professionals reviewing financial documents with specialist GP accountant"
 h1: "GP Accountant in Liverpool: Specialist Medical Accounting Across Merseyside"

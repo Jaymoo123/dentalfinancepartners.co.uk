@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/doctor-at-her-office-7108407/"
 category: "Incorporation & Company Structures"
-metaTitle: "Private Practice Incorporation: Doctor's Decision Guide 2026/27"
-metaDescription: "Should a doctor incorporate private practice? Sole trader vs limited company compared on 2026/27 numbers, with worked examples at £40k, £80k and £150k private income."
+metaTitle: "Should a Doctor Incorporate Private Practice? 2026/27"
+metaDescription: "Sole trader or limited company for private practice on 2026/27 numbers: rarely worth it at £40k, building from around £80k, plus the NHS pension trade-off."
 altText: "Hospital consultant reviewing private practice incorporation figures comparing sole trader and limited company at a desk"
 h1: "Private Practice Incorporation: Complete Guide for Doctors and Consultants"
 keyTakeaways:

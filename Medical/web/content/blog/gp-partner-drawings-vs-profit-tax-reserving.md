@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/calculator-on-top-of-the-paper-7580854/"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partner Drawings vs Profit: How to Reserve for Tax"
-metaDescription: "Why a GP partner is taxed on profit share, not drawings, the cash-flow gap it creates, and how to reserve for tax, payments on account and superannuation."
+metaDescription: "GP partners are taxed on profit share, not drawings. A bill can reach roughly 150% of one year's tax once payments on account start, so reserve monthly."
 altText: "GP partner setting aside a tax reserve from monthly drawings against an annual profit share"
 h1: "Drawings Versus Profit for a GP Partner: Why They Differ and How to Reserve for Tax"
 keyTakeaways:

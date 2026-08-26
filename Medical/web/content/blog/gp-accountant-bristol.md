@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/an-accountant-using-a-calculator-8297351/"
 category: "GP Accountant Services"
-metaTitle: "GP Accountant Bristol"
-metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, partnership accounts and locum tax. Free initial chat."
+metaTitle: "GP Accountant Bristol: Partners, Locums and Consultants"
+metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, partnership accounts, locum IR35 and private work."
 altText: "Bristol GP practice accountant meeting with medical professionals to discuss tax planning and NHS pension annual allowance"
 h1: "GP Accountant in Bristol: Specialist Tax and Accounting for Doctors"
 keyTakeaways:

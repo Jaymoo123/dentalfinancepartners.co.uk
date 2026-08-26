@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/a-smartphone-with-a-calculator-app-over-a-tax-document-8962445/"
 category: "GP Accountant Services"
-metaTitle: "Self Assessment for Doctors 2026/27"
-metaDescription: "Self assessment for doctors and GPs in 2026/27: who must file, the 31 January deadline, payments on account, Class 4 NIC and Making Tax Digital."
+metaTitle: "Self Assessment for Doctors: Deadlines and First Tax Bill"
+metaDescription: "Doctors and GPs filing for 2026/27: who has to file, the 31 January deadline, and why a first bill can land at roughly 150% of one year's tax."
 altText: "UK medical professional reviewing self assessment tax return documents"
 h1: "Self Assessment for Doctors and GPs: Who Files, Deadlines and Payments on Account"
 keyTakeaways:

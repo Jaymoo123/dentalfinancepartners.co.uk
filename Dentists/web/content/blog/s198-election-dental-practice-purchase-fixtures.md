@@ -48,7 +48,7 @@ faqs:
 
 <h2>The election most practice buyers never hear about until it is too late</h2>
 
-<p>Buy a practice and you buy a building full of plant that has become part of the structure: integral features and plumbed-in surgery kit. The capital allowances on that plant sit in the seller's pool. They do not transfer to you by default. A <strong>joint election under CAA 2001 section 198</strong> fixes the value attributed to those fixtures, and that fixed value becomes your qualifying expenditure. Without it, and without meeting the conditions below, the buyer's fixtures claim can disappear. This is house position §7 territory: the election and its deadline are among the most common preventable losses in a practice purchase.</p>
+<p>Buy a practice and you buy a building full of plant that has become part of the structure: integral features and plumbed-in surgery kit. The capital allowances on that plant sit in the seller's pool. They do not transfer to you by default. A <strong>joint election under CAA 2001 section 198</strong> fixes the value attributed to those fixtures, and that fixed value becomes your qualifying expenditure. Without it, and without meeting the conditions below, the buyer's fixtures claim can disappear. The election and its deadline are among the most common preventable losses in a practice purchase.</p>
 
 <h2>What a fixture is for section 198, and what it is not</h2>
 
@@ -120,15 +120,15 @@ faqs:
 
 <p>A practice sells in the 2026/27 tax year. The fixtures originally cost the seller £120,000; after years of allowances, the seller's pool value for them is £20,000. The seller proposes electing £1 (the legal minimum) to avoid any balancing charge. The buyer wants to elect the market value, say £90,000, to claim allowances on £90,000.</p>
 
-<p>If they elect £90,000, the seller faces a balancing charge on roughly £70,000 (disposal value £90,000 less pool value £20,000), increasing the seller's tax bill. If they elect £1, the buyer gets almost nothing to claim. The parties typically land on a negotiated figure between the two, often near the £20,000 tax written-down value or a price-adjusted compromise that shares the difference, sometimes traded off against a movement in the headline price. (Tagged 2026/27, house position §7.)</p>
+<p>If they elect £90,000, the seller faces a balancing charge on roughly £70,000 (disposal value £90,000 less pool value £20,000), increasing the seller's tax bill. If they elect £1, the buyer gets almost nothing to claim. The parties typically land on a negotiated figure between the two, often near the £20,000 tax written-down value or a price-adjusted compromise that shares the difference, sometimes traded off against a movement in the headline price. (Figures tagged 2026/27.)</p>
 
 <h3>Example B: the cost of missing the deadline</h3>
 
-<p>A buyer completes in May 2026, never makes the election, and discovers the omission in late 2028. The 2-year window from acquisition closed in May 2028. No election can now be made, and the fixtures claim is lost. If the fixtures element was around £80,000, the relief forfeited, whether it would have come through the AIA or the 6%/14% pools, is real money, permanently gone and not merely deferred to a later year. (Tagged acquisition May 2026, deadline May 2028, house position §7.)</p>
+<p>A buyer completes in May 2026, never makes the election, and discovers the omission in late 2028. The 2-year window from acquisition closed in May 2028. No election can now be made, and the fixtures claim is lost. If the fixtures element was around £80,000, the relief forfeited, whether it would have come through the AIA or the 6%/14% pools, is real money, permanently gone and not merely deferred to a later year. (Figures tagged acquisition May 2026, deadline May 2028.)</p>
 
 <h3>Example C: the pooling trap</h3>
 
-<p>A buyer agrees a £70,000 fixtures election, only to learn at completion that the seller-of-the-seller never pooled the fixtures. The chain is broken: the current seller has no pooled qualifying expenditure to transfer, so there is nothing to elect over, and the £70,000 figure is worthless. The lesson is that due diligence on the seller's pooling history matters before exchange, not after, because by completion it is too late to fix a broken chain. (Tagged 2026/27, house position §7.)</p>
+<p>A buyer agrees a £70,000 fixtures election, only to learn at completion that the seller-of-the-seller never pooled the fixtures. The chain is broken: the current seller has no pooled qualifying expenditure to transfer, so there is nothing to elect over, and the £70,000 figure is worthless. The lesson is that due diligence on the seller's pooling history matters before exchange, not after, because by completion it is too late to fix a broken chain. (Figures tagged 2026/27.)</p>
 
 <h2>Common errors</h2>
 

@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/elegant-man-signing-documents-8730998/"
 category: "Incorporation & Company Structures"
 metaTitle: "Salary vs Dividend: Medical Company 2026/27"
-metaDescription: "The 2026/27 salary and dividend split for a consultant's private-practice company: the optimal director's salary, the new 35.75% dividend rate and the single-director trap."
+metaDescription: "The 2026/27 split for a consultant's company: why salary usually sits at £5,000, what the 35.75% upper dividend rate costs, and the sole-director NIC trap."
 altText: "Consultant reviewing salary and dividend extraction figures for a private medical limited company"
 h1: "Salary vs Dividend for a Medical or Consultant Limited Company (2026/27)"
 keyTakeaways:

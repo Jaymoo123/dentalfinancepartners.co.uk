@@ -6,6 +6,7 @@ import { siteContainerLg, sectionY, btnPrimary, focusRing } from "@/components/u
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { MEDICAL_GUIDES, getGuideBySlug, getAllGuideSlugs } from "@/lib/medical-guides-data";
+import { splitLabelledLine } from "@/lib/markdown-utils";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -45,12 +46,18 @@ function renderBody(text: string) {
       const lines = para.split("\n").filter(Boolean);
       return (
         <ul key={i} className="mt-4 space-y-3 pl-0 list-none">
-          {lines.map((line, j) => (
-            <li key={j} className="flex gap-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-              <span className="mt-0.5 text-[var(--copper)] shrink-0">›</span>
-              <span>{line.replace(/^\d+\.\s/, "").replace(/^[A-Z0-9/]+ (section|trader|company|employees?):\s/, (m) => `<strong>${m.replace(/:$/, "")}</strong>: `)}</span>
-            </li>
-          ))}
+          {lines.map((line, j) => {
+            const { label, rest } = splitLabelledLine(line);
+            return (
+              <li key={j} className="flex gap-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
+                <span className="mt-0.5 text-[var(--copper)] shrink-0">›</span>
+                <span>
+                  {label && <strong>{label}</strong>}
+                  {label ? `: ${rest}` : rest}
+                </span>
+              </li>
+            );
+          })}
         </ul>
       );
     }

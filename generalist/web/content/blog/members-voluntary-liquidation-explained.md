@@ -116,7 +116,7 @@ faqs:
 
 <h2>Members Voluntary Liquidation Tax Treatment</h2>
 
-<p>The central advantage of an MVL is that distributions are capital, not income. Under <a href="https://www.legislation.gov.uk/ukpga/1992/12" target="_blank" rel="noopener noreferrer">TCGA 1992</a>, each distribution is treated as proceeds from a deemed disposal of the shareholder's shares. The gain is the distribution received minus the base cost of those shares (typically the amount originally subscribed for them, often just £1 for a standard company). That gain is subject to CGT at current rates (§5 of the house positions):</p>
+<p>The central advantage of an MVL is that distributions are capital, not income. Under <a href="https://www.legislation.gov.uk/ukpga/1992/12" target="_blank" rel="noopener noreferrer">TCGA 1992</a>, each distribution is treated as proceeds from a deemed disposal of the shareholder's shares. The gain is the distribution received minus the base cost of those shares (typically the amount originally subscribed for them, often just £1 for a standard company). That gain is subject to CGT at current rates:</p>
 
 <ul>
 <li>18% on gains within the basic-rate band, from 30 October 2024</li>

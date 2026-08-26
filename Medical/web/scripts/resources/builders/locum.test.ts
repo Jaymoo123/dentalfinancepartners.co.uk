@@ -28,20 +28,22 @@ describe("locum tax compute lib (golden)", () => {
       pensionContributions: 10000,
       studentLoanPlan: "none",
     });
+    // profit = 80000-5000 = 75000 (the Class 4 base)
     // netIncome = 80000-5000-10000 = 65000
     // taxableIncome = 65000-12570 = 52430
     // basic = min(52430, 37700)*0.2 = 7540
-    // higher: 52430-37700=14730 < 74870 -> 14730*0.4 = 5892; incomeTax = 13432
-    // NI: band1 = min(52430,37700)=37700 -> 37700*0.06=2262
-    //     above: (65000-50270)*0.02 = 14730*0.02 = 294.6; NI = 2556.6
-    // totalDeductions = 13432+2556.6 = 15988.6
-    // netTakeHome = 65000-15988.6 = 49011.4
+    // higher: 52430-37700=14730 -> 14730*0.4 = 5892; incomeTax = 13432
+    // Class 4 on PROFIT: 37700*0.06=2262 + (75000-50270)*0.02=494.6 -> 2756.6
+    //   (pre-fix this asserted 2556.6, computed on 65000 after the pension)
+    // totalDeductions = 13432+2756.6 = 16188.6
+    // netTakeHome = 65000-16188.6 = 48811.4
+    expect(result.profit).toBe(75000);
     expect(result.netIncome).toBe(65000);
     expect(result.incomeTax).toBeCloseTo(13432, 2);
-    expect(result.nationalInsurance).toBeCloseTo(2556.6, 2);
+    expect(result.nationalInsurance).toBeCloseTo(2756.6, 2);
     expect(result.studentLoanRepayment).toBe(0);
-    expect(result.totalDeductions).toBeCloseTo(15988.6, 2);
-    expect(result.netTakeHome).toBeCloseTo(49011.4, 1);
+    expect(result.totalDeductions).toBeCloseTo(16188.6, 2);
+    expect(result.netTakeHome).toBeCloseTo(48811.4, 1);
   });
 
   it("LOC-B: 120k income, 10k expenses, no pension, Plan 2 student loan", () => {
@@ -57,13 +59,15 @@ describe("locum tax compute lib (golden)", () => {
     // additionalTaxable = 125140-7570 = 117570
     // higher = min(102430-37700, 117570-37700)=64730*0.4 = 25892; incomeTax = 33432
     // NI: band1 = 37700*0.06=2262; above = (110000-50270)*0.02=59730*0.02=1194.6; NI=3456.6
-    // student loan plan2 threshold=28470: (110000-28470)*0.09=81530*0.09=7337.7
+    // student loan plan2 threshold=29385 (2026/27): (110000-29385)*0.09=80615*0.09=7255.35
     // (pre-fix asserted incomeTax £31,432, using untapered PA + fixed £74,870 band)
+    // No pension here, so profit = netIncome = 110000 and Class 4 is unchanged.
+    expect(result.profit).toBe(110000);
     expect(result.netIncome).toBe(110000);
     expect(result.incomeTax).toBeCloseTo(33432, 2);
     expect(result.nationalInsurance).toBeCloseTo(3456.6, 2);
-    expect(result.studentLoanRepayment).toBeCloseTo(7337.7, 1);
-    expect(result.totalDeductions).toBeCloseTo(44226.3, 1);
+    expect(result.studentLoanRepayment).toBeCloseTo(7255.35, 1);
+    expect(result.totalDeductions).toBeCloseTo(44143.95, 1);
   });
 
   it("LOC-C: 180k income, 20k expenses, 20k pension, Plan 1 student loan (additional rate)", () => {
@@ -77,13 +81,16 @@ describe("locum tax compute lib (golden)", () => {
     // basic = 37700*0.2 = 7540
     // higher = (125140-37700)=87440*0.4 = 34976
     // additional: 140000-125140=14860 -> 14860*0.45=6687; incomeTax=49203
-    // NI: band1=37700*0.06=2262; above=(140000-50270)*0.02=89730*0.02=1794.6; NI=4056.6
-    // student loan plan1 threshold=26065: (140000-26065)*0.09=113935*0.09=10254.15
+    // profit = 180000-20000 = 160000 (Class 4 base, pension does not reduce it)
+    // Class 4: 37700*0.06=2262; above=(160000-50270)*0.02=109730*0.02=2194.6; NI=4456.6
+    //   (pre-fix asserted 4056.6, computed on the 140000 net income)
+    // student loan plan1 threshold=26900 (2026/27): (140000-26900)*0.09=113100*0.09=10179
     // (pre-fix asserted incomeTax £44,175, using untapered PA + fixed £74,870 band)
+    expect(result.profit).toBe(160000);
     expect(result.netIncome).toBe(140000);
     expect(result.incomeTax).toBeCloseTo(49203, 1);
-    expect(result.nationalInsurance).toBeCloseTo(4056.6, 1);
-    expect(result.studentLoanRepayment).toBeCloseTo(10254.15, 1);
+    expect(result.nationalInsurance).toBeCloseTo(4456.6, 1);
+    expect(result.studentLoanRepayment).toBeCloseTo(10179, 1);
   });
 
   it("LOC-D: below NI lower limit (12000 income, no expenses, no pension, no loan)", () => {
@@ -186,6 +193,41 @@ describe("locum builder (workbook sanity)", () => {
     const ws = wb.getWorksheet("Your figures");
     const val = ws!.getCell("B5").value;
     expect(val).toBe(10000);
+  });
+
+  it("GUARD: the Class 4 cell is built on Profit and never references the pension input", () => {
+    const wb = build();
+    const ws = wb.getWorksheet("Your figures");
+    const formula = (ws!.getCell("B11").value as { formula: string }).formula;
+    // Class 4 is charged on trading profit (SSCBA 1992 s.15). The pension cell
+    // must not appear anywhere in this formula, directly or via NetIncome.
+    expect(formula).toContain("Profit");
+    expect(formula).not.toContain("In_Pension");
+    expect(formula).not.toContain("NetIncome");
+  });
+
+  it("GUARD: the Profit cell is gross income less expenses only", () => {
+    const wb = build();
+    const ws = wb.getWorksheet("Your figures");
+    const formula = (ws!.getCell("B7").value as { formula: string }).formula;
+    expect(formula).toBe("MAX(0,In_GrossIncome-In_Expenses)");
+  });
+
+  it("build() student loan thresholds on Rates are the 2026/27 figures", () => {
+    const wb = build();
+    const rates = wb.getWorksheet("Rates");
+    // Rows 9, 10, 11 = SL_PLAN1, SL_PLAN2, SL_PLAN4
+    expect(rates!.getCell("B9").value).toBe(26900);
+    expect(rates!.getCell("B10").value).toBe(29385);
+    expect(rates!.getCell("B11").value).toBe(33795);
+  });
+
+  it("build() Rates header is labelled 2026/27, not 2025/26", () => {
+    const wb = build();
+    const rates = wb.getWorksheet("Rates");
+    const header = String(rates!.getCell("A1").value);
+    expect(header).toContain("2026/27");
+    expect(header).not.toContain("2025/26");
   });
 
   it("build() conservation check row is formula-based", () => {

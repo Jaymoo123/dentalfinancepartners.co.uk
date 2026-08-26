@@ -35,7 +35,7 @@ export function BrandWordmarkHomeLink({ className = "", size = "header" }: Brand
       >
         UK
       </span>
-      <span className="sr-only"> — {siteConfig.tagline}</span>
+      <span className="sr-only">, {siteConfig.tagline}</span>
     </Link>
   );
 }

@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/elegant-man-signing-documents-8441784/"
 category: "Private Practice"
-metaTitle: "Medico-Legal and Expert-Witness Income: Doctor Tax"
-metaDescription: "How a doctor's medico-legal and expert-witness income is taxed: standard-rated VAT, the £90,000 threshold, expenses and whether to incorporate."
+metaTitle: "Medico-Legal and Expert-Witness Income: Tax and VAT"
+metaDescription: "Medico-legal reports are standard-rated at 20% VAT, not exempt. How the fees are taxed, the £90,000 threshold, and the 60% trap from £100,000 to £125,140."
 altText: "UK hospital consultant at a desk preparing a medico-legal expert witness report alongside a self-assessment tax form and calculator"
 h1: "Medico-Legal and Expert-Witness Income for Doctors: Tax, VAT and Structure"
 keyTakeaways:

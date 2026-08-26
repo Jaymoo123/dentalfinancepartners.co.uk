@@ -30,7 +30,7 @@ faqs:
 ---
 <p>The gap between a pharmacy sale that maximises value and one that does not is mostly determined by what happened in the two to three years before the sale, not in the weeks around it. By the time a buyer is at the table, the accounts are what they are, the BADR qualifying conditions either hold or they do not, and the NHS regulatory clock has either started or it has not.</p>
 
-<p>This post sequences the exit by phase: what to tackle early, what belongs in the middle period, what the final twelve months require, and what needs to be in place at completion. The tax figures are cited to source and HP-locked; the value levers are pharmacy-specific. For the readiness checklist (what to fix in your accounts), see <a href="/blog/selling-a-pharmacy/preparing-a-pharmacy-for-sale">preparing a pharmacy for sale</a>. For the deep tax mechanics, see the <a href="/services/pharmacy-sale-cgt-badr">pharmacy sale CGT and BADR service</a>.</p>
+<p>This post sequences the exit by phase: what to tackle early, what belongs in the middle period, what the final twelve months require, and what needs to be in place at completion. The tax figures are cited to source; the value levers are pharmacy-specific. For the readiness checklist (what to fix in your accounts), see <a href="/blog/selling-a-pharmacy/preparing-a-pharmacy-for-sale">preparing a pharmacy for sale</a>. For the deep tax mechanics, see the <a href="/services/pharmacy-sale-cgt-badr">pharmacy sale CGT and BADR service</a>.</p>
 
 <h2 id="when-to-start">When to start planning a pharmacy exit</h2>
 

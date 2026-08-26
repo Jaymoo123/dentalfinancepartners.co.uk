@@ -8,6 +8,7 @@ import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
+import { humaniseKey, formatValue } from "@/lib/worked-example-format";
 import Link from "next/link";
 
 export const dynamicParams = false;
@@ -108,13 +109,54 @@ export default async function CalculatorPage({
               </div>
             )}
 
+            {tool.workedExamples && tool.workedExamples.length > 0 && (
+              <section className="mt-12">
+                <h2 className="text-2xl font-bold text-slate-900">Worked examples</h2>
+                <div className="mt-6 space-y-8">
+                  {tool.workedExamples.map((ex, i) => {
+                    const heading = "title" in ex ? ex.title : ex.heading;
+                    const description = "description" in ex ? ex.description : undefined;
+                    const steps = "steps" in ex ? ex.steps : undefined;
+                    const result = "result" in ex ? ex.result : undefined;
+                    return (
+                      <div key={i}>
+                        <h3 className="text-lg font-bold text-slate-900">{heading}</h3>
+                        {description && (
+                          <p className="mt-2 text-base text-slate-700 leading-relaxed">{description}</p>
+                        )}
+                        {steps && steps.length > 0 && (
+                          <ol className="mt-2 list-decimal list-inside space-y-1 text-base text-slate-700 leading-relaxed">
+                            {steps.map((s, j) => (
+                              <li key={j}>{s}</li>
+                            ))}
+                          </ol>
+                        )}
+                        {result && (
+                          <ul className="mt-2 list-disc list-inside space-y-1 text-base text-slate-700 leading-relaxed">
+                            {Object.entries(result).map(([k, val]) => (
+                              <li key={k}>
+                                <span className="font-medium">{humaniseKey(k)}:</span>{" "}
+                                {formatValue(k, val)}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
             {tool.faqs && tool.faqs.length > 0 && (
               <section className="mt-12">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Frequently asked questions</h2>
                 <dl className="space-y-4">
                   {tool.faqs.map((f) => (
                     <div key={f.question} className="border-l-4 border-slate-300 bg-slate-50 p-6">
-                      <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
+                      <dt>
+                        <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                      </dt>
                       <dd className="mt-3 text-base text-slate-700 leading-relaxed">{f.answer}</dd>
                     </div>
                   ))}

@@ -12,8 +12,8 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/a-woman-in-white-lab-gown-8376233/"
 category: "Locum Tax"
-metaTitle: "Locum Doctor Allowable Expenses 2026/27 | What You Can Claim"
-metaDescription: "What locum doctors can claim in 2026/27: mileage at 55p a mile, indemnity, GMC fee, travel, home office. Full list of allowable expenses and HMRC rules."
+metaTitle: "Locum Doctor Expenses 2026/27: What You Can Claim"
+metaDescription: "What a locum doctor can claim for 2026/27: mileage at 55p a mile, the GMC fee and CPD, indemnity, accommodation and subsistence, and what HMRC refuses."
 altText: "Professional UK locum doctor reviewing expense receipts and tax documents at desk"
 h1: "Locum Doctor Expenses: What You Can Claim"
 keyTakeaways:

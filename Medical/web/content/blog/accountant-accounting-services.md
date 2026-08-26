@@ -12,7 +12,7 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/doctor-consulting-with-older-patient-in-office-39192358/"
 category: "GP Accountant Services"
-metaTitle: "Medical Accounting Services for Doctors UK | Overview"
+metaTitle: "Medical Accounting Services by Role: GP, Locum, Consultant"
 metaDescription: "What medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, 2026/27."
 altText: "Specialist medical accountant reviewing NHS pension and partnership tax figures with a doctor"
 h1: "Medical Accounting Services for Doctors: A Complete Overview"

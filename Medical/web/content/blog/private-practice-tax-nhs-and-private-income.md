@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/special-medical-bed-desk-and-chairs-in-medical-cabinet-7789616/"
 category: "Private Practice"
 metaTitle: "NHS Salary Plus Private Practice Income: Tax Guide 2026/27"
-metaDescription: "Consultant or GP with an NHS salary plus private income? How PAYE and self-employed private work are taxed together, what is pensionable, and the VAT line."
+metaDescription: "NHS salary plus private income in 2026/27: how the streams tax together, what is pensionable, and why private fees need VAT only above £90,000."
 altText: "UK consultant reviewing NHS salary and private practice income tax documents for self-assessment"
 h1: "NHS Salary Plus Private Income: How Your Tax Actually Works"
 keyTakeaways:

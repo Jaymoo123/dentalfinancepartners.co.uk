@@ -33,7 +33,12 @@ export interface XlsxAsset {
   enabled: boolean;
 }
 
-/** A gated written guide (a noindex web page) for a topic. */
+/**
+ * The written guide for a topic. Served PUBLIC and INDEXABLE at
+ * /resources/<slug> (it is in the sitemap); "gated"/"noindex" described an
+ * earlier design and was stale as of 2026-08-26. The page documents the xlsx
+ * model above, it is not a topic explainer.
+ */
 export interface GuideAsset {
   /** the resources/[topic] route slug (equals the TopicKey) */
   slug: string;

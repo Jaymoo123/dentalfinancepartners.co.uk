@@ -143,29 +143,33 @@ describe("Tool 2 · locum-take-home-premium (calcLocumTax)", () => {
     // netIncome = 80000 - 5000 - 10000 = 65000
     // taxableIncome = 65000 - 12570 = 52430
     // basicBand = min(52430, 37700) = 37700 -> 7540; higherBand = 14730 -> 5892; IT = 13432
-    // NI: niableBand1 = min(65000-12570, 37700) = 37700 * 0.06 = 2262;
-    //     niableBand2 = (65000 - 50270) * 0.02 = 14730 * 0.02 = 294.6; NI = 2556.6
-    // totalDeductions = 13432 + 2556.6 = 15988.6; netTakeHome = 65000 - 15988.6 = 49011.4
-    // Conservation: netTakeHome + totalDeductions = 49011.4 + 15988.6 = 65000 = netIncome. Pass.
+    // Class 4 is charged on PROFIT (80000 - 5000 = 75000), not on net income after
+    // the pension: SSCBA 1992 s.15, corrected 2026-08-26.
+    // NI: niableBand1 = 37700 * 0.06 = 2262;
+    //     niableBand2 = (75000 - 50270) * 0.02 = 24730 * 0.02 = 494.6; NI = 2756.6
+    //     (pre-fix asserted 2556.6, computed on 65000, understating it by 200)
+    // totalDeductions = 13432 + 2756.6 = 16188.6; netTakeHome = 65000 - 16188.6 = 48811.4
+    // Conservation: netTakeHome + totalDeductions = 48811.4 + 16188.6 = 65000 = netIncome. Pass.
     const r = calcLocumTax({ grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "none" });
+    expect(r.profit).toBe(75000);
     expect(r.netIncome).toBe(65000);
     expect(r.incomeTax).toBeCloseTo(13432, 2);
-    expect(r.nationalInsurance).toBeCloseTo(2556.6, 1);
+    expect(r.nationalInsurance).toBeCloseTo(2756.6, 1);
     expect(r.studentLoanRepayment).toBe(0);
-    expect(r.totalDeductions).toBeCloseTo(15988.6, 1);
-    expect(r.netTakeHome).toBeCloseTo(49011.4, 1);
+    expect(r.totalDeductions).toBeCloseTo(16188.6, 1);
+    expect(r.netTakeHome).toBeCloseTo(48811.4, 1);
     // Conservation: netTakeHome + totalDeductions = netIncome
     expect(r.netTakeHome + r.totalDeductions).toBeCloseTo(65000, 1);
   });
 
   it("LOC-B: gross=80000, exp=5000, pen=10000, plan2", () => {
-    // netIncome = 65000; threshold plan2 = 28470; SL = (65000 - 28470) * 0.09 = 36530 * 0.09 = 3287.70
-    // netTakeHome = 65000 - 13432 - 2556.6 - 3287.7 = 45723.7
-    // Conservation: 45723.7 + 19276.3 = 65000. Pass.
+    // netIncome = 65000; threshold plan2 = 29385 (2026/27, re-pinned 2026-08-26)
+    // SL = (65000 - 29385) * 0.09 = 35615 * 0.09 = 3205.35
+    // netTakeHome = 65000 - 13432 - 2756.6 - 3205.35 = 45606.05
     const r = calcLocumTax({ grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "plan2" });
     expect(r.netIncome).toBe(65000);
-    expect(r.studentLoanRepayment).toBeCloseTo(3287.7, 1);
-    expect(r.netTakeHome).toBeCloseTo(45723.7, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(3205.35, 1);
+    expect(r.netTakeHome).toBeCloseTo(45606.05, 1);
     expect(r.netTakeHome + r.totalDeductions).toBeCloseTo(65000, 1);
   });
 
@@ -182,12 +186,12 @@ describe("Tool 2 · locum-take-home-premium (calcLocumTax)", () => {
     expect(r.netTakeHome).toBeCloseTo(113240.4, 1);
   });
 
-  it("LOC-A via config compute: headline contains 49,011, tone good", () => {
+  it("LOC-A via config compute: headline contains 48,811, tone good", () => {
     const result = locumTakeHomePremiumConfig.compute({
       values: { grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "none" },
       rows: [],
     });
-    expect(result.headline.value).toContain("49,011");
+    expect(result.headline.value).toContain("48,811");
     expect(result.headline.tone).toBe("good");
   });
 
@@ -451,7 +455,7 @@ describe("Conservation invariants: compute() at default inputs", () => {
       values: { grossIncome: 80000, expenses: 5000, pensionContributions: 10000, studentLoanPlan: "none" },
       rows: [],
     });
-    expect(result.headline.value).toContain("49,011");
+    expect(result.headline.value).toContain("48,811");
     expect(result.headline.tone).toBe("good");
     for (const row of result.breakdown ?? []) {
       expect(row.value).not.toContain("NaN");
