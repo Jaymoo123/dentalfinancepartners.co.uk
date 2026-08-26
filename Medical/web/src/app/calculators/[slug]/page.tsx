@@ -171,10 +171,15 @@ export default async function CalculatorPage({
               <p className="mt-3 text-base sm:text-lg text-white/80 leading-relaxed">
                 These calculators provide simplified estimates based on standard rates. Your actual position depends on your NHS pension position, carry-forward entitlement, IR35 status, and income from all sources. We model the full picture as part of our advisory work.
               </p>
+              {/* Per-route cta id, never a shared one: vw_cta_performance groups
+                  without page_path, so a reused id silently merges all ten
+                  calculators into one uninterpretable row (rollout doc trap 6).
+                  Same pattern as calculators/page.tsx (calculator-gallery-<slug>).
+                  Split from the shared "calculator-page-cta" on 2026-08-26. */}
               <Link
                 href="/contact"
                 className="mt-6 inline-block bg-[var(--copper)] border-b-4 border-[var(--copper-strong)] px-8 py-3 text-base font-bold text-white hover:opacity-90 transition-all"
-                data-cta="calculator-page-cta"
+                data-cta={`calculator-page-cta-${slug}`}
                 data-cta-goal="form"
                 data-cta-placement="calculator"
               >

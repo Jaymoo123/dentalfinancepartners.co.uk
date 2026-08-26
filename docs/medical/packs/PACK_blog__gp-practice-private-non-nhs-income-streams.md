@@ -460,3 +460,15 @@ Per hard rule 7. Stated, not silently harmonised.
 ---
 
 *Pack built 2026-08-26. No `Medical/web/` file was modified. No commit, no deploy, no `monitored_pages` write, no monitor, alert, cron or notification created.*
+
+
+> **CORRECTION 2026-08-26, after this page was written.** Whitespace claim **W5 is FALSE** and must not be
+> reused. It said no competitor states that NHS-dispensed drugs are zero-rated. Price Bailey states it verbatim
+> ("Zero-rated: drugs dispensed on NHS prescriptions. Standard-rated: drugs dispensed privately"), recovered
+> 2026-08-26 by re-fetching a page previously logged as blocked, using curl with a browser user agent plus
+> Accept-Language and Referer. The same recovery falsifies this pack's teardown judgement that Kudos held
+> "two things nobody else has" (Benefits-and-Drawbacks and VAT-for-PCNs): Price Bailey has both. W2 (seven
+> income streams) is weakened but not falsified. The published page makes no uniqueness claim, verified by
+> grep, so nothing false reached a reader; the defect was confined to this planning document.
+> New delta for a later pass: Price Bailey carries a "GP Solo form" heading, a phrase absent from
+> house_positions and from every pack in this batch.

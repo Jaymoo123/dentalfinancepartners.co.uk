@@ -15,7 +15,7 @@ Three findings follow from it, in order of money.
 
 **b. Our NHS-pension pages are competing with each other across three namespaces.** `/calculators/nhs-pension-scheme-pays` and `/blog/nhs-pension-scheme-pays-doctors-deadlines` score identically on six separate consensus topics. `/calculators/nhs-pension-annual-allowance`, `/medical-guides/nhs-pension-annual-allowance` and `/blog/nhs-pension-annual-allowance-complete-guide` all contest the annual-allowance family. Full list in §7. Per §5 of the working agreement, none of these get collapsed; they get differentiated.
 
-**c. The single highest-confidence topic on the entire map has no page of ours at all.** "healthcare accountants near me" is given its own page by **24 of the 27 harvested domains**, 10,110 combined volume, 5,110 of it peer-winnable. It is the commercial acquisition term and it is a NO-PAGE.
+**c. The single highest-confidence topic on the entire map has no page of ours at all.** "healthcare accountants near me" is given its own page by **24 of the 27 harvested domains**, 10,110 combined volume, ~~5,110~~ **6,900** of it peer-winnable (corrected 2026-08-26, see the correction note in §4). It is the commercial acquisition term and it is a NO-PAGE. It is no longer the top row by peer-winnable volume; uniform tax relief is.
 
 ---
 
@@ -133,40 +133,82 @@ Only 3 of 16 assigned topics grade EXTEND. On this site almost nothing has enoug
 
 Ordering is by peer-winnable volume per owner decision 21. **Total volume is shown alongside so the sequencing is visible without the filtering.** Nothing here is excluded for having a hard SERP.
 
-| # | Topic | Domains | Total volume | Peer-winnable | Kws | Prescription |
-|---|---|---|---|---|---|---|
-| 1 | **healthcare accountants near me** | **24** | 10,110 | 5,110 | 67 | New page. 45 competitor URLs. The commercial term. |
-| 2 | is the nhs pension scheme good | 1 | 3,250 | 3,210 | 11 | Section on /calculators/nhs-pension-scheme-pays |
-| 3 | how does the nhs pension scheme work (accrual rate) | 1 | 2,220 | 2,000 | 4 | Section on /calculators/nhs-pension-scheme-pays |
-| 4 | **uniform tax rebate / work uniform tax relief** | 4 | **26,880** | 1,420 | 108 | New page or section on the expenses hub |
-| 5 | adjusted net income / marginal rate traps | 1 | 7,210 | 1,300 | 15 | New page. Core to tapering for doctors. |
-| 6 | qof 2025/26 | 1 | 1,310 | 1,020 | 17 | Section on /blog/qof-income-gp-practice-accounting-explained |
-| 7 | payroll nhs / payroll number on payslip | 3 | 5,490 | 910 | 35 | Section on /blog/gp-payroll-services (FROZEN to 09-10) |
-| 8 | mileage tax claim / nhs mileage allowance | 2 | 2,270 | 780 | 15 | Section on /blog/gp-tax-deductions-complete-list-2026 (FROZEN to 09-10) |
-| 9 | pharmacist accountant | 4 | 1,390 | 700 | 11 | New page. `allied_health` lane. |
-| 10 | veterinary accountants | 4 | 550 | 550 | 5 | New page. `allied_health` lane. |
-| 11 | **pension opt out** | 2 | **20,260** | 0 | 35 | New page. bma.org.uk holds it end to end. |
-| 12 | how much is maternity allowance | 1 | 9,490 | 0 | 22 | New page, doctor-specific angle |
-| 13 | nhs pensions contact address / details | 1 | 6,720 | 0 | 8 | Section on /nhs-pension |
-| 14 | nhs pension refund form (RF12) | 1 | 3,600 | 0 | 14 | Section on /blog/nhs-pension-for-locums-form-a-form-b |
-| 15 | nhs pension death in service | 2 | 3,490 | 0 | 19 | Section on /calculators/nhs-pension-scheme-pays |
-| 16 | pension nhs contact / email | 1 | 3,160 | 0 | 13 | Section on /nhs-pension |
-| 17 | nhs pension increase / uplift | 1 | 1,930 | 0 | 19 | Section on /medical-guides/nhs-pension-annual-allowance |
-| 18 | pension tapered annual allowance | 1 | 1,450 | 0 | 7 | Section on the tapered calculator page (FROZEN to 09-10) |
-| 19 | gmc revalidation | 1 | 1,400 | 0 | 6 | New page or CQC/GMC hub section |
-| 20 | what is a GMS / APMS contract | 1 | 1,180 | 0 | 3 | Section on /blog/how-gms-funding-works-global-sum-carr-hill-explained |
-| 21 | how is nhs pension calculated (final salary) | 1 | 1,070 | 0 | 8 | Section on the tapered calculator page (FROZEN) |
-| 22 | nhs pension ill-health retirement (tier 2) | 1 | 1,000 | 0 | 8 | New section on /nhs-pension |
-| 23 | self-administered pension scheme | 1 | 970 | 0 | 8 | Section, private-practice pension |
-| 24 | abatement of pension | 1 | 940 | 0 | 10 | Section on /research/annual-allowance-pension-tax-index |
-| 25 | is nhs pension salary sacrifice | 1 | 860 | 0 | 5 | Section on /calculators/nhs-pension-scheme-pays |
-| 26 | qof register | 1 | 840 | 0 | 5 | Section on the QOF page |
-| 27 | retire and return | 1 | 760 | 0 | 7 | Section on /blog/nhs-pension-partial-retirement-doctors-guide |
-| 28 | what happens to my nhs pension when i die | 1 | 730 | 0 | 9 | Section, survivor benefits |
-| 29 | nhs deferred pension / adult dependant | 1 | 440 | 0 | 4 | Section on /nhs-pension |
-| 30 | nhs pensions complaints / overpayments | 1 | 410 | 0 | 5 | Section on /nhs-pension |
-| 31 | nhs pension redundancy | 1 | 390 | 0 | 5 | Section on /blog/nhs-pension-tax-charges-how-to-minimize |
-| 32 | added years nhs pension | 1 | 280 | 0 | 4 | Section on /calculators/nhs-pension-scheme-pays |
+> ### CORRECTION, 2026-08-26 (later the same day). This whole column was re-derived and the ordering changed.
+>
+> **What was wrong.** The peer-winnable column as first published was computed against a narrower domain set than the validated 22-domain peer universe in `docs/medical/competitor_universe_2026-08-26.md` §2a. It was tested on three clusters by the batch 2 planning pass and wrong on all three, always in the same direction (understated): uniform 1,420 stated against 27,550 actual, pension opt out 0 against 4,280, maternity 0 against 3,430. The cause is domain classification, not arithmetic. `lanop.co.uk` (§2a row 12), `taxqube.co.uk` (row 18), `medicsmoney.co.uk` (row 1) and `bhp.co.uk` (row 15) are all peers and none of them was counted on the clusters they hold.
+>
+> **Why this is not a data-quality nit.** Under owner decision 21 of 2026-08-26 peer-winnable ORDERS all the work. A column wrong by a factor of 19 on one row was mis-sequencing the whole backlog.
+>
+> **How the correction was derived.** No new paid calls. Re-derived from the persisted harvest only:
+> ```
+> table dataforseo_competitor_data, site_key='medical', 32,872 rows, date_pulled 2026-08-26
+> peer set   = all 27 harvested domains MINUS the five §2b non-peers
+>              {bma.org.uk, themdu.com, aisma.org.uk, forvismazars.com, johnstoncarmichael.com}
+> definition = deduplicated search_volume of the cluster's keywords where any peer holds position <= 20
+>              (dedupe on keyword, max volume across domains; the same definition BATCH2_INDEX.md §6 states)
+> ```
+> The clusters themselves were rebuilt by keyword-family regex per topic, because the original URL-node grouping was not persisted and the dossier's in-family filter is not recorded. The rebuild is calibrated against the published Kws and Total volume columns, and it reproduces the batch 2 planner's independently derived figures on the three tested clusters: uniform 27,590 (planner 27,550), opt out 4,280 (planner 4,280, exact), maternity 3,760 (planner 3,430, +10%). **The corrected column is therefore reliable for ORDERING and should not be quoted to the pound.**
+>
+> **Two rows are marked `†` and keep their first-published figure.** On "is the nhs pension scheme good" (3,210) and "adjusted net income" (1,300) the re-derivation returned a *lower* number (3,120 and 90). Peer-winnable can only rise when the peer set widens, so a lower number means the rebuilt cluster is narrower than the original, not that the original was wrong. The higher figure is kept as the floor and the row is flagged rather than silently overwritten.
+>
+> **Clusters whose ORDER changes, which is the decision:**
+>
+> | Topic | Was | Now | Corrected peer-winnable |
+> |---|---|---|---|
+> | uniform tax rebate / work uniform tax relief | 4 | **1** | 1,420 → **27,590** |
+> | pension opt out | 11 | **3** | 0 → **4,280** |
+> | how much is maternity allowance | 12 | **4** | 0 → **3,760** |
+> | payroll nhs / payroll number on payslip | 7 | **5** | 910 → **3,750** |
+> | qof 2025/26 | 6 | 7 | 1,020 → **2,630** |
+> | pharmacist accountant | 9 | 9 | 700 → **2,090** |
+> | what is a GMS / APMS contract | 20 | **12** | 0 → **1,140** |
+> | how is nhs pension calculated (final salary) | 21 | **14** | 0 → **480** |
+> | nhs pension increase / uplift | 17 | 15 | 0 → **260** |
+> | qof register | 26 | **16** | 0 → **140** |
+> | healthcare accountants near me | 1 | 2 | 5,110 → **6,900** |
+> | adjusted net income / marginal rate traps | 5 | **10** | 1,300 (unchanged, `†`) |
+> | mileage tax claim / nhs mileage allowance | 8 | 11 | 780 → **1,290** |
+>
+> Eight of the 32 rows move by more than two places. The four zeros that are not zeros (opt out, maternity, GMS/APMS, final salary) are the ones that matter, because a stated zero reads as "unwinnable on Google" and three of them are held by a peer inside the top 20. Rows 17 to 32 below are unchanged at zero and their relative order is preserved.
+>
+> The batch 2 build order already reflects this correction and does not need re-planning. What changes is batch 3 scoping.
+
+| Order | Row # (as first published) | Topic | Domains | Total volume | Peer-winnable (corrected) | Peer-winnable (as first published) | Kws | Prescription |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 4 | **uniform tax rebate / work uniform tax relief** | 4 | **26,880** | **27,590** | 1,420 | 108 | New page or section on the expenses hub |
+| 2 | 1 | **healthcare accountants near me** | **24** | 10,110 | **6,900** | 5,110 | 67 | New page. 45 competitor URLs. The commercial term. |
+| 3 | 11 | **pension opt out** | 2 | **20,260** | **4,280** | 0 | 35 | New page. bma.org.uk holds positions 6 to 9; medicsmoney holds it at 15 to 18. |
+| 4 | 12 | how much is maternity allowance | 1 | 9,490 | **3,760** | 0 | 22 | New page, doctor-specific angle. bhp.co.uk is the peer at position 20. |
+| 5 | 7 | payroll nhs / payroll number on payslip | 3 | 5,490 | **3,750** | 910 | 35 | Section on /blog/gp-payroll-services (FROZEN to 09-10) |
+| 6 | 2 | is the nhs pension scheme good | 1 | 3,250 | 3,210 `†` | 3,210 | 11 | Section on /calculators/nhs-pension-scheme-pays |
+| 7 | 6 | qof 2025/26 | 1 | 1,310 | **2,630** | 1,020 | 17 | Section on /blog/qof-income-gp-practice-accounting-explained |
+| 8 | 3 | how does the nhs pension scheme work (accrual rate) | 1 | 2,220 | 2,110 | 2,000 | 4 | Section on /calculators/nhs-pension-scheme-pays |
+| 9 | 9 | pharmacist accountant | 4 | 1,390 | **2,090** | 700 | 11 | New page. `allied_health` lane. |
+| 10 | 5 | adjusted net income / marginal rate traps | 1 | 7,210 | 1,300 `†` | 1,300 | 15 | New page. Core to tapering for doctors. |
+| 11 | 8 | mileage tax claim / nhs mileage allowance | 2 | 2,270 | **1,290** | 780 | 15 | Section on /blog/gp-tax-deductions-complete-list-2026 (FROZEN to 09-10) |
+| 12 | 20 | what is a GMS / APMS contract | 1 | 1,180 | **1,140** | 0 | 3 | Section on /blog/how-gms-funding-works-global-sum-carr-hill-explained |
+| 13 | 10 | veterinary accountants | 4 | 550 | 740 | 550 | 5 | New page. `allied_health` lane. |
+| 14 | 21 | how is nhs pension calculated (final salary) | 1 | 1,070 | **480** | 0 | 8 | Section on the tapered calculator page (FROZEN) |
+| 15 | 17 | nhs pension increase / uplift | 1 | 1,930 | **260** | 0 | 19 | Section on /medical-guides/nhs-pension-annual-allowance |
+| 16 | 26 | qof register | 1 | 840 | **140** | 0 | 5 | Section on the QOF page |
+| 17 | 13 | nhs pensions contact address / details | 1 | 6,720 | 0 | 0 | 8 | Section on /nhs-pension |
+| 18 | 14 | nhs pension refund form (RF12) | 1 | 3,600 | 0 | 0 | 14 | Section on /blog/nhs-pension-for-locums-form-a-form-b |
+| 19 | 15 | nhs pension death in service | 2 | 3,490 | 0 | 0 | 19 | Section on /calculators/nhs-pension-scheme-pays |
+| 20 | 16 | pension nhs contact / email | 1 | 3,160 | 0 | 0 | 13 | Section on /nhs-pension |
+| 21 | 18 | pension tapered annual allowance | 1 | 1,450 | 0 | 0 | 7 | Section on the tapered calculator page (FROZEN to 09-10) |
+| 22 | 19 | gmc revalidation | 1 | 1,400 | 0 | 0 | 6 | New page or CQC/GMC hub section |
+| 23 | 22 | nhs pension ill-health retirement (tier 2) | 1 | 1,000 | 0 | 0 | 8 | New section on /nhs-pension |
+| 24 | 23 | self-administered pension scheme | 1 | 970 | 0 | 0 | 8 | Section, private-practice pension |
+| 25 | 24 | abatement of pension | 1 | 940 | 0 | 0 | 10 | Section on /research/annual-allowance-pension-tax-index |
+| 26 | 25 | is nhs pension salary sacrifice | 1 | 860 | 0 | 0 | 5 | Section on /calculators/nhs-pension-scheme-pays |
+| 27 | 27 | retire and return | 1 | 760 | 0 | 0 | 7 | Section on /blog/nhs-pension-partial-retirement-doctors-guide |
+| 28 | 28 | what happens to my nhs pension when i die | 1 | 730 | 0 | 0 | 9 | Section, survivor benefits |
+| 29 | 29 | nhs deferred pension / adult dependant | 1 | 440 | 0 | 0 | 4 | Section on /nhs-pension |
+| 30 | 30 | nhs pensions complaints / overpayments | 1 | 410 | 0 | 0 | 5 | Section on /nhs-pension |
+| 31 | 31 | nhs pension redundancy | 1 | 390 | 0 | 0 | 5 | Section on /blog/nhs-pension-tax-charges-how-to-minimize |
+| 32 | 32 | added years nhs pension | 1 | 280 | 0 | 0 | 4 | Section on /calculators/nhs-pension-scheme-pays |
+
+**`Row #` is the first-published row number and is kept as a stable identifier, because the narrative below and `BATCH2_INDEX.md` both cite rows by that number. `Order` is the corrected sequence. `†` = first-published figure retained as a floor; see the correction note above.**
 
 Read rows 11 and 4 against rows 2 and 3. "pension opt out" is 20,260 volume with **zero** peer-winnable, because bma.org.uk holds positions 4 to 9 across the whole family. "is the nhs pension scheme good" is 3,250 with 3,210 peer-winnable. Under a Google-winnability filter, row 11 disappears. Under decision 21 it does not, it just sequences behind row 2. On a site where Bing out-clicks Google 3.4x, discarding a 20,260-volume topic because the BMA owns the Google slot is the exact error the decision was written to prevent.
 
@@ -226,6 +268,27 @@ Top absences by volume, with the best position any harvested domain holds:
 | 1,600 | 83 | taxqube.co.uk | tax relief on work uniform |
 | 1,600 | 87 | taxqube.co.uk | uniform tax allowance |
 | 1,300 | 11 | bma.org.uk | nhs pension website |
+
+> ### CORRECTION, 2026-08-26 (later the same day). Five of these 37 rows report a worse position than the harvest holds.
+>
+> The column header promises "the best position any harvested domain holds". Audited row by row against the persisted harvest:
+> ```
+> table dataforseo_competitor_data, site_key='medical'
+> for each phrase: min(position) over all 27 domains, compared to the stated position
+> result: 5 of 37 rows understate the best available position
+> ```
+>
+> | Phrase | Stated | Actual best | Held by |
+> |---|---|---|---|
+> | uniform tax rebate | 81 taxqube.co.uk | **9** | lanop.co.uk |
+> | work uniform tax refund | 59 taxqube.co.uk | **17** | lanop.co.uk |
+> | tax relief on work uniform | 83 taxqube.co.uk | **24** | lanop.co.uk |
+> | uniform tax allowance | 87 taxqube.co.uk | **30** | lanop.co.uk |
+> | how much is maternity allowance | 31 bma.org.uk | **20** | bhp.co.uk |
+>
+> **Is it systematic? Yes, but it is one bug and not two.** Every one of the five involves `lanop.co.uk` or `bhp.co.uk`, the same two domains missing from the narrow set that produced the §4 peer-winnable error. The other 32 rows are correct, because on those the best-positioned domain happened to be inside the narrow set. So this is not an independent defect in §5, it is the §4 domain-classification bug showing through a second surface. Fixing the peer set fixes both.
+>
+> **What it changes.** It made two fields look harder than they are. `uniform tax rebate` at 81 reads as a closed SERP; at 9, held by a beatable generalist peer, it is the most reachable head term in the batch. The four uniform rows were already flagged independently in `docs/medical/packs/PACK_blog__nhs-uniform-tax-relief-laundry-allowance.md` §699; the maternity row is new here. No other row in the table moves.
 
 Two patterns, and both are vocabulary rather than subject matter.
 
@@ -398,6 +461,43 @@ Named, so absence is a stated limitation rather than a silence.
 5. **Verbatim matching only.** §5 measures phrase presence, not semantic coverage.
 6. **Peer-winnable is a Google-derived number.** DataForSEO positions are Google. On a site where Bing out-clicks Google 3.4x, the peer-winnable column sequences work on one engine only. It never excludes anything, per decision 21.
 
+> ### CORRECTION, 2026-08-26 (later the same day). The "unreachable" competitor pages were reachable. Nine of nine recovered.
+>
+> Batch 1's teardowns recorded seven URLs as HTTP 403 or unreachable and `docs/medical/language_spec_2026-08-26.md` §320 called closing them "the cheapest extension of this spec". They were not blocking us. They were blocking the default `WebFetch` user agent.
+>
+> ```bash
+> curl -sL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36" <url>
+> # pricebailey /blog/vat-and-doctors/ additionally needed -H "Accept-Language: en-GB" -H "Referer: https://www.google.com/" --compressed
+> ```
+>
+> | URL | Was | Now | Bytes / words |
+> |---|---|---|---|
+> | pricebailey.co.uk/blog/vat-and-doctors/ | 403 | **200** | 25,047 / 1,830 |
+> | hawsons.co.uk/benefits-of-private-medical-insurance/ | 403 | **200** | 519,951 / 16 headings |
+> | pricebailey.co.uk/blog/the-mccloud-remedy/ | 403 | **200** | 133,843 / 1,324 |
+> | simpkinsedwards.co.uk/articles/understanding-the-mccloud-remedy | 403 | **200** | 245,298 / 940 |
+> | hawsons.co.uk/tapered-annual-allowance-and-pension-contributions-for-high-earners/ | 403 | **200** | 579,744 / 1,344 |
+> | hawsons.co.uk/nhs-pension-contribution-changes/ | 403 | **200** | 429,596 / 536 |
+> | pricebailey.co.uk/blog/changes-nhs-pension-scheme-contributions/ | 403 | **200** | 134,380 / 696 |
+> | pricebailey.co.uk/.../Price_Bailey_Budget_Summary_2024.pdf | 403 | **200**, downloaded and extracted with `pdfplumber` | 1,818,332 / 17 pages / 5,258 |
+> | simpkinsedwards.co.uk/articles/pensions-protecting-your-lifetime-allowance | 403 | **200** | 243,025 / 703 |
+>
+> **One whitespace claim is now false.** `PACK_blog__gp-practice-private-non-nhs-income-streams.md` W5 states "No competitor page in this set states that dispensed NHS prescription drugs are ZERO-RATED". The Price Bailey page states it verbatim: *"Zero-rated: drugs dispensed on NHS prescriptions. Standard-rated: drugs dispensed privately."* **W5 must be struck before that page is written.** The same pack's §182 credits Kudos with "two things nobody else has", Benefits-and-Drawbacks and VAT-for-PCNs. Price Bailey has both, under its own `h2`s, plus a "Looking ahead: The future of PCNs" section. That teardown judgement was **wrong**, not thin.
+>
+> **W2 is weakened, not falsified.** Price Bailey lists taxable services commonly provided by doctors (medico-legal, passport signing, dispensing) with a VAT line each. It does not work seven named income streams. Our structural asset survives; the claim "no competitor has it" needs softening to "no competitor works more than four".
+>
+> **Every other whitespace claim survives, and four are now verified rather than caveated:**
+> - `PACK_blog__mccloud-remedy...` item 1, the RSS-versus-RPSS separation: **zero** occurrences of "RPSS", "remediable service statement" or "remedial pension savings statement" in either recovered McCloud page. Holds.
+> - `PACK_calculators__nhs-pension-scheme-pays` item 6, the FA 2004 s.237BA extended-deadline limb: zero occurrences of "237BA", "2 May" or "six years" in either recovered contributions page. Holds.
+> - `PACK_calculators__nhs-pension-annual-allowance` whitespace 2, the per-year allowance history table: the recovered Hawsons taper page has no history and no year rows. Holds.
+> - `PACK_research__annual-allowance-pension-tax-index` whitespace 1 and 4. Item 4 explicitly said of Simpkins Edwards "a page titled protecting your lifetime allowance that we could not fetch". Recovered: 703 words, six mentions of fixed protection, two of individual protection, and **zero** of "lump sum allowance" or "LSDBA". The pre-2023 framing is exactly what item 4 predicted. The Price Bailey PDF is a Spring Budget 2024 summary with two mentions of "lifetime allowance" and none of "lump sum allowance". **Whitespace item 1, the largest open block in the batch, is now confirmed against the two documents that were previously unknown.**
+>
+> **Teardowns that were thin rather than wrong.** `PACK_calculators__nhs-pension-annual-allowance` §4.3 correctly refused to assert what the Hawsons taper page covers. It covers threshold-versus-adjusted income, defined-benefit input, carry-forward and a four-question FAQ block, and it is **not** stale. `PACK_blog__mccloud-remedy...` guessed nothing and lost nothing. Recovered pages are thin: 536 to 1,344 words each.
+>
+> **One new delta, not a correction.** `pricebailey.co.uk/blog/changes-nhs-pension-scheme-contributions/` carries a **"GP Solo form"** `h2`. That phrase appears nowhere in `house_positions.md` and nowhere in any pack. It is competitor ground we have not looked at.
+>
+> **The class fix, which matters more than the nine pages.** Route competitor fetches through a UA-bearing `curl` before recording a 403 as a flagged gap, and download-then-extract any PDF or docx rather than fetching it. Nine of nine recovered on the first retry. Every teardown in this programme that recorded a 403 should be re-run this way before it is used.
+
 ---
 
 ## 12. Dossier freeze
@@ -405,3 +505,27 @@ Named, so absence is a stated limitation rather than a silence.
 Per §9.8 this dossier is the frozen scope. Anything discovered after this point goes into a named delta list and is worked in a later pass. The four unharvested domains are already on that list.
 
 **Next step, unchanged from §9.8:** competitor teardown per topic, then per-page packs, then the writer. Nothing in this task may be executed without that sequence.
+
+> ### DELTA LIST, added 2026-08-26 (later the same day)
+>
+> Per the freeze rule, work found after the freeze is named here rather than folded in.
+>
+> 1. **Opticians and therapists / allied health have no usable data and could not be harvested today.** Rows 20 and 22 of `expansion_research/nichemap_2026-08-25/C2_PLACEMENT.md` assign both ABSORB clusters to this site. Re-checked against the persisted harvest today, free:
+>     ```python
+>     # dataforseo_competitor_data, site_key='medical', 32,872 rows
+>     optician  = /optic|optometr|ophthalm/                                    -> 4 keywords, 0 with accountancy vocabulary
+>     allied    = /physio|osteopath|chiroprac|podiatr|therapist|allied health/ -> 0 keywords
+>     # optician sample: "dr grey opticians", "ophthalmic negligence", "arclight ophthalmoscope"
+>     ```
+>     Every optician row is navigational or clinical and the allied-health set is empty, not merely thin. (The batch 2 planner recorded 3 and 10; the difference is regex breadth, and it does not change the conclusion.) No domain in the current competitor set runs such a page, so re-harvesting the same 27 domains would spend money confirming a zero. Filling it needs new discovery (about 4 `keyword_ideas` + 12 SERP + 6 `ranked_keywords` calls, roughly **$1.13**). **Not run: the daily guard was already consumed.**
+>     ```sql
+>     select api_provider, endpoint, site_key, status, count(*), sum(cost_usd)
+>     from api_cost_log where date_called = '2026-08-26' group by 1,2,3,4;
+>     -- dataforseo | serp/google/organic/live/advanced      | medical | success | 18 | 0.03600
+>     -- dataforseo | dataforseo_labs/google/ranked_keywords | medical | success | 81 | 4.92048
+>     -- total 4.95648 against DATAFORSEO_ABORT_AT 5.00  ->  headroom $0.04352, need $1.13
+>     ```
+>     `CostTracker.guard()` would raise `BudgetExceeded` on the first call. **This is tomorrow's job, and it is the first paid call of tomorrow.**
+> 2. **The four unharvested vocabulary domains** (england.nhs.uk, nhsbsa.nhs.uk, nhsemployers.org, wesleyan.co.uk) plus the rest of bma.org.uk, about $19. Carried from §11 item 1.
+> 3. **"GP Solo form"** as competitor ground nobody on our side has looked at. See the §11 correction note.
+> 4. **Re-run every batch-1 teardown that recorded a 403** through the UA-bearing fetch path. See the §11 correction note.

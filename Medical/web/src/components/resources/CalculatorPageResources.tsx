@@ -19,6 +19,7 @@
  * FLAT routing: Medical uses flat blog routing; calc pages do NOT have this concern
  * (they use the slug directly via topicForCalcSlug).
  */
+import Link from "next/link";
 import { topicForCalcSlug, getTopic } from "@/lib/intent/taxonomy";
 import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
 import { gateCopy } from "@/lib/resources/copy";
@@ -41,6 +42,14 @@ export function CalculatorPageResources({
   const label = topicObj?.label ?? "this topic";
   const copy = gateCopy(topic, pageTitle);
 
+  // ponytail: the /resources/<topic> guide is otherwise reachable only from the
+  // gate's post-submit success state, so it has no crawlable inbound link and no
+  // way for a reader to get to it without handing over an email. One static line
+  // fixes both. Guarded on slug === topic so an ALIASED guide (gp-tax points at
+  // the locum guide) is never offered under a mismatched heading.
+  const guide = resourceForTopic(topic)?.guide;
+  const ownGuide = guide && guide.enabled && guide.slug === topic ? guide : null;
+
   return (
     <div className="mt-10">
       <div className="flex items-center gap-3">
@@ -51,6 +60,18 @@ export function CalculatorPageResources({
           Get the full {label} model and guide
         </p>
       </div>
+      {ownGuide && (
+        <p className="mt-2 text-sm text-[var(--muted)]">
+          Prefer to read first? The{" "}
+          <Link
+            href={`/resources/${ownGuide.slug}`}
+            className="text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4"
+          >
+            {ownGuide.label}
+          </Link>{" "}
+          is free to read, with no email needed.
+        </p>
+      )}
       <ResourceGate
         topic={topic}
         copy={copy}
@@ -63,6 +84,3 @@ export function CalculatorPageResources({
 
 // Re-exported as default for convenience.
 export { CalculatorPageResources as default };
-
-// Suppress unused import
-void resourceForTopic;

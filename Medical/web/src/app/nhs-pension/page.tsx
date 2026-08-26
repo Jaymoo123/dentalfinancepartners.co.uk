@@ -357,6 +357,13 @@ export default function NHSPensionPage() {
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
               An NHS additional pension calculator tells you the purchase price. It does not tell you the tax cost. Price the units in the NHS pension additional pension calculator at NHSBSA, then put the resulting increase in pension growth into the tool below to see what it does to your tapered allowance and any charge.
             </p>
+            <p className="mt-3 text-sm sm:text-base text-slate-600">
+              For how many members this actually catches, our{" "}
+              <Link href="/research/annual-allowance-pension-tax-index" className="text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4">
+                Annual Allowance Pension Tax Index
+              </Link>{" "}
+              tracks annual allowance charges across UK registered schemes from HMRC and NHSBSA open data.
+            </p>
           </div>
           <div className="max-w-5xl mx-auto">
             <CalculatorClient slug="nhs-pension-annual-allowance" />

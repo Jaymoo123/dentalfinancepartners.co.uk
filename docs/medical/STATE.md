@@ -76,13 +76,34 @@ not repo).
 - Roughly **1 lead per 46 sessions**. Traffic volume is the lever, not funnel surgery.
 - **No invisible-label bug here**: `Medical/web/src/components/forms/LeadForm.tsx` labels use
   `text-[var(--ink)]` (#001b3d) on `--surface` #ffffff. That defect is generalist and digital-agency
-  only; do not "fix" it here.
+  only; do not "fix" it here. Re-verified 2026-08-26 after the §5.0a item 6 link work.
+- **`calculator-page-cta` was split per calculator on 2026-08-26.** It was one shared id across all
+  ten `/calculators/<slug>` routes, and `vw_cta_performance` groups without `page_path`, so the fleet
+  reported as a single uninterpretable row. The ids are now `calculator-page-cta-<slug>`, matching the
+  `calculator-gallery-<slug>` pattern that `calculators/page.tsx` already got right. **Any
+  `calculator-page-cta` figure dated before 2026-08-26 is the merged ten-calculator fleet total, not
+  one calculator.** The discontinuity at that date is the split, not a collapse in conversions. No
+  baseline needed restating: the id appears nowhere outside site source, `sweep.mjs` counts
+  `data-cta=` occurrences per route rather than ids (the count is unchanged at 1 per route), and
+  `deploy-watch.ts` is hardcoded to `site_key='property'`.
+- Still merged across routes by design, left alone as genuine global aggregates: `nav-book-call`
+  (142 routes) and `specialist_widget` (131). `cta-section-primary` spans 9 routes and is the next
+  candidate if anyone needs per-page CTA reads.
+- **Two interruptive surfaces are live** and pre-date this work: `DeepScrollModal` and `ReturningBar`,
+  both mounted in `src/app/layout.tsx` (lines 117-118), so both render on every route. Recorded here
+  because §5.0a item 7 asks whether any exist, and the answer is yes. Neither was added or removed.
 
 ### Armed monitored windows - FROZEN, excluded from every sweep
-`monitored_pages` site_key='medical': **16 armed rows** (`lower(status)='active'` AND
-`monitor_until > now()`), all expiring **2026-09-10**, plus 3 `flagged` rows. Note the status value
-is lowercase in this table. The 16 are the GP-partnership and NHS-pension set, which is also the
-site's best-performing content, so the Stage 2 sweep works around them until 09-11.
+**CORRECTED 2026-08-26: the frozen set is 19 rows, not 16, and the `status` predicate must not be
+used.** The correct derivation is `monitor_until > now()` and nothing else:
+`select slug, status, monitor_until from monitored_pages where site_key='medical' and monitor_until
+> now()`. That returns **19 rows**: 18 blog posts expiring **2026-09-10** plus `__home`
+(`page_url = '/'`) expiring **2026-10-06**. Three of the 19 carry `status='flagged'`
+(`__home`, `gp-accounting-guide`, `nhs-pension-scheme-pays-doctors-deadlines`) and a
+`lower(status)='active'` filter silently excuses all three while their windows are still live. Every
+row returned by the date predicate is frozen whatever its status says. Note the status value is
+lowercase in this table. The set is the GP-partnership and NHS-pension content plus the homepage,
+which is also the site's best-performing content, so the Stage 2 sweep works around them until 09-11.
 
 ### Corpus + tooling readiness
 - **Namespace finding 2026-08-26, not yet diagnosed:** the corpus is not only `/blog/<slug>`. Live pages
