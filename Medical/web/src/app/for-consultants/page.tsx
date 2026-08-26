@@ -93,7 +93,7 @@ const data: AudienceStage = {
     },
     {
       title: "Annual planning and retirement modelling",
-      body: "Pre-retirement modelling covering: pension lump sum vs annuity comparisons, lifetime allowance position, optimal retirement date relative to the tax year, and whether partial retirement or phased wind-down of private work is beneficial.",
+      body: "Pre-retirement modelling covering: pension lump sum options, your position against the Lump Sum Allowance and the Lump Sum and Death Benefit Allowance that replaced the abolished lifetime allowance on 6 April 2024, optimal retirement date relative to the tax year, and whether partial retirement or phased wind-down of private work is beneficial.",
     },
   ],
   faqs: [

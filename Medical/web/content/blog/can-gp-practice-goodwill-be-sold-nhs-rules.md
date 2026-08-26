@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/can-gp-practice-goodwill-be-s
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/39192382/pexels-photo-39192382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/doctor-consultation-in-modern-clinic-office-39192382/"
 category: "GP Tax & Accounts"
 metaTitle: "Can You Sell GP Practice Goodwill? The NHS Rules"
 metaDescription: "NHS GP practice goodwill cannot be sold (banned since 1 April 2004). What this means for a partnership buy-in or buy-out, and the one private exception."
 altText: "GP partners reviewing a partnership agreement and practice valuation documents"
-image: ""
 h1: "Can You Sell GP Practice Goodwill? The NHS Goodwill-Sale Ban Explained"
 keyTakeaways:
 - "The sale of NHS GP practice goodwill has been prohibited since 1 April 2004, originally under SI 2004/906 and now under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)."

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/pcn-clinical-director-payment
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7108332/pexels-photo-7108332.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-couple-sitting-at-a-doctor-s-clinic-7108332/"
 category: "GP Practice Management"
 metaTitle: "PCN Clinical Director Payments: Tax & Pension"
 metaDescription: "How PCN clinical director and leadership pay is taxed and whether it is NHS pensionable, why it depends on the payment route, and the VAT point to watch."
 altText: "PCN clinical director reviewing leadership payment arrangements with a medical accountant"
-image: ""
 h1: "PCN Clinical Director and Leadership Payments: How They Are Taxed and Pensioned"
 keyTakeaways:
 - "Clinical director, leadership and management funding is now combined into core PCN funding within the Network Contract DES, so how it is paid to the individual is a decision the network and practices make."

@@ -5,18 +5,25 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/tools/registry";
 
+// Retitled 2026-08-26. Two problems with the old meta. First, the description
+// said "3 free calculators" while the registry has shipped TEN since before
+// this pull, so the page understated itself by seven and named none of the
+// seven. Second, neither title nor H1 carried the phrases the tool demand is
+// actually expressed in ("NHS pension annual allowance calculator", "locum tax
+// calculator", "tapered annual allowance calculator"), which is why this page
+// registered zero head-family impressions in 90 days.
 export const metadata: Metadata = {
-  title: "Free Medical Tax Calculators | NHS Pension, Locum Tax & Incorporation",
+  title: "NHS Pension Annual Allowance Calculator & Doctor Tax Calculators",
   description:
-    "3 free calculators for UK doctors: NHS pension annual allowance and tapered allowance, locum doctor tax calculator, private practice incorporation comparison. Current 2025/26 and 2026/27 tax rates. Instant results.",
+    "Ten free calculators for UK doctors: NHS Pension annual allowance and tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and incorporation. 2026/27 rates, no sign-up.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
-    title: "Free Medical Tax Calculators for UK Doctors",
+    title: "NHS Pension Annual Allowance Calculator & Doctor Tax Calculators",
     description:
-      "Calculate NHS pension allowance, locum tax, and incorporation savings. 2025/26 and 2026/27 rates.",
+      "Ten free calculators for UK doctors: annual allowance and taper, Scheme Pays, tiered superannuation, locum tax, GP partner drawings and incorporation. 2026/27 rates.",
     url: `${siteConfig.url}/calculators`,
     type: "website",
-    images: [{ url: `/api/og?title=${encodeURIComponent("Free Medical Tax Calculators for UK Doctors")}`, width: 1200, height: 630, alt: "Free Medical Tax Calculators for UK Doctors" }],
+    images: [{ url: `/api/og?title=${encodeURIComponent("Medical Tax Calculators for UK Doctors")}`, width: 1200, height: 630, alt: "Medical Tax Calculators for UK Doctors" }],
   },
 };
 
@@ -33,11 +40,14 @@ export default function CalculatorsIndexPage() {
               Free tools
             </div>
             <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Medical tax calculators for UK doctors
+              NHS Pension annual allowance calculator and medical tax calculators
             </h1>
             <p className="mt-4 text-lg text-white/80 leading-relaxed">
-              Free calculators built by specialist medical accountants. Work out your NHS pension annual allowance,
-              locum tax liability, and private practice incorporation savings. No email gate, no sign-up.
+              Ten free calculators for UK doctors, all on 2026/27 rates. Work out your NHS Pension annual allowance and
+              whether the taper applies, model a Scheme Pays election, check your tiered superannuation contribution,
+              estimate locum tax, plan GP partner drawings, compare salaried GP against partner, and test whether
+              incorporating private practice is worth the pension accrual it costs. No email gate and no sign-up: every
+              calculator gives you the figure on the page.
             </p>
           </div>
         </div>

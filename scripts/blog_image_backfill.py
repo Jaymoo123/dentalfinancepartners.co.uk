@@ -178,9 +178,108 @@ _CONTRACTORS_QUERY_MAP: list[tuple[str, str]] = [
 ]
 _CONTRACTORS_FALLBACK = "business professional working laptop office uk"
 
+_MEDICAL_QUERY_MAP: list[tuple[str, str]] = [
+    # City-specific gp-accountant-<city> pages: vary the query per city so
+    # dedup against the shared "gp accountant" pool doesn't exhaust in one
+    # run (12 pages would otherwise all fight over the same 5-15 candidates).
+    ("gp-accountant-birmingham",  "accountant meeting office professional uk city"),
+    ("gp-accountant-bristol",     "accountant desk calculator professional uk"),
+    ("gp-accountant-cost",        "calculator receipts fee paperwork desk"),
+    ("gp-accountant-edinburgh",   "accountant office meeting professional scotland"),
+    ("gp-accountant-glasgow",     "accountant office desk professional scotland"),
+    ("gp-accountant-leeds",       "accountant meeting laptop professional office"),
+    ("gp-accountant-liverpool",   "accountant desk paperwork professional uk"),
+    ("gp-accountant-london",      "accountant office meeting professional city uk"),
+    ("gp-accountant-manchester",  "accountant meeting office professional uk"),
+    ("gp-accountant-newcastle",   "accountant desk laptop professional uk"),
+    ("gp-accountant-sheffield",   "accountant office paperwork professional uk"),
+    ("nottingham-gp-accountant",  "accountant office desk professional uk"),
+    ("gp-accountant-services-complete-guide", "accountant meeting consulting professional office"),
+    ("gp-practice-income-pcse-statement-reconciliation", "accountant reviewing statement desk calculator"),
+    # gp-partnership-* / gp-partner-* group: vary phrasing so each pulls a
+    # different top-5 result instead of exhausting the same generic query.
+    ("gp-expense-sharing-vs-full-partnership",       "medical colleagues discussing paperwork office"),
+    ("gp-partner-drawings-vs-profit-tax-reserving",  "calculator financial documents desk business"),
+    ("gp-partner-vs-salaried-gp-tax-comparison",     "doctors comparing documents desk"),
+    ("gp-partnership-basis-period-reform-explained", "calendar planning documents desk office"),
+    ("gp-partnership-last-man-standing-premises-risk", "empty office building exterior uk"),
+    ("gp-partnership-mutual-assessment-period-what-to-check", "medical team reviewing documents office"),
+    ("gp-partnership-profit-sharing-tax-planning",   "business partners handshake office meeting"),
+    ("gp-partnership-tax-complete-guide",            "medical partners meeting boardroom desk"),
+    ("reading-gp-partnership-accounts-current-capital-accounts", "accountant reviewing ledger documents desk"),
+    ("retiring-from-gp-partnership-tax-capital-account", "senior professional retirement planning desk"),
+    # Locum pages exhausting the shared stethoscope-desk pool.
+    ("locum-doctor-tax-complete-guide",         "doctor reviewing tax documents desk"),
+    ("locum-doctor-umbrella-company-2026-reforms", "freelance professional laptop desk office"),
+    ("nhs-pension-for-locums-form-a-form-b",    "pension form paperwork desk calculator"),
+    ("nhs-pension-tax-charges-how-to-minimize", "tax charge documents calculator desk"),
+    ("nhs-pension-scheme-pays-doctors-deadlines", "deadline calendar documents desk office"),
+    ("nhs-pension-tapered-annual-allowance-calculator", "calculator spreadsheet financial planning desk"),
+    ("locum",                "doctor stethoscope paperwork desk"),
+    ("nhs-pension",          "financial planning documents calculator desk"),
+    ("mccloud",              "financial planning documents calculator desk"),
+    ("pension",              "pension retirement planning paperwork desk"),
+    ("goodwill",             "consulting room desk paperwork"),
+    ("partnership",          "medical professionals meeting consulting room"),
+    ("partner",              "medical professionals meeting consulting room"),
+    ("drawings",             "accountant calculator paperwork desk"),
+    ("premises",             "gp surgery building exterior uk"),
+    ("surgery",              "gp surgery building exterior uk"),
+    ("dispensing",           "pharmacy counter shelves medicine"),
+    ("private-practice",     "consulting room desk professional"),
+    ("private-medical",      "consulting room desk professional"),
+    ("incorporation",        "business documents signing desk"),
+    ("limited-company",      "business documents signing desk"),
+    ("s162",                 "business documents signing desk"),
+    ("s455",                 "business finance documents desk"),
+    ("directors-loan",       "business finance documents desk"),
+    ("family-investment",    "financial planning documents desk"),
+    ("cgt",                  "financial planning calculator documents"),
+    ("badr",                 "financial planning calculator documents"),
+    ("selling",              "handshake business documents office"),
+    ("merger",               "medical professionals meeting handshake"),
+    ("vat",                  "invoice paperwork accounting desk"),
+    ("corporation-tax",      "business accounts calculator office"),
+    ("self-assessment",      "tax return laptop professional uk"),
+    ("tax-return",           "tax return laptop professional uk"),
+    ("tax-deductions",       "receipts paperwork calculator desk"),
+    ("tax-advice",           "accountant meeting professional office"),
+    ("expenses",             "receipts paperwork calculator desk"),
+    ("home-office",          "home office desk laptop professional"),
+    ("payroll",              "payroll office paperwork calculator"),
+    ("bookkeeping",          "bookkeeping ledger calculator desk"),
+    ("accounting-software",  "laptop accounting software desk"),
+    ("accounting-guide",     "accountant paperwork calculator desk"),
+    ("financial-planning",   "financial planning documents desk"),
+    ("salary-vs-dividend",   "business finance planning desk"),
+    ("dividend",             "business finance documents desk"),
+    ("surplus-cash",         "business finance documents desk"),
+    ("ir35",                 "business consultant working laptop office uk"),
+    ("umbrella",             "freelancer laptop home office uk"),
+    ("expert-witness",       "consultant desk paperwork professional"),
+    ("medico-legal",         "consultant desk paperwork professional"),
+    ("qof",                  "gp surgery reception desk uk"),
+    ("enhanced-services",    "gp surgery reception desk uk"),
+    ("arrs",                 "medical staff meeting nhs office"),
+    ("pcn",                  "medical staff meeting nhs office"),
+    ("gms-funding",          "gp surgery reception desk uk"),
+    ("basis-period",         "calendar tax paperwork desk"),
+    ("capital-account",      "financial planning calculator documents"),
+    ("mutual-assessment",    "financial documents review desk"),
+    ("cost-rent",            "gp surgery building exterior uk"),
+    ("notional-rent",        "gp surgery building exterior uk"),
+    ("last-man-standing",    "gp surgery building exterior uk"),
+    ("mtd",                  "making tax digital laptop accountant"),
+    ("gp-accountant",        "doctor accountant meeting consulting room"),
+    ("gp-accounting",        "doctor accountant meeting consulting room"),
+    ("retiring",             "senior doctor retirement planning desk"),
+]
+_MEDICAL_FALLBACK = "doctor accountant meeting consulting room uk"
+
 _SITE_QUERY_MAPS: dict[str, tuple[list[tuple[str, str]], str]] = {
     "construction-cis": (_CONSTRUCTION_QUERY_MAP, "uk construction site worker professional"),
     "contractors-ir35": (_CONTRACTORS_QUERY_MAP, _CONTRACTORS_FALLBACK),
+    "medical": (_MEDICAL_QUERY_MAP, _MEDICAL_FALLBACK),
 }
 _DEFAULT_QUERY_MAP: tuple[list[tuple[str, str]], str] = (
     [],
@@ -270,6 +369,33 @@ def _yq(val: str) -> str:
 
 def _has_key(fm_text: str, key: str) -> bool:
     return bool(re.search(rf"(?m)^{re.escape(key)}\s*:", fm_text))
+
+
+def _strip_key(fm_text: str, key: str) -> str:
+    """Remove a top-level `key: value` line (and, if it's a block scalar,
+    its indented child lines) from frontmatter text.
+
+    Needed because posts may already carry a stale empty `image: ""` (or an
+    empty `imageCredit:` stub) elsewhere in the frontmatter. Inserting a new
+    block without removing the old one leaves a duplicate key; YAML then
+    silently keeps whichever occurrence is *last*, which can re-blank an
+    image that was just written. Root-caused here so it's fixed for every
+    site, not just the one that happened to trip it.
+    """
+    lines = fm_text.split("\n")
+    out: list[str] = []
+    i = 0
+    pattern = re.compile(rf"^{re.escape(key)}\s*:")
+    while i < len(lines):
+        if pattern.match(lines[i]):
+            i += 1
+            # Skip indented child lines (block mapping/sequence continuation).
+            while i < len(lines) and (lines[i].startswith(" ") or lines[i].startswith("\t")):
+                i += 1
+            continue
+        out.append(lines[i])
+        i += 1
+    return "\n".join(out)
 
 
 def _insert_image_block(fm_text: str, photo: dict) -> str:
@@ -445,8 +571,12 @@ def main() -> int:
         print(f"         alt={photo['alt']!r}  photographer={photo['photographer']!r}")
 
         if args.execute:
-            # Insert image + imageCredit into frontmatter
-            new_fm = _insert_image_block(fm_text, photo)
+            # Drop any pre-existing (stale/empty) image or imageCredit keys
+            # before inserting fresh ones, so we never leave a duplicate key
+            # that YAML would silently resolve to the wrong occurrence.
+            clean_fm = _strip_key(fm_text, "image")
+            clean_fm = _strip_key(clean_fm, "imageCredit")
+            new_fm = _insert_image_block(clean_fm, photo)
             # Insert altText if absent
             if not _has_key(fm_text, "altText"):
                 new_fm = _also_insert_alt(new_fm, photo["alt"])

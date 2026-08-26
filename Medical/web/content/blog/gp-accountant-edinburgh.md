@@ -4,11 +4,16 @@ slug: "gp-accountant-edinburgh"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Edinburgh | Scottish Tax for GPs 2026/27"
 metaDescription: "Edinburgh GP accountant for partners, salaried GPs and locums. Scottish tax bands 2026/27, NHS pension allowance and practice accounts across Lothian."
 altText: "Edinburgh GP accountant providing specialist medical tax services"
-image: ""
 h1: "GP Accountant Edinburgh: Expert Tax Services for Medical Professionals"
 keyTakeaways:
 - "For 2026/27 a Scottish taxpayer enters the 42% higher rate at £43,663, well below the £50,270 point where the rest of the UK reaches 40%."

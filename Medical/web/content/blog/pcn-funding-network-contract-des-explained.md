@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/pcn-funding-network-contract-
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6129147/pexels-photo-6129147.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/doctor-wearing-face-mask-6129147/"
 category: "GP Practice Management"
 metaTitle: "PCN Funding & the Network Contract DES Explained"
 metaDescription: "How money flows through a primary care network: the Network Contract DES, core PCN funding, ARRS reimbursement, the nominated payee and practice accounts."
 altText: "GP partners and a practice manager reviewing primary care network funding statements"
-image: ""
 h1: "PCN Funding Explained: The Network Contract DES and How the Money Flows"
 keyTakeaways:
 - "The Network Contract DES is a voluntary Directed Enhanced Service on top of the core GMS or PMS contract, so its funding and obligations are accounted for separately from the Global Sum and QOF."

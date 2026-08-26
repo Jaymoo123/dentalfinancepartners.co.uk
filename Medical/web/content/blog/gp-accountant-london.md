@@ -4,11 +4,16 @@ slug: "gp-accountant-london"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8297484/pexels-photo-8297484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-and-woman-working-in-the-office-8297484/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant London"
 metaDescription: "GP accountant in London for practices, partners, salaried GPs and locums. Partnership accounts, NHS pension allowance, tax returns and MTD. Lead-gen guide."
 altText: "London GP consulting with specialist medical accountant about practice finances"
-image: ""
 h1: "GP Accountant in London: Specialist Accounting for Practices, Partners and Locums"
 keyTakeaways:
 - "GP partners are taxed on their allocated profit share, not on the drawings they take, so reconciling drawings against actual profit at year-end is central work."

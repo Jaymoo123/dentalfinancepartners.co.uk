@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/surplus-cash-medical-limited-
 date: "2026-07-06"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/5387258/pexels-photo-5387258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-signing-a-contract-5387258/"
 category: "Incorporation & Company Structures"
 metaTitle: "Surplus Cash in a Medical Limited Company: Options"
 metaDescription: "Surplus cash options for a consultant's company, from employer pension contributions to investing in-company, and the BADR trading-status trap."
 altText: "Consultant reviewing company accounts and investment options with an adviser at a desk"
-image: ""
 h1: "What To Do With Surplus Cash in a Medical or Consultant Limited Company"
 keyTakeaways:
 - "Employer pension contributions are deductible for corporation tax on a paid basis under FA 2004 s.196, carry no employer National Insurance, and enter the pension with no income tax charge."

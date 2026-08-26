@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/how-gms-funding-works-global-
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7108325/pexels-photo-7108325.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/couple-looking-at-documents-in-reception-of-medical-center-7108325/"
 category: "GP Practice Management"
 metaTitle: "GMS Funding Explained: Global Sum & Carr-Hill Formula"
 metaDescription: "How an NHS GP practice is paid: the Global Sum per weighted patient, the Carr-Hill formula, the Statement of Financial Entitlements, and GMS, PMS and APMS."
 altText: "GP practice manager reviewing NHS Global Sum funding statements at a desk"
-image: ""
 h1: "How GMS Practice Funding Works: The Global Sum, the Carr-Hill Formula and Weighted Patients"
 howtoSteps:
   - name: "Start from the registered patient list"

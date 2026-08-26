@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-bristol"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8297351/pexels-photo-8297351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/an-accountant-using-a-calculator-8297351/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Bristol"
 metaDescription: "GP accountant in Bristol for partners, salaried GPs and locum doctors. NHS pension annual allowance, partnership accounts and locum tax. Free initial chat."
 altText: "Bristol GP practice accountant meeting with medical professionals to discuss tax planning and NHS pension annual allowance"
-image: ""
 h1: "GP Accountant in Bristol: Specialist Tax and Accounting for Doctors"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold (prohibited since 1 April 2004, currently under SI 2019/251), so a Bristol practice entry or exit is priced on tangible assets and capital accounts, not a goodwill multiple."

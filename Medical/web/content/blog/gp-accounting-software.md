@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accounting-software"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/11412585/pexels-photo-11412585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Towfiqu barbhuiya"
+  photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/laptop-and-calculator-on-top-of-a-table-11412585/"
 category: "GP Practice Management"
 metaTitle: "GP Accounting Software & MTD Bookkeeping | UK Practices"
 metaDescription: "How to choose MTD-compatible GP accounting software and bookkeeping for a UK practice: NHS income, partnership records and the rules for 2026/27."
 altText: "GP practice manager reviewing MTD-compatible accounting software showing NHS income and partnership reports"
-image: ""
 h1: "GP Accounting Software: Choosing MTD-Ready Bookkeeping for Your Practice"
 keyTakeaways:
 - "MTD for Income Tax mandates digital records and quarterly updates for qualifying income above £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028."

@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/gp-partner-vs-salaried-gp-tax-
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7578802/pexels-photo-7578802.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "cottonbro studio"
+  photographerUrl: "https://www.pexels.com/@cottonbro"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/hands-of-doctor-holding-notepad-and-pen-7578802/"
 category: GP Tax & Accounts
 metaTitle: 'GP Partner vs Salaried GP: Tax and Take-Home Compared'
 metaDescription: 'How GP partner and salaried GP pay compare: profit share vs salary, Class 4 NIC at 6% vs Class 1, NHS pension and take-home. Decide on the numbers.'
 altText: UK medical professionals reviewing tax documents comparing GP partner versus salaried GP tax implications
-image: ''
 h1: 'GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27'
 keyTakeaways:
 - "A GP partner is self-employed, taxed on their profit share via SA800 and SA104; a salaried GP is a PAYE employee taxed at source."

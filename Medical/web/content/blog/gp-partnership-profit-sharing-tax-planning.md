@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-partnership-profit-sharing
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6918529/pexels-photo-6918529.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "George Morina"
+  photographerUrl: "https://www.pexels.com/@georgemorina"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/business-people-doing-handshake-6918529/"
 category: "GP Practice Management"
 metaTitle: "GP Partnership Profit Sharing and Tax Planning 2026/27"
 metaDescription: "How GP partners are taxed on profit share (not drawings), prior shares, the deed and the premises return drive allocation, and what to plan for 2026/27."
 altText: "GP partners reviewing profit sharing tax planning documents with calculator and financial charts"
-image: ""
 h1: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/27"
 keyTakeaways:
 - "GP partners are taxed on the profit allocated to them for the year, not on the drawings they actually take, so drawings are only a cash advance trued up at the year-end."

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-partnership-last-man-stand
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/34649284/pexels-photo-34649284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Cara Denison"
+  photographerUrl: "https://www.pexels.com/@cara-denison-886614634"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/modern-office-building-at-night-with-reflections-34649284/"
 category: "GP Practice Management"
 metaTitle: "Last Man Standing: GP Partnership Premises Risk"
 metaDescription: "Why the last GP partner can be left holding the surgery lease or loan, why incoming partners resist buying in, and how the deed and structure manage risk."
 altText: "GP partners reviewing a surgery lease and partnership deed around a meeting table"
-image: ""
 h1: "The Last Man Standing Problem: GP Partnership Premises Liability and How to Manage It"
 keyTakeaways:
 - "Partners are usually jointly and severally liable on a surgery lease, so under the Partnership Act 1890 the landlord can pursue any single remaining partner for the whole of the rent and end-of-lease dilapidations."

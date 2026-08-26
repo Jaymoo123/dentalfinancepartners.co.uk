@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-newcastle"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7654190/pexels-photo-7654190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-sitting-at-the-desk-and-counting-money-while-using-a-calculator-7654190/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Newcastle | NHS Pension & Partnership Experts"
 metaDescription: "Specialist GP accountant in Newcastle for Tyneside doctors. NHS pension annual allowance, GP partnership accounts, locum tax and self-assessment 2026/27."
 altText: "Newcastle GP surgery exterior showing medical practice with accountant consultation"
-image: ""
 h1: "GP Accountant Newcastle: Specialist Medical Accounting Services"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold and has not been since 1 April 2004, with the prohibition now sitting in SI 2019/251, so a partner buy-in or buy-out covers tangible assets, premises and capital accounts only."

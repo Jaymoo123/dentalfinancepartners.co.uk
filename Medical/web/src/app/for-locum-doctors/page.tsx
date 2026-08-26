@@ -3,10 +3,15 @@ import { ShieldAlert, List, Receipt, Building2, Phone, TrendingDown } from "luci
 import { siteConfig } from "@/config/site";
 import { AudienceStageLayout, type AudienceStage } from "@/components/audience/AudienceStageLayout";
 
+// Retitled 2026-08-26. The old title led with "locum accountant" (2 impr, 90d)
+// and buried the phrase that actually carries the demand: "accountants for
+// locum doctors", 106 impressions at position 60.5, caught by the HOMEPAGE
+// rather than this page. Leading with the doctor-specific phrase, keeping
+// "locum accountant" as the second phrase so neither is lost.
 export const metadata: Metadata = {
-  title: "Locum Accountant | IR35, Ltd Company & Tax Returns for Locum Doctors",
+  title: "Accountants for Locum Doctors | Locum Accountant, IR35 & Tax",
   description:
-    "Specialist locum accountant services for UK locum doctors. IR35 status reviews, limited company vs umbrella analysis, locum tax returns, expense claims, and NHS pension guidance. Medical-only focus.",
+    "Accountants for locum doctors across the UK. IR35 status per engagement, limited company versus umbrella modelled on your earnings, locum expense claims, self-assessment, and NHS Pension Forms A and B.",
   alternates: {
     canonical: `${siteConfig.url}/for-locum-doctors`,
     languages: {
@@ -29,20 +34,20 @@ const data: AudienceStage = {
   role: "locum-doctors",
   displayRole: "Locum Doctors",
   badge: "Self-employed locums · Limited company · IR35",
-  heroHeading: "Locum accountant and tax specialists for UK locum doctors",
+  heroHeading: "Accountants for locum doctors across the UK",
   intro:
-    "Locum medicine gives you clinical flexibility, but the financial side is genuinely complicated: IR35 status varies by engagement, expense claims depend on your working pattern, the limited company vs umbrella vs sole trader decision affects your take-home significantly, and your NHS pension entitlement depends on which type of engagement you hold. Most accountants who have not worked extensively with locums get at least one of these wrong.",
+    "Locum medicine buys clinical flexibility at the price of a genuinely complicated financial position. IR35 status is decided engagement by engagement and by the working arrangement rather than the wording of the contract. Which expenses are allowable depends on your travel pattern, not on a standard list. The choice between a limited company, an umbrella and sole trader status moves your take-home meaningfully and the right answer changes with your earnings level. And NHS Pension accrual on locum work only happens if Forms A and B are actually completed and submitted. An accountant who sees locum doctors regularly gets all four right; one who does not usually gets at least one wrong.",
   stats: [
-    { value: "100%", label: "Medical-only client base" },
-    { value: "5", label: "IR35 factors we review" },
-    { value: "24h", label: "Response guarantee" },
-    { value: "£0", label: "Hidden fees" },
+    { value: "100%", label: "Medical work only" },
+    { value: "1 day", label: "Reply to enquiries" },
+    { value: "£90k", label: "VAT threshold, taxable turnover only" },
+    { value: "£50k", label: "MTD for Income Tax, live since Apr 2026" },
   ],
   concerns: [
     {
       icon: ShieldAlert,
-      title: "What is my IR35 status and does it matter?",
-      body: "For NHS work, HMRC has long indicated that most GP locum engagements sit outside IR35 due to the lack of substitution clauses and the way NHS practices operate. However, status is determined by the actual working arrangement, not the contract alone. We review each engagement type, advise on structuring to maintain outside-IR35 status where appropriate, and keep you informed as HMRC guidance evolves.",
+      title: "What is my IR35 status, and who actually decides it?",
+      body: "First, IR35 only engages if you work through a personal service company. A sole trader locum has no intermediary, so IR35 does not apply and status is judged on the ordinary employed-versus-self-employed factors instead. If you do use a company, who decides depends on the hirer. NHS Trusts and other public bodies have determined status themselves since 6 April 2017, and medium and large private hirers since 6 April 2021, issuing a Status Determination Statement with reasons that the fee-payer then operates PAYE against. Only small private-sector clients leave the decision with your own company. A locum across several hirers routinely holds a mix of inside and outside determinations at the same time, and a determination you disagree with can be challenged through the client-led disagreement process.",
     },
     {
       icon: Building2,
@@ -52,7 +57,7 @@ const data: AudienceStage = {
     {
       icon: Receipt,
       title: "What expenses can I claim as a locum?",
-      body: "GMC retention, MDU/MPS/MDDUS indemnity, professional subscriptions, motor between separate engagements (not home-to-first), locum booking fees and agency costs, CPD and conference costs, home office where genuinely used for administration, and medical equipment. We review new clients' previous returns and typically find meaningful under-claims.",
+      body: "GMC retention, professional subscriptions on HMRC's approved List 3, motor between separate engagements at 55p per mile for the first 10,000 business miles in 2026/27 then 25p (home to first engagement is ordinary commuting and is not allowable), locum booking and agency fees, CPD genuinely relevant to current practice, home office on a defensible apportionment, and medical equipment, usually through capital allowances. Indemnity is worth a second look: since 1 April 2019 the Clinical Negligence Scheme for General Practice has covered NHS general practice clinical negligence in England without a subscription, so your own MDU, MPS or MDDUS cost now mainly relates to private, non-clinical and regulatory cover. Prior returns are reviewed and amended where the under-claim is material.",
     },
     {
       icon: List,
@@ -61,8 +66,8 @@ const data: AudienceStage = {
     },
     {
       icon: Phone,
-      title: "Am I entitled to the NHS Pension Scheme as a locum?",
-      body: "GP locums working for practices can join the NHS Pension Scheme as a type 2 medical practitioner, which covers solo self-employed GPs. Bank locums contracted through NHS trusts are usually enrolled as a type 1 (employee). The pension treatment and contribution rates differ. We confirm your entitlement and ensure you are not missing pensionable service.",
+      title: "Can I pension my locum work, and what is the 10-week rule?",
+      body: "Freelance GP locum work in England is pensioned through Forms A and B. Form A is completed for the session and approved by the practice, then Form B goes to PCSE. The trap is the deadline: PCSE will not pension a period of freelance locum work that ended more than 10 weeks ago, and forms received after that are rejected. This is not a late-filing penalty, it is pension accrual lost permanently, which makes it the single most expensive administrative mistake a locum can make. Contributions are then paid over no later than the seventh day of the following month. Bank and trust engagements are different again, usually enrolled as employed membership through payroll.",
     },
     {
       icon: TrendingDown,
@@ -110,17 +115,17 @@ const data: AudienceStage = {
       a: "Yes, but only the business portion. Travel from home to your first engagement is typically not allowable (it is ordinary commuting). Travel between separate practices or to separate engagements in a day is allowable. If you use your car for both personal and business purposes, you claim either the approved mileage rate (55p per mile for the first 10,000 business miles in 2026/27, then 25p per mile) or the actual business proportion of all running costs and capital allowances. We assess which method gives you the better deduction based on your vehicle and mileage.",
     },
     {
-      q: "How does the NHS Pension Scheme type 2 certificate work?",
-      a: "As a self-employed GP locum working directly with practices (not through an NHS trust), you complete a type 2 certificate after each locum session. The practice deducts your tiered employee contribution from your sessional fee. You later pay the employer contribution (currently 23.7%) via your self-assessment. We include this in your return and ensure you are not overpaying or underpaying employer contributions.",
+      q: "Forms A and B, or a Type 2 certificate? Which applies to me?",
+      a: "They are for different people, and mixing them up costs pension. Freelance GP locums use Forms A and B per period of locum work: Form A is approved by the practice, then Form B is submitted to PCSE, and the work must reach PCSE within 10 weeks of the period ending or it cannot be pensioned at all. The Type 2 annual self-assessment is for salaried and solo GPs, and like the Type 1 annual certificate for partners it runs to a 28 February deadline a year in arrears, so the 2025/26 pension year is due by 28 February 2027. Employee contributions are tiered by pensionable pay, with the bands uplifted each 1 April by the previous September's CPI, and the employer rate has been 23.7% of pensionable pay since 1 April 2024. That employer rate is due to be re-set from 1 April 2027 by the 2024 valuation.",
     },
     {
       q: "What records should I keep as a locum doctor?",
       a: "Income: all sessional fee invoices and agency payment summaries, bank statements showing receipts. Expenses: receipts or invoices for all claimed items, a mileage log with dates, locations, and purpose for all professional travel. Pension: type 2 certificates or type 1 P60 statements. The self-assessment record-keeping requirement is five years from the filing deadline. We provide a simple record-keeping template when you join.",
     },
   ],
-  ctaTitle: "Get your locum tax done right",
+  ctaTitle: "Talk to an accountant who works with locum doctors",
   ctaBody:
-    "30-minute call, free. We review your current structure, check your IR35 exposure, and identify any expense claims you are missing. No obligation.",
+    "A free 30-minute call covering your current structure, your IR35 position engagement by engagement, whether any locum work is at risk of falling outside the 10-week pension window, and the expense claims that look under-made. No obligation.",
   relatedCalculators: [
     {
       href: "/calculators/locum-tax-calculator",

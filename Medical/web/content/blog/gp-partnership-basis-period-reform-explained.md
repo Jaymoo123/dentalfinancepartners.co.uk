@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-partnership-basis-period-r
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6929030/pexels-photo-6929030.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-documents-6929030/"
 category: "GP Tax & Accounts"
 metaTitle: "Basis Period Reform for GP Partnerships Explained"
 metaDescription: "Basis period reform for GPs: the tax-year basis from 2024/25, the 2023/24 transition year, overlap relief, and spreading transition profit over five years."
 altText: "GP partner reviewing how practice profit is matched to tax years under the tax-year basis"
-image: ""
 h1: "Basis Period Reform and Your GP Partnership: The Tax-Year Basis, the Transition and Overlap Relief"
 keyTakeaways:
 - "From 2024/25 onwards a GP partner is taxed on the profit arising in the tax year (6 April to 5 April), not on the profit of the accounting period ending in it."

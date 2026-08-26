@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-tapered-annual-all
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7054399/pexels-photo-7054399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Kindel Media"
+  photographerUrl: "https://www.pexels.com/@kindelmedia"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/monthly-budget-planning-7054399/"
 category: NHS Pension Planning
 metaTitle: 'NHS Tapered Annual Allowance: How to Calculate Yours'
 metaDescription: 'Work out your tapered NHS pension allowance step by step: threshold income over £200,000, adjusted income, the taper and the £10,000 floor. Avoid a charge.'
 altText: NHS pension calculator showing tapered annual allowance calculations for UK medical professionals
-image: ''
 h1: 'NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors'
 keyTakeaways:
 - "The NHS pension taper for 2026/27 bites only when threshold income exceeds £200,000 AND adjusted income exceeds £260,000, so failing either test leaves your full £60,000 allowance intact."

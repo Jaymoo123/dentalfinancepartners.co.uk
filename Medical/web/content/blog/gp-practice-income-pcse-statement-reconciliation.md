@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-practice-income-pcse-state
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7821708/pexels-photo-7821708.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/white-papers-on-the-table-7821708/"
 category: "GP Practice Management"
 metaTitle: "Reading and Reconciling Your GP Practice PCSE Statements"
 metaDescription: "How to read your PCSE Online payment statements, reconcile them against the Statement of Financial Entitlements, and spot and recover underpayments."
 altText: "GP practice manager reconciling a PCSE Online payment statement against expected NHS income on a spreadsheet"
-image: ""
 h1: "Are You Actually Being Paid What You Are Owed? Reading and Reconciling Your PCSE Statements"
 keyTakeaways:
 - "NHS GP income is paid centrally through the monthly PCSE Online payment statement, produced by Primary Care Support England on behalf of NHS England, not by patients."

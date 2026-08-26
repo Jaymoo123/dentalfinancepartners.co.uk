@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/consultant-directors-loan-acc
 date: "2026-07-06"
 generator: "opus-4.8/netnew-wave"
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8297031/pexels-photo-8297031.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-in-long-sleeve-shirt-holding-a-calculator-8297031/"
 category: "Incorporation & Company Structures"
 metaTitle: "Director's Loan Account: Consultant Medical Company"
 metaDescription: "How an overdrawn director's loan account works in a consultant's company: the s.455 charge (33.75% then 35.75%), s.458 relief and the beneficial-loan trap."
 altText: "A consultant reviewing their director's loan account with a medical accountant"
-image: ""
 h1: "The Director's Loan Account in a Consultant's Medical Company: s.455, s.458 and the 2026/27 Rules"
 keyTakeaways:
 - "An overdrawn director's loan account in a close medical company triggers a CTA 2010 section 455 charge at the dividend upper rate, 33.75% on loans made in 2025/26 and 35.75% on loans made on or after 6 April 2026."

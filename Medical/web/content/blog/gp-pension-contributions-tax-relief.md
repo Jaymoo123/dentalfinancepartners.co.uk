@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/gp-pension-contributions-tax-r
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7545279/pexels-photo-7545279.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "SHVETS production"
+  photographerUrl: "https://www.pexels.com/@shvets-production"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/an-elderly-man-looking-at-the-documents-on-the-table-near-his-laptop-7545279/"
 category: NHS Pension Planning
 metaTitle: 'GP Pension Contributions: NHS Tiers and Tax Relief'
 metaDescription: How GP NHS pension contributions get tax relief through net pay, with 2026/27 tiers from 5.2% to 12.5% set by your pensionable pay. Claim it in full.
 altText: UK GP reviewing pension contribution documents and tax relief calculations
-image: ''
 h1: 'GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals'
 keyTakeaways:
 - "NHS employee pension contributions are deducted under the net pay arrangement, before income tax is calculated, so GPs get relief automatically at their marginal rate with no separate Self Assessment claim."

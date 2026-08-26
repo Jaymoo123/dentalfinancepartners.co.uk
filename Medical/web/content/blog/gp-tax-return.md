@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-tax-return"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8927687/pexels-photo-8927687.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Nataliya Vaitkevich"
+  photographerUrl: "https://www.pexels.com/@n-voitkevich"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-writing-on-white-paper-8927687/"
 category: "GP Tax & Accounts"
 metaTitle: "GP Tax Return 2026/27: SA800, SA104 and SA103 Filing Guide"
 metaDescription: "Which self-assessment forms a GP files by role (SA800, SA104, SA103, SA100), the 31 January deadline, payments on account, Class 4 NIC and MTD for 2026/27."
 altText: "UK GP reviewing self-assessment tax return forms and partnership statement at desk"
-image: ""
 h1: "GP Tax Return: Complete Guide for UK General Practitioners"
 keyTakeaways:
 - "A GP partner is taxed on their allocated profit share flowing from the SA800 onto their personal SA104, not on the drawings actually withdrawn during the year."

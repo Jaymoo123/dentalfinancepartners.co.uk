@@ -263,7 +263,14 @@ never decides whether coverage happened; the matcher does.
   findable. Never delete depth to make room for a plain-English section.
 - **One page per consensus topic, not per keyword.** The corpus is already over-fragmented; the
   map exists to consolidate demand onto fewer pages, not to justify more.
-- **Prioritise by peer-winnable volume, not raw volume.** For each cluster compute the volume of
+- **Prioritise by peer-winnable volume, not raw volume. NARROWED 2026-08-26 (owner instruction,
+  rollout decision 21): peer-winnable volume SEQUENCES the work and never excludes any of it.**
+  Nothing leaves the coverage set for being held by an unwinnable domain, and harvests include
+  those domains because they define the market's vocabulary. The killing evidence: a Google-derived
+  winnability screen on Medical would have discarded a third of the head SERP, on a site where Bing
+  out-clicks Google 3.4x and indexes the corpus fully while Google indexes ~16% of it. Winnability is
+  per engine, and screening on one engine throws away the other. Original rationale, still valid for
+  ORDERING: For each cluster compute the volume of
   keywords where a peer-authority domain (a specialist firm, not gov.uk / MSE / a bank / a
   national brand) holds a top-10 position. That number, not the headline volume, is the
   addressable prize. (Example, Property SDLT: the calculator cluster is 1.54M raw but 275k

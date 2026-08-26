@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctor
 date: '2026-06-03'
 generator: opus-4.8/netnew-wave
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7580856/pexels-photo-7580856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/calendar-with-deadline-reminder-7580856/"
 category: NHS Pension Planning
 metaTitle: 'NHS Pension Scheme Pays for Doctors: Deadlines Guide'
 metaDescription: 'Let the NHS scheme settle your annual allowance charge: the mandatory test, the benefit reduction and the 31 July election deadline. Elect in time.'
 altText: Doctor reviewing an NHS pension savings statement and a Scheme Pays election form
-image: ''
 h1: 'NHS Pension Scheme Pays for Doctors: Deadlines, the Mandatory Test and How It Reduces Your Pension'
 keyTakeaways:
 - "Mandatory Scheme Pays applies only where both tests are met at once: the annual allowance charge exceeds £2,000 and your NHS scheme input alone exceeds the standard £60,000 annual allowance."

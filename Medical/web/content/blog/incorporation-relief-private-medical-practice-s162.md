@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/incorporation-relief-private-
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7578800/pexels-photo-7578800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "cottonbro studio"
+  photographerUrl: "https://www.pexels.com/@cottonbro"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-in-white-coat-sitting-at-the-table-7578800/"
 category: "Incorporation & Company Structures"
 metaTitle: "Section 162 Incorporation Relief: Private Practice"
 metaDescription: "Section 162 incorporation relief defers CGT when you move a private medical practice into a company, the 2026 claim change, and the NHS pension trade-off."
 altText: "A doctor and an accountant reviewing the incorporation of a private medical practice"
-image: ""
 h1: "Incorporation Relief (Section 162) for a Private Medical Practice: Deferring CGT"
 keyTakeaways:
 - "Section 162 of the Taxation of Chargeable Gains Act 1992 defers the CGT on transferring an unincorporated business into a company by rolling the gain into the base cost of the new shares, so it is a deferral and not an exemption."

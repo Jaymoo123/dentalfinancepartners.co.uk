@@ -126,9 +126,9 @@ const trustItems = [
     body: "We only work with dental practices. Every client is a dentist, associate, or practice owner.",
   },
   {
-    title: "Proven experience",
-    stat: "50+",
-    body: "Trusted by over 50 dental professionals across London, Manchester, and the UK.",
+    title: "NHS and private together",
+    stat: "NHS + private",
+    body: "Dental income rarely sits on one side of the line. UDA delivery and superannuation on the NHS side, plan and private fees on the other, taxed differently. Both are handled as one position rather than separately.",
   },
   {
     title: "Transparent pricing",
@@ -291,7 +291,7 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)] bg-[var(--surface)] py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
-            We&apos;re specialist dental accountants working exclusively with UK dental practices — from newly qualified associates to established multi-site groups. Over 50 dental clients trust us with their accounting, tax, and financial planning.
+            We&apos;re specialist dental accountants working exclusively with UK dental practices, from newly qualified associates to established multi-site groups. Accounting, tax, and financial planning for the dental sector only.
           </p>
         </div>
       </section>
@@ -318,9 +318,9 @@ export default function HomePage() {
 
       <section className="border-b border-[var(--border)] bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <p className="section-label">What our clients say</p>
+          <p className="section-label">What the work looks like</p>
           <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            Real results for dental practices
+            Four situations dental accountants see repeatedly
           </h2>
           <div className="mt-10 max-w-3xl">
             <TestimonialSlider />

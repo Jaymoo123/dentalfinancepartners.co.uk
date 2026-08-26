@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/gp-payroll-services
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pixabay"
+  photographerUrl: "https://www.pexels.com/@pixabay"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/calculator-and-pen-on-table-209224/"
 category: GP Practice Management
 metaTitle: 'GP Practice Payroll: PAYE, RTI and the NHS Pension'
 metaDescription: 'Run GP practice payroll right: PAYE and RTI for staff, NHS pension alongside auto-enrolment, and employer NIC at 15% above £5,000. Avoid costly errors.'
 altText: Medical practice team reviewing payroll documents and employee records
-image: ''
 h1: 'GP Payroll Services: Complete Guide for Medical Practices'
 keyTakeaways:
 - "GP partners are self-employed and taxed on their share of partnership profit, not on their drawings, so they never go through PAYE."

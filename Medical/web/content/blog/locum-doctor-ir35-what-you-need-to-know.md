@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-ir35-what-you-ne
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7195195/pexels-photo-7195195.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/female-hands-stamping-paper-7195195/"
 category: "Locum Tax"
 metaTitle: "Locum Doctor IR35 & Off-Payroll Rules Explained (2026/27)"
 metaDescription: "How IR35 and off-payroll rules affect locum doctors through a PSC: who decides status, the SDS, the April 2024 PAYE offset, and what inside IR35 costs you."
 altText: "UK locum doctor reviewing IR35 status determination statement and off-payroll contracts on a desk"
-image: ""
 h1: "Locum Doctor IR35: What You Need to Know"
 keyTakeaways:
 - "IR35 only applies where you work through an intermediary such as a personal service company, so a plain sole-trader locum sits outside the off-payroll rules entirely."

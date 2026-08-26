@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/reading-gp-partnership-accoun
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8297126/pexels-photo-8297126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-man-using-a-calculator-8297126/"
 category: "GP Tax & Accounts"
 metaTitle: "How to Read GP Partnership Accounts: A Partner's Guide"
 metaDescription: "Make sense of your GP partnership accounts: the current account, the capital account, drawings, reserves, the profit and loss and the balance sheet."
 altText: "GP partner reading a bound set of partnership accounts showing current and capital accounts"
-image: ""
 h1: "How to Read GP Partnership Accounts: Current Accounts, Capital Accounts and Drawings"
 keyTakeaways:
 - "Your capital account is your long-term stake in the practice's net assets and moves only on a buy-in, a buy-out or a property revaluation, whereas your current account changes every year as profit is credited and drawings debited."

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-financial-planning"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7651751/pexels-photo-7651751.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Kindel Media"
+  photographerUrl: "https://www.pexels.com/@kindelmedia"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-holding-papers-7651751/"
 category: "GP Practice Management"
 metaTitle: "GP Financial Planning 2026/27: Pension, Tax & Protection"
 metaDescription: "GP financial planning for 2026/27: NHS pension allowance and taper, profit extraction, protection and retirement for partners, salaried GPs and locums."
 altText: "UK GP reviewing financial planning documents and NHS pension statements"
-image: ""
 h1: "GP Financial Planning: A Complete Guide for UK General Practitioners"
 keyTakeaways:
 - "The standard NHS pension annual allowance is £60,000 for 2026/27, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) to a £10,000 floor."

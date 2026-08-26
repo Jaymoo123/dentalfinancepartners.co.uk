@@ -4,11 +4,16 @@ slug: "gp-accountant-sheffield"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7821540/pexels-photo-7821540.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-working-on-documents-7821540/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Sheffield | Medical Accounting Specialists"
 metaDescription: "Sheffield GP accountant for NHS partners, salaried GPs and locums. NHS pension annual allowance, GP partnership accounts and tax planning for 2026/27."
 altText: "Sheffield GP practice building with medical professionals discussing financial planning"
-image: ""
 h1: "GP Accountant in Sheffield: Specialist Medical Accounting for Local Practices"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold and has not been since 1 April 2004 (now under SI 2019/251), so a practice transaction covers tangible assets, premises and capital accounts, plus any genuinely private goodwill only."

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/accountant-self-assessment"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8962445/pexels-photo-8962445.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Leeloo The First"
+  photographerUrl: "https://www.pexels.com/@leeloothefirst"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-smartphone-with-a-calculator-app-over-a-tax-document-8962445/"
 category: "GP Accountant Services"
 metaTitle: "Self Assessment for Doctors 2026/27"
 metaDescription: "Self assessment for doctors and GPs in 2026/27: who must file, the 31 January deadline, payments on account, Class 4 NIC and Making Tax Digital."
 altText: "UK medical professional reviewing self assessment tax return documents"
-image: ""
 h1: "Self Assessment for Doctors and GPs: Who Files, Deadlines and Payments on Account"
 keyTakeaways:
 - "GP partners are taxed on their allocated profit share via the SA104 partnership pages, not on the drawings they actually take."

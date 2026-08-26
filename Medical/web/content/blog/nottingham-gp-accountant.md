@@ -4,11 +4,16 @@ slug: "nottingham-gp-accountant"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7821716/pexels-photo-7821716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-man-sitting-at-the-table-7821716/"
 category: "GP Accountant Services"
 metaTitle: "Nottingham GP Accountant | Medical Tax Specialists"
 metaDescription: "Nottingham GP accountant for NHS partners, salaried GPs, and locums. NHS pension, partnership accounts, and 2026/27 tax planning across the East Midlands."
 altText: "Nottingham medical professional meeting with specialist GP accountant in modern office setting"
-image: ""
 h1: "Nottingham GP Accountant: Expert Tax & Accounting for Medical Professionals"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, a prohibition in force since 1 April 2004 and now set out in SI 2019/251."

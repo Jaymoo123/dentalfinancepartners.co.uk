@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/nhs-pension-partial-retiremen
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/20251480/pexels-photo-20251480.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/making-notes-and-calculations-based-on-charts-20251480/"
 category: "NHS Pension Planning"
 metaTitle: "NHS Pension Partial Retirement: A Doctor's Guide"
 metaDescription: "How NHS partial retirement lets doctors draw 20 to 100 percent of their pension while still working, the 10 percent pay-cut rule and 2015 re-accrual."
 altText: "Senior doctor discussing a phased retirement plan with a colleague"
-image: ""
 h1: "NHS Pension Partial Retirement for Doctors: Drawing 20 to 100 Percent While Still Working"
 keyTakeaways:
 - "Partial retirement lets you draw between 20 and 100 percent of your accrued NHS pension while staying in the same post and continuing to accrue in the 2015 scheme."

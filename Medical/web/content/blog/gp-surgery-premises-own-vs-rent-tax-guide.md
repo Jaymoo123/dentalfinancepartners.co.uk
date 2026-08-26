@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-surgery-premises-own-vs-re
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/28111463/pexels-photo-28111463.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mario Spencer"
+  photographerUrl: "https://www.pexels.com/@spencphoto"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/costwolds-28111463/"
 category: "GP Practice Management"
 metaTitle: "Own vs Rent Your GP Surgery: SDLT, CGT, Tax Guide"
 metaDescription: "Owning vs renting a GP surgery: the property partnership, SDLT on a purchase, capital allowances on fixtures, and CGT and BADR when you eventually sell up."
 altText: "GP partners comparing the cost of owning versus renting a surgery building with a property loan and tax figures"
-image: ""
 h1: "Owning vs Renting Your GP Surgery: The Property Partnership, SDLT and the Tax Trade-Offs"
 keyTakeaways:
 - "Freehold SDLT on a surgery in England or Northern Ireland is banded at 0% up to £150,000, 2% from £150,001 to £250,000, and 5% above £250,000, so a £600,000 purchase costs £19,500."

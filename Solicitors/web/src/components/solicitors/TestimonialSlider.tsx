@@ -2,38 +2,38 @@
 
 import { useState, useEffect } from "react";
 
+// Anonymised social proof only. Estate rule for the niche lead-gen sites: no
+// named clients, no invented figures, no attributed outcome statistics. These
+// are situation summaries describing the kind of work, written in the third
+// person, not quotes attributed to a person.
 const testimonials = [
   {
     quote:
-      "Our SRA accountant's report was always stressful with our old firm. These specialists handle client money reconciliations monthly, so year-end is straightforward. No surprises, no compliance risks.",
-    author: "Catherine Hargreaves",
-    role: "Managing Partner (12-partner firm)",
-    outcome: "Clean SRA reports for 3 consecutive years",
-    initials: "CH",
+      "A firm treats the SRA Accounts Rules as a year-end exercise and finds the accountant's report stressful as a result. Moving client account reconciliations to a monthly rhythm, with residual balances and unallocated receipts cleared as they arise rather than at the deadline, is what turns the annual report into a check on work already done.",
+    role: "Typical firm compliance engagement",
+    outcome: "SRA Accounts Rules and client money",
+    initials: "SR",
   },
   {
     quote:
-      "They restructured our partnership profit allocation and saved the firm £35k in NI contributions. Plus the Basis Period Reform transition was seamless — they had us prepared a year early.",
-    author: "David Richardson",
-    role: "Senior Partner",
-    outcome: "£35k NI savings through restructuring",
-    initials: "DR",
+      "A partnership wants its profit allocation reviewed. The work covers how fixed shares, drawings and reserves interact, the National Insurance position of salaried versus equity members, and whether an LLP or corporate structure fits the firm, with the answer depending on the partner mix rather than on a general rule.",
+    role: "Typical partnership structure review",
+    outcome: "Profit allocation and partner structure",
+    initials: "PA",
   },
   {
     quote:
-      "As a sole practitioner, I needed someone who understood both my practice accounts and personal tax planning. They handle everything and the fixed fee means no surprises.",
-    author: "Sarah Blackwell",
-    role: "Sole Practitioner",
-    outcome: "Complete practice + personal tax management",
-    initials: "SB",
+      "A sole practitioner needs the practice accounts and the personal tax position handled as one piece of work rather than two. Drawings, the payments on account cycle, pension contributions and the client account position all move together, and looking at any one of them in isolation tends to produce a decision that costs money elsewhere.",
+    role: "Typical sole practitioner engagement",
+    outcome: "Practice accounts and personal tax",
+    initials: "SP",
   },
   {
     quote:
-      "When we converted from partnership to LLP, they handled the entire process — tax implications, SRA notifications, client money transfer procedures. It was completely painless.",
-    author: "Mark Jenkins",
-    role: "Partner (6-partner firm)",
-    outcome: "Seamless LLP conversion",
-    initials: "MJ",
+      "A firm converting from a general partnership to an LLP has more to sequence than the incorporation itself: the tax consequences of the transfer, the SRA notification and authorisation steps, and the client account transfer procedures, which have to be planned in order because getting the client money step wrong is the one that carries regulatory consequences.",
+    role: "Typical LLP conversion engagement",
+    outcome: "Partnership to LLP conversion",
+    initials: "LC",
   },
 ];
 
@@ -56,21 +56,19 @@ export function TestimonialSlider() {
   return (
     <div className="relative">
       <div className="border-l-4 border-[var(--primary)] bg-white p-8">
-        <blockquote className="text-lg leading-relaxed text-slate-700">
-          &ldquo;{currentTestimonial.quote}&rdquo;
-        </blockquote>
+        <p className="text-lg leading-relaxed text-slate-700">{currentTestimonial.quote}</p>
         <div className="mt-6 flex items-center gap-4 border-t border-slate-200 pt-6">
-          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-[var(--primary)] text-lg font-bold text-white">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-[var(--primary)] text-lg font-bold text-white" aria-hidden>
             {currentTestimonial.initials}
           </div>
           <div className="flex-1">
-            <div className="font-bold text-slate-900">{currentTestimonial.author}</div>
-            <div className="mt-1 text-sm text-slate-600">{currentTestimonial.role}</div>
+            <div className="font-bold text-slate-900">{currentTestimonial.role}</div>
+            <div className="mt-1 text-sm text-slate-600">Anonymised. No client is named and no figures are attributed.</div>
           </div>
         </div>
         {currentTestimonial.outcome && (
           <div className="mt-4 border-l-4 border-[var(--primary)] bg-[var(--primary)]/5 px-4 py-3">
-            <span className="text-sm font-bold text-[var(--primary)]">Result: {currentTestimonial.outcome}</span>
+            <span className="text-sm font-bold text-[var(--primary)]">Area: {currentTestimonial.outcome}</span>
           </div>
         )}
       </div>

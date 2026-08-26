@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/gp-partnership-mutual-assessme
 date: '2026-06-03'
 generator: opus-4.8/netnew-wave
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/6129658/pexels-photo-6129658.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/healthcare-workers-having-a-discussion-6129658/"
 category: GP Tax & Accounts
 metaTitle: 'GP Mutual Assessment Period: Checks Before You Join'
 metaDescription: Use the GP partnership mutual assessment period to check the accounts, premises and deed before parity, reading two to three years' figures. Then commit.
 altText: Incoming GP carrying out financial due diligence on partnership accounts during a mutual assessment period
-image: ''
 h1: 'The Mutual Assessment Period: What to Check Financially Before Becoming a GP Partner'
 keyTakeaways:
 - "A GP partnership files a single partnership return (the SA800), and each partner's share flows to the partnership pages (the SA104) of their own return, taxed as trading income with Class 4 National Insurance."

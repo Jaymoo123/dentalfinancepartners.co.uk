@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/medical-practice-incorporatio
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6814526/pexels-photo-6814526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "cottonbro studio"
+  photographerUrl: "https://www.pexels.com/@cottonbro"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-signing-contract-documents-6814526/"
 category: "Incorporation & Company Structures"
 metaTitle: "Medical Practice Incorporation: Step-by-Step Guide 2026/27"
 metaDescription: "How UK doctors incorporate private practice work, step by step: form the company, transfer the business, banking, VAT, payroll and the NHS pension trap."
 altText: "Professional medical office environment showing incorporation documents and financial planning materials for UK doctors"
-image: ""
 h1: "Medical Practice Incorporation Step by Step: Complete Guide for UK Doctors"
 howtoSteps:
   - name: "Plan the structure and timing"

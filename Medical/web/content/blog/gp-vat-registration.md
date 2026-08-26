@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/gp-vat-registration
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/38783383/pexels-photo-38783383.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Niepoddawajsie.pl Luk"
+  photographerUrl: "https://www.pexels.com/@niepoddawajsie-pl-luk-2156505622"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/polish-zloty-and-financial-documents-on-desk-38783383/"
 category: GP Practice Management
 metaTitle: Medical VAT Exemption and GP VAT Registration Rules
 metaDescription: Why most NHS and private medical care is VAT exempt, and when a GP practice must register once taxable turnover passes £90,000. Sort each stream.
 altText: UK GP practice VAT registration paperwork on desk with calculator and medical stethoscope
-image: ''
 h1: 'GP VAT Registration: When and How to Register Your Medical Practice'
 keyTakeaways:
 - "Medical care by a registered practitioner is exempt from VAT under VATA 1994 Schedule 9 Group 7 Item 1, so private clinical care is exempt by default, not standard-rated."

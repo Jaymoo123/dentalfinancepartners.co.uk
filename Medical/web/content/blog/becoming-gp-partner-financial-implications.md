@@ -4,11 +4,16 @@ slug: becoming-gp-partner-financial-implications
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/30677597/pexels-photo-30677597.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Ninthgrid"
+  photographerUrl: "https://www.pexels.com/@ninthgrid-2149521550"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/doctor-consultation-in-medical-office-in-lagos-30677597/"
 category: GP Practice Management
 metaTitle: 'Becoming a GP Partner: Financial Implications Explained'
 metaDescription: 'What changes when you become a GP partner: self-employment, profit share, premises risk and Class 4 NIC at 6% on profits over £12,570. Go in informed.'
 altText: UK GP partners reviewing financial documents and partnership agreements in medical practice office
-image: ''
 h1: 'Becoming a GP Partner: Financial Implications You Need to Know'
 keyTakeaways:
 - "As a GP partner you are taxed on your allocated profit share, not on the drawings you actually take, so tax timing and cash timing rarely line up."

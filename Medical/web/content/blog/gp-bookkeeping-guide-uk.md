@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-bookkeeping-guide-uk"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-examining-a-document-8296977/"
 category: "GP Practice Management"
 metaTitle: "GP Practice Bookkeeping Guide 2026/27 | NHS Income UK"
 metaDescription: "How to do GP practice bookkeeping: record Global Sum, QOF, enhanced services and PCN income, track drawings vs profit share, and keep MTD-ready records."
 altText: "GP practice manager working on bookkeeping records with computer and financial documents"
-image: ""
 h1: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
 keyTakeaways:
 - "A GP partner is taxed on their allocated profit share under the partnership agreement, not on the drawings they take during the year, which are posted to that partner's current account."

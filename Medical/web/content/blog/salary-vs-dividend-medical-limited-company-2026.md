@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/salary-vs-dividend-medical-li
 date: "2026-07-06"
 generator: "opus-4.8/netnew-wave"
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8730998/pexels-photo-8730998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/elegant-man-signing-documents-8730998/"
 category: "Incorporation & Company Structures"
 metaTitle: "Salary vs Dividend: Medical Company 2026/27"
 metaDescription: "The 2026/27 salary and dividend split for a consultant's private-practice company: the optimal director's salary, the new 35.75% dividend rate and the single-director trap."
 altText: "Consultant reviewing salary and dividend extraction figures for a private medical limited company"
-image: ""
 h1: "Salary vs Dividend for a Medical or Consultant Limited Company (2026/27)"
 keyTakeaways:
   - "Single-director medical companies typically set salary near the £5,000 secondary NIC threshold, below the £12,570 personal allowance, avoiding employer NIC and income tax."

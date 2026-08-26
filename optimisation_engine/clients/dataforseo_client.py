@@ -206,24 +206,34 @@ class DataForSEOClient:
         site_key: str,
         domain: str,
         limit: int = 500,
+        offset: int = 0,
+        filters: Optional[list] = None,
         location_code: int = DATAFORSEO_LOCATION_CODE_UK,
         language_code: str = DATAFORSEO_LANGUAGE_CODE_EN,
     ) -> dict:
+        # offset lets callers paginate a domain to exhaustion (REWRITE_PROGRAM 9.7:
+        # no caps, no floors at harvest). It is part of the idempotency key via payload.
+        # filters is an escape hatch for domains too large to exhaust inside the daily
+        # budget guard (e.g. england.nhs.uk, 105k keywords). Using it is a documented
+        # deviation from 9.2 ("filter after fetching"), never the default.
         payload = [
             {
                 "target": domain,
                 "location_code": location_code,
                 "language_code": language_code,
                 "limit": limit,
+                "offset": offset,
                 "order_by": ["keyword_data.keyword_info.search_volume,desc"],
             }
         ]
+        if filters:
+            payload[0]["filters"] = filters
         return self._post_paid(
             "dataforseo_labs/google/ranked_keywords/live",
             payload,
             site_key=site_key,
             expected_rows=limit,
-            seed_keyword=f"domain:{domain}",
+            seed_keyword=f"domain:{domain}@{offset}",
         )
 
     def related_keywords(

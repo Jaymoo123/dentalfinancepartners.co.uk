@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-surgery-notional-rent-vs-c
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/2955030/pexels-photo-2955030.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Suzy Hazelwood"
+  photographerUrl: "https://www.pexels.com/@suzyhazelwood"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-riding-bicycle-on-bicycle-lane-2955030/"
 category: "GP Practice Management"
 metaTitle: "Notional Rent vs Cost Rent: GP Surgery Premises Guide"
 metaDescription: "How NHS notional rent, cost rent and improvement grants fund a GP surgery, who sets the figure, and how each is taxed for owners. A UK guide for partners."
 altText: "GP partners reviewing surgery premises funding statements and a property loan agreement"
-image: ""
 h1: "Notional Rent vs Cost Rent: How NHS Funds (and Taxes) Your GP Surgery Premises"
 keyTakeaways:
 - "The current framework is the NHS (GMS - Premises Costs) Directions 2024, in force from 10 May 2024, which replaced the 2013 Directions (revoked 9 May 2024)."

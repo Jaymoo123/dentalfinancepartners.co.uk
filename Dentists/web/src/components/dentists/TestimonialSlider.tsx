@@ -2,38 +2,38 @@
 
 import { useState, useEffect } from "react";
 
+// Anonymised social proof only. Estate rule for the niche lead-gen sites: no
+// named clients, no invented figures, no attributed outcome statistics. These
+// are situation summaries describing the kind of work, written in the third
+// person, not quotes attributed to a person.
 const testimonials = [
   {
     quote:
-      "They handled my transition from associate to practice owner — from the bank loan projections to the acquisition due diligence. The tax structuring alone saved me £18k in the first year.",
-    author: "Dr. Rachel Green",
-    role: "Practice owner (2 surgeries)",
-    outcome: "Saved £18k in Year 1",
-    initials: "RG",
+      "An associate decides to buy a practice and needs the numbers before the offer, not after it. That means projections a lender will actually accept, due diligence on the UDA contract and the recall base, and a view on whether the goodwill is bought personally or through a company, because the structure chosen at the start is expensive to unpick later.",
+    role: "Typical associate to practice owner engagement",
+    outcome: "Practice acquisition and structuring",
+    initials: "PA",
   },
   {
     quote:
-      "My previous accountant didn't understand NHS contracts at all. These specialists caught £4,200 in overclaimed UDAs I hadn't spotted, and helped me plan the right associate splits.",
-    author: "Dr. Michael Patel",
-    role: "NHS practice owner",
-    outcome: "Recovered £4,200 in UDA adjustments",
-    initials: "MP",
+      "An NHS practice reaches the end of the contract year unsure whether its UDA delivery is where it thinks it is. The work is reconciling the schedule against the pension and superannuation deductions, checking prior-year adjustments and clawback exposure, and setting associate splits so the practice is not carrying a shortfall the associates created.",
+    role: "Typical NHS practice engagement",
+    outcome: "NHS contract and UDA reconciliation",
+    initials: "NH",
   },
   {
     quote:
-      "As an associate, I was paying too much tax because nobody told me I could claim equipment, training, and indemnity costs. They got me a £2,800 refund for the previous two years.",
-    author: "Dr. Sophie Taylor",
-    role: "Associate dentist",
-    outcome: "£2,800 tax refund claimed",
-    initials: "ST",
+      "An associate dentist has been filing self-assessment alone and has never claimed the full set: GDC retention, indemnity, equipment and loupes, courses and CPD, and travel between separate practices. The review covers the current year and the two before it, and where the under-claim is material an amendment is filed rather than left.",
+    role: "Typical associate engagement",
+    outcome: "Expense claims and self-assessment",
+    initials: "AD",
   },
   {
     quote:
-      "The practice benchmarking reports showed our lab costs were 4% above average. We renegotiated and saved £8k a year — more than their annual fee.",
-    author: "Dr. Andrew Kim",
-    role: "Practice owner (3 surgeries)",
-    outcome: "Lab cost savings of £8k/year",
-    initials: "AK",
+      "A practice owner wants to know how the business compares before deciding what to change. Lab costs, materials, staff cost as a share of revenue and hourly chair yield are read together rather than one at a time, because a single line looking high is often a symptom of how the diary is being filled rather than a supplier problem.",
+    role: "Typical practice benchmarking review",
+    outcome: "Practice benchmarking and cost review",
+    initials: "PB",
   },
 ];
 
@@ -56,21 +56,19 @@ export function TestimonialSlider() {
   return (
     <div className="relative">
       <div className="border-l-4 border-[var(--gold)] bg-white p-8">
-        <blockquote className="text-lg leading-relaxed text-slate-700">
-          &ldquo;{currentTestimonial.quote}&rdquo;
-        </blockquote>
+        <p className="text-lg leading-relaxed text-slate-700">{currentTestimonial.quote}</p>
         <div className="mt-6 flex items-center gap-4 border-t border-slate-200 pt-6">
-          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-[var(--gold)] text-lg font-bold text-white">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-[var(--gold)] text-lg font-bold text-white" aria-hidden>
             {currentTestimonial.initials}
           </div>
           <div className="flex-1">
-            <div className="font-bold text-slate-900">{currentTestimonial.author}</div>
-            <div className="mt-1 text-sm text-slate-600">{currentTestimonial.role}</div>
+            <div className="font-bold text-slate-900">{currentTestimonial.role}</div>
+            <div className="mt-1 text-sm text-slate-600">Anonymised. No client is named and no figures are attributed.</div>
           </div>
         </div>
         {currentTestimonial.outcome && (
           <div className="mt-4 border-l-4 border-[var(--gold)] bg-[var(--gold)]/5 px-4 py-3">
-            <span className="text-sm font-bold text-[var(--gold)]">Result: {currentTestimonial.outcome}</span>
+            <span className="text-sm font-bold text-[var(--gold)]">Area: {currentTestimonial.outcome}</span>
           </div>
         )}
       </div>

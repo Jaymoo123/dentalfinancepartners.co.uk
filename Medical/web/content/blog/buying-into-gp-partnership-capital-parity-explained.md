@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/buying-into-gp-partnership-cap
 date: '2026-06-03'
 generator: opus-4.8/netnew-wave
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/39192335/pexels-photo-39192335.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/elderly-doctor-consulting-patient-in-office-39192335/"
 category: GP Tax & Accounts
 metaTitle: 'Buying Into a GP Partnership: Goodwill and the Buy-In'
 metaDescription: 'What you pay to buy into a GP partnership: a capital share of net assets and premises, never NHS goodwill, unsellable since 1 April 2004. Know first.'
 altText: Incoming GP partner reviewing a capital buy-in figure and partnership accounts with an adviser
-image: ''
 h1: 'Buying Into a GP Partnership: The Capital Buy-In, Parity and How the Cost Is Set'
 keyTakeaways:
 - "A GP buy-in is a capital contribution for your share of the practice's net assets, working capital and any premises, not a payment for goodwill."

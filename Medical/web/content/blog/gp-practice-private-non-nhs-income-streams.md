@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-practice-private-non-nhs-i
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/35501875/pexels-photo-35501875.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/polish-currency-and-financial-documents-on-desk-35501875/"
 category: "GP Practice Management"
 metaTitle: "GP Practice Private and Non-NHS Income: Tax and VAT"
 metaDescription: "The non-NHS income a GP practice earns from medicals, reports, travel clinics and minor surgery, how each is taxed and which streams attract VAT."
 altText: "GP completing a private medical report and insurance form at a practice desk"
-image: ""
 h1: "A GP Practice's Private and Non-NHS Income: The Streams, the Tax and the VAT"
 keyTakeaways:
 - "The VAT liability of GP private work turns on the d'Ambrumenil purpose test, in force since 1 May 2007: a service is exempt only where its principal purpose is the protection, maintenance or restoration of the patient's health."

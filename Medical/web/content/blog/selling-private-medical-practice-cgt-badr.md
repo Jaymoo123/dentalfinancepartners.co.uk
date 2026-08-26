@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/selling-private-medical-pract
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7789614/pexels-photo-7789614.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Ivan Babydov"
+  photographerUrl: "https://www.pexels.com/@babydov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/desk-and-chairs-in-doctor-office-7789614/"
 category: "Private Practice"
 metaTitle: "Selling a Private Medical Practice: CGT and BADR"
 metaDescription: "How CGT and Business Asset Disposal Relief work on selling a private medical practice, plus why the 6 April 2026 BADR rise from 14% to 18% matters."
 altText: "Consultant and adviser reviewing the sale contract for a private medical clinic"
-image: ""
 h1: "Selling a Private Medical Practice: CGT, Business Asset Disposal Relief and the 2026 Rate Rise"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, having been prohibited since 1 April 2004 under what is now SI 2019/251, so no CGT or BADR question arises on it."

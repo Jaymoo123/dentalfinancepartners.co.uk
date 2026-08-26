@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/family-investment-company-doc
 date: "2026-07-06"
 generator: "opus-4.8/netnew-wave"
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/30535786/pexels-photo-30535786.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/businessman-analyzing-financial-report-on-desk-30535786/"
 category: "Incorporation & Company Structures"
 metaTitle: "Family Investment Company for Doctors and Consultants"
 metaDescription: "How a family investment company works for consultants and GPs: tax on retained investment income, share-class and IHT planning, and settlements traps."
 altText: "A consultant and accountant reviewing a family investment company structure"
-image: ""
 h1: "Family Investment Companies for Doctors and Consultants: What They Are and When They Fit"
 keyTakeaways:
 - "A FIC pays corporation tax on retained investment income at 19% up to £50,000 of profits and 25% above £250,000, with marginal relief (standard fraction 3/200) between, against 45% personal income tax above the additional-rate threshold of £125,140."

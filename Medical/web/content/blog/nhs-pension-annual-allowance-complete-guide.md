@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-annual-allowance-c
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/20552572/pexels-photo-20552572.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-calculator-on-a-desk-20552572/"
 category: NHS Pension Planning
 metaTitle: 'NHS Pension Annual Allowance: How to Work Yours Out'
 metaDescription: 'Work out your NHS pension annual allowance: the £60,000 limit, how defined-benefit growth is measured, the taper and Scheme Pays. Plan, do not panic.'
 altText: UK medical professional reviewing NHS pension annual allowance documentation
-image: ''
 h1: 'NHS Pension Annual Allowance: Complete Guide for UK Medical Professionals'
 keyTakeaways:
 - "For defined-benefit NHS pensions the test is the growth in your benefits (the pension input amount), not the contributions you pay."

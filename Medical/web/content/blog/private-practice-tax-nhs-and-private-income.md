@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/private-practice-tax-nhs-and-
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7789616/pexels-photo-7789616.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Ivan Babydov"
+  photographerUrl: "https://www.pexels.com/@babydov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/special-medical-bed-desk-and-chairs-in-medical-cabinet-7789616/"
 category: "Private Practice"
 metaTitle: "NHS Salary Plus Private Practice Income: Tax Guide 2026/27"
 metaDescription: "Consultant or GP with an NHS salary plus private income? How PAYE and self-employed private work are taxed together, what is pensionable, and the VAT line."
 altText: "UK consultant reviewing NHS salary and private practice income tax documents for self-assessment"
-image: ""
 h1: "NHS Salary Plus Private Income: How Your Tax Actually Works"
 keyTakeaways:
 - "Private profit is added on top of your NHS pay, so for most consultants and GP partners already in the higher (40%) or additional (45%) band it is taxed at that rate from the first pound."

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/39192408/pexels-photo-39192408.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/smiling-doctor-in-an-office-setting-39192408/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant | What a Specialist Medical Accountant Does"
 metaDescription: "What a specialist GP accountant does: partnership accounts, NHS pension annual allowance, GMS income and self-assessment, explained for 2026/27."
 altText: "GP meeting with specialist medical accountant to discuss partnership finances and tax planning"
-image: ""
 h1: "Why Every GP Needs a Specialist GP Accountant"
 keyTakeaways:
 - "GP partners are taxed on their allocated profit share, not on the drawings they actually take, with the partnership filing an SA800 and each partner reporting on the SA104 pages."

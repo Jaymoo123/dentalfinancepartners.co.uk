@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-expense-sharing-vs-full-pa
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/9034977/pexels-photo-9034977.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/woman-in-black-blazer-sitting-beside-woman-in-blue-long-sleeve-shirt-working-together-9034977/"
 category: "GP Tax & Accounts"
 metaTitle: "Expense Sharing vs a Full GP Partnership: The Tax"
 metaDescription: "Expense sharing versus a full GP partnership: sharing costs as separate practitioners versus pooling profit, and how the tax and accounts differ."
 altText: "Two GPs comparing an expense-sharing arrangement against a full partnership"
-image: ""
 h1: "Expense Sharing Versus a Full GP Partnership: The Difference and the Tax"
 keyTakeaways:
 - "Partnership is defined by the Partnership Act 1890 section 1(1) as the relation between persons carrying on a business in common with a view of profit, and it is judged on the substance, not the label on the door."

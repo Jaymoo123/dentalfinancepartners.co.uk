@@ -53,6 +53,15 @@ not repo).
   `sitemap.ts` emits the www host with stable lastmod.
 - Diagnosis: crawl-demand starvation on a low-authority domain. All 27 inspected URLs report
   `inSitemap=False` in the Inspection response despite being in the submitted sitemap.
+- **REFINED SAME DAY, and the refinement matters: indexation is SPARSE, not absent.** The competitor
+  pass found two of our URLs holding live Google top-10 organic positions (`/blog/buying-into-gp-partnership-capital-parity-explained`
+  rank 6 for "gp partnership goodwill valuation"; `/blog/gp-accounting-guide` rank 6 for "gp partnership
+  accounts specialist", DataForSEO live SERP 2026-08-26), and GSC corroborates with queries averaging
+  position 10-11 over 90d, which is impossible for an unindexed page. So roughly the 21 impression-earning
+  URLs are indexed and the ~109 others are not; the 27-URL sample was drawn from the zero-impression set
+  by construction and is representative of THAT set, not of the site. Do not restate this as "the site is
+  not indexed". **The indexed slice skews hard to the GP-partnership and goodwill cluster, which is where
+  Google already gives this domain air, and is therefore the cluster to push first.**
 - **Consequence for spend:** the standard "never spend content on an unindexed site" rule applies
   to GOOGLE only here. Bing indexes the corpus (303 pages in page stats) and is the channel that
   actually delivers, so new content earns on Bing while the Google authority work runs in parallel.
@@ -76,6 +85,10 @@ is lowercase in this table. The 16 are the GP-partnership and NHS-pension set, w
 site's best-performing content, so the Stage 2 sweep works around them until 09-11.
 
 ### Corpus + tooling readiness
+- **Namespace finding 2026-08-26, not yet diagnosed:** the corpus is not only `/blog/<slug>`. Live pages
+  also exist at `/calculators/nhs-pension-annual-allowance` and `/medical-guides/nhs-pension-annual-allowance`,
+  i.e. two further namespaces carrying a page on the SAME topic as each other. Check for cannibalisation
+  before writing anything in the NHS-pension lane. Never collapse: differentiate.
 - **79 posts** in `Medical/web/content/blog` (the STATE figures of "46" and "73" elsewhere in this
   doc were both stale), dated 2026-04-01 to 2026-07-14. Flat routing, `/blog/<slug>`; the only
   correct link auditor is `scripts/medical_flat_link_audit.py`, never the slug resolver.

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-leeds"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6779565/pexels-photo-6779565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Artem Podrez"
+  photographerUrl: "https://www.pexels.com/@artempodrez"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-person-holding-black-pen-writing-on-white-paper-6779565/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Leeds | Specialist Medical Tax Services 2026"
 metaDescription: "Leeds GP accountant for partners, salaried GPs and locums. NHS pension annual allowance, GP partnership accounts and medical tax advice across Yorkshire."
 altText: "Leeds GP surgery with medical professionals discussing financial planning"
-image: ""
 h1: "GP Accountant Leeds: Expert Medical Tax & Accounting Services"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, its sale has been prohibited since 1 April 2004, currently under SI 2019/251, so a GP transaction turns on tangible assets, premises and capital accounts rather than a goodwill multiple."

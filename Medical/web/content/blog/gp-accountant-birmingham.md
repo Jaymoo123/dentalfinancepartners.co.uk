@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-birmingham"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7654120/pexels-photo-7654120.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-and-woman-working-at-the-office-7654120/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Birmingham"
 metaDescription: "GP accountant in Birmingham for NHS partners, salaried GPs and locums. NHS pension allowance, profit-share accounts, 2026/27 tax planning in the Midlands."
 altText: "Professional accountant working with GP practice financial documents in Birmingham office"
-image: ""
 h1: "GP Accountant Birmingham: Specialist Medical Accounting Services"
 keyTakeaways:
 - "Since 1 April 2022 every active NHS scheme member accrues in the 2015 CARE section at 1/54th of each year's pensionable earnings, revalued at CPI plus 1.5 per cent."

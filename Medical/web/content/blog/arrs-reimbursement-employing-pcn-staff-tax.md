@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/arrs-reimbursement-employing-
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7108401/pexels-photo-7108401.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-medical-staff-by-the-table-7108401/"
 category: "GP Practice Management"
 metaTitle: "ARRS: Employing PCN Staff, Reimbursement & the Tax"
 metaDescription: "How the Additional Roles Reimbursement Scheme works: reimbursable roles, who employs ARRS staff, the payroll and pension, the VAT trap and the accounting."
 altText: "Primary care network pharmacist and physiotherapist working alongside GP practice staff"
-image: ""
 h1: "ARRS Explained: Reimbursement, Employing PCN Staff and the Tax Consequences"
 keyTakeaways:
 - "ARRS reimburses actual salary plus defined employer on-costs (employer National Insurance and employer pension) up to a per-whole-time-equivalent maximum, so anything paid above the cap is a real net cost the network funds itself."

@@ -46,7 +46,7 @@ def _domain_of(url: str) -> str:
     if not url:
         return ""
     netloc = urlparse(url).netloc.lower()
-    return netloc.lstrip("www.").split(":")[0]
+    return netloc.removeprefix("www.").split(":")[0]
 
 
 # ---------------------------------------------------------------------------
@@ -80,7 +80,12 @@ def parse_serp_advanced(response: dict) -> dict:
                         "title": item.get("title") or "",
                         "link": link,
                         "snippet": item.get("description") or "",
-                        "domain": item.get("domain") or _domain_of(link),
+                        # DFS's own `domain` field keeps the "www." prefix; DDG's
+                        # strips it. Left as-is, every www-fronted competitor read
+                        # as two different domains: divergence was systematically
+                        # overstated and competitor_watch's universe probe would
+                        # re-add already-configured competitors as "new".
+                        "domain": _domain_of(link) or (item.get("domain") or "").removeprefix("www."),
                     })
                 elif item_type == "people_also_ask":
                     for sub in item.get("items", []) or []:

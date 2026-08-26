@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/locum-doctor-tax-complete-guid
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/6627938/pexels-photo-6627938.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-man-sitting-at-the-table-6627938/"
 category: Locum Tax
 metaTitle: 'Locum Doctor Tax Guide 2026/27: Sole Trader or Ltd'
 metaDescription: 'Locum doctor tax for 2026/27: sole trader vs limited company, self assessment, Class 4 NIC at 6% and keeping NHS pension via forms A and B. Keep more pay.'
 altText: UK locum doctor reviewing tax documents and calculator on desk
-image: ''
 h1: 'Locum Doctor Tax Complete Guide: Everything You Need to Know'
 keyTakeaways:
 - "A sole trader locum pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 for 2026/27, after the old 9% main rate fell to 6% on 6 April 2024."

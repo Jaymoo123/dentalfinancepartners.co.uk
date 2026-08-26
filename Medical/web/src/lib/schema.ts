@@ -167,6 +167,33 @@ export function buildServicePageSchema(input: {
   ];
 }
 
+/**
+ * Service node for the HOMEPAGE. Same builder as buildServicePageSchema but
+ * without a BreadcrumbList, because a one-item breadcrumb on the root URL is
+ * noise. Added 2026-08-26: the corepage analysis pack flagged the homepage's
+ * commercial schema checklist as Service/AccountingService MISSING while every
+ * page-1 competitor carried at least one commercial node. National only, so
+ * areaServed is the UK rather than a city (no local-business signal is emitted,
+ * the estate does not run a Google Business Profile).
+ */
+export function buildHomepageServiceSchema(offerItems: string[]): SchemaThing {
+  return buildService(
+    {
+      name: "Specialist medical accounting for UK doctors",
+      description:
+        "Accounting and tax work for GP partners, salaried GPs, hospital consultants, locum doctors and GP practices: NHS Pension annual allowance modelling, partnership accounts and superannuation certificates, locum IR35 and self-assessment, private practice incorporation and medical expense claims.",
+      url: siteConfig.url,
+      serviceType: "Medical accountancy and tax",
+      areaServed: "United Kingdom",
+      hasOfferCatalog: {
+        name: "Medical accounting services",
+        items: offerItems,
+      },
+    },
+    getSiteOpts(),
+  );
+}
+
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   return JSON.stringify({
     "@context": "https://schema.org",

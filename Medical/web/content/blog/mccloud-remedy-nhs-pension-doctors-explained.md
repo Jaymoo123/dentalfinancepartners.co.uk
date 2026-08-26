@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/mccloud-remedy-nhs-pension-do
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/33175667/pexels-photo-33175667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-report-33175667/"
 category: "NHS Pension Planning"
 metaTitle: "McCloud Remedy NHS Pension: A Doctor's Guide"
 metaDescription: "The McCloud remedy rolled your 2015 to 2022 NHS pension back to the legacy scheme. What is already done and the choice you make at retirement, for doctors."
 altText: "Doctor reviewing an NHS pension remediable service statement at a desk"
-image: ""
 h1: "The McCloud Remedy and Your NHS Pension: What Doctors Need to Do at Retirement"
 keyTakeaways:
 - "On 1 October 2023 the remedy period service of every eligible member was automatically rolled back into their legacy 1995 or 2008 section, with no action required from the member."

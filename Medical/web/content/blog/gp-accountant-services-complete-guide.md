@@ -4,11 +4,16 @@ slug: "gp-accountant-services-complete-guide"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7821714/pexels-photo-7821714.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-in-black-suit-sitting-in-front-of-woman-in-brown-blazer-7821714/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Services: The Complete Guide (2026/27)"
 metaDescription: "What a GP and medical accountant does, from partnership accounts and NHS pension certificates to tax returns, payroll and incorporation. 2026/27."
 altText: "GP accountant reviewing medical practice accounts and tax documents on desk"
-image: ""
 h1: "GP Accountant Services: Complete Guide for Medical Professionals"
 keyTakeaways:
 - "A GP partner is taxed on their allocated profit share for the year, not on the drawings they actually take."

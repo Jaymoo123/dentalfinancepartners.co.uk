@@ -4,11 +4,16 @@ slug: gp-accounting-guide
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/8296974/pexels-photo-8296974.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-computing-with-a-calculator-8296974/"
 category: GP Practice Management
 metaTitle: 'GP Practice Accountant Guide: SA800, NHS Income, Tax'
 metaDescription: 'How GP practice accounts work: the SA800 partnership return, profit share vs drawings, NHS income and Class 4 NIC at 6%. Get the structure right.'
 altText: UK GP reviewing financial documents and accounting records at medical practice
-image: ''
 h1: 'GP Accounting: Complete Guide for UK General Practitioners'
 keyTakeaways:
 - "A GP partnership is not a limited company and files no Companies House accounts; it files an SA800, with each partner reporting their share on SA104."

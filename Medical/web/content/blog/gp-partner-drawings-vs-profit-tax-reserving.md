@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-partner-drawings-vs-profit
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7580854/pexels-photo-7580854.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/calculator-on-top-of-the-paper-7580854/"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partner Drawings vs Profit: How to Reserve for Tax"
 metaDescription: "Why a GP partner is taxed on profit share, not drawings, the cash-flow gap it creates, and how to reserve for tax, payments on account and superannuation."
 altText: "GP partner setting aside a tax reserve from monthly drawings against an annual profit share"
-image: ""
 h1: "Drawings Versus Profit for a GP Partner: Why They Differ and How to Reserve for Tax"
 keyTakeaways:
 - "A GP partner is taxed on their full allocated profit share for the year, not on the drawings they actually took as cash."

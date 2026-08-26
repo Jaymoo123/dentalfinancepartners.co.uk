@@ -4,11 +4,16 @@ slug: gp-tax-deductions-complete-list-2026
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7680736/pexels-photo-7680736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-holding-receipts-and-using-a-calculator-7680736/"
 category: GP Tax & Accounts
 metaTitle: 'GP Tax Deductions 2026/27: GMC Fee, Indemnity, Mileage'
 metaDescription: 'Claim every allowable GP expense for 2026/27: GMC fee, indemnity, CPD, home office and mileage at 55p for the first 10,000 miles. Cut your tax bill.'
 altText: UK GP reviewing tax deduction paperwork and receipts for 2026 tax return
-image: ''
 h1: 'GP Tax Deductions Complete List 2026: What You Can and Cannot Claim'
 keyTakeaways:
 - "For 2026/27 the approved mileage rate is 55p per mile for the first 10,000 business miles (up from 45p on 6 April 2026) and 25p thereafter."

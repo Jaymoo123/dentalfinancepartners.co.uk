@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-for-locums-form-a-
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7821688/pexels-photo-7821688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "RDNE Stock project"
+  photographerUrl: "https://www.pexels.com/@rdne"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-calculator-and-a-magnifying-glass-beside-documents-7821688/"
 category: NHS Pension Planning
 metaTitle: 'UK GP Locum NHS Pension: Form A and Form B Explained'
 metaDescription: Pension your GP locum income via Locum forms A and B through PCSE Solo, building 1/54th NHS accrual a year. Miss the monthly window and that month is lost.
 altText: UK GP locum doctor completing NHS pension Locum form A and form B on a laptop with a stethoscope nearby
-image: ''
 h1: 'NHS Pension for GP Locums: Locum Forms A and B Explained'
 keyTakeaways:
 - "Locum form A records each individual session and form B is the monthly summary submitted with payment through the PCSE Solo route."

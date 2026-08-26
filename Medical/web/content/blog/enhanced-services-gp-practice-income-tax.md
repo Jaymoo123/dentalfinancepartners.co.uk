@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/enhanced-services-gp-practice
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6809658/pexels-photo-6809658.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/man-talking-to-assistant-at-reception-of-dentist-clinic-6809658/"
 category: "GP Practice Management"
 metaTitle: "Enhanced Services Income for GPs: DES, LES & the Tax"
 metaDescription: "Enhanced and locally commissioned GP services: DES and LES income beyond core GMS, how it is taxed as practice trading profit, and the VAT line."
 altText: "GP practice team reviewing a list of enhanced service offers and the income they generate"
-image: ""
 h1: "Enhanced and Locally Commissioned Services: Extra GP Practice Income and How It Is Taxed"
 keyTakeaways:
 - "A Directed Enhanced Service (DES) is nationally specified with funding set centrally and must be offered to every practice in England, while a Local Enhanced Service (LES) is commissioned locally by the ICB so its scope and fee vary by area."

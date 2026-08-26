@@ -5,11 +5,16 @@ canonical: https://www.medicalaccounts.co.uk/blog/gp-partnership-tax-complete-gu
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/7433851/pexels-photo-7433851.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Vlada Karpovich"
+  photographerUrl: "https://www.pexels.com/@vlada-karpovich"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-7433851/"
 category: GP Tax & Accounts
 metaTitle: 'GP Partnership Tax Guide 2026/27: Profit Share, NIC'
 metaDescription: 'How GP partnership profit is taxed in 2026/27: SA800 to SA104, taxed on profit share not drawings, Class 4 NIC at 6% over £12,570. Reserve tax early.'
 altText: GP partners reviewing partnership tax documents and financial statements
-image: ''
 h1: 'GP Partnership Tax: Complete Guide for 2026/27'
 keyTakeaways:
 - "GP partners are taxed on their allocated profit share, not drawings; the partnership files one SA800 and each partner reports their share on SA104."

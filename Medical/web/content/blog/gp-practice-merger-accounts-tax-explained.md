@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-practice-merger-accounts-t
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/5327578/pexels-photo-5327578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Thirdman"
+  photographerUrl: "https://www.pexels.com/@thirdman"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/medical-professionals-wearing-face-masks-while-shaking-hands-with-each-other-5327578/"
 category: "GP Tax & Accounts"
 metaTitle: "GP Practice Mergers: Accounts, Partners and the Tax"
 metaDescription: "What happens when two GP practices merge: the partnerships, capital accounts, contracts and premises, and whether it is a cessation or a continuation."
 altText: "GP partners from two practices reviewing merger accounts and tax position"
-image: ""
 h1: "GP Practice Mergers: What Happens to the Accounts, the Partners and the Tax"
 keyTakeaways:
 - "A GP merger buys no NHS goodwill: its sale has been prohibited since 1 April 2004, currently under The Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019 (SI 2019/251)."

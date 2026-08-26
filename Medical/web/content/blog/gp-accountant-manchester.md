@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-manchester"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7654438/pexels-photo-7654438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/employees-doing-accounting-in-the-office-7654438/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Manchester | Medical Tax Specialists 2026/27"
 metaDescription: "GP accountant in Manchester for partners, salaried GPs, and locums. NHS pension annual allowance, GMS practice accounts, and tax across Greater Manchester."
 altText: "Professional accountant meeting with GP partner in Manchester office discussing tax planning and practice finances"
-image: ""
 h1: "GP Accountant Manchester: Specialist Tax & Financial Services for Medical Professionals"
 keyTakeaways:
 - "The sale of NHS GP goodwill has been prohibited since 1 April 2004, now under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019, SI 2019/251."

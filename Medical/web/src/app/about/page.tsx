@@ -61,7 +61,7 @@ export default function AboutPage() {
       <ul className="mt-4 list-disc space-y-3 pl-5 text-base leading-relaxed text-[var(--ink-soft)]">
         <li>Partner-led advice tailored specifically to GPs, consultants and medical practice owners. You work directly with qualified accountants who specialize in medical sector accounting.</li>
         <li>Proactive, year-round tax planning focused on medical-specific issues like NHS pension optimization, locum tax efficiency, and private practice structuring — not just year-end compliance.</li>
-        <li>Clear, actionable guidance on NHS pension annual allowance calculations, lifetime allowance planning, and scheme pays elections. We help you navigate these complex areas with confidence.</li>
+        <li>Clear, actionable guidance on NHS pension annual allowance calculations, the tapered allowance, carry-forward and Scheme Pays elections. The lifetime allowance was abolished on 6 April 2024 and replaced by the Lump Sum Allowance and the Lump Sum and Death Benefit Allowance, which is what the retirement-side planning now works to.</li>
         <li>Structured advice that withstands scrutiny from HMRC, mortgage lenders, practice partners, or potential practice buyers. All recommendations are documented and defensible.</li>
         <li>Fixed-fee pricing with no hidden charges. You know exactly what you're paying before we start work.</li>
       </ul>

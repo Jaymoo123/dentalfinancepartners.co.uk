@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-corporation-tax"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/17065743/pexels-photo-17065743.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Jakub Zerdzicki"
+  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/documents-17065743/"
 category: "Incorporation & Company Structures"
 metaTitle: "GP Corporation Tax Rates 2026/27 (19% to 25%)"
 metaDescription: "Corporation tax for an incorporated GP in 2026/27: 19% to 25% with marginal relief, plus the 2026/27 dividend rates and the NHS pension trap."
 altText: "UK GP reviewing corporation tax rates and dividend figures for an incorporated private medical company"
-image: ""
 h1: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
 keyTakeaways:
 - "A limited company cannot hold an NHS GMS or PMS contract, so any income (including dividends) routed through it is not NHS-pensionable, making GP incorporation a private-work decision only."

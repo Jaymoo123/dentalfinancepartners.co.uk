@@ -4,11 +4,16 @@ slug: locum-doctor-self-assessment-filing-guide
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/6097777/pexels-photo-6097777.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Laura James"
+  photographerUrl: "https://www.pexels.com/@laura-james"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/crop-black-doctor-with-document-at-table-6097777/"
 category: Locum Tax
 metaTitle: 'Locum Doctor Self Assessment: Step-by-Step Filing UK'
 metaDescription: 'File your locum doctor self assessment right: the SA103 pages, the 31 January deadline, payments on account and MTD from April 2026. Beat the penalty.'
 altText: UK locum doctor reviewing self assessment tax forms and documents on desk
-image: ''
 h1: 'Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process'
 keyTakeaways:
 - "The online return for 2025/26 and any tax owed are both due by 31 January 2027, while paper returns must be filed by 31 October 2026."

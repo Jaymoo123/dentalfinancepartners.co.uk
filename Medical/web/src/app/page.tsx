@@ -6,7 +6,7 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
-import { buildFaqPage } from "@/lib/schema";
+import { buildFaqPage, buildHomepageServiceSchema } from "@/lib/schema";
 import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
@@ -24,30 +24,69 @@ const packagesMode = isPackagesMode(niche);
 // same text rendered on the page. No rendered markup is changed.
 const HOMEPAGE_FAQS = [
   {
-    question: "Do I need a specialist accountant as a medical professional?",
+    question: "What is a GP accountant?",
     answer:
-      "Not strictly, but the question is whether a generalist accountant can give you genuinely useful advice on the financial specifics of the medical sector. In our experience, the gap shows most clearly around NHS pension planning, locum tax rules, mixed NHS/private income, and practice partnership structures. A competent generalist can handle your compliance. A medical specialist can do that and help you make better financial decisions that protect your wealth.",
+      "A GP accountant is an accountant whose work is concentrated on general practice: partnership accounts prepared to the shape NHS commissioners expect, reconciliation of PCSE statements and global sum, Carr-Hill and QOF income, superannuation certificates, and the individual self-assessment returns of the partners and salaried GPs behind the practice. The distinguishing skill is not the accounting standard, it is knowing how NHS practice income arrives and how it should be split between the partnership and the individual.",
+  },
+  {
+    question: "Do I need a specialist medical accountant, or will a generalist do?",
+    answer:
+      "A competent generalist accountant can file your accounts and your return. The question is whether they can advise you. The gap shows most clearly in four places: NHS Pension annual allowance and the tapered allowance, where the input amount grows without you contributing anything extra; locum IR35 status, which is determined by the engagement and not the contract; mixed NHS and private income, where the same fee can be reported twice or not at all; and GP partnership structures, where notional rent, reimbursed expenses and mid-year profit share changes all have to be handled consistently across several people's returns.",
+  },
+  {
+    question: "What do medical accountants actually do for doctors?",
+    answer:
+      "For a GP partner: partnership accounts, the profit allocation, the superannuation certificate, and the personal return. For a salaried GP: self-assessment where private, locum or sessional income sits alongside the NHS post. For a hospital consultant: the split between NHS employment, private practice and medico-legal work, plus the incorporation question if the private income is material. For a locum: IR35 status, the limited company versus umbrella versus sole trader decision, expense claims, and NHS Pension Forms A and B so that locum work counts towards pensionable service.",
+  },
+  {
+    question: "Which doctors do you work with?",
+    answer:
+      "GP partners and salaried GPs, hospital consultants with NHS and private income, locum and sessional doctors, junior doctors, and GP practices as entities. We do not take work outside the medical professions, which is the point: the same questions recur, so the answers are already worked out.",
+  },
+  {
+    question: "Are you able to help doctors outside London?",
+    answer:
+      "Yes. Enquiries come from across the UK and the work is handled remotely, which is normal for medical accounting because the records that matter (PCSE statements, NHSBSA pension savings statements, agency remittances, practice ledgers) are all digital. Note that NHS contracting and pension administration differ between England, Wales, Scotland and Northern Ireland, so the nation you practise in changes the answer more than the city does.",
+  },
+  {
+    question: "How much does a specialist medical accountant cost?",
+    answer:
+      "Fees depend on what the work actually involves: a single self-assessment return for a salaried GP is not comparable to a six-partner practice with partnership accounts, superannuation certificates and six individual returns. Tell us your role, your income mix and whether a practice is involved, and you will get a scoped figure rather than a headline price that changes later.",
+  },
+  {
+    question: "Can I switch accountants part-way through the tax year?",
+    answer:
+      "Yes, and most doctors do. Professional clearance is requested from your existing accountant, who passes over the records and the tax history. You are picked up from your current position rather than starting again, and there is no need to wait for a year end or a filing deadline to pass.",
   },
 ];
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--medical-teal)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--medical-teal)] transition-all duration-200 hover:border-[var(--medical-teal)] hover:bg-[var(--medical-teal)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--coral)]";
 
+// Title/description written 2026-08-26 from the 90d GSC head set (data through
+// 2026-08-23). The old title carried "gp accountants" (1,309 impr) but nothing
+// from the "medical accountants" family (377 + 284 + 225 + 86 impr), which the
+// homepage also catches and which is how the page-1 incumbents title themselves.
+// This one carries both exact phrases plus "specialist medical accountants".
+const HOME_TITLE = "Specialist Medical Accountants & GP Accountants | UK";
+const HOME_DESCRIPTION =
+  "Accountants for UK doctors only. NHS Pension annual allowance, GP practice and partnership accounts, locum IR35 and tax returns, consultant private practice and medical expense claims.";
+
 export const metadata: Metadata = {
-  title: "GP Accountants UK | Tax Specialists for Doctors",
-  description: "Medical accounting specialists for UK doctors and GPs. NHS pension advice, locum tax returns, practice incorporation and medical expense claims.",
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "GP Accountants UK | Tax Specialists for Doctors",
-    description: "Medical accounting specialists for UK doctors and GPs. NHS pension advice, locum tax returns, practice incorporation and medical expense claims.",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GP Accountants UK | Tax Specialists for Doctors",
-    description: "Medical accounting specialists for UK doctors and GPs. NHS pension advice, locum tax returns, practice incorporation and medical expense claims.",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
   },
 };
 
@@ -79,21 +118,21 @@ const realityPoints = [
 const whoWeWorkWith = [
   {
     href: "/for-gps",
-    title: "GP Partners & Salaried GPs",
-    subtitle: "Practice income · NHS pension · GP tax advice",
-    body: "From partnership accounts and profit-sharing to individual tax returns and pension planning. Our GP accountants ensure your practice finances are structured efficiently and your personal tax position is optimised, particularly around NHS superannuation and GP tax planning.",
+    title: "GP practices, partners and salaried GPs",
+    subtitle: "GP practice accountants · Partnership accounts · Superannuation",
+    body: "For the practice: income analysed by NHS stream, PCSE reconciliation, notional rent, capital and current accounts, and a profit allocation that copes with a partner joining or leaving mid-year. For the individual: the partner or salaried GP return prepared against the practice figures rather than separately from them.",
   },
   {
     href: "/for-consultants",
-    title: "Hospital Consultants",
-    subtitle: "NHS & private practice · Consultant accountant",
-    body: "Managing a mix of NHS salary, private patient fees, and medico-legal work creates a complex tax picture. Our medical accountants provide clarity on income splitting, legitimate expense claims, and long-term pension strategy to protect your wealth.",
+    title: "Hospital consultants",
+    subtitle: "NHS salary · Private practice · Medico-legal income",
+    body: "An NHS post, private patient fees and expert-witness work are three different tax positions in one person. The recurring questions are how the income splits, which expenses hold up, whether incorporating the private side is worth the NHS pension accrual it costs, and where the annual allowance taper bites.",
   },
   {
     href: "/for-locum-doctors",
-    title: "Locum Doctors",
-    subtitle: "Locum accountant · Self-assessment · IR35",
-    body: "If you're working through agencies or directly with practices, you're running a business. Our locum accountants handle your self-assessment, advise on allowable expenses, manage your VAT position, and ensure you're compliant and tax-efficient with specialist locum tax advice.",
+    title: "Locum doctors",
+    subtitle: "Locum accountant · IR35 · Self-assessment",
+    body: "Agency, bank and direct practice engagements are a business, whatever it feels like. The work is IR35 status per engagement, the limited company versus umbrella versus sole trader decision modelled on your actual earnings, expense claims, the VAT registration threshold, and Forms A and B so locum sessions count towards pensionable service.",
   },
 ];
 
@@ -106,7 +145,7 @@ const howWeWorkItems = [
   {
     n: "02",
     title: "NHS pension advice & planning",
-    body: "Specialist guidance on NHS superannuation, including annual allowance calculations, lifetime allowance planning, and the implications of pension growth on your personal tax position.",
+    body: "Pension input amounts calculated for the NHS scheme, the tapered annual allowance tested against threshold and adjusted income, carry-forward from the three previous tax years checked, and Scheme Pays assessed where a charge is unavoidable. The lifetime allowance was abolished on 6 April 2024, so the retirement-side work is now the Lump Sum Allowance and the Lump Sum and Death Benefit Allowance instead.",
   },
   {
     n: "03",
@@ -132,34 +171,34 @@ const howWeWorkItems = [
 
 const trustItems = [
   {
-    title: "Medical-only focus",
+    title: "Medical work only",
     stat: "100%",
-    body: "100% medical focus. Every GP accountant on our team works exclusively with GPs, consultants, locums, and practice owners.",
+    body: "No general practice clients from outside medicine. Every enquiry that comes through this site is from a GP, consultant, locum, junior doctor or a practice, which is why the same NHS Pension and partnership questions get answered rather than researched.",
   },
   {
-    title: "Proven experience",
-    stat: "50+",
-    body: "50+ doctors and medical practices across London, Manchester, Birmingham, and major UK cities.",
+    title: "Free calculators, no email gate",
+    stat: "10",
+    body: "Ten medical tax calculators covering NHS Pension annual allowance, tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings and the incorporation comparison. No sign-up, no email required.",
   },
   {
-    title: "Transparent pricing",
-    stat: "Fixed fees",
-    body: "Clear, agreed fees with no hidden charges. You know exactly what you're paying for.",
+    title: "Answered by a working day",
+    stat: "1 day",
+    body: "Enquiries sent through this site get a reply within one working day, and the first conversation is a scoping call rather than a sales call.",
   },
 ];
 
 const whySpecialistItems = [
   {
-    title: "GP accountant expertise",
-    body: "Every medical accountant on our team specializes in GP accounting, NHS pension annual allowance calculations, locum IR35 compliance, medical partnership structures, and healthcare-specific accounting regulations.",
+    title: "The NHS Pension is the recurring problem",
+    body: "The scheme is defined benefit, so your pension input amount grows with your pensionable pay whether or not you pay in another penny. Above £260,000 adjusted income the annual allowance tapers, and NHSBSA pension savings statements are issued late and are not always right. A medical accountant checks the input figure before deciding whether a Scheme Pays election is worth making.",
   },
   {
-    title: "Proactive GP tax planning",
-    body: "Beyond compliance, our GP accountants provide strategic tax planning, NHS pension modelling, and practice structure advice. We help medical professionals make informed financial decisions to protect and grow your wealth.",
+    title: "Income arrives from several directions at once",
+    body: "A GP partner has a profit share, superannuation deducted at source, and possibly out-of-hours or appraisal work. A consultant has an NHS salary, private fees and medico-legal reports. A locum has agency, bank and direct practice engagements. Each stream is treated differently for tax, National Insurance, IR35 and pension, and the errors happen where they meet.",
   },
   {
-    title: "Clear, accessible service",
-    body: "Fixed fees, no jargon, and direct access to your dedicated GP accountant. We're here to provide clarity and support whenever you need it.",
+    title: "Practice accounting has its own vocabulary",
+    body: "Global sum and Carr-Hill weighting, QOF and enhanced services, PCN and DES income, notional rent, reimbursed expenses, capital and current accounts, mutual assessment periods. None of this appears in general SME accounting, and none of it is guessable from the ledger alone.",
   },
 ];
 
@@ -178,6 +217,7 @@ export default function HomePage() {
   );
 
   const faqSchema = buildFaqPage(HOMEPAGE_FAQS);
+  const serviceSchema = buildHomepageServiceSchema(howWeWorkItems.map((i) => i.title));
 
   return (
     <>
@@ -189,20 +229,24 @@ export default function HomePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <section className="hero-brand border-b border-white/10">
         <div className={`hero-inner ${siteContainerLg} ${sectionYLoose}`}>
           <div className="hero-reveal">
             <BrandLogoHero />
           </div>
           <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Specialist Accountants for</span>
-            <span className="block">GPs & Medical Professionals</span>
+            <span className="block">Specialist medical accountants</span>
+            <span className="block">and GP accountants for UK doctors</span>
           </h1>
           <p className="hero-reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            GP accountants and medical accounting specialists exclusively for UK doctors. We handle NHS pension complexities, locum tax returns, private practice structures, and medical expense claims. Our entire client base is medical—GPs, consultants, and practice owners who need a specialist GP accountant with sector-specific financial expertise.
+            Medical accountants working with doctors and nobody else: GP partners, salaried GPs, hospital consultants, locums and GP practices. The work that fills the year is NHS Pension annual allowance modelling, partnership accounts and superannuation certificates, locum IR35 and self-assessment, the private practice incorporation question, and expense claims that survive an HMRC look.
           </p>
           <p className="hero-reveal-delay-2 mt-4 text-sm font-medium text-white/80">
-            Serving GPs, consultants, and locum doctors in London, Manchester, Birmingham, Leeds, and Bristol.
+            Doctors in London, Manchester, Birmingham, Leeds, Bristol and across England, Wales, Scotland and Northern Ireland, with the contract and pension differences between the four nations accounted for.
           </p>
           <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
             <Link
@@ -230,7 +274,7 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)] bg-[var(--surface)] py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
-            GP accountants and medical accounting specialists serving UK doctors exclusively. Our client base includes GP partners, salaried GPs, hospital consultants, private practice owners, and locum doctors. Over 50 medical professionals rely on our GP accountant team for NHS pension planning, tax optimization, and practice financial management.
+            Medical accountants for UK doctors, and only for UK doctors. GP partners and salaried GPs, hospital consultants with private and medico-legal income, locum and sessional doctors, junior doctors, and GP practices as partnerships in their own right. If your income arrives partly through PCSE and partly through a private clinic, that is the normal case here rather than the exception.
           </p>
         </div>
       </section>
@@ -269,7 +313,7 @@ export default function HomePage() {
             <span className="block text-[var(--coral-strong)]">avoidable tax complications.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Medical finances are uniquely complex. Between NHS pensions, mixed NHS and private income, locum engagements, practice partnerships, and professional expenses, the picture requires specialist understanding. A generalist accountant will process what you give them — but that's not the same as understanding how a medical professional's finances actually work.
+            Between the NHS Pension, mixed NHS and private income, locum engagements, practice partnerships and professional expenses, a doctor's tax position has more moving parts than most owner-managed businesses. A generalist accountant will process what you hand over accurately. That is not the same as knowing what you should have handed over, or what the figures on a PCSE statement mean.
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {realityPoints.map((item) => (
@@ -332,7 +376,7 @@ export default function HomePage() {
             <span className="block">tailored to your practice.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            No generic packages or one-size-fits-all solutions. Our GP accountants start with your specific situation—whether it's NHS pension planning, locum tax returns, or practice incorporation—and build a service around your needs. Here's what ongoing support from a medical accountant looks like for GPs and consultants.
+            There is no standard package, because a salaried GP with one private clinic and a six-partner practice with a superannuation certificate to certify are not the same job. The starting point is your actual position: NHS Pension exposure, locum self-assessment, partnership accounts or the incorporation question. Here is the work that a medical accountant does across a year for GPs, consultants and locums.
           </p>
           <ol className="mt-14 grid list-none gap-10 pl-0 sm:gap-12 lg:grid-cols-2">
             {howWeWorkItems.map((item) => (
@@ -362,17 +406,17 @@ export default function HomePage() {
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Specialist advantage</p>
           <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-            Medical specialists deliver measurably better outcomes.
+            What a specialist medical accountant sees that a generalist does not.
           </h2>
           <div className="mt-8 max-w-3xl space-y-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
             <p>
-              Generalist accountants aren't incompetent—they simply lack exposure to GP accounting and medical sector nuances. A specialist GP accountant will immediately recognize NHS pension annual allowance traps, understand locum IR35 status implications, and know HMRC's current stance on medical expense claims for conferences and journals.
+              This is not a competence argument. Generalist accountants are not weaker technically, they simply do not see enough doctors for the medical patterns to become obvious. A specialist reads a pension savings statement and knows immediately whether the input amount looks plausible for that pensionable pay, reads a locum engagement and knows which IR35 factors will decide it, and reads an expense schedule and knows which items HMRC has historically challenged for doctors.
             </p>
             <p>
-              GP accountants and medical specialists encounter these scenarios weekly. This concentrated experience means proactive identification of tax-saving opportunities specific to doctors—pension carry-forward claims, optimal practice structure for consultants with private work, or locum expense optimization strategies that generalists simply won't consider.
+              The difference shows up as things noticed early rather than repaired late. Unused carry-forward from the three previous tax years before an annual allowance charge crystallises. Forms A and B filed so that locum sessions actually count towards pensionable service instead of quietly falling out. A basis period reform adjustment modelled before it lands on a payment on account. An incorporation modelled properly rather than assumed, because for a partner with only NHS income it is usually the wrong answer.
             </p>
             <p>
-              Efficiency matters too. You won't spend time explaining NHS superannuation mechanics, BMA contract structures, or medical indemnity insurance. We already understand the medical profession's financial landscape, allowing immediate focus on your specific tax position and planning opportunities.
+              There is a plainer benefit too. You will not spend the first meeting explaining what superannuation is, why your practice year end is not 5 April, or why your indemnity subscription is a business cost. That vocabulary is already shared, so the conversation starts at your position rather than at the definitions.
             </p>
           </div>
           <div className="mt-14 overflow-x-auto rounded-2xl border border-[var(--border)]">
@@ -411,7 +455,7 @@ export default function HomePage() {
             <span className="block">practice finance guidance.</span>
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Practical advice on medical tax planning, NHS pension optimization, locum compliance, and practice structures. Written by accountants serving UK doctors exclusively. Each guide answers real questions from GPs, consultants, and locum doctors navigating complex financial decisions.
+            Working notes on NHS Pension annual allowance and Scheme Pays, locum IR35 and Forms A and B, GP partnership income and PCSE reconciliation, and the private practice incorporation question. Written for doctors, so the starting assumption is that you already know what superannuation is.
           </p>
           <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
             {practicalPosts.map((p) => (
@@ -451,9 +495,9 @@ export default function HomePage() {
 
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <p className="section-label">What our clients say</p>
+          <p className="section-label">What the work looks like</p>
           <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-            Real results for medical professionals
+            Four situations medical accountants see repeatedly
           </h2>
           <div className="mt-10 max-w-3xl">
             <TestimonialSlider />
@@ -514,10 +558,10 @@ export default function HomePage() {
             <div className="min-w-0">
               <p className="section-label">Get started</p>
               <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-                Speak with GP accountants who specialize in the medical profession
+                Speak to a medical accountant about your position
               </h2>
               <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                GP partners, salaried GPs, hospital consultants, or locum doctors—our GP accountants handle NHS pension planning, mixed income tax optimization, and practice financial structures. Initial consultation with a medical accountant is free and obligation-free. Discuss your specific situation with GP accounting specialists.
+                Whether you are a GP partner, a salaried GP, a hospital consultant with private work or a locum, the useful first conversation is a short scoping call: your role, your income mix, your NHS Pension position, and whether a practice is involved. It is free and there is no obligation attached to it.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/contact" className={`${btnPrimary}`}>
@@ -529,12 +573,15 @@ export default function HomePage() {
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Fill in the form and one of our medical accountants will be in touch to arrange a short introductory call. No hard sell — just an honest conversation about your situation and whether we're the right fit.
+                Fill in the form and a medical accountant will be in touch to arrange a short introductory call. No hard sell, just a conversation about your situation and whether this is the right fit.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
                 Prefer to call or email? You'll speak to someone who works with medical professionals every day.
               </p>
-              <p className="mt-6 text-sm text-[var(--muted)]">All initial conversations are confidential and carry no obligation.</p>
+              <p className="mt-6 text-sm text-[var(--muted)]">
+                Initial conversations carry no obligation. What happens to the details you send, and the fact that they may be shared with a regulated firm from the specialist partner network so that firm can respond, is set out in the{" "}
+                <Link href="/privacy-policy" className={`underline ${focusRing} rounded`}>privacy policy</Link>.
+              </p>
             </div>
             )}
             <div className="card-flat p-6 sm:p-8 lg:p-10">
@@ -547,23 +594,23 @@ export default function HomePage() {
       <section className="border-t border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <p className="section-label">Questions from doctors</p>
-          <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Common questions from medical professionals.</h2>
-          <div className="mt-8 max-w-3xl">
-            <details className="group card-flat open:shadow-md">
-              <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--ink)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
-                <span className="flex items-center justify-between gap-4">
-                  Do I need a specialist accountant as a medical professional?
-                  <span className="text-[var(--coral)] transition-transform group-open:rotate-45" aria-hidden>
-                    +
+          <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Common questions about medical accountants.</h2>
+          <div className="mt-8 max-w-3xl space-y-3">
+            {HOMEPAGE_FAQS.map((faq) => (
+              <details key={faq.question} className="group card-flat open:shadow-md">
+                <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--ink)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between gap-4">
+                    {faq.question}
+                    <span className="text-[var(--coral)] transition-transform group-open:rotate-45" aria-hidden>
+                      +
+                    </span>
                   </span>
-                </span>
-              </summary>
-              <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)] sm:px-6 sm:py-5 sm:text-base">
-                <p>
-                  Not strictly — but the question is whether a generalist accountant can give you genuinely useful advice on the financial specifics of the medical sector. In our experience, the gap shows most clearly around NHS pension planning, locum tax rules, mixed NHS/private income, and practice partnership structures. A competent generalist can handle your compliance. A medical specialist can do that and help you make better financial decisions that protect your wealth.
-                </p>
-              </div>
-            </details>
+                </summary>
+                <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)] sm:px-6 sm:py-5 sm:text-base">
+                  <p>{faq.answer}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

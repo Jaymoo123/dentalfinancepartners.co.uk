@@ -6,10 +6,15 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { MEDICAL_GUIDES } from "@/lib/medical-guides-data";
 
+// Retitled 2026-08-26. "Medical Guides" is a label nobody searches; the page
+// registered zero head-family impressions in the 90d pull. The demand these
+// six guides answer is expressed as the topics themselves ("NHS pension annual
+// allowance", "GP partnership accounts", "IR35 for locums"), so the title now
+// leads with the largest of them rather than with the section name.
 export const metadata: Metadata = {
-  title: "Medical Guides | NHS Pension, GP Tax & Locum Accounting for UK Doctors",
+  title: "NHS Pension, GP Partnership & Locum Tax Guides for UK Doctors",
   description:
-    "Six in-depth guides for UK medical professionals: NHS pension annual allowance, GP partnership accounts, consultant private practice tax, locum structure, medical expenses, and IR35 for locums. Written by specialist medical accountants.",
+    "Six reference guides for UK doctors: NHS Pension annual allowance and the taper, GP partnership accounts, consultant private practice tax, locum limited company versus umbrella, medical expenses, and IR35 for locums.",
   alternates: {
     canonical: `${siteConfig.url}/medical-guides`,
     languages: {
@@ -18,9 +23,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Medical Guides | NHS Pension, GP Tax & Locum Accounting",
+    title: "NHS Pension, GP Partnership & Locum Tax Guides for UK Doctors",
     description:
-      "In-depth guides for UK doctors: NHS pension allowance, GP partnership accounts, consultant private practice tax, locum structure, expenses, and IR35.",
+      "Six reference guides: NHS Pension annual allowance and the taper, GP partnership accounts, consultant private practice tax, locum structure, medical expenses, and IR35.",
     url: `${siteConfig.url}/medical-guides`,
     type: "website",
     images: [{ url: `/api/og?title=${encodeURIComponent("Medical Guides | NHS Pension, GP Tax & Locum Accounting")}`, width: 1200, height: 630, alt: "Medical Guides | NHS Pension, GP Tax & Locum Accounting" }],
@@ -42,10 +47,10 @@ export default function MedicalGuidesPage() {
               Free medical accounting guides
             </div>
             <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Medical guides for UK doctors
+              NHS Pension, GP partnership and locum tax guides
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg max-w-2xl">
-              Six in-depth guides written by specialist GP accountants and medical accounting professionals. NHS pension annual allowance, GP partnership accounts, consultant private practice tax, locum structure, medical expenses, and IR35. No generic tax advice: every guide is specific to the UK medical profession.
+              Six reference guides for UK doctors, each covering one area end to end rather than skimming several. The NHS Pension annual allowance and the taper. GP partnership accounts, profit allocation and notional rent. Consultant private practice tax. The locum limited company, umbrella and sole trader comparison. What medical expenses HMRC actually accepts. And IR35 for locums, including who issues the determination. Every figure is tagged to a tax year, and nothing here is generic small-business tax advice with the word doctor added.
             </p>
           </div>
         </div>

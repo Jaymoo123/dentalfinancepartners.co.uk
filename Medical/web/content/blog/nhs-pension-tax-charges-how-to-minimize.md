@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/nhs-pension-tax-charges-how-t
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7111516/pexels-photo-7111516.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Tara Winstead"
+  photographerUrl: "https://www.pexels.com/@tara-winstead"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/calculator-beside-red-pens-7111516/"
 category: "NHS Pension Planning"
 metaTitle: "How to Reduce NHS Pension Annual Allowance Charges"
 metaDescription: "How high-earning doctors cut NHS pension annual allowance charges in 2025/26 and 2026/27: carry forward, Scheme Pays, taper and the incorporation trap."
 altText: "UK doctor reviewing NHS pension annual allowance statements and tax calculations at desk"
-image: ""
 h1: "How to Minimise NHS Pension Annual Allowance Charges"
 howtoSteps:
   - name: "Work out whether you have a charge at all"

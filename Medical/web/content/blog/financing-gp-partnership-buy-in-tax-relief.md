@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/financing-gp-partnership-buy-
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7789610/pexels-photo-7789610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Ivan Babydov"
+  photographerUrl: "https://www.pexels.com/@babydov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/white-wooden-table-with-chairs-7789610/"
 category: "GP Tax & Accounts"
 metaTitle: "Financing a GP Partnership Buy-In: Loans & Interest Relief"
 metaDescription: "How to fund a GP partnership buy-in: capital loans, the income tax relief on the loan interest under qualifying loan interest rules, the cap and cash flow."
 altText: "GP reviewing a partnership-capital loan and the qualifying loan interest relief on a buy-in"
-image: ""
 h1: "Financing a GP Partnership Buy-In: Loans, Tax Relief on the Interest and the Numbers"
 keyTakeaways:
 - "Interest on a loan used to buy a share in, or contribute capital to, a GP partnership qualifies for income tax relief under ITA 2007 s.398, with relief given under s.383."

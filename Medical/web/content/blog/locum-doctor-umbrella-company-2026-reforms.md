@@ -4,11 +4,16 @@ slug: "locum-doctor-umbrella-company-2026-reforms"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Tranmautritam"
+  photographerUrl: "https://www.pexels.com/@tranmautritam"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/information-sign-on-shelf-251225/"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Umbrella Company 2026 Reforms | What's Changing"
 metaDescription: "The April 2026 umbrella reform makes agencies and end clients liable for unpaid PAYE via joint and several liability. What it means for locum doctors."
 altText: "Professional medical documents and calculator showing locum doctor umbrella company tax calculations and compliance requirements"
-image: ""
 h1: "Locum Doctor Umbrella Company 2026 Reforms: What Is Actually Changing"
 keyTakeaways:
 - "From 6 April 2026 the umbrella reform makes the recruitment agency (or, where there is no agency, the end client) jointly and severally liable for any PAYE and National Insurance an umbrella company fails to pay."

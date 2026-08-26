@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-expenses-what-yo
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8376233/pexels-photo-8376233.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Tima Miroshnichenko"
+  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-in-white-lab-gown-8376233/"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Allowable Expenses 2026/27 | What You Can Claim"
 metaDescription: "What locum doctors can claim in 2026/27: mileage at 55p a mile, indemnity, GMC fee, travel, home office. Full list of allowable expenses and HMRC rules."
 altText: "Professional UK locum doctor reviewing expense receipts and tax documents at desk"
-image: ""
 h1: "Locum Doctor Expenses: What You Can Claim"
 keyTakeaways:
 - "An expense is allowable only where it is incurred wholly and exclusively for your profession under ITTOIA 2005 s.34."

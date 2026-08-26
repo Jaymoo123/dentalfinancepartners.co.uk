@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-liverpool"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8297034/pexels-photo-8297034.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Mikhail Nilov"
+  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-writing-on-a-book-while-holding-a-calculator-8297034/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Liverpool"
 metaDescription: "Liverpool GP accountant for NHS partners, locums and consultants. NHS pension allowance, profit-share returns and private-practice tax across Merseyside."
 altText: "Liverpool medical professionals reviewing financial documents with specialist GP accountant"
-image: ""
 h1: "GP Accountant in Liverpool: Specialist Medical Accounting Across Merseyside"
 keyTakeaways:
 - "A GP partner is taxed on their allocated profit share for the year, not on the drawings actually taken, and pays Class 4 National Insurance at 6% on profits from £12,570 to £50,270 then 2% above for 2026/27."

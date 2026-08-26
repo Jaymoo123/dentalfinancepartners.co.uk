@@ -4,11 +4,16 @@ slug: medical-professional-expenses-what-is-claimable
 date: '2026-04-01'
 generator: opus-4.8/track2-rewrite
 author: Medical Accountants UK Editorial Team
+image: "https://images.pexels.com/photos/5900130/pexels-photo-5900130.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-woman-working-at-the-office-5900130/"
 category: Medical Expenses
 metaTitle: 'Medical Professional Expenses: What Doctors Can Claim'
 metaDescription: 'What UK doctors claim against tax: the GMC fee and List 3 subscriptions, indemnity, CPD, equipment and 55p mileage for the first 10,000 miles. Claim it.'
 altText: UK medical professional reviewing claimable expenses including stethoscope, calculator and tax documents
-image: ''
 h1: 'Medical Professional Expenses: What Can UK Doctors Claim Against Tax?'
 keyTakeaways:
 - "The GMC annual retention fee sits on HMRC's approved List 3, so it is tax-deductible, but restoration fees and penalty fees are not."

@@ -108,9 +108,9 @@ const trustItems = [
     body: "100% legal sector focus. Every accountant on our team works exclusively with solicitors, law firms, and legal practitioners.",
   },
   {
-    title: "SRA compliance expertise",
-    stat: "100%",
-    body: "100% pass rate on SRA Accountant's Reports. We understand the Accounts Rules and client money regulations as well as you do.",
+    title: "SRA Accounts Rules",
+    stat: "Client money",
+    body: "Client account reconciliations, residual balances and the annual accountant's report are handled on a monthly rhythm against the Accounts Rules, so year-end is a check on work already done.",
   },
   {
     title: "Transparent pricing",
@@ -228,10 +228,10 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              What our clients say
+              What the work looks like
             </p>
             <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-              Real results for law firms
+              Four situations legal sector accountants see repeatedly
             </h2>
           </div>
           <div className="mt-10 max-w-3xl mx-auto">

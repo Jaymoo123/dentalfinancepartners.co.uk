@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/private-practice-incorporatio
 date: "2026-07-14"
 generator: opus-4.8/netnew-wave1
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7108407/pexels-photo-7108407.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/doctor-at-her-office-7108407/"
 category: "Incorporation & Company Structures"
 metaTitle: "Private Practice Incorporation: Doctor's Decision Guide 2026/27"
 metaDescription: "Should a doctor incorporate private practice? Sole trader vs limited company compared on 2026/27 numbers, with worked examples at £40k, £80k and £150k private income."
 altText: "Hospital consultant reviewing private practice incorporation figures comparing sole trader and limited company at a desk"
-image: ""
 h1: "Private Practice Incorporation: Complete Guide for Doctors and Consultants"
 keyTakeaways:
 - "Incorporation is a decision about private work only: a company cannot hold an NHS contract and dividends are not NHS-pensionable, so weigh the tax saving against lost accrual every time."

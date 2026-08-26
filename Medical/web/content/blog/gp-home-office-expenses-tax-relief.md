@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-home-office-expenses-tax-r
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7680696/pexels-photo-7680696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-calculator-7680696/"
 category: "GP Tax & Accounts"
 metaTitle: "GP Home Office Tax Relief 2026/27 | What GPs Can Claim"
 metaDescription: "How GPs claim use-of-home tax relief for 2026/27: apportionment basis, HMRC flat rates (self-employed bands vs £6/week employee rate) and what qualifies."
 altText: "UK GP working from a home office with medical notes and a computer, reviewing use-of-home tax relief calculations"
-image: ""
 h1: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professionals"
 keyTakeaways:
 - "Self-employed doctors apportion actual household running costs on a fair, reasonable and consistently applied basis, reflecting both the rooms used for work and the share of time they are used for the business."

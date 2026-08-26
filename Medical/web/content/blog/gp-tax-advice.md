@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-tax-advice"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7654185/pexels-photo-7654185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Pavel Danilyuk"
+  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/four-people-working-in-the-office-7654185/"
 category: "GP Tax & Accounts"
 metaTitle: "GP Tax Advice 2026/27 | Tax Planning Hub for UK GPs"
 metaDescription: "GP tax advice for 2026/27: NHS pension allowance, partnership profit share, expenses, incorporating private work and MTD. The levers, then the deep guides."
 altText: "UK GP reviewing tax documents with calculator and NHS pension paperwork"
-image: ""
 h1: "GP Tax Advice: Essential Tax Planning for UK General Practitioners"
 keyTakeaways:
 - "GP partners are taxed on their allocated profit share, not on drawings, so profit left in the practice as working capital is still taxed."

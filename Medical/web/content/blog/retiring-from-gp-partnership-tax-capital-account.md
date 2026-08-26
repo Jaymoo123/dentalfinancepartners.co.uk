@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/retiring-from-gp-partnership-
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8441812/pexels-photo-8441812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Kampus Production"
+  photographerUrl: "https://www.pexels.com/@kampus"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/elderly-man-and-woman-talking-with-insurance-agent-in-office-8441812/"
 category: "GP Tax & Accounts"
 metaTitle: "Retiring From a GP Partnership: Capital Account & Tax"
 metaDescription: "What a retiring GP partner gets back, the capital account and premises share, the cessation of their notional trade for tax, CGT on premises and the deed."
 altText: "Retiring GP partner reviewing capital account and partnership exit documents"
-image: ""
 h1: "Retiring or Leaving a GP Partnership: Your Capital Account, Cessation and the Tax"
 keyTakeaways:
 - "There is no NHS goodwill payment when you leave, because the sale of NHS GP goodwill has been prohibited since 1 April 2004, currently under SI 2019/251."

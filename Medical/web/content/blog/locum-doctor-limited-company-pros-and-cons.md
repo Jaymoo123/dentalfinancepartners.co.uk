@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/locum-doctor-limited-company-
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/6627936/pexels-photo-6627936.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/a-man-sitting-at-the-table-6627936/"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Limited Company: Pros and Cons (2026/27)"
 metaDescription: "Should a locum doctor use a limited company (PSC)? Outside vs inside IR35, 2026/27 dividend rates, VAT at £90k and the NHS pension loss, in plain English."
 altText: "UK locum doctor reviewing limited company structure documents with calculator and medical equipment"
-image: ""
 h1: "Locum Doctor Limited Company: Pros and Cons Explained"
 keyTakeaways:
 - "A locum company only saves tax on work that is outside IR35, because inside-IR35 engagements are paid net of PAYE and employee NIC by the fee-payer."

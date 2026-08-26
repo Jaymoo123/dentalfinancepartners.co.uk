@@ -3,10 +3,16 @@ import { Calculator, FileText, Building2, Receipt, Shield, Users } from "lucide-
 import { siteConfig } from "@/config/site";
 import { AudienceStageLayout, type AudienceStage } from "@/components/audience/AudienceStageLayout";
 
+// Retitled 2026-08-26. The corepage pack flagged this page's title AND H1 as
+// carrying no head token, while 393 impressions of practice-ENTITY demand
+// ("gp practice accountants" 277 @72.3, "accountants for gp practices" 78
+// @65.7, "accounting for gp partners" 38 @42.1) were being caught by the
+// homepage and a blog post instead. The homepage keeps the practitioner head
+// ("gp accountants", "medical accountants"); this page takes the practice.
 export const metadata: Metadata = {
-  title: "GP Accountant | NHS Pension & Tax for GP Partners & Salaried GPs",
+  title: "GP Practice Accountants | Partnership Accounts & Partner Tax",
   description:
-    "Specialist GP accountant services for UK GP partners and salaried GPs. NHS pension annual allowance, GP partnership accounts, GP self-assessment, and medical expense claims. Medical-only focus.",
+    "Accountants for GP practices and GP partners: partnership accounts, profit allocation, notional rent, superannuation certificates and self-assessment for partners and salaried GPs.",
   alternates: {
     canonical: `${siteConfig.url}/for-gps`,
     languages: {
@@ -15,34 +21,44 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Accountants for GP Partners & Salaried GPs",
+    title: "GP Practice Accountants | Accountants for GP Practices & Partners",
     description:
-      "NHS pension annual allowance, GP partnership accounts, mixed income tax, and medical expense claims. 100% medical focus.",
+      "Partnership accounts, profit allocation, notional rent, PCSE reconciliation, superannuation certificates, NHS Pension annual allowance and partner self-assessment.",
     url: `${siteConfig.url}/for-gps`,
     type: "website",
-    images: [{ url: `/api/og?title=${encodeURIComponent("Accountants for GP Partners & Salaried GPs")}`, width: 1200, height: 630, alt: "Accountants for GP Partners & Salaried GPs" }],
+    images: [{ url: `/api/og?title=${encodeURIComponent("GP Practice Accountants")}`, width: 1200, height: 630, alt: "GP Practice Accountants" }],
   },
 };
 
 const data: AudienceStage = {
   slug: "for-gps",
   role: "gps",
-  displayRole: "GP Partners & Salaried GPs",
-  badge: "GP practices · NHS pension · Self-assessment",
-  heroHeading: "GP accountant specialists for partners and salaried GPs",
+  displayRole: "GP Practices, Partners & Salaried GPs",
+  badge: "Partnership accounts · Profit allocation · Superannuation",
+  heroHeading: "GP practice accountants for partnerships and their partners",
   intro:
-    "GP finances sit at an unusual intersection of employment, self-employment, partnership income, NHS pension, and often private practice. Most generalist accountants handle the compliance but miss the nuances that matter: annual allowance modelling, correct treatment of NHS Pension growth as a pension input, and practice expense allocations that HMRC will not challenge. A specialist GP accountant understands these from day one.",
+    "A GP practice is two jobs of accounting stacked on top of each other. There is the partnership itself, whose income arrives as global sum weighted by Carr-Hill, QOF achievement, enhanced services, PCN and DES payments and reimbursements, and whose accounts have to carry notional rent, capital and current accounts and a profit allocation that changes whenever a partner joins or leaves. Then there is each partner individually, with a profit share, superannuation already deducted at source, and often locum, out-of-hours or private income alongside it. Accountants for GP practices have to make both sets of figures agree, which is where generalist practice accounting most often comes apart.",
   stats: [
-    { value: "100%", label: "Medical-only client base" },
-    { value: "50+", label: "GP practices advised" },
-    { value: "24h", label: "Response guarantee" },
-    { value: "£60k", label: "2025/26 annual allowance" },
+    { value: "100%", label: "Medical work only" },
+    { value: "1 day", label: "Reply to enquiries" },
+    { value: "£60k", label: "Annual allowance, 2026/27" },
+    { value: "£260k", label: "Adjusted income taper point, 2026/27" },
   ],
   concerns: [
     {
+      icon: Building2,
+      title: "Does our practice income reconcile to what PCSE says it paid us?",
+      body: "Practice income does not arrive as one figure. Global sum is weighted by the Carr-Hill formula for the age, sex, morbidity and turnover profile of your list. QOF is paid partly in aspiration and settled on achievement. Enhanced services, PCN and DES payments, and reimbursements for premises, drugs and locum cover all land separately, some in arrears. The reconciliation between the PCSE statements and the practice ledger is where accountants for GP practices earn their keep, because a payment that was never chased is invisible in accounts that simply record what arrived.",
+    },
+    {
+      icon: Users,
+      title: "How should notional rent and the capital accounts be handled?",
+      body: "Notional rent is reimbursement for premises the partnership occupies, and how it is treated depends on who owns the building and on what terms. Sitting alongside it, each partner has a capital account (their stake in the practice assets) and a current account (undrawn profit). Confusing the two is the commonest defect in GP practice accounts prepared by generalists, and it matters most at exactly the moment a partner joins, retires or asks what their share is actually worth.",
+    },
+    {
       icon: Calculator,
       title: "Am I facing an NHS pension annual allowance charge?",
-      body: "The NHS Pension Scheme's defined benefit structure means pension input grows each year even if you make no additional contributions. For higher-earning GPs, the tapered annual allowance can bring the limit as low as £10,000. We model your pension input, adjusted income, and threshold income annually to catch charges before they crystallise.",
+      body: "The NHS Pension Scheme is defined benefit, so your pension input amount grows with pensionable pay even if you pay in nothing extra. The annual allowance is £60,000 for 2026/27, unchanged from 2025/26, and it tapers by £1 for every £2 of adjusted income above £260,000 where threshold income also exceeds £200,000, down to a floor of £10,000. Because the measure is capitalised growth rather than contributions paid, a good year for the practice can produce a charge with no warning. Pension input, threshold income and adjusted income are modelled annually, and carry-forward from the three previous tax years is checked before anyone reaches for Scheme Pays.",
     },
     {
       icon: FileText,
@@ -57,7 +73,7 @@ const data: AudienceStage = {
     {
       icon: Receipt,
       title: "What expenses can I actually claim?",
-      body: "BMA membership, MDU/MPS/MDDUS indemnity, GMC retention, CPD and conference costs, home consulting room, professional journals, motor between surgeries. Many GPs we onboard are under-claiming. We review the last three years and file amendments where the gap is material.",
+      body: "BMA subscription and Royal College fees where they sit on HMRC's approved List 3, GMC retention, CPD and conference costs genuinely relevant to current practice, home consulting room on a defensible apportionment, professional journals, and motor between surgeries at 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) then 25p. Indemnity needs care: since April 2019 the Clinical Negligence Scheme for General Practice has covered NHS general practice clinical negligence in England at no subscription, so a GP's own MDU, MPS or MDDUS cost is now largely for private and non-clinical work. Prior years are reviewed and amendments filed where the gap is material.",
     },
     {
       icon: Shield,
@@ -81,7 +97,7 @@ const data: AudienceStage = {
     },
     {
       title: "GP partnership accounts preparation",
-      body: "Accounts prepared to the standard required by NHS England for PCN and ICB reporting: income and expenditure, balance sheet, profit allocation, and notional rent treatment. Filed with Companies House or HMRC as appropriate for your practice structure.",
+      body: "Full practice accounts: income and expenditure analysed by NHS income stream, balance sheet, partner capital and current accounts, notional rent treatment, and a profit allocation that handles mid-year changes in the partner mix. A GP partnership does not file at Companies House, so the outputs that matter are the partnership return to HMRC, the individual partner returns that must agree with it, and the superannuation certificates.",
     },
     {
       title: "Medical expense claim review",
@@ -97,6 +113,18 @@ const data: AudienceStage = {
     },
   ],
   faqs: [
+    {
+      q: "What do GP practice accountants do that a general accountant does not?",
+      a: "Three things. They read NHS income at source, so global sum, Carr-Hill weighting, QOF aspiration and achievement, enhanced services, PCN and DES income and reimbursements are analysed rather than lumped into one figure, and the PCSE statements are reconciled to the ledger. They handle the partnership mechanics: notional rent, capital versus current accounts, and a profit allocation that survives a partner joining or leaving mid-year. And they prepare the superannuation certificates and the individual partner returns as one coordinated piece of work with the practice accounts, so the same income cannot be counted twice or dropped between the two.",
+    },
+    {
+      q: "Can you act for the practice and for the partners individually?",
+      a: "Yes, and it is usually the point. The partnership return and every partner's self-assessment have to agree on the profit share, the superannuation deducted and the reimbursed expenses. When the practice uses one firm and the partners use several, the reconciliation is done by nobody and the errors surface at the worst time, typically when someone retires or buys in. Accounting for GP partners works best when the practice figures and the personal figures are prepared against each other.",
+    },
+    {
+      q: "Our practice year end is not 5 April. Does basis period reform affect us?",
+      a: "Yes. From 2023/24 self-employed and partnership profits are taxed on a tax-year basis regardless of the accounting date, so a practice with, say, a 30 June year end now has its profit apportioned across tax years, with transition profits and overlap relief handled in the transition year. The tax bill does not change in total but the timing does, which moves your payments on account. The cash flow effect is worth modelling before it arrives rather than after.",
+    },
     {
       q: "I received an NHS pension annual allowance charge. What should I do?",
       a: "First, verify the HMRC calculation: the NHSBSA issues Pension Savings Statements, but there are known errors in pension input amounts, particularly for members who changed scheme section or had mid-year changes to pensionable pay. If the charge is correct, assess whether a Scheme Pays election makes sense, which defers and capitalises the charge against your eventual pension benefits. We work through both steps for GP clients in this position.",
@@ -118,9 +146,9 @@ const data: AudienceStage = {
       a: "We handle professional clearance with your existing accountant and request the records we need. Most onboarding is complete within two to three weeks. We pick up from the current position rather than asking you to restart from scratch. You can switch mid-year without disruption to your filing timeline.",
     },
   ],
-  ctaTitle: "Get your GP accounts done properly",
+  ctaTitle: "Talk to a GP practice accountant",
   ctaBody:
-    "30-minute scoping call, free. We look at your current setup, check your NHS pension position, and flag any expense claims you may be missing. No obligation.",
+    "A free 30-minute scoping call. Whether you are enquiring as a practice or as an individual partner or salaried GP, the call covers your current setup, your NHS Pension position, and any expense claims that look under-made. No obligation.",
   relatedCalculators: [
     {
       href: "/calculators/nhs-pension-annual-allowance",

@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/dispensing-practice-income-ac
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/8667531/pexels-photo-8667531.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "cottonbro studio"
+  photographerUrl: "https://www.pexels.com/@cottonbro"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/interior-of-a-vintage-pharmacy-8667531/"
 category: "GP Practice Management"
 metaTitle: "Dispensing Practice Income, Accounts and Tax Explained"
 metaDescription: "How a dispensing GP practice earns from drug reimbursement and dispensing fees, where it sits in the accounts, and the VAT position on dispensed drugs."
 altText: "Dispensary shelves of medicines in a rural GP practice ready to be supplied to patients"
-image: ""
 h1: "Dispensing Practice Income: How It Works in the Accounts and How It Is Taxed"
 keyTakeaways:
 - "NHS prescription drugs a dispensing patient takes away are zero-rated (a taxable supply at 0%) under VATA 1994 Schedule 8 Group 12, so the input VAT on them is recoverable."

@@ -9,8 +9,8 @@ Inputs:
   (b) dataforseo_competitor_data (Supabase): ranked keywords per competitor domain,
       if any rows exist with a non-null ranked_keyword for a domain that isn't our
       own (own domain's ranked_keyword rows are OUR rankings, not competitor data)
-  (c) <blogContentDir>/*.md slugs (from sites/<site>.json, else Property/web hardcode
-      for property): our own coverage
+  (c) <blogContentDir>/*.md slugs (from sites/<site>.json paths.blogContentDir):
+      our own coverage
 
 Output: docs/<site_key>/lane_map_<date>.md
 
@@ -104,9 +104,13 @@ def _blog_dir(site_key: str) -> Path:
         rel = site_cfg.get("paths", {}).get("blogContentDir")
         if rel:
             return ROOT / rel
-    # ponytail: property is the only site wired to this module today; hardcode
-    # its content dir if sites/<key>.json or the key is missing the path.
-    return ROOT / "Property" / "web" / "content" / "blog"
+    # Every real site in sites/*.json carries paths.blogContentDir. If it's
+    # missing, the only honest answer is "I don't know" — the previous property
+    # hardcode here silently reported Property's coverage as the other site's.
+    raise ValueError(
+        f"sites/{site_key}.json has no paths.blogContentDir; cannot locate "
+        f"{site_key}'s blog dir (refusing to guess)."
+    )
 
 
 # ---------------------------------------------------------------------------

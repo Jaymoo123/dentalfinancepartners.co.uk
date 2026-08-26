@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/qof-income-gp-practice-accoun
 date: "2026-06-03"
 generator: opus-4.8/netnew-wave
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/27165072/pexels-photo-27165072.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Wilcle Nunes"
+  photographerUrl: "https://www.pexels.com/@wilcle-nunes-38713774"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/luxury-room-in-house-27165072/"
 category: "GP Practice Management"
 metaTitle: "QOF Income Explained: How It Pays Your GP Practice"
 metaDescription: "How QOF pays a GP practice: points, aspiration and achievement payments, how the income is recognised in the accounts and taxed as trading profit."
 altText: "GP partner reviewing QOF achievement and aspiration payment figures in practice accounts"
-image: ""
 h1: "QOF Income Explained: How the Quality and Outcomes Framework Pays Your Practice"
 keyTakeaways:
 - "QOF is a voluntary annual quality-and-incentive scheme that sits alongside the core Global Sum rather than inside it, and a practice chooses whether to take part each year."

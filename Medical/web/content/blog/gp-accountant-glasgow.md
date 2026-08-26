@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-glasgow"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/33175651/pexels-photo-33175651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Bia Limova"
+  photographerUrl: "https://www.pexels.com/@bia-limova-1908542654"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/financial-analysis-with-calculator-and-documents-33175651/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Glasgow | Scottish Medical Tax Specialists"
 metaDescription: "GP accountant in Glasgow for partners, salaried GPs, locums and consultants. Scottish tax bands, NHS pension annual allowance and GP partnership accounts."
 altText: "Glasgow city skyline with medical professionals discussing financial planning"
-image: ""
 h1: "GP Accountant in Glasgow: Specialist Medical Accounting for Scottish Doctors"
 keyTakeaways:
 - "For 2026/27 the Scottish higher rate of 42% starts at £43,663, well below the £50,270 point in England, so a Glasgow GP's partnership profits move into the higher band sooner."

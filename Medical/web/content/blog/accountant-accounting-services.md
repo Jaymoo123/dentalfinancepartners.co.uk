@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/accountant-accounting-service
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/39192358/pexels-photo-39192358.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "Vitaly Gariev"
+  photographerUrl: "https://www.pexels.com/@silverkblack"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/doctor-consulting-with-older-patient-in-office-39192358/"
 category: "GP Accountant Services"
 metaTitle: "Medical Accounting Services for Doctors UK | Overview"
 metaDescription: "What medical accounting services cover for UK doctors, GPs and consultants: NHS pension, partnership tax, locum IR35, VAT and private work, 2026/27."
 altText: "Specialist medical accountant reviewing NHS pension and partnership tax figures with a doctor"
-image: ""
 h1: "Medical Accounting Services for Doctors: A Complete Overview"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, a prohibition in force since 1 April 2004 and currently under SI 2019/251, so the sell-your-goodwill-and-claim-relief route does not apply to an NHS practice."

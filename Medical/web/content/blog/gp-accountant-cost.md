@@ -5,11 +5,16 @@ canonical: "https://www.medicalaccounts.co.uk/blog/gp-accountant-cost"
 date: "2026-04-01"
 generator: opus-4.8/track2-rewrite
 author: "Medical Accountants UK Editorial Team"
+image: "https://images.pexels.com/photos/7680744/pexels-photo-7680744.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+imageCredit:
+  photographer: "https://kaboompics.com/"
+  photographerUrl: "https://www.pexels.com/@karola-g"
+  source: "Pexels"
+  sourceUrl: "https://www.pexels.com/photo/person-holding-oink-calculator-7680744/"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Cost UK: What Drives the Fee (2026/27)"
 metaDescription: "What drives the cost of a GP accountant: practice size, partner count, payroll, NHS pension certificates and tax complexity, and the questions to ask."
 altText: "UK medical professional reviewing accountant fees and services on laptop"
-image: ""
 h1: "GP Accountant Cost: What Drives the Fee for UK Medical Accounting"
 keyTakeaways:
 - "The NHS pension annual allowance is 60,000 pounds for 2025/26, tapering where threshold income exceeds 200,000 pounds and adjusted income exceeds 260,000 pounds, down to a 10,000 pounds floor."
