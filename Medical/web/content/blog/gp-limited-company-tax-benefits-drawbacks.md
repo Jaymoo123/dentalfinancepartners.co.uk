@@ -13,7 +13,7 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/a-person-signing-a-contract-6814521/"
 category: Incorporation & Company Structures
 metaTitle: 'GP Limited Company: Tax Benefits and Drawbacks 2026/27'
-metaDescription: 'Weigh a GP limited company honestly: corporation tax at 19% on profits up to £50,000 against no NHS contract for your company and no NHS pension on dividends. Model both.'
+metaDescription: 'Weigh a GP limited company honestly: corporation tax at 19% on profits to £50,000, against no NHS contract for your company and no pension on dividends.'
 altText: UK GP weighing the tax benefits and drawbacks of running a limited company with accounts and a calculator
 h1: 'GP Limited Company Tax Benefits and Drawbacks: What You Need to Know'
 keyTakeaways:
