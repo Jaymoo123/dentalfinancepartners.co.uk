@@ -7,11 +7,23 @@ commit or publish the output. Same env and tables as generate_proposal.py.
 
 With --wash, drops leads already handed to a partner or that must not be
 contacted, and writes leads_washed_<date>.* instead. Rules in WASH_NOTE.
+
+With --triage <already-contacted.csv>, does everything --wash does, additionally
+drops anyone already reached out to (matched on email or the last 10 phone
+digits, so +44/0/bare all collide), and writes leads_triage_<date>.* laid out to
+match the live "Lead Tracker" Google Sheet column for column, newest first.
+
+That sheet is seeded from this file once and then kept current by the webhook at
+Property/web/src/app/api/leads/sync/route.ts, which inserts each new lead as row
+2. Re-run this only to rebuild the sheet from scratch: once it is live the sheet
+holds hand-typed triage columns that exist nowhere else, so a re-seed overwrites
+work unless those columns are copied back.
 """
 import csv
 import html
 import json
 import os
+import re
 import sys
 import urllib.request
 from collections import defaultdict
@@ -33,8 +45,57 @@ WASH_NOTE = ("Washed: non-property up to and including Ali Fadlallah, and proper
              "arrangement; opted-out leads; older duplicate enquiries from the same person.")
 
 
-def wash(kept, rows):
+# Opt-out expressed as free text in a reply, which never fired the structured
+# opted_out event. Deliberately matched only against reply bodies (never the
+# original enquiry, where "not interested in selling" is a normal sentence).
+OPT_OUT_TEXT = re.compile(
+    r"\b(stop|unsubscribe|opt.?out|remove me|take me off|do not contact|don'?t contact"
+    r"|no longer interested|not interested|ico|gdpr|delete my (data|details)"
+    r"|spam|scam|harass)\b", re.I)
+
+
+# Columns A-I of the Lead Tracker sheet, in order, and the `leads` field each holds.
+# This IS the webhook's row array in Property/web/src/app/api/leads/sync/route.ts.
+# Change one and you must change the other, or every future lead lands one column
+# out and the sheet silently corrupts. test_export_wash.py fails if they drift.
+SHEET_WEBHOOK_COLS = [
+    ("Received", "created_at"), ("Site", "source"), ("Name", "full_name"),
+    ("Email", "email"), ("Phone", "phone"), ("Type", "role"),
+    ("Message", "message"), ("Page", "source_url"), ("Lead ID", "id"),
+]
+
+
+def uk_time(iso):
+    """Match the webhook's toLocaleString("en-GB", {timeZone:"Europe/London"}) exactly,
+    so seeded rows and webhook-appended rows sort as one column."""
+    from zoneinfo import ZoneInfo
+    d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    return d.astimezone(ZoneInfo("Europe/London")).strftime("%d/%m/%Y, %H:%M:%S")
+
+
+def phone_key(p):
+    """Last 10 digits, so +447700900123 / 07700900123 / 7700900123 all match."""
+    d = re.sub(r"\D", "", p or "")
+    return d[-10:] if len(d) >= 10 else ""
+
+
+def load_contacted(paths):
+    """Return (emails, phone_keys) already reached out to, from CSVs with those columns."""
+    emails, phones = set(), set()
+    for path in paths:
+        with open(path, newline="", encoding="utf-8-sig") as f:
+            for r in csv.DictReader(f):
+                if (r.get("email") or "").strip():
+                    emails.add(r["email"].strip().lower())
+                if phone_key(r.get("phone")):
+                    phones.add(phone_key(r["phone"]))
+    return emails, phones
+
+
+def wash(kept, rows, contacted=(frozenset(), frozenset())):
     """Return (kept, rows) with already-handled / do-not-contact leads dropped."""
+    done_emails, done_phones = contacted
+
     def when(l):
         return datetime.fromisoformat(l["created_at"].replace("Z", "+00:00"))
 
@@ -51,8 +112,15 @@ def wash(kept, rows):
     for l, r in zip(kept, rows):  # newest first
         src, ts = r["source"], when(l)
         key = r["email"].strip().lower() or r["phone"].strip()
+        email, phone = r["email"].strip().lower(), phone_key(r["phone"])
+        replies = "\n".join(ln for ln in r["sms_email_trail"].split("\n")
+                            if "They replied" in ln)
         if r["opted_out"]:
             reason = "opted out"
+        elif OPT_OUT_TEXT.search(replies):
+            reason = "opt-out or complaint language in their reply"
+        elif (email and email in done_emails) or (phone and phone in done_phones):
+            reason = "already reached out to"
         elif src != "property" and ts <= reflex_cut:
             reason = "already supplied (non-property, earlier arrangement)"
         elif src == "property" and djh_from <= ts <= djh_to:
@@ -102,6 +170,11 @@ def main():
         url, key, "lead_nurture_state?select=lead_id,status&limit=5000")}
     sends = get(url, key, "lead_nurture_sends?select=lead_id,channel,step,sent_at,status"
                           "&order=sent_at.asc&limit=10000")
+    # Claimed offers are a flag, not a wash rule: a non-exclusive claim leaves the
+    # lead inside the 3+3 recipient cap, so the triager may still work it.
+    claimed = {o["lead_id"] for o in get(
+        url, key, "lead_offers?select=lead_id,claimed_at,exclusive&limit=2000")
+        if o["claimed_at"]}
 
     by_lead = defaultdict(list)
     for ev in events:
@@ -167,14 +240,55 @@ def main():
             "sms_email_trail": replies,
         })
 
-    washed = "--wash" in sys.argv
+    contacted_csvs = [sys.argv[i + 1] for i, a in enumerate(sys.argv) if a == "--triage"]
+    triage = bool(contacted_csvs)
+    washed = triage or "--wash" in sys.argv
     if washed:
-        kept, rows = wash(kept, rows)
+        kept, rows = wash(kept, rows, load_contacted(contacted_csvs))
+
+    if triage:
+        # This is the live "Lead Tracker" sheet's layout, matched exactly, because
+        # the sheet is now the working copy and re-seeding must not shuffle its
+        # columns under the people using it. Columns A-I are what the webhook
+        # writes for every new lead (route.ts); J-M are history that only exists
+        # for leads already in the system, so they stay blank on a new arrival;
+        # N-Q belong to the triager and nothing automatic ever writes them.
+        sheet_rows = []
+        for l, r in zip(kept, rows):
+            sheet_rows.append({
+                # A-I: written by the webhook on every new lead.
+                "Received": uk_time(l["created_at"]),
+                "Site": r["source"],
+                "Name": r["name"],
+                "Email": r["email"],
+                "Phone": r["phone"],
+                "Type": r["role"],
+                "Message": r["message"],
+                "Page": l.get("source_url") or "",
+                "Lead ID": l["id"],
+                # J-M: history.
+                "Verified": r["verified"],
+                "Nurture status": r["nurture_status"],
+                "Booked call slots": r["booked_call_slots"],
+                "Contact trail": r["sms_email_trail"],
+                # N-Q: the triager's working columns.
+                "Sent to Omar or kept in-house": "",
+                "Contacted on": "",
+                "Next action": "",
+                "Notes": "",
+            })
+        # Newest first, matching the live sheet: the webhook inserts each new lead
+        # as row 2, so the column stays in descending date order as leads arrive.
+        rows = sheet_rows
 
     os.makedirs(OUT, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    stem = f"leads_{'washed' if washed else 'raw'}_{stamp}"
+    stem = f"leads_{'triage' if triage else 'washed' if washed else 'raw'}_{stamp}"
     subtitle = WASH_NOTE if washed else "Do not publish or commit."
+    if triage:
+        subtitle += (" Also washed: anyone already reached out to, and anyone whose reply"
+                     " used opt-out or complaint language. Flag columns are advisory,"
+                     " not exclusions.")
     csv_path = os.path.join(OUT, f"{stem}.csv")
     with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
@@ -196,6 +310,23 @@ tr:nth-child(even){{background:#fafafa}}</style></head><body>
 <h1>Lead export, {stamp}</h1>
 <p><strong>INTERNAL AND UNREDACTED.</strong> {len(rows)} leads, newest first. {html.escape(subtitle)}</p>
 <table><thead><tr>{heads}</tr></thead><tbody>{cells}</tbody></table></body></html>""")
+
+    # The triage sheet is a CSV to paste into Google Sheets; the per-lead PDF
+    # blocks below read the raw-export column names and do not apply to it.
+    if triage:
+        # The sheet has no column for these, so they are reported here instead of
+        # being silently dropped. Sold leads are still workable (a non-exclusive
+        # claim leaves us inside the 3+3 recipient cap), but whoever triages them
+        # should know somebody else already has them.
+        sold = [r["Name"] or r["Email"] for l, r in zip(kept, rows) if l["id"] in claimed]
+        unverified = sum(1 for r in rows if not r["Verified"])
+        print(f"wrote {csv_path}")
+        print(f"wrote {html_path}")
+        print(f"{len(rows)} leads for triage, newest first, "
+              f"{unverified} with unverified contact details")
+        if sold:
+            print(f"NOTE {len(sold)} already sold to a buyer: {', '.join(sold)}")
+        return
 
     # PDF: stacked per-lead blocks (the wide table does not fit a page), via
     # headless Edge like generate_proposal.py. Layout mirrors the qualified

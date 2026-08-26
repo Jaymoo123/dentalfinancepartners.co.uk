@@ -1,119 +1,124 @@
-# Leads → Google Sheets (live sync)
+# Leads to Google Sheets (live sync)
 
-Mirrors every new lead from the shared Supabase `leads` table into a Google
-Sheet within ~1–2 seconds of submission, so leads are readable on your phone
-via the Google Sheets app. Covers **all sites** (property, dentists, medical,
-solicitors, generalist, agency, contractors-ir35) because they all write to the
-same `leads` table; the `source` column tells you which site each lead is from.
+Mirrors every new lead from the shared Supabase `leads` table into the **Lead
+Tracker** Google Sheet within a second or two of submission, so whoever is
+triaging works from one list. Covers **all sites**, because they all write to the
+same `leads` table; the `Site` column says which site each lead came from.
 
 ```
-Lead form submit → row inserted into Supabase `leads`
-  → pg_net trigger POSTs the row (with a secret header) to:
-     https://www.propertytaxpartners.co.uk/api/leads/sync
-  → endpoint verifies the secret, appends a row to the Google Sheet
+Lead form submit  ->  row inserted into Supabase `leads`
+  ->  pg_net trigger POSTs the row (with a secret header) to
+      https://www.propertytaxpartners.co.uk/api/leads/sync
+  ->  endpoint verifies the secret, inserts the lead as row 2 of the Sheet
 ```
 
-The lead is durably stored in Supabase **before** this fires, so a Sheets
-hiccup never loses a lead. The Sheet is a convenience mirror.
+The lead is durably stored in Supabase **before** this fires, and the separate
+`leads_to_email_trg` notification is unaffected by it, so a Sheets failure never
+loses a lead or an alert. The Sheet is a working copy, not the record.
 
-## What is already built (in the repo)
+## Two accepted gaps (owner decision, 2026-08-26)
 
-- `Property/web/src/app/api/leads/sync/route.ts` — the webhook endpoint.
-- `Property/web/src/lib/leads/google-sheets.ts` — service-account append helper
-  (zero extra npm dependencies; signs the Google JWT with Node `crypto`).
-- `supabase/migrations/20260529000000_leads_to_sheets_webhook.sql` — sanitised
-  record of the trigger (the live one is created via the Management API with the
-  real URL + secret, so the secret is never committed).
+Recorded so nobody mistakes them for oversights, and so nobody re-opens them
+unasked:
 
-## What you need to do (one-time, ~10 minutes)
+1. **Google is not named as a processor in any site's privacy policy**, so this
+   sharing is undisclosed. Closing it means one line in the privacy policies,
+   which can ride along with the partner-firm line already queued from the
+   Aswatax work.
+2. **The Sheet sits outside the retention purge**, so rows outlive the retention
+   period the sites publish. There is no deletion path for it in this repo.
 
-### 1. Create the Google Sheet
+Both were put to the owner and he elected to proceed and to own the disclosure
+and sheet-access questions himself.
 
-1. Create a new Google Sheet (e.g. "Leads — all sites").
-2. Rename the first tab to `Leads`.
-3. Put these headers in row 1 (column order must match the endpoint):
+## Why row 2, and not the bottom
 
-   | Received | Site | Name | Email | Phone | Type | Practice | Message | Page | Status | Lead ID |
-   | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+Sheets' `values:append` only ever adds after the last populated row. The tracker
+is read top-down and is seeded newest-first, so appending would bury each new
+lead under 147 older ones. `prependLeadRow()` instead inserts a whole new row at
+index 1 and writes into it.
 
-4. Note the spreadsheet ID from the URL: `https://docs.google.com/spreadsheets/d/`**`<THIS>`**`/edit`.
+Inserting a **row** rather than writing over cells is what keeps a triager's
+hand-typed columns attached to their own lead: Sheets moves the entire row's
+contents down together. The two API calls are not atomic, and the order is
+chosen so the failure mode is harmless. If the insert lands and the write fails
+you get one visible blank row; the reverse order could overwrite a real lead.
 
-### 2. Service account (reuse the existing one)
+## The column contract
 
-No need to create a new service account or enable any API. The existing key at
-`C:\Users\user\Documents\Emplifex\your-service-account.json` was probed on
-2026-05-29 and works for the Sheets API (token + read both returned 200):
+Columns **A-I are written by the webhook** on every new lead. They are defined in
+two places that must agree:
 
-- email: `air-fryer-bot@vernal-tracer-466910-g3.iam.gserviceaccount.com`
-- project: `vernal-tracer-466910-g3` (Sheets API already enabled)
+- `Property/web/src/app/api/leads/sync/route.ts`, the `row` array
+- `proposal_engine/export_raw_leads.py`, `SHEET_WEBHOOK_COLS`, which seeds the sheet
 
-So the only Google-side step is: **Share your Sheet (step 1) with that email as
-Editor.** Without this, the API returns 403. (If you'd rather keep finance
-separate from the airfryer project, create a fresh service account instead and
-share the Sheet with its email; everything below is otherwise identical.)
+| A | B | C | D | E | F | G | H | I |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Received | Site | Name | Email | Phone | Type | Message | Page | Lead ID |
 
-### 3. Set environment variables on the Property Vercel project
+Columns **J-M** (Verified, Nurture status, Booked call slots, Contact trail) are
+history that does not exist yet when a form is submitted, so they stay blank on a
+new arrival and are filled by a re-seed. Columns **N-Q** (Sent to Omar or kept
+in-house, Contacted on, Next action, Notes) belong to the triager and nothing
+automatic ever writes them.
 
-In the Vercel dashboard → Property project → **Settings → Environment Variables**
-(Production, and optionally Preview). Add three single-line values:
+**Reorder either list without the other and every future lead silently lands one
+column out**, in a sheet people are already working from. `proposal_engine/test_export_wash.py`
+parses the route's row array and fails on drift. Run it after touching either file:
 
-| Variable | Value |
-| --- | --- |
-| `LEADS_SYNC_SECRET` | a long random string (40+ chars) — also give this to me to wire the trigger |
-| `GOOGLE_SERVICE_ACCOUNT_B64` | the whole service-account JSON, base64-encoded (one paste-safe line) |
-| `GOOGLE_SHEETS_SPREADSHEET_ID` | the sheet ID from step 1.4 |
-| `GOOGLE_SHEETS_TAB` | `Leads` (optional; this is the default) |
-
-Generate the base64 value locally (keeps the private key out of any chat/logs);
-run this in PowerShell and paste the output into `GOOGLE_SERVICE_ACCOUNT_B64`:
-
-```powershell
-[Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\user\Documents\Emplifex\your-service-account.json"))
+```
+python proposal_engine/test_export_wash.py
 ```
 
-This single base64 var replaces the older `GOOGLE_SHEETS_CLIENT_EMAIL` +
-`GOOGLE_SHEETS_PRIVATE_KEY` pair (which still work as a fallback if set), and
-avoids the multi-line-PEM paste problems that cause 400s from Google.
+## Live configuration
 
-### 4. Deploy the Property site
+- Sheet: **Lead Tracker**, id `1MPxu7utofikLFK60nvDEPs9Y_wjLrbRAEpxKIbv-itM`, tab `Sheet1`
+- Service account (pre-existing, Sheets API already enabled, needs Editor on the
+  sheet): `air-fryer-bot@vernal-tracer-466910-g3.iam.gserviceaccount.com`,
+  key at `C:\Users\user\Documents\Emplifex\your-service-account.json`
+- Vercel project: `property-tax-partners` (`prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU`)
+- Env vars set 2026-08-26: `LEADS_SYNC_SECRET`, `GOOGLE_SERVICE_ACCOUNT_B64`,
+  `GOOGLE_SHEETS_SPREADSHEET_ID`, `GOOGLE_SHEETS_TAB`
 
-GitHub auto-deploy is off for the niche sites, so deploy manually from the repo
-root (install the Vercel CLI first if needed, `npm i -g vercel`):
+**Do not rename the tab.** The webhook resolves the sheet by that exact name and
+fails on every lead if it changes.
 
-```powershell
-cd Property; vercel deploy --prod
+## Seeding or re-seeding the sheet
+
+```
+python proposal_engine/export_raw_leads.py --triage <already-contacted.csv>
 ```
 
-### 5. Verify the endpoint is live
+Writes `proposal_engine/out/leads_triage_<date>.csv`, laid out to match the sheet
+column for column, newest first. It drops opted-out leads, leads already supplied
+to a partner, older duplicate enquiries, anyone in the contacted CSV, and anyone
+whose reply used opt-out or complaint language.
 
-Open in a browser (a GET is a safe health probe, no secret needed):
+**Re-seeding overwrites the triager's columns**, which exist nowhere else. Copy
+N-Q out first, or only re-seed before the sheet is in use.
+
+## Health check
+
+A GET is a safe probe and leaks no secret values:
 
 ```
 https://www.propertytaxpartners.co.uk/api/leads/sync
 ```
 
-Expect: `{"ok":true,"secretSet":true,"sheetsConfigured":true}`. If either flag
-is `false`, the env vars didn't take (re-check, then redeploy).
-
-### 6. Tell me, and I'll finish the wiring
-
-Once steps 1–5 are done, give me the `LEADS_SYNC_SECRET` value and I will:
-- create the Supabase trigger via the Management API (real URL + secret),
-- fire a test lead and confirm a row lands in the Sheet,
-- (optional) backfill your existing leads into the Sheet by replaying them
-  through the live endpoint.
-
-## Want a phone notification too?
-
-The Sheet is a log, not an alert. If you also want a ping the moment a lead
-arrives (email / WhatsApp / Telegram), say so and I'll add it to the same
-endpoint (a few lines; email needs no extra service, WhatsApp/Telegram need a
-free bot token).
+Expect `{"ok":true,"secretSet":true,"sheetsConfigured":true}`.
 
 ## Troubleshooting
 
-- **GET shows `sheetsConfigured:false`** → env vars not set on Production / not redeployed.
-- **403 from Sheets in logs** → the Sheet isn't shared with the service account email.
-- **400 from Google token endpoint** → malformed `GOOGLE_SHEETS_PRIVATE_KEY` (whitespace/newlines).
-- **Nothing appears but no errors** → the Supabase trigger isn't created yet (step 6) or points at the wrong URL.
-- Endpoint logs: Vercel dashboard → Property → the function logs for `/api/leads/sync`.
+- **`sheetsConfigured:false`** — env vars not set on Production, or set but not
+  yet redeployed. Vercel only picks up env changes on a new deployment.
+- **`Sheets tab "X" not found`** in the logs — the tab was renamed. Either rename
+  it back or update `GOOGLE_SHEETS_TAB` and redeploy.
+- **403 from Sheets** — the sheet is no longer shared with the service account.
+- **A lead is in Supabase but not the Sheet** — the trigger is missing or points
+  at the wrong URL, or the endpoint returned non-2xx. `pg_net` does not retry.
+  Check the Vercel function logs for `/api/leads/sync`.
+- **Leads with no email address never arrive.** The endpoint rejects records
+  without one (400). All 147 seeded leads had an email, so this has never bitten,
+  but a phone-only lead would be silently absent.
+- **A blank row 2** — the insert succeeded and the value write failed. Safe to
+  delete; the lead is still in Supabase.

@@ -101,7 +101,49 @@ export function sheetsConfigured(): boolean {
   return Boolean(getCredentials() && process.env.GOOGLE_SHEETS_SPREADSHEET_ID);
 }
 
-export async function appendLeadRow(values: (string | number)[]): Promise<void> {
+// The Sheets API addresses row inserts by numeric sheet id (the `gid` in the tab's
+// URL), not by tab name, so resolve the name we are configured with to its id.
+async function getSheetId(
+  spreadsheetId: string,
+  tab: string,
+  accessToken: string,
+): Promise<number> {
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}` +
+      `?fields=sheets.properties(sheetId,title)`,
+    { headers: { Authorization: `Bearer ${accessToken}` } },
+  );
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error(`Sheets metadata failed (${res.status}): ${detail}`);
+  }
+  const json = (await res.json()) as {
+    sheets?: { properties?: { sheetId?: number; title?: string } }[];
+  };
+  const match = json.sheets?.find((s) => s.properties?.title === tab);
+  if (!match?.properties || typeof match.properties.sheetId !== "number") {
+    const found = (json.sheets ?? []).map((s) => s.properties?.title).join(", ");
+    throw new Error(`Sheets tab "${tab}" not found (tabs present: ${found})`);
+  }
+  return match.properties.sheetId;
+}
+
+/**
+ * Insert a lead as the new row 2, directly under the header, pushing every
+ * existing row down one.
+ *
+ * Newest-first is deliberate: the tracker is read top-down by whoever is
+ * triaging, so a new lead must be the first thing they see rather than the last
+ * row of a list that only grows. Inserting a whole row (rather than writing over
+ * cells) is what keeps the triager's own columns attached to their lead, because
+ * Sheets moves the entire row's contents down together.
+ *
+ * Two API calls, and they are not atomic. The ordering is chosen so the failure
+ * mode is harmless: if the insert succeeds and the write fails, the sheet gains
+ * one blank row, which is obvious and costs nothing. The reverse order could
+ * overwrite a real lead.
+ */
+export async function prependLeadRow(values: (string | number)[]): Promise<void> {
   const creds = getCredentials();
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
   const tab = process.env.GOOGLE_SHEETS_TAB || "Leads";
@@ -113,21 +155,50 @@ export async function appendLeadRow(values: (string | number)[]): Promise<void> 
   }
 
   const accessToken = await getAccessToken(creds.clientEmail, creds.privateKey);
+  const sheetId = await getSheetId(spreadsheetId, tab, accessToken);
 
-  const range = `${encodeURIComponent(tab)}!A1`;
-  const url =
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}:append` +
-    `?valueInputOption=RAW&insertDataOption=INSERT_ROWS`;
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-      "Content-Type": "application/json",
+  // startIndex is 0-based and the header occupies row 1, so index 1 is row 2.
+  // inheritFromBefore:false takes formatting from the row below (a data row)
+  // rather than from the header, which would style the lead as a heading.
+  const insert = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}:batchUpdate`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        requests: [
+          {
+            insertDimension: {
+              range: { sheetId, dimension: "ROWS", startIndex: 1, endIndex: 2 },
+              inheritFromBefore: false,
+            },
+          },
+        ],
+      }),
     },
-    body: JSON.stringify({ values: [values] }),
-  });
-  if (!res.ok) {
-    const detail = await res.text().catch(() => "");
-    throw new Error(`Sheets append failed (${res.status}): ${detail}`);
+  );
+  if (!insert.ok) {
+    const detail = await insert.text().catch(() => "");
+    throw new Error(`Sheets row insert failed (${insert.status}): ${detail}`);
+  }
+
+  const write = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/` +
+      `${encodeURIComponent(tab)}!A2?valueInputOption=RAW`,
+    {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ values: [values] }),
+    },
+  );
+  if (!write.ok) {
+    const detail = await write.text().catch(() => "");
+    throw new Error(`Sheets write failed (${write.status}): ${detail}`);
   }
 }
