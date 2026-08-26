@@ -6,7 +6,99 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-07-17.
+Last updated: 2026-08-26 (Stage 0 diagnosis, Track 2 / R.5).
+
+## Stage 0 diagnosis 2026-08-26 (Track 2 / R.5, first site of the merge-expansion queue)
+
+**Binding constraint: INDEXATION on Google, and it is authority-driven, not a config defect.
+Bing is the working channel and converts. The funnel is not the problem.**
+
+Owner decision 2026-08-26 (rollout doc decision 16): Medical is the first R.5 site, taking the
+full Property treatment including the DataForSEO query-level competitor pass. Owner decision the
+same day on this diagnosis: proceed with content AND run an indexing/authority track alongside,
+rather than halting content until Google improves.
+
+All figures below are fresh API pulls of 2026-08-26, never stored snapshots. `gsc_query_data` was
+not used and no SUM of it appears here. Raw JSON in session scratchpad `medical_stage0/` (scratch,
+not repo).
+
+### Search reality
+- **GSC** (`sc-domain:medicalaccounts.co.uk`, 2026-05-28 to 2026-08-26, **data through 2026-08-23**,
+  date dimension = unsampled): **97 clicks, 8,267 impressions / 90d, average position 33.18,
+  CTR 1.17%**, 88 date rows. Page dimension: 21 pages with >=1 impression. Query dimension: 217 rows.
+  Command: `GSCQueryFetcher("medical")` -> `searchanalytics().query(dimensions=["date"])`.
+  Note recorded live, not just from the stored table: summing the query dimension gives 3 clicks
+  against a true site total of 97, so the undercount trap reproduces against the API itself.
+- **Bing** (`GetRankAndTrafficStats`, site truth per the top-N trap memo, 2026-05-17 to 2026-08-23,
+  99 daily rows): **326 clicks, 8,903 impressions**. `GetQueryStats` 648 rows and `GetPageStats`
+  303 rows are top-N, reference only.
+- **Bing out-clicks Google 3.4x on this site** while Google shows a similar impression count at
+  position 33. Same channel-truth pattern as Property.
+
+### Indexation - FAIL, and verified by inspection, not inferred
+- Sitemap (fetched live 2026-08-26): **130 URLs, 87 of them blog.**
+- Only **21 of 130 (16.2%)** earned >=1 GSC impression in 90d; blog subset 17 of 87 (19.5%).
+- Zero impressions is only a PROXY for not-indexed, so it was settled directly:
+  **GSC URL Inspection API** (`urlInspection.index.inspect`, `siteUrl=sc-domain:medicalaccounts.co.uk`)
+  over 27 unique zero-impression URLs (25 random, seed 42, plus the 5 highest-value pages
+  `/services`, `/calculators`, `/for-gps`, `/for-locum-doctors`, `/medical-guides`, 3 overlapping):
+  **0 indexed.** 17 "Discovered - currently not indexed", 9 "URL is unknown to Google"
+  (`lastCrawlTime: never`), 1 "Crawled - currently not indexed" (`/services`, crawled 2026-07-23,
+  `pageFetchState=SUCCESSFUL`, `robotsTxtState=ALLOWED`, and still declined).
+  Raw: scratchpad `medical_stage0/url_inspections.json`.
+- **The usual technical causes were checked and are all CLEAN**, so do not go looking for them again:
+  `robots.ts` and the live `/robots.txt` agree and disallow only `/api/` and `/thank-you`;
+  `medicalaccounts.co.uk` -> `https://www.medicalaccounts.co.uk/` is a single-hop 308 with no chain;
+  3 spot-checked live pages render a self-referential canonical matching the sitemap entry exactly;
+  `sitemap.ts` emits the www host with stable lastmod.
+- Diagnosis: crawl-demand starvation on a low-authority domain. All 27 inspected URLs report
+  `inSitemap=False` in the Inspection response despite being in the submitted sitemap.
+- **Consequence for spend:** the standard "never spend content on an unindexed site" rule applies
+  to GOOGLE only here. Bing indexes the corpus (303 pages in page stats) and is the channel that
+  actually delivers, so new content earns on Bing while the Google authority work runs in parallel.
+
+### Conversion funnel - NOT the constraint, and the best in the estate per session
+- Leads `source='medical'` (verified by `select source, count(*) from leads group by source`, no
+  zero-row key trap here), test-excluded per migration `20260819000003`:
+  **19 / 90d, 10 / 28d.** By month: Apr 2, May 0, Jun 1, Jul 9, Aug 9 (to 08-26).
+- `estate_kpis` since the bot gate (2026-08-23 to now, the only trustworthy traffic window):
+  60 sessions, 52 humans, 47 engaged, 1 lead. 90d: 879 sessions / 647 humans / 19 leads, traffic
+  side inflated ~12% pre-gate, leads side unaffected.
+- Roughly **1 lead per 46 sessions**. Traffic volume is the lever, not funnel surgery.
+- **No invisible-label bug here**: `Medical/web/src/components/forms/LeadForm.tsx` labels use
+  `text-[var(--ink)]` (#001b3d) on `--surface` #ffffff. That defect is generalist and digital-agency
+  only; do not "fix" it here.
+
+### Armed monitored windows - FROZEN, excluded from every sweep
+`monitored_pages` site_key='medical': **16 armed rows** (`lower(status)='active'` AND
+`monitor_until > now()`), all expiring **2026-09-10**, plus 3 `flagged` rows. Note the status value
+is lowercase in this table. The 16 are the GP-partnership and NHS-pension set, which is also the
+site's best-performing content, so the Stage 2 sweep works around them until 09-11.
+
+### Corpus + tooling readiness
+- **79 posts** in `Medical/web/content/blog` (the STATE figures of "46" and "73" elsewhere in this
+  doc were both stale), dated 2026-04-01 to 2026-07-14. Flat routing, `/blog/<slug>`; the only
+  correct link auditor is `scripts/medical_flat_link_audit.py`, never the slug resolver.
+- metaTitle/metaDescription present on 79/79; `keyTakeaways` GEO block present on 79/79.
+  **`image: ""` on 79/79**, so the whole corpus needs the hero-image backfill that generalist just had.
+- `docs/medical/house_positions.md`: 12 sections, last touched `fa8400ab` (2026-06-03). Currency-pass
+  candidates are the blocks explicitly locked to 2025/26 language: annual allowance (£60k/£200k/£260k/
+  £10k), personal allowance and NIC bands, Class 4 NIC. BADR (14% -> 18% from 6 Apr 2026) and the
+  FA 2026 capital allowances are already correctly forward-dated.
+- Tooling, each verified by opening the file: `sites/medical.discovery.json` is legacy schema with no
+  `lanes` / `lane_negative_tokens` (the lane gate silently skips); `optimisation_engine/corepage/config.py`
+  has NO `medical` entry in CORE_PAGES; `sites/medical.json` `paths.topicPool` points at
+  `docs/medical/topic_gaps_final.md` which does not exist; `scripts/track2_worklist.py` is a Property
+  REBUILD not a flag pass (Property-only SITES dict, DONE-slug lists, cluster regexes).
+  READY: `optimisation_engine/blog_generator/site_configs/medical.py` including its `seo_persona`.
+- Structural floor present at file level: robots.ts, llms-full.txt + public/llms.txt, sitemap.ts,
+  schema.ts, blog opengraph-image.
+
+### Corrections to this doc made in the same session (living-doc contract)
+The 2026-07-17 read ("~11/117 indexed", 68.8 impressions/day) is superseded by the pull above. The
+"46 blog posts" and "73" counts were wrong (79). The 2026-07-20 / 2026-08-03 fix-wave checkpoints
+named in this doc were never closed out in writing and are treated as lapsed; the 2026-08-26
+diagnosis replaces them.
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 

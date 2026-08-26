@@ -90,7 +90,7 @@ windows open 2026-09-10.
 Optimisation baseline §5.0a on the existing 418-post corpus (house_positions currency
 pass, corepage, SERP meta, equity-graded sweep minus the 79 frozen pages, GEO backfill
 check, link hygiene, LeadForm label fix), then §5.1 discovery for the 28 C2 clusters.
-DataForSEO balance ~$2.82 (08-25), pool run needs top-up (owner decision, open).
+DataForSEO balance $47.19 re-derived live 2026-08-26 (`/v3/appendix/user_data`); the ~$2.82 figure was stale, no top-up needed.
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
@@ -236,6 +236,6 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - Remaining rewrite worklist: ~270 lower-ROI pages (top-40 ROI set is done except
   the 4 held-back cross-site pages: forex-traders, dentistry-compliance, 2x
   CGT-on-property; owner decision pending).
-- NOTHING DEPLOYED. Owner will deploy at end. Local commits ready to push.
+- ~~NOTHING DEPLOYED~~ **CORRECTED 2026-08-26: ALL OF IT IS LIVE.** Production SHA for Vercel project `holloway-davies` is `7be12b11`, readyState READY (`GET https://api.vercel.com/v9/projects` -> `targets.production.meta.githubCommitSha`, read 2026-08-26), which is the current tip of `origin/main`. So the six niche waves, rewrite batches 1-3 and the image backfill are all on production. Still open from this wave: `monitored_pages` registration per pack revert paths, and IndexNow submission for the new URLs.
 - Note: research packs reference the 08-25 scratchpad GSC/Bing pulls; a resumed
   session should re-pull fresh data if more than ~a week has passed.
