@@ -173,6 +173,49 @@ and treat every row it returns as frozen, whatever the status says.
    test nor the expired test. One is `nhs-pension-scheme-pays-doctors-deadlines`, which holds the
    second-highest-confidence topic in the market map and the batch's biggest forgone prize. Resolve
    the flag state, then take it as batch 2 item 1.
+   **RESOLVED 2026-08-26 for that row, and the answer generalises: the flag was a DETECTOR ARTEFACT,
+   not a regression.** See item 3a.
+
+3a. **`detect_monitored_page_regressions` produces false positives, and flagged rows estate-wide may be
+   the same artefact.** Established 2026-08-26 while preparing `/blog/nhs-pension-scheme-pays-doctors-deadlines`.
+   Do **not** change the detector on the strength of this note; it is estate tooling
+   (`optimisation_engine/analysis/detectors.py`) and needs its own deliberate pass with its own
+   verification. This entry exists so that pass starts from evidence rather than from scratch.
+
+   **The case.** `monitored_pages` id 501, flagged 2026-07-19 18:02:04. Baseline stored at registration
+   on 2026-06-12 with `baseline_window_days = 90`: Google clicks 0, impressions 15, position 48.53;
+   Bing impressions 0, position NULL. The detector's current-window read of `gsc_query_data` for the
+   28 days to 2026-07-19 was **1 impression, 0 clicks, avg position 54.00**. Two conditions therefore
+   fired: impressions, because `15 >= 10` and `1 < 15 x 0.5`; and position, because
+   `54.00 - 48.53 = 5.47 >= 5.0`.
+
+   **A fresh GSC API pull for the identical window says 35 impressions at position 8.8**, against 51
+   impressions at position 19.7 in the 28 days before the 2026-06-12 rewrite. The page was improving
+   sharply. There was no regression to detect.
+
+   **Three contributing causes, all independent, all fixable separately.**
+   - **It reads the sampled table, not the API.** `current` is built by summing `gsc_query_data`, which
+     is PARTIAL and sampled (memory `gsc_query_sum_undercount`; Property showed 22 stored clicks per
+     28d against 510 from the API). Here it undercounted 35 impressions to 1, a factor of 35.
+   - **A 90-day baseline is compared against a 28-day current window.** `baseline_window_days` is stored
+     on the row and is simply never read by the detector, which hardcodes `window_days=28`. Any row
+     registered on a 90-day baseline is structurally biased toward firing the impressions condition,
+     because it compares three months of history with one month of present.
+   - **Position is an unweighted `AVG(position)` across query-days**, not impression-weighted. A handful
+     of one-impression tail queries at position 90 moves the mean several places on a low-volume page.
+     On this page the fresh impression-weighted position was 8.8 while the unweighted stored average
+     was 54.00.
+
+   **Scope.** Any row whose baseline was captured at a window length other than 28 days, or whose page
+   is low-volume enough for `gsc_query_data` sampling to bite, is exposed. That is most of the corpus.
+   `__home` (medical, flagged 2026-07-27) and `gp-accounting-guide` (medical, flagged 2026-07-19)
+   should be re-derived the same way before either is treated as a real regression, and the same check
+   should be run across the other sites' flagged rows.
+
+   **Second-order effect worth naming.** Because `status='flagged'` is written only to suppress repeat
+   mail and nothing ever resets it to `active`, a false positive permanently removes a page from the
+   `status='active'` sweeps as well. So a detector artefact silently converts into a page that no
+   scheduled job looks at again. That is the more expensive half of this bug.
 4. **Dossier vs pack divergence on per-topic keyword counts is unreconciled** and in places flips
    priority order (`/blog/nhs-pension-planning` peer-winnable 70 against 4,590; `/calculators/nhs-pension-scheme-pays`
    91,230 against 2,880). The dossier's seed-node clustering both fragments term families and drops

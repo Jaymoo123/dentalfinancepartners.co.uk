@@ -242,6 +242,48 @@ lookups, operator interruptions) in its own docstring, and anything that
 interrupts a human must survive the question "what would he do differently on
 receiving this?"
 
+## Known false-alarm class added 2026-08-26: the monitored-pages regression detector flags healthy pages
+
+**Diagnosed on Medical's highest-value page, and the mechanism is generic, so treat every `status='flagged'` row
+in `monitored_pages` as an unproven claim until re-derived from the APIs.**
+
+`/blog/nhs-pension-scheme-pays-doctors-deadlines` was flagged as a regression and frozen. It had not regressed.
+Baselines survived on `monitored_pages` id 501. The detector saw, for the 28 days to 2026-07-19, **1 impression at
+average position 54.00** against a 90-day baseline of 15 impressions at 48.53, which fires two conditions at once
+(impressions 1 < 7.5, and position drift 5.47 >= 5.0). The fresh API for the same window says **35 impressions at
+position 8.8**, improving from 51 at 19.7 before the June rewrite. The rewrite worked and the monitor mis-read it.
+
+Three causes, all independent and all generic:
+1. **It reads `gsc_query_data`, not the API.** That table is sampled and partial; the estate already knows it
+   undercounts by roughly 20x and that it must never be SUMmed. A detector built on it inherits the undercount.
+2. **It compares a 28-day window against a 90-day baseline, and it does so by ignoring its own configuration.**
+   The detector STORES `baseline_window_days` and never reads it, hardcoding a 28-day current window instead.
+   Different window lengths are not comparable without normalisation, and a short window on a low-volume page is
+   mostly noise. That the mismatch is accidental rather than designed makes it cheaper to fix than it looks.
+3. **It averages position unweighted.** One impression at position 54 moves an unweighted mean as much as a
+   thousand impressions at position 8.
+
+Consequences to hold in mind: a flagged row is not evidence of a problem, it is a de-duplication marker saying the
+detector fired and suppressed further mail. Flagged rows are also invisible to any query filtering on
+`status='active'`, which is a separate trap recorded in `PROPERTY_STANDARD_ROLLOUT.md` (the armed set is
+`monitor_until > now()` with NO status predicate). And the two combine badly: a false flag freezes a healthy page
+from editing while hiding it from the exclusion lists that are supposed to protect it.
+
+**The second-order effect is the expensive half, and it is worse than a false alarm.** Nothing ever resets a row
+from `flagged` back to `active`. So a single false positive permanently removes a page from every sweep that
+filters on `status='active'`, which is most of them, while also freezing it from editing for the life of its
+window. A healthy page can therefore be quietly excluded from optimisation work indefinitely, on the strength of
+one bad reading, and nothing surfaces that it happened. On Medical the named exposure is `__home` and
+`gp-accounting-guide` alongside the Scheme Pays deadlines page; re-derive any flagged row on any site from the
+APIs before treating it as real, and note that `__home` runs to 2026-10-06, a month later than the rest.
+
+Per-site detail for the diagnosing case, with the full numbers, lives in `docs/medical/STATE.md` backlog item 3a.
+
+**Not fixed here, deliberately.** The detector is estate tooling and changing its thresholds or its data source
+changes what every site's monitoring reports. It needs its own deliberate pass, with a decision on whether to move
+it to the API, normalise the windows and weight the position average. Recorded so the next person does not
+re-diagnose it, per the standing rule of this document.
+
 ## Known false-alarm classes (diagnosed once, so nobody re-diagnoses them)
 
 A monitor that cries wolf gets ignored, which is rot mode 3 arriving by a

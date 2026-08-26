@@ -258,6 +258,16 @@ Opticians: `arclight ophthalmoscope` (210, MDU clinical), `d r grey opticians` a
 
 That is 23% of the $5.00 daily `DATAFORSEO_ABORT_AT` guard, on a day when nothing else spends. It is the cheapest unblock available and it converts two ABSORB assignments from unpackable to packable. **It is not authorised by this task and was not run.**
 
+> **RESOLVED 2026-08-26, later the same day, under a separate owner authorisation.** The unblock above was run: guard raised to $7.00 for that task only via `DATAFORSEO_ABORT_AT=7` on the invoking command (no config file edited, default still $5.00), against a $1.50 task budget. **Actual spend $1.146**, from $4.9565 to $6.1025 in `api_cost_log`, versus the ~$1.13 priced here. 10 dual-mode SERPs, 18 `ranked_keywords` harvests persisted to `dataforseo_competitor_data` (32,872 rows -> 39,296), 2 `keyword_ideas` seeds.
+>
+> **The diagnosis in this section was correct: the gap was in the competitor set, not in the market.** Twelve domains running optician or allied-health surfaces were found, none of them in the 22-domain universe. Both clusters are now packed as a **coverage-cluster addendum** (deliberately NOT numbered batch 3, which a concurrent task owns via `BATCH3_INDEX.md` and the `PACK_B3_*` family):
+> - `PACK_blog__accountants-for-opticians-optical-practice-vat.md` — **one page, not 3-5.** Measured demand is 5 distinct keywords / 350 volume, all one idea (VAT on eye tests and spectacles), all held by one 906-word incumbent page at position 5.
+> - `PACK_blog__accountants-for-physiotherapists-and-therapists.md` — **one page, not 3-5.** Measured demand is **zero** accountancy keywords across 39,296 harvested rows and 259 seeded ideas, against a live five-firm SERP. Built on SERP evidence plus the coverage instruction, and the pack says so plainly.
+>
+> Two ownership-map amendments were issued by those packs and are ratified here: **C1** (renumbered from O19 on 2026-08-26, see the note below) gives the opticians page VAT **valuation** (VATA 1994 s.19(4), separately disclosed charges, apportionment method) while O17 keeps liability; **C2** (renumbered from O20) gives the allied-health page the **statutory-register test applied to the non-medical professions** (VAT Notice 701/57 §2.1 versus §2.2) while O17 keeps the exemption's general mechanics.
+
+> **ID COLLISION RESOLVED BY THE CONDUCTOR, 2026-08-26.** These two rows were issued as O19 and O20 by the coverage-cluster packs at the same time as `BATCH3_INDEX.md` §6.2 independently issued **its own O19 (the core GMS contract and Global Sum) and O20 (the Network Contract DES)**. Two live index documents therefore used the same two IDs for four different facts. No page was actually written against the wrong fact, because both writers were told which index bound them and both flagged the clash rather than assuming. **The coverage-cluster rows are renumbered to the C series, and the O series belongs to the batch sequence alone.** Any future coverage cluster that is not part of a numbered batch continues the C series. The lesson, worth carrying to other sites: an ownership map is a shared namespace, so two documents extending it in parallel will collide, and the fix is a distinct prefix per source rather than a convention nobody can enforce across concurrent sessions.
+
 Separately, and unchanged from the dossier's own delta list: completing the four unharvested vocabulary domains (england.nhs.uk 105,199 keywords, nhsbsa.nhs.uk 39,145, nhsemployers.org 14,605, wesleyan.co.uk 10,647) plus the rest of bma.org.uk costs about **$19** and would most likely deepen the NHS-pension administrative vocabulary that is already the largest gap on the map. Neither spend is authorised here.
 
 ---
@@ -340,6 +350,13 @@ Live 403s remain on `pricebailey.co.uk` (both healthcare URLs and the pension-du
 | `PACK_blog__accountants-for-vets-veterinary-practice-tax.md` | `/blog/accountants-for-vets-veterinary-practice-tax` |
 | `PACK_blog__nurse-tax-relief-professional-subscriptions.md` | `/blog/nurse-tax-relief-professional-subscriptions` |
 
+**Coverage-cluster addendum, added 2026-08-26 (the two clusters §7 could not pack). Not part of `BATCH3_INDEX.md`; that index's §6 ownership map is additionally binding on both pages.**
+
+| Pack file | Page |
+|---|---|
+| `PACK_blog__accountants-for-opticians-optical-practice-vat.md` | `/blog/accountants-for-opticians-optical-practice-vat` |
+| `PACK_blog__accountants-for-physiotherapists-and-therapists.md` | `/blog/accountants-for-physiotherapists-and-therapists` |
+
 
 ## OWNERSHIP MAP AMENDMENT, ratified 2026-08-26 by the conductor
 
@@ -363,3 +380,19 @@ The general lesson, worth carrying to later sites: when two writers independentl
 that is evidence the map was drawn in the wrong place, not that both writers erred. Ratify it and move the line.
 The opposite signal, one writer quietly annexing another's fact, is what V3 exists to catch, and it looks nothing
 like this.
+
+
+## OWNERSHIP MAP GAP CLOSED, 2026-08-26: the VAT registration threshold
+
+**New row O21. Owner: `/blog/gp-vat-registration` (the existing O17 page).**
+The £90,000 taxable-turnover threshold, the £88,000 deregistration limit, the rolling-12-month test and the
+30-days-from-the-end-of-the-month registration deadline are ONE shared fact with no assigned owner, and it
+consequently landed in full on both coverage pages on the same day, one of them giving it a dedicated H2. Neither
+writer erred: there was nothing in the map to obey. Every other page gets one sentence and a link.
+
+This is the first map GAP found rather than a map BREACH, and it is worth the distinction. A breach is a writer
+taking more than its row allows. A gap is a fact that no row covers, which no amount of writer discipline prevents,
+and which only shows up when two pages touching the same subject are read side by side. **So the conductor's check
+is not only "did each page respect its row" but "did any fact land twice that has no row at all".** Facts most
+likely to be gaps are the general ones that feel like background rather than substance: registration thresholds,
+filing deadlines, penalty regimes, and the definition of a tax year.

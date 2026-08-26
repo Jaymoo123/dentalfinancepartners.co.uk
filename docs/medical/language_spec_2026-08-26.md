@@ -444,3 +444,24 @@ Corollary observed the same day: five of seven pages opened with a corrective cl
 spent"). Below the per-page cap, genuinely different executions, and arguably the correct move on a corpus whose
 whole differentiation is that the market is wrong. Recorded as the house reflex rather than flagged as a defect,
 but a third batch showing the same reflex should be varied deliberately.
+
+
+**V9 CONFIRMED, AND THE THIRD SHAPE NAMED (2026-08-26, coverage-cluster QA).** V9 predicted that banning a tic
+produces a replacement rather than a removal. It happened within one batch and the evidence is now unambiguous.
+
+- Batch 1's shape, "it is not X, it is Y": **0 instances** across all seven batch-2 pages and both coverage pages. Dead.
+- Batch 2's replacement, the numeral-count paragraph opener: down to **1 per page** on the coverage pages, against a
+  cap of 2. Contained.
+- **The third shape, now dominant: the corrective definitional contrast "X rather than Y."** Counts per page across the
+  live set: healthcare-accountants 12, vets 11, adjusted-net-income 10, opting-out 9, uniform 7, nurses 7, allied-health
+  6, opticians 5, maternity 3. On the allied-health page the SAME proposition appears three times in the same shape
+  ("a statutory register rather than anything clinical", "rather than on what treatment you provide", "rather than on
+  clinical work"), and the opticians page opens its first H2 with the identical device on the identical idea.
+
+**So stop banning shapes one at a time. The operative rule is the general one: NO single sentence-opening or clause
+shape may repeat more than twice on a page, whatever it is, and the conductor checks the batch for clustering because
+at five or six instances a page reads as voice from the inside.** Cap the corrective contrast at two per page in the
+next fix pass, and expect a fourth shape rather than a clean result. The deeper reason this keeps happening is that
+the corpus's entire differentiation is that the market is wrong, so every page is structurally a correction, and
+correction has a limited number of English forms. The fix is to vary WHERE the correction sits (a heading, a table, a
+worked example, an FAQ question) rather than to keep renaming the sentence that carries it.
