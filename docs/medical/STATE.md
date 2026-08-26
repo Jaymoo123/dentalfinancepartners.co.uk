@@ -6,7 +6,46 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-08-26 (Stage 0 diagnosis, Track 2 / R.5).
+Last updated: 2026-08-26 (batches 1 to 3 DEPLOYED, see the deploy record below).
+
+## DEPLOYED 2026-08-26, and this is the first Medical production ship of the R.5 programme
+
+**Production deployment Ready and verified live at `https://www.medicalaccounts.co.uk`, from a clean worktree
+at pushed SHA `38a8ba75`.** Both CI jobs green on that SHA before the deploy ran.
+
+**What went live, in three numbers that are easy to confuse:**
+
+| Count | What it is |
+|---|---|
+| **9** | Brand new pages (batch 2). These grew the sitemap **130 to 139**, verified by counting the live `sitemap.xml`. |
+| **9** | Existing pages rewritten or extended (batch 3 waves A and B). **Zero new URLs by design**, so they deepen rather than widen. |
+| **46** | Existing files where the false company-contract claim was corrected: 39 blog posts, 1 resources page, 6 code surfaces. |
+
+86 files changed in total across the day. Live sitemap now **139 URLs, 97 of them blog**, counted at source
+rather than derived from a glob or a doc.
+
+**Live verification actually run after the deploy**, not inferred from the deploy log: four corrected pages
+fetched and confirmed serving the new figures (14.38%, £3.059, the SBA block, the corrected contract wording),
+plus eight further pages sampled across blog, resources and services for the false claim. All clean.
+
+**Local gates before the deploy:** typecheck clean, 436 tests passing across 16 files, dependency closure OK
+across 19 sites, production build exit 0, and an independent 8-point verification of every changed file.
+
+**Noise generated, owned rather than left to be found:** ONE red CI run, one email. Cause was mine. The
+estate-wide correction added three words to one `metaDescription`, taking it to 172 characters against a 155
+limit. The verification pass had already flagged that exact edit as beyond its authorised scope and it was
+signed off anyway. Fixed at `38a8ba75`, validator re-run locally before the second push, both jobs then green.
+**The rule out of it: a verification finding is a thing to act on, not to acknowledge.**
+
+### STILL OWNER-TRIGGERED, deliberately not done
+
+1. **IndexNow submission.** The highest-value remaining step, because Bing out-clicks Google 3.4x here and
+   IndexNow is how Bing learns quickly. Nothing was submitted.
+2. **Registering the changed pages in `monitored_pages`.** This writes to production and starts the 14 and 28
+   day windows the batch-3 acceptance tests depend on. **Until it is done, waves A and B are live but unscored.**
+
+---
+
 
 ## Stage 0 diagnosis 2026-08-26 (Track 2 / R.5, first site of the merge-expansion queue)
 

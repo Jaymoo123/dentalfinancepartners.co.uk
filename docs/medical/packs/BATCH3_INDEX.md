@@ -783,7 +783,14 @@ Both written directly to `house_positions.md` (manager-direct, no agent touched 
 
 ---
 
-## THE THREE ROUNDS, AND WHAT EACH ONE WAS FOR. Committed `7f834d10`, 2026-08-26. NOT DEPLOYED.
+## THE THREE ROUNDS, AND WHAT EACH ONE WAS FOR. Committed `7f834d10`, 2026-08-26. **DEPLOYED the same day at `38a8ba75`.**
+
+> **DEPLOY RECORD, added 2026-08-26.** All nine pages are LIVE at `https://www.medicalaccounts.co.uk`, shipped
+> from a clean worktree at pushed SHA `38a8ba75` with both CI jobs green. Four pages were fetched from
+> production afterwards and confirmed serving the corrected figures. The deploy also carried the 46-file
+> false-claim sweep and batch 2's nine net-new pages; the live sitemap moved 130 to 139 URLs.
+> **IndexNow and `monitored_pages` registration were NOT done and remain owner-triggered, so the acceptance
+> tests in section 8 have no measurement windows armed yet.** See `docs/medical/STATE.md` for the full record.
 
 Round 1 wrote the nine pages. Round 2 fixed what dual QA found. Round 3 subtracted what the fixes left behind.
 **Every page came out of round 3 shorter except one**, which replaced stitching with substance and grew 72 words.
