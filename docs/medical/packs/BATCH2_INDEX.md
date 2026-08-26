@@ -339,3 +339,27 @@ Live 403s remain on `pricebailey.co.uk` (both healthcare URLs and the pension-du
 | `PACK_blog__adjusted-net-income-doctors-60-percent-tax-trap.md` | `/blog/adjusted-net-income-doctors-60-percent-tax-trap` |
 | `PACK_blog__accountants-for-vets-veterinary-practice-tax.md` | `/blog/accountants-for-vets-veterinary-practice-tax` |
 | `PACK_blog__nurse-tax-relief-professional-subscriptions.md` | `/blog/nurse-tax-relief-professional-subscriptions` |
+
+
+## OWNERSHIP MAP AMENDMENT, ratified 2026-08-26 by the conductor
+
+**O7 (uniform, laundry and professional subscriptions) SPLITS INTO TWO OWNERS. This supersedes the single-owner
+row and the two-sentence cap that the nurse pack placed on subscriptions.**
+
+- **Uniform and laundry flat rates, the P87 route, the four-year backdating limit and the repayment-agent
+  position** are owned by `/blog/nhs-uniform-tax-relief-laundry-allowance`.
+- **Professional subscriptions and List 3** (NMC and RCN fees, the Parliamentary condition on the October 2026
+  NMC rise, the BMA 85 percent and UNISON 70 percent restrictions, the "(J)" journal marker, s.343 against s.344,
+  and the correction that the RCN's own "Tax Relief" column is the POST-RELIEF COST rather than a second fee)
+  are owned by `/blog/nurse-tax-relief-professional-subscriptions`.
+
+Why it is ratified rather than enforced as originally written: the two writers reached this split INDEPENDENTLY
+and in compatible terms, without coordination. The uniform page wrote three sentences on subscriptions and handed
+off by slug; the subscriptions page wrote a section and handed the flat rates back. Neither duplicated the other's
+wording. The two-sentence cap was unachievable against a brief that required both NMC figures, the Parliamentary
+condition and the RCN correction, and a page whose URL names subscriptions cannot carry two sentences of them.
+
+The general lesson, worth carrying to later sites: when two writers independently converge on the same boundary,
+that is evidence the map was drawn in the wrong place, not that both writers erred. Ratify it and move the line.
+The opposite signal, one writer quietly annexing another's fact, is what V3 exists to catch, and it looks nothing
+like this.

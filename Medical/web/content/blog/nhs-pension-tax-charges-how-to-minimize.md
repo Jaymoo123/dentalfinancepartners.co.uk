@@ -66,7 +66,7 @@ faqs:
 </thead>
 <tbody>
 <tr><td>An NHS tax rebate, or a tax rebate NHS staff claim on expenses</td><td>Repayment of income tax overpaid because allowable expenses were never relieved</td><td>HMRC, through a P87, a tax code adjustment or the Self Assessment return</td><td>Nothing. It is your own overpaid tax coming back</td></tr>
-<tr><td>An NHS pension refund, also searched as an NHS pensions refund or an NHS pension opt out refund</td><td>Repayment of member contributions, available only below two years' qualifying service</td><td>NHS Pensions, on the NHS pension refund form (RF12 in England and Wales, REF1 in Scotland)</td><td>Every year of NHS pension that service bought, and the refund is itself taxed</td></tr>
+<tr><td>An NHS pension refund, sometimes called an NHS pensions refund</td><td>Repayment of member contributions, available only below two years' qualifying service</td><td>NHS Pensions, on the NHS pension refund form (RF12 in England and Wales, REF1 in Scotland)</td><td>Every year of NHS pension that service bought, and the refund is itself taxed</td></tr>
 <tr><td>Scheme Pays</td><td>The scheme settles an annual allowance charge with HMRC on the member's behalf</td><td>NHS Pensions, on a member election with a statutory deadline</td><td>A permanent actuarial reduction in the future pension, plus interest</td></tr>
 </tbody>
 </table>

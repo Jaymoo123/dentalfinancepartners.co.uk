@@ -391,3 +391,56 @@ is the conductor's job, not the writer's.
 on-topic FAQs to make room for contribution-rate vocabulary that belonged to a different page. Placing a
 phrasing is never a reason to remove the page's own specialist substance. If the two conflict, the page's
 topic wins and the phrasing goes to the page that owns it.
+
+
+**V7 (added 2026-08-26, from a live conflict during batch 2). The ownership map outranks the conductor's brief.**
+A writer was told in its brief to use two freshly verified figures (the Global Sum and the QOF point value) as
+differentiators, while its pack assigned both to other owning pages. It obeyed the pack, stated neither, and
+reported the conflict for a ruling. That is exactly right and it is now the standing order: where a conductor's
+brief and the ownership map disagree, THE MAP WINS, the writer follows it, and the conflict goes in the report.
+The reason is structural rather than procedural. A conductor writes seven briefs quickly and can easily reach for
+the same compelling fact in more than one of them; the map is the single place where duplication is actually
+visible. A brief is an instruction about ONE page, and only the map can see the batch. This is the same failure
+that put one Scheme Pays explanation on seven of twelve batch-1 pages, caught one layer earlier.
+
+**V8. Do not pad to a length band.** The same page landed at 1,991 words against a 2,000 floor and reported the
+shortfall rather than closing it, which is correct: length is explicitly not a lever, and nine words of padding to
+satisfy a band is nine words of filler on an A-star page. A band is a shape check, not a target. Report the miss.
+
+
+**V1 ENFORCEMENT NOTE (added 2026-08-26, before QA runs on batch 2). Count non-overlapping longest matches, never raw substrings.**
+The two-word-orders-per-idea cap is measurable only if the counting method is right, and a naive verbatim count
+will BLOCK compliant pages. In this niche the required phrases nest inside each other: "nhs pension opt out form"
+contains both "nhs pension opt out" and "pension opt out form"; "nhs pension opt out refund form rf12" contains
+"nhs pension opt out refund". A page that places two orders will therefore report three or four to a substring
+counter. Match longest phrases first, consume the matched span, and count only what remains. Any QA finding on V1
+must quote the specific spans it counted, so a false positive is visible rather than assumed.
+
+**V2 IS A LIVE STANDARD, NOT A BATCH-2 RULE.** It was written after batch 1 and batch 1 pages were therefore not
+checked against it. One survived into the committed corpus: a table cell on `/blog/nhs-pension-tax-charges-how-to-minimize`
+reading "also searched as an NHS pensions refund or an NHS pension opt out refund", found by a batch-2 writer and
+fixed 2026-08-26. Any pass touching an older page checks it against the CURRENT rules, not the rules that existed
+when it was written.
+
+
+**V9 (added 2026-08-26, from batch 2's editorial QA). A warned-off tic is REPLACED, not removed. Detect the shape, not the phrase.**
+Batch 1 ran "it is not X, it is Y" up to seven times a page and V5 capped it. Every batch-2 writer complied: the
+full construction appears at most twice on any page and mostly not at all. Seven writers then independently
+converged on a NEW one, opening a paragraph with a numeral count ("Two rules that are individually sensible
+combine...", "Four levers work while the tax year is still running", "Two things account for almost every nursing
+claim"), 22 instances across seven pages against a cap of two.
+
+The mechanism is worth understanding rather than just patching: writers given a measured spec and a banned phrase
+reach for the nearest unbanned device that performs the same function, which here is a confident enumerative
+opener that signals structure. Banning that specific opener will produce a third tic in batch 3.
+
+So the rule is not another phrase ban. **The conductor checks for ANY single sentence-opening or clause shape
+repeating more than twice per page or clustering across a batch, whatever it is, and names it in that batch's
+fix pass.** This is inherently a cross-page check and therefore the conductor's job, not a writer's: it is invisible
+from inside a single page, where two or three instances read as voice rather than as a tic.
+
+Corollary observed the same day: five of seven pages opened with a corrective clause in the first two sentences
+("and it is not the taxable pay printed on your payslip", "you get back the tax on what you spent, not what you
+spent"). Below the per-page cap, genuinely different executions, and arguably the correct move on a corpus whose
+whole differentiation is that the market is wrong. Recorded as the house reflex rather than flagged as a defect,
+but a third batch showing the same reflex should be varied deliberately.
