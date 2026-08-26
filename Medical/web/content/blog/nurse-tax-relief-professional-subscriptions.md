@@ -11,7 +11,7 @@ imageCredit:
   photographerUrl: "https://www.pexels.com/@gustavo-fring"
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/a-nurse-holding-a-clipboard-4270371/"
-category: Employment Status
+category: "Medical Expenses"
 metaTitle: 'Tax Relief for Nurses: Employed, Bank, Agency, Self-Employed'
 metaDescription: 'Tax relief for nurses in 2026/27: what NMC and RCN fees are worth, why bank and agency shifts change a tax code, and when a nurse needs an accountant.'
 altText: UK nurse in scrubs reviewing paperwork on a ward

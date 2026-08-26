@@ -244,6 +244,7 @@ Google (GSC 90d) and Bing (`GetRankAndTrafficStats` / page stats) figures onto t
 
 **Corollary on scoring an EXTEND page (same date, same batch).** A frozen structure can make the language spec's structural bands unreachable: the Medical QOF page landed at 42% question-form headings against a 50-75% band, and 19 FAQs against a 4-8 band, purely because 7 existing H2s and 14 existing FAQs could not be touched. Those are consequences of the grade, not defects. Editorial QA scores an EXTEND page against the EXTEND reality, and a writer must never contort a page to hit a band the grade forbids it from reaching.
 
+| EXTEND (boundary case, added 2026-08-26) | Bing clicks of 1 or 2 AND Bing position 10 or better. **This closes a hole in the table above: 1 or 2 Bing clicks match neither branch as originally written.** Found on Medical, where 26 pages fell into it and every one sat at Bing position 1.0 to 7.0, which is exactly the equity the conservative Bing-first rule exists to protect. Treat as EXTEND, additive only. | ADDITIVE ONLY, as EXTEND above. |
 | NO-PAGE | no page scores above threshold | Attach the cluster to the nearest hub as a new section, or queue a single new page. Never a page per keyword. |
 
 Bing is graded FIRST and more conservatively than Google. On Property, Bing returns roughly twice

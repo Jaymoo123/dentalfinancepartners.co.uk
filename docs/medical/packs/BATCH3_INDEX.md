@@ -5,7 +5,16 @@
 
 **Status: preparation only.** No page content written. Nothing under `Medical/web/` edited. Nothing committed, deployed or indexed. No row written to `monitored_pages`. No monitor, alert, cron or scheduled job created. **No paid API call was made by this task: $0.00.**
 
-**Repo HEAD at build time: `d2e75655` (`git rev-parse HEAD`, 2026-08-26).** This document first stated `7be12b11`, taken from a session-start environment snapshot. **That is wrong and `git cat-file -t 7be12b11` finds no such object on this branch.** Every revert anchor in every batch-3 pack is `d2e75655`, and a pack that copied the wrong sha would write a revert command that undoes batch 2 as well as its own page. Caught by two wave-A pack writers independently. **Derive the sha live, never from an environment banner.**
+**Repo HEAD: derive it live, per pack, at the moment you write the revert command. Do not copy a sha from this document.**
+
+This document first stated `7be12b11`, taken from a session-start environment banner. It was corrected to `d2e75655`, and then **HEAD moved twice more during the writing of the nine packs**, to `ad4800eb` and then `6714de48`, because other agents are committing to this repo concurrently. Three pack writers caught the drift, one of them twice.
+
+Two corrections to what was written here in between, both from writers who checked rather than accepted:
+
+1. **`7be12b11` is NOT a missing object.** `git cat-file -t 7be12b11` returns `commit` and `git merge-base --is-ancestor 7be12b11 HEAD` succeeds. The earlier claim here that it is absent from the branch was wrong and is withdrawn. **The warning stands for a better reason: it predates today's hero-image backfill, so reverting a page to it would silently strip that page's `image` and `imageCredit` block along with the content revert.** A revert anchor that succeeds while undoing more than the page is worse than one that fails.
+2. **Any fixed sha in this document is stale on arrival.** The nine packs carry three different anchors (`bb1db095`, `d2e75655`, `ad4800eb`) and none is wrong: each writer derived it live and one deliberately anchored to the last commit that touched its own file, verified byte-identical to the working tree, which is the most precise choice available. **A conductor reading nine packs should expect three anchors and not treat the divergence as an error.**
+
+**Standing instruction, and it is the index's own rule applied to the index: derive the sha at write time with `git rev-parse HEAD`, or better, with `git log -1 --format=%H -- <the file>`. Never from an environment banner and never from a batch document.**
 
 Batch 1 fixed twelve existing pages. Batch 2 built seven pages the site did not have. **Batch 3 is everything else**, and it is bigger than both together: 100 live URLs that have had no content pass, plus 26 market-map topics with no page. The owner's instruction is that Medical be finished completely, so this document is the plan for the whole remainder, not for one wave.
 
@@ -176,7 +185,7 @@ Additive only. K2 applies: metaTitle, H1 and existing H2 order are frozen on eve
 | `/medical-guides/medical-expenses-tax-treatment` | 0 / 0 | 5 / 120 | H |
 | `/blog/gp-bookkeeping-guide-uk` | 0 / 0 | 4 / 23 | C |
 | `/blog/locum-tax` (category hub) | 3 / 344 (9.1) | 3 / 21 | **LEAVE ALONE** |
-| `/blog/gp-partnership-last-man-standing-premises-risk` | 0 / 0 | 3 / 8 | **B** |
+| `/blog/gp-partnership-last-man-standing-premises-risk` | 0 / 0 | 3 / 8 (page-level position **2.0**, see the correction under §8) | **B** |
 | `/calculators/salaried-gp-vs-partner` | 0 / 0 | 3 / 16 | E |
 | `/blog/gp-accountant-services-complete-guide` | 1 / 72 (17.6) | 0 / 4 | G |
 | `/resources/locum` | 1 / 48 (13.4) | 0 / 0 | D |
@@ -284,7 +293,7 @@ Waves A, B and C have **zero shared facts with each other** and can run concurre
 | Page | Grade | Evidence |
 |---|---|---|
 | `/blog/gp-surgery-notional-rent-vs-cost-rent-explained` | EXTEND (§2.4) | B 1c/5i pos 6.0, queries `notional gp meaning`, `whats notional rent` |
-| `/blog/gp-partnership-last-man-standing-premises-risk` | EXTEND | B 3c/8i pos 1.0 on three `last man standing` phrasings |
+| `/blog/gp-partnership-last-man-standing-premises-risk` | EXTEND (plain §9.2, 3 Bing clicks) | B 3c/8i. **Page-level impression position 2.0** (snapshots at 1, 3, 2, impression-weighted). **Named-query position 1.0** on three converting `last man standing` phrasings. The two are different numbers and §8 depends on which one is meant. |
 | `/blog/gp-surgery-premises-own-vs-rent-tax-guide` | REFRAME | no data on either engine |
 
 **Why it is separate from A rather than folded in.** Premises is a property question and funding is an income question; they share no fact. Folding them in would give wave A nine pages and a map that spans two subjects, which is the beginning of the batch-1 failure. Three pages is a small wave and that is correct: **the right size is the size of the fact-sharing set, not a target.**
@@ -372,6 +381,22 @@ The rule, restated because it is the reason this document exists: **every shared
 | O17 | VAT: healthcare exemption versus standard rating | `/blog/gp-vat-registration` (FROZEN) and `/blog/gp-practice-private-non-nhs-income-streams` (batch 1) | **Wave A**: the dispensing page gets one sentence on zero-rating and a link. **Wave F**: `private-practice-tax-nhs-and-private-income` gets one sentence. Neither explains the exemption. |
 | O18 | NHS Pension Scheme membership eligibility by profession | `/nhs-pension` (batch 1) | All waves: one sentence, then link. |
 
+### 6.1a THE OWNERSHIP MAP IS A SHARED NAMESPACE, and it collided twice today
+
+Two live index documents extended the O series in parallel this afternoon and both hit the same IDs.
+
+**Collision 1, already resolved by the other side.** The concurrent opticians and allied-health coverage-cluster packs issued their own **O19** (VAT valuation) and **O20** (the statutory-register test for non-medical professions) at the same moment §6.2 below issued **O19** (the core GMS contract) and **O20** (the Network Contract DES). Four different facts, two IDs. No page was written against the wrong fact, because both writers were told which index bound them and both flagged the clash instead of assuming. That conductor renumbered the coverage-cluster rows to a **C series** and left the O series to the numbered batch sequence. **That resolution is accepted here and the C series is correct.**
+
+**Collision 2, NOT yet resolved, and it is the one a QA agent will actually hit.** `BATCH2_INDEX.md` has since gained a late row numbered **O21** (owner `/blog/gp-vat-registration`, the VAT threshold), while §6.2 below uses **O21** for ARRS. A QA agent resolving a finding by row number alone will land on the wrong fact.
+
+> **RULING: batch 3's O19 to O35 stand as written**, because they are already cited by row number inside nine packs and renumbering them now would invalidate all nine. **Batch 2's late VAT row is referred to as `O21-VAT` wherever it is cited outside its own document**, and it is carried into this map as an inherited row below. `BATCH2_INDEX.md` is another window's file and is not edited by this task.
+>
+> **The general lesson, which is the valuable part: an ownership map is a shared namespace, so two documents extending it concurrently will collide, and a convention nobody can enforce across parallel sessions is not a fix. The fix is a distinct prefix per source.** Batch 4 and every later coverage cluster should issue prefixed IDs (`B4-01`, `C-07`) rather than continuing a single global integer sequence.
+
+| # | Shared fact | Owner | Batch-3 consequence |
+|---|---|---|---|
+| **O21-VAT** | The VAT registration threshold (£90,000, 30-day rule), the deregistration limit (£88,000) and the registration decision | `/blog/gp-vat-registration` (**FROZEN to 2026-09-10**) | Every wave: one sentence, then link. Binds wave A's dispensing page and wave F's private-practice page directly. Cited as `O21-VAT`, never as `O21`. |
+
 ### 6.2 New rows for batch 3
 
 **Wave A, the GMS and PCN funding family. This is the densest fact-sharing set in the batch and the five pages read as one topic to a careless writer.**
@@ -383,7 +408,15 @@ The rule, restated because it is the reason this document exists: **every shared
 | **O21** | **ARRS**: which roles are reimbursable, the reimbursement mechanics and caps, **who employs ARRS staff**, the payroll, pension and employer-NIC consequences, and the VAT trap when staff are shared between practices. | `/blog/arrs-reimbursement-employing-pcn-staff-tax` | The PCN funding page gets **two sentences** naming ARRS as a DES strand and hands off. It must not explain the employment model. |
 | **O22** | **PCN clinical director payments**: how the CD payment is calculated, whether it is employment or self-employment income, how it is taxed, and how it interacts with a partner's profit share. | `/blog/pcn-clinical-director-payments-tax` | The PCN funding page gets one sentence, then link. **No tax treatment stated anywhere else.** |
 | **O23** | **Locally commissioned and enhanced services**: DES vs LES vs national enhanced services, how they are contracted, invoiced and recognised in the accounts. | `/blog/enhanced-services-gp-practice-income-tax` | The GMS page gets one sentence naming enhanced services as a funding stream, then link. |
-| **O24** | **Dispensing practice income**: the dispensing fee and drug-reimbursement structure, and the **zero-rating of dispensed drugs under VATA 1994 Sch 8 Group 12** as distinct from the Sch 9 Group 7 medical-care exemption. | `/blog/dispensing-practice-income-accounts-tax` | Wave A: no other page mentions dispensing income at all. **O17 still binds**: this page states the zero-rating in **one or two sentences** as the contrast, and does not explain the exemption, which belongs to the frozen `gp-vat-registration`. |
+| **O24** | **Dispensing practice income**: the dispensing fee and drug-reimbursement structure, the Drug Tariff, and the **zero-rating of dispensed drugs under VATA 1994 Sch 8 Group 12**. | `/blog/dispensing-practice-income-accounts-tax` | Every other page: one sentence naming dispensing as a separate income stream, then link. |
+
+> **O24 CORRECTED, 2026-08-26, on a pack writer's challenge. The row as first drafted contradicted itself.**
+>
+> Its shared-fact column **awarded** this page the Sch 8 Group 12 zero-rating, and its consequence column then applied the **one-or-two-sentence cap that this map reserves for pages that do NOT own a fact**. Every other row in this map keeps those two things apart. The two readings differ by roughly 900 words of the page, so the writer would have had to guess. The mis-drafting is O24's, not O17's: the writer explicitly examined whether O17 was drawn in the wrong place and concluded it is not. The medical-care exemption, the principal-purpose test, registration and partial exemption all clearly belong to the frozen `/blog/gp-vat-registration`.
+>
+> **Corrected O24, and this is the operative text:** this page **owns** the zero-rating of dispensed drugs under VATA 1994 Sch 8 Group 12, including the consequence that a zero-rated supply is taxable and therefore recoverable while an exempt supply is not, because that consequence is the whole commercial point of the topic. It **does not own and must not explain** the Sch 9 Group 7 medical-care exemption, the two-part principal-purpose test, VAT registration or partial exemption, all of which are O17's and belong to the frozen page. The pack sets a countable sentence budget that is compliant under either reading and it stands.
+>
+> **Two factual corrections to this row's own consequence column.** "No other wave-A page mentions dispensing income at all" is **wrong**: the GMS page mentions it 5 times and the PCN page twice. All seven are bare namings inside funding lists and the fence therefore holds, but **a map that overstates its own fence teaches writers to doubt it**, which is worse than a map that is merely incomplete. And the live dispensing page is already in **serious O17 breach** at 33 VAT-bearing sentences, four of eight H3s and two full paragraphs on partial exemption and de minimis. Because that page is REFRAME, the writer is permitted to fix it rather than escalate, and the pack makes the 10-sentence VAT cap a hard countable gate.
 | **O25** | **QOF**: points, the achievement and aspiration cash-flow split, how QOF income is recognised and taxed. | `/blog/qof-income-gp-practice-accounting-explained` (batch 1, in its read window) | **Wave A: one sentence and a link, on every page.** Not reopened in this batch. **No page states a QOF point value (O10, hard fail F5).** |
 | **O26** | **How practice income is recognised and reconciled against the PCSE statement.** | `/blog/gp-practice-income-pcse-statement-reconciliation` (batch 1) | Wave A: every page that mentions a payment landing gets **one sentence** and a link. Five pages describing income recognition five times is the batch-1 failure. |
 
@@ -455,6 +488,42 @@ There is no `employment-status` directory, and `/blog/[slug]` calls `notFound()`
 
 **D10. The session scratchpad is contended and files are being deleted under running agents.** The pulls this task made at `medical_stage0/` were removed mid-task by concurrent agents obeying the standing "delete the temporary files you create" rule, which is why all three wave-A writers reported the data files absent and re-pulled. **The re-pulls independently reproduced every figure in this document exactly**, so nothing is unsound, and the accidental verification is worth more than the lost files. It is also the most likely explanation of §0.1: the original Stage 0 pulls were probably deleted the same way rather than never written. **Consequence for later waves: pass figures inline in the agent prompt and instruct a re-pull, never rely on a shared scratchpad file surviving.**
 
+**D11. THE ONE DECISION THIS DOCUMENT NEEDS. Pre-existing ownership breaches inside copy that EXTEND freezes are now a class, not an instance, and no rule covers them.**
+
+Five of the nine wave-A and wave-B pages carry material that the ownership map assigns to a different page, written into copy that K2 forbids the writer from touching. Every one predates the map (the pages were generated 2026-06-03), so none is writer error. They were found by five writers independently, and every one escalated rather than resolving, which is exactly right.
+
+| Page | Breach | Size |
+|---|---|---|
+| `/blog/pcn-funding-network-contract-des-explained` | O21 (ARRS): a `Staff Reimbursements: ARRS` H3 carrying the mechanic, the per-role maximum, the employ-before-claim rule, the above-cap consequence and the role list | **157 words, 6 sentences**, against a two-sentence cap |
+| `/blog/pcn-clinical-director-payments-tax` | O31 (IR35) and O35 (the employment-status fork) | IR35 x8; four role-subject sentences against a cap of one |
+| `/blog/enhanced-services-gp-practice-income-tax` | **narrates our internal ownership rule to the reader in a heading**, `The Network Contract DES (named once)`, **and is wrong about its own page: the DES is named seven times** | one heading |
+| `/blog/gp-partnership-last-man-standing-premises-risk` | O29 (loan-interest deduction stated three times without handing off), plus six instances of narrating its own editorial and scoping decisions to the reader | six-plus instances |
+| `/blog/gp-surgery-notional-rent-vs-cost-rent-explained` | a **map gap** rather than a breach: names Global Sum, Carr-Hill, QOF and enhanced services with no link to any of the four owning pages, where O19, O23, O25 and O26 each require "one sentence, then link" | four missing links |
+
+**Three questions, and answering them settles all five plus every later wave.**
+
+1. **May a writer DELETE inside additive-only copy to correct an ownership breach?** Batch-1 coordinator ruling 3 clears **factual corrections** inside frozen copy, on the reasoning that a correction changing no heading and reordering nothing carries no equity risk. An ownership deletion is not a factual correction and is not cleared. **Recommendation: yes, narrowly.** Permit deletion of a passage that another page owns, where the deletion removes no heading and no figure and leaves a one-sentence handoff plus a link in its place, and require it be logged as a named addendum. The equity argument is the same as ruling 3's: a passage that duplicates another page's explanation is not what the page ranks for, and leaving it is the condition that produced batch 1's seven-page Scheme Pays duplication.
+2. **May a writer INSERT a link into an existing paragraph on an EXTEND page?** Currently no, which is why the notional-rent map gap is unfixable in its grade. **Recommendation: yes.** A link adds no words a reader reads as new copy, changes no heading and reorders nothing. It is the smallest possible intervention and it is the one the map most often needs.
+3. **Is narrating process to the reader a rule in its own right?** V2 bans narrating the **keyword research**. It does not reach `The Network Contract DES (named once)`, which narrates the **ownership map**, nor "Kept proportionate, because the detail lives in the sibling guides", which narrates the **editorial scoping**. All three are the same failure: the reader is being shown the machinery. **Recommendation: extend V2 to cover any narration of our own process, and note that the enhanced-services heading may already be inside ruling 3's factual limb because it is demonstrably false about its own page.**
+
+**Nothing is done until this is ruled.** All five packs set the writer's allowance for the affected fact to zero, which is the safe default and which leaves each page internally inconsistent for one window rather than risking the equity.
+
+**D12. The persisted harvest is 20% bigger than every document says.** Live count, 2026-08-26:
+
+```sql
+select count(*) rows, count(distinct ranked_keyword) kws, count(distinct competitor_domain) doms
+from dataforseo_competitor_data where site_key='medical';
+-- 39,296 rows | 31,539 keywords | 44 domains
+```
+
+The dossier, `BATCH2_INDEX.md`, the batch-1 packs and this document's own writer brief all say **32,872 rows / 27 domains**. Four writers found the divergence independently. **This is not bookkeeping.** `BATCH2_INDEX.md` §7 concluded that opticians and allied health are unpackable, and that conclusion was reached against the smaller corpus. **It should be re-run against the full 44 domains before the $1.13 unblock is authorised**, which is free SQL against data already paid for.
+
+**D13. The peer set is 22 domains out of 44 harvested, and the other 22 are unclassified.** Peer-winnable counts only positions held by a **classified peer**, so an unclassified domain holding a top-20 slot is silently dropped from every peer-winnable figure in this programme. At least one (`mlaaccounting.co.uk`) and by one writer's read at least eight of the unclassified are plainly medical-accountancy specialists. Effect measured on two wave-B clusters was small (1.8% on one), **but peer-winnable is the column that ORDERS all the work under decision 21, and wave G is a 24-page commercial wave where it will not be small.** Every peer-winnable figure in this batch should be read as a **floor**. Re-classifying the 22 is free.
+
+**D14. `curl -A "Mozilla/5.0"` is not sufficient, and the prescribed fetch command is now wrong three times over.** `BATCH2_INDEX.md` §10B established that a plain user agent recovers `hawsons.co.uk` where `WebFetch` 403s. Wave-B writers found both `pricebailey.co.uk` URLs still 403 to that command and return **200 to a full browser header set**. Had those been logged as gaps, the single best staleness finding in the batch would have been lost: **pricebailey holds `capital allowances property` at position 5 with AIA stated at £200,000 and a 2017 worked example**, which is precisely the stale framing house positions warns against, live on a page outranking us. **Fix the class: the estate's competitor-fetch helper should send a full header set, not just a UA.**
+
+**D15. `Structures and Buildings Allowance` is missing from `house_positions.md` §7, and one live page states its absence as a fact.** `/blog/gp-surgery-premises-own-vs-rent-tax-guide` says you cannot claim capital allowances on the structure. SBA does exactly that: **3% straight line over 33 and one third years, for contracts entered into on or after 29 October 2018**, verified at gov.uk 2026-08-26 by the wave-B writer. It also **increases the CGT on a later disposal**, which is both ends of O29 in one interaction and is the most useful thing on that page's topic. Proposed as a new house-positions §7.B. **Not added: wrong window, and house positions is shared with concurrent agents.** The page is REFRAME, so the rewrite can fix the statement once the ground truth exists.
+
 **D7. Eleven `gp-accountant-<city>` posts, five `/locations/<city>` hubs, and six of the eleven have no hub parent.** Plus the inverted slug `nottingham-gp-accountant`, which every `gp-accountant-*` glob misses. Both carried forward from `BATCH2_INDEX.md` §10I and both still unfixed. They become wave G's structural work.
 
 ---
@@ -463,11 +532,24 @@ There is no `employment-status` directory, and `/blog/[slug]` calls `notFound()`
 
 **The measurement reality.** Google indexes roughly 21 of 138 URLs; Bing has page-level data for 77 and out-clicks Google 3.4x. Site totals over the window, both fresh pulls: Google **97 clicks / 8,267 impressions / 90d at average position 33.18**; Bing **326 clicks / 8,903 impressions** (`GetRankAndTrafficStats`, the only site-total-safe Bing endpoint per the top-N trap memo).
 
-**Wave A primary test, Bing, 28 days.** Six pages. Combined Bing baseline **17 clicks / 234 impressions** page-level. Target: **phrase coverage, not total traffic.** At least **4 of 6** pages register impressions on a phrase named in their own pack's section 7.1 that was absent before. Per §9.6 point 2, **total traffic rising while the named phrases stay missing is a FAIL and is recorded as drift.**
+**Wave A primary test, Bing, 28 days, CORRECTED after a pack writer showed the first version was harder than it read.** Six pages. Combined Bing baseline **17 clicks / 234 impressions** page-level. The test is **phrase coverage, not total traffic**: per §9.6 point 2, total traffic rising while the named phrases stay missing is a FAIL and is recorded as drift.
+
+The first version said "at least 4 of 6 pages register impressions on a phrase named in their own pack's section 7.1". **Two of the six pages have no named Bing queries at all today** (`enhanced-services-gp-practice-income-tax` and `pcn-clinical-director-payments-tax` both return zero `GetPageQueryStats` rows against a real page-level click), and one of them has a market keyword set of a single 40-volume row with peer-winnable of zero. "4 of 6" therefore quietly required both of the site's thinnest pages to surface inside 28 days, which is not a reasonable ask on a domain at this authority.
+
+**Corrected test, split by what each page actually has:**
+- **The two pages with real Bing demand** (`how-gms-funding-works-...` 129 impressions, `pcn-funding-network-contract-des-...` 85) must **each** register impressions on at least one section-7.1 phrase that was absent before. **Two of two. This is the wave's real test.**
+- **The four thin pages** (ARRS, enhanced services, clinical director, dispensing): **at least 1 of 4** registers a first named-query impression. A miss on any individual one carries no information.
+- **`how-gms-funding-works-...` must not lose its 141 Google impressions at position 7.3**, the strongest Google position in the untreated corpus.
 
 **Wave A revert trigger.** All five EXTEND pages are additive-only, so structural equity cannot move. The failure condition is a loss one: if combined Bing clicks across the six URLs fall below **13** (a 25% fall from 17) at the 28-day read, revert the wave. Revert path per page is a single `git checkout <pre-wave sha> -- <file>`, named in section 1 of each pack.
 
-**Wave B primary test.** Three pages, combined Bing baseline **4 clicks / 13 impressions**. Too small for a traffic test. The test is the position one: `gp-partnership-last-man-standing-premises-risk` must **still hold Bing position 1 to 3** on `last man standing gp practice lease` at 28 days. If an additive-only change moves that, the additive-only rule is not working and the whole EXTEND grade needs re-examining across the batch.
+**Wave B primary test, CORRECTED after two writers found the test as first written was unfalsifiable.** Three pages, combined Bing baseline **4 clicks / 13 impressions**. Too small for a traffic test, so the test is a position one. The first draft said "must still hold Bing position 1 to 3", against a stated baseline of 1.0.
+
+**The 1.0 was a named-query figure printed in a page-level column.** Page-level, impression-weighted across the three in-window snapshots (positions 1, 3 and 2), the page sits at **2.0**. So a test written as "1 to 3" against a page-level baseline of 2.0 would let the page drift to 3 and still pass while representing a real loss, and it would be reported against a number that was never the baseline.
+
+**The corrected test, stated at the level it is measured at:** at the 28-day read, `/blog/gp-partnership-last-man-standing-premises-risk` must still hold **`GetPageQueryStats` named-query position 1** on the string `last man standing gp practice lease`, and must still convert **at least 2 of its 3 currently converting named queries**. If an additive-only change moves either, the additive-only rule is not working and the EXTEND grade needs re-examining across the whole batch.
+
+**The general lesson, and it is the same defect as D2 one layer down.** Bing page-level and named-query-level figures are never comparable, and that applies to POSITION as well as to impressions. An acceptance criterion must name the endpoint or it cannot be scored.
 
 **Google, all waves: no expectation is set, deliberately.** On a corpus where Google indexes 15% of URLs, a page not being indexed at 28 days carries no information. The single Google observation worth recording in waves A and B is `/blog/how-gms-funding-works-global-sum-carr-hill-explained`, which holds **141 impressions at position 7.3** and must **not** lose them.
 
@@ -504,3 +586,46 @@ There is no `employment-status` directory, and `/blog/[slug]` calls `notFound()`
 | `PACK_B3_blog__gp-surgery-premises-own-vs-rent-tax-guide.md` | `/blog/gp-surgery-premises-own-vs-rent-tax-guide` | B | REFRAME |
 
 Filenames carry the `PACK_B3_` prefix so they cannot collide with the batch-1 and batch-2 packs already in this directory, nor with the opticians and allied-health packs being written concurrently by other agents.
+
+
+## CONDUCTOR RULINGS, 2026-08-26. D11 and the §9.2 hole. Batch 3 is unblocked.
+
+**D11, all three questions: YES, narrowly, and here is the boundary.**
+
+The situation is that five of nine wave A and B pages carry ownership breaches inside copy that an EXTEND grade
+freezes, and every one of those breaches predates the ownership map. So the map asks a writer to fix something the
+grade forbids it to touch.
+
+1. **May a writer DELETE inside frozen copy to correct an ownership breach? Yes.** The rule already established
+   today is that EXTEND restricts STRUCTURE AND POSITIONING, never TRUTH, because the freeze exists to protect the
+   equity that lives in the metaTitle, the H1, the H2 order and the queries the page already matches. An ownership
+   breach is the same species of defect: duplicated explanation across pages is what makes two of our own pages
+   compete, which damages the very equity the freeze protects. Deleting a duplicated explanation and replacing it
+   with one sentence and a link does not change what the page is about, does not touch a heading and does not
+   reorder anything. **Constraint: the deletion must leave the page's own topic intact and must not remove a query
+   the page matches.** Check the equity register first; if a phrasing only appears inside the passage being cut,
+   it moves into the replacement sentence or the passage stays.
+2. **May a writer INSERT a link into an existing paragraph? Yes.** A link adds no heading, changes no order and
+   alters no claim. It is the cheapest possible form of the handoff the map requires.
+3. **Is narrating our own process to the reader a rule? Yes, it already is.** V2 bans narrating the keyword
+   research; this is the same defect wearing a different coat, and it reads as machine-made for the same reason.
+   A reader does not care which of our pages owns a fact. Write "the detail sits on X" and link it; never write
+   anything resembling "this is covered on our other page because that page owns this topic".
+
+**Why these three go together.** Each says the same thing: a rule that protects a measurement must not be allowed
+to preserve a defect. That principle has now been applied three times today, to a stale year tag, to three live
+factual errors on a frozen page, and now to ownership. Record it once and stop re-deriving it.
+
+**The §9.2 grading hole: RULING ACCEPTED as written.** Bing clicks of 1 or 2 match neither branch of the equity
+table, and 26 pages fall into it, every one sitting at Bing position 1.0 to 7.0, which is precisely the equity the
+conservative rule exists to protect. **1 or 2 Bing clicks at Bing position 10 or better grades EXTEND.** The
+agent is right that this belongs in the shared engine doc rather than in a per-site index, because the hole is in
+`REWRITE_PROGRAM.md` §9.2 and every site will hit it. Carried there.
+
+**On the other findings, for the record:** D1 (the sitemap advertising a 404 for a category with no hub) is FIXED,
+the post reassigned to an existing category and all eight categories verified as having routes. D12 and D13 (the
+harvest is 39,296 rows across 44 domains, not the 32,872 across 27 that every document repeats, and half those
+domains are unclassified so every peer-winnable figure is a floor) are correct and are recorded in STATE as the
+first task of the next session, because they change the ORDER of the work and the order is the decision. The F5
+gate blocking a now-verified QOF figure is a stale gate, not a defect in the page: the figure was unverifiable
+this morning and was settled at source this afternoon.

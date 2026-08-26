@@ -155,6 +155,79 @@ Derive the armed set with:
 `select slug, status, monitor_until from monitored_pages where site_key='<site>' and monitor_until > now();`
 and treat every row it returns as frozen, whatever the status says.
 
+## SESSION CLOSE 2026-08-26: where Medical stands and what the next agent does first
+
+**No separate handoff doc exists, by house rule. This section and `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md`
+(runbook R.5, decisions 16 to 22) are the handoff. Read them, then the packs.**
+
+### What shipped into the repo today. Nothing is deployed.
+
+| Work | Count | Where |
+|---|---|---|
+| Batch 1, existing pages rewritten or extended | 12 | 6 markdown, 6 TSX/TS surfaces |
+| Batch 2, net-new | 7 | `Medical/web/content/blog/` |
+| Coverage clusters, net-new | 2 | opticians, allied health |
+| Commercial pages rewritten | 6 | homepage plus 5 |
+| `/resources/` pages repurposed | 3 | now document the downloadable models |
+| Titles and descriptions rewritten | 21 | 34 more deliberately left alone |
+| Hero images backfilled | 79 | whole corpus |
+| Calculators corrected | 4 | two were publishing invented figures |
+| Spreadsheet models corrected | 2 | both computed tax wrongly |
+
+Corpus 79 markdown posts to 88. Real indexable surface is **138 sitemap URLs**, not the 149 previously stated and
+not the 86 a markdown glob returns; a glob misses 52 TSX, TS and derived surfaces. Derivation in `BATCH3_INDEX.md` §2.1.
+
+### THE FIRST THREE THINGS THE NEXT AGENT DOES, in this order
+
+1. **Re-derive the peer-winnable column before touching the batch 3 order.** The harvest is **39,296 rows across
+   44 domains**, not the 32,872 across 27 that most documents still repeat, and **22 of the 44 domains are
+   unclassified**, so every peer-winnable figure is a FLOOR. That column ORDERS all the work under decision 21, so
+   a floor is mis-sequencing the backlog. It is free SQL. Beware the paging trap (rollout doc trap 15): advance the
+   offset by rows RETURNED, never by the limit requested, or you get a tenth of the table and a false zero.
+2. **Write batch 3 waves A and B.** Nine packs are frozen at `docs/medical/packs/PACK_B3_*` with an ownership map
+   (rows O19 to O35) built BEFORE the packs and repeated inside each one. Wave A is GP funding, 6 pages; wave B is
+   premises, 3. Conductor rulings that unblock them are in `BATCH3_INDEX.md` under "CONDUCTOR RULINGS".
+3. **Then the dual QA, both tracks, no exceptions.** Today the second track caught two blocking defects the first
+   had passed and the writers had each self-verified. That is the single highest-value step in the process.
+
+### Standing state a new agent will get wrong without reading this
+
+- **The frozen set is 19 rows**, derived with `monitor_until > now()` and NO status predicate. Three sit at
+  `status='flagged'` (`__home` to 2026-10-06, `gp-accounting-guide` and `nhs-pension-scheme-pays-doctors-deadlines`
+  to 2026-09-10). A `status='active'` filter silently excuses them and that mistake has already been made twice.
+- **Nothing ever resets `flagged` to `active`.** A false positive permanently drops a page out of every routine
+  sweep. See the CARETAKER false-alarm class: the detector that flags them reads the sampled query table, compares
+  a 28-day window to a 90-day baseline while storing but never reading its own baseline setting, and averages
+  position unweighted. Re-derive any flagged row from the APIs before believing it.
+- **`docs/medical/ready/nhs-pension-scheme-pays-doctors-deadlines.md` is a finished page held for 2026-09-11.**
+  Its three live factual errors were corrected early today under the rule below; the header block says exactly what
+  was applied so nobody re-applies it.
+- **From 2026-09-11 also:** waves D, E, F and H, and the one-line change making the blog category eyebrow a link,
+  which would give all eight pillar hubs their first inbound links from the 79 posts. Wave G waits on data to
+   2026-09-24, not on a freeze.
+- **The governing principle, applied three times today: a rule that protects a measurement must never be allowed to
+  preserve a defect.** Stale year tags, live factual errors and ownership breaches inside frozen copy are all
+  corrected; structure, positioning and headings are not touched.
+- **Ground truth is unusually strong and was corrected four times today**, including twice after being "verified"
+  the same morning. Two standing method rules came out of it: check a Directions or Regulations citation for
+  AMENDING INSTRUMENTS before locking a figure, and never read an amending instrument without reading the text it
+  amends. Both are in `house_positions.md`.
+- **Blocked figures: only the GMC annual retention fee remains.** The Global Sum (£130.07) and the QOF point value
+  (£227.95) were both settled at source today and are usable with citations. Any gate still blocking them is stale.
+
+### Known defects recorded, deliberately not fixed
+
+`/blog/locum-tax` and `/blog/gp-tax-and-accounts` are to be LEFT ALONE, not "not yet": both are the best untreated
+pages on the site and a rewrite would reset a working measurement. The monitored-pages detector needs its own pass.
+Two sentences of architecture jargon sit on Property, untouched under the standing rule. 364 pages estate-wide
+exceed the new meta length warning. `GenericTool` has no table field, decided against. Four sibling sites share the
+`<dt>`-without-heading weakness, recorded and not actioned.
+
+### Owner-gated, none of it started
+
+Publishing everything above. Registering changed pages in `monitored_pages`, which writes to production. IndexNow
+submission after any deploy. The owner's standing instruction today was to hold all of it until Medical was complete.
+
 ## Backlog raised during batch 1 (2026-08-26), not actioned mid-batch
 
 1. **The calculator renderer drops `workedExamples[]` entirely.** `Medical/web/src/app/calculators/[slug]/page.tsx`
