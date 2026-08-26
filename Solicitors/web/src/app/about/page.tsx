@@ -77,7 +77,7 @@ export default function AboutPage() {
                   <strong className="text-[var(--primary)]">100% legal sector focus.</strong> We don't work with landlords, dentists, or general businesses. Every client is a solicitor, law firm, or legal practitioner. This focus means we understand your challenges, speak your language, and stay current with SRA regulations and legal sector tax changes.
                 </p>
                 <p>
-                  <strong className="text-[var(--primary)]">SRA compliance expertise.</strong> We have a 100% pass rate on SRA Accountant's Reports. We understand client money rules, trust accounting, reconciliation requirements, and COFA responsibilities as well as you do.
+                  <strong className="text-[var(--primary)]">SRA compliance expertise.</strong> Client money rules, trust accounting, reconciliation requirements and COFA responsibilities are the core of the work, handled on a monthly rhythm rather than as a year-end scramble before the accountant&apos;s report.
                 </p>
                 <p>
                   <strong className="text-[var(--primary)]">Proactive tax planning.</strong> Beyond compliance, we provide strategic advice on partnership structures, LLP conversions, profit extraction, practice valuations, and succession planning. We help you make informed decisions about your practice's financial future.
