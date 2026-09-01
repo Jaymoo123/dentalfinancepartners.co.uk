@@ -201,6 +201,11 @@ and treat every row it returns as frozen, whatever the status says.
 
 ### What shipped into the repo today. Nothing is deployed.
 
+> CORRECTED 2026-09-01: all of it deployed later the same day (`38a8ba75`, sitemap 139
+> live; production verified in the Stage 0 diagnosis below). This heading described a
+> point-in-time state that lasted hours. Read "not deployed" claims in this section as
+> superseded.
+
 | Work | Count | Where |
 |---|---|---|
 | Batch 1, existing pages rewritten or extended | 12 | 6 markdown, 6 TSX/TS surfaces |
@@ -472,3 +477,315 @@ Medical is indexed and earning impressions for its head family ("gp accountants"
 - Flat routing onboarded into all 4 track2 wf.js targets: writer and QA prompts branch to flat /blog/slug links; track2_link_audit.py gained a flat mode; verified 0 HARD / 0 SOFT on the current corpus.
 - generator: frontmatter field backfilled on all 73 posts; all pipelines write it going forward (see docs/_engines/ENGINE_MAP_AND_ONBOARDING.md section 5).
 - Methodology: docs/deepseek_quality_audit_2026-06-12.md + docs/provenance_summary_2026-06-12.md + docs/_engines/rewrite_gold_patterns.md.
+
+## Stage 0 diagnosis 2026-09-01 (Track 2 / R.5, re-run six days after the 2026-08-26 diagnosis)
+
+**Binding constraint: INDEXATION on Google, confirmed and quantified. Not conversion, not
+corpus. ELIGIBILITY is the second constraint, and it binds the slice Google has already
+indexed. Both are the same root cause: low domain authority.**
+This confirms the 2026-08-26 verdict rather than replacing it, and puts a full-sitemap number
+on it: **18 of 139 URLs are indexed, 51 have never been fetched at all.** The refinement is
+that the constraint is now measurably two-layered, and the layers need different work:
+
+- **Layer 1, indexation.** 87% of the corpus earns nothing from Google because Google has not
+  taken it. Content added to that pile earns on Bing (which pays 3.3x more here) and nothing
+  on Google until authority moves.
+- **Layer 2, eligibility.** On the ~13% Google has taken, it ranks page 1 for specific
+  informational intent (`becoming-gp-partner-financial-implications` pos 9.9, 1,929 impressions,
+  48 clicks) and **position 45 to 78 with literally zero clicks in 90 days** for the head
+  commercial family ("gp accountants" 1,332 impressions at pos 51.1). Google will index and
+  rank this domain on a specific question; it will not rank it for a five-word commercial head
+  term. Content cannot close a 50-place gap there, so do not promise it (§5.3).
+
+All figures below are fresh API pulls of 2026-09-01, never stored snapshots. `gsc_query_data`
+was not used and no SUM of it appears here. Raw JSON in session scratchpad `medical_stage0/`
+(gsc_90d.json, bing.json, sitemap_urls.txt, index_coverage.json; scratch, not repo).
+
+### Search reality (fresh pulls, data through 2026-08-29 Google / 2026-08-30 Bing)
+
+- **GSC** (`sc-domain:medicalaccounts.co.uk`, window 2026-06-03 to 2026-09-01, **data through
+  2026-08-29**, date dimension = unsampled, 88 date rows): **108 clicks, 10,168 impressions
+  / 90d, impression-weighted position 33.88, CTR 1.06%.**
+  Command: `GSCQueryFetcher("medical")` ->
+  `searchanalytics().query(siteUrl=..., body={dimensions:["date"], rowLimit:25000})`.
+  Movement vs the 2026-08-26 pull (97 clicks / 8,267 impr): +11 clicks, +1,901 impressions in
+  six days of window roll. Direction is up; the level is unchanged in character.
+- **Page dimension: 23 rows with >=1 impression** (of 139 sitemap URLs). Query dimension: 238
+  rows, sampled, reference only. **The undercount trap reproduces against the live API**:
+  summing the query dimension gives 3 clicks against a true site total of 108.
+- **Bing** (`GetRankAndTrafficStats`, site truth per the top-N trap memo; 106 daily rows
+  2026-05-17 to **2026-08-30**): **360 clicks, 9,818 impressions.**
+  Command: `BingQueryFetcher("medical")` -> `client._call("GetRankAndTrafficStats", {siteUrl})`.
+- **Bing out-clicks Google 3.3x** (360 vs 108) on near-identical impression counts. Same
+  channel truth as Property and as the 2026-08-26 read (3.4x).
+- **CORRECTION to the 2026-08-26 STATE entry:** it recorded "`GetPageStats` 303 rows" and read
+  that as 303 Bing-indexed pages. `GetPageStats` returns one row **per page per date**. Fresh
+  pull: 329 rows collapsing to **80 distinct URLs**. Bing surfaces ~80 pages, not ~303. The
+  "Bing indexes the corpus" conclusion still holds directionally (80 > Google's 23) but the
+  margin is four times smaller than recorded.
+
+Top Google pages, 90d (page dimension, unsampled):
+
+| Impr | Clicks | Pos | URL |
+|---|---|---|---|
+| 5,382 | 8 | 55.1 | `/` (homepage) |
+| 1,929 | 48 | 9.9 | `/blog/becoming-gp-partner-financial-implications` |
+| 738 | 17 | 7.9 | `/blog/gp-partner-vs-salaried-gp-tax-comparison` |
+| 582 | 10 | 9.3 | `/blog/buying-into-gp-partnership-capital-parity-explained` |
+| 434 | 5 | 17.9 | `/blog/nhs-pension-scheme-pays-doctors-deadlines` |
+| 424 | 5 | 9.2 | `/blog/locum-tax` |
+| 170 | 5 | 12.8 | `/blog/gp-accounting-guide` |
+
+Top Bing pages, 90d (GetPageStats aggregated by URL; top-N, reference only): `nhs-pension-for-locums-form-a-form-b`
+1,093i/18c, `gp-vat-registration` 519i/17c, `gp-practice-income-pcse-statement-reconciliation`
+295i/20c, `gp-pension-contributions-tax-relief` 290i/12c,
+`medical-professional-expenses-what-is-claimable` 276i/21c. **Bing and Google reward almost
+disjoint sets of pages**: Google pays the partnership/buy-in cluster, Bing pays the
+pension-admin, VAT and expenses cluster. Neither is a subset of the other.
+
+### Indexation check - still FAIL on the tail, and it has NOT moved since 2026-08-26
+
+- Sitemap (`https://www.medicalaccounts.co.uk/sitemap.xml`, fetched live 2026-09-01):
+  **139 URLs**, 96 of them `/blog/<slug>` posts (+1 `/blog` index), 11 calculators,
+  7 medical-guides, 6 locations, 3 resources, 2 research, the rest commercial/legal routes.
+  This confirms the 08-26 deploy record (130 -> 139).
+- **20 of 139 sitemap URLs (14.4%) earned >=1 GSC impression in 90d**; blog subset 16 of 96
+  (16.7%). (23 page-dimension rows minus 3 anchor-fragment rows = 20 distinct sitemap URLs.)
+  On 2026-08-26 the same measure was 21 of 130 (16.2%). **Nine new URLs went live and none of
+  them has earned a Google impression yet.** Per the freshness rule they are immature, not a
+  gap: they are six days old and IndexNow was never submitted.
+- **Full-sitemap URL Inspection sweep, 139 of 139 URLs, no quota hit.** Command:
+  `python -m optimisation_engine.snapshot.index_coverage medical --fresh --skip-bing`,
+  artifact `index_coverage.json` generated 2026-09-01T18:59:04Z. Cohorts:
+
+  | Cohort | Count | % of 139 |
+  |---|---|---|
+  | Indexed, self-canonical | **14** | 10.1% |
+  | Indexed but canonicalised away | 4 | 2.9% |
+  | Crawled - currently not indexed | 4 | 2.9% |
+  | Discovered - currently not indexed | **66** | 47.5% |
+  | **URL is unknown to Google** | **51** | 36.7% |
+  | Error / excluded | 0 | 0% |
+
+  So **18 URLs are indexed in some form and 117 are not**, and over a third of the site has
+  never been fetched at all.
+- **Repeatability, measured rather than assumed:** the sweep ran twice ~20 minutes apart. The
+  indexed side is stable to the URL (14 / 4 / 4 both times, 22 total). The not-indexed side is
+  not: run 2 returned discovered-not-indexed **72** and unknown-to-Google **45**, against 66 and
+  51 in run 1. Six URLs moved across that boundary between two reads of the same API. Treat
+  "117 not indexed" as hard and the discovered-vs-unknown split as +/-6, and do not build a
+  claim on the exact unknown count. This is a materially wider and better-founded read than the
+  27-URL sample of 2026-08-26 (which reported 0 of 27 indexed, drawn by construction from the
+  zero-impression set). The 08-26 refinement was right that indexation is sparse rather than
+  absent; the exact figure is 18, not "roughly the 21 impression-earning URLs".
+- The 14 self-canonical indexed pages are the homepage, `/research/annual-allowance-pension-tax-index`
+  and 12 blog posts, of which 8 are in the GP-partnership / incorporation / locum clusters.
+  Google's indexed slice remains that cluster, confirming the 08-26 refinement.
+
+#### LIVE DEFECT FOUND, and it contradicts the 2026-08-26 "canonicals are clean" clearance
+
+The 08-26 entry says three pages were spot-checked and told the next agent not to look again.
+A **full 139-URL live canonical audit** (fetch each sitemap URL, extract `rel="canonical"`,
+compare to self) finds **4 URLs with a non-self canonical**:
+
+| URL | Declares canonical as | Google impressions 90d |
+|---|---|---|
+| `/resources/nhs-pension` | `https://www.medicalaccounts.co.uk` (homepage) | 63 impr, pos 12.2 |
+| `/resources/locum` | homepage | 61 impr, pos 12.6 |
+| `/resources/incorporation-private` | homepage | 0 |
+| `/blog/private-practice-incorporation-complete-guide` | `/blog/medical-practice-incorporation-step-by-step` | 0 |
+
+**Root cause, traced to the call site, not inferred:**
+`Medical/web/src/app/resources/[topic]/page.tsx` `generateMetadata()` (lines 33-45) returns
+only `title` and `description`. With no `alternates.canonical`, Next falls back to
+`metadataBase`, which emits the site root. **Every other route in the app sets it**
+(`alternates: { canonical: ... }` appears in contact, calculators, about, blog/[slug],
+locations/[slug], services, nhs-pension, terms, research and the homepage). The resources
+route is the single omission. **FIXED same session (2026-09-01): `alternates.canonical`
+added to `generateMetadata`, matching the sibling idiom; `tsc --noEmit` clean. Committed,
+not deployed; rides the next Medical deploy.**
+
+Consequence: the two best-positioned non-blog pages on the site (both ~pos 12, 124 combined
+impressions) tell Google they are the homepage. Google has so far declined the instruction and
+indexed them anyway, so this is a live risk rather than a live loss, but it is a defect and it
+was inside the area the previous session declared clean.
+
+Not a live defect, recorded so nobody re-raises it: Google's cached inspection for
+`/blog/gp-accounting-guide` (last crawl 2026-06-01) and
+`/blog/locum-doctor-self-assessment-filing-guide` (last crawl 2026-05-11) reports a declared
+canonical on the **dead old domain** `medicalaccountantsuk.co.uk`. Both pages serve a correct
+self-canonical today (fetched live 2026-09-01); the inspection is reporting what Google saw
+three months ago and has not re-crawled. It is evidence of crawl staleness, not of a bug.
+
+- The other technical causes cleared on 2026-08-26 (robots, single-hop 308, sitemap lastmod)
+  were not re-checked and are taken as still clean.
+
+### Conversion funnel - NOT the constraint, and it improved
+
+- Leads `source='medical'`, test-excluded per migration `20260819000003`
+  (`source <> 'test' AND coalesce(is_test,false) = false`), via `scripts/_q.py`:
+  **21 / 90d, 9 / 28d**, first 2026-04-20, last 2026-08-28. By month: Apr 2, Jun 1, Jul 9,
+  **Aug 11**. August is the site's best month on record.
+- `estate_kpis(from, to, 'medical', 'GB')`, post bot-gate window 2026-08-23 to 2026-09-01 (the
+  only trustworthy traffic window): **132 sessions, 100 humans, 96 engaged, 3 leads.**
+  90d for reference (traffic side pre-gate inflated): 819 sessions, 574 humans, 21 leads.
+- Roughly **1 lead per 44 sessions** post-gate, consistent with the 1-in-46 recorded 08-26 and
+  still the best per-session rate in the estate. Traffic volume is the lever, not funnel surgery.
+- No invisible-label bug here (generalist and digital-agency only). Two interruptive surfaces
+  (`DeepScrollModal`, `ReturningBar`) remain mounted in `Medical/web/src/app/layout.tsx`;
+  neither added nor removed, recorded because §5.0a item 7 asks.
+
+### Structure vs competitors (from fresh GSC/Bing, no paid API spent)
+
+Poor-position families, 90d, query dimension (sampled, **reference only**, never summed):
+
+1. **The head commercial family, and it dwarfs everything else.** "gp accountants" 1,332i
+   pos 51.1; "medical accountants" 579i pos 45.3; "specialist medical accountants" 337i
+   pos 63.0; "gp practice accountants" 307i pos 70.5; "medical accountants uk" 264i pos 55.5;
+   "accountants for doctors" 224i pos 68.9; "medical accountant" 185i pos 68.1; "medical
+   accounting" 182i pos 77.5. **Roughly 4,000 impressions, zero clicks, average position ~55.**
+   SERP character: owned by established specialist firms with 15+ year domains (medicsmoney,
+   sandisoneasson, ramsaybrown, honeybarrett) plus institutional non-peers (BMA, MDU, AISMA)
+   that §competitor_universe already ruled out of the peer set. Content cannot close a
+   50-place gap on a five-word commercial head term; this is the domain-authority wall
+   §5.3 says to expect and not to promise lifts on.
+2. **Local-modified head terms**, the winnable slice of family 1: "medical accountants london"
+   64i pos 48.0, "medical accountants birmingham" 53i pos 39.6, "medical accountant birmingham"
+   21i pos 31.9, "accountants for doctors london" 19i pos 50.9. Positions 32-51 rather than
+   55-78, and the site has a `/locations` namespace with only 6 pages. Local landing pages are
+   a cheaper eligibility play than the unmodified head.
+3. **GP partnership / buy-in - THIS IS THE WORKING CLUSTER, already page 1.** "gp partnership
+   goodwill valuation" 43i pos 10.0, "how much does it cost to buy into a gp partnership" 28i
+   pos 8.5, "gp partner vs salaried gp" 20i pos 11.6, "salaried gp vs partner" 37i pos 21.6,
+   "buying into a gp" 26i pos 20.2, "gp partner expenses" 24i pos 23.6. Publisher/firm-guide
+   SERPs, no institutional lock. **This is where Google gives the domain air and where depth
+   converts to position.** It is also, awkwardly, the frozen set (below).
+4. **NHS pension**: "nhs pension for doctors" 23i pos 43.5 on Google, but on Bing the same
+   family is the site's biggest earner (`nhs-pension-for-locums-form-a-form-b` 1,093i/18c).
+   Google has not accepted the pension corpus; Bing has. Watch, do not rewrite.
+5. **Bing has no poor-position family at all**: zero queries with >=30 impressions above
+   position 10. Every Bing query the site earns, it earns at position 2 to 10. There is
+   nothing to fix on Bing; there is only more surface to add.
+
+### Tooling gaps - THREE OF THE FOUR RECORDED ON 2026-08-26 ARE ALREADY CLOSED
+
+Every item re-derived by opening the file, not read from the doc (trap 5):
+
+| Item | 2026-08-26 STATE said | Verified 2026-09-01 |
+|---|---|---|
+| `sites/medical.discovery.json` | legacy schema, no `lanes` | **CLOSED.** v2, 15 lanes + 73 `lane_negative_tokens`, authored 2026-08-26. Lane gate is live: the dry run drops 12,148 dfs_ranked, 1,095 sitemap and 65 bing_kw candidates on "no topical token match" |
+| `optimisation_engine/corepage/config.py` | no `medical` entry | **CLOSED.** Six CORE_PAGES entries: homepage, services, for-gps, for-locum-doctors, calculators, medical_guides |
+| `docs/medical/house_positions.md` | last touched 2026-06-03, needs currency pass | **LARGELY CLOSED.** 14 sections (was 12), sections 11-14 locked 2026-08-26, and the verification log carries 2026-08-26 re-verifications of VAT thresholds, dividend rates 2026/27, income tax bands, CT, AIA, AMAP 55p, NHS tiered contributions from 1 Apr 2026. Residual: the §2 annual-allowance block and §5 NIC bands still carry 2025/26 tags |
+| `sites/medical.json` `paths.topicPool` | points at nonexistent `docs/medical/topic_gaps_final.md` | **STILL OPEN.** Confirmed absent. Authoring it is the first Stage 3 artefact |
+| `scripts/track2_worklist.py` | Property REBUILD, not a flag pass | **STILL OPEN.** Unchanged; Property-only SITES dict, DONE-slug lists, cluster regexes |
+| `optimisation_engine/blog_generator/site_configs/medical.py` | READY | READY, unchanged |
+
+Also open, from the 08-26 backlog and unchanged: `monitored_pages` registration for the
+08-26 batches (zero rows exist for them, verified below), and IndexNow submission for the
+nine new URLs.
+
+### Armed monitored windows - FROZEN, excluded from every sweep
+
+`select slug, status, monitor_until, page_url from monitored_pages where site_key='medical'
+and monitor_until > now()` (no status predicate, per the estate-wide correction):
+**19 rows**, unchanged from 2026-08-26. 18 blog posts expiring **2026-09-10** (nine days out)
+plus `__home` (`page_url='/'`) expiring **2026-10-06**. Three carry `status='flagged'`
+(`__home`, `gp-accounting-guide`, `nhs-pension-scheme-pays-doctors-deadlines`) and a
+`status='active'` filter silently excuses all three.
+
+**The frozen set is the working cluster.** Every Google page-1 earner in the table above
+except `/blog/locum-tax` is inside it. So the highest-ROI content on the site is untouchable
+for nine more days, and the 2026-08-26 batches that were written are still unregistered, so
+they are live but unscored. Both facts point the same way: the near-term work is net-new
+surface in unfrozen lanes, not rewriting the winners.
+
+### Medical-hosted cluster queue (C2_PLACEMENT §10, the binding registry)
+
+| # | Niche | Verdict | Shape | Dedup vol/mo | Status found on disk 2026-09-01 |
+|---|---|---|---|---|---|
+| 16 | Doctors / GPs | ABSORBED-ALREADY | live: 77 pages | - | core audience, deepen only |
+| 17 | Locum doctors | ABSORBED-ALREADY | live: 13 pages (+17 on dentists) | - | core audience; cannibalisation watch vs dentists |
+| 20 | Opticians / optometrists | **ABSORB** | cluster 3-5 | 50 | **1 of 3-5 shipped**: `/blog/accountants-for-opticians-optical-practice-vat` |
+| 21 | Vets | **ABSORB** (FLAGGED, brand fit weak) | cluster 3-5 | 120 | **1 shipped**: `/blog/accountants-for-vets-veterinary-practice-tax` |
+| 22 | Therapists & allied health | **ABSORB** | cluster 3-5 | 50 | **1 shipped**: `/blog/accountants-for-physiotherapists-and-therapists` |
+| 23 | Nurses / healthcare professionals | **ABSORB** (C1 CONDITIONAL: no refund/rebate route) | section + 1-2 pages | 40 | **1 shipped**: `/blog/nurse-tax-relief-professional-subscriptions` |
+
+All four ABSORB clusters already carry a live seed page from the 2026-08-26 batches (all four
+are in the live sitemap). None has earned a Google impression yet: six days old, IndexNow
+never fired. **They are immature, not failing.** Remaining Stage 3 work on this queue is
+2-4 further pages each for #20/#21/#22 and the C1 wording fence for #23, total ~10-14 pages,
+which is one wave, not a programme.
+
+### Lane taxonomy - EXISTS, never owner-skimmed
+
+R.3 step 2 asks for a v2 upgrade of `medical.discovery.json`. **No upgrade is needed and none
+was written**: the file is already v2, authored 2026-08-26 from 18 dual-mode head-term SERPs,
+217 GSC and 624 Bing query rows, and the 79 blog slugs of the time. Writing a second version
+would be duplicated work on a file that is correct. What is still outstanding is the
+**owner skim** §5.1 step 1 requires, which has never happened, so the 15 lanes go into the
+manager's bundled ask as they stand:
+
+| Lane key | One line |
+|---|---|
+| `pension_admin_pcse` | Type 1/2 certificates, locum forms A/B, SOLO, PCSE administration |
+| `nhs_pension_tax` | Annual allowance, scheme pays, McCloud, tapering, partial retirement |
+| `goodwill_practice_sale` | Goodwill, practice sale, merger, valuation, succession, last-man-standing |
+| `gp_partnership` | Profit share, drawings, capital accounts, buy-in, parity, partnership deeds |
+| `locum_doctor` | Locum tax, employment status, IR35, umbrella, agency work |
+| `private_practice_consultants` | Private practice, hospital consultants, medico-legal, expert witness |
+| `incorporation_extraction` | Incorporation, limited company, dividends, s.162, BADR, director loans |
+| `nhs_practice_income` | GMS/PMS contract, global sum, Carr-Hill, QOF, enhanced services, PCN/ARRS |
+| `premises_finance` | Notional and cost rent, surgery property, SDLT, borrowing, practice loans |
+| `vat_medical` | Medical VAT exemption, cosmetic/aesthetic, partial exemption, medico-legal VAT |
+| `expenses_allowances` | Doctor expenses, subscriptions, GMC/BMA/indemnity, capital allowances |
+| `payroll_staff` | Practice payroll, auto-enrolment, employer NIC, P11D, statutory pay |
+| `compliance_reporting` | Self-assessment, basis periods, MTD ITSA, bookkeeping, accounts production |
+| `allied_health` | Opticians, vets, therapists, nurses, midwives, paramedics (the C2 ABSORB queue) |
+| `medical_accountancy_services` | Catch-all for the commercial and adjacency terms |
+
+Ordering is load-bearing: `assign_lane` takes the first matching lane, so the narrow
+administrative lanes precede the broad ones they would otherwise be swallowed by. The
+taxonomy already covers all four C2 ABSORB niches inside `allied_health`, so the queue needs
+no new lane. One observation rather than a lane: the local-modifier family (family 2 above) is
+geographic, not topical, and lanes cannot express it; it belongs in the `/locations` namespace
+work, which currently has 6 pages.
+
+### Discovery / DataForSEO state
+
+- **Balance $41.09** (`GET https://api.dataforseo.com/v3/appendix/user_data`,
+  `tasks[0].result[0].money.balance`, read 2026-09-01). The rollout doc and
+  `docs/generalist/STATE.md` both carry **$47.19** dated 2026-08-26; **$6.10 has been spent
+  since and both figures are now stale.** No top-up needed.
+- `python -m optimisation_engine.discovery.candidate_pool medical` (dry run, $0.00 spent):
+  ran clean. 6,281 survivors from 21,943 persisted dfs_ranked rows + 1,652 sitemap + bing_kw
+  seeds; lane gate active. Report written to `docs/medical/candidate_pool_2026-09-01.md` by the
+  tool and moved to scratchpad (repo left clean).
+- A `--spend --commit` run costs approximately **$2.60**, derived from
+  `optimisation_engine/config.py` `DATAFORSEO_COSTS` x the 22 competitors in
+  `medical.discovery.json`: ranked_keywords 22 x ($0.01 + 500 x $0.0001) = $1.32,
+  domain_intersection 22 x $0.05 = $1.10, plus KD enrichment and the paid SERP winnability
+  check on the top 40 (~$0.15). Inside the $5 `DATAFORSEO_ABORT_AT` day guard.
+- **Judgment: most of that $2.60 buys nothing new.** The 22 ranked_keywords calls re-buy
+  domains already persisted (21,943 rows read free in the dry run). The genuinely new data is
+  `domain_intersection` (~$1.10), which is spend-only and has never run for this site
+  (`dfs_intersection_stats.persisted_rows` = 0). Recommend spending on the intersection and
+  skipping the re-buy unless the manager wants the 08-26 harvest refreshed.
+
+### Next (Stage 2, when authorised)
+
+1. Close the two live open items from 08-26 first, both owner-triggered: **IndexNow** for the
+   nine new URLs (highest value remaining, Bing is the paying channel and IndexNow is how Bing
+   learns) and **`monitored_pages` registration** for the 08-26 batches, without which waves A
+   and B stay unscored.
+2. ~~**Fix the `/resources` canonical**~~ **DONE 2026-09-01 (see above).** Still open: decide what
+   `/blog/private-practice-incorporation-complete-guide` is: it is submitted in the sitemap
+   while declaring a different page as canonical, which is a self-contradiction whichever way
+   it resolves. Never-collapse applies: differentiate or drop it from the sitemap, do not 301.
+3. §5.0a residuals only, since items 1-2 are already done: house_positions §2/§5 year-tag pass,
+   SERP meta on the 34 pages deliberately left alone, equity-graded sweep over the corpus
+   **minus the 19 frozen rows** (earliest release 2026-09-11), link hygiene via
+   `scripts/medical_flat_link_audit.py` (never `slug_resolver --fix`).
+4. Then Stage 3 on the four ABSORB clusters (~10-14 pages), plus the local-modifier landing
+   pages that family 2 above identifies, plus the corpus-wide GMS/PMS contract-wording sweep
+   (39 blog posts + 6 page files) that is still an open owner decision.
+
