@@ -1267,3 +1267,16 @@ amended to name the endpoint, exactly as D2 says.
 8. **The 62/34/4 contract-type split is a 2019 figure from a 2019 post.** It is the only quantification of
    contract prevalence found anywhere in the peer set, and it is eight years old. Attribute and date it, or omit
    it. **Do not present it as current.**
+
+---
+
+## ADDENDUM 2026-09-01 (owed from the 2026-08-26 close; BATCH3_INDEX "Still open after this batch")
+
+Two places where this pack's instructions and the shipped page now disagree, both accepted
+KNOWINGLY at QA on 2026-08-26. A future KEEP-list audit must read these as ratified
+overrides, not deviations:
+
+1. The section 5 KEEP list's "inventing multipliers" line and its funnel paragraph both
+   contradict the shipped page. The shipped wording stands.
+2. Section 1 forbade replacing a body under a frozen H2. The accounts section's body WAS
+   replaced under its frozen H2, deliberately, and the change was accepted.

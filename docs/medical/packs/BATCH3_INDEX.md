@@ -308,6 +308,15 @@ Nine of the ten grade REFRAME and only three carry any trace at all (`family-inv
 
 **The ruling it needs, and it is a live-state question the packs cannot answer.** Five of the ten are the same topic on five surfaces (the two incorporation guides, the s.162 relief page, the incorporation calculator, the incorporation resource), and one of them is recorded in STATE as undeployed and 301-redirecting while still being emitted in the sitemap. **Resolve what `/blog/private-practice-incorporation-complete-guide` actually returns on the live site before any pack is written for this wave**, because the answer changes whether wave C differentiates five surfaces or four. Never collapse; differentiate. Recorded as defect D3.
 
+> **D3 RULED 2026-09-01 (conductor, live fetch):** the URL returns **301** to
+> `/blog/medical-practice-incorporation-step-by-step` (middleware `DUPLICATE_REDIRECTS`),
+> deployed and staying per the live-301s rule. **Wave C differentiates FOUR surfaces**
+> (step-by-step guide, s.162 relief page, incorporation calculator, incorporation resource).
+> The sitemap no longer emits the redirected slug (class-filtered against
+> `DUPLICATE_REDIRECTS`, commit `0abd26e7`) and the four internal links to it now go
+> single-hop. The orphaned .md stays on disk untouched pending the deliberate
+> collapse-review workstream. Wave C is unblocked.
+
 ### Wave D. Locum, IR35, umbrella. From 2026-09-11.
 
 Twelve surfaces across four namespaces on one subject: `/blog/locum-doctor-ir35-what-you-need-to-know`, `/blog/locum-doctor-limited-company-pros-and-cons`, `/blog/locum-doctor-umbrella-company-2026-reforms`, `/blog/locum-doctor-expenses-what-you-can-claim`, `/medical-guides/ir35-for-locums`, `/medical-guides/locum-limited-company-vs-umbrella`, `/resources/locum`, `/calculators/locum-tax-calculator`, plus the three frozen owners that unfreeze on 09-11 (`locum-doctor-tax-complete-guide`, `locum-doctor-self-assessment-filing-guide`, `nhs-pension-for-locums-form-a-form-b`) and NO-PAGE corrected order 18 (RF12).
@@ -435,9 +444,10 @@ Two live index documents extended the O series in parallel this afternoon and bo
 |---|---|---|---|
 | **O31** | **IR35 and off-payroll for locum doctors**: the three hirer types, who issues the SDS, the April 2024 PAYE-offset change. | Wave D, **one page only, to be named when D is scoped against the unfrozen hub** | Four surfaces currently carry it. This row is deliberately left with a placeholder owner rather than guessed, because naming it now would be naming it without reading the frozen hub. |
 | **O32** | **Limited company versus umbrella for a locum** | Wave D, one page only, same condition | Two surfaces currently carry it, on two namespaces. |
-| **O33** | **Incorporation of a medical practice**: s.162 relief (claimed, not automatic, from 6 April 2026 per FA 2026 s.39), the step sequence, and the **pension-accrual loss that must be paired with every tax saving** (house positions §2.C) | Wave C, one page only, named after the defect D3 ruling | Five surfaces currently carry it. |
+| **O33** | **Incorporation of a medical practice**: s.162 relief (claimed, not automatic, from 6 April 2026 per FA 2026 s.39), the step sequence, and the **pension-accrual loss that must be paired with every tax saving** (house positions §2.C) | `/blog/medical-practice-incorporation-step-by-step`, wave C (**named 2026-09-01 by the D3 ruling**: the complete-guide URL 301s to it, so the step-by-step page is the one surviving prose owner) | Five surfaces currently carry it; after the D3 ruling four remain live. |
 | **O34** | **Salary versus dividend extraction** (2026/27: ordinary 10.75%, upper 35.75%, additional 39.35%, allowance £500) | `/blog/salary-vs-dividend-medical-limited-company-2026`, wave C | Surplus-cash, FIC, s455 and gp-corporation-tax pages: one sentence, then link. |
 | **O35** | **The employment-status fork for doctors** (partner SA800/SA104, salaried PAYE, locum SA103 or PSC, consultant PAYE plus private work), house positions §1 | `/blog/gp-partner-vs-salaried-gp-tax-comparison` (**FROZEN to 09-10**) | Every wave: one sentence, then link. **No batch-3 page rebuilds the four-role table.** |
+| **O36** | **Accounting treatment of a dilapidations provision** (recognition test, and how the provision is taxed) | `/blog/gp-partnership-last-man-standing-premises-risk` | Folded in from ruling D18 on 2026-09-01. `gp-surgery-premises-own-vs-rent-tax-guide` takes one sentence and a link if it needs it. |
 
 ### 6.3 Batch-level style watch (V5 and V9, and it is the conductor's job)
 
