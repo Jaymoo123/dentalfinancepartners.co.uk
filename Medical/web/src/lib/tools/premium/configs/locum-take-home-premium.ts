@@ -52,7 +52,7 @@ export const locumTakeHomePremiumConfig: PremiumToolConfig = {
       min: 0,
       max: 100000,
       step: 500,
-      help: "Indemnity, GMC fee, professional subscriptions, equipment, mileage and so on (HP §8).",
+      help: "Indemnity, GMC fee, professional subscriptions, equipment, mileage and so on.",
     },
     {
       id: "pensionContributions",
@@ -135,15 +135,15 @@ export const locumTakeHomePremiumConfig: PremiumToolConfig = {
       },
       breakdown: breakdownRows,
       note:
-        "2025/26 basis. Class 4 NIC is 6% between £12,570 and £50,270 then 2% (HP §8). Class 2 is no longer a required payment from 6 April 2024 (HP §8). Student loan thresholds are the 2025/26 values. Excludes payments on account timing. A salaried GP is taxed under PAYE with Class 1 NIC, so this planner fits self-employed and locum income (HP §1). These are estimates, not advice.",
+        "2025/26 basis. Class 4 NIC is 6% between £12,570 and £50,270 then 2%. Class 2 is no longer a required payment from 6 April 2024. Student loan thresholds are the 2025/26 values. Excludes payments on account timing. A salaried GP is taxed under PAYE with Class 1 NIC, so this planner fits self-employed and locum income. These are estimates, not advice.",
     };
   },
   explainer: {
     heading: "How this planner works",
     paragraphs: [
-      "Your take-home as a self-employed or locum doctor starts with your gross fees or income for the year. Deductible business expenses (indemnity cover, GMC registration, professional subscriptions, equipment and mileage) reduce the figure to net income. If you contribute to a personal pension, that reduces the taxable amount further. The resulting net income is then subject to income tax at 20%, 40% or 45% on the progressive bands, plus Class 4 National Insurance at 6% between £12,570 and £50,270, and 2% above (HP §8). Class 2 NIC of £3.45 a week was abolished as a compulsory payment from 6 April 2024 and is not included in this model.",
+      "Your take-home as a self-employed or locum doctor starts with your gross fees or income for the year. Deductible business expenses (indemnity cover, GMC registration, professional subscriptions, equipment and mileage) reduce the figure to net income. If you contribute to a personal pension, that reduces the taxable amount further. The resulting net income is then subject to income tax at 20%, 40% or 45% on the progressive bands, plus Class 4 National Insurance at 6% between £12,570 and £50,270, and 2% above. Class 2 NIC of £3.45 a week was abolished as a compulsory payment from 6 April 2024 and is not included in this model.",
       "If you have a student loan, the repayment is calculated on the net income above your plan threshold: Plan 1 (£26,065), Plan 2 (£28,470) or Plan 4 for Scottish borrowers (£32,745), all at 9% on the excess. Student loan repayments are not a tax deduction; they come out of your take-home after the tax and NIC calculation. The effective deduction rate shown in the headline is total deductions (tax plus NIC plus any loan repayment) divided by net income.",
-      "This planner models self-employed and locum income. A salaried GP working under a GMS or PMS contract is employed, so their salary is taxed under PAYE with Class 1 NIC (employer and employee), not Class 4. Many doctors hold both: a salaried NHS post plus private sessions, locum work or out-of-hours shifts. In that case, use this tool for the self-employed portion only, and note that your PAYE income uses the personal allowance and basic-rate band first, which affects how much of your self-employed income falls at higher rates (HP §1, §1.A).",
+      "This planner models self-employed and locum income. A salaried GP working under a GMS or PMS contract is employed, so their salary is taxed under PAYE with Class 1 NIC (employer and employee), not Class 4. Many doctors hold both: a salaried NHS post plus private sessions, locum work or out-of-hours shifts. In that case, use this tool for the self-employed portion only, and note that your PAYE income uses the personal allowance and basic-rate band first, which affects how much of your self-employed income falls at higher rates.",
     ],
   },
 };

@@ -324,7 +324,7 @@ export function build(): ExcelJS.Workbook {
   ws.getCell("A32").font = { bold: true, color: { argb: NAVY }, size: 11 };
   ws.getCell("B32").value = "See Notes";
   ws.getCell("A33").value =
-    "Company dividends are not NHS pensionable, so incorporated private income loses NHS accrual (HP section 2.C).";
+    "Company dividends are not NHS pensionable, so incorporated private income loses NHS accrual.";
   ws.getCell("A33").font = { color: { argb: NAVY }, italic: true };
   ws.getCell("A33").alignment = { wrapText: true };
   ws.getRow(33).height = 28;
@@ -419,7 +419,7 @@ export function build(): ExcelJS.Workbook {
   const noteLines = [
     "Assumptions and limitations",
     "",
-    "IMPORTANT: NHS Pension (HP section 2.C)",
+    "IMPORTANT: NHS Pension",
     "Company dividends are NOT NHS pensionable. A limited company cannot hold a GMS or PMS",
     "contract and company income is not NHS pensionable. Incorporated private income loses",
     "NHS accrual on dividends. This cost can exceed the tax saving over a career. Always",

@@ -4,11 +4,18 @@
  * Each test calls calcIncorporation() from the compute lib for the reference figure,
  * then verifies the builder's locked constants and default cell values match.
  *
- * F2 NOTE: This model uses CT 25% flat (matching calcIncorporation). The true CT
- * regime has marginal relief between GBP50k-GBP250k. Do NOT "fix" either side; the
- * builder mirrors the lib's simplification while the Notes sheet flags the caveat.
+ * F2 NOTE, REWRITTEN 2026-09-01. The workbook still charges CT at a flat 25% on
+ * the whole profit and deducts the director salary AFTER it, and it charges no
+ * employer NIC. `calcIncorporation` no longer does any of those things: it
+ * deducts the salary and the employer NIC first, then charges 19% / 25% with
+ * marginal relief. THE WORKBOOK AND THE LIVE CALCULATOR NOW DISAGREE. That is a
+ * deliberate, reported divergence, not a regression to "fix" here: the .xlsx is
+ * an owner-facing artefact and re-issuing it is a separate decision. The
+ * builder assertions below therefore pin the WORKBOOK's constants, and the
+ * compute assertions pin the CORRECTED lib.
  *
- * NHS Pension impact row ALWAYS present (HP section 2.C, compliance non-negotiable).
+ * NHS Pension impact row ALWAYS present (house_positions.md section 2.C,
+ * compliance non-negotiable).
  * Class 4 is 6% (NOT the abolished 9%).
  * Dividend rates 2026/27 (FA 2026 s.4): 10.75% / 35.75% / 39.35%.
  *
@@ -20,8 +27,9 @@ import { calcIncorporation } from "../../../src/lib/tools/compute/incorporation.
 import { build } from "./incorporation.js";
 import type ExcelJS from "exceljs";
 
-// ---- Locked constants (traced to incorporation.ts) ----
+// ---- Locked constants ----
 const PA = 12570;
+// The WORKBOOK's flat CT rate. The compute lib no longer uses it.
 const CT_RATE = 0.25;
 const DIV_ALLOWANCE = 500;
 const DIV_BASIC = 0.1075;
@@ -44,17 +52,23 @@ describe("incorporation compute lib (golden)", () => {
     expect(result.soleTraderTaxableIncome).toBe(135000);
     expect(result.soleTraderTotalTax).toBeCloseTo(49909.6, 1);
 
-    // Limited company (unchanged): CT=21250, div=51180, divTax=18118.1, nhsTax=7486
+    // Limited company, corrected 2026-09-01:
+    //   employerNIC = (12570-5000)*0.15 = 1135.50
+    //   chargeable = 85000 - 12570 - 1135.50 = 71294.50 (marginal band)
+    //   CT = 71294.50*0.25 - 0.015*(250000-71294.50) = 15143.0425
+    //   dividendAmount = 56151.4575; divTax = 55651.4575*0.3575 = 19895.39605625
+    //   payeIncomeTax on 62570 = 12460
+    //   ltdTotalTax = 48633.93855625
+    // The WORKBOOK still reports CT 21250 / div 51180 / ltdTotalTax 46854.10.
     expect(result.companyProfit).toBe(85000);
-    expect(result.corporationTax).toBeCloseTo(21250, 2);
-    expect(result.dividendAmount).toBeCloseTo(51180, 2);
-    expect(result.dividendTax).toBeCloseTo(18118.1, 1);
-    expect(result.limitedCompanyTotalTax).toBeCloseTo(46854.1, 1);
+    expect(result.employerNIC).toBeCloseTo(1135.5, 2);
+    expect(result.corporationTax).toBeCloseTo(15143.0425, 2);
+    expect(result.dividendAmount).toBeCloseTo(56151.4575, 2);
+    expect(result.dividendTax).toBeCloseTo(19895.396056, 2);
+    expect(result.limitedCompanyTotalTax).toBeCloseTo(48633.938556, 2);
 
-    // taxSavings now positive (incorporating saves tax once the sole trader is
-    // taxed correctly above £100k). Pre-fix asserted -£1,972.50.
-    expect(result.taxSavings).toBeCloseTo(3055.5, 1);
-    expect(result.savingsPerMonth).toBeCloseTo(254.625, 1);
+    expect(result.taxSavings).toBeCloseTo(1275.661444, 2);
+    expect(result.savingsPerMonth).toBeCloseTo(1275.661444 / 12, 2);
   });
 
   it("INC-B: high income stress test (300k private, 20k expenses, 12570 salary, no NHS)", () => {
@@ -71,8 +85,9 @@ describe("incorporation compute lib (golden)", () => {
     // soleTraderTotalTax = 119059.6 (pre-fix asserted £114,031.60, untapered PA + fixed £74,870 band)
     expect(result.soleTraderTotalTax).toBeCloseTo(119059.6, 1);
 
-    // CT = 280000*0.25 = 70000
-    expect(result.corporationTax).toBeCloseTo(70000, 2);
+    // chargeable = 280000 - 12570 - 1135.50 = 266294.50, above £250,000
+    // CT = 266294.50*0.25 = 66573.625 (the workbook still reports 70000)
+    expect(result.corporationTax).toBeCloseTo(66573.625, 2);
   });
 
   it("INC-C: Class 4 is 6 percent (spot check sole trader NI on 60k profit, no NHS)", () => {
@@ -104,10 +119,11 @@ describe("incorporation compute lib (golden)", () => {
       desiredSalary: 12570,
       nhsIncome: 0,
     });
-    // taxableDividends = max(0, dividendAmount - 500)
-    // dividendAmount = (50000*0.75)-12570 = 37500-12570 = 24930
-    // taxableDividends = max(0, 24930-500) = 24430
-    expect(result.dividendAmount).toBeCloseTo(24930, 2);
+    // chargeable = 50000 - 12570 - 1135.50 = 36294.50, inside the 19% band
+    // CT = 36294.50 * 0.19 = 6895.955; dividendAmount = 29398.545
+    // taxableDividends = 29398.545 - 500 = 28898.545
+    expect(result.corporationTax).toBeCloseTo(6895.955, 2);
+    expect(result.dividendAmount).toBeCloseTo(29398.545, 2);
     // dividendTax > 0 (taxable dividends exist beyond the GBP500 allowance)
     expect(result.dividendTax).toBeGreaterThan(0);
   });
@@ -123,15 +139,18 @@ describe("incorporation compute lib (golden)", () => {
     expect(diff).toBeLessThan(0.01);
   });
 
-  it("INC-F: CT flat 25 percent (F2 model simplification: not marginal relief)", () => {
+  it("INC-F: the lib applies marginal relief and the workbook does not (known divergence)", () => {
     const result = calcIncorporation({
       privateIncome: 100000,
       expenses: 0,
       desiredSalary: 12570,
       nhsIncome: 0,
     });
-    // companyProfit = 100000; CT should be 100000*0.25 = 25000 (flat, no marginal relief)
-    expect(result.corporationTax).toBeCloseTo(100000 * CT_RATE, 2);
+    // chargeable = 100000 - 12570 - 1135.50 = 86294.50
+    // CT = 86294.50*0.25 - 0.015*(250000 - 86294.50) = 21573.625 - 2455.5825
+    expect(result.corporationTax).toBeCloseTo(19118.0425, 2);
+    // The workbook's flat charge on the same inputs, for the record.
+    expect(result.corporationTax).not.toBeCloseTo(100000 * CT_RATE, 0);
   });
 
   it("INC-G: dividend basic rate is 10.75 percent (2026/27, NOT 8.75 percent)", () => {
@@ -141,15 +160,16 @@ describe("incorporation compute lib (golden)", () => {
       desiredSalary: 0,
       nhsIncome: 0,
     });
-    // Very simple case: all divs fall in basic band
-    // companyProfit=40000; CT=10000; profitAfterCT=30000; dividendAmount=30000
-    // taxableDividends = max(0,30000-500) = 29500
+    // Very simple case: no salary, so no employer NIC, and the whole £40,000
+    // sits inside the 19% small-profits band.
+    // CT = 40000*0.19 = 7600; dividendAmount = 32400
+    // taxableDividends = 32400 - 500 = 31900
     // totalIncomeBeforeDividends = 0; basicRateRemaining = 50270
-    // 29500 < 50270 -> all basic rate
-    // dividendTax = 29500*0.1075 = 3171.25
-    expect(result.dividendTax).toBeCloseTo(29500 * DIV_BASIC, 2);
+    // 31900 < 50270 -> all basic rate; dividendTax = 31900*0.1075 = 3429.25
+    expect(result.corporationTax).toBeCloseTo(7600, 2);
+    expect(result.dividendTax).toBeCloseTo(31900 * DIV_BASIC, 2);
     // Confirm NOT the pre-2026/27 rate of 8.75%
-    expect(result.dividendTax).not.toBeCloseTo(29500 * 0.0875, 1);
+    expect(result.dividendTax).not.toBeCloseTo(31900 * 0.0875, 1);
   });
 
   it("INC-H: higher dividend rate is 35.75 percent (2026/27)", () => {

@@ -10,8 +10,10 @@
  *
  * FIGURES TRACED:
  * - calcIncorporation: 2026/27 dividend rates (10.75% / 35.75% / 39.35%, FA
- *   2026 s.4); CT 25% flat in this model. Class 4 NIC at 6% (corrected
- *   2026-07-06; the abolished 9% rate biased the sole-trader side upward).
+ *   2026 s.4); CT 19% / 25% with marginal relief between £50,000 and £250,000,
+ *   charged after the deductible director salary and employer NIC (corrected
+ *   2026-09-01). Class 4 NIC at 6% (corrected 2026-07-06; the abolished 9%
+ *   rate biased the sole-trader side upward).
  * - All three default-input cases show incorporation COSTING MORE tax at typical
  *   private-income levels, which is the locked HP §5 position. The headline and
  *   NHS-pension note reinforce this.
@@ -22,11 +24,10 @@
  * - The tool must NOT present incorporation as a clear tax win. QA blocks if
  *   the pension line is conditional or missing.
  *
- * CONSERVATION NOTE: taxSavings = soleTraderTotalTax - limitedCompanyTotalTax.
- * The sole-trader taxable base includes nhsIncome; the Ltd base does not
- * (the Ltd side computes nhsIncomeTax separately on the NHS income). Present
- * TOTAL TAX under each route as the primary comparison; that is what taxSavings
- * reconciles. Do NOT headline "you keep £X more" from mismatched net figures.
+ * CONSERVATION NOTE: taxSavings = soleTraderTotalTax - limitedCompanyTotalTax,
+ * and since 2026-09-01 that also equals limitedCompanyNetIncome -
+ * soleTraderNetIncome: both net figures are now net cash in hand after every
+ * tax and NIC the model charges, on the same gross base.
  *
  * groupedBar chart included for type parity (full={false} blog variant does not
  * render it): series soleTrader (var(--gold)) and ltd (var(--navy)).
@@ -71,7 +72,7 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
       min: 0,
       max: 300000,
       step: 5000,
-      help: "Your salaried NHS pay. It uses your personal allowance and basic-rate band first (HP §2.C).",
+      help: "Your salaried NHS pay. It uses your personal allowance and basic-rate band first.",
     },
     {
       id: "desiredSalary",
@@ -82,7 +83,7 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
       max: 50000,
       step: 500,
       advanced: true,
-      help: "Often set near the £5,000 secondary threshold for a single-director company (HP §5).",
+      help: "Often set near the £5,000 secondary threshold for a single-director company. Run it at both £5,000 and £12,570 and compare.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -120,7 +121,7 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
         },
         rows: [
           { label: "Total tax and NIC", value: gbp(result.soleTraderTotalTax), strong: true },
-          { label: "Net income after tax", value: gbp(result.soleTraderNetIncome) },
+          { label: "Net income after all tax and NIC", value: gbp(result.soleTraderNetIncome) },
         ],
         best: taxSavings <= 0,
       },
@@ -128,15 +129,18 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
         id: "ltd",
         label: "Limited company",
         headline: {
-          label: "Total tax",
+          label: "Total tax and NIC",
           value: gbp(result.limitedCompanyTotalTax),
-          sub: "corporation tax plus dividend tax",
+          sub: "corporation tax, employer NIC, dividend tax and income tax on pay",
           tone: taxSavings > 0 ? "good" : "warn",
         },
         rows: [
           { label: "Corporation tax", value: gbp(result.corporationTax) },
+          { label: "Employer National Insurance", value: gbp(result.employerNIC) },
+          { label: "Income tax on salary and NHS pay", value: gbp(result.payeIncomeTax) },
           { label: "Dividend tax", value: gbp(result.dividendTax) },
-          { label: "Total tax", value: gbp(result.limitedCompanyTotalTax), strong: true },
+          { label: "Total tax and NIC", value: gbp(result.limitedCompanyTotalTax), strong: true },
+          { label: "Net income after all tax and NIC", value: gbp(result.limitedCompanyNetIncome) },
           {
             label: "Note",
             value: `£${desiredSalary.toLocaleString("en-GB")} salary plus dividends, no Employment Allowance for a single-director company`,
@@ -146,7 +150,8 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
       },
     ];
 
-    // The NHS Pension impact row is ALWAYS present (compliance non-negotiable, HP §2.C, §5).
+    // The NHS Pension impact row is ALWAYS present (compliance non-negotiable,
+    // house_positions.md §2.C and §5).
     const breakdownRows = [
       {
         label: "Tax difference",
@@ -164,7 +169,7 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
       {
         label: "NHS Pension impact",
         value:
-          "Company dividends are not NHS pensionable, so incorporated private income loses NHS accrual (HP §2.C).",
+          "Company dividends are not NHS pensionable, so incorporated private income loses NHS accrual.",
       },
     ];
 
@@ -192,7 +197,7 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
         ],
       },
       note:
-        "2026/27 dividend basis (10.75% / 35.75% / 39.35%, FA 2026 s.4). CT 19% to £50,000, 25% above £250,000, marginal relief between (HP §5). A doctor's ordinary personal service company CANNOT hold a GMS/PMS contract and company income is not NHS pensionable, so this decision applies to PRIVATE work only (HP §2.C, §5). Dividends are taxed again on extraction and that is already in the Ltd figure. A director's loan taken ahead of dividends triggers a s.455 charge at 35.75% on post-6-April-2026 loans (HP §5). The headline tax gap is modest at typical private-income levels and the real drivers are the annual allowance taper, retained earnings and family planning (HP §5). This model does not value the NHS pension accrual lost, which can outweigh the tax saving (HP §2.C). These are estimates, not advice.",
+        "2026/27 dividend basis (10.75% / 35.75% / 39.35%, FA 2026 s.4). CT 19% to £50,000, 25% above £250,000, marginal relief between, charged after the deductible director salary and the employer NIC on it. Employer NIC is 15% above the £5,000 secondary threshold, with no Employment Allowance for a single-director company. One company assumed, so the £50,000 and £250,000 limits are not divided for associated companies, and employee National Insurance on the director salary is not charged. A doctor's ordinary personal service company CANNOT hold a GMS/PMS contract and company income is not NHS pensionable, so this decision applies to PRIVATE work only. Dividends are taxed again on extraction and that is already in the Ltd figure. A director's loan taken ahead of dividends triggers a s.455 charge at 35.75% on post-6-April-2026 loans. The headline tax gap is modest at typical private-income levels and the real drivers are the annual allowance taper, retained earnings and family planning. This model does not value the NHS pension accrual lost, which can outweigh the tax saving. These are estimates, not advice.",
     };
   },
   chart: {
@@ -206,9 +211,9 @@ export const incorporationPremiumConfig: PremiumToolConfig = {
   explainer: {
     heading: "How this comparison works",
     paragraphs: [
-      "A doctor with private practice income has two main routes: taking the profit directly as a sole trader (income tax on the total of NHS pay plus private profit, plus Class 4 NIC on the private profit at 6% up to £50,270 and 2% above), or channelling private income through a limited company (the company pays corporation tax at 19% on profits up to £50,000, 25% above £250,000, with marginal relief between; you then draw a director salary and the remainder as dividends). The 2026/27 dividend rates are 10.75% (basic), 35.75% (higher) and 39.35% (additional) following FA 2026 s.4.",
+      "A doctor with private practice income has two main routes: taking the profit directly as a sole trader (income tax on the total of NHS pay plus private profit, plus Class 4 NIC on the private profit at 6% up to £50,270 and 2% above), or channelling private income through a limited company (the director salary and the employer NIC on it come off the profit first, the company pays corporation tax at 19% on profits up to £50,000, 25% above £250,000, with marginal relief between, and the remainder is drawn as dividends). The 2026/27 dividend rates are 10.75% (basic), 35.75% (higher) and 39.35% (additional) following FA 2026 s.4.",
       "Your NHS income matters because it uses your personal allowance and basic-rate band first. A consultant already on the higher-rate income tax band from their NHS salary will find that all private profit is taxed at 40% or 45% as a sole trader. A limited company can defer the personal tax charge on retained earnings, but the corporation tax still applies, and dividends are taxed again when you extract them. The headline tax gap at typical private-income levels is often smaller than expected, and the 2026/27 dividend rate increase narrowed it further.",
-      "The most important number is not in this tool: it is the NHS pension accrual you give up on incorporated dividends. A GMS or PMS contract sits with GPs, their partnerships, or a company limited by shares whose shareholders all qualify, never a doctor's ordinary personal service company, and dividends are not NHS pensionable, so incorporated private income does not build NHS benefits. For a doctor with many years ahead, the actuarial value of that pension loss can outweigh the lifetime tax saving from a company structure. The real drivers of the incorporation decision are the annual allowance taper position, the ability to retain earnings in the company, and wider family tax planning. A specialist medical accountant can model the full picture (HP §2.C, §5).",
+      "The most important number is not in this tool: it is the NHS pension accrual you give up on incorporated dividends. A GMS or PMS contract sits with GPs, their partnerships, or a company limited by shares whose shareholders all qualify, never a doctor's ordinary personal service company, and dividends are not NHS pensionable, so incorporated private income does not build NHS benefits. For a doctor with many years ahead, the actuarial value of that pension loss can outweigh the lifetime tax saving from a company structure. The real drivers of the incorporation decision are the annual allowance taper position, the ability to retain earnings in the company, and wider family tax planning. A specialist medical accountant can model the full picture.",
     ],
   },
 };
