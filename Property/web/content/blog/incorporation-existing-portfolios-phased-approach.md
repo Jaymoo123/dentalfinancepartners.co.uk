@@ -1,148 +1,220 @@
 ---
-title: "Incorporation for Existing Portfolios: A Phased Approach Guide"
+title: "Landlord Portfolio Incorporation UK: The Phased Approach"
 slug: "incorporation-existing-portfolios-phased-approach"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach"
 date: "2026-03-29"
-dateModified: "2026-05-30"
+dateModified: "2026-09-01"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Incorporating a Property Portfolio UK: A Phased Approach"
-metaDescription: "How UK landlords move a buy-to-let portfolio into a limited company in phases: CGT, s.162 relief, the 5% SDLT trap and mortgage timing explained."
-metaTitle_prev: "Incorporating a Property Portfolio UK: Phased 3-Year Plan"
-metaDescription_prev: "Phased incorporation lets UK landlords move a buy-to-let portfolio into a limited company over 2-3 years, spreading CGT and SDLT. Step-by-step plan inside."
+metaTitle: "Landlord Portfolio Incorporation UK: Phased Plan"
+metaDescription: "Phasing a portfolio incorporation over 3 tax years uses 3 CGT exempt amounts, not 1. What phasing saves in 2026/27, and what it quietly costs you."
+metaTitle_prev: "Incorporating a Property Portfolio UK: A Phased Approach"
+metaDescription_prev: "How UK landlords move a buy-to-let portfolio into a limited company in phases: CGT, s.162 relief, the 5% SDLT trap and mortgage timing explained."
 altText: "UK property portfolio incorporation planning documents with calculator and keys"
 image: ""
-h1: "Incorporating a Property Portfolio: A Phased Approach for Existing Landlords"
-summary: "Moving an established buy-to-let portfolio into a limited company rarely makes sense as a single-day event. A phased approach lets you sequence disposals, plan around capital gains tax, the 5% SDLT surcharge and refinancing, and decide where Section 162 incorporation relief or a genuine partnership route changes the maths. This guide sets out how the mechanics actually work in 2026/27."
+h1: "Landlord Portfolio Incorporation UK: Why and When to Phase It"
+summary: "Phasing a portfolio incorporation is a strategy decision, not a process. This guide covers when spreading transfers across tax years actually saves money, a worked multi-year capital gains example on 2026/27 rates, what phasing quietly costs you in SDLT and Section 162 relief, how to run a mixed personal and company structure for years, and why the exit has to be planned before the first property moves."
 schema: ""
 faqs:
+  - question: "Should I incorporate my portfolio all at once?"
+    answer: "Usually not on the same day, but the honest answer is that it depends on which relief you are relying on. If you need Section 162 incorporation relief, the whole business has to move as a going concern, so a drip feed of one property a year can forfeit the relief entirely. If you are not claiming it and the gains are large, spreading disposals across tax years uses more annual exempt amounts and more basic-rate band. Decide which route applies before anything moves."
+  - question: "Can I incorporate some properties and not others?"
+    answer: "Yes, if you are not relying on Section 162 relief. Nothing in the tax code obliges you to move an entire portfolio, and many landlords deliberately keep a future main residence, a low-yield property or a low-gain property in personal ownership permanently. The trade-off is that you run two tax regimes side by side for as long as the split lasts. If Section 162 relief is the point of the exercise, a partial transfer is the one thing that breaks it."
+  - question: "How do I move my whole portfolio into a company?"
+    answer: "In outline, you incorporate a company, agree market values for each property, arrange limited company buy-to-let lending to redeem the personal mortgages, transfer legal title, report and pay stamp duty land tax within 14 days, and report and pay any capital gains tax within 60 days of completion where tax is due. The mechanical sequence and the conveyancing detail are covered in full on our step-by-step portfolio incorporation guide."
   - question: "How long should a phased incorporation take?"
-    answer: "There is no fixed period. Many landlords spread transfers across two to four tax years to use more than one annual CGT exempt amount and to manage refinancing around mortgage product expiry. Others move faster where corporation tax treatment of finance costs is the priority. The right pace is driven by your gains profile, mortgage timing and cash flow, not by a rule of thumb."
-  - question: "Does incorporation relief remove the CGT on transferring my portfolio?"
-    answer: "Section 162 TCGA 1992 incorporation relief can defer the gain rather than charge it on transfer, but only where you transfer the whole of a genuine business as a going concern, with all its assets other than cash, wholly or partly in exchange for shares. HMRC looks for evidence that the lettings amount to a business through the degree of active management, applying the approach in Ramsay v HMRC. Passive holding of one or two let properties usually does not qualify. The relief defers the gain into the base cost of your shares; it does not erase it."
+    answer: "Two to four tax years is the common range, because that is what it takes to use several annual exempt amounts and to line transfers up with mortgage product expiry dates. There is no statutory period and no advantage to a fixed calendar. The pace is set by three things: your gains profile, when your fixed rate products end, and how much capital gains tax and stamp duty you can fund without selling something."
+  - question: "Does phasing reduce the stamp duty land tax on incorporation?"
+    answer: "No. Each transfer to your connected company is charged on market value under section 53 of the Finance Act 2003, with the 5% additional dwellings surcharge on top, whether the transfers happen on one day or across five years. Phasing can actually increase the total charge, because moving six or more dwellings in a single transaction triggers automatic non-residential treatment under section 116(7) FA 2003, and splitting the portfolio up forfeits that."
+  - question: "What is the cheapest way to incorporate a property portfolio?"
+    answer: "Cost minimisation here is a sequencing decision, not a shopping decision. Rank the three costs by size for your portfolio: stamp duty is usually the largest and phasing does not reduce it, capital gains tax is next and phasing reduces it only at the margin, and professional fees actually rise with each phase. So the cheapest plan is the one that protects your largest relief first, then spreads the gains only as far as doing so does not disturb it."
+  - question: "Can I incorporate one property first and see how it goes?"
+    answer: "Yes, and it is a reasonable way to test company ownership before committing. You learn the lending criteria, the accounts cycle, the confirmation statement at £50 a year and what extracting profit actually feels like. Two cautions: a single transfer will not qualify for Section 162 relief, so budget for the capital gains tax in full, and the transfer costs are not recoverable if you decide against continuing."
   - question: "Can I claim incorporation relief if I phase the transfer over several years?"
-    answer: "This is the central tension of a phased approach. Section 162 relief requires the whole business to be transferred as a going concern, so a deliberate piecemeal transfer of one property a year can put the relief at risk because each transfer may not represent the whole business. Phasing is usually combined with a one-off transfer of the business once it qualifies, or structured around a genuine partnership, rather than dripping properties in individually. Take advice on sequencing before you transfer the first property."
-  - question: "Do I pay stamp duty land tax on transferring property to my own company?"
-    answer: "Yes, in most cases. A transfer to a connected company is treated as taking place at market value for SDLT under section 53 FA 2003, and the 5% additional dwellings surcharge applies on top of standard residential rates in England and Northern Ireland. There is no general relief simply because you own the company. The main exceptions are a genuine pre-existing partnership claiming relief under Schedule 15 FA 2003, or a single bulk transfer of six or more dwellings, which is automatically treated as non-residential under section 116(7) FA 2003."
-  - question: "What happened to Multiple Dwellings Relief for portfolio transfers?"
-    answer: "Multiple Dwellings Relief was abolished for transactions with an effective date on or after 1 June 2024 under Finance (No.2) Act 2024, with anti-forestalling rules to prevent late claims. It can no longer reduce the SDLT on incorporating a portfolio. The remaining portfolio-friendly route in the SDLT code is the six-or-more-dwellings rule, which applies non-residential rates and removes the surcharge."
-  - question: "Can a genuine partnership reduce the SDLT on incorporation?"
-    answer: "Where the portfolio is already held in a real, pre-existing letting partnership, with partnership tax returns, partnership accounts and joint borrowing, the chargeable consideration on transfer into a connected company can be reduced under the sum of the lower proportions formula in Schedule 15 FA 2003. HMRC scrutinises these arrangements closely and will challenge a partnership created shortly before incorporation under the section 75A anti-avoidance rule. It is not a quick fix for a husband-and-wife joint-ownership portfolio."
-  - question: "Should I incorporate the highest-gain or lowest-gain properties first?"
-    answer: "If you are phasing transfers as individual disposals rather than relying on a single whole-business incorporation, lower-gain properties first let you test the company structure with a smaller CGT exposure, while higher-yielding properties first bring more income inside corporation tax sooner. Many landlords sequence around mortgage product expiry and void periods so that legal and refinancing work coincides with points they would have refinanced anyway."
-  - question: "What happens to my buy-to-let mortgages when I transfer to a company?"
-    answer: "Personal buy-to-let mortgages do not transfer to the company. Each property usually has to be redeemed and replaced with a limited-company buy-to-let facility, which typically carries different lending criteria, deposit requirements and rates than personal lending. Refinancing capacity, early repayment charges and product expiry dates are often the practical constraint that dictates the order and pace of a phased incorporation."
-  - question: "Will I pay stamp duty land tax twice if I sell out of the company later?"
-    answer: "Property held inside a company can be sold in two ways: the company sells the property (an asset sale, with SDLT for the buyer and corporation tax on any gain inside the company), or the shareholders sell the company shares (a share sale, with no SDLT on land but stamp duty on shares and CGT on the share disposal). The risk of an effective double charge arises where you transfer in, pay the surcharge, then later extract a property back out personally, paying again. Plan the eventual exit before you incorporate, not after."
-  - question: "Does Section 24 still apply during the transition period?"
-    answer: "Yes. Section 24 of the Finance (No.2) Act 2015 is fully in force. For properties still held personally, finance costs are not deducted from rental profit; instead a basic-rate tax credit applies, given at 20% for 2026/27 and rising to 22% from 2027/28 under Finance Act 2026. Properties already inside the company deduct mortgage interest in full before corporation tax, because Section 24 does not apply to companies. During a phased transition you will be running both regimes at once."
-  - question: "How does Making Tax Digital for Income Tax affect a phased incorporation?"
-    answer: "While properties remain in personal ownership, your rental income counts towards the Making Tax Digital for Income Tax thresholds: 6 April 2026 for combined qualifying income over 50,000 pounds, 6 April 2027 over 30,000 pounds, and 6 April 2028 over 20,000 pounds. As properties move into the company they fall under company filing instead, which can reduce your personal qualifying income over the phasing period. Companies are not within Making Tax Digital for Income Tax."
+    answer: "This is the central tension. Section 162 TCGA 1992 requires the whole of the business to be transferred as a going concern, so a deliberate piecemeal transfer of one property a year usually puts the relief at risk because no single transfer represents the whole business. For transfers on or after 6 April 2026 the relief must also be positively claimed. Landlords who want both relief and a managed transition normally phase the surrounding work, not the disposals."
+  - question: "How much capital gains tax does spreading disposals actually save?"
+    answer: "Less than most landlords expect. Each extra tax year buys one more annual exempt amount, currently £3,000 per person, worth £720 at the 24% residential rate. The larger saving comes from any unused basic-rate band, where gains fall at 18% instead of 24%. A landlord with £20,000 of headroom saves £1,200 per additional year. For a jointly owned portfolio both figures double."
   - question: "Can I keep some properties in my own name permanently?"
-    answer: "Yes. There is no requirement to incorporate everything. Many landlords run a mixed structure indefinitely, holding lower-gain or future-main-residence properties personally and income-generating stock in the company. The trade-off is ongoing complexity: two sets of records, two tax regimes and careful planning around how profits are extracted from the company."
-  - question: "Is incorporation worth it for a small portfolio?"
-    answer: "It depends on your marginal income tax rate, gearing, how long you intend to hold and your succession plans. The Section 24 finance-cost restriction bites hardest on higher and additional-rate landlords with significant mortgage interest, which is where company ownership most often improves the after-tax position. Against that you weigh the CGT on transfer, the 5% SDLT surcharge, refinancing costs and the cost of extracting profit later. A modelled comparison for your specific numbers is the only reliable answer."
-  - question: "Do I need a property accountant to handle a phased incorporation?"
-    answer: "A phased incorporation touches CGT, SDLT, corporation tax, refinancing, Section 24 and the eventual extraction strategy at the same time, often across more than one tax year. The mistakes that cost most, such as triggering the surcharge unnecessarily, losing incorporation relief through piecemeal transfers, or creating a paper partnership that fails the genuine-business test, happen at the planning stage. Specialist input before the first transfer is where it adds the most value."
+    answer: "Yes. There is no requirement to incorporate everything, and a permanent mixed structure is a legitimate long term position rather than an unfinished job. Landlords commonly keep a property they intend to occupy, a low-gain property where the transfer cost outweighs the benefit, or a property whose lending will not refinance inside a company. The cost is ongoing: two sets of records, two tax regimes and two disposal routes at exit."
+  - question: "Does Section 24 still apply while I am part way through?"
+    answer: "Yes, to everything still in your own name. Finance costs on personally held property are not deducted from profit, and instead attract a basic-rate tax credit given at 20% for 2026/27, rising to the new property basic rate of 22% from 6 April 2027 under Finance Act 2026. Property already inside the company deducts interest in full before corporation tax. During a phased transition you run both treatments at once."
+  - question: "Will I pay stamp duty land tax twice if I take a property back out later?"
+    answer: "You can, and it is the most expensive mistake in this area. Transferring in triggers stamp duty at market value plus the 5% surcharge. Taking the property back into personal ownership later is a further chargeable transaction, and the extraction is also taxed as a distribution. This is why the exit route, whether asset sale, share sale, or passing shares down, should be decided before the first property is transferred rather than after."
+  - question: "Do I need specialist portfolio incorporation guidance or services?"
+    answer: "The decisions that carry the most cost all happen before anything moves: whether the lettings amount to a business, whether to phase disposals or transfer the whole business in one step, whether a genuine partnership route is realistically open, and how profit will eventually come out. Those are modelling questions on your actual numbers, not rules of thumb. Once the first transfer completes, most of the planning options have already closed."
 ---
 
-<p>Many established landlords reach the same crossroads. <a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24</a> has eroded the after-tax return on a geared personal portfolio, and a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> looks more attractive. The problem is the cost of getting there. Transferring several properties at once can trigger a large capital gains tax bill, a 5% stamp duty land tax surcharge on each property, and a wave of refinancing all in the same window. A phased approach is how landlords manage that transition deliberately rather than absorbing it as a single shock. This guide explains how the mechanics actually work in 2026/27, where the genuine reliefs sit, and where the common traps catch people out.</p>
+<p>The question landlords with an established portfolio usually ask is not whether to incorporate. It is whether to do it in one movement or over several years. That is a strategy question, and it has a different answer for a geared five property portfolio with large gains than it does for a lightly geared pair of flats bought recently.</p>
 
-<p>Phasing is not a single technique. It can mean spreading individual disposals across tax years, sequencing refinancing around mortgage expiry, or qualifying the lettings as a business first and then making one clean incorporation. Which version is right depends entirely on your gains profile, your gearing and whether the portfolio is genuinely run as a business. Getting the order wrong can forfeit relief you would otherwise have had, so the planning matters more than the speed.</p>
+<p>Phasing gets recommended almost by reflex, usually on the strength of the capital gains argument alone. That argument is real but smaller than it sounds, and it sits alongside a stamp duty argument that frequently points the other way. What follows works through both, with the multi-year arithmetic on 2026/27 rates, then covers the part nobody plans for: running two structures side by side for years, and getting out again. The mechanical sequence of transferring a portfolio is set out separately in our <a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">step-by-step portfolio incorporation guide</a>.</p>
 
-<h2>Why a Phased Approach Makes Sense</h2>
-<p>Incorporating an entire portfolio in a single transaction concentrates three separate tax and finance events into one moment. Each property transfer is a disposal for capital gains tax, treated as taking place at market value because you and the company are connected persons. Each transfer is also a chargeable transaction for stamp duty land tax, again at market value under section 53 of the Finance Act 2003, with the 5% additional dwellings surcharge on top. And each property usually needs new lending, because personal buy-to-let mortgages do not move across to a company.</p>
-<p>A phased approach lets you separate those events and deal with them at points that suit your circumstances. Spreading transfers across tax years can mean using more than one annual exempt amount for CGT. Sequencing around mortgage product expiry avoids paying early repayment charges to refinance ahead of schedule. And testing the company structure with part of the portfolio first reduces the risk of committing everything before you have lived with company ownership.</p>
-<p>This approach tends to suit landlords who:</p>
+<h2>Should I incorporate my portfolio all at once?</h2>
+
+<p>The short answer for most landlords is no, not on one day, but the reason matters more than the answer. Incorporating everything at once concentrates three separate events into a single window:</p>
+
 <ul>
-<li>Own several properties with meaningful, varied capital gains</li>
-<li>Are geared, so Section 24 is materially reducing their personal after-tax return</li>
-<li>Have mortgage products expiring at different times across the portfolio</li>
-<li>Want to keep some properties in personal ownership, for example a future main residence</li>
-<li>Need to manage the cash flow impact of CGT and SDLT rather than fund it all at once</li>
+<li>A capital gains disposal on every property, deemed to happen at market value because you and your company are connected persons, with the tax due within 60 days of completion where tax arises.</li>
+<li>A chargeable stamp duty transaction on every property, again at market value under <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/53">section 53 of the Finance Act 2003</a>, with the 5% additional dwellings surcharge on top.</li>
+<li>A complete refinance of the portfolio, because personal buy-to-let mortgages do not move across to a company.</li>
 </ul>
 
-<h2>The CGT Position on Transfer</h2>
-<p>When you transfer a property to your own company, capital gains tax is the first cost to model. Because you and the company are connected, the disposal is treated as taking place at the property's market value, not at any lower figure you might choose. The gain is the difference between that market value and your base cost, after deducting allowable acquisition and improvement costs.</p>
-<p>For 2026/27 the residential property CGT rates are 18% for gains falling within the basic-rate band and 24% for gains above it, following the Autumn Budget 2024 change. The annual exempt amount is 3,000 pounds per individual, far below the 6,000 pounds that applied in 2023/24 and the 12,300 pounds before that. A jointly owned property gives each owner their own annual exempt amount, so a couple has 6,000 pounds of combined exemption per year. Where capital gains tax is due, the disposal must be reported and the tax paid within 60 days of completion through HMRC's UK property service.</p>
+<p>Doing all three simultaneously is a large cash event and a large execution risk. Spreading them is what phasing is for.</p>
 
-<h3>Worked Example: Spreading Disposals Across Years</h3>
-<p>Consider a higher-rate taxpayer who owns four let properties personally, each standing at a gain of roughly 40,000 pounds. Transferring all four in one tax year produces a 160,000 pound gain in that year, against a single 3,000 pound annual exempt amount. Transferring one property a year instead lets the landlord set the annual exempt amount against each year's smaller gain. The total gain is the same, but four annual exemptions are used instead of one, and the timing of the tax outflow is spread to match refinancing.</p>
-<p>The figures above are illustrative round numbers to show the mechanism, not a quoted outcome. The size of the benefit from spreading depends on whether the gains keep the landlord within the basic-rate band in any year (unlikely for most higher-rate landlords once rental and other income is counted) and on whether incorporation relief is in play, which changes the analysis entirely.</p>
+<p>The counterweight is that one specific relief pushes hard in the opposite direction. Section 162 TCGA 1992 incorporation relief requires the <em>whole</em> business to be transferred as a going concern. If that relief is what makes your numbers work, phasing the disposals is the one thing that can destroy it. So the first decision is not the pace. It is which route you are on.</p>
 
-<h2>Section 162 Incorporation Relief: The Key Question</h2>
-<p>The single most important factor in any portfolio incorporation is whether <strong>Section 162 incorporation relief</strong> is available. Under section 162 of the Taxation of Chargeable Gains Act 1992, where a person transfers a business as a going concern to a company, together with the whole of the assets of the business other than cash, wholly or partly in exchange for shares, the gain is not charged on transfer. Instead it is rolled into the base cost of the shares the company issues, deferring the CGT until the shares are eventually disposed of.</p>
-<p>For transfers on or after 6 April 2026 the relief is no longer automatic: Finance Act 2026 s.39 inserted a claim requirement into section 162, so it applies only if you claim it, on or before the first anniversary of the 31 January following the tax year of the transfer (a 2026/27 transfer must be claimed by 31 January 2029). The same section repealed the old section 162A election to disapply the relief, so the position is now claim or no relief. The conditions are demanding for landlords in any event. HMRC's position is that residential letting must amount to a <em>business</em>, not merely passive investment, and the leading authority is <em>Ramsay v HMRC</em> [2013] UKUT 226 (TCC), where a portfolio under genuinely active management qualified. The degree of activity matters: time spent, the number of properties, active management rather than handing everything to an agent. A handful of passively held lets typically will not qualify.</p>
-<p>This is where phasing collides with relief. Section 162 requires the <em>whole</em> business to be transferred as a going concern. A deliberate strategy of moving one property a year as a string of separate disposals can defeat the relief, because no single transfer represents the whole business and each individual transfer is simply a connected-party disposal at market value. Landlords who want both incorporation relief and a managed transition usually achieve it by transferring the whole qualifying business in one step once it qualifies, and phasing the surrounding work (refinancing, restructuring, profit extraction) rather than phasing the disposals themselves. If incorporation relief is your goal, decide the structure before you transfer the first property, not after.</p>
-<p>It is also worth knowing that section 162 defers the CGT but creates a credit balance on the director's loan account equal to the value transferred for shares, which can later be drawn down tax-free as the company repays it. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to buy-to-let limited companies</a> covers how that interacts with profit extraction over time.</p>
+<h2>Incorporating a property portfolio into a business: the test that decides everything</h2>
 
-<h2>Stamp Duty Land Tax on Each Transfer</h2>
-<p>SDLT is the cost that surprises most landlords, because incorporation relief deals with the CGT but does nothing for stamp duty. Each transfer of a residential property to a connected company is a chargeable transaction at market value, and the 5% additional dwellings surcharge applies on top of the standard residential rates in England and Northern Ireland. The surcharge rose from 3% to 5% for transactions on or after 31 October 2024 (announced at the Autumn Budget 2024 and enacted in Finance Act 2025), so older guidance quoting a 3% figure is out of date.</p>
-<p>The standard residential rates with the surcharge, for England and Northern Ireland from 1 April 2025, are set out below.</p>
+<p>Everything downstream turns on whether your lettings amount to a business rather than passive investment. HMRC looks for genuinely active management: the number of properties, the hours actually spent, whether the work is done rather than handed wholesale to an agent. <em>Ramsay v HMRC</em> [2013] UKUT 226 (TCC) is the leading authority, and a portfolio under real active management qualified there.</p>
+
+<p>If the answer is yes, Section 162 relief is potentially available and the sensible plan is usually one clean whole-business transfer, with the surrounding work phased around it. Note that for transfers on or after 6 April 2026 the relief must be positively claimed under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/162">section 162 TCGA 1992</a> as amended by Finance Act 2026, by the first anniversary of the 31 January following the tax year of transfer. A 2026/27 transfer must be claimed by 31 January 2029. The old section 162A election to disapply the relief has been repealed, so the position is now claim or no relief.</p>
+
+<p>If the answer is no, the relief is off the table, every transfer is simply a connected-party disposal at market value, and phasing across tax years becomes the main lever you have. We cover the statutory test in depth on our <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">Section 162 incorporation relief guide</a>, and the practical outcome on <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporating rental property without a CGT charge</a>.</p>
+
+<h2>Phased incorporation of a rental portfolio: the trade-offs side by side</h2>
+
 <table>
 <thead>
-<tr><th>Portion of price</th><th>Standard rate</th><th>Rate including 5% surcharge</th></tr>
+<tr><th>Factor</th><th>Single bulk transfer</th><th>Phased over 2 to 4 years</th></tr>
 </thead>
 <tbody>
-<tr><td>Up to 125,000 pounds</td><td>0%</td><td>5%</td></tr>
-<tr><td>125,001 to 250,000 pounds</td><td>2%</td><td>7%</td></tr>
-<tr><td>250,001 to 925,000 pounds</td><td>5%</td><td>10%</td></tr>
-<tr><td>925,001 to 1,500,000 pounds</td><td>10%</td><td>15%</td></tr>
-<tr><td>Above 1,500,000 pounds</td><td>12%</td><td>17%</td></tr>
+<tr><td>Annual exempt amounts used</td><td>One (£3,000 per owner)</td><td>One per tax year used</td></tr>
+<tr><td>Basic rate band at 18%</td><td>One year's headroom only</td><td>Fresh headroom each year</td></tr>
+<tr><td>Section 162 relief</td><td>Available if the business test is met</td><td>Usually forfeited by piecemeal transfers</td></tr>
+<tr><td>Six dwellings rule (s.116(7) FA 2003)</td><td>Available if 6 or more move in one transaction</td><td>Forfeited once the portfolio is split</td></tr>
+<tr><td>Total SDLT</td><td>Same or lower</td><td>Same or higher</td></tr>
+<tr><td>Legal and valuation fees</td><td>One coordinated exercise</td><td>Repeated each phase</td></tr>
+<tr><td>Refinancing</td><td>Whole portfolio at once, ERCs likely</td><td>Timed to product expiry, ERCs avoidable</td></tr>
+<tr><td>Cash flow</td><td>One large outflow</td><td>Spread across years</td></tr>
+<tr><td>Ability to change your mind</td><td>None after completion</td><td>Retained until the last phase</td></tr>
 </tbody>
 </table>
-<p>Crucially, <strong>Multiple Dwellings Relief was abolished</strong> for transactions with an effective date on or after 1 June 2024 under Finance (No.2) Act 2024, with anti-forestalling rules to block late claims. Any guidance suggesting you can use MDR to soften the SDLT on a portfolio transfer is wrong for current transactions. There are, however, two routes within the SDLT code that genuinely help in the right circumstances.</p>
 
-<h3>The Six-Dwellings Rule</h3>
-<p>Under section 116(7) of the Finance Act 2003, where a single transaction involves the transfer of six or more separate dwellings, those dwellings are automatically treated as non-residential property for SDLT. Non-residential rates then apply (0% up to 150,000 pounds, 2% from 150,001 to 250,000 pounds, and 5% above 250,000 pounds), and the additional dwellings surcharge does not apply at all. This is a statutory deeming rather than an election, so no claim is required, but it depends on six or more dwellings moving in a single bulk transaction. For a larger portfolio incorporated in one step, this can change the SDLT analysis materially. Our guide to the <a href="/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election">six-dwellings rule for portfolio transfers</a> sets out how it works in practice.</p>
+<p>Read down that table and the pattern is clear. Phasing wins on capital gains tax, cash flow and optionality. Bulk transfer wins on stamp duty, professional fees and relief availability. Which set of columns matters more depends entirely on the size of your gains relative to the size of your stamp duty bill.</p>
 
-<h3>The Genuine Partnership Route</h3>
-<p>Where a portfolio is already held in a real, pre-existing letting partnership, the chargeable consideration on transfer into a connected company can be reduced, potentially to nil, under the sum of the lower proportions formula in Schedule 15 of the Finance Act 2003. This is the route specialist advisers most often discuss for serious portfolio landlords, but it carries strict conditions. The partnership must be genuine and pre-existing, with partnership tax returns filed under SA800, partnership accounts and joint borrowing. HMRC will challenge a partnership formed shortly before incorporation under the anti-avoidance rule in section 75A of the Finance Act 2003, treating it as a contrivance to access the relief. A husband-and-wife joint-ownership arrangement is not automatically a partnership for this purpose. Our detailed analysis of the <a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Schedule 15 partnership SDLT relief and the sum of the lower proportions</a> explains the mechanics and the genuine-business threshold.</p>
+<h2>Worked example: spreading gains across three tax years</h2>
 
-<h2>The Income Tax Picture During the Transition</h2>
-<p>During a phased incorporation you run two tax regimes side by side, and understanding the difference is what makes the case for incorporating in the first place.</p>
-<p>For the properties still held personally, <strong>Section 24</strong> applies in full. Finance costs are not deducted from rental profit; instead a basic-rate tax credit is given, at 20% for 2026/27. From 2027/28, under Finance Act 2026, England and Northern Ireland move to separate property income rates of 22% basic, 42% higher and 47% additional, and the Section 24 reducer is given at the new 22% property basic rate rather than staying frozen at 20%. For a basic-rate landlord the reducer matches the rate, so no new wedge opens; for higher and additional-rate landlords the reducer rises from 20% to 22% but still sits far below their marginal rate, leaving most of the finance-cost restriction in place. Our pillar on the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates</a> sets out the full position.</p>
-<p>For the properties already inside the company, Section 24 does not apply at all. The company deducts mortgage interest in full as a business expense before corporation tax, which is precisely why geared higher-rate landlords look at incorporation. The transition period is therefore the point at which you can see both treatments running on the same portfolio.</p>
+<p>Take a higher-rate landlord with employment income of £70,000 and a geared five-property portfolio held in their sole name, none of it ever a main residence. Gains, after allowable acquisition and improvement costs, are £22,000, £35,000, £48,000, £60,000 and £85,000. Total gains £250,000. The lettings are agent-managed and would not pass the business test, so Section 162 relief is not in play.</p>
 
-<h2>Refinancing: The Practical Constraint</h2>
-<p>Tax usually decides whether to incorporate; finance usually decides the pace. Personal buy-to-let mortgages do not transfer to a company. Each property has to be redeemed and replaced with a limited-company buy-to-let facility, and company lending typically applies different criteria, deposit levels and rates than personal lending. Three points shape a phased plan in practice:</p>
+<p>Residential capital gains rates for 2026/27 are 18% within the basic-rate band and 24% above it. The annual exempt amount is £3,000. With £70,000 of income there is no basic rate headroom, so every pound of gain falls at 24%.</p>
+
+<h3>Option A: everything in 2026/27</h3>
+<p>Gains £250,000, less one annual exempt amount of £3,000, leaves £247,000 taxable at 24%. Capital gains tax is <strong>£59,280</strong>, payable within 60 days of the completions.</p>
+
+<h3>Option B: three tax years</h3>
+<table>
+<thead>
+<tr><th>Tax year</th><th>Properties</th><th>Gains</th><th>Less AEA</th><th>CGT at 24%</th></tr>
+</thead>
+<tbody>
+<tr><td>2026/27</td><td>1 and 2</td><td>£57,000</td><td>£54,000</td><td>£12,960</td></tr>
+<tr><td>2027/28</td><td>3 and 4</td><td>£108,000</td><td>£105,000</td><td>£25,200</td></tr>
+<tr><td>2028/29</td><td>5</td><td>£85,000</td><td>£82,000</td><td>£19,680</td></tr>
+<tr><td><strong>Total</strong></td><td></td><td><strong>£250,000</strong></td><td><strong>£241,000</strong></td><td><strong>£57,840</strong></td></tr>
+</tbody>
+</table>
+
+<p>The saving is <strong>£1,440</strong>. That is exactly two extra annual exempt amounts at 24%, and nothing more. It is a real saving, but on a £250,000 gain it is under 2.5% of the bill. Anyone promising that phasing transforms a capital gains position on these facts is overselling it.</p>
+
+<h3>What actually moves the number</h3>
+
+<p>Two variations change the picture materially.</p>
+
+<p><strong>Unused basic-rate band.</strong> Suppose the same portfolio belongs to a landlord whose taxable income is £30,000 rather than £70,000. After the personal allowance, there is roughly £20,270 of basic-rate band spare each year, so that slice of gain is taxed at 18% instead of 24%, saving 6%, or about £1,216 per year. Across three tax years that is two additional slices, worth roughly £2,432, on top of the £1,440 of extra exempt amounts. Total saving close to £3,900. Note that a large gain in any one year eats the band itself, which is precisely why concentrating them wastes it.</p>
+
+<p><strong>Joint ownership.</strong> A jointly owned portfolio gives each owner an annual exempt amount and each owner their own basic-rate band. Both figures above double. Two extra tax years for a couple is £12,000 of extra exemption, worth £2,880 at 24%, before any band effect.</p>
+
+<p>The figures here are illustrative and rounded to show the mechanism. They are not a quotation, and they ignore the stamp duty side entirely, which is where the analysis usually turns.</p>
+
+<aside><p><strong>Worth modelling before you commit.</strong> The difference between a phased and a bulk incorporation on a real portfolio is usually five figures, and it moves in either direction depending on gains, gearing and dwelling count. Use the enquiry form below with your property count and rough gain per property, and we will tell you which side of the line you fall on.</p></aside>
+
+<h2>Portfolio incorporation cost UK: where phasing costs you money</h2>
+
+<p>Phasing is often described as the cheaper route. On the whole cost stack, it frequently is not.</p>
+
+<p><strong>Stamp duty is unchanged by phasing, and can be made worse by it.</strong> Every transfer to your connected company is charged on market value with the 5% additional dwellings surcharge on top, regardless of timing. Worse, <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/116">section 116(7) FA 2003</a> automatically treats six or more dwellings transferred in a single transaction as non-residential, giving 0% up to £150,000, 2% to £250,000 and 5% above, with no surcharge at all. That is a statutory deeming, not an election. Split the portfolio into annual tranches of two or three and you lose it. For a landlord with six or more properties this single point usually outweighs every capital gains argument for phasing. The full mechanics, including the genuine partnership route under <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/15">Schedule 15 FA 2003</a>, sit on our <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation guide</a> and the <a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Schedule 15 sum of the lower proportions</a> analysis. For the charge on a single property transfer, see <a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">the SDLT cost of transferring property to a company</a>. Multiple Dwellings Relief is gone, abolished for transactions on or after 1 June 2024, so any guidance suggesting it softens a portfolio transfer is out of date.</p>
+
+<p><strong>Professional costs repeat.</strong> Conveyancing, valuations, lender legal fees and accountancy are largely per transaction. Five separate phases means five rounds of them, not one discounted bundle.</p>
+
+<p><strong>Company running costs start at phase one and never stop.</strong> Incorporation at Companies House is £100 online, or £124 on paper, and the confirmation statement is £50 a year online. Those are small, but statutory accounts, a corporation tax return and bookkeeping run from the moment the first property lands, even if the company only holds one asset for three years. Our <a href="/blog/incorporation-and-company-structures/spv-company-formation-cost-uk">SPV formation cost breakdown</a> sets out the full running cost picture.</p>
+
+<p>So the cheapest way to incorporate a portfolio is usually not the slowest. It is the one that preserves whichever stamp duty route is open to you, then spreads the capital gains only to the extent it does not disturb that.</p>
+
+<h2>Can I incorporate some properties and not others?</h2>
+
+<p>Yes, provided Section 162 relief is not the point of the exercise. Nothing requires a complete portfolio move, and a deliberate partial incorporation is often the right long-term answer rather than an unfinished one. Properties that commonly stay in personal ownership include:</p>
+
 <ul>
-<li><strong>Early repayment charges.</strong> Redeeming a fixed-rate personal mortgage before its term ends can trigger an early repayment charge. Sequencing transfers to coincide with product expiry avoids paying to refinance ahead of schedule.</li>
-<li><strong>Lending capacity.</strong> Limited-company lending criteria can differ from personal criteria, and not every property or every landlord will refinance on the same terms inside a company. This can dictate which properties move first.</li>
-<li><strong>Personal guarantees.</strong> Most limited-company buy-to-let lending requires personal guarantees from the directors, so incorporation does not remove personal exposure to the borrowing.</li>
+<li>A property you expect to occupy yourself later, where private residence relief would be lost inside a company.</li>
+<li>A low-gain or recently purchased property, where stamp duty on the transfer swamps any income tax benefit.</li>
+<li>A property that will not refinance on limited company terms, whether because of construction type, tenancy type or lending appetite.</li>
+<li>Anything held jointly with someone who does not want to be a shareholder.</li>
 </ul>
-<p>Because of all this, the natural rhythm of a phased incorporation is often to move properties as their mortgage products expire, rather than on a fixed annual calendar. The <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">timing of incorporation</a> is frequently driven as much by the finance window as by the tax year.</p>
 
-<h2>Running a Mixed Personal and Company Structure</h2>
-<p>A phased incorporation means living with a mixed structure for a period, and some landlords keep one permanently. That brings ongoing administrative weight.</p>
-<h3>Records and Compliance</h3>
-<p>You maintain personal rental records for the properties still held individually and statutory company accounts for those inside the company. While properties remain in personal ownership, your rental income counts towards the Making Tax Digital for Income Tax thresholds. MTD for Income Tax is being introduced from 6 April 2026 for those with combined qualifying income over 50,000 pounds, from 6 April 2027 over 30,000 pounds, and from 6 April 2028 over 20,000 pounds. As properties move into the company, they leave your personal qualifying income, which can change your MTD position over the phasing period. Companies themselves are not within MTD for Income Tax. Our explainer on the <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">MTD qualifying income test</a> covers how the threshold is measured.</p>
-<h3>Two Tax Returns, Two Regimes</h3>
-<p>Expect more complex filing during transition years: personal self-assessment for the personally held properties under Section 24, and company corporation tax returns for the incorporated properties with full interest relief. The two regimes tax the same kind of income very differently, which is the whole point, but it doubles the compliance work for the duration.</p>
-<h3>Extracting Profit From the Company</h3>
-<p>Money inside the company is not yet money in your hand. Profit comes out through a director's loan account repayment where an incorporation-relief credit balance exists (tax-free until exhausted), then dividends and salary, each with its own tax treatment. Planning extraction is part of the incorporation decision, not an afterthought, and the credit balance created by Section 162 relief is a valuable but finite resource.</p>
+<p>The single caution is that a partial transfer is fundamentally incompatible with Section 162, because the relief is all-or-nothing on the business as a going concern. If you want relief on the bulk and to retain one property, that property generally has to be outside the letting business before the transfer, not carved out at the point of transfer.</p>
 
-<h2>Planning the Eventual Exit Before You Incorporate</h2>
-<p>One trap deserves its own attention. Property held in a company can be sold two ways: the company sells the property as an asset sale, or the shareholders sell the company shares. An asset sale brings SDLT for the buyer and corporation tax on any gain inside the company, with a further tax cost to extract the proceeds to you personally. A share sale avoids SDLT on the land but is a CGT disposal of your shares. The expensive mistake is to transfer in, pay the 5% surcharge, then later pull a property back out into personal ownership and pay tax again. Decide how you expect to exit, by sale, by passing shares to the next generation, or by long-term holding, before you transfer the first property. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to capital gains tax on property</a> covers the disposal side in depth.</p>
+<h2>Running a mixed personal and company structure long term</h2>
 
-<h2>How a Phased Incorporation Typically Sequences</h2>
-<p>There is no single correct sequence, but a considered plan usually works through the following before any property moves:</p>
+<p>Whether by design or as a transition state, most phasing landlords run both structures for years. The realistic picture over a five year window looks like this.</p>
+
+<table>
+<thead>
+<tr><th>Year</th><th>Personal side</th><th>Company side</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>4 properties, Section 24 restriction, self-assessment, MTD in scope</td><td>Company formed, 1 property, first short accounting period</td></tr>
+<tr><td>2</td><td>4 properties, unchanged</td><td>1 property, first full accounts, no distributable profit yet</td></tr>
+<tr><td>3</td><td>2 properties, personal qualifying income falling</td><td>3 properties, interest fully deductible, retained profit building</td></tr>
+<tr><td>4</td><td>1 property retained permanently</td><td>4 properties, first dividends considered</td></tr>
+<tr><td>5</td><td>1 property, simple return</td><td>4 properties, extraction policy settled</td></tr>
+</tbody>
+</table>
+
+<h3>Two regimes, two sets of records</h3>
+
+<p>The personally held properties file through self-assessment with the Section 24 restriction applying in full. The company files statutory accounts and a corporation tax return, deducting mortgage interest in full before tax. Corporation tax runs at 19% on profits up to £50,000, 25% above £250,000, with marginal relief producing an effective 26.5% on profits in between, which is where a mid-sized portfolio company usually sits.</p>
+
+<h3>Making Tax Digital moves as the portfolio moves</h3>
+
+<p>While properties remain personal, their rental income counts towards your Making Tax Digital for Income Tax qualifying income: 6 April 2026 for combined qualifying income above £50,000, 6 April 2027 above £30,000, and 6 April 2028 above £20,000. Companies are not within MTD for Income Tax at all, so each phase moves income out of the personal test. A landlord phasing through 2027 and 2028 can find themselves crossing a threshold in one direction while their transfers move them back the other way. Our explainer on the <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">MTD qualifying income test</a> covers how the measure works.</p>
+
+<h3>Money in the company is not money in your hand</h3>
+
+<p>This is the point most transition plans underweight. Rental profit taxed at 19% or 25% inside the company still has to come out. Dividends for 2026/27 are taxed at 10.75% basic, 35.75% higher and 39.35% additional, after a £500 dividend allowance. Where a Section 162 incorporation created a credit balance on the director's loan account, repayments of that balance come out without further tax until it is exhausted, which is a valuable but strictly finite resource. A mixed structure where the company retains profit and the personal side funds your living costs is often more tax efficient than drawing from both, and that only works if the personal properties are the ones producing spendable income.</p>
+
+<h2>Incorporating a property portfolio UK: the income tax picture in transition</h2>
+
+<p>For properties still held personally, Section 24 applies in full: finance costs are not deducted from profit, and a basic-rate tax credit is given instead, at 20% for 2026/27. From 6 April 2027, Finance Act 2026 introduces separate property income rates of 22% basic, 42% higher and 47% additional for England, Wales and Northern Ireland, and gives the Section 24 reducer at the new 22% property basic rate rather than freezing it at 20%.</p>
+
+<p>The practical consequence is worth stating precisely, because it is widely misreported. A basic-rate landlord sees the reducer track their rate, so no new wedge opens. A higher or additional-rate landlord sees the reducer improve from 20% to 22%, but the gap to their 42% or 47% rate is unchanged from the current 20 and 25 point gaps. The finance cost restriction does not get worse in 2027/28, but it does not go away either, and that gap is the whole reason geared landlords look at companies. Our guide to the <a href="/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk">2027 property income tax rates</a> sets out the detail.</p>
+
+<h2>Refinancing: the constraint that sets the pace</h2>
+
+<p>Tax decides whether to incorporate. Finance decides the pace, and it is the constraint that most often overrules the tax year. Personal buy-to-let mortgages cannot be assigned to a company, so each phase means redeeming and re-lending on limited company terms. Three facts set the rhythm: early repayment charges make redeeming a fixed rate ahead of its end date a direct cash cost; company lending criteria differ, so not every property will refinance on the same terms; and director guarantees are near universal, so incorporation does not remove your personal exposure to the debt. The lending mechanics are covered in the <a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">step-by-step incorporation guide</a>.</p>
+
+<p>The consequence for a phased plan is that transfers cluster around product expiry dates rather than 5 April. Where the two conflict, mortgage timing normally wins: an early repayment charge is a certain four-figure cost, while an extra annual exempt amount is worth £720. That is also why a phased plan should be mapped against the portfolio's expiry calendar before any tax modelling, not after. The <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">timing of incorporation</a> is covered separately.</p>
+
+<h2>Planning the eventual exit before you incorporate</h2>
+
+<p>The most expensive error in this area is reversible only at full cost. Property inside a company leaves it by one of three routes, and the structure you build should suit the one you expect.</p>
+
 <ul>
-<li><strong>Establish whether the lettings are a business</strong> for Section 162 purposes, because that decision shapes whether you phase disposals or phase the surrounding work around a single whole-business transfer.</li>
-<li><strong>Model the CGT and SDLT</strong> on each property at market value, including whether the six-dwellings rule or a genuine partnership route applies.</li>
-<li><strong>Map mortgage product expiry dates</strong> across the portfolio to find the natural refinancing windows.</li>
-<li><strong>Decide the company structure</strong>, including share classes and who holds them, before incorporation rather than retrofitting it.</li>
-<li><strong>Plan profit extraction and the eventual exit</strong>, so the structure you build is the one you actually want to live with.</li>
+<li><strong>Asset sale.</strong> The company sells the property. Corporation tax on the gain inside the company, then a further layer of tax to get the proceeds to you personally as dividends or a liquidation distribution.</li>
+<li><strong>Share sale.</strong> You sell the company. No stamp duty land tax on the land for the buyer, stamp duty on shares at 0.5%, and a capital gains disposal of your shares. Buyers discount for latent gains inside the company, so the headline is rarely the net.</li>
+<li><strong>Succession.</strong> Shares pass to the next generation. This is where company ownership genuinely outperforms personal ownership, because shares can be transferred in tranches and different classes can be created, which bricks and mortar cannot.</li>
 </ul>
-<p>The order of these steps is deliberate. The Section 162 question comes first because it determines almost everything that follows, including whether phasing the disposals is even compatible with the relief you are relying on.</p>
 
-<h2>Where Professional Support Matters Most</h2>
-<p>A phased incorporation pulls CGT, SDLT, corporation tax, Section 24, refinancing and your eventual extraction strategy into the same plan, often spanning more than one tax year. The decisions that carry the most cost happen before anything moves: whether the portfolio qualifies as a business, whether to phase disposals or transfer the whole business in one step, whether a genuine partnership route is realistically open, and how to avoid triggering the surcharge or an effective double charge on exit. These are not points you want to discover after the first transfer has completed. Specialist input at the planning stage, modelling your actual numbers, is where the value sits.</p>
+<p>Then there is the route to avoid: transferring in, paying the 5% surcharge, and later pulling a property back into personal ownership. That is a second chargeable transaction plus a taxable distribution on the way out. If there is any real prospect of wanting a property back personally, do not put it in. Where the plan ends in winding the company up, our guide on <a href="/blog/incorporation-and-company-structures/how-to-close-a-property-limited-company">how to close a property limited company</a> covers the routes and the £25,000 distribution threshold that decides whether a final distribution is capital or income.</p>
 
-<h2>Related Reading</h2>
+<aside><p><strong>The exit decision belongs at the start.</strong> Share classes, who holds them and whether the company is built to be sold or to be inherited are cheap to set on day one and expensive to change later. Tell us your intended horizon on the form below and we will model the structure against it.</p></aside>
+
+<h2>Related reading</h2>
 <ul>
-<li><a href="/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk">Landlord Incorporation: Step-by-Step Guide</a></li>
-<li><a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">Incorporation Timing: When to Incorporate a Property Portfolio</a></li>
-<li><a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">Incorporation Costs: Understanding the CGT and SDLT Implications</a></li>
-<li><a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Partnership SDLT Relief Under Schedule 15 FA 2003</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a Property Portfolio UK: The Step by Step Process</a></li>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on Incorporation: Paying Stamp Duty Twice</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">Incorporating Rental Property Without a CGT Charge</a></li>
+<li><a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">Section 162 Incorporation Relief for Property Landlords</a></li>
+<li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to Transfer Property Into a Limited Company</a></li>
+<li><a href="/blog/incorporation-and-company-structures/spv-company-formation-cost-uk">SPV Company Formation Cost UK</a></li>
 </ul>
+
+<p>External references: <a href="https://www.gov.uk/capital-gains-tax/rates">Capital Gains Tax rates (gov.uk)</a>, <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates">SDLT residential property rates (gov.uk)</a>, <a href="https://www.gov.uk/government/publications/companies-house-fees">Companies House fees (gov.uk)</a>, and <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700">HMRC Capital Gains Manual CG65700</a> on incorporation relief.</p>

@@ -4306,7 +4306,7 @@ Sections added this pass: §26.10 (EICR), §26.11 (gas), §26.12 (fire), §26.13
 
 Sections added this pass: §5.B (disposal date + exhaustive incidental costs), §1.Q (SDLT Sch 6A part-exchange, developer's relief), §26.14 (sales-agent regulation + CPUTR revocation), §26.15 (new-build redress non-statutory), §39.A (probate selling-process floor). Flags addressed: F-150 (→ §26.14), F-160 (→ §1.Q), F-161 (→ §39.A), F-162 (→ §5.B), F-164 (→ §26.15). F-151 (CPUTR stale line on sdlt-refund-scams page) triaged separately against its monitored window. F-152/F-163 remain open (authority note + wave-merge back-link). Flag STATUS edits happen at wave-close step 4 (manager commit), not here.
 
-## 29. Closing a property company — strike-off / distributions / MVL boundary — SPV-programme mini-lock (added 2026-09-01)
+## 42. Closing a property company — strike-off / distributions / MVL boundary — SPV-programme mini-lock (added 2026-09-01)
 
 Added because the selling/closing hub (SPV formation programme U34/U35) had no ground truth
 and a wrong citation (s.1013 CTA 2010) survived to brief stage. Verified legislation.gov.uk

@@ -83,6 +83,18 @@ export interface IncorporationInputs {
    * If false, all post-CT profit is extracted as a dividend and taxed personally.
    */
   retainInCompany?: boolean;
+  /** conveyancing solicitor fee for the company purchase (one-off, optional). */
+  solicitorFee?: number;
+  /** lender/RICS valuation fee for the transfer (one-off, optional). */
+  valuationFee?: number;
+  /** company BTL mortgage arrangement/broker fee if refinancing in (one-off, optional). */
+  lenderFee?: number;
+  /**
+   * Ongoing yearly cost of running the company (accountant, filings, registered
+   * office). Reported as its own row; deliberately NOT counted in annualSaving or
+   * breakEvenYears, which stay a tax-only comparison.
+   */
+  annualRunningCost?: number;
 }
 
 export interface IncorporationResult {
@@ -95,8 +107,12 @@ export interface IncorporationResult {
   s162Applied: boolean;
   /** SDLT the company pays: standard bands + 5% additional-dwelling surcharge. */
   sdltCost: number;
-  /** total one-off cost of incorporating (CGT + SDLT). */
+  /** one-off professional fees (solicitor + valuation + lender), £0 when omitted. */
+  professionalFees: number;
+  /** total one-off cost of incorporating (CGT + SDLT + professional fees). */
   totalUpfrontCost: number;
+  /** yearly company running cost, pass-through informational row (£0 when omitted). */
+  annualRunningCost: number;
 
   /* --- Personal (stay-as-you-are) annual position under Section 24 --- */
   /** income tax on the lettings personally, under the Section 24 restriction. */
@@ -168,7 +184,14 @@ export function computeIncorporation(i: IncorporationInputs): IncorporationResul
 
   // SDLT: an additional-dwelling acquisition (standard bands + 5% surcharge).
   const sdltCost = additionalDwellingSdlt(value);
-  const totalUpfrontCost = cgtCost + sdltCost;
+  // One-off professional fees (solicitor + valuation + lender). All default to 0 so
+  // existing callers see identical output.
+  const professionalFees =
+    Math.max(0, i.solicitorFee ?? 0) +
+    Math.max(0, i.valuationFee ?? 0) +
+    Math.max(0, i.lenderFee ?? 0);
+  const totalUpfrontCost = cgtCost + sdltCost + professionalFees;
+  const annualRunningCost = Math.max(0, i.annualRunningCost ?? 0);
 
   /* --- Personal annual position under Section 24 (shared engine) --- */
   const s24 = computeSection24({
@@ -211,7 +234,9 @@ export function computeIncorporation(i: IncorporationInputs): IncorporationResul
     cgtCost: round(cgtCost),
     s162Applied: s162,
     sdltCost: round(sdltCost),
+    professionalFees: round(professionalFees),
     totalUpfrontCost: round(totalUpfrontCost),
+    annualRunningCost: round(annualRunningCost),
 
     personalTax: round(personalTax),
     personalNetProfit: round(personalNetProfit),

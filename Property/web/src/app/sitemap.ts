@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/contact",
     "/incorporation",
+    "/spv-company",
     "/calculators",
     "/embed",
     "/property-tax-rates",

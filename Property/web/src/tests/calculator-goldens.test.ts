@@ -29,12 +29,13 @@ import { describe, it, expect } from "vitest";
 // Pure compute libs (no Next.js / React dependency)
 // -----------------------------------------------------------------------
 import { computeCgt } from "../lib/cgt";
+import { computeIncorporation } from "../lib/incorporation";
 import { additionalDwellingSdlt } from "../lib/sdlt";
 import { corporationTax, corporationTaxEffectiveRate } from "../lib/corpTax";
 import { computeDividendTax, DIV_BASIC, DIV_HIGHER } from "../lib/dividendTax";
 import { computeLbtt } from "../lib/lbtt";
 import { computeLtt } from "../lib/ltt";
-import { firstTimeBuyerSdlt, marginalSdlt, STANDARD_SDLT_BANDS } from "../lib/sdlt";
+import { firstTimeBuyerSdlt, marginalSdlt, STANDARD_SDLT_BANDS, NON_RESIDENTIAL_SDLT_BANDS } from "../lib/sdlt";
 import { gbp, pct } from "../lib/calculators/format";
 
 // -----------------------------------------------------------------------
@@ -2091,5 +2092,113 @@ describe("cost-of-selling-calculator: house-bar checks", () => {
   it("carries no self-referential boast line", () => {
     const copy = prose + " " + notes + " " + costOfSellingCalculator.oneLiner;
     expect(copy).not.toMatch(/nobody else|no other (guide|page|tool)|almost no|leave[s]? out/i);
+  });
+});
+
+// -----------------------------------------------------------------------
+// SPV-programme C1 (2026-09-01): computeIncorporation goldens.
+// Baseline pinned from the live engine BEFORE the professional-fees fields
+// were added (captured 2026-09-01); proves the additive extension moved
+// nothing for existing callers.
+// -----------------------------------------------------------------------
+describe("GOLDEN: computeIncorporation (defaults, no new fields)", () => {
+  const r = computeIncorporation({
+    propertyValue: 300_000,
+    purchasePrice: 200_000,
+    annualRentalIncome: 24_000,
+    mortgageInterest: 9_000,
+    taxBand: "higher",
+  });
+
+  it("upfront cost unchanged by the C1 extension", () => {
+    expect(r.capitalGain).toBe(100_000);
+    expect(r.cgtCost).toBe(21_018);
+    expect(r.sdltCost).toBe(20_000); // 300k additional dwelling, 5% surcharge
+    expect(r.professionalFees).toBe(0); // new field invisible when omitted
+    expect(r.totalUpfrontCost).toBe(41_018);
+  });
+
+  it("annual comparison and break-even unchanged", () => {
+    expect(r.personalTax).toBe(7_800);
+    expect(r.corporationTax).toBe(2_850);
+    expect(r.totalCompanyTax).toBe(2_850);
+    expect(r.annualSaving).toBe(4_950);
+    expect(r.breakEvenYears).toBeCloseTo(8.2865, 3);
+    expect(r.worthwhile).toBe(true);
+    expect(r.annualRunningCost).toBe(0); // pass-through defaults to 0
+  });
+});
+
+describe("GOLDEN: computeIncorporation with professional fees + running cost", () => {
+  const r = computeIncorporation({
+    propertyValue: 300_000,
+    purchasePrice: 200_000,
+    annualRentalIncome: 24_000,
+    mortgageInterest: 9_000,
+    taxBand: "higher",
+    solicitorFee: 1_200,
+    valuationFee: 300,
+    lenderFee: 1_500,
+    annualRunningCost: 800,
+  });
+
+  it("fees itemise and add to the upfront total only", () => {
+    expect(r.professionalFees).toBe(3_000);
+    expect(r.totalUpfrontCost).toBe(41_018 + 3_000);
+    // tax figures untouched by fees
+    expect(r.cgtCost).toBe(21_018);
+    expect(r.sdltCost).toBe(20_000);
+  });
+
+  it("break-even lengthens with the real transfer cost; saving stays tax-only", () => {
+    expect(r.annualSaving).toBe(4_950); // running cost deliberately NOT in the saving
+    expect(r.breakEvenYears).toBeCloseTo(44_018 / 4_950, 4);
+    expect(r.annualRunningCost).toBe(800); // its own informational row
+  });
+
+  it("negative fee inputs are floored to zero", () => {
+    const neg = computeIncorporation({
+      propertyValue: 300_000,
+      purchasePrice: 200_000,
+      annualRentalIncome: 24_000,
+      mortgageInterest: 9_000,
+      taxBand: "higher",
+      solicitorFee: -500,
+      annualRunningCost: -100,
+    });
+    expect(neg.professionalFees).toBe(0);
+    expect(neg.annualRunningCost).toBe(0);
+    expect(neg.totalUpfrontCost).toBe(41_018);
+  });
+});
+
+
+// -----------------------------------------------------------------------
+// SPV-programme C2 (2026-09-01): six-dwellings non-residential basis.
+// s.116(7) FA 2003 = automatic statutory deeming (NOT an election); no 5%
+// additional-dwellings surcharge on this basis. Bands per house_positions §1
+// line 31: 0% to £150k, 2% to £250k, 5% above.
+// -----------------------------------------------------------------------
+describe("GOLDEN: six-dwellings automatic non-residential treatment", () => {
+  it("non-residential bands compute correctly", () => {
+    expect(marginalSdlt(150_000, NON_RESIDENTIAL_SDLT_BANDS)).toBe(0);
+    expect(marginalSdlt(250_000, NON_RESIDENTIAL_SDLT_BANDS)).toBe(2_000);
+    // £1m six-flat portfolio: 2,000 + 5% x 750,000 = 39,500
+    expect(marginalSdlt(1_000_000, NON_RESIDENTIAL_SDLT_BANDS)).toBe(39_500);
+  });
+
+  it("non-residential basis undercuts residential + 5% surcharge at portfolio scale", () => {
+    const price = 1_000_000;
+    const residentialPlusSurcharge =
+      marginalSdlt(price, STANDARD_SDLT_BANDS) + price * 0.05;
+    expect(marginalSdlt(price, NON_RESIDENTIAL_SDLT_BANDS)).toBeLessThan(residentialPlusSurcharge);
+  });
+
+  it("regression: standard path untouched by the new band table", () => {
+    // The existing pinned values must not move: default calculator state is
+    // price 350,000 + additional surcharge.
+    const standard = marginalSdlt(350_000, STANDARD_SDLT_BANDS);
+    expect(standard).toBe(7_500); // 125k@0 + 125k@2% (2,500) + 100k@5% (5,000)
+    expect(standard + 350_000 * 0.05).toBe(25_000);
   });
 });

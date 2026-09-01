@@ -68,6 +68,10 @@ function compute(ctx: PremiumComputeContext) {
     year,
     s162Relief,
     retainInCompany,
+    solicitorFee: Number(ctx.values.solicitorFee) || 0,
+    valuationFee: Number(ctx.values.valuationFee) || 0,
+    lenderFee: Number(ctx.values.lenderFee) || 0,
+    annualRunningCost: Number(ctx.values.annualRunningCost) || 0,
   });
 
   const worthwhile = res.worthwhile;
@@ -133,6 +137,9 @@ function compute(ctx: PremiumComputeContext) {
         rows: [
           { label: cgtLabel, value: gbp(res.cgtCost) },
           { label: "SDLT (standard bands + 5% surcharge)", value: gbp(res.sdltCost) },
+          ...(res.professionalFees > 0
+            ? [{ label: "Professional fees (solicitor, valuation, lender)", value: gbp(res.professionalFees) }]
+            : []),
           { label: "Upfront cost to incorporate", value: gbp(res.totalUpfrontCost), strong: true },
           { label: `Corporation Tax (${res.corporationTaxEffectiveRate.toFixed(1)}%)`, value: gbp(res.corporationTax) },
           {
@@ -144,8 +151,15 @@ function compute(ctx: PremiumComputeContext) {
       },
     ],
     breakdown: [
-      { label: "Upfront cost (CGT + SDLT)", value: gbp(res.totalUpfrontCost), strong: true },
+      {
+        label: res.professionalFees > 0 ? "Upfront cost (CGT + SDLT + fees)" : "Upfront cost (CGT + SDLT)",
+        value: gbp(res.totalUpfrontCost),
+        strong: true,
+      },
       { label: "Annual tax saving from the company", value: `${res.annualSaving >= 0 ? "" : "- "}${gbp(Math.abs(res.annualSaving))}` },
+      ...(res.annualRunningCost > 0
+        ? [{ label: "Annual company running cost (not counted in the saving above)", value: gbp(res.annualRunningCost) }]
+        : []),
       {
         label: "Break-even",
         value: res.breakEvenYears >= NEVER_BREAKS_EVEN ? "Never (no annual saving)" : `${res.breakEvenYears.toFixed(1)} years`,
@@ -257,6 +271,46 @@ export const incorporationPremiumTool: PremiumToolConfig = {
       default: "2026-27",
       options: YEAR_OPTIONS,
       help: "The Section 24 finance-cost credit rises from 20% (2026/27) to 22% from 2027/28 (FA 2026).",
+    },
+    {
+      id: "solicitorFee",
+      label: "Solicitor / conveyancing fee (one-off)",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 20000,
+      step: 100,
+      help: "Conveyancing fee for the company purchase. Typical range £900-£1,800; leave at £0 to model tax only.",
+    },
+    {
+      id: "valuationFee",
+      label: "Valuation fee (one-off)",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 5000,
+      step: 50,
+      help: "Lender or RICS valuation for the transfer. Typically £250-£500.",
+    },
+    {
+      id: "lenderFee",
+      label: "Mortgage arrangement / broker fee (one-off)",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 20000,
+      step: 100,
+      help: "Company buy-to-let arrangement and broker fees, if refinancing into the company. Typically £1,000-£2,000.",
+    },
+    {
+      id: "annualRunningCost",
+      label: "Annual company running cost",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 20000,
+      step: 100,
+      help: "Accountant, Companies House filings, registered office. Shown as its own row, never mixed into the tax saving.",
     },
   ],
   // No scenario switcher: compute always returns BOTH scenario columns (stay personal

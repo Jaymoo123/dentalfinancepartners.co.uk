@@ -26,6 +26,19 @@ export const FTB_SDLT_BANDS: SdltBand[] = [
 /** Additional-dwelling surcharge (buy-to-let, second home, or company purchase). */
 export const ADDITIONAL_DWELLING_SURCHARGE = 0.05;
 
+/**
+ * Non-residential / mixed-use SDLT bands (house_positions.md §1, line 31):
+ * 0% to £150k, 2% £150k-£250k, 5% above. Used for the six-dwellings rule —
+ * s.116(7) FA 2003 treats 6+ dwellings in one transaction as non-residential
+ * AUTOMATICALLY (statutory deeming, not an election; Sch 6B was MDR, abolished
+ * 1 Jun 2024). No additional-dwellings surcharge applies on this basis.
+ */
+export const NON_RESIDENTIAL_SDLT_BANDS: SdltBand[] = [
+  { upTo: 150_000, rate: 0 },
+  { upTo: 250_000, rate: 0.02 },
+  { upTo: Infinity, rate: 0.05 },
+];
+
 /** Marginal SDLT across the given bands (each rate applies only to its slice). */
 export function marginalSdlt(price: number, bands: SdltBand[] = STANDARD_SDLT_BANDS): number {
   let prev = 0;

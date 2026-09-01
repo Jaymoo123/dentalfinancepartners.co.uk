@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
   STANDARD_SDLT_BANDS,
   FTB_SDLT_BANDS,
+  NON_RESIDENTIAL_SDLT_BANDS,
   ADDITIONAL_DWELLING_SURCHARGE,
   marginalSdlt,
 } from "@/lib/sdlt";
@@ -31,15 +32,38 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
   const [additional, setAdditional] = useState(true);
   const [ftb, setFtb] = useState(false);
   const [nonResident, setNonResident] = useState(false);
+  // Connected-party / company-transfer mode (s.53 FA 2003): SDLT is charged on
+  // MARKET VALUE, not the consideration paid. Page variant only; the embed keeps
+  // its current height and behaviour.
+  const [connectedParty, setConnectedParty] = useState(false);
+  const [marketValue, setMarketValue] = useState(350_000);
+  // s.116(7) FA 2003: 6+ dwellings in one transaction are AUTOMATICALLY treated
+  // as non-residential (statutory deeming, not an election). No 5% surcharge on
+  // that basis.
+  const [sixDwellings, setSixDwellings] = useState(false);
+
+  const showCompanyModes = variant !== "embed";
+  const connectedActive = showCompanyModes && connectedParty;
+  const sixActive = showCompanyModes && sixDwellings;
+
+  // The chargeable amount: market value under s.53 when transferring to a
+  // connected company, otherwise the price paid. Identical to price when the
+  // mode is off, so existing behaviour is unchanged.
+  const chargeableAmount = connectedActive ? Math.max(0, marketValue) : price;
 
   // First-time-buyer relief: only if the buyer is NOT also buying an additional
   // property and the price is within the £500k cap.
-  const ftbReliefApplies = ftb && !additional && price <= 500_000;
-  const standard = marginalSdlt(price, ftbReliefApplies ? FTB_SDLT_BANDS : STANDARD_SDLT_BANDS);
-  const surcharge = additional ? price * ADDITIONAL_DWELLING_SURCHARGE : 0;
-  const nonRes = nonResident ? price * 0.02 : 0;
-  const total = standard + surcharge + nonRes;
-  const effectiveRate = price > 0 ? (total / price) * 100 : 0;
+  const ftbReliefApplies = ftb && !additional && chargeableAmount <= 500_000;
+  const standard = marginalSdlt(chargeableAmount, ftbReliefApplies ? FTB_SDLT_BANDS : STANDARD_SDLT_BANDS);
+  const surcharge = additional ? chargeableAmount * ADDITIONAL_DWELLING_SURCHARGE : 0;
+  const nonRes = nonResident ? chargeableAmount * 0.02 : 0;
+  const residentialTotal = standard + surcharge + nonRes;
+  // Six-dwellings basis: non-residential bands, no additional-dwelling surcharge.
+  // Surcharges are excluded on this basis; edge cases go to advice, per the
+  // existing disclaimer pattern.
+  const sixDwellingsTotal = marginalSdlt(chargeableAmount, NON_RESIDENTIAL_SDLT_BANDS);
+  const total = sixActive ? sixDwellingsTotal : residentialTotal;
+  const effectiveRate = chargeableAmount > 0 ? (total / chargeableAmount) * 100 : 0;
 
   // Toggling Additional and First-time buyer are mutually exclusive.
   const toggleAdditional = () => {
@@ -141,6 +165,70 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 <span className="font-bold">Non-UK resident</span>: adds the <span className="font-semibold">2% surcharge</span>
               </span>
             </label>
+
+            {showCompanyModes && (
+              <>
+                <label className="flex items-start gap-3 cursor-pointer rounded-xl border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
+                  <input
+                    type="checkbox"
+                    checked={connectedParty}
+                    onChange={() =>
+                      setConnectedParty((v) => {
+                        if (!v) {
+                          // A connected-company transfer is almost always an
+                          // additional-property purchase; pre-tick, still editable.
+                          setAdditional(true);
+                          setFtb(false);
+                          setMarketValue(price);
+                        }
+                        return !v;
+                      })
+                    }
+                    className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
+                  />
+                  <span className="text-sm leading-snug text-slate-800">
+                    <span className="font-bold">Transfer to your own company</span> (connected party):
+                    SDLT is charged on <span className="font-semibold">market value</span>, not the price paid
+                  </span>
+                </label>
+
+                {connectedParty && (
+                  <div className="ml-8">
+                    <label
+                      htmlFor="sdlt-market-value"
+                      className="block text-xs font-bold text-slate-900 uppercase tracking-wider mb-1"
+                    >
+                      Open-market value
+                    </label>
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg font-bold text-slate-900">£</span>
+                      <NumberInput
+                        id="sdlt-market-value"
+                        value={marketValue}
+                        onChange={setMarketValue}
+                        className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      />
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500 leading-relaxed">
+                      The figure SDLT is calculated on for a connected-party transfer, even if no cash changes hands (s.53 FA 2003).
+                    </p>
+                  </div>
+                )}
+
+                <label className="flex items-start gap-3 cursor-pointer rounded-xl border-2 border-slate-200 p-3.5 hover:border-emerald-400 transition-colors has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-50">
+                  <input
+                    type="checkbox"
+                    checked={sixDwellings}
+                    onChange={() => setSixDwellings((v) => !v)}
+                    className="mt-0.5 h-5 w-5 shrink-0 accent-emerald-600"
+                  />
+                  <span className="text-sm leading-snug text-slate-800">
+                    <span className="font-bold">Six or more dwellings</span> in one transaction:
+                    non-residential rates apply <span className="font-semibold">automatically</span> (s.116(7) FA 2003)
+                  </span>
+                </label>
+              </>
+            )}
           </fieldset>
 
           <p className="text-xs text-slate-500 leading-relaxed">
@@ -164,23 +252,46 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
           </div>
 
           <div className="border-t border-slate-700 pt-4 sm:pt-6 space-y-3">
-            <div className="flex justify-between items-baseline">
-              <span className="text-xs sm:text-sm text-slate-300">
-                {ftbReliefApplies ? "Standard SDLT (first-time-buyer relief)" : "Standard SDLT"}
-              </span>
-              <span className="text-base sm:text-lg font-semibold text-white">{gbp(standard)}</span>
-            </div>
-            {additional && (
-              <div className="flex justify-between items-baseline">
-                <span className="text-xs sm:text-sm text-slate-300">Additional-property surcharge (5%)</span>
-                <span className="text-base sm:text-lg font-semibold text-white">{gbp(surcharge)}</span>
-              </div>
+            {connectedActive && (
+              <p className="text-xs text-emerald-300/90 leading-relaxed">
+                Connected-party transfer: charged on the £{Math.round(chargeableAmount).toLocaleString("en-GB")} market value (s.53 FA 2003), not the price paid.
+              </p>
             )}
-            {nonResident && (
-              <div className="flex justify-between items-baseline">
-                <span className="text-xs sm:text-sm text-slate-300">Non-resident surcharge (2%)</span>
-                <span className="text-base sm:text-lg font-semibold text-white">{gbp(nonRes)}</span>
-              </div>
+            {sixActive ? (
+              <>
+                <div className="flex justify-between items-baseline">
+                  <span className="text-xs sm:text-sm text-slate-300">Non-residential basis (six-plus dwellings, no 5% surcharge)</span>
+                  <span className="text-base sm:text-lg font-semibold text-white">{gbp(sixDwellingsTotal)}</span>
+                </div>
+                <div className="flex justify-between items-baseline">
+                  <span className="text-xs sm:text-sm text-slate-400">On the residential basis this would be</span>
+                  <span className="text-sm font-semibold text-slate-400">{gbp(residentialTotal)}</span>
+                </div>
+                <p className="text-xs text-amber-300/90 leading-relaxed">
+                  Six or more dwellings in a single transaction are treated as non-residential automatically. Surcharges and reliefs on multi-dwelling deals have edge cases; we can confirm your exact position.
+                </p>
+              </>
+            ) : (
+              <>
+                <div className="flex justify-between items-baseline">
+                  <span className="text-xs sm:text-sm text-slate-300">
+                    {ftbReliefApplies ? "Standard SDLT (first-time-buyer relief)" : "Standard SDLT"}
+                  </span>
+                  <span className="text-base sm:text-lg font-semibold text-white">{gbp(standard)}</span>
+                </div>
+                {additional && (
+                  <div className="flex justify-between items-baseline">
+                    <span className="text-xs sm:text-sm text-slate-300">Additional-property surcharge (5%)</span>
+                    <span className="text-base sm:text-lg font-semibold text-white">{gbp(surcharge)}</span>
+                  </div>
+                )}
+                {nonResident && (
+                  <div className="flex justify-between items-baseline">
+                    <span className="text-xs sm:text-sm text-slate-300">Non-resident surcharge (2%)</span>
+                    <span className="text-base sm:text-lg font-semibold text-white">{gbp(nonRes)}</span>
+                  </div>
+                )}
+              </>
             )}
             {ftb && !ftbReliefApplies && (
               <p className="text-xs text-amber-300/90 leading-relaxed">

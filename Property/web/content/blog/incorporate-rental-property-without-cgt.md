@@ -1,179 +1,200 @@
 ---
-title: "How to Incorporate Rental Property Without Triggering CGT"
+title: "Property Incorporation and Capital Gains Tax: The 2026 Rules"
 slug: "incorporate-rental-property-without-cgt"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt"
 date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Incorporation Relief for Landlords: Defer CGT (2026)"
-metaDescription: "How incorporation relief lets landlords move a rental business into a company without immediate CGT. Business test, share rules, the new s.162 claim, SDLT."
-metaTitle_prev: "How to Incorporate Rental Property Without CGT | UK Guide"
-metaDescription_prev: "Incorporation relief under s.162 TCGA can defer CGT when transferring rental properties to a company. Conditions, pitfalls, and planning steps."
-altText: "UK landlord reviewing property incorporation documents to defer CGT liability"
+metaTitle: "Property Incorporation Capital Gains Tax 2026"
+metaDescription: "Property incorporation capital gains tax in 2026: when s.162 defers the whole gain, when it fails, and the 18%/24% bill if it does. A claim is now needed."
+metaTitle_prev: "Incorporation Relief for Landlords: Defer CGT (2026)"
+metaDescription_prev: "How incorporation relief lets landlords move a rental business into a company without immediate CGT. Business test, share rules, the new s.162 claim, SDLT."
+altText: "UK landlord reviewing property incorporation documents to defer capital gains tax"
 image: ""
-h1: "How to Incorporate Rental Property Without Triggering CGT"
-summary: "Incorporation relief (s.162 TCGA 1992) lets landlords move a genuine rental business into a limited company without an immediate Capital Gains Tax bill. The gain is rolled into the base cost of the shares, not erased. From 6 April 2026 the relief must be claimed, and SDLT remains a separate charge that incorporation relief does not touch."
+h1: "Property Incorporation and Capital Gains Tax: When You Pay, When You Do Not"
+summary: "Incorporation relief (s.162 TCGA 1992) lets a genuine property business move into a limited company with no immediate Capital Gains Tax. The gain is rolled into the base cost of the shares, not erased. For transfers on or after 6 April 2026 the relief must be claimed. Where the business test fails, CGT is due at 18% or 24%. Incorporation relief never touches SDLT."
 schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
-howToSteps:
-  - name: "Confirm the activity is a business, not investment"
-    text: "Gather evidence of active management: hours worked, number of properties, services provided, staff or contractors, and the degree of organisation. Incorporation relief only applies where the letting activity amounts to a business in the Ramsay v HMRC sense."
-  - name: "Obtain RICS market valuations at the transfer date"
-    text: "Each property must be valued at open market value on the date it transfers. These valuations set the chargeable gain and the value of shares issued, so independent RICS figures are essential if HMRC enquires."
-  - name: "Transfer the whole business as a going concern"
-    text: "Move every property in the rental business (and the other business assets bar cash) to the company in one transaction. Cherry-picking the best properties and keeping the rest personally breaks the relief."
-  - name: "Take consideration wholly or mainly in shares"
-    text: "Receive newly issued shares as the consideration. Relief is given in proportion to the share consideration, so cash or a large director's loan left outside the shares reduces the rolled-over gain."
-  - name: "Plan the SDLT position separately"
-    text: "Incorporation relief covers CGT only. The company normally pays SDLT (plus the 5% additional dwellings surcharge) on the market value transferred, unless a genuine pre-existing partnership accesses Schedule 15 partnership relief."
-  - name: "Make the s.162 claim on the tax return"
-    text: "Since 6 April 2026 the relief is no longer automatic. Claim it on the Capital Gains Tax pages of the Self Assessment return by the first anniversary of the 31 January following the tax year of transfer."
+reviewedAt: "2026-09-01"
+dateModified: "2026-09-01"
 faqs:
-  - question: "What is incorporation relief and how does it help landlords?"
-    answer: "Incorporation relief under section 162 of the Taxation of Chargeable Gains Act 1992 lets you transfer a rental business to a limited company without paying Capital Gains Tax at the point of transfer. The gain is not wiped out. It is rolled into the base cost of the shares you receive, so the tax is deferred until you sell those shares. The relief only applies where your letting activity is a genuine business and the whole business is transferred in exchange wholly or partly for shares."
-  - question: "Does incorporation relief apply to all landlords?"
-    answer: "No. The single biggest hurdle is the business test. HMRC treats most buy-to-let as passive investment, which does not qualify. Incorporation relief is realistic where you actively manage a portfolio, spend substantial time on it, provide services beyond bare letting, or run it through staff or contractors. The leading authority, Ramsay v HMRC [2013], confirmed that a sufficiently active and organised letting operation can be a business, but a couple of agent-managed lets almost never will."
-  - question: "When does a rental business qualify as a business for incorporation relief?"
-    answer: "There is no fixed property count. HMRC and the tribunals look at the whole picture: the number of properties, the time you personally devote, whether the work is organised and continuous, the services you provide, and whether the scale resembles a trade. In Ramsay the taxpayer spent around 20 hours a week running a single converted building of ten flats and that was held to be a business. Passive ownership of a few long-let flats managed by an agent is not."
-  - question: "Can I transfer some properties to a company and keep others personally?"
-    answer: "Not if you want incorporation relief. Section 162 requires the whole business to be transferred as a going concern, together with all its assets other than cash. Keeping back your best properties invalidates the relief on the rest. If you genuinely want to incorporate only part of your holdings, you would need to treat that part as a separate business, which is difficult to sustain in practice and invites HMRC challenge."
+  - question: "Does incorporation relief apply to landlords?"
+    answer: "It can, but not to every landlord. Section 162 relieves the transfer of a business, and HMRC starts from the position that letting property is investment. Landlords who actively run an organised portfolio, spend substantial personal time on it, and provide more than bare letting can qualify, as the taxpayer did in Ramsay v HMRC. A handful of agent-managed buy-to-lets almost never will. The test is about the degree of activity, not the number of doors."
+  - question: "How do I avoid capital gains tax when transferring rental property to a company?"
+    answer: "You defer it rather than avoid it. A qualifying whole-business transfer for shares under section 162, properly claimed, means no CGT falls due at the point of transfer because the gain is rolled into the base cost of the shares. If the business test fails, there is no way to make the charge disappear. The realistic options then are spreading transfers across tax years to use annual exempt amounts, timing a transfer into a lower-income year, or accepting the 18% or 24% charge."
+  - question: "Can incorporation relief be used to transfer property into an existing company rather than a new one?"
+    answer: "Yes. Section 162 does not require a newly formed company. What it requires is that the whole business transfers as a going concern and that the consideration is wholly or partly newly issued shares in the transferee company. An existing trading or property company can issue fresh shares for the business. The practical difficulty is valuation: the shares issued must reflect the value of the business going in relative to what the company already holds, and getting that split wrong distorts the relief and the other shareholders' positions."
+  - question: "Is my rental portfolio a business for incorporation relief purposes?"
+    answer: "There is no property count that settles it. HMRC and the tribunals weigh the whole picture: personal hours devoted, whether the work is organised and continuous, services provided to tenants, staff or contractors engaged, and whether the operation resembles running an enterprise. In Ramsay the taxpayer spent around twenty hours a week on ten flats in one converted building, and that was a business. Passive ownership of long lets run by an agent is not. Document how you actually operate before any transfer."
+  - question: "Does incorporation relief apply to commercial property transferred to a limited company?"
+    answer: "Yes. Section 162 is not restricted to residential lettings. A commercial letting operation, or a mixed portfolio of shops, offices, industrial units and flats, can qualify on exactly the same terms, provided the activity amounts to a business and the whole of it transfers for shares. Commercial letting often clears the business hurdle more comfortably than residential, because active lease management, repairs obligations and tenant negotiation naturally involve more work. The SDLT position differs, since commercial rates apply and the residential surcharge does not."
+  - question: "Do I still pay capital gains tax eventually if I use incorporation relief?"
+    answer: "Usually yes. The relief defers the gain by reducing the base cost of the shares you receive, so the deferred amount comes back into charge when you sell those shares or wind the company up. It is parked, not cancelled. There are routes that can change the eventual outcome, such as a later share sale planned around your circumstances, but you should model incorporation on the basis that the CGT still exists and now sits inside your shareholding."
+  - question: "Does incorporation relief cover stamp duty as well?"
+    answer: "No. Incorporation relief is a Capital Gains Tax relief and has no effect on Stamp Duty Land Tax. The company is normally charged SDLT on the market value of the properties it acquires, because the parties are connected, including the 5% additional dwellings surcharge on residential property. Scotland charges LBTT and Wales charges LTT on their own terms. SDLT is often the single largest immediate cash cost of incorporating, and a perfectly deferred CGT position does not soften it at all."
   - question: "Does incorporation relief have to be claimed?"
-    answer: "Yes, for transfers on or after 6 April 2026. Finance Act 2026 amended section 162 so the relief is no longer automatic: you must make a claim under the new s.162(1)(b), with the information HMRC requires, by the first anniversary of the 31 January following the tax year of transfer. Finance Act 2026 also repealed the old s.162A election that used to let you disapply the relief, so the position is now claim or no relief. Missing the deadline can mean an unexpected CGT bill on a transfer you thought was tax-deferred."
-  - question: "Do I avoid CGT entirely by incorporating, or is it just deferred?"
-    answer: "It is deferred, not avoided. Incorporation relief rolls the gain on the properties into the base cost of the company shares. When you eventually sell or wind up the company, that deferred gain comes back into charge. Incorporation can still be sensible for income tax and Section 24 reasons, but you should plan the structure knowing the CGT is parked rather than gone."
-  - question: "Does incorporation relief cover Stamp Duty Land Tax?"
-    answer: "No. Incorporation relief is a Capital Gains Tax relief only. When properties move to a company, the company is normally liable for SDLT on the market value transferred, including the 5% additional dwellings surcharge that has applied since 31 October 2024. Scotland charges LBTT with an 8% Additional Dwelling Supplement, and Wales charges LTT with its own higher residential rates. SDLT is often the largest cash cost of incorporating, so it must be modelled separately."
-  - question: "How can SDLT on incorporation be reduced?"
-    answer: "The main statutory route is partnership relief under Schedule 15 of the Finance Act 2003. Where a genuine, pre-existing partnership transfers the portfolio to a company connected with the partners, the sum-of-the-lower-proportions calculation can reduce or remove the chargeable consideration. This only works where there is a real partnership with substance, such as filed SA800 returns and partnership accounts, ideally operating for a couple of years before the transfer. A partnership created just before incorporation to access the relief is vulnerable to HMRC's general anti-avoidance attack under s.75A."
-  - question: "What is the difference between incorporation relief and holdover relief?"
-    answer: "Incorporation relief (s.162) rolls the gain into the share value where the whole business is transferred for shares. For transfers on or after 6 April 2026 it must be claimed (FA 2026 s.39 added TCGA 1992 s.162(1)(b)), with the claim due by the first anniversary of the 31 January following the tax year of the transfer. Before that date it applied automatically. Gift holdover relief (s.165) is a different mechanism, used where business assets are gifted, that holds the gain over into the recipient's base cost. For a genuine property business transferred for shares, s.162 is usually the cleaner route. We cover the s.165 alternative in our guide to incorporation holdover relief for property."
-  - question: "Will I need new mortgages when I incorporate?"
-    answer: "Almost certainly. Most personal buy-to-let mortgages require repayment when a property is transferred out of your name, so the company usually needs commercial or limited-company buy-to-let lending. These often carry different criteria and rates, and arranging them adds time and legal cost. Many landlords find the refinancing, not the CGT, is the practical brake on incorporation, so confirm finance is available before committing."
-  - question: "Can I transfer property to my spouse before incorporating to use both CGT positions?"
-    answer: "Transfers between spouses or civil partners are made on a no-gain, no-loss basis under s.58 TCGA 1992, so moving a share to a spouse does not itself trigger CGT. This is sometimes used to put a portfolio into joint names and form a genuine partnership ahead of incorporation, which can help with both the s.162 business framing and Schedule 15 SDLT relief. It only works as part of a real, commercially operated partnership, not a paper arrangement."
-  - question: "Should I use one company or multiple SPVs for my portfolio?"
-    answer: "For incorporation relief the whole business goes into a single company, so the s.162 route points to one company rather than several SPVs. Some landlords later restructure into multiple special purpose vehicles for finance or estate reasons, but doing that after a s.162 incorporation can crystallise the deferred gain. Decide the long-term company structure before you incorporate rather than splitting afterwards."
-  - question: "What are the ongoing tax costs of holding property in a company?"
-    answer: "A company pays Corporation Tax on rental profits and on gains when it sells, and you pay further tax when you extract profits as dividends or salary. Mortgage interest is fully deductible for a company, which is the main draw given Section 24, but the layered taxation on extraction and the loss of personal CGT reliefs such as Private Residence Relief mean incorporation is not automatically cheaper. The right answer depends on whether you reinvest profits or draw them out."
-  - question: "When does it make sense to incorporate a rental business?"
-    answer: "Incorporation tends to suit higher-rate landlords with a sizeable, actively managed, retained-profit portfolio who are hit hard by Section 24 and who plan to keep reinvesting rather than drawing income. It is rarely worth it for a small agent-managed buy-to-let where the business test fails, the SDLT cost is high relative to the portfolio, and the income is needed to live on. The decision turns on your marginal rate, gearing, time horizon, and whether the activity genuinely qualifies as a business."
+    answer: "Yes, for transfers on or after 6 April 2026. Finance Act 2026 amended section 162 so the relief is no longer automatic. You must make a claim under the new s.162(1)(b), with the information HMRC requires, by the first anniversary of the 31 January following the tax year of transfer. Finance Act 2026 also repealed the old s.162A election that let taxpayers disapply the relief, so the position is now claim or no relief. A missed claim turns a deferred gain into a real tax bill."
+  - question: "Can I transfer property into a limited company without triggering a double capital gains charge?"
+    answer: "The worry is the gain being taxed once on the transfer and again on the shares. Where section 162 applies and is claimed, that does not happen: the personal gain is not charged at the transfer, and the same amount is instead carried in the reduced share base cost, so it is taxed once. What can genuinely double up is the company-level gain on a later property sale plus your own tax on extracting the proceeds. That is an extraction question, not an incorporation relief failure."
+  - question: "Can I transfer some properties to a company and keep others personally?"
+    answer: "Not if you want incorporation relief. Section 162 requires the whole business to transfer as a going concern together with all its assets other than cash. Holding back the properties you like best invalidates the relief on everything else that moved. If you genuinely intend to incorporate only part of your holdings, you would need to show that part is a separate business, which is hard to sustain and invites enquiry. Phased approaches need care for exactly this reason."
+  - question: "Do you pay capital gains tax on the sale of a home held through a limited company?"
+    answer: "A company does not pay CGT. It pays Corporation Tax on the chargeable gain, currently 19% on small profits up to £50,000, 25% on profits of £250,000 or more, and an effective rate tapering to about 26.5% in between. There is no annual exempt amount and no Private Residence Relief, so a property you or your family live in gets no relief inside a company and can also create a benefit in kind. Getting the proceeds out is then taxed again as a dividend or salary."
+  - question: "How much CGT would I pay if incorporation relief does not apply?"
+    answer: "The transfer is treated as a disposal at market value because you and the company are connected, so the whole embedded gain is chargeable. Residential gains are taxed at 18% within your remaining basic-rate band and 24% above it, after the £3,000 annual exempt amount. On a £500,000 gain, almost all of it falls in the higher band, so a bill in the region of £119,000 is realistic. That is payable through the 60-day UK property return, not at the following 31 January."
+  - question: "Does it matter where in the UK my properties are for a section 162 claim?"
+    answer: "The CGT relief is a UK-wide provision, so a landlord in Leeds, Bradford or anywhere else claims it on the same terms and through the same Self Assessment route. What changes by location is the transfer tax: England and Northern Ireland charge SDLT, Scotland charges LBTT with an 8% Additional Dwelling Supplement, and Wales charges LTT. A portfolio spread across jurisdictions needs the partnership relief evidence tested separately in each one."
+  - question: "Will incorporating mean new mortgages?"
+    answer: "Almost certainly. Most personal buy-to-let mortgages become repayable when the property leaves your name, so the company needs limited-company buy-to-let or commercial lending. Criteria, rates and arrangement costs differ, and valuations and legal work add time. Many landlords find refinancing rather than CGT is the real brake on incorporation, so confirm that finance is available across the whole portfolio before committing to a transfer date."
 ---
 
-<p>Moving a rental portfolio into a limited company is one of the most consequential decisions a landlord makes, and Capital Gains Tax is usually the thing that stops people in their tracks. Transfer properties at market value and, on paper, you have disposed of every one of them, potentially crystallising a large CGT bill before a single penny of benefit arrives. Incorporation relief is the mechanism that, in the right circumstances, lets you defer that charge. It is powerful, frequently misunderstood, and from 6 April 2026 it works differently from the way most online guides still describe.</p>
+<p>Property incorporation and capital gains tax is the question that stops most portfolio landlords before they start. Transferring rental property to a limited company is a disposal at market value in the eyes of HMRC, even though no money changes hands and you still own everything through the shares. On paper you have sold every property you own. Without relief, that produces a Capital Gains Tax bill at 18% or 24% before a single benefit of the new structure arrives.</p>
 
-<p>This guide sets out who actually qualifies, how the relief works, the trap that catches landlords who think CGT is the only tax in play, and the change that means the relief must now be claimed rather than applied automatically.</p>
+<p>Incorporation relief under section 162 of the Taxation of Chargeable Gains Act 1992 removes that charge in the right circumstances. Whether you are in those circumstances comes down to one question that has nothing to do with the size of your gain: is your letting a business, or is it an investment? Answer that first, because it decides everything below, and because it is the point at which most landlords discover the relief was never available to them. The clause-by-clause conditions are set out on our <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">section 162 incorporation relief page</a>.</p>
 
-<h2>What is incorporation relief for landlords?</h2>
-<p>Incorporation relief sits in section 162 of the Taxation of Chargeable Gains Act 1992. When you transfer a business to a company in exchange for shares, the gain on the assets going in is not taxed at that point. Instead it is rolled into the base cost of the shares you receive. You have not escaped the tax, you have deferred it: the gain resurfaces when you sell the shares or wind the company up.</p>
-<p>For a landlord, the relief turns an immediate market-value disposal of every property into a deferred liability sitting inside the share value. That can be the difference between a six-figure tax bill on day one and no CGT at all until you exit, years later, on your own timetable. The catch is that it only applies to a <em>business</em>, and it transfers the whole business in one go.</p>
+<h2>The short answer: three outcomes, not one</h2>
+<p>Every property incorporation lands in one of three places for CGT. Knowing which one you are in is the whole decision.</p>
+<table>
+<thead>
+<tr><th>Your position</th><th>CGT on the transfer</th><th>What happens to the gain</th></tr>
+</thead>
+<tbody>
+<tr><td>Letting is a business, whole business transferred wholly for shares, claim made in time</td><td>None</td><td>Rolled into the base cost of the shares; taxed when you sell them or wind up</td></tr>
+<tr><td>Business test met but part of the value taken as cash or a director's loan</td><td>Partial</td><td>Relief given in proportion to the share consideration; the rest is chargeable now at 18% or 24%</td></tr>
+<tr><td>Letting is investment, not a business (or no claim made)</td><td>Full</td><td>Whole embedded gain charged at market value, payable within 60 days of completion</td></tr>
+</tbody>
+</table>
+<p>Note what is missing from that table. SDLT appears in none of the three rows, because incorporation relief does not touch it. The company pays stamp duty in all three cases.</p>
 
-<h2>The business test: the hurdle most landlords trip on</h2>
-<p>Section 162 relieves the transfer of a business. It does not relieve the transfer of an investment. This single distinction decides most cases, and HMRC starts from the position that letting property is investment, not trade.</p>
-<p>The leading authority is <em>Ramsay v HMRC</em> [2013] UKUT 226, where the taxpayer ran a single converted building of ten flats and spent around twenty hours a week on it, dealing with tenants, maintenance, cleaning of common areas, and security. The Upper Tribunal held that the activity, taken in the round, amounted to a business for incorporation relief. The decision turned on the degree of activity, not a magic number of properties.</p>
-<p>HMRC looks for evidence that your letting is active, organised and continuous rather than passive ownership. Factors that point towards a business include:</p>
+<h2>What incorporation relief actually does</h2>
+<p>When a business is transferred to a company in exchange for shares, section 162 stops the gain on the assets going in from being taxed at that moment. Instead it reduces the base cost of the shares you receive by the amount of the gain. You have not escaped the tax. You have moved it: it resurfaces when you dispose of the shares.</p>
+<p>For a landlord, that turns an immediate market-value disposal of every property into a liability sitting quietly inside the share value, deferred until you choose to exit. That is the difference between a six-figure tax bill on day one and no CGT at all for years. It is why the relief is worth so much effort to secure, and why the misconception that it erases the gain is worth correcting early. Several guides use the language of avoiding CGT. The accurate word is deferring.</p>
+
+<h2>Incorporation relief for a property business: the test most landlords fail</h2>
+<p>Section 162 relieves the transfer of a business. It does not relieve the transfer of an investment. HMRC's starting point is that letting property is investment, and that single distinction decides most cases before any of the other conditions matter.</p>
+<p>The leading authority, <em>Ramsay v HMRC</em> [2013] UKUT 226 (TCC), established that the question turns on the degree of activity rather than on any number of properties. Our <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">section 162 page</a> works through the case and how the tribunals have weighed each factor since.</p>
+<p>What matters for your own position is the evidence HMRC looks for that the letting is active, organised and continuous:</p>
 <ul>
-<li>A portfolio of several properties under your own active management</li>
-<li>Substantial personal time spent on the operation, not just signing off an agent's reports</li>
-<li>Services provided to tenants beyond the bare letting (cleaning, furnished short lets, on-site presence)</li>
-<li>Regular tenant turnover and the work of re-letting</li>
+<li>Several properties under your own active management rather than an agent's</li>
+<li>Substantial personal hours, evidenced at the time rather than reconstructed afterwards</li>
+<li>Services to tenants beyond bare letting, such as furnished short lets, cleaning or on-site presence</li>
+<li>Regular turnover and the re-letting work that comes with it</li>
 <li>Staff or contractors engaged on a continuing basis</li>
 <li>Business-like records, systems and decision-making</li>
 </ul>
-<p>By contrast, two or three buy-to-lets handed to a managing agent, with the owner doing little more than banking the rent, will not pass. There is no fixed threshold, but the more your weeks resemble running a small enterprise and the less they resemble holding an investment, the stronger the position. Document the reality before you transfer, because the evidence is what HMRC scrutinises if it enquires.</p>
+<p>Two or three buy-to-lets handed to a managing agent, with the owner doing little more than banking rent, will not pass. There is no statutory threshold, and the point for the decision in front of you is blunt: if you cannot describe your week in terms that sound like running an enterprise, plan on the CGT being payable.</p>
+<p>This applies to commercial as much as residential. Incorporation relief on a commercial building transferred to a limited company works on exactly the same conditions, and a commercial letting operation often clears the business hurdle more easily, because active lease management, repair obligations and tenant negotiation involve real and continuing work. A mixed portfolio of shops, offices and flats is treated as one business if that is how it is genuinely run.</p>
 
-<h2>The conditions for the relief to apply</h2>
-<p>Beyond the business test, section 162 imposes three structural conditions. Miss any of them and the relief fails.</p>
+<h2>The other conditions, in brief</h2>
+<p>Beyond the business test, three structural conditions have to hold. Fail any one and the relief goes.</p>
 <ul>
-<li><strong>Whole business as a going concern.</strong> You must transfer the entire rental business, together with all its assets other than cash. You cannot keep your best properties personally and incorporate the rest.</li>
-<li><strong>Consideration in shares.</strong> The business must be transferred wholly or partly in exchange for shares issued by the company. Relief is given in proportion to the share consideration: if part of the value comes back to you as cash or a large director's loan, the gain attributable to that part is not rolled over.</li>
-<li><strong>A genuine transaction.</strong> The transfer must be a real commercial restructuring. Tax efficiency is a legitimate motive, but a wholly artificial arrangement invites challenge.</li>
+<li><strong>Whole business as a going concern.</strong> The entire rental business must transfer, together with all its assets other than cash. Keeping your best properties personally breaks the relief on the rest.</li>
+<li><strong>Consideration in shares.</strong> The business must be transferred wholly or partly for newly issued shares. Relief is proportionate: value coming back as cash or a director's loan is not rolled over.</li>
+<li><strong>A genuine transaction.</strong> The transfer must be a real commercial restructuring, not a paper arrangement built for the relief.</li>
 </ul>
-<p>The consideration point is where well-meaning planning goes wrong. Landlords sometimes want to extract a director's loan on incorporation so they can draw funds tax-free later. That is attractive, but money left outside the shares reduces the rolled-over gain, because relief tracks the proportion of consideration taken in shares. There is a genuine tension between maximising the deferred gain and building a useful loan balance, and it needs to be modelled, not guessed. The credit balance created on a clean s.162 transfer is itself a tax-free repayment route over time, so the design of that balance matters for years afterwards.</p>
+<p>The consideration point is where careful planning most often costs money. Landlords like the idea of creating a large director's loan on incorporation so they can draw funds tax free for years afterwards. That credit balance is genuinely valuable, and it is a legitimate repayment route. But every pound of value left outside the shares is a pound of gain that is not deferred. There is a real tension between maximising the rolled-over gain and building a useful loan balance, and it should be modelled rather than assumed.</p>
 
-<h2>The change that catches people out: you now have to claim it</h2>
-<p>For most of its life, section 162 was automatic. If the conditions were met, the relief simply applied. That is no longer true.</p>
-<p>For transfers on or after 6 April 2026, Finance Act 2026 amended section 162 so the relief must be claimed. The new s.162(1)(b) requires you to make a claim, with the information HMRC asks for, by the first anniversary of the 31 January following the tax year in which the transfer took place. So a transfer in the 2026/27 tax year must be claimed by 31 January 2029. Finance Act 2026 also repealed the old s.162A election that previously allowed you to disapply the relief, so the position is now binary: claim it, or get no relief and face CGT on the transfer.</p>
-<p>The claim is made through the Capital Gains Tax pages of your Self Assessment return for the year of transfer, with the supporting detail of the business, the valuations and the share consideration. In practice this is not a box-ticking afterthought. A late or defective claim on a transfer you assumed was tax-deferred can produce a CGT bill you did not budget for, so the claim has to be on the project plan from the outset.</p>
+<h2>Transferring property to a limited company: what the CGT looks like</h2>
+<p>Take a landlord whose actively managed portfolio of furnished lets is worth £1.2m at open market value against a total base cost of £700,000. The embedded gain is £500,000.</p>
+<p><strong>Scenario one: the relief applies in full.</strong> The activity qualifies as a business, the whole portfolio transfers to the company wholly in exchange for newly issued shares, and the s.162 claim is made in time. No CGT arises. The £500,000 gain reduces the base cost of the shares, which are worth £1.2m and carry a base cost of £700,000.</p>
+<p><strong>Scenario two: a fifth taken as a director's loan.</strong> The landlord takes £240,000 of the value as a loan account rather than shares. Four fifths of the gain, £400,000, is rolled over. One fifth, £100,000, is chargeable now. After the £3,000 annual exempt amount and at the 24% higher rate, that is roughly £23,280 of CGT brought forward in exchange for a £240,000 balance to draw down tax free over time. Neither outcome is automatically better; it turns on how much cash you need out and how soon.</p>
+<p><strong>Scenario three: the business test fails.</strong> Nothing is deferred. The full £500,000 gain is chargeable at market value because you and the company are connected. With the annual exempt amount applied and almost the whole gain sitting above the higher-rate threshold, the charge is close to £119,000, reportable and payable within 60 days of completion through the UK property service, not at the following 31 January. That timing catches people out: it lands months before the company has generated anything.</p>
+<aside><p>The gap between scenario one and scenario three on the same portfolio is around £119,000, and it is decided entirely by evidence you either gathered before the transfer or did not. If you are within a year of incorporating, the business case is the work to start now. Speak to us about testing it before anything moves.</p></aside>
 
-<h2>Incorporation relief is a CGT relief only: do not forget SDLT</h2>
-<p>The most expensive misunderstanding in this area is treating CGT as the whole story. Incorporation relief defers CGT. It does nothing for Stamp Duty Land Tax.</p>
-<p>When properties transfer to a company, the company is normally liable for SDLT on the market value of what it acquires, even though no cash changes hands, because the parties are connected. On residential property that includes the additional dwellings surcharge, which rose from 3% to 5% for transactions on or after 31 October 2024. For many portfolios the SDLT is the single largest cash cost of incorporating, and it lands immediately, unlike the CGT that has just been deferred.</p>
-<p>The position differs across the UK:</p>
+<h2>Incorporation relief on a whole portfolio, and into an existing company</h2>
+<p>Two variations come up constantly.</p>
+<p><strong>Portfolio-scale transfers.</strong> Section 162 is well suited to moving an entire portfolio in one transaction, and at portfolio scale the relief is usually worth more than everything else in the deal. The condition that helps here is also the one that constrains you: because the whole business must go, a large portfolio moves as a single event, with every property valued at the same transfer date. That means one valuation exercise, one set of conveyancing, one refinancing package and one claim. It is a project, not a form.</p>
+<p><strong>Transfers into an existing company.</strong> Nothing in section 162 requires a newly formed company. An existing company, including one that already holds property or trades, can receive the business and issue fresh shares as consideration. The difficulty is valuation and dilution: the shares issued must properly reflect the value of the business going in relative to what the company already owns. Get that wrong and you have both a defective relief position and a shareholder problem. Where other people already hold shares, the transaction also needs to make commercial sense from their side, not just yours.</p>
+<p>If you are weighing whether to move everything at once or in stages, the timing strategy sits in our guide to <a href="/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach">incorporating existing portfolios with a phased approach</a>. Be aware that phasing and the whole-business condition pull against each other.</p>
+
+<h2>The rule change that catches people out: you now have to claim it</h2>
+<p>For most of its life, section 162 was automatic. Meet the conditions and the relief simply applied, unless you elected out under s.162A. That is no longer the position.</p>
+<p>For transfers on or after 6 April 2026, Finance Act 2026 amended section 162 so the relief must be claimed. The new s.162(1)(b) requires a claim, with the information HMRC specifies, by the first anniversary of the 31 January following the tax year of the transfer. A transfer in 2026/27 must therefore be claimed by 31 January 2029. Finance Act 2026 also repealed the old s.162A disapplication election, so the position is now binary: claim it, or take the CGT charge.</p>
+<p>The claim goes through the Capital Gains Tax pages of your Self Assessment return for the year of transfer, supported by the business evidence, the valuations and the share consideration. This is not a box-ticking afterthought at the end of the project. A late or defective claim converts a transfer you believed was tax deferred into a six-figure liability, and a great deal of guidance still online was written before the change.</p>
+
+<h2>Incorporation relief is a CGT relief only: it does nothing for SDLT</h2>
+<p>The most expensive misunderstanding in this area is treating CGT as the whole story. Section 162 relieves Capital Gains Tax. It has no effect whatsoever on Stamp Duty Land Tax.</p>
+<p>When properties transfer to a connected company, the company is charged SDLT on the market value of what it acquires under s.53 of the Finance Act 2003, even though no cash passes. On residential property that includes the additional dwellings surcharge, which rose to 5% for transactions on or after 31 October 2024. For most portfolios the SDLT is the largest immediate cash cost of incorporating, and unlike the CGT it has just deferred, it is payable now.</p>
 <table>
 <thead>
 <tr><th>Jurisdiction</th><th>Tax on the transfer</th><th>Additional-dwelling charge</th></tr>
 </thead>
 <tbody>
 <tr><td>England and Northern Ireland</td><td>SDLT</td><td>5% surcharge (from 31 October 2024)</td></tr>
-<tr><td>Scotland</td><td>LBTT (Revenue Scotland)</td><td>8% Additional Dwelling Supplement (from 5 December 2024)</td></tr>
+<tr><td>Scotland</td><td>LBTT (Revenue Scotland)</td><td>8% Additional Dwelling Supplement</td></tr>
 <tr><td>Wales</td><td>LTT (Welsh Revenue Authority)</td><td>Higher residential LTT rates</td></tr>
 </tbody>
 </table>
-<p>There is a statutory route that can reduce or remove this charge: partnership relief under Schedule 15 of the Finance Act 2003. Where a genuine partnership owns and runs the portfolio, and that partnership transfers the properties to a company connected with the partners, the sum-of-the-lower-proportions calculation can cut the chargeable consideration, in some cases to nil. The relief is real and statutory, but it is tightly conditioned. It requires a substantive, pre-existing partnership, evidenced by filed SA800 partnership returns and partnership accounts, ideally operating for a couple of years before the transfer. A partnership created weeks before incorporation purely to access the relief is exactly what HMRC's general anti-avoidance rule at s.75A is designed to strike down. We deal with the SDLT cost of incorporation in more detail in our guide to <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">paying stamp duty twice on incorporation</a>.</p>
+<p>One statutory route can reduce the charge, and it is not incorporation relief: partnership relief under Schedule 15 of the Finance Act 2003, available only where a genuine, substantive partnership already owns and runs the portfolio. The conditions are demanding and the anti-avoidance exposure is real, so treat it as a route to be tested rather than assumed. Our guide to <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation and paying stamp duty twice</a> covers that route and the wider SDLT cost in full.</p>
 
-<h2>What incorporation relief does and does not cover</h2>
-<p>It helps to be precise about what is in scope, because each tax behaves differently on incorporation.</p>
+<h2>What the relief covers, and what it leaves alone</h2>
 <table>
 <thead>
 <tr><th>Tax or cost</th><th>Effect of incorporation relief</th></tr>
 </thead>
 <tbody>
-<tr><td>CGT on the property gains</td><td>Deferred (rolled into the base cost of the shares), if conditions met and the claim is made</td></tr>
-<tr><td>SDLT / LBTT / LTT</td><td>Not relieved. Charged on market value unless Schedule 15 partnership relief applies</td></tr>
-<tr><td>Existing mortgages</td><td>Typically need to be repaid and replaced with company lending</td></tr>
-<tr><td>Future Corporation Tax on profits and gains</td><td>Applies to the company going forward; unaffected by the relief</td></tr>
-<tr><td>Tax on extracting profits</td><td>Dividends or salary taxed when drawn; the deferred CGT is separate</td></tr>
+<tr><td>CGT on the property gains</td><td>Deferred into the base cost of the shares, if the conditions are met and the claim is made</td></tr>
+<tr><td>SDLT, LBTT or LTT</td><td>Not relieved. Charged on market value unless Schedule 15 partnership relief applies</td></tr>
+<tr><td>Existing mortgages</td><td>Typically repayable and replaced with company lending</td></tr>
+<tr><td>Corporation Tax on future profits and gains</td><td>Applies to the company going forward, 19% to 25% by profit level</td></tr>
+<tr><td>Tax on extracting profits</td><td>Dividends taxed at 10.75%, 35.75% or 39.35% from 2026/27; the deferred CGT is separate</td></tr>
 </tbody>
 </table>
-<p>The headline benefit landlords usually want is on the income side rather than CGT. Inside a company, mortgage interest is fully deductible against profits, which sidesteps the <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">Section 24 finance-cost restriction</a> that limits higher-rate landlords to a basic-rate tax credit on interest. Incorporation relief simply makes it possible to get into that structure without an upfront CGT charge. Whether the income-side saving justifies the SDLT cost, the refinancing and the ongoing compliance is a separate calculation, which is why the CGT question should never be answered in isolation.</p>
+<p>The benefit landlords are usually chasing is on the income side rather than CGT. Inside a company, mortgage interest is fully deductible against profits, which sidesteps the <a href="/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24">Section 24 finance-cost restriction</a> that limits higher-rate landlords to a basic-rate credit on interest. Incorporation relief simply makes it possible to reach that structure without an upfront CGT charge. Whether the income-side saving justifies the SDLT, the refinancing and the ongoing compliance is a wholly separate calculation.</p>
 
-<h2>If your portfolio is not a business: the alternatives</h2>
-<p>Plenty of landlords want a company but cannot pass the business test. Incorporation relief is then off the table, but a transfer is not impossible. It simply triggers CGT, and the planning shifts to managing that charge.</p>
+<h2>If your portfolio is not a business: what is left</h2>
+<p>Plenty of landlords want a company but cannot pass the business test. Incorporation relief is then off the table. A transfer is still possible; it just triggers CGT, and the planning shifts to managing the size and timing of that charge.</p>
 <h3>Spreading transfers across tax years</h3>
-<p>You can transfer interests gradually, using each owner's annual exempt amount, currently £3,000 per person, each year. For a couple holding jointly, two allowances are available annually. This is slow and only chips at the edges of a large gain, but it suits owners with modest gains and patience.</p>
+<p>Interests can be moved gradually, using each owner's annual exempt amount of £3,000 a year, or £6,000 for a couple holding jointly. This is slow and only chips at the edges of a large gain, but it suits owners with modest gains and time.</p>
 <h3>Spouse transfers to use both positions</h3>
-<p>Transfers between spouses and civil partners are made on a no-gain, no-loss basis under s.58 TCGA 1992, so a portfolio can be moved into joint names without CGT. Done genuinely, and combined with running the portfolio as a real partnership, this can support both the s.162 business framing and Schedule 15 SDLT relief later. It has to reflect commercial reality, not exist only on paper.</p>
-<h3>Timing a transfer in a lower-income year</h3>
-<p>Residential property CGT is charged at 18% for gains falling in the basic-rate band and 24% above it. A transfer made in a year when your other income is low keeps more of the gain in the 18% band. This is marginal tuning rather than a strategy in itself, but it can matter on a single sizeable disposal.</p>
-<p>Gift holdover relief under s.165 is a different mechanism again and is generally not available for straightforward investment property, so it is rarely the answer for a buy-to-let landlord. We compare the routes in our guide to <a href="/blog/incorporation-and-company-structures/incorporation-holdover-relief-property">incorporation and holdover relief for property</a>.</p>
+<p>Transfers between spouses and civil partners are on a no-gain, no-loss basis under s.58 TCGA 1992, so a portfolio can move into joint names without CGT. Done genuinely, and combined with running the portfolio as a real partnership, this can support both the section 162 business framing and Schedule 15 relief later. It has to reflect commercial reality.</p>
+<h3>Timing a transfer into a lower-income year</h3>
+<p>Residential gains are charged at 18% within the basic-rate band and 24% above it. A transfer in a year when other income is low keeps more of the gain in the 18% band. That is marginal tuning rather than a strategy, but on one sizeable disposal it can be worth real money.</p>
+<p>Gift holdover relief under s.165 is a different mechanism and is generally unavailable for straightforward investment property, so it is rarely the answer for a buy-to-let landlord. We compare the routes in our guide to <a href="/blog/incorporation-and-company-structures/incorporation-holdover-relief-property">incorporation and holdover relief for property</a>.</p>
 
-<h2>A worked CGT picture</h2>
-<p>Take a landlord whose actively managed portfolio of furnished lets has an open market value of £1.2m and a total base cost of £700,000, giving an embedded gain of £500,000. If the activity qualifies as a business and the whole portfolio transfers to a company wholly in exchange for shares, incorporation relief rolls the £500,000 gain into the base cost of the shares. No CGT is due on the transfer, provided the claim is made in time.</p>
-<p>If the same landlord instead took, say, a fifth of the value out as a director's loan rather than shares, only four fifths of the gain would be rolled over and one fifth, £100,000, would be chargeable now. At 24% that is £24,000 of CGT brought forward, in exchange for a £240,000 tax-free loan balance to draw on later. Neither figure is automatically better. The choice depends on how much you need to extract, how soon, and what the company's cash flow looks like. Our <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT on transfer to a limited company guide</a> walks through the calculation, and the wider trade-offs sit in our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to buy-to-let limited companies</a>.</p>
-<p>This deliberately carries no SDLT figure, because that is the variable that most often decides the case. On a £1.2m residential portfolio the SDLT, with the 5% surcharge, can be substantial, and it is payable now. That is precisely why incorporation relief on the CGT side is necessary but not sufficient: the SDLT and refinancing have to be affordable in cash for the deal to make sense.</p>
-
-<h2>Practical steps to incorporate without a CGT charge</h2>
-<p>If you are working towards a clean s.162 incorporation, the sequence matters.</p>
+<h2>How to use incorporation relief properly: the CGT-specific steps</h2>
+<p>The sequence below covers the CGT side only. The full operational checklist for the incorporation itself sits in our guide to <a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">incorporating a property portfolio in 2026</a>.</p>
 <ul>
-<li><strong>Build the business evidence first.</strong> Record hours, activities, services, staff and systems before any transfer, so the business test is supported by contemporaneous proof, not reconstructed later.</li>
-<li><strong>Get independent valuations.</strong> Obtain RICS open market valuations at the transfer date for every property. These fix the gain and the share value, and they are the first thing HMRC tests.</li>
-<li><strong>Confirm finance is available.</strong> Line up company lending before you commit, since most personal buy-to-let mortgages must be repaid on transfer and not every portfolio refinances cleanly.</li>
-<li><strong>Decide the long-term structure now.</strong> Settle on one company, the share classes and who holds them before you incorporate. Splitting into multiple SPVs afterwards can crystallise the very gain you deferred.</li>
-<li><strong>Model SDLT and any partnership route.</strong> Quantify the SDLT, LBTT or LTT and test whether a genuine partnership and Schedule 15 relief realistically apply. Do not assume the surcharge away.</li>
-<li><strong>Diarise the s.162 claim.</strong> Note the claim deadline at the start, not the end. The relief is no longer automatic.</li>
+<li><strong>Build the business evidence first.</strong> Record hours, activities, services, staff and systems before any transfer. Contemporaneous proof is what survives an enquiry; a narrative written afterwards does not.</li>
+<li><strong>Get independent valuations at the transfer date.</strong> RICS open market valuations for every property fix both the gain and the share value. HMRC tests these first.</li>
+<li><strong>Decide the share-versus-loan split deliberately.</strong> Model the CGT cost of every pound taken outside the shares against the value of the loan balance it creates.</li>
+<li><strong>Settle the long-term structure before you move.</strong> One company, the share classes, and who holds them. Splitting into multiple SPVs after a s.162 incorporation can crystallise the very gain you deferred.</li>
+<li><strong>Model the SDLT and any partnership route separately.</strong> Never assume the surcharge away, and never let a CGT saving carry an SDLT bill the deal cannot fund.</li>
+<li><strong>Diarise the s.162 claim at the start.</strong> The relief is no longer automatic, and the deadline is the first anniversary of the 31 January following the tax year of transfer.</li>
 </ul>
 
 <h2>Common mistakes that cost landlords the relief</h2>
-<p><strong>Assuming a buy-to-let counts as a business.</strong> The default HMRC position is investment. Without genuine activity, the relief simply does not apply, and discovering that after the transfer is the worst outcome.</p>
-<p><strong>Keeping the best properties out.</strong> The whole business must go. Cherry-picking breaks the relief on everything transferred.</p>
-<p><strong>Pulling too much out as cash or loan.</strong> Consideration taken outside the shares is not rolled over, so an over-large director's loan partially defeats the deferral.</p>
-<p><strong>Forgetting SDLT.</strong> The CGT can be perfectly deferred and the deal can still be uneconomic once the immediate SDLT is added.</p>
-<p><strong>Missing the claim deadline.</strong> For transfers from 6 April 2026, no claim means no relief. This is new, and a lot of older guidance has not caught up.</p>
+<p><strong>Assuming a buy-to-let counts as a business.</strong> The default HMRC position is investment. Discovering that after the transfer is the worst possible sequence, because the disposal has already happened.</p>
+<p><strong>Keeping the best properties out.</strong> The whole business must go. Cherry-picking breaks the relief on everything that moved, not just on what was held back.</p>
+<p><strong>Pulling too much out as cash or loan.</strong> Consideration outside the shares is not rolled over, so an over-large director's loan partially defeats the deferral it was meant to complement.</p>
+<p><strong>Assuming commercial property is excluded.</strong> It is not. Landlords with shops, offices or industrial units sometimes rule themselves out of a relief they were better placed than most to claim.</p>
+<p><strong>Forgetting SDLT.</strong> The CGT can be perfectly deferred and the transaction still uneconomic once the immediate stamp duty is added.</p>
+<p><strong>Missing the claim deadline.</strong> For transfers from 6 April 2026, no claim means no relief. This is new, and most older guidance has not caught up.</p>
 
 <h2>Is incorporating right for your portfolio?</h2>
-<p>Even where the relief is available, incorporating is not always the right call. A company pays Corporation Tax on rental profits and on gains it later makes, and you face a further tax charge when you extract profits as dividends or salary. You also lose personal CGT reliefs such as Private Residence Relief on any property you might otherwise have moved into, and you take on company filing and administration.</p>
-<p>Incorporation tends to reward higher-rate landlords with a genuine, actively managed, geared portfolio who are squeezed by Section 24 and who intend to retain and reinvest profits rather than live off them. It rarely rewards a small agent-managed holding where the business test fails, the SDLT is heavy relative to the portfolio, and the rent is needed as income. The honest answer depends on your marginal rate, gearing, time horizon and plans for the cash, which is why the modelling is worth doing properly before anything moves. The same trade-offs feed into the wider <a href="/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-uk-landlords">incorporation decision in light of the 2027 property income tax rates</a>, since separate property rates of 22%, 42% and 47% take effect from 6 April 2027 in England, Wales and Northern Ireland.</p>
+<p>Even where the relief is available, incorporating is not automatically correct. A company pays Corporation Tax on rental profits and on gains it later makes, and you face a further charge when you extract profits. You lose personal CGT reliefs, including Private Residence Relief on any property you might one day have lived in, and you take on filing and administration.</p>
+<p>Incorporation tends to reward higher-rate landlords with a genuine, actively managed, geared portfolio who are squeezed by Section 24 and who intend to retain and reinvest profits rather than live off them. It rarely rewards a small agent-managed holding where the business test fails, the SDLT is heavy relative to the portfolio, and the rent is needed as income. The pressure is rising either way: separate property income tax rates of 22%, 42% and 47% take effect from 6 April 2027 in England, Wales and Northern Ireland, which feeds into the <a href="/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-uk-landlords">2027 rates and the incorporation decision</a>.</p>
 
-<h2>Getting it right</h2>
-<p>Incorporation relief is a genuine route to move a rental business into a company without an immediate CGT charge, but it rewards precision: a defensible business case, a clean whole-business transfer for shares, a properly modelled SDLT position, and a timely claim. The pieces interact, and getting one wrong can undo the others. If you are weighing it up, start by documenting how you actually run the portfolio and gathering the numbers. The earlier the planning begins, the more of these levers remain available to you.</p>
+<h2>What to do next, in order</h2>
+<p>The order matters more than the effort, because two of these steps stop being available once a transfer happens.</p>
+<ul>
+<li><strong>First, before anything else, start the activity log.</strong> Hours, tasks, tenant contact, repairs handled, decisions made. Evidence created after the transfer is worth far less than evidence created before it, and this is the step that cannot be recovered later.</li>
+<li><strong>Second, price the SDLT.</strong> Work out the stamp duty on a market-value transfer of the whole portfolio at the 5% surcharge. If that number is unaffordable in cash, the CGT analysis is academic and you can stop here.</li>
+<li><strong>Third, test the finance.</strong> Confirm with a lender that the whole portfolio can be refinanced into a company before you fix a transfer date.</li>
+<li><strong>Fourth, decide the share and loan split, then the company structure.</strong> Both are hard to change afterwards, and restructuring later can crystallise the gain you just deferred.</li>
+<li><strong>Fifth, diarise the claim.</strong> The first anniversary of the 31 January following the tax year of transfer, entered on the day the transfer completes.</li>
+</ul>
+<p>Wherever in the UK you are based, the relief works on the same terms. If you are within a year of incorporating and the first step is not already running, that is the one to start this week.</p>
 
 <h2>Related reading</h2>
 <ul>
+<li><a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">Section 162 incorporation relief for property landlords: the statutory test</a></li>
 <li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to transfer property into a limited company in the UK</a></li>
-<li><a href="/blog/incorporation-and-company-structures/incorporation-holdover-relief-property">Incorporation holdover relief for property: complete UK guide</a></li>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">The SDLT cost of transferring property to a company</a></li>
 <li><a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on incorporation: do you pay stamp duty twice?</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a property portfolio in 2026</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach">Incorporating existing portfolios: the phased approach</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT on transferring property to a limited company</a></li>
 </ul>
+<p>External references: <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/162">TCGA 1992 s.162 at legislation.gov.uk</a>, HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700">Capital Gains Manual guidance on incorporation relief</a>, HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1020">Property Income Manual on when letting is a business</a>, <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/15">FA 2003 Schedule 15 partnership provisions</a>, the <a href="https://www.gov.uk/guidance/stamp-duty-land-tax-rates-for-higher-value-residential-property">gov.uk SDLT higher rates guidance</a>, and <a href="https://www.gov.uk/capital-gains-tax/rates">gov.uk Capital Gains Tax rates</a>.</p>

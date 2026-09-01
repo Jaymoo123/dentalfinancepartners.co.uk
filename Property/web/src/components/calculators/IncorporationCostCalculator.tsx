@@ -17,6 +17,14 @@ export function IncorporationCostCalculator({
   const [annualRentalIncome, setAnnualRentalIncome] = useState(24000);
   const [mortgageInterest, setMortgageInterest] = useState(9000);
   const [taxBand, setTaxBand] = useState<"basic" | "higher" | "additional">("higher");
+  // One-off professional fees + running cost (page variant only; the embed keeps
+  // its current height). All default 0 so the tax-only figures are unchanged.
+  const [solicitorFee, setSolicitorFee] = useState(0);
+  const [valuationFee, setValuationFee] = useState(0);
+  const [lenderFee, setLenderFee] = useState(0);
+  const [annualRunningCost, setAnnualRunningCost] = useState(0);
+
+  const showFees = variant !== "embed";
 
   // All math via the shared incorporation engine (lib/incorporation.ts), which
   // reuses the locked CGT / SDLT / Section 24 / Corporation Tax / dividend modules,
@@ -27,6 +35,10 @@ export function IncorporationCostCalculator({
     annualRentalIncome,
     mortgageInterest,
     taxBand,
+    solicitorFee: showFees ? solicitorFee : 0,
+    valuationFee: showFees ? valuationFee : 0,
+    lenderFee: showFees ? lenderFee : 0,
+    annualRunningCost: showFees ? annualRunningCost : 0,
   });
 
   const cgtCost = res.cgtCost;
@@ -125,6 +137,38 @@ export function IncorporationCostCalculator({
               <option value="additional">Additional rate (45%)</option>
             </select>
           </div>
+
+          {showFees && (
+            <fieldset className="space-y-4 rounded-xl border-2 border-slate-200 p-4">
+              <legend className="px-1 text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider">
+                One-off fees and running costs (optional)
+              </legend>
+              {(
+                [
+                  ["inc-solicitor-fee", "Solicitor / conveyancing fee", solicitorFee, setSolicitorFee, "Typically £900-£1,800 for a company transfer"],
+                  ["inc-valuation-fee", "Valuation fee", valuationFee, setValuationFee, "Lender or RICS valuation, typically £250-£500"],
+                  ["inc-lender-fee", "Mortgage arrangement / broker fee", lenderFee, setLenderFee, "Typically £1,000-£2,000 if refinancing into the company"],
+                  ["inc-running-cost", "Annual company running cost", annualRunningCost, setAnnualRunningCost, "Accountant, filings, registered office. Shown separately, never mixed into the tax saving"],
+                ] as const
+              ).map(([id, label, value, setter, help]) => (
+                <div key={id}>
+                  <label htmlFor={id} className="block text-xs font-bold text-slate-700 mb-1">
+                    {label}
+                  </label>
+                  <div className="flex items-center gap-2">
+                    <span className="text-base font-bold text-slate-900">£</span>
+                    <NumberInput
+                      id={id}
+                      value={value}
+                      onChange={setter}
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-1.5 text-base font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[40px]"
+                    />
+                  </div>
+                  <p className="mt-1 text-xs text-slate-500">{help}</p>
+                </div>
+              ))}
+            </fieldset>
+          )}
         </div>
 
         <ResultGate campaign="incorporation-cost-calculator" enabled={variant !== "embed"}>
@@ -143,6 +187,12 @@ export function IncorporationCostCalculator({
                 <span className="text-slate-400">SDLT (incl. 5% surcharge)</span>
                 <span className="font-semibold text-slate-300">£{sdltCost.toLocaleString("en-GB", { maximumFractionDigits: 0 })}</span>
               </div>
+              {res.professionalFees > 0 && (
+                <div className="flex justify-between">
+                  <span className="text-slate-400">Professional fees (solicitor, valuation, lender)</span>
+                  <span className="font-semibold text-slate-300">£{res.professionalFees.toLocaleString("en-GB", { maximumFractionDigits: 0 })}</span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -152,6 +202,12 @@ export function IncorporationCostCalculator({
               £{annualSaving.toLocaleString("en-GB", { maximumFractionDigits: 0 })}
             </div>
             <div className="mt-2 text-xs sm:text-sm text-slate-300">per year after incorporating</div>
+            {res.annualRunningCost > 0 && (
+              <div className="mt-2 flex justify-between text-xs sm:text-sm">
+                <span className="text-slate-400">Annual company running cost (not counted in the saving)</span>
+                <span className="font-semibold text-slate-300">£{res.annualRunningCost.toLocaleString("en-GB", { maximumFractionDigits: 0 })}</span>
+              </div>
+            )}
           </div>
 
           <div className="border-t border-slate-700 pt-4 sm:pt-6">

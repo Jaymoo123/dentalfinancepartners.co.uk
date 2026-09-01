@@ -244,12 +244,18 @@ export default function StampDutyCalculatorPage() {
               <p>
                 Stamp duty on non-residential property runs on a different table entirely: 0% up to £150,000,
                 2% from £150,001 to £250,000 and 5% above £250,000, with no additional-property surcharge. That
-                table covers shops, offices, land and mixed-use buildings, so a purchase of business property
-                will not match the figure this calculator gives you.
+                table covers shops, offices, land and mixed-use buildings. It also applies automatically when a
+                single transaction includes six or more dwellings (s.116(7) FA 2003 treats the deal as
+                non-residential, with no election needed), which is why the calculator has a six-or-more-dwellings
+                switch: at portfolio scale the non-residential table usually charges far less than residential
+                rates plus the surcharge.
               </p>
               <p>
                 Moving a property you already own into your own company is a purchase for stamp duty, charged
-                on market value rather than on what you pay yourself. The cost of that move is set out in our{" "}
+                on market value rather than on what you pay yourself (s.53 FA 2003), even if no money changes
+                hands. Switch on the transfer-to-your-own-company mode above and the calculator charges the
+                open-market value you enter instead of a price. The full legal treatment and worked examples
+                are in our{" "}
                 <Link
                   className="text-emerald-700 underline"
                   href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost"

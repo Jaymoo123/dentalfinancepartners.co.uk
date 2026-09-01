@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { IncorporationCostCalculator } from "@/components/calculators/IncorporationCostCalculator";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
@@ -94,6 +95,21 @@ export default function IncorporationCostCalculatorPage() {
               property business is transferred as a going concern, and <strong>partnership SDLT relief</strong>{" "}
               (FA 2003 Sch 15) can reduce the SDLT where a genuine, pre-existing letting partnership
               incorporates. Both are tightly conditioned and HMRC scrutinises them closely.
+            </p>
+            <p>
+              Tax is not the whole bill. A real transfer also carries professional fees (conveyancing
+              solicitor, valuation, and lender or broker fees if you refinance into the company), and the
+              company itself costs money to run each year. The optional fee fields in the calculator add
+              those to the upfront total, and the annual running cost is shown as its own line, kept
+              deliberately separate from the tax-saving comparison. For the full year-by-year budget of
+              running a property company, see our{" "}
+              <Link
+                className="text-emerald-700 underline"
+                href="/blog/incorporation-and-company-structures/property-company-running-costs-annual-budget"
+              >
+                guide to property company running costs
+              </Link>
+              .
             </p>
             <p>
               This is a directional estimate. The SDLT figure here uses the headline surcharge; your actual

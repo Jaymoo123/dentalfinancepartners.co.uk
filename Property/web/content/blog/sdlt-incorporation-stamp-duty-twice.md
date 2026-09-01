@@ -1,233 +1,221 @@
 ---
-title: "SDLT on Incorporation: Do I Pay Stamp Duty Twice in 2026/27?"
+title: "Stamp Duty on Property Incorporation UK: Do You Pay It Twice?"
 slug: "sdlt-incorporation-stamp-duty-twice"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice"
 date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "SDLT on Incorporation 2026: Do You Pay Stamp Duty Twice?"
-metaDescription: "Yes, transferring a BTL portfolio to your limited company is normally a chargeable SDLT event at market value with the 5% surcharge."
-altText: "UK property documents and calculator showing SDLT incorporation calculations for landlords"
+metaTitle: "Stamp Duty on Property Incorporation UK 2026/27"
+metaDescription: "Since 31 October 2024 incorporation carries the 5% surcharge. When SDLT relief exists, the Sch 15 partnership route, and the 3-year trap."
+altText: "UK property documents and share certificates showing an incorporation transfer to a limited company"
 image: ""
-h1: "SDLT on Incorporation: Do I Pay Stamp Duty Twice in 2026/27?"
-summary: "Transferring residential property from an individual into a wholly-owned limited company is a chargeable SDLT event at market value, including the 5% additional-dwellings surcharge that has applied since 31 October 2024. The only mainstream route to mitigate the SDLT is genuine partnership incorporation under FA 2003 Sch 15, where the transfer out of the partnership is charged under paragraph 18 on market value less the sum of the lower proportions. Multiple Dwellings Relief, often quoted in older guides, was abolished on 1 June 2024 and is no longer available. This guide sets out the maths, the partnership route, and the wider CGT and corporation-tax interactions for portfolios incorporating in 2026/27."
-dateModified: "2026-08-17"
+h1: "Stamp Duty on Property Incorporation UK: Do You Pay It Twice?"
+summary: "Moving a rental portfolio into your own limited company is a fresh chargeable SDLT event, even though you already paid stamp duty when you bought the properties. That is the double charge landlords ask about, and the answer is that it is real but not always unavoidable. This guide sets out why the charge arises at all, the three routes where relief or automatic non-residential treatment genuinely applies (FA 2003 Sch 15 partnership incorporation, the s.116(7) six-dwellings deeming, and Sch 7 group relief), the 3-year traps that claw each one back, and how the relief is claimed on the SDLT return."
+dateModified: "2026-09-01"
 schema: ""
 faqs:
-  - question: "Do I always pay SDLT when transferring property to my own company?"
-    answer: "Almost always yes. Section 53 of the Finance Act 2003 deems the transfer to happen at market value when the buyer is a company connected to the seller (your wholly-owned NewCo is connected). Full residential SDLT plus the 5% additional-dwellings surcharge applies. The only mainstream route to eliminate the SDLT is genuine partnership incorporation under Schedule 15 of FA 2003. The incorporation step is a transfer out of the partnership to a connected company, charged under paragraph 18 at market value less the sum of the lower proportions (calculated under paragraph 20); paragraph 10 is the mirror rule for transfers into a partnership. If the portfolio is held in a real, pre-existing letting partnership (with partnership tax returns, partnership accounting, joint borrowing) and the partners take all the shares in matching proportions, the chargeable consideration is reduced to nil. This route is heavily scrutinised and is not a quick fix for a husband-and-wife portfolio."
+  - question: "Do I pay stamp duty twice on incorporation?"
+    answer: "In economic terms yes, and that is the honest answer. You paid SDLT when you bought each property personally, and the transfer into your own company is a separate land transaction that is charged again. There is no credit for the tax you paid the first time. The second charge is not automatic in every case: genuine partnership incorporation under Schedule 15 can reduce the chargeable consideration to nil, and six or more dwellings in one transaction are deemed non-residential. Outside those routes, you pay twice."
+  - question: "Is there SDLT relief on incorporation?"
+    answer: "There is no relief called incorporation relief in the SDLT code. The CGT relief in section 162 TCGA 1992 carries that name and does nothing for stamp duty. What exists on the SDLT side is Schedule 15 paragraph 18 of FA 2003, which charges a transfer out of a genuine partnership on market value reduced by the sum of the lower proportions, and can reach nil. Group relief in Schedule 7 covers later intra-group moves. Neither is available to a straightforward sole owner transferring to a new company."
+  - question: "What is the SDLT 3-year trap on business incorporations?"
+    answer: "Two separate three-year rules sit around an incorporation. Schedule 15 paragraph 17A attaches to the earlier transfer of property into the partnership, not to the paragraph 18 transfer out: for three years after that transfer in, withdrawing capital, repaying a partner loan or reducing an interest is a chargeable transaction in its own right. Schedule 7 paragraph 3 withdraws group relief entirely if the transferee company leaves the group within three years. Both turn a nil charge into a market-value one, with interest."
+  - question: "Does the partnership route avoid SDLT on incorporation?"
+    answer: "It can, but only where a real letting partnership already exists. The transfer out to a connected company is charged under Schedule 15 paragraph 18 on market value multiplied by one minus the sum of the lower proportions. Where the partners take all the company shares in their existing partnership proportions, that sum reaches 100% and the chargeable consideration falls to nil. HMRC test the substance, looking for SA800 returns, partnership accounts and joint borrowing over a sustained period, not a partnership created weeks before completion."
+  - question: "Is stamp duty land tax incorporation relief still available?"
+    answer: "The Schedule 15 partnership route is still in the legislation and still works where the conditions are met. What is gone is Multiple Dwellings Relief, abolished by Finance (No.2) Act 2024 for transactions with an effective date on or after 1 June 2024, which many older guides still present as the portfolio incorporation answer. The six-dwellings deeming in section 116(7) FA 2003 survived that abolition and remains the principal route for portfolio-scale transfers of six or more dwellings."
+  - question: "How do I claim incorporation relief on the SDLT return?"
+    answer: "Partnership relief is claimed on the SDLT1 return by entering the relief code for partnership transactions and reporting the chargeable consideration as reduced by the sum of the lower proportions, not as market value. The return is due within 14 days of the effective date. The six-dwellings rule is different: it needs no claim at all, because the dwellings are simply reported on the non-residential basis. Group relief must be positively claimed, with the code entered on the return."
+  - question: "Is stamp duty payable on a sale from my personal name to my ltd company?"
+    answer: "Yes. Your wholly owned company is a person connected with you, so section 53 FA 2003 deems the chargeable consideration to be no less than the property's market value even where you transfer at book cost, at the outstanding mortgage balance or for nothing at all. Writing a nominal price into the transfer changes nothing. The company also has no main residence to replace, so the 5% additional dwellings surcharge applies to its very first purchase."
   - question: "Is Multiple Dwellings Relief still available on portfolio incorporation?"
-    answer: "No. Multiple Dwellings Relief (MDR) was abolished by Finance (No.2) Act 2024 for transactions with an effective date on or after 1 June 2024. Some older blog guides still recommend it, but you cannot claim MDR on any portfolio incorporation completed on or after 1 June 2024. Sub-sale arrangements and option arrangements designed to crystallise MDR before the cut-off are also blocked by anti-avoidance. The relief is gone."
-  - question: "What is the SDLT cost on a £1m portfolio incorporation in 2026/27?"
-    answer: "On a £1m portfolio (typically 4-6 properties) transferred from an individual to their wholly-owned NewCo in 2026/27 at market value, SDLT is calculated on each property using residential additional-dwelling rates: 5% on the first £125k, 7% on £125k-£250k, 10% on £250k-£925k, 15% on £925k-£1.5m. If the portfolio is six flats averaging £166,667 each, total SDLT is approximately £56,000 (around 5.6%). If it is two flats averaging £500,000, total SDLT is approximately £62,500 (6.25%). The 17% flat rate at Schedule 4A FA 2003 (raised from 15% on 31 October 2024) can apply on company-purchased single dwellings worth over £500,000 unless ATED relief conditions are met."
+    answer: "No. Finance (No.2) Act 2024 section 7 repealed Schedule 6B FA 2003 in full, and MDR is unavailable for any land transaction with an effective date on or after 1 June 2024. Anti-forestalling rules block attempts to crystallise a claim through sub-sale or option arrangements dated before the cut-off. Contracts entered into and substantially performed before 1 June 2024 sit in a narrow transitional cohort. For any incorporation being planned now, treat MDR as gone."
+  - question: "Do I need a real partnership for the SDLT route?"
+    answer: "Yes, and joint ownership is not enough. HMRC look for a partnership agreement predating the incorporation, SA800 partnership returns for each year claimed, partnership accounts and a partnership bank account, joint borrowing where the properties are mortgaged, and correspondence with agents, insurers and lenders addressed to the partnership. A couple who own three rentals jointly and file individual SA105 property pages are not a partnership, and cannot reach the Schedule 15 route without restructuring first."
   - question: "Does CGT section 162 incorporation relief avoid the SDLT?"
-    answer: "No, these are two separate taxes with separate reliefs. TCGA 1992 section 162 (incorporation relief) can defer the CGT charge that would otherwise arise on the deemed disposal to NewCo, by rolling the gain into the base cost of the shares the landlord receives in return. It does not touch SDLT. You can claim s.162 relief for CGT and still face the full SDLT bill on the same transfer. The only way to also eliminate SDLT is the partnership route under FA 2003 Sch 15 para 18."
-  - question: "Do I need a real partnership for the SDLT mitigation route?"
-    answer: "Yes. HMRC's view, set out in the SDLT Manual at SDLTM34000 onwards, is that the letting must be conducted as a genuine business in partnership, not a mere joint ownership. Indicators HMRC look for include a partnership agreement, separate partnership tax returns (SA800), separate partnership accounts and bank account, joint borrowing in the partnership name, joint VAT registration where applicable, and a sustained period of trading as a partnership before incorporation (typically two years or more). A husband and wife who own three buy-to-lets jointly but file individual SA105 returns are not a partnership and cannot use this route without restructuring first."
-  - question: "What is the 17% flat-rate SDLT and when does it apply?"
-    answer: "Finance Act 2003 Schedule 4A imposes a flat 17% SDLT rate on residential property worth over £500,000 purchased by a non-natural person (typically a company, partnership with corporate members, or collective investment scheme). The rate was raised from 15% to 17% for transactions with an effective date on or after 31 October 2024 (FA 2025 s.53). It applies instead of the standard table and the 5% additional-dwellings surcharge for that transaction. ATED relief and reliefs at Sch 4A para 5 are available when the property is purchased for a genuine letting business with no connected-party use. The relief must be claimed on the SDLT return. Missing the claim creates the full 17% charge."
-  - question: "What is the SDLT return deadline on incorporation?"
-    answer: "14 calendar days from the effective date of the transaction. The effective date is normally the completion date, but can be earlier if substantial performance occurs first (taking possession, paying 90% of the consideration). Late filing penalties start at £100, rise to £200 after three months, and become tax-geared after twelve months. Interest accrues from the due date. SDLT5 certificates issued by HMRC are required by HM Land Registry before the title can be transferred to the company."
+    answer: "No. They are different taxes with different reliefs and neither touches the other. Section 162 TCGA 1992 defers the capital gain by rolling it into the base cost of the shares you receive, and for transfers on or after 6 April 2026 it must be positively claimed rather than applying automatically. It leaves the SDLT position untouched. You can defer every pound of gain and still face full market-value stamp duty on the same transfer."
+  - question: "Does the six-dwellings rule need an election?"
+    answer: "No, and this is a common error. Section 116(7) FA 2003 provides that where six or more separate dwellings are the subject of a single transaction, the dwellings are treated as not being residential property. It is a statutory deeming, not a claim or an election, so there is no box to tick and no relief code. The buyer simply reports on the non-residential basis, which also means the 5% additional dwellings surcharge does not apply to the transaction."
   - question: "Can I incorporate gradually to spread the SDLT cost?"
-    answer: "Yes in principle, but the partnership route requires the entire partnership business to be transferred to qualify under Sch 15 para 18, so cherry-picking a few properties year by year is incompatible with that mitigation. Without partnership treatment, each property transfer is its own chargeable SDLT event at market value. Phasing then helps cash flow but not the total SDLT. For most portfolios, the right answer is either a single full incorporation through a properly constituted partnership or no incorporation at all."
-  - question: "What SDLT rates will my company pay on future acquisitions?"
-    answer: "Residential property acquisitions by a company use the same SDLT table as an individual buying an additional dwelling: 5%, 7%, 10%, 15%, and 17% across the bands. Companies do not pay first-time-buyer relief or the lower bands available to individuals buying their only home. On any single residential dwelling worth more than £500,000, the 17% flat rate at Schedule 4A FA 2003 (raised from 15% on 31 October 2024) may apply unless ATED relief conditions are met (genuine commercial letting to an unconnected tenant). Non-UK resident companies add a further 2% surcharge."
-  - question: "How does the SDLT cost interact with the CGT and corporation tax savings from incorporating?"
-    answer: "Most incorporations that make economic sense recover the SDLT cost within 4-7 years through reduced annual income tax. A higher-rate landlord with £30,000 of mortgage interest who was paying 40% income tax on rental profit pre-incorporation typically saves £8,000 to £12,000 a year of net tax after moving to a Limited company structure, because corporation tax at 19% to 25% beats personal 40% to 45% rates after Section 24. On a £1m portfolio with say £55,000 SDLT cost, payback is around 5-7 years. The longer the intended hold, the better the maths. Anything under 4 years is rarely worth incorporating for tax alone."
-  - question: "Are there refinancing costs I should add to the SDLT calculation?"
-    answer: "Yes. Existing residential BTL mortgages cannot transfer with the property to the company. They must be redeemed and replaced with limited-company BTL mortgages, which typically carry rates 0.5%-1% higher than equivalent personal products. Early repayment charges (often 1-3% of the loan) and new product fees (typically 1.5%-2% of the loan amount) add to the one-off cost. For a £750,000 portfolio borrowing total, the refinancing line alone often runs £15,000-£25,000 on top of the SDLT."
-  - question: "What records should I keep for an SDLT mitigation claim?"
-    answer: "For a partnership incorporation under Sch 15 para 18, keep the partnership agreement (predating the incorporation by at least the period you are claiming as the trading window), all SA800 partnership tax returns filed, partnership bank statements, partnership accounts, evidence of joint borrowing or joint occupancy of any business premises, evidence that profits were shared on the partnership basis rather than separately by each owner's beneficial share, and contemporaneous correspondence (including with lenders, insurers, and managing agents) addressed to the partnership rather than to individual owners. The mitigation rests on the substance of the partnership, and HMRC review the evidence in detail."
-  - question: "Should I get advice before incorporating?"
-    answer: "Yes. The SDLT, CGT, refinancing, ATED, and corporation tax interactions on a portfolio incorporation are heavily fact-dependent. Errors are expensive: a missed partnership condition can convert a zero-SDLT incorporation into a 5-7% SDLT bill, and a missed CGT s.162 condition can convert a deferred gain into an immediate one. Most reputable property tax firms offer a fixed-fee incorporation review (typically £600-£1,200) which produces a written report showing the SDLT, CGT, and post-incorporation tax position under both routes (status quo and incorporation) for the specific portfolio."
-  - question: "Do you pay stamp duty when selling a house?"
-    answer: "No. Stamp duty is a tax on buying property, so as the seller you pay nothing on the sale itself, and it is your buyer who pays on the house you are selling. If you are selling and buying, the only SDLT in the chain is on your purchase. Selling can still trigger capital gains tax where the property was not your only or main residence throughout."
-  - question: "Who pays stamp duty, and who is it paid to?"
-    answer: "The buyer pays, and it is paid to HMRC. Your conveyancer normally files the return and sends the money for you, but the liability is yours: if the return is late or the tax is short, HMRC come to you rather than to your solicitor or the seller. Both the return and the payment are due within 14 days of the effective date of the transaction, normally completion."
-  - question: "Do married couples pay the stamp duty surcharge if only one of them owns a property?"
-    answer: "Yes, in most cases. For the 5% additional-dwellings surcharge a married couple or civil partnership is tested as a single unit, so a dwelling owned by your spouse anywhere in the world counts as owned by you. If your spouse or civil partner owns a flat worth £40,000 or more and you buy in your sole name, the surcharge applies unless the purchase replaces the main residence you have both been living in. The same aggregation runs across joint buyers."
-  - question: "Can I claim back stamp duty on a buy-to-let?"
-    answer: "Usually no. The main refund route is the surcharge reclaim for a buyer who bought a new main residence before selling the old one, which is not available on a property you always intended to let. Worth checking instead is a return that applied residential rates where six or more dwellings in one transaction, or genuine mixed use, meant non-residential treatment was due. That is put right by amending the return or claiming overpayment relief."
+    answer: "Phasing helps cash flow and nothing else, and it can cost you the reliefs. The Schedule 15 route depends on the partnership business transferring as a whole, so moving a few properties a year is incompatible with it. The six-dwellings deeming needs six or more dwellings in one transaction, so splitting a portfolio across tax years can push each tranche back onto residential rates with the surcharge. Model the phased and single-transaction routes before choosing."
 ---
 
-<p>The short answer to "do I pay stamp duty twice when I incorporate my buy-to-let portfolio?" is <strong>yes, almost always</strong>. Transferring residential property from an individual to a wholly-owned limited company is a chargeable SDLT event under Finance Act 2003 section 53, calculated at the property's market value, with the 5% additional-dwellings surcharge that has applied since 31 October 2024. The only mainstream route to mitigate that bill to nil is genuine partnership incorporation under FA 2003 Schedule 15, where the transfer out of the partnership is charged under paragraph 18. Multiple Dwellings Relief (MDR), recommended by older guides, was abolished on 1 June 2024 and is no longer available.</p>
+<p>Landlords asking about stamp duty on property incorporation in the UK are usually asking one specific question: having already paid SDLT when they bought each rental, do they now pay it a second time to move those same properties into their own limited company? The blunt answer is that in economic terms you do. The transfer to your company is a separate land transaction and there is no credit for the stamp duty you paid the first time round.</p>
 
-<p>This guide walks through the rules, the partnership route, the worked SDLT on typical portfolios, and how the SDLT cost sits alongside the CGT and refinancing costs in a complete incorporation cost-benefit. It is the applied SDLT companion to our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a>.</p>
+<p>Whether the second charge actually lands is a different question, and three routes in the legislation answer it differently: genuine partnership incorporation under FA 2003 Schedule 15, the automatic six-dwellings deeming at section 116(7), and group relief at Schedule 7 for later intra-group moves. Each has a three-year rule attached that can pull the saving back after the return has been filed and accepted. Those routes, and the traps, are what follows. The figures used along the way are totals rather than band-by-band workings, and each is calculated on our <a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">SDLT cost of transferring property to a company</a>.</p>
 
-<h2>The Default Rule: Market-Value SDLT on Connected-Party Transfer</h2>
+<h2>Do I pay stamp duty twice on incorporation?</h2>
 
-<p>FA 2003 s.53 deems the chargeable consideration on a land transaction to be not less than the market value of the property where the buyer is a company that is connected to the seller. For a sole landlord transferring into their own NewCo, this means the SDLT is calculated on what the property would sell for on the open market today, not on the original purchase price and not on any artificially low nominal price written into the transfer.</p>
+<p>Yes, in substance. Stamp duty land tax is charged on acquisitions of chargeable interests, not on owners. When you bought a rental personally, that purchase was charged. When your company acquires the same property from you, that is a fresh acquisition by a different legal person, and it is charged again. Nothing in FA 2003 nets the two off, gives relief for the earlier tax, or treats the company as a continuation of you.</p>
 
-<p>The 5% additional-dwellings surcharge applies because the company is acquiring a dwelling and is "treated as having no main residence" by default (FA 2003 Sch 4ZA paras 4-6). The full SDLT rate schedule that applies is the one in our <a href="/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge">SDLT additional-dwellings table</a>:</p>
+<p>The reason the question feels unfair is that no economic ownership has changed. You owned the property before and you own the shares in the company that owns it afterwards. SDLT does not look through that. It looks at the legal transfer of the chargeable interest, and it charges it.</p>
+
+<h2>Stamp duty when moving property into a company: why the charge arises</h2>
+
+<p>Section 53 FA 2003 does the work. Where the buyer is a company connected with the seller, the chargeable consideration is deemed to be not less than the market value of the property. Your wholly owned NewCo is connected with you, so the deeming bites on every incorporation transfer.</p>
+
+<h3>Stamp duty on incorporation of a company: the trigger</h3>
+
+<p>That deeming has three practical consequences that catch landlords out. First, transferring at original cost, at the outstanding mortgage balance, or for no consideration at all makes no difference: market value is substituted. Second, the company is treated as having no main residence, so the 5% additional dwellings surcharge that has applied since 31 October 2024 attaches to its first acquisition as much as its tenth. Third, the charge falls due within 14 days of the effective date whether or not any cash has moved, so the money has to come from somewhere other than the transaction itself.</p>
+
+<p>That is as far as this page goes on the size of the charge, deliberately. For the rate tables, the treatment of the 17% flat rate on single dwellings above £500,000, and worked band-by-band calculations, use the <a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">connected-party transfer cost guide</a>. For the mechanics of executing the transfer itself, see <a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">how to transfer property into a limited company</a>.</p>
+
+<h2>Is there SDLT relief on incorporation?</h2>
+
+<p>There is no relief in the SDLT code called incorporation relief. The phrase belongs to section 162 TCGA 1992, which is a capital gains relief. Landlords search for SDLT incorporation relief and find CGT material, which is the root of a great deal of confusion. What the SDLT code actually offers is set out below.</p>
 
 <table>
 <thead>
-<tr><th>Band</th><th>Standard rate</th><th>Additional-dwellings surcharge</th><th>Total on additional dwelling</th></tr>
+<tr><th>Route</th><th>Statutory hook</th><th>SDLT outcome</th><th>Core condition</th><th>Trap</th></tr>
 </thead>
 <tbody>
-<tr><td>£0 - £125,000</td><td>0%</td><td>5%</td><td>5%</td></tr>
-<tr><td>£125,001 - £250,000</td><td>2%</td><td>5%</td><td>7%</td></tr>
-<tr><td>£250,001 - £925,000</td><td>5%</td><td>5%</td><td>10%</td></tr>
-<tr><td>£925,001 - £1,500,000</td><td>10%</td><td>5%</td><td>15%</td></tr>
-<tr><td>£1,500,001 and above</td><td>12%</td><td>5%</td><td>17%</td></tr>
+<tr><td>Standard connected-party transfer</td><td>s.53 FA 2003</td><td>Full market-value charge plus 5% surcharge</td><td>None, this is the default</td><td>No credit for SDLT paid on the original purchase</td></tr>
+<tr><td>Partnership incorporation</td><td>Sch 15 para 18, SLP at para 20</td><td>Market value reduced by the sum of the lower proportions, can reach nil</td><td>A real, pre-existing letting partnership and matching share proportions</td><td>Para 17A bites on the earlier transfer INTO the partnership, for 3 years</td></tr>
+<tr><td>Six or more dwellings</td><td>s.116(7) FA 2003</td><td>Non-residential rates, no additional dwellings surcharge</td><td>Six or more separate dwellings in a single transaction</td><td>Splitting the portfolio across transactions loses it</td></tr>
+<tr><td>Group relief</td><td>Sch 7 paras 1 to 5</td><td>Transfer free of SDLT</td><td>75% group on all three limbs of para 1(3)</td><td>Withdrawn if the transferee leaves the group within 3 years</td></tr>
+<tr><td>Multiple Dwellings Relief</td><td>Sch 6B FA 2003, repealed</td><td>Unavailable</td><td>None</td><td>Abolished for effective dates on or after 1 June 2024</td></tr>
 </tbody>
 </table>
 
-<p>If the property is worth more than £500,000 and the buyer is a "non-natural person" (any company, partnership with a corporate member, or collective investment scheme), the 17% flat rate at FA 2003 Schedule 4A (raised from 15% for effective dates on or after 31 October 2024, FA 2025 s.53) can apply in place of the table above unless ATED relief conditions are met (FA 2003 Sch 4A paras 5-5G). Genuine buy-to-let companies almost always qualify for the relief, but they must claim it on the SDLT return and file an ATED relief declaration annually thereafter.</p>
+<h2>What is no longer available: Multiple Dwellings Relief</h2>
 
-<h2>What Is No Longer Available: Multiple Dwellings Relief</h2>
+<p>MDR was the standard portfolio incorporation answer from 2011 to mid-2024. It calculated SDLT on the average price per dwelling rather than the aggregate, which cut the effective rate sharply on a multi-property transfer. Finance (No.2) Act 2024 section 7 repealed Schedule 6B FA 2003 in full, and the relief is unavailable for any land transaction with an effective date on or after 1 June 2024. Anti-forestalling rules in the same Act block sub-sale and option arrangements designed to crystallise a claim before the cut-off.</p>
 
-<p>Multiple Dwellings Relief was a hugely popular incorporation tactic from 2011 to mid-2024. It calculated SDLT on the <em>average</em> price per dwelling rather than the total consideration, dramatically lowering the effective rate on a multi-property transfer. Finance (No.2) Act 2024 abolished MDR for any land transaction with an effective date on or after 1 June 2024. Anti-forestalling rules in the same Act block attempted late MDR claims using sub-sale or option arrangements pre-dated to before the cut-off.</p>
+<p>Contracts entered into and substantially performed before 1 June 2024 sit in a narrow transitional cohort. For anything being planned today, MDR is gone, and any guide still recommending it for an incorporation is out of date. The official confirmation is the <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-abolition-of-multiple-dwellings-relief-from-1-june-2024" rel="external nofollow noopener" target="_blank">gov.uk MDR abolition guidance</a>.</p>
 
-<p>Any incorporation completed on or after 1 June 2024 cannot use MDR. Several still-live online articles (including older versions of this page) reference MDR as available. They are out of date. The official confirmation is on the <a href="https://www.gov.uk/government/publications/stamp-duty-land-tax-abolition-of-multiple-dwellings-relief-from-1-june-2024" rel="external nofollow noopener" target="_blank">gov.uk MDR guidance page</a>.</p>
+<h2>The partnership route to avoid SDLT on incorporation (FA 2003 Sch 15)</h2>
 
-<aside>
-<p>About to incorporate and not sure which route you qualify for?</p>
-<p>The difference between full market-value SDLT and the partnership route on a £1m portfolio is typically £55,000+. We model both routes against the evidence base for your portfolio, identify whether the partnership conditions are met, and produce a written incorporation report with the SDLT, CGT, and post-incorporation tax position. Scroll to the form to book a fixed-fee incorporation review.</p>
-</aside>
+<p>Stamp duty land tax on incorporating a partnership in the UK works on a different formula from an ordinary sale. The step out of the partnership into a company owned by the partners is charged under FA 2003 Schedule 15 paragraph 18, which sets the chargeable consideration at market value multiplied by one minus the sum of the lower proportions, calculated under paragraph 20. Where the partners take all the shares in the same proportions as they hold the partnership, that sum reaches 100% and the chargeable consideration falls to nil.</p>
 
-<h2>The Partnership Route (FA 2003 Sch 15)</h2>
-
-<p>The one mainstream way to eliminate the SDLT on portfolio incorporation is to transfer the property from a <strong>genuine letting partnership</strong> into a company in which the partners hold all the shares. That step out of the partnership is charged under FA 2003 Schedule 15 paragraph 18, which sets the chargeable consideration at market value reduced by the "sum of the lower proportions" calculated under paragraph 20. Where all the partners own all the company shares in the same proportions as they own the partnership, that sum reaches 100% and the chargeable consideration falls to nil. Paragraph 10 is the mirror provision governing transfers <em>into</em> a partnership, which is the earlier step by which a portfolio usually arrives in the partnership at all; it is frequently misquoted as the incorporation rule, but the incorporation transfer is a transfer out.</p>
+<p>Paragraph 10 is the mirror rule for transfers into a partnership, with its own SLP calculation at paragraph 12. It is frequently misquoted as the incorporation rule. The incorporation step is a transfer out, so paragraph 18 is the operative provision. The full five-step SLP arithmetic, the connected-persons definition imported from CTA 2010 section 1122, and the partnership-share definition at paragraph 34 are covered in our <a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Schedule 15 sum of the lower proportions guide</a>. HMRC's manual anchor is <a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm33500" rel="external nofollow noopener" target="_blank">SDLTM33500 onwards</a>, not the s.75A pages that are sometimes cited in error.</p>
 
 <h3>What HMRC actually look for</h3>
 
-<p>The route is heavily reviewed. HMRC's SDLT Manual (SDLTM34000 onwards) and case law (notably <em>Project Blue Ltd v HMRC</em> [2018] UKSC 30, and HMRC's enquiry practice) require evidence that the portfolio has been run as a partnership in substance, not merely held jointly. Specifically:</p>
+<p>The threshold is substance, not paperwork produced at the last minute. A partnership entered into shortly before incorporation, purely to reach the relief, invites attack under the section 75A general anti-avoidance rule. The evidence HMRC expect includes:</p>
 
 <ul>
-<li><strong>A partnership agreement</strong> predating the incorporation by at least the trading period claimed (HMRC's typical comfort window is two years or more).</li>
-<li><strong>SA800 partnership tax returns filed</strong> for each year in that window, with the rental income reported through the partnership and apportioned to partners on the partnership-share basis (not on the underlying beneficial ownership of each property).</li>
-<li><strong>Partnership bank account and accounts</strong>, separate from any individual landlord account.</li>
-<li><strong>Joint borrowing where possible</strong>, in the partnership name or jointly liable. Individual mortgages in one spouse's name only are a strong negative indicator.</li>
-<li><strong>Operational evidence</strong> of partnership conduct: managing agents addressed to the partnership, tenancy agreements between the partnership and the tenant, insurance in the partnership name, lender correspondence to the partnership.</li>
+<li><strong>A partnership agreement</strong> predating the incorporation by the whole period being claimed as the trading window.</li>
+<li><strong>SA800 partnership returns filed</strong> for each of those years, with rental income reported through the partnership and allocated on partnership shares rather than by each owner's beneficial interest in individual properties.</li>
+<li><strong>Partnership accounts and a partnership bank account</strong>, kept separately from any individual landlord account.</li>
+<li><strong>Joint borrowing</strong> in the partnership name or with joint liability. Mortgages in one spouse's sole name are a strong negative indicator.</li>
+<li><strong>Operational evidence</strong>: tenancies granted by the partnership, managing agent and insurance documentation in the partnership name, lender correspondence addressed to the partnership.</li>
 </ul>
 
-<p>Where these are missing (the most common reality for husband-and-wife portfolios that have always filed individual SA105 returns), the partnership route is not available and full market-value SDLT applies. Restructuring the holding into a real partnership <em>before</em> incorporation is possible but takes years, not weeks, and itself triggers transfer SDLT in many cases unless carefully sequenced.</p>
+<p>Where these are absent, which is the ordinary position for jointly owned portfolios reported on individual SA105 property pages, the route is simply not available and the standard market-value charge applies. Building a genuine partnership first is possible, but it takes years rather than weeks and the transfer in has its own SDLT consequences that need sequencing.</p>
 
-<h2>Worked Example: £1m Six-Flat Portfolio</h2>
+<h2>SDLT and business incorporations: the 3-year trap</h2>
 
-<p>Sophia owns six flats in Manchester through a properly constituted general partnership with her brother Daniel. Each flat is worth £166,667 on the date of incorporation. The partnership has been filing SA800 returns since 2022. They incorporate Smith Property Holdings Limited in May 2026, taking 50/50 shares.</p>
+<p>Landlords who reach a nil SDLT outcome often assume the matter is closed at completion. Two separate three-year rules say otherwise, and both are commonly missed because they bite long after the return has been filed and accepted.</p>
 
-<h3>Route A: Without partnership treatment (e.g. if the documentation does not stand up)</h3>
+<h3>The SDLT incorporation relief 3-year rule</h3>
 
-<table>
-<thead>
-<tr><th>Per flat</th><th>£166,667</th></tr>
-</thead>
-<tbody>
-<tr><td>£0 - £125,000 at 5%</td><td>£6,250</td></tr>
-<tr><td>£125,000 - £166,667 at 7%</td><td>£2,917</td></tr>
-<tr><td>SDLT per flat</td><td>£9,167</td></tr>
-<tr><td>Six flats total</td><td><strong>£55,002</strong></td></tr>
-</tbody>
-</table>
+<p>Schedule 15 paragraph 17A is the anti-withdrawal rule, and the point most often got wrong is which transfer it attaches to. It does not bite on the paragraph 18 incorporation transfer out. It bites on the earlier step, the transfer of property into the partnership under paragraph 10 or a transfer of a partnership interest under paragraph 14, which is how the portfolio usually got into the partnership in the first place. For three years after that transfer in, any qualifying event is itself a chargeable transaction: withdrawing capital from the partnership, repaying a partner's loan, reducing a partner's interest, or a return of capital in any form. The charge cannot exceed the market value of the interest originally transferred, less any amount already charged.</p>
 
-<h3>Route B: With partnership treatment under Sch 15 para 18</h3>
+<p>That matters on an incorporation timeline because a landlord who moved properties into a partnership and then incorporates within three years is operating inside a live window. The incorporation itself is not a paragraph 17A qualifying event, but the capital movements that commonly accompany it can be, and the rule exists precisely to stop the SLP mechanism being used as a quick route in and straight back out.</p>
 
-<p>Sophia and Daniel each receive 50% of the company shares, matching their partnership share. The chargeable consideration on each flat is reduced to nil under the transfer-out formula at Sch 15 para 18(2), the sum of the lower proportions being calculated under para 20. <strong>Total SDLT: £0.</strong></p>
+<h3>The group relief 3-year claw-back</h3>
 
-<p>The gap (£55,000) is the value of the partnership documentation. If the documentation does not stand up under enquiry, HMRC will reassess to Route A plus interest and a tax-geared penalty (typically 30%-70% of the SDLT depending on disclosure behaviour).</p>
+<p>Schedule 7 paragraph 3 withdraws group relief where the transferee company leaves the 75% group within three years of the effective date, with tax then charged at market value rates on the original transaction. This is the operational risk in multi-SPV restructuring: a landlord consolidates properties into an SPV under group relief, then sells the SPV two years later, and the sale triggers the claw-back. Paragraph 5 lets HMRC recover unpaid SDLT from the vendor company, the group parent or a controlling director if it is still outstanding six months after assessment. Paragraph 2 separately denies relief at the outset where arrangements already exist for the transferee to leave the group. The claw-back mechanics are covered in depth in our <a href="/blog/incorporation-and-company-structures/sdlt-group-relief-schedule-7-fa-2003-claw-back-connected-party-recovery-depth">Schedule 7 group relief guide</a>.</p>
 
-<h2>Worked Example: £600,000 Two-Flat Husband-and-Wife Portfolio</h2>
+<p>The practical response to both is documentary. Do not withdraw partnership capital or restructure partner interests inside the three-year window without modelling the charge first, and lock any group-relief transferee into the group with a covenant in the sale agreement for the balance of the three years.</p>
 
-<p>Mark and Helen own two London buy-to-lets jointly. Each flat is worth £300,000. They have always filed individual SA105 returns showing 50/50 of the rents. There is no partnership agreement, no SA800, and no partnership bank account. They are not a partnership. The partnership route is not available.</p>
+<h2>The six-dwellings rule: automatic, not an election</h2>
 
-<table>
-<thead>
-<tr><th>Per flat</th><th>£300,000</th></tr>
-</thead>
-<tbody>
-<tr><td>£0 - £125,000 at 5%</td><td>£6,250</td></tr>
-<tr><td>£125,000 - £250,000 at 7%</td><td>£8,750</td></tr>
-<tr><td>£250,000 - £300,000 at 10%</td><td>£5,000</td></tr>
-<tr><td>SDLT per flat</td><td>£20,000</td></tr>
-<tr><td>Two flats total</td><td><strong>£40,000</strong></td></tr>
-</tbody>
-</table>
+<p>Section 116(7) FA 2003 provides that where six or more separate dwellings are the subject of a single transaction involving the transfer of a major interest, the dwellings are treated as not being residential property. Non-residential rates then apply, and the 5% additional dwellings surcharge does not.</p>
 
-<p>For Mark and Helen, the incorporation arithmetic must therefore recover the £40,000 SDLT from the future tax saving. At a typical higher-rate-vs-corporation-tax saving of around £6,000-£8,000 a year on this size portfolio, payback runs five to seven years. If their intended hold is at least seven years and they want to grow the portfolio further, incorporation can still make sense; if they intend to wind down within five years, it usually does not.</p>
+<p>Two points matter. First, this is a statutory deeming, not an election and not a relief. There is no claim, no relief code and no box to tick: the buyer simply reports the transaction on the non-residential basis. Guides that describe it as an election, or that cite Schedule 6B paragraph 7 as the source, are wrong on both counts, and Schedule 6B was repealed with MDR in any event. Second, the six dwellings must be within a single transaction, or within linked transactions under section 108, so the way the incorporation is documented determines whether the rule applies at all. A portfolio split into separate contracts on separate days can fall out of it.</p>
 
-<h2>SDLT, CGT s.162 Incorporation Relief, and the Combined Cost</h2>
-
-<p>SDLT and CGT have separate reliefs. The one does not affect the other.</p>
-
-<h3>CGT side</h3>
-
-<p>The transfer of property from an individual to a wholly-owned company is a deemed disposal at market value for CGT (TCGA 1992 s.17). Section 162 incorporation relief defers the gain by rolling it into the base cost of the shares received, provided the entire business (not selected assets) is transferred and the consideration is wholly or partly shares. For transfers on or after 6 April 2026 the relief must be claimed (FA 2026 s.39 inserted s.162(1)(b)), by the first anniversary of the 31 January following the tax year of the transfer, and the conditions in s.162 must be met. The HMRC reference is <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700p" rel="external nofollow noopener" target="_blank">CG65700+ of the Capital Gains Manual</a>.</p>
-
-<h3>SDLT side</h3>
-
-<p>None of the s.162 conditions affect SDLT. You can claim s.162 incorporation relief for CGT and still pay full market-value SDLT. The two reliefs are independent: only the partnership route under FA 2003 Sch 15 para 10 eliminates SDLT.</p>
-
-<h3>Combined cost worked through</h3>
-
-<p>For Mark and Helen above (the husband-and-wife two-flat portfolio):</p>
-
-<ul>
-<li>SDLT: £40,000 (no partnership route, full market-value)</li>
-<li>CGT: deferred under s.162 (assume £180,000 of latent gain rolled into share base cost)</li>
-<li>Refinancing: ~£15,000 (early repayment + new product fees on roughly £450k of borrowing)</li>
-<li>Legal and accountancy: ~£3,500</li>
-<li><strong>One-off incorporation cost: £58,500</strong></li>
-</ul>
-
-<p>The annual recurring saving from moving rental profit out of 40% personal income tax into 19%/25% corporation tax (less the eventual dividend tax on extraction) needs to be modelled against that one-off £58,500 figure across the intended hold period.</p>
+<p>The rule survived the MDR abolition untouched, which makes it the principal route for portfolio-scale incorporations where no partnership exists. It is an SDLT rule, so it covers England and Northern Ireland. Scotland has an equivalent at section 59(8) LBTT(S)A 2013. Wales runs its own LTT rules on multi-dwelling acquisitions and a Welsh portfolio needs advice on that basis rather than an assumption carried over from SDLT.</p>
 
 <aside>
-<p>Want to see your portfolio's numbers?</p>
-<p>We model SDLT, CGT s.162 deferral, refinancing, and post-incorporation tax position into a single side-by-side comparison: stay personal vs incorporate now vs incorporate in 3 years. The output is a one-page recommendation backed by the underlying calculations. Scroll to the form below to book a fixed-fee incorporation review.</p>
+<p>Not sure which route your portfolio actually qualifies for?</p>
+<p>The gap between the standard charge and the partnership route on a £1m portfolio is typically the whole SDLT bill. We test the partnership evidence, check whether the transaction structure reaches the six-dwellings deeming, and produce a written report showing the SDLT and CGT position on each route. Scroll to the form below to book a fixed-fee incorporation review.</p>
 </aside>
 
-<h2>The Filing and Land Registry Steps</h2>
+<h2>Worked example: a £1m six-flat portfolio, three routes</h2>
+
+<p>Sophia and her brother Daniel own six flats in Manchester worth £1m in total. They incorporate in a single transaction in May 2026, taking 50/50 shares in the new company. The interesting number here is not the charge itself but the spread between the routes.</p>
+
+<table>
+<thead>
+<tr><th>Route</th><th>Basis</th><th>SDLT</th><th>Delta vs standard</th></tr>
+</thead>
+<tbody>
+<tr><td>Standard connected-party transfer, residential basis</td><td>Market value plus 5% surcharge on the £1m aggregate</td><td>Around £93,750</td><td>Baseline</td></tr>
+<tr><td>Six dwellings in one transaction, s.116(7)</td><td>Non-residential deeming, automatic, no surcharge</td><td>Around £39,500</td><td>Around £54,250 saved</td></tr>
+<tr><td>Genuine partnership incorporation, Sch 15 para 18</td><td>Market value less 100% SLP</td><td>Nil</td><td>Around £93,750 saved</td></tr>
+</tbody>
+</table>
+
+<p>If the partnership has filed SA800 returns since 2022, runs partnership accounts and borrows jointly, the paragraph 18 line is the one that applies and the SDLT is nil. If it does not, the transaction still reaches the section 116(7) line automatically, because six dwellings move together in one transaction. Splitting the portfolio into two tranches of three flats does not automatically forfeit the deeming, because section 108 treats linked transactions as one for this purpose and tranches of the same incorporation are normally linked. The deeming is lost only where the tranches are genuinely not linked, for example separate bargains agreed at different times with different parties.</p>
+
+<p>Both rated figures above are totals; the band-by-band workings behind them are on our <a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">connected-party transfer cost guide</a>.</p>
+
+<p>The £93,750 gap is the value of the partnership evidence, and HMRC price it that way too. If the documentation does not hold up under enquiry, they reassess to the standard basis with interest and a tax-geared penalty.</p>
+
+<h2>Worked example: a £600,000 two-flat portfolio with no route</h2>
+
+<p>Mark and Helen jointly own two London flats worth £300,000 each. They have always filed individual SA105 property pages showing half the rents each. There is no partnership agreement, no SA800 and no partnership bank account, so they are not a partnership. Two dwellings is below the section 116(7) threshold. There is no existing company, so there is no group.</p>
+
+<table>
+<thead>
+<tr><th>Route</th><th>Available?</th><th>SDLT</th></tr>
+</thead>
+<tbody>
+<tr><td>Sch 15 para 18 partnership</td><td>No, joint ownership is not a partnership</td><td>Not available</td></tr>
+<tr><td>s.116(7) six dwellings</td><td>No, only two dwellings</td><td>Not available</td></tr>
+<tr><td>Sch 7 group relief</td><td>No, no existing group</td><td>Not available</td></tr>
+<tr><td>Standard connected-party transfer</td><td>Default</td><td>£50,000 on the £600,000 aggregate</td></tr>
+</tbody>
+</table>
+
+<p>This is the ordinary outcome for small jointly held portfolios, and it is worth stating plainly because a great deal of online material implies a route always exists. For Mark and Helen the incorporation decision is not a relief question at all: it is whether the recurring tax saving recovers £50,000 of SDLT, plus refinancing and professional costs, over their intended hold period. Our guide to <a href="/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach">phasing an existing portfolio incorporation</a> covers how that decision changes when the transfer is spread over several years.</p>
+
+<h2>How to claim incorporation relief on the SDLT return</h2>
+
+<p>The filing mechanics differ by route, which is where returns most often go wrong.</p>
 
 <ol>
-<li><strong>SDLT5 within 14 days.</strong> The SDLT return must be filed within 14 calendar days of the effective date (normally completion). Late filing penalties start at £100, rise to £200 after three months, and turn tax-geared at twelve months.</li>
-<li><strong>Land Registry transfer.</strong> HM Land Registry will not register the transfer of the legal title to the company without sight of the SDLT5 certificate from HMRC. Application is typically AP1 with TR1.</li>
-<li><strong>Lender consent.</strong> If the existing mortgage is being redeemed and a new company mortgage put in place, both must be coordinated with the SDLT return and Land Registry transfer to avoid gaps in title or breaches of mortgage conditions.</li>
-<li><strong>ATED relief declaration (if needed).</strong> Where any single property is worth more than £500,000 at the date of acquisition, file an ATED relief declaration return by 30 April following acquisition.</li>
-<li><strong>Corporation tax registration.</strong> The new company must be registered for corporation tax within three months of starting to trade (i.e. starting to receive rental income).</li>
+<li><strong>Partnership relief.</strong> Report the transaction on the SDLT1 within 14 days of the effective date, entering the relief code for partnership transactions and showing the chargeable consideration as market value reduced by the sum of the lower proportions, not as market value with a deduction elsewhere. Keep the SLP calculation on file.</li>
+<li><strong>Six-dwellings treatment.</strong> Nothing is claimed. The transaction is simply reported as non-residential. Do not enter a relief code.</li>
+<li><strong>Group relief.</strong> Must be positively claimed on the return. A claim missed within 12 months of the effective date can be pursued as an overpayment claim under FA 2003 Schedule 11A within four years, though a late claim invites enquiry.</li>
+<li><strong>Land Registry.</strong> HM Land Registry will not register the transfer to the company without the SDLT5 certificate, so the return drives the title timetable as well as the tax.</li>
+<li><strong>ATED relief declaration.</strong> Where any single dwelling is worth more than £500,000 at acquisition, file the ATED relief declaration by 30 April following acquisition, and annually thereafter.</li>
 </ol>
 
-<h2>When Incorporation Is and Is Not Worth the SDLT</h2>
+<p>Late filing penalties start at £100, rise to £200 after three months and become tax-geared after twelve, with interest running from the due date. The 14-day clock starts at the effective date, which is normally completion but can be earlier if substantial performance happens first.</p>
 
-<p>The SDLT cost is the single largest one-off item in any incorporation cost-benefit. The decision turns on three numbers:</p>
+<h2>How the SDLT charge interacts with CGT</h2>
+
+<p>The transfer is also a deemed disposal at market value for capital gains tax. Section 162 TCGA 1992 can defer that gain by rolling it into the base cost of the shares received, and for transfers on or after 6 April 2026 the relief must be positively claimed rather than applying automatically.</p>
+
+<p>The point to hold on to is that the two taxes do not talk to each other. Claiming section 162 does nothing for SDLT, and reaching a nil SDLT outcome under Schedule 15 does nothing for CGT. A portfolio can face full stamp duty and a fully deferred gain, or nil stamp duty and an immediate gain, depending on which sets of conditions are met. The statutory CGT test itself is covered in our guide to <a href="/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords">section 162 incorporation relief</a> and the practical planning in <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">incorporating rental property without a CGT charge</a>. HMRC's reference is <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg65700p" rel="external nofollow noopener" target="_blank">CG65700 onwards</a>.</p>
+
+<h2>Can you avoid stamp duty on incorporation?</h2>
+
+<p>Only by falling inside one of the statutory routes above. No scheme, trust or wrapper lawfully removes the charge on a transfer that does not qualify, and arrangements sold on that promise are exposed to the general anti-avoidance rule at section 75A FA 2003. In practice the honest options are:</p>
 
 <ul>
-<li><strong>Total SDLT exposure</strong> (partnership route or not).</li>
-<li><strong>Annual recurring tax saving</strong> from moving rental profit into the corporation tax regime, net of dividend tax on extraction (or zero if profits are retained).</li>
-<li><strong>Intended hold period</strong>: how long the portfolio will sit inside the company before any disposal or wind-up event.</li>
+<li><strong>Genuine partnership incorporation</strong>, where a real letting partnership already exists and can be evidenced over a sustained period.</li>
+<li><strong>Six or more dwellings in a single transaction</strong>, where the deeming applies automatically and the structuring question is simply how the transfer is documented.</li>
+<li><strong>Group relief</strong>, for moves between companies already in a 75% group, subject to the three-year claw-back.</li>
+<li><strong>Not incorporating</strong>, which is the right answer whenever the recurring saving does not recover the one-off cost across the intended hold period.</li>
 </ul>
 
-<p>The breakeven SDLT cost / annual saving multiple is typically 4-7 years. Anything shorter than 4 years rarely justifies the SDLT cost alone. Anything longer than 8 years almost always does. The qualitative factors (mortgage availability through limited-company BTL products, inheritance planning via different share classes, asset protection through limited liability) sit on top of that arithmetic.</p>
+<p>Where none of these apply, the SDLT is a cost of the decision rather than a problem to be solved. The step-by-step execution sequence, once the decision is made, is set out in our guide to <a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">incorporating a property portfolio in 2026</a>.</p>
 
-<h2>When Does Stamp Duty Apply, and Who Pays It?</h2>
+<aside>
+<p>Already moved properties into a partnership, or already hold some in a company?</p>
+<p>Both situations start a three-year clock that a later incorporation can walk into, and the charge lands long after the original return was accepted. Send us the dates of the earlier transfers and the shape of the portfolio now, using the form below, and we will tell you which window you are in before anything is signed.</p>
+</aside>
 
-<p>The buyer pays stamp duty, and only the buyer. You do not pay stamp duty when selling a house: if you are the one moving out with the proceeds, there is no SDLT for you on that sale. Sell one home and buy another, and the only stamp duty in the chain is on what you buy. A seller can agree to contribute towards your costs when you negotiate, but the liability in law stays with you.</p>
-
-<p>It applies when you buy a freehold or leasehold interest in property in England or Northern Ireland above the threshold: your own home, a buy-to-let, a second home, or a transfer into your own limited company. It is a one-off charge on the purchase, not an annual tax, and you pay it to HMRC, normally through your conveyancer, within 14 days of completion. Scotland charges LBTT and Wales charges LTT instead, each with its own rates and a 30-day deadline. Price your own purchase for 2026/27 with our <a href="/calculators/stamp-duty-calculator">stamp duty calculator</a>.</p>
-
-<h2>Stamp Duty on Additional Property: The Rules in Brief</h2>
-
-<p>If you already own a dwelling and buy another worth £40,000 or more, you pay a 5% surcharge on top of the standard rates, charged across the whole price. It has been 5% since 31 October 2024. Property you own anywhere in the world counts, your spouse or civil partner's property counts as yours, and where two of you buy together the surcharge applies to the whole purchase if it applies to either of you.</p>
-
-<p>Replacing your own main residence is the exception. Buy before the old home sells and you pay the surcharge up front, then reclaim it once the sale completes, provided that is within three years of the purchase. The reclaim runs out 12 months after that sale, or 12 months after your original return was filed if that is later. Your company gets no such relief: it has no main residence to replace, so the surcharge hits every residential purchase it makes, including its first. That is why the incorporation transfer above carries it even for a landlord who has never bought a second home personally.</p>
-
-<h2>Can You Avoid Stamp Duty on a Buy-to-Let?</h2>
-
-<p>No, not on an ordinary buy-to-let purchase. No scheme, trust or company wrapper lawfully removes it, and arrangements sold on that promise are caught by the anti-avoidance rule at FA 2003 s.75A. Three genuine routes exist, and you either fall inside one or you pay:</p>
+<h2>Related reading</h2>
 
 <ul>
-<li><strong>Genuine partnership incorporation</strong>, the route described under "The Partnership Route (FA 2003 Sch 15)" above. It applies to incorporating what you already hold, not to buying a new rental.</li>
-<li><strong>Six or more dwellings in one transaction</strong>, which are automatically treated as non-residential: the non-residential rates apply (0% to £150,000, 2% to £250,000, then 5%) and the surcharge does not. Nothing needs claiming.</li>
-<li><strong>Genuinely non-residential or mixed-use property</strong>, such as a shop with a flat above. HMRC challenge thin mixed-use claims hard, so the commercial element has to be real.</li>
-</ul>
-
-<p>Reclaiming is rarer still: the surcharge refund belongs to people replacing a main residence, not to landlords. What you can correct is a return that was wrong on the facts, by amending it or claiming overpayment relief.</p>
-
-<h2>Related Reading</h2>
-
-<ul>
-<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL Limited Company Complete Guide</a></li>
-<li><a href="/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge">Stamp Duty on Buy-to-Let: 5% Surcharge Explained</a></li>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">SDLT on Transferring Property to a Company: The Cost</a></li>
+<li><a href="/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions">Schedule 15 Partnership SDLT Relief and the Sum of the Lower Proportions</a></li>
 <li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to Transfer Property into a Limited Company</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026">Incorporating a Property Portfolio in 2026</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach">Incorporating an Existing Portfolio: The Phased Approach</a></li>
+<li><a href="/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge">Stamp Duty on Buy-to-Let: the 5% Surcharge</a></li>
 </ul>
