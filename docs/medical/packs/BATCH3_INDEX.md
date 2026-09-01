@@ -871,3 +871,22 @@ its own context and correctly refused to do so silently.
   at D18 but not yet folded into section 6.
 - **`house_positions.md` §7.B carries an unrun amendment check** against CAA 2001 Part 2A, and the PMS limb of the
   s.86 correction has no reading of the s.94 regulations behind it. Both are marked in place.
+
+---
+
+## WAVE C CLOSED 2026-09-01 (commit 5bf70160; packs 86f00283; HP blocks 5153aa3e/9a0ac2a6/e93ea15a)
+
+Nine REFRAMEs + one EXTEND shipped to main, undeployed. Process ran writers (8 parallel) then dual QA, fix round, QA re-run over fixes, final residual pass. Rulings and lessons, recorded here so nothing re-derives them:
+
+- **D3 ruled** (see the wave C section): four surfaces, the 301 stays, sitemap class-filtered.
+- **O33a/O33b ratified**: s.162 page owns the FA 2026 s.39 claim regime in full; step-by-step carries one dated sentence (mirrored in howtoSteps per the schema rule, not a second budget spend).
+- **O34 clarified**: satellites may carry the rate set inside their ONE prose sentence + link, or in table cells and worked examples; sentences must not be byte-identical across pages.
+- **O35 exemption recorded**: step-by-step's pension-certification table is not the four-role tax fork; it stays, with links to both owners (O6, O35).
+- **New ownership rows ratified as C3-series** (the O37-O40 and colliding C3-01 proposals from parallel pack agents are renumbered here): C3-01 IHT of a private wealth structure -> FIC page. C3-02 BADR beyond the fork sentence -> wave F owner. C3-03 s.455 mechanics incl. s.464ZA -> s455 page. C3-04 GP practice bookkeeping mechanics -> bookkeeping page. C3-05 employer pension at the margin -> salary-vs-dividend. C3-06 spouse shareholder / settlements -> salary-vs-dividend. C3-07 retained profit options -> surplus-cash. C3-08 CT rate map + machinery -> gp-corporation-tax.
+- **V10, the batch-4 tic, is real and named**: the comma-negation corrective "X, not Y" (V5 with the copula elided), 43 instances across all 8 drafts. AND the fix round renamed tics into "instead of" (3 to 22) exactly per the batch-3 pattern; the residual pass had to ban substitute connectives outright. §6.3 rule for wave D onward: cap "X, not Y", "rather than" AND "instead of" at 2 per page in the writer prompt itself, and forbid fixers from substituting any contrastive connective.
+- **D14 restated**: the pricebailey wall is INTERMITTENT and TLS-fingerprint-shaped, not header-shaped. Same URL returned 200 and 403 to identical curl.exe headers on the same day. Fetch with curl.exe, retry later on 403, and never let one 403 kill a teardown.
+- **D2 addendum**: the two Bing endpoints agree exactly where they overlap on the bookkeeping page; the gap is a two-snapshot reporting lag in GetPageQueryStats. Named-query acceptance reads should sit at day 42, not day 28.
+- **QA catches that changed conclusions** (all shipped fixed): portfolio FIC = close investment-holding company, CTA 2010 s.18N / s.18A(1)(b), 25% on ALL profits, no marginal relief (combined 54.1%); company post-AIA route = full expensing s.45S, the 40% FYA s.45U reaches only its exclusions; ITEPA 2003 s.175 charges / s.180 exempts the GBP 10,000 test; partnership record retention five years from 31 January (TMA 1970 s.12B), not six.
+- **Accepted residual duplication** (do not re-raise): the two KEEP spans (PSC/GMS sentence; NHS-goodwill prohibition incl. the bookkeeping/step-by-step 16-word pair), verbatim IHTA 1984 s.105(3) wording, figure strings and title-anchor links.
+- **Bookkeeping EXTEND residuals accepted**: frozen pre-existing copy retains its tic counts and third-person register; the EXTEND constraint beats the band. Sweep it when the page is next opened for a REFRAME.
+- **Open after this wave**: monitored_pages registration + IndexNow for the wave (owner-gated); the 4-niche allied-health cluster wave (~10-14 pages, C2 rows 20-23, nurses C1 fence needed); /locations local-modifier build; waves D/E/F/H from 2026-09-11, wave G ~2026-09-24; the GMS/PMS corpus sweep (owner decision, unchanged); Carr-Hill stale paraphrase on gp-accounting-guide + gp-partnership-tax-complete-guide (frozen to 09-10, patch 09-11).
