@@ -203,8 +203,9 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
 
   // Asset 3: Private practice incorporation model (topic incorporation-private)
   // Default (INC-A): privateIncome=100000, expenses=15000, salary=12570, nhs=50000
-  // soleTraderTotalTax=44882, corporationTax=21250, dividendTax=18118, limitedCompanyTotalTax=46854
-  // taxSavings=-1972.5 -> incorporating costs ~1973 more
+  // Figures from the corrected banded-CT model (2026-09-01, see compute INC-A golden):
+  // soleTraderTotalTax=49909.60, corporationTax=15143.04, dividendTax=19895.40,
+  // limitedCompanyTotalTax=48633.94, taxSavings=1275.66 -> incorporating saves ~1276
   "incorporation-private": {
     layout: "paired",
     file: "incorporation-model.xlsx",
@@ -215,24 +216,24 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       {
         kind: "data",
         left: { label: "Private practice income", value: { text: "£100,000", v: "blue" } },
-        right: { label: "Sole trader total tax and NIC", value: { text: "£44,882", v: "num" } },
+        right: { label: "Sole trader total tax and NIC", value: { text: "£49,910", v: "num" } },
       },
       {
         kind: "data",
         left: { label: "Your NHS (PAYE) income", value: { text: "£50,000", v: "blue" } },
-        right: { label: "Corporation tax", value: { text: "£21,250", v: "num" } },
+        right: { label: "Corporation tax", value: { text: "£15,143", v: "num" } },
       },
       {
         kind: "data",
         left: { label: "Director salary", value: { text: "£12,570", v: "blue" } },
-        right: { label: "Dividend tax", value: { text: "£18,118", v: "num" } },
+        right: { label: "Dividend tax", value: { text: "£19,895", v: "num" } },
       },
       {
         kind: "data",
         left: undefined,
-        right: { label: "Ltd co total tax", value: { text: "£46,854", v: "num" } },
+        right: { label: "Ltd co total tax", value: { text: "£48,634", v: "num" } },
       },
-      { kind: "headline", text: "Incorporating costs about £1,973 more here (£164 a month), and gives up NHS pension accrual on the dividends" },
+      { kind: "headline", text: "Incorporating saves about £1,276 here (£106 a month), before the NHS pension accrual given up on the dividends" },
       { kind: "blank" },
       { kind: "blank" },
       { kind: "blank" },
