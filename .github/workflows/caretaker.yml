@@ -71,25 +71,56 @@ jobs:
           tail -5 out/probes/health_sweep.log
           tail -12 out/probes/tripwire.log
 
-      - name: Reason (claude -p, read-only tools)
-        env:
-          # Subscription account, no API credits (see memory: anthropic_api_no_
-          # credit_subscription_only) - auth via the OAuth token from
-          # `claude setup-token`, NOT the API key. ANTHROPIC_API_KEY kept as
-          # fallback for if credits are ever purchased.
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          BETTERSTACK_API_TOKEN: ${{ secrets.BETTERSTACK_API_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Write the verdict from the facts (no LLM)
+        # Was `claude -p` reading .github/caretaker/PROMPT.md. Retired 2026-09-01:
+        # the CLI needs a CLAUDE_CODE_OAUTH_TOKEN from `claude setup-token`, that
+        # token lapsed, the CLI fell back to ANTHROPIC_API_KEY, and the account has
+        # no API credits (memory: anthropic_api_no_credit_subscription_only), so
+        # every run wrote "Credit balance is too low" into verdict.md and went red.
+        #
+        # This step is a straight render of what state_check and the probes already
+        # found. It emits no "EMAIL: yes" line, so the email step below stays
+        # silent by construction and a red run remains the only signal, which is
+        # what the step it replaced did in practice anyway.
+        #
+        # It must always produce a non-empty out/verdict.md: the dead-man ping
+        # below gates on that file, so an empty one would tell Better Stack the
+        # caretaker had died and would generate a new alert.
         run: |
-          claude -p "$(cat .github/caretaker/PROMPT.md)" \
-            --allowedTools "Read,Grep,Glob,Bash" \
-            > out/verdict.md
-          echo "--- verdict head ---"
-          head -30 out/verdict.md
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          out = ["# Caretaker verdict", ""]
+          try:
+              run = json.loads(Path("out/run.json").read_text(encoding="utf-8"))
+          except Exception as e:
+              run = {}
+              out.append(f"state_check produced no readable JSON: {e}")
+
+          findings = run.get("findings", [])
+          bad = [f for f in findings if f.get("status") in ("ALARM", "BLIND")]
+          out.append(f"generated: {run.get('generated', 'unknown')}")
+          out.append(f"findings: {len(findings)}, needing attention: {len(bad)}")
+          out.append("")
+          if bad:
+              out.append("## Needs a look")
+              for f in bad:
+                  out.append(f"- {f.get('status')} {f.get('lane')} {f.get('name')}: {f.get('detail', '')}")
+          else:
+              out.append("No ALARM or BLIND findings.")
+          out.append("")
+
+          for log in ("out/probes/health_sweep.log", "out/probes/tripwire.log"):
+              p = Path(log)
+              out.append(f"## {p.name}")
+              tail = p.read_text(encoding="utf-8", errors="replace").splitlines()[-12:] if p.exists() else ["(missing)"]
+              out.extend(tail)
+              out.append("")
+
+          Path("out/verdict.md").write_text("\n".join(out) + "\n", encoding="utf-8")
+          print("\n".join(out[:30]))
+          PY
 
       - name: Email verdict when its finding set changed
         if: always()
