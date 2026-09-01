@@ -75,7 +75,7 @@ faqs:
 <p>The most common setup error is treating NHS income as a single lump. It is not. Your chart of accounts should carry a separate income code for each stream so that your management reporting and your statutory accounts reconcile to the underlying NHS payments:</p>
 
 <ul>
-<li><strong>Global Sum</strong>, the core per-patient funding, weighted by the <strong>Carr-Hill formula</strong> (registered list size adjusted for age, sex, morbidity, list turnover and geography);</li>
+<li><strong>Global Sum</strong>, the core per-patient funding, weighted by the <strong>Carr-Hill formula</strong> (registered list size adjusted for age and sex, additional needs, list turnover, nursing and residential homes, rurality and geography, and staff market forces);</li>
 <li><strong>QOF</strong> (the Quality and Outcomes Framework, the voluntary points-based quality scheme);</li>
 <li><strong>enhanced services</strong> payments;</li>
 <li><strong>PCN and Network Contract DES</strong> funding, including the Additional Roles Reimbursement Scheme (ARRS);</li>

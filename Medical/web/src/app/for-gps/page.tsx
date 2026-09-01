@@ -48,7 +48,7 @@ const data: AudienceStage = {
     {
       icon: Building2,
       title: "Does our practice income reconcile to what PCSE says it paid us?",
-      body: "Practice income does not arrive as one figure. Global sum is weighted by the Carr-Hill formula for the age, sex, morbidity and turnover profile of your list. QOF is paid partly in aspiration and settled on achievement. Enhanced services, PCN and DES payments, and reimbursements for premises, drugs and locum cover all land separately, some in arrears. The reconciliation between the PCSE statements and the practice ledger is where accountants for GP practices earn their keep, because a payment that was never chased is invisible in accounts that simply record what arrived.",
+      body: "Practice income does not arrive as one figure. Global sum is weighted by the Carr-Hill formula for the age and sex, additional needs, list turnover, care home, rurality and staff cost profile of your list. QOF is paid partly in aspiration and settled on achievement. Enhanced services, PCN and DES payments, and reimbursements for premises, drugs and locum cover all land separately, some in arrears. The reconciliation between the PCSE statements and the practice ledger is where accountants for GP practices earn their keep, because a payment that was never chased is invisible in accounts that simply record what arrived.",
     },
     {
       icon: Users,
