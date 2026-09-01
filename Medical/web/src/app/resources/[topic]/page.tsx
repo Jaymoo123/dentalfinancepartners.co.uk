@@ -19,6 +19,7 @@
  */
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { getGuideByTopic, publishedGuideTopicsWithFile } from "@/lib/resources/content";
 import { resourceForTopic, isXlsxEnabled } from "@/lib/resources/registry";
@@ -41,6 +42,7 @@ export async function generateMetadata({
   return {
     title: guide.title,
     description: guide.summary,
+    alternates: { canonical: `${siteConfig.url}/resources/${topic}` },
   };
 }
 
