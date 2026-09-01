@@ -4305,3 +4305,31 @@ Sections added this pass: §26.10 (EICR), §26.11 (gas), §26.12 (fire), §26.13
 # Wave 12 Stage 1b sign-off (2026-08-21)
 
 Sections added this pass: §5.B (disposal date + exhaustive incidental costs), §1.Q (SDLT Sch 6A part-exchange, developer's relief), §26.14 (sales-agent regulation + CPUTR revocation), §26.15 (new-build redress non-statutory), §39.A (probate selling-process floor). Flags addressed: F-150 (→ §26.14), F-160 (→ §1.Q), F-161 (→ §39.A), F-162 (→ §5.B), F-164 (→ §26.15). F-151 (CPUTR stale line on sdlt-refund-scams page) triaged separately against its monitored window. F-152/F-163 remain open (authority note + wave-merge back-link). Flag STATUS edits happen at wave-close step 4 (manager commit), not here.
+
+## 29. Closing a property company — strike-off / distributions / MVL boundary — SPV-programme mini-lock (added 2026-09-01)
+
+Added because the selling/closing hub (SPV formation programme U34/U35) had no ground truth
+and a wrong citation (s.1013 CTA 2010) survived to brief stage. Verified legislation.gov.uk
++ gov.uk 2026-09-01.
+
+- **Informal strike-off distribution cap: CTA 2010 s.1030A.** Distributions made in
+  anticipation of dissolution are treated as CAPITAL only if total distributions do not
+  exceed GBP 25,000 (Condition A: company intends to dissolve / has collected or will
+  collect its debts and distributed assets). **s.1030B**: if the GBP 25,000 cap is
+  exceeded, the WHOLE amount is an income distribution, all-or-nothing, not just the
+  excess. Never cite s.1013 for this.
+- **Voluntary strike-off (form DS01) fee: GBP 13 online / GBP 18 paper** (gov.uk fees page,
+  updated 2 Jul 2026, verified 2026-09-01).
+- **Companies House incorporation fee: GBP 100 online/software / GBP 124 paper.
+  Confirmation statement: GBP 50 online / GBP 110 paper** (same source, same date). Do not
+  confuse the two: GBP 50 is the confirmation statement, NOT incorporation (this exact
+  conflation occurred twice in brief drafting on 2026-09-01).
+- **Route boundary (page-ownership seam, PAGE_MAP seam 8):** route CHOICE (dormant vs
+  strike-off vs MVL) and DS01 mechanics = how-to-close-a-property-limited-company. The
+  CGT-vs-income analysis of final distributions and BADR interaction (18% from 6 Apr 2026)
+  = the MVL page. Dormancy mechanics = file-dormant-accounts.
+- **MVL threshold logic:** above GBP 25,000 of reserves, capital treatment requires a
+  formal members' voluntary liquidation with a licensed insolvency practitioner; typical IP
+  fees GBP 2,000-4,000 (framing figure, not locked; do not present as a quote).
+- Strike-off requires no trading/name-change in the prior 3 months (CA 2006 s.1004-1005
+  conditions summarised; check before citing section numbers deeper than this).

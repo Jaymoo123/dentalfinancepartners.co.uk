@@ -178,7 +178,7 @@ One human need is typed four or five ways. A page that targets one phrasing lose
 | non-resident-landlord-scheme-uk-complete-guide | The COMPANY path: NRL4/NRL6, the 6 April 2020 income-tax-to-corporation-tax move. Cross-link changes-nrl-companies, do not duplicate. |
 | spv-mortgages-explained (Track B) | Only if the personal-guarantee angle is absent. An EXTEND, never a new page. |
 | /calculators/incorporation-cost-calculator | Professional-fees line (solicitor, valuation, lender) + running-cost line. It already does CGT, SDLT, s162 toggle, extract/retain and break-even. |
-| /calculators/stamp-duty-calculator | Explicit company / connected-party mode (market-value rule, s.53 FA 2003) and the six-dwellings non-residential election flag. |
+| /calculators/stamp-duty-calculator | Explicit company / connected-party mode (market-value rule, s.53 FA 2003) and the six-dwellings automatic non-residential deeming flag (s.116(7) FA 2003, automatic statutory deeming, NOT an election; Sch 6B was MDR, abolished 1 Jun 2024, per house_positions.md correction 2026-05-22). |
 
 ## 9. Cannibalisation warnings (the seams, and what keeps them apart)
 
