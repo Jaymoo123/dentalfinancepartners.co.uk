@@ -4,6 +4,7 @@ import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
 import { MEDICAL_GUIDES } from "@/lib/medical-guides-data";
 import { publishedGuideTopics } from "@/lib/resources/registry";
+import { DUPLICATE_REDIRECTS } from "@/middleware";
 
 // Stable last-modified dates: no new Date() churn on every build.
 // Google documents that churning lastmod degrades sitemap crawl-scheduling trust.
@@ -99,7 +100,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // Precompute posts once; reused for both the category max-date map and the post loop.
-  const posts = getAllPosts();
+  // A slug in DUPLICATE_REDIRECTS 301s at the middleware, so its URL must not be emitted
+  // even while its .md remains on disk.
+  const posts = getAllPosts().filter((p) => !(p.slug in DUPLICATE_REDIRECTS));
 
   // Build category-slug -> max(post.date) so each category page reflects its
   // most recently published post rather than churning on every deploy.

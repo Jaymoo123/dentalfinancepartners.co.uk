@@ -112,7 +112,7 @@ faqs:
 
 <p>A gross personal pension contribution reduces adjusted net income pound for pound, so £6,000 contributed at £110,000 restores £3,000 of allowance. A Gift Aid donation does the same at £1.25 for every £1 given. Timing is the third: an invoice raised in April rather than March falls into the next year, though only where the facts genuinely support the date. The fourth is the honest one, declining or deferring extra sessions, because 60 percent is a real price.</p>
 
-<p>A further pair of routes belongs elsewhere. Income is taxed on the figure of whichever spouse receives it, so how a couple hold jointly owned assets affects whose adjusted net income it lands in. Holding substantial private income in a company changes when profit is taxed on you personally, and that trade-off is set out in the <a href="/blog/private-practice-incorporation-complete-guide">guide to private practice incorporation</a>. Both are questions for a regulated adviser.</p>
+<p>A further pair of routes belongs elsewhere. Income is taxed on the figure of whichever spouse receives it, so how a couple hold jointly owned assets affects whose adjusted net income it lands in. Holding substantial private income in a company changes when profit is taxed on you personally, and that trade-off is set out in the <a href="/blog/medical-practice-incorporation-step-by-step">guide to medical practice incorporation</a>. Both are questions for a regulated adviser.</p>
 
 <h2>The Levers That Still Work After 5 April, and the Ones That Do Not</h2>
 
@@ -138,6 +138,6 @@ faqs:
 
 <ul>
 <li><a href="/blog/private-practice-tax-nhs-and-private-income">Private Practice Tax: Managing NHS and Private Income</a></li>
-<li><a href="/blog/private-practice-incorporation-complete-guide">Private Practice Incorporation: The Complete Guide</a></li>
+<li><a href="/blog/medical-practice-incorporation-step-by-step">Medical Practice Incorporation: Step by Step</a></li>
 <li><a href="/blog/nhs-uniform-tax-relief-laundry-allowance">NHS Uniform Tax Relief and the Laundry Allowance</a></li>
 </ul>

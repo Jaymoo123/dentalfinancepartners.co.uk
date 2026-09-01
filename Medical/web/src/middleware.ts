@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const DUPLICATE_REDIRECTS: Record<string, string> = {
+// Exported so sitemap.ts can exclude redirected slugs: a slug in this map may
+// still have an .md on disk, and a sitemap must never emit a URL that 301s.
+export const DUPLICATE_REDIRECTS: Record<string, string> = {
   "accountant-bookkeeping-medical-professionals": "/blog/gp-bookkeeping-guide-uk",
   "accountant-corporation-tax": "/blog/gp-corporation-tax",
   "accountant-financial-planning-uk-medical-professionals": "/blog/gp-financial-planning",

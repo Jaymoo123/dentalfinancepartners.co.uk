@@ -13,7 +13,7 @@ author: "Medical Accountants UK"
 
 <h2 id="what-this-page-is">What this page is</h2>
 
-<p>This is the manual for the spreadsheet. It sets out how the two columns are constructed, quantifies the two places the model simplifies, and names the factor it leaves out entirely that can be worth more than the whole comparison. If you want the incorporation decision explained rather than the file documented, <a href="/blog/private-practice-incorporation-complete-guide">the complete guide to incorporating a private practice</a> does that, and the <a href="/calculators/private-practice-incorporation">incorporation calculator</a> runs the comparison in the browser.</p>
+<p>This is the manual for the spreadsheet. It sets out how the two columns are constructed, quantifies the two places the model simplifies, and names the factor it leaves out entirely that can be worth more than the whole comparison. If you want the incorporation decision explained rather than the file documented, <a href="/blog/medical-practice-incorporation-step-by-step">the step-by-step guide to incorporating a medical practice</a> does that, and the <a href="/calculators/private-practice-incorporation">incorporation calculator</a> runs the comparison in the browser.</p>
 
 <p>Use the workbook when you want to sweep a range: run it at several private income levels and watch where the two columns cross. A single run at today's income tells you much less than the shape of the curve around it.</p>
 

@@ -60,7 +60,7 @@ const sections = [
   {
     title: "Private Practice Incorporation",
     body: "Structured advice on setting up a limited company for your private practice. We cover profit extraction, corporation tax planning, and maintaining optimal tax efficiency between personal and business finances.",
-    links: [{ href: "/blog/private-practice-incorporation-complete-guide", label: "Incorporation guide" }],
+    links: [{ href: "/blog/medical-practice-incorporation-step-by-step", label: "Incorporation guide" }],
   },
   {
     title: "Medical Expense Claims",
