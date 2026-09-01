@@ -355,6 +355,14 @@ The **rates are unchanged**; only the **pay bands moved**, uplifted by the Septe
 
 ---
 
+### 5.C Official rate of interest for beneficial loans (added 2026-09-01, verified at source)
+
+**Position (2026/27).** The official rate of interest is **3.75%** (HMRC beneficial-loan rates page, updated 6 March 2026, in force from 6 April 2026; EIM26104 shows 3.75% from 6 April 2025). **Since April 2025 HMRC can change the official rate in-year**, so pages must not treat it as fixed for a whole tax year: state the rate with its as-at date and say it can move. The £10,000 de minimis: ITEPA 2003 **s.175** charges the benefit, **s.180** exempts it where the total balance stays at or below £10,000 throughout the tax year (cite both, in that split).
+
+### 5.D SDLT on corporate residential purchases (added 2026-09-01, verified at source)
+
+**Position.** A company (or other non-natural person) buying residential property costing more than **£500,000** pays SDLT at a flat **17%** (FA 2003 Sch 4A para 3; raised from 15% at Autumn Budget 2024, effective **31 October 2024**). Source: https://www.gov.uk/guidance/stamp-duty-land-tax-corporate-bodies verbatim "charged at 17% on residential properties costing more than £500,000 bought by certain corporate bodies or 'non-natural persons'". ATED may also apply; no ATED figure is verified in this file, so state its existence only. Never cite the pre-31-Oct-2024 15% rate as current.
+
 ## 6. VAT for medical professionals (locked, 2026-06-03)
 
 **Position.** The supply of **medical care by a registered medical practitioner** (and by other registered health professionals) is **exempt** from VAT under **VATA 1994 Schedule 9 Group 7 Item 1** (Item 2 and the related items cover other registered professionals and persons supervised by them). The exemption turns on the **principal purpose** of the supply being the **protection, maintenance or restoration of health** of the individual, and the service falling within the professional's registered field. **NHS GMS/PMS income is outside the scope of VAT**; exempt and outside-the-scope income do not count towards the registration threshold.
@@ -748,6 +756,8 @@ The four conditions, one line each, quoted from HMRC **CTM36305**, https://www.g
 - **Statutory hooks:** **FA 1998 Sch 18** (company tax returns; para 3 notice to deliver, para 17 flat-rate penalties, para 18 tax-geared penalties); **TMA 1970 / CTA 2010 s.279A onwards** and the **Corporation Tax (Instalment Payments) Regulations 1998 (SI 1998/3175)** for instalments; **CTA 2010 s.18L** (augmented profits).
 - **HMRC manual anchors:** **CTM92500+** (quarterly instalment payments); **COM100000+** (filing and penalties).
 - **Writers must:** give both dates and say plainly that **payment (9 months and 1 day) falls BEFORE filing (12 months)**, because that ordering is the single thing small company directors get wrong. Use **£200** for the first late-filing penalty, then £200 at 3 months and 10% of unpaid tax at 6 and 12 months. Say instalments start above **£1.5 million of augmented profits**, that augmented profits **includes dividends from companies outside the group** but not from 51% subsidiaries, and that the threshold is **divided by the number of associated companies**. Do NOT write £100. Do NOT quote Companies House late-accounts penalties (unverified here). Cross-ref §5, §19.
+
+> **Ruling recorded 2026-09-01 (wave C QA):** a contrast clause that names £100 explicitly AS the Self Assessment figure and says it does not apply to a CT600 (e.g. "£200, not the £100 Self Assessment figure") is COMPLIANT with the rule above. The ban is on asserting £100 as the corporation-tax penalty, not on naming the figure to dispel it.
 
 ---
 
