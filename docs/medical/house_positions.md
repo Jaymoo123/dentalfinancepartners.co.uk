@@ -1,4 +1,4 @@
-# Medical house positions (locked figures and framings)
+﻿# Medical house positions (locked figures and framings)
 
 Locked by the orchestrator on 2026-06-03 before the medical (UK doctors, GPs and consultants) net-new and rewrite sessions launch. These are the positions every Medical net-new page and every Medical rewrite must use, cited by section number (`§N` / `§N.A`). Correctness is paramount: a wrong statute or rate here re-seeds the error into every citing page. Every figure below was verified at primary source on 2026-06-03 (see the Verification log) unless explicitly flagged `> VERIFY`.
 
@@ -322,6 +322,13 @@ The **rates are unchanged**; only the **pay bands moved**, uplifted by the Septe
 - **Practical writing rule for sessions:** state up front that **NHS GP goodwill cannot be sold** (since 1 April 2004; current instrument SI 2019/251), so a GP transaction is about tangibles, premises and capital accounts (plus any private goodwill), not NHS goodwill. State the BADR rate **with its exact date band** every time and confine it to private-practice / private-company disposals. Treat premises (notional/cost rent, last-man-standing, separate property partnership) as a specialist area needing practice-specific advice. Do NOT write that a GP can "sell their goodwill and claim BADR" on the NHS practice, and do NOT transcribe a dental goodwill-multiple playbook onto a GP practice. Cross-ref §5 (incorporation of private work), §7 (capital allowances on tangibles in the split).
 
 ---
+
+
+### 4.A CGT annual exempt amount (added 2026-09-01, verified at source)
+
+**Position (2026/27).** The CGT annual exempt amount is **GBP 3,000** for individuals and **GBP 1,500** for most trusts, unchanged from 2025/26. Source: https://www.gov.uk/government/publications/rates-and-allowances-capital-gains-tax/capital-gains-tax-rates-and-annual-tax-free-allowances , last updated 13 April 2026, table row verbatim "2026 to 2027  GBP 3,000  GBP 1,500" (figures printed with pound signs at source); corroborated at https://www.gov.uk/capital-gains-tax/allowances the same day. This closes the gap found by the wave C s.162 pack (the file previously carried no AEA entry for any year).
+
+**Writers must:** tag the figure 2026/27 and never carry it into a 2027/28 page without re-reading the source.
 
 ## 5. Profit extraction and incorporation (locked, 2026-06-03)
 
