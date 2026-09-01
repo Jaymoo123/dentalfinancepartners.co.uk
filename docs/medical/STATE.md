@@ -789,3 +789,25 @@ work, which currently has 6 pages.
    pages that family 2 above identifies, plus the corpus-wide GMS/PMS contract-wording sweep
    (39 blog posts + 6 page files) that is still an open owner decision.
 
+
+## Wave C SHIPPED TO MAIN 2026-09-01 (Track 2 / R.5 session 2; NOT deployed)
+
+Same-day sequence, all local, owner deploys: Stage 0 diagnosis (above), then wave C in full.
+Commits: 3e05a92f resources canonical fix, 0abd26e7 sitemap 301-filter + single-hop links,
+74700d7f calculator CT model fix + HP-code strip, 2fc4e868 workbook rebuild + preview
+goldens, dbacb928/f3f51f0b Carr-Hill corrections, 5153aa3e/9a0ac2a6/e93ea15a house_positions
+sections 15-22 + 4.A + 5.C/5.D, 86f00283 ten PACK_C packs, 5bf70160 the eight surfaces,
+6eda6dba wave closure record. Full rulings + lessons: BATCH3_INDEX "WAVE C CLOSED".
+
+Headline QA catches now live in the copy: portfolio FIC pays 25% on all profits (close
+investment-holding company, no marginal relief); incorporation calculator was overtaxing the
+company side (default case flipped from "costs GBP 1,973" to "saves GBP 1,276", workbook and
+preview rebuilt to match); full-expensing precedence corrected; s.180/s.175 split; five-year
+partnership retention.
+
+**NEXT, in order:** (1) owner: deploy + IndexNow + monitored_pages registration for waves
+A/B/C together (still all unregistered); (2) 2026-09-11: frozen set releases, run waves
+D/E/F/H per this index, plus the two Carr-Hill frozen-page patches; (3) allied-health
+cluster wave (~10-14 pages, C2 rows 20-23; author the nurses C1 wording fence first);
+(4) /locations local-modifier build (family 2 of the Stage 0 diagnosis); (5) wave G
+~2026-09-24; (6) owner decision unchanged: GMS/PMS corpus sweep (39 posts + 6 pages).
