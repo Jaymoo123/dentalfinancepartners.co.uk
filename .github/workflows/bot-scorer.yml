@@ -45,6 +45,11 @@ jobs:
         run: pip install --quiet httpx python-dotenv
 
       - name: Check the rule before trusting it with writes
+        # The module reads Supabase config at import time, so even --self-check,
+        # which touches no network, needs these present or it dies on import.
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python -m optimisation_engine.analysis.bot_scorer --self-check
 
       - name: Score every site

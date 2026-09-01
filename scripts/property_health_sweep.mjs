@@ -105,7 +105,26 @@ async function checkBundleSupabaseConfig(base) {
       if (next === 0x5c || next === 0x0d || next === 0x0a) corruptByte = next; // backslash / CR / LF
     }
   }
-  if (!found) return { ok: false, detail: "could not locate the inlined Supabase URL in the bundle (cannot verify)" };
+  if (!found) {
+    // Expected, and it is the healthy state (same finding as the Python twin in
+    // scripts/lead_capture_tripwire.py, 2026-06-16). Every lead surface posts to
+    // /api/leads/submit, so no client-side Supabase config is shipped and the
+    // 2026-06-24 corruption class is unreachable. The scan stays as a regression
+    // guard: if the marker ever comes back, a client insert path is live again.
+    try {
+      const r = await fetch(base + "/api/leads/submit", {
+        method: "POST",
+        headers: { "content-type": "application/json", "user-agent": UA },
+        body: "{}",
+      });
+      const body = await r.text();
+      if (r.status === 400 && body.includes("error"))
+        return { ok: true, detail: "no client-side Supabase config shipped (server-route capture, as intended); /api/leads/submit healthy (400 validation)" };
+      return { ok: false, detail: `/api/leads/submit unhealthy: HTTP ${r.status} ${body.slice(0, 120)}` };
+    } catch (e) {
+      return { ok: false, detail: `/api/leads/submit probe error: ${e}` };
+    }
+  }
   if (corruptByte !== null)
     return { ok: false, detail: "inlined Supabase config is CORRUPTED (trailing char) -> client lead capture is BROKEN" };
   return { ok: true, detail: "inlined Supabase URL is clean" };
