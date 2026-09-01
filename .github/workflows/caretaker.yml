@@ -88,6 +88,7 @@ jobs:
         # caretaker had died and would generate a new alert.
         run: |
           python - <<'PY'
+          import datetime as dt
           import json
           from pathlib import Path
 
@@ -100,7 +101,9 @@ jobs:
 
           findings = run.get("findings", [])
           bad = [f for f in findings if f.get("status") in ("ALARM", "BLIND")]
-          out.append(f"generated: {run.get('generated', 'unknown')}")
+          # state_check stamps "generated" into its snapshot file, but its --json
+          # stdout carries only facts+findings, so read the clock here instead.
+          out.append(f"generated: {dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}")
           out.append(f"findings: {len(findings)}, needing attention: {len(bad)}")
           out.append("")
           if bad:
