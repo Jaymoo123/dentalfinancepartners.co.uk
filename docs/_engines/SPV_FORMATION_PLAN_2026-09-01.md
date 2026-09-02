@@ -136,10 +136,50 @@ our corpus"; that is true of the Labs-derived demand_corpus.csv, but the figure 
 pulled live from Google Ads search_volume (location UK) on 2026-09-01 in the SERP check.
 Both statements stand; the 720/mo is real.
 
-Phase B: calculators + pillar + P1 EXTEND rewrites. Phase C: P2/P3 waves (net-new engine,
-batch size 1, Opus writers, standard QA gates). Phase D: deploy alongside Track B mortgage
-cluster once its CTA wording is signed off. Ongoing: GSC query mining post-launch to catch
-the autocomplete-blind costs+fees bucket. Content writing remains gated on owner GO.
+**WAVE 1 COMPLETE 2026-09-01, commits `65be9c4d` (Wave 0 briefs) + `c7f95e31` (build).**
+Shipped locally, NOT pushed, NOT deployed: pillar /spv-company (router, sitemap), 3 new
+posts (formation cost, company allowable expenses, how-to-close at the 2,400/mo head),
+4 full rewrites (U17/U18/U19/U20, both portfolio pages de-conflicted in one wave), U02
+extend (CH walkthrough), C1+C2 calculator extensions (additive, goldens prove no change
+for existing inputs; embeds untouched). QA = 3 Opus tracks; factual recomputed every
+worked example and caught 2 HIGH arithmetic errors + a repeat of the logged s.116(7)
+correction; query-coverage verified every variant set; editorial unified currency/percent
+conventions. Gates green: validator 0 errors, 1,540 tests, tsc, production build.
+U45 died in Wave 0 (personal guarantees already covered). house_positions gained §42
+(closing-company ground truth); note §29 was already taken, the SPV block is §42.
+U19 ceded "cheapest way to incorporate property" (Bing pos-1, 7 impr) to U17 by design.
+
+**WAVE 2 COMPLETE 2026-09-02, commits `093487e8` (briefs) + `2d20615a` (build).** 9 new
+pages + NRL-guide company-path extend + property-company-extraction-calculator (new
+employerNic lib, fleet 27 tools). Brief gate caught the NRL4/NRL6 premise error at source
+(NRL2 = company form). Factual QA verified 6 sources live and fixed a stale 15%->17%
+Sch 4A rate, a share-route netting error and pre-ECCTA PSC framing; coverage 10/10 after
+sentence-scale fixes; editorial: 17 tables thead-wrapped, boilerplate openers rewritten.
+All gates green (1,546 tests). Pillar wired to every Wave 2 page.
+
+**WAVE 3 CONTENT COMPLETE 2026-09-02, commits `d9bdc3d0` (briefs) + `8632321b` (build,
+GATES PENDING).** 3 new pages (name rules, SIC change, Scotland/Wales company landlord
+registration) + 3 extends (VAT, group relief opener, insurance) + pillar wiring + combined
+QA applied (SIC leak fixed, Welsh paper-licence fees corrected, missing FAQs added). FAQ
+anchors stripped in 2 Wave 2 files (FAQ answers render as plain text; NOTE: 100+ LEGACY
+posts site-wide embed HTML in FAQ answers, a probable long-standing cosmetic defect, owner
+decision needed on a separate sweep).
+
+## RESUME POINT (session closed 2026-09-02 at owner request, before gates)
+1. Run full gates in Property/web: `python scripts/validate_blog_content.py`,
+   `npx vitest run`, `npx tsc --noEmit`, `npm run build`. Fix anything red, amendless
+   commit on top.
+2. OWNER INSTRUCTED 2026-09-02 (pending execution): "once done and we're confident, add
+   to monitored pages and deploy all sites, all except wills/divorce". So after gates:
+   `python scripts/check_dependency_closure.py`; check `git log origin/main..main` (our 6
+   SPV commits PLUS possibly another session's Medical wave commits, verify before push);
+   push; clean-worktree deploys per memory `vercel_cli_deploy_workflow` (C:/dep short
+   path) for all live sites EXCEPT wills-probate + divorce-finances (+ashfield, no
+   project); then register the SPV programme pages in monitored_pages (memory
+   `monitored_pages_system`). IndexNow NOT requested.
+3. Post-deploy: verify /spv-company + the 2 extended calculators live; fresh GSC baseline
+   re-read ~4 weeks later (pages younger = maturing, not failing).
+Ongoing: GSC query mining post-launch for the autocomplete-blind costs+fees bucket.
 
 ## 10. Our current demand baseline (GSC/Bing)
 
