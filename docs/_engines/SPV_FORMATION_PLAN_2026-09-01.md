@@ -303,9 +303,13 @@ regional queries null). QA: 2 factual tracks (7 defects fixed, every number reco
 editorial (10 sibling interlinks, zero leakage/em-dashes). All new slugs under
 incorporation-and-company-structures.
 
-**NEXT (owner-gated):** commit (stage explicitly), push, deploy Property, register the 8 new
-posts + hub in monitored_pages, then press distribution of the release (owner decides channel).
-Monthly refresh on request.
+**DEPLOYED 2026-09-02 (owner "deploy"):** commit `e5338e99` (30 files, aswatax legal files left
+untouched), pushed, both CI runs green (Content Quality 43s, Build & Lint 3m36s, zero red).
+Property deployed to production from clean worktree at `e5338e99` (C:/dep, removed after).
+All 10 URLs verified 200 (hub + CSV route + 8 posts). monitored_pages: 8 net_new rows,
+zero baselines, monitor_until 2026-12-01. Harvest CSV remains in session scratchpad only.
+REMAINING: press distribution of the release (owner decides channel/timing); monthly refresh
+on request; first GSC read ~2026-10-01 (young pages = maturing, not failing).
 
 ## 10. Our current demand baseline (GSC/Bing)
 
