@@ -37,15 +37,15 @@ faqs:
     answer: "Most landlord insurance premiums are allowable revenue expenses, deducted from rental income because they are incurred wholly and exclusively for the property business (section 34 ITTOIA 2005, applied to property businesses by section 272). They are not finance costs, so they are not restricted by Section 24 and relieve at your marginal rate. Premiums that mix personal and business cover must be apportioned. Insurance payouts are not automatically tax-free. Our specialist guide on insurance and tax covers premium deductibility and payout treatment in full."
   - question: "Can I claim a premium I paid in advance?"
     answer: "Generally yes. Most individual landlords use the cash basis, under which a premium is relieved in the tax year it is paid, even where the policy runs into the following year. Landlords using the accruals basis spread the premium across the period it covers. The choice of basis, and the timing detail, is covered in our insurance and tax guide rather than here, because it sits alongside the wider question of how premiums and payouts are recorded."
-  - question: "Does the holding structure, personal or company, change the insurance I need?"
-    answer: "The core cover types are the same whether you hold property personally, in a partnership or through a limited company: the building, contents, liability and the optional protections are driven by the property and the letting model, not the wrapper. The structure mainly affects how a policy is arranged across a portfolio (insurers offer multi-property and portfolio policies) and the documentation the insurer expects. The tax treatment of premiums does differ between personal and company ownership, which is covered in the linked tax guide."
+  - question: "Does my landlord insurance need to be in my limited company's name?"
+    answer: "Yes. Where a limited company or SPV holds the title, the policy should be arranged in the company's name, because the company is the legal owner and therefore holds the insurable interest in the building. A director does not hold that interest personally just because they own the company. The cover types do not change: a company-owned let needs the same buildings, liability and optional protections as a personally held one. Only the identity of the policyholder changes, and a lender will normally require the company to be named with its own interest noted."
   - question: "Do I need landlord insurance during void periods or renovation?"
     answer: "Yes, and the type of cover matters. An empty property is a higher risk, so most insurers apply unoccupancy conditions (regular inspections, draining systems, restricted cover) once a property is vacant beyond a set period. Renovation and refurbishment usually need specific cover or a notified extension, because standard policies often exclude works. Tell your insurer before a property becomes vacant or before works start. Cover is normally available throughout a void within a continuing letting business."
-dateModified: "2026-05-30"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
-reviewedAt: "2026-05-30"
-editorialNote: "Full rewrite: re-scoped onto coverage selection by property type, all general-market price figures removed, tax-deductibility material cut to a signposted summary linking the specialist canonical."
+reviewedAt: "2026-09-02"
+editorialNote: "Expanded the ownership-structure section to answer the limited company and SPV question directly: policy in the company's name, insurable interest, lender requirement and the personal-name policy failure mode on incorporation or transfer. No premium figures added, in line with the page's no-pricing convention."
 ---
 
 <p>Choosing landlord insurance is really a question of matching cover to how the property is let. A single unfurnished house on an ordinary tenancy needs a very different policy from a licensed house in multiple occupation, a commercial unit or a serviced-accommodation flat. Buy a generic package without thinking about the letting model and you can end up paying for cover you do not need while carrying a gap that voids the policy when you most need it to respond.</p>
@@ -141,7 +141,27 @@ editorialNote: "Full rewrite: re-scoped onto coverage selection by property type
 
 <p>How you hold the property, personally, in a partnership or through a limited company, makes less difference to the cover you need than landlords often expect. The building, contents, liability and the optional protections are driven by the property and the letting model, not by the wrapper around it. Where the structure does matter is in how a policy is arranged across a portfolio and in the documentation the insurer expects.</p>
 
-<p>Insurers offer multi-property and portfolio policies that bring several properties under a single arrangement, which can suit landlords holding a number of properties whether personally or through a company. The right approach depends on how the properties are held and managed rather than on a claim that one structure secures a better deal. The tax treatment of premiums does differ between personal and company ownership, and that sits with the tax question below rather than with the cover itself. The wider personal-versus-company picture is in our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a>.</p>
+<p>Insurers offer multi-property and portfolio policies that bring several properties under a single arrangement, which can suit landlords holding a number of properties whether personally or through a company. Those arrangements will commonly accommodate one company holding several properties, or a group with more than one special purpose vehicle, under a single policy or a linked set of policies. The right approach depends on how the properties are held and managed rather than on a claim that one structure secures a better deal.</p>
+
+<h3>Does my landlord insurance need to be in my company's name?</h3>
+
+<p>Yes. Where a limited company holds the title, the landlord insurance, and the buildings insurance in particular, should be arranged in the company's name, because the company is the legal owner and so holds the insurable interest in the building. A director or shareholder does not hold that interest personally simply because they own the company that owns the property.</p>
+
+<h3>Will my insurer cover a property owned by my SPV?</h3>
+
+<p>Generally yes, provided the policy is set up correctly. Insurers writing standard buy-to-let, HMO and portfolio cover routinely accept a company as the policyholder, and portfolio arrangements will commonly take one company holding several properties, or a group with more than one special purpose vehicle. Confirm the position with the insurer or broker at quotation, because appetite for corporate landlords varies by product.</p>
+
+<h3>Does a lender require the insurance to be in the company's name?</h3>
+
+<p>Typically yes. A lender financing a company-owned property will normally require buildings cover as a mortgage condition, with the company named as policyholder and the lender's own interest noted, which is the corporate version of the lender requirement described under buildings insurance above. A schedule in a director's personal name over a company-registered title is a common reason for a drawdown to stall.</p>
+
+<h3>What if the policy is in my own name but the company owns the property?</h3>
+
+<p>This is a real and quiet gap. Nothing looks wrong: the premium keeps leaving the same account and the property is described accurately, so the mismatch between policyholder and legal owner is often examined for the first time when a claim goes in, and it cannot be corrected retrospectively at that point. Treat it as a cover failure waiting to happen rather than an administrative untidiness.</p>
+
+<h3>Do I need different insurance if I transfer a property into a limited company?</h3>
+
+<p>Not a different type of cover: a company-owned single let still needs the same buildings, liability and optional protections as a personally held one. What must change is the name on the policy, re-arranged in the company's name at the point of transfer rather than left running personally past completion. If the prior question is whether to incorporate at all, that is our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a>, with the structural side in our <a href="/spv-company">property SPV guidance</a> and our guide on <a href="/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide">setting up a property investment company</a>. The tax treatment of premiums does differ between personal and company ownership, and that sits with the tax question below.</p>
 
 <h2>Are landlord insurance premiums tax deductible?</h2>
 

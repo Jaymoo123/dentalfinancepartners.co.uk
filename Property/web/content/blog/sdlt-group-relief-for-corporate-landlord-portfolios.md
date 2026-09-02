@@ -6,7 +6,7 @@ date: "2026-05-22"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "SDLT Group Relief: 75% Test, Commercial Purpose, Clawback"
-metaDescription: "Schedule 7 FA 2003 SDLT group relief for intra-group property transfers: 75% subsidiary test, commercial purpose"
+metaDescription: "Schedule 7 FA 2003 SDLT group relief cuts intra-group property transfers to nil: the 75% subsidiary test, commercial purpose and the 3-year clawback."
 altText: "UK corporate office skyline, illustrating a multi-company landlord group that may transfer property between subsidiaries free of SDLT under Schedule 7 FA 2003"
 image: "https://images.pexels.com/photos/358549/pexels-photo-358549.jpeg?auto=compress&cs=tinysrgb&h=440&w=640"
 imageCredit:
@@ -42,7 +42,11 @@ faqs:
     answer: "A defensible group relief file typically includes the group structure chart at the effective date, share registers and certificates evidencing the 75% holdings, board minutes authorising the transfer, a commercial purpose memorandum explaining why the transfer is being made, the executed transfer documents, the SDLT1 with relief claimed, and any HMRC clearance correspondence. Where the structure involves indirect holdings, the s.1156 CTA 2010 multiplication calculation should be in writing and on file."
   - question: "Does the relief work for a transfer into the group (third-party seller)?"
     answer: "No. Group relief only applies to transactions between companies that are already members of the same group at the effective date. A transfer from a third party into the group is a fresh acquisition and SDLT (plus any surcharges) applies in full. Buyers sometimes acquire a property-owning company instead of the property itself for this reason; the share acquisition attracts stamp duty at 0.5% rather than SDLT, and the property does not move out of the property-owning company."
-dateModified: "2026-05-22"
+  - question: "Can I move a property from one of my limited companies to another without paying SDLT?"
+    answer: "In most cases yes, if both companies are members of the same 75% group at the date of the transfer and the move is made for genuine commercial reasons. SDLT group relief under Schedule 7 FA 2003 then reduces the SDLT due on the transfer to nil, whatever the value of the property. The relief is claimed on the SDLT1 return filed by the receiving company within 14 days. Watch the 3-year clawback if that company might later be sold out of the group."
+  - question: "Is moving property between my own companies the same as transferring it into a company for the first time?"
+    answer: "No, they are different regimes. Moving a property from one company to another company in the same group is SDLT group relief under Schedule 7 FA 2003. Moving a property you hold personally into a company for the first time is incorporation, where SDLT is normally due on market value and the capital gains position turns on whether the portfolio amounts to a business. See the guide to setting up a property investment company for that route; this page covers the company-to-company case only."
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"
@@ -52,6 +56,16 @@ editorialNote: "Practical mechanics for landlords restructuring multi-company ho
 <p>Landlords running multiple property companies, whether a flat hierarchy of SPVs under one holding company or a more elaborate structure, periodically need to move properties between those companies. A development-stage SPV completes and needs to sit in the long-hold rental vehicle. A mortgage refinancing requires a property to move into the SPV the lender is willing to underwrite. A planning consent reorganisation puts the trading and investment sides into separate companies. In each case the obvious question is whether SDLT will land on the intra-group transfer.</p>
 
 <p>Section 62 and Schedule 7 of the <a href="https://www.legislation.gov.uk/ukpga/2003/14/contents">Finance Act 2003</a> provide the answer: a transfer between companies in the same 75% group can take place free of SDLT, subject to a commercial-purpose test and a 3-year clawback if the recipient company subsequently leaves the group still holding the property. This page sets out the conditions, the clawback mechanics, the principal exceptions, and a worked four-SPV restructure.</p>
+
+<h2>Can I transfer a property between my limited companies without paying SDLT?</h2>
+
+<p>Usually yes, provided both companies sit in the same corporate group and the move is genuinely commercial. Two companies are in the same group where one owns at least 75 per cent of the other, or where both are 75 per cent owned by the same parent, so a transfer from one of your <a href="/spv-company">property SPVs</a> to another under a common holding company is the standard case. Where that holds, SDLT group relief can reduce the tax on the transfer to nil, even on a property worth seven figures.</p>
+
+<p>This is not the same question as moving a property you own personally into a company for the first time. That is incorporation, a different regime with its own SDLT and capital gains treatment, and the <a href="/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide">guide to setting up a property investment company</a> is the page for it. Group relief only works where the property already sits inside a company and is moving to another company already in the same group.</p>
+
+<p>The catch that trips people up is the clawback. If the receiving company leaves the group within 3 years while still holding the property, the relieved SDLT becomes payable with interest, so a transfer is not a decision to take without checking the exit plan for that company first.</p>
+
+<p>The rest of this page sets out the detail: the four conditions that must all be met, how the 75 per cent test works through indirect holdings, what HMRC means by commercial purpose, and the clawback rule and its exceptions in full.</p>
 
 <h2>The four qualifying conditions</h2>
 
@@ -177,9 +191,9 @@ editorialNote: "Practical mechanics for landlords restructuring multi-company ho
 <h2>Internal links and further reading</h2>
 
 <ul>
-<li><a href="/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election">The SDLT six-dwellings rule (s.116(7) FA 2003)</a> , automatic non-residential treatment for external bulk acquisitions.</li>
-<li><a href="/blog/incorporation-and-company-structures/sdlt-sub-sale-relief-mechanics">SDLT sub-sale relief (s.45 FA 2003)</a> , pre-completion onward sales; not a retrofit route.</li>
-<li><a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">SDLT on transferring an existing portfolio to a company</a> , partnership incorporation context.</li>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election">The SDLT six-dwellings rule (s.116(7) FA 2003)</a> gives automatic non-residential treatment for external bulk acquisitions.</li>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-sub-sale-relief-mechanics">SDLT sub-sale relief (s.45 FA 2003)</a> covers pre-completion onward sales; not a retrofit route.</li>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost">SDLT on transferring an existing portfolio to a company</a> sets out the partnership incorporation context.</li>
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual">HMRC SDLT Manual</a> (SDLTM23010 onwards on group relief).</li>
 <li><a href="https://www.legislation.gov.uk/ukpga/2010/4/contents">Corporation Tax Act 2010</a> (sections 1155 to 1157 on indirect ownership).</li>
 </ul>

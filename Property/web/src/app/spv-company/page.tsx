@@ -389,10 +389,22 @@ export default function SpvCompanyPage() {
               . Companies House:{" "}
               <InlineLink href="/blog/property-finance/sic-code-for-an-spv-property-company">
                 SIC codes for an SPV
+              </InlineLink>
+              ,{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/change-sic-code-companies-house-property-company">
+                changing a SIC code
+              </InlineLink>
+              ,{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/spv-company-name-rules-uk">
+                company name rules
               </InlineLink>{" "}
               and{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/spv-first-year-accounts-and-filing-timeline">
                 the first-year filing timeline
+              </InlineLink>
+              . Landlord registration for companies in Scotland and Wales:{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/landlord-registration-limited-company-scotland-wales">
+                the devolved registers
               </InlineLink>
               . Transfers:{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">
