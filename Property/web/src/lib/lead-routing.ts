@@ -8,10 +8,9 @@
  * (LEADS_NOTIFY_TO_PROPERTY); every other site goes to the shared internal inbox
  * (LEADS_NOTIFY_TO). See resolveLeadTo.
  *
- * CC: no one is copied by default (partner auto-CC removed 2026-07-17). If
- * LEADS_NOTIFY_CC is set in env, those addresses are copied on leads from every
- * site EXCEPT those in LEADS_NOTIFY_CC_EXCLUDE_SOURCES (defaults to
- * "property,test"). See resolveLeadCc.
+ * CC: umair@propertytaxpartners.co.uk is copied on leads from every site EXCEPT
+ * those in LEADS_NOTIFY_CC_EXCLUDE_SOURCES (defaults to "test"). Setting
+ * LEADS_NOTIFY_CC in env replaces that default address list. See resolveLeadCc.
  *
  * source='test' is the reserved synthetic-lead value used by the post-deploy
  * smoke check: it is never copied to any vendor (CC-excluded) and is routed only
@@ -20,10 +19,11 @@
  * Kept as pure functions (env injected) so the routing rules are unit-testable
  * without standing up the route or mocking Resend.
  */
-// Partner CC removed 2026-07-17 (owner instruction): no default CC. Leads are
-// only copied externally if LEADS_NOTIFY_CC is explicitly set in env.
-export const DEFAULT_PARTNER_CC = "";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
+// Partner CC removed 2026-07-17, reinstated 2026-09-01 (owner instruction):
+// Umair at Property Tax Partners is copied on every site's lead notifications
+// except synthetic test leads. LEADS_NOTIFY_CC overrides this default outright.
+export const DEFAULT_PARTNER_CC = "umair@propertytaxpartners.co.uk";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "test";
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
 // dedicated Ashfield Trading inbox (the partner-forwarding inbox); every other site's leads

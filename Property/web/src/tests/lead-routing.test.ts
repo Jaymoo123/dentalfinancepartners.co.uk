@@ -1,8 +1,8 @@
 /**
  * Lead-notification recipient + CC routing. Guards two rules: Property's own
  * leads go to the Ashfield Trading inbox (every other site to the shared internal
- * inbox), and NO lead gets an external CC by default (partner auto-CC removed
- * 2026-07-17; CC only happens when LEADS_NOTIFY_CC is explicitly set). env is
+ * inbox), and every site except synthetic test leads copies the partner CC
+ * (umair@propertytaxpartners.co.uk, owner instruction 2026-09-01). env is
  * injected so each case is isolated from process.env.
  */
 import { describe, it, expect } from "vitest";
@@ -19,11 +19,11 @@ import {
 const empty: Record<string, string | undefined> = {};
 
 describe("resolveLeadCc", () => {
-  it("has NO default partner CC (auto-CC removed 2026-07-17)", () => {
-    expect(DEFAULT_PARTNER_CC).toBe("");
+  it("copies the partner by default", () => {
+    expect(DEFAULT_PARTNER_CC).toBe("umair@propertytaxpartners.co.uk");
   });
 
-  it("does NOT copy anyone on any site's leads by default", () => {
+  it("copies the partner on every site's leads except synthetic test leads", () => {
     for (const source of [
       "property",
       "dentists",
@@ -32,21 +32,21 @@ describe("resolveLeadCc", () => {
       "generalist",
       "agency",
       "contractors-ir35",
-      "test",
     ]) {
-      expect(resolveLeadCc(source, empty)).toEqual([]);
+      expect(resolveLeadCc(source, empty)).toEqual([DEFAULT_PARTNER_CC]);
     }
+    expect(resolveLeadCc("test", empty)).toEqual([]);
   });
 
-  it("does not copy anyone when source is missing or empty", () => {
-    expect(resolveLeadCc(undefined, empty)).toEqual([]);
-    expect(resolveLeadCc("", empty)).toEqual([]);
+  it("copies the partner when source is missing or empty", () => {
+    expect(resolveLeadCc(undefined, empty)).toEqual([DEFAULT_PARTNER_CC]);
+    expect(resolveLeadCc("", empty)).toEqual([DEFAULT_PARTNER_CC]);
   });
 
   it("honours an explicit LEADS_NOTIFY_CC list for non-excluded sites only", () => {
     const env = { LEADS_NOTIFY_CC: "a@x.com, b@y.com" };
     expect(resolveLeadCc("dentists", env)).toEqual(["a@x.com", "b@y.com"]);
-    expect(resolveLeadCc("property", env)).toEqual([]); // still excluded
+    expect(resolveLeadCc("property", env)).toEqual(["a@x.com", "b@y.com"]);
     expect(resolveLeadCc("test", env)).toEqual([]); // synthetic leads never CC'd
   });
 
@@ -61,9 +61,9 @@ describe("resolveLeadCc", () => {
 });
 
 describe("ccExcludedSources", () => {
-  it("defaults to Property and synthetic test leads", () => {
-    expect(ccExcludedSources(empty)).toEqual(["property", "test"]);
-    expect(DEFAULT_CC_EXCLUDED_SOURCES).toBe("property,test");
+  it("defaults to synthetic test leads only", () => {
+    expect(ccExcludedSources(empty)).toEqual(["test"]);
+    expect(DEFAULT_CC_EXCLUDED_SOURCES).toBe("test");
   });
 });
 

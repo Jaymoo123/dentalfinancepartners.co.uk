@@ -3,8 +3,8 @@
  * Shared routing table from the estate's canonical lead-routing module.
  * ponytail: copied verbatim from generalist/web/src/lib/lead-routing.ts
  */
-export const DEFAULT_PARTNER_CC = "";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
+export const DEFAULT_PARTNER_CC = "umair@propertytaxpartners.co.uk";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "test";
 
 export const DEFAULT_NOTIFY_TO = "junaydmoughal@hotmail.co.uk";
 export const PROPERTY_NOTIFY_TO = "junayd@ashfieldtrading.com";

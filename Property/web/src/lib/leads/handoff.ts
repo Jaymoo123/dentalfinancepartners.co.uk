@@ -10,14 +10,10 @@
  */
 
 import { getResend, getFromAddress } from "@/lib/resend";
-import { resolveLeadTo } from "@/lib/lead-routing";
+import { resolveLeadCc, resolveLeadTo } from "@/lib/lead-routing";
 import { adminSelect } from "@/lib/supabase/admin";
 import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
 import { roleLabel, surfaceLabel } from "./role-labels";
-import { offerTierFor, tierPrice } from "./offer-config";
-import { buildTeaser, tierLabel } from "./offer-teaser";
-import { renderTeaserHtml, renderTeaserText, offerBaseUrl } from "./offer-send";
-import { mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 
 interface LeadRow {
   id: string;
@@ -258,6 +254,7 @@ export async function sendContactableHandoff(
   if (!lead) return { sent: false, to: "", skipped: "no-lead" };
 
   const to = resolveLeadTo(lead.source);
+  const cc = resolveLeadCc(lead.source);
 
   // Do not actually email for synthetic test leads, or if Resend is unconfigured.
   if (lead.source === "test") return { sent: false, to, skipped: "test" };
@@ -271,30 +268,7 @@ export async function sendContactableHandoff(
     message: lead.message,
   });
 
-  const built = buildHandoffEmail(lead, d, reason, opts?.updated === true);
-  let { html, text } = built;
-  const { subject } = built;
-
-  // Buyer offer link (Property leads only reach buyers at READY stage, owner
-  // decision): if the lead has a sellable value score, append the anonymised
-  // teaser + scanner-safe "Offer to buyers" action link. Best-effort, never
-  // blocks the handoff.
-  try {
-    const scoreRes = await adminSelect<{ tier: string; case_tier: string | null; est_value_gbp: number; intent: string; work_type: string }>(
-      "lead_value_scores",
-      { select: "tier,case_tier,est_value_gbp,intent,work_type", lead_id: `eq.${leadId}`, limit: "1" },
-    );
-    const score = scoreRes.data[0];
-    const offerTier = score ? offerTierFor(score) : null;
-    if (score && offerTier !== null && tierPrice(offerTier) !== null) {
-      const teaser = await buildTeaser(lead, score);
-      const offerUrl = `${offerBaseUrl()}/api/leads/offer/${mintLeadToken(leadId, "offer")}`;
-      html += `<div style="margin-top:20px;"><p style="margin:0 0 6px;color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Buyer teaser (${tierLabel(offerTier)} · £${tierPrice(offerTier)})</p>${renderTeaserHtml(teaser, tierPrice(offerTier))}<p style="margin:14px 0 0;"><a href="${offerUrl}" style="display:inline-block;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;padding:11px 22px;border-radius:6px;background-color:#0f172a;">Offer to buyers</a></p></div>`;
-      text += `\n\nBUYER TEASER (${tierLabel(offerTier)}, £${tierPrice(offerTier)})\n${renderTeaserText(teaser, tierPrice(offerTier))}\n\nOffer to buyers: ${offerUrl}`;
-    }
-  } catch (err) {
-    console.error("[handoff] buyer offer block failed", err);
-  }
+  const { subject, html, text } = buildHandoffEmail(lead, d, reason, opts?.updated === true);
 
   // Try up to 3 times with short backoffs before giving up gracefully.
   // Total worst-case wait is ~1.1 s, well inside any route budget.
@@ -311,6 +285,7 @@ export async function sendContactableHandoff(
       {
         from: getFromAddress(),
         to,
+        ...(cc.length ? { cc } : {}),
         subject,
         html,
         text,

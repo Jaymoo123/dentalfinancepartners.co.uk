@@ -5,8 +5,8 @@
  * Kept as pure functions (env injected) so the routing rules are unit-testable.
  * Mirrors Property/web/src/lib/lead-routing.ts structure verbatim.
  */
-export const DEFAULT_PARTNER_CC = "";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
+export const DEFAULT_PARTNER_CC = "umair@propertytaxpartners.co.uk";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "test";
 
 // All operator notifications route to the Ashfield Trading inbox, same as
 // Property (the legacy hotmail default was retired estate-wide 2026-08-19).

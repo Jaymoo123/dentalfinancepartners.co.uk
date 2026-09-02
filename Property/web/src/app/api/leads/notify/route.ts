@@ -189,10 +189,10 @@ export async function POST(req: NextRequest) {
   // other site keeps going to the shared internal inbox (junaydmoughal@hotmail.co.uk).
   // The rule lives in resolveLeadTo.
   const to = resolveLeadTo(r.source);
-  // Partner firm (Reflex Accounting) is copied on leads from every site EXCEPT
-  // Property's own — Property leads go to the internal inbox only, no partner
-  // CC. The rule lives in resolveLeadCc (LEADS_NOTIFY_CC_EXCLUDE_SOURCES,
-  // defaults to "property"); an empty list here means no CC header is sent.
+  // Partner (Property Tax Partners) is copied on leads from every site except
+  // synthetic test leads (owner instruction 2026-09-01). The rule lives in
+  // resolveLeadCc (LEADS_NOTIFY_CC_EXCLUDE_SOURCES, defaults to "test"); an
+  // empty list here means no CC header is sent.
   const cc = resolveLeadCc(r.source);
   const partnerCopied = cc.length > 0;
   const nurtureBanner = !partnerCopied && source === "property";

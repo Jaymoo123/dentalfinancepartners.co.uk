@@ -84,6 +84,7 @@ vi.mock("@/lib/resend", () => ({
 }));
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "operator@example.com",
+  resolveLeadCc: () => [],
 }));
 
 import {

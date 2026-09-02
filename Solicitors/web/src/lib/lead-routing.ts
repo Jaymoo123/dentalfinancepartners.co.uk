@@ -22,8 +22,8 @@
  */
 // Partner CC removed 2026-07-17 (owner instruction): no default CC. Leads are
 // only copied externally if LEADS_NOTIFY_CC is explicitly set in env.
-export const DEFAULT_PARTNER_CC = "";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
+export const DEFAULT_PARTNER_CC = "umair@propertytaxpartners.co.uk";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "test";
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
 // dedicated Ashfield Trading inbox (the partner-forwarding inbox); every other site's leads

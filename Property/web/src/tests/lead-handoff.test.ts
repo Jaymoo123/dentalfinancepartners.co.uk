@@ -74,6 +74,7 @@ vi.mock("@/lib/resend", () => ({
 
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "operator@example.com",
+  resolveLeadCc: () => ["partner@example.com"],
 }));
 
 import { sendContactableHandoff, buildHandoffEmail } from "@/lib/leads/handoff";

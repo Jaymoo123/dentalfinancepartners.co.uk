@@ -3,8 +3,8 @@
  * Ported from generalist/web/src/lib/lead-routing.ts. See that file for full docs.
  * NEVER import into a client component.
  */
-export const DEFAULT_PARTNER_CC = "";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "property,test";
+export const DEFAULT_PARTNER_CC = "umair@propertytaxpartners.co.uk";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "test";
 // All operator notifications route to the Ashfield Trading inbox, same as
 // Property (the legacy hotmail default was retired estate-wide 2026-08-19).
 export const DEFAULT_NOTIFY_TO = "junayd@ashfieldtrading.com";

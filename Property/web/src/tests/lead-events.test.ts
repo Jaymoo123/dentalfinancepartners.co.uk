@@ -41,6 +41,7 @@ vi.mock("@/lib/resend", () => ({
 
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "operator@test.com",
+  resolveLeadCc: () => [],
 }));
 
 vi.mock("@/config/niche-loader", () => ({

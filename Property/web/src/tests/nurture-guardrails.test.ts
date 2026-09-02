@@ -48,6 +48,7 @@ vi.mock("@/lib/resend", () => ({
 
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "operator@test.com",
+  resolveLeadCc: () => [],
 }));
 
 // ── Imports (after mocks) ─────────────────────────────────────────────────────

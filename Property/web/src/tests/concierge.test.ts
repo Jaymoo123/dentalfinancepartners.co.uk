@@ -167,6 +167,7 @@ vi.mock("@/lib/resend", () => ({
 
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: vi.fn(() => "ops@test.example.com"),
+  resolveLeadCc: () => [],
 }));
 
 // ---------------------------------------------------------------------------

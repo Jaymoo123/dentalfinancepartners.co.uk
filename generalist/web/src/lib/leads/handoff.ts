@@ -10,7 +10,7 @@
  */
 
 import { getResend, getFromAddress } from "@/lib/resend";
-import { resolveLeadTo } from "@/lib/lead-routing";
+import { resolveLeadCc, resolveLeadTo } from "@/lib/lead-routing";
 import { adminSelect } from "@/lib/supabase/admin";
 import { gatherLeadDossier, humanisePath, formatLatency, type LeadDossier } from "./dossier";
 import { roleLabel, surfaceLabel } from "./role-labels";
@@ -255,6 +255,7 @@ export async function sendContactableHandoff(
   if (!lead) return { sent: false, to: "", skipped: "no-lead" };
 
   const to = resolveLeadTo(lead.source);
+  const cc = resolveLeadCc(lead.source);
 
   // Do not actually email for synthetic test leads, or if Resend is unconfigured.
   if (lead.source === "test") return { sent: false, to, skipped: "test" };
@@ -302,6 +303,7 @@ export async function sendContactableHandoff(
       {
         from: getFromAddress(),
         to,
+        ...(cc.length ? { cc } : {}),
         subject,
         html,
         text,

@@ -167,6 +167,7 @@ vi.mock("@/lib/resend", () => ({
 }));
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "owner@test.invalid",
+  resolveLeadCc: () => [],
 }));
 
 // ── Imports (after mocks) ─────────────────────────────────────────────────────

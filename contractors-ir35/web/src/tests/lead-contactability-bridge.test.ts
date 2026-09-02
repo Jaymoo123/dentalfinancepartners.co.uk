@@ -41,6 +41,7 @@ vi.mock("@/lib/resend", () => ({
 }));
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "ops@example.org",
+  resolveLeadCc: () => [],
 }));
 
 import { promoteIfContactable, stopNurture } from "@/lib/leads/contactability";
