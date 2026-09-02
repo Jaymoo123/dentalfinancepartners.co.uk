@@ -42,7 +42,7 @@ lenders, accountant blogs and commodity agents of beatable authority).
 
 | Cluster | Search signal | Long-tail Qs | Competitor coverage | Verdict |
 |---|---|---|---|---|
-| Ltd-co BTL mortgages | 41,660/mo | 131 | 1,750 URLs / 14 domains | EXTEND Track B (15 pages built, undeployed), do not duplicate |
+| Ltd-co BTL mortgages | 41,660/mo | 131 | 1,750 URLs / 14 domains | EXTEND Track B (15 pages, LIVE since Aug deploys, verified 200 on 2026-09-02), do not duplicate |
 | Formation mechanics + costs | 21,210/mo raw; targeted terms ~380/mo | 49 | 188 URLs / 14 domains | BUILD, anchored on cost + how-to + product pages |
 | SIC + Companies House admin | modest vol | **421** | inside specialists only | BUILD as Q&A block, biggest long-tail prize |
 | Transfer-in (SDLT/CGT/s162) | 7,530/mo, calculator-shaped | 91 | 106 URLs / 15 domains | BUILD, calculator-led |
@@ -165,7 +165,28 @@ anchors stripped in 2 Wave 2 files (FAQ answers render as plain text; NOTE: 100+
 posts site-wide embed HTML in FAQ answers, a probable long-standing cosmetic defect, owner
 decision needed on a separate sweep).
 
-## RESUME POINT (session closed 2026-09-02 at owner request, before gates)
+## EXECUTED 2026-09-02 (all resume-point steps done)
+
+Step 0 equity check PASSED (PROTECTED pages zero-diff; slugs/canonicals/categories unchanged
+on all 9 edited units; U18 3-year-trap H2+FAQ kept; U19 "cheapest way" covered on U17 as
+designed; baselines from the 2026-09-01 pull). Gates green (validator 0 errors, 1,546 tests,
+tsc, build). Pushed `2422c82e` (9 SPV + 14 Medical wave C commits). 15 sites deployed to
+production from clean worktree, all aliased and verified 200, incl /spv-company + 3
+calculators. monitored_pages: 16 net_new rows inserted (monitor_until 2026-12-01); the 9
+rewrites were already registered with baselines from the 2026-07-08 bulk pass. CI noise: 1
+red Content Quality run on the push (U43 lacked h1/summary, legacy fields, fixed in the
+follow-up commit). Track B was found ALREADY LIVE (shipped with the Aug deploys; the
+"undeployed" note here was stale). Owner 2026-09-02: product side stays parked.
+
+FAQ-HTML defect: verified 69 posts estate-wide (50 Property + 19 across 9 sites) carry HTML
+tags inside frontmatter FAQ answers; accordion renders them as escaped literal text and raw
+tags leak into FAQPage JSON-LD. Owner shown, fix decision pending (recommended: render HTML
+in accordion + strip tags for JSON-LD).
+
+Remaining: ~4-week GSC baseline re-read (~2026-09-30, young pages = maturing, not failing);
+ongoing GSC query mining for the autocomplete-blind costs+fees bucket.
+
+## RESUME POINT (session closed 2026-09-02 at owner request, before gates) — EXECUTED, see above
 0. **EQUITY-PROTECTION CHECK (owner instruction 2026-09-02, run BEFORE deploy):** verify
    none of the rewritten/extended pages loses existing search equity. For each EXTEND and
    REWRITE unit (W1: U02, U17, U18, U19, U20; W2: U43; W3: U14, U23, U28): pull the
