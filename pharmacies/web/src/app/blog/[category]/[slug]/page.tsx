@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
       {post.faqs && post.faqs.length > 0 && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }}
+          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs.map((f) => ({ question: f.question, answer: f.answer.replace(/<[^>]+>/g, "") }))) }}
         />
       )}
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">

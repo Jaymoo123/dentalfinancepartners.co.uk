@@ -260,7 +260,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     {post.faqs.map((faq, i) => (
                       <div key={i} className="border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6">
                         <dt className="text-lg font-bold text-[var(--ink)]">{faq.question}</dt>
-                        <dd className="mt-3 text-base text-[var(--ink-soft)] leading-relaxed">{faq.answer}</dd>
+                        <dd className="mt-3 text-base text-[var(--ink-soft)] leading-relaxed"><span dangerouslySetInnerHTML={{ __html: faq.answer }} /></dd>
                       </div>
                     ))}
                   </dl>

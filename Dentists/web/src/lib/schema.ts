@@ -40,7 +40,7 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
             name: f.question,
             acceptedAnswer: {
               "@type": "Answer",
-              text: f.answer,
+              text: f.answer.replace(/<[^>]+>/g, ""),
             },
           })),
         }

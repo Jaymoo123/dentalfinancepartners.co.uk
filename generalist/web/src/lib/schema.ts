@@ -239,7 +239,10 @@ function buildHowToBlock(post: BlogPost, path: string): SchemaThing | null {
 
 export function buildBlogPostingJsonLd(post: BlogPost, path: string): string {
   const article = buildBlogPosting(post, path);
-  const faq = post.faqs && post.faqs.length ? buildFaqPage(post.faqs) : null;
+  const faq =
+    post.faqs && post.faqs.length
+      ? buildFaqPage(post.faqs.map((f) => ({ ...f, answer: f.answer.replace(/<[^>]+>/g, "") })))
+      : null;
   const howTo = buildHowToBlock(post, path);
   const blocks = [article, faq, howTo].filter(Boolean) as SchemaThing[];
   return serialize(blocks.length === 1 ? blocks[0] : blocks);
@@ -247,7 +250,10 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string): string {
 
 export function buildArticleJsonLd(post: BlogPost, path: string): string {
   const article = buildArticle(post, path);
-  const faq = post.faqs && post.faqs.length ? buildFaqPage(post.faqs) : null;
+  const faq =
+    post.faqs && post.faqs.length
+      ? buildFaqPage(post.faqs.map((f) => ({ ...f, answer: f.answer.replace(/<[^>]+>/g, "") })))
+      : null;
   const howTo = buildHowToBlock(post, path);
   const blocks = [article, faq, howTo].filter(Boolean) as SchemaThing[];
   return serialize(blocks.length === 1 ? blocks[0] : blocks);

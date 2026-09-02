@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllPosts, getPostByCategoryAndSlug, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
-import { buildArticleJsonLd, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
+import { buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
 
@@ -32,7 +32,15 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: post.title, description: post.metaDescription, url: `/blog/${category}/${slug}`, dateModified: post.updatedDate || post.date }) }} />
-      {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }} />}
+      {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(/<[^>]+>/g, "") },
+        })),
+      }) }} />}
       {post.howToSteps && post.howToSteps.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildHowToJsonLd(post)) }} />}
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link> / <Link href={`/blog/${category}`} className="hover:underline">{post.category}</Link>

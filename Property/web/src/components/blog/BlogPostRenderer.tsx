@@ -339,7 +339,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     {post.faqs.map((faq, i) => (
                       <AccordionItem key={i} value={`faq-${i}`} className="bg-slate-50">
                         <AccordionTrigger>{faq.question}</AccordionTrigger>
-                        <AccordionContent>{faq.answer}</AccordionContent>
+                        <AccordionContent><span dangerouslySetInnerHTML={{ __html: faq.answer }} /></AccordionContent>
                       </AccordionItem>
                     ))}
                   </Accordion>

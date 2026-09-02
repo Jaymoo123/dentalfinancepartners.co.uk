@@ -57,7 +57,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
   const faqJsonLd =
-    post.faqs && post.faqs.length > 0 ? buildFaqJsonLd(post.faqs) : null;
+    post.faqs && post.faqs.length > 0
+      ? buildFaqJsonLd(post.faqs.map((f) => ({ question: f.question, answer: f.answer.replace(/<[^>]+>/g, "") })))
+      : null;
 
   const takeaways =
     post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
@@ -280,7 +282,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     {post.faqs.map((faq, i) => (
                       <div key={i} className="border-l-4 border-cyan-700 bg-neutral-50 p-6">
                         <dt className="text-lg font-bold text-neutral-900">{faq.question}</dt>
-                        <dd className="mt-3 text-base text-neutral-600 leading-relaxed">{faq.answer}</dd>
+                        <dd className="mt-3 text-base text-neutral-600 leading-relaxed"><span dangerouslySetInnerHTML={{ __html: faq.answer }} /></dd>
                       </div>
                     ))}
                   </dl>

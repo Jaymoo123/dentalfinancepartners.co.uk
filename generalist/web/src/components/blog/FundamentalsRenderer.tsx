@@ -150,7 +150,7 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
                     {post.faqs.map((faq, i) => (
                       <div key={i} className="border-l-4 border-slate-300 bg-slate-50 p-6">
                         <dt className="text-lg font-bold text-slate-900">{faq.question}</dt>
-                        <dd className="mt-3 text-base text-slate-700 leading-relaxed">{faq.answer}</dd>
+                        <dd className="mt-3 text-base text-slate-700 leading-relaxed"><span dangerouslySetInnerHTML={{ __html: faq.answer }} /></dd>
                       </div>
                     ))}
                   </dl>

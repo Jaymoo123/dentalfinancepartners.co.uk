@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl, buildArticleJsonLd, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
+import { buildOgImageUrl, buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -76,7 +76,15 @@ export default async function BlogPostPage({ params }: Props) {
       {post.faqs && post.faqs.length > 0 && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: post.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(/<[^>]+>/g, "") },
+            })),
+          }) }}
         />
       )}
       {post.howToSteps && post.howToSteps.length > 0 && (
