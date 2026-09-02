@@ -48,6 +48,60 @@ export interface LandlordIndexSnapshot {
     monthly: Array<Record<string, number | string> & { month: string }>;
     latest: Record<string, { price?: number; annual_change_pct?: number }>;
   };
+  /** Optional: net formation (incorporations minus dissolutions). Absent on older snapshots. */
+  net_formation?: {
+    monthly: Array<{ month: string; dissolved: number }>;
+    status?: string;
+  };
+  /** Optional: regional/age-profile breakdown, hoisted from spv-regional.json. Absent on older snapshots. */
+  regional?: {
+    meta?: Record<string, unknown>;
+    regions: Array<{
+      region: string;
+      total_live: number;
+      last12m: number;
+      share_last12m_pct: number;
+      monthly: Array<{ month: string; count: number }>;
+    }>;
+    age_profile?: Array<{ year: number; count: number }>;
+    attrition?: unknown[];
+    totals?: Record<string, unknown>;
+  };
+}
+
+export interface NetFormationRow {
+  month: string;
+  incorporated: number;
+  dissolved: number;
+  net: number;
+}
+
+/**
+ * Joins the primary-SIC incorporation series with the dissolved series on
+ * month, keeping only months present in both (net_formation is usually a
+ * shorter series than incorporations). Returns [] if either side is missing.
+ */
+export function buildNetFormationSeries(
+  incorporations: LandlordIndexSnapshot["incorporations"],
+  netFormation: LandlordIndexSnapshot["net_formation"] | undefined,
+  sic: string,
+): NetFormationRow[] {
+  if (!netFormation?.monthly?.length) return [];
+  const dissolvedByMonth = new Map(netFormation.monthly.map((m) => [m.month, m.dissolved]));
+  const rows: NetFormationRow[] = [];
+  for (const m of incorporations.monthly) {
+    const dissolved = dissolvedByMonth.get(m.month);
+    if (dissolved === undefined) continue;
+    const incorporated = Number(m[sic] ?? 0);
+    rows.push({ month: m.month, incorporated, dissolved, net: incorporated - dissolved });
+  }
+  return rows;
+}
+
+/** "12.4%" from a ratio expressed as a whole-number percentage, or "n/a". */
+export function fmtPct(n: number | null | undefined, dp = 1): string {
+  if (n === null || n === undefined || Number.isNaN(n)) return "n/a";
+  return `${n.toFixed(dp)}%`;
 }
 
 const MONTHS_SHORT = [

@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
+dateModified: "2026-09-02"
 faqs:
   - question: "Should I incorporate my buy-to-let portfolio in 2026?"
     answer: "It depends on three things: whether you are taxed at the higher or additional rate on rental profit, how much of your income is eaten by mortgage interest under Section 24, and whether you can transfer the properties without a large capital gains tax and SDLT bill. A higher-rate landlord with heavily mortgaged properties and a long holding horizon has the strongest case. A basic-rate landlord with little or no borrowing usually has the weakest case, because the corporation tax advantage is small and the cost of getting money back out of the company can cancel it out."
@@ -41,6 +41,8 @@ faqs:
     answer: "The April 2027 rates do not create a transfer deadline, because incorporation relief and the CGT and SDLT cost are the same on either side of that date. What changes is the size of the recurring advantage: from 2027/28 the gap between a higher or additional-rate individual and a company widens, so the ongoing case strengthens. There is no penalty for incorporating later, and rushing a transfer to beat a date you do not need to beat is how landlords end up with an avoidable CGT and SDLT bill."
   - question: "Should I keep my existing properties personal and buy new ones through a company?"
     answer: "This hybrid approach is common and often sensible. It avoids any CGT and SDLT on the properties you already hold while letting every future purchase enjoy full interest relief and corporation tax rates. The trade-off is running two structures and two sets of records, but for many landlords it captures most of the benefit of incorporation without the cost and risk of transferring a built-up portfolio."
+  - question: "Is buy to let dying?"
+    answer: "Not on the Companies House numbers. In the 12 months to June 2026, the latest settled month, 90,390 UK property companies were incorporated across the four real-estate SIC codes and 45,622 were dissolved, a net addition of 44,768. The population of property companies on the register is therefore still growing, even though new incorporations are running below the 2025 peak. What is changing is the ownership structure rather than the sector: leveraged higher-rate landlords are moving into companies because Section 24 does not apply there. Our UK SPV Incorporation Index tracks these figures month by month."
   - question: "Can I just transfer properties to my spouse instead of incorporating?"
     answer: "Sometimes. Transfers between spouses and civil partners are made on a no-gain, no-loss basis for CGT (TCGA 1992 s.58), so moving a share of a property to a lower-earning spouse can rebalance rental income into a lower tax band without the cost of incorporation. It only helps if there is genuine spare basic-rate band to use, and it does not remove Section 24, so it is a complement to the incorporation analysis rather than a substitute for it."
 howToSteps:

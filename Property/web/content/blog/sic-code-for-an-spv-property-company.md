@@ -35,7 +35,7 @@ faqs:
     answer: "There is no separate fee to change a SIC code. Codes are updated on the confirmation statement, and Companies House does not charge for the code amendment itself. You may pay the standard confirmation statement fee if your annual statement is due, but an updating statement filed within a payment period you have already paid for is free. In practice, correcting a code from 68100 to 68209 before a mortgage application costs nothing beyond a few minutes of filing time."
   - question: "Will changing my SIC code affect my tax?"
     answer: "No. A SIC code is a statistical classification of what your company does; it does not set how the company is taxed. Corporation tax, the Section 24 position for individuals versus companies, and the wider limited company versus personal ownership decision turn on the facts of the business, not the code. Changing from 68100 to 68209 to satisfy a lender has no direct tax effect. That said, if the code change reflects a genuine shift from trading to letting, the underlying activity can matter, so keep the code honest."
-dateModified: "2026-07-30"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 ---
@@ -68,6 +68,27 @@ reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guid
 </table>
 
 <p>The practical rule most brokers work to is straightforward: make <strong>68209 the primary code</strong>, and add 68201 and 68320 as supporting codes if you wish. That combination reads unambiguously as a property-holding and letting company. Leading with 68100, or listing it on its own, is the pattern that causes trouble, because it describes dealing in property rather than holding it for rent.</p>
+
+<h2>Which SIC code do property companies actually choose?</h2>
+
+<p>The register answers this directly. These are new UK company incorporations under each of the four real-estate SIC codes in 2025, the most recent full calendar year, taken from the Companies House Advanced Search API.</p>
+
+<table>
+<thead>
+<tr><th>SIC code</th><th>Companies House description</th><th>New companies, 2025</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>68209</strong></td><td>Other letting and operating of own or leased real estate</td><td>69,039</td></tr>
+<tr><td><strong>68100</strong></td><td>Buying and selling of own real estate</td><td>49,448</td></tr>
+<tr><td><strong>68320</strong></td><td>Management of real estate on a fee or contract basis</td><td>18,132</td></tr>
+<tr><td><strong>68201</strong></td><td>Renting and operating of Housing Association real estate</td><td>5,055</td></tr>
+<tr><td><strong>All four codes (deduplicated)</strong></td><td>Unique companies registered under any of the four codes</td><td>95,140</td></tr>
+</tbody>
+</table>
+
+<p>68209 is the clear choice: it appears on 69,039 of the 95,140 unique property companies formed in 2025, around 73%. Note that the per-code counts overlap and do not sum to the union figure, because a company can register up to four codes and many list 68209 alongside 68100, 68201 or 68320. The bottom line matches what brokers see in practice: the letting code, not the trading code, is what a normal hold-and-let SPV registers under.</p>
+
+<p>The monthly series behind these figures, updated as Companies House publishes, sits on our <a href="/research/landlord-tax-index">UK SPV Incorporation Index</a>.</p>
 
 <h2>Why a 68100-only company gets declined: a worked example</h2>
 

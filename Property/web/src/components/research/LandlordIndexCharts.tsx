@@ -13,6 +13,7 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  ComposedChart,
   Line,
   LineChart,
   XAxis,
@@ -265,6 +266,120 @@ export function HousePriceChart({ monthly }: { monthly: MonthlyRow[] }) {
           />
         ))}
       </LineChart>
+    </ChartContainer>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Net formation: gross incorporations vs dissolutions, with the net as a line
+// ---------------------------------------------------------------------------
+
+export function NetFormationChart({
+  data,
+}: {
+  data: Array<{ month: string; incorporated: number; dissolved: number; net: number }>;
+}) {
+  if (data.length === 0) return null;
+
+  const points = data.map((d) => ({ ...d, tick: monthLabelShort(d.month) }));
+  const config = {
+    incorporated: { label: "Incorporated", color: "var(--chart-1)" },
+    dissolved: { label: "Dissolved", color: "var(--chart-3)" },
+    net: { label: "Net formation", color: "var(--chart-2)" },
+  } satisfies ChartConfig;
+
+  const tickInterval = Math.max(0, Math.ceil(points.length / 10) - 1);
+
+  return (
+    <ChartContainer config={config} className="aspect-auto h-[280px] w-full">
+      <ComposedChart accessibilityLayer data={points} margin={{ left: 8, right: 8, top: 8, bottom: 0 }}>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="tick"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          minTickGap={20}
+          interval={tickInterval}
+          fontSize={11}
+        />
+        <YAxis
+          width={44}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={4}
+          fontSize={11}
+          tickFormatter={(v: number) => v.toLocaleString("en-GB")}
+        />
+        <ChartTooltip
+          content={
+            <ChartTooltipContent
+              indicator="dot"
+              labelFormatter={(_, payload) => {
+                const m = payload?.[0]?.payload?.month as string | undefined;
+                return m ? monthLabel(m) : "";
+              }}
+            />
+          }
+        />
+        <ChartLegend content={<ChartLegendContent />} />
+        <Bar dataKey="incorporated" name="Incorporated" fill="var(--color-incorporated)" radius={[3, 3, 0, 0]} />
+        <Bar dataKey="dissolved" name="Dissolved" fill="var(--color-dissolved)" radius={[3, 3, 0, 0]} />
+        <Line dataKey="net" name="Net formation" type="monotone" stroke="var(--color-net)" strokeWidth={2.5} dot={false} />
+      </ComposedChart>
+    </ChartContainer>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Regional distribution: horizontal bars, region x formations in the last 12m
+// ---------------------------------------------------------------------------
+
+export function RegionalBarChart({
+  regions,
+}: {
+  regions: Array<{ region: string; last12m: number }>;
+}) {
+  if (regions.length === 0) return null;
+
+  const data = regions.map((r) => ({ region: r.region, value: r.last12m }));
+  const config = {
+    value: { label: "Last 12 months", color: "var(--chart-1)" },
+  } satisfies ChartConfig;
+
+  return (
+    <ChartContainer
+      config={config}
+      className="aspect-auto w-full"
+      style={{ height: Math.max(220, data.length * 32) }}
+    >
+      <BarChart
+        accessibilityLayer
+        data={data}
+        layout="vertical"
+        margin={{ left: 8, right: 16, top: 8, bottom: 0 }}
+      >
+        <CartesianGrid horizontal={false} strokeDasharray="3 3" />
+        <XAxis
+          type="number"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={4}
+          fontSize={11}
+          tickFormatter={(v: number) => v.toLocaleString("en-GB")}
+        />
+        <YAxis
+          type="category"
+          dataKey="region"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          fontSize={12}
+          width={140}
+        />
+        <ChartTooltip cursor={{ fill: "rgba(5,150,105,0.06)" }} content={<ChartTooltipContent indicator="dot" />} />
+        <Bar dataKey="value" name="Last 12 months" fill="var(--color-value)" radius={[0, 4, 4, 0]} />
+      </BarChart>
     </ChartContainer>
   );
 }

@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 const reports = [
   {
     href: "/research/landlord-tax-index",
-    title: "UK Landlord Tax Index",
-    blurb: `Buy-to-let limited-company incorporations set against UK house prices. ${
+    title: "UK SPV Incorporation Index",
+    blurb: `SPV / buy-to-let limited-company incorporations set against UK house prices. ${
       lti.headline.decade
         ? `Up ${lti.headline.decade.multiple}x since ${lti.headline.decade.from_year}.`
         : ""

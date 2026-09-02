@@ -15,17 +15,56 @@ import {
   AnnualIncorporationsChart,
   MonthlyIncorporationsChart,
   HousePriceChart,
+  NetFormationChart,
+  RegionalBarChart,
 } from "@/components/research/LandlordIndexCharts";
-import { fmtGBP, fmtInt, monthLabel, type LandlordIndexSnapshot } from "@/lib/research/landlord-index";
+import {
+  buildNetFormationSeries,
+  fmtGBP,
+  fmtInt,
+  fmtPct,
+  monthLabel,
+  type LandlordIndexSnapshot,
+} from "@/lib/research/landlord-index";
 import snapshot from "@/data/landlord-tax-index.json";
 
 const data = snapshot as unknown as LandlordIndexSnapshot;
-const { meta, headline, incorporations, house_prices } = data;
+const { meta, headline, incorporations, house_prices, net_formation, regional } = data;
 const decade = headline.decade;
 const PRIMARY = headline.primary_sic;
 
 const PAGE_PATH = "/research/landlord-tax-index";
 const UK_PRICE = house_prices.latest["United Kingdom"]?.price ?? null;
+
+// Empty when the committed snapshot has no net_formation key yet (current
+// state); populated once ingestion starts writing dissolved counts.
+const netSeries = buildNetFormationSeries(incorporations, net_formation, PRIMARY);
+const hasNetFormation = netSeries.length > 0;
+const latestNet = hasNetFormation ? netSeries[netSeries.length - 1] : null;
+const netFormationRatePct =
+  latestNet && latestNet.incorporated > 0 ? (latestNet.net / latestNet.incorporated) * 100 : null;
+
+// Empty when the committed snapshot has no regional key yet (current state);
+// populated once spv-regional.json is hoisted into the snapshot.
+const hasRegional = Boolean(regional?.regions?.length);
+const hasAgeProfile = Boolean(regional?.age_profile?.length);
+
+// Settled-month run-rate and record month, computed from the snapshot so the
+// Q&A block below and the FAQ never carry a hardcoded figure.
+const settledMonths = incorporations.monthly.filter(
+  (m) => m.month <= (meta.incorporations_settled_through ?? meta.incorporations_through),
+);
+const last12Settled = settledMonths.slice(-12);
+const avgPrimary = last12Settled.length
+  ? Math.round(last12Settled.reduce((t, m) => t + Number(m[PRIMARY]), 0) / last12Settled.length)
+  : null;
+const avgUnion = last12Settled.length
+  ? Math.round(last12Settled.reduce((t, m) => t + Number(m.union), 0) / last12Settled.length)
+  : null;
+const recordMonth = settledMonths.reduce<(typeof settledMonths)[number] | null>(
+  (best, m) => (!best || Number(m[PRIMARY]) > Number(best[PRIMARY]) ? m : best),
+  null,
+);
 
 // A one-line takeaway reused in the title, description and hero.
 const HEADLINE_SENTENCE = decade
@@ -33,12 +72,12 @@ const HEADLINE_SENTENCE = decade
   : "New UK landlord limited companies keep rising";
 
 export const metadata: Metadata = {
-  title: "UK Landlord Tax Index | Limited-company incorporation trends",
-  description: `${HEADLINE_SENTENCE}. Quarterly index of BTL incorporations vs UK house prices, from official open data.`,
+  title: "UK SPV Incorporation Index | Property Tax Partners",
+  description: `${HEADLINE_SENTENCE}. Monthly index of SPV incorporations vs UK house prices, from official open data.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
-    title: "UK Landlord Tax Index",
-    description: `${HEADLINE_SENTENCE}. Buy-to-let limited-company incorporations vs UK house prices, from official open data.`,
+    title: "UK SPV Incorporation Index",
+    description: `${HEADLINE_SENTENCE}. SPV / buy-to-let limited-company incorporations vs UK house prices, from official open data.`,
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "article",
   },
@@ -58,7 +97,28 @@ const faqs = [
   {
     question: "What does SIC code 68209 mean?",
     answer:
-      "68209 is 'Other letting and operating of own or leased real estate', the SIC code most buy-to-let companies register under. It is the closest single proxy for a landlord limited company, which is why we treat it as the primary measure, alongside the deduplicated union of all four property SIC codes as a wider 'all property companies' figure.",
+      "68209 is 'Other letting and operating of own or leased real estate', the SIC code most SPV and buy-to-let companies register under. It is the closest single proxy for a landlord limited company, which is why we treat it as the primary measure, alongside the deduplicated union of all four property SIC codes as a wider 'all property companies' figure.",
+  },
+  {
+    question: "What is net formation, and is it different from gross incorporations?",
+    answer:
+      "Gross incorporations count every new company formed, regardless of what happens to it afterwards. Net formation subtracts the companies dissolved in the same period, so it shows how many SPVs are actually being added to the register month by month. We publish both where the dissolution data allows it, because gross alone can overstate genuine growth in a period with heavy strike-off activity.",
+  },
+  {
+    question: "How many new property companies are formed each month in the UK?",
+    answer: `In ${monthLabel(
+      headline.last_settled_month ?? meta.incorporations_settled_through ?? meta.incorporations_through,
+    )}, the latest settled month, ${fmtInt(
+      headline.landlord_cos_settled,
+    )} new buy-to-let companies were incorporated under SIC ${PRIMARY}, and ${fmtInt(
+      Number(settledMonths[settledMonths.length - 1]?.union ?? 0),
+    )} property companies across all four real-estate SIC codes. Over the last 12 settled months the run-rate has averaged about ${fmtInt(
+      avgPrimary ?? 0,
+    )} SIC ${PRIMARY} companies a month, or roughly ${fmtInt(
+      avgUnion ?? 0,
+    )} property companies a month in total. The busiest month on record is ${monthLabel(
+      recordMonth?.month ?? meta.incorporations_settled_through ?? meta.incorporations_through,
+    )}, when ${fmtInt(Number(recordMonth?.[PRIMARY] ?? 0))} SIC ${PRIMARY} companies were formed.`,
   },
   {
     question: "Should I move my rental properties into a limited company?",
@@ -74,7 +134,7 @@ const faqs = [
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "UK Landlord Tax Index",
+  headline: "UK SPV Incorporation Index",
   description: `${HEADLINE_SENTENCE}, tracked from Companies House and Land Registry open data.`,
   inLanguage: "en-GB",
   datePublished: "2026-06-09",
@@ -84,10 +144,18 @@ const articleSchema = {
   mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}${PAGE_PATH}` },
 };
 
+const variableMeasured = [
+  "Monthly company incorporations by real-estate SIC code",
+  "UK House Price Index average price by nation",
+  ...(hasNetFormation ? ["Monthly net SPV formation (incorporations minus dissolutions)"] : []),
+  ...(hasRegional ? ["SPV incorporations by UK region"] : []),
+  ...(hasAgeProfile ? ["Live SPV companies by year of incorporation"] : []),
+];
+
 const datasetSchema = {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  name: "UK Landlord Tax Index: buy-to-let limited-company incorporations",
+  name: "UK SPV Incorporation Index",
   description:
     "Monthly counts of newly incorporated UK property companies by real-estate SIC code (Companies House), set against UK House Price Index average prices (HM Land Registry).",
   inLanguage: "en-GB",
@@ -103,10 +171,7 @@ const datasetSchema = {
       contentUrl: `${siteConfig.url}${PAGE_PATH}/data`,
     },
   ],
-  variableMeasured: [
-    "Monthly company incorporations by real-estate SIC code",
-    "UK House Price Index average price by nation",
-  ],
+  variableMeasured,
 };
 
 // ---------------------------------------------------------------------------
@@ -193,6 +258,26 @@ export default function LandlordTaxIndexPage() {
   const lastSettled = headline.last_settled_month;
   const latestRow = incorporations.monthly.find((m) => m.month === lastSettled);
 
+  // The AI-extraction paragraph: plain declarative sentences, values pulled
+  // straight from the snapshot at build time. Net formation rate only appears
+  // once net_formation data exists in the JSON.
+  const yoy = headline.landlord_cos_yoy_pct;
+  const openingParagraph = lastSettled
+    ? `${fmtInt(headline.landlord_cos_settled)} new UK SPV companies (SIC ${PRIMARY}) were incorporated in ${monthLabel(
+        lastSettled,
+      )}${
+        yoy !== null && yoy !== undefined
+          ? `, ${yoy >= 0 ? "up" : "down"} ${fmtPct(Math.abs(yoy))} year on year`
+          : ""
+      }. In the 12 months to ${monthLabel(lastSettled)}, ${fmtInt(
+        headline.landlord_cos_ttm,
+      )} such companies were formed.${
+        hasNetFormation && netFormationRatePct !== null
+          ? ` Net formation, incorporations minus dissolutions, ran at ${fmtPct(netFormationRatePct)} of gross new formations in ${monthLabel(latestNet!.month)}.`
+          : ""
+      }`
+    : "UK SPV incorporation data updates monthly, tracked directly from Companies House.";
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -214,17 +299,17 @@ export default function LandlordTaxIndexPage() {
             items={[
               { label: "Home", href: "/" },
               { label: "Research", href: "/research" },
-              { label: "UK Landlord Tax Index" },
+              { label: "UK SPV Incorporation Index" },
             ]}
           />
           <div className="mt-6">
-            <Eyebrow onDark>UK Landlord Tax Index</Eyebrow>
+            <Eyebrow onDark>UK SPV Incorporation Index</Eyebrow>
           </div>
           <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{HEADLINE_SENTENCE}</h1>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            A quarterly, sourced read on how the tax system is reshaping UK buy-to-let: the number of landlords
-            incorporating, set against the house prices that drive their stamp duty and capital gains exposure.
-            Built entirely from official open data. Updated {monthLabel(settledThrough)}.
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-200 sm:text-lg">{openingParagraph}</p>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-300">
+            Built entirely from official open data (Companies House, HM Land Registry). Updated{" "}
+            {monthLabel(settledThrough)}.
           </p>
 
           <div className="mt-6 flex flex-col flex-wrap gap-3 sm:mt-8 sm:flex-row sm:gap-4">
@@ -354,6 +439,24 @@ export default function LandlordTaxIndexPage() {
         </p>
       </TopicSection>
 
+      {hasNetFormation && (
+        <TopicSection
+          id="net-formation"
+          eyebrow="Net formation"
+          title="Net formation: incorporations minus dissolutions"
+          figure={
+            <FigureCard tone="white">
+              <NetFormationChart data={netSeries} />
+            </FigureCard>
+          }
+        >
+          <p>
+            Gross incorporations count every new company; net formation subtracts the ones dissolved in the same
+            month, which is the more honest read of how many SPVs are actually being added to the register.
+          </p>
+        </TopicSection>
+      )}
+
       <TopicSection
         id="breakdown"
         eyebrow="By SIC code"
@@ -427,6 +530,90 @@ export default function LandlordTaxIndexPage() {
           Incorporation is partly a response to rising values: a bigger portfolio means a bigger capital gains and
           stamp duty exposure, which changes the maths on holding property personally versus through a company.
           Average prices by nation, from the UK House Price Index:
+        </p>
+      </TopicSection>
+
+      {hasRegional && regional && (
+        <TopicSection
+          id="regional"
+          eyebrow="By region"
+          title="Where SPVs are being formed"
+          figure={
+            <>
+              <FigureCard tone="white">
+                <RegionalBarChart regions={regional.regions} />
+              </FigureCard>
+              <FigureCard>
+                <DataTable
+                  head={["Region", "Formations, last 12 months", "Share", "Live companies"]}
+                  caption="SPV incorporations by UK region, last 12 months"
+                >
+                  {regional.regions.map((r) => (
+                    <tr key={r.region} className="border-b border-slate-200">
+                      <td className="py-2 pr-4 font-semibold text-slate-900">{r.region}</td>
+                      <td className="py-2 pr-4 text-slate-900">{fmtInt(r.last12m)}</td>
+                      <td className="py-2 pr-4 text-slate-700">{fmtPct(r.share_last12m_pct)}</td>
+                      <td className="py-2 text-slate-700">{fmtInt(r.total_live)}</td>
+                    </tr>
+                  ))}
+                </DataTable>
+              </FigureCard>
+            </>
+          }
+        >
+          <p>
+            Registered office address is not always where the property sits, but it is the only regional signal
+            Companies House gives us, and at this volume the pattern is still informative.
+          </p>
+        </TopicSection>
+      )}
+
+      {hasAgeProfile && regional?.age_profile && (
+        <TopicSection
+          id="age-profile"
+          eyebrow="Age profile"
+          tone="slate"
+          title="How old are the SPVs on the register"
+          figure={
+            <FigureCard tone="white">
+              <DataTable
+                head={["Year of incorporation", "Live companies"]}
+                caption="Live SPV companies by year of incorporation"
+              >
+                {regional.age_profile.map((row) => (
+                  <tr key={row.year} className="border-b border-slate-200">
+                    <td className="py-2 pr-4 font-semibold text-slate-900">{row.year}</td>
+                    <td className="py-2 text-slate-900">{fmtInt(row.count)}</td>
+                  </tr>
+                ))}
+              </DataTable>
+            </FigureCard>
+          }
+        >
+          <p>
+            A histogram of the year each still-live SPV was incorporated, which shows how much of the current
+            stock is recent formation versus companies that have been on the register for years.
+          </p>
+        </TopicSection>
+      )}
+
+      <TopicSection
+        id="how-many-a-month"
+        eyebrow="The question people ask"
+        title="How many new property companies are formed each month in the UK?"
+      >
+        <p>
+          In {lastSettled ? monthLabel(lastSettled) : monthLabel(settledThrough)}, the latest settled month, {fmtInt(headline.landlord_cos_settled)} new
+          buy-to-let companies were incorporated under SIC {PRIMARY}, and{" "}
+          {latestRow ? fmtInt(Number(latestRow["union"])) : "n/a"} property companies across all four real-estate
+          SIC codes.
+        </p>
+        <p>
+          Over the last 12 settled months the run-rate has averaged about {avgPrimary ? fmtInt(avgPrimary) : "n/a"}{" "}
+          SIC {PRIMARY} companies a month, or roughly {avgUnion ? fmtInt(avgUnion) : "n/a"} property companies a
+          month across the four codes. The busiest month on record is{" "}
+          {recordMonth ? monthLabel(recordMonth.month) : "n/a"}, when{" "}
+          {recordMonth ? fmtInt(Number(recordMonth[PRIMARY])) : "n/a"} SIC {PRIMARY} companies were formed.
         </p>
       </TopicSection>
 
@@ -516,6 +703,10 @@ export default function LandlordTaxIndexPage() {
           <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)}; house prices to{" "}
           {monthLabel(meta.house_prices_through)}. Data generated{" "}
           {monthLabel(meta.generated_at.slice(0, 7))}.
+        </p>
+        <p>
+          <strong>How to cite this.</strong> &ldquo;Source: Property Tax Partners, UK SPV Incorporation Index,{" "}
+          {lastSettled ? monthLabel(lastSettled) : monthLabel(settledThrough)}.&rdquo;
         </p>
       </TopicSection>
 

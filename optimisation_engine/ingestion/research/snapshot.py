@@ -58,13 +58,20 @@ def _build_segment_block(
     settled_end: int,
     settled_months: list[str],
     thin_segment_min_ttm: int,
+    all_sics: set[str] | None = None,
 ) -> dict[str, Any]:
     """Per-segment stats block. Provisional exclusion runs per segment."""
     sic_codes = list(seg.sic_codes)
-    # Aggregate across the segment's SIC codes per month
+    # A segment covering ALL the niche's SIC codes must read the deduplicated
+    # "union" row, not a per-SIC sum: CH deduplicates multi-SIC companies in a
+    # combined query, so summing per-SIC counts double-counts them.
+    covers_all = all_sics is not None and set(sic_codes) == all_sics
     seg_by_month: dict[str, int] = {}
     for m in months_sorted:
-        seg_by_month[m] = sum(by_month[m].get(s, 0) for s in sic_codes)
+        if covers_all and "union" in by_month[m]:
+            seg_by_month[m] = by_month[m]["union"]
+        else:
+            seg_by_month[m] = sum(by_month[m].get(s, 0) for s in sic_codes)
 
     seg_series = [seg_by_month[m] for m in months_sorted]
     seg_settled = seg_series[:settled_end]
@@ -179,7 +186,10 @@ def build_snapshot(
 
     # Build per-segment blocks
     segments_out = [
-        _build_segment_block(seg, by_month, months_sorted, settled_end, settled_months, cfg.thin_segment_min_ttm)
+        _build_segment_block(
+            seg, by_month, months_sorted, settled_end, settled_months,
+            cfg.thin_segment_min_ttm, all_sics=set(cfg.sic_labels),
+        )
         for seg in cfg.segments
     ]
 

@@ -58,6 +58,30 @@ NICHE_CONFIG = NicheConfig(
             ),
             optional=False,
         ),
+        SecondarySource(
+            key="net_formation",
+            label="Dissolutions (property SIC union)",
+            fetcher="optimisation_engine.ingestion.research.fetchers.ch_dissolutions.fetch_dissolutions",
+            provenance=SourceRef(
+                name="Companies House Advanced Search API",
+                publisher="Companies House",
+                url="https://developer.company-information.service.gov.uk/",
+                licence="Open Government Licence v3.0",
+            ),
+            optional=True,
+        ),
+        SecondarySource(
+            key="regional",
+            label="Regional SPV distribution (CH bulk data)",
+            fetcher="optimisation_engine.ingestion.research.fetchers.ch_bulk_regional.fetch_regional",
+            provenance=SourceRef(
+                name="Companies House Basic Company Data (bulk)",
+                publisher="Companies House",
+                url="http://download.companieshouse.gov.uk/en_output.html",
+                licence="Open Government Licence v3.0",
+            ),
+            optional=True,
+        ),
     ),
     provisional_months=2,
     thin_segment_min_ttm=120,
@@ -70,5 +94,5 @@ NICHE_CONFIG = NicheConfig(
     supabase_table="landlord_incorporations",
     headline_prefix="landlord",
     union_ttm_key="all_property_cos_ttm",
-    hoist_secondary_to_top={"land_registry": "house_prices"},
+    hoist_secondary_to_top={"land_registry": "house_prices", "net_formation": "net_formation", "regional": "regional"},
 )

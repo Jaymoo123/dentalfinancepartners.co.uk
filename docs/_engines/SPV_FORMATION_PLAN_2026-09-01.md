@@ -214,6 +214,99 @@ ongoing GSC query mining for the autocomplete-blind costs+fees bucket.
    re-read ~4 weeks later (pages younger = maturing, not failing).
 Ongoing: GSC query mining post-launch for the autocomplete-blind costs+fees bucket.
 
+## 10a. Market verification + strategy re-read (2026-09-02, 3-agent web research)
+
+**Thesis revision: the market is real but PEAKING, not growing; the #1 seat is vacant anyway.**
+
+Market: 2025 figures confirmed (66,587 new BTL cos, 443,272 stock, Hamptons) but H1 2026 =
+27,200, annualising ~54,400, ~18% below 2025; Hamptons: "levelling off at 4,000-5,000/month".
+~75-80% of NEW purchases already go through companies (flow near-saturated); 93k landlords
+exited 2025, only 4% buying. Remaining prize = legacy personal-name stock (transfer-in), which
+is exactly where our equity already is (pos 1.5-3.9 on transfer mechanics).
+
+MECHANISM CORRECTION for all content: the Apr 2027 driver is the +2pp property income rates
+(22/42/47), NOT the reducer rising to 22%. The reducer rise is the OFFSET (credit rises in
+step with the new basic rate; basic-rate landlords see no new wedge). Never write "the reducer
+rise pushes landlords into companies". Also: s.162 "withdrawn from Apr 2026" claims circulating
+are FALSE; it becomes a mandatory positive claim (valuation + activity summary + CGT comp),
+s.162A repealed. Expect a nudge into 2027, not a second Section 24.
+
+Economics: formation itself is zero-margin (1st Formations effective agent fee £2.99 over the
+£100 CH passthrough; PropertySPV £12.99; CH fee doubled £50->£100 Feb 2026). The business =
+recurring (£360-£576/yr comparables) + broker introduction (£500-950) + accountant leads +
+s.162 claim work. GetGround after 6 yrs and ~$25-31m raised looks sub-£10m revenue (~30k
+investors, heavy free tier); realistic ceiling for us ~£1-3m/yr line, not a compounding giant.
+
+Competitive vacancy (all verified 09-02): GetGround absent from organic SERP on every core SPV
+term (buys distribution, acquired BuyAssociation Dec 2025); **Less Tax 4 Landlords in
+administration** with HMRC challenging its hybrid scheme (leaderless, nervous audience up for
+grabs); Property118/Cotswold Barristers FTT ruling [2026] UKFTT 01111 (31 Jul 2026) cancelled
+SRNs but did NOT bless the schemes; only specialist ranker is propertyspv.co.uk on price. SERP
+split three ways: brokers/lenders (can't execute), mid-tier accountants (no content scale),
+GetGround (can't rank). Nobody spans the journey; nobody owns the new s.162 claim term set.
+
+Regulatory moat: from ~spring 2026 (statutory no earlier than Nov 2026) third-party CH filing
+is ACSP-only; ACSP needs AML supervision. Kills the £12.99 commodity tier, hands a filing
+monopoly to the supervised. Our AML/ACSP decision is PARKED but now has a deadline shape.
+
+Ranked unexploited levers (from growth scan):
+1. **SPV Incorporation Index from free CH bulk data** (SIC 68209 + fringe): monthly cadence +
+   regional + dissolutions/net-rate, all gaps Hamptons leaves. Best faceless data-PR asset;
+   trade press (Property118, LandlordZONE, Mortgage Solutions et al) republish this class of
+   stat with links. Must publish methodology and differ from Hamptons (finer, not same).
+2. **s.162 claim ownership**: mandatory, evidenced, annually recurring, high-anxiety job born
+   6 Apr 2026 that nobody owns; SERP is generic blog posts; inherits the LT4L audience.
+3. **Affiliate/referral stack now, own product later**: Tide ~£50/referral, GetGround introducer
+   programme (live in 1-2 wks), Zempler; monetises intent with zero AML exposure and proves
+   conversion economics. White-label formation (e.g. Company Wizard) possible bridge, but
+   verify post-Nov-2026 ACSP liability with provider first.
+4. Extractability retrofit on the live SPV cluster (answer in first 100 words, formula + worked
+   example beside each calculator) for AI-answer citations; ~55% of AIO citations come from
+   the top 30% of a page.
+5. Broker "SPV readiness checker" (name + SIC + director/PG rules) as a tool-led channel; slow
+   but contestable (GetGround's broker network is non-exclusive).
+Killed: YouTube/podcasts (face-led niche), Reddit/FB seeding at scale, buying a formation
+agent's book, standalone name-check tool, contesting GetGround's developer channel.
+
+## 10b. SPV INCORPORATION INDEX BUILT 2026-09-02 (owner GO; NOT pushed/deployed)
+
+Lever #1 executed same day as §10a. Everything local, gates green (validator 0 errors, tsc,
+1,546 vitest, build, dependency closure 19 sites). Waiting on owner deploy sign-off.
+
+**Data layer:** existing research engine extended, not rebuilt. New `ch_bulk.py`
+(streams the 492MB CH bulk file, filters 4 SICs, writes `Property/web/src/data/spv-regional.json`
++ scratchpad harvest CSV of all 665,645 live property companies incl conf-statement due dates,
+the ACSP-displacement by-product, NOT committed/used, owner gate). New fetchers: ch_dissolutions
+(combined-SIC union, monthly), ch_bulk_regional. Snapshot now carries net_formation + regional +
+age profile. Engine defects fixed manager-direct: union double-count in segment builder
+(snapshot.py), bulk window anchored to snapshot month, share_last12m computed from formations
+not stock, fetch_regional alias. Refresh = `python -m ...ch_bulk --month YYYY-MM` then
+`...research.engine --site property --execute`. Manual only, no cron (owner rule).
+
+**Headline data (settled through 2026-06):** 68209 June 4,840 (-20.1% YoY), TTM 66,312; union
+TTM 90,390; dissolutions TTM 45,622; NET FORMATION +44,768 (down 20.5% YoY, dissolutions +25%);
+live stock 665,645 (bulk 2026-09-01); London 35.3% of last-12m formations; 2016-2025 annual
+19,733 to 69,039 (3.5x); peak month Sep 2025 (6,672). S13 finding: incorporations vs house-price
+YoY correlation r=0.008, null; tax events drive the series, citable.
+
+**Page:** /research/landlord-tax-index rebranded "UK SPV Incorporation Index" IN PLACE (owner
+decision: keep URL). AI-extraction opening paragraph, net-formation + regional + age-profile
+sections/charts/tables, run-rate Q&A block, Dataset JSON-LD w/ distribution+licence, CSV route
+extended. Methodology + press-release docs rewritten and filled with live figures.
+
+**Content (data-led, STATS_PAGE_MAP in expansion_research/spv_formation/, $0.09 DataForSEO):**
+18 units triaged: 8 NEW posts written (net-formation/exodus S3, stock count S1, how-to-cite S16,
+statistics roundup S15, regional S5, prices-vs-incorporations S13, Section 24 formations S14,
+age profile S7), 2 EXTENDs (hub Q&A, SIC post data section), 3 FAQ-blocks (SPV guide,
+should-i-incorporate, dissolutions-in-S3), 5 KILLED by data (incl 12 per-region pages, all 16
+regional queries null). QA: 2 factual tracks (7 defects fixed, every number recomputed) +
+editorial (10 sibling interlinks, zero leakage/em-dashes). All new slugs under
+incorporation-and-company-structures.
+
+**NEXT (owner-gated):** commit (stage explicitly), push, deploy Property, register the 8 new
+posts + hub in monitored_pages, then press distribution of the release (owner decides channel).
+Monthly refresh on request.
+
 ## 10. Our current demand baseline (GSC/Bing)
 
 See `expansion_research/spv_formation/OUR_DEMAND.md` (fresh 90-day GSC + Bing pull,

@@ -295,6 +295,11 @@ export default function SpvCompanyPage() {
                 how to move property in without an avoidable tax bill, and how to run and eventually unwind
                 it. This page routes each of those questions to the guide that answers it properly.
               </p>
+              <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+                For how many landlords are actually doing this, see our{" "}
+                <InlineLink href="/research/landlord-tax-index">UK SPV Incorporation Index</InlineLink>, tracking
+                every new SPV incorporation from official Companies House data.
+              </p>
               <p className="mt-6 text-base font-bold leading-relaxed text-slate-900 text-balance sm:text-lg">
                 If one of these sounds like you, you are in the right place.
               </p>
