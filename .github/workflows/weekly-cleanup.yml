@@ -1,8 +1,9 @@
 name: Weekly Data Cleanup
 
 on:
-  schedule:
-    - cron: '0 2 * * 0'  # 2 AM UTC every Sunday
+  # cron removed 2026-09-02: workflow was manually disabled, and the dangling
+  # schedule made the daily State check red (declares-cron-but-disabled rule).
+  # Re-add the schedule if this workflow is ever re-enabled.
   workflow_dispatch:
 
 jobs:
