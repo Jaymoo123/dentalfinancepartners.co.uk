@@ -166,6 +166,18 @@ posts site-wide embed HTML in FAQ answers, a probable long-standing cosmetic def
 decision needed on a separate sweep).
 
 ## RESUME POINT (session closed 2026-09-02 at owner request, before gates)
+0. **EQUITY-PROTECTION CHECK (owner instruction 2026-09-02, run BEFORE deploy):** verify
+   none of the rewritten/extended pages loses existing search equity. For each EXTEND and
+   REWRITE unit (W1: U02, U17, U18, U19, U20; W2: U43; W3: U14, U23, U28): pull the
+   page's live query set from fresh GSC + Bing (the queries it currently gets impressions
+   or clicks for, esp. U17/U18/U20's pre-rewrite baselines in OUR_DEMAND.md and the Bing
+   earners recorded in the briefs, e.g. U18's 3-year-trap query 23 clicks, U19's ceded
+   "cheapest way" query) and confirm the new text still answers each of those queries with
+   the phrasing intact or better (H1/H2/FAQ present). Also confirm: slugs, canonicals and
+   categories UNCHANGED on every edited file (no URL moved); frontmatter titles still
+   carry the ranking terms; the two PROTECTED transfer pages untouched (git diff = zero);
+   and no internal links to the edited pages broke. Any query the rewrite dropped
+   coverage for gets patched before deploy. This is the "rewrites must only add" gate.
 1. Run full gates in Property/web: `python scripts/validate_blog_content.py`,
    `npx vitest run`, `npx tsc --noEmit`, `npm run build`. Fix anything red, amendless
    commit on top.
