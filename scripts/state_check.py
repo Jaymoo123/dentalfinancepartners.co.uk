@@ -83,6 +83,11 @@ FRESHNESS_TOLERANCE_DAYS = {     # how stale a feed may get before it is a probl
     "gsc_query_data": 10,
     "bing_query_data": 10,
     "lead_contact_events": 7,
+    # Discovery Engine v2 feeds: lanes and monitor run on a roughly weekly
+    # cadence, so a fortnight of silence is the signal worth hearing about.
+    "discovery_log": 14,
+    "discovery_candidates": 14,
+    "competitor_urls_seen": 14,
 }
 # Tables with a timestamp but no tolerance above are reported as UNKNOWN, not
 # ignored. That is deliberate: a new data feed should make itself known.
@@ -96,6 +101,12 @@ FRESHNESS_IGNORE = {             # written on demand or by a retired system:
     # run by hand when someone wants them, not on a schedule
     "competitor_gap_reports", "competitor_pages", "ga4_page_data",
     "site_daily_snapshots",
+    # written only when a buyer offer actually goes out; staleness says nothing
+    "lead_offers",
+    # orphaned pre-2026-06-05 analytics tables, zero code references anywhere
+    "session_events", "session_sessions",
+    # DEFAULT partition of web_events; the parent feed already carries the tolerance
+    "web_events_default",
 }
 # Migrations whose objects are legitimately absent from prod. Each needs a
 # reason. If one of these ever DOES appear in prod, the comparison lane will
