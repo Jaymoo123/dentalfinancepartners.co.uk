@@ -73,8 +73,8 @@ type V = Record<string, number | string | boolean>;
 // 1. Registry contract (TL-01)
 // ============================================================
 describe("registry contract (TL-01)", () => {
-  it("total fleet = 26 tools (5 bespoke + 21 generic)", () => {
-    expect(TOOLS.length).toBe(26);
+  it("total fleet = 27 tools (5 bespoke + 22 generic)", () => {
+    expect(TOOLS.length).toBe(27);
   });
 
   it("5 bespoke tools", () => {
@@ -82,13 +82,13 @@ describe("registry contract (TL-01)", () => {
     expect(bespoke.length).toBe(5);
   });
 
-  it("21 generic tools", () => {
+  it("22 generic tools", () => {
     const generic = genericTools();
-    expect(generic.length).toBe(21);
+    expect(generic.length).toBe(22);
   });
 
-  it("allTools returns 26 tools", () => {
-    expect(allTools().length).toBe(26);
+  it("allTools returns 27 tools", () => {
+    expect(allTools().length).toBe(27);
   });
 
   it("getGenericTool finds by slug", () => {
@@ -2200,5 +2200,75 @@ describe("GOLDEN: six-dwellings automatic non-residential treatment", () => {
     const standard = marginalSdlt(350_000, STANDARD_SDLT_BANDS);
     expect(standard).toBe(7_500); // 125k@0 + 125k@2% (2,500) + 100k@5% (5,000)
     expect(standard + 350_000 * 0.05).toBe(25_000);
+  });
+});
+
+
+// -----------------------------------------------------------------------
+// SPV-programme C3 (2026-09-01): property-company-extraction-calculator.
+// Derived by hand from the pinned engines: employerNic (15% above 5,000),
+// corporationTax (19% small profits), computeDividendTax (10.75% basic,
+// 500 allowance). Defaults: profit 60,000 / salary 12,570 / dividends
+// 20,000 / other income 0.
+//   NIC = (12,570-5,000) x 0.15 = 1,135.50
+//   CT  = 0.19 x (60,000-12,570-1,135.50 = 46,294.50) = 8,795.96
+//   available = 46,294.50 - 8,795.96 = 37,498.55
+//   salary tax = 0 (salary equals the personal allowance)
+//   dividend tax = (20,000 - 500) x 0.1075 = 2,096.25 (all basic band)
+// -----------------------------------------------------------------------
+import { propertyCompanyExtractionCalculator } from "../lib/calculators/tools/property-company-extraction-calculator";
+import { employerNic, EMPLOYER_NIC_RATE, EMPLOYER_NIC_SECONDARY_THRESHOLD } from "../lib/employerNic";
+import { salaryIncomeTax } from "../lib/calculators/tools/property-company-extraction-calculator";
+
+describe("GOLDEN: property-company-extraction-calculator (defaults)", () => {
+  const r = propertyCompanyExtractionCalculator.compute({
+    companyProfit: 60_000,
+    salaryDrawn: 12_570,
+    dividendDrawn: 20_000,
+    otherPersonalIncome: 0,
+  });
+
+  it("every layer matches the hand-derived figures", () => {
+    const vals = (r.rows ?? []).map((row) => row.value);
+    expect(vals[0]).toBe("£1,136"); // employer NIC
+    expect(vals[1]).toBe("£8,796"); // CT
+    expect(vals[2]).toBe("£37,499"); // available for dividends
+    expect(vals[3]).toBe("£0"); // salary income tax at the PA
+    expect(vals[4]).toBe("£2,096"); // dividend tax
+    expect(vals[5]).toBe("£12,028"); // total tax
+    expect(r.headline.value).toBe("£30,474"); // net in hand
+  });
+
+  it("no overdraw warning at the defaults", () => {
+    expect((r.note ?? "").startsWith("Warning")).toBe(false);
+  });
+});
+
+describe("GOLDEN: extraction calculator, salary-only and edge cases", () => {
+  it("employer NIC kicks in only above the 5,000 threshold", () => {
+    expect(employerNic(5_000)).toBe(0);
+    expect(employerNic(4_000)).toBe(0);
+    expect(employerNic(12_570)).toBeCloseTo(1_135.5, 2);
+  });
+
+  it("FA sentinel: employer NIC constants stay locked", () => {
+    expect(EMPLOYER_NIC_RATE).toBe(0.15);
+    expect(EMPLOYER_NIC_SECONDARY_THRESHOLD).toBe(5_000);
+  });
+
+  it("salary income tax bands: 20/40/45 stacked on other income", () => {
+    expect(salaryIncomeTax(12_570, 0)).toBe(0); // inside the PA
+    expect(salaryIncomeTax(10_000, 50_270)).toBe(4_000); // wholly higher-rate slice
+    expect(salaryIncomeTax(10_000, 125_140)).toBe(4_500); // wholly additional-rate
+  });
+
+  it("dividends beyond post-tax profit trigger the unlawful-distribution warning", () => {
+    const r = propertyCompanyExtractionCalculator.compute({
+      companyProfit: 20_000,
+      salaryDrawn: 0,
+      dividendDrawn: 50_000,
+      otherPersonalIncome: 0,
+    });
+    expect((r.note ?? "").startsWith("Warning")).toBe(true);
   });
 });

@@ -89,7 +89,7 @@ const lifecycle: CoverageItem[] = [
   {
     title: "Decide if a company is right",
     icon: Scale,
-    body: "Section 24 is the reason SPVs exist, but a company is not automatically better. Our incorporation page owns the should-I decision and models it against your own figures.",
+    body: "Section 24 is the reason SPVs exist, but a company is not automatically better. Our incorporation page walks the should-I decision and models it against your own figures.",
   },
   {
     title: "Form the company",
@@ -99,7 +99,7 @@ const lifecycle: CoverageItem[] = [
   {
     title: "Structure and tax",
     icon: Landmark,
-    body: "What makes a company an SPV, share structure, Corporation Tax and how the company is taxed year to year. The SPV guide owns this ground.",
+    body: "What makes a company an SPV, share structure, Corporation Tax and how the company is taxed year to year. The SPV guide covers this ground in full.",
   },
   {
     title: "Get the mortgage",
@@ -114,7 +114,7 @@ const lifecycle: CoverageItem[] = [
   {
     title: "Extract the profit",
     icon: Wallet,
-    body: "Salary, dividends and director loans, and the order to draw them in. The extraction pillar owns the working.",
+    body: "Salary, dividends and director loans, and the order to draw them in. The extraction guide sets out the working.",
   },
   {
     title: "Sell up or close down",
@@ -322,7 +322,7 @@ export default function SpvCompanyPage() {
           <CoverageCards items={lifecycle} columns={3} />
           <Prose>
             <p>
-              The depth lives on the owning pages: start with{" "}
+              The detail lives one click away: start with{" "}
               <InlineLink href="/incorporation">should you incorporate at all</InlineLink>, then{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide">
                 how to set up a property investment company
@@ -335,13 +335,13 @@ export default function SpvCompanyPage() {
               <InlineLink href="/blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide">
                 SPV guide
               </InlineLink>{" "}
-              owns the structure and tax detail,{" "}
+              carries the structure and tax detail,{" "}
               <InlineLink href="/blog/property-finance/spv-mortgages-explained">SPV mortgages explained</InlineLink>{" "}
-              owns the lending side, and{" "}
+              covers the lending side, and{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27">
                 the extraction pillar
               </InlineLink>{" "}
-              owns getting money out.
+              covers getting money out.
             </p>
           </Prose>
         </div>
@@ -373,14 +373,26 @@ export default function SpvCompanyPage() {
               Formation:{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide">
                 the step-by-step guide
-              </InlineLink>{" "}
-              and{" "}
+              </InlineLink>
+              ,{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/spv-company-formation-cost-uk">
                 formation costs
+              </InlineLink>
+              ,{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/spv-company-bank-account">
+                the bank account
+              </InlineLink>{" "}
+              and{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/registered-office-address-property-spv">
+                the registered office
               </InlineLink>
               . Companies House:{" "}
               <InlineLink href="/blog/property-finance/sic-code-for-an-spv-property-company">
                 SIC codes for an SPV
+              </InlineLink>{" "}
+              and{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/spv-first-year-accounts-and-filing-timeline">
+                the first-year filing timeline
               </InlineLink>
               . Transfers:{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">
@@ -401,18 +413,38 @@ export default function SpvCompanyPage() {
               . Running it:{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/limited-company-buy-to-let-allowable-expenses">
                 what the company can deduct
-              </InlineLink>{" "}
-              and{" "}
+              </InlineLink>
+              ,{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/property-company-running-costs-annual-budget">
                 what it costs to run each year
+              </InlineLink>{" "}
+              and{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/director-living-in-property-owned-by-limited-company">
+                living in a company-owned property
               </InlineLink>
-              . Closing:{" "}
+              . Moving out or on:{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/transfer-property-to-limited-company-conveyancing">
+                the conveyancing process
+              </InlineLink>
+              ,{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/transfer-property-out-of-limited-company-to-personal-name">
+                transferring property back out
+              </InlineLink>
+              ,{" "}
+              <InlineLink href="/blog/incorporation-and-company-structures/selling-a-property-spv-share-sale-vs-asset-sale">
+                selling the SPV: shares or assets
+              </InlineLink>{" "}
+              and{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/how-to-close-a-property-limited-company">
                 how to close a property limited company
               </InlineLink>
               . Structures:{" "}
               <InlineLink href="/blog/incorporation-and-company-structures/property-investment-company-structure-planning">
                 structure planning
+              </InlineLink>{" "}
+              and{" "}
+              <InlineLink href="/blog/property-types-and-specialist-tax/property-joint-venture-spv-structure-uk">
+                joint-venture SPVs
               </InlineLink>
               . Mortgages:{" "}
               <InlineLink href="/blog/property-finance/buy-to-let-mortgages-guide">the mortgage guide</InlineLink>{" "}
@@ -421,7 +453,16 @@ export default function SpvCompanyPage() {
                 limited-company mortgage options
               </InlineLink>
               . Non-resident landlords:{" "}
+              <InlineLink href="/blog/non-resident-landlord-tax/offshore-company-owning-uk-property">
+                offshore companies owning UK property
+              </InlineLink>{" "}
+              and{" "}
               <InlineLink href="/blog/non-resident-landlord-tax">the non-resident tax hub</InlineLink>.
+              Taking money out:{" "}
+              <InlineLink href="/calculators/property-company-extraction-calculator">
+                the extraction calculator
+              </InlineLink>
+              .
             </p>
           </Prose>
         </div>

@@ -3,7 +3,7 @@ title: "Non-Resident Landlord Scheme UK: Complete Guide for Overseas Property In
 slug: "non-resident-landlord-scheme-uk-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-06-02"
+dateModified: "2026-09-01"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
@@ -141,7 +141,31 @@ faqs:
 
 <p>If you let UK property through a non-resident <strong>company</strong>, the withholding scheme still applies and you apply for gross payment on form NRL2. What changed is the tax that sits underneath. From <strong>6 April 2020</strong>, non-resident corporate landlords moved from income tax to <strong>corporation tax</strong> on their UK property profits, under Schedule 5 to the Finance Act 2019. Any 20% withheld is now credited against the company's corporation tax rather than its income tax.</p>
 
-<p>The move brought the corporation tax machinery with it. Non-resident company landlords now have to consider the corporate interest restriction, which can cap how much finance cost is deductible, along with the loss and anti-avoidance rules that come with the corporation tax regime. For the detail of the transition and the company tax stack, see our guide to the <a href="/blog/non-resident-landlord-tax/changes-nrl-companies">changes for non-resident company landlords</a>.</p>
+<p>The move brought the corporation tax machinery with it. Non-resident company landlords now have to consider the corporate interest restriction, which can cap how much finance cost is deductible, along with the loss and anti-avoidance rules that come with the corporation tax regime. For the detail of the transition and the company tax stack, see our guide to the <a href="/blog/non-resident-landlord-tax/changes-nrl-companies">changes for non-resident company landlords</a>. The rest of this section stays on the practical side of that split: which form each party files, and what evidence the company needs to get credit for tax already withheld.</p>
+
+<h3>Applying to receive rent gross as a company: NRL2, and the agent-side forms around it</h3>
+
+<p>The company's own application is <strong>NRL2</strong>, the company version of the gross-payment application (NRL1 is the individual form, NRL3 the trustee form). That is the only scheme form the company itself files. The other numbers in the NRL series belong to the UK letting agent, and landlords regularly assume they have to file them.</p>
+
+<p><strong>NRL4</strong> is the application a <strong>UK letting agent</strong> makes to HMRC to register to operate the non-resident landlords scheme. <strong>NRL5</strong> is the variant for an agent that wants to operate the scheme <strong>through branches</strong> rather than centrally. Neither is a landlord form, and a company that has been asked to complete one has almost certainly been sent the wrong document.</p>
+
+<p><strong>NRL6</strong> is the piece a company landlord does need, from the other side. It is the <strong>certificate of tax liability</strong> that the UK letting agent, or the tenant where there is no agent, issues to the non-resident landlord showing the tax deducted for the year. The company uses that certificate as its evidence to claim credit for the withheld tax against its corporation tax liability. If gross-payment approval came through partway through a year, the NRL6 covers the earlier period in which tax was still being taken. The scheme's annual return, <strong>NRLY</strong>, is filed by the agent, not by the landlord.</p>
+
+<h3>The offshore company plus UK letting agent mechanics</h3>
+
+<p>In practice the sequence for an offshore company letting through a UK agent runs in a fixed order, and each step sits with a different party.</p>
+
+<ul>
+<li>The UK letting agent registers with HMRC on <strong>NRL4</strong> (or <strong>NRL5</strong> for branch operation) to operate the scheme at all.</li>
+<li>The agent identifies the landlord as a non-resident company and applies scheme withholding by default, at the basic rate, on rent net of allowable expenses it has paid.</li>
+<li>The company applies for gross-payment approval on <strong>NRL2</strong>. Approval is prospective: it does not refund what has already been withheld.</li>
+<li>Once HMRC approves, the agent updates its records and pays the rent across in full from the date the approval bites.</li>
+<li>For any period in which tax was withheld, the agent issues an <strong>NRL6</strong> certificate, which the company keeps for its corporation tax return.</li>
+</ul>
+
+<p>Gross-payment approval is not a corporation tax registration. Since 6 April 2020 the company has a separate duty to register with HMRC for <strong>corporation tax</strong> on its UK property income and to file company tax returns, whether or not it is paid gross. The rates are the same as for a UK company: <strong>19%</strong> to £50,000 of profit, <strong>25%</strong> from £250,000, with marginal relief between.</p>
+
+<p>The approval is not a one-off. It is conditional on the company keeping its UK tax affairs up to date and on HMRC being told when the underlying facts change, including a change of letting agent, of registered office or of ownership. The mechanics of that are the same for companies as for individuals and are set out under "Keeping your scheme record current" above. Two points worth separating out: the scheme is <strong>statutory</strong>, under sections 971 and 972 of the Income Tax Act 2007 and the Taxation of Income from Land (Non-residents) Regulations 1995 (SI 1995/2902), so a treaty that gives the company relief does not switch off withholding on its own; and where the offshore company holds UK residential property, the annual tax on enveloped dwellings and the Register of Overseas Entities run alongside the scheme rather than instead of it, as covered in the Register of Overseas Entities section below and in our <a href="/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27">ATED overview</a>.</p>
 
 <h2>Capital gains: the non-resident CGT 60-day return</h2>
 

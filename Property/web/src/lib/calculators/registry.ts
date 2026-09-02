@@ -9,6 +9,7 @@ import { lttCalculator } from "./tools/ltt-calculator";
 import { firstTimeBuyerStampDutyCalculator } from "./tools/first-time-buyer-stamp-duty-calculator";
 import { corporationTaxCalculator } from "./tools/corporation-tax-calculator";
 import { dividendTaxCalculator } from "./tools/dividend-tax-calculator";
+import { propertyCompanyExtractionCalculator } from "./tools/property-company-extraction-calculator";
 import { rentARoomReliefCalculator } from "./tools/rent-a-room-relief-calculator";
 import { propertyAllowanceChecker } from "./tools/property-allowance-checker";
 import { rdTaxCreditCalculator } from "./tools/rd-tax-credit-calculator";
@@ -94,6 +95,7 @@ const GENERIC: GenericTool[] = [
   firstTimeBuyerStampDutyCalculator,
   corporationTaxCalculator,
   dividendTaxCalculator,
+  propertyCompanyExtractionCalculator,
   rentARoomReliefCalculator,
   propertyAllowanceChecker,
   rdTaxCreditCalculator,
