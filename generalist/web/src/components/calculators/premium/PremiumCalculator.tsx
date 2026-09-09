@@ -31,10 +31,7 @@ import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInVie
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { btnPrimary } from "@/components/ui/layout-utils";
-
-// The gate shows at most once per session. After it has shown, "See your result"
-// reveals directly without re-popping.
-let gateModalShownThisSession = false;
+import { wasRevealed, rememberRevealed } from "@/components/calculators/resultGateStorage";
 
 /* ---------------------------------------------------------------------------
  * Helpers
@@ -241,6 +238,13 @@ export function PremiumCalculator({
     };
   }, []);
 
+  // Resolved after mount (sessionStorage is client-only, so the server and first
+  // client render stay identical): a calculator already revealed this session
+  // does not re-gate when the reader navigates back to it.
+  useEffect(() => {
+    if (wasRevealed(config.id)) setRevealed(true);
+  }, [config.id]);
+
   const onInteract = (fieldId: string) => {
     track("calc_input_change", { ...base, field_id: fieldId });
     if (!interactedRef.current) {
@@ -263,20 +267,20 @@ export function PremiumCalculator({
     onInteract("grid");
   };
 
-  // "See your result": gate pop once per session, then reveal directly.
+  // "See your result": gate pops unless THIS calculator has already been revealed
+  // this session. Keyed per campaign, not a module global: a module global was the
+  // "unlock one, unlock all" bug - answering the gate on one blog calculator
+  // silently unlocked every other one.
   const onSeeResult = () => {
-    if (!gateModalShownThisSession) {
-      gateModalShownThisSession = true;
-      setGateOpen(true);
-    } else {
-      setRevealed(true);
-    }
+    if (wasRevealed(config.id)) setRevealed(true);
+    else setGateOpen(true);
   };
 
   const revealFromGate = useCallback(() => {
     setGateOpen(false);
     setRevealed(true);
-  }, []);
+    rememberRevealed(config.id);
+  }, [config.id]);
 
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, gridRows: rows }),

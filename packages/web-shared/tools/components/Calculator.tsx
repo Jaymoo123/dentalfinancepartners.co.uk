@@ -39,6 +39,7 @@ export function Calculator({
   variant = "page",
   resultCta,
   eyebrow,
+  resultWrapper = (node) => node,
 }: {
   tool: GenericTool;
   variant?: "page" | "embed";
@@ -57,6 +58,15 @@ export function Calculator({
    * on the site wearing a different hat.
    */
   eyebrow?: React.ReactNode;
+  /**
+   * Wraps the RESULT COLUMN only, inside the grid cell, so the grid still sees
+   * exactly one child there and the two-column layout is untouched.
+   *
+   * Exists for the result gate: generalist passes `(node) => <ResultGate ...>`
+   * to hold the figure behind a capture interstitial. Default is identity, so
+   * the sites that pass nothing render byte-identically to before.
+   */
+  resultWrapper?: (node: React.ReactNode) => React.ReactNode;
 }) {
   const [values, setValues] = useState<CalcValues>(() => defaultValues(tool.fields));
   const interactedRef = useRef(false);
@@ -109,7 +119,8 @@ export function Calculator({
           ))}
         </div>
 
-        <div className="bg-slate-900 p-6 sm:p-8 text-white">
+        {resultWrapper(
+          <div className="bg-slate-900 p-6 sm:p-8 text-white">
           {result.verdict ? (
             <div className="mb-2">
               <div className="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider mb-3">
@@ -163,7 +174,8 @@ export function Calculator({
               <p className="text-xs text-slate-400 leading-relaxed">{result.note}</p>
             </div>
           )}
-        </div>
+          </div>,
+        )}
       </div>
 
       {resultCta && variant === "page" && (
