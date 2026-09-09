@@ -63,12 +63,9 @@ export default async function ThankYouPage({
             Thank you. Your message is with us.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
-            We read every message personally and aim to reply within two working days. If you
-            asked to be introduced to a specialist, a vetted regulated firm or accredited
-            mediator from our partner network will contact you directly, usually within a few
-            working days. If that firm is unable to help, your enquiry may be passed to another
-            firm in the network for the same purpose. There is nothing more you need to do right
-            now.
+            For specialist tax advisory work, including complex structuring and tax planning, we
+            work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
+            that level of advice, it may be their team who contacts you.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-slate-500">
             As we set out on the contact form, we may receive a fee from the firm we introduce you

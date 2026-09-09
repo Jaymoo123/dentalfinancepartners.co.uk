@@ -465,6 +465,10 @@ export function LeadForm({
               <p className="text-sm font-medium text-emerald-900">
                 Thanks. We&apos;ll be in touch within 24 hours.
               </p>
+              <p className="mt-2 text-sm text-emerald-900">
+                For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it
+                may be their team who gets in touch.
+              </p>
             </div>
           )}
 

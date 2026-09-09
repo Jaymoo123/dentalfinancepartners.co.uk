@@ -67,8 +67,9 @@ export default async function ThankYouPage({
       {nurtureArmed ? (
         <>
           <p className="mt-4 text-neutral-600">
-            We have just sent you a message to arrange your free crypto tax review. Please check
-            your email and phone, and confirm to lock in your callback slot.
+            For specialist tax advisory work, including complex structuring and tax planning, we
+            work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
+            that level of advice, it may be their team who contacts you.
           </p>
           <p className="mt-3 text-sm text-neutral-500">
             Cannot see our email? Please check your spam or junk folder, and mark it as not spam so
@@ -77,8 +78,10 @@ export default async function ThankYouPage({
         </>
       ) : (
         <p className="mt-4 text-neutral-600">
-          We&apos;ll come back to you within 24 hours. A specialist firm from our partner network
-          may contact you directly about your enquiry. You can also pick a callback time below.
+          For specialist tax advisory work, including complex structuring and tax planning, we
+          work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that
+          level of advice, it may be their team who contacts you. You can also pick a callback
+          time below.
         </p>
       )}
 

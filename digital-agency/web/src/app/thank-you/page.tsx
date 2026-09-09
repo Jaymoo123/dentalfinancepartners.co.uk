@@ -106,7 +106,9 @@ export default async function ThankYouPage({
                 We have just sent you a message to arrange your free agency finance review. Please check your email and phone, and confirm to lock in your callback slot.
               </p>
               <p className="mt-4 text-base text-slate-600">
-                A specialist firm from our partner network may contact you directly about your enquiry. We aim to respond within 24 hours, usually same day.
+                For specialist tax advisory work, including complex structuring and tax planning, we
+                work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
+                that level of advice, it may be their team who contacts you.
               </p>
               <p className="mt-4 text-sm text-slate-500">
                 Cannot see our email? Please check your spam or junk folder, and mark it as not spam so our messages reach you.
@@ -114,7 +116,10 @@ export default async function ThankYouPage({
             </>
           ) : (
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
-              Your enquiry has been received. A specialist firm from our partner network may contact you directly about your enquiry, within one working day, usually the same day. You can also pick a callback time below.
+              For specialist tax advisory work, including complex structuring and tax planning, we
+              work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
+              that level of advice, it may be their team who contacts you. You can also pick a
+              callback time below.
             </p>
           )}
 

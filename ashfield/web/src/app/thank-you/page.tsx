@@ -19,6 +19,11 @@ export default function ThankYouPage() {
           <p className="type-lead measure mt-6 text-ink-70">
             We reply within one working day, usually sooner.
           </p>
+          <p className="type-lead measure mt-4 text-ink-70">
+            For specialist tax advisory work, including complex structuring and tax planning, we
+            work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that
+            level of advice, it may be their team who contacts you.
+          </p>
 
           <div className="rule mt-12" />
           <h2 className="type-h3 mt-10">What happens next</h2>

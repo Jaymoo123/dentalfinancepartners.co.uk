@@ -77,9 +77,9 @@ export default async function ThankYouPage({
         </>
       ) : (
         <p className="mt-4 text-neutral-600">
-          We&apos;ll come back to you within 24 hours. To answer your enquiry, a specialist firm
-          from our partner network may contact you directly. You can also pick a callback time
-          below.
+          For specialist tax advisory work, including complex structuring and tax planning, we work
+          closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
+          advice, it may be their team who contacts you. You can also pick a callback time below.
         </p>
       )}
 

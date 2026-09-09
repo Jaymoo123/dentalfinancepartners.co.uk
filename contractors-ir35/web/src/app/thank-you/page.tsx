@@ -59,7 +59,9 @@ export default async function ThankYouPage({
             Thank you.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-            We have received your enquiry and passed it to a specialist firm from our partner network, who may contact you directly within one working day. You will hear from a specialist contractor accountant, not a sales team.
+            For specialist tax advisory work, including complex structuring and tax planning, we
+            work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
+            that level of advice, it may be their team who contacts you.
           </p>
 
           {bookingToken ? (

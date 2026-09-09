@@ -164,7 +164,9 @@ export default async function ThankYouPage({
               and confirm to lock in your callback slot.
             </p>
             <p className="mt-4 text-base leading-relaxed text-slate-300">
-              Your message is with our team. We aim to respond within 24 hours, usually same day.
+              For specialist tax advisory work, including property, complex structuring and planning, we
+              work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level
+              of advice, it may be their team who contacts you.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Cannot see our email? Please check your spam or junk folder, and mark it as not spam so our
@@ -173,8 +175,9 @@ export default async function ThankYouPage({
           </>
         ) : (
           <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-            Your enquiry is with our team. We will be in touch within one working day, usually the same day.
-            You can also pick a callback time below.
+            For specialist tax advisory work, including property, complex structuring and planning, we work
+            closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
+            advice, it may be their team who contacts you. You can also pick a callback time below.
           </p>
         )}
       </SlimHero>

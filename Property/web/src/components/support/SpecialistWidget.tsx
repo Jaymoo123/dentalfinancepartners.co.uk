@@ -541,8 +541,8 @@ export function SpecialistWidget() {
                 </span>
                 <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-900 shadow-sm">
                   {multi
-                    ? "Sent. Check your email and phone now, we have just messaged you to arrange your free review."
-                    : "Thanks, a specialist has your message and will be in touch by email. Please keep an eye on your inbox, and your spam or junk folder just in case, so our reply does not get missed."}
+                    ? "Sent. Check your email and phone now, we have just messaged you to arrange your free review. For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it may be their team who gets in touch."
+                    : "Thanks, a specialist has your message and will be in touch by email. For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it may be their team who replies. Please keep an eye on your inbox, and your spam or junk folder just in case, so our reply does not get missed."}
                 </div>
               </div>
             ) : !composing ? (

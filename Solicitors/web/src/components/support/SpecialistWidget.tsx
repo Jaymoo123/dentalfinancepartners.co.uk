@@ -398,7 +398,7 @@ export function SpecialistWidget() {
                   </svg>
                 </span>
                 <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-[var(--primary)]/20 bg-[var(--primary)]/5 px-3 py-2 text-sm font-medium text-[var(--primary-dark)] shadow-sm">
-                  Thanks, a specialist has your message and will be in touch by email. Please keep an eye on your inbox, including spam or junk, so our reply is not missed.
+                  Thanks, a specialist has your message and will be in touch by email. For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it may be their team who replies. Please keep an eye on your inbox, including spam or junk, so our reply is not missed.
                 </div>
               </div>
             ) : !composing ? (
