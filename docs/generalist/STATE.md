@@ -1,5 +1,36 @@
 # Generalist (Holloway Davies) — site state
 
+> **2026-09-09 SESSION 2 CLOSE — PORT PHASES 0-4 BUILT; NEXT = re-run the Phase 4
+> fidelity review, then Phases 5-6.** All local commits, NOTHING DEPLOYED; production
+> untouched at `18b4f25f`. Owner approved the full recommendation bundle same day
+> ("go with all recommendations"; recorded in DESIGN_DELTA §§3-4b).
+> Tags: `port-generalist-phase1` `phase2` `phase3` (each built -> adversarially
+> fidelity-reviewed -> gaps fixed -> re-verified). Phase 4 (calculators) is COMMITTED
+> and build/test green (`aeec8f13` capture machinery + resultWrapper on the shared
+> renderer, web-shared 406 green, closure OK x19; `fcd61b7b` tabs + F.5 templates +
+> two-tier index, 308 tests, 820/820 pages) but its fidelity review was stopped at
+> session close: **RE-RUN IT before tagging phase 4** (prompt pattern = the phase 3
+> review; must check gate UX end-to-end, embeds ungated, premium re-key isolation,
+> index tabs/buckets, link floors, and the amber Employment Allowance warning inside
+> EmployerNICalculator, which likely needs the approved violet warning ramp).
+> Highlights landed: O.8 KIT PARITY PASSED (byte-identical geometry vs Property);
+> /blog served HTML ~9MB -> 1.37MB with 461 crawl links kept; link floor UP on every
+> reviewed route; 11 hub briefings dual-QA'd (a real HP defect found + corrected: CT
+> payment 9m+1d vs CT600 filing 12 months); ResultGate live on all calc pages.
+> REMAINING: Phase 5 (homepage F.2 16-section rebuild incl. #calculators HOME_TABS
+> exported from components/tools/CalculatorTabs.tsx; pillars /services
+> /accountant-near-me /r-and-d-credits; locations x193 + index) and Phase 6
+> (contact, post-submit, about, /team DELETE per owner, research, guides/resources/
+> templates/uk-tax-rates, newsletter, legal, interruptive restyle, retirement list)
+> per docs/generalist/_port/DISPOSITION_SLICE2-3; then owner dev-server walk; deploy
+> is owner-triggered. Leftovers ledger: G2 21 workedExamples commissions open;
+> calc_promo_inline row in packages/web-shared/experiments/registries/generalist.ts
+> should be retired (surface deleted); kit FaqSection needs an html-answer option
+> (Property-kit gap, blog worked around it); two shared fleet defects recorded in
+> the rollout doc O.8 note (btnPrimary CSS-order, Property-affecting, owner item);
+> generalist/.git husk repo bit twice this session (tag + stage went into it, both
+> reverted) — deletion still needs owner word.
+>
 > **2026-09-09 — DESIGN PORT TO THE PROPERTY STANDARD: APPROVED, Phase 0 running.**
 > Owner decision (PROPERTY_STANDARD_ROLLOUT.md §8.3): generalist ports to the Property
 > standard (Track 1, family C). Keep orange #f97316 as brand primary; warning/duty
