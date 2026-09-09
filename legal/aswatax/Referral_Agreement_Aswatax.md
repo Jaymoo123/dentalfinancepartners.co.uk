@@ -16,7 +16,7 @@ each a "party" and together the "parties".
 
 (B) The Introducer has arranged for Sidekick Accounting Ltd (company number 12250170) ("Sidekick") to triage those enquiries. Work that is Compliance Work is directed to Sidekick. Work that is Advisory Work is referred to the Adviser under this agreement.
 
-(C) The Adviser will pay the Introducer a fee of 20 per cent of the Advisory Fees it bills each Referred Client, for as long as it acts for that client.
+(C) The Adviser will pay the Introducer a fee of 20 per cent of the Advisory Fees it bills each Referred Client, for 24 months from the date of that client's Referral.
 
 (D) The sharing of personal data under this arrangement is governed by the separate Data Sharing Agreement between the Introducer and the Adviser (the "Data Sharing Agreement"), which the parties sign alongside this agreement.
 
@@ -56,15 +56,13 @@ IT IS AGREED as follows.
 
 ## 4. REFERRAL FEE
 
-4.1 The Adviser will pay the Introducer the Referral Fee on all Advisory Fees billed to each Referred Client, for as long as the Adviser (or any successor practice of the Adviser) acts for that Referred Client. This obligation survives termination of this agreement in respect of every person who became a Referred Client before termination.
+4.1 The Adviser will pay the Introducer the Referral Fee on all Advisory Fees billed to each Referred Client for a period of 24 months from the date of the Referral of that Referred Client. This obligation survives termination of this agreement in respect of every person who became a Referred Client before termination, until the end of that 24 month period.
 
 4.2 Within 10 Working Days of the end of each calendar month, the Adviser will send the Introducer a statement listing, for that month, each Referred Client billed, the Advisory Fees billed and the Referral Fee due. A month with nothing billed needs a nil statement only if the Introducer asks for one.
 
 4.3 The Introducer will invoice the Referral Fee shown on each statement, and the Adviser will pay within 14 days of the invoice. The Referral Fee is exclusive of VAT, which the Adviser will pay in addition where chargeable. Late payment carries interest and compensation under the Late Payment of Commercial Debts (Interest) Act 1998.
 
-4.4 On reasonable notice, no more than twice a year, the Adviser will provide reasonable supporting information to verify the statements, limited to fee and billing records for Referred Clients. The Introducer will keep that information confidential and use it only for verification.
-
-4.5 If the Adviser writes off or credits an Advisory Fee on which a Referral Fee was paid, the corresponding Referral Fee is credited against the next statement.
+4.4 If the Adviser writes off or credits an Advisory Fee on which a Referral Fee was paid, the corresponding Referral Fee is credited against the next statement.
 
 ## 5. THE ADVISER'S STANDING
 
@@ -109,5 +107,5 @@ IT IS AGREED as follows.
 | Signature: MJ MOUGHAL | Signature: ............................................ |
 | Name: Mohammed Junayd Moughal | Name: ............................................ |
 | Title: Director | Title: ............................................ |
-| Date: 26 August 2026 | Date: ............................................ |
+| Date: 27 August 2026 | Date: ............................................ |
 | Notices email: junayd@ashfieldtrading.com | Notices email: ............................................ |
