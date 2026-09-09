@@ -15,8 +15,8 @@ name: Weekly Optimisation Engine
 # safe — see optimisation_engine/weekly_run.py docstring.
 
 on:
-  schedule:
-    - cron: '0 7 * * 1'  # 07:00 UTC every Monday
+  # schedule:
+  #   - cron: '0 7 * * 1'  # 07:00 UTC every Monday — disabled 2026-09-09 (engine retired 2026-07-13, cron was left live by mistake)
   workflow_dispatch:
     inputs:
       site:
