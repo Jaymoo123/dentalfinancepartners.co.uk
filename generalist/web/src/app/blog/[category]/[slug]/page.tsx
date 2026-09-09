@@ -6,6 +6,7 @@ import {
   getPostByCategoryAndSlug,
   getCategorySlug,
   getRelatedPosts,
+  firstSentence,
 } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
@@ -83,10 +84,9 @@ export default async function BlogPostPage({ params }: Props) {
 
   const categorySlug = getCategorySlug(post);
   const related = getRelatedPosts(post.slug, post.category, 3).map((r) => ({
-    slug: r.slug,
+    href: `/blog/${getCategorySlug(r)}/${r.slug}`,
     title: r.title,
-    summary: r.summary,
-    categorySlug: getCategorySlug(r),
+    excerpt: firstSentence(r.contentHtml, r.summary),
   }));
 
   return <BlogPostRenderer post={post} categorySlug={categorySlug} related={related} />;

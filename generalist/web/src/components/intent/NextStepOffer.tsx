@@ -13,6 +13,7 @@
  * secondary nudge upstream of it.
  */
 import Link from "next/link";
+import { btnPrimary } from "@/components/ui/layout-utils";
 import { useIntent, trackPersonalization } from "./IntentProvider";
 
 export function NextStepOffer() {
@@ -28,8 +29,8 @@ export function NextStepOffer() {
         : "Talk to a specialist";
 
   return (
-    <aside className="my-10 rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8">
-      <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
+    <aside className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+      <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
         {offer.reason}
       </p>
       <h3 className="mt-2 text-xl font-bold text-slate-900">{offer.title}</h3>
@@ -39,7 +40,7 @@ export function NextStepOffer() {
         data-cta="next_step"
         data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
         onClick={() => trackPersonalization("clicked", action)}
-        className="mt-5 inline-flex items-center justify-center rounded-lg bg-orange-500 px-5 py-2.5 font-semibold text-white hover:bg-orange-600"
+        className={`${btnPrimary} mt-5`}
       >
         {buttonLabel}
       </Link>

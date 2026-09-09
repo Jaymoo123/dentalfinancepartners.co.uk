@@ -3,23 +3,25 @@
  * excerpt function behind every related-reading card must stay readable across
  * the WHOLE corpus, not just the posts someone eyeballed.
  *
- * SKIPPED FOR NOW. This site has no `firstSentence` implementation yet
- * (`src/lib/blog.ts` exposes no excerpt function, and nothing renders
- * RelatedArticles), so there is nothing to point the guard at. Non-article
- * routes are covered instead by `src/lib/page-summaries.ts`, whose registry is
- * asserted below so the file cannot rot while this guard is dark.
- *
- * un-skip in Phase 3 (blog subsystem): import the site's own `firstSentence`
- * and `getAllPosts`, delete the `describe.skip` wrapper, and call
- * `registerFirstSentenceGuard({ firstSentence, getPosts, minPosts: 1 })`.
+ * Un-skipped in Phase 3 (blog subsystem): `firstSentence` now lives in
+ * `src/lib/blog.ts` and feeds the kit `RelatedArticles` grid on every article,
+ * pillar guide and glossary term. Non-article routes stay covered by
+ * `src/lib/page-summaries.ts`, asserted below.
  */
 import { describe, it, expect } from "vitest";
+import { registerFirstSentenceGuard } from "@accounting-network/web-shared/design/guards/first-sentence";
+import { firstSentence, getAllPosts } from "@/lib/blog";
 import { PAGE_SUMMARIES, pageSummary } from "@/lib/page-summaries";
 
-describe.skip("firstSentence corpus guard (un-skip in Phase 3, blog subsystem)", () => {
-  it("has a firstSentence implementation to run against", () => {
-    expect(false).toBe(true);
-  });
+registerFirstSentenceGuard({
+  firstSentence,
+  getPosts: () =>
+    getAllPosts().map((p) => ({
+      slug: p.slug,
+      contentHtml: p.contentHtml,
+      summary: p.summary,
+    })),
+  minPosts: 1,
 });
 
 describe("page summaries", () => {

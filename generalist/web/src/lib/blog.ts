@@ -133,6 +133,48 @@ export function getAllCategories(): Array<{ slug: string; name: string; count: n
     .sort((a, b) => b.count - a.count);
 }
 
+/**
+ * Opening sentence of a post, for related-article cards. Ported from Property,
+ * where it feeds the same grid: the frontmatter summary is written for search,
+ * the opening line is written for a reader.
+ */
+export function firstSentence(contentHtml: string, fallback = ""): string {
+  const text = contentHtml
+    // Drop whole blocks that carry no opening prose before tags are stripped:
+    // an opening table or list would otherwise contribute its first cell.
+    .replace(/<(table|ul|ol|figure|blockquote|pre)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<[^>]*>/g, " ")
+    // Markdown leftovers: ATX headings, emphasis, link syntax, list bullets.
+    .replace(/^#{1,6}\s+.*$/gm, " ")
+    .replace(/^\s*[-*+]\s+/gm, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`]/g, "")
+    .replace(/&(nbsp|amp|lt|gt|#39|quot);/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Split on a terminator followed by a space and a capital, so "s.9A." and
+  // "£3,000." do not cut a sentence in half.
+  const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z£"'(])/);
+
+  // Take sentences until there is enough to be worth reading: posts that open
+  // on a deliberate one-word answer ("No.") need the line that explains it too.
+  let excerpt = "";
+  for (const s of sentences) {
+    const next = excerpt ? `${excerpt} ${s}` : s;
+    if (excerpt && next.length > 320) break;
+    excerpt = next;
+    if (excerpt.length >= 40) break;
+  }
+  excerpt = excerpt.trim();
+
+  const fb = fallback.trim();
+  const usable = (s: string) => s.length >= 40 && s.length <= 320;
+  if (usable(excerpt)) return excerpt;
+  if (usable(fb)) return fb;
+  return excerpt || fb;
+}
+
 export function calculateReadTime(html: string): number {
   const text = html.replace(/<[^>]*>/g, " ");
   const words = text.split(/\s+/).filter((w) => w.length > 0).length;

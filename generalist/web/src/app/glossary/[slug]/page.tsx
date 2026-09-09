@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { BookOpen, ArrowRight } from "lucide-react";
-import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteContainerLg } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./data";
 import { JsonLd, buildDefinedTerm } from "@/lib/schema";
@@ -46,77 +49,90 @@ export default async function GlossaryEntryPage({ params }: Props) {
     slug,
     term: entry.term,
     definition: entry.body.replace(/<[^>]+>/g, "").slice(0, 250),
-    inDefinedTermSet: entry.category,
+    // The set is the glossary itself, as a URL. The bare category string sent
+    // schema consumers looking for a DefinedTermSet that does not exist.
+    inDefinedTermSet: `${siteConfig.url}/glossary#termset`,
   });
 
   return (
     <>
       <JsonLd data={term} />
 
-      <section className="bg-slate-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            variant="light"
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Glossary", href: "/glossary" },
-              { label: entry.term },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              <BookOpen className="h-3.5 w-3.5" />
-              {entry.category}
-            </div>
-            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              {entry.term}
-            </h1>
-          </div>
-        </div>
-      </section>
-
       <article className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <div
-              className="article-body prose-blog"
-              dangerouslySetInnerHTML={{ __html: entry.body }}
+          <div className="max-w-3xl">
+            <Breadcrumb
+              siteUrl={siteConfig.url}
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Glossary", href: "/glossary" },
+                { label: entry.term },
+              ]}
             />
-
-            <div className="mt-12 bg-slate-900 p-8 text-white">
-              <h2 className="text-xl font-bold sm:text-2xl">
-                Want this applied to your business?
-              </h2>
-              <p className="mt-3 text-base text-slate-200">
-                Book a free call with a specialist accountant. We'll review your position and show you what to actually do.
-              </p>
-              <Link href="/contact" className={`${btnPrimary} mt-6`}>
-                Book a free call
-              </Link>
-            </div>
-
-            {related.length > 0 && (
-              <section className="mt-12 pt-12 border-t border-slate-200">
-                <h2 className="text-xl font-bold text-slate-900 mb-6">
-                  Related terms in {entry.category}
-                </h2>
-                <ul className="grid gap-3 sm:grid-cols-3">
-                  {related.map((r) => (
-                    <li key={r.slug}>
-                      <Link
-                        href={`/glossary/${r.slug}`}
-                        className="block bg-slate-50 border border-slate-200 p-4 hover:border-orange-600 hover:bg-white transition-all"
-                      >
-                        <p className="text-sm font-bold text-slate-900">{r.term}</p>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            )}
+            <header className="rounded-xl bg-slate-50 p-8 mt-6">
+              <Eyebrow>{entry.category}</Eyebrow>
+              <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                {entry.term}
+              </h1>
+            </header>
           </div>
+
+          {/* No wrapper clamp: `.prose-blog` already sets its own 65ch measure,
+              and the max-w-3xl above it clamped the body a second time. */}
+          <div
+            className="article-body prose-blog mt-10"
+            dangerouslySetInnerHTML={{ __html: entry.body }}
+          />
+
+          {related.length > 0 && (
+            <section className="mt-16" aria-labelledby="related-terms-heading">
+              <h2 id="related-terms-heading" className="text-2xl font-bold text-slate-900 mb-8">
+                Related terms in {entry.category}
+              </h2>
+              <RelatedArticles
+                columns={3}
+                items={related.map((r) => ({
+                  href: `/glossary/${r.slug}`,
+                  title: r.term,
+                  kind: "guide" as const,
+                }))}
+              />
+            </section>
+          )}
         </div>
       </article>
+
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          title="Want this applied to your business?"
+          description="Book a free call with an accountant. We read your actual position and tell you what to do about it."
+          proofPoints={[
+            {
+              title: "24-hour response, usually same day",
+              detail: "A real accountant reads your enquiry, not an inbox rota.",
+            },
+            {
+              title: "Fixed fees, agreed before any work",
+              detail: "You know the cost before anything starts.",
+            },
+            {
+              title: "One named accountant",
+              detail: "The same person handles your business each year.",
+            },
+          ]}
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />}
+          footnote={
+            <>
+              Prefer to talk it through first?{" "}
+              <Link href="/contact" className="font-semibold text-primary-700 hover:text-primary-800">
+                Contact us
+              </Link>
+              .
+            </>
+          }
+        />
+      </div>
     </>
   );
 }

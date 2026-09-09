@@ -1,18 +1,31 @@
 import Link from "next/link";
-import Image from "next/image";
+import { CalendarDays, Clock, History, UserRound } from "lucide-react";
 import type { BlogPost } from "@/types/blog";
-import { buildBlogPostingJsonLd } from "@/lib/schema";
+import { buildArticleJsonLd, buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-import { TableOfContents } from "@accounting-network/web-shared/content/TableOfContents";
-import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
-import { AuthorByline } from "@/components/blog/AuthorByline";
+import { blogCtaCopy } from "@/lib/blog-cta-map";
+import { getTeamMember } from "@/app/team/[slug]/data";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@accounting-network/web-shared/design/primitives/accordion";
+import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
+import { ReadingProgress } from "@accounting-network/web-shared/design/blog/ReadingProgress";
+import { BlogSidebarCta } from "@accounting-network/web-shared/design/blog/BlogSidebarCta";
+import {
+  RelatedArticles,
+  type RelatedArticleItem,
+} from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
 import { extractHeadings } from "@accounting-network/web-shared/content/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
-import { InlinePrompt } from "@/components/newsletter/InlinePrompt";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { CalcPromoCard } from "@/components/blog/CalcPromoCard";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
@@ -25,14 +38,15 @@ import {
   splitRemainderForGate,
   splitContentAtMidScroll,
 } from "@accounting-network/web-shared/content/blog-splits";
-import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
-
-const activeCta = getActiveCta(niche);
 
 type BlogPostRendererProps = {
   post: BlogPost;
+  /** Slugified category. Drives the tool/gate taxonomy and the post breadcrumb. */
   categorySlug: string;
-  related?: { slug: string; title: string; summary: string; categorySlug: string }[];
+  /** Already-resolved cards: the pages own href construction and excerpts. */
+  related?: RelatedArticleItem[];
+  /** "pillar" renders the same anatomy for /fundamentals/[slug]. */
+  variant?: "post" | "pillar";
 };
 
 function formatUkDate(isoDate: string): string {
@@ -41,197 +55,199 @@ function formatUkDate(isoDate: string): string {
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
-export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
+/**
+ * Every `<aside>` in the body gets an anchor to the one enquiry form. The
+ * asides are where the article says "this is the bit that costs people money",
+ * which is the moment the ask is worth making.
+ */
+function decorateAsides(html: string): string {
+  return html.replace(
+    /<aside>([\s\S]*?)<\/aside>/g,
+    (_m, inner) =>
+      `<aside>${inner}<p class="aside-cta-row"><a class="aside-cta" href="#enquiry-form">Talk to a specialist →</a></p></aside>`,
+  );
+}
+
+const metaPill =
+  "inline-flex min-h-7 items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 ring-1 ring-slate-200";
+
+export function BlogPostRenderer({
+  post,
+  categorySlug,
+  related = [],
+  variant = "post",
+}: BlogPostRendererProps) {
+  const isPillar = variant === "pillar";
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
+  const path = isPillar
+    ? `/fundamentals/${post.slug}`
+    : `/blog/${categorySlug}/${post.slug}`;
   const jsonLd =
     post.schema?.trim() ||
-    buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
+    (isPillar ? buildArticleJsonLd(post, path) : buildBlogPostingJsonLd(post, path));
 
-  // Resolve the byline: prefer the new authorSlug field; default every post to
-  // the editorial lead so the Person schema in JSON-LD always has a real
-  // /team/[slug] URL. Legacy free-text `author` is honoured as a label
-  // fallback only when no slug resolves.
-  const authorSlug = post.authorSlug || "emma-carter";
+  const decoratedHtml = decorateAsides(post.contentHtml);
 
-  const takeaways = post.keyTakeaways && post.keyTakeaways.length > 0
-    ? post.keyTakeaways
-    : null;
+  // Byline: the editorial lead is the default so the Person schema always has a
+  // real /team/[slug] URL. Reviewer is the standing technical reviewer.
+  const author = getTeamMember(post.authorSlug || "emma-carter");
+  const authorName = author?.name ?? post.author ?? "Editorial Team";
+  const reviewer = getTeamMember("james-holloway");
+  const hasReviewer = !!reviewer && reviewer.slug !== author?.slug;
 
-  // Resolve the topic using the SLUG (not the human label `post.category`).
-  // topicForBlogSlug uses the slugified category key, which is the correct
-  // taxonomy lookup — post.category is the human display label, not the slug.
-  const topic = topicForBlogSlug(categorySlug);
+  const takeaways =
+    post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
 
-  // 3-moment architecture (Property pattern, shared blog-splits helpers):
+  const ctaCopy = blogCtaCopy(post.category);
+
+  // 3-moment architecture, logic unchanged:
   //  moment 1: early free-tool island after the first h2 (EARLY_TOOL_BY_CATEGORY)
-  //  moment 2: PremiumUpgrade + GateOrForm at a later heading (~50% of remainder)
-  //  moment 3: existing end-of-article InlinePrompt + LeadForm (unchanged)
-  // Unmapped categories fall back to the old mid-scroll InlineMiniLeadForm.
+  //  moment 2: PremiumUpgrade + GateOrForm at a later heading
+  //  moment 3: the #enquiry-form panel at the end
+  // Unmapped categories fall back to the mid-scroll InlineMiniLeadForm.
+  const topic = topicForBlogSlug(categorySlug);
   const earlyToolSlug = earlyToolForBlogSlug(categorySlug);
   const earlyTool = earlyToolSlug ? getGenericTool(earlyToolSlug) : undefined;
-  const earlySplit = earlyTool ? splitContentEarly(post.contentHtml) : null;
+  const earlySplit = earlyTool ? splitContentEarly(decoratedHtml) : null;
   const gateSplit = earlySplit ? splitRemainderForGate(earlySplit.after) : null;
-  const fallbackSplit = earlySplit ? null : splitContentAtMidScroll(post.contentHtml);
+  const fallbackSplit = earlySplit ? null : splitContentAtMidScroll(decoratedHtml);
+
+  const hasUpdate = !!(post.updatedDate && post.updatedDate !== post.date);
 
   return (
     <>
       <ReadingProgress />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd }}
-      />
-
-      <section className="relative h-[420px] sm:h-[480px] lg:h-[520px] overflow-hidden">
-        {post.image ? (
-          <Image
-            src={post.image}
-            alt={post.altText || post.title}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover scale-110 blur-sm"
-          />
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-700 via-orange-800 to-slate-900" />
-        )}
-        <div className="absolute inset-0 bg-slate-900/70" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
-          <div className="max-w-4xl">
-            <Breadcrumb
-              variant="light"
-              items={[
-                { label: "Home", href: "/" },
-                { label: "Blog", href: "/blog" },
-                { label: post.category, href: `/blog/${categorySlug}` },
-                { label: post.title },
-              ]}
-            />
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-orange-300">
-              {post.category}
-            </p>
-            <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-              {post.h1}
-            </h1>
-            <p className="mt-4 text-sm text-slate-300">
-              {readTime > 0 && <span>{readTime} min read</span>}
-              {post.date && (
-                <>
-                  {readTime > 0 ? " · " : null}
-                  <time dateTime={post.date}>Published {formatUkDate(post.date)}</time>
-                </>
-              )}
-              {post.updatedDate && post.updatedDate !== post.date && (
-                <>
-                  {" · "}
-                  <time dateTime={post.updatedDate}>
-                    Updated {formatUkDate(post.updatedDate)}
-                  </time>
-                </>
-              )}
-            </p>
-          </div>
-        </div>
-        {post.imageCredit?.photographer ? (
-          <p className="absolute bottom-2 right-3 z-10 text-[10px] text-slate-400/80">
-            Photo:{" "}
-            {post.imageCredit.photographerUrl ? (
-              <a
-                href={post.imageCredit.photographerUrl}
-                target="_blank"
-                rel="noopener nofollow"
-                className="underline hover:text-slate-200"
-              >
-                {post.imageCredit.photographer}
-              </a>
-            ) : (
-              post.imageCredit.photographer
-            )}
-            {post.imageCredit.source ? (
-              <>
-                {" / "}
-                {post.imageCredit.sourceUrl ? (
-                  <a
-                    href={post.imageCredit.sourceUrl}
-                    target="_blank"
-                    rel="noopener nofollow"
-                    className="underline hover:text-slate-200"
-                  >
-                    {post.imageCredit.source}
-                  </a>
-                ) : (
-                  post.imageCredit.source
-                )}
-              </>
-            ) : null}
-          </p>
-        ) : null}
-      </section>
-
       <article className="bg-white py-12 sm:py-16">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
+        />
+
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-12">
             <div className="max-w-4xl">
-              <div className="mb-8 pb-8 border-b border-slate-200">
-                <AuthorByline
-                  authorSlug={authorSlug}
-                  authorName={post.author}
-                  publishedDate={post.date}
-                  updatedDate={post.updatedDate}
-                />
-                <p className="mt-2 text-xs text-slate-500 max-w-xl">
-                  Editorial content from the Holloway Davies team. For
-                  decisions specific to your business,{" "}
-                  <Link href="/contact" className="underline hover:text-orange-700">
-                    book a call
-                  </Link>
-                  .
-                </p>
+              <Breadcrumb
+                siteUrl={siteConfig.url}
+                items={
+                  isPillar
+                    ? [
+                        { label: "Home", href: "/" },
+                        { label: "Guides", href: "/fundamentals" },
+                        { label: post.title },
+                      ]
+                    : [
+                        { label: "Home", href: "/" },
+                        { label: "Blog", href: "/blog" },
+                        { label: post.category, href: `/blog/${categorySlug}` },
+                        { label: post.title },
+                      ]
+                }
+              />
+
+              <header className="rounded-xl bg-slate-50 p-8 mt-6">
+                <Eyebrow>{isPillar ? `Pillar guide · ${post.category}` : post.category}</Eyebrow>
+                <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl md:text-5xl">
+                  {post.h1}
+                </h1>
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  {post.date ? (
+                    <span className={metaPill}>
+                      <CalendarDays aria-hidden className="h-3.5 w-3.5 text-primary-600" />
+                      {hasUpdate ? (
+                        <>
+                          Published <time dateTime={post.date}>{formatUkDate(post.date)}</time>
+                        </>
+                      ) : (
+                        <time dateTime={post.date}>{formatUkDate(post.date)}</time>
+                      )}
+                    </span>
+                  ) : null}
+                  {hasUpdate ? (
+                    <span className="inline-flex min-h-7 items-center gap-1.5 rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-700 ring-1 ring-primary-100">
+                      <History aria-hidden className="h-3.5 w-3.5" />
+                      Updated{" "}
+                      <time dateTime={post.updatedDate}>{formatUkDate(post.updatedDate!)}</time>
+                    </span>
+                  ) : null}
+                  <span className={metaPill}>
+                    <UserRound aria-hidden className="h-3.5 w-3.5 text-primary-600" />
+                    {author ? (
+                      <Link href={`/team/${author.slug}`} rel="author" className="hover:text-primary-700">
+                        {authorName}
+                      </Link>
+                    ) : (
+                      authorName
+                    )}
+                  </span>
+                  {readTime > 0 ? (
+                    <span className={metaPill}>
+                      <Clock aria-hidden className="h-3.5 w-3.5 text-primary-600" />
+                      {readTime} min read
+                    </span>
+                  ) : null}
+                </div>
+                {post.summary ? (
+                  <p className="mt-5 text-base leading-7 text-slate-600">{post.summary}</p>
+                ) : null}
+                <div className="mt-6">
+                  <a
+                    href="#enquiry-form"
+                    data-cta="blog_skip_to_form"
+                    data-cta-placement="article_header"
+                    data-cta-goal="form"
+                    className="inline-flex items-center gap-2 py-0.5 text-sm font-semibold text-primary-700 hover:text-primary-800 underline underline-offset-4"
+                  >
+                    Skip to enquiry form ↓
+                  </a>
+                </div>
+              </header>
+
+              <div className="lg:hidden mt-8">
+                <TableOfContents headings={headings} />
               </div>
 
               {takeaways ? (
                 <section
                   id="answer-box"
-                  className="tldr not-prose rounded-lg border-l-4 border-orange-600 bg-slate-50 p-6"
+                  className="tldr not-prose mt-8 rounded-xl border border-slate-200 bg-slate-50 p-6"
                   aria-label="Key takeaways"
                 >
-                  <p className="text-xs font-bold uppercase tracking-wider text-orange-700">
-                    Key takeaways
-                  </p>
-                  <ul className="mt-3 space-y-2">
+                  <Eyebrow>Key takeaways</Eyebrow>
+                  <ul className="space-y-2">
                     {takeaways.map((t, i) => (
                       <li key={i} className="flex items-start gap-2 text-slate-800">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-orange-600 shrink-0" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary-600 shrink-0" />
                         <span className="text-base leading-relaxed">{t}</span>
                       </li>
                     ))}
                   </ul>
                 </section>
               ) : post.summary ? (
-                <section id="answer-box" className="tldr" aria-label="Summary">
-                  <p className="text-xs font-bold uppercase tracking-wider text-orange-700">
-                    TL;DR
-                  </p>
-                  <p className="mt-2 text-lg text-slate-700 leading-relaxed border-l-4 border-orange-600 bg-slate-50 p-6">
-                    {post.summary}
-                  </p>
+                <section
+                  id="answer-box"
+                  className="tldr not-prose mt-8 rounded-xl border border-slate-200 bg-slate-50 p-6"
+                  aria-label="Summary"
+                >
+                  <Eyebrow>TL;DR</Eyebrow>
+                  <p className="text-base leading-relaxed text-slate-800">{post.summary}</p>
                 </section>
               ) : null}
 
-              <div className="lg:hidden mt-8">
-                <TableOfContents headings={headings} />
-              </div>
-
-              {/* calc_promo_inline experiment -- client leaf; null first paint (SSR + first render)
-                  so no above-the-fold layout shift. Treatment inserts the card here after hydration,
-                  between the intro section and the article prose. */}
-              <CalcPromoCard />
+              {post.image ? (
+                <img
+                  src={post.image}
+                  alt={post.altText || post.title}
+                  className="mt-10 w-full rounded-xl border border-slate-200 object-cover"
+                  width={1200}
+                  height={630}
+                />
+              ) : null}
 
               <div className="article-body prose-blog mt-10">
                 {earlyTool && earlySplit ? (
                   <>
-                    {/* Moment 1: early tool island after the first h2 (splitContentEarly
-                        guarantees a usable break for every post). */}
+                    {/* Moment 1: early tool island after the first h2. */}
                     <div dangerouslySetInnerHTML={{ __html: earlySplit.before }} />
                     <ToolIsland tool={earlyTool} />
                     {gateSplit?.after ? (
@@ -256,7 +272,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     )}
                   </>
                 ) : (
-                  /* Unmapped category fallback: previous mid-scroll behaviour. */
+                  /* Unmapped category fallback: mid-scroll behaviour. */
                   <>
                     <div dangerouslySetInnerHTML={{ __html: fallbackSplit!.before }} />
                     {fallbackSplit!.after ? (
@@ -280,83 +296,117 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 )}
               </div>
 
-              <InlinePrompt
-                source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}
-                heading="Get the Director's Brief in your inbox."
-                body={`One short email a week on UK tax for limited companies, contractors, sole traders and small businesses. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
-              />
+              <section
+                id="enquiry-form"
+                className="relative mt-16 overflow-hidden rounded-xl bg-slate-900 p-8 sm:p-10 text-white scroll-mt-24"
+                aria-labelledby="enquiry-form-heading"
+              >
+                <GeneralistBackdrop />
+                <div className="relative z-10">
+                  <h2 id="enquiry-form-heading" className="text-2xl font-bold text-white sm:text-3xl">
+                    {ctaCopy.heading}
+                  </h2>
+                  <p className="mt-4 text-base leading-relaxed text-slate-200">{ctaCopy.body}</p>
+                  {/* LeadForm labels and consent copy are slate-900 by design, so
+                      the form itself sits on a white card, not on the navy. */}
+                  <div className="mt-8 rounded-xl bg-white p-6 sm:p-8">
+                    <LeadForm redirectOnSuccess={false} submitLabel={ctaCopy.button} />
+                  </div>
+                </div>
+              </section>
 
               {post.faqs && post.faqs.length > 0 ? (
                 <section className="mt-16" aria-labelledby="faq-heading">
-                  <h2 id="faq-heading" className="text-3xl font-bold text-slate-900 mb-8">
+                  <h2 id="faq-heading" className="text-2xl font-bold text-slate-900 sm:text-4xl mb-8">
                     Frequently asked questions
                   </h2>
-                  <dl className="space-y-4">
+                  {/* Same single-open accordion as the kit FaqSection. Answers are
+                      rendered as HTML because several carry in-body links, which
+                      the kit's plain-text branch would print as escaped markup. */}
+                  <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                     {post.faqs.map((faq, i) => (
-                      <div key={i} className="border-l-4 border-slate-300 bg-slate-50 p-6">
-                        <dt className="text-lg font-bold text-slate-900">{faq.question}</dt>
-                        <dd className="mt-3 text-base text-slate-700 leading-relaxed"><span dangerouslySetInnerHTML={{ __html: faq.answer }} /></dd>
-                      </div>
+                      <AccordionItem key={i} value={`faq-${i}`} className="bg-slate-50">
+                        <AccordionTrigger>{faq.question}</AccordionTrigger>
+                        <AccordionContent>
+                          <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                        </AccordionContent>
+                      </AccordionItem>
                     ))}
-                  </dl>
+                  </Accordion>
                 </section>
               ) : null}
 
-              <aside className="mt-16 flex gap-5 items-start bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center">
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-orange-700">About the author</p>
-                  <p className="mt-1 text-lg font-bold text-slate-900">{niche.display_name}</p>
-                  <p className="mt-2 text-sm text-slate-600 leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-orange-700 hover:text-orange-800">
-                    Learn more about our team →
-                  </Link>
-                </div>
-              </aside>
-
-              <NextStepOffer />
-
-              <div className="mt-16 bg-slate-900 p-8 sm:p-10 text-white">
-                <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                  {activeCta.blog.cta_heading}
-                </h2>
-                <p className="mt-4 text-base leading-relaxed text-slate-200">
-                  {activeCta.blog.cta_body}
+              <aside className="mt-16 rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+                <Eyebrow>{isPillar ? "About this guide" : "About the author"}</Eyebrow>
+                <p className="text-lg font-bold text-slate-900">
+                  {author ? (
+                    <Link href={`/team/${author.slug}`} rel="author" className="hover:text-primary-700">
+                      {authorName}
+                    </Link>
+                  ) : (
+                    authorName
+                  )}
+                  {author?.qualifications ? (
+                    <span className="font-normal text-slate-500">, {author.qualifications}</span>
+                  ) : null}
                 </p>
-                {/* LeadForm labels/consent copy are dark by design, so it must sit on a light surface. */}
-                <div className="mt-8 bg-white p-6 sm:p-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
-                </div>
-              </div>
+                <p className="mt-1 text-sm text-slate-600">{author?.role ?? "Editorial"}</p>
+                {hasReviewer ? (
+                  <div className="mt-5 border-t border-slate-200 pt-5">
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                      Reviewed by
+                    </p>
+                    <p className="mt-1 text-base font-bold text-slate-900">
+                      <Link href={`/team/${reviewer!.slug}`} className="hover:text-primary-700">
+                        {reviewer!.name}
+                      </Link>
+                      {reviewer!.qualifications ? (
+                        <span className="font-normal text-slate-500">
+                          , {reviewer!.qualifications}
+                        </span>
+                      ) : null}
+                    </p>
+                    <p className="mt-1 text-sm text-slate-600">
+                      Technical accuracy review. Every figure, rate and procedural statement
+                      verified against current HMRC source.
+                    </p>
+                  </div>
+                ) : null}
+                <p className="mt-5 text-sm leading-relaxed text-slate-600">
+                  {niche.description} For decisions specific to your business,{" "}
+                  <Link href="/contact" className="font-semibold text-primary-700 hover:text-primary-800">
+                    book a call
+                  </Link>
+                  .
+                </p>
+                <Link
+                  href="/about"
+                  className="mt-3 inline-block py-0.5 text-sm font-semibold text-primary-700 hover:text-primary-800"
+                >
+                  Learn more about our team →
+                </Link>
+              </aside>
 
               {related.length > 0 ? (
                 <section className="mt-16" aria-labelledby="related-heading">
                   <h2 id="related-heading" className="text-2xl font-bold text-slate-900 mb-8">
-                    Related articles
+                    {isPillar ? "Other pillar guides" : "Related articles"}
                   </h2>
-                  <ul className="space-y-4">
-                    {related.map((r) => (
-                      <li key={r.slug}>
-                        <Link
-                          href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-orange-600 hover:bg-white hover:shadow-md"
-                        >
-                          <h3 className="text-lg font-bold text-slate-900">{r.title}</h3>
-                          <p className="mt-2 text-sm text-slate-600">{r.summary}</p>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  <RelatedArticles items={related} />
                 </section>
               ) : null}
+
+              {/* Personalised, and null for most readers. It sits AFTER the
+                  related grid so it can never stand between the article and the
+                  enquiry form. */}
+              <NextStepOffer />
             </div>
 
             <aside className="hidden lg:block">
-              <div className="sticky top-24">
+              {/* One sticky container owns the viewport clamp for card + TOC and
+                  scrolls internally when the pair is taller than the screen. */}
+              <div className="sticky top-24 max-h-[calc(100vh-7rem)] space-y-5 overflow-y-auto">
+                <BlogSidebarCta copy={ctaCopy} />
                 <TableOfContents headings={headings} />
               </div>
             </aside>

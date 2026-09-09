@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { getAllFundamentals, getFundamentalBySlug } from "@/lib/fundamentals";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
-import { FundamentalsRenderer } from "@/components/blog/FundamentalsRenderer";
+import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
+import { firstSentence, slugifyCategory } from "@/lib/blog";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -60,7 +61,19 @@ export default async function FundamentalPage({ params }: Props) {
   const related = getAllFundamentals()
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3)
-    .map((r) => ({ slug: r.slug, title: r.title, summary: r.summary }));
+    .map((r) => ({
+      href: `/fundamentals/${r.slug}`,
+      title: r.title,
+      excerpt: firstSentence(r.contentHtml, r.summary),
+      kind: "guide" as const,
+    }));
 
-  return <FundamentalsRenderer post={post} related={related} />;
+  return (
+    <BlogPostRenderer
+      post={post}
+      categorySlug={slugifyCategory(post.category)}
+      related={related}
+      variant="pillar"
+    />
+  );
 }
