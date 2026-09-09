@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
   // SEC-05: refuse (503) when the webhook secret is unconfigured.
   const secret = process.env.NURTURE_WEBHOOK_SECRET;
   if (!secret) {
-    console.error("[nurture/events] NURTURE_WEBHOOK_SECRET not set — refusing (SEC-05)");
+    console.error("[nurture/events] NURTURE_WEBHOOK_SECRET not set, refusing (SEC-05)");
     return NextResponse.json({ ok: false, error: "not_configured" }, { status: 503 });
   }
 

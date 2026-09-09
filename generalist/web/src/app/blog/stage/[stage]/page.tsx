@@ -46,7 +46,7 @@ const STAGES: Record<string, Stage> = {
     name: "Running a business",
     intro: "You're up and running. Now the day-to-day tax, payroll and bookkeeping decisions.",
     longIntro:
-      "Bookkeeping, payroll, VAT returns, corporation tax, dividends and director pay — the operational tax and finance decisions that come up every month, quarter or year once your business is trading.",
+      "Bookkeeping, payroll, VAT returns, corporation tax, dividends and director pay. The operational tax and finance decisions that come up every month, quarter or year once your business is trading.",
     categories: [
       "Bookkeeping and Compliance",
       "VAT and Making Tax Digital",
