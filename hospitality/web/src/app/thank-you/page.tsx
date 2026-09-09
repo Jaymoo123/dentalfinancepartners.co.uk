@@ -71,6 +71,11 @@ export default async function ThankYouPage({
             check your email and phone, and confirm to lock in your callback slot.
           </p>
           <p className="mt-3 text-sm text-neutral-500">
+            For specialist tax advisory work, including complex structuring and tax planning, we work
+            closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
+            advice, it may be their team who contacts you.
+          </p>
+          <p className="mt-3 text-sm text-neutral-500">
             Cannot see our email? Please check your spam or junk folder, and mark it as not spam so
             our messages reach you.
           </p>
