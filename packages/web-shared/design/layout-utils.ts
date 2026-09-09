@@ -20,9 +20,15 @@ export const sectionYLoose = "py-16 sm:py-20 md:py-24 lg:py-28";
 export const focusRing =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
 
-/** Primary CTA - brand background, white text */
+/** Primary CTA - brand background, white text.
+ *  The ground reads --btn-ground/--btn-ground-hover/--btn-ground-active with the
+ *  600/700/800 primary steps as fallbacks. Property's emerald-600 carries white
+ *  text at 4.54:1, but not every brand ramp does at the 600 step (orange-600 is
+ *  3.56:1), and L.2 says such sites shift the ground to the 700 step. Declaring
+ *  the three tokens in a site's :root is that shift; leaving them undeclared
+ *  keeps the 600-step behaviour byte-identically. */
 export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-primary-600 px-8 py-3.5 text-base font-bold text-white transition-all duration-150 hover:bg-primary-700 active:bg-primary-800 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
+  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-[var(--btn-ground,var(--color-primary-600))] px-8 py-3.5 text-base font-bold text-white transition-all duration-150 hover:bg-[var(--btn-ground-hover,var(--color-primary-700))] active:bg-[var(--btn-ground-active,var(--color-primary-800))] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
 
 /** Secondary - brand outline */
 export const btnSecondary =
