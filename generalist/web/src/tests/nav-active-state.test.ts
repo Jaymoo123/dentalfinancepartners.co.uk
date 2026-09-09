@@ -5,9 +5,9 @@
  * once, and the menu stops answering "where am I".
  *
  * Runs against this site's real nav data (niche.config.json navigation), the
- * same array SiteHeader renders.
+ * same array SiteHeader renders, with the registry-derived Calculators groups.
  */
 import { registerNavActiveStateGuard } from "@accounting-network/web-shared/design/guards/nav-active-state";
-import { niche } from "@/config/niche-loader";
+import { buildPrimaryNav } from "@/lib/nav";
 
-registerNavActiveStateGuard({ nav: niche.navigation });
+registerNavActiveStateGuard({ nav: buildPrimaryNav() });

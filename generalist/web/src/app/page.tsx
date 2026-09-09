@@ -12,6 +12,7 @@ import {
 } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { SignupForm } from "@/components/newsletter/SignupForm";
+import { StickyCTA } from "@/components/ui/StickyCTA";
 import { ArrowRight } from "lucide-react";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
@@ -306,6 +307,9 @@ const webPageSchema: SchemaThing = {
 export default function HomePage() {
   return (
     <>
+      {/* Homepage only, not site-wide: Property measured 586 shows / 1 click
+          for the site-wide mount and pulled it back to the homepage. */}
+      <StickyCTA />
       <JsonLd
         data={[
           // Organization + WebSite now ship site-wide from the root layout.

@@ -14,7 +14,11 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
+  "partner": {
+    "name": "regulated firms in our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
+  },
   "domain": "www.hollowaydavies.co.uk",
   "tagline": "Accountants for UK businesses of every shape",
   "description": "Holloway Davies. Fixed-fee accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",
@@ -82,46 +86,6 @@
     }
   ],
   "footer_links": [
-    {
-      "label": "Services",
-      "href": "/services"
-    },
-    {
-      "label": "Calculators",
-      "href": "/calculators"
-    },
-    {
-      "label": "Guides",
-      "href": "/fundamentals"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
-      "label": "Locations",
-      "href": "/locations"
-    },
-    {
-      "label": "Incorporation",
-      "href": "/incorporation"
-    },
-    {
-      "label": "R&D tax credits",
-      "href": "/r-and-d-credits"
-    },
-    {
-      "label": "Glossary",
-      "href": "/glossary"
-    },
-    {
-      "label": "About",
-      "href": "/about"
-    },
-    {
-      "label": "Contact",
-      "href": "/contact"
-    },
     {
       "label": "Privacy policy",
       "href": "/privacy-policy"

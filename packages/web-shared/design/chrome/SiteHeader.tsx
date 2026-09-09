@@ -19,6 +19,30 @@ export type WordmarkIcon = ComponentType<{
 
 export type NavCta = { label: string; href: string };
 
+/**
+ * `data-cta` ids for the three header CTA slots.
+ *
+ * Defaults are Property's canonical ids, so every existing consumer renders
+ * byte-identical markup without passing this. It exists because a site with
+ * live `vw_cta_performance` history under different ids cannot rename them
+ * without breaking its own reporting series: generalist keeps
+ * `header_nav_primary` / `header_mobile_primary` / `header_nav_secondary`.
+ */
+export type HeaderCtaIds = {
+  /** Desktop primary button. Default `header_book`. */
+  primary?: string;
+  /** Drawer primary button. Default `header_book_mobile`. */
+  mobilePrimary?: string;
+  /** xl-only secondary link. Default `header_contact`. */
+  secondary?: string;
+};
+
+const DEFAULT_CTA_IDS = {
+  primary: "header_book",
+  mobilePrimary: "header_book_mobile",
+  secondary: "header_contact",
+} as const;
+
 export type SiteHeaderProps = {
   nav?: NavItem[];
   /**
@@ -33,6 +57,8 @@ export type SiteHeaderProps = {
   ctaSecondary?: NavCta;
   /** Written to `data-cta-variant` only; does not affect render. Replaces `niche.cta.variant`. */
   ctaVariant?: string;
+  /** Per-site `data-cta` ids; omit for Property's canonical ids. See `HeaderCtaIds`. */
+  ctaIds?: HeaderCtaIds;
   /** Replaces `@/components/brand/BrandWordmarkHomeLink`'s icon (props over import, T4/appendix B). */
   wordmarkIcon: WordmarkIcon;
   /** Replaces `BrandWordmarkHomeLink`'s `WORDMARK_TOP` constant. */
@@ -259,10 +285,12 @@ export function SiteHeader({
   ctaPrimary,
   ctaSecondary,
   ctaVariant,
+  ctaIds,
   wordmarkIcon,
   wordmarkTop,
   wordmarkBottom,
 }: SiteHeaderProps) {
+  const cta = { ...DEFAULT_CTA_IDS, ...ctaIds };
   // Falls back to the caller-supplied fallbackNav so the header still renders
   // if a route mounts it without the server-built list (which is the only place
   // the Calculators `groups` come from).
@@ -343,7 +371,7 @@ export function SiteHeader({
           {ctaSecondary ? (
             <Link
               href={ctaSecondary.href}
-              data-cta="header_contact"
+              data-cta={cta.secondary}
               data-cta-placement="header"
               data-cta-goal={ctaSecondary.href.startsWith("/contact") ? "form" : "pricing"}
               data-cta-variant={ctaVariant}
@@ -371,7 +399,7 @@ export function SiteHeader({
               already exist; the total is unchanged and the split gets truer. */}
           <Link
             href={ctaPrimary.href}
-            data-cta="header_book"
+            data-cta={cta.primary}
             data-cta-placement="header"
             data-cta-goal={ctaPrimary.href.startsWith("/contact") ? "form" : "pricing"}
             data-cta-variant={ctaVariant}
@@ -508,7 +536,7 @@ export function SiteHeader({
             <div className="border-t border-slate-200 p-3">
               <Link
                 href={ctaPrimary.href}
-                data-cta="header_book_mobile"
+                data-cta={cta.mobilePrimary}
                 data-cta-placement="mobile_menu"
                 data-cta-goal={ctaPrimary.href.startsWith("/contact") ? "form" : "pricing"}
                 data-cta-variant={ctaVariant}

@@ -1,7 +1,7 @@
 # GENERALIST DESIGN DELTA
 Standard: docs/_engines/PROPERTY_STANDARD_ROLLOUT.md appendix + docs/property/DESIGN_SYSTEM.md §0.
 An empty section means: Property standard, no exception.
-Status 2026-09-09: DRAFT, awaiting the owner swatch turn. Rows marked (pending) are the sign-off items.
+Status 2026-09-09: APPROVED. Owner: "go with all recommendations" (same day). Every (pending) row below is TAKEN as recommended; dates in section 3/4.
 
 ## 1. Brand tokens (the seven swap points)
 
@@ -18,13 +18,13 @@ primary ramp:        orange — Tailwind 4 oklch, verbatim from node_modules/tai
   --color-primary-900: oklch(40.8% 0.123 38.172)    /* #7c2d12 */
   --color-primary-950: oklch(26.6% 0.079 36.259)    /* #431407 */
 
-neutral ramp:        keep generalist warm neutral for text/hairlines (recommended; pending)
+neutral ramp:        keep generalist warm neutral for text/hairlines (APPROVED 2026-09-09)
 dark ground:         slate-900 #0f172a (recommended even under warm neutrals — the kit's navy
-                     components are unparameterised; pending)
-warning ramp:        off amber/orange (owner instruction 2026-09-09). Recommended = C1
+                     components are unparameterised; APPROVED 2026-09-09)
+warning ramp:        off amber/orange. APPROVED 2026-09-09 = C1
                      violet-700 -> fuchsia-700 -> red-600 -> red-800 with on-dark variants
                      violet-400 / fuchsia-400 / red-400. Full measurements in
-                     _port/DISPOSITION_SLICE3.md §8. (pending)
+                     _port/DISPOSITION_SLICE3.md §8.
 semantic overrides:  --accent-strong orange-600 -> orange-700 for TEXT use (L.2 600-step rule;
                      fixes a live 3.56:1 failure on every article and legal link);
                      --primary stays orange-500 for non-text brand surfaces
@@ -37,15 +37,14 @@ button constants:    box model per A.5, colour tokens only. btnPrimary ground = 
                      (recommended B1: white-on-orange fails 4.5:1 at every step below 700;
                      current bg-orange-500 = 2.80:1, a live WCAG failure). focusRing =
                      outline-primary-600. Real btnOnDark lands; ink outline renamed btnOnCream.
-                     (pending)
-wordmark:            icon = Briefcase (proposed; fallback Building2); line1 = "HOLLOWAY DAVIES";
-                     line2 = owner picks (never "generalist"). (pending)
+wordmark:            icon = Briefcase; line1 = "HOLLOWAY DAVIES"; line2 = "ACCOUNTANTS"
+                     (APPROVED 2026-09-09, all-recommendations grant)
 backdrop motif:      ruled ledger grid (proposed): horizontal rules ~28px pitch + sparse column
                      rules + 2-3 tick-mark entries; navy tone stroke-primary-400 @ .18, cream
-                     tone stroke-primary-600 @ .10; E geometry (right 55%, masked). (pending)
+                     tone stroke-primary-600 @ .10; E geometry (right 55%, masked). APPROVED 2026-09-09
 cream surface:       #fafaf7 (generalist's own; Property's hero cream #fbfaf7 NOT synced)
 radius:              --radius: 0rem; --radius-xl: calc(var(--radius) + 4px) = 4px (fixes the
-                     live 0px computation); --btn-radius: var(--btn-radius: var(--radius-xl))
+                     live 0px computation); --btn-radius: var(--radius-xl)
                      added (kit buttons currently render as 9999px pills here)
 glow channel tokens: --brand-glow 249 115 22; --brand-glow-deep 234 88 12;
                      --brand-glow-edge 251 146 60; --brand-glow-faint 255 237 213
@@ -85,35 +84,47 @@ does not exist (A.8); values hand-computed, re-derivable from the formula.
 
 | deviation | owner decision + date |
 |---|---|
-| warm neutral text/hairlines retained while kit components ship slate | (pending) |
-| dark ground adopts slate-900 while text neutrals stay warm | (pending) |
-| btnPrimary ground shifts to primary-700 (white-label contrast) | (pending) |
-| duty/penalty ramp re-derived off amber/orange (L.2 collision; owner instruction to move it 2026-09-09; ramp choice pending) | (pending) |
-| StickyCTA keeps generalist's min(500px, 25%) threshold vs Property's 30% | (pending) |
-| ExampleFigureNote wording on official-statistics research pages (label prop) | (pending) |
-| cream surface #fafaf7 vs Property's #fbfaf7 | (pending) |
+| warm neutral text/hairlines retained while kit components ship slate | APPROVED 2026-09-09 |
+| dark ground adopts slate-900 while text neutrals stay warm | APPROVED 2026-09-09 |
+| btnPrimary ground shifts to primary-700 (white-label contrast) | APPROVED 2026-09-09 |
+| duty/penalty ramp = violet-700 / fuchsia-700 / red-600 / red-800 (on-dark: violet-400 / fuchsia-400 / red-400) | APPROVED 2026-09-09 |
+| StickyCTA keeps generalist's min(500px, 25%) threshold vs Property's 30% | APPROVED 2026-09-09 |
+| ExampleFigureNote label prop on official-statistics research pages | APPROVED 2026-09-09 |
+| cream surface #fafaf7 vs Property's #fbfaf7 | APPROVED 2026-09-09 |
 
 ## 4. Owner-input state (appendix K rows)
 
 | Input | Class | State 2026-09-09 |
 |---|---|---|
-| Brand colour ramp sign-off | BLOCKER | swatch + §2 table drafted, awaiting yes |
-| Wordmark icon | BLOCKER | Briefcase proposed, Building2 fallback |
-| Wordmark line2 descriptor | BLOCKER | candidates listed, owner picks |
+| Brand colour ramp sign-off | BLOCKER | APPROVED 2026-09-09 (all-recommendations grant) |
+| Wordmark icon | BLOCKER | APPROVED 2026-09-09: Briefcase |
+| Wordmark line2 descriptor | BLOCKER | APPROVED 2026-09-09: "ACCOUNTANTS" (recommendation default) |
 | Favicon set | COSMETIC | keep existing, never generate |
 | Hero imagery | COSMETIC | none needed; ledger-grid motif only (photo heroes retire) |
 | Phone number | BLOCKER for schema/copy | use niche.config value; no public telephone in schema |
 | GA4 id | INFO | unchanged |
 | Font change | BLOCKER | NOT proposed: Geist retained |
-| Capture-surface scope | BLOCKER | full list in the owner bundle (ResultGate set, ~30 closing panels, newsletter demotions, redirect flips, StickyCTA scope) |
+| Capture-surface scope | BLOCKER | APPROVED 2026-09-09: ResultGate set (+index copy softened), ~30 closing panels, newsletter demotions, redirect flips, StickyCTA homepage-only, CalcPromoCard killed, NextStepOffer kept restyled |
 | Deploy approval | BLOCKER | owner-triggered, every time |
+
+## 4b. Bundle decisions taken with the same grant (2026-09-09)
+
+- Hero live-pulse badge subject: MTD for sole traders (figures re-verified against house_positions at build).
+- Testimonials: OMITTED until the owner supplies real anonymisable quotes; never invented.
+- /team/[slug]: DELETE route + Person schema (faceless-authority rule; route was orphaned).
+- Blog: CalcPromoCard killed (experiment closed); NextStepOffer kept, restyled.
+- ResultGate ships estate-wide on calculator pages; /calculators standfirst softened to
+  "no sign-up, and you can always skip straight to the number".
+- data-cta ids: generalist's existing ids KEPT, canonical mapping recorded (no analytics forks).
+- employer-NI: bespoke multi-employee page is canonical; the registry duplicate is resolved in
+  Phase 4 without breaking the live /embed/employer-ni-calculator URL (usage checked first).
 
 ## 5. L.3 ramp registry
 
 | Site | Primary ramp | Approved |
 |---|---|---|
 | Property | emerald | live |
-| generalist | orange | pending |
+| generalist | orange | APPROVED 2026-09-09 |
 
 Collision note: construction-cis's brand is also #f97316. Unavoidable (both incumbent live brands
 under the keep-default). Recorded so it never becomes precedent; the two sites' WARNING ramps must

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { track } from "@accounting-network/web-shared/analytics/track";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 type Variant = "card" | "inline" | "minimal";
 
@@ -19,6 +20,12 @@ type Props = {
   successMessage?: string;
   /** Retained for type compatibility with shared call sites; ignored. */
   showAgencyType?: boolean;
+  /**
+   * Ground the form sits on. "light" (default) is unchanged for every existing
+   * call site; "dark" recolours only the small print and the submit button so
+   * the form clears contrast on the navy footer. Fields stay white (D.1).
+   */
+  tone?: "light" | "dark";
 };
 
 export function SignupForm({
@@ -28,7 +35,9 @@ export function SignupForm({
   body = "A weekly note on UK business tax, structure, payroll and cash. Plain text, one CTA, unsubscribe one click.",
   ctaLabel = "Subscribe",
   successMessage = "Check your inbox to confirm your subscription.",
+  tone = "light",
 }: Props) {
+  const dark = tone === "dark";
   const [email, setEmail] = useState("");
   // Honeypot, humans never fill this; bots typically do. Filled => silent reject.
   const [website, setWebsite] = useState("");
@@ -93,8 +102,8 @@ export function SignupForm({
         : successMessage;
     return (
       <div className={containerClass} role="status" aria-live="polite">
-        <p className="text-base font-medium text-neutral-900">{headline}</p>
-        <p className="mt-2 text-sm text-neutral-600">{body}</p>
+        <p className={`text-base font-medium ${dark ? "text-white" : "text-neutral-900"}`}>{headline}</p>
+        <p className={`mt-2 text-sm ${dark ? "text-slate-300" : "text-neutral-600"}`}>{body}</p>
       </div>
     );
   }
@@ -137,14 +146,18 @@ export function SignupForm({
         <button
           type="submit"
           disabled={state === "submitting"}
-          className="inline-flex min-h-12 items-center justify-center bg-orange-500 px-6 py-3 text-sm font-medium text-white tracking-wide transition-colors hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+          className={
+            dark
+              ? `${btnPrimary} min-h-12 px-6 py-3 text-sm`
+              : "inline-flex min-h-12 items-center justify-center bg-orange-500 px-6 py-3 text-sm font-medium text-white tracking-wide transition-colors hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+          }
         >
           {state === "submitting" ? "Subscribing..." : ctaLabel}
         </button>
       </div>
       <label
         htmlFor={`newsletter-consent-${source}`}
-        className="mt-3 flex items-start gap-2 text-xs leading-relaxed text-neutral-500"
+        className={`mt-3 flex items-start gap-2 text-xs leading-relaxed ${dark ? "text-slate-300" : "text-neutral-500"}`}
       >
         <input
           id={`newsletter-consent-${source}`}
@@ -157,12 +170,12 @@ export function SignupForm({
         <span>{NEWSLETTER_CONSENT_TEXT}</span>
       </label>
       {state === "err" && (
-        <p className="mt-3 text-sm text-red-600" role="alert">
+        <p className={`mt-3 text-sm ${dark ? "text-red-300" : "text-red-600"}`} role="alert">
           {error}
         </p>
       )}
       {variant !== "minimal" && (
-        <p className="mt-4 text-xs text-neutral-500">
+        <p className={`mt-4 text-xs ${dark ? "text-slate-400" : "text-neutral-500"}`}>
           We only use your email address to send you the newsletter. Unsubscribe at any time.
         </p>
       )}

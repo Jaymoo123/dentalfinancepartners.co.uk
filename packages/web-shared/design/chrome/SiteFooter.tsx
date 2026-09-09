@@ -34,6 +34,24 @@ export type SiteFooterProps = {
   backdrop?: ReactNode;
   /** Replaces `@/components/analytics/ConsentToggle` ("Do not track me"). */
   consentToggle: ReactNode;
+  /**
+   * Optional block rendered under the description in the brand column, for a
+   * site whose newsletter signup lives in the footer. Default null, so nothing
+   * changes for a consumer that does not pass it. The slot is passed already
+   * styled for the navy ground; nothing here restyles it.
+   */
+  newsletterSlot?: ReactNode;
+  /**
+   * Nav href the "Resources" column derives its children from. Default
+   * "/landlord-tax" (Property's resources hub); generalist's is "/fundamentals".
+   */
+  resourcesHref?: string;
+  /**
+   * "Company" column items. Default = Property's About / Contact / Locations /
+   * Book a consultation, so an existing consumer is unaffected. Override where
+   * a site's routes differ (generalist has no /book).
+   */
+  companyItems?: Array<{ label: string; href: string }>;
 };
 
 type FooterColumn = { title: string; items: Array<{ label: string; href: string }> };
@@ -48,7 +66,19 @@ type FooterColumn = { title: string; items: Array<{ label: string; href: string 
  * every calculator's compute function to the client. Without it we still render,
  * just with a single "All calculators" link.
  */
-function buildFooterColumns(nav: NavItem[]): FooterColumn[] {
+const DEFAULT_RESOURCES_HREF = "/landlord-tax";
+const DEFAULT_COMPANY_ITEMS = [
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+  { label: "Locations", href: "/locations" },
+  { label: "Book a consultation", href: "/book" },
+];
+
+function buildFooterColumns(
+  nav: NavItem[],
+  resourcesHref: string,
+  companyItems: Array<{ label: string; href: string }>,
+): FooterColumn[] {
   const find = (href: string) => nav.find((item) => item.href === href);
   // Keeps the self-referential child ("All services", "Landlord tax guide"):
   // the column headings are not links, so dropping it would leave the hub pages
@@ -63,20 +93,12 @@ function buildFooterColumns(nav: NavItem[]): FooterColumn[] {
 
   return [
     { title: "Services", items: childrenOf("/services") },
-    { title: "Resources", items: childrenOf("/landlord-tax") },
+    { title: "Resources", items: childrenOf(resourcesHref) },
     {
       title: "Calculators",
       items: [...calcLeads, { label: "All calculators", href: "/calculators" }],
     },
-    {
-      title: "Company",
-      items: [
-        { label: "About", href: "/about" },
-        { label: "Contact", href: "/contact" },
-        { label: "Locations", href: "/locations" },
-        { label: "Book a consultation", href: "/book" },
-      ],
-    },
+    { title: "Company", items: companyItems },
   ].filter((column) => column.items.length > 0);
 }
 
@@ -93,9 +115,12 @@ export function SiteFooter({
   wordmarkBottom,
   backdrop,
   consentToggle,
+  newsletterSlot = null,
+  resourcesHref = DEFAULT_RESOURCES_HREF,
+  companyItems = DEFAULT_COMPANY_ITEMS,
 }: SiteFooterProps) {
   const year = new Date().getFullYear();
-  const columns = buildFooterColumns(nav ?? fallbackNav ?? []);
+  const columns = buildFooterColumns(nav ?? fallbackNav ?? [], resourcesHref, companyItems);
   const homeLabel = `${wordmarkTop} ${wordmarkBottom}, home`;
   return (
     <footer className="relative overflow-hidden bg-slate-900 text-white">
@@ -124,6 +149,7 @@ export function SiteFooter({
             <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-300">
               {description}
             </p>
+            {newsletterSlot}
           </div>
 
           <nav aria-label="Footer" className="grid min-w-0 grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">

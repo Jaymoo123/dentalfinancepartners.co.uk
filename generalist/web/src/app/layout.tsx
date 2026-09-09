@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
+import { buildPrimaryNav } from "@/lib/nav";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
@@ -78,6 +79,21 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="antialiased font-sans">
+        {/* Without JS the eyebrow rules can never be released by their observer,
+            so show them complete rather than collapsed. Must live inside <body>:
+            React cannot render <noscript> as a direct child of <html>. */}
+        <noscript>
+          <style>{`.eyebrow-rule[data-draw="off"] { transform: none; }
+            [data-draw="off"] .tick-draw { stroke-dashoffset: 0; }
+            [data-draw="off"] .penalty-ladder-rail { transform: none; }
+            [data-draw="off"] .penalty-ladder-rail-v { transform: none; }
+            [data-draw="off"] .penalty-ladder-step { opacity: 1; transform: none; }
+            [data-draw="off"] .rate-wedge-fill { transform: none; }
+            [data-draw="off"] .profit-stack-seg { transform: none; }
+            [data-draw="off"] .profit-stack-marker { opacity: 1; }
+            [data-draw="off"] .story-numeral-rule { transform: none; }
+            [data-draw="off"] .story-numeral { color: oklch(0.596 0.145 163.225); text-shadow: 0 0 18px rgb(16 185 129 / 0.45); }`}</style>
+        </noscript>
         {/* Site-wide entity graph: canonical Organization (+ Companies House
             sameAs) and WebSite nodes emitted once here so every page carries
             the #organization / #website @ids AI knowledge-graph crawlers use. */}
@@ -101,7 +117,7 @@ export default function RootLayout({
           >
             <ConsentedScripts />
             <IntentProvider>
-              <PageShell>{children}</PageShell>
+              <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />
               <DeepScrollModal />
               {/* Specialist widget: fixed bottom-right, print:hidden, Phase-0 deterministic */}
