@@ -2,6 +2,7 @@
 @import "tailwindcss" source("..");
 @source "../../../../packages/web-shared";
 @import "tw-animate-css";
+@import "@accounting-network/web-shared/design/globals-standard.css";
 
 /* ============================================================
    DESIGN SYSTEM
@@ -16,13 +17,33 @@
   --surface-elevated: #ffffff;
   --ink: #0a0a0a;
   --ink-soft: #525252;
-  --ink-whisper: #a3a3a3;
   --hairline: #e5e5e5;
 
   /* Brand accent (orange family) */
   --accent: #f97316;          /* orange-500 */
-  --accent-strong: #ea580c;   /* orange-600, hover */
+  /* orange-700, not orange-600: orange-600 on white is 3.56:1 and fails the 4.5:1
+     text floor everywhere this token colours text (.prose-blog links, legal links).
+     DESIGN_DELTA.md section 1 "semantic overrides". */
+  --accent-strong: #c2410c;
   --accent-whisper: #fff7ed;  /* orange-50, subtle bg tint */
+
+  /* Button ground trio, read by the shared design-kit button recipes.
+     orange-700/800/900: white label on orange-500/600 fails 4.5:1 (2.80/3.56),
+     so the button ground sits at the 700 step per DESIGN_DELTA (owner-approved). */
+  --btn-ground: #c2410c;
+  --btn-ground-hover: #9a3412;
+  --btn-ground-active: #7c2d12;
+
+  /* Cream hero surface for the design kit's heroCreamSurface (generalist keeps
+     its own #fafaf7 rather than Property's #fbfaf7; recorded in DESIGN_DELTA). */
+  --hero-cream: #fafaf7;
+
+  /* Brand-glow channels for the kit's glow rules ("R G B"). Orange ramp steps
+     500 / 600 / 400 / 100; alphas live in globals-standard.css. */
+  --brand-glow: 249 115 22;
+  --brand-glow-deep: 234 88 12;
+  --brand-glow-edge: 251 146 60;
+  --brand-glow-faint: 255 237 213;
 
   /* Status */
   --destructive: #dc2626;
@@ -79,12 +100,29 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius));
-  --radius-md: calc(var(--radius));
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius));
+  /* --radius-* and --btn-radius come from the shared design layer
+     (globals-standard.css): --radius-xl = calc(var(--radius) + 4px) = 4px,
+     THE house radius. The old local lines pinned everything to 0px. */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+/* Brand ramp for the design kit's primary-* utilities (O.0b mechanism).
+   Tailwind 4 orange in oklch, copied verbatim from tailwindcss/theme.css so
+   computed styles byte-match the stock ramp. Coexists with --color-primary
+   (the shadcn alias) above. */
+@theme {
+  --color-primary-50: oklch(98% 0.016 73.684);
+  --color-primary-100: oklch(95.4% 0.038 75.164);
+  --color-primary-200: oklch(90.1% 0.076 70.697);
+  --color-primary-300: oklch(83.7% 0.128 66.29);
+  --color-primary-400: oklch(75% 0.183 55.934);
+  --color-primary-500: oklch(70.5% 0.213 47.604);
+  --color-primary-600: oklch(64.6% 0.222 41.116);
+  --color-primary-700: oklch(55.3% 0.195 38.402);
+  --color-primary-800: oklch(47% 0.157 37.304);
+  --color-primary-900: oklch(40.8% 0.123 38.172);
+  --color-primary-950: oklch(26.6% 0.079 36.259);
 }
 
 /* ============================================================
@@ -118,7 +156,7 @@ body {
   color: var(--ink);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.6; /* A.3 body rhythm (was 1.7) */
   font-feature-settings: "ss01" on, "cv11" on;
 }
 
@@ -127,17 +165,12 @@ body {
    Headings: tight tracking, big weight contrast against body.
    ============================================================ */
 
+/* Heading weight (700), letter-spacing (-0.02em) and the unlayered line-height
+   1.2 come from the shared design layer (globals-standard.css); read its long
+   comment before merging anything back here. Only the ink colour is local. */
 @layer base {
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
     color: var(--ink);
-  }
-
-  h1 {
-    letter-spacing: -0.03em;
-    font-weight: 600;
   }
 }
 
@@ -208,7 +241,8 @@ body {
 }
 
 .prose-blog a:hover {
-  color: var(--accent);
+  /* orange-800; hovering to orange-500 (2.80:1) would fail the text floor */
+  color: #9a3412;
 }
 
 .prose-blog ul,
