@@ -75,6 +75,17 @@ export const CTA_BY_CATEGORY: Record<string, BlogCtaCopy> = {
   },
 };
 
+/**
+ * The three proof rows every LeadCTAPanel on the site carries. One copy so the
+ * blog index, the eleven hubs, the four stage pages, /fundamentals, /guides and
+ * /glossary cannot drift from the homepage's closing band.
+ */
+export const LEAD_PROOF_POINTS = [
+  { title: "24-hour response, usually same day", detail: "You hear back from a person, not an autoresponder" },
+  { title: "Fixed fees, agreed before any work", detail: "In writing, before anything starts" },
+  { title: "One named accountant, not a team inbox", detail: "The same person every time you call" },
+];
+
 /** Copy for a raw frontmatter category label, falling back to the niche default. */
 export function blogCtaCopy(rawCategory: string): BlogCtaCopy {
   const bySlug = CTA_BY_CATEGORY[slugifyCategory(rawCategory)];

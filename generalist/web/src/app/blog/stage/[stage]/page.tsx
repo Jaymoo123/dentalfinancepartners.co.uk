@@ -1,91 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing, btnPrimary, btnOnDark } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts, calculateReadTime } from "@/lib/blog";
-import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import type { BlogPost } from "@/types/blog";
-
-function slugifyCategory(category: string): string {
-  return category
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-type Stage = {
-  slug: string;
-  name: string;
-  intro: string;
-  longIntro: string;
-  // Categories that count as "this stage" content. Each post can appear in
-  // multiple stages — that's intentional, the same content serves different
-  // intents.
-  categories: string[];
-  // Title-level keyword filters (lowercase substrings) that promote a post
-  // into this stage regardless of its tax category.
-  titleKeywords?: string[];
-};
-
-const STAGES: Record<string, Stage> = {
-  "starting-a-business": {
-    slug: "starting-a-business",
-    name: "Starting a business",
-    intro: "You're about to register or just have.",
-    longIntro:
-      "If you're deciding between sole trader and limited company, registering for self-assessment, incorporating, or thinking about VAT registration for the first time, these are the articles to read first.",
-    categories: ["Incorporation and Structure", "Sole Trader and Self Employment"],
-    titleKeywords: ["register", "set up", "start", "incorporat", "sole trader vs", "first 90 days", "company formation"],
-  },
-  "running-a-business": {
-    slug: "running-a-business",
-    name: "Running a business",
-    intro: "You're up and running. Now the day-to-day tax, payroll and bookkeeping decisions.",
-    longIntro:
-      "Bookkeeping, payroll, VAT returns, corporation tax, dividends and director pay. The operational tax and finance decisions that come up every month, quarter or year once your business is trading.",
-    categories: [
-      "Bookkeeping and Compliance",
-      "VAT and Making Tax Digital",
-      "Payroll and PAYE",
-      "Corporation Tax",
-      "Director Pay and Dividends",
-      "Limited Company Tax",
-    ],
-  },
-  "scaling-a-business": {
-    slug: "scaling-a-business",
-    name: "Scaling a business",
-    intro: "You're hiring, claiming R&D, restructuring, or considering a holding company.",
-    longIntro:
-      "Once your business has stable trading profits, you face a different set of tax questions: how to structure for growth, when R&D credits are worth claiming, how to add directors and shareholders, when a holding company makes sense, and how to plan for the next stage.",
-    categories: ["R&D Tax Credits", "Incorporation and Structure"],
-    titleKeywords: ["hiring", "holding company", "alphabet share", "growth", "restructur", "r&d", "scaling", "associated compan"],
-  },
-  "exiting-a-business": {
-    slug: "exiting-a-business",
-    name: "Exiting a business",
-    intro: "You're selling, winding down, or planning your exit in the next 18-24 months.",
-    longIntro:
-      "BADR planning, MVL vs strike-off, earn-out structures, goodwill valuation, due diligence preparation. The decisions you make 12-24 months before exit are where the real tax saving (or loss) happens.",
-    categories: ["Exit and Capital Gains"],
-    titleKeywords: ["badr", "exit", "selling", "mvl", "members voluntary", "earn-out", "goodwill", "due diligence", "close a limited"],
-  },
-};
-
+import { getAllPosts, calculateReadTime, slugifyCategory } from "@/lib/blog";
+import { BlogListWithSearch } from "@accounting-network/web-shared/design/blog/BlogListWithSearch";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { BLOG_STAGES, BLOG_STAGE_LIST, postMatchesStage } from "@/lib/blog-stages";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-cta-map";
+import { JsonLd, buildCollectionPage } from "@/lib/schema";
 
 export async function generateStaticParams() {
-  return Object.keys(STAGES).map((stage) => ({ stage }));
+  return Object.keys(BLOG_STAGES).map((stage) => ({ stage }));
 }
 
 type Props = { params: Promise<{ stage: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { stage } = await params;
-  const s = STAGES[stage];
+  const s = BLOG_STAGES[stage];
   if (!s) return { title: "Stage not found" };
   const url = `${siteConfig.url}/blog/stage/${stage}`;
   return {
@@ -102,31 +39,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function postMatchesStage(post: BlogPost, stage: Stage): boolean {
-  if (stage.categories.includes(post.category)) return true;
-  if (stage.titleKeywords) {
-    const t = (post.title + " " + post.summary).toLowerCase();
-    if (stage.titleKeywords.some((k) => t.includes(k))) return true;
-  }
-  return false;
-}
-
 export default async function BlogStagePage({ params }: Props) {
   const { stage } = await params;
-  const s = STAGES[stage];
+  const s = BLOG_STAGES[stage];
   if (!s) notFound();
 
   const allPosts = getAllPosts();
-  const filtered = allPosts.filter((p) => postMatchesStage(p, s));
-  const enriched = filtered.map((p) => ({ ...p, categorySlug: slugifyCategory(p.category) }));
+  const matched = allPosts.filter((p) => postMatchesStage(p, s));
+
+  // Projection: contentHtml never crosses into the client payload.
+  const items = matched.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    summary: p.summary,
+    category: p.category,
+    categorySlug: slugifyCategory(p.category),
+    date: p.date,
+  }));
 
   const readTimes = new Map<string, number>();
-  for (const p of enriched) {
+  for (const p of matched) {
     readTimes.set(p.slug, calculateReadTime(p.contentHtml));
   }
 
   const categoryCounts = new Map<string, number>();
-  for (const p of enriched) {
+  for (const p of matched) {
     categoryCounts.set(p.category, (categoryCounts.get(p.category) || 0) + 1);
   }
   const categories = Array.from(categoryCounts.entries()).map(([name, count]) => ({
@@ -135,43 +72,75 @@ export default async function BlogStagePage({ params }: Props) {
     count,
   }));
 
+  const collectionSchema = buildCollectionPage({
+    name: `${s.name} articles`,
+    description: s.longIntro,
+    path: `/blog/stage/${stage}`,
+  });
+
+  const chip = `inline-flex min-h-12 items-center gap-2 rounded-xl border px-5 py-3 text-sm font-bold shadow-sm transition-all ${focusRing}`;
+
   return (
     <>
-      <section className={`${sectionY} bg-[#fafaf7]`}>
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Insights", href: "/blog" },
-              { label: "By stage", href: "/blog/stage" },
-              { label: s.name },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
-              {s.intro}
-            </p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+      <JsonLd data={[collectionSchema]} />
+
+      <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
+        <GeneralistBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Breadcrumb
+              siteUrl={siteConfig.url}
+              onDark
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Insights", href: "/blog" },
+                { label: "By stage", href: "/blog/stage" },
+                { label: s.name },
+              ]}
+            />
+            <Eyebrow onDark>{s.intro}</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl lg:text-6xl">
               {s.name}
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600 max-w-2xl">
-              {s.longIntro}
-            </p>
+            <p className="mt-4 text-base leading-7 text-white/90 sm:mt-6 sm:text-lg">{s.longIntro}</p>
+            <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
+              <Link
+                href="#enquiry-form"
+                data-cta={`blog_stage_${s.slug}_book`}
+                data-cta-placement="hero"
+                data-cta-goal="form"
+                className={btnPrimary}
+              >
+                {s.cta.button}
+              </Link>
+              <Link
+                href="#articles"
+                data-cta={`blog_stage_${s.slug}_articles`}
+                data-cta-placement="hero"
+                className={btnOnDark}
+              >
+                Browse {items.length} {items.length === 1 ? "article" : "articles"}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="border-y border-neutral-200 bg-white">
+      <section className="border-b border-slate-200 bg-white py-8 sm:py-10">
         <div className={siteContainerLg}>
-          <nav aria-label="Browse by stage" className="flex flex-wrap gap-2 py-6">
-            {Object.values(STAGES).map((stg) => (
+          <Eyebrow>Other stages</Eyebrow>
+          <nav aria-label="Browse by stage" className="flex flex-wrap gap-3">
+            {BLOG_STAGE_LIST.map((stg) => (
               <Link
                 key={stg.slug}
                 href={`/blog/stage/${stg.slug}`}
+                aria-current={stg.slug === s.slug ? "page" : undefined}
+                data-cta={`blog_stage_switch_${stg.slug}`}
+                data-cta-placement="stage_switcher"
                 className={
                   stg.slug === s.slug
-                    ? "inline-flex items-center gap-2 border border-orange-600 bg-orange-50 px-3 py-1.5 text-sm font-semibold text-orange-700"
-                    : "inline-flex items-center gap-2 border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium text-neutral-700 transition-colors hover:border-orange-600 hover:bg-orange-50 hover:text-orange-700"
+                    ? `${chip} border-primary-600 bg-primary-50 text-primary-800`
+                    : `${chip} border-slate-200 bg-white text-slate-900 hover:border-primary-600 hover:text-primary-700 hover:shadow-md`
                 }
               >
                 {stg.name}
@@ -179,7 +148,9 @@ export default async function BlogStagePage({ params }: Props) {
             ))}
             <Link
               href="/blog"
-              className="ml-2 inline-flex items-center gap-2 border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium text-neutral-700 transition-colors hover:border-orange-600 hover:bg-orange-50 hover:text-orange-700"
+              data-cta="blog_stage_switch_all"
+              data-cta-placement="stage_switcher"
+              className={`${chip} border-slate-200 bg-white text-slate-900 hover:border-primary-600 hover:text-primary-700 hover:shadow-md`}
             >
               All articles
             </Link>
@@ -187,17 +158,47 @@ export default async function BlogStagePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-[#fafaf7] py-12 sm:py-16">
+      <section id="articles" className="scroll-mt-24 bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <p className="mb-6 text-sm text-neutral-600 font-mono">
-            {enriched.length} article{enriched.length !== 1 ? "s" : ""} matched for {s.name.toLowerCase()}
-          </p>
-          <BlogListWithSearch
-            posts={enriched}
-            categories={categories}
-            readTimes={readTimes}
-            activeCategory={undefined}
-          />
+          <Eyebrow>The library</Eyebrow>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-2">
+            {items.length} article{items.length !== 1 ? "s" : ""} for {s.name.toLowerCase()}
+          </h2>
+          <div className="mt-8">
+            <BlogListWithSearch posts={items} categories={categories} readTimes={readTimes} />
+          </div>
+        </div>
+      </section>
+
+      <div id="enquiry-form" className="scroll-mt-24">
+        <LeadCTAPanel
+          title={s.cta.heading}
+          description={s.cta.body}
+          proofPoints={LEAD_PROOF_POINTS}
+          form={<LeadForm submitLabel={s.cta.button} redirectOnSuccess={false} />}
+          backdrop={<GeneralistBackdrop />}
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+        />
+      </div>
+
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Keep exploring</Eyebrow>
+          <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:text-4xl">Browse by topic</h2>
+          <div className="flex flex-wrap gap-3">
+            {categories.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/blog/${c.slug}`}
+                data-cta={`blog_stage_topic_${c.slug}`}
+                data-cta-placement="topic_tail"
+                className={`${chip} border-slate-200 bg-white text-slate-900 hover:border-primary-600 hover:text-primary-700 hover:shadow-md`}
+              >
+                {c.name}
+                <span className="text-xs font-semibold text-slate-500">{c.count}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </>

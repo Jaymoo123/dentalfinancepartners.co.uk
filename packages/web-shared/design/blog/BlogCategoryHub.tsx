@@ -16,6 +16,12 @@ import {
 export type HubSection = { heading: string; paragraphs: string[] };
 export type HubCta = { heading: string; body: string; submitLabel: string };
 
+const PROPERTY_PROOF_POINTS = [
+  { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
+  { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
+  { title: "Same accountant every time", detail: "You are not passed around a team" },
+];
+
 /**
  * Shared template for the nine /blog/<category> hub pages, so they carry the
  * same posture as the services pages instead of nine hand-rolled layouts:
@@ -43,6 +49,8 @@ export function BlogCategoryHub({
   form,
   heroBackdrop,
   ctaBackdrop,
+  proofPoints = PROPERTY_PROOF_POINTS,
+  libraryNote,
 }: {
   categoryName: string;
   categorySlug: string;
@@ -101,6 +109,17 @@ export function BlogCategoryHub({
    * identical navy brick texture passes it here.
    */
   ctaBackdrop?: ReactNode;
+  /**
+   * Closing-panel proof points. Defaults to Property's three so its hubs are
+   * byte-identical; any other site passes its own, because "Property tax only"
+   * is a lie everywhere else.
+   */
+  proofPoints?: Array<{ title: string; detail: string }>;
+  /**
+   * Sentence under the library heading. Defaults to Property's ("written by
+   * specialist property accountants"), same reason as `proofPoints`.
+   */
+  libraryNote?: string;
 }) {
   const otherTopics = categories.filter((c) => c.slug !== categorySlug);
 
@@ -207,8 +226,8 @@ export function BlogCategoryHub({
             Every {categoryName} article
           </h2>
           <p className="text-base sm:text-lg text-slate-600 mb-8">
-            {posts.length} {posts.length === 1 ? "guide" : "guides"}, written by specialist
-            property accountants and kept current.
+            {libraryNote ??
+              `${posts.length} ${posts.length === 1 ? "guide" : "guides"}, written by specialist property accountants and kept current.`}
           </p>
           {posts.length > 0 ? (
             // Twelve per page, the same as /blog. This used to pass
@@ -232,11 +251,7 @@ export function BlogCategoryHub({
         <LeadCTAPanel
           title={cta.heading}
           description={cta.body}
-          proofPoints={[
-            { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
-            { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
-            { title: "Same accountant every time", detail: "You are not passed around a team" },
-          ]}
+          proofPoints={proofPoints}
           form={form}
           backdrop={ctaBackdrop}
           footnote="No obligation and no hard sell. If your position is already right, we will say so."

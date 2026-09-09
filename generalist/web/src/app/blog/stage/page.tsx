@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
+import { BLOG_STAGE_LIST } from "@/lib/blog-stages";
 
 export const metadata: Metadata = {
   title: `Insights by business stage`,
@@ -13,58 +16,29 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-const STAGES = [
-  {
-    slug: "starting-a-business",
-    name: "Starting a business",
-    summary:
-      "Sole trader vs limited company, incorporation, first VAT registration, registering for self-assessment, first 90 days.",
-    keywords: "Set up. Register. First step.",
-  },
-  {
-    slug: "running-a-business",
-    name: "Running a business",
-    summary:
-      "Bookkeeping, payroll, VAT returns, corporation tax, dividends, director pay. The operational tax decisions month-to-month.",
-    keywords: "Day-to-day. Monthly. Quarterly. Yearly.",
-  },
-  {
-    slug: "scaling-a-business",
-    name: "Scaling a business",
-    summary:
-      "Hiring, R&D claims, holding companies, restructuring, alphabet shares, associated company rules. Tax for growth.",
-    keywords: "Hire. Restructure. Optimise.",
-  },
-  {
-    slug: "exiting-a-business",
-    name: "Exiting a business",
-    summary:
-      "BADR planning, MVL vs strike-off, earn-out structures, due diligence prep. The 12-24 months before exit are where the tax saving happens.",
-    keywords: "Sell. Wind down. Hand over.",
-  },
-];
-
 export default function BlogStageIndexPage() {
   return (
     <>
-      <section className={`${sectionY} bg-[#fafaf7]`}>
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Insights", href: "/blog" },
-              { label: "By stage" },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
-              Browse by stage
-            </p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
+      <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
+        <GeneralistBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Breadcrumb
+              siteUrl={siteConfig.url}
+              onDark
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Insights", href: "/blog" },
+                { label: "By stage" },
+              ]}
+            />
+            <Eyebrow onDark>Browse by stage</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl lg:text-6xl">
               Where are you?
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600 max-w-2xl">
-              Tax and structure decisions look different at every stage. Pick the one closest to where your business is now.
+            <p className="mt-4 text-base leading-7 text-white/90 sm:mt-6 sm:text-lg">
+              Tax and structure decisions look different at every stage. Pick the one closest to
+              where your business is now.
             </p>
           </div>
         </div>
@@ -72,29 +46,48 @@ export default function BlogStageIndexPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto grid gap-6 sm:grid-cols-2">
-            {STAGES.map((s) => (
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+            {BLOG_STAGE_LIST.map((s) => (
               <Link
                 key={s.slug}
                 href={`/blog/stage/${s.slug}`}
-                className="group flex h-full flex-col border border-neutral-200 bg-white p-7 transition-all hover:border-orange-600 hover:shadow-md"
+                data-cta={`blog_stage_card_${s.slug}`}
+                data-cta-placement="stage_grid"
+                className={`group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-primary-600 hover:shadow-md sm:p-7 ${focusRing}`}
               >
-                <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
-                  {s.keywords}
-                </p>
-                <h2 className="mt-3 text-2xl font-bold text-neutral-900">
+                <Eyebrow>{s.keywords}</Eyebrow>
+                <h3 className="text-lg font-bold! tracking-normal! leading-snug! text-slate-900 sm:text-xl">
                   {s.name}
-                </h2>
-                <p className="mt-3 flex-grow text-base text-neutral-600 leading-relaxed">
-                  {s.summary}
-                </p>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-700 group-hover:text-orange-800">
+                </h3>
+                <p className="mt-3 flex-grow text-base leading-7 text-slate-600">{s.summary}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary-700 group-hover:text-primary-800">
                   Browse articles
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight aria-hidden className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* No LeadCTAPanel here by design: this is a noindex switchboard whose one
+          job is to send the reader on to a stage page, each of which carries the
+          panel. A form here would compete with that hand-off. (Gate 10.) */}
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Not sure which one</Eyebrow>
+          <h2 className="mb-4 text-2xl font-bold text-slate-900 sm:text-4xl">
+            Browse the whole library instead
+          </h2>
+          <Link
+            href="/blog"
+            data-cta="blog_stage_all_articles"
+            data-cta-placement="stage_tail"
+            className={`inline-flex items-center gap-1.5 rounded py-1 text-sm font-bold text-primary-600 transition-colors hover:text-primary-700 sm:text-base ${focusRing}`}
+          >
+            All articles and guides
+            <ArrowRight aria-hidden className="h-4 w-4" />
+          </Link>
         </div>
       </section>
     </>

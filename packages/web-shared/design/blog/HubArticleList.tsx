@@ -17,6 +17,12 @@ export type HubArticle = {
   /** Publication date. Our hubs have always shown one per card; the card meta
    *  row keeps it beside the read time rather than dropping it. */
   date?: string;
+  /**
+   * Per-post category slug, for mixed lists (the /blog index renders every
+   * category in one grid). Falls back to the component's `categorySlug` prop,
+   * which is what a single-category hub passes.
+   */
+  categorySlug?: string;
 };
 
 function formatUkDate(isoDate: string): string {
@@ -76,7 +82,7 @@ export function HubArticleList({
             className="rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:border-primary-600 hover:shadow-md"
           >
             <Link
-              href={`/blog/${categorySlug}/${post.slug}`}
+              href={`/blog/${post.categorySlug ?? categorySlug}/${post.slug}`}
               className={`flex h-full flex-col p-6 rounded-xl ${focusRing}`}
             >
               {/* Owner-tuned title treatment (see DESIGN_GUIDELINES §12): bold

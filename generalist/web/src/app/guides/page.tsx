@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { FileText, ArrowRight, Download } from "lucide-react";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-cta-map";
 import { GUIDES } from "./[slug]/data";
 
 export const metadata: Metadata = {
@@ -15,27 +19,28 @@ export const metadata: Metadata = {
 
 export default function GuidesIndexPage() {
   const guides = Object.values(GUIDES);
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Free guides" }];
+
   return (
     <>
-      <section className="bg-slate-900 py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            variant="light"
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Free Guides" },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              <FileText className="h-3.5 w-3.5" />
-              Free downloadable guides
-            </div>
-            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+      <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
+        <GeneralistBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Breadcrumb siteUrl={siteConfig.url} onDark items={crumbs} />
+            <Eyebrow onDark>Free guides</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl lg:text-6xl">
               Free in-depth guides
             </h1>
-            <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Long-form practical guides for UK business owners. Year-end tax planning, switching accountants, first 90 days as a Ltd company, contractor first contract. Drop your email to get the full version.
+            {/* Describes what actually happens. The guide body is not on the
+                page: each guide page lists what is inside and the full version
+                is emailed after the form. The old line advertised a retired
+                email-gate arm instead. */}
+            <p className="mt-4 text-base leading-7 text-white/90 sm:mt-6 sm:text-lg">
+              Long-form practical guides for UK business owners. Year-end tax planning, switching
+              accountants, the first 90 days as a limited company, a contractor&rsquo;s first
+              contract. Read what is inside on each guide&rsquo;s page, then get the guide itself by
+              telling us where to send it.
             </p>
           </div>
         </div>
@@ -43,32 +48,32 @@ export default function GuidesIndexPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-6xl mx-auto grid gap-6 sm:gap-8 md:grid-cols-2">
-            {guides.map((g) => (
-              <Link
-                key={g.slug}
-                href={`/guides/${g.slug}`}
-                className="group block bg-slate-50 border border-slate-200 p-6 sm:p-8 hover:bg-white hover:border-orange-600 hover:shadow-md transition-all"
-              >
-                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-orange-500 to-orange-700 shadow-sm">
-                  <Download className="h-6 w-6 text-white" />
-                </div>
-                <p className="mt-5 text-xs font-bold uppercase tracking-wider text-orange-700">
-                  {g.category}
-                </p>
-                <h2 className="mt-2 text-xl font-bold text-slate-900 group-hover:text-orange-700 transition-colors leading-snug">
-                  {g.title}
-                </h2>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">{g.teaser}</p>
-                <div className="mt-5 flex items-center text-orange-600 font-semibold text-sm">
-                  Get the guide
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
-            ))}
-          </div>
+          <Eyebrow>The guides</Eyebrow>
+          <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:text-4xl">
+            {guides.length} {guides.length === 1 ? "guide" : "guides"}
+          </h2>
+          <RelatedArticles
+            columns={2}
+            items={guides.map((g) => ({
+              href: `/guides/${g.slug}`,
+              title: g.title,
+              excerpt: g.teaser,
+              kind: "guide" as const,
+            }))}
+          />
         </div>
       </section>
+
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          title="Would a conversation be faster than a guide?"
+          description="A free call with an accountant who looks at your actual position, rather than a document you have to apply to it yourself."
+          proofPoints={LEAD_PROOF_POINTS}
+          form={<LeadForm submitLabel="Request callback" redirectOnSuccess={false} />}
+          contained
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+        />
+      </div>
     </>
   );
 }
