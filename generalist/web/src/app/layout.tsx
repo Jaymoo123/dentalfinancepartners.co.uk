@@ -92,7 +92,7 @@ export default function RootLayout({
             [data-draw="off"] .profit-stack-seg { transform: none; }
             [data-draw="off"] .profit-stack-marker { opacity: 1; }
             [data-draw="off"] .story-numeral-rule { transform: none; }
-            [data-draw="off"] .story-numeral { color: oklch(0.596 0.145 163.225); text-shadow: 0 0 18px rgb(16 185 129 / 0.45); }`}</style>
+            [data-draw="off"] .story-numeral { color: oklch(0.646 0.222 41.116); text-shadow: 0 0 18px rgb(249 115 22 / 0.45); }`}</style>
         </noscript>
         {/* Site-wide entity graph: canonical Organization (+ Companies House
             sameAs) and WebSite nodes emitted once here so every page carries

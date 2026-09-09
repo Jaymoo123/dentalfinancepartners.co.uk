@@ -55,16 +55,6 @@
           "description": "Practical articles for UK business owners"
         },
         {
-          "label": "Calculators",
-          "href": "/calculators",
-          "description": "Free salary, tax, R&D and VAT calculators using 2025/26 rates"
-        },
-        {
-          "label": "Locations",
-          "href": "/locations",
-          "description": "Coverage across the UK"
-        },
-        {
           "label": "R&D Tax Credits",
           "href": "/r-and-d-credits",
           "description": "Specialist R&D claims for innovative UK businesses"
@@ -231,6 +221,10 @@
         "hero_secondary": {
           "label": "What we cover",
           "href": "/services"
+        },
+        "header_secondary": {
+          "label": "Contact",
+          "href": "/contact"
         },
         "sticky": {
           "primary": "Free business finance health check",

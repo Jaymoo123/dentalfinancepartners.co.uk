@@ -1,7 +1,8 @@
 "use client";
 
 /**
- * StickyCTA -- persistent dismissable bottom bar, mounted site-wide via PageShell.
+ * StickyCTA -- persistent dismissable bottom bar, mounted on the homepage only
+ * (app/page.tsx), matching the estate standard.
  *
  * Owner decision (CRO parity programme): intent-aware personalisation is ON
  * unconditionally. The previous no-op stub is replaced with the intent-aware

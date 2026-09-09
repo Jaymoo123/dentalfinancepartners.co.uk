@@ -141,7 +141,7 @@ export function SignupForm({
           placeholder="you@yourbusiness.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-1 min-w-0 border border-neutral-300 bg-white px-4 py-3 text-sm text-neutral-900 placeholder:text-neutral-400 transition-colors focus:outline-none focus:border-orange-500"
+          className="flex-1 min-w-0 min-h-12 rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-400 transition-colors focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/25"
         />
         <button
           type="submit"
@@ -165,7 +165,7 @@ export function SignupForm({
           required
           checked={consent}
           onChange={(e) => setConsent(e.target.checked)}
-          className="mt-0.5 h-4 w-4 shrink-0 border-neutral-300 accent-orange-500"
+          className="mt-0.5 h-4 w-4 shrink-0 border-neutral-300 accent-primary-600"
         />
         <span>{NEWSLETTER_CONSENT_TEXT}</span>
       </label>
