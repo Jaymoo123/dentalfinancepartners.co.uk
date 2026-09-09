@@ -6,7 +6,7 @@ export const rdCreditTool: GenericTool = {
   kind: "generic",
   slug: "rd-tax-credit-estimator",
   name: "R&D Tax Credit Estimator",
-  category: "Limited Company",
+  category: "Corporation Tax",
   oneLiner: "Indicative R&D credit under the 2024 merged scheme. Drop in qualifying spend to see your estimate and whether the intensive SME rate applies.",
   embedHeight: 500,
   metaTitle: "R&D Tax Credit Estimator 2026/27 | UK Merged Scheme Calculator",

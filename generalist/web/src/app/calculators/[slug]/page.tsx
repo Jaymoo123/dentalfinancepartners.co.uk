@@ -1,14 +1,19 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { siteContainerLg } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteContainerLg, btnOnDark } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow, Prose } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-cta-map";
 import { siteConfig } from "@/config/site";
-import { Calculator as CalcIcon } from "lucide-react";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
-import Link from "next/link";
 
 export const dynamicParams = false;
 
@@ -48,97 +53,111 @@ export default async function CalculatorPage({
   const tool = getGenericTool(slug);
   if (!tool) notFound();
 
+  // ONE faq array: the schema and the rendered accordion read the same value,
+  // so the two cannot drift.
+  const faqs = tool.faqs ?? [];
   const webApp = buildWebApplication({
     name: tool.metaTitle,
     description: tool.metaDescription,
     path: `/calculators/${slug}`,
     applicationCategory: "FinanceApplication",
   });
-  const faqSchema =
-    tool.faqs && tool.faqs.length > 0
-      ? buildFaqPage(tool.faqs.map((f) => ({ question: f.question, answer: f.answer })))
-      : null;
+  const faqSchema = faqs.length > 0 ? buildFaqPage(faqs) : null;
 
   return (
     <>
+      {/* BreadcrumbList is emitted by the kit <Breadcrumb> below. */}
       <JsonLd data={faqSchema ? [webApp, faqSchema] : [webApp]} />
 
-      <section className="bg-slate-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16">
+        <GeneralistBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Calculators", href: "/calculators" },
               { label: tool.name },
             ]}
           />
-          <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              <CalcIcon className="h-3.5 w-3.5" />
-              Free calculator · 2026/27 rates
-            </div>
-            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{tool.name}</h1>
-            <p className="mt-4 text-lg text-slate-300 leading-relaxed">{tool.intro}</p>
+          <div className="max-w-3xl">
+            <Eyebrow onDark>Free calculator · 2026/27 rates</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-4xl lg:text-5xl">
+              {tool.name}
+            </h1>
+            <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">{tool.intro}</p>
+            <a
+              href="#get-expert-help"
+              data-cta="calc_hero_help"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+              className={`${btnOnDark} mt-6`}
+            >
+              Ask an accountant about your figure
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16">
+      <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
-            {/* slug only — the function-bearing tool config resolves client-side */}
-            <CalculatorClient slug={slug} variant="page" />
+          {/* slug only — the function-bearing tool config resolves client-side */}
+          <CalculatorClient slug={slug} variant="page" />
 
-            {/* Resource gate island: resolves topic from slug, renders only when
-                an enabled asset exists (renders null for unmapped/disabled topics). */}
-            <CalculatorPageResources slug={slug} />
-
-            {tool.explainer && (
-              <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">
-                <h2 className="text-xl font-bold text-slate-900">{tool.explainer.heading}</h2>
-                {tool.explainer.paragraphs.map((p, i) => (
-                  <p key={i} className="mt-3 text-base text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            )}
-
-            {tool.faqs && tool.faqs.length > 0 && (
-              <section className="mt-12">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">Frequently asked questions</h2>
-                <dl className="space-y-4">
-                  {tool.faqs.map((f) => (
-                    <div key={f.question} className="border-l-4 border-slate-300 bg-slate-50 p-6">
-                      <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
-                      <dd className="mt-3 text-base text-slate-700 leading-relaxed">{f.answer}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </section>
-            )}
-
-            <div className="mt-12 bg-slate-900 p-8 sm:p-10 text-white">
-              <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Numbers are one thing. Getting the timing right is another.
-              </h2>
-              <p className="mt-3 text-base sm:text-lg text-slate-200 leading-relaxed">
-                Every figure here is modelled on standard 2026/27 thresholds. Your actual position
-                depends on prior-year usage, pension carry-forward, other income sources, and how
-                your decisions interact with each other. We build those models as part of our
-                advisory work.
-              </p>
-              <Link
-                href="/contact"
-                className="mt-6 inline-block bg-orange-600 px-8 py-3 text-base font-bold text-white border-b-4 border-orange-800 hover:bg-orange-700 hover:border-orange-900 transition-all"
-              >
-                {tool.ctaLabel ?? "Book a free call"}
-              </Link>
-            </div>
-          </div>
+          {/* Premium island: resolves topic from slug, renders only when a
+              premium tool exists (renders null for unmapped topics). */}
+          <CalculatorPageResources slug={slug} />
         </div>
       </section>
+
+      {tool.explainer && (
+        <section className="bg-white py-12 sm:py-16">
+          <div className={siteContainerLg}>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+              {tool.explainer.heading}
+            </h2>
+            <Prose>
+              {tool.explainer.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </Prose>
+          </div>
+        </section>
+      )}
+
+      {tool.related && tool.related.length > 0 && (
+        <section className="bg-slate-50 py-12 sm:py-16">
+          <div className={siteContainerLg}>
+            <Eyebrow>Related reading</Eyebrow>
+            <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:text-4xl">
+              Read this next
+            </h2>
+            <RelatedArticles
+              items={tool.related.map((r) => ({ href: r.href, title: r.label }))}
+            />
+          </div>
+        </section>
+      )}
+
+      <div id="get-expert-help" className="scroll-mt-24">
+        <LeadCTAPanel
+          title="Numbers are one thing. Getting the timing right is another."
+          description="Every figure here is modelled on standard 2026/27 thresholds. Your actual position depends on prior-year usage, pension carry-forward, other income, and how your decisions interact. A free call gets that read properly."
+          proofPoints={LEAD_PROOF_POINTS}
+          form={
+            <LeadForm
+              submitLabel={tool.ctaLabel ?? "Book a free call"}
+              redirectOnSuccess={false}
+            />
+          }
+          backdrop={<GeneralistBackdrop />}
+        />
+      </div>
+
+      {faqs.length > 0 && (
+        <FaqSection faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+      )}
     </>
   );
 }
