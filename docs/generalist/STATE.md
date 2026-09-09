@@ -1,5 +1,25 @@
 # Generalist (Holloway Davies) — site state
 
+> **2026-09-09 — DESIGN PORT TO THE PROPERTY STANDARD: APPROVED, Phase 0 running.**
+> Owner decision (PROPERTY_STANDARD_ROLLOUT.md §8.3): generalist ports to the Property
+> standard (Track 1, family C). Keep orange #f97316 as brand primary; warning/duty
+> semantics move OFF amber/orange; Geist stays; ALL content/URLs/forms stay.
+> Evidence (post bot-gate, since 08-23): blog-landing conversion 0.10% vs Property 0.52%
+> on the same traffic; homepage 3.3% vs 8.8%; Property blog forms took 13 leads,
+> generalist 1; subscribe surfaces shown ~7x more than the lead form.
+> Blueprint (page-by-page, section-by-section, exact classes): `docs/generalist/_port/`
+> (DISPOSITION_SLICE1-3 + README) + `docs/generalist/DESIGN_DELTA.md` (draft, awaiting
+> the swatch turn). Production SHA at Phase 0: `18b4f25f` (Vercel targets.production,
+> READY); no committed-but-undeployed generalist/web-shared changes; link-floor baseline
+> capture in progress into `_port/link_baseline.json`. 79 armed monitored_pages rows
+> (09-10..10-07) get re-baselined at cutover, annotated. Owner sign-off bundle
+> (swatch + capture-surface scope + copy/compliance decisions) is the next gate; no
+> port code before it. Live defects the audit found, fixed by the port: btnPrimary
+> white-on-orange-500 2.80:1 (WCAG fail on every primary button today), article/legal
+> links 3.56:1, `--radius-xl` computes 0px, kit buttons render as 9999px pills
+> (missing --btn-radius), duplicate header Contact link from md:, full chrome inside
+> /embed iframes, em-dashes in blog stage intros, employer-NI calculator exists twice.
+
 > Created 2026-06-12 to consolidate per-site state (this site previously had no STATE.md; earlier history lives in git log and the program docs referenced below). Convention: this file is the single per-site state record; methodology lives in `docs/_engines/`.
 
 **Site:** www.hollowaydavies.co.uk · Vercel project `holloway-davies` · site_key `generalist` · brand: distinct generalist design system (off-white + ink + orange, Geist Sans), james-holloway byline (credential designation removed 2026-06-29).
