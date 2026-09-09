@@ -13,7 +13,7 @@ import { toolPath } from "@/lib/tools/registry";
 export function ToolIsland({ tool }: { tool: GenericTool }) {
   return (
     <aside
-      className="not-prose my-10 rounded-lg border border-slate-200 bg-slate-50 p-6 sm:p-8"
+      className="not-prose my-10 rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8"
       aria-label={`Free calculator: ${tool.name}`}
     >
       <p className="text-xs font-bold uppercase tracking-wider text-orange-700">

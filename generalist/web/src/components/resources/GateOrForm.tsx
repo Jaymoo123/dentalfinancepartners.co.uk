@@ -29,7 +29,7 @@ export function GateOrForm({
       heading={t?.ctaCopy || "Get a free review of your situation"}
       blurb="Skip the spreadsheet. Tell us about your situation and a specialist will review your position and the next sensible step, with no obligation."
       submitLabel="Request my free review"
-      className="my-10 rounded-2xl border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8"
+      className="my-10 rounded-xl bg-slate-50 p-6 sm:p-8 ring-1 ring-slate-200/70"
     />
   );
 }
