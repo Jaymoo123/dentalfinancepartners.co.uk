@@ -27,7 +27,7 @@ export const salaryDividendTool: GenericTool = {
     },
     {
       id: "useEA",
-      label: "Apply Employment Allowance (£10,500 off employer NI — needs 2+ employees)",
+      label: "Apply Employment Allowance (£10,500 off employer NI, needs 2+ employees)",
       type: "toggle",
       default: false,
     },

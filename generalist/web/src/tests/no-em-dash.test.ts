@@ -15,7 +15,7 @@ import { readdirSync, readFileSync, statSync } from "fs";
 import { join } from "path";
 
 const SRC = join(__dirname, "..");
-const ROOTS = ["app", "components"];
+const ROOTS = ["app", "components", "lib"];
 
 function sourceFiles(dir: string): string[] {
   const out: string[] = [];

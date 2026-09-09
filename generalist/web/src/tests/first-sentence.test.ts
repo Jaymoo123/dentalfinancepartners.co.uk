@@ -36,6 +36,7 @@ describe("page summaries", () => {
 
   it("resolves a route with a query string or fragment", () => {
     expect(pageSummary("/contact?utm_source=x")).toBe(PAGE_SUMMARIES["/contact"]);
+    expect(pageSummary("/contact#section")).toBe(PAGE_SUMMARIES["/contact"]);
     expect(pageSummary("/nope")).toBeUndefined();
   });
 });

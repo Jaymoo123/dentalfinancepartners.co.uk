@@ -7,7 +7,7 @@ export const vatTool: GenericTool = {
   slug: "vat-scheme-comparator",
   name: "VAT Scheme Comparator",
   category: "VAT",
-  oneLiner: "Standard vs Flat Rate — run your turnover and input VAT to find out which scheme saves you money and whether the Limited Cost Trader rule forces you to 16.5%.",
+  oneLiner: "Standard vs Flat Rate: run your turnover and input VAT to find out which scheme saves you money and whether the Limited Cost Trader rule forces you to 16.5%.",
   embedHeight: 500,
   metaTitle: "VAT Scheme Comparator | Standard vs Flat Rate UK Calculator",
   metaDescription:
@@ -32,7 +32,7 @@ export const vatTool: GenericTool = {
       min: 0,
       max: 500000,
       step: 500,
-      help: "VAT element of your business costs — software, freelancers if VAT-registered, equipment. Standard scheme reclaims this; flat rate does not.",
+      help: "VAT element of your business costs, such as software, freelancers if VAT-registered, equipment. Standard scheme reclaims this; flat rate does not.",
     },
     {
       id: "goodsSpend",
@@ -60,12 +60,12 @@ export const vatTool: GenericTool = {
       },
       rows: [
         { label: "VAT collected on turnover (20%)", value: gbp(r.vatCollected) },
-        { label: "Standard scheme — net payable", value: gbp(r.standardNet), strong: true },
+        { label: "Standard scheme: net payable", value: gbp(r.standardNet), strong: true },
         {
           label: "Flat Rate scheme rate",
           value: pct(r.flatRate * 100) + (r.lctApplies ? " (Limited Cost Trader)" : " (sector rate)"),
         },
-        { label: "Flat Rate scheme — net payable", value: gbp(r.flatNet), strong: true },
+        { label: "Flat Rate scheme: net payable", value: gbp(r.flatNet), strong: true },
         { label: "Annual saving (best vs other)", value: gbp(r.saving) },
       ],
       note: r.lctApplies
