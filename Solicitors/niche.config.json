@@ -14,7 +14,11 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
+  "partner": {
+    "name": "regulated firms in our specialist partner network",
+    "descriptor": "",
+    "privacy_policy_url": null
+  },
   "domain": "www.accountsforlawyers.co.uk",
   "tagline": "Specialist accounting for UK solicitors and law firms",
   "description": "Expert accountants for solicitors, law firms, and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
@@ -31,11 +35,87 @@
   "navigation": [
     {
       "label": "Services",
-      "href": "/services"
+      "href": "/services",
+      "children": [
+        {
+          "label": "All services",
+          "href": "/services"
+        },
+        {
+          "label": "Solicitor accountants",
+          "href": "/services/solicitor-accountants"
+        },
+        {
+          "label": "SRA Accounts Rules",
+          "href": "/services/sra-accounts-rules"
+        },
+        {
+          "label": "LLP and partnership accounts",
+          "href": "/services/llp-accounts"
+        },
+        {
+          "label": "Practice valuation",
+          "href": "/services/practice-valuation"
+        },
+        {
+          "label": "COFA and COLP support",
+          "href": "/services/cofa-compliance-support"
+        }
+      ]
     },
     {
       "label": "Pillar Guides",
-      "href": "/solicitor-guides"
+      "href": "/solicitor-guides",
+      "children": [
+        {
+          "label": "All pillar guides",
+          "href": "/solicitor-guides"
+        },
+        {
+          "label": "SRA Accounts Rules essentials",
+          "href": "/solicitor-guides/sra-accounts-rules-essentials"
+        },
+        {
+          "label": "Partnership vs LLP",
+          "href": "/solicitor-guides/partnership-vs-llp-for-solicitors"
+        },
+        {
+          "label": "Law firm profitability",
+          "href": "/solicitor-guides/law-firm-profitability-guide"
+        },
+        {
+          "label": "COFA fundamentals",
+          "href": "/solicitor-guides/cofa-fundamentals"
+        },
+        {
+          "label": "Professional indemnity insurance",
+          "href": "/solicitor-guides/professional-indemnity-tax-treatment"
+        },
+        {
+          "label": "SRA compliance hub",
+          "href": "/sra-compliance"
+        },
+        {
+          "label": "Solicitor tax rates",
+          "href": "/uk-solicitor-tax-rates"
+        },
+        {
+          "label": "Chart of accounts template",
+          "href": "/law-firm-chart-of-accounts-template"
+        },
+        {
+          "label": "Research and data",
+          "href": "/research"
+        },
+        {
+          "label": "Specialist vs generalist accountant",
+          "href": "/specialist-vs-generalist-accountant"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        }
+      ]
     },
     {
       "label": "Calculators",
