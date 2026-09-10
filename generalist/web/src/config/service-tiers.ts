@@ -7,7 +7,7 @@ export const serviceTiers: ServiceTier[] = [
     description:
       "Use our free tools to model your own numbers. No sign-up, no email gate. Good for business owners who are comfortable with the maths and just need reliable 2026/27 figures.",
     features: [
-      "17 free tax calculators:",
+      "21 free tax calculators:",
       "Salary vs dividend optimiser",
       "Take-home pay calculator",
       "Employer NI cost tool",
@@ -32,7 +32,6 @@ export const serviceTiers: ServiceTier[] = [
     ],
     cta: "Book a free call",
     ctaHref: "/contact",
-    featured: true,
   },
   {
     name: "Done for you",

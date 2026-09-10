@@ -182,11 +182,11 @@ const localBusinessSchema = buildAccountingService({
     addressCountry: "GB",
   },
 });
-// The builder hardcodes areaServed to City and omits priceRange / parentOrganization /
-// structured opening hours; override for a national instance, mirroring the locations page.
+// The builder hardcodes areaServed to City and omits parentOrganization / structured
+// opening hours; override for a national instance, mirroring the locations page. No
+// price band is published anywhere on this site, so none is asserted here either.
 Object.assign(localBusinessSchema as Record<string, unknown>, {
   areaServed: { "@type": "Country", name: "United Kingdom" },
-  priceRange: "££",
   parentOrganization: { "@type": "Organization", "@id": `${siteUrl}#organization` },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",

@@ -263,7 +263,7 @@ export default function ServicesPage() {
             From self-serve tools to a full annual engagement.
           </h2>
           <div className="mt-8 sm:mt-10">
-            <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
+            <ServiceTiers tiers={serviceTiers} />
           </div>
         </div>
       </section>
@@ -323,7 +323,7 @@ export default function ServicesPage() {
               </Link>
             </li>
             <li>
-              <Link href="/incorporation" className={linkArrow}>
+              <Link href="/blog/incorporation-and-structure" className={linkArrow}>
                 Incorporating: what it costs and what changes
                 <ArrowRight aria-hidden className="h-4 w-4" />
               </Link>

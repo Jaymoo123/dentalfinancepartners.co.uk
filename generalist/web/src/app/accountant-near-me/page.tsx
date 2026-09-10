@@ -79,7 +79,7 @@ const FAQS: FaqEntry[] = [
   {
     question: "How do we meet, and can we ever meet in person?",
     answer:
-      "Day to day we work by phone, video and email, with a scheduled review each quarter. In-person meetings are available on request across the major UK cities, and most clients use them for the year-end conversation rather than routine work.",
+      "Day to day we work by phone, video and email, with a scheduled review each quarter. In-person meetings are available on request across the major UK cities.",
   },
   {
     question: "Which bookkeeping software do you work with?",
@@ -182,7 +182,7 @@ export default function AccountantNearMePage() {
             </p>
             <p>
               For most UK limited companies, contractors and sole traders, remote-first is the
-              better service model: lower fees because we are not paying for a high-street office,
+              better service model: lower overheads because we are not paying for a high-street office,
               faster response because we are not booking meeting rooms, and the same senior
               accountant on your account year after year.
             </p>

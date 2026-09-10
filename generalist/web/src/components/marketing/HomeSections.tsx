@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check, Minus } from "lucide-react";
 import { btnPrimary, linkArrow, siteContainerLg } from "@/components/ui/layout-utils";
 import { Eyebrow, Prose } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
@@ -112,13 +112,21 @@ const coverage = [
   },
   {
     title: "Companies House and exit planning",
-    body: "Confirmation statements and annual accounts filed on time, plus Business Asset Disposal Relief planning (18% from April 2026, £1M lifetime limit) when it is time to sell or wind down.",
+    body: "Confirmation statements and annual accounts filed on time, plus Business Asset Disposal Relief planning (18% from April 2026, £1m lifetime limit) when it is time to sell or wind down.",
     pillar: { href: "/services", label: "All services" },
     authority: { href: "https://www.gov.uk/file-your-company-annual-accounts", label: "Companies House filing" },
   },
 ];
 
 // Sole trader vs limited company at a glance (the decision element competitors carry).
+// Geometry is the kit `ComparisonTable` (SLICE1 B.11): card shadow, a scroll table above
+// md and the same rows stacked below it, with the limited-company side primary-edged so
+// the column reads as one block. The kit's "Most recommended" pill is deliberately NOT
+// ported: this page's own FAQ refuses to declare one structure the winner.
+const OUR_COLUMN = "border-l border-primary-200 bg-primary-50/60";
+const COMPARISON_CARD =
+  "overflow-hidden rounded-xl bg-white ring-1 ring-slate-200 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.4)]";
+
 const decisionRows = [
   {
     label: "Setting up",
@@ -380,36 +388,81 @@ export function WhatWeCoverSection() {
             The structure you trade under changes how much tax you pay, what you file
             publicly, and how protected you are personally. The short version:
           </p>
-          <div className="mt-6 overflow-x-auto rounded-xl ring-1 ring-slate-200">
-            <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
-              <caption className="sr-only">
-                Sole trader compared with limited company
-              </caption>
-              <thead>
-                <tr className="border-b border-slate-200 bg-slate-50">
-                  <th scope="col" className="px-5 py-4">
-                    <span className="sr-only">Area</span>
-                  </th>
-                  <th scope="col" className="px-5 py-4 font-bold text-slate-900">
-                    Sole trader
-                  </th>
-                  <th scope="col" className="px-5 py-4 font-bold text-slate-900">
-                    Limited company
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {decisionRows.map((row) => (
-                  <tr key={row.label} className="border-b border-slate-100 align-top last:border-b-0">
-                    <th scope="row" className="px-5 py-4 text-left font-bold text-slate-900">
-                      {row.label}
+          <div className={`mt-6 hidden md:block ${COMPARISON_CARD}`}>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
+                <caption className="sr-only">
+                  Sole trader compared with limited company
+                </caption>
+                <thead>
+                  <tr className="border-b border-slate-200">
+                    <th scope="col" className="px-5 py-4">
+                      <span className="sr-only">Area</span>
                     </th>
-                    <td className="px-5 py-4 leading-relaxed text-slate-600">{row.soleTrader}</td>
-                    <td className="px-5 py-4 leading-relaxed text-slate-600">{row.limited}</td>
+                    <th scope="col" className="px-5 py-4 align-bottom">
+                      <span className="flex items-start gap-2">
+                        <Minus aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-slate-500" strokeWidth={2.5} />
+                        <span className="text-sm font-bold text-slate-700">Sole trader</span>
+                      </span>
+                    </th>
+                    <th scope="col" className={`px-5 py-4 align-bottom ${OUR_COLUMN}`}>
+                      <span className="flex items-start gap-2">
+                        <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-primary-600" strokeWidth={2.5} />
+                        <span className="text-sm font-bold text-primary-900">Limited company</span>
+                      </span>
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {decisionRows.map((row) => (
+                    <tr key={row.label} className="border-b border-slate-100 last:border-b-0">
+                      <th scope="row" className="px-5 py-4 text-left align-top font-bold text-slate-900">
+                        {row.label}
+                      </th>
+                      <td className="px-5 py-4 align-top leading-relaxed text-slate-600">
+                        <span className="flex gap-2">
+                          <Minus aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-slate-500" strokeWidth={2.5} />
+                          <span>{row.soleTrader}</span>
+                        </span>
+                      </td>
+                      <td className={`px-5 py-4 align-top font-semibold leading-relaxed text-slate-900 ${OUR_COLUMN}`}>
+                        <span className="flex gap-2">
+                          <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-primary-600" strokeWidth={3} />
+                          <span>{row.limited}</span>
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Below md the table would be a sideways scroll, so the same rows stack. */}
+          <div className={`mt-6 md:hidden ${COMPARISON_CARD}`}>
+            <ul className="divide-y divide-slate-100">
+              {decisionRows.map((row) => (
+                <li key={row.label} className="px-5 py-5">
+                  <p className="text-sm font-bold text-slate-900">{row.label}</p>
+                  <div className="mt-3 space-y-2">
+                    <div className="flex items-start gap-2">
+                      <Minus aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-slate-500" strokeWidth={2.5} />
+                      <span className="text-sm leading-relaxed text-slate-600">
+                        <span className="font-semibold text-slate-500">Sole trader: </span>
+                        {row.soleTrader}
+                      </span>
+                    </div>
+                    <div className={`flex items-start gap-2 px-3 py-2 ${OUR_COLUMN}`}>
+                      <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-primary-600" strokeWidth={3} />
+                      <span className="text-sm font-semibold leading-relaxed text-slate-900">
+                        <span className="font-bold text-primary-800">Limited company: </span>
+                        {row.limited}
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
           <ExampleFigureNote className="mt-3" />
           <Link href="/fundamentals/limited-company-vs-sole-trader" className={`${linkArrow} mt-4`}>

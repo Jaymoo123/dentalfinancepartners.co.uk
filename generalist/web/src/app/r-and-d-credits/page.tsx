@@ -27,11 +27,11 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "R&D Tax Credits for UK Businesses | Specialist Claims",
   description:
-    "Specialist R&D tax credit claims for UK companies. Software, AI, engineering, manufacturing, biotech, food tech. Merged scheme and ERIS. Fixed fee or no-win-no-fee available.",
+    "Specialist R&D tax credit claims for UK companies. Software, AI, engineering, manufacturing, biotech, food tech. Merged scheme and ERIS. Scope and fee quoted after a free 30-minute call.",
   alternates: { canonical: `${siteConfig.url}/r-and-d-credits` },
   openGraph: {
     title: "R&D Tax Credits for UK Businesses",
-    description: "Specialist R&D tax credit claims for UK companies. Fixed fee or contingent options available.",
+    description: "Specialist R&D tax credit claims for UK companies. Scope and fee quoted after a free 30-minute call.",
     url: `${siteConfig.url}/r-and-d-credits`,
     type: "website",
   },
@@ -52,7 +52,7 @@ const RD_HUB = `/blog/${slugifyCategory(RD_CATEGORY)}`;
 const stats: StatItem[] = [
   { target: 20, suffix: "%", label: "Merged scheme expenditure credit" },
   { target: 30, suffix: "%", label: "R&D intensity threshold for ERIS" },
-  { target: 40, suffix: " days", label: "HMRC's stated processing time (working days)" },
+  { target: 1, suffix: " Apr 2024", label: "Merged scheme applies to periods from" },
   { target: 30, suffix: " min", label: "Free eligibility assessment call" },
 ];
 
@@ -91,9 +91,9 @@ const qualifying = [
 
 const process = [
   { n: "01", title: "Eligibility assessment", body: "30-min call. We review your projects against HMRC's qualifying activity tests, and we are as explicit about the work that falls outside the guidelines as the work that falls inside." },
-  { n: "02", title: "Project scoping", body: "We identify which specific projects qualify, apportion staff time, and quantify subcontractor and cloud costs. Done in 1-2 weeks." },
+  { n: "02", title: "Project scoping", body: "We identify which specific projects qualify, apportion staff time, and quantify subcontractor and cloud costs." },
   { n: "03", title: "Claim preparation", body: "Full technical narrative + costing schedule. Built to HMRC's current standards, with proper documentation that holds up under enquiry." },
-  { n: "04", title: "Submission & monitoring", body: "We submit, monitor HMRC processing, and handle any questions. HMRC's stated processing time for the merged scheme is 40 working days." },
+  { n: "04", title: "Submission & monitoring", body: "We submit, monitor HMRC processing, and handle any questions." },
 ];
 
 const faqs = [
@@ -110,14 +110,16 @@ const faqs = [
     a: "For accounting periods beginning on or after 1 April 2024, the old SME and RDEC schemes were merged into one above-the-line expenditure credit at 20% of qualifying expenditure. Loss-making R&D-intensive SMEs, where R&D spend is at least 30% of total expenditure, claim under Enhanced R&D Intensive Support (ERIS) instead. Subcontracted R&D and externally provided workers are only partly claimable, and a PAYE and NIC cap can limit a payable credit where payroll is small relative to the claim size.",
   },
   {
-    q: "Do you charge a percentage of the claim?",
-    a: "We offer two options: fixed fee or contingent (percentage of successful claim, capped). A fixed fee costs less in total on a substantive claim; the contingent option carries no upfront cost, which suits a first-time claimant. We quote both on the initial call and you pick the one you want.",
+    q: "How does the fee work?",
+    a: "We do not charge a percentage of the claim, and we do not quote a figure before we have seen the work. On the initial call we scope what the claim involves, and you get a written quote for that scope before any work starts.",
   },
   {
     q: "How long does a claim take to process at HMRC?",
-    a: "HMRC's stated processing time is 40 working days for the merged scheme, though it's currently averaging 8-12 weeks. Enquiry rates have risen significantly since the 2023-24 reforms, so the quality of your technical narrative and costing schedule matters more than ever. We build claims to current HMRC standards.",
+    a: "HMRC publishes its own current processing aim for R&D claims and revises it, so check the timescale on gov.uk rather than taking one from us. What we control is the claim itself: a technical narrative and costing schedule built to HMRC's current standards, which is what keeps a claim moving rather than sitting in enquiry.",
   },
 ];
+
+const FAQ_ENTRIES = faqs.map((f) => ({ question: f.q, answer: f.a }));
 
 const CURATED_READING: RelatedArticleItem[] = [
   {
@@ -155,7 +157,7 @@ export default function RDPage() {
     serviceType: "R&D tax credit claim preparation",
     areaServed: "United Kingdom",
   });
-  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
+  const faqPage = buildFaqPage(FAQ_ENTRIES);
 
   // Real posts, so the closing grid can never point at an article that moved.
   const posts = getRelatedPosts("", RD_CATEGORY, 8).map((p) => ({
@@ -305,7 +307,7 @@ export default function RDPage() {
       <FaqSection
         eyebrow="FAQ"
         title="R&D credit FAQ"
-        faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))}
+        faqs={FAQ_ENTRIES}
         className="bg-white py-12 sm:py-16 lg:py-20"
       />
 
