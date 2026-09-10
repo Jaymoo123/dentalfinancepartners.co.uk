@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { siteContainer, btnPrimary } from "@/components/ui/layout-utils";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
 
 export const metadata: Metadata = {
   title: "Subscription confirmed | Holloway Davies",
@@ -19,37 +23,53 @@ export default async function ConfirmedPage({ searchParams }: Props) {
           ? "That confirmation link looks invalid. Please subscribe again."
           : "Something went wrong confirming your subscription.";
     return (
-      <main className="mx-auto max-w-xl px-6 py-16 text-center">
-        <h1 className="text-3xl font-bold text-slate-900">
-          We couldn&rsquo;t confirm
-        </h1>
-        <p className="mt-4 text-slate-700">{message}</p>
-        <Link
-          href="/newsletter"
-          className="mt-6 inline-block rounded-md bg-orange-600 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-700"
-        >
-          Subscribe again
-        </Link>
-      </main>
+      <>
+        <SlimHero
+          eyebrow="Newsletter"
+          title="We couldn&rsquo;t confirm"
+          backdrop={<GeneralistBackdrop />}
+        />
+        <section className="bg-slate-50 py-12 sm:py-16">
+          <div className={siteContainer}>
+            <div className="mx-auto max-w-2xl">
+              <NoticeCard tone="slate" ground="slate">
+                <p className="text-slate-700">{message}</p>
+                <Link href="/newsletter" className={`${btnPrimary} mt-6`}>
+                  Subscribe again
+                </Link>
+              </NoticeCard>
+            </div>
+          </div>
+        </section>
+      </>
     );
   }
 
   return (
-    <main className="mx-auto max-w-xl px-6 py-16 text-center">
-      <h1 className="text-3xl font-bold text-slate-900">You&rsquo;re in.</h1>
-      <p className="mt-4 text-slate-700">
-        Welcome to the Director's Brief. The first email lands in your inbox in about a
-        minute. After that, expect Thursday morning emails.
-      </p>
-      <p className="mt-2 text-slate-700">
-        If it doesn&rsquo;t show, check your spam or promotions folder and mark it as not spam.
-      </p>
-      <Link
-        href="/"
-        className="mt-8 inline-block rounded-md bg-orange-600 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-700"
-      >
-        Back to the site
-      </Link>
-    </main>
+    <>
+      <SlimHero
+        eyebrow="Newsletter"
+        title="You&rsquo;re in."
+        backdrop={<GeneralistBackdrop />}
+      />
+      <section className="bg-slate-50 py-12 sm:py-16">
+        <div className={siteContainer}>
+          <div className="mx-auto max-w-2xl">
+            <NoticeCard tone="primary" ground="slate" title="Subscription confirmed">
+              <p className="text-slate-700">
+                Welcome to the Director&rsquo;s Brief. The first email lands in your inbox in about a
+                minute. After that, expect Thursday morning emails.
+              </p>
+              <p className="mt-2 text-slate-700">
+                If it doesn&rsquo;t show, check your spam or promotions folder and mark it as not spam.
+              </p>
+              <Link href="/" className={`${btnPrimary} mt-8`}>
+                Back to the site
+              </Link>
+            </NoticeCard>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

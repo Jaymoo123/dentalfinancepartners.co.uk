@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { WhatToExpectCard } from "@accounting-network/web-shared/design/marketing/WhatToExpectCard";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
@@ -13,6 +17,9 @@ import DetailsForm from "@/components/forms/DetailsForm";
  * phone fills the gap here so we can call them. The token identifies the lead;
  * the page only ever asks for the field(s) still below floor, never email.
  * Noindexed like /book.
+ *
+ * Post-submit skeleton: SlimHero, then one light section carrying the job. The
+ * hero is navy and the footer is navy, so the light section is not optional.
  */
 
 export const metadata: Metadata = {
@@ -24,15 +31,15 @@ export const metadata: Metadata = {
 /** Shared "needs the personal link" fallback. */
 function NeedsLinkCard() {
   return (
-    <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
-      <p className="text-base text-neutral-700">
+    <NoticeCard>
+      <p className="text-base leading-relaxed text-slate-700">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
-      <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+      <Link href="/contact" className={`${btnPrimary} mt-4`}>
         Go to the contact form
       </Link>
-    </div>
+    </NoticeCard>
   );
 }
 
@@ -52,15 +59,15 @@ export default async function CompletePage({
     const verdict = verifyLeadToken(token, "profile");
     if (!verdict.ok) {
       inner = (
-        <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
-          <p className="text-base text-neutral-700">
+        <NoticeCard>
+          <p className="text-base leading-relaxed text-slate-700">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
-          <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+          <Link href="/contact" className={`${btnPrimary} mt-4`}>
             Go to the contact form
           </Link>
-        </div>
+        </NoticeCard>
       );
     } else {
       // Load the lead and work out which contact field(s) are still missing.
@@ -93,19 +100,21 @@ export default async function CompletePage({
           bookingToken = null;
         }
         inner = (
-          <div className="border border-orange-200 bg-orange-50 p-6 text-center">
-            <p className="text-lg font-bold text-neutral-900">You are all set</p>
-            <p className="mt-2 text-base text-neutral-700">
+          /* tone="primary" is correct here: this is the good outcome the reader
+             wanted. The duty and penalty ramp is the family that must never be
+             brand orange, not this one. */
+          <NoticeCard tone="primary" title="You are all set">
+            <p className="text-base leading-relaxed text-slate-700">
               We have everything we need. A specialist firm from our partner network may contact
               you directly about your enquiry. If you would like to pick a time that suits you,
               you can book a callback below.
             </p>
             {bookingToken && (
-              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4`}>
                 Book a callback
               </Link>
             )}
-          </div>
+          </NoticeCard>
         );
       } else {
         inner = <DetailsForm token={token} missing={missing} />;
@@ -114,19 +123,68 @@ export default async function CompletePage({
   }
 
   return (
-    <section className="bg-[#fafaf7] py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Complete your details
-          </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-neutral-700">
-            Add the last detail we need and a specialist firm from our partner network will be in
-            touch to arrange your free review, no obligation.
-          </p>
-          <div className="mt-10">{inner}</div>
+    <>
+      <SlimHero
+        eyebrow="Almost there"
+        title="Complete your details"
+        backdrop={<GeneralistBackdrop />}
+      >
+        <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
+          Add the last detail we need and a specialist firm from our partner network will be in
+          touch to arrange your free review, no obligation.
+        </p>
+      </SlimHero>
+
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl">
+            <Eyebrow>One field left</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+              Where should we call you
+            </h2>
+          </div>
+          <div className="mt-8 grid gap-8 sm:mt-10 sm:gap-12 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
+            <div>{inner}</div>
+
+            <div className="space-y-6">
+              {/* The objection on this page is "why do you need my number".
+                  Every line is checked against /privacy-policy §5 and §7: §5
+                  discloses that an enquiry is shared with regulated firms from
+                  the specialist partner network, up to three in the profession
+                  concerned plus up to three in related professions, so at most
+                  six, each an independent controller. Nothing here may promise
+                  otherwise. */}
+              <WhatToExpectCard
+                title="Why we are asking"
+                items={[
+                  "We cannot arrange a callback without a number to ring",
+                  "One call, at a time you choose, about twenty minutes",
+                  "Your enquiry goes to regulated firms in our partner network, up to six of them",
+                  "You can object or ask us to stop at any time, from any message",
+                ]}
+              />
+              <p className="text-sm leading-relaxed text-slate-600">
+                Who receives your enquiry, and what we share, is set out in our{" "}
+                <Link
+                  href="/privacy-policy"
+                  className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800"
+                >
+                  privacy policy
+                </Link>
+                . Would rather just talk to someone?{" "}
+                <Link
+                  href="/contact"
+                  className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800"
+                >
+                  Use the contact form
+                </Link>{" "}
+                and we will pick your enquiry up from there. Nothing you have already told us is
+                lost.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

@@ -32,6 +32,10 @@ export const serviceTiers: ServiceTier[] = [
     ],
     cta: "Book a free call",
     ctaHref: "/contact",
+    // Keeps this tier's leading CTA colour. The badge itself is suppressed by
+    // passing featuredBadge="" at the call site: no pricing means no
+    // "most popular" plan to badge.
+    featured: true,
   },
   {
     name: "Done for you",

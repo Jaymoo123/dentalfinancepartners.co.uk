@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Download, FileText } from "lucide-react";
-import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-cta-map";
 import { siteConfig } from "@/config/site";
-import { SignupForm } from "@/components/newsletter/SignupForm";
 
 export const metadata: Metadata = {
   title: `Free UK Business Templates`,
@@ -67,22 +70,20 @@ const TEMPLATES = [
 export default function TemplatesIndexPage() {
   return (
     <>
-      <section className={`${sectionY} bg-[#fafaf7]`}>
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Templates" },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
-              Free templates
-            </p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
+      <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
+        <GeneralistBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Breadcrumb
+              siteUrl={siteConfig.url}
+              onDark
+              items={[{ label: "Home", href: "/" }, { label: "Templates" }]}
+            />
+            <Eyebrow onDark>Free templates</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl lg:text-6xl">
               UK business templates, free.
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600 max-w-2xl">
+            <p className="mt-4 text-base leading-7 text-white/90 sm:mt-6 sm:text-lg">
               Seven PDF templates for UK limited companies, contractors and sole traders. Each one reviewed against current HMRC and Companies House requirements. Download, fill in, use. No email required.
             </p>
           </div>
@@ -91,28 +92,28 @@ export default function TemplatesIndexPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-6xl mx-auto grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {TEMPLATES.map((t) => (
               <article
                 key={t.slug}
-                className="group flex h-full flex-col border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-orange-600 hover:shadow-md"
+                className="flex h-full flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200 transition-shadow hover:shadow-md sm:p-7"
               >
-                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-orange-500 to-orange-700 shadow-sm">
-                  <FileText className="h-6 w-6 text-white" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50">
+                  <FileText className="h-6 w-6 text-primary-700" />
                 </div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900">
+                <h2 className="mt-5 text-xl font-bold text-slate-900">
                   {t.title}
                 </h2>
-                <p className="mt-2 text-xs font-mono uppercase tracking-wider text-neutral-500">
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
                   {t.audience}
                 </p>
-                <p className="mt-3 flex-grow text-sm text-neutral-600 leading-relaxed">
+                <p className="mt-3 flex-grow text-sm leading-relaxed text-slate-600">
                   {t.summary}
                 </p>
                 <a
                   href={`/templates/${t.slug}.pdf`}
                   download
-                  className="mt-5 inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2.5 text-sm font-bold transition-colors"
+                  className={`${btnPrimary} mt-5 w-full gap-2`}
                 >
                   <Download className="h-4 w-4" />
                   Download PDF
@@ -123,30 +124,34 @@ export default function TemplatesIndexPage() {
         </div>
       </section>
 
-      <section className="bg-[#fafaf7] py-16 border-t border-neutral-200">
+      <section className="bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Editorial</Eyebrow>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               About the templates
             </h2>
-            <p className="mt-4 text-base text-neutral-700 leading-relaxed">
+            <p className="mt-4 text-base leading-relaxed text-slate-700">
               Every template is reviewed by James Holloway against current HMRC and Companies House requirements. They are not a substitute for tailored tax advice, but they cover the standard documents most UK limited companies, contractors, sole traders and small businesses need.
             </p>
-            <p className="mt-4 text-base text-neutral-700 leading-relaxed">
+            <p className="mt-4 text-base leading-relaxed text-slate-700">
               No email required. Share them freely with your team, your accountant, or your network. If something is wrong or out of date, get in touch and the editorial team will fix it.
             </p>
-            <div className="mt-10 max-w-xl">
-              <SignupForm
-                source="templates"
-                variant="card"
-                heading="Want new templates as we publish them?"
-                body="Subscribe to The Director&rsquo;s Brief and we&rsquo;ll send you new templates when they land, plus one short tax-and-finance email a week."
-                ctaLabel="Subscribe"
-              />
-            </div>
           </div>
         </div>
       </section>
+
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          title="Would a conversation be quicker than a blank template?"
+          description="A free call with an accountant who works from your actual figures, instead of a document you have to fill in and interpret yourself."
+          proofPoints={LEAD_PROOF_POINTS}
+          form={<LeadForm submitLabel="Request callback" redirectOnSuccess={false} />}
+          contained
+          ground="white"
+          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+        />
+      </div>
     </>
   );
 }

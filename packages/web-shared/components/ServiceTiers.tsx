@@ -17,7 +17,12 @@ export interface ServiceTier {
 
 export interface ServiceTiersProps {
   tiers: ServiceTier[];
-  /** Badge text on the featured tier. */
+  /**
+   * Badge text on the featured tier. Pass "" to keep the featured tier's
+   * emphasis (its CTA colour and border) while suppressing the badge itself:
+   * a site that publishes no pricing has no "most popular" plan to badge, but
+   * still needs one leading call to action.
+   */
   featuredBadge?: string;
 }
 
@@ -33,7 +38,7 @@ export function ServiceTiers({ tiers, featuredBadge = "Most Popular" }: ServiceT
               : "border-slate-200 hover:border-[var(--brand-primary)] hover:shadow-md"
           }`}
         >
-          {tier.featured && (
+          {tier.featured && featuredBadge && (
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <div className="bg-[var(--brand-primary)] px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
                 {featuredBadge}

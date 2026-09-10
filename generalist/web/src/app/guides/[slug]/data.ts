@@ -317,13 +317,13 @@ export const GUIDES: Record<string, Guide> = {
       <td>Regularly submits R&D claims for software development, manufacturing, and creative projects</td>
     </tr>
     <tr>
-      <td>Cost</td>
-      <td>£150, £300 per month for basic compliance</td>
-      <td>£200, £400 per month but includes more proactive advice</td>
+      <td>Scope of the engagement</td>
+      <td>Compliance filings, with specialist work referred out to a third party</td>
+      <td>Compliance plus R&D claims, capital allowances reviews and exit planning handled in house, scoped and agreed in writing before the work starts</td>
     </tr>
   </tbody>
 </table>
-<p>If your business turns over more than £100k or has multiple revenue streams, a specialist is almost always the better choice.</p>
+<p>The more moving parts a business has, several revenue streams, a group structure, R&D work, property in the company, the more the answer turns on judgement rather than filing, and the more a specialist earns their place. A single-trade company with one income stream and no unusual assets is well served by good compliance.</p>
 
 <h2>Week 1: Research and Shortlist</h2>
 <h3>Define your requirements</h3>

@@ -6,7 +6,7 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { blogCtaCopy } from "@/lib/blog-cta-map";
-import { getTeamMember } from "@/app/team/[slug]/data";
+import { getTeamMember } from "@/lib/team";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import {
@@ -89,8 +89,11 @@ export function BlogPostRenderer({
 
   const decoratedHtml = decorateAsides(post.contentHtml);
 
-  // Byline: the editorial lead is the default so the Person schema always has a
-  // real /team/[slug] URL. Reviewer is the standing technical reviewer.
+  // Byline: the editorial lead is the default byline. There are no per-author
+  // pages (the team route was deleted 2026-09-10), so names render as plain
+  // text except in the about-the-author card, where the name links to /about,
+  // the same URL the author schema fallback emits. Reviewer is the standing
+  // technical reviewer.
   const author = getTeamMember(post.authorSlug || "emma-carter");
   const authorName = author?.name ?? post.author ?? "Editorial Team";
   const reviewer = getTeamMember("james-holloway");
@@ -172,13 +175,7 @@ export function BlogPostRenderer({
                   ) : null}
                   <span className={metaPill}>
                     <UserRound aria-hidden className="h-3.5 w-3.5 text-primary-600" />
-                    {author ? (
-                      <Link href={`/team/${author.slug}`} rel="author" className="hover:text-primary-700">
-                        {authorName}
-                      </Link>
-                    ) : (
-                      authorName
-                    )}
+                    {authorName}
                   </span>
                   {readTime > 0 ? (
                     <span className={metaPill}>
@@ -339,13 +336,9 @@ export function BlogPostRenderer({
               <aside className="mt-16 rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
                 <Eyebrow>{isPillar ? "About this guide" : "About the author"}</Eyebrow>
                 <p className="text-lg font-bold text-slate-900">
-                  {author ? (
-                    <Link href={`/team/${author.slug}`} rel="author" className="hover:text-primary-700">
-                      {authorName}
-                    </Link>
-                  ) : (
-                    authorName
-                  )}
+                  <Link href="/about" rel="author" className="hover:text-primary-700">
+                    {authorName}
+                  </Link>
                   {author?.qualifications ? (
                     <span className="font-normal text-slate-500">, {author.qualifications}</span>
                   ) : null}
@@ -357,9 +350,7 @@ export function BlogPostRenderer({
                       Reviewed by
                     </p>
                     <p className="mt-1 text-base font-bold text-slate-900">
-                      <Link href={`/team/${reviewer!.slug}`} className="hover:text-primary-700">
-                        {reviewer!.name}
-                      </Link>
+                      {reviewer!.name}
                       {reviewer!.qualifications ? (
                         <span className="font-normal text-slate-500">
                           , {reviewer!.qualifications}

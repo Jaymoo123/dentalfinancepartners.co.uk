@@ -25,18 +25,15 @@ function easeOutCubic(t: number): number {
 function StatValue({ stat, play }: { stat: StatItem; play: boolean }) {
   const { target, decimals = 0 } = stat;
   /**
-   * SSR renders the TRUE target, not the 60% start frame. Anything reading the
-   * raw HTML (no-JS readers, crawlers, LLM scrapes) must see the real figure:
-   * these tiles carry locked tax rates, and shipping "12%" where the answer is
-   * 20% is a factual defect, not an animation detail. The start frame is
-   * installed on mount instead, so JS visitors still get the count-up.
+   * Holds the TRUE target until the count-up actually starts. Anything reading
+   * the raw HTML (no-JS readers, crawlers, LLM scrapes) must see the real
+   * figure: these tiles carry locked tax rates, and shipping "12%" where the
+   * answer is 20% is a factual defect, not an animation detail. Dropping to the
+   * start frame on mount instead would settle a tile permanently at 60% of the
+   * truth whenever the observer never fires (short viewport, tile never fully
+   * visible), so the start frame is computed inside the animation itself.
    */
   const [display, setDisplay] = useState(target);
-
-  useEffect(() => {
-    setDisplay((d) => (d === target ? target * START_FRACTION : d));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   useEffect(() => {
     if (!play) return;

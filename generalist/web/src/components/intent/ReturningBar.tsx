@@ -9,6 +9,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 
 const DISMISS_KEY = "hd_returning_bar_dismissed";
 
@@ -36,11 +37,11 @@ export function ReturningBar() {
   const offer = action.offer;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-orange-700 bg-orange-900 text-white shadow-2xl">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 text-sm">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t-4 border-primary-600 bg-slate-900 text-white shadow-2xl">
+      <div className={`${siteContainerLg} flex items-center justify-between gap-3 py-3 text-sm`}>
         <span className="min-w-0">
           <span className="font-semibold">Welcome back. {offer.reason}.</span>{" "}
-          <span className="hidden text-orange-200 sm:inline">{offer.blurb}</span>
+          <span className="hidden text-slate-300 sm:inline">{offer.blurb}</span>
         </span>
         <div className="flex shrink-0 items-center gap-3">
           <Link
@@ -48,7 +49,7 @@ export function ReturningBar() {
             data-cta="returning_bar"
             data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
             onClick={() => trackPersonalization("clicked", action)}
-            className="rounded bg-white px-3 py-1.5 font-semibold text-orange-900 hover:bg-orange-50"
+            className={`${btnPrimary} shrink-0 whitespace-nowrap`}
           >
             {offer.title}
           </Link>
@@ -65,7 +66,7 @@ export function ReturningBar() {
               setDismissed(true);
               trackPersonalization("dismissed", action);
             }}
-            className="text-orange-200 hover:text-white"
+            className="text-slate-300 hover:text-white"
           >
             &times;
           </button>

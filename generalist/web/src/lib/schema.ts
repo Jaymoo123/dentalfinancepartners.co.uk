@@ -3,13 +3,13 @@
  *
  * Imports all builders from the shared @accounting-network/web-shared/schema
  * module and pre-binds site-specific values so callers use the same API as
- * before.  Person builders (buildPerson, referencedPerson) remain here because
- * they depend on getTeamMember from @/app/team/[slug]/data.
+ * before.  Authors resolve to the shared referencedPerson fallback, which emits
+ * a free-text Person pointing at <siteUrl>/about. There are no per-author
+ * pages: /team was deleted 2026-09-10.
  */
 
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-import { getTeamMember } from "@/app/team/[slug]/data";
 import type { BlogPost } from "@/types/blog";
 
 import {
@@ -53,7 +53,6 @@ import {
   buildDataset as _buildDataset,
   buildCourse as _buildCourse,
   buildOgImageUrl as _buildOgImageUrl,
-  buildPerson as _buildPerson,
   referencedPerson as _referencedPerson,
 } from "@accounting-network/web-shared/schema";
 
@@ -111,21 +110,11 @@ function getSiteOpts(): SiteSchemaOpts {
 }
 
 // ---------------------------------------------------------------------------
-// Person builders — stay local: depend on getTeamMember
+// Author reference — always the free-text fallback (url = <siteUrl>/about)
 // ---------------------------------------------------------------------------
 
-export function buildPerson(slug: string): Person | null {
-  const member = getTeamMember(slug);
-  if (!member) return null;
-  return _buildPerson(member, getSiteOpts());
-}
-
-export function referencedPerson(
-  slug: string | undefined,
-  fallbackName?: string,
-): SchemaThing {
-  const member = slug ? getTeamMember(slug) : null;
-  return _referencedPerson(member ?? null, {
+export function referencedPerson(fallbackName?: string): SchemaThing {
+  return _referencedPerson(null, {
     siteUrl: siteConfig.url,
     siteName: siteConfig.name,
     name: fallbackName,
@@ -153,12 +142,12 @@ export function buildBreadcrumb(items: BreadcrumbItem[]): SchemaThing {
 }
 
 export function buildBlogPosting(post: BlogPost, path: string): SchemaThing {
-  const author = referencedPerson(post.authorSlug || "emma-carter", post.author);
+  const author = referencedPerson(post.author);
   return _buildBlogPosting(post, path, getSiteOpts(), author);
 }
 
 export function buildArticle(post: BlogPost, path: string): SchemaThing {
-  const author = referencedPerson(post.authorSlug || "emma-carter", post.author);
+  const author = referencedPerson(post.author);
   return _buildArticle(post, path, getSiteOpts(), author);
 }
 

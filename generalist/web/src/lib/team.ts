@@ -1,5 +1,7 @@
 /**
- * Editorial team / contributor data.
+ * Editorial byline data. Not a route: /team was deleted 2026-09-10 and both
+ * former URLs 301 to /about. This is the byline/reviewer source for the blog
+ * renderer and the author schema fallback only.
  *
  * Bylines here are editorial pen-names. Concrete tax advice is delivered
  * to clients via book-a-call, not via published content. Every page that
@@ -19,6 +21,7 @@ export type TeamMember = {
   expertise: string[];
   // Optional sameAs identities, fill when real profiles exist
   links?: { label: string; url: string }[];
+  /** Dead since /team was deleted; kept so existing entries still typecheck. */
   monogramColor: string;
 };
 
@@ -72,8 +75,4 @@ export const TEAM: Record<string, TeamMember> = {
 
 export function getTeamMember(slug: string): TeamMember | null {
   return TEAM[slug] ?? null;
-}
-
-export function getAllTeamSlugs(): string[] {
-  return Object.keys(TEAM);
 }

@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { GeneralistBackdrop } from "@/components/layout/GeneralistBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-cta-map";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { fmtNumber, fmtPct1, monthLabel } from "@/lib/research/format";
@@ -65,41 +70,68 @@ const reports = [
 export default function ResearchIndexPage() {
   return (
     <>
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <Breadcrumb variant="light" items={[{ label: "Home", href: "/" }, { label: "Research" }]} />
-          <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            UK small business research and data
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
-            Original, sourced reads on UK small business conditions, built entirely from official
-            open data (Companies House, The Insolvency Service, ONS and DBT). Free to read and cite
-            with attribution.
-          </p>
+      <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
+        <GeneralistBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Breadcrumb
+              siteUrl={siteConfig.url}
+              onDark
+              items={[{ label: "Home", href: "/" }, { label: "Research" }]}
+            />
+            <Eyebrow onDark>Open data, free to cite</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-4xl lg:text-5xl">
+              UK small business research and data
+            </h1>
+            <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">
+              Original, sourced reads on UK small business conditions, built entirely from official
+              open data (Companies House, The Insolvency Service, ONS and DBT). Free to read and cite
+              with attribution.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="bg-white py-10 sm:py-14">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-6 sm:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-2xl border border-neutral-200 p-6 transition hover:border-orange-500 hover:shadow-md sm:p-8"
+                data-cta={`research_hub_${r.href.split("/").pop()!.replace(/-/g, "_")}`}
+                data-cta-placement="hub_grid"
+                className="group rounded-xl border border-slate-200 p-6 transition hover:border-primary-600 hover:shadow-md sm:p-8"
               >
-                <div className="text-3xl font-bold text-orange-600 sm:text-4xl">{r.stat}</div>
-                <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-orange-700">
+                <div className="text-3xl font-bold tabular-nums text-primary-700 sm:text-4xl">{r.stat}</div>
+                <div className="mt-1 text-sm text-slate-600">{r.statLabel}</div>
+                <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-primary-700">
                   {r.title}
                 </h2>
-                <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-neutral-400">Updated {r.updated}</p>
+                <p className="mt-2 text-base leading-relaxed text-slate-600">{r.blurb}</p>
+                <p className="mt-4 text-xs text-slate-500">Updated {r.updated}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
+
+      {/* In-flow closing ask. The hub had no capture at all: a reader who came
+          for the data and stayed had nothing to do next but leave. Contained,
+          not the navy band, because this page ends here and the footer is
+          already slate-900: navy must never touch navy. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Free consultation"
+          title="Want this read applied to your own numbers?"
+          description="These pages are the national picture. What matters is where your own company, structure and cash position sit inside it. Book a free call and we will talk it through."
+          proofPoints={LEAD_PROOF_POINTS}
+          form={<LeadForm submitLabel="Speak to an accountant" redirectOnSuccess={false} />}
+          contained
+          ground="slate"
+          footnote="Every figure on these pages is drawn from published official statistics and is free to cite with attribution. If your position is already right, we will say so."
+        />
+      </div>
     </>
   );
 }

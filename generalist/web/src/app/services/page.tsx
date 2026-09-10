@@ -263,7 +263,7 @@ export default function ServicesPage() {
             From self-serve tools to a full annual engagement.
           </h2>
           <div className="mt-8 sm:mt-10">
-            <ServiceTiers tiers={serviceTiers} />
+            <ServiceTiers tiers={serviceTiers} featuredBadge="" />
           </div>
         </div>
       </section>

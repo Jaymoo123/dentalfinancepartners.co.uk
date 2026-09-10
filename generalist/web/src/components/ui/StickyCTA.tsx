@@ -147,7 +147,7 @@ export function StickyCTA() {
     <div
       role="region"
       aria-label="Talk to a specialist accountant"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-slate-900 shadow-2xl"
+      className="fixed bottom-0 left-0 right-0 z-50 border-t-4 border-primary-600 bg-slate-900 shadow-2xl"
     >
       <div className="mx-auto flex w-full max-w-5xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
         {/* Copy block */}
@@ -178,7 +178,8 @@ export function StickyCTA() {
           type="button"
           onClick={handleDismiss}
           aria-label="Dismiss"
-          className="shrink-0 rounded p-1 text-slate-400 transition-colors duration-150 hover:bg-slate-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+          data-cta="sticky_cta_close"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded p-1 text-slate-400 transition-colors duration-150 hover:bg-slate-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
         >
           <svg
             aria-hidden="true"

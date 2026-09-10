@@ -30,6 +30,19 @@ const nextConfig: NextConfig = {
     // audit). Loser of each pair 301s to the equity winner (GSC/Bing checked);
     // loser markdown removed.
     return [
+      // 2026-09-10: /team deleted (owner decision). Both former author URLs had
+      // impressions but zero clicks in 90d GSC, so they 301 to /about rather
+      // than 404.
+      {
+        source: "/team/emma-carter",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/team/james-holloway",
+        destination: "/about",
+        permanent: true,
+      },
       {
         source: "/pricing",
         destination: "/services",
@@ -82,7 +95,19 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
-    return buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" });
+    return [
+      ...buildSecurityHeaders({ ga: true, supabase: true, embedPrefix: "embed" }),
+      {
+        // Post-submit surfaces echo back what the visitor just sent us and
+        // carry a lead token in the URL. Keep them out of shared and browser
+        // caches so a back button or a proxy cannot re-serve one person's
+        // enquiry to the next person on the machine.
+        source: "/:path(thank-you|book|complete)",
+        headers: [
+          { key: "Cache-Control", value: "private, no-cache, no-store, max-age=0, must-revalidate" },
+        ],
+      },
+    ];
   },
 };
 

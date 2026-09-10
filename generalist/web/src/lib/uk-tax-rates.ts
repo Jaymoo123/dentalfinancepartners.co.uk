@@ -155,8 +155,13 @@ export const UK_TAX_RATES = {
     reducedRateCharityGiftThreshold: 0.10,
     businessRelief: {
       unquotedShares: 1.00,
-      qualifyingBusinessAssets_above_1m_from_apr_2026: 0.50,
-      apr2026CapNote: "From 6 April 2026: 100% BPR/APR capped at £1m combined, then 50% thereafter.",
+      qualifyingBusinessAssets_above_cap_from_apr_2026: 0.50,
+      // The October 2024 Budget set this cap at £1m and non-transferable. On
+      // 23 December 2025 the Government raised it to £2.5m and made it
+      // transferable; enacted in FA 2026. Any "£1m cap" in 2024-25 coverage is
+      // the superseded figure.
+      apr2026CapNote:
+        "From 6 April 2026: 100% BPR/APR capped at £2.5m combined (transferable between spouses, so up to £5m), then 50% thereafter. AIM shares drop to 50% in all circumstances, outside that allowance.",
     },
   },
   sources: [

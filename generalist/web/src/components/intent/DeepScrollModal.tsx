@@ -9,6 +9,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 const SUPPRESS_DAYS = 30;
 const suppressKey = (topic: string) => `hd_deepscroll_${topic}`;
@@ -90,6 +91,9 @@ export function DeepScrollModal() {
           <button
             type="button"
             aria-label="Close"
+            // Non-canonical id kept deliberately (DESIGN_DELTA 4b): estate canonical
+            // is deep_scroll_modal_close; generalist keeps deep_scroll_close, mapping
+            // deep_scroll_close -> deep_scroll_modal_close recorded here.
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
             className="text-slate-400 hover:text-slate-700"
@@ -97,7 +101,7 @@ export function DeepScrollModal() {
             &times;
           </button>
         </div>
-        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-orange-700">
+        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-primary-700">
           {offer.reason}
         </p>
         <p className="mt-2 text-sm text-slate-600">{offer.blurb}</p>
@@ -110,7 +114,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-orange-500 px-4 py-2.5 text-center font-semibold text-white hover:bg-orange-600"
+            className={`${btnPrimary} w-full`}
           >
             {primaryLabel}
           </Link>

@@ -20,11 +20,10 @@ export type BlogFrontmatter = {
   updatedDate?: string;
   /**
    * Free-text author name from frontmatter. Used as the byline label when
-   * `authorSlug` doesn't resolve to a /team/[slug] entry. Legacy posts use
-   * this; new posts should set `authorSlug` instead.
+   * `authorSlug` doesn't resolve to an entry in `@/lib/team`.
    */
   author: string;
-  /** Slug into /team/[slug] for the canonical Person schema author. */
+  /** Key into `@/lib/team` for the byline name, role and qualifications. */
   authorSlug?: string;
   category: string;
   metaTitle: string;

@@ -21,9 +21,21 @@
  */
 export function ExampleFigureNote({
   className = "",
+  label = "Example figures displayed",
   children,
 }: {
   className?: string;
+  /**
+   * The note itself. Defaults to the illustrative-figure wording, so every
+   * existing caller renders byte-unchanged.
+   *
+   * Overridden only where the figures are official statistics rather than
+   * illustrations: on a research page built from Companies House, Insolvency
+   * Service and ONS releases, "Example figures displayed" would be FALSE, and
+   * a false disclaimer is worse than none. Those callers pass the attribution
+   * instead ("Source: ..."), which is the same job the note is doing.
+   */
+  label?: string;
   /**
    * A caller's own fine print, set on the SAME line as the note ahead of it.
    *
@@ -42,7 +54,7 @@ export function ExampleFigureNote({
       {children ? <>{children} </> : null}
       <span aria-hidden>*</span>
       <span className="sr-only">Note: </span>
-      Example figures displayed
+      {label}
     </p>
   );
 }

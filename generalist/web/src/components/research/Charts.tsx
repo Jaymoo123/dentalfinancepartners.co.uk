@@ -6,6 +6,13 @@
  * The site has no recharts/D3 dependency (see MiniBarChart in the
  * calculators fleet for the established precedent), so these charts are
  * plain CSS/inline-SVG: no new dependency for four research pages.
+ *
+ * ACCESSIBILITY (design port): every value renders as TEXT and the bars are
+ * `aria-hidden` decoration. Before, each chart was one `role="img"` node with a
+ * generic label ("Bar chart"), which collapses the whole subtree into a single
+ * unlabelled image, and the numbers existed only in `title=` attributes, which
+ * touch devices never surface and crawlers do not read. On a research page
+ * whose entire value is citable numbers, that made the numbers unreachable.
  */
 
 export type BarPoint = { label: string; value: number; secondaryValue?: number };
@@ -41,37 +48,49 @@ export function VerticalBarChart({
   const max = Math.max(...data.flatMap((d) => [d.value, d.secondaryValue ?? 0]), 1);
 
   return (
-    <div role="img" aria-label="Bar chart">
+    <div>
       {seriesLabels && (
-        <div className="mb-3 flex items-center gap-4 text-xs text-neutral-600">
+        <div className="mb-3 flex items-center gap-4 text-xs text-slate-600">
           <span className="flex items-center gap-1.5">
-            <span className="h-2.5 w-2.5 rounded-sm bg-orange-500" />
+            <span aria-hidden className="h-2.5 w-2.5 rounded-sm bg-primary-600" />
             {seriesLabels[0]}
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="h-2.5 w-2.5 rounded-sm bg-neutral-300" />
+            <span aria-hidden className="h-2.5 w-2.5 rounded-sm bg-slate-300" />
             {seriesLabels[1]}
           </span>
         </div>
       )}
       <div className="flex items-end gap-2 overflow-x-auto pb-1" style={{ minHeight: 200 }}>
         {data.map((d) => (
-          <div key={d.label} className="flex min-w-[36px] flex-1 flex-col items-center gap-1.5">
-            <div className="flex h-[180px] w-full items-end justify-center gap-0.5">
+          <div key={d.label} className="flex min-w-[44px] flex-1 flex-col items-center gap-1.5">
+            {/* Values first in the DOM, so a screen reader hears the number
+                before the decorative bars it labels. */}
+            <div className="flex flex-col items-center gap-0.5 text-[10px] leading-tight tabular-nums">
+              <span className="whitespace-nowrap font-semibold text-slate-900">
+                {seriesLabels && <span className="sr-only">{seriesLabels[0]}: </span>}
+                {formatValue(d.value)}
+              </span>
+              {d.secondaryValue !== undefined && (
+                <span className="whitespace-nowrap text-slate-600">
+                  {seriesLabels && <span className="sr-only">{seriesLabels[1]}: </span>}
+                  {formatValue(d.secondaryValue)}
+                </span>
+              )}
+            </div>
+            <div aria-hidden className="flex h-[180px] w-full items-end justify-center gap-0.5">
               <div
-                className="w-full rounded-t bg-orange-500"
+                className="w-full rounded-t bg-primary-600"
                 style={{ height: `${Math.max(2, (d.value / max) * 180)}px` }}
-                title={formatValue(d.value)}
               />
               {d.secondaryValue !== undefined && (
                 <div
-                  className="w-full rounded-t bg-neutral-300"
+                  className="w-full rounded-t bg-slate-300"
                   style={{ height: `${Math.max(2, (d.secondaryValue / max) * 180)}px` }}
-                  title={formatValue(d.secondaryValue)}
                 />
               )}
             </div>
-            <span className="whitespace-nowrap text-[10px] text-neutral-500">{d.label}</span>
+            <span className="whitespace-nowrap text-[10px] text-slate-600">{d.label}</span>
           </div>
         ))}
       </div>
@@ -94,20 +113,20 @@ export function HorizontalBarChart({
   const max = Math.max(...data.map((d) => d.value), 1);
 
   return (
-    <div className="space-y-2.5" role="img" aria-label="Ranked bar chart">
+    <div className="space-y-2.5">
       {data.map((d) => {
         const pct = Math.max(0, Math.min(100, (d.value / max) * 100));
         return (
           <div key={d.label} className="space-y-1">
             <div className="flex items-center justify-between gap-2">
-              <span className="min-w-0 truncate text-xs text-neutral-700">{d.label}</span>
-              <span className="shrink-0 text-xs font-semibold tabular-nums text-neutral-900">
+              <span className="min-w-0 truncate text-xs text-slate-700">{d.label}</span>
+              <span className="shrink-0 text-xs font-semibold tabular-nums text-slate-900">
                 {formatValue(d.value)}
               </span>
             </div>
-            <div className="h-4 w-full overflow-hidden rounded bg-neutral-100">
+            <div aria-hidden className="h-4 w-full overflow-hidden rounded bg-slate-100">
               <div
-                className="h-full rounded bg-orange-500"
+                className="h-full rounded bg-primary-600"
                 style={{ width: `${pct}%`, minWidth: pct > 0 ? "2px" : undefined }}
               />
             </div>
