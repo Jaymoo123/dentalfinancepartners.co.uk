@@ -79,7 +79,7 @@ function VerdictBadge({ result }: { result: PremiumResult }) {
         "rounded border px-4 py-3 text-sm font-semibold",
         result.verdict.positive
           ? "border-orange-200 bg-orange-50 text-orange-800"
-          : "border-amber-200 bg-amber-50 text-amber-800",
+          : "border-violet-700 bg-violet-50 text-violet-800",
       ].join(" ")}
     >
       {result.verdict.text}

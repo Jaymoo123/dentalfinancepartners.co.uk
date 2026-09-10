@@ -255,7 +255,7 @@ export function CalculatorTabs({ tabs = HOME_TABS }: { tabs?: TabKey[] } = {}) {
             hidden={active !== tab.key}
           >
             {tab.key === "employerni" ? (
-              <EmployerNICalculator />
+              <EmployerNICalculator gateCampaign="employer-ni-calculator" />
             ) : (
               <CalculatorClient slug={TAB_SLUGS[tab.key]} variant="page" />
             )}
