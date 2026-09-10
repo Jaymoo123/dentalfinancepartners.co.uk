@@ -1,5 +1,93 @@
 # Generalist (Holloway Davies) — site state
 
+> **2026-09-10 — PORT COMPLETE, ALL SIX PHASES BUILT AND REVIEWED. NOTHING DEPLOYED.**
+> Production is still `18b4f25f` (old design). Next steps, in order: owner dev-server
+> walk, owner decisions below, owner-triggered deploy.
+>
+> **Phases.** 0-4 built in session 2. This session: phase 4 fidelity review (FAIL, fixed,
+> re-reviewed PASS-WITH-GAPS), phase 5 (homepage F.2, pillars, 193 locations; FAIL, fixed,
+> re-reviewed PASS-WITH-GAPS), phase 6 (contact/post-submit, about, research, magnets,
+> rates, newsletter, legal, interruptive restyle, /team deletion; PASS-WITH-GAPS, fixed).
+> Commits: `a8ba8456` `f96f9d9a` `78fea266` `c0fb02d8` `9c00ad35` `63cf2d5c`.
+>
+> **Verification at close** (re-run after every content change, not once):
+> build 818/818 pages (820 less the two deleted /team routes), generalist 309 tests,
+> web-shared 406 tests, `check_dependency_closure.py` OK across 19 sites, and a crawl of
+> ALL 341 baseline routes in `_port/link_baseline.json` showing zero unique-internal-link
+> drops and zero em-dash regressions.
+>
+> **Method that worked and should be reused for sites 2-15:** builder agent ->
+> manager-verified -> INDEPENDENT adversarial reviewer against the RENDERED DOM -> gap-fix
+> -> re-review. Every single review found real defects, and the two worst were invisible to
+> source-only inspection. Reviewers must curl the running server; `tsc` + tests are not
+> enough (they do not catch a server/client boundary error either, only a real build does).
+>
+> **Live defects this port found and fixed, none of them design work:**
+> - `/contact` said "We don't share your details" while privacy policy §5 discloses sharing
+>   with up to six regulated firms. Consent-integrity defect, live.
+> - StatsCounter SSR'd 60% of the target, so raw HTML said 12% where the merged R&D credit
+>   is 20%, and 18% where the ERIS threshold is 30%. Humans never saw it; crawlers and LLM
+>   scrapes saw nothing else. NOTE: Property runs its OWN copy of this component
+>   (`Property/web/src/components/property/StatsCounter.tsx`) and is STILL AFFECTED.
+> - Research charts were a single `role="img"` node, which collapses the subtree, so not one
+>   data value was reachable to a screen reader on any research page.
+> - Expired reliefs and wrong VAT rates on town pages: super-deduction (ended Mar 2023),
+>   enhanced capital allowances (abolished Apr 2020), the 12.5% hospitality rate (ended Mar
+>   2022), 5% accommodation (ended Sep 2021), an invented "100% FYA under the special rate
+>   pool for offshore assets", RDEC as a live alternative to the merged scheme, employer NIC
+>   at 14.5%, and one page quoting the VAT registration threshold as £85,000 (it is £90,000).
+> - `uk-tax-rates.ts` capped BPR/APR at £1m, the superseded Oct-2024 figure (now £2.5m,
+>   transferable to £5m, FA 2026).
+> - 180 locked-rule breaches across the town pages that the first pricing pass missed
+>   because it searched for the £ symbol rather than the rules. £ is stored as `£`,
+>   so a literal grep finds NOTHING: that blind spot cost two passes.
+> - A publicly reachable guide quoted a £200-£400/month cost band for a specialist
+>   accountant, which is us. `/r-and-d-credits` offered no-win-no-fee, the claim-farm idiom
+>   house_positions §21.6 bans. A live 404 on the R&D hub link. `priceRange` asserted in
+>   structured data on a site that publishes no prices.
+> - 158 town questions asked "how much do you charge" while no answer could say. Reworded.
+>   All 772 questions and 772 answers are now unique across the estate.
+>
+> **OWNER DECISIONS OPEN (bundled, do not drip):**
+> 1. `leadConsentText` understates privacy §5 (sequential "a firm ... another firm" vs up to
+>    six including related professions; `/complete` already says six). NOT changed: it is a
+>    measured conversion surface, the 2026-08-24 change cut mini-form leads ~10/wk -> 3.9/wk
+>    and was reverted, and the standing rule is a conversion read first. See
+>    [[consent_wording_conversion_incident]].
+> 2. Ten `localCaseStudy` bodies say "under the SME scheme". All are past-tense narratives of
+>    pre-Apr-2024 periods, so none is factually wrong, but a reader could take it as
+>    currently available. Date-tag them or leave.
+> 3. Property's own StatsCounter still SSRs 60% values. Standing rule says never change
+>    Property, even indirectly, so it was left alone.
+> 4. FAQ answers on town and research pages are inside a Radix accordion and render EMPTY in
+>    the pre-hydration HTML; questions render, answers do not, though FAQPage schema asserts
+>    them. Pre-existing, systemic, and a kit change would touch Property.
+> 5. Roughly 250 town answers still carry first-pass "fixed fee / no hidden charges"
+>    boilerplate. Breaches no rule; a separate pass if wanted.
+> 6. Yiewsley `:6385` says "exempt storage" in a partial exemption calculation. Self-storage
+>    has been standard rated since Oct 2012, but the body does not say enough to be certain.
+>
+> **DELIBERATE CALLS RECORDED:** articles lost 2 unique internal links each with `/team`
+> (floors hold on 6-10 links of headroom; linking the byline to `/about` adds nothing unique
+> because `/about` is already in chrome). `/team` URLs 308 to `/about` (15 + 5 impressions,
+> zero clicks, 90d GSC) rather than 404. Testimonials omitted estate-wide, no real quotes.
+> Warning ramp gained a light violet step for dark grounds (owner approved 09-10). Embed
+> gallery keeps site chrome (owner approved 09-10). In-flow closing panels on research and
+> /uk-tax-rates authorised as non-interruptive; NO new modal, banner or exit-intent exists.
+> `intent-engine.test.ts` passes byte-unchanged, which is the proof no cadence moved.
+>
+> **ANALYTICS:** `cta_section_primary` and `cta_section_secondary` stop emitting when
+> `CTASection` is deployed away. Restate the deploy-watch baseline. `deep_scroll_close` is
+> kept non-canonical by design, mapping recorded in the component.
+>
+> **LEFTOVERS:** G2 21 calculator workedExamples; kit `FaqSection` html-answer option;
+> `buildWebApplication`/`buildFaqPage` rename (deferred to avoid colliding with concurrent
+> phase-5 call-site edits); two shared fleet defects in the rollout doc O.8 note; kit
+> `ProblemStatement` and `ComparisonTable` hardcode Property copy and a "Most recommended"
+> pill, so generalist mirrors them locally (owner items, a fix touches Property);
+> `generalist/.git` husk deletion still needs owner word.
+
+
 > **2026-09-09 SESSION 2 CLOSE — PORT PHASES 0-4 BUILT; NEXT = re-run the Phase 4
 > fidelity review, then Phases 5-6.** All local commits, NOTHING DEPLOYED; production
 > untouched at `18b4f25f`. Owner approved the full recommendation bundle same day
