@@ -138,6 +138,69 @@ closures fell from 59 to 42. Any page citing it must say so, or it misleads.
 EADDRINUSE, and the instrument happily measured Holloway Davies. Assert the served `<title>`
 before trusting any sweep.
 
+## 2026-09-10 - PHASE 1 COMPLETE (tokens + chrome), tagged `port-solicitors-phase1`
+
+Commits: `a4d501cc` brand layer, `0f40699a` nav IA and guard tests, `75d9f48f` chrome,
+`cb041c9d` fidelity gaps, `0f4de663` cta placement and goal on both kit consumers.
+Nothing deployed; production still serves 18b4f25f.
+
+**Verification at close** (re-run after every change, not once): build exit 0 at 294 pages,
+identical to the pre-port baseline; tsc clean; Solicitors 15 files / 204 tests (from 9 /
+183); web-shared 19 files / 406 tests; dependency closure OK across 19 sites; full crawl of
+all 274 baseline routes showing 0 link-floor breaches, 0 data-cta regressions and 0 em-dash
+regressions. Total unique internal links 5,343 to 10,510, nearly doubled by the nav IA with
+nothing removed.
+
+**Both reviews found real defects, as the playbook says they must.** Review 1
+PASS-WITH-GAPS: one blocker (`data-cta-goal` flipped `contact` to `form` on all 274 routes,
+splitting a live `vw_cta_performance` series), the Double Wired Creative designer credit
+appearing as a followed outbound link on ~281 URLs where the site never had one, 7 uncovered
+footnote anchors, 7 dead tokens. Review 2 (the re-review, which exists because a fix pass
+can introduce a blocker) found the fix had reasoned about the wrong consumer set: the kit
+chrome is imported by exactly TWO sites, generalist and Solicitors, and Property is NOT one
+of them, so generalist still carried both defects, and a third of the same class
+(`data-cta-placement` hardcoded `mobile_menu` against a pre-port `header_mobile`) had been
+missed entirely because the drawer renders only when open and no SSR crawl sees it.
+
+**Kit changes, all additive, all defaulting to Property's exact current behaviour:**
+`ctaContactGoal`, `ctaMobilePlacement` on `SiteHeader`; `showBuilderCredit` on `SiteFooter`.
+Property proven unaffected by ARCHITECTURE, not by the defaults: it imports none of the kit
+chrome and keeps its own local copies.
+
+**Found while verifying, not by either reviewer:** `check_dependency_closure.py` went red
+because the new wordmark imports `lucide-react` and this site never declared it. That is the
+SECOND dependency in this phase resolving only through root hoisting, after `tw-animate-css`;
+both would have built here and failed on a clean install. The builder brief did not ask for
+the closure check, which was a manager omission, and it is now in every builder brief.
+
+**Deliberate calls recorded:**
+- `font-serif` is mapped to the sans stack as a documented transitional no-op. Dropping
+  Cormorant left 193 classes across 39 files that later phases own; without the mapping they
+  fall back to Times for the duration of the port. The mapping line goes when the count
+  reaches zero.
+- The anchor offset was widened beyond the reported gap to cover article headings and
+  footnote list items, because the pre-port browser check found ALL 428 anchor targets across
+  80 routes computing `scroll-margin-top: 0`, so every in-page jump on the site hid its own
+  heading under the sticky header.
+- StickyCTA deliberately re-mounted on every route. The kit shell mounts none, so ~281 URLs
+  would otherwise have silently lost a capture surface. Cadence unchanged.
+- `data-cta` ids passed through unrenamed; the mixed hyphen/underscore convention is
+  pre-existing and live.
+
+**Process note.** THREE separate wrong-port incidents happened while verifying, each time
+because another session's server already held the port and `next start` failed to bind while
+the instrument happily measured a different site (generalist once, Medical twice). Two were
+caught by asserting the served `<title>` before trusting a sweep. The durable fix, now
+adopted: read the actual bound port out of the server log rather than assuming the requested
+one. Three sessions share this working tree.
+
+**OPEN OWNER QUESTIONS carried to the phase 2 bundle:**
+1. The designer credit is now off for Solicitors and generalist. Should it appear on sibling
+   sites the studio did not design at all?
+2. The header shows two reds side by side: the wordmark icon and rule at rose-600 `#ec003f`
+   (the kit hardcodes `text-primary-600`) against the brand crimson `#c41e3a` on the button.
+   Both cleared contrast; the delta asked for the icon to be the brand. Match them?
+
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
 `design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
