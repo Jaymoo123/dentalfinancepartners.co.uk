@@ -110,7 +110,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--navy)] hover:bg-[var(--surface-elevated)] md:hidden ${focusRing}`}
+            className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--surface)] text-[var(--navy)] hover:bg-[var(--surface-elevated)] md:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -149,7 +149,7 @@ export function SiteHeader() {
                 </p>
                 <button
                   type="button"
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--border)] ${focusRing}`}
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[var(--border)] ${focusRing}`}
                   aria-label="Close menu"
                   onClick={() => setOpen(false)}
                 >

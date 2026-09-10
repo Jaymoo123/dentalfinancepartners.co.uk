@@ -39,7 +39,7 @@ export default function BlogIndexPage() {
           { label: "Blog" },
         ]}
       />
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
+      <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
         Medical accounting insights for UK doctors
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">

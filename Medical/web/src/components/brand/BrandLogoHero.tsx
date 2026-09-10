@@ -11,7 +11,7 @@ export function BrandLogoHero() {
     <div className="mb-6 sm:mb-8">
       <Link
         href="/"
-        className={`group inline-flex max-w-full flex-col leading-none ${focusRing} rounded-lg outline-offset-4`}
+        className={`group inline-flex max-w-full flex-col leading-none ${focusRing} rounded-xl outline-offset-4`}
       >
         <span className="text-base font-bold uppercase tracking-[0.2em] text-white sm:text-lg md:text-xl">
           Medical Accountants

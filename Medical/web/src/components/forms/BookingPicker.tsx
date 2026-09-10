@@ -18,7 +18,7 @@ type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 // ponytail: CSS-var tokens so palette never drifts from globals.css
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
 const chipIdle =
   "border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--navy)] hover:bg-[var(--navy)]/5";
 const chipSelected =

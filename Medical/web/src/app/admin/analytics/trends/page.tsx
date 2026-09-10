@@ -37,7 +37,7 @@ function TrendSection({
         <span className="text-xs text-slate-500">{total.toLocaleString("en-GB")} total · peak {peak.toLocaleString("en-GB")}</span>
       </div>
       {values.length === 0 ? (
-        <div className="mt-3 flex h-16 items-center justify-center rounded-lg border border-dashed border-slate-200 text-xs text-slate-400">No data in this window</div>
+        <div className="mt-3 flex h-16 items-center justify-center rounded-xl border border-dashed border-slate-200 text-xs text-slate-400">No data in this window</div>
       ) : (
         <div className="mt-3 text-emerald-600">
           <Sparkline values={values} height={60} />

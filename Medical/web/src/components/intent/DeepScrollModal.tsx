@@ -91,7 +91,7 @@ export function DeepScrollModal() {
       onClick={() => close(true)}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl"
+        className="w-full max-w-md rounded-xl bg-white p-6 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">
@@ -119,7 +119,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-[var(--copper)] px-4 py-2.5 text-center font-semibold text-white hover:bg-[var(--copper-strong)]"
+            className="rounded-xl bg-[var(--copper)] px-4 py-2.5 text-center font-semibold text-white hover:bg-[var(--copper-strong)]"
           >
             {primaryLabel}
           </Link>
@@ -129,7 +129,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg border border-[var(--border)] px-4 py-2.5 text-center font-semibold text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
+            className="rounded-xl border border-[var(--border)] px-4 py-2.5 text-center font-semibold text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
           >
             {secondaryLabel}
           </Link>

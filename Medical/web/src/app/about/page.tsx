@@ -42,14 +42,14 @@ export default function AboutPage() {
           { label: "About" },
         ]}
       />
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
+      <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
         About Medical Accountants UK
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         We built a specialist accounting practice to serve the unique financial landscape of UK medicine — from NHS pension complexities and locum tax planning to private practice incorporation. We understand that your financial needs are distinct from generic small businesses, and our entire client base consists of GPs, consultants, locum doctors, and medical practice owners.
       </p>
       
-      <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Why medical-only focus matters</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--ink)] sm:text-2xl">Why medical-only focus matters</h2>
       <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
         Medical professionals face financial challenges that simply don't exist in other sectors. NHS pension annual allowance calculations, locum IR35 status, mixed NHS and private income reconciliation, practice partnership profit-sharing, and medical expense claims all require specific technical knowledge. A generalist accountant can process your numbers, but they won't proactively identify the tax planning opportunities or compliance risks that medical specialists recognize immediately.
       </p>
@@ -57,7 +57,7 @@ export default function AboutPage() {
         Our GP accountants work exclusively with medical professionals. Every client is a GP, consultant, locum doctor, or practice owner. This concentrated focus means we've encountered every scenario multiple times — from unexpected NHS pension tax charges to complex practice acquisition structures. We speak your language and understand the medical sector's financial realities.
       </p>
 
-      <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">How we work with medical professionals</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--ink)] sm:text-2xl">How we work with medical professionals</h2>
       <ul className="mt-4 list-disc space-y-3 pl-5 text-base leading-relaxed text-[var(--ink-soft)]">
         <li>Partner-led advice tailored specifically to GPs, consultants and medical practice owners. You work directly with qualified accountants who specialize in medical sector accounting.</li>
         <li>Proactive, year-round tax planning focused on medical-specific issues like NHS pension optimization, locum tax efficiency, and private practice structuring — not just year-end compliance.</li>
@@ -66,12 +66,12 @@ export default function AboutPage() {
         <li>Fixed-fee pricing with no hidden charges. You know exactly what you're paying before we start work.</li>
       </ul>
 
-      <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Who we work with</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--ink)] sm:text-2xl">Who we work with</h2>
       <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
         Our client base includes GP partners managing complex partnership structures, salaried GPs planning career progression, hospital consultants balancing NHS and private work, locum doctors managing multiple income streams, and practice owners considering expansion or succession. We serve medical professionals at every career stage, from newly qualified doctors establishing their tax position to senior consultants planning retirement and pension drawdown.
       </p>
       
-      <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Evidence-led content for medical professionals</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--ink)] sm:text-2xl">Evidence-led content for medical professionals</h2>
       <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
         Our{" "}
         <Link href="/blog" className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}>
@@ -94,7 +94,7 @@ export default function AboutPage() {
         .
       </p>
 
-      <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Our approach to medical accounting</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--ink)] sm:text-2xl">Our approach to medical accounting</h2>
       <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
         We don't offer generic accounting packages. Instead, we start with your specific situation and build a service around your needs. Whether you need help with NHS pension planning, locum tax returns, practice incorporation, or ongoing financial management, we tailor our approach to your professional structure and financial goals. You get direct access to your dedicated GP accountant, clear communication without jargon, and transparent fixed-fee pricing.
       </p>

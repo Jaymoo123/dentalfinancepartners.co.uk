@@ -40,6 +40,25 @@ The site's brand layer lives one level up, at `docs/medical/DESIGN_DELTA.md`.
    columns derived from nav data. Verified to cost zero internal links: both are
    cross-domain, so they never counted toward the link floor.
 4. A skippable calculator ResultGate ships on the 10 generic calculators.
+5. `/about` and `/contact` are REWRITTEN to what actually happens: we match an enquiry to a
+   specialist firm. The in-house-practice framing ("our entire client base consists of",
+   "your dedicated GP accountant") goes, because the privacy policy discloses a
+   partner-network handoff to up to six firms and both cannot be true.
+6. The cookie policy is CORRECTED IN FULL: the Universal Analytics cookie list, the
+   unverifiable IP-anonymisation and 14-month retention claims and the "no strictly
+   necessary cookies" line all go, and the roughly 12 `ma_*` browser storage keys the site
+   actually writes are described. This is a deliberate, owner-taken exception to the
+   standing "never add disclosures to a site lacking them" rule (memory
+   `clarity_removed_pecr_decision`), on the grounds that the alternative is continuing to
+   publish four false statements. The exception covers this page only.
+7. The calculator gate asks ONCE PER CALCULATOR, and a skip is remembered for that
+   calculator only. This fixes the live "unlock one, unlock all" bug
+   (`PremiumCalculator.tsx:43`, a single in-memory module boolean for the whole fleet) and
+   knowingly increases how often a reader meets the ask, from one per session to at most
+   one per calculator. Every ask stays skippable.
+8. Brand marks: a stethoscope wordmark icon, and an ECG rhythm-strip backdrop motif at
+   Property's exact geometry (55% width, hidden below `sm`, masked to transparent, same
+   opacity).
 
 ## Manager decisions, recorded not asked
 
@@ -53,6 +72,36 @@ The site's brand layer lives one level up, at `docs/medical/DESIGN_DELTA.md`.
   Medical's `<details>` and `<dl>` answers are fully server-rendered on 88 pages today.
   Adopting it would be a crawlability regression. This deliberately reverses the
   Solicitors call and is a sanctioned deviation, recorded in the DESIGN_DELTA.
+
+## Binding inputs for Phase 2 chrome (from the Solicitors run, verified in the tree)
+
+The kit chrome gained two optional props in `cb041c9d`, both defaulting to Property's exact
+current behaviour. Medical must pass both explicitly. **Do not add rival props for either.**
+
+- `SiteHeader` `ctaContactGoal` (`packages/web-shared/design/chrome/SiteHeader.tsx:72,300`).
+  Pass Medical's OWN pre-port `data-cta-goal` value, so the port does not split this site's
+  live funnel history into two series. Derive it from the current `SiteHeader.tsx` before
+  replacing it, and state the value you found.
+- `SiteFooter` `showBuilderCredit` (`.../SiteFooter.tsx:65,132`). **Pass `false`.** The kit
+  footer otherwise renders Property's designer credit on every page of this site as a
+  followed outbound link.
+
+**Phase 2 acceptance test, carried forward from the Phase 1 browser check.** The CURRENT
+footer paints navy links on the navy ground at a measured contrast ratio of **1.00**, i.e.
+literally invisible, across 170 page-loads. This is long-standing, not something Phase 1
+caused: the pre-port baseline shows the identical failure for the links that used to sit
+there (`a "For locum doctors"`, `a "NHS pension guide"`, `a "Medical guides"`), and the
+Phase 1 totals balance exactly, 394 new findings against 394 resolved, because the nav
+work merely changed which labels occupy those slots. It was deliberately NOT fixed in
+Phase 1, because the footer is replaced wholesale in Phase 2 and patching it first is
+churn. **The ported footer must render every link at 4.5:1 or better on the navy ground,
+measured in the rendered DOM, not asserted.**
+
+Note for the cutover annotation: `packages/web-shared/` is still moving under this port.
+The Solicitors Phase 1 commits `75d9f48f` and `cb041c9d` landed after Medical's Phase-0
+baseline was captured, so the passenger list grows. Re-derive
+`git log 18b4f25f..HEAD -- 'packages/web-shared/'` on the day of the deploy rather than
+reusing the count of 10 recorded below.
 
 ## Phase-0 facts (2026-09-10)
 

@@ -63,14 +63,14 @@ export default function CalculatorsIndexPage() {
                 className="group block bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-xl hover:bg-white hover:border-[var(--copper)] hover:shadow-md transition-all"
                 data-cta={`calculator-gallery-${c.slug}`}
               >
-                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-[var(--copper)] to-[var(--navy)] rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-[var(--copper)] to-[var(--navy)] rounded-xl shadow-sm">
                   <Calculator className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="mt-5 text-xl font-bold text-[var(--ink)] group-hover:text-[var(--copper)] transition-colors">
+                <h2 className="mt-5 text-xl font-bold text-[var(--ink)] group-hover:text-[var(--copper-strong)] transition-colors">
                   {c.name}
                 </h2>
                 <p className="mt-3 text-sm text-[var(--muted)] leading-relaxed">{c.oneLiner}</p>
-                <div className="mt-5 flex items-center text-[var(--copper)] font-semibold text-sm">
+                <div className="mt-5 flex items-center text-[var(--copper-strong)] font-semibold text-sm">
                   Open calculator
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>

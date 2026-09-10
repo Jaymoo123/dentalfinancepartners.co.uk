@@ -116,7 +116,7 @@ export default async function MedicalGuidePage({ params }: Props) {
       {/* Hero */}
       <section className="bg-[var(--navy)] text-white">
         <div className={`${siteContainerLg} py-14 sm:py-18`}>
-          <Breadcrumb items={breadcrumbItems} />
+          <Breadcrumb variant="light" items={breadcrumbItems} />
           <div className="mt-6 max-w-3xl">
             <div className="flex flex-wrap items-center gap-3">
               <span className="rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
@@ -127,7 +127,7 @@ export default async function MedicalGuidePage({ params }: Props) {
                 {guide.readTime} read
               </span>
             </div>
-            <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl">
+            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl">
               {guide.title}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/80 sm:text-lg">
@@ -157,7 +157,7 @@ export default async function MedicalGuidePage({ params }: Props) {
             <div className="space-y-10">
               {guide.sections.map((section, i) => (
                 <div key={i} id={`section-${i}`} className="scroll-mt-24">
-                  <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl border-l-4 border-[var(--copper)] pl-4">
+                  <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl border-l-4 border-[var(--copper)] pl-4">
                     {section.heading}
                   </h2>
                   <div className="mt-1">
@@ -169,7 +169,7 @@ export default async function MedicalGuidePage({ params }: Props) {
 
             {/* Key points */}
             <div className="mt-12 rounded-3xl bg-[var(--navy)] p-6 sm:p-8">
-              <h2 className="font-serif text-xl font-semibold text-white sm:text-2xl">
+              <h2 className="text-xl font-bold text-white sm:text-2xl">
                 Key points for UK doctors
               </h2>
               <ul className="mt-6 space-y-4">
@@ -185,7 +185,7 @@ export default async function MedicalGuidePage({ params }: Props) {
             {/* Related blog posts */}
             {guide.relatedPosts && guide.relatedPosts.length > 0 && (
               <div className="mt-10">
-                <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+                <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
                   Related articles
                 </h2>
                 <ul className="mt-5 space-y-3">
@@ -206,7 +206,7 @@ export default async function MedicalGuidePage({ params }: Props) {
 
             {/* CTA */}
             <div className="mt-12 rounded-3xl border border-[var(--copper)]/25 bg-[var(--background)] p-6 sm:p-8">
-              <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+              <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
                 Need personalised advice?
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
@@ -229,7 +229,7 @@ export default async function MedicalGuidePage({ params }: Props) {
       {relatedGuidesData.length > 0 && (
         <section className="bg-[var(--background)] border-t border-[var(--border)]">
           <div className={`${siteContainerLg} py-12 sm:py-16`}>
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
               More medical guides
             </h2>
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -237,16 +237,16 @@ export default async function MedicalGuidePage({ params }: Props) {
                 <Link
                   key={g.slug}
                   href={`/medical-guides/${g.slug}`}
-                  className={`group rounded-2xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
+                  className={`group rounded-xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
                 >
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--copper)]">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--copper-strong)]">
                     {g.eyebrow}
                   </span>
-                  <h3 className="mt-2 font-serif text-base font-semibold text-[var(--ink)] leading-snug group-hover:text-[var(--navy)] sm:text-lg">
+                  <h3 className="mt-2 text-base font-bold text-[var(--ink)] leading-snug group-hover:text-[var(--navy)] sm:text-lg">
                     {g.title}
                   </h3>
                   <p className="mt-2 text-xs leading-relaxed text-[var(--muted)] line-clamp-2">{g.summary}</p>
-                  <span className="mt-3 inline-block text-sm font-semibold text-[var(--copper)]">Read guide →</span>
+                  <span className="mt-3 inline-block text-sm font-semibold text-[var(--copper-strong)]">Read guide →</span>
                 </Link>
               ))}
             </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
-import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, btnSecondary, focusRing, focusRingOnDark, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
 import { buildFaqPage, buildHomepageServiceSchema } from "@/lib/schema";
@@ -59,9 +59,6 @@ const HOMEPAGE_FAQS = [
       "Yes, and most doctors do. Professional clearance is requested from your existing accountant, who passes over the records and the tax history. You are picked up from your current position rather than starting again, and there is no need to wait for a year end or a filing deadline to pass.",
   },
 ];
-
-const btnMailOutline =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--medical-teal)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--medical-teal)] transition-all duration-200 hover:border-[var(--medical-teal)] hover:bg-[var(--medical-teal)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--coral)]";
 
 // Title/description written 2026-08-26 from the 90d GSC head set (data through
 // 2026-08-23). The old title carried "gp accountants" (1,309 impr) but nothing
@@ -238,7 +235,7 @@ export default function HomePage() {
           <div className="hero-reveal">
             <BrandLogoHero />
           </div>
-          <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
+          <h1 className="hero-reveal-delay mt-8 max-w-4xl text-[1.75rem] font-bold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
             <span className="block">Specialist medical accountants</span>
             <span className="block">and GP accountants for UK doctors</span>
           </h1>
@@ -260,7 +257,7 @@ export default function HomePage() {
             {activeCta.hero_secondary ? (
               <Link
                 href={activeCta.hero_secondary.href}
-                className={`inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10 ${focusRing}`}
+                className={`inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10 ${focusRingOnDark}`}
                 data-cta="hero_secondary" data-cta-placement="hero"
                 data-cta-variant={niche.cta.variant}
               >
@@ -288,16 +285,16 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <p className="section-label">What sets us apart</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--medical-teal-dark)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--medical-teal-dark)] sm:text-4xl">
             Built for the medical profession
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-10">
             {trustItems.map((item) => (
               <div key={item.title} className="text-center">
-                <div className="font-serif text-4xl font-bold text-[var(--coral)] sm:text-5xl">
+                <div className="text-4xl font-bold text-[var(--coral)] sm:text-5xl">
                   {item.stat}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">{item.title}</h3>
+                <h3 className="mt-4 text-lg font-bold text-[var(--ink)]">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </div>
             ))}
@@ -308,7 +305,7 @@ export default function HomePage() {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Common challenges</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl md:text-[2.5rem]">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl md:text-[2.5rem]">
             <span className="block">Most GPs and consultants face</span>
             <span className="block text-[var(--coral-strong)]">avoidable tax complications.</span>
           </h2>
@@ -317,8 +314,8 @@ export default function HomePage() {
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {realityPoints.map((item) => (
-              <article key={item.title} className="card-flat p-6 sm:p-8">
-                <h3 className="text-lg font-semibold leading-snug text-[var(--ink)] sm:text-xl">{item.title}</h3>
+              <article key={item.title} className="rounded-xl bg-[var(--surface)] ring-1 ring-slate-200/70 p-6 sm:p-8">
+                <h3 className="text-lg font-bold leading-snug text-[var(--ink)] sm:text-xl">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </article>
             ))}
@@ -329,13 +326,13 @@ export default function HomePage() {
       <section className="border-y border-[var(--border)] bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Medical sector expertise</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             Why GPs choose specialist medical accountants
           </h2>
           <div className="mt-14 grid gap-8 md:grid-cols-3 md:gap-10">
             {whySpecialistItems.map((item) => (
-              <div key={item.title} className="card-flat p-6 sm:p-8">
-                <h3 className="text-lg font-semibold leading-snug text-[var(--ink)] sm:text-xl">{item.title}</h3>
+              <div key={item.title} className="rounded-xl bg-[var(--background)] ring-1 ring-slate-200/70 p-6 sm:p-8">
+                <h3 className="text-lg font-bold leading-snug text-[var(--ink)] sm:text-xl">{item.title}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </div>
             ))}
@@ -346,14 +343,14 @@ export default function HomePage() {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Client types</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             <span className="block">GPs, consultants, and locum doctors</span>
             <span className="block">at every career stage.</span>
           </h2>
           <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
             {whoWeWorkWith.map((block) => (
               <div key={block.title} className="min-w-0">
-                <h3 className="text-xl font-semibold text-[var(--ink)]">{block.title}</h3>
+                <h3 className="text-xl font-bold text-[var(--ink)]">{block.title}</h3>
                 <p className="mt-1 text-sm font-medium text-[var(--coral)]">{block.subtitle}</p>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{block.body}</p>
                 <Link
@@ -371,7 +368,7 @@ export default function HomePage() {
       <section id="how-we-work" className="scroll-mt-24 border-y border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Our approach</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             <span className="block">Medical accounting services</span>
             <span className="block">tailored to your practice.</span>
           </h2>
@@ -382,13 +379,13 @@ export default function HomePage() {
             {howWeWorkItems.map((item) => (
               <li key={item.n} className="flex gap-5 sm:gap-6">
                 <span
-                  className="font-serif text-3xl font-semibold tabular-nums leading-none text-[var(--coral)] sm:text-4xl"
+                  className="text-3xl font-bold tabular-nums leading-none text-[var(--coral)] sm:text-4xl"
                   aria-hidden
                 >
                   {item.n}
                 </span>
                 <div className="min-w-0">
-                  <h3 className="text-lg font-semibold text-[var(--ink)] sm:text-xl">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-[var(--ink)] sm:text-xl">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
                 </div>
               </li>
@@ -405,7 +402,7 @@ export default function HomePage() {
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Specialist advantage</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             What a specialist medical accountant sees that a generalist does not.
           </h2>
           <div className="mt-8 max-w-3xl space-y-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
@@ -419,7 +416,7 @@ export default function HomePage() {
               There is a plainer benefit too. You will not spend the first meeting explaining what superannuation is, why your practice year end is not 5 April, or why your indemnity subscription is a business cost. That vocabulary is already shared, so the conversation starts at your position rather than at the definitions.
             </p>
           </div>
-          <div className="mt-14 overflow-x-auto rounded-2xl border border-[var(--border)]">
+          <div className="mt-14 overflow-x-auto rounded-xl border border-[var(--border)]">
             <table className="w-full min-w-[32rem] text-left text-sm sm:text-base">
               <caption className="sr-only">How {siteConfig.name} handles typical medical accounting areas</caption>
               <thead>
@@ -450,7 +447,7 @@ export default function HomePage() {
       <section className="border-t border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Resources for doctors</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             <span className="block">NHS pension, locum tax, and</span>
             <span className="block">practice finance guidance.</span>
           </h2>
@@ -462,12 +459,12 @@ export default function HomePage() {
               <li key={p.slug}>
                 <Link
                   href={`/blog/${p.slug}`}
-                  className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
+                  className={`rounded-xl bg-[var(--surface)] ring-1 ring-slate-200/70 group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
                 >
                   <span className="text-xs font-semibold uppercase tracking-wider text-[var(--coral)]">
                     {p.category}
                   </span>
-                  <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--ink)] group-hover:underline group-hover:decoration-[var(--coral)] group-hover:underline-offset-4">
+                  <span className="mt-3 text-lg font-bold leading-snug text-[var(--ink)] group-hover:underline group-hover:decoration-[var(--coral)] group-hover:underline-offset-4">
                     {p.title}
                   </span>
                   <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
@@ -496,7 +493,7 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <p className="section-label">What the work looks like</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             Four situations medical accountants see repeatedly
           </h2>
           <div className="mt-10 max-w-3xl">
@@ -508,7 +505,7 @@ export default function HomePage() {
       <section className="border-t border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <p className="section-label">How we work with you</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
             Choose how much support you need.
           </h2>
           <div className="mt-10">
@@ -523,7 +520,7 @@ export default function HomePage() {
             {packagesMode ? (
             <div className="min-w-0">
               <p className="section-label">Get started</p>
-              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
                 {activeCta.home_cta.heading}
               </h2>
               <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
@@ -541,7 +538,7 @@ export default function HomePage() {
                 {activeCta.home_cta.secondary ? (
                   <Link
                     href={activeCta.home_cta.secondary.href}
-                    className={btnMailOutline}
+                    className={btnSecondary}
                     data-cta="home_cta_secondary" data-cta-placement="home_cta"
                     data-cta-variant={niche.cta.variant}
                   >
@@ -557,7 +554,7 @@ export default function HomePage() {
             ) : (
             <div className="min-w-0">
               <p className="section-label">Get started</p>
-              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
                 Speak to a medical accountant about your position
               </h2>
               <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
@@ -567,7 +564,7 @@ export default function HomePage() {
                 <Link href="/contact" className={`${btnPrimary}`}>
                   Book your free consultation
                 </Link>
-                <Link href="/contact" className={btnMailOutline}>
+                <Link href="/contact" className={btnSecondary}>
                   Contact us
                 </Link>
               </div>
@@ -584,7 +581,7 @@ export default function HomePage() {
               </p>
             </div>
             )}
-            <div className="card-flat p-6 sm:p-8 lg:p-10">
+            <div className="rounded-xl bg-[var(--background)] ring-1 ring-slate-200/70 p-6 sm:p-8 lg:p-10">
               <LeadForm submitLabel="Send enquiry" />
             </div>
           </div>
@@ -594,10 +591,10 @@ export default function HomePage() {
       <section className="border-t border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <p className="section-label">Questions from doctors</p>
-          <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Common questions about medical accountants.</h2>
+          <h2 className="mt-3 text-2xl font-bold text-[var(--ink)] sm:text-3xl">Common questions about medical accountants.</h2>
           <div className="mt-8 max-w-3xl space-y-3">
             {HOMEPAGE_FAQS.map((faq) => (
-              <details key={faq.question} className="group card-flat open:shadow-md">
+              <details key={faq.question} className="group rounded-xl bg-[var(--surface)] ring-1 ring-slate-200/70 open:shadow-md">
                 <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--ink)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
                   <span className="flex items-center justify-between gap-4">
                     {faq.question}

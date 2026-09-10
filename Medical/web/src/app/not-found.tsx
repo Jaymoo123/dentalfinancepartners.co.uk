@@ -6,7 +6,7 @@ export default function NotFound() {
     <div
       className={`mx-auto w-full max-w-lg min-w-0 px-4 sm:px-6 lg:px-8 ${sectionY} text-center`}
     >
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Page not found</h1>
+      <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Page not found</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
         The page you requested does not exist or has moved.
       </p>

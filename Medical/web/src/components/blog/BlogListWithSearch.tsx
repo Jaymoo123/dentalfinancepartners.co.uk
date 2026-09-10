@@ -95,11 +95,11 @@ export function BlogListWithSearch({
           const readTime = readTimes.get(p.slug) || 0;
           return (
             <li key={p.slug}>
-              <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
+              <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
                 <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
                   {p.category}
                 </p>
-                <h2 className="mt-2 font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+                <h2 className="mt-2 text-lg font-bold text-[var(--ink)] sm:text-xl">
                   <Link
                     href={`/blog/${p.slug}`}
                     className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
@@ -149,7 +149,7 @@ export function BlogListWithSearch({
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
-              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
             />
           </div>
         </div>
@@ -162,7 +162,7 @@ export function BlogListWithSearch({
             id="blog-sort"
             value={sortBy}
             onChange={(e) => handleSortChange(e.target.value as SortOption)}
-            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
           >
             <option value="date-desc">Newest First</option>
             <option value="date-asc">Oldest First</option>
@@ -180,7 +180,7 @@ export function BlogListWithSearch({
       )}
 
       {paginatedPosts.length === 0 ? (
-        <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">
+        <div className="mt-8 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">
           <p className="text-base text-[var(--muted)]">
             {searchQuery
               ? `No articles found matching "${searchQuery}". Try a different search term.`
@@ -194,11 +194,11 @@ export function BlogListWithSearch({
               const readTime = readTimes.get(p.slug) || 0;
               return (
                 <li key={p.slug}>
-                  <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
+                  <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
                       {p.category}
                     </p>
-                    <h2 className="mt-2 font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+                    <h2 className="mt-2 text-lg font-bold text-[var(--ink)] sm:text-xl">
                       <Link
                         href={`/blog/${p.slug}`}
                         className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
@@ -233,7 +233,7 @@ export function BlogListWithSearch({
                   {currentPage > 1 && (
                     <button
                       onClick={() => setCurrentPage((p) => p - 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
+                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
                     >
                       Previous
                     </button>
@@ -244,7 +244,7 @@ export function BlogListWithSearch({
                   {currentPage < totalPages && (
                     <button
                       onClick={() => setCurrentPage((p) => p + 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-lg border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
+                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
                     >
                       Next
                     </button>

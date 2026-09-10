@@ -373,7 +373,7 @@ export default function AaIndexPage() {
           <div className="max-w-4xl">
 
             {/* Key facts box */}
-            <div className="rounded-2xl border border-[var(--copper)]/20 bg-[var(--copper)]/5 p-6 sm:p-8">
+            <div className="rounded-xl border border-[var(--copper)]/20 bg-[var(--copper)]/5 p-6 sm:p-8">
               <h2 className="text-lg font-bold text-[var(--copper-strong)]">
                 Key facts on annual allowance and lifetime allowance pension tax
               </h2>
@@ -469,7 +469,7 @@ export default function AaIndexPage() {
                 pension growth, and the member carries on accruing. These are gross counts, so a doctor
                 who appears in one year is still an active or deferred member of the scheme.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <SchemePaysValueChart series={schemePaysData} />
               </div>
               <Caption>
@@ -560,7 +560,7 @@ export default function AaIndexPage() {
                 your pension over the year, not the contributions you paid in, and in a defined-benefit
                 scheme like the NHS one those two numbers are nothing like each other.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <SaIndividualsChart series={saData} />
               </div>
               <Caption>
@@ -617,7 +617,7 @@ export default function AaIndexPage() {
                 again in 2024/25, from 24,950 to 30,440, with the allowance unchanged, so that rise is
                 pension growth and reporting catching up rather than a policy change.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <AllowancePathChart series={allowancePath} />
               </div>
               <Caption>
@@ -971,7 +971,7 @@ export default function AaIndexPage() {
                 fully calculated at the snapshot date (26 September 2024). These figures count the
                 standard allowance only and do not include members caught solely by the taper.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
                 <NhsExceededChart series={nhsData} />
               </div>
               <Caption>
@@ -1271,7 +1271,7 @@ export default function AaIndexPage() {
                   <li key={s.name}>
                     <a
                       href={s.url}
-                      className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                      className="font-semibold text-[var(--copper-strong)] hover:underline"
                       rel="nofollow"
                     >
                       {s.name}
@@ -1282,7 +1282,7 @@ export default function AaIndexPage() {
                 <li>
                   <a
                     href="https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates"
-                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    className="font-semibold text-[var(--copper-strong)] hover:underline"
                     rel="nofollow"
                   >
                     Pension schemes rates (allowances by tax year)
@@ -1292,7 +1292,7 @@ export default function AaIndexPage() {
                 <li>
                   <a
                     href="https://www.gov.uk/government/publications/abolition-of-the-lifetime-allowance-from-6-april-2024"
-                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    className="font-semibold text-[var(--copper-strong)] hover:underline"
                     rel="nofollow"
                   >
                     Abolition of the Lifetime Allowance from 6 April 2024
@@ -1302,7 +1302,7 @@ export default function AaIndexPage() {
                 <li>
                   <a
                     href="https://www.nhsbsa.nhs.uk/pensioner-hub/re-employment"
-                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    className="font-semibold text-[var(--copper-strong)] hover:underline"
                     rel="nofollow"
                   >
                     Re-employment and abatement
@@ -1312,7 +1312,7 @@ export default function AaIndexPage() {
                 <li>
                   <a
                     href="https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm174100"
-                    className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                    className="font-semibold text-[var(--copper-strong)] hover:underline"
                     rel="nofollow"
                   >
                     Pensions Tax Manual PTM174100 (lump sum allowance)
@@ -1324,7 +1324,7 @@ export default function AaIndexPage() {
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                  className="font-semibold text-[var(--copper-strong)] hover:underline"
                 >
                   Download the HMRC annual allowance data (CSV)
                 </Link>
@@ -1354,7 +1354,7 @@ export default function AaIndexPage() {
             </Section>
 
             {/* Conversion block */}
-            <div className="mt-10 rounded-2xl border-2 border-[var(--copper)]/20 bg-gradient-to-br from-[var(--copper)]/5 to-[var(--navy-light)]/10 p-8 sm:p-10">
+            <div className="mt-10 rounded-xl border-2 border-[var(--copper)]/20 bg-gradient-to-br from-[var(--copper)]/5 to-[var(--navy-light)]/10 p-8 sm:p-10">
               <h2 className="text-2xl font-bold text-[var(--navy)] sm:text-3xl">
                 Concerned about your annual allowance position?
               </h2>
@@ -1367,7 +1367,7 @@ export default function AaIndexPage() {
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
                 <Link
                   href="/calculators/nhs-pension-annual-allowance"
-                  className="text-[var(--copper-strong)] hover:text-[var(--copper)]"
+                  className="text-[var(--copper-strong)] hover:underline"
                 >
                   NHS pension annual allowance calculator &rarr;
                 </Link>

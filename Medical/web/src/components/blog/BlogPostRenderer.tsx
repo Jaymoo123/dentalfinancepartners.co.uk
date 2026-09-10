@@ -114,7 +114,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 ]}
               />
               <header className="border-l-4 border-[var(--copper)] bg-[var(--surface)] p-8 mt-6">
-                <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper)]">
+                <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper-strong)]">
                   {post.category}
                 </p>
                 <h1 className="mt-3 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl md:text-5xl">
@@ -187,7 +187,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   0/73 posts currently (surface tolerates absence gracefully). */}
               {takeaways ? (
                 <section
-                  className="not-prose mt-8 rounded-lg border-l-4 border-[var(--copper)] bg-[var(--surface-elevated)] p-6"
+                  className="not-prose mt-8 rounded-xl border-l-4 border-[var(--copper)] bg-[var(--surface-elevated)] p-6"
                   aria-label="Key takeaways"
                 >
                   <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper-strong)]">
@@ -225,7 +225,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       heading="Get a free specialist review"
                       blurb="Tell us about your situation and a medical accountant will review your position and confirm the next sensible step, with no obligation."
                       submitLabel="Request my free review"
-                      className="my-10 rounded-2xl border-l-4 border-[var(--copper)] bg-[var(--surface)] p-6 sm:p-8"
+                      className="my-10 rounded-xl border-l-4 border-[var(--copper)] bg-[var(--surface)] p-6 sm:p-8"
                     />
                     {/* InlineMiniLeadForm follows after the qualified capture. */}
                     <InlineMiniLeadForm topic={post.category} />
@@ -247,7 +247,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       heading="Get a free specialist review"
                       blurb="Tell us about your situation and a medical accountant will review your position and confirm the next sensible step, with no obligation."
                       submitLabel="Request my free review"
-                      className="my-10 rounded-2xl border-l-4 border-[var(--copper)] bg-[var(--surface)] p-6 sm:p-8"
+                      className="my-10 rounded-xl border-l-4 border-[var(--copper)] bg-[var(--surface)] p-6 sm:p-8"
                     />
                   </>
                 )}
@@ -269,17 +269,17 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 </section>
               ) : null}
 
-              <aside className="mt-16 flex gap-5 items-start bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-lg">
+              <aside className="mt-16 flex gap-5 items-start bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-xl">
                 <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-[var(--copper)]/10 text-[var(--copper)] flex items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-[var(--copper)]">About the author</p>
+                  <p className="text-sm font-bold uppercase tracking-wider text-[var(--copper-strong)]">About the author</p>
                   <p className="mt-1 text-lg font-bold text-[var(--ink)]">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-[var(--ink-soft)] leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-[var(--copper)] hover:underline">
+                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-[var(--copper-strong)] hover:underline">
                     Learn more about our team
                   </Link>
                 </div>
@@ -287,7 +287,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <NextStepOffer />
 
-              <div className="mt-16 bg-[var(--navy)] p-8 sm:p-10 text-white rounded-2xl">
+              <div className="mt-16 bg-[var(--navy)] p-8 sm:p-10 text-white rounded-xl">
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">
                   {activeCta.blog.cta_heading}
                 </h2>
@@ -295,7 +295,11 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   {activeCta.blog.cta_body}
                 </p>
                 <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
+                  {/* onDark: this panel is a navy ground. LeadForm's default
+                      label/fine-print tokens (--ink is navy, --muted is
+                      slate-600 at 2.30 on navy) are unreadable here. Ground
+                      unchanged; colour only. */}
+                  <LeadForm onDark redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
                 </div>
               </div>
 

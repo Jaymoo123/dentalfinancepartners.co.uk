@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, ChevronRight, AlertTriangle, Info } from "lucide-react";
-import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, focusRingOnDark } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitMedicalLead } from "@/lib/leads/submit-client";
@@ -296,7 +296,7 @@ export function MedicalHealthCheckWizard() {
         <div className="flex items-center gap-3 mb-6">
           <CheckCircle2 className="h-8 w-8 text-[var(--copper)]" />
           <div>
-            <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">Your practice health check</h2>
+            <h2 className="text-xl font-bold text-[var(--ink)]">Your practice health check</h2>
             <p className="text-sm text-[var(--muted)]">{findings.length} item{findings.length !== 1 ? "s" : ""} flagged for your position</p>
           </div>
         </div>
@@ -306,7 +306,7 @@ export function MedicalHealthCheckWizard() {
             const config = priorityConfig[f.priority];
             const Icon = config.icon;
             return (
-              <div key={i} className={`rounded-2xl border p-5 sm:p-6 ${config.bg}`}>
+              <div key={i} className={`rounded-xl border p-5 sm:p-6 ${config.bg}`}>
                 <div className="flex items-start gap-4">
                   <Icon className={`h-5 w-5 shrink-0 mt-0.5 ${config.iconClass}`} />
                   <div className="min-w-0">
@@ -314,7 +314,7 @@ export function MedicalHealthCheckWizard() {
                       <span className={`rounded-full px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider ${config.labelClass}`}>
                         {config.label}
                       </span>
-                      <h3 className="font-semibold text-[var(--ink)] text-sm sm:text-base">{f.title}</h3>
+                      <h3 className="font-bold text-[var(--ink)] text-sm sm:text-base">{f.title}</h3>
                     </div>
                     <p className="text-sm leading-relaxed text-[var(--ink-soft)]">{f.body}</p>
                   </div>
@@ -324,12 +324,12 @@ export function MedicalHealthCheckWizard() {
           })}
         </div>
 
-        <div className="mt-8 rounded-2xl bg-[var(--navy)] p-6 text-center">
-          <h3 className="font-serif text-lg font-semibold text-white">Want to put numbers to these?</h3>
+        <div className="mt-8 rounded-xl bg-[var(--navy)] p-6 text-center">
+          <h3 className="text-lg font-bold text-white">Want to put numbers to these?</h3>
           <p className="mt-2 text-sm text-white/80">30-minute call with a specialist GP accountant, free. We review your specific position, not a checklist.</p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
             <Link href="/contact" className={btnPrimary}>Book your free call</Link>
-            <Link href="/medical-guides" className="inline-flex items-center gap-1.5 rounded-full border border-white/40 px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/10">
+            <Link href="/medical-guides" className={`inline-flex items-center gap-1.5 rounded-full border border-white/40 px-5 min-h-11 py-2.5 text-sm font-semibold text-white hover:bg-white/10 ${focusRingOnDark}`}>
               Read medical guides
             </Link>
           </div>
@@ -344,7 +344,7 @@ export function MedicalHealthCheckWizard() {
 
       {step === 1 && (
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">What is your primary role?</h2>
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">What is your primary role?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Select the option that best describes your current position.</p>
           <div className="mt-6 space-y-3">
             <RadioOption value="gp-partner" current={answers.role} onChange={(v) => { if (!started) { setStarted(true); } setAnswers({ ...answers, role: v as Role }); }}>GP Partner</RadioOption>
@@ -358,7 +358,7 @@ export function MedicalHealthCheckWizard() {
 
       {step === 2 && (
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">What is your NHS pension situation?</h2>
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">What is your NHS pension situation?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Your NHS Pension Scheme membership and annual allowance position.</p>
           <div className="mt-6 space-y-3">
             <RadioOption value="not-enrolled" current={answers.pensionStatus} onChange={(v) => setAnswers({ ...answers, pensionStatus: v as PensionStatus })}>I am not enrolled in the NHS Pension Scheme</RadioOption>
@@ -371,7 +371,7 @@ export function MedicalHealthCheckWizard() {
 
       {step === 3 && (
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Do you have private practice income?</h2>
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">Do you have private practice income?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Private patients, medico-legal work, cosmetics, or other non-NHS income.</p>
           <div className="mt-6 space-y-3">
             <RadioOption value="none" current={answers.privatePractice} onChange={(v) => setAnswers({ ...answers, privatePractice: v as PrivatePractice })}>No, I work exclusively on NHS contracts</RadioOption>
@@ -384,7 +384,7 @@ export function MedicalHealthCheckWizard() {
 
       {step === 4 && (
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">What is your approximate total income?</h2>
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">What is your approximate total income?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">All income before tax: NHS salary or partnership share, private practice, locum shifts, investment income.</p>
           <div className="mt-6 space-y-3">
             <RadioOption value="under-100k" current={answers.incomeLevel} onChange={(v) => setAnswers({ ...answers, incomeLevel: v as IncomeLevel })}>Under £100,000</RadioOption>
@@ -397,7 +397,7 @@ export function MedicalHealthCheckWizard() {
 
       {step === 5 && (
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">What is your current accountancy arrangement?</h2>
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">What is your current accountancy arrangement?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Who currently handles your tax returns and financial advice?</p>
           <div className="mt-6 space-y-3">
             <RadioOption value="none" current={answers.currentAccountant} onChange={(v) => setAnswers({ ...answers, currentAccountant: v as CurrentAccountant })}>I do not have an accountant</RadioOption>
@@ -410,7 +410,7 @@ export function MedicalHealthCheckWizard() {
 
       {step === 6 && (
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Where should we send your results?</h2>
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">Where should we send your results?</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Your findings appear on screen immediately. We will follow up once with the full report and an offer of a free 30-minute call. No drip sequences.</p>
           <div className="mt-6 space-y-4">
             <div>
@@ -450,7 +450,7 @@ export function MedicalHealthCheckWizard() {
               />
               <span>
                 {siteConfig.leadConsentText} See our{" "}
-                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--copper)] underline">
+                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--copper-strong)] underline">
                   Privacy Policy
                 </a>
                 .

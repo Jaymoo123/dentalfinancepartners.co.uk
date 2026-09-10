@@ -20,7 +20,7 @@ export function CalcResultCta({ campaign }: { campaign: string }) {
         heading="Sense-check your figure with a specialist medical accountant"
         blurb="NHS pensions, private practice tax, and incorporation are unforgiving in the detail. Have a specialist review your position, confirm the number is right for your specific situation, and flag anything worth acting on. No obligation, and we reply within one working day."
         submitLabel="Get my figure checked"
-        className="rounded-2xl border-l-4 border-[var(--copper)] bg-[var(--surface-elevated)] p-5 sm:p-6"
+        className="rounded-xl border-l-4 border-[var(--copper)] bg-[var(--surface-elevated)] p-5 sm:p-6"
       />
     </div>
   );

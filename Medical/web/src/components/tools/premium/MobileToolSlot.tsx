@@ -33,7 +33,7 @@ export function MobileToolSlot({ topic }: { topic: TopicKey }) {
       heading={t?.ctaCopy || "Get your figure from a specialist"}
       blurb="Our interactive tool is built for a larger screen. Tell us your situation and a specialist medical accountant will send your figure and the sensible next step, with no obligation."
       submitLabel="Send me my figure"
-      className="rounded-2xl border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-5 sm:p-6"
+      className="rounded-xl border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-5 sm:p-6"
     />
   );
 }

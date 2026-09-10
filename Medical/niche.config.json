@@ -19,7 +19,7 @@
   "tagline": "Specialist accountants for UK medical professionals",
   "description": "Expert accounting for GPs, consultants and medical practices. NHS pension advice, locum tax planning, private practice incorporation and expense claims.",
   "brand": {
-    "primary_color": "#0891b2",
+    "primary_color": "#001b3d",
     "logo_path": "/brand/logo.png",
     "publisher_logo_url": "/brand/og-card.png"
   },
@@ -29,25 +29,73 @@
   },
   "navigation": [
     {
-      "label": "Services",
-      "href": "/services"
+      "label": "Who we help",
+      "href": "/services",
+      "children": [
+        { "label": "All services", "href": "/services" },
+        { "label": "GP partners and salaried GPs", "href": "/for-gps" },
+        { "label": "Hospital consultants", "href": "/for-consultants" },
+        { "label": "Locum doctors", "href": "/for-locum-doctors" },
+        { "label": "Junior doctors", "href": "/for-junior-doctors" },
+        {
+          "label": "Free practice health check",
+          "href": "/free-practice-health-check",
+          "hide_in_packages": true
+        }
+      ]
     },
     {
       "label": "Guides",
-      "href": "/medical-guides"
+      "href": "/medical-guides",
+      "children": [
+        { "label": "All guides", "href": "/medical-guides" },
+        { "label": "NHS pension explained", "href": "/nhs-pension" },
+        {
+          "label": "NHS pension annual allowance",
+          "href": "/medical-guides/nhs-pension-annual-allowance"
+        },
+        {
+          "label": "Consultant private practice tax",
+          "href": "/medical-guides/consultant-private-practice-tax"
+        },
+        { "label": "GP partnership accounts", "href": "/medical-guides/gp-partnership-accounts" },
+        {
+          "label": "Locum limited company vs umbrella",
+          "href": "/medical-guides/locum-limited-company-vs-umbrella"
+        },
+        {
+          "label": "Medical expenses tax treatment",
+          "href": "/medical-guides/medical-expenses-tax-treatment"
+        },
+        { "label": "IR35 for locums", "href": "/medical-guides/ir35-for-locums" },
+        { "label": "Research and data", "href": "/research" }
+      ]
     },
     {
-      "label": "Free health check",
-      "href": "/free-practice-health-check",
-      "hide_in_packages": true
+      "label": "Calculators",
+      "href": "/calculators"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog",
+      "children": [
+        { "label": "All articles", "href": "/blog" },
+        { "label": "GP tax and accounts", "href": "/blog/gp-tax-and-accounts" },
+        { "label": "GP accountant services", "href": "/blog/gp-accountant-services" },
+        { "label": "GP practice management", "href": "/blog/gp-practice-management" },
+        { "label": "NHS pension planning", "href": "/blog/nhs-pension-planning" },
+        { "label": "Locum tax", "href": "/blog/locum-tax" },
+        { "label": "Private practice", "href": "/blog/private-practice" },
+        { "label": "Medical expenses", "href": "/blog/medical-expenses" },
+        {
+          "label": "Incorporation and company structures",
+          "href": "/blog/incorporation-and-company-structures"
+        }
+      ]
     },
     {
       "label": "About",
       "href": "/about"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
     },
     {
       "label": "Contact",
@@ -55,6 +103,10 @@
     }
   ],
   "footer_links": [
+    {
+      "label": "Free practice health check",
+      "href": "/free-practice-health-check"
+    },
     {
       "label": "For GPs",
       "href": "/for-gps"
@@ -151,7 +203,7 @@
     ],
     "google_analytics_id": "G-CQF7KFZ1P6",
     "google_site_verification": "",
-    "theme_color": "#0891b2",
+    "theme_color": "#001b3d",
     "homepage_title": "GP Accountants UK | Tax Specialists for Doctors",
     "homepage_h1": "Specialist Accountants for GPs & Medical Professionals",
     "homepage_description": "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants."

@@ -191,15 +191,15 @@ export default async function LocationPage({ params }: Props) {
             { label: cityName },
           ]}
         />
-        <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+        <h1 className="text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
           GP Accountant {cityName}
         </h1>
         <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
           {content.intro}
         </p>
 
-        <div className="mt-10 rounded-2xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:mt-12 sm:p-8">
-          <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+        <div className="mt-10 rounded-xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:mt-12 sm:p-8">
+          <h2 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
             Areas we serve in {cityName}
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
@@ -208,7 +208,7 @@ export default async function LocationPage({ params }: Props) {
         </div>
 
         <section className="mt-12 sm:mt-16">
-          <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+          <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
             Medical accounting services in {cityName}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
@@ -216,8 +216,8 @@ export default async function LocationPage({ params }: Props) {
           </p>
           <div className="mt-8 space-y-6 sm:mt-10">
             {content.services.map((service) => (
-              <div key={service.title} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-                <h3 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+              <div key={service.title} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
+                <h3 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
                   {service.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
@@ -230,17 +230,17 @@ export default async function LocationPage({ params }: Props) {
 
         {posts.length > 0 && (
           <section className="mt-12 sm:mt-16">
-            <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+            <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
               Related articles
             </h2>
             <ul className="mt-6 space-y-4">
               {posts.map((p) => (
                 <li key={p.slug}>
-                  <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6">
+                  <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6">
                     <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent-strong)]">
                       {p.category}
                     </p>
-                    <h3 className="mt-2 font-serif text-base font-semibold text-[var(--ink)] sm:text-lg">
+                    <h3 className="mt-2 text-base font-bold text-[var(--ink)] sm:text-lg">
                       <Link
                         href={`/blog/${p.slug}`}
                         className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
@@ -258,7 +258,7 @@ export default async function LocationPage({ params }: Props) {
 
         {/* Sibling cities */}
         <section className="mt-12 sm:mt-16">
-          <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+          <h2 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
             Medical accountants in other UK cities
           </h2>
           <ul className="mt-4 grid list-none gap-3 pl-0 sm:grid-cols-2">

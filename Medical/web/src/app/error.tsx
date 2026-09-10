@@ -28,7 +28,7 @@ export default function Error({
           </div>
         </div>
         
-        <h1 className="font-serif text-3xl font-semibold text-[var(--navy)] sm:text-4xl">
+        <h1 className="text-3xl font-bold text-[var(--navy)] sm:text-4xl">
           Something went wrong
         </h1>
         
@@ -37,7 +37,7 @@ export default function Error({
         </p>
 
         {process.env.NODE_ENV === 'development' && error.message && (
-          <div className="mt-6 rounded-lg bg-red-50 border border-red-200 p-4 text-left">
+          <div className="mt-6 rounded-xl bg-red-50 border border-red-200 p-4 text-left">
             <p className="text-sm font-mono text-red-800 break-words">
               {error.message}
             </p>
@@ -53,7 +53,7 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)] focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-xl border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)] focus:ring-offset-2"
           >
             Go home
           </Link>

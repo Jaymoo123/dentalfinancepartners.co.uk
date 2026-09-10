@@ -433,7 +433,7 @@ export default function NHSPensionPlanningPillarPage() {
             <div className="space-y-6">
               {faqs.map((f) => (
                 <div key={f.q}>
-                  <h3 className="text-lg font-semibold text-[var(--ink)] mb-2">{f.q}</h3>
+                  <h3 className="text-lg font-bold text-[var(--ink)] mb-2">{f.q}</h3>
                   <p className={p}>{f.a}</p>
                 </div>
               ))}
@@ -448,8 +448,8 @@ export default function NHSPensionPlanningPillarPage() {
                   const readTime = calculateReadTime(post.contentHtml);
                   return (
                     <li key={post.slug}>
-                      <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
-                        <h3 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+                      <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
+                        <h3 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
                           <Link
                             href={`/blog/${post.slug}`}
                             className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
@@ -481,7 +481,7 @@ export default function NHSPensionPlanningPillarPage() {
             </section>
           )}
 
-          <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
+          <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-xl">
             <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
               Need NHS Pension Advice?
             </h2>

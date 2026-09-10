@@ -27,7 +27,7 @@ export function NextStepOffer() {
         : "Talk to a specialist";
 
   return (
-    <aside className="my-10 rounded-2xl border border-[var(--copper)]/30 bg-[var(--surface-elevated)] p-6 sm:p-8">
+    <aside className="my-10 rounded-xl border border-[var(--copper)]/30 bg-[var(--surface-elevated)] p-6 sm:p-8">
       <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper-strong)]">
         {offer.reason}
       </p>

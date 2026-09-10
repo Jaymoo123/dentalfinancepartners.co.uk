@@ -27,7 +27,7 @@ export default async function LoginPage({
         <p className="mt-1 text-sm text-slate-500">Enter the admin key to access the dashboard.</p>
 
         {error && (
-          <div className="mt-3 rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">
+          <div className="mt-3 rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">
             {isRateLimit
               ? "Too many failed attempts. Please wait 10 minutes and try again."
               : "Incorrect key. Please try again."}
@@ -45,13 +45,13 @@ export default async function LoginPage({
               type="password"
               autoComplete="current-password"
               required
-              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-[var(--copper)] focus:outline-none"
+              className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-[var(--copper)] focus:outline-none"
               placeholder="Enter key..."
             />
           </div>
           <button
             type="submit"
-            className="w-full rounded-lg bg-[var(--navy)] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--navy)]/90"
+            className="w-full rounded-xl bg-[var(--navy)] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--navy)]/90"
           >
             Sign in
           </button>

@@ -54,7 +54,7 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Medical token-safe input class (no --primary, no orange-*, no emerald-*)
 const inputClass =
-  "mt-1 w-full min-h-11 touch-manipulation rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3.5 py-2.5 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25 transition-colors";
+  "mt-1 w-full min-h-11 touch-manipulation rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-2.5 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25 transition-colors";
 
 export function ResourceGate({
   topic,
@@ -201,7 +201,7 @@ export function ResourceGate({
   return (
     <section
       ref={rootRef}
-      className="not-prose @container my-12 overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-[0_1px_2px_rgba(0,27,61,0.04),0_12px_28px_-16px_rgba(0,27,61,0.18)] ring-1 ring-[var(--navy)]/[0.03]"
+      className="not-prose @container my-12 overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-[0_1px_2px_rgba(0,27,61,0.04),0_12px_28px_-16px_rgba(0,27,61,0.18)] ring-1 ring-[var(--navy)]/[0.03]"
       aria-labelledby="resource-gate-heading"
     >
       {/* Branded top accent: copper */}
@@ -209,7 +209,7 @@ export function ResourceGate({
 
       {/* Header */}
       <div className="border-b border-[var(--border)] bg-[var(--surface-elevated)]/70 px-5 py-2 sm:px-6 sm:py-2.5">
-        <h3 id="resource-gate-heading" className="font-serif text-lg font-bold text-[var(--ink)] sm:text-xl">
+        <h3 id="resource-gate-heading" className="text-lg font-bold text-[var(--ink)] sm:text-xl">
           {copy.heading}
         </h3>
         <p className="mt-1 text-sm text-[var(--muted)]">{copy.blurb}</p>
@@ -343,7 +343,7 @@ export function ResourceGate({
                 </div>
 
                 {errorMessage && (
-                  <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-3">
+                  <div role="alert" className="rounded-xl border-2 border-red-200 bg-red-50 p-3">
                     <p className="text-sm font-medium text-red-800">{errorMessage}</p>
                   </div>
                 )}

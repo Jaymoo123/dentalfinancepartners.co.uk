@@ -82,7 +82,7 @@ const RELATED_GUIDES = [
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <div className="font-serif text-2xl font-semibold text-white sm:text-3xl">{value}</div>
+      <div className="text-2xl font-bold text-white sm:text-3xl">{value}</div>
       <div className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--copper-light)]/90">{label}</div>
     </div>
   );
@@ -90,11 +90,11 @@ function Stat({ value, label }: { value: string; label: string }) {
 
 function Step({ num, title, body }: { num: string; title: string; body: string }) {
   return (
-    <div className="rounded-2xl border border-[var(--border)] bg-white p-6">
-      <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--copper-soft)] font-serif text-base font-semibold text-[var(--copper-strong)]">
+    <div className="rounded-xl border border-[var(--border)] bg-white p-6">
+      <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--copper-soft)] text-base font-bold text-[var(--copper-deep)]">
         {num}
       </div>
-      <h3 className="mt-4 font-serif text-lg font-semibold text-[var(--ink)]">{title}</h3>
+      <h3 className="mt-4 text-lg font-bold text-[var(--ink)]">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{body}</p>
     </div>
   );
@@ -126,12 +126,12 @@ export default function FreePracticeHealthCheckPage() {
       {/* Hero */}
       <section className="bg-[var(--navy)] text-white">
         <div className={`${siteContainerLg} py-14 sm:py-20`}>
-          <Breadcrumb items={breadcrumbItems} />
+          <Breadcrumb variant="light" items={breadcrumbItems} />
           <div className="mt-8 max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--copper-light)]">
               Free · 5 minutes · No obligation
             </div>
-            <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               Free practice health check for UK doctors
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
@@ -160,7 +160,7 @@ export default function FreePracticeHealthCheckPage() {
       <section className="bg-white border-y border-[var(--border)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
               How the check works
             </h2>
             <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -188,16 +188,16 @@ export default function FreePracticeHealthCheckPage() {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl text-center">
+            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl text-center">
               Frequently asked
             </h2>
             <dl className="mt-10 space-y-5">
               {FAQS.map((f) => (
                 <div
                   key={f.question}
-                  className="rounded-2xl border-l-4 border-[var(--copper)] bg-white p-6 sm:p-7"
+                  className="rounded-xl border-l-4 border-[var(--copper)] bg-white p-6 sm:p-7"
                 >
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">{f.question}</dt>
+                  <dt className="text-lg font-bold text-[var(--ink)]">{f.question}</dt>
                   <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.answer}</dd>
                 </div>
               ))}
@@ -214,7 +214,7 @@ export default function FreePracticeHealthCheckPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--copper-light)]">
                 Want to read first?
               </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold text-white sm:text-3xl">
+              <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
                 Background reading from our guide library
               </h2>
             </div>
@@ -223,12 +223,12 @@ export default function FreePracticeHealthCheckPage() {
                 <Link
                   key={g.href}
                   href={g.href}
-                  className={`group block rounded-2xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--copper)] hover:bg-white/10 ${focusRing}`}
+                  className={`group block rounded-xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--copper)] hover:bg-white/10 ${focusRing}`}
                 >
                   <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--copper-light)] mb-2">
                     Medical guide
                   </p>
-                  <h3 className="font-serif text-base font-semibold text-white group-hover:text-[var(--copper-light)]">
+                  <h3 className="text-base font-bold text-white group-hover:text-[var(--copper-light)]">
                     {g.title}
                   </h3>
                   <p className="mt-2 text-xs leading-relaxed text-white/70">{g.body}</p>

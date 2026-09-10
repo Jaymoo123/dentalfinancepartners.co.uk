@@ -65,9 +65,9 @@ export default function ResearchIndexPage() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--copper)] hover:shadow-md sm:p-8"
+                className="group rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--copper)] hover:shadow-md sm:p-8"
               >
-                <div className="text-3xl font-bold text-[var(--copper)] sm:text-4xl">{r.stat}</div>
+                <div className="text-3xl font-bold text-[var(--copper-strong)] sm:text-4xl">{r.stat}</div>
                 <div className="mt-1 text-sm text-[var(--muted)]">{r.statLabel}</div>
                 <h2 className="mt-5 text-xl font-bold text-[var(--navy)] group-hover:text-[var(--copper-strong)]">
                   {r.title}
@@ -78,7 +78,7 @@ export default function ResearchIndexPage() {
                 <div className="mt-4 grid grid-cols-3 gap-2 border-t border-[var(--border)] pt-4">
                   {r.highlights.map((h) => (
                     <div key={h.value} className="text-center">
-                      <div className="text-sm font-bold text-[var(--copper)]">{h.value}</div>
+                      <div className="text-sm font-bold text-[var(--copper-strong)]">{h.value}</div>
                       <div className="mt-0.5 text-[10px] leading-tight text-[var(--muted)]">{h.label}</div>
                     </div>
                   ))}

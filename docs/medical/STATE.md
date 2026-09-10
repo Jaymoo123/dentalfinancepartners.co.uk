@@ -105,6 +105,76 @@ file:line at `docs/medical/_port/LIVE_DEFECTS.md`. The ones that matter most:
   policy still describes an exit-intent form and the live `SpecialistWidget` (auto-opens at
   600ms) is undisclosed.
 
+## 2026-09-10 - DESIGN PORT PHASE 1 (the token layer). Built, reviewed, fixed, re-reviewed. Nothing deployed.
+
+Phase 1 is the token layer only. The chrome (header, footer, shell) is Phase 2 and still
+renders its pre-port markup.
+
+**What landed:** the shared design kit wired in with its mandatory `@source` line; the
+radius system (`--radius: 0rem`, `--radius-xl` 4px, `--btn-radius`) which Medical had no
+token for at all; the full shadcn token layer and `components.json`, both previously
+absent; Property's two-block heading rhythm, which Medical had no equivalent of; the amber
+primary ramp with the button ground at `--btn-ground #a0622b`; the warning ramp moved off
+copper to red-600 / purple-700 / indigo-700; Cormorant Garamond dropped across 129 call
+sites in 28 files; the nav IA authored into `niche.config.json` with a server-side
+`lib/nav.ts` builder; the stethoscope wordmark and the ECG backdrop component (built, not
+yet mounted, Phase 2 mounts them); `layout-utils.ts` reduced to a re-export of the kit.
+
+**Verification, all re-run after every change, never once:**
+- Build exit 0, **163 pages, identical to the count at the production SHA**.
+- `tsc --noEmit` clean. **451 tests passing**, the same count as before the phase.
+- Dependency closure OK across 19 sites.
+- Route sweep: **138/138 URLs clean, 0 link-floor breaches (3,836 links), 0 `data-cta`
+  regressions (308), 0 dash regressions (59)**. Every number identical to the pre-port
+  baseline, so the phase provably cost no crawlable link and no analytics continuity.
+- Browser check at 390 / 768 / 1024 / 1440: **zero horizontal overflow**.
+
+**Two adversarial reviews, three fix passes.** Both reviews returned PASS-WITH-GAPS and
+both found real defects, as every review on this programme has. What the reviews caught
+that the instruments could not:
+- Four radius languages on one page: adopting Property's scale silently took ~97
+  `rounded-lg` elements from 8px to 0px while `rounded-2xl` still painted 16px. Swept 109
+  occurrences across 48 files to `rounded-xl`; 60 genuinely circular or pill elements kept.
+- `.card-flat` and `.card-premium` were used on 23 elements and **had never been defined**,
+  so those panels painted nothing. Pre-existing, but Phase 1 deleted the old `.card` recipe
+  and made the hole permanent. Given the standard card treatment with opposing grounds.
+- Copper carries text on 26 call sites at 3.79:1 against a 4.5 floor. Moved to
+  `--copper-strong`; copper stays on graphics, where 3:1 is the floor and it passes.
+- Darkening `--muted` for light grounds made every DARK ground worse. Four breadcrumbs
+  went from 3.60 to 2.26 on navy before being given the existing `variant="light"`.
+
+**The most valuable find of the phase, and no instrument would have caught it:** the blog
+article lead form renders bare on a navy panel (`BlogPostRenderer.tsx:290`), and its five
+field labels use `--ink`, which IS navy. **Ratio 1.00, literally invisible, on all 88
+article pages.** The consent notice beside it measured 2.30 and the field errors 2.63. All
+now carry an on-dark colour treatment. The `leadConsentText` STRING was not touched, per
+the standing carve-out. Property solved the same defect structurally, with a white card
+inside the navy section and a comment naming the bug
+(`Property/web/src/components/blog/BlogPostRenderer.tsx:324`); Medical gets the colour fix
+now and the structural fix belongs to a later phase.
+
+**A false premise correctly rejected.** A reported "invisible white text at 1.05:1" on
+`/nhs-pension` was an instrument artifact: the element's ground is an absolutely-positioned
+overlay sibling rather than an ancestor, so an ancestor-walk resolver falls through to the
+body white. The true ratio is 11.24. Recorded because the same shape will recur on every
+hero that uses an overlay.
+
+**Deliberately NOT fixed in Phase 1, carried to Phase 2 as a binding acceptance test:** the
+footer paints navy links on the navy ground at ratio 1.00 across 176 page-loads. It is
+long-standing, the pre-port baseline shows the identical failure for the labels that used
+to occupy those slots, and the footer is replaced wholesale in Phase 2, so patching it
+first is churn. The ported footer must render every link at 4.5:1 or better, measured.
+
+**Noise generated: none.** Nothing was pushed, so no CI run fired and no deploy ran.
+
+**Process note, and it cost real time.** A `next start` restart silently failed, leaving a
+stale server serving a previous build. The sweep and browser check that followed measured
+that stale build, and the adversarial reviewer independently caught it from chunk 404s in
+the console. Both measurements were discarded and re-run. **Killing a `next start` on
+Windows needs the PID and `taskkill`; `pkill -f` reports success and does nothing.** After
+any restart, fetch the CSS hash the served HTML references and confirm the server returns
+200 for it. A title assertion alone does not catch this: the title was correct throughout.
+
 **Process note worth keeping.** The first baseline sweep was aborted before it ran: port
 3131 was already serving the Solicitors site, `next start` failed to bind, and the served
 `<title>` came back as "Accountants for Solicitors UK". 3111 and 3121 were occupied by

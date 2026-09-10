@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, Clock, Users } from "lucide-react";
-import { siteContainerLg, btnPrimary, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { siteContainerLg, btnPrimary, focusRing, focusRingOnDark, sectionY } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { MEDICAL_GUIDES } from "@/lib/medical-guides-data";
@@ -40,13 +40,13 @@ export default function MedicalGuidesPage() {
       {/* Hero */}
       <section className="bg-[var(--navy)] text-white">
         <div className={`${siteContainerLg} py-14 sm:py-18`}>
-          <Breadcrumb items={breadcrumbItems} />
+          <Breadcrumb variant="light" items={breadcrumbItems} />
           <div className="mt-6 max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
               <BookOpen className="h-3.5 w-3.5" />
               Free medical accounting guides
             </div>
-            <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               NHS Pension, GP partnership and locum tax guides
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg max-w-2xl">
@@ -67,7 +67,7 @@ export default function MedicalGuidesPage() {
                 className={`group flex flex-col rounded-3xl border border-[var(--border)] bg-white p-6 transition-all hover:border-[var(--copper)] hover:shadow-lg hover:shadow-[var(--copper-soft)] sm:p-8 ${focusRing}`}
               >
                 <div className="flex items-center justify-between gap-3">
-                  <span className="rounded-full bg-[var(--copper-soft)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[var(--copper-strong)]">
+                  <span className="rounded-full bg-[var(--copper-soft)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[var(--copper-deep)]">
                     {guide.eyebrow}
                   </span>
                   <span className="flex items-center gap-1 text-xs text-[var(--muted)]">
@@ -76,7 +76,7 @@ export default function MedicalGuidesPage() {
                   </span>
                 </div>
 
-                <h2 className="mt-4 font-serif text-lg font-semibold leading-snug text-[var(--ink)] group-hover:text-[var(--navy)] sm:text-xl">
+                <h2 className="mt-4 text-lg font-bold leading-snug text-[var(--ink)] group-hover:text-[var(--navy)] sm:text-xl">
                   {guide.title}
                 </h2>
 
@@ -101,7 +101,7 @@ export default function MedicalGuidesPage() {
                       </span>
                     )}
                   </div>
-                  <span className="text-sm font-semibold text-[var(--copper)] group-hover:text-[var(--copper-strong)]">
+                  <span className="text-sm font-semibold text-[var(--copper-strong)] group-hover:underline">
                     Read guide →
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export default function MedicalGuidesPage() {
       <section className="bg-white border-t border-[var(--border)]">
         <div className={`${siteContainerLg} py-12 sm:py-16`}>
           <div className="max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
               Free calculators for UK doctors
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
@@ -142,11 +142,11 @@ export default function MedicalGuidesPage() {
                 <Link
                   key={c.href}
                   href={c.href}
-                  className={`group block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
+                  className={`group block rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
                 >
-                  <h3 className="font-semibold text-sm text-[var(--ink)] group-hover:text-[var(--copper)]">{c.name}</h3>
+                  <h3 className="font-bold text-sm text-[var(--ink)] group-hover:text-[var(--copper-strong)]">{c.name}</h3>
                   <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.desc}</p>
-                  <span className="mt-3 block text-xs font-semibold text-[var(--copper)]">Open calculator →</span>
+                  <span className="mt-3 block text-xs font-semibold text-[var(--copper-strong)]">Open calculator →</span>
                 </Link>
               ))}
             </div>
@@ -157,7 +157,7 @@ export default function MedicalGuidesPage() {
       {/* Audience quick links */}
       <section className="bg-[var(--surface)] border-t border-[var(--border)]">
         <div className={`${siteContainerLg} py-12 sm:py-16`}>
-          <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+          <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
             Find advice for your role
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
@@ -173,9 +173,9 @@ export default function MedicalGuidesPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-2xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
+                className={`rounded-xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
               >
-                <h3 className="font-semibold text-[var(--ink)]">{item.label}</h3>
+                <h3 className="font-bold text-[var(--ink)]">{item.label}</h3>
                 <p className="mt-2 text-xs leading-relaxed text-[var(--muted)]">{item.desc}</p>
               </Link>
             ))}
@@ -187,7 +187,7 @@ export default function MedicalGuidesPage() {
       <section className="bg-[var(--navy)] py-14 sm:py-18 text-center">
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-2xl">
-            <h2 className="font-serif text-2xl font-semibold text-white sm:text-3xl">
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">
               Need specialist medical accounting advice?
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/80">
@@ -197,7 +197,7 @@ export default function MedicalGuidesPage() {
               <Link href="/contact" className={btnPrimary}>
                 Book a free consultation
               </Link>
-              <Link href="/free-practice-health-check" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10">
+              <Link href="/free-practice-health-check" className={`inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/70 hover:bg-white/10 ${focusRingOnDark}`}>
                 Free practice health check
               </Link>
             </div>

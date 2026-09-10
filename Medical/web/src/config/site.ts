@@ -5,7 +5,13 @@
 import { niche, getSiteUrl } from "./niche-loader";
 import { getActiveNav } from "@accounting-network/web-shared/lib/niche-config";
 
-const office = niche.company.registered_office;
+// Guarded: 7 prod client_error rows on a sibling site showed niche.company
+// undefined in some client bundles (partial chunk load). Fall back to empties so
+// the page renders. Port of Property/web/src/config/site.ts:20-25.
+const company = (niche?.company ?? {}) as Partial<typeof niche.company>;
+const office = (company.registered_office ?? {}) as Partial<
+  NonNullable<typeof niche.company>["registered_office"]
+>;
 const registeredOfficeLine = [office.line1, office.line2, office.city, office.postcode]
   .filter(Boolean)
   .join(", "); // "20 Ashfield Avenue, Shipley, Bradford, BD18 3AL"
@@ -41,18 +47,18 @@ export const siteConfig = {
   company: {
     legalName: niche.legal_name, // "Ashfield Trading Ltd"
     tradingName: niche.display_name, // brand, e.g. "Medical Accountants UK"
-    number: niche.company.number,
-    placeOfRegistration: niche.company.place_of_registration,
-    registeredOffice: niche.company.registered_office,
+    number: company.number,
+    placeOfRegistration: company.place_of_registration,
+    registeredOffice: office,
     registeredOfficeLine,
-    enquiryRetentionMonths: niche.company.enquiry_retention_months, // change retention in one place
+    enquiryRetentionMonths: company.enquiry_retention_months, // change retention in one place
     // VAT: Ashfield Trading Ltd is NOT VAT-registered yet. When it registers, set
     // "company.vat_number" in niche.config.json and wire it where a VAT number should display.
-    vatNumber: niche.company.vat_number ?? null,
+    vatNumber: company.vat_number ?? null,
     // Companies-disclosure line for the footer (Companies Act 2006 / e-commerce regs).
     legalDisclosure:
       `${niche.display_name} is a trading name of ${niche.legal_name}, a company registered in ` +
-      `${niche.company.place_of_registration} (company no. ${niche.company.number}). ` +
+      `${company.place_of_registration} (company no. ${company.number}). ` +
       `Registered office: ${registeredOfficeLine}.`,
   },
   // Specialist partner network enquiries are shared with (category label, never a named firm).
@@ -64,8 +70,9 @@ export const siteConfig = {
   // Resource-gate consent text: in-house only. Never names a partner firm.
   // Used exclusively by ResourceGate (gated Excel downloads) so that resource
   // submissions are not co-mingled with the lead-sharing consent flow.
-  resourceConsentText:
-    "I agree to Medical Accountants UK using my email address to send me the requested resource and occasional relevant updates. I can unsubscribe at any time.",
+  // Brand name templated off niche.display_name (one source of truth, §4.6.9).
+  // Renders byte-identically today: display_name === "Medical Accountants UK".
+  resourceConsentText: `I agree to ${niche.display_name} using my email address to send me the requested resource and occasional relevant updates. I can unsubscribe at any time.`,
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
@@ -17,13 +17,7 @@ import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const siteUrl = siteConfig.url;
@@ -77,7 +71,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body
-        className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
+        className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
         {/* Site-wide WebSite + SearchAction entity graph root; publisher
             references the canonical Organization @id. Emitted once here so

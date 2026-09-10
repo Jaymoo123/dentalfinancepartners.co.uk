@@ -150,7 +150,7 @@ export function ExitIntentModal() {
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--navy)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]"
+          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-xl text-[var(--muted)] hover:text-[var(--navy)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]"
           aria-label="Close"
         >
           <svg

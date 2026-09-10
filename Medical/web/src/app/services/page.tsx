@@ -141,7 +141,7 @@ export default function ServicesPage() {
             { label: "Services" },
           ]}
         />
-        <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+        <h1 className="text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
           Medical accounting services for UK doctors
         </h1>
         <div className="mt-8">
@@ -157,7 +157,7 @@ export default function ServicesPage() {
         <ol className="mt-10 list-none space-y-10 pl-0 sm:mt-12 sm:space-y-12">
           {sections.map((s, i) => (
             <li key={s.title}>
-              <h2 className="font-serif text-xl font-semibold leading-snug text-[var(--ink)] sm:text-2xl">
+              <h2 className="text-xl font-bold leading-snug text-[var(--ink)] sm:text-2xl">
                 <span className="text-[var(--accent-strong)]">{i + 1}. </span>
                 {s.title}
               </h2>
@@ -192,7 +192,7 @@ export default function ServicesPage() {
 
         {/* Where we help */}
         <section className="mt-12 sm:mt-16">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
             Where we help
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
@@ -218,7 +218,7 @@ export default function ServicesPage() {
 
         {/* Try our calculators */}
         <section className="mt-12 sm:mt-16">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
             Ten free medical tax calculators
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
@@ -232,9 +232,9 @@ export default function ServicesPage() {
               <li key={c.slug}>
                 <Link
                   href={toolPath(c.slug)}
-                  className={`block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--accent-strong)] hover:shadow-sm ${focusRing}`}
+                  className={`block rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--accent-strong)] hover:shadow-sm ${focusRing}`}
                 >
-                  <h3 className="text-sm font-semibold text-[var(--ink)]">{c.name}</h3>
+                  <h3 className="text-sm font-bold text-[var(--ink)]">{c.name}</h3>
                   <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.oneLiner}</p>
                   <span className="mt-3 block text-xs font-semibold text-[var(--accent-strong)]">Open calculator →</span>
                 </Link>
@@ -244,7 +244,7 @@ export default function ServicesPage() {
         </section>
 
         <section className="mt-12 sm:mt-16">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
             How we work with you
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
@@ -259,7 +259,7 @@ export default function ServicesPage() {
             carrying a median of 4.5 FAQs against our 1, and FAQPage MISSING
             from this page's commercial schema checklist. */}
         <section className="mt-12 sm:mt-16">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
             Questions about medical accounting services
           </h2>
           <div className="mt-6 space-y-3">

@@ -10,7 +10,7 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 const fieldClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -26,12 +26,35 @@ type LeadFormProps = {
   /** When false, successful submit shows inline message instead of redirecting */
   redirectOnSuccess?: boolean;
   submitLabel?: string;
+  /**
+   * Colour-only switch for the labels and fine print when the form is rendered
+   * directly on a dark (navy) ground. --ink is literally --navy, and --muted is
+   * slate-600 (2.30 on navy), so both are unreadable there. Grounds inside the
+   * form (inputs, the details panel) stay light and keep their light tokens.
+   */
+  onDark?: boolean;
 };
 
 export function LeadForm({
   redirectOnSuccess = true,
   submitLabel = "Send enquiry",
+  onDark = false,
 }: LeadFormProps) {
+  const labelClass = onDark
+    ? "block text-sm font-medium text-white"
+    : "block text-sm font-medium text-[var(--ink)]";
+  const softClass = onDark
+    ? "font-normal text-white/70"
+    : "font-normal text-[var(--muted)]";
+  const noteClass = onDark
+    ? "text-xs leading-relaxed text-white/70"
+    : "text-xs leading-relaxed text-[var(--muted)]";
+  const errClass = onDark
+    ? "mt-1 text-sm text-red-300"
+    : "mt-1 text-sm text-red-700";
+  const noteLinkClass = onDark
+    ? "font-medium text-white underline"
+    : "font-medium text-[var(--copper-strong)] underline";
   const router = useRouter();
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -196,7 +219,7 @@ export function LeadForm({
       </div>
 
       <div>
-        <label htmlFor="fullName" className="block text-sm font-medium text-[var(--ink)]">
+        <label htmlFor="fullName" className={labelClass}>
           Your name
         </label>
         <input
@@ -213,7 +236,7 @@ export function LeadForm({
           onBlur={(e) => onFieldBlur("fullName", !!e.target.value)}
         />
         {fieldErrors.fullName ? (
-          <p id="err-fullName" className="mt-1 text-sm text-red-700">
+          <p id="err-fullName" className={errClass}>
             {fieldErrors.fullName}
           </p>
         ) : null}
@@ -221,7 +244,7 @@ export function LeadForm({
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-[var(--ink)]">
+          <label htmlFor="email" className={labelClass}>
             Email address
           </label>
           <input
@@ -238,13 +261,13 @@ export function LeadForm({
             onBlur={(e) => onFieldBlur("email", !!e.target.value, e.target.value.length)}
           />
           {fieldErrors.email ? (
-            <p id="err-email" className="mt-1 text-sm text-red-700">
+            <p id="err-email" className={errClass}>
               {fieldErrors.email}
             </p>
           ) : null}
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-[var(--ink)]">
+          <label htmlFor="phone" className={labelClass}>
             Phone number
           </label>
           <input
@@ -261,7 +284,7 @@ export function LeadForm({
             onBlur={(e) => onFieldBlur("phone", !!e.target.value)}
           />
           {fieldErrors.phone ? (
-            <p id="err-phone" className="mt-1 text-sm text-red-700">
+            <p id="err-phone" className={errClass}>
               {fieldErrors.phone}
             </p>
           ) : null}
@@ -269,7 +292,7 @@ export function LeadForm({
       </div>
 
       <div>
-        <label htmlFor="role" className="block text-sm font-medium text-[var(--ink)]">
+        <label htmlFor="role" className={labelClass}>
           {niche.lead_form.role_label}
         </label>
         <select
@@ -293,16 +316,16 @@ export function LeadForm({
           ))}
         </select>
         {fieldErrors.role ? (
-          <p id="err-role" className="mt-1 text-sm text-red-700">
+          <p id="err-role" className={errClass}>
             {fieldErrors.role}
           </p>
         ) : null}
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-[var(--ink)]">
+        <label htmlFor="message" className={labelClass}>
           What&apos;s on your mind?{" "}
-          <span className="font-normal text-[var(--muted)]">(optional)</span>
+          <span className={softClass}>(optional)</span>
         </label>
         <textarea
           id="message"
@@ -316,13 +339,13 @@ export function LeadForm({
           onBlur={(e) => onFieldBlur("message", !!e.target.value)}
         />
         {fieldErrors.message ? (
-          <p id="err-message" className="mt-1 text-sm text-red-700">
+          <p id="err-message" className={errClass}>
             {fieldErrors.message}
           </p>
         ) : null}
       </div>
 
-      <details className="group rounded-lg border border-[var(--border)] bg-[var(--surface)]">
+      <details className="group rounded-xl border border-[var(--border)] bg-[var(--surface)]">
         <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium text-[var(--ink-soft)] [&::-webkit-details-marker]:hidden">
           Optional: a bit more detail (helps us prepare)
         </summary>
@@ -381,9 +404,9 @@ export function LeadForm({
       {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
           the enquiry is the affirmative act, so this is shown as a notice, not a
           tick-box. */}
-      <p className="text-xs leading-relaxed text-[var(--muted)]">
+      <p className={noteClass}>
         {siteConfig.leadConsentText} See our{" "}
-        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--copper)] underline">
+        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className={noteLinkClass}>
           Privacy Policy
         </a>
         .
@@ -391,7 +414,7 @@ export function LeadForm({
 
       {status === "error" && errorMessage ? (
         <div
-          className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-900"
+          className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-900"
           role="alert"
         >
           {errorMessage}
@@ -406,7 +429,7 @@ export function LeadForm({
         {status === "loading" ? "Sending..." : submitLabel}
       </button>
 
-      <p className="text-xs leading-relaxed text-[var(--muted)]">We store your details securely.</p>
+      <p className={noteClass}>We store your details securely.</p>
     </form>
   );
 }

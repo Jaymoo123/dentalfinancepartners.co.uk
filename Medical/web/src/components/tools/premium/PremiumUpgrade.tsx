@@ -32,7 +32,7 @@ import { MobileToolSlot } from "./MobileToolSlot";
 function ToolLoading() {
   return (
     <div
-      className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm"
+      className="overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-sm"
       style={{ minHeight: 480 }}
       aria-busy="true"
     >
@@ -44,9 +44,9 @@ function ToolLoading() {
       </div>
       <div className="grid gap-6 p-5 sm:p-7 lg:grid-cols-2">
         <div className="space-y-5">
-          <div className="h-12 animate-pulse rounded-lg bg-[var(--border)]/60" />
-          <div className="h-12 animate-pulse rounded-lg bg-[var(--border)]/60" />
-          <div className="h-12 animate-pulse rounded-lg bg-[var(--border)]/60" />
+          <div className="h-12 animate-pulse rounded-xl bg-[var(--border)]/60" />
+          <div className="h-12 animate-pulse rounded-xl bg-[var(--border)]/60" />
+          <div className="h-12 animate-pulse rounded-xl bg-[var(--border)]/60" />
         </div>
         <div className="space-y-4">
           <div className="h-24 animate-pulse rounded-xl bg-[var(--border)]/60" />

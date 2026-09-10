@@ -31,7 +31,7 @@ export default function VisitorTabs({
 
   return (
     <div className="mt-8">
-      <div className="flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 p-1 text-sm">
+      <div className="flex items-center gap-1 rounded-xl border border-slate-200 bg-slate-50 p-1 text-sm">
         <TabButton active={tab === "story"} onClick={() => setTab("story")}>Story</TabButton>
         <TabButton active={tab === "activity"} onClick={() => setTab("activity")}>Activity log</TabButton>
         <span className="ml-auto pr-2 text-xs text-slate-400">

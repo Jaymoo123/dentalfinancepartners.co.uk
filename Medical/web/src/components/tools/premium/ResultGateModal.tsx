@@ -93,7 +93,7 @@ export function ResultGateModal({
         <button
           type="button"
           onClick={skip}
-          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-xl text-[var(--muted)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
           aria-label="Skip and show my result"
         >
           <svg

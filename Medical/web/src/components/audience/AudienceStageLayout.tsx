@@ -55,7 +55,7 @@ export function AudienceStageLayout({ data }: Props) {
             <div className="inline-flex items-center rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
               {data.badge}
             </div>
-            <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               {data.heroHeading}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg max-w-2xl">
@@ -71,7 +71,7 @@ export function AudienceStageLayout({ data }: Props) {
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {data.stats.map((s) => (
               <div key={s.label} className="text-center">
-                <div className="font-serif text-2xl font-semibold text-[var(--copper-light)] sm:text-3xl lg:text-4xl">
+                <div className="text-2xl font-bold text-[var(--copper-light)] sm:text-3xl lg:text-4xl">
                   {s.value}
                 </div>
                 <div className="mt-1.5 text-xs font-semibold uppercase tracking-wider text-white/70 sm:text-sm">
@@ -88,7 +88,7 @@ export function AudienceStageLayout({ data }: Props) {
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-6xl">
             <div className="mb-12 max-w-3xl">
-              <h2 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
+              <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
                 What we hear from {data.displayRole.toLowerCase()}
               </h2>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
@@ -101,12 +101,12 @@ export function AudienceStageLayout({ data }: Props) {
                 return (
                   <div
                     key={c.title}
-                    className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 transition-all hover:border-[var(--copper)] hover:shadow-md hover:shadow-[var(--copper-soft)]"
+                    className="rounded-xl border border-[var(--border)] bg-[var(--background)] p-6 transition-all hover:border-[var(--copper)] hover:shadow-md hover:shadow-[var(--copper-soft)]"
                   >
                     <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--navy)]">
                       <Icon className="h-5 w-5 text-[var(--copper-light)]" strokeWidth={2} />
                     </div>
-                    <h3 className="mt-5 text-base font-semibold text-[var(--ink)] sm:text-lg">
+                    <h3 className="mt-5 text-base font-bold text-[var(--ink)] sm:text-lg">
                       {c.title}
                     </h3>
                     <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">{c.body}</p>
@@ -122,20 +122,20 @@ export function AudienceStageLayout({ data }: Props) {
       <section className="bg-[var(--background)] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
+            <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
               How we work with {data.displayRole.toLowerCase()}
             </h2>
             <div className="mt-10 space-y-5">
               {data.services.map((s, i) => (
                 <div
                   key={s.title}
-                  className="flex gap-5 rounded-2xl border-l-4 border-[var(--copper)] bg-white p-6"
+                  className="flex gap-5 rounded-xl border-l-4 border-[var(--copper)] bg-white p-6"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--navy)] font-mono text-sm font-bold text-[var(--copper-light)]">
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-base font-semibold text-[var(--ink)] sm:text-lg">{s.title}</h3>
+                    <h3 className="text-base font-bold text-[var(--ink)] sm:text-lg">{s.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{s.body}</p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export function AudienceStageLayout({ data }: Props) {
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 sm:py-12">
           <div className={siteContainerLg}>
             <div className="mx-auto max-w-4xl">
-              <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+              <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
                 Try our free calculators
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
@@ -161,11 +161,11 @@ export function AudienceStageLayout({ data }: Props) {
                   <Link
                     key={c.href}
                     href={c.href}
-                    className={`group block rounded-2xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
+                    className={`group block rounded-xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
                   >
-                    <h3 className="text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--copper)]">{c.name}</h3>
+                    <h3 className="text-sm font-bold text-[var(--ink)] group-hover:text-[var(--copper-strong)]">{c.name}</h3>
                     <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.desc}</p>
-                    <span className="mt-3 block text-xs font-semibold text-[var(--copper)]">Open calculator →</span>
+                    <span className="mt-3 block text-xs font-semibold text-[var(--copper-strong)]">Open calculator →</span>
                   </Link>
                 ))}
               </div>
@@ -180,10 +180,10 @@ export function AudienceStageLayout({ data }: Props) {
           <div className="mx-auto max-w-4xl">
             <div className="rounded-3xl border border-[var(--copper)]/25 bg-white p-8 sm:p-12">
               <div className="mb-8 text-center">
-                <div className="inline-flex items-center gap-2 rounded-full bg-[var(--copper-soft)] px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-strong)]">
+                <div className="inline-flex items-center gap-2 rounded-full bg-[var(--copper-soft)] px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-deep)]">
                   Free consultation
                 </div>
-                <h2 className="mt-4 font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
+                <h2 className="mt-4 text-3xl font-bold text-[var(--ink)] sm:text-4xl">
                   {data.ctaTitle}
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-[var(--muted)] sm:text-lg max-w-2xl mx-auto">
@@ -200,16 +200,16 @@ export function AudienceStageLayout({ data }: Props) {
       <section className="bg-[var(--background)] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl text-center mb-10">
+            <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl text-center mb-10">
               Common questions from {data.displayRole.toLowerCase()}
             </h2>
             <div className="space-y-4">
               {data.faqs.map((f) => (
                 <div
                   key={f.q}
-                  className="rounded-2xl border-l-4 border-[var(--border)] bg-white p-6 transition-colors hover:border-[var(--copper)] sm:p-7"
+                  className="rounded-xl border-l-4 border-[var(--border)] bg-white p-6 transition-colors hover:border-[var(--copper)] sm:p-7"
                 >
-                  <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">{f.q}</h3>
+                  <h3 className="text-lg font-bold text-[var(--ink)]">{f.q}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.a}</p>
                 </div>
               ))}
@@ -226,7 +226,7 @@ export function AudienceStageLayout({ data }: Props) {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--copper-light)]">
                 Want to read first?
               </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold text-white sm:text-3xl">
+              <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
                 Background reading from our guide library
               </h2>
               <div className="mt-10 grid gap-4 text-left sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -234,12 +234,12 @@ export function AudienceStageLayout({ data }: Props) {
                   <Link
                     key={g.href}
                     href={g.href}
-                    className={`group block rounded-2xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--copper)] hover:bg-white/10 ${focusRing}`}
+                    className={`group block rounded-xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--copper)] hover:bg-white/10 ${focusRing}`}
                   >
                     <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--copper-light)] mb-2">
                       Medical guide
                     </p>
-                    <h3 className="font-serif text-base font-semibold text-white group-hover:text-[var(--copper-light)]">
+                    <h3 className="text-base font-bold text-white group-hover:text-[var(--copper-light)]">
                       {g.title}
                     </h3>
                     <p className="mt-2 text-xs leading-relaxed text-white/70">{g.body}</p>

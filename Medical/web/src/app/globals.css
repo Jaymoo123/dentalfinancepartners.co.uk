@@ -1,17 +1,25 @@
-﻿/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
 @import "tailwindcss" source("..");
 @source "../../../../packages/web-shared";
 @import "tw-animate-css";
+@import "@accounting-network/web-shared/design/globals-standard.css";
 
 /*
-  UI ground rules (mobile-first) â€” Medical Accountants UK
-  - Teal + coral brand; clean clinical aesthetic, high-contrast type.
-  - Touch targets â‰¥44px; no horizontal bleed; form inputs 16px on mobile.
+  UI ground rules (mobile-first) - Medical Accountants UK
+  - Navy + copper brand; clean clinical aesthetic, high-contrast type.
+  - Touch targets >=44px; no horizontal bleed; form inputs 16px on mobile.
   - Professional, clinical aesthetic for medical sector
+
+  Heading rhythm, motion, glow and the radius chain come from the shared kit
+  imported above (packages/web-shared/design/globals-standard.css). That file
+  carries the two-block heading split verbatim, including the comment explaining
+  why `line-height: 1.2` is UNLAYERED. Do not re-declare either half here, and do
+  not "tidy" the unlayered block into @layer base over there.
 */
 
 :root {
   /* Medical brand - deep navy (authority, trust, professionalism) */
+  --navy-deep: #000d1f;
   --navy: #001b3d;
   --navy-soft: #0d2d52;
   --navy-muted: #1a3a5c;
@@ -19,17 +27,26 @@
   
   /* Accent - warm copper/bronze (premium, medical, distinctive) */
   --copper: #b87333;
+  --copper-rgb: 184 115 51; /* channels, for rgb(var(--copper-rgb) / alpha) */
   --copper-strong: #a0622b;
   --copper-soft: rgba(184, 115, 51, 0.14);
   --copper-light: #cd8e5a;
+  /* Label copper for chips that sit ON --copper-soft. --copper-strong measures
+     4.19 on the copper-soft-over-white chip ground and fails the 4.5 floor;
+     this measures 6.25 there, 5.57 on copper-soft over --surface-elevated,
+     and 7.32 on plain white. */
+  --copper-deep: #7d4b22;
   
-  /* Professional neutrals */
-  --background: #f4f6f9;
+  /* Professional neutrals - standard slate set (DESIGN_DELTA s1 "neutral ramp").
+     --background MUST be slate-50, not the old #f4f6f9: red-600 (warning step 1)
+     measures 4.46 on #f4f6f9 and 4.62 on slate-50, so the ladder below is only
+     legal once the ground moved. --ink stays navy; it is brand, not neutral. */
+  --background: #f8fafc; /* slate-50 (was #f4f6f9) */
   --surface: #ffffff;
   --surface-elevated: #eef1f6;
   --ink: #001b3d;
-  --ink-soft: #2d3f5c;
-  --muted: #5c6b80;
+  --ink-soft: #334155; /* slate-700 (was #2d3f5c) */
+  --muted: #475569;    /* slate-600, 7.58 on white / 6.69 on --surface-elevated. slate-500 measured 4.20 on the elevated ground and failed the 4.5 floor. */
   --border: #e2e8f0;
   
   /* Semantic aliases */
@@ -55,24 +72,135 @@
   --brand-primary-strong: var(--copper-strong);
   --brand-on-primary: #ffffff;
 
+  /* Radius chain root. The kit's globals-standard.css @theme derives
+     --radius-sm/md/lg/xl and --btn-radius from this, so
+     --radius-xl = calc(0rem + 4px) = 4px and --btn-radius = 4px. Without this
+     declaration the calc is invalid, --radius-xl collapses and every kit button
+     falls back to a 9999px pill: the two defects the generalist port shipped. */
+  --radius: 0rem;
+
+  /* Button ground trio (DESIGN_DELTA s1 "button constants" + s2).
+     NOT the brand hex: copper #b87333 measures 3.79 on white and amber-600
+     measures 3.19, both under the 4.5:1 text floor. This is Property's
+     shift-to-700 rule applied. Copper survives at full strength only as the
+     focus ring / icon / motif stroke, where the floor is 3:1. */
+  --btn-ground: #a0622b;         /* copper-strong, white label 4.91 */
+  --btn-ground-hover: #8a5425;   /* white label 6.22 */
+  --btn-ground-active: #78350f;  /* amber-900, white label 9.07 */
+
+  /* Cream hero surface for the kit's heroCreamSurface (Property's value). */
+  --hero-cream: #fbfaf7;
+
+  /* Brand-glow channels ("R G B") the kit's num-glow / card-glow / related-card
+     rules key off. Amber 500 / 600 / 400 / 100, matching the primary ramp.
+     DESIGN_DELTA does not name the glow steps; these follow the kit's own
+     500/600/400/100 shape. */
+  --brand-glow: 245 158 11;        /* amber-500 #f59e0b */
+  --brand-glow-deep: 217 119 6;    /* amber-600 #d97706 */
+  --brand-glow-edge: 251 191 36;   /* amber-400 #fbbf24 */
+  --brand-glow-faint: 254 243 199; /* amber-100 #fef3c7 */
+
+  /* Warning / duty / deadline / penalty ladder M-W1 (DESIGN_DELTA owner
+     decision 1, 2026-09-10). OFF copper AND off amber and orange entirely: the
+     brand IS the amber family, so an amber or orange penalty chip would read as
+     brand furniture. Every step clears 4.5:1 on white, cream and slate-50, and
+     every step is directly labelled in use, never colour alone.
+     Tokens only here; the existing usages belong to the phases that own those
+     files. */
+  --warn-1: #dc2626;  /* red-600,    a duty bites / deadline    (white 4.83) */
+  --warn-2: #7e22ce;  /* purple-700, escalation, charge arises  (white 6.98) */
+  --warn-3: #4338ca;  /* indigo-700, penalty / regulatory       (white 7.90) */
+  --warn-1-on-dark: #f87171;  /* red-400    on navy 6.20 */
+  --warn-2-on-dark: #c084fc;  /* purple-400 on navy 6.49 */
+  --warn-3-on-dark: #818cf8;  /* indigo-400 on navy 5.75 */
+
+  /* The one red that stays: form-error text, always paired with role="alert"
+     and aria-invalid, never resting on colour alone. */
+  --form-error: #b91c1c;  /* red-700, white 6.47 */
+
+  /* Standard card ring: slate-200 at 70%, the kit's `ring-1 ring-slate-200/70`. */
+  --card-ring: rgba(226, 232, 240, 0.7);
+
+  /* shadcn/ui token layer. Medical shipped ui/chart.tsx and ui/accordion.tsx
+     against these and had none of them. `--muted-surface` is deliberately
+     distinct from the legacy text-colour `--muted` above; the Tailwind v4
+     utilities (`bg-muted`, `text-muted-foreground`) resolve through the
+     `@theme inline` block below, not these raw variables. */
+  --muted-surface: #f1f5f9;
+  --muted-foreground: #475569; /* slate-600, matches --muted; slate-500 failed 4.5:1 on non-white grounds */
+  --card: #ffffff;
+  --card-foreground: #001b3d;
+  --popover: #ffffff;
+  --popover-foreground: #001b3d;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #001b3d;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --input: #e2e8f0;
+  --ring: var(--brand-primary);
+
   /* Chart palette (recharts via shadcn ChartContainer pattern) */
   --chart-1: #001b3d;
   --chart-2: #b87333;
   --chart-3: #2d4a6f;
   --chart-4: #cd8e5a;
-  --chart-5: #5c6b80;
+  --chart-5: #64748b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
-  --font-serif: var(--font-cormorant);
+  /* No --font-serif. Cormorant Garamond is dropped (owner decision 2,
+     2026-09-10): Plus Jakarta Sans is the single face. */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  /* NOT var(--primary). Medical's legacy `--primary` aliases NAVY while
+     `--brand-primary` aliases copper, the inversion DESIGN_DELTA s1 records
+     under "semantic overrides". Until those legacy aliases lose their consumers
+     and can be deleted, `bg-primary` on a shadcn primitive must resolve to the
+     accessible button ground, not to navy. */
+  --color-primary: var(--btn-ground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted-surface);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+}
+
+/* Primary ramp for the design kit's primary-* utilities (DESIGN_DELTA s1,
+   s5 registry: Medical = amber). Tailwind 4 amber in oklch, copied verbatim
+   from node_modules/tailwindcss/theme.css so computed styles byte-match the
+   stock ramp. THE BRAND HEX IS NOT A RAMP STEP: --brand-primary stays #b87333,
+   which sits between amber-600 and amber-700. */
+@theme {
+  --color-primary-50: oklch(98.7% 0.022 95.277);
+  --color-primary-100: oklch(96.2% 0.059 95.617);
+  --color-primary-200: oklch(92.4% 0.12 95.746);
+  --color-primary-300: oklch(87.9% 0.169 91.605);
+  --color-primary-400: oklch(82.8% 0.189 84.429);
+  --color-primary-500: oklch(76.9% 0.188 70.08);
+  --color-primary-600: oklch(66.6% 0.179 58.318);
+  --color-primary-700: oklch(55.5% 0.163 48.998);
+  --color-primary-800: oklch(47.3% 0.137 46.201);
+  --color-primary-900: oklch(41.4% 0.112 45.904);
+  --color-primary-950: oklch(27.9% 0.077 45.635);
 }
 
 *,
@@ -94,7 +222,7 @@ body {
   background: var(--background);
   color: var(--ink);
   font-family: var(--font-plus-jakarta), system-ui, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6; /* A.3 body rhythm (was 1.5) */
 }
 
 article,
@@ -102,12 +230,12 @@ main {
   min-width: 0;
 }
 
-/* Hero â€” sophisticated navy gradient (professional, authoritative) */
+/* Hero - sophisticated navy gradient (professional, authoritative) */
 .hero-brand {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #000d1f 0%, var(--navy) 50%, var(--navy-soft) 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-soft) 100%);
+  color: var(--brand-on-primary);
 }
 
 .hero-brand::before {
@@ -116,8 +244,8 @@ main {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 50% at 20% 0%, rgba(184, 115, 51, 0.10), transparent 60%),
-    radial-gradient(ellipse 60% 45% at 80% 100%, rgba(184, 115, 51, 0.08), transparent 55%);
+    radial-gradient(ellipse 70% 50% at 20% 0%, rgb(var(--copper-rgb) / 0.10), transparent 60%),
+    radial-gradient(ellipse 60% 45% at 80% 100%, rgb(var(--copper-rgb) / 0.08), transparent 55%);
 }
 
 /* Subtle grid pattern - clinical/technical professional aesthetic */
@@ -135,7 +263,9 @@ main {
   z-index: 1;
 }
 
-/* Transform-only motion â€” no opacity keyframes (avoids invisible hero on first paint / SSR). */
+/* Transform-only motion - no opacity keyframes (avoids invisible hero on first
+   paint / SSR). This deliberately overrides the shared kit's fadeInUp variant of
+   .hero-reveal / .hero-reveal-delay, which animates opacity. */
 @media (prefers-reduced-motion: no-preference) {
   .hero-reveal,
   .hero-reveal-delay {
@@ -146,6 +276,15 @@ main {
   }
 }
 
+/* The kit declares .hero-reveal unconditionally, so without this the imported
+   opacity fade would be the ONLY rule left under reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal,
+  .hero-reveal-delay {
+    animation: none;
+  }
+}
+
 @keyframes heroReveal {
   from {
     transform: translateY(24px);
@@ -153,13 +292,6 @@ main {
   to {
     transform: translateY(0);
   }
-}
-
-/* Display serif for headings - refined professional style */
-.display-serif {
-  font-family: var(--font-cormorant), Georgia, serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
 }
 
 /* Focus rings */
@@ -185,57 +317,10 @@ a:hover {
   color: var(--copper-strong);
 }
 
-/* Buttons - copper primary, navy secondary */
-.btn-primary {
-  background: var(--copper);
-  color: white;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: var(--copper-strong);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--navy);
-  border: 1px solid var(--navy);
-}
-
-.btn-secondary:hover {
-  background: var(--navy);
-  color: white;
-}
-
-/* Cards - professional and refined */
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.2s;
-}
-
-.card:hover {
-  border-color: var(--copper);
-  box-shadow: 0 4px 12px rgba(184, 115, 51, 0.15);
-}
-
-/* Stats/numbers - copper accent */
-.stat-number {
-  color: var(--copper);
-  font-weight: 700;
-}
-
-/* Section backgrounds - very subtle */
-.section-alt {
-  background: var(--surface-elevated);
-}
-
-/* Trust indicators - copper icons */
-.trust-icon {
-  color: var(--copper);
-}
+/* Deleted in the Property-standard port, each with zero consumers proven by grep:
+   .btn-primary, .btn-secondary, .card, .stat-number, .section-alt, .trust-icon.
+   Buttons come from the kit's recipes; cards from `rounded-xl` +
+   `ring-1 ring-slate-200/70`. Do not reintroduce them as CSS classes. */
 
 /* Form inputs - clean, clinical */
 input,
@@ -444,24 +529,9 @@ tr:hover {
   font-weight: 400;
 }
 
-/* Medical-specific UI elements */
-.medical-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: var(--copper-soft);
-  color: var(--copper-strong);
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-.medical-highlight {
-  background: linear-gradient(120deg, var(--copper-soft) 0%, transparent 100%);
-  padding: 0.125rem 0.25rem;
-  border-radius: 4px;
-}
+/* .medical-badge and .medical-highlight deleted: zero consumers, proven by grep.
+   .medical-badge also measured 4.18 (copper-strong on --copper-soft), a live
+   contrast fail had anything ever used it. */
 
 /* Inline CTA aside (matches Property's pattern, uses medical accent) */
 .prose-blog aside {

@@ -198,6 +198,7 @@ export default function NHSPensionPage() {
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-3xl">
             <Breadcrumb
+              variant="light"
               suppressJsonLd
               items={[
                 { label: "Home", href: "/" },

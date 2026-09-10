@@ -71,7 +71,7 @@ function sliderBounds(field: CalcField): { min: number; max: number; step: numbe
  * ------------------------------------------------------------------------- */
 
 const inputCls =
-  "w-full min-h-10 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--ink)] focus:border-[var(--gold)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)]/25";
+  "w-full min-h-10 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--ink)] focus:border-[var(--gold)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)]/25";
 
 function NumberField({
   field,
@@ -193,7 +193,7 @@ function SelectField({
                 aria-checked={active}
                 onClick={() => onChange(opt.value)}
                 className={[
-                  "rounded-lg border px-3.5 py-2 text-sm transition-colors min-h-[38px]",
+                  "rounded-xl border px-3.5 py-2 text-sm transition-colors min-h-[38px]",
                   active
                     ? "border-[var(--gold)] bg-[var(--gold)]/10 text-[var(--navy)] font-semibold"
                     : "border-[var(--border)] text-[var(--ink-soft)] hover:bg-[var(--surface-elevated)]",
@@ -567,7 +567,7 @@ export function PremiumCalculator({
     <>
       <div
         ref={rootRef}
-        className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm"
+        className="overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-sm"
       >
         {/* Top accent bar -- gold/copper brand token. NEVER var(--primary). */}
         <div className="h-1 bg-[var(--gold)]" />

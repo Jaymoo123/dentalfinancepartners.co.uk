@@ -17,18 +17,18 @@ export function SiteFooter() {
               href="https://www.dentalfinancepartners.co.uk"
               target="_blank"
               rel="noopener noreferrer"
-              className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
+              className={`block p-4 rounded-xl bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
             >
-              <h3 className="font-semibold text-white">Dental Finance Partners</h3>
+              <h3 className="font-bold text-white">Dental Finance Partners</h3>
               <p className="mt-1 text-sm text-white/70">Specialist accounting for dental practices</p>
             </a>
             <a
               href="https://www.accountsforlawyers.co.uk"
               target="_blank"
               rel="noopener noreferrer"
-              className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
+              className={`block p-4 rounded-xl bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
             >
-              <h3 className="font-semibold text-white">Accounts for Lawyers</h3>
+              <h3 className="font-bold text-white">Accounts for Lawyers</h3>
               <p className="mt-1 text-sm text-white/70">Specialist accounting for solicitors &amp; law firms</p>
             </a>
           </div>
@@ -36,7 +36,7 @@ export function SiteFooter() {
 
         <div className="grid gap-10 min-[480px]:grid-cols-2 md:gap-12">
           <div className="min-w-0">
-            <div className="inline-block rounded-lg bg-white px-4 py-2.5 shadow-sm sm:px-5 sm:py-3">
+            <div className="inline-block rounded-xl bg-white px-4 py-2.5 shadow-sm sm:px-5 sm:py-3">
               <BrandWordmarkHomeLink size="footer" />
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-300">{siteConfig.description}</p>

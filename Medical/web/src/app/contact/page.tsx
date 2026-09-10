@@ -41,7 +41,7 @@ export default function ContactPage() {
           { label: "Contact" },
         ]}
       />
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Contact us</h1>
+      <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Contact us</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         Whether you're a GP partner navigating NHS pension complexities, a locum doctor managing multiple income streams, or a consultant considering private practice incorporation, we're here to help. Fill in the form below or contact us directly.
       </p>
@@ -64,8 +64,8 @@ export default function ContactPage() {
 
       <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
         <div className="space-y-6">
-          <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-            <h2 className="font-serif text-lg font-semibold text-[var(--ink)]">Get in touch</h2>
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
+            <h2 className="text-lg font-bold text-[var(--ink)]">Get in touch</h2>
             <dl className="mt-6 space-y-5 text-sm">
               <div>
                 <dt className="font-medium text-[var(--ink)]">Enquiries</dt>
@@ -82,8 +82,8 @@ export default function ContactPage() {
             </dl>
           </div>
 
-          <div className="rounded-2xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:p-8">
-            <h3 className="font-serif text-base font-semibold text-[var(--ink)] sm:text-lg">What happens next?</h3>
+          <div className="rounded-xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:p-8">
+            <h3 className="text-base font-bold text-[var(--ink)] sm:text-lg">What happens next?</h3>
             <ul className="mt-4 space-y-3 text-sm text-[var(--ink-soft)]">
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--coral)] text-xs font-bold text-white">1</span>
@@ -101,8 +101,8 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 sm:p-8">
-          <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--background)] p-6 sm:p-8">
+          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
             {isPackagesMode(niche) ? "Speak to a medical accountant" : "Book your free consultation"}
           </h2>
           <p className="mt-3 text-sm text-[var(--muted)]">
@@ -114,29 +114,29 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:mt-16 sm:p-8">
-        <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">Common enquiries</h2>
+      <div className="mt-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:mt-16 sm:p-8">
+        <h2 className="text-lg font-bold text-[var(--ink)] sm:text-xl">Common enquiries</h2>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 sm:gap-8">
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">NHS Pension Annual Allowance</h3>
+            <h3 className="text-sm font-bold text-[var(--medical-teal-dark)]">NHS Pension Annual Allowance</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
               Managing unexpected tax charges from NHS pension growth. We help GPs and consultants navigate annual allowance calculations and scheme pays elections.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">Locum Tax Returns</h3>
+            <h3 className="text-sm font-bold text-[var(--medical-teal-dark)]">Locum Tax Returns</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
               Self Assessment for locum doctors working across multiple practices. Expense claims, payment on account, and quarterly tax planning.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">Private Practice Incorporation</h3>
+            <h3 className="text-sm font-bold text-[var(--medical-teal-dark)]">Private Practice Incorporation</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
               Structuring your private work through a limited company. Corporation tax planning, profit extraction, and ongoing compliance.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">GP Partnership Accounts</h3>
+            <h3 className="text-sm font-bold text-[var(--medical-teal-dark)]">GP Partnership Accounts</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
               Partnership tax returns, profit allocation, and financial reporting for GP practices. NHS and private income reconciliation.
             </p>

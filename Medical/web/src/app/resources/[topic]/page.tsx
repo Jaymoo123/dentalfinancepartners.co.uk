@@ -68,7 +68,7 @@ export default async function ResourceGuidePage({
         <div className="mx-auto max-w-3xl">
           {/* Guide header */}
           <div className="mb-8 border-b border-[var(--border)] pb-8">
-            <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper)]">
+            <p className="text-xs font-bold uppercase tracking-wider text-[var(--copper-strong)]">
               Free research resource
             </p>
             <h1 className="mt-2 text-3xl font-bold text-[var(--navy)] sm:text-4xl">
@@ -89,7 +89,7 @@ export default async function ResourceGuidePage({
 
           {/* The workbook this page documents */}
           {xlsx && (
-            <div className="mb-8 rounded-lg border border-[var(--copper)] bg-[var(--surface-elevated)] p-5">
+            <div className="mb-8 rounded-xl border border-[var(--copper)] bg-[var(--surface-elevated)] p-5">
               <p className="text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
                 The file this page documents
               </p>
@@ -110,7 +110,7 @@ export default async function ResourceGuidePage({
           {guide.headings.length > 0 && (
             <nav
               aria-label="Guide contents"
-              className="mb-8 rounded-lg border border-[var(--border)] bg-[var(--surface-elevated)] p-5"
+              className="mb-8 rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] p-5"
             >
               <p className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
                 Contents
@@ -141,7 +141,7 @@ export default async function ResourceGuidePage({
 
           {/* CTA at the bottom of the guide */}
           <div
-            className="mt-12 rounded-lg border-l-4 border-[var(--copper)] bg-[var(--surface-elevated)] p-6 sm:p-8"
+            className="mt-12 rounded-xl border-l-4 border-[var(--copper)] bg-[var(--surface-elevated)] p-6 sm:p-8"
           >
             <p className="text-sm font-bold uppercase tracking-wider text-[var(--navy)]">
               Ready to apply this to your situation?

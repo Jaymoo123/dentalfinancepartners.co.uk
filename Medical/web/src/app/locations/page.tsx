@@ -48,7 +48,7 @@ export default function LocationsHubPage() {
           { label: "Locations" },
         ]}
       />
-      <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+      <h1 className="text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
         GP accountants across the UK
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
@@ -60,9 +60,9 @@ export default function LocationsHubPage() {
           <li key={loc.slug}>
             <Link
               href={`/locations/${loc.slug}`}
-              className={`card-premium block rounded-xl p-6 no-underline shadow-sm transition-shadow hover:shadow-md ${focusRing}`}
+              className={`rounded-xl bg-[var(--surface)] ring-1 ring-slate-200/70 block p-6 no-underline shadow-sm transition-shadow hover:shadow-md ${focusRing}`}
             >
-              <span className="font-serif text-xl font-semibold text-[var(--ink)]">
+              <span className="text-xl font-bold text-[var(--ink)]">
                 {cityLabel[loc.slug] ?? loc.slug}
               </span>
               <span className="mt-2 block text-sm leading-relaxed text-[var(--muted)]">{loc.title}</span>
@@ -74,8 +74,8 @@ export default function LocationsHubPage() {
         ))}
       </ul>
 
-      <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-        <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+      <div className="mt-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
+        <h2 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
           Remote service for all UK doctors
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">

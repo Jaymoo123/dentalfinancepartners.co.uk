@@ -78,7 +78,7 @@ export function TestimonialSlider() {
       <div className="mt-6 flex items-center justify-center gap-4">
         <button
           onClick={() => setIsPaused(!isPaused)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-[var(--medical-teal)] focus:ring-offset-2"
+          className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--medical-teal)] focus-visible:ring-offset-2"
           aria-label={isPaused ? "Resume auto-rotation" : "Pause auto-rotation"}
           type="button"
         >
@@ -101,7 +101,7 @@ export function TestimonialSlider() {
                 setCurrentIndex(idx);
                 setIsPaused(true);
               }}
-              className={`h-3 w-3 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[var(--medical-teal)] focus:ring-offset-2 ${
+              className={`h-3 w-3 rounded-full transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--medical-teal)] focus-visible:ring-offset-2 ${
                 idx === currentIndex ? "scale-125 bg-[var(--medical-teal)]" : "bg-slate-300 hover:bg-slate-400"
               }`}
               aria-label={`Go to testimonial ${idx + 1}`}

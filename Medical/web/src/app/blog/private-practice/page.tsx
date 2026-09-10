@@ -205,8 +205,8 @@ export default function PrivatePracticePillarPage() {
                   const readTime = calculateReadTime(p.contentHtml);
                   return (
                     <li key={p.slug}>
-                      <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
-                        <h3 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+                      <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
+                        <h3 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
                           <Link
                             href={`/blog/${p.slug}`}
                             className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
@@ -238,7 +238,7 @@ export default function PrivatePracticePillarPage() {
             </section>
           )}
 
-          <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
+          <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-xl">
             <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
               Starting a Private Practice?
             </h2>

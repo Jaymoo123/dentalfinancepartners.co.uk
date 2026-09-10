@@ -1,29 +1,31 @@
-/** Shared layout primitives — mobile-first, Medical Accounts */
-export const siteContainer =
-  "mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 min-w-0";
+/** Layout utility recipes - the Property standard, consumed from the shared design kit.
+ *  Brand behaviour comes from tokens in globals.css (--color-primary-*, the --btn-ground
+ *  trio, --hero-cream), so these strings are the estate's and only the tokens are Medical's.
+ *  docs/medical/DESIGN_DELTA.md records the approved deviations: the button ground is
+ *  --btn-ground #a0622b (white label 4.91), NOT the live brand hex #b87333, which measures
+ *  3.79 on white and fails the 4.5:1 text floor. */
 
-/** Wider reading width for marketing homepage (Sidekick-style rhythm). */
-export const siteContainerLg =
-  "mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 min-w-0";
+export {
+  siteContainer,
+  siteContainerLg,
+  siteContainerXl,
+  contentNarrow,
+  sectionY,
+  sectionYLoose,
+  focusRing,
+  btnPrimary,
+  btnSecondary,
+  btnOnDark,
+  btnOnCream,
+  heroCreamSurface,
+} from "@accounting-network/web-shared/design/layout-utils";
 
-export const contentNarrow =
-  "mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 min-w-0";
-
-export const sectionY = "py-12 sm:py-16 md:py-20";
-
-export const sectionYLoose = "py-16 sm:py-20 md:py-24 lg:py-28";
-
-export const focusRing =
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
-
-/** Primary CTA — copper surface, white label (distinctive medical brand) */
-export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full bg-[var(--copper)] px-6 py-3 text-sm font-semibold tracking-tight text-white shadow-sm transition-all duration-200 hover:bg-[var(--copper-strong)] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
-
-/** Secondary — navy outline, for use on light backgrounds */
-export const btnSecondary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 active:bg-[var(--navy)]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
-
-/** Ghost / on-dark: light border */
-export const btnOnDark =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all duration-200 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
+/** Focus ring for controls sitting on the navy ground.
+ *  The kit's `focusRing` outlines primary-600, which is near-invisible against
+ *  --navy #001b3d, so a keyboard user loses the focus indicator entirely on any
+ *  dark section. The kit has no exported on-dark variant; its `btnOnDark` recipe
+ *  solves the same problem inline with outline-primary-400, so this mirrors that
+ *  choice rather than editing the kit (which would change Property and 14 other
+ *  sites). ponytail: one constant, not an on-dark variant of every recipe. */
+export const focusRingOnDark =
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400";

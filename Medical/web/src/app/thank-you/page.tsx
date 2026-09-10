@@ -155,7 +155,7 @@ export default async function ThankYouPage({
               <span className="text-sm font-semibold text-[var(--muted)]">2. Details received</span>
             </li>
             <li aria-current="step" className="flex items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 border-[var(--copper)] bg-[var(--surface)] text-xs font-bold text-[var(--copper)]">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 border-[var(--copper)] bg-[var(--surface)] text-xs font-bold text-[var(--copper-strong)]">
                 3
               </span>
               <span className="text-sm font-bold text-[var(--ink)]">3. Pick your callback time</span>

@@ -249,7 +249,7 @@ export default async function VisitorTimelinePage({
           </div>
           <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {vitals.rows.map((v) => (
-              <div key={v.metric} className="flex items-center justify-between gap-2 rounded-lg bg-slate-50 px-3 py-2">
+              <div key={v.metric} className="flex items-center justify-between gap-2 rounded-xl bg-slate-50 px-3 py-2">
                 <span className="text-sm text-slate-700">{v.label}</span>
                 <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${RATING_STYLE[v.rating] || "bg-slate-100 text-slate-600"}`}>{v.display}</span>
               </div>

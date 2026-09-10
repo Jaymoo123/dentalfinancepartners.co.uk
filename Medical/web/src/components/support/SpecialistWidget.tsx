@@ -53,7 +53,7 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Medical token-safe input class (no --primary, no orange-*)
 const inputClass =
-  "mt-1 w-full rounded-lg border-2 border-[var(--border)] bg-white px-3 py-2 text-base text-[var(--ink)] focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25 min-h-12 touch-manipulation";
+  "mt-1 w-full rounded-xl border-2 border-[var(--border)] bg-white px-3 py-2 text-base text-[var(--ink)] focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25 min-h-12 touch-manipulation";
 
 // Cadence thresholds (ms of VISIBLE page time): first ping 30s, then +40s, +50s, +60s.
 // Verbatim from Property/Dentists.
@@ -364,7 +364,7 @@ export function SpecialistWidget() {
         <div
           role="dialog"
           aria-label="Medical Accountants UK assistant"
-          className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-2xl"
+          className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-2xl"
           style={{ height: "min(72dvh, 34rem)" }}
         >
           {/* Agent header: navy background, copper accents */}
@@ -397,7 +397,7 @@ export function SpecialistWidget() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-[var(--border)] bg-white px-3 py-2 text-sm leading-relaxed text-[var(--ink)] shadow-sm">
+                <div className="max-w-[82%] rounded-xl rounded-tl-sm border border-[var(--border)] bg-white px-3 py-2 text-sm leading-relaxed text-[var(--ink)] shadow-sm">
                   {peekLine}
                 </div>
               </div>
@@ -409,7 +409,7 @@ export function SpecialistWidget() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-[var(--copper-soft)] bg-[var(--surface-elevated)] px-3 py-2 text-sm font-medium text-[var(--navy)] shadow-sm">
+                <div className="max-w-[82%] rounded-xl rounded-tl-sm border border-[var(--copper-soft)] bg-[var(--surface-elevated)] px-3 py-2 text-sm font-medium text-[var(--navy)] shadow-sm">
                   Thanks, a specialist has your message and will be in touch by email. For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it may be their team who replies. Please keep an eye on your inbox, and your spam or junk folder, so our reply is not missed.
                 </div>
               </div>
@@ -441,7 +441,7 @@ export function SpecialistWidget() {
               <button
                 type="button"
                 onClick={() => onChip("question")}
-                className="w-full rounded-lg bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90"
+                className="w-full rounded-xl bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90"
               >
                 Ask a specialist
               </button>
@@ -473,7 +473,7 @@ export function SpecialistWidget() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full rounded-lg bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
+                  className="w-full rounded-xl bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}
                 </button>
@@ -492,7 +492,7 @@ export function SpecialistWidget() {
 
       {/* Proactive peek: clicking opens the panel. */}
       {!open && peekVisible && peekLine && (
-        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-2xl border border-[var(--copper)]/20 bg-white p-3 shadow-2xl">
+        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-xl border border-[var(--copper)]/20 bg-white p-3 shadow-2xl">
           <button
             type="button"
             onClick={() => handleOpen(true)}

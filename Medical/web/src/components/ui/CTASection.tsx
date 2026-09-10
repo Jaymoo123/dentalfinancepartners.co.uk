@@ -25,7 +25,7 @@ export function CTASection({
   
   return (
     <section
-      className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10"
+      className="relative overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10"
       aria-labelledby={headingId}
     >
       <div
@@ -34,7 +34,7 @@ export function CTASection({
       />
       <h2
         id={headingId}
-        className="display-serif max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-[var(--ink)] sm:text-3xl"
+        className="max-w-2xl text-2xl font-bold leading-tight tracking-tight text-[var(--ink)] sm:text-3xl"
       >
         {title}
       </h2>

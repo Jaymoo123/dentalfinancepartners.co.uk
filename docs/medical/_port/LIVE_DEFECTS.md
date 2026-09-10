@@ -280,3 +280,37 @@ Plain English, one line each.
 11. **The contact page says we will give a "fixed-fee quote".** Under how the site actually
     works, the partner firm quotes, not us. Options: **(a)** reword to describe what the firm
     does, or **(b)** leave it.
+
+---
+
+## Addendum, added by the manager 2026-09-10 during Phase 1 verification
+
+**A flaky test that can turn CI red at random, and a red CI run emails the owner.**
+
+`Medical/web/src/app/api/leads/submit/lead-submit-route.test.ts:12` and `:19` both do a
+dynamic `await import("./route")` under vitest's default 5000ms `testTimeout`. Under
+parallel transform load the import occasionally loses the race and the test times out.
+It is not an assertion failure: the isolated file passes in 2.2s every time.
+
+**Proved pre-existing, not caused by the port.** The same suite was run twice in an
+isolated worktree checked out at the production SHA `18b4f25f`, with no port code in it:
+
+```
+/c/port-base/Medical/web  run 1:  Tests  1 failed | 450 passed (451)
+/c/port-base/Medical/web  run 2:  Tests  451 passed (451)
+```
+
+and twice in the ported working tree, which behaves identically (451 passed, then
+1 failed). Test count is 451 on both sides, so Phase 1 neither added nor removed a test.
+
+Severity: CI noise, not a product defect. Nothing a visitor can see.
+
+Minimal fix, for whoever picks it up: give those two `it()` calls an explicit timeout
+(the third argument), rather than raising the global `testTimeout` and slowing every
+other suite's failure feedback. Do NOT "fix" it by deleting the dynamic import: the
+comment at `:13` records that the indirection exists to avoid `next/server` resolution
+problems at test time.
+
+Owner's word needed? No. This is a defect, not a preference. Flagged here so that when a
+CI run goes red on a commit that plainly could not have broken the lead route, nobody
+spends an hour looking for a cause in the wrong place.
