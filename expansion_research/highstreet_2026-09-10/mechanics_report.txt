@@ -1,0 +1,103 @@
+TRADE UNIVERSE: 2017 distinct trades (from a rival's 2,107 published pages)
+MECHANICS USED: 30 of 30 defined
+NO DISTINCT MECHANIC: 884 trades (44%)
+MORE THAN ONE MECHANIC: 141 trades (7%)
+
+mechanic                        trades   what makes it different
+----------------------------------------------------------------------------------------------------
+generic-service-business           884   no mechanic of its own: sole trader or company, equipment, insurance, the ordinary rules
+stock-and-wip                      182   stock valuation and work in progress at the year end
+food-vat-boundary                  129   hot versus cold, eat in versus takeaway, the zero-rate line
+employment-status-ir35             118   status, IR35 and the personal service company
+cis-construction                   106   CIS deductions and the domestic reverse charge
+rd-credits                         104   R&D relief on genuine process and product development
+health-exemption                    96   VAT exemption turns on a statutory professional register
+education-exemption                 51   private tuition and eligible-body exemption
+vehicle-trade                       36   vehicle capital allowances and the leased-car input tax block
+land-property-exemption             35   exempt land against standard-rated facilities, option to tax
+supply-and-fit                      32   supply-only against supply-and-fit changes the rate
+professional-practice               25   partnership and practice-specific rules
+creative-reliefs                    24   theatre, orchestra, museum and film tax reliefs
+agent-vs-principal                  23   commission income, so turnover is not what passes through the till
+agriculture-apr                     18   farm averaging and agricultural property relief
+printed-matter                      17   leaflets zero rated, stationery standard rated, same press
+cash-business                       16   cash takings with no reliable till, and HMRC's interest in them
+place-of-supply                     16   overseas clients decide whether UK VAT applies at all
+chair-room-rental                   15   is the person in the chair employed, self-employed, or renting
+margin-scheme                       12   second-hand goods bought from private sellers, no input tax
+gambling-duty                       10   gaming duty, machine games duty, bingo duty
+excise-duty                         10   goods carrying alcohol, tobacco, vaping or fuel duty
+sports-club-exemption               10   non-profit sports club member subscriptions
+finance-insurance-exemption          9   exempt financial or insurance supplies, partial exemption
+licensed-premises                    9   licensing, security staff status and door supervision
+tronc-tips                           8   tips, service charge and troncs
+welfare-care-exemption               7   welfare or care exemption, and CQC-regulated income
+zero-rated-goods                     5   sells mostly zero-rated goods, so a permanent repayment position
+household-employer                   5   the client becomes a PAYE employer at home
+funeral-exemption                    4   funeral services are exempt, so input tax is the problem
+passenger-transport                  1   zero rating for vehicles carrying ten or more
+
+SAMPLE ASSIGNMENTS, for review
+----------------------------------------------------------------------------------------------------
+generic-service-business:
+    abseiling, accident investigation, accident theft investigation, acoustic engineer, activity centre, adhesive supplier, adjudicator, administration
+stock-and-wip:
+    adult bookstore, art and craft equipment supplier, art and craft shop, art and craft venue, artist material retailing, audio visual media retailing, baby equipment shop, babywear shop
+food-vat-boundary:
+    american restaurant, american takeaway, armenian restaurant, armenian takeaway, bakery, bangladeshi restaurant, bangladeshi takeaway, bistro restaurant
+employment-status-ir35:
+    abseiling contractor, access disability consultancy, acoustic consultant, advertising consultancy, advertising contractor, allergy consultant, animal behaviour consultant, asphalt surface contractor
+cis-construction:
+    after builder cleaning, air conditioning contractor, air conditioning engineer, air conditioning installation, boat builder, boiler service, bricklayer, builder
+rd-credits:
+    acoustic engineering, adhesive manufacturing, ammunition manufacture, analytical laboratory, audio visual equipment manufacturing, bag manufacturer, bed and mattress manufacturer, bed manufacturer
+health-exemption:
+    acupuncturist, advanced nurse practitioner, arboricultural tree surgeon, aroma therapist, audiologist, bariatric nurse, cardiologist, cardiologist physiologist
+education-exemption:
+    adult education, after school club, art tuition, clerical training consultancy, clerical training consultant, college, college adult education, dance school
+vehicle-trade:
+    aggregate haulier, asbesto removal contractor, asbesto removal equipment manufacturing, asbesto removal equipment supplier, car valeting, chauffeur, courier, domestic garage shed erection
+land-property-exemption:
+    camping and caravan site, camping and outdoor equipment shop, camping product manufacturer, camping product supplier, camping site, car park, car park landowner, car park operator
+supply-and-fit:
+    bathroom showroom, blind assembly, blind curtain fitter, blind manufacturer, carpet and upholstery cleaning, carpet cleaner, carpet dealer, carpet fitter
+professional-practice:
+    accountant, accountant advisor, accountant investigator, accountant or bookkeeper, architect, barrister, bookkeeper, building surveyor
+creative-reliefs:
+    art gallery, business operation consultancy, car boot sale operator, exhibition organisation, exhibition stand erection, exhibition stand erector, exhibition stand installer, fairground operator
+agent-vs-principal:
+    advertising agency, calor ga distributor, clothing fabric wholesale, estate agent, export consultant, fancy good wholesale, fish retail wholesale, fish wholesaler processor
+agriculture-apr:
+    agricultural and garden machinery engineer, agricultural consultancy, agricultural consultant, agricultural contractor, agricultural horticultural landowner, agricultural implement, air rifle shooting venue, arboriculture consultancy
+printed-matter:
+    bookbinding consultant, desktop publishing service, film processor and printing shop, general printing service, goldsmith fine art craft printing, mail box internet photocopying faxing service, music publisher, photo processing and printing
+cash-business:
+    amusement leisure equipment engineer, amusement park, dry cleaner, launderette, laundry dry cleaner, locksmith, locksmith key cutter, market stall holder
+place-of-supply:
+    copywriting, fulfilment service, fulfilment warehouse, fulfilment warehousing, graphic design, graphic designer, internet postal trader, interpreter
+chair-room-rental:
+    barber, beautician, beauty product shop, beauty product supplier, beauty salon, dog beautician, hairdresser, hairdressing
+margin-scheme:
+    antique dealer, antique furniture dealer, antique rare book dealing, antique retailing, auction room, auctioneer, cable stripper second hand metal dealer, car dealer
+gambling-duty:
+    amusement arcade, amusement machine hire, betting shop, bingo hall, bookmaker, casino, gaming equipment installer, gaming equipment supplier
+excise-duty:
+    brewery, brewery and outlet, distillery, fuel efficiency consultant, off licence, petrol station, tar distillery, tobacconist
+sports-club-exemption:
+    cricket club, football club, golf club, gymnasium, leisure centre, rugby club, swimming club, swimming pool engineer
+finance-insurance-exemption:
+    actuarial consultancy, actuary, bureau de change, financial advisory service, financial advisory service market trading service, mortgage broker, mortgage broking, stockbroker
+licensed-premises:
+    alarm installation, alarm installer, car audio alarm installer, cctv installer, lock and security supplier, premise security installer, private investigator, security guard
+tronc-tips:
+    bar, bed and breakfast, guest house, hotel, late night bar, nightclub, public house, shisha bar
+welfare-care-exemption:
+    care home, charity, day care centre, domiciliary care, hospice, nursing home, supported living
+zero-rated-goods:
+    bookshop, fishmonger, greengrocer, health food shop, newsagent
+household-employer:
+    carer, child carer, domestic help, nanny, pet walker sitter or carer
+funeral-exemption:
+    funeral celebrant, funeral director, monumental mason, undertaker
+passenger-transport:
+    coach operator

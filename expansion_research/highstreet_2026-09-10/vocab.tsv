@@ -1,0 +1,177 @@
+id	vocab
+1	butcher|butchery|meat|abattoir|charcuterie
+2	baker|bakery|bread|pastry|patisserie|cake shop
+3	fish and chip|chip shop|chippy|fried fish
+4	cafe|coffee shop|coffee house|espresso|barista|tea room
+5	sandwich|deli counter|baguette|sub shop
+6	ice cream|gelato|soft serve|ice lolly|sorbet
+7	delicatessen|deli|farm shop|fine food|cheese shop
+8	greengrocer|fruit and veg|vegetable shop|produce shop
+9	fishmonger|wet fish|seafood shop|shellfish
+10	off licence|offie|wine merchant|bottle shop|liquor|alcohol shop
+11	brewery|brewer|brewing|taproom|craft beer|microbrewery
+12	distillery|distiller|gin|spirits|whisky|rum
+13	vineyard|winery|wine making|cider|cidery|orchard
+14	street food|food truck|food trailer|mobile catering|market food
+15	cake maker|cake business|home baker|celebration cake|cupcake
+16	chocolatier|chocolate|confectioner|confectionery|sweet shop|fudge
+17	health food|supplement|vitamin shop|wholefood|nutrition shop
+18	convenience store|corner shop|c-store|mini market|grocery store
+19	restaurant|dining|bistro|eatery|brasserie
+20	takeaway|take away|fast food|hot food|delivery food
+21	pub|public house|bar|inn|tavern|licensed premises
+22	launderette|laundrette|laundromat|laundry|washing machine|coin operated
+23	dry cleaner|dry cleaning|dry clean|garment care|solvent
+24	newsagent|newspaper|magazine|paper shop|paperboy|paper round
+25	post office|postmaster|postmistress|postal|sub post office|counter clerk
+26	print shop|printer|printing|copy shop|leaflet|flyer|litho|reprographic
+27	sign maker|signage|signwriter|sign writing|shop sign|fascia sign
+28	tailor|tailoring|alteration|dressmaker|seamstress|garment|clothing repair
+29	shoe repair|cobbler|key cutting|heel bar|locksmith shop
+30	locksmith|lock fitting|lock change|key cutting|door lock
+31	picture framer|picture framing|bespoke frame|framing shop
+32	phone repair|computer repair|screen repair|device repair|it repair
+33	funeral director|funeral|undertaker|funeral home|funeral service|burial|cremation
+34	monumental mason|headstone|gravestone|memorial|grave marker
+35	cleaning company|cleaner|commercial cleaning|contract cleaning|office cleaning
+36	charity shop|charity retail|donated goods|gift aid|thrift shop
+37	antique dealer|antiques|antique shop|collectable|vintage dealer
+38	auction house|auctioneer|auction|saleroom|lot fee|hammer price
+39	online reseller|vinted|depop|ebay seller|reselling|flipping|marketplace seller
+40	market trader|market stall|market pitch|street market|car boot
+41	vape shop|vaping|e cigarette|e liquid|vape|nicotine
+42	bookshop|book shop|bookseller|books|bookstore
+43	bike shop|bicycle|cycle shop|cycling|cycle to work
+44	florist|floristry|flower shop|flowers|bouquet|interflora
+45	garden centre|nursery plants|plants|horticulture retail|seeds
+46	pet shop|pet food|pet supplies|aquatics|pet store
+47	furniture shop|furniture|flooring|carpet|upholstery|soft furnishing
+48	kitchen showroom|bathroom showroom|fitted kitchen|fitted bathroom|kitchen design
+49	gift shop|toy shop|card shop|greeting card|souvenir|homeware
+50	jeweller|jewellery|jewelry|goldsmith|watchmaker|gold buying
+51	retail shop|shop|shopkeeper|store|high street|retailer|epos|till
+52	aesthetics clinic|aesthetic|botox|dermal filler|cosmetic treatment|skin clinic|medispa
+53	osteopath|osteopathy|manual therapy
+54	chiropractor|chiropractic|spinal adjustment
+55	physiotherapist|physiotherapy|physio|sports rehab
+56	podiatrist|podiatry|chiropodist|chiropody|foot care|orthotic
+57	acupuncturist|acupuncture|herbalist|herbal medicine|chinese medicine
+58	massage therapist|massage|holistic therapy|reflexology|aromatherapy|sports massage
+59	counsellor|counselling|psychotherapist|psychotherapy|therapy practice|talking therapy
+60	audiologist|audiology|hearing aid|hearing test|hearing care
+61	private gp|private doctor|walk in clinic|private clinic|gp practice
+62	optician|optometrist|opticians|eye test|spectacles|dispensing optician
+63	pharmacy|pharmacist|chemist|dispensing|prescription
+64	dentist|dental|dental practice|orthodontic|hygienist
+65	veterinary|vet practice|vets|animal practice|veterinarian
+66	tattoo|tattooist|tattoo artist|body piercing|piercing studio
+67	nail salon|nail bar|nail technician|manicure|pedicure|acrylic nails
+68	tanning salon|sunbed|spray tan|tanning shop
+69	spa|day spa|treatment room|wellness centre|beauty spa
+70	mobile hairdresser|mobile hairdressing|mobile stylist|home hairdressing
+71	hairdresser|hairdressing|barber|barbershop|salon|hair salon|rent a chair
+72	beauty therapist|beauty salon|beautician|beauty treatment|facial
+73	personal trainer|pt business|fitness coach|personal training
+74	gym|fitness studio|health club|gym membership|fitness centre
+75	roofer|roofing|roof repair|flat roof|slater|tiler roof
+76	plasterer|plastering|rendering|skimming|dry lining
+77	tiler|tiling|wall tiling|floor tiling|tile fitting
+78	carpenter|carpentry|joiner|joinery|woodwork|bespoke joinery
+79	bricklayer|bricklaying|brickwork|blockwork|masonry
+80	scaffolder|scaffolding|scaffold erection|scaffold hire
+81	glazier|glazing|window fitting|double glazing|window installation
+82	flooring fitter|floor fitting|floor layer|laminate fitting|carpet fitting
+83	kitchen fitter|bathroom fitter|kitchen fitting|bathroom fitting|kitchen installation
+84	damp proofing|damp proof|tanking|basement waterproofing|rising damp
+85	groundworker|groundworks|excavation|drainage|foundations|civils
+86	demolition|demolition contractor|strip out|soft strip|site clearance
+87	asbestos|asbestos removal|asbestos survey|licensed removal
+88	scrap metal|scrap dealer|metal recycling|scrapyard|scrap yard
+89	skip hire|waste carrier|waste removal|muck away|landfill
+90	plant hire|tool hire|equipment hire|plant hirer|machinery hire
+91	tree surgeon|arborist|arboriculture|tree felling|stump grinding
+92	fencing|fence contractor|driveway|paving|patio|block paving
+93	pest control|pest controller|vermin|rodent control|pest technician
+94	chimney sweep|chimney sweeping|flue cleaning|sweep chimney
+95	builder|building contractor|construction|building firm|building work
+96	cis subcontractor|subcontractor|construction industry scheme|cis deduction
+97	solar installer|solar panel|solar pv|photovoltaic|solar installation
+98	heat pump|air source|ground source|boiler upgrade|renewable heating
+99	ev charger|electric vehicle charge|charge point|charging point installation
+100	insulation|insulation contractor|cavity wall|loft insulation|energy saving materials
+101	air conditioning|refrigeration|hvac|cooling|f gas|chiller
+102	gas engineer|gas safe|boiler|heating engineer|central heating
+103	garage|mot|mot test|car repair|vehicle repair|servicing car
+104	mobile mechanic|mobile car repair|roadside mechanic|mobile servicing
+105	tyre fitter|tyres|exhaust|fast fit|wheel alignment
+106	body shop|bodyshop|panel beater|crash repair|smart repair|paint sprayer
+107	car valeting|valeting|detailing|car wash|mobile valet
+108	vehicle recovery|breakdown recovery|recovery truck|tow truck|roadside assistance
+109	car hire|van hire|vehicle rental|car rental|fleet hire
+110	chauffeur|wedding car|executive car|private driver|limousine
+111	coach operator|minibus|bus operator|coach hire|passenger transport
+112	removals|removal company|man with a van|house move|storage removals
+113	self storage|storage unit|storage facility|container storage
+114	taxi|private hire|cab|minicab|uber driver|taxi driver
+115	haulier|haulage|hgv|lorry|truck driver|freight
+116	driving instructor|driving school|adi|driving lesson|dual control
+117	golf club|sports club|members club|club subscription|green fee
+118	caravan park|campsite|camping|touring pitch|holiday park|pitch fee
+119	glamping|glamping pod|shepherds hut|yurt|safari tent
+120	wedding venue|events venue|venue hire|function room|barn venue
+121	soft play|trampoline park|play centre|adventure play|indoor play
+122	escape room|escape game|immersive experience|puzzle room
+123	bowling|bowling alley|amusement arcade|arcade|amusement machine
+124	nightclub|night club|late night venue|club night|door staff
+125	theatre|cinema|playhouse|orchestra|performing arts|theatre production
+126	dance school|stage school|dance studio|dance teacher|ballet school
+127	martial arts|karate|judo|jiu jitsu|boxing gym|taekwondo
+128	swim school|swimming lesson|swimming teacher|learn to swim
+129	riding school|livery|stables|equestrian|horse riding|livery yard
+130	marina|mooring|boat hire|boatyard|berth|narrowboat
+131	bouncy castle|inflatable hire|party hire|equipment rental party
+132	dj|disc jockey|mobile disco|entertainer|mobile bar|wedding dj
+133	event caterer|event catering|outside catering|hog roast|catering business
+134	hotel|guest house|guesthouse|bed and breakfast|hospitality accommodation
+135	nanny|nannies|au pair|household staff|maternity nurse|childcare employer
+136	expert witness|expert report|court expert|forensic accountant witness
+137	bookkeeper|bookkeeping|book keeping|bookkeeping practice
+138	translator|translation|interpreter|interpreting|linguist|localisation
+139	copywriter|copywriting|editor|proofreader|freelance writer|content writer
+140	web designer|web design|graphic designer|graphic design|web developer|branding
+141	videographer|video production|filmmaker|wedding videographer|video editor
+142	drone pilot|drone|aerial survey|uav|drone operator
+143	training provider|trainer|training company|corporate training|course provider
+144	business coach|life coach|executive coach|coaching business|mindset coach
+145	hr consultant|human resources consultant|hr consultancy|people consultant
+146	health and safety consultant|hse consultant|safety consultant|cdm consultant
+147	private investigator|investigator|surveillance|process server|detective agency
+148	wedding planner|event planner|celebrant|wedding coordinator
+149	domestic cleaner|housekeeper|house cleaner|domestic cleaning|home cleaning
+150	dog walker|pet sitter|dog walking|pet sitting|doggy day care
+151	virtual assistant|va business|online assistant|admin support
+152	tutor|tutoring|private tuition|tuition|exam tutor
+153	marketing agency|recruitment agency|agency business|advertising agency|media agency
+154	security company|security firm|sia|door supervisor|security guard|manned guarding
+155	farm diversification|diversified farm|farm business|farm income|farm venture
+156	equestrian|horse business|stud farm|competition horse|riding centre
+157	kennels|cattery|boarding kennel|pet boarding|dog boarding
+158	dog groomer|dog grooming|pet grooming|grooming salon
+159	forestry|woodland|timber|forestry business|commercial woodland
+160	fish farm|fishery|aquaculture|trout farm|fish farming
+161	shoot|shooting|game shoot|driven shoot|gamekeeper|sporting rights
+162	farm shop|farmgate|farm retail|produce shop farm
+163	farmer|farming|agriculture|agricultural|crofting
+164	landed estate|rural estate|estate management|country estate
+165	mortgage broker|mortgage adviser|mortgage advice|mortgage intermediary
+166	insurance broker|insurance intermediary|insurance agent|ipt
+167	credit broker|credit broking|finance broker|loan broker
+168	pawnbroker|pawn shop|pawnbroking|pledge lending
+169	debt advice|debt management|debt adviser|iva provider|insolvency advice
+170	claims management|claims company|cmc|claims handler
+171	immigration adviser|immigration consultant|oisc|visa adviser
+172	will writer|will writing|estate planner|estate planning|probate service
+173	betting shop|bookmaker|arcade|gaming venue|licensed betting
+174	cbd|cannabis clinic|cbd shop|medical cannabis|hemp
+175	adult entertainment|strip club|lap dancing|licensed sex establishment
+176	financial adviser|ifa|independent financial adviser|wealth adviser|financial planning

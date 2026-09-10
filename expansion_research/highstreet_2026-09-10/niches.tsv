@@ -1,0 +1,177 @@
+id	category	name	seed_core	mechanic_seed	status
+1	food	Butchers	butcher	vat on meat butcher	new
+2	food	Bakers	bakery	vat on hot bread bakery	new
+3	food	Fish and chip shops	fish and chip shop	vat on hot takeaway food	new
+4	food	Cafes and coffee shops	cafe	vat eat in takeaway cafe	new
+5	food	Sandwich shops	sandwich shop	vat on sandwiches	new
+6	food	Ice cream vans and parlours	ice cream van	vat on ice cream	new
+7	food	Delicatessens and farm shops	delicatessen	retail scheme mixed vat	new
+8	food	Greengrocers	greengrocer	vat repayment zero rated food	new
+9	food	Fishmongers	fishmonger	vat on fish	new
+10	food	Off licences and wine merchants	off licence	alcohol duty off licence	new
+11	food	Micro breweries and taprooms	brewery	small producer relief beer duty	new
+12	food	Distilleries and gin makers	distillery	spirits duty bonded warehouse	new
+13	food	Vineyards and cider makers	vineyard	wine duty vineyard	new
+14	food	Street food and food trucks	street food	food truck tax	new
+15	food	Cake makers and home bakers	cake maker	cake business tax	mapped
+16	food	Chocolatiers and confectioners	chocolatier	vat on confectionery	new
+17	food	Health food shops	health food shop	vat on food supplements	new
+18	food	Convenience stores	convenience store	retail scheme convenience store	live
+19	food	Restaurants	restaurant	tronc tips restaurant	live
+20	food	Takeaways	takeaway	takeaway vat	live
+21	food	Pubs and bars	pub	tied pub lease tax	live
+22	services	Launderettes	launderette	coin operated machine takings	new
+23	services	Dry cleaners	dry cleaner	dry cleaning equipment allowances	new
+24	services	Newsagents	newsagent	lottery commission agency income	new
+25	services	Sub postmasters	post office	post office remuneration accounts	new
+26	services	Print shops and copy shops	printing company	vat on printed matter leaflets	new
+27	services	Sign makers	sign maker	vat on signage supply and fit	new
+28	services	Tailors and alterations	tailor	vat childrens clothing	new
+29	services	Shoe repair and key cutting	shoe repair shop	small shop franchise accounts	new
+30	services	Locksmiths	locksmith	locksmith self employed expenses	new
+31	services	Picture framers	picture framer	work in progress bespoke	new
+32	services	Phone and computer repair	phone repair shop	vat margin scheme used phones	new
+33	services	Funeral directors	funeral director	vat exempt funeral services	new
+34	services	Monumental masons	monumental mason	vat on memorials headstones	new
+35	services	Cleaning businesses	cleaning company	cleaning company employment status	live
+36	retail	Charity shops	charity shop	gift aid retail scheme	new
+37	retail	Antique dealers	antique dealer	vat margin scheme second hand	new
+38	retail	Auction houses	auction house	auctioneers margin scheme	new
+39	retail	Online resellers and Vinted sellers	online reseller	selling on vinted tax	new
+40	retail	Market traders	market trader	market trader cash records	new
+41	retail	Vape shops	vape shop	vaping products duty	new
+42	retail	Bookshops	bookshop	vat on books zero rated	new
+43	retail	Bike shops	bike shop	cycle to work scheme retailer	new
+44	retail	Florists	florist	interflora agent principal vat	new
+45	retail	Garden centres	garden centre	vat on plants and seeds	new
+46	retail	Pet shops	pet shop	vat on pet food	new
+47	retail	Furniture and flooring showrooms	furniture shop	vat supply and fit flooring	new
+48	retail	Kitchen and bathroom showrooms	kitchen showroom	diy housebuilder scheme vat	new
+49	retail	Toy gift and card shops	gift shop	independent shop accounts	new
+50	retail	Jewellers	jeweller	jeweller margin scheme gold	live
+51	retail	Independent retail shops	retail shop	retail vat scheme	live
+52	health	Aesthetics and cosmetic clinics	aesthetics clinic	vat cosmetic treatments medical care	new
+53	health	Osteopaths	osteopath	vat exemption osteopath	new
+54	health	Chiropractors	chiropractor	chiropractor associate self employed	new
+55	health	Physiotherapists	physiotherapist	vat exemption physiotherapy	new
+56	health	Chiropodists and podiatrists	podiatrist	vat exemption podiatry	new
+57	health	Acupuncturists and herbalists	acupuncturist	vat on acupuncture	new
+58	health	Massage and holistic therapists	massage therapist	massage therapist room rent vat	new
+59	health	Counsellors and psychotherapists	counsellor	vat exemption counselling	mapped
+60	health	Audiologists and hearing aid dispensers	audiologist	vat hearing aids dispensing	new
+61	health	Private GP and walk in clinics	private gp	private gp practice vat	live
+62	health	Opticians	optician	optician vat apportionment	live
+63	health	Pharmacies	pharmacy	pharmacy nhs income accounts	live
+64	health	Dentists	dentist	dental associate tax	live
+65	health	Vets	veterinary practice	veterinary practice accounts	mapped
+66	beauty	Tattoo studios	tattoo studio	tattoo artist chair rent tax	new
+67	beauty	Nail salons	nail salon	nail salon employment status	new
+68	beauty	Tanning salons	tanning salon	sunbed capital allowances	new
+69	beauty	Spas and treatment rooms	spa	spa membership deferred income	new
+70	beauty	Mobile hairdressers	mobile hairdresser	mobile hairdresser expenses	new
+71	beauty	Hairdressers and barbers	hairdresser	rent a chair vat	live
+72	beauty	Beauty therapists	beauty therapist	beauty room rent tax	live
+73	beauty	Personal trainers	personal trainer	personal trainer self employed tax	live
+74	beauty	Gyms and studios	gym	gym membership deferred income	live
+75	trades	Roofers	roofer	cis roofing reverse charge	new
+76	trades	Plasterers	plasterer	cis plastering labour only	new
+77	trades	Tilers	tiler	cis tiling vat	new
+78	trades	Carpenters and joiners	carpenter	joinery workshop reverse charge	new
+79	trades	Bricklayers	bricklayer	cis gross payment status	new
+80	trades	Scaffolders	scaffolder	scaffolding vat reverse charge	new
+81	trades	Glaziers and window fitters	window fitter	vat new build windows zero rated	new
+82	trades	Flooring fitters	flooring fitter	vat carpet new build	new
+83	trades	Kitchen and bathroom fitters	kitchen fitter	vat white goods new build	new
+84	trades	Damp proofing and remedial	damp proofing company	reduced rate vat empty property	new
+85	trades	Groundworkers	groundworker	cis groundworks plant hire	new
+86	trades	Demolition contractors	demolition contractor	demolition cis landfill tax	new
+87	trades	Asbestos removal	asbestos removal company	asbestos licence waste costs	new
+88	trades	Scrap metal dealers	scrap metal dealer	scrap metal reverse charge vat	new
+89	trades	Skip hire and waste	skip hire company	landfill tax skip hire	new
+90	trades	Plant and tool hire	plant hire company	plant hire with operator cis	new
+91	trades	Tree surgeons	tree surgeon	tree surgeon cis construction	new
+92	trades	Fencing and driveways	fencing contractor	cis landscaping fencing	new
+93	trades	Pest control	pest control company	pest control business accounts	new
+94	trades	Chimney sweeps	chimney sweep	chimney sweep self employed	new
+95	trades	Builders plumbers electricians decorators landscapers	builder	cis reverse charge builder	live
+96	trades	CIS subcontractors	cis subcontractor	cis deduction repayment	live
+97	energy	Solar PV installers	solar installer	vat zero rate solar panels	new
+98	energy	Heat pump installers	heat pump installer	boiler upgrade scheme grant tax	new
+99	energy	EV charger installers	ev charger installer	vat ev charge point installation	new
+100	energy	Insulation contractors	insulation contractor	vat energy saving materials	new
+101	energy	Air conditioning and refrigeration	air conditioning company	integral features capital allowances	new
+102	energy	Gas engineers	gas engineer	gas engineer self employed tax	new
+103	motor	MOT test centres and garages	garage	mot fee vat disbursement	new
+104	motor	Mobile mechanics	mobile mechanic	mobile mechanic expenses	new
+105	motor	Tyre and exhaust fitters	tyre fitter	tyre disposal charge vat	new
+106	motor	Body shops and smart repair	body shop	insurance repair work accounts	new
+107	motor	Car valeting and detailing	car valeting	car valeting business tax	new
+108	motor	Breakdown and vehicle recovery	vehicle recovery	recovery truck capital allowances	new
+109	motor	Car and van hire	car hire company	vat input tax block leased cars	new
+110	motor	Chauffeurs and wedding cars	chauffeur	chauffeur self employed tax	new
+111	motor	Coach and minibus operators	coach operator	zero rate passenger transport	new
+112	motor	Removals and man with a van	removals company	removals storage vat	new
+113	motor	Self storage operators	self storage	vat on self storage	new
+114	motor	Taxi and private hire	taxi driver	taxi driver expenses	live
+115	motor	Hauliers and HGV drivers	haulier	hgv driver meal allowance	live
+116	motor	Driving instructors	driving instructor	driving instructor franchise fee	live
+117	leisure	Golf and sports clubs	golf club	sports club vat exemption	mapped
+118	leisure	Caravan parks and campsites	caravan park	vat on pitch fees	new
+119	leisure	Glamping sites	glamping business	glamping pod capital allowances	new
+120	leisure	Wedding venues	wedding venue	vat on room hire wedding	new
+121	leisure	Soft play and trampoline parks	soft play centre	soft play fit out allowances	new
+122	leisure	Escape rooms	escape room	escape room business tax	new
+123	leisure	Bowling and amusement venues	bowling alley	machine games duty	caution
+124	leisure	Nightclubs and late venues	nightclub	nightclub door staff status	new
+125	leisure	Cinemas and theatres	theatre	theatre tax relief	new
+126	leisure	Dance and stage schools	dance school	private tuition vat exemption	new
+127	leisure	Martial arts clubs	martial arts club	martial arts club accounts	new
+128	leisure	Swim schools	swim school	vat on swimming lessons	new
+129	leisure	Riding schools and stables	riding school	vat on livery	new
+130	leisure	Marinas and boat hire	marina	vat on moorings	new
+131	leisure	Bouncy castle and equipment hire	bouncy castle hire	hire business seasonal accounts	new
+132	leisure	DJs entertainers and mobile bars	dj	dj self employed tax	new
+133	leisure	Event caterers	event caterer	event catering accounts	mapped
+134	leisure	Hotels and guesthouses	hotel	vat on hotel accommodation	live
+135	professional	Nannies and household staff	nanny	nanny paye household employer	new
+136	professional	Expert witnesses	expert witness	expert witness fees tax	new
+137	professional	Bookkeepers	bookkeeper	bookkeeper aml supervision	new
+138	professional	Translators and interpreters	translator	place of supply translation vat	new
+139	professional	Copywriters and editors	copywriter	freelance copywriter tax	new
+140	professional	Graphic and web designers	web designer	digital services place of supply	new
+141	professional	Videographers	videographer	videographer equipment allowances	new
+142	professional	Drone pilots and surveyors	drone pilot	drone business tax	new
+143	professional	Training providers	training provider	vat education exemption training	new
+144	professional	Business and life coaches	business coach	vat on coaching services	new
+145	professional	HR consultants	hr consultant	hr consultant ir35	new
+146	professional	Health and safety consultants	health and safety consultant	consultant travel expenses	new
+147	professional	Private investigators	private investigator	private investigator expenses	new
+148	professional	Wedding planners and celebrants	wedding planner	agent principal supplier bookings	new
+149	professional	Domestic cleaners and housekeepers	domestic cleaner	self employed cleaner tax	new
+150	professional	Dog walkers and pet sitters	dog walker	dog walker trading allowance	new
+151	professional	Virtual assistants	virtual assistant	virtual assistant tax	mapped
+152	professional	Tutors and private teachers	tutor	private tuition exemption vat	mapped
+153	professional	Marketing and recruitment agencies	marketing agency	agency vat agent principal	live
+154	professional	Security firms	security company	sia licence employment status	live
+155	rural	Farm diversification	farm diversification	farm diversification apr	new
+156	rural	Equestrian businesses	equestrian business	horse business trade hmrc	new
+157	rural	Kennels and catteries	kennels	boarding kennels accounts	new
+158	rural	Dog groomers	dog groomer	dog grooming business tax	new
+159	rural	Forestry and woodland	forestry business	commercial woodland tax	new
+160	rural	Fisheries and fish farms	fish farm	fish farm averaging tax	new
+161	rural	Game and shoot businesses	shoot	vat on shooting rights	new
+162	rural	Farm shops	farm shop	farm shop vat	new
+163	rural	Farmers	farmer	farmers averaging	mapped
+164	rural	Landed and rural estates	landed estate	estate tax structure	live
+165	regulated	Mortgage brokers	mortgage broker	mortgage broker accounts	caution
+166	regulated	Insurance brokers	insurance broker	insurance premium tax broker	caution
+167	regulated	Credit brokers	credit broker	credit broker accounts	caution
+168	regulated	Pawnbrokers	pawnbroker	pawnbroker vat margin	caution
+169	regulated	Debt advice firms	debt advice company	debt management company accounts	caution
+170	regulated	Claims management firms	claims management company	claims management accounts	caution
+171	regulated	Immigration advisers	immigration adviser	immigration adviser accounts	caution
+172	regulated	Will writers and estate planners	will writer	will writing business tax	caution
+173	regulated	Betting shops and arcades	betting shop	gaming duty betting shop	caution
+174	regulated	CBD and cannabis clinics	cbd business	cbd business vat	caution
+175	regulated	Adult entertainment venues	adult entertainment venue	licensed venue employment status	caution
+176	regulated	Financial advisers	financial adviser	ifa client money audit	caution
