@@ -48,12 +48,28 @@
 > - 158 town questions asked "how much do you charge" while no answer could say. Reworded.
 >   All 772 questions and 772 answers are now unique across the estate.
 >
-> **OWNER DECISIONS OPEN (bundled, do not drip):**
-> 1. `leadConsentText` understates privacy §5 (sequential "a firm ... another firm" vs up to
->    six including related professions; `/complete` already says six). NOT changed: it is a
->    measured conversion surface, the 2026-08-24 change cut mini-form leads ~10/wk -> 3.9/wk
->    and was reverted, and the standing rule is a conversion read first. See
->    [[consent_wording_conversion_incident]].
+> **OWNER DECISIONS, 2026-09-10 (compliance now mirrors Property on his instruction:
+> "anything and everything in terms of compliance, privacy etc should mirror the property
+> site"):**
+> 1. DECIDED, parity: keep whatever Property has. `leadConsentText` turned out to be
+>    byte-identical to Property already, so there was nothing to port; the earlier report
+>    that generalist understated it was WRONG and is corrected here. Ported instead: the
+>    on-page personalisation disclosure (absent entirely), the cookie policy's first-party
+>    analytics section and opt-out instructions, and the consent/retention/objection/fee
+>    wording. Left deliberately STRICTER than Property: the /contact privacy line and
+>    /complete's "up to six firms" item, since mirroring would mean removing disclosure.
+>    Removed as FALSE: every Google Analytics claim (this site runs no GA at all, verified
+>    in the served HTML). Anthropic and Companies House stay, they are real in the
+>    Property-side pipeline generalist enquiries flow into.
+> 1b. **ESTATE-WIDE, STILL OPEN, both sites say the same thing so parity is preserved
+>    either way.** (a) The notice says an unconfirmed enquiry may join a batch "after seven
+>    days"; `Property/web/src/lib/leads/raw-supply.ts` sets `RAW_WINDOW_HOURS = 24`. The
+>    cheapest honest fix is raising the code to seven days, which changes no wording and
+>    keeps the mirror. (b) Both sites say "we do not store your IP address (only a country
+>    derived from it)" and "this data is anonymous", while `createTrackHandler` persists
+>    city, region and timezone alongside a persistent visitor id used to personalise the
+>    page. Neither is fixable on generalist alone without breaking the parity the owner
+>    asked for. See [[consent_wording_conversion_incident]] before touching consent copy.
 > 2. Ten `localCaseStudy` bodies say "under the SME scheme". All are past-tense narratives of
 >    pre-Apr-2024 periods, so none is factually wrong, but a reader could take it as
 >    currently available. Date-tag them or leave.
@@ -66,6 +82,11 @@
 >    boilerplate. Breaches no rule; a separate pass if wanted.
 > 6. Yiewsley `:6385` says "exempt storage" in a partial exemption calculation. Self-storage
 >    has been standard rated since Oct 2012, but the body does not say enough to be certain.
+>
+> **METHOD IS NOW A REUSABLE BLUEPRINT:** `docs/_engines/DESIGN_PORT_PLAYBOOK.md` carries
+> the phase map, orchestration rules, review and verification contracts, 21 named traps
+> with the rule for each, and lift-and-use prompt templates. Next site is `Solicitors/`
+> (Accounts for Lawyers). Read it before starting any further port.
 >
 > **DELIBERATE CALLS RECORDED:** articles lost 2 unique internal links each with `/team`
 > (floors hold on 6-10 links of headroom; linking the byline to `/about` adds nothing unique
