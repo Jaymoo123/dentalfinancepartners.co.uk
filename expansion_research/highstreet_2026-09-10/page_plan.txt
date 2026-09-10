@@ -1,0 +1,416 @@
+
+============================================================================================
+AGENT-VS-PRINCIPAL   seed 'agent or principal'   1 priced questions   10/mo
+  pillar-level questions (no subject, the mechanic itself): 1
+  subject               vol/mo   qs   example
+
+============================================================================================
+AGRICULTURE-APR   seed 'agricultural property relief'   48 priced questions   1650/mo
+  pillar-level questions (no subject, the mechanic itself): 11
+  subject               vol/mo   qs   example
+  gov / changes            110    4   changes to agricultural property relief
+  manual                    60    2   agricultural property relief hmrc manual
+  farm / tenancy / business      50    4   agricultural and business property relief
+  qualifies                 40    1   what qualifies for agricultural property relief
+  inheritance               40    2   agricultural property relief inheritance tax
+  was / introduced          40    4   who introduced agricultural property relief
+  budget / announcement      40    4   agricultural property relief budget 2025
+  iht                       30    1   iht agricultural property relief
+  conditions                30    1   agricultural property relief conditions
+  apr                       30    1   agricultural property relief apr
+  labour                    20    2   labour agricultural property relief
+  history                   20    2   agricultural property relief history
+
+============================================================================================
+CASH-BUSINESS   seed 'cash basis'   169 priced questions   7020/mo
+  pillar-level questions (no subject, the mechanic itself): 22
+  subject               vol/mo   qs   example
+  than / rather / difference    1670   22   traditional accounting vs cash basis
+  accrual / differences    1080   33   cash vs accrual basis of accounting
+  threshold                570    4   vat cash basis threshold
+  between                  200    5   difference between traditional accounting and cash basis
+  self / assessment        130    4   cash basis self assessment
+  capital                  110    4   cash basis capital allowances
+  use / should              80    7   did you use traditional accounting rather than cash basi
+  expenses / simplified      80    8   cash basis allowable expenses
+  modified                  40    4   differences between modified cash basis and accrual acco
+  purposes                  40    4   changing from accrual to cash basis for tax purposes
+  sole / trader             30    2   sole trader cash basis
+  template                  30    3   cash basis accounting template
+
+============================================================================================
+CHAIR-ROOM-RENTAL   seed 'rent a chair'   4 priced questions   170/mo
+  pillar-level questions (no subject, the mechanic itself): 2
+  subject               vol/mo   qs   example
+  guidelines / hairdressers     150    2   hmrc guidelines to rent a chair for hairdressers
+
+============================================================================================
+CIS-CONSTRUCTION   seed 'construction industry scheme'   64 priced questions   4680/mo
+  pillar-level questions (no subject, the mechanic itself): 15
+  subject               vol/mo   qs   example
+  cis                      610    2   construction industry scheme cis
+  gov / www / use          170    4   www gov uk business tax construction industry scheme
+  refund                   150    2   claim a refund of construction industry scheme deduction
+  registration             140    1   construction industry scheme registration
+  taxation                  90    1   construction industry taxation scheme
+  payment / statement       90    3   construction industry scheme payment and deduction state
+  contact                   60    3   construction industry scheme contact number
+  helpline                  40    3   construction industry scheme helpline
+  payments / repayment      30    1   claim repayment of deductions from your construction ind
+  income / regulations      30    2   income tax construction industry scheme regulations 2005
+  cisrs / record / scaffolders      30    2   construction industry scaffolders record scheme
+  pension / federation      30    2   construction industry pension scheme
+
+============================================================================================
+CREATIVE-RELIEFS   seed 'theatre tax relief'   19 priced questions   690/mo
+  pillar-level questions (no subject, the mechanic itself): 11
+  subject               vol/mo   qs   example
+  manual                    20    1   theatre tax relief manual
+  additional / information      20    1   theatre tax relief additional information form
+  budget                    10    1   theatre tax relief budget 2021
+  charity                   10    1   theatre tax relief charity
+  production                10    1   theatre production tax relief
+  guidance                  10    1   theatre tax relief guidance
+  legislation               10    1   theatre tax relief legislation
+  touring                   10    1   theatre tax relief touring
+
+============================================================================================
+EDUCATION-EXEMPTION   seed 'vat on education'   5 priced questions   210/mo
+  pillar-level questions (no subject, the mechanic itself): 1
+  subject               vol/mo   qs   example
+  services                  40    1   vat on education services
+  private                   10    1   vat on private education
+  countries                 10    1   which countries charge vat on education
+  training                  10    1   vat on education and training
+
+============================================================================================
+EMPLOYMENT-STATUS-IR35   seed 'ir35 rules'   67 priced questions   4910/mo
+  pillar-level questions (no subject, the mechanic itself): 16
+  subject               vol/mo   qs   example
+  new                      160   12   new ir35 rules
+  working / off-payroll     140    4   ir35 off-payroll working rules
+  not / apply               90    5   what does off-payroll working rules ir35 apply mean
+  small / business / companies      60    3   ir35 rules for small companies
+  off / payroll             40    2   off payroll working rules ir35
+  change                    40    2   when did ir35 rules change
+  mean                      40    2   what does off-payroll working rules ir35 apply mean
+  changing                  30    1   ir35 rules changing
+  outside                   30    1   outside ir35 rules
+  self-employed             30    1   ir35 rules for self-employed
+  contractor                30    1   ir35 contractor rules
+  company / limited         30    2   limited company ir35 rules
+
+============================================================================================
+EXCISE-DUTY   seed 'alcohol duty'   96 priced questions   4620/mo
+  pillar-level questions (no subject, the mechanic itself): 33
+  subject               vol/mo   qs   example
+  budget                   970    8   alcohol duty budget
+  new / pdf                450   12   new alcohol duty rates uk 2025
+  increase                 410    9   alcohol duty increase 2026
+  excise / malaysia        110    7   excise duty alcohol
+  changes                  100    8   alcohol duty changes
+  rise                      40    2   alcohol duty rise
+  gov                       40    4   alcohol duty increase 2025 gov uk
+  per / pint                30    1   alcohol duty per pint
+  pays                      30    2   who pays alcohol duty
+  beer                      20    1   is there duty on alcohol-free beer
+  stamp                     20    1   uk duty stamp alcohol
+  august                    20    2   alcohol duty changes august 2023
+
+============================================================================================
+FINANCE-INSURANCE-EXEMPTION   seed 'insurance premium tax'   131 priced questions   6610/mo
+  pillar-level questions (no subject, the mechanic itself): 40
+  subject               vol/mo   qs   example
+  car                      170    6   car insurance premium tax
+  life / regime            150   15   tax on life insurance premium
+  same                     140    1   is insurance premium tax the same as vat
+  back                     110    2   can you claim insurance premium tax back
+  pays                      70    1   who pays insurance premium tax
+  health / credit           60    6   health insurance premium tax
+  ireland                   40    1   ireland insurance premium tax
+  reclaim                   40    2   can you reclaim insurance premium tax
+  new                       40    4   life insurance premium deduction in new tax regime
+  rise                      30    1   rise in insurance premium tax
+  motability                30    1   insurance premium tax motability
+  rebate                    30    3   income tax rebate on life insurance premium
+
+============================================================================================
+FOOD-VAT-BOUNDARY   seed 'vat on food'   141 priced questions   7340/mo
+  pillar-level questions (no subject, the mechanic itself): 26
+  subject               vol/mo   qs   example
+  takeaway                 990   18   vat on takeaway food
+  restaurants              620    6   is there vat on food in restaurants
+  restaurant               540   17   uk vat on restaurant food
+  hot                      320    8   vat on hot food
+  supermarket              260    6   vat on supermarket food uk
+  pubs / drink / input     240   13   vat on food and drink uk
+  soft / drinks            180    2   vat on food and drinks
+  cold                     160    4   vat on cold food
+  dog / working            140    4   is there vat on dog food
+  ireland                  100   10   vat on food supplements ireland
+  pet                       80    4   is there vat on pet food
+  pub                       60    3   is there vat on pub food
+
+============================================================================================
+FUNERAL-EXEMPTION   seed 'funeral costs'   13 priced questions   370/mo
+  pillar-level questions (no subject, the mechanic itself): 8
+  subject               vol/mo   qs   example
+  inheritance               50    3   are funeral costs exempt from inheritance tax
+  deducted                  20    2   can funeral costs be deducted from inheritance tax
+  help                      10    1   can i claim for help with funeral costs
+
+============================================================================================
+GAMBLING-DUTY   seed 'machine games duty'   15 priced questions   560/mo
+  pillar-level questions (no subject, the mechanic itself): 3
+  subject               vol/mo   qs   example
+  payment                   40    1   machine games duty payment
+  register                  30    1   machine games duty register
+  contact                   20    2   hmrc machine games duty contact number
+  helpline                  20    2   hmrc machine games duty helpline
+  gov / www                 10    1   www gov uk pay machine games duty
+  calculate                 10    1   how to calculate machine games duty
+  telephone                 10    1   hmrc machine games duty telephone number
+  search / businesses / registered      10    1   search for machine games duty registered businesses
+  registration              10    1   machine games duty registration form
+  calculation               10    1   machine games duty calculation
+
+============================================================================================
+HEALTH-EXEMPTION   seed 'vat exemption'   204 priced questions   7960/mo
+  pillar-level questions (no subject, the mechanic itself): 26
+  subject               vol/mo   qs   example
+  notice / annual / partial    1510   26   partial exemption vat
+  charity                  460    8   vat charity exemption
+  new / self / build       350    9   new build vat exemption list
+  products                 210    1   vat exemption products
+  medical / equipment      150    7   vat medical exemption
+  business                 130    4   vat exemption business
+  food                     110    1   vat exemption list uk food
+  apply                    100    5   how to apply for vat exemption
+  cultural                  90    1   vat cultural exemption
+  education                 90    4   vat exemption education
+  qualify / disabilities      90    3   does blue badge qualify for vat exemption
+  registration              80    2   vat registration exemption
+
+============================================================================================
+HOUSEHOLD-EMPLOYER   seed 'nanny tax'   112 priced questions   4110/mo
+  pillar-level questions (no subject, the mechanic itself): 28
+  subject               vol/mo   qs   example
+  sign / childcare          90    7   tax-free childcare nanny
+  paye                      70    1   nanny paye tax calculator
+  net / gross               70    5   nanny tax gross to net calculator
+  payroll                   70    7   nanny tax payroll services
+  contact                   60    2   nanny tax contact
+  best / service            50    5   nanny tax service
+  phone                     40    1   nanny tax phone number
+  parents / employing       30    2   employing a nanny a tax guide for parents
+  expenses                  30    3   what nanny expenses are tax deductible
+  services                  30    3   nanny tax payroll services
+  implications              30    3   nanny tax implications
+  pension                   20    1   nanny tax pension
+
+============================================================================================
+LAND-PROPERTY-EXEMPTION   seed 'option to tax property'   9 priced questions   280/mo
+  pillar-level questions (no subject, the mechanic itself): 5
+  subject               vol/mo   qs   example
+  commercial                80    2   option to tax commercial property
+  residential               10    1   option to tax residential property
+  purchase / treatment      10    1   tax treatment of option to purchase property
+
+============================================================================================
+LICENSED-PREMISES   seed 'employment status'   31 priced questions   1530/mo
+  pillar-level questions (no subject, the mechanic itself): 9
+  subject               vol/mo   qs   example
+  checker                  210    1   hmrc employment status checker
+  cest                     190    3   check employment status for tax cest
+  tool / hmrc's / service     150    6   check employment status for tax cest tool
+  tribunal                 140    1   check status of employment tribunal claim
+  pdf / manual              50    3   employment status manual hmrc
+  update                    40    2   hmrc update employment status
+  gov                       30    1   check employment status for tax gov uk
+  paye                      30    2   employment status paye meaning
+  expenses / completed      20    1   tax relief for expenses of employment status completed
+  change                    20    1   hmrc change employment status
+  indicator                 20    1   employment status indicator hmrc
+  sole / trader             10    1   sole trader employment status
+
+============================================================================================
+MARGIN-SCHEME   seed 'vat margin scheme'   39 priced questions   2070/mo
+  pillar-level questions (no subject, the mechanic itself): 11
+  subject               vol/mo   qs   example
+  second-hand              110    2   second-hand vat margin scheme
+  cars                     100    2   margin scheme vat cars
+  sales / invoice           50    3   vat margin scheme invoice example
+  hand / goods / second      50    2   vat margin scheme for second hand goods
+  tour / operators          30    1   vat tour operators margin scheme
+  uae / profit              30    3   profit margin scheme uae vat
+  ireland / northern        30    3   vat margin scheme northern ireland
+  global                    20    1   global accounting vat margin scheme
+  car / used                20    2   margin vat scheme for used cars
+  software                  20    2   accounting software for vat margin scheme
+  mtd                       10    1   mtd vat margin scheme
+  artwork                   10    1   vat margin scheme artwork
+
+============================================================================================
+PASSENGER-TRANSPORT   seed 'vat on transport'   10 priced questions   150/mo
+  pillar-level questions (no subject, the mechanic itself): 4
+  subject               vol/mo   qs   example
+  public                    50    2   vat on public transport
+  ireland / services        30    3   vat on transport services uk
+  goods                     10    1   vat on transport of goods
+
+============================================================================================
+PLACE-OF-SUPPLY   seed 'vat place of supply'   21 priced questions   770/mo
+  pillar-level questions (no subject, the mechanic itself): 4
+  subject               vol/mo   qs   example
+  digital / services       220    5   place of supply services vat
+  goods                    120    5   vat place of supply of goods
+  notice                    80    4   vat notice 741a place of supply of services
+  online / courses / training      20    2   vat on online training courses place of supply
+  directive                 10    1   eu vat directive place of supply
+  uae                       10    1   place of supply vat uae
+  flow / chart              10    1   vat place of supply flow chart
+  events                    10    1   vat on events place of supply
+
+============================================================================================
+PRINTED-MATTER   seed 'vat on printing'   12 priced questions   240/mo
+  pillar-level questions (no subject, the mechanic itself): 4
+  subject               vol/mo   qs   example
+  services                  20    1   vat on printing services
+  stationery                20    2   vat rate on printing and stationery
+  charities                 20    2   vat on printing for charities
+  brochures                 10    1   vat on printing brochures
+  books                     10    1   vat on printing books
+  ireland                   10    1   vat on printing ireland
+
+============================================================================================
+PROFESSIONAL-PRACTICE   seed 'partnership tax return'   139 priced questions   2890/mo
+  pillar-level questions (no subject, the mechanic itself): 36
+  subject               vol/mo   qs   example
+  lodge / online           410   15   submit partnership tax return online
+  own / file / must        230   13   file partnership tax return online
+  mac / best / software     210   14   partnership tax return software
+  submit                   140    5   submit partnership tax return online
+  due / date               100    9   when is partnership tax return due
+  limited / liability       70    3   limited liability partnership tax return
+  where                     70    5   where to send partnership tax return
+  self / employed / assessment      60    2   partnership self assessment tax return
+  postal / address          60    5   address for partnership tax return
+  send                      50    3   where to send partnership tax return
+  deadline                  40    3   partnership tax return deadline
+  firm / income             40    4   partnership income tax return due date
+
+============================================================================================
+RD-CREDITS   seed 'r&d tax credits'   126 priced questions   6430/mo
+  pillar-level questions (no subject, the mechanic itself): 31
+  subject               vol/mo   qs   example
+  specialist               480    1   r&d tax credits specialist
+  calculating              140    1   calculating r&d tax credits
+  sme                       90    1   r&d tax credits for sme
+  consultation              70    1   r&d tax credits: consultation
+  software / development      70    4   r&d tax credits software
+  work                      60    2   how do r&d tax credits work
+  ireland                   60    2   ireland r&d tax credits
+  changes                   60    6   r&d tax credits changes
+  aid / state               50    5   do r&d tax credits count as state aid
+  treatment                 30    1   accounting treatment of r&d tax credits
+  small / business          30    1   r&d tax credits for small business
+  qualifies                 30    1   what qualifies for r&d tax credits
+
+============================================================================================
+SPORTS-CLUB-EXEMPTION   seed 'vat on membership'   32 priced questions   700/mo
+  pillar-level questions (no subject, the mechanic itself): 2
+  subject               vol/mo   qs   example
+  fees / south / africa     230   13   vat on membership fees
+  gym / ireland            150    7   is there vat on gym membership
+  prime / amazon            60    5   is there vat on prime membership
+  club                      40    3   vat on club membership fees
+  rac                       30    1   is there vat on rac membership
+  golf                      30    3   vat on golf membership fees
+  professional / subscriptions      30    3   vat on professional membership fees
+  fsb                       20    1   is there vat on fsb membership
+  fee / amex / card         20    2   is there vat on amex membership fee
+  iet                       10    1   is there vat on iet membership
+
+============================================================================================
+STOCK-AND-WIP   seed 'retail scheme'   58 priced questions   1820/mo
+  pillar-level questions (no subject, the mechanic itself): 4
+  subject               vol/mo   qs   example
+  m&s / john / tesco       880   17   retail graduate scheme
+  loyalty                  260    1   retail loyalty scheme
+  export / brexit           90    8   vat retail export scheme
+  home / group / sears      80    5   home retail group pension scheme
+  ireland / northern        70    3   northern ireland retail movement scheme
+  movement                  70    3   northern ireland retail movement scheme
+  leisure / hospitality      70    6   retail hospitality and leisure relief scheme
+  non / ucits               50    1   non ucits retail scheme
+  aid / gift                50    1   retail gift aid scheme
+  management                50    3   retail management graduate scheme
+  business                  50    5   business rates retail discount scheme
+  mtd                       30    3   retail scheme mtd
+
+============================================================================================
+SUPPLY-AND-FIT   seed 'vat on labour'   42 priced questions   1220/mo
+  pillar-level questions (no subject, the mechanic itself): 18
+  subject               vol/mo   qs   example
+  payable                   50    1   is vat payable on labour charges
+  materials                 50    4   do you charge vat on materials and labour
+  builders                  40    1   do builders charge vat on labour
+  only / invoices           40    2   do you charge vat on labour only
+  will / fees / impose      30    3   will labour charge vat on university fees
+  schools / private         30    3   vat on private schools labour
+  cis                       20    1   do you charge vat on cis labour
+  garages                   20    1   do garages charge vat on labour
+  ireland                   10    1   vat on labour ireland
+  tradesmen                 10    1   do tradesmen charge vat on labour
+  mechanics                 10    1   do mechanics charge vat on labour
+  subcontractors            10    1   vat on subcontractors labour
+
+============================================================================================
+TRONC-TIPS   seed 'tronc scheme'   8 priced questions   290/mo
+  pillar-level questions (no subject, the mechanic itself): 6
+  subject               vol/mo   qs   example
+  set                       40    1   how to set up a tronc scheme
+  paye                      10    1   tronc paye scheme
+
+============================================================================================
+VEHICLE-TRADE   seed 'vat on cars'   107 priced questions   4020/mo
+  pillar-level questions (no subject, the mechanic itself): 13
+  subject               vol/mo   qs   example
+  hand / south / second     800    9   vat on second hand cars
+  used / germany           580   10   do you pay vat on used cars
+  motor                    480    1   vat on motor cars
+  company                  440   12   vat on company cars
+  electric                 390   21   vat on electric cars
+  leased / recovery / restriction     340    8   vat on leased cars
+  new / blue / badge       230   11   vat on new cars
+  reclaim                  120    8   vat reclaim on company cars
+  ireland / northern       120   12   vat on new cars ireland
+  back                     100    3   can you claim vat back on company cars
+  use / private             90    3   vat on company cars with private use
+  sale                      60    2   vat on sale of cars
+
+============================================================================================
+WELFARE-CARE-EXEMPTION   seed 'vat exemption charity'   10 priced questions   480/mo
+  pillar-level questions (no subject, the mechanic itself): 6
+  subject               vol/mo   qs   example
+  works / building          20    1   charity vat exemption on building works
+  registered                10    1   registered charity vat exemption
+  partial                   10    1   charity vat partial exemption
+  advertising               10    1   charity vat exemption advertising
+
+============================================================================================
+ZERO-RATED-GOODS   seed 'zero rated vat'   115 priced questions   2740/mo
+  pillar-level questions (no subject, the mechanic itself): 21
+  subject               vol/mo   qs   example
+  items                    320   12   zero rated vat items
+  between / difference     190    6   difference between vat exempt and zero rated
+  examples                 100    3   zero rated vat examples
+  new / build               80    2   zero-rated vat new build
+  mean                      70    1   what does zero rated vat mean
+  insurance                 70    3   is insurance vat exempt or zero-rated
+  vehicle                   60    2   is vehicle tax vat exempt or zero-rated uk
+  water                     40    3   water rates vat exempt or zero rated
+  south / africa            40    4   zero rated vat services south africa
+  donations / charitable      30    1   are charitable donations vat exempt or zero-rated
+  flights                   30    1   are flights zero rated for vat
+  cakes                     30    2   are cakes zero rated for vat

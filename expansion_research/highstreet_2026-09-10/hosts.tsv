@@ -1,0 +1,32 @@
+mechanic	host	pillar	rationale
+food-vat-boundary	hospitality	VAT on food and drink	hospitalitytax.co.uk owns restaurants, takeaways and pubs already
+excise-duty	hospitality	Alcohol and excise duty	same audience: licensed premises, brewers, off-licences
+tronc-tips	hospitality	Tips, service charge and troncs	already a live topic on the site
+gambling-duty	hospitality	Gaming and machine games duty	licensed venues, arcades, pub machines
+cis-construction	construction-cis	CIS and the reverse charge	the site exists for exactly this
+supply-and-fit	construction-cis	Supply and fit, and new-build rating	same trades, same invoices
+employment-status-ir35	contractors-ir35	Employment status and IR35	the site exists for exactly this
+licensed-premises	contractors-ir35	Status tests and CEST	the same status question, different sector
+rd-credits	startups-tech	R and D tax credits	already the site's core subject
+place-of-supply	ecommerce	Place of supply and digital services	overseas customers are the ecommerce audience
+margin-scheme	ecommerce	VAT margin scheme	second-hand and resale sits with online sellers
+health-exemption	Medical	VAT exemption for medical care	statutory-register exemption, clinical audience
+welfare-care-exemption	charities	Welfare and charity VAT reliefs	charities site owns this audience
+agriculture-apr	Property	Agricultural property relief	Property already owns landed and rural estates
+land-property-exemption	Property	Option to tax and exempt land	Property owns the land questions
+professional-practice	Solicitors	Partnerships and professional practice	partnership rules land on the professional-practice audience
+creative-reliefs	digital-agency	Creative sector tax reliefs	nearest existing audience for production work
+vat-partial-exemption	generalist	VAT: partial exemption	NEW. No site owns it, and it is the largest homeless cluster
+zero-rated-goods	generalist	VAT: zero rating and reduced rates	NEW. Cross-sector, belongs in the VAT pillar
+stock-and-wip	generalist	VAT retail schemes and stock	NEW. The retail cluster is already live on generalist
+cash-business	generalist	Cash basis versus accruals	NEW. Applies to every sole trader, no sector home
+vehicle-trade	generalist	VAT on vehicles and the motor trade	NEW. 4,020/mo and no site owns motor
+household-employer	generalist	Employing someone at home	NEW. Families, not businesses. Carries the nanny calculator
+finance-insurance-exemption	generalist	Insurance premium tax and exempt supplies	NEW. FCA-adjacent, so content only, no lead capture from brokers
+printed-matter	generalist	VAT on printed matter	NEW. Small, sits inside the VAT pillar
+passenger-transport	generalist	VAT on passenger transport	NEW. Small, sits inside the VAT pillar
+funeral-exemption	generalist	VAT on funerals	NEW. Small, sits inside the VAT pillar
+education-exemption	generalist	VAT on education and private tuition	NEW. Small, sits inside the VAT pillar
+sports-club-exemption	generalist	VAT on memberships and sports clubs	NEW. Small, sits inside the VAT pillar
+chair-room-rental	generalist	Chair and room rental status	NEW. Already partly live on generalist via rent-a-chair
+agent-vs-principal	generalist	Agent or principal	NEW. Smallest measured mechanic, a section not a page
