@@ -76,7 +76,10 @@ function FigureCard({ tone, children }: { tone: "white" | "slate"; children: Rea
           <tbody>{children}</tbody>
         </table>
       </div>
-      <ExampleFigureNote className="mt-3" />
+      {/* These are the real statutory rates for the year, not illustrations, so
+          the default "Example figures displayed" note would tell readers not to
+          rely on the one page built to be relied on. */}
+      <ExampleFigureNote className="mt-3" label="Statutory rates, see Provenance for sources" />
     </div>
   );
 }

@@ -123,7 +123,7 @@ export function SignupForm({
       </div>
       {variant !== "minimal" && (
         <>
-          <p className="font-mono text-xs uppercase tracking-widest text-orange-500">Newsletter</p>
+          <p className={`font-mono text-xs uppercase tracking-widest ${dark ? "text-primary-400" : "text-primary-700"}`}>Newsletter</p>
           <h3 className="mt-2 text-2xl font-semibold tracking-tight text-neutral-900">{heading}</h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-600 max-w-prose">{body}</p>
         </>
@@ -149,7 +149,7 @@ export function SignupForm({
           className={
             dark
               ? `${btnPrimary} min-h-12 px-6 py-3 text-sm`
-              : "inline-flex min-h-12 items-center justify-center bg-orange-500 px-6 py-3 text-sm font-medium text-white tracking-wide transition-colors hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+              : "inline-flex min-h-12 items-center justify-center bg-primary-700 px-6 py-3 text-sm font-medium text-white tracking-wide transition-colors hover:bg-primary-800 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           }
         >
           {state === "submitting" ? "Subscribing..." : ctaLabel}
