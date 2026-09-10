@@ -11,13 +11,7 @@ import { resourceForTopic } from "@/lib/resources/registry";
 import { hasPremiumTool } from "@/lib/calculators/premium/registry";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 
-export function CalculatorPageResources({
-  slug,
-  
-}: {
-  slug: string;
-  
-}) {
+export function CalculatorPageResources({ slug }: { slug: string }) {
   const topic = topicForCalcSlug(slug);
   if (!topic) return null;
 

@@ -17,6 +17,7 @@ function iframeSnippet(slug: string, height: number) {
   height="${height}"
   frameborder="0"
   scrolling="no"
+  loading="lazy"
   title="Holloway Davies calculator"
 ></iframe>
 <script>
@@ -38,26 +39,27 @@ export default function EmbedGalleryPage() {
   const genericTools = allTools().filter((t) => t.kind === "generic");
 
   return (
-    <div className="bg-slate-50 min-h-screen py-12">
+    <div className="bg-slate-50 min-h-screen py-12 sm:py-16">
       <div className={siteContainerLg}>
-        <h1 className="text-3xl font-bold text-slate-900">Calculator embed gallery</h1>
+        <h1 className="text-3xl font-bold text-slate-900 sm:text-5xl">Calculator embed gallery</h1>
         <p className="mt-3 text-slate-600">
           Copy the snippet for any calculator to embed it on your site. Embeds auto-resize via{" "}
-          <code className="text-sm bg-slate-200 px-1">postMessage</code>.
+          <code className="rounded-xl bg-slate-200 px-1 text-sm">postMessage</code>.
         </p>
 
         <div className="mt-10 space-y-12">
           {genericTools.map((tool) => (
             <section key={tool.slug}>
-              <h2 className="text-xl font-bold text-slate-900 mb-4">{tool.name}</h2>
+              <h2 className="mb-4 text-2xl font-bold text-slate-900 sm:text-3xl">{tool.name}</h2>
               <EmbedSnippet code={iframeSnippet(tool.slug, tool.embedHeight)} />
-              <div className="mt-6 border border-slate-200 bg-white">
+              <div className="mt-6 overflow-hidden rounded-xl bg-white ring-1 ring-slate-200">
                 <iframe
                   src={`/embed/${tool.slug}`}
                   width="100%"
                   height={tool.embedHeight}
                   frameBorder="0"
                   scrolling="no"
+                  loading="lazy"
                   title={`${tool.name} preview`}
                 />
               </div>

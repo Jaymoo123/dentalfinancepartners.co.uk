@@ -3,9 +3,8 @@
 /**
  * Blog/calculator slot: qualified "free review" lead capture.
  *
- * ponytail: email-gate (ResourceGate) retired 2026-07-17 — Property pattern
- * mirrored. Guide/xlsx content is now open; this slot captures qualified leads
- * instead. ResourceGate.tsx kept on disk but no longer used by this path.
+ * ponytail: the email gate was retired 2026-07-17 — Property pattern mirrored.
+ * Guide/xlsx content is now open; this slot captures qualified leads instead.
  */
 import { MiniCapture } from "@/components/forms/MiniCapture";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";

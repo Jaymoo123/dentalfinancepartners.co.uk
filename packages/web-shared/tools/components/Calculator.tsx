@@ -128,7 +128,7 @@ export function Calculator({
               </div>
               <div
                 className={`inline-block px-5 sm:px-6 py-2 sm:py-3 text-xl sm:text-2xl font-bold ${
-                  result.verdict.positive ? "bg-[var(--brand-primary)] text-white" : "bg-amber-400 text-amber-950"
+                  result.verdict.positive ? "bg-[var(--brand-primary)] text-white" : "bg-[var(--calc-warn-bg,#fbbf24)] text-[var(--calc-warn-fg,#451a03)]"
                 }`}
               >
                 {result.verdict.text}
@@ -138,7 +138,7 @@ export function Calculator({
             <div className="mb-4 sm:mb-6">
               <div
                 className={`text-xs sm:text-sm font-bold uppercase tracking-wider mb-2 ${
-                  tone === "warn" ? "text-amber-400" : "text-[var(--brand-primary)]"
+                  tone === "warn" ? "text-[var(--calc-warn-accent,#fbbf24)]" : "text-[var(--brand-primary)]"
                 }`}
               >
                 {result.headline.label}

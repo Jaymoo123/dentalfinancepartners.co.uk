@@ -78,6 +78,15 @@
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: var(--accent-foreground);
+
+  /* Calculator "watch out" tones. The port moved warning/duty semantics off
+     amber/orange onto the approved violet ramp. The shared Calculator falls
+     back to amber when these are unset, so no other site changes.
+     --calc-warn-accent is the light violet step: the ramp's own members
+     (violet-700 etc.) are all too dark to read on the slate-900 result ground. */
+  --calc-warn-bg: #6d28d9;    /* violet-700 */
+  --calc-warn-fg: #ffffff;
+  --calc-warn-accent: #c4b5fd; /* violet-300, dark-ground step */
 }
 
 @theme inline {

@@ -125,7 +125,7 @@ export default function EmployerNICalculatorPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <EmployerNICalculator />
+          <EmployerNICalculator gateCampaign="employer-ni-calculator" />
 
           {/* Premium island for the payroll topic. */}
           <CalculatorPageResources slug="employer-ni-calculator" />

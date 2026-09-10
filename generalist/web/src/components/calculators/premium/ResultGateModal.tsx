@@ -3,14 +3,18 @@
 /**
  * Result-gate interstitial for the generalist premium in-blog calculator fleet.
  *
- * Shown once per session when a blog reader presses "See your result". Offers
- * a qualified capture before revealing the figure. Three non-negotiables:
+ * Shown when a blog reader presses "See your result" on a calculator they have
+ * not already revealed. Offers a qualified capture before revealing the figure.
+ * Three non-negotiables:
  *
  * 1. The escape hatch ALWAYS reveals. Closing by any means (X, backdrop, Esc,
  *    or the "No thanks" link) calls onReveal() and shows the result. The
  *    result is never walled off.
  * 2. isConverted() visitors are NEVER gated (bypassed upstream in PremiumCalculator).
- * 3. Once per session (enforced by gateModalShownThisSession in PremiumCalculator).
+ * 3. Shown PER CAMPAIGN, not once per session. The reveal is remembered per
+ *    calculator via wasRevealed()/rememberRevealed() in resultGateStorage.ts, so
+ *    revealing one calculator never unlocks the others (the module-global
+ *    once-per-session flag that did exactly that was removed in phase 4a).
  *
  * Every dismiss fires exactly one cta_click(result_gate_skip). Submitting the
  * form marks the visitor converted via the MiniCapture lead path (so they are

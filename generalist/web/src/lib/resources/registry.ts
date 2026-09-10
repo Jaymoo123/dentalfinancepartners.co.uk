@@ -3,7 +3,7 @@
  * assets for that topic.
  *
  * Data-only, string-safe, safe for the client bundle.
- * Used by PremiumUpgrade (toolId) and ResourceGate (xlsx / guide).
+ * Used by PremiumUpgrade (toolId).
  *
  * FEATURE FLAGS: every asset carries `enabled`. Nothing is ever
  * rendered/linked for an asset whose `enabled` is false (or whose underlying

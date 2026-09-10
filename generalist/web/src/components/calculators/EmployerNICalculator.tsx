@@ -16,6 +16,7 @@ import { useMemo, useRef, useState } from "react";
 import { UK_TAX_RATES as T } from "@/lib/uk-tax-rates";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
+import { ResultGate } from "./ResultGate";
 
 // All employer NI rates and thresholds pulled from lib/uk-tax-rates.ts
 // (canonical source, updated annually). Annotated as `number` to widen the
@@ -55,15 +56,26 @@ function calcMinPensionEmployer(salary: number): number {
 }
 
 export function EmployerNICalculator({
-  resultWrapper = (node) => node,
+  gateCampaign,
 }: {
   /**
-   * Wraps the RESULT COLUMN only, inside the grid cell, so the two-column layout
-   * is untouched. Same contract as the shared renderer's prop of the same name:
-   * the page passes `(node) => <ResultGate campaign="employer-ni-calculator">`.
+   * When set, the RESULT COLUMN only is wrapped in a ResultGate, inside the grid
+   * cell, so the two-column layout is untouched. Same capture behaviour as the
+   * shared renderer's `resultWrapper`, but expressed as a serializable string so
+   * a SERVER page can pass it: a render-prop function cannot cross the server ->
+   * client boundary ("Functions cannot be passed directly to Client Components").
+   * Unset (embeds, any future ungated host) renders the result plain.
    */
-  resultWrapper?: (node: React.ReactNode) => React.ReactNode;
+  gateCampaign?: string;
 } = {}) {
+  const resultWrapper = (node: React.ReactNode) =>
+    gateCampaign ? (
+      <ResultGate campaign={gateCampaign} ground="navy">
+        {node}
+      </ResultGate>
+    ) : (
+      node
+    );
   const [employees, setEmployees] = useState<Employee[]>(seedEmployees);
   const [useEA, setUseEA] = useState(true);
   const [includePension, setIncludePension] = useState(true);
@@ -229,7 +241,7 @@ export function EmployerNICalculator({
           </div>
 
           {summary.eaEligibleWarning && (
-            <p className="text-sm text-amber-800 bg-amber-50 border-l-4 border-amber-500 p-3">
+            <p className="text-sm text-violet-800 bg-violet-50 border-l-4 border-violet-700 p-3">
               With only one employee, Employment Allowance has not been applied. Add a second employee or untick the box to remove this warning.
             </p>
           )}
