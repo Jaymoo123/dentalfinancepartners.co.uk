@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
+import { buildPrimaryNav } from "@/lib/nav";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
@@ -100,7 +101,11 @@ export default function RootLayout({
           >
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             <IntentProvider>
-              <PageShell>{children}</PageShell>
+              {/* Nav built server-side: the Calculators groups come from the
+                  tool registry, which must never reach a client bundle. The
+                  kit's `fallbackNav` is not a substitute - it is group-less and
+                  would drop 13 calculator links from the header and footer. */}
+              <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />
               <DeepScrollModal />
               {/* Specialist widget: fixed bottom-right, print:hidden, Phase-0 deterministic */}

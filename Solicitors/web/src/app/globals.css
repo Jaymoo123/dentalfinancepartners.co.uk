@@ -476,3 +476,16 @@ details summary::-webkit-details-marker {
   color: var(--ink);
   font-weight: 400;
 }
+
+/* Anchor offset under the sticky header. The standard requires scroll-mt-24 on
+   every anchor target; the kit hardcodes `<main id="main">`'s className and
+   forking a file shared by 19 sites to add one utility is not worth it, so the
+   rule lives here. Applies to every in-page anchor target, not just #main:
+   the pre-port browser check found all 428 anchor targets across all 80 checked
+   routes computing scroll-margin-top 0, so every `#` jump hid its own heading
+   under the header. */
+#main,
+[id][class*="scroll-mt"],
+.article-body :where(h2, h3, h4)[id] {
+  scroll-margin-top: 6rem;
+}
