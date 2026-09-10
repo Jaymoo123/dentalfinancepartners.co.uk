@@ -172,7 +172,6 @@ export default function PrivacyPolicyPage() {
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
-          <li><strong>Google Analytics:</strong> website analytics and performance measurement.</li>
           <li><strong>Vercel:</strong> website hosting and content delivery.</li>
           <li><strong>Resend:</strong> sending the emails we use to confirm your details and to respond to you.</li>
           <li><strong>Twilio:</strong> sending the text messages we use to confirm your details.</li>

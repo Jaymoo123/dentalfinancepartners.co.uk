@@ -304,7 +304,7 @@ export default function RDPage() {
         />
       </div>
 
-      <FaqSection mountAnswers
+      <FaqSection
         eyebrow="FAQ"
         title="R&D credit FAQ"
         faqs={FAQ_ENTRIES}

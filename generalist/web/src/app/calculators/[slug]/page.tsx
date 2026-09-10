@@ -156,7 +156,7 @@ export default async function CalculatorPage({
       </div>
 
       {faqs.length > 0 && (
-        <FaqSection mountAnswers faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+        <FaqSection faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
       )}
     </>
   );

@@ -49,6 +49,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import pathlib
 import re
 import subprocess
 import sys
@@ -789,13 +790,30 @@ def selftest() -> int:
     # for BLIND. A blind lane is worth reporting, not worth going red over, and
     # the repo-secrets lane is permanently blind (GITHUB_TOKEN cannot read
     # secrets). Guard the distinction so nobody reinstates the daily red run.
-    exit_code = lambda rows: 1 if [x for x in rows if x["status"] == "ALARM"] else 0
     assert exit_code([{"status": "BLIND"}]) == 0, "a blind lane must not turn the run red"
     assert exit_code([{"status": "ALARM"}]) == 1, "an alarm must turn the run red"
     assert exit_code([{"status": "BLIND"}, {"status": "ALARM"}]) == 1, "alarm alongside blind must still go red"
+    assert exit_code([]) == 0, "a clean run must be green"
+    # main() must not carry a second copy of the rule that could drift from this one.
+    src = pathlib.Path(__file__).read_text(encoding="utf-8")
+    assert src.count("if any(f[\"status\"] == \"ALARM\"") == 1, "exit rule duplicated; main() must call exit_code()"
 
     print("selftest OK: read-only rule holds, alarm fires, blind stays green, comparison detects new and gone")
     return 0
+
+
+def exit_code(findings) -> int:
+    """The run's exit code, and the ONLY definition of it.
+
+    A red run is a notification, so it fires for a verified defect and nothing
+    else. ALARM means something is wrong. BLIND means a lane could not look,
+    which is worth reporting but is not a defect, and some lanes are
+    structurally blind for good (the repo-secrets lane needs an admin token
+    GITHUB_TOKEN will never have, so it 403s every run). Counting BLIND as
+    failure turned every run red and mailed the owner about a permission that
+    is not going to change.
+    """
+    return 1 if any(f["status"] == "ALARM" for f in findings) else 0
 
 
 def main() -> int:
@@ -841,10 +859,11 @@ def main() -> int:
     alarms = [f for f in findings if f["status"] == "ALARM"]
     blind = [f for f in findings if f["status"] == "BLIND"]
     bad = alarms + blind
+    rc = exit_code(findings)
 
     if args.json:
         print(json.dumps({"facts": facts, "findings": findings}, indent=2))
-        return 1 if alarms else 0   # nothing else on stdout: it must stay parseable
+        return rc   # nothing else on stdout: it must stay parseable
 
     order = {"ALARM": 0, "BLIND": 1, "UNKNOWN": 2, "GONE": 3, "CHANGED": 4, "NEW": 5, "INFO": 6}
     print(f"\nSTATE CHECK  {dt.date.today()}   {len(facts)} facts observed\n")
@@ -855,7 +874,7 @@ def main() -> int:
     print(f"\n{len(alarms)} alarm(s), {len(blind)} blind lane(s), "
           f"{len(findings) - len(bad)} note(s). "
           f"This tool reports only; it changes nothing.")
-    return 1 if alarms else 0
+    return rc
 
 
 if __name__ == "__main__":

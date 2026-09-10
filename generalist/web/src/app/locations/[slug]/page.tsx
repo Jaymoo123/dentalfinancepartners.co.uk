@@ -271,7 +271,7 @@ export default async function CityPage({ params }: Props) {
       </section>
 
       {/* LOCAL FAQS */}
-      <FaqSection mountAnswers
+      <FaqSection
         eyebrow="FAQ"
         title={`Frequently asked questions from ${city.name}`}
         faqs={city.localFaqs}

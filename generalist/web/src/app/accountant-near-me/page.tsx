@@ -237,7 +237,7 @@ export default function AccountantNearMePage() {
         />
       </div>
 
-      <FaqSection mountAnswers faqs={FAQS} className="bg-white py-12 sm:py-16 lg:py-20" />
+      <FaqSection faqs={FAQS} className="bg-white py-12 sm:py-16 lg:py-20" />
     </>
   );
 }

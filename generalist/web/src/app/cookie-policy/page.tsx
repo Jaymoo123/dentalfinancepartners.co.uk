@@ -6,18 +6,18 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Cookie policy",
-  description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+  description: `How ${siteConfig.name} uses browser storage and privacy-first analytics, and how to opt out.`,
   alternates: { canonical: `${siteConfig.url}/cookie-policy` },
   openGraph: {
     title: `Cookie Policy | ${siteConfig.name}`,
-    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+    description: `How ${siteConfig.name} uses browser storage and privacy-first analytics, and how to opt out.`,
     url: `${siteConfig.url}/cookie-policy`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Cookie policy",
-    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+    description: `How ${siteConfig.name} uses browser storage and privacy-first analytics, and how to opt out.`,
   },
 };
 
@@ -52,27 +52,8 @@ export default function CookiePolicyPage() {
           This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
         </p>
 
-        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Analytics cookies (Google Analytics)</h3>
-        <p>
-          We use Google Analytics to understand how visitors interact with our Site. This helps us improve content and user experience. Google Analytics sets the following cookies:
-        </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <strong>_ga:</strong> Distinguishes unique users. Expires after 2 years.
-          </li>
-          <li>
-            <strong>_gid:</strong> Distinguishes unique users. Expires after 24 hours.
-          </li>
-          <li>
-            <strong>_gat_gtag_*:</strong> Used to throttle request rate. Expires after 1 minute.
-          </li>
-        </ul>
-        <p>
-          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymised. Data is retained for 14 months.
-        </p>
-
-        <h2 className="text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>
-        <p>We use cookies to:</p>
+        <h2 className="text-xl font-semibold text-[var(--ink)]">2. Purpose of our analytics</h2>
+        <p>We use the identifiers described above to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Understand which pages are most useful to UK business owners and visitors</li>
           <li>Identify technical issues or broken links</li>
@@ -80,7 +61,7 @@ export default function CookiePolicyPage() {
           <li>Improve the overall user experience</li>
         </ul>
         <p>
-          We do <strong>not</strong> use cookies for advertising, remarketing, or selling your data to third parties.
+          We do <strong>not</strong> use any of this for advertising, remarketing, or selling your data to third parties.
         </p>
 
         <h2 className="text-xl font-semibold text-[var(--ink)]">3. How to manage cookies</h2>
@@ -88,7 +69,7 @@ export default function CookiePolicyPage() {
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">On this site</h3>
         <p>
-          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics and Google Analytics. Your choice is stored on your device and takes effect immediately. You can re-enable analytics from the same link.
+          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics. Your choice is stored on your device and takes effect immediately. You can re-enable analytics from the same link.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Browser settings</h3>
@@ -137,20 +118,6 @@ export default function CookiePolicyPage() {
             </a>
           </li>
         </ul>
-
-        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Google Analytics opt-out</h3>
-        <p>
-          You can opt out of Google Analytics tracking by installing the{" "}
-          <a
-            href="https://tools.google.com/dlpage/gaoptout"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-strong)] underline"
-          >
-            Google Analytics Opt-out Browser Add-on
-          </a>
-          .
-        </p>
 
         <h2 className="text-xl font-semibold text-[var(--ink)]">4. Changes to this policy</h2>
         <p>

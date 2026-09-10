@@ -15,7 +15,6 @@ export function FaqSection({
   faqs,
   className = "bg-white py-12 sm:py-16 lg:py-20",
   tone = "slate",
-  mountAnswers = false,
 }: {
   eyebrow?: string;
   title?: string;
@@ -23,14 +22,6 @@ export function FaqSection({
   className?: string;
   /** Card surface. Use "white" when the section itself sits on slate-50. */
   tone?: "slate" | "white";
-  /**
-   * Keep every answer in the DOM instead of mounting it on open. Radix unmounts
-   * closed panels, so the pre-hydration HTML carries the questions and none of
-   * the answers, while the FAQPage schema asserts both. Opt in where the answers
-   * are the reason the page exists. Off by default: every existing consumer
-   * renders byte-identical markup unless it asks for this.
-   */
-  mountAnswers?: boolean;
 }) {
   const itemSurface = tone === "white" ? "bg-white" : "bg-slate-50";
   return (
@@ -44,7 +35,7 @@ export function FaqSection({
           {faqs.map((faq, idx) => (
             <AccordionItem key={faq.question} value={`faq-${idx}`} className={itemSurface}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent forceMount={mountAnswers || undefined}>
+              <AccordionContent>
                 <p>{faq.answer}</p>
               </AccordionContent>
             </AccordionItem>
