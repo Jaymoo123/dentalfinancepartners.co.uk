@@ -6,7 +6,112 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-08-26 (batches 1 to 3 DEPLOYED, see the deploy record below).
+Last updated: 2026-09-10 (design port Phase 0; nothing deployed since 2026-08-26).
+
+## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
+
+The Property-standard design port has started. Method:
+`docs/_engines/DESIGN_PORT_PLAYBOOK.md`. Programme artefacts: `docs/medical/_port/`,
+brand layer at `docs/medical/DESIGN_DELTA.md`. Production still serves the OLD design
+throughout; cutover is one owner-triggered deploy at the end. Medical is the programme's
+third port, after generalist (pilot) and Solicitors (site 2).
+
+**Corrections to this document, made in the same session that found them:**
+- Production SHA is `18b4f25f39cd0c4aa084e582d69a87c8a10710ac` (Vercel
+  `targets.production`, project `prj_50vByZ3rqXQQwCUeENUTBbNBB41n`, readyState READY,
+  read 2026-09-10). The deploy record below is dated 2026-08-26 at `38a8ba75`; the estate
+  has deployed since, so date any before/after read from the 18b4f25f deploy.
+- The corpus is **88 blog markdown files**, not the 79 recorded on 2026-08-26 and not the
+  "139 URLs, 97 of them blog" from the same entry. Counted at source today: the live
+  sitemap and a full local sweep agree at **138 URLs**, of which 87 are blog posts and 8
+  are category hubs. The 88th post
+  (`private-practice-incorporation-complete-guide`) is deliberately 301'd by
+  `src/middleware.ts:21` and correctly excluded from the sitemap.
+
+**Phase 0 captured (no code):**
+- `git log 18b4f25f..HEAD -- 'Medical/'` = 0. Nothing Medical-owned is
+  committed-but-undeployed.
+- `git log 18b4f25f..HEAD -- 'packages/web-shared/'` = 10 commits, all from the generalist
+  port, all riding this site's next deploy. Two touch modules Medical imports
+  (`components/ServiceTiers.tsx`, `tools/components/Calculator.tsx`). Name all ten in the
+  cutover annotation. `Calculator.resultWrapper` (identity default) is the exact hook the
+  calculator ResultGate needs, already built, no kit edit required.
+- Link-floor baseline at `docs/medical/_port/link_baseline.json`: **138 routes, 3,836
+  unique internal links, 308 `data-cta`, 59 rendered em/en dashes across 8 routes.**
+  Chrome floor 17. Captured from `next start` in an isolated worktree at the production
+  SHA, before the first port commit, full sweep (`--sample=9999 --article-depth=2`;
+  Medical's blog URLs are FLAT). Browser baseline captured at 390 / 768 / 1024 / 1440.
+- Armed `monitored_pages`, both predicates because they disagree: `monitor_until > now()`
+  = **1 row** (`__home`, status flagged, window to 2026-10-06); `monitor_until >=
+  current_date` = **19 rows**, the extra 18 expiring TODAY. 19 is every row this site has.
+  The estate-canonical predicate carries NO status predicate; 3 of the 19 are flagged,
+  which the old active-only filter silently excused. By cutover the 18 will have closed,
+  so the cutover re-baselines roughly ONE row. **Separately: wave C shipped 2026-09-02 and
+  was never registered in `monitored_pages`, so those pages are live but unscored.** That
+  is the open item recorded below, still open, and now quantified.
+- Kit design consumption before the port: ZERO. This port is the shared design kit's third
+  consumer.
+- **Funnel, and it inverts the expected story.** Post bot-gate window 2026-08-23 to
+  2026-09-10, fresh Supabase pulls: Medical converts at **13.02 leads per 1,000 sessions
+  against Property's 9.83**, ranking second in the estate among sites with real traffic.
+  90-day clean leads 23, i.e. 7.7 per month, on the right side of the 5-per-month partner
+  line. Medical is not a broken funnel, so this port is protecting something that works.
+  The genuine weak steps are form-start rate (3.39% vs 5.66%) and calculator reach (25.0%
+  of sessions vs 37.8%), and both readings rest on 5 lead events, so they are directional.
+
+**Owner decisions taken 2026-09-10:** navy `#001b3d` + copper `#b87333` stay as the brand
+(the `#0891b2` cyan in `niche.config.json` is stale and gets reconciled to the CSS) with
+warning/duty/deadline semantics moving off copper; Cormorant Garamond dropped, Plus Jakarta
+Sans only; the footer sister-site cross-links removed; a skippable calculator ResultGate
+ships on the 10 generic calculators.
+
+**Deliberate deviation from the standard, recorded:** the kit `FaqSection` is NOT adopted on
+Medical. It is a Radix accordion without `forceMount`, so closed answers never reach the
+pre-hydration HTML, whereas Medical's `<details>` and `<dl>` answers are fully
+server-rendered on 88 pages today. Adopting it would be a crawlability regression. This
+reverses the call taken on Solicitors, deliberately.
+
+**Live defects found in Phase 0, 27 of them, none of it design work.** Full table with
+file:line at `docs/medical/_port/LIVE_DEFECTS.md`. The ones that matter most:
+- **The calculator result gate cannot be submitted at all.** `ResultGateModal.tsx:133-134`
+  sets `messageMinLength={40}` / `messageMinWords={8}` against the estate default of 20/4
+  (`web-shared/leads/capture-steps.ts:16-17`); it is the only call site on the site that
+  raises the floor. Step-1 validation rejects before the contact step is ever reached, so a
+  submit is structurally impossible. The event data agrees exactly: 6 form starts, 6
+  `form_error`, 0 submits over the window. This sits on the busiest interaction on the site
+  and on the exact component the port was about to extend to 10 more calculators.
+- Our own fee schedule is published on `/blog/gp-accountant-services`
+  (`page.tsx:181,182,188`: GBP600-1,200, GBP1,500-3,000, GBP5,000-15,000, plus a claim that
+  savings "routinely exceed the premium"), and in two further files. Breaches the standing
+  no-pricing rule.
+- Eleven turnaround promises across contact, homepage and two capture components, three of
+  them in page metadata. Banned, and false: partner firms respond, not us.
+- `/about` and `/contact` describe an in-house practice with its own clients and "your
+  dedicated GP accountant", against a privacy policy that discloses a partner-network
+  handoff to up to six firms.
+- The cookie policy is wrong four ways: it lists Universal Analytics cookies on a GA4-only
+  site, omits the real GA4 cookie, claims IP anonymisation and a 14-month retention that
+  nothing in the repo sets, and denies storage while roughly 12 `ma_*` keys are written.
+- Three published figures are wrong or unsupported: a GMC fee of GBP481 that house
+  positions bans outright, Class 2 NI described as still payable when it was abolished as a
+  required payment in April 2024, and 2025/26 dividend rates doing 2026/27 advice work.
+- `config/site.ts:8` reads `niche.company.registered_office` unguarded where Property
+  guards it, the same shape that produced 7 production `client_error` rows on Solicitors.
+- `StickyCTA` is mounted twice on the homepage, so `/` renders two stacked fixed bars and
+  dismissing one leaves the other.
+- All 88 posts carry `imageCredit` frontmatter with **zero consumers**: authored photo
+  attribution that reaches no page.
+- `ExitIntentModal.tsx` (186 lines) has zero importers and is dead, while the privacy
+  policy still describes an exit-intent form and the live `SpecialistWidget` (auto-opens at
+  600ms) is undisclosed.
+
+**Process note worth keeping.** The first baseline sweep was aborted before it ran: port
+3131 was already serving the Solicitors site, `next start` failed to bind, and the served
+`<title>` came back as "Accountants for Solicitors UK". 3111 and 3121 were occupied by
+earlier ports too. Medical was captured on 3141 after asserting the title. The assertion
+the Solicitors run added has now saved a measurement on two consecutive sites.
+
+---
 
 ## DEPLOYED 2026-08-26, and this is the first Medical production ship of the R.5 programme
 
