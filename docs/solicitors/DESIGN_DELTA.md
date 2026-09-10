@@ -1,8 +1,8 @@
 # SOLICITORS DESIGN DELTA
 Standard: docs/_engines/PROPERTY_STANDARD_ROLLOUT.md appendix + docs/property/DESIGN_SYSTEM.md §0.
 An empty section means: Property standard, no exception.
-Status 2026-09-10: owner decisions 1-7 TAKEN this day and recorded below. Three rows remain
-AWAITING OWNER SIGN-OFF (appendix K blockers): brand/warning swatch, wordmark icon + line2,
+Status 2026-09-10: APPROVED. Owner: "approve all four" (warning ladder W1, wordmark Scale/SPECIALIST ACCOUNTANTS, backdrop motif, wider pricing removal). owner decisions 1-7 TAKEN this day and recorded below. Three rows remain
+APPROVED 2026-09-10 (appendix K blockers): brand/warning swatch, wordmark icon + line2,
 backdrop motif. Derivation: `docs/solicitors/_port/DISPOSITION_SLICE3.md` §8.
 
 ## 1. Brand tokens (the seven swap points)
@@ -23,7 +23,7 @@ dark ground:         slate-900 #0f172a. Retires `bg-neutral-900` (research) and 
                      `bg-[var(--primary)]` heroes on the four pillar statics and
                      /resources/[topic]. Footer #1e293b is slice 1's call; note the brand hex on
                      #1e293b measures 2.50 and must never carry text or a wordmark there.
-warning ramp:        OFF red entirely (owner decision 2, 2026-09-10, AWAITING SIGN-OFF).
+warning ramp:        OFF red entirely (owner decision 2, APPROVED 2026-09-10: ladder W1).
                      Recommended ladder W1: amber-700 #b45309 -> orange-700 #c2410c ->
                      fuchsia-700 #a21caf -> violet-700 #6d28d9; on-dark steps amber-400 /
                      orange-400 / fuchsia-400 / violet-400. Reason: the brand IS red-family, so a
@@ -84,14 +84,14 @@ button constants:    box model per A.5 (`min-h-12`, `min-w-[10rem]`, `px-8 py-3.
                      `globals.css:177-198` puts `color: var(--primary)` on
                      `background: var(--accent)` and is deleted with its zero-consumer siblings.
 wordmark:            icon = `Scale` (lucide), fallback `Gavel`; line1 "ACCOUNTS FOR LAWYERS";
-                     line2 "SPECIALIST ACCOUNTANTS". AWAITING OWNER SIGN-OFF (appendix K).
+                     line2 "SPECIALIST ACCOUNTANTS". APPROVED 2026-09-10 (appendix K).
                      Rejected: `Landmark`/`Building2` (says court), `BookOpen` (says publisher),
                      `Calculator` (every accountancy brand uses it). Icon
                      `text-[var(--brand-primary)]` on light (graphic, 5.84 clears 3:1),
                      `text-rose-400` on dark (6.63); the brand hex is 3.06 on slate-900 and 2.50
                      on #1e293b, so it must never carry the dark wordmark. `aria-label` built
                      from the visible strings (WCAG 2.5.3).
-backdrop motif:      AWAITING OWNER SIGN-OFF. Proposal (slice 3): ruled COLUMN LEDGER, evenly
+backdrop motif:      APPROVED 2026-09-10. Proposal (slice 3): ruled COLUMN LEDGER, evenly
                      spaced vertical rules at ~34px pitch, two heavier rules marking a
                      debit/credit fold, sparse horizontal rules stopping short of the edges,
                      3-4 short tick entries at 1.5x stroke; ~26 SVG lines, `aria-hidden`.
@@ -192,7 +192,7 @@ figure on #171717 is 3.07. Both are well under 4.5 and the disposition is unchan
 | deviation | owner decision + date |
 |---|---|
 | Button ground pinned to the live brand hex #c41e3a rather than the ramp's 600 or 700 step (white label 5.84 already clears 4.5:1; a shift would recolour every button for zero gain). Supersedes the earlier rose-700 recommendation in this programme | TAKEN 2026-09-10 (owner decision 1) |
-| Warning / duty / penalty semantics reassigned OFF red to W1 (amber-700 / orange-700 / fuchsia-700 / violet-700; on-dark 400 steps), because the brand is red-family | TAKEN 2026-09-10 (owner decision 2), swatch AWAITING OWNER SIGN-OFF |
+| Warning / duty / penalty semantics reassigned OFF red to W1 (amber-700 / orange-700 / fuchsia-700 / violet-700; on-dark 400 steps), because the brand is red-family | TAKEN 2026-09-10 (owner decision 2), swatch APPROVED 2026-09-10 |
 | Second typeface removed: Cormorant Garamond dropped, Plus Jakarta Sans only, 194 `font-serif` uses retired | TAKEN 2026-09-10 (owner decision 3) |
 | Footer sister-site cross-links to dentalfinancepartners.co.uk and medicalaccounts.co.uk REMOVED; footer takes the kit/Property shape (`SiteFooter.tsx:17-40`) | TAKEN 2026-09-10 (slice 1 owner decision 5) |
 | Two-hue brand retained: crimson = action, slate blue = accent and links (10.35); `--accent-strong` is NOT re-pointed at the brand | TAKEN 2026-09-10 (owner decision 7 context) |
@@ -208,16 +208,16 @@ figure on #171717 is 3.07. Both are well under 4.5 and the disposition is unchan
 
 | Input | Class | State 2026-09-10 |
 |---|---|---|
-| Brand colour ramp sign-off (incl. the W1 warning ladder) | BLOCKER, blocks Phase 1 | AWAITING OWNER SIGN-OFF. Recommendation: rose 50-950 steps, brand hex #c41e3a retained as the button ground, warning ladder W1 |
-| Wordmark icon | BLOCKER, blocks Phase 1 | AWAITING OWNER SIGN-OFF. Recommendation: `Scale`, fallback `Gavel` |
-| Wordmark line2 descriptor | BLOCKER, blocks Phase 1 | AWAITING OWNER SIGN-OFF. Recommendation: "SPECIALIST ACCOUNTANTS" |
-| Backdrop motif | BLOCKER, blocks Phase 1 | AWAITING OWNER SIGN-OFF. Recommendation: ruled column ledger at Property's E geometry, two tones |
+| Brand colour ramp sign-off (incl. the W1 warning ladder) | BLOCKER, blocks Phase 1 | APPROVED 2026-09-10. Recommendation: rose 50-950 steps, brand hex #c41e3a retained as the button ground, warning ladder W1 |
+| Wordmark icon | BLOCKER, blocks Phase 1 | APPROVED 2026-09-10. Recommendation: `Scale`, fallback `Gavel` |
+| Wordmark line2 descriptor | BLOCKER, blocks Phase 1 | APPROVED 2026-09-10. Recommendation: "SPECIALIST ACCOUNTANTS" |
+| Backdrop motif | BLOCKER, blocks Phase 1 | APPROVED 2026-09-10. Recommendation: ruled column ledger at Property's E geometry, two tones |
 | Favicon set | COSMETIC | Keep `src/app/icon.svg`; never generate |
 | Hero imagery | COSMETIC | None needed; ledger motif only. The full-bleed crimson heroes retire |
 | Phone number | BLOCKER for schema/copy | `niche.contact.phone` "+44 20 7946 0157", NOT displayed publicly today (`site.ts:32-33`) and no public telephone in schema. Keep that posture |
 | GA4 id | INFO | G-N6ZPRB3DSQ, live and consent-gated (`niche.config.json -> seo.google_analytics_id`, rendered at `layout.tsx:107`). Unchanged |
 | Font change | BLOCKER by the letter of K; read as NOT triggered here | TAKEN 2026-09-10: Cormorant Garamond dropped, Plus Jakarta Sans only. This is a REMOVAL of a second face, not a switch of the primary face: the site already loads and renders Plus Jakarta as `--font-sans` and body copy does not change. K's gate exists to stop a live site's typeface changing under the reader; the reader sees only 194 serif headings become the face the rest of the page already uses. Recorded here for the record, and bundled into the same swatch turn so the owner can veto in one line if he reads it the other way |
-| Capture-surface scope | BLOCKER, blocks Phase 1 | AWAITING OWNER SIGN-OFF. Proposal: no new interruptive surfaces in slice 3; restyle only. The one addition is an in-flow `LeadCTAPanel` on the net-new /resources index. Research routes stay capture-free |
+| Capture-surface scope | BLOCKER, blocks Phase 1 | APPROVED 2026-09-10. Proposal: no new interruptive surfaces in slice 3; restyle only. The one addition is an in-flow `LeadCTAPanel` on the net-new /resources index. Research routes stay capture-free |
 | Deploy approval | BLOCKER, blocks ship | Owner-triggered in that turn, every time. Nothing is deployed by this delta |
 
 ## 5. L.3 ramp registry
