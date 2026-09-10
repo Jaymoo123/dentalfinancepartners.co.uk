@@ -55,7 +55,7 @@ export const serviceTiers: ServiceTier[] = [
 export const siteStats: StatItemConfig[] = [
   {
     icon: "🧮",
-    value: "17",
+    value: "21",
     label: "Free tax calculators",
   },
   {

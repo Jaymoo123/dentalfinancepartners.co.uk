@@ -216,11 +216,11 @@
         },
         "hero_primary": {
           "label": "Book a free call",
-          "href": "/contact"
+          "href": "#book"
         },
         "hero_secondary": {
-          "label": "What we cover",
-          "href": "/services"
+          "label": "Try the free calculators",
+          "href": "#calculators"
         },
         "header_secondary": {
           "label": "Contact",
