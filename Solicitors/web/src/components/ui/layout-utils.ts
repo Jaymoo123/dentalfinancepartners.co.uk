@@ -1,29 +1,20 @@
-/** Shared layout primitives — mobile-first, Solicitors Accounts */
-export const siteContainer =
-  "mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 min-w-0";
+/** Layout utility tokens - the Property standard, consumed from the shared design kit.
+ *  Brand behaviour comes from tokens in globals.css (--color-primary-*, the --btn-ground
+ *  trio, --hero-cream), so these strings are the estate's; only the tokens are Solicitors'.
+ *  docs/solicitors/DESIGN_DELTA.md records the approved deviations (button ground pinned
+ *  to the live brand hex #c41e3a rather than a ramp step). */
 
-/** Wider reading width for marketing homepage (Sidekick-style rhythm). */
-export const siteContainerLg =
-  "mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 min-w-0";
-
-export const contentNarrow =
-  "mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 min-w-0";
-
-export const sectionY = "py-12 sm:py-16 md:py-20";
-
-export const sectionYLoose = "py-16 sm:py-20 md:py-24 lg:py-28";
-
-export const focusRing =
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
-
-/** Primary CTA — crimson surface, white label (distinctive legal brand) */
-export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold tracking-tight text-white shadow-sm transition-all duration-200 hover:bg-[var(--primary-soft)] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
-
-/** Secondary — crimson outline, for use on light backgrounds */
-export const btnSecondary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full border border-[var(--primary)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:bg-[var(--primary)]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
-
-/** Ghost / on-dark: light border */
-export const btnOnDark =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all duration-200 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
+export {
+  siteContainer,
+  siteContainerLg,
+  siteContainerXl,
+  contentNarrow,
+  sectionY,
+  sectionYLoose,
+  focusRing,
+  btnPrimary,
+  btnSecondary,
+  btnOnDark,
+  btnOnCream,
+  heroCreamSurface,
+} from "@accounting-network/web-shared/design/layout-utils";

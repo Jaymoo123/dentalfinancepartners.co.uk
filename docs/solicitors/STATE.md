@@ -108,6 +108,22 @@ removed and the footer takes the kit/Property shape.
   and fail on a clean install. Exactly the `check_dependency_closure.py` failure class;
   declare it in the same commit that imports it.
 
+**TEN DEAD INTERNAL LINKS, all pre-existing (verified 404 on the untouched production
+build at 18b4f25f as well as on the port branch, so none of them is ours):**
+`/resources`; `/calculators/solicitor-take-home`; `/calculators/fee-share-vs-equity-partner`;
+`/blog/legal-aid-laa-work-vat-and-cash-flow`;
+`/blog/cofa-monthly-checklist-uk-law-firms`;
+`/blog/billing-discipline-end-of-quarter-uk-law-firms`;
+`/blog/client-account-handling-residential-conveyancing`;
+`/blog/common-sra-accounts-rules-breaches-and-how-to-fix`;
+`/blog/structure-incorporation/salaried-member-rules-uk-llps-explained`;
+`/blog/structure-incorporation/llp-vs-traditional-partnership-uk-law-firms`.
+Note that three of these slugs ARE armed `monitored_pages` rows, so the pages are being
+measured while the links pointing at them 404. Also one 301 in the crawl:
+`/blog/practice-finance-cash-flow/solicitor-accountant-cost` to `...-fees`. Definition of
+done requires zero 404s on internal links, so these are port work, resolved by fixing the
+link source or the target, never by deleting the link (DESIGN_SYSTEM 0.6).
+
 **26.2% statistic: VERIFIED, keep with a correction.** The real figure is 11 of 42 firms
 subject to closure in the SRA year to 30 September 2025 (26.2%), against 11 of 59 (18.6%)
 the year before. Sourced to an analysis by Lubbock Fine working from SRA closure data,

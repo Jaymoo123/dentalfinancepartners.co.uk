@@ -1,11 +1,13 @@
-﻿/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
 @import "tailwindcss" source("..");
 @source "../../../../packages/web-shared";
+@import "tw-animate-css";
+@import "@accounting-network/web-shared/design/globals-standard.css";
 
 /*
-  UI ground rules (mobile-first) â€” Accounts for Lawyers
-  - Burgundy + gold brand; traditional legal aesthetic, professional authority.
-  - Touch targets â‰¥44px; no horizontal bleed; form inputs 16px on mobile.
+  UI ground rules (mobile-first) - Accounts for Lawyers
+  - Crimson action + slate-blue accent; Property standard shape and motion.
+  - Touch targets >=44px; no horizontal bleed; form inputs 16px on mobile.
   - Professional, trustworthy aesthetic for legal sector
 */
 
@@ -56,13 +58,85 @@
   --brand-primary: var(--crimson);
   --brand-primary-strong: var(--crimson-dark);
   --brand-on-primary: #ffffff;
+
+  /* Radius chain root. The kit's globals-standard.css derives --radius-sm/md/lg/xl
+     and --btn-radius from this, so --radius-xl = calc(0rem + 4px) = 4px, the house
+     square corner that replaces the old 9999px pills. */
+  --radius: 0rem;
+
+  /* Button ground trio, read by the shared design-kit button recipes.
+     Ground is the LIVE BRAND HEX, not a ramp step: white on #c41e3a measures
+     5.84 and already clears the 4.5:1 floor, so DESIGN_DELTA owner decision 1
+     pins it here and the L.2 shift-to-700 remedy does not apply. */
+  --btn-ground: #c41e3a;         /* white label 5.84 */
+  --btn-ground-hover: #a01829;   /* white label 7.90 */
+  --btn-ground-active: #881337;  /* rose-900, white label 9.57 */
+
+  /* Cream hero surface for the kit's heroCreamSurface (Property's value). */
+  --hero-cream: #fbfaf7;
+
+  /* Brand-glow channels for the kit's glow rules ("R G B"). Rose 500 / brand /
+     rose-400 / rose-100. */
+  --brand-glow: 225 29 72;
+  --brand-glow-deep: 196 30 58;
+  --brand-glow-edge: 251 113 133;
+  --brand-glow-faint: 255 228 230;
+
+  /* Warning / duty / penalty ladder W1 (DESIGN_DELTA owner decision 2). The brand
+     is red-family, so a penalty chip on red would read as brand furniture; the
+     ladder moves OFF red entirely. Every step clears 4.5:1 on white, cream and
+     slate-50. Defined here as tokens so later phases consume tokens, not literals.
+     The 50 existing amber/orange/red/rose usages in src/ are NOT swept by this
+     package; they belong to the phases that own those files. */
+  --warn-1: #b45309;  /* amber-700,   a duty bites            (white 5.02) */
+  --warn-2: #c2410c;  /* orange-700,  escalation / deadline   (white 5.18) */
+  --warn-3: #a21caf;  /* fuchsia-700, no relief               (white 6.32) */
+  --warn-4: #6d28d9;  /* violet-700,  criminal / regulatory   (white 7.10) */
+  --warn-1-on-dark: #fbbf24;  /* amber-400   on navy 10.69 */
+  --warn-2-on-dark: #fb923c;  /* orange-400  on navy  7.89 */
+  --warn-3-on-dark: #e879f9;  /* fuchsia-400 on navy  7.25 */
+  --warn-4-on-dark: #a78bfa;  /* violet-400  on navy  6.56 */
+
+  /* Standard card ring: slate-200 at 70%, the kit's `ring-1 ring-slate-200/70`. */
+  --card-ring: rgba(226, 232, 240, 0.7);
+
+  /* The one red that stays: form-error text, always paired with role="alert"
+     and an icon, never resting on colour alone. */
+  --form-error: #dc2626;  /* red-600, white 4.83 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
-  --font-serif: var(--font-cormorant);
+  /* TRANSITIONAL, remove when the last font-serif class goes. The Property
+     standard is a single sans face, so Cormorant was dropped in phase 1. But 193
+     `font-serif` classes still sit across 39 page files that later phases own,
+     and with no --font-serif wiring they would fall back to the browser's Times
+     or Georgia: a visible regression on those pages for the duration of the
+     port. Pointing font-serif at the sans stack makes those classes a no-op, so
+     the pages render correctly today and each later phase deletes its own
+     classes without a flag day. When the count reaches zero, delete this line.
+     Tracking grep: rg -n "font-serif" Solicitors/web/src | wc -l */
+  --font-serif: var(--font-plus-jakarta);
+}
+
+/* Brand ramp for the design kit's primary-* utilities. Tailwind 4 rose in oklch,
+   copied verbatim from node_modules/tailwindcss/theme.css so computed styles
+   byte-match the stock ramp. THE BRAND HEX IS NOT A RAMP STEP: --brand-primary
+   stays #c41e3a, which sits between rose-600 and rose-700. */
+@theme {
+  --color-primary-50: oklch(96.9% 0.015 12.422);
+  --color-primary-100: oklch(94.1% 0.03 12.58);
+  --color-primary-200: oklch(89.2% 0.058 10.001);
+  --color-primary-300: oklch(81% 0.117 11.638);
+  --color-primary-400: oklch(71.2% 0.194 13.428);
+  --color-primary-500: oklch(64.5% 0.246 16.439);
+  --color-primary-600: oklch(58.6% 0.253 17.585);
+  --color-primary-700: oklch(51.4% 0.222 16.935);
+  --color-primary-800: oklch(45.5% 0.188 13.697);
+  --color-primary-900: oklch(41% 0.159 10.272);
+  --color-primary-950: oklch(27.1% 0.105 12.094);
 }
 
 *,
@@ -84,7 +158,7 @@ body {
   background: var(--background);
   color: var(--ink);
   font-family: var(--font-plus-jakarta), system-ui, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6; /* A.3 body rhythm (was 1.5) */
 }
 
 a {
@@ -96,153 +170,36 @@ button {
   font-family: inherit;
 }
 
-.contentNarrow {
-  max-width: 68ch;
-  margin-inline: auto;
-  padding-inline: 1.25rem;
-}
-
-.siteContainerLg {
-  max-width: 1280px;
-  margin-inline: auto;
-  padding-inline: 1.25rem;
-}
-
-.sectionY {
-  padding-block: 3rem;
-}
-
-.sectionYLoose {
-  padding-block: 4rem;
-}
-
-@media (min-width: 768px) {
-  .sectionY {
-    padding-block: 5rem;
-  }
-  .sectionYLoose {
-    padding-block: 7rem;
-  }
-}
-
-.btnPrimary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.25;
-  border-radius: 9999px;
-  transition: all 0.2s;
-  background: var(--primary);
-  color: white;
-  border: 2px solid var(--primary);
-  min-height: 48px;
-}
-
-.btnPrimary:hover {
-  background: var(--primary-soft);
-  border-color: var(--primary-soft);
-  transform: translateY(-1px);
-}
-
-.btnPrimary:active {
-  transform: translateY(0);
-}
-
-.btnSecondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.25;
-  border-radius: 9999px;
-  transition: all 0.2s;
-  background: transparent;
-  color: var(--primary);
-  border: 2px solid var(--primary);
-  min-height: 48px;
-}
-
-.btnSecondary:hover {
-  background: var(--primary);
-  color: white;
-}
-
-.btnOnDark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.25;
-  border-radius: 9999px;
-  transition: all 0.2s;
-  background: var(--accent);
-  color: var(--primary);
-  border: 2px solid var(--accent);
-  min-height: 48px;
-}
-
-.btnOnDark:hover {
-  background: var(--accent-strong);
-  border-color: var(--accent-strong);
-  transform: translateY(-1px);
-}
-
-.btnMailOutline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.25;
-  border-radius: 9999px;
-  transition: all 0.2s;
-  background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  min-height: 48px;
-}
-
-.btnMailOutline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.focusRing {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
+/* Card recipes. Restyled in place rather than deleted: 11 `.card-premium` and 5
+   `.card-flat` consumers update at once, no consumer file is touched. The standard
+   recipe is the house square corner (--radius-xl, 4px) plus a slate-200/70 ring
+   instead of the pre-redesign 1px border and 1rem/0.75rem radius. */
 .card-premium {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 1rem;
+  border: 0;
+  border-radius: var(--radius-xl);
   padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  box-shadow:
+    0 0 0 1px var(--card-ring),
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
   transition: all 0.2s;
 }
 
 .card-premium:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 0 0 1px var(--card-ring),
+    0 10px 15px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.04);
   transform: translateY(-2px);
 }
 
 .card-flat {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
+  border: 0;
+  border-radius: var(--radius-xl);
   padding: 1.5rem;
+  box-shadow: 0 0 0 1px var(--card-ring);
 }
 
 .hero-glass {
@@ -378,7 +335,6 @@ details summary::-webkit-details-marker {
   margin-bottom: 1rem;
   padding-left: 1rem;
   border-left: 4px solid var(--primary);
-  font-family: var(--font-cormorant), serif;
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary);
