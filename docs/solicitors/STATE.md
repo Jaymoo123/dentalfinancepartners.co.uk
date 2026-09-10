@@ -6,7 +6,121 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/solicitors/house_positions.md`, never here.
 
-Last updated: 2026-07-19.
+Last updated: 2026-09-10.
+
+## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
+
+The Property-standard design port has started. Method:
+`docs/_engines/DESIGN_PORT_PLAYBOOK.md`. Programme artefacts: `docs/solicitors/_port/`.
+Production still serves the OLD design throughout; cutover is one owner-triggered deploy
+at the end.
+
+**Corrections to this document, made in the same session that found them:**
+- Production SHA is `18b4f25f39cd0c4aa084e582d69a87c8a10710ac` (Vercel `targets.production`,
+  readyState READY, read 2026-09-10). The `435cc12e` recorded below on 2026-08-25 is STALE;
+  the estate has deployed since. Date any before/after read from the 18b4f25f deploy.
+- Corpus counts below said "149 blog posts, 6 solicitor-guides". Both wrong on disk today:
+  **196 blog posts, 10 solicitor-guides**, 8 resources, 5 `/services/[slug]` sub-pages,
+  13 generic calculators + 5 premium, 5 locations, 17 distinct blog categories (7 with
+  hand-built landing pages, 10 derived). Build at 18b4f25f emits 294 prerendered HTML files;
+  the sitemap yields 274 sweepable public URLs.
+
+**Phase 0 captured (no code):**
+- `git log 18b4f25f..origin/main -- 'Solicitors/'` = 0. Nothing Solicitors-owned is
+  committed-but-undeployed.
+- `git log 18b4f25f..origin/main -- 'packages/web-shared/'` = 10 commits, all from the
+  generalist port, all riding this site's next deploy. Two touch modules Solicitors imports
+  (`components/ServiceTiers.tsx`, `tools/components/Calculator.tsx`); both verified strictly
+  additive with behaviour-preserving defaults, so the site renders byte-identically today.
+  `Calculator.resultWrapper` (identity default) is the exact hook the calculator ResultGate
+  needs, already built. Name all ten in the cutover annotation.
+- Link-floor baseline at `docs/solicitors/_port/link_baseline.json`: 274 routes, 5,343
+  unique internal links, 774 `data-cta`, **330 rendered em-dashes**. Captured from
+  `next start` in an isolated worktree at the production SHA, before the first port commit,
+  full sweep (`--sample=9999`, all 196 articles, not a 30-article sample).
+- Armed `monitored_pages`, both predicates stated because they disagree and the difference
+  matters: `monitor_until > now()` = **41 rows** (windows 2026-10-06 and 2026-10-07);
+  `monitor_until >= current_date` = **76 rows**, the extra 35 being windows that expire
+  TODAY, 2026-09-10. 76 is every row this site has. The estate-canonical predicate
+  (corrected 2026-08-26) is `monitor_until > now()` with NO status predicate: 16 of the 41
+  are status `'flagged'`, which the old `status='active'` filter silently excused, and
+  `'flagged'` marks an OPEN regression, not a cleared one. Frozen set includes `__home`,
+  `services`, `contact` and `blog`. By cutover the 35 expiring today will have closed, so
+  the cutover knowingly re-baselines roughly 41; re-derive on the day rather than reusing
+  this number.
+- Kit design consumption before the port: ZERO. This port is the shared kit's second
+  consumer after generalist.
+
+**Owner decisions taken 2026-09-10:** crimson `#c41e3a` stays primary (ramp snaps to rose,
+button ground rose-700) and the warning/duty/penalty ramp moves OFF red; the Cormorant
+Garamond second typeface is dropped; our own published pricing is removed; a skippable
+calculator ResultGate ships on the generic fleet; the footer sister-site cross-links are
+removed and the footer takes the kit/Property shape.
+
+**Live defects found in Phase 0, none of them design work:**
+- `/services` publishes our own prices (`services/page.tsx:110,122` and
+  `services/[slug]/data.ts:115`: from GBP180/month, from GBP450/month, GBP4,000-GBP12,000).
+  Breaches the standing no-pricing rule. Removed by owner decision.
+- `/resources` is a hard 404: linked from all 8 resource pages
+  (`resources/[topic]/page.tsx:56`), no route, no redirect in `next.config.ts`, absent from
+  the sitemap.
+- `src/config/site.ts:8` reads `niche.company.registered_office` unguarded where Property
+  guards it, after 7 production `client_error` rows from partial chunk loads.
+- `role="img"` collapses four chart subtrees (`research/LegalIncorporationCharts.tsx` x3,
+  `tools/premium/PremiumBarChart.tsx`), making every data value unreachable to a screen
+  reader.
+- `src/app/page.tsx:488` claims "6 calculators"; the registry holds 13 generic + 5 premium.
+- "26.2% of SRA firm closures" is published on 4 pages and is not in `house_positions.md`.
+- `globals.css` duplicates the layout and button recipes as CSS classes with ZERO consumers.
+- **The five `/services/[slug]` pages are absent from the sitemap.** All five render 200
+  (`/services/{solicitor-accountants,sra-accounts-rules,llp-accounts,practice-valuation,
+  cofa-compliance-support}`) and are linked from `/services`, but the sitemap's 274 entries
+  contain `/services` once and no sub-page. The site's main commercial cluster is not being
+  declared to search engines. Verified independently of the disposition pass by curling both
+  the sitemap and each route.
+- `/embed/law-firm-sale-cgt` serves a second, UNGATED copy of a calculator that also exists
+  as a bespoke route and as the 13th registry config. Matters once the ResultGate ships.
+- `partner-tax-reserve.related` links to two slugs that 404.
+- Every in-page anchor on all 80 browser-checked routes computes `scroll-margin-top: 0px`
+  where the standard needs `scroll-mt-24`, so with a sticky header every `#` jump on the
+  site hides its own heading. 8 React #418 hydration mismatches also logged.
+- **Our own pricing is published in roughly 15 places, not two.** Beyond
+  `services/page.tsx:110,122` it includes `services/[slug]/data.ts:93,113-115` (a full fee
+  structure), `specialist-vs-generalist-accountant:57` (GBP180-GBP1,800/month plus a
+  comparative fee claim, live in the copy AND in FAQPage structured data), `/contact:50,106`,
+  and `config/service-tiers.ts:47` "Fixed monthly fee from GBP180/mo", which feeds the
+  HOMEPAGE and is invisible in `page.tsx` itself. Verified rendering live. Removing only the
+  `/services` prices would move the problem rather than fix it.
+- `/contact` carries four TURNAROUND PROMISES ("within 24 hours"), including in its
+  metadata. Banned by the locked content rules.
+- Three live WCAG failures on the research data pages: crimson eyebrows on `bg-neutral-900`
+  at ~3.05:1, and `text-neutral-400` at 2.52:1 on the research hub and incorporation tables.
+- The 10 derived blog hubs exclude all 7 hand-built categories from their sibling chip rail
+  (`blog/[category]/page.tsx:82`), so the three largest categories are unreachable from
+  those hubs.
+- A second unsourced homepage figure beyond the 26.2%: "average lock-up of 128-139 days"
+  (`page.tsx:45`).
+- The charts defect is WORSE than `role="img"` alone: each chart wrapper already carries
+  `aria-hidden="true"` (`LegalIncorporationCharts.tsx:36,98,177`), so the whole figure is
+  removed from the accessibility tree and the `aria-label` is dead.
+- `tw-animate-css` is absent from `Solicitors/web/package.json` but PRESENT in the hoisted
+  root `node_modules` via 9 other sites, so an added import would resolve by accident today
+  and fail on a clean install. Exactly the `check_dependency_closure.py` failure class;
+  declare it in the same commit that imports it.
+
+**26.2% statistic: VERIFIED, keep with a correction.** The real figure is 11 of 42 firms
+subject to closure in the SRA year to 30 September 2025 (26.2%), against 11 of 59 (18.6%)
+the year before. Sourced to an analysis by Lubbock Fine working from SRA closure data,
+reported 2026-03-25 and corroborated in two further trade titles; it is not an SRA headline
+publication. Two published errors to fix: `sra-compliance:117` dates it "in 2024-25", which
+is the wrong scope, and all four instances omit the denominator. The count of
+accounting-breach closures did NOT rise; it was 11 both years. The share rose because total
+closures fell from 59 to 42. Any page citing it must say so, or it misleads.
+
+**Process note worth keeping.** The first baseline sweep was INVALID and was discarded: port
+3111 was already serving the generalist site, our `next start` failed to bind with
+EADDRINUSE, and the instrument happily measured Holloway Davies. Assert the served `<title>`
+before trusting any sweep.
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
