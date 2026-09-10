@@ -90,7 +90,7 @@ export default function UkSmallBusinessBarometerPage() {
     license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     spatialCoverage: "United Kingdom",
   });
-  // ONE binding: this exact array is what `<FaqSection faqs={faqs}>` renders at
+  // ONE binding: this exact array is what `<FaqSection mountAnswers faqs={faqs}>` renders at
   // the foot of the page. A projection here is how schema and visible copy drift.
   const faqPage = buildFaqPage(faqs);
 
@@ -375,7 +375,7 @@ export default function UkSmallBusinessBarometerPage() {
         />
       </div>
 
-      <FaqSection faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+      <FaqSection mountAnswers faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
     </>
   );
 }

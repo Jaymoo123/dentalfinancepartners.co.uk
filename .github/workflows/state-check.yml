@@ -56,18 +56,30 @@ jobs:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # --json to out/run.json for the email step; the table reprint keeps the
-        # run log human-readable; the exit code still turns the run red on
-        # ALARM/BLIND so GitHub's own notification remains the backstop.
+        # --json to out/run.json for the email step; the findings go to the step
+        # summary so a green run is still readable at a glance. The exit code
+        # turns the run red on ALARM ONLY: a red run is a notification, so it
+        # fires for a verified defect and not for a lane that merely could not
+        # look. BLIND rows are still printed, still summarised, and still reach
+        # the deduped email. Before this, the repo-secrets lane 403'd on every
+        # run (GITHUB_TOKEN cannot read secrets and never will), so every run
+        # went red and mailed the owner about a permission that is not changing.
         run: |
           set +e
           python scripts/state_check.py --json > out/run.json
           code=$?
-          python - <<'PY'
+          python - <<'PY' | tee -a "$GITHUB_STEP_SUMMARY"
           import json
           d = json.load(open("out/run.json"))
-          for f in d.get("findings", []):
-              print(f"{f['status']:8} {f.get('lane','-'):11} {f['name']:44} {f.get('detail','')}")
+          rows = d.get("findings", [])
+          alarms = [f for f in rows if f["status"] == "ALARM"]
+          blind = [f for f in rows if f["status"] == "BLIND"]
+          print(f"### State check: {len(alarms)} alarm(s), {len(blind)} blind lane(s), {len(rows)} finding(s)")
+          print("")
+          print("| status | lane | name | detail |")
+          print("| --- | --- | --- | --- |")
+          for f in rows:
+              print(f"| {f['status']} | {f.get('lane','-')} | {f['name']} | {f.get('detail','')} |")
           PY
           exit $code
 

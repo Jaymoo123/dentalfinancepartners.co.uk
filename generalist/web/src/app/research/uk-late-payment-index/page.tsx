@@ -81,7 +81,7 @@ export default function UkLatePaymentIndexPage() {
     license: "Statutory public disclosure (Reporting on Payment Practices and Performance Regulations 2017)",
     spatialCoverage: "United Kingdom",
   });
-  // ONE binding: this exact array is what `<FaqSection faqs={faqs}>` renders at
+  // ONE binding: this exact array is what `<FaqSection mountAnswers faqs={faqs}>` renders at
   // the foot of the page. A projection here is how schema and visible copy drift.
   const faqPage = buildFaqPage(faqs);
 
@@ -290,7 +290,7 @@ export default function UkLatePaymentIndexPage() {
         />
       </div>
 
-      <FaqSection faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+      <FaqSection mountAnswers faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
     </>
   );
 }

@@ -164,7 +164,7 @@ export default function ServicesPage() {
     },
   });
   // BreadcrumbList is emitted by the kit <Breadcrumb> in the hero.
-  // FAQPage is built from the same FAQS binding handed to <FaqSection>, so the
+  // FAQPage is built from the same FAQS binding handed to <FaqSection mountAnswers>, so the
   // rendered questions and the structured data cannot drift.
   const faqSchema = buildFaqPage(FAQS);
 
@@ -344,7 +344,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <FaqSection
+      <FaqSection mountAnswers
         faqs={FAQS}
         eyebrow="Before you engage"
         title="Questions we get asked first"

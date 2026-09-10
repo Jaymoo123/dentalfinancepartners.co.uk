@@ -785,7 +785,16 @@ def selftest() -> int:
     d = {x["status"] for x in compare(new, old)}
     assert d == {"NEW", "GONE"}, f"comparison missed appearance/disappearance: {d}"
 
-    print("selftest OK: read-only rule holds, alarm fires, comparison detects new and gone")
+    # The exit code is a notification, so it must fire for ALARM and stay quiet
+    # for BLIND. A blind lane is worth reporting, not worth going red over, and
+    # the repo-secrets lane is permanently blind (GITHUB_TOKEN cannot read
+    # secrets). Guard the distinction so nobody reinstates the daily red run.
+    exit_code = lambda rows: 1 if [x for x in rows if x["status"] == "ALARM"] else 0
+    assert exit_code([{"status": "BLIND"}]) == 0, "a blind lane must not turn the run red"
+    assert exit_code([{"status": "ALARM"}]) == 1, "an alarm must turn the run red"
+    assert exit_code([{"status": "BLIND"}, {"status": "ALARM"}]) == 1, "alarm alongside blind must still go red"
+
+    print("selftest OK: read-only rule holds, alarm fires, blind stays green, comparison detects new and gone")
     return 0
 
 
@@ -821,11 +830,21 @@ def main() -> int:
             encoding="utf-8",
         )
 
-    bad = [f for f in findings if f["status"] in ("ALARM", "BLIND")]
+    # Exit code is a NOTIFICATION, so it fires only for a verified defect.
+    # ALARM means something is wrong. BLIND means a lane could not look, which
+    # is worth reporting but is not itself a defect, and some lanes are
+    # structurally blind for good reasons (the repo-secrets lane needs an admin
+    # token GITHUB_TOKEN will never have, so it 403s on every run). Counting
+    # BLIND as failure turned every push and every daily run red and mailed the
+    # owner about a permission that is not going to change. BLIND still appears
+    # in the table, the JSON, the step summary and the deduped email.
+    alarms = [f for f in findings if f["status"] == "ALARM"]
+    blind = [f for f in findings if f["status"] == "BLIND"]
+    bad = alarms + blind
 
     if args.json:
         print(json.dumps({"facts": facts, "findings": findings}, indent=2))
-        return 1 if bad else 0   # nothing else on stdout: it must stay parseable
+        return 1 if alarms else 0   # nothing else on stdout: it must stay parseable
 
     order = {"ALARM": 0, "BLIND": 1, "UNKNOWN": 2, "GONE": 3, "CHANGED": 4, "NEW": 5, "INFO": 6}
     print(f"\nSTATE CHECK  {dt.date.today()}   {len(facts)} facts observed\n")
@@ -833,9 +852,10 @@ def main() -> int:
         print("  all quiet")
     for f in sorted(findings, key=lambda x: (order.get(x["status"], 9), x["name"])):
         print(f"  {f['status']:<8} {f['lane']:<11} {f['name']:<44} {f['detail']}")
-    print(f"\n{len(bad)} alarm(s), {len(findings) - len(bad)} note(s). "
+    print(f"\n{len(alarms)} alarm(s), {len(blind)} blind lane(s), "
+          f"{len(findings) - len(bad)} note(s). "
           f"This tool reports only; it changes nothing.")
-    return 1 if bad else 0
+    return 1 if alarms else 0
 
 
 if __name__ == "__main__":

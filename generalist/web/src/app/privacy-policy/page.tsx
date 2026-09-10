@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 10 September 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
@@ -72,8 +72,9 @@ export default function PrivacyPolicyPage() {
             address (and, where relevant, the resource you requested).
           </li>
           <li>
-            <strong>Consent records:</strong> when you give consent, we keep a record of the exact wording you agreed to
-            and the date and time you agreed, so we can show that consent was given.
+            <strong>Acknowledgement and consent records:</strong> we keep a record of the exact wording shown to you and
+            the date and time, so we can show what you were told when you submitted an enquiry, and that consent was given
+            when you signed up to our email updates.
           </li>
           <li>
             <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages viewed,
@@ -112,13 +113,21 @@ export default function PrivacyPolicyPage() {
           in section 7).
         </p>
         <p>
-          For our <strong>email sign-ups</strong>, we rely on your <strong>consent</strong>. You can
-          withdraw your consent at any time (see your rights in section 7); withdrawing consent does not
-          affect any processing that took place before you withdrew it.
+          For our <strong>email updates</strong> and other email sign-ups, we rely on your <strong>consent</strong>. You
+          can withdraw your consent at any time (see your rights in section 7); withdrawing consent does not affect any
+          processing that took place before you withdrew it.
         </p>
         <p>
           For website analytics, site improvement and security, we rely on our <strong>legitimate interests</strong>,
           specifically measuring and improving the Site and keeping it secure and protected against misuse.
+        </p>
+        <p>
+          <strong>On-page personalisation:</strong> to make the Site more useful, we use your activity on the Site (such
+          as the pages you view, how far you scroll, and the time you spend) to infer the accounting or tax topic you are
+          interested in and to show you relevant prompts, offers, or a tailored on-page message. This uses analytics
+          signals only (no special category data), relies on our <strong>legitimate interests</strong> in making the
+          Site relevant and useful, and you can turn it off at any time using the{" "}
+          <strong>&ldquo;Do not track me&rdquo;</strong> link in the footer.
         </p>
 
         <h2 className="text-xl font-semibold text-[var(--ink)]">5. Who we share your information with</h2>
@@ -140,8 +149,8 @@ export default function PrivacyPolicyPage() {
           <strong>More than one firm may receive your enquiry.</strong> We work with a network of specialist
           firms rather than a single firm, and we do not name the individual firms on this website. Firms
           are first shown a short summary of your enquiry with your name and contact details removed, and
-          only a firm that decides it can help receives your details in full. Up to <strong>three</strong>
-          firms in the profession your enquiry concerns may take it up that way. Separately, up to{" "}
+          only a firm that decides it can help receives your details in full. Up to <strong>three</strong>{" "}
+          accountancy and tax firms may take up your enquiry that way. Separately, up to{" "}
           <strong>three</strong> firms in related professions, such as mortgage and finance brokers,
           independent financial advisers, solicitors and specialist consultants, may also take it up,
           because they answer a different part of the same question and do not compete for the same work.
@@ -149,16 +158,16 @@ export default function PrivacyPolicyPage() {
           each tell you who they are and give you their own privacy information at that point.
         </p>
         <p>
-          <strong>If no firm takes up your enquiry.</strong> If no firm in the profession your enquiry
-          concerns takes it up within 48 hours, we may offer it instead to firms in the related professions
-          above, so that you still get an answer rather than none. If we cannot confirm your contact details
+          <strong>If no firm takes up your enquiry.</strong> If no accountancy or tax firm takes it up within
+          48 hours, we may offer it instead to firms in the related professions above, so that you still get an
+          answer rather than none. If we cannot confirm your contact details
           and you do not reply to our follow-up messages, your enquiry may be passed after seven days to a
           single firm as part of a batch, for the same purpose. We will not pass your enquiry on at all if
           you have objected or asked us to stop, and you can ask us to stop at any time (see section 7).
         </p>
         <p>
-          <strong>How we are paid.</strong> We may be paid a fee by a firm your enquiry is passed to. This
-          does not change what you pay that firm, and does not affect the advice they give you.
+          <strong>How we are paid.</strong> {company.legalName} may be paid a fee by a firm your enquiry is passed
+          to. This does not change what you pay that firm, and does not affect the advice they give you.
         </p>
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
@@ -183,8 +192,7 @@ export default function PrivacyPolicyPage() {
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
           after which it is deleted. If you subscribe to our email updates, we keep your email address until you
-          unsubscribe. Consent records are kept for up to six years, under access controls, so that we can
-          demonstrate that consent was given.
+          unsubscribe. Our records of what you were shown and any consent you gave are kept for up to six years, under access controls, so that we can demonstrate the lawful basis for using it.
         </p>
 
         <h2 className="text-xl font-semibold text-[var(--ink)]">7. Your rights</h2>
@@ -195,8 +203,11 @@ export default function PrivacyPolicyPage() {
           <li><strong>Erase</strong> your data in certain circumstances.</li>
           <li><strong>Restrict</strong> how we use your data in certain situations.</li>
           <li><strong>Data portability:</strong> receive a copy of your data in a machine-readable format.</li>
-          <li><strong>Object</strong> to certain processing.</li>
-          <li><strong>Withdraw consent</strong> at any time, where we rely on your consent.</li>
+          <li>
+            <strong>Object</strong> to our processing that is based on legitimate interests, including our sharing of
+            your enquiry with firms from our specialist partner network, under Article 21.
+          </li>
+          <li><strong>Withdraw consent</strong> at any time, where we rely on your consent (for example, our email updates).</li>
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}
