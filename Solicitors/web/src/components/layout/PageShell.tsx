@@ -58,6 +58,10 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
           // value, so letting it flip would split this site's own funnel history
           // at the port boundary and read as a drop. Property keeps "form".
           ctaContactGoal: "contact",
+          // Pre-port drawer placement. autoCapture sends placement in the same
+          // cta_click payload as goal, so a flip splits the same series; the
+          // drawer renders only when open, so no SSR crawl catches it.
+          ctaMobilePlacement: "header_mobile",
           ...wordmark,
         }}
         footer={{

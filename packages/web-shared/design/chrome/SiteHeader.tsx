@@ -70,6 +70,18 @@ export type SiteHeaderProps = {
    * byte-for-byte.
    */
   ctaContactGoal?: string;
+  /**
+   * Per-site `data-cta-placement` for the CTA inside the mobile drawer.
+   * Omit for Property's canonical "mobile_menu".
+   *
+   * Same reasoning as `ctaContactGoal`, and the same live surface:
+   * `analytics/autoCapture.ts` sends placement in the SAME cta_click payload as
+   * goal, so a flipped placement splits `vw_cta_performance` exactly as a
+   * flipped goal does. It is easy to miss because the drawer renders only when
+   * open, so no SSR crawl ever sees it. Both real consumers of this component
+   * emitted "header_mobile" before their port.
+   */
+  ctaMobilePlacement?: string;
   /** Replaces `@/components/brand/BrandWordmarkHomeLink`'s icon (props over import, T4/appendix B). */
   wordmarkIcon: WordmarkIcon;
   /** Replaces `BrandWordmarkHomeLink`'s `WORDMARK_TOP` constant. */
@@ -298,6 +310,7 @@ export function SiteHeader({
   ctaVariant,
   ctaIds,
   ctaContactGoal = "form",
+  ctaMobilePlacement = "mobile_menu",
   wordmarkIcon,
   wordmarkTop,
   wordmarkBottom,
@@ -549,7 +562,7 @@ export function SiteHeader({
               <Link
                 href={ctaPrimary.href}
                 data-cta={cta.mobilePrimary}
-                data-cta-placement="mobile_menu"
+                data-cta-placement={ctaMobilePlacement}
                 data-cta-goal={ctaPrimary.href.startsWith("/contact") ? ctaContactGoal : "pricing"}
                 data-cta-variant={ctaVariant}
                 className={`${btnPrimary} w-full`}

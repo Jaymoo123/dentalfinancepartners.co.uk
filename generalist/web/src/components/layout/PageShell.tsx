@@ -42,6 +42,16 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
           mobilePrimary: "header_mobile_primary",
           secondary: "header_nav_secondary",
         },
+        // Pre-port values, restored. This site's own header emitted
+        // data-cta-goal="contact" and data-cta-placement="header_mobile"
+        // before the port; the kit defaults to Property's "form" and
+        // "mobile_menu". Both are live vw_cta_performance segmentation values
+        // carried in the same cta_click payload, so letting either flip splits
+        // this site's funnel history at the port boundary and reads later as a
+        // drop that never happened. Nothing is deployed yet, so this costs
+        // nothing to correct now.
+        ctaContactGoal: "contact",
+        ctaMobilePlacement: "header_mobile",
         wordmarkIcon: Briefcase,
         wordmarkTop: WORDMARK_TOP,
         wordmarkBottom: WORDMARK_BOTTOM,
@@ -60,6 +70,10 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
         backdrop: <GeneralistBackdrop tone="navy" />,
         consentToggle: <ConsentToggle className="inline-block py-1 text-xs text-slate-400 underline hover:text-white hover:no-underline" />,
         resourcesHref: "/fundamentals",
+        // The kit footer credits the studio that designed PROPERTY, as a
+        // followed outbound link on every page. This site never carried it
+        // before its port and the studio did not design it.
+        showBuilderCredit: false,
         // No /book route here, and a second /contact entry would collide with
         // the Contact link's key; /services lives here so the route keeps its
         // footer presence now that footer_links is legal-only.
