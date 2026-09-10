@@ -340,6 +340,16 @@ Before starting a site, capture and put in the prompts:
 8. The retirement list and the delete list.
 9. Which kit components are unusable for this site (T12).
 10. `house_positions.md` section numbers for the figures this niche uses.
+11. **The two kit-chrome props that must be passed on every port** (added `cb041c9d`,
+    both default to Property's exact current behaviour, so a port that forgets them
+    inherits Property's, silently):
+    - `SiteHeader.ctaContactGoal` — pass the site's own pre-port `data-cta-goal`.
+      Default is `"form"`. Getting this wrong splits the site's live funnel history at
+      the cutover, so the comparison you read afterwards is against a broken baseline.
+    - `SiteFooter.showBuilderCredit` — pass `false`. Default is `true`, which puts
+      Property's designer credit, a followed outbound link, on every page of the ported
+      site.
+    Do not add rival props for either; these are the supported hooks.
 
 ---
 

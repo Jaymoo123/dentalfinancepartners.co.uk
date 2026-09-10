@@ -1,0 +1,3 @@
+{"slug": "vat-margin-scheme", "head_query": "vat margin scheme", "covers": ["vat margin scheme"], "volume": 1540, "mechanic": "margin-scheme", "pillar": true, "pillar_of": "VAT margin scheme", "status": "pending"}
+{"slug": "vat-place-of-supply", "head_query": "vat place of supply", "covers": ["vat place of supply", "place of supply services vat"], "volume": 570, "mechanic": "place-of-supply", "pillar": true, "pillar_of": "Place of supply and digital services", "status": "pending"}
+{"slug": "vat-place-of-supply-of-goods", "head_query": "vat place of supply of goods", "covers": ["vat place of supply of goods"], "volume": 120, "mechanic": "place-of-supply", "pillar": false, "pillar_of": "Place of supply and digital services", "status": "pending"}

@@ -1,0 +1,2 @@
+{"slug": "vat-charity-exemption", "head_query": "vat charity exemption", "covers": ["vat charity exemption"], "volume": 460, "mechanic": "health-exemption", "pillar": false, "pillar_of": "VAT exemption for medical care", "status": "pending"}
+{"slug": "vat-exemption-charity", "head_query": "vat exemption charity", "covers": ["vat exemption charity"], "volume": 430, "mechanic": "welfare-care-exemption", "pillar": true, "pillar_of": "Welfare and charity VAT reliefs", "status": "pending"}

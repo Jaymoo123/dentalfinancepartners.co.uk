@@ -1,0 +1,2 @@
+{"slug": "r-d-tax-credits", "head_query": "r&d tax credits", "covers": ["r&d tax credits"], "volume": 4520, "mechanic": "rd-credits", "pillar": true, "pillar_of": "R and D tax credits", "status": "pending"}
+{"slug": "r-d-tax-credits-software", "head_query": "r&d tax credits software", "covers": ["r&d tax credits software"], "volume": 70, "mechanic": "rd-credits", "pillar": false, "pillar_of": "R and D tax credits", "status": "pending"}
