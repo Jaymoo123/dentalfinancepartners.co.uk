@@ -59,6 +59,17 @@ export type SiteHeaderProps = {
   ctaVariant?: string;
   /** Per-site `data-cta` ids; omit for Property's canonical ids. See `HeaderCtaIds`. */
   ctaIds?: HeaderCtaIds;
+  /**
+   * Per-site `data-cta-goal` value for a header CTA pointing at /contact.
+   * Omit for Property's canonical "form".
+   *
+   * Exists because `data-cta-goal` is a LIVE `vw_cta_performance` segmentation
+   * value, not decoration: a site whose pre-port header emitted a different goal
+   * for the same button splits its own funnel history at the port boundary if the
+   * kit's literal wins. Solicitors emitted "contact". Default preserves Property
+   * byte-for-byte.
+   */
+  ctaContactGoal?: string;
   /** Replaces `@/components/brand/BrandWordmarkHomeLink`'s icon (props over import, T4/appendix B). */
   wordmarkIcon: WordmarkIcon;
   /** Replaces `BrandWordmarkHomeLink`'s `WORDMARK_TOP` constant. */
@@ -286,6 +297,7 @@ export function SiteHeader({
   ctaSecondary,
   ctaVariant,
   ctaIds,
+  ctaContactGoal = "form",
   wordmarkIcon,
   wordmarkTop,
   wordmarkBottom,
@@ -373,7 +385,7 @@ export function SiteHeader({
               href={ctaSecondary.href}
               data-cta={cta.secondary}
               data-cta-placement="header"
-              data-cta-goal={ctaSecondary.href.startsWith("/contact") ? "form" : "pricing"}
+              data-cta-goal={ctaSecondary.href.startsWith("/contact") ? ctaContactGoal : "pricing"}
               data-cta-variant={ctaVariant}
               className={`hidden whitespace-nowrap px-3 py-2 text-sm font-bold transition-colors border-b-2 xl:inline-flex ${focusRing} ${
                 hrefActive(pathname, ctaSecondary.href)
@@ -401,7 +413,7 @@ export function SiteHeader({
             href={ctaPrimary.href}
             data-cta={cta.primary}
             data-cta-placement="header"
-            data-cta-goal={ctaPrimary.href.startsWith("/contact") ? "form" : "pricing"}
+            data-cta-goal={ctaPrimary.href.startsWith("/contact") ? ctaContactGoal : "pricing"}
             data-cta-variant={ctaVariant}
             className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
           >
@@ -538,7 +550,7 @@ export function SiteHeader({
                 href={ctaPrimary.href}
                 data-cta={cta.mobilePrimary}
                 data-cta-placement="mobile_menu"
-                data-cta-goal={ctaPrimary.href.startsWith("/contact") ? "form" : "pricing"}
+                data-cta-goal={ctaPrimary.href.startsWith("/contact") ? ctaContactGoal : "pricing"}
                 data-cta-variant={ctaVariant}
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}

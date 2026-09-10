@@ -52,6 +52,17 @@ export type SiteFooterProps = {
    * a site's routes differ (generalist has no /book).
    */
   companyItems?: Array<{ label: string; href: string }>;
+  /**
+   * Show the "Built by Double Wired Creative" credit. Defaults TRUE so Property,
+   * the site they actually designed, is byte-identical.
+   *
+   * Exists because this credit is a followed outbound link on every page of the
+   * consuming site. On Property that is earned and intended. On a sibling that
+   * the studio did not design it is neither, and it also ships an indigo/orange
+   * gradient that belongs to no other brand's palette. A site that did not
+   * commission the design passes `false`.
+   */
+  showBuilderCredit?: boolean;
 };
 
 type FooterColumn = { title: string; items: Array<{ label: string; href: string }> };
@@ -118,6 +129,7 @@ export function SiteFooter({
   newsletterSlot = null,
   resourcesHref = DEFAULT_RESOURCES_HREF,
   companyItems = DEFAULT_COMPANY_ITEMS,
+  showBuilderCredit = true,
 }: SiteFooterProps) {
   const year = new Date().getFullYear();
   const columns = buildFooterColumns(nav ?? fallbackNav ?? [], resourcesHref, companyItems);
@@ -202,6 +214,7 @@ export function SiteFooter({
                 the text clears contrast at this size. Hover keeps their glow.
                 ml-auto pushes it clear of the legal links so it reads as a
                 credit rather than a fourth policy link. */}
+            {showBuilderCredit ? (
             <li className="w-full pt-1 sm:ml-auto sm:w-auto sm:pt-0">
               <a
                 href="https://www.doublewiredcreative.com/"
@@ -213,6 +226,7 @@ export function SiteFooter({
                 Built by Double Wired Creative
               </a>
             </li>
+            ) : null}
           </ul>
           <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
             {legalDisclosure}

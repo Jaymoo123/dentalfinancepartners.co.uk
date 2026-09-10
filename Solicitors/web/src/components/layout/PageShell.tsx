@@ -52,6 +52,12 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
             mobilePrimary: "mobile-menu-book-call",
             secondary: "header_nav_secondary",
           },
+          // The pre-port header emitted data-cta-goal="contact" for this button
+          // and the kit's literal is "form". Both describe the same /contact
+          // destination, but the goal is a live vw_cta_performance segmentation
+          // value, so letting it flip would split this site's own funnel history
+          // at the port boundary and read as a drop. Property keeps "form".
+          ctaContactGoal: "contact",
           ...wordmark,
         }}
         footer={{
@@ -78,6 +84,11 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
             { label: "Locations", href: "/locations" },
             { label: "Free firm health check", href: "/free-firm-health-check" },
           ],
+          // The kit footer credits the studio that designed PROPERTY, as a
+          // followed outbound link on every page. They did not design this site,
+          // and the credit's indigo/orange gradient belongs to no palette here.
+          // Property keeps it by default; this site opts out.
+          showBuilderCredit: false,
         }}
       >
         {children}

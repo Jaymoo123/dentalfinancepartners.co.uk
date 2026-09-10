@@ -15,7 +15,6 @@
   /* Solicitors brand - modern crimson (authority, contemporary, legal professionalism) */
   --crimson: #c41e3a;
   --crimson-soft: #d63851;
-  --crimson-muted: #e05268;
   --crimson-light: #eb6c7f;
   --crimson-dark: #a01829;
   
@@ -35,9 +34,6 @@
   --border: #e2e8f0;
   
   /* Footer - softer slate for better readability */
-  --footer-bg: #1e293b;
-  --footer-text: #e2e8f0;
-  --footer-muted: #cbd5e1;
   
   /* Semantic aliases */
   --primary: var(--crimson);
@@ -50,9 +46,6 @@
   --ring-offset: var(--background);
   
   /* Legacy aliases for components that reference old colors */
-  --navy: var(--crimson-dark);
-  --copper: var(--slate-blue);
-  --copper-soft: var(--slate-blue-soft);
 
   /* Canonical brand tokens for @accounting-network/web-shared components. */
   --brand-primary: var(--crimson);
@@ -486,6 +479,7 @@ details summary::-webkit-details-marker {
    under the header. */
 #main,
 [id][class*="scroll-mt"],
+li[id^="ref-"],
 .article-body :where(h2, h3, h4)[id] {
   scroll-margin-top: 6rem;
 }
