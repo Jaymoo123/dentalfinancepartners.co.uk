@@ -18,7 +18,7 @@ export function CalcResultCta({ campaign }: { campaign: string; label?: string }
         formId="calc_result"
         messagePrefix={`[Calculator: ${campaign}]`}
         heading="Confirm your figure with a specialist solicitors' accountant"
-        blurb="Client account rules are unforgiving. Have a specialist check your position, confirm the number is right for your specific situation, and point out anything worth acting on. No obligation, and we reply within one working day."
+        blurb="Client account rules are unforgiving. Have a specialist check your position, confirm the number is right for your specific situation, and point out anything worth acting on. No obligation."
         submitLabel="Get my figure checked"
         className="rounded-2xl border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-5 sm:p-6"
       />

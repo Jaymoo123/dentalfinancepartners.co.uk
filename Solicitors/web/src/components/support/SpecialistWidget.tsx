@@ -369,7 +369,7 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Accounts for Lawyers</p>
-              <p className="truncate text-[11px] text-slate-300">Specialist replies within one working day</p>
+              <p className="truncate text-[11px] text-slate-300">Specialist accountants for law firms</p>
             </div>
             <button type="button" aria-label="Close" onClick={closePanel} className="flex min-h-11 min-w-11 items-center justify-center shrink-0 text-2xl leading-none text-slate-300 hover:text-white">
               &times;

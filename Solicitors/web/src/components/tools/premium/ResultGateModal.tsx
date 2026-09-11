@@ -115,7 +115,7 @@ export function ResultGateModal({
           }
           blurb="A calculator gives the shape of the answer. Client account rules and partner tax are unforgiving in the detail. Tell us your firm's situation and a specialist solicitors' accountant will confirm your exact figure and the sensible next step, with no obligation."
           submitLabel="Get my figure confirmed"
-          successText="Thanks, we will be in touch within one working day. Your result is below."
+          successText="Thanks, we will be in touch. Your result is below."
           className="mt-2"
           messagePlaceholder="The more detail the better. Tell us about your firm's situation, rough figures, and what you are trying to work out. A couple of sentences is ideal."
           messageMinLength={40}

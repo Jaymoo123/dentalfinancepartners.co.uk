@@ -546,7 +546,7 @@ export default function HomePage() {
               </div>
 
               <p className="mt-12 text-center text-sm text-[var(--ink-soft)]">
-                Or send us a note and we will come back within one working day.
+                Or send us a note and we will come back to you.
               </p>
               <div className="mt-6">
                 <LeadForm />

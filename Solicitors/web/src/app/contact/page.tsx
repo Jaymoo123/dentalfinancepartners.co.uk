@@ -12,11 +12,11 @@ const packagesMode = isPackagesMode(niche);
 
 export const metadata: Metadata = {
   title: "Contact | Speak to a Solicitor Accountant",
-  description: `Get in touch with ${siteConfig.name} to discuss SRA compliance, partnership tax or LLP conversion for your firm. Fixed-fee quotes, 24-hour response.`,
+  description: `Get in touch with ${siteConfig.name} to discuss SRA compliance, partnership tax or LLP conversion for your firm. Fixed-fee quotes.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
-    description: "Speak to a specialist solicitor accountant about SRA compliance, partnership tax and LLP advice. 24-hour response time.",
+    description: "Speak to a specialist solicitor accountant about SRA compliance, partnership tax and LLP advice.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
@@ -82,9 +82,9 @@ export default function ContactPage() {
                 </dd>
               </div>
               <div>
-                <dt className="font-medium text-[var(--ink)]">Response time</dt>
+                <dt className="font-medium text-[var(--ink)]">What happens next</dt>
                 <dd className="mt-2 text-[var(--ink-soft)]">
-                  Within 24 hours, typically same working day
+                  A specialist reads your enquiry and comes back to you
                 </dd>
               </div>
             </dl>
@@ -95,7 +95,7 @@ export default function ContactPage() {
             <ul className="mt-4 space-y-3 text-sm text-[var(--ink-soft)]">
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">1</span>
-                <span>We&apos;ll review your enquiry and respond within 24 hours</span>
+                <span>We&apos;ll review your enquiry and come back to you</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">2</span>

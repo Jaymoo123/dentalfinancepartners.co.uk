@@ -15,8 +15,8 @@ export type Faq = { q: string; a: string };
 
 export const GENERIC: Faq[] = [
   {
-    q: "How quickly will a specialist reply?",
-    a: "Within one working day, and usually sooner. Leave your email and a one-line question and a specialist solicitors' accountant will come back to you personally.",
+    q: "Who replies to my question?",
+    a: "A specialist solicitors' accountant, personally. Leave your email and a one-line question and you will get a considered answer rather than a sales call.",
   },
   {
     q: "Is the first conversation free?",
