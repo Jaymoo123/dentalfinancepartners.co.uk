@@ -1,0 +1,5646 @@
+{
+  "ts": "2026-09-11T10:26:19.102Z",
+  "site": "construction-cis",
+  "base": "http://localhost:3177",
+  "sha": "18b4f25f39cd0c4aa084e582d69a87c8a10710ac",
+  "served_title": "CIS Accountants &amp; Construction Tax Specialists | UK",
+  "purpose": "Pre-port data-cta TRIPLE snapshot. sweep_baseline.json records counts; a count cannot detect trap 22, where the same button keeps its count but flips its goal or placement on cutover and splits the live funnel. Diff this file after every phase touching chrome or CTAs.",
+  "routes": 246,
+  "scanned": 246,
+  "distinct_triples": {
+    "header_nav_primary|header|contact|data-cta": {
+      "count": 246,
+      "example_routes": [
+        "/",
+        "/cis-refund",
+        "/gross-payment-status",
+        "/cis-payment-deduction-statement-template",
+        "/calculators"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    },
+    "specialist_widget|null|null|data-cta": {
+      "count": 246,
+      "example_routes": [
+        "/",
+        "/cis-refund",
+        "/gross-payment-status",
+        "/cis-payment-deduction-statement-template",
+        "/calculators"
+      ],
+      "hrefs": []
+    },
+    "next_step|null|null|data-cta": {
+      "count": 109,
+      "example_routes": [
+        "/for/plumbers",
+        "/for/electricians",
+        "/for/joiners",
+        "/for/groundworkers",
+        "/for/roofers"
+      ],
+      "hrefs": [
+        "/calculators/cis-refund-estimator",
+        "/calculators/cis-gps-eligibility-checker",
+        "/calculators/cis-deduction-calculator",
+        "/calculators/cis-vs-paye-comparison"
+      ]
+    },
+    "next_step|null|form|data-cta": {
+      "count": 18,
+      "example_routes": [
+        "/blog/software-and-tools/cis-bookkeeping-template",
+        "/blog/vat-and-mtd/do-i-need-accountant-for-mtd",
+        "/blog/vat-and-mtd/how-to-sign-up-for-making-tax-digital-cis",
+        "/blog/software-and-tools/mtd-compatible-software-cis",
+        "/blog/vat-and-mtd/mtd-deadline-extended-what-changed"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    },
+    "hero_primary|hero|lead|data-cta": {
+      "count": 1,
+      "example_routes": [
+        "/"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    }
+  },
+  "per_route": {
+    "/": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "hero_primary",
+          "attrName": "data-cta",
+          "placement": "hero",
+          "goal": "lead",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/cis-refund": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/gross-payment-status": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/cis-payment-deduction-statement-template": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/cis-invoice-template": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/services": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/about": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/contact": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/terms": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/cookie-policy": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/privacy-policy": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/research": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/plumbers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/research/uk-construction-survival-index": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/research/uk-construction-insolvency-index": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/electricians": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/joiners": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/research/uk-construction-payment-practices-league": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/research/uk-construction-index": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/groundworkers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/roofers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/builders": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/gas-engineers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/civil-engineers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/painters-decorators": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/scaffolders": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/bricklayers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/plasterers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/labourers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/demolition-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/dryliners": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/carpenters": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/tilers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/glaziers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/steel-fixers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/ceiling-fixers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/flooring-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/heating-engineers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/kitchen-fitters": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/bathroom-fitters": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/window-installers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/insulation-installers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/steel-erectors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/shopfitters": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/fencing-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/landscapers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/plant-operators": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/drainage-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/cladding-installers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/paving-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/property-developers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/welder-fabricators": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/subcontracting-limited-companies": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/main-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/housebuilders": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/civil-engineering-firms": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/labour-agencies": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/mechanical-electrical-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/maintenance-and-fm-companies": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/plant-hire-companies": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/for/multi-trade-building-firms": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/resources/cis-refund": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/resources/cis-vs-paye": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/resources/gross-payment-status": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/expenses": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/limited-company": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-refunds": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-deduction-calculator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-gps-eligibility-checker": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-refund-estimator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-self-assessment-calculator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-take-home-calculator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-invoice-splitter": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-vs-paye-comparison": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-back-years-calculator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-penalty-calculator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-reverse-charge-checker": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/trade-take-home-calculator": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/cis": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/calculators/cis-sole-trader-vs-limited": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/contractor": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/subcontractor": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/deemed-contractor": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/construction-operations": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/cis-registration": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/utr": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/hmrc-cis-online-service": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/cis-deduction": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/deduction-rates": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/labour-only-deduction-base": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/materials-deduction": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/verification-number": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/payment-and-deduction-statement": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/gross-payment-status": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/sole-trader": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/limited-company-subcontractor": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/cis300": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/nil-return": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/pre-notification-of-inactivity": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/regulation-24za": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/late-filing-penalties-cis": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/compliance-test": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/business-test": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/turnover-test": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/knew-or-should-have-known": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/due-diligence-april-2026": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/section-62a-penalty": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/verification": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/five-year-reapplication-ban": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/section-62b-penalty": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/employment-status": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/retention-payments": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/cis-refund": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/eps": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/over-deduction": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/overpayment-relief": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/corporation-tax-offset-cis": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/sa302-tax-calculation": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/in-year-repayment-eps-route": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/vat-domestic-reverse-charge": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/end-user-drc": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/flat-rate-scheme-and-cis": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/making-tax-digital-for-income-tax": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/quarterly-updates-mtd": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/bridging-software": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/allowable-expenses-cis": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/class-4-national-insurance": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/citb-levy": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/glossary/amap-mileage-rates": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/london": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/manchester": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/birmingham": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/leeds": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/bristol": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/edinburgh": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/glasgow": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/sheffield": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/belfast": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/newcastle": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/liverpool": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/bradford": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/cardiff": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/coventry": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/derby": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/nottingham": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/hull": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/plymouth": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/leicester": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/portsmouth": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/reading": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/southampton": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/stoke-on-trent": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/wolverhampton": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/locations/sunderland": {
+      "count": 2,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/bookkeeper-cost-self-employed-tradesperson": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/cis-bookkeeping-template": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/consumer-unit-replacement-pricing": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cost-to-qualify-electrician-self-employment": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/do-bookkeepers-need-registration": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/do-i-need-accountant-for-mtd": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/eicr-certificates-pricing-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/does-tradesperson-need-bookkeeper": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/how-to-sign-up-for-making-tax-digital-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/mtd-compatible-software-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/landlord-electrical-safety-checks-pricing": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/mtd-deadline-extended-what-changed": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/pricing-house-rewire-electrician": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/self-employed-electrician-rates": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/vat-cis-record-keeping-requirements": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/how-long-large-construction-firms-take-to-pay-subcontractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/construction-business-survival-vs-uk-average": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/uk-construction-net-formation-collapse": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/expenses/vans-tools-capital-allowances-trades-2026-27": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-deduction-calculator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/which-construction-sub-sectors-have-most-insolvencies": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/state-of-uk-construction-business-2026": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/uk-construction-company-formations-march-spike": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/uk-construction-insolvency-risk-for-subcontractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/which-construction-trades-going-limited": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-end-of-year-return": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/expenses/allowable-expenses-cis-subcontractor": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-deduction-calculator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-unallocated-credit-reclaim": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/best-cis-accounting-software": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-and-mortgages": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-april-2026-rule-changes": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-refunds/cis-back-years-refund-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-contractor-registration-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-deadline-calendar-2026-27": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-deduction-rates-explained": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-employment-status-self-employed-test": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-for-contractors-monthly-responsibilities": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/cis-for-housebuilders": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/limited-company/cis-for-limited-companies-eps-reclaim": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-vs-paye-comparison"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/cis-for-labour-agencies": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/cis-for-property-developers": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-for-partnerships": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-gross-payment-status-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-invoice-splitting-labour-materials": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/limited-company/cis-limited-company-directors-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-vs-paye-comparison"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-mistakes-that-cost-subcontractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/cis-limited-company-reclaim": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-monthly-return-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-national-insurance-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-nil-return-explained": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-payment-deduction-statements-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/cis-payroll-software-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-penalties-and-appeals": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/cis-plant-hire-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-record-keeping-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-retention-payments-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-refunds/cis-self-assessment-complete-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-sole-trader-vs-limited-company": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-subcontractor-verification": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/cis-supply-chain-compliance-due-diligence": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-refunds/cis-tax-refund-how-to-claim": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-vs-paye-complete-comparison": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/cis-vs-paye": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-advanced/citb-levy-explained": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/deemed-contractors-explained": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/free-cis-payroll-software": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-compliance/gross-payment-status-cash-flow-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-gps-eligibility-checker"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/freeagent-cis-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-refunds/how-long-does-cis-refund-take": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-refunds/how-much-cis-refund-will-i-get": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/how-to-register-for-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/mtd-income-tax-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/quickbooks-cis-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/sage-cis-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/spreadsheets-vs-accounting-software-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/switching-cis-accountant-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/vat-reverse-charge-construction": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/vat-reverse-charge-for-cis-contractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/vat-and-mtd/vat-reverse-charge-for-cis-subcontractors": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/what-construction-work-is-not-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/what-is-a-cis-accountant": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/cis-basics/what-is-cis": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": "/calculators/cis-refund-estimator"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    },
+    "/blog/software-and-tools/xero-cis-guide": {
+      "count": 3,
+      "ctas": [
+        {
+          "id": "header_nav_primary",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        },
+        {
+          "id": "next_step",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": "form",
+          "href": "/contact"
+        },
+        {
+          "id": "specialist_widget",
+          "attrName": "data-cta",
+          "placement": null,
+          "goal": null,
+          "href": null
+        }
+      ]
+    }
+  }
+}
