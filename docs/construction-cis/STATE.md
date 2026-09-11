@@ -14,12 +14,31 @@ AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phases 5 and 6 are PLANNED but N
 | 4 | `port-construction-cis-phase4` | `72fe3261` |
 
 Note the last row: **phases 3 and 4 landed in ONE commit**, so the two tags point at the same
-object. Verify with `git rev-parse "port-construction-cis-phase3^{}"` and the same for phase4. Read
+object. **`git diff port-construction-cis-phase3..port-construction-cis-phase4` is therefore an
+EMPTY range**: an empty diff there is correct, not a lost commit. Verify with
+`git rev-parse "port-construction-cis-phase3^{}"` and the same for phase4. Read
 `git log -1 --format=%B 72fe3261` before you touch anything; it is the full account of both phases
 and this block is a compression of it.
 
 The port artefacts live in `docs/construction-cis/_port/` and the brand contract in
 `docs/construction-cis/DESIGN_DELTA.md`. The slices are the spec, this file is the state.
+
+**Read these, in this order, before you touch anything.** A fresh agent needs no conversation
+history, but it does need all nine.
+1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` - the METHOD, and the numbered traps T1 onward.
+   "T<n>" always means this file; `PROPERTY_STANDARD_ROLLOUT.md` section 7 has a RIVAL 1-to-15
+   numbering that means something else and has already misled a reviewer.
+2. `docs/_engines/PORT_FIELD_NOTES.md` - what actually bit the sibling ports this week.
+3. This file, whole, including the stale sections below the pickup block that are struck through.
+4. `git log -1 --format=%B 72fe3261` - the full account of phases 3 and 4.
+5. `_port/PHASE5_PLAN.md`, then `_port/PHASE6_PLAN.md` - both written BEFORE that commit landed,
+   so read them against it, not instead of it.
+6. `DESIGN_DELTA.md` - the brand contract, the warning ladder and the contrast tables.
+7. `_port/LIVE_DEFECTS.md` - TD-01 to TD-35 plus TD-14b/14c and TD-K1/K2.
+8. `_port/CLAIMS_REGISTER.md` - every published claim, with the owner-gated ones flagged.
+9. `_port/GROUNDS_BASELINE.md` (start at its READ FIRST block, `:3`) and
+   `docs/construction-cis/house_positions.md` - the latter is ground truth and it currently
+   contradicts itself in the places listed under owner decisions 1 and 2.
 
 **Phases 5 and 6 are PLANNED, NOT BUILT.** Their plans are `_port/PHASE5_PLAN.md` (702 lines) and
 `_port/PHASE6_PLAN.md` (779 lines). Both were written before the phase 3/4 commit landed, so read
@@ -153,6 +172,30 @@ that names s.72A is legitimate, and flagging it would fire on correct published 
   not reproduce either. `PremiumBarChart.tsx` DOES (TD-K2, byte-identical on Medical).
 - **Git Bash mangles bare route arguments into Windows paths.** Pass `MSYS_NO_PATHCONV=1` and quote
   routes as `"//"`. `python` works on this machine; `python3` is a Microsoft Store stub.
+- **`grep -c` counts LINES, not matches, and rendered Next.js HTML is one line.** So `curl ... |
+  grep -c 'data-cta'` returns 1 on a page with forty of them. Use `grep -o ... | wc -l` for
+  occurrences, and prefer the committed instruments at `docs/_engines/instruments/` over anything
+  hand-rolled.
+- **A path-scoped git command run from the wrong directory returns EMPTY, which looks exactly like
+  deleted work.** Check `pwd` before believing any empty `git log`, `git diff` or `git status`
+  output. Every git command here runs from the repo root, path-scoped, never repository-wide:
+  five sibling sites have uncommitted work in this tree.
+- **A dozen sibling dev servers hold ports on this machine.** Never assume the port you asked for.
+  Read the bound port out of the server log, then ASSERT the served page title before trusting any
+  crawl: three baselines in this programme were written from a sibling site's server. Assert on
+  `/` (`CIS Accountants & Construction Tax Specialists | UK`, `src/app/page.tsx:36`), NOT on
+  `/blog`, whose title is `CIS and Construction Tax Blog | Guides and Articles`
+  (`src/app/blog/page.tsx:14`) and will fail a naive check.
+- **Serialise builds against in-flight CRAWLS, not just against other builds.** A `next build`
+  replaces `.next` under a running server, so a sweep or a browser run that is mid-crawl starts
+  measuring a half-written tree. I reddened `lead-submit-route.test.ts` exactly this way.
+- **The premium calculator tier is invisible to every committed instrument.** `PremiumUpgrade` is
+  `next/dynamic` with `ssr:false` inside `hidden sm:block`, reachable only from
+  `BlogPostRenderer.tsx`, never from `/calculators/[slug]`
+  (`_port/DISPOSITION_SLICE2.md:13`, import chain grep-derived). It is live blog-only,
+  desktop-only, client-only, so `curl` and `sweep.mjs` both see nothing and a zero finding on
+  those five files and 1,172 lines (`_port/PHASE4_PLAN.md:15`) proves nothing. Verifying any
+  premium-tier change needs a human, or a real browser, at a desktop width.
 - **Corpus, counted at source:** 45 trade types (a `grep -c 'slug:'` wrongly gives 47 because two
   lines are `slug: string` annotations), 12 calculators with `BESPOKE` empty, 82 blog posts across
   8 categories, 50 glossary terms, 25 locations, 3 published resource guides. The older counts
@@ -184,6 +227,50 @@ package could have moved the number. In practice it was substituted with a no-re
 (the count must not rise), which is what Phase 3 could actually satisfy, and the real move to 2
 happened in Phase 4. **The document should be corrected** so the next reader does not take the
 number at face value.
+
+**Where this manager went wrong, so the next one does not repeat it.** From
+`git log -1 --format=%B 72fe3261` section "WHAT I GOT WRONG", plus what the reviews caught.
+- **I fenced the GPS calculator off from three separate correctness sweeps** because Phase 4
+  owned the file, having written myself that a phase boundary is no reason to leave a wrong tax
+  figure published. That fencing is the sole reason the banned director-penalty claim survived
+  two passes, live in body copy and in FAQPage structured data. Now playbook trap T34.
+- **I shipped a broken instrument into the SHARED engines folder, and it sat there for six
+  commits.** The `--grounds` mode of `docs/_engines/instruments/browser_check.mjs` was committed
+  at `61e9b6b2` (85 insertions) carrying three defects, and repaired only at `bf231f1a`. Its
+  `isDark` helper pulled the digits out of a colour string and divided by 255, so EVERY `oklch()`
+  ground classified as dark regardless of lightness, which is the exact blindness the mode was
+  written to replace; its band selector could not see `<article>`; and its opacity filter matched
+  only one literal transparent value. Any sibling port that ran it in that window got wrong
+  answers. It is shared by every port in the programme. The repaired version self-tests on two
+  `rgb()` and two `oklch()` values and refuses to report if the classifier fails, which is the
+  discipline the contrast half of the same file already had and which I did not copy.
+- **I introduced TWO regressions personally, not one, and neither was visible in the source.**
+  The first is playbook T30: I recoloured `.eyebrow` toward a reading I had measured against
+  white, when both live consumers sit on a near-black panel where the old value passed at 5.40
+  and mine failed at 2.92. The second leaves no trace in the history because it was introduced
+  and fixed inside the same Phase 2 commit (`6575bbb6`): moving `.prose-blog a` into
+  `@layer components` was the correct structural fix for an invisible button, and it also let the
+  shared form's own colours through, taking the privacy links inside every inline enquiry form
+  from 3.02 to 2.69. Both were caught only by diffing the rendered DOM against
+  `_port/browser_baseline.json`. Neither would have been caught by reading the diff.
+- **I cited a cadence tripwire that does not exist** in several briefs:
+  `src/tests/intent-engine.test.ts` is named in the source briefs and there is no such file
+  (`_port/PHASE4_PLAN.md:713`, `_port/PHASE6_PLAN.md:40`). A builder running it gets a green
+  vitest run over zero matched specs and reads it as proof. The real tripwires are
+  `src/tests/assistant-journey-opener.test.ts` (cadence, `:832-`) and
+  `src/tests/lead-payload.test.ts` (consent). Never modify either.
+- **A gate was recorded whose check nobody could run.** The "section-grounds scan" behind the
+  blocking item was a throwaway script that no longer existed, parsed colour as text so `oklch()`
+  defeated it, and reported 102 breaching routes where the real figure is 79, naming two route
+  families that were not in breach. It was only a real gate once `--grounds` was built into the
+  shared `docs/_engines/instruments/browser_check.mjs` at `bf231f1a`. Playbook trap T29.
+- **A fix pass introduced its own regression, caught only by reading the rendered DOM.** The
+  first `.eyebrow` fix recoloured an unlayered rule toward the light ground and turned a passing
+  value into a failing one on both dark consumers; the real defect was the missing `@layer`.
+  Source review passed it. Playbook trap T30.
+- **Agents corrected my briefs more than forty times across these two phases**, including the
+  homepage anatomy (12 blocks, not 16) and token contrast figures quoted where the rendered
+  utilities differ. Read a brief here as a proposal to be re-derived, not as fact.
 
 **Live defects found that are NOT design work: 37, plus 2 in the shared kit.** Full catalogue with
 file and line in `_port/LIVE_DEFECTS.md` (TD-01 to TD-35, with TD-14b and TD-14c, plus TD-K1 and

@@ -865,3 +865,47 @@ section 8 item 11).
 RULE: verify by measuring the sticky element's `getBoundingClientRect()` after scrolling, and
 by counting scroll containers in the column. Reading the classes cannot distinguish the two
 broken arrangements from the correct one.
+
+---
+
+## 17. Traps promoted out of the field notes (Trade phases 3 and 4, 2026-09-11)
+
+**T33. A guard that reads one file while the defect lives in another.**
+`construction-cis/web/src/tests/design/penalty-figures.test.ts` was written in Phase 3 to stop
+two wrong tax figures coming back. It pinned a single data file and stayed green while the same
+figures shipped on 45 pages out of `src/data/trade-types.ts`, which renders every `/for/[slug]`
+route (`generateStaticParams` at `src/app/for/[slug]/page.tsx:15-17`, 45 entries). The test was
+not wrong about its file, it was wrong about its corpus. The sibling of T9: there the guard
+asserted against its own copy of the rule, here it asserted over its own copy of the corpus.
+RULE: a guard against a CONTENT rule enumerates its corpus PROGRAMMATICALLY, never from a path
+list, so a new page or data file is covered the day it is added. It carries a guards-the-guard
+assertion (`penalty-figures.test.ts:132-138`: a corpus-length floor plus known strings that must
+be found) so a broken walk fails loudly instead of passing empty. An empty corpus passes every
+assertion in the file.
+
+**T34. A phase boundary is not a reason to leave a wrong published figure.**
+The manager fenced one calculator file off from three separate correctness sweeps because a
+later phase owned it. That fencing is the sole reason a director-penalty claim the ground truth
+bans in capitals (`docs/construction-cis/house_positions.md` section 3, "no 30% figure appears
+in either section") stayed live through two passes, in body copy AND in the FAQPage structured
+data where Google could quote it. Caught in Phase 4 only because Phase 4 finally owned the file.
+Deriving command: `git log -1 --format=%B 72fe3261`, section "WHAT I GOT WRONG".
+RULE: scope a CORRECTNESS sweep to the RULE and the WHOLE SITE, never to the phase's route list.
+Phase ownership governs design work. It does not govern false statements.
+This AMENDS T26 and the section 2 phase map's ownership guidance: "each later phase deletes its own
+classes" is a rule about design debt, which is visible and harmless for the duration of the
+port. It has never covered a false published statement, and it was read as though it did.
+
+**T35. An acceptance test that is unsatisfiable on arrival gets quietly substituted.**
+Every Phase 3 work package carried the acceptance line `totalDashes == 2`
+(`docs/construction-cis/_port/PHASE3_PLAN.md:239-241`, stated once for all packages). All 36 of
+the site's dashes sat on the 6 calculator pages, and the same plan scopes Phase 3 to `/for`,
+`/locations`, `/glossary` and `/resources` and names the calculators as Phase 4's. The assertion
+was therefore red on arrival by 34 and no Phase 3 package could move it. In practice the
+builders substituted a no-regression assertion, silently, and the real move to 2 happened in
+Phase 4. The target is 2 and not 0 because `sweep.mjs:72` counts en-dashes too and two are
+protected numeric ranges (field notes section 5, Trade).
+RULE: derive every acceptance number from the phase's OWN scope before you write it down, and
+check it against the phase's own out-of-scope list. If the phase cannot satisfy it, the number
+belongs to a different phase. Leaving one in is worse than omitting it: the plan still reads as
+though it was met, and it teaches the next phase that acceptance criteria are negotiable.

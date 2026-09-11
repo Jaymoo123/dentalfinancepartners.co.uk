@@ -562,6 +562,7 @@ list, so a new page or data file is covered the day it is added. And it carries 
 guards-the-guard assertion (`penalty-figures.test.ts:133-138`: corpus length, plus four known
 strings that must be found) so a broken walk fails loudly instead of passing empty. An empty
 corpus passes every assertion in the file.
+PROMOTED: now playbook trap T33. Kept here for the 45-page corpus miss that exposed it.
 
 **2026-09-11, Trade phases 3 and 4. A guard whose verdict depends on prose layout.** The same
 guard windowed each match with a fixed +/-110 character pad. An identical wrong clause therefore
@@ -581,6 +582,7 @@ replaced with a no-regression assertion, silently, and the real move to 2 happen
 RULE: derive every acceptance number from the phase's OWN scope before you write it down. If the
 phase cannot satisfy it, the number belongs to a different phase. A substituted acceptance test is
 worse than a missing one, because the plan still reads as though it was met.
+PROMOTED: now playbook trap T35. Kept here for the red-on-arrival-by-34 arithmetic.
 
 ---
 
@@ -737,6 +739,7 @@ Deriving command: `git log -1 --format=%B 72fe3261`, section "WHAT I GOT WRONG".
 RULE: scope a CORRECTNESS sweep to the RULE and the WHOLE SITE, never to the phase's route list.
 Phase ownership governs design work. It does not govern false statements, and a wrong figure does
 not wait politely inside a file boundary.
+PROMOTED: now playbook trap T34, which amends the playbook's own phase-ownership guidance.
 
 ---
 
