@@ -10,10 +10,10 @@ Last updated: 2026-09-11.
 
 ## PICKUP: START HERE if you are a fresh agent on this port
 
-**Where it stands, 2026-09-11.** Phases 0, 1, 2 and 3 are DONE, committed and tagged
-(`port-solicitors-phase0` through `port-solicitors-phase3`). Phases 4 to 6 are not started.
+**Where it stands, 2026-09-11.** Phases 0 to 4 are DONE, committed and tagged
+(`port-solicitors-phase0` through `port-solicitors-phase4`). Phases 5 and 6 are not started.
 NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design. Your next action
-is Phase 4, the calculators, including the approved skippable ResultGate.
+is Phase 5: the homepage, the services pillar and the locations.
 
 **Read in this order before acting:**
 1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
@@ -74,8 +74,7 @@ and its deriving command.
 trust any crawl.** Three wrong-site measurements happened in one session because another
 agent's server held the port and the instrument crawled a different site entirely.
 
-**Phase order from here:** 4 calculators
-(including the approved ResultGate), 5 homepage and pillars and locations, 6 contact,
+**Phase order from here:** 5 homepage and pillars and locations, then 6 contact,
 post-submit, research, resources, legal, interruptive restyle and the rule-based content
 sweep. Each phase: plan, build in parallel work packages, manager-verify, INDEPENDENT
 adversarial review against the rendered DOM, gap-fix, re-review, tag, commit. A review that
@@ -336,6 +335,115 @@ one. Three sessions share this working tree.
 2. The header shows two reds side by side: the wordmark icon and rule at rose-600 `#ec003f`
    (the kit hardcodes `text-primary-600`) against the brand crimson `#c41e3a` on the button.
    Both cleared contrast; the delta asked for the icon to be the brand. Match them?
+
+## 2026-09-11 - PHASE 4 (calculators, the result gate, tabs). Nothing deployed.
+
+Commits: `eebf3d70` the phase build, `2628c172` review gaps plus the route collision,
+`8cd6b068` the re-review regression. Tag `port-solicitors-phase4`. Production still
+serves `18b4f25f`.
+
+**Delivered.** The owner-approved skippable ResultGate on the generic fleet; the 13 calculator
+routes, the bespoke CGT route and `/tools/equity-partner-buy-in` on the F.5 anatomy;
+`CalculatorTabs` on the index above its 13-card directory; three dead links repaired.
+
+**No shared-package edit was needed all phase.** `Calculator.resultWrapper` and the
+`--calc-warn-*` variables already shipped with generalist's phase 4, so blast radius was one
+site. `CalculatorClient.tsx` is the single client boundary, which is why `variant === "page"`
+gates the whole fleet and leaves every embed alone.
+
+**THE EXPENSIVE ONE: A ROUTE COLLISION ATE A LIVE CTA, NON-DETERMINISTICALLY.**
+`/calculators/law-firm-sale-cgt` has a bespoke page AND was still emitted by the generic
+`[slug]` route's `generateStaticParams`, because its config is `kind: "generic"`. Both
+prerender to the same file and whichever renders last wins. The generic render passes no
+`dataCta`, so the page silently lost `data-cta="see_result"`, a live id with 73 recorded
+events, while the bespoke source was correct throughout.
+- It is NON-DETERMINISTIC: one build produced the bespoke render with the id, the next
+  produced the generic one without it, with no source change between. The manager reported it
+  fixed on the strength of one good build and had to correct that to the owner.
+- **Every per-route gate stayed green.** Its floor is 3 and it still emitted 3. It surfaced
+  ONLY as a one-unit drop in the sweep's TOTAL `data-cta` count.
+- Fix: `src/lib/tools/bespoke-routes.ts` plus a filter in `generateStaticParams`. `kind:
+  "generic"` deliberately kept, because the gallery, sitemap, nav and embed routes all filter
+  on it and demoting would delist the page. Guard
+  `src/tests/calculator-route-collision.test.ts` asserts no static sibling appears in
+  `generateStaticParams` AND that the exclusion list equals the on-disk directories; it now
+  covers `src/app/embed` as well, which has the identical shape and no guard before. Both
+  halves mutation-tested: the failing condition was created, the test failed, it was removed,
+  the test passed.
+- Field note added, with the corollary: a per-route floor cannot see this class. Diff the
+  TOTAL as well, and when the total moves, find the route before moving on.
+
+**A stale build artefact also cost time earlier in the phase** and is its own field note:
+Next's incremental cache served an old prerender while `BUILD_ID` was NEWER than every source
+file, so trap T2's freshness check passed on a wrong artefact. Rule: prove the artefact
+contains a string you changed in this build.
+
+**Duplicate content, found by the review and fixed.** `CalculatorTabs` first rendered all five
+tabpanels into the HTML with four merely `hidden`, which is invisible to a reader and fully
+visible to a crawler: roughly 47% of each of five detail pages' body text republished on the
+index that outranks them. Now only visited panels render, so the SERVER emits exactly one.
+Measured after: a calculator with no panel shares 315 twelve-word shingles with the index,
+identical to a control page that never had one, so the residue is chrome.
+**Known and accepted:** the DEFAULT tab is still fully server-rendered, about 148 shingles
+above the chrome floor. That is inherent to having a working calculator on the index. The
+alternative is opening with no tab selected; the owner has it.
+
+**A fix pass introduced a regression, and the re-review caught it**, which is why the
+re-review exists. Rendering only the active panel destroyed calculator state on every tab
+switch. Now a visited set keeps opened panels mounted behind `hidden` while the server still
+emits one, proved at source both ways: `visited` is seeded to one key and only ever grows,
+and React runs no handlers or effects during prerender.
+
+**Live defects fixed, none of them design work:**
+- THREE dead `related` links, not the two recorded: `partner-tax-reserve.ts:152,153` and
+  `vat-disbursements-classifier.ts:148` pointed at FILENAMES rather than slugs. All three
+  targets verified in the registry, labels untouched, no link removed.
+- `PremiumBarChart`: the recorded description was wrong. `aria-hidden` on the wrapper meant
+  the chart was ALREADY removed from the accessibility tree, so the `role="img"` was dead
+  code. Values now render as an sr-only data table; chart text 8px and 9px to 11px.
+- `--calc-warn-fg` declared white: the kit fallback `#451a03` measures 4.35 on amber-700 and
+  fails the 4.5 floor. White measures 4.83.
+
+**The crawl guard was proven to bite (trap T9)** by removing the link and watching the test
+fail. It also corrected the plan: the guard's regex already matched the templated card hrefs,
+so the literal everyone assumed was load-bearing was not, and the dead special case was
+deleted.
+
+**Hard rule held.** The index still says "6 calculators" against 13 and "2025/26" against the
+detail pages' "2026/27": both FROZEN copy and owner items, not defects to fix. The directory
+stays a flat 13-card grid because grouping needs heading text that does not exist. Existing
+CTA panels were kept rather than retired. The bespoke CGT calculator passes its OWN live gate
+wording through the new component. Three authored summary lines added to
+`/tools/equity-partner-buy-in` were removed once the review flagged them as new copy.
+
+**MANAGER OVERRIDE, recorded:** the plan recommended adopting the kit `FaqSection` on the
+calculator pages. Overruled for the whole phase. It drops closed answers out of the server
+HTML and escapes HTML in answers; removing answer text from 12 indexed pages is exactly the
+search-visible change the owner forbade.
+
+**Verification at close**, on a FROM-SCRATCH build (`rm -rf .next`): build exit 0, 294
+prerendered HTML files, unchanged; sweep 273/274 clean, 0 link-floor breaches (10,692 unique
+internal links), 0 data-cta regressions across **1,505**, 0 dash regressions across 444;
+Solicitors **17 files / 214 tests**; dependency closure OK across 19 sites.
+
+**Baseline restated, with the reason, on `/calculators` only:** 0 to 6 dashes. The tabs mount
+a real calculator, so that tool's own published intro and result copy now appears on the index
+(`sra-client-account-reserve.ts:17`, committed in `bd562dbd6` long before the port). Existing
+copy on one more route, not new copy.
+
+**DISCLOSED TO THE OWNER, awaiting his word, all recorded rather than assumed:**
+- **All 13 calculator routes now end with a lead form**, where they previously had only a
+  "Book a free consultation" link. The manager's first disclosure named only
+  `/tools/equity-partner-buy-in` and was corrected. Copy is existing estate copy and the live
+  `calculator-page-cta` triple is byte-identical, but it is 13 new capture points.
+- `/tools/equity-partner-buy-in` gains a lead form on a route that had no capture surface.
+- The default tab's text remains on the index (above).
+
+**Found and NOT fixed, out of phase scope:**
+- The nav dropdown buttons carry `aria-controls` pointing at ids absent from the page, the
+  same defect class just corrected on the tablist. Chrome, so phase 6.
+- `rounded-2xl` survives on `/contact`, `/free-firm-health-check` and others. The phase-4
+  clearance covered calculator files only; those pages are phases 5 and 6.
 
 ## 2026-09-11 - PHASE 3 (category hubs and pillar guides). Nothing deployed.
 
