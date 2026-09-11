@@ -10,11 +10,13 @@ Last updated: 2026-09-11.
 
 ## PICKUP: START HERE if you are a fresh agent on this port
 
-**Where it stands, 2026-09-11.** Phases 0 to 5 are DONE, committed and tagged
-(`port-solicitors-phase0` through `port-solicitors-phase5`). Phase 6 is the LAST build phase.
-NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design. Your next action
-is Phase 6: contact, the post-submit set, about, research, resources, legal and the
-interruptive restyle.
+**Where it stands, 2026-09-11.** ALL SIX PHASES ARE BUILT, REVIEWED AND TAGGED
+(`port-solicitors-phase0` through `port-solicitors-phase6`). NOTHING IS DEPLOYED and production
+still serves `18b4f25f`, the old design. There is no build work left. What remains is the
+owner's: the twelve outstanding decisions listed in the phase 6 entry below, an owner walk on a
+dev server, and ONE owner-triggered cutover deploy from a clean worktree at a pushed SHA, which
+knowingly re-baselines roughly 41 `monitored_pages` rows. The highest-stakes open item is the
+legal-page compliance rewrite, which is the only one with regulatory weight.
 
 **Read in this order before acting:**
 1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
@@ -336,6 +338,105 @@ one. Three sessions share this working tree.
 2. The header shows two reds side by side: the wordmark icon and rule at rose-600 `#ec003f`
    (the kit hardcodes `text-primary-600`) against the brand crimson `#c41e3a` on the button.
    Both cleared contrast; the delta asked for the icon to be the brand. Match them?
+
+## 2026-09-11 - PHASE 6 (contact, post-submit, about, research, legal, audience). PORT BUILD COMPLETE. Nothing deployed.
+
+Commits: `63b0b59e` the phase build, `7ef49c95` review gaps. Tag `port-solicitors-phase6`.
+Six packages in parallel plus one manager-direct kit fix. Production still serves `18b4f25f`.
+
+**A GAP THAT WOULD HAVE SHIPPED.** The planner found the four audience routes
+(`/for-partners`, `/for-junior-solicitors`, `/for-locum-solicitors`, `/for-firm-buyers`) were
+in NOBODY's scope and would have been the one page family left on the old design. A sixth
+package was added: one shared layout edit, and the four page files needed no change at all
+because they are pure data.
+
+**THREE LIVE ACCESSIBILITY DEFECTS FIXED** on the research pages: three charts whose wrappers
+carried `aria-hidden` AND a dead `role="img"`, so every value was unreachable; crimson eyebrows
+at 3.07 on a dark ground; `text-neutral-400` at 2.52. Values now render as sr-only tables built
+from the same formatters as the visible labels. One judgement worth keeping: a chart band could
+not be recoloured to slate because the page's own copy says "the purple band (LLPs)", so the
+same purple was darkened, 3.84 to 7.10.
+
+**FOUR AGENTS REFUSED AN INSTRUCTION AND ALL FOUR WERE RIGHT.** WP4 declined to turn a
+back-link into a breadcrumb (two new strings AND a new `BreadcrumbList` node on eight INDEXED
+routes). WP2 declined to adopt the standard section wrapper on `/about` (it renders an eyebrow
+unconditionally and the page publishes none). WP1 declined to put the reassurance card on the
+post-submit routes (its items would be net-new copy there). WP6 caught two packages being
+handed the same file.
+
+**THE REVIEW CAUGHT A DESTROYED ORDINAL.** `/contact`'s "What happens next" had become three
+identical ticks: the words were unchanged but 1, 2, 3 was gone, so three sequential steps read
+as interchangeable. Reverted to an inline `<ol>` with its pips. **Kit fix:** `LeadCTAPanel` now
+guards its proof-point `<ul>`; six routes passing `proofPoints={[]}` were shipping an empty
+list that a screen reader announces as "list, zero items". **A new guard was vacuous** (its
+regex matched a literal `fontSize` while every call site uses a constant) and now bites, proven
+by mutation.
+
+**sr-only TEXT IS PUBLISHED TEXT.** Making the charts reachable meant adding column headers on
+two INDEXED routes. Challenged, the fixer corrected the manager: THREE of the four already
+appear on the same page as visible headers or legend labels. Net-new published words: **one**.
+
+**Verification at close**, from-scratch build, server title asserted before any crawl: exit 0,
+**294 prerendered pages**; sweep 273/274 clean, **0 link-floor breaches** (10,692 unique
+internal links), **0 data-cta regressions** across 1,507, **0 dash regressions** across 444;
+**18 files / 219 tests**; generalist tsc clean; dependency closure OK across 19 sites.
+
+**DELIBERATELY NOT DONE, each an owner decision, not a quiet fix:**
+- `/resources` stays a 404. Building it means a new route, a new sitemap entry and about six
+  invented strings: three breaches of the hard rule for a defect the port did not create.
+- **The legal pages got DESIGN ONLY.** Their compliance copy is wrong in both directions and
+  this site genuinely runs GA4, so unlike the generalist port the correct move is to EXPAND the
+  disclosure. Ships as its own owner-signed commit. FINDINGS: `cookie-policy:64` declares `_gid`
+  (Universal Analytics) which GA4 never sets; `_ga_N6ZPRB3DSQ` is set but undeclared; "IP
+  addresses are anonymised" understates (GA4 does not record IP at all); "14 months" is a
+  console setting unverifiable from code; opt-out unmounts the tag but never calls
+  `gtag('consent','update')`, so an already-loaded runtime persists for that page load and
+  existing cookies are not deleted; `privacy-policy:71` describes an email sign-up that DOES NOT
+  EXIST, and the consent lawful basis at `:117-121` exists only to support it; GA is listed as a
+  processor "on our instructions only" though it is generally an independent controller; and
+  `/terms` never discloses the referral model the privacy policy spells out in full.
+- The returning bar stays dark (enabling it changes sticky-bar copy on topic-less routes).
+- The transitional `--font-serif` mapping STAYS: 32 uses remain across six files outside this
+  phase. The stale hardcoded count in its comment was replaced so it stops rotting.
+
+**The interruptive stack is RESTYLE ONLY**, proved by `intent-engine.test.ts` being
+byte-unchanged. `ExitIntentModal` deleted after verifying zero importers. `CTASection` retired
+after verifying both its live ids still render on four routes.
+
+**Frozen, confirmed untouched:** the 26.2% figure and its wrong period label; unevidenced
+client-count claims on `/about`; US spellings; the "6 calculators" and "6 pillar guides" claims;
+the five `/services/[slug]` routes absent from `sitemap.xml`.
+
+---
+
+## PORT STATUS 2026-09-11: ALL SIX PHASES BUILT, REVIEWED AND TAGGED. NOTHING DEPLOYED.
+
+`port-solicitors-phase0` through `port-solicitors-phase6`. Production serves `18b4f25f`.
+Next steps are the owner's: the decision list below, an owner walk on a dev server, then ONE
+owner-triggered cutover deploy from a clean worktree at a pushed SHA, which knowingly
+re-baselines roughly 41 `monitored_pages` rows.
+
+**OWNER DECISIONS OUTSTANDING (nothing ships until he rules):**
+1. The legal-page compliance rewrite (findings above). The only item with regulatory weight.
+2. `/resources`: build the index, or leave the 404.
+3. All 13 calculator routes, `/about`, `/sra-compliance`, `/services`, `/locations` and the
+   city pages now end with a lead FORM where several previously had only a link.
+4. "6 calculators" against a real 13, and "6 pillar guides" against 10, on the homepage; and
+   "2025/26" on the calculators index against "2026/27" on the detail pages. All frozen copy.
+5. The 26.2% figure published without its denominator on four pages, and dated "2024-25" on one
+   where the scope is the SRA year to 30 September 2025.
+6. The 34 posts whose `canonical:` names a redirecting URL, and the five `/services/[slug]`
+   routes missing from the sitemap. Both frozen by the no-SEO rule.
+7. Seven live `data-cta` ids carry no authored placement, so `vw_cta_performance` groups them on
+   the nearest heading's TEXT, one value being a machine-translated Italian heading. Fixing it
+   rewrites a live grouping key across 563 events and needs a baseline restatement.
+8. The returning bar has never rendered in its life.
+9. Copy props on the kit's `ProblemStatement`, `ComparisonTable` and `TestimonialsSection`, all
+   three of which hardcode Property's own copy; and `formSubtitle`-style slots generally.
+10. A one-token kit change (`text-slate-500` to `text-slate-600`) from a SIBLING session was
+    swept into `e93c9e00`. It darkens small print on generalist, Medical and Dentists too.
+11. Photography from Pexels for 196 articles: approved, not started, a separate content job.
+12. The 17 hub essentials briefings: new prose, therefore outside the port.
 
 ## 2026-09-11 - PHASE 5 (homepage, services, locations). Nothing deployed.
 
