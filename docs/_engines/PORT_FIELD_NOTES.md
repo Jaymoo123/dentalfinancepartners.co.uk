@@ -549,6 +549,39 @@ RULE: a guard test for a lookup table must assert at SOURCE level that each cons
 calls the accessor. Derive the consumer list from the map itself, so a ninth category is covered
 automatically rather than needing the test edited.
 
+**2026-09-11, Trade phases 3 and 4. A guard that reads one file while the defect lives in
+another.** `src/tests/design/penalty-figures.test.ts` was written in Phase 3 specifically to stop
+two wrong tax figures coming back. It pinned a single data file. It stayed green while the same
+figures shipped on 45 pages from a different file (`src/data/trade-types.ts`, which renders every
+`/for/[slug]` route). The test was not wrong about its file; it was wrong about its corpus.
+Deriving command: `git log -1 --format=%B 72fe3261`, and the rewritten guard is the file itself,
+which now enumerates every `.ts`/`.tsx` under `src/` except tests, every `.md` under `content/`,
+plus `niche.config.json`.
+RULE: a guard against a CONTENT rule enumerates its corpus PROGRAMMATICALLY, never from a path
+list, so a new page or data file is covered the day it is added. And it carries a
+guards-the-guard assertion (`penalty-figures.test.ts:133-138`: corpus length, plus four known
+strings that must be found) so a broken walk fails loudly instead of passing empty. An empty
+corpus passes every assertion in the file.
+
+**2026-09-11, Trade phases 3 and 4. A guard whose verdict depends on prose layout.** The same
+guard windowed each match with a fixed +/-110 character pad. An identical wrong clause therefore
+PASSED when its qualifying sentence happened to fall within 110 characters and FAILED when an
+editor pushed it beyond. Two pages with the same defect got opposite verdicts, and neither verdict
+was about the defect. File:line: `penalty-figures.test.ts:20-24` documents it; `sentenceAt()` at
+`:71` is the replacement.
+RULE: window a text guard to the containing SENTENCE or BLOCK, never to a character count. Split
+on sentence and block boundaries and treat a match that straddles one as no match.
+
+**2026-09-11, Trade phase 3. An acceptance test that is unsatisfiable on arrival gets quietly
+substituted.** Every Phase 3 work package carried the acceptance line `totalDashes == 2`
+(`docs/construction-cis/_port/PHASE3_PLAN.md:241`). All 36 dashes on the site sat on 6 calculator
+pages, and the same plan scopes Phase 3 to `/for`, `/locations`, `/glossary` and `/resources` and
+names the calculators as Phase 4's. No Phase 3 package could move the number. In practice it was
+replaced with a no-regression assertion, silently, and the real move to 2 happened in Phase 4.
+RULE: derive every acceptance number from the phase's OWN scope before you write it down. If the
+phase cannot satisfy it, the number belongs to a different phase. A substituted acceptance test is
+worse than a missing one, because the plan still reads as though it was met.
+
 ---
 
 ## 5b. What the Solicitors port taught, in one block
@@ -670,6 +703,40 @@ Deriving command: compare the redirect map against the corpus,
 `grep -oE "'[a-z0-9-]+'" <site>/web/src/middleware.ts` against `ls <site>/web/content/blog/`.
 RULE: filter the redirect map ONCE in `getAllPosts()` so every listing surface inherits it. Fixing
 it per surface leaves the next new listing wrong, and no crawl-based instrument will tell you.
+
+**2026-09-11, Trade phases 3 and 4. Ground truth that contradicts itself re-seeds the defect
+forever.** The same CIS penalty error was corrected twice, in June and again in this port, and
+returned twice. `docs/construction-cis/house_positions.md` carried corrected TABLES while both
+"Practical writing rule for sessions" bullets underneath them still carried the OLD figures, and
+the HP-LOCK header summary at `:11` carried them too. Those bullets and that header are the lines
+a writing session actually follows; nobody writes a page off the table. All three now match their
+own tables.
+Deriving command: grep the ground-truth file for the retired figure itself, not for the sentence,
+e.g. `grep -n '30%\|20% of the sums\|100%' docs/<site>/house_positions.md`.
+RULE: when correcting a locked position, grep the WHOLE ground-truth file for the old figure and
+fix every restatement in the same edit, headers and writing-rule summaries included. A corrected
+table above an uncorrected bullet is not a correction, it is a slower re-seed.
+
+**2026-09-11, Trade phases 3 and 4. A self-contradicting file defeats a text search.** The s.62B
+error ("20% of the sums returned" where the statute charges the whole sum) was recorded as fixed by
+a session in June. It was live. The definition SENTENCE had been corrected while the worked EXAMPLE
+three lines below still calculated 20% of the figure, so a text search for the wrong wording found
+nothing and the file disagreed with itself inside one section.
+Deriving command: `git log -1 --format=%B 72fe3261`; the surviving guard is
+`construction-cis/web/src/tests/design/penalty-figures.test.ts`.
+RULE: when correcting a figure, search the same file for its ARITHMETIC as well as its words. A
+worked example is a restatement of the rule in numbers, and it is the copy a reader trusts most.
+
+**2026-09-11, Trade phase 4. A phase boundary is not a reason to leave a wrong published figure.**
+The manager fenced one calculator file off from three separate sweeps because a later phase owned
+it, having written himself that a phase boundary is no reason to leave a wrong tax figure
+published. That fencing is the SOLE reason a director-penalty claim the ground truth bans in
+capitals survived two passes and stayed live, in body copy AND in FAQPage structured data, where
+Google could quote it. It was caught in Phase 4 only because Phase 4 finally owned the file.
+Deriving command: `git log -1 --format=%B 72fe3261`, section "WHAT I GOT WRONG".
+RULE: scope a CORRECTNESS sweep to the RULE and the WHOLE SITE, never to the phase's route list.
+Phase ownership governs design work. It does not govern false statements, and a wrong figure does
+not wait politely inside a file boundary.
 
 ---
 

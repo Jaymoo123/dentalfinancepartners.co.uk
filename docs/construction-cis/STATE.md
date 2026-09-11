@@ -2,68 +2,128 @@
 
 ## PICKUP BLOCK (read this first) - design port, 2026-09-11
 
-**Where it stands.** The Property-standard design port is at **PHASE 2 BUILT AND REVIEWED,
-NOTHING DEPLOYED.** Phase 0 artefacts are committed at `4d2bfeaa` and live in
-`docs/construction-cis/_port/` (README, BRAND_LAYER, three DISPOSITION slices, LIVE_DEFECTS,
-FUNNEL_BASELINE, link_baseline.json, sweep_baseline.json, browser_baseline.json) plus the brand
-contract at `docs/construction-cis/DESIGN_DELTA.md`. Over 3,000 lines of file-by-file spec. Read
-the slices before touching code: they are the spec, this file is the state.
+**Where it stands.** The Property-standard design port is at **PHASES 0 TO 4 COMPLETE, COMMITTED
+AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phases 5 and 6 are PLANNED but NOT BUILT.
 
-**Phase 1 is COMPLETE.** Token layer, chrome and the guard suite, committed at `405faf37` and
-tagged `port-construction-cis-phase1`. The brand ramp is in, so kit components emitting `primary-*`
-classes now render. Nothing from phase 1 is deployed either: deploy is owner-gated, every time.
+| phase | tag | commit |
+| --- | --- | --- |
+| 0 | `port-construction-cis-phase0` | `80a35e16` (artefacts also at `4d2bfeaa`, `03142e02`, `7b4ffaff`) |
+| 1 | `port-construction-cis-phase1` | `405faf37` |
+| 2 | `port-construction-cis-phase2` | `6575bbb6` |
+| 3 | `port-construction-cis-phase3` | `72fe3261` |
+| 4 | `port-construction-cis-phase4` | `72fe3261` |
 
-**Phase 2 is BUILT AND REVIEWED but NOT COMMITTED at the time of writing** (the blog family: the
-`/blog` index, the 8 category hubs and the 82-route article template). The plan it was built
-against is `_port/PHASE2_PLAN.md`. The manager holds the commit; if you are reading this after it
-landed, find it with `git log --oneline -- construction-cis/` above `405faf37`.
+Note the last row: **phases 3 and 4 landed in ONE commit**, so the two tags point at the same
+object. Verify with `git rev-parse "port-construction-cis-phase3^{}"` and the same for phase4. Read
+`git log -1 --format=%B 72fe3261` before you touch anything; it is the full account of both phases
+and this block is a compression of it.
 
-**What phase 2 achieved, measured.**
-- `/blog` articles crawlable from their own index: **12 of 82 to 82 of 82**. Baseline evidence is
-  `_port/PHASE2_PLAN.md` section 1a. The sliced grid became a `hidden`-attribute grid, per
-  `DESIGN_SYSTEM.md` section 4e.
-- `/blog` page weight: **2,309,255 to 277,429 bytes, an 88% drop**, by projecting the post list to
-  its card fields instead of spreading every article's full `contentHtml` into the client payload.
-- `/blog` gained a real capture surface. It had none.
-- All **82 of 82** articles gained a per-category enquiry section, each verified present with its
-  anchor and its accessible label.
-- The five locked `data-cta` triples came through **byte-identical at 246 / 246 / 109 / 18 / 1**,
-  with two additive new ids.
-- Tests **412 to 417**, then higher again with the gap fixes. Build green at **275 pages**. Sweep
-  **246 of 246 routes clean**, zero dead internal links, zero link-floor breaches.
+The port artefacts live in `docs/construction-cis/_port/` and the brand contract in
+`docs/construction-cis/DESIGN_DELTA.md`. The slices are the spec, this file is the state.
 
-**The larger half of phase 2 was NOT design work.** It closed live defects:
-- A blog post overstating the **12-month CIS penalty as 100% of deductions**, where the tier is
-  £300 or 5%.
-- A banned turnaround promise that turned out to be far wider than filed. `_port/LIVE_DEFECTS.md`
-  records the re-swept truth as **23 breaches across 19 files, all 23 now closed** (TD-13, TD-14,
-  TD-14b, TD-14c). Four soft "shortly" / "Speak soon" instances survive in **transactional email**
-  valedictions, deliberately left and out of scope.
-- **A test that was asserting the banned promise**, so the suite would have gone red if anyone
-  removed it.
-- The **refund-average claim restated with attribution** on the homepage, `/cis-refund`, both
-  search snippets, the calculator, **33 trade-page stat tiles** (TD-33, 18 of them uncaveated) and
-  **10 city pages** that had published it as our own clients' results (TD-10). Residual tier, still
-  open and low priority: instances that are hedged as typical or illustrative, which house
-  positions section 13 permits, but carry no source. Logged as **TD-34**.
-- An **invisible button label measuring 1.00 contrast** on most articles.
-- The **8 topic hubs still shipping full article bodies**.
+**Phases 5 and 6 are PLANNED, NOT BUILT.** Their plans are `_port/PHASE5_PLAN.md` (702 lines) and
+`_port/PHASE6_PLAN.md` (779 lines). Both were written before the phase 3/4 commit landed, so read
+the commit message alongside them.
 
-**Open owner decisions, plain language.**
-1. The ground-truth penalty phrase contradicts itself and leaves out one statutory tier. Needs his
-   word on the wording before anything cites it.
-2. The header call-to-action renders below its breakpoint. Fixing it shifts what the analytics
-   count, so the before and after will not compare cleanly.
-3. **79 routes still end dark-on-dark. Tracked as blocking.**
-4. The tick and numeral colours.
-5. The designer credit.
-6. The four soft "shortly" / "Speak soon" lines in transactional email, deliberately left.
+**The measured state, verified.** Every number below is from the verification run recorded in
+`72fe3261`. Build green at **275 pages**. **422 tests across 26 files.** Dependency closure OK
+across **19 sites**. Sweep **246 of 246 routes clean**, **0 dead internal links**, **0 link-floor
+breaches at 6,746 links**. Dashes at **2**, and the 2 are the protected en-dashes inside money
+ranges (`cis-self-assessment-calculator.ts:125`, `cis-vs-paye-comparison.ts:113`, TD-28); a builder
+told to reach zero would corrupt two correct figures. **Ten `data-cta` triples**, with the locked
+five byte-identical at **246 / 246 / 109 / 18 / 1**. Section grounds: **dark-on-dark 4** and
+**adjacent bands sharing a ground 2**, down from 29 and 48, and the survivors are exactly the
+Phase 5 and Phase 6 routes that own them (`_port/GROUNDS_BASELINE.md` section 7).
 
-**What is next. Phase 3: the article and pillar templates, plus hubs and indexes.** Scope is
-`/for` and its **45** trade pages, `/glossary` and its **50** terms, `/locations` and its **25**
-cities, and `/resources`. The numbered execution order for the whole port is
-`_port/DISPOSITION_SLICE3.md` section 10. Note that the **79 dark-on-dark routes are mostly
-glossary and locations**, so phase 3 closes most of that blocking item as a side effect.
+**What phases 3 and 4 achieved.** Phase 3 took the `/for`, `/locations`, `/glossary` and
+`/resources` families, 126 of 246 routes; phase 4 took the calculator fleet and `/embed`. Eight
+build packages, four adversarial reviews, five gap-fix passes. Em-dashes 36 to 2 and the ratchet
+table is gone, so the guard is flat. The tracked blocking item closed: dark-on-dark 29 to 4, and
+adjacency, which nobody was tracking, 48 to 2. **45 trade pages that drew visitors and produced
+zero enquiries now carry a reachable ask**: both hero CTAs used to leave the page, there was no
+anchor, and the form sat below the FAQ. The published fee band is gone from all 246 routes; it was
+recorded as 26 surfaces and was in fact in the Organization JSON-LD loaded from the root layout.
+Three guide pages carried prose classes for a Tailwind plugin this site does not install, so they
+rendered with browser defaults. Two `<main>` landmarks per route became one. And the 25 city
+photographs turned out never to have existed: the hero image code, its scrim and both credit links
+were dead branches, so the owner decision about stock photography and attribution was moot.
+
+**The half of phases 3 and 4 that was NOT design work.** Four published statements of tax law,
+wrong on live pages, all now corrected:
+- **s.62B stated as 20% of the sums returned**, where the statute charges the whole sum. Banned by
+  name in `house_positions.md` section 3 and recorded as fixed by a session in June. It survived
+  because the definition sentence had been corrected while the worked example three lines below
+  still calculated 20%, so the file contradicted itself and a text search passed it.
+- **The 12-month CIS300 tier stated as 100%** where it is £300 or 5%, a twentyfold overstatement,
+  in four places including a worked example charging £50,000 where the figure is £2,500.
+- **A "30% of the tax HMRC considers lost" director penalty**, which the ground truth bans in
+  capitals because no such figure appears in either section, live on a calculator in body copy AND
+  in FAQPage structured data.
+- **The deliberate-and-concealed 100% tier applied to deliberate-not-concealed too**, where the
+  statute sets 70%. It told a contractor in the lower tier they faced the maximum, on the page
+  whose job is telling them what they owe.
+
+**The root cause, which mattered more than any instance.** `house_positions.md` contradicted
+itself in three places: both "practical writing rule" bullets carried the old figures under
+corrected tables, and the HP-LOCK header summary carried them too. Those are the lines a writing
+session follows, which is why the same error had been corrected twice and re-seeded twice. All
+three now match their own tables.
+
+**The guard, which is the part that lasts.** `src/tests/design/penalty-figures.test.ts` was written
+in Phase 3 to stop these returning, read ONE file, and stayed green while the defect shipped on 45
+pages from a different file. It now walks 200+ files programmatically so a new file is covered
+automatically, windows to the containing sentence rather than a fixed character pad (its verdict
+previously depended on prose layout: the same clause passed when its qualifier sat within 110
+characters and failed when it did not), and carries a guards-the-guard assertion at `:133-138` so a
+broken walk fails loudly instead of passing empty. Every rule was proven to bite by injection and
+revert. One shape is deliberately left permitted, with the ground-truth clause quoted: a 30% figure
+that names s.72A is legitimate, and flagging it would fire on correct published pages.
+
+**Open owner decisions, plain language. None of these are blocked on code.**
+1. **The ground-truth penalty phrase is internally incoherent and omits a statutory tier.**
+   `house_positions.md:82` reads "12+ months, information withheld deliberately: additional penalty
+   up to £3,000 or 100% of the CIS deductions (whichever is higher)". "Up to" and "whichever is
+   higher" cannot both be true of the same figure, and the row collapses two statutory tiers into
+   one: deliberate-and-concealed is the greater of £3,000 or 100%, deliberate-but-not-concealed is
+   the greater of £1,500 or 70%, and the 70%/£1,500 tier is simply absent. Nothing should cite this
+   row until he has fixed the wording.
+2. **Two further self-contradictions in the same file, found and left for him.**
+   `house_positions.md:11` and `:57` cite **SI 2026/289** as the commencement vehicle, while `:61`
+   states in the same document that ss.62A/62B and the s.66 amendments commence directly under
+   FA 2026 s.222 and that SI 2026/289 must NOT be cited as their vehicle. And `:221`, a watch item,
+   still calls the law "**Finance Bill 2026**" and tells sessions to hedge, months after Royal
+   Assent on 18 March 2026, which the rest of the file bans outright.
+3. **Twelve owner-gated fixed-fee claims.** `_port/CLAIMS_REGISTER.md:319`: the fixed-fee pattern
+   returns 16 hits, 12 of them breaches, all 12 owner-gated. They are statements about how we bill
+   and only he can say whether they are true.
+4. **The four soft turnaround phrases in transactional email**, deliberately left and out of every
+   sweep's scope. Live strings: `src/lib/leads/aux-cron.ts:164` and `src/lib/leads/reply-ack.ts:48`
+   and `:181` ("Speak soon"), plus the "call shortly" framing documented at `reply-ack.ts:7`. The
+   site-facing tier of this defect (23 breaches across 19 files) is closed.
+5. **The designer credit wording.** Decision TAKEN 2026-09-11 and recorded at
+   `DESIGN_DELTA.md:229`, kept here because it reads like an open item in older notes: the kit
+   footer (`packages/web-shared/design/chrome/SiteFooter.tsx:132`) defaults `showBuilderCredit` to
+   TRUE and ships the studio's credit as a followed outbound link. "Built by" is literally true of
+   Property, which the studio built, and is NOT true of a ported site. Trade's footer is local and
+   has no credit block, so the absence is correct and structural. Do not add one. Re-open only if
+   he wants different wording.
+6. **The dormant pricing config.** `niche.config.json` carries a complete `packages` CTA variant
+   publishing our own price list (£24 / £49 / £79 a month) across the hero, the sticky bar, every
+   blog CTA and `/contact`. It does not render today because `cta.variant` is `"leadgen"`, so
+   `isPackagesMode()` is false. `_port/CLAIMS_REGISTER.md:341` counts **11 dormant claims**.
+   Flipping one string publishes all 11 in one commit. TD-02: strip the figures from the variant so
+   the switch is safe to throw, or accept the risk in writing.
+
+**What the next session must do first, before Phase 5.**
+1. **Re-capture `_port/browser_baseline.json` with the repaired instrument.** The committed capture
+   was taken while `browser_check.mjs` was oklch-blind on contrast, so **every oklch-coloured
+   element is simply ABSENT from it rather than recorded as passing**. A review already read that
+   absence as evidence and reported 16 routes with "NEW problems" that were not new, only newly
+   visible. The instrument was fixed at `bf231f1a`; the baseline was not re-taken because it needs
+   a running server, so it is a deliberate scheduled step, not a side effect. Until it lands, a
+   "NEW" contrast finding derived from a diff against that file must be checked against the source
+   before it is believed. See the READ FIRST block at `_port/GROUNDS_BASELINE.md:3`.
+2. **Then Phase 5, per `_port/PHASE5_PLAN.md`.**
 
 **Owner decisions already taken 2026-09-11, do not re-ask.**
 - Brand stays orange (`#f97316` = orange-500). Warning and penalty semantics move OFF orange.
@@ -71,63 +131,75 @@ glossary and locations**, so phase 3 closes most of that blocking item as a side
 - Warning ladder T-W1 = red-600 / pink-700 / blue-700 / indigo-900 plus on-dark twins. Four steps,
   evidenced from this site's own penalty content. See DESIGN_DELTA section 1.
 - `/admin/analytics/**` is EXEMPT from the port and from the ramp sweep (Medical M-L11 precedent).
+- The adjacency metric is tracked as a second row alongside dark-on-dark, per GROUNDS_BASELINE
+  section 8.
 
-**What not to re-measure, and what not to trust.**
-- Production SHA `18b4f25f39cd0c4aa084e582d69a87c8a10710ac`, from the Vercel production TARGET,
-  not the deployments listing. **This was true at phase 0 and is no longer true:** phase 1
-  (`405faf37`) is committed and phase 2 is in the working tree, neither deployed, so the working
-  tree is now AHEAD of production for `construction-cis/`. The SHA is still the right production
-  reference to diff against.
-- Baseline: 246 routes, 5,301 internal links, 620 `data-cta`, 36 dashes, 246/246 routes clean,
-  0 dead internal links. Build green at 275 pages. Phase 2 re-measured the sweep and the build and
-  they still read 246/246 clean and 275 pages, so this line is a live check, not just a baseline.
-- **The dash target is 2, not 0.** The sweep regex counts en-dashes too, and 2 of the 36 are
-  legitimate numeric ranges that `LIVE_DEFECTS.md` TD-28 protects. All 36 sit on 6 calculator
-  pages.
-- Corpus, counted at source: **45** trade types (a `grep -c 'slug:'` wrongly gives 47 because two
-  lines are `slug: string` annotations), **12** calculators with `BESPOKE` empty, **82** blog posts
-  across 8 categories, **50** glossary terms, **25** locations, **3** published resource guides.
-  The older counts further down this file are STALE and struck through.
-- Property does NOT consume the kit chrome. Only `generalist` and `Solicitors` do. Trade runs its
-  own local header and footer, as Property does. Any reasoning of the form "the kit default
+**The traps specific to this site, still true.**
+- **The dash target is 2, not 0.** The sweep regex counts en-dashes, and the 2 survivors are
+  legitimate numeric ranges protected by `LIVE_DEFECTS.md` TD-28.
+- **Never diff 798 CTA attributes against the committed baseline.** `cta_baseline.json` holds 5
+  distinct triples totalling 620 over 246 routes. The live site now returns more, because phases 2
+  and 3 added 178 additive ids (82 + 50 + 45 + 1). Both numbers are correct and they are not
+  comparable. `_port/PHASE5_PLAN.md:49`.
+- **Property renders `header_book` / `header` / `form` for the button Trade calls
+  `header_nav_primary` / `header` / `contact`.** Adopting Property's id or goal IS the T22 defect.
+  Do neither. `_port/DISPOSITION_SLICE1.md:189`.
+- **Property does NOT consume the kit chrome.** Only `generalist` and `Solicitors` do. Trade runs
+  its own local header and footer, as Property does. Any argument of the form "the kit default
   protects Property" is about a two-consumer set, not the estate.
-- `StatsBar` here is a pure server component printing a literal string, so Generalist's count-up
-  SSR defect does NOT reproduce. Do not "fix" it.
-- The 4 research pages carry no `role="img"` and no `aria-hidden` wrapper, so that defect does not
-  reproduce either. `PremiumBarChart.tsx` DOES (TD-K2, byte-identical on Medical).
-- `browser_check.mjs` resolved every colour on this site (0 unparseable), so trap 25 does not
-  reproduce here. Note that Git Bash mangles bare route arguments into Windows paths: pass
-  `MSYS_NO_PATHCONV=1` and quote them as `"//"`.
-- `python` works on this machine; `python3` is a Microsoft Store stub.
+- **`StatsBar` here is a pure server component printing a literal string**, so Generalist's
+  count-up SSR defect does not reproduce. Do not "fix" it.
+- **The 4 research pages carry no `role="img"` and no `aria-hidden` wrapper**, so that defect does
+  not reproduce either. `PremiumBarChart.tsx` DOES (TD-K2, byte-identical on Medical).
+- **Git Bash mangles bare route arguments into Windows paths.** Pass `MSYS_NO_PATHCONV=1` and quote
+  routes as `"//"`. `python` works on this machine; `python3` is a Microsoft Store stub.
+- **Corpus, counted at source:** 45 trade types (a `grep -c 'slug:'` wrongly gives 47 because two
+  lines are `slug: string` annotations), 12 calculators with `BESPOKE` empty, 82 blog posts across
+  8 categories, 50 glossary terms, 25 locations, 3 published resource guides. The older counts
+  further down this file are STALE and struck through.
+- **Production SHA `18b4f25f39cd0c4aa084e582d69a87c8a10710ac`**, from the Vercel production TARGET,
+  not the deployments listing. The working tree is now four phases AHEAD of production for
+  `construction-cis/` and nothing has been pushed, so this SHA is the diff reference, not the state.
+
+**Traps this port DISPROVED, corrected here rather than deleted.**
+- **The header CTA breakpoint is CLOSED, not open.** Older notes list "the header CTA renders below
+  its breakpoint" as an owner decision. Phase 1 (`405faf37`) moved it from `sm:inline-flex` to
+  `lg:inline-flex`, matching Property's `SiteHeader.tsx:310` exactly, so Trade and Property are now
+  identical on this button. The consequence stands and is the reason it was ever a decision:
+  **the button no longer renders between `sm:` and `lg:`, so `header_nav_primary` click counts
+  before and after phase 1 do not compare cleanly.** Read any before/after on that id with that in
+  mind. `construction-cis/web/src/components/layout/SiteHeader.tsx:282-298`.
+- **Navigation unreachable between 768px and 1023px is CLOSED.** The drawer was `md:hidden` against
+  an `lg:hidden` burger. Both are `lg:hidden` now, `SiteHeader.tsx:321-326`.
+- **79 routes dark-on-dark is STALE.** It is 4, and they are Phase 5 and Phase 6 routes.
+- **`browser_check.mjs` resolved every colour on this site (0 unparseable)**, so playbook trap 25
+  does not reproduce here. This is still true, and it is NOT the same thing as the oklch contrast
+  blindness above: the parser resolved the colours and then classified them wrongly.
+
+**An honest note on `_port/PHASE3_PLAN.md`.** Its work packages all carry the acceptance test
+`totalDashes == 2` (`PHASE3_PLAN.md:241`). **That test was unsatisfiable on the day it was
+written.** All 36 dashes sat on 6 calculator pages, and PHASE3_PLAN scopes Phase 3 to `/for`,
+`/locations`, `/glossary` and `/resources`, listing the calculators as Phase 4's. No Phase 3
+package could have moved the number. In practice it was substituted with a no-regression assertion
+(the count must not rise), which is what Phase 3 could actually satisfy, and the real move to 2
+happened in Phase 4. **The document should be corrected** so the next reader does not take the
+number at face value.
 
 **Live defects found that are NOT design work: 37, plus 2 in the shared kit.** Full catalogue with
 file and line in `_port/LIVE_DEFECTS.md` (TD-01 to TD-35, with TD-14b and TD-14c, plus TD-K1 and
-TD-K2), where TD-31 and TD-32 were raised by slice 3 and TD-33, TD-34 and TD-35 by the phase-2
-sweeps. The count was 32 before phase 2. The ones that matter most:
-1. `priceRange: "££"` publishes our own fee band in JSON-LD on 26 surfaces, and the same line
-   is forked in `packages/web-shared/schema/local-business.ts:127`, so fixing one end alone leaves
-   it live.
-2. A "30% of the tax lost" director penalty on 3 surfaces plus a calculator, which
-   `house_positions.md` bans BY NAME as a corrected fabrication. The same lines also misattribute
-   it to "Finance Bill 2026".
-3. A third-party marketing refund average republished as OUR client base's average on 10 city
-   pages. **CLOSED 2026-09-11** (TD-10), along with 33 trade-page stat tiles the prose sweep never
-   saw (TD-33). The hedged-but-unsourced remainder is TD-34, open and low priority.
-4. `s.62B` given as 20% where it is 100%, and the 12-month CIS300 penalty as 100% where it is 5%.
-   Note: the 2026-06-16 session below records s.62B as fixed. It is live again, or was never fully
-   swept. Re-verify rather than assume.
-5. `DetailsForm.tsx:192` tells the user "we only use this to arrange your free review" on the page
+TD-K2). Still open and worth knowing:
+1. `DetailsForm.tsx:192` tells the user "we only use this to arrange your free review" on the page
    that collects their phone number, against a privacy policy disclosing sharing with up to six
    firms.
-6. **Every primary button on the site is white on orange-500 at 2.80:1**, below even the 3:1
-   graphics floor, on every page. Article links measure 3.16, the eyebrow 2.68, the footer fine
-   print 2.42. Measured two independent ways, hand-computed and instrument.
-7. The burger appears below 1024px but the drawer is `md:hidden`, so **navigation is unreachable
-   between 768px and 1023px.** Verified against the rendered DOM.
-8. `/blog` server HTML carries **12 of 82** articles, because the list slices behind button
-   pagination. The blog is 54% of this site's traffic. **CLOSED in phase 2: 82 of 82.**
-9. `StickyCTA.tsx:147` ships `data-cta-id`, which `autoCapture.ts` does not match, so the site's
+2. **Every primary button on the site is white on orange-500 at 2.80:1**, below even the 3:1
+   graphics floor. Article links measure 3.16, the eyebrow 2.68, the footer fine print 2.42.
+   Measured two independent ways, hand-computed and instrument. The token layer is in; the
+   remaining instances are Phase 5 and 6 surfaces.
+3. `StickyCTA.tsx:147` ships `data-cta-id`, which `autoCapture.ts` does not match, so the site's
    only persistent site-wide CTA has never once recorded a click.
+4. TD-34: refund-average instances that are hedged as typical or illustrative, which house
+   positions section 13 permits, but carry no source. Open, low priority.
+5. TD-02, the dormant price list. See owner decision 6.
 
 **Conversion reality, and it reorders the work.** Post bot-gate, 19 days to 2026-09-11: **203 clean
 sessions, and 3 leads in the site's entire history** (first 2026-08-17). 4.93 leads per 1,000
@@ -136,8 +208,8 @@ sessions against Property's 10.80. The leak is sessions-to-form-start, 0.99% aga
 completions; CIS template pages 27 sessions with 28 download clicks; `/for/[slug]` 24 sessions and
 zero form views; **the homepage got 4 sessions and the three service pillars got 1 between them.**
 So the homepage rebuild stays in scope but is NOT the centrepiece, and the blog plus the template
-family carry the upside. Forms DO already exist on `/for/[slug]` and `/cis-invoice-template`: the
-defect is that the hero CTAs leave the page and the form sits below the FAQ.
+family carry the upside. Phase 3 closed the `/for/[slug]` half of this: the hero CTAs no longer
+leave the page and the form no longer sits below the FAQ.
 
 **An estate-wide analytics finding, not specific to this site.** `web_events.is_bot` does NOT
 inherit `web_sessions.is_bot`: 18.2% of this site's nominal sessions and 9.0% of Property's are
