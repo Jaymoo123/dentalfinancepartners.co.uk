@@ -16,8 +16,8 @@
   },
   "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.dentalfinancepartners.co.uk",
-  "tagline": "Accounting for UK dentists — nothing else",
-  "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions — we only work with dentists.",
+  "tagline": "Accounting for UK dentists, nothing else",
+  "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions, handled by dental specialists.",
   "brand": {
     "primary_color": "#2563eb",
     "logo_path": "/brand/logo.png",
@@ -145,7 +145,7 @@
           "href": "/pricing"
         },
         "hero_primary": {
-          "label": "See plans from £29/mo",
+          "label": "See what each plan covers",
           "href": "/pricing"
         },
         "hero_secondary": {
@@ -153,19 +153,19 @@
           "href": "/contact"
         },
         "sticky": {
-          "primary": "Fixed monthly plans from £29",
+          "primary": "Monthly dental accountancy plans",
           "secondary": "Self assessment and limited company compliance for dentists, handled. Cancel with one month's notice.",
           "button": "See pricing",
           "href": "/pricing"
         },
         "blog": {
-          "cta_heading": "Ready for a dental accountant with clear monthly pricing?",
-          "cta_body": "Plans start at £29 a month for associate self assessment and £59 for associates trading through a limited company, with no fixed term. Not sure which plan fits your situation? Send an enquiry below and we will recommend the right one, no obligation.",
+          "cta_heading": "Ready for a dental accountant on a monthly plan?",
+          "cta_body": "There is a plan for associate self assessment and a fuller one for associates trading through a limited company, with no fixed term. Not sure which fits your situation? Send an enquiry below, say whether there is a company and any private income, and we will point you at the right one, no obligation.",
           "cta_button": "Send enquiry"
         },
         "home_cta": {
           "heading": "Pick a plan today. Cancel with one month's notice.",
-          "body": "Fixed monthly fees for associates, practice owners and dental groups, agreed up front. If you would rather talk it through first, a free 15-minute call sorts the right plan in one go.",
+          "body": "Monthly plans for associates, practice owners and dental groups, with the scope agreed up front so you know what is covered before you commit. If you would rather talk it through first, a short call sorts the right plan in one go.",
           "primary": {
             "label": "See plans and pricing",
             "href": "/pricing"

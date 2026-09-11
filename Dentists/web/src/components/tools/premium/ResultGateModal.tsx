@@ -129,7 +129,7 @@ export function ResultGateModal({
           }
           blurb="A calculator gives the shape of the answer. Dental practice tax, NHS pensions and practice sales are unforgiving in the detail. Tell us your situation and a specialist dental accountant will confirm your exact figure and the sensible next step, with no obligation."
           submitLabel="Get my figure confirmed"
-          successText="Thanks, we will be in touch within one working day. Your result is below."
+          successText="Thanks, that is with a specialist dental accountant. Your result is below."
           className="mt-2"
           messagePlaceholder="The more detail the better. Tell us about your practice situation, rough figures, and what you are trying to work out. A couple of sentences is ideal."
           messageMinLength={40}

@@ -16,11 +16,11 @@ faqs:
   - question: "Should a dental associate incorporate as a limited company?"
     answer: "Usually only worth considering above sustained associate income of around £80,000-£100,000, AND where most engagements sit outside IR35, AND where the associate has tax-planning flexibility (non-working spouse, deferred income horizon, employer pension capacity). Below those thresholds, the administrative cost of running a limited company typically outweighs the tax saving. The 2021 IR35 reforms have removed much of the historical advantage for locums whose engagements are determined inside IR35 by the engaging practice."
   - question: "What expenses do most dental associates miss?"
-    answer: "The most-commonly-missed allowable expenses on dental associate returns: motor expenses between practices (often claimed at the wrong rate or not at all), home office apportionment (where the associate genuinely does practice admin from home), CPD course costs (including online courses), indemnity premium (sometimes left off when paid annually rather than monthly), loupes and personal instruments, professional subscriptions (BDA, specialty associations), phone and internet apportionment, and accountancy fees themselves. We typically find an associate is under-claiming by £1,500-£3,500 a year when we onboard them."
+    answer: "The most-commonly-missed allowable expenses on dental associate returns: motor expenses between practices (often claimed at the wrong rate or not at all), home office apportionment (where the associate genuinely does practice admin from home), CPD course costs (including online courses), indemnity premium (sometimes left off when paid annually rather than monthly), loupes and personal instruments, professional subscriptions (BDA, specialty associations), phone and internet apportionment, and accountancy fees themselves. Work through that list against your last return line by line: if any item is missing entirely, the return is understating the claim, and the mileage rate in particular rose to 55p for the first 10,000 business miles from 6 April 2026."
   - question: "How does an associate buy back additional NHS Pension service?"
     answer: "Members of the NHS Pension Scheme can buy Additional Pension via Additional Pension Contributions (APCs) or transfer in previous pension service from approved schemes. For dental associates the main option is buying additional accrual within the 2015 CARE section through a lump sum or instalment APC arrangement. The cost is determined actuarially based on the additional pension being purchased. This is a regulated pension decision; we model the financial impact but for the actual purchase we work alongside an FCA-authorised IFA."
   - question: "How do I prepare for a mortgage as a self-employed dental associate?"
-    answer: "Most mainstream lenders accept self-employed dental income with two consecutive years of SA302s and HMRC tax overview documents. Some specialist lenders accept one year of SA302s for dentists, recognising the income stability the profession provides. The key requirements are: stable or growing self-employment income year-on-year, no large unexplained income spikes, accountancy fees and other professional costs treated consistently across years, and clean tax payments on time. We produce mortgage-ready SA302 packs inside 48 hours of request and work with the dental-specialist mortgage advisers who lend on dentist income."
+    answer: "Most mainstream lenders accept self-employed dental income with two consecutive years of SA302s and HMRC tax overview documents. Some specialist lenders accept one year of SA302s for dentists, recognising the income stability the profession provides. The key requirements are: stable or growing self-employment income year-on-year, no large unexplained income spikes, accountancy fees and other professional costs treated consistently across years, and clean tax payments on time. You can download both the SA302 and the tax year overview yourself from your HMRC online account once a return has been filed and processed, so it is worth pulling them before you apply rather than during. The usual hold-up is a late or amended return, which changes what the overview shows and leaves the lender looking at a mismatch."
 ctaTitle: "Get your associate tax return done properly"
 ctaBody: "30-minute scoping call with a dentist-only specialist. We will review your current self-assessment, flag the expenses you're missing, and tell you honestly whether incorporation is on the table yet."
 ---
@@ -177,7 +177,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 <li>Lenders look at the trend: stable or growing income year-on-year supports the application; volatility raises questions.</li>
 </ul>
 
-<p>We produce mortgage-ready SA302 packs inside 48 hours of request. If your accountant takes longer than that, you're with the wrong accountant for active dental associate work.</p>
+<p>You can download both documents yourself from your HMRC online account once the return has been filed and processed, which is worth doing before you apply rather than during. The common hold-up is not the paperwork but the filing position: a return submitted late, or amended after submission, changes what the tax year overview shows, and lenders notice the mismatch.</p>
 
 <h2>What to do next</h2>
 
@@ -185,7 +185,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <ul>
 <li>Audit your last filed return against this guide. If indemnity, GDC retention, CPD, motor between practices, and home office apportionment aren't all present and correctly claimed, you're under-claiming.</li>
-<li>If you've been under-claiming in past years, you can amend returns for up to four prior tax years. We do this regularly when onboarding new associate clients.</li>
+<li>If you've been under-claiming in past years, an amendment window reaches back over prior tax years, so a review is worth doing on the filed returns and not only on the current one.</li>
 <li>If you're high-earning and in the NHS Pension Scheme, get the tapered annual allowance modelled. Scheme Pays may be appropriate.</li>
 <li>If you're considering incorporation, get a specific model run for your numbers. The right answer is rarely obvious.</li>
 </ul>

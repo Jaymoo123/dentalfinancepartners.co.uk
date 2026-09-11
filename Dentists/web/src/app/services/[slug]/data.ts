@@ -41,7 +41,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     title: "Dental Accountants UK: What a Specialist Actually Does",
     metaTitle: "Dental Accountants UK: Specialist Tax & Practice Support",
     metaDescription:
-      "What a specialist dental accountant does that a generalist doesn't. NHS contract reporting, associate tax, profit extraction, practice valuation. Fixed fees.",
+      "What a specialist dental accountant does that a generalist doesn't. NHS contract reporting, associate tax, profit extraction, practice valuation.",
     eyebrow: "Specialist dental accountants",
     hero: {
       heading: "Dental accountants for UK practices, principals and associates",
@@ -101,12 +101,12 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What makes you a 'specialist' dental accountant?",
         answer:
-          "Every client we work with is a dentist, a dental practice or a dental group. We are not a general accountancy firm with a dental department. That focus shows in the questions we know to ask, the decisions we model, and the pace at which we work because we have seen the same shape of practice before.",
+          "The test is whether the firm works in dental detail without being walked through it. A specialist should already know that a UDA value is contract-specific, that dividends are not pensionable for an incorporated associate, that goodwill relief on a post-April-2019 purchase carries a qualifying-IP condition, and that a mixed practice crossing into standard-rated work brings partial exemption with it. Ask about those before you ask about anything else.",
       },
       {
         question: "I'm already with a specialist dental firm. Why would I switch?",
         answer:
-          "Most often, fee structure or response time. We work on fixed monthly fees with a stated scope; you should never get a year-end surprise invoice. We respond inside 24 hours, usually same day. If your current firm meets both standards and you are getting proactive advice, there is no reason to switch.",
+          "Often there is no reason to, and that is a fine answer. The situations worth a second opinion are narrower: an NHS Pension certificate nobody has reconciled to the ARR, a UDA shortfall nobody warned you about before year end, an incorporation modelled on the tax saving alone with no pensionable-pay figure beside it, or a practice purchase where the fixtures election was left to completion. If none of those apply and the advice arrives before you ask for it, stay where you are.",
       },
       {
         question: "Do you work with associates as well as practice owners?",
@@ -114,9 +114,9 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "Yes. Self-employed associates, limited-company locums and salaried associates with side income. Associates often need lighter-touch support (self-assessment, expenses, indemnity treatment, NHS Pension AVCs) but the dental specifics still matter, particularly around employment-status risk after the IR35 reforms.",
       },
       {
-        question: "How much do you charge?",
+        question: "What decides how much dental accountancy work costs?",
         answer:
-          "Fixed monthly fees scaled by practice size and service tier. Associates and single-handed sole-trader practices typically sit in the Essentials tier. Multi-associate limited-company practices fall into the Growth tier. Multi-site groups and exit-stage principals work in the Specialist tier. We quote a fixed fee after a 30-minute scoping call so you know the cost before signing.",
+          "Complexity, and it is worth knowing which parts of yours are driving it. A single self-assessment return for a sole-trader associate sits at one end. Add a limited company, payroll with percentage-split associate payments, VAT registration with a partial exemption calculation, an NHS Pension certificate and an annual reconciliation report, and a second site, and each of those is genuinely more work rather than a bolted-on charge. Ask any firm to price against a written scope listing those items, so you are comparing the same job.",
       },
       {
         question: "Can you help with NHS Pension Scheme decisions?",
@@ -245,7 +245,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "Allowable expenses an associate should be claiming",
         body: [
-          "The genuine commercial expenses an associate incurs are deductible in the self-assessment return. Most associates we onboard are claiming roughly half of what they should be.",
+          "The genuine commercial expenses an associate incurs are deductible in the self-assessment return. The ones that go missing are rarely exotic: mileage between practices, the annual indemnity premium, and a phone apportionment nobody ever documented.",
         ],
         bullets: [
           "Indemnity insurance (Dental Protection, MDU, MDDUS) — fully allowable trade expense",
@@ -282,9 +282,9 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     faqs: [
       {
-        question: "How much can a dental associate typically save by switching to a specialist accountant?",
+        question: "Where does an associate actually lose money on a self-assessment return?",
         answer:
-          "Varies. The most common single saving is missed expenses on indemnity, CPD, and motor on a sole-trader return where the previous accountant was conservative. We have seen four-figure refunds on amended returns where the previous claims were under-stated. Switching is rarely about saving £X this year specifically; it is about not leaking that £X every year going forward.",
+          "Three places, and none of them is a clever scheme. First, expenses left off because nobody asked: motor between practices, CPD, an annual indemnity premium, professional subscriptions. Second, the mileage rate, which rose to 55p for the first 10,000 business miles from 6 April 2026, so a return still built on 45p understates the claim. Third, the payments-on-account schedule, which is not a saving but decides whether a correct bill arrives as a shock. An under-claimed return can be amended for earlier years, so a review looks backwards as well as forwards.",
       },
       {
         question: "Do I need to incorporate as an associate?",

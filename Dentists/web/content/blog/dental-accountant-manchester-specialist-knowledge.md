@@ -28,7 +28,7 @@ keyTakeaways:
 schema: ""
 faqs:
   - question: "How much should I expect to pay for a specialist dental practice accountant in Manchester?"
-    answer: "Fees typically range from £200-400 per month for basic compliance services for a single practice, up to £1,000+ monthly for comprehensive services including management accounts, tax planning, and strategic advice. Specialist dental accountants often cost 20-30% more than generalists, but this is typically recovered through better tax planning and avoiding costly mistakes with NHS contracts or compliance issues."
+    answer: "Get the scope in writing before you compare anything. Basic compliance for a single practice is a different engagement from one that adds monthly management accounts, an NHS Pension certificate, payroll with percentage-split associate payments and a VAT partial exemption calculation, and firms bundle those differently. The dental-specific items are where a generalist quote tends to look cheaper: ask explicitly who reconciles UDA delivery against the contract target before year end, because a shortfall discovered in March is a clawback rather than a conversation."
   - question: "Can my dental accountant help with practice acquisitions in Manchester?"
     answer: "Yes, specialist dental accountants provide crucial support during practice acquisitions. They can perform financial due diligence, review NHS contract transfers, assess goodwill valuations, and identify potential red flags in the target practice's accounts. They also understand local Manchester market conditions and can advise on fair pricing and deal structures."
   - question: "What's the difference between a general accountant and a dental specialist accountant?"

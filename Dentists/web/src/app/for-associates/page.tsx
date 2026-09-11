@@ -7,17 +7,17 @@ const data: AudienceStage = {
   title: "Accountants for Associate Dentists UK",
   metaTitle: "Accountants for Associate Dentists UK | Tax, Expenses, IR35",
   metaDescription:
-    "Specialist accountants for UK dental associates. Self-employment status, expense claims, NHS Pension AVCs, IR35 risk, indemnity treatment. Fixed fees.",
+    "Specialist accountants for UK dental associates. Self-employment status, expense claims, NHS Pension AVCs, IR35 risk, indemnity treatment.",
   eyebrow: "For associates",
   badge: "Self-employed associates · Ltd-company locums · NHS + private",
   heroHeading: "Accountants who get associate dentist tax right",
   intro:
     "Most generalist accountants treat associate dentists like any other self-employed professional. They miss the BDA model agreement IR35 risk, under-claim indemnity and CPD, ignore the NHS Pension annual allowance, and produce returns that work but leak. We are dental-only. The questions we ask are different.",
   stats: [
-    { value: "100%", label: "Dental-only client base" },
-    { value: "24h", label: "Response time guarantee" },
+    { value: "55p", label: "AMAP rate, first 10,000 miles" },
     { value: "5", label: "IR35 status factors we test" },
-    { value: "£0", label: "Hidden fees" },
+    { value: "£60k", label: "Pension annual allowance" },
+    { value: "£50k", label: "MTD sign-up threshold, Apr 2026" },
   ],
   concerns: [
     {
@@ -26,7 +26,7 @@ const data: AudienceStage = {
     },
     {
       title: "What expenses can I actually claim?",
-      body: "Indemnity, GDC retention, CPD, professional subscriptions, loupes, motor between practices, phone, accountancy. Most associates we onboard are claiming roughly half of what they should be. We review the last filed return and the current year.",
+      body: "Indemnity, GDC retention, CPD, professional subscriptions, loupes, motor between practices, phone, accountancy. The frequent misses are inter-practice mileage, which runs at 55p a mile for the first 10,000 miles from 6 April 2026, and an annual indemnity premium that never made it onto the return. The last filed return and the current year both get reviewed.",
     },
     {
       title: "Should I be incorporating?",
@@ -56,11 +56,11 @@ const data: AudienceStage = {
     },
     {
       title: "Expense claim review for past three years",
-      body: "Most new associate clients are under-claiming. We review the last three filed years, file amendments where the under-claim is material, and recover what is recoverable.",
+      body: "An under-claimed return can be amended, and the window reaches back further than most associates expect. The last three filed years are reviewed, amendments go in where the under-claim is material, and the rest is left alone rather than dressed up.",
     },
     {
       title: "Mortgage-ready accounts",
-      body: "Lenders want SA302s with consistent income. We produce them inside 48 hours of request. Most lenders accept self-employed dental income with two years of SA302s; some specialist lenders accept one.",
+      body: "Lenders want SA302s and the matching HMRC tax year overviews, usually for the two most recent complete tax years, and they read the trend as much as the total. Steady or rising associate income supports the application; a dip needs explaining. Some specialist lenders will work from a single year.",
     },
     {
       title: "Annual planning conversation",

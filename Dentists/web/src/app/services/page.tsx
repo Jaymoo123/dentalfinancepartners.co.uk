@@ -12,7 +12,7 @@ import { buildService, buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib
 export const metadata: Metadata = {
   title: "Specialist Dental Accountants UK",
   description:
-    "Specialist dental accountants for UK practices, principals, associates and locum dentists. NHS contract accounting, profit extraction, practice valuation. Fixed fees.",
+    "Specialist dental accountants for UK practices, principals, associates and locum dentists. NHS contract accounting, profit extraction, practice valuation.",
   alternates: {
     canonical: `${siteConfig.url}/services`,
     languages: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Specialist Dental Accountants UK | Dental Finance Partners",
     description:
-      "Specialist accountants for UK dental practices, principals, associates and locum dentists. NHS contracts, profit extraction, practice valuation. Fixed fees.",
+      "Specialist accountants for UK dental practices, principals, associates and locum dentists. NHS contracts, profit extraction, practice valuation.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
@@ -113,15 +113,15 @@ const services = [
 const included = [
   {
     title: "Dental-only specialists",
-    body: "Every client we work with is a dentist, a dental partnership, a corporate group or a locum. We do not split focus across other sectors. That depth shows in the questions we ask and the decisions we model.",
+    body: "Dentistry is the whole remit here: NHS contracts and UDA reconciliation, associate agreements, practice sales, the NHS Pension. Nothing on this page is a generalist service with a dental label attached to it.",
   },
   {
-    title: "Response within 24 hours",
-    body: "Email or call us with a question. We respond inside 24 hours, usually the same working day. You should not be waiting a week for an answer when a deadline is moving towards you.",
+    title: "Your enquiry reaches specialists",
+    body: "Tell us what you are dealing with and we pass the detail to dental accountancy firms that handle that specific problem, so the first conversation starts from your NHS contract and your returns rather than from a standard intake script.",
   },
   {
-    title: "Fixed fees, no surprises",
-    body: "You know exactly what you are paying before you sign. No hourly billing, no scope creep. If your practice grows and the work grows, we tell you before any additional fee applies.",
+    title: "Know what to ask before you commit",
+    body: "Ask any firm for the scope in writing: which returns and accounts are covered, who does the NHS Pension certificate, what triggers extra work, and how a mid-year change such as incorporation is handled. A firm that will not put that in writing is telling you something.",
   },
   {
     title: "Proactive, not just compliance",
@@ -141,9 +141,9 @@ const faqs = [
       "A specialist understands the NHS contract economics (UDA value variance by contract and region), the NHS Pension scheme structure (1995, 2008 and 2015 sections), goodwill amortisation rules for dental goodwill acquired after 1 April 2019, and the IR35 implications of NHS engagement status for locums. A generalist applies UK SME rules without that sector context, which is where most preventable tax leakage happens.",
   },
   {
-    question: "How are your fees structured?",
+    question: "How is dental accountancy usually charged?",
     answer:
-      "We work on fixed monthly fees. You agree the scope and price before you sign. If your circumstances change, for example you incorporate, buy a second practice, or take on more associates, we agree any fee change in writing before any extra charge applies. There is no hourly billing and no scope-creep.",
+      "It varies by firm, so ask rather than assume. The things that move the number are the same everywhere: whether you are an associate or a practice owner, whether there is a limited company and payroll, whether the practice is VAT-registered and partially exempt, how many NHS contracts and performers sit on the reconciliation, and who prepares the annual NHS Pension certificate. Ask for the scope in writing, ask what sits outside it, and ask what happens to the quote if you incorporate or buy a second site mid-year.",
   },
   {
     question: "Do you work with associates as well as practice owners?",
@@ -381,13 +381,13 @@ export default function ServicesPage() {
                   <span className="mt-0.5 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--gold)] text-[11px] font-bold text-[var(--navy)]">
                     ✓
                   </span>
-                  <span>Response within 24 hours of your enquiry</span>
+                  <span>Your enquiry passed to dental specialists, not a general pool</span>
                 </li>
               </ul>
             </div>
             <div className="rounded-2xl border-t-4 border-[var(--gold)] bg-white p-6 shadow-xl sm:p-8 lg:p-10">
               <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Book your free call</h3>
-              <p className="mt-2 text-sm text-[var(--muted)]">We will be in touch within 24 hours.</p>
+              <p className="mt-2 text-sm text-[var(--muted)]">Tell us the situation and a specialist dental accountant will make contact.</p>
               <div className="mt-6">
                 <LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />
               </div>

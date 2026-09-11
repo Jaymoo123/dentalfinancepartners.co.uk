@@ -809,8 +809,14 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(GENERIC.length).toBe(3);
   });
 
-  it("GENERIC Q&A 1 is about response speed", () => {
-    expect(GENERIC[0].q).toMatch(/quickly|how.*reply/i);
+  // Response-speed wording was removed estate-wide: the pool model routes an
+  // enquiry to independent firms, so no response window is ours to promise.
+  // Q&A 1 now sets the expectation of WHO answers, not HOW FAST.
+  it("GENERIC Q&A 1 is about who handles the enquiry", () => {
+    expect(GENERIC[0].q).toMatch(/who|specialist/i);
+    expect(`${GENERIC[0].q} ${GENERIC[0].a}`).not.toMatch(
+      /within (24|48) hours|one working day|same.day/i,
+    );
   });
 
   it("GENERIC Q&A 2 is about the first call being free", () => {

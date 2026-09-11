@@ -17,7 +17,7 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
       formId="inline_mini"
       messagePrefix={`[Inline mini-form${topicTag}]`}
       heading="Want this checked against your specific situation?"
-      blurb="Leave your details and a one-line summary. A specialist dental accountant will reply within 24 hours, with no obligation."
+      blurb="Leave your details and a one-line summary of the position. It goes to a specialist dental accountant rather than a general enquiry queue, and there is no obligation."
       submitLabel="Get a quick reply"
       className="my-12 border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-6 sm:p-8"
     />

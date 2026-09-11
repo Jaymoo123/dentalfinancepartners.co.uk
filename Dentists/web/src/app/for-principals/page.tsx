@@ -15,8 +15,8 @@ const data: AudienceStage = {
     "Running a dental practice is a clinical job, a business management job and a tax-structure job at the same time. Most principals get clinical training; most do not get the structure training. We sit alongside as the specialist tax and finance partner you need without becoming another full-time role to manage.",
   stats: [
     { value: "13", label: "Categories of dental tax we cover" },
-    { value: "24h", label: "Response time guarantee" },
-    { value: "Fixed", label: "Monthly fees, no scope creep" },
+    { value: "96%", label: "UDA delivery clawback line" },
+    { value: "43.9%", label: "NPE ceiling on contract value" },
     { value: "60+", label: "Posts on NHS contract economics" },
   ],
   concerns: [

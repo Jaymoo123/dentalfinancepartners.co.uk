@@ -241,7 +241,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
             </div>
             <div className="rounded-2xl border-t-4 border-[var(--gold)] bg-white p-6 shadow-xl sm:p-8 lg:p-10">
               <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Book your free call</h3>
-              <p className="mt-2 text-sm text-[var(--muted)]">We will be in touch within 24 hours.</p>
+              <p className="mt-2 text-sm text-[var(--muted)]">Say what you are dealing with and a dental specialist takes it from there.</p>
               <div className="mt-6">
                 <LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />
               </div>

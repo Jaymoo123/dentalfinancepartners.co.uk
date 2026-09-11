@@ -18,7 +18,7 @@ export function CalcResultCta({ campaign }: { campaign: string; label?: string }
         formId="calc_result"
         messagePrefix={`[Calculator: ${campaign}]`}
         heading="Confirm your figure with a specialist dental accountant"
-        blurb="NHS pensions and practice tax are unforgiving in the detail. Have a specialist check your position, confirm the number is right for your specific situation, and point out anything worth acting on. No obligation, and we reply within one working day."
+        blurb="A calculator works from what you type into it. NHS pensions and practice tax are unforgiving in the detail, so have a specialist confirm the figure holds for your actual contract and income mix, and flag anything worth acting on before a deadline fixes it. No obligation."
         submitLabel="Get my figure checked"
         className="rounded-2xl border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-5 sm:p-6"
       />

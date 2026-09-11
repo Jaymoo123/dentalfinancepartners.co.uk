@@ -22,7 +22,7 @@ keyTakeaways:
 schema: ''
 faqs:
 - question: How much does a specialist dental accountant cost in the UK?
-  answer: Fees vary by firm and service scope. For associates, annual fees typically range from £450 to £1,200 per year. For practice owners, fees start around £600 and can reach £3,000 or more depending on the complexity of the practice structure, number of associates, and VAT registration status. Many firms offer fixed-fee models so you know the cost upfront regardless of how much support you need during the year.
+  answer: The honest answer is that it depends on the job, and the job varies far more in dentistry than the headline quotes suggest. An associate filing one self assessment return sits at one end. A VAT-registered limited-company practice with payroll, percentage-split associate payments, a partial exemption calculation, an annual NHS Pension certificate and a UDA reconciliation sits at the other, and each of those items is real work rather than an add-on. Ask for the scope in writing, item by item, and compare firms on that rather than on a monthly figure.
 - question: Can a general accountant handle a dental practice's accounts?
   answer: A general accountant can prepare annual accounts and file tax returns for a dental practice. However, they may miss dental-specific issues such as UDA contract accounting, NHS pension annual allowance calculations, associate self-employment status risks, and VAT exemption rules for cosmetic treatments. These gaps can lead to higher tax bills, HMRC penalties, or missed reliefs. A specialist dental accountant brings sector knowledge that a generalist typically lacks.
 - question: Do I need a dental accountant if I am an associate dentist?
@@ -171,7 +171,7 @@ imageCredit:
 <li>MTD software setup and quarterly reporting.</li>
 </ul>
 
-<p>Many firms offer fixed-fee models where the fee remains the same regardless of time or support required <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. This gives you predictable costs and encourages you to ask questions without worrying about the meter running.</p>
+<p>Specialist dental accountancy is an established niche, and the British Dental Journal has covered why it exists as a distinct one <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. The practical consequence for a practice is that the scope of an engagement matters more than the way it is billed: agree in writing which returns, accounts, payroll runs and pension certificates are covered, and you will know what a quote actually buys.</p>
 
 <p>For a full overview of what we offer, visit our <a href="/services">services page</a>.</p>
 

@@ -1,51 +1,130 @@
-﻿/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
 @import "tailwindcss" source("..");
 @source "../../../../packages/web-shared";
+@import "@accounting-network/web-shared/design/globals-standard.css";
 
 /*
-  UI ground rules (mobile-first) â€” Dental Finance Partners
+  UI ground rules (mobile-first) - Dental Finance Partners
   - Navy + gold brand; light surfaces, high-contrast type.
-  - Touch targets â‰¥44px; no horizontal bleed; form inputs 16px on mobile.
+  - Touch targets >=44px; no horizontal bleed; form inputs 16px on mobile.
+
+  Heading rhythm, motion, glow and the radius chain come from the shared kit
+  imported above (packages/web-shared/design/globals-standard.css). Do not
+  re-declare either half of its two-block heading split here.
+
+  tw-animate-css is deliberately NOT imported: it is not a declared dependency
+  of this site and nothing in packages/web-shared/design uses its classes
+  (verified by grep for animate-in / fade-in / zoom-in / slide-in-from).
+  Importing it would resolve only via a sibling site's hoisted node_modules and
+  would fail on a clean install (playbook T24).
+
+  BRAND CONTRACT (docs/dentists/DESIGN_DELTA.md s1 + s4, owner-approved
+  2026-09-11): NAVY #001b3d is the primary-* ramp. GOLD #b8975d is demoted to a
+  fixed non-text accent: rules, marks, on-dark text and the existing
+  navy-labelled gold buttons (6.23, passes). Gold is barred from one job only,
+  carrying text on a light ground (2.75 on white, 2.43 on --surface-elevated,
+  3.76 even at --gold-strong). Gold is NOT deleted and NOT darkened.
 */
 
 :root {
+  /* Brand navy. 950/900/800/700 of the primary ramp below, by the same names
+     the rest of the site already uses. */
+  --navy-deep: #00132e;
   --navy: #001b3d;
   --navy-soft: #0d2d52;
   --navy-muted: #1a3a5c;
+
+  /* Brand gold - fixed accent, never text on a light ground. */
   --gold: #b8975d;
   --gold-strong: #9e7f4a;
   --gold-soft: rgba(184, 151, 93, 0.14);
-  /* Cleaner, consultancy-style neutrals */
-  --background: #f4f6f9;
+
+  /* Neutrals move to slate (DESIGN_DELTA s1 "neutral ramp"), as Medical did.
+     --background MUST be slate-50, not the old #f4f6f9: red-600 (warning step 1)
+     measures 4.46 on #f4f6f9 and 4.62 on slate-50, so the ladder below is only
+     legal once the ground moved. --ink STAYS navy; it is brand, not neutral,
+     and at 17.15 on white it beats the slate-900 standard. */
+  --background: #f8fafc; /* slate-50 (was #f4f6f9) */
   --surface: #ffffff;
   --surface-elevated: #eef1f6;
   --ink: #001b3d;
-  --ink-soft: #2d3f5c;
-  --muted: #5c6b80;
+  --ink-soft: #334155; /* slate-700 (was #2d3f5c), 10.35 on white */
+  --muted: #475569;    /* slate-600, 7.58 on white / 6.69 on --surface-elevated */
   --border: #e2e8f0;
-  /* Semantic aliases */
+
+  /* Semantic aliases. These still point at gold: it remains the accent, and the
+     usages that put it on a light ground live in files later phases own. */
   --accent: var(--gold);
   --accent-strong: var(--gold-strong);
   --accent-soft: var(--gold-soft);
   --ring-offset: var(--background);
 
   /* Canonical brand tokens for @accounting-network/web-shared components.
-     Each site aliases its existing brand colours to these generic names so
-     workspace components render correctly without forcing brand unification. */
-  --brand-primary: var(--gold);
-  --brand-primary-strong: var(--gold-strong);
-  --brand-on-primary: var(--navy);
+     These used to alias GOLD with a navy label, which is the inversion
+     DESIGN_DELTA s1 records under "semantic overrides": it put gold on text
+     surfaces the kit assumes are safe. Navy ground with a white label measures
+     17.15 and is the approved resolution. */
+  --brand-primary: var(--navy);
+  --brand-primary-strong: var(--navy-soft);
+  --brand-on-primary: #ffffff;
 
-  /* Chart colour palette (recharts / research pages) -- navy/gold family */
-  --chart-1: #b8975d;   /* gold */
-  --chart-2: #001b3d;   /* navy */
+  /* Radius chain root. The kit's globals-standard.css @theme derives
+     --radius-sm/md/lg/xl and --btn-radius from this, so --radius-xl =
+     calc(0rem + 4px) = 4px and --btn-radius = 4px. Without this declaration the
+     calc is invalid, --radius-xl collapses and every kit button falls back to a
+     9999px pill: the two defects the generalist port shipped. */
+  --radius: 0rem;
+
+  /* Button ground trio. Navy at full strength, white label 17.15. Dentists is
+     the one site in the programme whose live button already passed (navy on
+     gold, 6.23), so this is not a contrast repair; it is the ramp swap. The
+     kit's btnPrimary reads these with the 600/700/800 primary steps as
+     fallbacks. */
+  --btn-ground: #001b3d;         /* navy,       white label 17.15 */
+  --btn-ground-hover: #0d2d52;   /* navy-soft,  white label 13.86 */
+  --btn-ground-active: #1a3a5c;  /* navy-muted, white label 11.64 */
+
+  /* Cream hero surface for the kit's heroCreamSurface (Property's value). */
+  --hero-cream: #fbfaf7;
+
+  /* Brand-glow channels ("R G B") the kit's num-glow / card-glow / related-card
+     rules key off. Undeclared, they inherit Property's emerald; these are the
+     navy ramp's 500 / 600 / 400 / 100 steps, matching the kit's own shape. */
+  --brand-glow: 64 98 140;         /* primary-500 #40628c */
+  --brand-glow-deep: 45 74 111;    /* primary-600 #2d4a6f */
+  --brand-glow-edge: 92 128 171;   /* primary-400 #5c80ab */
+  --brand-glow-faint: 221 230 240; /* primary-100 #dde6f0 */
+
+  /* Warning / duty / deadline / penalty ladder D-W1 (DESIGN_DELTA s1 + s4,
+     owner-approved 2026-09-11). OFF gold AND off amber and orange entirely:
+     gold sits in the amber/tan family, so an amber or orange penalty chip would
+     read as brand furniture rather than a warning. Every step clears 4.5:1 on
+     white and on slate-50, and every step is directly labelled in use, never
+     colour alone. Tokens only here; existing usages belong to the phases that
+     own those files. */
+  --warn-1: #dc2626;  /* red-600,    a duty bites / deadline   (white 4.83) */
+  --warn-2: #be185d;  /* pink-700,   escalation, charge arises (white 6.04) */
+  --warn-3: #6b21a8;  /* purple-800, penalty / regulatory      (white 8.72) */
+  --warn-1-on-dark: #f87171;  /* red-400    on navy 6.20 */
+  --warn-2-on-dark: #f472b6;  /* pink-400   on navy 6.48 */
+  --warn-3-on-dark: #c084fc;  /* purple-400 on navy 6.49 */
+
+  /* The one red that stays: form-error text, always paired with role="alert"
+     and aria-invalid, never resting on colour alone. */
+  --form-error: #b91c1c;  /* red-700, white 6.47 */
+
+  /* Standard card ring: slate-200 at 70%, the kit's `ring-1 ring-slate-200/70`. */
+  --card-ring: rgba(226, 232, 240, 0.7);
+
+  /* Chart colour palette (recharts / research pages) - navy/gold family. */
+  --chart-1: #001b3d;   /* navy */
+  --chart-2: #b8975d;   /* gold */
   --chart-3: #1a3a5c;   /* navy-muted */
   --chart-4: #9e7f4a;   /* gold-strong */
-  --chart-5: #5c6b80;   /* muted */
-  /* shadcn-style semantic aliases used by chart.tsx tooltip */
-  --background: #f4f6f9;
+  --chart-5: #475569;   /* slate-600 */
+
+  /* shadcn-style semantic aliases used by components/ui/chart.tsx. */
   --foreground: var(--ink);
-  --border: #e2e8f0;
   --muted-foreground: var(--muted);
 }
 
@@ -53,7 +132,34 @@
   --color-background: var(--background);
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
-  --font-serif: var(--font-cormorant);
+  /* TRANSITIONAL NO-OP (playbook T26). Cormorant Garamond is retired, but 127
+     `font-serif` and 17 `display-serif` class usages still sit in .tsx files
+     that phases 2 to 6 own. Mapping the retired family onto the survivor keeps
+     every one of them rendering in Plus Jakarta Sans instead of falling back to
+     Times for the duration of the port. Each later phase deletes its own
+     classes; DELETE THIS LINE (and .display-serif below) when both counts reach
+     zero. */
+  --font-serif: var(--font-plus-jakarta);
+}
+
+/* Primary ramp for the design kit's primary-* utilities. Navy, anchored so that
+   the brand values the site already uses ARE ramp steps: 950 = --navy-deep,
+   900 = --navy, 800 = --navy-soft, 700 = --navy-muted. White on 600 measures
+   9.04 and on 700 measures 11.64, so kit buttons, borders and outlines all
+   clear the floor wherever they land. GOLD CAN NEVER OCCUPY 600 OR 700: white
+   on gold is 2.75 and on --gold-strong 3.76. */
+@theme {
+  --color-primary-50: #f1f5f9;
+  --color-primary-100: #dde6f0;
+  --color-primary-200: #c0d0e2;
+  --color-primary-300: #8aa6c6;
+  --color-primary-400: #5c80ab;
+  --color-primary-500: #40628c;
+  --color-primary-600: #2d4a6f;
+  --color-primary-700: #1a3a5c;
+  --color-primary-800: #0d2d52;
+  --color-primary-900: #001b3d;
+  --color-primary-950: #00132e;
 }
 
 *,
@@ -83,12 +189,12 @@ main {
   min-width: 0;
 }
 
-/* Hero â€” deep navy with soft light drift (clean, not busy) */
+/* Hero - deep navy with soft light drift (clean, not busy) */
 .hero-brand {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, #00132e 0%, var(--navy) 38%, #0a2544 100%);
-  color: #f8fafc;
+  background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 38%, var(--navy-soft) 100%);
+  color: var(--background);
 }
 
 .hero-brand::before {
@@ -97,7 +203,7 @@ main {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 80% 55% at 100% 0%, rgba(184, 151, 93, 0.12), transparent 55%),
+    radial-gradient(ellipse 80% 55% at 100% 0%, var(--gold-soft), transparent 55%),
     radial-gradient(ellipse 50% 40% at 0% 100%, rgba(255, 255, 255, 0.06), transparent 50%);
 }
 
@@ -115,7 +221,9 @@ main {
   z-index: 1;
 }
 
-/* Transform-only motion â€” no opacity keyframes (avoids invisible hero on first paint / SSR). */
+/* Transform-only motion - no opacity keyframes (avoids invisible hero on first
+   paint / SSR). This deliberately overrides the shared kit's fadeInUp variant of
+   .hero-reveal / .hero-reveal-delay, which animates opacity. */
 @media (prefers-reduced-motion: no-preference) {
   .hero-reveal,
   .hero-reveal-delay,
@@ -136,49 +244,46 @@ main {
   }
 }
 
+/* The kit declares .hero-reveal / .hero-reveal-delay unconditionally, so without
+   this the imported opacity fade would be the ONLY rule left under reduced
+   motion and the hero would animate where it must not. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal,
+  .hero-reveal-delay,
+  .hero-reveal-delay-2 {
+    animation: none;
+  }
+}
+
 @keyframes hero-reveal {
   to {
     transform: translateY(0);
   }
 }
 
-.eyebrow-gold {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold);
-}
+/* .eyebrow-gold and .rule-gold deleted: zero consumers anywhere in Dentists/web/src
+   (DISPOSITION_SLICE1 B.2 claims two uses of .eyebrow-gold; there are none).
+   The eyebrow idiom comes from the kit's EyebrowRule from here on. */
 
-@media (min-width: 640px) {
-  .eyebrow-gold {
-    font-size: 0.75rem;
-  }
-}
-
-.rule-gold {
-  height: 2px;
-  width: 3rem;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, var(--gold), rgba(184, 151, 93, 0.35));
-}
-
+/* TRANSITIONAL NO-OP (playbook T26), pair of the --font-serif map above.
+   Cormorant is retired; this keeps the 18 surviving `display-serif` usages in
+   Plus Jakarta rather than Times. Delete with the --font-serif line. */
 .display-serif {
-  font-family: var(--font-cormorant), ui-serif, "Times New Roman", serif;
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
 }
 
 .card-premium {
   border: 1px solid var(--border);
   background: var(--surface);
-  border-radius: 1rem;
+  border-radius: var(--radius-xl);
   box-shadow: 0 1px 0 rgba(0, 27, 61, 0.04);
 }
 
-/* Flat panel â€” Sidekick-style list rows */
+/* Flat panel - list rows */
 .card-flat {
   border: 1px solid var(--border);
   background: var(--surface);
-  border-radius: 1rem;
+  border-radius: var(--radius-xl);
 }
 
 /* Hero glass tiles */
@@ -186,15 +291,19 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border-radius: 1rem;
+  border-radius: var(--radius-xl);
 }
 
+/* Section eyebrow. Was --gold-strong, which measures 3.76 on white and 3.32 on
+   --surface-elevated: a live text fail on all 12 homepage usages. Gold is barred
+   from text on a light ground, so this moves to primary-700 (11.64 on white).
+   The consuming markup is untouched; this is a token-layer repair only. */
 .section-label {
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold-strong);
+  color: var(--color-primary-700);
 }
 
 .article-body.prose-blog {
@@ -214,7 +323,7 @@ main {
 .article-body.prose-blog h2 {
   margin-top: 1.75rem;
   margin-bottom: 0.65rem;
-  font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--ink);
@@ -260,6 +369,9 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* Body links: navy, with the gold underline kept as a non-text accent (the
+   underline is a graphic, the word itself is navy). Hover moves the word to
+   primary-700 rather than --gold-strong, which was 3.76 on white. */
 .article-body.prose-blog a {
   color: var(--navy-soft);
   font-weight: 500;
@@ -269,7 +381,7 @@ main {
 }
 
 .article-body.prose-blog a:hover {
-  color: var(--gold-strong);
+  color: var(--color-primary-700);
   text-decoration-color: var(--gold);
 }
 

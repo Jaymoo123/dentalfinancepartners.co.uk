@@ -1,29 +1,40 @@
-/** Shared layout primitives — mobile-first, Dental Finance Partners */
-export const siteContainer =
-  "mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 min-w-0";
+/** Layout utility recipes - the Property standard, consumed from the shared design kit.
+ *  Brand behaviour comes from tokens in globals.css (--color-primary-*, the --btn-ground
+ *  trio, --hero-cream), so these strings are the estate's and only the tokens are Dentists'.
+ *  docs/dentists/DESIGN_DELTA.md records the approved contract: navy #001b3d is the
+ *  primary-* ramp and the button ground (white label 17.15); gold #b8975d is demoted to a
+ *  fixed non-text accent and is neither deleted nor darkened.
+ *
+ *  The container, section and button strings here were already byte-identical to the kit's,
+ *  so this file is a re-export plus the two things that are genuinely local. */
 
-/** Wider reading width for marketing homepage (Sidekick-style rhythm). */
-export const siteContainerLg =
-  "mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 min-w-0";
+export {
+  siteContainer,
+  siteContainerLg,
+  siteContainerXl,
+  contentNarrow,
+  sectionY,
+  sectionYLoose,
+  btnPrimary,
+  btnSecondary,
+  btnOnDark,
+  btnOnCream,
+  heroCreamSurface,
+} from "@accounting-network/web-shared/design/layout-utils";
 
-export const contentNarrow =
-  "mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 min-w-0";
-
-export const sectionY = "py-12 sm:py-16 md:py-20";
-
-export const sectionYLoose = "py-16 sm:py-20 md:py-24 lg:py-28";
-
+/** LOCAL OVERRIDE of the kit's `focusRing`, which outlines primary-600.
+ *  Dentists puts interactive controls on the navy `.hero-brand` ground, where primary-600
+ *  #2d4a6f measures 1.90 against navy and the keyboard indicator effectively disappears.
+ *  primary-400 #5c80ab measures 4.09 on white and 4.19 on navy, so ONE constant clears the
+ *  3:1 graphics floor on both grounds and no call site has to choose.
+ *  ponytail: one ring, not an on-dark variant of every recipe (Medical needed two because
+ *  its ramp is amber; a navy ramp does not). */
 export const focusRing =
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400";
 
-/** Primary CTA — gold surface, navy label (brand) */
-export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] shadow-sm transition-all duration-200 hover:bg-[var(--gold-strong)] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
-
-/** Secondary — navy outline, for use on light backgrounds */
-export const btnSecondary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 active:bg-[var(--navy)]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
-
-/** Ghost / on-dark: light border */
-export const btnOnDark =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all duration-200 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
+/** The gold button the owner decision of 2026-09-11 explicitly preserves: gold ground,
+ *  NAVY label, 6.23:1, the one button job gold keeps. `btnPrimary` above is now the kit's
+ *  navy-ground/white-label standard, so this is the recipe a later phase places wherever the
+ *  gold CTA should survive. A white label on gold is 2.75 and must never be written. */
+export const btnGold =
+  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-[var(--gold)] px-8 py-3.5 text-base font-bold text-[var(--navy)] transition-all duration-150 hover:bg-[var(--gold-strong)] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400";

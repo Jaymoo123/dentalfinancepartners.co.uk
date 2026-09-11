@@ -22,7 +22,7 @@ keyTakeaways:
 schema: ''
 faqs:
 - question: How much do accountants for dental practices charge?
-  answer: Fees vary by firm and service level. According to the British Dental Journal, the dental associate package costs £450 per year or £37.50 per month, while practice fees start from £600 per year or £50 per month. These figures reflect specialist knowledge of NHS contracts, UDA values, and dental-specific tax rules. Always ask for a fixed-fee quote and a clear list of what is included.
+  answer: There is no published benchmark for dental accountancy, so compare on scope rather than on a headline number. What drives the work is whether you are an associate or a practice owner, whether there is a limited company and payroll, whether the practice is VAT-registered and partially exempt, how many NHS contracts sit behind the reconciliation, and who prepares the annual NHS Pension certificate. Ask each firm to quote against that list in writing, and ask what falls outside it.
 - question: Can a general accountant handle a dental practice's finances?
   answer: A general accountant can file your tax return, but they may miss dental-specific opportunities. UDA contract analysis, NHS pension annual allowance planning, goodwill amortisation rules, and VAT exemption for dental treatment all require specialist knowledge. The cost of a missed capital allowance claim or incorrect VAT treatment can far exceed the fee difference between a generalist and a specialist.
 - question: What should I look for when choosing a dental accountant?
@@ -48,7 +48,7 @@ imageCredit:
 
 <p>Dentistry in the UK operates under a set of financial rules that differ from most other small businesses. NHS contract values, UDA targets, the NHS Pension Scheme, and the specific VAT treatment of dental treatment all create a tax and compliance environment that a generalist accountant may not fully understand. <a href="/services/dental-accountants">Accountants for dental practices</a> specialise in these areas because the cost of getting them wrong can be significant.</p>
 
-<p>The British Dental Association has noted that the dental associate package costs £450.00 per year or £37.50 per month, and for dental practices, fees start from £600.00 per year or £50.00 per month <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. These figures reflect the premium for specialist knowledge. But what do you actually get for that fee?</p>
+<p>Specialist dental accountancy is a recognised niche rather than a marketing label, and the British Dental Journal has covered why it exists as one <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The practical question for a practice is not what the label costs but what the work has to cover: NHS contract income and year-end reconciliation, the pensionable-pay position, VAT where private and cosmetic income sits alongside exempt treatment, and the capital allowances on surgery equipment and fit-out. Those four are where a generalist engagement usually runs out of road.</p>
 
 <h2>Core Services a Dental Accountant Should Provide</h2>
 
@@ -104,7 +104,7 @@ imageCredit:
 <li>IR35 status for locum dentists working through limited companies</li>
 </ul>
 
-<p>Remote Accounting LTD is an accounting firm specialising in the dental industry, led by Luke <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. The firm uses cloud accounting software to be Making Tax Digital (MTD) ready, and online practice management tools allow preparation of accounts within a two-week turnaround period <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This level of efficiency is typical of firms that have built their systems around dental workflows.</p>
+<p>Cloud bookkeeping is now the practical baseline rather than a differentiator, and it matters most for the Making Tax Digital timetable: qualifying income above £50,000 brings you into MTD for Income Tax from 6 April 2026, above £30,000 from 6 April 2027, and above £20,000 from 6 April 2028. For a dental practice the test worth applying is narrower than the software brand. Ask whether the bookkeeping is structured so that NHS contract income, patient charges collected on the contract, and private and plan income are separable all year round, because a year-end that cannot split those cannot produce a defensible UDA reconciliation or a partial exemption calculation without going back over the records by hand.</p>
 
 <h2>The Cost of Getting It Wrong</h2>
 

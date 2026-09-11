@@ -35,11 +35,11 @@ export default function ContactPage() {
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Contact</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        New enquiries go through the form below. Fill it in and we will be in touch within one working day.
+        New enquiries go through the form below. The more you can say about your situation, NHS or private, associate or principal, sole trader or limited company, the better matched the accountant who picks it up.
       </p>
       {isPackagesMode(niche) ? (
         <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-          Already know what you need? Our fixed monthly plans start at £29 a month and you can{" "}
+          Already know what you need? You can see what each level of support covers and{" "}
           <Link
             href="/pricing"
             className="font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4"
@@ -56,7 +56,7 @@ export default function ContactPage() {
         <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
           <h2 className="font-serif text-lg font-semibold text-[var(--ink)]">How to reach us</h2>
           <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-            Send us a few details using the form and a dental accountant will reply within one working day, by email or with a call at a time that suits you.
+            Send us a few details using the form. A dental accountant will follow up by email, or by phone at a time you say suits you if you would rather talk it through.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
             Registered office: {siteConfig.company.registeredOfficeLine}.

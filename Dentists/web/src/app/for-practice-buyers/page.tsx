@@ -17,7 +17,7 @@ const data: AudienceStage = {
     { value: "60-80%", label: "Typical goodwill share of price" },
     { value: "24-month", label: "BADR + Section 162 lead time" },
     { value: "0.6-1.4x", label: "EBITDA multiple range" },
-    { value: "Fixed", label: "Due diligence fee, no hourly bill" },
+    { value: "6.5%", label: "Goodwill relief, post-April-2019 buys" },
   ],
   concerns: [
     {
@@ -70,7 +70,7 @@ const data: AudienceStage = {
   faqs: [
     {
       q: "How much should I budget for financial due diligence?",
-      a: "Our fixed fee for buy-side financial DD on a typical single-practice acquisition starts at around £2,500-£4,000 depending on practice size, accounts quality, and NHS contract complexity. Multi-site acquisitions are scoped individually. The fee is fixed before we start; it does not run on hourly billing. Compared with the typical £400k-£1.5m+ deal value, that DD spend protects significantly more than it costs.",
+      a: "Budget for two separate workstreams and get a written quote for each before you instruct. Financial due diligence is quoted by the adviser you appoint, and what moves their number is the size of the practice, how clean the accounts and bookkeeping are, how many NHS contracts and performers sit behind the activity, and whether the deal is one site or several. Legal due diligence is quoted separately by a dental solicitor. Ask both to price against a written scope naming the specific items you want covered: EBITDA normalisation, NHS contract and UDA delivery history, associate agreements and their status risk, the goodwill and fixtures split, and the section 198 fixtures election. Scope, not headline price, is what decides whether the work catches anything.",
     },
     {
       q: "What's a fair EBITDA multiple to pay in 2025/26?",

@@ -47,7 +47,7 @@ export const serviceTiers: ServiceTier[] = [
       "Holding company and group structure modelling",
       "Buy-side financial due diligence",
       "Goodwill methodology and asset split",
-      "Priority same-day response",
+      "Direct line to the adviser handling the sale",
     ],
     cta: "Book a free scoping call",
     ctaHref: "/contact",
@@ -60,10 +60,10 @@ export const serviceTiers: ServiceTier[] = [
 // 5 topic guides  — count of named category pages under src/app/blog/ (associate-tax,
 //                   buying-a-practice, practice-accounting, practice-finance, vat-and-compliance)
 // 6 service areas — count of entries in services array in src/app/services/page.tsx
-// 24hr response   — stated in services page copy (included[1].body + CTA section)
+// 96% UDA line    = HP §3.A clawback threshold (deliver below 96% and the commissioner recovers)
 export const siteStats: StatItemConfig[] = [
   { icon: "🧮", value: "13", label: "Free dental calculators" },
   { icon: "📚", value: "5", label: "Specialist topic guides" },
   { icon: "⚙️", value: "6", label: "Service areas covered" },
-  { icon: "⏱️", value: "24hr", label: "Response commitment" },
+  { icon: "📋", value: "96%", label: "UDA delivery clawback line" },
 ];

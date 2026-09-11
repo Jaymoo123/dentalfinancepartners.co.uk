@@ -20,7 +20,7 @@ const btnMailOutline =
 
 export const metadata: Metadata = {
   title: "Dental Accountants | Accountants for Dentists UK",
-  description: "Specialist dental accountants for UK practice owners, associates and groups. NHS contracts, associate tax, VAT and acquisitions. Fixed fees, UK-wide.",
+  description: "Specialist dental accountants for UK practice owners, associates and groups. NHS contracts, associate tax, VAT and acquisitions. UK-wide.",
   alternates: {
     canonical: siteConfig.url,
     languages: {
@@ -131,9 +131,9 @@ const trustItems = [
     body: "Dental income rarely sits on one side of the line. UDA delivery and superannuation on the NHS side, plan and private fees on the other, taxed differently. Both are handled as one position rather than separately.",
   },
   {
-    title: "Transparent pricing",
-    stat: "Fixed fees",
-    body: "No hidden charges, no long-term contracts. You know exactly what you're paying for.",
+    title: "Practice sales and purchases",
+    stat: "60-80%",
+    body: "Goodwill is typically 60 to 80% of a dental practice price, and the split against fixtures decides what relief the buyer ever sees. Get it wrong at completion and it cannot be unwound.",
   },
 ];
 
@@ -147,8 +147,8 @@ const whySpecialistItems = [
     body: "Management accounts structured for dental KPIs. Tax planning for associates and practice owners. Acquisition support and due diligence. We help you make better financial decisions, not just file returns.",
   },
   {
-    title: "Transparent and accessible",
-    body: "Fixed fees with no surprises. You speak to the same accountant every time. Plain English explanations, not accounting jargon. We&apos;re here when you need us.",
+    title: "Plain English, not jargon",
+    body: "A recommendation you cannot follow is not advice. Decisions get explained in the terms you already use: UDA delivery, fee split, drawings, superannuation, so you can weigh them yourself rather than take them on trust.",
   },
 ];
 
@@ -180,7 +180,7 @@ const homeFaqs = [
   {
     question: "How much does a dental accountant cost?",
     answer:
-      "We work on fixed fees with no hidden charges and no long-term contracts, so you know exactly what you are paying for. The right fee depends on whether you are an associate, a single-site owner, or a group, and on the complexity of your NHS and private income. The first conversation is free and without obligation.",
+      "There is no standard figure in dentistry, and any quote you are given should be read against a written scope rather than compared on its headline. An associate filing one self assessment return is a different job from a VAT-registered limited-company practice with payroll, percentage-split associate payments, an annual NHS Pension certificate and a UDA reconciliation. Before you compare firms, pin down four things: which returns and accounts are included, who prepares the pension certificate, what counts as extra work, and what happens to the quote if you incorporate or buy a second site part-way through the year.",
   },
   {
     question: "Do you work with associate dentists as well as practice owners?",
@@ -436,7 +436,7 @@ export default function HomePage() {
             <span className="block">and how we do it.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            We do not hand you a services brochure and ask you to pick a package. Most clients come to us with a specific problem, and we start from there. What follows is what ongoing support typically looks like once we are working together.
+            We do not hand you a services brochure and ask you to pick a package. An enquiry usually arrives attached to a specific problem, a clawback letter, an incorporation decision, a practice on the market, and that is where the work starts. What follows is what ongoing support typically looks like.
           </p>
           <ol className="mt-14 grid list-none gap-10 pl-0 sm:gap-12 lg:grid-cols-2">
             {howWeWorkItems.map((item) => (
@@ -473,7 +473,7 @@ export default function HomePage() {
               A generalist accountant isn&apos;t cutting corners. They simply don&apos;t see enough dental clients to build genuine expertise in how the sector works. They won&apos;t know, off the top of their head, how NHS superannuation interacts with your pension annual allowance, or what HMRC&apos;s view is on associate expense claims.
             </p>
             <p>
-              We do, because it comes up constantly. That breadth of exposure — across hundreds of dental clients — means we can spot issues before they become problems, and give advice grounded in what actually happens in dental practices, not just what the textbook says.
+              A dental specialist does, because those questions are the everyday work rather than the exception. That is what lets a problem be spotted before it becomes one, and it grounds the advice in how NHS contracts and associate agreements behave in practice, not just in what the textbook says.
             </p>
             <p>
               It also means the conversation is more efficient. You don&apos;t have to explain how an NHS contract works, or what a UDA is, or why your income varies each month. We already know, so we can focus on solving your specific problem.
@@ -541,7 +541,7 @@ export default function HomePage() {
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">Prefer us to contact you?</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Leave a few details in the form and one of our dental accountants will come back within one working day to recommend the right plan for your situation.
+                Leave a few details in the form, including whether you are an associate, a principal or a locum, and a specialist dental accountant will pick it up from there.
               </p>
             </div>
             <div className="card-flat p-6 sm:p-8 lg:p-10">
@@ -570,7 +570,7 @@ export default function HomePage() {
                   Get in touch
                 </Link>
               </div>
-              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
+              <p className="mt-10 text-sm font-medium text-[var(--ink)]">Rather not pick up the phone first?</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
                 Fill in the form and one of our dental accountants will be in touch to arrange a short introductory call. No hard sell — just an honest conversation about your situation and whether we&apos;re the right fit.
               </p>

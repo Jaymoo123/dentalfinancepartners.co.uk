@@ -372,7 +372,7 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Dental Finance Partners</p>
-              <p className="truncate text-[11px] text-white/70">A specialist replies within one working day</p>
+              <p className="truncate text-[11px] text-white/70">Goes to a dental specialist, not a general queue</p>
             </div>
             <button
               type="button"

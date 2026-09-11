@@ -17,7 +17,7 @@ const data: AudienceStage = {
     { value: "3", label: "Structures we compare" },
     { value: "£80k+", label: "Typical Ltd-co break-even" },
     { value: "2021", label: "When IR35 rules changed for locums" },
-    { value: "Fixed", label: "Monthly fees" },
+    { value: "6% / 2%", label: "Class 4 NIC rates either side of £50,270" },
   ],
   concerns: [
     {
@@ -64,7 +64,7 @@ const data: AudienceStage = {
     },
     {
       title: "Mortgage-ready accounts",
-      body: "Lenders want SA302s with consistent income for sole-trader locums or two years of company accounts for Ltd-co locums. We produce both inside 48 hours of request and work with the dental-specialist mortgage advisers who lend on dentist income.",
+      body: "A sole-trader locum is assessed on SA302s and tax year overviews; a limited-company locum is usually assessed on two years of company accounts, and some lenders read salary plus dividends while others read share of net profit, which can change the borrowing figure substantially. Knowing which basis a lender uses before you apply is worth more than a bigger dividend.",
     },
   ],
   faqs: [
