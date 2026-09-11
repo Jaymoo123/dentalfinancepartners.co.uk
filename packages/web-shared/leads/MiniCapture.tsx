@@ -435,7 +435,7 @@ export function MiniCapture({
      link is the data-sharing disclosure, so it is the one link that must be legible. */
   // Consent is acknowledgement-by-submission (owner decision 2026-07-17): notice text only, no checkbox.
   const consentNotice = (
-    <p className="text-xs leading-relaxed text-slate-500">
+    <p className="text-xs leading-relaxed text-slate-600">
       {siteConfig.consentText} See our{" "}
       <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-[var(--brand-primary-text,var(--brand-primary))] underline">Privacy Policy</a>.
     </p>
@@ -623,7 +623,7 @@ export function MiniCapture({
                     {status === "loading" ? "Verifying your details..." : submitLabel}
                   </button>
                 </div>
-                <p className="text-xs leading-relaxed text-slate-500">
+                <p className="text-xs leading-relaxed text-slate-600">
                   You&apos;ll get a text and email from us right away. A quick reply locks in your callback.
                 </p>
               </div>
@@ -703,7 +703,7 @@ export function MiniCapture({
           <button type="submit" disabled={status === "loading"} className={`${btnPrimary} w-full sm:w-auto`}>
             {status === "loading" ? "Verifying your details..." : submitLabel}
           </button>
-          <p className="text-xs leading-relaxed text-slate-500">
+          <p className="text-xs leading-relaxed text-slate-600">
             You&apos;ll get a text and email from us right away. A quick reply locks in your callback.
           </p>
         </form>

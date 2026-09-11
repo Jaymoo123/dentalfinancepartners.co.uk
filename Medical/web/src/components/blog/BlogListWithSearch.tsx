@@ -1,137 +1,86 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
+import { Clock } from "lucide-react";
 import { focusRing } from "@/components/ui/layout-utils";
-import type { BlogPost } from "@/types/blog";
+import { NumberedPagination } from "@accounting-network/web-shared/design/primitives/NumberedPagination";
 
-type BlogListWithSearchProps = {
-  posts: BlogPost[];
-  categories: Array<{ slug: string; name: string; count: number }>;
-  readTimes: Map<string, number>;
+/**
+ * Lightweight projection: the only fields this list renders. Declared here
+ * because this file IS the server/client boundary for /blog. `BlogPost`
+ * carries `contentHtml` (src/lib/blog.ts), so passing posts through whole
+ * serialised the full HTML body of all 88 articles into the RSC flight
+ * payload of the index route (2.65 MB of HTML before this change).
+ *
+ * Kit note: `design/blog/BlogListWithSearch` builds nested `/blog/<category>/<slug>`
+ * hrefs and `slice()`s the off-page cards away. Medical's blog URLs are FLAT and
+ * /blog is this site's only full crawl path to the corpus, so the card recipe,
+ * the search/sort band and `NumberedPagination` are consumed from the kit while
+ * the href shape and the hidden-not-sliced rule stay local.
+ */
+export type BlogListItem = {
+  slug: string;
+  title: string;
+  summary: string;
+  category: string;
+  categorySlug: string;
+  date: string;
+  readTime: number;
 };
 
 type SortOption = "date-desc" | "date-asc" | "title-asc" | "title-desc";
 
-export function BlogListWithSearch({
-  posts,
-  categories: _categories,
-  readTimes,
-}: BlogListWithSearchProps) {
-  // isHydrated starts false so the pre-hydration branch executes on both the
-  // server render and the matching initial client render, avoiding any React
-  // hydration mismatch. useEffect only runs client-side and flips it to true,
-  // at which point the full interactive UI replaces the static list.
-  const [isHydrated, setIsHydrated] = useState(false);
+export function BlogListWithSearch({ posts }: { posts: BlogListItem[] }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("date-desc");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 12;
 
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
-
-  // All hooks must be declared before any conditional return (React rules).
-  // filteredAndSortedPosts is also used in the pre-hydration branch: with the
-  // initial state (searchQuery="", sortBy="date-desc") it equals ALL posts
-  // sorted newest-first, which is exactly what we want in the SSR HTML.
-  const filteredAndSortedPosts = useMemo(() => {
-    let filtered = posts;
-
-    if (searchQuery.trim()) {
-      const query = searchQuery.toLowerCase();
-      filtered = posts.filter(
-        (p) =>
-          p.title.toLowerCase().includes(query) ||
-          p.summary.toLowerCase().includes(query) ||
-          p.category.toLowerCase().includes(query)
-      );
-    }
-
-    const sorted = [...filtered];
+  // Every post is rendered on every render, in sorted order, and the ones that
+  // are filtered out or off the current page carry the `hidden` attribute.
+  // Crawlers see all 88 <a href> on first paint, assistive tech skips what is
+  // not on screen, the reader gets twelve at a time. Do NOT turn this into a
+  // slice(): NumberedPagination renders <button>, not <a>, so a sliced list
+  // would put 76 of 88 articles behind client state and out of the HTML.
+  const sorted = useMemo(() => {
+    const out = [...posts];
     switch (sortBy) {
       case "date-desc":
-        sorted.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        out.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         break;
       case "date-asc":
-        sorted.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+        out.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
         break;
       case "title-asc":
-        sorted.sort((a, b) => a.title.localeCompare(b.title));
+        out.sort((a, b) => a.title.localeCompare(b.title));
         break;
       case "title-desc":
-        sorted.sort((a, b) => b.title.localeCompare(a.title));
+        out.sort((a, b) => b.title.localeCompare(a.title));
         break;
     }
+    return out;
+  }, [posts, sortBy]);
 
-    return sorted;
-  }, [posts, searchQuery, sortBy]);
+  const query = searchQuery.trim().toLowerCase();
+  const matches = (p: BlogListItem) =>
+    !query ||
+    p.title.toLowerCase().includes(query) ||
+    p.summary.toLowerCase().includes(query) ||
+    p.category.toLowerCase().includes(query);
 
-  const totalPages = Math.ceil(filteredAndSortedPosts.length / postsPerPage);
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const paginatedPosts = filteredAndSortedPosts.slice(startIndex, startIndex + postsPerPage);
+  const matchCount = sorted.filter(matches).length;
+  const totalPages = Math.ceil(matchCount / postsPerPage);
+  const page = Math.min(currentPage, Math.max(1, totalPages));
 
-  const handleSearchChange = (query: string) => {
-    setSearchQuery(query);
-    setCurrentPage(1);
-  };
+  // Running rank among matching posts, so "page 2" means the 13th to 24th
+  // match rather than the 13th to 24th element of the unfiltered list.
+  let rank = -1;
 
-  const handleSortChange = (sort: SortOption) => {
-    setSortBy(sort);
-    setCurrentPage(1);
-  };
+  const resetPage = () => setCurrentPage(1);
 
-  // Pre-hydration branch: renders ALL posts as a full semantic list.
-  // This is the HTML Googlebot and other crawlers see. The same branch
-  // also runs during React's initial client-side render (before useEffect),
-  // so the DOM matches the server HTML exactly (no hydration warning).
-  // No search, sort or pagination controls are rendered here because they
-  // require JavaScript to function; they appear once the page hydrates.
-  if (!isHydrated) {
-    return (
-      <ul className="mt-8 space-y-4 sm:space-y-5">
-        {filteredAndSortedPosts.map((p) => {
-          const readTime = readTimes.get(p.slug) || 0;
-          return (
-            <li key={p.slug}>
-              <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
-                <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
-                  {p.category}
-                </p>
-                <h2 className="mt-2 text-lg font-bold text-[var(--ink)] sm:text-xl">
-                  <Link
-                    href={`/blog/${p.slug}`}
-                    className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
-                  >
-                    {p.title}
-                  </Link>
-                </h2>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{p.summary}</p>
-                <div className="mt-4 flex items-center gap-3 text-sm text-[var(--muted)]">
-                  {p.date ? (
-                    <time dateTime={p.date}>
-                      {new Intl.DateTimeFormat("en-GB", {
-                        day: "numeric",
-                        month: "long",
-                        year: "numeric",
-                      }).format(new Date(p.date))}
-                    </time>
-                  ) : null}
-                  <span>•</span>
-                  <span>{readTime} min read</span>
-                </div>
-              </article>
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
-
-  // Post-hydration: full interactive UI with search, sort and pagination.
   return (
-    <div>
+    <div className="scroll-mt-24">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">
         <div className="flex-1">
           <label htmlFor="blog-search" className="sr-only">
@@ -148,7 +97,10 @@ export function BlogListWithSearch({
               type="search"
               placeholder="Search articles..."
               value={searchQuery}
-              onChange={(e) => handleSearchChange(e.target.value)}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                resetPage();
+              }}
               className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
             />
           </div>
@@ -161,100 +113,87 @@ export function BlogListWithSearch({
           <select
             id="blog-sort"
             value={sortBy}
-            onChange={(e) => handleSortChange(e.target.value as SortOption)}
+            onChange={(e) => {
+              setSortBy(e.target.value as SortOption);
+              resetPage();
+            }}
             className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
           >
-            <option value="date-desc">Newest First</option>
-            <option value="date-asc">Oldest First</option>
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc">Oldest first</option>
             <option value="title-asc">Title A-Z</option>
             <option value="title-desc">Title Z-A</option>
           </select>
         </div>
       </div>
 
-      {searchQuery && (
+      {query ? (
         <p className="mt-4 text-sm text-[var(--muted)]">
-          Found {filteredAndSortedPosts.length} article{filteredAndSortedPosts.length !== 1 ? "s" : ""}
-          {filteredAndSortedPosts.length === 0 && ` matching "${searchQuery}"`}
+          Found {matchCount} article{matchCount !== 1 ? "s" : ""}
+          {matchCount === 0 ? ` matching "${searchQuery}"` : ""}
         </p>
-      )}
+      ) : null}
 
-      {paginatedPosts.length === 0 ? (
-        <div className="mt-8 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">
+      {matchCount === 0 ? (
+        <div className="mt-8 rounded-xl bg-white p-8 text-center ring-1 ring-slate-200/70">
           <p className="text-base text-[var(--muted)]">
-            {searchQuery
-              ? `No articles found matching "${searchQuery}". Try a different search term.`
-              : "Articles coming soon. Check back shortly."}
+            No articles found matching &quot;{searchQuery}&quot;. Try a different search term.
           </p>
         </div>
-      ) : (
-        <>
-          <ul className="mt-8 space-y-4 sm:space-y-5">
-            {paginatedPosts.map((p) => {
-              const readTime = readTimes.get(p.slug) || 0;
-              return (
-                <li key={p.slug}>
-                  <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
-                      {p.category}
-                    </p>
-                    <h2 className="mt-2 text-lg font-bold text-[var(--ink)] sm:text-xl">
-                      <Link
-                        href={`/blog/${p.slug}`}
-                        className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
-                      >
-                        {p.title}
-                      </Link>
-                    </h2>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{p.summary}</p>
-                    <div className="mt-4 flex items-center gap-3 text-sm text-[var(--muted)]">
-                      {p.date ? (
-                        <time dateTime={p.date}>
-                          {new Intl.DateTimeFormat("en-GB", {
-                            day: "numeric",
-                            month: "long",
-                            year: "numeric",
-                          }).format(new Date(p.date))}
-                        </time>
-                      ) : null}
-                      <span>•</span>
-                      <span>{readTime} min read</span>
-                    </div>
-                  </article>
-                </li>
-              );
-            })}
-          </ul>
+      ) : null}
 
-          {totalPages > 1 && !searchQuery && (
-            <div className="mt-8 sm:mt-12">
-              <nav aria-label="Pagination">
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  {currentPage > 1 && (
-                    <button
-                      onClick={() => setCurrentPage((p) => p - 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
-                    >
-                      Previous
-                    </button>
-                  )}
-                  <span className="text-sm text-[var(--muted)] font-medium px-4 py-2">
-                    Page {currentPage} of {totalPages}
+      <ul className="mt-8 space-y-4 sm:space-y-5">
+        {sorted.map((p) => {
+          const isMatch = matches(p);
+          if (isMatch) rank += 1;
+          const onPage = isMatch && Math.floor(rank / postsPerPage) + 1 === page;
+          return (
+            <li key={p.slug} hidden={!onPage}>
+              <article className="rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200/70 transition-shadow hover:shadow-md sm:p-7">
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-primary-700 sm:text-xs">
+                  {p.category}
+                </p>
+                <h3 className="mt-3 text-base font-bold! tracking-normal! leading-snug! text-slate-900 sm:text-lg">
+                  <Link
+                    href={`/blog/${p.slug}`}
+                    className={`transition-colors hover:text-primary-700 ${focusRing} rounded`}
+                  >
+                    {p.title}
+                  </Link>
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600 line-clamp-3 sm:text-base sm:leading-7">
+                  {p.summary}
+                </p>
+                <p className="mt-4 inline-flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500">
+                  <span className="inline-flex items-center gap-1.5">
+                    <Clock aria-hidden className="h-3.5 w-3.5 text-primary-600" />
+                    {p.readTime} min read
                   </span>
-                  {currentPage < totalPages && (
-                    <button
-                      onClick={() => setCurrentPage((p) => p + 1)}
-                      className={`flex items-center justify-center min-h-[48px] min-w-[100px] px-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] font-medium transition-colors hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 active:scale-95 ${focusRing}`}
-                    >
-                      Next
-                    </button>
-                  )}
-                </div>
-              </nav>
-            </div>
-          )}
-        </>
-      )}
+                  {p.date ? (
+                    <time dateTime={p.date}>
+                      {new Intl.DateTimeFormat("en-GB", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      }).format(new Date(p.date))}
+                    </time>
+                  ) : null}
+                </p>
+              </article>
+            </li>
+          );
+        })}
+      </ul>
+
+      {totalPages > 1 ? (
+        <div className="mt-8 sm:mt-12">
+          <NumberedPagination
+            currentPage={page}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -19,6 +19,8 @@ export type BlogSidebarCtaCopy = { heading: string; body: string };
 export function BlogSidebarCta({
   copy,
   buttonClassName,
+  ctaPlacement = "sidebar",
+  buttonLabel = "Book a call",
 }: {
   copy: BlogSidebarCtaCopy;
   /**
@@ -30,6 +32,20 @@ export function BlogSidebarCta({
    * on the page. Property is NOT a consumer: it keeps a local copy of this file.
    */
   buttonClassName?: string;
+  /**
+   * `data-cta-placement` for the card's button. Default "sidebar", which is
+   * what the existing consumers already record, so omitting it changes no live
+   * series. A site whose own placement taxonomy prefixes blog surfaces passes
+   * its own value (Medical: "blog_sidebar", which its port spec binds).
+   */
+  ctaPlacement?: string;
+  /**
+   * Button label. Default "Book a call". Exists because the card takes the
+   * article's per-category `copy` for its heading and body but had no way to
+   * take the matching per-category button, so the card and the form it jumps
+   * to could name the same action two different ways.
+   */
+  buttonLabel?: string;
 }) {
   return (
     <div className="rounded-xl bg-slate-900 p-6">
@@ -38,14 +54,14 @@ export function BlogSidebarCta({
       <a
         href="#enquiry-form"
         data-cta="blog_sidebar_book"
-        data-cta-placement="sidebar"
+        data-cta-placement={ctaPlacement}
         data-cta-goal="form"
         className={`mt-5 inline-flex min-h-12 w-full touch-manipulation items-center justify-center rounded-xl px-4 py-3 text-base font-bold transition-colors ${
           buttonClassName ??
           "bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800"
         } ${focusRing}`}
       >
-        Book a call
+        {buttonLabel}
       </a>
       <p className="mt-3 text-center text-xs text-slate-400">
         Free, no obligation. The form is just below.

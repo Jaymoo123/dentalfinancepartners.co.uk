@@ -102,6 +102,16 @@ several sit in config branches this site does not use. A guard pinning only the 
 11 unprotected.
 PROMOTED: folded into playbook trap T22. Kept here for the instrument and the Trade numbers.
 
+**2026-09-11, Medical phase 3. Renaming an analytics dimension HALFWAY is worse than not
+renaming it.** The `data-cta-placement` values in the blog subsystem were made consistent on
+`/blog` only, which left all eight category hubs emitting a bare `hero`. That is the value the
+HOMEPAGE already emits on a live series, so hub clicks would have merged into the homepage's
+series with no way to separate them afterwards. Caught in review, before any commit shipped.
+Deriving command: `git diff -U0 | grep -E '^[+-].*data-cta-placement'`, then compare the value
+set against what other route families already emit.
+RULE: rename every surface in one pass, or none. A net-new series is free to rename before its
+first click and impossible after.
+
 ---
 
 ## 2. The shared kit (`packages/web-shared/design/`)
@@ -140,6 +150,25 @@ may have just changed it.
 - The kit drawer has no secondary-link slot.
 - `design/primitives/FaqSection.tsx` is a Radix collapsible whose closed answers are NOT in
   the server HTML, and it renders answers as escaped text. See section 4.
+- `design/blog/HubArticleList.tsx:85` hardcodes Property's NESTED blog href
+  (``/blog/${post.categorySlug ?? categorySlug}/${post.slug}``), and `BlogCategoryHub` mounts
+  it internally with no override, no render slot and no opt-out. `BlogListWithSearch` has the
+  same href and additionally `slice()`s off-page cards out of the server HTML.
+
+**2026-09-11, Medical phase 3. The kit's BLOG components are unusable on a FLAT-URL site, and
+the failure mode is a dead link on every hub.** On Medical `/blog/<category>/<slug>` returns
+404 and `/blog/<slug>` returns 200, so adopting `BlogCategoryHub` as the disposition instructed
+would have published every hub article link dead. Three agents hit it independently, and
+`construction-cis`, the estate's other flat site, had already reached the same conclusion and
+points its shared crawl-path guard at its own local list. Medical mirrors the kit markup
+locally with flat hrefs; the cost is eight similar hub layouts instead of eight data files, and
+no pagination control on the hubs.
+Deriving command: `grep -n "href={\`/blog" packages/web-shared/design/blog/*.tsx`, then
+`curl -s -o /dev/null -w "%{http_code}" <base>/blog/<category>/<slug>`.
+RULE: before adopting any kit component that BUILDS a URL, check whether it builds YOUR site's
+URL shape. The additive fix, deferred not dropped, is an `href`/`hrefFor` override prop on
+`HubArticleList`; the first flat site that needs pagination should add it rather than fork
+again.
 
 ---
 
@@ -253,6 +282,35 @@ hex can clear the 3:1 graphics floor and fail the 4.5:1 text floor, so one brand
 cannot serve graphic, text-on-white and ground-under-white-text roles at once.** Medical
 mints `--brand-primary-text` and `--brand-primary-ground` for the other two roles; see
 playbook section 8 item 11.
+
+**2026-09-11, Medical phase 3. The second half of the same lesson: a base element rule also
+beats an INHERITED value.** Phase 2 moved Medical's bare `a { color: var(--navy) }` into
+`@layer base`, which is correct and fixed the footer. Phase 3 then found that an anchor with no
+colour utility of its own still renders navy no matter what colour its parent sets, because a
+base element rule is still a declaration and inheritance is not. That put the `/blog` hero
+breadcrumb at ratio 1.04, navy on navy, on a component that looked correct in source because the
+parent was `text-white`.
+Deriving command, unchanged from the phase-2 entry:
+`grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css`.
+RULE: fix it at the COMPONENT. Give the link its own colour class per variant and never rely on
+inheritance to colour an anchor. Layering the rule makes utilities win; it does not make
+inheritance win.
+
+**2026-09-11, Medical phase 3. Two viewport clamps in one column is worse than either alone, and
+both wrong answers look right in source.** The article sidebar holds a CTA card and a table of
+contents. Nest a sticky max-height wrapper around a component that already clamps itself and you
+get a scroll box inside a shorter scroll box, two scrollbars, and the inner `sticky` sticking to
+the wrapper rather than to the viewport. Remove the OUTER clamp instead and the sticky element's
+containing block becomes a short static div, so it sticks for a couple of hundred pixels and
+scrolls away: measured at 1440x900 on a 24,594px article, 440px of the contents list sat below
+the fold with nothing able to scroll to it. The arrangement that works is ONE clamp, on the
+element that is a direct child of the tall column, with the inner component's own clamp switched
+off (Medical passes `stickyDesktop={false}`).
+Deriving method: scroll 6,000px, then read the sticky element's `getBoundingClientRect()` and
+count scroll containers in the column. Medical's passing read is top 96, bottom 884 in a 900px
+viewport, one scroll container.
+RULE: measure the sticky element's bounding rect after scrolling. Reading the classes proves
+nothing here, because both broken arrangements read as correct.
 
 **2026-09-11, Trade. Third instance of the unlayered-beats-utility trap in one file, and the first
 fix made it worse.** `construction-cis/web/src/app/globals.css:209-225` carries the whole incident in
@@ -449,6 +507,25 @@ RULE: "T<n>" means the playbook, section 6 (T1-T21) and section 14 (T22-T27). Ci
 number; an absence in the rollout doc proves nothing.
 `grep -nE '^\*\*T[0-9]+\.' docs/_engines/DESIGN_PORT_PLAYBOOK.md` lists every one.
 
+**2026-09-11, Medical phase 3. The instrument can be the thing that is wrong. Twice in one
+phase.** A brief told a builder to count nested blog URLs with `grep -c '/.*/.*'`, which matches
+flat hrefs too and therefore reported "everything is nested"; the builder re-derived it correctly
+and got zero. Separately, the committed sweep counts `data-cta` OCCURRENCES per route and
+compares with `<` only, so it cannot see an id, a placement or a goal whose VALUE changed, nor a
+swap of one id for another.
+Deriving command that closes the second one: `git diff -U0 | grep -E '^[+-].*data-cta'`.
+RULE: a number that confirms the brief is the one to re-derive by a second method. And never let
+"0 data-cta regressions" stand as proof of attribute continuity; it is a count, not a diff.
+
+**2026-09-11, Medical phase 3. A guard test that checks the DATA and not the WIRING guards the
+wrong half.** `src/tests/blog-cta.test.ts` proved `CTA_BY_CATEGORY` had all eight keys and no
+orphans. It asserted nothing about consumption, so if the renderer stopped calling
+`blogCtaFor()` every article would have fallen back to generic copy with every test still green,
+which is exactly the Property incident the test was written for.
+RULE: a guard test for a lookup table must assert at SOURCE level that each consumer imports and
+calls the accessor. Derive the consumer list from the map itself, so a ninth category is covered
+automatically rather than needing the test edited.
+
 ---
 
 ## 6. What the ports keep finding that is not design work
@@ -527,6 +604,17 @@ corrected it.
 RULE: the test is not "is this small enough to do myself", it is "is there a reason only the manager
 can do this". The carve-outs are git, serialised builds, deploys, migrations, owner comms, and the
 judgement at a gate. Everything else, audits and instrument work included, goes to an agent.
+
+**2026-09-11, Medical. A 301'd slug whose file is still on disk is a listing defect nobody's gate
+catches.** `sitemap.ts` had filtered `DUPLICATE_REDIRECTS` since commit `0abd26e7`, but the blog
+index, the eight hubs and the related-articles rail had not. The incorporation hub therefore
+rendered nine cards for eight destinations, and the sweep's dead-link check passed, because a 301
+is not a dead link. One of Medical's sixteen redirected slugs has an `.md` on disk, so the fix cost
+two internal links and one static page (163 to 162) and the route still 301s.
+Deriving command: compare the redirect map against the corpus,
+`grep -oE "'[a-z0-9-]+'" <site>/web/src/middleware.ts` against `ls <site>/web/content/blog/`.
+RULE: filter the redirect map ONCE in `getAllPosts()` so every listing surface inherits it. Fixing
+it per surface leaves the next new listing wrong, and no crawl-based instrument will tell you.
 
 ---
 

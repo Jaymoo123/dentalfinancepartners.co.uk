@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
 import { addHeadingIds } from "./markdown-utils";
 import { assertFrontmatter, STANDARD_MANIFEST } from "@accounting-network/web-shared/lib/frontmatter";
+import { DUPLICATE_REDIRECTS } from "@/middleware";
 
 const postsDirectory = path.join(process.cwd(), "content", "blog");
 
@@ -45,14 +46,28 @@ function parsePostFile(filePath: string): BlogPost {
   };
 }
 
+/**
+ * Every post that should be LISTED, which is not quite every post on disk.
+ *
+ * A slug in DUPLICATE_REDIRECTS 301s at the middleware before the page ever
+ * renders, so linking to it publishes a hop to a destination that is already
+ * in the same list. `sitemap.ts` has filtered these since 0abd26e7; the blog
+ * index, the category hubs and the related-articles rail did not, so the
+ * incorporation hub was showing nine cards for eight destinations. Filtering
+ * here fixes every listing surface at once rather than in each of them.
+ *
+ * Exactly one of the sixteen redirected slugs has an .md on disk today
+ * (private-practice-incorporation-complete-guide), so this removes one card
+ * from two surfaces and no route falls near its link floor.
+ */
 export function getAllPosts(): BlogPost[] {
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
   const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
-  const posts = files.map((file) =>
-    parsePostFile(path.join(postsDirectory, file)),
-  );
+  const posts = files
+    .map((file) => parsePostFile(path.join(postsDirectory, file)))
+    .filter((post) => !(post.slug in DUPLICATE_REDIRECTS));
   return posts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
@@ -78,24 +93,29 @@ export function getRelatedPosts(
   const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
   const relatedPosts: BlogPost[] = [];
   
+  // Collect every match, THEN sort, THEN slice. Breaking at `limit` inside this
+  // loop made "related" the first three same-category files in readdir order,
+  // i.e. alphabetical by filename, and never the three most recent.
   for (const file of files) {
-    if (relatedPosts.length >= limit) break;
-    
     const filePath = path.join(postsDirectory, file);
     const raw = fs.readFileSync(filePath, "utf8");
     const { data } = matter(raw);
     const fm = data as Partial<BlogFrontmatter>;
     
     if (fm.slug === currentSlug) continue;
-    if (fm.category !== category) continue;
+    // Compare SLUGS, not raw labels. Keying on the label is what put 57 Property
+    // posts on the wrong CTA, and it is the one keying this port removed from
+    // every hub and from the CTA map. One frontmatter spelling drift would
+    // otherwise empty "Related articles" for a whole category, silently.
+    if (!fm.category || slugifyCategory(fm.category) !== slugifyCategory(category)) continue;
     if (!fm.slug || !fm.title) continue;
     
     relatedPosts.push(parsePostFile(filePath));
   }
   
-  return relatedPosts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return relatedPosts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
 }
 
 export function slugifyCategory(category: string): string {

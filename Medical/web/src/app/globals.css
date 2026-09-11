@@ -82,6 +82,10 @@
      minted for this exact case (white label 4.91) and is what every button on
      the site is painted with, so the kit tiers now match them. */
   --brand-primary-ground: var(--btn-ground);
+  /* Hover step for the same ground. Without this the kit would hover to
+     --brand-primary-strong, which on this site is the SAME hex as the ground,
+     so the primary button would lose its hover feedback entirely. */
+  --brand-primary-ground-hover: var(--btn-ground-hover);
   --brand-on-primary: #ffffff;
 
   /* Radius chain root. The kit's globals-standard.css @theme derives
@@ -316,6 +320,25 @@ main {
 ::selection {
   background-color: var(--copper-soft);
   color: var(--ink);
+}
+
+/* Anchor landing offset.
+   The header is `sticky top-0` and roughly 64px tall, so an in-page jump to a
+   heading (every table of contents link, every #enquiry-form and #articles CTA,
+   every deep link from search) lands the target UNDER the bar unless the target
+   carries a scroll margin. The browser check measures 0px on every heading id
+   on the hubs and the articles and wants at least 96px.
+
+   Scoped to elements that are actually jump targets (anything with an id that
+   is a heading, plus the two landmark ids), inside @layer base so a per-element
+   `scroll-mt-*` utility still wins where a section needs a different offset. */
+@layer base {
+  :where(h1, h2, h3, h4)[id],
+  #main,
+  [id="articles"],
+  [id="answer-box"] {
+    scroll-margin-top: 6rem;
+  }
 }
 
 /* Links.

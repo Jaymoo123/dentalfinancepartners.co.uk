@@ -19,10 +19,9 @@
  * re-tailors each time, and fires instantly on exit-intent or form friction.
  * Stops the moment the visitor opens it (or has converted / opted out).
  *
- * Stand-down: sets ma_assistant_active so ExitIntentModal knows the assistant
- * is live and stands down (never two exit prompts at once).
- * ExitIntentModal ALREADY reads this key at line 91; only the setter is new.
- * Do NOT re-edit ExitIntentModal (minimal-intervention rule).
+ * Stand-down: still sets ma_assistant_active on mount. Its only reader was the
+ * blog ExitIntentModal, which is retired and deleted, so the write is a
+ * harmless no-op kept for any future exit surface.
  *
  * Chip: "Book a free call" -> /contact (no /book path on Medical).
  * Widget capture: email + message via email_only captureMode through submitMedicalLead.
@@ -139,7 +138,7 @@ export function SpecialistWidget() {
     setUnread(0);
   }, []);
 
-  // Init the journey model + flag the assistant active (so ExitIntentModal stands down).
+  // Init the journey model + set the (now unread) ma_assistant_active flag.
   useEffect(() => {
     if (!active || typeof window === "undefined") return;
     initJourneyModel();

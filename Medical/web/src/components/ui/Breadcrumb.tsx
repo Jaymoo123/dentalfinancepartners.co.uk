@@ -29,9 +29,15 @@ export function Breadcrumb({ items, variant = "default", suppressJsonLd = false 
 
   const olColour =
     variant === "light" ? "text-white/70" : "text-[var(--muted)]";
+  /* The link needs its OWN colour, not the ol's inherited one. globals.css
+     carries `a { color: var(--navy) }` in @layer base, and a direct element
+     rule beats an inherited value, so an anchor with no colour utility of its
+     own renders navy whatever its parent says. On the navy hero that measured
+     1.04, i.e. invisible; on white it silently overrode the muted tone. */
+  const linkColour = variant === "light" ? "text-white/70" : "text-[var(--muted)]";
   const linkHover =
     variant === "light"
-      ? "hover:text-[var(--copper)]"
+      ? "hover:text-white"
       : "hover:text-[var(--accent-strong)]";
   const lastColour =
     variant === "light"
@@ -58,7 +64,7 @@ export function Breadcrumb({ items, variant = "default", suppressJsonLd = false 
               {item.href && !isLast ? (
                 <Link
                   href={item.href}
-                  className={`${linkHover} transition-colors ${focusRing} rounded`}
+                  className={`${linkColour} ${linkHover} transition-colors ${focusRing} rounded`}
                 >
                   {item.label}
                 </Link>

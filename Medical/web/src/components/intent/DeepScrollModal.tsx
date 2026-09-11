@@ -6,8 +6,9 @@
  * review). Modal overlay = no layout shift. Frequency-capped: one per session
  * (module flag) and a 30-day per-topic suppress. Measured.
  *
- * Shared per-session cap with ExitIntentModal: at most ONE topic-offer modal
- * per session, whichever surface fires first. Key: ma_modal_shown.
+ * Per-session cap: at most ONE topic-offer modal per session. Key:
+ * ma_modal_shown, formerly shared with the retired blog ExitIntentModal, now
+ * read and written only here.
  *
  * Styled with Medical Accountants UK navy/copper brand tokens.
  */
@@ -44,8 +45,7 @@ export function DeepScrollModal() {
   useEffect(() => {
     if (!action || open || shownThisSession) return;
     if (isSuppressed(action.topic)) return;
-    // Shared per-session cap with ExitIntentModal: at most ONE topic-offer
-    // modal per session, whichever surface fires first.
+    // Per-session cap: at most ONE topic-offer modal per session.
     try {
       if (window.sessionStorage.getItem("ma_modal_shown") === "1") return;
       window.sessionStorage.setItem("ma_modal_shown", "1");

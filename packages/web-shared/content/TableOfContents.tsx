@@ -11,9 +11,23 @@ type Heading = {
 
 type TableOfContentsProps = {
   headings: Heading[];
+  /**
+   * Whether the desktop block owns its own viewport clamp. Default true, which
+   * is what every existing consumer renders.
+   *
+   * Pass false when the HOST puts this inside its own `sticky` + `max-h` +
+   * `overflow-y-auto` column, because two clamps in one column is worse than
+   * either alone: nest them and you get a scroll box inside a shorter scroll
+   * box with two scrollbars, and drop the outer one instead and this element's
+   * `sticky` becomes inert (its containing block is then a short static div, so
+   * it sticks for a couple of hundred pixels and scrolls away, leaving the
+   * lower part of a long contents list unreachable). Measured both ways on a
+   * 24,594px article at 1440x900 before this prop existed.
+   */
+  stickyDesktop?: boolean;
 };
 
-export function TableOfContents({ headings }: TableOfContentsProps) {
+export function TableOfContents({ headings, stickyDesktop = true }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -95,7 +109,11 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
       </div>
 
       {/* Desktop: Sticky sidebar */}
-      <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
+      <div
+        className={`hidden lg:block rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm${
+          stickyDesktop ? " sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto" : ""
+        }`}
+      >
         <h2 className="text-sm font-bold uppercase tracking-wide text-[var(--ink)] mb-4 flex items-center gap-2">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path

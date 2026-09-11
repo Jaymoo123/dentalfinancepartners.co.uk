@@ -115,6 +115,33 @@ baseline was captured, so the passenger list grows. Re-derive
 `git log 18b4f25f..HEAD -- 'packages/web-shared/'` on the day of the deploy rather than
 reusing the count of 10 recorded below.
 
+## Spec corrections from Phase 3 (2026-09-11), binding on the phases that follow
+
+Phase 3 is the blog subsystem. Two rows of the slice-1 disposition were wrong and were
+corrected against the tree. Both change what a later phase may assume, so they are recorded
+here rather than only in STATE.
+
+1. **The kit's blog components cannot be consumed on a FLAT-URL site, so section C.3 row 1 is
+   void.** `packages/web-shared/design/blog/HubArticleList.tsx:85` hardcodes
+   ``href={`/blog/${post.categorySlug ?? categorySlug}/${post.slug}`}``, which is Property's
+   NESTED shape, and `BlogCategoryHub` mounts it internally with no href override, no render
+   slot and no way to opt out. `BlogListWithSearch` has the same problem and additionally
+   `slice()`s off-page cards out of the server HTML. On Medical `/blog/<category>/<slug>`
+   returns 404 while `/blog/<slug>` returns 200, so adopting them as instructed would have
+   published every hub article link as a dead link. Three agents hit this independently, and
+   `construction-cis`, the estate's other flat site, reached the same conclusion earlier and
+   points the shared crawl-path guard at its own local list. **The hubs and the index
+   therefore MIRROR the kit markup locally with flat hrefs.** Cost: eight similar hub layouts
+   rather than eight data files, and no pagination control on the hubs. The one-line fix that
+   collapses them back to data is an `href` or `hrefFor` override prop on `HubArticleList`,
+   deferred rather than dropped.
+2. **The `12 visible plus hidden` rule needs the pagination control to come with it.** Four
+   hubs shipped `hidden={i >= 12}` and four did not, and neither group had a pager, so on any
+   hub carrying more than 12 posts the hidden items were unreachable to a reader while the
+   heading still claimed the full count. `hidden` was removed from all eight; every hub now
+   renders all its articles. It returns with the kit's pagination control when the href prop
+   lands.
+
 ## Phase-0 facts (2026-09-10)
 
 - Production SHA (Vercel `targets.production`, project `medicalaccounts.co.uk`

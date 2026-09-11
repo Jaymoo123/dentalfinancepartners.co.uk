@@ -1,6 +1,14 @@
 /**
  * Shared layout primitives + button classes.
  *
+ * --brand-primary-ground / --brand-primary-ground-hover: OPTIONAL per-site
+ * overrides for the primary button GROUND, both falling back to the values
+ * every consumer rendered before they existed, so a site that defines
+ * neither is byte-identical. Same reasoning as ServiceTiers: a mid-tone
+ * brand hex can clear the 3:1 graphics floor and fail the 4.5:1 text floor
+ * under a white label. Medical's copper measures 3.79 that way, on the
+ * submit button of its lead capture forms.
+ *
  * Uses canonical CSS variables (--brand-primary, --brand-on-primary,
  * --ink, --muted, --surface, --border, --background) which every site
  * aliases to its own brand colours in its globals.css. This file
@@ -32,7 +40,7 @@ export const focusRing =
  * CTAs rendered by their local `btnPrimary`. Every site that sets nothing keeps
  * the 9999px pill it has always had. */
 export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-[var(--btn-radius,9999px)] bg-[var(--brand-primary)] px-6 py-3 text-sm font-semibold tracking-tight text-[var(--brand-on-primary)] shadow-sm transition-all duration-200 hover:bg-[var(--brand-primary-strong)] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
+  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-[var(--btn-radius,9999px)] bg-[var(--brand-primary-ground,var(--brand-primary))] px-6 py-3 text-sm font-semibold tracking-tight text-[var(--brand-on-primary)] shadow-sm transition-all duration-200 hover:bg-[var(--brand-primary-ground-hover,var(--brand-primary-strong))] hover:shadow-md active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
 
 /** Secondary: ink outline, for use on light backgrounds. */
 export const btnSecondary =

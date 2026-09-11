@@ -6,7 +6,7 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-11 (design port Phase 2; nothing deployed since 2026-08-26).
+Last updated: 2026-09-11 (design port Phase 3; nothing deployed since 2026-08-26).
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
@@ -324,6 +324,123 @@ harness reports the command as failed, so kill by PID from `netstat -ano | grep 
 and `taskkill //PID <pid> //F`; re-editing `niche.config.json` by parsing and re-dumping
 JSON rewrites every escaped character in the file, so edit the lines and never round-trip
 it.
+
+## 2026-09-11 - DESIGN PORT PHASE 3 (the blog subsystem). Built, reviewed twice, fixed, re-reviewed FAIL, fixed again. Nothing deployed.
+
+Phase 3 is the blog subsystem: 88 articles, 8 category hubs, the `/blog` index. Four
+builders in parallel on disjoint files, then two adversarial reviews, a fix pass, a
+re-review that returned FAIL, and a second fix pass.
+
+**What landed:** `components/blog/BlogPostRenderer.tsx` rebuilt; `app/blog/page.tsx` and
+`components/blog/BlogListWithSearch.tsx` rebuilt; all eight `app/blog/<slug>/page.tsx` hubs
+rebuilt (roughly 250 to 500 lines each; `nhs-pension-planning` 501 to 763); new
+`lib/blog-cta.ts`; `lib/blog.ts` changed twice; `components/ui/Breadcrumb.tsx`;
+`app/globals.css`; new tests `src/tests/blog-cta.test.ts` and
+`src/tests/blog-route-collision.test.ts`. `components/blog/ExitIntentModal.tsx` DELETED: zero
+importers, and a comment in `SpecialistWidget.tsx` reading "Do NOT re-edit ExitIntentModal
+(minimal-intervention rule)" was protecting dead code.
+
+**The headline result, and it is a payload defect rather than a design one.** `/blog` went
+from **2,650,184 bytes to 297,496, an 89% cut**, with all 88 article links still in the HTML.
+`page.tsx` passed `getAllPosts()` straight into a client component and `BlogPost` carries
+`contentHtml`, so the full HTML body of all 88 posts was being serialised into the index
+page's RSC flight payload. It now projects to `{slug, title, summary, category, categorySlug,
+date, readTime}` before the client boundary.
+
+**Other substantive work:**
+- Per-category CTA copy (`CTA_BY_CATEGORY`, 8 entries, keyed on `slugifyCategory` output)
+  feeding three surfaces from one object.
+- All eight hubs moved off raw-label post filtering onto the slug.
+- `getRelatedPosts` was breaking at `limit` BEFORE sorting, so "related" was the first three
+  same-category files in alphabetical FILENAME order rather than the three most recent.
+- The article lead form moved onto a white card inside the navy panel. That is the
+  STRUCTURAL fix for the invisible-labels defect Phase 1 had patched at the colour level, so
+  the `onDark` prop passed at that call site was dropped.
+- `#enquiry-form`, `#answer-box` and a skip link added.
+- Roughly 46 figures added across the eight hubs, so no section ships as prose alone.
+- 51 em-dash sentences rewritten rather than character-swapped.
+
+**Two spec corrections, both recorded in `docs/medical/_port/README.md` because they change
+what the next phases can assume:** the kit's blog components cannot be consumed on a FLAT-URL
+site (`HubArticleList.tsx:85` hardcodes Property's nested href and `BlogCategoryHub` mounts
+it internally with no override), so the hubs and the index MIRROR the kit markup locally; and
+the `12 visible plus hidden` rule needs the pagination control to come with it, so `hidden`
+was removed from all eight hubs.
+
+**Content and compliance: the reviews found more in the copy than in the code.**
+- **The CTA copy was written in the FIRST PERSON** ("We look at them together", "We check the
+  input figure", "We model it on your figures and file Forms A and B"), which contradicts the
+  site's own privacy policy: enquiries go to regulated firms in a specialist partner network.
+  Rewritten on all eight entries to describe what a specialist firm does, with the voice rule
+  written into the file header. The same contradiction survived one review round in the
+  lead-panel footnote on nine surfaces ("if your position is already right, we will say so")
+  and was fixed in the second pass.
+- **A published fee schedule for our own service** on the `gp-accountant-services` hub: three
+  price bands plus "the tax savings and pension optimisation a specialist delivers routinely
+  exceed the premium". Cut, per live defect 5. The section keeps the framing that explains
+  what drives the scope.
+- **An incorporation claim that was backwards on 2026/27 rates**: "The gap widens further
+  where profits can be extracted as dividends rather than salary, taking advantage of lower
+  dividend tax rates." Corporation tax at 25% then dividend tax at 35.75% or 39.35% is roughly
+  52% to 55% combined on extracted profit, above a partner's 45% plus 2% Class 4. Rewritten so
+  the deferral is correctly located in RETAINED profit, per `house_positions.md` section 5's
+  writing rule that incorporation is not to be presented as a clear tax win at typical 2026/27
+  private-income levels.
+- **Class 2 National Insurance**, which the locum hub told doctors to register for. Not a
+  required payment since 6 April 2024 (house positions section 8).
+- **An annual investment allowance stated as GBP1,000** where it is GBP1,000,000 (section 7).
+- **Seven "your employer pays 23.7%" constructions** across the NHS pension hub. 23.7% is the
+  total credited on a member's behalf; an employer bears 14.38% with 9.4% funded centrally
+  (section 2.C, which records that this exact error was live once before and was caught by
+  factual QA rather than by a writer).
+- Two "thousands of pounds" phrases rewritten into the actual mechanism: the GBP1-for-GBP2
+  taper above GBP260,000 for the annual allowance, and above GBP100,000 for the personal
+  allowance.
+
+**Verification, all re-run after the last change, on the COMMITTED instruments at
+`docs/_engines/instruments/`:**
+- Sweep (`--site=Medical --sample=9999 --article-depth=2
+  --baseline=docs/medical/_port/link_baseline.json`): **138/138 URLs clean, 0/5 internal links
+  dead, 0 LINK-FLOOR breaches (5,370 links total), 0 `data-cta` regressions (565 total), 0
+  dash regressions (7 total)**. Against the Phase 2 close: 5,372 links, so the two lost are
+  the 301'd slug's cards; 308 `data-cta` before the phase, so **257 are net-new blog
+  surfaces**; em-dashes fell from 59 site-wide at Phase 0 to 7, none of them in the blog
+  subsystem.
+- `browser_check.mjs` at 390 / 768 / 1024 / 1440 over the index, the hubs and the articles:
+  the only finding is the known honeypot artifact, an off-screen anti-spam label at ratio 1.00
+  in `LeadForm.tsx:216`. Self-test OK (slate-500/white 4.76, slate-400/white 2.56).
+- Sidebar measured directly with puppeteer at 1440x900 on a 24,594px article: after 6,000px of
+  scroll the sticky column sits at top 96, bottom 884 in a 900px viewport, and is the single
+  scroll container in the column.
+- `next build` exit 0, **162 pages** (163 before). The drop is the 301'd slug no longer
+  generating a page, and the route still 301s: verified `301 -> /blog/medical-practice-incorporation-step-by-step`.
+  `sitemap.xml` still 138 URLs.
+- `tsc --noEmit` clean on Medical, and on Solicitors, generalist and Dentists, which share the
+  kit files this phase touched.
+- **Medical 471 tests passing** (454 after Phase 2's guards, plus this phase's).
+  `packages/web-shared` 406 passing. Dependency closure OK across 19 sites.
+
+**Noise generated: none.** Nothing pushed, no CI run, no deploy.
+
+**A 301'd slug with a file still on disk is a listing defect no gate catches.** `sitemap.ts`
+had filtered `DUPLICATE_REDIRECTS` since commit `0abd26e7`, but the blog index, the hubs and
+the related-articles rail had not, so the incorporation hub rendered nine cards for eight
+destinations and the sweep's dead-link check passed, because a 301 is not a dead link. Filtered
+once in `getAllPosts()`, so every listing surface inherits it. One of the sixteen redirected
+slugs has an `.md` on disk here, which is what the two lost links and the 163-to-162 page count
+are.
+
+**Known and carried forward, not fixed in Phase 3:**
+- `TableOfContents` is mounted twice per article, a mobile block and a desktop block.
+  Pre-existing, unchanged.
+- The kit header still emits no `aria-current="page"`; the nav guard covers the visual state
+  only.
+- The homepage's copper paragraphs and category chips measure 3.62 and 3.79 against a 4.5
+  floor. Pre-existing (the Phase 0 baseline records 3.50), and the homepage belongs to a later
+  phase.
+- The `hidden` plus pagination behaviour on the hubs returns with the kit `href` prop.
+- `/contact` carries a "24-hour response time" in its metadata description, which is a
+  turnaround promise. Pre-existing, and `/contact` belongs to the last build phase.
 
 ---
 

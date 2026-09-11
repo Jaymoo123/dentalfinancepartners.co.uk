@@ -66,6 +66,13 @@ turn one into a popup.
 
 Tag each phase after its review passes: `port-<site>-phase<N>`.
 
+**A site may split a phase, and then its numbers run ahead of this table. Say
+which numbering you mean.** Medical split the chrome phase in two, tokens then
+chrome, so its phases are 1 tokens, 2 chrome, 3 blog, and every later phase sits
+one ahead of the rows below. The tag and the site's own STATE.md are the
+authority for that site; this table is the default shape, not a promise about
+what `phase3` means on a given site.
+
 | Phase | Scope | Notes |
 |---|---|---|
 | 0 | Baseline capture | Production SHA, link-floor baseline, armed monitored_pages, funnel evidence. No code. |
@@ -407,6 +414,20 @@ Before starting a site, capture and put in the prompts:
       (`BlogListWithSearch`, `HubArticleList`, `BlogCategoryHub`): `ring-1 ring-slate-200/70`,
       not `border border-slate-200`. Consumer set derived by grep, NOT assumed: generalist
       and Solicitors only. Property keeps local copies and is unaffected.
+    - `BlogSidebarCta.ctaPlacement` and `BlogSidebarCta.buttonLabel` (added 2026-09-11,
+      Medical phase 3, `packages/web-shared/design/blog/BlogSidebarCta.tsx`). Defaults
+      `"sidebar"` and `"Book a call"`, which is exactly what every existing consumer already
+      rendered, so a site that passes nothing is byte-identical. `ctaPlacement` because
+      placement is a live `vw_cta_performance` dimension and Medical's port spec binds
+      `blog_sidebar`; `buttonLabel` because the card already took the article's per-category
+      copy for its heading and body but had no way to take the matching BUTTON, so the card
+      and the form it jumps to could name the same action two different ways.
+    - `TableOfContents.stickyDesktop` (added 2026-09-11, Medical phase 3,
+      `packages/web-shared/content/TableOfContents.tsx`). Default `true`, the component's own
+      pre-existing sticky-plus-max-height behaviour. Pass `false` when the HOST owns the
+      column's clamp: two viewport clamps in one column give you a scroll box inside a
+      shorter scroll box and a `sticky` that sticks to the wrapper rather than the viewport.
+      Six sites import this component.
     Do not add rival props for either; these are the supported hooks.
 
 ---
@@ -814,3 +835,33 @@ disagree about ground needs a layer, not a different hex. Moving a rule into a l
 its precedence against EVERY utility it was beating, not the one you meant, so verify which
 selectors ended up inside the block:
 `awk '/^@layer components/,/^}$/' <file> | grep -E '^\s+\.'`
+
+---
+
+## 16. Traps added by the Medical port (2026-09-11)
+
+**T31. A base element rule beats an INHERITED value, so layering it is only half the fix.**
+The companion to T30. Medical moved its bare `a { color: var(--navy) }` into `@layer base`,
+which made every colour UTILITY win, and the footer was fixed. The blog hero breadcrumb was
+still navy on navy at ratio 1.04, because its links carried no colour utility of their own
+and relied on a `text-white` parent: inheritance loses to any matching declaration, layered
+or not. The component looked correct in source review for exactly that reason.
+Deriving command: `grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css` lists every
+element rule that can do this.
+RULE: any link component that renders on more than one ground declares its own colour class
+per variant. Never colour an anchor by inheritance on a site whose `globals.css` styles `a`.
+
+**T32. Two viewport clamps in one column, and both wrong answers read as correct in source.**
+An article sidebar holding a CTA card and a table of contents. Nesting a sticky max-height
+wrapper around a component that already clamps itself gives a scroll box inside a shorter
+scroll box, two scrollbars, and an inner `sticky` that sticks to the wrapper instead of the
+viewport. Removing the outer clamp instead leaves the sticky element's containing block a
+short static div, so it sticks for a couple of hundred pixels and scrolls away: measured at
+1440x900 on a 24,594px article, 440px of the contents list sat below the fold with nothing
+able to scroll to it.
+The arrangement that works: ONE clamp, on the element that is a direct child of the tall
+column, with the inner component's own clamp switched off (`TableOfContents.stickyDesktop`,
+section 8 item 11).
+RULE: verify by measuring the sticky element's `getBoundingClientRect()` after scrolling, and
+by counting scroll containers in the column. Reading the classes cannot distinguish the two
+broken arrangements from the correct one.
