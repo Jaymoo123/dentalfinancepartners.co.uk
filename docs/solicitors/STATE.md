@@ -10,10 +10,10 @@ Last updated: 2026-09-11.
 
 ## PICKUP: START HERE if you are a fresh agent on this port
 
-**Where it stands, 2026-09-11.** Phases 0, 1 and 2 are DONE, committed and tagged
-(`port-solicitors-phase0`, `port-solicitors-phase1`, `port-solicitors-phase2`). Phases 3 to 6
-are not started. NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design.
-Your next action is Phase 3: article templates (3a) and the category hubs (3b).
+**Where it stands, 2026-09-11.** Phases 0, 1, 2 and 3 are DONE, committed and tagged
+(`port-solicitors-phase0` through `port-solicitors-phase3`). Phases 4 to 6 are not started.
+NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design. Your next action
+is Phase 4, the calculators, including the approved skippable ResultGate.
 
 **Read in this order before acting:**
 1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
@@ -74,7 +74,7 @@ and its deriving command.
 trust any crawl.** Three wrong-site measurements happened in one session because another
 agent's server held the port and the instrument crawled a different site entirely.
 
-**Phase order from here:** 3 article templates and hubs, 4 calculators
+**Phase order from here:** 4 calculators
 (including the approved ResultGate), 5 homepage and pillars and locations, 6 contact,
 post-submit, research, resources, legal, interruptive restyle and the rule-based content
 sweep. Each phase: plan, build in parallel work packages, manager-verify, INDEPENDENT
@@ -95,16 +95,36 @@ brand crimson via the new `SiteHeader.wordmarkAccentColor`, so the bar shows ONE
 footer lockup keeps `primary-400`, because the brand hex measures 2.50 on slate-900); the
 homepage Unsplash image is replaced by the approved ledger motif in phase 5.
 
+**HARD RULE, owner 2026-09-11, binds every remaining phase: NO COPY CHANGES AND NO SEO
+CHANGES.** No visible text, heading or button label rewritten; no `metaTitle`,
+`metaDescription`, `canonical`, sitemap entry, route, redirect or internal link touched. Two
+items phase 2 had scheduled are CANCELLED by this and must not be "helpfully" done later: the
+34 posts whose `canonical:` carries the old `-and-` spelling STAY, and the ~150 em-dashes in
+post bodies STAY. A design requirement that appears to force a copy change is planned around
+and raised with the owner, never absorbed. Consequence already priced in phase 3: appendix
+F.4's per-hub "essentials briefing" is new prose (generalist authored 11 of them) and is
+therefore OUT OF BOUNDS; the hubs ship without it unless the owner commissions it separately.
+
+**Further owner decisions 2026-09-11, do not re-ask:**
+- The 15 never-fired `data-cta` ids ARE to be instrumented during the port, and the sticky
+  bar's dismiss gets `sticky_cta_close` with placement `sticky`, matching Property exactly
+  (`Property/web/src/components/ui/StickyCTA.tsx:112-115`).
+- "Same accountant every time / You are not passed around a team" is RESTORED on `/blog`.
+  Phase 2 had removed it as unevidenced; Property carries that claim as its own house line
+  (`packages/web-shared/design/blog/BlogCategoryHub.tsx:22`), and Property is the reference.
+- Photography from Pexels is APPROVED for article images. Sourcing images for 196 posts is a
+  content programme, not port work, so it is logged here rather than run inside a phase. The
+  renderer already supports `image` and `imageCredit`; every post currently has `image: ""`.
+
+**Copy changed BEFORE the hard rule landed, disclosed to the owner, revert on request:** the
+eleven turnaround promises, the support FAQ question that could not survive without one, and
+the MTD scope wording. All three were breaches of the standing content rules.
+
 **Owner questions still OPEN, bundle them, do not drip:**
 1. Copy props on the shared `ProblemStatement` rather than a third site mirroring Property's
-   landlord copy locally.
-2. Instrument the 15 never-fired `data-cta` ids during the port? They include every hero,
-   header and homepage CTA, so the funnel cannot currently see its own top.
-3. The sticky CTA dismiss event, which is a new series rather than a restyle.
-4. Is "the same person reads your firm's numbers each time" literally true of the practice?
-   Removed in phase 2 because it cannot be evidenced.
-5. No article has a photograph, a photo credit or a last-updated date, though the code to
-   render all three is now in place. Populate the fields, or drop them?
+   landlord copy locally. STILL OPEN.
+2. Whether to commission the 17 hub essentials briefings as a separate content job, now that
+   the hard rule puts authoring them outside the port.
 
 **Known live defects still to fix, recorded in full below:** our own pricing in 16 places
 (not 15, and two of them are on `/specialist-vs-generalist-accountant`, which no disposition
@@ -316,6 +336,82 @@ one. Three sessions share this working tree.
 2. The header shows two reds side by side: the wordmark icon and rule at rose-600 `#ec003f`
    (the kit hardcodes `text-primary-600`) against the brand crimson `#c41e3a` on the button.
    Both cleared contrast; the delta asked for the icon to be the brand. Match them?
+
+## 2026-09-11 - PHASE 3 (category hubs and pillar guides). Nothing deployed.
+
+Commits: `19caded7` kit hooks (WP1), `b11ba12a` the phase build, `6b7a618d` review gaps.
+Tag `port-solicitors-phase3`. Production still serves `18b4f25f`.
+
+**What phase 3 turned out to be.** The planner found the article template was ALREADY on the
+F.3 anatomy from phase 2, so `blog/[category]/[slug]/page.tsx` needed zero edits and the real
+3a work was the ten pillar guides, which were still entirely pre-port. Delivered: 10 derived
+hubs + 7 hand-built hubs on the kit `BlogCategoryHub`, the 10 guides on the standard article
+anatomy, and the guides index.
+
+**THE OWNER'S HARD RULE SHAPED THE WHOLE PHASE.** No copy changes, no SEO changes. Three
+times, adopting Property's component would have forced one, so the COMPONENT bent instead.
+All three props are additive and default to undefined, so Property and generalist are
+untouched:
+- `BlogCategoryHub.heading` keeps an h1 like "Complete VAT Guide for UK Law Firms" above a
+  "VAT & Compliance" breadcrumb rather than retitling either.
+- `HubSection.bullets` keeps the list blocks six hubs publish inside their prose, rather than
+  flattening them into paragraphs and losing the list semantics a screen reader announces.
+- `HubSection.trailingParagraphs` keeps a paragraph that sits AFTER its list. Without it six
+  sections across four hubs would have rendered the same words in a different order, which is
+  still a copy change and would never have shown up in a diff review.
+
+**Proof the prose survived**, which is the real acceptance test: the visible word multiset of
+each of the seven hand-built hubs, before and after, MATCHES exactly (317 / 324 / 340 / 308 /
+303 / 279 / 339 words), and the re-review independently confirmed ORDER as well as text on all
+seven.
+
+**Live defect fixed, navigation not content:** the ten derived hubs filtered the seven
+hand-built categories out of their sibling rail, so the three largest categories on the site
+were unreachable from any of them. All 17 are now reachable from all 17.
+
+**An SEO change slipped through and was reverted.** Adopting the kit hub dropped the
+page-level `BreadcrumbList` on the seven hand-built hubs, taking them from two nodes to one
+while the ten derived hubs stayed at two. Reducing a duplicate is almost certainly better for
+search, but it was neither approved nor disclosed, and the phase 3 commit message said the
+opposite. Restored verbatim from `b11ba12a~1` and VERIFIED IN BUILT OUTPUT: all seven emit two
+identical nodes with the pre-port labels. **The owner can have the tidier single-node version
+on one word; it is deliberately not taken.**
+
+**Verification at close** (re-derived on the post-fix build): build exit 0, 294 prerendered
+HTML files, unchanged from the pre-port baseline (note: `prerender-manifest.json` lists 301
+ROUTES, which is 274 sitemap URLs plus 27 non-sitemap entries such as `/embed/*` and
+`robots.txt`; the two figures measure different things and both are stable). Sweep 273/274
+clean, 0 link-floor breaches, total unique internal links 10,511 to **10,690**, 0 data-cta
+regressions across **1,505** (from 1,170), 0 dash regressions. Solicitors 16 files / 208
+tests; generalist 23 files / 309 tests; web-shared 19 files / 406 tests; dependency closure OK
+across 19 sites.
+
+**Baseline restated, with the reason recorded in both baseline files:** 5 guide routes plus
+`/blog/practice-accounting`. The new table of contents echoes each guide's own headings and
+renders twice (mobile and desktop), and those headings already contain en-dashes in published
+copy ("Rule 2 - Client money separation"). `sra-accounts-rules-essentials` moved 21 to 53 and
+its two TOC blocks carry 16 dashes each, accounting for the 32 exactly. Rewriting the headings
+is what the hard rule forbids, so the ceiling moved rather than the words. `totalDashes` is
+441 in both files and agrees with both maps.
+
+**Disclosed to the owner, all consequences of adopting a standard component:**
+- Two section labels stop rendering: "In-Depth Articles" (5 hubs), "Related Articles" (2).
+- The ten derived hubs gain CTA copy on surfaces that carried none.
+- The ten derived hubs LOSE their in-category search box. Property has never had one.
+- The guides index gains a lead panel and a calculators band, copy lifted verbatim from
+  `/blog`, on a page that previously made no ask.
+- The ten derived hubs ship with NO essentials briefing. Authoring 17 is new prose and
+  therefore out of bounds; it is a costed content job if the owner wants it.
+
+**Found and NOT fixed, because the hard rule puts them out of scope:**
+- The two breadcrumb trails on each hub disagree about the homepage URL, one with a trailing
+  slash and one without. Pre-existing, inherited from before the redesign.
+- Five `/services/*` routes prerender, self-canonicalise and carry no noindex, yet are absent
+  from `sitemap.xml`. Pre-existing and previously recorded.
+- `guides_calculators_all` emits no `data-cta-goal`. Deliberate: the kit convention is that
+  goal is emitted only for form-goal CTAs, and its sibling `blog_calculators_all` omits it
+  too. Consistent, not an oversight.
+- `prose-solicitor` is now an orphan CSS block in `globals.css` (phase 6 tidy-up).
 
 ## 2026-09-11 - PHASE 2 (blog subsystem). Nothing deployed.
 
