@@ -160,25 +160,27 @@ function PanelBody({
         >
           {description}
         </p>
-        <ul className="mt-8 space-y-4">
-          {proofPoints.map((point) => (
-            <li key={point.title} className="flex items-center gap-4">
-              <span
-                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1 ${
-                  dark
-                    ? "bg-primary-500/10 text-primary-400 ring-primary-500/30"
-                    : "bg-primary-50 text-primary-600 ring-primary-100"
-                }`}
-              >
-                <Check aria-hidden className="h-6 w-6" strokeWidth={1.75} />
-              </span>
-              <span>
-                <span className={`block font-bold ${dark ? "text-white" : "text-slate-900"}`}>{point.title}</span>
-                <span className={`block text-sm ${dark ? "text-slate-300" : "text-slate-600"}`}>{point.detail}</span>
-              </span>
-            </li>
-          ))}
-        </ul>
+        {proofPoints.length ? (
+          <ul className="mt-8 space-y-4">
+            {proofPoints.map((point) => (
+              <li key={point.title} className="flex items-center gap-4">
+                <span
+                  className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1 ${
+                    dark
+                      ? "bg-primary-500/10 text-primary-400 ring-primary-500/30"
+                      : "bg-primary-50 text-primary-600 ring-primary-100"
+                  }`}
+                >
+                  <Check aria-hidden className="h-6 w-6" strokeWidth={1.75} />
+                </span>
+                <span>
+                  <span className={`block font-bold ${dark ? "text-white" : "text-slate-900"}`}>{point.title}</span>
+                  <span className={`block text-sm ${dark ? "text-slate-300" : "text-slate-600"}`}>{point.detail}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : null}
         {footnote && (
           <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-400" : "text-slate-600"}`}>
             {footnote}

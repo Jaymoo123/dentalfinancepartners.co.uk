@@ -49,9 +49,12 @@ describe("research charts stay in the accessibility tree", () => {
   });
 
   it("keeps chart text at 11px or larger", () => {
-    for (const m of CODE.matchAll(/fontSize=\{(\d+)\}/g)) {
-      expect(Number(m[1])).toBeGreaterThanOrEqual(11);
-    }
+    // Every call site must go through the constant. A literal fontSize is the
+    // regression this guards, so the loop above (which only ever matched
+    // literals, i.e. never) is not the assertion -- this is.
+    const sites = CODE.match(/fontSize=\{[^}]*\}/g) ?? [];
+    expect(sites.length).toBeGreaterThan(0);
+    for (const s of sites) expect(s).toBe("fontSize={LABEL_SIZE}");
     expect(CODE).toMatch(/const LABEL_SIZE = 11;/);
   });
 });

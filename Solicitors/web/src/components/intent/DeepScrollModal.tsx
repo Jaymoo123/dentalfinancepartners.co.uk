@@ -86,7 +86,7 @@ export function DeepScrollModal() {
       onClick={() => close(true)}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-slate-200/70"
+        className="w-full max-w-md rounded-xl bg-white p-6 shadow-2xl ring-1 ring-slate-200/70"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">

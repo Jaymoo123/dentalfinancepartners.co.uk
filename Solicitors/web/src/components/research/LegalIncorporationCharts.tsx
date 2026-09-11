@@ -93,7 +93,8 @@ export function AnnualIncorporationChart({ annual }: { annual: IncorporationYear
         <thead>
           <tr>
             <th scope="col">Year</th>
-            <th scope="col">Incorporations</th>
+            {/* The word the bar's own <title> prints, not an authored header. */}
+            <th scope="col">incorporations</th>
           </tr>
         </thead>
         <tbody>

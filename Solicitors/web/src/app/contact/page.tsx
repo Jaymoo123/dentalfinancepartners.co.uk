@@ -7,7 +7,6 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { CoverageCards } from "@accounting-network/web-shared/design/marketing/CoverageCards";
-import { WhatToExpectCard } from "@accounting-network/web-shared/design/marketing/WhatToExpectCard";
 
 export const metadata: Metadata = {
   title: "Contact | Speak to a Solicitor Accountant",
@@ -39,10 +38,9 @@ export const metadata: Metadata = {
  * the same `@id` on every page, so this removed a duplicate node and changed no
  * JSON-LD content.
  *
- * `WhatToExpectCard` receives EXPLICIT `title` and `items` taken from this
- * route's own "What happens next?" card. Its defaults are four Property strings
- * ("Instant text and email from us...") and letting them render is the phase-5
- * defaulted-prop failure repeating.
+ * The "What happens next?" card is NOT `WhatToExpectCard`: that component draws
+ * an identical tick on every row, which destroys the ordinal of three sequential
+ * steps. The inline numbered list stays, restyled to this phase's tokens.
  */
 
 /** The four existing "Common enquiries" subjects, verbatim. Icons are decorative. */
@@ -145,14 +143,26 @@ export default function ContactPage() {
                 </dl>
               </div>
 
-              <WhatToExpectCard
-                title="What happens next?"
-                items={[
-                  "We'll review your enquiry and come back to you",
-                  "Brief introductory call to understand your practice structure and compliance needs",
-                  "Clear recommendations with fixed-fee quote if you choose to proceed",
-                ]}
-              />
+              {/* Deliberately NOT WhatToExpectCard: its glyph is the same tick on
+                  every row, and these three items are a SEQUENCE. The numerals are
+                  the meaning, so the inline list stays, restyled to phase tokens. */}
+              <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
+                <h3 className="text-lg font-bold text-slate-900">What happens next?</h3>
+                <ol className="mt-4 space-y-3 text-sm text-slate-700">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">1</span>
+                    <span>We&apos;ll review your enquiry and come back to you</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">2</span>
+                    <span>Brief introductory call to understand your practice structure and compliance needs</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">3</span>
+                    <span>Clear recommendations with fixed-fee quote if you choose to proceed</span>
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
