@@ -100,6 +100,23 @@ export default function GrossPaymentStatusPage() {
             <Link href="/contact" className={btnPrimary}>
               Apply for GPS
             </Link>
+            {/* ADDITIVE id. The #book LeadCTAPanel at the foot of this page had
+                nothing on the route pointing at it: 0 href="#book" in the
+                served HTML. Same defect phase 3 closed on the 45 /for routes.
+                `gps_hero_book` is NEW, matching for_hero_book, calc_hero_help,
+                home_hero_book and services_hero_book, because repointing or
+                re-goaling the existing /contact primary would split its history
+                at the cutover (trap 22). Goal is `form`, this site's taxonomy
+                for an on-page form anchor. */}
+            <Link
+              href="#book"
+              className={`inline-flex min-h-12 items-center justify-center border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50 ${focusRing}`}
+              data-cta="gps_hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+            >
+              Book a free call
+            </Link>
           </div>
         </div>
       </section>
@@ -234,10 +251,21 @@ export default function GrossPaymentStatusPage() {
           panel on --hero-cream, so the tail is white (April 2026 section),
           cream (panel), navy (footer). Same LeadForm, so no capture is lost, and
           every visible string is passed explicitly from this route's own
-          published copy rather than left to the component defaults. No data-cta
-          id, so trap 22's locked triples do not move. Static band in the page
-          body: nothing interruptive. */}
-      <div id="book" className="scroll-mt-24">
+          published copy rather than left to the component defaults. Static band in
+          the page body: nothing interruptive.
+
+          `gps_book_panel` is an ADDITIVE id on a wrapper that carried no
+          data-cta, so no locked triple moves (trap 22). autoCapture resolves a
+          click through closest("[data-cta]"), so it attributes this band's
+          conversions rather than leaving them indistinguishable from every
+          other LeadForm on the site. */}
+      <div
+        id="book"
+        className="scroll-mt-24"
+        data-cta="gps_book_panel"
+        data-cta-placement="closing"
+        data-cta-goal="form"
+      >
         <LeadCTAPanel
           contained
           eyebrow="Get started"

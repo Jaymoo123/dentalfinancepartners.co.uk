@@ -86,6 +86,20 @@ const PINNED = [
   // vw_cta_performance at the cutover (trap 22). Goal is `form` because the
   // destination is an on-page form anchor, per this site's taxonomy.
   "src/app/services/page.tsx|services_hero_book|hero|form",
+  // Phase 5 gap-fix / G4, ADDITIVE, four ids across the two pillars. Both
+  // pillars closed on a #book LeadCTAPanel that NOTHING on the route linked to
+  // (0 href="#book" in the served HTML) and that carried no data-cta, so the
+  // band converted silently. The hero now points at it and the panel wrapper
+  // is instrumented. All four ids are NEW, for the same reason for_hero_book,
+  // calc_hero_help, home_hero_book and services_hero_book are: repointing or
+  // re-goaling either pillar's existing /contact primary would split
+  // vw_cta_performance at the cutover (trap 22). Goal is `form` on all four,
+  // this site's taxonomy for an on-page form anchor; the panel wrapper is the
+  // form itself, which autoCapture reaches through closest("[data-cta]").
+  "src/app/cis-refund/page.tsx|cis_refund_hero_book|hero|form",
+  "src/app/cis-refund/page.tsx|cis_refund_book_panel|closing|form",
+  "src/app/gross-payment-status/page.tsx|gps_hero_book|hero|form",
+  "src/app/gross-payment-status/page.tsx|gps_book_panel|closing|form",
   "src/app/contact/page.tsx|contact_pricing_link|contact|null",
   // Phase 5 / WP-E1, ADDITIVE. The homepage hero made no on-page ask: all three
   // hero CTAs left the page, and the LeadForm in the closing band had nothing

@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { tradeTypes } from "@/data/trade-types";
 import {
-  buildBreadcrumbJsonLd,
   buildFaqJsonLd,
   buildServiceJsonLd,
 } from "@/lib/schema";
@@ -195,16 +194,18 @@ export default function HomePage() {
   return (
     <>
       {/* JSON-LD. Organization and WebSite are emitted site-wide by the layout;
-          these four are the homepage's own. `faqs` feeds both this and the
+          these three are the homepage's own. `faqs` feeds both this and the
           rendered FAQ below from ONE array (trap 17) -- never fork it. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd([{ label: "Home", href: "/" }]) }}
-      />
+      {/* No BreadcrumbList here. The homepage is the root: it renders no
+          breadcrumb (aria-label="Breadcrumb" is absent on / and present on the
+          other three phase 5 routes), and a one-item BreadcrumbList would
+          describe a UI element the page does not have, which is trap 17. The
+          other three routes keep theirs, emitted by <Breadcrumb> alongside the
+          visible trail from the same items array. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -262,12 +263,15 @@ export default function HomePage() {
                     `hero_primary` would merge this site's single off-page hero
                     CTA with an on-page one and split its history at the cutover
                     (trap 22). Goal is `form` per this site's taxonomy: `form` is
-                    an on-page form anchor, `lead` is a CTA that leaves the page. */}
+                    an on-page form anchor, `lead` is a CTA that leaves the page.
+                    No data-cta-variant: the four other additive *_book ids
+                    (for_hero_book, calc_hero_help, services_hero_book,
+                    glossary_entry_book) carry none, and this id has never
+                    shipped, so dropping it splits no history. */}
                 <Link
                   href="#book"
                   className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
                   data-cta="home_hero_book" data-cta-placement="hero" data-cta-goal="form"
-                  data-cta-variant={niche.cta.variant}
                 >
                   Book a free call
                 </Link>

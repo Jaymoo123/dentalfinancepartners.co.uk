@@ -100,6 +100,23 @@ export default function CisRefundPage() {
             <Link href="/contact" className={btnPrimary}>
               Check your CIS refund
             </Link>
+            {/* ADDITIVE id. The #book LeadCTAPanel at the foot of this page had
+                nothing on the route pointing at it: 0 href="#book" in the
+                served HTML. Same defect phase 3 closed on the 45 /for routes.
+                `cis_refund_hero_book` is NEW, matching for_hero_book,
+                calc_hero_help, home_hero_book and services_hero_book, because
+                repointing or re-goaling the existing /contact primary would
+                split its history at the cutover (trap 22). Goal is `form`, this
+                site's taxonomy for an on-page form anchor. */}
+            <Link
+              href="#book"
+              className={`inline-flex min-h-12 items-center justify-center border border-neutral-300 bg-white px-6 py-3 text-base font-medium text-neutral-900 transition-colors hover:bg-neutral-50 ${focusRing}`}
+              data-cta="cis_refund_hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+            >
+              Book a free call
+            </Link>
           </div>
         </div>
       </section>
@@ -174,8 +191,18 @@ export default function CisRefundPage() {
         </div>
       </section>
 
-      {/* CIS deduction rates table */}
-      <section className="bg-[var(--surface)]">
+      {/* CIS deduction rates table.
+          Ground is stone-100, NOT --surface. --surface (#fafaf9) and the
+          --hero-cream (#fafaf7) of the closing panel below differ by 2/255 on
+          one channel (delta-L 0.0012), and phase 5 deleted the dividers, so
+          those two bands read as one continuous slab. This route is the only
+          one where a --surface band sits directly above the contained
+          LeadCTAPanel: every other consumer closes white-then-cream. stone-100
+          is the warm-neutral ramp --surface itself belongs to, so the brand
+          contract is unchanged, and it separates from the cream by delta-L
+          0.042. Fixed here at the call site rather than in LeadCTAPanel, which
+          eight routes share. */}
+      <section className="bg-stone-100">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">Deduction rates</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -208,7 +235,9 @@ export default function CisRefundPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-6 text-sm text-neutral-500 max-w-2xl">
+          {/* neutral-600, not neutral-500: 14px caption, and the stone-100
+              ground above drops neutral-500 to 4.23. neutral-600 reads 7.06. */}
+          <p className="mt-6 text-sm text-neutral-600 max-w-2xl">
             For information on applying for Gross Payment Status, see our{" "}
             <Link href="/gross-payment-status" className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
               GPS service page
@@ -222,14 +251,25 @@ export default function CisRefundPage() {
           the last opaque band under <main>, running straight into the slate-900
           footer: DESIGN_SYSTEM section 9 forbids navy touching navy, and this
           route was 1 of the 29 in the DESIGN_DELTA 3a.1 breach. `contained`
-          renders the panel on --hero-cream, so the tail is white (rates table
-          section is --surface), cream (panel), navy (footer). The same LeadForm
-          is inside the panel, so no capture is lost, and every visible string is
+          renders the panel on --hero-cream, so the tail is stone-100 (rates
+          table section), cream (panel), navy (footer). The same LeadForm is
+          inside the panel, so no capture is lost, and every visible string is
           passed explicitly from this route's own published copy rather than
-          taken from the component defaults. No data-cta id here, so trap 22's
-          locked triples do not move. Static band in the page body: nothing
-          interruptive. */}
-      <div id="book" className="scroll-mt-24">
+          taken from the component defaults. Static band in the page body:
+          nothing interruptive.
+
+          `cis_refund_book_panel` is an ADDITIVE id on a wrapper that carried no
+          data-cta, so no locked triple moves (trap 22). autoCapture resolves a
+          click through closest("[data-cta]"), so it attributes this band's
+          conversions rather than leaving them indistinguishable from every
+          other LeadForm on the site. */}
+      <div
+        id="book"
+        className="scroll-mt-24"
+        data-cta="cis_refund_book_panel"
+        data-cta-placement="closing"
+        data-cta-goal="form"
+      >
         <LeadCTAPanel
           contained
           eyebrow="Get started"
